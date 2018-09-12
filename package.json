@@ -1,0 +1,45 @@
+{
+  "name": "carl",
+  "version": "0.1.0",
+  "description": "Core Components Library Developed & Maintained By The Articles and Reach & Languages Team",
+  "main": "index.js",
+  "scripts": {
+    "start": "NODE_ENV=development start-storybook -p 9001 -c .storybook","test": "jest --verbose",
+    "build": "lerna exec --parallel -- babel src -d dist --ignore spec.js,story.js",
+    "publish": "lerna publish"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bbc/carl.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bbc/carl/issues"
+  },
+  "homepage": "https://github.com/bbc/carl#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "@storybook/react": "^3.4.10",
+    "babel-cli": "^6.26.0",
+    "babel-jest": "^23.6.0",
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.26.2",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "glob-loader": "^0.3.0",
+    "jest": "^23.6.0",
+    "lerna": "^3.3.1",
+    "react": "^16.5.0",
+    "react-dom": "^16.5.0",
+    "react-test-renderer": "^16.5.0"
+  },
+  "jest": {
+    "resetModules": true,
+    "testMatch": [
+      "**/?(*.)(spec).js?(x)"
+    ],
+    "testPathIgnorePatterns": [
+      "<rootDir>node_modules/"
+    ]
+  }
+}
