@@ -16,3 +16,8 @@ Run Storybook
 ```
 npm run start
 ```
+
+Build Packages/Components
+```
+npm run build
+```
