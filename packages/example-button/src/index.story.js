@@ -42,7 +42,6 @@ stories
       colour: color('Text Colour', '#ededed'),
       borderColour: color('Border Colour', '#000000')
     }
-    // const theme = object(label, defaultTheme)
 
     return (
       <ThemeProvider theme={theme}>
