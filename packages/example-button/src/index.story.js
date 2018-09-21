@@ -1,36 +1,55 @@
 import React from 'react'
 import { storiesOf } from '@storybook/react'
 import { action } from '@storybook/addon-actions'
+import { withKnobs, object, boolean, color } from '@storybook/addon-knobs/react';
 import styled, { ThemeProvider } from 'styled-components'
 
 import ExampleButton from '.'
-
-const theme = {
-    primary: '#0B53C6'
-}
 
 const StyledContainer = styled.div`
   width: 200px;
 `
 
-storiesOf('ExampleButton', module)
+const stories = storiesOf('ExampleButton', module);
+stories.addDecorator(withKnobs);
 
-  .add('with text', () => (
-    <StyledContainer>
-      <ExampleButton onClick={action('clicked')}>Example Button</ExampleButton>
-    </StyledContainer>
-  ))
+stories
+  .add('with text', () => {
+    const disabled = boolean('Disabled', false)
 
-  .add('with emojis', () => (
-    <StyledContainer>
-      <ExampleButton onClick={action('clicked')}>😀 😎 👍 💯</ExampleButton>
-    </StyledContainer>
-  ))
-
-  .add('with a theme provider', () => (
-    <ThemeProvider theme={theme}>
+    return (
       <StyledContainer>
-        <ExampleButton onClick={action('clicked')}>Example Button</ExampleButton>
+        <ExampleButton disabled={disabled} onClick={action('clicked')}>Example Button</ExampleButton>
       </StyledContainer>
-    </ThemeProvider>
-  ))
+    )
+    
+  })
+
+  .add('with emojis', () => {
+    const disabled = boolean('Disabled', false)
+
+    return (
+      <StyledContainer>
+        <ExampleButton disabled={disabled} onClick={action('clicked')}>😀 😎 👍 💯</ExampleButton>
+      </StyledContainer>
+    )
+  })
+
+  .add('with a theme provider', () => {
+    const disabled = boolean('Disabled', false)
+    const label = 'Theme'
+    const theme = {
+      colour: color('Text Colour', '#ededed'),
+      borderColour: color('Border Colour', '#000000')
+    }
+    // const theme = object(label, defaultTheme)
+
+    return (
+      <ThemeProvider theme={theme}>
+        <StyledContainer>
+          <ExampleButton disabled={disabled} onClick={action('clicked')}>Example Button</ExampleButton>
+        </StyledContainer>
+      </ThemeProvider>
+    )
+    
+  })
