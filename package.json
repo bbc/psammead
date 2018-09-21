@@ -19,10 +19,14 @@
     "url": "https://github.com/bbc/carl/issues"
   },
   "homepage": "https://github.com/bbc/carl#readme",
-  "dependencies": {},
+  "dependencies": {
+    "html-loader": "^0.5.5",
+    "markdown-loader": "^4.0.0"
+  },
   "devDependencies": {
     "@storybook/addon-knobs": "^3.4.11",
     "@storybook/addon-options": "^3.4.11",
+    "@storybook/addon-viewport": "^3.4.11",
     "@storybook/react": "^3.4.10",
     "babel-cli": "^6.26.0",
     "babel-jest": "^23.6.0",
@@ -34,7 +38,8 @@
     "lerna": "^3.3.1",
     "react": "^16.5.0",
     "react-dom": "^16.5.0",
-    "react-test-renderer": "^16.5.0"
+    "react-test-renderer": "^16.5.0",
+    "storybook-readme": "^4.0.0-beta1"
   },
   "jest": {
     "resetModules": true,
