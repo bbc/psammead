@@ -6,7 +6,7 @@ import styled, { ThemeProvider } from 'styled-components'
 // Addons
 import { withKnobs, boolean, color } from '@storybook/addon-knobs/react';
 import { withReadme } from 'storybook-readme';
-import ExampleButtonReadme from '../README.md';
+import Readme from '../README.md';
 
 import ExampleButton from '.'
 
@@ -15,12 +15,12 @@ const StyledContainer = styled.div`
 `
 
 const stories = storiesOf('ExampleButton', module);
-stories.addDecorator(withKnobs);
 
 stories
-  .add(
-    'with text',
-    withReadme(ExampleButtonReadme, () => {
+  .addDecorator(withReadme(Readme))
+  .addDecorator(withKnobs)
+
+  .add('with text', () => {
       const disabled = boolean('Disabled', false)
       return (
         <StyledContainer>
@@ -28,11 +28,9 @@ stories
         </StyledContainer>
       )
     }    
-  ))
+  )
 
-  .add(
-    'with emojis',
-    withReadme(ExampleButtonReadme, () => {
+  .add('with emojis', () => {
       const disabled = boolean('Disabled', false)
 
       return (
@@ -40,12 +38,10 @@ stories
           <ExampleButton disabled={disabled} onClick={action('clicked')}>😀 😎 👍 💯</ExampleButton>
         </StyledContainer>
       )
-    })
+    }
   )
 
-  .add(
-    'with a theme provider',
-    withReadme(ExampleButtonReadme, () => {
+  .add('with a theme provider', () => {
       const disabled = boolean('Disabled', false)
       const label = 'Theme'
       const theme = {
@@ -61,4 +57,4 @@ stories
         </ThemeProvider>
       )
     }
-  ))
+  )

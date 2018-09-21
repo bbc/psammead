@@ -5,9 +5,8 @@ import { setOptions } from '@storybook/addon-options';
  
 // Option defaults:
 setOptions({
-  name: 'Bach Components',
+  name: 'CARL',
   url: 'https:github.com/bbc/carl',
-  goFullScreen: false,
   addonPanelInRight: true,
   sidebarAnimations: true
 });
