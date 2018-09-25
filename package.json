@@ -58,5 +58,22 @@
     "testPathIgnorePatterns": [
       "<rootDir>node_modules/"
     ]
+  },
+  "spec": {
+    "prune": false,
+    "requires": [
+      "nodejs",
+      "cfn-signal",
+      "cloud-httpd24-ssl-services-devs-staff"
+    ],
+    "environment": {
+      "NODE_ENV": "production",
+      "BABEL_CACHE_PATH": "/tmp/.babel.json"
+    },
+    "post": [
+      "mkdir -p /etc/bake-scripts/PSAMMEAD-COMPONENT-LIBRARY",
+      "cp -af /usr/lib/PSAMMEAD-COMPONENT-LIBRARY/bake-scripts/. /etc/bake-scripts/PSAMMEAD-COMPONENT-LIBRARY",
+      "chmod +x /etc/bake-scripts/PSAMMEAD-COMPONENT-LIBRARY/*"
+    ]
   }
 }
