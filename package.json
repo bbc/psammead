@@ -1,10 +1,11 @@
 {
-  "name": "carl",
+  "name": "psammead",
   "version": "0.1.0",
   "description": "Core Components Library Developed & Maintained By The Articles and Reach & Languages Team",
   "main": "index.js",
   "scripts": {
     "build": "lerna exec --parallel -- babel src -d dist --ignore spec.js,story.js",
+    "install:packages": "lerna exec -- npm install",
     "publish": "lerna publish",
     "start": "node server.js",
     "storybook": "NODE_ENV=development start-storybook -p 8080 -c .storybook",
@@ -14,14 +15,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/bbc/carl.git"
+    "url": "git+https://github.com/bbc/psammead.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/bbc/carl/issues"
+    "url": "https://github.com/bbc/psammead/issues"
   },
-  "homepage": "https://github.com/bbc/carl#readme",
+  "homepage": "https://github.com/bbc/psammead#readme",
   "dependencies": {
     "express": "^4.16.3",
     "speculate": "^1.7.4"
@@ -56,6 +57,23 @@
     ],
     "testPathIgnorePatterns": [
       "<rootDir>node_modules/"
+    ]
+  },
+  "spec": {
+    "prune": false,
+    "requires": [
+      "nodejs",
+      "cfn-signal",
+      "cloud-httpd24-ssl-services-devs-staff"
+    ],
+    "environment": {
+      "NODE_ENV": "production",
+      "BABEL_CACHE_PATH": "/tmp/.babel.json"
+    },
+    "post": [
+      "mkdir -p /etc/bake-scripts/PSAMMEAD-COMPONENT-LIBRARY",
+      "cp -af /usr/lib/PSAMMEAD-COMPONENT-LIBRARY/bake-scripts/. /etc/bake-scripts/PSAMMEAD-COMPONENT-LIBRARY",
+      "chmod +x /etc/bake-scripts/PSAMMEAD-COMPONENT-LIBRARY/*"
     ]
   }
 }
