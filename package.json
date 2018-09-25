@@ -1,5 +1,5 @@
 {
-  "name": "carl",
+  "name": "psammead",
   "version": "0.1.0",
   "description": "Core Components Library Developed & Maintained By The Articles and Reach & Languages Team",
   "main": "index.js",
@@ -15,14 +15,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/bbc/carl.git"
+    "url": "git+https://github.com/bbc/psammead.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/bbc/carl/issues"
+    "url": "https://github.com/bbc/cpsammeadarl/issues"
   },
-  "homepage": "https://github.com/bbc/carl#readme",
+  "homepage": "https://github.com/bbc/psammead#readme",
   "dependencies": {
     "express": "^4.16.3",
     "speculate": "^1.7.4"
@@ -48,7 +48,8 @@
     "react": "^16.5.0",
     "react-dom": "^16.5.0",
     "react-test-renderer": "^16.5.0",
-    "storybook-readme": "^4.0.0-beta1"
+    "storybook-readme": "^4.0.0-beta1",
+    "speculate": "^1.7.4"
   },
   "jest": {
     "resetModules": true,
