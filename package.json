@@ -4,10 +4,13 @@
   "description": "Core Components Library Developed & Maintained By The Articles and Reach & Languages Team",
   "main": "index.js",
   "scripts": {
-    "start": "NODE_ENV=development start-storybook -p 9001 -c .storybook",
-    "test": "jest --verbose",
     "build": "lerna exec --parallel -- babel src -d dist --ignore spec.js,story.js",
-    "publish": "lerna publish"
+    "publish": "lerna publish",
+    "start": "node server.js",
+    "storybook": "NODE_ENV=development start-storybook -p 8080 -c .storybook",
+    "storybook:export": "build-storybook -c .storybook -o public",
+    "speculate": "speculate",
+    "test": "jest --verbose"
   },
   "repository": {
     "type": "git",
@@ -19,7 +22,10 @@
     "url": "https://github.com/bbc/carl/issues"
   },
   "homepage": "https://github.com/bbc/carl#readme",
-  "dependencies": {},
+  "dependencies": {
+    "express": "^4.16.3",
+    "speculate": "^1.7.4"
+  },
   "devDependencies": {
     "@storybook/addon-actions": "^3.4.11",
     "@storybook/addon-knobs": "^3.4.11",
