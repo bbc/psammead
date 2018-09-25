@@ -3,11 +3,12 @@ import StyledButton from './styles/styledExampleButton'
 
 const ExampleButton = ({
     type = 'button',
+    disabled = false,
     children,
     onClick
 }) => {
     return (
-        <StyledButton type={type} className="button" onClick={onClick}>
+        <StyledButton disabled={disabled} type={type} className="button" onClick={onClick}>
             {children}
         </StyledButton>
     )
