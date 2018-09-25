@@ -48,8 +48,7 @@
     "react": "^16.5.0",
     "react-dom": "^16.5.0",
     "react-test-renderer": "^16.5.0",
-    "storybook-readme": "^4.0.0-beta1",
-    "speculate": "^1.7.4"
+    "storybook-readme": "^4.0.0-beta1"
   },
   "jest": {
     "resetModules": true,
