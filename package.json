@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "lerna exec --parallel -- babel src -d dist --ignore spec.js,story.js",
+    "install:packages": "lerna exec -- npm install",
     "publish": "lerna publish",
     "start": "node server.js",
     "storybook": "NODE_ENV=development start-storybook -p 8080 -c .storybook",
