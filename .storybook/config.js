@@ -1,4 +1,3 @@
-import React from 'react'
 import { configure } from '@storybook/react'
 
 import { setOptions } from '@storybook/addon-options';
