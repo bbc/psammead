@@ -2,22 +2,37 @@
 
 # Getting Started
 
-Clone this repositry
+### Clone this repositry
 ```
 git clone git@github.com:bbc-news/psammead.git
 ```
 
-Setup Local Environment
+### Setup Local Environment
 ```
 cd psammead && npm install
 ```
 
-Run Storybook
+### Run Storybook
 ```
-npm run start
+npm run storybook
 ```
 
-Build Packages/Components
+### Build Packages/Components
 ```
 npm run build
 ```
+
+### Publishing Packages
+
+#### With 2FA on your NPM account
+```
+NPM_CONFIG_OTP=<2FA_Code> npm run publish
+```
+
+### Without 2FA
+```
+npm run publish
+```
+
+
+

@@ -2,3 +2,6 @@ node_modules
 
 # Compiled Assets
 public
+
+# Compiled packages
+*.tgz
