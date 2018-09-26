@@ -1,15 +1,15 @@
-# CARL - Components Articles Reach & Languages
+# Psammead - News React Component Library
 
 # Getting Started
 
 Clone this repositry
 ```
-git clone git@github.com:bbc/carl.git
+git clone git@github.com:bbc-news/psammead.git
 ```
 
 Setup Local Environment
 ```
-cd carl && npm install
+cd psammead && npm install
 ```
 
 Run Storybook
