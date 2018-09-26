@@ -5,8 +5,12 @@
   "main": "dist/index.js",
   "module": "src/index.js",
   "author": "Chris.Hinds@bbc.co.uk",
+  "publishConfig": {
+    "access": "public"
+  },
   "dependencies": {
     "react": "^16.5.0",
     "styled-components": "^3.4.0"
-  }
+  },
+  "gitHead": "e628d903cad9d6d9fe5ab856d4f2b3a9b8ce14d3"
 }
