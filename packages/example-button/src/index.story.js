@@ -6,7 +6,7 @@ import styled, { ThemeProvider } from 'styled-components'
 // Addons
 import { withKnobs, boolean, color } from '@storybook/addon-knobs/react';
 import { withReadme } from 'storybook-readme';
-import Readme from '../README.md';
+import Readme from './README.md';
 
 import ExampleButton from '.'
 

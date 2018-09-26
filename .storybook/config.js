@@ -4,7 +4,7 @@ import { setOptions } from '@storybook/addon-options';
  
 // Option defaults:
 setOptions({
-  name: 'CARL',
+  name: 'Psammead',
   url: 'https:github.com/bbc/carl',
   addonPanelInRight: true,
   sidebarAnimations: true
