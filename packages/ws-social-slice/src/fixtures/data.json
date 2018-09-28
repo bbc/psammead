@@ -1,0 +1,56 @@
+{
+  "body": {  
+    "findUsHere":{  
+      "findUsHereSocialSites":[  
+        {  
+          "findUsHereSocialSite":"twitter",
+          "findUsHereSiteUrl":"https://twitter.com/BBCNews"
+        },
+        {  
+          "findUsHereSocialSite":"facebook",
+          "findUsHereSiteUrl":"https://www.facebook.com/bbcnews"
+        },
+        {  
+          "findUsHereSocialSite":"instagram",
+          "findUsHereSiteUrl":"https://www.instagram.com/bbcnews"
+        }
+      ],
+      "findUsHereTitle":"Find us here",
+      "findUsOnLabel":"Find us on"
+    },
+    "getInTouch":{  
+      "getInTouchEnabled":"true",
+      "getInTouchPlatforms":[  
+        {  
+          "getInTouchPlatformText":"Email us at {haveyoursay@bbc.co.uk}",
+          "getInTouchPlatformURL":"mailto:haveyoursay@bbc.co.uk"
+        },
+        {  
+          "getInTouchPlatformText":"Send an SMS or MMS to {61124}",
+          "getInTouchPlatformURL":"sms:61124"
+        },
+        {  
+          "getInTouchPlatformText":"Follow {Have Your Say on Twitter}",
+          "getInTouchPlatformURL":"https://twitter.com/BBC_HaveYourSay"
+        },
+        {  
+          "getInTouchPlatformText":"{Why you can trust BBC News}",
+          "getInTouchPlatformURL":"http://www.bbc.co.uk/news/help-41670342"
+        }
+      ],
+      "getInTouchTitle":"Get in touch"
+    },
+    "mobileApp":{  
+      "mobileAppEnabled":"true",
+      "mobileAppLinkText":"Find out more about our BBC News App",
+      "mobileAppUrl":"http://www.bbc.com/news/10628994",
+      "mobileAppTitle":"Mobile app"
+    },
+    "newsDailyNewsletter":{  
+      "newsDailyNewsletterEnabled":"true",
+      "newsDailyNewsletterLinkText":"Get news from the BBC in your inbox each weekday morning",
+      "newsDailyNewsletterUrl":"https://ssl.bbc.co.uk/newsletters/bbcnewsdaily",
+      "newsDailyNewsletterTitle":"News daily newsletter"
+    }
+  }
+}
