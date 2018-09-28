@@ -1,0 +1,18 @@
+{
+  "name": "ws-social-slice",
+  "version": "0.0.1",
+  "description": "World Service social slice",
+  "main": "dist/index.js",
+  "module": "src/index.js",
+  "author": "Drew.McMillan@bbc.co.uk",
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "classnames": "^2.2.6",
+    "lodash": "^4.17.11",
+    "prop-types": "^15.6.2",
+    "react": "^16.5.0"
+  },
+  "gitHead": "14d506c568ba7109cb7d306ed2cecb1cca243a1d"
+}
