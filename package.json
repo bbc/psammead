@@ -51,12 +51,17 @@
     "storybook-readme": "^4.0.0-beta1"
   },
   "jest": {
-    "resetModules": true,
-    "testMatch": [
-      "**/?(*.)(spec).js?(x)"
+    "collectCoverageFrom": [
+      "**/(src|scripts)/**/*.{js,jsx}",
+      "!**/src/app/helpers/tests/**",
+      "!**/*.stories.jsx"
     ],
-    "testPathIgnorePatterns": [
-      "<rootDir>node_modules/"
+    "setupFiles": [
+      "./jest-setup.js"
+    ],
+    "testMatch": [
+      "**/__tests__/**/*.js?(x)",
+      "**/?(*.)+(spec|test).js?(x)"
     ]
   },
   "spec": {
