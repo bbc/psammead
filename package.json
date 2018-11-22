@@ -11,7 +11,9 @@
     "storybook": "NODE_ENV=development start-storybook -p 8080 -c .storybook",
     "storybook:export": "build-storybook -c .storybook -o public",
     "speculate": "speculate",
-    "test": "jest --verbose"
+    "test": "npm run test:lint && npm run test:unit",
+    "test:lint": "eslint --ext .js,jsx,json ./packages",
+    "test:unit": "jest --verbose"
   },
   "repository": {
     "type": "git",
@@ -25,7 +27,8 @@
   "homepage": "https://github.com/bbc/psammead#readme",
   "dependencies": {
     "express": "^4.16.3",
-    "speculate": "^1.7.4"
+    "speculate": "^1.7.4",
+    "styled-components": "^4.1.1"
   },
   "devDependencies": {
     "@storybook/addon-actions": "^3.4.11",
@@ -40,11 +43,21 @@
     "babel-plugin-styled-components": "^1.5.1",
     "babel-preset-env": "^1.7.0",
     "babel-preset-react": "^6.24.1",
+    "enzyme": "^3.7.0",
+    "eslint": "^5.9.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-config-prettier": "^3.3.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-json": "^1.2.1",
+    "eslint-plugin-jsx-a11y": "^6.1.2",
+    "eslint-plugin-prettier": "^3.0.0",
+    "eslint-plugin-react": "^7.11.1",
     "glob-loader": "^0.3.0",
     "jest": "^23.6.0",
     "jest-fetch-mock": "^1.6.5",
     "jest-styled-components": "^5.0.1",
     "lerna": "^3.3.1",
+    "prettier": "^1.15.2",
     "react": "^16.5.0",
     "react-dom": "^16.5.0",
     "react-test-renderer": "^16.5.0",
