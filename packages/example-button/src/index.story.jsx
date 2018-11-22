@@ -37,7 +37,9 @@ stories
     return (
       <StyledContainer>
         <ExampleButton disabled={disabled} onClick={action('clicked')}>
-          😀 😎 👍 💯
+          <span role="img" aria-label="emoji">
+            😀 😎 👍 💯
+          </span>
         </ExampleButton>
       </StyledContainer>
     );
@@ -45,7 +47,6 @@ stories
 
   .add('with a theme provider', () => {
     const disabled = boolean('Disabled', false);
-    const label = 'Theme';
     const theme = {
       colour: color('Text Colour', '#ededed'),
       borderColour: color('Border Colour', '#000000'),
