@@ -71,8 +71,7 @@
     ],
     "testMatch": [
       "**/__tests__/**/*.js?(x)",
-      "**/?(*.)+test.js?(x)",
-      "**/packages/**/*.spec.{js,jsx}"
+      "**/*.test.{js,jsx}"
     ]
   },
   "spec": {
