@@ -13,6 +13,7 @@
     "speculate": "speculate",
     "test": "npm run test:lint && npm run test:unit",
     "test:lint": "eslint --ext .js,jsx,json ./packages",
+    "test:lint:css": "stylelint 'packages/**/*.js' 'packages/**/*.jsx'",
     "test:unit": "jest --verbose"
   },
   "repository": {
@@ -61,7 +62,11 @@
     "react": "^16.5.0",
     "react-dom": "^16.5.0",
     "react-test-renderer": "^16.5.0",
-    "storybook-readme": "^4.0.0-beta1"
+    "storybook-readme": "^4.0.0-beta1",
+    "stylelint": "^9.8.0",
+    "stylelint-config-recommended": "^2.1.0",
+    "stylelint-config-styled-components": "^0.1.1",
+    "stylelint-processor-styled-components": "^1.5.1"
   },
   "jest": {
     "resetModules": true,
