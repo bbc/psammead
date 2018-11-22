@@ -52,12 +52,12 @@
   },
   "jest": {
     "collectCoverageFrom": [
-      "**/(src|scripts)/**/*.{js,jsx}",
-      "!**/*.stories.jsx"
+      "**/packages/**/*.{js,jsx}",
+      "!**/*.stories.{js,jsx}"
     ],
     "testMatch": [
       "**/__tests__/**/*.js?(x)",
-      "**/?(*.)+(spec|test).js?(x)"
+      "**/?(*.)+test.js?(x)"
     ]
   },
   "spec": {
