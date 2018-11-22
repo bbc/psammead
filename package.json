@@ -1,7 +1,7 @@
 {
   "name": "psammead",
   "version": "0.1.0",
-  "description": "Core Components Library Developed & Maintained By The Articles and Reach & Languages Team",
+  "description": "Core Components Library Developed & Maintained By The Articles and Reach & Languages Teams",
   "main": "index.js",
   "scripts": {
     "build": "lerna exec --parallel -- babel src -d dist --ignore spec.js,story.js",

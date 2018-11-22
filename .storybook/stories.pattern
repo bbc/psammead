@@ -1,1 +1,1 @@
-../packages/**/*.story.js
+../src/components/**/*.story.js
