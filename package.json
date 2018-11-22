@@ -11,7 +11,7 @@
     "storybook": "NODE_ENV=development start-storybook -p 8080 -c .storybook",
     "storybook:export": "build-storybook -c .storybook -o public",
     "speculate": "speculate",
-    "test": "npm run test:lint && npm run test:unit",
+    "test": "npm run test:lint && test:lint:css && npm run test:unit",
     "test:lint": "eslint --ext .js,jsx,json ./packages",
     "test:lint:css": "stylelint 'packages/**/*.js' 'packages/**/*.jsx'",
     "test:unit": "jest --verbose"
