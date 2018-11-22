@@ -1,7 +1,12 @@
-node_modules
+**/.DS_Store
+**/node_modules
+npm-debug.log*
 
 # Compiled Assets
 public
 
 # Compiled packages
 *.tgz
+
+# Test reports
+coverage
