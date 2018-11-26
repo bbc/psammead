@@ -2,10 +2,12 @@
 
 ## Usage
 
-We have several examples [on the website](https://reactjs.org/). Here is the first one to get you started:
+This package is a collection of variable constants which can be imported into your application.  
 
 ```jsx
 import { C_POSTBOX } from 'psammead-styles/colours';
+
+import { FF_NEWS_SANS_REG } from 'psammead-styles/fonts';
 ```
 
 ## Contributing
