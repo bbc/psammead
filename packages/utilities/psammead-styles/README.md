@@ -5,19 +5,15 @@ This package is a collection of variable constants which can be imported into yo
 ## Installation
 
 ```jsx
-
 npm install @bbc/psammead-styles --save
-
 ```
 
 ## Usage
 
 ```jsx
-
 import { C_POSTBOX } from 'psammead-styles/colours';
 
 import { FF_NEWS_SANS_REG } from 'psammead-styles/fonts';
-
 ```
 
 ## Contributing
