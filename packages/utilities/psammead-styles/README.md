@@ -2,17 +2,19 @@
 
 ## Usage
 
-This package is a collection of variable constants which can be imported into your application.  
+This package is a collection of variable constants which can be imported into your application.
 
 ```jsx
+
 import { C_POSTBOX } from 'psammead-styles/colours';
 
 import { FF_NEWS_SANS_REG } from 'psammead-styles/fonts';
+
 ```
 
 ## Contributing
 
-Psammead is completely open source and we are grateful for any contributes wether they be new components, bug fixes and improvements.
+Psammead is completely open source and we are grateful for any contributes whether they be new components, bug fixes and improvements.
 
 ### [Code of Conduct](https://github.com/BBC-News/psammead/blob/latest/CODE_OF_CONDUCT.md)
 
