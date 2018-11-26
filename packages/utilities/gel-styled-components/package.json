@@ -1,0 +1,31 @@
+{
+  "name": "@bbc/gel-styled-components",
+  "version": "0.1.0",
+  "description": "A collection of gel constants and styled components",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/BBC-News/psammead/tree/latest/packages/utilities/gel-styled-components"
+  },
+  "author": {
+    "name": "BBC Articles Team",
+    "email": "PsammeadMaintainers@bbc.co.uk"
+  },
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/bbc/psammead/issues"
+  },
+  "homepage": "https://github.com/BBC-News/psammead/blob/latest/packages/utilities/gel-styled-components/README.md",
+  "keywords": [
+    "bbc",
+    "utilities",
+    "gel",
+    "styled-components",
+    "breakpoints",
+    "grid",
+    "typography",
+    "spacing"
+  ],
+  "dependencies": {
+    "styled-components": "^4.1.1"
+  }
+}
