@@ -1,7 +1,7 @@
 {
   "name": "psammead-styles",
   "version": "0.1.0",
-  "description": "A Collection of colours and fonts.",
+  "description": "A collection of BBC colours and fonts.",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/BBC-News/psammead.git"
