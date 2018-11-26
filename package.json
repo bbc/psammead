@@ -67,7 +67,8 @@
   "jest": {
     "collectCoverageFrom": [
       "**/packages/**/*.{js,jsx}",
-      "!**/*.stories.{js,jsx}"
+      "!**/*.stories.{js,jsx}",
+      "!**/.eslintrc.js"
     ],
     "testMatch": [
       "**/__tests__/**/*.js?(x)",
