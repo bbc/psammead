@@ -26,7 +26,7 @@ Psammead is completely open source. We are grateful for any contributions, wheth
 
 ### [Code of Conduct](https://github.com/BBC-News/psammead/blob/latest/CODE_OF_CONDUCT.md)
 
-Psammead has a Code of Conduct that we expect project participants to adhere to to ensure a open and welcoming environment. Please read [the full text](https://github.com/BBC-News/psammead/blob/latest/CODE_OF_CONDUCT.md) so that you can understand what actions are and arn't acceptable.
+We welcome feedback and help on this work. By participating in this project, you agree to abide by the [code of conduct](https://github.com/BBC-News/psammead/blob/latest/CODE_OF_CONDUCT.md). Please take a moment to read it.
 
 ### License
 
