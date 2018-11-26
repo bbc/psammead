@@ -1,7 +1,7 @@
 {
   "name": "psammead-styles",
   "version": "0.1.0",
-  "description": "FILL ME OUT",
+  "description": "A Collection of colours and fonts.",
   "main": "index.js",
   "repository": {
     "type": "git",
@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/bbc/psammead/issues"
   },
-  "homepage": "https://github.com/bbc/psammead#readme"
+  "homepage": "https://github.com/bbc/psammead#readme",
+  "keywords": [
+    "bbc", "utilities", "styles", "colours", "colors", "fonts"
+  ]
 }
