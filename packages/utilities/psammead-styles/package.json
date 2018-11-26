@@ -4,7 +4,7 @@
   "description": "A collection of BBC colours and fonts.",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/BBC-News/psammead.git"
+    "url": "https://github.com/BBC-News/psammead/tree/latest/packages/utilities/psammead-styles"
   },
   "author": {
     "name": "BBC Articles Team",
@@ -14,7 +14,7 @@
   "bugs": {
     "url": "https://github.com/bbc/psammead/issues"
   },
-  "homepage": "https://github.com/bbc/psammead#readme",
+  "homepage": "https://github.com/BBC-News/psammead/blob/latest/packages/utilities/psammead-styles/README.md",
   "keywords": [
     "bbc", "utilities", "styles", "colours", "colors", "fonts"
   ]
