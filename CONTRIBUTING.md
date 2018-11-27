@@ -57,7 +57,7 @@ When you run `npm run test` all unit tests should pass and there should be 100% 
 
 The changelog should follow the following convention: 
 ```
-<h1 align="center">PackageName Changelog</h1>
+# PackageName Changelog
 
 | Version | Description |
 |---------|-------------|
