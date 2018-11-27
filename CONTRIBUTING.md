@@ -14,6 +14,7 @@ A component should have this file structure:
 
 ```
 ├── README.md
+├── CHANGELOG.md
 ├── __snapshots__
 │   └── index.test.jsx.snap
 ├── eslintrc.js
@@ -49,6 +50,16 @@ Repository info
 
 **Tests**
 When you run `npm run test` all unit tests should pass and there should be 100% test coverage of the component. No JS or CSS lint errors should be present.
+
+**Changelog**
+```
+
+<h1 align="center">PackageName Changelog</h1>
+
+| Version | Description |
+|---------|-------------|
+| 0.1.0 | [PR#49](https://github.com/BBC-News/psammead/pull/49) Initial creation of package |
+```
 
 **README**
 Your component should include documentation in a `README.md`. This file should also point to the main Psammead [CODE_OF_CONDUCT]([Code of Conduct](https://github.com/BBC-News/psammead/blob/latest/CODE_OF_CONDUCT.md)) and [CONTRIBUTING]([Code of Conduct](https://github.com/BBC-News/psammead/blob/latest/CONTRIBUTING.md)) files.
