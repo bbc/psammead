@@ -50,7 +50,7 @@ Include the following authorship and repository information in your package:
 
 **Tests**
 
-When you run `npm run test` all unit tests should pass and there should be 100% test coverage of the component. No JS or CSS lint errors should be present.
+When you run `npm test` all unit tests should pass and there should be 100% test coverage of the component. No JS or CSS lint errors should be present.
 
 
 **CHANGELOG**
