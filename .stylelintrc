@@ -1,4 +1,7 @@
 {
+  "rules": {
+    "declaration-no-important": true
+  },
   "processors": ["stylelint-processor-styled-components"],
   "extends": [
     "stylelint-config-recommended",
