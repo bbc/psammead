@@ -43,7 +43,7 @@ Include the following authorship and repository information in your package:
 ```
   "repository": {
     "type": "git",
-    "url": "https://github.com/BBC-News/psammead/tree/latest/packages/Headings"
+    "url": "https://github.com/BBC-News/psammead/tree/latest/packages/psammead-headings"
   },
 ```
 
