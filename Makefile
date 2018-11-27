@@ -6,4 +6,4 @@ install:
 	cd ${APP_DIRECTORY}; npm ci; npm run install:packages;
 
 tests:
-	cd ${APP_DIRECTORY}; npm run test;
+	cd ${APP_DIRECTORY}; npm test;
