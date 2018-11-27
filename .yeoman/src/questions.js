@@ -1,4 +1,3 @@
-const gitConfig = require('./git-config');
 const getExistingPackages = require('./get-existing');
 
 module.exports = [
@@ -9,7 +8,7 @@ module.exports = [
       "What would you like to call your package? We'll automatically namespace it for you.",
     validate(answer) {
       if (getExistingPackages().includes(answer)) {
-        return 'Sorry! That package name is taken! Please pick anouther.';
+        return 'Sorry! That package name is taken! Please pick another.';
       }
       if (
         !answer ||
@@ -34,7 +33,7 @@ module.exports = [
     type: 'input',
     name: 'authorName',
     message: 'Who should be listed as the author?',
-    default: gitConfig.getName(),
+    default: 'Psammead Maintainers',
     validate(answer) {
       return answer.length > 3 || 'Please enter a valid name';
     },
@@ -43,7 +42,7 @@ module.exports = [
     type: 'input',
     name: 'authorEmail',
     message: 'What is the email address of the author?',
-    default: gitConfig.getEmail(),
+    default: 'PsammeadMaintainers@bbc.co.uk',
     validate(answer) {
       return (
         /\S+@\S+\.\S+/.test(answer) || 'Please enter a valid email address'
