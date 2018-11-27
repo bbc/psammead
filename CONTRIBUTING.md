@@ -70,7 +70,8 @@ The changelog should follow the following convention:
 The `README.md` should cover the following territory: 
 
 ```
-- ## Description (high-level summary that will be accessible to product/UX/Test, plus link to Storybook, explain the different cases)
+## Description
+(high-level summary that will be accessible to product/UX/Test, plus link to Storybook, explain the different cases)
 ## When to use this component
 (including where it is currently used)
 ## When to not use this component
