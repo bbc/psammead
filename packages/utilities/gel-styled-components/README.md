@@ -11,12 +11,18 @@ npm install @bbc/gel-styled-components --save
 ## Usage
 
 ```jsx
-import { GEL_BREVIER } from 'gel-styled-components/typography';
-
 import { GEL_GROUP_3_SCREEN_WIDTH_MIN } from 'gel-styled-components/breakpoints';
 
 import { GEL_GUTTER_BELOW_600PX } from 'gel-styled-components/spacings';
+
+import { GEL_BREVIER } from 'gel-styled-components/typography';
 ```
+
+## Exports
+
+`/breakpoints` - GEL breakpoints, as well as typography breakpoints. Including links to the relevant GEL pages.
+`/spacings` - GEL spacings and GEL Grid margins and gutters. Including links to the relevant GEL pages.
+`/typography` - GEL typography.
 
 ## Contributing
 
