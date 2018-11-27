@@ -14,6 +14,8 @@ npm install @bbc/gel-styled-components --save
 import { GEL_BREVIER } from 'gel-styled-components/typography';
 
 import { GEL_GROUP_3_SCREEN_WIDTH_MIN } from 'gel-styled-components/breakpoints';
+
+import { GEL_GUTTER_BELOW_600PX } from 'gel-styled-components/spacings';
 ```
 
 ## Contributing
