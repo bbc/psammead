@@ -11,9 +11,9 @@ npm install @bbc/psammead-assets --save
 ## Usage
 
 ```jsx
-import { $BBC_BLOCKS } from "@bbc/psammead-assets/svgs"
+import { BBC_BLOCKS } from "@bbc/psammead-assets/svgs"
 
-import { $AMP_SCRIPT } from "@bbc/psammead-assets/amp-boilerplate"
+import { AMP_SCRIPT } from "@bbc/psammead-assets/amp-boilerplate"
 ```
 
 ## Contributing
