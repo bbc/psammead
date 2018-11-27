@@ -75,7 +75,8 @@ The `README.md` should cover the following territory:
 - ## When to not use this component (if this is not known, can leave the section empty)
 - ## Accessibility notes (ensuring they make sense to non-technical audiences)
 - ## Roadmap (what we have planned for this component)
-- ## Additional notes (link to any relevant ADRs)
+## Additional notes
+(link to any relevant ADRs)
 ```
 
 In addition, the `README.md` should also point to Psammead's [CODE_OF_CONDUCT](https://github.com/BBC-News/psammead/blob/latest/CODE_OF_CONDUCT.md), [CONTRIBUTING](https://github.com/BBC-News/psammead/blob/latest/CONTRIBUTING.md) guide, and [LICENSE](https://github.com/BBC-News/psammead/blob/latest/LICENSE).
