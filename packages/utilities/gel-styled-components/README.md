@@ -11,9 +11,9 @@ npm install @bbc/gel-styled-components --save
 ## Usage
 
 ```jsx
-import { T_BREVIER } from 'gel-styled-components/typography';
+import { GEL_T_BREVIER } from 'gel-styled-components/typography';
 
-import { GROUP_3_SCREEN_WIDTH_MIN } from 'gel-styled-components/breakpoints';
+import { GEL_B_GROUP_3_SCREEN_WIDTH_MIN } from 'gel-styled-components/breakpoints';
 ```
 
 ## Prefixes

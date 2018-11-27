@@ -1,7 +1,7 @@
 import { css } from 'styled-components';
 import MEDIA_QUERY_TYPOGRAPHY from './breakpoints';
 
-export const T_LONG_PRIMER = css`
+export const GEL_T_LONG_PRIMER = css`
   font-size: 0.9375em;
   line-height: 1.125rem;
   ${MEDIA_QUERY_TYPOGRAPHY.laptopAndLarger} {
@@ -10,7 +10,7 @@ export const T_LONG_PRIMER = css`
 `;
 
 /* Font styling below is a subset of BBC GEL Typography "Body Copy" */
-export const T_BODY_COPY = css`
+export const GEL_T_BODY_COPY = css`
   font-size: 0.9375em;
   line-height: 1.25rem;
   ${MEDIA_QUERY_TYPOGRAPHY.smartPhoneAndLarger} {
@@ -19,7 +19,7 @@ export const T_BODY_COPY = css`
   }
 `;
 
-export const T_BREVIER = css`
+export const GEL_T_BREVIER = css`
   font-size: 0.875em;
   line-height: 1rem;
   ${MEDIA_QUERY_TYPOGRAPHY.smartPhoneOnly} {
@@ -31,7 +31,7 @@ export const T_BREVIER = css`
 `;
 
 /* Font styling below is a subset of BBC GEL Typography "Canon" */
-export const T_CANON = css`
+export const GEL_T_CANON = css`
   font-size: 1.75em;
   line-height: 2rem;
   ${MEDIA_QUERY_TYPOGRAPHY.smartPhoneOnly} {
@@ -45,7 +45,7 @@ export const T_CANON = css`
 `;
 
 /* Font styling below is a subset of BBC GEL Typography "Trafalgar" */
-export const T_TRAFALGAR = css`
+export const GEL_T_TRAFALGAR = css`
   font-size: 1.25em;
   line-height: 1.5rem;
   ${MEDIA_QUERY_TYPOGRAPHY.smartPhoneOnly} {
@@ -58,7 +58,7 @@ export const T_TRAFALGAR = css`
   }
 `;
 
-export const T_MINION = css`
+export const GEL_T_MINION = css`
   font-size: 0.75em;
   line-height: 1em;
 `;
