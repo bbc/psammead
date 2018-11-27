@@ -54,6 +54,7 @@
     "eslint-plugin-prettier": "^3.0.0",
     "eslint-plugin-react": "^7.11.1",
     "glob-loader": "^0.3.0",
+    "husky": "^1.2.0",
     "jest": "^23.6.0",
     "jest-fetch-mock": "^1.6.5",
     "jest-styled-components": "^5.0.1",
@@ -67,6 +68,12 @@
     "stylelint-config-recommended": "^2.1.0",
     "stylelint-config-styled-components": "^0.1.1",
     "stylelint-processor-styled-components": "^1.5.1"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run test:lint",
+      "pre-push": "npm run test:unit"
+    }
   },
   "jest": {
     "collectCoverageFrom": [
