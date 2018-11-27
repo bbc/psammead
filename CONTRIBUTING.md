@@ -17,7 +17,6 @@ A component should have this file structure:
 ├── CHANGELOG.md
 ├── __snapshots__
 │   └── index.test.jsx.snap
-├── eslintrc.js
 ├── index.jsx
 ├── index.stories.jsx
 ├── index.test.jsx
@@ -62,4 +61,15 @@ When you run `npm run test` all unit tests should pass and there should be 100% 
 ```
 
 **README**
-Your component should include documentation in a `README.md`. This file should also point to the main Psammead [CODE_OF_CONDUCT]([Code of Conduct](https://github.com/BBC-News/psammead/blob/latest/CODE_OF_CONDUCT.md)) and [CONTRIBUTING]([Code of Conduct](https://github.com/BBC-News/psammead/blob/latest/CONTRIBUTING.md)) files.
+Your component should include documentation in a `README.md`. A `README.md` should cover the following territory: 
+
+```
+- ## Description (high-level summary that will be accessible to product/UX/Test, plus link to Storybook, explain the different cases)
+- ## When to use this component (including where it is currently used)
+- ## When to not use this component (if this is not known, can leave the section empty)
+- ## Accessibility notes (ensuring they make sense to non-technical audiences)
+- ## Roadmap (what we have planned for this component)
+- ## Additional notes (link to any relevant ADRs)
+```
+
+In addition, the `README.md` should also point to the main Psammead [CODE_OF_CONDUCT]([Code of Conduct](https://github.com/BBC-News/psammead/blob/latest/CODE_OF_CONDUCT.md)) and [CONTRIBUTING]([Code of Conduct](https://github.com/BBC-News/psammead/blob/latest/CONTRIBUTING.md)) files.
