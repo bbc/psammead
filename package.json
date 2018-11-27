@@ -14,7 +14,7 @@
     "test": "npm run test:lint && npm run test:lint:css && npm run test:unit",
     "test:lint": "eslint --ext .js,jsx,json ./packages",
     "test:lint:css": "stylelint 'packages/**/*.js' 'packages/**/*.jsx'",
-    "test:unit": "jest --verbose"
+    "test:unit": "jest --verbose --coverage"
   },
   "repository": {
     "type": "git",
@@ -45,6 +45,7 @@
     "babel-preset-env": "^1.7.0",
     "babel-preset-react": "^6.24.1",
     "enzyme": "^3.7.0",
+    "enzyme-adapter-react-16": "^1.7.0",
     "eslint": "^5.9.0",
     "eslint-config-airbnb": "^17.1.0",
     "eslint-config-prettier": "^3.3.0",
@@ -71,11 +72,12 @@
   "jest": {
     "collectCoverageFrom": [
       "**/packages/**/*.{js,jsx}",
-      "!**/*.stories.{js,jsx}"
+      "!**/*.stories.{js,jsx}",
+      "!**/.eslintrc.js"
     ],
     "testMatch": [
       "**/__tests__/**/*.js?(x)",
-      "**/?(*.)+test.js?(x)"
+      "**/*.test.{js,jsx}"
     ]
   },
   "spec": {
