@@ -2,9 +2,9 @@
 
 We welcome feedback and help with Psammead. By participating in Psammead, you agree to abide by the [Code of Conduct](https://github.com/BBC-News/psammead/blob/latest/CODE_OF_CONDUCT.md). Please take a moment to read it.
 
-We appreciate all forms of contribution - not just code - that can include documentation, clarifications, typo corrections and much more.
+We appreciate all forms of contribution - not just code. Contribution can include adding documentation, requesting clarification, making typo corrections and much more.
 
-Psammead has a "Definition of Done" that applies to changes proposed to out main branch, `latest`. When you make a pull request, please check that your contribution matches this.
+Psammead has a "Definition of Done" which applies to changes proposed to its main branch, `latest`. When you make a pull request, please check that your contribution matches this.
 
 ## Definition of Done
 
@@ -25,11 +25,12 @@ A component should have this file structure:
 
 The `__snapshots__` directory is optional.
 
+
 **package.json**
 
 The `package.json` is namespaced with `@bbc/psammead-*` e.g. `@bbc/psammead-headings`.
 
-The author of the package
+Include the following authorship and repository information in your package:
 
 ```
   "author": {
@@ -38,8 +39,6 @@ The author of the package
   },
 ```
 
-Repository info
-
 ```
   "repository": {
     "type": "git",
@@ -47,12 +46,16 @@ Repository info
   },
 ```
 
+
 **Tests**
+
 When you run `npm run test` all unit tests should pass and there should be 100% test coverage of the component. No JS or CSS lint errors should be present.
 
-**Changelog**
-```
 
+**CHANGELOG**
+
+The changelog should follow the following convention: 
+```
 <h1 align="center">PackageName Changelog</h1>
 
 | Version | Description |
@@ -60,8 +63,10 @@ When you run `npm run test` all unit tests should pass and there should be 100% 
 | 0.1.0 | [PR#49](https://github.com/BBC-News/psammead/pull/49) Initial creation of package |
 ```
 
+
 **README**
-Your component should include documentation in a `README.md`. A `README.md` should cover the following territory: 
+
+The `README.md` should cover the following territory: 
 
 ```
 - ## Description (high-level summary that will be accessible to product/UX/Test, plus link to Storybook, explain the different cases)
@@ -72,4 +77,4 @@ Your component should include documentation in a `README.md`. A `README.md` shou
 - ## Additional notes (link to any relevant ADRs)
 ```
 
-In addition, the `README.md` should also point to the main Psammead [CODE_OF_CONDUCT]([Code of Conduct](https://github.com/BBC-News/psammead/blob/latest/CODE_OF_CONDUCT.md)) and [CONTRIBUTING]([Code of Conduct](https://github.com/BBC-News/psammead/blob/latest/CONTRIBUTING.md)) files.
+In addition, the `README.md` should also point to the main Psammead [CODE_OF_CONDUCT](https://github.com/BBC-News/psammead/blob/latest/CODE_OF_CONDUCT.md) and [CONTRIBUTING](https://github.com/BBC-News/psammead/blob/latest/CONTRIBUTING.md) files.
