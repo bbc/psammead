@@ -2,4 +2,4 @@
 
 | Version | Description |
 |---------|-------------|
-| 0.1.0   | Create initial package, pulled in from [simorgh](https://github.com/BBC-News/psammead/blob/latest/CONTRIBUTING.md). [PR #48](https://github.com/BBC-News/psammead/pull/48) |
+| 0.1.0   | [PR #48](https://github.com/BBC-News/psammead/pull/48) Create initial package, pulled in from [simorgh](https://github.com/BBC-News/psammead/blob/latest/CONTRIBUTING.md). |
