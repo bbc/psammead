@@ -11,19 +11,10 @@ npm install @bbc/gel-styled-components --save
 ## Usage
 
 ```jsx
-import { GEL_T_BREVIER } from 'gel-styled-components/typography';
+import { GEL_BREVIER } from 'gel-styled-components/typography';
 
-import { GEL_B_GROUP_3_SCREEN_WIDTH_MIN } from 'gel-styled-components/breakpoints';
+import { GEL_GROUP_3_SCREEN_WIDTH_MIN } from 'gel-styled-components/breakpoints';
 ```
-
-## Prefixes
-
-| Prefix |          Example         |          Description          |
-|:-------|:-------------------------|:------------------------------| 
-| GEL_B  | GEL_B_GROUP_B_MIN_WIDTH  | Grid breakpoints              |
-| GEL_S_ | GEL_S_DBL                | Spacings, margins and gutters |
-| GEL_T_ | GEL_T_BREVIER            | Typography                    |
-
 
 ## Contributing
 
