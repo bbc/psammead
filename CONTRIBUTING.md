@@ -73,7 +73,8 @@ The `README.md` should cover the following territory:
 - ## Description (high-level summary that will be accessible to product/UX/Test, plus link to Storybook, explain the different cases)
 - ## When to use this component (including where it is currently used)
 - ## When to not use this component (if this is not known, can leave the section empty)
-- ## Accessibility notes (ensuring they make sense to non-technical audiences)
+## Accessibility notes
+(ensuring they make sense to non-technical audiences)
 ## Roadmap
 (what we have planned for this component)
 ## Additional notes
