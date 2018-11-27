@@ -47,7 +47,7 @@ pipeline {
           userRemoteConfigs: [[
             credentialsId: 'github',
             name: "origin/${env.BRANCH_NAME}",
-            url: 'https://github.com/bbc-news/simorgh.git'
+            url: 'https://github.com/bbc-news/psammead.git'
           ]]
         ])
         script {
@@ -76,8 +76,7 @@ pipeline {
       }
       steps {
         sh 'make install'
-        sh 'make developmentTests'
-        sh 'make productionTests'
+        sh 'make tests'
       }
       post {
         always {
@@ -85,20 +84,6 @@ pipeline {
             stageName = env.STAGE_NAME
           }
         }
-      }
-    }
-    stage ('Run Pipeline') {
-      when {
-        expression { env.BRANCH_NAME == 'latest' }
-      }
-      agent any
-      steps {
-        build(
-          job: 'simorgh-infrastructure/latest',
-          parameters: [[$class: 'StringParameterValue', name: 'BRANCH', value: env.BRANCH_NAME]],
-          propagate: true,
-          wait: true
-        )
       }
     }
   }

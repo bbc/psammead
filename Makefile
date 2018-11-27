@@ -3,10 +3,7 @@ none:
 
 install:
 	npm --version; node --version;
-	cd ${APP_DIRECTORY}; npm ci;
+	cd ${APP_DIRECTORY}; npm ci; npm run install:packages;
 
-developmentTests:
-	cd ${APP_DIRECTORY}; npm run test; xvfb-run npm run test:e2e:storybook:ci
-
-productionTests:
-	cd ${APP_DIRECTORY}; npm run build; xvfb-run npm run test:prod:ci
+tests:
+	cd ${APP_DIRECTORY}; npm run test;
