@@ -20,9 +20,9 @@ import { GEL_B_GROUP_3_SCREEN_WIDTH_MIN } from 'gel-styled-components/breakpoint
 
 | Prefix |          Example         |          Description          |
 |:-------|:-------------------------|:------------------------------| 
-| GROUP_ | GROUP_3_SCREEN_WIDTH_MIN | Grid breakpoints              |
-| GEL_   | GEL_GUTTER_BELOW_600PX   | Spacings, margins and gutters |
-| T_     | T_BREVIER                | Typography                    |
+| GEL_B  | GEL_B_GROUP_B_MIN_WIDTH  | Grid breakpoints              |
+| GEL_S_ | GEL_S_DBL                | Spacings, margins and gutters |
+| GEL_T_ | GEL_T_BREVIER            | Typography                    |
 
 
 ## Contributing
