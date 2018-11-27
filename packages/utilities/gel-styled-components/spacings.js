@@ -14,7 +14,7 @@ export const GEL_SPACING_QUAD = `2rem`;
     Margins and Gutters are defined here
     https://www.bbc.co.uk/gel/guidelines/grid#grid-sizes
 */
-export const GEL_SPACING_MARGIN_BELOW_400PX = `${GEL_SPACING}`;
-export const GEL_SPACING_GUTTER_BELOW_600PX = `${GEL_SPACING}`;
-export const GEL_SPACING_MARGIN_ABOVE_400PX = `${GEL_SPACING_DBL}`;
-export const GEL_SPACING_GUTTER_ABOVE_600PX = `${GEL_SPACING_DBL}`;
+export const GEL_MARGIN_BELOW_400PX = `${GEL_SPACING}`;
+export const GEL_GUTTER_BELOW_600PX = `${GEL_SPACING}`;
+export const GEL_MARGIN_ABOVE_400PX = `${GEL_SPACING_DBL}`;
+export const GEL_GUTTER_ABOVE_600PX = `${GEL_SPACING_DBL}`;
