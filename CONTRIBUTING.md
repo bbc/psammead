@@ -20,7 +20,8 @@ A component should have this file structure:
 ├── index.jsx
 ├── index.stories.jsx
 ├── index.test.jsx
-└── package.json
+├── package.json
+└── package-lock.json
 ```
 
 The `__snapshots__` directory is optional.
