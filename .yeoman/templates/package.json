@@ -14,5 +14,5 @@
   "bugs": {
     "url": "https://github.com/bbc/psammead/issues"
   },
-  "homepage": "https://github.com/BBC-News/psammead/blob/latest/packages/utilities/psammead-<%= name %>/README.md",
+  "homepage": "https://github.com/BBC-News/psammead/blob/latest/packages/utilities/psammead-<%= name %>/README.md"
 }

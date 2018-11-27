@@ -1,42 +1,51 @@
 /* eslint-disable max-statements, complexity */
-
-var yeoman = require('yeoman-generator');
-var fsActions = require('./lib/fs-actions');
-var chalk = require('chalk');
-var _ = require('lodash');
-var Promise = require('bluebird');
-var generateScripts = require('./lib/scripts');
+const Generator = require('yeoman-generator');
+const fsActions = require('./src/fs-actions');
+const chalk = require('chalk');
+const fs = require('fs');
 
 function prettyName(name) {
-    return JSON.stringify(obj, null, 4).replace(/\}/, '  }');
+    return name.split('-')
+    .map((s) => s.charAt(0).toUpperCase() + s.substring(1))
+    .join(' ');
 }
 
-module.exports = yeoman.generators.Base.extend({
-    prompting: function() {
-        var done = this.async();
-        this.prompt(require('./questions'), function(props) {
-            this.props = props;
-            done();
-        }.bind(this));
-    },
+module.exports = class extends Generator {
+    async prompting() {
+        const props = await this.prompt(require('./src/questions'));
+        this.props = props;
+        this.props.prettyName = prettyName(this.props.name);
+    }
 
-    paths: function() {
-        var destination = './packages/components/   ' + this.props.name;
+    paths() {
+        this.log(chalk.blue('Creating your package folder...'));
+
+        var destination = './packages/components/' + this.props.name;
         fsActions.mkDir(destination);
         this.destinationRoot(destination);
         this.sourceRoot(__dirname + '/templates');
-    },
+    }
 
-    writing: function() {
-        this.fs.copyTpl(
-            this.templatePath('package.jsonT'),
-            this.destinationPath('package.json'),
-            this.props
-        );
-    },
+    writing() {
+        this.log(chalk.blue('Generating your package files...'));
 
-    install: function() {
-        this.log(chalk.green('Now running the build script...'));
-        return fsActions.install(this.destinationPath('build_scripts/build.sh'));
-    },
-});
+        fs.readdir(__dirname + '/templates', (err, files) => {
+          files.forEach(filename => {
+            this.fs.copyTpl(
+               this.templatePath(filename),
+               this.destinationPath(filename),
+               this.props
+            );
+          });
+        })
+    }
+
+    install() {
+        this.log(chalk.green('Now installing your package...'));
+        return fsActions.install();
+    }
+
+    end() {
+        this.log(chalk.blue('Success!!'));
+    }
+}
