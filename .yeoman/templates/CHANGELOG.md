@@ -1,4 +1,4 @@
-<h1 align="center"><%= prettyName %> Changelog</h1>
+# <%= prettyName %> Changelog
 
 | Version | Description |
 |---------|-------------|
