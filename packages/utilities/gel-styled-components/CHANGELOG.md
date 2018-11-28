@@ -1,4 +1,4 @@
-<h1 align="center">Gel Styled Components Changelog</h1>
+# Gel Styled Components Changelog
 
 | Version | Description |
 |---------|-------------|
