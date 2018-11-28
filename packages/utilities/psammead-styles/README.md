@@ -18,7 +18,7 @@ import { FF_NEWS_SANS_REG } from 'psammead-styles/fonts';
 
 ## Contributing
 
-Psammead is completely open source. We are grateful for any contributions, whether they be new components, bug fixes or general improvements.
+Psammead is completely open source. We are grateful for any contributions, whether they be new components, bug fixes or general improvements. Please see our primary contributing guide which can be found at [the root of the Psammead respository](https://github.com/BBC-News/psammead/blob/latest/CONTRIBUTING.md).
 
 ### [Code of Conduct](https://github.com/BBC-News/psammead/blob/latest/CODE_OF_CONDUCT.md)
 
