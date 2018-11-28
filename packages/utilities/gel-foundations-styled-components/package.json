@@ -1,10 +1,10 @@
 {
-  "name": "@bbc/gel-styled-components",
+  "name": "@bbc/gel-foundations-styled-components",
   "version": "0.1.0",
-  "description": "A collection of gel constants and styled components",
+  "description": "A collection of gel styled components",
   "repository": {
     "type": "git",
-    "url": "https://github.com/BBC-News/psammead/tree/latest/packages/utilities/gel-styled-components"
+    "url": "https://github.com/BBC-News/psammead/tree/latest/packages/utilities/gel-foundations-styled-components"
   },
   "author": {
     "name": "Psammead Maintainers",
@@ -14,7 +14,7 @@
   "bugs": {
     "url": "https://github.com/bbc/psammead/issues"
   },
-  "homepage": "https://github.com/BBC-News/psammead/blob/latest/packages/utilities/gel-styled-components/README.md",
+  "homepage": "https://github.com/BBC-News/psammead/blob/latest/packages/utilities/gel-foundations-styled-components/README.md",
   "keywords": [
     "bbc",
     "utilities",
@@ -26,6 +26,7 @@
     "spacing"
   ],
   "dependencies": {
+    "@bbc/gel-constants": "^0.1.0",
     "styled-components": "^4.1.1"
   }
 }

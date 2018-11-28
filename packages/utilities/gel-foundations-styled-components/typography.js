@@ -1,5 +1,5 @@
 import { css } from 'styled-components';
-import MEDIA_QUERY_TYPOGRAPHY from './breakpoints';
+import MEDIA_QUERY_TYPOGRAPHY from '@bbc/gel-constants/breakpoints';
 
 export const GEL_LONG_PRIMER = css`
   font-size: 0.9375em;
