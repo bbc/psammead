@@ -14,8 +14,6 @@ npm install @bbc/gel-constants --save
 import { GEL_GROUP_3_SCREEN_WIDTH_MIN } from 'gel-constants/breakpoints';
 
 import { GEL_GUTTER_BELOW_600PX } from 'gel-constants/spacings';
-
-import { GEL_BREVIER } from 'gel-constants/typography';
 ```
 
 ## Exports
