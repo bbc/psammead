@@ -1,6 +1,6 @@
 {
   "name": "@bbc/psammead-assets",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A collection of BBC assets including svgs",
   "repository": {
     "type": "git",
