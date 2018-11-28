@@ -12,6 +12,11 @@ git clone git@github.com:bbc-news/psammead.git
 cd psammead && npm install
 ```
 
+### Create a new package
+```
+npm run create
+```
+
 ### Run Storybook
 ```
 npm run storybook
