@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "lerna exec --parallel -- babel src -d dist --ignore spec.js,story.js",
+    "create": "yo .yeoman",
     "install:packages": "lerna exec -- npm install",
     "publish": "lerna publish",
     "start": "node server.js",
@@ -44,7 +45,6 @@
     "babel-plugin-styled-components": "^1.5.1",
     "babel-preset-env": "^1.7.0",
     "babel-preset-react": "^6.24.1",
-    "bluebird": "^3.5.3",
     "chalk": "^2.4.1",
     "enzyme": "^3.7.0",
     "enzyme-adapter-react-16": "^1.7.0",
@@ -73,7 +73,8 @@
     "stylelint-config-styled-components": "^0.1.1",
     "stylelint-processor-styled-components": "^1.5.1",
     "yeoman-environment": "^2.3.4",
-    "yeoman-generator": "^3.1.1"
+    "yeoman-generator": "^3.1.1",
+    "yo": "^2.0.5"
   },
   "husky": {
     "hooks": {

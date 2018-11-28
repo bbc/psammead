@@ -1,5 +1,4 @@
-var Promise = require('bluebird'),
-    shell = require('shelljs');
+var shell = require('shelljs');
 
 exports.mkDir = function(dirName) {
     shell.mkdir(dirName);

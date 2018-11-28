@@ -46,6 +46,6 @@ module.exports = class extends Generator {
     }
 
     end() {
-        this.log(chalk.blue('Success!!'));
+        this.log(chalk.blue('Success!!  '));
     }
 }
