@@ -1,4 +1,4 @@
-<h1 align="center">Psammead Assets Changelog</h1>
+# Psammead Assets Changelog
 
 | Version | Description |
 |---------|-------------|
