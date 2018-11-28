@@ -11,15 +11,15 @@ npm install @bbc/gel-constants --save
 ## Usage
 
 ```jsx
-import { GEL_GROUP_3_SCREEN_WIDTH_MIN } from 'gel-constants/breakpoints';
+import { GEL_GROUP_3_SCREEN_WIDTH_MIN } from '@bbc/gel-constants/breakpoints';
 
-import { GEL_GUTTER_BELOW_600PX } from 'gel-constants/spacings';
+import { GEL_GUTTER_BELOW_600PX } from '@bbc/gel-constants/spacings';
 ```
 
 ## Exports
 
-`/breakpoints` - GEL breakpoints, as well as typography breakpoints. These use the GEL grid sizes which can be found in their [documentation](https://www.bbc.co.uk/gel/guidelines/grid#grid-sizes).  
-`/spacings` - GEL spacings and GEL Grid margins and gutters. These use the GEL grid spacing sizes which can be found in their [documentation](https://www.bbc.co.uk/gel/guidelines/grid#spacing-layout).
+`/breakpoints` - GEL breakpoints, as well as typography breakpoints. These use the GEL grid sizes which can be found in the [GEL Grid guidelines](https://www.bbc.co.uk/gel/guidelines/grid#grid-sizes).  
+`/spacings` - GEL spacings and GEL Grid margins and gutters. These use the GEL grid spacing sizes which can be found in the [GEL Grid guidelines](https://www.bbc.co.uk/gel/guidelines/grid#spacing-layout).
 
 ## Contributing
 
