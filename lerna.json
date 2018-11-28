@@ -1,6 +1,7 @@
 {
   "packages": [
-    "packages/*"
+    "packages/components/*",
+    "packages/utilities/*"
   ],
   "version": "independent"
 }
