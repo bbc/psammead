@@ -11,12 +11,12 @@ npm install @bbc/gel-foundations-styled-components --save
 ## Usage
 
 ```jsx
-import { GEL_BREVIER } from 'gel-foundations-styled-components/typography';
+import { GEL_BREVIER } from '@bbc/gel-foundations-styled-components/typography';
 ```
 
 ## Exports
 
-`/typography` - GEL typography. These are based on the gel typography standard which can be found in their [documentation](https://www.bbc.co.uk/gel/guidelines/typography).
+`/typography` - GEL typography. These are based on the gel typography standard which can be found in the [GEL Grid guidelines](https://www.bbc.co.uk/gel/guidelines/typography).
 
 ## Contributing
 
