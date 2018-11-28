@@ -1,0 +1,26 @@
+{
+  "name": "@bbc/gel-constants",
+  "version": "0.1.0",
+  "description": "A collection of gel constants",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/BBC-News/psammead/tree/latest/packages/utilities/gel-constants"
+  },
+  "author": {
+    "name": "Psammead Maintainers",
+    "email": "PsammeadMaintainers@bbc.co.uk"
+  },
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/bbc/psammead/issues"
+  },
+  "homepage": "https://github.com/BBC-News/psammead/blob/latest/packages/utilities/gel-constants/README.md",
+  "keywords": [
+    "bbc",
+    "utilities",
+    "gel",
+    "breakpoints",
+    "grid",
+    "spacing"
+  ]
+}
