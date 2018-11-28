@@ -31,7 +31,7 @@ The `__snapshots__` directory is optional.
 
 The `package.json` is namespaced with `@bbc/psammead-*` e.g. `@bbc/psammead-headings`.
 
-Include the following authorship and repository information in your package:
+Include the following authorship and repository information in your package. Replace the team name and email address if appropriate.
 
 ```
   "author": {
