@@ -64,6 +64,7 @@
     "react": "^16.5.0",
     "react-dom": "^16.5.0",
     "react-test-renderer": "^16.5.0",
+    "shelljs": "^0.8.3",
     "storybook-readme": "^4.0.0-beta1",
     "stylelint": "^9.8.0",
     "stylelint-config-recommended": "^2.1.0",
