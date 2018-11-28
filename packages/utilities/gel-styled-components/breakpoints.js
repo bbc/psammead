@@ -30,7 +30,7 @@ export const GEL_GROUP_4_SCREEN_WIDTH_MAX = `80em`; // 1279px
 export const GEL_GROUP_5_SCREEN_WIDTH_MIN = `80em`; // 1280px
 
 export const MEDIA_QUERY_TYPOGRAPHY = {
-  smartPhoneOnly: `@media (min-width: ${GEL_GROUP_B_MIN_WIDTH}em) and (max-width: ${GEL_GROUP_B_MAX_WIDTH}em)`,
-  smartPhoneAndLarger: `@media (min-width: ${GEL_GROUP_B_MIN_WIDTH}em)`,
-  laptopAndLarger: `@media (min-width: ${GEL_GROUP_CD_MIN_WIDTH}em)`,
+  SMART_PHONE_ONLY: `@media (min-width: ${GEL_GROUP_B_MIN_WIDTH}em) and (max-width: ${GEL_GROUP_B_MAX_WIDTH}em)`,
+  SMART_PHONE_AND_LARGER: `@media (min-width: ${GEL_GROUP_B_MIN_WIDTH}em)`,
+  LAPTOP_AND_LARGER: `@media (min-width: ${GEL_GROUP_CD_MIN_WIDTH}em)`,
 };
