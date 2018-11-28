@@ -20,9 +20,9 @@ import { GEL_BREVIER } from 'gel-styled-components/typography';
 
 ## Exports
 
-`/breakpoints` - GEL breakpoints, as well as typography breakpoints. Including links to the relevant GEL pages.
-`/spacings` - GEL spacings and GEL Grid margins and gutters. Including links to the relevant GEL pages.
-`/typography` - GEL typography.
+`/breakpoints` - GEL breakpoints, as well as typography breakpoints. These use the GEL grid sizes which can be found in their [documentation](https://www.bbc.co.uk/gel/guidelines/grid#grid-sizes).  
+`/spacings` - GEL spacings and GEL Grid margins and gutters. These use the GEL grid spacing sizes which can be found in their [documentation](https://www.bbc.co.uk/gel/guidelines/grid#spacing-layout).  
+`/typography` - GEL typography. These are based on the gel typography standard which can be found in their [documentation](https://www.bbc.co.uk/gel/guidelines/typography).
 
 ## Contributing
 
