@@ -1,19 +1,19 @@
-# psammead-styles &middot; [![GitHub license](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](https://github.com/BBC-News/psammead/blob/latest/LICENSE) [![npm version](https://img.shields.io/npm/v/@bbc/psammead-styles.svg)](https://www.npmjs.com/package/@bbc/psammead-styles) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://reactjs.org/docs/how-to-contribute.html#your-first-pull-request)
+# psammead-assets &middot; [![GitHub license](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](https://github.com/BBC-News/psammead/blob/latest/LICENSE) [![npm version](https://img.shields.io/npm/v/@bbc/psammead-assets.svg)](https://www.npmjs.com/package/@bbc/psammead-assets) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://reactjs.org/docs/how-to-contribute.html#your-first-pull-request)
 
 This package is a collection of variable constants which can be imported into your application.
 
 ## Installation
 
 ```jsx
-npm install @bbc/psammead-styles --save
+npm install @bbc/psammead-assets --save
 ```
 
 ## Usage
 
 ```jsx
-import { C_POSTBOX } from 'psammead-styles/colours';
+import { BBC_BLOCKS } from "@bbc/psammead-assets/svgs"
 
-import { FF_NEWS_SANS_REG } from 'psammead-styles/fonts';
+import { AMP_SCRIPT } from "@bbc/psammead-assets/amp-boilerplate"
 ```
 
 ## Contributing
