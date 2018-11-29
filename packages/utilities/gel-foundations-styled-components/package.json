@@ -20,10 +20,7 @@
     "utilities",
     "gel",
     "styled-components",
-    "breakpoints",
-    "grid",
-    "typography",
-    "spacing"
+    "typography"
   ],
   "dependencies": {
     "@bbc/gel-constants": "^0.1.0",
