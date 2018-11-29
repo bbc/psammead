@@ -1,6 +1,7 @@
 {
   "name": "@bbc/psammead-test-helpers",
   "version": "0.1.0",
+  "main": "dist/index.js",
   "description": "A collection of helper methods for snapshot testing",
   "repository": {
     "type": "git",
