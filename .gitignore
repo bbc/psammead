@@ -10,3 +10,5 @@ public
 
 # Test reports
 coverage
+
+packages/**/dist
