@@ -16,7 +16,7 @@ import { GEL_BREVIER } from '@bbc/gel-foundations-styled-components/typography';
 
 ## Exports
 
-`/typography` - GEL typography. These are based on the gel typography standard which can be found in the [GEL Grid guidelines](https://www.bbc.co.uk/gel/guidelines/typography).
+`/typography` - GEL typography. These are based on the gel typography standard which can be found in the [GEL guidelines](https://www.bbc.co.uk/gel/guidelines/typography).
 
 ## Contributing
 
