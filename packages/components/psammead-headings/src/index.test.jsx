@@ -1,6 +1,6 @@
 import React from 'react';
 import { Headline, SubHeading } from './index';
-import { shouldMatchSnapshot } from '../../helpers/tests/testHelpers';
+import { shouldMatchSnapshot } from '@bbc/psammead-test-helpers';
 
 describe('Headline component', () => {
   shouldMatchSnapshot(
@@ -8,6 +8,7 @@ describe('Headline component', () => {
     <Headline>This is my headline.</Headline>,
   );
 });
+
 describe('SubHeading component', () => {
   shouldMatchSnapshot(
     'should render correctly',
