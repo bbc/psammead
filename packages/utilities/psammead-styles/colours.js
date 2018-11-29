@@ -1,4 +1,4 @@
-// BBC News Article colours!
+// BBC News Article colours
 export const C_EBON = '#222222';
 export const C_POSTBOX = '#B80000';
 export const C_STORM = '#404040';
