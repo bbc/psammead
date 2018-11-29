@@ -23,7 +23,7 @@
     "typography"
   ],
   "dependencies": {
-    "@bbc/gel-constants": "^0.1.0",
+    "@bbc/gel-constants": "^0.1.1",
     "styled-components": "^4.1.1"
   }
 }
