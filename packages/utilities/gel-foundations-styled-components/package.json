@@ -1,7 +1,7 @@
 {
   "name": "@bbc/gel-foundations-styled-components",
   "version": "0.1.0",
-  "description": "A collection of gel styled components",
+  "description": "A collection of styled component implementations based on BBC GEL guidelines.",
   "repository": {
     "type": "git",
     "url": "https://github.com/BBC-News/psammead/tree/latest/packages/utilities/gel-foundations-styled-components"
