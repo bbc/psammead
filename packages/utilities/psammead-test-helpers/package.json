@@ -18,9 +18,10 @@
   "keywords": [
     "bbc",
     "utilities",
-    "assets",
-    "svg",
-    "amp"
+    "test",
+    "helpers",
+    "jest",
+    "snapshot"
   ],
   "dependencies": {
     "jest-styled-components": "^6.3.1",
