@@ -27,7 +27,6 @@
   },
   "homepage": "https://github.com/bbc/psammead#readme",
   "dependencies": {
-    "@bbc/gel-constants": "^0.1.0",
     "express": "^4.16.3",
     "speculate": "^1.7.4",
     "styled-components": "^4.1.1"
