@@ -11,9 +11,9 @@ npm install @bbc/psammead-styles --save
 ## Usage
 
 ```jsx
-import { C_POSTBOX } from 'psammead-styles/colours';
+import { C_POSTBOX } from '@bbc/psammead-styles/colours';
 
-import { FF_NEWS_SANS_REG } from 'psammead-styles/fonts';
+import { FF_NEWS_SANS_REG } from '@bbc/psammead-styles/fonts';
 ```
 
 ## Contributing
