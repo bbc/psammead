@@ -6,8 +6,8 @@ import {
 } from '@bbc/psammead-styles/fonts';
 import { GEL_SPACING_DBL, GEL_SPACING_QUAD } from '@bbc/gel-constants/spacings';
 import {
-  T_CANON,
-  T_TRAFALGAR,
+  GEL_CANON,
+  GEL_TRAFALGAR,
 } from '@bbc/gel-foundations-styled-components/typography';
 
 export const Headline = styled.h1`
@@ -15,7 +15,7 @@ export const Headline = styled.h1`
   font-family: ${FF_NEWS_SERIF_MDM};
   margin: 0; /* Reset */
   padding: ${GEL_SPACING_QUAD} 0 ${GEL_SPACING_DBL} 0;
-  ${T_CANON};
+  ${GEL_CANON};
 `;
 
 const regexPunctuationSymbols = /[^a-z0-9\s-]/gi;
@@ -31,5 +31,5 @@ export const SubHeading = styled.h2.attrs({
   margin: 0; /* Reset */
   padding: ${GEL_SPACING_DBL} 0;
   font-weight: 400;
-  ${T_TRAFALGAR};
+  ${GEL_TRAFALGAR};
 `;
