@@ -10,6 +10,8 @@ Psammead has a "Definition of Done" which applies to changes proposed to its mai
 
 **Component Structure**
 
+As discussed in the [README](https://github.com/BBC-News/psammead/blob/latest/README.md), Psammead is a library of shared components following the [container / components pattern](https://medium.com/@dan_abramov/smart-and-dumb-components-7ca2f9a7c7d0). Whether you are creating a component from scratch, or preparing to move an existing React component to Psammead, make sure that your component is presentational and reusable. The component should accept props if needed and implement minimal logic. A presentational component shouldn’t handle either fetching or mutation of data. 
+
 A component should have this file structure:
 
 ```
