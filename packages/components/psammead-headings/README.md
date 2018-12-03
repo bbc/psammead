@@ -10,7 +10,7 @@ These components can be used at any point on the page, however the `Headline` is
 
 ## Accessibility notes
 
-The `SubHeadline` component has a tabindex of `-1` which removes the element from the default navigation flow, meaning the user can not tab to it.
+The `SubHeading` component has a tabindex of `-1` so that it works correctly with screen readers when navigated to via a skip link.
 
 ## Contributing
 
