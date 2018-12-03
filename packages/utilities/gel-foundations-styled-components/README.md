@@ -14,6 +14,10 @@ npm install @bbc/gel-foundations-styled-components --save
 import { GEL_BREVIER } from '@bbc/gel-foundations-styled-components/typography';
 ```
 
+To allow the typography to be fully accessible and responsive, please note that you should apply a default font-size to the document root (e.g. `html { font-size: 100% }`).
+
+Our typography uses `em` for font-size and `rem` for line-height. `em` allows modularity of components: you can change the component font-size by changing the font-size of its container. `rem` is relative to the document root, so we use that for line-height and spacing for a consistent look-and-feel across the document. You can read our [detailed analysis of "REMs vs EMs for spacing"](https://github.com/BBC-News/simorgh/blob/latest/docs/Spacing-Units.md) for more information.
+
 ## Exports
 
 `/typography` - GEL typography. These are based on the gel typography standard which can be found in the [GEL guidelines](https://www.bbc.co.uk/gel/guidelines/typography).
