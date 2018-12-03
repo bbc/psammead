@@ -16,12 +16,6 @@
     "url": "https://github.com/bbc/psammead/issues"
   },
   "homepage": "https://github.com/BBC-News/psammead/blob/latest/packages/utilities/psammead-headings/README.md",
-  "keywords": [
-    "bbc",
-    "headings",
-    "headline",
-    "subheading"
-  ],
   "dependencies": {
     "@bbc/gel-constants": "^0.1.1",
     "@bbc/gel-foundations-styled-components": "^0.1.0",
@@ -30,5 +24,11 @@
   },
   "devDependencies": {
     "@bbc/psammead-test-helpers": "^0.1.0"
-  }
+  },
+  "keywords": [
+    "bbc",
+    "headings",
+    "headline",
+    "subheading"
+  ]
 }
