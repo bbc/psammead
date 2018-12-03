@@ -5,7 +5,7 @@ This package is a collection helper methods used for snapshot testing, with supp
 ## Installation
 
 ```jsx
-npm install @bbc/psammead-test-helpers --save
+npm install react react-dom @bbc/psammead-test-helpers --save-dev
 ```
 
 ## Usage
@@ -18,6 +18,15 @@ shouldMatchSnapshot(
   <h1>Hello World</h1>,
 );
 ```
+
+## Functions
+
+| Name                       | Arguments        | Description  |
+|:---------------------------|:-----------------|:-------------|
+| shouldMatchSnapshot        | title, component | Renders the component using react-test-renderer, converts it to JSON and asserts that it matches the given snapshot, which will be saved in the `__snapshots__` directory. The first argument `title` is the title for the test. |
+| shallowRender              | component        |  Shallow renders the component using react-test-renderer and returns the render output |
+| shouldShallowMatchSnapshot | title, component | Shallow renders the component using react-test-renderer and asserts that it matches the given snapshot, which will be saved in the `__snapshots__` directory. The first argument `title` is the title for the test. |
+| isNull                     | right-aligned    | Renders the component using react-test-renderer, converts it to JSON and asserts that it is null. The first argument `title` is the title for the test. |
 
 ## Roadmap
 
