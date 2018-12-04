@@ -6,6 +6,7 @@
   "scripts": {
     "build": "lerna exec --parallel -- babel src -d dist --ignore test.jsx,stories.jsx --root-mode upward",
     "install:packages": "lerna exec -- npm install",
+    "postinstall": "npm run install:packages",
     "prepublish": "npm run build",
     "publish": "lerna publish",
     "start": "node server.js",
