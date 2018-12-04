@@ -1,4 +1,4 @@
-# Visually Hidden Text [![Storybook](https://github.com/storybooks/press/blob/master/badges/storybook.svg)](https://simorghstorybook.now.sh/?selectedKind=VisuallyHiddenText)
+# psammead-visually-hidden-text &middot; [![GitHub license](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](https://github.com/BBC-News/psammead/blob/latest/LICENSE) [![npm version](https://img.shields.io/npm/v/@bbc/psammead-visually-hidden-text.svg)](https://www.npmjs.com/package/@bbc/psammead-visually-hidden-text) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://reactjs.org/docs/how-to-contribute.html#your-first-pull-request)
 
 ### Description
 
