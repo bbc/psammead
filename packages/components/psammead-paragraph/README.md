@@ -18,8 +18,8 @@ npm install @bbc/psammead-paragraph --save
 import Paragraph from '@bbc/psammead-paragraph';
 
 const WrappingComponent = () => (
-    <Paragraph>Text here</Paragraph>
-  );
+  <Paragraph>Text here</Paragraph>
+);
 ```
 
 ## When to use this component
