@@ -65,6 +65,7 @@
     "react": "^16.6.3",
     "react-dom": "^16.6.3",
     "react-test-renderer": "^16.6.3",
+    "regenerator-runtime": "^0.13.1",
     "storybook-readme": "^4.0.0-beta1",
     "stylelint": "^9.8.0",
     "stylelint-config-recommended": "^2.1.0",
