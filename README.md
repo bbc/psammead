@@ -40,8 +40,8 @@ npm run build
 #### Publishing a package
 
 - In your terminal, run `npm login` and follow the steps for authentication
-- `npm publish packages/<PATH_TO_PACKAGE>`
-  e.g. `npm publish packages/components/psammead-paragraph`
+- `npm publish packages/<PATH_TO_PACKAGE> --otp=<YOUR_2FA_CODE>`
+  e.g. `npm publish packages/components/psammead-paragraph --otp=<YOUR_2FA_CODE>`
 
 #### Making a package public
 
