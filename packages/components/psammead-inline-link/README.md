@@ -24,9 +24,9 @@ const WrappingComponent = () => (
 
 This component can be used at any point on a page.
 
-We have not included typography styles in with this component. This is so it is resusable in multiple contexts. You can use our existing `psammead-paragraph` for body copy and `psammead-headings` for headlines and subheadings (`h1`s and `h2`s), in this way:
+We have not included any typography styles inside this component. This is so it is reusable in multiple contexts. For example, you can use `InlineLink` inside our existing `psammead-paragraph` for body copy and `psammead-headings` for headlines and subheadings (`h1`s and `h2`s).
 
-In a paragraph:
+Example inline link in a paragraph:
 
 ```jsx
 import InlineLink from '@bbc/psammead-inline-link';
@@ -37,18 +37,18 @@ const WrapperComponent = () => (
 );
 ```
 
-In a Headline or SubHeading:
+Example inline link in a Headline or SubHeading:
 
 ```jsx
 import InlineLink from '@bbc/psammead-inline-link';
 import { Headline, SubHeading } from '@bbc/psammead-headings';
 
 const HeadlineWithALink = () => (
-  <Headline><InlineLink href="https://www.bbc.com/news">Headline</InlineLink>
-  <Headline>
+  <InlineLink href="https://www.bbc.com/news"><Headline>Headline</Headline></InlineLink>
+
 
   const SubHeadingWithALink = () => (
-  <SubHeading><InlineLink href="https://www.bbc.com/news">SubHeading</InlineLink><SubHeading>
+  <InlineLink href="https://www.bbc.com/news"><SubHeading>SubHeading</SubHeading></InlineLink>
 );
 ```
 
