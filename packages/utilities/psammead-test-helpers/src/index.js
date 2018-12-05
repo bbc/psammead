@@ -1,11 +1,11 @@
-import renderer from 'react-test-renderer';
+import { render } from 'react-testing-library';
 import 'jest-styled-components';
 import ShallowRenderer from 'react-test-renderer/shallow';
 
 export const shouldMatchSnapshot = (title, component) => {
   it(title, () => {
-    const tree = renderer.create(component).toJSON();
-    expect(tree).toMatchSnapshot();
+    const { asFragment } = render(component);
+    expect(asFragment()).toMatchSnapshot();
   });
 };
 
@@ -26,7 +26,7 @@ export const shouldShallowMatchSnapshot = (title, component) => {
 
 export const isNull = (title, component) => {
   it(title, () => {
-    const tree = renderer.create(component).toJSON();
-    expect(tree).toBeNull();
+    const { container } = render(component);
+    expect(container.firstChild).toBeNull();
   });
 };

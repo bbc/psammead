@@ -1,6 +1,6 @@
 {
   "name": "@bbc/psammead-test-helpers",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "main": "dist/index.js",
   "description": "A collection of helper methods for react snapshot testing with support for styled components",
   "repository": {
@@ -25,7 +25,12 @@
     "snapshot"
   ],
   "dependencies": {
-    "jest-styled-components": "^6.3.1",
-    "react-test-renderer": "^16.6.3"
+    "jest-styled-components": "^6.3.1"
+  },
+  "devDependencies": {
+    "react": "^16.6.3",
+    "react-dom": "^16.6.3",
+    "react-test-renderer": "^16.6.3",
+    "react-testing-library": "^5.3.1"
   }
 }
