@@ -1,11 +1,11 @@
 {
   "name": "@bbc/psammead-headings",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "main": "dist/index.js",
   "description": "React styled components for a Headline and SubHeading",
   "repository": {
     "type": "git",
-    "url": "https://github.com/BBC-News/psammead/tree/latest/packages/utilities/psammead-headings"
+    "url": "https://github.com/BBC-News/psammead/tree/latest/packages/components/psammead-headings"
   },
   "author": {
     "name": "Psammead Maintainers",
@@ -15,7 +15,7 @@
   "bugs": {
     "url": "https://github.com/bbc/psammead/issues"
   },
-  "homepage": "https://github.com/BBC-News/psammead/blob/latest/packages/utilities/psammead-headings/README.md",
+  "homepage": "https://github.com/BBC-News/psammead/blob/latest/packages/components/psammead-headings/README.md",
   "dependencies": {
     "@bbc/gel-constants": "^0.1.1",
     "@bbc/gel-foundations-styled-components": "^0.1.0",
