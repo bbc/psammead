@@ -6,6 +6,7 @@
   "scripts": {
     "build": "lerna exec --parallel -- babel src -d dist --ignore ‘**/*.test.jsx,**/*.stories.jsx’ --root-mode upward",
     "install:packages": "lerna exec -- npm install",
+    "postinstall": "npm run install:packages",
     "prepublish": "npm run build",
     "publish": "lerna publish",
     "start": "node server.js",
@@ -42,6 +43,7 @@
     "@storybook/addon-options": "^3.4.11",
     "@storybook/addon-viewport": "^3.4.11",
     "@storybook/react": "4.0.0-alpha.8",
+    "babel-core": "^7.0.0-bridge.0",
     "babel-eslint": "^8.2.6",
     "babel-loader": "^8.0.4",
     "babel-plugin-styled-components": "^1.5.1",
