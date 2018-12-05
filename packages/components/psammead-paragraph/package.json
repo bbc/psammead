@@ -1,12 +1,17 @@
 {
-  "name": "@bbc/psammead-headings",
-  "version": "0.1.1",
+  "name": "@bbc/psammead-paragraph",
+  "version": "0.1.0",
+  "description": "React styled component for a Paragraph",
   "main": "dist/index.js",
-  "description": "React styled components for a Headline and SubHeading",
   "repository": {
     "type": "git",
-    "url": "https://github.com/BBC-News/psammead/tree/latest/packages/components/psammead-headings"
+    "url": "https://github.com/BBC-News/psammead/tree/latest/packages/components/psammead-paragraph"
   },
+  "keywords": [
+    "bbc",
+    "paragraph",
+    "styled-components"
+  ],
   "author": {
     "name": "Psammead Maintainers",
     "email": "PsammeadMaintainers@bbc.co.uk"
@@ -15,7 +20,7 @@
   "bugs": {
     "url": "https://github.com/bbc/psammead/issues"
   },
-  "homepage": "https://github.com/BBC-News/psammead/blob/latest/packages/components/psammead-headings/README.md",
+  "homepage": "https://github.com/BBC-News/psammead/blob/latest/packages/components/psammead-paragraph/README.md",
   "dependencies": {
     "@bbc/gel-constants": "^0.1.1",
     "@bbc/gel-foundations-styled-components": "^0.1.0",
@@ -23,12 +28,7 @@
     "styled-components": "^4.1.2"
   },
   "devDependencies": {
-    "@bbc/psammead-test-helpers": "^0.1.0"
-  },
-  "keywords": [
-    "bbc",
-    "headings",
-    "headline",
-    "subheading"
-  ]
+    "@bbc/psammead-test-helpers": "^0.1.0",
+    "react": "^16.6.3"
+  }
 }
