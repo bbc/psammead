@@ -7,3 +7,6 @@ install:
 
 tests:
 	cd ${APP_DIRECTORY}; npm test;
+
+publish:
+	cd ${APP_DIRECTORY}; ./.scripts/publish.sh;
