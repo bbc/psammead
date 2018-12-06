@@ -6,6 +6,7 @@ module.exports = {
     // used by Jest
     test: {
       presets,
+      plugins: ['@babel/plugin-transform-modules-commonjs'],
     },
   },
 };
