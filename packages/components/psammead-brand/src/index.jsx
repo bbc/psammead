@@ -13,7 +13,7 @@ import {
   group3ScreenWidthMax,
 } from '@bbc/gel-constants/spacings';
 
-export const layoutWrapperWithoutGrid = styled.css`
+const layoutWrapperWithoutGrid = styled.css`
   @media (max-width: ${GEL_GROUP_2_SCREEN_WIDTH_MIN}) {
     padding: 0 ${GEL_MARGIN_BELOW_400PX};
   }
