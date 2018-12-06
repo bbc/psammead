@@ -1,0 +1,32 @@
+{
+  "name": "@bbc/psammead-visually-hidden-text",
+  "version": "0.1.1",
+  "main": "dist/index.js",
+  "description": "React styled component for visually hidden text (for screen readers)",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/BBC-News/psammead/tree/latest/packages/components/psammead-visually-hidden-text"
+  },
+  "author": {
+    "name": "Psammead Maintainers",
+    "email": "PsammeadMaintainers@bbc.co.uk"
+  },
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/bbc/psammead/issues"
+  },
+  "homepage": "https://github.com/BBC-News/psammead/blob/latest/packages/components/psammead-visually-hidden-text/README.md",
+  "dependencies": {
+    "styled-components": "^4.1.2"
+  },
+  "devDependencies": {
+    "@bbc/psammead-test-helpers": "^0.1.0"
+  },
+  "keywords": [
+    "bbc",
+    "accessibility",
+    "a11y",
+    "screen readers",
+    "off-screen"
+  ]
+}
