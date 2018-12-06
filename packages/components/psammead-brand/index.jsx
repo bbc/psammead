@@ -3,13 +3,24 @@ import styled from 'styled-components';
 import { string } from 'prop-types';
 import { C_POSTBOX, C_WHITE } from '@bbc/psammead-styles/colours';
 import VisuallyHiddenText from '@bbc/psammead-visually-hidden-text';
+import { GEL_GROUP_2_SCREEN_WIDTH_MIN } from '@bbc/gel-constants/breakpoints';
 import {
+  GEL_MARGIN_BELOW_400PX,
+  GEL_MARGIN_ABOVE_400PX,
   GEL_SPACING,
   GEL_SPACING_DBL,
   GEL_SPACING_HLF,
   group3ScreenWidthMax,
-} from '../../lib/constants/styles';
-import { layoutWrapperWithoutGrid } from '../../lib/layoutGrid';
+} from '@bbc/gel-constants/spacings';
+
+export const layoutWrapperWithoutGrid = styled.css`
+  @media (max-width: ${GEL_GROUP_2_SCREEN_WIDTH_MIN}) {
+    padding: 0 ${GEL_MARGIN_BELOW_400PX};
+  }
+  @media (min-width: ${GEL_GROUP_2_SCREEN_WIDTH_MIN}) {
+    padding: 0 ${GEL_MARGIN_ABOVE_400PX};
+  }
+`;
 
 const SVG_TOP_OFFSET = '1.25rem'; // 20px
 const SVG_BOTTOM_OFFSET = '1.5rem'; // 24px
