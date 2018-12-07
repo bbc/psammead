@@ -32,6 +32,8 @@ This runs Jest across any packages matching this glob pattern: `packages/compone
 npm run storybook
 ```
 
+NB, we've defined global styles (normalize, box-sizing, Reith font) in the [Storybook config](https://github.com/BBC-News/psammead/blob/latest/.storybook/config.js) so that components render as expected.
+
 ### Build Packages/Components
 
 ```
