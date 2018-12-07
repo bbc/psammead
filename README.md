@@ -48,7 +48,7 @@ npm run build
 The Psammead Storybook is hosted on GitHub pages at http://bbc-news.github.io/psammead. It is currently deployed via a local script that builds Storybook to the `gh-pages` git branch which is used by GitHub pages.
 
 ```
-rpm run deploy-storybook
+npm run deploy-storybook
 ```
 
 NB, this automatically pushes to the 'gh-pages' branch, which deploys to the live GitHub pages site. Please only run this script on the `latest` branch.
