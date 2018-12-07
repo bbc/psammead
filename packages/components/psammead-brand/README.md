@@ -7,8 +7,7 @@ The `Brand` component provides the BBC News logo (as SVG), nested inside a style
 The `Brand` component is designed to be used where a BBC logo is required as SVG. `Brand` is used in the [BrandContainer](../../containers/Brand), which consumes a service context it passes to the `Brand`. 
 
 ## Usage
-
-to do
+`Brand` requires `babel-plugin-styled-components` as a dev dependency and must be added as a plugin to babel's config.
 
 ## Accessibility notes	
 * Visually hidden text is provided (e.g. for screen reader users)
