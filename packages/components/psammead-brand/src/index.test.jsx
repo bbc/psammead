@@ -8,3 +8,16 @@ describe('Brand', () => {
     <Brand brandName="Default Brand Name" />,
   );
 });
+
+// describe('thing', () => {
+//   it('shoud', () => {
+//     expect(true).toBe(true);
+//   });
+
+// describe('Brand', () => {
+//   shouldMatchSnapshot(
+//     'should render correctly',
+//     <Brand brandName="Default Brand Name" />,
+//   );
+// });
+// });

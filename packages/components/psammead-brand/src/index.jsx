@@ -1,5 +1,5 @@
 import React from 'react';
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 import { string } from 'prop-types';
 import { C_POSTBOX, C_WHITE } from '@bbc/psammead-styles/colours';
 import VisuallyHiddenText from '@bbc/psammead-visually-hidden-text';
@@ -10,10 +10,10 @@ import {
   GEL_SPACING,
   GEL_SPACING_DBL,
   GEL_SPACING_HLF,
-  group3ScreenWidthMax,
+  GEL_GROUP_3_SCREEN_WIDTH_MAX,
 } from '@bbc/gel-constants/spacings';
 
-const layoutWrapperWithoutGrid = styled.css`
+const layoutWrapperWithoutGrid = css`
   @media (max-width: ${GEL_GROUP_2_SCREEN_WIDTH_MIN}) {
     padding: 0 ${GEL_MARGIN_BELOW_400PX};
   }
@@ -38,7 +38,7 @@ const StyledWrapper = styled.div`
   background-color: ${C_POSTBOX};
   height: ${BANNER_HEIGHT};
   width: 100%;
-  @media (min-width: ${group3ScreenWidthMax}) {
+  @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MAX}) {
     padding: 0 ${GEL_SPACING_DBL};
   }
 `;
