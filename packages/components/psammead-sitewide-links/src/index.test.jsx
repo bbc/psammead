@@ -1,7 +1,6 @@
 import React from 'react';
-import SitewideLinks from './index';
-import { ServiceContextProvider } from '../../contexts/ServiceContext';
 import { shouldMatchSnapshot } from '@bbc/psammead-test-helpers';
+import SitewideLinks from './index';
 
 describe(`SitewideLinks`, () => {
   const link = {
@@ -13,12 +12,10 @@ describe(`SitewideLinks`, () => {
 
   shouldMatchSnapshot(
     'should render correctly',
-    <ServiceContextProvider>
-      <SitewideLinks
-        links={links}
-        copyrightText="Text here. "
-        externalLink={link}
-      />
-    </ServiceContextProvider>,
+    <SitewideLinks
+      links={links}
+      copyrightText="Text here. "
+      externalLink={link}
+    />,
   );
 });

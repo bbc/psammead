@@ -3,16 +3,16 @@ import styled from 'styled-components';
 import { string, arrayOf, shape } from 'prop-types';
 import nanoid from 'nanoid';
 import { C_WHITE } from '@bbc/psammead-styles/colours';
+import { GEL_SPACING, GEL_SPACING_DBL } from '@bbc/gel-constants/spacings';
 import {
-  GEL_SPACING,
-  GEL_SPACING_DBL,
-  group2ScreenWidthMax,
-  group3ScreenWidthMin,
-  group3ScreenWidthMax,
-  group4ScreenWidthMin,
-  group4ScreenWidthMax,
-  group5ScreenWidthMin,
-} from '../../../lib/constants/styles';
+  GEL_GROUP_2_SCREEN_WIDTH_MAX,
+  GEL_GROUP_3_SCREEN_WIDTH_MIN,
+  GEL_GROUP_3_SCREEN_WIDTH_MAX,
+  GEL_GROUP_4_SCREEN_WIDTH_MIN,
+  GEL_GROUP_4_SCREEN_WIDTH_MAX,
+  GEL_GROUP_5_SCREEN_WIDTH_MIN,
+} from '@bbc/gel-constants/breakpoints';
+
 import Link from '../Link';
 
 const StyledList = styled.ul`
@@ -22,22 +22,22 @@ const StyledList = styled.ul`
   list-style-type: none;
   margin: 0;
   padding: 0 0 ${GEL_SPACING};
-  @media (max-width: ${group2ScreenWidthMax}) {
+  @media (max-width: ${GEL_GROUP_2_SCREEN_WIDTH_MAX}) {
     grid-column-gap: ${GEL_SPACING};
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(4, auto);
   }
-  @media (min-width: ${group3ScreenWidthMin}) and (max-width: ${group3ScreenWidthMax}) {
+  @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) and (max-width: ${GEL_GROUP_3_SCREEN_WIDTH_MAX}) {
     grid-column-gap: ${GEL_SPACING_DBL};
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, auto);
   }
-  @media (min-width: ${group4ScreenWidthMin}) and (max-width: ${group4ScreenWidthMax}) {
+  @media (min-width: ${GEL_GROUP_4_SCREEN_WIDTH_MIN}) and (max-width: ${GEL_GROUP_4_SCREEN_WIDTH_MAX}) {
     grid-column-gap: ${GEL_SPACING_DBL};
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(3, auto);
   }
-  @media (min-width: ${group5ScreenWidthMin}) {
+  @media (min-width: ${GEL_GROUP_5_SCREEN_WIDTH_MIN}) {
     grid-column-gap: ${GEL_SPACING_DBL};
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(3, auto);

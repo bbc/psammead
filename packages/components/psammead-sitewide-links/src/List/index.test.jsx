@@ -1,7 +1,6 @@
 import React from 'react';
+import { shouldMatchSnapshot } from '@bbc/psammead-test-helpers';
 import List from './index';
-
-import { shouldMatchSnapshot } from '../../../helpers/tests/testHelpers';
 
 describe(`List`, () => {
   const link = {
