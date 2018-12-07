@@ -1,5 +1,7 @@
 # Psammead - News React Component Library
 
+[![Storybook](https://github.com/storybooks/press/blob/master/badges/storybook.svg)](http://bbc-news.github.io/psammead)
+
 # Getting Started
 
 ### Clone this repositry
@@ -16,11 +18,23 @@ cd psammead && npm install
 
 NB, this automatically runs `npm run install:packages` in a postinstall step for you.
 
-### Run Storybook
+### Storybook
 
+## Run Locally
 ```
 npm run storybook
 ```
+
+## Deploying
+
+The Psammead storybook is hosted on github pages at http://bbc-news.github.io/psammead. It is currently deployed via a local script that builds storybook to the `gh-pages` git branch which is used by github pages.
+
+```
+rpm run deploy-storybook
+```
+
+NB, this automatically pushes and deploys, please only run this script on the `latest` branch.
+
 
 ### Build Packages/Components
 
