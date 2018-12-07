@@ -22,6 +22,8 @@ NB, this automatically runs `npm run install:packages` in a postinstall step for
 npm run storybook
 ```
 
+NB, we've defined global styles (normalize, box-sizing, Reith font) in the [Storybook config](https://github.com/BBC-News/psammead/blob/latest/.storybook/config.js) so that components render as expected.
+
 ### Build Packages/Components
 
 ```
