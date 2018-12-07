@@ -33,7 +33,7 @@ The Psammead Storybook is hosted on GitHub pages at http://bbc-news.github.io/ps
 rpm run deploy-storybook
 ```
 
-NB, this automatically pushes and deploys, please only run this script on the `latest` branch.
+NB, this automatically pushes to the 'gh-pages' branch, which deploys to the live GitHub pages site. Please only run this script on the `latest` branch.
 
 ### Build Packages/Components
 
