@@ -18,9 +18,13 @@ NB, this automatically runs `npm run install:packages` in a postinstall step for
 
 ### Run tests
 
+Run the component tests:
+
 ```
 npm test
 ```
+
+This runs Jest across any packages matching this glob pattern: `packages/components/**/*.test.jsx`.
 
 ### Run Storybook
 
