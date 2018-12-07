@@ -1,6 +1,7 @@
 {
   "rules": {
-    "declaration-no-important": true
+    "declaration-no-important": true,
+    "selector-type-no-unknown": null
   },
   "processors": ["stylelint-processor-styled-components"],
   "extends": [
