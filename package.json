@@ -17,7 +17,8 @@
     "test": "npm run test:lint && npm run test:lint:css && npm run test:unit",
     "test:lint": "eslint --ext .js,jsx,json ./packages",
     "test:lint:css": "stylelint 'packages/**/*.js' 'packages/**/*.jsx'",
-    "test:unit": "jest --verbose --coverage"
+    "test:unit": "jest --verbose --coverage",
+    "deploy-storybook": "storybook-to-ghpages"
   },
   "repository": {
     "type": "git",
@@ -44,6 +45,7 @@
     "@storybook/addon-options": "^3.4.11",
     "@storybook/addon-viewport": "^3.4.11",
     "@storybook/react": "4.0.0-alpha.8",
+    "@storybook/storybook-deployer": "^2.8.1",
     "babel-core": "^7.0.0-bridge.0",
     "babel-eslint": "^8.2.6",
     "babel-loader": "^8.0.4",
