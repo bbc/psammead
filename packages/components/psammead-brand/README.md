@@ -6,10 +6,18 @@ The `Brand` component provides the BBC News logo (as SVG), nested inside a style
 ## When to use this component	
 The `Brand` component is designed to be used where a BBC logo is required as SVG. `Brand` is used in the [BrandContainer](../../containers/Brand), which consumes a service context it passes to the `Brand`. 
 
-## Usage
-`Brand` requires `babel-plugin-styled-components` as a dev dependency and must be added as a plugin to babel's config.
-
 ## Accessibility notes	
 * Visually hidden text is provided (e.g. for screen reader users)
 * `Brand` is keyboard-accessible and provides hover and focus styles
 
+## Contributing
+
+Psammead is completely open source. We are grateful for any contributions, whether they be new components, bug fixes or general improvements. Please see our primary contributing guide which can be found at [the root of the Psammead respository](https://github.com/BBC-News/psammead/blob/latest/CONTRIBUTING.md).
+
+### [Code of Conduct](https://github.com/BBC-News/psammead/blob/latest/CODE_OF_CONDUCT.md)
+
+We welcome feedback and help on this work. By participating in this project, you agree to abide by the [code of conduct](https://github.com/BBC-News/psammead/blob/latest/CODE_OF_CONDUCT.md). Please take a moment to read it.
+
+### License
+
+Psammead is [Apache 2.0 licensed](https://github.com/BBC-News/psammead/blob/latest/LICENSE).
