@@ -18,14 +18,14 @@ cd psammead && npm install
 
 NB, this automatically runs `npm run install:packages` in a postinstall step for you.
 
-### Storybook
+## Storybook
 
-## Run Locally
+### Run Locally
 ```
 npm run storybook
 ```
 
-## Deploying
+### Deploying
 
 The Psammead storybook is hosted on github pages at http://bbc-news.github.io/psammead. It is currently deployed via a local script that builds storybook to the `gh-pages` git branch which is used by github pages.
 
