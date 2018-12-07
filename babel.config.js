@@ -9,13 +9,4 @@ module.exports = {
       plugins: ['@babel/plugin-transform-modules-commonjs'],
     },
   },
-  plugins: [
-    [
-      'babel-plugin-styled-components',
-      {
-        ssr: true,
-        fileName: false,
-      },
-    ],
-  ],
 };
