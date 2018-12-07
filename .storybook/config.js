@@ -16,7 +16,7 @@ function loadStories() {
   require('glob-loader!./stories.pattern');
 }
 
-const GlobalStyle = reateGlobalStyle`
+const GlobalStyle = createGlobalStyle`
   ${styledNormalize}
 
   /* Box Sizing https://bit.ly/1A91I0J */
