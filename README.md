@@ -40,6 +40,34 @@ NB, we've defined global styles (normalize, box-sizing, Reith font) in the [Stor
 npm run build
 ```
 
+## Using Psammead components
+
+Psammead components use `styled-components`.
+
+We recommend when you use these in your application, to add the following setup:
+
+`npm install --save-dev babel-plugin-styled-components`
+This plugin adds support for server-side rendering, minification of styles, and a nicer debugging experience by giving meaningful names to the style classes.
+Our recommended `.babelrc` config for this is here:
+
+```
+{
+  "plugins": [
+    [
+      "babel-plugin-styled-components",
+      {
+        "ssr": true,
+        "fileName": false
+      }
+    ]
+  ]
+}
+```
+`"ssr": true`  ensures that when you have server-side rendering, that there won't be a checksum mismatch between the StyledComponent class on the server render and client render.
+`"filename": false` This is to shorten the class names.
+
+[See documentation on the Styled Components site](https://www.styled-components.com/docs/tooling#babel-plugin)
+
 ## Publishing Packages
 
 ### Setting up your npm account
