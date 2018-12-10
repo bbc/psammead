@@ -1,6 +1,55 @@
-# Psammead - News React Component Library
+<h1 align="center">:sparkles: Psammead - BBC Component Library :sparkles:</h1>
 
-## Consuming Psammead components - pre-requisite
+<div align="center">
+
+[![Known Vulnerabilities](https://snyk.io/test/github/bbc-news/psammead/badge.svg)](https://snyk.io/test/github/bbc-news/psammead)
+[![Storybook](https://github.com/storybooks/press/blob/master/badges/storybook.svg)](http://bbc-news.github.io/psammead)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/BBC-News/psammead/blob/latest/CONTRIBUTING.md)
+
+</div>
+
+## :gift: Getting Started
+
+### :airplane: Clone this repositry
+
+```
+git clone git@github.com:bbc-news/psammead.git
+```
+
+### :hammer: Setup Local Environment
+
+```
+cd psammead && npm install
+```
+
+NB, this automatically runs `npm run install:packages` in a postinstall step for you.
+
+### :runner: Run tests
+
+Run the component tests:
+
+```
+npm test
+```
+
+This runs Jest across any packages matching this glob pattern: `packages/components/**/*.test.jsx`.
+
+### :runner: Run Storybook
+
+```
+npm run storybook
+```
+
+NB, we've defined global styles (normalize, box-sizing, Reith font) in the [Storybook config](https://github.com/BBC-News/psammead/blob/latest/.storybook/config.js) so that components render as expected.
+
+### :construction_worker: Build Packages/Components
+
+```
+npm run build
+```
+## :dizzy: Using Psammead
+
+### :fork_and_knife: Consuming Psammead components - pre-requisite
 
 These components have been tested in an environment which uses [normalize](https://github.com/necolas/normalize.css) and [`box-sizing: border-box`](https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/) for consistent behaviour across browsers. Additionally, many components depend on the BBC Reith font having been defined.
 
@@ -37,47 +86,7 @@ html {
 
 Or if you're using [styled-components](https://styled-components.com), you can use [styled-normalize](https://www.npmjs.com/package/styled-normalize) (`npm install styled-normalize`) and `createGlobalStyle` to [manage global styles as has been done in Simorgh](https://github.com/BBC-News/simorgh/blob/latest/src/app/lib/globalStyles.js).
 
-## Getting Started
-
-### Clone this repositry
-
-```
-git clone git@github.com:bbc-news/psammead.git
-```
-
-### Setup Local Environment
-
-```
-cd psammead && npm install
-```
-
-NB, this automatically runs `npm run install:packages` in a postinstall step for you.
-
-### Run tests
-
-Run the component tests:
-
-```
-npm test
-```
-
-This runs Jest across any packages matching this glob pattern: `packages/components/**/*.test.jsx`.
-
-### Run Storybook
-
-```
-npm run storybook
-```
-
-NB, we've defined global styles (normalize, box-sizing, Reith font) in the [Storybook config](https://github.com/BBC-News/psammead/blob/latest/.storybook/config.js) so that components render as expected.
-
-### Build Packages/Components
-
-```
-npm run build
-```
-
-## Using Psammead components
+### :nut_and_bolt: Using Psammead components
 
 Psammead components use `styled-components`.
 
@@ -108,16 +117,16 @@ Our recommended `.babelrc` config for this is here:
 
 [See documentation on the Styled Components site](https://www.styled-components.com/docs/tooling#babel-plugin)
 
-## Publishing Packages
+## :rocket: Publishing Packages
 
-### Setting up your npm account
+### :gear: Setting up your npm account
 
 - Create an npm account with your bbc email address. https://www.npmjs.com
 - In your npm profile settings, set up Two Factor Authentication. Enable it for authorization and publishing
 - Back up your recovery codes for your account
 - Join the BBC npm org by following the process here: https://github.com/bbc/npm When you're added to the org and signed in, you should be able to see all public and private `@bbc` packages here: https://www.npmjs.com/settings/bbc/packages
 
-### Publishing a package
+### :balloon: Publishing a package
 
 _We will be moving this process to CI in future. This is a temporary solution._
 
@@ -127,6 +136,6 @@ _We will be moving this process to CI in future. This is a temporary solution._
 - `npm publish packages/<PATH_TO_PACKAGE> --otp=<YOUR_2FA_CODE>`
   e.g. `npm publish packages/components/psammead-paragraph --otp=<YOUR_2FA_CODE>`
 
-### Making a package public
+### :tada: Making a package public
 
 - `npm access public @bbc/<PACKAGE_NAME> --otp=<YOUR_2FA_CODE>`
