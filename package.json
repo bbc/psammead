@@ -15,8 +15,8 @@
     "storybook:export": "build-storybook -c .storybook -o public",
     "speculate": "speculate",
     "test": "npm run test:lint && npm run test:lint:css && npm run test:unit",
-    "test:lint": "eslint --ext .js,jsx,json ./packages",
-    "test:lint:css": "stylelint 'packages/**/*.js' 'packages/**/*.jsx'",
+    "test:lint": "eslint --ext .js,jsx,json ./packages ./scripts",
+    "test:lint:css": "stylelint 'packages/**/*.js' 'packages/**/*.jsx' 'scripts/**/*.js'",
     "test:unit": "jest --verbose --coverage"
   },
   "repository": {
