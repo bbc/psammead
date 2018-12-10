@@ -6,7 +6,7 @@
   "scripts": {
     "build": "lerna exec --parallel -- babel src -d dist --ignore '**/*.test.jsx,**/*.stories.jsx' --root-mode upward",
     "clear_styled_components": "for d in ./packages/*/*; do rm -rf $d/node_modules/styled-components; done; echo \"Cleared nested packages/**/node_modules/styled-components\"",
-    "deploy-storybook": "storybook-to-ghpages",
+    "deploy-storybook": "build-storybook -o storybook_dist && gh-pages -d storybook_dist",
     "install:packages": "lerna exec -- npm install",
     "postinstall": "npm run install:packages",
     "prepublish": "npm run build",
@@ -32,6 +32,7 @@
   "homepage": "https://github.com/bbc/psammead#readme",
   "dependencies": {
     "express": "^4.16.3",
+    "gh-pages": "^2.0.1",
     "speculate": "^1.7.4",
     "styled-components": "^4.1.2",
     "styled-normalize": "^8.0.4"
@@ -46,7 +47,6 @@
     "@storybook/addon-options": "^3.4.11",
     "@storybook/addon-viewport": "^3.4.11",
     "@storybook/react": "^4.0.11",
-    "@storybook/storybook-deployer": "^2.8.1",
     "babel-core": "^7.0.0-bridge.0",
     "babel-eslint": "^8.2.6",
     "babel-loader": "^8.0.4",
