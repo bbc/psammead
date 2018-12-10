@@ -9,7 +9,7 @@
     "install:packages": "lerna exec -- npm install",
     "postinstall": "npm run install:packages",
     "prepublish": "npm run build",
-    "publish": "lerna publish",
+    "publish": "node scripts/publish",
     "start": "node server.js",
     "storybook": "npm run clear_styled_components && NODE_ENV=development start-storybook -p 8080 -c .storybook",
     "storybook:export": "build-storybook -c .storybook -o public",
