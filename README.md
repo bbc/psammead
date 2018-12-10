@@ -1,4 +1,4 @@
-<h1 align="center">✨ Psammead - BBC Component Library ✨</h1>
+<h1 align="center">:sparkles: Psammead - BBC Component Library :sparkles:</h1>
 
 <div align="center">
 
@@ -10,15 +10,15 @@
 
 </div>
 
-## 📦 Getting Started
+## :gift: Getting Started
 
-### 🛬 Clone this repositry
+### :airplane: Clone this repositry
 
 ```
 git clone git@github.com:bbc-news/psammead.git
 ```
 
-### 🛠 Setup Local Environment
+### :hammer: Setup Local Environment
 
 ```
 cd psammead && npm install
@@ -26,7 +26,7 @@ cd psammead && npm install
 
 NB, this automatically runs `npm run install:packages` in a postinstall step for you.
 
-### 🏃‍♀️ Run tests
+### :runner: Run tests
 
 Run the component tests:
 
@@ -36,7 +36,7 @@ npm test
 
 This runs Jest across any packages matching this glob pattern: `packages/components/**/*.test.jsx`.
 
-### 🏃‍♂️ Run Storybook
+### :runner: Run Storybook
 
 ```
 npm run storybook
@@ -44,14 +44,14 @@ npm run storybook
 
 NB, we've defined global styles (normalize, box-sizing, Reith font) in the [Storybook config](https://github.com/BBC-News/psammead/blob/latest/.storybook/config.js) so that components render as expected.
 
-### 👷🏽‍♀️ Build Packages/Components
+### :construction_worker: Build Packages/Components
 
 ```
 npm run build
 ```
-## 💫 Using Psammead
+## :dizzy: Using Psammead
 
-### 🍽 Consuming Psammead components - pre-requisite
+### :fork_and_knife: Consuming Psammead components - pre-requisite
 
 These components have been tested in an environment which uses [normalize](https://github.com/necolas/normalize.css) and [`box-sizing: border-box`](https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/) for consistent behaviour across browsers. Additionally, many components depend on the BBC Reith font having been defined.
 
@@ -88,7 +88,7 @@ html {
 
 Or if you're using [styled-components](https://styled-components.com), you can use [styled-normalize](https://www.npmjs.com/package/styled-normalize) (`npm install styled-normalize`) and `createGlobalStyle` to [manage global styles as has been done in Simorgh](https://github.com/BBC-News/simorgh/blob/latest/src/app/lib/globalStyles.js).
 
-### 🏗 Using Psammead components
+### :nut_and_bolt: Using Psammead components
 
 Psammead components use `styled-components`.
 
@@ -119,16 +119,16 @@ Our recommended `.babelrc` config for this is here:
 
 [See documentation on the Styled Components site](https://www.styled-components.com/docs/tooling#babel-plugin)
 
-## 🚀 Publishing Packages
+## :rocket: Publishing Packages
 
-### ⚙️ Setting up your npm account
+### :gear: Setting up your npm account
 
 - Create an npm account with your bbc email address. https://www.npmjs.com
 - In your npm profile settings, set up Two Factor Authentication. Enable it for authorization and publishing
 - Back up your recovery codes for your account
 - Join the BBC npm org by following the process here: https://github.com/bbc/npm When you're added to the org and signed in, you should be able to see all public and private `@bbc` packages here: https://www.npmjs.com/settings/bbc/packages
 
-### 🎈 Publishing a package
+### :balloon: Publishing a package
 
 _We will be moving this process to CI in future. This is a temporary solution._
 
@@ -138,6 +138,6 @@ _We will be moving this process to CI in future. This is a temporary solution._
 - `npm publish packages/<PATH_TO_PACKAGE> --otp=<YOUR_2FA_CODE>`
   e.g. `npm publish packages/components/psammead-paragraph --otp=<YOUR_2FA_CODE>`
 
-### 🎉 Making a package public
+### :tada: Making a package public
 
 - `npm access public @bbc/<PACKAGE_NAME> --otp=<YOUR_2FA_CODE>`
