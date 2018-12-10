@@ -48,6 +48,7 @@ We recommend when you use these in your application, to add the following setup:
 
 `npm install --save-dev babel-plugin-styled-components`
 This plugin adds support for server-side rendering, minification of styles, and a nicer debugging experience by giving meaningful names to the style classes.
+
 Our recommended `.babelrc` config for this is here:
 
 ```
@@ -63,8 +64,10 @@ Our recommended `.babelrc` config for this is here:
   ]
 }
 ```
-`"ssr": true`  ensures that when you have server-side rendering, that there won't be a checksum mismatch between the StyledComponent class on the server render and client render.
-`"filename": false` This is to shorten the class names.
+
+`"ssr": true`  ensures that when you have server-side rendering, there won't be a checksum mismatch between the StyledComponent class on the server render and client render.
+
+`"filename": false` This is to prevent the filename from appearing in the generated class name, which would generally be a duplication of the component name.
 
 [See documentation on the Styled Components site](https://www.styled-components.com/docs/tooling#babel-plugin)
 
