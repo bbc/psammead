@@ -88,6 +88,10 @@ npm run build
 
 ### Publishing a package
 
+_We will be moving this process to CI in future. This is a temporary solution._
+
+- Ensure you're on branch `latest` & have pulled the latest changes locally.
+- `npm ci` and `npm run build`. This updates the `dist` directory for all packages. Note - this directory is currently not included in the git diff!
 - In your terminal, run `npm login` and follow the steps for authentication
 - `npm publish packages/<PATH_TO_PACKAGE> --otp=<YOUR_2FA_CODE>`
   e.g. `npm publish packages/components/psammead-paragraph --otp=<YOUR_2FA_CODE>`
