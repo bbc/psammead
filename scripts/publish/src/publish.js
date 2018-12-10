@@ -1,6 +1,7 @@
 /* eslint-disable no-console */
 const { exec } = require('shelljs');
 const chalk = require('chalk');
+const otpTag = require('./getOtpTag');
 
 module.exports = (packageDir, packageJson, attempted) => {
   console.log(chalk.blue(`Publishing ${packageJson.name}`));
@@ -19,7 +20,7 @@ module.exports = (packageDir, packageJson, attempted) => {
   }
 
   const execute = exec(
-    `npm publish ${packageDir} --access ${access} --tag ${tag}`,
+    `npm publish ${packageDir} --access ${access} --tag ${tag} ${otpTag()}`,
     {
       silent: true,
     },
