@@ -1,25 +1,16 @@
 /* eslint-disable no-console */
-const { exec } = require('shelljs');
 const fs = require('fs');
 const semver = require('semver');
 
 const report = require('./src/report');
 const publish = require('./src/publish');
+const getRegistryVersion = require('./src/getRegistry');
+const getPackages = require('./src/getPackages');
 
 const attempted = {
   success: [],
   failure: [],
 };
-
-const getRegistryVersion = name => {
-  const npmVersion = exec(`npm show ${name} version`, { silent: true }).stdout;
-  return npmVersion ? npmVersion.split('\n')[0] : '0.0.0';
-};
-
-const getPackages = () =>
-  exec('npx lerna ls --parseable', { silent: true })
-    .stdout.split('\n')
-    .filter(p => p);
 
 getPackages().forEach(packageDir => {
   const packageJson = JSON.parse(fs.readFileSync(`${packageDir}/package.json`));
