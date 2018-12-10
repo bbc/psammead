@@ -53,7 +53,6 @@ const StyledSpan = styled.span`
   padding-bottom: ${SVG_BOTTOM_OFFSET};
   ${/* sc-selector */ StyledLink}:hover &,
   ${/* sc-selector */ StyledLink}:focus & {
-  ${StyledLink}:focus & {
     text-decoration: none;
     border-bottom: ${GEL_SPACING_HLF} solid ${C_WHITE};
   }

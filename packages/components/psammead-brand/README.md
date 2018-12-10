@@ -3,6 +3,17 @@
 ## Description	
 The `Brand` component provides the BBC News logo (as SVG), nested inside a styled span, link and div. The link is currently hardcoded to "https://www.bbc.co.uk/news". `Brand` takes a `brandName` as a prop. This prop is passed to a [VisuallyHiddenText](../VisuallyHiddenText) component, nested inside Brand. Note that this does not currently affect the branding itself, which always renders as `BBC NEWS`.
 
+## Usage 
+```
+import Banner from '@bbc/psammead-banner';
+
+const Header = (brandName) => (
+  <header role="banner">
+    <Brand brandName={brandName} />
+  </header>
+);
+```
+
 ## When to use this component	
 The `Brand` component is designed to be used where a BBC logo is required as SVG. `Brand` is used in the [BrandContainer](../../containers/Brand), which consumes a service context it passes to the `Brand`. 
 
