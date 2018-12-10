@@ -51,7 +51,7 @@ npm run build
 ```
 ## 💫 Using Psammead
 
-### 🍽Consuming Psammead components - pre-requisite
+### 🍽 Consuming Psammead components - pre-requisite
 
 These components have been tested in an environment which uses [normalize](https://github.com/necolas/normalize.css) and [`box-sizing: border-box`](https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/) for consistent behaviour across browsers. Additionally, many components depend on the BBC Reith font having been defined.
 
