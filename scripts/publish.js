@@ -9,7 +9,7 @@ const attempted = {
   failure: [],
 };
 
-const getNpmVersion = name => {
+const getRegistryVersion = name => {
   const npmVersion = exec(`npm show ${name} version`, { silent: true }).stdout;
   return npmVersion ? npmVersion.split('\n')[0] : '0.0.0';
 };
@@ -73,7 +73,7 @@ getPackages().forEach(packageDir => {
   const packageJson = JSON.parse(fs.readFileSync(`${packageDir}/package.json`));
 
   if (!packageJson.publish || packageJson.publish !== 'false') {
-    if (semver.gt(packageJson.version, getNpmVersion(packageJson.name))) {
+    if (semver.gt(packageJson.version, getRegistryVersion(packageJson.name))) {
       publish(packageDir, packageJson);
     }
   } else {
