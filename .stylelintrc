@@ -1,7 +1,6 @@
 {
   "rules": {
-    "declaration-no-important": true,
-    "selector-type-no-unknown": [true, { "ignoreTypes": ["/^-styled-mixin/"] }]
+    "declaration-no-important": true
   },
   "processors": ["stylelint-processor-styled-components"],
   "extends": [
