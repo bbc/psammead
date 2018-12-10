@@ -20,4 +20,4 @@ Note that this library does not implement the "Group C" sizes. This group is int
 | Pica         | 0.9375 | 1.25  | 1      | 1.25  | 1.125  | 1.375  | 1      | 1.25  |
 | Long Primer  | 0.9375 | 1.125 | 0.9375 | 1.125 | 0.9375 | 1.25   | 0.875  | 1.125 |
 | Brevier      | 0.875  | 1     | 0.875  | 1.125 | 0.875  | 1.125  | 0.8125 | 1     |
-| Minion       | 0.75   | 1     | 0.75   | 1     | 0.8125 | 1      | 0.75   | 1     ||
+| Minion       | 0.75   | 1     | 0.75   | 1     | 0.8125 | 1      | 0.75   | 1     |
