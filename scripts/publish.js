@@ -27,6 +27,11 @@ const publish = (packageDir, packageJson) => {
   });
 
   if (execute.code !== 0) {
+    console.log(
+      chalk.red(
+        `Error publishing ${packageJson.name} version ${packageJson.version}`,
+      ),
+    );
     console.log(chalk.red(execute.stderr));
     attempted.failure.push(`${packageJson.name}@${packageJson.version}`);
   } else {
