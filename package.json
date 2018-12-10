@@ -30,7 +30,6 @@
   },
   "homepage": "https://github.com/bbc/psammead#readme",
   "dependencies": {
-    "chalk": "^2.4.1",
     "express": "^4.16.3",
     "speculate": "^1.7.4",
     "styled-components": "^4.1.2",
@@ -50,6 +49,7 @@
     "babel-eslint": "^8.2.6",
     "babel-loader": "^8.0.4",
     "babel-plugin-styled-components": "^1.5.1",
+    "chalk": "^2.4.1",
     "enzyme": "^3.7.0",
     "enzyme-adapter-react-16": "^1.7.0",
     "eslint": "^5.9.0",
