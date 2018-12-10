@@ -7,7 +7,7 @@ These components have been tested in an environment which uses [normalize](https
 You can do this in pure CSS:
 
 ```html
-<link rel="stylesheet" href="https://yarnpkg.com/en/package/normalize.css" />
+<link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.0/normalize.css" />
 <style>
 /* Box Sizing https://bit.ly/1A91I0J */
 html {
