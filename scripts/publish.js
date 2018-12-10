@@ -1,23 +1,34 @@
+/* eslint-disable no-console */
 const { exec } = require('shelljs');
 const fs = require('fs');
 const semver = require('semver');
 const chalk = require('chalk');
 
-const stdExec = cmd => exec(cmd, { silent: true }).stdout;
+const attempted = {
+  success: [],
+  failure: [],
+};
 
 const getNpmVersion = name => {
-  const npmVersion = stdExec(`npm show ${name} version`) || '0.0.0';
-  return npmVersion.split('\n')[0];
+  const npmVersion = exec(`npm show ${name} version`, { silent: true }).stdout;
+  return npmVersion ? npmVersion.split('\n')[0] : '0.0.0';
 };
+
+const getPackages = () =>
+  exec('npx lerna ls --parseable', { silent: true })
+    .stdout.split('\n')
+    .filter(p => p);
 
 const publish = (packageDir, packageJson) => {
   console.log(chalk.blue(`Publishing ${packageJson.name}`));
-  const execute = exec(`npm publish ${packageDir} --access public`, {
+
+  const execute = exec(`npm publish ${packageDir} --access public --dry-run`, {
     silent: true,
   });
 
   if (execute.code !== 0) {
     console.log(chalk.red(execute.stderr));
+    attempted.failure.push(`${packageJson.name}@${packageJson.version}`);
   } else {
     console.log(
       chalk.green(
@@ -26,14 +37,39 @@ const publish = (packageDir, packageJson) => {
         }`,
       ),
     );
+    attempted.success.push(`${packageJson.name}@${packageJson.version}`);
   }
 };
 
-const packages = stdExec('npx lerna ls --parseable')
-  .split('\n')
-  .filter(p => p);
+const report = () => {
+  const successfulCount = attempted.success.length;
+  const failureCount = attempted.failure.length;
+  const total = successfulCount + failureCount;
 
-packages.forEach(packageDir => {
+  const SuccessMessage = successfulCount
+    ? chalk.green(`${successfulCount} Successful, `)
+    : '';
+
+  const FailureMessage = failureCount
+    ? chalk.red(`${failureCount} Failed, `)
+    : '';
+
+  console.log(
+    `\n\nPublished: ${SuccessMessage}${FailureMessage}${total} total`,
+  );
+
+  if (successfulCount) {
+    console.log(chalk.underline.green('\nSuccessful'));
+    attempted.success.forEach(published => console.log(chalk.green(published)));
+  }
+
+  if (failureCount) {
+    console.log(chalk.underline.red('\n Failed'));
+    attempted.failure.forEach(published => console.log(chalk.red(published)));
+  }
+};
+
+getPackages().forEach(packageDir => {
   const packageJson = JSON.parse(fs.readFileSync(`${packageDir}/package.json`));
 
   if (!packageJson.publish || packageJson.publish !== 'false') {
@@ -44,3 +80,5 @@ packages.forEach(packageDir => {
     console.log(`Skipping ${packageJson.name} due to '"publish": "false"'`);
   }
 });
+
+report();
