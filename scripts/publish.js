@@ -21,13 +21,15 @@ const getPackages = () =>
 
 const publish = (packageDir, packageJson) => {
   console.log(chalk.blue(`Publishing ${packageJson.name}`));
+  let access = 'public';
 
-  const execute = exec(
-    `npm publish ${packageDir} --access public`,
-    {
-      silent: true,
-    },
-  );
+  if (packageJson.publishConfig && packageJson.publishConfig.access) {
+    ({ access } = packageJson.publishConfig);
+  }
+
+  const execute = exec(`npm publish ${packageDir} --access ${access}`, {
+    silent: true,
+  });
 
   if (execute.code !== 0) {
     console.log(
