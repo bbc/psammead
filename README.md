@@ -1,6 +1,6 @@
 # Psammead - News React Component Library
 
-[![Storybook](https://github.com/storybooks/press/blob/master/badges/storybook.svg)](http://bbc-news.github.io/psammead)
+[![Storybook](https://github.com/storybooks/press/blob/master/badges/storybook.svg)](https://bbc-news.github.io/psammead)
 
 ## Consuming Psammead components - pre-requisite
 
