@@ -51,7 +51,8 @@ const StyledLink = styled.a`
 const StyledSpan = styled.span`
   display: block;
   padding-bottom: ${SVG_BOTTOM_OFFSET};
-  ${StyledLink}:hover &,
+  ${/* sc-selector */ StyledLink}:hover &,
+  ${/* sc-selector */ StyledLink}:focus & {
   ${StyledLink}:focus & {
     text-decoration: none;
     border-bottom: ${GEL_SPACING_HLF} solid ${C_WHITE};
