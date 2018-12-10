@@ -40,7 +40,7 @@ export const GEL_IMPERIAL = css`
     line-height: 4.5rem;
   }
 
-  ${MEDIA_QUERY_TYPOGRAPHY.SMART_PHONE_ONLY} {
+  ${MEDIA_QUERY_TYPOGRAPHY.LAPTOP_AND_LARGER} {
     font-size: 6em;
     line-height: 6.5rem;
   }
@@ -125,10 +125,6 @@ export const GEL_DOUBLE_PICA = css`
   font-size: 1.25em;
   line-height: 1.5rem;
 
-  ${MEDIA_QUERY_TYPOGRAPHY.SMART_PHONE_ONLY} {
-    line-height: 1.5rem;
-  }
-
   ${MEDIA_QUERY_TYPOGRAPHY.LAPTOP_AND_LARGER} {
     font-size: 1.5em;
     line-height: 1.75rem;
@@ -138,10 +134,6 @@ export const GEL_DOUBLE_PICA = css`
 export const GEL_GREAT_PRIMER = css`
   font-size: 1.125em;
   line-height: 1.375rem;
-
-  ${MEDIA_QUERY_TYPOGRAPHY.SMART_PHONE_ONLY} {
-    line-height: 1.375rem;
-  }
 
   ${MEDIA_QUERY_TYPOGRAPHY.LAPTOP_AND_LARGER} {
     font-size: 1.25em;
