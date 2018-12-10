@@ -41,7 +41,6 @@ Or if you're using [styled-components](https://styled-components.com), you can u
 
 ## Getting Started
 
-
 ### Clone this repositry
 
 ```
