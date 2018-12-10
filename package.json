@@ -30,6 +30,7 @@
   },
   "homepage": "https://github.com/bbc/psammead#readme",
   "dependencies": {
+    "chalk": "^2.4.1",
     "express": "^4.16.3",
     "speculate": "^1.7.4",
     "styled-components": "^4.1.2",
@@ -69,6 +70,8 @@
     "react": "^16.6.3",
     "react-dom": "^16.6.3",
     "react-test-renderer": "^16.6.3",
+    "semver": "^5.6.0",
+    "shelljs": "^0.8.3",
     "storybook-readme": "^4.0.0-beta1",
     "stylelint": "^9.8.0",
     "stylelint-config-recommended": "^2.1.0",
