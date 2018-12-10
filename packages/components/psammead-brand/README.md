@@ -5,7 +5,7 @@ The `Brand` component provides the BBC News logo (as SVG), nested inside a style
 
 ## Usage 
 ```
-import Banner from '@bbc/psammead-banner';
+import Brand from '@bbc/psammead-brand';
 
 const Header = (brandName) => (
   <header role="banner">
