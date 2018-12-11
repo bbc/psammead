@@ -4,7 +4,8 @@ const chalk = require('chalk');
 const otpTag = require('./getOtpTag');
 
 module.exports = (packageDir, packageJson, attempted) => {
-  console.log(chalk.blue(`Publishing ${packageJson.name}`));
+  const packageReleaseTag = `${packageJson.name}@${packageJson.version}`;
+  console.log(chalk.blue(`Publishing ${packageReleaseTag}`));
 
   let access = 'public';
   let tag = 'latest';
@@ -28,17 +29,11 @@ module.exports = (packageDir, packageJson, attempted) => {
   );
 
   if (execute.code !== 0) {
-    console.log(
-      chalk.red(`Error publishing ${packageJson.name}@${packageJson.version}`),
-    );
+    console.log(chalk.red(`Error publishing ${packageReleaseTag}`));
     console.log(chalk.red(execute.stderr));
-    attempted.failure.push(`${packageJson.name}@${packageJson.version}`);
+    attempted.failure.push(packageReleaseTag);
   } else {
-    console.log(
-      chalk.green(
-        `Successfully published ${packageJson.name}@${packageJson.version}`,
-      ),
-    );
-    attempted.success.push(`${packageJson.name}@${packageJson.version}`);
+    console.log(chalk.green(`Successfully published ${packageReleaseTag}`));
+    attempted.success.push(packageReleaseTag);
   }
 };
