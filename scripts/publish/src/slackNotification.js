@@ -2,6 +2,7 @@
 const request = require('request');
 const chalk = require('chalk');
 
+// This value will need to be made available to the script in jenkins.
 const slackToken = 'XXXXXXXXX/XXXXXXXXX/XXXXXXXXXXXXXXXXXXXXXXXX';
 
 module.exports = (packageTag, success) => {

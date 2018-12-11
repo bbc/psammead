@@ -15,7 +15,9 @@ const attempted = {
 getPackages().forEach(packageDir => {
   const packageJson = JSON.parse(fs.readFileSync(`${packageDir}/package.json`));
 
+  // If package isnt flaged to not be published.
   if (!packageJson.publish || packageJson.publish !== 'false') {
+    // If local version is greater than version in the NPM registry.
     if (semver.gt(packageJson.version, getRegistryVersion(packageJson.name))) {
       publish(packageDir, packageJson, attempted);
     }

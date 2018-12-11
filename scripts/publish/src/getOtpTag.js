@@ -1,3 +1,5 @@
+// Builds opt tag for publish command.
+// Accepts both '--otp 123456' and '--otp=123456' format.
 module.exports = () => {
   let otp;
   const args = process.argv.slice(2);

@@ -9,6 +9,7 @@ module.exports = (packageDir, packageJson, attempted) => {
   let access = 'public';
   let tag = 'latest';
 
+  // Set access and tag based on value in package.json config.
   if (packageJson.publishConfig) {
     if (packageJson.publishConfig.access) {
       ({ access } = packageJson.publishConfig);
