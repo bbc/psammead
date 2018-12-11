@@ -3,25 +3,14 @@ const { exec } = require('shelljs');
 const chalk = require('chalk');
 const argv = require('yargs-parser')(process.argv.slice(2));
 const slackNotification = require('./slackNotification');
+const publishConfig = require('./publishConfig');
 
 module.exports = (packageDir, packageJson, attempted) => {
   const packageReleaseTag = `${packageJson.name}@${packageJson.version}`;
 
   console.log(chalk.blue(`Publishing ${packageReleaseTag}`));
 
-  let access = 'public';
-  let tag = 'latest';
-
-  // Set access and tag based on value in package.json config.
-  if (packageJson.publishConfig) {
-    if (packageJson.publishConfig.access) {
-      ({ access } = packageJson.publishConfig);
-    }
-
-    if (packageJson.publishConfig.tag) {
-      ({ tag } = packageJson.tag);
-    }
-  }
+  const { access, tag } = publishConfig(packageJson);
 
   const otpTag = argv.otp ? `--otp ${argv.otp}` : '';
 
