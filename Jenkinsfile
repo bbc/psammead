@@ -12,6 +12,11 @@ def getCommitInfo = {
   appGitCommitMessage = sh(returnStdout: true, script: "cd ${APP_DIRECTORY}; git log -1 --pretty=%B").trim()
 }
 
+def notifySlack(colour, buildStatus, infraGitCommitAuthor, gitCommit, gitCommitAuthor, gitCommitMessage, stageName) {
+  // call the global slackSend method in Jenkins
+  slackSend(color: colour, message: "${buildStatus}: ${infraGitCommitAuthor} [#${appGitCommit}] (<${appGitCommitAuthor} ${appGitCommitMessage}) ${stageName}", channel: '#psammead')
+}
+
 pipeline {
   agent any
   options {
@@ -84,6 +89,42 @@ pipeline {
             stageName = env.STAGE_NAME
           }
         }
+      }
+    }
+  }
+  post {
+    aborted {
+      script {
+        def messageColor = 'warning'
+        if (params.BRANCH == 'latest' && GIT_BRANCH == 'latest') {
+          messageColor = 'danger'
+        }
+        notifySlack(messageColor, 'Aborted', infraGitCommitAuthor, appGitCommit, appGitCommitAuthor, appGitCommitMessage, stageName)
+      }
+    }
+    failure {
+      script {
+        def messageColor = 'warning'
+        if (params.BRANCH == 'latest' && GIT_BRANCH == 'latest') {
+          messageColor = 'danger'
+        }
+        notifySlack(messageColor, 'Failed', infraGitCommitAuthor, appGitCommit, appGitCommitAuthor, appGitCommitMessage, stageName)
+      }
+    }
+    success {
+      script {
+        if (params.BRANCH == 'latest') {
+          notifySlack('good', 'Success', infraGitCommitAuthor, appGitCommit, appGitCommitAuthor, appGitCommitMessage, stageName)
+        }
+      }
+    }
+    unstable {
+      script {
+        def messageColor = 'warning'
+        if (params.BRANCH == 'latest' && GIT_BRANCH == 'latest') {
+          messageColor = 'danger'
+        }
+        notifySlack(messageColor, 'Unstable', infraGitCommitAuthor, appGitCommit, appGitCommitAuthor, appGitCommitMessage, stageName)
       }
     }
   }
