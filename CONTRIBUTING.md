@@ -61,7 +61,9 @@ For example, if your component's main entry-point is `src/foo.jsx`, you should p
 
 **Tests**
 
-When you run `npm test` all unit tests should pass and there should be 100% test coverage of the component. No JS or CSS lint errors should be present.
+- When you run `npm test` all unit tests should pass and there should be 100% test coverage of the component.
+- No JS or CSS lint errors should be present.
+- Your component should be fully accessibility-tested. There's a [test guide for testers](https://bbc-news.github.io/accessibility-news-and-you/accessibility-news-and-testers) and a [checklist for developers](https://bbc-news.github.io/accessibility-news-and-you/accessibility-news-and-developers) as well as guides for [designers](https://bbc-news.github.io/accessibility-news-and-you/accessibility-news-and-designers), [business analysts](https://bbc-news.github.io/accessibility-news-and-you/accessibility-news-and-business-analysts), [product owners](https://bbc-news.github.io/accessibility-news-and-you/accessibility-news-and-product-owners) and [project managers](https://bbc-news.github.io/accessibility-news-and-you/accessibility-news-and-project-managers).
 
 **CHANGELOG**
 
