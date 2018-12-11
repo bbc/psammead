@@ -61,7 +61,9 @@ For example, if your component's main entry-point is `src/foo.jsx`, you should p
 
 **Tests**
 
-When you run `npm test` all unit tests should pass and there should be 100% test coverage of the component. No JS or CSS lint errors should be present.
+- When you run `npm test` all unit tests should pass and there should be 100% test coverage of the component.
+- No JS or CSS lint errors should be present.
+- Your component should be fully accessibility-tested. There's a [test guide for testers](https://bbc-news.github.io/accessibility-news-and-you/accessibility-news-and-testers) and a [checklist for developers](https://bbc-news.github.io/accessibility-news-and-you/accessibility-news-and-developers) as well as guides for [designers](https://bbc-news.github.io/accessibility-news-and-you/accessibility-news-and-designers), [business analysts](https://bbc-news.github.io/accessibility-news-and-you/accessibility-news-and-business-analysts), [product owners](https://bbc-news.github.io/accessibility-news-and-you/accessibility-news-and-product-owners) and [project managers](https://bbc-news.github.io/accessibility-news-and-you/accessibility-news-and-project-managers).
 
 **CHANGELOG**
 
@@ -95,3 +97,11 @@ The `README.md` should cover the following territory:
 ```
 
 In addition, the `README.md` should also point to Psammead's [CODE_OF_CONDUCT](https://github.com/BBC-News/psammead/blob/latest/CODE_OF_CONDUCT.md), [CONTRIBUTING](https://github.com/BBC-News/psammead/blob/latest/CONTRIBUTING.md) guide, and [LICENSE](https://github.com/BBC-News/psammead/blob/latest/LICENSE).
+
+### After merge
+
+After merging a pull request into `latest`, please follow these steps to ensure that the changes are published to npm and to the Psammead Storybook https://bbc-news.github.io/psammead.
+- Publish Packages  
+  To make your changes available on the npm registry please publish any package changes. The instructions to do this can be found in the the [repository README](https://github.com/BBC-News/psammead#rocket-publishing-packages) 
+- Publish Storybook  
+  When changes are made to a component its important to ensure the changes are visible on the hosted storybook. To do this please follow the instructions on the [repository README](https://github.com/BBC-News/psammead#deploying-storybook)

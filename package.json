@@ -6,6 +6,7 @@
   "scripts": {
     "build": "lerna exec --parallel -- babel src -d dist --ignore '**/*.test.jsx,**/*.stories.jsx' --root-mode upward",
     "clear_styled_components": "for d in ./packages/*/*; do rm -rf $d/node_modules/styled-components; done; echo \"Cleared nested packages/**/node_modules/styled-components\"",
+    "deploy-storybook": "build-storybook -o storybook_dist && gh-pages -d storybook_dist",
     "install:packages": "lerna exec -- npm install",
     "postinstall": "npm run install:packages",
     "prepublish": "npm run build",
@@ -49,7 +50,7 @@
     "babel-core": "^7.0.0-bridge.0",
     "babel-eslint": "^8.2.6",
     "babel-loader": "^8.0.4",
-    "babel-plugin-styled-components": "^1.5.1",
+    "babel-plugin-styled-components": "^1.9.2",
     "chalk": "^2.4.1",
     "enzyme": "^3.7.0",
     "enzyme-adapter-react-16": "^1.7.0",
@@ -61,11 +62,12 @@
     "eslint-plugin-jsx-a11y": "^6.1.2",
     "eslint-plugin-prettier": "^3.0.0",
     "eslint-plugin-react": "^7.11.1",
+    "gh-pages": "^2.0.1",
     "glob-loader": "^0.3.0",
     "husky": "^1.2.0",
     "jest": "^23.6.0",
     "jest-fetch-mock": "^1.6.5",
-    "jest-styled-components": "^5.0.1",
+    "jest-styled-components": "^6.3.1",
     "lerna": "^3.3.1",
     "prettier": "^1.15.2",
     "react": "^16.6.3",
@@ -91,7 +93,8 @@
     "collectCoverageFrom": [
       "**/packages/**/*.{js,jsx}",
       "!**/*.stories.{js,jsx}",
-      "!**/.eslintrc.js"
+      "!**/.eslintrc.js",
+      "!**/dist/**"
     ],
     "testMatch": [
       "!**/__tests__/**/*.js?(x)",
