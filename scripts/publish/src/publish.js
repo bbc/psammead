@@ -1,10 +1,11 @@
 /* eslint-disable no-console */
 const { exec } = require('shelljs');
 const chalk = require('chalk');
-const otpTag = require('./getOtpTag');
+const argv = require('yargs-parser')(process.argv.slice(2));
 
 module.exports = (packageDir, packageJson, attempted) => {
   const packageReleaseTag = `${packageJson.name}@${packageJson.version}`;
+
   console.log(chalk.blue(`Publishing ${packageReleaseTag}`));
 
   let access = 'public';
@@ -21,8 +22,10 @@ module.exports = (packageDir, packageJson, attempted) => {
     }
   }
 
+  const otpTag = argv.otp ? `--otp ${argv.otp}` : '';
+
   const execute = exec(
-    `npm publish ${packageDir} --access ${access} --tag ${tag} ${otpTag()}`,
+    `npm publish ${packageDir} --access ${access} --tag ${tag} ${otpTag}`,
     {
       silent: true,
     },
