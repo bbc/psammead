@@ -70,6 +70,7 @@
     "react": "^16.6.3",
     "react-dom": "^16.6.3",
     "react-test-renderer": "^16.6.3",
+    "request": "^2.88.0",
     "semver": "^5.6.0",
     "shelljs": "^0.8.3",
     "storybook-readme": "^4.0.0-beta1",
