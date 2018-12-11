@@ -4,6 +4,7 @@ def dockerRegistry = "329802642264.dkr.ecr.eu-west-1.amazonaws.com"
 def nodeImageVersion = "0.0.5"
 def nodeImage = "${dockerRegistry}/bbc-news/node-8-lts:${nodeImageVersion}"
 def nodeName
+def slackChannel = "#psammead"
 def stageName = ""
 def getCommitInfo = {
   infraGitCommitAuthor = sh(returnStdout: true, script: "git --no-pager show -s --format='%an' ${GIT_COMMIT}").trim()
@@ -12,9 +13,9 @@ def getCommitInfo = {
   appGitCommitMessage = sh(returnStdout: true, script: "cd ${APP_DIRECTORY}; git log -1 --pretty=%B").trim()
 }
 
-def notifySlack(colour, buildStatus, infraGitCommitAuthor, gitCommit, gitCommitAuthor, gitCommitMessage, stageName) {
+def notifySlack(colour, buildStatus, infraGitCommitAuthor, gitCommit, gitCommitAuthor, gitCommitMessage, stageName, slackChannel) {
   // call the global slackSend method in Jenkins
-  slackSend(color: colour, message: "${buildStatus}: ${infraGitCommitAuthor} [#${appGitCommit}] (<${appGitCommitAuthor} ${appGitCommitMessage}) ${stageName}", channel: '#psammead')
+  slackSend(color: colour, message: "${buildStatus}: ${infraGitCommitAuthor} [#${appGitCommit}] (<${appGitCommitAuthor} ${appGitCommitMessage}) ${stageName}", channel: slackChannel)
 }
 
 pipeline {
@@ -99,7 +100,7 @@ pipeline {
         if (params.BRANCH == 'latest' && GIT_BRANCH == 'latest') {
           messageColor = 'danger'
         }
-        notifySlack(messageColor, 'Aborted', infraGitCommitAuthor, appGitCommit, appGitCommitAuthor, appGitCommitMessage, stageName)
+        notifySlack(messageColor, 'Aborted', infraGitCommitAuthor, appGitCommit, appGitCommitAuthor, appGitCommitMessage, stageName, slackChannel)
       }
     }
     failure {
@@ -108,13 +109,13 @@ pipeline {
         if (params.BRANCH == 'latest' && GIT_BRANCH == 'latest') {
           messageColor = 'danger'
         }
-        notifySlack(messageColor, 'Failed', infraGitCommitAuthor, appGitCommit, appGitCommitAuthor, appGitCommitMessage, stageName)
+        notifySlack(messageColor, 'Failed', infraGitCommitAuthor, appGitCommit, appGitCommitAuthor, appGitCommitMessage, stageName, slackChannel)
       }
     }
     success {
       script {
         if (params.BRANCH == 'latest') {
-          notifySlack('good', 'Success', infraGitCommitAuthor, appGitCommit, appGitCommitAuthor, appGitCommitMessage, stageName)
+          notifySlack('good', 'Success', infraGitCommitAuthor, appGitCommit, appGitCommitAuthor, appGitCommitMessage, stageName, slackChannel)
         }
       }
     }
@@ -124,7 +125,7 @@ pipeline {
         if (params.BRANCH == 'latest' && GIT_BRANCH == 'latest') {
           messageColor = 'danger'
         }
-        notifySlack(messageColor, 'Unstable', infraGitCommitAuthor, appGitCommit, appGitCommitAuthor, appGitCommitMessage, stageName)
+        notifySlack(messageColor, 'Unstable', infraGitCommitAuthor, appGitCommit, appGitCommitAuthor, appGitCommitMessage, stageName, slackChannel)
       }
     }
   }
