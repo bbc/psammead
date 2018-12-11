@@ -149,3 +149,10 @@ npm run deploy-storybook
 ```
 
 NB, this automatically pushes to the 'gh-pages' branch, which deploys to the live GitHub pages site. Please only run this script on the `latest` branch.
+
+### Contact 
+
+Psammead is currently maintained by developers in the BBC Articles and Reach + Languages teams. If you want to open an issue, please add it to our [issues page](https://github.com/BBC-News/psammead/issues).
+
+Contact us by email on [PsammeadMaintainers@bbc.co.uk](mailto:PsammeadMaintainers@bbc.co.uk), or find us on Slack at #psammead in the bbcnews workspace. 
+
