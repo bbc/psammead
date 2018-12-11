@@ -12,7 +12,6 @@
     "prepublish": "npm run build",
     "publish": "lerna publish",
     "storybook": "npm run clear_styled_components && NODE_ENV=development start-storybook -p 8080 -c .storybook",
-    "speculate": "speculate",
     "test": "npm run test:lint && npm run test:lint:css && npm run test:unit",
     "test:lint": "eslint --ext .js,jsx,json ./packages",
     "test:lint:css": "stylelint 'packages/**/*.js' 'packages/**/*.jsx'",
