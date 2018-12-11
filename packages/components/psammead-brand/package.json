@@ -1,11 +1,11 @@
 {
-  "name": "@bbc/psammead-headings",
-  "version": "0.1.3",
+  "name": "@bbc/psammead-brand",
+  "version": "0.1.0",
   "main": "dist/index.js",
-  "description": "React styled components for a Headline and SubHeading",
+  "description": "Provides the BBC News logo (as SVG), nested a hardcoded link to https://www.bbc.co.uk/news",
   "repository": {
     "type": "git",
-    "url": "https://github.com/BBC-News/psammead/tree/latest/packages/components/psammead-headings"
+    "url": "https://github.com/BBC-News/psammead/tree/latest/packages/components/psammead-brand"
   },
   "author": {
     "name": "Psammead Maintainers",
@@ -15,11 +15,12 @@
   "bugs": {
     "url": "https://github.com/bbc/psammead/issues"
   },
-  "homepage": "https://github.com/BBC-News/psammead/blob/latest/packages/components/psammead-headings/README.md",
+  "homepage": "https://github.com/BBC-News/psammead/blob/latest/packages/components/psammead-brand/README.md",
   "dependencies": {
     "@bbc/gel-constants": "^0.1.1",
-    "@bbc/gel-foundations-styled-components": "^0.1.0",
     "@bbc/psammead-styles": "^0.1.3",
+    "@bbc/psammead-visually-hidden-text": "^0.1.0",
+    "react": "^16.6.3",
     "styled-components": "^4.1.2"
   },
   "devDependencies": {
@@ -27,8 +28,7 @@
   },
   "keywords": [
     "bbc",
-    "headings",
-    "headline",
-    "subheading"
+    "brand",
+    "logo"
   ]
 }
