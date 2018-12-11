@@ -2,6 +2,7 @@
 const { exec } = require('shelljs');
 const chalk = require('chalk');
 const argv = require('yargs-parser')(process.argv.slice(2));
+const slackNotification = require('./slackNotification');
 
 module.exports = (packageDir, packageJson, attempted) => {
   const packageReleaseTag = `${packageJson.name}@${packageJson.version}`;
@@ -35,8 +36,10 @@ module.exports = (packageDir, packageJson, attempted) => {
     console.log(chalk.red(`Error publishing ${packageReleaseTag}`));
     console.log(chalk.red(execute.stderr));
     attempted.failure.push(packageReleaseTag);
+    slackNotification(packageReleaseTag, false);
   } else {
     console.log(chalk.green(`Successfully published ${packageReleaseTag}`));
     attempted.success.push(packageReleaseTag);
+    slackNotification(packageReleaseTag, true);
   }
 };

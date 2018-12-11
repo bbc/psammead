@@ -1,6 +1,5 @@
 /* eslint-disable no-console */
 const chalk = require('chalk');
-const slackNotification = require('./slackNotification');
 
 module.exports = attempted => {
   const successfulCount = attempted.success.length;
@@ -21,17 +20,11 @@ module.exports = attempted => {
 
   if (successfulCount) {
     console.log(chalk.underline.green('\nSuccessful'));
-    attempted.success.forEach(published => {
-      console.log(chalk.red(published));
-      slackNotification(published, true);
-    });
+    attempted.success.forEach(published => console.log(chalk.green(published)));
   }
 
   if (failureCount) {
     console.log(chalk.underline.red('\nFailed'));
-    attempted.failure.forEach(published => {
-      slackNotification(published, false);
-      console.log(chalk.red(published));
-    });
+    attempted.failure.forEach(published => console.log(chalk.red(published)));
   }
 };
