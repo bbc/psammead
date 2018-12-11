@@ -8,6 +8,12 @@
 
 </div>
 
+Psammead is a [GEL-compliant](https://www.bbc.co.uk/gel/articles/what-is-gel) React component library for the BBC, built on [`styled-components`](https://www.styled-components.com). 
+
+ Psammead packages are split into:
+ * [Components](./packages/components/README.md) - GEL-compliant presentational React components, ready for use out of the box, regardless of data source.
+ * Utilities - Commonly shared Psammead dependencies, and fundamentals to aid building additional GEL-compliant components.
+
 ## :gift: Getting Started
 
 ### :airplane: Clone this repositry
