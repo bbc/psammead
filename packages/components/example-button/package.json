@@ -1,6 +1,6 @@
 {
   "name": "example-button",
-  "version": "0.0.5",
+  "version": "0.0.4",
   "description": "A simple button component",
   "main": "dist/index.js",
   "module": "src/index.js",
