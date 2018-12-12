@@ -3,7 +3,7 @@ none:
 
 install:
 	npm --version; node --version;
-	cd ${APP_DIRECTORY}; npm ci; npm run install:packages;
+	npm ci; npm run install:packages;
 
 tests:
-	cd ${APP_DIRECTORY}; npm test;
+	npm test;
