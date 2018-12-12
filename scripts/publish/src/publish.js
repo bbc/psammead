@@ -2,7 +2,7 @@
 const { exec } = require('shelljs');
 const chalk = require('chalk');
 const argv = require('yargs-parser')(process.argv.slice(2));
-const slackNotification = require('./slackNotification');
+const slackNotification = require('../src/slackNotification');
 const publishConfig = require('./publishConfig');
 
 module.exports = (packageDir, packageJson, attempted) => {
@@ -12,10 +12,10 @@ module.exports = (packageDir, packageJson, attempted) => {
 
   const { access, tag } = publishConfig(packageJson);
 
-  const otpTag = argv.otp ? `--otp ${argv.otp}` : '';
+  const otpTag = argv.otp ? ` --otp ${argv.otp}` : '';
 
   const execute = exec(
-    `npm publish ${packageDir} --access ${access} --tag ${tag} ${otpTag}`,
+    `npm publish ${packageDir} --access ${access} --tag ${tag}${otpTag}`,
     {
       silent: true,
     },
