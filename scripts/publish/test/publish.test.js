@@ -23,25 +23,17 @@ const getSlackNotificationMock = () => {
   return require('../src/slackNotification');
 };
 
-const packageJson = {
-  name: '@foo/psammead-foobar',
-  version: '0.1.2',
-};
+const packageJson = { name: '@foo/psammead-foobar', version: '0.1.2' };
 
 let attempted = {};
 
 describe(`Publish Script - publish`, () => {
   beforeEach(() => {
     jest.resetModules();
-
     console.log = jest.fn();
 
     process.argv = process.argv.filter(v => !v.includes('--otp'));
-
-    attempted = {
-      success: [],
-      failure: [],
-    };
+    attempted = { success: [], failure: [] };
   });
 
   it('runs correct publish command and publish is successful ', () => {

@@ -34,10 +34,7 @@ describe(`Publish Script - report`, () => {
   it('renders logs correctly with successes but no failures', () => {
     console.log = jest.fn();
 
-    const attempted = {
-      success: ['@bbc/psammead-foobar@1.1.1'],
-      failure: [],
-    };
+    const attempted = { success: ['@bbc/psammead-foobar@1.1.1'], failure: [] };
 
     report(attempted);
 
@@ -59,10 +56,7 @@ describe(`Publish Script - report`, () => {
   it('renders logs correctly with failures but no successes', () => {
     console.log = jest.fn();
 
-    const attempted = {
-      success: [],
-      failure: ['@bbc/psammead-feeboo@1.1.1'],
-    };
+    const attempted = { success: [], failure: ['@bbc/psammead-feeboo@1.1.1'] };
 
     report(attempted);
 
@@ -84,10 +78,7 @@ describe(`Publish Script - report`, () => {
   it('renders logs correctly with no successes or failures', () => {
     console.log = jest.fn();
 
-    const attempted = {
-      success: [],
-      failure: [],
-    };
+    const attempted = { success: [], failure: [] };
 
     report(attempted);
 
