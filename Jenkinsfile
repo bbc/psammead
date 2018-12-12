@@ -34,10 +34,8 @@ pipeline {
         }
       }
       steps {
-        withCredentials([string(credentialsId: 'psammead-cc-reporter-id', variable: 'CC_TEST_REPORTER_ID')]) {
-          sh 'make install'
-          sh 'make tests'
-        }
+        sh 'make install'
+        sh 'make tests'
       }
       post {
         always {
