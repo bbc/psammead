@@ -1,7 +1,7 @@
 import React from 'react';
 import VisuallyHiddenText from '@bbc/psammead-visually-hidden-text';
 import { shouldMatchSnapshot } from '@bbc/psammead-test-helpers';
-import Caption from './index';
+import Caption from '.';
 
 shouldMatchSnapshot(
   'should render Caption with some offscreen text',

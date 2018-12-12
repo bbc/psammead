@@ -2,7 +2,7 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 import InlineLink from '@bbc/psammead-inline-link';
 import VisuallyHiddenText from '@bbc/psammead-visually-hidden-text';
-import Caption from './index';
+import Caption from '.';
 
 storiesOf('Caption', module)
   .add('default', () => <Caption>This is a caption.</Caption>)
