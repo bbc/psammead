@@ -1,4 +1,4 @@
-# gel-foundations-styled-components &middot; [![GitHub license](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](https://github.com/BBC-News/psammead/blob/latest/LICENSE) [![npm version](https://img.shields.io/npm/v/@bbc/gel-foundations-styled-components.svg)](https://www.npmjs.com/package/@bbc/gel-foundations-styled-components) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://reactjs.org/docs/how-to-contribute.html#your-first-pull-request)
+# gel-foundations-styled-components &middot; [![GitHub license](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](https://github.com/BBC-News/psammead/blob/latest/LICENSE) [![npm version](https://img.shields.io/npm/v/@bbc/gel-foundations-styled-components.svg)](https://www.npmjs.com/package/@bbc/gel-foundations-styled-components) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/BBC-News/psammead/blob/latest/CONTRIBUTING.md)
 
 This package is a collection of styled component implementations based on BBC GEL guidelines which can be imported into your application.
 

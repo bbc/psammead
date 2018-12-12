@@ -3,7 +3,7 @@
 <div align="center">
 
 [![Known Vulnerabilities](https://snyk.io/test/github/bbc-news/psammead/badge.svg)](https://snyk.io/test/github/bbc-news/psammead)
-[![Storybook](https://github.com/storybooks/press/blob/master/badges/storybook.svg)](http://bbc-news.github.io/psammead)
+[![Storybook](https://github.com/storybooks/press/blob/master/badges/storybook.svg)](https://bbc-news.github.io/psammead)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/BBC-News/psammead/blob/latest/CONTRIBUTING.md)
 
 </div>
@@ -139,3 +139,20 @@ _We will be moving this process to CI in future. This is a temporary solution._
 ### :tada: Making a package public
 
 - `npm access public @bbc/<PACKAGE_NAME> --otp=<YOUR_2FA_CODE>`
+
+### :roller_coaster: Deploying Storybook
+
+The Psammead Storybook is hosted on GitHub pages at http://bbc-news.github.io/psammead. It is currently deployed via a local script that builds Storybook to the `gh-pages` git branch which is used by GitHub pages.
+
+```
+npm run deploy-storybook
+```
+
+NB, this automatically pushes to the 'gh-pages' branch, which deploys to the live GitHub pages site. Please only run this script on the `latest` branch.
+
+### Contact 
+
+Psammead is currently maintained by developers in the BBC Articles and Reach + Languages teams. If you want to open an issue, please add it to our [issues page](https://github.com/BBC-News/psammead/issues).
+
+Contact us by email on [PsammeadMaintainers@bbc.co.uk](mailto:PsammeadMaintainers@bbc.co.uk), or find us on Slack at #psammead in the bbcnews workspace. 
+
