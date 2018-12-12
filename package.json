@@ -83,7 +83,8 @@
     "collectCoverageFrom": [
       "**/packages/**/*.{js,jsx}",
       "!**/*.stories.{js,jsx}",
-      "!**/.eslintrc.js"
+      "!**/.eslintrc.js",
+      "!**/dist/**"
     ],
     "testMatch": [
       "**/__tests__/**/*.js?(x)",
