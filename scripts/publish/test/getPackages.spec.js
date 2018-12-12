@@ -4,7 +4,7 @@ describe(`Publish Script - getPackages`, () => {
     jest.resetModules();
   });
 
-  it('returns registry version with newline in response', () => {
+  it('returns array of packages with two packages found', () => {
     jest.mock('shelljs', () => ({
       exec: () => ({
         stdout: '/foobar/directory/package1\n/foobar/directory/package2',
@@ -19,7 +19,7 @@ describe(`Publish Script - getPackages`, () => {
     ]);
   });
 
-  it('returns registry version with newline in response', () => {
+  it('returns array of packages with one packages found', () => {
     jest.mock('shelljs', () => ({
       exec: () => ({
         stdout: '/foobar/directory/package1',
@@ -31,9 +31,11 @@ describe(`Publish Script - getPackages`, () => {
     expect(getPackages()).toEqual(['/foobar/directory/package1']);
   });
 
-  it('returns registry version with newline in response', () => {
+  it('returns empty array when no packages are found', () => {
     jest.mock('shelljs', () => ({
-      exec: () => ({}),
+      exec: () => ({
+        stdout: '\n', // This is the real response if none are found
+      }),
     }));
 
     const getPackages = require('../src/getPackages');
