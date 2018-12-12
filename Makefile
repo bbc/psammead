@@ -3,7 +3,7 @@ none:
 
 install:
 	npm --version; node --version;
-	npm ci; npm run ci:packages;
+	npm ci;
 
 tests:
 	npm test;
