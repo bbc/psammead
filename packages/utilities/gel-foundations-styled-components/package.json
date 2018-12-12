@@ -1,6 +1,6 @@
 {
   "name": "@bbc/gel-foundations-styled-components",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "A collection of styled component implementations based on BBC GEL guidelines.",
   "repository": {
     "type": "git",
