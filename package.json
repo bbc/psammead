@@ -92,14 +92,14 @@
   "jest": {
     "collectCoverageFrom": [
       "**/packages/**/*.{js,jsx}",
+      "scripts/**",
       "!**/*.stories.{js,jsx}",
       "!**/.eslintrc.js",
       "!**/dist/**"
     ],
     "testMatch": [
-      "!**/__tests__/**/*.js?(x)",
-      "!**/*.test.{js,jsx}",
-      "**/*.spec.{js,jsx}"
+      "**/__tests__/**/*.js?(x)",
+      "**/*.test.{js,jsx}"
     ]
   },
   "spec": {
