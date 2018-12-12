@@ -2,10 +2,17 @@
 const stripAnsi = require('strip-ansi');
 const report = require('../src/report');
 
-describe(`Publish Script - report`, () => {
-  it('renders logs correctly when multiple successes and failures', () => {
-    console.log = jest.fn();
+// const exit = jest.spyOn(process, 'exit');
 
+describe(`Publish Script - report`, () => {
+  beforeEach(() => {
+    jest.resetModules();
+
+    console.log = jest.fn();
+    process.exit = jest.fn();
+  });
+
+  it('renders logs correctly when multiple successes and failures', () => {
     const attempted = {
       success: ['@bbc/psammead-foobar@1.1.1', '@bbc/psammead-boofar@1.1.1'],
       failure: ['@bbc/psammead-feeboo@1.1.1'],
@@ -29,11 +36,11 @@ describe(`Publish Script - report`, () => {
     });
 
     expect(console.log.mock.calls).toHaveLength(6);
+
+    expect(process.exit).toHaveBeenCalledWith(1);
   });
 
   it('renders logs correctly with successes but no failures', () => {
-    console.log = jest.fn();
-
     const attempted = { success: ['@bbc/psammead-foobar@1.1.1'], failure: [] };
 
     report(attempted);
@@ -51,11 +58,11 @@ describe(`Publish Script - report`, () => {
     });
 
     expect(console.log.mock.calls).toHaveLength(3);
+
+    expect(process.exit).not.toHaveBeenCalled();
   });
 
   it('renders logs correctly with failures but no successes', () => {
-    console.log = jest.fn();
-
     const attempted = { success: [], failure: ['@bbc/psammead-feeboo@1.1.1'] };
 
     report(attempted);
@@ -73,11 +80,11 @@ describe(`Publish Script - report`, () => {
     });
 
     expect(console.log.mock.calls).toHaveLength(3);
+
+    expect(process.exit).toHaveBeenCalledWith(1);
   });
 
   it('renders logs correctly with no successes or failures', () => {
-    console.log = jest.fn();
-
     const attempted = { success: [], failure: [] };
 
     report(attempted);
@@ -87,5 +94,7 @@ describe(`Publish Script - report`, () => {
     );
 
     expect(console.log.mock.calls).toHaveLength(1);
+
+    expect(process.exit).not.toHaveBeenCalled();
   });
 });

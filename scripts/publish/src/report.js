@@ -26,5 +26,8 @@ module.exports = attempted => {
   if (failureCount) {
     console.log(chalk.underline.red('\nFailed'));
     attempted.failure.forEach(published => console.log(chalk.red(published)));
+
+    // Exit with failure code if any packages failed to publish
+    process.exit(1);
   }
 };
