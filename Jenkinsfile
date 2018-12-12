@@ -23,9 +23,6 @@ pipeline {
   }
   stages {
     stage ('Run application tests') {
-      when {
-        expression { env.BRANCH_NAME != 'latest' }
-      }
       agent {
         docker {
           image "${nodeImage}"
