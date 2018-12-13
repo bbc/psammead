@@ -92,8 +92,7 @@
     ],
     "testMatch": [
       "**/__tests__/**/*.js?(x)",
-      "**/*.test.{js,jsx}",
-      "!**/dist/**"
+      "**/*.test.{js,jsx}"
     ]
   },
   "spec": {
