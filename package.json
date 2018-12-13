@@ -12,11 +12,11 @@
     "install:packages": "lerna exec -- npm install",
     "postinstall": "npm run ci:packages; if ! [[ -n $JENKINS_HOME ]]; then \n npm run force-package-lock-https \n fi",
     "prepublish": "npm run build",
-    "publish": "lerna publish",
+    "publish": "node scripts/publish",
     "storybook": "npm run clear_styled_components && NODE_ENV=development start-storybook -p 8080 -c .storybook",
     "test": "npm run test:lint && npm run test:lint:css && npm run test:unit",
-    "test:lint": "eslint --ext .js,jsx,json ./packages",
-    "test:lint:css": "stylelint 'packages/**/*.js' 'packages/**/*.jsx'",
+    "test:lint": "eslint --ext .js,jsx,json ./packages ./scripts",
+    "test:lint:css": "stylelint 'packages/**/*.js' 'packages/**/*.jsx' 'scripts/**/*.js'",
     "test:unit": "jest --verbose --coverage"
   },
   "repository": {
@@ -47,6 +47,7 @@
     "babel-eslint": "^8.2.6",
     "babel-loader": "^8.0.4",
     "babel-plugin-styled-components": "^1.9.2",
+    "chalk": "^2.4.1",
     "enzyme": "^3.7.0",
     "enzyme-adapter-react-16": "^1.7.0",
     "eslint": "^5.9.0",
@@ -68,21 +69,27 @@
     "react": "^16.6.3",
     "react-dom": "^16.6.3",
     "react-test-renderer": "^16.6.3",
+    "request": "^2.88.0",
+    "semver": "^5.6.0",
+    "shelljs": "^0.8.3",
     "storybook-readme": "^4.0.0-beta1",
+    "strip-ansi": "^5.0.0",
     "stylelint": "^9.8.0",
     "stylelint-config-recommended": "^2.1.0",
     "stylelint-config-styled-components": "^0.1.1",
-    "stylelint-processor-styled-components": "^1.5.1"
+    "stylelint-processor-styled-components": "^1.5.1",
+    "yargs-parser": "^11.1.1"
   },
   "husky": {
     "hooks": {
       "pre-commit": "npm run test:lint && npm run test:lint:css",
-      "pre-push": "npm run test:unit"
+      "pre-push": "sh scripts/enforceVersions.sh && npm run test:unit"
     }
   },
   "jest": {
     "collectCoverageFrom": [
       "**/packages/**/*.{js,jsx}",
+      "scripts/**",
       "!**/*.stories.{js,jsx}",
       "!**/.eslintrc.js",
       "!**/dist/**"
