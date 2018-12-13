@@ -31,6 +31,7 @@ pipeline {
         }
       }
       steps {
+        sh 'rm -rf ./app'
         sh 'make install'
         sh 'make tests'
       }
