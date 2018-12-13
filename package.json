@@ -12,10 +12,7 @@
     "postinstall": "npm run ci:packages",
     "prepublish": "npm run build",
     "publish": "lerna publish",
-    "start": "node server.js",
     "storybook": "npm run clear_styled_components && NODE_ENV=development start-storybook -p 8080 -c .storybook",
-    "storybook:export": "build-storybook -c .storybook -o public",
-    "speculate": "speculate",
     "test": "npm run test:lint && npm run test:lint:css && npm run test:unit",
     "test:lint": "eslint --ext .js,jsx,json ./packages",
     "test:lint:css": "stylelint 'packages/**/*.js' 'packages/**/*.jsx'",
@@ -32,8 +29,6 @@
   },
   "homepage": "https://github.com/bbc/psammead#readme",
   "dependencies": {
-    "express": "^4.16.3",
-    "speculate": "^1.7.4",
     "styled-components": "^4.1.2",
     "styled-normalize": "^8.0.4"
   },
