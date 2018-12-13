@@ -100,7 +100,7 @@ describe(`Publish Script - publish`, () => {
     );
   });
 
-  it('runs correct publish command when opt argument is set and publish is successful', () => {
+  it('runs correct publish command when otp argument is set and publish is successful', () => {
     const shelljs = getFailingShellJsMock();
 
     process.argv.push('--otp=123456');
