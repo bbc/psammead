@@ -3,14 +3,16 @@ import styled, { css } from 'styled-components';
 import { string } from 'prop-types';
 import { C_POSTBOX, C_WHITE } from '@bbc/psammead-styles/colours';
 import VisuallyHiddenText from '@bbc/psammead-visually-hidden-text';
-import { GEL_GROUP_2_SCREEN_WIDTH_MIN } from '@bbc/gel-constants/breakpoints';
+import {
+  GEL_GROUP_2_SCREEN_WIDTH_MIN,
+  GEL_GROUP_3_SCREEN_WIDTH_MAX,
+} from '@bbc/gel-constants/breakpoints';
 import {
   GEL_MARGIN_BELOW_400PX,
   GEL_MARGIN_ABOVE_400PX,
   GEL_SPACING,
   GEL_SPACING_DBL,
   GEL_SPACING_HLF,
-  GEL_GROUP_3_SCREEN_WIDTH_MAX,
 } from '@bbc/gel-constants/spacings';
 
 const layoutWrapperWithoutGrid = css`
