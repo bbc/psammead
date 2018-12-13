@@ -5,10 +5,11 @@
   "main": "index.js",
   "scripts": {
     "build": "lerna exec --parallel -- babel src -d dist --ignore '**/*.test.jsx,**/*.stories.jsx' --root-mode upward",
+    "ci:packages": "lerna exec -- npm ci",
     "clear_styled_components": "for d in ./packages/*/*; do rm -rf $d/node_modules/styled-components; done; echo \"Cleared nested packages/**/node_modules/styled-components\"",
     "deploy-storybook": "build-storybook -o storybook_dist && gh-pages -d storybook_dist",
     "install:packages": "lerna exec -- npm install",
-    "postinstall": "npm run install:packages",
+    "postinstall": "npm run ci:packages",
     "prepublish": "npm run build",
     "publish": "lerna publish",
     "storybook": "npm run clear_styled_components && NODE_ENV=development start-storybook -p 8080 -c .storybook",
@@ -82,11 +83,13 @@
     "collectCoverageFrom": [
       "**/packages/**/*.{js,jsx}",
       "!**/*.stories.{js,jsx}",
-      "!**/.eslintrc.js"
+      "!**/.eslintrc.js",
+      "!**/dist/**"
     ],
     "testMatch": [
       "**/__tests__/**/*.js?(x)",
-      "**/*.test.{js,jsx}"
+      "**/*.test.{js,jsx}",
+      "!**/dist/**"
     ]
   },
   "spec": {
