@@ -24,27 +24,27 @@ describe(`Publish Script - shouldPublish`, () => {
     expect(shouldPublish(packageJson)).toBeFalsy();
   });
 
-  it('should be falsy when publish is false', () => {
+  it('should be falsy when private is true', () => {
     jest.doMock('../src/getRegistry', () => jest.fn(() => '1.2.2'));
 
     const shouldPublish = require('../src/shouldPublish');
 
     const packageJson = {
       version: '2.1.2',
-      publish: 'false',
+      private: true,
     };
 
     expect(shouldPublish(packageJson)).toBeFalsy();
   });
 
-  it('should be truthy when publish is foobar', () => {
+  it('should be truthy when private is false', () => {
     jest.doMock('../src/getRegistry', () => jest.fn(() => '1.2.2'));
 
     const shouldPublish = require('../src/shouldPublish');
 
     const packageJson = {
       version: '2.1.2',
-      publish: 'foobar',
+      private: false,
     };
 
     expect(shouldPublish(packageJson)).toBeTruthy();

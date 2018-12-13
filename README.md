@@ -138,7 +138,7 @@ Packages are published on merge into the `latest` branch via our CI process. The
 
 To stop your package from publishing to NPM add the following value to your `package.json`
 ```
-"publish": "false",
+"private": true,
 ```
   
 The access and tag of the release can be overridden from the default values by adding the following values to your `package.json`
