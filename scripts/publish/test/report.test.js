@@ -2,8 +2,6 @@
 const stripAnsi = require('strip-ansi');
 const report = require('../src/report');
 
-// const exit = jest.spyOn(process, 'exit');
-
 describe(`Publish Script - report`, () => {
   beforeEach(() => {
     jest.resetModules();
