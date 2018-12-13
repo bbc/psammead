@@ -65,5 +65,29 @@ pipeline {
         }
       }
     }
+    stage ('Publish Packages') {
+      when {
+        expression { env.BRANCH_NAME == 'latest' }
+      }
+      agent {
+        docker {
+          image "${nodeImage}"
+          label nodeName
+          args '-u root -v /etc/pki:/certs'
+        }
+      }
+      steps {
+        withCredentials([text(credentialsId: 'something_something', variable: 'PSAMMEAD_NPM_TOKEN')]) {
+          sh 'make publish'
+        }
+      }
+      post {
+        always {
+          script {
+            stageName = env.STAGE_NAME
+          }
+        }
+      }
+    }
   }
 }
