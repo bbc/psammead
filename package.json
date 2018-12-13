@@ -10,7 +10,7 @@
     "deploy-storybook": "build-storybook -o storybook_dist && gh-pages -d storybook_dist",
     "force-package-lock-https": "find . -type f -name \"package-lock.json\" -print0 | xargs -0 sed -i '' -e 's/http:\\/\\//https:\\/\\//g'",
     "install:packages": "lerna exec -- npm install",
-    "postinstall": "npm run ci:packages; if ! [[ -n $JENKINS_HOME ]]; then \n npm run force-package-lock-https \n fi",
+    "postinstall": "npm run ci:packages; printenv; if ! [[ -n $JENKINS_HOME ]]; then \n npm run force-package-lock-https \n fi",
     "prepublish": "npm run build",
     "publish": "node scripts/publish",
     "storybook": "npm run clear_styled_components && NODE_ENV=development start-storybook -p 8080 -c .storybook",
