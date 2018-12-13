@@ -44,6 +44,9 @@ pipeline {
       }
     }
     stage ('Deploy Storybook') {
+      when {
+        expression { env.BRANCH_NAME == 'latest' }
+      }
       agent {
         docker {
           image "${nodeImage}"
