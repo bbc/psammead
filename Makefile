@@ -7,3 +7,8 @@ install:
 
 tests:
 	npm test;
+
+storybook:
+	git remote set-url origin "https://${GITHUB_TOKEN}@github.com/BBC-News/psammead.git"
+	npm run deploy-storybook;
+

@@ -42,5 +42,24 @@ pipeline {
         }
       }
     }
+    stage ('Deploy Storybook') {
+      agent {
+        docker {
+          image "${nodeImage}"
+          label nodeName
+          args '-u root -v /etc/pki:/certs'
+        }
+      }
+      steps {
+        sh 'make storybook'
+      }
+      post {
+        always {
+          script {
+            stageName = env.STAGE_NAME
+          }
+        }
+      }
+    }
   }
 }
