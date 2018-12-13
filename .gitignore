@@ -11,4 +11,7 @@ public
 # Test reports
 coverage
 
+# Built storybook
+storybook_dist
+
 packages/**/dist
