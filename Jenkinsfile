@@ -43,7 +43,7 @@ pipeline {
         }
       }
     }
-    stage ('Deploy Storybook') {
+    stage ('Deploy & Publish') {
       when {
         expression { env.BRANCH_NAME == 'latest' }
       }
@@ -56,27 +56,6 @@ pipeline {
       }
       steps {
         sh 'make storybook'
-      }
-      post {
-        always {
-          script {
-            stageName = env.STAGE_NAME
-          }
-        }
-      }
-    }
-    stage ('Publish Packages') {
-      when {
-        expression { env.BRANCH_NAME == 'latest' }
-      }
-      agent {
-        docker {
-          image "${nodeImage}"
-          label nodeName
-          args '-u root -v /etc/pki:/certs'
-        }
-      }
-      steps {
         withCredentials([text(credentialsId: 'something_something', variable: 'PSAMMEAD_NPM_TOKEN')]) {
           sh 'make publish'
         }
