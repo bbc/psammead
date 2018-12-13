@@ -1,5 +1,5 @@
 const semver = require('semver');
-const getRegistryVersion = require('../src/getRegistry');
+const getRegistryVersion = require('../src/getRegistryVersion');
 
 module.exports = packageJson =>
   !packageJson.private &&

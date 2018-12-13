@@ -1,7 +1,7 @@
 /* eslint-disable global-require */
 describe(`Publish Script - shouldPublish`, () => {
   it('should be truthy when local version is greater than registry', () => {
-    jest.doMock('../src/getRegistry', () => jest.fn(() => '1.2.2'));
+    jest.doMock('../src/getRegistryVersion', () => jest.fn(() => '1.2.2'));
 
     const shouldPublish = require('../src/shouldPublish');
 
@@ -13,7 +13,7 @@ describe(`Publish Script - shouldPublish`, () => {
   });
 
   it('should be falsy when local version is greater than registry', () => {
-    jest.doMock('../src/getRegistry', () => jest.fn(() => '1.2.2'));
+    jest.doMock('../src/getRegistryVersion', () => jest.fn(() => '1.2.2'));
 
     const shouldPublish = require('../src/shouldPublish');
 
@@ -25,7 +25,7 @@ describe(`Publish Script - shouldPublish`, () => {
   });
 
   it('should be falsy when private is true', () => {
-    jest.doMock('../src/getRegistry', () => jest.fn(() => '1.2.2'));
+    jest.doMock('../src/getRegistryVersion', () => jest.fn(() => '1.2.2'));
 
     const shouldPublish = require('../src/shouldPublish');
 
@@ -38,7 +38,7 @@ describe(`Publish Script - shouldPublish`, () => {
   });
 
   it('should be truthy when private is false', () => {
-    jest.doMock('../src/getRegistry', () => jest.fn(() => '1.2.2'));
+    jest.doMock('../src/getRegistryVersion', () => jest.fn(() => '1.2.2'));
 
     const shouldPublish = require('../src/shouldPublish');
 

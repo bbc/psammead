@@ -11,7 +11,7 @@ describe(`Publish Script - getRegistry`, () => {
       }),
     }));
 
-    const getRegistry = require('../src/getRegistry');
+    const getRegistry = require('../src/getRegistryVersion');
 
     expect(getRegistry('foobar')).toEqual('1.3.2');
   });
@@ -23,7 +23,7 @@ describe(`Publish Script - getRegistry`, () => {
       }),
     }));
 
-    const getRegistry = require('../src/getRegistry');
+    const getRegistry = require('../src/getRegistryVersion');
 
     expect(getRegistry('foobar')).toEqual('3.2.1');
   });
@@ -33,7 +33,7 @@ describe(`Publish Script - getRegistry`, () => {
       exec: () => ({}),
     }));
 
-    const getRegistry = require('../src/getRegistry');
+    const getRegistry = require('../src/getRegistryVersion');
 
     expect(getRegistry('foobar')).toEqual('0.0.0');
   });
