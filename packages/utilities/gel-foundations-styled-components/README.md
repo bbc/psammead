@@ -1,6 +1,6 @@
 # gel-foundations-styled-components &middot; [![GitHub license](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](https://github.com/BBC-News/psammead/blob/latest/LICENSE) [![npm version](https://img.shields.io/npm/v/@bbc/gel-foundations-styled-components.svg)](https://www.npmjs.com/package/@bbc/gel-foundations-styled-components) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/BBC-News/psammead/blob/latest/CONTRIBUTING.md)
 
-This package is a collection of styled component implementations based on BBC GEL guidelines which can be imported into your application.
+This package provides a collection of styled component implementations based on BBC GEL guidelines which can be imported into your application.
 
 [More details on the type sizes defined in this package are available here.](./typography_sizes_web.md)
 
@@ -14,6 +14,15 @@ npm install @bbc/gel-foundations-styled-components --save
 
 ```jsx
 import { GEL_BREVIER } from '@bbc/gel-foundations-styled-components/typography';
+```
+
+These values can then be used directly within CSS declarations in code:
+```jsx
+import { css } from 'styled-components';
+
+const SomeStyledComponent = css`
+   ${GEL_BREVIER};
+`;
 ```
 
 To allow the typography to be fully accessible and responsive, please note that you should apply a default font-size to the document root (e.g. `html { font-size: 100% }`).

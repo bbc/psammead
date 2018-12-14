@@ -1,6 +1,6 @@
 # psammead-styles &middot; [![GitHub license](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](https://github.com/BBC-News/psammead/blob/latest/LICENSE) [![npm version](https://img.shields.io/npm/v/@bbc/psammead-styles.svg)](https://www.npmjs.com/package/@bbc/psammead-styles) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/BBC-News/psammead/blob/latest/CONTRIBUTING.md)
 
-This package is a collection of variable constants which can be imported into your application.
+This package provides a collection of String constants for use in CSS, containing non-GEL styling details that are bespoke to specific services.
 
 ## Installation
 
@@ -14,6 +14,16 @@ npm install @bbc/psammead-styles --save
 import { C_POSTBOX } from '@bbc/psammead-styles/colours';
 
 import { FF_NEWS_SANS_REG } from '@bbc/psammead-styles/fonts';
+```
+
+These values can then be used directly within CSS declarations in code:
+```jsx
+import { css } from 'styled-components';
+
+const SomeStyledComponent = css`
+    background-color: ${C_POSTBOX};
+    font-family: ${FF_NEWS_SANS_REG};
+`;
 ```
 
 ## Contributing

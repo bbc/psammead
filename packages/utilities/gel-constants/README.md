@@ -1,6 +1,6 @@
 # gel-constants &middot; [![GitHub license](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](https://github.com/BBC-News/psammead/blob/latest/LICENSE) [![npm version](https://img.shields.io/npm/v/@bbc/gel-constants.svg)](https://www.npmjs.com/package/@bbc/gel-constants) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/BBC-News/psammead/blob/latest/CONTRIBUTING.md)
 
-This package is a collection of variable constants which can be imported into your application.
+This package provides a range of String constants for use in CSS, intended to help implement [BBC GEL-compliant]() webpages and components.
 
 ## Installation
 
@@ -13,7 +13,18 @@ npm install @bbc/gel-constants --save
 ```jsx
 import { GEL_GROUP_3_SCREEN_WIDTH_MIN } from '@bbc/gel-constants/breakpoints';
 
-import { GEL_GUTTER_BELOW_600PX } from '@bbc/gel-constants/spacings';
+import { GEL_GUTTER_ABOVE_600PX } from '@bbc/gel-constants/spacings';
+```
+
+These values can then be used directly within CSS declarations in code:
+```jsx
+import { css } from 'styled-components';
+
+const SomeStyledComponent = css`
+   @media  (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
+       grid-gap: ${GEL_GUTTER_ABOVE_600PX };
+   }
+`;
 ```
 
 ## Exports

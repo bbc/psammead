@@ -1,6 +1,6 @@
 {
   "name": "@bbc/psammead-test-helpers",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "main": "dist/index.js",
   "description": "A collection of helper methods for react snapshot testing with support for styled components",
   "repository": {

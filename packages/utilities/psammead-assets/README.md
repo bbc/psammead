@@ -1,6 +1,6 @@
 # psammead-assets &middot; [![GitHub license](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](https://github.com/BBC-News/psammead/blob/latest/LICENSE) [![npm version](https://img.shields.io/npm/v/@bbc/psammead-assets.svg)](https://www.npmjs.com/package/@bbc/psammead-assets) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/BBC-News/psammead/blob/latest/CONTRIBUTING.md)
 
-This package is a collection of variable constants which can be imported into your application.
+This package provides a collection of common assets that are likely to be required by many Psammead components or users, such as SVGs or small scripts.
 
 ## Installation
 
