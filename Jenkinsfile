@@ -19,7 +19,7 @@ def notifySlack(colour, buildStatus, gitCommitAuthor, stageName, gitCommitMessag
   slackSend(color: colour, message: "*${buildStatus}* on ${GIT_BRANCH} [build ${BUILD_DISPLAY_NAME}] \n*Author:* ${gitCommitAuthor} \n*Stage:* ${stageName} \n*Commit Hash* \n${GIT_COMMIT} \n*Commit Message* \n${gitCommitMessage}", channel: slackChannel)
 }
 
-pipeline {  
+pipeline {
   agent any
   options {
     timeout(time: 60, unit: 'MINUTES')
@@ -39,13 +39,13 @@ pipeline {
       }
       steps {
         sh 'rm -rf ./app'
-        sh 'make install'
-        sh 'make tests'
         script {
           if (GIT_BRANCH == 'latest') {
             getCommitInfo()
           }
         }
+        sh 'make install'
+        sh 'make tests'
       }
       post {
         always {
