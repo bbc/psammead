@@ -5,20 +5,22 @@ def nodeImageVersion = "0.0.8"
 def nodeImage = "${dockerRegistry}/bbc-news/node-8-lts:${nodeImageVersion}"
 def nodeName
 def slackChannel = "#psammead"
-def stageName = ""
+def stageName = "Unknown"
+
+def gitCommitAuthor = "Unknown"
+def gitCommitMessage = "Unknown"
+
 def getCommitInfo = {
-  infraGitCommitAuthor = sh(returnStdout: true, script: "git --no-pager show -s --format='%an' ${GIT_COMMIT}").trim()
-  appGitCommit = sh(returnStdout: true, script: "git rev-parse HEAD")
-  appGitCommitAuthor = sh(returnStdout: true, script: "git --no-pager show -s --format='%an' ${appGitCommit}").trim()
-  appGitCommitMessage = sh(returnStdout: true, script: "git log -1 --pretty=%B").trim()
+  gitCommitAuthor = sh(returnStdout: true, script: "git --no-pager show -s --format='%an' ${GIT_COMMIT}").trim()
+  gitCommitMessage = sh(returnStdout: true, script: "git log -1 --pretty=%B").trim()
 }
 
-def notifySlack(colour, buildStatus, infraGitCommitAuthor, gitCommit, gitCommitAuthor, gitCommitMessage, stageName, slackChannel) {
+def notifySlack(colour, buildStatus, gitCommitAuthor, stageName, gitCommitMessage, slackChannel) {
   // call the global slackSend method in Jenkins
-  slackSend(color: colour, message: "${buildStatus}: ${infraGitCommitAuthor} [#${appGitCommit}] (<${appGitCommitAuthor} ${appGitCommitMessage}) ${stageName}", channel: slackChannel)
+  slackSend(color: colour, message: "*${buildStatus}* on ${GIT_BRANCH} [build ${BUILD_DISPLAY_NAME}] \n*Author:* ${gitCommitAuthor} \n*Stage:* ${stageName} \n*Commit Hash* \n${GIT_COMMIT} \n*Commit Message* \n${gitCommitMessage}", channel: slackChannel)
 }
 
-pipeline {
+pipeline {  
   agent any
   options {
     timeout(time: 60, unit: 'MINUTES')
@@ -40,6 +42,11 @@ pipeline {
         sh 'rm -rf ./app'
         sh 'make install'
         sh 'make tests'
+        script {
+          if (GIT_BRANCH == 'latest') {
+            getCommitInfo()
+          }
+        }
       }
       post {
         always {
@@ -53,36 +60,30 @@ pipeline {
   post {
     aborted {
       script {
-        def messageColor = 'warning'
-        if (params.BRANCH == 'latest' && GIT_BRANCH == 'latest') {
-          messageColor = 'danger'
+        if (GIT_BRANCH == 'latest') {
+          notifySlack('danger', 'Aborted', gitCommitAuthor, stageName, gitCommitMessage, slackChannel)
         }
-        notifySlack(messageColor, 'Aborted', infraGitCommitAuthor, appGitCommit, appGitCommitAuthor, appGitCommitMessage, stageName, slackChannel)
       }
     }
     failure {
       script {
-        def messageColor = 'warning'
-        if (params.BRANCH == 'latest' && GIT_BRANCH == 'latest') {
-          messageColor = 'danger'
+        if (GIT_BRANCH == 'latest') {
+          notifySlack('danger', 'Failed', gitCommitAuthor, stageName, gitCommitMessage, slackChannel)
         }
-        notifySlack(messageColor, 'Failed', infraGitCommitAuthor, appGitCommit, appGitCommitAuthor, appGitCommitMessage, stageName, slackChannel)
       }
     }
     success {
       script {
-        if (params.BRANCH == 'latest') {
-          notifySlack('good', 'Success', infraGitCommitAuthor, appGitCommit, appGitCommitAuthor, appGitCommitMessage, stageName, slackChannel)
+        if (GIT_BRANCH == 'latest') {
+          notifySlack('good', 'Success', gitCommitAuthor, stageName, gitCommitMessage, slackChannel)
         }
       }
     }
     unstable {
       script {
-        def messageColor = 'warning'
-        if (params.BRANCH == 'latest' && GIT_BRANCH == 'latest') {
-          messageColor = 'danger'
+        if (GIT_BRANCH == 'latest') {
+          notifySlack('danger', 'Unstable', gitCommitAuthor, stageName, gitCommitMessage, slackChannel)
         }
-        notifySlack(messageColor, 'Unstable', infraGitCommitAuthor, appGitCommit, appGitCommitAuthor, appGitCommitMessage, stageName, slackChannel)
       }
     }
   }
