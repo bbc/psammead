@@ -5,7 +5,7 @@
 [![Known Vulnerabilities](https://snyk.io/test/github/bbc-news/psammead/badge.svg)](https://snyk.io/test/github/bbc-news/psammead)
 [![Maintainability](https://api.codeclimate.com/v1/badges/3f7b756f1358f3633362/maintainability)](https://codeclimate.com/github/BBC-News/psammead/maintainability)
 [![Test Coverage](https://api.codeclimate.com/v1/badges/3f7b756f1358f3633362/test_coverage)](https://codeclimate.com/github/BBC-News/psammead/test_coverage)
-[![Storybook](https://github.com/storybooks/press/blob/master/badges/storybook.svg)](http://bbc-news.github.io/psammead)
+[![Storybook](https://github.com/storybooks/press/blob/master/badges/storybook.svg)](https://bbc-news.github.io/psammead)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/BBC-News/psammead/blob/latest/CONTRIBUTING.md)
 
 </div>
