@@ -2,6 +2,8 @@
 
 This package is a collection of styled component implementations based on BBC GEL guidelines which can be imported into your application.
 
+[More details on the type sizes defined in this package are available here.](./typography_sizes_web.md)
+
 ## Installation
 
 ```jsx
