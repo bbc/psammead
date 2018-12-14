@@ -43,7 +43,7 @@ pipeline {
         }
       }
     }
-    stage ('Deploy & Publish') {
+    stage ('Deploy Storybook & Publish to NPM') {
       when {
         expression { env.BRANCH_NAME == 'latest' }
       }
