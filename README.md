@@ -123,6 +123,21 @@ Our recommended `.babelrc` config for this is here:
 
 [See documentation on the Styled Components site](https://www.styled-components.com/docs/tooling#babel-plugin)
 
+## Browser support
+
+We strive for components to conform to the following minimum levels of support, but please check each component's individual README.
+
+### Assistive Technology Support
+
+| Software                 | Version | Type               | Browser              |
+|--------------------------|---------|--------------------|----------------------|
+| ZoomText                 | Latest  | screen magnifier   | Internet Explorer 11 |
+| Dragon NaturallySpeaking | 13      | speech recognition | Internet Explorer 11 |
+| JAWS                     | 17      | screen reader      | Internet Explorer 11 |
+| Read&Write               | Latest  | screen reader      | Internet Explorer 11 |
+| VoiceOver                | Latest  | screen reader      | Safari on iOS        |
+| NVDA                     | Latest  | screen reader      | Firefox on Windows   |
+
 ## :rocket: Publishing Packages
 
 ### :gear: Setting up your npm account
