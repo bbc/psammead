@@ -10,7 +10,7 @@
     "deploy-storybook": "build-storybook -o storybook_dist && gh-pages -d storybook_dist",
     "force-package-lock-https": "find . -type f -name \"package-lock.json\" | xargs -I % sh -c 'echo \"Replacing http->https in %\"; sed -i \"\" -e \"s/http:\\/\\//https:\\/\\//g\" %'",
     "install:packages": "lerna exec -- npm install",
-    "postinstall": "npm run ci:packages; if test -z $JENKINS_HOME; then \n npm run force-package-lock-https \n fi",
+    "postinstall": "npm run ci:packages",
     "prepublish": "npm run build",
     "publish": "node scripts/publish",
     "storybook": "npm run clear_styled_components && NODE_ENV=development start-storybook -p 8080 -c .storybook",
@@ -82,7 +82,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "npm run test:lint && npm run test:lint:css",
+      "pre-commit": "npm run test:lint && npm run test:lint:css && npm run force-package-lock-https",
       "pre-push": "sh scripts/enforceVersions.sh && npm run test:unit"
     }
   },
