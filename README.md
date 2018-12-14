@@ -139,6 +139,7 @@ We strive for components to conform to the following minimum levels of support, 
 | NVDA                     | Latest  | screen reader      | Firefox on Windows   |
 
 [Testing instructions for each assistive technology](https://bbc-news.github.io/accessibility-news-and-you/accessibility-and-supported-assistive-technology), including priority categories.
+
 ## :rocket: Publishing Packages
 
 ### :gear: Setting up your npm account
