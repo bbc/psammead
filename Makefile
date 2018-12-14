@@ -17,5 +17,5 @@ storybook:
 	npm run deploy-storybook;
 
 publish:
-	echo "//registry.npmjs.org/:_authToken=${PSAMMEAD_NPM_TOKEN}" > .npmrc
+	echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" > .npmrc
 	npm run publish;

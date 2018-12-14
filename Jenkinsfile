@@ -56,7 +56,7 @@ pipeline {
       }
       steps {
         sh 'make storybook'
-        withCredentials([text(credentialsId: 'something_something', variable: 'PSAMMEAD_NPM_TOKEN')]) {
+        withCredentials([string(credentialsId: 'npm_bbc-online_read_write', variable: 'NPM_TOKEN')]) {
           sh 'make publish'
         }
       }
