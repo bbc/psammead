@@ -136,17 +136,21 @@ Our recommended `.babelrc` config for this is here:
 
 ### :balloon: Publishing a package
 
-_We will be moving this process to CI in future. This is a temporary solution._
+Packages are published on merge into the `latest` branch via our CI process. The process defaults to publishing with `public` access and a tag of `latest`, however this can be overridden using configuration on your package json.
 
-- Ensure you're on branch `latest` & have pulled the latest changes locally.
-- `npm ci` and `npm run build`. This updates the `dist` directory for all packages. Note - this directory is currently not included in the git diff!
-- In your terminal, run `npm login` and follow the steps for authentication
-- `npm publish packages/<PATH_TO_PACKAGE> --otp=<YOUR_2FA_CODE>`
-  e.g. `npm publish packages/components/psammead-paragraph --otp=<YOUR_2FA_CODE>`
-
-### :tada: Making a package public
-
-- `npm access public @bbc/<PACKAGE_NAME> --otp=<YOUR_2FA_CODE>`
+To stop your package from publishing to NPM add the following value to your `package.json`
+```
+"private": true,
+```
+  
+The access and tag of the release can be overridden from the default values by adding the following values to your `package.json`
+```
+"publishConfig": {
+  "access": "restricted",
+  "tag": "alpha",
+}
+```
+The access value is [restricted by NPM](https://docs.npmjs.com/misc/config#access) and can only be the values `public` and `restricted`.
 
 ### :roller_coaster: Deploying Storybook
 

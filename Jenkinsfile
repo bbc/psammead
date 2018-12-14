@@ -45,5 +45,27 @@ pipeline {
         }
       }
     }
+    stage ('Deploy Storybook') {
+      when {
+        expression { env.BRANCH_NAME == 'latest' }
+      }
+      agent {
+        docker {
+          image "${nodeImage}"
+          label nodeName
+          args '-u root -v /etc/pki:/certs'
+        }
+      }
+      steps {
+        sh 'make storybook'
+      }
+      post {
+        always {
+          script {
+            stageName = env.STAGE_NAME
+          }
+        }
+      }
+    }
   }
 }
