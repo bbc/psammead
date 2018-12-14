@@ -6,7 +6,6 @@ def nodeImage = "${dockerRegistry}/bbc-news/node-8-lts:${nodeImageVersion}"
 def nodeName
 def slackChannel = "#psammead"
 def stageName = "Unknown"
-
 def gitCommitAuthor = "Unknown"
 def gitCommitMessage = "Unknown"
 
