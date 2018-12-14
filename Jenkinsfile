@@ -57,32 +57,27 @@ pipeline {
     }
   }
   post {
+    when {
+      GIT_BRANCH == 'latest'
+    }
     aborted {
       script {
-        if (GIT_BRANCH == 'latest') {
-          notifySlack('danger', 'Aborted', gitCommitAuthor, stageName, gitCommitMessage, slackChannel)
-        }
+        notifySlack('danger', 'Aborted', gitCommitAuthor, stageName, gitCommitMessage, slackChannel)
       }
     }
     failure {
       script {
-        if (GIT_BRANCH == 'latest') {
-          notifySlack('danger', 'Failed', gitCommitAuthor, stageName, gitCommitMessage, slackChannel)
-        }
+        notifySlack('danger', 'Failed', gitCommitAuthor, stageName, gitCommitMessage, slackChannel)
       }
     }
     success {
       script {
-        if (GIT_BRANCH == 'latest') {
-          notifySlack('good', 'Success', gitCommitAuthor, stageName, gitCommitMessage, slackChannel)
-        }
+        notifySlack('good', 'Success', gitCommitAuthor, stageName, gitCommitMessage, slackChannel)
       }
     }
     unstable {
       script {
-        if (GIT_BRANCH == 'latest') {
-          notifySlack('danger', 'Unstable', gitCommitAuthor, stageName, gitCommitMessage, slackChannel)
-        }
+        notifySlack('danger', 'Unstable', gitCommitAuthor, stageName, gitCommitMessage, slackChannel)
       }
     }
   }
