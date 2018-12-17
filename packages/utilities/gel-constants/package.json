@@ -22,5 +22,8 @@
     "breakpoints",
     "grid",
     "spacing"
-  ]
+  ],
+  "devDependencies": {
+    "@bbc/psammead-test-helpers": "^0.1.0"
+  }
 }
