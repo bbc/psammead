@@ -1,6 +1,6 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react'; // eslint-disable-line import/no-extraneous-dependencies
-import ImagePlaceholder from './index';
+import ImagePlaceholder from '.';
 
 const landscapeImageRatio = 56.25;
 const squareImageRatio = 100;
