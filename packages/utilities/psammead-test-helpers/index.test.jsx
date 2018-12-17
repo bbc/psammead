@@ -1,3 +1,4 @@
+import React from 'react';
 import * as testHelpers from '.';
 import * as testHelpersFromSrc from './src/index';
 
@@ -55,4 +56,26 @@ describe('Psammead test helpers', () => {
   it('should error and console.log if expectedExport is missing a value compared to the actual export when coming from /src', () => {
     testTheTestHelperErrorCases(testHelpersFromSrc.testUtilityPackages);
   });
+
+  expect(() => {
+    testHelpersFromSrc.isNull(
+      'test isNull method does not error when passed null',
+      null,
+    );
+  }).not.toThrowError();
+
+  expect(() => {
+    testHelpersFromSrc.isNull(
+      'test isNull method errors when passed a react component',
+      <p>foobar</p>,
+    );
+  }).toThrowError();
+
+  // it('should correctly test a shallow snapshot', () => {});
+
+  // it('should error if shouldShallowMatchSnapshot does not match', () => {});
+
+  // it('should correctly test a snapshot', () => {});
+
+  // it('should error if shouldMatchSnapshot does not match', () => {});
 });
