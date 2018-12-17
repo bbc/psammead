@@ -39,23 +39,23 @@ const expectedExports = {
   breakpoints: breakpointsExpectedExports,
 };
 
-const acutalExports = {
+const actualExports = {
   spacings,
   breakpoints,
 };
 
-const acutalExportsFromSrc = {
+const actualExportsFromSrc = {
   spacings: spacingsFromSrc,
   breakpoints: breakpointsFromSrc,
 };
 
 it('should test all the utility exports exist and have are the correct type', () => {
-  testUtilityPackages(acutalExports, expectedExports, 'gel-constants');
+  testUtilityPackages(actualExports, expectedExports, 'gel-constants');
 });
 
 it('should test all the utility exports exist and have are the correct type when coming from src/', () => {
   testUtilityPackages(
-    acutalExportsFromSrc,
+    actualExportsFromSrc,
     expectedExports,
     'gel-constants/src',
   );

@@ -32,15 +32,15 @@ export const isNull = (title, component) => {
 };
 
 export const testUtilityPackages = (
-  acutalExports,
+  actualExports,
   expectedExports,
   utilityName,
 ) => {
   let count = 0;
-  const utilities = Object.keys(acutalExports);
+  const utilities = Object.keys(actualExports);
 
   utilities.forEach(utility => {
-    const actualExportsByName = Object.keys(acutalExports[utility]);
+    const actualExportsByName = Object.keys(actualExports[utility]);
 
     actualExportsByName.forEach(actualExportName => {
       if (!(actualExportName in expectedExports[utility])) {
@@ -50,7 +50,7 @@ export const testUtilityPackages = (
         );
       }
 
-      const actualExportValue = acutalExports[utility][actualExportName];
+      const actualExportValue = actualExports[utility][actualExportName];
       const expectedExport = expectedExports[utility][actualExportName];
       const typeCheck = typeof actualExportValue === expectedExport; // eslint-disable-line valid-typeof
 
