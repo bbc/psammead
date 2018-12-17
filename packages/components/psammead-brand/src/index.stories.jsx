@@ -1,11 +1,14 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
+import { withReadme } from 'storybook-readme';
+import Readme from '../README.md';
 import Brand from './index';
 
 // The ignore is needed so that the svg isn't expanded over multiple lines
 // prettier-ignore
 
 storiesOf('Brand', module)
+  .addDecorator(withReadme(Readme))
   .add('BBC News', () => (
     <Brand brandName="BBC News" svgWidth={167.95}>
       <g fill="#fff" fillRule="evenodd">
