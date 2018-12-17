@@ -1,7 +1,11 @@
 import React from 'react';
-import { storiesOf } from '@storybook/react'; // eslint-disable-line import/no-extraneous-dependencies
+import { storiesOf } from '@storybook/react';
+import { withReadme } from 'storybook-readme';
+import Readme from '../README.md';
 import InlineLink from './index';
 
-storiesOf('InlineLink', module).add('default', () => (
-  <InlineLink href="https://www.bbc.com/news">BBC News</InlineLink>
-));
+storiesOf('InlineLink', module)
+  .addDecorator(withReadme(Readme))
+  .add('default', () => (
+    <InlineLink href="https://www.bbc.com/news">BBC News</InlineLink>
+  ));
