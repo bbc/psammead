@@ -1,6 +1,6 @@
 import React from 'react';
 import { shouldMatchSnapshot } from '@bbc/psammead-test-helpers';
-import ImagePlaceholder from './index';
+import ImagePlaceholder from '.';
 
 const landscapeImageRatio = 56.25;
 const portraitImageRatio = 177.78;
