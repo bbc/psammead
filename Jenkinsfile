@@ -47,7 +47,7 @@ pipeline {
         }
       }
     }
-    stage ('Deploy Storybook') {
+    stage ('Deploy Storybook & Publish to NPM') {
       when {
         expression { env.BRANCH_NAME == 'latest' }
       }
@@ -60,6 +60,9 @@ pipeline {
       }
       steps {
         sh 'make storybook'
+        withCredentials([string(credentialsId: 'npm_bbc-online_read_write', variable: 'NPM_TOKEN')]) {
+          sh 'make publish'
+        }
       }
       post {
         always {

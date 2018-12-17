@@ -23,3 +23,7 @@ storybook:
 	git config user.email "foo@bar.com"
 	git config user.name "BBC News CI"
 	npm run deploy-storybook;
+
+publish:
+	echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" > .npmrc
+	npm run publish;
