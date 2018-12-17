@@ -183,3 +183,13 @@ Psammead is currently maintained by developers in the BBC Articles and Reach + L
 
 Contact us by email on [PsammeadMaintainers@bbc.co.uk](mailto:PsammeadMaintainers@bbc.co.uk), or find us on Slack at #psammead in the bbcnews workspace. 
 
+### The Name?
+
+<img align="right" width="200" alt="Image of the Psammead from the BBC TV program Five Children and It (2004)" src="http://www.bbc.co.uk/staticarchive/c1c9a6055cf3c6e4eb476a70186e597ea15e6cf7.jpg">
+
+Pronounced as sam-me-ad 'sæmiː|æd
+
+"The Psammead, also known as Sand Fairy, is a sapient magical creature once encountered by five children in a gravel pit".
+
+**P**erfectly **s**harable **a**tomically **m**odular **m**agically **e**ngineered **a**bstract **d**oodads - This is still just a bad joke
+
