@@ -185,7 +185,7 @@ Contact us by email on [PsammeadMaintainers@bbc.co.uk](mailto:PsammeadMaintainer
 
 ### The name?
 
-<img align="right" width="200" alt="Image of the Psammead from the BBC TV program Five Children and It (2004)" src="http://www.bbc.co.uk/staticarchive/c1c9a6055cf3c6e4eb476a70186e597ea15e6cf7.jpg">
+<img align="right" width="250" alt="Image of the Psammead from the BBC TV program Five Children and It (2004)" src="http://www.bbc.co.uk/staticarchive/c1c9a6055cf3c6e4eb476a70186e597ea15e6cf7.jpg">
 
 Pronounced as `sam-me-ad` 'sæmiː|æd
 
