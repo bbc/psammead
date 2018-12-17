@@ -1,7 +1,11 @@
 import React from 'react';
-import { storiesOf } from '@storybook/react'; // eslint-disable-line import/no-extraneous-dependencies
+import { storiesOf } from '@storybook/react';
+import { withReadme } from 'storybook-readme';
+import Readme from '../README.md';
 import VisuallyHiddenText from './index';
 
-storiesOf('VisuallyHiddenText', module).add('default', () => (
-  <VisuallyHiddenText>Some offscreen text</VisuallyHiddenText>
-));
+storiesOf('VisuallyHiddenText', module)
+  .addDecorator(withReadme(Readme))
+  .add('default', () => (
+    <VisuallyHiddenText>Some offscreen text</VisuallyHiddenText>
+  ));
