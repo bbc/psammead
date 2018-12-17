@@ -36,7 +36,6 @@ export const testUtilityPackages = (
   expectedExports,
   utilityName,
 ) => {
-  let count = 0;
   const utilities = Object.keys(actualExports);
 
   utilities.forEach(utility => {
@@ -55,8 +54,6 @@ export const testUtilityPackages = (
       const typeCheck = typeof actualExportValue === expectedExport; // eslint-disable-line valid-typeof
 
       expect(typeCheck).toBe(true);
-      count += 1;
     });
   });
-  console.log(`Tested all ${count} exports from utilities/${utilityName}`); // eslint-disable-line no-console
 };
