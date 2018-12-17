@@ -2,9 +2,43 @@
 
 ## Description
 
+The `psammead-figure` component is a styled `<figure>` element.
+
 ## When to use this component
 
+The HTML `<figure>` element represents self-contained content. It usually wraps an image.
+
+The following example shows `psammead-figure` wrapping an
+* [psammead-image-placeholder](https://github.com/BBC-News/psammead/tree/latest/packages/components/psammead-image-placeholder), a `<div>` with background image
+* [psammead-image](https://github.com/BBC-News/psammead/tree/latest/packages/components/psammead-image), an `<img>`
+* [psammead-caption](https://github.com/BBC-News/psammead/tree/latest/packages/components/psammead-caption), a `<figcaption>`
+* [psammead-visually-hidden-text](https://github.com/BBC-News/psammead/tree/latest/packages/components/psammead-visually-hidden-text), a hidden `<span>` available only to assitive technology
+
+
+```
+import Caption from '@bbc/psammead-caption';
+import Figure from '@bbc/psammead-figure';
+import Image from '@bbc/psammead-image';
+import ImagePlaceholder from '@bbc/psammead-image-placeholder';
+import VisuallyHiddenText from '@bbc/psammead-visually-hidden-text';
+
+const Wrapper = ({ src, alt, ratio, captionText }) => (
+  <Figure>
+    <ImagePlaceholder ratio={ratio}>
+      <Image alt={alt} src={src} />
+    </ImagePlaceholder>
+    <Caption>
+      <VisuallyHiddenText>Image caption, </VisuallyHiddenText>
+      {captionText}
+    </Caption>
+  </Figure>
+);
+
+```
+
 ## Accessibility notes
+
+The `psammead-figure` is a `<figure>` element with associated styles. When you use this component, it has the same semantic meaning as a regular [figure](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/figure) element. 
 
 ## Contributing
 
