@@ -1,7 +1,9 @@
 import React from 'react';
-import { storiesOf } from '@storybook/react'; // eslint-disable-line import/no-extraneous-dependencies
+import { storiesOf } from '@storybook/react';
+import { withReadme } from 'storybook-readme';
+import Readme from '../README.md';
 import Copyright from './index';
 
-storiesOf('Copyright', module).add('default', () => (
-  <Copyright>Getty Images</Copyright>
-));
+storiesOf('Copyright', module)
+  .addDecorator(withReadme(Readme))
+  .add('default', () => <Copyright>Getty Images</Copyright>);
