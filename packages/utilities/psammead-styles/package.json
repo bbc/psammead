@@ -22,5 +22,8 @@
     "colours",
     "colors",
     "fonts"
-  ]
+  ],
+  "devDependencies": {
+    "@bbc/psammead-test-helpers": "^0.1.0"
+  }
 }
