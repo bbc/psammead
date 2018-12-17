@@ -6,8 +6,8 @@ import { createGlobalStyle } from 'styled-components';
 
 // Option defaults:
 setOptions({
-  name: 'Psammead',
-  url: 'https:github.com/bbc/carl',
+  name: 'BBC Psammead',
+  url: 'https:github.com/BBC-News/psammead',
   addonPanelInRight: true,
   sidebarAnimations: true,
 });
