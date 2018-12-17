@@ -21,5 +21,8 @@
     "assets",
     "svg",
     "amp"
-  ]
+  ],
+  "devDependencies": {
+    "@bbc/psammead-test-helpers": "^0.1.0"
+  }
 }
