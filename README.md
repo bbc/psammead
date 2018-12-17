@@ -183,7 +183,7 @@ Psammead is currently maintained by developers in the BBC Articles and Reach + L
 
 Contact us by email on [PsammeadMaintainers@bbc.co.uk](mailto:PsammeadMaintainers@bbc.co.uk), or find us on Slack at #psammead in the bbcnews workspace. 
 
-### The Name?
+### The name?
 
 <img align="right" width="200" alt="Image of the Psammead from the BBC TV program Five Children and It (2004)" src="http://www.bbc.co.uk/staticarchive/c1c9a6055cf3c6e4eb476a70186e597ea15e6cf7.jpg">
 
