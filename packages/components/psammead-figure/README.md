@@ -6,14 +6,13 @@ The `psammead-figure` component is a styled `<figure>` element.
 
 ## When to use this component
 
-The HTML `<figure>` element represents self-contained content. It usually wraps an image.
+Use this component when a `<figure>` element, which represents self-contained content that frequently has a caption, is required. Figures usually wrap an image.
 
 The following example shows `psammead-figure` wrapping an
 * [psammead-image-placeholder](https://github.com/BBC-News/psammead/tree/latest/packages/components/psammead-image-placeholder), a `<div>` with background image
 * [psammead-image](https://github.com/BBC-News/psammead/tree/latest/packages/components/psammead-image), an `<img>`
 * [psammead-caption](https://github.com/BBC-News/psammead/tree/latest/packages/components/psammead-caption), a `<figcaption>`
 * [psammead-visually-hidden-text](https://github.com/BBC-News/psammead/tree/latest/packages/components/psammead-visually-hidden-text), a hidden `<span>` available only to assitive technology
-
 
 ```
 import Caption from '@bbc/psammead-caption';
