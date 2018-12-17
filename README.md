@@ -191,7 +191,11 @@ Pronounced as `sam-me-ad` 'sæmiː|æd
 
 "The Psammead, also known as Sand Fairy, is a sapient magical creature once encountered by five children in a gravel pit".
 
->**P**erfectly **s**harable **a**tomically **m**odular **m**agically **e**ngineered **a**bstract **d**oodads
-  
-^ This is still just a bad joke
+It MIGHT stand for:
+
+**P**erfectly **s**harable **a**tomically **m**odular **m**agically **e**ngineered **a**bstract **d**oodads
+
+Or it _might_ be named Psammead to follow the mythical creature theme of [related repos](https://github.com/BBC-News/simorgh).
+
+We'll let you decide!
 
