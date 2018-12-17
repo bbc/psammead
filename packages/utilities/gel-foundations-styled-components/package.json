@@ -25,5 +25,8 @@
   "dependencies": {
     "@bbc/gel-constants": "^0.1.1",
     "styled-components": "^4.1.1"
+  },
+  "devDependencies": {
+    "@bbc/psammead-test-helpers": "^0.1.0"
   }
 }
