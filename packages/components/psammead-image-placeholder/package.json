@@ -1,6 +1,6 @@
 {
   "name": "@bbc/psammead-image-placeholder",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "main": "dist/index.js",
   "description": "Provides a 'BBC' image placeholder",
   "repository": {
