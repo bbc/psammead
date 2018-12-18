@@ -18,24 +18,24 @@ const expectedExports = {
   ampBoilerplate: ampBoilerplateExpectedExports,
 };
 
-const acutalExports = {
+const actualExports = {
   svgs,
   ampBoilerplate,
 };
 
-const acutalExportsFromSrc = {
+const actualExportsFromSrc = {
   svgs: svgsFromSrc,
   ampBoilerplate: ampBoilerplateFromSrc,
 };
 
 describe('Psammead assets', () => {
   it('should test all the utility exports exist and are the correct type', () => {
-    testUtilityPackages(acutalExports, expectedExports, 'psammead-assets');
+    testUtilityPackages(actualExports, expectedExports, 'psammead-assets');
   });
 
   it('should test all the utility exports exist and are the correct type when coming from src/', () => {
     testUtilityPackages(
-      acutalExportsFromSrc,
+      actualExportsFromSrc,
       expectedExports,
       'psammead-assets',
     );

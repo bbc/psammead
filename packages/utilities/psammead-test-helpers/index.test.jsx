@@ -11,9 +11,9 @@ const testHelpersExpectedExports = {
 
 const expectedExports = { testHelpers: testHelpersExpectedExports };
 
-const acutalExports = { testHelpers };
+const actualExports = { testHelpers };
 
-const acutalExportsFromSrc = { testHelpers: testHelpersFromSrc };
+const actualExportsFromSrc = { testHelpers: testHelpersFromSrc };
 
 const testTheTestHelperErrorCases = testHelperMethod => {
   const consoleLogSpy = jest.spyOn(global.console, 'log');
@@ -34,7 +34,7 @@ const testTheTestHelperErrorCases = testHelperMethod => {
 describe('Psammead test helpers', () => {
   it('should test all the utility exports exist and are the correct type', () => {
     testHelpers.testUtilityPackages(
-      acutalExports,
+      actualExports,
       expectedExports,
       'psammead-test-helpers',
     );
@@ -42,7 +42,7 @@ describe('Psammead test helpers', () => {
 
   it('should test all the utility exports exist and are the correct type when coming from src/', () => {
     testHelpers.testUtilityPackages(
-      acutalExportsFromSrc,
+      actualExportsFromSrc,
       expectedExports,
       'psammead-test-helpers',
     );

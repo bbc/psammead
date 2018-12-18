@@ -36,24 +36,24 @@ const expectedExports = {
   fonts: fontsExpectedExports,
 };
 
-const acutalExports = {
+const actualExports = {
   colours,
   fonts,
 };
 
-const acutalExportsFromSrc = {
+const actualExportsFromSrc = {
   colours: coloursFromSrc,
   fonts: fontsFromSrc,
 };
 
 describe('Psammead styles', () => {
   it('should test all the utility exports exist and are the correct type', () => {
-    testUtilityPackages(acutalExports, expectedExports, 'psammead-styles');
+    testUtilityPackages(actualExports, expectedExports, 'psammead-styles');
   });
 
   it('should test all the utility exports exist and are the correct type when coming from src/', () => {
     testUtilityPackages(
-      acutalExportsFromSrc,
+      actualExportsFromSrc,
       expectedExports,
       'psammead-styles',
     );
