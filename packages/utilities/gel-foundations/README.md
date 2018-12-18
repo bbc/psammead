@@ -2,17 +2,17 @@
 
 This package provides a range of String constants for use in CSS, intended to help implement [BBC GEL-compliant](https://www.bbc.co.uk/gel/articles/what-is-gel) webpages and components.
 
-## Installation
-
-```jsx
-npm install @bbc/gel-foundations --save
-```
-
 ## Exports
 
 `/breakpoints` - GEL breakpoints, as well as typography breakpoints. These use the GEL grid sizes which can be found in the [GEL Grid guidelines](https://www.bbc.co.uk/gel/guidelines/grid#grid-sizes).  
 `/spacings` - GEL spacings and GEL Grid margins and gutters. These use the GEL grid spacing sizes which can be found in the [GEL Grid guidelines](https://www.bbc.co.uk/gel/guidelines/grid#spacing-layout).  
 `/typography` - GEL typography. These are based on the gel typography standard which can be found in the [GEL guidelines](https://www.bbc.co.uk/gel/guidelines/typography). [More details on how these sizes were implemented for this package are available here.](./typography_sizes_web.md)
+
+## Installation
+
+```jsx
+npm install @bbc/gel-foundations --save
+```
 
 ## Usage
 

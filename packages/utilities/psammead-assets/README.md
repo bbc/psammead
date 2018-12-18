@@ -2,6 +2,11 @@
 
 This package provides a collection of common assets that are likely to be required by many Psammead components or users, such as SVGs or small scripts.
 
+## Exports
+
+`/amp-boilerplate` - A helper, allowing projects using Psammead to easily pull in a versioned copy of [AMP's required boilerplate scripts](https://github.com/ampproject/amphtml/blob/master/spec/amp-boilerplate.md).
+`/svgs` - SVG icons commonly required by projects using Psammead.
+
 ## Installation
 
 ```jsx
