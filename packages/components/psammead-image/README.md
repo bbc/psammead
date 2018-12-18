@@ -17,7 +17,7 @@ const Wrapper = (src, alt, width, height) => (
 
 This component requires an alt property to describe the image. This alt text is crucial for users of Assistive Technology, and by any user whose internet connection is so slow the browser decides to render the text instead of the image.
 
-Some images are purely presentational - even in these cases, an `alt` attribute must be passed, but the value would be an empty string "".
+Some images are purely presentational - in these cases, an `alt` attribute must still be passed, but the value would be an empty string: `""`.
 
 ## Contributing
 
