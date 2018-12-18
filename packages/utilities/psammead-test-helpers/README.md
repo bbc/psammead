@@ -27,6 +27,7 @@ shouldMatchSnapshot(
 | shallowRender              | component        |  Shallow renders the component using react-test-renderer and returns the render output |
 | shouldShallowMatchSnapshot | title, component | Shallow renders the component using react-test-renderer and asserts that it matches the given snapshot, which will be saved in the `__snapshots__` directory. The first argument `title` is the title for the test. |
 | isNull                     | title, component    | Renders the component using react-test-renderer, converts it to JSON and asserts that it is null. The first argument `title` is the title for the test. |
+| testUtilityPackages                     | actualExports, expectedExports, utilityName | Compares an imported utility package and compares the exported values against a keyed object which validates that all the utilities exports are explicit. |
 
 ## Roadmap
 
