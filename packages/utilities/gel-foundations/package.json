@@ -1,6 +1,6 @@
 {
   "name": "@bbc/gel-foundations",
-  "version": "0.1.3",
+  "version": "0.1.1",
   "description": "A collection of gel constants",
   "repository": {
     "type": "git",
