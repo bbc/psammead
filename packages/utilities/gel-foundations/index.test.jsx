@@ -1,8 +1,10 @@
 import { testUtilityPackages } from '@bbc/psammead-test-helpers';
 import * as spacings from './spacings';
 import * as breakpoints from './breakpoints';
+import * as typography from './typography';
 import * as spacingsFromSrc from './src/spacings';
 import * as breakpointsFromSrc from './src/breakpoints';
+import * as typographyFromSrc from './src/typography';
 
 const spacingsExpectedExports = {
   GEL_SPACING: 'string',
@@ -34,31 +36,52 @@ const breakpointsExpectedExports = {
   MEDIA_QUERY_TYPOGRAPHY: 'object',
 };
 
+const typographyExpectedExports = {
+  GEL_ATLAS: 'string',
+  GEL_ELEPHANT: 'string',
+  GEL_IMPERIAL: 'string',
+  GEL_ROYAL: 'string',
+  GEL_FOOLSCAP: 'string',
+  GEL_CANON: 'string',
+  GEL_TRAFALGAR: 'string',
+  GEL_PARAGON: 'string',
+  GEL_DOUBLE_PICA: 'string',
+  GEL_GREAT_PRIMER: 'string',
+  GEL_BODY_COPY: 'string',
+  GEL_PICA: 'string',
+  GEL_LONG_PRIMER: 'string',
+  GEL_BREVIER: 'string',
+  GEL_MINION: 'string',
+};
+
 const expectedExports = {
   spacings: spacingsExpectedExports,
   breakpoints: breakpointsExpectedExports,
+  typography: typographyExpectedExports,
 };
 
 const actualExports = {
   spacings,
   breakpoints,
+  typography,
 };
 
 const actualExportsFromSrc = {
   spacings: spacingsFromSrc,
   breakpoints: breakpointsFromSrc,
+  typography: typographyFromSrc,
 };
 
 describe('Gel constants', () => {
   it('should test all the utility exports exist and are the correct type', () => {
-    testUtilityPackages(actualExports, expectedExports, 'gel-constants');
+    testUtilityPackages(actualExports, expectedExports, 'gel-foundations');
   });
 
   it('should test all the utility exports exist and are the correct type when coming from src/', () => {
     testUtilityPackages(
       actualExportsFromSrc,
       expectedExports,
-      'gel-constants/src',
+      'gel-foundations/src',
     );
   });
 });
