@@ -1,6 +1,15 @@
 # psammead-test-helpers &middot; [![GitHub license](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](https://github.com/BBC-News/psammead/blob/latest/LICENSE) [![npm version](https://img.shields.io/npm/v/@bbc/psammead-test-helpers.svg)](https://www.npmjs.com/package/@bbc/psammead-test-helpers) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/BBC-News/psammead/blob/latest/CONTRIBUTING.md)
 
-This package is a collection helper methods used for snapshot testing, with support for styled components.
+This package provides a collection of helper methods for implementing Jest snapshot tests for styled-components, required by many Psammead components.
+
+## Exported Functions
+
+| Name                       | Arguments        | Description  |
+|:---------------------------|:-----------------|:-------------|
+| shouldMatchSnapshot        | title, component | Renders the component using react-test-renderer, converts it to JSON and asserts that it matches the given snapshot, which will be saved in the `__snapshots__` directory. The first argument `title` is the title for the test. |
+| shallowRender              | component        |  Shallow renders the component using react-test-renderer and returns the render output |
+| shouldShallowMatchSnapshot | title, component | Shallow renders the component using react-test-renderer and asserts that it matches the given snapshot, which will be saved in the `__snapshots__` directory. The first argument `title` is the title for the test. |
+| isNull                     | title, component    | Renders the component using react-test-renderer, converts it to JSON and asserts that it is null. The first argument `title` is the title for the test. |
 
 ## Installation
 
@@ -18,15 +27,6 @@ shouldMatchSnapshot(
   <h1>Hello World</h1>,
 );
 ```
-
-## Functions
-
-| Name                       | Arguments        | Description  |
-|:---------------------------|:-----------------|:-------------|
-| shouldMatchSnapshot        | title, component | Renders the component using react-test-renderer, converts it to JSON and asserts that it matches the given snapshot, which will be saved in the `__snapshots__` directory. The first argument `title` is the title for the test. |
-| shallowRender              | component        |  Shallow renders the component using react-test-renderer and returns the render output |
-| shouldShallowMatchSnapshot | title, component | Shallow renders the component using react-test-renderer and asserts that it matches the given snapshot, which will be saved in the `__snapshots__` directory. The first argument `title` is the title for the test. |
-| isNull                     | title, component    | Renders the component using react-test-renderer, converts it to JSON and asserts that it is null. The first argument `title` is the title for the test. |
 
 ## Roadmap
 
