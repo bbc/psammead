@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/BBC-News/psammead/blob/latest/packages/components/psammead-image/README.md",
   "dependencies": {
+    "prop-types": "^15.6.2",
     "styled-components": "^4.1.2"
   },
   "devDependencies": {

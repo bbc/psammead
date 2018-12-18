@@ -5,23 +5,17 @@ The `psammead-image` component is a styled `img` element.
 
 ## Usage
 
-`psammead-image` can be used together with `psammead-visually-hidden-text` in this way. This visually hidden text is to give context to users of Assistive Technology.
-
 ```jsx
 import Image from '@bbc/psammead-image';
 
-const Wrapper = (src, alt) => (
-  <Image src={src} alt={alt}>
+const Wrapper = (src, alt, width, height) => (
+  <Image src={src} alt={alt} width={width} height={height} />
 );
 ```
 
-## When to use this component
-
-xxx
-
 ## Accessibility notes
 
-xxx
+This component requires an alt tag to give context of the image to users of Assistive Technology.
 
 ## Contributing
 
