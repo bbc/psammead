@@ -21,7 +21,8 @@
     "styled-components": "^4.1.2"
   },
   "devDependencies": {
-    "@bbc/psammead-test-helpers": "^0.1.0"
+    "@bbc/psammead-test-helpers": "^0.1.0",
+    "react": "^16.6.3"
   },
   "keywords": [
     "bbc",
