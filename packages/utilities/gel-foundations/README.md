@@ -17,7 +17,7 @@ import { GEL_GROUP_3_SCREEN_WIDTH_MIN } from '@bbc/gel-foundations/breakpoints';
 
 import { GEL_GUTTER_BELOW_600PX } from '@bbc/gel-foundations/spacings';
 
-import { GEL_BREVIER } from '@bbc/gel-foundations-styled-components/typography';
+import { GEL_BREVIER } from '@bbc/gel-foundations/typography';
 ```
 
 To allow the typography to be fully accessible and responsive, please note that you should apply a default font-size to the document root (e.g. `html { font-size: 100% }`).
