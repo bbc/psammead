@@ -5,6 +5,14 @@ install:
 	npm --version; node --version;
 	npm ci;
 
+code-coverage-before-build:
+	curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter;
+	chmod +x ./cc-test-reporter;
+	./cc-test-reporter before-build;
+
+code-coverage-after-build:
+	./cc-test-reporter after-build -t lcov;
+
 tests:
 	npm test;
 
