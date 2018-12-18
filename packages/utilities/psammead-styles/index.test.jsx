@@ -4,6 +4,10 @@ import * as coloursFromSrc from './src/colours';
 import * as fonts from './fonts';
 import * as fontsFromSrc from './src/fonts';
 
+/*
+  If you are doing anything than extending these export lists it's likely to introduce a breaking change
+*/
+
 const fontsExpectedExports = {
   fontFamilyBase: 'string',
   FF_NEWS_SANS_LIT: 'string',
