@@ -1,7 +1,6 @@
-import { css } from 'styled-components';
-import { MEDIA_QUERY_TYPOGRAPHY } from '@bbc/gel-constants/breakpoints';
+import { MEDIA_QUERY_TYPOGRAPHY } from './breakpoints';
 
-export const GEL_ATLAS = css`
+export const GEL_ATLAS = `
   font-size: 4.875em;
   line-height: 5.25rem;
 
@@ -16,7 +15,7 @@ export const GEL_ATLAS = css`
   }
 `;
 
-export const GEL_ELEPHANT = css`
+export const GEL_ELEPHANT = `
   font-size: 3.75em;
   line-height: 4rem;
 
@@ -31,7 +30,7 @@ export const GEL_ELEPHANT = css`
   }
 `;
 
-export const GEL_IMPERIAL = css`
+export const GEL_IMPERIAL = `
   font-size: 3.125em;
   line-height: 3.375rem;
 
@@ -46,7 +45,7 @@ export const GEL_IMPERIAL = css`
   }
 `;
 
-export const GEL_ROYAL = css`
+export const GEL_ROYAL = `
   font-size: 2.5em;
   line-height: 2.75rem;
 
@@ -61,7 +60,7 @@ export const GEL_ROYAL = css`
   }
 `;
 
-export const GEL_FOOLSCAP = css`
+export const GEL_FOOLSCAP = `
   font-size: 2em;
   line-height: 2.25rem;
 
@@ -76,7 +75,7 @@ export const GEL_FOOLSCAP = css`
   }
 `;
 
-export const GEL_CANON = css`
+export const GEL_CANON = `
   font-size: 1.75em;
   line-height: 2rem;
 
@@ -91,7 +90,7 @@ export const GEL_CANON = css`
   }
 `;
 
-export const GEL_TRAFALGAR = css`
+export const GEL_TRAFALGAR = `
   font-size: 1.25em;
   line-height: 1.5rem;
 
@@ -106,7 +105,7 @@ export const GEL_TRAFALGAR = css`
   }
 `;
 
-export const GEL_PARAGON = css`
+export const GEL_PARAGON = `
   font-size: 1.25em;
   line-height: 1.5rem;
 
@@ -121,7 +120,7 @@ export const GEL_PARAGON = css`
   }
 `;
 
-export const GEL_DOUBLE_PICA = css`
+export const GEL_DOUBLE_PICA = `
   font-size: 1.25em;
   line-height: 1.5rem;
 
@@ -131,7 +130,7 @@ export const GEL_DOUBLE_PICA = css`
   }
 `;
 
-export const GEL_GREAT_PRIMER = css`
+export const GEL_GREAT_PRIMER = `
   font-size: 1.125em;
   line-height: 1.375rem;
 
@@ -141,7 +140,7 @@ export const GEL_GREAT_PRIMER = css`
   }
 `;
 
-export const GEL_BODY_COPY = css`
+export const GEL_BODY_COPY = `
   font-size: 0.9375em;
   line-height: 1.25rem;
 
@@ -151,7 +150,7 @@ export const GEL_BODY_COPY = css`
   }
 `;
 
-export const GEL_PICA = css`
+export const GEL_PICA = `
   font-size: 0.9375em;
   line-height: 1.25rem;
 
@@ -161,7 +160,7 @@ export const GEL_PICA = css`
   }
 `;
 
-export const GEL_LONG_PRIMER = css`
+export const GEL_LONG_PRIMER = `
   font-size: 0.9375em;
   line-height: 1.125rem;
 
@@ -170,7 +169,7 @@ export const GEL_LONG_PRIMER = css`
   }
 `;
 
-export const GEL_BREVIER = css`
+export const GEL_BREVIER = `
   font-size: 0.875em;
   line-height: 1rem;
 
@@ -183,7 +182,7 @@ export const GEL_BREVIER = css`
   }
 `;
 
-export const GEL_MINION = css`
+export const GEL_MINION = `
   font-size: 0.75em;
   line-height: 1em;
 `;

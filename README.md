@@ -3,6 +3,8 @@
 <div align="center">
 
 [![Known Vulnerabilities](https://snyk.io/test/github/bbc-news/psammead/badge.svg)](https://snyk.io/test/github/bbc-news/psammead)
+[![Maintainability](https://api.codeclimate.com/v1/badges/3f7b756f1358f3633362/maintainability)](https://codeclimate.com/github/BBC-News/psammead/maintainability)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/3f7b756f1358f3633362/test_coverage)](https://codeclimate.com/github/BBC-News/psammead/test_coverage)
 [![Storybook](https://github.com/storybooks/press/blob/master/badges/storybook.svg)](https://bbc-news.github.io/psammead)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/BBC-News/psammead/blob/latest/CONTRIBUTING.md)
 
@@ -182,4 +184,20 @@ NB, this automatically pushes to the 'gh-pages' branch, which deploys to the liv
 Psammead is currently maintained by developers in the BBC Articles and Reach + Languages teams. If you want to open an issue, please add it to our [issues page](https://github.com/BBC-News/psammead/issues).
 
 Contact us by email on [PsammeadMaintainers@bbc.co.uk](mailto:PsammeadMaintainers@bbc.co.uk), or find us on Slack at #psammead in the bbcnews workspace. 
+
+### The name?
+
+<img align="right" width="250" alt="Image of the Psammead from the BBC TV program Five Children and It (2004)" src="http://www.bbc.co.uk/staticarchive/c1c9a6055cf3c6e4eb476a70186e597ea15e6cf7.jpg">
+
+Pronounced as `sam-me-ad` 'sæmiː|æd
+
+"The Psammead, also known as Sand Fairy, is a sapient magical creature once encountered by five children in a gravel pit".
+
+It MIGHT stand for:
+
+**P**erfectly **s**harable **a**tomically **m**odular **m**agically **e**ngineered **a**bstract **d**oodads
+
+Or it _might_ be named Psammead to follow the mythical creature theme of [related repos](https://github.com/BBC-News/simorgh).
+
+We'll let you decide!
 

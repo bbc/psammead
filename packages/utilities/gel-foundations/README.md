@@ -1,18 +1,22 @@
-# gel-foundations-styled-components &middot; [![GitHub license](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](https://github.com/BBC-News/psammead/blob/latest/LICENSE) [![npm version](https://img.shields.io/npm/v/@bbc/gel-foundations-styled-components.svg)](https://www.npmjs.com/package/@bbc/gel-foundations-styled-components) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/BBC-News/psammead/blob/latest/CONTRIBUTING.md)
+# gel-foundations &middot; [![GitHub license](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](https://github.com/BBC-News/psammead/blob/latest/LICENSE) [![npm version](https://img.shields.io/npm/v/@bbc/gel-foundations.svg)](https://www.npmjs.com/package/@bbc/gel-foundations) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/BBC-News/psammead/blob/latest/CONTRIBUTING.md)
 
-This package is a collection of styled component implementations based on BBC GEL guidelines which can be imported into your application.
+This package is a collection of constants which can be imported into your application.
 
 [More details on the type sizes defined in this package are available here.](./typography_sizes_web.md)
 
 ## Installation
 
 ```jsx
-npm install @bbc/gel-foundations-styled-components --save
+npm install @bbc/gel-foundations --save
 ```
 
 ## Usage
 
 ```jsx
+import { GEL_GROUP_3_SCREEN_WIDTH_MIN } from '@bbc/gel-foundations/breakpoints';
+
+import { GEL_GUTTER_BELOW_600PX } from '@bbc/gel-foundations/spacings';
+
 import { GEL_BREVIER } from '@bbc/gel-foundations-styled-components/typography';
 ```
 
@@ -22,6 +26,8 @@ Our typography uses `em` for font-size and `rem` for line-height. `em` allows mo
 
 ## Exports
 
+`/breakpoints` - GEL breakpoints, as well as typography breakpoints. These use the GEL grid sizes which can be found in the [GEL Grid guidelines](https://www.bbc.co.uk/gel/guidelines/grid#grid-sizes).  
+`/spacings` - GEL spacings and GEL Grid margins and gutters. These use the GEL grid spacing sizes which can be found in the [GEL Grid guidelines](https://www.bbc.co.uk/gel/guidelines/grid#spacing-layout).  
 `/typography` - GEL typography. These are based on the gel typography standard which can be found in the [GEL guidelines](https://www.bbc.co.uk/gel/guidelines/typography).
 
 ## Contributing
