@@ -15,7 +15,9 @@ const Wrapper = (src, alt, width, height) => (
 
 ## Accessibility notes
 
-This component requires an alt tag to give context of the image to users of Assistive Technology.
+This component requires an alt property to describe the image. This alt text is read by users of Assistive Technology, and indeed by anybody whose internet connection is so slow the browser decides to render the text instead of the image.
+
+Some images are purely presentational - even in these cases, an `alt` attribute must be passed, but the value would be an empty string "".
 
 ## Contributing
 
