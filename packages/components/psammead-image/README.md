@@ -13,6 +13,13 @@ const Wrapper = (src, alt, width, height) => (
 );
 ```
 
+| Prop     | Type          |
+|:---------|:--------------|
+| `alt`    | string        | 
+| `height` | number/string |
+| `src`    | string        |
+| `width`  | number/string |
+
 ## Accessibility notes
 
 This component requires an alt property to describe the image. This alt text is crucial for users of Assistive Technology, and by any user whose internet connection is so slow the browser decides to render the text instead of the image.
