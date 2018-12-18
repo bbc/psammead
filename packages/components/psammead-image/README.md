@@ -15,7 +15,7 @@ const Wrapper = (src, alt, width, height) => (
 
 | Prop     | Type          |
 |:---------|:--------------|
-| `alt`    | string        | 
+| `alt`    | string        |
 | `height` | number/string |
 | `src`    | string        |
 | `width`  | number/string |
