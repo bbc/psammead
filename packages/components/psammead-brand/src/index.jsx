@@ -53,7 +53,7 @@ const StyledSpan = styled.span`
   }
 `;
 
-const Brand = ({ brandName, children, svgWidth }) => {
+const Brand = ({ brandName, children, svgWidth, url }) => {
   const SVG_HEIGHT_PX = 24;
   const SVG_HEIGHT = `${SVG_HEIGHT_PX / 16}rem`;
   const SVG_WIDTH_PX = svgWidth;
@@ -69,7 +69,7 @@ const Brand = ({ brandName, children, svgWidth }) => {
 
   return (
     <StyledWrapper>
-      <StyledLink href="https://www.bbc.co.uk/news">
+      <StyledLink href={url}>
         <StyledSpan>
           <BrandSvg
             viewBox={VIEWBOX_VALUES}
@@ -90,6 +90,7 @@ Brand.propTypes = {
   brandName: string.isRequired,
   children: node.isRequired,
   svgWidth: number.isRequired,
+  url: string.isRequired,
 };
 
 export default Brand;

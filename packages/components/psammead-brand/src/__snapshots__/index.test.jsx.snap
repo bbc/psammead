@@ -65,7 +65,7 @@ exports[`Brand should render BBC News Persian brand correctly 1`] = `
 >
   <a
     className="c1 c2"
-    href="https://www.bbc.co.uk/news"
+    href="https://www.bbc.com/persian"
   >
     <span
       className="c3"
@@ -176,7 +176,7 @@ exports[`Brand should render BBC News brand correctly 1`] = `
 >
   <a
     className="c1 c2"
-    href="https://www.bbc.co.uk/news"
+    href="https://www.bbc.com/news"
   >
     <span
       className="c3"
