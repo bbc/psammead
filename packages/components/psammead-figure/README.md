@@ -12,7 +12,7 @@ The following example shows `psammead-figure` wrapping an
 * [psammead-image-placeholder](https://github.com/BBC-News/psammead/tree/latest/packages/components/psammead-image-placeholder), a `<div>` with background image
 * [psammead-image](https://github.com/BBC-News/psammead/tree/latest/packages/components/psammead-image), an `<img>`
 * [psammead-caption](https://github.com/BBC-News/psammead/tree/latest/packages/components/psammead-caption), a `<figcaption>`
-* [psammead-visually-hidden-text](https://github.com/BBC-News/psammead/tree/latest/packages/components/psammead-visually-hidden-text), a hidden `<span>` available only to assitive technology
+* [psammead-visually-hidden-text](https://github.com/BBC-News/psammead/tree/latest/packages/components/psammead-visually-hidden-text), a hidden `<span>` available only to assistive technology
 
 ```jsx
 import Caption from '@bbc/psammead-caption';
