@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import { string, arrayOf, shape } from 'prop-types';
 import nanoid from 'nanoid';
 import { C_WHITE } from '@bbc/psammead-styles/colours';
-import { GEL_SPACING, GEL_SPACING_DBL } from '@bbc/gel-constants/spacings';
+import { GEL_SPACING, GEL_SPACING_DBL } from '@bbc/gel-foundations/spacings';
 import {
   GEL_GROUP_2_SCREEN_WIDTH_MAX,
   GEL_GROUP_3_SCREEN_WIDTH_MIN,
@@ -11,7 +11,7 @@ import {
   GEL_GROUP_4_SCREEN_WIDTH_MIN,
   GEL_GROUP_4_SCREEN_WIDTH_MAX,
   GEL_GROUP_5_SCREEN_WIDTH_MIN,
-} from '@bbc/gel-constants/breakpoints';
+} from '@bbc/gel-foundations/breakpoints';
 
 import Link from '../Link';
 
