@@ -1,8 +1,8 @@
 {
   "name": "@bbc/psammead-test-helpers",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "main": "dist/index.js",
-  "description": "A collection of helper methods for react snapshot testing with support for styled components",
+  "description": "A collection of helper methods for implementing Jest snapshot tests for styled-components, required by many Psammead components.",
   "repository": {
     "type": "git",
     "url": "https://github.com/BBC-News/psammead/tree/latest/packages/utilities/psammead-test-helpers"
