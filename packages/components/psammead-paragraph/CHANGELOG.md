@@ -2,6 +2,7 @@
 
 | Version | Description |
 |---------|-------------|
+| 0.1.5   | [PR#231](https://github.com/BBC-News/psammead/pull/231) Add link to Storybook to README |
 | 0.1.4   | [PR#173](https://github.com/BBC-News/psammead/pull/173) Update PRs welcome link |
 | 0.1.3   | [PR#164](https://github.com/BBC-News/psammead/pull/164) Bump to ensure `dist` includes Typography fix from 0.1.2. |
 | 0.1.2   | [PR#134](https://github.com/BBC-News/psammead/pull/134) Import correct Typography variable `GEL_BODY_COPY` |

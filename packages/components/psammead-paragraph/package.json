@@ -1,6 +1,6 @@
 {
   "name": "@bbc/psammead-paragraph",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "React styled component for a Paragraph",
   "main": "dist/index.js",
   "repository": {
