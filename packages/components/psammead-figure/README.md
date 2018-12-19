@@ -32,7 +32,6 @@ const Wrapper = ({ src, alt, ratio, captionText }) => (
     </Caption>
   </Figure>
 );
-
 ```
 
 ## Accessibility notes
