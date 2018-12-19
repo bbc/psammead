@@ -9,6 +9,8 @@
     "access": "public"
   },
   "dependencies": {
+    "@bbc/psammead-image": "latest",
+    "@bbc/psammead-visually-hidden-text": "latest",
     "prop-types": "^15.6.2",
     "react": "^16.5.0",
     "styled-components": "^3.4.0"

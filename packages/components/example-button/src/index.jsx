@@ -1,5 +1,7 @@
 import React from 'react';
 import { string, bool, element, func } from 'prop-types';
+import Img from '@bbc/psammead-image';
+import VisuallyHiddenText from '@bbc/psammead-visually-hidden-text';
 import StyledButton from './styles/styledExampleButton';
 
 const ExampleButton = ({
@@ -14,7 +16,9 @@ const ExampleButton = ({
     className="button"
     onClick={onClick}
   >
+    <VisuallyHiddenText>This is some off screen text</VisuallyHiddenText>
     {children}
+    <Img src="https://placehold.it/640x360" alt="" width="300" />
   </StyledButton>
 );
 
