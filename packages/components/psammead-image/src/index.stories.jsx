@@ -7,13 +7,7 @@ const imageAlt =
 const imageSrc =
   'https://ichef.bbci.co.uk/news/640/cpsprodpb/439A/production/_100960371_syrians_and_asylum_v2-nc.png';
 const imageWidth = 853;
-const imageHeight = 1067;
 
 storiesOf('Image', module).add('default', () => (
-  <Image
-    alt={imageAlt}
-    src={imageSrc}
-    width={imageWidth}
-    height={imageHeight}
-  />
+  <Image alt={imageAlt} src={imageSrc} width={imageWidth} />
 ));
