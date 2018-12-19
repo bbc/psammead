@@ -9,7 +9,6 @@ import * as fontsFromSrc from './src/fonts';
 */
 
 const fontsExpectedExports = {
-  fontFamilyBase: 'string',
   FF_NEWS_SANS_LIT: 'string',
   FF_NEWS_SANS_REG: 'string',
   FF_NEWS_SANS_MDM: 'string',
