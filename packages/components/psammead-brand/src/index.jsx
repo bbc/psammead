@@ -6,14 +6,14 @@ import VisuallyHiddenText from '@bbc/psammead-visually-hidden-text';
 import {
   GEL_GROUP_2_SCREEN_WIDTH_MIN,
   GEL_GROUP_3_SCREEN_WIDTH_MAX,
-} from '@bbc/gel-constants/breakpoints';
+} from '@bbc/gel-foundations/breakpoints';
 import {
   GEL_MARGIN_BELOW_400PX,
   GEL_MARGIN_ABOVE_400PX,
   GEL_SPACING,
   GEL_SPACING_DBL,
   GEL_SPACING_HLF,
-} from '@bbc/gel-constants/spacings';
+} from '@bbc/gel-foundations/spacings';
 
 const layoutWrapperWithoutGrid = css`
   @media (max-width: ${GEL_GROUP_2_SCREEN_WIDTH_MIN}) {

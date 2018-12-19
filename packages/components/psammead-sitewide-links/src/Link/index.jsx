@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { string, bool } from 'prop-types';
 import { C_WHITE } from '@bbc/psammead-styles/colours';
-import { GEL_SPACING } from '@bbc/gel-constants/spacings';
+import { GEL_SPACING } from '@bbc/gel-foundations/spacings';
 
 const StyledLink = styled.a`
   padding: ${GEL_SPACING} 0 ${GEL_SPACING};

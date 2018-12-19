@@ -21,7 +21,7 @@ import { GEL_GROUP_3_SCREEN_WIDTH_MIN } from '@bbc/gel-foundations/breakpoints';
 
 import { GEL_GUTTER_ABOVE_600PX } from '@bbc/gel-foundations/spacings';
 
-import { GEL_BREVIER } from '@bbc/gel-foundations-styled-components/typography';
+import { GEL_BREVIER } from '@bbc/gel-foundations/typography';
 ```
 
 These values can then be used directly within CSS declarations in code:
