@@ -31,29 +31,70 @@ export const isNull = (title, component) => {
   });
 };
 
-export const testUtilityPackages = (
+const checkKeysExistInBothObjects = (object1, object2, message1, message2) => {
+  const object1Keys = Object.keys(object1);
+  const object2Keys = Object.keys(object2);
+
+  object1Keys.forEach(key => {
+    if (!(key in object2)) {
+      throw new Error(`Missing value '${key}' in ${message1}.`);
+    }
+  });
+
+  object2Keys.forEach(key => {
+    if (!(key in object1)) {
+      throw new Error(`Missing value '${key}' in ${message2}.`);
+    }
+  });
+};
+
+const checkTypesOfExports = (
+  actualExportsByName,
   actualExports,
   expectedExports,
   utilityName,
 ) => {
-  const utilities = Object.keys(actualExports);
+  actualExportsByName.forEach(actualExportName => {
+    const actualExportValue = actualExports[utilityName][actualExportName];
+    const expectedExport = expectedExports[utilityName][actualExportName];
+    const typeCheck = typeof actualExportValue === expectedExport; // eslint-disable-line valid-typeof
 
-  utilities.forEach(utility => {
-    const actualExportsByName = Object.keys(actualExports[utility]);
+    // if this fails it is likely that an export is missing from the unit test expectation
+    expect(typeCheck).toBe(true);
+  });
+};
 
-    actualExportsByName.forEach(actualExportName => {
-      if (!(actualExportName in expectedExports[utility])) {
-        // eslint-disable-next-line no-console
-        console.log(
-          `No expected export value declared in unit tests for ${utilityName}/${utility}.js - ${actualExportName}`,
-        );
-      }
+export const testUtilityPackages = (
+  actualExports,
+  expectedExports,
+  packageName,
+) => {
+  const actualUtilities = Object.keys(actualExports);
 
-      const actualExportValue = actualExports[utility][actualExportName];
-      const expectedExport = expectedExports[utility][actualExportName];
-      const typeCheck = typeof actualExportValue === expectedExport; // eslint-disable-line valid-typeof
+  // check if the actual exported file has defined expected values to match and that the expected values are actually exported
+  checkKeysExistInBothObjects(
+    actualExports,
+    expectedExports,
+    `the actual utilities for '${packageName}'`,
+    `the expected utilities for '${packageName}'`,
+  );
 
-      expect(typeCheck).toBe(true);
-    });
+  actualUtilities.forEach(utilityName => {
+    const actualExportsByName = Object.keys(actualExports[utilityName]);
+
+    // check if each of the actual exported consts have an expected value to match and that the expected values are actually exported
+    checkKeysExistInBothObjects(
+      actualExports[utilityName],
+      expectedExports[utilityName],
+      `the actual export for '${packageName}/${utilityName}.js'`,
+      `the expected export for '${packageName}/${utilityName}.js'`,
+    );
+
+    checkTypesOfExports(
+      actualExportsByName,
+      actualExports,
+      expectedExports,
+      utilityName,
+    );
   });
 };

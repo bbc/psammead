@@ -19,20 +19,58 @@ const actualExports = { testHelpers };
 
 const actualExportsFromSrc = { testHelpers: testHelpersFromSrc };
 
-const testTheTestHelperErrorCases = testHelperMethod => {
-  const consoleLogSpy = jest.spyOn(global.console, 'log');
-
-  const actual = { utility: { foo: {} } };
-  const expected = { utility: { bar: {} } };
+const ensureErrorWhenMissingExport = testHelperMethod => {
+  // missing export in the expected
+  const actualWithAll = { utility: { foo: {}, bar: {} } };
+  const expectedMissing = { utility: { bar: {} } };
 
   expect(() => {
-    testHelperMethod(actual, expected, 'testing');
-  }).toThrowError();
-  expect(consoleLogSpy).toHaveBeenCalledWith(
-    'No expected export value declared in unit tests for testing/utility.js - foo',
+    testHelperMethod(actualWithAll, expectedMissing, 'testing');
+  }).toThrowError(
+    "Missing value 'foo' in the actual export for 'testing/utility.js'.",
   );
 
-  consoleLogSpy.mockRestore();
+  // missing export in the actual
+  const actualMissing = { utility: { foo: {} } };
+  const expectedWithAll = { utility: { bar: {}, foo: {} } };
+
+  expect(() => {
+    testHelperMethod(actualMissing, expectedWithAll, 'testing');
+  }).toThrowError(
+    "Missing value 'bar' in the expected export for 'testing/utility.js'.",
+  );
+};
+
+const ensureErrorWhenMissingFileDefinition = testHelperMethod => {
+  // missing export in the expected
+  const actualWithAll = {
+    utilityOne: { key: {} },
+    utilityTwo: { key: {} },
+  };
+  const expectedMissing = {
+    utilityOne: { key: {} },
+  };
+
+  expect(() => {
+    testHelperMethod(actualWithAll, expectedMissing, 'testing');
+  }).toThrowError(
+    "Missing value 'utilityTwo' in the actual utilities for 'testing'.",
+  );
+
+  // missing export in the actual
+  const actualMissing = {
+    utilityOne: { key: {} },
+  };
+  const expectedWithAll = {
+    utilityOne: { key: {} },
+    utilityTwo: { key: {} },
+  };
+
+  expect(() => {
+    testHelperMethod(actualMissing, expectedWithAll, 'testing');
+  }).toThrowError(
+    "Missing value 'utilityTwo' in the expected utilities for 'testing'.",
+  );
 };
 
 describe('Psammead test helpers', () => {
@@ -52,11 +90,31 @@ describe('Psammead test helpers', () => {
     );
   });
 
-  it('should error and console.log if expectedExport is missing a value compared to the actual export', () => {
-    testTheTestHelperErrorCases(testHelpers.testUtilityPackages);
+  it('should error if expectedExport is missing an export compared to the actual export', () => {
+    ensureErrorWhenMissingExport(testHelpers.testUtilityPackages);
   });
 
-  it('should error and console.log if expectedExport is missing a value compared to the actual export when coming from /src', () => {
-    testTheTestHelperErrorCases(testHelpersFromSrc.testUtilityPackages);
+  it('should error if expectedExport is missing an export compared to the actual export when coming from /src', () => {
+    ensureErrorWhenMissingExport(testHelpersFromSrc.testUtilityPackages);
+  });
+
+  it('should error if file definition is missing in the expectation', () => {
+    ensureErrorWhenMissingFileDefinition(testHelpers.testUtilityPackages);
+  });
+
+  it('should error if file definition is missing in the expectation when coming from /src', () => {
+    ensureErrorWhenMissingFileDefinition(
+      testHelpersFromSrc.testUtilityPackages,
+    );
+  });
+
+  it('should error if file definition is missing in the expectation', () => {
+    ensureErrorWhenMissingFileDefinition(testHelpers.testUtilityPackages);
+  });
+
+  it('should error if file definition is missing in the expectation when coming from /src', () => {
+    ensureErrorWhenMissingFileDefinition(
+      testHelpersFromSrc.testUtilityPackages,
+    );
   });
 });
