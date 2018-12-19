@@ -4,11 +4,11 @@ import {
   FF_NEWS_SERIF_MDM,
   FF_NEWS_SANS_REG,
 } from '@bbc/psammead-styles/fonts';
-import { GEL_SPACING_DBL, GEL_SPACING_QUAD } from '@bbc/gel-constants/spacings';
 import {
-  GEL_CANON,
-  GEL_TRAFALGAR,
-} from '@bbc/gel-foundations-styled-components/typography';
+  GEL_SPACING_DBL,
+  GEL_SPACING_QUAD,
+} from '@bbc/gel-foundations/spacings';
+import { GEL_CANON, GEL_TRAFALGAR } from '@bbc/gel-foundations/typography';
 
 export const Headline = styled.h1`
   color: ${C_EBON};
