@@ -1,5 +1,7 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
+import { withReadme } from 'storybook-readme';
+import Readme from '../README.md';
 import Image from './index';
 
 const imageAlt =
@@ -8,6 +10,8 @@ const imageSrc =
   'https://ichef.bbci.co.uk/news/640/cpsprodpb/439A/production/_100960371_syrians_and_asylum_v2-nc.png';
 const imageWidth = 853;
 
-storiesOf('Image', module).add('default', () => (
-  <Image alt={imageAlt} src={imageSrc} width={imageWidth} />
-));
+storiesOf('Image', module)
+  .addDecorator(withReadme(Readme))
+  .add('default', () => (
+    <Image alt={imageAlt} src={imageSrc} width={imageWidth} />
+  ));
