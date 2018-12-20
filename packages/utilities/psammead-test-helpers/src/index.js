@@ -31,21 +31,20 @@ export const isNull = (title, component) => {
   });
 };
 
+const errorIfMissingKey = (keys, object, message) => {
+  keys.forEach(key => {
+    if (!(key in object)) {
+      throw new Error(`Missing value '${key}' in ${message}.`);
+    }
+  });
+};
+
 const checkKeysExistInBothObjects = (object1, object2, message1, message2) => {
   const object1Keys = Object.keys(object1);
   const object2Keys = Object.keys(object2);
 
-  object1Keys.forEach(key => {
-    if (!(key in object2)) {
-      throw new Error(`Missing value '${key}' in ${message1}.`);
-    }
-  });
-
-  object2Keys.forEach(key => {
-    if (!(key in object1)) {
-      throw new Error(`Missing value '${key}' in ${message2}.`);
-    }
-  });
+  errorIfMissingKey(object1Keys, object2, message1);
+  errorIfMissingKey(object2Keys, object1, message2);
 };
 
 const checkTypesOfExports = (
