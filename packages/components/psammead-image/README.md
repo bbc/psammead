@@ -1,26 +1,68 @@
 # psammead-image &middot; [![GitHub license](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](https://github.com/BBC-News/psammead/blob/latest/LICENSE) [![npm version](https://img.shields.io/npm/v/@bbc/psammead-image.svg)](https://www.npmjs.com/package/@bbc/psammead-image) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/BBC-News/psammead/blob/latest/CONTRIBUTING.md)
 
 ## Description
-The `psammead-image` component is a styled `img` element.
+
+The `psammead-image` component has two images available. The default is a styled `img` element that uses Styled Components.
+
+There is an alternative AMP Image which can be used. It is a React component returning an `amp-img` element.
 
 ## Usage
 
-```jsx
-import Image from '@bbc/psammead-image';
+### Img
 
-const Wrapper = (src, alt, width, height) => (
-  <Image src={src} alt={alt} width={width} height={height} />
+Importing the standard Image component, which renders an `<img />` tag.
+
+```jsx
+import Image from '../components/Image';
+
+const WrappingContainer = ({ alt, src, height, width }) => (
+  <Img alt={alt} src={src} height={height} width={width} />
 );
 ```
 
 | Prop     | Type          | Required |
-|:---------|:--------------|:---------|
+| :------- | :------------ | :------- |
 | `alt`    | string        | Yes      |
 | `height` | number/string | No       |
 | `src`    | string        | Yes      |
+| `srcset` | string        | No       |
 | `width`  | number/string | Yes      |
 
 The `height` prop is optional, since in some cases to preserve the image ratio we only want to specify the width and let the browser scale the image accordingly. However, in other cases the height might need to be specified.
+The `srcset` prop is optional since some projects might not want to use the srcset attribute on images.
+
+### AmpImg
+
+If you're to use the `AmpImg` component, [please read the AMP documentation here](https://www.ampproject.org/docs/reference/components/amp-img) for further details.
+
+Importing an Amp Image component, which renders an `<amp-img />` tag.
+
+```jsx
+import { AmpImg } from '../components/Image';
+
+const WrappingContainer = ({ alt, src, height, width }) => (
+  <AmpImg
+    alt={alt}
+    layout="responsive"
+    src={src}
+    height={height}
+    width={width}
+  />
+);
+```
+
+| Prop          | Type          | Required |
+| :------------ | :------------ | :------- |
+| `alt`         | string        | Yes      |
+| `attribution` | string        | Yes      |
+| `height`      | number/string | Yes      |
+| `layout`      | string        | Yes      |
+| `src`         | string        | Yes      |
+| `srcset`      | string        | No       |
+| `width`       | number/string | Yes      |
+
+The `attribution` prop is available to pass in strings to include the image source.
+The `layout` prop can be one of several, including `responsive`, `fixed`, `intrinsic` etc. We recommend using `responsive` for most use-cases, with `height` and `width` props passed in, so the AMP can use the correct ratio for scaling the image. [For further details, please refer to the AMP docs](https://www.ampproject.org/docs/reference/components/amp-img).
 
 ## Accessibility notes
 
