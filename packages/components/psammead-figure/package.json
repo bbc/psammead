@@ -1,11 +1,11 @@
 {
-  "name": "@bbc/psammead-image",
-  "version": "0.2.0",
+  "name": "@bbc/psammead-figure",
+  "version": "0.1.0",
   "main": "dist/index.js",
-  "description": "React styled components for an Image",
+  "description": "React styled component that generates a figure element",
   "repository": {
     "type": "git",
-    "url": "https://github.com/BBC-News/psammead/tree/latest/packages/components/psammead-image"
+    "url": "https://github.com/BBC-News/psammead/tree/latest/packages/components/psammead-figure"
   },
   "author": {
     "name": "Psammead Maintainers",
@@ -15,17 +15,18 @@
   "bugs": {
     "url": "https://github.com/bbc/psammead/issues"
   },
-  "homepage": "https://github.com/BBC-News/psammead/blob/latest/packages/components/psammead-image/README.md",
+  "homepage": "https://github.com/BBC-News/psammead/blob/latest/packages/components/psammead-figure/README.md",
   "dependencies": {
-    "prop-types": "^15.6.2",
+    "@bbc/gel-foundations": "^0.1.2",
     "styled-components": "^4.1.2"
   },
   "devDependencies": {
     "@bbc/psammead-test-helpers": "^0.1.0",
+    "@bbc/psammead-image": "^0.1.0",
     "react": "^16.6.3"
   },
   "keywords": [
     "bbc",
-    "image"
+    "figure"
   ]
 }
