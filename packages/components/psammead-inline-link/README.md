@@ -56,7 +56,7 @@ Alternatively, if you want to just extend existing styles with other GEL Typogra
 
 ```jsx
 import InlineLink from '@bbc/psammead-inline-link';
-import { GEL_PARAGON } from '@bbc/gel-foundations-styled-components';
+import { GEL_PARAGON } from '@bbc/gel-foundations';
 
 const GelParagonLink = styled(InlineLink)`
   ${GEL_PARAGON};

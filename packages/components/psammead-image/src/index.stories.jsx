@@ -1,5 +1,7 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
+import { withReadme } from 'storybook-readme';
+import Readme from '../README.md';
 import Image from './index';
 
 const imageAlt =
@@ -9,11 +11,13 @@ const imageSrc =
 const imageWidth = 853;
 const imageHeight = 1067;
 
-storiesOf('Image', module).add('default', () => (
-  <Image
-    alt={imageAlt}
-    src={imageSrc}
-    width={imageWidth}
-    height={imageHeight}
-  />
-));
+storiesOf('Image', module)
+  .addDecorator(withReadme(Readme))
+  .add('default', () => (
+    <Image
+      alt={imageAlt}
+      src={imageSrc}
+      width={imageWidth}
+      height={imageHeight}
+    />
+  ));
