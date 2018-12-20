@@ -3,13 +3,13 @@ import styled, { css } from 'styled-components';
 import { arrayOf, shape, string } from 'prop-types';
 import { C_ORBIT_GREY, C_WHITE } from '@bbc/psammead-styles/colours';
 import { FF_NEWS_SANS_REG } from '@bbc/psammead-styles/fonts';
-import { GEL_BREVIER } from '@bbc/gel-foundations-styled-components/typography';
+import { GEL_BREVIER } from '@bbc/gel-foundations/typography';
 import {
   GEL_SPACING_DBL,
   GEL_MARGIN_BELOW_400PX,
   GEL_MARGIN_ABOVE_400PX,
-} from '@bbc/gel-constants/spacings';
-import { GEL_GROUP_2_SCREEN_WIDTH_MIN } from '@bbc/gel-constants/breakpoints';
+} from '@bbc/gel-foundations/spacings';
+import { GEL_GROUP_2_SCREEN_WIDTH_MIN } from '@bbc/gel-foundations/breakpoints';
 import Link from './Link';
 import List from './List';
 

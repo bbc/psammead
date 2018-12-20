@@ -1,8 +1,8 @@
 import styled from 'styled-components';
 import { C_WHITE } from '@bbc/psammead-styles/colours';
 import { FF_NEWS_SANS_REG } from '@bbc/psammead-styles/fonts';
-import { GEL_SPACING, GEL_SPACING_HLF } from '@bbc/gel-constants/spacings';
-import { GEL_MINION } from '@bbc/gel-foundations-styled-components/typography';
+import { GEL_SPACING, GEL_SPACING_HLF } from '@bbc/gel-foundations/spacings';
+import { GEL_MINION } from '@bbc/gel-foundations/typography';
 
 const Copyright = styled.p.attrs({
   role: 'text',

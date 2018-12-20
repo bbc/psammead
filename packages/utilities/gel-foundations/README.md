@@ -1,8 +1,12 @@
 # gel-foundations &middot; [![GitHub license](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](https://github.com/BBC-News/psammead/blob/latest/LICENSE) [![npm version](https://img.shields.io/npm/v/@bbc/gel-foundations.svg)](https://www.npmjs.com/package/@bbc/gel-foundations) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/BBC-News/psammead/blob/latest/CONTRIBUTING.md)
 
-This package is a collection of constants which can be imported into your application.
+This package provides a range of string constants for use in CSS, intended to help implement [BBC GEL-compliant](https://www.bbc.co.uk/gel/articles/what-is-gel) webpages and components.
 
-[More details on the type sizes defined in this package are available here.](./typography_sizes_web.md)
+## Exports
+
+`/breakpoints` - GEL breakpoints, as well as typography breakpoints. These use the GEL grid sizes which can be found in the [GEL Grid guidelines](https://www.bbc.co.uk/gel/guidelines/grid#grid-sizes).  
+`/spacings` - GEL spacings and GEL Grid margins and gutters. These use the GEL grid spacing sizes which can be found in the [GEL Grid guidelines](https://www.bbc.co.uk/gel/guidelines/grid#spacing-layout).  
+`/typography` - GEL typography. These are based on the gel typography standard which can be found in the [GEL guidelines](https://www.bbc.co.uk/gel/guidelines/typography). [More details on how these sizes were implemented for this package are available here.](./typography_sizes_web.md)
 
 ## Installation
 
@@ -15,20 +19,26 @@ npm install @bbc/gel-foundations --save
 ```jsx
 import { GEL_GROUP_3_SCREEN_WIDTH_MIN } from '@bbc/gel-foundations/breakpoints';
 
-import { GEL_GUTTER_BELOW_600PX } from '@bbc/gel-foundations/spacings';
+import { GEL_GUTTER_ABOVE_600PX } from '@bbc/gel-foundations/spacings';
 
-import { GEL_BREVIER } from '@bbc/gel-foundations-styled-components/typography';
+import { GEL_BREVIER } from '@bbc/gel-foundations/typography';
+```
+
+These values can then be used directly within CSS declarations in code:
+```jsx
+import { css } from 'styled-components';
+
+const SomeStyledComponent = css`
+   @media  (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
+      grid-gap: ${GEL_GUTTER_ABOVE_600PX };
+      ${GEL_BREVIER};
+   }
+`;
 ```
 
 To allow the typography to be fully accessible and responsive, please note that you should apply a default font-size to the document root (e.g. `html { font-size: 100% }`).
 
 Our typography uses `em` for font-size and `rem` for line-height. `em` allows modularity of components: you can change the component font-size by changing the font-size of its container. `rem` is relative to the document root, so we use that for line-height and spacing for a consistent look-and-feel across the document. You can read our [detailed analysis of "REMs vs EMs for spacing"](https://github.com/BBC-News/simorgh/blob/latest/docs/Spacing-Units.md) for more information.
-
-## Exports
-
-`/breakpoints` - GEL breakpoints, as well as typography breakpoints. These use the GEL grid sizes which can be found in the [GEL Grid guidelines](https://www.bbc.co.uk/gel/guidelines/grid#grid-sizes).  
-`/spacings` - GEL spacings and GEL Grid margins and gutters. These use the GEL grid spacing sizes which can be found in the [GEL Grid guidelines](https://www.bbc.co.uk/gel/guidelines/grid#spacing-layout).  
-`/typography` - GEL typography. These are based on the gel typography standard which can be found in the [GEL guidelines](https://www.bbc.co.uk/gel/guidelines/typography).
 
 ## Contributing
 
