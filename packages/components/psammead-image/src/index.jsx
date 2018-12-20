@@ -8,7 +8,7 @@ const Image = styled.img`
 
 Image.propTypes = {
   alt: string.isRequired,
-  height: oneOfType([string, number]).isRequired,
+  height: oneOfType([string, number]),
   src: string.isRequired,
   width: oneOfType([string, number]).isRequired,
 };
