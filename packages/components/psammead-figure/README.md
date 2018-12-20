@@ -21,10 +21,10 @@ import Image from '@bbc/psammead-image';
 import ImagePlaceholder from '@bbc/psammead-image-placeholder';
 import VisuallyHiddenText from '@bbc/psammead-visually-hidden-text';
 
-const Wrapper = ({ src, alt, ratio, captionText }) => (
+const Wrapper = ({ alt, captionText, ratio, src, width }) => (
   <Figure>
     <ImagePlaceholder ratio={ratio}>
-      <Image alt={alt} src={src} />
+      <Image alt={alt} src={src} width={width}/>
     </ImagePlaceholder>
     <Caption>
       <VisuallyHiddenText>Image caption, </VisuallyHiddenText>

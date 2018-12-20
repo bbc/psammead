@@ -12,7 +12,7 @@ const imageSrc =
 const imageWidth = 853;
 storiesOf('Figure', module)
   .addDecorator(withReadme(Readme))
-  .add('default', () => (
+  .add('Figure containing Image', () => (
     <Figure>
       <Image alt={imageAlt} src={imageSrc} width={imageWidth} />
     </Figure>
