@@ -125,7 +125,7 @@ Our recommended `.babelrc` config for this is here:
 
 [See documentation on the Styled Components site](https://www.styled-components.com/docs/tooling#babel-plugin)
 
-**NOTE**: if you run into issues with CSS not being applied to your components, it is likely that there is a duplicated `styled-components` somewhere in your dependencies, which is not compatible with `styled-components` which acts as a singleton. You can run [npm dedupe](https://www.styled-components.com/docs/faqs#duplicated-module-in-node_modules) or [write your own bash script](https://github.com/BBC-News/psammead/blob/9f30156d5a602b0dbeb427c29568022284746fee/package.json#L9) to resolve the duplication.
+**NOTE**: if you run into issues with CSS not being applied to your components, it is likely that there is a duplicate `styled-components` dependency somewhere in your packages, which conflicts with its singleton structure. You can try running [`npm dedupe`](https://www.styled-components.com/docs/faqs#duplicated-module-in-node_modules) in most cases, or [`lerna bootstrap --hoist`](https://www.styled-components.com/docs/faqs#usage-with-lerna) in monorepo setups.
 
 ## Browser support
 
