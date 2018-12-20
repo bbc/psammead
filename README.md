@@ -127,9 +127,29 @@ Our recommended `.babelrc` config for this is here:
 
 **NOTE**: if you run into issues with CSS not being applied to your components, it is likely that there is a duplicate `styled-components` dependency somewhere in your packages. You can try running [`npm dedupe`](https://www.styled-components.com/docs/faqs#duplicated-module-in-node_modules) in most cases, or [`lerna bootstrap --hoist`](https://www.styled-components.com/docs/faqs#usage-with-lerna) in monorepo setups such as Psammead's. Failing that, make sure your application's `styled-components` dependency is the same version as that in Psammead.
 
-## Browser support
+## :bar_chart: Support levels
 
 We strive for components to conform to the following minimum levels of support, but please check each component's individual README.
+
+### Browser support
+
+| Browser              | Lowest version |
+| -------------------- | -------------- |
+| Safari               | 7              |
+| Facebook for iPhone  | 187            |
+| Chrome for iOS       | 68             |
+| Chrome               | 25             |
+| Edge                 | 14             |
+| Firefox              | 48             |
+| IE                   | 9              |
+| Amazon Silk          | 69             |
+| Opera Mini           | 4              |
+| Android Browser      | 4              |
+| Nokia                | 6280           |
+| Firefox for iOS      | 13             |
+| Facebook for Android | 190            |
+
+Note that these browser support levels have been defined by usage statistics for BBC News and BBC Persian.
 
 ### Assistive Technology Support
 
