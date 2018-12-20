@@ -3,6 +3,10 @@ import { configure, addDecorator } from '@storybook/react';
 import { setOptions } from '@storybook/addon-options';
 import styledNormalize from 'styled-normalize';
 import { createGlobalStyle } from 'styled-components';
+import {
+  AMP_SCRIPT,
+  AMP_NO_SCRIPT,
+} from '@bbc/psammead-assets/amp-boilerplate';
 
 // Option defaults:
 setOptions({
@@ -44,11 +48,24 @@ const GlobalStyle = createGlobalStyle`
   }
 `;
 
-addDecorator(story => (
+const canonicalDecorator = story => (
   <Fragment>
     <GlobalStyle />
     {story()}
   </Fragment>
-));
+);
+
+const ampDecorator = story => (
+  <Fragment>
+    <style amp-boilerplate="">{AMP_SCRIPT}</style>
+    <noscript>
+      <style amp-boilerplate="">{AMP_NO_SCRIPT}</style>
+    </noscript>
+    <script key="amp" async src="https://cdn.ampproject.org/v0.js" />
+    {story()}
+  </Fragment>
+);
+
+addDecorator(canonicalDecorator);
 
 configure(loadStories, module);

@@ -39,6 +39,7 @@
     "@babel/core": "^7.2.0",
     "@babel/preset-env": "^7.2.0",
     "@babel/preset-react": "^7.0.0",
+    "@bbc/psammead-assets": "^0.1.3",
     "@storybook/addon-actions": "^3.4.11",
     "@storybook/addon-knobs": "^3.4.11",
     "@storybook/addon-options": "^3.4.11",
