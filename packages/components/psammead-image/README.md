@@ -13,12 +13,14 @@ const Wrapper = (src, alt, width, height) => (
 );
 ```
 
-| Prop     | Type          |
-|:---------|:--------------|
-| `alt`    | string        |
-| `height` | number/string |
-| `src`    | string        |
-| `width`  | number/string |
+| Prop     | Type          | Required |
+|:---------|:--------------|:---------|
+| `alt`    | string        | Yes      |
+| `height` | number/string | No       |
+| `src`    | string        | Yes      |
+| `width`  | number/string | Yes      |
+
+The `height` prop is optional, since in some cases to preserve the image ratio we only want to specify the width and let the browser scale the image accordingly. However, in other cases the height might need to be specified.
 
 ## Accessibility notes
 
