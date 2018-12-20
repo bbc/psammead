@@ -43,8 +43,8 @@ const checkKeysExistInBothObjects = (object1, object2, message1, message2) => {
   const object1Keys = Object.keys(object1);
   const object2Keys = Object.keys(object2);
 
-  errorIfMissingKey(object1Keys, object2, message1);
-  errorIfMissingKey(object2Keys, object1, message2);
+  errorIfMissingKey(object1Keys, object2, message2);
+  errorIfMissingKey(object2Keys, object1, message1);
 };
 
 const checkTypesOfExports = (
