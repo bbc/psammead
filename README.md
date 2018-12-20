@@ -125,7 +125,7 @@ Our recommended `.babelrc` config for this is here:
 
 [See documentation on the Styled Components site](https://www.styled-components.com/docs/tooling#babel-plugin)
 
-## Support levels
+## :bar_chart: Support levels
 
 We strive for components to conform to the following minimum levels of support, but please check each component's individual README.
 
