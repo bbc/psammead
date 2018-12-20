@@ -1,4 +1,4 @@
-# psammead-image &middot; [![GitHub license](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](https://github.com/BBC-News/psammead/blob/latest/LICENSE) [![npm version](https://img.shields.io/npm/v/@bbc/psammead-image.svg)](https://www.npmjs.com/package/@bbc/psammead-image) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/BBC-News/psammead/blob/latest/CONTRIBUTING.md)
+# psammead-image &middot; (https://github.com/storybooks/press/blob/master/badges/storybook.svg)](https://bbc-news.github.io/psammead/?selectedKind=Image) [![GitHub license](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](https://github.com/BBC-News/psammead/blob/latest/LICENSE) [![npm version](https://img.shields.io/npm/v/@bbc/psammead-image.svg)](https://www.npmjs.com/package/@bbc/psammead-image) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/BBC-News/psammead/blob/latest/CONTRIBUTING.md)
 
 ## Description
 The `psammead-image` component is a styled `img` element.
@@ -13,12 +13,14 @@ const Wrapper = (src, alt, width, height) => (
 );
 ```
 
-| Prop     | Type          |
-|:---------|:--------------|
-| `alt`    | string        |
-| `height` | number/string |
-| `src`    | string        |
-| `width`  | number/string |
+| Prop     | Type          | Required |
+|:---------|:--------------|:---------|
+| `alt`    | string        | Yes      |
+| `height` | number/string | No       |
+| `src`    | string        | Yes      |
+| `width`  | number/string | Yes      |
+
+The `height` prop is optional, since in some cases to preserve the image ratio we only want to specify the width and let the browser scale the image accordingly. However, in other cases the height might need to be specified.
 
 ## Accessibility notes
 
