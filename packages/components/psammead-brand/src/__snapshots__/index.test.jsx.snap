@@ -1,78 +1,19 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Brand should render correctly 1`] = `
-.c5 {
-  -webkit-clip-path: inset(100%);
-  clip-path: inset(100%);
-  -webkit-clip: rect(1px,1px,1px,1px);
-  clip: rect(1px,1px,1px,1px);
-  height: 1px;
-  overflow: hidden;
-  position: absolute;
-  width: 1px;
-}
-
-.c0 {
-  background-color: #B80000;
-  height: 5rem;
-  width: 100%;
-}
-
-.c2 {
-  padding-top: 0.5rem;
-  display: inline-block;
-}
-
-.c3 {
-  display: block;
-  padding-bottom: 1.5rem;
-}
-
-.c1:hover .c3,
-.c1:focus .c3 {
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  border-bottom: 0.25rem solid #FFFFFF;
-}
-
-.c4 {
-  display: block;
-  height: 1.5rem;
-  width: 10.496875rem;
-  margin-top: 1.25rem;
-}
-
-@media (max-width:25em) {
-  .c0 {
-    padding: 0 0.5rem;
-  }
-}
-
-@media (min-width:25em) {
-  .c0 {
-    padding: 0 1rem;
-  }
-}
-
-@media (min-width:62.9375em) {
-  .c0 {
-    padding: 0 1rem;
-  }
-}
-
 <div
-  className="c0"
+  className="StyledWrapper-m3awbo-0 gODSLQ"
 >
   <a
-    className="c1 c2"
+    className="StyledLink-m3awbo-1 gLMlhS"
     href="https://www.bbc.co.uk/news"
   >
     <span
-      className="c3"
+      className="StyledSpan-m3awbo-2 keJLfN"
     >
       <svg
         aria-hidden="true"
-        className="c4"
+        className="BrandSvg-m3awbo-3 lnFlrS"
         focusable="false"
         viewBox="0 0 167.95 24"
         xmlns="http://www.w3.org/2000/svg"
@@ -93,7 +34,7 @@ exports[`Brand should render correctly 1`] = `
         </g>
       </svg>
       <span
-        className="c5"
+        className="VisuallyHiddenText-sc-1yjwwa5-0 LgsrE"
       >
         Default Brand Name
       </span>
