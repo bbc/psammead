@@ -1,7 +1,21 @@
 # psammead-image &middot; [![GitHub license](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](https://github.com/BBC-News/psammead/blob/latest/LICENSE) [![npm version](https://img.shields.io/npm/v/@bbc/psammead-image.svg)](https://www.npmjs.com/package/@bbc/psammead-image) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/BBC-News/psammead/blob/latest/CONTRIBUTING.md)
 
 ## Description
+
 The `psammead-image` component is a styled `img` element.
+
+## Installation
+
+## Props
+
+| Argument  | Type          | Required | Example                      |
+|-----------|---------------|----------|------------------------------|
+| alt       | String        | Yes      | "A description of the image" |
+| height    | Number/String | No*       | 400                          |
+| src       | String        | Yes      | "https://ichef.bbci.co.uk/news/640/cpsprodpb/A933/production/_101651334_bouquet_pa.jpg" |
+| width     | Number/String | Yes      | 600                          |
+
+*The `height` prop is optional, since in some cases to preserve the image ratio we only want to specify the width and let the browser scale the image accordingly. However, in other cases the height might need to be specified.
 
 ## Usage
 
@@ -13,20 +27,40 @@ const Wrapper = (src, alt, width, height) => (
 );
 ```
 
-| Prop     | Type          | Required |
-|:---------|:--------------|:---------|
-| `alt`    | string        | Yes      |
-| `height` | number/string | No       |
-| `src`    | string        | Yes      |
-| `width`  | number/string | Yes      |
+Commonly used alongside [`psammead-figure`](https://github.com/BBC-News/psammead/tree/latest/packages/components/psammead-figure) and [`psammead-image-placeholder`](https://github.com/BBC-News/psammead/tree/latest/packages/components/psammead-image-placeholder).
 
-The `height` prop is optional, since in some cases to preserve the image ratio we only want to specify the width and let the browser scale the image accordingly. However, in other cases the height might need to be specified.
+```jsx
+import Figure from '@bbc/psammead-figure';
+import Image from '@bbc/psammead-image';
+import ImagePlaceholder from '@bbc/psammead-image-placeholder';
 
-## Accessibility notes
+const WrapperComponent = ({
+  alt,
+  ratio,
+  src,
+  width,
+}) => (
+  <Figure>
+    <ImagePlaceholder ratio={ratio}>
+      <Image alt={alt} src={src} width={width} />
+    </ImagePlaceholder>
+  </Figure>
+);
+```
+
+### When to use this component
+
+This component can be used at any point on a page.
+
+<!-- ### When not to use this component -->
+
+### Accessibility notes
 
 This component requires an `alt` property to describe the image. This `alt` text is crucial for users of Assistive Technology, and by any user whose internet connection is so slow the browser decides to render the text instead of the image.
 
 Some images are purely presentational - in these cases, an `alt` attribute must still be passed, but the value would be an empty string: `""`.
+
+<!-- ## Roadmap -->
 
 ## Contributing
 

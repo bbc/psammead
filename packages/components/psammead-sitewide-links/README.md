@@ -1,8 +1,8 @@
-# psammead-sitewide-links &middot; [![GitHub license](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](https://github.com/BBC-News/psammead/blob/latest/LICENSE) [![npm version](https://img.shields.io/npm/v/@bbc/psammead-sitewide-links.svg)](https://www.npmjs.com/package/@bbc/psammead-sitewide-links) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://reactjs.org/docs/how-to-contribute.html#your-first-pull-request)
+# psammead-sitewide-links &middot; [![GitHub license](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](https://github.com/BBC-News/psammead/blob/latest/LICENSE) [![npm version](https://img.shields.io/npm/v/@bbc/psammead-sitewide-links.svg)](https://www.npmjs.com/package/@bbc/psammead-sitewide-links) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/BBC-News/psammead/blob/latest/CONTRIBUTING.md)
 
 ## Description
 
-The `@bbc/psammead-sitewide-links` package is designed to be used at the bottom of an article, however can be used anywhere on a page. These links are generally intended to be to more general and legal BBC pages, but do not have to be. It also includes information about copyright. 
+The `psammead-sitewide-links` component is intended to be used at the bottom of an article, serving as a footer, however can be used anywhere on a page. These links are generally intended to be to more general and legal BBC pages, but do not have to be. It also includes information about copyright. 
 
 ## Installation
 
@@ -10,13 +10,13 @@ The `@bbc/psammead-sitewide-links` package is designed to be used at the bottom 
 npm install @bbc/psammead-sitewide-links --save
 ```
 
-## Arguments
+## Props
 
-| Argument      | Type                  | Example                                           |
-|:--------------|:----------------------|:--------------------------------------------------|
-| links         | Array of Link objects | `[{href:'https://www.bbc.com', text: 'The BBC'}]` |
-| copyrightText | String                | `'Copyright BBC News'`                            |
-| externalLink  | Link object           | `{href:'https://www.bbc.com', text: 'The BBC'}`   |
+| Argument      | Type                  | Required | Example                                           |
+|---------------|-----------------------|----------|---------------------------------------------------|
+| links         | Array of Link objects | Yes      | `[{href:'https://www.bbc.com', text: 'The BBC'}]` |
+| copyrightText | String                | Yes      | `'Copyright BBC News'`                            |
+| externalLink  | Link object           | Yes      | `{href:'https://www.bbc.com', text: 'The BBC'}`   |
 
 ## Usage
 
@@ -37,12 +37,6 @@ const WrappingComponent = () => (
 );
 ```
 
-## When to use this component
-
-It is currently used at the bottom of new BBC News and BBC News Persian article pages, however it has no markup requiring this to be its only application. It can be used anywhere on any page.
-
-## Considerations
-### Landmark Roles
 The typical use-case of this component is at the bottom of BBC pages in a [`footer` element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/footer). When this is done it is recommend that the component is wrapped in a [`contentinfo` landmark](https://www.w3.org/TR/wai-aria-practices/examples/landmarks/contentinfo.html) which denotes content around copyright, privacy and related content.
 
 *Example -*
@@ -51,6 +45,16 @@ The typical use-case of this component is at the bottom of BBC pages in a [`foot
   <SitewideLinks />
 </footer>
 ```
+
+### When to use this component
+
+It is currently used at the bottom of new BBC News and BBC News Persian article pages, however it has no markup requiring this to be its only application. It can be used anywhere on any page.
+
+<!-- ### When not to use this component -->
+
+<!-- ### Accessibility notes -->
+
+<!-- ## Roadmap -->
 
 ## Contributing
 

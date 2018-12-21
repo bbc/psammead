@@ -128,10 +128,12 @@ We welcome feedback and help on this work. By participating in this project, you
 Psammead is [Apache 2.0 licensed](https://github.com/BBC-News/psammead/blob/latest/LICENSE).
 ```
 
+When linking to other pages from a component's README, we advise you do so only by absolute URL, and avoid the use of relative paths. Component READMEs are displayed in a variety of places, including NPM and Storybook, and this helps ensure the intended meaning is preserved.
+
 If you wish to exclude one or more sections of this template, we advise you do so by simply commenting out the heading, like so:
 
 ```
-<!--# Roadmap-->
+<!-- ## Roadmap -->
 ```
 
 ### After merge

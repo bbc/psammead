@@ -1,35 +1,52 @@
 # psammead-caption &middot; [![GitHub license](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](https://github.com/BBC-News/psammead/blob/latest/LICENSE) [![npm version](https://img.shields.io/npm/v/@bbc/psammead-caption.svg)](https://www.npmjs.com/package/@bbc/psammead-caption) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/BBC-News/psammead/blob/latest/CONTRIBUTING.md)
 
 ## Description
+
 The `psammead-caption` component is a styled `figcaption` element.
+
+## Installation
+
+`npm install @bbc/psammead-caption`
+
+## Props
+
+| Argument  | Type                | Required | Example         |
+|-----------|---------------------|----------|-----------------|
+| No props. |
 
 ## Usage
 
-`psammead-caption` can be used together with `psammead-visually-hidden-text` in this way. This visually hidden text is to give context to users of Assistive Technology.
+`psammead-caption` can be used together with the [`psammead-figure`](https://github.com/BBC-News/psammead/tree/latest/packages/components/psammead-figure) and [`psammead-visually-hidden-text`](https://github.com/BBC-News/psammead/tree/latest/packages/components/psammead-visually-hidden-text) in this way. This visually hidden text is to give context to users of Assistive Technology.
 
 ```jsx
 import Caption from '@bbc/psammead-caption';
+import Figure from '@bbc/psammead-figure';
 import VisuallyHiddenText from '@bbc/psammead-visually-hidden-text';
 
 const Wrapper = (captionText) => (
-  <figure>
+  <Figure>
     ...
     <Caption>
       <VisuallyHiddenText>Image caption, </VisuallyHiddenText>
       {captionText}
     </Caption>
-  <figure>
+  <Figure>
 );
 ```
 
-## When to use this component
+### When to use this component
+
 The `Caption` component should be used only within a `figure` element. It is designed to be placed after an image or video component.
 
-## Accessibility notes
+<!-- ### When not to use this component -->
+
+### Accessibility notes
 
 Since this is just a `<figcaption>` tag with associated styles, when you use this component, it has the same semantic meaning as a regular figcaption element.
 
 The font and background-color choices meet WCAG AA colour contrast guidelines.
+
+<!-- ## Roadmap -->
 
 ## Contributing
 

@@ -8,9 +8,13 @@ It uses `@bbc/psammead-styles` for colours and font family and `@bbc/gel-foundat
 
 ## Installation
 
-```
-npm install @bbc/psammead-paragraph --save
-```
+`npm install @bbc/psammead-paragraph`
+
+## Props
+
+| Argument  | Type                | Required | Example         |
+|-----------|---------------------|----------|-----------------|
+| No props. |
 
 ## Usage
 
@@ -22,13 +26,17 @@ const WrappingComponent = () => (
 );
 ```
 
-## When to use this component
+### When to use this component
 
 This component can be used at any point on a page.
 
-## Accessibility notes
+<!-- ### When not to use this component -->
+
+### Accessibility notes
 
 Since this is just a `<p>` tag with associated styles, when you use this component, it has the same semantic meaning as a regular paragraph element.
+
+<!-- ## Roadmap -->
 
 ## Contributing
 

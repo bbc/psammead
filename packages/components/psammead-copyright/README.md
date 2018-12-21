@@ -1,18 +1,51 @@
 # psammead-copyright &middot; [![GitHub license](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](https://github.com/BBC-News/psammead/blob/latest/LICENSE) [![npm version](https://img.shields.io/npm/v/@bbc/psammead-copyright.svg)](https://www.npmjs.com/package/@bbc/psammead-copyright) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/BBC-News/psammead/blob/latest/CONTRIBUTING.md)
 
-### Description
-Displays the source attribution of an image in block capitals in the bottom-right of the parent element. 
+## Description
+
+Displays a source attribution in block capitals in the bottom-right of the parent element. This implementation is primarily intended for use alongside images.
+
+## Installation
+
+`npm install @bbc/psammead-copyright`
+
+## Props
+
+| Argument  | Type                | Required | Example         |
+|-----------|---------------------|----------|-----------------|
+| No props. |
+
+## Usage
+
+Commonly used alongside [`psammead-figure`](https://github.com/BBC-News/psammead/tree/latest/packages/components/psammead-figure) and [`psammead-image`](https://github.com/BBC-News/psammead/tree/latest/packages/components/psammead-image).
+
+```jsx
+const WrapperComponent = ({
+  alt,
+  src,
+  width,
+}) => (
+  <Figure>
+    <Image alt={alt} src={src} width={width} />
+    <Copyright>Getty Images</Copyright>
+  </Figure>
+);
+```
 
 ### When to use this component
-This component is intended to be used alongside images or diagrams contained within a [Figure component](../).
+
+This component is intended to be used alongside images or diagrams contained within a [Figure component](https://github.com/BBC-News/psammead/tree/latest/packages/components/psammead-figure).
 
 ### When not to use this component
-This component should not be used arbitrarily to represent source attribution across the page. As above, it is not intended to be used outside the [Figure component](../). The accessibility text would be incorrect and potentially confusing.
 
-Do not use this component if you know the source attribution is already covered by another copyright disclosure on the page, such as in the [Footer component](../../Footer).
+This component should not be used arbitrarily to represent source attribution across the page. As above, it is not intended to be used outside the [Figure component](https://github.com/BBC-News/psammead/tree/latest/packages/components/psammead-figure). The accessibility text would be incorrect and potentially confusing.
+
+Do not use this component if you know the source attribution is already covered by another copyright disclosure on the page, such as in [`psammead-sitewide-links` component](https://github.com/BBC-News/psammead/tree/latest/packages/components/psammead-sitewide-links).
 
 ### Accessibility notes
+
 The default styling of this component is intended to comply with WCAG colour contrast standards.
+
+<!-- ## Roadmap -->
 
 ## Contributing
 
