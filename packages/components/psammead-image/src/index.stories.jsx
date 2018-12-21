@@ -1,4 +1,5 @@
 import { Img } from '.';
 import stories from './testHelpers/stories';
+import { canonicalStyles } from '../../../../.storybook/config';
 
-stories(Img, 'Image - Img');
+stories(canonicalStyles, Img, 'Image - Img');

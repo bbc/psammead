@@ -7,18 +7,15 @@ import {
   AMP_SCRIPT,
   AMP_NO_SCRIPT,
 } from '@bbc/psammead-assets/amp-boilerplate';
+import Helmet from 'react-helmet';
 
-// Option defaults:
 setOptions({
   name: 'BBC Psammead',
   url: 'https:github.com/BBC-News/psammead',
   addonPanelInRight: true,
   sidebarAnimations: true,
+  sortStoriesByKind: true,
 });
-
-function loadStories() {
-  require('glob-loader!./stories.pattern');
-}
 
 const GlobalStyle = createGlobalStyle`
   ${styledNormalize}
@@ -48,24 +45,29 @@ const GlobalStyle = createGlobalStyle`
   }
 `;
 
-const canonicalDecorator = story => (
+export const canonicalStyles = story => (
   <Fragment>
     <GlobalStyle />
     {story()}
   </Fragment>
 );
 
-const ampDecorator = story => (
+export const ampStylesScripts = story => (
   <Fragment>
-    <style amp-boilerplate="">{AMP_SCRIPT}</style>
-    <noscript>
-      <style amp-boilerplate="">{AMP_NO_SCRIPT}</style>
-    </noscript>
-    <script key="amp" async src="https://cdn.ampproject.org/v0.js" />
+    <Helmet htmlAttributes={{ amp: '' }}>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width,minimum-scale=1" />
+      <link rel="canonical" href="http://foobar.com" />
+      <style amp-boilerplate="">{AMP_SCRIPT}</style>
+      <noscript>{`<style amp-boilerplate="">${AMP_NO_SCRIPT}</style>`}</noscript>
+      <script async src="https://cdn.ampproject.org/v0.js" />
+    </Helmet>
     {story()}
   </Fragment>
 );
 
-addDecorator(canonicalDecorator);
+function loadAllStories() {
+  require('glob-loader!./stories.pattern');
+}
 
-configure(loadStories, module);
+configure(loadAllStories, module);

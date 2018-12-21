@@ -4,47 +4,43 @@ import { withReadme } from 'storybook-readme';
 import Readme from '../../README.md';
 import { custom, landscape, portrait, square } from './fixtureData';
 
-const stories = (Component, title, additionalProps) =>
+function getProps(image, includeHeight) {
+  const props = {
+    alt: image.alt,
+    src: image.src,
+    width: image.width,
+  };
+  props.height = includeHeight ? image.height : null;
+
+  return props;
+}
+
+const stories = (
+  styleDecorator,
+  Component,
+  title,
+  includeHeight = false,
+  additionalProps = {},
+) =>
   storiesOf(title, module)
     .addDecorator(withReadme(Readme))
+    .addDecorator(styleDecorator)
     .add('16:9 landscape image', () => (
-      <Component
-        alt={landscape.alt}
-        src={landscape.src}
-        width={landscape.width}
-        {...additionalProps}
-      />
+      <Component {...getProps(landscape, includeHeight)} {...additionalProps} />
     ))
     .add('9:16 portrait image', () => (
-      <Component
-        alt={portrait.alt}
-        src={portrait.src}
-        width={portrait.width}
-        {...additionalProps}
-      />
+      <Component {...getProps(portrait, includeHeight)} {...additionalProps} />
     ))
     .add('1:1 square image', () => (
-      <Component
-        alt={square.alt}
-        src={square.src}
-        width={square.width}
-        {...additionalProps}
-      />
+      <Component {...getProps(square, includeHeight)} {...additionalProps} />
     ))
     .add('custom ratio image', () => (
-      <Component
-        alt={custom.alt}
-        src={custom.src}
-        width={custom.width}
-        {...additionalProps}
-      />
+      <Component {...getProps(custom, includeHeight)} {...additionalProps} />
     ))
     .add('image with srcset', () => (
       <Component
-        alt={landscape.alt}
-        src={landscape.src}
+        {...getProps(landscape, includeHeight)}
         srcset={landscape.srcset}
-        width={landscape.width}
         {...additionalProps}
       />
     ));
