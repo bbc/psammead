@@ -65,6 +65,16 @@ For example, if your component's main entry-point is `src/foo.jsx`, you should p
 - No JS or CSS lint errors should be present.
 - Your component should be fully accessibility-tested. There's a [test guide for testers](https://bbc-news.github.io/accessibility-news-and-you/accessibility-news-and-testers) and a [checklist for developers](https://bbc-news.github.io/accessibility-news-and-you/accessibility-news-and-developers) as well as guides for [designers](https://bbc-news.github.io/accessibility-news-and-you/accessibility-news-and-designers), [business analysts](https://bbc-news.github.io/accessibility-news-and-you/accessibility-news-and-business-analysts), [product owners](https://bbc-news.github.io/accessibility-news-and-you/accessibility-news-and-product-owners) and [project managers](https://bbc-news.github.io/accessibility-news-and-you/accessibility-news-and-project-managers).
 
+**Accessibility Swarms**
+
+When you add a component to this repository, you should carry out an Accessibility Swarm, ideally including team members from multiple disciplines and using [the Assistive Technology we support](./README.md#assistive-technology-support).
+
+For changes to an existing component, a shorter swarm with fewer people should be conducted.
+
+[Here are detailed steps on how to run accessibility swarms.](https://bbc-news.github.io/accessibility-news-and-you/accessibility-swarms)
+
+As a result of the swarm, you may find some issues with your implementation. These should be documented and where relevant, [GitHub Issues](https://github.com/BBC-News/psammead/issues/new?template=bug_report.md) should be raised.
+
 **CHANGELOG**
 
 The changelog should follow the following convention:
@@ -139,7 +149,8 @@ If you wish to exclude one or more sections of this template, we advise you do s
 ### After merge
 
 After merging a pull request into `latest`, please follow these steps to ensure that the changes are published to npm and to the Psammead Storybook https://bbc-news.github.io/psammead.
+
 - Publish Packages  
-  To make your changes available on the npm registry please publish any package changes. The instructions to do this can be found in the the [repository README](https://github.com/BBC-News/psammead#rocket-publishing-packages) 
+  To make your changes available on the npm registry please publish any package changes. The instructions to do this can be found in the the [repository README](https://github.com/BBC-News/psammead#rocket-publishing-packages)
 - Publish Storybook  
   When changes are made to a component its important to ensure the changes are visible on the hosted storybook. To do this please follow the instructions on the [repository README](https://github.com/BBC-News/psammead#deploying-storybook)
