@@ -1,6 +1,6 @@
 import React from 'react';
 import { shouldMatchSnapshot } from '@bbc/psammead-test-helpers';
-import { expect } from 'chai';
+import chai from 'chai';
 import Brand from './index';
 
 describe('Brand', () => {
@@ -10,7 +10,6 @@ describe('Brand', () => {
   );
 
   it('chai foo', () => {
-    const arr = [];
-    expect(arr).to.have.lengthOf(0);
+    chai.expect([]).to.have.lengthOf(0);
   });
 });
