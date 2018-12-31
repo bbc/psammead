@@ -57,7 +57,7 @@ export const ampStylesScripts = story => (
     <Helmet htmlAttributes={{ amp: '' }}>
       <meta charset="utf-8" />
       <meta name="viewport" content="width=device-width,minimum-scale=1" />
-      <link rel="canonical" href="http://foobar.com" />
+      <link rel="canonical" href="https://bbc.com" />
       <style amp-boilerplate="">{AMP_SCRIPT}</style>
       <noscript>{`<style amp-boilerplate="">${AMP_NO_SCRIPT}</style>`}</noscript>
       <script async src="https://cdn.ampproject.org/v0.js" />
