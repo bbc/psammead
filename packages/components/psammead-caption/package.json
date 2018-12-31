@@ -2,6 +2,9 @@
   "name": "@bbc/psammead-caption",
   "version": "0.1.2",
   "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"test has run!\""
+  },
   "description": "React styled components for a Caption",
   "repository": {
     "type": "git",
