@@ -9,7 +9,7 @@
     "force-package-lock-https": "find . -type f -name \"package-lock.json\" | grep -v node_modules | xargs -I % sh -c 'echo \"Replacing http->https in %\"; sed -i \"\" -e \"s/http:\\/\\//https:\\/\\//g\" %'",
     "postinstall": "lerna bootstrap --ci --hoist",
     "postshrinkwrap": "if test -z $CI; then \n npm run force-package-lock-https \n fi",
-    "prepublish": "npm run build",
+    "prepare": "npm run build",
     "publish": "node scripts/publish",
     "storybook": "NODE_ENV=development start-storybook -p 8080 -c .storybook",
     "test": "npm run test:lint && npm run test:lint:css && npm run test:unit",
