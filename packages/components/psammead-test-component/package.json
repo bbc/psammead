@@ -1,14 +1,7 @@
 {
   "name": "@bbc/psammead-test-component",
-  "version": "0.1.3",
-  "main": "dist/index.js",
   "scripts": {
     "test": "mocha --require babel-register"
-  },
-  "description": "Provides the BBC News logo (as SVG), nested a hardcoded link to https://www.bbc.co.uk/news",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/BBC-News/psammead/tree/latest/packages/components/psammead-brand"
   },
   "author": {
     "name": "Psammead Maintainers",
@@ -18,14 +11,8 @@
   "bugs": {
     "url": "https://github.com/bbc/psammead/issues"
   },
-  "homepage": "https://github.com/BBC-News/psammead/blob/latest/packages/components/psammead-brand/README.md",
   "devDependencies": {
     "chai": "^4.2.0",
     "mocha": "^5.2.0"
-  },
-  "keywords": [
-    "bbc",
-    "brand",
-    "logo"
-  ]
+  }
 }
