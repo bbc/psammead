@@ -1,5 +1,5 @@
 {
-  "name": "@bbc/psammead-test-component",
+  "name": "@bbc/psammead-test",
   "scripts": {
     "test": "mocha --require babel-register"
   },
