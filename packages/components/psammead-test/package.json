@@ -3,14 +3,6 @@
   "scripts": {
     "test": "mocha --require babel-register"
   },
-  "author": {
-    "name": "Psammead Maintainers",
-    "email": "PsammeadMaintainers@bbc.co.uk"
-  },
-  "license": "Apache-2.0",
-  "bugs": {
-    "url": "https://github.com/bbc/psammead/issues"
-  },
   "devDependencies": {
     "chai": "^4.2.0",
     "mocha": "^5.2.0"
