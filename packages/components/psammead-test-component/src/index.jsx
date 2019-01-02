@@ -1,2 +1,2 @@
-const arr = [];
-export default arr;
+const arr = ['cats', 'mice', 'elephants'];
+module.exports = arr;
