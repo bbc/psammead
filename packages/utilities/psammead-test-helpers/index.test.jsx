@@ -1,10 +1,6 @@
 import * as testHelpers from '.';
 import * as testHelpersFromSrc from './src/index';
 
-/*
-  If you are doing anything than extending this export list it's likely to introduce a breaking change
-*/
-
 const testHelpersExpectedExports = {
   shouldMatchSnapshot: 'function',
   shallowRender: 'function',

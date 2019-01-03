@@ -6,10 +6,6 @@ import * as spacingsFromSrc from './src/spacings';
 import * as breakpointsFromSrc from './src/breakpoints';
 import * as typographyFromSrc from './src/typography';
 
-/* 
-  If you are doing anything than extending these export lists it's likely to introduce a breaking change
-*/
-
 const spacingsExpectedExports = {
   GEL_SPACING: 'string',
   GEL_SPACING_DBL: 'string',

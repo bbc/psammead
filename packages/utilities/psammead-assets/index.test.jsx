@@ -4,10 +4,6 @@ import * as svgsFromSrc from './src/svgs';
 import * as ampBoilerplate from './amp-boilerplate';
 import * as ampBoilerplateFromSrc from './src/amp-boilerplate';
 
-/*
-  If you are doing anything than extending these export lists it's likely to introduce a breaking change
-*/
-
 const ampBoilerplateExpectedExports = {
   AMP_SCRIPT: 'string',
   AMP_NO_SCRIPT: 'string',
