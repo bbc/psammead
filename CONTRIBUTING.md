@@ -65,6 +65,18 @@ For example, if your component's main entry-point is `src/foo.jsx`, you should p
 - No JS or CSS lint errors should be present.
 - Your component should be fully accessibility-tested. There's a [test guide for testers](https://bbc-news.github.io/accessibility-news-and-you/accessibility-news-and-testers) and a [checklist for developers](https://bbc-news.github.io/accessibility-news-and-you/accessibility-news-and-developers) as well as guides for [designers](https://bbc-news.github.io/accessibility-news-and-you/accessibility-news-and-designers), [business analysts](https://bbc-news.github.io/accessibility-news-and-you/accessibility-news-and-business-analysts), [product owners](https://bbc-news.github.io/accessibility-news-and-you/accessibility-news-and-product-owners) and [project managers](https://bbc-news.github.io/accessibility-news-and-you/accessibility-news-and-project-managers).
 
+
+***Creating custom tests***
+By default, Psammead's `npm run test` runs unit tests through Jest. However, so long as adequate test coverage exists, it's not mandatory to test a component with Jest.
+
+Custom tests must adhere to the following conventions: 
+
+* The component's test script must be named `test`. This ensures the test script will be run by Psammead's root level `npm test` command. 
+* The component's testing framework and/or assertion libraries must be installed as devDependencies in the component's `package.json`.
+* Test files cannot be prefixed with ".test", as Psammead's Jest configuration looks for files ending in `.test.jsx` and `.test.js`. 
+
+For a sample usage of custom Mocha/Chai tests with Psammead, please refer to [#247](https://github.com/BBC-News/psammead/pull/247).
+
 **Accessibility Swarms**
 
 When you add a component to this repository, you should carry out an Accessibility Swarm, ideally including team members from multiple disciplines and using [the Assistive Technology we support](./README.md#assistive-technology-support).
