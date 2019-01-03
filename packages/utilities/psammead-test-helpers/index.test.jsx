@@ -103,14 +103,4 @@ describe('Psammead test helpers', () => {
       testHelpersFromSrc.testUtilityPackages,
     );
   });
-
-  it('should error if file definition is missing in the expectation', () => {
-    ensureErrorWhenMissingFileDefinition(testHelpers.testUtilityPackages);
-  });
-
-  it('should error if file definition is missing in the expectation when coming from /src', () => {
-    ensureErrorWhenMissingFileDefinition(
-      testHelpersFromSrc.testUtilityPackages,
-    );
-  });
 });
