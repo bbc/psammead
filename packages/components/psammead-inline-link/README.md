@@ -6,9 +6,13 @@ The `@bbc/psammead-inline-link` package exports a single Inline Link component. 
 
 ## Installation
 
-```
-npm install @bbc/psammead-inline-link --save
-```
+`npm install @bbc/psammead-inline-link`
+
+## Props
+
+| Argument      | Type    | Required | Default | Example         |
+|---------------|---------|----------|---------|-----------------|
+| href          | String  | Yes      | N/A     | `www.bbc.co.uk` |
 
 ## Usage
 
@@ -19,10 +23,6 @@ const WrappingComponent = () => (
   <InlineLink href="https://www.bbc.com/news">Text here</InlineLink>
 );
 ```
-
-## When to use this component
-
-This component can be used at any point on a page.
 
 We have not included any typography styles inside this component. This is so it is reusable in multiple contexts. For example, you can use `InlineLink` inside our existing `psammead-paragraph` for body copy and `psammead-headings` for headlines and subheadings (`h1`s and `h2`s).
 
@@ -69,7 +69,13 @@ const WrapperComponent = () => (
 );
 ```
 
-## Accessibility notes
+### When to use this component
+
+This component can be used at any point on a page.
+
+<!-- ### When not to use this component -->
+
+### Accessibility notes
 
 Since this is just a `<a>` tag with associated styles, when you use this component, it has the same semantic meaning as a regular anchor element.
 
