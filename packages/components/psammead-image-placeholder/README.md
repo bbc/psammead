@@ -2,15 +2,45 @@
 
 ## Description
 
-Psammead Image Placeholder is a `div` with a base-64 encoded SVG background image that depicts the BBC logo. The component accepts a ratio as a prop. In the Psammead component library, Image Placeholder is used within the [psammead-figure](https://github.com/BBC-News/psammead/tree/latest/packages/components/psammead-figure) component.
+The `psammead-image-placeholder` component is a `div` with a base-64 encoded SVG background image that depicts the BBC logo. The component accepts a ratio as a prop. In the Psammead component library, Image Placeholder is used within the [psammead-figure](https://github.com/BBC-News/psammead/tree/latest/packages/components/psammead-figure) component.
 
-## When to use this component
+## Installation
+
+`npm install @bbc/psammead-image-placeholder`
+
+## Props
+
+| Argument  | Type                                   | Required | Default | Example         |
+|-----------|----------------------------------------|----------|---------|-----------------|
+| Ratio     | Number, ratio between height and width | Yes      | N/A     | 65.625          |
+
+## Usage
+
+The ImagePlaceholder component is expected to contain an image as a child element.
+
+```jsx
+import ImagePlaceholder from '@bbc/psammead-image-placeholder';
+
+const WrapperComponent = ({
+  ratio,
+}) => (
+  <ImagePlaceholder ratio={ratio}>
+    <img src="http://some-image.url">
+  </ImagePlaceholder>
+);
+```
+
+### When to use this component
 
 Psammead Image Placeholder is designed to appear as a temporary stand-in to be replaced by an actual image, for example in the case of lazy loading. 
 
-## Accessibility notes
+<!-- ### When not to use this component -->
+
+### Accessibility notes
 
 As a `div` with a background image, Psammead Image Placeholder is a presentational element without semantic meaning. As such it does not need to meet colour contrast requirements.
+
+<!-- ## Roadmap -->
 
 ## Contributing
 
