@@ -3,7 +3,7 @@
 exports[`InlineLink should render correctly 1`] = `
 .c0 {
   color: #0F556C;
-  padding: 2px;
+  padding: 0 2px;
   border-bottom: 1px solid #0F556C;
   -webkit-text-decoration: none;
   text-decoration: none;
