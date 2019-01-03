@@ -12,14 +12,14 @@ The Headings are a set of two components, `Headline` and `SubHeading`. They use 
 
 | Argument  | Type                | Required | Example         |
 |-----------|---------------------|----------|-----------------|
-| No props. |
+| No props. |                     |          |                 |
 
 ## Usage
 
 ```jsx
 import { Headline, SubHeading } from '@bbc/psammead-headings';
 
-const Wrapper = (src, alt, width, height) => (
+const Wrapper = () => (
     <Fragment>
         <Heading>Some headline</Heading>
         <SubHeading>Some subheadline</SubHeading>
@@ -27,7 +27,13 @@ const Wrapper = (src, alt, width, height) => (
 );
 ```
 
-All `SubHeading` components can be used as page anchors, with their ID being generated from their text, with any whitespace replaced with hyphens.
+All `SubHeading` components can be used as page anchors, with their ID being generated from their text, with any whitespace replaced with hyphens. To take the above usage as an example:
+
+```
+<SubHeading>Some subheadline</SubHeading>
+```
+
+This usage will allow for the page anchor: `www.bbc.com/news/articles/articleID#Some-subheadline`
 
 ### When to use this component
 

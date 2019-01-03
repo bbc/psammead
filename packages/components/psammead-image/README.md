@@ -11,7 +11,7 @@ The `psammead-image` component is a styled `img` element.
 | Argument  | Type          | Required | Example                      |
 |-----------|---------------|----------|------------------------------|
 | alt       | String        | Yes      | "A description of the image" |
-| height    | Number/String | No*       | 400                          |
+| height    | Number/String | No*      | 400                          |
 | src       | String        | Yes      | "https://ichef.bbci.co.uk/news/640/cpsprodpb/A933/production/_101651334_bouquet_pa.jpg" |
 | width     | Number/String | Yes      | 600                          |
 

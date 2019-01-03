@@ -14,7 +14,7 @@ It uses `@bbc/psammead-styles` for colours and font family and `@bbc/gel-foundat
 
 | Argument  | Type                | Required | Example         |
 |-----------|---------------------|----------|-----------------|
-| No props. |
+| No props. |                     |          |                 |
 
 ## Usage
 

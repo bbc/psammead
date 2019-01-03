@@ -12,7 +12,7 @@ Displays a source attribution in block capitals in the bottom-right of the paren
 
 | Argument  | Type                | Required | Example         |
 |-----------|---------------------|----------|-----------------|
-| No props. |
+| No props. |                     |          |                 |
 
 ## Usage
 

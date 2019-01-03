@@ -12,7 +12,7 @@ The `psammead-figure` component is a styled `<figure>` element. It has the same 
 
 | Argument  | Type                | Required | Example         |
 |-----------|---------------------|----------|-----------------|
-| No props. |
+| No props. |                     |          |                 |
 
 ## Usage
 

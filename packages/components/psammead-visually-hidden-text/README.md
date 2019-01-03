@@ -12,7 +12,7 @@ Adds non-visible text to the page, to be utilised by screen-readers and other as
 
 | Argument  | Type                | Required | Example         |
 |-----------|---------------------|----------|-----------------|
-| No props. |
+| No props. |                     |          |                 |
 
 ## Usage
 

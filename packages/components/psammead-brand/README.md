@@ -12,7 +12,7 @@ The `Brand` component provides the BBC News logo (as SVG), nested inside a style
 
 | Argument  | Type                | Required | Example         |
 |-----------|---------------------|----------|-----------------|
-| No props. |
+| No props. |                     |          |                 |
 
 ## Usage
 

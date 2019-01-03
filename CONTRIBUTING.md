@@ -114,7 +114,7 @@ The `README.md` should follow this template:
 | prop-name | description of type | Yes/No   | `example input` |
 
 ## Usage
-(An code block containing an example usage of the component, including importing)
+(A code block containing an example usage of the component, including importing)
 
 ## Accessibility notes
 (ensuring they make sense to non-technical audiences)

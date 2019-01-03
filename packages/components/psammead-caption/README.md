@@ -12,11 +12,11 @@ The `psammead-caption` component is a styled `figcaption` element.
 
 | Argument  | Type                | Required | Example         |
 |-----------|---------------------|----------|-----------------|
-| No props. |
+| No props. |                     |          |                 |
 
 ## Usage
 
-`psammead-caption` can be used together with the [`psammead-figure`](https://github.com/BBC-News/psammead/tree/latest/packages/components/psammead-figure) and [`psammead-visually-hidden-text`](https://github.com/BBC-News/psammead/tree/latest/packages/components/psammead-visually-hidden-text) in this way. This visually hidden text is to give context to users of Assistive Technology.
+`psammead-caption` can be used together with the [`psammead-figure`](https://github.com/BBC-News/psammead/tree/latest/packages/components/psammead-figure) and [`psammead-visually-hidden-text`](https://github.com/BBC-News/psammead/tree/latest/packages/components/psammead-visually-hidden-text) components in this way. This visually hidden text is to give context to users of Assistive Technology.
 
 ```jsx
 import Caption from '@bbc/psammead-caption';
@@ -30,7 +30,7 @@ const Wrapper = (captionText) => (
       <VisuallyHiddenText>Image caption, </VisuallyHiddenText>
       {captionText}
     </Caption>
-  <Figure>
+  </Figure>
 );
 ```
 
