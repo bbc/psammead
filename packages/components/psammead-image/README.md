@@ -8,12 +8,12 @@ The `psammead-image` component is a styled `img` element.
 
 ## Props
 
-| Argument  | Type          | Required | Example                      |
-|-----------|---------------|----------|------------------------------|
-| alt       | String        | Yes      | "A description of the image" |
-| height    | Number/String | No*      | 400                          |
-| src       | String        | Yes      | "https://ichef.bbci.co.uk/news/640/cpsprodpb/A933/production/_101651334_bouquet_pa.jpg" |
-| width     | Number/String | Yes      | 600                          |
+| Argument  | Type          | Required | Default | Example                      |
+|-----------|---------------|----------|---------|------------------------------|
+| alt       | String        | Yes      | N/A     | "A description of the image" |
+| height    | Number/String | No*      | None    | 400                          |
+| src       | String        | Yes      | N/A     | "https://ichef.bbci.co.uk/news/640/cpsprodpb/A933/production/_101651334_bouquet_pa.jpg" |
+| width     | Number/String | Yes      | N/A     | 600                          |
 
 *The `height` prop is optional, since in some cases to preserve the image ratio we only want to specify the width and let the browser scale the image accordingly. However, in other cases the height might need to be specified.
 

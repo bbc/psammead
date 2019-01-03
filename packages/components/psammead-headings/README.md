@@ -10,9 +10,9 @@ The Headings are a set of two components, `Headline` and `SubHeading`. They use 
 
 ## Props
 
-| Argument  | Type                | Required | Example         |
-|-----------|---------------------|----------|-----------------|
-| No props. |                     |          |                 |
+| Argument  | Type                | Required | Default | Example         |
+|-----------|---------------------|----------|---------|-----------------|
+| No props. |                     |          |         |                 |
 
 ## Usage
 

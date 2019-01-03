@@ -10,9 +10,9 @@ The `@bbc/psammead-inline-link` package exports a single Inline Link component. 
 
 ## Props
 
-| Argument      | Type    | Required | Example         |
-|---------------|---------|----------|-----------------|
-| href          | String  | Yes      | `www.bbc.co.uk` |
+| Argument      | Type    | Required | Default | Example         |
+|---------------|---------|----------|---------|-----------------|
+| href          | String  | Yes      | N/A     | `www.bbc.co.uk` |
 
 ## Usage
 

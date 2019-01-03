@@ -12,9 +12,9 @@ It uses `@bbc/psammead-styles` for colours and font family and `@bbc/gel-foundat
 
 ## Props
 
-| Argument  | Type                | Required | Example         |
-|-----------|---------------------|----------|-----------------|
-| No props. |                     |          |                 |
+| Argument  | Type                | Required | Default | Example         |
+|-----------|---------------------|----------|---------|-----------------|
+| No props. |                     |          |         |                 |
 
 ## Usage
 

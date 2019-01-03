@@ -10,9 +10,9 @@ The `psammead-caption` component is a styled `figcaption` element.
 
 ## Props
 
-| Argument  | Type                | Required | Example         |
-|-----------|---------------------|----------|-----------------|
-| No props. |                     |          |                 |
+| Argument  | Type                | Required | Default | Example         |
+|-----------|---------------------|----------|---------|-----------------|
+| No props. |                     |          |         |                 |
 
 ## Usage
 

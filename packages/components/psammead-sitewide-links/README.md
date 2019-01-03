@@ -12,11 +12,11 @@ npm install @bbc/psammead-sitewide-links --save
 
 ## Props
 
-| Argument      | Type                  | Required | Example                                           |
-|---------------|-----------------------|----------|---------------------------------------------------|
-| links         | Array of Link objects | Yes      | `[{href:'https://www.bbc.com', text: 'The BBC'}]` |
-| copyrightText | String                | Yes      | `'Copyright BBC News'`                            |
-| externalLink  | Link object           | Yes      | `{href:'https://www.bbc.com', text: 'The BBC'}`   |
+| Argument      | Type                  | Required | Default | Example                                           |
+|---------------|-----------------------|----------|---------|---------------------------------------------------|
+| links         | Array of Link objects | Yes      | N/A     | `[{href:'https://www.bbc.com', text: 'The BBC'}]` |
+| copyrightText | String                | Yes      | N/A     | `'Copyright BBC News'`                            |
+| externalLink  | Link object           | Yes      | N/A     | `{href:'https://www.bbc.com', text: 'The BBC'}`   |
 
 ## Usage
 

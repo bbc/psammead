@@ -10,9 +10,9 @@ Displays a source attribution in block capitals in the bottom-right of the paren
 
 ## Props
 
-| Argument  | Type                | Required | Example         |
-|-----------|---------------------|----------|-----------------|
-| No props. |                     |          |                 |
+| Argument  | Type                | Required | Default | Example         |
+|-----------|---------------------|----------|---------|-----------------|
+| No props. |                     |          |         |                 |
 
 ## Usage
 

@@ -109,9 +109,9 @@ The `README.md` should follow this template:
 ## Props
 (a table of all the component's props, following the template below)
 
-| Argument  | Type                | Required | Example         |
-|-----------|---------------------|----------|-----------------|
-| prop-name | description of type | Yes/No   | `example input` |
+| Argument  | Type                | Required | Default | Example         |
+|-----------|---------------------|----------|---------|-----------------|
+| prop-name | description of type | Yes/No   | `value` | `example input` |
 
 ## Usage
 (A code block containing an example usage of the component, including importing)

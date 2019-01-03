@@ -10,9 +10,9 @@ The `psammead-image-placeholder` component is a `div` with a base-64 encoded SVG
 
 ## Props
 
-| Argument  | Type                                   | Required | Example         |
-|-----------|----------------------------------------|----------|-----------------|
-| Ratio     | Number, ratio between height and width | Yes      | 65.625          |
+| Argument  | Type                                   | Required | Default | Example         |
+|-----------|----------------------------------------|----------|---------|-----------------|
+| Ratio     | Number, ratio between height and width | Yes      | N/A     | 65.625          |
 
 ## Usage
 
