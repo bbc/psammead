@@ -16,24 +16,17 @@ The `psammead-image-placeholder` component is a `div` with a base-64 encoded SVG
 
 ## Usage
 
-Commonly used alongside [`psammead-figure`](https://github.com/BBC-News/psammead/tree/latest/packages/components/psammead-figure) and [`psammead-image`](https://github.com/BBC-News/psammead/tree/latest/packages/components/psammead-image).
+The ImagePlaceholder component is expected to contain an image as a child element.
 
 ```jsx
-import Figure from '@bbc/psammead-figure';
-import Image from '@bbc/psammead-image';
 import ImagePlaceholder from '@bbc/psammead-image-placeholder';
 
 const WrapperComponent = ({
-  alt,
   ratio,
-  src,
-  width,
 }) => (
-  <Figure>
-    <ImagePlaceholder ratio={ratio}>
-      <Image alt={alt} src={src} width={width} />
-    </ImagePlaceholder>
-  </Figure>
+  <ImagePlaceholder ratio={ratio}>
+    <img src="http://some-image.url">
+  </ImagePlaceholder>
 );
 ```
 

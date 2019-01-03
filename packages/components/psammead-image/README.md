@@ -27,27 +27,6 @@ const Wrapper = (src, alt, width, height) => (
 );
 ```
 
-Commonly used alongside [`psammead-figure`](https://github.com/BBC-News/psammead/tree/latest/packages/components/psammead-figure) and [`psammead-image-placeholder`](https://github.com/BBC-News/psammead/tree/latest/packages/components/psammead-image-placeholder).
-
-```jsx
-import Figure from '@bbc/psammead-figure';
-import Image from '@bbc/psammead-image';
-import ImagePlaceholder from '@bbc/psammead-image-placeholder';
-
-const WrapperComponent = ({
-  alt,
-  ratio,
-  src,
-  width,
-}) => (
-  <Figure>
-    <ImagePlaceholder ratio={ratio}>
-      <Image alt={alt} src={src} width={width} />
-    </ImagePlaceholder>
-  </Figure>
-);
-```
-
 ### When to use this component
 
 This component can be used at any point on a page.
