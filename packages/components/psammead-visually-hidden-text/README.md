@@ -1,8 +1,30 @@
 # psammead-visually-hidden-text &middot; [![Storybook](https://github.com/storybooks/press/blob/master/badges/storybook.svg)](https://bbc-news.github.io/psammead/?selectedKind=VisuallyHiddenText) [![GitHub license](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](https://github.com/BBC-News/psammead/blob/latest/LICENSE) [![npm version](https://img.shields.io/npm/v/@bbc/psammead-visually-hidden-text.svg)](https://www.npmjs.com/package/@bbc/psammead-visually-hidden-text) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/BBC-News/psammead/blob/latest/CONTRIBUTING.md)
 
-### Description
+## Description
 
 Adds non-visible text to the page, to be utilised by screen-readers and other assistive technology.
+
+## Installation
+
+`npm install @bbc/psammead-visually-hidden-text`
+
+## Props
+
+| Argument  | Type                | Required | Default | Example         |
+|-----------|---------------------|----------|---------|-----------------|
+| No props. |                     |          |         |                 |
+
+## Usage
+
+```jsx
+import VisuallyHiddenText from '@bbc/psammead-visually-hidden-text';
+
+const WrappingComponent = () => (
+  <VisuallyHiddenText>Some offscreen text</VisuallyHiddenText>
+);
+```
+
+Please bear in mind that if CSS is disabled, any `children` will be shown inline. Testing your usage of the component should include disabling page styling.
 
 ### When to use this component
 
@@ -16,9 +38,9 @@ Avoid using this component with text that would cause unnecessary repetition. Fo
 
 Similarly, when adding hidden text that will occur partway through an article, avoid using phrases that may imply that the main body is over. Suddenly hearing a phrase like "Read more on [subject]" may suggest to users that they have finished the article. To mitigate this, you may wish to wrap the content in an [`aside` ARIA landmark](https://www.w3.org/TR/2017/NOTE-wai-aria-practices-1.1-20171214/examples/landmarks/complementary.html) or include a ["skip link"](https://www.w3.org/TR/WCAG20-TECHS/G1.html), giving users the option to skip back to the main body before the assistive technology reads the full content of the interjection.
 
-### Additional notes
+<!-- ### Accessibility notes -->
 
-Please bear in mind that if CSS is disabled, the text will be shown inline. Testing your usage of the component should include disabling page styling.
+<!-- ## Roadmap -->
 
 ## Contributing
 
