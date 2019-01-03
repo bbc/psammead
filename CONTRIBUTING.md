@@ -70,6 +70,7 @@ For example, if your component's main entry-point is `src/foo.jsx`, you should p
 By default, Psammead's `npm run test` runs unit tests through Jest. However, so long as adequate test coverage exists, it's not mandatory to test a component with Jest.
 
 Custom tests must adhere to the following conventions: 
+
 * The component's test script must be named `test`. This ensures the test script will be run by Psammead's root level `npm test` command. 
 * The component's testing framework and/or assertion libraries must be installed as devDependencies in the component's `package.json`.
 * Test files cannot be prefixed with ".test", as Psammead's Jest configuration looks for files ending in `.test.jsx` and `.test.js`. 
