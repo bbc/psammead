@@ -75,7 +75,7 @@ Custom tests must adhere to the following conventions:
 * The component's testing framework and/or assertion libraries must be installed as devDependencies in the component's `package.json`.
 * Test files cannot be prefixed with ".test", as Psammead's Jest configuration looks for files ending in `.test.jsx` and `.test.js`. 
 
-For a sample usage of custom Mocha/Chai tests with Psammead, please refer to [PR 247](https://github.com/BBC-News/psammead/pull/247).
+For a sample usage of custom Mocha/Chai tests with Psammead, please refer to [#247](https://github.com/BBC-News/psammead/pull/247).
 
 **Accessibility Swarms**
 
