@@ -85,8 +85,8 @@ export const testUtilityPackages = (
     checkKeysExistInBothObjects(
       actualExports[utilityName],
       expectedExports[utilityName],
-      `the actual export for '${packageName}/${utilityName}.js'`,
-      `the expected export for '${packageName}/${utilityName}.js'`,
+      `the actual export for '${packageName}/${utilityName}'`,
+      `the expected export for '${packageName}/${utilityName}'`,
     );
 
     checkTypesOfExports(

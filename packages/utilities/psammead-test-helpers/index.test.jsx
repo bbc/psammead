@@ -27,7 +27,7 @@ const ensureErrorWhenMissingExport = testHelperMethod => {
   expect(() => {
     testHelperMethod(actualWithAll, expectedMissing, 'testing');
   }).toThrowError(
-    "Missing value 'foo' in the expected export for 'testing/utility.js'.",
+    "Missing value 'foo' in the expected export for 'testing/utility'.",
   );
 
   // missing export in the actual
@@ -37,7 +37,7 @@ const ensureErrorWhenMissingExport = testHelperMethod => {
   expect(() => {
     testHelperMethod(actualMissing, expectedWithAll, 'testing');
   }).toThrowError(
-    "Missing value 'bar' in the actual export for 'testing/utility.js'.",
+    "Missing value 'bar' in the actual export for 'testing/utility'.",
   );
 };
 
