@@ -1,4 +1,4 @@
-# psammead-paragraph &middot; [![Storybook](https://github.com/storybooks/press/blob/master/badges/storybook.svg)](https://bbc-news.github.io/psammead/?selectedKind=Paragraph) [![GitHub license](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](https://github.com/BBC-News/psammead/blob/latest/LICENSE) [![npm version](https://img.shields.io/npm/v/@bbc/psammead-paragraph.svg)](https://www.npmjs.com/package/@bbc/psammead-paragraph) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/BBC-News/psammead/blob/latest/CONTRIBUTING.md)
+# psammead-paragraph &middot; [![Storybook](https://raw.githubusercontent.com/storybooks/brand/master/badges/storybook.svg?sanitize=true)](https://bbc-news.github.io/psammead/?selectedKind=Paragraph) [![GitHub license](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](https://github.com/BBC-News/psammead/blob/latest/LICENSE) [![npm version](https://img.shields.io/npm/v/@bbc/psammead-paragraph.svg)](https://www.npmjs.com/package/@bbc/psammead-paragraph) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/BBC-News/psammead/blob/latest/CONTRIBUTING.md)
 
 ## Description
 
@@ -8,9 +8,13 @@ It uses `@bbc/psammead-styles` for colours and font family and `@bbc/gel-foundat
 
 ## Installation
 
-```
-npm install @bbc/psammead-paragraph --save
-```
+`npm install @bbc/psammead-paragraph`
+
+## Props
+
+| Argument  | Type                | Required | Default | Example         |
+|-----------|---------------------|----------|---------|-----------------|
+| No props. |                     |          |         |                 |
 
 ## Usage
 
@@ -22,13 +26,17 @@ const WrappingComponent = () => (
 );
 ```
 
-## When to use this component
+### When to use this component
 
 This component can be used at any point on a page.
 
-## Accessibility notes
+<!-- ### When not to use this component -->
+
+### Accessibility notes
 
 Since this is just a `<p>` tag with associated styles, when you use this component, it has the same semantic meaning as a regular paragraph element.
+
+<!-- ## Roadmap -->
 
 ## Contributing
 

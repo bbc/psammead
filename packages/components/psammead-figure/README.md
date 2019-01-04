@@ -1,12 +1,20 @@
-# psammead-figure &middot; [![Storybook](https://github.com/storybooks/press/blob/master/badges/storybook.svg)](https://bbc-news.github.io/psammead/?selectedKind=Figure) [![GitHub license](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](https://github.com/BBC-News/psammead/blob/latest/LICENSE) [![npm version](https://img.shields.io/npm/v/@bbc/psammead-figure.svg)](https://www.npmjs.com/package/@bbc/psammead-figure) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/BBC-News/psammead/blob/latest/CONTRIBUTING.md)
+# psammead-figure &middot; [![Storybook](https://raw.githubusercontent.com/storybooks/brand/master/badges/storybook.svg?sanitize=true)](https://bbc-news.github.io/psammead/?selectedKind=Figure) [![GitHub license](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](https://github.com/BBC-News/psammead/blob/latest/LICENSE) [![npm version](https://img.shields.io/npm/v/@bbc/psammead-figure.svg)](https://www.npmjs.com/package/@bbc/psammead-figure) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/BBC-News/psammead/blob/latest/CONTRIBUTING.md)
 
 ## Description
 
-The `psammead-figure` component is a styled `<figure>` element.
+The `psammead-figure` component is a styled `<figure>` element. It has the same semantic meaning -- it should be used to surround images, tables or code snippets.
 
-## When to use this component
+## Installation
 
-Use this component when a `<figure>` element, which represents self-contained content that frequently has a caption, is required. Figures usually wrap an image.
+`npm install @bbc/psammead-figure`
+
+## Props
+
+| Argument  | Type                | Required | Default | Example         |
+|-----------|---------------------|----------|---------|-----------------|
+| No props. |                     |          |         |                 |
+
+## Usage
 
 The following example shows `psammead-figure` wrapping an
 * [psammead-image-placeholder](https://github.com/BBC-News/psammead/tree/latest/packages/components/psammead-image-placeholder), a `<div>` with background image
@@ -34,9 +42,17 @@ const Wrapper = ({ alt, captionText, ratio, src, width }) => (
 );
 ```
 
-## Accessibility notes
+### When to use this component
+
+Use this component when a `<figure>` element, which represents self-contained content that frequently has a caption, is required. Figures usually wrap an image.
+
+<!-- ### When not to use this component -->
+
+### Accessibility notes
 
 The `psammead-figure` is a `<figure>` element with associated styles. When you use this component, it has the same semantic meaning as a regular [figure](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/figure) element. 
+
+<!-- ## Roadmap -->
 
 ## Contributing
 
