@@ -12,10 +12,11 @@
     "install:packages": "lerna exec -- npm install",
     "postinstall": "npm run ci:packages",
     "postshrinkwrap": "if test -z $CI; then \n npm run force-package-lock-https \n fi",
-    "prepublish": "npm run build",
+    "prepare": "npm run build",
     "publish": "node scripts/publish",
     "storybook": "npm run clear_styled_components && NODE_ENV=development start-storybook -p 8080 -c .storybook",
-    "test": "npm run test:lint && npm run test:lint:css && npm run test:unit",
+    "test": "npm run test:lint && npm run test:lint:css && npm run test:unit && npm run test:packages",
+    "test:packages": "lerna run test",
     "test:lint": "eslint --ext .js,jsx,json ./packages ./scripts",
     "test:lint:css": "stylelint 'packages/**/*.js' 'packages/**/*.jsx' 'scripts/**/*.js'",
     "test:unit": "jest --verbose --coverage"
@@ -95,10 +96,7 @@
       "!**/.eslintrc.js",
       "!**/dist/**"
     ],
-    "testMatch": [
-      "**/__tests__/**/*.js?(x)",
-      "**/*.test.{js,jsx}"
-    ]
+    "testMatch": ["**/*.test.{js,jsx}"]
   },
   "spec": {
     "prune": false,

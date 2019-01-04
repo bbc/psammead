@@ -2,6 +2,8 @@
 
 | Version | Description |
 |---------|-------------|
+| 0.1.6   | [PR#245](https://github.com/BBC-News/psammead/pull/245) Ensures documentation consistent across component packages. |
+| 0.1.5   | [PR#231](https://github.com/BBC-News/psammead/pull/231) Add link to Storybook to README |
 | 0.1.4   | [PR#227](https://github.com/BBC-News/psammead/pull/227) Replace @bbc/gel-constants and @bbc/gel-foundations-styled-component with [@bbc/gel-foundations in Psammead](https://github.com/BBC-News/psammead/issues/226). |
 | 0.1.3   | [PR#173](https://github.com/BBC-News/psammead/pull/173) Update PRs welcome link |
 | 0.1.2   | [PR#119](https://github.com/BBC-News/psammead/pull/119) Publish as babel 7 |

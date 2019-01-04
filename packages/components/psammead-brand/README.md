@@ -1,10 +1,24 @@
-# Brand &middot; [![GitHub license](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](https://github.com/BBC-News/psammead/blob/latest/LICENSE) [![npm version](https://img.shields.io/npm/v/@bbc/psammead-brand.svg)](https://www.npmjs.com/package/@bbc/psammead-brand) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/BBC-News/psammead/blob/latest/CONTRIBUTING.md)
+# psammead-brand &middot; [![Storybook](https://raw.githubusercontent.com/storybooks/brand/master/badges/storybook.svg?sanitize=true)](https://bbc-news.github.io/psammead/?selectedKind=Brand) [![GitHub license](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](https://github.com/BBC-News/psammead/blob/latest/LICENSE) [![npm version](https://img.shields.io/npm/v/@bbc/psammead-brand.svg)](https://www.npmjs.com/package/@bbc/psammead-brand) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/BBC-News/psammead/blob/latest/CONTRIBUTING.md)
 
-## Description	
-The `Brand` component provides the BBC News logo (as SVG), nested inside a styled span, link and div. The link is currently hardcoded to "https://www.bbc.co.uk/news". `Brand` takes a `brandName` as a prop. This prop is passed to a [VisuallyHiddenText](../VisuallyHiddenText) component, nested inside Brand. Note that this does not currently affect the branding itself, which always renders as `BBC NEWS`.
+## Description
 
-## Usage 
-```
+The `Brand` component provides the BBC News logo (as SVG), nested inside a styled span, link and div. The link is currently hardcoded to "https://www.bbc.co.uk/news". `Brand` takes a `brandName` as a prop. This prop is passed to a [VisuallyHiddenText](https://github.com/BBC-News/psammead/tree/latest/packages/components/VisuallyHiddenText) component, nested inside Brand. Note that this does not currently affect the branding itself, which always renders as `BBC NEWS`.
+
+## Installation
+
+`npm install @bbc/psammead-brand`
+
+## Props
+
+| Argument  | Type                | Required | Default | Example         |
+|-----------|---------------------|----------|---------|-----------------|
+| No props. |                     |          |         |                 |
+
+## Usage
+
+The typical use-case of this component is at the top of pages in a [`header` element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/header). When this is done it is recommend that the component is wrapped in a [`banner` role](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/Banner_role). However, a `header` with a `banner` role should only appear once on a page.
+
+```jsx
 import Brand from '@bbc/psammead-brand';
 
 const Header = (brandName) => (
@@ -14,12 +28,18 @@ const Header = (brandName) => (
 );
 ```
 
-## When to use this component	
-The `Brand` component is designed to be used where a BBC logo is required as SVG. `Brand` is used in the [BrandContainer](../../containers/Brand), which consumes a service context it passes to the `Brand`. 
+### When to use this component
 
-## Accessibility notes	
+The `Brand` component is designed to be used where a BBC logo is required as SVG. `Brand` is used in the [BrandContainer](https://github.com/BBC-News/simorgh/tree/latest/src/app/containers/Brand), which consumes a service context it passes to the `Brand`. 
+
+<!-- ### When not to use this component -->
+
+### Accessibility notes
+
 * Visually hidden text is provided (e.g. for screen reader users)
 * `Brand` is keyboard-accessible and provides hover and focus styles
+
+<!-- ## Roadmap -->
 
 ## Contributing
 
