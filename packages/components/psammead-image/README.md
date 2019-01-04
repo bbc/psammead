@@ -49,7 +49,9 @@ The `srcset` prop is optional since some projects might not want to use the srcs
 
 If you're to use the `AmpImg` component, [please read the AMP documentation here](https://www.ampproject.org/docs/reference/components/amp-img) for further details.
 
-Importing an Amp Image component, which renders an `<amp-img />` tag.
+The Amp Image component renders an `<amp-img>` tag.
+
+Example:
 
 ```jsx
 import { AmpImg } from '../components/Image';
