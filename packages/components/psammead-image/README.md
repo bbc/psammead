@@ -8,16 +8,7 @@ There is an alternative AMP Image which can be used. It is a React component ret
 
 ## Installation
 
-## Props
-
-| Argument  | Type          | Required | Default | Example                       |
-|-----------|---------------|----------|---------|-------------------------------|
-| alt       | String        | Yes      | N/A     | "A description of the image"  |
-| height    | Number/String | No*      | None    | 400                           |
-| src       | String        | Yes      | N/A     | "https://bbc.com/300/cat.jpg" |
-| width     | Number/String | Yes      | N/A     | 600                           |
-
-*The `height` prop is optional, since in some cases to preserve the image ratio we only want to specify the width and let the browser scale the image accordingly. However, in other cases the height might need to be specified.
+`npm install @bbc/psammead-headings`
 
 ## Usage
 
