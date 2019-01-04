@@ -53,7 +53,7 @@ The Amp Image component renders an `<amp-img>` tag.
 Example:
 
 ```jsx
-import { AmpImg } from '../components/Image';
+import { AmpImg } from '@bbc/psammead-image';
 
 const WrappingContainer = ({ alt, src, height, width }) => (
   <AmpImg
