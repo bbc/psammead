@@ -45,14 +45,14 @@ const GlobalStyle = createGlobalStyle`
   }
 `;
 
-export const canonicalStyles = story => (
+addDecorator(story => (
   <Fragment>
     <GlobalStyle />
     {story()}
   </Fragment>
-);
+));
 
-export const ampStylesScripts = story => (
+export const ampDecorator  = story => (
   <Fragment>
     <Helmet htmlAttributes={{ amp: '' }}>
       <meta charset="utf-8" />

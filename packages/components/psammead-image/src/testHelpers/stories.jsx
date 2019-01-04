@@ -8,6 +8,7 @@ function getProps(image, includeHeight) {
   const props = {
     alt: image.alt,
     src: image.src,
+    srcset: image.srcset,
     width: image.width,
   };
   props.height = includeHeight ? image.height : null;
@@ -16,11 +17,11 @@ function getProps(image, includeHeight) {
 }
 
 const stories = (
-  styleDecorator,
   Component,
   title,
   includeHeight = false,
   additionalProps = {},
+  styleDecorator = storyFn => storyFn(),
 ) =>
   storiesOf(title, module)
     .addDecorator(withReadme(Readme))
