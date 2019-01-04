@@ -1,16 +1,51 @@
-# psammead-headings &middot; [![Storybook](https://github.com/storybooks/press/blob/master/badges/storybook.svg)](https://bbc-news.github.io/psammead/?selectedKind=Headline) [![GitHub license](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](https://github.com/BBC-News/psammead/blob/latest/LICENSE) [![npm version](https://img.shields.io/npm/v/@bbc/psammead-headings.svg)](https://www.npmjs.com/package/@bbc/psammead-headings) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/BBC-News/psammead/blob/latest/CONTRIBUTING.md)
+# psammead-headings &middot; [![Storybook](https://raw.githubusercontent.com/storybooks/brand/master/badges/storybook.svg?sanitize=true)](https://bbc-news.github.io/psammead/?selectedKind=Headline) [![GitHub license](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](https://github.com/BBC-News/psammead/blob/latest/LICENSE) [![npm version](https://img.shields.io/npm/v/@bbc/psammead-headings.svg)](https://www.npmjs.com/package/@bbc/psammead-headings) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/BBC-News/psammead/blob/latest/CONTRIBUTING.md)
 
 ## Description
 
 The Headings are a set of two components, `Headline` and `SubHeading`. They use a `h1` and `h2` HTML element respectively, with the `Headline` being designed for a single use on the page, with `SubHeading` being aimed at repeated use.
 
-## When to use this component
+## Installation
+
+`npm install @bbc/psammead-headings`
+
+## Props
+
+| Argument  | Type                | Required | Default | Example         |
+|-----------|---------------------|----------|---------|-----------------|
+| No props. |                     |          |         |                 |
+
+## Usage
+
+```jsx
+import { Headline, SubHeading } from '@bbc/psammead-headings';
+
+const Wrapper = () => (
+    <Fragment>
+        <Heading>Some headline</Heading>
+        <SubHeading>Some subheadline</SubHeading>
+    </Fragment>
+);
+```
+
+All `SubHeading` components can be used as page anchors, with their ID being generated from their text, with any whitespace replaced with hyphens. To take the above usage as an example:
+
+```
+<SubHeading>Some subheadline</SubHeading>
+```
+
+This usage will allow for the page anchor: `www.bbc.com/news/articles/articleID#Some-subheadline`
+
+### When to use this component
 
 These components can be used at any point on the page, however the `Headline` is designed to be used once at the top of the page. The `SubHeading` adds an `id` value to the `h2` which can be used as an anchor when referencing content.
 
-## Accessibility notes
+<!-- ### When not to use this component -->
+
+### Accessibility notes
 
 The `SubHeading` component has a tabindex of `-1` so that it works correctly with screen readers when navigated to via a skip link.
+
+<!-- ## Roadmap -->
 
 ## Contributing
 

@@ -65,6 +65,18 @@ For example, if your component's main entry-point is `src/foo.jsx`, you should p
 - No JS or CSS lint errors should be present.
 - Your component should be fully accessibility-tested. There's a [test guide for testers](https://bbc-news.github.io/accessibility-news-and-you/accessibility-news-and-testers) and a [checklist for developers](https://bbc-news.github.io/accessibility-news-and-you/accessibility-news-and-developers) as well as guides for [designers](https://bbc-news.github.io/accessibility-news-and-you/accessibility-news-and-designers), [business analysts](https://bbc-news.github.io/accessibility-news-and-you/accessibility-news-and-business-analysts), [product owners](https://bbc-news.github.io/accessibility-news-and-you/accessibility-news-and-product-owners) and [project managers](https://bbc-news.github.io/accessibility-news-and-you/accessibility-news-and-project-managers).
 
+
+***Creating custom tests***
+By default, Psammead's `npm run test` runs unit tests through Jest. However, so long as adequate test coverage exists, it's not mandatory to test a component with Jest.
+
+Custom tests must adhere to the following conventions: 
+
+* The component's test script must be named `test`. This ensures the test script will be run by Psammead's root level `npm test` command. 
+* The component's testing framework and/or assertion libraries must be installed as devDependencies in the component's `package.json`.
+* Test files cannot be prefixed with ".test", as Psammead's Jest configuration looks for files ending in `.test.jsx` and `.test.js`. 
+
+For a sample usage of custom Mocha/Chai tests with Psammead, please refer to [#247](https://github.com/BBC-News/psammead/pull/247).
+
 **Accessibility Swarms**
 
 When you add a component to this repository, you should carry out an Accessibility Swarm, ideally including team members from multiple disciplines and using [the Assistive Technology we support](./README.md#assistive-technology-support).
@@ -89,24 +101,62 @@ The changelog should follow the following convention:
 
 **README**
 
-The `README.md` should cover the following territory:
+The `README.md` should follow this template:
 
 ```
+# (package name) &middot; (badges)
+
 ## Description
 (high-level summary that will be accessible to product/UX/Test, plus link to Storybook, explain the different cases)
+
 ## When to use this component
 (including where it is currently used)
-## When to not use this component
+
+## When not to use this component
 (if this is not known, can leave the section empty)
+
+## Installation
+`npm install (package-name)`
+
+## Props
+(a table of all the component's props, following the template below)
+
+| Argument  | Type                | Required | Default | Example         |
+|-----------|---------------------|----------|---------|-----------------|
+| prop-name | description of type | Yes/No   | `value` | `example input` |
+
+## Usage
+(A code block containing an example usage of the component, including importing)
+
 ## Accessibility notes
 (ensuring they make sense to non-technical audiences)
+
 ## Roadmap
 (what we have planned for this component)
+
 ## Additional notes
 (link to any relevant ADRs)
+
+## Contributing
+
+Psammead is completely open source. We are grateful for any contributions, whether they be new components, bug fixes or general improvements. Please see our primary contributing guide which can be found at [the root of the Psammead respository](https://github.com/BBC-News/psammead/blob/latest/CONTRIBUTING.md).
+
+### [Code of Conduct](https://github.com/BBC-News/psammead/blob/latest/CODE_OF_CONDUCT.md)
+
+We welcome feedback and help on this work. By participating in this project, you agree to abide by the [code of conduct](https://github.com/BBC-News/psammead/blob/latest/CODE_OF_CONDUCT.md). Please take a moment to read it.
+
+### License
+
+Psammead is [Apache 2.0 licensed](https://github.com/BBC-News/psammead/blob/latest/LICENSE).
 ```
 
-In addition, the `README.md` should also point to Psammead's [CODE_OF_CONDUCT](https://github.com/BBC-News/psammead/blob/latest/CODE_OF_CONDUCT.md), [CONTRIBUTING](https://github.com/BBC-News/psammead/blob/latest/CONTRIBUTING.md) guide, and [LICENSE](https://github.com/BBC-News/psammead/blob/latest/LICENSE).
+When linking to other pages from a component's README, we advise you do so only by absolute URL, and avoid the use of relative paths. Component READMEs are displayed in a variety of places, including NPM and Storybook, and this helps ensure the intended meaning is preserved.
+
+If you wish to exclude one or more sections of this template, we advise you do so by simply commenting out the heading, like so:
+
+```
+<!-- ## Roadmap -->
+```
 
 ### After merge
 
