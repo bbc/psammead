@@ -7,7 +7,9 @@ const customImageUrl = `https://ichef.bbci.co.uk/news/[WIDTH]/cpsprodpb/164BB/pr
 export const landscape = {
   alt: 'Student sitting an exam',
   src: landscapeImageUrl,
-  srcset: sizes.map(size => landscapeImageUrl.replace('[WIDTH]', size)),
+  srcset: sizes
+    .map(size => landscapeImageUrl.replace('[WIDTH]', size))
+    .join(', '),
   width: 1024,
   height: 576,
 };
@@ -16,7 +18,9 @@ export const portrait = {
   alt:
     'Map of the UK displaying Syrian refugees and asylum seekers per 10000 population. Ranges from 0 to 17.',
   src: portraitImageUrl,
-  srcset: sizes.map(size => portraitImageUrl.replace('[WIDTH]', size)),
+  srcset: sizes
+    .map(size => portraitImageUrl.replace('[WIDTH]', size))
+    .join(', '),
   width: 640,
   height: 1138,
 };
@@ -24,7 +28,7 @@ export const portrait = {
 export const square = {
   alt: 'Tracks through the snow',
   src: squareImageUrl,
-  srcset: sizes.map(size => squareImageUrl.replace('[WIDTH]', size)),
+  srcset: sizes.map(size => squareImageUrl.replace('[WIDTH]', size)).join(', '),
   width: 1024,
   height: 1024,
 };
@@ -32,7 +36,7 @@ export const square = {
 export const custom = {
   alt: 'By Elisa Decker, from her series "Sidewalk"',
   src: customImageUrl,
-  srcset: sizes.map(size => customImageUrl.replace('[WIDTH]', size)),
+  srcset: sizes.map(size => customImageUrl.replace('[WIDTH]', size)).join(', '),
   width: 445,
   height: 547,
 };
