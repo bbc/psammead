@@ -26,7 +26,7 @@ There is an alternative AMP Image which can be used. It is a React component ret
 Importing the standard Image component, which renders an `<img />` tag.
 
 ```jsx
-import Image from '../components/Image';
+import Image from '@bbc/psammead-image';
 
 const WrappingContainer = ({ alt, src, height, width }) => (
   <Img alt={alt} src={src} height={height} width={width} />
@@ -77,7 +77,7 @@ const WrappingContainer = ({ alt, src, height, width }) => (
 | `srcset`      | string        | No       |
 | `width`       | number/string | Yes      |
 
-The `attribution` prop is available to pass in strings to include the image source.
+The `attribution` prop is available to pass in strings to include the image source. [For further details, please refer to the `amp-img` attribute docs](https://www.ampproject.org/docs/reference/components/amp-img#attributes).
 The `layout` prop can be one of several, including `responsive`, `fixed`, `intrinsic` etc. We recommend using `responsive` for most use-cases, with `height` and `width` props passed in, so the AMP can use the correct ratio for scaling the image. [For further details, please refer to the AMP docs](https://www.ampproject.org/docs/reference/components/amp-img).
 =======
 ### When to use this component
