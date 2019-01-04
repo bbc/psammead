@@ -10,12 +10,12 @@ There is an alternative AMP Image which can be used. It is a React component ret
 
 ## Props
 
-| Argument  | Type          | Required | Default | Example                      |
-|-----------|---------------|----------|---------|------------------------------|
-| alt       | String        | Yes      | N/A     | "A description of the image" |
-| height    | Number/String | No*      | None    | 400                          |
-| src       | String        | Yes      | N/A     | "https://ichef.bbci.co.uk/news/640/cpsprodpb/A933/production/_101651334_bouquet_pa.jpg" |
-| width     | Number/String | Yes      | N/A     | 600                          |
+| Argument  | Type          | Required | Default | Example                       |
+|-----------|---------------|----------|---------|-------------------------------|
+| alt       | String        | Yes      | N/A     | "A description of the image"  |
+| height    | Number/String | No*      | None    | 400                           |
+| src       | String        | Yes      | N/A     | "https://bbc.com/300/cat.jpg" |
+| width     | Number/String | Yes      | N/A     | 600                           |
 
 *The `height` prop is optional, since in some cases to preserve the image ratio we only want to specify the width and let the browser scale the image accordingly. However, in other cases the height might need to be specified.
 
@@ -33,14 +33,13 @@ const WrappingContainer = ({ alt, src, height, width }) => (
 );
 ```
 
-<<<<<<< HEAD
-| Prop     | Type          | Required |
-| :------- | :------------ | :------- |
-| `alt`    | string        | Yes      |
-| `height` | number/string | No       |
-| `src`    | string        | Yes      |
-| `srcset` | string        | No       |
-| `width`  | number/string | Yes      |
+| Prop          | Type          | Required | Example |
+| :------------ | :------------ | :------- | :------ |
+| `alt`         | string        | Yes      | "A picture of a cat" |
+| `height`      | number/string | Yes      | 450 |
+| `src`         | string        | Yes      | "https://bbc.com/300/cat.jpg" |
+| `srcset`      | string        | No       | "https://bbc.com/300/cat.jpg 300w, https://bbc.com/450/cat.jpg 450w, https://bbc.com/600/cat.jpg 600w" |
+| `width`       | number/string | Yes      | 600 |
 
 The `height` prop is optional, since in some cases to preserve the image ratio we only want to specify the width and let the browser scale the image accordingly. However, in other cases the height might need to be specified.
 The `srcset` prop is optional since some projects might not want to use the srcset attribute on images.
@@ -67,26 +66,25 @@ const WrappingContainer = ({ alt, src, height, width }) => (
 );
 ```
 
-| Prop          | Type          | Required |
-| :------------ | :------------ | :------- |
-| `alt`         | string        | Yes      |
-| `attribution` | string        | Yes      |
-| `height`      | number/string | Yes      |
-| `layout`      | string        | Yes      |
-| `src`         | string        | Yes      |
-| `srcset`      | string        | No       |
-| `width`       | number/string | Yes      |
+| Prop          | Type          | Required | Example |
+| :------------ | :------------ | :------- | :------ |
+| `alt`         | string        | Yes      | "A picture of a cat" |
+| `attribution` | string        | Yes      | "Getty Images" |
+| `height`      | number/string | Yes      | 450 |
+| `layout`      | string        | Yes      | "responsive" |
+| `src`         | string        | Yes      | "https://bbc.com/300/cat.jpg" |
+| `srcset`      | string        | No       | "https://bbc.com/300/cat.jpg 300w, https://bbc.com/450/cat.jpg 450w, https://bbc.com/600/cat.jpg 600w" |
+| `width`       | number/string | Yes      | 600 |
 
 The `attribution` prop is available to pass in strings to include the image source. [For further details, please refer to the `amp-img` attribute docs](https://www.ampproject.org/docs/reference/components/amp-img#attributes).
 The `layout` prop can be one of several, including `responsive`, `fixed`, `intrinsic` etc. We recommend using `responsive` for most use-cases, with `height` and `width` props passed in, so the AMP can use the correct ratio for scaling the image. [For further details, please refer to the AMP docs](https://www.ampproject.org/docs/reference/components/amp-img).
-The `srcset` prop is a string with comma separated string of image URLs with varying sizes. [For further details, please refer to the MDN docs](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img#attr-srcset).
+The `srcset` prop is a string with comma separated string of image URLs with varying sizes. [For further details, please refer to the MDN docs](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img#attr-srcset). 
 =======
 ### When to use this component
 
 This component can be used at any point on a page.
 
 <!-- ### When not to use this component -->
->>>>>>> fc55cdc72f6cc2eb12a646c555925462d71ba857
 
 ### Accessibility notes
 
