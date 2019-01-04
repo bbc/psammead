@@ -12,9 +12,6 @@ const StyledImg = styled.img`
 export const Img = ({ alt, src, srcset, height, width }) => {
   const props = { alt, src, height, width };
 
-  if (height) {
-    props.height = height;
-  }
   if (srcset) {
     props.srcSet = srcset;
   }
