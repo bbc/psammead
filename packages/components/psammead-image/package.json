@@ -1,6 +1,6 @@
 {
   "name": "@bbc/psammead-image",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "main": "dist/index.js",
   "description": "React styled components for an Image",
   "repository": {
