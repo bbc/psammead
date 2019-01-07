@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Paragraph react-testing-library suite runs a snapshot test 1`] = `
+<p
+  class="Paragraph-b81yte-0 ddeghy"
+>
+  This is text in a paragraph.
+</p>
+`;
