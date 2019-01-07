@@ -8,7 +8,7 @@ There is an alternative AMP Image which can be used. It is a React component ret
 
 ## Installation
 
-`npm install @bbc/psammead-headings`
+`npm install @bbc/psammead-image`
 
 ## Usage
 
