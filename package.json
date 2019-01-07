@@ -93,9 +93,7 @@
       "!**/.eslintrc.js",
       "!**/dist/**"
     ],
-    "testMatch": [
-      "**/*.test.{js,jsx}"
-    ]
+    "testMatch": ["**/*.test.{js,jsx}"]
   },
   "spec": {
     "prune": false,
