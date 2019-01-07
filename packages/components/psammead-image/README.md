@@ -6,6 +6,12 @@ The `psammead-image` component has two images available. The default is a styled
 
 There is an alternative AMP Image which can be used. It is a React component returning an `amp-img` element.
 
+### When to use this component
+
+This component can be used at any point on a page.
+
+<!-- ### When not to use this component -->
+
 ## Installation
 
 `npm install @bbc/psammead-image`
@@ -14,7 +20,7 @@ There is an alternative AMP Image which can be used. It is a React component ret
 
 ### Img
 
-Importing the standard Image component, which renders an `<img />` tag.
+Importing the standard Image component renders an `<img />` tag.
 
 ```jsx
 import Image from '@bbc/psammead-image';
@@ -23,17 +29,6 @@ const WrappingContainer = ({ alt, src, height, width }) => (
   <Img alt={alt} src={src} height={height} width={width} />
 );
 ```
-
-| Prop          | Type          | Required | Example |
-| :------------ | :------------ | :------- | :------ |
-| `alt`         | string        | Yes      | "A picture of a cat" |
-| `height`      | number/string | Yes      | 450 |
-| `src`         | string        | Yes      | "https://bbc.com/300/cat.jpg" |
-| `srcset`      | string        | No       | "https://bbc.com/300/cat.jpg 300w, https://bbc.com/450/cat.jpg 450w, https://bbc.com/600/cat.jpg 600w" |
-| `width`       | number/string | Yes      | 600 |
-
-The `height` prop is optional, since in some cases to preserve the image ratio we only want to specify the width and let the browser scale the image accordingly. However, in other cases the height might need to be specified.
-The `srcset` prop is optional since some projects might not want to use the srcset attribute on images.
 
 ### AmpImg
 
@@ -57,25 +52,37 @@ const WrappingContainer = ({ alt, src, height, width }) => (
 );
 ```
 
-| Prop          | Type          | Required | Example |
-| :------------ | :------------ | :------- | :------ |
-| `alt`         | string        | Yes      | "A picture of a cat" |
-| `attribution` | string        | No       | "Getty Images" |
-| `height`      | number/string | Yes      | 450 |
-| `layout`      | string        | Yes      | "responsive" |
-| `src`         | string        | Yes      | "https://bbc.com/300/cat.jpg" |
-| `srcset`      | string        | No       | "https://bbc.com/300/cat.jpg 300w, https://bbc.com/450/cat.jpg 450w, https://bbc.com/600/cat.jpg 600w" |
-| `width`       | number/string | Yes      | 600 |
+## Props
+
+### Img
+
+| Prop          | Type          | Required | Default | Example |
+| :------------ | :------------ | :------- | :------ | :------ |
+| `alt`         | string        | Yes      | -       | "A picture of a cat" |
+| `height`      | number/string | Yes      | null    | 450 |
+| `src`         | string        | Yes      | -       | "https://bbc.com/300/cat.jpg" |
+| `srcset`      | string        | No       | null    | "https://bbc.com/300/cat.jpg 300w, https://bbc.com/450/cat.jpg 450w, https://bbc.com/600/cat.jpg 600w" |
+| `width`       | number/string | Yes      | -       | 600 |
+
+The `height` prop is optional, since in some cases to preserve the image ratio we only want to specify the width and let the browser scale the image accordingly. However, in other cases the height might need to be specified.
+The `srcset` prop is optional since some projects might not want to use the srcset attribute on images.
+
+### AmpImg
+
+| Prop          | Type          | Required | Default | Example |
+| :------------ | :------------ | :------- | :------ | :------ |
+| `alt`         | string        | Yes      | -       | "A picture of a cat" |
+| `attribution` | string        | No       | ''      | "Getty Images" |
+| `height`      | number/string | Yes      | null    | 450 |
+| `layout`      | string        | Yes      | -       | "responsive" |
+| `src`         | string        | Yes      | -       | "https://bbc.com/300/cat.jpg" |
+| `srcset`      | string        | No       | null    | "https://bbc.com/300/cat.jpg 300w, https://bbc.com/450/cat.jpg 450w, https://bbc.com/600/cat.jpg 600w" |
+| `width`       | number/string | Yes      | -       | 600 |
 
 The `attribution` prop is available to pass in strings to include the image source. [For further details, please refer to the `amp-img` attribute docs](https://www.ampproject.org/docs/reference/components/amp-img#attributes).
 The `layout` prop can be one of several, including `responsive`, `fixed`, `intrinsic` etc. We recommend using `responsive` for most use-cases, with `height` and `width` props passed in, so the AMP can use the correct ratio for scaling the image. [For further details, please refer to the AMP docs](https://www.ampproject.org/docs/reference/components/amp-img).
 The `srcset` prop is a string with comma separated string of image URLs with varying sizes. [For further details, please refer to the MDN docs](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img#attr-srcset). 
 
-### When to use this component
-
-This component can be used at any point on a page.
-
-<!-- ### When not to use this component -->
 
 ### Accessibility notes
 
@@ -85,14 +92,16 @@ Some images are purely presentational - in these cases, an `alt` attribute must 
 
 <!-- ## Roadmap -->
 
+<!-- ## Additional notes -->
+
 ## Contributing
 
-Psammead is completely open source. We are grateful for any contributions, whether they be new components, bug fixes or general improvements. Please see our primary contributing guide which can be found at [the root of the Psammead respository](https://github.com/BBC-News/psammead/blob/latest/CONTRIBUTING.md).
+Psammead is completely open source. We are grateful for any contributions, whether they be new components, bug fixes or general improvements. Please see our primary contributing guide which can be found at [the root of the Psammead respository](https://github.com/bbc/psammead/blob/latest/CONTRIBUTING.md).
 
-### [Code of Conduct](https://github.com/BBC-News/psammead/blob/latest/CODE_OF_CONDUCT.md)
+### [Code of Conduct](https://github.com/bbc/psammead/blob/latest/CODE_OF_CONDUCT.md)
 
-We welcome feedback and help on this work. By participating in this project, you agree to abide by the [code of conduct](https://github.com/BBC-News/psammead/blob/latest/CODE_OF_CONDUCT.md). Please take a moment to read it.
+We welcome feedback and help on this work. By participating in this project, you agree to abide by the [code of conduct](https://github.com/bbc/psammead/blob/latest/CODE_OF_CONDUCT.md). Please take a moment to read it.
 
 ### License
 
-Psammead is [Apache 2.0 licensed](https://github.com/BBC-News/psammead/blob/latest/LICENSE).
+Psammead is [Apache 2.0 licensed](https://github.com/bbc/psammead/blob/latest/LICENSE).
