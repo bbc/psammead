@@ -20,7 +20,7 @@ const AmpImg = ({ alt, attribution, layout, src, srcset, height, width }) => {
 
 AmpImg.propTypes = {
   alt: string.isRequired,
-  attribution: string.isRequired,
+  attribution: string,
   layout: string.isRequired,
   src: string.isRequired,
   srcset: string,
@@ -29,6 +29,7 @@ AmpImg.propTypes = {
 };
 
 AmpImg.defaultProps = {
+  attribution: '',
   srcset: null,
 };
 

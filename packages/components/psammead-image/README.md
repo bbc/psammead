@@ -60,7 +60,7 @@ const WrappingContainer = ({ alt, src, height, width }) => (
 | Prop          | Type          | Required | Example |
 | :------------ | :------------ | :------- | :------ |
 | `alt`         | string        | Yes      | "A picture of a cat" |
-| `attribution` | string        | Yes      | "Getty Images" |
+| `attribution` | string        | No       | "Getty Images" |
 | `height`      | number/string | Yes      | 450 |
 | `layout`      | string        | Yes      | "responsive" |
 | `src`         | string        | Yes      | "https://bbc.com/300/cat.jpg" |
