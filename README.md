@@ -10,6 +10,8 @@
 
 </div>
 
+CHECKING JENKINS
+
 Psammead is a [GEL-compliant](https://www.bbc.co.uk/gel/articles/what-is-gel) React component library for the BBC, built on [`styled-components`](https://www.styled-components.com). 
 
  Psammead packages are split into:
