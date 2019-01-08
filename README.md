@@ -27,10 +27,10 @@ git clone git@github.com:bbc-news/psammead.git
 ### :hammer: Setup Local Environment
 
 ```
-cd psammead && npm install
+cd psammead && npm run install:packages
 ```
 
-NB, this automatically runs `npm run install:packages` in a postinstall step for you.
+N.B. When merging branches, the `npm run install:packages` command should be favoured over `npm install`. [More details available here](https://github.com/bbc/psammead/pull/264).
 
 ### :runner: Run tests
 
@@ -124,6 +124,8 @@ Our recommended `.babelrc` config for this is here:
 `"filename": false` This is to prevent the filename from appearing in the generated class name, which would generally be a duplication of the component name.
 
 [See documentation on the Styled Components site](https://www.styled-components.com/docs/tooling#babel-plugin)
+
+**NOTE**: if you run into issues with CSS not being applied to your components, it is likely that there is a duplicate `styled-components` dependency somewhere in your packages. You can try running [`npm dedupe`](https://www.styled-components.com/docs/faqs#duplicated-module-in-node_modules) in most cases, or [`lerna bootstrap --hoist`](https://www.styled-components.com/docs/faqs#usage-with-lerna) in monorepo setups such as Psammead's. Failing that, make sure your application's `styled-components` dependency is the same version as that in Psammead.
 
 ## :bar_chart: Support levels
 
