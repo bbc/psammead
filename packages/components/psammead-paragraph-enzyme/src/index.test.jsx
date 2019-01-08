@@ -2,6 +2,7 @@ import React from 'react';
 import Enzyme from 'enzyme';
 // Enzyme adapter provides compatibility with React 16.x:
 import Adapter from 'enzyme-adapter-react-16';
+import toJson from 'enzyme-to-json';
 import Paragraph from './index';
 
 // configure enzyme to use the adapter you want it to use:
@@ -23,12 +24,12 @@ describe('Mounting, shallow and render tests', () => {
   describe('Paragraph tested with Enzyme shallow render', () => {
     it('should render correctly with no props', () => {
       const component = Enzyme.shallow(<Paragraph />);
-      expect(component).toMatchSnapshot();
+      expect(toJson(component)).toMatchSnapshot();
     });
 
     it('should render correctly with text', () => {
       const component = Enzyme.shallow(p);
-      expect(component).toMatchSnapshot();
+      expect(toJson(component)).toMatchSnapshot();
     });
   });
 
