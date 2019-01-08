@@ -27,10 +27,10 @@ git clone git@github.com:bbc-news/psammead.git
 ### :hammer: Setup Local Environment
 
 ```
-cd psammead && npm install
+cd psammead && npm run install:packages
 ```
 
-NB, this automatically runs `npm run install:packages` in a postinstall step for you.
+N.B. When merging branches, the `npm run install:packages` command should be favoured over `npm install`. [More details available here](https://github.com/bbc/psammead/pull/264).
 
 ### :runner: Run tests
 

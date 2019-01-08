@@ -5,9 +5,10 @@
   "main": "index.js",
   "scripts": {
     "build": "lerna exec --parallel -- babel src -d dist --ignore '**/*.test.jsx,**/*.stories.jsx' --root-mode upward",
+    "ci:packages": "npm ci && lerna bootstrap --ci --hoist --force-local",
     "deploy-storybook": "build-storybook -o storybook_dist && gh-pages -d storybook_dist",
     "force-package-lock-https": "find . -type f -name \"package-lock.json\" | grep -v node_modules | xargs -I % sh -c 'echo \"Replacing http->https in %\"; sed -i \"\" -e \"s/http:\\/\\//https:\\/\\//g\" %'",
-    "postinstall": "lerna bootstrap --ci --hoist --force-local",
+    "install:packages": "npm i && lerna bootstrap --hoist --force-local",
     "postshrinkwrap": "if test -z $CI; then \n npm run force-package-lock-https \n fi",
     "prepare": "npm run build",
     "publish": "node scripts/publish",

@@ -3,7 +3,7 @@ none:
 
 install:
 	npm --version; node --version;
-	npm ci;
+	npm run ci:packages;
 
 code-coverage-before-build:
 	curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter;
