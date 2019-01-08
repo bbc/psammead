@@ -1,5 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+
 exports[`Mounting, shallow and render tests Paragraph tested with Enzyme shallow render should render correctly with no props 1`] = `
 <StyledComponent
   forwardedComponent={
