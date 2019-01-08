@@ -1,6 +1,6 @@
 {
   "name": "@bbc/psammead-image-placeholder",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "main": "dist/index.js",
   "description": "Provides a 'BBC' image placeholder",
   "repository": {
@@ -22,7 +22,7 @@
     "styled-components": "^4.1.2"
   },
   "devDependencies": {
-    "@bbc/psammead-test-helpers": "^0.1.0",
+    "@bbc/psammead-test-helpers": "^0.3.0",
     "react": "^16.6.3"
   },
   "keywords": [
