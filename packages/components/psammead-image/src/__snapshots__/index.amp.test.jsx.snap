@@ -37,10 +37,10 @@ exports[`Image - AmpImg should render portrait image correctly 1`] = `
 <amp-img
   alt="Map of the UK displaying Syrian refugees and asylum seekers per 10000 population. Ranges from 0 to 17."
   attribution="BBC"
-  height={1138}
+  height={1280}
   layout="responsive"
   src="https://ichef.bbci.co.uk/news/300/cpsprodpb/439A/production/_100960371_syrians_and_asylum_v2-nc.png"
-  width={640}
+  width={1024}
 />
 `;
 

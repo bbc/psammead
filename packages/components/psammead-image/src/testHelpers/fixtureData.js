@@ -23,8 +23,8 @@ export const portrait = {
   srcset: sizes
     .map(size => `${portraitImageUrl.replace('[WIDTH]', size)} ${size}w`)
     .join(', '),
-  width: 640,
-  height: 1138,
+  width: 1024,
+  height: 1280,
 };
 
 export const square = {
