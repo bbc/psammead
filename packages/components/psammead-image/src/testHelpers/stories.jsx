@@ -26,13 +26,13 @@ const stories = (
   storiesOf(title, module)
     .addDecorator(withReadme(Readme))
     .addDecorator(styleDecorator)
-    .add('16:9 landscape image', () => (
+    .add('landscape image', () => (
       <Component {...getProps(landscape, includeHeight)} {...additionalProps} />
     ))
-    .add('9:16 portrait image', () => (
+    .add('portrait image', () => (
       <Component {...getProps(portrait, includeHeight)} {...additionalProps} />
     ))
-    .add('1:1 square image', () => (
+    .add('square image', () => (
       <Component {...getProps(square, includeHeight)} {...additionalProps} />
     ))
     .add('custom ratio image', () => (
