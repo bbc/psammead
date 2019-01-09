@@ -8,7 +8,7 @@ import {
 
 const InlineLink = styled.a`
   color: ${C_BLUEJAY};
-  padding: 2px;
+  padding: 0 2px;
   border-bottom: 1px solid ${C_BLUEJAY};
   text-decoration: none;
   &:visited {
