@@ -3,18 +3,19 @@ import { configure, addDecorator } from '@storybook/react';
 import { setOptions } from '@storybook/addon-options';
 import styledNormalize from 'styled-normalize';
 import { createGlobalStyle } from 'styled-components';
+import {
+  AMP_SCRIPT,
+  AMP_NO_SCRIPT,
+} from '@bbc/psammead-assets/amp-boilerplate';
+import Helmet from 'react-helmet';
 
-// Option defaults:
 setOptions({
   name: 'BBC Psammead',
   url: 'https:github.com/BBC-News/psammead',
   addonPanelInRight: true,
   sidebarAnimations: true,
+  sortStoriesByKind: true,
 });
-
-function loadStories() {
-  require('glob-loader!./stories.pattern');
-}
 
 const GlobalStyle = createGlobalStyle`
   ${styledNormalize}
@@ -51,4 +52,22 @@ addDecorator(story => (
   </Fragment>
 ));
 
-configure(loadStories, module);
+export const ampDecorator  = story => (
+  <Fragment>
+    <Helmet htmlAttributes={{ amp: '' }}>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width,minimum-scale=1" />
+      <link rel="canonical" href="https://bbc.com" />
+      <style amp-boilerplate="">{AMP_SCRIPT}</style>
+      <noscript>{`<style amp-boilerplate="">${AMP_NO_SCRIPT}</style>`}</noscript>
+      <script async src="https://cdn.ampproject.org/v0.js" />
+    </Helmet>
+    {story()}
+  </Fragment>
+);
+
+function loadAllStories() {
+  require('glob-loader!./stories.pattern');
+}
+
+configure(loadAllStories, module);
