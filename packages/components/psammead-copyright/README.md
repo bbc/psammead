@@ -1,4 +1,4 @@
-# psammead-copyright &middot; [![Storybook](https://raw.githubusercontent.com/storybooks/brand/master/badges/storybook.svg?sanitize=true)](https://bbc-news.github.io/psammead/?selectedKind=Copyright) [![GitHub license](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](https://github.com/BBC-News/psammead/blob/latest/LICENSE) [![npm version](https://img.shields.io/npm/v/@bbc/psammead-copyright.svg)](https://www.npmjs.com/package/@bbc/psammead-copyright) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/BBC-News/psammead/blob/latest/CONTRIBUTING.md)
+# psammead-copyright &middot; [![Storybook](https://raw.githubusercontent.com/storybooks/brand/master/badges/storybook.svg?sanitize=true)](https://bbc-news.github.io/psammead/?selectedKind=Copyright) [![GitHub license](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](https://github.com/BBC/psammead/blob/latest/LICENSE) [![npm version](https://img.shields.io/npm/v/@bbc/psammead-copyright.svg)](https://www.npmjs.com/package/@bbc/psammead-copyright) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/BBC/psammead/blob/latest/CONTRIBUTING.md)
 
 ## Description
 
@@ -10,20 +10,16 @@ Displays a source attribution in block capitals in the bottom-right of the paren
 
 ## Props
 
-| Argument  | Type                | Required | Default | Example         |
-|-----------|---------------------|----------|---------|-----------------|
-| No props. |                     |          |         |                 |
+| Argument  | Type | Required | Default | Example |
+| --------- | ---- | -------- | ------- | ------- |
+| No props. |      |          |         |         |
 
 ## Usage
 
 Commonly used alongside [`psammead-figure`](https://github.com/BBC-News/psammead/tree/latest/packages/components/psammead-figure) and [`psammead-image`](https://github.com/BBC-News/psammead/tree/latest/packages/components/psammead-image).
 
 ```jsx
-const WrapperComponent = ({
-  alt,
-  src,
-  width,
-}) => (
+const WrapperComponent = ({ alt, src, width }) => (
   <Figure>
     <Image alt={alt} src={src} width={width} />
     <Copyright>Getty Images</Copyright>

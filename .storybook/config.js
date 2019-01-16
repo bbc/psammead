@@ -11,7 +11,7 @@ import Helmet from 'react-helmet';
 
 setOptions({
   name: 'BBC Psammead',
-  url: 'https:github.com/BBC-News/psammead',
+  url: 'https:github.com/BBC/psammead',
   addonPanelInRight: true,
   sidebarAnimations: true,
   sortStoriesByKind: true,
@@ -52,7 +52,7 @@ addDecorator(story => (
   </Fragment>
 ));
 
-export const ampDecorator  = story => (
+export const ampDecorator = story => (
   <Fragment>
     <Helmet htmlAttributes={{ amp: '' }}>
       <meta charset="utf-8" />

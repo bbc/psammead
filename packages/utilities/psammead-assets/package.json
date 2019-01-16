@@ -4,7 +4,7 @@
   "description": "A collection of common assets that are likely to be required by many Psammead components or users, such as SVGs or small scripts.",
   "repository": {
     "type": "git",
-    "url": "https://github.com/BBC-News/psammead/tree/latest/packages/utilities/psammead-assets"
+    "url": "https://github.com/bbc/psammead/tree/latest/packages/utilities/psammead-assets"
   },
   "author": {
     "name": "Psammead Maintainers",
@@ -14,7 +14,7 @@
   "bugs": {
     "url": "https://github.com/bbc/psammead/issues"
   },
-  "homepage": "https://github.com/BBC-News/psammead/blob/latest/packages/utilities/psammead-assets/README.md",
+  "homepage": "https://github.com/bbc/psammead/blob/latest/packages/utilities/psammead-assets/README.md",
   "keywords": [
     "bbc",
     "utilities",
