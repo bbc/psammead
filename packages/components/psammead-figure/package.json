@@ -5,7 +5,7 @@
   "description": "React styled component that generates a figure element",
   "repository": {
     "type": "git",
-    "url": "https://github.com/BBC-News/psammead/tree/latest/packages/components/psammead-figure"
+    "url": "https://github.com/bbc/psammead/tree/latest/packages/components/psammead-figure"
   },
   "author": {
     "name": "Psammead Maintainers",
@@ -15,7 +15,7 @@
   "bugs": {
     "url": "https://github.com/bbc/psammead/issues"
   },
-  "homepage": "https://github.com/BBC-News/psammead/blob/latest/packages/components/psammead-figure/README.md",
+  "homepage": "https://github.com/bbc/psammead/blob/latest/packages/components/psammead-figure/README.md",
   "dependencies": {
     "@bbc/gel-foundations": "^0.1.2",
     "styled-components": "^4.1.2"

@@ -1,7 +1,6 @@
 ---
 name: Feature request
 about: Suggest an idea for this project
-
 ---
 
 **Is your feature request related to a problem? Please describe.**
@@ -21,4 +20,4 @@ Dev insight: Will Cypress tests be required or are unit tests sufficient? Will t
 **Additional context**
 Add any other context or screenshots about the feature request here.
 
-- [ ] Initially labelled with ["Refinement needed"](https://github.com/BBC-News/psammead/labels/Refinement%20Needed)
+- [ ] Initially labelled with ["Refinement needed"](https://github.com/bbc/psammead/labels/Refinement%20Needed)

@@ -1,4 +1,4 @@
-# psammead-image &middot; [![Storybook](https://raw.githubusercontent.com/storybooks/brand/master/badges/storybook.svg?sanitize=true)](https://bbc-news.github.io/psammead/?selectedKind=Image) [![GitHub license](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](https://github.com/BBC-News/psammead/blob/latest/LICENSE) [![npm version](https://img.shields.io/npm/v/@bbc/psammead-image.svg)](https://www.npmjs.com/package/@bbc/psammead-image) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/BBC-News/psammead/blob/latest/CONTRIBUTING.md)
+# psammead-image &middot; [![Storybook](https://raw.githubusercontent.com/storybooks/brand/master/badges/storybook.svg?sanitize=true)](https://bbc.github.io/psammead/?selectedKind=Image) [![GitHub license](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](https://github.com/bbc/psammead/blob/latest/LICENSE) [![npm version](https://img.shields.io/npm/v/@bbc/psammead-image.svg)](https://www.npmjs.com/package/@bbc/psammead-image) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/bbc/psammead/blob/latest/CONTRIBUTING.md)
 
 ## Description
 
@@ -56,33 +56,32 @@ const WrappingContainer = ({ alt, src, height, width }) => (
 
 ### Img
 
-| Prop          | Type          | Required | Default | Example |
-| :------------ | :------------ | :------- | :------ | :------ |
-| `alt`         | string        | Yes      | -       | "A picture of a cat" |
-| `height`      | number/string | Yes      | null    | 450 |
-| `src`         | string        | Yes      | -       | "https://bbc.com/300/cat.jpg" |
-| `srcset`      | string        | No       | null    | "https://bbc.com/300/cat.jpg 300w, https://bbc.com/450/cat.jpg 450w, https://bbc.com/600/cat.jpg 600w" |
-| `width`       | number/string | Yes      | -       | 600 |
+| Prop     | Type          | Required | Default | Example                                                                                                |
+| :------- | :------------ | :------- | :------ | :----------------------------------------------------------------------------------------------------- |
+| `alt`    | string        | Yes      | -       | "A picture of a cat"                                                                                   |
+| `height` | number/string | Yes      | null    | 450                                                                                                    |
+| `src`    | string        | Yes      | -       | "https://bbc.com/300/cat.jpg"                                                                          |
+| `srcset` | string        | No       | null    | "https://bbc.com/300/cat.jpg 300w, https://bbc.com/450/cat.jpg 450w, https://bbc.com/600/cat.jpg 600w" |
+| `width`  | number/string | Yes      | -       | 600                                                                                                    |
 
 The `height` prop is optional, since in some cases to preserve the image ratio we only want to specify the width and let the browser scale the image accordingly. However, in other cases the height might need to be specified.
 The `srcset` prop is optional since some projects might not want to use the srcset attribute on images.
 
 ### AmpImg
 
-| Prop          | Type          | Required | Default | Example |
-| :------------ | :------------ | :------- | :------ | :------ |
-| `alt`         | string        | Yes      | -       | "A picture of a cat" |
-| `attribution` | string        | No       | ''      | "Getty Images" |
-| `height`      | number/string | Yes      | null    | 450 |
-| `layout`      | string        | Yes      | -       | "responsive" |
-| `src`         | string        | Yes      | -       | "https://bbc.com/300/cat.jpg" |
+| Prop          | Type          | Required | Default | Example                                                                                                |
+| :------------ | :------------ | :------- | :------ | :----------------------------------------------------------------------------------------------------- |
+| `alt`         | string        | Yes      | -       | "A picture of a cat"                                                                                   |
+| `attribution` | string        | No       | ''      | "Getty Images"                                                                                         |
+| `height`      | number/string | Yes      | null    | 450                                                                                                    |
+| `layout`      | string        | Yes      | -       | "responsive"                                                                                           |
+| `src`         | string        | Yes      | -       | "https://bbc.com/300/cat.jpg"                                                                          |
 | `srcset`      | string        | No       | null    | "https://bbc.com/300/cat.jpg 300w, https://bbc.com/450/cat.jpg 450w, https://bbc.com/600/cat.jpg 600w" |
-| `width`       | number/string | Yes      | -       | 600 |
+| `width`       | number/string | Yes      | -       | 600                                                                                                    |
 
 The `attribution` prop is available to pass in strings to include the image source. [For further details, please refer to the `amp-img` attribute docs](https://www.ampproject.org/docs/reference/components/amp-img#attributes).
 The `layout` prop can be one of several, including `responsive`, `fixed`, `intrinsic` etc. We recommend using `responsive` for most use-cases, with `height` and `width` props passed in, so the AMP can use the correct ratio for scaling the image. [For further details, please refer to the AMP docs](https://www.ampproject.org/docs/reference/components/amp-img).
-The `srcset` prop is a string with comma separated string of image URLs with varying sizes. [For further details, please refer to the MDN docs](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img#attr-srcset). 
-
+The `srcset` prop is a string with comma separated string of image URLs with varying sizes. [For further details, please refer to the MDN docs](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img#attr-srcset).
 
 ### Accessibility notes
 

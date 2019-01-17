@@ -5,7 +5,7 @@
   "description": "React styled components for a Caption",
   "repository": {
     "type": "git",
-    "url": "https://github.com/BBC-News/psammead/tree/latest/packages/components/psammead-caption"
+    "url": "https://github.com/bbc/psammead/tree/latest/packages/components/psammead-caption"
   },
   "author": {
     "name": "Psammead Maintainers",
@@ -15,7 +15,7 @@
   "bugs": {
     "url": "https://github.com/bbc/psammead/issues"
   },
-  "homepage": "https://github.com/BBC-News/psammead/blob/latest/packages/components/psammead-caption/README.md",
+  "homepage": "https://github.com/bbc/psammead/blob/latest/packages/components/psammead-caption/README.md",
   "dependencies": {
     "@bbc/gel-foundations": "^0.1.2",
     "@bbc/psammead-styles": "^0.1.3",

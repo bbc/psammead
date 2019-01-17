@@ -5,7 +5,7 @@
   "description": "React styled components for an Image",
   "repository": {
     "type": "git",
-    "url": "https://github.com/BBC-News/psammead/tree/latest/packages/components/psammead-image"
+    "url": "https://github.com/bbc/psammead/tree/latest/packages/components/psammead-image"
   },
   "author": {
     "name": "Psammead Maintainers",
@@ -15,7 +15,7 @@
   "bugs": {
     "url": "https://github.com/bbc/psammead/issues"
   },
-  "homepage": "https://github.com/BBC-News/psammead/blob/latest/packages/components/psammead-image/README.md",
+  "homepage": "https://github.com/bbc/psammead/blob/latest/packages/components/psammead-image/README.md",
   "dependencies": {
     "prop-types": "^15.6.2",
     "styled-components": "^4.1.2"
