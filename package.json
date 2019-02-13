@@ -4,16 +4,19 @@
   "description": "Core Components Library Developed & Maintained By The Articles and Reach & Languages Team",
   "main": "index.js",
   "scripts": {
-    "build": "lerna exec --parallel -- babel src -d dist --ignore spec.js,story.js",
-    "install:packages": "lerna exec -- npm install",
-    "publish": "lerna publish",
-    "start": "node server.js",
+    "build": "lerna exec --parallel -- babel src -d dist --ignore '**/*.test.jsx,**/*.stories.jsx' --root-mode upward",
+    "ci:packages": "npm ci && lerna bootstrap --ci --hoist --force-local",
+    "deploy-storybook": "build-storybook -o storybook_dist && gh-pages -d storybook_dist",
+    "force-package-lock-https": "find . -type f -name \"package-lock.json\" | grep -v node_modules | xargs -I % sh -c 'echo \"Replacing http->https in %\"; sed -i \"\" -e \"s/http:\\/\\//https:\\/\\//g\" %'",
+    "install:packages": "npm i && lerna bootstrap --hoist --force-local",
+    "postshrinkwrap": "if test -z $CI; then \n npm run force-package-lock-https \n fi",
+    "prepare": "npm run build",
+    "publish": "node scripts/publish",
     "storybook": "NODE_ENV=development start-storybook -p 8080 -c .storybook",
-    "storybook:export": "build-storybook -c .storybook -o public",
-    "speculate": "speculate",
-    "test": "npm run test:lint && npm run test:lint:css && npm run test:unit",
-    "test:lint": "eslint --ext .js,jsx,json ./packages",
-    "test:lint:css": "stylelint 'packages/**/*.js' 'packages/**/*.jsx'",
+    "test": "npm run test:lint && npm run test:lint:css && npm run test:unit && npm run test:packages",
+    "test:packages": "lerna run test",
+    "test:lint": "eslint --ext .js,jsx,json ./packages ./scripts",
+    "test:lint:css": "stylelint 'packages/**/*.js' 'packages/**/*.jsx' 'scripts/**/*.js'",
     "test:unit": "jest --verbose --coverage"
   },
   "repository": {
@@ -27,23 +30,25 @@
   },
   "homepage": "https://github.com/bbc/psammead#readme",
   "dependencies": {
-    "express": "^4.16.3",
-    "speculate": "^1.7.4",
-    "styled-components": "^4.1.1"
+    "styled-components": "^4.1.2",
+    "styled-normalize": "^8.0.4"
   },
   "devDependencies": {
+    "@babel/cli": "^7.2.0",
+    "@babel/core": "^7.2.0",
+    "@babel/preset-env": "^7.2.0",
+    "@babel/preset-react": "^7.0.0",
+    "@bbc/psammead-assets": "^0.1.3",
     "@storybook/addon-actions": "^3.4.11",
     "@storybook/addon-knobs": "^3.4.11",
     "@storybook/addon-options": "^3.4.11",
     "@storybook/addon-viewport": "^3.4.11",
-    "@storybook/react": "4.0.0-alpha.8",
-    "babel-cli": "^6.26.0",
-    "babel-core": "^6.26.3",
+    "@storybook/react": "^4.0.11",
+    "babel-core": "^7.0.0-bridge.0",
     "babel-eslint": "^8.2.6",
-    "babel-loader": "^7.1.5",
-    "babel-plugin-styled-components": "^1.5.1",
-    "babel-preset-env": "^1.7.0",
-    "babel-preset-react": "^6.24.1",
+    "babel-loader": "^8.0.4",
+    "babel-plugin-styled-components": "^1.9.2",
+    "chalk": "^2.4.1",
     "enzyme": "^3.7.0",
     "enzyme-adapter-react-16": "^1.7.0",
     "eslint": "^5.9.0",
@@ -54,36 +59,44 @@
     "eslint-plugin-jsx-a11y": "^6.1.2",
     "eslint-plugin-prettier": "^3.0.0",
     "eslint-plugin-react": "^7.11.1",
+    "gh-pages": "^2.0.1",
     "glob-loader": "^0.3.0",
     "husky": "^1.2.0",
     "jest": "^23.6.0",
     "jest-fetch-mock": "^1.6.5",
-    "jest-styled-components": "^5.0.1",
+    "jest-styled-components": "^6.3.1",
     "lerna": "^3.3.1",
     "prettier": "^1.15.2",
-    "react": "^16.5.0",
-    "react-dom": "^16.5.0",
-    "react-test-renderer": "^16.5.0",
+    "react": "^16.6.3",
+    "react-dom": "^16.6.3",
+    "react-helmet": "^5.2.0",
+    "react-test-renderer": "^16.6.3",
+    "request": "^2.88.0",
+    "semver": "^5.6.0",
+    "shelljs": "^0.8.3",
     "storybook-readme": "^4.0.0-beta1",
+    "strip-ansi": "^5.0.0",
     "stylelint": "^9.8.0",
     "stylelint-config-recommended": "^2.1.0",
     "stylelint-config-styled-components": "^0.1.1",
-    "stylelint-processor-styled-components": "^1.5.1"
+    "stylelint-processor-styled-components": "^1.5.1",
+    "yargs-parser": "^11.1.1"
   },
   "husky": {
     "hooks": {
       "pre-commit": "npm run test:lint && npm run test:lint:css",
-      "pre-push": "npm run test:unit"
+      "pre-push": "sh scripts/enforceVersions.sh && npm run test:unit"
     }
   },
   "jest": {
     "collectCoverageFrom": [
       "**/packages/**/*.{js,jsx}",
+      "scripts/**",
       "!**/*.stories.{js,jsx}",
-      "!**/.eslintrc.js"
+      "!**/.eslintrc.js",
+      "!**/dist/**"
     ],
     "testMatch": [
-      "**/__tests__/**/*.js?(x)",
       "**/*.test.{js,jsx}"
     ]
   },

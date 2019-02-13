@@ -1,15 +1,22 @@
 #!/usr/bin/env groovy
 
 def dockerRegistry = "329802642264.dkr.ecr.eu-west-1.amazonaws.com"
-def nodeImageVersion = "0.0.5"
+def nodeImageVersion = "0.0.8"
 def nodeImage = "${dockerRegistry}/bbc-news/node-8-lts:${nodeImageVersion}"
 def nodeName
-def stageName = ""
+def slackChannel = "#psammead"
+def stageName = "Unknown"
+def gitCommitAuthor = "Unknown"
+def gitCommitMessage = "Unknown"
+
 def getCommitInfo = {
-  infraGitCommitAuthor = sh(returnStdout: true, script: "git --no-pager show -s --format='%an' ${GIT_COMMIT}").trim()
-  appGitCommit = sh(returnStdout: true, script: "cd ${APP_DIRECTORY}; git rev-parse HEAD")
-  appGitCommitAuthor = sh(returnStdout: true, script: "cd ${APP_DIRECTORY}; git --no-pager show -s --format='%an' ${appGitCommit}").trim()
-  appGitCommitMessage = sh(returnStdout: true, script: "cd ${APP_DIRECTORY}; git log -1 --pretty=%B").trim()
+  gitCommitAuthor = sh(returnStdout: true, script: "git --no-pager show -s --format='%an' ${GIT_COMMIT}").trim()
+  gitCommitMessage = sh(returnStdout: true, script: "git log -1 --pretty=%B").trim()
+}
+
+def notifySlack(colour, buildStatus, gitCommitAuthor, stageName, gitCommitMessage, slackChannel) {
+  // call the global slackSend method in Jenkins
+  slackSend(color: colour, message: "*${buildStatus}* on ${GIT_BRANCH} [build ${BUILD_DISPLAY_NAME}] \n*Author:* ${gitCommitAuthor} \n*Stage:* ${stageName} \n*Commit Hash* \n${GIT_COMMIT} \n*Commit Message* \n${gitCommitMessage}", channel: slackChannel)
 }
 
 pipeline {
@@ -19,40 +26,29 @@ pipeline {
     timestamps ()
   }
   environment {
-    APP_DIRECTORY = "app"
     CI = true
   }
   stages {
-    stage('Checkout application repo') {
-      when {
-        expression { env.BRANCH_NAME != 'latest' }
-      }
+    stage ('Run application tests') {
       agent {
         docker {
           image "${nodeImage}"
+          label nodeName
           args '-u root -v /etc/pki:/certs'
         }
       }
       steps {
-        sh "rm -rf ${env.APP_DIRECTORY}"
-        checkout([
-          $class: 'GitSCM',
-          branches: [[name: "*/${env.BRANCH_NAME}"]],
-          doGenerateSubmoduleConfigurations: false,
-          extensions: [[
-            $class: 'RelativeTargetDirectory',
-            relativeTargetDir: "${env.APP_DIRECTORY}"
-          ]],
-          submoduleCfg: [],
-          userRemoteConfigs: [[
-            credentialsId: 'github',
-            name: "origin/${env.BRANCH_NAME}",
-            url: 'https://github.com/bbc-news/psammead.git'
-          ]]
-        ])
+        sh 'rm -rf ./app'
         script {
-          getCommitInfo()
-          nodeName = "${env.node_name}".toString()
+          if (GIT_BRANCH == 'latest') {
+            getCommitInfo()
+          }
+        }
+        sh 'make install'
+        sh 'make code-coverage-before-build'
+        sh 'make tests'
+        withCredentials([string(credentialsId: 'psammead-cc-reporter-id', variable: 'CC_TEST_REPORTER_ID')]) {
+          sh 'make code-coverage-after-build'
         }
       }
       post {
@@ -63,9 +59,9 @@ pipeline {
         }
       }
     }
-    stage ('Run application tests') {
+    stage ('Deploy Storybook & Publish to NPM') {
       when {
-        expression { env.BRANCH_NAME != 'latest' }
+        expression { env.BRANCH_NAME == 'latest' }
       }
       agent {
         docker {
@@ -75,14 +71,46 @@ pipeline {
         }
       }
       steps {
-        sh 'make install'
-        sh 'make tests'
+        sh 'make storybook'
+        withCredentials([string(credentialsId: 'npm_bbc-online_read_write', variable: 'NPM_TOKEN')]) {
+          sh 'make publish'
+        }
       }
       post {
         always {
           script {
             stageName = env.STAGE_NAME
           }
+        }
+      }
+    }
+  }
+  post {
+    aborted {
+      script {
+        if (GIT_BRANCH == 'latest') {
+          notifySlack('danger', 'Aborted', gitCommitAuthor, stageName, gitCommitMessage, slackChannel)
+        }
+      }
+    }
+    failure {
+      script {
+        if (GIT_BRANCH == 'latest') {
+          notifySlack('danger', 'Failed', gitCommitAuthor, stageName, gitCommitMessage, slackChannel)
+        }
+      }
+    }
+    success {
+      script {
+        if (GIT_BRANCH == 'latest') {
+          notifySlack('good', 'Success', gitCommitAuthor, stageName, gitCommitMessage, slackChannel)
+        }
+      }
+    }
+    unstable {
+      script {
+        if (GIT_BRANCH == 'latest') {
+          notifySlack('danger', 'Unstable', gitCommitAuthor, stageName, gitCommitMessage, slackChannel)
         }
       }
     }

@@ -1,10 +1,10 @@
 {
   "name": "@bbc/psammead-styles",
-  "version": "0.1.2",
-  "description": "A collection of BBC colours and fonts.",
+  "version": "0.1.6",
+  "description": "A collection of string constants for use in CSS, containing non-GEL styling details that are bespoke to specific BBC services and products.",
   "repository": {
     "type": "git",
-    "url": "https://github.com/BBC-News/psammead/tree/latest/packages/utilities/psammead-styles"
+    "url": "https://github.com/bbc/psammead/tree/latest/packages/utilities/psammead-styles"
   },
   "author": {
     "name": "BBC Psammead Maintainers",
@@ -14,8 +14,16 @@
   "bugs": {
     "url": "https://github.com/bbc/psammead/issues"
   },
-  "homepage": "https://github.com/BBC-News/psammead/blob/latest/packages/utilities/psammead-styles/README.md",
+  "homepage": "https://github.com/bbc/psammead/blob/latest/packages/utilities/psammead-styles/README.md",
   "keywords": [
-    "bbc", "utilities", "styles", "colours", "colors", "fonts"
-  ]
+    "bbc",
+    "utilities",
+    "styles",
+    "colours",
+    "colors",
+    "fonts"
+  ],
+  "devDependencies": {
+    "@bbc/psammead-test-helpers": "^0.3.0"
+  }
 }
