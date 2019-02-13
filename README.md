@@ -2,6 +2,8 @@
 
 # Getting Started
 
+TEST
+
 ### Clone this repositry
 ```
 git clone git@github.com:bbc-news/psammead.git
