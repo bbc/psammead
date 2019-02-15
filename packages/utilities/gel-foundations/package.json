@@ -4,7 +4,7 @@
   "description": "A range of string constants for use in CSS, intended to help implement BBC GEL-compliant webpages and components.",
   "repository": {
     "type": "git",
-    "url": "https://github.com/BBC-News/psammead/tree/latest/packages/utilities/gel-foundations"
+    "url": "https://github.com/bbc/psammead/tree/latest/packages/utilities/gel-foundations"
   },
   "author": {
     "name": "Psammead Maintainers",
@@ -14,7 +14,7 @@
   "bugs": {
     "url": "https://github.com/bbc/psammead/issues"
   },
-  "homepage": "https://github.com/BBC-News/psammead/blob/latest/packages/utilities/gel-foundations/README.md",
+  "homepage": "https://github.com/bbc/psammead/blob/latest/packages/utilities/gel-foundations/README.md",
   "keywords": [
     "bbc",
     "utilities",

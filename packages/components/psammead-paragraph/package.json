@@ -5,7 +5,7 @@
   "main": "dist/index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/BBC-News/psammead/tree/latest/packages/components/psammead-paragraph"
+    "url": "https://github.com/bbc/psammead/tree/latest/packages/components/psammead-paragraph"
   },
   "keywords": [
     "bbc",
@@ -20,7 +20,7 @@
   "bugs": {
     "url": "https://github.com/bbc/psammead/issues"
   },
-  "homepage": "https://github.com/BBC-News/psammead/blob/latest/packages/components/psammead-paragraph/README.md",
+  "homepage": "https://github.com/bbc/psammead/blob/latest/packages/components/psammead-paragraph/README.md",
   "dependencies": {
     "@bbc/gel-foundations": "^0.1.2",
     "@bbc/psammead-styles": "^0.1.3",
