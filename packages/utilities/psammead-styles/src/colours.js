@@ -10,6 +10,11 @@ export const C_PEBBLE = '#5C5752';
 export const C_RHINO = '#5A5A5A';
 export const C_STONE = '#D5D0CD';
 export const C_CHALK = '#ECEAE7';
+export const C_SHADOW = '#3F3F42';
+export const C_CLOUD_DARK = '#757575';
+export const C_CLOUD_LIGHT = '#BABABA';
+export const C_LUNAR = '#F2F2F2';
+export const C_GHOST = '#FDFDFD';
 
 // Colours from other BBC services
 export const C_ORBIT_GREY = '#4C4C4C';

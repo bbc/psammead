@@ -13,6 +13,8 @@ const fontsExpectedExports = {
   FF_NEWS_SERIF_REG: 'string',
   FF_NEWS_SERIF_MDM: 'string',
   FF_NEWS_SERIF_BLD: 'string',
+  FF_NEWS_SANS_REG_ITAL: 'string',
+  FF_NEWS_SERIF_MDM_ITAL: 'string',
 };
 
 const coloursExpectedExports = {
@@ -28,6 +30,11 @@ const coloursExpectedExports = {
   C_STONE: 'string',
   C_CHALK: 'string',
   C_ORBIT_GREY: 'string',
+  C_SHADOW: 'string',
+  C_CLOUD_DARK: 'string',
+  C_CLOUD_LIGHT: 'string',
+  C_LUNAR: 'string',
+  C_GHOST: 'string',
 };
 
 const expectedExports = {
