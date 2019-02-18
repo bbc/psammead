@@ -2,7 +2,7 @@
 
 | Version | Description |
 |---------|-------------|
-| 0.2.0   |  |
+| 0.2.0   | [PR#291](https://github.com/BBC/psammead/pull/291) Update appearance to reflect UX designs. |
 | 0.1.8   | [PR#264](https://github.com/BBC/psammead/pull/264) Resolving package-lock issues. |
 | 0.1.7   | [PR#245](https://github.com/BBC-News/psammead/pull/245) Ensures documentation consistent across component packages. |
 | 0.1.6   | [PR#231](https://github.com/BBC-News/psammead/pull/231) Add link to Storybook to README |
