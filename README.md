@@ -33,6 +33,14 @@ cd psammead && npm run install:packages
 
 N.B. When merging branches, the `npm run install:packages` command should be favoured over `npm install`. [More details available here](https://github.com/bbc/psammead/pull/264).
 
+### :link: Link packages locally
+
+Run the following command to link all psammead packages up regardless of dependancy version:
+
+```
+npm install:packages:local
+```
+
 ### :runner: Run tests
 
 Run the component tests:
@@ -42,6 +50,8 @@ npm test
 ```
 
 This runs Jest across any packages matching this glob pattern: `packages/components/**/*.test.jsx`.
+
+NB: You cant run the jest tests when the packages are linked locally. Please run `npm run install:packages` or `ci:packages` to reset all links.
 
 ### :runner: Run Storybook
 
