@@ -11,7 +11,7 @@ import Helmet from 'react-helmet';
 
 setOptions({
   name: 'BBC Psammead',
-  url: 'https:github.com/BBC/psammead',
+  url: 'https://github.com/bbc/psammead',
   addonPanelInRight: true,
   sidebarAnimations: true,
   sortStoriesByKind: true,
