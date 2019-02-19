@@ -5,11 +5,11 @@
   "main": "index.js",
   "scripts": {
     "build": "lerna exec --parallel -- babel src -d dist --ignore '**/*.test.jsx,**/*.stories.jsx' --root-mode upward",
-    "ci:packages": "npm ci && lerna bootstrap --ci --hoist --nohoist=@bbc/*",
+    "ci:packages": "npm ci && lerna clean --yes && lerna bootstrap --ci --hoist --nohoist=@bbc/*",
     "deploy-storybook": "build-storybook -o storybook_dist && gh-pages -d storybook_dist",
     "force-package-lock-https": "find . -type f -name \"package-lock.json\" | grep -v node_modules | xargs -I % sh -c 'echo \"Replacing http->https in %\"; sed -i \"\" -e \"s/http:\\/\\//https:\\/\\//g\" %'",
-    "install:packages": "npm i && lerna bootstrap --hoist",
-    "install:packages:local": "npm i && lerna bootstrap --hoist --force-local",
+    "install:packages": "npm i && lerna clean --yes && lerna bootstrap --hoist",
+    "install:packages:local": "npm i && lerna clean --yes && lerna bootstrap --hoist --force-local",
     "postshrinkwrap": "if test -z $CI; then \n npm run force-package-lock-https \n fi",
     "prepare": "npm run build",
     "publish": "node scripts/publish",
@@ -18,7 +18,8 @@
     "test:packages": "lerna run test",
     "test:lint": "eslint --ext .js,jsx,json ./packages ./scripts",
     "test:lint:css": "stylelint 'packages/**/*.js' 'packages/**/*.jsx' 'scripts/**/*.js'",
-    "test:unit": "jest --verbose --coverage"
+    "test:unit": "jest --verbose --coverage",
+    "updateSnapshots": "npm run test:unit -- -u"
   },
   "repository": {
     "type": "git",
