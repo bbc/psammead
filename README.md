@@ -51,7 +51,7 @@ npm test
 
 This runs Jest across any packages matching this glob pattern: `packages/components/**/*.test.jsx`.
 
-NB: You cant run the jest tests when the packages are linked locally. Please run `npm run install:packages` or `ci:packages` to reset all links.
+NB: You cant run the jest tests when the packages are linked locally. Please run `npm run install:packages` or `npm run ci:packages` to reset all links.
 
 ### :runner: Run Storybook
 
