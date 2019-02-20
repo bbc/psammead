@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "lerna exec --parallel -- babel src -d dist --ignore '**/*.test.jsx,**/*.stories.jsx' --root-mode upward",
-    "ci:packages": "npm ci && lerna clean --yes && lerna bootstrap --ci --hoist styled-components",
+    "ci:packages": "npm ci && lerna clean --yes && lerna bootstrap --ci --hoist **/styled-components*",
     "deploy-storybook": "build-storybook -o storybook_dist && gh-pages -d storybook_dist",
     "force-package-lock-https": "find . -type f -name \"package-lock.json\" | grep -v node_modules | xargs -I % sh -c 'echo \"Replacing http->https in %\"; sed -i \"\" -e \"s/http:\\/\\//https:\\/\\//g\" %'",
     "install:packages": "npm i && lerna clean --yes && lerna bootstrap --hoist",
