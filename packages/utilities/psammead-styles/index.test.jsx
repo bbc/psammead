@@ -35,6 +35,9 @@ const coloursExpectedExports = {
   C_CLOUD_LIGHT: 'string',
   C_LUNAR: 'string',
   C_GHOST: 'string',
+  C_CONSENT_BACKGROUND: 'string',
+  C_CONSENT_ACTION: 'string',
+  C_CONSENT_CONTENT: 'string',
 };
 
 const expectedExports = {
