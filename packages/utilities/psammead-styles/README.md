@@ -5,7 +5,6 @@ This package provides a collection of string constants for use in CSS, containin
 ## Exports
 
 `/colours` - Project-defined colours that will be required by multiple Psammead components or themes. These colours are not defined by GEL.
-`/fonts` - Project-defined font families. These fallbacks are not defined by GEL.
 
 ## Installation
 

@@ -1,4 +1,23 @@
- # GEL Typography Sizes (em/rem)
+# GEL Typography
+
+## GEL Typefaces
+
+Following the [BBC GEL Typography guidelines](https://www.bbc.co.uk/gel/guidelines/typography).
+
+|                   | Serif | Sans | Sans Condensed | 
+|-------------------|-------|------|----------------| 
+| Light             | :white_check_mark: | :white_check_mark: | :x: | 
+| Light Italic      | :white_check_mark: | :white_check_mark: | :x: | 
+| Regular           | :white_check_mark: | :white_check_mark: | :white_check_mark: | 
+| Regular Italic    | :white_check_mark: | :white_check_mark: | :x: | 
+| Medium            | :white_check_mark: | :white_check_mark: | :x: | 
+| Medium Italic     | :white_check_mark: | :white_check_mark: | :x: | 
+| Bold              | :white_check_mark: | :white_check_mark: | :white_check_mark: | 
+| Bold Italic       | :white_check_mark: | :white_check_mark: | :x: | 
+| Extra Bold        | :white_check_mark: | :white_check_mark: | :x: | 
+| Extra Bold Italic | :white_check_mark: | :white_check_mark: | :x: | 
+
+## GEL Typography Sizes (em/rem)
  
 These values are based on the [GEL Typography guidelines](https://www.bbc.co.uk/gel/guidelines/typography#type-sizes), which are defined in pixels. The values below can be recreated and verified by simply dividing the pixel values by 16 (16px is the base font size for the majority of browsers).
 
