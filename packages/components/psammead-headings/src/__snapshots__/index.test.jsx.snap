@@ -2,7 +2,7 @@
 
 exports[`Headline component should render correctly 1`] = `
 .c0 {
-  color: #222222;
+  color: #3F3F42;
   font-family: ReithSerifNewsMedium,Helvetica,Arial,sans-serif;
   margin: 0;
   padding: 2rem 0 1rem 0;
@@ -33,7 +33,7 @@ exports[`Headline component should render correctly 1`] = `
 
 exports[`SubHeading component attribute id should render without double quotes 1`] = `
 .c0 {
-  color: #404040;
+  color: #3F3F42;
   font-family: ReithSansNewsRegular,Helvetica,Arial,sans-serif;
   margin: 0;
   padding: 1rem 0;
@@ -67,7 +67,7 @@ exports[`SubHeading component attribute id should render without double quotes 1
 
 exports[`SubHeading component attribute id should render without exclamation marks 1`] = `
 .c0 {
-  color: #404040;
+  color: #3F3F42;
   font-family: ReithSansNewsRegular,Helvetica,Arial,sans-serif;
   margin: 0;
   padding: 1rem 0;
@@ -101,7 +101,7 @@ exports[`SubHeading component attribute id should render without exclamation mar
 
 exports[`SubHeading component attribute id should render without quotes 1`] = `
 .c0 {
-  color: #404040;
+  color: #3F3F42;
   font-family: ReithSansNewsRegular,Helvetica,Arial,sans-serif;
   margin: 0;
   padding: 1rem 0;
@@ -135,7 +135,7 @@ exports[`SubHeading component attribute id should render without quotes 1`] = `
 
 exports[`SubHeading component should render correctly 1`] = `
 .c0 {
-  color: #404040;
+  color: #3F3F42;
   font-family: ReithSansNewsRegular,Helvetica,Arial,sans-serif;
   margin: 0;
   padding: 1rem 0;

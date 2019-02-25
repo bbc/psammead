@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { C_EBON, C_STORM } from '@bbc/psammead-styles/colours';
+import { C_SHADOW } from '@bbc/psammead-styles/colours';
 import {
   FF_NEWS_SERIF_MDM,
   FF_NEWS_SANS_REG,
@@ -11,7 +11,7 @@ import {
 import { GEL_CANON, GEL_TRAFALGAR } from '@bbc/gel-foundations/typography';
 
 export const Headline = styled.h1`
-  color: ${C_EBON};
+  color: ${C_SHADOW};
   font-family: ${FF_NEWS_SERIF_MDM};
   margin: 0; /* Reset */
   padding: ${GEL_SPACING_QUAD} 0 ${GEL_SPACING_DBL} 0;
@@ -25,7 +25,7 @@ export const SubHeading = styled.h2.attrs(({ text }) => ({
   id: text.replace(regexPunctuationSymbols, '').replace(regexSpaces, '-'),
   tabIndex: '-1',
 }))`
-  color: ${C_STORM};
+  color: ${C_SHADOW};
   font-family: ${FF_NEWS_SANS_REG};
   margin: 0; /* Reset */
   padding: ${GEL_SPACING_DBL} 0;
