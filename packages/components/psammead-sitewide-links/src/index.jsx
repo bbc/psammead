@@ -1,7 +1,7 @@
 import React from 'react';
 import styled, { css } from 'styled-components';
 import { arrayOf, shape, string } from 'prop-types';
-import { C_ORBIT_GREY, C_WHITE } from '@bbc/psammead-styles/colours';
+import { C_EBON, C_WHITE } from '@bbc/psammead-styles/colours';
 import { FF_NEWS_SANS_REG } from '@bbc/psammead-styles/fonts';
 import { GEL_BREVIER } from '@bbc/gel-foundations/typography';
 import {
@@ -24,7 +24,7 @@ export const layoutWrapperWithoutGrid = css`
 
 const SitewideLinksWrapper = styled.div`
   ${layoutWrapperWithoutGrid};
-  background-color: ${C_ORBIT_GREY};
+  background-color: ${C_EBON};
   ${GEL_BREVIER};
   font-family: ${FF_NEWS_SANS_REG};
 `;
