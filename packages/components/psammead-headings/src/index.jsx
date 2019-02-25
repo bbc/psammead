@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { C_SHADOW } from '@bbc/psammead-styles/colours';
 import {
   FF_NEWS_SERIF_MDM,
-  FF_NEWS_SANS_REG,
+  FF_NEWS_SANS_BLD,
 } from '@bbc/psammead-styles/fonts';
 import {
   GEL_SPACING_DBL,
@@ -26,7 +26,7 @@ export const SubHeading = styled.h2.attrs(({ text }) => ({
   tabIndex: '-1',
 }))`
   color: ${C_SHADOW};
-  font-family: ${FF_NEWS_SANS_REG};
+  font-family: ${FF_NEWS_SANS_BLD};
   margin: 0; /* Reset */
   padding: ${GEL_SPACING_DBL} 0;
   font-weight: 400;
