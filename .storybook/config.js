@@ -45,10 +45,10 @@ const GlobalStyle = createGlobalStyle`
   }
   @font-face {
     font-display: optional;
-    font-family: ReithSerifNewsBold;
+    font-family: ReithSansNewsBold;
     font-style: normal;
     font-weight: 700;
-    src: url('https://gel.files.bbci.co.uk/r2.302/BBCReithSerif_W_Bd.woff2') format('woff2'), url('https://gel.files.bbci.co.uk/r2.302/BBCReithSerif_W_Bd.woff') format('woff');
+    src: url('https://gel.files.bbci.co.uk/r2.302/BBCReithSans_W_Bd.woff2') format('woff2'), url('https://gel.files.bbci.co.uk/r2.302/BBCReithSans_W_Bd.woff') format('woff');
   }
 `;
 
