@@ -1,9 +1,4 @@
-const fontFamilyBase = ', Helvetica, Arial, sans-serif';
 const baseFontUrl = 'https://gel.files.bbci.co.uk/r2.302/';
-
-export const FF_SERIF = `ReithSerif${fontFamilyBase}`;
-export const FF_SANS = `ReithSans${fontFamilyBase}`;
-export const FF_SANS_COND = `ReithSansCondensed${fontFamilyBase}`;
 
 // Serif
 export const T_REITH_SERIF_REGULAR = `
