@@ -81,10 +81,6 @@ Since this is just a `<a>` tag with associated styles, when you use this compone
 
 The font and background-color choices for each hover/focused/visited/default states meet WCAG AA colour contrast guidelines.
 
-## Roadmap
-
-Our UX team are considering updating the colours for the hover and focus states of this component. When we implement this change, we will ensure it is a major version increase, since for downstream teams this will be a breaking change.
-
 ## Contributing
 
 Psammead is completely open source. We are grateful for any contributions, whether they be new components, bug fixes or general improvements. Please see our primary contributing guide which can be found at [the root of the Psammead respository](https://github.com/bbc/psammead/blob/latest/CONTRIBUTING.md).
