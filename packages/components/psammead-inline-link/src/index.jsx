@@ -7,7 +7,6 @@ import {
 
 const InlineLink = styled.a`
   color: ${C_SHADOW};
-  padding: 0 2px;
   border-bottom: 1px solid ${C_POSTBOX};
   text-decoration: none;
 
