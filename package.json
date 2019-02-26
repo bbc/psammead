@@ -18,7 +18,7 @@
     "test:lint": "eslint --ext .js,jsx,json ./packages ./scripts",
     "test:lint:css": "stylelint 'packages/**/*.js' 'packages/**/*.jsx' 'scripts/**/*.js'",
     "test:unit": "jest --verbose --coverage",
-    "updateSnapshots": "npm run test:unit -- -u"
+    "updateSnapshots": "npm run ci:packages && npm run test:unit -- -u"
   },
   "repository": {
     "type": "git",
