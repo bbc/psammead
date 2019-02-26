@@ -11,7 +11,7 @@
     "install:packages": "npm i && lerna clean --yes && lerna bootstrap --hoist",
     "install:packages:link": "npm i && lerna clean --yes && lerna bootstrap --hoist --force-local",
     "postshrinkwrap": "if test -z $CI; then \n npm run force-package-lock-https \n fi",
-    "publish": "node scripts/publish",
+    "publish": "npm run build && node scripts/publish",
     "storybook": "NODE_ENV=development start-storybook -p 8080 -c .storybook",
     "test": "npm run test:lint && npm run test:lint:css && npm run test:unit && npm run test:packages",
     "test:packages": "lerna run test",
