@@ -98,8 +98,7 @@ export const T_REITH_SANS_ITALIC = `
     src: url("${baseFontUrl}BBCReithSans_W_It.woff2") format("woff2"), url("${baseFontUrl}BBCReithSans_W_It.woff") format("woff");
     font-style: italic;
     font-display: optional;
-  }
-`;
+  }`;
 
 export const T_REITH_SANS_BOLD = `
   @font-face {
@@ -107,8 +106,7 @@ export const T_REITH_SANS_BOLD = `
     src: url("${baseFontUrl}BBCReithSans_W_Bd.woff2") format("woff2"), url("${baseFontUrl}BBCReithSans_W_Bd.woff") format("woff");
     font-weight: bold;
     font-display: optional;
-  }
-  `;
+  }`;
 
 export const T_REITH_SANS_BOLD_ITALIC = `
   @font-face {
