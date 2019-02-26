@@ -115,8 +115,7 @@ export const T_REITH_SANS_BOLD_ITALIC = `
     font-weight: bold;
     font-style: italic;
     font-display: optional;
-  }
-  `;
+  }`;
 
 export const T_REITH_SANS_LIGHT = `
   @font-face {
