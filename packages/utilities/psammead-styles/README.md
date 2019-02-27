@@ -29,15 +29,18 @@ You will likely want to use these font-face definitions in tandem with the GEL-d
 import { GEL_FF_REITH_SANS } from '@bbc/gel-foundations/typography';
 ```
 
-These values can then be used directly within CSS declarations in code:
+These values can then be used directly within CSS declarations in code. Note that font-faces should only be declared once on a page:
 
 ```jsx
 import { css } from 'styled-components';
 
-const SomeStyledComponent = css`
+// These should only be included on your page once.
+const someGlobalCSS = css`
   ${T_REITH_SANS_REGULAR};
   ${T_REITH_SANS_ITALIC};
+`;
 
+const SomeStyledComponent = css`
   background-color: ${C_POSTBOX};
   font-family: ${GEL_FF_REITH_SANS};
 `;
