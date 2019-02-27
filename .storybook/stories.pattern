@@ -1,1 +1,1 @@
-../packages/**/*.stories.jsx
+../packages/components/*/*/*.stories.jsx
