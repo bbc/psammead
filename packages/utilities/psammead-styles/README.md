@@ -5,7 +5,7 @@ This package provides a collection of string constants for use in CSS, containin
 ## Exports
 
 `/colours` - Project-defined colours that will be required by multiple Psammead components or themes. These colours are not defined by GEL.
-`/fonts` - Project-defined browser behaviours for the Reith font files.
+`/fonts` - Project-defined browser behaviours for the Reith font. The primary reason these are not considered GEL-defined (and not part of [`@bbc/gel-foundations`](https://www.npmjs.com/package/@bbc/gel-foundations)) is due to the custom weighting and loading definitions.
 
 ## Installation
 
@@ -18,7 +18,15 @@ npm install @bbc/psammead-styles --save
 ```jsx
 import { C_POSTBOX } from '@bbc/psammead-styles/colours';
 
-import { FF_NEWS_SANS_REG } from '@bbc/psammead-styles/fonts';
+import { T_REITH_SANS_REGULAR, T_REITH_SANS_ITALIC } from '@bbc/psammead-styles/fonts';
+```
+
+By importing a subset of the font-face definitions defined in this package, you can prioritise only the most commonly needed fonts for your project, with browser styling stepping in for less common scenarios. For example, in these examples, which import custom fonts for only Reith Sans Regular and Italic, any bold styling would be faked by the browser.
+
+You will likely want to use these font-face definitions in tandem with the GEL-defined font stack definitions, which are available in [`@bbc/gel-foundations`](https://www.npmjs.com/package/@bbc/gel-foundations):
+
+```jsx
+import { GEL_FF_REITH_SANS } from '@bbc/gel-foundations/typography';
 ```
 
 These values can then be used directly within CSS declarations in code:
@@ -27,8 +35,11 @@ These values can then be used directly within CSS declarations in code:
 import { css } from 'styled-components';
 
 const SomeStyledComponent = css`
+  ${T_REITH_SANS_REGULAR};
+  ${T_REITH_SANS_ITALIC};
+
   background-color: ${C_POSTBOX};
-  font-family: ${FF_NEWS_SANS_REG};
+  font-family: ${GEL_FF_REITH_SANS};
 `;
 ```
 
