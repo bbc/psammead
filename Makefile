@@ -14,6 +14,7 @@ code-coverage-after-build:
 	./cc-test-reporter after-build -t lcov;
 
 tests:
+	npm run build;
 	npm test;
 
 storybook:
