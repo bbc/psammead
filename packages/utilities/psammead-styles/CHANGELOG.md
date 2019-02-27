@@ -2,6 +2,7 @@
 
 | Version | Description |
 |---------|-------------|
+| 0.3.0   |  [PR#304](https://github.com/BBC-News/psammead/pull/304) Move font fallback definitions to gel-foundations, add font-face constants. |
 | 0.2.1   |  [PR#300](https://github.com/BBC-News/psammead/pull/300) Adds colours for Consent Banner |
 | 0.2.0   |  [PR#283](https://github.com/BBC-News/psammead/pull/283) Adds colours and fonts necessary for Simorgh V1.0 :art: |
 | 0.1.6   | [PR#224](https://github.com/BBC-News/psammead/pull/224) Add tests for the exported values, coverage 100% :tada: |
