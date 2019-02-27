@@ -5,16 +5,28 @@ import * as fonts from './fonts';
 import * as fontsFromSrc from './src/fonts';
 
 const fontsExpectedExports = {
-  FF_NEWS_SANS_LIT: 'string',
-  FF_NEWS_SANS_REG: 'string',
-  FF_NEWS_SANS_MDM: 'string',
-  FF_NEWS_SANS_BLD: 'string',
-  FF_NEWS_SERIF_LIT: 'string',
-  FF_NEWS_SERIF_REG: 'string',
-  FF_NEWS_SERIF_MDM: 'string',
-  FF_NEWS_SERIF_BLD: 'string',
-  FF_NEWS_SANS_REG_ITAL: 'string',
-  FF_NEWS_SERIF_MDM_ITAL: 'string',
+  T_REITH_SERIF_REGULAR: 'string',
+  T_REITH_SERIF_ITALIC: 'string',
+  T_REITH_SERIF_BOLD: 'string',
+  T_REITH_SERIF_BOLD_ITALIC: 'string',
+  T_REITH_SERIF_LIGHT: 'string',
+  T_REITH_SERIF_LIGHT_ITALIC: 'string',
+  T_REITH_SERIF_MEDIUM: 'string',
+  T_REITH_SERIF_MEDIUM_ITALIC: 'string',
+  T_REITH_SERIF_EXTRA_BOLD: 'string',
+  T_REITH_SERIF_EXTRA_BOLD_ITALIC: 'string',
+  T_REITH_SANS_REGULAR: 'string',
+  T_REITH_SANS_ITALIC: 'string',
+  T_REITH_SANS_BOLD: 'string',
+  T_REITH_SANS_BOLD_ITALIC: 'string',
+  T_REITH_SANS_LIGHT: 'string',
+  T_REITH_SANS_LIGHT_ITALIC: 'string',
+  T_REITH_SANS_MEDIUM: 'string',
+  T_REITH_SANS_MEDIUM_ITALIC: 'string',
+  T_REITH_SANS_EXTRA_BOLD: 'string',
+  T_REITH_SANS_EXTRA_BOLD_ITALIC: 'string',
+  T_REITH_SANS_CONDENSED_REGULAR: 'string',
+  T_REITH_SANS_CONDENSED_BOLD: 'string',
 };
 
 const coloursExpectedExports = {
