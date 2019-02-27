@@ -6,7 +6,7 @@ This package provides a range of string constants for use in CSS, intended to he
 
 `/breakpoints` - GEL breakpoints, as well as typography breakpoints. These use the GEL grid sizes which can be found in the [GEL Grid guidelines](https://www.bbc.co.uk/gel/guidelines/grid#grid-sizes).  
 `/spacings` - GEL spacings and GEL Grid margins and gutters. These use the GEL grid spacing sizes which can be found in the [GEL Grid guidelines](https://www.bbc.co.uk/gel/guidelines/grid#spacing-layout).  
-`/typography` - GEL type sizes and font stacks. These are based on the gel typography standard which can be found in the [GEL guidelines](https://www.bbc.co.uk/gel/guidelines/typography). [More details on how the type sizes were implemented for this package are available here.](./typography_sizes_web.md)
+`/typography` - GEL type sizes and font stacks. These are based on the GEL Typography definitions which can be found in the [GEL guidelines](https://www.bbc.co.uk/gel/guidelines/typography). [More details on how the type sizes were implemented for this package are available here.](./typography_sizes_web.md)
 
 ## Installation
 
