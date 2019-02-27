@@ -2,9 +2,9 @@ import { MEDIA_QUERY_TYPOGRAPHY } from './breakpoints';
 
 const fontFamilyBase = ', Helvetica, Arial, sans-serif';
 
-export const GEL_FF_SERIF = `ReithSerif${fontFamilyBase}`;
-export const GEL_FF_SANS = `ReithSans${fontFamilyBase}`;
-export const GEL_FF_SANS_COND = `ReithSansCondensed${fontFamilyBase}`;
+export const GEL_FF_REITH_SERIF = `ReithSerif${fontFamilyBase}`;
+export const GEL_FF_REITH_SANS = `ReithSans${fontFamilyBase}`;
+export const GEL_FF_REITH_SANS_COND = `ReithSansCondensed${fontFamilyBase}`;
 
 export const GEL_ATLAS = `
   font-size: 4.875rem;
