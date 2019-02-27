@@ -21,7 +21,7 @@ import { C_POSTBOX } from '@bbc/psammead-styles/colours';
 import { T_REITH_SANS_REGULAR, T_REITH_SANS_ITALIC } from '@bbc/psammead-styles/fonts';
 ```
 
-By importing a subset of the font-face definitions defined in this package, you can prioritise only the most commonly needed fonts for your project, with browser styling stepping in for less common scenarios. For example, in these examples, which import custom fonts for only Reith Sans Regular and Italic, any bold styling would be faked by the browser.
+By importing a subset of the font-face definitions defined in this package, you can prioritise only the most commonly needed fonts for your project, with browser styling stepping in for less common scenarios. For example, in these examples, which import custom fonts for only Reith Sans Regular and Italic, any bold styling would be "faked" by the browser.
 
 You will likely want to use these font-face definitions in tandem with the GEL-defined font stack definitions, which are available in [`@bbc/gel-foundations`](https://www.npmjs.com/package/@bbc/gel-foundations):
 
