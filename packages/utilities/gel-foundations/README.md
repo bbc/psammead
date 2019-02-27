@@ -30,7 +30,7 @@ These values can then be used directly within CSS declarations in code:
 import { css } from 'styled-components';
 
 const SomeStyledComponent = css`
-  font-family: ${GEL_FF_SANS};
+  font-family: ${GEL_FF_REITH_SANS};
 
   @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
     grid-gap: ${GEL_GUTTER_ABOVE_600PX};
