@@ -1,4 +1,4 @@
-# GEL Typography Sizes (em/rem)
+# GEL Typography Sizes (in `rem` units)
  
 These values are based on the [GEL Typography guidelines](https://www.bbc.co.uk/gel/guidelines/typography#type-sizes), which are defined in pixels. The values below can be recreated and verified by simply dividing the pixel values by 16 (16px is the base font size for the majority of browsers).
 
