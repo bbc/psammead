@@ -23,8 +23,8 @@
   },
   "homepage": "https://github.com/bbc/psammead/blob/latest/packages/components/psammead-sitewide-links/README.md",
   "dependencies": {
-    "@bbc/gel-foundations": "^0.1.2",
-    "@bbc/psammead-styles": "^0.2.1",
+    "@bbc/gel-foundations": "^0.2.2",
+    "@bbc/psammead-styles": "^0.3.0",
     "nanoid": "^2.0.0",
     "prop-types": "^15.6.2",
     "react": "^16.6.3",
