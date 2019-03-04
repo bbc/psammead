@@ -47,9 +47,9 @@ exports[`SitewideLinks should render correctly 1`] = `
 
 .c0 {
   background-color: #222222;
-  font-size: 0.875em;
+  font-size: 0.875rem;
   line-height: 1rem;
-  font-family: ReithSansNewsRegular,Helvetica,Arial,sans-serif;
+  font-family: ReithSans,Helvetica,Arial,sans-serif;
 }
 
 .c6 {
@@ -122,7 +122,7 @@ exports[`SitewideLinks should render correctly 1`] = `
 
 @media (min-width:37.5em) {
   .c0 {
-    font-size: 0.8125em;
+    font-size: 0.8125rem;
   }
 }
 
