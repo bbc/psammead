@@ -25,6 +25,26 @@ Psammead packages are split into:
 git clone git@github.com:bbc/psammead.git
 ```
 
+### Check npm and nvm versions
+
+The following checks are necessary for maintaining consistency with the `package-lock.json`.
+
+```
+nvm version
+```
+OR
+```
+node -v
+```
+
+Run either of the above commands and verify that your local node version is inline with the [current node version](./.nvmrc).
+
+```
+npm -v
+```
+
+Run the above command to check that your local version of npm matches the [current npm version](./.npmrc).
+
 ### :hammer: Setup Local Environment
 
 ```
