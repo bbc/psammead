@@ -65,7 +65,7 @@ NB, we've defined global styles (normalize, box-sizing, Reith font) in the [Stor
 npm run build
 ```
 
-## 💻 Developing with Psammead
+## :computer: Developing with Psammead
 
 When making changes to a package locally if you want to pull those changes into another psammead package then the following command will create the required symlinks for you.
 
