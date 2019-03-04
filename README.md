@@ -38,7 +38,7 @@ N.B. When merging branches, the `npm run install:packages` command should be fav
 Run the following command to link all psammead packages up regardless of dependancy version:
 
 ```
-npm install:packages:link
+npm run install:packages:link
 ```
 
 ### :runner: Run tests
