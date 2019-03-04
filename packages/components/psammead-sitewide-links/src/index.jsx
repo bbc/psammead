@@ -2,7 +2,10 @@ import React from 'react';
 import styled, { css } from 'styled-components';
 import { arrayOf, shape, string } from 'prop-types';
 import { C_EBON, C_WHITE } from '@bbc/psammead-styles/colours';
-import { GEL_BREVIER, GEL_FF_REITH_SANS } from '@bbc/gel-foundations/typography';
+import {
+  GEL_BREVIER,
+  GEL_FF_REITH_SANS,
+} from '@bbc/gel-foundations/typography';
 import {
   GEL_SPACING_DBL,
   GEL_MARGIN_BELOW_400PX,

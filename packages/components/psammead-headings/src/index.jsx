@@ -4,7 +4,12 @@ import {
   GEL_SPACING_DBL,
   GEL_SPACING_QUAD,
 } from '@bbc/gel-foundations/spacings';
-import { GEL_CANON, GEL_TRAFALGAR, GEL_FF_REITH_SANS, GEL_FF_REITH_SERIF } from '@bbc/gel-foundations/typography';
+import {
+  GEL_CANON,
+  GEL_TRAFALGAR,
+  GEL_FF_REITH_SANS,
+  GEL_FF_REITH_SERIF,
+} from '@bbc/gel-foundations/typography';
 
 export const Headline = styled.h1`
   color: ${C_SHADOW};
