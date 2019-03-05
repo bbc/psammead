@@ -6,7 +6,19 @@ exports.mkDir = function(dirName) {
 
 exports.install = function() {
   return new Promise((resolve, reject) => {
-    const response = shell.exec('npm install --quiet && npm install @bbc/psammead-test-helpers');
+    const response = shell.exec('npm install --quiet');
+
+    if (response.code === 0) {
+      resolve();
+    } else {
+      reject(response.output);
+    }
+  });
+};
+
+exports.installPackage = function(package) {
+  return new Promise((resolve, reject) => {
+    const response = shell.exec(`npm install ${package} --quiet`);
 
     if (response.code === 0) {
       resolve();

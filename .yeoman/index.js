@@ -49,7 +49,10 @@ module.exports = class extends Generator {
 
   install() {
     this.log(chalk.green('Now installing your package...'));
-    return fsActions.install();
+    
+    return fsActions
+      .install()
+      .then(fsActions.installPackage('@bbc/psammead-test-helpers'));
   }
 
   end() {

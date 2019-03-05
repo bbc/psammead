@@ -16,7 +16,7 @@
     "storybook": "NODE_ENV=development start-storybook -p 8080 -c .storybook",
     "test": "npm run test:lint && npm run test:lint:css && npm run test:unit && npm run test:packages",
     "test:packages": "lerna run test",
-    "test:lint": "eslint --ext .js,jsx,json ./packages ./scripts",
+    "test:lint": "eslint --ext .js,jsx,json ./packages ./scripts ./.yeoman",
     "test:lint:css": "stylelint 'packages/**/*.js' 'packages/**/*.jsx' 'scripts/**/*.js'",
     "test:unit": "npm run build && jest --verbose --coverage",
     "updateSnapshots": "npm run ci:packages && npm run test:unit -- -u"
