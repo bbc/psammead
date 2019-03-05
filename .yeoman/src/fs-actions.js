@@ -1,11 +1,11 @@
 const shell = require('shelljs');
 
-exports.mkDir = function(dirName) {
+exports.mkDir = dirName => {
   shell.mkdir(dirName);
 };
 
-exports.install = function() {
-  return new Promise((resolve, reject) => {
+exports.install = () =>
+  new Promise((resolve, reject) => {
     const response = shell.exec('npm install --quiet');
 
     if (response.code === 0) {
@@ -14,11 +14,10 @@ exports.install = function() {
       reject(response.output);
     }
   });
-};
 
-exports.installPackage = function(package) {
-  return new Promise((resolve, reject) => {
-    const response = shell.exec(`npm install ${package} --quiet`);
+exports.installPackage = npmPackage =>
+  new Promise((resolve, reject) => {
+    const response = shell.exec(`npm install ${npmPackage} --quiet`);
 
     if (response.code === 0) {
       resolve();
@@ -26,4 +25,3 @@ exports.installPackage = function(package) {
       reject(response.output);
     }
   });
-};
