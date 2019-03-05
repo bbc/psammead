@@ -2,6 +2,7 @@
 
 | Version | Description |
 |---------|-------------|
+| 0.1.7   | [PR#323](https://github.com/BBC/psammead/pull/323) Update readme storybook badge |
 | 0.1.6   | [PR#264](https://github.com/BBC/psammead/pull/319) Resolving package-lock issues. |
 | 0.1.5   | [PR#264](https://github.com/BBC/psammead/pull/264) Resolving package-lock issues. |
 | 0.1.4   | [PR#245](https://github.com/BBC-News/psammead/pull/245) Ensures documentation consistent across component packages. |
