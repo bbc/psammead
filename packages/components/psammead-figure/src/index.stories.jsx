@@ -1,6 +1,5 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import { withReadme } from 'storybook-readme';
 import Image from '@bbc/psammead-image';
 import Readme from '../README.md';
 import Figure from '.';
@@ -11,9 +10,8 @@ const imageSrc =
   'https://ichef.bbci.co.uk/news/640/cpsprodpb/439A/production/_100960371_syrians_and_asylum_v2-nc.png';
 const imageWidth = 853;
 storiesOf('Figure', module)
-  .addDecorator(withReadme(Readme))
   .add('containing Image', () => (
     <Figure>
       <Image alt={imageAlt} src={imageSrc} width={imageWidth} />
     </Figure>
-  ));
+  ), { notes: Readme });

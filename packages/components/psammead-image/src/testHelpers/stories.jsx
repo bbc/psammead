@@ -1,6 +1,5 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import { withReadme } from 'storybook-readme';
 import Readme from '../../README.md';
 import { custom, landscape, portrait, square } from './fixtureData';
 
@@ -24,26 +23,25 @@ const stories = (
   styleDecorator = storyFn => storyFn(),
 ) =>
   storiesOf(title, module)
-    .addDecorator(withReadme(Readme))
-    .addDecorator(styleDecorator)
+      .addDecorator(styleDecorator)
     .add('landscape image', () => (
       <Component {...getProps(landscape, includeHeight)} {...additionalProps} />
-    ))
+    ), { notes: Readme })
     .add('portrait image', () => (
       <Component {...getProps(portrait, includeHeight)} {...additionalProps} />
-    ))
+    ), { notes: Readme })
     .add('square image', () => (
       <Component {...getProps(square, includeHeight)} {...additionalProps} />
-    ))
+    ), { notes: Readme })
     .add('custom ratio image', () => (
       <Component {...getProps(custom, includeHeight)} {...additionalProps} />
-    ))
+    ), { notes: Readme })
     .add('image with srcset', () => (
       <Component
         {...getProps(landscape, includeHeight)}
         srcset={landscape.srcset}
         {...additionalProps}
       />
-    ));
+    ), { notes: Readme });
 
 export default stories;
