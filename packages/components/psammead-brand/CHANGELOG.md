@@ -2,6 +2,7 @@
 
 | Version | Description |
 | ------- | ----------- |
+| 0.2.2   | [PR#264](https://github.com/BBC/psammead/pull/319) Resolving package-lock issues. |
 | 0.2.1   | [PR#264](https://github.com/BBC/psammead/pull/264) Resolving package-lock issues. |
 | 0.2.0   | [PR#253](https://github.com/BBC-News/psammead/pull/253) Add support for high contrast mode and print |
 | 0.1.4   | [PR#245](https://github.com/BBC-News/psammead/pull/245) Ensures documentation consistent across component packages. |
