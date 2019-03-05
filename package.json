@@ -97,10 +97,12 @@
       "scripts/**",
       "!**/*.stories.{js,jsx}",
       "!**/.eslintrc.js",
-      "!**/dist/**"
+      "!**/dist/**",
+      "!**/.yeoman/**"
     ],
     "testMatch": [
-      "**/*.test.{js,jsx}"
+      "**/*.test.{js,jsx}",
+      "!**/.yeoman/**"
     ]
   },
   "spec": {

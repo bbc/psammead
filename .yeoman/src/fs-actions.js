@@ -1,4 +1,4 @@
-  const shell = require('shelljs');
+const shell = require('shelljs');
 
 exports.mkDir = function(dirName) {
   shell.mkdir(dirName);
@@ -6,7 +6,7 @@ exports.mkDir = function(dirName) {
 
 exports.install = function() {
   return new Promise((resolve, reject) => {
-    const response = shell.exec('npm install --quiet');
+    const response = shell.exec('npm install --quiet && npm install @bbc/psammead-test-helpers');
 
     if (response.code === 0) {
       resolve();

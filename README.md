@@ -57,7 +57,13 @@ Run the component tests:
 npm test
 ```
 
-This runs Jest across any packages matching this glob pattern: `packages/components/**/*.test.jsx`. It also runs each package's `npm test` command if it is defined.
+This runs Jest across any packages matching this glob pattern: `packages/components/**/*.test.jsx`. It also runs each package's `npm test` command if it is defined
+
+### :pencil2: Create a new package
+
+```
+npm run create
+```
 
 ### :runner: Run Storybook
 
