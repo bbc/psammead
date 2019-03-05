@@ -33,10 +33,7 @@
   "homepage": "https://github.com/bbc/psammead#readme",
   "dependencies": {
     "styled-components": "^4.1.2",
-    "styled-normalize": "^8.0.4",
-    "yeoman-environment": "^2.3.4",
-    "yeoman-generator": "^3.2.0",
-    "yo": "^2.0.5"
+    "styled-normalize": "^8.0.4"
   },
   "devDependencies": {
     "@babel/cli": "^7.2.0",
@@ -83,7 +80,10 @@
     "stylelint-config-recommended": "^2.1.0",
     "stylelint-config-styled-components": "^0.1.1",
     "stylelint-processor-styled-components": "^1.5.1",
-    "yargs-parser": "^11.1.1"
+    "yargs-parser": "^11.1.1",
+    "yeoman-environment": "^2.3.4",
+    "yeoman-generator": "^3.2.0",
+    "yo": "^2.0.5"
   },
   "husky": {
     "hooks": {
