@@ -5,4 +5,3 @@ import <%= componentName %> from './index';
 describe('<%= componentName %>', () => {
   shouldMatchSnapshot('should render correctly', <<%= componentName %> />);
 });
-
