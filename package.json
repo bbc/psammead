@@ -7,6 +7,7 @@
     "build": "lerna exec --parallel -- babel src -d dist --ignore '**/*.test.jsx,**/*.stories.jsx' --root-mode upward",
     "ci:packages": "npm ci && lerna exec -- npm ci",
     "deploy-storybook": "build-storybook -o storybook_dist && gh-pages -d storybook_dist",
+    "create": "yo .yeoman",
     "force-package-lock-https": "find . -type f -name \"package-lock.json\" | grep -v node_modules | xargs -I % sh -c 'echo \"Replacing http->https in %\"; sed -i \"\" -e \"s/http:\\/\\//https:\\/\\//g\" %'",
     "install:packages": "npm i && lerna clean --yes && lerna bootstrap --hoist",
     "install:packages:link": "npm i && lerna clean --yes && lerna bootstrap --hoist --force-local",
@@ -32,7 +33,10 @@
   "homepage": "https://github.com/bbc/psammead#readme",
   "dependencies": {
     "styled-components": "^4.1.2",
-    "styled-normalize": "^8.0.4"
+    "styled-normalize": "^8.0.4",
+    "yeoman-environment": "^2.3.4",
+    "yeoman-generator": "^3.2.0",
+    "yo": "^2.0.5"
   },
   "devDependencies": {
     "@babel/cli": "^7.2.0",
@@ -49,7 +53,7 @@
     "babel-eslint": "^8.2.6",
     "babel-loader": "^8.0.4",
     "babel-plugin-styled-components": "^1.9.2",
-    "chalk": "^2.4.1",
+    "chalk": "^2.4.2",
     "eslint": "^5.9.0",
     "eslint-config-airbnb": "^17.1.0",
     "eslint-config-prettier": "^3.3.0",
