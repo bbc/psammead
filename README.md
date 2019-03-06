@@ -74,7 +74,7 @@ When making changes to a package locally if you want to pull those changes into 
 Run the following command to link all psammead packages up regardless of dependency version:
 
 ```
-npm install:packages:link
+npm run install:packages:link
 ```
 
 ## :dizzy: Using Psammead
