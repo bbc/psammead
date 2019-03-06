@@ -28,6 +28,7 @@
     "figure"
   ],
   "devDependencies": {
-    "@bbc/psammead-test-helpers": "^0.3.0"
+    "@bbc/psammead-test-helpers": "^0.3.0",
+    "@bbc/psammead-visually-hidden-text": "^0.1.8"
   }
 }
