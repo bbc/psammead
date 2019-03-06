@@ -24,7 +24,7 @@ const WrapperComponent = ({ alt, ratio, src, width }) => (
     <ImagePlaceholder ratio={ratio}>
       <Image alt={alt} src={src} width={width} />
       <Copyright>
-        <VisuallyHiddenText>Copyright </VisuallyHiddenText>
+        <VisuallyHiddenText>Image source, </VisuallyHiddenText>
         Getty Images
       </Copyright>
     </ImagePlaceholder>

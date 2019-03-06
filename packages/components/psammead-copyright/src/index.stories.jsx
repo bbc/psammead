@@ -10,7 +10,7 @@ storiesOf('Copyright', module)
     'with visually hidden text',
     () => (
       <Copyright>
-        <VisuallyHiddenText>Offscreen text </VisuallyHiddenText>
+        <VisuallyHiddenText>Image source, </VisuallyHiddenText>
         Getty Images
       </Copyright>
     ),
