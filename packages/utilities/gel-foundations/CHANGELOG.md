@@ -2,6 +2,7 @@
 
 | Version | Description |
 |---------|-------------|
+| 0.2.4   | [PR#323](https://github.com/BBC/psammead/pull/323) Update readme storybook badge |
 | 0.2.3   | [PR#264](https://github.com/BBC/psammead/pull/319) Resolving package-lock issues. |
 | 0.2.2   | [PR#304](https://github.com/BBC-News/psammead/pull/304) Add font family definitions, which include GEL-defined font fallbacks. |
 | 0.2.1   | [PR#303](https://github.com/BBC-News/psammead/pull/303) Bump to ensure correct build is published |

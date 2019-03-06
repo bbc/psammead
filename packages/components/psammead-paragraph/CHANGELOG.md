@@ -2,6 +2,7 @@
 
 | Version | Description |
 |---------|-------------|
+| 0.2.2   | [PR#323](https://github.com/BBC/psammead/pull/323) Update readme storybook badge |
 | 0.2.1   | [PR#310](https://github.com/BBC/psammead/pull/310) Update package-lock file. |
 | 0.2.0   | [PR#291](https://github.com/BBC/psammead/pull/291) Update appearance to reflect UX designs. |
 | 0.1.8   | [PR#264](https://github.com/BBC/psammead/pull/264) Resolving package-lock issues. |
