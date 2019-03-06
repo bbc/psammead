@@ -16,14 +16,17 @@ Displays a source attribution in block capitals in the bottom-right of the paren
 
 ## Usage
 
-Commonly used alongside [`psammead-figure`](https://github.com/BBC-News/psammead/tree/latest/packages/components/psammead-figure), [`psammead-image`](https://github.com/BBC-News/psammead/tree/latest/packages/components/psammead-image) and [`psammead-image-placeholder`](https://github.com/BBC-News/psammead/tree/latest/packages/components/psammead-image-placeholder).
+Commonly used alongside [`psammead-figure`](https://github.com/BBC-News/psammead/tree/latest/packages/components/psammead-figure), [`psammead-image`](https://github.com/BBC-News/psammead/tree/latest/packages/components/psammead-image) and [`psammead-image-placeholder`](https://github.com/BBC-News/psammead/tree/latest/packages/components/psammead-image-placeholder). Can also pass in [`psammead-visually-hidden-text`](https://github.com/BBC-News/psammead/tree/latest/packages/components/psammead-visually-hidden-text) in order to announce the component.
 
 ```jsx
 const WrapperComponent = ({ alt, ratio, src, width }) => (
   <Figure>
     <ImagePlaceholder ratio={ratio}>
       <Image alt={alt} src={src} width={width} />
-      <Copyright>Getty Images</Copyright>
+      <Copyright>
+        <VisuallyHiddenText>Copyright </VisuallyHiddenText>
+        Getty Images
+      </Copyright>
     </ImagePlaceholder>
   </Figure>
 );
