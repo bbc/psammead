@@ -23,7 +23,7 @@ const WrapperComponent = ({ alt, src, width }) => (
   <Figure>
     <Image alt={alt} src={src} width={width} />
     <Copyright>
-      <VisuallyHiddenText>Copyright </VisuallyHiddenText>
+      <VisuallyHiddenText>Image source, </VisuallyHiddenText>
       Getty Images
     </Copyright>
   </Figure>
