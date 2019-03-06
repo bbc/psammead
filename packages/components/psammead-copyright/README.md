@@ -44,6 +44,8 @@ Do not use this component if you know the source attribution is already covered 
 
 The default styling of this component is intended to comply with WCAG colour contrast standards.
 
+Visually Hidden Text was added to the component story as an example for how it can be used for screen readers.
+
 <!-- ## Roadmap -->
 
 ## Contributing
