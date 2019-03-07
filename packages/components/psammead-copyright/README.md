@@ -44,7 +44,7 @@ Do not use this component if you know the source attribution is already covered 
 
 The default styling of this component is intended to comply with WCAG colour contrast standards.
 
-Visually Hidden Text was added to the component story as an example for how it can be used for screen readers.
+The `VisuallyHiddenText` component can be used as a child of `Copyright` to add additional context to screen reader users. An example of this can be found in [our storybook](https://bbc.github.io/psammead/?selectedKind=Copyright&selectedStory=with%20visually%20hidden%20text)
 
 <!-- ## Roadmap -->
 
