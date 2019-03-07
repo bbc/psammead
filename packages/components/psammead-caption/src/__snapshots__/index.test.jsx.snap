@@ -17,6 +17,7 @@ exports[`should render Caption with some offscreen text 1`] = `
   line-height: 1.125rem;
   background-color: #D5D0CD;
   color: #404040;
+  direction: ltr;
   font-family: ReithSans,Helvetica,Arial,sans-serif;
   padding: 0.5rem;
   width: 100%;

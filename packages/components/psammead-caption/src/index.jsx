@@ -11,6 +11,7 @@ const Caption = styled.figcaption`
   ${GEL_LONG_PRIMER};
   background-color: ${C_STONE};
   color: ${C_STORM};
+  direction: ${props => props.textDirection || 'ltr'};
   font-family: ${GEL_FF_REITH_SANS};
   padding: ${GEL_SPACING};
   width: 100%;

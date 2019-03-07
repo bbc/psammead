@@ -23,4 +23,10 @@ storiesOf('Caption', module)
       </InlineLink>
       .
     </Caption>
+  ))
+  .add('with right-to-left text', () => (
+    <Caption textDirection="rtl">
+      چارلز وسلر،‌ تهیه کننده فیلم کتاب سبز در کنار پیتر فرلی و سایر عوامل فیلم
+      در حال دریافت جایزه اسکار بهترین فیلم
+    </Caption>
   ));
