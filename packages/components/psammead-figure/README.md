@@ -21,10 +21,12 @@ The following example shows `psammead-figure` wrapping an
 - [psammead-image-placeholder](https://github.com/bbc/psammead/tree/latest/packages/components/psammead-image-placeholder), a `<div>` with background image
 - [psammead-image](https://github.com/bbc/psammead/tree/latest/packages/components/psammead-image), an `<img>`
 - [psammead-caption](https://github.com/bbc/psammead/tree/latest/packages/components/psammead-caption), a `<figcaption>`
+- [psammead-copyright](https://github.com/bbc/psammead/tree/latest/packages/components/psammead-copyright), a `<p>`
 - [psammead-visually-hidden-text](https://github.com/bbc/psammead/tree/latest/packages/components/psammead-visually-hidden-text), a hidden `<span>` available only to assistive technology
 
 ```jsx
 import Caption from '@bbc/psammead-caption';
+import Copyright from '@bbc/copyright';
 import Figure from '@bbc/psammead-figure';
 import Image from '@bbc/psammead-image';
 import ImagePlaceholder from '@bbc/psammead-image-placeholder';
@@ -34,6 +36,10 @@ const Wrapper = ({ alt, captionText, ratio, src, width }) => (
   <Figure>
     <ImagePlaceholder ratio={ratio}>
       <Image alt={alt} src={src} width={width} />
+      <Copyright>
+        <VisuallyHiddenText>Image copyright, </VisuallyHiddenText>
+        {copyrightOwner}
+      </Copyright>
     </ImagePlaceholder>
     <Caption>
       <VisuallyHiddenText>Image caption, </VisuallyHiddenText>

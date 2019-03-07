@@ -16,13 +16,15 @@ Displays a source attribution in block capitals in the bottom-right of the paren
 
 ## Usage
 
-Commonly used alongside [`psammead-figure`](https://github.com/BBC-News/psammead/tree/latest/packages/components/psammead-figure) and [`psammead-image`](https://github.com/BBC-News/psammead/tree/latest/packages/components/psammead-image).
+Commonly used alongside [`psammead-figure`](https://github.com/BBC-News/psammead/tree/latest/packages/components/psammead-figure), [`psammead-image`](https://github.com/BBC-News/psammead/tree/latest/packages/components/psammead-image) and [`psammead-image-placeholder`](https://github.com/BBC-News/psammead/tree/latest/packages/components/psammead-image-placeholder).
 
 ```jsx
 const WrapperComponent = ({ alt, src, width }) => (
   <Figure>
-    <Image alt={alt} src={src} width={width} />
-    <Copyright>Getty Images</Copyright>
+    <ImagePlaceholder ratio={ratio}>
+      <Image alt={alt} src={src} width={width} />
+      <Copyright>Getty Images</Copyright>
+    </ImagePlaceholder>
   </Figure>
 );
 ```
