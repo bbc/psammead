@@ -15,7 +15,9 @@ import {
   F_REITH_SANS_BOLD,
   F_REITH_SERIF_LIGHT,
 } from '@bbc/psammead-styles/fonts';
-import Helmet from 'react-helmet';
+import Helmet from 'react-helmet';  
+import { initializeRTL } from 'storybook-addon-rtl';
+
 
 const theme = create({
   base: 'light',
@@ -76,6 +78,7 @@ export const ampDecorator = story => (
 
 function loadAllStories() {
   require('glob-loader!./stories.pattern');
+  initializeRTL();
 }
 
 configure(loadAllStories, module);

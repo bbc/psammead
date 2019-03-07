@@ -1,6 +1,6 @@
 {
   "name": "@bbc/psammead",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "Core Components Library Developed & Maintained By The Articles and Reach & Languages Team",
   "main": "index.js",
   "scripts": {
@@ -77,6 +77,7 @@
     "request": "^2.88.0",
     "semver": "^5.6.0",
     "shelljs": "^0.8.3",
+    "storybook-addon-rtl": "^0.1.2",
     "storybook-readme": "^4.0.0-beta1",
     "strip-ansi": "^5.0.0",
     "stylelint": "^9.8.0",
