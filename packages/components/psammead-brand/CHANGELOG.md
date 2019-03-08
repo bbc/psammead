@@ -2,6 +2,7 @@
 
 | Version | Description |
 | ------- | ----------- |
+| 0.3.0   | [PR#338](https://github.com/BBC/psammead/pull/338) Limit banner svg to group 5 |
 | 0.2.3   | [PR#323](https://github.com/BBC/psammead/pull/323) Update readme storybook badge |
 | 0.2.2   | [PR#264](https://github.com/BBC/psammead/pull/319) Resolving package-lock issues. |
 | 0.2.1   | [PR#264](https://github.com/BBC/psammead/pull/264) Resolving package-lock issues. |
