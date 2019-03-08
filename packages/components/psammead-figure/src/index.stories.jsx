@@ -5,6 +5,7 @@ import Caption from '@bbc/psammead-caption';
 import Copyright from '@bbc/psammead-copyright';
 import Image from '@bbc/psammead-image';
 import ImagePlaceholder from '@bbc/psammead-image-placeholder';
+import VisuallyHiddenText from '@bbc/psammead-visually-hidden-text';
 import Readme from '../README.md';
 import Figure from '.';
 
@@ -26,8 +27,14 @@ storiesOf('Figure', module)
     <Figure>
       <ImagePlaceholder ratio={imageRatio}>
         <Image alt={imageAlt} src={imageSrc} width={imageWidth} />
-        <Copyright>Copyright</Copyright>
+        <Copyright>
+          <VisuallyHiddenText>Image copyright, </VisuallyHiddenText>
+          Copyright
+        </Copyright>
       </ImagePlaceholder>
-      <Caption>Caption</Caption>
+      <Caption>
+        <VisuallyHiddenText>Image caption, </VisuallyHiddenText>
+        Caption
+      </Caption>
     </Figure>
   ));
