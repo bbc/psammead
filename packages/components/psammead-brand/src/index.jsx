@@ -6,7 +6,7 @@ import VisuallyHiddenText from '@bbc/psammead-visually-hidden-text';
 import {
   GEL_GROUP_2_SCREEN_WIDTH_MIN,
   GEL_GROUP_3_SCREEN_WIDTH_MAX,
-  GEL_GROUP_5_SCREEN_WIDTH_MIN
+  GEL_GROUP_5_SCREEN_WIDTH_MIN,
 } from '@bbc/gel-foundations/breakpoints';
 import {
   GEL_MARGIN_BELOW_400PX,
