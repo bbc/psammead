@@ -33,14 +33,6 @@ cd psammead && npm run install:packages
 
 N.B. When merging branches, the `npm run install:packages` command should be favoured over `npm install`. [More details available here](https://github.com/bbc/psammead/pull/264).
 
-### :link: Link packages locally
-
-Run the following command to link all psammead packages up regardless of dependancy version:
-
-```
-npm run install:packages:link
-```
-
 ### :runner: Run tests
 
 Install dependencies locked to `package-lock.json`:
@@ -71,6 +63,18 @@ NB, we've defined global styles (normalize, box-sizing, Reith font) in the [Stor
 
 ```
 npm run build
+```
+
+## :computer: Developing with Psammead
+
+When making changes to a package locally if you want to pull those changes into another psammead package then the following command will create the required symlinks for you.
+
+### :link: Link packages locally
+
+Run the following command to link all psammead packages up regardless of dependency version:
+
+```
+npm run install:packages:link
 ```
 
 ## :dizzy: Using Psammead
