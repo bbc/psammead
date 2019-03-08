@@ -19,7 +19,7 @@ Displays a source attribution in block capitals in the bottom-right of the paren
 Commonly used alongside [`psammead-figure`](https://github.com/BBC-News/psammead/tree/latest/packages/components/psammead-figure), [`psammead-image`](https://github.com/BBC-News/psammead/tree/latest/packages/components/psammead-image) and [`psammead-image-placeholder`](https://github.com/BBC-News/psammead/tree/latest/packages/components/psammead-image-placeholder).
 
 ```jsx
-const WrapperComponent = ({ alt, src, width }) => (
+const WrapperComponent = ({ alt, ratio, src, width }) => (
   <Figure>
     <ImagePlaceholder ratio={ratio}>
       <Image alt={alt} src={src} width={width} />
