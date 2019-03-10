@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react';
 import { configure, addDecorator } from '@storybook/react';
-import { setOptions } from '@storybook/addon-options';
+import { withOptions } from '@storybook/addon-options';
 import styledNormalize from 'styled-normalize';
 import { createGlobalStyle } from 'styled-components';
 import {
@@ -17,10 +17,10 @@ import {
 } from '@bbc/psammead-styles/fonts';
 import Helmet from 'react-helmet';  
 
-setOptions({
-  name: 'BBC Psammead',
-  url: 'https://github.com/bbc/psammead',
-  addonPanelInRight: true,
+withOptions({
+  brandTitle: 'BBC Psammead',
+  brandUrl: 'https://github.com/bbc/psammead',
+  panelPosition: 'right',
   sidebarAnimations: true,
   sortStoriesByKind: true,
 });
