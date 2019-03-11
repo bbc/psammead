@@ -29,7 +29,6 @@ addParameters({
   options: {
     panelPosition: 'right',
     sidebarAnimations: true,
-    sortStoriesByKind: true,
     theme,
   },
 });
