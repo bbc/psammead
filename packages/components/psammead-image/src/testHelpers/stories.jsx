@@ -1,6 +1,6 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import Readme from '../../README.md';
+import notes from '../../README.md';
 import { custom, landscape, portrait, square } from './fixtureData';
 
 function getProps(image, includeHeight) {

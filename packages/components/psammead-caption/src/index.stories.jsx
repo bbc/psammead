@@ -7,7 +7,7 @@ import Caption from '.';
 
 storiesOf('Caption', module)
   .add('default', () => <Caption>This is a caption.</Caption>, {
-    notes: Readme,
+    notes,
   })
   .add(
     'with offscreen text',
