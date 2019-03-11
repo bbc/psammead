@@ -34,6 +34,7 @@
   "homepage": "https://github.com/bbc/psammead#readme",
   "dependencies": {
     "@bbc/psammead-styles": "^0.3.0",
+    "@storybook/theming": "^5.0.1",
     "styled-components": "^4.1.2",
     "styled-normalize": "^8.0.4"
   },
@@ -46,7 +47,6 @@
     "@storybook/addon-actions": "^5.0.1",
     "@storybook/addon-knobs": "^5.0.1",
     "@storybook/addon-notes": "^5.0.1",
-    "@storybook/addon-options": "^5.0.1",
     "@storybook/addon-viewport": "^5.0.1",
     "@storybook/react": "^5.0.1",
     "babel-core": "^7.0.0-bridge.0",
