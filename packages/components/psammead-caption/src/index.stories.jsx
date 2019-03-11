@@ -2,7 +2,7 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 import InlineLink from '@bbc/psammead-inline-link';
 import VisuallyHiddenText from '@bbc/psammead-visually-hidden-text';
-import Readme from '../README.md';
+import notes from '../README.md';
 import Caption from '.';
 
 storiesOf('Caption', module)
@@ -17,7 +17,7 @@ storiesOf('Caption', module)
         This is a caption with preceding offscreen text.
       </Caption>
     ),
-    { notes: Readme },
+    { notes },
   )
   .add(
     'containing an inline link',
@@ -30,5 +30,5 @@ storiesOf('Caption', module)
         .
       </Caption>
     ),
-    { notes: Readme },
+    { notes },
   );

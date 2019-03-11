@@ -1,7 +1,7 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import Image from '@bbc/psammead-image';
-import Readme from '../README.md';
+import notes from '../README.md';
 import Figure from '.';
 
 const imageAlt =
@@ -16,5 +16,5 @@ storiesOf('Figure', module).add(
       <Image alt={imageAlt} src={imageSrc} width={imageWidth} />
     </Figure>
   ),
-  { notes: Readme },
+  { notes },
 );

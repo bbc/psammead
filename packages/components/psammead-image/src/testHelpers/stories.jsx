@@ -32,7 +32,7 @@ const stories = (
           {...additionalProps}
         />
       ),
-      { notes: Readme },
+      { notes },
     )
     .add(
       'portrait image',
@@ -42,21 +42,21 @@ const stories = (
           {...additionalProps}
         />
       ),
-      { notes: Readme },
+      { notes },
     )
     .add(
       'square image',
       () => (
         <Component {...getProps(square, includeHeight)} {...additionalProps} />
       ),
-      { notes: Readme },
+      { notes },
     )
     .add(
       'custom ratio image',
       () => (
         <Component {...getProps(custom, includeHeight)} {...additionalProps} />
       ),
-      { notes: Readme },
+      { notes },
     )
     .add(
       'image with srcset',
@@ -67,7 +67,7 @@ const stories = (
           {...additionalProps}
         />
       ),
-      { notes: Readme },
+      { notes },
     );
 
 export default stories;

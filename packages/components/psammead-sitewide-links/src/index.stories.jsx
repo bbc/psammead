@@ -1,6 +1,6 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import Readme from '../README.md';
+import notes from '../README.md';
 import SitewideLinks from './index';
 
 const link = name => ({
@@ -19,5 +19,5 @@ storiesOf('SitewideLinks', module).add(
       externalLink={link('last')}
     />
   ),
-  { notes: Readme },
+  { notes },
 );
