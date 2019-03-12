@@ -1,6 +1,6 @@
 /* 
    Screen sizes for GEL Typography
-   These namings are based on the GEL description. They are also known as group B and group D
+   These namings are based on the GEL description. They are also known as group A, group B and group D
    Link to relevant GEL docs: http://www.bbc.co.uk/gel/guidelines/typography#type-sizes
 */
 export const GEL_GROUP_A_MAX_WIDTH = 19.9375; // 319px
