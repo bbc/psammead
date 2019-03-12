@@ -1,4 +1,4 @@
-# gel-foundations &middot; [![GitHub license](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](https://github.com/bbc/psammead/blob/latest/LICENSE) [![npm version](https://img.shields.io/npm/v/@bbc/gel-foundations.svg)](https://www.npmjs.com/package/@bbc/gel-foundations) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/bbc/psammead/blob/latest/CONTRIBUTING.md)
+# gel-foundations - [![GitHub license](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](https://github.com/bbc/psammead/blob/latest/LICENSE) [![npm version](https://img.shields.io/npm/v/@bbc/gel-foundations.svg)](https://www.npmjs.com/package/@bbc/gel-foundations) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/bbc/psammead/blob/latest/CONTRIBUTING.md)
 
 This package provides a range of string constants for use in CSS, intended to help implement [BBC GEL-compliant](https://www.bbc.co.uk/gel/articles/what-is-gel) webpages and components.
 
@@ -6,7 +6,7 @@ This package provides a range of string constants for use in CSS, intended to he
 
 `/breakpoints` - GEL breakpoints, as well as typography breakpoints. These use the GEL grid sizes which can be found in the [GEL Grid guidelines](https://www.bbc.co.uk/gel/guidelines/grid#grid-sizes).  
 `/spacings` - GEL spacings and GEL Grid margins and gutters. These use the GEL grid spacing sizes which can be found in the [GEL Grid guidelines](https://www.bbc.co.uk/gel/guidelines/grid#spacing-layout).  
-`/typography` - GEL typography. These are based on the gel typography standard which can be found in the [GEL guidelines](https://www.bbc.co.uk/gel/guidelines/typography). [More details on how these sizes were implemented for this package are available here.](./typography_sizes_web.md)
+`/typography` - GEL type sizes and font stacks. These are based on the GEL Typography definitions which can be found in the [GEL guidelines](https://www.bbc.co.uk/gel/guidelines/typography). [More details on how the type sizes were implemented for this package are available here.](./typography_sizes_web.md)
 
 ## Installation
 
@@ -30,6 +30,8 @@ These values can then be used directly within CSS declarations in code:
 import { css } from 'styled-components';
 
 const SomeStyledComponent = css`
+  font-family: ${GEL_FF_REITH_SANS};
+
   @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
     grid-gap: ${GEL_GUTTER_ABOVE_600PX};
     ${GEL_BREVIER};

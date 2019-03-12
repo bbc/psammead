@@ -5,20 +5,22 @@
   "main": "index.js",
   "scripts": {
     "build": "lerna exec --parallel -- babel src -d dist --ignore '**/*.test.jsx,**/*.stories.jsx' --root-mode upward",
-    "ci:packages": "npm ci && lerna bootstrap --ci --hoist --force-local",
+    "ci:packages": "npm ci && lerna exec -- npm ci",
     "deploy-storybook": "build-storybook -o storybook_dist && gh-pages -d storybook_dist",
     "force-package-lock-https": "find . -type f -name \"package-lock.json\" | grep -v node_modules | xargs -I % sh -c 'echo \"Replacing http->https in %\"; sed -i \"\" -e \"s/http:\\/\\//https:\\/\\//g\" %'",
-    "install:packages": "npm i && lerna bootstrap --hoist --force-local",
+    "install:packages": "npm i && lerna clean --yes && lerna bootstrap --hoist",
+    "install:packages:link": "npm i && lerna clean --yes && lerna bootstrap --hoist --force-local",
+    "postinstall": "npm run build",
     "postshrinkwrap": "if test -z $CI; then \n npm run force-package-lock-https \n fi",
-    "prepare": "npm run build",
-    "publish": "node scripts/publish",
+    "preinstall": "sh scripts/enforceVersions.sh",
+    "publish": "npm run build && node scripts/publish",
     "storybook": "NODE_ENV=development start-storybook -p 8080 -c .storybook",
     "test": "npm run test:lint && npm run test:lint:css && npm run test:unit && npm run test:packages",
     "test:packages": "lerna run test",
     "test:lint": "eslint --ext .js,jsx,json ./packages ./scripts",
     "test:lint:css": "stylelint 'packages/**/*.js' 'packages/**/*.jsx' 'scripts/**/*.js'",
-    "test:unit": "jest --verbose --coverage",
-    "updateSnapshots": "npm run test:unit -- -u"
+    "test:unit": "npm run build && jest --verbose --coverage",
+    "updateSnapshots": "npm run ci:packages && npm run test:unit -- -u"
   },
   "repository": {
     "type": "git",
@@ -31,6 +33,7 @@
   },
   "homepage": "https://github.com/bbc/psammead#readme",
   "dependencies": {
+    "@bbc/psammead-styles": "^0.3.0",
     "styled-components": "^4.1.2",
     "styled-normalize": "^8.0.4"
   },
@@ -50,8 +53,6 @@
     "babel-loader": "^8.0.4",
     "babel-plugin-styled-components": "^1.9.2",
     "chalk": "^2.4.1",
-    "enzyme": "^3.7.0",
-    "enzyme-adapter-react-16": "^1.7.0",
     "eslint": "^5.9.0",
     "eslint-config-airbnb": "^17.1.0",
     "eslint-config-prettier": "^3.3.0",

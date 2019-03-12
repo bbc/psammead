@@ -35,13 +35,21 @@ N.B. When merging branches, the `npm run install:packages` command should be fav
 
 ### :runner: Run tests
 
+Install dependencies locked to `package-lock.json`:
+
+```
+npm run ci:packages
+```
+
+(NB: You can't reliably run the jest tests when the packages are linked locally, as they may have been linked across breaking changes. Running `npm run ci:packages` resets all links. To update snapshots within unit tests, run `npm run updateSnapshots`.)
+
 Run the component tests:
 
 ```
 npm test
 ```
 
-This runs Jest across any packages matching this glob pattern: `packages/components/**/*.test.jsx`.
+This runs Jest across any packages matching this glob pattern: `packages/components/**/*.test.jsx`. It also runs each package's `npm test` command if it is defined.
 
 ### :runner: Run Storybook
 
@@ -55,6 +63,18 @@ NB, we've defined global styles (normalize, box-sizing, Reith font) in the [Stor
 
 ```
 npm run build
+```
+
+## :computer: Developing with Psammead
+
+When making changes to a package locally if you want to pull those changes into another psammead package then the following command will create the required symlinks for you.
+
+### :link: Link packages locally
+
+Run the following command to link all psammead packages up regardless of dependency version:
+
+```
+npm run install:packages:link
 ```
 
 ## :dizzy: Using Psammead

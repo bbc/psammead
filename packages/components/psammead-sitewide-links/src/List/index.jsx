@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { string, arrayOf, shape } from 'prop-types';
 import nanoid from 'nanoid';
-import { C_WHITE } from '@bbc/psammead-styles/colours';
+import { C_SHADOW } from '@bbc/psammead-styles/colours';
 import { GEL_SPACING, GEL_SPACING_DBL } from '@bbc/gel-foundations/spacings';
 import {
   GEL_GROUP_2_SCREEN_WIDTH_MAX,
@@ -16,7 +16,7 @@ import {
 import Link from '../Link';
 
 const StyledList = styled.ul`
-  border-bottom: 1px solid ${C_WHITE};
+  border-bottom: 1px solid ${C_SHADOW};
   display: grid;
   grid-auto-flow: column;
   list-style-type: none;
@@ -43,7 +43,7 @@ const StyledList = styled.ul`
     grid-template-rows: repeat(3, auto);
   }
   > li:first-child {
-    border-bottom: 1px solid ${C_WHITE};
+    border-bottom: 1px solid ${C_SHADOW};
     padding: ${GEL_SPACING} 0;
     margin-bottom: ${GEL_SPACING};
     grid-column: 1/-1;

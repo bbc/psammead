@@ -1,4 +1,4 @@
-# psammead-inline-link &middot; [![Storybook](https://raw.githubusercontent.com/storybooks/brand/master/badges/storybook.svg?sanitize=true)](https://bbc.github.io/psammead/?selectedKind=InlineLink) [![GitHub license](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](https://github.com/bbc/psammead/blob/latest/LICENSE) [![npm version](https://img.shields.io/npm/v/@bbc/psammead-inline-link.svg)](https://www.npmjs.com/package/@bbc/psammead-inline-link) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://reactjs.org/docs/how-to-contribute.html#your-first-pull-request)
+# psammead-inline-link - [![Storybook](https://raw.githubusercontent.com/storybooks/brand/master/badge/badge-storybook.svg?sanitize=true)](https://bbc.github.io/psammead/?selectedKind=InlineLink) [![GitHub license](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](https://github.com/bbc/psammead/blob/latest/LICENSE) [![npm version](https://img.shields.io/npm/v/@bbc/psammead-inline-link.svg)](https://www.npmjs.com/package/@bbc/psammead-inline-link) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://reactjs.org/docs/how-to-contribute.html#your-first-pull-request)
 
 ## Description
 
@@ -80,10 +80,6 @@ This component can be used at any point on a page.
 Since this is just a `<a>` tag with associated styles, when you use this component, it has the same semantic meaning as a regular anchor element.
 
 The font and background-color choices for each hover/focused/visited/default states meet WCAG AA colour contrast guidelines.
-
-## Roadmap
-
-Our UX team are considering updating the colours for the hover and focus states of this component. When we implement this change, we will ensure it is a major version increase, since for downstream teams this will be a breaking change.
 
 ## Contributing
 
