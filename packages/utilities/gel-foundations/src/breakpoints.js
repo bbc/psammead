@@ -1,8 +1,9 @@
 /* 
    Screen sizes for GEL Typography
-   These namings are based on the GEL description. They are also known as group B and group D
+   These namings are based on the GEL description. They are also known as group A, group B and group D
    Link to relevant GEL docs: http://www.bbc.co.uk/gel/guidelines/typography#type-sizes
 */
+export const GEL_GROUP_A_MAX_WIDTH = 19.9375; // 319px
 export const GEL_GROUP_B_MIN_WIDTH = 20; // 320px
 export const GEL_GROUP_B_MAX_WIDTH = 37.4375; // 599px
 export const GEL_GROUP_CD_MIN_WIDTH = 37.5; // 600px
@@ -30,6 +31,7 @@ export const GEL_GROUP_4_SCREEN_WIDTH_MAX = `80em`; // 1279px
 export const GEL_GROUP_5_SCREEN_WIDTH_MIN = `80em`; // 1280px
 
 export const MEDIA_QUERY_TYPOGRAPHY = {
+  FEATURE_PHONE_ONLY: `@media (max-width: ${GEL_GROUP_A_MAX_WIDTH}em)`,
   SMART_PHONE_ONLY: `@media (min-width: ${GEL_GROUP_B_MIN_WIDTH}em) and (max-width: ${GEL_GROUP_B_MAX_WIDTH}em)`,
   SMART_PHONE_AND_LARGER: `@media (min-width: ${GEL_GROUP_B_MIN_WIDTH}em)`,
   LAPTOP_AND_LARGER: `@media (min-width: ${GEL_GROUP_CD_MIN_WIDTH}em)`,
