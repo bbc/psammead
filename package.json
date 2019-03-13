@@ -77,7 +77,7 @@
     "request": "^2.88.0",
     "semver": "^5.6.0",
     "shelljs": "^0.8.3",
-    "storybook-addon-rtl": "^0.1.2",
+    "storybook-addon-rtl": "^0.2.2",
     "storybook-readme": "^4.0.0-beta1",
     "strip-ansi": "^5.0.0",
     "stylelint": "^9.8.0",
