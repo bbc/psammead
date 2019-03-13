@@ -1,0 +1,128 @@
+{
+  "canon": {
+    "group-a": {
+      "font_size": "30",
+      "line_height": "32"
+    },
+    "group-b": {
+      "font_size": "38",
+      "line_height": "40"
+    },
+    "group-d": {
+      "font_size": "52",
+      "line_height": "58"
+    }
+  },
+  "trafalgar": {
+    "group-a": {
+      "font_size": "24",
+      "line_height": "24"
+    },
+    "group-b": {
+      "font_size": "28",
+      "line_height": "28"
+    },
+    "group-d": {
+      "font_size": "40",
+      "line_height": "44"
+    }
+  },
+  "paragon": {
+    "group-a": {
+      "font_size": "0",
+      "line_height": "0"
+    },
+    "group-b": {
+      "font_size": "0",
+      "line_height": "0"
+    },
+    "group-d": {
+      "font_size": "0",
+      "line_height": "0"
+    }
+  },
+  "double-pica": {
+    "group-a": {
+      "font_size": "0",
+      "line_height": "0"
+    },
+    "group-b": {
+      "font_size": "0",
+      "line_height": "0"
+    },
+    "group-d": {
+      "font_size": "0",
+      "line_height": "0"
+    }
+  },
+  "great-primer": {
+    "group-a": {
+      "font_size": "0",
+      "line_height": "0"
+    },
+    "group-b": {
+      "font_size": "0",
+      "line_height": "0"
+    },
+    "group-d": {
+      "font_size": "0",
+      "line_height": "0"
+    }
+  },
+  "pica": {
+    "group-a": {
+      "font_size": "22",
+      "line_height": "28"
+    },
+    "group-b": {
+      "font_size": "22",
+      "line_height": "28"
+    },
+    "group-d": {
+      "font_size": "22",
+      "line_height": "24"
+    }
+  },
+  "long-primer": {
+    "group-a": {
+      "font_size": "18",
+      "line_height": "22"
+    },
+    "group-b": {
+      "font_size": "18",
+      "line_height": "22"
+    },
+    "group-d": {
+      "font_size": "18",
+      "line_height": "22"
+    }
+  },
+  "brevier": {
+    "group-a": {
+      "font_size": "17",
+      "line_height": "22"
+    },
+    "group-b": {
+      "font_size": "17",
+      "line_height": "22"
+    },
+    "group-d": {
+      "font_size": "17",
+      "line_height": "22"
+    }
+  },
+  "minion": {
+    "group-a": {
+      "font_size": "16",
+      "line_height": "22"
+    },
+    "group-b": {
+      "font_size": "16",
+      "line_height": "22"
+    },
+    "group-d": {
+      "font_size": "16",
+      "line_height": "22"
+    }
+  }
+}
