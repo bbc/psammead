@@ -1,4 +1,4 @@
-import { MEDIA_QUERY_TYPOGRAPHY } from './breakpoints';
+import { MEDIA_QUERY_TYPOGRAPHY } from '../breakpoints';
 
 const fontFamilyBase = ', Helvetica, Arial, sans-serif';
 
@@ -6,6 +6,102 @@ export const GEL_FF_REITH_SERIF = `ReithSerif${fontFamilyBase}`;
 export const GEL_FF_REITH_SANS = `ReithSans${fontFamilyBase}`;
 export const GEL_FF_REITH_SANS_COND = `ReithSansCondensed${fontFamilyBase}`;
 
+function getFont(font = 'default', script = 'latin') {
+  /* import importedJSON from `./scripts/${script}.json` */
+  const importedJSON = script; /* Remove this once imported the right file */
+
+  const GROUP_A_FONT_SIZE_PX = importedJSON[font].group_a.font_size;
+  const GROUP_A_FONT_SIZE = `${GROUP_A_FONT_SIZE_PX / 16}rem`;
+  const GROUP_A_LINE_HEIGHT_PX = importedJSON[font].group_a.line_height;
+  const GROUP_A_LINE_HEIGHT = `${GROUP_A_LINE_HEIGHT_PX / 16}rem`;
+
+  const GROUP_B_FONT_SIZE_PX = importedJSON[font].group_a.font_size;
+  const GROUP_B_FONT_SIZE = `${GROUP_B_FONT_SIZE_PX / 16}rem`;
+  const GROUP_B_LINE_HEIGHT_PX = importedJSON[font].group_a.line_height;
+  const GROUP_B_LINE_HEIGHT = `${GROUP_B_LINE_HEIGHT_PX / 16}rem`;
+
+  const GROUP_D_FONT_SIZE_PX = importedJSON[font].group_a.font_size;
+  const GROUP_D_FONT_SIZE = `${GROUP_D_FONT_SIZE_PX / 16}rem`;
+  const GROUP_D_LINE_HEIGHT_PX = importedJSON[font].group_a.line_height;
+  const GROUP_D_LINE_HEIGHT = `${GROUP_D_LINE_HEIGHT_PX / 16}rem`;
+
+  return `
+        font-size: ${GROUP_A_FONT_SIZE};
+        line-height: ${GROUP_A_LINE_HEIGHT};
+   
+        ${MEDIA_QUERY_TYPOGRAPHY.SMART_PHONE_ONLY} {
+          font-size: ${GROUP_B_FONT_SIZE};
+          line-height: ${GROUP_B_LINE_HEIGHT};
+        }
+   
+        ${MEDIA_QUERY_TYPOGRAPHY.LAPTOP_AND_LARGER} {
+          font-size: ${GROUP_D_FONT_SIZE}rem;
+          line-height: ${GROUP_D_LINE_HEIGHT}rem;
+        }
+      `;
+}
+
+export const getAtlas = script => {
+  getFont('atlas', script);
+};
+
+export const getElephant = script => {
+  getFont('elephant', script);
+};
+
+export const getImperial = script => {
+  getFont('imperial', script);
+};
+
+export const getRoyal = script => {
+  getFont('royal', script);
+};
+
+export const getFoolScap = script => {
+  getFont('foolScap', script);
+};
+
+export const getCanon = script => {
+  getFont('canon', script);
+};
+
+export const getTrafalgar = script => {
+  getFont('trafalgar', script);
+};
+
+export const getParagon = script => {
+  getFont('paragon', script);
+};
+
+export const getDoublePica = script => {
+  getFont('doublePica', script);
+};
+
+export const getGreatPrimer = script => {
+  getFont('greatPrimer', script);
+};
+
+export const getBodyCopy = script => {
+  getFont('paragon', script);
+};
+
+export const getPica = script => {
+  getFont('paragon', script);
+};
+
+export const getLongPrimer = script => {
+  getFont('longPrimer', script);
+};
+
+export const getBrevier = script => {
+  getFont('brevier', script);
+};
+
+export const getMinion = script => {
+  getFont('minion', script);
+};
+
+/* ORIGINAL CONSTANTS */
 export const GEL_ATLAS = `
   font-size: 4.875rem;
   line-height: 5.25rem;
