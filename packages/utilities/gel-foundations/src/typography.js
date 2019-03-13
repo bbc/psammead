@@ -1,4 +1,5 @@
 import { MEDIA_QUERY_TYPOGRAPHY } from '../breakpoints';
+import typographyConfig from './scripts/typographyConfig';
 
 const fontFamilyBase = ', Helvetica, Arial, sans-serif';
 
@@ -7,22 +8,21 @@ export const GEL_FF_REITH_SANS = `ReithSans${fontFamilyBase}`;
 export const GEL_FF_REITH_SANS_COND = `ReithSansCondensed${fontFamilyBase}`;
 
 function getFont(font = 'default', script = 'latin') {
-  /* import importedJSON from `./scripts/${script}.json` */
-  const importedJSON = script; /* Remove this once imported the right file */
+  const importedTypography = typographyConfig[script];
 
-  const GROUP_A_FONT_SIZE_PX = importedJSON[font].group_a.font_size;
+  const GROUP_A_FONT_SIZE_PX = importedTypography[font].group_a.font_size;
   const GROUP_A_FONT_SIZE = `${GROUP_A_FONT_SIZE_PX / 16}rem`;
-  const GROUP_A_LINE_HEIGHT_PX = importedJSON[font].group_a.line_height;
+  const GROUP_A_LINE_HEIGHT_PX = importedTypography[font].group_a.line_height;
   const GROUP_A_LINE_HEIGHT = `${GROUP_A_LINE_HEIGHT_PX / 16}rem`;
 
-  const GROUP_B_FONT_SIZE_PX = importedJSON[font].group_a.font_size;
+  const GROUP_B_FONT_SIZE_PX = importedTypography[font].group_a.font_size;
   const GROUP_B_FONT_SIZE = `${GROUP_B_FONT_SIZE_PX / 16}rem`;
-  const GROUP_B_LINE_HEIGHT_PX = importedJSON[font].group_a.line_height;
+  const GROUP_B_LINE_HEIGHT_PX = importedTypography[font].group_a.line_height;
   const GROUP_B_LINE_HEIGHT = `${GROUP_B_LINE_HEIGHT_PX / 16}rem`;
 
-  const GROUP_D_FONT_SIZE_PX = importedJSON[font].group_a.font_size;
+  const GROUP_D_FONT_SIZE_PX = importedTypography[font].group_a.font_size;
   const GROUP_D_FONT_SIZE = `${GROUP_D_FONT_SIZE_PX / 16}rem`;
-  const GROUP_D_LINE_HEIGHT_PX = importedJSON[font].group_a.line_height;
+  const GROUP_D_LINE_HEIGHT_PX = importedTypography[font].group_a.line_height;
   const GROUP_D_LINE_HEIGHT = `${GROUP_D_LINE_HEIGHT_PX / 16}rem`;
 
   return `
