@@ -1,86 +1,86 @@
 {
   "canon": {
     "groupA": {
-      "fontSize": "",
-      "lineHeight": ""
+      "fontSize": "20",
+      "lineHeight": "24"
     },
     "groupB": {
-      "fontSize": "",
-      "lineHeight": ""
+      "fontSize": "24",
+      "lineHeight": "28"
     },
     "groupD": {
-      "fontSize": "",
-      "lineHeight": ""
+      "fontSize": "38",
+      "lineHeight": "42"
     }
   },
   "trafalgar": {
     "groupA": {
-      "fontSize": "",
-      "lineHeight": ""
+      "fontSize": "18",
+      "lineHeight": "22"
     },
     "groupB": {
-      "fontSize": "",
-      "lineHeight": ""
+      "fontSize": "22",
+      "lineHeight": "26"
     },
     "groupD": {
-      "fontSize": "",
-      "lineHeight": ""
+      "fontSize": "30",
+      "lineHeight": "34"
     }
   },
   "pica": {
     "groupA": {
-      "fontSize": "",
-      "lineHeight": ""
+      "fontSize": "15",
+      "lineHeight": "20"
     },
     "groupB": {
-      "fontSize": "",
-      "lineHeight": ""
+      "fontSize": "16",
+      "lineHeight": "22"
     },
     "groupD": {
-      "fontSize": "",
-      "lineHeight": ""
+      "fontSize": "16",
+      "lineHeight": "20"
     }
   },
   "longPrimer": {
     "groupA": {
-      "fontSize": "",
-      "lineHeight": ""
+      "fontSize": "15",
+      "lineHeight": "18"
     },
     "groupB": {
-      "fontSize": "",
-      "lineHeight": ""
+      "fontSize": "15",
+      "lineHeight": "18"
     },
     "groupD": {
-      "fontSize": "",
-      "lineHeight": ""
+      "fontSize": "14",
+      "lineHeight": "18"
     }
   },
   "brevier": {
     "groupA": {
-      "fontSize": "",
-      "lineHeight": ""
+      "fontSize": "14",
+      "lineHeight": "16"
     },
     "groupB": {
-      "fontSize": "",
-      "lineHeight": ""
+      "fontSize": "14",
+      "lineHeight": "18"
     },
     "groupD": {
-      "fontSize": "",
-      "lineHeight": ""
+      "fontSize": "13",
+      "lineHeight": "16"
     }
   },
   "minion": {
     "groupA": {
-      "fontSize": "",
-      "lineHeight": ""
+      "fontSize": "12",
+      "lineHeight": "16"
     },
     "groupB": {
-      "fontSize": "",
-      "lineHeight": ""
+      "fontSize": "12",
+      "lineHeight": "16"
     },
     "groupD": {
-      "fontSize": "",
-      "lineHeight": ""
+      "fontSize": "12",
+      "lineHeight": "16"
     }
   }
 }
