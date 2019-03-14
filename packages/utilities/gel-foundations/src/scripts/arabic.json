@@ -1,128 +1,86 @@
 {
   "canon": {
     "group-a": {
-      "font_size": "",
-      "line_height": ""
+      "font_size": "32",
+      "line_height": "24"
     },
     "group-b": {
-      "font_size": "",
-      "line_height": ""
+      "font_size": "36",
+      "line_height": "46"
     },
     "group-d": {
-      "font_size": "",
-      "line_height": ""
+      "font_size": "44",
+      "line_height": "54"
     }
   },
   "trafalgar": {
     "group-a": {
-      "font_size": "",
-      "line_height": ""
+      "font_size": "24",
+      "line_height": "34"
     },
     "group-b": {
-      "font_size": "",
-      "line_height": ""
+      "font_size": "26",
+      "line_height": "36"
     },
     "group-d": {
-      "font_size": "",
-      "line_height": ""
-    }
-  },
-  "paragon": {
-    "group-a": {
-      "font_size": "",
-      "line_height": ""
-    },
-    "group-b": {
-      "font_size": "",
-      "line_height": ""
-    },
-    "group-d": {
-      "font_size": "",
-      "line_height": ""
-    }
-  },
-  "double-pica": {
-    "group-a": {
-      "font_size": "",
-      "line_height": ""
-    },
-    "group-b": {
-      "font_size": "",
-      "line_height": ""
-    },
-    "group-d": {
-      "font_size": "",
-      "line_height": ""
-    }
-  },
-  "great-primer": {
-    "group-a": {
-      "font_size": "",
-      "line_height": ""
-    },
-    "group-b": {
-      "font_size": "",
-      "line_height": ""
-    },
-    "group-d": {
-      "font_size": "",
-      "line_height": ""
+      "font_size": "38",
+      "line_height": "48"
     }
   },
   "pica": {
     "group-a": {
-      "font_size": "",
-      "line_height": ""
+      "font_size": "18",
+      "line_height": "28"
     },
     "group-b": {
-      "font_size": "",
-      "line_height": ""
+      "font_size": "20",
+      "line_height": "30"
     },
     "group-d": {
-      "font_size": "",
-      "line_height": ""
+      "font_size": "22",
+      "line_height": "34"
     }
   },
   "long-primer": {
     "group-a": {
-      "font_size": "",
-      "line_height": ""
+      "font_size": "17",
+      "line_height": "24"
     },
     "group-b": {
-      "font_size": "",
-      "line_height": ""
+      "font_size": "18",
+      "line_height": "24"
     },
     "group-d": {
-      "font_size": "",
-      "line_height": ""
+      "font_size": "20",
+      "line_height": "26"
     }
   },
   "brevier": {
     "group-a": {
-      "font_size": "",
-      "line_height": ""
+      "font_size": "16",
+      "line_height": "18"
     },
     "group-b": {
-      "font_size": "",
-      "line_height": ""
+      "font_size": "18",
+      "line_height": "24"
     },
     "group-d": {
-      "font_size": "",
-      "line_height": ""
+      "font_size": "18",
+      "line_height": "22"
     }
   },
   "minion": {
     "group-a": {
-      "font_size": "",
-      "line_height": ""
+      "font_size": "14",
+      "line_height": "20"
     },
     "group-b": {
-      "font_size": "",
-      "line_height": ""
+      "font_size": "14",
+      "line_height": "20"
     },
     "group-d": {
-      "font_size": "",
-      "line_height": ""
+      "font_size": "14",
+      "line_height": "20"
     }
   }
 }
