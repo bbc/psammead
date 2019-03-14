@@ -1,5 +1,5 @@
 {
-  "paragon": {
+  "canon": {
     "groupA": {
       "fontSize": "",
       "lineHeight": ""
@@ -13,21 +13,7 @@
       "lineHeight": ""
     }
   },
-  "doublePica": {
-    "groupA": {
-      "fontSize": "",
-      "lineHeight": ""
-    },
-    "groupB": {
-      "fontSize": "",
-      "lineHeight": ""
-    },
-    "groupD": {
-      "fontSize": "",
-      "lineHeight": ""
-    }
-  },
-  "greatPrimer": {
+  "trafalgar": {
     "groupA": {
       "fontSize": "",
       "lineHeight": ""

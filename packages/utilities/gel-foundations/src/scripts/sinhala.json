@@ -1,128 +1,86 @@
 {
   "canon": {
-    "group-a": {
-      "font_size": "30",
-      "line_height": "32"
+    "groupA": {
+      "fontSize": "30",
+      "lineHeight": "32"
     },
-    "group-b": {
-      "font_size": "38",
-      "line_height": "40"
+    "groupB": {
+      "fontSize": "38",
+      "lineHeight": "40"
     },
-    "group-d": {
-      "font_size": "52",
-      "line_height": "58"
+    "groupD": {
+      "fontSize": "52",
+      "lineHeight": "58"
     }
   },
   "trafalgar": {
-    "group-a": {
-      "font_size": "24",
-      "line_height": "24"
+    "groupA": {
+      "fontSize": "24",
+      "lineHeight": "24"
     },
-    "group-b": {
-      "font_size": "28",
-      "line_height": "28"
+    "groupB": {
+      "fontSize": "28",
+      "lineHeight": "28"
     },
-    "group-d": {
-      "font_size": "40",
-      "line_height": "44"
-    }
-  },
-  "paragon": {
-    "group-a": {
-      "font_size": "0",
-      "line_height": "0"
-    },
-    "group-b": {
-      "font_size": "0",
-      "line_height": "0"
-    },
-    "group-d": {
-      "font_size": "0",
-      "line_height": "0"
-    }
-  },
-  "double-pica": {
-    "group-a": {
-      "font_size": "0",
-      "line_height": "0"
-    },
-    "group-b": {
-      "font_size": "0",
-      "line_height": "0"
-    },
-    "group-d": {
-      "font_size": "0",
-      "line_height": "0"
-    }
-  },
-  "great-primer": {
-    "group-a": {
-      "font_size": "0",
-      "line_height": "0"
-    },
-    "group-b": {
-      "font_size": "0",
-      "line_height": "0"
-    },
-    "group-d": {
-      "font_size": "0",
-      "line_height": "0"
+    "groupD": {
+      "fontSize": "40",
+      "lineHeight": "44"
     }
   },
   "pica": {
-    "group-a": {
-      "font_size": "22",
-      "line_height": "28"
+    "groupA": {
+      "fontSize": "22",
+      "lineHeight": "28"
     },
-    "group-b": {
-      "font_size": "22",
-      "line_height": "28"
+    "groupB": {
+      "fontSize": "22",
+      "lineHeight": "28"
     },
-    "group-d": {
-      "font_size": "22",
-      "line_height": "24"
+    "groupD": {
+      "fontSize": "22",
+      "lineHeight": "24"
     }
   },
-  "long-primer": {
-    "group-a": {
-      "font_size": "18",
-      "line_height": "22"
+  "longPrimer": {
+    "groupA": {
+      "fontSize": "18",
+      "lineHeight": "22"
     },
-    "group-b": {
-      "font_size": "18",
-      "line_height": "22"
+    "groupB": {
+      "fontSize": "18",
+      "lineHeight": "22"
     },
-    "group-d": {
-      "font_size": "18",
-      "line_height": "22"
+    "groupD": {
+      "fontSize": "18",
+      "lineHeight": "22"
     }
   },
   "brevier": {
-    "group-a": {
-      "font_size": "17",
-      "line_height": "22"
+    "groupA": {
+      "fontSize": "17",
+      "lineHeight": "22"
     },
-    "group-b": {
-      "font_size": "17",
-      "line_height": "22"
+    "groupB": {
+      "fontSize": "17",
+      "lineHeight": "22"
     },
-    "group-d": {
-      "font_size": "17",
-      "line_height": "22"
+    "groupD": {
+      "fontSize": "17",
+      "lineHeight": "22"
     }
   },
   "minion": {
-    "group-a": {
-      "font_size": "16",
-      "line_height": "22"
+    "groupA": {
+      "fontSize": "16",
+      "lineHeight": "22"
     },
-    "group-b": {
-      "font_size": "16",
-      "line_height": "22"
+    "groupB": {
+      "fontSize": "16",
+      "lineHeight": "22"
     },
-    "group-d": {
-      "font_size": "16",
-      "line_height": "22"
+    "groupD": {
+      "fontSize": "16",
+      "lineHeight": "22"
     }
   }
 }

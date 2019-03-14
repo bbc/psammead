@@ -1,12 +1,12 @@
 /* eslint-disable import/no-useless-path-segments */
 import arabicConfig from '../../src/scripts/arabic.json';
 import latinConfig from '../../src/scripts/latin.json';
-import latinEsConfig from '../../src/scripts/latin-es.json';
+import mundoConfig from '../../src/scripts/mundo.json';
 
 const scriptConfig = {
   arabic: arabicConfig,
   latin: latinConfig,
-  latinEs: latinEsConfig,
+  mundo: mundoConfig,
 };
 
 export default scriptConfig;

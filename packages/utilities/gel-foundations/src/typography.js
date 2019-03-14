@@ -10,19 +10,19 @@ export const GEL_FF_REITH_SANS_COND = `ReithSansCondensed${fontFamilyBase}`;
 function getFont(font = 'default', script = 'latin') {
   const importedTypography = typographyConfig[script];
 
-  const GROUP_A_FONT_SIZE_PX = importedTypography[font].group_a.font_size;
+  const GROUP_A_FONT_SIZE_PX = importedTypography[font].groupA.fontSize;
   const GROUP_A_FONT_SIZE = `${GROUP_A_FONT_SIZE_PX / 16}rem`;
-  const GROUP_A_LINE_HEIGHT_PX = importedTypography[font].group_a.line_height;
+  const GROUP_A_LINE_HEIGHT_PX = importedTypography[font].groupA.lineHeight;
   const GROUP_A_LINE_HEIGHT = `${GROUP_A_LINE_HEIGHT_PX / 16}rem`;
 
-  const GROUP_B_FONT_SIZE_PX = importedTypography[font].group_a.font_size;
+  const GROUP_B_FONT_SIZE_PX = importedTypography[font].groupB.fontSize;
   const GROUP_B_FONT_SIZE = `${GROUP_B_FONT_SIZE_PX / 16}rem`;
-  const GROUP_B_LINE_HEIGHT_PX = importedTypography[font].group_a.line_height;
+  const GROUP_B_LINE_HEIGHT_PX = importedTypography[font].groupB.lineHeight;
   const GROUP_B_LINE_HEIGHT = `${GROUP_B_LINE_HEIGHT_PX / 16}rem`;
 
-  const GROUP_D_FONT_SIZE_PX = importedTypography[font].group_a.font_size;
+  const GROUP_D_FONT_SIZE_PX = importedTypography[font].groupD.fontSize;
   const GROUP_D_FONT_SIZE = `${GROUP_D_FONT_SIZE_PX / 16}rem`;
-  const GROUP_D_LINE_HEIGHT_PX = importedTypography[font].group_a.line_height;
+  const GROUP_D_LINE_HEIGHT_PX = importedTypography[font].groupD.lineHeight;
   const GROUP_D_LINE_HEIGHT = `${GROUP_D_LINE_HEIGHT_PX / 16}rem`;
 
   return `
@@ -41,65 +41,35 @@ function getFont(font = 'default', script = 'latin') {
       `;
 }
 
-export const getAtlas = script => {
-  getFont('atlas', script);
-};
+export const getCanon = script => getFont('canon', script);
 
-export const getElephant = script => {
-  getFont('elephant', script);
-};
+export const getTrafalgar = script => getFont('trafalgar', script);
 
-export const getImperial = script => {
-  getFont('imperial', script);
-};
+export const getParagon = script => getFont('paragon', script);
 
-export const getRoyal = script => {
-  getFont('royal', script);
-};
+export const getDoublePica = script => getFont('doublePica', script);
 
-export const getFoolScap = script => {
-  getFont('foolScap', script);
-};
+export const getGreatPrimer = script => getFont('greatPrimer', script);
 
-export const getCanon = script => {
-  getFont('canon', script);
-};
+export const getPica = script => getFont('pica', script);
 
-export const getTrafalgar = script => {
-  getFont('trafalgar', script);
-};
+export const getLongPrimer = script => getFont('longPrimer', script);
 
-export const getParagon = script => {
-  getFont('paragon', script);
-};
+export const getBrevier = script => getFont('brevier', script);
 
-export const getDoublePica = script => {
-  getFont('doublePica', script);
-};
+export const getMinion = script => getFont('minion', script);
 
-export const getGreatPrimer = script => {
-  getFont('greatPrimer', script);
-};
+export const getAtlas = script => getFont('atlas', script);
 
-export const getBodyCopy = script => {
-  getFont('paragon', script);
-};
+export const getElephant = script => getFont('elephant', script);
 
-export const getPica = script => {
-  getFont('paragon', script);
-};
+export const getImperial = script => getFont('imperial', script);
 
-export const getLongPrimer = script => {
-  getFont('longPrimer', script);
-};
+export const getRoyal = script => getFont('royal', script);
 
-export const getBrevier = script => {
-  getFont('brevier', script);
-};
+export const getFoolScap = script => getFont('foolScap', script);
 
-export const getMinion = script => {
-  getFont('minion', script);
-};
+export const getBodyCopy = script => getFont('bodyCopy', script);
 
 /* ORIGINAL CONSTANTS */
 export const GEL_ATLAS = `
