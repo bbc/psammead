@@ -35,8 +35,8 @@ function getFont(font = 'default', script = 'latin') {
         }
    
         ${MEDIA_QUERY_TYPOGRAPHY.LAPTOP_AND_LARGER} {
-          font-size: ${GROUP_D_FONT_SIZE}rem;
-          line-height: ${GROUP_D_LINE_HEIGHT}rem;
+          font-size: ${GROUP_D_FONT_SIZE};
+          line-height: ${GROUP_D_LINE_HEIGHT};
         }
       `;
 }
