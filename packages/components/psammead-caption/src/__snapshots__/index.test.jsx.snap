@@ -22,9 +22,17 @@ exports[`should render Caption with some offscreen text 1`] = `
   width: 100%;
 }
 
+@media (min-width:20em) and (max-width:37.4375em) {
+  .c0 {
+    font-size: 0.9375rem;
+    line-height: 1.125rem;
+  }
+}
+
 @media (min-width:37.5em) {
   .c0 {
     font-size: 0.875rem;
+    line-height: 1.125rem;
   }
 }
 
