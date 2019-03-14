@@ -19,7 +19,7 @@ Psammead packages are split into:
 
 ## :gift: Getting Started
 
-### :airplane: Clone this repositry
+### :airplane: Clone this repository
 
 ```
 git clone git@github.com:bbc/psammead.git

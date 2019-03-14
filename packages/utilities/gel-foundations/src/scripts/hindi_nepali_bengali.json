@@ -2,113 +2,113 @@
   "canon": {
     "group_a": {
       "font_size": "28",
-      "line_height": "32"
+      "line_height": "36"
     },
     "group_b": {
-      "font_size": "32",
-      "line_height": "36"
+      "font_size": "36",
+      "line_height": "46"
     },
     "group_d": {
       "font_size": "44",
-      "line_height": "48"
+      "line_height": "58"
     }
   },
   "trafalgar": {
     "group_a": {
       "font_size": "20",
-      "line_height": "24"
+      "line_height": "30"
     },
     "group_b": {
       "font_size": "24",
-      "line_height": "28"
+      "line_height": "36"
     },
     "group_d": {
       "font_size": "32",
-      "line_height": "36"
+      "line_height": "44"
     }
   },
   "paragon": {
     "group_a": {
-      "font_size": "",
-      "line_height": ""
+      "font_size": "0",
+      "line_height": "0"
     },
     "group_b": {
-      "font_size": "",
-      "line_height": ""
+      "font_size": "0",
+      "line_height": "0"
     },
     "group_d": {
-      "font_size": "",
-      "line_height": ""
+      "font_size": "0",
+      "line_height": "0"
     }
   },
-  "double-pica": {
+  "doublePica": {
     "group_a": {
-      "font_size": "",
-      "line_height": ""
+      "font_size": "0",
+      "line_height": "0"
     },
     "group_b": {
-      "font_size": "",
-      "line_height": ""
+      "font_size": "0",
+      "line_height": "0"
     },
     "group_d": {
-      "font_size": "",
-      "line_height": ""
+      "font_size": "0",
+      "line_height": "0"
     }
   },
-  "great-primer": {
+  "greatPrimer": {
     "group_a": {
-      "font_size": "",
-      "line_height": ""
+      "font_size": "0",
+      "line_height": "0"
     },
     "group_b": {
-      "font_size": "",
-      "line_height": ""
+      "font_size": "0",
+      "line_height": "0"
     },
     "group_d": {
-      "font_size": "",
-      "line_height": ""
+      "font_size": "0",
+      "line_height": "0"
     }
   },
   "pica": {
     "group_a": {
       "font_size": "15",
-      "line_height": "20"
+      "line_height": "22"
     },
     "group_b": {
       "font_size": "16",
-      "line_height": "22"
+      "line_height": "24"
     },
     "group_d": {
-      "font_size": "16",
-      "line_height": "22"
+      "font_size": "18",
+      "line_height": "26"
     }
   },
-  "long-primer": {
+  "longPrimer": {
     "group_a": {
       "font_size": "15",
-      "line_height": "18"
+      "line_height": "21"
     },
     "group_b": {
       "font_size": "15",
-      "line_height": "18"
+      "line_height": "21"
     },
     "group_d": {
-      "font_size": "14",
-      "line_height": "18"
+      "font_size": "16",
+      "line_height": "22"
     }
   },
   "brevier": {
     "group_a": {
       "font_size": "14",
-      "line_height": "16"
+      "line_height": "20"
     },
     "group_b": {
       "font_size": "14",
-      "line_height": "18"
+      "line_height": "20"
     },
     "group_d": {
-      "font_size": "13",
-      "line_height": "16"
+      "font_size": "14",
+      "line_height": "18"
     }
   },
   "minion": {
@@ -121,8 +121,8 @@
       "line_height": "16"
     },
     "group_d": {
-      "font_size": "12",
-      "line_height": "16"
+      "font_size": "14",
+      "line_height": "18"
     }
   }
 }
