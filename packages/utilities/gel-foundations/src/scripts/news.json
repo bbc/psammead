@@ -1,0 +1,16 @@
+{
+  "longPrimer": {
+    "groupA": {
+      "fontSize": "15",
+      "lineHeight": "18"
+    },
+    "groupB": {
+      "fontSize": "15",
+      "lineHeight": "18"
+    },
+    "groupD": {
+      "fontSize": "14",
+      "lineHeight": "18"
+    }
+  }
+}
