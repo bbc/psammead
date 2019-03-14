@@ -27,48 +27,6 @@
       "lineHeight": "36"
     }
   },
-  "paragon": {
-    "groupA": {
-      "fontSize": "",
-      "lineHeight": ""
-    },
-    "groupB": {
-      "fontSize": "",
-      "lineHeight": ""
-    },
-    "groupD": {
-      "fontSize": "",
-      "lineHeight": ""
-    }
-  },
-  "doublePica": {
-    "groupA": {
-      "fontSize": "",
-      "lineHeight": ""
-    },
-    "groupB": {
-      "fontSize": "",
-      "lineHeight": ""
-    },
-    "groupD": {
-      "fontSize": "",
-      "lineHeight": ""
-    }
-  },
-  "greatPrimer": {
-    "groupA": {
-      "fontSize": "",
-      "lineHeight": ""
-    },
-    "groupB": {
-      "fontSize": "",
-      "lineHeight": ""
-    },
-    "groupD": {
-      "fontSize": "",
-      "lineHeight": ""
-    }
-  },
   "pica": {
     "groupA": {
       "fontSize": "15",
