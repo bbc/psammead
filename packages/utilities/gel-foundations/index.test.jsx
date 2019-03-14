@@ -19,6 +19,7 @@ const spacingsExpectedExports = {
 };
 
 const breakpointsExpectedExports = {
+  GEL_GROUP_A_MAX_WIDTH: 'number',
   GEL_GROUP_B_MIN_WIDTH: 'number',
   GEL_GROUP_B_MAX_WIDTH: 'number',
   GEL_GROUP_CD_MIN_WIDTH: 'number',
