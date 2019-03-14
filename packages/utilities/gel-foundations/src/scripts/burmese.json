@@ -1,100 +1,86 @@
 {
-  "paragon": {
+  "canon": {
     "groupA": {
-      "fontSize": "",
-      "lineHeight": ""
+      "fontSize": "24",
+      "lineHeight": "36"
     },
     "groupB": {
-      "fontSize": "",
-      "lineHeight": ""
+      "fontSize": "30",
+      "lineHeight": "44"
     },
     "groupD": {
-      "fontSize": "",
-      "lineHeight": ""
+      "fontSize": "44",
+      "lineHeight": "72"
     }
   },
-  "doublePica": {
+  "trafalgar": {
     "groupA": {
-      "fontSize": "",
-      "lineHeight": ""
+      "fontSize": "18",
+      "lineHeight": "28"
     },
     "groupB": {
-      "fontSize": "",
-      "lineHeight": ""
+      "fontSize": "22",
+      "lineHeight": "30"
     },
     "groupD": {
-      "fontSize": "",
-      "lineHeight": ""
-    }
-  },
-  "greatPrimer": {
-    "groupA": {
-      "fontSize": "",
-      "lineHeight": ""
-    },
-    "groupB": {
-      "fontSize": "",
-      "lineHeight": ""
-    },
-    "groupD": {
-      "fontSize": "",
-      "lineHeight": ""
+      "fontSize": "28",
+      "lineHeight": "42"
     }
   },
   "pica": {
     "groupA": {
-      "fontSize": "",
-      "lineHeight": ""
+      "fontSize": "15",
+      "lineHeight": "26"
     },
     "groupB": {
-      "fontSize": "",
-      "lineHeight": ""
+      "fontSize": "16",
+      "lineHeight": "28"
     },
     "groupD": {
-      "fontSize": "",
-      "lineHeight": ""
+      "fontSize": "16",
+      "lineHeight": "30"
     }
   },
   "longPrimer": {
     "groupA": {
-      "fontSize": "",
-      "lineHeight": ""
+      "fontSize": "15",
+      "lineHeight": "25"
     },
     "groupB": {
-      "fontSize": "",
-      "lineHeight": ""
+      "fontSize": "15",
+      "lineHeight": "24"
     },
     "groupD": {
-      "fontSize": "",
-      "lineHeight": ""
+      "fontSize": "16",
+      "lineHeight": "24"
     }
   },
   "brevier": {
     "groupA": {
-      "fontSize": "",
-      "lineHeight": ""
+      "fontSize": "14",
+      "lineHeight": "22"
     },
     "groupB": {
-      "fontSize": "",
-      "lineHeight": ""
+      "fontSize": "14",
+      "lineHeight": "22"
     },
     "groupD": {
-      "fontSize": "",
-      "lineHeight": ""
+      "fontSize": "14",
+      "lineHeight": "22"
     }
   },
   "minion": {
     "groupA": {
-      "fontSize": "",
-      "lineHeight": ""
+      "fontSize": "12",
+      "lineHeight": "16"
     },
     "groupB": {
-      "fontSize": "",
-      "lineHeight": ""
+      "fontSize": "12",
+      "lineHeight": "16"
     },
     "groupD": {
-      "fontSize": "",
-      "lineHeight": ""
+      "fontSize": "14",
+      "lineHeight": "22"
     }
   }
 }
