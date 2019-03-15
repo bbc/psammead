@@ -68,7 +68,7 @@ export const getImperial = script => getTypeSizes('imperial', script);
 
 export const getRoyal = script => getTypeSizes('royal', script);
 
-export const getFoolScap = script => getTypeSizes('foolScap', script);
+export const getFoolscap = script => getTypeSizes('foolscap', script);
 
 export const getBodyCopy = script => getTypeSizes('bodyCopy', script);
 
