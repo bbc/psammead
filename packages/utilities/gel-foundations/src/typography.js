@@ -1,5 +1,4 @@
 import { MEDIA_QUERY_TYPOGRAPHY } from '../breakpoints';
-import typographyConfig from './scripts/typographyConfig';
 
 const fontFamilyBase = ', Helvetica, Arial, sans-serif';
 
@@ -7,22 +6,24 @@ export const GEL_FF_REITH_SERIF = `ReithSerif${fontFamilyBase}`;
 export const GEL_FF_REITH_SANS = `ReithSans${fontFamilyBase}`;
 export const GEL_FF_REITH_SANS_COND = `ReithSansCondensed${fontFamilyBase}`;
 
-function getFont(font = 'default', script = 'latin') {
-  const importedTypography = typographyConfig[script];
+function getTypeSizes(type = 'default', script = 'latin') {
+  // eslint-disable-next-line global-require, import/no-dynamic-require
+  const importedScript = require(`./scripts/${script}.json`);
+  const typographyType = importedScript[type];
 
-  const GROUP_A_FONT_SIZE_PX = importedTypography[font].groupA.fontSize;
+  const GROUP_A_FONT_SIZE_PX = typographyType.groupA.fontSize;
   const GROUP_A_FONT_SIZE = `${GROUP_A_FONT_SIZE_PX / 16}rem`;
-  const GROUP_A_LINE_HEIGHT_PX = importedTypography[font].groupA.lineHeight;
+  const GROUP_A_LINE_HEIGHT_PX = typographyType.groupA.lineHeight;
   const GROUP_A_LINE_HEIGHT = `${GROUP_A_LINE_HEIGHT_PX / 16}rem`;
 
-  const GROUP_B_FONT_SIZE_PX = importedTypography[font].groupB.fontSize;
+  const GROUP_B_FONT_SIZE_PX = typographyType.groupB.fontSize;
   const GROUP_B_FONT_SIZE = `${GROUP_B_FONT_SIZE_PX / 16}rem`;
-  const GROUP_B_LINE_HEIGHT_PX = importedTypography[font].groupB.lineHeight;
+  const GROUP_B_LINE_HEIGHT_PX = typographyType.groupB.lineHeight;
   const GROUP_B_LINE_HEIGHT = `${GROUP_B_LINE_HEIGHT_PX / 16}rem`;
 
-  const GROUP_D_FONT_SIZE_PX = importedTypography[font].groupD.fontSize;
+  const GROUP_D_FONT_SIZE_PX = typographyType.groupD.fontSize;
   const GROUP_D_FONT_SIZE = `${GROUP_D_FONT_SIZE_PX / 16}rem`;
-  const GROUP_D_LINE_HEIGHT_PX = importedTypography[font].groupD.lineHeight;
+  const GROUP_D_LINE_HEIGHT_PX = typographyType.groupD.lineHeight;
   const GROUP_D_LINE_HEIGHT = `${GROUP_D_LINE_HEIGHT_PX / 16}rem`;
 
   return `
@@ -41,35 +42,35 @@ function getFont(font = 'default', script = 'latin') {
       `;
 }
 
-export const getCanon = script => getFont('canon', script);
+export const getCanon = script => getTypeSizes('canon', script);
 
-export const getTrafalgar = script => getFont('trafalgar', script);
+export const getTrafalgar = script => getTypeSizes('trafalgar', script);
 
-export const getParagon = script => getFont('paragon', script);
+export const getParagon = script => getTypeSizes('paragon', script);
 
-export const getDoublePica = script => getFont('doublePica', script);
+export const getDoublePica = script => getTypeSizes('doublePica', script);
 
-export const getGreatPrimer = script => getFont('greatPrimer', script);
+export const getGreatPrimer = script => getTypeSizes('greatPrimer', script);
 
-export const getPica = script => getFont('pica', script);
+export const getPica = script => getTypeSizes('pica', script);
 
-export const getLongPrimer = script => getFont('longPrimer', script);
+export const getLongPrimer = script => getTypeSizes('longPrimer', script);
 
-export const getBrevier = script => getFont('brevier', script);
+export const getBrevier = script => getTypeSizes('brevier', script);
 
-export const getMinion = script => getFont('minion', script);
+export const getMinion = script => getTypeSizes('minion', script);
 
-export const getAtlas = script => getFont('atlas', script);
+export const getAtlas = script => getTypeSizes('atlas', script);
 
-export const getElephant = script => getFont('elephant', script);
+export const getElephant = script => getTypeSizes('elephant', script);
 
-export const getImperial = script => getFont('imperial', script);
+export const getImperial = script => getTypeSizes('imperial', script);
 
-export const getRoyal = script => getFont('royal', script);
+export const getRoyal = script => getTypeSizes('royal', script);
 
-export const getFoolScap = script => getFont('foolScap', script);
+export const getFoolScap = script => getTypeSizes('foolScap', script);
 
-export const getBodyCopy = script => getFont('bodyCopy', script);
+export const getBodyCopy = script => getTypeSizes('bodyCopy', script);
 
 /* ORIGINAL CONSTANTS */
 export const GEL_ATLAS = `
