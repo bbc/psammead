@@ -145,8 +145,8 @@
       "lineHeight": "20"
     },
     "groupB": {
-      "fontSize": "15",
-      "lineHeight": "20"
+      "fontSize": "16",
+      "lineHeight": "22"
     },
     "groupD": {
       "fontSize": "16",
@@ -159,12 +159,12 @@
       "lineHeight": "20"
     },
     "groupB": {
-      "fontSize": "15",
+      "fontSize": "16",
       "lineHeight": "20"
     },
     "groupD": {
       "fontSize": "16",
-      "lineHeight": "22"
+      "lineHeight": "20"
     }
   },
   "longPrimer": {
@@ -188,11 +188,11 @@
     },
     "groupB": {
       "fontSize": "14",
-      "lineHeight": "16"
+      "lineHeight": "18"
     },
     "groupD": {
-      "fontSize": "14",
-      "lineHeight": "18"
+      "fontSize": "13",
+      "lineHeight": "16"
     }
   },
   "minion": {
