@@ -6,24 +6,24 @@ export const GEL_FF_REITH_SERIF = `ReithSerif${fontFamilyBase}`;
 export const GEL_FF_REITH_SANS = `ReithSans${fontFamilyBase}`;
 export const GEL_FF_REITH_SANS_COND = `ReithSansCondensed${fontFamilyBase}`;
 
-function getTypeSizes(type = 'default', script = 'latin') {
+function getTypeSizes(typogStyleName, script = 'news') {
   // eslint-disable-next-line global-require, import/no-dynamic-require
   const importedScript = require(`./scripts/${script}.json`);
-  const typographyType = importedScript[type];
+  const typographyStyle = importedScript[typogStyleName];
 
-  const GROUP_A_FONT_SIZE_PX = typographyType.groupA.fontSize;
+  const GROUP_A_FONT_SIZE_PX = typographyStyle.groupA.fontSize;
   const GROUP_A_FONT_SIZE = `${GROUP_A_FONT_SIZE_PX / 16}rem`;
-  const GROUP_A_LINE_HEIGHT_PX = typographyType.groupA.lineHeight;
+  const GROUP_A_LINE_HEIGHT_PX = typographyStyle.groupA.lineHeight;
   const GROUP_A_LINE_HEIGHT = `${GROUP_A_LINE_HEIGHT_PX / 16}rem`;
 
-  const GROUP_B_FONT_SIZE_PX = typographyType.groupB.fontSize;
+  const GROUP_B_FONT_SIZE_PX = typographyStyle.groupB.fontSize;
   const GROUP_B_FONT_SIZE = `${GROUP_B_FONT_SIZE_PX / 16}rem`;
-  const GROUP_B_LINE_HEIGHT_PX = typographyType.groupB.lineHeight;
+  const GROUP_B_LINE_HEIGHT_PX = typographyStyle.groupB.lineHeight;
   const GROUP_B_LINE_HEIGHT = `${GROUP_B_LINE_HEIGHT_PX / 16}rem`;
 
-  const GROUP_D_FONT_SIZE_PX = typographyType.groupD.fontSize;
+  const GROUP_D_FONT_SIZE_PX = typographyStyle.groupD.fontSize;
   const GROUP_D_FONT_SIZE = `${GROUP_D_FONT_SIZE_PX / 16}rem`;
-  const GROUP_D_LINE_HEIGHT_PX = typographyType.groupD.lineHeight;
+  const GROUP_D_LINE_HEIGHT_PX = typographyStyle.groupD.lineHeight;
   const GROUP_D_LINE_HEIGHT = `${GROUP_D_LINE_HEIGHT_PX / 16}rem`;
 
   return `
