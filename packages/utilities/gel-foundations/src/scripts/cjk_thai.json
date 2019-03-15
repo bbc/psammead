@@ -1,86 +1,86 @@
 {
   "canon": {
     "groupA": {
-      "fontSize": "24",
-      "lineHeight": "36"
+      "fontSize": "28",
+      "lineHeight": "32"
     },
     "groupB": {
-      "fontSize": "30",
-      "lineHeight": "44"
+      "fontSize": "32",
+      "lineHeight": "42"
     },
     "groupD": {
       "fontSize": "44",
-      "lineHeight": "72"
+      "lineHeight": "58"
     }
   },
   "trafalgar": {
     "groupA": {
-      "fontSize": "18",
-      "lineHeight": "28"
+      "fontSize": "20",
+      "lineHeight": "26"
     },
     "groupB": {
-      "fontSize": "22",
+      "fontSize": "24",
       "lineHeight": "30"
     },
     "groupD": {
-      "fontSize": "28",
+      "fontSize": "32",
       "lineHeight": "42"
     }
   },
   "pica": {
     "groupA": {
-      "fontSize": "15",
-      "lineHeight": "26"
+      "fontSize": "16",
+      "lineHeight": "22"
     },
     "groupB": {
       "fontSize": "16",
-      "lineHeight": "28"
+      "lineHeight": "24"
     },
     "groupD": {
       "fontSize": "16",
-      "lineHeight": "30"
+      "lineHeight": "28"
     }
   },
   "longPrimer": {
     "groupA": {
       "fontSize": "15",
-      "lineHeight": "25"
+      "lineHeight": "20"
     },
     "groupB": {
       "fontSize": "15",
-      "lineHeight": "24"
+      "lineHeight": "20"
     },
     "groupD": {
-      "fontSize": "16",
-      "lineHeight": "24"
+      "fontSize": "15",
+      "lineHeight": "20"
     }
   },
   "brevier": {
     "groupA": {
       "fontSize": "14",
-      "lineHeight": "22"
+      "lineHeight": "16"
     },
     "groupB": {
       "fontSize": "14",
-      "lineHeight": "22"
+      "lineHeight": "16"
     },
     "groupD": {
       "fontSize": "14",
-      "lineHeight": "22"
+      "lineHeight": "16"
     }
   },
   "minion": {
     "groupA": {
-      "fontSize": "12",
+      "fontSize": "14",
       "lineHeight": "16"
     },
     "groupB": {
-      "fontSize": "12",
+      "fontSize": "14",
       "lineHeight": "16"
     },
     "groupD": {
       "fontSize": "14",
-      "lineHeight": "22"
+      "lineHeight": "16"
     }
   }
 }

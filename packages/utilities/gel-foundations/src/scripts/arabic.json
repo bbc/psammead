@@ -1,86 +1,86 @@
 {
   "canon": {
-    "group-a": {
-      "font_size": "32",
-      "line_height": "24"
+    "groupA": {
+      "fontSize": "32",
+      "lineHeight": "42"
     },
-    "group-b": {
-      "font_size": "36",
-      "line_height": "46"
+    "groupB": {
+      "fontSize": "36",
+      "lineHeight": "46"
     },
-    "group-d": {
-      "font_size": "44",
-      "line_height": "54"
+    "groupD": {
+      "fontSize": "44",
+      "lineHeight": "54"
     }
   },
   "trafalgar": {
-    "group-a": {
-      "font_size": "24",
-      "line_height": "34"
+    "groupA": {
+      "fontSize": "24",
+      "lineHeight": "34"
     },
-    "group-b": {
-      "font_size": "26",
-      "line_height": "36"
+    "groupB": {
+      "fontSize": "26",
+      "lineHeight": "36"
     },
-    "group-d": {
-      "font_size": "38",
-      "line_height": "48"
+    "groupD": {
+      "fontSize": "38",
+      "lineHeight": "48"
     }
   },
   "pica": {
-    "group-a": {
-      "font_size": "18",
-      "line_height": "28"
+    "groupA": {
+      "fontSize": "18",
+      "lineHeight": "28"
     },
-    "group-b": {
-      "font_size": "20",
-      "line_height": "30"
+    "groupB": {
+      "fontSize": "20",
+      "lineHeight": "30"
     },
-    "group-d": {
-      "font_size": "22",
-      "line_height": "34"
+    "groupD": {
+      "fontSize": "22",
+      "lineHeight": "34"
     }
   },
-  "long-primer": {
-    "group-a": {
-      "font_size": "17",
-      "line_height": "24"
+  "longPrimer": {
+    "groupA": {
+      "fontSize": "17",
+      "lineHeight": "24"
     },
-    "group-b": {
-      "font_size": "18",
-      "line_height": "24"
+    "groupB": {
+      "fontSize": "18",
+      "lineHeight": "24"
     },
-    "group-d": {
-      "font_size": "20",
-      "line_height": "26"
+    "groupD": {
+      "fontSize": "20",
+      "lineHeight": "26"
     }
   },
   "brevier": {
-    "group-a": {
-      "font_size": "16",
-      "line_height": "18"
+    "groupA": {
+      "fontSize": "16",
+      "lineHeight": "18"
     },
-    "group-b": {
-      "font_size": "18",
-      "line_height": "24"
+    "groupB": {
+      "fontSize": "16",
+      "lineHeight": "20"
     },
-    "group-d": {
-      "font_size": "18",
-      "line_height": "22"
+    "groupD": {
+      "fontSize": "18",
+      "lineHeight": "22"
     }
   },
   "minion": {
-    "group-a": {
-      "font_size": "14",
-      "line_height": "20"
+    "groupA": {
+      "fontSize": "14",
+      "lineHeight": "20"
     },
-    "group-b": {
-      "font_size": "14",
-      "line_height": "20"
+    "groupB": {
+      "fontSize": "14",
+      "lineHeight": "20"
     },
-    "group-d": {
-      "font_size": "14",
-      "line_height": "20"
+    "groupD": {
+      "fontSize": "14",
+      "lineHeight": "20"
     }
   }
 }

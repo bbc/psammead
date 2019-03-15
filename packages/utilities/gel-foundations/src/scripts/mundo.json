@@ -1,72 +1,72 @@
 {
   "canon": {
     "groupA": {
-      "fontSize": "22",
-      "lineHeight": "30"
+      "fontSize": "20",
+      "lineHeight": "24"
     },
     "groupB": {
-      "fontSize": "26",
-      "lineHeight": "36"
+      "fontSize": "24",
+      "lineHeight": "28"
     },
     "groupD": {
-      "fontSize": "34",
-      "lineHeight": "46"
+      "fontSize": "38",
+      "lineHeight": "42"
     }
   },
   "trafalgar": {
     "groupA": {
-      "fontSize": "16",
-      "lineHeight": "24"
+      "fontSize": "18",
+      "lineHeight": "22"
     },
     "groupB": {
-      "fontSize": "18",
+      "fontSize": "22",
       "lineHeight": "26"
     },
     "groupD": {
-      "fontSize": "22",
-      "lineHeight": "30"
+      "fontSize": "30",
+      "lineHeight": "34"
     }
   },
   "pica": {
     "groupA": {
-      "fontSize": "13",
-      "lineHeight": "22"
+      "fontSize": "15",
+      "lineHeight": "20"
     },
     "groupB": {
-      "fontSize": "13",
+      "fontSize": "16",
       "lineHeight": "22"
     },
     "groupD": {
-      "fontSize": "14",
-      "lineHeight": "24"
+      "fontSize": "16",
+      "lineHeight": "20"
     }
   },
   "longPrimer": {
     "groupA": {
-      "fontSize": "11",
+      "fontSize": "15",
       "lineHeight": "18"
     },
     "groupB": {
-      "fontSize": "11",
+      "fontSize": "15",
       "lineHeight": "18"
     },
     "groupD": {
-      "fontSize": "12",
+      "fontSize": "14",
       "lineHeight": "18"
     }
   },
   "brevier": {
     "groupA": {
-      "fontSize": "10",
-      "lineHeight": "15"
+      "fontSize": "14",
+      "lineHeight": "16"
     },
     "groupB": {
-      "fontSize": "10",
-      "lineHeight": "15"
+      "fontSize": "14",
+      "lineHeight": "18"
     },
     "groupD": {
-      "fontSize": "11",
-      "lineHeight": "15"
+      "fontSize": "13",
+      "lineHeight": "16"
     }
   },
   "minion": {
@@ -79,8 +79,8 @@
       "lineHeight": "16"
     },
     "groupD": {
-      "fontSize": "10",
-      "lineHeight": "14"
+      "fontSize": "12",
+      "lineHeight": "16"
     }
   }
 }
