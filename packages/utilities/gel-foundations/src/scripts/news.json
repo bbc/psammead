@@ -111,7 +111,7 @@
       "lineHeight": "32"
     }
   },
-  "double-pica": {
+  "doublePica": {
     "groupA": {
       "fontSize": "20",
       "lineHeight": "24"
@@ -125,7 +125,7 @@
       "lineHeight": "28"
     }
   },
-  "great-primer": {
+  "greatPrimer": {
     "groupA": {
       "fontSize": "18",
       "lineHeight": "22"
@@ -139,7 +139,7 @@
       "lineHeight": "24"
     }
   },
-  "body-copy": {
+  "bodyCopy": {
     "groupA": {
       "fontSize": "15",
       "lineHeight": "20"
@@ -167,7 +167,7 @@
       "lineHeight": "22"
     }
   },
-  "long-primer": {
+  "longPrimer": {
     "groupA": {
       "fontSize": "15",
       "lineHeight": "18"
