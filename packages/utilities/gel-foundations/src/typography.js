@@ -6,9 +6,7 @@ export const GEL_FF_REITH_SERIF = `ReithSerif${fontFamilyBase}`;
 export const GEL_FF_REITH_SANS = `ReithSans${fontFamilyBase}`;
 export const GEL_FF_REITH_SANS_COND = `ReithSansCondensed${fontFamilyBase}`;
 
-function getTypeSizes(typogStyleName, script = 'news') {
-  // eslint-disable-next-line global-require, import/no-dynamic-require
-  const importedScript = require(`./scripts/${script}.json`);
+function getTypeSizes(typogStyleName, importedScript) {
   const typographyStyle = importedScript[typogStyleName];
 
   const GROUP_A_FONT_SIZE_PX = typographyStyle.groupA.fontSize;
