@@ -5,12 +5,12 @@ import {
   GEL_LONG_PRIMER,
   GEL_FF_REITH_SANS,
 } from '@bbc/gel-foundations/typography';
-import { C_STONE, C_STORM } from '@bbc/psammead-styles/colours';
+
+import { C_CLOUD_DARK } from '@bbc/psammead-styles/colours';
 
 const Caption = styled.figcaption`
   ${GEL_LONG_PRIMER};
-  background-color: ${C_STONE};
-  color: ${C_STORM};
+  color: ${C_CLOUD_DARK};
   font-family: ${GEL_FF_REITH_SANS};
   padding: ${GEL_SPACING};
   width: 100%;
