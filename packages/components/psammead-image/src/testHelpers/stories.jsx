@@ -1,7 +1,6 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import { withReadme } from 'storybook-readme';
-import Readme from '../../README.md';
+import notes from '../../README.md';
 import { custom, landscape, portrait, square } from './fixtureData';
 
 function getProps(image, includeHeight) {
@@ -24,26 +23,51 @@ const stories = (
   styleDecorator = storyFn => storyFn(),
 ) =>
   storiesOf(title, module)
-    .addDecorator(withReadme(Readme))
     .addDecorator(styleDecorator)
-    .add('landscape image', () => (
-      <Component {...getProps(landscape, includeHeight)} {...additionalProps} />
-    ))
-    .add('portrait image', () => (
-      <Component {...getProps(portrait, includeHeight)} {...additionalProps} />
-    ))
-    .add('square image', () => (
-      <Component {...getProps(square, includeHeight)} {...additionalProps} />
-    ))
-    .add('custom ratio image', () => (
-      <Component {...getProps(custom, includeHeight)} {...additionalProps} />
-    ))
-    .add('image with srcset', () => (
-      <Component
-        {...getProps(landscape, includeHeight)}
-        srcset={landscape.srcset}
-        {...additionalProps}
-      />
-    ));
+    .add(
+      'landscape image',
+      () => (
+        <Component
+          {...getProps(landscape, includeHeight)}
+          {...additionalProps}
+        />
+      ),
+      { notes },
+    )
+    .add(
+      'portrait image',
+      () => (
+        <Component
+          {...getProps(portrait, includeHeight)}
+          {...additionalProps}
+        />
+      ),
+      { notes },
+    )
+    .add(
+      'square image',
+      () => (
+        <Component {...getProps(square, includeHeight)} {...additionalProps} />
+      ),
+      { notes },
+    )
+    .add(
+      'custom ratio image',
+      () => (
+        <Component {...getProps(custom, includeHeight)} {...additionalProps} />
+      ),
+      { notes },
+    )
+    .add(
+      'image with srcset',
+      () => (
+        <Component
+          {...getProps(landscape, includeHeight)}
+          srcset={landscape.srcset}
+          {...additionalProps}
+        />
+      ),
+      { notes },
+    );
 
 export default stories;

@@ -22,6 +22,6 @@ module.exports = {
   rules: {
     'react/jsx-one-expression-per-line': 'off',
     'linebreak-style': process.platform === 'win32' ? 'off' : ['error', 'unix'],
-    "import/no-extraneous-dependencies": ["error", {"packageDir": ['./package.json', '../../package.json']}]
+    "import/no-extraneous-dependencies": 'off'
   },
 };

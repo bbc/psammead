@@ -1,15 +1,18 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import { withReadme } from 'storybook-readme';
-import Readme from '../README.md';
+import notes from '../README.md';
 import { Headline, SubHeading } from './index';
 
-storiesOf('Headline', module)
-  .addDecorator(withReadme(Readme))
-  .add('default', () => <Headline>This is my headline.</Headline>);
+storiesOf('Headline', module).add(
+  'default',
+  () => <Headline>This is my headline.</Headline>,
+  { notes },
+);
 
-storiesOf('SubHeading', module)
-  .addDecorator(withReadme(Readme))
-  .add('default', () => (
+storiesOf('SubHeading', module).add(
+  'default',
+  () => (
     <SubHeading text="This is a SubHeading">This is a SubHeading</SubHeading>
-  ));
+  ),
+  { notes },
+);
