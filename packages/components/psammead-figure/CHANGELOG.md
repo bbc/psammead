@@ -2,6 +2,7 @@
 
 | Version | Description |
 |---------|-------------|
+| 0.2.0   | [PR#366](https://github.com/BBC/psammead/pull/366) Remove 100% width. |
 | 0.1.7   | [PR#323](https://github.com/bbc/psammead/pull/323) Update storybook badge url |
 | 0.1.6   | [PR#323](https://github.com/BBC/psammead/pull/323) Update readme storybook badge |
 | 0.1.5   | [PR#264](https://github.com/BBC/psammead/pull/319) Resolving package-lock issues. |
