@@ -3,12 +3,8 @@
 
 * Status: proposed
 * Deciders:
-  * Sareh H
-  * Drew M
-  * Amy W
-  * Marcos G
-  * Chris H
-  * Chris A
+  * Articles Team
+  * WS Team
 * Date: 2019-03-18
 
 Technical Story:
@@ -31,19 +27,14 @@ Currently, Psammead uses a hard-coded set of constants that express the Type Siz
 
 1. A theming library that applies different CSS styles depending on the service context
 [Link](https://github.com/bbc/psammead/issues/332)
+* Bad: adds another dependency to the stack
+* Bad: a stardadised solution may not take into account the particularities of Psammead
+
 
 2. Utility functions specific to the Type Style that take the script as a parameter and return the relevant CSS [Link](https://github.com/bbc/psammead/issues/332#issuecomment-470638342)
+* Good: Lightweight solution that leverages existing code
+* Good: Easy and clear migration path
 
 ## Decision Outcome
 
-Chosen option: 2. Utility function, as it allows for the most portability of code.
-
-## Pros and Cons of the Options <!-- optional -->
-
-### 1. Theming Library
-
-* Con: adds another dependency to the stack
-
-### 2. Utility functions
-
-* Good: return only the font-size and line-height specific CSS
+Option 2. Utility function, as it allows for the most portable, backwards-compatible and GEL-compliant solution, while not adding external dependencies to the codebase.
