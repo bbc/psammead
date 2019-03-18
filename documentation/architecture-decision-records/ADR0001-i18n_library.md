@@ -1,5 +1,5 @@
-## ADR-0001
 # Adopt react-intl as i18n library
+## ADR-0001
 
 * Status: proposed
 * Deciders:
