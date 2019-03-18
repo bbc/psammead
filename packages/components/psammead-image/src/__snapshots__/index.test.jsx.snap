@@ -3,7 +3,6 @@
 exports[`Image - imported as '{ Img }' should render image with custom dimensions correctly 1`] = `
 .c0 {
   display: block;
-  width: 100%;
 }
 
 <img
@@ -18,7 +17,6 @@ exports[`Image - imported as '{ Img }' should render image with custom dimension
 exports[`Image - imported as '{ Img }' should render image with srcset correctly 1`] = `
 .c0 {
   display: block;
-  width: 100%;
 }
 
 <img
@@ -34,7 +32,6 @@ exports[`Image - imported as '{ Img }' should render image with srcset correctly
 exports[`Image - imported as '{ Img }' should render landscape image correctly 1`] = `
 .c0 {
   display: block;
-  width: 100%;
 }
 
 <img
@@ -49,7 +46,6 @@ exports[`Image - imported as '{ Img }' should render landscape image correctly 1
 exports[`Image - imported as '{ Img }' should render portrait image correctly 1`] = `
 .c0 {
   display: block;
-  width: 100%;
 }
 
 <img
@@ -64,7 +60,6 @@ exports[`Image - imported as '{ Img }' should render portrait image correctly 1`
 exports[`Image - imported as '{ Img }' should render square image correctly 1`] = `
 .c0 {
   display: block;
-  width: 100%;
 }
 
 <img
@@ -79,7 +74,6 @@ exports[`Image - imported as '{ Img }' should render square image correctly 1`] 
 exports[`Image - imported as default 'Image' should render image with custom dimensions correctly 1`] = `
 .c0 {
   display: block;
-  width: 100%;
 }
 
 <img
@@ -94,7 +88,6 @@ exports[`Image - imported as default 'Image' should render image with custom dim
 exports[`Image - imported as default 'Image' should render image with srcset correctly 1`] = `
 .c0 {
   display: block;
-  width: 100%;
 }
 
 <img
@@ -110,7 +103,6 @@ exports[`Image - imported as default 'Image' should render image with srcset cor
 exports[`Image - imported as default 'Image' should render landscape image correctly 1`] = `
 .c0 {
   display: block;
-  width: 100%;
 }
 
 <img
@@ -125,7 +117,6 @@ exports[`Image - imported as default 'Image' should render landscape image corre
 exports[`Image - imported as default 'Image' should render portrait image correctly 1`] = `
 .c0 {
   display: block;
-  width: 100%;
 }
 
 <img
@@ -140,7 +131,6 @@ exports[`Image - imported as default 'Image' should render portrait image correc
 exports[`Image - imported as default 'Image' should render square image correctly 1`] = `
 .c0 {
   display: block;
-  width: 100%;
 }
 
 <img
