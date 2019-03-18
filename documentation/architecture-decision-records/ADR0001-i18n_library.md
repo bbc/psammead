@@ -95,6 +95,13 @@ Support: 18 issues - 1 bug. Low activity in community
 
 Licensing: FBT is MIT licensed, as found in the LICENSE file.
 
+4. Roll your own library
+
+An i18n library developed internally.
+
+Pros: custom-built to fit our needs
+Cons: More developer resources needed to deliver an i18n library with the required feature set in time.
+
 ---
 
 ## Decision Outcome
