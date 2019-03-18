@@ -6,7 +6,6 @@ export { default as AmpImg } from './index.amp';
 
 const StyledImg = styled.img`
   display: block;
-  width: 100%;
 `;
 
 export const Img = ({ alt, src, srcset, height, width }) => {
