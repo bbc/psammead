@@ -17,13 +17,16 @@
   },
   "homepage": "https://github.com/bbc/psammead/blob/latest/packages/components/psammead-figure/README.md",
   "dependencies": {
-    "@bbc/gel-foundations": "^0.1.4",
-    "styled-components": "^4.1.2"
+    "@bbc/gel-foundations": "^0.1.4"
   },
   "devDependencies": {
     "@bbc/psammead-test-helpers": "^0.3.1",
     "@bbc/psammead-image": "^0.3.0",
-    "react": "^16.6.3"
+    "react": "^16.6.3",
+    "styled-components": "^4.1.2"
+  },
+  "peerDependencies": {
+    "styled-components": "^4.1.2"
   },
   "keywords": [
     "bbc",
