@@ -13,26 +13,26 @@ export const GEL_GROUP_CD_MIN_WIDTH = 37.5; // 600px
     Link to relevant GEL docs: https://www.bbc.co.uk/gel/guidelines/grid#grid-sizes
     The only exception is that we have split out group 1 into 0 and 1
 */
-export const GEL_GROUP_0_SCREEN_WIDTH_MIN = `0em`; // 0px
-export const GEL_GROUP_0_SCREEN_WIDTH_MAX = `14.9375em`; // 239px
+export const GEL_GROUP_0_SCREEN_WIDTH_MIN = `0rem`; // 0px
+export const GEL_GROUP_0_SCREEN_WIDTH_MAX = `14.9375rem`; // 239px
 
-export const GEL_GROUP_1_SCREEN_WIDTH_MIN = `15em`; // 240px
-export const GEL_GROUP_1_SCREEN_WIDTH_MAX = `24.9375em`; // 399px
+export const GEL_GROUP_1_SCREEN_WIDTH_MIN = `15rem`; // 240px
+export const GEL_GROUP_1_SCREEN_WIDTH_MAX = `24.9375rem`; // 399px
 
-export const GEL_GROUP_2_SCREEN_WIDTH_MIN = `25em`; // 400px
-export const GEL_GROUP_2_SCREEN_WIDTH_MAX = `37.4375em`; // 599px
+export const GEL_GROUP_2_SCREEN_WIDTH_MIN = `25rem`; // 400px
+export const GEL_GROUP_2_SCREEN_WIDTH_MAX = `37.4375rem`; // 599px
 
-export const GEL_GROUP_3_SCREEN_WIDTH_MIN = `37.5em`; // 600px
-export const GEL_GROUP_3_SCREEN_WIDTH_MAX = `62.9375em`; // 1007px
+export const GEL_GROUP_3_SCREEN_WIDTH_MIN = `37.5rem`; // 600px
+export const GEL_GROUP_3_SCREEN_WIDTH_MAX = `62.9375rem`; // 1007px
 
-export const GEL_GROUP_4_SCREEN_WIDTH_MIN = `63em`; // 1008px
-export const GEL_GROUP_4_SCREEN_WIDTH_MAX = `80em`; // 1279px
+export const GEL_GROUP_4_SCREEN_WIDTH_MIN = `63rem`; // 1008px
+export const GEL_GROUP_4_SCREEN_WIDTH_MAX = `80rem`; // 1279px
 
-export const GEL_GROUP_5_SCREEN_WIDTH_MIN = `80em`; // 1280px
+export const GEL_GROUP_5_SCREEN_WIDTH_MIN = `80rem`; // 1280px
 
 export const MEDIA_QUERY_TYPOGRAPHY = {
-  FEATURE_PHONE_ONLY: `@media (max-width: ${GEL_GROUP_A_MAX_WIDTH}em)`,
-  SMART_PHONE_ONLY: `@media (min-width: ${GEL_GROUP_B_MIN_WIDTH}em) and (max-width: ${GEL_GROUP_B_MAX_WIDTH}em)`,
-  SMART_PHONE_AND_LARGER: `@media (min-width: ${GEL_GROUP_B_MIN_WIDTH}em)`,
-  LAPTOP_AND_LARGER: `@media (min-width: ${GEL_GROUP_CD_MIN_WIDTH}em)`,
+  FEATURE_PHONE_ONLY: `@media (max-width: ${GEL_GROUP_A_MAX_WIDTH}rem)`,
+  SMART_PHONE_ONLY: `@media (min-width: ${GEL_GROUP_B_MIN_WIDTH}rem) and (max-width: ${GEL_GROUP_B_MAX_WIDTH}rem)`,
+  SMART_PHONE_AND_LARGER: `@media (min-width: ${GEL_GROUP_B_MIN_WIDTH}rem)`,
+  LAPTOP_AND_LARGER: `@media (min-width: ${GEL_GROUP_CD_MIN_WIDTH}rem)`,
 };
