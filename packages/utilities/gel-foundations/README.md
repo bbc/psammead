@@ -41,7 +41,7 @@ const SomeStyledComponent = css`
 
 To allow the typography to be fully accessible and responsive, please note that you should apply a default font-size to the document root (e.g. `html { font-size: 100% }`).
 
-Our breakpoints and typography font-size and line-heights use `rem` for sizing due to the charity and reduced side effects in its usage. `rem` is relative to the document root, so we use that for line-height and spacing for a consistent look-and-feel across the document. You can read our [detailed analysis of "REMs vs EMs for spacing"](https://github.com/bbc/simorgh/blob/latest/docs/Spacing-Units.md) for more information.
+Our breakpoints and typography font-size and line-heights use `rem` for sizing due to the reduced side effects in its usage. `rem` is relative to the document root, so we use that for line-height and spacing for a consistent look-and-feel across the document. You can read our [detailed analysis of "REMs vs EMs for spacing"](https://github.com/bbc/simorgh/blob/latest/docs/Spacing-Units.md) for more information.
 
 ## Contributing
 
