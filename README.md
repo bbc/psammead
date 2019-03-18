@@ -19,7 +19,7 @@ Psammead packages are split into:
 
 ## :gift: Getting Started
 
-### :airplane: Clone this repositry
+### :airplane: Clone this repository
 
 ```
 git clone git@github.com:bbc/psammead.git
@@ -104,7 +104,7 @@ You can do this in pure CSS:
 
   @font-face {
     font-display: optional;
-    font-family: ReithSansNewsRegular;
+    font-family: "ReithSans";
     font-style: normal;
     font-weight: 400;
     src: url('https://gel.files.bbci.co.uk/r2.302/BBCReithSans_W_Rg.woff2')
@@ -113,7 +113,7 @@ You can do this in pure CSS:
   }
   @font-face {
     font-display: optional;
-    font-family: ReithSerifNewsMedium;
+    font-family: "ReithSerif";
     font-style: normal;
     font-weight: 600;
     src: url('https://gel.files.bbci.co.uk/r2.302/BBCReithSerif_W_Md.woff2')
