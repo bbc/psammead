@@ -50,7 +50,7 @@ https://medium.freecodecamp.org/internationalization-in-react-7264738274a0
 
 ---
 
-1. `react-intl-native`
+1. `react-intl-universal`
 
 Created and maintained by Alibaba.
 
