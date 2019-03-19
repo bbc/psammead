@@ -1,20 +1,28 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
+import { withKnobs, text } from '@storybook/addon-knobs';
 import InlineLink from '@bbc/psammead-inline-link';
 import VisuallyHiddenText from '@bbc/psammead-visually-hidden-text';
 import notes from '../README.md';
 import Caption from '.';
 
 storiesOf('Caption', module)
-  .add('default', () => <Caption>This is a caption.</Caption>, {
-    notes,
-  })
+  .addDecorator(withKnobs)
+  .add(
+    'default',
+    () => <Caption>{text('Content', 'This is a caption.')}</Caption>,
+    {
+      notes,
+    },
+  )
   .add(
     'with offscreen text',
     () => (
       <Caption>
-        <VisuallyHiddenText>Image caption, </VisuallyHiddenText>
-        This is a caption with preceding offscreen text.
+        <VisuallyHiddenText>
+          {text('Hidden Text', 'Image caption, ')}
+        </VisuallyHiddenText>
+        {text('Content', 'This is a caption with preceding offscreen text.')}
       </Caption>
     ),
     { notes },
@@ -23,9 +31,9 @@ storiesOf('Caption', module)
     'containing an inline link',
     () => (
       <Caption>
-        {'This is a caption '}
+        {text('Content', 'This is a caption ')}
         <InlineLink href="https://www.bbc.com">
-          containing an inline link
+          {text('Inline link', 'containing an inline link')}
         </InlineLink>
         .
       </Caption>
