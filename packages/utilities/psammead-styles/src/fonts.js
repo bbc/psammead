@@ -24,7 +24,7 @@ export const F_REITH_SERIF_BOLD = `
     font-display: optional;
   }`;
 
-export const F_REITH_SERIF_BOLD_ITALIC = `  
+export const F_REITH_SERIF_BOLD_ITALIC = `
   @font-face {
     font-family: "ReithSerif";
     src: url("${baseFontUrl}BBCReithSerif_W_BdIt.woff2") format("woff2"), url("${baseFontUrl}BBCReithSerif_W_BdIt.woff") format("woff");
@@ -182,4 +182,23 @@ export const F_REITH_SANS_CONDENSED_BOLD = `
         font-weight: 700;
         src: url("${baseFontUrl}BBCReithSansCd_W_Bd.woff2") format("woff2"), url("${baseFontUrl}BBCReithSansCd_W_Bd.woff") format("woff");
         font-display: optional;
+    }`;
+
+// World Service Embedded Fonts
+const embeddedBaseFontUrl =
+  'https://static.bbc.co.uk/modules/bbcfonts/1.9.9/fonts/';
+
+// Noto Sans Ethiopic
+export const F_NOTO_SANS_ETHIOPIC_REGULAR = `
+    @font-face {
+        font-family: "NotoSansEthiopic";
+        src: url("${embeddedBaseFontUrl}amharic/NotoSansEthiopic.woff") format("woff");
+        font-weight: normal;
+    }`;
+
+export const F_NOTO_SANS_ETHIOPIC_BOLD = `
+    @font-face {
+        font-family: "NotoSansEthiopic";
+        src: url("${embeddedBaseFontUrl}amharic/NotoSansEthiopic.woff") format("woff");
+        font-weight: bold;
     }`;
