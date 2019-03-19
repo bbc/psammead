@@ -2,6 +2,7 @@
 
 | Version | Description |
 |---------|-------------|
+| 0.3.0   | [PR#377](https://github.com/bbc/psammead/pull/369) Add knobs addon using psammead-storybook-helpers |
 | 0.3.0   | [PR#365](https://github.com/bbc/psammead/pull/365) Remove background colour, update colour to Cloud Dark. Use font style italic. |
 | 0.2.1   | [PR#323](https://github.com/bbc/psammead/pull/323) Update storybook badge url |
 | 0.2.0   | [PR#318](https://github.com/BBC/psammead/pull/318) Update to new font face and family. |
