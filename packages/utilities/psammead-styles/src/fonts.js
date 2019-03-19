@@ -188,51 +188,6 @@ export const F_REITH_SANS_CONDENSED_BOLD = `
 const embeddedBaseFontUrl =
   'https://static.bbc.co.uk/modules/bbcfonts/1.9.9/fonts/';
 
-// Noto Sans Ethiopic
-export const F_NOTO_SANS_ETHIOPIC_REGULAR = `
-    @font-face {
-        font-family: "NotoSansEthiopic";
-        src: url("${embeddedBaseFontUrl}amharic/NotoSansEthiopic.woff") format("woff");
-        font-weight: normal;
-    }`;
-
-export const F_NOTO_SANS_ETHIOPIC_BOLD = `
-    @font-face {
-        font-family: "NotoSansEthiopic";
-        src: url("${embeddedBaseFontUrl}amharic/NotoSansEthiopic_bold.woff") format("woff");
-        font-weight: bold;
-    }`;
-
-// Padauk
-export const F_PADAUK_REGULAR = `
-    @font-face {
-        font-family: "Padauk";
-        src: url("${embeddedBaseFontUrl}burmese/Padauk.woff") format("woff");
-        font-weight: normal;
-    }`;
-
-export const F_PADAUK_BOLD = `
-    @font-face {
-        font-family: "Padauk";
-        src: url("${embeddedBaseFontUrl}burmese/Padauk_bold.woff") format("woff");
-        font-weight: bold;
-    }`;
-
-// Shonar_bangla
-export const F_SHONAR_BANGLA_REGULAR = `
-    @font-face {
-        font-family: "Shonar_bangla";
-        src: url("${embeddedBaseFontUrl}bengali/Shonar_bangla.woff") format("woff");
-        font-weight: normal;
-    }`;
-
-export const F_SHONAR_BANGLA_BOLD = `
-    @font-face {
-        font-family: "Shonar_bangla";
-        src: url("${embeddedBaseFontUrl}bengali/Shonar_bangla_bold.woff") format("woff");
-        font-weight: bold;
-    }`;
-
 // BBC Nassim
 export const F_BBC_NASSIM_REGULAR = `
     @font-face {
@@ -278,10 +233,55 @@ export const F_LATHA_BOLD = `
         font-weight: bold;
     }`;
 
+// Noto Sans Ethiopic
+export const F_NOTO_SANS_ETHIOPIC_REGULAR = `
+    @font-face {
+        font-family: "NotoSansEthiopic";
+        src: url("${embeddedBaseFontUrl}amharic/NotoSansEthiopic.woff") format("woff");
+        font-weight: normal;
+    }`;
+
+export const F_NOTO_SANS_ETHIOPIC_BOLD = `
+    @font-face {
+        font-family: "NotoSansEthiopic";
+        src: url("${embeddedBaseFontUrl}amharic/NotoSansEthiopic_bold.woff") format("woff");
+        font-weight: bold;
+    }`;
+
 // Mallanna
 export const F_MALLANNA_REGULAR = `
     @font-face {
         font-family: "Mallanna";
         src: url("${embeddedBaseFontUrl}telugu/Mallanna.woff") format("woff");
         font-weight: normal;
+    }`;
+
+// Padauk
+export const F_PADAUK_REGULAR = `
+    @font-face {
+        font-family: "Padauk";
+        src: url("${embeddedBaseFontUrl}burmese/Padauk.woff") format("woff");
+        font-weight: normal;
+    }`;
+
+export const F_PADAUK_BOLD = `
+    @font-face {
+        font-family: "Padauk";
+        src: url("${embeddedBaseFontUrl}burmese/Padauk_bold.woff") format("woff");
+        font-weight: bold;
+    }`;
+
+// Shonar_bangla
+export const F_SHONAR_BANGLA_REGULAR = `
+    @font-face {
+        font-family: "Shonar_bangla";
+        src: url("${embeddedBaseFontUrl}bengali/Shonar_bangla.woff") format("woff");
+        font-weight: normal;
+    }`;
+
+export const F_SHONAR_BANGLA_BOLD = `
+    @font-face {
+        font-family: "Shonar_bangla";
+        src: url("${embeddedBaseFontUrl}bengali/Shonar_bangla_bold.woff") format("woff");
+        font-weight: bold;
     }`;
