@@ -262,3 +262,18 @@ export const F_ISKOOLA_POTA_BBC_BOLD = `
         src: url("${embeddedBaseFontUrl}sinhala/Iskoola_pota_bbc_bold.woff") format("woff");
         font-weight: bold;
     }`;
+
+// Latha
+export const F_LATHA_REGULAR = `
+    @font-face {
+        font-family: "Latha";
+        src: url("${embeddedBaseFontUrl}tamil/Latha.woff") format("woff");
+        font-weight: normal;
+    }`;
+
+export const F_LATHA_BOLD = `
+    @font-face {
+        font-family: "Latha";
+        src: url("${embeddedBaseFontUrl}tamil/Latha_bold.woff") format("woff");
+        font-weight: bold;
+    }`;
