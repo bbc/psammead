@@ -199,6 +199,6 @@ export const F_NOTO_SANS_ETHIOPIC_REGULAR = `
 export const F_NOTO_SANS_ETHIOPIC_BOLD = `
     @font-face {
         font-family: "NotoSansEthiopic";
-        src: url("${embeddedBaseFontUrl}amharic/NotoSansEthiopic.woff") format("woff");
+        src: url("${embeddedBaseFontUrl}amharic/NotoSansEthiopic_bold.woff") format("woff");
         font-weight: bold;
     }`;
