@@ -247,3 +247,18 @@ export const F_BBC_NASSIM_BOLD = `
         src: url("${embeddedBaseFontUrl}urdu/BBCNassim_bold.woff") format("woff");
         font-weight: bold;
     }`;
+
+// Iskoola_pota_bbc
+export const F_ISKOOLA_POTA_BBC_REGULAR = `
+    @font-face {
+        font-family: "Iskoola_pota_bbc";
+        src: url("${embeddedBaseFontUrl}sinhala/Iskoola_pota_bbc.woff") format("woff");
+        font-weight: normal;
+    }`;
+
+export const F_ISKOOLA_POTA_BBC_BOLD = `
+    @font-face {
+        font-family: "Iskoola_pota_bbc";
+        src: url("${embeddedBaseFontUrl}sinhala/Iskoola_pota_bbc_bold.woff") format("woff");
+        font-weight: bold;
+    }`;
