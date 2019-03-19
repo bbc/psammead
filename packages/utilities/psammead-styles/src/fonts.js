@@ -277,3 +277,11 @@ export const F_LATHA_BOLD = `
         src: url("${embeddedBaseFontUrl}tamil/Latha_bold.woff") format("woff");
         font-weight: bold;
     }`;
+
+// Mallanna
+export const F_MALLANNA_REGULAR = `
+    @font-face {
+        font-family: "Mallanna";
+        src: url("${embeddedBaseFontUrl}telugu/Mallanna.woff") format("woff");
+        font-weight: normal;
+    }`;
