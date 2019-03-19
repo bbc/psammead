@@ -9,7 +9,7 @@
 
 Technical Story:
 
-World Service has a UX requirement that GEL Type Styles (Canon, Long Primer, Double Pica, etc) should allow for mutable values of font size and line height across services. The possible permutations of such values were grouped into eight different 'scripts': arabic, burmese, cjk_thai, hindi_nepali_bengali, latin, mundo, sinhala, and tamil, as shown in the tabs of this spreadsheet https://docs.google.com/spreadsheets/d/1WMY-rlSbekhB4pV3ojMuYoWDC71Qs93CB2wTfDwAsJg/edit#gid=1458344872
+World Service has a UX requirement that GEL Type Styles (Canon, Long Primer, Double Pica, etc) should allow for mutable values of font size and line height across services. The possible permutations of such values were grouped into eight different 'scripts': arabic, burmese, cjk_thai, hindi_nepali_bengali, latin, mundo, sinhala, and tamil, as shown in the tabs of [this spreadsheet](https://docs.google.com/spreadsheets/d/1WMY-rlSbekhB4pV3ojMuYoWDC71Qs93CB2wTfDwAsJg/edit#gid=1458344872)
 
 Additionally, a ninth script that contains the default values GEL for all type groups is also required.
 
