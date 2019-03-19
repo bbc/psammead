@@ -202,3 +202,18 @@ export const F_NOTO_SANS_ETHIOPIC_BOLD = `
         src: url("${embeddedBaseFontUrl}amharic/NotoSansEthiopic_bold.woff") format("woff");
         font-weight: bold;
     }`;
+
+// Padauk
+export const F_PADAUK_REGULAR = `
+    @font-face {
+        font-family: "Padauk";
+        src: url("${embeddedBaseFontUrl}burmese/Padauk.woff") format("woff");
+        font-weight: normal;
+    }`;
+
+export const F_PADAUK_BOLD = `
+    @font-face {
+        font-family: "Padauk";
+        src: url("${embeddedBaseFontUrl}burmese/Padauk_bold.woff") format("woff");
+        font-weight: bold;
+    }`;
