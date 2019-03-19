@@ -27,6 +27,19 @@ const fontsExpectedExports = {
   F_REITH_SANS_EXTRA_BOLD_ITALIC: 'string',
   F_REITH_SANS_CONDENSED_REGULAR: 'string',
   F_REITH_SANS_CONDENSED_BOLD: 'string',
+  F_BBC_NASSIM_REGULAR: 'string',
+  F_BBC_NASSIM_BOLD: 'string',
+  F_ISKOOLA_POTA_BBC_REGULAR: 'string',
+  F_ISKOOLA_POTA_BBC_BOLD: 'string',
+  F_LATHA_REGULAR: 'string',
+  F_LATHA_BOLD: 'string',
+  F_NOTO_SANS_ETHIOPIC_REGULAR: 'string',
+  F_NOTO_SANS_ETHIOPIC_BOLD: 'string',
+  F_MALLANNA_REGULAR: 'string',
+  F_PADAUK_REGULAR: 'string',
+  F_PADAUK_BOLD: 'string',
+  F_SHONAR_BANGLA_REGULAR: 'string',
+  F_SHONAR_BANGLA_BOLD: 'string',
 };
 
 const coloursExpectedExports = {
