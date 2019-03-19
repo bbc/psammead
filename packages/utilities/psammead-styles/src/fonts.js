@@ -217,3 +217,18 @@ export const F_PADAUK_BOLD = `
         src: url("${embeddedBaseFontUrl}burmese/Padauk_bold.woff") format("woff");
         font-weight: bold;
     }`;
+
+// Shonar_bangla
+export const F_SHONAR_BANGLA_REGULAR = `
+    @font-face {
+        font-family: "Shonar_bangla";
+        src: url("${embeddedBaseFontUrl}bengali/Shonar_bangla.woff") format("woff");
+        font-weight: normal;
+    }`;
+
+export const F_SHONAR_BANGLA_BOLD = `
+    @font-face {
+        font-family: "Shonar_bangla";
+        src: url("${embeddedBaseFontUrl}bengali/Shonar_bangla_bold.woff") format("woff");
+        font-weight: bold;
+    }`;
