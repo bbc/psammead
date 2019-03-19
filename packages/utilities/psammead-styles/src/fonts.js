@@ -232,3 +232,18 @@ export const F_SHONAR_BANGLA_BOLD = `
         src: url("${embeddedBaseFontUrl}bengali/Shonar_bangla_bold.woff") format("woff");
         font-weight: bold;
     }`;
+
+// BBC Nassim
+export const F_BBC_NASSIM_REGULAR = `
+    @font-face {
+        font-family: "BBCNassim";
+        src: url("${embeddedBaseFontUrl}urdu/BBCNassim.woff") format("woff");
+        font-weight: normal;
+    }`;
+
+export const F_BBC_NASSIM_BOLD = `
+    @font-face {
+        font-family: "BBCNassim";
+        src: url("${embeddedBaseFontUrl}urdu/BBCNassim_bold.woff") format("woff");
+        font-weight: bold;
+    }`;
