@@ -28,7 +28,7 @@ Currently, Psammead uses a hard-coded set of constants that express the Type Siz
 1. A theming library that applies different CSS styles depending on the service context
 [Link](https://github.com/bbc/psammead/issues/332)
 * Bad: adds another dependency to the stack
-* Bad: a stardadised solution may not take into account the particularities of Psammead
+* Bad: a standardised solution may not take into account the particularities of Psammead
 
 
 2. Utility functions specific to the Type Style that take the script as a parameter and return the relevant CSS [Link](https://github.com/bbc/psammead/issues/332#issuecomment-470638342)
