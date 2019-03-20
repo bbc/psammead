@@ -5,11 +5,9 @@ export const GEL_F_REITH_SERIF = `ReithSerif`;
 export const GEL_F_REITH_SANS = `ReithSans`;
 export const GEL_F_REITH_SANS_COND = `ReithSansCondensed`;
 
-export const getFontFamily = (
-  reithVariant = GEL_F_REITH_SANS,
-  script = 'latin',
-) => {
-  const { fontFamily, reith } = scripts[`${script}Script`];
+export const getFontFamily = (reithVariant = GEL_F_REITH_SANS, script = '') => {
+  const scriptConfig = scripts[`${script}Script`] || scripts.latinScript;
+  const { fontFamily, reith } = scriptConfig;
   return reith ? `${reithVariant}, ${fontFamily}` : fontFamily;
 };
 
