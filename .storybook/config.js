@@ -14,6 +14,7 @@ import {
   F_REITH_SANS_ITALIC,
   F_REITH_SANS_BOLD,
   F_REITH_SERIF_LIGHT,
+  F_NOTO_SANS_ETHIOPIC_REGULAR,
 } from '@bbc/psammead-styles/fonts';
 import Helmet from 'react-helmet';
 
@@ -51,6 +52,7 @@ const GlobalStyle = createGlobalStyle`
   ${F_REITH_SANS_ITALIC}
   ${F_REITH_SANS_BOLD}
   ${F_REITH_SERIF_LIGHT}
+  ${F_NOTO_SANS_ETHIOPIC_REGULAR}
 `;
 
 addDecorator(story => (

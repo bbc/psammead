@@ -7,8 +7,8 @@ import {
 import {
   GEL_CANON,
   GEL_TRAFALGAR,
-  GEL_FF_REITH_SANS,
   GEL_FF_REITH_SERIF,
+  F_NOTO_SANS_ETHIOPIC,
 } from '@bbc/gel-foundations/typography';
 
 export const Headline = styled.h1`
@@ -28,7 +28,7 @@ export const SubHeading = styled.h2.attrs(({ text }) => ({
   tabIndex: '-1',
 }))`
   color: ${C_SHADOW};
-  font-family: ${GEL_FF_REITH_SANS};
+  font-family: ${F_NOTO_SANS_ETHIOPIC};
   margin: 0; /* Reset */
   padding: ${GEL_SPACING_DBL} 0;
   font-weight: 700;

@@ -12,7 +12,10 @@ storiesOf('Headline', module).add(
 storiesOf('SubHeading', module).add(
   'default',
   () => (
-    <SubHeading text="This is a SubHeading">This is a SubHeading</SubHeading>
+    <SubHeading text="This is a SubHeading">
+      አደጋው የደረሰበት አካባቢ ነዋሪዎች ለማያውቋቸው የአደጋው ሰለባዎች ልባቸው በሀዘን ተሰብሮ ከመጣው ጋር ሲያለቅሱና
+      ሃዘናቸውን ሲገልጹ የሰውነት ሩህሩህነታቸውን ለዓለም አሳይተው ርዕስ ሆነው ሰንብተዋል።
+    </SubHeading>
   ),
   { notes },
 );
