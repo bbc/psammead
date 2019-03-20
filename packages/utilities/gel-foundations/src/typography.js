@@ -7,6 +7,10 @@ export const GEL_FF_REITH_SERIF = `ReithSerif${fontFamilyBase}`;
 export const GEL_FF_REITH_SANS = `ReithSans${fontFamilyBase}`;
 export const GEL_FF_REITH_SANS_COND = `ReithSansCondensed${fontFamilyBase}`;
 
+export const GEL_F_REITH_SERIF = `ReithSerif`;
+export const GEL_F_REITH_SANS = `ReithSans`;
+export const GEL_F_REITH_SANS_COND = `ReithSansCondensed`;
+
 // WS Fonts
 export const getFontFamily = (reithVariant = '', script) => {
   const { fontFamily, reith } = scripts[`${script}Script`];
