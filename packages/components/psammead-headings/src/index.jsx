@@ -9,7 +9,7 @@ import {
   GEL_TRAFALGAR,
   GEL_FF_REITH_SERIF,
   GEL_FF_REITH_SANS_SERIF,
-  getEthiopicScript,
+  getFontFamily,
 } from '@bbc/gel-foundations/typography';
 
 export const Headline = styled.h1`
@@ -29,7 +29,7 @@ export const SubHeading = styled.h2.attrs(({ text }) => ({
   tabIndex: '-1',
 }))`
   color: ${C_SHADOW};
-  font-family: ${getEthiopicScript(GEL_FF_REITH_SANS_SERIF)};
+  font-family: ${props => getFontFamily(GEL_FF_REITH_SANS_SERIF, props.script)};
   margin: 0; /* Reset */
   padding: ${GEL_SPACING_DBL} 0;
   font-weight: 700;
