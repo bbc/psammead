@@ -1,6 +1,11 @@
 import cjkThaiSizingGroup from '../sizingGroup/cjk_thai';
 import hindiNepaliBengaliTypography from '../sizingGroup/hindi_nepali_bengali';
 
+export const latinScript = {
+  fontFamily: 'Helmet, Freesans, Helvetica, Arial, sans-serif',
+  reith: true,
+};
+
 export const ethiopicScript = {
   fontFamily: 'NotoSansEthiopic, Arial, Verdana, Geneva, Helvetica, sans-serif',
   reith: false,
