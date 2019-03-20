@@ -2,7 +2,7 @@
 
 | Version | Description |
 |---------|-------------|
-| 0.3.4   | [PR#323](https://github.com/bbc/psammead/pull/xxx) Update colour from Shadow to Ebon |
+| 0.3.4   | [PR#323](https://github.com/bbc/psammead/pull/371) Update colour from Shadow to Ebon |
 | 0.3.3   | [PR#323](https://github.com/bbc/psammead/pull/323) Update storybook badge url |
 | 0.3.2   | [PR#323](https://github.com/BBC/psammead/pull/323) Update readme storybook badge |
 | 0.3.1   | [PR#264](https://github.com/BBC/psammead/pull/319) Resolving package-lock issues. |
