@@ -1,4 +1,5 @@
 import { MEDIA_QUERY_TYPOGRAPHY } from './breakpoints';
+import ethiopicScript from './scripts/ethiopic';
 
 const fontFamilyBase = ', Helvetica, Arial, sans-serif';
 
@@ -8,6 +9,14 @@ export const GEL_FF_REITH_SANS_COND = `ReithSansCondensed${fontFamilyBase}`;
 
 // WS Fonts
 export const F_NOTO_SANS_ETHIOPIC = `NotoSansEthiopic`;
+
+const getFontFamily = (reithVariant, script) => {
+  const { fontFamily, reith } = script;
+  return reith ? `${reithVariant}, ${fontFamily}` : fontFamily;
+};
+
+export const getEthiopicScript = reithVariant =>
+  getFontFamily(reithVariant, ethiopicScript);
 
 export const GEL_ATLAS = `
   font-size: 4.875rem;
