@@ -1,4 +1,4 @@
-const sinhalaTypographyConfig = {
+const sinhalaTypography = {
   canon: {
     groupA: {
       fontSize: '30',
@@ -85,4 +85,4 @@ const sinhalaTypographyConfig = {
   },
 };
 
-export default sinhalaTypographyConfig;
+export default sinhalaTypography;

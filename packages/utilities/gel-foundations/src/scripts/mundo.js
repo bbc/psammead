@@ -1,4 +1,4 @@
-const mundoTypographyConfig = {
+const mundoTypography = {
   canon: {
     groupA: {
       fontSize: '20',
@@ -85,4 +85,4 @@ const mundoTypographyConfig = {
   },
 };
 
-export default mundoTypographyConfig;
+export default mundoTypography;

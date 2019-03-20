@@ -1,4 +1,4 @@
-const burmeseTypographyConfig = {
+const burmeseTypography = {
   canon: {
     groupA: {
       fontSize: '24',
@@ -85,4 +85,4 @@ const burmeseTypographyConfig = {
   },
 };
 
-export default burmeseTypographyConfig;
+export default burmeseTypography;

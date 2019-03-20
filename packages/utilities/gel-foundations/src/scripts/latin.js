@@ -1,4 +1,4 @@
-const latinTypographyConfig = {
+const latinTypography = {
   canon: {
     groupA: {
       fontSize: '28',
@@ -85,4 +85,4 @@ const latinTypographyConfig = {
   },
 };
 
-export default latinTypographyConfig;
+export default latinTypography;

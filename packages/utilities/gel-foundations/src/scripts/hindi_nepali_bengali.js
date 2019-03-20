@@ -1,4 +1,4 @@
-const hindiNepaliBengaliTypographyConfig = {
+const hindiNepaliBengaliTypography = {
   canon: {
     groupA: {
       fontSize: '28',
@@ -85,4 +85,4 @@ const hindiNepaliBengaliTypographyConfig = {
   },
 };
 
-export default hindiNepaliBengaliTypographyConfig;
+export default hindiNepaliBengaliTypography;

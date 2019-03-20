@@ -1,4 +1,4 @@
-const cjkThaiTypographyConfig = {
+const cjkThaiTypography = {
   canon: {
     groupA: {
       fontSize: '28',
@@ -85,4 +85,4 @@ const cjkThaiTypographyConfig = {
   },
 };
 
-export default cjkThaiTypographyConfig;
+export default cjkThaiTypography;

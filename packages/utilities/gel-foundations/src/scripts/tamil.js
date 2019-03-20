@@ -1,4 +1,4 @@
-const tamilTypographyConfig = {
+const tamilTypography = {
   canon: {
     groupA: {
       fontSize: '22',
@@ -85,4 +85,4 @@ const tamilTypographyConfig = {
   },
 };
 
-export default tamilTypographyConfig;
+export default tamilTypography;

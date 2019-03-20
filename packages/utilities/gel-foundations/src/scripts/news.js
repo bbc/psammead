@@ -1,4 +1,4 @@
-const newsTypographyConfig = {
+const newsTypography = {
   atlas: {
     groupA: {
       fontSize: '78',
@@ -211,4 +211,4 @@ const newsTypographyConfig = {
   },
 };
 
-export default newsTypographyConfig;
+export default newsTypography;
