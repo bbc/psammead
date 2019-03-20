@@ -41,6 +41,9 @@ const typographyExpectedExports = {
   GEL_FF_REITH_SERIF: 'string',
   GEL_FF_REITH_SANS: 'string',
   GEL_FF_REITH_SANS_COND: 'string',
+  GEL_F_REITH_SERIF: 'string',
+  GEL_F_REITH_SANS: 'string',
+  GEL_F_REITH_SANS_COND: 'string',
   GEL_ATLAS: 'string',
   GEL_ELEPHANT: 'string',
   GEL_IMPERIAL: 'string',
@@ -56,6 +59,7 @@ const typographyExpectedExports = {
   GEL_LONG_PRIMER: 'string',
   GEL_BREVIER: 'string',
   GEL_MINION: 'string',
+  getFontFamily: 'function',
 };
 
 const expectedExports = {
@@ -78,6 +82,7 @@ const actualExportsFromSrc = {
 
 describe('Gel constants', () => {
   it('should test all the utility exports exist and are the correct type', () => {
+    console.log(actualExports.typography);
     testUtilityPackages(actualExports, expectedExports, 'gel-foundations');
   });
 
