@@ -12,7 +12,10 @@ export const GEL_F_REITH_SANS = `ReithSans`;
 export const GEL_F_REITH_SANS_COND = `ReithSansCondensed`;
 
 // WS Fonts
-export const getFontFamily = (reithVariant = '', script) => {
+export const getFontFamily = (
+  reithVariant = GEL_F_REITH_SANS,
+  script = 'latin',
+) => {
   const { fontFamily, reith } = scripts[`${script}Script`];
   return reith ? `${reithVariant}, ${fontFamily}` : fontFamily;
 };
