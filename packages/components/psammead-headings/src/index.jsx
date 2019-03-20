@@ -7,14 +7,14 @@ import {
 import {
   GEL_CANON,
   GEL_TRAFALGAR,
-  GEL_FF_REITH_SERIF,
-  GEL_FF_REITH_SANS_SERIF,
+  GEL_F_REITH_SERIF,
+  GEL_F_REITH_SANS_SERIF,
   getFontFamily,
 } from '@bbc/gel-foundations/typography';
 
 export const Headline = styled.h1`
   color: ${C_SHADOW};
-  font-family: ${GEL_FF_REITH_SERIF};
+  font-family: ${({ script }) => getFontFamily(GEL_F_REITH_SERIF, script)};
   margin: 0; /* Reset */
   padding: ${GEL_SPACING_QUAD} 0 ${GEL_SPACING_DBL} 0;
   font-weight: 500;
@@ -29,7 +29,7 @@ export const SubHeading = styled.h2.attrs(({ text }) => ({
   tabIndex: '-1',
 }))`
   color: ${C_SHADOW};
-  font-family: ${props => getFontFamily(GEL_FF_REITH_SANS_SERIF, props.script)};
+  font-family: ${({ script }) => getFontFamily(GEL_F_REITH_SANS_SERIF, script)};
   margin: 0; /* Reset */
   padding: ${GEL_SPACING_DBL} 0;
   font-weight: 700;
