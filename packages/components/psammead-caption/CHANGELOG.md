@@ -2,6 +2,7 @@
 
 | Version | Description |
 |---------|-------------|
+| 0.3.0   | [PR#365](https://github.com/bbc/psammead/pull/365) Remove background colour, update colour to Cloud Dark. Use font style italic. |
 | 0.2.1   | [PR#323](https://github.com/bbc/psammead/pull/323) Update storybook badge url |
 | 0.2.0   | [PR#318](https://github.com/BBC/psammead/pull/318) Update to new font face and family. |
 | 0.1.6   | [PR#323](https://github.com/BBC/psammead/pull/323) Update readme storybook badge |
