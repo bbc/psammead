@@ -1,17 +1,10 @@
 import { MEDIA_QUERY_TYPOGRAPHY } from './breakpoints';
 import * as scripts from './scripts/scriptsConfig';
 
-const fontFamilyBase = ', Helvetica, Arial, sans-serif';
-
-export const GEL_FF_REITH_SERIF = `ReithSerif${fontFamilyBase}`;
-export const GEL_FF_REITH_SANS = `ReithSans${fontFamilyBase}`;
-export const GEL_FF_REITH_SANS_COND = `ReithSansCondensed${fontFamilyBase}`;
-
 export const GEL_F_REITH_SERIF = `ReithSerif`;
 export const GEL_F_REITH_SANS = `ReithSans`;
 export const GEL_F_REITH_SANS_COND = `ReithSansCondensed`;
 
-// WS Fonts
 export const getFontFamily = (
   reithVariant = GEL_F_REITH_SANS,
   script = 'latin',
@@ -19,6 +12,10 @@ export const getFontFamily = (
   const { fontFamily, reith } = scripts[`${script}Script`];
   return reith ? `${reithVariant}, ${fontFamily}` : fontFamily;
 };
+
+export const GEL_FF_REITH_SERIF = getFontFamily(GEL_F_REITH_SERIF);
+export const GEL_FF_REITH_SANS = getFontFamily(GEL_F_REITH_SANS);
+export const GEL_FF_REITH_SANS_COND = getFontFamily(GEL_F_REITH_SANS_COND);
 
 export const GEL_ATLAS = `
   font-size: 4.875rem;
