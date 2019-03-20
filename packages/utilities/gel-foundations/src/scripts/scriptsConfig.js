@@ -2,7 +2,7 @@ import cjkThaiSizingGroup from '../sizingGroup/cjk_thai';
 import hindiNepaliBengaliTypography from '../sizingGroup/hindi_nepali_bengali';
 
 export const latinScript = {
-  fontFamily: 'Helmet, Freesans, Helvetica, Arial, sans-serif',
+  fontFamily: 'Helvetica, Arial, sans-serif',
   reith: true,
 };
 
