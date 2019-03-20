@@ -34,7 +34,7 @@ const SomeStyledComponent = css`
   ${getLongPrimer(script)};
 
   @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
-    grid-gap: ${GEL_GUTTER_ABOVE_600PX};   
+    grid-gap: ${GEL_GUTTER_ABOVE_600PX};
   }
 `;
 ```
@@ -43,8 +43,8 @@ To allow the typography to be fully accessible and responsive, please note that 
 
 Our typography uses `rem` for font-size and line-height. `rem` is relative to the document root, so we use that for font-size and line-height and spacing for a consistent look-and-feel across the document. You can read our [detailed analysis of "REMs vs EMs for spacing"](https://github.com/bbc/simorgh/blob/latest/docs/Spacing-Units.md) for more information.
 
-You can pass a script name as a prop to the utility typography function (e.g. `getLongPrimer('arabic')`), to get the font-size and line-height for the Typography Style of that script. By default it will use the `news` script as found [here](https://www.bbc.co.uk/gel/guidelines/typography#type-sizes).
-git
+You can pass a script config object to the utility typography function (e.g. `getLongPrimer('arabicTypography')`), to get the Typography Type Styles (font-size and line-height) specifics for that script. By default it will use the `news` script as found [here](https://www.bbc.co.uk/gel/guidelines/typography#type-sizes).
+
 ## Contributing
 
 When **adding** a new export to this utility package the [export tests](https://github.com/bbc/psammead/blob/5d7395fd60bd8d73796d5a23775b4b5b36db1445/packages/utilities/gel-foundations/index.test.jsx#L13-L59) also need to be updated. When **removing** an exisiting export from this utility package the [export tests](https://github.com/bbc/psammead/blob/5d7395fd60bd8d73796d5a23775b4b5b36db1445/packages/utilities/gel-foundations/index.test.jsx#L13-L59) need to be updated and the package version requires a major change (EG: 1.2.1 -> 2.0.0) as this would be considered a breaking change as functionality is being removed.
