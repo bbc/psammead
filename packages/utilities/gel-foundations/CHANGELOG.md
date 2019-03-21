@@ -2,7 +2,7 @@
 
 | Version | Description |
 |---------|-------------|
-| 0.2.6   | [PR#353](https://github.com/BBC/psammead/pull/353) Add support for different scripts typographies |
+| 0.3.0   | [PR#353](https://github.com/BBC/psammead/pull/353) Add support for different scripts typographies |
 | 0.2.5   | [PR#349](https://github.com/BBC/psammead/pull/349) Add GEL Group A breakpoint |
 | 0.2.4   | [PR#323](https://github.com/BBC/psammead/pull/323) Update readme storybook badge |
 | 0.2.3   | [PR#264](https://github.com/BBC/psammead/pull/319) Resolving package-lock issues. |
