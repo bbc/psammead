@@ -43,7 +43,8 @@ To allow the typography to be fully accessible and responsive, please note that 
 
 Our typography uses `rem` for font-size and line-height. `rem` is relative to the document root, so we use that for font-size and line-height and spacing for a consistent look-and-feel across the document. You can read our [detailed analysis of "REMs vs EMs for spacing"](https://github.com/bbc/simorgh/blob/latest/docs/Spacing-Units.md) for more information.
 
-You can pass a script config object to the utility typography function (e.g. `getLongPrimer('arabicTypography')`), to get the Typography Type Styles (font-size and line-height) specifics for that script. By default it will use the `news` script as found [here](https://www.bbc.co.uk/gel/guidelines/typography#type-sizes).
+The utility typography function (e.g. `getLongPrimer('arabic')`) receives a script argument which is an object with the different script GEL Types Sizes and returns the font-sizes and line-heights for the specific GEL Type (e.g. `Long Premier`).
+You can import the script doing `import { arabic } from '@bbc/gel-foundations/scripts`. By default you should import the `news` script wich contains the Types Sizes found [here](https://www.bbc.co.uk/gel/guidelines/typography#type-sizes).
 
 ## Contributing
 
