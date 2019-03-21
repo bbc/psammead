@@ -1,6 +1,6 @@
 import { testUtilityPackages } from '@bbc/psammead-test-helpers';
-import * as testVariants from './text-variants';
-import * as testVariantsFromSrc from './src/text-variants';
+import * as textVariants from './text-variants';
+import * as textVariantsFromSrc from './src/text-variants';
 
 const textVariantsExpectedExports = {
   LANGUAGE_VARIANTS: 'object',
@@ -11,11 +11,11 @@ const expectedExports = {
 };
 
 const actualExports = {
-  testVariants,
+  textVariants,
 };
 
 const actualExportsFromSrc = {
-  testVariants: testVariantsFromSrc,
+  textVariants: textVariantsFromSrc,
 };
 
 describe('Psammead storybook helpers', () => {
