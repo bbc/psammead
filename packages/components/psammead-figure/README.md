@@ -34,7 +34,7 @@ import VisuallyHiddenText from '@bbc/psammead-visually-hidden-text';
 
 const Wrapper = ({ alt, captionText, ratio, src, width }) => (
   <Figure>
-    <ImagePlaceholder ratio={ratio}>
+    <ImagePlaceholder ratio={ratio} maxWidth={width}>
       <Image alt={alt} src={src} width={width} />
       <Copyright>
         <VisuallyHiddenText>Image copyright, </VisuallyHiddenText>

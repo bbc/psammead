@@ -4,6 +4,8 @@
 
 The `psammead-image-placeholder` component is a `div` with a base-64 encoded SVG background image that depicts the BBC logo. The component accepts a ratio as a prop. In the Psammead component library, Image Placeholder is used within the [psammead-figure](https://github.com/bbc/psammead/tree/latest/packages/components/psammead-figure) component.
 
+By default, the component will scale to fill the size of its container, but you can provide a `maxWidth` parameter to prevent it scaling above an unreasonable size. The component is clever enough to maintain its aspect ratio even when it reaches its max width.
+
 ## Installation
 
 `npm install @bbc/psammead-image-placeholder`
@@ -13,6 +15,7 @@ The `psammead-image-placeholder` component is a `div` with a base-64 encoded SVG
 | Argument | Type                                   | Required | Default | Example |
 | -------- | -------------------------------------- | -------- | ------- | ------- |
 | Ratio    | Number, ratio between height and width | Yes      | N/A     | 65.625  |
+| maxWidth | Width (in `px`) it is able to scale to | No       | `100%`  | `624`   |
 
 ## Usage
 
@@ -24,7 +27,7 @@ import ImagePlaceholder from '@bbc/psammead-image-placeholder';
 const WrapperComponent = ({
   ratio,
 }) => (
-  <ImagePlaceholder ratio={ratio}>
+  <ImagePlaceholder ratio={ratio} maxWidth={width}>
     <img src="http://some-image.url">
   </ImagePlaceholder>
 );
