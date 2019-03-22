@@ -2,6 +2,7 @@
 
 | Version | Description |
 |---------|-------------|
+| 0.3.2   | [PR#334](https://github.com/BBC/psammead/pull/334) Improve examples of using Figure and Copyright |
 | 0.3.1   | [PR#323](https://github.com/bbc/psammead/pull/323) Update storybook badge url |
 | 0.3.0   | [PR#318](https://github.com/BBC/psammead/pull/318) Update to new font face and family. |
 | 0.2.6   | [PR#323](https://github.com/BBC/psammead/pull/323) Update readme storybook badge |
