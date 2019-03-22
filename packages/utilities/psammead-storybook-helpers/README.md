@@ -5,6 +5,7 @@ This package provides a collection of common values that are used in storybook b
 ## Exports
 
 `text-variants` - A list of text samples in different languages.
+`input-provider` - A function that 
 
 ## Installation
 
@@ -16,11 +17,12 @@ npm install @bbc/psammead-storybook-helpers --save-dev
 
 ```jsx
 import { LANGUAGE_VARIANTS } from '@bbc/psammead-storybook-helpers/text-variants';
+import { inputProvider } from '@bbc/psammead-storybook-helpers/input-provider';
 ```
 
 ## Contributing
 
-When **adding** a new export to this utility package the [export tests](https://github.com/bbc/psammead/blob/0ddf2a24089b9544c82c39be4db9f2151b39cc0d/packages/utilities/psammead-storybook-helpers/index.test.jsx#L5-L7) also need to be updated. When **removing** an exisiting export from this utility package the [export tests](https://github.com/bbc/psammead/blob/0ddf2a24089b9544c82c39be4db9f2151b39cc0d/packages/utilities/psammead-storybook-helpers/index.test.jsx#L5-L7) need to be updated and the package version requires a major change (EG: 1.2.1 -> 2.0.0) as this would be considered a breaking change due to functionality being removed.
+When **adding** a new export to this utility package the [export tests](https://github.com/bbc/psammead/blob/dab14a2732cfa620e083b7da66a148b4189474a7/packages/utilities/psammead-storybook-helpers/index.test.jsx#L7-L13) also need to be updated. When **removing** an exisiting export from this utility package the [export tests](https://github.com/bbc/psammead/blob/dab14a2732cfa620e083b7da66a148b4189474a7/packages/utilities/psammead-storybook-helpers/index.test.jsx#L7-L13) need to be updated and the package version requires a major change (EG: 1.2.1 -> 2.0.0) as this would be considered a breaking change due to functionality being removed.
 
 Psammead is completely open source. We are grateful for any contributions, whether they be new components, bug fixes or general improvements. Please see our primary contributing guide which can be found at [the root of the Psammead respository](https://github.com/bbc/psammead/blob/latest/CONTRIBUTING.md).
 
