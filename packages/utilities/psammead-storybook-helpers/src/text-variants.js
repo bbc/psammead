@@ -37,6 +37,7 @@ export const LANGUAGE_VARIANTS = {
   Gujarati: 'જીતેન્દ્રસિંહ મૂળ ઉત્તર પ્રદેશના ફિરોઝાબાદના',
   Hindi: 'जय शाह',
   Marathi: 'नीरव मोदी',
+  News: 'Kepler telescope discovers 100 Earth-sized planets',
   Nepali: 'हेमन्तप्रकाश मल्ल',
   Pashto:
     'د ملګرو ملتونو د ماشومانو ادارې یونیسف افغان کرېکټ لوبغاړی راشد خان په افغانستان کې د ښه نیست ملي سفیر وټاکه.',
