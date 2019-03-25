@@ -82,7 +82,6 @@ const actualExportsFromSrc = {
 
 describe('Gel constants', () => {
   it('should test all the utility exports exist and are the correct type', () => {
-    console.log(actualExports.typography);
     testUtilityPackages(actualExports, expectedExports, 'gel-foundations');
   });
 
