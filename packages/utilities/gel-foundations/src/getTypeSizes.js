@@ -1,7 +1,7 @@
 import { MEDIA_QUERY_TYPOGRAPHY } from './breakpoints';
 
-const getTypeSizes = (typogStyleName, importedScript) => {
-  const typographyStyle = importedScript[typogStyleName];
+const getTypeSizes = (typographyName, importedScript) => {
+  const typographyStyle = importedScript[typographyName];
 
   const GROUP_A_FONT_SIZE_PX = typographyStyle.groupA.fontSize;
   const GROUP_A_FONT_SIZE = `${GROUP_A_FONT_SIZE_PX / 16}rem`;
