@@ -17,7 +17,8 @@ describe('getTypeSizes', () => {
     ${MEDIA_QUERY_TYPOGRAPHY.LAPTOP_AND_LARGER} {
       font-size: 2.75rem;
       line-height: 3.375rem;
-    }`;
+    }
+  `;
 
     expect(block).toEqual(canonStyles);
   });
