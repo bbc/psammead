@@ -17,8 +17,8 @@
   },
   "homepage": "https://github.com/bbc/psammead/blob/latest/packages/components/psammead-copyright/README.md",
   "dependencies": {
-    "@bbc/gel-foundations": "^0.2.2",
-    "@bbc/psammead-styles": "^0.3.0"
+    "@bbc/gel-foundations": "^0.3.0",
+    "@bbc/psammead-styles": "^0.3.2"
   },
   "keywords": [
     "bbc",
@@ -28,6 +28,6 @@
     "figure"
   ],
   "devDependencies": {
-    "@bbc/psammead-test-helpers": "^0.3.0"
+    "@bbc/psammead-test-helpers": "^0.3.3"
   }
 }
