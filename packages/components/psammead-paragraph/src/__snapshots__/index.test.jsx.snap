@@ -10,7 +10,7 @@ exports[`Paragraph should render a correctly 1`] = `
   line-height: 1.25rem;
 }
 
-@media (min-width:20em) {
+@media (min-width:20rem) {
   .c0 {
     font-size: 1rem;
     line-height: 1.375rem;
