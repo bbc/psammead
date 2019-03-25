@@ -5,7 +5,7 @@ This package provides a collection of common values that are used in storybook b
 ## Exports
 
 `text-variants` - A list of text samples in different languages.
-`input-provider` - A function that 
+`input-provider` - A function that provides support for selecting between the `text` and `select` storybook knobs.
 
 ## Installation
 
