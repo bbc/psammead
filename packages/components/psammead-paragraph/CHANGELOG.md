@@ -2,7 +2,7 @@
 
 | Version | Description |
 |---------|-------------|
-| 0.3.2   | [PR#387](https://github.com/bbc/psammead/pull/387) Increase padding-bottom from 16px to 24px |
+| 0.3.2   | [PR#392](https://github.com/bbc/psammead/pull/392) Increase padding-bottom from 16px to 24px |
 | 0.3.1   | [PR#323](https://github.com/bbc/psammead/pull/323) Update storybook badge url |
 | 0.3.0   | [PR#318](https://github.com/BBC/psammead/pull/318) Update to new font face and family. |
 | 0.2.2   | [PR#323](https://github.com/BBC/psammead/pull/323) Update readme storybook badge |
