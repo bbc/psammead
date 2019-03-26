@@ -18,7 +18,7 @@ export const Headline = styled.h1`
   margin: 0; /* Reset */
   padding: ${GEL_SPACING_QUAD} 0 ${GEL_SPACING_QUAD} 0;
   ${MEDIA_QUERY_TYPOGRAPHY.LAPTOP_AND_LARGER} {
-    padding: 2.5rem 0 2.5rem 0;
+    padding: 2.5rem 0;
   }
   font-weight: 500;
   ${GEL_CANON};

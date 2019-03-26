@@ -13,7 +13,7 @@ exports[`Headline component should render correctly 1`] = `
 
 @media (min-width:37.5em) {
   .c0 {
-    padding: 2.5rem 0 2.5rem 0;
+    padding: 2.5rem 0;
   }
 }
 
