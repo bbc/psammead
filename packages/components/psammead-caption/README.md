@@ -46,7 +46,9 @@ Since this is just a `<figcaption>` tag with associated styles, when you use thi
 
 The font and background-color choices meet WCAG AA colour contrast guidelines.
 
-<!-- ## Roadmap -->
+## Roadmap
+
+When this caption is used for scripts that do not support italic text, we can consider creating a prop that toggles the `font-style: italic`.
 
 ## Contributing
 
