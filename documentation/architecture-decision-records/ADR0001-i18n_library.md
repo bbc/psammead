@@ -1,7 +1,7 @@
 # Adopt react-intl as i18n library
 ## ADR-0001
 
-* Status: proposed
+* Status: Proposed
 * Deciders:
   * Articles Team
   * WS Team
@@ -20,19 +20,19 @@ Psammead components need a standardised approach to localisation, including date
 
 ## Considered Options
 
-1. `react-intl`
+1. [react-intl](https://github.com/yahoo/react-intl)
 
-Created and maintained by yahoo.
+Created and maintained by Yahoo.
 
 This library provides React components and an API to format dates, numbers, and strings, including pluralization and handling translations.
 
-It uses and builds on the Internationalization API built-in to JavaScript.
+It uses and builds on the [Internationalization API built-in to JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl).
 
 Features:
 * Display numbers with separators.
 * Display dates and times correctly.
 * Display dates relative to "now".
-* Pluralize labels in strings
+* Pluralize labels in strings.
 * Support for 150+ languages.
 * Runs in the browser and Node.js.
 
@@ -50,23 +50,24 @@ https://medium.freecodecamp.org/internationalization-in-react-7264738274a0
 
 ---
 
-2. `react-intl-universal`
+2. [react-intl-universal](https://github.com/alibaba/react-intl-universal)
 
 Created and maintained by Alibaba.
 
-It is an improvement of `react intl` in that it adds functionality for supporting translations in Vanilla JS. React-intl only does this in React Components.
+It is an improvement of `react intl` in that it adds functionality for supporting translations in Vanilla JS. `react-intl` only does this in React Components.
 
 Features:
 * It can do what we want i.e format numbers, times and dates
-* Can run in both the browser and Node js so we will be covered when we finally work on adding SPA support )
+* Can run both in the browser and in NodeJS so we will be covered when we finally work on adding SPA support
 * Supports fetching of config files from a remote source e.g S3
-* Seems like it was built for a specific reason; supporting translations in Vanilla JS. As we’ll be using React components, I don’t think we have to worry about this.
+* Seems like it was built for a specific reason; supporting translations in Vanilla JS. This doesn't apply to us, as we’ll be using React components, but it doesn't prevent us from using it.
 
 Support:
 * Quick responses on both issues and Pull requests
 * 14 issues, 6 PRs
 
-* Developer experience:
+
+Developer experience:
 * Some parts of the docs aren’t grammatically correct. One will notice the errors but it’s not bad enough that one won’t be able to understand the docs.
 * Noticed that there are several issues that are asking for new features that are available on react-intl but not on react-intl-universal. Seems like they aren’t actively working on new features at the moment. If the current version suits our needs, we won’t have to worry about this.
 
@@ -74,9 +75,9 @@ Licensing: BSD 3-Clause "New" or "Revised" License granted by Alibaba. License p
 
 ---
 
-3. `fbt`
+3. [fbt](https://github.com/facebookincubator/fbt)
 
-Created by facebook.
+Created by Facebook.
 
 Features:
 * Organizing your source text for translation
@@ -85,9 +86,10 @@ Features:
 
 FBT works by transforming your `<fbt>` and `fbt(...)` constructs via Babel plugins. These plugins serve to extract strings from source and lookup translate payloads generated at build-time. FBT creates tables of all possible variations for the given fbt phrase and accesses this at runtime.
 
-Developer Experience:
+Developer experience:
+
 * Confusing syntax
-* Not many resources found, rather than the docs which are not very clear
+* Not many resources found, other than the docs which are not very clear
 * https://facebookincubator.github.io/fbt/docs/api_intro
 * https://twitter.com/fbopensource/status/1080883562293878784
 
@@ -106,4 +108,4 @@ Cons: More developer resources needed to deliver an i18n library with the requir
 
 ## Decision Outcome
 
-There was a clear preference among developers for option 1. `react-intl` as it is the most straight-forward and fully-supported option, providing the best developer experience out of all three. It was also the easiest to integrate into Psammead, as can be seen here: https://paper.dropbox.com/doc/2019-02-21-Component-Library-Meeting-i18n--AZgQeBdv~qXuQnL9jK5rcz4XAg-hSXxc23xnF6U7xnEkXwPc
+There was a clear preference among developers for option 1. `react-intl` as it is the most straight-forward and fully-supported option, providing the best developer experience out of all three. It was also the easiest to integrate into Psammead (according to our [component library meeting notes](https://paper.dropbox.com/doc/2019-02-21-Component-Library-Meeting-i18n--AZgQeBdv~qXuQnL9jK5rcz4XAg-hSXxc23xnF6U7xnEkXwPc)).
