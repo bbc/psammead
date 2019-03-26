@@ -58,9 +58,9 @@ It is an improvement of `react intl` in that it adds functionality for supportin
 
 Features:
 * It can do what we want i.e format numbers, times and dates
-* Can run in both the browser and Node js so we will be covered when we finally work on * ding SPA support )
+* Can run in both the browser and Node js so we will be covered when we finally work on adding SPA support )
 * Supports fetching of config files from a remote source e.g S3
-* Seems like it was built for a specific reason; supporting translations in Vanilla JS. As * ’ll be using React components, I don’t think we have to worry about this.
+* Seems like it was built for a specific reason; supporting translations in Vanilla JS. As we’ll be using React components, I don’t think we have to worry about this.
 
 Support:
 * Quick responses on both issues and Pull requests
