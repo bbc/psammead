@@ -9,7 +9,7 @@
 
 ## Context and Problem Statement
 
-Psammead components need a stardardised approach to localisation, including date and time formatting and string translation.
+Psammead components need a standardised approach to localisation, including date and time formatting and string translation.
 
 ## Decision Drivers
 
@@ -50,7 +50,7 @@ https://medium.freecodecamp.org/internationalization-in-react-7264738274a0
 
 ---
 
-1. `react-intl-universal`
+2. `react-intl-universal`
 
 Created and maintained by Alibaba.
 
