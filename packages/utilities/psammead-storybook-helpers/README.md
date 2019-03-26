@@ -1,10 +1,11 @@
-# psammead-storybook-helpers - [![GitHub license](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](https://github.com/bbc/psammead/blob/latest/LICENSE) [![npm version](https://img.shields.io/npm/v/@bbc/psammead-assets.svg)](https://www.npmjs.com/package/@bbc/psammead-assets) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/bbc/psammead/blob/latest/CONTRIBUTING.md)
+# psammead-storybook-helpers - [![GitHub license](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](https://github.com/bbc/psammead/blob/latest/LICENSE) [![npm version](https://img.shields.io/npm/v/@bbc/psammead-storybook-helpers.svg)](https://www.npmjs.com/package/@bbc/psammead-storybook-helpers) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/bbc/psammead/blob/latest/CONTRIBUTING.md)
 
 This package provides a collection of common values that are used in storybook by the Psammead components.
 
 ## Exports
 
 `text-variants` - A list of text samples in different languages.
+
 `input-provider` - A function that provides support for selecting between the `text` and `select` storybook knobs.
 
 ## Installation
@@ -16,8 +17,37 @@ npm install @bbc/psammead-storybook-helpers --save-dev
 ## Usage
 
 ```jsx
+// LANGUAGE_VARIANTS
+
+import { select } from '@storybook/addon-knobs'
 import { LANGUAGE_VARIANTS } from '@bbc/psammead-storybook-helpers/text-variants';
+
+const label = 'Languages';
+const defaultValue = 'This is a caption';
+const groupIdentifier = 'CAPTION VARIANTS';
+
+In a story,
+
+<Caption>
+  {select(label, LANGUAGE_VARIANTS, defaultValue, groupIdentifier)}
+</Caption>
+
+// inputProvider
+
+import { storiesOf } from '@storybook/react';
+import { withKnobs } from '@storybook/addon-knobs';
 import { inputProvider } from '@bbc/psammead-storybook-helpers/input-provider';
+
+In a story,
+
+storiesOf('Caption', module)
+  .addDecorator(withKnobs)
+  .add(
+    'default',
+    inputProvider(['caption'], captionText => <Caption>{captionText}</Caption>),
+    { notes },
+  )
+
 ```
 
 ## Contributing
