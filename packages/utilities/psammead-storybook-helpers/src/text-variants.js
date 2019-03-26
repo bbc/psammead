@@ -5,6 +5,7 @@ export const LANGUAGE_VARIANTS = {
   Afrique:
     'La police surveille le cimetière de Christchurch où sont enterrées les premières victimes de la tuerie.',
   Amharic: 'አቶ ባትሪ ለማ እና አቶ ደቻሳ ጉተማ',
+  English: 'Kepler telescope discovers 100 Earth-sized planets',
   Gahuza:
     'Abashika 100.000 ntawuzi irengero ryabo, abandi ibihumbi nabo ntibagira aho bakika umusaya',
   Hausa: 'Bayanin Ganduje kan ayyukan Gama',
@@ -37,7 +38,6 @@ export const LANGUAGE_VARIANTS = {
   Gujarati: 'જીતેન્દ્રસિંહ મૂળ ઉત્તર પ્રદેશના ફિરોઝાબાદના',
   Hindi: 'जय शाह',
   Marathi: 'नीरव मोदी',
-  English: 'Kepler telescope discovers 100 Earth-sized planets',
   Nepali: 'हेमन्तप्रकाश मल्ल',
   Pashto:
     'د ملګرو ملتونو د ماشومانو ادارې یونیسف افغان کرېکټ لوبغاړی راشد خان په افغانستان کې د ښه نیست ملي سفیر وټاکه.',
