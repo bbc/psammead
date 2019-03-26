@@ -71,7 +71,7 @@ Developer experience:
 * Some parts of the docs aren’t grammatically correct. One will notice the errors but it’s not bad enough that one won’t be able to understand the docs.
 * Noticed that there are several issues that are asking for new features that are available on react-intl but not on react-intl-universal. Seems like they aren’t actively working on new features at the moment. If the current version suits our needs, we won’t have to worry about this.
 
-Licensing: BSD 3-Clause "New" or "Revised" License granted by Alibaba. License page info.
+Licensing: BSD 3-Clause "New" or "Revised" License granted by Alibaba. [License page info.](https://github.com/alibaba/react-intl-universal/blob/master/LICENSE.md)
 
 ---
 
@@ -91,7 +91,6 @@ Developer experience:
 * Confusing syntax
 * Not many resources found, other than the docs which are not very clear
 * https://facebookincubator.github.io/fbt/docs/api_intro
-* https://twitter.com/fbopensource/status/1080883562293878784
 
 Support: 18 issues - 1 bug. Low activity in community
 
