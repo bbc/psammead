@@ -8,7 +8,7 @@ export const inputProvider = (names, componentFunction) => () => {
       ? select(
           `Content for ${name}`,
           LANGUAGE_VARIANTS,
-          LANGUAGE_VARIANTS.News,
+          LANGUAGE_VARIANTS.English,
           name,
         )
       : text(`Content for ${name}`, 'Enter sample text', name),
