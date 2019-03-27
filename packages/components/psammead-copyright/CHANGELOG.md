@@ -1,8 +1,10 @@
 # Psammead Headings Changelog
 
+<!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
-| 0.3.3   | [PR#398](https://github.com/bbc/psammead/pull/398) Update dependencies |
+| 0.3.4   | [PR#398](https://github.com/bbc/psammead/pull/398) Update dependencies |
+| 0.3.3   | [PR#329](https://github.com/BBC/psammead/pull/329) Adding Visually Hidden Text to copyright component story. |
 | 0.3.2   | [PR#334](https://github.com/BBC/psammead/pull/334) Improve examples of using Figure and Copyright |
 | 0.3.1   | [PR#323](https://github.com/bbc/psammead/pull/323) Update storybook badge url |
 | 0.3.0   | [PR#318](https://github.com/BBC/psammead/pull/318) Update to new font face and family. |

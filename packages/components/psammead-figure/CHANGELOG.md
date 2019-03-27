@@ -1,5 +1,6 @@
 # Psammead Figure Changelog
 
+<!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
 | 0.1.9   | [PR#398](https://github.com/bbc/psammead/pull/398) Update dependencies |
