@@ -1,6 +1,6 @@
 {
   "name": "@bbc/psammead-copyright",
-  "version": "0.3.2",
+  "version": "0.3.3",
   "main": "dist/index.js",
   "description": "React styled component for overlaid copyright or source attribution.",
   "repository": {
@@ -28,6 +28,7 @@
     "figure"
   ],
   "devDependencies": {
-    "@bbc/psammead-test-helpers": "^0.3.0"
+    "@bbc/psammead-test-helpers": "^0.3.0",
+    "@bbc/psammead-visually-hidden-text": "^0.1.8"
   }
 }
