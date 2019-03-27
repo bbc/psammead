@@ -111,7 +111,7 @@ Developer experience:
 Support: 18 issues - 1 bug. Low activity in community
 
 Licensing: FBT is MIT licensed, as found in the LICENSE file.
-
+---
 4. Roll your own library
 
 An i18n library developed internally.
