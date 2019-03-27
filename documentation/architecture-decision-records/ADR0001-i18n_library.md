@@ -44,6 +44,14 @@ Support: 206 issues - 1 bug
 
 Licensing: Free to use under the Yahoo Inc. BSD license. See the LICENSE file for license text and copyright information.
 
+Size:
+
+Bundle Size
+47.6 kB Minified
+13kB Minified + GZipped
+
+https://bundlephobia.com/result?p=react-intl@2.8.0
+
 Examples:
 https://www.codeandweb.com/babeledit/tutorials/how-to-translate-your-react-app-with-react-intl
 https://medium.freecodecamp.org/internationalization-in-react-7264738274a0
@@ -70,6 +78,13 @@ Support:
 Developer experience:
 * Some parts of the docs aren’t grammatically correct. One will notice the errors but it’s not bad enough that one won’t be able to understand the docs.
 * Noticed that there are several issues that are asking for new features that are available on react-intl but not on react-intl-universal. Seems like they aren’t actively working on new features at the moment. If the current version suits our needs, we won’t have to worry about this.
+
+Size:
+
+75.4 kB Minified
+24.7 kB Minified + GZipped
+
+https://bundlephobia.com/result?p=react-intl-universal@1.15.5
 
 Licensing: BSD 3-Clause "New" or "Revised" License granted by Alibaba. [License page info.](https://github.com/alibaba/react-intl-universal/blob/master/LICENSE.md)
 
