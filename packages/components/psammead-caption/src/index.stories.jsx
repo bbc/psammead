@@ -1,7 +1,7 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { withKnobs } from '@storybook/addon-knobs';
-import inputProvider from '@bbc/psammead-storybook-helpers/input-provider';
+import { inputProvider } from '@bbc/psammead-storybook-helpers';
 import InlineLink from '@bbc/psammead-inline-link';
 import VisuallyHiddenText from '@bbc/psammead-visually-hidden-text';
 import notes from '../README.md';
