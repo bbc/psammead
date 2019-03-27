@@ -1,6 +1,7 @@
 {
   "name": "@bbc/psammead-storybook-helpers",
   "version": "0.1.0",
+  "main": "dist/index.js",
   "description": "A collection of common values that are used in storybook by the Psammead components.",
   "repository": {
     "type": "git",

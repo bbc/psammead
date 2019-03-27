@@ -1,5 +1,4 @@
-/* eslint-disable import/prefer-default-export */
-export const LANGUAGE_VARIANTS = {
+const LANGUAGE_VARIANTS = {
   AfaanOromoo:
     "Gammadoo ta'uun akkanumaan hin dhufu, waan shaakalamuudha jetti saantoos.",
   Afrique:
@@ -68,3 +67,5 @@ export const LANGUAGE_VARIANTS = {
   Persian:
     'در این جشنواره برای نخستین بار از کارگران افغانستان در شهر تهران تقدیر شد',
 };
+
+export default LANGUAGE_VARIANTS;

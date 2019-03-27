@@ -1,8 +1,7 @@
 import { boolean, text, select } from '@storybook/addon-knobs';
-import { LANGUAGE_VARIANTS } from './text-variants';
+import LANGUAGE_VARIANTS from './text-variants';
 
-/* eslint-disable import/prefer-default-export */
-export const inputProvider = (names, componentFunction) => () => {
+const inputProvider = (names, componentFunction) => () => {
   const inputs = names.map(name =>
     boolean(`Show presets for ${name}`, false, name)
       ? select(
@@ -16,3 +15,5 @@ export const inputProvider = (names, componentFunction) => () => {
 
   return componentFunction(...inputs);
 };
+
+export default inputProvider;
