@@ -1,4 +1,4 @@
-const cjkThaiTypography = {
+const thaiTypography = {
   canon: {
     groupA: {
       fontSize: '28',
@@ -27,7 +27,49 @@ const cjkThaiTypography = {
       lineHeight: '42',
     },
   },
-  pica: {
+  paragon: {
+    groupA: {
+      fontSize: '',
+      lineHeight: '',
+    },
+    groupB: {
+      fontSize: '',
+      lineHeight: '',
+    },
+    groupD: {
+      fontSize: '',
+      lineHeight: '',
+    },
+  },
+  doublePica: {
+    groupA: {
+      fontSize: '',
+      lineHeight: '',
+    },
+    groupB: {
+      fontSize: '',
+      lineHeight: '',
+    },
+    groupD: {
+      fontSize: '',
+      lineHeight: '',
+    },
+  },
+  greatPrimer: {
+    groupA: {
+      fontSize: '',
+      lineHeight: '',
+    },
+    groupB: {
+      fontSize: '',
+      lineHeight: '',
+    },
+    groupD: {
+      fontSize: '',
+      lineHeight: '',
+    },
+  },
+  bodyCopy: {
     groupA: {
       fontSize: '16',
       lineHeight: '22',
@@ -39,6 +81,20 @@ const cjkThaiTypography = {
     groupD: {
       fontSize: '16',
       lineHeight: '28',
+    },
+  },
+  pica: {
+    groupA: {
+      fontSize: '',
+      lineHeight: '',
+    },
+    groupB: {
+      fontSize: '',
+      lineHeight: '',
+    },
+    groupD: {
+      fontSize: '',
+      lineHeight: '',
     },
   },
   longPrimer: {
@@ -85,4 +141,4 @@ const cjkThaiTypography = {
   },
 };
 
-export default cjkThaiTypography;
+export default thaiTypography;

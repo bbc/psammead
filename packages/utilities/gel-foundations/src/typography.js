@@ -17,6 +17,8 @@ export const getDoublePica = script => getTypeSizes('doublePica', script);
 
 export const getGreatPrimer = script => getTypeSizes('greatPrimer', script);
 
+export const getBodyCopy = script => getTypeSizes('bodyCopy', script);
+
 export const getPica = script => getTypeSizes('pica', script);
 
 export const getLongPrimer = script => getTypeSizes('longPrimer', script);
@@ -34,8 +36,6 @@ export const getImperial = script => getTypeSizes('imperial', script);
 export const getRoyal = script => getTypeSizes('royal', script);
 
 export const getFoolscap = script => getTypeSizes('foolscap', script);
-
-export const getBodyCopy = script => getTypeSizes('bodyCopy', script);
 
 /* ORIGINAL CONSTANTS */
 export const GEL_ATLAS = `

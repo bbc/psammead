@@ -27,7 +27,49 @@ const burmeseTypography = {
       lineHeight: '42',
     },
   },
-  pica: {
+  paragon: {
+    groupA: {
+      fontSize: '',
+      lineHeight: '',
+    },
+    groupB: {
+      fontSize: '',
+      lineHeight: '',
+    },
+    groupD: {
+      fontSize: '',
+      lineHeight: '',
+    },
+  },
+  doublePica: {
+    groupA: {
+      fontSize: '',
+      lineHeight: '',
+    },
+    groupB: {
+      fontSize: '',
+      lineHeight: '',
+    },
+    groupD: {
+      fontSize: '',
+      lineHeight: '',
+    },
+  },
+  greatPrimer: {
+    groupA: {
+      fontSize: '',
+      lineHeight: '',
+    },
+    groupB: {
+      fontSize: '',
+      lineHeight: '',
+    },
+    groupD: {
+      fontSize: '',
+      lineHeight: '',
+    },
+  },
+  bodyCopy: {
     groupA: {
       fontSize: '15',
       lineHeight: '26',
@@ -41,6 +83,20 @@ const burmeseTypography = {
       lineHeight: '30',
     },
   },
+  pica: {
+    groupA: {
+      fontSize: '',
+      lineHeight: '',
+    },
+    groupB: {
+      fontSize: '',
+      lineHeight: '',
+    },
+    groupD: {
+      fontSize: '',
+      lineHeight: '',
+    },
+  },
   longPrimer: {
     groupA: {
       fontSize: '15',
@@ -51,7 +107,7 @@ const burmeseTypography = {
       lineHeight: '24',
     },
     groupD: {
-      fontSize: '16',
+      fontSize: '15',
       lineHeight: '24',
     },
   },
@@ -79,8 +135,8 @@ const burmeseTypography = {
       lineHeight: '16',
     },
     groupD: {
-      fontSize: '14',
-      lineHeight: '22',
+      fontSize: '12',
+      lineHeight: '16',
     },
   },
 };

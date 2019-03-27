@@ -1,4 +1,4 @@
-const sinhalaTypography = {
+const sinhaleseTypography = {
   canon: {
     groupA: {
       fontSize: '30',
@@ -27,7 +27,49 @@ const sinhalaTypography = {
       lineHeight: '44',
     },
   },
-  pica: {
+  paragon: {
+    groupA: {
+      fontSize: '',
+      lineHeight: '',
+    },
+    groupB: {
+      fontSize: '',
+      lineHeight: '',
+    },
+    groupD: {
+      fontSize: '',
+      lineHeight: '',
+    },
+  },
+  doublePica: {
+    groupA: {
+      fontSize: '',
+      lineHeight: '',
+    },
+    groupB: {
+      fontSize: '',
+      lineHeight: '',
+    },
+    groupD: {
+      fontSize: '',
+      lineHeight: '',
+    },
+  },
+  greatPrimer: {
+    groupA: {
+      fontSize: '',
+      lineHeight: '',
+    },
+    groupB: {
+      fontSize: '',
+      lineHeight: '',
+    },
+    groupD: {
+      fontSize: '',
+      lineHeight: '',
+    },
+  },
+  bodyCopy: {
     groupA: {
       fontSize: '22',
       lineHeight: '28',
@@ -39,6 +81,20 @@ const sinhalaTypography = {
     groupD: {
       fontSize: '22',
       lineHeight: '24',
+    },
+  },
+  pica: {
+    groupA: {
+      fontSize: '',
+      lineHeight: '',
+    },
+    groupB: {
+      fontSize: '',
+      lineHeight: '',
+    },
+    groupD: {
+      fontSize: '',
+      lineHeight: '',
     },
   },
   longPrimer: {
@@ -85,4 +141,4 @@ const sinhalaTypography = {
   },
 };
 
-export default sinhalaTypography;
+export default sinhaleseTypography;

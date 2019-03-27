@@ -1,8 +1,12 @@
-const mundoTypography = {
+/*
+ * The diacritics make these values differ from Latin
+ */
+
+const latinWithDiacriticsTypography = {
   canon: {
     groupA: {
-      fontSize: '20',
-      lineHeight: '24',
+      fontSize: '28',
+      lineHeight: '32',
     },
     groupB: {
       fontSize: '24',
@@ -15,8 +19,8 @@ const mundoTypography = {
   },
   trafalgar: {
     groupA: {
-      fontSize: '18',
-      lineHeight: '22',
+      fontSize: '20',
+      lineHeight: '24',
     },
     groupB: {
       fontSize: '22',
@@ -27,7 +31,49 @@ const mundoTypography = {
       lineHeight: '34',
     },
   },
-  pica: {
+  paragon: {
+    groupA: {
+      fontSize: '20',
+      lineHeight: '24',
+    },
+    groupB: {
+      fontSize: '22',
+      lineHeight: '26',
+    },
+    groupD: {
+      fontSize: '',
+      lineHeight: '',
+    },
+  },
+  doublePica: {
+    groupA: {
+      fontSize: '18',
+      lineHeight: '22',
+    },
+    groupB: {
+      fontSize: '20',
+      lineHeight: '24',
+    },
+    groupD: {
+      fontSize: '',
+      lineHeight: '',
+    },
+  },
+  greatPrimer: {
+    groupA: {
+      fontSize: '',
+      lineHeight: '',
+    },
+    groupB: {
+      fontSize: '',
+      lineHeight: '',
+    },
+    groupD: {
+      fontSize: '',
+      lineHeight: '',
+    },
+  },
+  bodyCopy: {
     groupA: {
       fontSize: '15',
       lineHeight: '20',
@@ -35,6 +81,20 @@ const mundoTypography = {
     groupB: {
       fontSize: '16',
       lineHeight: '22',
+    },
+    groupD: {
+      fontSize: '16',
+      lineHeight: '22',
+    },
+  },
+  pica: {
+    groupA: {
+      fontSize: '15',
+      lineHeight: '20',
+    },
+    groupB: {
+      fontSize: '16',
+      lineHeight: '20',
     },
     groupD: {
       fontSize: '16',
@@ -58,7 +118,7 @@ const mundoTypography = {
   brevier: {
     groupA: {
       fontSize: '14',
-      lineHeight: '16',
+      lineHeight: '18',
     },
     groupB: {
       fontSize: '14',
@@ -85,4 +145,4 @@ const mundoTypography = {
   },
 };
 
-export default mundoTypography;
+export default latinWithDiacriticsTypography;

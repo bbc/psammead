@@ -1,4 +1,4 @@
-const arabicTypography = {
+const arabicPashtoTypography = {
   canon: {
     groupA: {
       fontSize: '32',
@@ -141,4 +141,4 @@ const arabicTypography = {
   },
 };
 
-export default arabicTypography;
+export default arabicPashtoTypography;

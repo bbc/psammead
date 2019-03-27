@@ -1,30 +1,30 @@
-const arabicTypography = {
+const noAscOrDescTypography = {
   canon: {
     groupA: {
+      fontSize: '28',
+      lineHeight: '32',
+    },
+    groupB: {
       fontSize: '32',
       lineHeight: '42',
     },
-    groupB: {
-      fontSize: '36',
-      lineHeight: '46',
-    },
     groupD: {
       fontSize: '44',
-      lineHeight: '54',
+      lineHeight: '58',
     },
   },
   trafalgar: {
     groupA: {
-      fontSize: '24',
-      lineHeight: '34',
+      fontSize: '20',
+      lineHeight: '26',
     },
     groupB: {
-      fontSize: '26',
-      lineHeight: '36',
+      fontSize: '24',
+      lineHeight: '30',
     },
     groupD: {
-      fontSize: '38',
-      lineHeight: '48',
+      fontSize: '32',
+      lineHeight: '42',
     },
   },
   paragon: {
@@ -71,16 +71,16 @@ const arabicTypography = {
   },
   bodyCopy: {
     groupA: {
-      fontSize: '18',
-      lineHeight: '28',
+      fontSize: '16',
+      lineHeight: '22',
     },
     groupB: {
-      fontSize: '20',
-      lineHeight: '30',
+      fontSize: '16',
+      lineHeight: '24',
     },
     groupD: {
-      fontSize: '22',
-      lineHeight: '34',
+      fontSize: '16',
+      lineHeight: '28',
     },
   },
   pica: {
@@ -99,46 +99,46 @@ const arabicTypography = {
   },
   longPrimer: {
     groupA: {
-      fontSize: '17',
-      lineHeight: '24',
+      fontSize: '15',
+      lineHeight: '20',
     },
     groupB: {
-      fontSize: '18',
-      lineHeight: '24',
+      fontSize: '15',
+      lineHeight: '20',
     },
     groupD: {
-      fontSize: '20',
-      lineHeight: '26',
+      fontSize: '15',
+      lineHeight: '20',
     },
   },
   brevier: {
     groupA: {
-      fontSize: '16',
-      lineHeight: '20',
+      fontSize: '14',
+      lineHeight: '16',
     },
     groupB: {
-      fontSize: '16',
-      lineHeight: '20',
+      fontSize: '14',
+      lineHeight: '16',
     },
     groupD: {
-      fontSize: '18',
-      lineHeight: '22',
+      fontSize: '14',
+      lineHeight: '16',
     },
   },
   minion: {
     groupA: {
       fontSize: '14',
-      lineHeight: '20',
+      lineHeight: '16',
     },
     groupB: {
       fontSize: '14',
-      lineHeight: '20',
+      lineHeight: '16',
     },
     groupD: {
       fontSize: '14',
-      lineHeight: '20',
+      lineHeight: '16',
     },
   },
 };
 
-export default arabicTypography;
+export default noAscOrDescTypography;

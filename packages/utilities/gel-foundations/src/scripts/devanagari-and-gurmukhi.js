@@ -1,4 +1,8 @@
-const hindiNepaliBengaliTypography = {
+/*
+ * The typography values for Devanagari and Gurmukhi characters are identical
+ */
+
+const devanagariAndGurmukhiTypography = {
   canon: {
     groupA: {
       fontSize: '28',
@@ -27,7 +31,49 @@ const hindiNepaliBengaliTypography = {
       lineHeight: '44',
     },
   },
-  pica: {
+  paragon: {
+    groupA: {
+      fontSize: '',
+      lineHeight: '',
+    },
+    groupB: {
+      fontSize: '',
+      lineHeight: '',
+    },
+    groupD: {
+      fontSize: '',
+      lineHeight: '',
+    },
+  },
+  doublePica: {
+    groupA: {
+      fontSize: '',
+      lineHeight: '',
+    },
+    groupB: {
+      fontSize: '',
+      lineHeight: '',
+    },
+    groupD: {
+      fontSize: '',
+      lineHeight: '',
+    },
+  },
+  greatPrimer: {
+    groupA: {
+      fontSize: '',
+      lineHeight: '',
+    },
+    groupB: {
+      fontSize: '',
+      lineHeight: '',
+    },
+    groupD: {
+      fontSize: '',
+      lineHeight: '',
+    },
+  },
+  bodyCopy: {
     groupA: {
       fontSize: '15',
       lineHeight: '22',
@@ -39,6 +85,20 @@ const hindiNepaliBengaliTypography = {
     groupD: {
       fontSize: '18',
       lineHeight: '26',
+    },
+  },
+  pica: {
+    groupA: {
+      fontSize: '',
+      lineHeight: '',
+    },
+    groupB: {
+      fontSize: '',
+      lineHeight: '',
+    },
+    groupD: {
+      fontSize: '',
+      lineHeight: '',
     },
   },
   longPrimer: {
@@ -85,4 +145,4 @@ const hindiNepaliBengaliTypography = {
   },
 };
 
-export default hindiNepaliBengaliTypography;
+export default devanagariAndGurmukhiTypography;

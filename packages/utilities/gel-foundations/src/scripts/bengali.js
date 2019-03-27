@@ -1,8 +1,8 @@
-const arabicTypography = {
+const bengaliTypography = {
   canon: {
     groupA: {
-      fontSize: '32',
-      lineHeight: '42',
+      fontSize: '30',
+      lineHeight: '40',
     },
     groupB: {
       fontSize: '36',
@@ -10,13 +10,13 @@ const arabicTypography = {
     },
     groupD: {
       fontSize: '44',
-      lineHeight: '54',
+      lineHeight: '56',
     },
   },
   trafalgar: {
     groupA: {
-      fontSize: '24',
-      lineHeight: '34',
+      fontSize: '20',
+      lineHeight: '30',
     },
     groupB: {
       fontSize: '26',
@@ -71,16 +71,16 @@ const arabicTypography = {
   },
   bodyCopy: {
     groupA: {
-      fontSize: '18',
-      lineHeight: '28',
+      fontSize: '17',
+      lineHeight: '23',
     },
     groupB: {
-      fontSize: '20',
-      lineHeight: '30',
+      fontSize: '16',
+      lineHeight: '22',
     },
     groupD: {
       fontSize: '22',
-      lineHeight: '34',
+      lineHeight: '28',
     },
   },
   pica: {
@@ -99,46 +99,46 @@ const arabicTypography = {
   },
   longPrimer: {
     groupA: {
-      fontSize: '17',
-      lineHeight: '24',
+      fontSize: '16',
+      lineHeight: '22',
     },
     groupB: {
-      fontSize: '18',
-      lineHeight: '24',
+      fontSize: '16',
+      lineHeight: '22',
     },
     groupD: {
       fontSize: '20',
-      lineHeight: '26',
+      lineHeight: '24',
     },
   },
   brevier: {
     groupA: {
-      fontSize: '16',
+      fontSize: '15',
       lineHeight: '20',
     },
     groupB: {
-      fontSize: '16',
+      fontSize: '15',
       lineHeight: '20',
     },
     groupD: {
-      fontSize: '18',
+      fontSize: '19',
       lineHeight: '22',
     },
   },
   minion: {
     groupA: {
-      fontSize: '14',
-      lineHeight: '20',
+      fontSize: '12',
+      lineHeight: '16',
     },
     groupB: {
       fontSize: '14',
-      lineHeight: '20',
+      lineHeight: '18',
     },
     groupD: {
-      fontSize: '14',
-      lineHeight: '20',
+      fontSize: '15',
+      lineHeight: '18',
     },
   },
 };
 
-export default arabicTypography;
+export default bengaliTypography;

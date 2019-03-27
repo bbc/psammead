@@ -1,74 +1,7 @@
-const newsTypography = {
-  atlas: {
-    groupA: {
-      fontSize: '78',
-      lineHeight: '84',
-    },
-    groupB: {
-      fontSize: '96',
-      lineHeight: '104',
-    },
-    groupD: {
-      fontSize: '140',
-      lineHeight: '148',
-    },
-  },
-  elephant: {
-    groupA: {
-      fontSize: '60',
-      lineHeight: '64',
-    },
-    groupB: {
-      fontSize: '78',
-      lineHeight: '84',
-    },
-    groupD: {
-      fontSize: '116',
-      lineHeight: '124',
-    },
-  },
-  imperial: {
-    groupA: {
-      fontSize: '50',
-      lineHeight: '54',
-    },
-    groupB: {
-      fontSize: '64',
-      lineHeight: '72',
-    },
-    groupD: {
-      fontSize: '96',
-      lineHeight: '104',
-    },
-  },
-  royal: {
-    groupA: {
-      fontSize: '40',
-      lineHeight: '44',
-    },
-    groupB: {
-      fontSize: '52',
-      lineHeight: '60',
-    },
-    groupD: {
-      fontSize: '76',
-      lineHeight: '84',
-    },
-  },
-  foolscap: {
-    groupA: {
-      fontSize: '32',
-      lineHeight: '36',
-    },
-    groupB: {
-      fontSize: '40',
-      lineHeight: '44',
-    },
-    groupD: {
-      fontSize: '56',
-      lineHeight: '60',
-    },
-  },
+/*
+ * The typography values for Latin and Cyrillic characters are identical
+ */
+const latinAndCyrillicTypography = {
   canon: {
     groupA: {
       fontSize: '28',
@@ -209,6 +142,76 @@ const newsTypography = {
       lineHeight: '16',
     },
   },
+  atlas: {
+    groupA: {
+      fontSize: '78',
+      lineHeight: '84',
+    },
+    groupB: {
+      fontSize: '96',
+      lineHeight: '104',
+    },
+    groupD: {
+      fontSize: '140',
+      lineHeight: '148',
+    },
+  },
+  elephant: {
+    groupA: {
+      fontSize: '60',
+      lineHeight: '64',
+    },
+    groupB: {
+      fontSize: '78',
+      lineHeight: '84',
+    },
+    groupD: {
+      fontSize: '116',
+      lineHeight: '124',
+    },
+  },
+  imperial: {
+    groupA: {
+      fontSize: '50',
+      lineHeight: '54',
+    },
+    groupB: {
+      fontSize: '64',
+      lineHeight: '72',
+    },
+    groupD: {
+      fontSize: '96',
+      lineHeight: '104',
+    },
+  },
+  royal: {
+    groupA: {
+      fontSize: '40',
+      lineHeight: '44',
+    },
+    groupB: {
+      fontSize: '52',
+      lineHeight: '60',
+    },
+    groupD: {
+      fontSize: '76',
+      lineHeight: '84',
+    },
+  },
+  foolscap: {
+    groupA: {
+      fontSize: '32',
+      lineHeight: '36',
+    },
+    groupB: {
+      fontSize: '40',
+      lineHeight: '44',
+    },
+    groupD: {
+      fontSize: '56',
+      lineHeight: '60',
+    },
+  },
 };
 
-export default newsTypography;
+export default latinAndCyrillicTypography;
