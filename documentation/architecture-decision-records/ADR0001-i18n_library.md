@@ -81,6 +81,7 @@ Developer experience:
 
 Size:
 
+Bundle Size
 75.4 kB Minified
 24.7 kB Minified + GZipped
 
