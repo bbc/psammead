@@ -20,7 +20,7 @@ npm install @bbc/psammead-storybook-helpers --save-dev
 // LANGUAGE_VARIANTS
 
 import { select } from '@storybook/addon-knobs'
-import { LANGUAGE_VARIANTS } from '@bbc/psammead-storybook-helpers/text-variants';
+import { LANGUAGE_VARIANTS } from '@bbc/psammead-storybook-helpers';
 
 const label = 'Languages';
 const defaultValue = 'This is a caption';
@@ -36,7 +36,7 @@ In a story,
 
 import { storiesOf } from '@storybook/react';
 import { withKnobs } from '@storybook/addon-knobs';
-import { inputProvider } from '@bbc/psammead-storybook-helpers/input-provider';
+import { inputProvider } from '@bbc/psammead-storybook-helpers';
 
 In a story,
 
