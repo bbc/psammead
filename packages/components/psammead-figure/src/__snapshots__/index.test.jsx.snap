@@ -3,7 +3,7 @@
 exports[`Figure should render correctly 1`] = `
 .c0 {
   margin: 0;
-  padding-bottom: 1rem;
+  padding-bottom: 1.5rem;
   width: 100%;
 }
 
