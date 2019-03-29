@@ -1,4 +1,4 @@
-# Psammead Headings Changelog
+# Psammead Copyright Changelog
 
 <!-- prettier-ignore -->
 | Version | Description |
