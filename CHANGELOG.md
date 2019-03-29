@@ -1,5 +1,7 @@
 # Psammead Changelog
 
+
+<!-- prettier-ignore -->
 | Version | Description                                                                                           |
 | ------- | ----------------------------------------------------------------------------------------------------- |
 | 1.1.1   | [PR#403](https://github.com/BBC/psammead/pull/402) Update REITH_SERIF_LIGHT to REITH_SANS_BOLD_ITALIC |
