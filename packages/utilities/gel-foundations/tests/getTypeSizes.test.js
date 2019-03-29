@@ -1,6 +1,6 @@
 import { MEDIA_QUERY_TYPOGRAPHY } from '../src/breakpoints';
 import getTypeSizes from '../src/getTypeSizes';
-import { arabic } from '../scripts';
+import { arabic } from '../src/scripts';
 
 describe('getTypeSizes', () => {
   it('Should return the Canon Type Sizes for the arabic script', () => {

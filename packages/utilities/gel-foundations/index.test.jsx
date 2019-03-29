@@ -2,9 +2,11 @@ import { testUtilityPackages } from '@bbc/psammead-test-helpers';
 import * as spacings from './spacings';
 import * as breakpoints from './breakpoints';
 import * as typography from './typography';
+import * as scripts from './scripts';
 import * as spacingsFromSrc from './src/spacings';
 import * as breakpointsFromSrc from './src/breakpoints';
 import * as typographyFromSrc from './src/typography';
+import * as scriptsFromSrc from './src/scripts';
 
 const spacingsExpectedExports = {
   GEL_SPACING: 'string',
@@ -61,6 +63,7 @@ const typographyExpectedExports = {
   getParagon: 'function',
   getDoublePica: 'function',
   getGreatPrimer: 'function',
+  getBodyCopy: 'function',
   getPica: 'function',
   getLongPrimer: 'function',
   getBrevier: 'function',
@@ -70,25 +73,46 @@ const typographyExpectedExports = {
   getImperial: 'function',
   getRoyal: 'function',
   getFoolscap: 'function',
-  getBodyCopy: 'function',
+};
+
+const scriptsExpectedExports = {
+  latin: 'object',
+  cyrillic: 'object',
+  latinDiacritics: 'object',
+  arabic: 'object',
+  arabicPashto: 'object',
+  bengali: 'object',
+  burmese: 'object',
+  hindi: 'object',
+  nepali: 'object',
+  sinhalese: 'object',
+  tamil: 'object',
+  thai: 'object',
+  chinese: 'object',
+  korean: 'object',
+  ethiopic: 'object',
+  default: 'object',
 };
 
 const expectedExports = {
   spacings: spacingsExpectedExports,
   breakpoints: breakpointsExpectedExports,
   typography: typographyExpectedExports,
+  scripts: scriptsExpectedExports,
 };
 
 const actualExports = {
   spacings,
   breakpoints,
   typography,
+  scripts,
 };
 
 const actualExportsFromSrc = {
   spacings: spacingsFromSrc,
   breakpoints: breakpointsFromSrc,
   typography: typographyFromSrc,
+  scripts: scriptsFromSrc,
 };
 
 describe('Gel constants', () => {
