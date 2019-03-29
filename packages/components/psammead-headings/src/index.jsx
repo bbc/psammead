@@ -10,12 +10,16 @@ import {
   GEL_FF_REITH_SANS,
   GEL_FF_REITH_SERIF,
 } from '@bbc/gel-foundations/typography';
+import { MEDIA_QUERY_TYPOGRAPHY } from '@bbc/gel-foundations/breakpoints';
 
 export const Headline = styled.h1`
   color: ${C_SHADOW};
   font-family: ${GEL_FF_REITH_SERIF};
   margin: 0; /* Reset */
-  padding: ${GEL_SPACING_QUAD} 0 ${GEL_SPACING_DBL} 0;
+  padding: ${GEL_SPACING_QUAD} 0;
+  ${MEDIA_QUERY_TYPOGRAPHY.LAPTOP_AND_LARGER} {
+    padding: 2.5rem 0;
+  }
   font-weight: 500;
   ${GEL_CANON};
 `;
