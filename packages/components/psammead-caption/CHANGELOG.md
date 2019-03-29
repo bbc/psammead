@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 0.3.2   | [PR#398](https://github.com/bbc/psammead/pull/398) Update dependencies |
 | 0.3.1   | [PR#393](https://github.com/bbc/psammead/pull/393) Remove padding from left/right of caption. |
 | 0.3.0   | [PR#365](https://github.com/bbc/psammead/pull/365) Remove background colour, update colour to Cloud Dark. Use font style italic. |
 | 0.2.1   | [PR#323](https://github.com/bbc/psammead/pull/323) Update storybook badge url |

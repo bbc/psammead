@@ -1,6 +1,6 @@
 {
   "name": "@bbc/psammead-figure",
-  "version": "0.1.8",
+  "version": "0.1.9",
   "main": "dist/index.js",
   "description": "React styled component that generates a figure element",
   "repository": {
@@ -17,16 +17,16 @@
   },
   "homepage": "https://github.com/bbc/psammead/blob/latest/packages/components/psammead-figure/README.md",
   "dependencies": {
-    "@bbc/gel-foundations": "^0.1.4",
+    "@bbc/gel-foundations": "^0.3.0",
     "styled-components": "^4.1.2"
   },
   "devDependencies": {
-    "@bbc/psammead-test-helpers": "^0.3.1",
-    "@bbc/psammead-caption": "^0.2.0",
-    "@bbc/psammead-copyright": "^0.3.0",
-    "@bbc/psammead-image": "^0.3.0",
-    "@bbc/psammead-image-placeholder": "^0.1.7",
-    "@bbc/psammead-visually-hidden-text": "^0.1.9",
+    "@bbc/psammead-test-helpers": "^0.3.3",
+    "@bbc/psammead-caption": "^0.3.0",
+    "@bbc/psammead-copyright": "^0.3.2",
+    "@bbc/psammead-image": "^0.3.3",
+    "@bbc/psammead-image-placeholder": "^0.1.8",
+    "@bbc/psammead-visually-hidden-text": "^0.1.10",
     "react": "^16.6.3"
   },
   "keywords": [
