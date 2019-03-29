@@ -4,21 +4,21 @@ This package provides a collection of common values that are used in storybook b
 
 ## Exports
 
-`text-variants` - A list of text samples in different languages.
+`LANGUAGE_VARIANTS` - A list of text samples in different languages.
 
-`input-provider` - A function that provides support for selecting between the `text` and `select` storybook knobs.
+`inputProvider` - A function that provides support for selecting between the `text` and `select` storybook knobs. When using the `select` knob, users will be prompted to select a language, which will insert text from `LANGUAGE_VARIANTS` into the story.
 
 ## Installation
 
-```jsx
+```sh
 npm install @bbc/psammead-storybook-helpers --save-dev
 ```
 
 ## Usage
 
-```jsx
-// LANGUAGE_VARIANTS
+### LANGUAGE_VARIANTS
 
+```jsx
 import { select } from '@storybook/addon-knobs'
 import { LANGUAGE_VARIANTS } from '@bbc/psammead-storybook-helpers';
 
@@ -26,31 +26,36 @@ const label = 'Languages';
 const defaultValue = 'This is a caption';
 const groupIdentifier = 'CAPTION VARIANTS';
 
-In a story,
-
 <Caption>
   {select(label, LANGUAGE_VARIANTS, defaultValue, groupIdentifier)}
 </Caption>
-
 ```
 
-```jsx
-// inputProvider
+### inputProvider
 
+N.B. the number of elements in the array should equal the number of arguments taken
+by the render function.
+
+```jsx
 import { storiesOf } from '@storybook/react';
 import { withKnobs } from '@storybook/addon-knobs';
 import { inputProvider } from '@bbc/psammead-storybook-helpers';
-
-In a story,
 
 storiesOf('Caption', module)
   .addDecorator(withKnobs)
   .add(
     'default',
-    inputProvider(['caption'], captionText => <Caption>{captionText}</Caption>),
+    inputProvider(
+      ['caption', 'visually hidden text'],
+      (captionText, vhText) => (
+        <Caption>
+          <VisuallyHiddenText>{vhText}</VisuallyHiddenText>
+          {captionText}
+        </Caption>
+      )
+    ),
     { notes },
   )
-
 ```
 
 ## Contributing
@@ -66,4 +71,3 @@ We welcome feedback and help on this work. By participating in this project, you
 ### License
 
 Psammead is [Apache 2.0 licensed](https://github.com/bbc/psammead/blob/latest/LICENSE).
-
