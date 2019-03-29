@@ -32,6 +32,9 @@ In a story,
   {select(label, LANGUAGE_VARIANTS, defaultValue, groupIdentifier)}
 </Caption>
 
+```
+
+```jsx
 // inputProvider
 
 import { storiesOf } from '@storybook/react';

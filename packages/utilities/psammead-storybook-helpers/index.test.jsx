@@ -1,5 +1,5 @@
 import { testUtilityPackages } from '@bbc/psammead-test-helpers';
-import * as index from './dist/index';
+import * as index from '.';
 import * as indexFromSrc from './src/index';
 
 const textVariantsExpectedExports = {
