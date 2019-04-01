@@ -1,6 +1,13 @@
 import styled, { css } from 'styled-components';
-import { GEL_SPACING } from '@bbc/gel-foundations/spacings';
-import { MEDIA_QUERY_TYPOGRAPHY } from '@bbc/gel-foundations/breakpoints';
+import {
+  GEL_SPACING,
+  GEL_MARGIN_ABOVE_400PX,
+  GEL_MARGIN_BELOW_400PX,
+} from '@bbc/gel-foundations/spacings';
+import {
+  GEL_GROUP_2_SCREEN_WIDTH_MIN,
+  GEL_GROUP_3_SCREEN_WIDTH_MAX,
+} from '@bbc/gel-foundations/breakpoints';
 import {
   GEL_LONG_PRIMER,
   GEL_FF_REITH_SANS,
@@ -19,10 +26,14 @@ const Caption = styled.figcaption`
   color: ${C_CLOUD_DARK};
   font-family: ${GEL_FF_REITH_SANS};
   ${FS_ITALIC};
-  padding: ${GEL_SPACING};
+  padding: ${GEL_SPACING} 0;
   width: 100%;
-  ${MEDIA_QUERY_TYPOGRAPHY.LAPTOP_AND_LARGER} {
-    padding: ${GEL_SPACING} 0;
+
+  @media (max-width: ${GEL_GROUP_2_SCREEN_WIDTH_MIN}) {
+    padding: ${GEL_SPACING} ${GEL_MARGIN_BELOW_400PX};
+  }
+  @media (min-width: ${GEL_GROUP_2_SCREEN_WIDTH_MIN}) and (max-width: ${GEL_GROUP_3_SCREEN_WIDTH_MAX}) {
+    padding: ${GEL_SPACING} ${GEL_MARGIN_ABOVE_400PX};
   }
 `;
 
