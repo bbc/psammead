@@ -15,10 +15,10 @@ exports[`should render Caption with some offscreen text 1`] = `
 .c0 {
   font-size: 0.9375rem;
   line-height: 1.125rem;
-  background-color: #D5D0CD;
-  color: #404040;
+  color: #757575;
   font-family: ReithSans,Helvetica,Arial,sans-serif;
-  padding: 0.5rem;
+  font-style: italic;
+  padding: 0.5rem 0;
   width: 100%;
 }
 

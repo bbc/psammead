@@ -16,13 +16,18 @@ Displays a source attribution in block capitals in the bottom-right of the paren
 
 ## Usage
 
-Commonly used alongside [`psammead-figure`](https://github.com/BBC-News/psammead/tree/latest/packages/components/psammead-figure) and [`psammead-image`](https://github.com/BBC-News/psammead/tree/latest/packages/components/psammead-image).
+Commonly used alongside [`psammead-figure`](https://github.com/BBC-News/psammead/tree/latest/packages/components/psammead-figure), [`psammead-image`](https://github.com/BBC-News/psammead/tree/latest/packages/components/psammead-image) and [`psammead-image-placeholder`](https://github.com/BBC-News/psammead/tree/latest/packages/components/psammead-image-placeholder). Can also pass in [`psammead-visually-hidden-text`](https://github.com/BBC-News/psammead/tree/latest/packages/components/psammead-visually-hidden-text) in order to announce the component.
 
 ```jsx
-const WrapperComponent = ({ alt, src, width }) => (
+const WrapperComponent = ({ alt, ratio, src, width }) => (
   <Figure>
-    <Image alt={alt} src={src} width={width} />
-    <Copyright>Getty Images</Copyright>
+    <ImagePlaceholder ratio={ratio}>
+      <Image alt={alt} src={src} width={width} />
+      <Copyright>
+        <VisuallyHiddenText>Image source, </VisuallyHiddenText>
+        Getty Images
+      </Copyright>
+    </ImagePlaceholder>
   </Figure>
 );
 ```
@@ -40,6 +45,8 @@ Do not use this component if you know the source attribution is already covered 
 ### Accessibility notes
 
 The default styling of this component is intended to comply with WCAG colour contrast standards.
+
+The `VisuallyHiddenText` component can be used as a child of `Copyright` to add additional context to screen reader users. An example of this can be found in [our storybook](https://bbc.github.io/psammead/?selectedKind=Copyright&selectedStory=with%20visually%20hidden%20text)
 
 <!-- ## Roadmap -->
 

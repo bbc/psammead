@@ -1,7 +1,11 @@
 # Psammead Figure Changelog
 
+<!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 0.1.10   | [PR#392](https://github.com/BBC/psammead/pull/392) Increases the padding-bottom from 16px to 24px |
+| 0.1.9   | [PR#398](https://github.com/bbc/psammead/pull/398) Update dependencies |
+| 0.1.8   | [PR#334](https://github.com/BBC/psammead/pull/334) Improve examples of using Figure and Copyright |
 | 0.1.7   | [PR#323](https://github.com/bbc/psammead/pull/323) Update storybook badge url |
 | 0.1.6   | [PR#323](https://github.com/BBC/psammead/pull/323) Update readme storybook badge |
 | 0.1.5   | [PR#264](https://github.com/BBC/psammead/pull/319) Resolving package-lock issues. |

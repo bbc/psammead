@@ -10,12 +10,19 @@ import {
   GEL_FF_REITH_SANS,
   GEL_FF_REITH_SERIF,
 } from '@bbc/gel-foundations/typography';
+import {
+  MEDIA_QUERY_TYPOGRAPHY,
+  GEL_GROUP_2_SCREEN_WIDTH_MIN,
+} from '@bbc/gel-foundations/breakpoints';
 
 export const Headline = styled.h1`
   color: ${C_SHADOW};
   font-family: ${GEL_FF_REITH_SERIF};
   margin: 0; /* Reset */
-  padding: ${GEL_SPACING_QUAD} 0 ${GEL_SPACING_DBL} 0;
+  padding: ${GEL_SPACING_QUAD} 0;
+  ${MEDIA_QUERY_TYPOGRAPHY.LAPTOP_AND_LARGER} {
+    padding: 2.5rem 0;
+  }
   font-weight: 500;
   ${GEL_CANON};
 `;
@@ -31,6 +38,9 @@ export const SubHeading = styled.h2.attrs(({ text }) => ({
   font-family: ${GEL_FF_REITH_SANS};
   margin: 0; /* Reset */
   padding: ${GEL_SPACING_DBL} 0;
+  @media (min-width: ${GEL_GROUP_2_SCREEN_WIDTH_MIN}) {
+    padding-top: ${GEL_SPACING_QUAD};
+  }
   font-weight: 700;
   ${GEL_TRAFALGAR};
 `;

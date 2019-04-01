@@ -5,20 +5,26 @@ exports[`Headline component should render correctly 1`] = `
   color: #3F3F42;
   font-family: ReithSerif,Helvetica,Arial,sans-serif;
   margin: 0;
-  padding: 2rem 0 1rem 0;
+  padding: 2rem 0;
   font-weight: 500;
   font-size: 1.75rem;
   line-height: 2rem;
 }
 
-@media (min-width:20em) and (max-width:37.4375em) {
+@media (min-width:37.5rem) {
+  .c0 {
+    padding: 2.5rem 0;
+  }
+}
+
+@media (min-width:20rem) and (max-width:37.4375rem) {
   .c0 {
     font-size: 2rem;
     line-height: 2.25rem;
   }
 }
 
-@media (min-width:37.5em) {
+@media (min-width:37.5rem) {
   .c0 {
     font-size: 2.75rem;
     line-height: 3rem;
@@ -43,14 +49,20 @@ exports[`SubHeading component attribute id should render without double quotes 1
   line-height: 1.5rem;
 }
 
-@media (min-width:20em) and (max-width:37.4375em) {
+@media (min-width:25rem) {
+  .c0 {
+    padding-top: 2rem;
+  }
+}
+
+@media (min-width:20rem) and (max-width:37.4375rem) {
   .c0 {
     font-size: 1.5rem;
     line-height: 1.75rem;
   }
 }
 
-@media (min-width:37.5em) {
+@media (min-width:37.5rem) {
   .c0 {
     font-size: 2rem;
     line-height: 2.25rem;
@@ -77,14 +89,20 @@ exports[`SubHeading component attribute id should render without exclamation mar
   line-height: 1.5rem;
 }
 
-@media (min-width:20em) and (max-width:37.4375em) {
+@media (min-width:25rem) {
+  .c0 {
+    padding-top: 2rem;
+  }
+}
+
+@media (min-width:20rem) and (max-width:37.4375rem) {
   .c0 {
     font-size: 1.5rem;
     line-height: 1.75rem;
   }
 }
 
-@media (min-width:37.5em) {
+@media (min-width:37.5rem) {
   .c0 {
     font-size: 2rem;
     line-height: 2.25rem;
@@ -111,14 +129,20 @@ exports[`SubHeading component attribute id should render without quotes 1`] = `
   line-height: 1.5rem;
 }
 
-@media (min-width:20em) and (max-width:37.4375em) {
+@media (min-width:25rem) {
+  .c0 {
+    padding-top: 2rem;
+  }
+}
+
+@media (min-width:20rem) and (max-width:37.4375rem) {
   .c0 {
     font-size: 1.5rem;
     line-height: 1.75rem;
   }
 }
 
-@media (min-width:37.5em) {
+@media (min-width:37.5rem) {
   .c0 {
     font-size: 2rem;
     line-height: 2.25rem;
@@ -145,14 +169,20 @@ exports[`SubHeading component should render correctly 1`] = `
   line-height: 1.5rem;
 }
 
-@media (min-width:20em) and (max-width:37.4375em) {
+@media (min-width:25rem) {
+  .c0 {
+    padding-top: 2rem;
+  }
+}
+
+@media (min-width:20rem) and (max-width:37.4375rem) {
   .c0 {
     font-size: 1.5rem;
     line-height: 1.75rem;
   }
 }
 
-@media (min-width:37.5em) {
+@media (min-width:37.5rem) {
   .c0 {
     font-size: 2rem;
     line-height: 2.25rem;
