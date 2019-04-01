@@ -43,7 +43,7 @@ exports[`SubHeading component attribute id should render without double quotes 1
   color: #3F3F42;
   font-family: ReithSans,Helvetica,Arial,sans-serif;
   margin: 0;
-  padding: 1rem 0;
+  padding-bottom: 1.5rem 0;
   font-weight: 700;
   font-size: 1.25rem;
   line-height: 1.5rem;
@@ -83,7 +83,7 @@ exports[`SubHeading component attribute id should render without exclamation mar
   color: #3F3F42;
   font-family: ReithSans,Helvetica,Arial,sans-serif;
   margin: 0;
-  padding: 1rem 0;
+  padding-bottom: 1.5rem 0;
   font-weight: 700;
   font-size: 1.25rem;
   line-height: 1.5rem;
@@ -123,7 +123,7 @@ exports[`SubHeading component attribute id should render without quotes 1`] = `
   color: #3F3F42;
   font-family: ReithSans,Helvetica,Arial,sans-serif;
   margin: 0;
-  padding: 1rem 0;
+  padding-bottom: 1.5rem 0;
   font-weight: 700;
   font-size: 1.25rem;
   line-height: 1.5rem;
@@ -163,7 +163,7 @@ exports[`SubHeading component should render correctly 1`] = `
   color: #3F3F42;
   font-family: ReithSans,Helvetica,Arial,sans-serif;
   margin: 0;
-  padding: 1rem 0;
+  padding-bottom: 1.5rem 0;
   font-weight: 700;
   font-size: 1.25rem;
   line-height: 1.5rem;
