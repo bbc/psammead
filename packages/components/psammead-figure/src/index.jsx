@@ -1,9 +1,9 @@
 import styled from 'styled-components';
-import { GEL_SPACING_DBL } from '@bbc/gel-foundations/spacings';
+import { GEL_SPACING_TRPL } from '@bbc/gel-foundations/spacings';
 
 const Figure = styled.figure`
   margin: 0;
-  padding-bottom: ${GEL_SPACING_DBL};
+  padding-bottom: ${GEL_SPACING_TRPL};
   width: 100%;
 `;
 
