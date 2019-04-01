@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import { C_SHADOW } from '@bbc/psammead-styles/colours';
 import {
-  GEL_SPACING_DBL,
+  GEL_SPACING_TRPL,
   GEL_SPACING_QUAD,
 } from '@bbc/gel-foundations/spacings';
 import {
@@ -37,7 +37,7 @@ export const SubHeading = styled.h2.attrs(({ text }) => ({
   color: ${C_SHADOW};
   font-family: ${GEL_FF_REITH_SANS};
   margin: 0; /* Reset */
-  padding: ${GEL_SPACING_DBL} 0;
+  padding-bottom: ${GEL_SPACING_TRPL} 0;
   @media (min-width: ${GEL_GROUP_2_SCREEN_WIDTH_MIN}) {
     padding-top: ${GEL_SPACING_QUAD};
   }
