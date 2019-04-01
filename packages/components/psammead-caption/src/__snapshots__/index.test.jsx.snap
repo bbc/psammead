@@ -30,7 +30,7 @@ exports[`should render Caption with some offscreen text 1`] = `
 
 @media (min-width:37.5em) {
   .c0 {
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 0;
   }
 }
 

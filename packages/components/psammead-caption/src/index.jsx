@@ -1,5 +1,5 @@
 import styled, { css } from 'styled-components';
-import { GEL_SPACING, GEL_SPACING_DBL } from '@bbc/gel-foundations/spacings';
+import { GEL_SPACING } from '@bbc/gel-foundations/spacings';
 import { MEDIA_QUERY_TYPOGRAPHY } from '@bbc/gel-foundations/breakpoints';
 import {
   GEL_LONG_PRIMER,
@@ -22,7 +22,7 @@ const Caption = styled.figcaption`
   padding: ${GEL_SPACING};
   width: 100%;
   ${MEDIA_QUERY_TYPOGRAPHY.LAPTOP_AND_LARGER} {
-    padding: ${GEL_SPACING} ${GEL_SPACING_DBL};
+    padding: ${GEL_SPACING} 0;
   }
 `;
 
