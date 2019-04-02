@@ -41,8 +41,8 @@ const latinWithDiacriticsTypography = {
       lineHeight: '26',
     },
     groupD: {
-      fontSize: '',
-      lineHeight: '',
+      fontSize: '28',
+      lineHeight: '32',
     },
   },
   doublePica: {
@@ -55,22 +55,22 @@ const latinWithDiacriticsTypography = {
       lineHeight: '24',
     },
     groupD: {
-      fontSize: '',
-      lineHeight: '',
+      fontSize: '24',
+      lineHeight: '28',
     },
   },
   greatPrimer: {
     groupA: {
-      fontSize: '',
-      lineHeight: '',
+      fontSize: '18',
+      lineHeight: '22',
     },
     groupB: {
-      fontSize: '',
-      lineHeight: '',
+      fontSize: '18',
+      lineHeight: '22',
     },
     groupD: {
-      fontSize: '',
-      lineHeight: '',
+      fontSize: '20',
+      lineHeight: '24',
     },
   },
   bodyCopy: {

@@ -29,44 +29,44 @@ const sinhaleseTypography = {
   },
   paragon: {
     groupA: {
-      fontSize: '',
-      lineHeight: '',
+      fontSize: '24',
+      lineHeight: '24',
     },
     groupB: {
-      fontSize: '',
-      lineHeight: '',
+      fontSize: '24',
+      lineHeight: '24',
     },
     groupD: {
-      fontSize: '',
-      lineHeight: '',
+      fontSize: '34',
+      lineHeight: '36',
     },
   },
   doublePica: {
     groupA: {
-      fontSize: '',
-      lineHeight: '',
+      fontSize: '24',
+      lineHeight: '24',
     },
     groupB: {
-      fontSize: '',
-      lineHeight: '',
+      fontSize: '24',
+      lineHeight: '24',
     },
     groupD: {
-      fontSize: '',
-      lineHeight: '',
+      fontSize: '30',
+      lineHeight: '30',
     },
   },
   greatPrimer: {
     groupA: {
-      fontSize: '',
-      lineHeight: '',
+      fontSize: '22',
+      lineHeight: '22',
     },
     groupB: {
-      fontSize: '',
-      lineHeight: '',
+      fontSize: '24',
+      lineHeight: '24',
     },
     groupD: {
-      fontSize: '',
-      lineHeight: '',
+      fontSize: '24',
+      lineHeight: '24',
     },
   },
   bodyCopy: {
@@ -85,16 +85,16 @@ const sinhaleseTypography = {
   },
   pica: {
     groupA: {
-      fontSize: '',
-      lineHeight: '',
+      fontSize: '22',
+      lineHeight: '24',
     },
     groupB: {
-      fontSize: '',
-      lineHeight: '',
+      fontSize: '22',
+      lineHeight: '24',
     },
     groupD: {
-      fontSize: '',
-      lineHeight: '',
+      fontSize: '22',
+      lineHeight: '24',
     },
   },
   longPrimer: {

@@ -29,44 +29,44 @@ const tamilTypography = {
   },
   paragon: {
     groupA: {
-      fontSize: '',
-      lineHeight: '',
+      fontSize: '18',
+      lineHeight: '26',
     },
     groupB: {
-      fontSize: '',
-      lineHeight: '',
+      fontSize: '18',
+      lineHeight: '26',
     },
     groupD: {
-      fontSize: '',
-      lineHeight: '',
+      fontSize: '20',
+      lineHeight: '28',
     },
   },
   doublePica: {
     groupA: {
-      fontSize: '',
-      lineHeight: '',
+      fontSize: '16',
+      lineHeight: '24',
     },
     groupB: {
-      fontSize: '',
-      lineHeight: '',
+      fontSize: '16',
+      lineHeight: '24',
     },
     groupD: {
-      fontSize: '',
-      lineHeight: '',
+      fontSize: '16',
+      lineHeight: '24',
     },
   },
   greatPrimer: {
     groupA: {
-      fontSize: '',
-      lineHeight: '',
+      fontSize: '14',
+      lineHeight: '21',
     },
     groupB: {
-      fontSize: '',
-      lineHeight: '',
+      fontSize: '13',
+      lineHeight: '20',
     },
     groupD: {
-      fontSize: '',
-      lineHeight: '',
+      fontSize: '14',
+      lineHeight: '21',
     },
   },
   bodyCopy: {
@@ -85,16 +85,16 @@ const tamilTypography = {
   },
   pica: {
     groupA: {
-      fontSize: '',
-      lineHeight: '',
+      fontSize: '14',
+      lineHeight: '21',
     },
     groupB: {
-      fontSize: '',
-      lineHeight: '',
+      fontSize: '13',
+      lineHeight: '20',
     },
     groupD: {
-      fontSize: '',
-      lineHeight: '',
+      fontSize: '14',
+      lineHeight: '21',
     },
   },
   longPrimer: {

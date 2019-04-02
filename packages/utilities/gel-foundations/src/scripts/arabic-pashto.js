@@ -29,44 +29,44 @@ const arabicPashtoTypography = {
   },
   paragon: {
     groupA: {
-      fontSize: '',
-      lineHeight: '',
+      fontSize: '24',
+      lineHeight: '24',
     },
     groupB: {
-      fontSize: '',
-      lineHeight: '',
+      fontSize: '28',
+      lineHeight: '38',
     },
     groupD: {
-      fontSize: '',
-      lineHeight: '',
+      fontSize: '34',
+      lineHeight: '44',
     },
   },
   doublePica: {
     groupA: {
-      fontSize: '',
-      lineHeight: '',
+      fontSize: '24',
+      lineHeight: '34',
     },
     groupB: {
-      fontSize: '',
-      lineHeight: '',
+      fontSize: '26',
+      lineHeight: '36',
     },
     groupD: {
-      fontSize: '',
-      lineHeight: '',
+      fontSize: '30',
+      lineHeight: '40',
     },
   },
   greatPrimer: {
     groupA: {
-      fontSize: '',
-      lineHeight: '',
+      fontSize: '22',
+      lineHeight: '28',
     },
     groupB: {
-      fontSize: '',
-      lineHeight: '',
+      fontSize: '24',
+      lineHeight: '30',
     },
     groupD: {
-      fontSize: '',
-      lineHeight: '',
+      fontSize: '26',
+      lineHeight: '32',
     },
   },
   bodyCopy: {
@@ -85,16 +85,16 @@ const arabicPashtoTypography = {
   },
   pica: {
     groupA: {
-      fontSize: '',
-      lineHeight: '',
+      fontSize: '16',
+      lineHeight: '26',
     },
     groupB: {
-      fontSize: '',
-      lineHeight: '',
+      fontSize: '16',
+      lineHeight: '26',
     },
     groupD: {
-      fontSize: '',
-      lineHeight: '',
+      fontSize: '22',
+      lineHeight: '32',
     },
   },
   longPrimer: {

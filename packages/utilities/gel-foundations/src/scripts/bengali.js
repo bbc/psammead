@@ -29,44 +29,44 @@ const bengaliTypography = {
   },
   paragon: {
     groupA: {
-      fontSize: '',
-      lineHeight: '',
+      fontSize: '22',
+      lineHeight: '28',
     },
     groupB: {
-      fontSize: '',
-      lineHeight: '',
+      fontSize: '22',
+      lineHeight: '28',
     },
     groupD: {
-      fontSize: '',
-      lineHeight: '',
+      fontSize: '28',
+      lineHeight: '36',
     },
   },
   doublePica: {
     groupA: {
-      fontSize: '',
-      lineHeight: '',
+      fontSize: '20',
+      lineHeight: '30',
     },
     groupB: {
-      fontSize: '',
-      lineHeight: '',
+      fontSize: '20',
+      lineHeight: '30',
     },
     groupD: {
-      fontSize: '',
-      lineHeight: '',
+      fontSize: '32',
+      lineHeight: '40',
     },
   },
   greatPrimer: {
     groupA: {
-      fontSize: '',
-      lineHeight: '',
+      fontSize: '24',
+      lineHeight: '30',
     },
     groupB: {
-      fontSize: '',
-      lineHeight: '',
+      fontSize: '24',
+      lineHeight: '30',
     },
     groupD: {
-      fontSize: '',
-      lineHeight: '',
+      fontSize: '26',
+      lineHeight: '32',
     },
   },
   bodyCopy: {
@@ -85,16 +85,16 @@ const bengaliTypography = {
   },
   pica: {
     groupA: {
-      fontSize: '',
-      lineHeight: '',
+      fontSize: '17',
+      lineHeight: '23',
     },
     groupB: {
-      fontSize: '',
-      lineHeight: '',
+      fontSize: '17',
+      lineHeight: '23',
     },
     groupD: {
-      fontSize: '',
-      lineHeight: '',
+      fontSize: '22',
+      lineHeight: '28',
     },
   },
   longPrimer: {

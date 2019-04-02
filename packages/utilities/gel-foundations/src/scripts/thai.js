@@ -29,44 +29,44 @@ const thaiTypography = {
   },
   paragon: {
     groupA: {
-      fontSize: '',
-      lineHeight: '',
+      fontSize: '20',
+      lineHeight: '26',
     },
     groupB: {
-      fontSize: '',
-      lineHeight: '',
+      fontSize: '22',
+      lineHeight: '28',
     },
     groupD: {
-      fontSize: '',
-      lineHeight: '',
+      fontSize: '28',
+      lineHeight: '36',
     },
   },
   doublePica: {
     groupA: {
-      fontSize: '',
-      lineHeight: '',
+      fontSize: '20',
+      lineHeight: '26',
     },
     groupB: {
-      fontSize: '',
-      lineHeight: '',
+      fontSize: '20',
+      lineHeight: '26',
     },
     groupD: {
-      fontSize: '',
-      lineHeight: '',
+      fontSize: '24',
+      lineHeight: '32',
     },
   },
   greatPrimer: {
     groupA: {
-      fontSize: '',
-      lineHeight: '',
+      fontSize: '18',
+      lineHeight: '24',
     },
     groupB: {
-      fontSize: '',
-      lineHeight: '',
+      fontSize: '18',
+      lineHeight: '22',
     },
     groupD: {
-      fontSize: '',
-      lineHeight: '',
+      fontSize: '20',
+      lineHeight: '26',
     },
   },
   bodyCopy: {
@@ -85,16 +85,16 @@ const thaiTypography = {
   },
   pica: {
     groupA: {
-      fontSize: '',
-      lineHeight: '',
+      fontSize: '16',
+      lineHeight: '22',
     },
     groupB: {
-      fontSize: '',
-      lineHeight: '',
+      fontSize: '16',
+      lineHeight: '24',
     },
     groupD: {
-      fontSize: '',
-      lineHeight: '',
+      fontSize: '18',
+      lineHeight: '28',
     },
   },
   longPrimer: {
