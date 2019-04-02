@@ -13,11 +13,10 @@ import {
   F_REITH_SANS_REGULAR,
   F_REITH_SANS_ITALIC,
   F_REITH_SANS_BOLD,
-  F_REITH_SERIF_LIGHT,
+  F_REITH_SANS_BOLD_ITALIC,
 } from '@bbc/psammead-styles/fonts';
-import Helmet from 'react-helmet';  
+import Helmet from 'react-helmet';
 import { initializeRTL } from 'storybook-addon-rtl';
-
 
 const theme = create({
   base: 'light',
@@ -52,7 +51,7 @@ const GlobalStyle = createGlobalStyle`
   ${F_REITH_SANS_REGULAR}
   ${F_REITH_SANS_ITALIC}
   ${F_REITH_SANS_BOLD}
-  ${F_REITH_SERIF_LIGHT}
+  ${F_REITH_SANS_BOLD_ITALIC}
 `;
 
 addDecorator(story => (
