@@ -123,4 +123,68 @@ Cons: More developer resources needed to deliver an i18n library with the requir
 
 ## Decision Outcome
 
-There was a clear preference among developers for option 1. `react-intl` as it is the most straight-forward and fully-supported option, providing the best developer experience out of all three. It was also the easiest to integrate into Psammead (according to our [component library meeting notes](https://paper.dropbox.com/doc/2019-02-21-Component-Library-Meeting-i18n--AZgQeBdv~qXuQnL9jK5rcz4XAg-hSXxc23xnF6U7xnEkXwPc)).
+There was a clear preference among developers for option 1, `react-intl`, as it is the most straight-forward and fully-supported option, providing the best developer experience out of all three. 
+
+It was also the easiest to integrate into Psammead. The following is an example of using it with the Headline component:
+
+```javascript
+import { addLocaleData, IntlProvider } from 'react-intl'; 
+import locale_en from 'react-intl/locale-data/en'; 
+import locale_es from 'react-intl/locale-data/es'; 
+import messages from './translations.js'; 
+import { FormattedMessage } from 'react-intl'; 
+
+addLocaleData([...locale_en, ...locale_es]);
+
+const locale = 
+  (navigator.languages && navigator.languages[0]) || 
+  navigator.langauge ||
+  navigator.userLanguage ||
+  'en-UK';
+
+export const Headline = styled.h1`
+  color: ${C_EBON};
+  font-family: ${FF_NEWS_SERIF_MDM};
+  margin: 0;
+  padding: ${GEL_SPACING_QUAD} 0 ${GEL_SPACING_DBL} 0;
+  ${GEL_CANON};
+`;
+
+export const HeadlineIntl = () => {
+  return (
+    <IntlProvider
+      defaultLocale="en"
+      locale={locale}
+      messages={messages[locale]}
+    >
+      <Headline>
+        <FormattedMessage id="headline" />
+      </Headline>
+    </IntlProvider>
+  );
+};
+```
+
+React Intl uses the provider pattern to scope an i18n context to a tree of components. This allows configuration like the current locale to be provided at the root of a component tree and made available to all the child components as well.
+
+The `Headline`(psammead) component wraps the `<FormattedMessage>` component of `react-intl` which is used for formatting string messages.
+
+We have to load the locale data for languages we want to support. In this example, we have imported English and Spanish. This data is provided by `react-intl` and specifies the date, time, number and formats for each language. The locale data is added by calling `addLocaleData()`.
+
+The translations of our custom text messages will be stored for each language in a separate config file.
+
+- ###### translations/en.json
+```javascript
+{
+  "headline": "This is a heading"
+}
+```
+
+- ###### translations/es.json
+```javascript
+{
+  "headline": "Esto es un encabezado"
+}
+```
+
+Based off the above, we decided to go with `react-intl` as our internationalization package.
