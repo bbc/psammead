@@ -49,7 +49,7 @@ exports[`SubHeading component attribute id should render without double quotes 1
   line-height: 1.5rem;
 }
 
-@media (min-width:25rem) {
+@media (min-width:37.5rem) {
   .c0 {
     padding-top: 2rem;
   }
@@ -89,7 +89,7 @@ exports[`SubHeading component attribute id should render without exclamation mar
   line-height: 1.5rem;
 }
 
-@media (min-width:25rem) {
+@media (min-width:37.5rem) {
   .c0 {
     padding-top: 2rem;
   }
@@ -129,7 +129,7 @@ exports[`SubHeading component attribute id should render without quotes 1`] = `
   line-height: 1.5rem;
 }
 
-@media (min-width:25rem) {
+@media (min-width:37.5rem) {
   .c0 {
     padding-top: 2rem;
   }
@@ -169,7 +169,7 @@ exports[`SubHeading component should render correctly 1`] = `
   line-height: 1.5rem;
 }
 
-@media (min-width:25rem) {
+@media (min-width:37.5rem) {
   .c0 {
     padding-top: 2rem;
   }
