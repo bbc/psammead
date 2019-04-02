@@ -12,7 +12,7 @@ import {
 } from '@bbc/gel-foundations/typography';
 import {
   MEDIA_QUERY_TYPOGRAPHY,
-  GEL_GROUP_2_SCREEN_WIDTH_MIN,
+  GEL_GROUP_3_SCREEN_WIDTH_MIN,
 } from '@bbc/gel-foundations/breakpoints';
 
 export const Headline = styled.h1`
@@ -38,7 +38,7 @@ export const SubHeading = styled.h2.attrs(({ text }) => ({
   font-family: ${GEL_FF_REITH_SANS};
   margin: 0; /* Reset */
   padding-bottom: ${GEL_SPACING_TRPL} 0;
-  @media (min-width: ${GEL_GROUP_2_SCREEN_WIDTH_MIN}) {
+  @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
     padding-top: ${GEL_SPACING_QUAD};
   }
   font-weight: 700;
