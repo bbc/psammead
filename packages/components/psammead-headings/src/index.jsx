@@ -10,10 +10,7 @@ import {
   GEL_FF_REITH_SANS,
   GEL_FF_REITH_SERIF,
 } from '@bbc/gel-foundations/typography';
-import {
-  MEDIA_QUERY_TYPOGRAPHY,
-  GEL_GROUP_3_SCREEN_WIDTH_MIN,
-} from '@bbc/gel-foundations/breakpoints';
+import { MEDIA_QUERY_TYPOGRAPHY } from '@bbc/gel-foundations/breakpoints';
 
 export const Headline = styled.h1`
   color: ${C_SHADOW};
@@ -38,7 +35,7 @@ export const SubHeading = styled.h2.attrs(({ text }) => ({
   font-family: ${GEL_FF_REITH_SANS};
   margin: 0; /* Reset */
   padding-bottom: ${GEL_SPACING_TRPL} 0;
-  @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
+  ${MEDIA_QUERY_TYPOGRAPHY.LAPTOP_AND_LARGER} {
     padding-top: ${GEL_SPACING_QUAD};
   }
   font-weight: 700;
