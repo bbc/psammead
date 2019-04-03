@@ -1,4 +1,5 @@
 import { MEDIA_QUERY_TYPOGRAPHY } from './breakpoints';
+import getTypeSizes from './getTypeSizes';
 
 const fontFamilyBase = ', Helvetica, Arial, sans-serif';
 
@@ -6,6 +7,37 @@ export const GEL_FF_REITH_SERIF = `ReithSerif${fontFamilyBase}`;
 export const GEL_FF_REITH_SANS = `ReithSans${fontFamilyBase}`;
 export const GEL_FF_REITH_SANS_COND = `ReithSansCondensed${fontFamilyBase}`;
 
+export const getCanon = script => getTypeSizes('canon', script);
+
+export const getTrafalgar = script => getTypeSizes('trafalgar', script);
+
+export const getParagon = script => getTypeSizes('paragon', script);
+
+export const getDoublePica = script => getTypeSizes('doublePica', script);
+
+export const getGreatPrimer = script => getTypeSizes('greatPrimer', script);
+
+export const getBodyCopy = script => getTypeSizes('bodyCopy', script);
+
+export const getPica = script => getTypeSizes('pica', script);
+
+export const getLongPrimer = script => getTypeSizes('longPrimer', script);
+
+export const getBrevier = script => getTypeSizes('brevier', script);
+
+export const getMinion = script => getTypeSizes('minion', script);
+
+export const getAtlas = script => getTypeSizes('atlas', script);
+
+export const getElephant = script => getTypeSizes('elephant', script);
+
+export const getImperial = script => getTypeSizes('imperial', script);
+
+export const getRoyal = script => getTypeSizes('royal', script);
+
+export const getFoolscap = script => getTypeSizes('foolscap', script);
+
+/* ORIGINAL CONSTANTS */
 export const GEL_ATLAS = `
   font-size: 4.875rem;
   line-height: 5.25rem;
