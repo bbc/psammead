@@ -36,3 +36,27 @@ Currently, Psammead uses a hard-coded set of constants that express the Type Siz
 ## Decision Outcome
 
 Option 2. Utility function, as it allows for the most portable, backwards-compatible and GEL-compliant solution, while not adding external dependencies to the codebase.
+
+This solution allows us to optimize the weight of the application as outlined in the steps below:
+
+* Styles are included in a script file that has this format:
+```javascript
+  ...
+  longPrimer: {
+    groupA: {
+      fontSize: '17',
+      lineHeight: '24',
+  },
+```
+
+* We can then pull in a particular script in this manner:
+```javascript
+import { arabic } from '@bbc/gel-foundations/scripts'
+```
+
+* We then pass the script into the utility typography functions depending on the particular font we want:
+```javascript
+getLongPrimer('arabic');
+```
+
+* Since we are passing the styles to a function, we save ourselves from having unused imports as we only pull in what we require. 
