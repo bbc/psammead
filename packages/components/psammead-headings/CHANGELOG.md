@@ -3,7 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
-| 0.4.2   | [PR#412](https://github.com/bbc/psammead/pull/412) Make SubHeading padding-bottom 24px instead of 16px|
+| 0.4.2   | [PR#412](https://github.com/bbc/psammead/pull/412) Make SubHeading padding-bottom 24px instead of 16px |
 | 0.4.1   | [PR#381](https://github.com/bbc/psammead/pull/381) Make SubHeading padding-top 32px when viewport 400px and above |
 | 0.4.0   | [PR#381](https://github.com/bbc/psammead/pull/381) Make headline 40px for 600px and above |
 | 0.3.2   | [PR#398](https://github.com/bbc/psammead/pull/398) Update dependencies. Using `rem` for media queries. |
