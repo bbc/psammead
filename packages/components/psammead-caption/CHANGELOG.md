@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 1.0.0   | [PR#413](https://github.com/bbc/psammead/pull/413) Add support for different scripts typographies |
 | 0.3.3   | [PR#410](https://github.com/bbc/psammead/pull/410) Update left/right padding to match article design |
 | 0.3.2   | [PR#398](https://github.com/bbc/psammead/pull/398) Update dependencies |
 | 0.3.1   | [PR#393](https://github.com/bbc/psammead/pull/393) Remove padding from left/right of caption. |

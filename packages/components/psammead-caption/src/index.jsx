@@ -57,4 +57,3 @@ Caption.defaultProps = {
 };
 
 export default Caption;
-
