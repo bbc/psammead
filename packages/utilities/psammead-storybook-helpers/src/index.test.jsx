@@ -1,6 +1,6 @@
 import { boolean, select, text } from '@storybook/addon-knobs';
 import { testUtilityPackages } from '@bbc/psammead-test-helpers';
-import * as underTest from './src';
+import * as underTest from '.';
 
 let mockBooleanResult = false;
 
@@ -14,18 +14,12 @@ const textVariantsExpectedExports = {
   LANGUAGE_VARIANTS: 'object',
 };
 
-const inputProviderExpectedExports = {
-  inputProvider: 'function',
-};
-
 const expectedExports = {
   textVariants: textVariantsExpectedExports,
-  inputProvider: inputProviderExpectedExports,
 };
 
 const actualExports = {
   textVariants: { LANGUAGE_VARIANTS: underTest.LANGUAGE_VARIANTS },
-  inputProvider: { inputProvider: underTest.inputProvider },
 };
 
 describe('Psammead storybook helpers', () => {
