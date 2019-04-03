@@ -34,7 +34,7 @@ export const SubHeading = styled.h2.attrs(({ text }) => ({
   color: ${C_SHADOW};
   font-family: ${GEL_FF_REITH_SANS};
   margin: 0; /* Reset */
-  padding-bottom: ${GEL_SPACING_TRPL};
+  padding: ${GEL_SPACING_TRPL} 0;
   ${MEDIA_QUERY_TYPOGRAPHY.LAPTOP_AND_LARGER} {
     padding-top: ${GEL_SPACING_QUAD};
   }
