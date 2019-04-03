@@ -12,7 +12,7 @@ The `psammead-caption` component is a styled `figcaption` element.
 
 | Argument  | Type | Required | Default | Example |
 | --------- | ---- | -------- | ------- | ------- |
-| No props. |      |          |         |         |
+| Script    | object | No | latin | { canon: { groupA: { fontSize: '28', lineHeight: '32',}, groupB: { fontSize: '32', lineHeight: '36', }, groupD: { fontSize: '44', lineHeight: '48', }, }, trafalgar: { groupA: { fontSize: '20', lineHeight: '24', }, groupB: { fontSize: '24', lineHeight: '28', }, groupD: { fontSize: '32', lineHeight: '36', }, }, }|
 
 ## Usage
 
@@ -22,11 +22,12 @@ The `psammead-caption` component is a styled `figcaption` element.
 import Caption from '@bbc/psammead-caption';
 import Figure from '@bbc/psammead-figure';
 import VisuallyHiddenText from '@bbc/psammead-visually-hidden-text';
+import { arabic } from '@bbc/gel-foundations/scripts';
 
 const Wrapper = captionText => (
   <Figure>
     ...
-    <Caption>
+    <Caption script={arabic}>
       <VisuallyHiddenText>Image caption, </VisuallyHiddenText>
       {captionText}
     </Caption>

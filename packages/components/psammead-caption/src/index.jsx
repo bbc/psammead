@@ -1,4 +1,6 @@
+import React from 'react';
 import styled, { css } from 'styled-components';
+import { node, objectOf, object } from 'prop-types';
 import {
   GEL_SPACING,
   GEL_MARGIN_ABOVE_400PX,
@@ -10,11 +12,12 @@ import {
   GEL_GROUP_4_SCREEN_WIDTH_MIN,
 } from '@bbc/gel-foundations/breakpoints';
 import {
-  GEL_LONG_PRIMER,
+  getLongPrimer,
   GEL_FF_REITH_SANS,
 } from '@bbc/gel-foundations/typography';
 
 import { C_CLOUD_DARK } from '@bbc/psammead-styles/colours';
+import { latin } from '@bbc/gel-foundations/scripts';
 
 // Defined separately since in future will need to apply
 // only when the script supports italic text
@@ -22,8 +25,8 @@ const FS_ITALIC = css`
   font-style: italic;
 `;
 
-const Caption = styled.figcaption`
-  ${GEL_LONG_PRIMER};
+const StyledElement = styled.figcaption`
+  ${props => (props.typography ? props.typography : '')};
   color: ${C_CLOUD_DARK};
   font-family: ${GEL_FF_REITH_SANS};
   ${FS_ITALIC};
@@ -38,4 +41,20 @@ const Caption = styled.figcaption`
   }
 `;
 
+const Caption = ({ children, script }) => {
+  const GEL_LONG_PRIMER = getLongPrimer(script);
+
+  return <StyledElement typography={GEL_LONG_PRIMER}>{children}</StyledElement>;
+};
+
+Caption.propTypes = {
+  children: node.isRequired,
+  script: objectOf(object),
+};
+
+Caption.defaultProps = {
+  script: latin,
+};
+
 export default Caption;
+
