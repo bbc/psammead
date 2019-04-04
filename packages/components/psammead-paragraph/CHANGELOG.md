@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 1.0.0   | [PR#414](https://github.com/bbc/psammead/pull/414) Add support for different scripts typographies |
 | 0.3.3   | [PR#392](https://github.com/bbc/psammead/pull/392) Increase padding-bottom from 16px to 24px |
 | 0.3.2   | [PR#398](https://github.com/bbc/psammead/pull/398) Update dependencies. Using `rem` for media queries. |
 | 0.3.1   | [PR#323](https://github.com/bbc/psammead/pull/323) Update storybook badge url |
