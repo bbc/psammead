@@ -7,6 +7,7 @@ In addition to components, Psammead contains a selection of utility packages. Th
 * [gel-foundations](./gel-foundations) - A range of styled-components and String constants for use in CSS, intended to help ensure GEL-compliance in components and other web-based projects in a consistent way.
 * [psammead-assets](./psammead-assets) - A collection of common assets that are likely to be required by many Psammead components or users.
 * [psammead-styles](./psammead-styles) - A collection of String constants for use in CSS, containing non-GEL styling details.
+* [psammead-storybook-helpers](./psammead-storybook-helpers) -  A collection of common values that are used in storybook by the Psammead components.
 * [psammead-test-helpers](./psammead-test-helpers) - A collection of helper methods for implementing Jest snapshot tests for styled-components, required by many Psammead components.
 
 ### Adding further utilities
