@@ -12,7 +12,7 @@ storiesOf('Caption', module)
   .add(
     'default',
     inputProvider(['caption'], captionText => <Caption>{captionText}</Caption>),
-    { notes },
+    { notes, knobs: { escapeHTML: false } },
   )
   .add(
     'with offscreen text',
@@ -25,7 +25,7 @@ storiesOf('Caption', module)
         </Caption>
       ),
     ),
-    { notes },
+    { notes, knobs: { escapeHTML: false } },
   )
   .add(
     'containing an inline link',
@@ -35,5 +35,5 @@ storiesOf('Caption', module)
         <InlineLink href="https://www.bbc.com"> {linkText}</InlineLink>.
       </Caption>
     )),
-    { notes },
+    { notes, knobs: { escapeHTML: false } },
   );
