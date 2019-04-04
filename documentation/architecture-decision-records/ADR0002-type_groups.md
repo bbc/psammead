@@ -56,7 +56,7 @@ import { arabic } from '@bbc/gel-foundations/scripts'
 
 * We then pass the script into the utility typography functions depending on the particular font we want:
 ```javascript
-getLongPrimer('arabic');
+getLongPrimer(arabic);
 ```
 
 * Since we are passing the styles to a function, we save ourselves from having unused imports as we only pull in what we require. 
