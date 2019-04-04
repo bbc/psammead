@@ -14,14 +14,16 @@ It uses `@bbc/psammead-styles` for colours and font family and `@bbc/gel-foundat
 
 | Argument  | Type | Required | Default | Example |
 | --------- | ---- | -------- | ------- | ------- |
-| No props. |      |          |         |         |
+| Script    | object | Yes | latin | { canon: { groupA: { fontSize: '28', lineHeight: '32',}, groupB: { fontSize: '32', lineHeight: '36', }, groupD: { fontSize: '44', lineHeight: '48', }, }, trafalgar: { groupA: { fontSize: '20', lineHeight: '24', }, groupB: { fontSize: '24', lineHeight: '28', }, groupD: { fontSize: '32', lineHeight: '36', }, }, }|
+
 
 ## Usage
 
 ```jsx
 import Paragraph from '@bbc/psammead-paragraph';
+import { latin } from '@bbc/gel-foundations/scripts';
 
-const WrappingComponent = () => <Paragraph>Text here</Paragraph>;
+const WrappingComponent = () => <Paragraph script={latin}>Text here</Paragraph>;
 ```
 
 ### When to use this component
