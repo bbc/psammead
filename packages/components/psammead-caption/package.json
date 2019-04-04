@@ -23,8 +23,8 @@
   },
   "devDependencies": {
     "@bbc/psammead-storybook-helpers": "^0.1.0",
-    "@bbc/psammead-test-helpers": "^0.3.0",
-    "@bbc/psammead-inline-link": "^0.3.3",
+    "@bbc/psammead-test-helpers": "^0.3.3",
+    "@bbc/psammead-inline-link": "^0.3.4",
     "@bbc/psammead-visually-hidden-text": "^0.1.10",
     "react": "^16.6.3"
   },

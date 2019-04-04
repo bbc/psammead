@@ -4,6 +4,8 @@
 | Version | Description |
 |---------|-------------|
 | 0.4.0   | [PR#377](https://github.com/bbc/psammead/pull/377) Add knobs addon using psammead-storybook-helpers |
+| 0.3.3   | [PR#410](https://github.com/bbc/psammead/pull/410) Update left/right padding to match article design |
+| 0.3.2   | [PR#398](https://github.com/bbc/psammead/pull/398) Update dependencies |
 | 0.3.1   | [PR#393](https://github.com/bbc/psammead/pull/393) Remove padding from left/right of caption. |
 | 0.3.0   | [PR#365](https://github.com/bbc/psammead/pull/365) Remove background colour, update colour to Cloud Dark. Use font style italic. |
 | 0.2.1   | [PR#323](https://github.com/bbc/psammead/pull/323) Update storybook badge url |
