@@ -74,20 +74,18 @@ Support:
 * Quick responses on both issues and Pull requests
 * 14 issues, 6 PRs
 
-
 Developer experience:
 * Some parts of the docs aren’t grammatically correct. One will notice the errors but it’s not bad enough that one won’t be able to understand the docs.
 * Noticed that there are several issues that are asking for new features that are available on react-intl but not on react-intl-universal. Seems like they aren’t actively working on new features at the moment. If the current version suits our needs, we won’t have to worry about this.
 
 Size:
 
-Bundle Size
-75.4 kB Minified
-24.7 kB Minified + GZipped
+- 75.4 kB Minified
+- 24.7 kB Minified + GZipped
 
-https://bundlephobia.com/result?p=react-intl-universal@1.15.5
+Source: [bundlephobia](https://bundlephobia.com/result?p=react-intl-universal@1.15.5)
 
-Licensing: BSD 3-Clause "New" or "Revised" License granted by Alibaba. [License page info.](https://github.com/alibaba/react-intl-universal/blob/master/LICENSE.md)
+Licensing: BSD 3-Clause "New" or "Revised" License granted by Alibaba. [License page info](https://github.com/alibaba/react-intl-universal/blob/master/LICENSE.md).
 
 ---
 
@@ -139,7 +137,7 @@ addLocaleData([...locale_en, ...locale_es]);
 
 const locale = 
   (navigator.languages && navigator.languages[0]) || 
-  navigator.langauge ||
+  navigator.language ||
   navigator.userLanguage ||
   'en-UK';
 
@@ -168,20 +166,20 @@ export const HeadlineIntl = () => {
 
 React Intl uses the provider pattern to scope an i18n context to a tree of components. This allows configuration like the current locale to be provided at the root of a component tree and made available to all the child components as well.
 
-The `Headline`(psammead) component wraps the `<FormattedMessage>` component of `react-intl` which is used for formatting string messages.
+The `Headline` (Psammead) component wraps the `<FormattedMessage>` component of `react-intl` which is used for formatting string messages.
 
 We have to load the locale data for languages we want to support. In this example, we have imported English and Spanish. This data is provided by `react-intl` and specifies the date, time, number and formats for each language. The locale data is added by calling `addLocaleData()`.
 
 The translations of our custom text messages will be stored for each language in a separate config file.
 
-- ###### translations/en.json
+**translations/en.json**:
 ```javascript
 {
   "headline": "This is a heading"
 }
 ```
 
-- ###### translations/es.json
+**translations/es.json**:
 ```javascript
 {
   "headline": "Esto es un encabezado"
