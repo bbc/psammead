@@ -9,7 +9,7 @@ import {
 } from '@bbc/gel-foundations/typography';
 import { latin } from '@bbc/gel-foundations/scripts';
 
-const StyledElement = styled.p`
+const StyledParagraph = styled.p`
   ${props => (props.typography ? props.typography : '')};
   color: ${C_SHADOW};
   font-family: ${GEL_FF_REITH_SANS};
@@ -20,7 +20,9 @@ const StyledElement = styled.p`
 const Paragraph = ({ children, script }) => {
   const GEL_BODY_COPY = getBodyCopy(script);
 
-  return <StyledElement typography={GEL_BODY_COPY}>{children}</StyledElement>;
+  return (
+    <StyledParagraph typography={GEL_BODY_COPY}>{children}</StyledParagraph>
+  );
 };
 
 Paragraph.propTypes = {
