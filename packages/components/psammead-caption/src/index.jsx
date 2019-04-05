@@ -1,5 +1,5 @@
 import styled, { css } from 'styled-components';
-import { node, objectOf, object } from 'prop-types';
+import { objectOf, object } from 'prop-types';
 import {
   GEL_SPACING,
   GEL_MARGIN_ABOVE_400PX,
@@ -39,7 +39,6 @@ const Caption = styled.figcaption`
 `;
 
 Caption.propTypes = {
-  children: node.isRequired,
   script: objectOf(object).required,
 };
 
