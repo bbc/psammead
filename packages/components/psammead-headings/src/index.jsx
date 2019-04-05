@@ -1,12 +1,13 @@
 import styled from 'styled-components';
+import { objectOf, object } from 'prop-types';
 import { C_SHADOW } from '@bbc/psammead-styles/colours';
 import {
   GEL_SPACING_DBL,
   GEL_SPACING_QUAD,
 } from '@bbc/gel-foundations/spacings';
 import {
-  GEL_CANON,
-  GEL_TRAFALGAR,
+  getCanon,
+  getTrafalgar,
   GEL_FF_REITH_SANS,
   GEL_FF_REITH_SERIF,
 } from '@bbc/gel-foundations/typography';
@@ -16,6 +17,7 @@ import {
 } from '@bbc/gel-foundations/breakpoints';
 
 export const Headline = styled.h1`
+  ${props => (props.script ? getCanon(props.script) : '')};
   color: ${C_SHADOW};
   font-family: ${GEL_FF_REITH_SERIF};
   margin: 0; /* Reset */
@@ -24,7 +26,6 @@ export const Headline = styled.h1`
     padding: 2.5rem 0;
   }
   font-weight: 500;
-  ${GEL_CANON};
 `;
 
 const regexPunctuationSymbols = /[^a-z0-9\s-]/gi;
@@ -34,6 +35,7 @@ export const SubHeading = styled.h2.attrs(({ text }) => ({
   id: text.replace(regexPunctuationSymbols, '').replace(regexSpaces, '-'),
   tabIndex: '-1',
 }))`
+  ${props => (props.script ? getTrafalgar(props.script) : '')};
   color: ${C_SHADOW};
   font-family: ${GEL_FF_REITH_SANS};
   margin: 0; /* Reset */
@@ -42,5 +44,12 @@ export const SubHeading = styled.h2.attrs(({ text }) => ({
     padding-top: ${GEL_SPACING_QUAD};
   }
   font-weight: 700;
-  ${GEL_TRAFALGAR};
 `;
+
+Headline.defaultProps = {
+  script: objectOf(object).required,
+};
+
+SubHeading.defaultProps = {
+  script: objectOf(object).required,
+};
