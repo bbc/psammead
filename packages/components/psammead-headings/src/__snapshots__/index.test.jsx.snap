@@ -2,19 +2,13 @@
 
 exports[`Headline component should render correctly 1`] = `
 .c0 {
+  font-size: 1.75rem;
+  line-height: 2rem;
   color: #3F3F42;
   font-family: ReithSerif,Helvetica,Arial,sans-serif;
   margin: 0;
   padding: 2rem 0;
   font-weight: 500;
-  font-size: 1.75rem;
-  line-height: 2rem;
-}
-
-@media (min-width:37.5rem) {
-  .c0 {
-    padding: 2.5rem 0;
-  }
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
@@ -31,6 +25,12 @@ exports[`Headline component should render correctly 1`] = `
   }
 }
 
+@media (min-width:37.5rem) {
+  .c0 {
+    padding: 2.5rem 0;
+  }
+}
+
 <h1
   className="c0"
 >
@@ -40,19 +40,13 @@ exports[`Headline component should render correctly 1`] = `
 
 exports[`SubHeading component attribute id should render without double quotes 1`] = `
 .c0 {
+  font-size: 1.25rem;
+  line-height: 1.5rem;
   color: #3F3F42;
   font-family: ReithSans,Helvetica,Arial,sans-serif;
   margin: 0;
   padding: 1rem 0;
   font-weight: 700;
-  font-size: 1.25rem;
-  line-height: 1.5rem;
-}
-
-@media (min-width:25rem) {
-  .c0 {
-    padding-top: 2rem;
-  }
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
@@ -66,6 +60,12 @@ exports[`SubHeading component attribute id should render without double quotes 1
   .c0 {
     font-size: 2rem;
     line-height: 2.25rem;
+  }
+}
+
+@media (min-width:25rem) {
+  .c0 {
+    padding-top: 2rem;
   }
 }
 
@@ -80,19 +80,13 @@ exports[`SubHeading component attribute id should render without double quotes 1
 
 exports[`SubHeading component attribute id should render without exclamation marks 1`] = `
 .c0 {
+  font-size: 1.25rem;
+  line-height: 1.5rem;
   color: #3F3F42;
   font-family: ReithSans,Helvetica,Arial,sans-serif;
   margin: 0;
   padding: 1rem 0;
   font-weight: 700;
-  font-size: 1.25rem;
-  line-height: 1.5rem;
-}
-
-@media (min-width:25rem) {
-  .c0 {
-    padding-top: 2rem;
-  }
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
@@ -106,6 +100,12 @@ exports[`SubHeading component attribute id should render without exclamation mar
   .c0 {
     font-size: 2rem;
     line-height: 2.25rem;
+  }
+}
+
+@media (min-width:25rem) {
+  .c0 {
+    padding-top: 2rem;
   }
 }
 
@@ -120,19 +120,13 @@ exports[`SubHeading component attribute id should render without exclamation mar
 
 exports[`SubHeading component attribute id should render without quotes 1`] = `
 .c0 {
+  font-size: 1.25rem;
+  line-height: 1.5rem;
   color: #3F3F42;
   font-family: ReithSans,Helvetica,Arial,sans-serif;
   margin: 0;
   padding: 1rem 0;
   font-weight: 700;
-  font-size: 1.25rem;
-  line-height: 1.5rem;
-}
-
-@media (min-width:25rem) {
-  .c0 {
-    padding-top: 2rem;
-  }
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
@@ -146,6 +140,12 @@ exports[`SubHeading component attribute id should render without quotes 1`] = `
   .c0 {
     font-size: 2rem;
     line-height: 2.25rem;
+  }
+}
+
+@media (min-width:25rem) {
+  .c0 {
+    padding-top: 2rem;
   }
 }
 
@@ -160,19 +160,13 @@ exports[`SubHeading component attribute id should render without quotes 1`] = `
 
 exports[`SubHeading component should render correctly 1`] = `
 .c0 {
+  font-size: 1.25rem;
+  line-height: 1.5rem;
   color: #3F3F42;
   font-family: ReithSans,Helvetica,Arial,sans-serif;
   margin: 0;
   padding: 1rem 0;
   font-weight: 700;
-  font-size: 1.25rem;
-  line-height: 1.5rem;
-}
-
-@media (min-width:25rem) {
-  .c0 {
-    padding-top: 2rem;
-  }
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
@@ -186,6 +180,12 @@ exports[`SubHeading component should render correctly 1`] = `
   .c0 {
     font-size: 2rem;
     line-height: 2.25rem;
+  }
+}
+
+@media (min-width:25rem) {
+  .c0 {
+    padding-top: 2rem;
   }
 }
 
