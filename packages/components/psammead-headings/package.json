@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/bbc/psammead/blob/latest/packages/components/psammead-headings/README.md",
   "dependencies": {
-    "@bbc/gel-foundations": "^0.3.0",
+    "@bbc/gel-foundations": "^1.0.0",
     "@bbc/psammead-styles": "^0.3.2"
   },
   "devDependencies": {
