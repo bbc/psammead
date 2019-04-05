@@ -3,7 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
-| 0.3.5   | [PR#417](https://github.com/bbc/psammead/pull/417) Add language variants knob to Copyright |
+| 0.3.5   | [PR#417](https://github.com/bbc/psammead/pull/417) Add text input knob to Copyright |
 | 0.3.4   | [PR#398](https://github.com/bbc/psammead/pull/398) Update dependencies |
 | 0.3.3   | [PR#329](https://github.com/BBC/psammead/pull/329) Adding Visually Hidden Text to copyright component story. |
 | 0.3.2   | [PR#334](https://github.com/BBC/psammead/pull/334) Improve examples of using Figure and Copyright |
