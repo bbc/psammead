@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 1.0.0   | [PR#415](https://github.com/bbc/psammead/pull/415) Add support for different scripts typographies |
 | 0.3.4   | [PR#398](https://github.com/bbc/psammead/pull/398) Update dependencies |
 | 0.3.3   | [PR#329](https://github.com/BBC/psammead/pull/329) Adding Visually Hidden Text to copyright component story. |
 | 0.3.2   | [PR#334](https://github.com/BBC/psammead/pull/334) Improve examples of using Figure and Copyright |
