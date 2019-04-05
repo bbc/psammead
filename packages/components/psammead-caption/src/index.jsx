@@ -25,7 +25,7 @@ const FS_ITALIC = css`
   font-style: italic;
 `;
 
-const StyledElement = styled.figcaption`
+const StyledCaption = styled.figcaption`
   ${props => (props.typography ? props.typography : '')};
   color: ${C_CLOUD_DARK};
   font-family: ${GEL_FF_REITH_SANS};
@@ -44,7 +44,7 @@ const StyledElement = styled.figcaption`
 const Caption = ({ children, script }) => {
   const GEL_LONG_PRIMER = getLongPrimer(script);
 
-  return <StyledElement typography={GEL_LONG_PRIMER}>{children}</StyledElement>;
+  return <StyledCaption typography={GEL_LONG_PRIMER}>{children}</StyledCaption>;
 };
 
 Caption.propTypes = {
