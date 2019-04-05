@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 0.3.5   | [PR#???](https://github.com/bbc/psammead/pull/???) Add language variants knob to Paragraph stories |
 | 0.3.4   | [PR#407](https://github.com/bbc/psammead/pull/407) Organise dependencies properly |
 | 0.3.3   | [PR#392](https://github.com/bbc/psammead/pull/392) Increase padding-bottom from 16px to 24px |
 | 0.3.2   | [PR#398](https://github.com/bbc/psammead/pull/398) Update dependencies. Using `rem` for media queries. |
