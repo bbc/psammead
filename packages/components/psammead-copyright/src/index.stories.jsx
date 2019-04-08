@@ -17,7 +17,7 @@ storiesOf('Copyright', module)
     () => (
       <Copyright>
         <VisuallyHiddenText>
-          {text('visually hidden text', 'Image source,')}{' '}
+          {text('visually hidden text', 'Image source, ')}
         </VisuallyHiddenText>
         {text('copyright', 'Getty Images')}
       </Copyright>
