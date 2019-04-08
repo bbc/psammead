@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`should render Caption with some offscreen text 1`] = `
+exports[`Caption should render with some offscreen text 1`] = `
 .c1 {
   -webkit-clip-path: inset(100%);
   clip-path: inset(100%);
@@ -52,6 +52,66 @@ exports[`should render Caption with some offscreen text 1`] = `
   className="c0"
 >
   This is some Caption text
+  <span
+    className="c1"
+  >
+    Some offscreen text
+  </span>
+</figcaption>
+`;
+
+exports[`Caption should render with some offscreen text and arabic script typography values 1`] = `
+.c1 {
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  -webkit-clip: rect(1px,1px,1px,1px);
+  clip: rect(1px,1px,1px,1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  width: 1px;
+}
+
+.c0 {
+  font-size: 1.0625rem;
+  line-height: 1.5rem;
+  color: #757575;
+  font-family: ReithSans,Helvetica,Arial,sans-serif;
+  font-style: italic;
+  padding: 0.5rem 0.5rem;
+  width: 100%;
+}
+
+@media (min-width:20rem) and (max-width:37.4375rem) {
+  .c0 {
+    font-size: 1.125rem;
+    line-height: 1.5rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .c0 {
+    font-size: 1.25rem;
+    line-height: 1.625rem;
+  }
+}
+
+@media (min-width:25rem) and (max-width:62.9375rem) {
+  .c0 {
+    padding: 0.5rem 1rem;
+  }
+}
+
+@media (min-width:63rem) {
+  .c0 {
+    padding: 0.5rem 0;
+  }
+}
+
+<figcaption
+  className="c0"
+>
+  هذا هو بعض النص التسمية التوضيحي
   <span
     className="c1"
   >
