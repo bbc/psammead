@@ -2,6 +2,7 @@
 
 | Version | Description |
 |---------|-------------|
+| 0.1.9   | [PR#407](https://github.com/bbc/psammead/pull/407) Organise dependencies properly |
 | 0.1.8   | [PR#323](https://github.com/bbc/psammead/pull/323) Update storybook badge url |
 | 0.1.7   | [PR#323](https://github.com/BBC/psammead/pull/323) Update readme storybook badge |
 | 0.1.6   | [PR#264](https://github.com/BBC/psammead/pull/319) Resolving package-lock issues. |
