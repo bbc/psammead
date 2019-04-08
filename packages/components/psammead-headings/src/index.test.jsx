@@ -11,7 +11,7 @@ describe('Headline component', () => {
 
   shouldMatchSnapshot(
     'should render correctly with arabic script typography values',
-    <Headline script={arabic}>This is my headline.</Headline>,
+    <Headline script={arabic}>هذا هو العنوان الخاص بي</Headline>,
   );
 });
 

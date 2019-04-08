@@ -72,7 +72,7 @@ exports[`Headline component should render correctly with arabic script typograph
 <h1
   className="c0"
 >
-  This is my headline.
+  هذا هو العنوان الخاص بي
 </h1>
 `;
 
