@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 0.3.6   | [PR#424](https://github.com/bbc/psammead/pull/424) Add Snyk badge to readme |
 | 0.3.5   | [PR#407](https://github.com/bbc/psammead/pull/407) Organise dependencies properly |
 | 0.3.4   | [PR#398](https://github.com/bbc/psammead/pull/398) Update dependencies |
 | 0.3.3   | [PR#329](https://github.com/BBC/psammead/pull/329) Adding Visually Hidden Text to copyright component story. |

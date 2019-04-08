@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 0.4.3   | [PR#424](https://github.com/bbc/psammead/pull/424) Add Snyk badge to readme |
 | 0.4.2   | [PR#407](https://github.com/bbc/psammead/pull/407) Organise dependencies properly |
 | 0.4.1   | [PR#381](https://github.com/bbc/psammead/pull/381) Make SubHeading padding-top 32px when viewport 400px and above |
 | 0.4.0   | [PR#381](https://github.com/bbc/psammead/pull/381) Make headline 40px for 600px and above |
