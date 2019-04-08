@@ -4,6 +4,7 @@
 | Version | Description |
 |---------|-------------|
 | 1.0.0   | [PR#421](https://github.com/bbc/psammead/pull/421) Add support for different scripts typographies |
+| 0.4.3   | [PR#418](https://github.com/bbc/psammead/pull/418) Add language variants knob to Headings |
 | 0.4.2   | [PR#407](https://github.com/bbc/psammead/pull/407) Organise dependencies properly |
 | 0.4.1   | [PR#381](https://github.com/bbc/psammead/pull/381) Make SubHeading padding-top 32px when viewport 400px and above |
 | 0.4.0   | [PR#381](https://github.com/bbc/psammead/pull/381) Make headline 40px for 600px and above |

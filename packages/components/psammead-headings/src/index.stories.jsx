@@ -1,21 +1,29 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
+import { withKnobs } from '@storybook/addon-knobs';
+import { inputProvider } from '@bbc/psammead-storybook-helpers';
 import { latin } from '@bbc/gel-foundations/scripts';
 import notes from '../README.md';
 import { Headline, SubHeading } from './index';
 
-storiesOf('Headline', module).add(
-  'default',
-  () => <Headline script={latin}>This is my headline.</Headline>,
-  { notes },
-);
+storiesOf('Headline', module)
+  .addDecorator(withKnobs)
+  .add(
+    'default',
+    inputProvider(['headline'], headline => (
+      <Headline script={latin}>{headline}</Headline>
+    )),
+    { notes, knobs: { escapeHTML: false } },
+  );
 
-storiesOf('SubHeading', module).add(
-  'default',
-  () => (
-    <SubHeading text="This is a SubHeading" script={latin}>
-      This is a SubHeading
-    </SubHeading>
-  ),
-  { notes },
-);
+storiesOf('SubHeading', module)
+  .addDecorator(withKnobs)
+  .add(
+    'default',
+    inputProvider(['subheading'], subheader => (
+      <SubHeading text={subheader} script={latin}>
+        {subheader}
+      </SubHeading>
+    )),
+    { notes, knobs: { escapeHTML: false } },
+  );
