@@ -12,17 +12,18 @@ The Headings are a set of two components, `Headline` and `SubHeading`. They use 
 
 | Argument  | Type | Required | Default | Example |
 | --------- | ---- | -------- | ------- | ------- |
-| No props. |      |          |         |         |
+| Script    | object | yes | latin | { canon: { groupA: { fontSize: '28', lineHeight: '32',}, groupB: { fontSize: '32', lineHeight: '36', }, groupD: { fontSize: '44', lineHeight: '48', }, }, trafalgar: { groupA: { fontSize: '20', lineHeight: '24', }, groupB: { fontSize: '24', lineHeight: '28', }, groupD: { fontSize: '32', lineHeight: '36', }, }, }|
 
 ## Usage
 
 ```jsx
 import { Headline, SubHeading } from '@bbc/psammead-headings';
+import { latin } from '@bbc/gel-foundations/scripts';
 
 const Wrapper = () => (
   <Fragment>
-    <Heading>Some headline</Heading>
-    <SubHeading>Some subheadline</SubHeading>
+    <Heading script={latin}>Some headline</Heading>
+    <SubHeading script={latin}>Some subheadline</SubHeading>
   </Fragment>
 );
 ```
