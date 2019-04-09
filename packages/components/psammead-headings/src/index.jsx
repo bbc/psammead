@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { objectOf, object } from 'prop-types';
+import { shape } from 'prop-types';
 import { C_SHADOW } from '@bbc/psammead-styles/colours';
 import {
   GEL_SPACING_DBL,
@@ -15,6 +15,7 @@ import {
   MEDIA_QUERY_TYPOGRAPHY,
   GEL_GROUP_2_SCREEN_WIDTH_MIN,
 } from '@bbc/gel-foundations/breakpoints';
+import scriptPropTypes from '../../../models/propTypes/scripts';
 
 export const Headline = styled.h1`
   ${props => (props.script ? getCanon(props.script) : '')};
@@ -46,10 +47,10 @@ export const SubHeading = styled.h2.attrs(({ text }) => ({
   font-weight: 700;
 `;
 
-Headline.defaultProps = {
-  script: objectOf(object).required,
+Headline.propTypes = {
+  script: shape(scriptPropTypes).isRequired,
 };
 
-SubHeading.defaultProps = {
-  script: objectOf(object).required,
+SubHeading.propTypes = {
+  script: shape(scriptPropTypes).isRequired,
 };

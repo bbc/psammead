@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 1.0.1   | [PR#???](https://github.com/bbc/psammead/pull/???) Add custom propTypes shape |
 | 1.0.0   | [PR#421](https://github.com/bbc/psammead/pull/421) Add support for different scripts typographies |
 | 0.4.3   | [PR#418](https://github.com/bbc/psammead/pull/418) Add language variants knob to Headings |
 | 0.4.2   | [PR#407](https://github.com/bbc/psammead/pull/407) Organise dependencies properly |
