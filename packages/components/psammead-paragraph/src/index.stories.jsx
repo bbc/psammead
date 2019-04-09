@@ -12,5 +12,5 @@ storiesOf('Paragraph', module)
     inputProvider(['paragraph'], paragraph => (
       <Paragraph>{paragraph}</Paragraph>
     )),
-    { notes },
+    { notes, knobs: { escapeHTML: false } },
   );
