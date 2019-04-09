@@ -3,7 +3,8 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
-| 0.3.5   | [PR#424](https://github.com/bbc/psammead/pull/424) Add Snyk badge to readme |
+| 0.3.6   | [PR#424](https://github.com/bbc/psammead/pull/424) Add Snyk badge to readme |
+| 0.3.5   | [PR#377](https://github.com/bbc/psammead/pull/377) Add knobs addon using psammead-storybook-helpers |
 | 0.3.4   | [PR#407](https://github.com/bbc/psammead/pull/407) Organise dependencies properly |
 | 0.3.3   | [PR#410](https://github.com/bbc/psammead/pull/410) Update left/right padding to match article design |
 | 0.3.2   | [PR#398](https://github.com/bbc/psammead/pull/398) Update dependencies |
