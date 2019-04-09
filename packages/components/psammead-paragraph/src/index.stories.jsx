@@ -1,5 +1,6 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
+import { latin } from '@bbc/gel-foundations/scripts';
 import { withKnobs } from '@storybook/addon-knobs';
 import { inputProvider } from '@bbc/psammead-storybook-helpers';
 import notes from '../README.md';
@@ -10,7 +11,7 @@ storiesOf('Paragraph', module)
   .add(
     'default',
     inputProvider(['paragraph'], paragraph => (
-      <Paragraph>{paragraph}</Paragraph>
+      <Paragraph script={latin}>{paragraph}</Paragraph>
     )),
     { notes, knobs: { escapeHTML: false } },
   );
