@@ -4,6 +4,7 @@ import { withKnobs } from '@storybook/addon-knobs';
 import { inputProvider } from '@bbc/psammead-storybook-helpers';
 import InlineLink from '@bbc/psammead-inline-link';
 import VisuallyHiddenText from '@bbc/psammead-visually-hidden-text';
+import { latin } from '@bbc/gel-foundations/scripts';
 import notes from '../README.md';
 import Caption from '.';
 
@@ -11,7 +12,9 @@ storiesOf('Caption', module)
   .addDecorator(withKnobs)
   .add(
     'default',
-    inputProvider(['caption'], captionText => <Caption>{captionText}</Caption>),
+    inputProvider(['caption'], captionText => (
+      <Caption script={latin}>{captionText}</Caption>
+    )),
     { notes, knobs: { escapeHTML: false } },
   )
   .add(
@@ -30,7 +33,7 @@ storiesOf('Caption', module)
   .add(
     'containing an inline link',
     inputProvider(['inline link', 'caption'], (linkText, captionText) => (
-      <Caption>
+      <Caption script={latin}>
         {captionText}
         <InlineLink href="https://www.bbc.com"> {linkText}</InlineLink>.
       </Caption>
