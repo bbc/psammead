@@ -2,6 +2,7 @@
 
 | Version | Description |
 |---------|-------------|
+| 1.1.0   | [PR#424](https://github.com/bbc/psammead/pull/424) Add Snyk badge to readme |
 | 1.0.0   | [PR#353](https://github.com/BBC/psammead/pull/353) Add support for different scripts typographies |
 | 0.3.0   | [PR#360](https://github.com/BBC/psammead/pull/360) Move to using rems for breakpoints |
 | 0.2.5   | [PR#349](https://github.com/BBC/psammead/pull/349) Add GEL Group A breakpoint |

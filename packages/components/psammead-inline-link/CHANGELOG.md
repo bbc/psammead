@@ -2,6 +2,7 @@
 
 | Version | Description |
 |---------|-------------|
+| 0.3.7   | [PR#424](https://github.com/bbc/psammead/pull/424) Add Snyk badge to readme |
 | 0.3.6   | [PR#419](https://github.com/bbc/psammead/pull/419) Add language variants knob to Inline Link stories |
 | 0.3.5   | [PR#407](https://github.com/bbc/psammead/pull/407) Organise dependencies properly |
 | 0.3.4   | [PR#371](https://github.com/bbc/psammead/pull/371) Update colour from Shadow to Ebon |
