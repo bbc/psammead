@@ -1,5 +1,7 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
+import { withKnobs, text } from '@storybook/addon-knobs';
+import { inputProvider } from '@bbc/psammead-storybook-helpers';
 import Caption from '@bbc/psammead-caption';
 import Copyright from '@bbc/psammead-copyright';
 import Image from '@bbc/psammead-image';
@@ -16,6 +18,7 @@ const imageWidth = 853;
 const imageRatio = 125;
 
 storiesOf('Figure', module)
+  .addDecorator(withKnobs)
   .add(
     'containing Image',
     () => (
@@ -27,20 +30,23 @@ storiesOf('Figure', module)
   )
   .add(
     'containing Image, ImagePlaceholder, Copyright and Caption',
-    () => (
-      <Figure>
-        <ImagePlaceholder ratio={imageRatio}>
-          <Image alt={imageAlt} src={imageSrc} width={imageWidth} />
-          <Copyright>
-            <VisuallyHiddenText>Image copyright, </VisuallyHiddenText>
-            Copyright
-          </Copyright>
-        </ImagePlaceholder>
-        <Caption>
-          <VisuallyHiddenText>Image caption, </VisuallyHiddenText>
-          Caption
-        </Caption>
-      </Figure>
+    inputProvider(
+      ['copyright offscreen text', 'caption', 'caption offscreen text'],
+      (copyrightOffscreen, caption, captionOffscreen) => (
+        <Figure>
+          <ImagePlaceholder ratio={imageRatio}>
+            <Image alt={imageAlt} src={imageSrc} width={imageWidth} />
+            <Copyright>
+              <VisuallyHiddenText>{copyrightOffscreen}</VisuallyHiddenText>
+              {text('copyright', 'Copyright', 'copyright')}
+            </Copyright>
+          </ImagePlaceholder>
+          <Caption>
+            <VisuallyHiddenText>{captionOffscreen}</VisuallyHiddenText>
+            {caption}
+          </Caption>
+        </Figure>
+      ),
     ),
-    { notes },
+    { notes, knobs: { escapeHTML: false } },
   );
