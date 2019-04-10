@@ -1,4 +1,5 @@
 import styled, { css } from 'styled-components';
+import { objectOf, object } from 'prop-types';
 import {
   GEL_SPACING,
   GEL_MARGIN_ABOVE_400PX,
@@ -10,7 +11,7 @@ import {
   GEL_GROUP_4_SCREEN_WIDTH_MIN,
 } from '@bbc/gel-foundations/breakpoints';
 import {
-  GEL_LONG_PRIMER,
+  getLongPrimer,
   GEL_FF_REITH_SANS,
 } from '@bbc/gel-foundations/typography';
 
@@ -23,13 +24,12 @@ const FS_ITALIC = css`
 `;
 
 const Caption = styled.figcaption`
-  ${GEL_LONG_PRIMER};
+  ${props => (props.script ? getLongPrimer(props.script) : '')};
   color: ${C_CLOUD_DARK};
   font-family: ${GEL_FF_REITH_SANS};
   ${FS_ITALIC};
   padding: ${GEL_SPACING} ${GEL_MARGIN_BELOW_400PX};
   width: 100%;
-
   @media (min-width: ${GEL_GROUP_2_SCREEN_WIDTH_MIN}) and (max-width: ${GEL_GROUP_3_SCREEN_WIDTH_MAX}) {
     padding: ${GEL_SPACING} ${GEL_MARGIN_ABOVE_400PX};
   }
@@ -37,5 +37,9 @@ const Caption = styled.figcaption`
     padding: ${GEL_SPACING} 0;
   }
 `;
+
+Caption.propTypes = {
+  script: objectOf(object).required,
+};
 
 export default Caption;
