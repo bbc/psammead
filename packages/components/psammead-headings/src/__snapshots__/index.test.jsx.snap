@@ -83,7 +83,7 @@ exports[`SubHeading component attribute id should render without double quotes 1
   color: #3F3F42;
   font-family: ReithSans,Helvetica,Arial,sans-serif;
   margin: 0;
-  padding: 1rem 0;
+  padding: 1.5rem 0;
   font-weight: 700;
 }
 
@@ -101,7 +101,7 @@ exports[`SubHeading component attribute id should render without double quotes 1
   }
 }
 
-@media (min-width:25rem) {
+@media (min-width:37.5rem) {
   .c0 {
     padding-top: 2rem;
   }
@@ -123,7 +123,7 @@ exports[`SubHeading component attribute id should render without exclamation mar
   color: #3F3F42;
   font-family: ReithSans,Helvetica,Arial,sans-serif;
   margin: 0;
-  padding: 1rem 0;
+  padding: 1.5rem 0;
   font-weight: 700;
 }
 
@@ -141,7 +141,7 @@ exports[`SubHeading component attribute id should render without exclamation mar
   }
 }
 
-@media (min-width:25rem) {
+@media (min-width:37.5rem) {
   .c0 {
     padding-top: 2rem;
   }
@@ -163,7 +163,7 @@ exports[`SubHeading component attribute id should render without quotes 1`] = `
   color: #3F3F42;
   font-family: ReithSans,Helvetica,Arial,sans-serif;
   margin: 0;
-  padding: 1rem 0;
+  padding: 1.5rem 0;
   font-weight: 700;
 }
 
@@ -181,7 +181,7 @@ exports[`SubHeading component attribute id should render without quotes 1`] = `
   }
 }
 
-@media (min-width:25rem) {
+@media (min-width:37.5rem) {
   .c0 {
     padding-top: 2rem;
   }
@@ -203,7 +203,7 @@ exports[`SubHeading component should render correctly 1`] = `
   color: #3F3F42;
   font-family: ReithSans,Helvetica,Arial,sans-serif;
   margin: 0;
-  padding: 1rem 0;
+  padding: 1.5rem 0;
   font-weight: 700;
 }
 
@@ -221,7 +221,7 @@ exports[`SubHeading component should render correctly 1`] = `
   }
 }
 
-@media (min-width:25rem) {
+@media (min-width:37.5rem) {
   .c0 {
     padding-top: 2rem;
   }
@@ -243,7 +243,7 @@ exports[`SubHeading component should render correctly with arabic script typogra
   color: #3F3F42;
   font-family: ReithSans,Helvetica,Arial,sans-serif;
   margin: 0;
-  padding: 1rem 0;
+  padding: 1.5rem 0;
   font-weight: 700;
 }
 
@@ -261,7 +261,7 @@ exports[`SubHeading component should render correctly with arabic script typogra
   }
 }
 
-@media (min-width:25rem) {
+@media (min-width:37.5rem) {
   .c0 {
     padding-top: 2rem;
   }
