@@ -1,4 +1,4 @@
-<h1 align="center">:sparkles: Psammead - BBC Component Library :sparkles:</h1>
+<h1 align="center">:sparkles: Psammead - CBBC Component Library :sparkles:</h1>
 
 <div align="center">
 
