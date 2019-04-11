@@ -1,10 +1,12 @@
 import { testUtilityPackages } from '@bbc/psammead-test-helpers';
 import * as spacings from './spacings';
 import * as breakpoints from './breakpoints';
+import * as propTypes from './prop-types';
 import * as typography from './typography';
 import * as scripts from './scripts';
 import * as spacingsFromSrc from './src/spacings';
 import * as breakpointsFromSrc from './src/breakpoints';
+import * as propTypesFromSrc from './src/prop-types';
 import * as typographyFromSrc from './src/typography';
 import * as scriptsFromSrc from './src/scripts';
 
@@ -37,6 +39,11 @@ const breakpointsExpectedExports = {
   GEL_GROUP_4_SCREEN_WIDTH_MAX: 'string',
   GEL_GROUP_5_SCREEN_WIDTH_MIN: 'string',
   MEDIA_QUERY_TYPOGRAPHY: 'object',
+};
+
+const propTypesExpectedExports = {
+  scriptPropType: 'object',
+  default: 'object',
 };
 
 const typographyExpectedExports = {
@@ -97,6 +104,7 @@ const scriptsExpectedExports = {
 const expectedExports = {
   spacings: spacingsExpectedExports,
   breakpoints: breakpointsExpectedExports,
+  propTypes: propTypesExpectedExports,
   typography: typographyExpectedExports,
   scripts: scriptsExpectedExports,
 };
@@ -104,6 +112,7 @@ const expectedExports = {
 const actualExports = {
   spacings,
   breakpoints,
+  propTypes,
   typography,
   scripts,
 };
@@ -111,6 +120,7 @@ const actualExports = {
 const actualExportsFromSrc = {
   spacings: spacingsFromSrc,
   breakpoints: breakpointsFromSrc,
+  propTypes: propTypesFromSrc,
   typography: typographyFromSrc,
   scripts: scriptsFromSrc,
 };
