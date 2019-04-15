@@ -11,7 +11,7 @@ const ampBoilerplateExpectedExports = {
 
 const svgsExpectedExports = {
   BBC_BLOCKS: 'string',
-  News: 'object',
+  news: 'object',
 };
 
 const expectedExports = {
