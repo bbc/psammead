@@ -2,6 +2,7 @@
 
 | Version | Description |
 |---------|-------------|
+| 0.1.8   || 
 | 0.1.7   | [PR#424](https://github.com/bbc/psammead/pull/424) Add Snyk badge to readme |
 | 0.1.6   | [PR#323](https://github.com/BBC/psammead/pull/323) Update readme storybook badge |
 | 0.1.5   | [PR#264](https://github.com/BBC/psammead/pull/319) Resolving package-lock issues. |
