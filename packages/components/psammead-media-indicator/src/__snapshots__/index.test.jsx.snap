@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MediaIndicator should render correctly 1`] = `
+.c0 {
+  padding: 0.5rem 0.25rem;
+  background-color: #FFFFFF;
+  display: inline-block;
+}
+
+.c1 {
+  vertical-align: middle;
+  margin: 0 0.25rem;
+}
+
+.c2 {
+  vertical-align: middle;
+  margin: 0 0.25rem;
+}
+
+<div
+  className="c0"
+>
+  <svg
+    className="c1"
+    height="12px"
+    viewBox="0 0 32 32"
+    width="12px"
+  >
+    <path
+      d="M3 32l26-16L3 0"
+    />
+  </svg>
+  <span
+    className="c2"
+  >
+    2:00
+  </span>
+</div>
+`;
