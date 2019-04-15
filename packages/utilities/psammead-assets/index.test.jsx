@@ -16,6 +16,7 @@ const svgsExpectedExports = {
   igbo: 'object',
   thai: 'object',
   pidgin: 'object',
+  getSVG: 'function',
 };
 
 const expectedExports = {
