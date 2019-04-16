@@ -30,23 +30,32 @@ storiesOf('Figure', module)
   )
   .add(
     'containing Image, ImagePlaceholder, Copyright and Caption',
-    inputProvider(
-      ['copyright offscreen text', 'caption', 'caption offscreen text'],
-      (copyrightOffscreen, caption, captionOffscreen) => (
-        <Figure>
-          <ImagePlaceholder ratio={imageRatio}>
-            <Image alt={imageAlt} src={imageSrc} width={imageWidth} />
-            <Copyright>
-              <VisuallyHiddenText>{copyrightOffscreen}</VisuallyHiddenText>
-              {text('copyright', 'Copyright', 'copyright')}
-            </Copyright>
-          </ImagePlaceholder>
-          <Caption>
-            <VisuallyHiddenText>{captionOffscreen}</VisuallyHiddenText>
-            {caption}
-          </Caption>
-        </Figure>
-      ),
-    ),
+    inputProvider(['caption'], caption => (
+      <Figure>
+        <ImagePlaceholder ratio={imageRatio}>
+          <Image alt={imageAlt} src={imageSrc} width={imageWidth} />
+          <Copyright>
+            <VisuallyHiddenText>
+              {text(
+                'visually hidden copyright',
+                'Image copyright, ',
+                'Visually Hidden Copyright',
+              )}
+            </VisuallyHiddenText>
+            {text('copyright', 'Copyright', 'Copyright')}
+          </Copyright>
+        </ImagePlaceholder>
+        <Caption>
+          <VisuallyHiddenText>
+            {text(
+              'visually hidden caption',
+              'Image caption, ',
+              'Visually Hidden Caption',
+            )}
+          </VisuallyHiddenText>
+          {caption}
+        </Caption>
+      </Figure>
+    )),
     { notes, knobs: { escapeHTML: false } },
   );
