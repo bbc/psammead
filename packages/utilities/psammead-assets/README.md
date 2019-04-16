@@ -31,7 +31,7 @@ import { AMP_SCRIPT } from '@bbc/psammead-assets/amp-boilerplate';
 | `viewbox` | object | Yes | N/A | `{ height: 24, width: 167.95 }` |
 | `ratio` | number | Yes | N/A | `6.9979` |
 
-The ratio is calculated as
+The height of your SVG can be calculated using your desired height multiplied by the `ratio` value provided above.
 
 ```js
 const ratio = svgWidth / svgHeight;
