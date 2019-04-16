@@ -18,7 +18,30 @@ npm install @bbc/psammead-assets --save
 import { BBC_BLOCKS, news} from '@bbc/psammead-assets/svgs';
 
 import { AMP_SCRIPT } from '@bbc/psammead-assets/amp-boilerplate';
+```
 
+## news
+
+`news` is an an object that contains an svg group, viewbox, ratio and height;
+
+<!-- prettier-ignore -->
+| Property   | Type   | Required | Default | Example                  |
+|------------|--------|----------|---------|--------------------------|
+| `group` | node | Yes | N/A | `<g fillrule="evenodd"><path d="M84.32" /></g>` |
+| `viewbox` | object | Yes | N/A | `{ height: 24, width: 167.95 }` |
+| `ratio` | number | Yes | N/A | `6.9979` |
+
+The ratio is calculated as
+
+```js
+const ratio = svgWidth / svgHeight;
+```
+## Usage
+
+```jsx
+const WrappingContainer = () => (
+  <svg viewBox={`0 0 ${news.viewbox.width} ${news.viewbox.height}`}>{news.group}</svg>
+);
 ```
 
 ## Contributing
