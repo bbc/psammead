@@ -12,7 +12,6 @@ const SectionTitle = styled.h2`
   ${props => getDoublePica(props.script)};
   color: ${C_EBON};
   font-family: ${GEL_FF_REITH_SANS};
-  flex-shrink: 1;
 
   html:not([dir='rtl']) & {
     margin-left: 8px;
@@ -32,12 +31,12 @@ const SectionRule = styled.div`
   height: 1px;
   border: none;
   flex-grow: 100;
-  margin: ${({ inline }) => (inline ? 'auto 8px' : '8px')};
+  margin: ${props => (props.inline ? 'auto 8px' : '8px')};
 `;
 
 const SectionDividerWrapper = styled.div`
-  ${({ inline }) =>
-    inline
+  ${props =>
+    props.inline
       ? `
         display: flex;
         flex-direction: row-reverse;
@@ -46,6 +45,7 @@ const SectionDividerWrapper = styled.div`
 `;
 
 const SectionDivider = ({ children, inline, script }) => (
+  // Only modify the Rule to account for an inline title if there is a title to render.
   <SectionDividerWrapper inline={inline && children}>
     <SectionRule inline={inline && children} />
     {children && <SectionTitle script={script}>{children}</SectionTitle>}

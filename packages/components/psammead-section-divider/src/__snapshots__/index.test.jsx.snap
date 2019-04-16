@@ -6,9 +6,6 @@ exports[`SectionDivider With inline title should render correctly 1`] = `
   line-height: 1.5rem;
   color: #222222;
   font-family: ReithSans,Helvetica,Arial,sans-serif;
-  -webkit-flex-shrink: 1;
-  -ms-flex-negative: 1;
-  flex-shrink: 1;
 }
 
 html:not([dir='rtl']) .c2 {
@@ -74,9 +71,6 @@ exports[`SectionDivider With inline title should render correctly with arabic sc
   line-height: 2rem;
   color: #222222;
   font-family: ReithSans,Helvetica,Arial,sans-serif;
-  -webkit-flex-shrink: 1;
-  -ms-flex-negative: 1;
-  flex-shrink: 1;
 }
 
 html:not([dir='rtl']) .c2 {
@@ -142,9 +136,6 @@ exports[`SectionDivider With title should render correctly 1`] = `
   line-height: 1.5rem;
   color: #222222;
   font-family: ReithSans,Helvetica,Arial,sans-serif;
-  -webkit-flex-shrink: 1;
-  -ms-flex-negative: 1;
-  flex-shrink: 1;
 }
 
 html:not([dir='rtl']) .c1 {
@@ -200,9 +191,6 @@ exports[`SectionDivider With title should render correctly with arabic script ty
   line-height: 2rem;
   color: #222222;
   font-family: ReithSans,Helvetica,Arial,sans-serif;
-  -webkit-flex-shrink: 1;
-  -ms-flex-negative: 1;
-  flex-shrink: 1;
 }
 
 html:not([dir='rtl']) .c1 {
@@ -270,5 +258,6 @@ exports[`SectionDivider Without title should render correctly 1`] = `
   <div
     className="c0"
   />
+  
 </div>
 `;
