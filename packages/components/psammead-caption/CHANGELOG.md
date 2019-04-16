@@ -3,7 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
-| 1.1.4 | [PR#446](https://github.com/bbc/psammead/pull/446) De-italicise text in italic tag |
+| 1.0.2 | [PR#446](https://github.com/bbc/psammead/pull/446) De-italicise text in italic tag |
 | 1.0.1 | [PR#424](https://github.com/bbc/psammead/pull/424) Add Snyk badge to readme |
 | 1.0.0 | [PR#413](https://github.com/bbc/psammead/pull/413) Add support for different scripts typographies |
 | 0.3.5 | [PR#377](https://github.com/bbc/psammead/pull/377) Add knobs addon using psammead-storybook-helpers |
