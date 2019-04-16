@@ -3,7 +3,9 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
-| 1.0.1   | [PR#428](https://github.com/bbc/psammead/pull/428) Add custom propTypes shape |
+| 1.1.2   | [PR#428](https://github.com/bbc/psammead/pull/428) Add custom propTypes shape |
+| 1.1.1   | [PR#412](https://github.com/bbc/psammead/pull/412) Make SubHeading padding-bottom 24px instead of 16px |
+| 1.1.0   | [PR#424](https://github.com/bbc/psammead/pull/424) Add Snyk badge to readme |
 | 1.0.0   | [PR#421](https://github.com/bbc/psammead/pull/421) Add support for different scripts typographies |
 | 0.4.3   | [PR#418](https://github.com/bbc/psammead/pull/418) Add language variants knob to Headings |
 | 0.4.2   | [PR#407](https://github.com/bbc/psammead/pull/407) Organise dependencies properly |

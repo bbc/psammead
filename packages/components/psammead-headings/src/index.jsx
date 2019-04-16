@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { shape } from 'prop-types';
 import { C_SHADOW } from '@bbc/psammead-styles/colours';
 import {
-  GEL_SPACING_DBL,
+  GEL_SPACING_TRPL,
   GEL_SPACING_QUAD,
 } from '@bbc/gel-foundations/spacings';
 import {
@@ -11,10 +11,7 @@ import {
   GEL_FF_REITH_SANS,
   GEL_FF_REITH_SERIF,
 } from '@bbc/gel-foundations/typography';
-import {
-  MEDIA_QUERY_TYPOGRAPHY,
-  GEL_GROUP_2_SCREEN_WIDTH_MIN,
-} from '@bbc/gel-foundations/breakpoints';
+import { MEDIA_QUERY_TYPOGRAPHY } from '@bbc/gel-foundations/breakpoints';
 import scriptPropTypes from '../../../models/propTypes/scripts';
 
 export const Headline = styled.h1`
@@ -40,8 +37,8 @@ export const SubHeading = styled.h2.attrs(({ text }) => ({
   color: ${C_SHADOW};
   font-family: ${GEL_FF_REITH_SANS};
   margin: 0; /* Reset */
-  padding: ${GEL_SPACING_DBL} 0;
-  @media (min-width: ${GEL_GROUP_2_SCREEN_WIDTH_MIN}) {
+  padding: ${GEL_SPACING_TRPL} 0;
+  ${MEDIA_QUERY_TYPOGRAPHY.LAPTOP_AND_LARGER} {
     padding-top: ${GEL_SPACING_QUAD};
   }
   font-weight: 700;
