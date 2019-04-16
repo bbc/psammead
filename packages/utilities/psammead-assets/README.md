@@ -22,7 +22,7 @@ import { AMP_SCRIPT } from '@bbc/psammead-assets/amp-boilerplate';
 
 ## news
 
-`news` is an an object that contains an svg group, viewbox, ratio and height;
+Service brand SVGs, like `news`, are objects that contains an svg group, viewbox, ratio and height;
 
 <!-- prettier-ignore -->
 | Property   | Type   | Required | Default | Example                  |
