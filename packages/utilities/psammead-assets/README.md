@@ -20,7 +20,7 @@ import { BBC_BLOCKS, news} from '@bbc/psammead-assets/svgs';
 import { AMP_SCRIPT } from '@bbc/psammead-assets/amp-boilerplate';
 ```
 
-## news
+## Service SVGs
 
 Service brand SVGs, like `news`, are objects that contains an svg group, viewbox, ratio and height;
 
