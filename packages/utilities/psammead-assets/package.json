@@ -25,6 +25,7 @@
   "devDependencies": {
     "@bbc/psammead-styles": "^0.3.3",
     "@bbc/psammead-test-helpers": "^0.3.0",
+    "prop-types": "^15.7.2",
     "react": "^16.6.3",
     "styled-components": "^4.1.3"
   },
