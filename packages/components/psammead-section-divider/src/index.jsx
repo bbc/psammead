@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { boolean, node, shape } from 'prop-types';
+import { boolean, shape, string } from 'prop-types';
 import { scriptPropTypes } from '@bbc/gel-foundations/prop-types';
 import {
   getDoublePica,
@@ -53,12 +53,12 @@ const SectionDivider = ({ children, inline, script }) => (
 );
 
 SectionDivider.defaultProps = {
-  children: null,
+  children: '',
   inline: false,
 };
 
 SectionDivider.propTypes = {
-  children: node,
+  children: string,
   inline: boolean,
   script: shape(scriptPropTypes).isRequired,
 };
