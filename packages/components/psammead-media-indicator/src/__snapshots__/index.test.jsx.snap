@@ -12,28 +12,19 @@ exports[`MediaIndicator should render correctly 1`] = `
   margin: 0 0.25rem;
 }
 
-.c2 {
-  vertical-align: middle;
-  margin: 0 0.25rem;
-}
-
 <div
   className="c0"
 >
   <svg
+    aria-hidden="true"
     className="c1"
     height="12px"
     viewBox="0 0 32 32"
     width="12px"
   >
-    <path
-      d="M3 32l26-16L3 0"
+    <polygon
+      points="3,32 29,16 3,0"
     />
   </svg>
-  <span
-    className="c2"
-  >
-    2:00
-  </span>
 </div>
 `;

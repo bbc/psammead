@@ -19,7 +19,7 @@
   "dependencies": {
     "@bbc/gel-foundations": "^0.3.0",
     "@bbc/psammead-styles": "^0.3.2",
-    "@bbc/psammead-visually-hidden-text": "^0.1.10"
+    "@bbc/psammead-visually-hidden-text": "^0.1.12"
   },
   "devDependencies": {
     "@bbc/psammead-test-helpers": "^0.3.3",
