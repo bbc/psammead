@@ -9,7 +9,6 @@ import { news, igbo, yoruba, thai, pidgin } from './svgs';
 
 const Svg = styled.svg`
   display: block;
-  margin-top: 1.25rem;
   fill: #fff;
 `;
 
@@ -61,7 +60,7 @@ getSVG.propTypes = {
 storiesOf('SVGs', module)
   .addDecorator(withKnobs)
   .add(
-    'default',
+    'news',
     () => {
       const height = numberKnob('Height', 24);
       const NewsSvg = getSVG({ ...news, height });
