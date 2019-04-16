@@ -11,55 +11,51 @@ exports[`SectionDivider With inline title should render correctly 1`] = `
   height: 1px;
   border: none;
   background: #BABABA;
-  left: 0px;
-  right: 0px;
-  top: 12px;
+  left: 0;
+  right: 0;
+  top: 0.8125rem;
 }
 
 .c1 {
-  position: relative;
-  display: inline;
-  background-color: #fff;
-}
-
-html:not([dir='rtl']) .c1 {
-  padding-right: 8px;
-}
-
-html[dir='rtl'] .c1 {
-  padding-left: 8px;
-}
-
-.c2 {
   font-size: 1.25rem;
   line-height: 1.5rem;
   color: #222222;
+  background-color: #FFFFFF;
   font-family: ReithSans,Helvetica,Arial,sans-serif;
   display: inline-block;
-  margin-top: 0px;
+  position: relative;
+  margin: 1px 0 0 0;
+}
+
+html:not([dir='rtl']) .c1 {
+  padding-right: 0.5rem;
+}
+
+html[dir='rtl'] .c1 {
+  padding-left: 0.5rem;
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
   .c0::before {
-    top: 12px;
+    top: 0.8125rem;
   }
 }
 
 @media (min-width:37.5rem) {
   .c0::before {
-    top: 14px;
+    top: 0.9375rem;
   }
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
-  .c2 {
+  .c1 {
     font-size: 1.25rem;
     line-height: 1.5rem;
   }
 }
 
 @media (min-width:37.5rem) {
-  .c2 {
+  .c1 {
     font-size: 1.5rem;
     line-height: 1.75rem;
   }
@@ -68,15 +64,11 @@ html[dir='rtl'] .c1 {
 <div
   className="c0"
 >
-  <div
+  <h2
     className="c1"
   >
-    <h2
-      className="c2"
-    >
-      This is text in a SectionDivider.
-    </h2>
-  </div>
+    This is text in a SectionDivider.
+  </h2>
 </div>
 `;
 
@@ -91,55 +83,51 @@ exports[`SectionDivider With inline title should render correctly with arabic sc
   height: 1px;
   border: none;
   background: #BABABA;
-  left: 0px;
-  right: 0px;
-  top: 16px;
+  left: 0;
+  right: 0;
+  top: 1.0625rem;
 }
 
 .c1 {
-  position: relative;
-  display: inline;
-  background-color: #fff;
-}
-
-html:not([dir='rtl']) .c1 {
-  padding-right: 8px;
-}
-
-html[dir='rtl'] .c1 {
-  padding-left: 8px;
-}
-
-.c2 {
   font-size: 1.5rem;
   line-height: 2rem;
   color: #222222;
+  background-color: #FFFFFF;
   font-family: ReithSans,Helvetica,Arial,sans-serif;
   display: inline-block;
-  margin-top: 0px;
+  position: relative;
+  margin: 1px 0 0 0;
+}
+
+html:not([dir='rtl']) .c1 {
+  padding-right: 0.5rem;
+}
+
+html[dir='rtl'] .c1 {
+  padding-left: 0.5rem;
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
   .c0::before {
-    top: 14px;
+    top: 0.9375rem;
   }
 }
 
 @media (min-width:37.5rem) {
   .c0::before {
-    top: 14px;
+    top: 0.9375rem;
   }
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
-  .c2 {
+  .c1 {
     font-size: 1.5rem;
     line-height: 1.75rem;
   }
 }
 
 @media (min-width:37.5rem) {
-  .c2 {
+  .c1 {
     font-size: 1.5rem;
     line-height: 1.75rem;
   }
@@ -148,15 +136,11 @@ html[dir='rtl'] .c1 {
 <div
   className="c0"
 >
-  <div
+  <h2
     className="c1"
   >
-    <h2
-      className="c2"
-    >
-      بعض محتوى النص
-    </h2>
-  </div>
+    بعض محتوى النص
+  </h2>
 </div>
 `;
 
@@ -171,43 +155,39 @@ exports[`SectionDivider With title should render correctly 1`] = `
   height: 1px;
   border: none;
   background: #BABABA;
-  left: 0px;
-  right: 0px;
-  top: 0px;
+  left: 0;
+  right: 0;
+  top: 0;
 }
 
 .c1 {
-  position: relative;
-  display: inline;
-  background-color: #fff;
-}
-
-html:not([dir='rtl']) .c1 {
-  padding-right: 8px;
-}
-
-html[dir='rtl'] .c1 {
-  padding-left: 8px;
-}
-
-.c2 {
   font-size: 1.25rem;
   line-height: 1.5rem;
   color: #222222;
+  background-color: #FFFFFF;
   font-family: ReithSans,Helvetica,Arial,sans-serif;
   display: inline-block;
-  margin-top: 0px;
+  position: relative;
+  margin: 1px 0 0 0;
+}
+
+html:not([dir='rtl']) .c1 {
+  padding-right: 0.5rem;
+}
+
+html[dir='rtl'] .c1 {
+  padding-left: 0.5rem;
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
-  .c2 {
+  .c1 {
     font-size: 1.25rem;
     line-height: 1.5rem;
   }
 }
 
 @media (min-width:37.5rem) {
-  .c2 {
+  .c1 {
     font-size: 1.5rem;
     line-height: 1.75rem;
   }
@@ -216,15 +196,11 @@ html[dir='rtl'] .c1 {
 <div
   className="c0"
 >
-  <div
+  <h2
     className="c1"
   >
-    <h2
-      className="c2"
-    >
-      This is text in a SectionDivider.
-    </h2>
-  </div>
+    This is text in a SectionDivider.
+  </h2>
 </div>
 `;
 
@@ -239,43 +215,39 @@ exports[`SectionDivider With title should render correctly with arabic script ty
   height: 1px;
   border: none;
   background: #BABABA;
-  left: 0px;
-  right: 0px;
-  top: 0px;
+  left: 0;
+  right: 0;
+  top: 0;
 }
 
 .c1 {
-  position: relative;
-  display: inline;
-  background-color: #fff;
-}
-
-html:not([dir='rtl']) .c1 {
-  padding-right: 8px;
-}
-
-html[dir='rtl'] .c1 {
-  padding-left: 8px;
-}
-
-.c2 {
   font-size: 1.5rem;
   line-height: 2rem;
   color: #222222;
+  background-color: #FFFFFF;
   font-family: ReithSans,Helvetica,Arial,sans-serif;
   display: inline-block;
-  margin-top: 0px;
+  position: relative;
+  margin: 1px 0 0 0;
+}
+
+html:not([dir='rtl']) .c1 {
+  padding-right: 0.5rem;
+}
+
+html[dir='rtl'] .c1 {
+  padding-left: 0.5rem;
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
-  .c2 {
+  .c1 {
     font-size: 1.5rem;
     line-height: 1.75rem;
   }
 }
 
 @media (min-width:37.5rem) {
-  .c2 {
+  .c1 {
     font-size: 1.5rem;
     line-height: 1.75rem;
   }
@@ -284,15 +256,11 @@ html[dir='rtl'] .c1 {
 <div
   className="c0"
 >
-  <div
+  <h2
     className="c1"
   >
-    <h2
-      className="c2"
-    >
-      بعض محتوى النص
-    </h2>
-  </div>
+    بعض محتوى النص
+  </h2>
 </div>
 `;
 
@@ -307,32 +275,14 @@ exports[`SectionDivider Without title should render correctly 1`] = `
   height: 1px;
   border: none;
   background: #BABABA;
-  left: 0px;
-  right: 0px;
-  top: 0px;
-}
-
-.c1 {
-  position: relative;
-  display: inline;
-  background-color: #fff;
-}
-
-html:not([dir='rtl']) .c1 {
-  padding-right: 8px;
-}
-
-html[dir='rtl'] .c1 {
-  padding-left: 8px;
+  left: 0;
+  right: 0;
+  top: 0;
 }
 
 <div
   className="c0"
 >
-  <div
-    className="c1"
-  >
-    
-  </div>
+  
 </div>
 `;
