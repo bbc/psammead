@@ -12,7 +12,7 @@ import {
   GEL_FF_REITH_SERIF,
 } from '@bbc/gel-foundations/typography';
 import { MEDIA_QUERY_TYPOGRAPHY } from '@bbc/gel-foundations/breakpoints';
-import scriptPropTypes from '../../../models/propTypes/scripts';
+import { scriptPropType } from '@bbc/gel-foundations/prop-types';
 
 export const Headline = styled.h1`
   ${props => (props.script ? getCanon(props.script) : '')};
@@ -45,9 +45,9 @@ export const SubHeading = styled.h2.attrs(({ text }) => ({
 `;
 
 Headline.propTypes = {
-  script: shape(scriptPropTypes).isRequired,
+  script: shape(scriptPropType).isRequired,
 };
 
 SubHeading.propTypes = {
-  script: shape(scriptPropTypes).isRequired,
+  script: shape(scriptPropType).isRequired,
 };
