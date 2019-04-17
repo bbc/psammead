@@ -52,7 +52,7 @@ export const Heading = styled.h3`
   margin-top: 0;
 `;
 
-export const StoryPromo = ({ image, text }) => (
+const StoryPromo = ({ image, text }) => (
   <StoryPromoWrapper>
     <ImageGridItem>{image}</ImageGridItem>
     <TextGridItem>{text}</TextGridItem>
@@ -60,12 +60,8 @@ export const StoryPromo = ({ image, text }) => (
 );
 
 StoryPromo.propTypes = {
-  image: node,
+  image: node.isRequired,
   text: node.isRequired,
-};
-
-StoryPromo.defaultProps = {
-  image: null,
 };
 
 export default StoryPromo;
