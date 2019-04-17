@@ -13,7 +13,7 @@ const Svg = styled.svg`
 `;
 
 const Container = styled.div`
-  background: ${C_POSTBOX};
+  background-color: black;
   padding: 1rem;
   height: 100vh;
 `;
