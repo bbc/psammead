@@ -1,0 +1,101 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`StoryPromo should render correctly 1`] = `
+.c3 {
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  -webkit-clip: rect(1px,1px,1px,1px);
+  clip: rect(1px,1px,1px,1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  width: 1px;
+}
+
+.c0 {
+  padding: 0.5rem 0.25rem;
+  background-color: #FFFFFF;
+  display: inline-block;
+  font-family: ReithSans,Helvetica,Arial,sans-serif;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  color: #222222;
+}
+
+.c1 {
+  vertical-align: middle;
+  margin: 0 0.25rem;
+  fill: #222222;
+}
+
+.c2 {
+  vertical-align: middle;
+  margin: 0 0.25rem;
+}
+
+<div
+  className="c0"
+>
+  <svg
+    aria-hidden="true"
+    className="c1"
+    focusable="false"
+    height="12px"
+    viewBox="0 0 32 32"
+    width="12px"
+  >
+    <polygon
+      points="3,32 29,16 3,0"
+    />
+  </svg>
+  <time
+    className="c2"
+  >
+    <span
+      className="c3"
+    >
+      Video 2 minutes 15 seconds
+    </span>
+    <span
+      aria-hidden="true"
+    >
+      2:15
+    </span>
+  </time>
+</div>
+`;
+
+exports[`StoryPromo should render correctly without duration details 1`] = `
+.c0 {
+  padding: 0.5rem 0.25rem;
+  background-color: #FFFFFF;
+  display: inline-block;
+  font-family: ReithSans,Helvetica,Arial,sans-serif;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  color: #222222;
+}
+
+.c1 {
+  vertical-align: middle;
+  margin: 0 0.25rem;
+  fill: #222222;
+}
+
+<div
+  className="c0"
+>
+  <svg
+    aria-hidden="true"
+    className="c1"
+    focusable="false"
+    height="12px"
+    viewBox="0 0 32 32"
+    width="12px"
+  >
+    <polygon
+      points="3,32 29,16 3,0"
+    />
+  </svg>
+</div>
+`;
