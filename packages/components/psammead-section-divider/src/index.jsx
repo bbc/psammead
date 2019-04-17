@@ -10,25 +10,24 @@ import {
 } from '@bbc/gel-foundations/typography';
 import { C_CLOUD_LIGHT, C_EBON, C_WHITE } from '@bbc/psammead-styles/colours';
 
-const TOP_MARGIN_PX = 1;
+const MARGIN_TOP_PX = 1;
 
-const calcTop = ({ inline, script }) =>
-  inline
-    ? `
-      // place at middle of text line height
-      top: ${(script.doublePica.groupA.lineHeight / 2 + TOP_MARGIN_PX) / 16}rem;
+const halfLineHeightRem = group => (group.lineHeight / 2 + MARGIN_TOP_PX) / 16;
 
-      ${MEDIA_QUERY_TYPOGRAPHY.SMART_PHONE_ONLY} {
-        top: ${(script.doublePica.groupB.lineHeight / 2 + TOP_MARGIN_PX) /
-          16}rem;
-      }
+const inlineTop = script => `
+  // place at middle of text line height
+  top: ${halfLineHeightRem(script.doublePica.groupA)}rem;
 
-      ${MEDIA_QUERY_TYPOGRAPHY.LAPTOP_AND_LARGER} {
-        top: ${(script.doublePica.groupD.lineHeight / 2 + TOP_MARGIN_PX) /
-          16}rem;
-      }
-    `
-    : 'top: 0;';
+  ${MEDIA_QUERY_TYPOGRAPHY.SMART_PHONE_ONLY} {
+    top: ${halfLineHeightRem(script.doublePica.groupB)}rem;
+  }
+
+  ${MEDIA_QUERY_TYPOGRAPHY.LAPTOP_AND_LARGER} {
+    top: ${halfLineHeightRem(script.doublePica.groupD)}rem;
+  }
+`;
+
+const calcTop = ({ inline, script }) => (inline ? inlineTop(script) : 'top: 0');
 
 const SectionDividerWrapper = styled.div`
   position: relative;
@@ -51,7 +50,7 @@ const SectionTitle = styled.h2`
   font-family: ${GEL_FF_REITH_SANS};
   display: inline-block;
   position: relative;
-  margin: ${TOP_MARGIN_PX}px 0 0 0;
+  margin: ${MARGIN_TOP_PX}px 0 0 0;
 
   html:not([dir='rtl']) & {
     padding-right: ${GEL_SPACING};
