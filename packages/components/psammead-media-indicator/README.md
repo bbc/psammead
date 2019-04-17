@@ -2,7 +2,7 @@
 
 ## Description
 
-The `MediaIndicator` component provides an 'play' icon as well as a duration timestamp.
+The `MediaIndicator` component provides an 'play' icon as well as a duration timestamp. This component supports both providing and not providing a duration and if one isn't provided, it will simply render the play icon. Alt text is required in all scenarios, however this can just be `Video` if the duration is not known. 
 
 ## Installation
 
@@ -10,9 +10,11 @@ The `MediaIndicator` component provides an 'play' icon as well as a duration tim
 
 ## Props
 
-| Argument  | Type   | Required | Default | Example |
-| --------- | ------ | -------- | ------- | ------- |
-| duration  | string | No       | Null    | '2:15'  |
+| Argument      | Type   | Required | Default | Example                      |
+| ------------- | ------ | -------- | ------- | ---------------------------- |
+| duration      | string | No       | Null    | '2:15'                       |
+| datetime      | string | No       | Null    | 'PT2M15S'                    |
+| offscreenText | string | Yes      | N/A     | 'Video 2 minutes 15 seconds' |
 
 ## Usage
 
@@ -32,7 +34,7 @@ The `MediaIndicator` component is designed to be used on top of an image which i
 
 ### Accessibility notes
 
-- TODO
+This component uses full semantic markup, including visually hidden text and aria labels, to ensure its as accessible as possible. The SVG is aria hidden and not focusable and the time duration appears to screen readers as a long string, such as "Video 2 minutes 15 seconds", to ensure the user has the full context of what it's referring to.
 
 <!-- ## Roadmap -->
 

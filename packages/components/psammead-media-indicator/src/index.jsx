@@ -1,18 +1,17 @@
 import React from 'react';
 import styled from 'styled-components';
-import { string, shape } from 'prop-types';
+import { string } from 'prop-types';
 import { C_WHITE, C_EBON } from '@bbc/psammead-styles/colours';
 import VisuallyHiddenText from '@bbc/psammead-visually-hidden-text';
 import { GEL_SPACING, GEL_SPACING_HLF } from '@bbc/gel-foundations/spacings';
-import { getMinion, GEL_FF_REITH_SANS } from '@bbc/gel-foundations/typography';
-import { scriptPropType } from '@bbc/gel-foundations/prop-types';
+import { GEL_MINION, GEL_FF_REITH_SANS } from '@bbc/gel-foundations/typography';
 
 const MediaIndicatorWrapper = styled.div`
   padding: ${GEL_SPACING} ${GEL_SPACING_HLF};
   background-color: ${C_WHITE};
   display: inline-block;
   font-family: ${GEL_FF_REITH_SANS};
-  ${props => getMinion(props.script)};
+  ${GEL_MINION};
   color: ${C_EBON};
 `;
 
@@ -27,8 +26,8 @@ const TimeDuration = styled.time`
   margin: 0 ${GEL_SPACING_HLF};
 `;
 
-const MediaIndicator = ({ datetime, duration, offscreenText, script }) => (
-  <MediaIndicatorWrapper script={script}>
+const MediaIndicator = ({ datetime, duration, offscreenText }) => (
+  <MediaIndicatorWrapper>
     <PlayIcon
       aria-hidden="true"
       viewBox="0 0 32 32"
@@ -50,14 +49,12 @@ const MediaIndicator = ({ datetime, duration, offscreenText, script }) => (
 MediaIndicator.propTypes = {
   datetime: string,
   duration: string,
-  offscreenText: string,
-  script: shape(scriptPropType).isRequired,
+  offscreenText: string.isRequired,
 };
 
 MediaIndicator.defaultProps = {
   datetime: null,
   duration: null,
-  offscreenText: null,
 };
 
 export default MediaIndicator;
