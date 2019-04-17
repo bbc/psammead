@@ -23,7 +23,11 @@ The typical use-case of this component is ontop of images within promos for arti
 ```jsx
 import MediaIndicator from '@bbc/psammead-media-indicator';
 
-<MediaIndicator duration="2:15" />
+<MediaIndicator
+  duration="2:15"
+  datetime="PT2M15S"
+  offscreenText="Video 2 minutes 15 seconds"
+/>
 ```
 
 ### When to use this component
