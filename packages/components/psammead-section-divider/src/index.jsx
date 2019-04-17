@@ -21,9 +21,10 @@ import {
   C_WHITE, // #FFFFFF
 } from '@bbc/psammead-styles/colours';
 
-const MARGIN_TOP_REM = 1.25;
+const MARGIN_TOP_PX = 1;
+const MARGIN_TOP_REM_DANGLING = 1.25;
 
-const halfLineHeightRem = group => group.lineHeight / 2 / 16 + MARGIN_TOP_REM;
+const halfLineHeightRem = group => (group.lineHeight / 2 + MARGIN_TOP_PX) / 16;
 
 const top = script => `
   // place at middle of text line height
@@ -63,7 +64,7 @@ const SectionTitle = styled.h2`
   font-family: ${GEL_FF_REITH_SANS};
   display: inline-block;
   position: relative;
-  margin: ${MARGIN_TOP_REM}rem 0 0 0;
+  margin: ${MARGIN_TOP_PX}px 0 0 0;
 
   html:not([dir='rtl']) & {
     padding-right: ${GEL_SPACING};
@@ -82,6 +83,10 @@ const SectionTitle = styled.h2`
       padding-left: ${GEL_SPACING_DBL};
     }
   }
+
+  @media (min-width: ${GEL_GROUP_5_SCREEN_WIDTH_MIN}) {
+    margin-top: ${MARGIN_TOP_REM_DANGLING}rem;
+  }
 `;
 
 SectionTitle.propTypes = {
@@ -97,11 +102,12 @@ const SectionDivider = ({ children: text, script }) => (
 
 SectionDivider.defaultProps = {
   children: '',
+  script: undefined,
 };
 
 SectionDivider.propTypes = {
   children: string,
-  script: shape(scriptPropType).isRequired,
+  script: shape(scriptPropType),
 };
 
 export default SectionDivider;

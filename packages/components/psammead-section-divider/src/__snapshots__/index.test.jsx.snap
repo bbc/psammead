@@ -13,7 +13,7 @@ exports[`SectionDivider With title should render correctly 1`] = `
   background: #BABABA;
   left: 0;
   right: 0;
-  top: 2rem;
+  top: 0.8125rem;
 }
 
 .c1 {
@@ -24,7 +24,7 @@ exports[`SectionDivider With title should render correctly 1`] = `
   font-family: ReithSans,Helvetica,Arial,sans-serif;
   display: inline-block;
   position: relative;
-  margin: 1.25rem 0 0 0;
+  margin: 1px 0 0 0;
 }
 
 html:not([dir='rtl']) .c1 {
@@ -37,13 +37,13 @@ html[dir='rtl'] .c1 {
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
   .c0::before {
-    top: 2rem;
+    top: 0.8125rem;
   }
 }
 
 @media (min-width:37.5rem) {
   .c0::before {
-    top: 2.125rem;
+    top: 0.9375rem;
   }
 }
 
@@ -77,6 +77,12 @@ html[dir='rtl'] .c1 {
   }
 }
 
+@media (min-width:80rem) {
+  .c1 {
+    margin-top: 1.25rem;
+  }
+}
+
 <div
   className="c0"
 >
@@ -101,7 +107,7 @@ exports[`SectionDivider With title should render correctly with arabic script ty
   background: #BABABA;
   left: 0;
   right: 0;
-  top: 2.25rem;
+  top: 1.0625rem;
 }
 
 .c1 {
@@ -112,7 +118,7 @@ exports[`SectionDivider With title should render correctly with arabic script ty
   font-family: ReithSans,Helvetica,Arial,sans-serif;
   display: inline-block;
   position: relative;
-  margin: 1.25rem 0 0 0;
+  margin: 1px 0 0 0;
 }
 
 html:not([dir='rtl']) .c1 {
@@ -125,13 +131,13 @@ html[dir='rtl'] .c1 {
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
   .c0::before {
-    top: 2.125rem;
+    top: 0.9375rem;
   }
 }
 
 @media (min-width:37.5rem) {
   .c0::before {
-    top: 2.125rem;
+    top: 0.9375rem;
   }
 }
 
@@ -162,6 +168,12 @@ html[dir='rtl'] .c1 {
 
   html[dir='rtl'] .c1 {
     padding-left: 1rem;
+  }
+}
+
+@media (min-width:80rem) {
+  .c1 {
+    margin-top: 1.25rem;
   }
 }
 
