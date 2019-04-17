@@ -2,7 +2,6 @@ import React from 'react';
 import styled from 'styled-components';
 import { node, number, shape } from 'prop-types';
 import { storiesOf } from '@storybook/react';
-import { C_POSTBOX } from '@bbc/psammead-styles/colours';
 import { number as numberKnob, withKnobs } from '@storybook/addon-knobs';
 import notes from '../README.md';
 import { news, igbo, yoruba, thai, pidgin } from './svgs';
