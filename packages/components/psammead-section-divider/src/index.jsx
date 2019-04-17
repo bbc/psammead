@@ -1,20 +1,31 @@
 import React from 'react';
 import styled from 'styled-components';
-import { boolean, shape, string } from 'prop-types';
+import { shape, string } from 'prop-types';
 import { scriptPropType } from '@bbc/gel-foundations/prop-types';
-import { MEDIA_QUERY_TYPOGRAPHY } from '@bbc/gel-foundations/breakpoints';
-import { GEL_SPACING } from '@bbc/gel-foundations/spacings';
+import {
+  GEL_GROUP_3_SCREEN_WIDTH_MIN, // 600px
+  GEL_GROUP_5_SCREEN_WIDTH_MIN, // 1280px
+  MEDIA_QUERY_TYPOGRAPHY,
+} from '@bbc/gel-foundations/breakpoints';
+import {
+  GEL_SPACING, // 8px
+  GEL_SPACING_DBL, // 16px
+} from '@bbc/gel-foundations/spacings';
 import {
   getDoublePica,
   GEL_FF_REITH_SANS,
 } from '@bbc/gel-foundations/typography';
-import { C_CLOUD_LIGHT, C_EBON, C_WHITE } from '@bbc/psammead-styles/colours';
+import {
+  C_CLOUD_LIGHT, // #BABABA
+  C_EBON, // #222222
+  C_WHITE, // #FFFFFF
+} from '@bbc/psammead-styles/colours';
 
-const MARGIN_TOP_PX = 1;
+const MARGIN_TOP_REM = 1.25;
 
-const halfLineHeightRem = group => (group.lineHeight / 2 + MARGIN_TOP_PX) / 16;
+const halfLineHeightRem = group => group.lineHeight / 2 / 16 + MARGIN_TOP_REM;
 
-const inlineTop = script => `
+const top = script => `
   // place at middle of text line height
   top: ${halfLineHeightRem(script.doublePica.groupA)}rem;
 
@@ -25,9 +36,11 @@ const inlineTop = script => `
   ${MEDIA_QUERY_TYPOGRAPHY.LAPTOP_AND_LARGER} {
     top: ${halfLineHeightRem(script.doublePica.groupD)}rem;
   }
-`;
 
-const calcTop = ({ inline, script }) => (inline ? inlineTop(script) : 'top: 0');
+  @media (min-width: ${GEL_GROUP_5_SCREEN_WIDTH_MIN}) {
+    top: 0;
+  }
+`;
 
 const SectionDividerWrapper = styled.div`
   position: relative;
@@ -39,18 +52,18 @@ const SectionDividerWrapper = styled.div`
     background: ${C_CLOUD_LIGHT};
     left: 0;
     right: 0;
-    ${calcTop};
+    ${({ script }) => (script ? top(script) : 'top: 0')};
   }
 `;
 
 const SectionTitle = styled.h2`
-  ${props => getDoublePica(props.script)};
+  ${({ script }) => script && getDoublePica(script)};
   color: ${C_EBON};
   background-color: ${C_WHITE};
   font-family: ${GEL_FF_REITH_SANS};
   display: inline-block;
   position: relative;
-  margin: ${MARGIN_TOP_PX}px 0 0 0;
+  margin: ${MARGIN_TOP_REM}rem 0 0 0;
 
   html:not([dir='rtl']) & {
     padding-right: ${GEL_SPACING};
@@ -59,27 +72,35 @@ const SectionTitle = styled.h2`
   html[dir='rtl'] & {
     padding-left: ${GEL_SPACING};
   }
+
+  @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
+    html:not([dir='rtl']) & {
+      padding-right: ${GEL_SPACING_DBL};
+    }
+
+    html[dir='rtl'] & {
+      padding-left: ${GEL_SPACING_DBL};
+    }
+  }
 `;
 
 SectionTitle.propTypes = {
   script: shape(scriptPropType).isRequired,
 };
 
-const SectionDivider = ({ children: text, inline, script }) => (
+const SectionDivider = ({ children: text, script }) => (
   // Only modify the Divider to account for an inline title if there is a title to render.
-  <SectionDividerWrapper inline={inline && text} script={script}>
+  <SectionDividerWrapper script={text && script}>
     {text && <SectionTitle script={script}>{text}</SectionTitle>}
   </SectionDividerWrapper>
 );
 
 SectionDivider.defaultProps = {
   children: '',
-  inline: false,
 };
 
 SectionDivider.propTypes = {
   children: string,
-  inline: boolean,
   script: shape(scriptPropType).isRequired,
 };
 

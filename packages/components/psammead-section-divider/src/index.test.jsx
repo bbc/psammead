@@ -18,22 +18,6 @@ describe('SectionDivider', () => {
     );
   });
 
-  describe('With inline title', () => {
-    shouldMatchSnapshot(
-      'should render correctly',
-      <SectionDivider script={latin} inline>
-        This is text in a SectionDivider.
-      </SectionDivider>,
-    );
-
-    shouldMatchSnapshot(
-      'should render correctly with arabic script typography values',
-      <SectionDivider script={arabic} inline>
-        بعض محتوى النص
-      </SectionDivider>,
-    );
-  });
-
   describe('Without title', () => {
     shouldMatchSnapshot('should render correctly', <SectionDivider />);
   });
