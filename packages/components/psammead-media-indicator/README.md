@@ -2,7 +2,7 @@
 
 ## Description
 
-The `MediaIndicator` component provides an 'play' icon as well as a duration timestamp. This component supports both providing and not providing a duration and if one isn't provided, it will simply render the play icon. Alt text is required in all scenarios, however this can just be `Video` if the duration is not known. 
+The `MediaIndicator` component provides an 'play' icon as well as a duration timestamp. This component supports both providing and not providing a duration and if one isn't provided, it will simply render the play icon. Alt text is required in all scenarios, however this can just be `'Video'` if the duration is not known. 
 
 ## Installation
 
