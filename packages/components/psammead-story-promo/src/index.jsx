@@ -57,10 +57,6 @@ export const Headline = styled.h3`
   padding-bottom: ${GEL_SPACING};
   font-weight: 700;
 
-  @media (min-width: ${GEL_GROUP_5_SCREEN_WIDTH_MIN}) {
-    grid-template-columns: repeat(12, 1fr);
-  }
-
   @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
     ${props => (props.script ? getGreatPrimer(props.script) : '')};
   }

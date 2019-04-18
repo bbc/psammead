@@ -72,12 +72,6 @@ exports[`StoryPromo should render correctly 1`] = `
   }
 }
 
-@media (min-width:80rem) {
-  .c3 {
-    grid-template-columns: repeat(12,1fr);
-  }
-}
-
 @media (min-width:37.5rem) {
   .c3 {
     font-size: 1.125rem;
