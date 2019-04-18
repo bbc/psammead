@@ -2,7 +2,7 @@
 
 ## Description
 
-The `Brand` component provides the BBC service logo (as SVG), nested inside a styled span, link and div. The link is currently hardcoded to "https://www.bbc.co.uk/news". `Brand` takes a `brandName` and an `svg` as props. The BBC News logo svg is the default logo and can be changed by providing a different service `svg`. `brandName` is passed to a [VisuallyHiddenText](https://github.com/bbc/psammead/tree/latest/packages/components/VisuallyHiddenText) component, nested inside Brand. Note that this does not currently affect the branding itself, which always renders as `BBC NEWS`. `svg` is passed to an svg container inside the `Brand`.
+The `Brand` component provides the BBC service logo (as SVG), nested inside a styled span, link and div. The link is currently hardcoded to "https://www.bbc.co.uk/news". `Brand` takes a `brandName` and an `svg` as prop. `brandName` is passed to a [VisuallyHiddenText](https://github.com/bbc/psammead/tree/latest/packages/components/VisuallyHiddenText) component, nested inside Brand. Note that this does not currently affect the branding itself, which always renders as `BBC NEWS`. `svg` is passed to an svg container inside the `Brand`.
 
 ## Installation
 
@@ -13,7 +13,7 @@ The `Brand` component provides the BBC service logo (as SVG), nested inside a st
 | Argument  | Type   | Required | Default | Example      |
 | --------- | ------ | -------- | ------- | ------------ |
 | brandName | String | yes      | N/A     | `'BBC News'` |
-| svg | Object | no       |  |{ group: `(<g fillrule="evenodd"><path d="M84.32" /></g>)`, viewbox: { height: 24, width: 167.95 } }|
+| svg | Object | yes | N/A | { group: `(<g fillrule="evenodd"><path d="M84.32" /></g>)`, viewbox: { height: 24, width: 167.95 } } |
 
 ## Usage
 

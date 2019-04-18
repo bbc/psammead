@@ -2,7 +2,6 @@ import React from 'react';
 import styled, { css } from 'styled-components';
 import { string, number, node, shape } from 'prop-types';
 import { C_POSTBOX, C_WHITE } from '@bbc/psammead-styles/colours';
-import { news } from '@bbc/psammead-assets/svgs';
 import VisuallyHiddenText from '@bbc/psammead-visually-hidden-text';
 import {
   GEL_GROUP_2_SCREEN_WIDTH_MIN,
@@ -94,10 +93,6 @@ const Brand = ({ brandName, svg }) => (
   </StyledWrapper>
 );
 
-Brand.defaultProps = {
-  svg: news,
-};
-
 Brand.propTypes = {
   brandName: string.isRequired,
   svg: shape({
@@ -107,7 +102,7 @@ Brand.propTypes = {
       height: number,
       width: number,
     }),
-  }),
+  }).isRequired,
 };
 
 export default Brand;

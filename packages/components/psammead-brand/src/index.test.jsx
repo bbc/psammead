@@ -5,8 +5,8 @@ import Brand from './index';
 
 describe('Brand', () => {
   shouldMatchSnapshot(
-    'should render correctly with default News service svg',
-    <Brand brandName="Default Brand Name" />,
+    'should render correctly with News svg',
+    <Brand brandName="Default Brand Name" svg={svgs.news} />,
   );
   shouldMatchSnapshot(
     'should render correctly with Igbo service svg',
