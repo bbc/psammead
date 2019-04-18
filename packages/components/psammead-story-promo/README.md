@@ -66,7 +66,10 @@ This component uses full semantic markup for the `Headline` and `Summary`, using
 
 ## Roadmap
 
-- Hover and focus states will be added
+This component will soon be integrated on to add support for additional UX and product requirements such as;
+
+- Hover and focus states
+- Logic to toggle a 'Top Story' mode which has greater text size and a vertically stacked design
 
 ## Contributing
 
