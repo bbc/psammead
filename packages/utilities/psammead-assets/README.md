@@ -12,13 +12,35 @@ This package provides a collection of common assets that are likely to be requir
 ```jsx
 npm install @bbc/psammead-assets --save
 ```
+## Usage
+
+```jsx
+import { BBC_BLOCKS, news} from '@bbc/psammead-assets/svgs';
+
+import { AMP_SCRIPT } from '@bbc/psammead-assets/amp-boilerplate';
+```
+
+## Service SVGs
+
+Service brand SVGs, like `news`, are objects that contains an svg group, viewbox, ratio and height;
+
+This package currently has brand SVGs for the BBC services `igbo`, `news`, `pidgin`, `thai` and `yoruba`.
+
+<!-- prettier-ignore -->
+| Property   | Type   | Required | Default | Example                  |
+|------------|--------|----------|---------|--------------------------|
+| `group` | node | Yes | N/A | `<g fillrule="evenodd"><path d="M84.32" /></g>` |
+| `viewbox` | object | Yes | N/A | `{ height: 24, width: 167.95 }` |
+| `ratio` | number | Yes | N/A | `6.9979` |
+
+The width of your SVG can be calculated using your desired height multiplied by the `ratio` value provided above.
 
 ## Usage
 
 ```jsx
-import { BBC_BLOCKS } from '@bbc/psammead-assets/svgs';
-
-import { AMP_SCRIPT } from '@bbc/psammead-assets/amp-boilerplate';
+const WrappingContainer = () => (
+  <svg viewBox={`0 0 ${news.viewbox.width} ${news.viewbox.height}`}>{news.group}</svg>
+);
 ```
 
 ## Contributing
