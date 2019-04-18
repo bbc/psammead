@@ -26,10 +26,10 @@ const Text = (
         'This little piggy went to market, This little piggy stayed at home',
       )}
     </Heading>
-    <Paragraph>
+    <Paragraph script={latin}>
       {text(
         'Paragraph',
-        'Yesterday 1 little piggy, George Ham, went to the market and was never the same.',
+        'Yesterday one little piggy, George Ham, went to the market and was never the same.',
       )}
     </Paragraph>
     <Timestamp datetime={text('Timestamp datetime', '2019-03-01T14:00+00:00')}>

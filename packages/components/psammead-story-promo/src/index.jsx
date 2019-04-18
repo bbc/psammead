@@ -11,11 +11,13 @@ import {
   GEL_GROUP_5_SCREEN_WIDTH_MIN,
 } from '@bbc/gel-foundations/breakpoints';
 import {
-  getParagon,
+  getGreatPrimer,
+  getPica,
+  getLongPrimer,
   GEL_FF_REITH_SERIF,
+  GEL_FF_REITH_SANS,
 } from '@bbc/gel-foundations/typography';
 import { C_SHADOW } from '@bbc/psammead-styles/colours';
-import PsammeadParagraph from '@bbc/psammead-paragraph';
 
 const StoryPromoWrapper = styled.div`
   display: grid;
@@ -48,15 +50,27 @@ const TextGridItem = styled.div`
 `;
 
 export const Heading = styled.h3`
-  ${props => (props.script ? getParagon(props.script) : '')};
+  ${props => (props.script ? getPica(props.script) : '')};
   color: ${C_SHADOW};
   font-family: ${GEL_FF_REITH_SERIF};
   margin: 0; /* Reset */
   padding-bottom: ${GEL_SPACING};
   font-weight: 700;
+
+  @media (min-width: ${GEL_GROUP_5_SCREEN_WIDTH_MIN}) {
+    grid-template-columns: repeat(12, 1fr);
+  }
+
+  @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
+    ${props => (props.script ? getGreatPrimer(props.script) : '')};
+  }
 `;
 
-export const Paragraph = styled(PsammeadParagraph)`
+export const Paragraph = styled.p`
+  ${props => (props.script ? getLongPrimer(props.script) : '')};
+  color: ${C_SHADOW};
+  font-family: ${GEL_FF_REITH_SANS};
+  margin: 0; /* Reset */
   padding-bottom: ${GEL_SPACING};
 `;
 
