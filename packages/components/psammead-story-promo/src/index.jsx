@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { node } from 'prop-types';
 import {
+  GEL_SPACING,
   GEL_GUTTER_BELOW_600PX,
   GEL_GUTTER_ABOVE_600PX,
 } from '@bbc/gel-foundations/spacings';
@@ -10,10 +11,11 @@ import {
   GEL_GROUP_5_SCREEN_WIDTH_MIN,
 } from '@bbc/gel-foundations/breakpoints';
 import {
-  getGreatPrimer,
+  getParagon,
   GEL_FF_REITH_SERIF,
 } from '@bbc/gel-foundations/typography';
 import { C_SHADOW } from '@bbc/psammead-styles/colours';
+import PsammeadParagraph from '@bbc/psammead-paragraph';
 
 const StoryPromoWrapper = styled.div`
   display: grid;
@@ -37,7 +39,7 @@ const ImageGridItem = styled.div`
   }
 `;
 
-const TextGridItem = styled.time`
+const TextGridItem = styled.div`
   grid-column: 3 / span 4;
 
   @media (min-width: ${GEL_GROUP_5_SCREEN_WIDTH_MIN}) {
@@ -46,10 +48,16 @@ const TextGridItem = styled.time`
 `;
 
 export const Heading = styled.h3`
-  ${props => (props.script ? getGreatPrimer(props.script) : '')};
+  ${props => (props.script ? getParagon(props.script) : '')};
   color: ${C_SHADOW};
   font-family: ${GEL_FF_REITH_SERIF};
-  margin-top: 0;
+  margin: 0; /* Reset */
+  padding-bottom: ${GEL_SPACING};
+  font-weight: 700;
+`;
+
+export const Paragraph = styled(PsammeadParagraph)`
+  padding-bottom: ${GEL_SPACING};
 `;
 
 const StoryPromo = ({ image, text }) => (
