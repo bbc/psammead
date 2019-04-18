@@ -2,7 +2,7 @@
 
 ## Description
 
-The `StoryPromo` component is..
+The `StoryPromo` component is designed to be used on 'index' pages, which are pages that link to other articles/stories. It supports having an image on the left of the promo with text on the right. This text can be any collection of nodes, however typically these would be a headline, text summary and timestamp.
 
 ## Installation
 
@@ -21,13 +21,19 @@ The `StoryPromo` component is..
 | --------- | ---- | -------- | ------- | ------- |
 | Script    | object | yes | latin | { canon: { groupA: { fontSize: '28', lineHeight: '32',}, groupB: { fontSize: '32', lineHeight: '36', }, groupD: { fontSize: '44', lineHeight: '48', }, }, trafalgar: { groupA: { fontSize: '20', lineHeight: '24', }, groupB: { fontSize: '24', lineHeight: '28', }, groupD: { fontSize: '32', lineHeight: '36', }, }, }|
 
+## Paragraph Props
+
+| Argument  | Type | Required | Default | Example |
+| --------- | ---- | -------- | ------- | ------- |
+| Script    | object | yes | latin | { canon: { groupA: { fontSize: '28', lineHeight: '32',}, groupB: { fontSize: '32', lineHeight: '36', }, groupD: { fontSize: '44', lineHeight: '48', }, }, trafalgar: { groupA: { fontSize: '20', lineHeight: '24', }, groupB: { fontSize: '24', lineHeight: '28', }, groupD: { fontSize: '32', lineHeight: '36', }, }, }|
+
 ## Usage
 
-The typical use-case of this component is
+The typical use-case of this component is as displayed below. A Image sits on the left side of the promo with text elements on the left. These text elements are typically a headline, text summary paragraph and timestamp. The `Headline` and `Paragraph` components are provided by this package and can be imported as seen below.
 
 ```jsx
 import React, { Fragment } from 'react';
-import StoryPromo, { Heading } from '@bbc/psammead-story-promo';
+import StoryPromo, { Heading, Paragraph } from '@bbc/psammead-story-promo';
 import { latin } from '@bbc/gel-foundations/scripts';
 
 const Image = (
@@ -37,6 +43,7 @@ const Image = (
 const Text = (
   <Fragment>
     <Heading script={latin}>The headline of the promo</Heading>
+    <Paragraph script={latin}>The summary of the promo</Paragraph>
     <time>12 March 2019</time>
   </Fragment>
 );
@@ -49,19 +56,21 @@ const Text = (
 
 ### When to use this component
 
-The `StoryPromo` component is designed to be used
+The `StoryPromo` component is designed to be used within a link element to allow the user to navigate to the story on another page.
 
 <!-- ### When not to use this component -->
 
 ### Accessibility notes
 
-This component uses full semantic markup
+This component uses full semantic markup for the heading and paragraph, using `h3` and `p` respectively. Other accessibility factors such as image alt text and time elements are passed in as props and aren't explicitly set in this component.
 
-<!-- ## Roadmap -->
+## Roadmap
+
+- Hover and focus states will be added
 
 ## Contributing
 
-Psammead is completely open source. We are grateful for any contributions, whether they be new components, bug fixes or general improvements. Please see our primary contributing guide which can be found at [the root of the Psammead respository](https://github.com/bbc/psammead/blob/latest/CONTRIBUTING.md).
+Psammead is completely open source. We are grateful for any contributions, whether they be new components, bug fixes or general improvements. Please see our primary contributing guide which can be found at [the root of the Psammead repository](https://github.com/bbc/psammead/blob/latest/CONTRIBUTING.md).
 
 ### [Code of Conduct](https://github.com/bbc/psammead/blob/latest/CODE_OF_CONDUCT.md)
 
