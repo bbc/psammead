@@ -15,13 +15,13 @@ The `StoryPromo` component is designed to be used on 'index' pages, which are pa
 | image    | node   | No       | Null    | `<img>`          |
 | text     | node   | Yes      | N/A     | `<h2>Title</h2>` |
 
-## Heading Props
+## Headline Props
 
 | Argument  | Type | Required | Default | Example |
 | --------- | ---- | -------- | ------- | ------- |
 | Script    | object | yes | latin | { canon: { groupA: { fontSize: '28', lineHeight: '32',}, groupB: { fontSize: '32', lineHeight: '36', }, groupD: { fontSize: '44', lineHeight: '48', }, }, trafalgar: { groupA: { fontSize: '20', lineHeight: '24', }, groupB: { fontSize: '24', lineHeight: '28', }, groupD: { fontSize: '32', lineHeight: '36', }, }, }|
 
-## Paragraph Props
+## Summary Props
 
 | Argument  | Type | Required | Default | Example |
 | --------- | ---- | -------- | ------- | ------- |
@@ -29,11 +29,11 @@ The `StoryPromo` component is designed to be used on 'index' pages, which are pa
 
 ## Usage
 
-The typical use-case of this component is as displayed below. A Image sits on the left side of the promo with text elements on the left. These text elements are typically a headline, text summary paragraph and timestamp. The `Headline` and `Paragraph` components are provided by this package and can be imported as seen below.
+The typical use-case of this component is as displayed below. A Image sits on the left side of the promo with text elements on the left. These text elements are typically a headline, text summary paragraph and timestamp. The `Headline` and `Summary` components are provided by this package and can be imported as seen below.
 
 ```jsx
 import React, { Fragment } from 'react';
-import StoryPromo, { Heading, Paragraph } from '@bbc/psammead-story-promo';
+import StoryPromo, { Headline, Summary } from '@bbc/psammead-story-promo';
 import { latin } from '@bbc/gel-foundations/scripts';
 
 const Image = (
@@ -42,8 +42,8 @@ const Image = (
 
 const Text = (
   <Fragment>
-    <Heading script={latin}>The headline of the promo</Heading>
-    <Paragraph script={latin}>The summary of the promo</Paragraph>
+    <Headline script={latin}>The headline of the promo</Headline>
+    <Summary script={latin}>The summary of the promo</Summary>
     <time>12 March 2019</time>
   </Fragment>
 );
@@ -62,7 +62,7 @@ The `StoryPromo` component is designed to be used within a link element to allow
 
 ### Accessibility notes
 
-This component uses full semantic markup for the heading and paragraph, using `h3` and `p` respectively. Other accessibility factors such as image alt text and time elements are passed in as props and aren't explicitly set in this component.
+This component uses full semantic markup for the `Headline` and `Summary`, using `h3` and `p` respectively. Other accessibility factors such as image alt text and time elements are passed in as props and aren't explicitly set in this component.
 
 ## Roadmap
 

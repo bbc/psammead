@@ -5,7 +5,7 @@ import Img from '@bbc/psammead-image';
 import { latin } from '@bbc/gel-foundations/scripts';
 import Timestamp from '@bbc/psammead-timestamp';
 import notes from '../README.md';
-import StoryPromo, { Heading, Paragraph } from './index';
+import StoryPromo, { Headline, Summary } from './index';
 
 const Image = (
   <Img
@@ -20,18 +20,18 @@ const Image = (
 
 const Text = (
   <Fragment>
-    <Heading script={latin}>
+    <Headline script={latin}>
       {text(
         'Headline',
         'This little piggy went to market, This little piggy stayed at home',
       )}
-    </Heading>
-    <Paragraph script={latin}>
+    </Headline>
+    <Summary script={latin}>
       {text(
-        'Paragraph',
+        'Summary',
         'Yesterday one little piggy, George Ham, went to the market and was never the same.',
       )}
-    </Paragraph>
+    </Summary>
     <Timestamp datetime={text('Timestamp datetime', '2019-03-01T14:00+00:00')}>
       {text('Timestamp', '12 March 2019')}
     </Timestamp>

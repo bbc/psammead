@@ -49,7 +49,7 @@ const TextGridItem = styled.div`
   }
 `;
 
-export const Heading = styled.h3`
+export const Headline = styled.h3`
   ${props => (props.script ? getPica(props.script) : '')};
   color: ${C_SHADOW};
   font-family: ${GEL_FF_REITH_SERIF};
@@ -66,7 +66,7 @@ export const Heading = styled.h3`
   }
 `;
 
-export const Paragraph = styled.p`
+export const Summary = styled.p`
   ${props => (props.script ? getLongPrimer(props.script) : '')};
   color: ${C_SHADOW};
   font-family: ${GEL_FF_REITH_SANS};
