@@ -2,7 +2,7 @@
 
 ## Description
 
-The `MediaIndicator` component provides an 'play' icon as well as a duration timestamp. This component supports both providing and not providing a duration and if one isn't provided, it will simply render the play icon. Alt text is required in all scenarios, however this can just be `'Video'` if the duration is not known. 
+The `MediaIndicator` component provides a 'play' icon as well as a duration timestamp. This component has options for both providing and not providing a duration. If one isn't provided, it will simply render the play icon. Alt text is required in all scenarios, however this can just be `'Video'` if the duration is not known. 
 
 ## Installation
 
@@ -18,7 +18,7 @@ The `MediaIndicator` component provides an 'play' icon as well as a duration tim
 
 ## Usage
 
-The typical use-case of this component is ontop of images within promos for articles that contains a video asset at the top of the page. It indicates to the user that the link is to a video and how long the video is in duration.
+The typical use-case of this component is on top of images within promos for articles that contains a video asset at the top of the page. It indicates to the user that the link is to a video and how long the video is in duration.
 
 ```jsx
 import MediaIndicator from '@bbc/psammead-media-indicator';
@@ -38,7 +38,7 @@ The `MediaIndicator` component is designed to be used on top of an image which i
 
 ### Accessibility notes
 
-This component uses full semantic markup, including visually hidden text and aria labels, to ensure its as accessible as possible. The SVG is aria hidden and not focusable and the time duration appears to screen readers as a long string, such as "Video 2 minutes 15 seconds", to ensure the user has the full context of what it's referring to.
+This component uses full semantic markup, including visually hidden text and aria labels, to ensure it's as accessible as possible. The SVG is aria hidden and not focusable. The time duration appears to screen readers as a long string, such as "Video 2 minutes 15 seconds", to ensure the user has the full context of what it's referring to.
 
 <!-- ## Roadmap -->
 
