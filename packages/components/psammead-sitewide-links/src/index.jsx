@@ -2,14 +2,19 @@ import React from 'react';
 import styled, { css } from 'styled-components';
 import { arrayOf, shape, string } from 'prop-types';
 import { C_EBON, C_WHITE } from '@bbc/psammead-styles/colours';
-import { FF_NEWS_SANS_REG } from '@bbc/psammead-styles/fonts';
-import { GEL_BREVIER } from '@bbc/gel-foundations/typography';
+import {
+  GEL_BREVIER,
+  GEL_FF_REITH_SANS,
+} from '@bbc/gel-foundations/typography';
 import {
   GEL_SPACING_DBL,
   GEL_MARGIN_BELOW_400PX,
   GEL_MARGIN_ABOVE_400PX,
 } from '@bbc/gel-foundations/spacings';
-import { GEL_GROUP_2_SCREEN_WIDTH_MIN } from '@bbc/gel-foundations/breakpoints';
+import {
+  GEL_GROUP_2_SCREEN_WIDTH_MIN,
+  GEL_GROUP_5_SCREEN_WIDTH_MIN,
+} from '@bbc/gel-foundations/breakpoints';
 import Link from './Link';
 import List from './List';
 
@@ -26,7 +31,12 @@ const SitewideLinksWrapper = styled.div`
   ${layoutWrapperWithoutGrid};
   background-color: ${C_EBON};
   ${GEL_BREVIER};
-  font-family: ${FF_NEWS_SANS_REG};
+  font-family: ${GEL_FF_REITH_SANS};
+`;
+
+const ConstrainedWrapper = styled.div`
+  max-width: ${GEL_GROUP_5_SCREEN_WIDTH_MIN};
+  margin: 0 auto;
 `;
 
 const StyledParagraph = styled.p`
@@ -37,11 +47,13 @@ const StyledParagraph = styled.p`
 
 const SitewideLinks = ({ links, copyrightText, externalLink }) => (
   <SitewideLinksWrapper>
-    <List links={links} />
-    <StyledParagraph>
-      {copyrightText}
-      <Link text={externalLink.text} href={externalLink.href} inline />
-    </StyledParagraph>
+    <ConstrainedWrapper>
+      <List links={links} />
+      <StyledParagraph>
+        {copyrightText}
+        <Link text={externalLink.text} href={externalLink.href} inline />
+      </StyledParagraph>
+    </ConstrainedWrapper>
   </SitewideLinksWrapper>
 );
 

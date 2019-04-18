@@ -1,15 +1,29 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import { withReadme } from 'storybook-readme';
-import Readme from '../README.md';
+import { withKnobs } from '@storybook/addon-knobs';
+import { inputProvider } from '@bbc/psammead-storybook-helpers';
+import { latin } from '@bbc/gel-foundations/scripts';
+import notes from '../README.md';
 import { Headline, SubHeading } from './index';
 
 storiesOf('Headline', module)
-  .addDecorator(withReadme(Readme))
-  .add('default', () => <Headline>This is my headline.</Headline>);
+  .addDecorator(withKnobs)
+  .add(
+    'default',
+    inputProvider(['headline'], headline => (
+      <Headline script={latin}>{headline}</Headline>
+    )),
+    { notes, knobs: { escapeHTML: false } },
+  );
 
 storiesOf('SubHeading', module)
-  .addDecorator(withReadme(Readme))
-  .add('default', () => (
-    <SubHeading text="This is a SubHeading">This is a SubHeading</SubHeading>
-  ));
+  .addDecorator(withKnobs)
+  .add(
+    'default',
+    inputProvider(['subheading'], subheader => (
+      <SubHeading text={subheader} script={latin}>
+        {subheader}
+      </SubHeading>
+    )),
+    { notes, knobs: { escapeHTML: false } },
+  );

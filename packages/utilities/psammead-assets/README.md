@@ -1,4 +1,4 @@
-# psammead-assets &middot; [![GitHub license](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](https://github.com/bbc/psammead/blob/latest/LICENSE) [![npm version](https://img.shields.io/npm/v/@bbc/psammead-assets.svg)](https://www.npmjs.com/package/@bbc/psammead-assets) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/bbc/psammead/blob/latest/CONTRIBUTING.md)
+# psammead-assets - [![Known Vulnerabilities](https://snyk.io/test/github/bbc/psammead/badge.svg?targetFile=packages%2Futilities%2Fpsammead-assets%2Fpackage.json)](https://snyk.io/test/github/bbc/psammead?targetFile=packages%2Futilities%2Fpsammead-assets%2Fpackage.json) [![GitHub license](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](https://github.com/bbc/psammead/blob/latest/LICENSE) [![npm version](https://img.shields.io/npm/v/@bbc/psammead-assets.svg)](https://www.npmjs.com/package/@bbc/psammead-assets) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/bbc/psammead/blob/latest/CONTRIBUTING.md)
 
 This package provides a collection of common assets that are likely to be required by many Psammead components or users, such as SVGs or small scripts.
 
@@ -12,13 +12,35 @@ This package provides a collection of common assets that are likely to be requir
 ```jsx
 npm install @bbc/psammead-assets --save
 ```
+## Usage
+
+```jsx
+import { BBC_BLOCKS, news} from '@bbc/psammead-assets/svgs';
+
+import { AMP_SCRIPT } from '@bbc/psammead-assets/amp-boilerplate';
+```
+
+## Service SVGs
+
+Service brand SVGs, like `news`, are objects that contains an svg group, viewbox, ratio and height;
+
+This package currently has brand SVGs for the BBC services `igbo`, `news`, `pidgin`, `thai` and `yoruba`.
+
+<!-- prettier-ignore -->
+| Property   | Type   | Required | Default | Example                  |
+|------------|--------|----------|---------|--------------------------|
+| `group` | node | Yes | N/A | `<g fillrule="evenodd"><path d="M84.32" /></g>` |
+| `viewbox` | object | Yes | N/A | `{ height: 24, width: 167.95 }` |
+| `ratio` | number | Yes | N/A | `6.9979` |
+
+The width of your SVG can be calculated using your desired height multiplied by the `ratio` value provided above.
 
 ## Usage
 
 ```jsx
-import { BBC_BLOCKS } from '@bbc/psammead-assets/svgs';
-
-import { AMP_SCRIPT } from '@bbc/psammead-assets/amp-boilerplate';
+const WrappingContainer = () => (
+  <svg viewBox={`0 0 ${news.viewbox.width} ${news.viewbox.height}`}>{news.group}</svg>
+);
 ```
 
 ## Contributing

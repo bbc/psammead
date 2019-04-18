@@ -1,4 +1,4 @@
-# psammead-caption &middot; [![Storybook](https://raw.githubusercontent.com/storybooks/brand/master/badges/storybook.svg?sanitize=true)](https://bbc.github.io/psammead/?selectedKind=Caption) [![GitHub license](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](https://github.com/BBC/psammead/blob/latest/LICENSE) [![npm version](https://img.shields.io/npm/v/@bbc/psammead-caption.svg)](https://www.npmjs.com/package/@bbc/psammead-caption) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/BBC/psammead/blob/latest/CONTRIBUTING.md)
+# psammead-caption - [![Known Vulnerabilities](https://snyk.io/test/github/bbc/psammead/badge.svg?targetFile=packages%2Fcomponents%2Fpsammead-caption%2Fpackage.json)](https://snyk.io/test/github/bbc/psammead?targetFile=packages%2Fcomponents%2Fpsammead-caption%2Fpackage.json) [![Storybook](https://raw.githubusercontent.com/storybooks/brand/master/badge/badge-storybook.svg?sanitize=true)](https://bbc.github.io/psammead/?path=/story/caption--default) [![GitHub license](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](https://github.com/BBC/psammead/blob/latest/LICENSE) [![npm version](https://img.shields.io/npm/v/@bbc/psammead-caption.svg)](https://www.npmjs.com/package/@bbc/psammead-caption) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/BBC/psammead/blob/latest/CONTRIBUTING.md)
 
 ## Description
 
@@ -12,7 +12,7 @@ The `psammead-caption` component is a styled `figcaption` element.
 
 | Argument  | Type | Required | Default | Example |
 | --------- | ---- | -------- | ------- | ------- |
-| No props. |      |          |         |         |
+| Script    | object | yes | latin | { canon: { groupA: { fontSize: '28', lineHeight: '32',}, groupB: { fontSize: '32', lineHeight: '36', }, groupD: { fontSize: '44', lineHeight: '48', }, }, trafalgar: { groupA: { fontSize: '20', lineHeight: '24', }, groupB: { fontSize: '24', lineHeight: '28', }, groupD: { fontSize: '32', lineHeight: '36', }, }, }|
 
 ## Usage
 
@@ -22,11 +22,12 @@ The `psammead-caption` component is a styled `figcaption` element.
 import Caption from '@bbc/psammead-caption';
 import Figure from '@bbc/psammead-figure';
 import VisuallyHiddenText from '@bbc/psammead-visually-hidden-text';
+import { arabic } from '@bbc/gel-foundations/scripts';
 
 const Wrapper = captionText => (
   <Figure>
     ...
-    <Caption>
+    <Caption script={arabic}>
       <VisuallyHiddenText>Image caption, </VisuallyHiddenText>
       {captionText}
     </Caption>
@@ -46,7 +47,9 @@ Since this is just a `<figcaption>` tag with associated styles, when you use thi
 
 The font and background-color choices meet WCAG AA colour contrast guidelines.
 
-<!-- ## Roadmap -->
+## Roadmap
+
+When this caption is used for scripts that do not support italic text, we can consider creating a prop that toggles the `font-style: italic`.
 
 ## Contributing
 

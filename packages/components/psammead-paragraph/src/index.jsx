@@ -1,15 +1,22 @@
 import styled from 'styled-components';
+import { objectOf, object } from 'prop-types';
 import { C_SHADOW } from '@bbc/psammead-styles/colours';
-import { FF_NEWS_SANS_REG } from '@bbc/psammead-styles/fonts';
-import { GEL_SPACING_DBL } from '@bbc/gel-foundations/spacings';
-import { GEL_BODY_COPY } from '@bbc/gel-foundations/typography';
+import { GEL_SPACING_TRPL } from '@bbc/gel-foundations/spacings';
+import {
+  getBodyCopy,
+  GEL_FF_REITH_SANS,
+} from '@bbc/gel-foundations/typography';
 
 const Paragraph = styled.p`
+  ${props => (props.script ? getBodyCopy(props.script) : '')};
   color: ${C_SHADOW};
-  font-family: ${FF_NEWS_SANS_REG};
-  padding-bottom: ${GEL_SPACING_DBL};
+  font-family: ${GEL_FF_REITH_SANS};
+  padding-bottom: ${GEL_SPACING_TRPL};
   margin: 0; /* Reset */
-  ${GEL_BODY_COPY};
 `;
+
+Paragraph.propTypes = {
+  script: objectOf(object).isRequired,
+};
 
 export default Paragraph;

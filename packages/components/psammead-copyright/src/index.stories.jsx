@@ -1,9 +1,26 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import { withReadme } from 'storybook-readme';
-import Readme from '../README.md';
+import { withKnobs, text } from '@storybook/addon-knobs';
+import VisuallyHiddenText from '@bbc/psammead-visually-hidden-text';
+import notes from '../README.md';
 import Copyright from './index';
 
 storiesOf('Copyright', module)
-  .addDecorator(withReadme(Readme))
-  .add('default', () => <Copyright>Getty Images</Copyright>);
+  .addDecorator(withKnobs)
+  .add(
+    'default',
+    () => <Copyright>{text('copyright', 'Getty Images')}</Copyright>,
+    { notes, knobs: { escapeHTML: false } },
+  )
+  .add(
+    'with visually hidden text',
+    () => (
+      <Copyright>
+        <VisuallyHiddenText>
+          {text('visually hidden text', 'Image source, ')}
+        </VisuallyHiddenText>
+        {text('copyright', 'Getty Images')}
+      </Copyright>
+    ),
+    { notes, knobs: { escapeHTML: false } },
+  );

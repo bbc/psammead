@@ -2,6 +2,10 @@
 
 | Version | Description |
 | --------------------- |
+| 0.1.12  | [PR#424](https://github.com/bbc/psammead/pull/424) Add Snyk badge to readme |
+| 0.1.11  | [PR#407](https://github.com/bbc/psammead/pull/407) Organise dependencies properly |
+| 0.1.10  | [PR#323](https://github.com/bbc/psammead/pull/323) Update storybook badge url |
+| 0.1.9   | [PR#323](https://github.com/BBC/psammead/pull/323) Update readme storybook badge |
 | 0.1.8   | [PR#264](https://github.com/BBC/psammead/pull/319) Resolving package-lock issues. |
 | 0.1.7   | [PR#264](https://github.com/BBC/psammead/pull/264) Resolving package-lock issues. |
 | 0.1.6   | [PR#245](https://github.com/BBC-News/psammead/pull/245) Ensures documentation consistent across component packages. |

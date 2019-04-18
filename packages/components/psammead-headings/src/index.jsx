@@ -1,21 +1,28 @@
 import styled from 'styled-components';
+import { objectOf, object } from 'prop-types';
 import { C_SHADOW } from '@bbc/psammead-styles/colours';
 import {
-  FF_NEWS_SERIF_MDM,
-  FF_NEWS_SANS_BLD,
-} from '@bbc/psammead-styles/fonts';
-import {
-  GEL_SPACING_DBL,
+  GEL_SPACING_TRPL,
   GEL_SPACING_QUAD,
 } from '@bbc/gel-foundations/spacings';
-import { GEL_CANON, GEL_TRAFALGAR } from '@bbc/gel-foundations/typography';
+import {
+  getCanon,
+  getTrafalgar,
+  GEL_FF_REITH_SANS,
+  GEL_FF_REITH_SERIF,
+} from '@bbc/gel-foundations/typography';
+import { MEDIA_QUERY_TYPOGRAPHY } from '@bbc/gel-foundations/breakpoints';
 
 export const Headline = styled.h1`
+  ${props => (props.script ? getCanon(props.script) : '')};
   color: ${C_SHADOW};
-  font-family: ${FF_NEWS_SERIF_MDM};
+  font-family: ${GEL_FF_REITH_SERIF};
   margin: 0; /* Reset */
-  padding: ${GEL_SPACING_QUAD} 0 ${GEL_SPACING_DBL} 0;
-  ${GEL_CANON};
+  padding: ${GEL_SPACING_QUAD} 0;
+  ${MEDIA_QUERY_TYPOGRAPHY.LAPTOP_AND_LARGER} {
+    padding: 2.5rem 0;
+  }
+  font-weight: 500;
 `;
 
 const regexPunctuationSymbols = /[^a-z0-9\s-]/gi;
@@ -25,10 +32,21 @@ export const SubHeading = styled.h2.attrs(({ text }) => ({
   id: text.replace(regexPunctuationSymbols, '').replace(regexSpaces, '-'),
   tabIndex: '-1',
 }))`
+  ${props => (props.script ? getTrafalgar(props.script) : '')};
   color: ${C_SHADOW};
-  font-family: ${FF_NEWS_SANS_BLD};
+  font-family: ${GEL_FF_REITH_SANS};
   margin: 0; /* Reset */
-  padding: ${GEL_SPACING_DBL} 0;
-  font-weight: 400;
-  ${GEL_TRAFALGAR};
+  padding: ${GEL_SPACING_TRPL} 0;
+  ${MEDIA_QUERY_TYPOGRAPHY.LAPTOP_AND_LARGER} {
+    padding-top: ${GEL_SPACING_QUAD};
+  }
+  font-weight: 700;
 `;
+
+Headline.defaultProps = {
+  script: objectOf(object).required,
+};
+
+SubHeading.defaultProps = {
+  script: objectOf(object).required,
+};

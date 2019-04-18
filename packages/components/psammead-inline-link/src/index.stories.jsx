@@ -1,11 +1,16 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import { withReadme } from 'storybook-readme';
-import Readme from '../README.md';
+import { withKnobs } from '@storybook/addon-knobs';
+import { inputProvider } from '@bbc/psammead-storybook-helpers';
+import notes from '../README.md';
 import InlineLink from './index';
 
 storiesOf('InlineLink', module)
-  .addDecorator(withReadme(Readme))
-  .add('default', () => (
-    <InlineLink href="https://www.bbc.com/news">BBC News</InlineLink>
-  ));
+  .addDecorator(withKnobs)
+  .add(
+    'default',
+    inputProvider(['link text'], linkText => (
+      <InlineLink href="https://www.bbc.com/news">{linkText}</InlineLink>
+    )),
+    { notes, knobs: { escapeHTML: false } },
+  );

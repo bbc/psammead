@@ -1,4 +1,4 @@
-# psammead-figure &middot; [![Storybook](https://raw.githubusercontent.com/storybooks/brand/master/badges/storybook.svg?sanitize=true)](https://bbc.github.io/psammead/?selectedKind=Figure) [![GitHub license](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](https://github.com/bbc/psammead/blob/latest/LICENSE) [![npm version](https://img.shields.io/npm/v/@bbc/psammead-figure.svg)](https://www.npmjs.com/package/@bbc/psammead-figure) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/bbc/psammead/blob/latest/CONTRIBUTING.md)
+# psammead-figure - [![Known Vulnerabilities](https://snyk.io/test/github/bbc/psammead/badge.svg?targetFile=packages%2Fcomponents%2Fpsammead-figure%2Fpackage.json)](https://snyk.io/test/github/bbc/psammead?targetFile=packages%2Fcomponents%2Fpsammead-figure%2Fpackage.json) [![Storybook](https://raw.githubusercontent.com/storybooks/brand/master/badge/badge-storybook.svg?sanitize=true)](https://bbc.github.io/psammead/?path=/story/figure--containing-image) [![GitHub license](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](https://github.com/bbc/psammead/blob/latest/LICENSE) [![npm version](https://img.shields.io/npm/v/@bbc/psammead-figure.svg)](https://www.npmjs.com/package/@bbc/psammead-figure) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/bbc/psammead/blob/latest/CONTRIBUTING.md)
 
 ## Description
 
@@ -21,10 +21,12 @@ The following example shows `psammead-figure` wrapping an
 - [psammead-image-placeholder](https://github.com/bbc/psammead/tree/latest/packages/components/psammead-image-placeholder), a `<div>` with background image
 - [psammead-image](https://github.com/bbc/psammead/tree/latest/packages/components/psammead-image), an `<img>`
 - [psammead-caption](https://github.com/bbc/psammead/tree/latest/packages/components/psammead-caption), a `<figcaption>`
+- [psammead-copyright](https://github.com/bbc/psammead/tree/latest/packages/components/psammead-copyright), a `<p>`
 - [psammead-visually-hidden-text](https://github.com/bbc/psammead/tree/latest/packages/components/psammead-visually-hidden-text), a hidden `<span>` available only to assistive technology
 
 ```jsx
 import Caption from '@bbc/psammead-caption';
+import Copyright from '@bbc/copyright';
 import Figure from '@bbc/psammead-figure';
 import Image from '@bbc/psammead-image';
 import ImagePlaceholder from '@bbc/psammead-image-placeholder';
@@ -34,6 +36,10 @@ const Wrapper = ({ alt, captionText, ratio, src, width }) => (
   <Figure>
     <ImagePlaceholder ratio={ratio}>
       <Image alt={alt} src={src} width={width} />
+      <Copyright>
+        <VisuallyHiddenText>Image copyright, </VisuallyHiddenText>
+        {copyrightOwner}
+      </Copyright>
     </ImagePlaceholder>
     <Caption>
       <VisuallyHiddenText>Image caption, </VisuallyHiddenText>

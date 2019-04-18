@@ -1,7 +1,17 @@
-# Psammead Headings Changelog
+# Psammead Copyright Changelog
 
+<!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 0.3.7   | [PR#424](https://github.com/bbc/psammead/pull/424) Add Snyk badge to readme |
+| 0.3.6   | [PR#417](https://github.com/bbc/psammead/pull/417) Add text input knob to Copyright |
+| 0.3.5   | [PR#407](https://github.com/bbc/psammead/pull/407) Organise dependencies properly |
+| 0.3.4   | [PR#398](https://github.com/bbc/psammead/pull/398) Update dependencies |
+| 0.3.3   | [PR#329](https://github.com/BBC/psammead/pull/329) Adding Visually Hidden Text to copyright component story. |
+| 0.3.2   | [PR#334](https://github.com/BBC/psammead/pull/334) Improve examples of using Figure and Copyright |
+| 0.3.1   | [PR#323](https://github.com/bbc/psammead/pull/323) Update storybook badge url |
+| 0.3.0   | [PR#318](https://github.com/BBC/psammead/pull/318) Update to new font face and family. |
+| 0.2.6   | [PR#323](https://github.com/BBC/psammead/pull/323) Update readme storybook badge |
 | 0.2.5   | [PR#264](https://github.com/BBC/psammead/pull/319) Resolving package-lock issues. |
 | 0.2.4   | [PR#264](https://github.com/BBC/psammead/pull/264) Resolving package-lock issues. |
 | 0.2.3   | [PR#245](https://github.com/BBC-News/psammead/pull/245) Ensures documentation consistent across component packages. |

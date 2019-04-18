@@ -19,7 +19,7 @@ Psammead packages are split into:
 
 ## :gift: Getting Started
 
-### :airplane: Clone this repositry
+### :airplane: Clone this repository
 
 ```
 git clone git@github.com:bbc/psammead.git
@@ -32,14 +32,6 @@ cd psammead && npm run install:packages
 ```
 
 N.B. When merging branches, the `npm run install:packages` command should be favoured over `npm install`. [More details available here](https://github.com/bbc/psammead/pull/264).
-
-### :link: Link packages locally
-
-Run the following command to link all psammead packages up regardless of dependancy version:
-
-```
-npm run install:packages:link
-```
 
 ### :runner: Run tests
 
@@ -79,6 +71,18 @@ NB, we've defined global styles (normalize, box-sizing, Reith font) in the [Stor
 npm run build
 ```
 
+## :computer: Developing with Psammead
+
+When making changes to a package locally if you want to pull those changes into another psammead package then the following command will create the required symlinks for you.
+
+### :link: Link packages locally
+
+Run the following command to link all psammead packages up regardless of dependency version:
+
+```
+npm run install:packages:link
+```
+
 ## :dizzy: Using Psammead
 
 ### :fork_and_knife: Consuming Psammead components - pre-requisite
@@ -106,7 +110,7 @@ You can do this in pure CSS:
 
   @font-face {
     font-display: optional;
-    font-family: ReithSansNewsRegular;
+    font-family: "ReithSans";
     font-style: normal;
     font-weight: 400;
     src: url('https://gel.files.bbci.co.uk/r2.302/BBCReithSans_W_Rg.woff2')
@@ -115,7 +119,7 @@ You can do this in pure CSS:
   }
   @font-face {
     font-display: optional;
-    font-family: ReithSerifNewsMedium;
+    font-family: "ReithSerif";
     font-style: normal;
     font-weight: 600;
     src: url('https://gel.files.bbci.co.uk/r2.302/BBCReithSerif_W_Md.woff2')

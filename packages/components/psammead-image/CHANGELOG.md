@@ -2,6 +2,10 @@
 
 | Version | Description |
 |---------|-------------|
+| 0.3.5   | [PR#424](https://github.com/bbc/psammead/pull/424) Add Snyk badge to readme |
+| 0.3.4   | [PR#407](https://github.com/bbc/psammead/pull/407) Organise dependencies properly |
+| 0.3.3   | [PR#323](https://github.com/bbc/psammead/pull/323) Update storybook badge url |
+| 0.3.2   | [PR#323](https://github.com/BBC/psammead/pull/323) Update readme storybook badge |
 | 0.3.1   | [PR#310](https://github.com/BBC-News/psammead/pull/310) Ensure lockfile is added to package. |
 | 0.3.0   | [PR#241](https://github.com/BBC-News/psammead/pull/241) Add AmpImg component. Update Image to have optional srcset prop. |
 | 0.2.3   | [PR#264](https://github.com/BBC/psammead/pull/264) Resolving package-lock issues. |

@@ -1,6 +1,6 @@
 {
   "name": "@bbc/psammead",
-  "version": "0.1.0",
+  "version": "1.1.4",
   "description": "Core Components Library Developed & Maintained By The Articles and Reach & Languages Team",
   "main": "index.js",
   "scripts": {
@@ -11,7 +11,9 @@
     "force-package-lock-https": "find . -type f -name \"package-lock.json\" | grep -v node_modules | xargs -I % sh -c 'echo \"Replacing http->https in %\"; sed -i \"\" -e \"s/http:\\/\\//https:\\/\\//g\" %'",
     "install:packages": "npm i && lerna clean --yes && lerna bootstrap --hoist",
     "install:packages:link": "npm i && lerna clean --yes && lerna bootstrap --hoist --force-local",
+    "postinstall": "npm run build",
     "postshrinkwrap": "if test -z $CI; then \n npm run force-package-lock-https \n fi",
+    "preinstall": "sh scripts/enforceVersions.sh",
     "publish": "npm run build && node scripts/publish",
     "storybook": "NODE_ENV=development start-storybook -p 8080 -c .storybook",
     "test": "npm run test:lint && npm run test:lint:css && npm run test:unit && npm run test:packages",
@@ -32,7 +34,9 @@
   },
   "homepage": "https://github.com/bbc/psammead#readme",
   "dependencies": {
-    "styled-components": "^4.1.2",
+    "@bbc/psammead-styles": "^0.3.0",
+    "@storybook/theming": "^5.0.6",
+    "styled-components": "^4.1.3",
     "styled-normalize": "^8.0.4"
   },
   "devDependencies": {
@@ -41,11 +45,11 @@
     "@babel/preset-env": "^7.2.0",
     "@babel/preset-react": "^7.0.0",
     "@bbc/psammead-assets": "^0.1.3",
-    "@storybook/addon-actions": "^3.4.11",
-    "@storybook/addon-knobs": "^3.4.11",
-    "@storybook/addon-options": "^3.4.11",
-    "@storybook/addon-viewport": "^3.4.11",
-    "@storybook/react": "^4.0.11",
+    "@storybook/addon-actions": "^5.0.6",
+    "@storybook/addon-knobs": "^5.0.6",
+    "@storybook/addon-notes": "^5.0.6",
+    "@storybook/addon-viewport": "^5.0.6",
+    "@storybook/react": "^5.0.6",
     "babel-core": "^7.0.0-bridge.0",
     "babel-eslint": "^8.2.6",
     "babel-loader": "^8.0.4",
@@ -62,7 +66,7 @@
     "gh-pages": "^2.0.1",
     "glob-loader": "^0.3.0",
     "husky": "^1.2.0",
-    "jest": "^23.6.0",
+    "jest": "^24.5.0",
     "jest-fetch-mock": "^1.6.5",
     "jest-styled-components": "^6.3.1",
     "lerna": "^3.3.1",
@@ -74,7 +78,8 @@
     "request": "^2.88.0",
     "semver": "^5.6.0",
     "shelljs": "^0.8.3",
-    "storybook-readme": "^4.0.0-beta1",
+    "storybook-addon-rtl": "^0.2.2",
+    "storybook-readme": "^5.0.1",
     "strip-ansi": "^5.0.0",
     "stylelint": "^9.8.0",
     "stylelint-config-recommended": "^2.1.0",
@@ -83,7 +88,7 @@
     "yargs-parser": "^11.1.1",
     "yeoman-environment": "^2.3.4",
     "yeoman-generator": "^3.2.0",
-    "yo": "^2.0.5"
+    "yo": "^2.0.6"
   },
   "husky": {
     "hooks": {

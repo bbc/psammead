@@ -2,25 +2,32 @@
 
 exports[`Headline component should render correctly 1`] = `
 .c0 {
-  color: #3F3F42;
-  font-family: ReithSerifNewsMedium,Helvetica,Arial,sans-serif;
-  margin: 0;
-  padding: 2rem 0 1rem 0;
-  font-size: 1.75em;
+  font-size: 1.75rem;
   line-height: 2rem;
+  color: #3F3F42;
+  font-family: ReithSerif,Helvetica,Arial,sans-serif;
+  margin: 0;
+  padding: 2rem 0;
+  font-weight: 500;
 }
 
-@media (min-width:20em) and (max-width:37.4375em) {
+@media (min-width:20rem) and (max-width:37.4375rem) {
   .c0 {
-    font-size: 2em;
+    font-size: 2rem;
     line-height: 2.25rem;
   }
 }
 
-@media (min-width:37.5em) {
+@media (min-width:37.5rem) {
   .c0 {
-    font-size: 2.75em;
+    font-size: 2.75rem;
     line-height: 3rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .c0 {
+    padding: 2.5rem 0;
   }
 }
 
@@ -31,28 +38,72 @@ exports[`Headline component should render correctly 1`] = `
 </h1>
 `;
 
-exports[`SubHeading component attribute id should render without double quotes 1`] = `
+exports[`Headline component should render correctly with arabic script typography values 1`] = `
 .c0 {
+  font-size: 2rem;
+  line-height: 2.625rem;
   color: #3F3F42;
-  font-family: ReithSansNewsBold,Helvetica,Arial,sans-serif;
+  font-family: ReithSerif,Helvetica,Arial,sans-serif;
   margin: 0;
-  padding: 1rem 0;
-  font-weight: 400;
-  font-size: 1.25em;
-  line-height: 1.5rem;
+  padding: 2rem 0;
+  font-weight: 500;
 }
 
-@media (min-width:20em) and (max-width:37.4375em) {
+@media (min-width:20rem) and (max-width:37.4375rem) {
   .c0 {
-    font-size: 1.5em;
+    font-size: 2.25rem;
+    line-height: 2.875rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .c0 {
+    font-size: 2.75rem;
+    line-height: 3.375rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .c0 {
+    padding: 2.5rem 0;
+  }
+}
+
+<h1
+  className="c0"
+>
+  هذا هو العنوان الخاص بي
+</h1>
+`;
+
+exports[`SubHeading component attribute id should render without double quotes 1`] = `
+.c0 {
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+  color: #3F3F42;
+  font-family: ReithSans,Helvetica,Arial,sans-serif;
+  margin: 0;
+  padding: 1.5rem 0;
+  font-weight: 700;
+}
+
+@media (min-width:20rem) and (max-width:37.4375rem) {
+  .c0 {
+    font-size: 1.5rem;
     line-height: 1.75rem;
   }
 }
 
-@media (min-width:37.5em) {
+@media (min-width:37.5rem) {
   .c0 {
-    font-size: 2em;
+    font-size: 2rem;
     line-height: 2.25rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .c0 {
+    padding-top: 2rem;
   }
 }
 
@@ -67,26 +118,32 @@ exports[`SubHeading component attribute id should render without double quotes 1
 
 exports[`SubHeading component attribute id should render without exclamation marks 1`] = `
 .c0 {
-  color: #3F3F42;
-  font-family: ReithSansNewsBold,Helvetica,Arial,sans-serif;
-  margin: 0;
-  padding: 1rem 0;
-  font-weight: 400;
-  font-size: 1.25em;
+  font-size: 1.25rem;
   line-height: 1.5rem;
+  color: #3F3F42;
+  font-family: ReithSans,Helvetica,Arial,sans-serif;
+  margin: 0;
+  padding: 1.5rem 0;
+  font-weight: 700;
 }
 
-@media (min-width:20em) and (max-width:37.4375em) {
+@media (min-width:20rem) and (max-width:37.4375rem) {
   .c0 {
-    font-size: 1.5em;
+    font-size: 1.5rem;
     line-height: 1.75rem;
   }
 }
 
-@media (min-width:37.5em) {
+@media (min-width:37.5rem) {
   .c0 {
-    font-size: 2em;
+    font-size: 2rem;
     line-height: 2.25rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .c0 {
+    padding-top: 2rem;
   }
 }
 
@@ -101,26 +158,32 @@ exports[`SubHeading component attribute id should render without exclamation mar
 
 exports[`SubHeading component attribute id should render without quotes 1`] = `
 .c0 {
-  color: #3F3F42;
-  font-family: ReithSansNewsBold,Helvetica,Arial,sans-serif;
-  margin: 0;
-  padding: 1rem 0;
-  font-weight: 400;
-  font-size: 1.25em;
+  font-size: 1.25rem;
   line-height: 1.5rem;
+  color: #3F3F42;
+  font-family: ReithSans,Helvetica,Arial,sans-serif;
+  margin: 0;
+  padding: 1.5rem 0;
+  font-weight: 700;
 }
 
-@media (min-width:20em) and (max-width:37.4375em) {
+@media (min-width:20rem) and (max-width:37.4375rem) {
   .c0 {
-    font-size: 1.5em;
+    font-size: 1.5rem;
     line-height: 1.75rem;
   }
 }
 
-@media (min-width:37.5em) {
+@media (min-width:37.5rem) {
   .c0 {
-    font-size: 2em;
+    font-size: 2rem;
     line-height: 2.25rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .c0 {
+    padding-top: 2rem;
   }
 }
 
@@ -135,26 +198,32 @@ exports[`SubHeading component attribute id should render without quotes 1`] = `
 
 exports[`SubHeading component should render correctly 1`] = `
 .c0 {
-  color: #3F3F42;
-  font-family: ReithSansNewsBold,Helvetica,Arial,sans-serif;
-  margin: 0;
-  padding: 1rem 0;
-  font-weight: 400;
-  font-size: 1.25em;
+  font-size: 1.25rem;
   line-height: 1.5rem;
+  color: #3F3F42;
+  font-family: ReithSans,Helvetica,Arial,sans-serif;
+  margin: 0;
+  padding: 1.5rem 0;
+  font-weight: 700;
 }
 
-@media (min-width:20em) and (max-width:37.4375em) {
+@media (min-width:20rem) and (max-width:37.4375rem) {
   .c0 {
-    font-size: 1.5em;
+    font-size: 1.5rem;
     line-height: 1.75rem;
   }
 }
 
-@media (min-width:37.5em) {
+@media (min-width:37.5rem) {
   .c0 {
-    font-size: 2em;
+    font-size: 2rem;
     line-height: 2.25rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .c0 {
+    padding-top: 2rem;
   }
 }
 
@@ -164,5 +233,45 @@ exports[`SubHeading component should render correctly 1`] = `
   tabIndex="-1"
 >
   This is a SubHeading
+</h2>
+`;
+
+exports[`SubHeading component should render correctly with arabic script typography values 1`] = `
+.c0 {
+  font-size: 1.5rem;
+  line-height: 2.125rem;
+  color: #3F3F42;
+  font-family: ReithSans,Helvetica,Arial,sans-serif;
+  margin: 0;
+  padding: 1.5rem 0;
+  font-weight: 700;
+}
+
+@media (min-width:20rem) and (max-width:37.4375rem) {
+  .c0 {
+    font-size: 1.625rem;
+    line-height: 2.25rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .c0 {
+    font-size: 2.375rem;
+    line-height: 3rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .c0 {
+    padding-top: 2rem;
+  }
+}
+
+<h2
+  className="c0"
+  id="-"
+  tabIndex="-1"
+>
+  هذا عنوان فرعي
 </h2>
 `;

@@ -1,7 +1,19 @@
 # Psammead Headings Changelog
 
+<!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 1.1.1   | [PR#412](https://github.com/bbc/psammead/pull/412) Make SubHeading padding-bottom 24px instead of 16px |
+| 1.1.0   | [PR#424](https://github.com/bbc/psammead/pull/424) Add Snyk badge to readme |
+| 1.0.0   | [PR#421](https://github.com/bbc/psammead/pull/421) Add support for different scripts typographies |
+| 0.4.3   | [PR#418](https://github.com/bbc/psammead/pull/418) Add language variants knob to Headings |
+| 0.4.2   | [PR#407](https://github.com/bbc/psammead/pull/407) Organise dependencies properly |
+| 0.4.1   | [PR#381](https://github.com/bbc/psammead/pull/381) Make SubHeading padding-top 32px when viewport 400px and above |
+| 0.4.0   | [PR#381](https://github.com/bbc/psammead/pull/381) Make headline 40px for 600px and above |
+| 0.3.2   | [PR#398](https://github.com/bbc/psammead/pull/398) Update dependencies. Using `rem` for media queries. |
+| 0.3.1   | [PR#323](https://github.com/bbc/psammead/pull/323) Update storybook badge url |
+| 0.3.0   | [PR#318](https://github.com/BBC/psammead/pull/318) Update to new font face and family. |
+| 0.2.2   | [PR#323](https://github.com/BBC/psammead/pull/323) Update readme storybook badge |
 | 0.2.1   | [PR#264](https://github.com/BBC/psammead/pull/319) Resolving package-lock issues. |
 | 0.2.0   | [PR#305](https://github.com/BBC/psammead/pull/305) Updating colour of headline and subheading to Shadow. Update Subheadings to use Reith Sans Bold. |
 | 0.1.7   | [PR#264](https://github.com/BBC/psammead/pull/264) Resolving package-lock issues. |

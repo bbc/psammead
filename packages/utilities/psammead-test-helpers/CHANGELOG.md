@@ -2,6 +2,8 @@
 
 | Version | Description |
 |---------|-------------|
+| 0.3.4   | [PR#424](https://github.com/bbc/psammead/pull/424) Add Snyk badge to readme |
+| 0.3.3   | [PR#323](https://github.com/BBC/psammead/pull/323) Update readme storybook badge |
 | 0.3.2   | [PR#264](https://github.com/BBC/psammead/pull/319) Resolving package-lock issues. |
 | 0.3.1   | [PR#264](https://github.com/BBC/psammead/pull/264) Resolving package-lock issues. |
 | 0.3.0   | [PR#224](https://github.com/BBC-News/psammead/pull/224) Adds a helper method for testing package export values and uses it to test its own exports. |

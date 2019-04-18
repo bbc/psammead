@@ -1,7 +1,14 @@
 # Psammead Brand Changelog
 
+<!-- prettier-ignore -->
 | Version | Description |
 | ------- | ----------- |
+| 0.3.4   | [PR#424](https://github.com/bbc/psammead/pull/424) Add Snyk badge to readme |
+| 0.3.3   | [PR#407](https://github.com/bbc/psammead/pull/407) Organise dependencies properly |
+| 0.3.2   | [PR#398](https://github.com/bbc/psammead/pull/398) Update dependencies. Using `rem` for media queries. |
+| 0.3.1   | [PR#323](https://github.com/bbc/psammead/pull/323) Update storybook badge url |
+| 0.3.0   | [PR#338](https://github.com/BBC/psammead/pull/338) Limit banner svg to group 5 |
+| 0.2.3   | [PR#323](https://github.com/BBC/psammead/pull/323) Update readme storybook badge |
 | 0.2.2   | [PR#264](https://github.com/BBC/psammead/pull/319) Resolving package-lock issues. |
 | 0.2.1   | [PR#264](https://github.com/BBC/psammead/pull/264) Resolving package-lock issues. |
 | 0.2.0   | [PR#253](https://github.com/BBC-News/psammead/pull/253) Add support for high contrast mode and print |

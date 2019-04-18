@@ -1,4 +1,4 @@
-# gel-foundations &middot; [![GitHub license](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](https://github.com/bbc/psammead/blob/latest/LICENSE) [![npm version](https://img.shields.io/npm/v/@bbc/gel-foundations.svg)](https://www.npmjs.com/package/@bbc/gel-foundations) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/bbc/psammead/blob/latest/CONTRIBUTING.md)
+# gel-foundations - [![Known Vulnerabilities](https://snyk.io/test/github/bbc/psammead/badge.svg?targetFile=packages%2Futilities%2Fgel-foundations%2Fpackage.json)](https://snyk.io/test/github/bbc/psammead?targetFile=packages%2Futilities%2Fgel-foundations%2Fpackage.json) [![GitHub license](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](https://github.com/bbc/psammead/blob/latest/LICENSE) [![npm version](https://img.shields.io/npm/v/@bbc/gel-foundations.svg)](https://www.npmjs.com/package/@bbc/gel-foundations) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/bbc/psammead/blob/latest/CONTRIBUTING.md)
 
 This package provides a range of string constants for use in CSS, intended to help implement [BBC GEL-compliant](https://www.bbc.co.uk/gel/articles/what-is-gel) webpages and components.
 
@@ -21,7 +21,7 @@ import { GEL_GROUP_3_SCREEN_WIDTH_MIN } from '@bbc/gel-foundations/breakpoints';
 
 import { GEL_GUTTER_ABOVE_600PX } from '@bbc/gel-foundations/spacings';
 
-import { GEL_BREVIER } from '@bbc/gel-foundations/typography';
+import { getLongPrimer } from '@bbc/gel-foundations/typography';
 ```
 
 These values can then be used directly within CSS declarations in code:
@@ -31,17 +31,39 @@ import { css } from 'styled-components';
 
 const SomeStyledComponent = css`
   font-family: ${GEL_FF_REITH_SANS};
+  ${getLongPrimer(script)};
 
   @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
     grid-gap: ${GEL_GUTTER_ABOVE_600PX};
-    ${GEL_BREVIER};
   }
 `;
 ```
 
 To allow the typography to be fully accessible and responsive, please note that you should apply a default font-size to the document root (e.g. `html { font-size: 100% }`).
 
-Our typography uses `em` for font-size and `rem` for line-height. `em` allows modularity of components: you can change the component font-size by changing the font-size of its container. `rem` is relative to the document root, so we use that for line-height and spacing for a consistent look-and-feel across the document. You can read our [detailed analysis of "REMs vs EMs for spacing"](https://github.com/bbc/simorgh/blob/latest/docs/Spacing-Units.md) for more information.
+Our typography uses `rem` for font-size and line-height. `rem` is relative to the document root, so we use that for font-size and line-height and spacing for a consistent look-and-feel across the document. You can read our [detailed analysis of "REMs vs EMs for spacing"](https://github.com/bbc/simorgh/blob/latest/docs/Spacing-Units.md) for more information.
+
+### Script support
+
+The utility typography function (e.g. `getLongPrimer('arabic')`) receives a script argument which is an object with the different script GEL Types Sizes and returns the `font-sizes` and `line-heights` for the specific GEL Type (e.g. `Long Premier`).
+
+You can import the script doing `import { arabic } from '@bbc/gel-foundations/scripts`. By default you should import the `latin` script as found on the [GEL typography guidelines](https://www.bbc.co.uk/gel/guidelines/typography#type-sizes).
+
+In addition to Latin script defaults, Psammead supports typography for a number of other scripts. We have grouped the scripts that share similiar features as follows:
+
+| Group Name                  | Services |             Rationale       |
+| --------------------------- | -------- | --------------------------- | 
+| latin-and-cyrillic          | News, Hausa, Gahuza, Somali, Swahili, Igbo, Pidgin, Afaan Oromo, Yoruba, Azeri, Indonesia, Uzbek, Serbian, Russian, Ukrainian, Kyrgyz, Uzbek | The typography values for Latin and Cyrillic characters are identical |
+| latin-with-diacritics | Vietnamese, Mundo, Afrique, Brasil, Turkish | The diacritics make these values differ from Latin | 
+| arabic                      | Urdu, Arabic, Persian | Group as they use the Arabic alphabet | 
+| arabic-pashto               | Pashto | Contains a subset of glyphs that mean it differs from Arabic | 
+| no-ascenders-or-descenders  | Korean, Japanese, Zhongwen, Ukchina, Tigrinya, Amharic | Group all alphabets without ascenders or descenders. This could be implemented as chinese, korean, ethiopic | Hindi, Nepali, Gujarati, Punjabi, Marathi, Telegu | The typography values for Devanagari and Gurmukhi characters are identical |
+| devanagari-and-gurmukhi     |  Hindi, Nepali, Gujarati, Punjabi, Marathi, Telegu | The typography values for Devanagari and Gurmukhi characters are identical |   
+| thai                        | Thai     | Bespoke to the Thai characters       | 
+| bengali                     | Bengali  | Bespoke to the Bengal characters     | 
+| burmese                     | Burmese  | Bespoke to the Burmese characters    | 
+| sinhalese                   | Sinhala  | Bespoke to the Sinhalese characters  | 
+| tamil                       | Tamil    | Bespoke to the Tamil characters      | 
 
 ## Contributing
 

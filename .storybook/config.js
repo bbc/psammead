@@ -1,20 +1,37 @@
 import React, { Fragment } from 'react';
-import { configure, addDecorator } from '@storybook/react';
-import { setOptions } from '@storybook/addon-options';
+import { configure, addDecorator, addParameters } from '@storybook/react';
+import { create } from '@storybook/theming';
 import styledNormalize from 'styled-normalize';
 import { createGlobalStyle } from 'styled-components';
 import {
   AMP_SCRIPT,
   AMP_NO_SCRIPT,
 } from '@bbc/psammead-assets/amp-boilerplate';
+import {
+  F_REITH_SERIF_MEDIUM,
+  F_REITH_SERIF_MEDIUM_ITALIC,
+  F_REITH_SANS_REGULAR,
+  F_REITH_SANS_ITALIC,
+  F_REITH_SANS_BOLD,
+  F_REITH_SANS_BOLD_ITALIC,
+} from '@bbc/psammead-styles/fonts';
 import Helmet from 'react-helmet';
+import { initializeRTL } from 'storybook-addon-rtl';
 
-setOptions({
-  name: 'BBC Psammead',
-  url: 'https://github.com/bbc/psammead',
-  addonPanelInRight: true,
-  sidebarAnimations: true,
-  sortStoriesByKind: true,
+const theme = create({
+  base: 'light',
+  brandTitle: 'BBC Psammead',
+  brandUrl: 'https://github.com/bbc/psammead',
+  brandImage:
+    'https://user-images.githubusercontent.com/11341355/54079666-af202780-42d8-11e9-9108-e47ea27fddc5.png',
+});
+
+addParameters({
+  options: {
+    panelPosition: 'right',
+    sidebarAnimations: true,
+    theme,
+  },
 });
 
 const GlobalStyle = createGlobalStyle`
@@ -29,27 +46,12 @@ const GlobalStyle = createGlobalStyle`
     box-sizing: inherit;
   }
 
-  @font-face {
-    font-display: optional;
-    font-family: ReithSansNewsRegular;
-    font-style: normal;
-    font-weight: 400;
-    src: url('https://gel.files.bbci.co.uk/r2.302/BBCReithSans_W_Rg.woff2') format('woff2'), url('https://gel.files.bbci.co.uk/r2.302/BBCReithSans_W_Rg.woff') format('woff');
-  }
-  @font-face {
-    font-display: optional;
-    font-family: ReithSerifNewsMedium;
-    font-style: normal;
-    font-weight: 600;
-    src: url('https://gel.files.bbci.co.uk/r2.302/BBCReithSerif_W_Md.woff2') format('woff2'), url('https://gel.files.bbci.co.uk/r2.302/BBCReithSerif_W_Md.woff') format('woff');
-  }
-  @font-face {
-    font-display: optional;
-    font-family: ReithSansNewsBold;
-    font-style: normal;
-    font-weight: 700;
-    src: url('https://gel.files.bbci.co.uk/r2.302/BBCReithSans_W_Bd.woff2') format('woff2'), url('https://gel.files.bbci.co.uk/r2.302/BBCReithSans_W_Bd.woff') format('woff');
-  }
+  ${F_REITH_SERIF_MEDIUM}
+  ${F_REITH_SERIF_MEDIUM_ITALIC}
+  ${F_REITH_SANS_REGULAR}
+  ${F_REITH_SANS_ITALIC}
+  ${F_REITH_SANS_BOLD}
+  ${F_REITH_SANS_BOLD_ITALIC}
 `;
 
 addDecorator(story => (
@@ -75,6 +77,7 @@ export const ampDecorator = story => (
 
 function loadAllStories() {
   require('glob-loader!./stories.pattern');
+  initializeRTL();
 }
 
 configure(loadAllStories, module);

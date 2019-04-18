@@ -1,10 +1,14 @@
 import { testUtilityPackages } from '@bbc/psammead-test-helpers';
 import * as spacings from './spacings';
 import * as breakpoints from './breakpoints';
+import * as propTypes from './prop-types';
 import * as typography from './typography';
+import * as scripts from './scripts';
 import * as spacingsFromSrc from './src/spacings';
 import * as breakpointsFromSrc from './src/breakpoints';
+import * as propTypesFromSrc from './src/prop-types';
 import * as typographyFromSrc from './src/typography';
+import * as scriptsFromSrc from './src/scripts';
 
 const spacingsExpectedExports = {
   GEL_SPACING: 'string',
@@ -19,6 +23,7 @@ const spacingsExpectedExports = {
 };
 
 const breakpointsExpectedExports = {
+  GEL_GROUP_A_MAX_WIDTH: 'number',
   GEL_GROUP_B_MIN_WIDTH: 'number',
   GEL_GROUP_B_MAX_WIDTH: 'number',
   GEL_GROUP_CD_MIN_WIDTH: 'number',
@@ -34,6 +39,11 @@ const breakpointsExpectedExports = {
   GEL_GROUP_4_SCREEN_WIDTH_MAX: 'string',
   GEL_GROUP_5_SCREEN_WIDTH_MIN: 'string',
   MEDIA_QUERY_TYPOGRAPHY: 'object',
+};
+
+const propTypesExpectedExports = {
+  scriptPropType: 'object',
+  default: 'object',
 };
 
 const typographyExpectedExports = {
@@ -55,24 +65,64 @@ const typographyExpectedExports = {
   GEL_LONG_PRIMER: 'string',
   GEL_BREVIER: 'string',
   GEL_MINION: 'string',
+  getCanon: 'function',
+  getTrafalgar: 'function',
+  getParagon: 'function',
+  getDoublePica: 'function',
+  getGreatPrimer: 'function',
+  getBodyCopy: 'function',
+  getPica: 'function',
+  getLongPrimer: 'function',
+  getBrevier: 'function',
+  getMinion: 'function',
+  getAtlas: 'function',
+  getElephant: 'function',
+  getImperial: 'function',
+  getRoyal: 'function',
+  getFoolscap: 'function',
+};
+
+const scriptsExpectedExports = {
+  latin: 'object',
+  cyrillic: 'object',
+  latinDiacritics: 'object',
+  arabic: 'object',
+  arabicPashto: 'object',
+  bengali: 'object',
+  burmese: 'object',
+  hindi: 'object',
+  nepali: 'object',
+  sinhalese: 'object',
+  tamil: 'object',
+  thai: 'object',
+  chinese: 'object',
+  korean: 'object',
+  ethiopic: 'object',
+  default: 'object',
 };
 
 const expectedExports = {
   spacings: spacingsExpectedExports,
   breakpoints: breakpointsExpectedExports,
+  propTypes: propTypesExpectedExports,
   typography: typographyExpectedExports,
+  scripts: scriptsExpectedExports,
 };
 
 const actualExports = {
   spacings,
   breakpoints,
+  propTypes,
   typography,
+  scripts,
 };
 
 const actualExportsFromSrc = {
   spacings: spacingsFromSrc,
   breakpoints: breakpointsFromSrc,
+  propTypes: propTypesFromSrc,
   typography: typographyFromSrc,
+  scripts: scriptsFromSrc,
 };
 
 describe('Gel constants', () => {
