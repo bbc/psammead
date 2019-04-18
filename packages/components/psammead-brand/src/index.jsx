@@ -1,7 +1,8 @@
 import React from 'react';
 import styled, { css } from 'styled-components';
-import { string, number, node } from 'prop-types';
+import { string, number, node, shape } from 'prop-types';
 import { C_POSTBOX, C_WHITE } from '@bbc/psammead-styles/colours';
+import { news } from '@bbc/psammead-assets/svgs';
 import VisuallyHiddenText from '@bbc/psammead-visually-hidden-text';
 import {
   GEL_GROUP_2_SCREEN_WIDTH_MIN,
@@ -31,10 +32,6 @@ const BANNER_HEIGHT = '5rem'; // 80px
 
 const SVG_HEIGHT_PX = 24;
 const SVG_HEIGHT = `${SVG_HEIGHT_PX / 16}rem`;
-const SVG_WIDTH_PX = 167.95;
-const SVG_WIDTH = `${SVG_WIDTH_PX / 16}rem`;
-
-const VIEWBOX_VALUES = `0 0 ${SVG_WIDTH_PX} ${SVG_HEIGHT_PX}`;
 
 const StyledWrapper = styled.div`
   ${layoutWrapperWithoutGrid};
@@ -69,7 +66,6 @@ const StyledSpan = styled.span`
 const BrandSvg = styled.svg`
   display: block;
   height: ${SVG_HEIGHT};
-  width: ${props => (props.width ? `${props.width / 16}rem` : SVG_WIDTH)};
   margin-top: ${SVG_TOP_OFFSET};
   fill: #fff;
   @media screen and (-ms-high-contrast: active), print {
@@ -77,19 +73,19 @@ const BrandSvg = styled.svg`
   }
 `;
 
-const Brand = ({ brandName, children, svgWidth }) => (
+const Brand = ({ brandName, svg }) => (
   <StyledWrapper>
     <ConstraintWrapper>
       <StyledLink href="https://www.bbc.co.uk/news">
         <StyledSpan>
           <BrandSvg
-            viewBox={VIEWBOX_VALUES}
+            viewBox={`0 0 ${svg.viewbox.width} ${svg.viewbox.height} `}
             xmlns="http://www.w3.org/2000/svg"
             focusable="false"
             aria-hidden="true"
-            width={svgWidth}
+            width={svg.viewbox.width}
           >
-            {children}
+            {svg.group}
           </BrandSvg>
           <VisuallyHiddenText>{brandName}</VisuallyHiddenText>
         </StyledSpan>
@@ -99,13 +95,19 @@ const Brand = ({ brandName, children, svgWidth }) => (
 );
 
 Brand.defaultProps = {
-  svgWidth: 167.95,
+  svg: news,
 };
 
 Brand.propTypes = {
   brandName: string.isRequired,
-  svgWidth: number,
-  children: node.isRequired,
+  svg: shape({
+    group: node,
+    ratio: number,
+    viewbox: shape({
+      height: number,
+      width: number,
+    }),
+  }),
 };
 
 export default Brand;
