@@ -2,7 +2,7 @@
 
 ## Description
 
-The `StoryPromo` component is designed to be used on 'index' pages, which are pages that link to other articles/stories. It supports having an image on the left of the promo with text on the right. This text can be any collection of nodes, however typically these would be a headline, text summary and timestamp.
+The `StoryPromo` component is designed to be used on 'index' pages, which are pages that link to other articles/stories. It supports having an image on the left of the promo with info on the right. This info can be any collection of nodes, however typically these would be a headline, text summary and timestamp.
 
 ## Installation
 
@@ -13,7 +13,7 @@ The `StoryPromo` component is designed to be used on 'index' pages, which are pa
 | Argument | Type   | Required | Default | Example        |
 | -------- | ------ | -------- | ------- | -------------- |
 | image    | node   | No       | Null    | `<img>`          |
-| text     | node   | Yes      | N/A     | `<h2>Title</h2>` |
+| info     | node   | Yes      | N/A     | `<h2>Title</h2>` |
 
 ## Headline Props
 
@@ -29,7 +29,7 @@ The `StoryPromo` component is designed to be used on 'index' pages, which are pa
 
 ## Usage
 
-The typical use-case of this component is as displayed below. A Image sits on the left side of the promo with text elements on the left. These text elements are typically a headline, text summary paragraph and timestamp. The `Headline` and `Summary` components are provided by this package and can be imported as seen below.
+The typical use-case of this component is as displayed below. A Image sits on the left side of the promo with info elements on the right. These info elements are typically a headline, text summary paragraph and timestamp. The `Headline` and `Summary` components are provided by this package and can be imported as seen below.
 
 ```jsx
 import React, { Fragment } from 'react';
@@ -40,7 +40,7 @@ const Image = (
   <img src="https://foobar.com/image.jpg" />
 );
 
-const Text = (
+const Info = (
   <Fragment>
     <Headline script={latin}>The headline of the promo</Headline>
     <Summary script={latin}>The summary of the promo</Summary>
@@ -50,7 +50,7 @@ const Text = (
 
 <StoryPromo
   image={Image}
-  text={Text}
+  info={Info}
 />
 ```
 

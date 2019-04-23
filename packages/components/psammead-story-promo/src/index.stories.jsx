@@ -20,7 +20,7 @@ const ImageComponent = (
 );
 
 // eslint-disable-next-line react/prop-types
-const TextComponent = ({ headlineText, summaryText }) => (
+const InfoComponent = ({ headlineText, summaryText }) => (
   <Fragment>
     <Headline script={latin}>{headlineText}</Headline>
     <Summary script={latin}>{summaryText}</Summary>
@@ -35,11 +35,11 @@ storiesOf('StoryPromo', module)
   .add(
     'default',
     inputProvider(['Headline', 'Summary'], (headlineText, summaryText) => {
-      const Text = (
-        <TextComponent headlineText={headlineText} summaryText={summaryText} />
+      const Info = (
+        <InfoComponent headlineText={headlineText} summaryText={summaryText} />
       );
 
-      return <StoryPromo image={ImageComponent} text={Text} />;
+      return <StoryPromo image={ImageComponent} info={Info} />;
     }),
     { notes },
   );

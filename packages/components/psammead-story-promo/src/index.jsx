@@ -70,16 +70,16 @@ export const Summary = styled.p`
   padding-bottom: ${GEL_SPACING};
 `;
 
-const StoryPromo = ({ image, text }) => (
+const StoryPromo = ({ image, info }) => (
   <StoryPromoWrapper>
     <ImageGridItem>{image}</ImageGridItem>
-    <TextGridItem>{text}</TextGridItem>
+    <TextGridItem>{info}</TextGridItem>
   </StoryPromoWrapper>
 );
 
 StoryPromo.propTypes = {
   image: node.isRequired,
-  text: node.isRequired,
+  info: node.isRequired,
 };
 
 export default StoryPromo;
