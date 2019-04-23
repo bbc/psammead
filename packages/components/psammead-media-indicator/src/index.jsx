@@ -21,19 +21,10 @@ const PlayIcon = styled.svg`
   fill: ${C_EBON};
 `;
 
-const StyledTimeDuration = styled.time`
+const TimeDuration = styled.time`
   vertical-align: middle;
   margin: 0 ${GEL_SPACING_HLF};
 `;
-
-const TimeDuration = ({ children, datetime }) => (
-  <StyledTimeDuration dateTime={datetime}>{children}</StyledTimeDuration>
-);
-
-TimeDuration.propTypes = {
-  children: node.isRequired,
-  datetime: string.isRequired,
-};
 
 const MediaIndicator = ({ datetime, duration, offscreenText }) => (
   <MediaIndicatorWrapper>
@@ -47,7 +38,7 @@ const MediaIndicator = ({ datetime, duration, offscreenText }) => (
       <polygon points="3,32 29,16 3,0" />
     </PlayIcon>
     {duration && datetime && offscreenText ? (
-      <TimeDuration datetime={datetime}>
+      <TimeDuration dateTime={datetime}>
         <VisuallyHiddenText>{offscreenText}</VisuallyHiddenText>
         <span aria-hidden="true">{duration}</span>
       </TimeDuration>
