@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { string, node } from 'prop-types';
+import { string } from 'prop-types';
 import { C_WHITE, C_EBON } from '@bbc/psammead-styles/colours';
 import VisuallyHiddenText from '@bbc/psammead-visually-hidden-text';
 import { GEL_SPACING, GEL_SPACING_HLF } from '@bbc/gel-foundations/spacings';
