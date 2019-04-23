@@ -82,7 +82,6 @@ const Brand = ({ brandName, svg }) => (
             xmlns="http://www.w3.org/2000/svg"
             focusable="false"
             aria-hidden="true"
-            width={svg.viewbox.width}
           >
             {svg.group}
           </BrandSvg>
