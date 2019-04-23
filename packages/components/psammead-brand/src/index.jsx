@@ -96,12 +96,12 @@ const Brand = ({ brandName, svg }) => (
 Brand.propTypes = {
   brandName: string.isRequired,
   svg: shape({
-    group: node,
-    ratio: number,
+    group: node.isRequired,
+    ratio: number.isRequired,
     viewbox: shape({
       height: number,
       width: number,
-    }),
+    }).isRequired,
   }).isRequired,
 };
 

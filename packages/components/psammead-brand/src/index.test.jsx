@@ -12,6 +12,7 @@ const svg = {
     height: 24,
     width: 167.95,
   },
+  ratio: 6.9979,
 };
 
 describe('Brand', () => {
