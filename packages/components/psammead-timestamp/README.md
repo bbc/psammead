@@ -22,12 +22,20 @@ When a date or time is to be displayed inline inside a paragraph.
 | Argument   | Type   | Required | Default | Example                  |
 |------------|--------|----------|---------|--------------------------|
 | `datetime` | string ([supported formats](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/time#Valid_datetime_Values)) | Yes | N/A | `2006-09-24T05:00-07:00` |
+| `typographyStyle` | string | Yes | N/A | `font-size: 1rem` |
 
 ## Usage
 
-```js
+```jsx
+import { latin } from '@bbc/gel-foundations/scripts';
+import { getPica } from '@bbc/gel-foundations/typography';
+
+const typographyStyle = getPica(latin);
+
 const WrappingContainer = () => (
-  <Timestamp datetime="2019-03-01T14:00+00:00">Friday 1 March 2019</Timestamp>
+  <Timestamp datetime="2019-03-01T14:00+00:00" typographyStyle={typographyStyle}>
+    Friday 1 March 2019
+  </Timestamp>
 );
 ```
 

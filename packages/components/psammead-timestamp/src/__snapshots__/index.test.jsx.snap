@@ -2,8 +2,8 @@
 
 exports[`Timestamp should render Timestamp with a prefix 1`] = `
 .c0 {
-  font-size: 0.875rem;
-  line-height: 1rem;
+  font-size: 0.9375rem;
+  line-height: 1.25rem;
   color: #757575;
   display: block;
   font-family: ReithSans,Helvetica,Arial,sans-serif;
@@ -16,13 +16,15 @@ exports[`Timestamp should render Timestamp with a prefix 1`] = `
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
   .c0 {
-    line-height: 1.125rem;
+    font-size: 1rem;
+    line-height: 1.25rem;
   }
 }
 
 @media (min-width:37.5rem) {
   .c0 {
-    font-size: 0.8125rem;
+    font-size: 1rem;
+    line-height: 1.25rem;
   }
 }
 
@@ -36,8 +38,8 @@ exports[`Timestamp should render Timestamp with a prefix 1`] = `
 
 exports[`Timestamp should render Timestamp with datetime attribute and text 1`] = `
 .c0 {
-  font-size: 0.875rem;
-  line-height: 1rem;
+  font-size: 0.9375rem;
+  line-height: 1.25rem;
   color: #757575;
   display: block;
   font-family: ReithSans,Helvetica,Arial,sans-serif;
@@ -50,13 +52,15 @@ exports[`Timestamp should render Timestamp with datetime attribute and text 1`] 
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
   .c0 {
-    line-height: 1.125rem;
+    font-size: 1rem;
+    line-height: 1.25rem;
   }
 }
 
 @media (min-width:37.5rem) {
   .c0 {
-    font-size: 0.8125rem;
+    font-size: 1rem;
+    line-height: 1.25rem;
   }
 }
 

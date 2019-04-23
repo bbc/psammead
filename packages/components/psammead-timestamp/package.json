@@ -1,6 +1,6 @@
 {
   "name": "@bbc/psammead-timestamp",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "main": "dist/index.js",
   "description": "React styled component for displaying a timestamp with a suitable semantic markup",
   "repository": {

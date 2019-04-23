@@ -5,14 +5,11 @@ import {
   GEL_SPACING_HLF,
   GEL_SPACING_DBL,
 } from '@bbc/gel-foundations/spacings';
-import {
-  GEL_BREVIER,
-  GEL_FF_REITH_SANS,
-} from '@bbc/gel-foundations/typography';
+import { GEL_FF_REITH_SANS } from '@bbc/gel-foundations/typography';
 import { C_CLOUD_DARK } from '@bbc/psammead-styles/colours';
 
 const StyledTimestamp = styled.time`
-  ${GEL_BREVIER};
+  ${props => props.typographyStyle}
   color: ${C_CLOUD_DARK};
   display: block;
   font-family: ${GEL_FF_REITH_SANS};
@@ -22,13 +19,16 @@ const StyledTimestamp = styled.time`
   }
 `;
 
-const Timestamp = ({ children, datetime }) => (
-  <StyledTimestamp dateTime={datetime}>{children}</StyledTimestamp>
+const Timestamp = ({ children, datetime, typographyStyle }) => (
+  <StyledTimestamp dateTime={datetime} typographyStyle={typographyStyle}>
+    {children}
+  </StyledTimestamp>
 );
 
 Timestamp.propTypes = {
   children: node.isRequired,
   datetime: string.isRequired,
+  typographyStyle: string.isRequired,
 };
 
 export default Timestamp;
