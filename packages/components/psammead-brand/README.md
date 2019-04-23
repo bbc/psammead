@@ -13,7 +13,7 @@ The `Brand` component provides the BBC service logo (as SVG), nested inside a st
 | Argument  | Type   | Required | Default | Example      |
 | --------- | ------ | -------- | ------- | ------------ |
 | brandName | String | yes      | N/A     | `'BBC News'` |
-| svg | Object | yes | N/A | { group: `(<g fillrule="evenodd"><path d="M84.32" /></g>)`, viewbox: { height: 24, width: 167.95 } } |
+| svg | Object | yes | N/A | { group: `(<g fillrule="evenodd"><path d="M84.32" /></g>)`, viewbox: { height: 24, width: 167.95 }, ratio: 6.9979 } |
 
 ## Usage
 
