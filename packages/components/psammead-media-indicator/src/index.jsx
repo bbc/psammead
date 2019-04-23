@@ -15,6 +15,11 @@ const MediaIndicatorWrapper = styled.div`
   color: ${C_EBON};
 `;
 
+const FlexWrapper = styled.div`
+  display: flex;
+  align-items: center;
+`;
+
 const PlayIcon = styled.svg`
   vertical-align: middle;
   margin: 0 ${GEL_SPACING_HLF};
@@ -28,21 +33,23 @@ const TimeDuration = styled.time`
 
 const MediaIndicator = ({ datetime, duration, offscreenText }) => (
   <MediaIndicatorWrapper>
-    <PlayIcon
-      aria-hidden="true"
-      viewBox="0 0 32 32"
-      width="12px"
-      height="12px"
-      focusable="false"
-    >
-      <polygon points="3,32 29,16 3,0" />
-    </PlayIcon>
-    {duration && datetime && offscreenText ? (
-      <TimeDuration dateTime={datetime}>
-        <VisuallyHiddenText>{offscreenText}</VisuallyHiddenText>
-        <span aria-hidden="true">{duration}</span>
-      </TimeDuration>
-    ) : null}
+    <FlexWrapper>
+      <PlayIcon
+        aria-hidden="true"
+        viewBox="0 0 32 32"
+        width="12px"
+        height="12px"
+        focusable="false"
+      >
+        <polygon points="3,32 29,16 3,0" />
+      </PlayIcon>
+      {duration && datetime && offscreenText ? (
+        <TimeDuration dateTime={datetime}>
+          <VisuallyHiddenText>{offscreenText}</VisuallyHiddenText>
+          <span aria-hidden="true">{duration}</span>
+        </TimeDuration>
+      ) : null}
+    </FlexWrapper>
   </MediaIndicatorWrapper>
 );
 
