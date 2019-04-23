@@ -41,7 +41,7 @@ storiesOf('Caption', module)
     { notes, knobs: { escapeHTML: false } },
   )
   .add(
-    'containing an inline link and italicisation',
+    'containing italicisation',
     inputProvider([], () => (
       <Caption script={latin}>
         Example text with <i>italics</i>
