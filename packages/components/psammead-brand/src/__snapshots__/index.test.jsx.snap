@@ -89,7 +89,6 @@ exports[`Brand should render correctly 1`] = `
           className="c5"
           focusable="false"
           viewBox="0 0 167.95 24 "
-          width={167.95}
           xmlns="http://www.w3.org/2000/svg"
         >
           <g
