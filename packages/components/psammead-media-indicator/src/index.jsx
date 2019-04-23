@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { string } from 'prop-types';
+import { string, node } from 'prop-types';
 import { C_WHITE, C_EBON } from '@bbc/psammead-styles/colours';
 import VisuallyHiddenText from '@bbc/psammead-visually-hidden-text';
 import { GEL_SPACING, GEL_SPACING_HLF } from '@bbc/gel-foundations/spacings';
@@ -21,10 +21,19 @@ const PlayIcon = styled.svg`
   fill: ${C_EBON};
 `;
 
-const TimeDuration = styled.time`
+const StyledTimeDuration = styled.time`
   vertical-align: middle;
   margin: 0 ${GEL_SPACING_HLF};
 `;
+
+const TimeDuration = ({ children, datetime }) => (
+  <StyledTimeDuration dateTime={datetime}>{children}</StyledTimeDuration>
+);
+
+TimeDuration.propTypes = {
+  children: node.isRequired,
+  datetime: string.isRequired,
+};
 
 const MediaIndicator = ({ datetime, duration, offscreenText }) => (
   <MediaIndicatorWrapper>

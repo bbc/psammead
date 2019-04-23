@@ -50,6 +50,7 @@ exports[`MediaIndicator should render correctly 1`] = `
   </svg>
   <time
     className="c2"
+    dateTime="PT2M15S"
   >
     <span
       className="c3"
