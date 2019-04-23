@@ -78,7 +78,7 @@ const Brand = ({ brandName, svg }) => (
       <StyledLink href="https://www.bbc.co.uk/news">
         <StyledSpan>
           <BrandSvg
-            viewBox={`0 0 ${svg.viewbox.width} ${svg.viewbox.height} `}
+            viewBox={`0 0 ${svg.viewbox.width} ${svg.viewbox.height}`}
             xmlns="http://www.w3.org/2000/svg"
             focusable="false"
             aria-hidden="true"
