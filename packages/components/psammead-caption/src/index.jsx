@@ -1,5 +1,5 @@
 import styled, { css } from 'styled-components';
-import { objectOf, object } from 'prop-types';
+import { shape } from 'prop-types';
 import {
   GEL_SPACING,
   GEL_MARGIN_ABOVE_400PX,
@@ -16,6 +16,7 @@ import {
 } from '@bbc/gel-foundations/typography';
 
 import { C_CLOUD_DARK } from '@bbc/psammead-styles/colours';
+import { scriptPropType } from '@bbc/gel-foundations/prop-types';
 
 // Defined separately since in future will need to apply
 // only when the script supports italic text
@@ -39,7 +40,7 @@ const Caption = styled.figcaption`
 `;
 
 Caption.propTypes = {
-  script: objectOf(object).required,
+  script: shape(scriptPropType).isRequired,
 };
 
 export default Caption;

@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 1.0.3   | [PR#](https://github.com/bbc/psammead/pull/) Add custom propTypes shape |
 | 1.0.2   | [PR#424](https://github.com/bbc/psammead/pull/424) Add Snyk badge to readme |
 | 1.0.1   | [PR#420](https://github.com/bbc/psammead/pull/420) Add language variants knob to Paragraph stories |
 | 1.0.0   | [PR#414](https://github.com/bbc/psammead/pull/414) Add support for different scripts typographies |
