@@ -1,6 +1,6 @@
 {
   "name": "@bbc/psammead-sitewide-links",
-  "version": "0.3.5",
+  "version": "0.3.6",
   "description": "React styled component for a sitewide-links",
   "main": "dist/index.js",
   "repository": {
@@ -28,6 +28,7 @@
     "nanoid": "^2.0.0"
   },
   "devDependencies": {
+    "@bbc/psammead-storybook-helpers": "^1.1.0",
     "@bbc/psammead-test-helpers": "^0.3.3",
     "prop-types": "^15.6.2",
     "react": "^16.6.3",
