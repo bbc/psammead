@@ -88,7 +88,8 @@ exports[`Brand should render correctly 1`] = `
           aria-hidden="true"
           className="c5"
           focusable="false"
-          viewBox="0 0 167.95 24 "
+          viewBox="0 0 167.95 24"
+          width={NaN}
           xmlns="http://www.w3.org/2000/svg"
         >
           <g
