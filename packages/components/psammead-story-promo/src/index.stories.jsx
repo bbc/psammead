@@ -15,7 +15,7 @@ const ImageComponent = (
       'Image src',
       'https://ichef.bbci.co.uk/news/660/cpsprodpb/909B/production/_106491073_gettyimages-909260196.jpg',
     )}
-    width="100%"
+    width="640"
   />
 );
 
