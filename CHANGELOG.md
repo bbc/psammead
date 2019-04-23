@@ -1,6 +1,5 @@
 # Psammead Changelog
 
-
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
