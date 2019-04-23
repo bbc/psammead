@@ -2,7 +2,7 @@
 
 ## Description
 
-The `Brand` component provides the BBC service logo (as SVG), nested inside a styled span, link and div. The link is currently hardcoded to "https://www.bbc.co.uk/news". `Brand` takes a `brandName` and an `svg` as props. `brandName` is passed to a [VisuallyHiddenText](https://github.com/bbc/psammead/tree/latest/packages/components/VisuallyHiddenText) component, nested inside Brand. Note that this does not currently affect the branding itself, which always renders as `BBC NEWS`. `group` in the `svg` is passed to an svg container inside the `Brand`.
+The `Brand` component provides the BBC service logo (as SVG), nested inside a styled span, link and div. The link is currently hardcoded to "https://www.bbc.co.uk/news". `Brand` takes a `brandName` and an `svg` as props. `brandName` is passed to a [VisuallyHiddenText](https://github.com/bbc/psammead/tree/latest/packages/components/VisuallyHiddenText) component, nested inside Brand. Note that this does not currently affect the branding itself, which always renders as `BBC NEWS`. The `svg` prop must contain a `group`, `viewbox` values and a `ratio`, which is used within an `svg` element, rendered at a height of 24px. Examples of the `svg` object can be found in [@bbc/psammead-assets](https://github.com/bbc/psammead/blob/latest/packages/utilities/psammead-assets/README.md#service-svgs)
 
 ## Installation
 

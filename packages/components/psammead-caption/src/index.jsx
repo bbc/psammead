@@ -36,6 +36,9 @@ const Caption = styled.figcaption`
   @media (min-width: ${GEL_GROUP_4_SCREEN_WIDTH_MIN}) {
     padding: ${GEL_SPACING} 0;
   }
+  & i {
+    font-style: normal;
+  }
 `;
 
 Caption.propTypes = {
