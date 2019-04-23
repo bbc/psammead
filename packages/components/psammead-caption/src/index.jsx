@@ -14,7 +14,6 @@ import {
   getLongPrimer,
   GEL_FF_REITH_SANS,
 } from '@bbc/gel-foundations/typography';
-
 import { C_CLOUD_DARK } from '@bbc/psammead-styles/colours';
 import { scriptPropType } from '@bbc/gel-foundations/prop-types';
 
