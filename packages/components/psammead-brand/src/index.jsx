@@ -99,8 +99,8 @@ Brand.propTypes = {
     group: node.isRequired,
     ratio: number.isRequired,
     viewbox: shape({
-      height: number,
-      width: number,
+      height: number.isRequired,
+      width: number.isRequired,
     }).isRequired,
   }).isRequired,
 };
