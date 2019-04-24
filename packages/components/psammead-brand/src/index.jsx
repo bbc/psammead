@@ -65,6 +65,7 @@ const StyledSpan = styled.span`
 const BrandSvg = styled.svg`
   display: block;
   height: ${SVG_HEIGHT};
+  width: ${props => ((SVG_HEIGHT_PX * props.ratio) / 16).toFixed(2)}rem;
   margin-top: ${SVG_TOP_OFFSET};
   fill: #fff;
   @media screen and (-ms-high-contrast: active), print {
@@ -82,7 +83,7 @@ const Brand = ({ brandName, svg }) => (
             xmlns="http://www.w3.org/2000/svg"
             focusable="false"
             aria-hidden="true"
-            width={(SVG_HEIGHT_PX * svg.ratio).toFixed(2)}
+            ratio={svg.ratio}
           >
             {svg.group}
           </BrandSvg>
