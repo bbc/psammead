@@ -11,7 +11,6 @@ import {
   GEL_GROUP_5_SCREEN_WIDTH_MIN,
 } from '@bbc/gel-foundations/breakpoints';
 import {
-  getGreatPrimer,
   getPica,
   getLongPrimer,
   GEL_FF_REITH_SERIF,
@@ -56,10 +55,6 @@ export const Headline = styled.h3`
   margin: 0; /* Reset */
   padding-bottom: ${GEL_SPACING};
   font-weight: 700;
-
-  @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
-    ${props => (props.script ? getGreatPrimer(props.script) : '')};
-  }
 `;
 
 export const Summary = styled.p`
