@@ -6,31 +6,25 @@ import * as typography from '@bbc/gel-foundations/typography';
 import notes from '../README.md';
 import Timestamp from '.';
 
-const styles = [
-  'canon',
-  'pica',
-  'trafalgar',
-  'paragon',
-  'doublePica',
-  'greatPrimer',
-  'bodyCopy',
-  'longPrimer',
-  'minion',
-  'atlas',
-  'elephant',
-  'imperial',
-  'royal',
-  'foolscap',
-];
+const styles = Object.keys(typography)
+  .map(key => {
+    if (
+      typeof typography[key] === 'function' &&
+      key.substring(0, 3) === 'get'
+    ) {
+      return key.substring(3);
+    }
+    return null;
+  })
+  .filter(style => style);
 
 storiesOf('Timestamp', module)
   .addDecorator(withKnobs)
   .add(
     'default',
     () => {
-      const choice = select('Typography', styles, 'pica');
-      const selectedStyle = choice.charAt(0).toUpperCase() + choice.slice(1);
-      const typographyStyle = typography[`get${selectedStyle}`](latin);
+      const choice = select('Typography', styles, 'Pica');
+      const typographyStyle = typography[`get${choice}`](latin);
 
       return (
         <Timestamp datetime="1530947227000" typographyStyle={typographyStyle}>
@@ -43,9 +37,8 @@ storiesOf('Timestamp', module)
   .add(
     'with "updated" prefix',
     () => {
-      const choice = select('Typography', styles, 'pica');
-      const selectedStyle = choice.charAt(0).toUpperCase() + choice.slice(1);
-      const typographyStyle = typography[`get${selectedStyle}`](latin);
+      const choice = select('Typography', styles, 'Pica');
+      const typographyStyle = typography[`get${choice}`](latin);
 
       return (
         <Timestamp datetime="1530947227000" typographyStyle={typographyStyle}>
