@@ -2,14 +2,14 @@ import React, { Fragment } from 'react';
 import { storiesOf } from '@storybook/react';
 import { withKnobs, text } from '@storybook/addon-knobs';
 import { inputProvider } from '@bbc/psammead-storybook-helpers';
-import Img from '@bbc/psammead-image';
+import Image from '@bbc/psammead-image';
 import { latin } from '@bbc/gel-foundations/scripts';
 import Timestamp from '@bbc/psammead-timestamp';
 import notes from '../README.md';
 import StoryPromo, { Headline, Summary } from './index';
 
 const ImageComponent = (
-  <Img
+  <Image
     alt={text('Image alt text', '2019-03-01T14:00+00:00')}
     src={text(
       'Image src',
