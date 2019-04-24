@@ -1,11 +1,12 @@
 import styled from 'styled-components';
-import { objectOf, object } from 'prop-types';
+import { shape } from 'prop-types';
 import { C_SHADOW } from '@bbc/psammead-styles/colours';
 import { GEL_SPACING_TRPL } from '@bbc/gel-foundations/spacings';
 import {
   getBodyCopy,
   GEL_FF_REITH_SANS,
 } from '@bbc/gel-foundations/typography';
+import { scriptPropType } from '@bbc/gel-foundations/prop-types';
 
 const Paragraph = styled.p`
   ${props => (props.script ? getBodyCopy(props.script) : '')};
@@ -16,7 +17,7 @@ const Paragraph = styled.p`
 `;
 
 Paragraph.propTypes = {
-  script: objectOf(object).isRequired,
+  script: shape(scriptPropType).isRequired,
 };
 
 export default Paragraph;
