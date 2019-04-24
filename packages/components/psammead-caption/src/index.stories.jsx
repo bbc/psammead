@@ -22,7 +22,7 @@ storiesOf('Caption', module)
     inputProvider(
       ['visually hidden text', 'caption'],
       (hiddenText, captionText) => (
-        <Caption>
+        <Caption script={latin}>
           <VisuallyHiddenText>{hiddenText}</VisuallyHiddenText>
           {captionText}
         </Caption>
