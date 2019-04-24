@@ -4,9 +4,18 @@ This package provides a collection of common values that are used in storybook b
 
 ## Exports
 
-`LANGUAGE_VARIANTS` - A list of text samples in different languages.
+`LANGUAGE_VARIANTS` - A list of text samples in different languages, with the script and direction that should be used for that language.
 
-`inputProvider` - A function that provides support for selecting between the `text` and `select` storybook knobs. When using the `select` knob, users will be prompted to select a language, which will insert text from `LANGUAGE_VARIANTS` into the story.
+`inputProvider` - A function that provides support for previewing components in storybook in different languages. Takes two arguments, `slots` and `renderFn`.
+
+- `slots`: `[{ name, defaultText }]`
+  - `name`: String uniquely identifying this slot in the story. Required.
+  - `defaultText`: Default string to use when the story is showing English text. Optional.
+- `renderFn`: `(slotTexts, script, dir) => React.Component`
+  - `slotTexts`: Array of strings to insert into the story. Length and order corresponds to the provided `slots`.
+  - `script`: A [script](https://github.com/bbc/psammead/tree/latest/packages/utilities/gel-foundations#script-support) corresponding to the language selected by the storybook user.
+  - `dir`: Either `'ltr'` or `'rtl'`, corresponding to the language currently selected by the storybook user.
+  - Returns a react component.
 
 ## Installation
 
@@ -27,35 +36,40 @@ const defaultValue = 'This is a caption';
 const groupIdentifier = 'CAPTION VARIANTS';
 
 <Caption>
-  {select(label, LANGUAGE_VARIANTS, defaultValue, groupIdentifier)}
+  {select(label, LANGUAGE_VARIANTS, LANGUAGE_VARIANTS.English, groupIdentifier).text}
 </Caption>
 ```
 
 ### inputProvider
 
-N.B. the number of elements in the array should equal the number of arguments taken
-by the render function.
-
 ```jsx
+import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { withKnobs } from '@storybook/addon-knobs';
 import { inputProvider } from '@bbc/psammead-storybook-helpers';
+import Caption from '@bbc/psammead-caption';
+import VisuallyHiddenText from '@bbc/psammead-visually-hidden-text';
 
 storiesOf('Caption', module)
   .addDecorator(withKnobs)
   .add(
     'default',
     inputProvider(
-      ['caption', 'visually hidden text'],
-      (captionText, vhText) => (
-        <Caption>
-          <VisuallyHiddenText>{vhText}</VisuallyHiddenText>
+      [
+        { name: 'caption', defaultText: 'Students sitting an examination' },
+        { name: 'offscreen text', defaultText: 'Image Caption, ' },
+      ],
+      ([captionText, offscreenText], script, dir) => (
+        <Caption script={script} dir={dir}>
+          <VisuallyHiddenText script={script} dir={dir}>
+            {offscreenText}
+          </VisuallyHiddenText>
           {captionText}
         </Caption>
-      )
+      ),
     ),
-    { notes },
-  )
+    { knobs: { escapeHTML: false } },
+  );
 ```
 
 ## Contributing
