@@ -23,11 +23,15 @@ storiesOf('Timestamp', module)
   .add(
     'default',
     () => {
-      const choice = select('Typography', styles, 'Pica');
-      const typographyStyle = typography[`get${choice}`](latin);
+      const choice = select('Typography', styles, 'Brevier');
+      const typographyFunc = typography[`get${choice}`];
 
       return (
-        <Timestamp datetime="1530947227000" typographyStyle={typographyStyle}>
+        <Timestamp
+          datetime="1530947227000"
+          typographyFunc={typographyFunc}
+          script={latin}
+        >
           {text('Timestamp Text', '7 July 2018')}
         </Timestamp>
       );
@@ -37,11 +41,15 @@ storiesOf('Timestamp', module)
   .add(
     'with "updated" prefix',
     () => {
-      const choice = select('Typography', styles, 'Pica');
-      const typographyStyle = typography[`get${choice}`](latin);
+      const choice = select('Typography', styles, 'Brevier');
+      const typographyFunc = typography[`get${choice}`];
 
       return (
-        <Timestamp datetime="1530947227000" typographyStyle={typographyStyle}>
+        <Timestamp
+          datetime="1530947227000"
+          typographyFunc={typographyFunc}
+          script={latin}
+        >
           {text('Timestamp Text', 'Updated 7 July 2018')}
         </Timestamp>
       );
