@@ -41,5 +41,5 @@ storiesOf('StoryPromo', module)
 
       return <StoryPromo image={ImageComponent} info={Info} />;
     }),
-    { notes },
+    { notes, knobs: { escapeHTML: false } },
   );
