@@ -1,7 +1,7 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react'; // eslint-disable-line import/no-extraneous-dependencies
 import { text, select, withKnobs } from '@storybook/addon-knobs';
-import { latin } from '@bbc/gel-foundations/scripts';
+import scripts from '@bbc/gel-foundations/scripts';
 import * as typography from '@bbc/gel-foundations/typography';
 import notes from '../README.md';
 import Timestamp from '.';
@@ -23,14 +23,17 @@ storiesOf('Timestamp', module)
   .add(
     'default',
     () => {
-      const choice = select('Typography', styles, 'Brevier');
-      const typographyFunc = typography[`get${choice}`];
+      const selectedOption = select('Script', Object.keys(scripts), 'latin');
+      const selectedScript = scripts[selectedOption];
+
+      const style = select('Typography', styles, 'Brevier');
+      const typographyFunc = typography[`get${style}`];
 
       return (
         <Timestamp
           datetime="1530947227000"
           typographyFunc={typographyFunc}
-          script={latin}
+          script={selectedScript}
         >
           {text('Timestamp Text', '7 July 2018')}
         </Timestamp>
@@ -41,14 +44,17 @@ storiesOf('Timestamp', module)
   .add(
     'with "updated" prefix',
     () => {
-      const choice = select('Typography', styles, 'Brevier');
-      const typographyFunc = typography[`get${choice}`];
+      const selectedOption = select('Script', Object.keys(scripts), 'latin');
+      const selectedScript = scripts[selectedOption];
+
+      const style = select('Typography', styles, 'Brevier');
+      const typographyFunc = typography[`get${style}`];
 
       return (
         <Timestamp
           datetime="1530947227000"
           typographyFunc={typographyFunc}
-          script={latin}
+          script={selectedScript}
         >
           {text('Timestamp Text', 'Updated 7 July 2018')}
         </Timestamp>
