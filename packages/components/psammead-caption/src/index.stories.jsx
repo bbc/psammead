@@ -22,7 +22,7 @@ storiesOf('Caption', module)
     inputProvider(
       ['visually hidden text', 'caption'],
       (hiddenText, captionText) => (
-        <Caption>
+        <Caption script={latin}>
           <VisuallyHiddenText>{hiddenText}</VisuallyHiddenText>
           {captionText}
         </Caption>
@@ -36,6 +36,15 @@ storiesOf('Caption', module)
       <Caption script={latin}>
         {captionText}
         <InlineLink href="https://www.bbc.com"> {linkText}</InlineLink>.
+      </Caption>
+    )),
+    { notes, knobs: { escapeHTML: false } },
+  )
+  .add(
+    'containing italicisation',
+    inputProvider([], () => (
+      <Caption script={latin}>
+        Example text with <i>italics</i>
       </Caption>
     )),
     { notes, knobs: { escapeHTML: false } },

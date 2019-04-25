@@ -22,6 +22,10 @@ exports[`Caption should render with some offscreen text 1`] = `
   width: 100%;
 }
 
+.c0 i {
+  font-style: normal;
+}
+
 @media (min-width:20rem) and (max-width:37.4375rem) {
   .c0 {
     font-size: 0.9375rem;
@@ -80,6 +84,10 @@ exports[`Caption should render with some offscreen text and arabic script typogr
   font-style: italic;
   padding: 0.5rem 0.5rem;
   width: 100%;
+}
+
+.c0 i {
+  font-style: normal;
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
