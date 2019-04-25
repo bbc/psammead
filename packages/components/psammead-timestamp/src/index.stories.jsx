@@ -1,22 +1,10 @@
 import React from 'react';
-import { storiesOf } from '@storybook/react'; // eslint-disable-line import/no-extraneous-dependencies
+import { storiesOf, forceReRender } from '@storybook/react'; // eslint-disable-line import/no-extraneous-dependencies
 import { text, select, withKnobs } from '@storybook/addon-knobs';
 import scripts from '@bbc/gel-foundations/scripts';
 import * as typography from '@bbc/gel-foundations/typography';
 import notes from '../README.md';
 import Timestamp from '.';
-
-const styles = Object.keys(typography)
-  .map(key => {
-    if (
-      typeof typography[key] === 'function' &&
-      key.substring(0, 3) === 'get'
-    ) {
-      return key.substring(3);
-    }
-    return null;
-  })
-  .filter(style => style);
 
 storiesOf('Timestamp', module)
   .addDecorator(withKnobs)
@@ -26,8 +14,9 @@ storiesOf('Timestamp', module)
       const selectedOption = select('Script', Object.keys(scripts), 'latin');
       const selectedScript = scripts[selectedOption];
 
-      const style = select('Typography', styles, 'Brevier');
-      const typographyFunc = typography[`get${style}`];
+      const style = select('Typography', Object.keys(selectedScript), 'canon');
+      const functionName = style.charAt(0).toUpperCase() + style.slice(1);
+      const typographyFunc = typography[`get${functionName}`];
 
       return (
         <Timestamp
@@ -47,7 +36,7 @@ storiesOf('Timestamp', module)
       const selectedOption = select('Script', Object.keys(scripts), 'latin');
       const selectedScript = scripts[selectedOption];
 
-      const style = select('Typography', styles, 'Brevier');
+      const style = select('Typography', Object.keys(selectedScript), 'canon');
       const typographyFunc = typography[`get${style}`];
 
       return (
