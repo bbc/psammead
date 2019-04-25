@@ -15,7 +15,7 @@ const inputProvider = (slots, componentFunction) => () => {
   // by comparing `text` to English's `text`
   const isEnglish = lang.text === LANGUAGE_VARIANTS.English.text;
 
-  const inputs = slots.map(({ name, defaultText }) =>
+  const inputs = (slots || []).map(({ name, defaultText }) =>
     text(
       `Content for ${name}`,
       // Only display slot default text when it exists and we're displaying English language.

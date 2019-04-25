@@ -7,7 +7,12 @@ import { inputProvider } from '.';
 storiesOf('Input Provider', module)
   .addDecorator(withKnobs)
   .add(
-    'default',
+    'simple',
+    inputProvider(null, () => <span>I toggle dir based on language</span>),
+    { notes, knobs: { escapeHTML: false } },
+  )
+  .add(
+    'complex',
     inputProvider(
       [
         {

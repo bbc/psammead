@@ -62,6 +62,22 @@ describe('Psammead storybook helpers', () => {
       expect(text).toHaveBeenCalledTimes(0);
     });
 
+    it('handles scenario where config is null', () => {
+      const english = {
+        text: 'Could a computer ever create better art than a human?',
+        script: 'latin',
+        dir: 'ltr',
+      };
+      select.mockReturnValueOnce(english);
+
+      underTest.inputProvider(null, renderFn)();
+
+      expect(renderFn).toHaveBeenCalledTimes(1);
+      expect(renderFn).toHaveBeenCalledWith([], 'LATIN SCRIPT OBJECT', 'ltr');
+      expect(select).toHaveBeenCalledTimes(1);
+      expect(text).toHaveBeenCalledTimes(0);
+    });
+
     describe('calls the render function with slot default text when displaying english', () => {
       it('for a single slot', () => {
         const english = {
