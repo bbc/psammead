@@ -8,14 +8,15 @@ This package provides a collection of common values that are used in storybook b
 
 `inputProvider` - A function that provides support for previewing components in storybook in different languages. Takes two arguments, `slots` and `renderFn`. Sets the `dir` attribute on the `<html>` element in the story iframe using [Helmet](https://www.npmjs.com/package/react-helmet).
 
-- `slots`: `[{ name, defaultText }]` Required (but can be empty or null).
-  - `name`: String uniquely identifying this slot in the story. Required.
-  - `defaultText`: Default string to use when the story is showing English text. Optional.
-- `renderFn`: `(slotTexts, script, dir) => React.Component`
+- `slots`: Array of `slot`s. Optional.
+  - `slot`: Object containing configuration for this slot.
+    - `name`: String uniquely identifying this slot in the story. Required.
+    - `defaultText`: String to use when the story is showing English text. Optional.
+- `renderFn`: `function(slotTexts, script, dir)` Required.
   - `slotTexts`: Array of strings to insert into the story. Length and order corresponds to the provided `slots`.
   - `script`: A [script](https://github.com/bbc/psammead/tree/latest/packages/utilities/gel-foundations#script-support) corresponding to the language selected by the storybook user.
   - `dir`: Either `'ltr'` or `'rtl'`, corresponding to the language currently selected by the storybook user.
-  - Should return a react component.
+- Returns the return value of `renderFn`. This should usually be a React Component.
 
 ## Installation
 
