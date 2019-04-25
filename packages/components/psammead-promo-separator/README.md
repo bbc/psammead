@@ -3,7 +3,6 @@
 ## Description
 
 The `@bbc/psammead-promo-separator` package exports a single separator line component.
-It uses a `hr` HTML element.
 
 It uses `@bbc/psammead-styles` for colours and `@bbc/gel-foundations` for spacing implemented in Styled Components.
 
@@ -33,7 +32,7 @@ The `PromoSeparator` component's intended use is to separate content, such as in
 
 ### Accessibility notes
 
-Since this is just a `<hr>` tag with associated styles, when you use this component, it has the same semantic meaning as a regular horizontal rule.
+Although this component has the appearance of a horizontal rule, it does not use an `<hr>` tag, and therefore does not have the associated semantic meaning.
 
 <!-- ## Roadmap -->
 
