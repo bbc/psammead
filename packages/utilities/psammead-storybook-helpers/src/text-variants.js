@@ -87,6 +87,7 @@ const LANGUAGE_VARIANTS = {
     text:
       'در این جشنواره برای نخستین بار از کارگران افغانستان در شهر تهران تقدیر شد',
     script: 'arabic',
+    dir: 'rtl',
   },
   Pidgin: {
     text:
