@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PromoSeparator should render correctly 1`] = `
+.c0 {
+  color: #F2F2F2;
+  margin: 0.5rem 0 1rem;
+  height: 0.0625rem;
+}
+
+<hr
+  className="c0"
+/>
+`;
