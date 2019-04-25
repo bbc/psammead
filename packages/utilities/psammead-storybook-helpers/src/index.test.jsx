@@ -180,8 +180,8 @@ describe('Psammead storybook helpers', () => {
       );
     });
 
-    describe('passes text direction', () => {
-      it('defaulting to ltr when not specified', () => {
+    describe('text direction', () => {
+      it('defaults to ltr when not specified', () => {
         const russian = {
           script: 'cyrillic',
         };
@@ -198,7 +198,7 @@ describe('Psammead storybook helpers', () => {
         );
       });
 
-      it('when specified', () => {
+      it('returns value when specified', () => {
         const arabic = {
           script: 'arabic',
           dir: 'rtl',

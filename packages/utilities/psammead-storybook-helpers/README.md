@@ -6,7 +6,7 @@ This package provides a collection of common values that are used in storybook b
 
 `LANGUAGE_VARIANTS` - A list of text samples in different languages, with the script and direction that should be used for that language.
 
-`inputProvider` - A function that provides support for previewing components in storybook in different languages. Takes two arguments, `slots` and `renderFn`.
+`inputProvider` - A function that provides support for previewing components in storybook in different languages. Takes two arguments, `slots` and `renderFn`. Sets the `dir` attribute on the `<html>` element in the story iframe using [Helmet](https://www.npmjs.com/package/react-helmet).
 
 - `slots`: `[{ name, defaultText }]` Required (but can be empty).
   - `name`: String uniquely identifying this slot in the story. Required.
@@ -15,7 +15,7 @@ This package provides a collection of common values that are used in storybook b
   - `slotTexts`: Array of strings to insert into the story. Length and order corresponds to the provided `slots`.
   - `script`: A [script](https://github.com/bbc/psammead/tree/latest/packages/utilities/gel-foundations#script-support) corresponding to the language selected by the storybook user.
   - `dir`: Either `'ltr'` or `'rtl'`, corresponding to the language currently selected by the storybook user.
-  - Returns a react component.
+  - Should return a react component.
 
 ## Installation
 
@@ -61,7 +61,7 @@ storiesOf('Caption', module)
       ],
       ([captionText, offscreenText], script, dir) => (
         <Caption script={script} dir={dir}>
-          <VisuallyHiddenText script={script} dir={dir}>
+          <VisuallyHiddenText>
             {offscreenText}
           </VisuallyHiddenText>
           {captionText}
