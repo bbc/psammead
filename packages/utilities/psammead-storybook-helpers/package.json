@@ -23,8 +23,12 @@
     "language",
     "knobs"
   ],
-  "devDependencies": {
+  "dependencies": {
     "@bbc/gel-foundations": "^1.2.0",
-    "@bbc/psammead-test-helpers": "^0.3.0"
+    "react-helmet": "^5.2.0"
+  },
+  "devDependencies": {
+    "@bbc/psammead-test-helpers": "^0.3.0",
+    "react": "^16.6.3"
   }
 }

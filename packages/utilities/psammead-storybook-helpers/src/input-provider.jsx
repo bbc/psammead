@@ -1,4 +1,6 @@
+import React, { Fragment } from 'react';
 import { text, select } from '@storybook/addon-knobs';
+import { Helmet } from 'react-helmet';
 import scripts from '@bbc/gel-foundations/scripts';
 import LANGUAGE_VARIANTS from './text-variants';
 
@@ -24,7 +26,12 @@ const inputProvider = (slots, componentFunction) => () => {
   const script = scripts[lang.script];
   const dir = lang.dir || 'ltr';
 
-  return componentFunction(inputs, script, dir);
+  return (
+    <Fragment>
+      <Helmet htmlAttributes={{ dir }} />
+      {componentFunction(inputs, script, dir)}
+    </Fragment>
+  );
 };
 
 export default inputProvider;

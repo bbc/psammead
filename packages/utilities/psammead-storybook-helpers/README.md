@@ -8,7 +8,7 @@ This package provides a collection of common values that are used in storybook b
 
 `inputProvider` - A function that provides support for previewing components in storybook in different languages. Takes two arguments, `slots` and `renderFn`.
 
-- `slots`: `[{ name, defaultText }]`
+- `slots`: `[{ name, defaultText }]` Required (but can be empty).
   - `name`: String uniquely identifying this slot in the story. Required.
   - `defaultText`: Default string to use when the story is showing English text. Optional.
 - `renderFn`: `(slotTexts, script, dir) => React.Component`

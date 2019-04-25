@@ -18,7 +18,7 @@ storiesOf('Input Provider', module)
         { name: 'second slot' },
       ],
       ([first, second], script, dir) => (
-        <ul dir={dir}>
+        <ul>
           <li>{first}</li>
           <li>{second}</li>
           <li>Selected direction: {dir}</li>
