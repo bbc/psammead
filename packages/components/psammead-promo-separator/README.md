@@ -27,7 +27,7 @@ const WrappingComponent = () => <PromoSeparator />;
 
 ### When to use this component
 
-The `PromoSeparator` component is meant to be used between story promos.
+The `PromoSeparator` component's intended use is to separate content, such as in-between story promos on index pages.
 
 <!-- ### When not to use this component -->
 
