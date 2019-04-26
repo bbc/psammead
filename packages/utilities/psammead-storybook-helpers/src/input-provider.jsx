@@ -8,12 +8,12 @@ const inputProvider = (slots, componentFunction) => () => {
   const lang = select(
     'Select a language',
     LANGUAGE_VARIANTS,
-    LANGUAGE_VARIANTS.English,
+    LANGUAGE_VARIANTS.english,
   );
 
   // `select` doesn't return name of language selected, so test if selection
   // is English by comparing `text` to English's `text`
-  const isEnglish = lang.text === LANGUAGE_VARIANTS.English.text;
+  const isEnglish = lang.text === LANGUAGE_VARIANTS.english.text;
 
   const inputs = (slots || []).map(({ name, defaultText }) =>
     text(
