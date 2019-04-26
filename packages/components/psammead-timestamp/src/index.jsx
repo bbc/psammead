@@ -1,18 +1,17 @@
 import React from 'react';
 import styled from 'styled-components';
-import { node, string } from 'prop-types';
+import { node, string, func, shape } from 'prop-types';
 import {
   GEL_SPACING_HLF,
   GEL_SPACING_DBL,
 } from '@bbc/gel-foundations/spacings';
-import {
-  GEL_BREVIER,
-  GEL_FF_REITH_SANS,
-} from '@bbc/gel-foundations/typography';
+import { GEL_FF_REITH_SANS, getBrevier } from '@bbc/gel-foundations/typography';
+import { scriptPropType } from '@bbc/gel-foundations/prop-types';
+import { latin } from '@bbc/gel-foundations/scripts';
 import { C_CLOUD_DARK } from '@bbc/psammead-styles/colours';
 
 const StyledTimestamp = styled.time`
-  ${GEL_BREVIER};
+  ${props => (props.typographyFunc ? props.typographyFunc(props.script) : '')}
   color: ${C_CLOUD_DARK};
   display: block;
   font-family: ${GEL_FF_REITH_SANS};
@@ -22,13 +21,26 @@ const StyledTimestamp = styled.time`
   }
 `;
 
-const Timestamp = ({ children, datetime }) => (
-  <StyledTimestamp dateTime={datetime}>{children}</StyledTimestamp>
+const Timestamp = ({ children, datetime, typographyFunc, script }) => (
+  <StyledTimestamp
+    dateTime={datetime}
+    typographyFunc={typographyFunc}
+    script={script}
+  >
+    {children}
+  </StyledTimestamp>
 );
+
+Timestamp.defaultProps = {
+  script: latin,
+  typographyFunc: getBrevier,
+};
 
 Timestamp.propTypes = {
   children: node.isRequired,
   datetime: string.isRequired,
+  typographyFunc: func,
+  script: shape(scriptPropType),
 };
 
 export default Timestamp;
