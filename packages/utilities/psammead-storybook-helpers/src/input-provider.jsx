@@ -11,14 +11,19 @@ const inputProvider = (slots, componentFunction) => () => {
     LANGUAGE_VARIANTS.English,
   );
 
-  // `select` doesn't return name of language selected, so test if selection is English
-  // by comparing `text` to English's `text`
+  // `select` doesn't return name of language selected, so test if selection
+  // is English by comparing `text` to English's `text`
   const isEnglish = lang.text === LANGUAGE_VARIANTS.English.text;
 
   const inputs = (slots || []).map(({ name, defaultText }) =>
     text(
       `Content for ${name}`,
-      // Only display slot default text when it exists and we're displaying English language.
+      // Expect defaultText to be in English. When it is provided and we're
+      // displaying English language on the story, set the default text for
+      // this knob to defaultText.
+      // When we switch to a language other than English, set the default
+      // text for the knob to the snippet from LANGUAGE_VARIANTS for that
+      // language.
       defaultText && isEnglish ? defaultText : lang.text,
     ),
   );
