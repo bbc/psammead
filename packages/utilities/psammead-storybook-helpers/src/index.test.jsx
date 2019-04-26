@@ -186,7 +186,7 @@ describe('Psammead storybook helpers', () => {
           script: 'cyrillic',
         };
         select.mockReturnValueOnce(russian);
-        text.mockImplementation((_, displayText) => displayText);
+        text.mockImplementation((textKnobName, displayText) => displayText);
 
         underTest.inputProvider([], renderFn)();
 
