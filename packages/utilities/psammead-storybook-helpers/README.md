@@ -36,7 +36,7 @@ const defaultValue = 'This is a caption';
 const groupIdentifier = 'CAPTION VARIANTS';
 
 <Caption>
-  {select(label, LANGUAGE_VARIANTS, LANGUAGE_VARIANTS.English, groupIdentifier).text}
+  {select(label, LANGUAGE_VARIANTS, LANGUAGE_VARIANTS.english, groupIdentifier).text}
 </Caption>
 ```
 
