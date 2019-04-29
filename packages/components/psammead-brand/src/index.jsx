@@ -7,11 +7,11 @@ import {
   GEL_GROUP_2_SCREEN_WIDTH_MIN,
   GEL_GROUP_3_SCREEN_WIDTH_MAX,
   GEL_GROUP_5_SCREEN_WIDTH_MIN,
+  MEDIA_QUERY_TYPOGRAPHY,
 } from '@bbc/gel-foundations/breakpoints';
 import {
   GEL_MARGIN_BELOW_400PX,
   GEL_MARGIN_ABOVE_400PX,
-  GEL_SPACING,
   GEL_SPACING_DBL,
   GEL_SPACING_HLF,
 } from '@bbc/gel-foundations/spacings';
@@ -25,18 +25,24 @@ const layoutWrapperWithoutGrid = css`
   }
 `;
 
-const SVG_TOP_OFFSET = '1.25rem'; // 20px
 const SVG_BOTTOM_OFFSET = '1.5rem'; // 24px
-const BANNER_HEIGHT = '5rem'; // 80px
 
-const SVG_HEIGHT_PX = 24;
-const SVG_HEIGHT = `${SVG_HEIGHT_PX / 16}rem`;
+const BANNER_HEIGHT_MIN_PX = 62;
+const BANNER_HEIGHT_MIN = `${BANNER_HEIGHT_MIN_PX / 16}rem`;
+const BANNER_HEIGHT_FULL_PX = 80;
+const BANNER_HEIGHT_FULL = `${BANNER_HEIGHT_FULL_PX / 16}rem`;
 
 const StyledWrapper = styled.div`
   ${layoutWrapperWithoutGrid};
   background-color: ${C_POSTBOX};
-  height: ${BANNER_HEIGHT};
   width: 100%;
+
+  height: ${BANNER_HEIGHT_MIN};
+
+  ${MEDIA_QUERY_TYPOGRAPHY.LAPTOP_AND_LARGER} {
+    height: ${BANNER_HEIGHT_FULL};
+  }
+
   @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MAX}) {
     padding: 0 ${GEL_SPACING_DBL};
   }
@@ -48,7 +54,6 @@ const ConstraintWrapper = styled.div`
 `;
 
 const StyledLink = styled.a`
-  padding-top: ${GEL_SPACING};
   display: inline-block;
 `;
 
@@ -62,23 +67,46 @@ const StyledSpan = styled.span`
   }
 `;
 
+const svgWidth = (ratio, heightPx) => `${((heightPx * ratio) / 16).toFixed(2)}`;
+
+const svgMarginTop = (bannerHeightPx, svgHeightPx) =>
+  // Places the SVG vertically centred in the banner.
+  `${(bannerHeightPx - svgHeightPx) / 2 / 16}`;
+
+const svgSizing = (bannerHeightPx, svgHeightPx, ratio) => `
+  height: ${svgHeightPx / 16}rem;
+  width: ${svgWidth(ratio, svgHeightPx)}rem;
+  margin-top: ${svgMarginTop(bannerHeightPx, svgHeightPx)}rem;
+`;
+
 const BrandSvg = styled.svg`
   display: block;
-  height: ${SVG_HEIGHT};
-  width: ${props => ((SVG_HEIGHT_PX * props.ratio) / 16).toFixed(2)}rem;
-  margin-top: ${SVG_TOP_OFFSET};
   fill: #fff;
   @media screen and (-ms-high-contrast: active), print {
     fill: windowText;
   }
+
+  ${({ height, ratio }) =>
+    svgSizing(BANNER_HEIGHT_MIN_PX, height.groupA, ratio)};
+
+  ${MEDIA_QUERY_TYPOGRAPHY.SMART_PHONE_AND_LARGER} {
+    ${({ height, ratio }) =>
+      svgSizing(BANNER_HEIGHT_MIN_PX, height.groupB, ratio)};
+  }
+
+  ${MEDIA_QUERY_TYPOGRAPHY.LAPTOP_AND_LARGER} {
+    ${({ height, ratio }) =>
+      svgSizing(BANNER_HEIGHT_FULL_PX, height.groupD, ratio)};
+  }
 `;
 
-const Brand = ({ brandName, svg }) => (
+const Brand = ({ brandName, svgHeight, svg }) => (
   <StyledWrapper>
     <ConstraintWrapper>
       <StyledLink href="https://www.bbc.co.uk/news">
         <StyledSpan>
           <BrandSvg
+            height={svgHeight}
             viewBox={`0 0 ${svg.viewbox.width} ${svg.viewbox.height}`}
             xmlns="http://www.w3.org/2000/svg"
             focusable="false"
@@ -96,6 +124,11 @@ const Brand = ({ brandName, svg }) => (
 
 Brand.propTypes = {
   brandName: string.isRequired,
+  svgHeight: shape({
+    groupA: number.isRequired,
+    groupB: number.isRequired,
+    groupD: number.isRequired,
+  }).isRequired,
   svg: shape({
     group: node.isRequired,
     ratio: number.isRequired,

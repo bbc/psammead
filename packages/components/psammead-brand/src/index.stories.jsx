@@ -1,5 +1,5 @@
 import React from 'react';
-import { select, withKnobs } from '@storybook/addon-knobs';
+import { select, number, withKnobs } from '@storybook/addon-knobs';
 import { storiesOf } from '@storybook/react';
 import * as svgs from '@bbc/psammead-assets/svgs';
 import notes from '../README.md';
@@ -16,7 +16,18 @@ storiesOf('Brand', module)
         .map(key => key.charAt(0).toUpperCase() + key.slice(1));
 
       const choice = select('Service SVG', options, 'news').toLowerCase();
-      return <Brand brandName="Default Brand Name" svg={svgs[choice]} />;
+      const heights = {
+        groupA: number('svg height min', 16),
+        groupB: number('svg height med', 20),
+        groupD: number('svg height max', 24),
+      };
+      return (
+        <Brand
+          brandName="Default Brand Name"
+          svg={svgs[choice]}
+          svgHeight={heights}
+        />
+      );
     },
     { notes },
   );

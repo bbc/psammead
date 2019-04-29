@@ -15,9 +15,15 @@ const svg = {
   ratio: 6.9979,
 };
 
+const height = {
+  groupA: 16,
+  groupB: 20,
+  groupD: 24,
+};
+
 describe('Brand', () => {
   shouldMatchSnapshot(
     'should render correctly',
-    <Brand brandName="Default Brand Name" svg={svg} />,
+    <Brand brandName="Default Brand Name" svgHeight={height} svg={svg} />,
   );
 });

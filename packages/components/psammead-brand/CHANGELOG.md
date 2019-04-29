@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 | ------- | ----------- |
+| 2.0.0   | [PR#???](https://github.com/bbc/psammead/pull/???) Control height of Brand SVG |
 | 1.0.0   | [PR#457](https://github.com/bbc/psammead/pull/457) Enable passing of different svgs |
 | 0.3.4   | [PR#424](https://github.com/bbc/psammead/pull/424) Add Snyk badge to readme |
 | 0.3.3   | [PR#407](https://github.com/bbc/psammead/pull/407) Organise dependencies properly |
