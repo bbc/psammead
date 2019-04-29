@@ -15,7 +15,7 @@ const svg = {
   ratio: 6.9979,
 };
 
-const height = {
+const heights = {
   groupA: 16,
   groupB: 20,
   groupD: 24,
@@ -24,7 +24,7 @@ const height = {
 describe('Brand', () => {
   shouldMatchSnapshot(
     'should render correctly',
-    <Brand brandName="Default Brand Name" svgHeight={height} svg={svg} />,
+    <Brand brandName="Default Brand Name" svgHeights={heights} svg={svg} />,
   );
   shouldMatchSnapshot(
     'should render correctly with svg not provided',

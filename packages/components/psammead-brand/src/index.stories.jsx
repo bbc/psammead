@@ -25,7 +25,7 @@ storiesOf('Brand', module)
         <Brand
           brandName="Default Brand Name"
           svg={svgs[choice]}
-          svgHeight={heights}
+          svgHeights={heights}
         />
       );
     },

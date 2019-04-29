@@ -86,28 +86,28 @@ const BrandSvg = styled.svg`
     fill: windowText;
   }
 
-  ${({ height, ratio }) =>
-    svgSizing(BANNER_HEIGHT_MIN_PX, height.groupA, ratio)};
+  ${({ svgHeights, ratio }) =>
+    svgSizing(BANNER_HEIGHT_MIN_PX, svgHeights.groupA, ratio)};
 
   ${MEDIA_QUERY_TYPOGRAPHY.SMART_PHONE_AND_LARGER} {
-    ${({ height, ratio }) =>
-      svgSizing(BANNER_HEIGHT_MIN_PX, height.groupB, ratio)};
+    ${({ svgHeights, ratio }) =>
+      svgSizing(BANNER_HEIGHT_MIN_PX, svgHeights.groupB, ratio)};
   }
 
   ${MEDIA_QUERY_TYPOGRAPHY.LAPTOP_AND_LARGER} {
-    ${({ height, ratio }) =>
-      svgSizing(BANNER_HEIGHT_FULL_PX, height.groupD, ratio)};
+    ${({ svgHeights, ratio }) =>
+      svgSizing(BANNER_HEIGHT_FULL_PX, svgHeights.groupD, ratio)};
   }
 `;
 
-const Brand = ({ brandName, svgHeight, svg }) => (
+const Brand = ({ brandName, svgHeights, svg }) => (
   <StyledWrapper>
     <ConstraintWrapper>
       {svg && (
         <StyledLink href="https://www.bbc.co.uk/news">
           <StyledSpan>
             <BrandSvg
-              height={svgHeight}
+              svgHeights={svgHeights}
               viewBox={`0 0 ${svg.viewbox.width} ${svg.viewbox.height}`}
               xmlns="http://www.w3.org/2000/svg"
               focusable="false"
@@ -125,7 +125,7 @@ const Brand = ({ brandName, svgHeight, svg }) => (
 );
 
 Brand.defaultProps = {
-  svgHeight: {
+  svgHeights: {
     groupA: 22,
     groupB: 22,
     groupD: 24,
@@ -134,7 +134,7 @@ Brand.defaultProps = {
 
 Brand.propTypes = {
   brandName: string.isRequired,
-  svgHeight: shape({
+  svgHeights: shape({
     groupA: number.isRequired,
     groupB: number.isRequired,
     groupD: number.isRequired,
