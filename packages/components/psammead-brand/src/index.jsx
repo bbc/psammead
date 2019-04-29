@@ -103,21 +103,23 @@ const BrandSvg = styled.svg`
 const Brand = ({ brandName, svgHeight, svg }) => (
   <StyledWrapper>
     <ConstraintWrapper>
-      <StyledLink href="https://www.bbc.co.uk/news">
-        <StyledSpan>
-          <BrandSvg
-            height={svgHeight}
-            viewBox={`0 0 ${svg.viewbox.width} ${svg.viewbox.height}`}
-            xmlns="http://www.w3.org/2000/svg"
-            focusable="false"
-            aria-hidden="true"
-            ratio={svg.ratio}
-          >
-            {svg.group}
-          </BrandSvg>
-          <VisuallyHiddenText>{brandName}</VisuallyHiddenText>
-        </StyledSpan>
-      </StyledLink>
+      {svg && (
+        <StyledLink href="https://www.bbc.co.uk/news">
+          <StyledSpan>
+            <BrandSvg
+              height={svgHeight}
+              viewBox={`0 0 ${svg.viewbox.width} ${svg.viewbox.height}`}
+              xmlns="http://www.w3.org/2000/svg"
+              focusable="false"
+              aria-hidden="true"
+              ratio={svg.ratio}
+            >
+              {svg.group}
+            </BrandSvg>
+            <VisuallyHiddenText>{brandName}</VisuallyHiddenText>
+          </StyledSpan>
+        </StyledLink>
+      )}
     </ConstraintWrapper>
   </StyledWrapper>
 );
