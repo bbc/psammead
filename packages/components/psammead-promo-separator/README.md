@@ -32,7 +32,7 @@ The `PromoSeparator` component's intended use is to separate content, such as in
 
 ### Accessibility notes
 
-Although this component has the appearance of a horizontal rule, it does not use an `<hr>` tag, and therefore does not have the associated semantic meaning.
+Although this component has the appearance of a horizontal rule, it does not use a `<hr>` tag, and therefore does not have the associated semantic meaning.
 
 <!-- ## Roadmap -->
 
