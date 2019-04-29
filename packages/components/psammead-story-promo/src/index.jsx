@@ -11,7 +11,7 @@ import {
   GEL_GROUP_5_SCREEN_WIDTH_MIN,
 } from '@bbc/gel-foundations/breakpoints';
 import {
-  getPica,
+  getGreatPrimer,
   getLongPrimer,
   GEL_FF_REITH_SERIF,
   GEL_FF_REITH_SANS,
@@ -49,7 +49,7 @@ const TextGridItem = styled.div`
 `;
 
 export const Headline = styled.h3`
-  ${props => (props.script ? getPica(props.script) : '')};
+  ${props => (props.script ? getGreatPrimer(props.script) : '')};
   color: ${C_SHADOW};
   font-family: ${GEL_FF_REITH_SERIF};
   margin: 0; /* Reset */
