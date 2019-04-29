@@ -2,7 +2,13 @@
 
 ## Description
 
-The `Brand` component renders the BBC service logo (as SVG), nested inside a styled span, link and div. The link is currently hardcoded to "<https://www.bbc.co.uk/news>". `Brand` takes a `brandName`, an `svg`, and an `svgHeights` as props. `brandName` is passed to a [VisuallyHiddenText](https://github.com/bbc/psammead/tree/latest/packages/components/VisuallyHiddenText) component, nested inside Brand. Note that this does not currently affect the branding itself, which is always produced by rendering the `svg` prop. The `svg` prop must contain a `group`, `viewbox` values and a `ratio`, which is used within an `svg` element, rendered at a height defined by the `svgHeights` prop. Examples of the `svg` object can be found in [@bbc/psammead-assets](https://github.com/bbc/psammead/blob/latest/packages/utilities/psammead-assets/README.md#service-svgs). The `svgHeights` prop is a mapping between [GEL breakpoint groups A, B and D](http://www.bbc.co.uk/gel/guidelines/typography#type-sizes) and the height (in pixels) to render the SVG at. (These heights are converted to `rem`s internally, and the widths are calculated using the `ratio` defined in the `svg` prop).
+The `Brand` component renders the BBC service logo (as SVG), nested inside a styled span, link and div. The link is currently hardcoded to "<https://www.bbc.co.uk/news>". `Brand` takes a `brandName`, an `svg`, and `svgHeights` as props.
+
+`brandName` is passed to a [VisuallyHiddenText](https://github.com/bbc/psammead/tree/latest/packages/components/VisuallyHiddenText) component, nested inside Brand. Note that this does not currently affect the branding itself, which is always produced by rendering the `svg` prop.
+
+The `svg` prop must contain a `group`, `viewbox` values and a `ratio`, which is used within an `svg` element, rendered at a height defined by the `svgHeights` prop. Examples of the `svg` object can be found in [@bbc/psammead-assets](https://github.com/bbc/psammead/blob/latest/packages/utilities/psammead-assets/README.md#service-svgs).
+
+The `svgHeights` prop is a mapping between [GEL breakpoint groups A, B and D](http://www.bbc.co.uk/gel/guidelines/typography#type-sizes) and the height (in pixels) to render the SVG at. (These heights are converted to `rem`s internally, and the widths are calculated using the `ratio` defined in the `svg` prop).
 
 ## Installation
 
