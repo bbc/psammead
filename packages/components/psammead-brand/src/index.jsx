@@ -124,13 +124,21 @@ const Brand = ({ brandName, svgHeight, svg }) => (
   </StyledWrapper>
 );
 
+Brand.defaultProps = {
+  svgHeight: {
+    groupA: 22,
+    groupB: 22,
+    groupD: 24,
+  },
+};
+
 Brand.propTypes = {
   brandName: string.isRequired,
   svgHeight: shape({
     groupA: number.isRequired,
     groupB: number.isRequired,
     groupD: number.isRequired,
-  }).isRequired,
+  }),
   svg: shape({
     group: node.isRequired,
     ratio: number.isRequired,
