@@ -3,7 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 | ------- | ----------- |
-| 1.0.1   | [PR#???](https://github.com/bbc/psammead/pull/???) Fail gracefully if brand svg is not provided |
+| 1.0.1   | [PR#476](https://github.com/bbc/psammead/pull/476) Fail gracefully if brand svg is not provided |
 | 1.0.0   | [PR#457](https://github.com/bbc/psammead/pull/457) Enable passing of different svgs |
 | 0.3.4   | [PR#424](https://github.com/bbc/psammead/pull/424) Add Snyk badge to readme |
 | 0.3.3   | [PR#407](https://github.com/bbc/psammead/pull/407) Organise dependencies properly |
