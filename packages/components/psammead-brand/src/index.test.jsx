@@ -20,4 +20,8 @@ describe('Brand', () => {
     'should render correctly',
     <Brand brandName="Default Brand Name" svg={svg} />,
   );
+  shouldMatchSnapshot(
+    'should render correctly with svg not provided',
+    <Brand brandName="Default Brand Name" />,
+  );
 });

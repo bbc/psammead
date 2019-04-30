@@ -110,3 +110,42 @@ exports[`Brand should render correctly 1`] = `
   </div>
 </div>
 `;
+
+exports[`Brand should render correctly with svg not provided 1`] = `
+.c0 {
+  background-color: #B80000;
+  height: 5rem;
+  width: 100%;
+}
+
+.c1 {
+  max-width: 80rem;
+  margin: 0 auto;
+}
+
+@media (max-width:25rem) {
+  .c0 {
+    padding: 0 0.5rem;
+  }
+}
+
+@media (min-width:25rem) {
+  .c0 {
+    padding: 0 1rem;
+  }
+}
+
+@media (min-width:62.9375rem) {
+  .c0 {
+    padding: 0 1rem;
+  }
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="c1"
+  />
+</div>
+`;
