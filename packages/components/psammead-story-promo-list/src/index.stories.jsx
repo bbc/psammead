@@ -1,6 +1,5 @@
 import React, { Fragment } from 'react';
 import { storiesOf } from '@storybook/react';
-import nanoid from 'nanoid';
 import Timestamp from '@bbc/psammead-timestamp';
 import Image from '@bbc/psammead-image';
 import { latin } from '@bbc/gel-foundations/scripts';
@@ -26,7 +25,7 @@ const InfoComponent = ({ headlineText, summaryText }) => (
 storiesOf('StoryPromoList', module).add(
   'default',
   () => (
-    <StoryPromoUl role="list">
+    <StoryPromoUl>
       {storyPromoData.map(item => {
         const ImagePromo = (
           <ImageComponent src={item.image.src} alt={item.image.alt} />
@@ -40,7 +39,7 @@ storiesOf('StoryPromoList', module).add(
         );
 
         return (
-          <StoryPromoLi key={nanoid()} role="listitem">
+          <StoryPromoLi key={item.info.headline} role="listitem">
             <StoryPromo image={ImagePromo} info={InfoPromo} />
           </StoryPromoLi>
         );

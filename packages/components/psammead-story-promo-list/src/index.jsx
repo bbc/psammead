@@ -1,4 +1,6 @@
+import React from 'react';
 import styled from 'styled-components';
+import { node } from 'prop-types';
 import { C_LUNAR } from '@bbc/psammead-styles/colours';
 import {
   GEL_SPACING,
@@ -30,8 +32,18 @@ export const StoryPromoLi = styled.li`
   }
 `;
 
-export const StoryPromoUl = styled.ul`
+const StyledUnorderedList = styled.ul`
   list-style-type: none;
   margin: 0;
   padding: 0;
 `;
+
+export const StoryPromoUl = ({ children, ...props }) => (
+  <StyledUnorderedList role="list" {...props}>
+    {children}
+  </StyledUnorderedList>
+);
+
+StoryPromoUl.propTypes = {
+  children: node.isRequired,
+};
