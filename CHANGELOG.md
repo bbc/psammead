@@ -3,7 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
-| 1.2.0   | [PR#484](https://github.com/BBC/psammead/pull/484) Add default labels to github issue templates |
+| 1.1.5   | [PR#484](https://github.com/BBC/psammead/pull/484) Add default labels to GitHub issue templates |
 | 1.1.4   | [PR#444](https://github.com/BBC/psammead/pull/444) Include stories in utilities |
 | 1.1.3   | [PR#423](https://github.com/BBC/psammead/pull/423) Update Storybook to version 5.0.6 |
 | 1.1.2   | [PR#407](https://github.com/BBC/psammead/pull/407) Change styled-component version to be consistent everywhere and use peer dependencies |
