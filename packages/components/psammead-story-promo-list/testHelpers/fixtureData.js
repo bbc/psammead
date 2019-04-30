@@ -1,60 +1,57 @@
 const storyPromoData = [
   {
     image: {
-      alt: 'Thanos',
+      alt: 'Diosdado Cabello',
       src:
-        'https://www.log.com.tr/wp-content/uploads/2018/08/avengers-infinity.jpg',
+        'https://ichef.bbci.co.uk/news/660/cpsprodpb/AF0F/production/_106651844_cabello.jpg',
     },
     info: {
-      headline: 'Thanos',
-      summary: 'Josh Brolin',
+      headline:
+        'Gobierno de Venezuela condena enérgicamente un "intento de golpe" de Juan Guaidó y Leopoldo López',
+      summary:
+        'El liberado Leopoldo López y Juan Guaidó llaman a la "fase final" contra el gobierno de Nicolás Maduro',
       time: '2019-03-01T14:00+00:00',
     },
   },
   {
     image: {
-      alt: 'Iron Man',
-      src: 'https://www.log.com.tr/wp-content/uploads/2019/02/iron-man.jpg',
+      alt: 'El emperador Akihito en su traje de ceremonia, en 1990.',
+      src:
+        'https://ichef.bbci.co.uk/news/660/cpsprodpb/5D2E/production/_106645832_sqgettyimages-146949399.jpg',
     },
     info: {
-      headline: 'Iron Man',
-      summary: 'Robert Downey',
+      headline:
+        'Abdicación de Akihito en Japón: el emperador que dejó atrás los "pecados" de su padre y es el primero en abdicar en 200 años',
+      summary:
+        'Qué es Reiwa y por qué significa el inicio de una nueva era imperial para Japón',
       time: '2019-03-01T14:00+00:00',
     },
   },
   {
     image: {
-      alt: 'Captain American',
+      alt: 'Leopoldo López',
       src:
-        'https://znews-photo.zadn.vn/w660/Uploaded/rotntt/2013_10_17/chris.jpg',
+        'https://ichef.bbci.co.uk/news/660/cpsprodpb/5037/production/_106653502_hi053657116.jpg',
     },
     info: {
-      headline: 'Captain American',
-      summary: 'Chris Evans',
+      headline:
+        'Qué significa para la crisis política en Venezuela que Leopoldo López haya sido liberado',
+      summary:
+        'Qué papel juega Leopoldo López en la crisis política de Venezuela a 5 años de su arresto',
       time: '2019-03-01T14:00+00:00',
     },
   },
   {
     image: {
-      alt: 'Thor',
+      alt: 'Arya Stark',
       src:
-        'https://multimedia.larepublica.pe/660x392/larepublica/imagen/2019/04/29/noticia-1556577358-portadatres.png',
+        'https://ichef.bbci.co.uk/news/660/cpsprodpb/2E26/production/_106641811_872e4518-d1e3-4bfa-86a6-fb2806a9fb21.jpg',
     },
     info: {
-      headline: 'Thor',
-      summary: 'Chris Hemsworth',
-      time: '2019-03-01T14:00+00:00',
-    },
-  },
-  {
-    image: {
-      alt: 'Captain Marvel',
-      src:
-        'https://cms-static.wehaacdn.com/illinoistimes-com/images/film.25327.widea.0.jpg',
-    },
-    info: {
-      headline: 'Captain Marvel',
-      summary: 'Brie Larson',
+      headline:
+        'La batalla de Invernalia: por qué no cumplió con las enormes expectativas de los fans más exigentes de "Juego de Tronos"',
+      summary:
+        'Era el momento que los fanáticos de "Juego de Tronos" habían estado esperando durante mucho tiempo: la batalla entre los vivos y los muertos. ',
       time: '2019-03-01T14:00+00:00',
     },
   },
