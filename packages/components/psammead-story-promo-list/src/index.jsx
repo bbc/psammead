@@ -20,7 +20,12 @@ export const StoryPromoLi = styled.li`
     padding: ${GEL_SPACING_TRPL} 0 ${GEL_SPACING_TRPL};
   }
 
+  &:first-child {
+    padding-top: 0;
+  }
+
   &:last-child {
+    padding-bottom: 0;
     border: none;
   }
 `;
