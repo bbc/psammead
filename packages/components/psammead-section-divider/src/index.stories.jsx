@@ -1,7 +1,7 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import { latin, thai } from '@bbc/gel-foundations/scripts';
-import { withKnobs, text } from '@storybook/addon-knobs';
+import { withKnobs } from '@storybook/addon-knobs';
+import { inputProvider } from '@bbc/psammead-storybook-helpers';
 import notes from '../README.md';
 import SectionDivider from './index';
 
@@ -9,24 +9,13 @@ storiesOf('SectionDivider', module)
   .addDecorator(withKnobs)
   .add(
     'default',
-    () => (
-      <SectionDivider script={latin}>
-        {text('Title', 'Most Read')}
-      </SectionDivider>
-    ),
-    { notes, knobs: { escapeHTML: false } },
-  )
-  .add(
-    'igbo',
-    () => (
-      <SectionDivider script={latin}>{text('Title', 'Ọ bụru')}</SectionDivider>
-    ),
-    { notes, knobs: { escapeHTML: false } },
-  )
-  .add(
-    'thai',
-    () => (
-      <SectionDivider script={thai}>{text('Title', 'ภาพวาดขอ')}</SectionDivider>
+    inputProvider(
+      [{ name: 'title', defaultText: 'Most Read' }],
+      ([title], script, dir) => (
+        <SectionDivider script={script} dir={dir}>
+          {title}
+        </SectionDivider>
+      ),
     ),
     { notes, knobs: { escapeHTML: false } },
   );

@@ -14,7 +14,9 @@ describe('SectionDivider', () => {
 
     shouldMatchSnapshot(
       'should render correctly with arabic script typography values',
-      <SectionDivider script={arabic}>بعض محتوى النص</SectionDivider>,
+      <SectionDivider script={arabic} dir="rtl">
+        بعض محتوى النص
+      </SectionDivider>,
     );
   });
 

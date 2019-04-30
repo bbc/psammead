@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { shape, string } from 'prop-types';
+import { oneOf, shape, string } from 'prop-types';
 import { scriptPropType } from '@bbc/gel-foundations/prop-types';
 import {
   GEL_GROUP_3_SCREEN_WIDTH_MIN, // 600px
@@ -10,6 +10,7 @@ import {
 import {
   GEL_SPACING, // 8px
   GEL_SPACING_DBL, // 16px
+  GEL_SPACING_TRPL, // 24px
 } from '@bbc/gel-foundations/spacings';
 import {
   getDoublePica,
@@ -45,6 +46,8 @@ const top = script => `
 
 const SectionDividerWrapper = styled.div`
   position: relative;
+  margin-top: ${GEL_SPACING_TRPL};
+  margin-bottom: ${GEL_SPACING_DBL};
   &::before {
     content: '';
     position: absolute;
@@ -57,6 +60,8 @@ const SectionDividerWrapper = styled.div`
   }
 `;
 
+const paddingDir = ({ dir }) => `padding-${dir === 'ltr' ? 'right' : 'left'}`;
+
 const SectionTitle = styled.h2`
   ${({ script }) => script && getDoublePica(script)};
   color: ${C_EBON};
@@ -66,22 +71,10 @@ const SectionTitle = styled.h2`
   position: relative;
   margin: ${MARGIN_TOP_PX}px 0 0 0;
 
-  html:not([dir='rtl']) & {
-    padding-right: ${GEL_SPACING};
-  }
-
-  html[dir='rtl'] & {
-    padding-left: ${GEL_SPACING};
-  }
+  ${paddingDir}: ${GEL_SPACING};
 
   @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
-    html:not([dir='rtl']) & {
-      padding-right: ${GEL_SPACING_DBL};
-    }
-
-    html[dir='rtl'] & {
-      padding-left: ${GEL_SPACING_DBL};
-    }
+    ${paddingDir}: ${GEL_SPACING_DBL};
   }
 
   @media (min-width: ${GEL_GROUP_5_SCREEN_WIDTH_MIN}) {
@@ -90,24 +83,30 @@ const SectionTitle = styled.h2`
 `;
 
 SectionTitle.propTypes = {
+  dir: oneOf(['ltr', 'rtl']).isRequired,
   script: shape(scriptPropType).isRequired,
 };
 
-const SectionDivider = ({ children: text, script }) => (
+const SectionDivider = ({ children: text, dir, script }) => (
   // Only modify the Divider to account for an inline title if there is a title to render.
   <SectionDividerWrapper script={text && script}>
-    {text && <SectionTitle script={script}>{text}</SectionTitle>}
+    {text && (
+      <SectionTitle script={script} dir={dir}>
+        {text}
+      </SectionTitle>
+    )}
   </SectionDividerWrapper>
 );
 
 SectionDivider.defaultProps = {
   children: '',
-  script: undefined,
+  dir: 'ltr',
 };
 
 SectionDivider.propTypes = {
   children: string,
-  script: shape(scriptPropType),
+  dir: oneOf(['ltr', 'rtl']),
+  script: shape(scriptPropType).isRequired,
 };
 
 export default SectionDivider;

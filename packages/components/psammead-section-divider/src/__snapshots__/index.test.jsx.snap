@@ -3,6 +3,8 @@
 exports[`SectionDivider With title should render correctly 1`] = `
 .c0 {
   position: relative;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
 }
 
 .c0::before {
@@ -25,14 +27,7 @@ exports[`SectionDivider With title should render correctly 1`] = `
   display: inline-block;
   position: relative;
   margin: 1px 0 0 0;
-}
-
-html:not([dir='rtl']) .c1 {
   padding-right: 0.5rem;
-}
-
-html[dir='rtl'] .c1 {
-  padding-left: 0.5rem;
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
@@ -68,12 +63,8 @@ html[dir='rtl'] .c1 {
 }
 
 @media (min-width:37.5rem) {
-  html:not([dir='rtl']) .c1 {
+  .c1 {
     padding-right: 1rem;
-  }
-
-  html[dir='rtl'] .c1 {
-    padding-left: 1rem;
   }
 }
 
@@ -88,6 +79,7 @@ html[dir='rtl'] .c1 {
 >
   <h2
     className="c1"
+    dir="ltr"
   >
     This is text in a SectionDivider.
   </h2>
@@ -97,6 +89,8 @@ html[dir='rtl'] .c1 {
 exports[`SectionDivider With title should render correctly with arabic script typography values 1`] = `
 .c0 {
   position: relative;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
 }
 
 .c0::before {
@@ -119,13 +113,6 @@ exports[`SectionDivider With title should render correctly with arabic script ty
   display: inline-block;
   position: relative;
   margin: 1px 0 0 0;
-}
-
-html:not([dir='rtl']) .c1 {
-  padding-right: 0.5rem;
-}
-
-html[dir='rtl'] .c1 {
   padding-left: 0.5rem;
 }
 
@@ -162,11 +149,7 @@ html[dir='rtl'] .c1 {
 }
 
 @media (min-width:37.5rem) {
-  html:not([dir='rtl']) .c1 {
-    padding-right: 1rem;
-  }
-
-  html[dir='rtl'] .c1 {
+  .c1 {
     padding-left: 1rem;
   }
 }
@@ -182,6 +165,7 @@ html[dir='rtl'] .c1 {
 >
   <h2
     className="c1"
+    dir="rtl"
   >
     بعض محتوى النص
   </h2>
@@ -191,6 +175,8 @@ html[dir='rtl'] .c1 {
 exports[`SectionDivider Without title should render correctly 1`] = `
 .c0 {
   position: relative;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
 }
 
 .c0::before {
