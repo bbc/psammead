@@ -13,7 +13,7 @@ const ImageComponent = (
     alt={text('Image alt text', '2019-03-01T14:00+00:00')}
     src={text(
       'Image src',
-      'https://ichef.bbci.co.uk/news/660/cpsprodpb/909B/production/_106491073_gettyimages-909260196.jpg',
+      'https://ichef.bbci.co.uk/news/660/cpsprodpb/11897/production/_106613817_999_al_.jpg',
     )}
     width="640"
   />
