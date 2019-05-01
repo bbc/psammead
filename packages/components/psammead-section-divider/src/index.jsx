@@ -101,12 +101,13 @@ const SectionDivider = ({ children: text, dir, script }) => (
 SectionDivider.defaultProps = {
   children: '',
   dir: 'ltr',
+  script: {},
 };
 
 SectionDivider.propTypes = {
   children: string,
   dir: oneOf(['ltr', 'rtl']),
-  script: shape(scriptPropType).isRequired,
+  script: shape(scriptPropType),
 };
 
 export default SectionDivider;
