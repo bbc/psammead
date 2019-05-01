@@ -14,6 +14,7 @@ It uses `@bbc/psammead-styles` for colours and font family and `@bbc/gel-foundat
 
 | Argument  | Type | Required | Default | Example |
 | --------- | ---- | -------- | ------- | ------- |
+| dir | string | no | 'ltr' | 'rtl' |
 | script    | object | yes | latin | { canon: { groupA: { fontSize: '28', lineHeight: '32',}, groupB: { fontSize: '32', lineHeight: '36', }, groupD: { fontSize: '44', lineHeight: '48', }, }, trafalgar: { groupA: { fontSize: '20', lineHeight: '24', }, groupB: { fontSize: '24', lineHeight: '28', }, groupD: { fontSize: '32', lineHeight: '36', }, }, }|
 
 ## Usage
@@ -22,7 +23,7 @@ It uses `@bbc/psammead-styles` for colours and font family and `@bbc/gel-foundat
 import SectionDivider from '@bbc/psammead-section-divider';
 import { latin } from '@bbc/gel-foundations/scripts';
 
-const WrappingComponent = () => <SectionDivider script={latin}>Text here</SectionDivider>;
+const WrappingComponent = () => <SectionDivider script={latin} dir="ltr">Text here</SectionDivider>;
 ```
 
 Or, without a section title:
