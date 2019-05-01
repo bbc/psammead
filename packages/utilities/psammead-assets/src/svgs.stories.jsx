@@ -4,7 +4,7 @@ import { node, number, shape } from 'prop-types';
 import { storiesOf } from '@storybook/react';
 import { number as numberKnob, withKnobs } from '@storybook/addon-knobs';
 import notes from '../README.md';
-import { news, igbo, yoruba, thai, pidgin } from './svgs';
+import { news, igbo, yoruba, thai, pidgin, persian } from './svgs';
 
 const Svg = styled.svg`
   display: block;
@@ -64,6 +64,15 @@ storiesOf('SVGs', module)
       const height = numberKnob('Height', 24);
       const NewsSvg = getSVG({ ...news, height });
       return NewsSvg;
+    },
+    { notes },
+  )
+  .add(
+    'persian',
+    () => {
+      const height = numberKnob('Height', 24);
+      const PersianSvg = getSVG({ ...persian, height });
+      return PersianSvg;
     },
     { notes },
   )
