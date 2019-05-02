@@ -14,11 +14,11 @@ const ImageComponent = ({ alt, src }) => (
 );
 
 // eslint-disable-next-line react/prop-types
-const InfoComponent = ({ headlineText, summaryText }) => (
+const InfoComponent = ({ headlineText, summaryText, datetime, dateformat }) => (
   <Fragment>
     <Headline script={latin}>{headlineText}</Headline>
     <Summary script={latin}>{summaryText}</Summary>
-    <Timestamp datetime="2019-03-01T14:00+00:00">12 March 2019</Timestamp>
+    <Timestamp datetime={datetime}>{dateformat}</Timestamp>
   </Fragment>
 );
 
@@ -35,6 +35,8 @@ storiesOf('StoryPromoList', module).add(
           <InfoComponent
             headlineText={item.info.headline}
             summaryText={item.info.summary}
+            datetime={item.info.datetime}
+            dateformat={item.info.dateformat}
           />
         );
 

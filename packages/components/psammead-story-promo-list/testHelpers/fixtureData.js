@@ -10,7 +10,8 @@ const storyPromoData = [
         'Gobierno de Venezuela condena enérgicamente un "intento de golpe" de Juan Guaidó y Leopoldo López',
       summary:
         'El liberado Leopoldo López y Juan Guaidó llaman a la "fase final" contra el gobierno de Nicolás Maduro',
-      time: '2019-03-01T14:00+00:00',
+      datetime: '2019-03-12T14:00+00:00',
+      dateformat: '12 March 2019',
     },
   },
   {
@@ -24,7 +25,8 @@ const storyPromoData = [
         'Abdicación de Akihito en Japón: el emperador que dejó atrás los "pecados" de su padre y es el primero en abdicar en 200 años',
       summary:
         'Qué es Reiwa y por qué significa el inicio de una nueva era imperial para Japón',
-      time: '2019-03-01T14:00+00:00',
+      datetime: '2019-04-20T14:00+00:00',
+      dateformat: '20 April 2019',
     },
   },
   {
@@ -38,7 +40,8 @@ const storyPromoData = [
         'Qué significa para la crisis política en Venezuela que Leopoldo López haya sido liberado',
       summary:
         'Qué papel juega Leopoldo López en la crisis política de Venezuela a 5 años de su arresto',
-      time: '2019-03-01T14:00+00:00',
+      datetime: '2019-05-05T14:00+00:00',
+      dateformat: '5 May 2019',
     },
   },
   {
@@ -52,7 +55,8 @@ const storyPromoData = [
         'La batalla de Invernalia: por qué no cumplió con las enormes expectativas de los fans más exigentes de "Juego de Tronos"',
       summary:
         'Era el momento que los fanáticos de "Juego de Tronos" habían estado esperando durante mucho tiempo: la batalla entre los vivos y los muertos. ',
-      time: '2019-03-01T14:00+00:00',
+      datetime: '2019-06-30T14:00+00:00',
+      dateformat: '30 June 2019',
     },
   },
 ];
