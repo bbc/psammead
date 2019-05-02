@@ -23,4 +23,16 @@ describe('Timestamp', () => {
       Updated 7 July 2018
     </Timestamp>,
   );
+
+  shouldMatchSnapshot(
+    'should render Timestamp without padding',
+    <Timestamp
+      datetime="1530947227000"
+      typographyFunc={getPica}
+      script={latin}
+      padding={false}
+    >
+      Updated 7 July 2018
+    </Timestamp>,
+  );
 });

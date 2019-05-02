@@ -1,6 +1,6 @@
 import React from 'react';
-import styled from 'styled-components';
-import { node, string, func, shape } from 'prop-types';
+import styled, { css } from 'styled-components';
+import { node, string, func, shape, bool } from 'prop-types';
 import {
   GEL_SPACING_HLF,
   GEL_SPACING_DBL,
@@ -15,17 +15,22 @@ const StyledTimestamp = styled.time`
   color: ${C_CLOUD_DARK};
   display: block;
   font-family: ${GEL_FF_REITH_SANS};
-  padding-bottom: ${GEL_SPACING_HLF};
-  &:last-child {
-    padding-bottom: ${GEL_SPACING_DBL};
-  }
-`;
+  ${props =>
+    props.padding &&
+    css`
+      padding-bottom: ${GEL_SPACING_HLF};
+      &:last-child {
+        padding-bottom: ${GEL_SPACING_DBL};
+      }
+    `}
+ `;
 
-const Timestamp = ({ children, datetime, typographyFunc, script }) => (
+const Timestamp = ({ children, datetime, typographyFunc, script, padding }) => (
   <StyledTimestamp
     dateTime={datetime}
     typographyFunc={typographyFunc}
     script={script}
+    padding={padding}
   >
     {children}
   </StyledTimestamp>
@@ -34,6 +39,7 @@ const Timestamp = ({ children, datetime, typographyFunc, script }) => (
 Timestamp.defaultProps = {
   script: latin,
   typographyFunc: getBrevier,
+  padding: true,
 };
 
 Timestamp.propTypes = {
@@ -41,6 +47,7 @@ Timestamp.propTypes = {
   datetime: string.isRequired,
   typographyFunc: func,
   script: shape(scriptPropType),
+  padding: bool,
 };
 
 export default Timestamp;
