@@ -62,10 +62,10 @@ Object.keys(svgs)
   .filter(svgName => svgName !== 'BBC_BLOCKS')
   .forEach(svgName => {
     stories.add(
-      key,
+      svgName,
       () => {
         const height = numberKnob('Height', 24);
-        return getSVG({ ...svgs[key], height });
+        return getSVG({ ...svgs[svgName], height });
       },
       { notes },
     );

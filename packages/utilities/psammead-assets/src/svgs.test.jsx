@@ -2,14 +2,18 @@ import React from 'react';
 import { shouldMatchSnapshot } from '@bbc/psammead-test-helpers';
 import * as svgs from './svgs';
 
-Object.keys(svgs)
-  .filter(key => key !== 'BBC_BLOCKS')
-  .forEach(key => {
-    describe(`${key} SVG`, () => {
+Object.svgNames(svgs)
+  .filter(svgName => svgName !== 'BBC_BLOCKS')
+  .forEach(svgName => {
+    describe(`${svgName} SVG`, () => {
       shouldMatchSnapshot(
         'should render correctly',
-        <svg viewBox={`${svgs[key].viewbox.width} ${svgs[key].viewbox.height}`}>
-          {svgs[key].group}
+        <svg
+          viewBox={`${svgs[svgName].viewbox.width} ${
+            svgs[svgName].viewbox.height
+          }`}
+        >
+          {svgs[svgName].group}
         </svg>,
       );
     });
