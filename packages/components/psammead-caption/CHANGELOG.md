@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 1.1.2 | [PR#491](https://github.com/bbc/psammead/pull/491) Remove bottom padding from paragraphs within Caption |
 | 1.1.1 | [PR#459](https://github.com/bbc/psammead/pull/459) Add custom propTypes shape |
 | 1.1.0 | [PR#446](https://github.com/bbc/psammead/pull/446) De-italicise text in italic tag |
 | 1.0.1 | [PR#424](https://github.com/bbc/psammead/pull/424) Add Snyk badge to readme |
