@@ -59,7 +59,7 @@ getSVG.propTypes = {
 const stories = storiesOf('SVGs', module).addDecorator(withKnobs);
 
 Object.keys(svgs)
-  .filter(key => key !== 'BBC_BLOCKS')
+  .filter(svgName => svgName !== 'BBC_BLOCKS')
   .forEach(key => {
     stories.add(
       key,
