@@ -2,7 +2,7 @@ import React from 'react';
 import { shouldMatchSnapshot } from '@bbc/psammead-test-helpers';
 import * as svgs from './svgs';
 
-Object.svgNames(svgs)
+Object.keys(svgs)
   .filter(svgName => svgName !== 'BBC_BLOCKS')
   .forEach(svgName => {
     describe(`${svgName} SVG`, () => {
