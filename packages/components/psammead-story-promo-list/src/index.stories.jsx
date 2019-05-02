@@ -39,7 +39,7 @@ storiesOf('StoryPromoList', module).add(
         );
 
         return (
-          <StoryPromoLi key={item.info.headline} role="listitem">
+          <StoryPromoLi key={item.info.headline}>
             <StoryPromo image={ImagePromo} info={InfoPromo} />
           </StoryPromoLi>
         );

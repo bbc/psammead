@@ -12,7 +12,7 @@ import {
   GEL_GROUP_4_SCREEN_WIDTH_MIN,
 } from '@bbc/gel-foundations/breakpoints';
 
-export const StoryPromoLi = styled.li`
+const StyledListItem = styled.li`
   border-bottom: 0.0625rem solid ${C_LUNAR};
   padding: ${GEL_SPACING_DBL} 0 ${GEL_SPACING};
   @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
@@ -44,6 +44,16 @@ export const StoryPromoUl = ({ children, ...props }) => (
   </StyledUnorderedList>
 );
 
+export const StoryPromoLi = ({ children, ...props }) => (
+  <StyledListItem role="listitem" {...props}>
+    {children}
+  </StyledListItem>
+);
+
 StoryPromoUl.propTypes = {
+  children: node.isRequired,
+};
+
+StoryPromoLi.propTypes = {
   children: node.isRequired,
 };
