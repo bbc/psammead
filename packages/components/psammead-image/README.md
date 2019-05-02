@@ -59,12 +59,17 @@ const WrappingContainer = ({ alt, src, height, width }) => (
 | Prop     | Type          | Required | Default | Example                                                                                                |
 | :------- | :------------ | :------- | :------ | :----------------------------------------------------------------------------------------------------- |
 | `alt`    | string        | Yes      | -       | "A picture of a cat"                                                                                   |
-| `height` | number/string | Yes      | null    | 450                                                                                                    |
+| `height` | number/string | No       | null    | 450                                                                                                    |
 | `src`    | string        | Yes      | -       | "https://bbc.com/300/cat.jpg"                                                                          |
 | `srcset` | string        | No       | null    | "https://bbc.com/300/cat.jpg 300w, https://bbc.com/450/cat.jpg 450w, https://bbc.com/600/cat.jpg 600w" |
-| `width`  | number/string | Yes      | -       | 600                                                                                                    |
+| `width`  | number/string | No       | null    | 600                                                                                                    |
 
-The `height` prop is optional, since in some cases to preserve the image ratio we only want to specify the width and let the browser scale the image accordingly. However, in other cases the height might need to be specified.
+The `height` and `width` props are optional, in some cases to preserve the image ratio you might specify either `height` or `width` and let the browser scale the image accordingly.
+
+However when not specified the browser will not be able to determine the size of the image, the browser will therefore build the page twice or more depending on the number of images you have. First build is for the browser to display all the text and once the image is downloaded and size determined a second build to wrap the texts around the image.
+
+Specifying the `width` and `height` allows the browser to reserve space for the image which prevent content moving around while the image is being loaded.
+
 The `srcset` prop is optional since some projects might not want to use the srcset attribute on images.
 
 ### AmpImg

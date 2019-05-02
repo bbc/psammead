@@ -15,6 +15,9 @@ export const Img = ({ alt, src, srcset, height, width }) => {
   if (srcset) {
     props.srcSet = srcset;
   }
+  if (!width) {
+    delete props.width;
+  }
 
   return <StyledImg {...props} />;
 };
@@ -24,12 +27,13 @@ Img.propTypes = {
   src: string.isRequired,
   srcset: string,
   height: oneOfType([string, number]),
-  width: oneOfType([string, number]).isRequired,
+  width: oneOfType([string, number]),
 };
 
 Img.defaultProps = {
   height: null,
   srcset: null,
+  width: null,
 };
 
 export default Img;

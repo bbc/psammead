@@ -21,8 +21,8 @@ const stories = (
   includeHeight = false,
   additionalProps = {},
   styleDecorator = storyFn => storyFn(),
-) =>
-  storiesOf(title, module)
+) => {
+  const imageStories = storiesOf(title, module)
     .addDecorator(styleDecorator)
     .add(
       'landscape image',
@@ -69,5 +69,20 @@ const stories = (
       ),
       { notes },
     );
+  if (Component.name === 'Img') {
+    imageStories.add(
+      'image without width',
+      () => (
+        <Component
+          {...getProps(landscape, includeHeight)}
+          {...additionalProps}
+          width={190}
+        />
+      ),
+      { notes },
+    );
+  }
+  return imageStories;
+};
 
 export default stories;

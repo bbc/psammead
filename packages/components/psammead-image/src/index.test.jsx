@@ -1,10 +1,6 @@
-import Image, { Img } from '.';
+import Image from '.';
 import snapshotTests from './testHelpers/snapshotTests';
 
-describe("Image - imported as '{ Img }'", () => {
-  snapshotTests(Img);
-});
-
-describe("Image - imported as default 'Image'", () => {
+describe("Image - Img'", () => {
   snapshotTests(Image);
 });
