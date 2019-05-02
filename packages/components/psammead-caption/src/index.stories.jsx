@@ -3,6 +3,7 @@ import { storiesOf } from '@storybook/react';
 import { withKnobs } from '@storybook/addon-knobs';
 import { inputProvider } from '@bbc/psammead-storybook-helpers';
 import InlineLink from '@bbc/psammead-inline-link';
+import Paragraph from '@bbc/psammead-paragraph';
 import VisuallyHiddenText from '@bbc/psammead-visually-hidden-text';
 import { latin } from '@bbc/gel-foundations/scripts';
 import notes from '../README.md';
@@ -45,6 +46,18 @@ storiesOf('Caption', module)
     inputProvider([], () => (
       <Caption script={latin}>
         Example text with <i>italics</i>
+      </Caption>
+    )),
+    { notes, knobs: { escapeHTML: false } },
+  )
+  .add(
+    'containing multiple paragraphs',
+    inputProvider([], () => (
+      <Caption script={latin}>
+        <Paragraph>Paragraph with padding bottom.</Paragraph>
+        <Paragraph>
+          Last paragraph - <i>without padding bottom</i>.
+        </Paragraph>
       </Caption>
     )),
     { notes, knobs: { escapeHTML: false } },
