@@ -4,7 +4,7 @@ def dockerRegistry = "329802642264.dkr.ecr.eu-west-1.amazonaws.com"
 def nodeImageVersion = "0.0.8"
 def nodeImage = "${dockerRegistry}/bbc-news/node-8-lts:${nodeImageVersion}"
 def nodeName
-def slackChannel = "#psammead"
+def slackChannel = "#si_repo-psammead"
 def stageName = "Unknown"
 def gitCommitAuthor = "Unknown"
 def gitCommitMessage = "Unknown"

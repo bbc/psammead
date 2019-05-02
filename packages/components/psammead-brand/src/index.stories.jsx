@@ -19,4 +19,7 @@ storiesOf('Brand', module)
       return <Brand brandName="Default Brand Name" svg={svgs[choice]} />;
     },
     { notes },
-  );
+  )
+  .add('without brand svg', () => <Brand brandName="Default Brand Name" />, {
+    notes,
+  });
