@@ -2,13 +2,7 @@
 
 ## Description
 
-The `Brand` component renders the BBC service logo (as SVG), nested inside a styled span, link and div. The link is currently hardcoded to "<https://www.bbc.co.uk/news>". `Brand` takes a `brandName`, an `svg`, and `svgHeights` as props.
-
-`brandName` is passed to a [VisuallyHiddenText](https://github.com/bbc/psammead/tree/latest/packages/components/VisuallyHiddenText) component, nested inside Brand. Note that this does not currently affect the branding itself, which is always produced by rendering the `svg` prop.
-
-The `svg` prop must contain a `group`, `viewbox` values and a `ratio`, which is used within an `svg` element, rendered at a height defined by the `svgHeights` prop. Examples of the `svg` object can be found in [@bbc/psammead-assets](https://github.com/bbc/psammead/blob/latest/packages/utilities/psammead-assets/README.md#service-svgs).
-
-The `svgHeights` prop is a mapping between [GEL breakpoint groups A, B and D](http://www.bbc.co.uk/gel/guidelines/typography#type-sizes) and the height (in pixels) to render the SVG at. (These heights are converted to `rem`s internally, and the widths are calculated using the `ratio` defined in the `svg` prop).
+The `Brand` component provides the BBC service logo (as SVG), nested inside a styled span, link and div. The link is currently hardcoded to "https://www.bbc.co.uk/news". `Brand` takes a `brandName`, `height`, `minWidth`, `maxWidth` and  `svg` as props. `brandName` is passed to a [VisuallyHiddenText](https://github.com/bbc/psammead/tree/latest/packages/components/VisuallyHiddenText) component, nested inside Brand. The `svg` prop must contain a `group`, `viewbox` values and a `ratio`, which is used within an `svg` element. Examples of the `svg` object can be found in [@bbc/psammead-assets](https://github.com/bbc/psammead/blob/latest/packages/utilities/psammead-assets/README.md#service-svgs). The `minWidth` and `maxWidth` values are required to allow the ability for the `svg` element to dynamically scale as the viewport a very small size EG: feature phones. The `height` value acts as a placeholder for the `svg` element meaning the overall banner height does not change with the dynamic scaling, also the `height` allows the contents of the `svg` element to remain vertically centred within the banner at all times.
 
 ## Installation
 
@@ -19,8 +13,10 @@ The `svgHeights` prop is a mapping between [GEL breakpoint groups A, B and D](ht
 | Argument  | Type   | Required | Default | Example      |
 | --------- | ------ | -------- | ------- | ------------ |
 | brandName | String | yes      | N/A     | `'BBC News'` |
+| height | Number | yes | N/A | `24` |
+| minWidth | Number | yes | N/A | `240` |
+| maxWidth | Number | yes | N/A | `380` |
 | svg | Object | yes | N/A | { group: `(<g fillrule="evenodd"><path d="M84.32" /></g>)`, viewbox: { height: 24, width: 167.95 }, ratio: 6.9979 } |
-| svgHeights | Object | no | `{ groupA: 22, groupB: 22, groupD: 24 }` | `{ groupA: 16, groupB: 20, groupD: 24 }` |
 
 ## Usage
 
@@ -30,11 +26,15 @@ The typical use-case of this component is at the top of pages in a [`header` ele
 import Brand from '@bbc/psammead-brand';
 import { igbo } from '@bbc/psammead-assets/svgs';
 
-const svgHeights = { groupA: 16, groupB: 20, groupD: 24 };
-
 const Header = brandName => (
   <header role="banner">
-    <Brand brandName={brandName} svg={igbo} svgHeights={svgHeights} />
+    <Brand 
+      brandName={brandName} 
+      height={24}
+      maxWidth={280}
+      minWidth={180}
+      svg={igbo} 
+    />
   </header>
 );
 ```

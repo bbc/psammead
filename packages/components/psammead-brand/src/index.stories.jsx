@@ -15,17 +15,21 @@ storiesOf('Brand', module)
         .filter(key => key !== 'BBC_BLOCKS')
         .map(key => key.charAt(0).toUpperCase() + key.slice(1));
 
-      const choice = select('Service SVG', options, 'news').toLowerCase();
-      const heights = {
-        groupA: number('svg height min', 16),
-        groupB: number('svg height med', 20),
-        groupD: number('svg height max', 24),
-      };
+      const choice = select('Service SVG', options, 'News').toLowerCase();
+      const svgRatio = svgs[choice].ratio;
+      const svgMaxHeight = 24;
+      const svgMinHeight = 16;
+      const minWidth = number('minimum svg width', svgRatio * svgMinHeight);
+      const maxWidth = number('maximum svg width', svgRatio * svgMaxHeight);
+      const height = number('desired height svg', svgMaxHeight);
+
       return (
         <Brand
           brandName="Default Brand Name"
+          height={height}
+          minWidth={minWidth}
+          maxWidth={maxWidth}
           svg={svgs[choice]}
-          svgHeights={heights}
         />
       );
     },

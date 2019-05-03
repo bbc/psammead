@@ -3,7 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 | ------- | ----------- |
-| 1.1.0   | [PR#480](https://github.com/bbc/psammead/pull/480) Control height of Brand SVG |
+| 1.2.0   | [PR#480](https://github.com/bbc/psammead/pull/480) Allow the SVG to dynamically scale between the minimum and maximum widths passed in as props, also bump psammead-assets@0.1.9. Also reduce banner height and left-right padding under 600px. |
 | 1.0.1   | [PR#476](https://github.com/bbc/psammead/pull/476) Fail gracefully if brand svg is not provided |
 | 1.0.0   | [PR#457](https://github.com/bbc/psammead/pull/457) Enable passing of different svgs |
 | 0.3.4   | [PR#424](https://github.com/bbc/psammead/pull/424) Add Snyk badge to readme |
