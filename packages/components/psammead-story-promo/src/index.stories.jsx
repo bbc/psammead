@@ -34,21 +34,12 @@ storiesOf('StoryPromo', module)
   .addDecorator(withKnobs)
   .add(
     'default',
-    inputProvider(
-      [
-        { name: 'Headline', defaultText: 'This is a headline' },
-        { name: 'Summary', defaultText: 'This is a summary' },
-      ],
-      ([headlineText, summaryText]) => {
-        const Info = (
-          <InfoComponent
-            headlineText={headlineText}
-            summaryText={summaryText}
-          />
-        );
+    inputProvider(['Headline', 'Summary'], (headlineText, summaryText) => {
+      const Info = (
+        <InfoComponent headlineText={headlineText} summaryText={summaryText} />
+      );
 
-        return <StoryPromo image={ImageComponent} info={Info} />;
-      },
-    ),
+      return <StoryPromo image={ImageComponent} info={Info} />;
+    }),
     { notes, knobs: { escapeHTML: false } },
   );
