@@ -13,9 +13,12 @@ This package provides a collection of common values that are used in storybook b
     - `name`: String uniquely identifying this slot in the story. Required.
     - `defaultText`: String to use when the story is showing English text. Optional.
 - `renderFn`: `function(slotTexts, script, dir)` Required.
+
   - `slotTexts`: Array of strings to insert into the story. Length and order corresponds to the provided `slots`.
   - `script`: A [script](https://github.com/bbc/psammead/tree/latest/packages/utilities/gel-foundations#script-support) corresponding to the language selected by the storybook user.
   - `dir`: Either `'ltr'` or `'rtl'`, corresponding to the language currently selected by the storybook user.
+
+`dirDecorator` - A storybook decorator function that uses `inputProvider` internaly to provide direction control only
 
 ## Installation
 
@@ -28,7 +31,7 @@ npm install @bbc/psammead-storybook-helpers --save-dev
 ### LANGUAGE_VARIANTS
 
 ```jsx
-import { select } from '@storybook/addon-knobs'
+import { select } from '@storybook/addon-knobs';
 import { LANGUAGE_VARIANTS } from '@bbc/psammead-storybook-helpers';
 
 const label = 'Languages';
@@ -36,8 +39,11 @@ const defaultValue = 'This is a caption';
 const groupIdentifier = 'CAPTION VARIANTS';
 
 <Caption>
-  {select(label, LANGUAGE_VARIANTS, LANGUAGE_VARIANTS.english, groupIdentifier).text}
-</Caption>
+  {
+    select(label, LANGUAGE_VARIANTS, LANGUAGE_VARIANTS.english, groupIdentifier)
+      .text
+  }
+</Caption>;
 ```
 
 ### inputProvider
@@ -61,12 +67,32 @@ storiesOf('Caption', module)
       ],
       ([captionText, offscreenText], script, dir) => (
         <Caption script={script} dir={dir}>
-          <VisuallyHiddenText>
-            {offscreenText}
-          </VisuallyHiddenText>
+          <VisuallyHiddenText>{offscreenText}</VisuallyHiddenText>
           {captionText}
         </Caption>
       ),
+    ),
+    { knobs: { escapeHTML: false } },
+  );
+```
+
+### dirDecorator
+
+```jsx
+import React from 'react';
+import { storiesOf } from '@storybook/react';
+import { withKnobs } from '@storybook/addon-knobs';
+import { dirDecorator } from '@bbc/psammead-storybook-helpers';
+import Brand from '@bbc/psammead-brand';
+import { news as brandSVG } from '@bbc/psammead-assets';
+
+storiesOf('Brand', module)
+  .addDecorator(withKnobs)
+  .addDecorator(dirDecorator)
+  .add(
+    'default',
+    (inputValues, script, dir) => (
+      <Brand brandName="Default Brand Name" svg={brandSVG} />
     ),
     { knobs: { escapeHTML: false } },
   );
