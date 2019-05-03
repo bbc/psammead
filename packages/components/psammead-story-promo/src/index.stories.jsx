@@ -3,7 +3,6 @@ import { storiesOf } from '@storybook/react';
 import { withKnobs, text } from '@storybook/addon-knobs';
 import { inputProvider } from '@bbc/psammead-storybook-helpers';
 import Image from '@bbc/psammead-image';
-import { latin } from '@bbc/gel-foundations/scripts';
 import Timestamp from '@bbc/psammead-timestamp';
 import notes from '../README.md';
 import StoryPromo, { Headline, Summary } from './index';
@@ -20,10 +19,10 @@ const ImageComponent = (
 );
 
 // eslint-disable-next-line react/prop-types
-const InfoComponent = ({ headlineText, summaryText }) => (
+const InfoComponent = ({ headlineText, summaryText, script }) => (
   <Fragment>
-    <Headline script={latin}>{headlineText}</Headline>
-    <Summary script={latin}>{summaryText}</Summary>
+    <Headline script={script}>{headlineText}</Headline>
+    <Summary script={script}>{summaryText}</Summary>
     <Timestamp datetime={text('Timestamp datetime', '2019-03-01T14:00+00:00')}>
       {text('Timestamp', '12 March 2019')}
     </Timestamp>
@@ -39,11 +38,12 @@ storiesOf('StoryPromo', module)
         { name: 'Headline', defaultText: 'Headline' },
         { name: 'Summary', defaultText: 'Summary' },
       ],
-      ([headlineText, summaryText]) => {
+      ([headlineText, summaryText], script) => {
         const Info = (
           <InfoComponent
             headlineText={headlineText}
             summaryText={summaryText}
+            script={script}
           />
         );
 

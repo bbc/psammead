@@ -4,7 +4,6 @@ import { withKnobs } from '@storybook/addon-knobs';
 import { inputProvider } from '@bbc/psammead-storybook-helpers';
 import InlineLink from '@bbc/psammead-inline-link';
 import VisuallyHiddenText from '@bbc/psammead-visually-hidden-text';
-import { latin } from '@bbc/gel-foundations/scripts';
 import notes from '../README.md';
 import Caption from '.';
 
@@ -14,7 +13,9 @@ storiesOf('Caption', module)
     'default',
     inputProvider(
       [{ name: 'Caption', defaultText: 'caption' }],
-      ([captionText]) => <Caption script={latin}>{captionText}</Caption>,
+      ([captionText], script) => (
+        <Caption script={script}>{captionText}</Caption>
+      ),
     ),
     { notes, knobs: { escapeHTML: false } },
   )
@@ -25,8 +26,8 @@ storiesOf('Caption', module)
         { name: 'Visual hidden text', defaultText: 'visually hidden text' },
         { name: 'Caption', defaultText: 'caption' },
       ],
-      ([hiddenText, captionText]) => (
-        <Caption script={latin}>
+      ([hiddenText, captionText], script) => (
+        <Caption script={script}>
           <VisuallyHiddenText>{hiddenText}</VisuallyHiddenText>
           {captionText}
         </Caption>
@@ -41,8 +42,8 @@ storiesOf('Caption', module)
         { name: 'Inline link', defaultText: 'inline link' },
         { name: 'Caption', defaultText: 'caption' },
       ],
-      ([linkText, captionText]) => (
-        <Caption script={latin}>
+      ([linkText, captionText], script) => (
+        <Caption script={script}>
           {captionText}
           <InlineLink href="https://www.bbc.com"> {linkText}</InlineLink>.
         </Caption>
@@ -52,8 +53,8 @@ storiesOf('Caption', module)
   )
   .add(
     'containing italicisation',
-    inputProvider([], () => (
-      <Caption script={latin}>
+    inputProvider([], (inputs, script) => (
+      <Caption script={script}>
         Example text with <i>italics</i>
       </Caption>
     )),

@@ -9,8 +9,11 @@ storiesOf('InlineLink', module)
   .addDecorator(withKnobs)
   .add(
     'default',
-    inputProvider(['link text'], linkText => (
-      <InlineLink href="https://www.bbc.com/news">{linkText}</InlineLink>
-    )),
+    inputProvider(
+      [{ name: 'Link text', defaultText: 'link text' }],
+      ([linkText]) => (
+        <InlineLink href="https://www.bbc.com/news">{linkText}</InlineLink>
+      ),
+    ),
     { notes, knobs: { escapeHTML: false } },
   );
