@@ -12,16 +12,20 @@ storiesOf('Caption', module)
   .addDecorator(withKnobs)
   .add(
     'default',
-    inputProvider(['caption'], captionText => (
-      <Caption script={latin}>{captionText}</Caption>
-    )),
+    inputProvider(
+      [{ name: 'Caption', defaultText: 'caption' }],
+      ([captionText]) => <Caption script={latin}>{captionText}</Caption>,
+    ),
     { notes, knobs: { escapeHTML: false } },
   )
   .add(
     'with offscreen text',
     inputProvider(
-      ['visually hidden text', 'caption'],
-      (hiddenText, captionText) => (
+      [
+        { name: 'Visual hidden text', defaultText: 'visually hidden text' },
+        { name: 'Caption', defaultText: 'caption' },
+      ],
+      ([hiddenText, captionText]) => (
         <Caption script={latin}>
           <VisuallyHiddenText>{hiddenText}</VisuallyHiddenText>
           {captionText}
@@ -32,12 +36,18 @@ storiesOf('Caption', module)
   )
   .add(
     'containing an inline link',
-    inputProvider(['inline link', 'caption'], (linkText, captionText) => (
-      <Caption script={latin}>
-        {captionText}
-        <InlineLink href="https://www.bbc.com"> {linkText}</InlineLink>.
-      </Caption>
-    )),
+    inputProvider(
+      [
+        { name: 'Inline link', defaultText: 'inline link' },
+        { name: 'Caption', defaultText: 'caption' },
+      ],
+      ([linkText, captionText]) => (
+        <Caption script={latin}>
+          {captionText}
+          <InlineLink href="https://www.bbc.com"> {linkText}</InlineLink>.
+        </Caption>
+      ),
+    ),
     { notes, knobs: { escapeHTML: false } },
   )
   .add(

@@ -10,9 +10,10 @@ storiesOf('Headline', module)
   .addDecorator(withKnobs)
   .add(
     'default',
-    inputProvider(['headline'], headline => (
-      <Headline script={latin}>{headline}</Headline>
-    )),
+    inputProvider(
+      [{ name: 'Headline', defaultText: 'headline' }],
+      ([headline]) => <Headline script={latin}>{headline}</Headline>,
+    ),
     { notes, knobs: { escapeHTML: false } },
   );
 
@@ -20,10 +21,13 @@ storiesOf('SubHeading', module)
   .addDecorator(withKnobs)
   .add(
     'default',
-    inputProvider(['subheading'], subheader => (
-      <SubHeading text={subheader} script={latin}>
-        {subheader}
-      </SubHeading>
-    )),
+    inputProvider(
+      [{ name: 'SubHeading', defaultText: 'subHeading' }],
+      ([subheader]) => (
+        <SubHeading text={subheader} script={latin}>
+          {subheader}
+        </SubHeading>
+      ),
+    ),
     { notes, knobs: { escapeHTML: false } },
   );
