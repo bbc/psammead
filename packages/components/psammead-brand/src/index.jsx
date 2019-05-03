@@ -3,23 +3,29 @@ import styled from 'styled-components';
 import { string, number, node, shape } from 'prop-types';
 import { C_POSTBOX, C_WHITE } from '@bbc/psammead-styles/colours';
 import VisuallyHiddenText from '@bbc/psammead-visually-hidden-text';
-// import { GEL_GROUP_3_SCREEN_WIDTH_MIN } from '@bbc/gel-foundations/breakpoints';
+import { GEL_GROUP_3_SCREEN_WIDTH_MIN } from '@bbc/gel-foundations/breakpoints';
 import {
   GEL_SPACING_HLF,
-  // GEL_SPACING,
+  GEL_SPACING,
   GEL_SPACING_DBL,
   GEL_SPACING_TRPL,
 } from '@bbc/gel-foundations/spacings';
 
-const BANNER_SVG_TOP_OFFSET = '1.75rem'; // 28px
-// const BANNER_HEIGHT_BELOW_600PX = '3.5rem'; // 56px
+const SVG_TOP_OFFSET_ABOVE_600PX = '1.75rem'; // 28px
+const SVG_BOTTOM_OFFSET_BELOW_600PX = '0.75rem'; // 12px
+const BANNER_HEIGHT_BELOW_600PX = '3.5rem'; // 56px
 const BANNER_HEIGHT_ABOVE_600PX = '5rem'; // 80px
 
 const Banner = styled.div`
   background-color: ${C_POSTBOX};
   width: 100%;
-  height: ${BANNER_HEIGHT_ABOVE_600PX};
-  padding: 0 ${GEL_SPACING_DBL};
+  height: ${BANNER_HEIGHT_BELOW_600PX};
+  padding: 0 ${GEL_SPACING};
+
+  @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
+    height: ${BANNER_HEIGHT_ABOVE_600PX};
+    padding: 0 ${GEL_SPACING_DBL};
+  }
 `;
 
 const StyledLink = styled.a`
@@ -39,9 +45,14 @@ const BrandSvg = styled.svg`
   height: ${({ height }) => height / 16}rem;
   max-width: ${({ maxWidth }) => maxWidth / 16}rem;
   min-width: ${({ minWidth }) => minWidth / 16}rem;
-  padding-top: ${BANNER_SVG_TOP_OFFSET};
-  padding-bottom: ${GEL_SPACING_TRPL};
+  padding-top: ${GEL_SPACING_DBL};
+  padding-bottom: ${SVG_BOTTOM_OFFSET_BELOW_600PX};
   width: 100%;
+
+  @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
+    padding-top: ${SVG_TOP_OFFSET_ABOVE_600PX};
+    padding-bottom: ${GEL_SPACING_TRPL};
+  }
 
   @media screen and (-ms-high-contrast: active), print {
     fill: windowText;
