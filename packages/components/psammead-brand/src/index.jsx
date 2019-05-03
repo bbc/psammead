@@ -3,34 +3,23 @@ import styled from 'styled-components';
 import { string, number, node, shape } from 'prop-types';
 import { C_POSTBOX, C_WHITE } from '@bbc/psammead-styles/colours';
 import VisuallyHiddenText from '@bbc/psammead-visually-hidden-text';
-import { GEL_GROUP_3_SCREEN_WIDTH_MIN } from '@bbc/gel-foundations/breakpoints';
+// import { GEL_GROUP_3_SCREEN_WIDTH_MIN } from '@bbc/gel-foundations/breakpoints';
 import {
   GEL_SPACING_HLF,
-  GEL_SPACING,
+  // GEL_SPACING,
   GEL_SPACING_DBL,
+  GEL_SPACING_TRPL,
 } from '@bbc/gel-foundations/spacings';
 
-const BANNER_HEIGHT_MIN = '3.875rem'; // 62px
-const BANNER_HEIGHT_FULL = '5rem'; // 80px
+const BANNER_SVG_TOP_OFFSET = '1.75rem'; // 28px
+// const BANNER_HEIGHT_BELOW_600PX = '3.5rem'; // 56px
+const BANNER_HEIGHT_ABOVE_600PX = '5rem'; // 80px
 
 const Banner = styled.div`
   background-color: ${C_POSTBOX};
   width: 100%;
-
-  height: ${BANNER_HEIGHT_MIN};
-  padding: 0 ${GEL_SPACING};
-
-  @media (min-width: /*${GEL_GROUP_3_SCREEN_WIDTH_MIN}*/ 0) { /* TODO uncomment me */
-    height: ${BANNER_HEIGHT_FULL};
-    padding: 0 ${GEL_SPACING_DBL};
-  }
-`;
-
-const ConstraintWrapper = styled.div`
-  // Document this and add media query
-  min-height: 76px; /* = desired height - border-bottom (80-4), TODO media query to set to (56-4)px at 0-599px, rems */
-  padding-top: 40px; /* ${28 / 16}rem; */
-  padding-bottom: 0.75rem; /* TODO gel spacings */
+  height: ${BANNER_HEIGHT_ABOVE_600PX};
+  padding: 0 ${GEL_SPACING_DBL};
 `;
 
 const StyledLink = styled.a`
@@ -43,44 +32,39 @@ const StyledLink = styled.a`
   }
 `;
 
-const StyledSpan = styled.span`
-  display: block;
-  // position: relative;
-  // top: 50%;
-  transform: translateY(-50%);
-`;
-
 const BrandSvg = styled.svg`
-  display: block;
-  fill: #fff;
-  max-height: 1.5rem; /* 24px */
-  max-width: 100%;
+  box-sizing: content-box;
+  display: block; /* is this actually needed? */
+  fill: ${C_WHITE};
+  height: ${({ height }) => height / 16}rem;
+  max-width: ${({ maxWidth }) => maxWidth / 16}rem;
   min-width: ${({ minWidth }) => minWidth / 16}rem;
+  padding-top: ${BANNER_SVG_TOP_OFFSET};
+  padding-bottom: ${GEL_SPACING_TRPL};
+  width: 100%;
 
   @media screen and (-ms-high-contrast: active), print {
     fill: windowText;
   }
 `;
 
-const Brand = ({ brandName, minWidth, svg }) => (
+const Brand = ({ brandName, height, minWidth, maxWidth, svg }) => (
   <Banner>
     {svg && (
       <StyledLink href="https://www.bbc.co.uk/news">
-        <ConstraintWrapper>
-          <StyledSpan>
-            <BrandSvg
-              minWidth={minWidth} // TODO note that this should be the min of (224, svg.viewbox.width) in README, client code's responsibility to set this right
-              viewBox={`0 0 ${svg.viewbox.width} ${svg.viewbox.height}`}
-              xmlns="http://www.w3.org/2000/svg"
-              focusable="false"
-              aria-hidden="true"
-              ratio={svg.ratio}
-            >
-              {svg.group}
-            </BrandSvg>
-            <VisuallyHiddenText>{brandName}</VisuallyHiddenText>
-          </StyledSpan>
-        </ConstraintWrapper>
+        <BrandSvg
+          height={height}
+          maxWidth={maxWidth}
+          minWidth={minWidth}
+          viewBox={`0 0 ${svg.viewbox.width} ${svg.viewbox.height}`}
+          xmlns="http://www.w3.org/2000/svg"
+          focusable="false"
+          aria-hidden="true"
+          ratio={svg.ratio}
+        >
+          {svg.group}
+        </BrandSvg>
+        <VisuallyHiddenText>{brandName}</VisuallyHiddenText>
       </StyledLink>
     )}
   </Banner>
@@ -89,6 +73,8 @@ const Brand = ({ brandName, minWidth, svg }) => (
 Brand.propTypes = {
   brandName: string.isRequired,
   minWidth: number.isRequired,
+  maxWidth: number.isRequired,
+  height: number.isRequired,
   svg: shape({
     group: node.isRequired,
     ratio: number.isRequired,

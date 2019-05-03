@@ -16,14 +16,19 @@ storiesOf('Brand', module)
         .map(key => key.charAt(0).toUpperCase() + key.slice(1));
 
       const choice = select('Service SVG', options, 'News').toLowerCase();
-      const svg = svgs[choice];
-      const defaultMinWidth = number('default min width', 224);
-      const minWidth = Math.min(defaultMinWidth, svg.viewbox.width);
+      const svgRatio = svgs[choice].ratio;
+      const svgMaxHeight = 24;
+      const svgMinHeight = 16;
+      const minWidth = number('minimum svg width', svgRatio * svgMinHeight);
+      const maxWidth = number('maximum svg width', svgRatio * svgMaxHeight);
+      const height = number('desired height svg', svgMaxHeight);
 
       return (
         <Brand
           brandName="Default Brand Name"
-          minWidth={2 /* TODO uncomment this: minWidth*/}
+          height={height}
+          minWidth={minWidth}
+          maxWidth={maxWidth}
           svg={svgs[choice]}
         />
       );
