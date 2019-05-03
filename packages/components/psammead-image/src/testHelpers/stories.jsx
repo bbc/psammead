@@ -76,7 +76,7 @@ const stories = (
         <Component
           {...getProps(landscape, includeHeight)}
           {...additionalProps}
-          width={190}
+          width={null}
         />
       ),
       { notes },
