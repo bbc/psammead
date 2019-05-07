@@ -46,7 +46,7 @@ exports[`Caption should render with some offscreen text 1`] = `
 
 @media (min-width:25rem) and (max-width:62.9375rem) {
   .c0 {
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 1rem 0;
   }
 }
 
@@ -114,7 +114,7 @@ exports[`Caption should render with some offscreen text and arabic script typogr
 
 @media (min-width:25rem) and (max-width:62.9375rem) {
   .c0 {
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 1rem 0;
   }
 }
 
