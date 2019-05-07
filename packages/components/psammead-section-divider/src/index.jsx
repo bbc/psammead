@@ -99,9 +99,9 @@ const SectionDivider = ({ children: text, dir, script }) => (
 );
 
 SectionDivider.defaultProps = {
-  children: '',
+  children: null,
   dir: 'ltr',
-  script: {},
+  script: null,
 };
 
 SectionDivider.propTypes = {
