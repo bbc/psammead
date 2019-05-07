@@ -4,7 +4,6 @@ import { oneOf, shape, string } from 'prop-types';
 import { scriptPropType } from '@bbc/gel-foundations/prop-types';
 import {
   GEL_GROUP_3_SCREEN_WIDTH_MIN,
-  GEL_GROUP_5_SCREEN_WIDTH_MIN,
   MEDIA_QUERY_TYPOGRAPHY,
 } from '@bbc/gel-foundations/breakpoints';
 import {
@@ -20,7 +19,6 @@ import { C_CLOUD_LIGHT, C_EBON, C_WHITE } from '@bbc/psammead-styles/colours';
 
 const MARGIN_TOP_PX = 1;
 const MARGIN_TOP = `${MARGIN_TOP_PX / 16}rem`;
-const MARGIN_TOP_REM_DANGLING = 1.25;
 
 const halfLineHeightRem = group => (group.lineHeight / 2 + MARGIN_TOP_PX) / 16;
 
@@ -34,10 +32,6 @@ const top = script => `
 
   ${MEDIA_QUERY_TYPOGRAPHY.LAPTOP_AND_LARGER} {
     top: ${halfLineHeightRem(script.doublePica.groupD)}rem;
-  }
-
-  @media (min-width: ${GEL_GROUP_5_SCREEN_WIDTH_MIN}) {
-    top: 0;
   }
 `;
 
@@ -74,10 +68,6 @@ const SectionTitle = styled.h2`
 
   @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
     ${paddingDir}: ${GEL_SPACING_DBL};
-  }
-
-  @media (min-width: ${GEL_GROUP_5_SCREEN_WIDTH_MIN}) {
-    margin-top: ${MARGIN_TOP_REM_DANGLING}rem;
   }
 `;
 
