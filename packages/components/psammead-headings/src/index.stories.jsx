@@ -9,10 +9,9 @@ storiesOf('Headline', module)
   .addDecorator(withKnobs)
   .add(
     'default',
-    inputProvider(
-      [{ name: 'Headline', defaultText: 'headline' }],
-      ([headline], script) => <Headline script={script}>{headline}</Headline>,
-    ),
+    inputProvider([{ name: 'Headline' }], ([headline], script) => (
+      <Headline script={script}>{headline}</Headline>
+    )),
     { notes, knobs: { escapeHTML: false } },
   );
 
@@ -20,13 +19,10 @@ storiesOf('SubHeading', module)
   .addDecorator(withKnobs)
   .add(
     'default',
-    inputProvider(
-      [{ name: 'SubHeading', defaultText: 'subHeading' }],
-      ([subheader], script) => (
-        <SubHeading text={subheader} script={script}>
-          {subheader}
-        </SubHeading>
-      ),
-    ),
+    inputProvider([{ name: 'SubHeading' }], ([subheader], script) => (
+      <SubHeading text={subheader} script={script}>
+        {subheader}
+      </SubHeading>
+    )),
     { notes, knobs: { escapeHTML: false } },
   );

@@ -11,12 +11,9 @@ storiesOf('Caption', module)
   .addDecorator(withKnobs)
   .add(
     'default',
-    inputProvider(
-      [{ name: 'Caption', defaultText: 'caption' }],
-      ([captionText], script) => (
-        <Caption script={script}>{captionText}</Caption>
-      ),
-    ),
+    inputProvider([{ name: 'Caption' }], ([captionText], script) => (
+      <Caption script={script}>{captionText}</Caption>
+    )),
     { notes, knobs: { escapeHTML: false } },
   )
   .add(

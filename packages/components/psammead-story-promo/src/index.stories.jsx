@@ -34,10 +34,7 @@ storiesOf('StoryPromo', module)
   .add(
     'default',
     inputProvider(
-      [
-        { name: 'Headline', defaultText: 'Headline' },
-        { name: 'Summary', defaultText: 'Summary' },
-      ],
+      [{ name: 'Headline' }, { name: 'Summary' }],
       ([headlineText, summaryText], script) => {
         const Info = (
           <InfoComponent

@@ -9,9 +9,8 @@ storiesOf('VisuallyHiddenText', module)
   .addDecorator(withKnobs)
   .add(
     'default',
-    inputProvider(
-      [{ name: 'Visually hidden text', defaultText: 'visually hidden text' }],
-      ([hiddenText]) => <VisuallyHiddenText>{hiddenText}</VisuallyHiddenText>,
-    ),
+    inputProvider([{ name: 'Visually hidden text' }], ([hiddenText]) => (
+      <VisuallyHiddenText>{hiddenText}</VisuallyHiddenText>
+    )),
     { notes, knobs: { escapeHTML: false } },
   );
