@@ -7,7 +7,6 @@ import {
 } from '@bbc/gel-foundations/spacings';
 import { GEL_FF_REITH_SANS, getBrevier } from '@bbc/gel-foundations/typography';
 import { scriptPropType } from '@bbc/gel-foundations/prop-types';
-import { latin } from '@bbc/gel-foundations/scripts';
 import { C_CLOUD_DARK } from '@bbc/psammead-styles/colours';
 
 const PADDING = ` 
@@ -37,7 +36,6 @@ const Timestamp = ({ children, datetime, typographyFunc, script, padding }) => (
 );
 
 Timestamp.defaultProps = {
-  script: latin,
   typographyFunc: getBrevier,
   padding: true,
 };
@@ -46,8 +44,8 @@ Timestamp.propTypes = {
   children: node.isRequired,
   datetime: string.isRequired,
   typographyFunc: func,
-  script: shape(scriptPropType),
   padding: bool,
+  script: shape(scriptPropType).isRequired,
 };
 
 export default Timestamp;

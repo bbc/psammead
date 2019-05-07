@@ -7,7 +7,9 @@ import Timestamp from '.';
 describe('Timestamp', () => {
   shouldMatchSnapshot(
     'should render Timestamp correctly',
-    <Timestamp datetime="1530947227000">7 July 2018</Timestamp>,
+    <Timestamp datetime="1530947227000" script={latin}>
+      7 July 2018
+    </Timestamp>,
   );
 
   shouldMatchSnapshot(
