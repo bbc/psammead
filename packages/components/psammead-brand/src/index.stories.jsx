@@ -27,12 +27,12 @@ storiesOf('Brand', module)
         'maximum svg width',
         svgRatio * svgMaxHeight,
       );
-      const heightInput = number('desired height svg', svgMaxHeight);
+      const svgHeightInput = number('desired height svg', svgMaxHeight);
 
       return (
         <Brand
           brandName="Default Brand Name"
-          height={heightInput}
+          svgHeight={svgHeightInput}
           minWidth={minWidthInput}
           maxWidth={maxWidthInput}
           svg={svgs[svgChoice]}

@@ -20,7 +20,7 @@ describe('Brand', () => {
     'should render correctly',
     <Brand
       brandName="Default Brand Name"
-      height={24}
+      svgHeight={24}
       maxWidth={280}
       minWidth={180}
       svg={svg}

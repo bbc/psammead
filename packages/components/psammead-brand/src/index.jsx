@@ -19,13 +19,13 @@ const PADDING_AROUND_SVG_BELOW_600PX = 32;
 const Banner = styled.div`
   background-color: ${C_POSTBOX};
   height: ${props =>
-    `${(props.height + PADDING_AROUND_SVG_BELOW_600PX) / 16}rem`};
+    `${(props.svgHeight + PADDING_AROUND_SVG_BELOW_600PX) / 16}rem`};
   width: 100%;
   padding: 0 ${GEL_SPACING};
 
   @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
     height: ${props =>
-      `${(props.height + PADDING_AROUND_SVG_ABOVE_600PX) / 16}rem`};
+      `${(props.svgHeight + PADDING_AROUND_SVG_ABOVE_600PX) / 16}rem`};
     padding: 0 ${GEL_SPACING_DBL};
   }
 `;
@@ -62,12 +62,12 @@ const BrandSvg = styled.svg`
   /* stylelint-enable */
 `;
 
-const Brand = ({ brandName, height, minWidth, maxWidth, svg }) => (
-  <Banner height={height}>
+const Brand = ({ brandName, svgHeight, minWidth, maxWidth, svg }) => (
+  <Banner svgHeight={svgHeight}>
     {svg && (
       <StyledLink href="https://www.bbc.co.uk/news">
         <BrandSvg
-          height={height}
+          height={svgHeight}
           maxWidth={maxWidth}
           minWidth={minWidth}
           viewBox={`0 0 ${svg.viewbox.width} ${svg.viewbox.height}`}
@@ -88,7 +88,7 @@ Brand.propTypes = {
   brandName: string.isRequired,
   minWidth: number.isRequired,
   maxWidth: number.isRequired,
-  height: number.isRequired,
+  svgHeight: number.isRequired,
   svg: shape({
     group: node.isRequired,
     ratio: number.isRequired,

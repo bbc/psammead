@@ -62,7 +62,6 @@ exports[`Brand should render correctly 1`] = `
 
 <div
   className="c0"
-  height={24}
 >
   <a
     className="c1 c2"
@@ -72,7 +71,6 @@ exports[`Brand should render correctly 1`] = `
       aria-hidden="true"
       className="c3"
       focusable="false"
-      height={24}
       viewBox="0 0 167.95 24"
       xmlns="http://www.w3.org/2000/svg"
     >
