@@ -3,24 +3,20 @@ import styled from 'styled-components';
 import { oneOf, shape, string } from 'prop-types';
 import { scriptPropType } from '@bbc/gel-foundations/prop-types';
 import {
-  GEL_GROUP_3_SCREEN_WIDTH_MIN, // 600px
-  GEL_GROUP_5_SCREEN_WIDTH_MIN, // 1280px
+  GEL_GROUP_3_SCREEN_WIDTH_MIN,
+  GEL_GROUP_5_SCREEN_WIDTH_MIN,
   MEDIA_QUERY_TYPOGRAPHY,
 } from '@bbc/gel-foundations/breakpoints';
 import {
-  GEL_SPACING, // 8px
-  GEL_SPACING_DBL, // 16px
-  GEL_SPACING_TRPL, // 24px
+  GEL_SPACING,
+  GEL_SPACING_DBL,
+  GEL_SPACING_TRPL,
 } from '@bbc/gel-foundations/spacings';
 import {
   getDoublePica,
   GEL_FF_REITH_SANS,
 } from '@bbc/gel-foundations/typography';
-import {
-  C_CLOUD_LIGHT, // #BABABA
-  C_EBON, // #222222
-  C_WHITE, // #FFFFFF
-} from '@bbc/psammead-styles/colours';
+import { C_CLOUD_LIGHT, C_EBON, C_WHITE } from '@bbc/psammead-styles/colours';
 
 const MARGIN_TOP_PX = 1;
 const MARGIN_TOP = `${MARGIN_TOP_PX / 16}rem`;
