@@ -26,7 +26,7 @@ exports[`SectionDivider With title should render correctly 1`] = `
   font-family: ReithSans,Helvetica,Arial,sans-serif;
   display: inline-block;
   position: relative;
-  margin: 1px 0 0 0;
+  margin: 0.0625rem 0 0 0;
   padding-right: 0.5rem;
 }
 
@@ -112,7 +112,7 @@ exports[`SectionDivider With title should render correctly with arabic script ty
   font-family: ReithSans,Helvetica,Arial,sans-serif;
   display: inline-block;
   position: relative;
-  margin: 1px 0 0 0;
+  margin: 0.0625rem 0 0 0;
   padding-left: 0.5rem;
 }
 
@@ -198,7 +198,7 @@ exports[`SectionDivider With title should render correctly with explicit text di
   font-family: ReithSans,Helvetica,Arial,sans-serif;
   display: inline-block;
   position: relative;
-  margin: 1px 0 0 0;
+  margin: 0.0625rem 0 0 0;
   padding-right: 0.5rem;
 }
 

@@ -23,6 +23,7 @@ import {
 } from '@bbc/psammead-styles/colours';
 
 const MARGIN_TOP_PX = 1;
+const MARGIN_TOP = `${MARGIN_TOP_PX / 16}rem`;
 const MARGIN_TOP_REM_DANGLING = 1.25;
 
 const halfLineHeightRem = group => (group.lineHeight / 2 + MARGIN_TOP_PX) / 16;
@@ -69,7 +70,9 @@ const SectionTitle = styled.h2`
   font-family: ${GEL_FF_REITH_SANS};
   display: inline-block;
   position: relative;
-  margin: ${MARGIN_TOP_PX}px 0 0 0;
+
+  /* Unset the browser's default margins. */
+  margin: ${MARGIN_TOP} 0 0 0;
 
   ${paddingDir}: ${GEL_SPACING};
 
