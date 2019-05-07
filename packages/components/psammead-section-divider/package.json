@@ -1,7 +1,7 @@
 {
   "name": "@bbc/psammead-section-divider",
   "version": "0.1.0",
-  "description": "React styled component for a section-divider",
+  "description": "React styled component for a section divider",
   "main": "dist/index.js",
   "repository": {
     "type": "git",
