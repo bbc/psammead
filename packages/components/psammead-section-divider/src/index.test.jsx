@@ -13,6 +13,13 @@ describe('SectionDivider', () => {
     );
 
     shouldMatchSnapshot(
+      'should render correctly with explicit text direction',
+      <SectionDivider script={latin}>
+        This is text in a SectionDivider rendering in ltr mode.
+      </SectionDivider>,
+    );
+
+    shouldMatchSnapshot(
       'should render correctly with arabic script typography values',
       <SectionDivider script={arabic} dir="rtl">
         بعض محتوى النص
