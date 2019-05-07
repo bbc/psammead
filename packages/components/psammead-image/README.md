@@ -66,7 +66,7 @@ const WrappingContainer = ({ alt, src, height, width }) => (
 
 The `height` and `width` props are optional, in some cases to preserve the image ratio you might specify either `height` or `width` and let the browser scale the image accordingly.
 
-However when not specified the browser will not be able to determine the size of the image, the browser will therefore build the page twice or more depending on the number of images you have. First build is for the browser to display all the text and once the image is downloaded and size determined a second build to wrap the texts around the image.
+However when not specified the browser will not be able to determine the size of the image, the browser will therefore build the page twice or more depending on the number of images you have. First paint is for the browser to display all the text and once the image is downloaded and size determined a second paint to wrap the texts around the image.
 
 Specifying the `width` and `height` allows the browser to reserve space for the image which prevent content moving around while the image is being loaded.
 
