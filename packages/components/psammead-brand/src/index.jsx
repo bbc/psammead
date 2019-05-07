@@ -13,36 +13,30 @@ import {
 
 const SVG_TOP_OFFSET_ABOVE_600PX = '1.75rem'; // 28px
 const SVG_BOTTOM_OFFSET_BELOW_600PX = '0.75rem'; // 12px
-const BANNER_HEIGHT_BELOW_600PX = '3.5rem'; // 56px
-const BANNER_HEIGHT_ABOVE_600PX = '5rem'; // 80px
+const PADDING_AROUND_SVG_ABOVE_600PX = 56;
+const PADDING_AROUND_SVG_BELOW_600PX = 32;
 
 const Banner = styled.div`
   background-color: ${C_POSTBOX};
+  height: ${props =>
+    `${(props.height + PADDING_AROUND_SVG_BELOW_600PX) / 16}rem`};
   width: 100%;
-  height: ${BANNER_HEIGHT_BELOW_600PX};
   padding: 0 ${GEL_SPACING};
 
   @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
-    height: ${BANNER_HEIGHT_ABOVE_600PX};
+    height: ${props =>
+      `${(props.height + PADDING_AROUND_SVG_ABOVE_600PX) / 16}rem`};
     padding: 0 ${GEL_SPACING_DBL};
   }
 `;
 
 const StyledLink = styled.a`
   display: inline-block;
-  border-bottom: ${GEL_SPACING_HLF} solid ${C_POSTBOX}; /* Add border to extend click area */
-  &:hover,
-  &:focus {
-    text-decoration: none;
-    border-bottom: ${GEL_SPACING_HLF} solid ${C_WHITE};
-  }
 `;
 
 const BrandSvg = styled.svg`
   box-sizing: content-box;
-  display: block; /* is this actually needed? */
   fill: ${C_WHITE};
-  height: ${({ height }) => height / 16}rem;
   max-width: ${({ maxWidth }) => maxWidth / 16}rem;
   min-width: ${({ minWidth }) => minWidth / 16}rem;
   padding-top: ${GEL_SPACING_DBL};
@@ -57,10 +51,19 @@ const BrandSvg = styled.svg`
   @media screen and (-ms-high-contrast: active), print {
     fill: windowText;
   }
+
+  /* stylelint-disable */
+  /* https://www.styled-components.com/docs/advanced#referring-to-other-components */
+    ${StyledLink}:hover &,
+    ${StyledLink}:focus & {
+    text-decoration: none;
+    border-bottom: ${GEL_SPACING_HLF} solid ${C_WHITE};
+  }
+  /* stylelint-enable */
 `;
 
 const Brand = ({ brandName, height, minWidth, maxWidth, svg }) => (
-  <Banner>
+  <Banner height={height}>
     {svg && (
       <StyledLink href="https://www.bbc.co.uk/news">
         <BrandSvg
