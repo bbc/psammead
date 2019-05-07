@@ -2,6 +2,7 @@
 
 | Version | Description |
 |---------|-------------|
+| 0.1.9   | [PR#490](https://github.com/bbc/psammead/pull/490) Update SVGs to consistent export, minify and add persian |
 | 0.1.8   | [PR#444](https://github.com/bbc/psammead/pull/444) Add service SVG's |
 | 0.1.7   | [PR#424](https://github.com/bbc/psammead/pull/424) Add Snyk badge to readme |
 | 0.1.6   | [PR#323](https://github.com/BBC/psammead/pull/323) Update readme storybook badge |
