@@ -29,6 +29,7 @@ npm install @bbc/psammead-storybook-helpers --save-dev
 
 ### LANGUAGE_VARIANTS
 
+<!-- prettier-ignore -->
 ```jsx
 import { select } from '@storybook/addon-knobs';
 import { LANGUAGE_VARIANTS } from '@bbc/psammead-storybook-helpers';
@@ -38,10 +39,7 @@ const defaultValue = 'This is a caption';
 const groupIdentifier = 'CAPTION VARIANTS';
 
 <Caption>
-  {
-    select(label, LANGUAGE_VARIANTS, LANGUAGE_VARIANTS.english, groupIdentifier)
-      .text
-  }
+  {select(label, LANGUAGE_VARIANTS, LANGUAGE_VARIANTS.english, groupIdentifier).text}
 </Caption>;
 ```
 
