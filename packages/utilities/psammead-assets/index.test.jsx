@@ -16,6 +16,7 @@ const svgsExpectedExports = {
   igbo: 'object',
   thai: 'object',
   pidgin: 'object',
+  persian: 'object',
 };
 
 const expectedExports = {
