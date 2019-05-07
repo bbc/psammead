@@ -6,6 +6,8 @@ The `@bbc/psammead-section-divider` package exports a single Section Divider com
 
 It uses `@bbc/psammead-styles` for colours and font family and `@bbc/gel-foundations` for spacing and for GEL Typography implemented in Styled Components.
 
+The only provided child should be a *string*, which will be wrapped in an `<h2>` element.
+
 ## Installation
 
 `npm install @bbc/psammead-section-divider`
@@ -14,8 +16,9 @@ It uses `@bbc/psammead-styles` for colours and font family and `@bbc/gel-foundat
 
 | Argument  | Type | Required | Default | Example |
 | --------- | ---- | -------- | ------- | ------- |
+| children | string | no | N/A | 'Most Read' |
 | dir | string | no | 'ltr' | 'rtl' |
-| script    | object | yes | latin | { canon: { groupA: { fontSize: '28', lineHeight: '32',}, groupB: { fontSize: '32', lineHeight: '36', }, groupD: { fontSize: '44', lineHeight: '48', }, }, trafalgar: { groupA: { fontSize: '20', lineHeight: '24', }, groupB: { fontSize: '24', lineHeight: '28', }, groupD: { fontSize: '32', lineHeight: '36', }, }, }|
+| script    | object | yes | N/A | { canon: { groupA: { fontSize: '28', lineHeight: '32',}, groupB: { fontSize: '32', lineHeight: '36', }, groupD: { fontSize: '44', lineHeight: '48', }, }, trafalgar: { groupA: { fontSize: '20', lineHeight: '24', }, groupB: { fontSize: '24', lineHeight: '28', }, groupD: { fontSize: '32', lineHeight: '36', }, }, }|
 
 ## Usage
 
@@ -44,6 +47,8 @@ This component should be used to divide the content in a page into logical eleme
 ### Accessibility notes
 
 Although this component has the appearance of a horizontal rule, it does not use an `<hr>` tag, and therefore does not have the associated semantic meaning.
+
+This component wraps the provided child string in an `<h2>` element.
 
 <!-- ## Roadmap -->
 
