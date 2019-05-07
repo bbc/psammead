@@ -10,6 +10,7 @@ import {
   GEL_SPACING,
   GEL_SPACING_DBL,
   GEL_SPACING_TRPL,
+  GEL_SPACING_QUAD,
 } from '@bbc/gel-foundations/spacings';
 import {
   getDoublePica,
@@ -39,6 +40,11 @@ const SectionDividerWrapper = styled.div`
   position: relative;
   margin-top: ${GEL_SPACING_TRPL};
   margin-bottom: ${GEL_SPACING_DBL};
+
+  ${MEDIA_QUERY_TYPOGRAPHY.LAPTOP_AND_LARGER} {
+    margin-top: ${GEL_SPACING_QUAD};
+    margin-bottom: ${GEL_SPACING_TRPL};
+  }
   &::before {
     content: '';
     position: absolute;
@@ -58,6 +64,7 @@ const SectionTitle = styled.h2`
   color: ${C_EBON};
   background-color: ${C_WHITE};
   font-family: ${GEL_FF_REITH_SANS};
+  font-weight: normal;
   display: inline-block;
   position: relative;
 

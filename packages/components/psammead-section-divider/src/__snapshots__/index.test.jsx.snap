@@ -24,10 +24,18 @@ exports[`SectionDivider With title should render correctly 1`] = `
   color: #222222;
   background-color: #FFFFFF;
   font-family: ReithSans,Helvetica,Arial,sans-serif;
+  font-weight: normal;
   display: inline-block;
   position: relative;
   margin: 0.0625rem 0 0 0;
   padding-right: 0.5rem;
+}
+
+@media (min-width:37.5rem) {
+  .c0 {
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+  }
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
@@ -98,10 +106,18 @@ exports[`SectionDivider With title should render correctly with arabic script ty
   color: #222222;
   background-color: #FFFFFF;
   font-family: ReithSans,Helvetica,Arial,sans-serif;
+  font-weight: normal;
   display: inline-block;
   position: relative;
   margin: 0.0625rem 0 0 0;
   padding-left: 0.5rem;
+}
+
+@media (min-width:37.5rem) {
+  .c0 {
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+  }
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
@@ -172,10 +188,18 @@ exports[`SectionDivider With title should render correctly with explicit text di
   color: #222222;
   background-color: #FFFFFF;
   font-family: ReithSans,Helvetica,Arial,sans-serif;
+  font-weight: normal;
   display: inline-block;
   position: relative;
   margin: 0.0625rem 0 0 0;
   padding-right: 0.5rem;
+}
+
+@media (min-width:37.5rem) {
+  .c0 {
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+  }
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
@@ -238,6 +262,13 @@ exports[`SectionDivider Without title should render correctly 1`] = `
   left: 0;
   right: 0;
   top: 0;
+}
+
+@media (min-width:37.5rem) {
+  .c0 {
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+  }
 }
 
 <div
