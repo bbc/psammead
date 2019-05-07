@@ -86,9 +86,7 @@ import { dirDecorator } from '@bbc/psammead-storybook-helpers';
 storiesOf('Example', module)
   .addDecorator(withKnobs)
   .addDecorator(dirDecorator)
-  .add('default', () => <h1>Lorem Ipsum</h1>, {
-    knobs: { escapeHTML: false },
-  });
+  .add('default', () => <h1>Lorem Ipsum</h1>);
 ```
 
 ## Contributing
