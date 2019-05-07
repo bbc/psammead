@@ -31,7 +31,7 @@ const Caption = styled.figcaption`
   padding: ${GEL_SPACING} ${GEL_MARGIN_BELOW_400PX} 0;
   width: 100%;
   @media (min-width: ${GEL_GROUP_2_SCREEN_WIDTH_MIN}) and (max-width: ${GEL_GROUP_3_SCREEN_WIDTH_MAX}) {
-    padding: ${GEL_SPACING} ${GEL_MARGIN_ABOVE_400PX};
+    padding: ${GEL_SPACING} ${GEL_MARGIN_ABOVE_400PX} 0;
   }
   @media (min-width: ${GEL_GROUP_4_SCREEN_WIDTH_MIN}) {
     padding: ${GEL_SPACING} 0 0;
