@@ -1,5 +1,5 @@
 import React from 'react';
-import styled, { css } from 'styled-components';
+import styled from 'styled-components';
 import { node, string, func, shape, bool } from 'prop-types';
 import {
   GEL_SPACING_HLF,
@@ -10,19 +10,19 @@ import { scriptPropType } from '@bbc/gel-foundations/prop-types';
 import { latin } from '@bbc/gel-foundations/scripts';
 import { C_CLOUD_DARK } from '@bbc/psammead-styles/colours';
 
+const PADDING = ` 
+  padding-bottom: ${GEL_SPACING_HLF};
+  &:last-child {
+    padding-bottom: ${GEL_SPACING_DBL};
+  }
+`;
+
 const StyledTimestamp = styled.time`
   ${props => (props.typographyFunc ? props.typographyFunc(props.script) : '')}
   color: ${C_CLOUD_DARK};
   display: block;
   font-family: ${GEL_FF_REITH_SANS};
-  ${props =>
-    props.padding &&
-    css`
-      padding-bottom: ${GEL_SPACING_HLF};
-      &:last-child {
-        padding-bottom: ${GEL_SPACING_DBL};
-      }
-    `}
+  ${props => props.padding && PADDING}
  `;
 
 const Timestamp = ({ children, datetime, typographyFunc, script, padding }) => (
