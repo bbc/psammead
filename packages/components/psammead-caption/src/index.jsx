@@ -28,13 +28,13 @@ const Caption = styled.figcaption`
   color: ${C_CLOUD_DARK};
   font-family: ${GEL_FF_REITH_SANS};
   ${FS_ITALIC};
-  padding: ${GEL_SPACING} ${GEL_MARGIN_BELOW_400PX};
+  padding: ${GEL_SPACING} 0 ${GEL_MARGIN_BELOW_400PX};
   width: 100%;
   @media (min-width: ${GEL_GROUP_2_SCREEN_WIDTH_MIN}) and (max-width: ${GEL_GROUP_3_SCREEN_WIDTH_MAX}) {
     padding: ${GEL_SPACING} ${GEL_MARGIN_ABOVE_400PX};
   }
   @media (min-width: ${GEL_GROUP_4_SCREEN_WIDTH_MIN}) {
-    padding: ${GEL_SPACING} 0;
+    padding: ${GEL_SPACING} 0 0;
   }
   & > p:last-child {
     padding-bottom: 0;
