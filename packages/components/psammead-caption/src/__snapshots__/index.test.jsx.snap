@@ -18,7 +18,7 @@ exports[`Caption should render with some offscreen text 1`] = `
   color: #757575;
   font-family: ReithSans,Helvetica,Arial,sans-serif;
   font-style: italic;
-  padding: 0.5rem 0.5rem;
+  padding: 0.5rem 0.5rem 0;
   width: 100%;
 }
 
@@ -52,7 +52,7 @@ exports[`Caption should render with some offscreen text 1`] = `
 
 @media (min-width:63rem) {
   .c0 {
-    padding: 0.5rem 0;
+    padding: 0.5rem 0 0;
   }
 }
 
@@ -86,7 +86,7 @@ exports[`Caption should render with some offscreen text and arabic script typogr
   color: #757575;
   font-family: ReithSans,Helvetica,Arial,sans-serif;
   font-style: italic;
-  padding: 0.5rem 0.5rem;
+  padding: 0.5rem 0.5rem 0;
   width: 100%;
 }
 
@@ -120,7 +120,7 @@ exports[`Caption should render with some offscreen text and arabic script typogr
 
 @media (min-width:63rem) {
   .c0 {
-    padding: 0.5rem 0;
+    padding: 0.5rem 0 0;
   }
 }
 
