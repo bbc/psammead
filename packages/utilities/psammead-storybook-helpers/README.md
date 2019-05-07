@@ -13,7 +13,6 @@ This package provides a collection of common values that are used in storybook b
     - `name`: String uniquely identifying this slot in the story. Required.
     - `defaultText`: String to use when the story is showing English text. Optional.
 - `renderFn`: `function(slotTexts, script, dir)` Required.
-
   - `slotTexts`: Array of strings to insert into the story. Length and order corresponds to the provided `slots`.
   - `script`: A [script](https://github.com/bbc/psammead/tree/latest/packages/utilities/gel-foundations#script-support) corresponding to the language selected by the storybook user.
   - `dir`: Either `'ltr'` or `'rtl'`, corresponding to the language currently selected by the storybook user.
@@ -83,19 +82,13 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { withKnobs } from '@storybook/addon-knobs';
 import { dirDecorator } from '@bbc/psammead-storybook-helpers';
-import Brand from '@bbc/psammead-brand';
-import { news as brandSVG } from '@bbc/psammead-assets';
 
-storiesOf('Brand', module)
+storiesOf('Example', module)
   .addDecorator(withKnobs)
   .addDecorator(dirDecorator)
-  .add(
-    'default',
-    (inputValues, script, dir) => (
-      <Brand brandName="Default Brand Name" svg={brandSVG} />
-    ),
-    { knobs: { escapeHTML: false } },
-  );
+  .add('default', () => <h1>Lorem Ipsum</h1>, {
+    knobs: { escapeHTML: false },
+  });
 ```
 
 ## Contributing
