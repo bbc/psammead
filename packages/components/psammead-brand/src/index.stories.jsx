@@ -2,13 +2,11 @@ import React from 'react';
 import { select, withKnobs } from '@storybook/addon-knobs';
 import { storiesOf } from '@storybook/react';
 import * as svgs from '@bbc/psammead-assets/svgs';
-import { dirDecorator } from '@bbc/psammead-storybook-helpers';
 import notes from '../README.md';
 import Brand from './index';
 
 storiesOf('Brand', module)
   .addDecorator(withKnobs)
-  .addDecorator(dirDecorator)
   .add(
     'default',
     () => {

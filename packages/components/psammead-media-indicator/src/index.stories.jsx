@@ -2,7 +2,6 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 import styled from 'styled-components';
 import { withKnobs, text } from '@storybook/addon-knobs';
-import { dirDecorator } from '@bbc/psammead-storybook-helpers';
 import notes from '../README.md';
 import MediaIndicator from './index';
 
@@ -16,7 +15,6 @@ const PageDecorator = storyFn => <Page>{storyFn()}</Page>;
 
 storiesOf('MediaIndicator', module)
   .addDecorator(PageDecorator)
-  .addDecorator(dirDecorator)
   .addDecorator(withKnobs)
   .add(
     'default',
