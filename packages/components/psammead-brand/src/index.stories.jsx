@@ -34,7 +34,4 @@ storiesOf('Brand', module)
       );
     },
     { notes },
-  )
-  .add('without brand svg', () => <Brand brandName="Default Brand Name" />, {
-    notes,
-  });
+  );
