@@ -28,7 +28,7 @@ const Caption = styled.figcaption`
   color: ${C_CLOUD_DARK};
   font-family: ${GEL_FF_REITH_SANS};
   ${FS_ITALIC};
-  padding: ${GEL_SPACING} 0 ${GEL_MARGIN_BELOW_400PX};
+  padding: ${GEL_SPACING} ${GEL_MARGIN_BELOW_400PX} 0;
   width: 100%;
   @media (min-width: ${GEL_GROUP_2_SCREEN_WIDTH_MIN}) and (max-width: ${GEL_GROUP_3_SCREEN_WIDTH_MAX}) {
     padding: ${GEL_SPACING} ${GEL_MARGIN_ABOVE_400PX};
