@@ -37,6 +37,7 @@ const Banner = styled.div`
 
 const StyledLink = styled.a`
   display: inline-block;
+  width: 100%;
 `;
 
 const BrandSvg = styled.svg`
