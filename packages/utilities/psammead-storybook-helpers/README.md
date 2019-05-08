@@ -17,7 +17,7 @@ This package provides a collection of common values that are used in storybook b
   - `script`: A [script](https://github.com/bbc/psammead/tree/latest/packages/utilities/gel-foundations#script-support) corresponding to the language selected by the storybook user.
   - `dir`: Either `'ltr'` or `'rtl'`, corresponding to the language currently selected by the storybook user.
 
-`dirDecorator` - A storybook decorator function that uses `inputProvider` internaly to provide direction control only
+`dirDecorator` - A storybook decorator function that uses `inputProvider` internally to provide direction control only
 
 ## Installation
 
