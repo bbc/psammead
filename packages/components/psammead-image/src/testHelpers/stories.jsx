@@ -21,8 +21,8 @@ const stories = (
   includeHeight = false,
   additionalProps = {},
   styleDecorator = storyFn => storyFn(),
-) => {
-  const imageStories = storiesOf(title, module)
+) =>
+  storiesOf(title, module)
     .addDecorator(styleDecorator)
     .add(
       'landscape image',
@@ -69,7 +69,5 @@ const stories = (
       ),
       { notes },
     );
-  return imageStories;
-};
 
 export default stories;
