@@ -1,6 +1,6 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react'; // eslint-disable-line import/no-extraneous-dependencies
-import { text, select, withKnobs } from '@storybook/addon-knobs';
+import { text, select, boolean, withKnobs } from '@storybook/addon-knobs';
 import * as typography from '@bbc/gel-foundations/typography';
 import { latin } from '@bbc/gel-foundations/scripts';
 import notes from '../README.md';
@@ -23,6 +23,7 @@ storiesOf('Timestamp', module)
   .add(
     'default',
     () => {
+      const padding = boolean('Padding', true);
       const style = select('Typography', styles, 'Brevier');
       const typographyFunc = typography[`get${style}`];
 
@@ -31,6 +32,7 @@ storiesOf('Timestamp', module)
           datetime="1530947227000"
           typographyFunc={typographyFunc}
           script={latin}
+          padding={padding}
         >
           {text('Timestamp Text', '7 July 2018')}
         </Timestamp>
@@ -41,6 +43,7 @@ storiesOf('Timestamp', module)
   .add(
     'with "updated" prefix',
     () => {
+      const padding = boolean('Padding', true);
       const style = select('Typography', styles, 'Brevier');
       const typographyFunc = typography[`get${style}`];
 
@@ -49,6 +52,7 @@ storiesOf('Timestamp', module)
           datetime="1530947227000"
           typographyFunc={typographyFunc}
           script={latin}
+          padding={padding}
         >
           {text('Timestamp Text', 'Updated 7 July 2018')}
         </Timestamp>
