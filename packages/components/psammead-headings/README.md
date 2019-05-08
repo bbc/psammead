@@ -10,9 +10,9 @@ The Headings are a set of two components, `Headline` and `SubHeading`. They use 
 
 ## Props
 
-| Argument  | Type | Required | Default | Example |
-| --------- | ---- | -------- | ------- | ------- |
-| Script    | object | yes | latin | { canon: { groupA: { fontSize: '28', lineHeight: '32',}, groupB: { fontSize: '32', lineHeight: '36', }, groupD: { fontSize: '44', lineHeight: '48', }, }, trafalgar: { groupA: { fontSize: '20', lineHeight: '24', }, groupB: { fontSize: '24', lineHeight: '28', }, groupD: { fontSize: '32', lineHeight: '36', }, }, }|
+| Argument | Type   | Required | Default | Example                                                                                                                                                                                                                                                                                                                  |
+| -------- | ------ | -------- | ------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Script   | object | yes      | latin   | { canon: { groupA: { fontSize: '28', lineHeight: '32',}, groupB: { fontSize: '32', lineHeight: '36', }, groupD: { fontSize: '44', lineHeight: '48', }, }, trafalgar: { groupA: { fontSize: '20', lineHeight: '24', }, groupB: { fontSize: '24', lineHeight: '28', }, groupD: { fontSize: '32', lineHeight: '36', }, }, } |
 
 ## Usage
 
@@ -28,17 +28,17 @@ const Wrapper = () => (
 );
 ```
 
-All `SubHeading` components can be used as page anchors, with their ID being generated from their text, with any whitespace replaced with hyphens. To take the above usage as an example:
+`SubHeading` components can be used as page anchors when passed an `id` prop. To take the above usage as an example:
 
-```
-<SubHeading>Some subheadline</SubHeading>
+```jsx
+<SubHeading id="some-subheadline">Some subheadline</SubHeading>
 ```
 
-This usage will allow for the page anchor: `www.bbc.com/news/articles/articleID#Some-subheadline`
+This usage will allow for the page anchor: `www.bbc.com/news/articles/articleID#some-subheadline`
 
 ### When to use this component
 
-These components can be used at any point on the page, however the `Headline` is designed to be used once at the top of the page. The `SubHeading` adds an `id` value to the `h2` which can be used as an anchor when referencing content.
+These components can be used at any point on the page, however the `Headline` is designed to be used once at the top of the page. The `SubHeading` takes an optional `id` value and passes it to the `h2` which can be used as an anchor when referencing content.
 
 <!-- ### When not to use this component -->
 
