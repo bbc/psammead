@@ -20,12 +20,12 @@
     "@bbc/gel-foundations": "^0.3.0"
   },
   "devDependencies": {
-    "@bbc/psammead-storybook-helpers": "^1.1.0",
-    "@bbc/psammead-test-helpers": "^0.3.3",
     "@bbc/psammead-caption": "^0.3.0",
     "@bbc/psammead-copyright": "^0.3.2",
     "@bbc/psammead-image": "^0.3.3",
     "@bbc/psammead-image-placeholder": "^0.1.8",
+    "@bbc/psammead-storybook-helpers": "^2.0.0",
+    "@bbc/psammead-test-helpers": "^0.3.3",
     "@bbc/psammead-visually-hidden-text": "^0.1.10",
     "react": "^16.6.3",
     "styled-components": "^4.1.3"
