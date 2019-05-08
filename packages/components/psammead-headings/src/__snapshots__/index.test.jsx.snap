@@ -109,7 +109,6 @@ exports[`SubHeading component should render correctly 1`] = `
 
 <h2
   className="c0"
-  id={null}
   tabIndex="-1"
 >
   This is a SubHeading
@@ -189,7 +188,6 @@ exports[`SubHeading component should render correctly with arabic script typogra
 
 <h2
   className="c0"
-  id={null}
   tabIndex="-1"
 >
   هذا عنوان فرعي
