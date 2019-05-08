@@ -10,7 +10,7 @@ The `brandName` is passed to a [VisuallyHiddenText](https://github.com/bbc/psamm
 
 The `svg` prop must contain a `group`, `viewbox` values and a `ratio`, which is used within an `svg` element. Examples of the `svg` object can be found in [@bbc/psammead-assets](https://github.com/bbc/psammead/blob/latest/packages/utilities/psammead-assets/README.md#service-svgs). 
 
-The `minWidth` and `maxWidth` values are required to allow the ability for the `svg` element to dynamically scale as the viewport a very small size EG: feature phones. 
+The `minWidth` and `maxWidth` values are required to allow the ability for the `svg` element to dynamically scale as the viewport becomes a very small size EG: feature phones. 
 
 The `svgHeight` value acts as a placeholder for the `svg` element meaning the overall banner height does not change with the dynamic scaling, also the `height` allows the contents of the `svg` element to remain vertically centred within the banner at all times.
 
