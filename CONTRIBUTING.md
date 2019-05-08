@@ -35,6 +35,8 @@ NB: the `__snapshots__` directory is optional.
 
 The `package.json` is namespaced with `@bbc/psammead-*` e.g. `@bbc/psammead-headings`.
 
+Our packages start with version `1.0.0` to allow full use of [semver](https://semver.org/) major, minor and patch.
+
 Include the following authorship and repository information in your package. Replace the team name and email address if appropriate.
 
 ```
@@ -95,7 +97,7 @@ The changelog should follow the following convention:
 
 | Version | Description |
 |---------|-------------|
-| 0.1.0 | [PR#49](https://github.com/bbc/psammead/pull/49) Initial creation of package |
+| 1.0.0 | [PR#49](https://github.com/bbc/psammead/pull/49) Initial creation of package |
 ```
 
 **README**
