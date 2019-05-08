@@ -2,7 +2,7 @@
 
 | Version | Description |
 |---------|-------------|
-| 1.0.0   | [PR#507](https://github.com/bbc/psammead/pull/507) Bump to major version |
+| 1.0.0   | [PR#507](https://github.com/bbc/psammead/pull/507) Bump to major version, no other changes. |
 | 0.1.10  | [PR#424](https://github.com/bbc/psammead/pull/424) Add Snyk badge to readme |
 | 0.1.9   | [PR#407](https://github.com/bbc/psammead/pull/407) Organise dependencies properly |
 | 0.1.8   | [PR#323](https://github.com/bbc/psammead/pull/323) Update storybook badge url |
