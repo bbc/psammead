@@ -56,5 +56,5 @@ SubHeading.propTypes = {
 };
 
 SubHeading.defaultProps = {
-  id: null
+  id: null,
 };

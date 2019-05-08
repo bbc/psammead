@@ -25,7 +25,7 @@ storiesOf('SubHeading', module)
       </SubHeading>
     )),
     { notes, knobs: { escapeHTML: false } },
-   )
+  )
   .add(
     'with optional ID',
     inputProvider([{ name: 'SubHeading' }], ([subheader], script) => {
