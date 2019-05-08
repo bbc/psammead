@@ -3,7 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
-| 1.0.0   | [PR#XXX](https://github.com/bbc/psammead/pull/XXX) Bump to major version |
+| 1.0.0   | [PR#507](https://github.com/bbc/psammead/pull/507) Bump to major version |
 | 0.3.6   | [PR#430](https://github.com/bbc/psammead/pull/430) Add text knobs to story |
 | 0.3.5   | [PR#424](https://github.com/bbc/psammead/pull/424) Add Snyk badge to readme |
 | 0.3.4   | [PR#407](https://github.com/bbc/psammead/pull/407) Organise dependencies properly |
