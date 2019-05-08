@@ -26,13 +26,7 @@ export const Headline = styled.h1`
   font-weight: 500;
 `;
 
-const regexPunctuationSymbols = /[^a-z0-9\s-]/gi;
-const regexSpaces = /\s+/g;
-
-export const SubHeading = styled.h2.attrs(({ id }) => ({
-  id: id
-    ? id.replace(regexPunctuationSymbols, '').replace(regexSpaces, '-')
-    : null,
+export const SubHeading = styled.h2.attrs(() => ({
   tabIndex: '-1',
 }))`
   ${props => (props.script ? getTrafalgar(props.script) : '')};
