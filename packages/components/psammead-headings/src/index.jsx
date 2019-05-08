@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { shape } from 'prop-types';
+import { shape, string } from 'prop-types';
 import { C_SHADOW } from '@bbc/psammead-styles/colours';
 import {
   GEL_SPACING_TRPL,
@@ -29,8 +29,10 @@ export const Headline = styled.h1`
 const regexPunctuationSymbols = /[^a-z0-9\s-]/gi;
 const regexSpaces = /\s+/g;
 
-export const SubHeading = styled.h2.attrs(({ text }) => ({
-  id: text.replace(regexPunctuationSymbols, '').replace(regexSpaces, '-'),
+export const SubHeading = styled.h2.attrs(({ id }) => ({
+  id: id
+    ? id.replace(regexPunctuationSymbols, '').replace(regexSpaces, '-')
+    : null,
   tabIndex: '-1',
 }))`
   ${props => (props.script ? getTrafalgar(props.script) : '')};
@@ -49,5 +51,10 @@ Headline.propTypes = {
 };
 
 SubHeading.propTypes = {
+  id: string,
   script: shape(scriptPropType).isRequired,
+};
+
+SubHeading.defaultProps = {
+  id: null
 };
