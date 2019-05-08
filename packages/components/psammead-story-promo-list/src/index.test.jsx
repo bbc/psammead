@@ -17,8 +17,8 @@ const Info = (
 describe('StoryPromo', () => {
   shouldMatchSnapshot(
     'should render correctly',
-    <StoryPromoUl role="list">
-      <StoryPromoLi role="listitem">
+    <StoryPromoUl>
+      <StoryPromoLi>
         <StoryPromo image={Image} info={Info} />
       </StoryPromoLi>
     </StoryPromoUl>,
