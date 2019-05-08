@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Image - 'Img' should render image correctly without width 1`] = `
+exports[`Image - imported as '{ Img }' should render image correctly without width 1`] = `
 .c0 {
   display: block;
   width: 100%;
@@ -16,7 +16,7 @@ exports[`Image - 'Img' should render image correctly without width 1`] = `
 />
 `;
 
-exports[`Image - 'Img' should render image with custom dimensions correctly 1`] = `
+exports[`Image - imported as '{ Img }' should render image with custom dimensions correctly 1`] = `
 .c0 {
   display: block;
   width: 100%;
@@ -31,7 +31,7 @@ exports[`Image - 'Img' should render image with custom dimensions correctly 1`] 
 />
 `;
 
-exports[`Image - 'Img' should render image with srcset correctly 1`] = `
+exports[`Image - imported as '{ Img }' should render image with srcset correctly 1`] = `
 .c0 {
   display: block;
   width: 100%;
@@ -47,7 +47,7 @@ exports[`Image - 'Img' should render image with srcset correctly 1`] = `
 />
 `;
 
-exports[`Image - 'Img' should render landscape image correctly 1`] = `
+exports[`Image - imported as '{ Img }' should render landscape image correctly 1`] = `
 .c0 {
   display: block;
   width: 100%;
@@ -62,7 +62,7 @@ exports[`Image - 'Img' should render landscape image correctly 1`] = `
 />
 `;
 
-exports[`Image - 'Img' should render portrait image correctly 1`] = `
+exports[`Image - imported as '{ Img }' should render portrait image correctly 1`] = `
 .c0 {
   display: block;
   width: 100%;
@@ -77,7 +77,7 @@ exports[`Image - 'Img' should render portrait image correctly 1`] = `
 />
 `;
 
-exports[`Image - 'Img' should render square image correctly 1`] = `
+exports[`Image - imported as '{ Img }' should render square image correctly 1`] = `
 .c0 {
   display: block;
   width: 100%;

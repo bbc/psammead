@@ -12,7 +12,7 @@ describe("Image - imported as default 'Image'", () => {
   snapshotTests(Img);
 });
 
-describe("Image - 'Img'", () => {
+describe("Image - imported as '{ Img }'", () => {
   snapshotTests(Image);
 });
 
@@ -24,7 +24,7 @@ describe("Image - imported as default 'Image'", () => {
   );
 });
 
-describe("Image - 'Img'", () => {
+describe("Image - imported as '{ Img }'", () => {
   matchSnapshot(
     'should render image correctly without width',
     Image,
