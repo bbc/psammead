@@ -12,7 +12,7 @@ exports[`Image - imported as '{ Img }' should render image correctly without wid
   height={576}
   src="https://ichef.bbci.co.uk/news/300/cpsprodpb/7098/production/_104842882_students.jpg"
   srcSet="https://ichef.bbci.co.uk/news/300/cpsprodpb/7098/production/_104842882_students.jpg 300w, https://ichef.bbci.co.uk/news/450/cpsprodpb/7098/production/_104842882_students.jpg 450w, https://ichef.bbci.co.uk/news/600/cpsprodpb/7098/production/_104842882_students.jpg 600w, https://ichef.bbci.co.uk/news/1024/cpsprodpb/7098/production/_104842882_students.jpg 1024w"
-  width={1024}
+  width={null}
 />
 `;
 
@@ -104,7 +104,7 @@ exports[`Image - imported as default 'Image' should render image correctly witho
   height={576}
   src="https://ichef.bbci.co.uk/news/300/cpsprodpb/7098/production/_104842882_students.jpg"
   srcSet="https://ichef.bbci.co.uk/news/300/cpsprodpb/7098/production/_104842882_students.jpg 300w, https://ichef.bbci.co.uk/news/450/cpsprodpb/7098/production/_104842882_students.jpg 450w, https://ichef.bbci.co.uk/news/600/cpsprodpb/7098/production/_104842882_students.jpg 600w, https://ichef.bbci.co.uk/news/1024/cpsprodpb/7098/production/_104842882_students.jpg 1024w"
-  width={1024}
+  width={null}
 />
 `;
 

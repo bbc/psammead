@@ -17,17 +17,17 @@ describe("Image - imported as '{ Img }'", () => {
 });
 
 describe("Image - imported as default 'Image'", () => {
-  matchSnapshot(
-    'should render image correctly without width',
-    Image,
-    landscape,
-  );
+  const props = Object.assign({}, landscape);
+  delete props.width;
+  matchSnapshot('should render image correctly without width', Image, {
+    ...landscape,
+    width: null,
+  });
 });
 
 describe("Image - imported as '{ Img }'", () => {
-  matchSnapshot(
-    'should render image correctly without width',
-    Image,
-    landscape,
-  );
+  matchSnapshot('should render image correctly without width', Image, {
+    ...landscape,
+    width: null,
+  });
 });
