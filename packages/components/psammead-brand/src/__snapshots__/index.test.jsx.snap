@@ -95,14 +95,12 @@ exports[`Brand should render correctly 1`] = `
 exports[`Brand should render correctly with svg not provided 1`] = `
 .c0 {
   background-color: #B80000;
-  height: NaNrem;
   width: 100%;
   padding: 0 0.5rem;
 }
 
 @media (min-width:37.5rem) {
   .c0 {
-    height: NaNrem;
     padding: 0 1rem;
   }
 }

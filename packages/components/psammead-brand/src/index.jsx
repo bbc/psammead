@@ -18,14 +18,19 @@ const PADDING_AROUND_SVG_BELOW_600PX = 32;
 
 const Banner = styled.div`
   background-color: ${C_POSTBOX};
-  height: ${props =>
-    `${(props.svgHeight + PADDING_AROUND_SVG_BELOW_600PX) / 16}rem`};
+  ${props =>
+    props.svgHeight
+      ? `height: ${(props.svgHeight + PADDING_AROUND_SVG_BELOW_600PX) / 16}rem`
+      : ''};
   width: 100%;
   padding: 0 ${GEL_SPACING};
 
   @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
-    height: ${props =>
-      `${(props.svgHeight + PADDING_AROUND_SVG_ABOVE_600PX) / 16}rem`};
+    ${props =>
+      props.svgHeight
+        ? `height: ${(props.svgHeight + PADDING_AROUND_SVG_ABOVE_600PX) /
+            16}rem`
+        : ''};
     padding: 0 ${GEL_SPACING_DBL};
   }
 `;
