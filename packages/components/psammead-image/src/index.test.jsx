@@ -5,19 +5,12 @@ import { landscape } from './testHelpers/fixtureData';
 import Image, { Img } from '.';
 
 describe("Image - imported as default 'Image'", () => {
-  snapshotTests(Img);
-});
-
-describe("Image - imported as '{ Img }'", () => {
-  snapshotTests(Image);
-});
-
-describe("Image - imported as default 'Image'", () => {
   const props = { ...landscape, width: null };
   shouldMatchSnapshot(
     'should render image correctly without width',
     <Image {...props} />,
   );
+  snapshotTests(Img);
 });
 
 describe("Image - imported as '{ Img }'", () => {
@@ -26,4 +19,5 @@ describe("Image - imported as '{ Img }'", () => {
     'should render image correctly without width',
     <Img {...props} />,
   );
+  snapshotTests(Image);
 });
