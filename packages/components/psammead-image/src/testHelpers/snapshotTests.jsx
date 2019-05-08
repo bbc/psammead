@@ -58,18 +58,6 @@ const snapshotTests = (Component, additionalProps) => {
       width={landscape.width}
     />,
   );
-  if (Component.name === 'Img') {
-    shouldMatchSnapshot(
-      'should render image correctly without width',
-      <Component
-        alt={landscape.alt}
-        attribution={landscape.attribution}
-        src={landscape.src}
-        srcset={landscape.srcset}
-        height={landscape.height}
-      />,
-    );
-  }
 };
 
 export default snapshotTests;
