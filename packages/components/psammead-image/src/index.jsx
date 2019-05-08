@@ -15,10 +15,6 @@ export const Img = ({ alt, src, srcset, height, width }) => {
   if (srcset) {
     props.srcSet = srcset;
   }
-  if (!width) {
-    delete props.width;
-  }
-
   return <StyledImg {...props} />;
 };
 
