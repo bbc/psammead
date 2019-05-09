@@ -5,7 +5,7 @@ This component is currently tagged as alpha and is not suitable for production u
 
 ## Description
 
-The `@bbc/psammead-story-promo-list` package is a set of two components, `StoryPromoUl` and `StoryPromoLi`. They use a `ul` and `li` HTML element respectively.
+The `@bbc/psammead-story-promo-list` package is a set of two components, `StoryPromoUl` and `StoryPromoLi`. They use `ul` and `li` HTML elements respectively.
 
 ## Installation
 
