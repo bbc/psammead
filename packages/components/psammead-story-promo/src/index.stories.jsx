@@ -23,7 +23,10 @@ const InfoComponent = ({ headlineText, summaryText, script }) => (
   <Fragment>
     <Headline script={script}>{headlineText}</Headline>
     <Summary script={script}>{summaryText}</Summary>
-    <Timestamp datetime={text('Timestamp datetime', '2019-03-01T14:00+00:00')}>
+    <Timestamp
+      datetime={text('Timestamp datetime', '2019-03-01T14:00+00:00')}
+      script={script}
+    >
       {text('Timestamp', '12 March 2019')}
     </Timestamp>
   </Fragment>
