@@ -16,21 +16,19 @@ const SVG_BOTTOM_OFFSET_BELOW_600PX = '0.75rem'; // 12px
 const PADDING_AROUND_SVG_ABOVE_600PX = 56;
 const PADDING_AROUND_SVG_BELOW_600PX = 32;
 
+const conditionallyRenderHeight = (svgHeight, padding) =>
+  svgHeight ? `height: ${(svgHeight + padding) / 16}rem` : '';
+
 const Banner = styled.div`
   background-color: ${C_POSTBOX};
-  ${props =>
-    props.svgHeight
-      ? `height: ${(props.svgHeight + PADDING_AROUND_SVG_BELOW_600PX) / 16}rem`
-      : ''};
+  ${({ svgHeight }) =>
+    conditionallyRenderHeight(svgHeight, PADDING_AROUND_SVG_BELOW_600PX)};
   width: 100%;
   padding: 0 ${GEL_SPACING};
 
   @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
-    ${props =>
-      props.svgHeight
-        ? `height: ${(props.svgHeight + PADDING_AROUND_SVG_ABOVE_600PX) /
-            16}rem`
-        : ''};
+    ${({ svgHeight }) =>
+      conditionallyRenderHeight(svgHeight, PADDING_AROUND_SVG_ABOVE_600PX)};
     padding: 0 ${GEL_SPACING_DBL};
   }
 `;
