@@ -2,7 +2,7 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { withKnobs } from '@storybook/addon-knobs';
 import notes from '../README.md';
-import { inputProvider } from '.';
+import { inputProvider, dirDecorator } from '.';
 
 storiesOf('Input Provider', module)
   .addDecorator(withKnobs)
@@ -36,3 +36,10 @@ storiesOf('Input Provider', module)
     ),
     { notes, knobs: { escapeHTML: false } },
   );
+
+storiesOf('Input Provider', module)
+  .addDecorator(withKnobs)
+  .addDecorator(dirDecorator)
+  .add('with dirDecorator', () => (
+    <span> I toogle dir based on language using dirDecorator</span>
+  ));
