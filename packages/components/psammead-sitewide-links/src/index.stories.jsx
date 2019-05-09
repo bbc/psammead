@@ -10,8 +10,14 @@ const buildLink = text => ({
   text,
 });
 
-const linkNames = [1, 2, 3, 4, 5, 6, 7].map(n => `link ${n}`);
-linkNames.unshift('external link', 'copyright text');
+const linkNames = [1, 2, 3, 4, 5, 6, 7].map(n => ({
+  name: `Link ${n}`,
+  defaultText: `link ${n}`,
+}));
+linkNames.unshift(
+  { name: 'External Link', defaultText: 'external link' },
+  { name: 'Copyright', defaultText: 'copyright text' },
+);
 
 storiesOf('SitewideLinks', module)
   .addDecorator(withKnobs)
@@ -19,7 +25,7 @@ storiesOf('SitewideLinks', module)
     'default',
     inputProvider(
       linkNames,
-      (externalLinkText, copyrightText, ...linkTexts) => {
+      ([externalLinkText, copyrightText, ...linkTexts]) => {
         const links = linkTexts.map(buildLink);
         return (
           <SitewideLinks

@@ -31,7 +31,7 @@ storiesOf('Figure', module)
   )
   .add(
     'containing Image, ImagePlaceholder, Copyright and Caption',
-    inputProvider(['caption'], caption => (
+    inputProvider([{ name: 'Caption' }], ([caption]) => (
       <Figure>
         <ImagePlaceholder ratio={imageRatio}>
           <Image alt={imageAlt} src={imageSrc} width={imageWidth} />

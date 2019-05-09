@@ -17,6 +17,8 @@ This package provides a collection of common values that are used in storybook b
   - `script`: A [script](https://github.com/bbc/psammead/tree/latest/packages/utilities/gel-foundations#script-support) corresponding to the language selected by the storybook user.
   - `dir`: Either `'ltr'` or `'rtl'`, corresponding to the language currently selected by the storybook user.
 
+`dirDecorator` - A storybook decorator function that uses `inputProvider` internally to provide direction control only
+
 ## Installation
 
 ```sh
@@ -27,8 +29,9 @@ npm install @bbc/psammead-storybook-helpers --save-dev
 
 ### LANGUAGE_VARIANTS
 
+<!-- prettier-ignore -->
 ```jsx
-import { select } from '@storybook/addon-knobs'
+import { select } from '@storybook/addon-knobs';
 import { LANGUAGE_VARIANTS } from '@bbc/psammead-storybook-helpers';
 
 const label = 'Languages';
@@ -37,7 +40,7 @@ const groupIdentifier = 'CAPTION VARIANTS';
 
 <Caption>
   {select(label, LANGUAGE_VARIANTS, LANGUAGE_VARIANTS.english, groupIdentifier).text}
-</Caption>
+</Caption>;
 ```
 
 ### inputProvider
@@ -61,15 +64,27 @@ storiesOf('Caption', module)
       ],
       ([captionText, offscreenText], script, dir) => (
         <Caption script={script} dir={dir}>
-          <VisuallyHiddenText>
-            {offscreenText}
-          </VisuallyHiddenText>
+          <VisuallyHiddenText>{offscreenText}</VisuallyHiddenText>
           {captionText}
         </Caption>
       ),
     ),
     { knobs: { escapeHTML: false } },
   );
+```
+
+### dirDecorator
+
+```jsx
+import React from 'react';
+import { storiesOf } from '@storybook/react';
+import { withKnobs } from '@storybook/addon-knobs';
+import { dirDecorator } from '@bbc/psammead-storybook-helpers';
+
+storiesOf('Example', module)
+  .addDecorator(withKnobs)
+  .addDecorator(dirDecorator)
+  .add('default', () => <h1>Lorem Ipsum</h1>);
 ```
 
 ## Contributing

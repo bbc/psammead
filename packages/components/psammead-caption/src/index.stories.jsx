@@ -5,7 +5,6 @@ import { inputProvider } from '@bbc/psammead-storybook-helpers';
 import InlineLink from '@bbc/psammead-inline-link';
 import Paragraph from '@bbc/psammead-paragraph';
 import VisuallyHiddenText from '@bbc/psammead-visually-hidden-text';
-import { latin } from '@bbc/gel-foundations/scripts';
 import notes from '../README.md';
 import Caption from '.';
 
@@ -13,17 +12,20 @@ storiesOf('Caption', module)
   .addDecorator(withKnobs)
   .add(
     'default',
-    inputProvider(['caption'], captionText => (
-      <Caption script={latin}>{captionText}</Caption>
+    inputProvider([{ name: 'Caption' }], ([captionText], script) => (
+      <Caption script={script}>{captionText}</Caption>
     )),
     { notes, knobs: { escapeHTML: false } },
   )
   .add(
     'with offscreen text',
     inputProvider(
-      ['visually hidden text', 'caption'],
-      (hiddenText, captionText) => (
-        <Caption script={latin}>
+      [
+        { name: 'Visual hidden text', defaultText: 'visually hidden text' },
+        { name: 'Caption', defaultText: 'caption' },
+      ],
+      ([hiddenText, captionText], script) => (
+        <Caption script={script}>
           <VisuallyHiddenText>{hiddenText}</VisuallyHiddenText>
           {captionText}
         </Caption>
@@ -33,18 +35,24 @@ storiesOf('Caption', module)
   )
   .add(
     'containing an inline link',
-    inputProvider(['inline link', 'caption'], (linkText, captionText) => (
-      <Caption script={latin}>
-        {captionText}
-        <InlineLink href="https://www.bbc.com"> {linkText}</InlineLink>.
-      </Caption>
-    )),
+    inputProvider(
+      [
+        { name: 'Inline link', defaultText: 'inline link' },
+        { name: 'Caption', defaultText: 'caption' },
+      ],
+      ([linkText, captionText], script) => (
+        <Caption script={script}>
+          {captionText}
+          <InlineLink href="https://www.bbc.com"> {linkText}</InlineLink>.
+        </Caption>
+      ),
+    ),
     { notes, knobs: { escapeHTML: false } },
   )
   .add(
     'containing italicisation',
-    inputProvider([], () => (
-      <Caption script={latin}>
+    inputProvider([], (inputs, script) => (
+      <Caption script={script}>
         Example text with <i>italics</i>
       </Caption>
     )),
