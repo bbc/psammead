@@ -18,14 +18,20 @@ const textVariantsExpectedExports = {
   LANGUAGE_VARIANTS: 'object',
 };
 
+const decoratorsExpectedExports = {
+  dirDecorator: 'function',
+};
+
 const expectedExports = {
   inputProvider: inputProviderExpectedExports,
   textVariants: textVariantsExpectedExports,
+  decorators: decoratorsExpectedExports,
 };
 
 const actualExports = {
   inputProvider: { inputProvider: underTest.inputProvider },
   textVariants: { LANGUAGE_VARIANTS: underTest.LANGUAGE_VARIANTS },
+  decorators: { dirDecorator: underTest.dirDecorator },
 };
 
 describe('Psammead storybook helpers', () => {

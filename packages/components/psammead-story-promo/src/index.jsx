@@ -7,6 +7,7 @@ import {
   GEL_GUTTER_ABOVE_600PX,
 } from '@bbc/gel-foundations/spacings';
 import {
+  GEL_GROUP_2_SCREEN_WIDTH_MAX,
   GEL_GROUP_3_SCREEN_WIDTH_MIN,
   GEL_GROUP_5_SCREEN_WIDTH_MIN,
 } from '@bbc/gel-foundations/breakpoints';
@@ -63,6 +64,9 @@ export const Summary = styled.p`
   font-family: ${GEL_FF_REITH_SANS};
   margin: 0; /* Reset */
   padding-bottom: ${GEL_SPACING};
+  @media (max-width: ${GEL_GROUP_2_SCREEN_WIDTH_MAX}) {
+    display: none;
+  }
 `;
 
 const StoryPromo = ({ image, info }) => (
