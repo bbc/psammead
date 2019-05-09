@@ -1,3 +1,4 @@
+<!-- prettier-ignore -->
 # psammead-headings - [![Known Vulnerabilities](https://snyk.io/test/github/bbc/psammead/badge.svg?targetFile=packages%2Fcomponents%2Fpsammead-headings%2Fpackage.json)](https://snyk.io/test/github/bbc/psammead?targetFile=packages%2Fcomponents%2Fpsammead-headings%2Fpackage.json) [![Storybook](https://raw.githubusercontent.com/storybooks/brand/master/badge/badge-storybook.svg?sanitize=true)](https://bbc.github.io/psammead/?path=/story/headline--default) [![GitHub license](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](https://github.com/bbc/psammead/blob/latest/LICENSE) [![npm version](https://img.shields.io/npm/v/@bbc/psammead-headings.svg)](https://www.npmjs.com/package/@bbc/psammead-headings) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/bbc/psammead/blob/latest/CONTRIBUTING.md)
 
 ## Description
@@ -28,17 +29,17 @@ const Wrapper = () => (
 );
 ```
 
-All `SubHeading` components can be used as page anchors, with their ID being generated from their text, with any whitespace replaced with hyphens. To take the above usage as an example:
+`SubHeading` components can be used as page anchors when passed an `id` prop. To take the above usage as an example:
 
-```
-<SubHeading>Some subheadline</SubHeading>
+```jsx
+<SubHeading id="some-subheadline" script={latin}>Some subheadline</SubHeading>
 ```
 
-This usage will allow for the page anchor: `www.bbc.com/news/articles/articleID#Some-subheadline`
+This usage will allow for the page anchor: `www.bbc.com/news/articles/articleID#some-subheadline`
 
 ### When to use this component
 
-These components can be used at any point on the page, however the `Headline` is designed to be used once at the top of the page. The `SubHeading` adds an `id` value to the `h2` which can be used as an anchor when referencing content.
+These components can be used at any point on the page, however the `Headline` is designed to be used once at the top of the page. The `SubHeading` takes an optional `id` value and passes it to the `h2` which can be used as an anchor when referencing content.
 
 <!-- ### When not to use this component -->
 

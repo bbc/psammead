@@ -1,8 +1,7 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import { withKnobs } from '@storybook/addon-knobs';
+import { text, withKnobs } from '@storybook/addon-knobs';
 import { inputProvider } from '@bbc/psammead-storybook-helpers';
-import { latin } from '@bbc/gel-foundations/scripts';
 import notes from '../README.md';
 import { Headline, SubHeading } from './index';
 
@@ -10,8 +9,8 @@ storiesOf('Headline', module)
   .addDecorator(withKnobs)
   .add(
     'default',
-    inputProvider(['headline'], headline => (
-      <Headline script={latin}>{headline}</Headline>
+    inputProvider([{ name: 'Headline' }], ([headline], script) => (
+      <Headline script={script}>{headline}</Headline>
     )),
     { notes, knobs: { escapeHTML: false } },
   );
@@ -20,10 +19,20 @@ storiesOf('SubHeading', module)
   .addDecorator(withKnobs)
   .add(
     'default',
-    inputProvider(['subheading'], subheader => (
-      <SubHeading text={subheader} script={latin}>
-        {subheader}
-      </SubHeading>
+    inputProvider([{ name: 'SubHeading' }], ([subheader], script) => (
+      <SubHeading script={script}>{subheader}</SubHeading>
     )),
+    { notes, knobs: { escapeHTML: false } },
+  )
+  .add(
+    'with optional ID',
+    inputProvider([{ name: 'SubHeading' }], ([subheader], script) => {
+      const id = text('ID', 'foo', 'Other');
+      return (
+        <SubHeading id={id} script={script}>
+          {subheader}
+        </SubHeading>
+      );
+    }),
     { notes, knobs: { escapeHTML: false } },
   );
