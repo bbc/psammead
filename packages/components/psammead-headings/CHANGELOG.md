@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 2.0.0   | [PR#504](https://github.com/bbc/psammead/pull/504) Remove required text prop |
 | 1.1.3   | [PR#498](https://github.com/bbc/psammead/pull/498) Update stories to use new input provider |
 | 1.1.2   | [PR#428](https://github.com/bbc/psammead/pull/428) Add custom propTypes shape |
 | 1.1.1   | [PR#412](https://github.com/bbc/psammead/pull/412) Make SubHeading padding-bottom 24px instead of 16px |
