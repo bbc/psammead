@@ -71,12 +71,11 @@ const ImageGridItem = styled.div`
 const TextGridItem = styled.div`
   display: inline-block;
   vertical-align: top;
-  padding-left: ${GEL_SPACING};
+  padding: 0 ${GEL_SPACING};
   max-width: ${fourOfSixColumnsMaxWidthScaleable};
 
   @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
-    padding-left: ${GEL_SPACING_DBL};
-    padding-right: ${GEL_SPACING_DBL};
+    padding: 0 ${GEL_SPACING_DBL};
   }
 
   @media (min-width: ${GEL_GROUP_5_SCREEN_WIDTH_MIN}) {
