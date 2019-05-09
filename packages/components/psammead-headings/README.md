@@ -32,7 +32,7 @@ const Wrapper = () => (
 `SubHeading` components can be used as page anchors when passed an `id` prop. To take the above usage as an example:
 
 ```jsx
-<SubHeading id="some-subheadline">Some subheadline</SubHeading>
+<SubHeading id="some-subheadline" script={latin}>Some subheadline</SubHeading>
 ```
 
 This usage will allow for the page anchor: `www.bbc.com/news/articles/articleID#some-subheadline`
