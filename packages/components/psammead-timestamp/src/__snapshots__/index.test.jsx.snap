@@ -72,6 +72,37 @@ exports[`Timestamp should render Timestamp with a prefix 1`] = `
 </time>
 `;
 
+exports[`Timestamp should render Timestamp without padding 1`] = `
+.c0 {
+  font-size: 0.9375rem;
+  line-height: 1.25rem;
+  color: #757575;
+  display: block;
+  font-family: ReithSans,Helvetica,Arial,sans-serif;
+}
+
+@media (min-width:20rem) and (max-width:37.4375rem) {
+  .c0 {
+    font-size: 1rem;
+    line-height: 1.25rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .c0 {
+    font-size: 1rem;
+    line-height: 1.25rem;
+  }
+}
+
+<time
+  className="c0"
+  dateTime="1530947227000"
+>
+  Updated 7 July 2018
+</time>
+`;
+
 exports[`Timestamp should render with the correct typography style applied 1`] = `
 .c0 {
   font-size: 0.9375rem;
