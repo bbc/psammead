@@ -7,7 +7,9 @@ import Timestamp from '.';
 describe('Timestamp', () => {
   shouldMatchSnapshot(
     'should render Timestamp correctly',
-    <Timestamp datetime="1530947227000">7 July 2018</Timestamp>,
+    <Timestamp datetime="1530947227000" script={latin}>
+      7 July 2018
+    </Timestamp>,
   );
 
   shouldMatchSnapshot(
@@ -20,6 +22,18 @@ describe('Timestamp', () => {
   shouldMatchSnapshot(
     'should render Timestamp with a prefix',
     <Timestamp datetime="1530947227000" typographyFunc={getPica} script={latin}>
+      Updated 7 July 2018
+    </Timestamp>,
+  );
+
+  shouldMatchSnapshot(
+    'should render Timestamp without padding',
+    <Timestamp
+      datetime="1530947227000"
+      typographyFunc={getPica}
+      script={latin}
+      padding={false}
+    >
       Updated 7 July 2018
     </Timestamp>,
   );
