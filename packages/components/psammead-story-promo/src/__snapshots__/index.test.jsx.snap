@@ -58,6 +58,7 @@ exports[`StoryPromo should render correctly 1`] = `
 @media (min-width:37.5rem) {
   .c2 {
     padding-left: 1rem;
+    padding-right: 1rem;
   }
 }
 
