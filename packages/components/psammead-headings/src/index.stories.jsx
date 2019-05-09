@@ -20,20 +20,19 @@ storiesOf('SubHeading', module)
   .add(
     'default',
     inputProvider([{ name: 'SubHeading' }], ([subheader], script) => (
-      <SubHeading script={script}>
-        {subheader}
-      </SubHeading>
+      <SubHeading script={script}>{subheader}</SubHeading>
     )),
     { notes, knobs: { escapeHTML: false } },
   )
   .add(
     'with optional ID',
     inputProvider([{ name: 'SubHeading' }], ([subheader], script) => {
-      const id = text('ID', 'foo', 'subheading');
+      const id = text('ID', 'foo', 'Other');
       return (
         <SubHeading id={id} script={script}>
           {subheader}
         </SubHeading>
-    )}),
+      );
+    }),
     { notes, knobs: { escapeHTML: false } },
   );
