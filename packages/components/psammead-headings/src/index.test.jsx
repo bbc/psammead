@@ -18,36 +18,18 @@ describe('Headline component', () => {
 describe('SubHeading component', () => {
   shouldMatchSnapshot(
     'should render correctly',
-    <SubHeading text="This is a SubHeading" script={latin}>
-      This is a SubHeading
-    </SubHeading>,
-  );
-
-  shouldMatchSnapshot(
-    'attribute id should render without quotes',
-    <SubHeading text="This 'is' a SubHeading" script={latin}>
-      This is a SubHeading
-    </SubHeading>,
-  );
-
-  shouldMatchSnapshot(
-    'attribute id should render without double quotes',
-    <SubHeading text='This "is" a SubHeading' script={latin}>
-      This is a SubHeading
-    </SubHeading>,
-  );
-
-  shouldMatchSnapshot(
-    'attribute id should render without exclamation marks',
-    <SubHeading text="This is! a SubHeading!" script={latin}>
-      This is a SubHeading
-    </SubHeading>,
+    <SubHeading script={latin}>This is a SubHeading</SubHeading>,
   );
 
   shouldMatchSnapshot(
     'should render correctly with arabic script typography values',
-    <SubHeading text="هذا عنوان فرعي" script={arabic}>
-      هذا عنوان فرعي
+    <SubHeading script={arabic}>هذا عنوان فرعي</SubHeading>,
+  );
+
+  shouldMatchSnapshot(
+    'should render correctly with an ID',
+    <SubHeading id="This-is-a-SubHeading" script={latin}>
+      This is a SubHeading
     </SubHeading>,
   );
 });

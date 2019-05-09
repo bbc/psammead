@@ -1,6 +1,6 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import { withKnobs } from '@storybook/addon-knobs';
+import { text, withKnobs } from '@storybook/addon-knobs';
 import { inputProvider } from '@bbc/psammead-storybook-helpers';
 import notes from '../README.md';
 import { Headline, SubHeading } from './index';
@@ -20,9 +20,19 @@ storiesOf('SubHeading', module)
   .add(
     'default',
     inputProvider([{ name: 'SubHeading' }], ([subheader], script) => (
-      <SubHeading text={subheader} script={script}>
-        {subheader}
-      </SubHeading>
+      <SubHeading script={script}>{subheader}</SubHeading>
     )),
+    { notes, knobs: { escapeHTML: false } },
+  )
+  .add(
+    'with optional ID',
+    inputProvider([{ name: 'SubHeading' }], ([subheader], script) => {
+      const id = text('ID', 'foo', 'Other');
+      return (
+        <SubHeading id={id} script={script}>
+          {subheader}
+        </SubHeading>
+      );
+    }),
     { notes, knobs: { escapeHTML: false } },
   );
