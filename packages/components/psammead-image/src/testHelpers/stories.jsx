@@ -3,7 +3,7 @@ import { storiesOf } from '@storybook/react';
 import notes from '../../README.md';
 import { custom, landscape, portrait, square } from './fixtureData';
 
-function getProps(image, includeHeight) {
+export function getProps(image, includeHeight) {
   const props = {
     alt: image.alt,
     src: image.src,
