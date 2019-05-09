@@ -12,7 +12,7 @@ exports[`SectionDivider With title should render correctly 1`] = `
   position: absolute;
   height: 1px;
   border: none;
-  background: #BABABA;
+  background: #AEAEB5;
   left: 0;
   right: 0;
   top: 0.8125rem;
@@ -94,7 +94,7 @@ exports[`SectionDivider With title should render correctly with arabic script ty
   position: absolute;
   height: 1px;
   border: none;
-  background: #BABABA;
+  background: #AEAEB5;
   left: 0;
   right: 0;
   top: 1.0625rem;
@@ -176,7 +176,7 @@ exports[`SectionDivider With title should render correctly with explicit text di
   position: absolute;
   height: 1px;
   border: none;
-  background: #BABABA;
+  background: #AEAEB5;
   left: 0;
   right: 0;
   top: 0.8125rem;
@@ -258,7 +258,7 @@ exports[`SectionDivider Without title should render correctly 1`] = `
   position: absolute;
   height: 1px;
   border: none;
-  background: #BABABA;
+  background: #AEAEB5;
   left: 0;
   right: 0;
   top: 0;

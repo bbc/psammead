@@ -16,7 +16,7 @@ import {
   getDoublePica,
   GEL_FF_REITH_SANS,
 } from '@bbc/gel-foundations/typography';
-import { C_CLOUD_LIGHT, C_EBON, C_WHITE } from '@bbc/psammead-styles/colours';
+import { C_EBON, C_PEBBLE, C_WHITE } from '@bbc/psammead-styles/colours';
 
 const MARGIN_TOP_PX = 1;
 const MARGIN_TOP = `${MARGIN_TOP_PX / 16}rem`;
@@ -50,7 +50,7 @@ const SectionDividerWrapper = styled.div`
     position: absolute;
     height: 1px;
     border: none;
-    background: ${C_CLOUD_LIGHT};
+    background: ${C_PEBBLE};
     left: 0;
     right: 0;
     ${({ script }) => (script ? top(script) : 'top: 0')};

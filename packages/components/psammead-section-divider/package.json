@@ -24,7 +24,7 @@
   "homepage": "https://github.com/bbc/psammead/blob/latest/packages/components/psammead-section-divider/README.md",
   "dependencies": {
     "@bbc/gel-foundations": "^1.2.0",
-    "@bbc/psammead-styles": "^0.3.3"
+    "@bbc/psammead-styles": "^0.3.4"
   },
   "devDependencies": {
     "@bbc/psammead-storybook-helpers": "^2.0.0",
