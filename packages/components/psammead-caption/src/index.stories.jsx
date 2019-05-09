@@ -60,8 +60,8 @@ storiesOf('Caption', module)
   )
   .add(
     'containing multiple paragraphs',
-    inputProvider([], () => (
-      <Caption script={latin}>
+    inputProvider([], script => (
+      <Caption script={script}>
         <Paragraph>Paragraph with padding bottom.</Paragraph>
         <Paragraph>
           Last paragraph - <i>without padding bottom</i>.
