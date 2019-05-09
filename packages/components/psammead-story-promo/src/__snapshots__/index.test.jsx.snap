@@ -10,7 +10,7 @@ exports[`StoryPromo should render correctly 1`] = `
 .c2 {
   display: inline-block;
   vertical-align: top;
-  padding-left: 0.5rem;
+  padding: 0 0.5rem;
   max-width: 66.67%;
 }
 
@@ -57,8 +57,7 @@ exports[`StoryPromo should render correctly 1`] = `
 
 @media (min-width:37.5rem) {
   .c2 {
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding: 0 1rem;
   }
 }
 
