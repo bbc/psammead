@@ -1,6 +1,6 @@
 import React from 'react';
-import styled from 'styled-components';
-import { oneOf, shape, string } from 'prop-types';
+import styled, { css } from 'styled-components';
+import { boolean, oneOf, shape, string } from 'prop-types';
 import { scriptPropType } from '@bbc/gel-foundations/prop-types';
 import {
   GEL_GROUP_3_SCREEN_WIDTH_MIN,
@@ -33,7 +33,7 @@ const top = script => `
   }
 `;
 
-const WrapperWithoutBar = styled.div`
+const Wrapper = styled.div`
   position: relative;
   margin-top: ${GEL_SPACING_TRPL};
   margin-bottom: ${GEL_SPACING_DBL};
@@ -42,19 +42,21 @@ const WrapperWithoutBar = styled.div`
     margin-top: ${GEL_SPACING_QUAD};
     margin-bottom: ${GEL_SPACING_TRPL};
   }
-`;
 
-const WrapperWithBar = styled(WrapperWithoutBar)`
-  &::before {
-    content: '';
-    position: absolute;
-    height: 0.0625rem;
-    border: none;
-    background: ${C_PEBBLE};
-    left: 0;
-    right: 0;
-    ${({ script }) => (script ? top(script) : 'top: 0')};
-  }
+  ${({ bar }) =>
+    bar &&
+    css`
+      &::before {
+        content: '';
+        position: absolute;
+        height: 0.0625rem;
+        border: none;
+        background: ${C_PEBBLE};
+        left: 0;
+        right: 0;
+        ${({ script }) => (script ? top(script) : 'top: 0')};
+      }
+    `}
 `;
 
 const paddingDir = ({ dir }) => `padding-${dir === 'ltr' ? 'right' : 'left'}`;
@@ -83,14 +85,9 @@ Title.propTypes = {
   script: shape(scriptPropType).isRequired,
 };
 
-const GenericSectionLabel = ({
-  children: text,
-  dir,
-  script,
-  wrapper: Wrapper,
-}) => (
+const SectionLabel = ({ bar, children: text, dir, script }) => (
   // Only modify the Label to account for an inline title if there is a title to render.
-  <Wrapper script={text && script}>
+  <Wrapper script={text && script} bar={bar}>
     {text && (
       <Title script={script} dir={dir}>
         {text}
@@ -99,49 +96,18 @@ const GenericSectionLabel = ({
   </Wrapper>
 );
 
-GenericSectionLabel.defaultProps = {
-  children: null,
-};
-
-GenericSectionLabel.propTypes = {
-  children: string,
-  dir: oneOf(['ltr', 'rtl']).isRequired,
-  script: shape(scriptPropType).isRequired,
-  wrapper: oneOf([WrapperWithBar, WrapperWithoutBar]).isRequired,
-};
-
-export const SectionLabel = ({ children, dir, script }) => (
-  <GenericSectionLabel dir={dir} script={script} wrapper={WrapperWithBar}>
-    {children}
-  </GenericSectionLabel>
-);
-
 SectionLabel.defaultProps = {
+  bar: true,
   children: null,
   dir: 'ltr',
   script: null,
 };
 
 SectionLabel.propTypes = {
+  bar: boolean,
   children: string,
   dir: oneOf(['ltr', 'rtl']),
   script: shape(scriptPropType),
 };
 
-export const SectionLabelWithoutBar = ({ children, dir, script }) => (
-  <GenericSectionLabel dir={dir} script={script} wrapper={WrapperWithoutBar}>
-    {children}
-  </GenericSectionLabel>
-);
-
-SectionLabelWithoutBar.defaultProps = {
-  children: null,
-  dir: 'ltr',
-  script: null,
-};
-
-SectionLabelWithoutBar.propTypes = {
-  children: string,
-  dir: oneOf(['ltr', 'rtl']),
-  script: shape(scriptPropType),
-};
+export default SectionLabel;
