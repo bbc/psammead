@@ -18,10 +18,7 @@ import {
 } from '@bbc/gel-foundations/typography';
 import { C_EBON, C_PEBBLE, C_WHITE } from '@bbc/psammead-styles/colours';
 
-const MARGIN_TOP_PX = 1;
-const MARGIN_TOP = `${MARGIN_TOP_PX / 16}rem`;
-
-const halfLineHeightRem = group => (group.lineHeight / 2 + MARGIN_TOP_PX) / 16;
+const halfLineHeightRem = group => group.lineHeight / 2 / 16;
 
 const top = script => `
   // place at middle of text line height
@@ -36,7 +33,7 @@ const top = script => `
   }
 `;
 
-const SectionDividerWrapper = styled.div`
+const WrapperWithoutBar = styled.div`
   position: relative;
   margin-top: ${GEL_SPACING_TRPL};
   margin-bottom: ${GEL_SPACING_DBL};
@@ -45,10 +42,13 @@ const SectionDividerWrapper = styled.div`
     margin-top: ${GEL_SPACING_QUAD};
     margin-bottom: ${GEL_SPACING_TRPL};
   }
+`;
+
+const WrapperWithBar = styled(WrapperWithoutBar)`
   &::before {
     content: '';
     position: absolute;
-    height: 1px;
+    height: 0.0625rem;
     border: none;
     background: ${C_PEBBLE};
     left: 0;
@@ -59,7 +59,7 @@ const SectionDividerWrapper = styled.div`
 
 const paddingDir = ({ dir }) => `padding-${dir === 'ltr' ? 'right' : 'left'}`;
 
-const SectionTitle = styled.h2`
+const SectionLabel = styled.h2`
   ${({ script }) => script && getDoublePica(script)};
   color: ${C_EBON};
   background-color: ${C_WHITE};
@@ -69,7 +69,7 @@ const SectionTitle = styled.h2`
   position: relative;
 
   /* Unset the browser's default margins. */
-  margin: ${MARGIN_TOP} 0 0 0;
+  margin: 0;
 
   ${paddingDir}: ${GEL_SPACING};
 
@@ -78,20 +78,60 @@ const SectionTitle = styled.h2`
   }
 `;
 
-SectionTitle.propTypes = {
+SectionLabel.propTypes = {
   dir: oneOf(['ltr', 'rtl']).isRequired,
   script: shape(scriptPropType).isRequired,
 };
 
-const SectionDivider = ({ children: text, dir, script }) => (
+const GenericSectionDivider = ({
+  children: text,
+  dir,
+  script,
+  wrapper: Wrapper,
+}) => (
   // Only modify the Divider to account for an inline title if there is a title to render.
-  <SectionDividerWrapper script={text && script}>
+  <Wrapper script={text && script}>
     {text && (
-      <SectionTitle script={script} dir={dir}>
+      <SectionLabel script={script} dir={dir}>
         {text}
-      </SectionTitle>
+      </SectionLabel>
     )}
-  </SectionDividerWrapper>
+  </Wrapper>
+);
+
+GenericSectionDivider.defaultProps = {
+  children: null,
+};
+
+GenericSectionDivider.propTypes = {
+  children: string,
+  dir: oneOf(['ltr', 'rtl']).isRequired,
+  script: shape(scriptPropType).isRequired,
+  wrapper: oneOf([WrapperWithBar, WrapperWithoutBar]).isRequired,
+};
+
+export const SectionDividerWithBar = ({ children, dir, script }) => (
+  <GenericSectionDivider dir={dir} script={script} wrapper={WrapperWithBar}>
+    {children}
+  </GenericSectionDivider>
+);
+
+SectionDividerWithBar.defaultProps = {
+  children: null,
+  dir: 'ltr',
+  script: null,
+};
+
+SectionDividerWithBar.propTypes = {
+  children: string,
+  dir: oneOf(['ltr', 'rtl']),
+  script: shape(scriptPropType),
+};
+
+export const SectionDivider = ({ children, dir, script }) => (
+  <GenericSectionDivider dir={dir} script={script} wrapper={WrapperWithoutBar}>
+    {children}
+  </GenericSectionDivider>
 );
 
 SectionDivider.defaultProps = {
@@ -105,5 +145,3 @@ SectionDivider.propTypes = {
   dir: oneOf(['ltr', 'rtl']),
   script: shape(scriptPropType),
 };
-
-export default SectionDivider;
