@@ -40,6 +40,8 @@ storiesOf('Input Provider', module)
 storiesOf('Input Provider', module)
   .addDecorator(withKnobs)
   .addDecorator(dirDecorator)
-  .add('with dirDecorator', () => (
-    <span> I toogle dir based on language using dirDecorator</span>
-  ));
+  .add(
+    'with dirDecorator',
+    () => <span> I toogle dir based on language using dirDecorator</span>,
+    { notes },
+  );

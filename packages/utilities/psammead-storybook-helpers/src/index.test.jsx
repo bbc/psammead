@@ -222,5 +222,23 @@ describe('Psammead storybook helpers', () => {
         );
       });
     });
+
+    describe('dirDecorator', () => {
+      it('calls the story function with dir and script', () => {
+        const storyFn = jest.fn();
+        const english = {
+          script: 'latin',
+          dir: 'ltr',
+        };
+        select.mockReturnValueOnce(english);
+
+        underTest.dirDecorator(storyFn);
+
+        expect(storyFn).toHaveBeenCalledWith({
+          dir: 'ltr',
+          script: 'LATIN SCRIPT OBJECT',
+        });
+      });
+    });
   });
 });
