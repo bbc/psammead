@@ -14,7 +14,7 @@ describe('SectionLabelWithoutBar', () => {
 
     shouldMatchSnapshot(
       'should render correctly with explicit text direction',
-      <SectionLabelWithoutBar script={latin}>
+      <SectionLabelWithoutBar script={latin} dir="ltr">
         This is text in a SectionLabelWithoutBar rendering in ltr mode.
       </SectionLabelWithoutBar>,
     );
@@ -43,7 +43,7 @@ describe('SectionLabel', () => {
 
     shouldMatchSnapshot(
       'should render correctly with explicit text direction',
-      <SectionLabel script={latin}>
+      <SectionLabel script={latin} dir="ltr">
         This is text in a SectionLabel rendering in ltr mode.
       </SectionLabel>,
     );
