@@ -5,7 +5,7 @@ import { inputProvider } from '@bbc/psammead-storybook-helpers';
 import Image from '@bbc/psammead-image';
 import Timestamp from '@bbc/psammead-timestamp';
 import notes from '../README.md';
-import StoryPromo, { Headline, Summary } from './index';
+import StoryPromo, { Headline, Summary, Link } from './index';
 
 const ImageComponent = (
   <Image
@@ -21,7 +21,9 @@ const ImageComponent = (
 // eslint-disable-next-line react/prop-types
 const InfoComponent = ({ headlineText, summaryText, script }) => (
   <Fragment>
-    <Headline script={script}>{headlineText}</Headline>
+    <Headline script={script}>
+      <Link href="https://www.bbc.co.uk/news">{headlineText}</Link>
+    </Headline>
     <Summary script={script}>{summaryText}</Summary>
     <Timestamp
       datetime={text('Timestamp datetime', '2019-03-01T14:00+00:00')}

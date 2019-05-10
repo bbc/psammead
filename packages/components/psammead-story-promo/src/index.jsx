@@ -20,6 +20,7 @@ import {
 import { C_SHADOW } from '@bbc/psammead-styles/colours';
 
 const StoryPromoWrapper = styled.div`
+  position: relative;
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   grid-column-gap: ${GEL_GUTTER_BELOW_600PX};
@@ -66,6 +67,29 @@ export const Summary = styled.p`
   padding-bottom: ${GEL_SPACING};
   @media (max-width: ${GEL_GROUP_2_SCREEN_WIDTH_MAX}) {
     display: none;
+  }
+`;
+
+export const Link = styled.a`
+  position: static;
+  color: ${C_SHADOW};
+  text-decoration: none;
+
+  &:before {
+    bottom: 0;
+    content: '';
+    left: 0;
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+    top: 0;
+    white-space: nowrap;
+    z-index: 1;
+  }
+
+  &:hover,
+  &:focus {
+    text-decoration: underline;
   }
 `;
 

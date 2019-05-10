@@ -2,6 +2,7 @@
 
 exports[`StoryPromo should render correctly 1`] = `
 .c0 {
+  position: relative;
   display: grid;
   grid-template-columns: repeat(6,1fr);
   grid-column-gap: 0.5rem;
@@ -25,13 +26,38 @@ exports[`StoryPromo should render correctly 1`] = `
   font-weight: 700;
 }
 
-.c4 {
+.c5 {
   font-size: 0.9375rem;
   line-height: 1.125rem;
   color: #3F3F42;
   font-family: ReithSans,Helvetica,Arial,sans-serif;
   margin: 0;
   padding-bottom: 0.5rem;
+}
+
+.c4 {
+  position: static;
+  color: #3F3F42;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c4:before {
+  bottom: 0;
+  content: '';
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  right: 0;
+  top: 0;
+  white-space: nowrap;
+  z-index: 1;
+}
+
+.c4:hover,
+.c4:focus {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
 }
 
 @media (min-width:37.5rem) {
@@ -73,21 +99,21 @@ exports[`StoryPromo should render correctly 1`] = `
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
-  .c4 {
+  .c5 {
     font-size: 0.9375rem;
     line-height: 1.125rem;
   }
 }
 
 @media (min-width:37.5rem) {
-  .c4 {
+  .c5 {
     font-size: 0.875rem;
     line-height: 1.125rem;
   }
 }
 
 @media (max-width:37.4375rem) {
-  .c4 {
+  .c5 {
     display: none;
   }
 }
@@ -109,10 +135,15 @@ exports[`StoryPromo should render correctly 1`] = `
     <h3
       className="c3"
     >
-      The headline of the promo
+      <a
+        className="c4"
+        href="https://www.bbc.co.uk/news"
+      >
+        The headline of the promo
+      </a>
     </h3>
     <p
-      className="c4"
+      className="c5"
     >
       The summary of the promo
     </p>

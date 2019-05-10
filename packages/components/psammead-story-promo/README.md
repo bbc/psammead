@@ -33,7 +33,7 @@ The typical use-case of this component is as displayed below. A Image sits on th
 
 ```jsx
 import React, { Fragment } from 'react';
-import StoryPromo, { Headline, Summary } from '@bbc/psammead-story-promo';
+import StoryPromo, { Headline, Summary, Link } from '@bbc/psammead-story-promo';
 import { latin } from '@bbc/gel-foundations/scripts';
 
 const Image = (
@@ -42,7 +42,9 @@ const Image = (
 
 const Info = (
   <Fragment>
-    <Headline script={latin}>The headline of the promo</Headline>
+    <Headline script={latin}>      
+      <Link href="https://www.bbc.co.uk/news">The headline of the promo</Link>
+    </Headline>
     <Summary script={latin}>The summary of the promo</Summary>
     <time>12 March 2019</time>
   </Fragment>
@@ -62,7 +64,9 @@ The `StoryPromo` component is designed to be used within a link element to allow
 
 ### Accessibility notes
 
-This component uses full semantic markup for the `Headline` and `Summary`, using `h3` and `p` respectively. Other accessibility factors such as image alt text and time elements are passed in as props and aren't explicitly set in this component.
+This component uses full semantic markup for the `Headline`, `Summary`, and `Link`, using `h3`, `p` and `a` respectively. Other accessibility factors such as image alt text and time elements are passed in as props and aren't explicitly set in this component. 
+
+The link is nested inside the `h3` for a better support. We use the `faux block link` pattern which allows to make an entire block a link, whilst having links nested within in that block also clickable.
 
 ## Roadmap
 
