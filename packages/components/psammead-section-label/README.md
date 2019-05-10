@@ -6,12 +6,11 @@ This component is currently tagged as alpha and is not suitable for production u
 
 ## Description
 
-TODO this ->
-The `@bbc/psammead-section-label` package exports a single Section Label component.
+The `@bbc/psammead-section-label` package exports two components - a Section Label, and a variant of the Section Label that does not feature a horizontal bar.
 
 It uses `@bbc/psammead-styles` for colours and font family and `@bbc/gel-foundations` for spacing and for GEL Typography implemented in Styled Components.
 
-The only provided child should be a *string*, which will be wrapped in an `<h2>` element.
+The only provided child should be a *string*, which will be wrapped in an `<h2>` element by the component – (see [the Accessibility notes](#accessibility-notes)).
 
 ## Installation
 
@@ -19,28 +18,39 @@ The only provided child should be a *string*, which will be wrapped in an `<h2>`
 
 ## Props
 
+Both components use the same props
+
 | Argument  | Type | Required | Default | Example |
 | --------- | ---- | -------- | ------- | ------- |
-| children | string | no | N/A | 'Most Read' |
-| dir | string | no | 'ltr' | 'rtl' |
-| script    | object | yes | N/A | { canon: { groupA: { fontSize: '28', lineHeight: '32',}, groupB: { fontSize: '32', lineHeight: '36', }, groupD: { fontSize: '44', lineHeight: '48', }, }, trafalgar: { groupA: { fontSize: '20', lineHeight: '24', }, groupB: { fontSize: '24', lineHeight: '28', }, groupD: { fontSize: '32', lineHeight: '36', }, }, }|
+| children | string | no | N/A | `'Most Read'` |
+| dir | string | no | `'ltr'` | `'rtl'` |
+| script | object | yes | N/A | `{ canon: { groupA: { fontSize: '28', lineHeight: '32',}, groupB: { fontSize: '32', lineHeight: '36' }, groupD: { fontSize: '44', lineHeight: '48' } }, trafalgar: { groupA: { fontSize: '20', lineHeight: '24' }, groupB: { fontSize: '24', lineHeight: '28' }, groupD: { fontSize: '32', lineHeight: '36' } } }` |
 
 ## Usage
 
 ```jsx
-import SectionDivider from '@bbc/psammead-section-label';
+import { SectionLabel } from '@bbc/psammead-section-label';
 import { latin } from '@bbc/gel-foundations/scripts';
 
-const WrappingComponent = () => <SectionDivider script={latin} dir="ltr">Text here</SectionDivider>;
+const WrappingComponent = () => <SectionLabel script={latin} dir="ltr">Text here</SectionLabel>;
 ```
 
 Or, without a section title:
 
 ```jsx
-import SectionDivider from '@bbc/psammead-section-label';
+import { SectionLabel } from '@bbc/psammead-section-label';
 import { latin } from '@bbc/gel-foundations/scripts';
 
-const WrappingComponent = () => <SectionDivider />;
+const WrappingComponent = () => <SectionLabel />;
+```
+
+Or, without a horizontal bar:
+
+```jsx
+import { SectionLabelWithoutBar } from '@bbc/psammead-section-label';
+import { latin } from '@bbc/gel-foundations/scripts';
+
+const WrappingComponent = () => <SectionLabelWithoutBar script={latin} dir="ltr">Text here</SectionLabelWithoutBar>;
 ```
 
 ### When to use this component
