@@ -59,7 +59,7 @@ const WrapperWithBar = styled(WrapperWithoutBar)`
 
 const paddingDir = ({ dir }) => `padding-${dir === 'ltr' ? 'right' : 'left'}`;
 
-const SectionLabel = styled.h2`
+const Title = styled.h2`
   ${({ script }) => script && getDoublePica(script)};
   color: ${C_EBON};
   background-color: ${C_WHITE};
@@ -78,69 +78,69 @@ const SectionLabel = styled.h2`
   }
 `;
 
-SectionLabel.propTypes = {
+Title.propTypes = {
   dir: oneOf(['ltr', 'rtl']).isRequired,
   script: shape(scriptPropType).isRequired,
 };
 
-const GenericSectionDivider = ({
+const GenericSectionLabel = ({
   children: text,
   dir,
   script,
   wrapper: Wrapper,
 }) => (
-  // Only modify the Divider to account for an inline title if there is a title to render.
+  // Only modify the Label to account for an inline title if there is a title to render.
   <Wrapper script={text && script}>
     {text && (
-      <SectionLabel script={script} dir={dir}>
+      <Title script={script} dir={dir}>
         {text}
-      </SectionLabel>
+      </Title>
     )}
   </Wrapper>
 );
 
-GenericSectionDivider.defaultProps = {
+GenericSectionLabel.defaultProps = {
   children: null,
 };
 
-GenericSectionDivider.propTypes = {
+GenericSectionLabel.propTypes = {
   children: string,
   dir: oneOf(['ltr', 'rtl']).isRequired,
   script: shape(scriptPropType).isRequired,
   wrapper: oneOf([WrapperWithBar, WrapperWithoutBar]).isRequired,
 };
 
-export const SectionDividerWithBar = ({ children, dir, script }) => (
-  <GenericSectionDivider dir={dir} script={script} wrapper={WrapperWithBar}>
+export const SectionLabel = ({ children, dir, script }) => (
+  <GenericSectionLabel dir={dir} script={script} wrapper={WrapperWithBar}>
     {children}
-  </GenericSectionDivider>
+  </GenericSectionLabel>
 );
 
-SectionDividerWithBar.defaultProps = {
+SectionLabel.defaultProps = {
   children: null,
   dir: 'ltr',
   script: null,
 };
 
-SectionDividerWithBar.propTypes = {
+SectionLabel.propTypes = {
   children: string,
   dir: oneOf(['ltr', 'rtl']),
   script: shape(scriptPropType),
 };
 
-export const SectionDivider = ({ children, dir, script }) => (
-  <GenericSectionDivider dir={dir} script={script} wrapper={WrapperWithoutBar}>
+export const SectionLabelWithoutBar = ({ children, dir, script }) => (
+  <GenericSectionLabel dir={dir} script={script} wrapper={WrapperWithoutBar}>
     {children}
-  </GenericSectionDivider>
+  </GenericSectionLabel>
 );
 
-SectionDivider.defaultProps = {
+SectionLabelWithoutBar.defaultProps = {
   children: null,
   dir: 'ltr',
   script: null,
 };
 
-SectionDivider.propTypes = {
+SectionLabelWithoutBar.propTypes = {
   children: string,
   dir: oneOf(['ltr', 'rtl']),
   script: shape(scriptPropType),

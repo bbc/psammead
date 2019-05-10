@@ -2,11 +2,12 @@
 
 This component is currently tagged as alpha and is not suitable for production use. Following the passing of an accessibility review this component will be marked as ready for production and the alpha tag removed.
 
-# psammead-section-divider - [![Known Vulnerabilities](https://snyk.io/test/github/bbc/psammead/badge.svg?targetFile=packages%2Fcomponents%2Fpsammead-section-divider%2Fpackage.json)](https://snyk.io/test/github/bbc/psammead?targetFile=packages%2Fcomponents%2Fpsammead-section-divider%2Fpackage.json) [![Storybook](https://raw.githubusercontent.com/storybooks/brand/master/badge/badge-storybook.svg?sanitize=true)](https://bbc.github.io/psammead/?path=/story/section-divider--default) [![GitHub license](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](https://github.com/bbc/psammead/blob/latest/LICENSE) [![npm version](https://img.shields.io/npm/v/@bbc/psammead-section-divider.svg)](https://www.npmjs.com/package/@bbc/psammead-section-divider) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/bbc/psammead/blob/latest/CONTRIBUTING.md)
+# psammead-section-label - [![Known Vulnerabilities](https://snyk.io/test/github/bbc/psammead/badge.svg?targetFile=packages%2Fcomponents%2Fpsammead-section-label%2Fpackage.json)](https://snyk.io/test/github/bbc/psammead?targetFile=packages%2Fcomponents%2Fpsammead-section-label%2Fpackage.json) [![Storybook](https://raw.githubusercontent.com/storybooks/brand/master/badge/badge-storybook.svg?sanitize=true)](https://bbc.github.io/psammead/?path=/story/section-label--default) [![GitHub license](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](https://github.com/bbc/psammead/blob/latest/LICENSE) [![npm version](https://img.shields.io/npm/v/@bbc/psammead-section-label.svg)](https://www.npmjs.com/package/@bbc/psammead-section-label) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/bbc/psammead/blob/latest/CONTRIBUTING.md)
 
 ## Description
 
-The `@bbc/psammead-section-divider` package exports a single Section Divider component.
+TODO this ->
+The `@bbc/psammead-section-label` package exports a single Section Label component.
 
 It uses `@bbc/psammead-styles` for colours and font family and `@bbc/gel-foundations` for spacing and for GEL Typography implemented in Styled Components.
 
@@ -14,7 +15,7 @@ The only provided child should be a *string*, which will be wrapped in an `<h2>`
 
 ## Installation
 
-`npm install @bbc/psammead-section-divider`
+`npm install @bbc/psammead-section-label`
 
 ## Props
 
@@ -27,7 +28,7 @@ The only provided child should be a *string*, which will be wrapped in an `<h2>`
 ## Usage
 
 ```jsx
-import SectionDivider from '@bbc/psammead-section-divider';
+import SectionDivider from '@bbc/psammead-section-label';
 import { latin } from '@bbc/gel-foundations/scripts';
 
 const WrappingComponent = () => <SectionDivider script={latin} dir="ltr">Text here</SectionDivider>;
@@ -36,7 +37,7 @@ const WrappingComponent = () => <SectionDivider script={latin} dir="ltr">Text he
 Or, without a section title:
 
 ```jsx
-import SectionDivider from '@bbc/psammead-section-divider';
+import SectionDivider from '@bbc/psammead-section-label';
 import { latin } from '@bbc/gel-foundations/scripts';
 
 const WrappingComponent = () => <SectionDivider />;

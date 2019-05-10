@@ -3,18 +3,18 @@ import { storiesOf } from '@storybook/react';
 import { withKnobs } from '@storybook/addon-knobs';
 import { inputProvider } from '@bbc/psammead-storybook-helpers';
 import notes from '../README.md';
-import { SectionDivider, SectionDividerWithBar } from './index';
+import { SectionLabel, SectionLabelWithoutBar } from './index';
 
-storiesOf('SectionDivider', module)
+storiesOf('SectionLabel', module)
   .addDecorator(withKnobs)
   .add(
     'default',
     inputProvider(
       [{ name: 'title', defaultText: 'Most Read' }],
       ([title], script, dir) => (
-        <SectionDividerWithBar script={script} dir={dir}>
+        <SectionLabel script={script} dir={dir}>
           {title}
-        </SectionDividerWithBar>
+        </SectionLabel>
       ),
     ),
     { notes, knobs: { escapeHTML: false } },
@@ -24,9 +24,9 @@ storiesOf('SectionDivider', module)
     inputProvider(
       [{ name: 'title', defaultText: 'Most Read' }],
       ([title], script, dir) => (
-        <SectionDivider script={script} dir={dir}>
+        <SectionLabelWithoutBar script={script} dir={dir}>
           {title}
-        </SectionDivider>
+        </SectionLabelWithoutBar>
       ),
     ),
     { notes, knobs: { escapeHTML: false } },
