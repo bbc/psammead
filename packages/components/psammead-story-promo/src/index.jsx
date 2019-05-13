@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import { node } from 'prop-types';
 import {
   GEL_SPACING,
+  GEL_SPACING_DBL,
   GEL_GUTTER_BELOW_600PX,
   GEL_GUTTER_ABOVE_600PX,
 } from '@bbc/gel-foundations/spacings';
@@ -19,34 +20,77 @@ import {
 } from '@bbc/gel-foundations/typography';
 import { C_SHADOW } from '@bbc/psammead-styles/colours';
 
+const twoOfSixColumnsMaxWidthScaleable = `33.33%`;
+// (2 / 6) * 100 = 0.3333333333 = 33.33%
+
+const fourOfTwelveColumnsMaxWidthScaleable = `33.33%`;
+// (4 / 12) * 100 = 0.3333333333 = 33.33%
+
+const fourOfSixColumnsMaxWidthScaleable = `66.67%`;
+// (4 / 6) * 100 = 66.6666666667 = 66.67%
+
+const eightOfTwelveColumnsMaxScaleable = `66.67%`;
+// (8 / 12) * 100 = 66.6666666667 = 66.67%
+
 const StoryPromoWrapper = styled.div`
-  position: relative;
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  grid-column-gap: ${GEL_GUTTER_BELOW_600PX};
+  @supports (display: grid) {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-column-gap: ${GEL_GUTTER_BELOW_600PX};
 
-  @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
-    grid-column-gap: ${GEL_GUTTER_ABOVE_600PX};
-  }
+    @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
+      grid-column-gap: ${GEL_GUTTER_ABOVE_600PX};
+    }
 
-  @media (min-width: ${GEL_GROUP_5_SCREEN_WIDTH_MIN}) {
-    grid-template-columns: repeat(12, 1fr);
+    @media (min-width: ${GEL_GROUP_5_SCREEN_WIDTH_MIN}) {
+      grid-template-columns: repeat(12, 1fr);
+    }
   }
 `;
 
 const ImageGridItem = styled.div`
-  grid-column: 1 / span 2;
+  display: inline-block;
+  vertical-align: top;
+  max-width: ${twoOfSixColumnsMaxWidthScaleable};
 
   @media (min-width: ${GEL_GROUP_5_SCREEN_WIDTH_MIN}) {
-    grid-column: 1 / span 4;
+    max-width: ${fourOfTwelveColumnsMaxWidthScaleable};
+  }
+
+  @supports (display: grid) {
+    display: block;
+    max-width: initial;
+    grid-column: 1 / span 2;
+
+    @media (min-width: ${GEL_GROUP_5_SCREEN_WIDTH_MIN}) {
+      grid-column: 1 / span 4;
+    }
   }
 `;
 
 const TextGridItem = styled.div`
-  grid-column: 3 / span 4;
+  display: inline-block;
+  vertical-align: top;
+  padding: 0 ${GEL_SPACING};
+  max-width: ${fourOfSixColumnsMaxWidthScaleable};
+
+  @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
+    padding: 0 ${GEL_SPACING_DBL};
+  }
 
   @media (min-width: ${GEL_GROUP_5_SCREEN_WIDTH_MIN}) {
-    grid-column: 5 / span 8;
+    max-width: ${eightOfTwelveColumnsMaxScaleable};
+  }
+
+  @supports (display: grid) {
+    display: block;
+    max-width: initial;
+    padding: initial;
+    grid-column: 3 / span 4;
+
+    @media (min-width: ${GEL_GROUP_5_SCREEN_WIDTH_MIN}) {
+      grid-column: 5 / span 8;
+    }
   }
 `;
 
