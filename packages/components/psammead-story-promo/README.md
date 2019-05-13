@@ -66,7 +66,7 @@ The `StoryPromo` component is designed to be used within a link element to allow
 
 This component uses full semantic markup for the `Headline`, `Summary`, and `Link`, using `h3`, `p` and `a` respectively. Other accessibility factors such as image alt text and time elements are passed in as props and aren't explicitly set in this component. 
 
-The link is nested inside the `h3` for a better support. We use the `faux block link` pattern which allows to make an entire block a link, whilst having links nested within in that block also clickable.
+The link is nested inside the `h3` for better support with VoiceOver Mac and Safari. We use the `faux block link` pattern which makes the entire block clickable, whilst also enabling links nested within in that block to also be clickable.
 
 ## Roadmap
 
