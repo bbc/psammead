@@ -33,6 +33,8 @@ const eightOfTwelveColumnsMaxScaleable = `66.67%`;
 // (8 / 12) * 100 = 66.6666666667 = 66.67%
 
 const StoryPromoWrapper = styled.div`
+  position: relative;
+
   @supports (display: grid) {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
