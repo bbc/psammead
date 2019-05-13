@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 1.1.4 | [PR#???](https://github.com/bbc/psammead/pull/???) Update story to use dirDecorator |
 | 1.1.3 | [PR#491](https://github.com/bbc/psammead/pull/491) Remove bottom padding from paragraphs within Caption |
 | 1.1.2 | [PR#498](https://github.com/bbc/psammead/pull/498) Update stories to use new input provider |
 | 1.1.1 | [PR#459](https://github.com/bbc/psammead/pull/459) Add custom propTypes shape |
