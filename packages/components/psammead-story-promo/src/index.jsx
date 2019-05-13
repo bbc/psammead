@@ -18,7 +18,7 @@ import {
   GEL_FF_REITH_SERIF,
   GEL_FF_REITH_SANS,
 } from '@bbc/gel-foundations/typography';
-import { C_SHADOW } from '@bbc/psammead-styles/colours';
+import { C_SHADOW, C_METAL } from '@bbc/psammead-styles/colours';
 
 const twoOfSixColumnsMaxWidthScaleable = `33.33%`;
 // (2 / 6) * 100 = 0.3333333333 = 33.33%
@@ -136,6 +136,10 @@ export const Link = styled.a`
   &:hover,
   &:focus {
     text-decoration: underline;
+  }
+
+  &:visited {
+    color: ${C_METAL};
   }
 `;
 
