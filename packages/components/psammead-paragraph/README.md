@@ -21,18 +21,19 @@ The `script` prop is optional to allow for the component to be used with the typ
 
 ## Usage
 
-```jsx
-import Paragraph from '@bbc/psammead-paragraph';
-
-const WrappingComponent = () => <Paragraph>Text here</Paragraph>;
-```
-
-When passing `script` prop:
+Default usage:
 ```jsx
 import Paragraph from '@bbc/psammead-paragraph';
 import { latin } from '@bbc/gel-foundations/scripts';
 
 const WrappingComponent = () => <Paragraph script={latin}>Text here</Paragraph>;
+```
+
+Without passing `script` prop:
+```jsx
+import Paragraph from '@bbc/psammead-paragraph';
+
+const WrappingComponent = () => <Paragraph>Text here</Paragraph>;
 ```
 
 ### When to use this component

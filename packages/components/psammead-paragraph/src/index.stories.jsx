@@ -9,15 +9,15 @@ storiesOf('Paragraph', module)
   .addDecorator(withKnobs)
   .add(
     'default',
-    inputProvider([{ name: 'Paragraph' }], ([paragraph]) => (
-      <Paragraph>{paragraph}</Paragraph>
+    inputProvider([{ name: 'Paragraph' }], ([paragraph], script) => (
+      <Paragraph script={script}>{paragraph}</Paragraph>
     )),
     { notes, knobs: { escapeHTML: false } },
   )
   .add(
-    'with script',
-    inputProvider([{ name: 'Paragraph' }], ([paragraph], script) => (
-      <Paragraph script={script}>{paragraph}</Paragraph>
+    'without script',
+    inputProvider([{ name: 'Paragraph' }], ([paragraph]) => (
+      <Paragraph>{paragraph}</Paragraph>
     )),
     { notes, knobs: { escapeHTML: false } },
   );
