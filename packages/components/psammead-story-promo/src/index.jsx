@@ -19,6 +19,7 @@ import {
   GEL_FF_REITH_SANS,
 } from '@bbc/gel-foundations/typography';
 import { C_SHADOW } from '@bbc/psammead-styles/colours';
+import MediaIndicator from '@bbc/psammead-media-indicator';
 
 const twoOfSixColumnsMaxWidthScaleable = `33.33%`;
 // (2 / 6) * 100 = 0.3333333333 = 33.33%
@@ -52,6 +53,7 @@ const ImageGridItem = styled.div`
   display: inline-block;
   vertical-align: top;
   max-width: ${twoOfSixColumnsMaxWidthScaleable};
+  position: relative;
 
   @media (min-width: ${GEL_GROUP_5_SCREEN_WIDTH_MIN}) {
     max-width: ${fourOfTwelveColumnsMaxWidthScaleable};
@@ -94,6 +96,11 @@ const TextGridItem = styled.div`
   }
 `;
 
+const InlineMediaIndicator = styled(MediaIndicator)`
+  position: absolute;
+  bottom: 0;
+`;
+
 export const Headline = styled.h3`
   ${props => (props.script ? getGreatPrimer(props.script) : '')};
   color: ${C_SHADOW};
@@ -114,9 +121,18 @@ export const Summary = styled.p`
   }
 `;
 
-const StoryPromo = ({ image, info }) => (
+const StoryPromo = ({ image, info, mediaInfo }) => (
   <StoryPromoWrapper>
-    <ImageGridItem>{image}</ImageGridItem>
+    <ImageGridItem>
+      {image}
+      {mediaInfo ? (
+        <InlineMediaIndicator
+          datetime={mediaInfo.datetime}
+          duration={mediaInfo.duration}
+          offscreenText={mediaInfo.offscreenText}
+        />
+      ) : null}
+    </ImageGridItem>
     <TextGridItem>{info}</TextGridItem>
   </StoryPromoWrapper>
 );
@@ -124,6 +140,11 @@ const StoryPromo = ({ image, info }) => (
 StoryPromo.propTypes = {
   image: node.isRequired,
   info: node.isRequired,
+  mediaInfo: node,
+};
+
+StoryPromo.defaultProps = {
+  mediaInfo: null,
 };
 
 export default StoryPromo;
