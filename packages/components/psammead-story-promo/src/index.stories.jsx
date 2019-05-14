@@ -32,6 +32,12 @@ const InfoComponent = ({ headlineText, summaryText, script }) => (
   </Fragment>
 );
 
+const mediaInfo = {
+  duration: '2:15',
+  datetime: 'PT2M15S',
+  offscreenText: 'Video 2 minutes 15 seconds',
+};
+
 storiesOf('StoryPromo', module)
   .addDecorator(withKnobs)
   .add(
@@ -48,6 +54,30 @@ storiesOf('StoryPromo', module)
         );
 
         return <StoryPromo image={ImageComponent} info={Info} />;
+      },
+    ),
+    { notes, knobs: { escapeHTML: false } },
+  )
+  .add(
+    'with media indicator',
+    inputProvider(
+      [{ name: 'Headline' }, { name: 'Summary' }],
+      ([headlineText, summaryText], script) => {
+        const Info = (
+          <InfoComponent
+            headlineText={headlineText}
+            summaryText={summaryText}
+            script={script}
+          />
+        );
+
+        return (
+          <StoryPromo
+            image={ImageComponent}
+            info={Info}
+            mediaInfo={mediaInfo}
+          />
+        );
       },
     ),
     { notes, knobs: { escapeHTML: false } },
