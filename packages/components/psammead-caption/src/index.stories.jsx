@@ -1,7 +1,7 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { withKnobs } from '@storybook/addon-knobs';
-import { inputProvider } from '@bbc/psammead-storybook-helpers';
+import { inputProvider, dirDecorator } from '@bbc/psammead-storybook-helpers';
 import InlineLink from '@bbc/psammead-inline-link';
 import Paragraph from '@bbc/psammead-paragraph';
 import VisuallyHiddenText from '@bbc/psammead-visually-hidden-text';
@@ -48,7 +48,11 @@ storiesOf('Caption', module)
       ),
     ),
     { notes, knobs: { escapeHTML: false } },
-  )
+  );
+
+storiesOf('Caption', module)
+  .addDecorator(withKnobs)
+  .addDecorator(dirDecorator)
   .add(
     'containing italicisation',
     inputProvider([], (inputs, script) => (
