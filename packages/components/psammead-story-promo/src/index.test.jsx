@@ -13,9 +13,22 @@ const Info = (
   </Fragment>
 );
 
+const mediaInfo = {
+  duration: '2:15',
+  datetime: 'PT2M15S',
+  offscreenText: 'Video 2 minutes 15 seconds',
+};
+
 describe('StoryPromo', () => {
   shouldMatchSnapshot(
     'should render correctly',
     <StoryPromo image={Image} info={Info} />,
+  );
+});
+
+describe('StoryPromo with Media Indicator', () => {
+  shouldMatchSnapshot(
+    'should render correctly',
+    <StoryPromo image={Image} info={Info} mediaInfo={mediaInfo} />,
   );
 });

@@ -5,6 +5,7 @@ exports[`StoryPromo should render correctly 1`] = `
   display: inline-block;
   vertical-align: top;
   max-width: 33.33%;
+  position: relative;
 }
 
 .c2 {
@@ -131,6 +132,226 @@ exports[`StoryPromo should render correctly 1`] = `
     </h3>
     <p
       className="c4"
+    >
+      The summary of the promo
+    </p>
+    <time>
+      12 March 2019
+    </time>
+  </div>
+</div>
+`;
+
+exports[`StoryPromo with Media Indicator should render correctly 1`] = `
+.c6 {
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  -webkit-clip: rect(1px,1px,1px,1px);
+  clip: rect(1px,1px,1px,1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  width: 1px;
+}
+
+.c2 {
+  padding: 0.5rem 0.25rem;
+  background-color: #FFFFFF;
+  display: inline-block;
+  font-family: ReithSans,Helvetica,Arial,sans-serif;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  color: #222222;
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c4 {
+  vertical-align: middle;
+  margin: 0 0.25rem;
+  fill: #222222;
+}
+
+.c5 {
+  vertical-align: middle;
+  margin: 0 0.25rem;
+}
+
+.c1 {
+  display: inline-block;
+  vertical-align: top;
+  max-width: 33.33%;
+  position: relative;
+}
+
+.c7 {
+  display: inline-block;
+  vertical-align: top;
+  padding: 0 0.5rem;
+  max-width: 66.67%;
+}
+
+.c8 {
+  font-size: 1.125rem;
+  line-height: 1.375rem;
+  color: #3F3F42;
+  font-family: ReithSerif,Helvetica,Arial,sans-serif;
+  margin: 0;
+  padding-bottom: 0.5rem;
+  font-weight: 700;
+}
+
+.c9 {
+  font-size: 0.9375rem;
+  line-height: 1.125rem;
+  color: #3F3F42;
+  font-family: ReithSans,Helvetica,Arial,sans-serif;
+  margin: 0;
+  padding-bottom: 0.5rem;
+}
+
+@supports (display:grid) {
+  .c0 {
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-column-gap: 0.5rem;
+  }
+}
+
+@media (min-width:80rem) {
+  .c1 {
+    max-width: 33.33%;
+  }
+}
+
+@supports (display:grid) {
+  .c1 {
+    display: block;
+    max-width: initial;
+    grid-column: 1 / span 2;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .c7 {
+    padding: 0 1rem;
+  }
+}
+
+@media (min-width:80rem) {
+  .c7 {
+    max-width: 66.67%;
+  }
+}
+
+@supports (display:grid) {
+  .c7 {
+    display: block;
+    max-width: initial;
+    padding: initial;
+    grid-column: 3 / span 4;
+  }
+}
+
+@media (min-width:20rem) and (max-width:37.4375rem) {
+  .c8 {
+    font-size: 1.125rem;
+    line-height: 1.375rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .c8 {
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+  }
+}
+
+@media (min-width:20rem) and (max-width:37.4375rem) {
+  .c9 {
+    font-size: 0.9375rem;
+    line-height: 1.125rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .c9 {
+    font-size: 0.875rem;
+    line-height: 1.125rem;
+  }
+}
+
+@media (max-width:37.4375rem) {
+  .c9 {
+    display: none;
+  }
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="c1"
+  >
+    <img
+      alt="Alt text"
+      src="https://foobar.com/image.png"
+    />
+    <div
+      className="c2"
+    >
+      <div
+        className="c3"
+      >
+        <svg
+          aria-hidden="true"
+          className="c4"
+          focusable="false"
+          height="12px"
+          viewBox="0 0 32 32"
+          width="12px"
+        >
+          <polygon
+            points="3,32 29,16 3,0"
+          />
+        </svg>
+        <time
+          className="c5"
+          dateTime="PT2M15S"
+        >
+          <span
+            className="c6"
+          >
+            Video 2 minutes 15 seconds
+          </span>
+          <span
+            aria-hidden="true"
+          >
+            2:15
+          </span>
+        </time>
+      </div>
+    </div>
+  </div>
+  <div
+    className="c7"
+  >
+    <h3
+      className="c8"
+    >
+      The headline of the promo
+    </h3>
+    <p
+      className="c9"
     >
       The summary of the promo
     </p>
