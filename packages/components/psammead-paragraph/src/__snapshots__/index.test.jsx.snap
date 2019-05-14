@@ -61,3 +61,18 @@ exports[`Paragraph should render correctly with arabic script typography values 
   بعض محتوى النص
 </p>
 `;
+
+exports[`Paragraph should render correctly without script typography values 1`] = `
+.c0 {
+  color: #3F3F42;
+  font-family: ReithSans,Helvetica,Arial,sans-serif;
+  padding-bottom: 1.5rem;
+  margin: 0;
+}
+
+<p
+  className="c0"
+>
+  This is text in a paragraph.
+</p>
+`;

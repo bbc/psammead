@@ -13,4 +13,9 @@ describe('Paragraph', () => {
     'should render correctly with arabic script typography values',
     <Paragraph script={arabic}>بعض محتوى النص</Paragraph>,
   );
+
+  shouldMatchSnapshot(
+    'should render correctly without script typography values',
+    <Paragraph>This is text in a paragraph.</Paragraph>,
+  );
 });

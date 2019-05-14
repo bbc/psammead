@@ -17,7 +17,7 @@ const Paragraph = styled.p`
 `;
 
 Paragraph.propTypes = {
-  script: shape(scriptPropType).isRequired,
+  script: shape(scriptPropType),
 };
 
 export default Paragraph;

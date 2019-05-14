@@ -6,6 +6,8 @@ The `@bbc/psammead-paragraph` package exports a single Paragraph component. It u
 
 It uses `@bbc/psammead-styles` for colours and font family and `@bbc/gel-foundations` for spacing and for GEL Typography implemented in Styled Components.
 
+The `script` prop is optional to allow for the component to be used with the typography being inherited from the parent element, or when passing the `script` value typography can be explicitly set to the typography group `bodyCopy`.
+
 ## Installation
 
 `npm install @bbc/psammead-paragraph`
@@ -14,11 +16,18 @@ It uses `@bbc/psammead-styles` for colours and font family and `@bbc/gel-foundat
 
 | Argument  | Type | Required | Default | Example |
 | --------- | ---- | -------- | ------- | ------- |
-| Script    | object | yes | latin | { canon: { groupA: { fontSize: '28', lineHeight: '32',}, groupB: { fontSize: '32', lineHeight: '36', }, groupD: { fontSize: '44', lineHeight: '48', }, }, trafalgar: { groupA: { fontSize: '20', lineHeight: '24', }, groupB: { fontSize: '24', lineHeight: '28', }, groupD: { fontSize: '32', lineHeight: '36', }, }, }|
+| Script    | object | no | latin | { canon: { groupA: { fontSize: '28', lineHeight: '32',}, groupB: { fontSize: '32', lineHeight: '36', }, groupD: { fontSize: '44', lineHeight: '48', }, }, trafalgar: { groupA: { fontSize: '20', lineHeight: '24', }, groupB: { fontSize: '24', lineHeight: '28', }, groupD: { fontSize: '32', lineHeight: '36', }, }, }|
 
 
 ## Usage
 
+```jsx
+import Paragraph from '@bbc/psammead-paragraph';
+
+const WrappingComponent = () => <Paragraph>Text here</Paragraph>;
+```
+
+When passing `script` prop:
 ```jsx
 import Paragraph from '@bbc/psammead-paragraph';
 import { latin } from '@bbc/gel-foundations/scripts';

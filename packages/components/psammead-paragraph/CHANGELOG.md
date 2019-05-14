@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 1.0.5   | [PR#xxx](https://github.com/bbc/psammead/pull/xxx) Make script prop optional |
 | 1.0.4   | [PR#498](https://github.com/bbc/psammead/pull/498) Update stories to use new input provider |
 | 1.0.3   | [PR#459](https://github.com/bbc/psammead/pull/459) Add custom propTypes shape |
 | 1.0.2   | [PR#424](https://github.com/bbc/psammead/pull/424) Add Snyk badge to readme |
