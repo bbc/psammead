@@ -6,6 +6,7 @@ import Caption from '@bbc/psammead-caption';
 import Copyright from '@bbc/psammead-copyright';
 import Image from '@bbc/psammead-image';
 import ImagePlaceholder from '@bbc/psammead-image-placeholder';
+import Paragraph from '@bbc/psammead-paragraph';
 import VisuallyHiddenText from '@bbc/psammead-visually-hidden-text';
 import notes from '../README.md';
 import Figure from '.';
@@ -53,7 +54,9 @@ storiesOf('Figure', module)
               'Visually Hidden Caption',
             )}
           </VisuallyHiddenText>
-          {caption}
+          <Paragraph>{caption}</Paragraph>
+          <Paragraph>{caption}</Paragraph>
+          <Paragraph>{caption}</Paragraph>
         </Caption>
       </Figure>
     )),
