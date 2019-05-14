@@ -1,9 +1,9 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import { withKnobs } from '@storybook/addon-knobs';
+import { boolean, withKnobs } from '@storybook/addon-knobs';
 import { inputProvider } from '@bbc/psammead-storybook-helpers';
 import notes from '../README.md';
-import { SectionLabel, SectionLabelWithoutBar } from './index';
+import SectionLabel from './index';
 
 storiesOf('SectionLabel', module)
   .addDecorator(withKnobs)
@@ -12,21 +12,13 @@ storiesOf('SectionLabel', module)
     inputProvider(
       [{ name: 'title', defaultText: 'Most Read' }],
       ([title], script, dir) => (
-        <SectionLabel script={script} dir={dir}>
+        <SectionLabel
+          script={script}
+          dir={dir}
+          bar={boolean('show bar?', true)}
+        >
           {title}
         </SectionLabel>
-      ),
-    ),
-    { notes, knobs: { escapeHTML: false } },
-  )
-  .add(
-    'without bar',
-    inputProvider(
-      [{ name: 'title', defaultText: 'Most Read' }],
-      ([title], script, dir) => (
-        <SectionLabelWithoutBar script={script} dir={dir}>
-          {title}
-        </SectionLabelWithoutBar>
       ),
     ),
     { notes, knobs: { escapeHTML: false } },

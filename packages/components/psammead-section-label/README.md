@@ -6,7 +6,7 @@ This component is currently tagged as alpha and is not suitable for production u
 
 ## Description
 
-The `@bbc/psammead-section-label` package exports two components - a Section Label, and a variant of the Section Label that does not feature a horizontal bar.
+The `@bbc/psammead-section-label` package exports one component - a Section Label.
 
 It uses `@bbc/psammead-styles` for colours and font family and `@bbc/gel-foundations` for spacing and for GEL Typography implemented in Styled Components.
 
@@ -22,6 +22,7 @@ Both components use the same props
 
 | Argument  | Type | Required | Default | Example |
 | --------- | ---- | -------- | ------- | ------- |
+| bar | boolean | no | `true` | `false` |
 | children | string | no | N/A | `'Most Read'` |
 | dir | string | no | `'ltr'` | `'rtl'` |
 | script | object | yes | N/A | `{ canon: { groupA: { fontSize: '28', lineHeight: '32',}, groupB: { fontSize: '32', lineHeight: '36' }, groupD: { fontSize: '44', lineHeight: '48' } }, trafalgar: { groupA: { fontSize: '20', lineHeight: '24' }, groupB: { fontSize: '24', lineHeight: '28' }, groupD: { fontSize: '32', lineHeight: '36' } } }` |
@@ -50,7 +51,7 @@ Or, without a horizontal bar:
 import { SectionLabelWithoutBar } from '@bbc/psammead-section-label';
 import { latin } from '@bbc/gel-foundations/scripts';
 
-const WrappingComponent = () => <SectionLabelWithoutBar script={latin} dir="ltr">Text here</SectionLabelWithoutBar>;
+const WrappingComponent = () => <SectionLabel script={latin} dir="ltr" bar={false}>Text here</SectionLabel>;
 ```
 
 ### When to use this component

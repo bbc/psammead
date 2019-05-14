@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`SectionLabel With title should render correctly 1`] = `
+exports[`SectionLabel With bar With title should render correctly 1`] = `
 .c0 {
   position: relative;
   margin-top: 1.5rem;
@@ -82,7 +82,7 @@ exports[`SectionLabel With title should render correctly 1`] = `
 </div>
 `;
 
-exports[`SectionLabel With title should render correctly with arabic script typography values 1`] = `
+exports[`SectionLabel With bar With title should render correctly with arabic script typography values 1`] = `
 .c0 {
   position: relative;
   margin-top: 1.5rem;
@@ -164,7 +164,7 @@ exports[`SectionLabel With title should render correctly with arabic script typo
 </div>
 `;
 
-exports[`SectionLabel With title should render correctly with explicit text direction 1`] = `
+exports[`SectionLabel With bar With title should render correctly with explicit text direction 1`] = `
 .c0 {
   position: relative;
   margin-top: 1.5rem;
@@ -246,7 +246,89 @@ exports[`SectionLabel With title should render correctly with explicit text dire
 </div>
 `;
 
-exports[`SectionLabel Without title should render correctly 1`] = `
+exports[`SectionLabel With bar With title should render correctly with explicitly showing the bar 1`] = `
+.c0 {
+  position: relative;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.c0::before {
+  content: '';
+  position: absolute;
+  height: 0.0625rem;
+  border: none;
+  background: #AEAEB5;
+  left: 0;
+  right: 0;
+  top: 0.75rem;
+}
+
+.c1 {
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+  color: #222222;
+  background-color: #FFFFFF;
+  font-family: ReithSans,Helvetica,Arial,sans-serif;
+  font-weight: normal;
+  display: inline-block;
+  position: relative;
+  margin: 0;
+  padding-right: 0.5rem;
+}
+
+@media (min-width:37.5rem) {
+  .c0 {
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+  }
+}
+
+@media (min-width:20rem) and (max-width:37.4375rem) {
+  .c0::before {
+    top: 0.75rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .c0::before {
+    top: 0.875rem;
+  }
+}
+
+@media (min-width:20rem) and (max-width:37.4375rem) {
+  .c1 {
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .c1 {
+    font-size: 1.5rem;
+    line-height: 1.75rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .c1 {
+    padding-right: 1rem;
+  }
+}
+
+<div
+  className="c0"
+>
+  <h2
+    className="c1"
+    dir="ltr"
+  >
+    This is text in a SectionLabel, and there is a bar over to the right
+  </h2>
+</div>
+`;
+
+exports[`SectionLabel With bar Without title should render correctly 1`] = `
 .c0 {
   position: relative;
   margin-top: 1.5rem;
@@ -276,7 +358,7 @@ exports[`SectionLabel Without title should render correctly 1`] = `
 />
 `;
 
-exports[`SectionLabelWithoutBar With title should render correctly 1`] = `
+exports[`SectionLabel Without bar With title should render correctly 1`] = `
 .c0 {
   position: relative;
   margin-top: 1.5rem;
@@ -330,12 +412,12 @@ exports[`SectionLabelWithoutBar With title should render correctly 1`] = `
     className="c1"
     dir="ltr"
   >
-    This is text in a SectionLabelWithoutBar.
+    This is text in a SectionLabel.
   </h2>
 </div>
 `;
 
-exports[`SectionLabelWithoutBar With title should render correctly with arabic script typography values 1`] = `
+exports[`SectionLabel Without bar With title should render correctly with arabic script typography values 1`] = `
 .c0 {
   position: relative;
   margin-top: 1.5rem;
@@ -394,7 +476,7 @@ exports[`SectionLabelWithoutBar With title should render correctly with arabic s
 </div>
 `;
 
-exports[`SectionLabelWithoutBar With title should render correctly with explicit text direction 1`] = `
+exports[`SectionLabel Without bar With title should render correctly with explicit text direction 1`] = `
 .c0 {
   position: relative;
   margin-top: 1.5rem;
@@ -448,12 +530,12 @@ exports[`SectionLabelWithoutBar With title should render correctly with explicit
     className="c1"
     dir="ltr"
   >
-    This is text in a SectionLabelWithoutBar rendering in ltr mode.
+    This is text in a SectionLabel rendering in ltr mode.
   </h2>
 </div>
 `;
 
-exports[`SectionLabelWithoutBar Without title should render correctly 1`] = `
+exports[`SectionLabel Without bar Without title should render correctly 1`] = `
 .c0 {
   position: relative;
   margin-top: 1.5rem;
