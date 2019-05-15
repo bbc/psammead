@@ -10,10 +10,12 @@ The `Brand` component provides the BBC service logo (as SVG), nested inside a st
 
 ## Props
 
+<!-- prettier-ignore -->
 | Argument  | Type   | Required | Default | Example      |
 | --------- | ------ | -------- | ------- | ------------ |
 | brandName | String | yes      | N/A     | `'BBC News'` |
 | svg | Object | yes | N/A | { group: `(<g fillrule="evenodd"><path d="M84.32" /></g>)`, viewbox: { height: 24, width: 167.95 }, ratio: 6.9979 } |
+| link | String | yes | N/A | `https://bbc.com` |
 
 ## Usage
 
@@ -25,7 +27,7 @@ import { igbo } from '@bbc/psammead-assets/svgs';
 
 const Header = brandName => (
   <header role="banner">
-    <Brand brandName={brandName} svg={igbo} />
+    <Brand brandName={brandName} svg={igbo} link="https://bbc.com/igbo" />
   </header>
 );
 ```
