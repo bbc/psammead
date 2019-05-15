@@ -73,11 +73,11 @@ const BrandSvg = styled.svg`
   }
 `;
 
-const Brand = ({ brandName, svg }) => (
+const Brand = ({ brandName, svg, link }) => (
   <StyledWrapper>
     <ConstraintWrapper>
       {svg && (
-        <StyledLink href="https://www.bbc.co.uk/news">
+        <StyledLink href={link}>
           <StyledSpan>
             <BrandSvg
               viewBox={`0 0 ${svg.viewbox.width} ${svg.viewbox.height}`}
@@ -106,6 +106,7 @@ Brand.propTypes = {
       width: number.isRequired,
     }).isRequired,
   }).isRequired,
+  link: string.isRequired,
 };
 
 export default Brand;
