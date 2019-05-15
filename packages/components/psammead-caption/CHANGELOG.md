@@ -3,7 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
-| 1.1.5 | [PR#x](https://github.com/bbc/psammead/pull/x) Add spacing for nested paragraph |
+| 1.1.5 | [PR#524](https://github.com/bbc/psammead/pull/524) Add spacing for nested paragraph |
 | 1.1.4 | [PR#515](https://github.com/bbc/psammead/pull/515) Update story to use dirDecorator |
 | 1.1.3 | [PR#491](https://github.com/bbc/psammead/pull/491) Remove bottom padding from paragraphs within Caption |
 | 1.1.2 | [PR#498](https://github.com/bbc/psammead/pull/498) Update stories to use new input provider |
