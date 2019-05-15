@@ -4,10 +4,22 @@ describe(`Publish Script - getRegistry`, () => {
     jest.resetModules();
   });
 
-  it('returns registry version with newline in response', () => {
+  it('returns latest registry version from array', () => {
     jest.mock('shelljs', () => ({
       exec: () => ({
-        stdout: '1.3.2\n ',
+        stdout: JSON.stringify(['1.0.0', '1.1.0', '1.1.1']),
+      }),
+    }));
+
+    const getRegistry = require('../src/getRegistryVersion');
+
+    expect(getRegistry('foobar')).toEqual('1.1.1');
+  });
+
+  it('returns single registry version ', () => {
+    jest.mock('shelljs', () => ({
+      exec: () => ({
+        stdout: JSON.stringify(['1.3.2']),
       }),
     }));
 
@@ -16,19 +28,7 @@ describe(`Publish Script - getRegistry`, () => {
     expect(getRegistry('foobar')).toEqual('1.3.2');
   });
 
-  it('returns registry version without newline in response', () => {
-    jest.mock('shelljs', () => ({
-      exec: () => ({
-        stdout: '3.2.1',
-      }),
-    }));
-
-    const getRegistry = require('../src/getRegistryVersion');
-
-    expect(getRegistry('foobar')).toEqual('3.2.1');
-  });
-
-  it('returns default version when there is no output', () => {
+  it('returns default version when an array of versions is not returned', () => {
     jest.mock('shelljs', () => ({
       exec: () => ({}),
     }));
