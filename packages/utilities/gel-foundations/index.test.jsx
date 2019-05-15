@@ -75,11 +75,6 @@ const typographyExpectedExports = {
   getLongPrimer: 'function',
   getBrevier: 'function',
   getMinion: 'function',
-  getAtlas: 'function',
-  getElephant: 'function',
-  getImperial: 'function',
-  getRoyal: 'function',
-  getFoolscap: 'function',
 };
 
 const scriptsExpectedExports = {
