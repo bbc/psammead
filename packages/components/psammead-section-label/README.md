@@ -8,7 +8,7 @@ This component is currently tagged as alpha and is not suitable for production u
 
 The `@bbc/psammead-section-label` package exports one component - a Section Label.
 
-It uses `@bbc/psammead-styles` for colours and font family and `@bbc/gel-foundations` for spacing and for GEL Typography implemented in Styled Components.
+For colours and font family it uses `@bbc/psammead-styles` and `@bbc/gel-foundations` for spacing and GEL Typography implemented in Styled Components.
 
 The only provided child should be a *string*, which will be wrapped in an `<h2>` element by the component – (see [the Accessibility notes](#accessibility-notes)).
 
