@@ -4,6 +4,7 @@ import { withKnobs, text } from '@storybook/addon-knobs';
 import { inputProvider } from '@bbc/psammead-storybook-helpers';
 import Image from '@bbc/psammead-image';
 import Timestamp from '@bbc/psammead-timestamp';
+import MediaIndicator from '@bbc/psammead-media-indicator';
 import notes from '../README.md';
 import StoryPromo, { Headline, Summary } from './index';
 
@@ -32,11 +33,13 @@ const InfoComponent = ({ headlineText, summaryText, script }) => (
   </Fragment>
 );
 
-const mediaInfo = {
-  duration: '2:15',
-  datetime: 'PT2M15S',
-  offscreenText: 'Video 2 minutes 15 seconds',
-};
+const MediaIndicatorComponent = (
+  <MediaIndicator
+    duration="2:15"
+    datetime="PT2M15S"
+    offscreenText="Video 2 minutes 15 seconds"
+  />
+);
 
 storiesOf('StoryPromo', module)
   .addDecorator(withKnobs)
@@ -75,7 +78,7 @@ storiesOf('StoryPromo', module)
           <StoryPromo
             image={ImageComponent}
             info={Info}
-            mediaInfo={mediaInfo}
+            mediaIndicator={MediaIndicatorComponent}
           />
         );
       },
