@@ -18,6 +18,7 @@ The only provided child should be a *string*, which will be wrapped in an `<h2>`
 
 ## Props
 
+<!-- prettier-ignore -->
 | Argument  | Type | Required | Default | Example |
 | --------- | ---- | -------- | ------- | ------- |
 | bar | boolean | no | `true` | `false` |
