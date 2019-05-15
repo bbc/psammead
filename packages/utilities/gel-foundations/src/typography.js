@@ -27,16 +27,6 @@ export const getBrevier = script => getTypeSizes('brevier', script);
 
 export const getMinion = script => getTypeSizes('minion', script);
 
-export const getAtlas = script => getTypeSizes('atlas', script);
-
-export const getElephant = script => getTypeSizes('elephant', script);
-
-export const getImperial = script => getTypeSizes('imperial', script);
-
-export const getRoyal = script => getTypeSizes('royal', script);
-
-export const getFoolscap = script => getTypeSizes('foolscap', script);
-
 /* ORIGINAL CONSTANTS */
 export const GEL_ATLAS = `
   font-size: 4.875rem;
