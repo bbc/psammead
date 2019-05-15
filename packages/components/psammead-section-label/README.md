@@ -18,8 +18,6 @@ The only provided child should be a *string*, which will be wrapped in an `<h2>`
 
 ## Props
 
-Both components use the same props
-
 | Argument  | Type | Required | Default | Example |
 | --------- | ---- | -------- | ------- | ------- |
 | bar | boolean | no | `true` | `false` |
@@ -64,7 +62,7 @@ This component should be used to divide the content in a page into logical eleme
 
 Although this component has the appearance of a horizontal rule, it does not use an `<hr>` tag, and therefore does not have the associated semantic meaning.
 
-This component wraps the provided child string in an `<h2>` element.
+This component wraps the title string in an `<h2>` element, if provided.
 
 <!-- ## Roadmap -->
 
