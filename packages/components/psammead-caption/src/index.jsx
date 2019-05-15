@@ -2,6 +2,7 @@ import styled, { css } from 'styled-components';
 import { shape } from 'prop-types';
 import {
   GEL_SPACING,
+  GEL_SPACING_TRPL,
   GEL_MARGIN_ABOVE_400PX,
   GEL_MARGIN_BELOW_400PX,
 } from '@bbc/gel-foundations/spacings';
@@ -35,6 +36,10 @@ const Caption = styled.figcaption`
   }
   @media (min-width: ${GEL_GROUP_4_SCREEN_WIDTH_MIN}) {
     padding: ${GEL_SPACING} 0 0;
+  }
+  & > p {
+    padding-bottom: ${GEL_SPACING_TRPL};
+    margin: 0; /* reset */
   }
   & > p:last-child {
     padding-bottom: 0;
