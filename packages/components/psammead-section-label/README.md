@@ -29,7 +29,7 @@ The only provided child should be a *string*, which will be wrapped in an `<h2>`
 ## Usage
 
 ```jsx
-import { SectionLabel } from '@bbc/psammead-section-label';
+import SectionLabel from '@bbc/psammead-section-label';
 import { latin } from '@bbc/gel-foundations/scripts';
 
 const WrappingComponent = () => <SectionLabel script={latin} dir="ltr">Text here</SectionLabel>;
@@ -38,7 +38,7 @@ const WrappingComponent = () => <SectionLabel script={latin} dir="ltr">Text here
 Or, without a section title:
 
 ```jsx
-import { SectionLabel } from '@bbc/psammead-section-label';
+import SectionLabel from '@bbc/psammead-section-label';
 import { latin } from '@bbc/gel-foundations/scripts';
 
 const WrappingComponent = () => <SectionLabel />;
@@ -47,7 +47,7 @@ const WrappingComponent = () => <SectionLabel />;
 Or, without a horizontal bar:
 
 ```jsx
-import { SectionLabelWithoutBar } from '@bbc/psammead-section-label';
+import SectionLabel from '@bbc/psammead-section-label';
 import { latin } from '@bbc/gel-foundations/scripts';
 
 const WrappingComponent = () => <SectionLabel script={latin} dir="ltr" bar={false}>Text here</SectionLabel>;
