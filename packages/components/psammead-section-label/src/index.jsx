@@ -1,6 +1,6 @@
 import React from 'react';
 import styled, { css } from 'styled-components';
-import { boolean, oneOf, shape, string } from 'prop-types';
+import { bool, oneOf, shape, string } from 'prop-types';
 import { scriptPropType } from '@bbc/gel-foundations/prop-types';
 import {
   GEL_GROUP_3_SCREEN_WIDTH_MIN,
@@ -104,7 +104,7 @@ SectionLabel.defaultProps = {
 };
 
 SectionLabel.propTypes = {
-  bar: boolean,
+  bar: bool,
   children: string,
   dir: oneOf(['ltr', 'rtl']),
   script: shape(scriptPropType),
