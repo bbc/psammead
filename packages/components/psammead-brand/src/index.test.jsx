@@ -18,10 +18,20 @@ const svg = {
 describe('Brand', () => {
   shouldMatchSnapshot(
     'should render correctly',
-    <Brand brandName="Default Brand Name" svg={svg} />,
+    <Brand
+      brandName="Default Brand Name"
+      svg={svg}
+      link="https://www.bbc.co.uk/news"
+    />,
   );
+
   shouldMatchSnapshot(
     'should render correctly with svg not provided',
     <Brand brandName="Default Brand Name" />,
+  );
+
+  shouldMatchSnapshot(
+    'should render correctly with link not provided',
+    <Brand brandName="Default Brand Name" svg={svg} />,
   );
 });
