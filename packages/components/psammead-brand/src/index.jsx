@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import styled, { css } from 'styled-components';
 import { string, number, node, shape } from 'prop-types';
 import { C_POSTBOX, C_WHITE } from '@bbc/psammead-styles/colours';
@@ -45,10 +45,10 @@ const StyledWrapper = styled.div`
 const ConstraintWrapper = styled.div`
   max-width: ${GEL_GROUP_5_SCREEN_WIDTH_MIN};
   margin: 0 auto;
+  padding-top: ${GEL_SPACING};
 `;
 
 const StyledLink = styled.a`
-  padding-top: ${GEL_SPACING};
   display: inline-block;
 `;
 
@@ -73,24 +73,40 @@ const BrandSvg = styled.svg`
   }
 `;
 
+/* eslint-disable react/prop-types */
+const StyledBrand = ({ svg, brandName }) => (
+  <Fragment>
+    {svg && (
+      <StyledSpan>
+        <BrandSvg
+          viewBox={`0 0 ${svg.viewbox.width} ${svg.viewbox.height}`}
+          xmlns="http://www.w3.org/2000/svg"
+          focusable="false"
+          aria-hidden="true"
+          ratio={svg.ratio}
+        >
+          {svg.group}
+        </BrandSvg>
+        <VisuallyHiddenText>{brandName}</VisuallyHiddenText>
+      </StyledSpan>
+    )}
+  </Fragment>
+);
+
+/* eslint-disable react/prop-types */
+const BrandWithLink = ({ link, brandName, svg }) => (
+  <StyledLink href={link}>
+    <StyledBrand svg={svg} brandName={brandName} />
+  </StyledLink>
+);
+
 const Brand = ({ brandName, svg, link }) => (
   <StyledWrapper>
     <ConstraintWrapper>
-      {svg && (
-        <StyledLink href={link}>
-          <StyledSpan>
-            <BrandSvg
-              viewBox={`0 0 ${svg.viewbox.width} ${svg.viewbox.height}`}
-              xmlns="http://www.w3.org/2000/svg"
-              focusable="false"
-              aria-hidden="true"
-              ratio={svg.ratio}
-            >
-              {svg.group}
-            </BrandSvg>
-            <VisuallyHiddenText>{brandName}</VisuallyHiddenText>
-          </StyledSpan>
-        </StyledLink>
+      {link ? (
+        <BrandWithLink link={link} brandName={brandName} svg={svg} />
+      ) : (
+        <StyledBrand svg={svg} brandName={brandName} />
       )}
     </ConstraintWrapper>
   </StyledWrapper>

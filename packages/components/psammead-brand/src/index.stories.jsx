@@ -18,10 +18,19 @@ storiesOf('Brand', module)
         .map(key => key.charAt(0).toUpperCase() + key.slice(1));
 
       const choice = select('Service SVG', options, 'news').toLowerCase();
-      return <Brand brandName="Default Brand Name" svg={svgs[choice]} />;
+      return (
+        <Brand
+          brandName="Default Brand Name"
+          svg={svgs[choice]}
+          link="https://bbc.com/news"
+        />
+      );
     },
     { notes },
-  );
+  )
+  .add('without link', () => (
+    <Brand brandName="Default Brand Name" svg={svgs.news} />
+  ));
 
 storiesOf('Brand', module).add(
   'without brand svg',
