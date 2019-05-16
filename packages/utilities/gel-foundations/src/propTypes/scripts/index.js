@@ -12,11 +12,6 @@ const scriptPropTypes = {
   longPrimer: shape(groupPropTypes).isRequired,
   brevier: shape(groupPropTypes).isRequired,
   minion: shape(groupPropTypes).isRequired,
-  atlas: shape(groupPropTypes),
-  elephant: shape(groupPropTypes),
-  imperial: shape(groupPropTypes),
-  royal: shape(groupPropTypes),
-  foolscap: shape(groupPropTypes),
 };
 
 export default scriptPropTypes;
