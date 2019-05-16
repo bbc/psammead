@@ -34,6 +34,7 @@
   "homepage": "https://github.com/bbc/psammead#readme",
   "dependencies": {
     "@bbc/psammead-styles": "^0.3.0",
+    "@storybook/addon-a11y": "^5.0.11",
     "@storybook/theming": "^5.0.6",
     "styled-components": "^4.1.3",
     "styled-normalize": "^8.0.4"
