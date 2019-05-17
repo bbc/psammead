@@ -21,7 +21,7 @@ describe('Brand', () => {
     <Brand
       brandName="Default Brand Name"
       svg={svg}
-      link="https://www.bbc.co.uk/news"
+      url="https://www.bbc.co.uk/news"
     />,
   );
 
