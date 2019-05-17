@@ -27,7 +27,7 @@ import { igbo } from '@bbc/psammead-assets/svgs';
 
 const Header = brandName => (
   <header role="banner">
-    <Brand brandName={brandName} svg={igbo} link="https://www.bbc.co.uk/news" />
+    <Brand brandName={brandName} svg={igbo} url="https://www.bbc.co.uk/news" />
   </header>
 );
 ```
