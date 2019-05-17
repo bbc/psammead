@@ -22,13 +22,14 @@ exports[`Brand should render correctly 1`] = `
 .c2 {
   display: inline-block;
   width: 100%;
+  max-width: 17.5rem;
+  min-width: 11.25rem;
 }
 
 .c3 {
   box-sizing: content-box;
   fill: #FFFFFF;
-  max-width: 17.5rem;
-  min-width: 11.25rem;
+  max-width: NaNrem;
   padding-top: 1rem;
   padding-bottom: 0.75rem;
   width: 100%;

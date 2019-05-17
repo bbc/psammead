@@ -36,13 +36,14 @@ const Banner = styled.div`
 const StyledLink = styled.a`
   display: inline-block;
   width: 100%;
+  max-width: ${({ maxWidth }) => maxWidth / 16}rem;
+  min-width: ${({ minWidth }) => minWidth / 16}rem;
 `;
 
 const BrandSvg = styled.svg`
   box-sizing: content-box;
   fill: ${C_WHITE};
   max-width: ${({ maxWidth }) => maxWidth / 16}rem;
-  min-width: ${({ minWidth }) => minWidth / 16}rem;
   padding-top: ${GEL_SPACING_DBL};
   padding-bottom: ${SVG_BOTTOM_OFFSET_BELOW_600PX};
   width: 100%;
@@ -69,11 +70,13 @@ const BrandSvg = styled.svg`
 const Brand = ({ brandName, svgHeight, minWidth, maxWidth, svg }) => (
   <Banner svgHeight={svgHeight}>
     {svg && (
-      <StyledLink href="https://www.bbc.co.uk/news">
+      <StyledLink
+        href="https://www.bbc.co.uk/news"
+        maxWidth={maxWidth}
+        minWidth={minWidth}
+      >
         <BrandSvg
           height={svgHeight}
-          maxWidth={maxWidth}
-          minWidth={minWidth}
           viewBox={`0 0 ${svg.viewbox.width} ${svg.viewbox.height}`}
           xmlns="http://www.w3.org/2000/svg"
           focusable="false"

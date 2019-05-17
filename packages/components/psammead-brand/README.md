@@ -63,6 +63,9 @@ The `Brand` component is designed to be used where a BBC logo is required as SVG
 
 <!-- ## Roadmap -->
 
+### Additional notes
+- `width: 100%` is needed on both `<a>` and the `<svg>` to allow the brand to dynamically scale on the Firefox browser
+
 ## Contributing
 
 Psammead is completely open source. We are grateful for any contributions, whether they be new components, bug fixes or general improvements. Please see our primary contributing guide which can be found at [the root of the Psammead respository](https://github.com/bbc/psammead/blob/latest/CONTRIBUTING.md).
