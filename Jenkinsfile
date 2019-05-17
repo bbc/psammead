@@ -1,8 +1,9 @@
 #!/usr/bin/env groovy
 
 def dockerRegistry = "329802642264.dkr.ecr.eu-west-1.amazonaws.com"
-def nodeImageVersion = "0.0.8"
-def nodeImage = "${dockerRegistry}/bbc-news/node-8-lts:${nodeImageVersion}"
+def nodeImageVersion = "0.0.2"
+def nodeImage = "${dockerRegistry}/bbc-news/node-10-lts:${nodeImageVersion}"
+
 def nodeName
 def slackChannel = "#si_repo-psammead"
 def stageName = "Unknown"
