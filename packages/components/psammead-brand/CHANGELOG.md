@@ -3,7 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 | ------- | ----------- |
-| 1.1.0   | [PR#528](https://github.com/bbc/psammead/pull/528) Add link prop to allow dynamic link |
+| 2.0.0   | [PR#528](https://github.com/bbc/psammead/pull/528) Add link prop to allow dynamic link |
 | 1.0.2   | [PR#515](https://github.com/bbc/psammead/pull/515) Update story to use dirDecorator |
 | 1.0.1   | [PR#476](https://github.com/bbc/psammead/pull/476) Fail gracefully if brand svg is not provided |
 | 1.0.0   | [PR#457](https://github.com/bbc/psammead/pull/457) Enable passing of different svgs |

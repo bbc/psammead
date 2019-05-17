@@ -95,17 +95,17 @@ const StyledBrand = ({ svg, brandName }) => (
 );
 
 /* eslint-disable react/prop-types */
-const BrandWithLink = ({ link, brandName, svg }) => (
-  <StyledLink href={link}>
+const BrandWithLink = ({ url, brandName, svg }) => (
+  <StyledLink href={url}>
     <StyledBrand svg={svg} brandName={brandName} />
   </StyledLink>
 );
 
-const Brand = ({ brandName, svg, link }) => (
+const Brand = ({ brandName, svg, url }) => (
   <StyledWrapper>
-    <ConstraintWrapper hasLink={link}>
-      {link ? (
-        <BrandWithLink link={link} brandName={brandName} svg={svg} />
+    <ConstraintWrapper hasLink={url}>
+      {url ? (
+        <BrandWithLink url={url} brandName={brandName} svg={svg} />
       ) : (
         <StyledBrand svg={svg} brandName={brandName} />
       )}
@@ -123,7 +123,7 @@ Brand.propTypes = {
       width: number.isRequired,
     }).isRequired,
   }).isRequired,
-  link: string.isRequired,
+  url: string.isRequired,
 };
 
 export default Brand;
