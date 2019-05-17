@@ -73,7 +73,12 @@ describe('Timestamp utility functions', () => {
     it('should return relative timestamp if isRelative is true', () => {
       const nineHoursAgo = timestampGenerator({ hours: 9 });
       const isRelativeIsTrue = true;
-      const output = showRelativeTime(nineHoursAgo, isRelativeIsTrue, format, timezone);
+      const output = showRelativeTime(
+        nineHoursAgo,
+        isRelativeIsTrue,
+        format,
+        timezone,
+      );
       const expectedOutput = '9 hours ago';
       expect(output).toEqual(expectedOutput);
     });
@@ -86,7 +91,12 @@ describe('Timestamp utility functions', () => {
 
     it('should return timestamp with default format if format is not provided', () => {
       const nullFormat = null;
-      const output = showRelativeTime(timestamp, isRelative, nullFormat, timezone);
+      const output = showRelativeTime(
+        timestamp,
+        isRelative,
+        nullFormat,
+        timezone,
+      );
       const expectedOutput = '19 October 2018, 18:10 BST';
       expect(output).toEqual(expectedOutput);
     });
