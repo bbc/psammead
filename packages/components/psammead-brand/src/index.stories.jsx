@@ -22,7 +22,7 @@ storiesOf('Brand', module)
         <Brand
           brandName="Default Brand Name"
           svg={svgs[choice]}
-          link="https://bbc.com/news"
+          url="https://bbc.com/news"
         />
       );
     },
