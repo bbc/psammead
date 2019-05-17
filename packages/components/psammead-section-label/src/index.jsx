@@ -59,6 +59,11 @@ const Wrapper = styled.div`
     `}
 `;
 
+Wrapper.propTypes = {
+  bar: bool.isRequired,
+  script: shape(scriptPropType).isRequired,
+};
+
 const paddingDir = ({ dir }) => `padding-${dir === 'ltr' ? 'right' : 'left'}`;
 
 const Title = styled.h2`
@@ -85,29 +90,25 @@ Title.propTypes = {
   script: shape(scriptPropType).isRequired,
 };
 
-const SectionLabel = ({ bar, children: text, dir, script }) => (
-  // Only modify the Label to account for an inline title if there is a title to render.
-  <Wrapper script={text && script} bar={bar}>
-    {text && (
-      <Title script={script} dir={dir}>
-        {text}
-      </Title>
-    )}
+const SectionLabel = ({ bar, children: title, dir, labelId, script }) => (
+  <Wrapper script={title && script} bar={bar}>
+    <Title script={script} dir={dir} id={labelId}>
+      {title}
+    </Title>
   </Wrapper>
 );
 
 SectionLabel.defaultProps = {
   bar: true,
-  children: null,
   dir: 'ltr',
-  script: null,
 };
 
 SectionLabel.propTypes = {
   bar: bool,
-  children: string,
+  children: string.isRequired,
   dir: oneOf(['ltr', 'rtl']),
-  script: shape(scriptPropType),
+  labelId: string.isRequired,
+  script: shape(scriptPropType).isRequired,
 };
 
 export default SectionLabel;

@@ -22,8 +22,9 @@ The only provided child should be a *string*, which will be wrapped in an `<h2>`
 | Argument  | Type | Required | Default | Example |
 | --------- | ---- | -------- | ------- | ------- |
 | bar | boolean | no | `true` | `false` |
-| children | string | no | N/A | `'Most Read'` |
+| children | string | yes | N/A | `'Most Read'` |
 | dir | string | no | `'ltr'` | `'rtl'` |
+| labelId | string | yes | N/A | `top-stories-label` |
 | script | object | yes | N/A | { canon: { groupA: { fontSize: '28', lineHeight: '32',}, groupB: { fontSize: '32', lineHeight: '36' }, groupD: { fontSize: '44', lineHeight: '48' } }, trafalgar: { groupA: { fontSize: '20', lineHeight: '24' }, groupB: { fontSize: '24', lineHeight: '28' }, groupD: { fontSize: '32', lineHeight: '36' } } } |
 
 ## Usage
@@ -32,16 +33,13 @@ The only provided child should be a *string*, which will be wrapped in an `<h2>`
 import SectionLabel from '@bbc/psammead-section-label';
 import { latin } from '@bbc/gel-foundations/scripts';
 
-const WrappingComponent = () => <SectionLabel script={latin} dir="ltr">Text here</SectionLabel>;
-```
-
-Or, without a section title:
-
-```jsx
-import SectionLabel from '@bbc/psammead-section-label';
-import { latin } from '@bbc/gel-foundations/scripts';
-
-const WrappingComponent = () => <SectionLabel />;
+const WrappingComponent = () => (
+  <div aria-labelledby="example-section-label">
+    <SectionLabel script={latin} dir="ltr" labelId="example-section-label">
+      Example section
+    </SectionLabel>
+  </div>
+);
 ```
 
 Or, without a horizontal bar:
@@ -50,7 +48,13 @@ Or, without a horizontal bar:
 import SectionLabel from '@bbc/psammead-section-label';
 import { latin } from '@bbc/gel-foundations/scripts';
 
-const WrappingComponent = () => <SectionLabel script={latin} dir="ltr" bar={false}>Text here</SectionLabel>;
+const WrappingComponent = () => (
+  <div aria-labelledby="example-section-label">
+    <SectionLabel script={latin} dir="ltr" bar={false} labelId="example-section-label">
+      Example section
+    </SectionLabel>
+  </div>
+);
 ```
 
 ### When to use this component
@@ -63,7 +67,7 @@ This component should be used to divide the content in a page into logical eleme
 
 Although this component has the appearance of a horizontal rule, it does not use an `<hr>` tag, and therefore does not have the associated semantic meaning.
 
-This component wraps the title string in an `<h2>` element, if provided.
+This component wraps the title string in an `<h2>` element. The `labelId` prop will be applid to the `<h2>` as an `id` attribute, allowing the content of the element to be referenced by an `aria-labelledby` attribute. See the [examples](#usage) above.
 
 <!-- ## Roadmap -->
 

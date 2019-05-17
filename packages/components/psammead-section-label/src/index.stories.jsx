@@ -16,6 +16,7 @@ storiesOf('SectionLabel', module)
           script={script}
           dir={dir}
           bar={boolean('show bar?', true)}
+          labelId="example-section-label"
         >
           {title}
         </SectionLabel>

@@ -8,35 +8,31 @@ describe('SectionLabel', () => {
     describe('With title', () => {
       shouldMatchSnapshot(
         'should render correctly',
-        <SectionLabel script={latin}>
+        <SectionLabel script={latin} labelId="test-section-label">
           This is text in a SectionLabel.
         </SectionLabel>,
       );
 
       shouldMatchSnapshot(
         'should render correctly with explicitly showing the bar',
-        <SectionLabel script={latin} bar>
+        <SectionLabel script={latin} labelId="test-section-label" bar>
           This is text in a SectionLabel, and there is a bar over to the right
         </SectionLabel>,
       );
 
       shouldMatchSnapshot(
         'should render correctly with explicit text direction',
-        <SectionLabel script={latin} dir="ltr">
+        <SectionLabel script={latin} dir="ltr" labelId="test-section-label">
           This is text in a SectionLabel rendering in ltr mode.
         </SectionLabel>,
       );
 
       shouldMatchSnapshot(
         'should render correctly with arabic script typography values',
-        <SectionLabel script={arabic} dir="rtl">
+        <SectionLabel script={arabic} dir="rtl" labelId="test-section-label">
           بعض محتوى النص
         </SectionLabel>,
       );
-    });
-
-    describe('Without title', () => {
-      shouldMatchSnapshot('should render correctly', <SectionLabel />);
     });
   });
 
@@ -44,30 +40,33 @@ describe('SectionLabel', () => {
     describe('With title', () => {
       shouldMatchSnapshot(
         'should render correctly',
-        <SectionLabel script={latin} bar={false}>
+        <SectionLabel script={latin} bar={false} labelId="test-section-label">
           This is text in a SectionLabel.
         </SectionLabel>,
       );
 
       shouldMatchSnapshot(
         'should render correctly with explicit text direction',
-        <SectionLabel script={latin} dir="ltr" bar={false}>
+        <SectionLabel
+          script={latin}
+          dir="ltr"
+          bar={false}
+          labelId="test-section-label"
+        >
           This is text in a SectionLabel rendering in ltr mode.
         </SectionLabel>,
       );
 
       shouldMatchSnapshot(
         'should render correctly with arabic script typography values',
-        <SectionLabel script={arabic} dir="rtl" bar={false}>
+        <SectionLabel
+          script={arabic}
+          dir="rtl"
+          bar={false}
+          labelId="test-section-label"
+        >
           بعض محتوى النص
         </SectionLabel>,
-      );
-    });
-
-    describe('Without title', () => {
-      shouldMatchSnapshot(
-        'should render correctly',
-        <SectionLabel bar={false} />,
       );
     });
   });
