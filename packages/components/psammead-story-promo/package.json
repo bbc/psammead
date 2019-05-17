@@ -1,6 +1,6 @@
 {
   "name": "@bbc/psammead-story-promo",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "main": "dist/index.js",
   "description": "A story promo for use on index pages",
   "repository": {
@@ -24,7 +24,7 @@
     "@bbc/psammead-image": "^0.3.5",
     "@bbc/psammead-storybook-helpers": "^2.0.0",
     "@bbc/psammead-test-helpers": "^0.3.3",
-    "@bbc/psammead-timestamp": "^0.1.0",
+    "@bbc/psammead-timestamp": "^0.3.2",
     "react": "^16.6.3",
     "styled-components": "^4.1.3"
   },

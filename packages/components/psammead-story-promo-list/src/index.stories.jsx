@@ -18,7 +18,7 @@ const InfoComponent = ({ headlineText, summaryText, datetime, dateformat }) => (
   <Fragment>
     <Headline script={latin}>{headlineText}</Headline>
     <Summary script={latin}>{summaryText}</Summary>
-    <Timestamp datetime={datetime} script={latin}>
+    <Timestamp datetime={datetime} script={latin} padding={false}>
       {dateformat}
     </Timestamp>
   </Fragment>
