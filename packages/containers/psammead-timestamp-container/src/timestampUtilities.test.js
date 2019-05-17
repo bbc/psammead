@@ -1,4 +1,9 @@
-import { formatUnixTimestamp, isValidDateTime } from './timestampUtilities';
+import {
+  formatUnixTimestamp,
+  isValidDateTime,
+  showRelativeTime,
+} from './timestampUtilities';
+import timestampGenerator from './helpers/testHelpers';
 
 const timezone = 'Europe/London';
 const timestamp = 1539969006000; // 19 October 2018
@@ -58,6 +63,32 @@ describe('Timestamp utility functions', () => {
     it('should return long date in expected format', () => {
       const result = formatUnixTimestamp(GMTTimestamp, 'D MMMM YYYY', timezone);
       expect(result).toEqual('1 January 2017');
+    });
+  });
+
+  describe('showRelativetime', () => {
+    const format = 'D MMMM YYYY';
+    const isRelative = false;
+
+    it('should return relative timestamp if isRelative is true', () => {
+      const nineHoursAgo = timestampGenerator({ hours: 9 });
+      const isRelativeIsTrue = true;
+      const output = showRelativeTime(nineHoursAgo, isRelativeIsTrue, format, timezone);
+      const expectedOutput = '9 hours ago';
+      expect(output).toEqual(expectedOutput);
+    });
+
+    it('should return timestamp with format if format is provided', () => {
+      const output = showRelativeTime(timestamp, isRelative, format, timezone);
+      const expectedOutput = '19 October 2018';
+      expect(output).toEqual(expectedOutput);
+    });
+
+    it('should return timestamp with default format if format is not provided', () => {
+      const nullFormat = null;
+      const output = showRelativeTime(timestamp, isRelative, nullFormat, timezone);
+      const expectedOutput = '19 October 2018, 18:10 BST';
+      expect(output).toEqual(expectedOutput);
     });
   });
 });

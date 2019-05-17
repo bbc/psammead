@@ -1,5 +1,5 @@
 import relativeTime from './relativeTimestamp';
-import { timestampGenerator } from './helpers/testHelpers';
+import timestampGenerator from './helpers/testHelpers';
 
 const relativeBehaviour = (description, input, expectedOutput) => {
   it(description, () => {
@@ -59,9 +59,15 @@ describe('relativeTime', () => {
   );
 
   relativeBehaviour(
-    'returns days when greater than 24 hours ago',
+    'returns days when greater than 48 hours ago',
     timestampGenerator({ hours: 94 }),
     '3 days ago',
+  );
+
+  relativeBehaviour(
+    'returns day when greater than 24 hours ago, but less than 48 hours ago',
+    timestampGenerator({ hours: 25 }),
+    '1 day ago',
   );
 
   relativeBehaviour(
