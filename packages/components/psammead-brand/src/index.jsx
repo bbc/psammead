@@ -45,11 +45,12 @@ const StyledWrapper = styled.div`
 const ConstraintWrapper = styled.div`
   max-width: ${GEL_GROUP_5_SCREEN_WIDTH_MIN};
   margin: 0 auto;
-  padding-top: ${GEL_SPACING};
+  ${({ hasLink }) => !hasLink && `padding-top: ${GEL_SPACING}`}
 `;
 
 const StyledLink = styled.a`
   display: inline-block;
+  padding-top: ${GEL_SPACING};
 `;
 
 const StyledSpan = styled.span`
@@ -102,7 +103,7 @@ const BrandWithLink = ({ link, brandName, svg }) => (
 
 const Brand = ({ brandName, svg, link }) => (
   <StyledWrapper>
-    <ConstraintWrapper>
+    <ConstraintWrapper hasLink={link}>
       {link ? (
         <BrandWithLink link={link} brandName={brandName} svg={svg} />
       ) : (
