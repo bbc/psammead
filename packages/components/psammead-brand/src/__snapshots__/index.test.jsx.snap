@@ -29,7 +29,6 @@ exports[`Brand should render correctly 1`] = `
 .c3 {
   box-sizing: content-box;
   fill: #FFFFFF;
-  max-width: NaNrem;
   padding-top: 1rem;
   padding-bottom: 0.75rem;
   width: 100%;

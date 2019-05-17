@@ -43,7 +43,6 @@ const StyledLink = styled.a`
 const BrandSvg = styled.svg`
   box-sizing: content-box;
   fill: ${C_WHITE};
-  max-width: ${({ maxWidth }) => maxWidth / 16}rem;
   padding-top: ${GEL_SPACING_DBL};
   padding-bottom: ${SVG_BOTTOM_OFFSET_BELOW_600PX};
   width: 100%;
