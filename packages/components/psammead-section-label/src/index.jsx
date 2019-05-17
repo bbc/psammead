@@ -91,7 +91,7 @@ Title.propTypes = {
 };
 
 const SectionLabel = ({ bar, children: title, dir, labelId, script }) => (
-  <Wrapper script={title && script} bar={bar}>
+  <Wrapper script={script} bar={bar}>
     <Title script={script} dir={dir} id={labelId}>
       {title}
     </Title>
