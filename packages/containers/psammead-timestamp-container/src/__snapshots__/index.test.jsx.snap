@@ -16,6 +16,7 @@ exports[`Timestamp should add prefix and suffix 1`] = `
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
   .c0 {
+    font-size: 0.875rem;
     line-height: 1.125rem;
   }
 }
@@ -23,6 +24,7 @@ exports[`Timestamp should add prefix and suffix 1`] = `
 @media (min-width:37.5rem) {
   .c0 {
     font-size: 0.8125rem;
+    line-height: 1rem;
   }
 }
 
@@ -54,6 +56,7 @@ exports[`Timestamp should render correctly 1`] = `
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
   .c0 {
+    font-size: 0.875rem;
     line-height: 1.125rem;
   }
 }
@@ -61,6 +64,7 @@ exports[`Timestamp should render correctly 1`] = `
 @media (min-width:37.5rem) {
   .c0 {
     font-size: 0.8125rem;
+    line-height: 1rem;
   }
 }
 
@@ -88,6 +92,7 @@ exports[`Timestamp should render without a leading zero on the day 1`] = `
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
   .c0 {
+    font-size: 0.875rem;
     line-height: 1.125rem;
   }
 }
@@ -95,6 +100,7 @@ exports[`Timestamp should render without a leading zero on the day 1`] = `
 @media (min-width:37.5rem) {
   .c0 {
     font-size: 0.8125rem;
+    line-height: 1rem;
   }
 }
 

@@ -1,5 +1,6 @@
 import React from 'react';
 import { isNull, shouldMatchSnapshot } from '@bbc/psammead-test-helpers';
+import { latin } from '@bbc/gel-foundations/scripts';
 import Timestamp from '.';
 
 const defaultTimestamp = 1539969006000; // 19 October 2018
@@ -18,6 +19,7 @@ describe('Timestamp', () => {
       dateTimeFormat="YYYY-MM-DD"
       format="D MMMM YYYY"
       isRelative={false}
+      script={latin}
     />,
   );
 
@@ -28,6 +30,7 @@ describe('Timestamp', () => {
       dateTimeFormat="YYYY-MM-DD"
       format="D MMMM YYYY"
       isRelative={false}
+      script={latin}
     />,
   );
 
@@ -38,6 +41,7 @@ describe('Timestamp', () => {
       dateTimeFormat="YYYY-MM-DD"
       format="D MMMM YYYY"
       isRelative={false}
+      script={latin}
     />,
   );
 
@@ -50,6 +54,7 @@ describe('Timestamp', () => {
       isRelative={false}
       prefix="Prefix here "
       suffix=" suffix here"
+      script={latin}
     />,
   );
 });
