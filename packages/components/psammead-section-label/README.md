@@ -10,7 +10,7 @@ The `@bbc/psammead-section-label` package exports one component - a Section Labe
 
 For colours and font family it uses `@bbc/psammead-styles` and `@bbc/gel-foundations` for spacing and GEL Typography implemented in Styled Components.
 
-The only provided child should be a *string*, which will be wrapped in an `<h2>` element by the component – (see [the Accessibility notes](#accessibility-notes)).
+The only provided child should be the title for the section, provided as a *string*, which will be wrapped in an `<h2>` element by the component – (see [the Accessibility notes](#accessibility-notes)).
 
 ## Installation
 
@@ -59,7 +59,7 @@ const WrappingComponent = () => (
 
 ### When to use this component
 
-This component should be used to divide the content in a page into logical elements.
+This component should be used to signal the beginning of a grouping of story promos. It should not wrap the story promos or contain any content other than that section's title (aka 'strapline').
 
 <!-- ### When not to use this component -->
 
