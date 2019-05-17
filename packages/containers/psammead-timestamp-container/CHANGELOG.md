@@ -3,4 +3,4 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
-| 1.0.0 | [PR#]() Initial creation of package |
+| 1.0.0 | [PR#532](https://github.com/bbc/psammead/pull/532) Initial creation of package |
