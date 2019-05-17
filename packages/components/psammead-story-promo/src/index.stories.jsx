@@ -7,9 +7,9 @@ import Timestamp from '@bbc/psammead-timestamp';
 import notes from '../README.md';
 import StoryPromo, { Headline, Summary } from './index';
 
-const ImageComponent = (
+const buildImageComponent = () => (
   <Image
-    alt={text('Image alt text', '2019-03-01T14:00+00:00')}
+    alt={text('Image alt text', 'An example of image alt text')}
     src={text(
       'Image src',
       'https://ichef.bbci.co.uk/news/660/cpsprodpb/11897/production/_106613817_999_al_.jpg',
@@ -47,7 +47,7 @@ storiesOf('StoryPromo', module)
           />
         );
 
-        return <StoryPromo image={ImageComponent} info={Info} />;
+        return <StoryPromo image={buildImageComponent()} info={Info} />;
       },
     ),
     { notes, knobs: { escapeHTML: false } },
