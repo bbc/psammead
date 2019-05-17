@@ -36,7 +36,7 @@ exports[`StoryPromo should render correctly 1`] = `
 
 .c1 {
   border-bottom: 0.0625rem solid #F2F2F2;
-  padding: 1rem 0 0.5rem;
+  padding: 0.5rem 0 1rem;
 }
 
 .c1:first-child {
