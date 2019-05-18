@@ -123,7 +123,11 @@ Brand.propTypes = {
       width: number.isRequired,
     }).isRequired,
   }).isRequired,
-  url: string.isRequired,
+  url: string,
+};
+
+Brand.defaultProps = {
+  url: null,
 };
 
 export default Brand;
