@@ -113,6 +113,10 @@ const Brand = ({ brandName, svg, url }) => (
   </StyledWrapper>
 );
 
+Brand.defaultProps = {
+  url: null,
+};
+
 Brand.propTypes = {
   brandName: string.isRequired,
   svg: shape({
@@ -124,10 +128,6 @@ Brand.propTypes = {
     }).isRequired,
   }).isRequired,
   url: string,
-};
-
-Brand.defaultProps = {
-  url: null,
 };
 
 export default Brand;
