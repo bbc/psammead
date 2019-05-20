@@ -7,17 +7,6 @@ import Timestamp from '@bbc/psammead-timestamp';
 import notes from '../README.md';
 import StoryPromo, { Headline, Summary, Link } from './index';
 
-const buildImageComponent = () => (
-  <Image
-    alt={text('Image alt text', 'Robert Downey Junior in Iron Man')}
-    src={text(
-      'Image src',
-      'https://ichef.bbci.co.uk/news/660/cpsprodpb/11897/production/_106613817_999_al_.jpg',
-    )}
-    width="640"
-  />
-);
-
 // eslint-disable-next-line react/prop-types
 const InfoComponent = ({ headlineText, summaryText, script }) => (
   <Fragment>
@@ -49,7 +38,18 @@ storiesOf('StoryPromo', module)
           />
         );
 
-        return <StoryPromo image={buildImageComponent()} info={Info} />;
+        const Img = (
+          <Image
+            alt={text('Image alt text', 'Robert Downey Junior in Iron Man')}
+            src={text(
+              'Image src',
+              'https://ichef.bbci.co.uk/news/660/cpsprodpb/11897/production/_106613817_999_al_.jpg',
+            )}
+            width="640"
+          />
+        );
+
+        return <StoryPromo image={Img} info={Info} />;
       },
     ),
     { notes, knobs: { escapeHTML: false } },
