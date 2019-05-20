@@ -18,7 +18,7 @@ import {
   GEL_FF_REITH_SERIF,
   GEL_FF_REITH_SANS,
 } from '@bbc/gel-foundations/typography';
-import { C_SHADOW } from '@bbc/psammead-styles/colours';
+import { C_SHADOW, C_METAL } from '@bbc/psammead-styles/colours';
 
 const twoOfSixColumnsMaxWidthScaleable = `33.33%`;
 // (2 / 6) * 100 = 0.3333333333 = 33.33%
@@ -33,6 +33,8 @@ const eightOfTwelveColumnsMaxScaleable = `66.67%`;
 // (8 / 12) * 100 = 66.6666666667 = 66.67%
 
 const StoryPromoWrapper = styled.div`
+  position: relative;
+
   @supports (display: grid) {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
@@ -117,6 +119,33 @@ export const Summary = styled.p`
   padding-bottom: ${GEL_SPACING};
   @media (max-width: ${GEL_GROUP_2_SCREEN_WIDTH_MAX}) {
     display: none;
+  }
+`;
+
+export const Link = styled.a`
+  position: static;
+  color: ${C_SHADOW};
+  text-decoration: none;
+
+  &:before {
+    bottom: 0;
+    content: '';
+    left: 0;
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+    top: 0;
+    white-space: nowrap;
+    z-index: 1;
+  }
+
+  &:hover,
+  &:focus {
+    text-decoration: underline;
+  }
+
+  &:visited {
+    color: ${C_METAL};
   }
 `;
 

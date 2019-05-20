@@ -2,13 +2,15 @@ import React, { Fragment } from 'react';
 import { shouldMatchSnapshot } from '@bbc/psammead-test-helpers';
 import { latin } from '@bbc/gel-foundations/scripts';
 import MediaIndicator from '@bbc/psammead-media-indicator';
-import StoryPromo, { Headline, Summary } from './index';
+import StoryPromo, { Headline, Summary, Link } from './index';
 
 const Image = <img src="https://foobar.com/image.png" alt="Alt text" />;
 
 const Info = (
   <Fragment>
-    <Headline script={latin}>The headline of the promo</Headline>
+    <Headline script={latin}>
+      <Link href="https://www.bbc.co.uk/news">The headline of the promo</Link>
+    </Headline>
     <Summary script={latin}>The summary of the promo</Summary>
     <time>12 March 2019</time>
   </Fragment>

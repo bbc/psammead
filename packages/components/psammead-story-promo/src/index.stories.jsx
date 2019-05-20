@@ -6,11 +6,11 @@ import Image from '@bbc/psammead-image';
 import Timestamp from '@bbc/psammead-timestamp';
 import MediaIndicator from '@bbc/psammead-media-indicator';
 import notes from '../README.md';
-import StoryPromo, { Headline, Summary } from './index';
+import StoryPromo, { Headline, Summary, Link } from './index';
 
 const ImageComponent = (
   <Image
-    alt={text('Image alt text', '2019-03-01T14:00+00:00')}
+    alt={text('Image alt text', 'Robert Downey Junior in Iron Man')}
     src={text(
       'Image src',
       'https://ichef.bbci.co.uk/news/660/cpsprodpb/11897/production/_106613817_999_al_.jpg',
@@ -22,7 +22,9 @@ const ImageComponent = (
 // eslint-disable-next-line react/prop-types
 const InfoComponent = ({ headlineText, summaryText, script }) => (
   <Fragment>
-    <Headline script={script}>{headlineText}</Headline>
+    <Headline script={script}>
+      <Link href="https://www.bbc.co.uk/news">{headlineText}</Link>
+    </Headline>
     <Summary script={script}>{summaryText}</Summary>
     <Timestamp
       datetime={text('Timestamp datetime', '2019-03-01T14:00+00:00')}

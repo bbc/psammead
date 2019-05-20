@@ -1,6 +1,10 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`StoryPromo should render correctly 1`] = `
+.c0 {
+  position: relative;
+}
+
 .c1 {
   display: inline-block;
   vertical-align: top;
@@ -39,197 +43,29 @@ exports[`StoryPromo should render correctly 1`] = `
   padding-bottom: 0.5rem;
 }
 
-@supports (display:grid) {
-  .c0 {
-    display: grid;
-    grid-template-columns: repeat(6,1fr);
-    grid-column-gap: 0.5rem;
-  }
+.c4 {
+  position: static;
+  color: #3F3F42;
+  -webkit-text-decoration: none;
+  text-decoration: none;
 }
 
-@media (min-width:80rem) {
-  .c1 {
-    max-width: 33.33%;
-  }
-}
-
-@supports (display:grid) {
-  .c1 {
-    display: block;
-    max-width: initial;
-    grid-column: 1 / span 2;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c3 {
-    padding: 0 1rem;
-  }
-}
-
-@media (min-width:80rem) {
-  .c3 {
-    max-width: 66.67%;
-  }
-}
-
-@supports (display:grid) {
-  .c3 {
-    display: block;
-    max-width: initial;
-    padding: initial;
-    grid-column: 3 / span 4;
-  }
-}
-
-@media (min-width:20rem) and (max-width:37.4375rem) {
-  .c4 {
-    font-size: 1.125rem;
-    line-height: 1.375rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c4 {
-    font-size: 1.25rem;
-    line-height: 1.5rem;
-  }
-}
-
-@media (min-width:20rem) and (max-width:37.4375rem) {
-  .c5 {
-    font-size: 0.9375rem;
-    line-height: 1.125rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c5 {
-    font-size: 0.875rem;
-    line-height: 1.125rem;
-  }
-}
-
-@media (max-width:37.4375rem) {
-  .c5 {
-    display: none;
-  }
-}
-
-<div
-  className="c0"
->
-  <div
-    className="c1"
-  >
-    <img
-      alt="Alt text"
-      src="https://foobar.com/image.png"
-    />
-    <div
-      className="c2"
-    />
-  </div>
-  <div
-    className="c3"
-  >
-    <h3
-      className="c4"
-    >
-      The headline of the promo
-    </h3>
-    <p
-      className="c5"
-    >
-      The summary of the promo
-    </p>
-    <time>
-      12 March 2019
-    </time>
-  </div>
-</div>
-`;
-
-exports[`StoryPromo with Media Indicator should render correctly 1`] = `
-.c7 {
-  -webkit-clip-path: inset(100%);
-  clip-path: inset(100%);
-  -webkit-clip: rect(1px,1px,1px,1px);
-  clip: rect(1px,1px,1px,1px);
-  height: 1px;
+.c4:before {
+  bottom: 0;
+  content: '';
+  left: 0;
   overflow: hidden;
   position: absolute;
-  width: 1px;
+  right: 0;
+  top: 0;
+  white-space: nowrap;
+  z-index: 1;
 }
 
-.c3 {
-  padding: 0.5rem 0.25rem;
-  background-color: #FFFFFF;
-  display: inline-block;
-  font-family: ReithSans,Helvetica,Arial,sans-serif;
-  font-size: 0.75rem;
-  line-height: 1rem;
-  color: #222222;
-}
-
-.c4 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c5 {
-  vertical-align: middle;
-  margin: 0 0.25rem;
-  fill: #222222;
-}
-
-.c6 {
-  vertical-align: middle;
-  margin: 0 0.25rem;
-}
-
-.c1 {
-  display: inline-block;
-  vertical-align: top;
-  max-width: 33.33%;
-  position: relative;
-}
-
-.c8 {
-  display: inline-block;
-  vertical-align: top;
-  padding: 0 0.5rem;
-  max-width: 66.67%;
-}
-
-.c2 {
-  position: absolute;
-  bottom: 0;
-}
-
-.c9 {
-  font-size: 1.125rem;
-  line-height: 1.375rem;
-  color: #3F3F42;
-  font-family: ReithSerif,Helvetica,Arial,sans-serif;
-  margin: 0;
-  padding-bottom: 0.5rem;
-  font-weight: 700;
-}
-
-.c10 {
-  font-size: 0.9375rem;
-  line-height: 1.125rem;
-  color: #3F3F42;
-  font-family: ReithSans,Helvetica,Arial,sans-serif;
-  margin: 0;
-  padding-bottom: 0.5rem;
+.c4:hover,
+.c4:focus {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
 }
 
 @supports (display:grid) {
@@ -290,21 +126,21 @@ exports[`StoryPromo with Media Indicator should render correctly 1`] = `
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
-  .c10 {
+  .c5 {
     font-size: 0.9375rem;
     line-height: 1.125rem;
   }
 }
 
 @media (min-width:37.5rem) {
-  .c10 {
+  .c5 {
     font-size: 0.875rem;
     line-height: 1.125rem;
   }
 }
 
 @media (max-width:37.4375rem) {
-  .c10 {
+  .c5 {
     display: none;
   }
 }
@@ -365,10 +201,15 @@ exports[`StoryPromo with Media Indicator should render correctly 1`] = `
     <h3
       className="c9"
     >
-      The headline of the promo
+      <a
+        className="c4"
+        href="https://www.bbc.co.uk/news"
+      >
+        The headline of the promo
+      </a>
     </h3>
     <p
-      className="c10"
+      className="c5"
     >
       The summary of the promo
     </p>
