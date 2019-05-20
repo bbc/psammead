@@ -10,7 +10,7 @@ storiesOf('Brand', module)
   .addDecorator(withKnobs)
   .addDecorator(dirDecorator)
   .add(
-    'default',
+    'without brand link',
     () => {
       // capitalization is only for presentation purpose on the knob
       const options = Object.keys(svgs)
@@ -18,18 +18,16 @@ storiesOf('Brand', module)
         .map(key => key.charAt(0).toUpperCase() + key.slice(1));
 
       const choice = select('Service SVG', options, 'news').toLowerCase();
-      return (
-        <Brand
-          brandName="Default Brand Name"
-          svg={svgs[choice]}
-          url="https://bbc.com/news"
-        />
-      );
+      return <Brand brandName="Default Brand Name" svg={svgs[choice]} />;
     },
     { notes },
   )
-  .add('without link', () => (
-    <Brand brandName="Default Brand Name" svg={svgs.news} />
+  .add('with brand link', () => (
+    <Brand
+      brandName="Default Brand Name"
+      svg={svgs.news}
+      url="https://bbc.com/news"
+    />
   ));
 
 storiesOf('Brand', module).add(
