@@ -1,5 +1,5 @@
 import React from 'react';
-import { select, withKnobs } from '@storybook/addon-knobs';
+import { select, number, withKnobs } from '@storybook/addon-knobs';
 import { storiesOf } from '@storybook/react';
 import * as svgs from '@bbc/psammead-assets/svgs';
 import { dirDecorator } from '@bbc/psammead-storybook-helpers';
@@ -17,16 +17,29 @@ storiesOf('Brand', module)
         .filter(key => key !== 'BBC_BLOCKS')
         .map(key => key.charAt(0).toUpperCase() + key.slice(1));
 
-      const choice = select('Service SVG', options, 'news').toLowerCase();
-      return <Brand brandName="Default Brand Name" svg={svgs[choice]} />;
+      const svgChoice = select('Service SVG', options, 'News').toLowerCase();
+      const svgRatio = svgs[svgChoice].ratio;
+      const svgMaxHeight = 24;
+      const svgMinHeight = 16;
+      const minWidthInput = number(
+        'minimum svg width',
+        svgRatio * svgMinHeight,
+      );
+      const maxWidthInput = number(
+        'maximum svg width',
+        svgRatio * svgMaxHeight,
+      );
+      const svgHeightInput = number('desired height svg', svgMaxHeight);
+
+      return (
+        <Brand
+          brandName="Default Brand Name"
+          svgHeight={svgHeightInput}
+          minWidth={minWidthInput}
+          maxWidth={maxWidthInput}
+          svg={svgs[svgChoice]}
+        />
+      );
     },
     { notes },
   );
-
-storiesOf('Brand', module).add(
-  'without brand svg',
-  () => <Brand brandName="Default Brand Name" />,
-  {
-    notes,
-  },
-);
