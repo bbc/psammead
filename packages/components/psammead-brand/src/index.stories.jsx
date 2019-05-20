@@ -22,13 +22,17 @@ storiesOf('Brand', module)
     },
     { notes },
   )
-  .add('with brand link', () => (
-    <Brand
-      brandName="Default Brand Name"
-      svg={svgs.news}
-      url="https://bbc.com/news"
-    />
-  ));
+  .add(
+    'with brand link',
+    () => (
+      <Brand
+        brandName="Default Brand Name"
+        svg={svgs.news}
+        url="https://bbc.com/news"
+      />
+    ),
+    { notes },
+  );
 
 storiesOf('Brand', module).add(
   'without brand svg',
