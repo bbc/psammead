@@ -3,7 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
-| 1.1.6   | [PR#TBA](https://github.com/BBC/psammead/pull/TBA) Add viewport addon |
+| 1.1.7   | [PR#536](https://github.com/BBC/psammead/pull/536) Add viewport addon |
 | 1.1.6   | [PR#514](https://github.com/BBC/psammead/pull/514) Upgrade to Node 10 |
 | 1.1.5   | [PR#484](https://github.com/BBC/psammead/pull/484) Add default labels to GitHub issue templates |
 | 1.1.4   | [PR#444](https://github.com/BBC/psammead/pull/444) Include stories in utilities |
