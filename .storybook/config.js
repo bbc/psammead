@@ -76,7 +76,6 @@ export const ampDecorator = story => (
 
 function loadAllStories() {
   require('glob-loader!./stories.pattern');
-  addParameters({ viewport: options });
 }
 
 configure(loadAllStories, module);
