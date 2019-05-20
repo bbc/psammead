@@ -153,9 +153,9 @@ const StoryPromo = ({ image, info, mediaIndicator }) => (
   <StoryPromoWrapper>
     <ImageGridItem>
       {image}
-      {mediaIndicator ? (
+      {mediaIndicator && (
         <InlineMediaIndicator>{mediaIndicator}</InlineMediaIndicator>
-      ) : null}
+      )}
     </ImageGridItem>
     <TextGridItem>{info}</TextGridItem>
   </StoryPromoWrapper>
