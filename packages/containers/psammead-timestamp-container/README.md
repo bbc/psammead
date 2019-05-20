@@ -1,7 +1,7 @@
 # psammead-timestamp-container - [![Known Vulnerabilities](https://snyk.io/test/github/bbc/psammead/badge.svg?targetFile=packages%2Fcontainers%2Fpsammead-timestamp-container%2Fpackage.json)](https://snyk.io/test/github/bbc/psammead?targetFile=packages%2Fcontainers%2Fpsammead-timestamp-container%2Fpackage.json) [![npm version](https://img.shields.io/npm/v/@bbc/psammead-timestamp-container.svg)](https://www.npmjs.com/package/@bbc/psammead-timestamp-container) [![Storybook](https://raw.githubusercontent.com/storybooks/brand/master/badge/badge-storybook.svg?sanitize=true)](https://bbc.github.io/psammead/?path=/story/timestampcontainer--default) [![GitHub license](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](https://github.com/bbc/psammead/blob/latest/LICENSE) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/bbc/psammead/blob/latest/CONTRIBUTING.md)
 
 ## Description
-`psammead-timestamp-container` is a container with generic time functions, that returns a single time element.
+`psammead-timestamp-container` is a React container that offers relative and absolute times, with timezone support - using moment-timezone. Relative times are currently hard-coded to English (e.g. 3 minutes ago). `psammead-timestamp-container` returns a single time element. 
 
 ## When to use this component
 `psammead-timestamp-container` is intended to be used when a single time DOM element that has the possibility of having varying time formats and timezones is required.
@@ -39,6 +39,15 @@ const WrappingContainer = () => (
   />
 );
 ```
+
+## Accessibility notes
+
+The usage of the semantic `time` element within this component can result in strange behaviours when using assistive technology such as VoiceOver for iOS. Specifically, it results in a "text splitting" behaviour, where any text in the prefix is read out, but the value inside the semantic `time` element require an additional swipe before being read out.
+
+However, as we heavily encourage the use of this semantic element, and want to ensure it's usage is in line with [the W3C examples](https://www.w3.org/TR/html51/textlevel-semantics.html#the-time-element), we feel this compromise is necessary.
+
+## Roadmap
+Currently, this package only supports relative time in English. The plan is to make this package suitable for use on World Service sites by including logic to render relative time in multiple languages.
 
 ## Contributing
 
