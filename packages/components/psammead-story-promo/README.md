@@ -1,3 +1,7 @@
+# ⛔️ This is an alpha component ⛔️
+
+This component is currently tagged as alpha and is not suitable for production use. Following the passing of an accessibility review this component will be marked as ready for production and the alpha tag removed.
+
 # psammead-story-promo - [![Known Vulnerabilities](https://snyk.io/test/github/bbc/psammead/badge.svg?targetFile=packages%2Fcomponents%2Fpsammead-story-promo%2Fpackage.json)](https://snyk.io/test/github/bbc/psammead?targetFile=packages%2Fcomponents%2Fpsammead-story-promo%2Fpackage.json) [![Storybook](https://raw.githubusercontent.com/storybooks/story-promo/master/badge/badge-storybook.svg?sanitize=true)](https://bbc.github.io/psammead/?path=/story/story-promo--default) [![GitHub license](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](https://github.com/bbc/psammead/blob/latest/LICENSE) [![npm version](https://img.shields.io/npm/v/@bbc/psammead-story-promo.svg)](https://www.npmjs.com/package/@bbc/psammead-story-promo) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/bbc/psammead/blob/latest/CONTRIBUTING.md)
 
 ## Description
@@ -33,7 +37,7 @@ The typical use-case of this component is as displayed below. A Image sits on th
 
 ```jsx
 import React, { Fragment } from 'react';
-import StoryPromo, { Headline, Summary } from '@bbc/psammead-story-promo';
+import StoryPromo, { Headline, Summary, Link } from '@bbc/psammead-story-promo';
 import { latin } from '@bbc/gel-foundations/scripts';
 
 const Image = (
@@ -42,7 +46,9 @@ const Image = (
 
 const Info = (
   <Fragment>
-    <Headline script={latin}>The headline of the promo</Headline>
+    <Headline script={latin}>      
+      <Link href="https://www.bbc.co.uk/news">The headline of the promo</Link>
+    </Headline>
     <Summary script={latin}>The summary of the promo</Summary>
     <time>12 March 2019</time>
   </Fragment>
@@ -62,7 +68,11 @@ The `StoryPromo` component is designed to be used within a link element to allow
 
 ### Accessibility notes
 
-This component uses full semantic markup for the `Headline` and `Summary`, using `h3` and `p` respectively. Other accessibility factors such as image alt text and time elements are passed in as props and aren't explicitly set in this component.
+This component uses full semantic markup for the `Headline`, `Summary`, and `Link`, using `h3`, `p` and `a` respectively. Other accessibility factors such as image alt text and time elements are passed in as props and aren't explicitly set in this component. 
+
+The link is nested inside the `h3` for better support with VoiceOver Mac and Safari. We use the `faux block link` pattern which makes the entire block clickable, whilst also enabling links nested within in that block to also be clickable.
+
+We haven't yet thoroughly looked at cross device browser AT testing yet, this is in-progress. We will update with a11y notes when carrying out a proper release.
 
 ## Roadmap
 
