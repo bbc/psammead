@@ -1,85 +1,81 @@
-import React, { Fragment } from 'react';
-import styled, { css } from 'styled-components';
+import React from 'react';
+import styled from 'styled-components';
 import { string, number, node, shape } from 'prop-types';
 import { C_POSTBOX, C_WHITE } from '@bbc/psammead-styles/colours';
 import VisuallyHiddenText from '@bbc/psammead-visually-hidden-text';
+import { GEL_GROUP_3_SCREEN_WIDTH_MIN } from '@bbc/gel-foundations/breakpoints';
 import {
-  GEL_GROUP_2_SCREEN_WIDTH_MIN,
-  GEL_GROUP_3_SCREEN_WIDTH_MAX,
-  GEL_GROUP_5_SCREEN_WIDTH_MIN,
-} from '@bbc/gel-foundations/breakpoints';
-import {
-  GEL_MARGIN_BELOW_400PX,
-  GEL_MARGIN_ABOVE_400PX,
+  GEL_SPACING_HLF,
   GEL_SPACING,
   GEL_SPACING_DBL,
-  GEL_SPACING_HLF,
+  GEL_SPACING_TRPL,
 } from '@bbc/gel-foundations/spacings';
 
-const layoutWrapperWithoutGrid = css`
-  @media (max-width: ${GEL_GROUP_2_SCREEN_WIDTH_MIN}) {
-    padding: 0 ${GEL_MARGIN_BELOW_400PX};
-  }
-  @media (min-width: ${GEL_GROUP_2_SCREEN_WIDTH_MIN}) {
-    padding: 0 ${GEL_MARGIN_ABOVE_400PX};
-  }
-`;
+const SVG_TOP_OFFSET_ABOVE_600PX = '1.75rem'; // 28px
+const SVG_BOTTOM_OFFSET_BELOW_600PX = '0.75rem'; // 12px
+const PADDING_AROUND_SVG_ABOVE_600PX = 56;
+const PADDING_AROUND_SVG_BELOW_600PX = 32;
 
-const SVG_TOP_OFFSET = '1.25rem'; // 20px
-const SVG_BOTTOM_OFFSET = '1.5rem'; // 24px
-const BANNER_HEIGHT = '5rem'; // 80px
+const conditionallyRenderHeight = (svgHeight, padding) =>
+  svgHeight ? `height: ${(svgHeight + padding) / 16}rem` : '';
 
-const SVG_HEIGHT_PX = 24;
-const SVG_HEIGHT = `${SVG_HEIGHT_PX / 16}rem`;
-
-const StyledWrapper = styled.div`
-  ${layoutWrapperWithoutGrid};
+const Banner = styled.div`
   background-color: ${C_POSTBOX};
-  height: ${BANNER_HEIGHT};
+  ${({ svgHeight }) =>
+    conditionallyRenderHeight(svgHeight, PADDING_AROUND_SVG_BELOW_600PX)};
   width: 100%;
-  @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MAX}) {
+  padding: 0 ${GEL_SPACING};
+
+  @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
+    ${({ svgHeight }) =>
+      conditionallyRenderHeight(svgHeight, PADDING_AROUND_SVG_ABOVE_600PX)};
     padding: 0 ${GEL_SPACING_DBL};
   }
 `;
 
-const ConstraintWrapper = styled.div`
-  max-width: ${GEL_GROUP_5_SCREEN_WIDTH_MIN};
-  margin: 0 auto;
-  ${({ hasLink }) => !hasLink && `padding-top: ${GEL_SPACING}`}
-`;
-
 const StyledLink = styled.a`
   display: inline-block;
-  padding-top: ${GEL_SPACING};
-`;
-
-const StyledSpan = styled.span`
-  display: block;
-  padding-bottom: ${SVG_BOTTOM_OFFSET};
-  ${/* sc-selector */ StyledLink}:hover &,
-  ${/* sc-selector */ StyledLink}:focus & {
-    text-decoration: none;
-    border-bottom: ${GEL_SPACING_HLF} solid ${C_WHITE};
-  }
+  width: 100%;
+  max-width: ${({ maxWidth }) => maxWidth / 16}rem;
+  min-width: ${({ minWidth }) => minWidth / 16}rem;
 `;
 
 const BrandSvg = styled.svg`
-  display: block;
-  height: ${SVG_HEIGHT};
-  width: ${props => ((SVG_HEIGHT_PX * props.ratio) / 16).toFixed(2)}rem;
-  margin-top: ${SVG_TOP_OFFSET};
-  fill: #fff;
+  box-sizing: content-box;
+  fill: ${C_WHITE};
+  padding-top: ${GEL_SPACING_DBL};
+  padding-bottom: ${SVG_BOTTOM_OFFSET_BELOW_600PX};
+  width: 100%;
+
+  @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
+    padding-top: ${SVG_TOP_OFFSET_ABOVE_600PX};
+    padding-bottom: ${GEL_SPACING_TRPL};
+  }
+
   @media screen and (-ms-high-contrast: active), print {
     fill: windowText;
   }
+
+  /* stylelint-disable */
+  /* https://www.styled-components.com/docs/advanced#referring-to-other-components */
+    ${StyledLink}:hover &,
+    ${StyledLink}:focus & {
+    text-decoration: none;
+    border-bottom: ${GEL_SPACING_HLF} solid ${C_WHITE};
+  }
+  /* stylelint-enable */
 `;
 
-/* eslint-disable react/prop-types */
-const StyledBrand = ({ svg, brandName }) => (
-  <Fragment>
+const Brand = ({ brandName, svgHeight, minWidth, maxWidth, svg }) => (
+  <Banner svgHeight={svgHeight}>
     {svg && (
-      <StyledSpan>
+      <StyledLink
+        href="https://www.bbc.co.uk/news"
+        maxWidth={maxWidth}
+        minWidth={minWidth}
+      >
         <BrandSvg
+          height={svgHeight}
           viewBox={`0 0 ${svg.viewbox.width} ${svg.viewbox.height}`}
           xmlns="http://www.w3.org/2000/svg"
           focusable="false"
@@ -89,36 +85,16 @@ const StyledBrand = ({ svg, brandName }) => (
           {svg.group}
         </BrandSvg>
         <VisuallyHiddenText>{brandName}</VisuallyHiddenText>
-      </StyledSpan>
+      </StyledLink>
     )}
-  </Fragment>
+  </Banner>
 );
-
-/* eslint-disable react/prop-types */
-const BrandWithLink = ({ url, brandName, svg }) => (
-  <StyledLink href={url}>
-    <StyledBrand svg={svg} brandName={brandName} />
-  </StyledLink>
-);
-
-const Brand = ({ brandName, svg, url }) => (
-  <StyledWrapper>
-    <ConstraintWrapper hasLink={url}>
-      {url ? (
-        <BrandWithLink url={url} brandName={brandName} svg={svg} />
-      ) : (
-        <StyledBrand svg={svg} brandName={brandName} />
-      )}
-    </ConstraintWrapper>
-  </StyledWrapper>
-);
-
-Brand.defaultProps = {
-  url: null,
-};
 
 Brand.propTypes = {
   brandName: string.isRequired,
+  minWidth: number.isRequired,
+  maxWidth: number.isRequired,
+  svgHeight: number.isRequired,
   svg: shape({
     group: node.isRequired,
     ratio: number.isRequired,
@@ -127,7 +103,6 @@ Brand.propTypes = {
       width: number.isRequired,
     }).isRequired,
   }).isRequired,
-  url: string,
 };
 
 export default Brand;

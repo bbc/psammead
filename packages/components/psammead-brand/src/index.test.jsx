@@ -20,6 +20,9 @@ describe('Brand', () => {
     'should render correctly with link provided',
     <Brand
       brandName="Default Brand Name"
+      svgHeight={24}
+      maxWidth={280}
+      minWidth={180}
       svg={svg}
       url="https://www.bbc.co.uk/news"
     />,
