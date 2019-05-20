@@ -1,19 +1,29 @@
-const constructTimestamp = timeDiffMins => {
+const pluralise = (timeDiffInMins, timeUnit, singular) => {
   let timeDiff;
   let unit;
 
-  if (timeDiffMins >= 1440) {
-    timeDiff = parseInt(timeDiffMins / 1440, 10);
-    unit = timeDiff > 1 ? 'days' : 'day';
-  } else if (timeDiffMins >= 60) {
-    timeDiff = parseInt(timeDiffMins / 60, 10);
-    unit = timeDiff > 1 ? 'hours' : 'hour';
-  } else {
-    timeDiff = timeDiffMins <= 1 ? 1 : timeDiffMins;
-    unit = timeDiff === 1 ? 'minute' : 'minutes';
+  if (singular !== 'minute') {
+    timeDiff = parseInt(timeDiffInMins / timeUnit, 10);
+    unit = timeDiff > 1 ? `${singular}s` : singular;
+    return `${timeDiff} ${unit} ago`;
   }
-
+  timeDiff = timeDiffInMins <= 1 ? 1 : timeDiffInMins;
+  unit = timeDiff === 1 ? singular : `${singular}s`;
   return `${timeDiff} ${unit} ago`;
+};
+
+const constructTimestamp = timeDiffInMins => {
+  const twentyFourHours = 1440;
+  const oneHour = 60;
+  const oneMin = 1;
+
+  if (timeDiffInMins >= twentyFourHours) {
+    return pluralise(timeDiffInMins, twentyFourHours, 'day');
+  }
+  if (timeDiffInMins >= oneHour) {
+    return pluralise(timeDiffInMins, oneHour, 'hour');
+  }
+  return pluralise(timeDiffInMins, oneMin, 'minute');
 };
 
 const relativeTime = receivedTimestamp => {
