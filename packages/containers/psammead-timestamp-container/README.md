@@ -42,12 +42,12 @@ const WrappingContainer = () => (
 
 ## Accessibility notes
 
-The usage of the semantic `time` element within this component can result in strange behaviours when using assistive technology such as VoiceOver for iOS. Specifically, it results in a "text splitting" behaviour, where any text in the prefix is read out, but the value inside the semantic `time` element require an additional swipe before being read out.
+The usage of the semantic `time` element within psammead-timestamp component can result in strange behaviours when using assistive technology such as VoiceOver for iOS. Specifically, it results in a "text splitting" behaviour, where any text in the prefix is read out, but the value inside the semantic `time` element require an additional swipe before being read out.
 
 However, as we heavily encourage the use of this semantic element, and want to ensure it's usage is in line with [the W3C examples](https://www.w3.org/TR/html51/textlevel-semantics.html#the-time-element), we feel this compromise is necessary.
 
 ## Roadmap
-Currently, this package only supports relative time in English. The plan is to make this package suitable for use on World Service sites by including logic to render relative time in multiple languages.
+Currently, this package only supports relative time in English. The plan is to make this package more suitable for use on World Service sites by including logic to render relative time in multiple languages.
 
 ## Contributing
 
