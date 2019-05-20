@@ -3,7 +3,7 @@ import { storiesOf } from '@storybook/react';
 import Timestamp from '@bbc/psammead-timestamp';
 import Image from '@bbc/psammead-image';
 import { latin } from '@bbc/gel-foundations/scripts';
-import StoryPromo, { Headline, Summary } from '@bbc/psammead-story-promo';
+import StoryPromo, { Headline, Summary, Link } from '@bbc/psammead-story-promo';
 import { StoryPromoLi, StoryPromoUl } from './index';
 import storyPromoData from '../testHelpers/fixtureData';
 import notes from '../README.md';
@@ -16,7 +16,9 @@ const ImageComponent = ({ alt, src }) => (
 // eslint-disable-next-line react/prop-types
 const InfoComponent = ({ headlineText, summaryText, datetime, dateformat }) => (
   <Fragment>
-    <Headline script={latin}>{headlineText}</Headline>
+    <Headline script={latin}>
+      <Link href="https://www.bbc.co.uk/news">{headlineText}</Link>
+    </Headline>
     <Summary script={latin}>{summaryText}</Summary>
     <Timestamp datetime={datetime} script={latin} padding={false}>
       {dateformat}
