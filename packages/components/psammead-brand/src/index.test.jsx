@@ -18,7 +18,13 @@ const svg = {
 describe('Brand', () => {
   shouldMatchSnapshot(
     'should render correctly',
-    <Brand brandName="Default Brand Name" svg={svg} />,
+    <Brand
+      brandName="Default Brand Name"
+      svgHeight={24}
+      maxWidth={280}
+      minWidth={180}
+      svg={svg}
+    />,
   );
   shouldMatchSnapshot(
     'should render correctly with svg not provided',
