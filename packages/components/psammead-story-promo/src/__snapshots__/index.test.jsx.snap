@@ -12,19 +12,14 @@ exports[`StoryPromo should render correctly 1`] = `
   position: relative;
 }
 
-.c3 {
+.c2 {
   display: inline-block;
   vertical-align: top;
   padding: 0 0.5rem;
   max-width: 66.67%;
 }
 
-.c2 {
-  position: absolute;
-  bottom: 0;
-}
-
-.c4 {
+.c3 {
   font-size: 1.125rem;
   line-height: 1.375rem;
   color: #3F3F42;
@@ -34,7 +29,7 @@ exports[`StoryPromo should render correctly 1`] = `
   font-weight: 700;
 }
 
-.c6 {
+.c5 {
   font-size: 0.9375rem;
   line-height: 1.125rem;
   color: #3F3F42;
@@ -43,14 +38,14 @@ exports[`StoryPromo should render correctly 1`] = `
   padding-bottom: 0.5rem;
 }
 
-.c5 {
+.c4 {
   position: static;
   color: #3F3F42;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.c5:before {
+.c4:before {
   bottom: 0;
   content: '';
   left: 0;
@@ -62,13 +57,13 @@ exports[`StoryPromo should render correctly 1`] = `
   z-index: 1;
 }
 
-.c5:hover,
-.c5:focus {
+.c4:hover,
+.c4:focus {
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
-.c5:visited {
+.c4:visited {
   color: #6E6E73;
 }
 
@@ -95,19 +90,19 @@ exports[`StoryPromo should render correctly 1`] = `
 }
 
 @media (min-width:37.5rem) {
-  .c3 {
+  .c2 {
     padding: 0 1rem;
   }
 }
 
 @media (min-width:80rem) {
-  .c3 {
+  .c2 {
     max-width: 66.67%;
   }
 }
 
 @supports (display:grid) {
-  .c3 {
+  .c2 {
     display: block;
     max-width: initial;
     padding: initial;
@@ -116,35 +111,35 @@ exports[`StoryPromo should render correctly 1`] = `
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
-  .c4 {
+  .c3 {
     font-size: 1.125rem;
     line-height: 1.375rem;
   }
 }
 
 @media (min-width:37.5rem) {
-  .c4 {
+  .c3 {
     font-size: 1.25rem;
     line-height: 1.5rem;
   }
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
-  .c6 {
+  .c5 {
     font-size: 0.9375rem;
     line-height: 1.125rem;
   }
 }
 
 @media (min-width:37.5rem) {
-  .c6 {
+  .c5 {
     font-size: 0.875rem;
     line-height: 1.125rem;
   }
 }
 
 @media (max-width:37.4375rem) {
-  .c6 {
+  .c5 {
     display: none;
   }
 }
@@ -159,25 +154,22 @@ exports[`StoryPromo should render correctly 1`] = `
       alt="Alt text"
       src="https://foobar.com/image.png"
     />
-    <div
-      className="c2"
-    />
   </div>
   <div
-    className="c3"
+    className="c2"
   >
     <h3
-      className="c4"
+      className="c3"
     >
       <a
-        className="c5"
+        className="c4"
         href="https://www.bbc.co.uk/news"
       >
         The headline of the promo
       </a>
     </h3>
     <p
-      className="c6"
+      className="c5"
     >
       The summary of the promo
     </p>
