@@ -17,7 +17,7 @@ const svg = {
 
 describe('Brand', () => {
   shouldMatchSnapshot(
-    'should render correctly',
+    'should render correctly with link provided',
     <Brand
       brandName="Default Brand Name"
       svg={svg}
