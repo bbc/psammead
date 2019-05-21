@@ -19,7 +19,6 @@ const ColourRow = styled.div`
 const ColourBox = styled.div`
   background: ${props => props.colour};
   color: #000;
-  mix-blend-mode: difference;
   padding: 10px 5px;
   border-radius: 5px;
   display: inline-block;
