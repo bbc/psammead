@@ -14,6 +14,7 @@ exports[`Brand should render correctly with link not provided 1`] = `
 
 .c0 {
   background-color: #B80000;
+  height: 3.5rem;
   width: 100%;
   padding: 0 0.5rem;
 }
@@ -24,8 +25,8 @@ exports[`Brand should render correctly with link not provided 1`] = `
   padding-top: 1rem;
   padding-bottom: 0.75rem;
   width: 100%;
-  max-width: NaNrem;
-  min-width: NaNrem;
+  max-width: 17.5rem;
+  min-width: 11.25rem;
 }
 
 .c3:hover .c1,
@@ -37,6 +38,7 @@ exports[`Brand should render correctly with link not provided 1`] = `
 
 @media (min-width:37.5rem) {
   .c0 {
+    height: 5rem;
     padding: 0 1rem;
   }
 }
@@ -61,6 +63,7 @@ exports[`Brand should render correctly with link not provided 1`] = `
     aria-hidden="true"
     className="c1"
     focusable="false"
+    height={24}
     viewBox="0 0 167.95 24"
     xmlns="http://www.w3.org/2000/svg"
   >
@@ -113,7 +116,7 @@ exports[`Brand should render correctly with link provided 1`] = `
   padding-bottom: 0.75rem;
   width: 100%;
   max-width: 17.5rem;
-  min-width: NaNrem;
+  min-width: 11.25rem;
 }
 
 .c1:hover .c3,
@@ -173,22 +176,4 @@ exports[`Brand should render correctly with link provided 1`] = `
     </span>
   </a>
 </div>
-`;
-
-exports[`Brand should render correctly with svg not provided 1`] = `
-.c0 {
-  background-color: #B80000;
-  width: 100%;
-  padding: 0 0.5rem;
-}
-
-@media (min-width:37.5rem) {
-  .c0 {
-    padding: 0 1rem;
-  }
-}
-
-<div
-  className="c0"
-/>
 `;

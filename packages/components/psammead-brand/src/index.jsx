@@ -71,7 +71,7 @@ const BrandSvg = styled.svg`
   /* stylelint-enable */
 `;
 
-const StyledBrand = ({ brandName, svgHeight, svg, maxWidth }) => (
+const StyledBrand = ({ brandName, svgHeight, svg, maxWidth, minWidth }) => (
   <Fragment>
     {svg && (
       <Fragment>
@@ -83,6 +83,7 @@ const StyledBrand = ({ brandName, svgHeight, svg, maxWidth }) => (
           aria-hidden="true"
           ratio={svg.ratio}
           maxWidth={maxWidth}
+          minWidth={minWidth}
         >
           {svg.group}
         </BrandSvg>
@@ -95,6 +96,7 @@ const StyledBrand = ({ brandName, svgHeight, svg, maxWidth }) => (
 const brandProps = {
   brandName: string.isRequired,
   maxWidth: number.isRequired,
+  minWidth: number.isRequired,
   svgHeight: number.isRequired,
   svg: shape({
     group: node.isRequired,
@@ -116,6 +118,7 @@ const Brand = ({ brandName, svgHeight, minWidth, maxWidth, svg, url }) => (
           brandName={brandName}
           svg={svg}
           maxWidth={maxWidth}
+          minWidth={minWidth}
           svgHeight={svgHeight}
         />
       </StyledLink>
@@ -124,6 +127,7 @@ const Brand = ({ brandName, svgHeight, minWidth, maxWidth, svg, url }) => (
         brandName={brandName}
         svg={svg}
         svgHeight={svgHeight}
+        minWidth={minWidth}
         maxWidth={maxWidth}
       />
     )}
