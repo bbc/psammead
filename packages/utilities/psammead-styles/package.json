@@ -15,9 +15,6 @@
     "url": "https://github.com/bbc/psammead/issues"
   },
   "homepage": "https://github.com/bbc/psammead/blob/latest/packages/utilities/psammead-styles/README.md",
-  "dependencies": {
-    "@bbc/gel-foundations": "^1.2.0"
-  },
   "keywords": [
     "bbc",
     "utilities",
@@ -27,6 +24,7 @@
     "fonts"
   ],
   "devDependencies": {
-    "@bbc/psammead-test-helpers": "^0.3.0"
+    "@bbc/psammead-test-helpers": "^0.3.0",
+    "@bbc/gel-foundations": "^1.2.0"
   }
 }
