@@ -71,7 +71,6 @@ const BrandSvg = styled.svg`
   /* stylelint-enable */
 `;
 
-/* eslint-disable react/prop-types */
 const StyledBrand = ({ brandName, svgHeight, svg, maxWidth }) => (
   <Fragment>
     {svg && (
@@ -117,8 +116,6 @@ const Brand = ({ brandName, svgHeight, minWidth, maxWidth, svg, url }) => (
           brandName={brandName}
           svg={svg}
           maxWidth={maxWidth}
-          minWidth={minWidth}
-          url={url}
           svgHeight={svgHeight}
         />
       </StyledLink>
