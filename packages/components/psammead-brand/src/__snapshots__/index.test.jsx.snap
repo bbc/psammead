@@ -112,7 +112,7 @@ exports[`Brand should render correctly with link provided 1`] = `
   padding-top: 1rem;
   padding-bottom: 0.75rem;
   width: 100%;
-  max-width: NaNrem;
+  max-width: 17.5rem;
   min-width: NaNrem;
 }
 

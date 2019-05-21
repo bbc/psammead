@@ -93,31 +93,19 @@ const StyledBrand = ({ brandName, svgHeight, svg, maxWidth }) => (
   </Fragment>
 );
 
-/* eslint-disable react/prop-types */
-const BrandWithLink = ({
-  brandName,
-  svgHeight,
-  minWidth,
-  maxWidth,
-  svg,
-  url,
-}) => (
-  <StyledLink href={url} maxWidth={maxWidth} minWidth={minWidth}>
-    <StyledBrand brandName={brandName} svg={svg} svgHeight={svgHeight} />
-  </StyledLink>
-);
-
 const Brand = ({ brandName, svgHeight, minWidth, maxWidth, svg, url }) => (
   <Banner svgHeight={svgHeight}>
     {url ? (
-      <BrandWithLink
-        brandName={brandName}
-        svg={svg}
-        maxWidth={maxWidth}
-        minWidth={minWidth}
-        url={url}
-        svgHeight={svgHeight}
-      />
+      <StyledLink href={url} maxWidth={maxWidth} minWidth={minWidth}>
+        <StyledBrand
+          brandName={brandName}
+          svg={svg}
+          maxWidth={maxWidth}
+          minWidth={minWidth}
+          url={url}
+          svgHeight={svgHeight}
+        />
+      </StyledLink>
     ) : (
       <StyledBrand
         brandName={brandName}
