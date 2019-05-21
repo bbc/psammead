@@ -1,0 +1,33 @@
+{
+  "name": "@bbc/psammead-timestamp-container",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "description": "React Timestamp container for relative and absolute times, using moment-timezone",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bbc/psammead/tree/latest/packages/containers/psammead-timestamp-container"
+  },
+  "author": {
+    "name": "BBC Psammead Maintainers",
+    "email": "PsammeadMaintainers@bbc.co.uk"
+  },
+  "license": "Apache-2.0",
+  "keywords": [
+    "bbc",
+    "timestamp",
+    "datetime",
+    "relative",
+    "time",
+    "absolute",
+    "time",
+    "moment-timezone"
+  ],
+  "dependencies": {
+    "@bbc/gel-foundations": "^2.0.0",
+    "@bbc/psammead-timestamp": "^0.3.2",
+    "moment-timezone": "^0.5.25"
+  },
+  "devDependencies": {
+    "@bbc/psammead-test-helpers": "^0.3.4"
+  }
+}
