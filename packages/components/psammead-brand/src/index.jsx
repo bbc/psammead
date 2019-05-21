@@ -93,6 +93,22 @@ const StyledBrand = ({ brandName, svgHeight, svg, maxWidth }) => (
   </Fragment>
 );
 
+const brandProps = {
+  brandName: string.isRequired,
+  maxWidth: number.isRequired,
+  svgHeight: number.isRequired,
+  svg: shape({
+    group: node.isRequired,
+    ratio: number.isRequired,
+    viewbox: shape({
+      height: number.isRequired,
+      width: number.isRequired,
+    }).isRequired,
+  }).isRequired,
+};
+
+StyledBrand.propTypes = brandProps;
+
 const Brand = ({ brandName, svgHeight, minWidth, maxWidth, svg, url }) => (
   <Banner svgHeight={svgHeight}>
     {url ? (
@@ -122,18 +138,7 @@ Brand.defaultProps = {
 };
 
 Brand.propTypes = {
-  brandName: string.isRequired,
-  minWidth: number.isRequired,
-  maxWidth: number.isRequired,
-  svgHeight: number.isRequired,
-  svg: shape({
-    group: node.isRequired,
-    ratio: number.isRequired,
-    viewbox: shape({
-      height: number.isRequired,
-      width: number.isRequired,
-    }).isRequired,
-  }).isRequired,
+  ...brandProps,
   url: string,
 };
 
