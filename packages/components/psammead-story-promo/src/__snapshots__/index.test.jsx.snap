@@ -62,10 +62,6 @@ exports[`StoryPromo should render correctly 1`] = `
   text-decoration: underline;
 }
 
-.c4:visited {
-  color: #6E6E73;
-}
-
 @supports (display:grid) {
   .c0 {
     display: grid;
