@@ -3,7 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 | ------- | ----------- |
-| 0.2.0-alpha.4 | [PR#XXX](https://github.com/bbc/psammead/pull/XXX) Replace colours and add visibility property |
+| 0.2.0-alpha.4 | [PR#546](https://github.com/bbc/psammead/pull/546) Replace colours and add visibility property |
 | 0.2.0-alpha.3 | [PR#534](https://github.com/BBC-News/psammead/pull/534) Remove Timestamp padding. |
 | 0.2.0-alpha.2 | [PR#535](https://github.com/bbc/psammead/pull/535) Fix issues with knobs on storybook |
 | 0.2.0-alpha.1 | [PR#513](https://github.com/bbc/psammead/pull/513) Add Link with hover, focus and visited states |
