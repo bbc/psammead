@@ -3,7 +3,6 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
-| 0.3.3   | [PR#546](https://github.com/bbc/psammead/pull/546) Change timestamp colour |
 | 0.3.2   | [PR#515](https://github.com/bbc/psammead/pull/515) Update story to use dirDecorator |
 | 0.3.1   | [PR#493](https://github.com/bbc/psammead/pull/493) Add optional padding prop |
 | 0.3.0   | [PR#494](https://github.com/bbc/psammead/pull/494) Make script a required prop. |

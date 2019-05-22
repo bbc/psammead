@@ -7,7 +7,7 @@ import {
 } from '@bbc/gel-foundations/spacings';
 import { GEL_FF_REITH_SANS, getBrevier } from '@bbc/gel-foundations/typography';
 import { scriptPropType } from '@bbc/gel-foundations/prop-types';
-import { C_METAL } from '@bbc/psammead-styles/colours';
+import { C_CLOUD_DARK } from '@bbc/psammead-styles/colours';
 
 const PADDING = ` 
   padding-bottom: ${GEL_SPACING_HLF};
@@ -18,7 +18,7 @@ const PADDING = `
 
 const StyledTimestamp = styled.time`
   ${props => (props.typographyFunc ? props.typographyFunc(props.script) : '')}
-  color: ${C_METAL};
+  color: ${C_CLOUD_DARK};
   display: block;
   font-family: ${GEL_FF_REITH_SANS};
   ${props => props.padding && PADDING}
