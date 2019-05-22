@@ -47,9 +47,6 @@ const propTypesExpectedExports = {
 };
 
 const typographyExpectedExports = {
-  GEL_FF_REITH_SERIF: 'string',
-  GEL_FF_REITH_SANS: 'string',
-  GEL_FF_REITH_SANS_COND: 'string',
   GEL_ATLAS: 'string',
   GEL_ELEPHANT: 'string',
   GEL_IMPERIAL: 'string',

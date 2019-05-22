@@ -1,0 +1,101 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`fonts getSansBold should return bold sans font css 1`] = `
+"@font-face {
+    font-family: NassimArabic, Arial, Verdana,	Geneva,	Helvetica, sans serif;
+    font-weight: 700;
+    font-style: normal;
+    src: url('https://ws-downloads.files.bbci.co.uk/fonts/NassimArabic/latest/bold.woff') format('woff'), url('https://ws-downloads.files.bbci.co.uk/fonts/NassimArabic/latest/bold.eot') format('eot'), url('https://ws-downloads.files.bbci.co.uk/fonts/NassimArabic/latest/bold.ttf') format('ttf');
+    font-display: optional;
+  }"
+`;
+
+exports[`fonts getSansBoldItalic should return bold font css for services without bold-italic 1`] = `
+"@font-face {
+    font-family: NassimArabic, Arial, Verdana,	Geneva,	Helvetica, sans serif;
+    font-weight: 700;
+    font-style: normal;
+    src: url('https://ws-downloads.files.bbci.co.uk/fonts/NassimArabic/latest/bold.woff') format('woff'), url('https://ws-downloads.files.bbci.co.uk/fonts/NassimArabic/latest/bold.eot') format('eot'), url('https://ws-downloads.files.bbci.co.uk/fonts/NassimArabic/latest/bold.ttf') format('ttf');
+    font-display: optional;
+  }"
+`;
+
+exports[`fonts getSansBoldItalic should return bold italic font css 1`] = `
+"@font-face {
+    font-family: \\"ReithSans\\";
+    font-weight: 700;
+    font-style: italic;
+    src: url('https://ws-downloads.files.bbci.co.uk/fonts/ReithSans/latest/bold-italic.woff2') format('woff2'), url('https://ws-downloads.files.bbci.co.uk/fonts/ReithSans/latest/bold-italic.woff') format('woff');
+    font-display: optional;
+  }"
+`;
+
+exports[`fonts getSansItalic should return regular font css for services without italic 1`] = `
+"@font-face {
+    font-family: NassimPersian, Arial, Verdana,	Geneva,	Helvetica, sans serif;
+    font-weight: 400;
+    font-style: normal;
+    src: url('https://ws-downloads.files.bbci.co.uk/fonts/NassimPersian/latest/normal.woff') format('woff'), url('https://ws-downloads.files.bbci.co.uk/fonts/NassimPersian/latest/normal.eot') format('eot'), url('https://ws-downloads.files.bbci.co.uk/fonts/NassimPersian/latest/normal.ttf') format('ttf');
+    font-display: optional;
+  }"
+`;
+
+exports[`fonts getSansItalic should return sans italic font css 1`] = `
+"@font-face {
+    font-family: \\"ReithSans\\";
+    font-weight: 400;
+    font-style: italic;
+    src: url('https://ws-downloads.files.bbci.co.uk/fonts/ReithSans/latest/normal-italic.woff2') format('woff2'), url('https://ws-downloads.files.bbci.co.uk/fonts/ReithSans/latest/normal-italic.woff') format('woff');
+    font-display: optional;
+  }"
+`;
+
+exports[`fonts getSansRegular should return sans font css 1`] = `
+"@font-face {
+    font-family: \\"ReithSans\\";
+    font-weight: 400;
+    font-style: normal;
+    src: url('https://ws-downloads.files.bbci.co.uk/fonts/ReithSans/latest/normal.woff2') format('woff2'), url('https://ws-downloads.files.bbci.co.uk/fonts/ReithSans/latest/normal.woff') format('woff');
+    font-display: optional;
+  }"
+`;
+
+exports[`fonts getSerifMedium should return sans bold font css for sevices without serif medium 1`] = `
+"@font-face {
+    font-family: NassimArabic, Arial, Verdana,	Geneva,	Helvetica, sans serif;
+    font-weight: 700;
+    font-style: normal;
+    src: url('https://ws-downloads.files.bbci.co.uk/fonts/NassimArabic/latest/bold.woff') format('woff'), url('https://ws-downloads.files.bbci.co.uk/fonts/NassimArabic/latest/bold.eot') format('eot'), url('https://ws-downloads.files.bbci.co.uk/fonts/NassimArabic/latest/bold.ttf') format('ttf');
+    font-display: optional;
+  }"
+`;
+
+exports[`fonts getSerifMedium should return serif medium font css 1`] = `
+"@font-face {
+    font-family: \\"ReithSerif\\";
+    font-weight: 500;
+    font-style: normal;
+    src: url('https://ws-downloads.files.bbci.co.uk/fonts/ReithSerif/latest/medium.woff2') format('woff2'), url('https://ws-downloads.files.bbci.co.uk/fonts/ReithSerif/latest/medium.woff') format('woff');
+    font-display: optional;
+  }"
+`;
+
+exports[`fonts getSerifMediumItalic should return sans bold font css for sevices without serif medium italic 1`] = `
+"@font-face {
+    font-family: NassimArabic, Arial, Verdana,	Geneva,	Helvetica, sans serif;
+    font-weight: 700;
+    font-style: normal;
+    src: url('https://ws-downloads.files.bbci.co.uk/fonts/NassimArabic/latest/bold.woff') format('woff'), url('https://ws-downloads.files.bbci.co.uk/fonts/NassimArabic/latest/bold.eot') format('eot'), url('https://ws-downloads.files.bbci.co.uk/fonts/NassimArabic/latest/bold.ttf') format('ttf');
+    font-display: optional;
+  }"
+`;
+
+exports[`fonts getSerifMediumItalic should return serif medium italic font css 1`] = `
+"@font-face {
+    font-family: \\"ReithSerif\\";
+    font-weight: 500;
+    font-style: italic;
+    src: url('https://ws-downloads.files.bbci.co.uk/fonts/ReithSerif/latest/medium-italic.woff2') format('woff2'), url('https://ws-downloads.files.bbci.co.uk/fonts/ReithSerif/latest/medium-italic.woff') format('woff');
+    font-display: optional;
+  }"
+`;

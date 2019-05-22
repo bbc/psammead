@@ -5,28 +5,12 @@ import * as fonts from './fonts';
 import * as fontsFromSrc from './src/fonts';
 
 const fontsExpectedExports = {
-  F_REITH_SERIF_REGULAR: 'string',
-  F_REITH_SERIF_ITALIC: 'string',
-  F_REITH_SERIF_BOLD: 'string',
-  F_REITH_SERIF_BOLD_ITALIC: 'string',
-  F_REITH_SERIF_LIGHT: 'string',
-  F_REITH_SERIF_LIGHT_ITALIC: 'string',
-  F_REITH_SERIF_MEDIUM: 'string',
-  F_REITH_SERIF_MEDIUM_ITALIC: 'string',
-  F_REITH_SERIF_EXTRA_BOLD: 'string',
-  F_REITH_SERIF_EXTRA_BOLD_ITALIC: 'string',
-  F_REITH_SANS_REGULAR: 'string',
-  F_REITH_SANS_ITALIC: 'string',
-  F_REITH_SANS_BOLD: 'string',
-  F_REITH_SANS_BOLD_ITALIC: 'string',
-  F_REITH_SANS_LIGHT: 'string',
-  F_REITH_SANS_LIGHT_ITALIC: 'string',
-  F_REITH_SANS_MEDIUM: 'string',
-  F_REITH_SANS_MEDIUM_ITALIC: 'string',
-  F_REITH_SANS_EXTRA_BOLD: 'string',
-  F_REITH_SANS_EXTRA_BOLD_ITALIC: 'string',
-  F_REITH_SANS_CONDENSED_REGULAR: 'string',
-  F_REITH_SANS_CONDENSED_BOLD: 'string',
+  getSerifMedium: 'function',
+  getSerifMediumItalic: 'function',
+  getSansRegular: 'function',
+  getSansItalic: 'function',
+  getSansBold: 'function',
+  getSansBoldItalic: 'function',
 };
 
 const coloursExpectedExports = {
