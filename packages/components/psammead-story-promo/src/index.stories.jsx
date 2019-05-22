@@ -17,6 +17,7 @@ const InfoComponent = ({ headlineText, summaryText, script }) => (
     <Timestamp
       datetime={text('Timestamp datetime', '2019-03-01T14:00+00:00')}
       script={script}
+      padding={false}
     >
       {text('Timestamp', '12 March 2019')}
     </Timestamp>
