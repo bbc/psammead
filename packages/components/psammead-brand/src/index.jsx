@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import styled from 'styled-components';
 import { string, number, node, shape } from 'prop-types';
 import { C_POSTBOX, C_WHITE } from '@bbc/psammead-styles/colours';
@@ -33,11 +33,15 @@ const Banner = styled.div`
   }
 `;
 
+const brandWidth = (minWidth, maxWidth) => `
+  width: 100%;
+  max-width: ${maxWidth / 16}rem;
+  min-width: ${minWidth / 16}rem;
+`;
+
 const StyledLink = styled.a`
   display: inline-block;
-  width: 100%;
-  max-width: ${({ maxWidth }) => maxWidth / 16}rem;
-  min-width: ${({ minWidth }) => minWidth / 16}rem;
+  ${({ maxWidth, minWidth }) => brandWidth(minWidth, maxWidth)}
 `;
 
 const BrandSvg = styled.svg`
@@ -45,7 +49,8 @@ const BrandSvg = styled.svg`
   fill: ${C_WHITE};
   padding-top: ${GEL_SPACING_DBL};
   padding-bottom: ${SVG_BOTTOM_OFFSET_BELOW_600PX};
-  width: 100%;
+
+  ${({ maxWidth, minWidth }) => brandWidth(minWidth, maxWidth)}
 
   @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
     padding-top: ${SVG_TOP_OFFSET_ABOVE_600PX};
@@ -66,14 +71,10 @@ const BrandSvg = styled.svg`
   /* stylelint-enable */
 `;
 
-const Brand = ({ brandName, svgHeight, minWidth, maxWidth, svg }) => (
-  <Banner svgHeight={svgHeight}>
+const StyledBrand = ({ brandName, svgHeight, svg, maxWidth, minWidth }) => (
+  <Fragment>
     {svg && (
-      <StyledLink
-        href="https://www.bbc.co.uk/news"
-        maxWidth={maxWidth}
-        minWidth={minWidth}
-      >
+      <Fragment>
         <BrandSvg
           height={svgHeight}
           viewBox={`0 0 ${svg.viewbox.width} ${svg.viewbox.height}`}
@@ -81,19 +82,21 @@ const Brand = ({ brandName, svgHeight, minWidth, maxWidth, svg }) => (
           focusable="false"
           aria-hidden="true"
           ratio={svg.ratio}
+          maxWidth={maxWidth}
+          minWidth={minWidth}
         >
           {svg.group}
         </BrandSvg>
         <VisuallyHiddenText>{brandName}</VisuallyHiddenText>
-      </StyledLink>
+      </Fragment>
     )}
-  </Banner>
+  </Fragment>
 );
 
-Brand.propTypes = {
+const brandProps = {
   brandName: string.isRequired,
-  minWidth: number.isRequired,
   maxWidth: number.isRequired,
+  minWidth: number.isRequired,
   svgHeight: number.isRequired,
   svg: shape({
     group: node.isRequired,
@@ -103,6 +106,41 @@ Brand.propTypes = {
       width: number.isRequired,
     }).isRequired,
   }).isRequired,
+};
+
+StyledBrand.propTypes = brandProps;
+
+const Brand = ({ brandName, svgHeight, minWidth, maxWidth, svg, url }) => (
+  <Banner svgHeight={svgHeight}>
+    {url ? (
+      <StyledLink href={url} maxWidth={maxWidth} minWidth={minWidth}>
+        <StyledBrand
+          brandName={brandName}
+          svg={svg}
+          maxWidth={maxWidth}
+          minWidth={minWidth}
+          svgHeight={svgHeight}
+        />
+      </StyledLink>
+    ) : (
+      <StyledBrand
+        brandName={brandName}
+        svg={svg}
+        svgHeight={svgHeight}
+        minWidth={minWidth}
+        maxWidth={maxWidth}
+      />
+    )}
+  </Banner>
+);
+
+Brand.defaultProps = {
+  url: null,
+};
+
+Brand.propTypes = {
+  ...brandProps,
+  url: string,
 };
 
 export default Brand;
