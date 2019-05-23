@@ -1,6 +1,6 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import { withKnobs, text } from '@storybook/addon-knobs';
+import { withKnobs } from '@storybook/addon-knobs';
 import {
   getCanon,
   getTrafalgar,
@@ -13,62 +13,88 @@ import {
   getBrevier,
   getMinion,
 } from '@bbc/gel-foundations/typography';
-import { latin } from '@bbc/gel-foundations/scripts';
+import { inputProvider } from '@bbc/psammead-storybook-helpers';
 import TypographyText from '.';
-
-const script = latin;
-const sampleText =
-  'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.';
 
 storiesOf('Typography', module)
   .addDecorator(withKnobs)
-  .add('Canon', () => (
-    <TypographyText script={script} typographyFunc={getCanon}>
-      {text('Enter text', sampleText)}
-    </TypographyText>
-  ))
-  .add('Trafalgar', () => (
-    <TypographyText script={script} typographyFunc={getTrafalgar}>
-      {text('Enter text', sampleText)}
-    </TypographyText>
-  ))
-  .add('Paragon', () => (
-    <TypographyText script={script} typographyFunc={getParagon}>
-      {text('Enter text', sampleText)}
-    </TypographyText>
-  ))
-  .add('DoublePica', () => (
-    <TypographyText script={script} typographyFunc={getDoublePica}>
-      {text('Enter text', sampleText)}
-    </TypographyText>
-  ))
-  .add('GreatPrimer', () => (
-    <TypographyText script={script} typographyFunc={getGreatPrimer}>
-      {text('Enter text', sampleText)}
-    </TypographyText>
-  ))
-  .add('BodyCopy', () => (
-    <TypographyText script={script} typographyFunc={getBodyCopy}>
-      {text('Enter text', sampleText)}
-    </TypographyText>
-  ))
-  .add('Pica', () => (
-    <TypographyText script={script} typographyFunc={getPica}>
-      {text('Enter text', sampleText)}
-    </TypographyText>
-  ))
-  .add('LongPrimer', () => (
-    <TypographyText script={script} typographyFunc={getLongPrimer}>
-      {text('Enter text', sampleText)}
-    </TypographyText>
-  ))
-  .add('Brevier', () => (
-    <TypographyText script={script} typographyFunc={getBrevier}>
-      {text('Enter text', sampleText)}
-    </TypographyText>
-  ))
-  .add('Minion', () => (
-    <TypographyText script={script} typographyFunc={getMinion}>
-      {text('Enter text', sampleText)}
-    </TypographyText>
-  ));
+  .add(
+    'Canon',
+    inputProvider([{ name: 'sample text' }], ([text], script) => (
+      <TypographyText script={script} typographyFunc={getCanon}>
+        {text}
+      </TypographyText>
+    )),
+  )
+  .add(
+    'Trafalgar',
+    inputProvider([{ name: 'sample text' }], ([text], script) => (
+      <TypographyText script={script} typographyFunc={getTrafalgar}>
+        {text}
+      </TypographyText>
+    )),
+  )
+  .add(
+    'Paragon',
+    inputProvider([{ name: 'sample text' }], ([text], script) => (
+      <TypographyText script={script} typographyFunc={getParagon}>
+        {text}
+      </TypographyText>
+    )),
+  )
+  .add(
+    'DoublePica',
+    inputProvider([{ name: 'sample text' }], ([text], script) => (
+      <TypographyText script={script} typographyFunc={getDoublePica}>
+        {text}
+      </TypographyText>
+    )),
+  )
+  .add(
+    'GreatPrimer',
+    inputProvider([{ name: 'sample text' }], ([text], script) => (
+      <TypographyText script={script} typographyFunc={getGreatPrimer}>
+        {text}
+      </TypographyText>
+    )),
+  )
+  .add(
+    'BodyCopy',
+    inputProvider([{ name: 'sample text' }], ([text], script) => (
+      <TypographyText script={script} typographyFunc={getBodyCopy}>
+        {text}
+      </TypographyText>
+    )),
+  )
+  .add(
+    'Pica',
+    inputProvider([{ name: 'sample text' }], ([text], script) => (
+      <TypographyText script={script} typographyFunc={getPica}>
+        {text}
+      </TypographyText>
+    )),
+  )
+  .add(
+    'LongPrimer',
+    inputProvider([{ name: 'sample text' }], ([text], script) => (
+      <TypographyText script={script} typographyFunc={getLongPrimer}>
+        {text}
+      </TypographyText>
+    )),
+  )
+  .add(
+    'Brevier',
+    inputProvider([{ name: 'sample text' }], ([text], script) => (
+      <TypographyText script={script} typographyFunc={getBrevier}>
+        {text}
+      </TypographyText>
+    )),
+  )
+  .add(
+    'Minion',
+    inputProvider([{ name: 'sample text' }], ([text], script) => (
+      <TypographyText script={script} typographyFunc={getMinion}>
+        {text}
+      </TypographyText>
+    )),
+  );
