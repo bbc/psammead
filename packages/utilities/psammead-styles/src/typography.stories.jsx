@@ -16,85 +16,22 @@ import {
 import { inputProvider } from '@bbc/psammead-storybook-helpers';
 import TypographyText from './typography';
 
+const typographyStory = typographyFunc =>
+  inputProvider([{ name: 'sample text' }], ([text], script) => (
+    <TypographyText script={script} typographyFunc={typographyFunc}>
+      {text}
+    </TypographyText>
+  ));
+
 storiesOf('Typography', module)
   .addDecorator(withKnobs)
-  .add(
-    'Canon',
-    inputProvider([{ name: 'sample text' }], ([text], script) => (
-      <TypographyText script={script} typographyFunc={getCanon}>
-        {text}
-      </TypographyText>
-    )),
-  )
-  .add(
-    'Trafalgar',
-    inputProvider([{ name: 'sample text' }], ([text], script) => (
-      <TypographyText script={script} typographyFunc={getTrafalgar}>
-        {text}
-      </TypographyText>
-    )),
-  )
-  .add(
-    'Paragon',
-    inputProvider([{ name: 'sample text' }], ([text], script) => (
-      <TypographyText script={script} typographyFunc={getParagon}>
-        {text}
-      </TypographyText>
-    )),
-  )
-  .add(
-    'DoublePica',
-    inputProvider([{ name: 'sample text' }], ([text], script) => (
-      <TypographyText script={script} typographyFunc={getDoublePica}>
-        {text}
-      </TypographyText>
-    )),
-  )
-  .add(
-    'GreatPrimer',
-    inputProvider([{ name: 'sample text' }], ([text], script) => (
-      <TypographyText script={script} typographyFunc={getGreatPrimer}>
-        {text}
-      </TypographyText>
-    )),
-  )
-  .add(
-    'BodyCopy',
-    inputProvider([{ name: 'sample text' }], ([text], script) => (
-      <TypographyText script={script} typographyFunc={getBodyCopy}>
-        {text}
-      </TypographyText>
-    )),
-  )
-  .add(
-    'Pica',
-    inputProvider([{ name: 'sample text' }], ([text], script) => (
-      <TypographyText script={script} typographyFunc={getPica}>
-        {text}
-      </TypographyText>
-    )),
-  )
-  .add(
-    'LongPrimer',
-    inputProvider([{ name: 'sample text' }], ([text], script) => (
-      <TypographyText script={script} typographyFunc={getLongPrimer}>
-        {text}
-      </TypographyText>
-    )),
-  )
-  .add(
-    'Brevier',
-    inputProvider([{ name: 'sample text' }], ([text], script) => (
-      <TypographyText script={script} typographyFunc={getBrevier}>
-        {text}
-      </TypographyText>
-    )),
-  )
-  .add(
-    'Minion',
-    inputProvider([{ name: 'sample text' }], ([text], script) => (
-      <TypographyText script={script} typographyFunc={getMinion}>
-        {text}
-      </TypographyText>
-    )),
-  );
+  .add('Canon', typographyStory(getCanon))
+  .add('Trafalgar', typographyStory(getTrafalgar))
+  .add('Paragon', typographyStory(getParagon))
+  .add('DoublePica', typographyStory(getDoublePica))
+  .add('GreatPrimer', typographyStory(getGreatPrimer))
+  .add('BodyCopy', typographyStory(getBodyCopy))
+  .add('Pica', typographyStory(getPica))
+  .add('LongPrimer', typographyStory(getLongPrimer))
+  .add('Brevier', typographyStory(getBrevier))
+  .add('Minion', typographyStory(getMinion));
