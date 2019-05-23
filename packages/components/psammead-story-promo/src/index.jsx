@@ -19,7 +19,7 @@ import {
   GEL_FF_REITH_SERIF,
   GEL_FF_REITH_SANS,
 } from '@bbc/gel-foundations/typography';
-import { C_SHADOW, C_METAL } from '@bbc/psammead-styles/colours';
+import { C_EBON, C_SHADOW, C_METAL } from '@bbc/psammead-styles/colours';
 
 const twoOfSixColumnsMaxWidthScaleable = `33.33%`;
 // (2 / 6) * 100 = 0.3333333333 = 33.33%
@@ -109,7 +109,7 @@ const InlineMediaIndicator = styled.div`
 
 export const Headline = styled.h3`
   ${props => (props.script ? getGreatPrimer(props.script) : '')};
-  color: ${C_SHADOW};
+  color: ${C_EBON};
   font-family: ${GEL_FF_REITH_SERIF};
   margin: 0; /* Reset */
   padding-bottom: ${GEL_SPACING};
@@ -124,12 +124,13 @@ export const Summary = styled.p`
   padding-bottom: ${GEL_SPACING};
   @media (max-width: ${GEL_GROUP_2_SCREEN_WIDTH_MAX}) {
     display: none;
+    visibility: hidden;
   }
 `;
 
 export const Link = styled.a`
   position: static;
-  color: ${C_SHADOW};
+  color: ${C_EBON};
   text-decoration: none;
 
   &:before {
