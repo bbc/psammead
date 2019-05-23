@@ -1,4 +1,5 @@
 import React from 'react';
+import { shape, func } from 'prop-types';
 import { storiesOf } from '@storybook/react';
 import { withKnobs } from '@storybook/addon-knobs';
 import {
@@ -14,7 +15,20 @@ import {
   getMinion,
 } from '@bbc/gel-foundations/typography';
 import { inputProvider } from '@bbc/psammead-storybook-helpers';
-import TypographyText from './typography';
+import { scriptPropType } from '@bbc/gel-foundations/prop-types';
+import styled from 'styled-components';
+
+const TypographyText = styled.p`
+  ${props =>
+    props.script && props.typographyFunc
+      ? props.typographyFunc(props.script)
+      : ''}
+`;
+
+TypographyText.propTypes = {
+  script: shape(scriptPropType).isRequired,
+  typographyFunc: func.isRequired,
+};
 
 const typographyStory = typographyFunc =>
   inputProvider([{ name: 'sample text' }], ([text], script) => (
