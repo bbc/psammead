@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TypographyText should render paragraph text with no styling if script and typography function are not provided 1`] = `
+<p
+  className=""
+>
+  Some text.
+</p>
+`;
+
+exports[`TypographyText should render paragraph text with specified script and typography 1`] = `
+.c0 {
+  font-size: 1.75rem;
+  line-height: 2rem;
+}
+
+@media (min-width:20rem) and (max-width:37.4375rem) {
+  .c0 {
+    font-size: 2rem;
+    line-height: 2.25rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .c0 {
+    font-size: 2.75rem;
+    line-height: 3rem;
+  }
+}
+
+<p
+  className="c0"
+>
+  Some text.
+</p>
+`;

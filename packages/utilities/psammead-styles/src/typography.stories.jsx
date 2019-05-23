@@ -14,7 +14,7 @@ import {
   getMinion,
 } from '@bbc/gel-foundations/typography';
 import { inputProvider } from '@bbc/psammead-storybook-helpers';
-import TypographyText from '.';
+import TypographyText from './typography';
 
 storiesOf('Typography', module)
   .addDecorator(withKnobs)
