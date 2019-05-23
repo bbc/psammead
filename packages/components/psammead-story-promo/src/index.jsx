@@ -8,6 +8,7 @@ import {
   GEL_GUTTER_ABOVE_600PX,
 } from '@bbc/gel-foundations/spacings';
 import {
+  GEL_GROUP_2_SCREEN_WIDTH_MIN,
   GEL_GROUP_2_SCREEN_WIDTH_MAX,
   GEL_GROUP_3_SCREEN_WIDTH_MIN,
   GEL_GROUP_5_SCREEN_WIDTH_MIN,
@@ -33,7 +34,9 @@ const eightOfTwelveColumnsMaxScaleable = `66.67%`;
 // (8 / 12) * 100 = 66.6666666667 = 66.67%
 
 const StoryPromoWrapper = styled.div`
-  position: relative;
+  @media (min-width: ${GEL_GROUP_2_SCREEN_WIDTH_MIN}) {
+    position: relative;
+  }
 
   @supports (display: grid) {
     display: grid;
@@ -98,8 +101,10 @@ const TextGridItem = styled.div`
 `;
 
 const InlineMediaIndicator = styled.div`
-  position: absolute;
-  bottom: 0;
+  @media (min-width: ${GEL_GROUP_2_SCREEN_WIDTH_MIN}) {
+    position: absolute;
+    bottom: 0;
+  }
 `;
 
 export const Headline = styled.h3`

@@ -1,10 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`StoryPromo should render correctly 1`] = `
-.c0 {
-  position: relative;
-}
-
 .c1 {
   display: inline-block;
   vertical-align: top;
@@ -65,6 +61,12 @@ exports[`StoryPromo should render correctly 1`] = `
 
 .c4:visited {
   color: #6E6E73;
+}
+
+@media (min-width:25rem) {
+  .c0 {
+    position: relative;
+  }
 }
 
 @supports (display:grid) {
@@ -224,10 +226,6 @@ exports[`StoryPromo with Media Indicator should render correctly 1`] = `
   margin: 0 0.25rem;
 }
 
-.c0 {
-  position: relative;
-}
-
 .c1 {
   display: inline-block;
   vertical-align: top;
@@ -240,11 +238,6 @@ exports[`StoryPromo with Media Indicator should render correctly 1`] = `
   vertical-align: top;
   padding: 0 0.5rem;
   max-width: 66.67%;
-}
-
-.c2 {
-  position: absolute;
-  bottom: 0;
 }
 
 .c9 {
@@ -295,6 +288,12 @@ exports[`StoryPromo with Media Indicator should render correctly 1`] = `
   color: #6E6E73;
 }
 
+@media (min-width:25rem) {
+  .c0 {
+    position: relative;
+  }
+}
+
 @supports (display:grid) {
   .c0 {
     display: grid;
@@ -335,6 +334,13 @@ exports[`StoryPromo with Media Indicator should render correctly 1`] = `
     max-width: initial;
     padding: initial;
     grid-column: 3 / span 4;
+  }
+}
+
+@media (min-width:25rem) {
+  .c2 {
+    position: absolute;
+    bottom: 0;
   }
 }
 
