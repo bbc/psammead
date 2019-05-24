@@ -1,4 +1,4 @@
-const baseFontUrl = 'https://gel.files.bbci.co.uk/r2.302/';
+const baseFontUrl = 'https://gel.files.bbci.co.uk/r2.511/';
 
 // Serif
 export const F_REITH_SERIF_REGULAR = `
