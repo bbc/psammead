@@ -8,6 +8,7 @@ import {
   GEL_GUTTER_ABOVE_600PX,
 } from '@bbc/gel-foundations/spacings';
 import {
+  GEL_GROUP_2_SCREEN_WIDTH_MIN,
   GEL_GROUP_2_SCREEN_WIDTH_MAX,
   GEL_GROUP_3_SCREEN_WIDTH_MIN,
   GEL_GROUP_5_SCREEN_WIDTH_MIN,
@@ -33,7 +34,9 @@ const eightOfTwelveColumnsMaxScaleable = `66.67%`;
 // (8 / 12) * 100 = 66.6666666667 = 66.67%
 
 const StoryPromoWrapper = styled.div`
-  position: relative;
+  @media (min-width: ${GEL_GROUP_2_SCREEN_WIDTH_MIN}) {
+    position: relative;
+  }
 
   @supports (display: grid) {
     display: grid;
@@ -54,6 +57,7 @@ const ImageGridItem = styled.div`
   display: inline-block;
   vertical-align: top;
   max-width: ${twoOfSixColumnsMaxWidthScaleable};
+  position: relative;
 
   @media (min-width: ${GEL_GROUP_5_SCREEN_WIDTH_MIN}) {
     max-width: ${fourOfTwelveColumnsMaxWidthScaleable};
@@ -93,6 +97,13 @@ const TextGridItem = styled.div`
     @media (min-width: ${GEL_GROUP_5_SCREEN_WIDTH_MIN}) {
       grid-column: 5 / span 8;
     }
+  }
+`;
+
+const InlineMediaIndicator = styled.div`
+  @media (min-width: ${GEL_GROUP_2_SCREEN_WIDTH_MIN}) {
+    position: absolute;
+    bottom: 0;
   }
 `;
 
@@ -144,9 +155,14 @@ export const Link = styled.a`
   }
 `;
 
-const StoryPromo = ({ image, info }) => (
+const StoryPromo = ({ image, info, mediaIndicator }) => (
   <StoryPromoWrapper>
-    <ImageGridItem>{image}</ImageGridItem>
+    <ImageGridItem>
+      {image}
+      {mediaIndicator && (
+        <InlineMediaIndicator>{mediaIndicator}</InlineMediaIndicator>
+      )}
+    </ImageGridItem>
     <TextGridItem>{info}</TextGridItem>
   </StoryPromoWrapper>
 );
@@ -154,6 +170,11 @@ const StoryPromo = ({ image, info }) => (
 StoryPromo.propTypes = {
   image: node.isRequired,
   info: node.isRequired,
+  mediaIndicator: node,
+};
+
+StoryPromo.defaultProps = {
+  mediaIndicator: null,
 };
 
 export default StoryPromo;
