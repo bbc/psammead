@@ -19,7 +19,7 @@ storiesOf('MediaIndicator', module)
   .addDecorator(withKnobs)
   .addDecorator(dirDecorator)
   .add(
-    'default',
+    'video without duration',
     () => (
       <MediaIndicator
         offscreenText={text('offscreenText', 'Video 2 minutes 15 seconds')}
