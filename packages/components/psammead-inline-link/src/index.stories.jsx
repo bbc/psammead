@@ -5,7 +5,7 @@ import { inputProvider } from '@bbc/psammead-storybook-helpers';
 import notes from '../README.md';
 import InlineLink from './index';
 
-storiesOf('InlineLink', module)
+storiesOf('Components|InlineLink', module)
   .addDecorator(withKnobs)
   .add(
     'default',

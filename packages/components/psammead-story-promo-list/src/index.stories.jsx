@@ -26,7 +26,7 @@ const InfoComponent = ({ headlineText, summaryText, datetime, dateformat }) => (
   </Fragment>
 );
 
-storiesOf('StoryPromoList', module).add(
+storiesOf('Components|StoryPromo/StoryPromoList', module).add(
   'default',
   () => (
     <StoryPromoUl>

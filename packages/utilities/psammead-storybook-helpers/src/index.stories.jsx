@@ -4,7 +4,7 @@ import { withKnobs } from '@storybook/addon-knobs';
 import notes from '../README.md';
 import { inputProvider, dirDecorator } from '.';
 
-storiesOf('Input Provider', module)
+storiesOf('Utilities|Input Provider', module)
   .addDecorator(withKnobs)
   .add(
     'simple',
@@ -37,7 +37,7 @@ storiesOf('Input Provider', module)
     { notes, knobs: { escapeHTML: false } },
   );
 
-storiesOf('Input Provider', module)
+storiesOf('Utilities|Input Provider', module)
   .addDecorator(withKnobs)
   .addDecorator(dirDecorator)
   .add(

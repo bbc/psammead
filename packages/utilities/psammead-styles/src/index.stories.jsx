@@ -36,7 +36,7 @@ const ColourValue = styled.div`
   ${getBodyCopy(latin)};
 `;
 
-storiesOf('Psammead Styles', module).add(
+storiesOf('Utilities|Psammead Styles', module).add(
   'colours',
   () => (
     <ColourContainer>

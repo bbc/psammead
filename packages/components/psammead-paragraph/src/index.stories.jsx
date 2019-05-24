@@ -5,7 +5,7 @@ import { inputProvider } from '@bbc/psammead-storybook-helpers';
 import notes from '../README.md';
 import Paragraph from './index';
 
-storiesOf('Paragraph', module)
+storiesOf('Components|Paragraph', module)
   .addDecorator(withKnobs)
   .add(
     'default',

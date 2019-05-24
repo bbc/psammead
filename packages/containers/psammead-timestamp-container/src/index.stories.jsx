@@ -4,7 +4,7 @@ import { latin } from '@bbc/gel-foundations/scripts';
 import { withKnobs, text, number, boolean } from '@storybook/addon-knobs';
 import Timestamp from '.';
 
-storiesOf('TimestampContainer', module)
+storiesOf('Containers|TimestampContainer', module)
   .addDecorator(withKnobs)
   .add('default', () => (
     <Timestamp

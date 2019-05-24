@@ -5,7 +5,7 @@ import { inputProvider } from '@bbc/psammead-storybook-helpers';
 import notes from '../README.md';
 import VisuallyHiddenText from './index';
 
-storiesOf('VisuallyHiddenText', module)
+storiesOf('Components|VisuallyHiddenText', module)
   .addDecorator(withKnobs)
   .add(
     'default',

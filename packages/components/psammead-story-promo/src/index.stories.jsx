@@ -24,7 +24,7 @@ const InfoComponent = ({ headlineText, summaryText, script }) => (
   </Fragment>
 );
 
-storiesOf('StoryPromo', module)
+storiesOf('Components|StoryPromo/StoryPromo', module)
   .addDecorator(withKnobs)
   .add(
     'default',
