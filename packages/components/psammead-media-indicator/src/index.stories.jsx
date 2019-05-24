@@ -19,18 +19,46 @@ storiesOf('MediaIndicator', module)
   .addDecorator(withKnobs)
   .addDecorator(dirDecorator)
   .add(
-    'default',
+    'video',
     () => (
       <MediaIndicator
         duration={text('duration', '2:15')}
         datetime={text('datetime', 'PT2M15S')}
         offscreenText={text('offscreenText', 'Video 2 minutes 15 seconds')}
+        type="video"
       />
     ),
     { notes },
   )
   .add(
-    'without duration',
-    () => <MediaIndicator offscreenText={text('offscreenText', 'Video')} />,
+    'audio',
+    () => (
+      <MediaIndicator
+        offscreenText={text('offscreenText', 'Audio')}
+        duration={text('duration', '2:15')}
+        datetime={text('datetime', 'PT2M15S')}
+        type="audio"
+      />
+    ),
+    { notes },
+  )
+  .add(
+    'video without duration',
+    () => (
+      <MediaIndicator
+        offscreenText={text('offscreenText', 'Video')}
+        type="video"
+      />
+    ),
+    { notes },
+  )
+  .add(
+    'audio without duration',
+    () => (
+      <MediaIndicator
+        offscreenText={text('offscreenText', 'Audio')}
+        type="audio"
+      />
+    ),
     { notes },
   );

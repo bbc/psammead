@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`MediaIndicator should render correctly 1`] = `
+exports[`MediaIndicator should render audio indicator correctly 1`] = `
 .c4 {
   -webkit-clip-path: inset(100%);
   clip-path: inset(100%);
@@ -10,6 +10,12 @@ exports[`MediaIndicator should render correctly 1`] = `
   overflow: hidden;
   position: absolute;
   width: 1px;
+}
+
+.c2 {
+  vertical-align: middle;
+  margin: 0 0.25rem;
+  fill: #222222;
 }
 
 .c0 {
@@ -33,10 +39,189 @@ exports[`MediaIndicator should render correctly 1`] = `
   align-items: center;
 }
 
+.c3 {
+  vertical-align: middle;
+  margin: 0 0.25rem;
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="c1"
+  >
+    <svg
+      className="c2"
+      height="12px"
+      viewBox="0 0 13 12"
+      width="13px"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M9.021 1.811l-.525.525c.938.938 1.5 2.25 1.5 3.675s-.563 2.738-1.5 3.675l.525.525c1.05-1.087 1.725-2.55 1.725-4.2s-.675-3.112-1.725-4.2z"
+      />
+      <path
+        d="M10.596.199l-.525.562c1.35 1.35 2.175 3.225 2.175 5.25s-.825 3.9-2.175 5.25l.525.525c1.5-1.462 2.4-3.525 2.4-5.775s-.9-4.312-2.4-5.812zM6.996 1.511l-2.25 2.25H.996v4.5h3.75l2.25 2.25z"
+      />
+    </svg>
+    <time
+      className="c3"
+      dateTime="PT2M15S"
+    >
+      <span
+        className="c4"
+      >
+        Audio 2 minutes 15 seconds
+      </span>
+      <span
+        aria-hidden="true"
+      >
+        2:15
+      </span>
+    </time>
+  </div>
+</div>
+`;
+
+exports[`MediaIndicator should render correctly without audio duration details 1`] = `
 .c2 {
   vertical-align: middle;
   margin: 0 0.25rem;
   fill: #222222;
+}
+
+.c0 {
+  padding: 0.5rem 0.25rem;
+  background-color: #FFFFFF;
+  display: inline-block;
+  font-family: ReithSans,Helvetica,Arial,sans-serif;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  color: #222222;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="c1"
+  >
+    <svg
+      className="c2"
+      height="12px"
+      viewBox="0 0 13 12"
+      width="13px"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M9.021 1.811l-.525.525c.938.938 1.5 2.25 1.5 3.675s-.563 2.738-1.5 3.675l.525.525c1.05-1.087 1.725-2.55 1.725-4.2s-.675-3.112-1.725-4.2z"
+      />
+      <path
+        d="M10.596.199l-.525.562c1.35 1.35 2.175 3.225 2.175 5.25s-.825 3.9-2.175 5.25l.525.525c1.5-1.462 2.4-3.525 2.4-5.775s-.9-4.312-2.4-5.812zM6.996 1.511l-2.25 2.25H.996v4.5h3.75l2.25 2.25z"
+      />
+    </svg>
+  </div>
+</div>
+`;
+
+exports[`MediaIndicator should render correctly without video duration details 1`] = `
+.c2 {
+  vertical-align: middle;
+  margin: 0 0.25rem;
+  fill: #222222;
+}
+
+.c0 {
+  padding: 0.5rem 0.25rem;
+  background-color: #FFFFFF;
+  display: inline-block;
+  font-family: ReithSans,Helvetica,Arial,sans-serif;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  color: #222222;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="c1"
+  >
+    <svg
+      aria-hidden="true"
+      className="c2"
+      focusable="false"
+      height="12px"
+      viewBox="0 0 32 32"
+      width="12px"
+    >
+      <polygon
+        points="3,32 29,16 3,0"
+      />
+    </svg>
+  </div>
+</div>
+`;
+
+exports[`MediaIndicator should render video indicator correctly 1`] = `
+.c4 {
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  -webkit-clip: rect(1px,1px,1px,1px);
+  clip: rect(1px,1px,1px,1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  width: 1px;
+}
+
+.c2 {
+  vertical-align: middle;
+  margin: 0 0.25rem;
+  fill: #222222;
+}
+
+.c0 {
+  padding: 0.5rem 0.25rem;
+  background-color: #FFFFFF;
+  display: inline-block;
+  font-family: ReithSans,Helvetica,Arial,sans-serif;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  color: #222222;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .c3 {
@@ -77,56 +262,6 @@ exports[`MediaIndicator should render correctly 1`] = `
         2:15
       </span>
     </time>
-  </div>
-</div>
-`;
-
-exports[`MediaIndicator should render correctly without duration details 1`] = `
-.c0 {
-  padding: 0.5rem 0.25rem;
-  background-color: #FFFFFF;
-  display: inline-block;
-  font-family: ReithSans,Helvetica,Arial,sans-serif;
-  font-size: 0.75rem;
-  line-height: 1rem;
-  color: #222222;
-}
-
-.c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c2 {
-  vertical-align: middle;
-  margin: 0 0.25rem;
-  fill: #222222;
-}
-
-<div
-  className="c0"
->
-  <div
-    className="c1"
-  >
-    <svg
-      aria-hidden="true"
-      className="c2"
-      focusable="false"
-      height="12px"
-      viewBox="0 0 32 32"
-      width="12px"
-    >
-      <polygon
-        points="3,32 29,16 3,0"
-      />
-    </svg>
   </div>
 </div>
 `;

@@ -1,10 +1,11 @@
 import React from 'react';
 import styled from 'styled-components';
-import { string } from 'prop-types';
+import { string, oneOf } from 'prop-types';
 import { C_WHITE, C_EBON } from '@bbc/psammead-styles/colours';
 import VisuallyHiddenText from '@bbc/psammead-visually-hidden-text';
 import { GEL_SPACING, GEL_SPACING_HLF } from '@bbc/gel-foundations/spacings';
 import { GEL_MINION, GEL_FF_REITH_SANS } from '@bbc/gel-foundations/typography';
+import mediaIcons from './mediaIcons';
 
 const MediaIndicatorWrapper = styled.div`
   padding: ${GEL_SPACING} ${GEL_SPACING_HLF};
@@ -20,29 +21,15 @@ const FlexWrapper = styled.div`
   align-items: center;
 `;
 
-const PlayIcon = styled.svg`
-  vertical-align: middle;
-  margin: 0 ${GEL_SPACING_HLF};
-  fill: ${C_EBON};
-`;
-
 const TimeDuration = styled.time`
   vertical-align: middle;
   margin: 0 ${GEL_SPACING_HLF};
 `;
 
-const MediaIndicator = ({ datetime, duration, offscreenText }) => (
+const MediaIndicator = ({ datetime, duration, offscreenText, type }) => (
   <MediaIndicatorWrapper>
     <FlexWrapper>
-      <PlayIcon
-        aria-hidden="true"
-        viewBox="0 0 32 32"
-        width="12px"
-        height="12px"
-        focusable="false"
-      >
-        <polygon points="3,32 29,16 3,0" />
-      </PlayIcon>
+      {mediaIcons[type] || null}
       {duration && datetime && offscreenText ? (
         <TimeDuration dateTime={datetime}>
           <VisuallyHiddenText>{offscreenText}</VisuallyHiddenText>
@@ -57,6 +44,7 @@ MediaIndicator.propTypes = {
   datetime: string,
   duration: string,
   offscreenText: string.isRequired,
+  type: oneOf(['video', 'audio']).isRequired,
 };
 
 MediaIndicator.defaultProps = {
