@@ -2,6 +2,7 @@
 
 | Version | Description |
 |---------|-------------|
+| 0.4.0   | [PR#548](https://github.com/bbc/psammead/pull/548) Bump the reith font version from 2.302 to 2.511 |
 | 0.3.5   | [PR#537](https://github.com/bbc/psammead/pull/537) Create story for colours |
 | 0.3.4   | [PR#505](https://github.com/bbc/psammead/pull/505) Add Metal; update Pebble |
 | 0.3.3   | [PR#424](https://github.com/bbc/psammead/pull/424) Add Snyk badge to readme |
