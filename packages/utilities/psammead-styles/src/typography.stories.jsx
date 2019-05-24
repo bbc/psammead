@@ -19,7 +19,7 @@ TypographyText.propTypes = {
   typographyFunc: func.isRequired,
 };
 
-const typographyStory = (typographyFunc) =>
+const typographyStory = typographyFunc =>
   inputProvider([{ name: 'sample text' }], ([text], script) => (
     <TypographyText script={script} typographyFunc={typographyFunc}>
       {text}
@@ -29,12 +29,10 @@ const typographyStory = (typographyFunc) =>
 const stories = storiesOf('Typography', module).addDecorator(withKnobs);
 
 Object.keys(typographies)
-  .filter(typographyName => !typographyName.match(/^GEL_/))
+  .filter(typographyName => typeof typographies[typographyName] === 'function')
   .forEach(typographyName => {
-    stories.add(typographyName, () =>
-      inputProvider([{ name: 'sample text' }], ([text], script) => (
-        <TypographyText script={script} typographyFunc={typographyFunc}>
-          {text}
-        </TypographyText>
-    )));
-});
+    stories.add(
+      typographyName.replace(/^get/, ''),
+      typographyStory(typographies[typographyName]),
+    );
+  });
