@@ -51,11 +51,12 @@ exports[`MediaIndicator should render audio indicator correctly 1`] = `
     className="c1"
   >
     <svg
+      aria-hidden="true"
       className="c2"
+      focusable="false"
       height="12px"
       viewBox="0 0 13 12"
       width="13px"
-      xmlns="http://www.w3.org/2000/svg"
     >
       <path
         d="M9.021 1.811l-.525.525c.938.938 1.5 2.25 1.5 3.675s-.563 2.738-1.5 3.675l.525.525c1.05-1.087 1.725-2.55 1.725-4.2s-.675-3.112-1.725-4.2z"
@@ -118,11 +119,12 @@ exports[`MediaIndicator should render correctly without audio duration details 1
     className="c1"
   >
     <svg
+      aria-hidden="true"
       className="c2"
+      focusable="false"
       height="12px"
       viewBox="0 0 13 12"
       width="13px"
-      xmlns="http://www.w3.org/2000/svg"
     >
       <path
         d="M9.021 1.811l-.525.525c.938.938 1.5 2.25 1.5 3.675s-.563 2.738-1.5 3.675l.525.525c1.05-1.087 1.725-2.55 1.725-4.2s-.675-3.112-1.725-4.2z"
