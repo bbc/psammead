@@ -6,6 +6,7 @@ import * as typographies from '@bbc/gel-foundations/typography';
 import { inputProvider } from '@bbc/psammead-storybook-helpers';
 import { scriptPropType } from '@bbc/gel-foundations/prop-types';
 import styled from 'styled-components';
+import notes from '../README.md';
 
 const TypographyText = styled.p`
   ${props =>
@@ -34,5 +35,6 @@ Object.keys(typographies)
     stories.add(
       typographyName.replace(/^get/, ''),
       typographyStory(typographies[typographyName]),
+      { notes },
     );
   });
