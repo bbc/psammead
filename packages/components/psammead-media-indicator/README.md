@@ -2,7 +2,7 @@
 
 ## Description
 
-The `MediaIndicator` component provides a 'play' or 'audio' icon as well as a duration timestamp depending on the `type` prop. This component has options for both providing and not providing a duration. If one isn't provided, it will simply render the play or audio icon. Alt text is required in all scenarios, however this can just be `'Video'` or `'Audio'` if the duration is not known.
+The `MediaIndicator` component provides a 'play' or 'audio' icon as well as a duration timestamp depending on the `type` prop. The component by default renders the 'play' icon. This component has options for both providing and not providing a duration. If one isn't provided, it will simply render the play or audio icon. Alt text is required in all scenarios, however this can just be `'Video'` or `'Audio'` if the duration is not known.
 
 ## Installation
 
@@ -16,7 +16,7 @@ The `MediaIndicator` component provides a 'play' or 'audio' icon as well as a du
 | duration      | string | No       | Null    | '2:15'                       |
 | datetime      | string | No       | Null    | 'PT2M15S'                    |
 | offscreenText | string | Yes      | N/A     | 'Video 2 minutes 15 seconds' |
-| type          | string | Yes      | N/A     | 'video'                      |
+| type          | string | No       | 'video' | 'audio'                      |
 
 ## Usage
 
@@ -28,8 +28,8 @@ import MediaIndicator from '@bbc/psammead-media-indicator';
 <MediaIndicator
   duration="2:15"
   datetime="PT2M15S"
-  offscreenText="Video 2 minutes 15 seconds"
-  type="video"
+  offscreenText="Audio 2 minutes 15 seconds"
+  type="audio"
 />;
 ```
 

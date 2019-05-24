@@ -29,7 +29,7 @@ const TimeDuration = styled.time`
 const MediaIndicator = ({ datetime, duration, offscreenText, type }) => (
   <MediaIndicatorWrapper>
     <FlexWrapper>
-      {mediaIcons[type] || null}
+      {mediaIcons[type]}
       {duration && datetime && offscreenText ? (
         <TimeDuration dateTime={datetime}>
           <VisuallyHiddenText>{offscreenText}</VisuallyHiddenText>
@@ -44,12 +44,13 @@ MediaIndicator.propTypes = {
   datetime: string,
   duration: string,
   offscreenText: string.isRequired,
-  type: oneOf(['video', 'audio']).isRequired,
+  type: oneOf(['video', 'audio']),
 };
 
 MediaIndicator.defaultProps = {
   datetime: null,
   duration: null,
+  type: 'video',
 };
 
 export default MediaIndicator;
