@@ -14,11 +14,13 @@ const MediaIndicatorWrapper = styled.div`
   font-family: ${GEL_FF_REITH_SANS};
   ${GEL_MINION};
   color: ${C_EBON};
+  height: 2rem;
 `;
 
 const FlexWrapper = styled.div`
   display: flex;
   align-items: center;
+  height: 100%;
 `;
 
 const TimeDuration = styled.time`
