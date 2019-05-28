@@ -4,6 +4,7 @@ import { withKnobs, text } from '@storybook/addon-knobs';
 import { inputProvider } from '@bbc/psammead-storybook-helpers';
 import Image from '@bbc/psammead-image';
 import Timestamp from '@bbc/psammead-timestamp';
+import MediaIndicator from '@bbc/psammead-media-indicator';
 import notes from '../README.md';
 import StoryPromo, { Headline, Summary, Link } from './index';
 
@@ -24,6 +25,25 @@ const InfoComponent = ({ headlineText, summaryText, script }) => (
   </Fragment>
 );
 
+const Img = (
+  <Image
+    alt={text('Image alt text', 'Robert Downey Junior in Iron Man')}
+    src={text(
+      'Image src',
+      'https://ichef.bbci.co.uk/news/660/cpsprodpb/11897/production/_106613817_999_al_.jpg',
+    )}
+    width="640"
+  />
+);
+
+const MediaIndicatorComponent = (
+  <MediaIndicator
+    duration="2:15"
+    datetime="PT2M15S"
+    offscreenText="Video 2 minutes 15 seconds"
+  />
+);
+
 storiesOf('StoryPromo', module)
   .addDecorator(withKnobs)
   .add(
@@ -39,18 +59,31 @@ storiesOf('StoryPromo', module)
           />
         );
 
-        const Img = (
-          <Image
-            alt={text('Image alt text', 'Robert Downey Junior in Iron Man')}
-            src={text(
-              'Image src',
-              'https://ichef.bbci.co.uk/news/660/cpsprodpb/11897/production/_106613817_999_al_.jpg',
-            )}
-            width="640"
+        return <StoryPromo image={Img} info={Info} />;
+      },
+    ),
+    { notes, knobs: { escapeHTML: false } },
+  )
+  .add(
+    'with media indicator',
+    inputProvider(
+      [{ name: 'Headline' }, { name: 'Summary' }],
+      ([headlineText, summaryText], script) => {
+        const Info = (
+          <InfoComponent
+            headlineText={headlineText}
+            summaryText={summaryText}
+            script={script}
           />
         );
 
-        return <StoryPromo image={Img} info={Info} />;
+        return (
+          <StoryPromo
+            image={Img}
+            info={Info}
+            mediaIndicator={MediaIndicatorComponent}
+          />
+        );
       },
     ),
     { notes, knobs: { escapeHTML: false } },
