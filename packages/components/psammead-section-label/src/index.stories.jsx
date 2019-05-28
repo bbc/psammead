@@ -5,7 +5,7 @@ import { inputProvider } from '@bbc/psammead-storybook-helpers';
 import notes from '../README.md';
 import SectionLabel from './index';
 
-storiesOf('SectionLabel', module)
+storiesOf('Components|SectionLabel', module)
   .addDecorator(withKnobs)
   .add(
     'default',

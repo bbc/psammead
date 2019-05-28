@@ -44,7 +44,7 @@ const MediaIndicatorComponent = (
   />
 );
 
-storiesOf('StoryPromo', module)
+storiesOf('Components|StoryPromo/StoryPromo', module)
   .addDecorator(withKnobs)
   .add(
     'default',

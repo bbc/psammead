@@ -56,7 +56,7 @@ getSVG.propTypes = {
   height: number,
 };
 
-const stories = storiesOf('SVGs', module).addDecorator(withKnobs);
+const stories = storiesOf('Utilities|SVGs', module).addDecorator(withKnobs);
 
 Object.keys(svgs)
   .filter(svgName => svgName !== 'BBC_BLOCKS')
