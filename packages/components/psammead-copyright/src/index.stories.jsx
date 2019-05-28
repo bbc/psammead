@@ -5,7 +5,7 @@ import VisuallyHiddenText from '@bbc/psammead-visually-hidden-text';
 import notes from '../README.md';
 import Copyright from './index';
 
-storiesOf('Copyright', module)
+storiesOf('Components|Copyright', module)
   .addDecorator(withKnobs)
   .add(
     'default',

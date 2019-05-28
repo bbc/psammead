@@ -19,7 +19,7 @@ linkNames.unshift(
   { name: 'Copyright', defaultText: 'copyright text' },
 );
 
-storiesOf('SitewideLinks', module)
+storiesOf('Components|SitewideLinks', module)
   .addDecorator(withKnobs)
   .add(
     'default',
