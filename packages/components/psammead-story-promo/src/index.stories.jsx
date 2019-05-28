@@ -4,12 +4,30 @@ import { withKnobs, text } from '@storybook/addon-knobs';
 import { inputProvider } from '@bbc/psammead-storybook-helpers';
 import Image from '@bbc/psammead-image';
 import Timestamp from '@bbc/psammead-timestamp';
+import MediaIndicator from '@bbc/psammead-media-indicator';
 import notes from '../README.md';
-import StoryPromo, { Headline, Summary } from './index';
+import StoryPromo, { Headline, Summary, Link } from './index';
 
-const ImageComponent = (
+// eslint-disable-next-line react/prop-types
+const InfoComponent = ({ headlineText, summaryText, script }) => (
+  <Fragment>
+    <Headline script={script}>
+      <Link href="https://www.bbc.co.uk/news">{headlineText}</Link>
+    </Headline>
+    <Summary script={script}>{summaryText}</Summary>
+    <Timestamp
+      datetime={text('Timestamp datetime', '2019-03-01T14:00+00:00')}
+      script={script}
+      padding={false}
+    >
+      {text('Timestamp', '12 March 2019')}
+    </Timestamp>
+  </Fragment>
+);
+
+const Img = (
   <Image
-    alt={text('Image alt text', '2019-03-01T14:00+00:00')}
+    alt={text('Image alt text', 'Robert Downey Junior in Iron Man')}
     src={text(
       'Image src',
       'https://ichef.bbci.co.uk/news/660/cpsprodpb/11897/production/_106613817_999_al_.jpg',
@@ -18,18 +36,12 @@ const ImageComponent = (
   />
 );
 
-// eslint-disable-next-line react/prop-types
-const InfoComponent = ({ headlineText, summaryText, script }) => (
-  <Fragment>
-    <Headline script={script}>{headlineText}</Headline>
-    <Summary script={script}>{summaryText}</Summary>
-    <Timestamp
-      datetime={text('Timestamp datetime', '2019-03-01T14:00+00:00')}
-      script={script}
-    >
-      {text('Timestamp', '12 March 2019')}
-    </Timestamp>
-  </Fragment>
+const MediaIndicatorComponent = (
+  <MediaIndicator
+    duration="2:15"
+    datetime="PT2M15S"
+    offscreenText="Video 2 minutes 15 seconds"
+  />
 );
 
 storiesOf('StoryPromo', module)
@@ -47,7 +59,31 @@ storiesOf('StoryPromo', module)
           />
         );
 
-        return <StoryPromo image={ImageComponent} info={Info} />;
+        return <StoryPromo image={Img} info={Info} />;
+      },
+    ),
+    { notes, knobs: { escapeHTML: false } },
+  )
+  .add(
+    'with media indicator',
+    inputProvider(
+      [{ name: 'Headline' }, { name: 'Summary' }],
+      ([headlineText, summaryText], script) => {
+        const Info = (
+          <InfoComponent
+            headlineText={headlineText}
+            summaryText={summaryText}
+            script={script}
+          />
+        );
+
+        return (
+          <StoryPromo
+            image={Img}
+            info={Info}
+            mediaIndicator={MediaIndicatorComponent}
+          />
+        );
       },
     ),
     { notes, knobs: { escapeHTML: false } },

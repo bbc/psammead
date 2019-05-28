@@ -8,6 +8,7 @@ import {
   GEL_GUTTER_ABOVE_600PX,
 } from '@bbc/gel-foundations/spacings';
 import {
+  GEL_GROUP_2_SCREEN_WIDTH_MIN,
   GEL_GROUP_2_SCREEN_WIDTH_MAX,
   GEL_GROUP_3_SCREEN_WIDTH_MIN,
   GEL_GROUP_5_SCREEN_WIDTH_MIN,
@@ -18,7 +19,7 @@ import {
   GEL_FF_REITH_SERIF,
   GEL_FF_REITH_SANS,
 } from '@bbc/gel-foundations/typography';
-import { C_SHADOW } from '@bbc/psammead-styles/colours';
+import { C_EBON, C_SHADOW, C_METAL } from '@bbc/psammead-styles/colours';
 
 const twoOfSixColumnsMaxWidthScaleable = `33.33%`;
 // (2 / 6) * 100 = 0.3333333333 = 33.33%
@@ -33,6 +34,10 @@ const eightOfTwelveColumnsMaxScaleable = `66.67%`;
 // (8 / 12) * 100 = 66.6666666667 = 66.67%
 
 const StoryPromoWrapper = styled.div`
+  @media (min-width: ${GEL_GROUP_2_SCREEN_WIDTH_MIN}) {
+    position: relative;
+  }
+
   @supports (display: grid) {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
@@ -52,6 +57,7 @@ const ImageGridItem = styled.div`
   display: inline-block;
   vertical-align: top;
   max-width: ${twoOfSixColumnsMaxWidthScaleable};
+  position: relative;
 
   @media (min-width: ${GEL_GROUP_5_SCREEN_WIDTH_MIN}) {
     max-width: ${fourOfTwelveColumnsMaxWidthScaleable};
@@ -94,9 +100,16 @@ const TextGridItem = styled.div`
   }
 `;
 
+const InlineMediaIndicator = styled.div`
+  @media (min-width: ${GEL_GROUP_2_SCREEN_WIDTH_MIN}) {
+    position: absolute;
+    bottom: 0;
+  }
+`;
+
 export const Headline = styled.h3`
   ${props => (props.script ? getGreatPrimer(props.script) : '')};
-  color: ${C_SHADOW};
+  color: ${C_EBON};
   font-family: ${GEL_FF_REITH_SERIF};
   margin: 0; /* Reset */
   padding-bottom: ${GEL_SPACING};
@@ -111,12 +124,45 @@ export const Summary = styled.p`
   padding-bottom: ${GEL_SPACING};
   @media (max-width: ${GEL_GROUP_2_SCREEN_WIDTH_MAX}) {
     display: none;
+    visibility: hidden;
   }
 `;
 
-const StoryPromo = ({ image, info }) => (
+export const Link = styled.a`
+  position: static;
+  color: ${C_EBON};
+  text-decoration: none;
+
+  &:before {
+    bottom: 0;
+    content: '';
+    left: 0;
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+    top: 0;
+    white-space: nowrap;
+    z-index: 1;
+  }
+
+  &:hover,
+  &:focus {
+    text-decoration: underline;
+  }
+
+  &:visited {
+    color: ${C_METAL};
+  }
+`;
+
+const StoryPromo = ({ image, info, mediaIndicator }) => (
   <StoryPromoWrapper>
-    <ImageGridItem>{image}</ImageGridItem>
+    <ImageGridItem>
+      {image}
+      {mediaIndicator && (
+        <InlineMediaIndicator>{mediaIndicator}</InlineMediaIndicator>
+      )}
+    </ImageGridItem>
     <TextGridItem>{info}</TextGridItem>
   </StoryPromoWrapper>
 );
@@ -124,6 +170,11 @@ const StoryPromo = ({ image, info }) => (
 StoryPromo.propTypes = {
   image: node.isRequired,
   info: node.isRequired,
+  mediaIndicator: node,
+};
+
+StoryPromo.defaultProps = {
+  mediaIndicator: null,
 };
 
 export default StoryPromo;

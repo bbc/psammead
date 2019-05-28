@@ -14,7 +14,7 @@ import {
 
 const StyledListItem = styled.li`
   border-bottom: 0.0625rem solid ${C_LUNAR};
-  padding: ${GEL_SPACING_DBL} 0 ${GEL_SPACING};
+  padding: ${GEL_SPACING} 0 ${GEL_SPACING_DBL};
 
   @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
     padding: ${GEL_SPACING_DBL} 0 ${GEL_SPACING_DBL};

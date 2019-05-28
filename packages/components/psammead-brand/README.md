@@ -2,7 +2,19 @@
 
 ## Description
 
-The `Brand` component provides the BBC service logo (as SVG), nested inside a styled span, link and div. The link is currently hardcoded to "https://www.bbc.co.uk/news". `Brand` takes a `brandName` and an `svg` as props. `brandName` is passed to a [VisuallyHiddenText](https://github.com/bbc/psammead/tree/latest/packages/components/VisuallyHiddenText) component, nested inside Brand. Note that this does not currently affect the branding itself, which always renders as `BBC NEWS`. The `svg` prop must contain a `group`, `viewbox` values and a `ratio`, which is used within an `svg` element, rendered at a height of 24px. Examples of the `svg` object can be found in [@bbc/psammead-assets](https://github.com/bbc/psammead/blob/latest/packages/utilities/psammead-assets/README.md#service-svgs)
+The `Brand` component provides the BBC service logo (as SVG), nested inside a styled link and div. The link is currently hardcoded to "https://www.bbc.co.uk/news".
+
+`Brand` takes a `brandName`, `svgHeight`, `minWidth`, `maxWidth`, `url` and `svg` as props.
+
+The `brandName` is passed to a [VisuallyHiddenText](https://github.com/bbc/psammead/tree/latest/packages/components/VisuallyHiddenText) component, nested inside Brand.
+
+The `svg` prop must contain a `group`, `viewbox` values and a `ratio`, which is used within an `svg` element. Examples of the `svg` object can be found in [@bbc/psammead-assets](https://github.com/bbc/psammead/blob/latest/packages/utilities/psammead-assets/README.md#service-svgs).
+
+The `minWidth` and `maxWidth` values are required to allow the ability for the `svg` element to dynamically scale as the viewport becomes a very small size EG: feature phones.
+
+The `svgHeight` value acts as a placeholder for the `svg` element meaning the overall banner height does not change with the dynamic scaling, also the `height` allows the contents of the `svg` element to remain vertically centred within the banner at all times.
+
+The `url` value is the link that points to the frontpage of the service associated with the `svg`.
 
 ## Installation
 
@@ -10,10 +22,15 @@ The `Brand` component provides the BBC service logo (as SVG), nested inside a st
 
 ## Props
 
+<!-- prettier-ignore -->
 | Argument  | Type   | Required | Default | Example      |
 | --------- | ------ | -------- | ------- | ------------ |
 | brandName | String | yes      | N/A     | `'BBC News'` |
+| svgHeight | Number | yes | N/A | `24` |
+| minWidth | Number | yes | N/A | `240` |
+| maxWidth | Number | yes | N/A | `380` |
 | svg | Object | yes | N/A | { group: `(<g fillrule="evenodd"><path d="M84.32" /></g>)`, viewbox: { height: 24, width: 167.95 }, ratio: 6.9979 } |
+| url | String | no | N/A | `https://www.bbc.co.uk/news` |
 
 ## Usage
 
@@ -25,7 +42,14 @@ import { igbo } from '@bbc/psammead-assets/svgs';
 
 const Header = brandName => (
   <header role="banner">
-    <Brand brandName={brandName} svg={igbo} />
+    <Brand
+      brandName={brandName}
+      svgHeight={24}
+      maxWidth={280}
+      minWidth={180}
+      svg={igbo}
+      url="https://www.bbc.co.uk/news"
+    />
   </header>
 );
 ```
@@ -43,6 +67,10 @@ The `Brand` component is designed to be used where a BBC logo is required as SVG
 - The brand SVG has support for users with css disabled or high contrast mode enabled.
 
 <!-- ## Roadmap -->
+
+### Additional notes
+
+- `width: 100%` is needed on both `<a>` and the `<svg>` to allow the brand to dynamically scale on the Firefox browser
 
 ## Contributing
 
