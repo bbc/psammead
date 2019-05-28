@@ -35,6 +35,6 @@ Object.keys(typographies)
     stories.add(
       typographyName.replace(/^get/, ''),
       typographyStory(typographies[typographyName]),
-      { notes },
+      { notes, knobs: { escapeHTML: false } },
     );
   });
