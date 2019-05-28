@@ -14,7 +14,7 @@ const Page = styled.div`
 
 const PageDecorator = storyFn => <Page>{storyFn()}</Page>;
 
-storiesOf('MediaIndicator', module)
+storiesOf('Components|MediaIndicator', module)
   .addDecorator(PageDecorator)
   .addDecorator(withKnobs)
   .addDecorator(dirDecorator)
