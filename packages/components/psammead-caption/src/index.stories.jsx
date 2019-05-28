@@ -7,7 +7,7 @@ import VisuallyHiddenText from '@bbc/psammead-visually-hidden-text';
 import notes from '../README.md';
 import Caption from '.';
 
-storiesOf('Caption', module)
+storiesOf('Components|Caption', module)
   .addDecorator(withKnobs)
   .add(
     'default',
@@ -49,7 +49,7 @@ storiesOf('Caption', module)
     { notes, knobs: { escapeHTML: false } },
   );
 
-storiesOf('Caption', module)
+storiesOf('Components|Caption', module)
   .addDecorator(withKnobs)
   .addDecorator(dirDecorator)
   .add(

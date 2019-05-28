@@ -23,7 +23,7 @@ const inputs = () => {
   return { svgChoice, svgHeightInput, minWidthInput, maxWidthInput };
 };
 
-storiesOf('Brand', module)
+storiesOf('Components|Brand', module)
   .addDecorator(withKnobs)
   .addDecorator(dirDecorator)
   .add(

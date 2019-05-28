@@ -6,4 +6,10 @@ const additionalProps = {
   layout: 'responsive',
 };
 
-stories(AmpImg, 'Image - AmpImg', true, additionalProps, ampDecorator);
+stories(
+  AmpImg,
+  'Components|Images/Image - AmpImg',
+  true,
+  additionalProps,
+  ampDecorator,
+);
