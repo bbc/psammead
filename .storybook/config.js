@@ -32,6 +32,15 @@ addParameters({
     sidebarAnimations: true,
     theme,
   },
+  a11y: {
+    options: {
+      runOnly: {
+        type: "tag",
+        values: ["wcag2a", "wcag2aa", "wcag21aa"]
+      },
+      iframes: true,
+    }
+  }
 });
 
 const GlobalStyle = createGlobalStyle`
