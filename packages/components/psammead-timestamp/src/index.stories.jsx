@@ -19,7 +19,7 @@ const styles = Object.keys(typography)
   })
   .filter(style => style);
 
-storiesOf('Timestamp', module)
+storiesOf('Components|Timestamp', module)
   .addDecorator(withKnobs)
   .addDecorator(dirDecorator)
   .add(
