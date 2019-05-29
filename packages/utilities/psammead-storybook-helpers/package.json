@@ -29,6 +29,6 @@
   },
   "devDependencies": {
     "@bbc/psammead-test-helpers": "^0.3.0",
-    "react": "^16.6.3"
+    "react": "^16.8.6"
   }
 }

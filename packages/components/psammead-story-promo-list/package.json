@@ -26,11 +26,11 @@
     "@bbc/psammead-storybook-helpers": "^1.1.1",
     "@bbc/psammead-test-helpers": "^0.3.3",
     "@bbc/psammead-timestamp": "^0.3.2",
-    "react": "^16.6.3",
+    "react": "^16.8.6",
     "styled-components": "^4.1.3"
   },
   "peerDependencies": {
-    "react": "^16.6.3",
+    "react": "^16.8.6",
     "styled-components": "^4.1.3",
     "prop-types": "^15.7.2"
   },
