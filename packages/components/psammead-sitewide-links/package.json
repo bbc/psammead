@@ -31,12 +31,12 @@
     "@bbc/psammead-storybook-helpers": "^2.0.0",
     "@bbc/psammead-test-helpers": "^0.3.3",
     "prop-types": "^15.6.2",
-    "react": "^16.6.3",
+    "react": "^16.8.6",
     "styled-components": "^4.1.3"
   },
   "peerDependencies": {
     "prop-types": "^15.6.2",
-    "react": "^16.6.3",
+    "react": "^16.8.6",
     "styled-components": "^4.1.3"
   }
 }

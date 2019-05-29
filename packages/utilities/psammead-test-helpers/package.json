@@ -26,6 +26,6 @@
   ],
   "dependencies": {
     "jest-styled-components": "^6.3.1",
-    "react-test-renderer": "^16.6.3"
+    "react-test-renderer": "^16.8.6"
   }
 }
