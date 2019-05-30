@@ -17,6 +17,7 @@ exports[`Copyright should render correctly 1`] = `
 
 <p
   className="c0"
+  lang="en-gb"
   role="text"
 >
   Getty Images
