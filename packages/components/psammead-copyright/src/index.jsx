@@ -5,6 +5,7 @@ import { GEL_MINION, GEL_FF_REITH_SANS } from '@bbc/gel-foundations/typography';
 
 const Copyright = styled.p.attrs({
   role: 'text',
+  lang: 'en-gb',
 })`
   ${GEL_MINION};
   background-color: rgba(34, 34, 34, 0.75);
