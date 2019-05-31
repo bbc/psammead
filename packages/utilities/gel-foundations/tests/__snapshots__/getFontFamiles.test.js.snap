@@ -1,7 +1,0 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
-
-exports[`getFontFamilies getSans Returns news sans font family 1`] = `"ReithSans, Helvetica, Arial, sans-serif"`;
-
-exports[`getFontFamilies getSansCond Returns news sans condensed font family 1`] = `"ReithSansCondensed, Helvetica, Arial, sans-serif"`;
-
-exports[`getFontFamilies getSerif Returns news serif font family 1`] = `"ReithSerif, Helvetica, Arial, sans-serif"`;
