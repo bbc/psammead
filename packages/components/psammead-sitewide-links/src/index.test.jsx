@@ -8,7 +8,7 @@ describe(`SitewideLinks`, () => {
     text: 'Link',
   };
 
-  const links = [link];
+  const links = new Array(7).fill(link);
 
   shouldMatchSnapshot(
     'should render correctly',
