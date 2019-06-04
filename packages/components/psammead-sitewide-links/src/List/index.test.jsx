@@ -8,19 +8,15 @@ describe(`List`, () => {
     text: 'Link',
   };
 
-  const getLinks = count => (new Array(count)).fill(link);
+  const getLinks = count => new Array(count).fill(link);
 
   shouldMatchSnapshot(
     'should render correctly with 7 items',
-    <List
-      links={getLinks(7)}
-    />,
+    <List links={getLinks(7)} />,
   );
 
   shouldMatchSnapshot(
     'should render correctly with 8 items',
-    <List
-      links={getLinks(8)}
-    />,
+    <List links={getLinks(8)} />,
   );
 });
