@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 0.3.8   | [PR#XXX](https://github.com/bbc/psammead/pull/XXX) Make row count dynamic on number of columns and items |
 | 0.3.7   | [PR#498](https://github.com/bbc/psammead/pull/498) Update stories to use new input provider |
 | 0.3.6   | [PR#430](https://github.com/bbc/psammead/pull/430) Add text knobs to story |
 | 0.3.5   | [PR#424](https://github.com/bbc/psammead/pull/424) Add Snyk badge to readme |
