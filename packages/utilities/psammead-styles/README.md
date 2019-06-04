@@ -17,13 +17,11 @@ npm install @bbc/psammead-styles --save
 
 ## Usage
 
+<!-- prettier-ignore -->
 ```jsx
 import { C_POSTBOX } from '@bbc/psammead-styles/colours';
 
-import {
-  F_REITH_SANS_REGULAR,
-  F_REITH_SANS_ITALIC,
-} from '@bbc/psammead-styles/fonts';
+import { F_REITH_SANS_REGULAR, F_REITH_SANS_ITALIC } from '@bbc/psammead-styles/fonts';
 ```
 
 By importing a subset of the font-face definitions defined in this package, you can prioritise only the most commonly needed fonts for your project, with browser styling stepping in for less common scenarios. For example, in these examples, which import custom fonts for only Reith Sans Regular and Italic, any bold styling would be "faked" by the browser.
