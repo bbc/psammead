@@ -15,9 +15,8 @@ import {
 
 import Link from '../Link';
 
-// Get number of rows using children length minus 1 (to account for first-child being seperate)
-// and divide by number of columns, adding 1 extra row (to account for first-child being seperate)
-
+// Gets the number of grid rows, taking into account the
+// first-child in the grid being seperate, on its own row.
 const getRowCount = (children, columns) => Math.ceil((children.length - 1) / columns) + 1;
 
 const StyledList = styled.ul`
