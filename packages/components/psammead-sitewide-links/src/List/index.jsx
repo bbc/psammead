@@ -15,6 +15,8 @@ import {
 
 import Link from '../Link';
 
+const getRowCount = (children, columns) => Math.ceil((children.length - 1) /columns) + 1;
+
 const StyledList = styled.ul`
   border-bottom: 1px solid ${C_SHADOW};
   display: grid;
@@ -25,22 +27,22 @@ const StyledList = styled.ul`
   @media (max-width: ${GEL_GROUP_2_SCREEN_WIDTH_MAX}) {
     grid-column-gap: ${GEL_SPACING};
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(4, auto);
+    grid-template-rows: repeat(${({children}) => getRowCount(children, 2)}, auto);
   }
   @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) and (max-width: ${GEL_GROUP_3_SCREEN_WIDTH_MAX}) {
     grid-column-gap: ${GEL_SPACING_DBL};
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, auto);
+    grid-template-rows: repeat(${({children}) => getRowCount(children, 3)}, auto);
   }
   @media (min-width: ${GEL_GROUP_4_SCREEN_WIDTH_MIN}) and (max-width: ${GEL_GROUP_4_SCREEN_WIDTH_MAX}) {
     grid-column-gap: ${GEL_SPACING_DBL};
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(3, auto);
+    grid-template-rows: repeat(${({children}) => getRowCount(children, 4)}, auto);
   }
   @media (min-width: ${GEL_GROUP_5_SCREEN_WIDTH_MIN}) {
     grid-column-gap: ${GEL_SPACING_DBL};
     grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(3, auto);
+    grid-template-rows: repeat(${({children}) => getRowCount(children, 5)}, auto);
   }
   > li:first-child {
     border-bottom: 1px solid ${C_SHADOW};
