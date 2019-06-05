@@ -16,7 +16,7 @@ import {
 import Link from '../Link';
 
 // Gets the number of grid rows, taking into account the
-// first-child in the grid being seperate, on its own row.
+// first-child in the grid being separate, on its own row.
 const getRowCount = (children, columns) =>
   Math.ceil((children.length - 1) / columns) + 1;
 
