@@ -18,7 +18,7 @@ import Link from '../Link';
 // Gets the number of grid rows, taking into account the
 // first-child in the grid being separate, on its own row.
 const getRowCount = (children, columns) =>
-  Math.ceil((children.length - 1) / columns) + 1;
+  Math.ceil((React.Children.count(children) - 1) / columns) + 1;
 
 const StyledList = styled.ul`
   border-bottom: 1px solid ${C_SHADOW};
