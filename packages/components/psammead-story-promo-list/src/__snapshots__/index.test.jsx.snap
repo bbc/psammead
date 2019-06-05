@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`StoryPromo should render correctly 1`] = `
+exports[`StoryPromo list should render correctly 1`] = `
 .c2 {
   position: relative;
 }
