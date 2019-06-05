@@ -168,6 +168,8 @@ const TextGridItem = styled.div`
   }
 
   ${({ topStory }) =>
+    // Styles 'Summary' component via TextGridItem to remove requirement
+    // of user to pass `topStory` prop to the component manually.
     !topStory &&
     css`
       ${Summary} {
