@@ -19,6 +19,7 @@ The `StoryPromo` component is designed to be used on 'index' pages, which are pa
 | image    | node   | No       | Null    | `<img>`          |
 | info     | node   | Yes      | N/A     | `<h2>Title</h2>` |
 | mediaIndicator     | node   | No      | null     | `<MediaIndicator duration="2:15" datetime="PT2M15S" offscreenText="Video 2 minutes 15 seconds" />` |
+| topStory | boolean | No      | false   | true          |
 
 ## Headline Props
 
@@ -37,6 +38,8 @@ The `StoryPromo` component is designed to be used on 'index' pages, which are pa
 The typical use-case of this component is as displayed below. A Image sits on the left side of the promo with info elements on the right. These info elements are typically a headline, text summary paragraph and timestamp. The `Headline` and `Summary` components are provided by this package and can be imported as seen below.
 
 This component also has an option to display a media indicator, which consists of a play icon and duration of the media, if that data is provided. 
+
+The `topStory` prop can be passed to adopt a vertical card layout under 600px. This is designed to be used only on the first (top) story on an index.
 
 ```jsx
 import React, { Fragment } from 'react';
