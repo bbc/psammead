@@ -29,9 +29,9 @@ export const news = {
    font-weight: 500;
   `,
   serifMediumItalic: `
-    ${reithSerif} 
-    font-style: italic;
-    font-weight: 500;
+   ${reithSerif} 
+   font-style: italic;
+   font-weight: 500;
   `,
 };
 
@@ -50,12 +50,12 @@ const helmetFontStyles = {
   `,
   sansBold: `
     ${helmet}
-    font-weight: 500;
+    font-weight: 700;
     font-style: normal;
   `,
   sansBoldItalic: `
     ${helmet}
-    font-weight: 500;
+    font-weight: 700;
     font-style: italic;
   `,
 };
