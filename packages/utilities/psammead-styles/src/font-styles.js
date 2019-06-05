@@ -11,28 +11,34 @@ export const getSansItalic = service => {
   return sansItalic || sansRegular;
 };
 
-export const getSansBold = service => fonts[service] && fonts[service].sansBold;
+export const getSansBold = service => {
+  if (!fonts[service]) {
+    return undefined;
+  }
+  const { sansBold, sansRegular } = fonts[service];
+  return sansBold || sansRegular;
+};
 
 export const getSansBoldItalic = service => {
   if (!fonts[service]) {
     return undefined;
   }
-  const { sansBoldItalic, sansBold } = fonts[service];
-  return sansBoldItalic || sansBold;
+  const { sansBoldItalic } = fonts[service];
+  return sansBoldItalic || getSansBold(service);
 };
 
 export const getSerifMedium = service => {
   if (!fonts[service]) {
     return undefined;
   }
-  const { serifMedium, sansBold } = fonts[service];
-  return serifMedium || sansBold;
+  const { serifMedium } = fonts[service];
+  return serifMedium || getSansBold(service);
 };
 
 export const getSerifMediumItalic = service => {
   if (!fonts[service]) {
     return undefined;
   }
-  const { serifMediumItalic, sansBoldItalic, sansBold } = fonts[service];
-  return serifMediumItalic || sansBoldItalic || sansBold;
+  const { serifMediumItalic } = fonts[service];
+  return serifMediumItalic || getSansBoldItalic(service);
 };
