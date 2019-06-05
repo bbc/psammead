@@ -1,6 +1,6 @@
 import React from 'react';
-import styled from 'styled-components';
-import { node } from 'prop-types';
+import styled, { css } from 'styled-components';
+import { node, bool } from 'prop-types';
 import {
   GEL_SPACING,
   GEL_SPACING_DBL,
@@ -42,6 +42,7 @@ const StoryPromoWrapper = styled.div`
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-column-gap: ${GEL_GUTTER_BELOW_600PX};
+    grid-row-gap: ${GEL_GUTTER_BELOW_600PX};
 
     @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
       grid-column-gap: ${GEL_GUTTER_ABOVE_600PX};
@@ -50,6 +51,26 @@ const StoryPromoWrapper = styled.div`
     @media (min-width: ${GEL_GROUP_5_SCREEN_WIDTH_MIN}) {
       grid-template-columns: repeat(12, 1fr);
     }
+  }
+`;
+
+const ImageGridColumnsTopStory = css`
+  grid-column: 1 / span 6;
+
+  @media (min-width: ${GEL_GROUP_2_SCREEN_WIDTH_MAX}) {
+    grid-column: 1 / span 2;
+  }
+
+  @media (min-width: ${GEL_GROUP_5_SCREEN_WIDTH_MIN}) {
+    grid-column: 1 / span 4;
+  }
+`;
+
+const ImageGridColumns = css`
+  grid-column: 1 / span 2;
+
+  @media (min-width: ${GEL_GROUP_5_SCREEN_WIDTH_MIN}) {
+    grid-column: 1 / span 4;
   }
 `;
 
@@ -66,11 +87,61 @@ const ImageGridItem = styled.div`
   @supports (display: grid) {
     display: block;
     max-width: initial;
-    grid-column: 1 / span 2;
 
-    @media (min-width: ${GEL_GROUP_5_SCREEN_WIDTH_MIN}) {
-      grid-column: 1 / span 4;
-    }
+    ${({ topStory }) =>
+      topStory ? ImageGridColumnsTopStory : ImageGridColumns}
+  }
+`;
+
+const InlineMediaIndicator = styled.div`
+  ${({ topStory }) =>
+    topStory
+      ? `
+      position: absolute;
+      bottom: 0;
+      `
+      : `
+      @media (min-width: ${GEL_GROUP_2_SCREEN_WIDTH_MIN}) {
+        position: absolute;
+        bottom: 0;
+      }
+      `}
+`;
+
+export const Headline = styled.h3`
+  ${props => (props.script ? getGreatPrimer(props.script) : '')};
+  color: ${C_EBON};
+  font-family: ${GEL_FF_REITH_SERIF};
+  margin: 0; /* Reset */
+  padding-bottom: ${GEL_SPACING};
+  font-weight: 700;
+`;
+
+export const Summary = styled.p`
+  ${props => (props.script ? getLongPrimer(props.script) : '')};
+  color: ${C_SHADOW};
+  font-family: ${GEL_FF_REITH_SANS};
+  margin: 0; /* Reset */
+  padding-bottom: ${GEL_SPACING};
+`;
+
+const TextGridColumnsTopStory = css`
+  grid-column: 1 / span 6;
+
+  @media (min-width: ${GEL_GROUP_2_SCREEN_WIDTH_MAX}) {
+    grid-column: 3 / span 4;
+  }
+
+  @media (min-width: ${GEL_GROUP_5_SCREEN_WIDTH_MIN}) {
+    grid-column: 5 / span 8;
+  }
+`;
+
+const TextGridColumns = css`
+  grid-column: 3 / span 4;
+
+  @media (min-width: ${GEL_GROUP_5_SCREEN_WIDTH_MIN}) {
+    grid-column: 5 / span 8;
   }
 `;
 
@@ -92,40 +163,20 @@ const TextGridItem = styled.div`
     display: block;
     max-width: initial;
     padding: initial;
-    grid-column: 3 / span 4;
 
-    @media (min-width: ${GEL_GROUP_5_SCREEN_WIDTH_MIN}) {
-      grid-column: 5 / span 8;
-    }
+    ${({ topStory }) => (topStory ? TextGridColumnsTopStory : TextGridColumns)}
   }
-`;
 
-const InlineMediaIndicator = styled.div`
-  @media (min-width: ${GEL_GROUP_2_SCREEN_WIDTH_MIN}) {
-    position: absolute;
-    bottom: 0;
-  }
-`;
-
-export const Headline = styled.h3`
-  ${props => (props.script ? getGreatPrimer(props.script) : '')};
-  color: ${C_EBON};
-  font-family: ${GEL_FF_REITH_SERIF};
-  margin: 0; /* Reset */
-  padding-bottom: ${GEL_SPACING};
-  font-weight: 700;
-`;
-
-export const Summary = styled.p`
-  ${props => (props.script ? getLongPrimer(props.script) : '')};
-  color: ${C_SHADOW};
-  font-family: ${GEL_FF_REITH_SANS};
-  margin: 0; /* Reset */
-  padding-bottom: ${GEL_SPACING};
-  @media (max-width: ${GEL_GROUP_2_SCREEN_WIDTH_MAX}) {
-    display: none;
-    visibility: hidden;
-  }
+  ${({ topStory }) =>
+    !topStory &&
+    css`
+      ${Summary} {
+        @media (max-width: ${GEL_GROUP_2_SCREEN_WIDTH_MAX}) {
+          display: none;
+          visibility: hidden;
+        }
+      }
+    `}
 `;
 
 export const Link = styled.a`
@@ -155,15 +206,17 @@ export const Link = styled.a`
   }
 `;
 
-const StoryPromo = ({ image, info, mediaIndicator }) => (
+const StoryPromo = ({ image, info, mediaIndicator, topStory }) => (
   <StoryPromoWrapper>
-    <ImageGridItem>
+    <ImageGridItem topStory={topStory}>
       {image}
       {mediaIndicator && (
-        <InlineMediaIndicator>{mediaIndicator}</InlineMediaIndicator>
+        <InlineMediaIndicator topStory={topStory}>
+          {mediaIndicator}
+        </InlineMediaIndicator>
       )}
     </ImageGridItem>
-    <TextGridItem>{info}</TextGridItem>
+    <TextGridItem topStory={topStory}>{info}</TextGridItem>
   </StoryPromoWrapper>
 );
 
@@ -171,10 +224,12 @@ StoryPromo.propTypes = {
   image: node.isRequired,
   info: node.isRequired,
   mediaIndicator: node,
+  topStory: bool,
 };
 
 StoryPromo.defaultProps = {
   mediaIndicator: null,
+  topStory: false,
 };
 
 export default StoryPromo;

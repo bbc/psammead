@@ -44,47 +44,42 @@ const MediaIndicatorComponent = (
   />
 );
 
+const generateStory = ({ mediaIndicator, topStory }) =>
+  inputProvider(
+    [{ name: 'Headline' }, { name: 'Summary' }],
+    ([headlineText, summaryText], script) => {
+      const Info = (
+        <InfoComponent
+          headlineText={headlineText}
+          summaryText={summaryText}
+          script={script}
+        />
+      );
+
+      return (
+        <StoryPromo
+          image={Img}
+          info={Info}
+          mediaIndicator={mediaIndicator && MediaIndicatorComponent}
+          topStory={topStory}
+        />
+      );
+    },
+  );
+
 storiesOf('Components|StoryPromo/StoryPromo', module)
   .addDecorator(withKnobs)
+  .add('default', generateStory({}), { notes, knobs: { escapeHTML: false } })
+  .add('with media indicator', generateStory({ mediaIndicator: true }), {
+    notes,
+    knobs: { escapeHTML: false },
+  })
+  .add('Top story', generateStory({ topStory: true }), {
+    notes,
+    knobs: { escapeHTML: false },
+  })
   .add(
-    'default',
-    inputProvider(
-      [{ name: 'Headline' }, { name: 'Summary' }],
-      ([headlineText, summaryText], script) => {
-        const Info = (
-          <InfoComponent
-            headlineText={headlineText}
-            summaryText={summaryText}
-            script={script}
-          />
-        );
-
-        return <StoryPromo image={Img} info={Info} />;
-      },
-    ),
-    { notes, knobs: { escapeHTML: false } },
-  )
-  .add(
-    'with media indicator',
-    inputProvider(
-      [{ name: 'Headline' }, { name: 'Summary' }],
-      ([headlineText, summaryText], script) => {
-        const Info = (
-          <InfoComponent
-            headlineText={headlineText}
-            summaryText={summaryText}
-            script={script}
-          />
-        );
-
-        return (
-          <StoryPromo
-            image={Img}
-            info={Info}
-            mediaIndicator={MediaIndicatorComponent}
-          />
-        );
-      },
-    ),
+    'Top Story with media indicator',
+    generateStory({ mediaIndicator: true, topStory: true }),
     { notes, knobs: { escapeHTML: false } },
   );

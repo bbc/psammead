@@ -37,3 +37,22 @@ describe('StoryPromo with Media Indicator', () => {
     <StoryPromo image={Image} info={Info} mediaIndicator={mediaInfo} />,
   );
 });
+
+describe('StoryPromo - Top Story', () => {
+  shouldMatchSnapshot(
+    'should render correctly',
+    <StoryPromo image={Image} info={Info} topStort />,
+  );
+});
+
+describe('StoryPromo - Top Story with Media Indicator', () => {
+  shouldMatchSnapshot(
+    'should render correctly',
+    <StoryPromo
+      image={Image}
+      info={Info}
+      mediaIndicator={mediaInfo}
+      topStort
+    />,
+  );
+});
