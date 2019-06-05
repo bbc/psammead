@@ -52,7 +52,7 @@ describe('StoryPromo - Top Story with Media Indicator', () => {
       image={Image}
       info={Info}
       mediaIndicator={mediaInfo}
-      topStort
+      topStory={true}
     />,
   );
 });
