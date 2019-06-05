@@ -2,6 +2,7 @@
 
 | Version | Description |
 |---------|-------------|
+| 2.1.0   | [PR#XXX](https://github.com/bbc/psammead/pull/XXX) Update GEL Types values |
 | 2.0.0   | [PR#517](https://github.com/bbc/psammead/pull/517) Remove unused GEL Types |
 | 1.2.0   | [PR#431](https://github.com/bbc/psammead/pull/431) Add custom scripts propTypes |
 | 1.1.0   | [PR#424](https://github.com/bbc/psammead/pull/424) Add Snyk badge to readme |

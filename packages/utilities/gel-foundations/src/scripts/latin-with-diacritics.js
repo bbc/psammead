@@ -13,8 +13,8 @@ const latinWithDiacriticsTypography = {
       lineHeight: '28',
     },
     groupD: {
-      fontSize: '38',
-      lineHeight: '42',
+      fontSize: '44',
+      lineHeight: '52',
     },
   },
   trafalgar: {
@@ -104,11 +104,11 @@ const latinWithDiacriticsTypography = {
   longPrimer: {
     groupA: {
       fontSize: '15',
-      lineHeight: '18',
+      lineHeight: '20',
     },
     groupB: {
       fontSize: '15',
-      lineHeight: '18',
+      lineHeight: '20',
     },
     groupD: {
       fontSize: '14',
