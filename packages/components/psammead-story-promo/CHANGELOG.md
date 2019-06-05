@@ -3,7 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 | ------- | ----------- |
-| 0.2.0-alpha.6 | [PR#XXX](https://github.com/bbc/psammead/pull/XXX) Add Top Story promo design |
+| 0.2.0-alpha.6 | [PR#578](https://github.com/bbc/psammead/pull/578) Add Top Story promo design |
 | 0.2.0-alpha.5 | [PR#522](https://github.com/bbc/psammead/pull/522) Add MediaIndicator |
 | 0.2.0-alpha.4 | [PR#546](https://github.com/bbc/psammead/pull/546) Replace colours and hide summary under 600px width screen |
 | 0.2.0-alpha.3 | [PR#534](https://github.com/BBC-News/psammead/pull/534) Remove Timestamp padding. |
