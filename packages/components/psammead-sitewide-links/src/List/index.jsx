@@ -5,6 +5,8 @@ import nanoid from 'nanoid';
 import { C_SHADOW } from '@bbc/psammead-styles/colours';
 import { GEL_SPACING, GEL_SPACING_DBL } from '@bbc/gel-foundations/spacings';
 import {
+  GEL_GROUP_0_SCREEN_WIDTH_MAX,
+  GEL_GROUP_1_SCREEN_WIDTH_MIN,
   GEL_GROUP_2_SCREEN_WIDTH_MAX,
   GEL_GROUP_3_SCREEN_WIDTH_MIN,
   GEL_GROUP_3_SCREEN_WIDTH_MAX,
@@ -22,7 +24,10 @@ const StyledList = styled.ul`
   list-style-type: none;
   margin: 0;
   padding: 0 0 ${GEL_SPACING};
-  @media (max-width: ${GEL_GROUP_2_SCREEN_WIDTH_MAX}) {
+  @media (max-width: ${GEL_GROUP_0_SCREEN_WIDTH_MAX}) {
+    grid-auto-flow: row;
+  }
+  @media (min-width: ${GEL_GROUP_1_SCREEN_WIDTH_MIN}) and (max-width: ${GEL_GROUP_2_SCREEN_WIDTH_MAX}) {
     grid-column-gap: ${GEL_SPACING};
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(4, auto);
