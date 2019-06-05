@@ -14,6 +14,7 @@ import {
   GEL_GROUP_5_SCREEN_WIDTH_MIN,
 } from '@bbc/gel-foundations/breakpoints';
 import {
+  getPica,
   getGreatPrimer,
   getLongPrimer,
   GEL_FF_REITH_SERIF,
@@ -108,12 +109,15 @@ const InlineMediaIndicator = styled.div`
 `;
 
 export const Headline = styled.h3`
-  ${props => (props.script ? getGreatPrimer(props.script) : '')};
+  ${props => (props.script ? getPica(props.script) : '')};
   color: ${C_EBON};
   font-family: ${GEL_FF_REITH_SERIF};
   margin: 0; /* Reset */
   padding-bottom: ${GEL_SPACING};
   font-weight: 700;
+  @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
+    ${props => (props.script ? getGreatPrimer(props.script) : '')};
+  }
 `;
 
 export const Summary = styled.p`
