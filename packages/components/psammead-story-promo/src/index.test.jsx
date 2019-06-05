@@ -41,7 +41,7 @@ describe('StoryPromo with Media Indicator', () => {
 describe('StoryPromo - Top Story', () => {
   shouldMatchSnapshot(
     'should render correctly',
-    <StoryPromo image={Image} info={Info} topStory={true}/>,
+    <StoryPromo image={Image} info={Info} topStory />,
   );
 });
 
@@ -52,7 +52,7 @@ describe('StoryPromo - Top Story with Media Indicator', () => {
       image={Image}
       info={Info}
       mediaIndicator={mediaInfo}
-      topStory={true}
+      topStory
     />,
   );
 });
