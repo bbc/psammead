@@ -7,7 +7,7 @@ This package provides a collection of string constants for use in CSS, containin
 `/colours` - Project-defined colours that will be required by multiple Psammead components or themes. These colours are not defined by GEL.
 `/fonts` - Project-defined browser behaviours for the Reith font. The primary reason these are not considered GEL-defined (and not part of [`@bbc/gel-foundations`](https://www.npmjs.com/package/@bbc/gel-foundations)) is due to the custom weighting and loading definitions. [More details on the font-faces defined in this package are available here.](./font-faces.md)
 
-`/font-styles` provides functions that can be used to get font-styles for different services
+`/font-styles` provides functions that can be used to get font-styles for different services. If a font-style is not available all the functions will fallback to regular sans font-style of the service.
 
 ## Installation
 
