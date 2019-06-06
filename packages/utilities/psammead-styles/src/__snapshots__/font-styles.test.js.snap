@@ -1,5 +1,69 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`fonts getSansBold should return bold sans font css 1`] = `
+"
+    font-family: Helmet, Freesans, Helvetica, Arial, sans serif;
+    font-weight: 700;
+    font-style: normal;
+  "
+`;
+
+exports[`fonts getSansBoldItalic should return bold italic font css 1`] = `
+"
+    font-family: Helmet, Freesans, Helvetica, Arial, sans serif;
+    font-weight: 700;
+    font-style: italic;
+  "
+`;
+
+exports[`fonts getSansItalic should return regular sans italic font css 1`] = `
+"
+    font-family: Helmet, Freesans, Helvetica, Arial, sans serif;
+    font-weight: 400;
+    font-style: italic;
+  "
+`;
+
+exports[`fonts getSansRegular should return regular sans font css 1`] = `
+"
+    font-family: Helmet, Freesans, Helvetica, Arial, sans serif;
+    font-weight: 400;
+    font-style: normal;
+  "
+`;
+
+exports[`fonts getSerifMedium should return medium serif font css 1`] = `
+"
+   font-family: ReithSerif, Helvetica, Arial, sans-serif; 
+   font-style: normal;
+   font-weight: 500;
+  "
+`;
+
+exports[`fonts getSerifMedium should return regular sans bold font css for sevices without serif medium 1`] = `
+"
+    font-family: Helmet, Freesans, Helvetica, Arial, sans serif;
+    font-weight: 700;
+    font-style: normal;
+  "
+`;
+
+exports[`fonts getSerifMediumItalic should return sans bold italic font css for sevice without serif medium italic 1`] = `
+"
+    font-family: Helmet, Freesans, Helvetica, Arial, sans serif;
+    font-weight: 700;
+    font-style: italic;
+  "
+`;
+
+exports[`fonts getSerifMediumItalic should return serif medium italic font css 1`] = `
+"
+   font-family: ReithSerif, Helvetica, Arial, sans-serif; 
+   font-style: normal;
+   font-weight: 500;
+  "
+`;
+
 exports[`should render SansBold correctly for igbo 1`] = `
 "
     font-family: Helmet, Freesans, Helvetica, Arial, sans serif;
