@@ -15,8 +15,8 @@ services.forEach(service => {
 
 fontStyleKeys.forEach(fontStyle => {
   describe(fontStyle, () => {
-    it('should fail gracefully and return undefined given an invalid service name', () => {
-      expect(fontStyles[fontStyle]('default')).toBeUndefined();
+    it(`should fail gracefully and return null when ${fontStyle} given an invalid service name`, () => {
+      expect(fontStyles[fontStyle]('default')).toBeNull();
     });
   });
 });
