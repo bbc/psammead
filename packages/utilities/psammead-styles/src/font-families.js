@@ -23,6 +23,11 @@ export const news = {
    font-style: italic;
    font-weight: 700;
   `,
+  serifRegular: `
+   ${reithSerif},
+   font-style: normal;
+   font-weight: 400;
+  `,
   serifMedium: `
    ${reithSerif} 
    font-style: normal;
