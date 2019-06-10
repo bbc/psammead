@@ -77,6 +77,7 @@ const List = ({ links }) => (
 const linkPropTypes = shape({
   href: string.isRequired,
   text: string.isRequired,
+  id: string,
 });
 
 List.propTypes = {
