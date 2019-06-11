@@ -67,7 +67,7 @@ const StyledListItem = styled.li`
 const List = ({ links }) => (
   <StyledList role="list">
     {links.map(link => (
-      <StyledListItem key={link.id || JSON.stringify(link)} role="listitem">
+      <StyledListItem key={link.text} role="listitem">
         <Link text={link.text} href={link.href} />
       </StyledListItem>
     ))}
@@ -77,7 +77,6 @@ const List = ({ links }) => (
 const linkPropTypes = shape({
   href: string.isRequired,
   text: string.isRequired,
-  id: string,
 });
 
 List.propTypes = {
