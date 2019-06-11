@@ -1,7 +1,7 @@
 # psammead-timestamp-container - [![Known Vulnerabilities](https://snyk.io/test/github/bbc/psammead/badge.svg?targetFile=packages%2Fcontainers%2Fpsammead-timestamp-container%2Fpackage.json)](https://snyk.io/test/github/bbc/psammead?targetFile=packages%2Fcontainers%2Fpsammead-timestamp-container%2Fpackage.json) [![npm version](https://img.shields.io/npm/v/@bbc/psammead-timestamp-container.svg)](https://www.npmjs.com/package/@bbc/psammead-timestamp-container) [![Storybook](https://raw.githubusercontent.com/storybooks/brand/master/badge/badge-storybook.svg?sanitize=true)](https://bbc.github.io/psammead/?path=/story/timestampcontainer--default) [![GitHub license](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](https://github.com/bbc/psammead/blob/latest/LICENSE) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/bbc/psammead/blob/latest/CONTRIBUTING.md)
 
 ## Description
-`psammead-timestamp-container` is a React container that offers relative and absolute times, with timezone support - using moment-timezone. Relative times are currently hard-coded to English (e.g. 3 minutes ago). `psammead-timestamp-container` returns a single time element. 
+`psammead-timestamp-container` is a React container that offers relative and absolute times, with timezone support - using moment-timezone. Relative times are currently hard-coded to English (e.g. 3 minutes ago). `psammead-timestamp-container` returns a single time element.
 
 ## When to use this component
 `psammead-timestamp-container` is intended to be used when a single time DOM element that has the possibility of having varying time formats and timezones is required.
@@ -18,6 +18,7 @@
 | isRelative | boolean | No | `false` | `true` |
 | format | string | No | `null` | `D MMMM YYYY, HH:mm z` |
 | timezone | string | No | `'Europe/London'` | `'Europe/London'` |
+| padding | boolean | No | `true` | `false` |
 | prefix | string | No | `null` | `Updated` |
 | suffix | string | No | `null` | `This is a suffix` |
 | script | object | Yes | N/A | { canon: { groupA: { fontSize: '28', lineHeight: '32',}, groupB: { fontSize: '32', lineHeight: '36', }, groupD: { fontSize: '44', lineHeight: '48', }, }, trafalgar: { groupA: { fontSize: '20', lineHeight: '24', }, groupB: { fontSize: '24', lineHeight: '28', }, groupD: { fontSize: '32', lineHeight: '36', }, }, } |
