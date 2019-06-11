@@ -57,8 +57,8 @@ const tamilTypography = {
   },
   greatPrimer: {
     groupA: {
-      fontSize: '12',
-      lineHeight: '20',
+      fontSize: '13',
+      lineHeight: '22',
     },
     groupB: {
       fontSize: '14',
@@ -71,12 +71,12 @@ const tamilTypography = {
   },
   bodyCopy: {
     groupA: {
-      fontSize: '13',
-      lineHeight: '22',
+      fontSize: '12',
+      lineHeight: '20',
     },
     groupB: {
       fontSize: '14',
-      lineHeight: '22',
+      lineHeight: '24',
     },
     groupD: {
       fontSize: '14',
@@ -85,8 +85,8 @@ const tamilTypography = {
   },
   pica: {
     groupA: {
-      fontSize: '14',
-      lineHeight: '21',
+      fontSize: '12',
+      lineHeight: '20',
     },
     groupB: {
       fontSize: '14',
