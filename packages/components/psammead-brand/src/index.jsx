@@ -71,6 +71,24 @@ const BrandSvg = styled.svg`
   /* stylelint-enable */
 `;
 
+const LocalisedBrandName = ({ brandName }) => {
+  const defaultBrandName = 'BBC News';
+
+  if (brandName !== defaultBrandName) {
+    return (
+      <Fragment>
+        <span lang="en-GB">{defaultBrandName}</span>
+        {// get substring after defaultBrandName
+        brandName.substring(
+          brandName.indexOf(defaultBrandName) + defaultBrandName.length,
+        )}
+      </Fragment>
+    );
+  }
+
+  return brandName;
+};
+
 const StyledBrand = ({ brandName, svgHeight, svg, maxWidth, minWidth }) => (
   <Fragment>
     {svg && (
@@ -87,7 +105,9 @@ const StyledBrand = ({ brandName, svgHeight, svg, maxWidth, minWidth }) => (
         >
           {svg.group}
         </BrandSvg>
-        <VisuallyHiddenText>{brandName}</VisuallyHiddenText>
+        <VisuallyHiddenText>
+          <LocalisedBrandName brandName={brandName} />
+        </VisuallyHiddenText>
       </Fragment>
     )}
   </Fragment>
