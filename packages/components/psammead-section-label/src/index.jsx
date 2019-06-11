@@ -111,7 +111,7 @@ const SectionLabel = ({
   dir,
   labelId,
   script,
-  hideSectionHeader
+  hideSectionHeader,
 }) => (
   <Wrapper script={script} bar={bar} hideSectionHeader={hideSectionHeader}>
     <Title script={script} dir={dir} id={labelId}>
