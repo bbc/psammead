@@ -59,8 +59,8 @@ const Wrapper = styled.div`
       }
     `}
 
-  ${({ hideSectionHeader }) =>
-    hideSectionHeader &&
+  ${({ visuallyHidden }) =>
+    visuallyHidden &&
     css`
       @media (max-width: ${GEL_GROUP_2_SCREEN_WIDTH_MAX}) {
         clip-path: inset(100%);
@@ -76,7 +76,7 @@ const Wrapper = styled.div`
 Wrapper.propTypes = {
   bar: bool.isRequired,
   script: shape(scriptPropType).isRequired,
-  hideSectionHeader: bool.isRequired,
+  visuallyHidden: bool.isRequired,
 };
 
 const paddingDir = ({ dir }) => `padding-${dir === 'ltr' ? 'right' : 'left'}`;
@@ -111,9 +111,9 @@ const SectionLabel = ({
   dir,
   labelId,
   script,
-  hideSectionHeader,
+  visuallyHidden,
 }) => (
-  <Wrapper script={script} bar={bar} hideSectionHeader={hideSectionHeader}>
+  <Wrapper script={script} bar={bar} visuallyHidden={visuallyHidden}>
     <Title script={script} dir={dir} id={labelId}>
       {title}
     </Title>
@@ -123,7 +123,7 @@ const SectionLabel = ({
 SectionLabel.defaultProps = {
   bar: true,
   dir: 'ltr',
-  hideSectionHeader: false,
+  visuallyHidden: false,
 };
 
 SectionLabel.propTypes = {
@@ -132,7 +132,7 @@ SectionLabel.propTypes = {
   dir: oneOf(['ltr', 'rtl']),
   labelId: string.isRequired,
   script: shape(scriptPropType).isRequired,
-  hideSectionHeader: bool,
+  visuallyHidden: bool,
 };
 
 export default SectionLabel;

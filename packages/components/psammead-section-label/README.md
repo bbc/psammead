@@ -22,6 +22,7 @@ The only provided child should be the title for the section, provided as a *stri
 | Argument  | Type | Required | Default | Example |
 | --------- | ---- | -------- | ------- | ------- |
 | bar | boolean | no | `true` | `false` |
+| visuallyHidden | boolean | no | `false ` | `true` |
 | children | string | yes | N/A | `'Most Read'` |
 | dir | string | no | `'ltr'` | `'rtl'` |
 | labelId | string | yes | N/A | `top-stories-label` |
@@ -51,6 +52,21 @@ import { latin } from '@bbc/gel-foundations/scripts';
 const WrappingComponent = () => (
   <div aria-labelledby="example-section-label">
     <SectionLabel script={latin} dir="ltr" bar={false} labelId="example-section-label">
+      Example section
+    </SectionLabel>
+  </div>
+);
+```
+
+You can also visually hide the SectionLabel at widths below 600px by adding the `visuallyHidden` prop:
+
+```jsx
+import SectionLabel from '@bbc/psammead-section-label';
+import { latin } from '@bbc/gel-foundations/scripts';
+
+const WrappingComponent = () => (
+  <div aria-labelledby="example-section-label">
+    <SectionLabel script={latin} dir="ltr" visuallyHidden={true} labelId="example-section-label">
       Example section
     </SectionLabel>
   </div>
