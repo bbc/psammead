@@ -83,7 +83,9 @@ This component should be used to signal the beginning of a grouping of story pro
 
 Although this component has the appearance of a horizontal rule, it does not use an `<hr>` tag, and therefore does not have the associated semantic meaning.
 
-This component wraps the title string in an `<h2>` element. The `labelId` prop will be applid to the `<h2>` as an `id` attribute, allowing the content of the element to be referenced by an `aria-labelledby` attribute. See the [examples](#usage) above.
+This component wraps the title string in an `<h2>` element. The `labelId` prop will be applied to the `<h2>` as an `id` attribute, allowing the content of the element to be referenced by an `aria-labelledby` attribute. See the [examples](#usage) above.
+
+Setting the `visuallyHidden` prop to true visually hides this component at widths <600px, however; it will still be available to screen-readers and other assistive technology.
 
 <!-- ## Roadmap -->
 
