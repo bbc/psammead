@@ -77,7 +77,7 @@ describe('SectionLabel', () => {
       <SectionLabel
         script={latin}
         bar={false}
-        hideSectionHeader
+        visuallyHidden
         labelId="test-section-label"
       />,
     );
