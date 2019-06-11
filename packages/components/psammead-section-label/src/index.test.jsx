@@ -15,7 +15,7 @@ describe('SectionLabel', () => {
 
       shouldMatchSnapshot(
         'should render correctly with explicitly showing the bar',
-        <SectionLabel script={latin} labelId="test-section-label">
+        <SectionLabel script={latin} labelId="test-section-label" bar>
           This is text in a SectionLabel, and there is a bar over to the right
         </SectionLabel>,
       );
