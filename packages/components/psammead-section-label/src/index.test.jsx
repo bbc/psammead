@@ -15,7 +15,7 @@ describe('SectionLabel', () => {
 
       shouldMatchSnapshot(
         'should render correctly with explicitly showing the bar',
-        <SectionLabel script={latin} labelId="test-section-label" bar>
+        <SectionLabel script={latin} labelId="test-section-label">
           This is text in a SectionLabel, and there is a bar over to the right
         </SectionLabel>,
       );
@@ -69,5 +69,17 @@ describe('SectionLabel', () => {
         </SectionLabel>,
       );
     });
+  });
+
+  describe('When hideSectionHeader is true', () => {
+    shouldMatchSnapshot(
+      'should add styling to hide SectionLabel when width of screen is less than 600 px',
+      <SectionLabel
+        script={latin}
+        bar={false}
+        hideSectionHeader={true}
+        labelId="test-section-label"
+      />
+    );
   });
 });
