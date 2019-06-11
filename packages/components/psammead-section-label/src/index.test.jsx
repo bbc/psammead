@@ -77,9 +77,9 @@ describe('SectionLabel', () => {
       <SectionLabel
         script={latin}
         bar={false}
-        hideSectionHeader={true}
+        hideSectionHeader
         labelId="test-section-label"
-      />
+      />,
     );
   });
 });
