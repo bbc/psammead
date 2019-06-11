@@ -38,4 +38,15 @@ describe('Brand', () => {
       minWidth={180}
     />,
   );
+
+  shouldMatchSnapshot(
+    'should render correctly with news brand name',
+    <Brand
+      brandName="BBC News"
+      svg={svg}
+      svgHeight={24}
+      maxWidth={280}
+      minWidth={180}
+    />,
+  );
 });
