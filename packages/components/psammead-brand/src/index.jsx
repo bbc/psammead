@@ -74,7 +74,7 @@ const BrandSvg = styled.svg`
 const LocalisedBrandName = ({ product, serviceLocalizedName }) =>
   serviceLocalizedName ? (
     <Fragment>
-      <span lang="en-GB">{product}</span>
+      <span lang="en-GB">{product},</span>
       {serviceLocalizedName}
     </Fragment>
   ) : (
@@ -83,7 +83,11 @@ const LocalisedBrandName = ({ product, serviceLocalizedName }) =>
 
 LocalisedBrandName.propTypes = {
   product: string.isRequired,
-  serviceLocalizedName: string.isRequired,
+  serviceLocalizedName: string,
+};
+
+LocalisedBrandName.defaultProps = {
+  serviceLocalizedName: null,
 };
 
 const StyledBrand = ({
@@ -122,7 +126,7 @@ const StyledBrand = ({
 
 const brandProps = {
   product: string.isRequired,
-  serviceLocalizedName: string.isRequired,
+  serviceLocalizedName: string,
   maxWidth: number.isRequired,
   minWidth: number.isRequired,
   svgHeight: number.isRequired,
@@ -137,6 +141,10 @@ const brandProps = {
 };
 
 StyledBrand.propTypes = brandProps;
+
+StyledBrand.defaultProps = {
+  serviceLocalizedName: null,
+};
 
 const Brand = ({
   product,
