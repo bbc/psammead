@@ -33,7 +33,7 @@ The `serviceLocalizedName` is an optional props referring to the local name of a
 | maxWidth | Number | yes | N/A | `380` |
 | svg | Object | yes | N/A | { group: `(<g fillrule="evenodd"><path d="M84.32" /></g>)`, viewbox: { height: 24, width: 167.95 }, ratio: 6.9979 } |
 | url | String | no | N/A | `https://www.bbc.co.uk/news` |
-| serviceLocalizedName | String | no      | N/A     | `'Yoruba'` |
+| serviceLocalizedName | String | no | N/A | `'Yoruba'` |
 
 ## Usage
 
