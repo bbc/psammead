@@ -1,7 +1,7 @@
 {
   "name": "@bbc/psammead-locales",
   "version": "0.4.1",
-  "description": "A collection of string constants for use in CSS, containing non-GEL styling details that are bespoke to specific BBC services and products.",
+  "description": "A collection of locale configs.",
   "repository": {
     "type": "git",
     "url": "https://github.com/bbc/psammead/tree/latest/packages/utilities/psammead-locales"
@@ -18,14 +18,12 @@
   "keywords": [
     "bbc",
     "utilities",
-    "styles",
-    "colours",
-    "colors",
-    "fonts"
+    "moment",
+    "timestamp",
+    "locales",
+    "localization"
   ],
-  "devDependencies": {
-    "@bbc/gel-foundations": "^2.0.0",
-    "@bbc/psammead-storybook-helpers": "^2.1.1",
-    "@bbc/psammead-test-helpers": "^0.3.0"
+  "dependencies": {
+    "moment": "^2.24.0"
   }
 }
