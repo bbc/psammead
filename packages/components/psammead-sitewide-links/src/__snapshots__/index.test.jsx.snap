@@ -73,7 +73,7 @@ exports[`SitewideLinks should render correctly 1`] = `
   .c2 {
     grid-column-gap: 0.5rem;
     grid-template-columns: repeat(2,1fr);
-    grid-template-rows: repeat(4,auto);
+    grid-template-rows: repeat( 4,auto );
   }
 }
 
@@ -81,7 +81,7 @@ exports[`SitewideLinks should render correctly 1`] = `
   .c2 {
     grid-column-gap: 1rem;
     grid-template-columns: repeat(3,1fr);
-    grid-template-rows: repeat(3,auto);
+    grid-template-rows: repeat( 3,auto );
   }
 }
 
@@ -89,7 +89,7 @@ exports[`SitewideLinks should render correctly 1`] = `
   .c2 {
     grid-column-gap: 1rem;
     grid-template-columns: repeat(4,1fr);
-    grid-template-rows: repeat(3,auto);
+    grid-template-rows: repeat( 3,auto );
   }
 }
 
@@ -97,7 +97,7 @@ exports[`SitewideLinks should render correctly 1`] = `
   .c2 {
     grid-column-gap: 1rem;
     grid-template-columns: repeat(5,1fr);
-    grid-template-rows: repeat(3,auto);
+    grid-template-rows: repeat( 3,auto );
   }
 }
 
@@ -147,6 +147,96 @@ exports[`SitewideLinks should render correctly 1`] = `
       className="c2"
       role="list"
     >
+      <li
+        className="c3"
+        role="listitem"
+      >
+        <a
+          className="c4 c5"
+          href="https://www.bbc.co.uk/news"
+        >
+          <span
+            className="c6"
+          >
+            Link
+          </span>
+        </a>
+      </li>
+      <li
+        className="c3"
+        role="listitem"
+      >
+        <a
+          className="c4 c5"
+          href="https://www.bbc.co.uk/news"
+        >
+          <span
+            className="c6"
+          >
+            Link
+          </span>
+        </a>
+      </li>
+      <li
+        className="c3"
+        role="listitem"
+      >
+        <a
+          className="c4 c5"
+          href="https://www.bbc.co.uk/news"
+        >
+          <span
+            className="c6"
+          >
+            Link
+          </span>
+        </a>
+      </li>
+      <li
+        className="c3"
+        role="listitem"
+      >
+        <a
+          className="c4 c5"
+          href="https://www.bbc.co.uk/news"
+        >
+          <span
+            className="c6"
+          >
+            Link
+          </span>
+        </a>
+      </li>
+      <li
+        className="c3"
+        role="listitem"
+      >
+        <a
+          className="c4 c5"
+          href="https://www.bbc.co.uk/news"
+        >
+          <span
+            className="c6"
+          >
+            Link
+          </span>
+        </a>
+      </li>
+      <li
+        className="c3"
+        role="listitem"
+      >
+        <a
+          className="c4 c5"
+          href="https://www.bbc.co.uk/news"
+        >
+          <span
+            className="c6"
+          >
+            Link
+          </span>
+        </a>
+      </li>
       <li
         className="c3"
         role="listitem"
