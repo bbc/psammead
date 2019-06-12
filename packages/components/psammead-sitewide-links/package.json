@@ -1,6 +1,6 @@
 {
   "name": "@bbc/psammead-sitewide-links",
-  "version": "0.3.8",
+  "version": "0.3.9",
   "description": "React styled component for a sitewide-links",
   "main": "dist/index.js",
   "repository": {
