@@ -464,8 +464,8 @@ exports[`StoryPromo should render correctly 1`] = `
 }
 
 .c3 {
-  font-size: 1.125rem;
-  line-height: 1.375rem;
+  font-size: 0.9375rem;
+  line-height: 1.25rem;
   color: #222222;
   font-family: ReithSerif,Helvetica,Arial,sans-serif;
   margin: 0;
@@ -549,15 +549,22 @@ exports[`StoryPromo should render correctly 1`] = `
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
   .c3 {
-    font-size: 1.125rem;
-    line-height: 1.375rem;
+    font-size: 1rem;
+    line-height: 1.25rem;
   }
 }
 
 @media (min-width:37.5rem) {
   .c3 {
-    font-size: 1.25rem;
-    line-height: 1.5rem;
+    font-size: 1rem;
+    line-height: 1.25rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .c3 {
+    font-size: 1.125rem;
+    line-height: 1.375rem;
   }
 }
 
@@ -691,8 +698,8 @@ exports[`StoryPromo with Media Indicator should render correctly 1`] = `
 }
 
 .c9 {
-  font-size: 1.125rem;
-  line-height: 1.375rem;
+  font-size: 0.9375rem;
+  line-height: 1.25rem;
   color: #222222;
   font-family: ReithSerif,Helvetica,Arial,sans-serif;
   margin: 0;
@@ -783,15 +790,22 @@ exports[`StoryPromo with Media Indicator should render correctly 1`] = `
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
   .c9 {
-    font-size: 1.125rem;
-    line-height: 1.375rem;
+    font-size: 1rem;
+    line-height: 1.25rem;
   }
 }
 
 @media (min-width:37.5rem) {
   .c9 {
-    font-size: 1.25rem;
-    line-height: 1.5rem;
+    font-size: 1rem;
+    line-height: 1.25rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .c9 {
+    font-size: 1.125rem;
+    line-height: 1.375rem;
   }
 }
 

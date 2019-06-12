@@ -13,6 +13,7 @@ const TimestampContainer = ({
   dateTimeFormat,
   format,
   isRelative,
+  padding,
   prefix,
   suffix,
   timezone,
@@ -25,6 +26,7 @@ const TimestampContainer = ({
   return (
     <Timestamp
       datetime={formatUnixTimestamp(timestamp, dateTimeFormat, timezone)}
+      padding={padding}
       script={script}
     >
       {prefix ? `${prefix} ` : null}
@@ -40,6 +42,7 @@ TimestampContainer.propTypes = {
   isRelative: bool,
   format: string,
   timezone: string,
+  padding: bool,
   prefix: string,
   suffix: string,
   script: shape(scriptPropType).isRequired,
@@ -49,6 +52,7 @@ TimestampContainer.defaultProps = {
   isRelative: false,
   format: null,
   timezone: 'Europe/London',
+  padding: true,
   prefix: null,
   suffix: null,
 };
