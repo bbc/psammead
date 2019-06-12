@@ -4,9 +4,7 @@ import { withKnobs, select, text } from '@storybook/addon-knobs';
 import VisuallyHiddenText from '@bbc/psammead-visually-hidden-text';
 import notes from '../README.md';
 import Copyright from './index';
-// inputProvider([{ name: 'Caption' }], ([captionText], script) => (
-//   <Caption script={script}>{captionText}</Caption>
-// )),
+
 storiesOf('Components|Copyright', module)
   .addDecorator(withKnobs)
   .add(
