@@ -9,12 +9,12 @@ const latinWithDiacriticsTypography = {
       lineHeight: '32',
     },
     groupB: {
-      fontSize: '24',
-      lineHeight: '28',
+      fontSize: '32',
+      lineHeight: '38',
     },
     groupD: {
-      fontSize: '38',
-      lineHeight: '42',
+      fontSize: '44',
+      lineHeight: '52',
     },
   },
   trafalgar: {
@@ -23,12 +23,12 @@ const latinWithDiacriticsTypography = {
       lineHeight: '24',
     },
     groupB: {
-      fontSize: '22',
-      lineHeight: '26',
+      fontSize: '24',
+      lineHeight: '30',
     },
     groupD: {
-      fontSize: '30',
-      lineHeight: '34',
+      fontSize: '32',
+      lineHeight: '38',
     },
   },
   paragon: {
@@ -38,11 +38,11 @@ const latinWithDiacriticsTypography = {
     },
     groupB: {
       fontSize: '22',
-      lineHeight: '26',
+      lineHeight: '28',
     },
     groupD: {
       fontSize: '28',
-      lineHeight: '32',
+      lineHeight: '34',
     },
   },
   doublePica: {
@@ -56,7 +56,7 @@ const latinWithDiacriticsTypography = {
     },
     groupD: {
       fontSize: '24',
-      lineHeight: '28',
+      lineHeight: '30',
     },
   },
   greatPrimer: {
@@ -104,11 +104,11 @@ const latinWithDiacriticsTypography = {
   longPrimer: {
     groupA: {
       fontSize: '15',
-      lineHeight: '18',
+      lineHeight: '20',
     },
     groupB: {
       fontSize: '15',
-      lineHeight: '18',
+      lineHeight: '20',
     },
     groupD: {
       fontSize: '14',

@@ -5,7 +5,7 @@ const arabicTypography = {
       lineHeight: '42',
     },
     groupB: {
-      fontSize: '36',
+      fontSize: '38',
       lineHeight: '46',
     },
     groupD: {
@@ -19,26 +19,26 @@ const arabicTypography = {
       lineHeight: '34',
     },
     groupB: {
-      fontSize: '26',
-      lineHeight: '36',
+      fontSize: '32',
+      lineHeight: '38',
     },
     groupD: {
-      fontSize: '38',
-      lineHeight: '48',
+      fontSize: '36',
+      lineHeight: '50',
     },
   },
   paragon: {
     groupA: {
-      fontSize: '20',
+      fontSize: '24',
       lineHeight: '30',
     },
     groupB: {
-      fontSize: '24',
-      lineHeight: '34',
+      fontSize: '28',
+      lineHeight: '40',
     },
     groupD: {
-      fontSize: '34',
-      lineHeight: '44',
+      fontSize: '32',
+      lineHeight: '40',
     },
   },
   doublePica: {
@@ -47,26 +47,26 @@ const arabicTypography = {
       lineHeight: '32',
     },
     groupB: {
-      fontSize: '24',
-      lineHeight: '28',
+      fontSize: '26',
+      lineHeight: '36',
     },
     groupD: {
-      fontSize: '24',
-      lineHeight: '28',
+      fontSize: '28',
+      lineHeight: '36',
     },
   },
   greatPrimer: {
     groupA: {
-      fontSize: '18',
-      lineHeight: '26',
+      fontSize: '22',
+      lineHeight: '28',
     },
     groupB: {
-      fontSize: '20',
-      lineHeight: '24',
+      fontSize: '24',
+      lineHeight: '32',
     },
     groupD: {
-      fontSize: '20',
-      lineHeight: '26',
+      fontSize: '26',
+      lineHeight: '34',
     },
   },
   bodyCopy: {
@@ -75,12 +75,12 @@ const arabicTypography = {
       lineHeight: '28',
     },
     groupB: {
-      fontSize: '20',
-      lineHeight: '30',
+      fontSize: '22',
+      lineHeight: '32',
     },
     groupD: {
       fontSize: '22',
-      lineHeight: '34',
+      lineHeight: '32',
     },
   },
   pica: {
@@ -89,12 +89,12 @@ const arabicTypography = {
       lineHeight: '26',
     },
     groupB: {
-      fontSize: '18',
-      lineHeight: '24',
+      fontSize: '20',
+      lineHeight: '26',
     },
     groupD: {
-      fontSize: '22',
-      lineHeight: '28',
+      fontSize: '20',
+      lineHeight: '26',
     },
   },
   longPrimer: {
@@ -107,8 +107,8 @@ const arabicTypography = {
       lineHeight: '24',
     },
     groupD: {
-      fontSize: '20',
-      lineHeight: '26',
+      fontSize: '18',
+      lineHeight: '24',
     },
   },
   brevier: {
@@ -117,26 +117,26 @@ const arabicTypography = {
       lineHeight: '20',
     },
     groupB: {
-      fontSize: '16',
-      lineHeight: '20',
+      fontSize: '18',
+      lineHeight: '24',
     },
     groupD: {
       fontSize: '18',
-      lineHeight: '22',
+      lineHeight: '24',
     },
   },
   minion: {
     groupA: {
-      fontSize: '14',
-      lineHeight: '20',
+      fontSize: '12',
+      lineHeight: '16',
     },
     groupB: {
-      fontSize: '14',
-      lineHeight: '20',
+      fontSize: '12',
+      lineHeight: '16',
     },
     groupD: {
-      fontSize: '14',
-      lineHeight: '20',
+      fontSize: '12',
+      lineHeight: '16',
     },
   },
 };
