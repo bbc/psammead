@@ -16,7 +16,7 @@ The `svgHeight` value acts as a placeholder for the `svg` element meaning the ov
 
 The `url` value is the link that points to the frontpage of the service associated with the `svg`.
 
-The `serviceLocalizedName` is an optional props referring to the local name of a service eg `Yoruba`.
+The `serviceLocalizedName` is an optional prop referring to the local name of a service eg `Yoruba`.
 
 ## Installation
 
