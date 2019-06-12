@@ -81,9 +81,7 @@ exports[`SectionLabel With bar With title should render correctly 1`] = `
 .c0::before {
   content: '';
   position: absolute;
-  height: 0.0625rem;
-  border: none;
-  background: #AEAEB5;
+  border-top: 0.0625rem solid #AEAEB5;
   left: 0;
   right: 0;
   top: 0.75rem;
@@ -118,6 +116,12 @@ exports[`SectionLabel With bar With title should render correctly 1`] = `
 @media (min-width:37.5rem) {
   .c0::before {
     top: 0.875rem;
+  }
+}
+
+@media screen and (-ms-high-contrast:active) {
+  .c0::before {
+    border-color: windowText;
   }
 }
 
@@ -164,9 +168,7 @@ exports[`SectionLabel With bar With title should render correctly with arabic sc
 .c0::before {
   content: '';
   position: absolute;
-  height: 0.0625rem;
-  border: none;
-  background: #AEAEB5;
+  border-top: 0.0625rem solid #AEAEB5;
   left: 0;
   right: 0;
   top: 1rem;
@@ -201,6 +203,12 @@ exports[`SectionLabel With bar With title should render correctly with arabic sc
 @media (min-width:37.5rem) {
   .c0::before {
     top: 0.875rem;
+  }
+}
+
+@media screen and (-ms-high-contrast:active) {
+  .c0::before {
+    border-color: windowText;
   }
 }
 
@@ -247,9 +255,7 @@ exports[`SectionLabel With bar With title should render correctly with explicit 
 .c0::before {
   content: '';
   position: absolute;
-  height: 0.0625rem;
-  border: none;
-  background: #AEAEB5;
+  border-top: 0.0625rem solid #AEAEB5;
   left: 0;
   right: 0;
   top: 0.75rem;
@@ -284,6 +290,12 @@ exports[`SectionLabel With bar With title should render correctly with explicit 
 @media (min-width:37.5rem) {
   .c0::before {
     top: 0.875rem;
+  }
+}
+
+@media screen and (-ms-high-contrast:active) {
+  .c0::before {
+    border-color: windowText;
   }
 }
 
@@ -330,9 +342,7 @@ exports[`SectionLabel With bar With title should render correctly with explicitl
 .c0::before {
   content: '';
   position: absolute;
-  height: 0.0625rem;
-  border: none;
-  background: #AEAEB5;
+  border-top: 0.0625rem solid #AEAEB5;
   left: 0;
   right: 0;
   top: 0.75rem;
@@ -367,6 +377,12 @@ exports[`SectionLabel With bar With title should render correctly with explicitl
 @media (min-width:37.5rem) {
   .c0::before {
     top: 0.875rem;
+  }
+}
+
+@media screen and (-ms-high-contrast:active) {
+  .c0::before {
+    border-color: windowText;
   }
 }
 

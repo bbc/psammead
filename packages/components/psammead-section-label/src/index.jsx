@@ -50,12 +50,13 @@ const Wrapper = styled.div`
       &::before {
         content: '';
         position: absolute;
-        height: 0.0625rem;
-        border: none;
-        background: ${C_PEBBLE};
+        border-top: 0.0625rem solid ${C_PEBBLE};
         left: 0;
         right: 0;
         ${({ script }) => (script ? top(script) : 'top: 0')};
+        @media screen and (-ms-high-contrast: active) {
+          border-color: windowText;
+        }
       }
     `}
 

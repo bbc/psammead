@@ -10,7 +10,7 @@ describe('getTypeSizes', () => {
     line-height: 2.625rem;
 
     ${MEDIA_QUERY_TYPOGRAPHY.SMART_PHONE_ONLY} {
-      font-size: 2.25rem;
+      font-size: 2.375rem;
       line-height: 2.875rem;
     }
 
