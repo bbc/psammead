@@ -74,8 +74,7 @@ const BrandSvg = styled.svg`
 const LocalisedBrandName = ({ product, serviceLocalizedName }) =>
   serviceLocalizedName ? (
     <Fragment>
-      <span lang="en-GB">{product},</span>
-      {serviceLocalizedName}
+      <span lang="en-GB">{product}</span>, {serviceLocalizedName}
     </Fragment>
   ) : (
     product
