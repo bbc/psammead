@@ -19,6 +19,20 @@ const tamilTypography = {
       lineHeight: '24',
     },
     groupB: {
+      fontSize: '22',
+      lineHeight: '30',
+    },
+    groupD: {
+      fontSize: '28',
+      lineHeight: '38',
+    },
+  },
+  paragon: {
+    groupA: {
+      fontSize: '16',
+      lineHeight: '24',
+    },
+    groupB: {
       fontSize: '18',
       lineHeight: '26',
     },
@@ -27,56 +41,42 @@ const tamilTypography = {
       lineHeight: '30',
     },
   },
-  paragon: {
-    groupA: {
-      fontSize: '18',
-      lineHeight: '26',
-    },
-    groupB: {
-      fontSize: '18',
-      lineHeight: '26',
-    },
-    groupD: {
-      fontSize: '20',
-      lineHeight: '28',
-    },
-  },
   doublePica: {
     groupA: {
-      fontSize: '16',
-      lineHeight: '24',
+      fontSize: '14',
+      lineHeight: '22',
     },
     groupB: {
       fontSize: '16',
       lineHeight: '24',
     },
     groupD: {
-      fontSize: '16',
-      lineHeight: '24',
+      fontSize: '18',
+      lineHeight: '26',
     },
   },
   greatPrimer: {
     groupA: {
-      fontSize: '14',
-      lineHeight: '21',
+      fontSize: '13',
+      lineHeight: '22',
     },
     groupB: {
-      fontSize: '13',
-      lineHeight: '20',
+      fontSize: '14',
+      lineHeight: '24',
     },
     groupD: {
-      fontSize: '14',
-      lineHeight: '21',
+      fontSize: '16',
+      lineHeight: '24',
     },
   },
   bodyCopy: {
     groupA: {
-      fontSize: '13',
-      lineHeight: '22',
+      fontSize: '12',
+      lineHeight: '20',
     },
     groupB: {
-      fontSize: '13',
-      lineHeight: '22',
+      fontSize: '14',
+      lineHeight: '24',
     },
     groupD: {
       fontSize: '14',
@@ -85,16 +85,16 @@ const tamilTypography = {
   },
   pica: {
     groupA: {
-      fontSize: '14',
-      lineHeight: '21',
+      fontSize: '12',
+      lineHeight: '20',
     },
     groupB: {
-      fontSize: '13',
-      lineHeight: '20',
+      fontSize: '14',
+      lineHeight: '22',
     },
     groupD: {
       fontSize: '14',
-      lineHeight: '21',
+      lineHeight: '22',
     },
   },
   longPrimer: {
