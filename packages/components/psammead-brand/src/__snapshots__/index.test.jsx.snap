@@ -82,6 +82,7 @@ exports[`Brand should render correctly with link not provided 1`] = `
       lang="en-GB"
     >
       Default Brand Name
+      ,
     </span>
     Service
   </span>
@@ -181,6 +182,7 @@ exports[`Brand should render correctly with link provided 1`] = `
         lang="en-GB"
       >
         Default Brand Name
+        ,
       </span>
       Service
     </span>
