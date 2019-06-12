@@ -58,7 +58,7 @@ const StoryPromoWrapper = styled.div`
 const ImageGridColumnsTopStory = css`
   grid-column: 1 / span 6;
 
-  @media (min-width: ${GEL_GROUP_2_SCREEN_WIDTH_MAX}) {
+  @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
     grid-column: 1 / span 2;
   }
 
@@ -132,7 +132,7 @@ export const Summary = styled.p`
 const TextGridColumnsTopStory = css`
   grid-column: 1 / span 6;
 
-  @media (min-width: ${GEL_GROUP_2_SCREEN_WIDTH_MAX}) {
+  @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
     grid-column: 3 / span 4;
   }
 
