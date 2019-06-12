@@ -81,9 +81,9 @@ exports[`Brand should render correctly with link not provided 1`] = `
     <span
       lang="en-GB"
     >
-      BBC News
+      Default Brand Name
     </span>
-     Brand Name
+    Service
   </span>
 </div>
 `;
@@ -180,15 +180,15 @@ exports[`Brand should render correctly with link provided 1`] = `
       <span
         lang="en-GB"
       >
-        BBC News
+        Default Brand Name
       </span>
-       Brand Name
+      Service
     </span>
   </a>
 </div>
 `;
 
-exports[`Brand should render correctly with news brand name 1`] = `
+exports[`Brand should render correctly with no service Localized Name 1`] = `
 .c2 {
   -webkit-clip-path: inset(100%);
   clip-path: inset(100%);
