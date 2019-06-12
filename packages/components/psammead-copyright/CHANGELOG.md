@@ -3,7 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
-| 0.4.0   | [PR#617](https://github.com/bbc/psammead/pull/617) Add optional `position` prop, and default position to left of its parent container |
+| 1.0.0   | [PR#617](https://github.com/bbc/psammead/pull/617) Add optional `position` prop, and default position to left of its parent container |
 | 0.3.7   | [PR#424](https://github.com/bbc/psammead/pull/424) Add Snyk badge to readme |
 | 0.3.6   | [PR#417](https://github.com/bbc/psammead/pull/417) Add text input knob to Copyright |
 | 0.3.5   | [PR#407](https://github.com/bbc/psammead/pull/407) Organise dependencies properly |
