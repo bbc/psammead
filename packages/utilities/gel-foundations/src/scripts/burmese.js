@@ -15,16 +15,16 @@ const burmeseTypography = {
   },
   trafalgar: {
     groupA: {
-      fontSize: '18',
-      lineHeight: '28',
-    },
-    groupB: {
-      fontSize: '22',
+      fontSize: '20',
       lineHeight: '30',
     },
+    groupB: {
+      fontSize: '24',
+      lineHeight: '36',
+    },
     groupD: {
-      fontSize: '28',
-      lineHeight: '42',
+      fontSize: '38',
+      lineHeight: '60',
     },
   },
   paragon: {
@@ -34,11 +34,11 @@ const burmeseTypography = {
     },
     groupB: {
       fontSize: '22',
-      lineHeight: '32',
+      lineHeight: '30',
     },
     groupD: {
       fontSize: '28',
-      lineHeight: '42',
+      lineHeight: '48',
     },
   },
   doublePica: {
@@ -51,22 +51,22 @@ const burmeseTypography = {
       lineHeight: '30',
     },
     groupD: {
-      fontSize: '24',
-      lineHeight: '36',
+      fontSize: '26',
+      lineHeight: '44',
     },
   },
   greatPrimer: {
     groupA: {
-      fontSize: '18',
-      lineHeight: '28',
+      fontSize: '16',
+      lineHeight: '26',
     },
     groupB: {
       fontSize: '18',
-      lineHeight: '30',
+      lineHeight: '28',
     },
     groupD: {
-      fontSize: '20',
-      lineHeight: '30',
+      fontSize: '22',
+      lineHeight: '32',
     },
   },
   bodyCopy: {
@@ -79,22 +79,22 @@ const burmeseTypography = {
       lineHeight: '28',
     },
     groupD: {
-      fontSize: '16',
-      lineHeight: '30',
+      fontSize: '18',
+      lineHeight: '32',
     },
   },
   pica: {
     groupA: {
       fontSize: '15',
-      lineHeight: '20',
+      lineHeight: '25',
     },
     groupB: {
       fontSize: '16',
-      lineHeight: '26',
+      lineHeight: '28',
     },
     groupD: {
       fontSize: '16',
-      lineHeight: '28',
+      lineHeight: '30',
     },
   },
   longPrimer: {
@@ -104,11 +104,11 @@ const burmeseTypography = {
     },
     groupB: {
       fontSize: '15',
-      lineHeight: '24',
+      lineHeight: '25',
     },
     groupD: {
       fontSize: '15',
-      lineHeight: '24',
+      lineHeight: '25',
     },
   },
   brevier: {

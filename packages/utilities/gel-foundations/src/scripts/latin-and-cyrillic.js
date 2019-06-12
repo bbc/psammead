@@ -46,8 +46,8 @@ const latinAndCyrillicTypography = {
   },
   doublePica: {
     groupA: {
-      fontSize: '20',
-      lineHeight: '24',
+      fontSize: '18',
+      lineHeight: '22',
     },
     groupB: {
       fontSize: '20',
@@ -117,7 +117,7 @@ const latinAndCyrillicTypography = {
   brevier: {
     groupA: {
       fontSize: '14',
-      lineHeight: '16',
+      lineHeight: '18',
     },
     groupB: {
       fontSize: '14',
