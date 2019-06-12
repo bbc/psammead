@@ -27,7 +27,7 @@ The `serviceLocalizedName` is an optional props referring to the local name of a
 <!-- prettier-ignore -->
 | Argument  | Type   | Required | Default | Example      |
 | --------- | ------ | -------- | ------- | ------------ |
-| product | String | yes      | N/A     | `'BBC News'` |
+| product | String | yes | N/A | `'BBC News'` |
 | svgHeight | Number | yes | N/A | `24` |
 | minWidth | Number | yes | N/A | `240` |
 | maxWidth | Number | yes | N/A | `380` |
