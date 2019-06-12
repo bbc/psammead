@@ -11,8 +11,8 @@ exports[`Copyright should render correctly 1`] = `
   font-family: ReithSans,Helvetica,Arial,sans-serif;
   position: absolute;
   bottom: 0;
-  right: 0;
   margin: 0;
+  left: 0;
 }
 
 <p
