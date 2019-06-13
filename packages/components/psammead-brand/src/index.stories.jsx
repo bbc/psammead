@@ -39,7 +39,7 @@ storiesOf('Components|Brand', module)
       return (
         <Brand
           product="Default Brand Name"
-          serviceLocalizedName="Service"
+          serviceLocalisedName="Service"
           svgHeight={svgHeightInput}
           minWidth={minWidthInput}
           maxWidth={maxWidthInput}
@@ -62,7 +62,7 @@ storiesOf('Components|Brand', module)
       return (
         <Brand
           product="Default Brand Name"
-          serviceLocalizedName="Service"
+          serviceLocalisedName="Service"
           svgHeight={svgHeightInput}
           minWidth={minWidthInput}
           maxWidth={maxWidthInput}

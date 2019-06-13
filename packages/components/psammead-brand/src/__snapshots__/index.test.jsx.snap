@@ -190,7 +190,7 @@ exports[`Brand should render correctly with link provided 1`] = `
 </div>
 `;
 
-exports[`Brand should render correctly with no service Localized Name 1`] = `
+exports[`Brand should render correctly with no service Localised Name 1`] = `
 .c2 {
   -webkit-clip-path: inset(100%);
   clip-path: inset(100%);

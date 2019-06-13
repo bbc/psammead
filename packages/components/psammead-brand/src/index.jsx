@@ -71,10 +71,10 @@ const BrandSvg = styled.svg`
   /* stylelint-enable */
 `;
 
-const LocalisedBrandName = ({ product, serviceLocalizedName }) =>
-  serviceLocalizedName ? (
+const LocalisedBrandName = ({ product, serviceLocalisedName }) =>
+  serviceLocalisedName ? (
     <Fragment>
-      <span lang="en-GB">{product}</span>, {serviceLocalizedName}
+      <span lang="en-GB">{product}</span>, {serviceLocalisedName}
     </Fragment>
   ) : (
     product
@@ -82,16 +82,16 @@ const LocalisedBrandName = ({ product, serviceLocalizedName }) =>
 
 LocalisedBrandName.propTypes = {
   product: string.isRequired,
-  serviceLocalizedName: string,
+  serviceLocalisedName: string,
 };
 
 LocalisedBrandName.defaultProps = {
-  serviceLocalizedName: null,
+  serviceLocalisedName: null,
 };
 
 const StyledBrand = ({
   product,
-  serviceLocalizedName,
+  serviceLocalisedName,
   svgHeight,
   svg,
   maxWidth,
@@ -115,7 +115,7 @@ const StyledBrand = ({
         <VisuallyHiddenText>
           <LocalisedBrandName
             product={product}
-            serviceLocalizedName={serviceLocalizedName}
+            serviceLocalisedName={serviceLocalisedName}
           />
         </VisuallyHiddenText>
       </Fragment>
@@ -125,7 +125,7 @@ const StyledBrand = ({
 
 const brandProps = {
   product: string.isRequired,
-  serviceLocalizedName: string,
+  serviceLocalisedName: string,
   maxWidth: number.isRequired,
   minWidth: number.isRequired,
   svgHeight: number.isRequired,
@@ -142,12 +142,12 @@ const brandProps = {
 StyledBrand.propTypes = brandProps;
 
 StyledBrand.defaultProps = {
-  serviceLocalizedName: null,
+  serviceLocalisedName: null,
 };
 
 const Brand = ({
   product,
-  serviceLocalizedName,
+  serviceLocalisedName,
   svgHeight,
   minWidth,
   maxWidth,
@@ -156,7 +156,7 @@ const Brand = ({
 }) => {
   const styledBrandProps = {
     product,
-    serviceLocalizedName,
+    serviceLocalisedName,
     svgHeight,
     minWidth,
     maxWidth,
@@ -178,13 +178,13 @@ const Brand = ({
 
 Brand.defaultProps = {
   url: null,
-  serviceLocalizedName: null,
+  serviceLocalisedName: null,
 };
 
 Brand.propTypes = {
   ...brandProps,
   url: string,
-  serviceLocalizedName: string,
+  serviceLocalisedName: string,
 };
 
 export default Brand;

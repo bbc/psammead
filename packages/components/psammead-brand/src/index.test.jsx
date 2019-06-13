@@ -20,7 +20,7 @@ describe('Brand', () => {
     'should render correctly with link provided',
     <Brand
       product="Default Brand Name"
-      serviceLocalizedName="Service"
+      serviceLocalisedName="Service"
       svgHeight={24}
       maxWidth={280}
       minWidth={180}
@@ -33,7 +33,7 @@ describe('Brand', () => {
     'should render correctly with link not provided',
     <Brand
       product="Default Brand Name"
-      serviceLocalizedName="Service"
+      serviceLocalisedName="Service"
       svg={svg}
       svgHeight={24}
       maxWidth={280}
@@ -42,7 +42,7 @@ describe('Brand', () => {
   );
 
   shouldMatchSnapshot(
-    'should render correctly with no service Localized Name',
+    'should render correctly with no service Localised Name',
     <Brand
       product="BBC News"
       svg={svg}
