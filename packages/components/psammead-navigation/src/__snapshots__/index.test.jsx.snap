@@ -1,0 +1,93 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Navigation should render correctly 1`] = `
+.c0 {
+  padding: 0 0.5rem;
+  background-color: #B80000;
+}
+
+.c1 {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+
+.c2 {
+  display: inline-block;
+  position: relative;
+  z-index: 2;
+}
+
+.c3 {
+  font-size: 0.9375rem;
+  line-height: 1.25rem;
+  font-family: ReithSans,Helvetica,Arial,sans-serif;
+  padding: 0.75rem 0.5rem;
+  color: #FDFDFD;
+  cursor: pointer;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.c3:hover::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0.5rem;
+  right: 0.5rem;
+  border-bottom: 0.25rem solid #FFFFFF;
+}
+
+@media (max-width:37.4375rem) {
+  .c0 {
+    padding: 0;
+  }
+}
+
+@media (max-width:37.4375rem) {
+  .c2::after {
+    content: ' ';
+    position: absolute;
+    bottom: 0;
+    left: 0.5rem;
+    width: 37.5rem;
+    border-bottom: 1px solid rgba(255,255,255,0.7);
+    z-index: -1;
+  }
+}
+
+@media (min-width:20rem) and (max-width:37.4375rem) {
+  .c3 {
+    font-size: 1rem;
+    line-height: 1.25rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .c3 {
+    font-size: 1rem;
+    line-height: 1.25rem;
+  }
+}
+
+<div
+  className="c0"
+>
+  <ul
+    className="c1"
+    role="list"
+  >
+    <li
+      className="c2"
+      role="listitem"
+    >
+      <a
+        className="c3"
+        href="/igbo"
+      />
+    </li>
+  </ul>
+</div>
+`;
