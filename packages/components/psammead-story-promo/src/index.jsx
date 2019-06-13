@@ -75,11 +75,11 @@ const ImageGridColumns = css`
 `;
 
 const ImageGridFallbackTopStory = css`
-  padding-bottom: ${GEL_GUTTER_BELOW_600PX};
+  margin-bottom: ${GEL_GUTTER_BELOW_600PX};
 
   @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
     max-width: ${twoOfSixColumnsMaxWidthScaleable};
-    padding-bottom: none;
+    margin-bottom: none;
   }
 `;
 

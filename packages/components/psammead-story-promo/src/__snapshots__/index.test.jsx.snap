@@ -5,7 +5,7 @@ exports[`StoryPromo - Top Story should render correctly 1`] = `
   display: inline-block;
   vertical-align: top;
   position: relative;
-  padding-bottom: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 
 .c3 {
@@ -78,7 +78,7 @@ exports[`StoryPromo - Top Story should render correctly 1`] = `
 @media (min-width:37.5rem) {
   .c1 {
     max-width: 33.33%;
-    padding-bottom: none;
+    margin-bottom: none;
   }
 }
 
@@ -249,7 +249,7 @@ exports[`StoryPromo - Top Story with Media Indicator should render correctly 1`]
   display: inline-block;
   vertical-align: top;
   position: relative;
-  padding-bottom: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 
 .c2 {
@@ -327,7 +327,7 @@ exports[`StoryPromo - Top Story with Media Indicator should render correctly 1`]
 @media (min-width:37.5rem) {
   .c1 {
     max-width: 33.33%;
-    padding-bottom: none;
+    margin-bottom: none;
   }
 }
 
