@@ -43,7 +43,6 @@ const StoryPromoWrapper = styled.div`
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-column-gap: ${GEL_GUTTER_BELOW_600PX};
-    grid-row-gap: ${GEL_GUTTER_BELOW_600PX};
 
     @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
       grid-column-gap: ${GEL_GUTTER_ABOVE_600PX};
@@ -78,8 +77,21 @@ const ImageGridColumns = css`
 const ImageGridItem = styled.div`
   display: inline-block;
   vertical-align: top;
-  max-width: ${twoOfSixColumnsMaxWidthScaleable};
   position: relative;
+
+  ${({ topStory }) =>
+    topStory
+      ? css`
+          padding-bottom: ${GEL_GUTTER_BELOW_600PX};
+
+          @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
+            max-width: ${twoOfSixColumnsMaxWidthScaleable};
+            padding-bottom: none;
+          }
+        `
+      : css`
+          max-width: ${twoOfSixColumnsMaxWidthScaleable};
+        `}
 
   @media (min-width: ${GEL_GROUP_5_SCREEN_WIDTH_MIN}) {
     max-width: ${fourOfTwelveColumnsMaxWidthScaleable};
@@ -152,8 +164,18 @@ const TextGridColumns = css`
 const TextGridItem = styled.div`
   display: inline-block;
   vertical-align: top;
-  padding: 0 ${GEL_SPACING};
-  max-width: ${fourOfSixColumnsMaxWidthScaleable};
+
+  ${({ topStory }) =>
+    topStory
+      ? css`
+          @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
+            max-width: ${fourOfSixColumnsMaxWidthScaleable};
+          }
+        `
+      : css`
+          max-width: ${fourOfSixColumnsMaxWidthScaleable};
+          padding: 0 ${GEL_SPACING};
+        `}
 
   @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
     padding: 0 ${GEL_SPACING_DBL};

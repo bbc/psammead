@@ -4,8 +4,8 @@ exports[`StoryPromo - Top Story should render correctly 1`] = `
 .c1 {
   display: inline-block;
   vertical-align: top;
-  max-width: 33.33%;
   position: relative;
+  padding-bottom: 0.5rem;
 }
 
 .c3 {
@@ -30,8 +30,6 @@ exports[`StoryPromo - Top Story should render correctly 1`] = `
 .c2 {
   display: inline-block;
   vertical-align: top;
-  padding: 0 0.5rem;
-  max-width: 66.67%;
 }
 
 .c4 {
@@ -74,7 +72,13 @@ exports[`StoryPromo - Top Story should render correctly 1`] = `
     display: grid;
     grid-template-columns: repeat(6,1fr);
     grid-column-gap: 0.5rem;
-    grid-row-gap: 0.5rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .c1 {
+    max-width: 33.33%;
+    padding-bottom: none;
   }
 }
 
@@ -128,9 +132,15 @@ exports[`StoryPromo - Top Story should render correctly 1`] = `
 }
 
 @media (max-width:37.4375rem) {
-  .ctgyTH .c5 {
+  .iwjbob .c5 {
     display: none;
     visibility: hidden;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .c2 {
+    max-width: 66.67%;
   }
 }
 
@@ -238,8 +248,8 @@ exports[`StoryPromo - Top Story with Media Indicator should render correctly 1`]
 .c1 {
   display: inline-block;
   vertical-align: top;
-  max-width: 33.33%;
   position: relative;
+  padding-bottom: 0.5rem;
 }
 
 .c2 {
@@ -269,8 +279,6 @@ exports[`StoryPromo - Top Story with Media Indicator should render correctly 1`]
 .c8 {
   display: inline-block;
   vertical-align: top;
-  padding: 0 0.5rem;
-  max-width: 66.67%;
 }
 
 .c10 {
@@ -313,7 +321,13 @@ exports[`StoryPromo - Top Story with Media Indicator should render correctly 1`]
     display: grid;
     grid-template-columns: repeat(6,1fr);
     grid-column-gap: 0.5rem;
-    grid-row-gap: 0.5rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .c1 {
+    max-width: 33.33%;
+    padding-bottom: none;
   }
 }
 
@@ -367,9 +381,15 @@ exports[`StoryPromo - Top Story with Media Indicator should render correctly 1`]
 }
 
 @media (max-width:37.4375rem) {
-  .ctgyTH .c11 {
+  .iwjbob .c11 {
     display: none;
     visibility: hidden;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .c8 {
+    max-width: 66.67%;
   }
 }
 
@@ -473,8 +493,8 @@ exports[`StoryPromo should render correctly 1`] = `
 .c1 {
   display: inline-block;
   vertical-align: top;
-  max-width: 33.33%;
   position: relative;
+  max-width: 33.33%;
 }
 
 .c3 {
@@ -499,8 +519,8 @@ exports[`StoryPromo should render correctly 1`] = `
 .c2 {
   display: inline-block;
   vertical-align: top;
-  padding: 0 0.5rem;
   max-width: 66.67%;
+  padding: 0 0.5rem;
 }
 
 .c4 {
@@ -543,7 +563,6 @@ exports[`StoryPromo should render correctly 1`] = `
     display: grid;
     grid-template-columns: repeat(6,1fr);
     grid-column-gap: 0.5rem;
-    grid-row-gap: 0.5rem;
   }
 }
 
@@ -707,8 +726,8 @@ exports[`StoryPromo with Media Indicator should render correctly 1`] = `
 .c1 {
   display: inline-block;
   vertical-align: top;
-  max-width: 33.33%;
   position: relative;
+  max-width: 33.33%;
 }
 
 .c9 {
@@ -733,8 +752,8 @@ exports[`StoryPromo with Media Indicator should render correctly 1`] = `
 .c8 {
   display: inline-block;
   vertical-align: top;
-  padding: 0 0.5rem;
   max-width: 66.67%;
+  padding: 0 0.5rem;
 }
 
 .c10 {
@@ -777,7 +796,6 @@ exports[`StoryPromo with Media Indicator should render correctly 1`] = `
     display: grid;
     grid-template-columns: repeat(6,1fr);
     grid-column-gap: 0.5rem;
-    grid-row-gap: 0.5rem;
   }
 }
 
