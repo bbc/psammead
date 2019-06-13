@@ -3,7 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 | ------- | ----------- |
-| 0.2.0-alpha.7 | [PR#578](https://github.com/bbc/psammead/pull/578) Add Top Story promo design 
+| 0.2.0-alpha.7 | [PR#578](https://github.com/bbc/psammead/pull/578) Add Top Story promo design |
 | 0.2.0-alpha.6 | [PR#588](https://github.com/bbc/psammead/pull/588) Update Story promo headline to use Pica under 600px. |
 | 0.2.0-alpha.5 | [PR#522](https://github.com/bbc/psammead/pull/522) Add MediaIndicator. |
 | 0.2.0-alpha.4 | [PR#546](https://github.com/bbc/psammead/pull/546) Replace colours and hide summary under 600px width screen. |
