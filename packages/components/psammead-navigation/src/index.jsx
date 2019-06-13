@@ -2,7 +2,7 @@ import React from 'react';
 import styled, { css } from 'styled-components';
 import { shape, string, node, bool } from 'prop-types';
 import { C_WHITE, C_POSTBOX, C_GHOST } from '@bbc/psammead-styles/colours';
-import { GEL_SPACING } from '@bbc/gel-foundations/spacings';
+import { GEL_SPACING, GEL_SPACING_DBL } from '@bbc/gel-foundations/spacings';
 import {
   GEL_GROUP_2_SCREEN_WIDTH_MAX,
   GEL_GROUP_3_SCREEN_WIDTH_MIN,
@@ -11,11 +11,11 @@ import { getPica, GEL_FF_REITH_SANS } from '@bbc/gel-foundations/typography';
 import { scriptPropType } from '@bbc/gel-foundations/prop-types';
 
 const NavigationWrapper = styled.div`
-  padding: 0 ${GEL_SPACING};
+  padding: 0 ${GEL_SPACING_DBL};
   background-color: ${C_POSTBOX};
 
   @media (max-width: ${GEL_GROUP_2_SCREEN_WIDTH_MAX}) {
-    padding: 0;
+    padding: 0 ${GEL_SPACING};
   }
 `;
 
@@ -31,14 +31,18 @@ const StyledListItem = styled.li`
   position: relative;
   z-index: 2;
 
+  &:last-child > a {
+    padding-right: ${GEL_SPACING};
+  }
+
   @media (max-width: ${GEL_GROUP_2_SCREEN_WIDTH_MAX}) {
     &::after {
       content: ' ';
       position: absolute;
       bottom: 0;
-      left: ${GEL_SPACING};
+      left: 0;
       width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN};
-      border-bottom: 1px solid rgba(255, 255, 255, 0.7);
+      border-bottom: 1px solid #eab3b3; /* White with 30% transparency over #B80000 */
       z-index: -1;
     }
   }
@@ -48,15 +52,15 @@ const LinkBorder = css`
   content: '';
   position: absolute;
   bottom: 0;
-  left: ${GEL_SPACING};
-  right: ${GEL_SPACING};
+  left: 0;
+  right: ${GEL_SPACING_DBL};
   border-bottom: 0.25rem solid ${C_WHITE};
 `;
 
 const Link = styled.a`
   ${props => (props.script ? getPica(props.script) : '')};
   font-family: ${GEL_FF_REITH_SANS};
-  padding: 0.75rem ${GEL_SPACING};
+  padding: 0.75rem ${GEL_SPACING_DBL} 0.75rem 0;
   color: ${C_GHOST};
   cursor: pointer;
   text-decoration: none;
@@ -72,6 +76,10 @@ const Link = styled.a`
 
   &:hover::before {
     ${LinkBorder}
+  }
+
+  &:last-child:hover::before {
+    right: ${GEL_SPACING};
   }
 `;
 
