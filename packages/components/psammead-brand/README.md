@@ -8,6 +8,8 @@ The `Brand` component provides the BBC service logo (as SVG), nested inside a st
 
 The `product` is passed to a [VisuallyHiddenText](https://github.com/bbc/psammead/tree/latest/packages/components/VisuallyHiddenText) component, nested inside Brand.
 
+The `serviceLocalisedName` is an optional prop referring to the local name of a service eg `Yoruba`. it is also passed to [VisuallyHiddenText](https://github.com/bbc/psammead/tree/latest/packages/components/VisuallyHiddenText) inside the Brand component.
+
 The `svg` prop must contain a `group`, `viewbox` values and a `ratio`, which is used within an `svg` element. Examples of the `svg` object can be found in [@bbc/psammead-assets](https://github.com/bbc/psammead/blob/latest/packages/utilities/psammead-assets/README.md#service-svgs).
 
 The `minWidth` and `maxWidth` values are required to allow the ability for the `svg` element to dynamically scale as the viewport becomes a very small size EG: feature phones.
@@ -15,8 +17,6 @@ The `minWidth` and `maxWidth` values are required to allow the ability for the `
 The `svgHeight` value acts as a placeholder for the `svg` element meaning the overall banner height does not change with the dynamic scaling, also the `height` allows the contents of the `svg` element to remain vertically centred within the banner at all times.
 
 The `url` value is the link that points to the frontpage of the service associated with the `svg`.
-
-The `serviceLocalisedName` is an optional prop referring to the local name of a service eg `Yoruba`.
 
 ## Installation
 
