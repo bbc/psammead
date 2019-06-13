@@ -1,12 +1,25 @@
 import React from 'react';
 import { number, oneOfType, string } from 'prop-types';
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 
 export { default as AmpImg } from './index.amp';
+
+const fadeIn = keyframes`
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+`;
 
 const StyledImg = styled.img`
   display: block;
   width: 100%;
+  opacity: 1;
+  animation-duration: 2s;
+  animation-name: ${fadeIn};
 `;
 
 export const Img = ({ alt, src, srcset, height, width }) => {
