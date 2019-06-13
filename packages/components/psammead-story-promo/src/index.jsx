@@ -74,24 +74,26 @@ const ImageGridColumns = css`
   }
 `;
 
+const ImageGridFallbackTopStory = css`
+  padding-bottom: ${GEL_GUTTER_BELOW_600PX};
+
+  @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
+    max-width: ${twoOfSixColumnsMaxWidthScaleable};
+    padding-bottom: none;
+  }
+`;
+
+const ImageGridFallback = css`
+  max-width: ${twoOfSixColumnsMaxWidthScaleable};
+`;
+
 const ImageGridItem = styled.div`
   display: inline-block;
   vertical-align: top;
   position: relative;
 
   ${({ topStory }) =>
-    topStory
-      ? css`
-          padding-bottom: ${GEL_GUTTER_BELOW_600PX};
-
-          @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
-            max-width: ${twoOfSixColumnsMaxWidthScaleable};
-            padding-bottom: none;
-          }
-        `
-      : css`
-          max-width: ${twoOfSixColumnsMaxWidthScaleable};
-        `}
+    topStory ? ImageGridFallbackTopStory : ImageGridFallback}
 
   @media (min-width: ${GEL_GROUP_5_SCREEN_WIDTH_MIN}) {
     max-width: ${fourOfTwelveColumnsMaxWidthScaleable};
@@ -161,21 +163,22 @@ const TextGridColumns = css`
   }
 `;
 
+const TextGridFallbackTopStory = css`
+  @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
+    max-width: ${fourOfSixColumnsMaxWidthScaleable};
+  }
+`;
+
+const TextGridFallback = css`
+  max-width: ${fourOfSixColumnsMaxWidthScaleable};
+  padding: 0 ${GEL_SPACING};
+`;
+
 const TextGridItem = styled.div`
   display: inline-block;
   vertical-align: top;
 
-  ${({ topStory }) =>
-    topStory
-      ? css`
-          @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
-            max-width: ${fourOfSixColumnsMaxWidthScaleable};
-          }
-        `
-      : css`
-          max-width: ${fourOfSixColumnsMaxWidthScaleable};
-          padding: 0 ${GEL_SPACING};
-        `}
+  ${({ topStory }) => (topStory ? TextGridFallbackTopStory : TextGridFallback)}
 
   @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
     padding: 0 ${GEL_SPACING_DBL};
