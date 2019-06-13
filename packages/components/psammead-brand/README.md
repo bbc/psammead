@@ -4,7 +4,7 @@
 
 The `Brand` component provides the BBC service logo (as SVG), nested inside a styled link and div. The link is currently hardcoded to "https://www.bbc.co.uk/news".
 
-`Brand` takes a `product`, `svgHeight`, `minWidth`, `maxWidth`, `url`, `serviceLocalizedName` and `svg` as props.
+`Brand` takes a `product`, `svgHeight`, `minWidth`, `maxWidth`, `url`, `serviceLocalisedName` and `svg` as props.
 
 The `product` is passed to a [VisuallyHiddenText](https://github.com/bbc/psammead/tree/latest/packages/components/VisuallyHiddenText) component, nested inside Brand.
 
@@ -16,7 +16,7 @@ The `svgHeight` value acts as a placeholder for the `svg` element meaning the ov
 
 The `url` value is the link that points to the frontpage of the service associated with the `svg`.
 
-The `serviceLocalizedName` is an optional prop referring to the local name of a service eg `Yoruba`.
+The `serviceLocalisedName` is an optional prop referring to the local name of a service eg `Yoruba`.
 
 ## Installation
 
@@ -33,7 +33,7 @@ The `serviceLocalizedName` is an optional prop referring to the local name of a 
 | maxWidth | Number | yes | N/A | `380` |
 | svg | Object | yes | N/A | { group: `(<g fillrule="evenodd"><path d="M84.32" /></g>)`, viewbox: { height: 24, width: 167.95 }, ratio: 6.9979 } |
 | url | String | no | N/A | `https://www.bbc.co.uk/news` |
-| serviceLocalizedName | String | no | N/A | `'Yoruba'` |
+| serviceLocalisedName | String | no | N/A | `'Yoruba'` |
 
 ## Usage
 
@@ -47,7 +47,7 @@ const Header = (product, serviceName) => (
   <header role="banner">
     <Brand
       product={product}
-      serviceLocalizedName={serviceName}
+      serviceLocalisedName={serviceName}
       svgHeight={24}
       maxWidth={280}
       minWidth={180}
