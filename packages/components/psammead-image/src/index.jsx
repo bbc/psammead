@@ -15,7 +15,7 @@ const fadeInKeyframes = keyframes`
 `;
 
 const fadeIn = css`
-  animation-duration: 2s;
+  animation-duration: 200ms;
   animation-name: ${fadeInKeyframes};
 `;
 

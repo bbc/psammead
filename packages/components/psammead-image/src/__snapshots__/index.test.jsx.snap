@@ -5,8 +5,8 @@ exports[`Image - imported as '{ Img }' should render image correctly without wid
   display: block;
   width: 100%;
   opacity: 1;
-  -webkit-animation-duration: 2s;
-  animation-duration: 2s;
+  -webkit-animation-duration: 200ms;
+  animation-duration: 200ms;
   -webkit-animation-name: eMLfYp;
   animation-name: eMLfYp;
 }
@@ -26,8 +26,8 @@ exports[`Image - imported as '{ Img }' should render image with custom dimension
   display: block;
   width: 100%;
   opacity: 1;
-  -webkit-animation-duration: 2s;
-  animation-duration: 2s;
+  -webkit-animation-duration: 200ms;
+  animation-duration: 200ms;
   -webkit-animation-name: eMLfYp;
   animation-name: eMLfYp;
 }
@@ -46,8 +46,8 @@ exports[`Image - imported as '{ Img }' should render image with srcset correctly
   display: block;
   width: 100%;
   opacity: 1;
-  -webkit-animation-duration: 2s;
-  animation-duration: 2s;
+  -webkit-animation-duration: 200ms;
+  animation-duration: 200ms;
   -webkit-animation-name: eMLfYp;
   animation-name: eMLfYp;
 }
@@ -67,8 +67,8 @@ exports[`Image - imported as '{ Img }' should render landscape image correctly 1
   display: block;
   width: 100%;
   opacity: 1;
-  -webkit-animation-duration: 2s;
-  animation-duration: 2s;
+  -webkit-animation-duration: 200ms;
+  animation-duration: 200ms;
   -webkit-animation-name: eMLfYp;
   animation-name: eMLfYp;
 }
@@ -87,8 +87,8 @@ exports[`Image - imported as '{ Img }' should render portrait image correctly 1`
   display: block;
   width: 100%;
   opacity: 1;
-  -webkit-animation-duration: 2s;
-  animation-duration: 2s;
+  -webkit-animation-duration: 200ms;
+  animation-duration: 200ms;
   -webkit-animation-name: eMLfYp;
   animation-name: eMLfYp;
 }
@@ -107,8 +107,8 @@ exports[`Image - imported as '{ Img }' should render square image correctly 1`] 
   display: block;
   width: 100%;
   opacity: 1;
-  -webkit-animation-duration: 2s;
-  animation-duration: 2s;
+  -webkit-animation-duration: 200ms;
+  animation-duration: 200ms;
   -webkit-animation-name: eMLfYp;
   animation-name: eMLfYp;
 }
@@ -127,8 +127,8 @@ exports[`Image - imported as default 'Image' should render image correctly witho
   display: block;
   width: 100%;
   opacity: 1;
-  -webkit-animation-duration: 2s;
-  animation-duration: 2s;
+  -webkit-animation-duration: 200ms;
+  animation-duration: 200ms;
   -webkit-animation-name: eMLfYp;
   animation-name: eMLfYp;
 }
@@ -148,8 +148,8 @@ exports[`Image - imported as default 'Image' should render image with custom dim
   display: block;
   width: 100%;
   opacity: 1;
-  -webkit-animation-duration: 2s;
-  animation-duration: 2s;
+  -webkit-animation-duration: 200ms;
+  animation-duration: 200ms;
   -webkit-animation-name: eMLfYp;
   animation-name: eMLfYp;
 }
@@ -168,8 +168,8 @@ exports[`Image - imported as default 'Image' should render image with srcset cor
   display: block;
   width: 100%;
   opacity: 1;
-  -webkit-animation-duration: 2s;
-  animation-duration: 2s;
+  -webkit-animation-duration: 200ms;
+  animation-duration: 200ms;
   -webkit-animation-name: eMLfYp;
   animation-name: eMLfYp;
 }
@@ -189,8 +189,8 @@ exports[`Image - imported as default 'Image' should render landscape image corre
   display: block;
   width: 100%;
   opacity: 1;
-  -webkit-animation-duration: 2s;
-  animation-duration: 2s;
+  -webkit-animation-duration: 200ms;
+  animation-duration: 200ms;
   -webkit-animation-name: eMLfYp;
   animation-name: eMLfYp;
 }
@@ -209,8 +209,8 @@ exports[`Image - imported as default 'Image' should render portrait image correc
   display: block;
   width: 100%;
   opacity: 1;
-  -webkit-animation-duration: 2s;
-  animation-duration: 2s;
+  -webkit-animation-duration: 200ms;
+  animation-duration: 200ms;
   -webkit-animation-name: eMLfYp;
   animation-name: eMLfYp;
 }
@@ -229,8 +229,8 @@ exports[`Image - imported as default 'Image' should render square image correctl
   display: block;
   width: 100%;
   opacity: 1;
-  -webkit-animation-duration: 2s;
-  animation-duration: 2s;
+  -webkit-animation-duration: 200ms;
+  animation-duration: 200ms;
   -webkit-animation-name: eMLfYp;
   animation-name: eMLfYp;
 }
