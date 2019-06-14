@@ -2,8 +2,9 @@
 
 exports[`Navigation should render correctly 1`] = `
 .c0 {
-  padding: 0 0.5rem;
+  padding: 0 1rem;
   background-color: #B80000;
+  position: relative;
 }
 
 .c1 {
@@ -16,33 +17,51 @@ exports[`Navigation should render correctly 1`] = `
 .c2 {
   display: inline-block;
   position: relative;
-  z-index: 2;
+  z-index: 1;
+}
+
+.c2:last-child > a {
+  padding-right: 0.5rem;
+}
+
+.c2:last-child > a:hover::before {
+  right: 0.5rem;
 }
 
 .c3 {
   font-size: 0.9375rem;
   line-height: 1.25rem;
   font-family: ReithSans,Helvetica,Arial,sans-serif;
-  padding: 0.75rem 0.5rem;
   color: #FDFDFD;
   cursor: pointer;
   -webkit-text-decoration: none;
   text-decoration: none;
   display: inline-block;
+  padding: 0.75rem 1rem 0.75rem 0;
 }
 
 .c3:hover::before {
   content: '';
   position: absolute;
   bottom: 0;
-  left: 0.5rem;
-  right: 0.5rem;
   border-bottom: 0.25rem solid #FFFFFF;
+  left: 0;
+  right: 1rem;
 }
 
 @media (max-width:37.4375rem) {
   .c0 {
-    padding: 0;
+    padding: 0 0.5rem;
+  }
+
+  .c0::after {
+    content: ' ';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    border-bottom: 1px solid #ffffff;
+    z-index: 2;
   }
 }
 
@@ -51,10 +70,10 @@ exports[`Navigation should render correctly 1`] = `
     content: ' ';
     position: absolute;
     bottom: 0;
-    left: 0.5rem;
     width: 37.5rem;
-    border-bottom: 1px solid rgba(255,255,255,0.7);
+    border-bottom: 1px solid #eab3b3;
     z-index: -1;
+    left: 0;
   }
 }
 
@@ -81,10 +100,12 @@ exports[`Navigation should render correctly 1`] = `
   >
     <li
       className="c2"
+      dir="ltr"
       role="listitem"
     >
       <a
         className="c3"
+        dir="ltr"
         href="/igbo"
       />
     </li>
