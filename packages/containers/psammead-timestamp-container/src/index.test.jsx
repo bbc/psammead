@@ -6,6 +6,7 @@ import Timestamp from '.';
 const defaultTimestamp = 1539969006000; // 19 October 2018
 const noLeadingZeroTimestamp = 1530947227000; // 07 July 2018
 const invalidData = '8640000000000001'; // A day holds 86,400,000 milliseconds - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date#Description
+const igboLocale = 'ig';
 
 describe('Timestamp', () => {
   describe('with no data', () => {
@@ -20,6 +21,7 @@ describe('Timestamp', () => {
       format="D MMMM YYYY"
       isRelative={false}
       script={latin}
+      locale={igboLocale}
     />,
   );
 
