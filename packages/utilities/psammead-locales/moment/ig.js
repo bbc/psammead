@@ -37,29 +37,24 @@ import moment from 'moment';
       sameElse: 'L',
     },
     relativeTime: {
-      future: 'in %s',
-      past: '%s ago',
-      s: 'a few seconds',
-      ss: '%d seconds',
-      m: 'a minute',
-      mm: '%d minutes',
-      h: 'an hour',
-      hh: '%d hours',
-      d: 'a day',
-      dd: '%d days',
-      M: 'a month',
-      MM: '%d months',
-      y: 'a year',
-      yy: '%d years',
+      future: 'na %s',
+      past: '%s gara aga',
+      s: 'ntabịanya ole na ole',
+      ss: 'ntabịanya %d',
+      m: 'otu nkeji',
+      mm: 'nkeji %d',
+      h: 'otu elekere',
+      hh: 'elekere %d',
+      d: 'otu ụbọchị',
+      dd: 'Ụbọchị %d',
+      M: 'otu ọnwa',
+      MM: 'Ọnwa %d',
+      y: 'Otu afọ',
+      yy: 'Afọ %d',
     },
-    dayOfMonthOrdinalParse: /\d{1,2}(st|nd|rd|th)/,
+    dayOfMonthOrdinalParse: /(Nke )\d{1,2}/,
     ordinal : function (number) {
-        var b = number % 10,
-            output = (~~(number % 100 / 10) === 1) ? 'th' :
-            (b === 1) ? 'st' :
-            (b === 2) ? 'nd' :
-            (b === 3) ? 'rd' : 'th';
-        return number + output;
+        return 'Nke ' + number;
     },
     week: {
       dow: 1, // Monday is the first day of the week.
