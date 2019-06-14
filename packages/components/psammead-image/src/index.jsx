@@ -1,5 +1,5 @@
 import React from 'react';
-import { number, oneOfType, string } from 'prop-types';
+import { number, oneOfType, string, bool } from 'prop-types';
 import styled, { keyframes } from 'styled-components';
 
 export { default as AmpImg } from './index.amp';
@@ -19,11 +19,11 @@ const StyledImg = styled.img`
   width: 100%;
   opacity: 1;
   animation-duration: 2s;
-  animation-name: ${fadeIn};
+  animation-name: ${props => props.fade && fadeIn};
 `;
 
-export const Img = ({ alt, src, srcset, height, width }) => {
-  const props = { alt, src, height, width };
+export const Img = ({ alt, src, srcset, height, width, fade }) => {
+  const props = { alt, src, height, width, fade };
 
   if (srcset) {
     props.srcSet = srcset;
@@ -34,6 +34,7 @@ export const Img = ({ alt, src, srcset, height, width }) => {
 
 Img.propTypes = {
   alt: string.isRequired,
+  fade: bool,
   src: string.isRequired,
   srcset: string,
   height: oneOfType([string, number]),
@@ -41,6 +42,7 @@ Img.propTypes = {
 };
 
 Img.defaultProps = {
+  fade: false,
   height: null,
   srcset: null,
   width: null,

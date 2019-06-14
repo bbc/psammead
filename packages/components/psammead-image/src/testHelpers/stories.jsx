@@ -1,14 +1,16 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
+import { boolean } from '@storybook/addon-knobs';
 import notes from '../../README.md';
 import { custom, landscape, portrait, square } from './fixtureData';
 
-export function getProps(image, includeHeight) {
+export function getProps(image, includeHeight, type) {
   const props = {
     alt: image.alt,
     src: image.src,
     srcset: image.srcset,
     width: image.width,
+    fade: type === 'Img' ? boolean('load with fade?', false) : null,
   };
   props.height = includeHeight ? image.height : null;
 
@@ -21,6 +23,7 @@ const stories = (
   includeHeight = false,
   additionalProps = {},
   styleDecorator = storyFn => storyFn(),
+  type,
 ) =>
   storiesOf(title, module)
     .addDecorator(styleDecorator)
@@ -28,7 +31,7 @@ const stories = (
       'landscape image',
       () => (
         <Component
-          {...getProps(landscape, includeHeight)}
+          {...getProps(landscape, includeHeight, type)}
           {...additionalProps}
         />
       ),
@@ -38,7 +41,7 @@ const stories = (
       'portrait image',
       () => (
         <Component
-          {...getProps(portrait, includeHeight)}
+          {...getProps(portrait, includeHeight, type)}
           {...additionalProps}
         />
       ),
@@ -47,14 +50,20 @@ const stories = (
     .add(
       'square image',
       () => (
-        <Component {...getProps(square, includeHeight)} {...additionalProps} />
+        <Component
+          {...getProps(square, includeHeight, type)}
+          {...additionalProps}
+        />
       ),
       { notes },
     )
     .add(
       'custom ratio image',
       () => (
-        <Component {...getProps(custom, includeHeight)} {...additionalProps} />
+        <Component
+          {...getProps(custom, includeHeight, type)}
+          {...additionalProps}
+        />
       ),
       { notes },
     )
@@ -62,7 +71,7 @@ const stories = (
       'image with srcset',
       () => (
         <Component
-          {...getProps(landscape, includeHeight)}
+          {...getProps(landscape, includeHeight, type)}
           srcset={landscape.srcset}
           {...additionalProps}
         />
