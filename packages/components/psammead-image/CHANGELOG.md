@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 0.4.0 | [PR#618](https://github.com/bbc/psammead/pull/618) Option to fade images in. Added optional fade prop. |
 | 0.3.6   | [PR#492](https://github.com/bbc/psammead/pull/492) Make img width prop optional |
 | 0.3.5   | [PR#424](https://github.com/bbc/psammead/pull/424) Add Snyk badge to readme |
 | 0.3.4   | [PR#407](https://github.com/bbc/psammead/pull/407) Organise dependencies properly |
