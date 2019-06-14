@@ -13,9 +13,20 @@ import { scriptPropType } from '@bbc/gel-foundations/prop-types';
 const NavigationWrapper = styled.div`
   padding: 0 ${GEL_SPACING_DBL};
   background-color: ${C_POSTBOX};
+  position: relative;
 
   @media (max-width: ${GEL_GROUP_2_SCREEN_WIDTH_MAX}) {
     padding: 0 ${GEL_SPACING};
+    /* Trick to hide the last line border bottom */
+    &::after {
+      content: ' ';
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      border-bottom: 1px solid #ffffff;
+      z-index: 2;
+    }
   }
 `;
 
@@ -29,13 +40,18 @@ const StyledUnorderedList = styled.ul`
 const StyledListItem = styled.li`
   display: inline-block;
   position: relative;
-  z-index: 2;
+  z-index: 1;
 
   &:last-child > a {
     padding-right: ${GEL_SPACING};
   }
 
+  &:last-child > a:hover::before {
+    right: ${GEL_SPACING};
+  }
+
   @media (max-width: ${GEL_GROUP_2_SCREEN_WIDTH_MAX}) {
+    /* Trick to add a border bottom, which takes the full width */
     &::after {
       content: ' ';
       position: absolute;
@@ -76,10 +92,6 @@ const Link = styled.a`
 
   &:hover::before {
     ${LinkBorder}
-  }
-
-  &:last-child:hover::before {
-    right: ${GEL_SPACING};
   }
 `;
 
