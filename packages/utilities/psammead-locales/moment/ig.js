@@ -11,7 +11,7 @@ import moment from 'moment';
 
   // let ig = moment.defineLocale('ig', {
   moment.defineLocale('ig', {
-    months: 'Jenụwarị_Febụwarị_Maachị_Eprel_Mee_Juun_Julaị_Ọgọọst_Septemba_Ọktọba_Nọvemba_Disemba '.split(
+    months: 'Jenụwarị_Febụwarị_Maachị_Eprel_Mee_Juun_Julaị_Ọgọọst_Septemba_Ọktọba_Nọvemba_Disemba'.split(
       '_',
     ),
     monthsShort: 'Jen_Feb_Maa_Epr_Mee_Juu_Jul_Ọgọ_Sep_Ọkt_Nov_Dis'.split('_'),
