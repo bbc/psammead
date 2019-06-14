@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 1.1.8   | [PR#631](https://github.com/BBC/psammead/pull/631) Update Storybook version and other dependencies |
 | 1.1.7   | [PR#536](https://github.com/BBC/psammead/pull/536) Add viewport addon |
 | 1.1.6   | [PR#514](https://github.com/BBC/psammead/pull/514) Upgrade to Node 10 |
 | 1.1.5   | [PR#484](https://github.com/BBC/psammead/pull/484) Add default labels to GitHub issue templates |
