@@ -1,10 +1,10 @@
 import React from 'react';
 import { number, oneOfType, string, bool } from 'prop-types';
-import styled, { keyframes } from 'styled-components';
+import styled, { keyframes, css } from 'styled-components';
 
 export { default as AmpImg } from './index.amp';
 
-const fadeIn = keyframes`
+const fadeInKeyframes = keyframes`
   from {
     opacity: 0;
   }
@@ -14,16 +14,20 @@ const fadeIn = keyframes`
   }
 `;
 
+const fadeIn = css`
+  animation-duration: 2s;
+  animation-name: ${fadeInKeyframes};
+`;
+
 const StyledImg = styled.img`
   display: block;
   width: 100%;
   opacity: 1;
-  animation-duration: 2s;
-  animation-name: ${props => props.fade && fadeIn};
+  ${props => props.fade && fadeIn};
 `;
 
-export const Img = ({ alt, src, srcset, height, width, fade }) => {
-  const props = { alt, src, height, width, fade };
+export const Img = ({ alt, fade, src, srcset, height, width }) => {
+  const props = { alt, fade, src, height, width };
 
   if (srcset) {
     props.srcSet = srcset;
@@ -42,7 +46,7 @@ Img.propTypes = {
 };
 
 Img.defaultProps = {
-  fade: false,
+  fade: true,
   height: null,
   srcset: null,
   width: null,
