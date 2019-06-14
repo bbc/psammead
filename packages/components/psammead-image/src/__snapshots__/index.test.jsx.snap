@@ -7,8 +7,6 @@ exports[`Image - imported as '{ Img }' should render image correctly without wid
   opacity: 1;
   -webkit-animation-duration: 2s;
   animation-duration: 2s;
-  -webkit-animation-name: eMLfYp;
-  animation-name: eMLfYp;
 }
 
 <img
@@ -28,8 +26,6 @@ exports[`Image - imported as '{ Img }' should render image with custom dimension
   opacity: 1;
   -webkit-animation-duration: 2s;
   animation-duration: 2s;
-  -webkit-animation-name: eMLfYp;
-  animation-name: eMLfYp;
 }
 
 <img
@@ -48,8 +44,6 @@ exports[`Image - imported as '{ Img }' should render image with srcset correctly
   opacity: 1;
   -webkit-animation-duration: 2s;
   animation-duration: 2s;
-  -webkit-animation-name: eMLfYp;
-  animation-name: eMLfYp;
 }
 
 <img
@@ -69,8 +63,6 @@ exports[`Image - imported as '{ Img }' should render landscape image correctly 1
   opacity: 1;
   -webkit-animation-duration: 2s;
   animation-duration: 2s;
-  -webkit-animation-name: eMLfYp;
-  animation-name: eMLfYp;
 }
 
 <img
@@ -89,8 +81,6 @@ exports[`Image - imported as '{ Img }' should render portrait image correctly 1`
   opacity: 1;
   -webkit-animation-duration: 2s;
   animation-duration: 2s;
-  -webkit-animation-name: eMLfYp;
-  animation-name: eMLfYp;
 }
 
 <img
@@ -109,8 +99,6 @@ exports[`Image - imported as '{ Img }' should render square image correctly 1`] 
   opacity: 1;
   -webkit-animation-duration: 2s;
   animation-duration: 2s;
-  -webkit-animation-name: eMLfYp;
-  animation-name: eMLfYp;
 }
 
 <img
@@ -129,8 +117,6 @@ exports[`Image - imported as default 'Image' should render image correctly witho
   opacity: 1;
   -webkit-animation-duration: 2s;
   animation-duration: 2s;
-  -webkit-animation-name: eMLfYp;
-  animation-name: eMLfYp;
 }
 
 <img
@@ -150,8 +136,6 @@ exports[`Image - imported as default 'Image' should render image with custom dim
   opacity: 1;
   -webkit-animation-duration: 2s;
   animation-duration: 2s;
-  -webkit-animation-name: eMLfYp;
-  animation-name: eMLfYp;
 }
 
 <img
@@ -170,8 +154,6 @@ exports[`Image - imported as default 'Image' should render image with srcset cor
   opacity: 1;
   -webkit-animation-duration: 2s;
   animation-duration: 2s;
-  -webkit-animation-name: eMLfYp;
-  animation-name: eMLfYp;
 }
 
 <img
@@ -191,8 +173,6 @@ exports[`Image - imported as default 'Image' should render landscape image corre
   opacity: 1;
   -webkit-animation-duration: 2s;
   animation-duration: 2s;
-  -webkit-animation-name: eMLfYp;
-  animation-name: eMLfYp;
 }
 
 <img
@@ -211,8 +191,6 @@ exports[`Image - imported as default 'Image' should render portrait image correc
   opacity: 1;
   -webkit-animation-duration: 2s;
   animation-duration: 2s;
-  -webkit-animation-name: eMLfYp;
-  animation-name: eMLfYp;
 }
 
 <img
@@ -231,8 +209,6 @@ exports[`Image - imported as default 'Image' should render square image correctl
   opacity: 1;
   -webkit-animation-duration: 2s;
   animation-duration: 2s;
-  -webkit-animation-name: eMLfYp;
-  animation-name: eMLfYp;
 }
 
 <img
