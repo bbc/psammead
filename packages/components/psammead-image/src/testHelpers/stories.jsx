@@ -10,7 +10,7 @@ export function getProps(image, includeHeight, type) {
     src: image.src,
     srcset: image.srcset,
     width: image.width,
-    fade: type === 'Img' ? boolean('load with fade?', false) : null,
+    fade: type === 'Img' ? boolean('fade?', false) : null,
   };
   props.height = includeHeight ? image.height : null;
 
