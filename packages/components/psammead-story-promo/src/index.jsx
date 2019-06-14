@@ -39,7 +39,7 @@ const StoryPromoWrapper = styled.div`
     position: relative;
   }
 
-  @supports (display: griiiiid) {
+  @supports (display: grid) {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-column-gap: ${GEL_GUTTER_BELOW_600PX};
@@ -64,7 +64,7 @@ const ImageGridItem = styled.div`
     max-width: ${fourOfTwelveColumnsMaxWidthScaleable};
   }
 
-  @supports (display: griiiiid) {
+  @supports (display: grid) {
     display: block;
     max-width: initial;
     grid-column: 1 / span 2;
@@ -89,7 +89,7 @@ const TextGridItem = styled.div`
     max-width: ${eightOfTwelveColumnsMaxScaleable};
   }
 
-  @supports (display: griiiiid) {
+  @supports (display: grid) {
     display: block;
     max-width: initial;
     padding: initial;
