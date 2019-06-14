@@ -1,9 +1,7 @@
-import React, { Fragment } from 'react';
-import { select, number, withKnobs } from '@storybook/addon-knobs';
+import React from 'react';
 import { storiesOf } from '@storybook/react';
-import * as svgs from '@bbc/psammead-assets/svgs';
+import { withKnobs } from '@storybook/addon-knobs';
 import { dirDecorator } from '@bbc/psammead-storybook-helpers';
-import Brand from '@bbc/psammead-brand';
 import { latin } from '@bbc/gel-foundations/scripts';
 import Navigation, { NavigationUl, NavigationLi } from './index';
 import igboNavData from '../testHelpers/igbo';
@@ -11,78 +9,45 @@ import pidginNavData from '../testHelpers/pidgin';
 import yorubaNavData from '../testHelpers/yoruba';
 import notes from '../README.md';
 
-const inputs = () => {
-  // capitalization is only for presentation purpose on the knob
-  const options = Object.keys(svgs)
-    .filter(key => key !== 'BBC_BLOCKS')
-    .map(key => key.charAt(0).toUpperCase() + key.slice(1));
-
-  const svgChoice = select('Service SVG', options, 'News').toLowerCase();
-  const svgRatio = svgs[svgChoice].ratio;
-  const svgMaxHeight = 24;
-  const svgMinHeight = 16;
-  const minWidthInput = number('minimum svg width', svgRatio * svgMinHeight);
-  const maxWidthInput = number('maximum svg width', svgRatio * svgMaxHeight);
-  const svgHeightInput = number('desired height svg', svgMaxHeight);
-
-  return { svgChoice, svgHeightInput, minWidthInput, maxWidthInput };
-};
-
 storiesOf('Components|Navigation', module)
   .addDecorator(withKnobs)
   .addDecorator(dirDecorator)
+
   .add(
-    'igbo with Brand',
-    () => {
-      const {
-        svgHeightInput,
-        minWidthInput,
-        maxWidthInput,
-        svgChoice,
-      } = inputs();
+    'igbo',
+    ({ dir }) => (
+      <Navigation>
+        <NavigationUl>
+          {Object.keys(igboNavData).map((item, key) => {
+            const { title, url } = igboNavData[item];
 
-      return (
-        <Fragment>
-          <Brand
-            brandName="Default Brand Name"
-            svgHeight={svgHeightInput}
-            minWidth={minWidthInput}
-            maxWidth={maxWidthInput}
-            svg={svgs[svgChoice]}
-          />
-          <Navigation>
-            <NavigationUl>
-              {Object.keys(igboNavData).map((item, key) => {
-                const { title, url } = igboNavData[item];
+            let active;
+            if (key === 0) {
+              active = true;
+            }
 
-                let active;
-                if (key === 0) {
-                  active = true;
-                }
-
-                return (
-                  <NavigationLi
-                    key={title}
-                    url={url}
-                    script={latin}
-                    active={active}
-                  >
-                    {title}
-                  </NavigationLi>
-                );
-              })}
-            </NavigationUl>
-          </Navigation>
-        </Fragment>
-      );
-    },
+            return (
+              <NavigationLi
+                key={title}
+                url={url}
+                script={latin}
+                dir={dir}
+                active={active}
+              >
+                {title}
+              </NavigationLi>
+            );
+          })}
+        </NavigationUl>
+      </Navigation>
+    ),
     {
       notes,
     },
   )
   .add(
     'pidgin',
-    () => (
+    ({ dir }) => (
       <Navigation>
         <NavigationUl>
           {Object.keys(pidginNavData).map((item, key) => {
@@ -98,6 +63,7 @@ storiesOf('Components|Navigation', module)
                 key={title}
                 url={url}
                 script={latin}
+                dir={dir}
                 active={active}
               >
                 {title}
@@ -113,7 +79,7 @@ storiesOf('Components|Navigation', module)
   )
   .add(
     'yoruba',
-    () => (
+    ({ dir }) => (
       <Navigation>
         <NavigationUl>
           {Object.keys(yorubaNavData).map((item, key) => {
@@ -129,6 +95,7 @@ storiesOf('Components|Navigation', module)
                 key={title}
                 url={url}
                 script={latin}
+                dir={dir}
                 active={active}
               >
                 {title}

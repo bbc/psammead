@@ -1,6 +1,6 @@
 import React from 'react';
 import styled, { css } from 'styled-components';
-import { shape, string, node, bool } from 'prop-types';
+import { shape, string, node, bool, oneOf } from 'prop-types';
 import { C_WHITE, C_POSTBOX, C_GHOST } from '@bbc/psammead-styles/colours';
 import { GEL_SPACING, GEL_SPACING_DBL } from '@bbc/gel-foundations/spacings';
 import {
@@ -42,24 +42,45 @@ const StyledListItem = styled.li`
   position: relative;
   z-index: 1;
 
-  &:last-child > a {
-    padding-right: ${GEL_SPACING};
-  }
+  ${({ dir }) =>
+    dir === 'ltr'
+      ? css`
+          &:last-child > a {
+            padding-right: ${GEL_SPACING};
+          }
 
-  &:last-child > a:hover::before {
-    right: ${GEL_SPACING};
-  }
+          &:last-child > a:hover::before {
+            right: ${GEL_SPACING};
+          }
+        `
+      : css`
+          &:last-child > a {
+            padding-left: ${GEL_SPACING};
+          }
+
+          &:last-child > a:hover::before {
+            left: ${GEL_SPACING};
+          }
+        `};
 
   @media (max-width: ${GEL_GROUP_2_SCREEN_WIDTH_MAX}) {
-    /* Trick to add a border bottom, which takes the full width */
+    /* Trick a separator line which takes the full width */
     &::after {
       content: ' ';
       position: absolute;
       bottom: 0;
-      left: 0;
       width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN};
       border-bottom: 1px solid #eab3b3; /* White with 30% transparency over #B80000 */
       z-index: -1;
+
+      ${({ dir }) =>
+        dir === 'ltr'
+          ? css`
+              left: 0;
+            `
+          : css`
+              right: 0;
+            `};
     }
   }
 `;
@@ -68,19 +89,36 @@ const LinkBorder = css`
   content: '';
   position: absolute;
   bottom: 0;
-  left: 0;
-  right: ${GEL_SPACING_DBL};
   border-bottom: 0.25rem solid ${C_WHITE};
+
+  ${({ dir }) =>
+    dir === 'ltr'
+      ? css`
+          left: 0;
+          right: ${GEL_SPACING_DBL};
+        `
+      : css`
+          left: ${GEL_SPACING_DBL};
+          right: 0;
+        `}
 `;
 
 const Link = styled.a`
   ${props => (props.script ? getPica(props.script) : '')};
   font-family: ${GEL_FF_REITH_SANS};
-  padding: 0.75rem ${GEL_SPACING_DBL} 0.75rem 0;
   color: ${C_GHOST};
   cursor: pointer;
   text-decoration: none;
   display: inline-block;
+
+  ${({ dir }) =>
+    dir === 'ltr'
+      ? css`
+          padding: 0.75rem ${GEL_SPACING_DBL} 0.75rem 0;
+        `
+      : css`
+          padding: 0.75rem 0 0.75rem ${GEL_SPACING_DBL};
+        `}
 
   ${({ active }) =>
     active &&
@@ -101,17 +139,13 @@ export const NavigationUl = ({ children, ...props }) => (
   </StyledUnorderedList>
 );
 
-export const NavigationLi = ({ children, ...props }) => {
-  const { url, script, active } = props;
-
-  return (
-    <StyledListItem role="listitem">
-      <Link href={url} script={script} active={active}>
-        {children}
-      </Link>
-    </StyledListItem>
-  );
-};
+export const NavigationLi = ({ children: link, url, script, dir, active }) => (
+  <StyledListItem role="listitem" dir={dir}>
+    <Link href={url} script={script} dir={dir} active={active}>
+      {link}
+    </Link>
+  </StyledListItem>
+);
 
 const Navigation = ({ children }) => (
   <NavigationWrapper>{children}</NavigationWrapper>
@@ -122,6 +156,7 @@ NavigationUl.propTypes = {
 };
 
 NavigationLi.defaultProps = {
+  dir: 'ltr',
   active: false,
 };
 
@@ -129,6 +164,7 @@ NavigationLi.propTypes = {
   children: node.isRequired,
   url: string,
   script: shape(scriptPropType).isRequired,
+  dir: oneOf(['ltr', 'rtl']),
   active: bool,
 };
 
