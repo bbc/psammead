@@ -151,29 +151,25 @@ const Navigation = ({ children }) => (
   <NavigationWrapper>{children}</NavigationWrapper>
 );
 
+Navigation.propTypes = {
+  children: node.isRequired,
+};
+
 NavigationUl.propTypes = {
   children: node.isRequired,
 };
 
-NavigationLi.defaultProps = {
-  dir: 'ltr',
-  active: false,
-};
-
 NavigationLi.propTypes = {
   children: node.isRequired,
-  url: string,
+  url: string.isRequired,
   script: shape(scriptPropType).isRequired,
   dir: oneOf(['ltr', 'rtl']),
   active: bool,
 };
 
-Navigation.propTypes = {
-  children: string.isRequired,
-};
-
 NavigationLi.defaultProps = {
-  url: null,
+  dir: 'ltr',
+  active: false,
 };
 
 export default Navigation;
