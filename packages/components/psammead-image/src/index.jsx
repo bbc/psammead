@@ -22,7 +22,6 @@ const fadeIn = css`
 const StyledImg = styled.img`
   display: block;
   width: 100%;
-  opacity: 1;
   ${props => props.fade && fadeIn};
 `;
 
