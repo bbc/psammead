@@ -1,14 +1,16 @@
+import moment from 'moment';
 /* eslint-disable */
 //! moment.js locale configuration
 
-;(function (global, factory) {
-   typeof exports === 'object' && typeof module !== 'undefined'
-       && typeof require === 'function' ? factory(require('../moment')) :
-   typeof define === 'function' && define.amd ? define(['../moment'], factory) :
-   factory(global.moment)
-}(this, (function (moment) { 'use strict';
+// ;(function (global, factory) {
+//    typeof exports === 'object' && typeof module !== 'undefined'
+//        && typeof require === 'function' ? factory(require('../moment')) :
+//    typeof define === 'function' && define.amd ? define(['../moment'], factory) :
+//    factory(global.moment)
+// }(this, (function (moment) { 'use strict';
 
-  let enGb = moment.defineLocale('en-gb', {
+  // let pcm = moment.defineLocale('pcm', {
+  moment.defineLocale('pcm', {
     months: 'January_February_March_April_May_June_July_August_September_October_November_December'.split(
       '_',
     ),
@@ -65,5 +67,5 @@
     },
   });
 
-  return enGb;
-});
+//   return pcm;
+// });

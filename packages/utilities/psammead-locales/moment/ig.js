@@ -9,7 +9,7 @@ import moment from 'moment';
 //    factory(global.moment)
 // }(this, (function (moment) { 'use strict';
 
-  // let enGb = moment.defineLocale('ig', {
+  // let ig = moment.defineLocale('ig', {
   moment.defineLocale('ig', {
     months: 'Jenụwarị_Febụwarị_Maachị_Eprel_Mee_Juun_Julaị_Ọgọọst_Septemba_Ọktọba_Nọvemba_Disemba '.split(
       '_',
@@ -62,5 +62,5 @@ import moment from 'moment';
     },
   });
 
-//   return enGb;
+//   return ig;
 // });

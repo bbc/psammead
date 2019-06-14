@@ -2,7 +2,7 @@
 import moment from 'moment';
 import './ig';
 
-moment.locale('en-gb')
+moment.locale('ig')
 
 // Linting is disabled in this file to keep the style matching the tests in moment.
 
