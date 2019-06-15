@@ -1,6 +1,6 @@
 {
   "name": "@bbc/psammead-locales",
-  "version": "0.4.1",
+  "version": "1.0.0",
   "description": "A collection of locale configs.",
   "repository": {
     "type": "git",
@@ -23,7 +23,10 @@
     "locales",
     "localization"
   ],
-  "dependencies": {
+  "peerDependencies": {
+    "moment": "^2.24.0"
+  },
+  "devDependencies": {
     "moment": "^2.24.0"
   }
 }

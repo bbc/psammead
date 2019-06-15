@@ -4,6 +4,9 @@ This package provides a collection of locale configs.
 
 ## Exports
 
+`moment/ig` - A [moment.js](https://momentjs.com/) locale for Igbo. This can be used to localise timestamps generated using moment.js.
+`/moment/pcm` - A [moment.js](https://momentjs.com/) locale for Pidgin. This can be used to localise timestamps generated using moment.js.
+
 
 ## Installation
 
@@ -14,7 +17,10 @@ npm install @bbc/psammead-locales --save
 ## Usage
 
 ```jsx
-import ig from '@bbc/psammead-locales/moment/yo';
+import moment from 'moment';
+import ig from '@bbc/psammead-locales/moment/ig';
+
+moment.locale('ig');
 ```
 
 ## Contributing
