@@ -4,10 +4,8 @@ import './pcm';
 
 moment.locale('pcm')
 
-// Linting is disabled in this file to keep the style matching the tests in moment.
-
 // This asset overrides the gunit assertion done in the moment codebase.
-// I have tried to leave as much the same as possible to make contributing it as easy as possible
+// Format and styling of this file has been keep consistent with the official moment tests.
 // An example of these tests can be seen at https://github.com/moment/moment/blob/develop/src/test/locale/en-gb.js
 const assert = { equal: (val1, val2) => expect(val1).toEqual(val2) };
 
