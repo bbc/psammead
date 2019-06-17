@@ -9,9 +9,7 @@ Object.keys(svgs)
       shouldMatchSnapshot(
         'should render correctly',
         <svg
-          viewBox={`${svgs[svgName].viewbox.width} ${
-            svgs[svgName].viewbox.height
-          }`}
+          viewBox={`${svgs[svgName].viewbox.width} ${svgs[svgName].viewbox.height}`}
         >
           {svgs[svgName].group}
         </svg>,
