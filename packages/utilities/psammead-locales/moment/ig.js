@@ -14,7 +14,7 @@ moment.defineLocale('ig', {
     L: 'DD/MM/YYYY',
     LL: 'D MMMM YYYY',
     LLL: 'D MMMM YYYY HH:mm',
-    LLLL: 'dddd, D MMMM YYYY HH:mm',
+    LLLL: 'dddd, MMMM D YYYY HH:mm',
   },
   calendar: {
     sameDay: '[Taa na] LT',
