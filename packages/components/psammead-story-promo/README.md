@@ -19,6 +19,7 @@ The `StoryPromo` component is designed to be used on 'index' pages, which are pa
 | image    | node   | No       | Null    | `<img>`          |
 | info     | node   | Yes      | N/A     | `<h2>Title</h2>` |
 | mediaIndicator     | node   | No      | null     | `<MediaIndicator duration="2:15" datetime="PT2M15S" offscreenText="Video 2 minutes 15 seconds" />` |
+| topStory | boolean | No      | false   | true          |
 
 ## Headline Props
 
@@ -38,6 +39,8 @@ The typical use-case of this component is as displayed below. A Image sits on th
 
 This component also has an option to display a media indicator, which consists of a play icon and duration of the media, if that data is provided. 
 
+The `topStory` prop can be passed to adopt a vertical card layout under 600px. This is designed to be used only on the first (top) story on an index. This prop must be passed to the StoryPromo, Headline and Summary components.
+
 ```jsx
 import React, { Fragment } from 'react';
 import StoryPromo, { Headline, Summary, Link } from '@bbc/psammead-story-promo';
@@ -49,10 +52,12 @@ const Image = (
 
 const Info = (
   <Fragment>
-    <Headline script={latin}>      
+    <Headline script={latin} topStory={true}>      
       <Link href="https://www.bbc.co.uk/news">The headline of the promo</Link>
     </Headline>
-    <Summary script={latin}>The summary of the promo</Summary>
+    <Summary script={latin} topStory={true}>
+      The summary of the promo
+    </Summary>
     <time>12 March 2019</time>
   </Fragment>
 );
@@ -60,6 +65,7 @@ const Info = (
 <StoryPromo
   image={Image}
   info={Info}
+  topStory={true}
 />
 ```
 
