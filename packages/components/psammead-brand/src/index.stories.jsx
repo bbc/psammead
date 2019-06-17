@@ -13,8 +13,8 @@ const inputs = () => {
     .map(key => key.charAt(0).toUpperCase() + key.slice(1));
 
   const svgChoice = select('Service SVG', options, 'News').toLowerCase();
-  const productInput = text('Product', 'Default Brand Name');
-  const serviceLocalisedNameInput = text('Localised service name', 'News');
+  const productInput = text('Product', 'BBC News');
+  const serviceLocalisedNameInput = text('Localised service name', 'Yoruba');
   const svgRatio = svgs[svgChoice].ratio;
   const svgMaxHeight = 24;
   const svgMinHeight = 16;

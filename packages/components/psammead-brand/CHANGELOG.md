@@ -3,7 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 | ------- | ----------- |
-| 4.1.0   | [PR#642](https://github.com/bbc/psammead/pull/642) Add product and serviceLocalisedName knobs on storybook |
+| 4.0.1   | [PR#642](https://github.com/bbc/psammead/pull/642) Add product and serviceLocalisedName knobs on storybook |
 | 4.0.0   | [PR#609](https://github.com/bbc/psammead/pull/609) Add lang attribute to brand component |
 | 3.0.0   | [PR#528](https://github.com/bbc/psammead/pull/528) Add link prop to allow dynamic link |
 | 2.0.0   | [PR#480](https://github.com/bbc/psammead/pull/480) Allow the SVG to dynamically scale between the minimum and maximum widths passed in as props, also bump psammead-assets@0.1.9. Also reduce banner height and left-right padding under 600px. |
