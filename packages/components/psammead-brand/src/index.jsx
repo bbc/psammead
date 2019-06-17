@@ -71,7 +71,32 @@ const BrandSvg = styled.svg`
   /* stylelint-enable */
 `;
 
-const StyledBrand = ({ brandName, svgHeight, svg, maxWidth, minWidth }) => (
+const LocalisedBrandName = ({ product, serviceLocalisedName }) =>
+  serviceLocalisedName ? (
+    <Fragment>
+      <span lang="en-GB">{product}</span>, {serviceLocalisedName}
+    </Fragment>
+  ) : (
+    product
+  );
+
+LocalisedBrandName.propTypes = {
+  product: string.isRequired,
+  serviceLocalisedName: string,
+};
+
+LocalisedBrandName.defaultProps = {
+  serviceLocalisedName: null,
+};
+
+const StyledBrand = ({
+  product,
+  serviceLocalisedName,
+  svgHeight,
+  svg,
+  maxWidth,
+  minWidth,
+}) => (
   <Fragment>
     {svg && (
       <Fragment>
@@ -87,14 +112,20 @@ const StyledBrand = ({ brandName, svgHeight, svg, maxWidth, minWidth }) => (
         >
           {svg.group}
         </BrandSvg>
-        <VisuallyHiddenText>{brandName}</VisuallyHiddenText>
+        <VisuallyHiddenText>
+          <LocalisedBrandName
+            product={product}
+            serviceLocalisedName={serviceLocalisedName}
+          />
+        </VisuallyHiddenText>
       </Fragment>
     )}
   </Fragment>
 );
 
 const brandProps = {
-  brandName: string.isRequired,
+  product: string.isRequired,
+  serviceLocalisedName: string,
   maxWidth: number.isRequired,
   minWidth: number.isRequired,
   svgHeight: number.isRequired,
@@ -110,37 +141,50 @@ const brandProps = {
 
 StyledBrand.propTypes = brandProps;
 
-const Brand = ({ brandName, svgHeight, minWidth, maxWidth, svg, url }) => (
-  <Banner svgHeight={svgHeight}>
-    {url ? (
-      <StyledLink href={url} maxWidth={maxWidth} minWidth={minWidth}>
-        <StyledBrand
-          brandName={brandName}
-          svg={svg}
-          maxWidth={maxWidth}
-          minWidth={minWidth}
-          svgHeight={svgHeight}
-        />
-      </StyledLink>
-    ) : (
-      <StyledBrand
-        brandName={brandName}
-        svg={svg}
-        svgHeight={svgHeight}
-        minWidth={minWidth}
-        maxWidth={maxWidth}
-      />
-    )}
-  </Banner>
-);
+StyledBrand.defaultProps = {
+  serviceLocalisedName: null,
+};
+
+const Brand = ({
+  product,
+  serviceLocalisedName,
+  svgHeight,
+  minWidth,
+  maxWidth,
+  svg,
+  url,
+}) => {
+  const styledBrandProps = {
+    product,
+    serviceLocalisedName,
+    svgHeight,
+    minWidth,
+    maxWidth,
+    svg,
+  };
+
+  return (
+    <Banner svgHeight={svgHeight}>
+      {url ? (
+        <StyledLink href={url} maxWidth={maxWidth} minWidth={minWidth}>
+          <StyledBrand {...styledBrandProps} />
+        </StyledLink>
+      ) : (
+        <StyledBrand {...styledBrandProps} />
+      )}
+    </Banner>
+  );
+};
 
 Brand.defaultProps = {
   url: null,
+  serviceLocalisedName: null,
 };
 
 Brand.propTypes = {
   ...brandProps,
   url: string,
+  serviceLocalisedName: string,
 };
 
 export default Brand;
