@@ -6,12 +6,15 @@ import StoryPromo, { Headline, Summary, Link } from './index';
 
 const Image = <img src="https://foobar.com/image.png" alt="Alt text" />;
 
-const Info = (
+// eslint-disable-next-line react/prop-types
+const Info = ({ topStory }) => (
   <Fragment>
-    <Headline script={latin}>
+    <Headline script={latin} topStory={topStory}>
       <Link href="https://www.bbc.co.uk/news">The headline of the promo</Link>
     </Headline>
-    <Summary script={latin}>The summary of the promo</Summary>
+    <Summary script={latin} topStory={topStory}>
+      The summary of the promo
+    </Summary>
     <time>12 March 2019</time>
   </Fragment>
 );
@@ -27,13 +30,36 @@ const mediaInfo = (
 describe('StoryPromo', () => {
   shouldMatchSnapshot(
     'should render correctly',
-    <StoryPromo image={Image} info={Info} />,
+    <StoryPromo image={Image} info={Info({ topStory: false })} />,
   );
 });
 
 describe('StoryPromo with Media Indicator', () => {
   shouldMatchSnapshot(
     'should render correctly',
-    <StoryPromo image={Image} info={Info} mediaIndicator={mediaInfo} />,
+    <StoryPromo
+      image={Image}
+      info={Info({ topStory: false })}
+      mediaIndicator={mediaInfo}
+    />,
+  );
+});
+
+describe('StoryPromo - Top Story', () => {
+  shouldMatchSnapshot(
+    'should render correctly',
+    <StoryPromo image={Image} info={Info({ topStory: true })} topStory />,
+  );
+});
+
+describe('StoryPromo - Top Story with Media Indicator', () => {
+  shouldMatchSnapshot(
+    'should render correctly',
+    <StoryPromo
+      image={Image}
+      info={Info({ topStory: true })}
+      mediaIndicator={mediaInfo}
+      topStory
+    />,
   );
 });
