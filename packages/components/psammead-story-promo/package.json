@@ -1,6 +1,6 @@
 {
   "name": "@bbc/psammead-story-promo",
-  "version": "0.2.0-alpha.7",
+  "version": "0.2.0-alpha.8",
   "main": "dist/index.js",
   "description": "A story promo for use on index pages",
   "repository": {
