@@ -39,6 +39,20 @@ exports[`Navigation should render correctly 1`] = `
   border-bottom: 0.25rem solid #FFFFFF;
 }
 
+.c3:focus {
+  outline: none;
+}
+
+.c3:focus::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border: 0.25rem solid #FFFFFF;
+}
+
 @media (max-width:37.4375rem) {
   .c0 {
     padding: 0;
