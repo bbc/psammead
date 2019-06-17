@@ -18,7 +18,7 @@ exports[`should render SansBold correctly for news 1`] = `
 
 exports[`should render SansBold correctly for persian 1`] = `
 "
-    font-family: NassimPersian, Arial, Verdana, Geneva,	Helvetica,	sans serif 
+    font-family: NassimPersian, Arial, Verdana, Geneva, Helvetica, sans serif 
     font-style: normal;
     font-weight: 700;
   "
@@ -58,7 +58,7 @@ exports[`should render SansBoldItalic correctly for news 1`] = `
 
 exports[`should render SansBoldItalic correctly for persian 1`] = `
 "
-    font-family: NassimPersian, Arial, Verdana, Geneva,	Helvetica,	sans serif 
+    font-family: NassimPersian, Arial, Verdana, Geneva, Helvetica, sans serif 
     font-style: normal;
     font-weight: 700;
   "
@@ -98,7 +98,7 @@ exports[`should render SansItalic correctly for news 1`] = `
 
 exports[`should render SansItalic correctly for persian 1`] = `
 "
-    font-family: NassimPersian, Arial, Verdana, Geneva,	Helvetica,	sans serif
+    font-family: NassimPersian, Arial, Verdana, Geneva, Helvetica, sans serif
     font-style: normal;
     font-weight: 400;
   "
@@ -138,7 +138,7 @@ exports[`should render SansRegular correctly for news 1`] = `
 
 exports[`should render SansRegular correctly for persian 1`] = `
 "
-    font-family: NassimPersian, Arial, Verdana, Geneva,	Helvetica,	sans serif
+    font-family: NassimPersian, Arial, Verdana, Geneva, Helvetica, sans serif
     font-style: normal;
     font-weight: 400;
   "
@@ -178,7 +178,7 @@ exports[`should render SerifMedium correctly for news 1`] = `
 
 exports[`should render SerifMedium correctly for persian 1`] = `
 "
-    font-family: NassimPersian, Arial, Verdana, Geneva,	Helvetica,	sans serif 
+    font-family: NassimPersian, Arial, Verdana, Geneva, Helvetica, sans serif 
     font-style: normal;
     font-weight: 700;
   "
@@ -218,7 +218,7 @@ exports[`should render SerifMediumItalic correctly for news 1`] = `
 
 exports[`should render SerifMediumItalic correctly for persian 1`] = `
 "
-    font-family: NassimPersian, Arial, Verdana, Geneva,	Helvetica,	sans serif 
+    font-family: NassimPersian, Arial, Verdana, Geneva, Helvetica, sans serif 
     font-style: normal;
     font-weight: 700;
   "
@@ -258,7 +258,7 @@ exports[`should render SerifRegular correctly for news 1`] = `
 
 exports[`should render SerifRegular correctly for persian 1`] = `
 "
-    font-family: NassimPersian, Arial, Verdana, Geneva,	Helvetica,	sans serif
+    font-family: NassimPersian, Arial, Verdana, Geneva, Helvetica, sans serif
     font-style: normal;
     font-weight: 400;
   "
