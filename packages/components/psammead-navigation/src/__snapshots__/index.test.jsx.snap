@@ -2,30 +2,20 @@
 
 exports[`Navigation should render correctly 1`] = `
 .c0 {
-  padding: 0 1rem;
+  padding: 0 0.5rem;
   background-color: #B80000;
-  position: relative;
 }
 
 .c1 {
   list-style-type: none;
   padding: 0;
   margin: 0;
-  overflow: hidden;
 }
 
 .c2 {
   display: inline-block;
   position: relative;
   z-index: 1;
-}
-
-.c2:last-child > a {
-  padding-right: 0.5rem;
-}
-
-.c2:last-child > a:hover::before {
-  right: 0.5rem;
 }
 
 .c3 {
@@ -37,31 +27,21 @@ exports[`Navigation should render correctly 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   display: inline-block;
-  padding: 0.75rem 1rem 0.75rem 0;
+  padding: 0.75rem 0.5rem;
 }
 
 .c3:hover::before {
   content: '';
   position: absolute;
+  left: 0;
+  right: 0;
   bottom: 0;
   border-bottom: 0.25rem solid #FFFFFF;
-  left: 0;
-  right: 1rem;
 }
 
 @media (max-width:37.4375rem) {
   .c0 {
-    padding: 0 0.5rem;
-  }
-
-  .c0::after {
-    content: ' ';
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    border-bottom: 1px solid #ffffff;
-    z-index: 2;
+    padding: 0;
   }
 }
 
@@ -69,11 +49,11 @@ exports[`Navigation should render correctly 1`] = `
   .c2::after {
     content: ' ';
     position: absolute;
+    left: 0;
     bottom: 0;
     width: 37.5rem;
     border-bottom: 1px solid #eab3b3;
     z-index: -1;
-    left: 0;
   }
 }
 
@@ -91,8 +71,9 @@ exports[`Navigation should render correctly 1`] = `
   }
 }
 
-<div
+<nav
   className="c0"
+  role="navigation"
 >
   <ul
     className="c1"
@@ -100,15 +81,13 @@ exports[`Navigation should render correctly 1`] = `
   >
     <li
       className="c2"
-      dir="ltr"
       role="listitem"
     >
       <a
         className="c3"
-        dir="ltr"
         href="/igbo"
       />
     </li>
   </ul>
-</div>
+</nav>
 `;
