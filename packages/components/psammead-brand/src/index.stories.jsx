@@ -1,5 +1,5 @@
 import React from 'react';
-import { select, number, withKnobs } from '@storybook/addon-knobs';
+import { select, number, text, withKnobs } from '@storybook/addon-knobs';
 import { storiesOf } from '@storybook/react';
 import * as svgs from '@bbc/psammead-assets/svgs';
 import { dirDecorator } from '@bbc/psammead-storybook-helpers';
@@ -13,16 +13,8 @@ const inputs = () => {
     .map(key => key.charAt(0).toUpperCase() + key.slice(1));
 
   const svgChoice = select('Service SVG', options, 'News').toLowerCase();
-  const productInput = select(
-    'Product',
-    ['Default Brand Name', 'BBC News'],
-    'Default Brand Name',
-  );
-  const serviceLocalisedNameInput = select(
-    'Localised service name',
-    options,
-    'news',
-  );
+  const productInput = text('Product', 'Default Brand Name');
+  const serviceLocalisedNameInput = text('Localised service name', 'News');
   const svgRatio = svgs[svgChoice].ratio;
   const svgMaxHeight = 24;
   const svgMinHeight = 16;
