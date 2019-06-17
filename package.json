@@ -80,7 +80,7 @@
     "shelljs": "^0.8.3",
     "storybook-readme": "^5.0.1",
     "strip-ansi": "^5.0.0",
-    "stylelint": "^9.8.0",
+    "stylelint": "^10.1.0",
     "stylelint-config-recommended": "^2.1.0",
     "stylelint-config-styled-components": "^0.1.1",
     "stylelint-processor-styled-components": "^1.8.0",
