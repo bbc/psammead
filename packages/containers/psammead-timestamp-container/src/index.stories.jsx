@@ -13,6 +13,7 @@ storiesOf('Containers|TimestampContainer', module)
       format="D MMMM YYYY"
       isRelative={boolean('isRelative', false)}
       script={latin}
+      locale="ig"
     />
   ))
   .add('with prefix', () => (
