@@ -13,6 +13,16 @@ const inputs = () => {
     .map(key => key.charAt(0).toUpperCase() + key.slice(1));
 
   const svgChoice = select('Service SVG', options, 'News').toLowerCase();
+  const productInput = select(
+    'Product',
+    ['Default Brand Name', 'BBC News'],
+    'Default Brand Name',
+  );
+  const serviceLocalisedNameInput = select(
+    'Localised service name',
+    options,
+    'news',
+  );
   const svgRatio = svgs[svgChoice].ratio;
   const svgMaxHeight = 24;
   const svgMinHeight = 16;
@@ -20,7 +30,14 @@ const inputs = () => {
   const maxWidthInput = number('maximum svg width', svgRatio * svgMaxHeight);
   const svgHeightInput = number('desired height svg', svgMaxHeight);
 
-  return { svgChoice, svgHeightInput, minWidthInput, maxWidthInput };
+  return {
+    productInput,
+    serviceLocalisedNameInput,
+    svgChoice,
+    svgHeightInput,
+    minWidthInput,
+    maxWidthInput,
+  };
 };
 
 storiesOf('Components|Brand', module)
@@ -30,6 +47,8 @@ storiesOf('Components|Brand', module)
     'without brand link',
     () => {
       const {
+        productInput,
+        serviceLocalisedNameInput,
         svgHeightInput,
         minWidthInput,
         maxWidthInput,
@@ -38,8 +57,8 @@ storiesOf('Components|Brand', module)
 
       return (
         <Brand
-          product="Default Brand Name"
-          serviceLocalisedName="Service"
+          product={productInput}
+          serviceLocalisedName={serviceLocalisedNameInput}
           svgHeight={svgHeightInput}
           minWidth={minWidthInput}
           maxWidth={maxWidthInput}
@@ -53,6 +72,8 @@ storiesOf('Components|Brand', module)
     'with brand link',
     () => {
       const {
+        productInput,
+        serviceLocalisedNameInput,
         svgHeightInput,
         minWidthInput,
         maxWidthInput,
@@ -61,13 +82,13 @@ storiesOf('Components|Brand', module)
 
       return (
         <Brand
-          product="Default Brand Name"
-          serviceLocalisedName="Service"
+          product={productInput}
+          serviceLocalisedName={serviceLocalisedNameInput}
           svgHeight={svgHeightInput}
           minWidth={minWidthInput}
           maxWidth={maxWidthInput}
           svg={svgs[svgChoice]}
-          url="https://bbc.com/news"
+          url="https://www.bbc.com/news"
         />
       );
     },
