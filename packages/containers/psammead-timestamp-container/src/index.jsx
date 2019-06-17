@@ -2,7 +2,7 @@ import React from 'react';
 import { number, string, bool, shape } from 'prop-types';
 import { scriptPropType } from '@bbc/gel-foundations/prop-types';
 import Timestamp from '@bbc/psammead-timestamp';
-import moment from 'moment';
+import moment from 'moment-timezone';
 import {
   isValidDateTime,
   formatUnixTimestamp,
