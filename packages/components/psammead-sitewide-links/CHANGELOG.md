@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 0.3.9   | [PR#585](https://github.com/bbc/psammead/pull/585) Make row count dynamic on number of columns and items |
 | 0.3.8   | [PR#576](https://github.com/bbc/psammead/pull/576) Display list in a single column under 240px |
 | 0.3.7   | [PR#498](https://github.com/bbc/psammead/pull/498) Update stories to use new input provider |
 | 0.3.6   | [PR#430](https://github.com/bbc/psammead/pull/430) Add text knobs to story |
