@@ -11,6 +11,8 @@ exports[`StoryPromo - Top Story should render correctly 1`] = `
 .c3 {
   font-size: 0.9375rem;
   line-height: 1.25rem;
+  font-size: 1.25rem;
+  line-height: 1.5rem;
   color: #222222;
   font-family: ReithSerif,Helvetica,Arial,sans-serif;
   margin: 0;
@@ -18,7 +20,7 @@ exports[`StoryPromo - Top Story should render correctly 1`] = `
   font-weight: 700;
 }
 
-.c6 {
+.c5 {
   font-size: 0.9375rem;
   line-height: 1.125rem;
   color: #3F3F42;
@@ -110,6 +112,20 @@ exports[`StoryPromo - Top Story should render correctly 1`] = `
   }
 }
 
+@media (min-width:20rem) and (max-width:37.4375rem) {
+  .c3 {
+    font-size: 1.375rem;
+    line-height: 1.625rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .c3 {
+    font-size: 1.75rem;
+    line-height: 2rem;
+  }
+}
+
 @media (min-width:37.5rem) {
   .c3 {
     font-size: 1.125rem;
@@ -118,23 +134,16 @@ exports[`StoryPromo - Top Story should render correctly 1`] = `
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
-  .c6 {
+  .c5 {
     font-size: 0.9375rem;
     line-height: 1.125rem;
   }
 }
 
 @media (min-width:37.5rem) {
-  .c6 {
+  .c5 {
     font-size: 0.875rem;
     line-height: 1.125rem;
-  }
-}
-
-@media (max-width:37.4375rem) {
-  .iwjbob .c5 {
-    display: none;
-    visibility: hidden;
   }
 }
 
@@ -190,7 +199,7 @@ exports[`StoryPromo - Top Story should render correctly 1`] = `
       </a>
     </h3>
     <p
-      className="c5 c6"
+      className="c5"
     >
       The summary of the promo
     </p>
@@ -260,6 +269,8 @@ exports[`StoryPromo - Top Story with Media Indicator should render correctly 1`]
 .c9 {
   font-size: 0.9375rem;
   line-height: 1.25rem;
+  font-size: 1.25rem;
+  line-height: 1.5rem;
   color: #222222;
   font-family: ReithSerif,Helvetica,Arial,sans-serif;
   margin: 0;
@@ -267,7 +278,7 @@ exports[`StoryPromo - Top Story with Media Indicator should render correctly 1`]
   font-weight: 700;
 }
 
-.c12 {
+.c11 {
   font-size: 0.9375rem;
   line-height: 1.125rem;
   color: #3F3F42;
@@ -359,6 +370,20 @@ exports[`StoryPromo - Top Story with Media Indicator should render correctly 1`]
   }
 }
 
+@media (min-width:20rem) and (max-width:37.4375rem) {
+  .c9 {
+    font-size: 1.375rem;
+    line-height: 1.625rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .c9 {
+    font-size: 1.75rem;
+    line-height: 2rem;
+  }
+}
+
 @media (min-width:37.5rem) {
   .c9 {
     font-size: 1.125rem;
@@ -367,23 +392,16 @@ exports[`StoryPromo - Top Story with Media Indicator should render correctly 1`]
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
-  .c12 {
+  .c11 {
     font-size: 0.9375rem;
     line-height: 1.125rem;
   }
 }
 
 @media (min-width:37.5rem) {
-  .c12 {
+  .c11 {
     font-size: 0.875rem;
     line-height: 1.125rem;
-  }
-}
-
-@media (max-width:37.4375rem) {
-  .iwjbob .c11 {
-    display: none;
-    visibility: hidden;
   }
 }
 
@@ -478,7 +496,7 @@ exports[`StoryPromo - Top Story with Media Indicator should render correctly 1`]
       </a>
     </h3>
     <p
-      className="c11 c12"
+      className="c11"
     >
       The summary of the promo
     </p>
@@ -500,6 +518,8 @@ exports[`StoryPromo should render correctly 1`] = `
 .c3 {
   font-size: 0.9375rem;
   line-height: 1.25rem;
+  font-size: 0.9375rem;
+  line-height: 1.25rem;
   color: #222222;
   font-family: ReithSerif,Helvetica,Arial,sans-serif;
   margin: 0;
@@ -507,7 +527,7 @@ exports[`StoryPromo should render correctly 1`] = `
   font-weight: 700;
 }
 
-.c6 {
+.c5 {
   font-size: 0.9375rem;
   line-height: 1.125rem;
   color: #3F3F42;
@@ -594,6 +614,20 @@ exports[`StoryPromo should render correctly 1`] = `
   }
 }
 
+@media (min-width:20rem) and (max-width:37.4375rem) {
+  .c3 {
+    font-size: 1rem;
+    line-height: 1.25rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .c3 {
+    font-size: 1rem;
+    line-height: 1.25rem;
+  }
+}
+
 @media (min-width:37.5rem) {
   .c3 {
     font-size: 1.125rem;
@@ -602,16 +636,23 @@ exports[`StoryPromo should render correctly 1`] = `
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
-  .c6 {
+  .c5 {
     font-size: 0.9375rem;
     line-height: 1.125rem;
   }
 }
 
 @media (min-width:37.5rem) {
-  .c6 {
+  .c5 {
     font-size: 0.875rem;
     line-height: 1.125rem;
+  }
+}
+
+@media (max-width:37.4375rem) {
+  .c5 {
+    display: none;
+    visibility: hidden;
   }
 }
 
@@ -633,13 +674,6 @@ exports[`StoryPromo should render correctly 1`] = `
     max-width: initial;
     padding: initial;
     grid-column: 3 / span 4;
-  }
-}
-
-@media (max-width:37.4375rem) {
-  .c2 .c5 {
-    display: none;
-    visibility: hidden;
   }
 }
 
@@ -668,7 +702,7 @@ exports[`StoryPromo should render correctly 1`] = `
       </a>
     </h3>
     <p
-      className="c5 c6"
+      className="c5"
     >
       The summary of the promo
     </p>
@@ -733,6 +767,8 @@ exports[`StoryPromo with Media Indicator should render correctly 1`] = `
 .c9 {
   font-size: 0.9375rem;
   line-height: 1.25rem;
+  font-size: 0.9375rem;
+  line-height: 1.25rem;
   color: #222222;
   font-family: ReithSerif,Helvetica,Arial,sans-serif;
   margin: 0;
@@ -740,7 +776,7 @@ exports[`StoryPromo with Media Indicator should render correctly 1`] = `
   font-weight: 700;
 }
 
-.c12 {
+.c11 {
   font-size: 0.9375rem;
   line-height: 1.125rem;
   color: #3F3F42;
@@ -834,6 +870,20 @@ exports[`StoryPromo with Media Indicator should render correctly 1`] = `
   }
 }
 
+@media (min-width:20rem) and (max-width:37.4375rem) {
+  .c9 {
+    font-size: 1rem;
+    line-height: 1.25rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .c9 {
+    font-size: 1rem;
+    line-height: 1.25rem;
+  }
+}
+
 @media (min-width:37.5rem) {
   .c9 {
     font-size: 1.125rem;
@@ -842,16 +892,23 @@ exports[`StoryPromo with Media Indicator should render correctly 1`] = `
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
-  .c12 {
+  .c11 {
     font-size: 0.9375rem;
     line-height: 1.125rem;
   }
 }
 
 @media (min-width:37.5rem) {
-  .c12 {
+  .c11 {
     font-size: 0.875rem;
     line-height: 1.125rem;
+  }
+}
+
+@media (max-width:37.4375rem) {
+  .c11 {
+    display: none;
+    visibility: hidden;
   }
 }
 
@@ -873,13 +930,6 @@ exports[`StoryPromo with Media Indicator should render correctly 1`] = `
     max-width: initial;
     padding: initial;
     grid-column: 3 / span 4;
-  }
-}
-
-@media (max-width:37.4375rem) {
-  .c8 .c11 {
-    display: none;
-    visibility: hidden;
   }
 }
 
@@ -947,7 +997,7 @@ exports[`StoryPromo with Media Indicator should render correctly 1`] = `
       </a>
     </h3>
     <p
-      className="c11 c12"
+      className="c11"
     >
       The summary of the promo
     </p>

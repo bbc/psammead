@@ -16,6 +16,7 @@ import {
 import {
   getPica,
   getGreatPrimer,
+  getParagon,
   getLongPrimer,
   GEL_FF_REITH_SERIF,
   GEL_FF_REITH_SANS,
@@ -125,6 +126,15 @@ const InlineMediaIndicator = styled.div`
 
 export const Headline = styled.h3`
   ${props => (props.script ? getPica(props.script) : '')};
+
+  ${({ script, topStory }) => {
+    if (!script) {
+      return '';
+    }
+
+    return topStory ? getParagon(script) : getPica(script);
+  }};
+
   color: ${C_EBON};
   font-family: ${GEL_FF_REITH_SERIF};
   margin: 0; /* Reset */
@@ -141,6 +151,15 @@ export const Summary = styled.p`
   font-family: ${GEL_FF_REITH_SANS};
   margin: 0; /* Reset */
   padding-bottom: ${GEL_SPACING};
+
+  ${({ topStory }) =>
+    !topStory &&
+    css`
+      @media (max-width: ${GEL_GROUP_2_SCREEN_WIDTH_MAX}) {
+        display: none;
+        visibility: hidden;
+      }
+    `}
 `;
 
 const TextGridColumnsTopStory = css`
@@ -195,19 +214,6 @@ const TextGridItem = styled.div`
 
     ${({ topStory }) => (topStory ? TextGridColumnsTopStory : TextGridColumns)}
   }
-
-  ${({ topStory }) =>
-    // Styles 'Summary' component via TextGridItem to remove requirement
-    // of user to pass `topStory` prop to the component manually.
-    !topStory &&
-    css`
-      ${Summary} {
-        @media (max-width: ${GEL_GROUP_2_SCREEN_WIDTH_MAX}) {
-          display: none;
-          visibility: hidden;
-        }
-      }
-    `}
 `;
 
 export const Link = styled.a`

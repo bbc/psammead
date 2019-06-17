@@ -9,12 +9,14 @@ import notes from '../README.md';
 import StoryPromo, { Headline, Summary, Link } from './index';
 
 // eslint-disable-next-line react/prop-types
-const InfoComponent = ({ headlineText, summaryText, script }) => (
+const InfoComponent = ({ headlineText, summaryText, script, topStory }) => (
   <Fragment>
-    <Headline script={script}>
+    <Headline script={script} topStory={topStory}>
       <Link href="https://www.bbc.co.uk/news">{headlineText}</Link>
     </Headline>
-    <Summary script={script}>{summaryText}</Summary>
+    <Summary script={script} topStory={topStory}>
+      {summaryText}
+    </Summary>
     <Timestamp
       datetime={text('Timestamp datetime', '2019-03-01T14:00+00:00')}
       script={script}
@@ -53,6 +55,7 @@ const generateStory = ({ mediaIndicator, topStory }) =>
           headlineText={headlineText}
           summaryText={summaryText}
           script={script}
+          topStory={topStory}
         />
       );
 
