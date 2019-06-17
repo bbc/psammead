@@ -9,12 +9,14 @@ import notes from '../README.md';
 import StoryPromo, { Headline, Summary, Link } from './index';
 
 // eslint-disable-next-line react/prop-types
-const InfoComponent = ({ headlineText, summaryText, script }) => (
+const InfoComponent = ({ headlineText, summaryText, script, topStory }) => (
   <Fragment>
-    <Headline script={script}>
+    <Headline script={script} topStory={topStory}>
       <Link href="https://www.bbc.co.uk/news">{headlineText}</Link>
     </Headline>
-    <Summary script={script}>{summaryText}</Summary>
+    <Summary script={script} topStory={topStory}>
+      {summaryText}
+    </Summary>
     <Timestamp
       datetime={text('Timestamp datetime', '2019-03-01T14:00+00:00')}
       script={script}
@@ -44,47 +46,43 @@ const MediaIndicatorComponent = (
   />
 );
 
+const generateStory = ({ mediaIndicator, topStory }) =>
+  inputProvider(
+    [{ name: 'Headline' }, { name: 'Summary' }],
+    ([headlineText, summaryText], script) => {
+      const Info = (
+        <InfoComponent
+          headlineText={headlineText}
+          summaryText={summaryText}
+          script={script}
+          topStory={topStory}
+        />
+      );
+
+      return (
+        <StoryPromo
+          image={Img}
+          info={Info}
+          mediaIndicator={mediaIndicator && MediaIndicatorComponent}
+          topStory={topStory}
+        />
+      );
+    },
+  );
+
 storiesOf('Components|StoryPromo/StoryPromo', module)
   .addDecorator(withKnobs)
+  .add('default', generateStory({}), { notes, knobs: { escapeHTML: false } })
+  .add('with media indicator', generateStory({ mediaIndicator: true }), {
+    notes,
+    knobs: { escapeHTML: false },
+  })
+  .add('Top story', generateStory({ topStory: true }), {
+    notes,
+    knobs: { escapeHTML: false },
+  })
   .add(
-    'default',
-    inputProvider(
-      [{ name: 'Headline' }, { name: 'Summary' }],
-      ([headlineText, summaryText], script) => {
-        const Info = (
-          <InfoComponent
-            headlineText={headlineText}
-            summaryText={summaryText}
-            script={script}
-          />
-        );
-
-        return <StoryPromo image={Img} info={Info} />;
-      },
-    ),
-    { notes, knobs: { escapeHTML: false } },
-  )
-  .add(
-    'with media indicator',
-    inputProvider(
-      [{ name: 'Headline' }, { name: 'Summary' }],
-      ([headlineText, summaryText], script) => {
-        const Info = (
-          <InfoComponent
-            headlineText={headlineText}
-            summaryText={summaryText}
-            script={script}
-          />
-        );
-
-        return (
-          <StoryPromo
-            image={Img}
-            info={Info}
-            mediaIndicator={MediaIndicatorComponent}
-          />
-        );
-      },
-    ),
+    'Top Story with media indicator',
+    generateStory({ mediaIndicator: true, topStory: true }),
     { notes, knobs: { escapeHTML: false } },
   );
