@@ -45,7 +45,7 @@ Img.propTypes = {
 };
 
 Img.defaultProps = {
-  fade: true,
+  fade: false,
   height: null,
   srcset: null,
   width: null,
