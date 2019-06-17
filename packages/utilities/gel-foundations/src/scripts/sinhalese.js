@@ -19,8 +19,8 @@ const sinhaleseTypography = {
       lineHeight: '24',
     },
     groupB: {
-      fontSize: '28',
-      lineHeight: '28',
+      fontSize: '32',
+      lineHeight: '36',
     },
     groupD: {
       fontSize: '40',
@@ -33,26 +33,26 @@ const sinhaleseTypography = {
       lineHeight: '24',
     },
     groupB: {
-      fontSize: '24',
-      lineHeight: '24',
+      fontSize: '28',
+      lineHeight: '32',
     },
     groupD: {
       fontSize: '34',
-      lineHeight: '36',
+      lineHeight: '38',
     },
   },
   doublePica: {
     groupA: {
-      fontSize: '24',
-      lineHeight: '24',
+      fontSize: '22',
+      lineHeight: '22',
     },
     groupB: {
-      fontSize: '24',
-      lineHeight: '24',
+      fontSize: '26',
+      lineHeight: '30',
     },
     groupD: {
       fontSize: '30',
-      lineHeight: '30',
+      lineHeight: '34',
     },
   },
   greatPrimer: {
@@ -80,13 +80,13 @@ const sinhaleseTypography = {
     },
     groupD: {
       fontSize: '22',
-      lineHeight: '24',
+      lineHeight: '28',
     },
   },
   pica: {
     groupA: {
       fontSize: '22',
-      lineHeight: '24',
+      lineHeight: '28',
     },
     groupB: {
       fontSize: '22',

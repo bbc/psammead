@@ -15,20 +15,6 @@ const noAscOrDescTypography = {
   },
   trafalgar: {
     groupA: {
-      fontSize: '20',
-      lineHeight: '26',
-    },
-    groupB: {
-      fontSize: '24',
-      lineHeight: '30',
-    },
-    groupD: {
-      fontSize: '32',
-      lineHeight: '42',
-    },
-  },
-  paragon: {
-    groupA: {
       fontSize: '24',
       lineHeight: '30',
     },
@@ -37,7 +23,21 @@ const noAscOrDescTypography = {
       lineHeight: '32',
     },
     groupD: {
-      fontSize: '30',
+      fontSize: '32',
+      lineHeight: '42',
+    },
+  },
+  paragon: {
+    groupA: {
+      fontSize: '20',
+      lineHeight: '26',
+    },
+    groupB: {
+      fontSize: '24',
+      lineHeight: '30',
+    },
+    groupD: {
+      fontSize: '28',
       lineHeight: '38',
     },
   },
@@ -57,8 +57,8 @@ const noAscOrDescTypography = {
   },
   greatPrimer: {
     groupA: {
-      fontSize: '18',
-      lineHeight: '24',
+      fontSize: '16',
+      lineHeight: '22',
     },
     groupB: {
       fontSize: '18',
@@ -66,7 +66,7 @@ const noAscOrDescTypography = {
     },
     groupD: {
       fontSize: '20',
-      lineHeight: '30',
+      lineHeight: '24',
     },
   },
   bodyCopy: {
