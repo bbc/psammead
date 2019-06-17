@@ -5,7 +5,7 @@ import MediaIndicator from './index';
 describe('MediaIndicator', () => {
   shouldMatchSnapshot(
     'should render video by default',
-    <MediaIndicator offscreenText="Video 2 minutes 15 seconds" />,
+    <MediaIndicator offscreenText="Video" />,
   );
 
   shouldMatchSnapshot(
@@ -13,7 +13,7 @@ describe('MediaIndicator', () => {
     <MediaIndicator
       duration="2:15"
       datetime="PT2M15S"
-      offscreenText="Video 2 minutes 15 seconds"
+      offscreenText="Video"
       type="video"
     />,
   );
@@ -28,7 +28,7 @@ describe('MediaIndicator', () => {
     <MediaIndicator
       duration="2:15"
       datetime="PT2M15S"
-      offscreenText="Audio 2 minutes 15 seconds"
+      offscreenText="Audio"
       type="audio"
     />,
   );
