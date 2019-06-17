@@ -16,7 +16,7 @@ moment.defineLocale('pcm', {
     L: 'DD/MM/YYYY',
     LL: 'Do MMMM YYYY',
     LLL: 'Do MMMM YYYY HH:mm',
-    LLLL: 'dddd, Do MMMM YYYY HH:mm',
+    LLLL: 'Do MMMM YYYY HH:mm',
   },
   calendar: {
     sameDay: '[Today at] LT',
