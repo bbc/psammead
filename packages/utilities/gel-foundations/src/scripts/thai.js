@@ -9,7 +9,7 @@ const thaiTypography = {
       lineHeight: '42',
     },
     groupD: {
-      fontSize: '44',
+      fontSize: '46',
       lineHeight: '58',
     },
   },
@@ -57,8 +57,8 @@ const thaiTypography = {
   },
   greatPrimer: {
     groupA: {
-      fontSize: '18',
-      lineHeight: '24',
+      fontSize: '16',
+      lineHeight: '20',
     },
     groupB: {
       fontSize: '18',
@@ -86,15 +86,15 @@ const thaiTypography = {
   pica: {
     groupA: {
       fontSize: '16',
-      lineHeight: '22',
+      lineHeight: '20',
     },
     groupB: {
       fontSize: '16',
-      lineHeight: '24',
+      lineHeight: '22',
     },
     groupD: {
-      fontSize: '18',
-      lineHeight: '28',
+      fontSize: '16',
+      lineHeight: '22',
     },
   },
   longPrimer: {
