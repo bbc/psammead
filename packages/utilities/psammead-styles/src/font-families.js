@@ -65,6 +65,23 @@ const helmetFontStyles = {
   `,
 };
 
+const nessimPersian = `font-family: NassimPersian, Arial, Verdana, Geneva,	Helvetica,	sans serif`;
+
+const persianStyles = {
+  sansRegular: `
+    ${nessimPersian}
+    font-style: normal;
+    font-weight: 400;
+  `,
+  sansBold: `
+    ${nessimPersian} 
+    font-style: normal;
+    font-weight: 700;
+  `,
+};
+
+export const persian = persianStyles;
+
 export const igbo = helmetFontStyles;
 
 export const pidgin = helmetFontStyles;

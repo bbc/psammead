@@ -16,6 +16,14 @@ exports[`should render SansBold correctly for news 1`] = `
   "
 `;
 
+exports[`should render SansBold correctly for persian 1`] = `
+"
+    font-family: NassimPersian, Arial, Verdana, Geneva,	Helvetica,	sans serif 
+    font-style: normal;
+    font-weight: 700;
+  "
+`;
+
 exports[`should render SansBold correctly for pidgin 1`] = `
 "
     font-family: Helmet, Freesans, Helvetica, Arial, sans serif;
@@ -45,6 +53,14 @@ exports[`should render SansBoldItalic correctly for news 1`] = `
    font-family: ReithSans, Helvetica, Arial, sans-serif;
    font-style: italic;
    font-weight: 700;
+  "
+`;
+
+exports[`should render SansBoldItalic correctly for persian 1`] = `
+"
+    font-family: NassimPersian, Arial, Verdana, Geneva,	Helvetica,	sans serif 
+    font-style: normal;
+    font-weight: 700;
   "
 `;
 
@@ -80,6 +96,14 @@ exports[`should render SansItalic correctly for news 1`] = `
   "
 `;
 
+exports[`should render SansItalic correctly for persian 1`] = `
+"
+    font-family: NassimPersian, Arial, Verdana, Geneva,	Helvetica,	sans serif
+    font-style: normal;
+    font-weight: 400;
+  "
+`;
+
 exports[`should render SansItalic correctly for pidgin 1`] = `
 "
     font-family: Helmet, Freesans, Helvetica, Arial, sans serif;
@@ -109,6 +133,14 @@ exports[`should render SansRegular correctly for news 1`] = `
    font-family: ReithSans, Helvetica, Arial, sans-serif; 
    font-style: normal;
    font-weight: 400;
+  "
+`;
+
+exports[`should render SansRegular correctly for persian 1`] = `
+"
+    font-family: NassimPersian, Arial, Verdana, Geneva,	Helvetica,	sans serif
+    font-style: normal;
+    font-weight: 400;
   "
 `;
 
@@ -144,6 +176,14 @@ exports[`should render SerifMedium correctly for news 1`] = `
   "
 `;
 
+exports[`should render SerifMedium correctly for persian 1`] = `
+"
+    font-family: NassimPersian, Arial, Verdana, Geneva,	Helvetica,	sans serif 
+    font-style: normal;
+    font-weight: 700;
+  "
+`;
+
 exports[`should render SerifMedium correctly for pidgin 1`] = `
 "
     font-family: Helmet, Freesans, Helvetica, Arial, sans serif;
@@ -176,6 +216,14 @@ exports[`should render SerifMediumItalic correctly for news 1`] = `
   "
 `;
 
+exports[`should render SerifMediumItalic correctly for persian 1`] = `
+"
+    font-family: NassimPersian, Arial, Verdana, Geneva,	Helvetica,	sans serif 
+    font-style: normal;
+    font-weight: 700;
+  "
+`;
+
 exports[`should render SerifMediumItalic correctly for pidgin 1`] = `
 "
     font-family: Helmet, Freesans, Helvetica, Arial, sans serif;
@@ -205,6 +253,14 @@ exports[`should render SerifRegular correctly for news 1`] = `
    font-family: ReithSerif, Helvetica, Arial, sans-serif;,
    font-style: normal;
    font-weight: 400;
+  "
+`;
+
+exports[`should render SerifRegular correctly for persian 1`] = `
+"
+    font-family: NassimPersian, Arial, Verdana, Geneva,	Helvetica,	sans serif
+    font-style: normal;
+    font-weight: 400;
   "
 `;
 
