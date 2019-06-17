@@ -45,13 +45,13 @@ test('format', function () {
             ['[the] DDDo [day of the year]',       'the 45th day of the year'],
             ['LTS',                                '15:25:50'],
             ['L',                                  '14/02/2010'],
-            ['LL',                                 '14 February 2010'],
-            ['LLL',                                '14 February 2010 15:25'],
-            ['LLLL',                               'Sunday, 14 February 2010 15:25'],
+            ['LL',                                 '14th February 2010'],
+            ['LLL',                                '14th February 2010 15:25'],
+            ['LLLL',                               'Sunday, 14th February 2010 15:25'],
             ['l',                                  '14/2/2010'],
-            ['ll',                                 '14 Feb 2010'],
-            ['lll',                                '14 Feb 2010 15:25'],
-            ['llll',                               'Sun, 14 Feb 2010 15:25']
+            ['ll',                                 '14th Feb 2010'],
+            ['lll',                                '14th Feb 2010 15:25'],
+            ['llll',                               'Sun, 14th Feb 2010 15:25']
         ],
         b = moment(new Date(2010, 1, 14, 15, 25, 50, 125)),
         i;
