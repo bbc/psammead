@@ -290,8 +290,8 @@ exports[`Brand should render correctly with transparent borders 1`] = `
   height: 3.5rem;
   width: 100%;
   padding: 0 0.5rem;
-  border-top: 1px solid transparent;
-  border-bottom: 1px solid transparent;
+  border-top: 0.0625rem solid transparent;
+  border-bottom: 0.0625rem solid transparent;
 }
 
 .c1 {
