@@ -5,6 +5,7 @@ import { select, number, withKnobs } from '@storybook/addon-knobs';
 import { inputProvider } from '@bbc/psammead-storybook-helpers';
 import { latin } from '@bbc/gel-foundations/scripts';
 import * as svgs from '@bbc/psammead-assets/svgs';
+import VisuallyHiddenText from '@bbc/psammead-visually-hidden-text';
 import Brand from '@bbc/psammead-brand';
 import Navigation, { NavigationUl, NavigationLi } from './index';
 import igboNavData from '../testHelpers/igbo';
@@ -32,6 +33,17 @@ const inputs = () => {
 const StyledMain = styled.main`
   padding: 0px 1rem;
 `;
+
+const offScreenText = (
+  <Fragment>
+    <span
+      // eslint-disable-next-line jsx-a11y/aria-role
+      role="text"
+    >
+      <span lang="en-GB">BBC News</span>, Ìgbò - Akụkọ
+    </span>
+  </Fragment>
+);
 
 storiesOf('Components|Navigation', module)
   .addDecorator(withKnobs)
@@ -78,9 +90,9 @@ storiesOf('Components|Navigation', module)
             </NavigationUl>
           </Navigation>
           <StyledMain>
-            <h1 id="content" tabIndex="-1">
-              BBC News, Ìgbò - Home
-            </h1>
+            <VisuallyHiddenText id="content" as="h1" tabIndex="-1">
+              {offScreenText}
+            </VisuallyHiddenText>
           </StyledMain>
         </Fragment>
       );

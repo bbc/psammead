@@ -28,20 +28,21 @@ const SkipLink = styled.a`
   height: 1px;
   width: 1px;
   overflow: hidden;
+  padding: 0.75rem 0.5rem;
+  background-color: #ffffff;
+  border: 3px solid #000;
+  color: #333;
+  text-decoration: none;
+  font-family: ${GEL_FF_REITH_SANS};
 
   &:focus {
-    padding: 0.75rem 0.5rem;
-    background-color: #ffffff;
-    border: 3px solid #000;
-    clip: auto;
-    color: #333;
-    height: auto;
     top: -3.75rem;
     left: ${GEL_SPACING_DBL};
+    clip-path: none;
+    clip: auto;
+    height: auto;
     width: auto;
     overflow: visible;
-    text-decoration: none;
-    font-family: ${GEL_FF_REITH_SANS};
 
     @media (max-width: ${GEL_GROUP_2_SCREEN_WIDTH_MAX}) {
       top: -3rem;
