@@ -4,6 +4,7 @@ exports[`Navigation should render correctly 1`] = `
 .c0 {
   padding: 0 0.5rem;
   background-color: #B80000;
+  border-bottom: 0.0625rem solid transparent;
   position: relative;
   overflow: hidden;
 }
@@ -84,6 +85,7 @@ exports[`Navigation should render correctly 1`] = `
 @media (max-width:37.4375rem) {
   .c0 {
     padding: 0;
+    border-bottom: 0;
   }
 }
 

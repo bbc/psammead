@@ -14,11 +14,13 @@ import { scriptPropType } from '@bbc/gel-foundations/prop-types';
 const StyledNav = styled.nav`
   padding: 0 ${GEL_SPACING};
   background-color: ${C_POSTBOX};
+  border-bottom: 0.0625rem solid transparent;
   position: relative;
   overflow: hidden;
 
   @media (max-width: ${GEL_GROUP_2_SCREEN_WIDTH_MAX}) {
     padding: 0;
+    border-bottom: 0;
   }
 `;
 
