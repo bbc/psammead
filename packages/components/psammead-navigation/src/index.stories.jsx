@@ -104,29 +104,36 @@ storiesOf('Components|Navigation', module)
   .add(
     'pidgin',
     () => (
-      <Navigation skipLinkText="Waka go wetin de inside">
-        <NavigationUl>
-          {Object.keys(pidginNavData).map((item, key) => {
-            const { title, url } = pidginNavData[item];
+      <Fragment>
+        <Navigation skipLinkText="Waka go wetin de inside">
+          <NavigationUl>
+            {Object.keys(pidginNavData).map((item, key) => {
+              const { title, url } = pidginNavData[item];
 
-            let active;
-            if (key === 0) {
-              active = true;
-            }
+              let active;
+              if (key === 0) {
+                active = true;
+              }
 
-            return (
-              <NavigationLi
-                key={title}
-                url={url}
-                script={latin}
-                active={active}
-              >
-                {title}
-              </NavigationLi>
-            );
-          })}
-        </NavigationUl>
-      </Navigation>
+              return (
+                <NavigationLi
+                  key={title}
+                  url={url}
+                  script={latin}
+                  active={active}
+                >
+                  {title}
+                </NavigationLi>
+              );
+            })}
+          </NavigationUl>
+        </Navigation>
+        <StyledMain>
+          <VisuallyHiddenText id="content" as="h1" tabIndex="-1">
+            {offScreenText}
+          </VisuallyHiddenText>
+        </StyledMain>
+      </Fragment>
     ),
     {
       notes,
@@ -135,29 +142,36 @@ storiesOf('Components|Navigation', module)
   .add(
     'yoruba',
     () => (
-      <Navigation skipLinkText="Fò kọjá sí nnkan tí ó wà nínú rẹ̀">
-        <NavigationUl>
-          {Object.keys(yorubaNavData).map((item, key) => {
-            const { title, url } = yorubaNavData[item];
+      <Fragment>
+        <Navigation skipLinkText="Fò kọjá sí nnkan tí ó wà nínú rẹ̀">
+          <NavigationUl>
+            {Object.keys(yorubaNavData).map((item, key) => {
+              const { title, url } = yorubaNavData[item];
 
-            let active;
-            if (key === 0) {
-              active = true;
-            }
+              let active;
+              if (key === 0) {
+                active = true;
+              }
 
-            return (
-              <NavigationLi
-                key={title}
-                url={url}
-                script={latin}
-                active={active}
-              >
-                {title}
-              </NavigationLi>
-            );
-          })}
-        </NavigationUl>
-      </Navigation>
+              return (
+                <NavigationLi
+                  key={title}
+                  url={url}
+                  script={latin}
+                  active={active}
+                >
+                  {title}
+                </NavigationLi>
+              );
+            })}
+          </NavigationUl>
+        </Navigation>
+        <StyledMain>
+          <VisuallyHiddenText id="content" as="h1" tabIndex="-1">
+            {offScreenText}
+          </VisuallyHiddenText>
+        </StyledMain>
+      </Fragment>
     ),
     {
       notes,
