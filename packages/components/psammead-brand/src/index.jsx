@@ -19,6 +19,8 @@ const PADDING_AROUND_SVG_BELOW_600PX = 32;
 const conditionallyRenderHeight = (svgHeight, padding) =>
   svgHeight ? `height: ${(svgHeight + padding) / 16}rem` : '';
 
+const TRANSPARENT_BORDER = `0.0625rem solid transparent`;
+
 const Banner = styled.div`
   background-color: ${C_POSTBOX};
   ${({ svgHeight }) =>
@@ -31,9 +33,8 @@ const Banner = styled.div`
       conditionallyRenderHeight(svgHeight, PADDING_AROUND_SVG_ABOVE_600PX)};
     padding: 0 ${GEL_SPACING_DBL};
   }
-  ${({ borderTop }) => borderTop && 'border-top: 0.0625rem solid transparent;'}
-  ${({ borderBottom }) =>
-    borderBottom && 'border-bottom: 1px solid transparent;'}
+  ${({ borderTop }) => borderTop && TRANSPARENT_BORDER}
+  ${({ borderBottom }) => borderBottom && TRANSPARENT_BORDER}
 `;
 
 const brandWidth = (minWidth, maxWidth) => `
