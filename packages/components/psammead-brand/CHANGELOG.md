@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 | ------- | ----------- |
+| 4.0.2   | [PR#???](https://github.com/bbc/psammead/pull/???) Add transparent borders with borderTop and borderBottom props |
 | 4.0.1   | [PR#642](https://github.com/bbc/psammead/pull/642) Add product and serviceLocalisedName knobs on storybook |
 | 4.0.0   | [PR#609](https://github.com/bbc/psammead/pull/609) Add lang attribute to brand component |
 | 3.0.0   | [PR#528](https://github.com/bbc/psammead/pull/528) Add link prop to allow dynamic link |

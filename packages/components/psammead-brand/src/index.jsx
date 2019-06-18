@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react';
 import styled from 'styled-components';
-import { string, number, node, shape } from 'prop-types';
+import { string, number, node, shape, bool } from 'prop-types';
 import { C_POSTBOX, C_WHITE } from '@bbc/psammead-styles/colours';
 import VisuallyHiddenText from '@bbc/psammead-visually-hidden-text';
 import { GEL_GROUP_3_SCREEN_WIDTH_MIN } from '@bbc/gel-foundations/breakpoints';
@@ -31,6 +31,9 @@ const Banner = styled.div`
       conditionallyRenderHeight(svgHeight, PADDING_AROUND_SVG_ABOVE_600PX)};
     padding: 0 ${GEL_SPACING_DBL};
   }
+  ${({ borderTop }) => borderTop && 'border-top: 1px solid transparent;'}
+  ${({ borderBottom }) =>
+    borderBottom && 'border-bottom: 1px solid transparent;'}
 `;
 
 const brandWidth = (minWidth, maxWidth) => `
@@ -145,32 +148,21 @@ StyledBrand.defaultProps = {
   serviceLocalisedName: null,
 };
 
-const Brand = ({
-  product,
-  serviceLocalisedName,
-  svgHeight,
-  minWidth,
-  maxWidth,
-  svg,
-  url,
-}) => {
-  const styledBrandProps = {
-    product,
-    serviceLocalisedName,
-    svgHeight,
-    minWidth,
-    maxWidth,
-    svg,
-  };
+const Brand = props => {
+  const { svgHeight, maxWidth, minWidth, url, borderTop, borderBottom } = props;
 
   return (
-    <Banner svgHeight={svgHeight}>
+    <Banner
+      svgHeight={svgHeight}
+      borderTop={borderTop}
+      borderBottom={borderBottom}
+    >
       {url ? (
         <StyledLink href={url} maxWidth={maxWidth} minWidth={minWidth}>
-          <StyledBrand {...styledBrandProps} />
+          <StyledBrand {...props} />
         </StyledLink>
       ) : (
-        <StyledBrand {...styledBrandProps} />
+        <StyledBrand {...props} />
       )}
     </Banner>
   );
@@ -179,12 +171,16 @@ const Brand = ({
 Brand.defaultProps = {
   url: null,
   serviceLocalisedName: null,
+  borderTop: false,
+  borderBottom: false,
 };
 
 Brand.propTypes = {
   ...brandProps,
   url: string,
   serviceLocalisedName: string,
+  borderTop: bool,
+  borderBottom: bool,
 };
 
 export default Brand;
