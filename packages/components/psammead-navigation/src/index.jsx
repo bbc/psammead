@@ -15,6 +15,7 @@ const StyledNav = styled.nav`
   padding: 0 ${GEL_SPACING};
   background-color: ${C_POSTBOX};
   position: relative;
+  overflow: hidden;
 
   @media (max-width: ${GEL_GROUP_2_SCREEN_WIDTH_MAX}) {
     padding: 0;
