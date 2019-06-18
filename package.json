@@ -67,7 +67,7 @@
     "glob-loader": "^0.3.0",
     "husky": "^2.4.1",
     "jest": "^24.5.0",
-    "jest-fetch-mock": "^1.6.5",
+    "jest-fetch-mock": "^2.1.2",
     "jest-styled-components": "^6.3.1",
     "lerna": "^3.15.0",
     "prettier": "^1.18.2",
