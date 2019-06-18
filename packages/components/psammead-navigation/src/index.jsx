@@ -14,12 +14,10 @@ import { scriptPropType } from '@bbc/gel-foundations/prop-types';
 const StyledNav = styled.nav`
   padding: 0 ${GEL_SPACING};
   background-color: ${C_POSTBOX};
-  border-bottom: 0.0625rem solid transparent;
   position: relative;
 
   @media (max-width: ${GEL_GROUP_2_SCREEN_WIDTH_MAX}) {
     padding: 0;
-    border-bottom: 0;
   }
 `;
 
@@ -57,15 +55,32 @@ const StyledUnorderedList = styled.ul`
   padding: 0;
   margin: 0;
   overflow: hidden;
+
+  /* Display a border line for Hight Contrast mode > 600px */
+  &::after {
+    content: ' ';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    border-bottom: 0.0625rem solid transparent;
+    z-index: 1;
+  }
+
+  @media (max-width: ${GEL_GROUP_2_SCREEN_WIDTH_MAX}) {
+    &::after {
+      content: none;
+    }
+  }
 `;
 
 const StyledListItem = styled.li`
   display: inline-block;
   position: relative;
-  z-index: 1;
+  z-index: 2;
 
   @media (max-width: ${GEL_GROUP_2_SCREEN_WIDTH_MAX}) {
-    /* Trick to display a separator line which takes the full width */
+    /* Trick to display a border between the list items, which takes the full width */
     &::after {
       content: ' ';
       position: absolute;
@@ -96,11 +111,11 @@ const StyledLink = styled.a`
   display: inline-block;
   padding: 0.75rem ${GEL_SPACING};
 
-  &:hover::before {
+  &:hover::after {
     ${ListItemBorder}
   }
 
-  &:focus::before {
+  &:focus::after {
     content: '';
     position: absolute;
     top: 0;

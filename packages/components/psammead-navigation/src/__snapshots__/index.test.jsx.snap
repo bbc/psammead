@@ -4,7 +4,6 @@ exports[`Navigation should render correctly 1`] = `
 .c0 {
   padding: 0 0.5rem;
   background-color: #B80000;
-  border-bottom: 0.0625rem solid transparent;
   position: relative;
 }
 
@@ -44,10 +43,20 @@ exports[`Navigation should render correctly 1`] = `
   overflow: hidden;
 }
 
+.c2::after {
+  content: ' ';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  border-bottom: 0.0625rem solid transparent;
+  z-index: 1;
+}
+
 .c3 {
   display: inline-block;
   position: relative;
-  z-index: 1;
+  z-index: 2;
 }
 
 .c4 {
@@ -62,7 +71,7 @@ exports[`Navigation should render correctly 1`] = `
   padding: 0.75rem 0.5rem;
 }
 
-.c4:hover::before {
+.c4:hover::after {
   content: '';
   position: absolute;
   left: 0;
@@ -71,7 +80,7 @@ exports[`Navigation should render correctly 1`] = `
   border-bottom: 0.25rem solid #FFFFFF;
 }
 
-.c4:focus::before {
+.c4:focus::after {
   content: '';
   position: absolute;
   top: 0;
@@ -84,7 +93,6 @@ exports[`Navigation should render correctly 1`] = `
 @media (max-width:37.4375rem) {
   .c0 {
     padding: 0;
-    border-bottom: 0;
   }
 }
 
@@ -92,6 +100,12 @@ exports[`Navigation should render correctly 1`] = `
   .c1:focus {
     top: -3rem;
     left: 0.5rem;
+  }
+}
+
+@media (max-width:37.4375rem) {
+  .c2::after {
+    content: none;
   }
 }
 
