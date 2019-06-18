@@ -1,4 +1,5 @@
 import React, { Fragment } from 'react';
+import styled from 'styled-components';
 import { storiesOf } from '@storybook/react';
 import { select, number, withKnobs } from '@storybook/addon-knobs';
 import { inputProvider } from '@bbc/psammead-storybook-helpers';
@@ -27,6 +28,10 @@ const inputs = () => {
 
   return { svgChoice, svgHeightInput, minWidthInput, maxWidthInput };
 };
+
+const StyledMain = styled.main`
+  padding: 0px 1rem;
+`;
 
 storiesOf('Components|Navigation', module)
   .addDecorator(withKnobs)
@@ -72,6 +77,11 @@ storiesOf('Components|Navigation', module)
               })}
             </NavigationUl>
           </Navigation>
+          <StyledMain>
+            <h1 id="content" tabIndex="-1">
+              BBC News, Ìgbò - Home
+            </h1>
+          </StyledMain>
         </Fragment>
       );
     }),

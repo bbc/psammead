@@ -11,7 +11,7 @@ import {
 import { getPica, GEL_FF_REITH_SANS } from '@bbc/gel-foundations/typography';
 import { scriptPropType } from '@bbc/gel-foundations/prop-types';
 
-const NavigationWrapper = styled.nav`
+const StyledNav = styled.nav`
   padding: 0 ${GEL_SPACING};
   background-color: ${C_POSTBOX};
   position: relative;
@@ -62,7 +62,7 @@ const StyledListItem = styled.li`
   z-index: 1;
 
   @media (max-width: ${GEL_GROUP_2_SCREEN_WIDTH_MAX}) {
-    /* Trick a separator line which takes the full width */
+    /* Trick to display a separator line which takes the full width */
     &::after {
       content: ' ';
       position: absolute;
@@ -152,10 +152,10 @@ export const NavigationLi = ({ children: link, url, script, active }) => (
 );
 
 const Navigation = ({ children, skipLinkText }) => (
-  <NavigationWrapper role="navigation">
+  <StyledNav role="navigation">
     <SkipLink href="#content">{skipLinkText}</SkipLink>
     {children}
-  </NavigationWrapper>
+  </StyledNav>
 );
 
 Navigation.propTypes = {
