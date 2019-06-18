@@ -43,6 +43,6 @@ storiesOf('Containers|TimestampContainer', module)
       format="D MMMM YYYY, HH:mm z"
       isRelative={boolean('isRelative', false)}
       script={latin}
-      locale={text('Locale', 'en')}
+      locale={text('Locale', 'fa')}
     />
   ));
