@@ -1,8 +1,21 @@
 const { exec } = require('shelljs');
 
+const whitelist = /^psammead-[a-zA-Z0-9-]*$|^gel-[a-zA-Z0-9-]*$/;
+
+const checkPackage = name => {
+  const dirStructure = name.split('/');
+  const packageName = dirStructure[dirStructure.length - 1];
+  const result = whitelist.test(packageName);
+
+  return result;
+};
+
 // Get version of package in NPM regsitry. Returns 0.0.0 if doesn't exist.
 module.exports = name => {
   let packageVersions = [];
+
+  if (!checkPackage(name)) return '-1';
+
   const npmVersion = exec(`npm view ${name} versions -json`, { silent: true })
     .stdout;
 
