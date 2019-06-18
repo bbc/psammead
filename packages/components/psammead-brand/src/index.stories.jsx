@@ -21,7 +21,7 @@ const inputs = () => {
   const minWidthInput = number('minimum svg width', svgRatio * svgMinHeight);
   const maxWidthInput = number('maximum svg width', svgRatio * svgMaxHeight);
   const svgHeightInput = number('desired height svg', svgMaxHeight);
-  const borderBottom = bool('Border Top', false);
+  const borderBottom = bool('Border Bottom', false);
   const borderTop = bool('Border Top', false);
 
   return {
