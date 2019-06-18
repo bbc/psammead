@@ -13,7 +13,6 @@ storiesOf('Containers|TimestampContainer', module)
       format="D MMMM YYYY"
       isRelative={boolean('isRelative', false)}
       script={latin}
-      locale="ig"
     />
   ))
   .add('with prefix', () => (
@@ -35,5 +34,15 @@ storiesOf('Containers|TimestampContainer', module)
       prefix={text('Prefix text', 'This')}
       suffix={text('Suffix text', 'is date of last update')}
       script={latin}
+    />
+  ))
+  .add('with locale', () => (
+    <Timestamp
+      timestamp={number('Unix timestamp', 1530947227000)}
+      dateTimeFormat="YYYY-MM-DD"
+      format="D MMMM YYYY, HH:mm z"
+      isRelative={boolean('isRelative', false)}
+      script={latin}
+      locale={text('Locale', 'en')}
     />
   ));
