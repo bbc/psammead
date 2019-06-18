@@ -29,15 +29,15 @@ const TimeDuration = styled.time`
 `;
 
 const MediaIndicator = ({ datetime, duration, offscreenText, type }) => (
-  <MediaIndicatorWrapper>
+  <MediaIndicatorWrapper aria-hidden="true">
     <FlexWrapper>
       {mediaIcons[type]}
-      {duration && datetime && offscreenText ? (
-        <TimeDuration dateTime={datetime}>
-          <VisuallyHiddenText>{offscreenText}</VisuallyHiddenText>
-          <span aria-hidden="true">{duration}</span>
-        </TimeDuration>
-      ) : null}
+      {offscreenText && (
+        <VisuallyHiddenText>{offscreenText}</VisuallyHiddenText>
+      )}
+      {duration && datetime && (
+        <TimeDuration dateTime={datetime}>{duration}</TimeDuration>
+      )}
     </FlexWrapper>
   </MediaIndicatorWrapper>
 );
@@ -45,13 +45,14 @@ const MediaIndicator = ({ datetime, duration, offscreenText, type }) => (
 MediaIndicator.propTypes = {
   datetime: string,
   duration: string,
-  offscreenText: string.isRequired,
+  offscreenText: string,
   type: oneOf(['video', 'audio']),
 };
 
 MediaIndicator.defaultProps = {
   datetime: null,
   duration: null,
+  offscreenText: null,
   type: 'video',
 };
 
