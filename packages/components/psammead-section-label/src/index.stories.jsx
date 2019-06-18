@@ -16,6 +16,10 @@ storiesOf('Components|SectionLabel', module)
           script={script}
           dir={dir}
           bar={boolean('show bar?', true)}
+          visuallyHidden={boolean(
+            'visually hide component when width less than 600px?',
+            false,
+          )}
           labelId="example-section-label"
         >
           {title}
