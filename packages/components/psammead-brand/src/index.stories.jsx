@@ -1,5 +1,5 @@
 import React from 'react';
-import { select, number, text, withKnobs } from '@storybook/addon-knobs';
+import { select, number, text, withKnobs, bool } from '@storybook/addon-knobs';
 import { storiesOf } from '@storybook/react';
 import * as svgs from '@bbc/psammead-assets/svgs';
 import { dirDecorator } from '@bbc/psammead-storybook-helpers';
@@ -21,6 +21,8 @@ const inputs = () => {
   const minWidthInput = number('minimum svg width', svgRatio * svgMinHeight);
   const maxWidthInput = number('maximum svg width', svgRatio * svgMaxHeight);
   const svgHeightInput = number('desired height svg', svgMaxHeight);
+  const borderBottom = bool('Border Top', false);
+  const borderTop = bool('Border Top', false);
 
   return {
     productInput,
@@ -29,6 +31,8 @@ const inputs = () => {
     svgHeightInput,
     minWidthInput,
     maxWidthInput,
+    borderTop,
+    borderBottom,
   };
 };
 
@@ -45,6 +49,8 @@ storiesOf('Components|Brand', module)
         minWidthInput,
         maxWidthInput,
         svgChoice,
+        borderBottom,
+        borderTop,
       } = inputs();
 
       return (
@@ -55,7 +61,8 @@ storiesOf('Components|Brand', module)
           minWidth={minWidthInput}
           maxWidth={maxWidthInput}
           svg={svgs[svgChoice]}
-          borderBottom
+          borderBottom={borderBottom}
+          borderTop={borderTop}
         />
       );
     },
@@ -71,6 +78,8 @@ storiesOf('Components|Brand', module)
         minWidthInput,
         maxWidthInput,
         svgChoice,
+        borderBottom,
+        borderTop,
       } = inputs();
 
       return (
@@ -82,7 +91,8 @@ storiesOf('Components|Brand', module)
           maxWidth={maxWidthInput}
           svg={svgs[svgChoice]}
           url="https://www.bbc.com/news"
-          borderBottom
+          borderBottom={borderBottom}
+          borderTop={borderTop}
         />
       );
     },
