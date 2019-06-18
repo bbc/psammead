@@ -55,6 +55,7 @@ storiesOf('Components|Brand', module)
           minWidth={minWidthInput}
           maxWidth={maxWidthInput}
           svg={svgs[svgChoice]}
+          borderBottom
         />
       );
     },
@@ -81,6 +82,7 @@ storiesOf('Components|Brand', module)
           maxWidth={maxWidthInput}
           svg={svgs[svgChoice]}
           url="https://www.bbc.com/news"
+          borderBottom
         />
       );
     },
