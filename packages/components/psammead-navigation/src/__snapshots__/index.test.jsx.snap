@@ -16,23 +16,25 @@ exports[`Navigation should render correctly 1`] = `
   height: 1px;
   width: 1px;
   overflow: hidden;
-}
-
-.c1:focus {
   padding: 0.75rem 0.5rem;
   background-color: #ffffff;
   border: 3px solid #000;
-  -webkit-clip: auto;
-  clip: auto;
   color: #333;
-  height: auto;
-  top: -3.75rem;
-  left: 1rem;
-  width: auto;
-  overflow: visible;
   -webkit-text-decoration: none;
   text-decoration: none;
   font-family: ReithSans,Helvetica,Arial,sans-serif;
+}
+
+.c1:focus {
+  top: -3.75rem;
+  left: 1rem;
+  -webkit-clip-path: none;
+  clip-path: none;
+  -webkit-clip: auto;
+  clip: auto;
+  height: auto;
+  width: auto;
+  overflow: visible;
 }
 
 .c2 {
