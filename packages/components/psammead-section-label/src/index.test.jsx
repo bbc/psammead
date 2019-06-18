@@ -70,4 +70,16 @@ describe('SectionLabel', () => {
       );
     });
   });
+
+  describe('When hideSectionHeader is true', () => {
+    shouldMatchSnapshot(
+      'should add styling to hide SectionLabel when width of screen is less than 600 px',
+      <SectionLabel
+        script={latin}
+        bar={false}
+        visuallyHidden
+        labelId="test-section-label"
+      />,
+    );
+  });
 });
