@@ -18,6 +18,7 @@ The only provided child should be the title for the section, provided as a _stri
 | Argument  | Type | Required | Default | Example |
 | --------- | ---- | -------- | ------- | ------- |
 | bar | boolean | no | `true` | `false` |
+| visuallyHidden | boolean | no | `false ` | `true` |
 | children | string | yes | N/A | `'Most Read'` |
 | dir | string | no | `'ltr'` | `'rtl'` |
 | labelId | string | yes | N/A | `top-stories-label` |
@@ -58,6 +59,21 @@ const WrappingComponent = () => (
 );
 ```
 
+You can also visually hide the SectionLabel at widths below 600px by adding the `visuallyHidden` prop:
+
+```jsx
+import SectionLabel from '@bbc/psammead-section-label';
+import { latin } from '@bbc/gel-foundations/scripts';
+
+const WrappingComponent = () => (
+  <div aria-labelledby="example-section-label">
+    <SectionLabel script={latin} dir="ltr" visuallyHidden={true} labelId="example-section-label">
+      Example section
+    </SectionLabel>
+  </div>
+);
+```
+
 ### When to use this component
 
 This component should be used to signal the beginning of a grouping of story promos. It should not wrap the story promos or contain any content other than that section's title (aka 'strapline').
@@ -68,7 +84,9 @@ This component should be used to signal the beginning of a grouping of story pro
 
 Although this component has the appearance of a horizontal rule, it does not use an `<hr>` tag, and therefore does not have the associated semantic meaning.
 
-This component wraps the title string in an `<h2>` element. The `labelId` prop will be applid to the `<h2>` as an `id` attribute, allowing the content of the element to be referenced by an `aria-labelledby` attribute. See the [examples](#usage) above.
+This component wraps the title string in an `<h2>` element. The `labelId` prop will be applied to the `<h2>` as an `id` attribute, allowing the content of the element to be referenced by an `aria-labelledby` attribute. See the [examples](#usage) above.
+
+Setting the `visuallyHidden` prop to true visually hides this component at widths <600px, however; it will still be available to screen-readers and other assistive technology.
 
 <!-- ## Roadmap -->
 
