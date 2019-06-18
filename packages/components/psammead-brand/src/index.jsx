@@ -31,7 +31,7 @@ const Banner = styled.div`
       conditionallyRenderHeight(svgHeight, PADDING_AROUND_SVG_ABOVE_600PX)};
     padding: 0 ${GEL_SPACING_DBL};
   }
-  ${({ borderTop }) => borderTop && 'border-top: 1px solid transparent;'}
+  ${({ borderTop }) => borderTop && 'border-top: 0.0625rem solid transparent;'}
   ${({ borderBottom }) =>
     borderBottom && 'border-bottom: 1px solid transparent;'}
 `;
