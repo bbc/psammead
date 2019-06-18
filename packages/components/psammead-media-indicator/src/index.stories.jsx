@@ -20,11 +20,7 @@ storiesOf('Components|MediaIndicator', module)
   .addDecorator(dirDecorator)
   .add(
     'video without duration',
-    () => (
-      <MediaIndicator
-        offscreenText={text('offscreenText', 'Video 2 minutes 15 seconds')}
-      />
-    ),
+    () => <MediaIndicator offscreenText={text('offscreenText', 'Video')} />,
     { notes },
   )
   .add(
@@ -33,7 +29,7 @@ storiesOf('Components|MediaIndicator', module)
       <MediaIndicator
         duration={text('duration', '2:15')}
         datetime={text('datetime', 'PT2M15S')}
-        offscreenText={text('offscreenText', 'Video 2 minutes 15 seconds')}
+        offscreenText={text('offscreenText', 'Video')}
         type="video"
       />
     ),
