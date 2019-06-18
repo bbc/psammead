@@ -41,7 +41,7 @@ The `url` value is the link that points to the frontpage of the service associat
 
 The typical use-case of this component is at the top of pages in a [`header` element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/header). When this is done it is recommend that the component is wrapped in a [`banner` role](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/Banner_role). However, a `header` with a `banner` role should only appear once on a page.
 
-When using `Brand` on at the top pages, you should ensure that `borderBottom` prop is set to true. Also when using brand on the footer you should set `borderTop` to true. This ensures that in high contrast mode the start/end of the `Brand` component is visible.
+When using `Brand` in the header, you should ensure that `borderBottom` prop is set to true. Similarly, when using brand on the footer you should set `borderTop` to true. This ensures that in high contrast mode the top/bottom of the `Brand` component is visible.
 
 ```jsx
 import Brand from '@bbc/psammead-brand';
