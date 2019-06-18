@@ -3,7 +3,10 @@ import styled from 'styled-components';
 import { string, number, node, shape } from 'prop-types';
 import { C_POSTBOX, C_WHITE } from '@bbc/psammead-styles/colours';
 import VisuallyHiddenText from '@bbc/psammead-visually-hidden-text';
-import { GEL_GROUP_3_SCREEN_WIDTH_MIN } from '@bbc/gel-foundations/breakpoints';
+import {
+  GEL_GROUP_3_SCREEN_WIDTH_MIN,
+  GEL_GROUP_4_SCREEN_WIDTH_MAX,
+} from '@bbc/gel-foundations/breakpoints';
 import {
   GEL_SPACING_HLF,
   GEL_SPACING,
@@ -18,6 +21,11 @@ const PADDING_AROUND_SVG_BELOW_600PX = 32;
 
 const conditionallyRenderHeight = (svgHeight, padding) =>
   svgHeight ? `height: ${(svgHeight + padding) / 16}rem` : '';
+
+const SvgWrapper = styled.div`
+  max-width: ${GEL_GROUP_4_SCREEN_WIDTH_MAX};
+  margin: 0 auto;
+`;
 
 const Banner = styled.div`
   background-color: ${C_POSTBOX};
@@ -100,18 +108,20 @@ const StyledBrand = ({
   <Fragment>
     {svg && (
       <Fragment>
-        <BrandSvg
-          height={svgHeight}
-          viewBox={`0 0 ${svg.viewbox.width} ${svg.viewbox.height}`}
-          xmlns="http://www.w3.org/2000/svg"
-          focusable="false"
-          aria-hidden="true"
-          ratio={svg.ratio}
-          maxWidth={maxWidth}
-          minWidth={minWidth}
-        >
-          {svg.group}
-        </BrandSvg>
+        <SvgWrapper>
+          <BrandSvg
+            height={svgHeight}
+            viewBox={`0 0 ${svg.viewbox.width} ${svg.viewbox.height}`}
+            xmlns="http://www.w3.org/2000/svg"
+            focusable="false"
+            aria-hidden="true"
+            ratio={svg.ratio}
+            maxWidth={maxWidth}
+            minWidth={minWidth}
+          >
+            {svg.group}
+          </BrandSvg>
+        </SvgWrapper>
         <VisuallyHiddenText>
           <LocalisedBrandName
             product={product}
