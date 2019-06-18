@@ -1,5 +1,11 @@
 import React from 'react';
-import { select, number, text, withKnobs, bool } from '@storybook/addon-knobs';
+import {
+  select,
+  number,
+  text,
+  withKnobs,
+  boolean,
+} from '@storybook/addon-knobs';
 import { storiesOf } from '@storybook/react';
 import * as svgs from '@bbc/psammead-assets/svgs';
 import { dirDecorator } from '@bbc/psammead-storybook-helpers';
@@ -21,8 +27,8 @@ const inputs = () => {
   const minWidthInput = number('minimum svg width', svgRatio * svgMinHeight);
   const maxWidthInput = number('maximum svg width', svgRatio * svgMaxHeight);
   const svgHeightInput = number('desired height svg', svgMaxHeight);
-  const borderBottom = bool('Border Bottom', false);
-  const borderTop = bool('Border Top', false);
+  const borderBottom = boolean('Border Bottom', false);
+  const borderTop = boolean('Border Top', false);
 
   return {
     productInput,
