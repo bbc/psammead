@@ -49,7 +49,7 @@ storiesOf('Components|Navigation', module)
             maxWidth={maxWidthInput}
             svg={svgs[svgChoice]}
           />
-          <Navigation>
+          <Navigation skipLinkText="Wụga n’ọdịnaya">
             <NavigationUl>
               {Object.keys(igboNavData).map((item, key) => {
                 const { title, url } = igboNavData[item];
@@ -82,7 +82,7 @@ storiesOf('Components|Navigation', module)
   .add(
     'pidgin',
     () => (
-      <Navigation>
+      <Navigation skipLinkText="Waka go wetin de inside">
         <NavigationUl>
           {Object.keys(pidginNavData).map((item, key) => {
             const { title, url } = pidginNavData[item];
@@ -113,7 +113,7 @@ storiesOf('Components|Navigation', module)
   .add(
     'yoruba',
     () => (
-      <Navigation>
+      <Navigation skipLinkText="Fò kọjá sí nnkan tí ó wà nínú rẹ̀">
         <NavigationUl>
           {Object.keys(yorubaNavData).map((item, key) => {
             const { title, url } = yorubaNavData[item];

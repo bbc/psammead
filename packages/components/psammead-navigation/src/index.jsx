@@ -3,7 +3,7 @@ import styled, { css } from 'styled-components';
 import { shape, string, node, bool } from 'prop-types';
 import VisuallyHiddenText from '@bbc/psammead-visually-hidden-text';
 import { C_WHITE, C_POSTBOX, C_GHOST } from '@bbc/psammead-styles/colours';
-import { GEL_SPACING } from '@bbc/gel-foundations/spacings';
+import { GEL_SPACING, GEL_SPACING_DBL } from '@bbc/gel-foundations/spacings';
 import {
   GEL_GROUP_2_SCREEN_WIDTH_MAX,
   GEL_GROUP_3_SCREEN_WIDTH_MIN,
@@ -14,9 +14,39 @@ import { scriptPropType } from '@bbc/gel-foundations/prop-types';
 const NavigationWrapper = styled.nav`
   padding: 0 ${GEL_SPACING};
   background-color: ${C_POSTBOX};
+  position: relative;
 
   @media (max-width: ${GEL_GROUP_2_SCREEN_WIDTH_MAX}) {
     padding: 0;
+  }
+`;
+
+const SkipLink = styled.a`
+  position: absolute;
+  clip-path: inset(100%);
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+
+  &:focus {
+    padding: 0.75rem 0.5rem;
+    background-color: #ffffff;
+    border: 3px solid #000;
+    clip: auto;
+    color: #333;
+    height: auto;
+    top: -3.75rem;
+    left: ${GEL_SPACING_DBL};
+    width: auto;
+    overflow: visible;
+    text-decoration: none;
+    font-family: ${GEL_FF_REITH_SANS};
+
+    @media (max-width: ${GEL_GROUP_2_SCREEN_WIDTH_MAX}) {
+      top: -3rem;
+      left: 0.5rem;
+    }
   }
 `;
 
@@ -65,10 +95,6 @@ const StyledLink = styled.a`
 
   &:hover::before {
     ${ListItemBorder}
-  }
-
-  &:focus {
-    outline: none;
   }
 
   &:focus::before {
@@ -125,12 +151,16 @@ export const NavigationLi = ({ children: link, url, script, active }) => (
   </StyledListItem>
 );
 
-const Navigation = ({ children }) => (
-  <NavigationWrapper role="navigation">{children}</NavigationWrapper>
+const Navigation = ({ children, skipLinkText }) => (
+  <NavigationWrapper role="navigation">
+    <SkipLink href="#content">{skipLinkText}</SkipLink>
+    {children}
+  </NavigationWrapper>
 );
 
 Navigation.propTypes = {
   children: node.isRequired,
+  skipLinkText: string.isRequired,
 };
 
 NavigationUl.propTypes = {

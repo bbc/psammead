@@ -4,21 +4,50 @@ exports[`Navigation should render correctly 1`] = `
 .c0 {
   padding: 0 0.5rem;
   background-color: #B80000;
+  position: relative;
 }
 
 .c1 {
+  position: absolute;
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  -webkit-clip: rect(1px,1px,1px,1px);
+  clip: rect(1px,1px,1px,1px);
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+}
+
+.c1:focus {
+  padding: 0.75rem 0.5rem;
+  background-color: #ffffff;
+  border: 3px solid #000;
+  -webkit-clip: auto;
+  clip: auto;
+  color: #333;
+  height: auto;
+  top: -3.75rem;
+  left: 1rem;
+  width: auto;
+  overflow: visible;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  font-family: ReithSans,Helvetica,Arial,sans-serif;
+}
+
+.c2 {
   list-style-type: none;
   padding: 0;
   margin: 0;
 }
 
-.c2 {
+.c3 {
   display: inline-block;
   position: relative;
   z-index: 1;
 }
 
-.c3 {
+.c4 {
   font-size: 0.9375rem;
   line-height: 1.25rem;
   font-family: ReithSans,Helvetica,Arial,sans-serif;
@@ -30,7 +59,7 @@ exports[`Navigation should render correctly 1`] = `
   padding: 0.75rem 0.5rem;
 }
 
-.c3:hover::before {
+.c4:hover::before {
   content: '';
   position: absolute;
   left: 0;
@@ -39,11 +68,7 @@ exports[`Navigation should render correctly 1`] = `
   border-bottom: 0.25rem solid #FFFFFF;
 }
 
-.c3:focus {
-  outline: none;
-}
-
-.c3:focus::before {
+.c4:focus::before {
   content: '';
   position: absolute;
   top: 0;
@@ -60,7 +85,14 @@ exports[`Navigation should render correctly 1`] = `
 }
 
 @media (max-width:37.4375rem) {
-  .c2::after {
+  .c1:focus {
+    top: -3rem;
+    left: 0.5rem;
+  }
+}
+
+@media (max-width:37.4375rem) {
+  .c3::after {
     content: ' ';
     position: absolute;
     left: 0;
@@ -72,14 +104,14 @@ exports[`Navigation should render correctly 1`] = `
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
-  .c3 {
+  .c4 {
     font-size: 1rem;
     line-height: 1.25rem;
   }
 }
 
 @media (min-width:37.5rem) {
-  .c3 {
+  .c4 {
     font-size: 1rem;
     line-height: 1.25rem;
   }
@@ -89,16 +121,20 @@ exports[`Navigation should render correctly 1`] = `
   className="c0"
   role="navigation"
 >
-  <ul
+  <a
     className="c1"
+    href="#content"
+  />
+  <ul
+    className="c2"
     role="list"
   >
     <li
-      className="c2"
+      className="c3"
       role="listitem"
     >
       <a
-        className="c3"
+        className="c4"
         href="/igbo"
       />
     </li>
