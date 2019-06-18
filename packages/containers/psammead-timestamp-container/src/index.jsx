@@ -25,7 +25,9 @@ const TimestampContainer = ({
     return null;
   }
 
-  moment.locale(locale);
+  if (locale) {
+    moment.locale(locale);
+  }
 
   return (
     <Timestamp
@@ -60,7 +62,7 @@ TimestampContainer.defaultProps = {
   padding: true,
   prefix: null,
   suffix: null,
-  locale: 'en',
+  locale: null,
 };
 
 export default TimestampContainer;
