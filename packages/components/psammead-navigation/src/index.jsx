@@ -16,7 +16,6 @@ const StyledNav = styled.nav`
   background-color: ${C_POSTBOX};
   border-bottom: 0.0625rem solid transparent;
   position: relative;
-  overflow: hidden;
 
   @media (max-width: ${GEL_GROUP_2_SCREEN_WIDTH_MAX}) {
     padding: 0;
@@ -39,13 +38,12 @@ const SkipLink = styled.a`
   font-family: ${GEL_FF_REITH_SANS};
 
   &:focus {
-    top: -3.75rem;
-    left: ${GEL_SPACING_DBL};
     clip-path: none;
     clip: auto;
+    top: -3.75rem;
+    left: ${GEL_SPACING_DBL};
     height: auto;
     width: auto;
-    overflow: visible;
 
     @media (max-width: ${GEL_GROUP_2_SCREEN_WIDTH_MAX}) {
       top: -3rem;
@@ -58,6 +56,7 @@ const StyledUnorderedList = styled.ul`
   list-style-type: none;
   padding: 0;
   margin: 0;
+  overflow: hidden;
 `;
 
 const StyledListItem = styled.li`
