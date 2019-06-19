@@ -20,7 +20,8 @@ The `@bbc/psammead-navigation` package is a set of two components, `NavigationUl
 | Argument | Type | Required | Default | Example |
 | -------- | ---- | -------- | ------- | ------- |
 | children | node | Yes      | N/A     | `<NavigationUl><NavigationLi url="/" script={latin} active="true">Home</NavigationLi><NavigationLi url="/sport" script={latin}>{Sport}</NavigationLi></NavigationUl>` |
-| script   | object  | Yes      | N/A     |  `{ canon: { groupA: { fontSize: '28', lineHeight: '32',}, groupB: { fontSize: '32', lineHeight: '36', }, groupD: { fontSize: '44', lineHeight: '48', }, }, trafalgar: { groupA: { fontSize: '20', lineHeight: '24', }, groupB: { fontSize: '24', lineHeight: '28', }, groupD: { fontSize: '32', lineHeight: '36', }, }, }` |
+| script   | object  | Yes   | N/A     |  `{ canon: { groupA: { fontSize: '28', lineHeight: '32',}, groupB: { fontSize: '32', lineHeight: '36', }, groupD: { fontSize: '44', lineHeight: '48', }, }, trafalgar: { groupA: { fontSize: '20', lineHeight: '24', }, groupB: { fontSize: '24', lineHeight: '28', }, groupD: { fontSize: '32', lineHeight: '36', }, }, }` |
+| skipLinkText | string | Yes | N/A    | `Skip to content` |
 
 ### NavigationUl
 
@@ -38,6 +39,7 @@ The `@bbc/psammead-navigation` package is a set of two components, `NavigationUl
 | script   | object  | Yes      | N/A     |  `{ canon: { groupA: { fontSize: '28', lineHeight: '32',}, groupB: { fontSize: '32', lineHeight: '36', }, groupD: { fontSize: '44', lineHeight: '48', }, }, trafalgar: { groupA: { fontSize: '20', lineHeight: '24', }, groupB: { fontSize: '24', lineHeight: '28', }, groupD: { fontSize: '32', lineHeight: '36', }, }, }` |
 | dir      | string  | No       | `ltr`   | `rtl`    |
 | active   | boolean | No       | `false` | `true`   |
+| currentPageText | string | No | `null`  | `Current page` |
 
 ## Usage
 
@@ -49,9 +51,14 @@ import Navigation, {
 } from '@bbc/psammead-navigation';
 import { latin } from '@bbc/gel-foundations/scripts';
 
-<Navigation>
+<Navigation skipLinkText="Skip to content">
   <NavigationUl>
-    <NavigationLi url="/" script={latin} active="true">
+    <NavigationLi
+      url="/"
+      script={latin}
+      active="true"
+      currentPageText="Current Page"
+    >
       Home
     </NavigationLi>
     <NavigationLi url="/sport" script={latin}>

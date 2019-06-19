@@ -153,14 +153,14 @@ const StyledSpan = styled.span`
   }
 `;
 
-const CurrentItem = ({ children: link, script }) => (
+const CurrentItem = ({ children: link, script, currentPageText }) => (
   <Fragment>
     <StyledSpan
       // eslint-disable-next-line jsx-a11y/aria-role
       role="text"
       script={script}
     >
-      <VisuallyHiddenText>Current page,</VisuallyHiddenText>
+      <VisuallyHiddenText>{currentPageText},</VisuallyHiddenText>
       {link}
     </StyledSpan>
   </Fragment>
@@ -172,10 +172,19 @@ export const NavigationUl = ({ children, ...props }) => (
   </StyledUnorderedList>
 );
 
-export const NavigationLi = ({ children: link, url, script, dir, active }) => (
+export const NavigationLi = ({
+  children: link,
+  url,
+  script,
+  dir,
+  currentPageText,
+  active,
+}) => (
   <StyledListItem role="listitem" dir={dir}>
-    {active ? (
-      <CurrentItem script={script}>{link}</CurrentItem>
+    {active && currentPageText ? (
+      <CurrentItem script={script} currentPageText={currentPageText}>
+        {link}
+      </CurrentItem>
     ) : (
       <StyledLink href={url} script={script}>
         {link}
@@ -209,16 +218,23 @@ NavigationLi.propTypes = {
   script: shape(scriptPropType).isRequired,
   dir: string,
   active: bool,
+  currentPageText: string,
 };
 
 NavigationLi.defaultProps = {
   dir: 'ltr',
   active: false,
+  currentPageText: null,
 };
 
 CurrentItem.propTypes = {
   children: string.isRequired,
   script: shape(scriptPropType).isRequired,
+  currentPageText: string,
+};
+
+CurrentItem.defaultProps = {
+  currentPageText: null,
 };
 
 export default Navigation;

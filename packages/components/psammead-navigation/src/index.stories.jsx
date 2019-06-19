@@ -83,6 +83,7 @@ storiesOf('Components|Navigation', module)
                     script={latin}
                     dir={dir}
                     active={active}
+                    currentPageText="Current page"
                   >
                     {title}
                   </NavigationLi>
@@ -127,6 +128,7 @@ storiesOf('Components|Navigation', module)
                   script={latin}
                   dir={dir}
                   active={active}
+                  currentPageText="Current page"
                 >
                   {title}
                 </NavigationLi>
@@ -173,6 +175,7 @@ storiesOf('Components|Navigation', module)
                   script={latin}
                   dir={dir}
                   active={active}
+                  currentPageText="Current page"
                 >
                   {title}
                 </NavigationLi>
