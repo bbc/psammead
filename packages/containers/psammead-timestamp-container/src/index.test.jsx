@@ -20,6 +20,7 @@ describe('Timestamp', () => {
       format="D MMMM YYYY"
       isRelative={false}
       script={latin}
+      locale="fa"
     />,
   );
 
