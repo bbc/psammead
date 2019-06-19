@@ -68,8 +68,8 @@ storiesOf('Components|Navigation', module)
           />
           <Navigation script={latin} skipLinkText="Wụga n’ọdịnaya">
             <NavigationUl>
-              {Object.keys(igboNavData).map((item, key) => {
-                const { title, url } = igboNavData[item];
+              {igboNavData.map((item, key) => {
+                const { title, url } = item;
 
                 let active;
                 if (key === 0) {
@@ -113,8 +113,8 @@ storiesOf('Components|Navigation', module)
       <Fragment>
         <Navigation script={latin} skipLinkText="Waka go wetin de inside">
           <NavigationUl>
-            {Object.keys(pidginNavData).map((item, key) => {
-              const { title, url } = pidginNavData[item];
+            {pidginNavData.map((item, key) => {
+              const { title, url } = item;
 
               let active;
               if (key === 0) {
@@ -160,8 +160,8 @@ storiesOf('Components|Navigation', module)
           skipLinkText="Fò kọjá sí nnkan tí ó wà nínú rẹ̀"
         >
           <NavigationUl>
-            {Object.keys(yorubaNavData).map((item, key) => {
-              const { title, url } = yorubaNavData[item];
+            {yorubaNavData.map((item, key) => {
+              const { title, url } = item;
 
               let active;
               if (key === 0) {

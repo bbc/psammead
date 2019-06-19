@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react';
 import styled, { css } from 'styled-components';
-import { shape, string, node, bool } from 'prop-types';
+import { shape, string, node, bool, oneOf } from 'prop-types';
 import VisuallyHiddenText from '@bbc/psammead-visually-hidden-text';
 import { C_WHITE, C_POSTBOX, C_GHOST } from '@bbc/psammead-styles/colours';
 import { GEL_SPACING, GEL_SPACING_DBL } from '@bbc/gel-foundations/spacings';
@@ -222,7 +222,7 @@ NavigationLi.propTypes = {
 };
 
 NavigationLi.defaultProps = {
-  dir: 'ltr',
+  dir: oneOf(['ltr', 'rtl']),
   active: false,
   currentPageText: null,
 };
