@@ -14,6 +14,12 @@ import { scriptPropType } from '@bbc/gel-foundations/prop-types';
 /* White with 30% transparency over #B80000 */
 const BORDER_COLOR = '#eab3b3';
 
+/* Skip to content */
+const SKIP_LINK_COLOR = '#333';
+const SKIP_LINK_BORDER = '0.1875rem'; // 3px
+const SKIP_LINK_TOP_POSITION_LARGE = '-3.75rem'; // -60px
+const SKIP_LINK_TOP_POSITION_SMALL = '-3rem'; // -48px
+
 const StyledNav = styled.nav`
   padding: 0 ${GEL_SPACING};
   background-color: ${C_POSTBOX};
@@ -31,24 +37,25 @@ const SkipLink = styled.a`
   height: 1px;
   width: 1px;
   overflow: hidden;
-  padding: 0.75rem 0.5rem;
+  padding: 0.75rem ${GEL_SPACING};
   background-color: #ffffff;
-  border: 0.1875rem solid #000;
-  color: #333;
+  border: ${SKIP_LINK_BORDER} solid #000;
+  color: ${SKIP_LINK_COLOR};
   text-decoration: none;
   font-family: ${GEL_FF_REITH_SANS};
+  ${props => (props.script ? getPica(props.script) : '')};
 
   &:focus {
     clip-path: none;
     clip: auto;
-    top: -3.75rem;
+    top: ${SKIP_LINK_TOP_POSITION_LARGE};
     left: ${GEL_SPACING_DBL};
     height: auto;
     width: auto;
 
     @media (max-width: ${GEL_GROUP_2_SCREEN_WIDTH_MAX}) {
-      top: -3rem;
-      left: 0.5rem;
+      top: ${SKIP_LINK_TOP_POSITION_SMALL};
+      left: ${GEL_SPACING};
     }
   }
 `;
@@ -177,15 +184,18 @@ export const NavigationLi = ({ children: link, url, script, dir, active }) => (
   </StyledListItem>
 );
 
-const Navigation = ({ children, skipLinkText }) => (
+const Navigation = ({ children, script, skipLinkText }) => (
   <StyledNav role="navigation">
-    <SkipLink href="#content">{skipLinkText}</SkipLink>
+    <SkipLink href="#content" script={script}>
+      {skipLinkText}
+    </SkipLink>
     {children}
   </StyledNav>
 );
 
 Navigation.propTypes = {
   children: node.isRequired,
+  script: shape(scriptPropType).isRequired,
   skipLinkText: string.isRequired,
 };
 

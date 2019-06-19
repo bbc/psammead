@@ -20,6 +20,7 @@ The `@bbc/psammead-navigation` package is a set of two components, `NavigationUl
 | Argument | Type | Required | Default | Example |
 | -------- | ---- | -------- | ------- | ------- |
 | children | node | Yes      | N/A     | `<NavigationUl><NavigationLi url="/" script={latin} active="true">Home</NavigationLi><NavigationLi url="/sport" script={latin}>{Sport}</NavigationLi></NavigationUl>` |
+| script   | object  | Yes      | N/A     |  `{ canon: { groupA: { fontSize: '28', lineHeight: '32',}, groupB: { fontSize: '32', lineHeight: '36', }, groupD: { fontSize: '44', lineHeight: '48', }, }, trafalgar: { groupA: { fontSize: '20', lineHeight: '24', }, groupB: { fontSize: '24', lineHeight: '28', }, groupD: { fontSize: '32', lineHeight: '36', }, }, }` |
 
 ### NavigationUl
 
@@ -77,7 +78,7 @@ We have added the role `list` and `listitem` to the `NavigationUl` and `Navigati
 
 We have also added a visually hidden text to let the user know which item in the Navigation is the current page. Note use of `role="text"` to stop splitting in VoiceOver.
 
-The `NavigationUl` has a transparent border above 600px to ensure that when in Hight Contrast Mode on PC and when the user changes colour preferences in Firefox, there is a separation between the Navigation and the content.
+The `NavigationUl` has a transparent border above 600px to ensure that when in High Contrast Mode on PC and when the user changes colour preferences in Firefox, there is a separation between the Navigation and the content.
 
 ## Contributing
 
