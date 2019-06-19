@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Brand should render correctly with link not provided 1`] = `
-.c2 {
+.c3 {
   -webkit-clip-path: inset(100%);
   clip-path: inset(100%);
   -webkit-clip: rect(1px,1px,1px,1px);
@@ -10,95 +10,11 @@ exports[`Brand should render correctly with link not provided 1`] = `
   overflow: hidden;
   position: absolute;
   width: 1px;
-}
-
-.c0 {
-  background-color: #B80000;
-  height: 3.5rem;
-  width: 100%;
-  padding: 0 0.5rem;
 }
 
 .c1 {
-  box-sizing: content-box;
-  fill: #FFFFFF;
-  padding-top: 1rem;
-  padding-bottom: 0.75rem;
-  width: 100%;
-  max-width: 17.5rem;
-  min-width: 11.25rem;
-}
-
-.c3:hover .c1,
-.c3:focus .c1 {
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  border-bottom: 0.25rem solid #FFFFFF;
-}
-
-@media (min-width:37.5rem) {
-  .c0 {
-    height: 5rem;
-    padding: 0 1rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c1 {
-    padding-top: 1.75rem;
-    padding-bottom: 1.5rem;
-  }
-}
-
-@media screen and (-ms-high-contrast:active),print {
-  .c1 {
-    fill: windowText;
-  }
-}
-
-<div
-  className="c0"
->
-  <svg
-    aria-hidden="true"
-    className="c1"
-    focusable="false"
-    height={24}
-    viewBox="0 0 167.95 24"
-    xmlns="http://www.w3.org/2000/svg"
-  >
-    <g
-      fillrule="evenodd"
-    >
-      <path
-        d="M84.32"
-      />
-    </g>
-  </svg>
-  <span
-    className="c2"
-  >
-    <span
-      lang="en-GB"
-    >
-      Default Brand Name
-    </span>
-    , 
-    Service
-  </span>
-</div>
-`;
-
-exports[`Brand should render correctly with link provided 1`] = `
-.c4 {
-  -webkit-clip-path: inset(100%);
-  clip-path: inset(100%);
-  -webkit-clip: rect(1px,1px,1px,1px);
-  clip: rect(1px,1px,1px,1px);
-  height: 1px;
-  overflow: hidden;
-  position: absolute;
-  width: 1px;
+  max-width: 80rem;
+  margin: 0 auto;
 }
 
 .c0 {
@@ -109,13 +25,6 @@ exports[`Brand should render correctly with link provided 1`] = `
 }
 
 .c2 {
-  display: inline-block;
-  width: 100%;
-  max-width: 17.5rem;
-  min-width: 11.25rem;
-}
-
-.c3 {
   box-sizing: content-box;
   fill: #FFFFFF;
   padding-top: 1rem;
@@ -125,8 +34,8 @@ exports[`Brand should render correctly with link provided 1`] = `
   min-width: 11.25rem;
 }
 
-.c1:hover .c3,
-.c1:focus .c3 {
+.c4:hover .c2,
+.c4:focus .c2 {
   -webkit-text-decoration: none;
   text-decoration: none;
   border-bottom: 0.25rem solid #FFFFFF;
@@ -140,14 +49,14 @@ exports[`Brand should render correctly with link provided 1`] = `
 }
 
 @media (min-width:37.5rem) {
-  .c3 {
+  .c2 {
     padding-top: 1.75rem;
     padding-bottom: 1.5rem;
   }
 }
 
 @media screen and (-ms-high-contrast:active),print {
-  .c3 {
+  .c2 {
     fill: windowText;
   }
 }
@@ -155,13 +64,12 @@ exports[`Brand should render correctly with link provided 1`] = `
 <div
   className="c0"
 >
-  <a
-    className="c1 c2"
-    href="https://www.bbc.co.uk/news"
+  <div
+    className="c1"
   >
     <svg
       aria-hidden="true"
-      className="c3"
+      className="c2"
       focusable="false"
       height={24}
       viewBox="0 0 167.95 24"
@@ -176,7 +84,7 @@ exports[`Brand should render correctly with link provided 1`] = `
       </g>
     </svg>
     <span
-      className="c4"
+      className="c3"
     >
       <span
         lang="en-GB"
@@ -186,12 +94,12 @@ exports[`Brand should render correctly with link provided 1`] = `
       , 
       Service
     </span>
-  </a>
+  </div>
 </div>
 `;
 
-exports[`Brand should render correctly with no service Localised Name 1`] = `
-.c2 {
+exports[`Brand should render correctly with link provided 1`] = `
+.c5 {
   -webkit-clip-path: inset(100%);
   clip-path: inset(100%);
   -webkit-clip: rect(1px,1px,1px,1px);
@@ -202,6 +110,11 @@ exports[`Brand should render correctly with no service Localised Name 1`] = `
   width: 1px;
 }
 
+.c1 {
+  max-width: 80rem;
+  margin: 0 auto;
+}
+
 .c0 {
   background-color: #B80000;
   height: 3.5rem;
@@ -209,7 +122,14 @@ exports[`Brand should render correctly with no service Localised Name 1`] = `
   padding: 0 0.5rem;
 }
 
-.c1 {
+.c3 {
+  display: inline-block;
+  width: 100%;
+  max-width: 17.5rem;
+  min-width: 11.25rem;
+}
+
+.c4 {
   box-sizing: content-box;
   fill: #FFFFFF;
   padding-top: 1rem;
@@ -219,8 +139,8 @@ exports[`Brand should render correctly with no service Localised Name 1`] = `
   min-width: 11.25rem;
 }
 
-.c3:hover .c1,
-.c3:focus .c1 {
+.c2:hover .c4,
+.c2:focus .c4 {
   -webkit-text-decoration: none;
   text-decoration: none;
   border-bottom: 0.25rem solid #FFFFFF;
@@ -234,14 +154,14 @@ exports[`Brand should render correctly with no service Localised Name 1`] = `
 }
 
 @media (min-width:37.5rem) {
-  .c1 {
+  .c4 {
     padding-top: 1.75rem;
     padding-bottom: 1.5rem;
   }
 }
 
 @media screen and (-ms-high-contrast:active),print {
-  .c1 {
+  .c4 {
     fill: windowText;
   }
 }
@@ -249,27 +169,134 @@ exports[`Brand should render correctly with no service Localised Name 1`] = `
 <div
   className="c0"
 >
-  <svg
-    aria-hidden="true"
+  <div
     className="c1"
-    focusable="false"
-    height={24}
-    viewBox="0 0 167.95 24"
-    xmlns="http://www.w3.org/2000/svg"
   >
-    <g
-      fillrule="evenodd"
+    <a
+      className="c2 c3"
+      href="https://www.bbc.co.uk/news"
     >
-      <path
-        d="M84.32"
-      />
-    </g>
-  </svg>
-  <span
-    className="c2"
+      <svg
+        aria-hidden="true"
+        className="c4"
+        focusable="false"
+        height={24}
+        viewBox="0 0 167.95 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <g
+          fillrule="evenodd"
+        >
+          <path
+            d="M84.32"
+          />
+        </g>
+      </svg>
+      <span
+        className="c5"
+      >
+        <span
+          lang="en-GB"
+        >
+          Default Brand Name
+        </span>
+        , 
+        Service
+      </span>
+    </a>
+  </div>
+</div>
+`;
+
+exports[`Brand should render correctly with no service Localised Name 1`] = `
+.c3 {
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  -webkit-clip: rect(1px,1px,1px,1px);
+  clip: rect(1px,1px,1px,1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  width: 1px;
+}
+
+.c1 {
+  max-width: 80rem;
+  margin: 0 auto;
+}
+
+.c0 {
+  background-color: #B80000;
+  height: 3.5rem;
+  width: 100%;
+  padding: 0 0.5rem;
+}
+
+.c2 {
+  box-sizing: content-box;
+  fill: #FFFFFF;
+  padding-top: 1rem;
+  padding-bottom: 0.75rem;
+  width: 100%;
+  max-width: 17.5rem;
+  min-width: 11.25rem;
+}
+
+.c4:hover .c2,
+.c4:focus .c2 {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  border-bottom: 0.25rem solid #FFFFFF;
+}
+
+@media (min-width:37.5rem) {
+  .c0 {
+    height: 5rem;
+    padding: 0 1rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .c2 {
+    padding-top: 1.75rem;
+    padding-bottom: 1.5rem;
+  }
+}
+
+@media screen and (-ms-high-contrast:active),print {
+  .c2 {
+    fill: windowText;
+  }
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="c1"
   >
-    BBC News
-  </span>
+    <svg
+      aria-hidden="true"
+      className="c2"
+      focusable="false"
+      height={24}
+      viewBox="0 0 167.95 24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <g
+        fillrule="evenodd"
+      >
+        <path
+          d="M84.32"
+        />
+      </g>
+    </svg>
+    <span
+      className="c3"
+    >
+      BBC News
+    </span>
+  </div>
 </div>
 `;
 
