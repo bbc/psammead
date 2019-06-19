@@ -21,3 +21,12 @@ describe("Image - imported as '{ Img }'", () => {
   );
   snapshotTests(Image);
 });
+
+describe("Image - with Fade-in effect'", () => {
+  const props = { ...landscape, width: null, fade: true };
+  shouldMatchSnapshot(
+    'should render image correctly without width',
+    <Img {...props} />,
+  );
+  snapshotTests(Image);
+});

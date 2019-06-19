@@ -2,6 +2,7 @@ import React from 'react';
 import { number, string, bool, shape } from 'prop-types';
 import { scriptPropType } from '@bbc/gel-foundations/prop-types';
 import Timestamp from '@bbc/psammead-timestamp';
+import moment from 'moment-timezone';
 import {
   isValidDateTime,
   formatUnixTimestamp,
@@ -18,9 +19,14 @@ const TimestampContainer = ({
   suffix,
   timezone,
   script,
+  locale,
 }) => {
   if (!isValidDateTime(new Date(timestamp))) {
     return null;
+  }
+
+  if (locale) {
+    moment.locale(locale);
   }
 
   return (
@@ -46,6 +52,7 @@ TimestampContainer.propTypes = {
   prefix: string,
   suffix: string,
   script: shape(scriptPropType).isRequired,
+  locale: string,
 };
 
 TimestampContainer.defaultProps = {
@@ -55,6 +62,7 @@ TimestampContainer.defaultProps = {
   padding: true,
   prefix: null,
   suffix: null,
+  locale: null,
 };
 
 export default TimestampContainer;
