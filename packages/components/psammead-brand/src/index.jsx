@@ -3,7 +3,10 @@ import styled from 'styled-components';
 import { string, number, node, shape } from 'prop-types';
 import { C_POSTBOX, C_WHITE } from '@bbc/psammead-styles/colours';
 import VisuallyHiddenText from '@bbc/psammead-visually-hidden-text';
-import { GEL_GROUP_3_SCREEN_WIDTH_MIN } from '@bbc/gel-foundations/breakpoints';
+import {
+  GEL_GROUP_3_SCREEN_WIDTH_MIN,
+  GEL_GROUP_5_SCREEN_WIDTH_MIN,
+} from '@bbc/gel-foundations/breakpoints';
 import {
   GEL_SPACING_HLF,
   GEL_SPACING,
@@ -18,6 +21,11 @@ const PADDING_AROUND_SVG_BELOW_600PX = 32;
 
 const conditionallyRenderHeight = (svgHeight, padding) =>
   svgHeight ? `height: ${(svgHeight + padding) / 16}rem` : '';
+
+const SvgWrapper = styled.div`
+  max-width: ${GEL_GROUP_5_SCREEN_WIDTH_MIN};
+  margin: 0 auto;
+`;
 
 const Banner = styled.div`
   background-color: ${C_POSTBOX};
@@ -166,11 +174,15 @@ const Brand = ({
   return (
     <Banner svgHeight={svgHeight}>
       {url ? (
-        <StyledLink href={url} maxWidth={maxWidth} minWidth={minWidth}>
-          <StyledBrand {...styledBrandProps} />
-        </StyledLink>
+        <SvgWrapper>
+          <StyledLink href={url} maxWidth={maxWidth} minWidth={minWidth}>
+            <StyledBrand {...styledBrandProps} />
+          </StyledLink>
+        </SvgWrapper>
       ) : (
-        <StyledBrand {...styledBrandProps} />
+        <SvgWrapper>
+          <StyledBrand {...styledBrandProps} />
+        </SvgWrapper>
       )}
     </Banner>
   );
