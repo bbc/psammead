@@ -83,18 +83,18 @@ exports[`Brand should render correctly with link not provided 1`] = `
         />
       </g>
     </svg>
-  </div>
-  <span
-    className="c3"
-  >
     <span
-      lang="en-GB"
+      className="c3"
     >
-      Default Brand Name
+      <span
+        lang="en-GB"
+      >
+        Default Brand Name
+      </span>
+      , 
+      Service
     </span>
-    , 
-    Service
-  </span>
+  </div>
 </div>
 `;
 
@@ -110,7 +110,7 @@ exports[`Brand should render correctly with link provided 1`] = `
   width: 1px;
 }
 
-.c3 {
+.c1 {
   max-width: 80rem;
   margin: 0 auto;
 }
@@ -122,7 +122,7 @@ exports[`Brand should render correctly with link provided 1`] = `
   padding: 0 0.5rem;
 }
 
-.c2 {
+.c3 {
   display: inline-block;
   width: 100%;
   max-width: 17.5rem;
@@ -139,8 +139,8 @@ exports[`Brand should render correctly with link provided 1`] = `
   min-width: 11.25rem;
 }
 
-.c1:hover .c4,
-.c1:focus .c4 {
+.c2:hover .c4,
+.c2:focus .c4 {
   -webkit-text-decoration: none;
   text-decoration: none;
   border-bottom: 0.25rem solid #FFFFFF;
@@ -169,12 +169,12 @@ exports[`Brand should render correctly with link provided 1`] = `
 <div
   className="c0"
 >
-  <a
-    className="c1 c2"
-    href="https://www.bbc.co.uk/news"
+  <div
+    className="c1"
   >
-    <div
-      className="c3"
+    <a
+      className="c2 c3"
+      href="https://www.bbc.co.uk/news"
     >
       <svg
         aria-hidden="true"
@@ -192,19 +192,19 @@ exports[`Brand should render correctly with link provided 1`] = `
           />
         </g>
       </svg>
-    </div>
-    <span
-      className="c5"
-    >
       <span
-        lang="en-GB"
+        className="c5"
       >
-        Default Brand Name
+        <span
+          lang="en-GB"
+        >
+          Default Brand Name
+        </span>
+        , 
+        Service
       </span>
-      , 
-      Service
-    </span>
-  </a>
+    </a>
+  </div>
 </div>
 `;
 
@@ -291,11 +291,11 @@ exports[`Brand should render correctly with no service Localised Name 1`] = `
         />
       </g>
     </svg>
+    <span
+      className="c3"
+    >
+      BBC News
+    </span>
   </div>
-  <span
-    className="c3"
-  >
-    BBC News
-  </span>
 </div>
 `;
