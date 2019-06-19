@@ -76,7 +76,7 @@ It includes a ["skip link"](https://www.w3.org/TR/WCAG20-TECHS/G1.html) giving u
 
 We have added the role `list` and `listitem` to the `NavigationUl` and `NavigationList` respectively, due to a VoiceOver bug to reinstate the list semantics.
 
-We have also added a visually hidden text to let the user know which item in the Navigation is the current page. Note use of `role="text"` to stop splitting in VoiceOver.
+We have also added visually hidden text to let the user know which item in the Navigation is the current page. Note the use of visually hidden text here is due to lack of support at this time for the aria-current page attribute. Also note the use of `role="text"` to stop splitting in VoiceOver.
 
 The `NavigationUl` has a transparent border above 600px to ensure that when in High Contrast Mode on PC and when the user changes colour preferences in Firefox, there is a separation between the Navigation and the content.
 
