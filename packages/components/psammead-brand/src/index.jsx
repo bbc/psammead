@@ -22,7 +22,6 @@ const PADDING_AROUND_SVG_BELOW_600PX = 32;
 const conditionallyRenderHeight = (svgHeight, padding) =>
   svgHeight ? `height: ${(svgHeight + padding) / 16}rem` : '';
 
-
 const TRANSPARENT_BORDER = `0.0625rem solid transparent`;
 
 const SvgWrapper = styled.div`
@@ -170,12 +169,12 @@ const Brand = props => {
       {url ? (
         <SvgWrapper>
           <StyledLink href={url} maxWidth={maxWidth} minWidth={minWidth}>
-            <StyledBrand {...styledBrandProps} />
+            <StyledBrand {...props} />
           </StyledLink>
         </SvgWrapper>
       ) : (
         <SvgWrapper>
-          <StyledBrand {...styledBrandProps} />
+          <StyledBrand {...props} />
         </SvgWrapper>
       )}
     </Banner>

@@ -301,7 +301,7 @@ exports[`Brand should render correctly with no service Localised Name 1`] = `
 `;
 
 exports[`Brand should render correctly with transparent borders 1`] = `
-.c2 {
+.c3 {
   -webkit-clip-path: inset(100%);
   clip-path: inset(100%);
   -webkit-clip: rect(1px,1px,1px,1px);
@@ -310,6 +310,11 @@ exports[`Brand should render correctly with transparent borders 1`] = `
   overflow: hidden;
   position: absolute;
   width: 1px;
+}
+
+.c1 {
+  max-width: 80rem;
+  margin: 0 auto;
 }
 
 .c0 {
@@ -321,7 +326,7 @@ exports[`Brand should render correctly with transparent borders 1`] = `
   border-bottom: 0.0625rem solid transparent;
 }
 
-.c1 {
+.c2 {
   box-sizing: content-box;
   fill: #FFFFFF;
   padding-top: 1rem;
@@ -331,8 +336,8 @@ exports[`Brand should render correctly with transparent borders 1`] = `
   min-width: 11.25rem;
 }
 
-.c3:hover .c1,
-.c3:focus .c1 {
+.c4:hover .c2,
+.c4:focus .c2 {
   -webkit-text-decoration: none;
   text-decoration: none;
   border-bottom: 0.25rem solid #FFFFFF;
@@ -346,14 +351,14 @@ exports[`Brand should render correctly with transparent borders 1`] = `
 }
 
 @media (min-width:37.5rem) {
-  .c1 {
+  .c2 {
     padding-top: 1.75rem;
     padding-bottom: 1.5rem;
   }
 }
 
 @media screen and (-ms-high-contrast:active),print {
-  .c1 {
+  .c2 {
     fill: windowText;
   }
 }
@@ -361,26 +366,30 @@ exports[`Brand should render correctly with transparent borders 1`] = `
 <div
   className="c0"
 >
-  <svg
-    aria-hidden="true"
+  <div
     className="c1"
-    focusable="false"
-    height={24}
-    viewBox="0 0 167.95 24"
-    xmlns="http://www.w3.org/2000/svg"
   >
-    <g
-      fillrule="evenodd"
+    <svg
+      aria-hidden="true"
+      className="c2"
+      focusable="false"
+      height={24}
+      viewBox="0 0 167.95 24"
+      xmlns="http://www.w3.org/2000/svg"
     >
-      <path
-        d="M84.32"
-      />
-    </g>
-  </svg>
-  <span
-    className="c2"
-  >
-    BBC News
-  </span>
+      <g
+        fillrule="evenodd"
+      >
+        <path
+          d="M84.32"
+        />
+      </g>
+    </svg>
+    <span
+      className="c3"
+    >
+      BBC News
+    </span>
+  </div>
 </div>
 `;
