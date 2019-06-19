@@ -2,7 +2,7 @@
 
 ## Description
 
-The `MediaIndicator` component provides a 'play' or 'audio' icon as well as a duration timestamp depending on the `type` prop. The component by default renders the 'play' icon. This component has options for both providing and not providing a duration. If one isn't provided, it will simply render the play or audio icon. Alt text is required in all scenarios, however this can just be `'Video'` or `'Audio'` if the duration is not known.
+The `MediaIndicator` component provides a 'play' or 'audio' icon as well as a duration timestamp depending on the `type` prop. The component by default renders the 'play' icon. This component has options for both providing and not providing a duration. If one isn't provided, it will simply render the play or audio icon. Offscreen text should be used to describe the media type, i.e. `'Audio'` or `'Video'`. It should not be played due to nesting inside an element marked as `aria-hidden="true"`, but will provide a fallback for those user agents which have incomplete aria support.
 
 ## Installation
 
@@ -15,7 +15,7 @@ The `MediaIndicator` component provides a 'play' or 'audio' icon as well as a du
 | ------------- | ------ | -------- | ------- | ---------------------------- |
 | duration      | string | No       | Null    | '2:15'                       |
 | datetime      | string | No       | Null    | 'PT2M15S'                    |
-| offscreenText | string | Yes      | N/A     | 'Video 2 minutes 15 seconds' |
+| offscreenText | string | No       | Null    | 'Video'                      |
 | type          | string | No       | 'video' | 'audio'                      |
 
 ## Usage
@@ -28,7 +28,7 @@ import MediaIndicator from '@bbc/psammead-media-indicator';
 <MediaIndicator
   duration="2:15"
   datetime="PT2M15S"
-  offscreenText="Audio 2 minutes 15 seconds"
+  offscreenText="Audio"
   type="audio"
 />;
 ```
@@ -41,7 +41,7 @@ The `MediaIndicator` component is designed to be used on top of an image which i
 
 ### Accessibility notes
 
-This component uses full semantic markup, including visually hidden text and aria labels, to ensure it's as accessible as possible. The SVG is aria hidden and not focusable. The time duration appears to screen readers as a long string, such as "Video 2 minutes 15 seconds", to ensure the user has the full context of what it's referring to.
+This component is marked as `aria-hidden="true"`, which means that it should be ignored by screenreaders. It is intended that media promos provide information about their content such as duration in visually hidden text in the promo headline. This component does provide some offscreen text for those user agents which have incomplete aria support, in an attempt to provide context about the timestamp contained in this component.
 
 <!-- ## Roadmap -->
 

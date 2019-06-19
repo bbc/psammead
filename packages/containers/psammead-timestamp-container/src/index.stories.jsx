@@ -35,4 +35,14 @@ storiesOf('Containers|TimestampContainer', module)
       suffix={text('Suffix text', 'is date of last update')}
       script={latin}
     />
+  ))
+  .add('with locale', () => (
+    <Timestamp
+      timestamp={number('Unix timestamp', 1530947227000)}
+      dateTimeFormat="YYYY-MM-DD"
+      format="D MMMM YYYY, HH:mm z"
+      isRelative={boolean('isRelative', false)}
+      script={latin}
+      locale={text('Locale', 'fa')}
+    />
   ));
