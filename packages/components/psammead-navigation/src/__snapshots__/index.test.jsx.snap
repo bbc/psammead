@@ -119,7 +119,7 @@ exports[`Navigation should render correctly 1`] = `
     width: 37.5rem;
     border-bottom: 1px solid #eab3b3;
     z-index: -1;
-    left: 0;
+    right: 0;
   }
 }
 
@@ -151,7 +151,7 @@ exports[`Navigation should render correctly 1`] = `
   >
     <li
       className="c3"
-      dir="ltr"
+      dir={[Function]}
       role="listitem"
     >
       <a
