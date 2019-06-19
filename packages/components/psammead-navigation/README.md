@@ -69,9 +69,15 @@ The `Navigation` is designed to show a navigation bar on `index` pages, which wi
 
 ### Accessibility notes
 
-<!-- Still in progress -->
+The Navigation has a [`navigation` landmark](https://www.w3.org/TR/wai-aria-practices/examples/landmarks/navigation.html) to provide a way to identify links that are intended to be used for navigation.
 
-We have added the role `list` and `listitem` to the corresponding list items due to a VoiceOver bug to reinstate the list semantics.
+It includes a ["skip link"](https://www.w3.org/TR/WCAG20-TECHS/G1.html) giving users the option to skip to the main content before the assistive technology reads the full content of the interjection.
+
+We have added the role `list` and `listitem` to the `NavigationUl` and `NavigationList` respectively, due to a VoiceOver bug to reinstate the list semantics.
+
+We have also added a visually hidden text to let the user know which item in the Navigation is the current page. Note use of `role="text"` to stop splitting in VoiceOver.
+
+The `NavigationUl` has a transparent border above 600px to ensure that when in Hight Contrast Mode on PC and when the user changes colour preferences in Firefox, there is a separation between the Navigation and the content.
 
 ## Contributing
 
