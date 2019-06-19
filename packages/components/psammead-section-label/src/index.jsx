@@ -3,6 +3,7 @@ import styled, { css } from 'styled-components';
 import { bool, oneOf, shape, string } from 'prop-types';
 import { scriptPropType } from '@bbc/gel-foundations/prop-types';
 import {
+  GEL_GROUP_2_SCREEN_WIDTH_MAX,
   GEL_GROUP_3_SCREEN_WIDTH_MIN,
   MEDIA_QUERY_TYPOGRAPHY,
 } from '@bbc/gel-foundations/breakpoints';
@@ -49,12 +50,26 @@ const Wrapper = styled.div`
       &::before {
         content: '';
         position: absolute;
-        height: 0.0625rem;
-        border: none;
-        background: ${C_PEBBLE};
+        border-top: 0.0625rem solid ${C_PEBBLE};
         left: 0;
         right: 0;
         ${({ script }) => (script ? top(script) : 'top: 0')};
+        @media screen and (-ms-high-contrast: active) {
+          border-color: windowText;
+        }
+      }
+    `}
+
+  ${({ visuallyHidden }) =>
+    visuallyHidden &&
+    css`
+      @media (max-width: ${GEL_GROUP_2_SCREEN_WIDTH_MAX}) {
+        clip-path: inset(100%);
+        clip: rect(1px, 1px, 1px, 1px);
+        height: 1px;
+        overflow: hidden;
+        position: absolute;
+        width: 1px;
       }
     `}
 `;
@@ -62,6 +77,7 @@ const Wrapper = styled.div`
 Wrapper.propTypes = {
   bar: bool.isRequired,
   script: shape(scriptPropType).isRequired,
+  visuallyHidden: bool.isRequired,
 };
 
 const paddingDir = ({ dir }) => `padding-${dir === 'ltr' ? 'right' : 'left'}`;
@@ -90,8 +106,15 @@ Title.propTypes = {
   script: shape(scriptPropType).isRequired,
 };
 
-const SectionLabel = ({ bar, children: title, dir, labelId, script }) => (
-  <Wrapper script={script} bar={bar}>
+const SectionLabel = ({
+  bar,
+  children: title,
+  dir,
+  labelId,
+  script,
+  visuallyHidden,
+}) => (
+  <Wrapper script={script} bar={bar} visuallyHidden={visuallyHidden}>
     <Title script={script} dir={dir} id={labelId}>
       {title}
     </Title>
@@ -101,6 +124,7 @@ const SectionLabel = ({ bar, children: title, dir, labelId, script }) => (
 SectionLabel.defaultProps = {
   bar: true,
   dir: 'ltr',
+  visuallyHidden: false,
 };
 
 SectionLabel.propTypes = {
@@ -109,6 +133,7 @@ SectionLabel.propTypes = {
   dir: oneOf(['ltr', 'rtl']),
   labelId: string.isRequired,
   script: shape(scriptPropType).isRequired,
+  visuallyHidden: bool,
 };
 
 export default SectionLabel;

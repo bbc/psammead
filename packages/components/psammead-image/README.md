@@ -26,7 +26,7 @@ Importing the standard Image component renders an `<img />` tag.
 import Image from '@bbc/psammead-image';
 
 const WrappingContainer = ({ alt, src, height, width }) => (
-  <Img alt={alt} src={src} height={height} width={width} />
+  <Img alt={alt} src={src} height={height} width={width} fade />
 );
 ```
 
@@ -63,6 +63,7 @@ const WrappingContainer = ({ alt, src, height, width }) => (
 | `src`    | string        | Yes      | -       | "https://bbc.com/300/cat.jpg"                                                                          |
 | `srcset` | string        | No       | null    | "https://bbc.com/300/cat.jpg 300w, https://bbc.com/450/cat.jpg 450w, https://bbc.com/600/cat.jpg 600w" |
 | `width`  | number/string | No       | null    | 600                                                                                                    |
+|  `fade`  |  boolean  | No      |  false   |  true  |
 
 The `height` and `width` props are optional, in some cases to preserve the image ratio you might specify either `height` or `width` and let the browser scale the image accordingly.
 
@@ -71,6 +72,8 @@ However when not specified the browser will not be able to determine the size of
 Specifying the `width` and `height` allows the browser to reserve space for the image which prevent content moving around while the image is being loaded.
 
 The `srcset` prop is optional since some projects might not want to use the srcset attribute on images.
+
+The `fade` prop is optional and set to `false` by default. It's been used to apply a fade-in animation effect on the `Img` component.
 
 ### AmpImg
 

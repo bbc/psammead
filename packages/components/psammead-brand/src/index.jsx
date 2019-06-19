@@ -3,7 +3,10 @@ import styled from 'styled-components';
 import { string, number, node, shape } from 'prop-types';
 import { C_POSTBOX, C_WHITE } from '@bbc/psammead-styles/colours';
 import VisuallyHiddenText from '@bbc/psammead-visually-hidden-text';
-import { GEL_GROUP_3_SCREEN_WIDTH_MIN } from '@bbc/gel-foundations/breakpoints';
+import {
+  GEL_GROUP_3_SCREEN_WIDTH_MIN,
+  GEL_GROUP_5_SCREEN_WIDTH_MIN,
+} from '@bbc/gel-foundations/breakpoints';
 import {
   GEL_SPACING_HLF,
   GEL_SPACING,
@@ -18,6 +21,11 @@ const PADDING_AROUND_SVG_BELOW_600PX = 32;
 
 const conditionallyRenderHeight = (svgHeight, padding) =>
   svgHeight ? `height: ${(svgHeight + padding) / 16}rem` : '';
+
+const SvgWrapper = styled.div`
+  max-width: ${GEL_GROUP_5_SCREEN_WIDTH_MIN};
+  margin: 0 auto;
+`;
 
 const Banner = styled.div`
   background-color: ${C_POSTBOX};
@@ -71,7 +79,32 @@ const BrandSvg = styled.svg`
   /* stylelint-enable */
 `;
 
-const StyledBrand = ({ brandName, svgHeight, svg, maxWidth, minWidth }) => (
+const LocalisedBrandName = ({ product, serviceLocalisedName }) =>
+  serviceLocalisedName ? (
+    <Fragment>
+      <span lang="en-GB">{product}</span>, {serviceLocalisedName}
+    </Fragment>
+  ) : (
+    product
+  );
+
+LocalisedBrandName.propTypes = {
+  product: string.isRequired,
+  serviceLocalisedName: string,
+};
+
+LocalisedBrandName.defaultProps = {
+  serviceLocalisedName: null,
+};
+
+const StyledBrand = ({
+  product,
+  serviceLocalisedName,
+  svgHeight,
+  svg,
+  maxWidth,
+  minWidth,
+}) => (
   <Fragment>
     {svg && (
       <Fragment>
@@ -87,14 +120,20 @@ const StyledBrand = ({ brandName, svgHeight, svg, maxWidth, minWidth }) => (
         >
           {svg.group}
         </BrandSvg>
-        <VisuallyHiddenText>{brandName}</VisuallyHiddenText>
+        <VisuallyHiddenText>
+          <LocalisedBrandName
+            product={product}
+            serviceLocalisedName={serviceLocalisedName}
+          />
+        </VisuallyHiddenText>
       </Fragment>
     )}
   </Fragment>
 );
 
 const brandProps = {
-  brandName: string.isRequired,
+  product: string.isRequired,
+  serviceLocalisedName: string,
   maxWidth: number.isRequired,
   minWidth: number.isRequired,
   svgHeight: number.isRequired,
@@ -110,37 +149,54 @@ const brandProps = {
 
 StyledBrand.propTypes = brandProps;
 
-const Brand = ({ brandName, svgHeight, minWidth, maxWidth, svg, url }) => (
-  <Banner svgHeight={svgHeight}>
-    {url ? (
-      <StyledLink href={url} maxWidth={maxWidth} minWidth={minWidth}>
-        <StyledBrand
-          brandName={brandName}
-          svg={svg}
-          maxWidth={maxWidth}
-          minWidth={minWidth}
-          svgHeight={svgHeight}
-        />
-      </StyledLink>
-    ) : (
-      <StyledBrand
-        brandName={brandName}
-        svg={svg}
-        svgHeight={svgHeight}
-        minWidth={minWidth}
-        maxWidth={maxWidth}
-      />
-    )}
-  </Banner>
-);
+StyledBrand.defaultProps = {
+  serviceLocalisedName: null,
+};
+
+const Brand = ({
+  product,
+  serviceLocalisedName,
+  svgHeight,
+  minWidth,
+  maxWidth,
+  svg,
+  url,
+}) => {
+  const styledBrandProps = {
+    product,
+    serviceLocalisedName,
+    svgHeight,
+    minWidth,
+    maxWidth,
+    svg,
+  };
+
+  return (
+    <Banner svgHeight={svgHeight}>
+      {url ? (
+        <SvgWrapper>
+          <StyledLink href={url} maxWidth={maxWidth} minWidth={minWidth}>
+            <StyledBrand {...styledBrandProps} />
+          </StyledLink>
+        </SvgWrapper>
+      ) : (
+        <SvgWrapper>
+          <StyledBrand {...styledBrandProps} />
+        </SvgWrapper>
+      )}
+    </Banner>
+  );
+};
 
 Brand.defaultProps = {
   url: null,
+  serviceLocalisedName: null,
 };
 
 Brand.propTypes = {
   ...brandProps,
   url: string,
+  serviceLocalisedName: string,
 };
 
 export default Brand;
