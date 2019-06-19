@@ -11,6 +11,9 @@ import {
 import { getPica, GEL_FF_REITH_SANS } from '@bbc/gel-foundations/typography';
 import { scriptPropType } from '@bbc/gel-foundations/prop-types';
 
+/* White with 30% transparency over #B80000 */
+const BORDER_COLOR = '#eab3b3';
+
 const StyledNav = styled.nav`
   padding: 0 ${GEL_SPACING};
   background-color: ${C_POSTBOX};
@@ -30,7 +33,7 @@ const SkipLink = styled.a`
   overflow: hidden;
   padding: 0.75rem 0.5rem;
   background-color: #ffffff;
-  border: 3px solid #000;
+  border: 0.1875rem solid #000;
   color: #333;
   text-decoration: none;
   font-family: ${GEL_FF_REITH_SANS};
@@ -56,7 +59,7 @@ const StyledUnorderedList = styled.ul`
   margin: 0;
   overflow: hidden;
 
-  /* Display a border line for Hight Contrast mode > 600px */
+  /* Display a transparent border line > 600px */
   &::after {
     content: ' ';
     position: absolute;
@@ -87,8 +90,17 @@ const StyledListItem = styled.li`
       left: 0;
       bottom: 0;
       width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN};
-      border-bottom: 1px solid #eab3b3; /* White with 30% transparency over #B80000 */
+      border-bottom: 1px solid ${BORDER_COLOR};
       z-index: -1;
+
+      ${({ dir }) =>
+        dir === 'ltr'
+          ? css`
+              left: 0;
+            `
+          : css`
+              right: 0;
+            `};
     }
   }
 `;
@@ -116,12 +128,8 @@ const StyledLink = styled.a`
   }
 
   &:focus::after {
-    content: '';
-    position: absolute;
+    ${ListItemBorder}
     top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
     border: 0.25rem solid ${C_WHITE};
   }
 `;
@@ -157,8 +165,8 @@ export const NavigationUl = ({ children, ...props }) => (
   </StyledUnorderedList>
 );
 
-export const NavigationLi = ({ children: link, url, script, active }) => (
-  <StyledListItem role="listitem">
+export const NavigationLi = ({ children: link, url, script, dir, active }) => (
+  <StyledListItem role="listitem" dir={dir}>
     {active ? (
       <CurrentItem script={script}>{link}</CurrentItem>
     ) : (
@@ -189,10 +197,12 @@ NavigationLi.propTypes = {
   children: node.isRequired,
   url: string.isRequired,
   script: shape(scriptPropType).isRequired,
+  dir: string,
   active: bool,
 };
 
 NavigationLi.defaultProps = {
+  dir: 'ltr',
   active: false,
 };
 

@@ -2,7 +2,7 @@ import React, { Fragment } from 'react';
 import styled from 'styled-components';
 import { storiesOf } from '@storybook/react';
 import { select, number, withKnobs } from '@storybook/addon-knobs';
-import { inputProvider } from '@bbc/psammead-storybook-helpers';
+import { inputProvider, dirDecorator } from '@bbc/psammead-storybook-helpers';
 import { latin } from '@bbc/gel-foundations/scripts';
 import * as svgs from '@bbc/psammead-assets/svgs';
 import VisuallyHiddenText from '@bbc/psammead-visually-hidden-text';
@@ -49,7 +49,7 @@ storiesOf('Components|Navigation', module)
   .addDecorator(withKnobs)
   .add(
     'igbo with Brand',
-    inputProvider([], () => {
+    inputProvider([], dir => {
       const {
         svgHeightInput,
         minWidthInput,
@@ -81,6 +81,7 @@ storiesOf('Components|Navigation', module)
                     key={title}
                     url={url}
                     script={latin}
+                    dir={dir}
                     active={active}
                   >
                     {title}
@@ -100,10 +101,14 @@ storiesOf('Components|Navigation', module)
     {
       notes,
     },
-  )
+  );
+
+storiesOf('Components|Navigation', module)
+  .addDecorator(withKnobs)
+  .addDecorator(dirDecorator)
   .add(
     'pidgin',
-    () => (
+    inputProvider([], dir => (
       <Fragment>
         <Navigation skipLinkText="Waka go wetin de inside">
           <NavigationUl>
@@ -120,6 +125,7 @@ storiesOf('Components|Navigation', module)
                   key={title}
                   url={url}
                   script={latin}
+                  dir={dir}
                   active={active}
                 >
                   {title}
@@ -134,14 +140,18 @@ storiesOf('Components|Navigation', module)
           </VisuallyHiddenText>
         </StyledMain>
       </Fragment>
-    ),
+    )),
     {
       notes,
     },
-  )
+  );
+
+storiesOf('Components|Navigation', module)
+  .addDecorator(withKnobs)
+  .addDecorator(dirDecorator)
   .add(
     'yoruba',
-    () => (
+    inputProvider([], dir => (
       <Fragment>
         <Navigation skipLinkText="Fò kọjá sí nnkan tí ó wà nínú rẹ̀">
           <NavigationUl>
@@ -158,6 +168,7 @@ storiesOf('Components|Navigation', module)
                   key={title}
                   url={url}
                   script={latin}
+                  dir={dir}
                   active={active}
                 >
                   {title}
@@ -172,7 +183,7 @@ storiesOf('Components|Navigation', module)
           </VisuallyHiddenText>
         </StyledMain>
       </Fragment>
-    ),
+    )),
     {
       notes,
     },

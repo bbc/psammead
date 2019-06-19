@@ -18,7 +18,7 @@ exports[`Navigation should render correctly 1`] = `
   overflow: hidden;
   padding: 0.75rem 0.5rem;
   background-color: #ffffff;
-  border: 3px solid #000;
+  border: 0.1875rem solid #000;
   color: #333;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -83,10 +83,11 @@ exports[`Navigation should render correctly 1`] = `
 .c4:focus::after {
   content: '';
   position: absolute;
-  top: 0;
   left: 0;
   right: 0;
   bottom: 0;
+  border-bottom: 0.25rem solid #FFFFFF;
+  top: 0;
   border: 0.25rem solid #FFFFFF;
 }
 
@@ -118,6 +119,7 @@ exports[`Navigation should render correctly 1`] = `
     width: 37.5rem;
     border-bottom: 1px solid #eab3b3;
     z-index: -1;
+    left: 0;
   }
 }
 
@@ -149,6 +151,7 @@ exports[`Navigation should render correctly 1`] = `
   >
     <li
       className="c3"
+      dir="ltr"
       role="listitem"
     >
       <a
