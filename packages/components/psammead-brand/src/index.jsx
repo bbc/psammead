@@ -5,7 +5,7 @@ import { C_POSTBOX, C_WHITE } from '@bbc/psammead-styles/colours';
 import VisuallyHiddenText from '@bbc/psammead-visually-hidden-text';
 import {
   GEL_GROUP_3_SCREEN_WIDTH_MIN,
-  GEL_GROUP_4_SCREEN_WIDTH_MAX,
+  GEL_GROUP_5_SCREEN_WIDTH_MIN,
 } from '@bbc/gel-foundations/breakpoints';
 import {
   GEL_SPACING_HLF,
@@ -23,7 +23,7 @@ const conditionallyRenderHeight = (svgHeight, padding) =>
   svgHeight ? `height: ${(svgHeight + padding) / 16}rem` : '';
 
 const SvgWrapper = styled.div`
-  max-width: ${GEL_GROUP_4_SCREEN_WIDTH_MAX};
+  max-width: ${GEL_GROUP_5_SCREEN_WIDTH_MIN};
   margin: 0 auto;
 `;
 
@@ -108,20 +108,18 @@ const StyledBrand = ({
   <Fragment>
     {svg && (
       <Fragment>
-        <SvgWrapper>
-          <BrandSvg
-            height={svgHeight}
-            viewBox={`0 0 ${svg.viewbox.width} ${svg.viewbox.height}`}
-            xmlns="http://www.w3.org/2000/svg"
-            focusable="false"
-            aria-hidden="true"
-            ratio={svg.ratio}
-            maxWidth={maxWidth}
-            minWidth={minWidth}
-          >
-            {svg.group}
-          </BrandSvg>
-        </SvgWrapper>
+        <BrandSvg
+          height={svgHeight}
+          viewBox={`0 0 ${svg.viewbox.width} ${svg.viewbox.height}`}
+          xmlns="http://www.w3.org/2000/svg"
+          focusable="false"
+          aria-hidden="true"
+          ratio={svg.ratio}
+          maxWidth={maxWidth}
+          minWidth={minWidth}
+        >
+          {svg.group}
+        </BrandSvg>
         <VisuallyHiddenText>
           <LocalisedBrandName
             product={product}
@@ -176,11 +174,15 @@ const Brand = ({
   return (
     <Banner svgHeight={svgHeight}>
       {url ? (
-        <StyledLink href={url} maxWidth={maxWidth} minWidth={minWidth}>
-          <StyledBrand {...styledBrandProps} />
-        </StyledLink>
+        <SvgWrapper>
+          <StyledLink href={url} maxWidth={maxWidth} minWidth={minWidth}>
+            <StyledBrand {...styledBrandProps} />
+          </StyledLink>
+        </SvgWrapper>
       ) : (
-        <StyledBrand {...styledBrandProps} />
+        <SvgWrapper>
+          <StyledBrand {...styledBrandProps} />
+        </SvgWrapper>
       )}
     </Banner>
   );
