@@ -3,7 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 | ------- | ----------- |
-| 0.2.0-alpha.9 | [PR#???](https://github.com/bbc/psammead/pull/???) Add assertion tests |
+| 0.2.0-alpha.9 | [PR#663](https://github.com/bbc/psammead/pull/663) Add assertion tests |
 | 0.2.0-alpha.8 | [PR#578](https://github.com/bbc/psammead/pull/578) Add Top Story promo design |
 | 0.2.0-alpha.7 | [PR#628](https://github.com/bbc/psammead/pull/628) Update Story Promo Changelog title |
 | 0.2.0-alpha.6 | [PR#588](https://github.com/bbc/psammead/pull/588) Update Story promo headline to use Pica under 600px. |
