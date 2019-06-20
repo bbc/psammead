@@ -12,6 +12,7 @@ The `psammead-consent-banner` component is a styled `div` that encapsulates info
 
 ## Props
 
+<!-- prettier-ignore -->
 | Argument | Type | Required | Default | Example |
 | -------- | ---- | -------- | ------- | --------|
 | title | string | Yes | N/A | `We've updated our Privacy and Cookies Policy` |
