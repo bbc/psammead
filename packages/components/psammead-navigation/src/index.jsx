@@ -15,7 +15,7 @@ import {
 import { getPica, GEL_FF_REITH_SANS } from '@bbc/gel-foundations/typography';
 import { scriptPropType } from '@bbc/gel-foundations/prop-types';
 
-const GEL_SPACING_TOP_BOTTOM = '0.75rem'; // 12px
+const TOP_BOTTOM_SPACING = '0.75rem'; // 12px
 
 /* White with 30% transparency over #B80000 */
 const BORDER_COLOR = '#eab3b3';
@@ -38,7 +38,7 @@ const SkipLink = styled.a`
   height: 1px;
   width: 1px;
   overflow: hidden;
-  padding: ${GEL_SPACING_TOP_BOTTOM} ${GEL_SPACING};
+  padding: ${TOP_BOTTOM_SPACING} ${GEL_SPACING};
   background-color: #ffffff;
   border: ${SKIP_LINK_BORDER} solid #000;
   color: ${SKIP_LINK_COLOR};
@@ -111,10 +111,10 @@ const StyledLink = styled.a`
   cursor: pointer;
   text-decoration: none;
   display: inline-block;
-  padding: ${GEL_SPACING_TOP_BOTTOM} ${GEL_SPACING_DBL};
+  padding: ${TOP_BOTTOM_SPACING} ${GEL_SPACING_DBL};
 
   @media (max-width: ${GEL_GROUP_2_SCREEN_WIDTH_MAX}) {
-    padding: ${GEL_SPACING_TOP_BOTTOM} ${GEL_SPACING};
+    padding: ${TOP_BOTTOM_SPACING} ${GEL_SPACING};
   }
 
   &:hover::after {
@@ -133,10 +133,10 @@ const StyledSpan = styled.span`
   font-family: ${GEL_FF_REITH_SANS};
   color: ${C_GHOST};
   display: inline-block;
-  padding: ${GEL_SPACING_TOP_BOTTOM} ${GEL_SPACING_DBL};
+  padding: ${TOP_BOTTOM_SPACING} ${GEL_SPACING_DBL};
 
   @media (max-width: ${GEL_GROUP_2_SCREEN_WIDTH_MAX}) {
-    padding: ${GEL_SPACING_TOP_BOTTOM} ${GEL_SPACING};
+    padding: ${TOP_BOTTOM_SPACING} ${GEL_SPACING};
   }
 
   &::before {
