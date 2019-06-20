@@ -6,7 +6,7 @@ import { C_WHITE, C_POSTBOX, C_GHOST } from '@bbc/psammead-styles/colours';
 import { GEL_SPACING, GEL_SPACING_DBL } from '@bbc/gel-foundations/spacings';
 import {
   GEL_GROUP_2_SCREEN_WIDTH_MAX,
-  GEL_GROUP_3_SCREEN_WIDTH_MIN,
+  GEL_GROUP_5_SCREEN_WIDTH_MIN,
 } from '@bbc/gel-foundations/breakpoints';
 import { getPica, GEL_FF_REITH_SANS } from '@bbc/gel-foundations/typography';
 import { scriptPropType } from '@bbc/gel-foundations/prop-types';
@@ -21,13 +21,8 @@ const SKIP_LINK_TOP_POSITION_LARGE = '-3.75rem'; // -60px
 const SKIP_LINK_TOP_POSITION_SMALL = '-3rem'; // -48px
 
 const StyledNav = styled.nav`
-  padding: 0 ${GEL_SPACING};
   background-color: ${C_POSTBOX};
   position: relative;
-
-  @media (max-width: ${GEL_GROUP_2_SCREEN_WIDTH_MAX}) {
-    padding: 0;
-  }
 `;
 
 const SkipLink = styled.a`
@@ -64,24 +59,8 @@ const StyledUnorderedList = styled.ul`
   list-style-type: none;
   padding: 0;
   margin: 0;
+  position: relative;
   overflow: hidden;
-
-  /* Display a transparent border line > 600px */
-  &::after {
-    content: ' ';
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    border-bottom: 0.0625rem solid transparent;
-    z-index: 1;
-  }
-
-  @media (max-width: ${GEL_GROUP_2_SCREEN_WIDTH_MAX}) {
-    &::after {
-      content: none;
-    }
-  }
 `;
 
 const StyledListItem = styled.li`
@@ -89,26 +68,24 @@ const StyledListItem = styled.li`
   position: relative;
   z-index: 2;
 
-  @media (max-width: ${GEL_GROUP_2_SCREEN_WIDTH_MAX}) {
-    /* Trick to display a border between the list items, which takes the full width */
-    &::after {
-      content: ' ';
-      position: absolute;
-      left: 0;
-      bottom: 0;
-      width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN};
-      border-bottom: 1px solid ${BORDER_COLOR};
-      z-index: -1;
+  /* Trick to display a border between the list items when it breaks into multiple lines, which takes the full width */
+  &::after {
+    content: ' ';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: ${GEL_GROUP_5_SCREEN_WIDTH_MIN};
+    border-bottom: 1px solid ${BORDER_COLOR};
+    z-index: -1;
 
-      ${({ dir }) =>
-        dir === 'ltr'
-          ? css`
-              left: 0;
-            `
-          : css`
-              right: 0;
-            `};
-    }
+    ${({ dir }) =>
+      dir === 'ltr'
+        ? css`
+            left: 0;
+          `
+        : css`
+            right: 0;
+          `};
   }
 `;
 
@@ -128,7 +105,11 @@ const StyledLink = styled.a`
   cursor: pointer;
   text-decoration: none;
   display: inline-block;
-  padding: 0.75rem ${GEL_SPACING};
+  padding: 0.75rem ${GEL_SPACING_DBL};
+
+  @media (max-width: ${GEL_GROUP_2_SCREEN_WIDTH_MAX}) {
+    padding: 0.75rem ${GEL_SPACING};
+  }
 
   &:hover::after {
     ${ListItemBorder}
@@ -146,7 +127,11 @@ const StyledSpan = styled.span`
   font-family: ${GEL_FF_REITH_SANS};
   color: ${C_GHOST};
   display: inline-block;
-  padding: 0.75rem ${GEL_SPACING};
+  padding: 0.75rem ${GEL_SPACING_DBL};
+
+  @media (max-width: ${GEL_GROUP_2_SCREEN_WIDTH_MAX}) {
+    padding: 0.75rem ${GEL_SPACING};
+  }
 
   &::before {
     ${ListItemBorder}

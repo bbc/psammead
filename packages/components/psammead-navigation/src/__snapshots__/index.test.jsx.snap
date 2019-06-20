@@ -2,7 +2,6 @@
 
 exports[`Navigation should render correctly 1`] = `
 .c0 {
-  padding: 0 0.5rem;
   background-color: #B80000;
   position: relative;
 }
@@ -40,23 +39,25 @@ exports[`Navigation should render correctly 1`] = `
   list-style-type: none;
   padding: 0;
   margin: 0;
+  position: relative;
   overflow: hidden;
-}
-
-.c2::after {
-  content: ' ';
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  border-bottom: 0.0625rem solid transparent;
-  z-index: 1;
 }
 
 .c3 {
   display: inline-block;
   position: relative;
   z-index: 2;
+}
+
+.c3::after {
+  content: ' ';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 80rem;
+  border-bottom: 1px solid #eab3b3;
+  z-index: -1;
+  right: 0;
 }
 
 .c4 {
@@ -68,7 +69,7 @@ exports[`Navigation should render correctly 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   display: inline-block;
-  padding: 0.75rem 0.5rem;
+  padding: 0.75rem 1rem;
 }
 
 .c4:hover::after {
@@ -92,34 +93,9 @@ exports[`Navigation should render correctly 1`] = `
 }
 
 @media (max-width:37.4375rem) {
-  .c0 {
-    padding: 0;
-  }
-}
-
-@media (max-width:37.4375rem) {
   .c1:focus {
     top: -3rem;
     left: 0.5rem;
-  }
-}
-
-@media (max-width:37.4375rem) {
-  .c2::after {
-    content: none;
-  }
-}
-
-@media (max-width:37.4375rem) {
-  .c3::after {
-    content: ' ';
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 37.5rem;
-    border-bottom: 1px solid #eab3b3;
-    z-index: -1;
-    right: 0;
   }
 }
 
@@ -134,6 +110,12 @@ exports[`Navigation should render correctly 1`] = `
   .c4 {
     font-size: 1rem;
     line-height: 1.25rem;
+  }
+}
+
+@media (max-width:37.4375rem) {
+  .c4 {
+    padding: 0.75rem 0.5rem;
   }
 }
 

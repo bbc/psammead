@@ -85,8 +85,6 @@ We have added the role `list` and `listitem` to the `NavigationUl` and `Navigati
 
 We have also added visually hidden text to let the user know which item in the Navigation is the current page. Note the use of visually hidden text here is due to lack of support at this time for the aria-current page attribute. Also note the use of `role="text"` to stop splitting in VoiceOver.
 
-The `NavigationUl` has a transparent border above 600px to ensure that when in High Contrast Mode on PC and when the user changes colour preferences in Firefox, there is a separation between the Navigation and the content.
-
 ## Contributing
 
 Psammead is completely open source. We are grateful for any contributions, whether they be new components, bug fixes or general improvements. Please see our primary contributing guide which can be found at [the root of the Psammead respository](https://github.com/bbc/psammead/blob/latest/CONTRIBUTING.md).
