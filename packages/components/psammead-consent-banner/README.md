@@ -12,14 +12,14 @@ The `psammead-consent-banner` component is a styled `div` that encapsulates info
 
 ## Props
 
-| Argument | Type    | Required | Default | Example                                                                                     |
-| -------- | ------- | -------- | ------- | ------------------------------------------------------------------------------------------- |
-| title    | string  | Yes      | N/A     | `We've updated our Privacy and Cookies Policy`                                              |
-| text     | element | Yes      | N/A     | `<p> This is some text</p>`                                                                 |
-| accept   | element | Yes      | N/A     | `<button type="button">Accept</button>`                                                     |
-| reject   | element | Yes      | N/A     | `<a href="https://www.bbc.co.uk/usingthebbc/your-data-matters">Find out what's changed</a>` |
-| id       | string  | No       | Null    | `ConsentBanner`                                                                             |
-| hidden   | bool    | No       | Null    | `false`                                                                                     |
+| Argument | Type | Required | Default | Example |
+| -------- | ---- | -------- | ------- | --------|
+| title | string | Yes | N/A | `We've updated our Privacy and Cookies Policy` |
+| text | element | Yes | N/A | `<p> This is some text</p>` |
+| accept | element | Yes | N/A | `<button type="button">Accept</button>` |
+| reject | element | Yes | N/A | `<a href="https://www.bbc.co.uk/usingthebbc/your-data-matters">Find out what's changed</a>` |
+| id | string | No | Null | `ConsentBanner` |
+| hidden | bool | No | Null | `false` |
 
 ## Usage
 
