@@ -81,7 +81,7 @@ const StyledListItem = styled.li`
     left: 0;
     bottom: 0;
     width: ${GEL_GROUP_5_SCREEN_WIDTH_MIN};
-    border-bottom: 1px solid ${BORDER_COLOR};
+    border-bottom: 0.0625rem solid ${BORDER_COLOR};
     z-index: -1;
 
     ${({ dir }) =>
