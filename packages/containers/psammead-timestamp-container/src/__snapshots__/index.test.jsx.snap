@@ -30,7 +30,7 @@ exports[`Timestamp should add prefix and suffix 1`] = `
 
 <time
   className="c0"
-  dateTime="۲۰۱۸-۱۰-۱۹"
+  dateTime="2018-10-19"
 >
   Prefix here  
   ۱۹ اکتبر ۲۰۱۸
@@ -70,7 +70,7 @@ exports[`Timestamp should render correctly 1`] = `
 
 <time
   className="c0"
-  dateTime="۲۰۱۸-۱۰-۱۹"
+  dateTime="2018-10-19"
 >
   ۱۹ اکتبر ۲۰۱۸
 </time>
@@ -106,7 +106,7 @@ exports[`Timestamp should render without a leading zero on the day 1`] = `
 
 <time
   className="c0"
-  dateTime="۲۰۱۸-۰۷-۰۷"
+  dateTime="2018-07-07"
 >
   ۷ ژوئیه ۲۰۱۸
 </time>
