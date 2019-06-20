@@ -51,4 +51,17 @@ describe('Brand', () => {
       minWidth={180}
     />,
   );
+
+  shouldMatchSnapshot(
+    'should render correctly with transparent borders',
+    <Brand
+      product="BBC News"
+      svg={svg}
+      svgHeight={24}
+      maxWidth={280}
+      minWidth={180}
+      borderTop
+      borderBottom
+    />,
+  );
 });
