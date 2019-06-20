@@ -76,7 +76,7 @@ const StyledListItem = styled.li`
 
   /* Trick to display a border between the list items when it breaks into multiple lines, which takes the full width */
   &::after {
-    content: ' ';
+    content: '';
     position: absolute;
     left: 0;
     bottom: 0;
