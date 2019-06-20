@@ -51,7 +51,7 @@ const inputs = () => {
     .filter(key => key !== 'BBC_BLOCKS')
     .map(key => key.charAt(0).toUpperCase() + key.slice(1));
 
-  const svgChoice = select('Service SVG', options, 'News').toLowerCase();
+  const svgChoice = select('Service SVG', options, 'Igbo').toLowerCase();
   const svgRatio = svgs[svgChoice].ratio;
   const svgMaxHeight = 24;
   const svgMinHeight = 16;
