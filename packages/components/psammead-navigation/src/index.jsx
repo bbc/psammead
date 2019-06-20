@@ -151,7 +151,7 @@ const CurrentItem = ({ children: link, script, currentPageText }) => (
       role="text"
       script={script}
     >
-      <VisuallyHiddenText>{currentPageText},</VisuallyHiddenText>
+      <VisuallyHiddenText>{currentPageText}, </VisuallyHiddenText>
       {link}
     </StyledSpan>
   </Fragment>
