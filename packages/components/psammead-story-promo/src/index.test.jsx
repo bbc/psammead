@@ -87,5 +87,10 @@ describe('assertions', () => {
 
     expect(spans[0].innerHTML).toEqual('Video 2 minutes 15 seconds');
     expect(spans[1].innerHTML).toEqual('2:15');
+
+    const image = container.getElementsByTagName('img')[0];
+
+    expect(image.getAttribute('src')).toEqual('https://foobar.com/image.png');
+    expect(image.getAttribute('alt')).toEqual('Alt text');
   });
 });
