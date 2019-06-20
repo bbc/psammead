@@ -3,7 +3,11 @@ import styled, { css } from 'styled-components';
 import { shape, string, node, bool, oneOf } from 'prop-types';
 import VisuallyHiddenText from '@bbc/psammead-visually-hidden-text';
 import { C_WHITE, C_POSTBOX, C_GHOST } from '@bbc/psammead-styles/colours';
-import { GEL_SPACING, GEL_SPACING_DBL } from '@bbc/gel-foundations/spacings';
+import {
+  GEL_SPACING_HLF,
+  GEL_SPACING,
+  GEL_SPACING_DBL,
+} from '@bbc/gel-foundations/spacings';
 import {
   GEL_GROUP_2_SCREEN_WIDTH_MAX,
   GEL_GROUP_5_SCREEN_WIDTH_MIN,
@@ -95,7 +99,7 @@ const ListItemBorder = css`
   left: 0;
   right: 0;
   bottom: 0;
-  border-bottom: 0.25rem solid ${C_WHITE};
+  border-bottom: ${GEL_SPACING_HLF} solid ${C_WHITE};
 `;
 
 const StyledLink = styled.a`
