@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react';
 import styled from 'styled-components';
-import { string, number, node, shape } from 'prop-types';
+import { string, number, node, shape, bool } from 'prop-types';
 import { C_POSTBOX, C_WHITE } from '@bbc/psammead-styles/colours';
 import VisuallyHiddenText from '@bbc/psammead-visually-hidden-text';
 import {
@@ -22,6 +22,8 @@ const PADDING_AROUND_SVG_BELOW_600PX = 32;
 const conditionallyRenderHeight = (svgHeight, padding) =>
   svgHeight ? `height: ${(svgHeight + padding) / 16}rem` : '';
 
+const TRANSPARENT_BORDER = `0.0625rem solid transparent`;
+
 const SvgWrapper = styled.div`
   max-width: ${GEL_GROUP_5_SCREEN_WIDTH_MIN};
   margin: 0 auto;
@@ -39,6 +41,8 @@ const Banner = styled.div`
       conditionallyRenderHeight(svgHeight, PADDING_AROUND_SVG_ABOVE_600PX)};
     padding: 0 ${GEL_SPACING_DBL};
   }
+  border-top: ${({ borderTop }) => borderTop && TRANSPARENT_BORDER};
+  border-bottom: ${({ borderBottom }) => borderBottom && TRANSPARENT_BORDER};
 `;
 
 const brandWidth = (minWidth, maxWidth) => `
@@ -153,35 +157,24 @@ StyledBrand.defaultProps = {
   serviceLocalisedName: null,
 };
 
-const Brand = ({
-  product,
-  serviceLocalisedName,
-  svgHeight,
-  minWidth,
-  maxWidth,
-  svg,
-  url,
-}) => {
-  const styledBrandProps = {
-    product,
-    serviceLocalisedName,
-    svgHeight,
-    minWidth,
-    maxWidth,
-    svg,
-  };
+const Brand = props => {
+  const { svgHeight, maxWidth, minWidth, url, borderTop, borderBottom } = props;
 
   return (
-    <Banner svgHeight={svgHeight}>
+    <Banner
+      svgHeight={svgHeight}
+      borderTop={borderTop}
+      borderBottom={borderBottom}
+    >
       {url ? (
         <SvgWrapper>
           <StyledLink href={url} maxWidth={maxWidth} minWidth={minWidth}>
-            <StyledBrand {...styledBrandProps} />
+            <StyledBrand {...props} />
           </StyledLink>
         </SvgWrapper>
       ) : (
         <SvgWrapper>
-          <StyledBrand {...styledBrandProps} />
+          <StyledBrand {...props} />
         </SvgWrapper>
       )}
     </Banner>
@@ -191,12 +184,16 @@ const Brand = ({
 Brand.defaultProps = {
   url: null,
   serviceLocalisedName: null,
+  borderTop: false,
+  borderBottom: false,
 };
 
 Brand.propTypes = {
   ...brandProps,
   url: string,
   serviceLocalisedName: string,
+  borderTop: bool,
+  borderBottom: bool,
 };
 
 export default Brand;

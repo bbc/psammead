@@ -34,10 +34,14 @@ The `url` value is the link that points to the frontpage of the service associat
 | svg | Object | yes | N/A | { group: `(<g fillrule="evenodd"><path d="M84.32" /></g>)`, viewbox: { height: 24, width: 167.95 }, ratio: 6.9979 } |
 | url | String | no | N/A | `https://www.bbc.co.uk/news` |
 | serviceLocalisedName | String | no | N/A | `'Yoruba'` |
+| borderTop | bool | no | `false` | `true` |
+| borderBottom | bool | no | `false` | `true` |
 
 ## Usage
 
 The typical use-case of this component is at the top of pages in a [`header` element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/header). When this is done it is recommend that the component is wrapped in a [`banner` role](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/Banner_role). However, a `header` with a `banner` role should only appear once on a page.
+
+When using `Brand` in the header, you should ensure that `borderBottom` prop is set to true. Similarly, when using brand on the footer you should set `borderTop` to true. This ensures when in High Contrast Mode on PC and when the user changes colour preferences in FireFox that the top/bottom of the `Brand` component is visible.
 
 ```jsx
 import Brand from '@bbc/psammead-brand';
@@ -53,6 +57,7 @@ const Header = (product, serviceName) => (
       minWidth={180}
       svg={igbo}
       url="https://www.bbc.co.uk/news"
+      borderBottom
     />
   </header>
 );
