@@ -7,6 +7,8 @@ This package provides a collection of string constants for use in CSS, containin
 `/colours` - Project-defined colours that will be required by multiple Psammead components or themes. These colours are not defined by GEL.
 `/fonts` - Project-defined browser behaviours for the Reith font. The primary reason these are not considered GEL-defined (and not part of [`@bbc/gel-foundations`](https://www.npmjs.com/package/@bbc/gel-foundations)) is due to the custom weighting and loading definitions. [More details on the font-faces defined in this package are available here.](./font-faces.md)
 
+`/font-styles` provides functions that can be used to get font-styles for different services. If a font-style is not available all the functions will fallback to regular sans font-style of the service.
+
 ## Installation
 
 ```jsx
@@ -15,6 +17,7 @@ npm install @bbc/psammead-styles --save
 
 ## Usage
 
+<!-- prettier-ignore -->
 ```jsx
 import { C_POSTBOX } from '@bbc/psammead-styles/colours';
 
@@ -43,6 +46,21 @@ const someGlobalCSS = css`
 const SomeStyledComponent = css`
   background-color: ${C_POSTBOX};
   font-family: ${GEL_FF_REITH_SANS};
+`;
+```
+
+### font-styles
+
+In case you are using embeded fonts, you need to make sure you have loaded your fonts first before using the functions. If the embeded font is not loaded, the fallback font will be applied
+
+```js
+import { getSansRegular } from '@bbc/psammead-styles/font-styles';
+
+const fontStyle = getSansRegular('news');
+
+const SomeStyledComponent = css`
+  ${fontStyle};
+  /* more css styles */
 `;
 ```
 
