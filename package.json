@@ -76,7 +76,7 @@
     "react-helmet": "^5.2.0",
     "react-test-renderer": "^16.8.6",
     "request": "^2.88.0",
-    "semver": "^5.6.0",
+    "semver": "^6.1.1",
     "shelljs": "^0.8.3",
     "storybook-readme": "^5.0.1",
     "strip-ansi": "^5.0.0",
