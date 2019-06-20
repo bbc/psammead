@@ -3,7 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
-| 1.1.10   | [PR#???](https://github.com/bbc/psammead/pull/641) Upgrade many npm dependencies then update snapshots |
+| 1.1.10  | [PR#669](https://github.com/bbc/psammead/pull/641) Upgrade many npm dependencies then update snapshots |
 | 1.1.9   | [PR#641](https://github.com/bbc/psammead/pull/641) Upgrade to Node 10.16.0 |
 | 1.1.8   | [PR#631](https://github.com/BBC/psammead/pull/631) Update Storybook version and other dependencies |
 | 1.1.7   | [PR#536](https://github.com/BBC/psammead/pull/536) Add viewport addon |
