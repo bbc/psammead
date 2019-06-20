@@ -1,6 +1,6 @@
 {
   "name": "@bbc/psammead-timestamp",
-  "version": "0.3.3",
+  "version": "0.3.4",
   "main": "dist/index.js",
   "description": "React styled component for displaying a timestamp with a suitable semantic markup",
   "repository": {
@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/bbc/psammead/blob/latest/packages/components/psammead-timestamp/README.md",
   "dependencies": {
-    "@bbc/gel-foundations": "^1.2.0"
+    "@bbc/gel-foundations": "^3.0.0"
   },
   "devDependencies": {
     "@bbc/psammead-storybook-helpers": "^2.1.1",
