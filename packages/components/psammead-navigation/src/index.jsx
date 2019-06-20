@@ -207,13 +207,13 @@ NavigationLi.propTypes = {
   children: node.isRequired,
   url: string.isRequired,
   script: shape(scriptPropType).isRequired,
-  dir: string,
+  dir: oneOf(['ltr', 'rtl']),
   active: bool,
   currentPageText: string,
 };
 
 NavigationLi.defaultProps = {
-  dir: oneOf(['ltr', 'rtl']),
+  dir: 'ltr',
   active: false,
   currentPageText: null,
 };

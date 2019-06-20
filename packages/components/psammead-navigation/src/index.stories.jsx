@@ -3,7 +3,6 @@ import styled from 'styled-components';
 import { storiesOf } from '@storybook/react';
 import { select, number, withKnobs } from '@storybook/addon-knobs';
 import { inputProvider, dirDecorator } from '@bbc/psammead-storybook-helpers';
-import { latin } from '@bbc/gel-foundations/scripts';
 import * as svgs from '@bbc/psammead-assets/svgs';
 import VisuallyHiddenText from '@bbc/psammead-visually-hidden-text';
 import Brand from '@bbc/psammead-brand';
@@ -12,6 +11,39 @@ import igboNavData from '../testHelpers/igbo';
 import pidginNavData from '../testHelpers/pidgin';
 import yorubaNavData from '../testHelpers/yoruba';
 import notes from '../README.md';
+
+const navStoriesData = [
+  {
+    title: 'igbo with Brand',
+    skipLinkText: 'Wụga n’ọdịnaya',
+    currentPageText: 'Current page',
+    data: igboNavData,
+    brand: true,
+  },
+  {
+    title: 'pidgin',
+    skipLinkText: 'Waka go wetin de inside',
+    currentPageText: 'Current page',
+    data: pidginNavData,
+  },
+  {
+    title: 'yoruba',
+    skipLinkText: 'Fò kọjá sí nnkan tí ó wà nínú rẹ̀',
+    currentPageText: 'Current page',
+    data: yorubaNavData,
+  },
+];
+
+const offScreenText = (
+  <Fragment>
+    <span
+      // eslint-disable-next-line jsx-a11y/aria-role
+      role="text"
+    >
+      <span lang="en-GB">BBC News</span>, Ìgbò - Akụkọ
+    </span>
+  </Fragment>
+);
 
 const inputs = () => {
   // capitalization is only for presentation purpose on the knob
@@ -30,167 +62,73 @@ const inputs = () => {
   return { svgChoice, svgHeightInput, minWidthInput, maxWidthInput };
 };
 
+const getBrand = () => {
+  const { svgHeightInput, minWidthInput, maxWidthInput, svgChoice } = inputs();
+
+  return (
+    <Brand
+      brandName="Default Brand Name"
+      svgHeight={svgHeightInput}
+      minWidth={minWidthInput}
+      maxWidth={maxWidthInput}
+      svg={svgs[svgChoice]}
+    />
+  );
+};
+
 const StyledMain = styled.main`
   padding: 0px 1rem;
 `;
 
-const offScreenText = (
-  <Fragment>
-    <span
-      // eslint-disable-next-line jsx-a11y/aria-role
-      role="text"
-    >
-      <span lang="en-GB">BBC News</span>, Ìgbò - Akụkọ
-    </span>
-  </Fragment>
-);
+const navigationStory = (skipLinkText, currentPageText, navData, brand) =>
+  inputProvider([], (inp, script, dir) => (
+    <Fragment>
+      {brand && getBrand()}
 
-storiesOf('Components|Navigation', module)
+      <Navigation script={script} skipLinkText={skipLinkText}>
+        <NavigationUl>
+          {navData.map((item, key) => {
+            const { title, url } = item;
+
+            let active;
+            if (key === 0) {
+              active = true;
+            }
+
+            return (
+              <NavigationLi
+                key={title}
+                url={url}
+                script={script}
+                dir={dir}
+                active={active}
+                currentPageText={currentPageText}
+              >
+                {title}
+              </NavigationLi>
+            );
+          })}
+        </NavigationUl>
+      </Navigation>
+      <StyledMain>
+        <VisuallyHiddenText id="content" as="h1" tabIndex="-1">
+          {offScreenText}
+        </VisuallyHiddenText>
+      </StyledMain>
+    </Fragment>
+  ));
+
+const stories = storiesOf('Components|Navigation', module)
   .addDecorator(withKnobs)
-  .add(
-    'igbo with Brand',
-    inputProvider([], dir => {
-      const {
-        svgHeightInput,
-        minWidthInput,
-        maxWidthInput,
-        svgChoice,
-      } = inputs();
+  .addDecorator(dirDecorator);
 
-      return (
-        <Fragment>
-          <Brand
-            brandName="Default Brand Name"
-            svgHeight={svgHeightInput}
-            minWidth={minWidthInput}
-            maxWidth={maxWidthInput}
-            svg={svgs[svgChoice]}
-          />
-          <Navigation script={latin} skipLinkText="Wụga n’ọdịnaya">
-            <NavigationUl>
-              {igboNavData.map((item, key) => {
-                const { title, url } = item;
-
-                let active;
-                if (key === 0) {
-                  active = true;
-                }
-
-                return (
-                  <NavigationLi
-                    key={title}
-                    url={url}
-                    script={latin}
-                    dir={dir}
-                    active={active}
-                    currentPageText="Current page"
-                  >
-                    {title}
-                  </NavigationLi>
-                );
-              })}
-            </NavigationUl>
-          </Navigation>
-          <StyledMain>
-            <VisuallyHiddenText id="content" as="h1" tabIndex="-1">
-              {offScreenText}
-            </VisuallyHiddenText>
-          </StyledMain>
-        </Fragment>
-      );
-    }),
+navStoriesData.map(item => {
+  const { title, skipLinkText, currentPageText, data, brand } = item;
+  return stories.add(
+    title,
+    navigationStory(skipLinkText, currentPageText, data, brand),
     {
       notes,
     },
   );
-
-storiesOf('Components|Navigation', module)
-  .addDecorator(withKnobs)
-  .addDecorator(dirDecorator)
-  .add(
-    'pidgin',
-    inputProvider([], dir => (
-      <Fragment>
-        <Navigation script={latin} skipLinkText="Waka go wetin de inside">
-          <NavigationUl>
-            {pidginNavData.map((item, key) => {
-              const { title, url } = item;
-
-              let active;
-              if (key === 0) {
-                active = true;
-              }
-
-              return (
-                <NavigationLi
-                  key={title}
-                  url={url}
-                  script={latin}
-                  dir={dir}
-                  active={active}
-                  currentPageText="Current page"
-                >
-                  {title}
-                </NavigationLi>
-              );
-            })}
-          </NavigationUl>
-        </Navigation>
-        <StyledMain>
-          <VisuallyHiddenText id="content" as="h1" tabIndex="-1">
-            {offScreenText}
-          </VisuallyHiddenText>
-        </StyledMain>
-      </Fragment>
-    )),
-    {
-      notes,
-    },
-  );
-
-storiesOf('Components|Navigation', module)
-  .addDecorator(withKnobs)
-  .addDecorator(dirDecorator)
-  .add(
-    'yoruba',
-    inputProvider([], dir => (
-      <Fragment>
-        <Navigation
-          script={latin}
-          skipLinkText="Fò kọjá sí nnkan tí ó wà nínú rẹ̀"
-        >
-          <NavigationUl>
-            {yorubaNavData.map((item, key) => {
-              const { title, url } = item;
-
-              let active;
-              if (key === 0) {
-                active = true;
-              }
-
-              return (
-                <NavigationLi
-                  key={title}
-                  url={url}
-                  script={latin}
-                  dir={dir}
-                  active={active}
-                  currentPageText="Current page"
-                >
-                  {title}
-                </NavigationLi>
-              );
-            })}
-          </NavigationUl>
-        </Navigation>
-        <StyledMain>
-          <VisuallyHiddenText id="content" as="h1" tabIndex="-1">
-            {offScreenText}
-          </VisuallyHiddenText>
-        </StyledMain>
-      </Fragment>
-    )),
-    {
-      notes,
-    },
-  );
+});
