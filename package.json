@@ -1,6 +1,6 @@
 {
   "name": "@bbc/psammead",
-  "version": "1.1.10",
+  "version": "1.2.0",
   "description": "Core Components Library Developed & Maintained By The Articles and Reach & Languages Team",
   "main": "index.js",
   "scripts": {
@@ -50,6 +50,7 @@
     "@storybook/addon-notes": "^5.1.8",
     "@storybook/addon-viewport": "^5.1.8",
     "@storybook/react": "^5.1.8",
+    "@testing-library/react": "^8.0.1",
     "babel-core": "^7.0.0-bridge.0",
     "babel-eslint": "^8.2.6",
     "babel-loader": "^8.0.4",
