@@ -36,7 +36,7 @@ const TimestampContainer = ({
       script={script}
     >
       {prefix ? `${prefix} ` : null}
-      {showRelativeTime(timestamp, isRelative, format, timezone)}
+      {showRelativeTime(timestamp, isRelative, format, timezone, locale)}
       {suffix ? ` ${suffix}` : null}
     </Timestamp>
   );
