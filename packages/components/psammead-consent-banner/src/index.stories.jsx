@@ -29,6 +29,6 @@ const props = {
   reject: Reject,
 };
 
-storiesOf('ConsentBanner', module).add('default', () => (
+storiesOf('Components|ConsentBanner', module).add('default', () => (
   <ConsentBanner {...props} />
 ));
