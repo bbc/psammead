@@ -5,14 +5,17 @@ import { inputProvider } from '@bbc/psammead-storybook-helpers';
 import notes from '../README.md';
 import SitewideLinks from './index';
 
-const buildLink = text => ({
-  href: 'https://www.bbc.co.uk/news',
-  text,
-});
+const buildLink = (text, index) => {
+  const linkText = index >= 0 ? `${text} ${index}` : text;
+  return {
+    href: 'https://www.bbc.co.uk/news',
+    text: linkText,
+  };
+};
 
 const linkNames = [1, 2, 3, 4, 5, 6, 7].map(n => ({
   name: `Link ${n}`,
-  defaultText: `link ${n}`,
+  defaultText: 'link',
 }));
 linkNames.unshift(
   { name: 'External Link', defaultText: 'external link' },
