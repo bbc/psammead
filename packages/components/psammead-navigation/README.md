@@ -51,7 +51,7 @@ import Navigation, {
 } from '@bbc/psammead-navigation';
 import { latin } from '@bbc/gel-foundations/scripts';
 
-<Navigation skipLinkText="Skip to content">
+<Navigation script={latin} skipLinkText="Skip to content">
   <NavigationUl>
     <NavigationLi
       url="/"

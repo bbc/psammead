@@ -87,13 +87,9 @@ const navigationStory = (skipLinkText, currentPageText, navData, brand) =>
 
       <Navigation script={script} skipLinkText={skipLinkText}>
         <NavigationUl>
-          {navData.map((item, key) => {
+          {navData.map((item, index) => {
             const { title, url } = item;
-
-            let active;
-            if (key === 0) {
-              active = true;
-            }
+            const active = index === 0;
 
             return (
               <NavigationLi

@@ -1,6 +1,17 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Navigation should render correctly 1`] = `
+.c5 {
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  -webkit-clip: rect(1px,1px,1px,1px);
+  clip: rect(1px,1px,1px,1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  width: 1px;
+}
+
 .c0 {
   background-color: #B80000;
   position: relative;
@@ -22,6 +33,8 @@ exports[`Navigation should render correctly 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   font-family: ReithSans,Helvetica,Arial,sans-serif;
+  font-size: 0.9375rem;
+  line-height: 1.25rem;
 }
 
 .c1:focus {
@@ -50,17 +63,17 @@ exports[`Navigation should render correctly 1`] = `
 }
 
 .c3::after {
-  content: ' ';
+  content: '';
   position: absolute;
   left: 0;
   bottom: 0;
   width: 80rem;
-  border-bottom: 1px solid #eab3b3;
+  border-bottom: 0.0625rem solid #eab3b3;
   z-index: -1;
   left: 0;
 }
 
-.c4 {
+.c6 {
   font-size: 0.9375rem;
   line-height: 1.25rem;
   font-family: ReithSans,Helvetica,Arial,sans-serif;
@@ -72,7 +85,7 @@ exports[`Navigation should render correctly 1`] = `
   padding: 0.75rem 1rem;
 }
 
-.c4:hover::after {
+.c6:hover::after {
   content: '';
   position: absolute;
   left: 0;
@@ -81,7 +94,7 @@ exports[`Navigation should render correctly 1`] = `
   border-bottom: 0.25rem solid #FFFFFF;
 }
 
-.c4:focus::after {
+.c6:focus::after {
   content: '';
   position: absolute;
   left: 0;
@@ -92,10 +105,62 @@ exports[`Navigation should render correctly 1`] = `
   border: 0.25rem solid #FFFFFF;
 }
 
+.c4 {
+  font-size: 0.9375rem;
+  line-height: 1.25rem;
+  font-family: ReithSans,Helvetica,Arial,sans-serif;
+  color: #FDFDFD;
+  display: inline-block;
+  padding: 0.75rem 1rem;
+}
+
+.c4::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-bottom: 0.25rem solid #FFFFFF;
+}
+
+@media (min-width:20rem) and (max-width:37.4375rem) {
+  .c1 {
+    font-size: 1rem;
+    line-height: 1.25rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .c1 {
+    font-size: 1rem;
+    line-height: 1.25rem;
+  }
+}
+
 @media (max-width:37.4375rem) {
   .c1:focus {
     top: -3rem;
     left: 0.5rem;
+  }
+}
+
+@media (min-width:20rem) and (max-width:37.4375rem) {
+  .c6 {
+    font-size: 1rem;
+    line-height: 1.25rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .c6 {
+    font-size: 1rem;
+    line-height: 1.25rem;
+  }
+}
+
+@media (max-width:37.4375rem) {
+  .c6 {
+    padding: 0.75rem 0.5rem;
   }
 }
 
@@ -126,7 +191,9 @@ exports[`Navigation should render correctly 1`] = `
   <a
     className="c1"
     href="#content"
-  />
+  >
+    Wụga n’ọdịnaya
+  </a>
   <ul
     className="c2"
     role="list"
@@ -136,10 +203,54 @@ exports[`Navigation should render correctly 1`] = `
       dir="ltr"
       role="listitem"
     >
-      <a
+      <span
         className="c4"
-        href="/igbo"
-      />
+        role="text"
+      >
+        <span
+          className="c5"
+        >
+          Current page
+          , 
+        </span>
+        Akụkọ
+      </span>
+    </li>
+    <li
+      className="c3"
+      dir="ltr"
+      role="listitem"
+    >
+      <a
+        className="c6"
+        href="/igbo/egwuregwu"
+      >
+        Egwuregwu
+      </a>
+    </li>
+    <li
+      className="c3"
+      dir="ltr"
+      role="listitem"
+    >
+      <a
+        className="c6"
+        href="/igbo/media/video"
+      >
+        Ihe nkiri
+      </a>
+    </li>
+    <li
+      className="c3"
+      dir="ltr"
+      role="listitem"
+    >
+      <a
+        className="c6"
+        href="/igbo/popular/read"
+      >
+        Nke ka ewuewu
+      </a>
     </li>
   </ul>
 </nav>
