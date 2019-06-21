@@ -1,6 +1,6 @@
 {
   "name": "@bbc/psammead",
-  "version": "1.1.9",
+  "version": "1.1.10",
   "description": "Core Components Library Developed & Maintained By The Articles and Reach & Languages Team",
   "main": "index.js",
   "scripts": {
@@ -14,7 +14,7 @@
     "postshrinkwrap": "if test -z $CI; then \n npm run force-package-lock-https \n fi",
     "preinstall": "sh scripts/enforceVersions.sh",
     "publish": "npm run build && node scripts/publish",
-    "storybook": "NODE_ENV=development start-storybook -p 8080 -c .storybook",
+    "storybook": "NODE_ENV=development start-storybook -p 8180 -c .storybook",
     "test": "npm run test:lint && npm run test:lint:css && npm run test:unit && npm run test:packages",
     "test:packages": "lerna run test",
     "test:lint": "eslint --ext .js,jsx,json ./packages ./scripts",
