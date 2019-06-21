@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 3.0.0   | [PR#???](https://github.com/bbc/psammead/pull/???) Update inpuProvider to pass script, service, dir and inputs as objects |
 | 2.1.1   | [PR#512](https://github.com/bbc/psammead/pull/512) Pass script and dir to storybook function |
 | 2.1.0   | [PR#496](https://github.com/bbc/psammead/pull/496) Add dir storybook decorator |
 | 2.0.0   | [PR#468](https://github.com/bbc/psammead/pull/468) Rewrite of inputProvider |

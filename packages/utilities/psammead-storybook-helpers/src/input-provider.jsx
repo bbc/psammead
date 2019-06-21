@@ -5,15 +5,11 @@ import scripts from '@bbc/gel-foundations/scripts';
 import LANGUAGE_VARIANTS from './text-variants';
 
 const inputProvider = (slots, componentFunction) => () => {
-  const lang = select(
-    'Select a language',
-    LANGUAGE_VARIANTS,
-    LANGUAGE_VARIANTS.english,
-  );
+  const serviceNames = Object.keys(LANGUAGE_VARIANTS);
+  const serviceName = select('Select a service', serviceNames, 'news');
 
-  // `select` doesn't return name of language selected, so test if selection
-  // is English by comparing `text` to English's `text`
-  const isEnglish = lang.text === LANGUAGE_VARIANTS.english.text;
+  const service = LANGUAGE_VARIANTS[serviceName];
+  const isNews = serviceName === 'news';
 
   const inputs = (slots || []).map(({ name, defaultText }) =>
     text(
@@ -24,17 +20,17 @@ const inputProvider = (slots, componentFunction) => () => {
       // When we switch to a language other than English, set the default
       // text for the knob to the snippet from LANGUAGE_VARIANTS for that
       // language.
-      defaultText && isEnglish ? defaultText : lang.text,
+      defaultText && isNews ? defaultText : service.text,
     ),
   );
 
-  const script = scripts[lang.script];
-  const dir = lang.dir || 'ltr';
+  const script = scripts[service.script];
+  const dir = service.dir || 'ltr';
 
   return (
     <Fragment>
       <Helmet htmlAttributes={{ dir }} />
-      {componentFunction(inputs, script, dir)}
+      {componentFunction({ inputs, script, dir, service: serviceName })}
     </Fragment>
   );
 };

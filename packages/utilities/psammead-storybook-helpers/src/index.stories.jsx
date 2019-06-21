@@ -22,7 +22,7 @@ storiesOf('Utilities|Input Provider', module)
         },
         { name: 'second slot' },
       ],
-      ([first, second], script, dir) => (
+      ({ inputs: [first, second], script, dir }) => (
         <ul>
           <li>{first}</li>
           <li>{second}</li>
