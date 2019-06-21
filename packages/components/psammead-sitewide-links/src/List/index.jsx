@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
 import { string, arrayOf, shape } from 'prop-types';
-import nanoid from 'nanoid';
 import { C_SHADOW } from '@bbc/psammead-styles/colours';
 import { GEL_SPACING, GEL_SPACING_DBL } from '@bbc/gel-foundations/spacings';
 import {
@@ -85,7 +84,7 @@ const StyledListItem = styled.li`
 const List = ({ links }) => (
   <StyledList role="list">
     {links.map(link => (
-      <StyledListItem key={nanoid()} role="listitem">
+      <StyledListItem key={link.text} role="listitem">
         <Link text={link.text} href={link.href} />
       </StyledListItem>
     ))}
