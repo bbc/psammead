@@ -78,7 +78,6 @@ const StyledListItem = styled.li`
   &::after {
     content: '';
     position: absolute;
-    left: 0;
     bottom: 0;
     width: ${GEL_GROUP_5_SCREEN_WIDTH_MIN};
     border-bottom: 0.0625rem solid ${BORDER_COLOR};
@@ -129,17 +128,7 @@ const StyledLink = styled.a`
 `;
 
 const StyledSpan = styled.span`
-  ${props => (props.script ? getPica(props.script) : '')};
-  font-family: ${GEL_FF_REITH_SANS};
-  color: ${C_GHOST};
-  display: inline-block;
-  padding: ${TOP_BOTTOM_SPACING} ${GEL_SPACING_DBL};
-
-  @media (max-width: ${GEL_GROUP_2_SCREEN_WIDTH_MAX}) {
-    padding: ${TOP_BOTTOM_SPACING} ${GEL_SPACING};
-  }
-
-  &::before {
+  &::after {
     ${ListItemBorder}
   }
 `;
@@ -173,9 +162,11 @@ export const NavigationLi = ({
 }) => (
   <StyledListItem role="listitem" dir={dir}>
     {active && currentPageText ? (
-      <CurrentItem script={script} currentPageText={currentPageText}>
-        {link}
-      </CurrentItem>
+      <StyledLink href={url} script={script} tabIndex="-1">
+        <CurrentItem script={script} currentPageText={currentPageText}>
+          {link}
+        </CurrentItem>
+      </StyledLink>
     ) : (
       <StyledLink href={url} script={script}>
         {link}

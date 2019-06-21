@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Navigation should render correctly 1`] = `
-.c5 {
+.c6 {
   -webkit-clip-path: inset(100%);
   clip-path: inset(100%);
   -webkit-clip: rect(1px,1px,1px,1px);
@@ -65,7 +65,6 @@ exports[`Navigation should render correctly 1`] = `
 .c3::after {
   content: '';
   position: absolute;
-  left: 0;
   bottom: 0;
   width: 80rem;
   border-bottom: 0.0625rem solid #eab3b3;
@@ -73,7 +72,7 @@ exports[`Navigation should render correctly 1`] = `
   left: 0;
 }
 
-.c6 {
+.c4 {
   font-size: 0.9375rem;
   line-height: 1.25rem;
   font-family: ReithSans,Helvetica,Arial,sans-serif;
@@ -85,7 +84,7 @@ exports[`Navigation should render correctly 1`] = `
   padding: 0.75rem 1rem;
 }
 
-.c6:hover::after {
+.c4:hover::after {
   content: '';
   position: absolute;
   left: 0;
@@ -94,7 +93,7 @@ exports[`Navigation should render correctly 1`] = `
   border-bottom: 0.25rem solid #FFFFFF;
 }
 
-.c6:focus::after {
+.c4:focus::after {
   content: '';
   position: absolute;
   left: 0;
@@ -105,16 +104,7 @@ exports[`Navigation should render correctly 1`] = `
   border: 0.25rem solid #FFFFFF;
 }
 
-.c4 {
-  font-size: 0.9375rem;
-  line-height: 1.25rem;
-  font-family: ReithSans,Helvetica,Arial,sans-serif;
-  color: #FDFDFD;
-  display: inline-block;
-  padding: 0.75rem 1rem;
-}
-
-.c4::before {
+.c5::after {
   content: '';
   position: absolute;
   left: 0;
@@ -141,26 +131,6 @@ exports[`Navigation should render correctly 1`] = `
   .c1:focus {
     top: -3rem;
     left: 0.5rem;
-  }
-}
-
-@media (min-width:20rem) and (max-width:37.4375rem) {
-  .c6 {
-    font-size: 1rem;
-    line-height: 1.25rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c6 {
-    font-size: 1rem;
-    line-height: 1.25rem;
-  }
-}
-
-@media (max-width:37.4375rem) {
-  .c6 {
-    padding: 0.75rem 0.5rem;
   }
 }
 
@@ -203,18 +173,24 @@ exports[`Navigation should render correctly 1`] = `
       dir="ltr"
       role="listitem"
     >
-      <span
+      <a
         className="c4"
-        role="text"
+        href="/igbo"
+        tabIndex="-1"
       >
         <span
           className="c5"
+          role="text"
         >
-          Current page
-          , 
+          <span
+            className="c6"
+          >
+            Current page
+            , 
+          </span>
+          Akụkọ
         </span>
-        Akụkọ
-      </span>
+      </a>
     </li>
     <li
       className="c3"
@@ -222,7 +198,7 @@ exports[`Navigation should render correctly 1`] = `
       role="listitem"
     >
       <a
-        className="c6"
+        className="c4"
         href="/igbo/egwuregwu"
       >
         Egwuregwu
@@ -234,7 +210,7 @@ exports[`Navigation should render correctly 1`] = `
       role="listitem"
     >
       <a
-        className="c6"
+        className="c4"
         href="/igbo/media/video"
       >
         Ihe nkiri
@@ -246,7 +222,7 @@ exports[`Navigation should render correctly 1`] = `
       role="listitem"
     >
       <a
-        className="c6"
+        className="c4"
         href="/igbo/popular/read"
       >
         Nke ka ewuewu
