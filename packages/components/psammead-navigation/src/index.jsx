@@ -9,7 +9,7 @@ import {
   GEL_SPACING_DBL,
 } from '@bbc/gel-foundations/spacings';
 import {
-  GEL_GROUP_2_SCREEN_WIDTH_MAX,
+  GEL_GROUP_1_SCREEN_WIDTH_MAX,
   GEL_GROUP_5_SCREEN_WIDTH_MIN,
 } from '@bbc/gel-foundations/breakpoints';
 import { getPica, GEL_FF_REITH_SANS } from '@bbc/gel-foundations/typography';
@@ -54,7 +54,7 @@ const SkipLink = styled.a`
     height: auto;
     width: auto;
 
-    @media (max-width: ${GEL_GROUP_2_SCREEN_WIDTH_MAX}) {
+    @media (max-width: ${GEL_GROUP_1_SCREEN_WIDTH_MAX}) {
       top: ${SKIP_LINK_TOP_POSITION_SMALL};
       left: ${GEL_SPACING};
     }
@@ -112,7 +112,7 @@ const StyledLink = styled.a`
   display: inline-block;
   padding: ${TOP_BOTTOM_SPACING} ${GEL_SPACING_DBL};
 
-  @media (max-width: ${GEL_GROUP_2_SCREEN_WIDTH_MAX}) {
+  @media (max-width: ${GEL_GROUP_1_SCREEN_WIDTH_MAX}) {
     padding: ${TOP_BOTTOM_SPACING} ${GEL_SPACING};
   }
 

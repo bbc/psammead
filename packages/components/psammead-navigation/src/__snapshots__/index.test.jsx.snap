@@ -127,7 +127,7 @@ exports[`Navigation should render correctly 1`] = `
   }
 }
 
-@media (max-width:37.4375rem) {
+@media (max-width:24.9375rem) {
   .c1:focus {
     top: -3rem;
     left: 0.5rem;
@@ -148,7 +148,7 @@ exports[`Navigation should render correctly 1`] = `
   }
 }
 
-@media (max-width:37.4375rem) {
+@media (max-width:24.9375rem) {
   .c4 {
     padding: 0.75rem 0.5rem;
   }
