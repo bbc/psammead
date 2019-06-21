@@ -1,4 +1,8 @@
-const presets = ['@babel/preset-env', '@babel/preset-react'];
+const presets = ['@babel/preset-react'];
+
+if (process.env.BABEL_TYPE !== 'esm') {
+  presets.push('@babel/preset-env');
+}
 
 module.exports = {
   plugins: [
