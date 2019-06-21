@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 | ------- | ----------- |
+| 0.2.0-alpha.9 | [PR#663](https://github.com/bbc/psammead/pull/663) Add assertion tests |
 | 0.2.0-alpha.8 | [PR#578](https://github.com/bbc/psammead/pull/578) Add Top Story promo design |
 | 0.2.0-alpha.7 | [PR#628](https://github.com/bbc/psammead/pull/628) Update Story Promo Changelog title |
 | 0.2.0-alpha.6 | [PR#588](https://github.com/bbc/psammead/pull/588) Update Story promo headline to use Pica under 600px. |
@@ -16,4 +17,3 @@
 | 0.1.2   | [PR#488](https://github.com/BBC-News/psammead/pull/488) Hide story summary on device width lower than 600px. |
 | 0.1.1   | [PR#474](https://github.com/BBC-News/psammead/pull/474) Update Story promo headline to use Great Primer. |
 | 0.1.0   | [PR#453](https://github.com/BBC-News/psammead/pull/453) Create initial package. |
-  
