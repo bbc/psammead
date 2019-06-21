@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 1.2.0   | [PR#663](https://github.com/bbc/psammead/pull/663) Add `@testing-library/react` as a dev dependancy |
 | 1.1.10  | [PR#630](https://github.com/BBC/psammead/pull/630) Change storybook port to 8180 |
 | 1.1.9   | [PR#641](https://github.com/bbc/psammead/pull/641) Upgrade to Node 10.16.0 |
 | 1.1.8   | [PR#631](https://github.com/BBC/psammead/pull/631) Update Storybook version and other dependencies |
