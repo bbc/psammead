@@ -1,18 +1,15 @@
-/* eslint-disable global-require */
-module.exports = {
-  latin: require('../dist/scripts/latin-and-cyrillic').default,
-  cyrillic: require('../dist/scripts/latin-and-cyrillic').default,
-  latinDiacritics: require('../dist/scripts/latin-with-diacritics').default,
-  arabic: require('../dist/scripts/arabic').default,
-  arabicPashto: require('../dist/scripts/arabic-pashto').default,
-  bengali: require('../dist/scripts/bengali').default,
-  burmese: require('../dist/scripts/burmese').default,
-  hindi: require('../dist/scripts/devanagari-and-gurmukhi').default,
-  nepali: require('../dist/scripts/devanagari-and-gurmukhi').default,
-  sinhalese: require('../dist/scripts/sinhalese').default,
-  tamil: require('../dist/scripts/tamil').default,
-  thai: require('../dist/scripts/thai').default,
-  chinese: require('../dist/scripts/no-ascenders-or-descenders').default,
-  korean: require('../dist/scripts/no-ascenders-or-descenders').default,
-  ethiopic: require('../dist/scripts/no-ascenders-or-descenders').default,
-};
+export * as latin from './scripts/latin-and-cyrillic';
+export * as cyrillic from './scripts/latin-and-cyrillic';
+export * as latinDiacritics from './scripts/latin-with-diacritics';
+export * as arabic from './scripts/arabic';
+export * as arabicPashto from './scripts/arabic-pashto';
+export * as bengali from './scripts/bengali';
+export * as burmese from './scripts/burmese';
+export * as hindi from './scripts/devanagari-and-gurmukhi';
+export * as nepali from './scripts/devanagari-and-gurmukhi';
+export * as sinhalese from './scripts/sinhalese';
+export * as tamil from './scripts/tamil';
+export * as thai from './scripts/thai';
+export * as chinese from './scripts/no-ascenders-or-descenders';
+export * as korean from './scripts/no-ascenders-or-descenders';
+export * as ethiopic from './scripts/no-ascenders-or-descenders';

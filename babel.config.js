@@ -13,6 +13,7 @@ module.exports = {
         fileName: false,
       },
     ],
+    '@babel/plugin-proposal-export-namespace-from',
   ],
   presets,
   env: {
