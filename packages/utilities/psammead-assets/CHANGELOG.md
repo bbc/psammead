@@ -1,7 +1,9 @@
 # Psammead Assets Changelog
 
+<!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 1.0.0   | [PR#???](https://github.com/bbc/psammead/pull/???) Bump version number |
 | 0.1.9   | [PR#490](https://github.com/bbc/psammead/pull/490) Update SVGs to consistent export, minify and add persian |
 | 0.1.8   | [PR#444](https://github.com/bbc/psammead/pull/444) Add service SVG's |
 | 0.1.7   | [PR#424](https://github.com/bbc/psammead/pull/424) Add Snyk badge to readme |
