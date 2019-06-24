@@ -1,6 +1,6 @@
 {
   "name": "@bbc/psammead-section-label",
-  "version": "0.1.1",
+  "version": "1.0.0",
   "description": "React styled component for a section label",
   "main": "dist/index.js",
   "repository": {
