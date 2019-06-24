@@ -1,6 +1,7 @@
 import React from 'react';
-import { string, element, bool } from 'prop-types';
+import { string, element, bool, shape } from 'prop-types';
 import styled from 'styled-components';
+import { scriptPropType } from '@bbc/gel-foundations/prop-types';
 import {
   C_CONSENT_BACKGROUND,
   C_CONSENT_ACTION,
@@ -10,6 +11,8 @@ import {
 import {
   GEL_GREAT_PRIMER,
   GEL_LONG_PRIMER,
+  getGreatPrimer,
+  getLongPrimer,
   GEL_FF_REITH_SANS,
 } from '@bbc/gel-foundations/typography';
 import {
@@ -54,7 +57,7 @@ const CenterWrapper = styled.div`
 `;
 
 const Title = styled.h2`
-  ${GEL_GREAT_PRIMER}
+  ${props => (props.script ? getGreatPrimer(props.script) : '')};
   color: ${C_WHITE};
   font-weight: 700;
   padding: 0;
@@ -71,7 +74,7 @@ const Title = styled.h2`
  * The '& li + li' below allows for styling every `li` element except the first.
  */
 const Options = styled.ul`
-  ${GEL_LONG_PRIMER}
+  ${props => (props.script ? getLongPrimer(props.script) : '')};
   color: ${C_CONSENT_ACTION};
   font-weight: 600;
   padding: 0;
@@ -137,12 +140,20 @@ const ListItem = styled.li`
   }
 `;
 
-export const ConsentBanner = ({ title, text, accept, reject, id, hidden }) => (
+export const ConsentBanner = ({
+  title,
+  text,
+  accept,
+  reject,
+  id,
+  hidden,
+  script,
+}) => (
   <Wrapper id={id} hidden={hidden}>
     <CenterWrapper>
-      <Title>{title}</Title>
+      <Title script={script}>{title}</Title>
       {text}
-      <Options>
+      <Options script={script}>
         <ListItem>{accept}</ListItem>
         <ListItem>{reject}</ListItem>
       </Options>
@@ -157,6 +168,7 @@ ConsentBanner.propTypes = {
   reject: element.isRequired,
   id: string,
   hidden: bool,
+  script: shape(scriptPropType).isRequired,
 };
 
 ConsentBanner.defaultProps = {

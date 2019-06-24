@@ -1,5 +1,6 @@
 import React from 'react';
 import { shouldMatchSnapshot } from '@bbc/psammead-test-helpers';
+import { latin } from '@bbc/gel-foundations/scripts';
 import { ConsentBanner, ConsentBannerText } from '.';
 
 const baseProps = {
@@ -8,6 +9,7 @@ const baseProps = {
   accept: <button type="button">Accept</button>,
   reject: <a href="https://foobar.com">Reject</a>,
   id: 'banner-id',
+  script: latin,
 };
 
 describe('ConsentBanner', () => {

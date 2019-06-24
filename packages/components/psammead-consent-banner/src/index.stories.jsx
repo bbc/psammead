@@ -1,5 +1,6 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
+import { latin } from '@bbc/gel-foundations/scripts';
 import { ConsentBanner, ConsentBannerText } from '.';
 
 const Accept = (
@@ -27,6 +28,7 @@ const props = {
   text: Text,
   accept: Accept,
   reject: Reject,
+  script: latin,
 };
 
 storiesOf('Components|ConsentBanner', module).add('default', () => (
