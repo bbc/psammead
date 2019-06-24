@@ -108,7 +108,7 @@ const ImageGridItem = styled.div`
 `;
 
 const ImageContentsWrap = styled.div`
-  display: relative;
+  position: relative;
 `;
 
 const InlineMediaIndicator = styled.div`

@@ -13,7 +13,7 @@ exports[`StoryPromo - Top Story should render correctly 1`] = `
 }
 
 .c2 {
-  display: relative;
+  position: relative;
 }
 
 .c4 {
@@ -272,7 +272,7 @@ exports[`StoryPromo - Top Story with Media Indicator should render correctly 1`]
 }
 
 .c2 {
-  display: relative;
+  position: relative;
 }
 
 .c3 {
@@ -532,7 +532,7 @@ exports[`StoryPromo should render correctly 1`] = `
 }
 
 .c2 {
-  display: relative;
+  position: relative;
 }
 
 .c4 {
@@ -787,7 +787,7 @@ exports[`StoryPromo with Media Indicator should render correctly 1`] = `
 }
 
 .c2 {
-  display: relative;
+  position: relative;
 }
 
 .c10 {
