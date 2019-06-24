@@ -91,9 +91,42 @@ exports[`Navigation should render correctly 1`] = `
   right: 0;
   bottom: 0;
   border-bottom: 0.25rem solid #FFFFFF;
+  border-bottom: 0.3125rem solid #FFFFFF;
 }
 
-.c4:focus::after {
+.c4:hover::after:focus::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-bottom: 0.25rem solid #FFFFFF;
+  top: 0;
+  border: 0.25rem solid #FFFFFF;
+}
+
+.c7 {
+  font-size: 0.9375rem;
+  line-height: 1.25rem;
+  font-family: ReithSans,Helvetica,Arial,sans-serif;
+  color: #FDFDFD;
+  cursor: pointer;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  display: inline-block;
+  padding: 0.75rem 1rem;
+}
+
+.c7:hover::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-bottom: 0.25rem solid #FFFFFF;
+}
+
+.c7:hover::after:focus::after {
   content: '';
   position: absolute;
   left: 0;
@@ -154,6 +187,26 @@ exports[`Navigation should render correctly 1`] = `
   }
 }
 
+@media (min-width:20rem) and (max-width:37.4375rem) {
+  .c7 {
+    font-size: 1rem;
+    line-height: 1.25rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .c7 {
+    font-size: 1rem;
+    line-height: 1.25rem;
+  }
+}
+
+@media (max-width:24.9375rem) {
+  .c7 {
+    padding: 0.75rem 0.5rem;
+  }
+}
+
 <nav
   className="c0"
   role="navigation"
@@ -176,7 +229,6 @@ exports[`Navigation should render correctly 1`] = `
       <a
         className="c4"
         href="/igbo"
-        tabIndex="-1"
       >
         <span
           className="c5"
@@ -198,7 +250,7 @@ exports[`Navigation should render correctly 1`] = `
       role="listitem"
     >
       <a
-        className="c4"
+        className="c7"
         href="/igbo/egwuregwu"
       >
         Egwuregwu
@@ -210,7 +262,7 @@ exports[`Navigation should render correctly 1`] = `
       role="listitem"
     >
       <a
-        className="c4"
+        className="c7"
         href="/igbo/media/video"
       >
         Ihe nkiri
@@ -222,7 +274,7 @@ exports[`Navigation should render correctly 1`] = `
       role="listitem"
     >
       <a
-        className="c4"
+        className="c7"
         href="/igbo/popular/read"
       >
         Nke ka ewuewu

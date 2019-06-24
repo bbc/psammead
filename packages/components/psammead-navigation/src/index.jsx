@@ -16,6 +16,7 @@ import { getPica, GEL_FF_REITH_SANS } from '@bbc/gel-foundations/typography';
 import { scriptPropType } from '@bbc/gel-foundations/prop-types';
 
 const TOP_BOTTOM_SPACING = '0.75rem'; // 12px
+const CURRENT_ITEM_HOVER_BORDER = '0.3125rem'; // 5px
 
 /* White with 30% transparency over #B80000 */
 const BORDER_COLOR = '#eab3b3';
@@ -118,6 +119,11 @@ const StyledLink = styled.a`
 
   &:hover::after {
     ${ListItemBorder}
+    ${({ currentLink }) =>
+      currentLink &&
+      css`
+        border-bottom: ${CURRENT_ITEM_HOVER_BORDER} solid ${C_WHITE};
+      `}
   }
 
   &:focus::after {
@@ -133,7 +139,7 @@ const StyledSpan = styled.span`
   }
 `;
 
-const CurrentItem = ({ children: link, script, currentPageText }) => (
+const CurrentLink = ({ children: link, script, currentPageText }) => (
   <Fragment>
     <StyledSpan
       // eslint-disable-next-line jsx-a11y/aria-role
@@ -162,10 +168,10 @@ export const NavigationLi = ({
 }) => (
   <StyledListItem role="listitem" dir={dir}>
     {active && currentPageText ? (
-      <StyledLink href={url} script={script} tabIndex="-1">
-        <CurrentItem script={script} currentPageText={currentPageText}>
+      <StyledLink href={url} script={script} currentLink="true">
+        <CurrentLink script={script} currentPageText={currentPageText}>
           {link}
-        </CurrentItem>
+        </CurrentLink>
       </StyledLink>
     ) : (
       <StyledLink href={url} script={script}>
@@ -209,13 +215,13 @@ NavigationLi.defaultProps = {
   currentPageText: null,
 };
 
-CurrentItem.propTypes = {
+CurrentLink.propTypes = {
   children: string.isRequired,
   script: shape(scriptPropType).isRequired,
   currentPageText: string,
 };
 
-CurrentItem.defaultProps = {
+CurrentLink.defaultProps = {
   currentPageText: null,
 };
 
