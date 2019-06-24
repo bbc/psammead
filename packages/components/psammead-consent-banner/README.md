@@ -16,11 +16,12 @@ The `psammead-consent-banner` component is a styled `div` that encapsulates info
 | Argument | Type | Required | Default | Example |
 | -------- | ---- | -------- | ------- | --------|
 | title | string | Yes | N/A | `We've updated our Privacy and Cookies Policy` |
-| text | element | Yes | N/A | `<ConsentBannerText> This is some text</ConsentBannerText>` |
+| text | element | Yes | N/A | `<ConsentBannerText script={script}> This is some text</ConsentBannerText>` |
 | accept | element | Yes | N/A | `<button type="button">Accept</button>` |
 | reject | element | Yes | N/A | `<a href="https://www.bbc.co.uk/usingthebbc/your-data-matters">Find out what's changed</a>` |
 | id | string | No | Null | `ConsentBanner` |
 | hidden | bool | No | Null | `false` |
+| script | script | Yes | N/A | { canon: { groupA: { fontSize: '28', lineHeight: '32',}, groupB: { fontSize: '32', lineHeight: '36', }, groupD: { fontSize: '44', lineHeight: '48', }, }, trafalgar: { groupA: { fontSize: '20', lineHeight: '24', }, groupB: { fontSize: '24', lineHeight: '28', }, groupD: { fontSize: '32', lineHeight: '36', }, }, } |
 
 ## Usage
 
@@ -28,6 +29,7 @@ The typical use-case of this component is on top of the webpage of all page type
 
 ```jsx
 import { ConsentBanner, ConsentBannerText } from '@bbc/psammead-consent-banner';
+import { latin } from '@bbc/gel-foundations/scripts';
 
 const Accept = (
   <button onClick={() => {}} type="button">
@@ -42,7 +44,7 @@ const Reject = (
 );
 
 const Text = (
-  <ConsentBannerText>
+  <ConsentBannerText script={latin}>
     This is some text with <a href="https://www.bbc.com/news">a link</a> inside
     the consent banner. We have made some important changes to our Privacy and
     Cookie Policy.
@@ -56,9 +58,10 @@ const props = {
   reject: Reject,
   id: null,
   hidden: false,
+  script: latin,
 };
 
-<ConsentBanner {...props} />
+<ConsentBanner {...props} />;
 ```
 
 <!-- ## Accessibility notes -->

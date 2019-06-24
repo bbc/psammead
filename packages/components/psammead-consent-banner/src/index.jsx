@@ -9,8 +9,6 @@ import {
   C_WHITE,
 } from '@bbc/psammead-styles/colours';
 import {
-  GEL_GREAT_PRIMER,
-  GEL_LONG_PRIMER,
   getGreatPrimer,
   getLongPrimer,
   GEL_FF_REITH_SANS,
@@ -99,7 +97,7 @@ const hoverFocusStyles = `
 `;
 
 export const ConsentBannerText = styled.p`
-  ${GEL_LONG_PRIMER};
+  ${props => (props.script ? getLongPrimer(props.script) : '')};
   color: ${C_CONSENT_CONTENT};
 
   @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
@@ -120,7 +118,7 @@ export const ConsentBannerText = styled.p`
 // prop on styled component as required for the amp useage
 const ListItem = styled.li`
   & button {
-    ${GEL_GREAT_PRIMER}
+    ${props => (props.script ? getGreatPrimer(props.script) : '')};
     color: ${C_CONSENT_ACTION};
     font-weight: 700;
     background: none;
@@ -154,8 +152,8 @@ export const ConsentBanner = ({
       <Title script={script}>{title}</Title>
       {text}
       <Options script={script}>
-        <ListItem>{accept}</ListItem>
-        <ListItem>{reject}</ListItem>
+        <ListItem script={script}>{accept}</ListItem>
+        <ListItem script={script}>{reject}</ListItem>
       </Options>
     </CenterWrapper>
   </Wrapper>
