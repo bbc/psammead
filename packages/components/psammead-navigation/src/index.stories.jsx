@@ -1,7 +1,13 @@
 import React, { Fragment } from 'react';
 import styled from 'styled-components';
 import { storiesOf } from '@storybook/react';
-import { select, number, withKnobs } from '@storybook/addon-knobs';
+import {
+  select,
+  number,
+  text,
+  withKnobs,
+  boolean,
+} from '@storybook/addon-knobs';
 import { inputProvider, dirDecorator } from '@bbc/psammead-storybook-helpers';
 import * as svgs from '@bbc/psammead-assets/svgs';
 import VisuallyHiddenText from '@bbc/psammead-visually-hidden-text';
@@ -52,26 +58,51 @@ const inputs = () => {
     .map(key => key.charAt(0).toUpperCase() + key.slice(1));
 
   const svgChoice = select('Service SVG', options, 'Igbo').toLowerCase();
+  const productInput = text('Product', 'BBC News');
+  const serviceLocalisedNameInput = text('Localised service name', 'Yoruba');
   const svgRatio = svgs[svgChoice].ratio;
   const svgMaxHeight = 24;
   const svgMinHeight = 16;
   const minWidthInput = number('minimum svg width', svgRatio * svgMinHeight);
   const maxWidthInput = number('maximum svg width', svgRatio * svgMaxHeight);
   const svgHeightInput = number('desired height svg', svgMaxHeight);
+  const borderBottom = boolean('Border Bottom', false);
+  const borderTop = boolean('Border Top', false);
 
-  return { svgChoice, svgHeightInput, minWidthInput, maxWidthInput };
+  return {
+    productInput,
+    serviceLocalisedNameInput,
+    svgChoice,
+    svgHeightInput,
+    minWidthInput,
+    maxWidthInput,
+    borderTop,
+    borderBottom,
+  };
 };
 
 const getBrand = () => {
-  const { svgHeightInput, minWidthInput, maxWidthInput, svgChoice } = inputs();
+  const {
+    productInput,
+    serviceLocalisedNameInput,
+    svgHeightInput,
+    minWidthInput,
+    maxWidthInput,
+    svgChoice,
+    borderBottom,
+    borderTop,
+  } = inputs();
 
   return (
     <Brand
-      brandName="Default Brand Name"
+      product={productInput}
+      serviceLocalisedName={serviceLocalisedNameInput}
       svgHeight={svgHeightInput}
       minWidth={minWidthInput}
       maxWidth={maxWidthInput}
       svg={svgs[svgChoice]}
+      borderBottom={borderBottom}
+      borderTop={borderTop}
     />
   );
 };
