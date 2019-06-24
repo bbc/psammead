@@ -8,6 +8,7 @@ import {
   GEL_SPACING_TRPL,
 } from '@bbc/gel-foundations/spacings';
 import {
+  GEL_GROUP_2_SCREEN_WIDTH_MIN,
   GEL_GROUP_3_SCREEN_WIDTH_MIN,
   GEL_GROUP_4_SCREEN_WIDTH_MIN,
 } from '@bbc/gel-foundations/breakpoints';
@@ -36,8 +37,12 @@ const StyledListItem = styled.li`
 
 const StyledUnorderedList = styled.ul`
   list-style-type: none;
-  margin: 0;
+  margin: ${GEL_SPACING} 0 0 0;
   padding: 0;
+
+  @media (min-width: ${GEL_GROUP_2_SCREEN_WIDTH_MIN}) {
+    margin: ${GEL_SPACING_DBL} 0 0 0;
+  }
 `;
 
 export const StoryPromoUl = ({ children, ...props }) => (
