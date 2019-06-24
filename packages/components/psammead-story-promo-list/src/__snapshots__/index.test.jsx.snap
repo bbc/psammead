@@ -53,7 +53,7 @@ exports[`StoryPromo list should render correctly 1`] = `
 
 .c0 {
   list-style-type: none;
-  margin: 0;
+  margin: 0.5rem 0 0 0;
   padding: 0;
 }
 
@@ -143,6 +143,12 @@ exports[`StoryPromo list should render correctly 1`] = `
 @media (min-width:63rem) {
   .c1 {
     padding: 1.5rem 0 1.5rem;
+  }
+}
+
+@media (min-width:25rem) {
+  .c0 {
+    margin: 1rem 0 0 0;
   }
 }
 
