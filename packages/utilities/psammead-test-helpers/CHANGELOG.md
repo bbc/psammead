@@ -1,7 +1,9 @@
 # Psammead Test Helpers Changelog
 
+<!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 1.0.0   | [PR#???](https://github.com/bbc/psammead/pull/???) Bump version number |
 | 0.3.4   | [PR#424](https://github.com/bbc/psammead/pull/424) Add Snyk badge to readme |
 | 0.3.3   | [PR#323](https://github.com/BBC/psammead/pull/323) Update readme storybook badge |
 | 0.3.2   | [PR#264](https://github.com/BBC/psammead/pull/319) Resolving package-lock issues. |
