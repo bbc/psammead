@@ -27,6 +27,8 @@ const fontsExpectedExports = {
   F_REITH_SANS_EXTRA_BOLD_ITALIC: 'string',
   F_REITH_SANS_CONDENSED_REGULAR: 'string',
   F_REITH_SANS_CONDENSED_BOLD: 'string',
+  F_NASSIM_PERSIAN_REGULAR: 'string',
+  F_NASSIM_PERSIAN_BOLD: 'string',
 };
 
 const coloursExpectedExports = {
