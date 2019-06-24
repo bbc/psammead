@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 1.0.0  | [PR#???](https://github.com/bbc/psammead/pull/???) Bump version number |
 | 0.3.10  | [PR#585](https://github.com/bbc/psammead/pull/604) Remove nanoid package usage for generating list item keys |
 | 0.3.9   | [PR#585](https://github.com/bbc/psammead/pull/585) Make row count dynamic on number of columns and items |
 | 0.3.8   | [PR#576](https://github.com/bbc/psammead/pull/576) Display list in a single column under 240px |
