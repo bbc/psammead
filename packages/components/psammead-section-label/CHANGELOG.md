@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 1.0.0 | [PR#???](https://github.com/bbc/psammead/pull/???) Bump version number |
 | 0.1.1 | [PR#610](https://github.com/bbc/psammead/pull/610) Add visuallyHidden prop. |
 | 0.1.0 | [PR#616](https://github.com/BBC/psammead/pull/616) Remove alpha tag |
 | 0.1.0-alpha.1 | [PR#611](https://github.com/BBC/psammead/pull/611) Use border top for the horizontal bar |
