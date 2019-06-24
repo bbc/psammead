@@ -1,5 +1,4 @@
 import React, { Fragment } from 'react';
-import styled from 'styled-components';
 import { storiesOf } from '@storybook/react';
 import { withKnobs, text } from '@storybook/addon-knobs';
 import { inputProvider } from '@bbc/psammead-storybook-helpers';
@@ -47,12 +46,6 @@ const MediaIndicatorComponent = (
   />
 );
 
-const Padding = styled.div`
-  width: 100%;
-  height: 400px;
-  background-color: blue;
-`;
-
 const generateStory = ({ mediaIndicator, topStory }) =>
   inputProvider(
     [{ name: 'Headline' }, { name: 'Summary' }],
@@ -67,15 +60,12 @@ const generateStory = ({ mediaIndicator, topStory }) =>
       );
 
       return (
-        <Fragment>
-          <Padding />
-          <StoryPromo
-            image={Img}
-            info={Info}
-            mediaIndicator={mediaIndicator && MediaIndicatorComponent}
-            topStory={topStory}
-          />
-        </Fragment>
+        <StoryPromo
+          image={Img}
+          info={Info}
+          mediaIndicator={mediaIndicator && MediaIndicatorComponent}
+          topStory={topStory}
+        />
       );
     },
   );
