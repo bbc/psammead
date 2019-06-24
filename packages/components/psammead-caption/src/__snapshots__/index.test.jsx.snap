@@ -15,7 +15,6 @@ exports[`Caption should render with some offscreen text 1`] = `
 .c0 {
   font-size: 0.9375rem;
   line-height: 1.125rem;
-  color: #757575;
   font-family: ReithSans,Helvetica,Arial,sans-serif;
   font-style: italic;
   padding: 0.5rem 0.5rem 0;
@@ -88,7 +87,6 @@ exports[`Caption should render with some offscreen text and arabic script typogr
 .c0 {
   font-size: 1.0625rem;
   line-height: 1.5rem;
-  color: #757575;
   font-family: ReithSans,Helvetica,Arial,sans-serif;
   font-style: italic;
   padding: 0.5rem 0.5rem 0;

@@ -9,8 +9,7 @@ exports[`InlineLink should render correctly 1`] = `
 }
 
 .c0:visited {
-  color: #757575;
-  border-bottom: 1px solid #757575;
+  border-bottom: 1px solid;
 }
 
 .c0:focus {
