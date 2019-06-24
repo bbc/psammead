@@ -59,7 +59,7 @@ const inputs = () => {
 
   const svgChoice = select('Service SVG', options, 'Igbo').toLowerCase();
   const productInput = text('Product', 'BBC News');
-  const serviceLocalisedNameInput = text('Localised service name', 'Yoruba');
+  const serviceLocalisedNameInput = text('Localised service name', 'Igbo');
   const svgRatio = svgs[svgChoice].ratio;
   const svgMaxHeight = 24;
   const svgMinHeight = 16;
