@@ -3,7 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 | --------------------- |
-| 1.0.0  | [PR#???](https://github.com/bbc/psammead/pull/???) Bump version number |
+| 1.0.0  | [PR#679](https://github.com/bbc/psammead/pull/679) Bump version number |
 | 0.1.14  | [PR#498](https://github.com/bbc/psammead/pull/498) Update stories to use new input provider |
 | 0.1.13  | [PR#430](https://github.com/bbc/psammead/pull/430) Add text knobs to story |
 | 0.1.12  | [PR#424](https://github.com/bbc/psammead/pull/424) Add Snyk badge to readme |
