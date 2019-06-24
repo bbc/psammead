@@ -32,7 +32,6 @@ describe(`Publish Script - publish`, () => {
     jest.resetModules();
     console.log = jest.fn();
 
-    process.argv = process.argv.filter(v => !v.includes('--otp'));
     attempted = { success: [], failure: [] };
   });
 
@@ -97,21 +96,6 @@ describe(`Publish Script - publish`, () => {
     expect(slackNotification).toHaveBeenCalledWith(
       '@foo/psammead-foobar@0.1.2',
       false,
-    );
-  });
-
-  it('runs correct publish command when otp argument is set and publish is successful', () => {
-    const shelljs = getFailingShellJsMock();
-
-    process.argv.push('--otp=123456');
-
-    const publish = require('../src/publish');
-
-    publish('/foo/bar', packageJson, attempted);
-
-    expect(shelljs.exec).toHaveBeenCalledWith(
-      'npm publish /foo/bar --access public --tag latest --otp 123456',
-      { silent: true },
     );
   });
 });
