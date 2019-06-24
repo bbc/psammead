@@ -1,6 +1,6 @@
 {
   "name": "@bbc/psammead-media-indicator",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "main": "dist/index.js",
   "description": "Provides a play icon and media duration for media page promos",
   "repository": {
