@@ -16,7 +16,7 @@ const Reject = (
 );
 
 const Text = (
-  <ConsentBannerText>
+  <ConsentBannerText script={latin}>
     This is some text with <a href="https://www.bbc.com/news">a link</a> inside
     the consent banner. We have made some important changes to our Privacy and
     Cookie Policy.

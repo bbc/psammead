@@ -34,7 +34,7 @@ describe('ConsentBanner', () => {
 describe('ConsentBannerText', () => {
   shouldMatchSnapshot(
     'should correctly render',
-    <ConsentBannerText>
+    <ConsentBannerText script={latin}>
       We have made some important changes to our Privacy and Cookies Policy and
       we want you to know what this means for you and your data.
     </ConsentBannerText>,
