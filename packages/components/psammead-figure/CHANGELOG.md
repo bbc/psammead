@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 1.0.0  | [PR#???](https://github.com/bbc/psammead/pull/???) Bump version number |
 | 0.1.15  | [PR#491](https://github.com/bbc/psammead/pull/491) Updates Storybook to account for new styling on paragraph elements in captions |
 | 0.1.14  | [PR#498](https://github.com/bbc/psammead/pull/498) Update story to use new input provider |
 | 0.1.13  | [PR#430](https://github.com/bbc/psammead/pull/430) Add text knobs to story |
