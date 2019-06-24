@@ -11,7 +11,7 @@ const inputProvider = (slots, componentFunction) => () => {
   const service = LANGUAGE_VARIANTS[serviceName];
   const isNews = serviceName === 'news';
 
-  const inputs = (slots || []).map(({ name, defaultText }) =>
+  const slotTexts = (slots || []).map(({ name, defaultText }) =>
     text(
       `Content for ${name}`,
       // Expect defaultText to be in English. When it is provided and we're
@@ -30,7 +30,7 @@ const inputProvider = (slots, componentFunction) => () => {
   return (
     <Fragment>
       <Helmet htmlAttributes={{ dir }} />
-      {componentFunction({ inputs, script, dir, service: serviceName })}
+      {componentFunction({ slotTexts, script, dir, service: serviceName })}
     </Fragment>
   );
 };

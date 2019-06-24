@@ -60,7 +60,7 @@ describe('Psammead storybook helpers', () => {
       expect(renderFn).toHaveBeenCalledTimes(1);
       expect(renderFn).toHaveBeenCalledWith({
         dir: 'ltr',
-        inputs: [],
+        slotTexts: [],
         script: 'LATIN SCRIPT OBJECT',
         service: 'news',
       });
@@ -76,7 +76,7 @@ describe('Psammead storybook helpers', () => {
       expect(renderFn).toHaveBeenCalledTimes(1);
       expect(renderFn).toHaveBeenCalledWith({
         dir: 'ltr',
-        inputs: [],
+        slotTexts: [],
         script: 'LATIN SCRIPT OBJECT',
         service: 'news',
       });
@@ -84,7 +84,7 @@ describe('Psammead storybook helpers', () => {
       expect(text).toHaveBeenCalledTimes(0);
     });
 
-    describe('calls the render function with slot default text when displaying english', () => {
+    describe('calls the render function with slot default text when displaying news', () => {
       it('for a single slot', () => {
         select.mockReturnValueOnce('news');
         text.mockImplementation((_, displayText) => displayText);
@@ -96,7 +96,7 @@ describe('Psammead storybook helpers', () => {
 
         expect(renderFn).toHaveBeenCalledTimes(1);
         expect(renderFn).toHaveBeenCalledWith({
-          inputs: ['Sole input'],
+          slotTexts: ['Sole input'],
           script: 'LATIN SCRIPT OBJECT',
           dir: 'ltr',
           service: 'news',
@@ -120,7 +120,7 @@ describe('Psammead storybook helpers', () => {
 
         expect(renderFn).toHaveBeenCalledTimes(1);
         expect(renderFn).toHaveBeenCalledWith({
-          inputs: ['First input', 'Second input'],
+          slotTexts: ['First input', 'Second input'],
           script: 'LATIN SCRIPT OBJECT',
           dir: 'ltr',
           service: 'news',
@@ -139,7 +139,7 @@ describe('Psammead storybook helpers', () => {
 
       expect(renderFn).toHaveBeenCalledTimes(1);
       expect(renderFn).toHaveBeenCalledWith({
-        inputs: ['Could a computer ever create better art than a human?'],
+        slotTexts: ['Could a computer ever create better art than a human?'],
         script: 'LATIN SCRIPT OBJECT',
         dir: 'ltr',
         service: 'news',
@@ -149,7 +149,7 @@ describe('Psammead storybook helpers', () => {
       expect(text).toHaveBeenCalledTimes(1);
     });
 
-    it('defaults to language text for non-english languages', () => {
+    it('defaults to service text for non-news services', () => {
       select.mockReturnValueOnce('russian');
       text.mockImplementation((_, displayText) => displayText);
 
@@ -160,7 +160,7 @@ describe('Psammead storybook helpers', () => {
 
       expect(renderFn).toHaveBeenCalledTimes(1);
       expect(renderFn).toHaveBeenCalledWith({
-        inputs: [
+        slotTexts: [
           'Мнение Назарбаева будет иметь приоритетное значение при принятии важных для страны решений, сказал Токаев',
         ],
         script: 'CYRILLIC SCRIPT OBJECT',
@@ -178,7 +178,7 @@ describe('Psammead storybook helpers', () => {
 
         expect(renderFn).toHaveBeenCalledTimes(1);
         expect(renderFn).toHaveBeenCalledWith({
-          inputs: [],
+          slotTexts: [],
           script: 'CYRILLIC SCRIPT OBJECT',
           dir: 'ltr',
           service: 'russian',
@@ -193,7 +193,7 @@ describe('Psammead storybook helpers', () => {
 
         expect(renderFn).toHaveBeenCalledTimes(1);
         expect(renderFn).toHaveBeenCalledWith({
-          inputs: [],
+          slotTexts: [],
           script: 'ARABIC SCRIPT OBJECT',
           dir: 'rtl',
           service: 'arabic',
