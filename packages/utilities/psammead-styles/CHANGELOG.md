@@ -4,6 +4,7 @@
 | Version | Description |
 |---------|-------------|
 | 1.0.0   | [PR#679](https://github.com/bbc/psammead/pull/679) Bump version number |
+| 0.6.0   | [PR#676](https://github.com/bbc/psammead/pull/676) Add Nassim Persian fonts v1.511 |
 | 0.5.0   | [PR#573](https://github.com/bbc/psammead/pull/573) Add functions to get font styles for different services |
 | 0.4.1   | [PR#547](https://github.com/bbc/psammead/pull/547) Create story for gel-foundations typographies |
 | 0.4.0   | [PR#548](https://github.com/bbc/psammead/pull/548) Bump the reith font version from 2.302 to 2.511 |
