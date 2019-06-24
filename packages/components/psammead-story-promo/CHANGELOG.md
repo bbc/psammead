@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 | ------- | ----------- |
+| 1.0.0-alpha.1 | [PR#XXX](https://github.com/bbc/psammead/pull/XXX) Fix floating media indicator and promo link bugs  |
 | 1.0.0-alpha.0 | [PR#679](https://github.com/bbc/psammead/pull/679) Bump version number |
 | 0.2.0-alpha.9 | [PR#663](https://github.com/bbc/psammead/pull/663) Add assertion tests |
 | 0.2.0-alpha.8 | [PR#578](https://github.com/bbc/psammead/pull/578) Add Top Story promo design |

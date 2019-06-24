@@ -36,9 +36,7 @@ const eightOfTwelveColumnsMaxScaleable = `66.67%`;
 // (8 / 12) * 100 = 66.6666666667 = 66.67%
 
 const StoryPromoWrapper = styled.div`
-  @media (min-width: ${GEL_GROUP_2_SCREEN_WIDTH_MIN}) {
-    position: relative;
-  }
+  position: relative;
 
   @supports (display: grid) {
     display: grid;
@@ -107,6 +105,10 @@ const ImageGridItem = styled.div`
     ${({ topStory }) =>
       topStory ? ImageGridColumnsTopStory : ImageGridColumns}
   }
+`;
+
+const ImageContentsWrap = styled.div`
+  display: relative;
 `;
 
 const InlineMediaIndicator = styled.div`
@@ -246,12 +248,14 @@ export const Link = styled.a`
 const StoryPromo = ({ image, info, mediaIndicator, topStory }) => (
   <StoryPromoWrapper>
     <ImageGridItem topStory={topStory}>
-      {image}
-      {mediaIndicator && (
-        <InlineMediaIndicator topStory={topStory}>
-          {mediaIndicator}
-        </InlineMediaIndicator>
-      )}
+      <ImageContentsWrap>
+        {image}
+        {mediaIndicator && (
+          <InlineMediaIndicator topStory={topStory}>
+            {mediaIndicator}
+          </InlineMediaIndicator>
+        )}
+      </ImageContentsWrap>
     </ImageGridItem>
     <TextGridItem topStory={topStory}>{info}</TextGridItem>
   </StoryPromoWrapper>
