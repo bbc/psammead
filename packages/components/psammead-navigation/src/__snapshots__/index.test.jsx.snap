@@ -94,7 +94,7 @@ exports[`Navigation should render correctly 1`] = `
   border-bottom: 0.3125rem solid #FFFFFF;
 }
 
-.c4:hover::after:focus::after {
+.c4:focus::after {
   content: '';
   position: absolute;
   left: 0;
@@ -126,7 +126,7 @@ exports[`Navigation should render correctly 1`] = `
   border-bottom: 0.25rem solid #FFFFFF;
 }
 
-.c7:hover::after:focus::after {
+.c7:focus::after {
   content: '';
   position: absolute;
   left: 0;
