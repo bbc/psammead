@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 1.0.1  | [PR#677](https://github.com/bbc/psammead/pull/677) Use `@bbc/gel-foundations@3.0.0` |
 | 1.0.0  | [PR#679](https://github.com/bbc/psammead/pull/679) Bump version number |
 | 0.1.15  | [PR#491](https://github.com/bbc/psammead/pull/491) Updates Storybook to account for new styling on paragraph elements in captions |
 | 0.1.14  | [PR#498](https://github.com/bbc/psammead/pull/498) Update story to use new input provider |
