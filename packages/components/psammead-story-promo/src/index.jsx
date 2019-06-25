@@ -85,6 +85,7 @@ const ImageGridFallbackTopStory = css`
 `;
 
 const ImageGridFallback = css`
+  width: ${twoOfSixColumnsMaxWidthScaleable};
   max-width: ${twoOfSixColumnsMaxWidthScaleable};
 `;
 
