@@ -45,7 +45,6 @@ const coloursExpectedExports = {
   C_CHALK: 'string',
   C_ORBIT_GREY: 'string',
   C_SHADOW: 'string',
-  C_CLOUD_DARK: 'string',
   C_CLOUD_LIGHT: 'string',
   C_LUNAR: 'string',
   C_GHOST: 'string',
