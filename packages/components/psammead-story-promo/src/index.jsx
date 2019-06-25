@@ -1,6 +1,6 @@
 import React from 'react';
-import styled from 'styled-components';
-import { node } from 'prop-types';
+import styled, { css } from 'styled-components';
+import { node, bool } from 'prop-types';
 import {
   GEL_SPACING,
   GEL_SPACING_DBL,
@@ -14,7 +14,9 @@ import {
   GEL_GROUP_5_SCREEN_WIDTH_MIN,
 } from '@bbc/gel-foundations/breakpoints';
 import {
+  getPica,
   getGreatPrimer,
+  getParagon,
   getLongPrimer,
   GEL_FF_REITH_SERIF,
   GEL_FF_REITH_SANS,
@@ -53,11 +55,46 @@ const StoryPromoWrapper = styled.div`
   }
 `;
 
+const ImageGridColumnsTopStory = css`
+  grid-column: 1 / span 6;
+
+  @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
+    grid-column: 1 / span 2;
+  }
+
+  @media (min-width: ${GEL_GROUP_5_SCREEN_WIDTH_MIN}) {
+    grid-column: 1 / span 4;
+  }
+`;
+
+const ImageGridColumns = css`
+  grid-column: 1 / span 2;
+
+  @media (min-width: ${GEL_GROUP_5_SCREEN_WIDTH_MIN}) {
+    grid-column: 1 / span 4;
+  }
+`;
+
+const ImageGridFallbackTopStory = css`
+  margin-bottom: ${GEL_GUTTER_BELOW_600PX};
+
+  @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
+    max-width: ${twoOfSixColumnsMaxWidthScaleable};
+    margin-bottom: none;
+  }
+`;
+
+const ImageGridFallback = css`
+  max-width: ${twoOfSixColumnsMaxWidthScaleable};
+`;
+
 const ImageGridItem = styled.div`
   display: inline-block;
   vertical-align: top;
-  max-width: ${twoOfSixColumnsMaxWidthScaleable};
   position: relative;
+
+  ${({ topStory }) =>
+    topStory ? ImageGridFallbackTopStory : ImageGridFallback}
 
   @media (min-width: ${GEL_GROUP_5_SCREEN_WIDTH_MIN}) {
     max-width: ${fourOfTwelveColumnsMaxWidthScaleable};
@@ -66,19 +103,101 @@ const ImageGridItem = styled.div`
   @supports (display: grid) {
     display: block;
     max-width: initial;
-    grid-column: 1 / span 2;
 
-    @media (min-width: ${GEL_GROUP_5_SCREEN_WIDTH_MIN}) {
-      grid-column: 1 / span 4;
-    }
+    ${({ topStory }) =>
+      topStory ? ImageGridColumnsTopStory : ImageGridColumns}
   }
+`;
+
+const InlineMediaIndicator = styled.div`
+  ${({ topStory }) =>
+    topStory
+      ? `
+      position: absolute;
+      bottom: 0;
+      `
+      : `
+      @media (min-width: ${GEL_GROUP_2_SCREEN_WIDTH_MIN}) {
+        position: absolute;
+        bottom: 0;
+      }
+      `}
+`;
+
+export const Headline = styled.h3`
+  ${props => (props.script ? getPica(props.script) : '')};
+
+  ${({ script, topStory }) => {
+    if (!script) {
+      return '';
+    }
+
+    return topStory ? getParagon(script) : getPica(script);
+  }};
+
+  color: ${C_EBON};
+  font-family: ${GEL_FF_REITH_SERIF};
+  margin: 0; /* Reset */
+  padding-bottom: ${GEL_SPACING};
+  font-weight: 700;
+  @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
+    ${props => (props.script ? getGreatPrimer(props.script) : '')};
+  }
+`;
+
+export const Summary = styled.p`
+  ${props => (props.script ? getLongPrimer(props.script) : '')};
+  color: ${C_SHADOW};
+  font-family: ${GEL_FF_REITH_SANS};
+  margin: 0; /* Reset */
+  padding-bottom: ${GEL_SPACING};
+
+  ${({ topStory }) =>
+    !topStory &&
+    css`
+      @media (max-width: ${GEL_GROUP_2_SCREEN_WIDTH_MAX}) {
+        display: none;
+        visibility: hidden;
+      }
+    `}
+`;
+
+const TextGridColumnsTopStory = css`
+  grid-column: 1 / span 6;
+
+  @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
+    grid-column: 3 / span 4;
+  }
+
+  @media (min-width: ${GEL_GROUP_5_SCREEN_WIDTH_MIN}) {
+    grid-column: 5 / span 8;
+  }
+`;
+
+const TextGridColumns = css`
+  grid-column: 3 / span 4;
+
+  @media (min-width: ${GEL_GROUP_5_SCREEN_WIDTH_MIN}) {
+    grid-column: 5 / span 8;
+  }
+`;
+
+const TextGridFallbackTopStory = css`
+  @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
+    max-width: ${fourOfSixColumnsMaxWidthScaleable};
+  }
+`;
+
+const TextGridFallback = css`
+  max-width: ${fourOfSixColumnsMaxWidthScaleable};
+  padding: 0 ${GEL_SPACING};
 `;
 
 const TextGridItem = styled.div`
   display: inline-block;
   vertical-align: top;
-  padding: 0 ${GEL_SPACING};
-  max-width: ${fourOfSixColumnsMaxWidthScaleable};
+
+  ${({ topStory }) => (topStory ? TextGridFallbackTopStory : TextGridFallback)}
 
   @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
     padding: 0 ${GEL_SPACING_DBL};
@@ -92,39 +211,8 @@ const TextGridItem = styled.div`
     display: block;
     max-width: initial;
     padding: initial;
-    grid-column: 3 / span 4;
 
-    @media (min-width: ${GEL_GROUP_5_SCREEN_WIDTH_MIN}) {
-      grid-column: 5 / span 8;
-    }
-  }
-`;
-
-const InlineMediaIndicator = styled.div`
-  @media (min-width: ${GEL_GROUP_2_SCREEN_WIDTH_MIN}) {
-    position: absolute;
-    bottom: 0;
-  }
-`;
-
-export const Headline = styled.h3`
-  ${props => (props.script ? getGreatPrimer(props.script) : '')};
-  color: ${C_EBON};
-  font-family: ${GEL_FF_REITH_SERIF};
-  margin: 0; /* Reset */
-  padding-bottom: ${GEL_SPACING};
-  font-weight: 700;
-`;
-
-export const Summary = styled.p`
-  ${props => (props.script ? getLongPrimer(props.script) : '')};
-  color: ${C_SHADOW};
-  font-family: ${GEL_FF_REITH_SANS};
-  margin: 0; /* Reset */
-  padding-bottom: ${GEL_SPACING};
-  @media (max-width: ${GEL_GROUP_2_SCREEN_WIDTH_MAX}) {
-    display: none;
-    visibility: hidden;
+    ${({ topStory }) => (topStory ? TextGridColumnsTopStory : TextGridColumns)}
   }
 `;
 
@@ -155,15 +243,17 @@ export const Link = styled.a`
   }
 `;
 
-const StoryPromo = ({ image, info, mediaIndicator }) => (
+const StoryPromo = ({ image, info, mediaIndicator, topStory }) => (
   <StoryPromoWrapper>
-    <ImageGridItem>
+    <ImageGridItem topStory={topStory}>
       {image}
       {mediaIndicator && (
-        <InlineMediaIndicator>{mediaIndicator}</InlineMediaIndicator>
+        <InlineMediaIndicator topStory={topStory}>
+          {mediaIndicator}
+        </InlineMediaIndicator>
       )}
     </ImageGridItem>
-    <TextGridItem>{info}</TextGridItem>
+    <TextGridItem topStory={topStory}>{info}</TextGridItem>
   </StoryPromoWrapper>
 );
 
@@ -171,10 +261,12 @@ StoryPromo.propTypes = {
   image: node.isRequired,
   info: node.isRequired,
   mediaIndicator: node,
+  topStory: bool,
 };
 
 StoryPromo.defaultProps = {
   mediaIndicator: null,
+  topStory: false,
 };
 
 export default StoryPromo;

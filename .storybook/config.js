@@ -1,6 +1,7 @@
 import React, { Fragment } from 'react';
 import { configure, addDecorator, addParameters } from '@storybook/react';
 import { create } from '@storybook/theming';
+import { withA11y } from '@storybook/addon-a11y';
 import styledNormalize from 'styled-normalize';
 import { createGlobalStyle } from 'styled-components';
 import {
@@ -31,6 +32,15 @@ addParameters({
     sidebarAnimations: true,
     theme,
   },
+  a11y: {
+    options: {
+      runOnly: {
+        type: "tag",
+        values: ["wcag2a", "wcag2aa", "wcag21aa"]
+      },
+      iframes: true,
+    }
+  }
 });
 
 const GlobalStyle = createGlobalStyle`
@@ -76,6 +86,7 @@ export const ampDecorator = story => (
 
 function loadAllStories() {
   require('glob-loader!./stories.pattern');
+  addDecorator(withA11y);
 }
 
 configure(loadAllStories, module);

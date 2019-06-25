@@ -3,8 +3,8 @@
 exports[`Timestamp should add prefix and suffix 1`] = `
 .c0 {
   font-size: 0.875rem;
-  line-height: 1rem;
-  color: #757575;
+  line-height: 1.125rem;
+  color: #6E6E73;
   display: block;
   font-family: ReithSans,Helvetica,Arial,sans-serif;
   padding-bottom: 0.25rem;
@@ -33,7 +33,7 @@ exports[`Timestamp should add prefix and suffix 1`] = `
   dateTime="2018-10-19"
 >
   Prefix here  
-  19 October 2018
+  ۱۹ اکتبر ۲۰۱۸
     suffix here
 </time>
 `;
@@ -43,8 +43,8 @@ exports[`Timestamp should handle invalid date 1`] = `null`;
 exports[`Timestamp should render correctly 1`] = `
 .c0 {
   font-size: 0.875rem;
-  line-height: 1rem;
-  color: #757575;
+  line-height: 1.125rem;
+  color: #6E6E73;
   display: block;
   font-family: ReithSans,Helvetica,Arial,sans-serif;
   padding-bottom: 0.25rem;
@@ -72,15 +72,15 @@ exports[`Timestamp should render correctly 1`] = `
   className="c0"
   dateTime="2018-10-19"
 >
-  19 October 2018
+  ۱۹ اکتبر ۲۰۱۸
 </time>
 `;
 
 exports[`Timestamp should render without a leading zero on the day 1`] = `
 .c0 {
   font-size: 0.875rem;
-  line-height: 1rem;
-  color: #757575;
+  line-height: 1.125rem;
+  color: #6E6E73;
   display: block;
   font-family: ReithSans,Helvetica,Arial,sans-serif;
   padding-bottom: 0.25rem;
@@ -108,6 +108,6 @@ exports[`Timestamp should render without a leading zero on the day 1`] = `
   className="c0"
   dateTime="2018-07-07"
 >
-  7 July 2018
+  ۷ ژوئیه ۲۰۱۸
 </time>
 `;

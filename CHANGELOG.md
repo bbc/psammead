@@ -3,6 +3,11 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 1.2.1  | [PR#669](https://github.com/bbc/psammead/pull/641) Upgrade many npm dependencies then update snapshots |
+| 1.2.0   | [PR#663](https://github.com/bbc/psammead/pull/663) Add `@testing-library/react` as a dev dependancy |
+| 1.1.10  | [PR#630](https://github.com/BBC/psammead/pull/630) Change storybook port to 8180 |
+| 1.1.9   | [PR#641](https://github.com/bbc/psammead/pull/641) Upgrade to Node 10.16.0 |
+| 1.1.8   | [PR#631](https://github.com/BBC/psammead/pull/631) Update Storybook version and other dependencies |
 | 1.1.7   | [PR#536](https://github.com/BBC/psammead/pull/536) Add viewport addon |
 | 1.1.6   | [PR#514](https://github.com/BBC/psammead/pull/514) Upgrade to Node 10 |
 | 1.1.5   | [PR#484](https://github.com/BBC/psammead/pull/484) Add default labels to GitHub issue templates |

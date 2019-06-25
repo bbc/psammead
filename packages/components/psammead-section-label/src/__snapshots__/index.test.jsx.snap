@@ -1,5 +1,76 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`SectionLabel When hideSectionHeader is true should add styling to hide SectionLabel when width of screen is less than 600 px 1`] = `
+.c0 {
+  position: relative;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.c1 {
+  font-size: 1.125rem;
+  line-height: 1.375rem;
+  color: #222222;
+  background-color: #FFFFFF;
+  font-family: ReithSans,Helvetica,Arial,sans-serif;
+  font-weight: normal;
+  display: inline-block;
+  position: relative;
+  margin: 0;
+  padding-right: 0.5rem;
+}
+
+@media (min-width:37.5rem) {
+  .c0 {
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+  }
+}
+
+@media (max-width:37.4375rem) {
+  .c0 {
+    -webkit-clip-path: inset(100%);
+    clip-path: inset(100%);
+    -webkit-clip: rect(1px,1px,1px,1px);
+    clip: rect(1px,1px,1px,1px);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    width: 1px;
+  }
+}
+
+@media (min-width:20rem) and (max-width:37.4375rem) {
+  .c1 {
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .c1 {
+    font-size: 1.5rem;
+    line-height: 1.75rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .c1 {
+    padding-right: 1rem;
+  }
+}
+
+<div
+  className="c0"
+>
+  <h2
+    className="c1"
+    dir="ltr"
+    id="test-section-label"
+  />
+</div>
+`;
+
 exports[`SectionLabel With bar With title should render correctly 1`] = `
 .c0 {
   position: relative;
@@ -10,17 +81,15 @@ exports[`SectionLabel With bar With title should render correctly 1`] = `
 .c0::before {
   content: '';
   position: absolute;
-  height: 0.0625rem;
-  border: none;
-  background: #AEAEB5;
+  border-top: 0.0625rem solid #AEAEB5;
   left: 0;
   right: 0;
-  top: 0.75rem;
+  top: 0.6875rem;
 }
 
 .c1 {
-  font-size: 1.25rem;
-  line-height: 1.5rem;
+  font-size: 1.125rem;
+  line-height: 1.375rem;
   color: #222222;
   background-color: #FFFFFF;
   font-family: ReithSans,Helvetica,Arial,sans-serif;
@@ -47,6 +116,12 @@ exports[`SectionLabel With bar With title should render correctly 1`] = `
 @media (min-width:37.5rem) {
   .c0::before {
     top: 0.875rem;
+  }
+}
+
+@media screen and (-ms-high-contrast:active) {
+  .c0::before {
+    border-color: windowText;
   }
 }
 
@@ -93,9 +168,7 @@ exports[`SectionLabel With bar With title should render correctly with arabic sc
 .c0::before {
   content: '';
   position: absolute;
-  height: 0.0625rem;
-  border: none;
-  background: #AEAEB5;
+  border-top: 0.0625rem solid #AEAEB5;
   left: 0;
   right: 0;
   top: 1rem;
@@ -123,27 +196,33 @@ exports[`SectionLabel With bar With title should render correctly with arabic sc
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
   .c0::before {
-    top: 0.875rem;
+    top: 1.125rem;
   }
 }
 
 @media (min-width:37.5rem) {
   .c0::before {
-    top: 0.875rem;
+    top: 1.125rem;
+  }
+}
+
+@media screen and (-ms-high-contrast:active) {
+  .c0::before {
+    border-color: windowText;
   }
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
   .c1 {
-    font-size: 1.5rem;
-    line-height: 1.75rem;
+    font-size: 1.625rem;
+    line-height: 2.25rem;
   }
 }
 
 @media (min-width:37.5rem) {
   .c1 {
-    font-size: 1.5rem;
-    line-height: 1.75rem;
+    font-size: 1.75rem;
+    line-height: 2.25rem;
   }
 }
 
@@ -176,17 +255,15 @@ exports[`SectionLabel With bar With title should render correctly with explicit 
 .c0::before {
   content: '';
   position: absolute;
-  height: 0.0625rem;
-  border: none;
-  background: #AEAEB5;
+  border-top: 0.0625rem solid #AEAEB5;
   left: 0;
   right: 0;
-  top: 0.75rem;
+  top: 0.6875rem;
 }
 
 .c1 {
-  font-size: 1.25rem;
-  line-height: 1.5rem;
+  font-size: 1.125rem;
+  line-height: 1.375rem;
   color: #222222;
   background-color: #FFFFFF;
   font-family: ReithSans,Helvetica,Arial,sans-serif;
@@ -213,6 +290,12 @@ exports[`SectionLabel With bar With title should render correctly with explicit 
 @media (min-width:37.5rem) {
   .c0::before {
     top: 0.875rem;
+  }
+}
+
+@media screen and (-ms-high-contrast:active) {
+  .c0::before {
+    border-color: windowText;
   }
 }
 
@@ -259,17 +342,15 @@ exports[`SectionLabel With bar With title should render correctly with explicitl
 .c0::before {
   content: '';
   position: absolute;
-  height: 0.0625rem;
-  border: none;
-  background: #AEAEB5;
+  border-top: 0.0625rem solid #AEAEB5;
   left: 0;
   right: 0;
-  top: 0.75rem;
+  top: 0.6875rem;
 }
 
 .c1 {
-  font-size: 1.25rem;
-  line-height: 1.5rem;
+  font-size: 1.125rem;
+  line-height: 1.375rem;
   color: #222222;
   background-color: #FFFFFF;
   font-family: ReithSans,Helvetica,Arial,sans-serif;
@@ -296,6 +377,12 @@ exports[`SectionLabel With bar With title should render correctly with explicitl
 @media (min-width:37.5rem) {
   .c0::before {
     top: 0.875rem;
+  }
+}
+
+@media screen and (-ms-high-contrast:active) {
+  .c0::before {
+    border-color: windowText;
   }
 }
 
@@ -340,8 +427,8 @@ exports[`SectionLabel Without bar With title should render correctly 1`] = `
 }
 
 .c1 {
-  font-size: 1.25rem;
-  line-height: 1.5rem;
+  font-size: 1.125rem;
+  line-height: 1.375rem;
   color: #222222;
   background-color: #FFFFFF;
   font-family: ReithSans,Helvetica,Arial,sans-serif;
@@ -421,15 +508,15 @@ exports[`SectionLabel Without bar With title should render correctly with arabic
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
   .c1 {
-    font-size: 1.5rem;
-    line-height: 1.75rem;
+    font-size: 1.625rem;
+    line-height: 2.25rem;
   }
 }
 
 @media (min-width:37.5rem) {
   .c1 {
-    font-size: 1.5rem;
-    line-height: 1.75rem;
+    font-size: 1.75rem;
+    line-height: 2.25rem;
   }
 }
 
@@ -460,8 +547,8 @@ exports[`SectionLabel Without bar With title should render correctly with explic
 }
 
 .c1 {
-  font-size: 1.25rem;
-  line-height: 1.5rem;
+  font-size: 1.125rem;
+  line-height: 1.375rem;
   color: #222222;
   background-color: #FFFFFF;
   font-family: ReithSans,Helvetica,Arial,sans-serif;

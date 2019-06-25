@@ -14,7 +14,7 @@ const Info = (
   </Fragment>
 );
 
-describe('StoryPromo', () => {
+describe('StoryPromo list', () => {
   shouldMatchSnapshot(
     'should render correctly',
     <StoryPromoUl>
