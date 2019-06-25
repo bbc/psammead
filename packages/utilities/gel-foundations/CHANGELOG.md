@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 3.1.0 | [PR#XXX](https://github.com/bbc/psammead/pull/XXX) Update README `rem` doc link |
 | 3.0.0 | [PR#586](https://github.com/bbc/psammead/pull/586) Update GEL Types values |
 | 2.0.0 | [PR#517](https://github.com/bbc/psammead/pull/517) Remove unused GEL Types |
 | 1.2.0 | [PR#431](https://github.com/bbc/psammead/pull/431) Add custom scripts propTypes |

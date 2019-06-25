@@ -41,7 +41,7 @@ const SomeStyledComponent = css`
 
 To allow the typography to be fully accessible and responsive, please note that you should apply a default font-size to the document root (e.g. `html { font-size: 100% }`).
 
-Our typography uses `rem` for font-size and line-height. `rem` is relative to the document root, so we use that for font-size and line-height and spacing for a consistent look-and-feel across the document. You can read our [detailed analysis of "REMs vs EMs for spacing"](https://github.com/bbc/simorgh/blob/latest/docs/Spacing-Units.md) for more information.
+Our typography uses `rem` for font-size and line-height. The `rem` unit represents a size relative to the document root, so we use that for font-size, line-height and spacing for a consistent look-and-feel across the document. You can read our [detailed analysis of "REMs vs EMs for spacing"](hhttps://github.com/bbc/psammead/tree/latest/documentation/Spacing-Units.md) for more information.
 
 ### Script support
 
@@ -51,6 +51,7 @@ You can import the script doing `import { arabic } from '@bbc/gel-foundations/sc
 
 In addition to Latin script defaults, Psammead supports typography for a number of other scripts. We have grouped the scripts that share similiar features as follows:
 
+<!-- prettier-ignore -->
 | Group Name                  | Services |             Rationale       |
 | --------------------------- | -------- | --------------------------- | 
 | latin-and-cyrillic          | News, Hausa, Gahuza, Somali, Swahili, Igbo, Pidgin, Afaan Oromo, Yoruba, Azeri, Indonesia, Uzbek, Serbian, Russian, Ukrainian, Kyrgyz, Uzbek | The typography values for Latin and Cyrillic characters are identical |
@@ -63,7 +64,7 @@ In addition to Latin script defaults, Psammead supports typography for a number 
 | bengali                     | Bengali  | Bespoke to the Bengal characters     | 
 | burmese                     | Burmese  | Bespoke to the Burmese characters    | 
 | sinhalese                   | Sinhala  | Bespoke to the Sinhalese characters  | 
-| tamil                       | Tamil    | Bespoke to the Tamil characters      | 
+| tamil                       | Tamil    | Bespoke to the Tamil characters      |
 
 ## Contributing
 
