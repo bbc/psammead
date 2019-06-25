@@ -3,6 +3,7 @@
 <! -- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 0.3.9 | [PR#687](https://github.com/bbc/psammead/pull/687) Change visited text colour to `C_CLOUD_DARK` for `C_METAL` |
 | 0.3.8 | [PR#498](https://github.com/bbc/psammead/pull/498) Update stories to use new input provider |
 | 0.3.7 | [PR#424](https://github.com/bbc/psammead/pull/424) Add Snyk badge to readme |
 | 0.3.6 | [PR#419](https://github.com/bbc/psammead/pull/419) Add language variants knob to Inline Link stories |
