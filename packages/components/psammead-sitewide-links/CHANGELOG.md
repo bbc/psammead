@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 1.0.1   | [PR#677](https://github.com/bbc/psammead/pull/677) Use `@bbc/gel-foundations@3.0.0` |
 | 1.0.0  | [PR#679](https://github.com/bbc/psammead/pull/679) Bump version number |
 | 0.3.10  | [PR#585](https://github.com/bbc/psammead/pull/604) Remove nanoid package usage for generating list item keys |
 | 0.3.9   | [PR#585](https://github.com/bbc/psammead/pull/585) Make row count dynamic on number of columns and items |

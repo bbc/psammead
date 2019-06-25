@@ -3,7 +3,8 @@
 <!-- prettier-ignore -->
 | Version | Description |
 | ------- | ----------- |
-| 1.0.0-alpha.1 | [PR#694](https://github.com/bbc/psammead/pull/694) Fix floating media indicator and promo link bugs  |
+| 1.0.0-alpha.2 | [PR#694](https://github.com/bbc/psammead/pull/694) Fix floating media indicator and promo link bugs  |
+| 1.0.0-alpha.1 | [PR#677](https://github.com/bbc/psammead/pull/677) Use `@bbc/gel-foundations@3.0.0` |
 | 1.0.0-alpha.0 | [PR#679](https://github.com/bbc/psammead/pull/679) Bump version number |
 | 0.2.0-alpha.9 | [PR#663](https://github.com/bbc/psammead/pull/663) Add assertion tests |
 | 0.2.0-alpha.8 | [PR#578](https://github.com/bbc/psammead/pull/578) Add Top Story promo design |
