@@ -21,7 +21,7 @@ exports[`SitewideLinks should render correctly 1`] = `
 
 .c4:hover .c6,
 .c4:focus .c6 {
-  padding-bottom: 2px;
+  padding-bottom: 1px;
   border-bottom: 2px solid #FFFFFF;
 }
 
