@@ -3,7 +3,8 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
-| 1.1.6 | [PR#687](https://github.com/bbc/psammead/pull/687) Change text colour to `C_CLOUD_DARK` for `C_METAL` |
+| 1.1.7 | [PR#687](https://github.com/bbc/psammead/pull/687) Change text colour to `C_CLOUD_DARK` for `C_METAL` |
+| 1.1.6 | [PR#677](https://github.com/bbc/psammead/pull/677) Use `@bbc/gel-foundations@3.0.0` |
 | 1.1.5 | [PR#524](https://github.com/bbc/psammead/pull/524) Add spacing for nested paragraph |
 | 1.1.4 | [PR#515](https://github.com/bbc/psammead/pull/515) Update story to use dirDecorator |
 | 1.1.3 | [PR#491](https://github.com/bbc/psammead/pull/491) Remove bottom padding from paragraphs within Caption |

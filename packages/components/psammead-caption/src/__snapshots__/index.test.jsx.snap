@@ -115,8 +115,8 @@ exports[`Caption should render with some offscreen text and arabic script typogr
 
 @media (min-width:37.5rem) {
   .c0 {
-    font-size: 1.25rem;
-    line-height: 1.625rem;
+    font-size: 1.125rem;
+    line-height: 1.5rem;
   }
 }
 
