@@ -1,6 +1,6 @@
 {
   "name": "@bbc/gel-foundations",
-  "version": "3.1.0",
+  "version": "3.0.1",
   "description": "A range of string constants for use in CSS, intended to help implement BBC GEL-compliant webpages and components.",
   "repository": {
     "type": "git",
