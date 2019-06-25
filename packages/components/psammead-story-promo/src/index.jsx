@@ -107,7 +107,7 @@ const ImageGridItem = styled.div`
   }
 `;
 
-const ImageContentsWrap = styled.div`
+const ImageContentsWrapper = styled.div`
   position: relative;
 `;
 
@@ -248,14 +248,14 @@ export const Link = styled.a`
 const StoryPromo = ({ image, info, mediaIndicator, topStory }) => (
   <StoryPromoWrapper>
     <ImageGridItem topStory={topStory}>
-      <ImageContentsWrap>
+      <ImageContentsWrapper>
         {image}
         {mediaIndicator && (
           <InlineMediaIndicator topStory={topStory}>
             {mediaIndicator}
           </InlineMediaIndicator>
         )}
-      </ImageContentsWrap>
+      </ImageContentsWrapper>
     </ImageGridItem>
     <TextGridItem topStory={topStory}>{info}</TextGridItem>
   </StoryPromoWrapper>
