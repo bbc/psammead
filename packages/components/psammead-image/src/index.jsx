@@ -25,8 +25,8 @@ const StyledImg = styled.img`
   ${props => props.fade && fadeIn};
 `;
 
-export const Img = ({ alt, fade, src, srcset, height, width }) => {
-  const props = { alt, fade, src, height, width };
+export const Img = ({ alt, fade, height, sizes, src, srcset, width }) => {
+  const props = { alt, fade, height, sizes, src, width };
 
   if (srcset) {
     props.srcSet = srcset;
@@ -38,15 +38,17 @@ export const Img = ({ alt, fade, src, srcset, height, width }) => {
 Img.propTypes = {
   alt: string.isRequired,
   fade: bool,
+  height: oneOfType([string, number]),
+  sizes: string,
   src: string.isRequired,
   srcset: string,
-  height: oneOfType([string, number]),
   width: oneOfType([string, number]),
 };
 
 Img.defaultProps = {
   fade: false,
   height: null,
+  sizes: null,
   srcset: null,
   width: null,
 };

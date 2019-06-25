@@ -1,13 +1,23 @@
 import React from 'react';
 import { number, string } from 'prop-types';
 
-const AmpImg = ({ alt, attribution, layout, src, srcset, height, width }) => {
+const AmpImg = ({
+  alt,
+  attribution,
+  height,
+  layout,
+  sizes,
+  src,
+  srcset,
+  width,
+}) => {
   const props = {
     alt,
     attribution,
-    layout,
-    src,
     height,
+    layout,
+    sizes,
+    src,
     width,
   };
 
@@ -21,15 +31,17 @@ const AmpImg = ({ alt, attribution, layout, src, srcset, height, width }) => {
 AmpImg.propTypes = {
   alt: string.isRequired,
   attribution: string,
+  height: number.isRequired,
   layout: string.isRequired,
+  sizes: string,
   src: string.isRequired,
   srcset: string,
-  height: number.isRequired,
   width: number.isRequired,
 };
 
 AmpImg.defaultProps = {
   attribution: '',
+  sizes: null,
   srcset: null,
 };
 
