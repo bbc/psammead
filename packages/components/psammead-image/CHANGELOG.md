@@ -3,7 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
-| 1.0.1   | [PR#XXX](https://github.com/bbc/psammead/pull/XXX) Add support for sizes prop in both Img & AmpImg |
+| 1.0.1   | [PR#703](https://github.com/bbc/psammead/pull/703) Add support for sizes prop in both Img & AmpImg |
 | 1.0.0   | [PR#679](https://github.com/bbc/psammead/pull/679) Bump version number |
 | 0.4.0   | [PR#618](https://github.com/bbc/psammead/pull/618) Option to fade images in. Added optional fade prop. |
 | 0.3.6   | [PR#492](https://github.com/bbc/psammead/pull/492) Make img width prop optional |
