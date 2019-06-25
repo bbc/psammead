@@ -526,6 +526,7 @@ exports[`StoryPromo should render correctly 1`] = `
   display: inline-block;
   vertical-align: top;
   position: relative;
+  width: 33.33%;
   max-width: 33.33%;
 }
 
@@ -783,6 +784,7 @@ exports[`StoryPromo with Media Indicator should render correctly 1`] = `
   display: inline-block;
   vertical-align: top;
   position: relative;
+  width: 33.33%;
   max-width: 33.33%;
 }
 
