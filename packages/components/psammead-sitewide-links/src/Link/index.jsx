@@ -15,7 +15,7 @@ const StyledLink = styled.a`
 const StyleLinkText = styled.span`
   ${/* sc-selector */ StyledLink}:hover &,
   ${/* sc-selector */ StyledLink}:focus & {
-    padding-bottom: 1px;
+    padding-bottom: 2px;
     border-bottom: 2px solid ${C_WHITE};
   }
 `;
