@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Navigation should render correctly 1`] = `
-.c6 {
+.c7 {
   -webkit-clip-path: inset(100%);
   clip-path: inset(100%);
   -webkit-clip: rect(1px,1px,1px,1px);
@@ -14,10 +14,15 @@ exports[`Navigation should render correctly 1`] = `
 
 .c0 {
   background-color: #B80000;
-  position: relative;
 }
 
 .c1 {
+  position: relative;
+  max-width: 80rem;
+  margin: 0 auto;
+}
+
+.c2 {
   position: absolute;
   -webkit-clip-path: inset(100%);
   clip-path: inset(100%);
@@ -37,18 +42,18 @@ exports[`Navigation should render correctly 1`] = `
   line-height: 1.25rem;
 }
 
-.c1:focus {
+.c2:focus {
   -webkit-clip-path: none;
   clip-path: none;
   -webkit-clip: auto;
   clip: auto;
-  top: -3.75rem;
-  left: 1rem;
   height: auto;
   width: auto;
+  top: -3rem;
+  left: 0.5rem;
 }
 
-.c2 {
+.c3 {
   list-style-type: none;
   padding: 0;
   margin: 0;
@@ -56,13 +61,13 @@ exports[`Navigation should render correctly 1`] = `
   overflow: hidden;
 }
 
-.c3 {
+.c4 {
   display: inline-block;
   position: relative;
   z-index: 2;
 }
 
-.c3::after {
+.c4::after {
   content: '';
   position: absolute;
   bottom: 0;
@@ -72,7 +77,7 @@ exports[`Navigation should render correctly 1`] = `
   left: 0;
 }
 
-.c4 {
+.c5 {
   font-size: 0.9375rem;
   line-height: 1.25rem;
   font-family: ReithSans,Helvetica,Arial,sans-serif;
@@ -84,7 +89,7 @@ exports[`Navigation should render correctly 1`] = `
   padding: 0.75rem 1rem;
 }
 
-.c4:hover::after {
+.c5:hover::after {
   content: '';
   position: absolute;
   left: 0;
@@ -94,7 +99,7 @@ exports[`Navigation should render correctly 1`] = `
   border-bottom: 0.3125rem solid #FFFFFF;
 }
 
-.c4:focus::after {
+.c5:focus::after {
   content: '';
   position: absolute;
   left: 0;
@@ -105,7 +110,7 @@ exports[`Navigation should render correctly 1`] = `
   border: 0.25rem solid #FFFFFF;
 }
 
-.c7 {
+.c8 {
   font-size: 0.9375rem;
   line-height: 1.25rem;
   font-family: ReithSans,Helvetica,Arial,sans-serif;
@@ -117,7 +122,7 @@ exports[`Navigation should render correctly 1`] = `
   padding: 0.75rem 1rem;
 }
 
-.c7:hover::after {
+.c8:hover::after {
   content: '';
   position: absolute;
   left: 0;
@@ -126,7 +131,7 @@ exports[`Navigation should render correctly 1`] = `
   border-bottom: 0.25rem solid #FFFFFF;
 }
 
-.c7:focus::after {
+.c8:focus::after {
   content: '';
   position: absolute;
   left: 0;
@@ -137,7 +142,7 @@ exports[`Navigation should render correctly 1`] = `
   border: 0.25rem solid #FFFFFF;
 }
 
-.c5::after {
+.c6::after {
   content: '';
   position: absolute;
   left: 0;
@@ -147,62 +152,67 @@ exports[`Navigation should render correctly 1`] = `
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
-  .c1 {
+  .c2 {
     font-size: 1rem;
     line-height: 1.25rem;
   }
 }
 
 @media (min-width:37.5rem) {
-  .c1 {
+  .c2 {
     font-size: 1rem;
     line-height: 1.25rem;
   }
 }
 
-@media (max-width:24.9375rem) {
-  .c1:focus {
-    top: -3rem;
-    left: 0.5rem;
+@media (min-width:37.5rem) {
+  .c2:focus {
+    top: -4rem;
+  }
+}
+
+@media (min-width:80rem) {
+  .c2:focus {
+    left: 0;
   }
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
-  .c4 {
+  .c5 {
     font-size: 1rem;
     line-height: 1.25rem;
   }
 }
 
 @media (min-width:37.5rem) {
-  .c4 {
+  .c5 {
     font-size: 1rem;
     line-height: 1.25rem;
   }
 }
 
 @media (max-width:24.9375rem) {
-  .c4 {
+  .c5 {
     padding: 0.75rem 0.5rem;
   }
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
-  .c7 {
+  .c8 {
     font-size: 1rem;
     line-height: 1.25rem;
   }
 }
 
 @media (min-width:37.5rem) {
-  .c7 {
+  .c8 {
     font-size: 1rem;
     line-height: 1.25rem;
   }
 }
 
 @media (max-width:24.9375rem) {
-  .c7 {
+  .c8 {
     padding: 0.75rem 0.5rem;
   }
 }
@@ -211,75 +221,79 @@ exports[`Navigation should render correctly 1`] = `
   className="c0"
   role="navigation"
 >
-  <a
+  <div
     className="c1"
-    href="#content"
   >
-    Wụga n’ọdịnaya
-  </a>
-  <ul
-    className="c2"
-    role="list"
-  >
-    <li
-      className="c3"
-      dir="ltr"
-      role="listitem"
+    <a
+      className="c2"
+      href="#content"
     >
-      <a
+      Wụga n’ọdịnaya
+    </a>
+    <ul
+      className="c3"
+      role="list"
+    >
+      <li
         className="c4"
-        href="/igbo"
+        dir="ltr"
+        role="listitem"
       >
-        <span
+        <a
           className="c5"
-          role="text"
+          href="/igbo"
         >
           <span
             className="c6"
+            role="text"
           >
-            Current page
-            , 
+            <span
+              className="c7"
+            >
+              Current page
+              , 
+            </span>
+            Akụkọ
           </span>
-          Akụkọ
-        </span>
-      </a>
-    </li>
-    <li
-      className="c3"
-      dir="ltr"
-      role="listitem"
-    >
-      <a
-        className="c7"
-        href="/igbo/egwuregwu"
+        </a>
+      </li>
+      <li
+        className="c4"
+        dir="ltr"
+        role="listitem"
       >
-        Egwuregwu
-      </a>
-    </li>
-    <li
-      className="c3"
-      dir="ltr"
-      role="listitem"
-    >
-      <a
-        className="c7"
-        href="/igbo/media/video"
+        <a
+          className="c8"
+          href="/igbo/egwuregwu"
+        >
+          Egwuregwu
+        </a>
+      </li>
+      <li
+        className="c4"
+        dir="ltr"
+        role="listitem"
       >
-        Ihe nkiri
-      </a>
-    </li>
-    <li
-      className="c3"
-      dir="ltr"
-      role="listitem"
-    >
-      <a
-        className="c7"
-        href="/igbo/popular/read"
+        <a
+          className="c8"
+          href="/igbo/media/video"
+        >
+          Ihe nkiri
+        </a>
+      </li>
+      <li
+        className="c4"
+        dir="ltr"
+        role="listitem"
       >
-        Nke ka ewuewu
-      </a>
-    </li>
-  </ul>
+        <a
+          className="c8"
+          href="/igbo/popular/read"
+        >
+          Nke ka ewuewu
+        </a>
+      </li>
+    </ul>
+  </div>
 </nav>
 `;
