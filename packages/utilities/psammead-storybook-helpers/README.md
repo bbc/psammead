@@ -12,12 +12,13 @@ This package provides a collection of common values that are used in storybook b
   - `slot`: Object containing configuration for this slot.
     - `name`: String uniquely identifying this slot in the story. Required.
     - `defaultText`: String to use when the story is showing English text. Optional.
-- `renderFn`: `function(slotTexts, script, dir)` Required.
+- `renderFn`: `function({slotTexts, script, dir, service})` Required.
   - `slotTexts`: Array of strings to insert into the story. Length and order corresponds to the provided `slots`.
-  - `script`: A [script](https://github.com/bbc/psammead/tree/latest/packages/utilities/gel-foundations#script-support) corresponding to the language selected by the storybook user.
+  - `script`: A [script](https://github.com/bbc/psammead/tree/latest/packages/utilities/gel-foundations#script-support) corresponding to the service selected by the storybook user.
   - `dir`: Either `'ltr'` or `'rtl'`, corresponding to the language currently selected by the storybook user.
+  - `service`: The service selected by the storybook user.
 
-`dirDecorator` - A storybook decorator function that uses `inputProvider` internally to provide direction control. It calls the storybook function with an object containing `dir` and `script`.
+`dirDecorator` - A storybook decorator function that uses `inputProvider` internally to provide direction control. It calls the storybook function with an object containing `dir`, `script` and the `service` name.
 
 ## Installation
 
@@ -39,7 +40,7 @@ const defaultValue = 'This is a caption';
 const groupIdentifier = 'CAPTION VARIANTS';
 
 <Caption>
-  {select(label, LANGUAGE_VARIANTS, LANGUAGE_VARIANTS.english, groupIdentifier).text}
+  {select(label, LANGUAGE_VARIANTS, LANGUAGE_VARIANTS.news, groupIdentifier).text}
 </Caption>;
 ```
 
@@ -62,8 +63,8 @@ storiesOf('Caption', module)
         { name: 'caption', defaultText: 'Students sitting an examination' },
         { name: 'offscreen text', defaultText: 'Image Caption, ' },
       ],
-      ([captionText, offscreenText], script, dir) => (
-        <Caption script={script} dir={dir}>
+      ({ slotTexts: [captionText, offscreenText], script, dir, service }) => (
+        <Caption script={script} dir={dir} service={service}>
           <VisuallyHiddenText>{offscreenText}</VisuallyHiddenText>
           {captionText}
         </Caption>
@@ -84,7 +85,9 @@ import { dirDecorator } from '@bbc/psammead-storybook-helpers';
 storiesOf('Example', module)
   .addDecorator(withKnobs)
   .addDecorator(dirDecorator)
-  .add('default', ({ dir }) => <h1 dir={dir}>Lorem Ipsum</h1>);
+  .add('default', ({ dir, service }) => (
+    <h1 dir={dir}>Lorem Ipsum ${service}</h1>
+  ));
 ```
 
 ## Contributing
