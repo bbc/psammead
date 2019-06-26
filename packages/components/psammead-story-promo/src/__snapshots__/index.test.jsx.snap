@@ -217,7 +217,7 @@ exports[`StoryPromo - Top Story should render correctly 1`] = `
 `;
 
 exports[`StoryPromo - Top Story with Media Indicator should render correctly 1`] = `
-.c8 {
+.c7 {
   -webkit-clip-path: inset(100%);
   clip-path: inset(100%);
   -webkit-clip: rect(1px,1px,1px,1px);
@@ -228,6 +228,12 @@ exports[`StoryPromo - Top Story with Media Indicator should render correctly 1`]
   width: 1px;
 }
 
+.c6 {
+  vertical-align: middle;
+  margin: 0 0.25rem;
+  fill: #222222;
+}
+
 .c4 {
   padding: 0.5rem 0.25rem;
   background-color: #FFFFFF;
@@ -236,6 +242,7 @@ exports[`StoryPromo - Top Story with Media Indicator should render correctly 1`]
   font-size: 0.75rem;
   line-height: 1rem;
   color: #222222;
+  height: 2rem;
 }
 
 .c5 {
@@ -247,15 +254,10 @@ exports[`StoryPromo - Top Story with Media Indicator should render correctly 1`]
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  height: 100%;
 }
 
-.c6 {
-  vertical-align: middle;
-  margin: 0 0.25rem;
-  fill: #222222;
-}
-
-.c7 {
+.c8 {
   vertical-align: middle;
   margin: 0 0.25rem;
 }
@@ -457,13 +459,13 @@ exports[`StoryPromo - Top Story with Media Indicator should render correctly 1`]
         className="c3"
       >
         <div
+          aria-hidden="true"
           className="c4"
         >
           <div
             className="c5"
           >
             <svg
-              aria-hidden="true"
               className="c6"
               focusable="false"
               height="12px"
@@ -474,20 +476,16 @@ exports[`StoryPromo - Top Story with Media Indicator should render correctly 1`]
                 points="3,32 29,16 3,0"
               />
             </svg>
-            <time
+            <span
               className="c7"
+            >
+              Video 2 minutes 15 seconds
+            </span>
+            <time
+              className="c8"
               dateTime="PT2M15S"
             >
-              <span
-                className="c8"
-              >
-                Video 2 minutes 15 seconds
-              </span>
-              <span
-                aria-hidden="true"
-              >
-                2:15
-              </span>
+              2:15
             </time>
           </div>
         </div>
@@ -732,7 +730,7 @@ exports[`StoryPromo should render correctly 1`] = `
 `;
 
 exports[`StoryPromo with Media Indicator should render correctly 1`] = `
-.c8 {
+.c7 {
   -webkit-clip-path: inset(100%);
   clip-path: inset(100%);
   -webkit-clip: rect(1px,1px,1px,1px);
@@ -743,6 +741,12 @@ exports[`StoryPromo with Media Indicator should render correctly 1`] = `
   width: 1px;
 }
 
+.c6 {
+  vertical-align: middle;
+  margin: 0 0.25rem;
+  fill: #222222;
+}
+
 .c4 {
   padding: 0.5rem 0.25rem;
   background-color: #FFFFFF;
@@ -751,6 +755,7 @@ exports[`StoryPromo with Media Indicator should render correctly 1`] = `
   font-size: 0.75rem;
   line-height: 1rem;
   color: #222222;
+  height: 2rem;
 }
 
 .c5 {
@@ -762,15 +767,10 @@ exports[`StoryPromo with Media Indicator should render correctly 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  height: 100%;
 }
 
-.c6 {
-  vertical-align: middle;
-  margin: 0 0.25rem;
-  fill: #222222;
-}
-
-.c7 {
+.c8 {
   vertical-align: middle;
   margin: 0 0.25rem;
 }
@@ -970,13 +970,13 @@ exports[`StoryPromo with Media Indicator should render correctly 1`] = `
         className="c3"
       >
         <div
+          aria-hidden="true"
           className="c4"
         >
           <div
             className="c5"
           >
             <svg
-              aria-hidden="true"
               className="c6"
               focusable="false"
               height="12px"
@@ -987,20 +987,16 @@ exports[`StoryPromo with Media Indicator should render correctly 1`] = `
                 points="3,32 29,16 3,0"
               />
             </svg>
-            <time
+            <span
               className="c7"
+            >
+              Video 2 minutes 15 seconds
+            </span>
+            <time
+              className="c8"
               dateTime="PT2M15S"
             >
-              <span
-                className="c8"
-              >
-                Video 2 minutes 15 seconds
-              </span>
-              <span
-                aria-hidden="true"
-              >
-                2:15
-              </span>
+              2:15
             </time>
           </div>
         </div>

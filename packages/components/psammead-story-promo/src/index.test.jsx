@@ -82,11 +82,11 @@ describe('assertions', () => {
       'The summary of the promo',
     );
 
-    const time = container.getElementsByTagName('time')[0];
-    const spans = time.getElementsByTagName('span');
+    const time = container.getElementsByTagName('time');
+    const spans = container.getElementsByTagName('span');
 
     expect(spans[0].innerHTML).toEqual('Video 2 minutes 15 seconds');
-    expect(spans[1].innerHTML).toEqual('2:15');
+    expect(time[0].innerHTML).toEqual('2:15');
 
     const image = container.getElementsByTagName('img')[0];
 
