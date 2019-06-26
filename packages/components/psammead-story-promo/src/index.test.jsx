@@ -88,7 +88,7 @@ describe('assertions', () => {
     expect(span.textContent).toEqual('Video 2 minutes 15 seconds');
     expect(time.textContent).toEqual('2:15');
 
-    const image = container.getElementsByTagName('img')[0];
+    const image = container.querySelector('img');
 
     expect(image.getAttribute('src')).toEqual('https://foobar.com/image.png');
     expect(image.getAttribute('alt')).toEqual('Alt text');
