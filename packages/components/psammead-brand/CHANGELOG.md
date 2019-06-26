@@ -3,6 +3,8 @@
 <!-- prettier-ignore -->
 | Version | Description |
 | ------- | ----------- |
+| 4.1.2   | [PR#684](https://github.com/bbc/psammead/pull/684) Update brand spacing breakpoint to kick in at 25rem |
+| 4.1.1   | [PR#677](https://github.com/bbc/psammead/pull/677) Use `@bbc/gel-foundations@3.0.0` |
 | 4.1.0   | [PR#647](https://github.com/bbc/psammead/pull/647) Add transparent borders with borderTop and borderBottom props |
 | 4.0.2   | [PR#649](https://github.com/bbc/psammead/pull/649) Update brand to have a max-width of 80rem |
 | 4.0.1   | [PR#642](https://github.com/bbc/psammead/pull/642) Add product and serviceLocalisedName knobs on storybook |
