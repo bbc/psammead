@@ -1,31 +1,10 @@
 import React from 'react';
 import { number, string } from 'prop-types';
 
-const AmpImg = ({
-  alt,
-  attribution,
-  height,
-  layout,
-  sizes,
-  src,
-  srcset,
-  width,
-}) => {
-  const props = {
-    alt,
-    attribution,
-    height,
-    layout,
-    sizes,
-    src,
-    width,
-  };
+const AmpImg = props => {
+  const { srcset, ...otherProps } = props;
 
-  if (srcset) {
-    props.srcSet = srcset;
-  }
-
-  return <amp-img {...props} />;
+  return <amp-img srcSet={srcset} {...otherProps} />;
 };
 
 AmpImg.propTypes = {

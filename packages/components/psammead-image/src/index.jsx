@@ -25,14 +25,10 @@ const StyledImg = styled.img`
   ${props => props.fade && fadeIn};
 `;
 
-export const Img = ({ alt, fade, height, sizes, src, srcset, width }) => {
-  const props = { alt, fade, height, sizes, src, width };
+export const Img = props => {
+  const { srcset, ...otherProps } = props;
 
-  if (srcset) {
-    props.srcSet = srcset;
-  }
-
-  return <StyledImg {...props} />;
+  return <StyledImg srcSet={srcset} {...otherProps} />;
 };
 
 Img.propTypes = {

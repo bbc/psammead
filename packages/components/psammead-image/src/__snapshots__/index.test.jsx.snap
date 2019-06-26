@@ -29,6 +29,7 @@ exports[`Image - imported as '{ Img }' should render image with custom dimension
   height={547}
   sizes="100vw"
   src="https://ichef.bbci.co.uk/news/300/cpsprodpb/164BB/production/_104032319_03270dcc-9dda-4bd4-96a0-db89f6b915ae.jpg"
+  srcSet={null}
   width={445}
 />
 `;
@@ -62,6 +63,7 @@ exports[`Image - imported as '{ Img }' should render landscape image correctly 1
   height={576}
   sizes="100vw"
   src="https://ichef.bbci.co.uk/news/300/cpsprodpb/7098/production/_104842882_students.jpg"
+  srcSet={null}
   width={1024}
 />
 `;
@@ -78,6 +80,7 @@ exports[`Image - imported as '{ Img }' should render portrait image correctly 1`
   height={1280}
   sizes="100vw"
   src="https://ichef.bbci.co.uk/news/300/cpsprodpb/439A/production/_100960371_syrians_and_asylum_v2-nc.png"
+  srcSet={null}
   width={1024}
 />
 `;
@@ -94,6 +97,7 @@ exports[`Image - imported as '{ Img }' should render square image correctly 1`] 
   height={1024}
   sizes="100vw"
   src="https://ichef.bbci.co.uk/news/300/cpsprodpb/114FE/production/_104801907_79010.jpg"
+  srcSet={null}
   width={1024}
 />
 `;
@@ -127,6 +131,7 @@ exports[`Image - imported as default 'Image' should render image with custom dim
   height={547}
   sizes="100vw"
   src="https://ichef.bbci.co.uk/news/300/cpsprodpb/164BB/production/_104032319_03270dcc-9dda-4bd4-96a0-db89f6b915ae.jpg"
+  srcSet={null}
   width={445}
 />
 `;
@@ -160,6 +165,7 @@ exports[`Image - imported as default 'Image' should render landscape image corre
   height={576}
   sizes="100vw"
   src="https://ichef.bbci.co.uk/news/300/cpsprodpb/7098/production/_104842882_students.jpg"
+  srcSet={null}
   width={1024}
 />
 `;
@@ -176,6 +182,7 @@ exports[`Image - imported as default 'Image' should render portrait image correc
   height={1280}
   sizes="100vw"
   src="https://ichef.bbci.co.uk/news/300/cpsprodpb/439A/production/_100960371_syrians_and_asylum_v2-nc.png"
+  srcSet={null}
   width={1024}
 />
 `;
@@ -192,6 +199,7 @@ exports[`Image - imported as default 'Image' should render square image correctl
   height={1024}
   sizes="100vw"
   src="https://ichef.bbci.co.uk/news/300/cpsprodpb/114FE/production/_104801907_79010.jpg"
+  srcSet={null}
   width={1024}
 />
 `;
@@ -229,6 +237,7 @@ exports[`Image - with Fade-in effect' should render image with custom dimensions
   height={547}
   sizes="100vw"
   src="https://ichef.bbci.co.uk/news/300/cpsprodpb/164BB/production/_104032319_03270dcc-9dda-4bd4-96a0-db89f6b915ae.jpg"
+  srcSet={null}
   width={445}
 />
 `;
@@ -262,6 +271,7 @@ exports[`Image - with Fade-in effect' should render landscape image correctly 1`
   height={576}
   sizes="100vw"
   src="https://ichef.bbci.co.uk/news/300/cpsprodpb/7098/production/_104842882_students.jpg"
+  srcSet={null}
   width={1024}
 />
 `;
@@ -278,6 +288,7 @@ exports[`Image - with Fade-in effect' should render portrait image correctly 1`]
   height={1280}
   sizes="100vw"
   src="https://ichef.bbci.co.uk/news/300/cpsprodpb/439A/production/_100960371_syrians_and_asylum_v2-nc.png"
+  srcSet={null}
   width={1024}
 />
 `;
@@ -294,6 +305,7 @@ exports[`Image - with Fade-in effect' should render square image correctly 1`] =
   height={1024}
   sizes="100vw"
   src="https://ichef.bbci.co.uk/news/300/cpsprodpb/114FE/production/_104801907_79010.jpg"
+  srcSet={null}
   width={1024}
 />
 `;
