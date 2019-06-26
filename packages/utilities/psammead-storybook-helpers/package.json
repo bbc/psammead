@@ -24,7 +24,7 @@
     "knobs"
   ],
   "dependencies": {
-    "@bbc/gel-foundations": "^1.2.0",
+    "@bbc/gel-foundations": "^3.0.0",
     "react-helmet": "^5.2.0"
   },
   "devDependencies": {
