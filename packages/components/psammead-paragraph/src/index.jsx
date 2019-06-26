@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { shape } from 'prop-types';
+import { shape, string } from 'prop-types';
 import { C_SHADOW } from '@bbc/psammead-styles/colours';
 import { GEL_SPACING_TRPL } from '@bbc/gel-foundations/spacings';
 import {
@@ -17,6 +17,7 @@ const Paragraph = styled.p`
 `;
 
 Paragraph.propTypes = {
+  product: string.isRequired,
   script: shape(scriptPropType).isRequired,
 };
 

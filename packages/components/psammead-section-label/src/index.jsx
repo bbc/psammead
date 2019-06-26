@@ -128,6 +128,7 @@ SectionLabel.defaultProps = {
 };
 
 SectionLabel.propTypes = {
+  product: string.isRequired,
   bar: bool,
   children: string.isRequired,
   dir: oneOf(['ltr', 'rtl']),

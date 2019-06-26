@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { shape } from 'prop-types';
+import { shape, string } from 'prop-types';
 import { C_SHADOW } from '@bbc/psammead-styles/colours';
 import {
   GEL_SPACING_TRPL,
@@ -41,9 +41,11 @@ export const SubHeading = styled.h2.attrs(() => ({
 `;
 
 Headline.propTypes = {
+  product: string.isRequired,
   script: shape(scriptPropType).isRequired,
 };
 
 SubHeading.propTypes = {
+  product: string.isRequired,
   script: shape(scriptPropType).isRequired,
 };

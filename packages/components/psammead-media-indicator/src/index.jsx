@@ -43,6 +43,7 @@ const MediaIndicator = ({ datetime, duration, offscreenText, type }) => (
 );
 
 MediaIndicator.propTypes = {
+  product: string.isRequired,
   datetime: string,
   duration: string,
   offscreenText: string,

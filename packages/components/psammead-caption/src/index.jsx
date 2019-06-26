@@ -1,5 +1,5 @@
 import styled, { css } from 'styled-components';
-import { shape } from 'prop-types';
+import { shape, string } from 'prop-types';
 import {
   GEL_SPACING,
   GEL_SPACING_TRPL,
@@ -51,6 +51,7 @@ const Caption = styled.figcaption`
 
 Caption.propTypes = {
   script: shape(scriptPropType).isRequired,
+  product: string.isRequired,
 };
 
 export default Caption;

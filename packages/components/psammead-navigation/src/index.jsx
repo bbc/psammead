@@ -191,6 +191,7 @@ const Navigation = ({ children, script, skipLinkText }) => (
 );
 
 Navigation.propTypes = {
+  product: string.isRequired,
   children: node.isRequired,
   script: shape(scriptPropType).isRequired,
   skipLinkText: string.isRequired,
