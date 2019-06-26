@@ -18,14 +18,15 @@ storiesOf('Utilities|Input Provider', module)
         {
           name: 'first slot',
           defaultText:
-            "this slot overwrites the English default; the next one doesn't",
+            "this slot overwrites the news default; the next one doesn't",
         },
         { name: 'second slot' },
       ],
-      ([first, second], script, dir) => (
+      ({ slotTexts: [first, second], script, dir, service }) => (
         <ul>
           <li>{first}</li>
           <li>{second}</li>
+          <li>{service}</li>
           <li>Selected direction: {dir}</li>
           <li>
             Content of selected script:
