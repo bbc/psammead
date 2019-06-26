@@ -75,18 +75,18 @@ describe('assertions', () => {
       />,
     );
 
-    expect(container.querySelectorAll('h3 a')[0].innerHTML).toEqual(
+    expect(container.querySelector('h3 a').textContent).toEqual(
       'The headline of the promo',
     );
-    expect(container.getElementsByTagName('p')[0].innerHTML).toEqual(
+    expect(container.querySelector('p').textContent).toEqual(
       'The summary of the promo',
     );
 
-    const time = container.getElementsByTagName('time');
-    const spans = container.getElementsByTagName('span');
+    const time = container.querySelector('time');
+    const span = container.querySelector('span');
 
-    expect(spans[0].innerHTML).toEqual('Video 2 minutes 15 seconds');
-    expect(time[0].innerHTML).toEqual('2:15');
+    expect(span.textContent).toEqual('Video 2 minutes 15 seconds');
+    expect(time.textContent).toEqual('2:15');
 
     const image = container.getElementsByTagName('img')[0];
 
