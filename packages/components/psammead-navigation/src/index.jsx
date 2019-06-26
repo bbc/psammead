@@ -10,6 +10,7 @@ import {
 } from '@bbc/gel-foundations/spacings';
 import {
   GEL_GROUP_1_SCREEN_WIDTH_MAX,
+  GEL_GROUP_3_SCREEN_WIDTH_MIN,
   GEL_GROUP_5_SCREEN_WIDTH_MIN,
 } from '@bbc/gel-foundations/breakpoints';
 import { getPica, GEL_FF_REITH_SANS } from '@bbc/gel-foundations/typography';
@@ -24,12 +25,17 @@ const BORDER_COLOR = '#eab3b3';
 /* Skip to content */
 const SKIP_LINK_COLOR = '#333';
 const SKIP_LINK_BORDER = '0.1875rem'; // 3px
-const SKIP_LINK_TOP_POSITION_LARGE = '-3.75rem'; // -60px
+const SKIP_LINK_TOP_POSITION_LARGE = '-4rem'; // -64px
 const SKIP_LINK_TOP_POSITION_SMALL = '-3rem'; // -48px
 
 const StyledNav = styled.nav`
   background-color: ${C_POSTBOX};
+`;
+
+const NavWrapper = styled.div`
   position: relative;
+  max-width: ${GEL_GROUP_5_SCREEN_WIDTH_MIN};
+  margin: 0 auto;
 `;
 
 const SkipLink = styled.a`
@@ -50,14 +56,17 @@ const SkipLink = styled.a`
   &:focus {
     clip-path: none;
     clip: auto;
-    top: ${SKIP_LINK_TOP_POSITION_LARGE};
-    left: ${GEL_SPACING_DBL};
     height: auto;
     width: auto;
+    top: ${SKIP_LINK_TOP_POSITION_SMALL};
+    left: ${GEL_SPACING};
 
-    @media (max-width: ${GEL_GROUP_1_SCREEN_WIDTH_MAX}) {
-      top: ${SKIP_LINK_TOP_POSITION_SMALL};
-      left: ${GEL_SPACING};
+    @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
+      top: ${SKIP_LINK_TOP_POSITION_LARGE};
+    }
+
+    @media (min-width: ${GEL_GROUP_5_SCREEN_WIDTH_MIN}) {
+      left: 0;
     }
   }
 `;
@@ -183,10 +192,12 @@ export const NavigationLi = ({
 
 const Navigation = ({ children, script, skipLinkText }) => (
   <StyledNav role="navigation">
-    <SkipLink href="#content" script={script}>
-      {skipLinkText}
-    </SkipLink>
-    {children}
+    <NavWrapper>
+      <SkipLink href="#content" script={script}>
+        {skipLinkText}
+      </SkipLink>
+      {children}
+    </NavWrapper>
   </StyledNav>
 );
 
