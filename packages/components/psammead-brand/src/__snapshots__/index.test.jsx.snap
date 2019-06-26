@@ -41,14 +41,14 @@ exports[`Brand should render correctly with link not provided 1`] = `
   border-bottom: 0.25rem solid #FFFFFF;
 }
 
-@media (min-width:37.5rem) {
+@media (min-width:25rem) {
   .c0 {
     height: 5rem;
     padding: 0 1rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width:25rem) {
   .c2 {
     padding-top: 1.75rem;
     padding-bottom: 1.5rem;
@@ -146,14 +146,14 @@ exports[`Brand should render correctly with link provided 1`] = `
   border-bottom: 0.25rem solid #FFFFFF;
 }
 
-@media (min-width:37.5rem) {
+@media (min-width:25rem) {
   .c0 {
     height: 5rem;
     padding: 0 1rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width:25rem) {
   .c4 {
     padding-top: 1.75rem;
     padding-bottom: 1.5rem;
@@ -249,14 +249,14 @@ exports[`Brand should render correctly with no service Localised Name 1`] = `
   border-bottom: 0.25rem solid #FFFFFF;
 }
 
-@media (min-width:37.5rem) {
+@media (min-width:25rem) {
   .c0 {
     height: 5rem;
     padding: 0 1rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width:25rem) {
   .c2 {
     padding-top: 1.75rem;
     padding-bottom: 1.5rem;
@@ -343,14 +343,14 @@ exports[`Brand should render correctly with transparent borders 1`] = `
   border-bottom: 0.25rem solid #FFFFFF;
 }
 
-@media (min-width:37.5rem) {
+@media (min-width:25rem) {
   .c0 {
     height: 5rem;
     padding: 0 1rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width:25rem) {
   .c2 {
     padding-top: 1.75rem;
     padding-bottom: 1.5rem;
