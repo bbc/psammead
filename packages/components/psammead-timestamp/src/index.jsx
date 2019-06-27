@@ -41,7 +41,6 @@ Timestamp.defaultProps = {
 };
 
 Timestamp.propTypes = {
-  product: string.isRequired,
   children: node.isRequired,
   datetime: string.isRequired,
   typographyFunc: func,

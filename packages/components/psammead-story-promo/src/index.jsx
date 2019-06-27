@@ -1,6 +1,6 @@
 import React from 'react';
 import styled, { css } from 'styled-components';
-import { node, bool, string } from 'prop-types';
+import { node, bool } from 'prop-types';
 import {
   GEL_SPACING,
   GEL_SPACING_DBL,
@@ -262,7 +262,6 @@ const StoryPromo = ({ image, info, mediaIndicator, topStory }) => (
 );
 
 StoryPromo.propTypes = {
-  product: string.isRequired,
   image: node.isRequired,
   info: node.isRequired,
   mediaIndicator: node,

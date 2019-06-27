@@ -63,7 +63,6 @@ const linkPropTypes = shape({
 });
 
 SitewideLinks.propTypes = {
-  product: string.isRequired,
   links: arrayOf(linkPropTypes.isRequired).isRequired,
   copyrightText: string.isRequired,
   externalLink: linkPropTypes.isRequired,

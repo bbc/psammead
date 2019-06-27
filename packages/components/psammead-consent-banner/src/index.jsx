@@ -160,7 +160,6 @@ export const ConsentBanner = ({
 );
 
 ConsentBanner.propTypes = {
-  product: string.isRequired,
   title: string.isRequired,
   text: element.isRequired,
   accept: element.isRequired,
