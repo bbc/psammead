@@ -3,7 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 | ------- | ----------- |
-| 1.0.2   | [PR#XXX](https://github.com/bbc/psammead/pull/XXX) Fix hover cap on older browsers |
+| 1.0.2   | [PR#722](https://github.com/bbc/psammead/pull/722) Fix hover cap on older browsers |
 | 1.0.1   | [PR#677](https://github.com/bbc/psammead/pull/677) Use `@bbc/gel-foundations@3.0.0` |
 | 1.0.0   | [PR#679](https://github.com/BBC-News/psammead/pull/679) Bump version number |
 | 0.2.1   | [PR#644](https://github.com/BBC-News/psammead/pull/644) Fixes for screenreader UX |
