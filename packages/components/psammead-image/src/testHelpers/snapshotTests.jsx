@@ -8,6 +8,7 @@ const snapshotTests = (Component, additionalProps) => {
     <Component
       alt={landscape.alt}
       attribution={landscape.attribution}
+      sizes={landscape.sizes}
       src={landscape.src}
       height={landscape.height}
       width={landscape.width}
@@ -19,6 +20,7 @@ const snapshotTests = (Component, additionalProps) => {
     <Component
       alt={portrait.alt}
       attribution={portrait.attribution}
+      sizes={portrait.sizes}
       src={portrait.src}
       height={portrait.height}
       width={portrait.width}
@@ -30,6 +32,7 @@ const snapshotTests = (Component, additionalProps) => {
     <Component
       alt={square.alt}
       attribution={square.attribution}
+      sizes={square.sizes}
       src={square.src}
       height={square.height}
       width={square.width}
@@ -41,6 +44,7 @@ const snapshotTests = (Component, additionalProps) => {
     <Component
       alt={custom.alt}
       attribution={custom.attribution}
+      sizes={custom.sizes}
       src={custom.src}
       height={custom.height}
       width={custom.width}
@@ -52,6 +56,7 @@ const snapshotTests = (Component, additionalProps) => {
     <Component
       alt={landscape.alt}
       attribution={landscape.attribution}
+      sizes={landscape.sizes}
       src={landscape.src}
       srcset={landscape.srcset}
       height={landscape.height}
