@@ -101,6 +101,7 @@ const getBrand = () => {
       minWidth={minWidthInput}
       maxWidth={maxWidthInput}
       svg={svgs[svgChoice]}
+      url="https://www.bbc.com/news"
       borderBottom={borderBottom}
       borderTop={borderTop}
     />
