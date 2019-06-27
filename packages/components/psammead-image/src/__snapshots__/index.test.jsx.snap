@@ -4,6 +4,7 @@ exports[`Image - imported as '{ Img }' should render image correctly without wid
 .c0 {
   display: block;
   width: 100%;
+  visibility: visible;
 }
 
 <img
@@ -21,6 +22,7 @@ exports[`Image - imported as '{ Img }' should render image with custom dimension
 .c0 {
   display: block;
   width: 100%;
+  visibility: visible;
 }
 
 <img
@@ -38,6 +40,7 @@ exports[`Image - imported as '{ Img }' should render image with srcset correctly
 .c0 {
   display: block;
   width: 100%;
+  visibility: visible;
 }
 
 <img
@@ -55,6 +58,7 @@ exports[`Image - imported as '{ Img }' should render landscape image correctly 1
 .c0 {
   display: block;
   width: 100%;
+  visibility: visible;
 }
 
 <img
@@ -72,6 +76,7 @@ exports[`Image - imported as '{ Img }' should render portrait image correctly 1`
 .c0 {
   display: block;
   width: 100%;
+  visibility: visible;
 }
 
 <img
@@ -89,6 +94,7 @@ exports[`Image - imported as '{ Img }' should render square image correctly 1`] 
 .c0 {
   display: block;
   width: 100%;
+  visibility: visible;
 }
 
 <img
@@ -106,6 +112,7 @@ exports[`Image - imported as default 'Image' should render image correctly witho
 .c0 {
   display: block;
   width: 100%;
+  visibility: visible;
 }
 
 <img
@@ -123,6 +130,7 @@ exports[`Image - imported as default 'Image' should render image with custom dim
 .c0 {
   display: block;
   width: 100%;
+  visibility: visible;
 }
 
 <img
@@ -140,6 +148,7 @@ exports[`Image - imported as default 'Image' should render image with srcset cor
 .c0 {
   display: block;
   width: 100%;
+  visibility: visible;
 }
 
 <img
@@ -157,6 +166,7 @@ exports[`Image - imported as default 'Image' should render landscape image corre
 .c0 {
   display: block;
   width: 100%;
+  visibility: visible;
 }
 
 <img
@@ -174,6 +184,7 @@ exports[`Image - imported as default 'Image' should render portrait image correc
 .c0 {
   display: block;
   width: 100%;
+  visibility: visible;
 }
 
 <img
@@ -191,6 +202,7 @@ exports[`Image - imported as default 'Image' should render square image correctl
 .c0 {
   display: block;
   width: 100%;
+  visibility: visible;
 }
 
 <img
@@ -208,10 +220,11 @@ exports[`Image - with Fade-in effect' should render image correctly without widt
 .c0 {
   display: block;
   width: 100%;
-  -webkit-animation-duration: 200ms;
-  animation-duration: 200ms;
-  -webkit-animation-name: eMLfYp;
-  animation-name: eMLfYp;
+  visibility: visible;
+  -webkit-animation: eMLfYp 0.2s linear;
+  animation: eMLfYp 0.2s linear;
+  -webkit-transition: visibility 0.2s linear;
+  transition: visibility 0.2s linear;
 }
 
 <img
@@ -229,6 +242,7 @@ exports[`Image - with Fade-in effect' should render image with custom dimensions
 .c0 {
   display: block;
   width: 100%;
+  visibility: visible;
 }
 
 <img
@@ -246,6 +260,7 @@ exports[`Image - with Fade-in effect' should render image with srcset correctly 
 .c0 {
   display: block;
   width: 100%;
+  visibility: visible;
 }
 
 <img
@@ -263,6 +278,7 @@ exports[`Image - with Fade-in effect' should render landscape image correctly 1`
 .c0 {
   display: block;
   width: 100%;
+  visibility: visible;
 }
 
 <img
@@ -280,6 +296,7 @@ exports[`Image - with Fade-in effect' should render portrait image correctly 1`]
 .c0 {
   display: block;
   width: 100%;
+  visibility: visible;
 }
 
 <img
@@ -297,6 +314,7 @@ exports[`Image - with Fade-in effect' should render square image correctly 1`] =
 .c0 {
   display: block;
   width: 100%;
+  visibility: visible;
 }
 
 <img
