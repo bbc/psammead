@@ -15,13 +15,14 @@ const fadeInKeyframes = keyframes`
 `;
 
 const fadeIn = css`
-  animation-duration: 200ms;
-  animation-name: ${fadeInKeyframes};
+  animation: ${fadeInKeyframes} 0.2s linear;
+  transition: visibility 0.2s linear;
 `;
 
 const StyledImg = styled.img`
   display: block;
   width: 100%;
+  visibility: visible;
   ${props => props.fade && fadeIn};
 `;
 
