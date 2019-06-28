@@ -75,17 +75,17 @@ describe('assertions', () => {
       />,
     );
 
-    expect(container.querySelectorAll('h3 a')[0].innerHTML).toEqual(
+    expect(container.querySelector('h3 a').textContent).toEqual(
       'The headline of the promo',
     );
-    expect(container.getElementsByTagName('p')[0].innerHTML).toEqual(
+    expect(container.querySelector('p').textContent).toEqual(
       'The summary of the promo',
     );
 
     expect(getAllByText('Video 2 minutes 15 seconds')[0]).toBeTruthy();
     expect(getAllByText('2:15')[0]).toBeTruthy();
 
-    const image = container.getElementsByTagName('img')[0];
+    const image = container.querySelector('img');
 
     expect(image.getAttribute('src')).toEqual('https://foobar.com/image.png');
     expect(image.getAttribute('alt')).toEqual('Alt text');
