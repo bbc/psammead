@@ -67,7 +67,7 @@ describe('StoryPromo - Top Story with Media Indicator', () => {
 
 describe('assertions', () => {
   it('should render h3, a, p, time', () => {
-    const { container } = render(
+    const { container, getAllByText } = render(
       <StoryPromo
         image={Image}
         info={Info({ topStory: true })}
@@ -82,11 +82,8 @@ describe('assertions', () => {
       'The summary of the promo',
     );
 
-    const time = container.getElementsByTagName('time')[0];
-    const spans = time.getElementsByTagName('span');
-
-    expect(spans[0].innerHTML).toEqual('Video 2 minutes 15 seconds');
-    expect(spans[1].innerHTML).toEqual('2:15');
+    expect(getAllByText('Video 2 minutes 15 seconds')[0]).toBeTruthy();
+    expect(getAllByText('2:15')[0]).toBeTruthy();
 
     const image = container.getElementsByTagName('img')[0];
 
