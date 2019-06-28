@@ -1,6 +1,6 @@
 {
   "name": "@bbc/psammead-story-promo-list",
-  "version": "1.0.0-alpha.1",
+  "version": "1.0.0",
   "main": "dist/index.js",
   "description": "List of story promos",
   "repository": {
@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/bbc/psammead/blob/latest/packages/components/psammead-story-promo-list/README.md",
   "dependencies": {
-    "@bbc/gel-foundations": "^3.0.0",
+    "@bbc/gel-foundations": "^3.0.1",
     "@bbc/psammead-story-promo": "^0.2.0-alpha.1",
     "@bbc/psammead-styles": "^0.3.3"
   },
@@ -30,9 +30,9 @@
     "styled-components": "^4.3.2"
   },
   "peerDependencies": {
+    "prop-types": "^15.7.2",
     "react": "^16.8.6",
-    "styled-components": "^4.3.2",
-    "prop-types": "^15.7.2"
+    "styled-components": "^4.3.2"
   },
   "keywords": [
     "bbc",
