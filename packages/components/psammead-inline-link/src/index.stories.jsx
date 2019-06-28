@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import { storiesOf } from '@storybook/react';
 import { withKnobs } from '@storybook/addon-knobs';
 import { inputProvider } from '@bbc/psammead-storybook-helpers';
@@ -10,7 +10,15 @@ storiesOf('Components|InlineLink', module)
   .add(
     'default',
     inputProvider([{ name: 'Link text' }], ([linkText]) => (
-      <InlineLink href="https://www.bbc.com/news">{linkText}</InlineLink>
+      <Fragment>
+        <InlineLink href="https://www.bbc.com/news">{linkText}</InlineLink>
+        <br />
+        <br />
+        Please note this component does not have its own typography styling
+        (font-size and line-height) as it is expected to be used within another
+        component such as paragraph or caption. For a more realistic storybook
+        example of this component see the Paragraph and Caption stories
+      </Fragment>
     )),
     { notes, knobs: { escapeHTML: false } },
   );
