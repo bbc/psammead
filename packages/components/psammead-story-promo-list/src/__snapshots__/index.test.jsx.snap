@@ -8,33 +8,40 @@ exports[`StoryPromo list should render correctly 1`] = `
 .c3 {
   display: inline-block;
   vertical-align: top;
+  position: relative;
   max-width: 33.33%;
 }
 
 .c4 {
-  display: inline-block;
-  vertical-align: top;
-  padding: 0 0.5rem;
-  max-width: 66.67%;
+  position: relative;
 }
 
-.c5 {
-  font-size: 1.125rem;
-  line-height: 1.375rem;
-  color: #3F3F42;
+.c6 {
+  font-size: 0.9375rem;
+  line-height: 1.25rem;
+  font-size: 0.9375rem;
+  line-height: 1.25rem;
+  color: #222222;
   font-family: ReithSerif,Helvetica,Arial,sans-serif;
   margin: 0;
   padding-bottom: 0.5rem;
   font-weight: 700;
 }
 
-.c6 {
+.c7 {
   font-size: 0.9375rem;
   line-height: 1.125rem;
   color: #3F3F42;
   font-family: ReithSans,Helvetica,Arial,sans-serif;
   margin: 0;
   padding-bottom: 0.5rem;
+}
+
+.c5 {
+  display: inline-block;
+  vertical-align: top;
+  max-width: 66.67%;
+  padding: 0 0.5rem;
 }
 
 .c1 {
@@ -79,58 +86,80 @@ exports[`StoryPromo list should render correctly 1`] = `
   }
 }
 
-@media (min-width:37.5rem) {
-  .c4 {
-    padding: 0 1rem;
-  }
-}
-
-@media (min-width:80rem) {
-  .c4 {
-    max-width: 66.67%;
-  }
-}
-
-@supports (display:grid) {
-  .c4 {
-    display: block;
-    max-width: initial;
-    padding: initial;
-    grid-column: 3 / span 4;
-  }
-}
-
 @media (min-width:20rem) and (max-width:37.4375rem) {
-  .c5 {
-    font-size: 1.125rem;
-    line-height: 1.375rem;
+  .c6 {
+    font-size: 1rem;
+    line-height: 1.25rem;
   }
 }
 
 @media (min-width:37.5rem) {
-  .c5 {
-    font-size: 1.25rem;
-    line-height: 1.5rem;
+  .c6 {
+    font-size: 1rem;
+    line-height: 1.25rem;
   }
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
   .c6 {
+    font-size: 1rem;
+    line-height: 1.25rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .c6 {
+    font-size: 1rem;
+    line-height: 1.25rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .c6 {
+    font-size: 1.125rem;
+    line-height: 1.375rem;
+  }
+}
+
+@media (min-width:20rem) and (max-width:37.4375rem) {
+  .c7 {
     font-size: 0.9375rem;
     line-height: 1.125rem;
   }
 }
 
 @media (min-width:37.5rem) {
-  .c6 {
+  .c7 {
     font-size: 0.875rem;
     line-height: 1.125rem;
   }
 }
 
 @media (max-width:37.4375rem) {
-  .c6 {
+  .c7 {
     display: none;
+    visibility: hidden;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .c5 {
+    padding: 0 1rem;
+  }
+}
+
+@media (min-width:80rem) {
+  .c5 {
+    max-width: 66.67%;
+  }
+}
+
+@supports (display:grid) {
+  .c5 {
+    display: block;
+    max-width: initial;
+    padding: initial;
+    grid-column: 3 / span 4;
   }
 }
 
@@ -153,34 +182,38 @@ exports[`StoryPromo list should render correctly 1`] = `
 }
 
 <ul
-  className="c0"
+  class="c0"
   role="list"
 >
   <li
-    className="c1"
+    class="c1"
     role="listitem"
   >
     <div
-      className="c2"
+      class="c2"
     >
       <div
-        className="c3"
+        class="c3"
       >
-        <img
-          alt="Alt text"
-          src="https://foobar.com/image.png"
-        />
+        <div
+          class="c4"
+        >
+          <img
+            alt="Alt text"
+            src="https://foobar.com/image.png"
+          />
+        </div>
       </div>
       <div
-        className="c4"
+        class="c5"
       >
         <h3
-          className="c5"
+          class="c6"
         >
           The headline of the promo
         </h3>
         <p
-          className="c6"
+          class="c7"
         >
           The summary of the promo
         </p>

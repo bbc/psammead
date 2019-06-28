@@ -15,7 +15,7 @@ exports[`ImagePlaceholder should render landscape images correctly 1`] = `
 }
 
 <div
-  className="c0"
+  class="c0"
 />
 `;
 
@@ -34,7 +34,7 @@ exports[`ImagePlaceholder should render portrait images correctly 1`] = `
 }
 
 <div
-  className="c0"
+  class="c0"
 />
 `;
 
@@ -53,6 +53,6 @@ exports[`ImagePlaceholder should render square images correctly 1`] = `
 }
 
 <div
-  className="c0"
+  class="c0"
 />
 `;
