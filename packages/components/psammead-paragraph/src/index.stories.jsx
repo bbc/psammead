@@ -22,7 +22,7 @@ storiesOf('Components|Paragraph', module)
       ([paragraph, linkText], script) => (
         <Paragraph script={script}>
           {`${paragraph} `}
-          <InlineLink href="https://www.bbc.com">{linkText}</InlineLink>.
+          <InlineLink href="https://www.bbc.com">{linkText}</InlineLink>
           {` ${paragraph}`}
         </Paragraph>
       ),
