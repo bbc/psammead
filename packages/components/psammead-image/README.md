@@ -25,8 +25,8 @@ Importing the standard Image component renders an `<img />` tag.
 ```jsx
 import Image from '@bbc/psammead-image';
 
-const WrappingContainer = ({ alt, src, height, width }) => (
-  <Img alt={alt} src={src} height={height} width={width} fade />
+const WrappingContainer = ({ alt, src, height, width, sizes }) => (
+  <Img alt={alt} src={src} height={height} width={width} sizes={sizes} fade />
 );
 ```
 
@@ -41,10 +41,11 @@ Example:
 ```jsx
 import { AmpImg } from '@bbc/psammead-image';
 
-const WrappingContainer = ({ alt, src, height, width }) => (
+const WrappingContainer = ({ alt, src, height, width, sizes }) => (
   <AmpImg
     alt={alt}
     layout="responsive"
+    sizes={sizes}
     src={src}
     height={height}
     width={width}
@@ -55,15 +56,16 @@ const WrappingContainer = ({ alt, src, height, width }) => (
 ## Props
 
 ### Img
-
-| Prop     | Type          | Required | Default | Example                                                                                                |
-| :------- | :------------ | :------- | :------ | :----------------------------------------------------------------------------------------------------- |
-| `alt`    | string        | Yes      | -       | "A picture of a cat"                                                                                   |
-| `height` | number/string | No       | null    | 450                                                                                                    |
-| `src`    | string        | Yes      | -       | "https://bbc.com/300/cat.jpg"                                                                          |
-| `srcset` | string        | No       | null    | "https://bbc.com/300/cat.jpg 300w, https://bbc.com/450/cat.jpg 450w, https://bbc.com/600/cat.jpg 600w" |
-| `width`  | number/string | No       | null    | 600                                                                                                    |
-|  `fade`  |  boolean  | No      |  false   |  true  |
+<!-- prettier-ignore -->
+| Prop | Type | Required | Default | Example |
+|:-----|:-----|:---------|:--------|:--------|
+| `alt`    | string        | Yes | -     | "A picture of a cat" |
+| `height` | number/string | No  | null  | 450 |
+| `sizes`  | string        | No  | null  | "100vw" |
+| `src`    | string        | Yes | -     | "https://bbc.com/300/cat.jpg" |
+| `srcset` | string        | No  | null  | "https://bbc.com/300/cat.jpg 300w, https://bbc.com/450/cat.jpg 450w, https://bbc.com/600/cat.jpg 600w" |
+| `width`  | number/string | No  | null  | 600 |
+| `fade`   |  boolean      | No  | false | true |
 
 The `height` and `width` props are optional, in some cases to preserve the image ratio you might specify either `height` or `width` and let the browser scale the image accordingly.
 
@@ -73,23 +75,27 @@ Specifying the `width` and `height` allows the browser to reserve space for the 
 
 The `srcset` prop is optional since some projects might not want to use the srcset attribute on images.
 
+The `sizes` prop is optional since some projects might not want to use the sizes attribute on images.
+
 The `fade` prop is optional and set to `false` by default. It's been used to apply a fade-in animation effect on the `Img` component.
 
 ### AmpImg
-
-| Prop          | Type          | Required | Default | Example                                                                                                |
-| :------------ | :------------ | :------- | :------ | :----------------------------------------------------------------------------------------------------- |
-| `alt`         | string        | Yes      | -       | "A picture of a cat"                                                                                   |
-| `attribution` | string        | No       | ''      | "Getty Images"                                                                                         |
-| `height`      | number/string | Yes      | null    | 450                                                                                                    |
-| `layout`      | string        | Yes      | -       | "responsive"                                                                                           |
-| `src`         | string        | Yes      | -       | "https://bbc.com/300/cat.jpg"                                                                          |
-| `srcset`      | string        | No       | null    | "https://bbc.com/300/cat.jpg 300w, https://bbc.com/450/cat.jpg 450w, https://bbc.com/600/cat.jpg 600w" |
-| `width`       | number/string | Yes      | -       | 600                                                                                                    |
+<!-- prettier-ignore -->
+| Prop | Type | Required | Default | Example |
+|:-----|:-----|:---------|:--------|:--------|
+| `alt`         | string        | Yes | -    | "A picture of a cat" |
+| `attribution` | string        | No  | ''   | "Getty Images" |
+| `height`      | number/string | Yes | null | 450 |
+| `layout`      | string        | Yes | -    | "responsive" |
+| `sizes`       | string        | No  | null | "100vw" |
+| `src`         | string        | Yes | -    | "https://bbc.com/300/cat.jpg" |
+| `srcset`      | string        | No  | null | "https://bbc.com/300/cat.jpg 300w, https://bbc.com/450/cat.jpg 450w, https://bbc.com/600/cat.jpg 600w" |
+| `width`       | number/string | Yes | -    | 600 |
 
 The `attribution` prop is available to pass in strings to include the image source. [For further details, please refer to the `amp-img` attribute docs](https://www.ampproject.org/docs/reference/components/amp-img#attributes).
 The `layout` prop can be one of several, including `responsive`, `fixed`, `intrinsic` etc. We recommend using `responsive` for most use-cases, with `height` and `width` props passed in, so the AMP can use the correct ratio for scaling the image. [For further details, please refer to the AMP docs](https://www.ampproject.org/docs/reference/components/amp-img).
 The `srcset` prop is a string with comma separated string of image URLs with varying sizes. [For further details, please refer to the MDN docs](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img#attr-srcset).
+The `sizes` prop is string containing a list of comma separated strings indicating a set of source sizes. [For further details, please refer to the MDN docs](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img#attr-sizes).
 
 ### Accessibility notes
 

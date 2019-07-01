@@ -7,6 +7,7 @@ import { custom, landscape, portrait, square } from './fixtureData';
 export function getProps(image, includeHeight, type) {
   const props = {
     alt: image.alt,
+    sizes: image.sizes,
     src: image.src,
     srcset: image.srcset,
     width: image.width,
