@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 1.2.2  | [PR#724](https://github.com/bbc/psammead/pull/724) Update babel-plugin-styled from version 1.10.1 to 1.10.4 |
 | 1.2.1  | [PR#669](https://github.com/bbc/psammead/pull/641) Upgrade many npm dependencies then update snapshots |
 | 1.2.0   | [PR#663](https://github.com/bbc/psammead/pull/663) Add `@testing-library/react` as a dev dependancy |
 | 1.1.10  | [PR#630](https://github.com/BBC/psammead/pull/630) Change storybook port to 8180 |
