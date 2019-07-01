@@ -86,12 +86,6 @@
     "stylelint-config-styled-components": "^0.1.1",
     "stylelint-processor-styled-components": "^1.8.0"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "npm run test:lint && npm run test:lint:css",
-      "pre-push": "sh scripts/enforceVersions.sh && npm run test:unit"
-    }
-  },
   "jest": {
     "collectCoverageFrom": [
       "**/packages/**/*.{js,jsx}",
@@ -102,7 +96,8 @@
     ],
     "testMatch": [
       "**/*.test.{js,jsx}"
-    ]
+    ],
+    "setupFilesAfterEnv": ["<rootDir>/setupTests.js"]
   },
   "spec": {
     "prune": false,
