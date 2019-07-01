@@ -77,14 +77,13 @@ const ImageGridFallbackTopStory = css`
   margin-bottom: ${GEL_GUTTER_BELOW_600PX};
 
   @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
-    max-width: ${twoOfSixColumnsMaxWidthScaleable};
+    width: ${twoOfSixColumnsMaxWidthScaleable};
     margin-bottom: none;
   }
 `;
 
 const ImageGridFallback = css`
   width: ${twoOfSixColumnsMaxWidthScaleable};
-  max-width: ${twoOfSixColumnsMaxWidthScaleable};
 `;
 
 const ImageGridItem = styled.div`
@@ -96,12 +95,12 @@ const ImageGridItem = styled.div`
     topStory ? ImageGridFallbackTopStory : ImageGridFallback}
 
   @media (min-width: ${GEL_GROUP_5_SCREEN_WIDTH_MIN}) {
-    max-width: ${fourOfTwelveColumnsMaxWidthScaleable};
+    width: ${fourOfTwelveColumnsMaxWidthScaleable};
   }
 
   @supports (display: grid) {
     display: block;
-    max-width: initial;
+    width: initial;
 
     ${({ topStory }) =>
       topStory ? ImageGridColumnsTopStory : ImageGridColumns}
@@ -187,12 +186,12 @@ const TextGridColumns = css`
 
 const TextGridFallbackTopStory = css`
   @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
-    max-width: ${fourOfSixColumnsMaxWidthScaleable};
+    width: ${fourOfSixColumnsMaxWidthScaleable};
   }
 `;
 
 const TextGridFallback = css`
-  max-width: ${fourOfSixColumnsMaxWidthScaleable};
+  width: ${fourOfSixColumnsMaxWidthScaleable};
   padding: 0 ${GEL_SPACING};
 `;
 
@@ -207,12 +206,12 @@ const TextGridItem = styled.div`
   }
 
   @media (min-width: ${GEL_GROUP_5_SCREEN_WIDTH_MIN}) {
-    max-width: ${eightOfTwelveColumnsMaxScaleable};
+    width: ${eightOfTwelveColumnsMaxScaleable};
   }
 
   @supports (display: grid) {
     display: block;
-    max-width: initial;
+    width: initial;
     padding: initial;
 
     ${({ topStory }) => (topStory ? TextGridColumnsTopStory : TextGridColumns)}
