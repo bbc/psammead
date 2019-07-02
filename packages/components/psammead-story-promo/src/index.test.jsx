@@ -2,6 +2,7 @@ import React, { Fragment } from 'react';
 import { shouldMatchSnapshot } from '@bbc/psammead-test-helpers';
 import { latin } from '@bbc/gel-foundations/scripts';
 import MediaIndicator from '@bbc/psammead-media-indicator';
+import { render } from '@testing-library/react';
 import StoryPromo, { Headline, Summary, Link } from './index';
 
 const Image = <img src="https://foobar.com/image.png" alt="Alt text" />;
@@ -62,4 +63,34 @@ describe('StoryPromo - Top Story with Media Indicator', () => {
       topStory
     />,
   );
+});
+
+describe('assertions', () => {
+  it('should render h3, a, p, time', () => {
+    const { container } = render(
+      <StoryPromo
+        image={Image}
+        info={Info({ topStory: true })}
+        mediaIndicator={mediaInfo}
+      />,
+    );
+
+    expect(container.querySelector('h3 a').textContent).toEqual(
+      'The headline of the promo',
+    );
+    expect(container.querySelector('p').textContent).toEqual(
+      'The summary of the promo',
+    );
+
+    const time = container.querySelector('time');
+    const span = container.querySelector('span');
+
+    expect(span.textContent).toEqual('Video 2 minutes 15 seconds');
+    expect(time.textContent).toEqual('2:15');
+
+    const image = container.querySelector('img');
+
+    expect(image.getAttribute('src')).toEqual('https://foobar.com/image.png');
+    expect(image.getAttribute('alt')).toEqual('Alt text');
+  });
 });

@@ -15,38 +15,37 @@ const fadeInKeyframes = keyframes`
 `;
 
 const fadeIn = css`
-  animation-duration: 200ms;
-  animation-name: ${fadeInKeyframes};
+  animation: ${fadeInKeyframes} 0.2s linear;
+  transition: visibility 0.2s linear;
 `;
 
 const StyledImg = styled.img`
   display: block;
   width: 100%;
+  visibility: visible;
   ${props => props.fade && fadeIn};
 `;
 
-export const Img = ({ alt, fade, src, srcset, height, width }) => {
-  const props = { alt, fade, src, height, width };
+export const Img = props => {
+  const { srcset, ...otherProps } = props;
 
-  if (srcset) {
-    props.srcSet = srcset;
-  }
-
-  return <StyledImg {...props} />;
+  return <StyledImg srcSet={srcset} {...otherProps} />;
 };
 
 Img.propTypes = {
   alt: string.isRequired,
   fade: bool,
+  height: oneOfType([string, number]),
+  sizes: string,
   src: string.isRequired,
   srcset: string,
-  height: oneOfType([string, number]),
   width: oneOfType([string, number]),
 };
 
 Img.defaultProps = {
   fade: false,
   height: null,
+  sizes: null,
   srcset: null,
   width: null,
 };

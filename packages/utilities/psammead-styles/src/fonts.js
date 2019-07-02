@@ -1,4 +1,6 @@
 const baseFontUrl = 'https://gel.files.bbci.co.uk/r2.511/';
+const nassimPersianBaseUrl =
+  'https://ws-downloads.files.bbci.co.uk/fonts/NassimPersian/v1.511/';
 
 // Serif
 export const F_REITH_SERIF_REGULAR = `
@@ -183,3 +185,24 @@ export const F_REITH_SANS_CONDENSED_BOLD = `
         src: url("${baseFontUrl}BBCReithSansCd_W_Bd.woff2") format("woff2"), url("${baseFontUrl}BBCReithSansCd_W_Bd.woff") format("woff");
         font-display: optional;
     }`;
+
+// Nassim Persian
+export const F_NASSIM_PERSIAN_REGULAR = `
+  @font-face {
+    font-family: "NassimPersian";
+    font-weight: 400;
+    font-style: normal;
+    src: url('${nassimPersianBaseUrl}normal.woff') format('woff'), url('${nassimPersianBaseUrl}normal.eot') format('eot'), url('${nassimPersianBaseUrl}normal.ttf') format('ttf');
+    font-display: optional;
+  }
+`;
+
+export const F_NASSIM_PERSIAN_BOLD = `
+  @font-face {
+    font-family: "NassimPersian";
+    font-weight: 700;
+    font-style: normal;
+    src: url('${nassimPersianBaseUrl}bold.woff') format('woff'), url('${nassimPersianBaseUrl}bold.eot') format('eot'), url('${nassimPersianBaseUrl}bold.ttf') format('ttf');
+    font-display: optional;
+  }
+`;

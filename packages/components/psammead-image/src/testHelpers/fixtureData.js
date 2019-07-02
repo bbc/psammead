@@ -7,6 +7,7 @@ const customImageUrl = `https://ichef.bbci.co.uk/news/[WIDTH]/cpsprodpb/164BB/pr
 export const landscape = {
   alt: 'Student sitting an exam',
   attribution: '',
+  sizes: '100vw',
   src: landscapeImageUrl.replace('[WIDTH]', sizes[0]),
   srcset: sizes
     .map(size => `${landscapeImageUrl.replace('[WIDTH]', size)} ${size}w`)
@@ -19,6 +20,7 @@ export const portrait = {
   alt:
     'Map of the UK displaying Syrian refugees and asylum seekers per 10000 population. Ranges from 0 to 17.',
   attribution: 'BBC',
+  sizes: '100vw',
   src: portraitImageUrl.replace('[WIDTH]', sizes[0]),
   srcset: sizes
     .map(size => `${portraitImageUrl.replace('[WIDTH]', size)} ${size}w`)
@@ -30,6 +32,7 @@ export const portrait = {
 export const square = {
   alt: 'Tracks through the snow',
   attribution: 'BBC',
+  sizes: '100vw',
   src: squareImageUrl.replace('[WIDTH]', sizes[0]),
   srcset: sizes
     .map(size => `${squareImageUrl.replace('[WIDTH]', size)} ${size}w`)
@@ -41,6 +44,7 @@ export const square = {
 export const custom = {
   alt: 'By Elisa Decker, from her series "Sidewalk"',
   attribution: 'Elisa Decker',
+  sizes: '100vw',
   src: customImageUrl.replace('[WIDTH]', sizes[0]),
   srcset: sizes
     .map(size => `${customImageUrl.replace('[WIDTH]', size)} ${size}w`)
