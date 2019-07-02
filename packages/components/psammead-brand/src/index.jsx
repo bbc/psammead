@@ -85,11 +85,12 @@ const BrandSvg = styled.svg`
 
 const LocalisedBrandName = ({ product, serviceLocalisedName }) =>
   serviceLocalisedName ? (
-    <Fragment>
+    // eslint-disable-next-line jsx-a11y/aria-role
+    <VisuallyHiddenText role="text">
       <span lang="en-GB">{product}</span>, {serviceLocalisedName}
-    </Fragment>
+    </VisuallyHiddenText>
   ) : (
-    product
+    <VisuallyHiddenText>{product}</VisuallyHiddenText>
   );
 
 LocalisedBrandName.propTypes = {
@@ -124,12 +125,10 @@ const StyledBrand = ({
         >
           {svg.group}
         </BrandSvg>
-        <VisuallyHiddenText>
-          <LocalisedBrandName
-            product={product}
-            serviceLocalisedName={serviceLocalisedName}
-          />
-        </VisuallyHiddenText>
+        <LocalisedBrandName
+          product={product}
+          serviceLocalisedName={serviceLocalisedName}
+        />
       </Fragment>
     )}
   </Fragment>

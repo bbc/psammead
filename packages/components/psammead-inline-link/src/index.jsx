@@ -1,8 +1,8 @@
 import styled from 'styled-components';
-import { C_EBON, C_POSTBOX, C_CLOUD_DARK } from '@bbc/psammead-styles/colours';
+import { C_POSTBOX, C_CLOUD_DARK, C_WHITE } from '@bbc/psammead-styles/colours';
 
 const InlineLink = styled.a`
-  color: ${C_EBON};
+  color: ${C_POSTBOX};
   border-bottom: 1px solid ${C_POSTBOX};
   text-decoration: none;
 
@@ -11,14 +11,14 @@ const InlineLink = styled.a`
     border-bottom: 1px solid ${C_CLOUD_DARK};
   }
 
-  &:focus {
-    color: ${C_POSTBOX};
-    border-bottom: 2px solid ${C_POSTBOX};
-  }
-
+  &:focus,
   &:hover {
-    color: ${C_POSTBOX};
+    background-color: ${C_POSTBOX};
     border-bottom: 2px solid ${C_POSTBOX};
+    color: ${C_WHITE};
+    margin: 0 -2px;
+    padding: 0 2px;
+    white-space: pre-wrap;
   }
 `;
 

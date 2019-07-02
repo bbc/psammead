@@ -79,7 +79,7 @@ This component can be used at any point on a page.
 
 Since this is just a `<a>` tag with associated styles, when you use this component, it has the same semantic meaning as a regular anchor element.
 
-The font and background-color choices for each hover/focused/visited/default states meet WCAG AA colour contrast guidelines.
+The font and background-color choices for each hover/focused/visited/default states meet WCAG AA colour contrast guidelines. Also the border width increases on hover and focus which acts as a visible change that is not colour dependent for high-contrast modes, which often override colours/styles.
 
 ## Contributing
 
