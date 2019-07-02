@@ -4,7 +4,7 @@
 
 If the component is publicly available in Storybook you can preview this on any device. Don't forget to follow the [testing steps](https://bbc-news.github.io/accessibility-news-and-you/accessibility-and-testing-with-assistive-technology) and use [supported assistive technology](https://bbc-news.github.io/accessibility-news-and-you/accessibility-and-supported-assistive-technology).
 
-### <a name="open"></a>Open the component in a tab
+### Open the component in a tab
 Storybook publishes components in an iframe within the Storybook UI, this will be acknowledged by assistive technology such as a screen reader, it's therefore recommeded to **view/open the component in another tab** to the Storybook UI, you can then see the component code in isolation without the iframe and Storybook UI.
 
 ## Local code in Storybook
@@ -14,7 +14,7 @@ If you have a PR with code that is not yet merged and you need to preview this o
 * Install packages ‘npm run install:packages’
 * Run storybook ‘npm run storybook’
 * Run your tunnellinng tool on the Storybook port
-* In Storybook, [open the component in another tab](#open)
+* In Storybook [open the component in another tab](#open-the-component-in-a-tab)
 
 ### Troubleshooting
 
