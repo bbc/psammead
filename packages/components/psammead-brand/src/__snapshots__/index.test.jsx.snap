@@ -85,6 +85,7 @@ exports[`Brand should render correctly with link not provided 1`] = `
     </svg>
     <span
       className="c3"
+      role="text"
     >
       <span
         lang="en-GB"
@@ -194,6 +195,7 @@ exports[`Brand should render correctly with link provided 1`] = `
       </svg>
       <span
         className="c5"
+        role="text"
       >
         <span
           lang="en-GB"
