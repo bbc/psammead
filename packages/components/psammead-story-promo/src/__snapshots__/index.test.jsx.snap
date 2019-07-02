@@ -10,6 +10,7 @@ exports[`StoryPromo - Top Story should render correctly 1`] = `
   vertical-align: top;
   position: relative;
   margin-bottom: 0.5rem;
+  width: 100%;
 }
 
 .c2 {
@@ -271,6 +272,7 @@ exports[`StoryPromo - Top Story with Media Indicator should render correctly 1`]
   vertical-align: top;
   position: relative;
   margin-bottom: 0.5rem;
+  width: 100%;
 }
 
 .c2 {

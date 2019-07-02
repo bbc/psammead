@@ -35,6 +35,9 @@ const fourOfSixColumnsMaxWidthScaleable = `66.67%`;
 const eightOfTwelveColumnsMaxScaleable = `66.67%`;
 // (8 / 12) * 100 = 66.6666666667 = 66.67%
 
+const fullWidthColumnsMaxScaleable = `100%`;
+// (12 / 12) * 100 = 100 = 100%
+
 const StoryPromoWrapper = styled.div`
   position: relative;
 
@@ -75,6 +78,7 @@ const ImageGridColumns = css`
 
 const ImageGridFallbackTopStory = css`
   margin-bottom: ${GEL_GUTTER_BELOW_600PX};
+  width: ${fullWidthColumnsMaxScaleable};
 
   @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
     width: ${twoOfSixColumnsMaxWidthScaleable};
