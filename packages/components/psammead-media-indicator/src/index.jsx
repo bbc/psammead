@@ -10,7 +10,7 @@ import mediaIcons from './mediaIcons';
 const MediaIndicatorWrapper = styled.div`
   padding: ${GEL_SPACING} ${GEL_SPACING_HLF};
   background-color: ${C_WHITE};
-  display: inline-block;
+  display: block;
   font-family: ${GEL_FF_REITH_SANS};
   ${GEL_MINION};
   color: ${C_EBON};
