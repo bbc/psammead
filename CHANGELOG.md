@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 1.2.3  | [PR#710](https://github.com/bbc/psammead/pull/710) Bump @testing-library/react from 8.0.1 to 8.0.4 |
 | 1.2.2  | [PR#730](https://github.com/bbc/psammead/pull/730) Bump eslint-plugin-jsx-a11y from 6.2.1 to 6.2.3 |
 | 1.2.1  | [PR#669](https://github.com/bbc/psammead/pull/641) Upgrade many npm dependencies then update snapshots |
 | 1.2.0   | [PR#663](https://github.com/bbc/psammead/pull/663) Add `@testing-library/react` as a dev dependancy |
