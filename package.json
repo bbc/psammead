@@ -33,7 +33,7 @@
   },
   "homepage": "https://github.com/bbc/psammead#readme",
   "dependencies": {
-    "@bbc/psammead-styles": "^0.4.1",
+    "@bbc/psammead-styles": "^0.6.0",
     "styled-components": "^4.3.1",
     "styled-normalize": "^8.0.4"
   },
