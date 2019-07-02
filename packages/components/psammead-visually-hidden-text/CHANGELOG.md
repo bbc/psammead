@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 | --------------------- |
+| 1.0.1   | [PR#713](https://github.com/bbc/psammead/pull/713) Update `styled-components` to 4.3.2 |
 | 1.0.0  | [PR#679](https://github.com/bbc/psammead/pull/679) Bump version number |
 | 0.1.14  | [PR#498](https://github.com/bbc/psammead/pull/498) Update stories to use new input provider |
 | 0.1.13  | [PR#430](https://github.com/bbc/psammead/pull/430) Add text knobs to story |

@@ -1,6 +1,3 @@
-# ⛔️ This is an alpha component  ⛔️
-This component is currently tagged as alpha and is not suitable for production use. Following the passing of an accessibility review this component will be marked as ready for production and the alpha tag removed.
-
 # psammead-story-promo-list - [![Known Vulnerabilities](https://snyk.io/test/github/bbc/psammead/badge.svg?targetFile=packages%2Fcomponents%2Fpsammead-story-promo-list%2Fpackage.json)](https://snyk.io/test/github/bbc/psammead?targetFile=packages%2Fcomponents%2Fpsammead-story-promo-list%2Fpackage.json) [![Storybook](https://raw.githubusercontent.com/storybooks/story-promo-list/master/badge/badge-storybook.svg?sanitize=true)](https://bbc.github.io/psammead/?path=/story/story-promo-list--default) [![GitHub license](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](https://github.com/bbc/psammead/blob/latest/LICENSE) [![npm version](https://img.shields.io/npm/v/@bbc/psammead-story-promo-list.svg)](https://www.npmjs.com/package/@bbc/psammead-story-promo-list) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/bbc/psammead/blob/latest/CONTRIBUTING.md)
 
 ## Description
@@ -13,6 +10,7 @@ The `@bbc/psammead-story-promo-list` package is a set of two components, `StoryP
 
 ## Props
 
+<!-- prettier-ignore -->
 | Argument | Type | Required | Default | Example        |
 | -------- | ---- | -------- | ------- | -------------- |
 | children | node | Yes      | N/A     | `<StoryPromoLi><StoryPromo image={Image} info={Info} /></StoryPromoLi>` |
@@ -33,7 +31,7 @@ const Image = (
 
 const Info = (
   <Fragment>
-    <Headline script={latin}>    
+    <Headline script={latin}>
       <Link href="https://www.bbc.co.uk/news">The headline of the promo</Link>
    </Headline>
     <Summary script={latin}>The summary of the promo</Summary>

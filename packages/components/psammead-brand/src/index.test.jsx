@@ -1,5 +1,6 @@
 import React from 'react';
 import { shouldMatchSnapshot } from '@bbc/psammead-test-helpers';
+import { render } from '@testing-library/react';
 import Brand from './index';
 
 const svg = {
@@ -64,4 +65,39 @@ describe('Brand', () => {
       borderBottom
     />,
   );
+
+  describe('assertions - visually hidden text', () => {
+    it('should have role of text when serviceLocalisedName is provided', () => {
+      const { container } = render(
+        <Brand
+          product="Default Brand Name"
+          serviceLocalisedName="Service"
+          svgHeight={24}
+          maxWidth={280}
+          minWidth={180}
+          svg={svg}
+          url="https://www.bbc.co.uk/news"
+        />,
+      );
+
+      expect(container.querySelector('span').getAttribute('role')).toEqual(
+        'text',
+      );
+    });
+
+    it('should not have role of text when serviceLocalisedName is not provided', () => {
+      const { container } = render(
+        <Brand
+          product="Default Brand Name"
+          svgHeight={24}
+          maxWidth={280}
+          minWidth={180}
+          svg={svg}
+          url="https://www.bbc.co.uk/news"
+        />,
+      );
+
+      expect(container.querySelector('span').getAttribute('role')).toBeNull();
+    });
+  });
 });
