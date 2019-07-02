@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 3.1.0   | [PR#XXX](https://github.com/bbc/psammead/pull/XXX) Add ability to limit set of services |
 | 3.0.0   | [PR#674](https://github.com/bbc/psammead/pull/674) Update inputProvider to pass an object with script, service, dir and slotTexts |
 | 2.1.2   | [PR#677](https://github.com/bbc/psammead/pull/677) Use `@bbc/gel-foundations@3.0.0` |
 | 2.1.1   | [PR#512](https://github.com/bbc/psammead/pull/512) Pass script and dir to storybook function |
