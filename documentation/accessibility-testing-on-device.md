@@ -9,19 +9,9 @@ Storybook publishes components in an iframe within the Storybook UI, this will b
 
 ## Local code in Storybook
 
-If you have a PR with code that is not yet merged and you need to preview this on another device, you can do so in Storybook via tunnelling:
+If you have a PR that is not yet merged and you need to preview this on another device, you can do so in Storybook via tunnelling:
 
 * Install packages ‘npm run install:packages’
 * Run storybook ‘npm run storybook’
 * Run your tunnellinng tool on the Storybook port
 * In Storybook [open the component in another tab](#open-the-component-in-a-tab)
-
-### Troubleshooting
-
-If working in a BBC office you may experience difficulties accessing the url, if so selecting one of the following networks may help:
-
-* **BBCNewsApps** (Note this must only be used on testing devices - Available on the 6th floor in NBH)
-* **VJ Device Network** (Available in the 4th floor collaboration zone in NBH)
-* Alternatively if you are happy to do so, you can connect to your own personal wifi connection
-
-Note, if you are using one of the **Accessibility PC laptops**, and you don't have any internet connection in IE after starting up, load a url in Chrome (this seems to start the 'myConnect IE Proxy Tool' if it hasn't done so on start up), then go back to IE and it should now work.
