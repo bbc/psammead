@@ -3,7 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 | ------- | ----------- |
-| 4.1.3   | [PR#XXX](https://github.com/bbc/psammead/pull/XXX) Add text role to avoid link fragmented on ios voiceover |
+| 4.1.3   | [PR#747](https://github.com/bbc/psammead/pull/747) Add text role to avoid link fragmented on ios voiceover |
 | 4.1.2   | [PR#684](https://github.com/bbc/psammead/pull/684) Update brand spacing breakpoint to kick in at 25rem |
 | 4.1.1   | [PR#677](https://github.com/bbc/psammead/pull/677) Use `@bbc/gel-foundations@3.0.0` |
 | 4.1.0   | [PR#647](https://github.com/bbc/psammead/pull/647) Add transparent borders with borderTop and borderBottom props |
