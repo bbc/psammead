@@ -21,7 +21,7 @@
     "@bbc/psammead-styles": "^0.3.2"
   },
   "devDependencies": {
-    "@bbc/psammead-inline-link": "^1.0.0",
+    "@bbc/psammead-inline-link": "^1.1.0",
     "@bbc/psammead-paragraph": "^1.0.3",
     "@bbc/psammead-storybook-helpers": "^2.1.1",
     "@bbc/psammead-test-helpers": "^0.3.3",
