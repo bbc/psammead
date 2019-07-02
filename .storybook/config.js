@@ -8,14 +8,8 @@ import {
   AMP_SCRIPT,
   AMP_NO_SCRIPT,
 } from '@bbc/psammead-assets/amp-boilerplate';
-import {
-  F_REITH_SERIF_MEDIUM,
-  F_REITH_SERIF_MEDIUM_ITALIC,
-  F_REITH_SANS_REGULAR,
-  F_REITH_SANS_ITALIC,
-  F_REITH_SANS_BOLD,
-  F_REITH_SANS_BOLD_ITALIC,
-} from '@bbc/psammead-styles/fonts';
+import * as fontFaces from '@bbc/psammead-styles/fonts';
+
 import Helmet from 'react-helmet';
 
 const theme = create({
@@ -55,12 +49,9 @@ const GlobalStyle = createGlobalStyle`
     box-sizing: inherit;
   }
 
-  ${F_REITH_SERIF_MEDIUM}
-  ${F_REITH_SERIF_MEDIUM_ITALIC}
-  ${F_REITH_SANS_REGULAR}
-  ${F_REITH_SANS_ITALIC}
-  ${F_REITH_SANS_BOLD}
-  ${F_REITH_SANS_BOLD_ITALIC}
+  
+  ${Object.values(fontFaces).join('')}
+
 `;
 
 addDecorator(story => (
