@@ -36,7 +36,7 @@ const LANGUAGE_VARIANTS = {
   },
   chineseSimp: { text: '家长们在学校门口维权。', script: 'chinese' },
   chineseTrad: { text: '家長們在學校門口維權。', script: 'chinese' },
-  english: {
+  news: {
     text: 'Could a computer ever create better art than a human?',
     script: 'latin',
   },
