@@ -1,6 +1,6 @@
 {
   "name": "@bbc/psammead",
-  "version": "1.2.1",
+  "version": "1.2.2",
   "description": "Core Components Library Developed & Maintained By The Articles and Reach & Languages Team",
   "main": "index.js",
   "scripts": {
@@ -33,8 +33,8 @@
   },
   "homepage": "https://github.com/bbc/psammead#readme",
   "dependencies": {
-    "@bbc/psammead-styles": "^0.4.1",
-    "styled-components": "^4.3.1",
+    "@bbc/psammead-styles": "^1.0.0",
+    "styled-components": "^4.3.2",
     "styled-normalize": "^8.0.4"
   },
   "devDependencies": {
@@ -61,7 +61,7 @@
     "eslint-config-prettier": "^5.0.0",
     "eslint-plugin-import": "^2.17.3",
     "eslint-plugin-json": "^1.2.1",
-    "eslint-plugin-jsx-a11y": "^6.1.2",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
     "eslint-plugin-prettier": "^3.0.0",
     "eslint-plugin-react": "^7.11.1",
     "gh-pages": "^2.0.1",

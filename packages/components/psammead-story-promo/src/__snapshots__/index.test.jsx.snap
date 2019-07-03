@@ -10,6 +10,7 @@ exports[`StoryPromo - Top Story should render correctly 1`] = `
   vertical-align: top;
   position: relative;
   margin-bottom: 0.5rem;
+  width: 100%;
 }
 
 .c2 {
@@ -81,21 +82,21 @@ exports[`StoryPromo - Top Story should render correctly 1`] = `
 
 @media (min-width:37.5rem) {
   .c1 {
-    max-width: 33.33%;
+    width: 33.33%;
     margin-bottom: none;
   }
 }
 
 @media (min-width:80rem) {
   .c1 {
-    max-width: 33.33%;
+    width: 33.33%;
   }
 }
 
 @supports (display:grid) {
   .c1 {
     display: block;
-    max-width: initial;
+    width: initial;
     grid-column: 1 / span 6;
   }
 }
@@ -151,7 +152,7 @@ exports[`StoryPromo - Top Story should render correctly 1`] = `
 
 @media (min-width:37.5rem) {
   .c3 {
-    max-width: 66.67%;
+    width: 66.67%;
   }
 }
 
@@ -163,14 +164,14 @@ exports[`StoryPromo - Top Story should render correctly 1`] = `
 
 @media (min-width:80rem) {
   .c3 {
-    max-width: 66.67%;
+    width: 66.67%;
   }
 }
 
 @supports (display:grid) {
   .c3 {
     display: block;
-    max-width: initial;
+    width: initial;
     padding: initial;
     grid-column: 1 / span 6;
   }
@@ -217,7 +218,7 @@ exports[`StoryPromo - Top Story should render correctly 1`] = `
 `;
 
 exports[`StoryPromo - Top Story with Media Indicator should render correctly 1`] = `
-.c8 {
+.c7 {
   -webkit-clip-path: inset(100%);
   clip-path: inset(100%);
   -webkit-clip: rect(1px,1px,1px,1px);
@@ -228,6 +229,12 @@ exports[`StoryPromo - Top Story with Media Indicator should render correctly 1`]
   width: 1px;
 }
 
+.c6 {
+  vertical-align: middle;
+  margin: 0 0.25rem;
+  fill: #222222;
+}
+
 .c4 {
   padding: 0.5rem 0.25rem;
   background-color: #FFFFFF;
@@ -236,6 +243,7 @@ exports[`StoryPromo - Top Story with Media Indicator should render correctly 1`]
   font-size: 0.75rem;
   line-height: 1rem;
   color: #222222;
+  height: 2rem;
 }
 
 .c5 {
@@ -247,15 +255,10 @@ exports[`StoryPromo - Top Story with Media Indicator should render correctly 1`]
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  height: 100%;
 }
 
-.c6 {
-  vertical-align: middle;
-  margin: 0 0.25rem;
-  fill: #222222;
-}
-
-.c7 {
+.c8 {
   vertical-align: middle;
   margin: 0 0.25rem;
 }
@@ -269,6 +272,7 @@ exports[`StoryPromo - Top Story with Media Indicator should render correctly 1`]
   vertical-align: top;
   position: relative;
   margin-bottom: 0.5rem;
+  width: 100%;
 }
 
 .c2 {
@@ -345,21 +349,21 @@ exports[`StoryPromo - Top Story with Media Indicator should render correctly 1`]
 
 @media (min-width:37.5rem) {
   .c1 {
-    max-width: 33.33%;
+    width: 33.33%;
     margin-bottom: none;
   }
 }
 
 @media (min-width:80rem) {
   .c1 {
-    max-width: 33.33%;
+    width: 33.33%;
   }
 }
 
 @supports (display:grid) {
   .c1 {
     display: block;
-    max-width: initial;
+    width: initial;
     grid-column: 1 / span 6;
   }
 }
@@ -415,7 +419,7 @@ exports[`StoryPromo - Top Story with Media Indicator should render correctly 1`]
 
 @media (min-width:37.5rem) {
   .c9 {
-    max-width: 66.67%;
+    width: 66.67%;
   }
 }
 
@@ -427,14 +431,14 @@ exports[`StoryPromo - Top Story with Media Indicator should render correctly 1`]
 
 @media (min-width:80rem) {
   .c9 {
-    max-width: 66.67%;
+    width: 66.67%;
   }
 }
 
 @supports (display:grid) {
   .c9 {
     display: block;
-    max-width: initial;
+    width: initial;
     padding: initial;
     grid-column: 1 / span 6;
   }
@@ -457,13 +461,13 @@ exports[`StoryPromo - Top Story with Media Indicator should render correctly 1`]
         className="c3"
       >
         <div
+          aria-hidden="true"
           className="c4"
         >
           <div
             className="c5"
           >
             <svg
-              aria-hidden="true"
               className="c6"
               focusable="false"
               height="12px"
@@ -474,20 +478,16 @@ exports[`StoryPromo - Top Story with Media Indicator should render correctly 1`]
                 points="3,32 29,16 3,0"
               />
             </svg>
-            <time
+            <span
               className="c7"
+            >
+              Video 2 minutes 15 seconds
+            </span>
+            <time
+              className="c8"
               dateTime="PT2M15S"
             >
-              <span
-                className="c8"
-              >
-                Video 2 minutes 15 seconds
-              </span>
-              <span
-                aria-hidden="true"
-              >
-                2:15
-              </span>
+              2:15
             </time>
           </div>
         </div>
@@ -528,7 +528,7 @@ exports[`StoryPromo should render correctly 1`] = `
   display: inline-block;
   vertical-align: top;
   position: relative;
-  max-width: 33.33%;
+  width: 33.33%;
 }
 
 .c2 {
@@ -559,7 +559,7 @@ exports[`StoryPromo should render correctly 1`] = `
 .c3 {
   display: inline-block;
   vertical-align: top;
-  max-width: 66.67%;
+  width: 66.67%;
   padding: 0 0.5rem;
 }
 
@@ -602,14 +602,14 @@ exports[`StoryPromo should render correctly 1`] = `
 
 @media (min-width:80rem) {
   .c1 {
-    max-width: 33.33%;
+    width: 33.33%;
   }
 }
 
 @supports (display:grid) {
   .c1 {
     display: block;
-    max-width: initial;
+    width: initial;
     grid-column: 1 / span 2;
   }
 }
@@ -678,14 +678,14 @@ exports[`StoryPromo should render correctly 1`] = `
 
 @media (min-width:80rem) {
   .c3 {
-    max-width: 66.67%;
+    width: 66.67%;
   }
 }
 
 @supports (display:grid) {
   .c3 {
     display: block;
-    max-width: initial;
+    width: initial;
     padding: initial;
     grid-column: 3 / span 4;
   }
@@ -732,7 +732,7 @@ exports[`StoryPromo should render correctly 1`] = `
 `;
 
 exports[`StoryPromo with Media Indicator should render correctly 1`] = `
-.c8 {
+.c7 {
   -webkit-clip-path: inset(100%);
   clip-path: inset(100%);
   -webkit-clip: rect(1px,1px,1px,1px);
@@ -743,6 +743,12 @@ exports[`StoryPromo with Media Indicator should render correctly 1`] = `
   width: 1px;
 }
 
+.c6 {
+  vertical-align: middle;
+  margin: 0 0.25rem;
+  fill: #222222;
+}
+
 .c4 {
   padding: 0.5rem 0.25rem;
   background-color: #FFFFFF;
@@ -751,6 +757,7 @@ exports[`StoryPromo with Media Indicator should render correctly 1`] = `
   font-size: 0.75rem;
   line-height: 1rem;
   color: #222222;
+  height: 2rem;
 }
 
 .c5 {
@@ -762,15 +769,10 @@ exports[`StoryPromo with Media Indicator should render correctly 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  height: 100%;
 }
 
-.c6 {
-  vertical-align: middle;
-  margin: 0 0.25rem;
-  fill: #222222;
-}
-
-.c7 {
+.c8 {
   vertical-align: middle;
   margin: 0 0.25rem;
 }
@@ -783,7 +785,7 @@ exports[`StoryPromo with Media Indicator should render correctly 1`] = `
   display: inline-block;
   vertical-align: top;
   position: relative;
-  max-width: 33.33%;
+  width: 33.33%;
 }
 
 .c2 {
@@ -814,7 +816,7 @@ exports[`StoryPromo with Media Indicator should render correctly 1`] = `
 .c9 {
   display: inline-block;
   vertical-align: top;
-  max-width: 66.67%;
+  width: 66.67%;
   padding: 0 0.5rem;
 }
 
@@ -857,14 +859,14 @@ exports[`StoryPromo with Media Indicator should render correctly 1`] = `
 
 @media (min-width:80rem) {
   .c1 {
-    max-width: 33.33%;
+    width: 33.33%;
   }
 }
 
 @supports (display:grid) {
   .c1 {
     display: block;
-    max-width: initial;
+    width: initial;
     grid-column: 1 / span 2;
   }
 }
@@ -940,14 +942,14 @@ exports[`StoryPromo with Media Indicator should render correctly 1`] = `
 
 @media (min-width:80rem) {
   .c9 {
-    max-width: 66.67%;
+    width: 66.67%;
   }
 }
 
 @supports (display:grid) {
   .c9 {
     display: block;
-    max-width: initial;
+    width: initial;
     padding: initial;
     grid-column: 3 / span 4;
   }
@@ -970,13 +972,13 @@ exports[`StoryPromo with Media Indicator should render correctly 1`] = `
         className="c3"
       >
         <div
+          aria-hidden="true"
           className="c4"
         >
           <div
             className="c5"
           >
             <svg
-              aria-hidden="true"
               className="c6"
               focusable="false"
               height="12px"
@@ -987,20 +989,16 @@ exports[`StoryPromo with Media Indicator should render correctly 1`] = `
                 points="3,32 29,16 3,0"
               />
             </svg>
-            <time
+            <span
               className="c7"
+            >
+              Video 2 minutes 15 seconds
+            </span>
+            <time
+              className="c8"
               dateTime="PT2M15S"
             >
-              <span
-                className="c8"
-              >
-                Video 2 minutes 15 seconds
-              </span>
-              <span
-                aria-hidden="true"
-              >
-                2:15
-              </span>
+              2:15
             </time>
           </div>
         </div>
