@@ -3,8 +3,9 @@
 <! -- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 1.1.1 | [PR#xxx](https://github.com/bbc/psammead/pull/xxx) Link default `color` should be `Ebon` not `Postbox` |
 | 1.1.0 | [PR#719](https://github.com/bbc/psammead/pull/719) Updates the link styling to new UX designs |
-| 1.0.1   | [PR#713](https://github.com/bbc/psammead/pull/713) Update `styled-components` to 4.3.2 |
+| 1.0.1 | [PR#713](https://github.com/bbc/psammead/pull/713) Update `styled-components` to 4.3.2 |
 | 1.0.0 | [PR#679](https://github.com/bbc/psammead/pull/679) Bump version number |
 | 0.3.8 | [PR#498](https://github.com/bbc/psammead/pull/498) Update stories to use new input provider |
 | 0.3.7 | [PR#424](https://github.com/bbc/psammead/pull/424) Add Snyk badge to readme |
