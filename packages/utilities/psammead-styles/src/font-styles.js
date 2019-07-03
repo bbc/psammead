@@ -54,3 +54,11 @@ export const getSerifMediumItalic = service => {
   const { serifMediumItalic } = fonts[service];
   return serifMediumItalic || getSansBoldItalic(service);
 };
+
+export const getSerifBold = service => {
+  if (!fonts[service]) {
+    return null;
+  }
+  const { serifBold } = fonts[service];
+  return serifBold || getSansBold(service);
+};
