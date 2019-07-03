@@ -9,8 +9,11 @@ storiesOf('Components|Paragraph', module)
   .addDecorator(withKnobs)
   .add(
     'default',
-    inputProvider([{ name: 'Paragraph' }], ([paragraph], script) => (
-      <Paragraph script={script}>{paragraph}</Paragraph>
-    )),
+    inputProvider(
+      [{ name: 'Paragraph' }],
+      ({ slotTexts: [paragraph], script }) => (
+        <Paragraph script={script}>{paragraph}</Paragraph>
+      ),
+    ),
     { notes, knobs: { escapeHTML: false } },
   );
