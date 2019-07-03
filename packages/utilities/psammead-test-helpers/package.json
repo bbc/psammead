@@ -25,7 +25,9 @@
     "snapshot"
   ],
   "dependencies": {
-    "jest-styled-components": "^6.3.1",
+    "jest-styled-components": "^6.3.1"
+  },
+  "devDependencies": {
     "react-test-renderer": "^16.8.6"
   }
 }
