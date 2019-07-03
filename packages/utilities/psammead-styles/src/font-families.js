@@ -2,10 +2,9 @@ const reithFallback = `Helvetica, Arial, sans-serif;`;
 const reithSans = `font-family: ReithSans, ${reithFallback}`;
 const reithSerif = `font-family: ReithSerif, ${reithFallback}`;
 
-const getFontStyleAndWeight = (style, weight) => `
-   font-style: ${style};
-   font-weight: ${weight};
-  `;
+const getFontStyleAndWeight = (style, weight) =>
+  `font-weight: ${weight};
+   font-style: ${style};`;
 
 export const news = {
   sansRegular: `
