@@ -3,7 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 | ------- | ----------- |
-| 1.0.2   | [PR#XXX](https://github.com/BBC/psammead/pull/XXX) Add missing 1.0.0 record to CHANGELOG and bump dependencies |
+| 1.0.2   | [PR#760](https://github.com/BBC/psammead/pull/760) Add missing 1.0.0 record to CHANGELOG and bump dependencies |
 | 1.0.1   | [PR#713](https://github.com/BBC/psammead/pull/713) Update `styled-components` to 4.3.2 |
 | 1.0.0   | [PR#741](https://github.com/BBC/psammead/pull/741) Remove alpha tag |
 | 1.0.0-alpha.1 | [PR#677](https://github.com/BBC/psammead/pull/677) Use `@bbc/gel-foundations@3.0.0` |
