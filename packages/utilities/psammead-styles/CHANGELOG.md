@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 1.0.2 | [PR#769](https://github.com/bbc/psammead/pull/769) Fix stories not appearing in storybook when using `install:packages:link` |
 | 1.0.1   | [PR#677](https://github.com/bbc/psammead/pull/677) Use `@bbc/gel-foundations@3.0.0` |
 | 1.0.0   | [PR#679](https://github.com/bbc/psammead/pull/679) Bump version number |
 | 0.6.0   | [PR#676](https://github.com/bbc/psammead/pull/676) Add Nassim Persian fonts v1.511 |
