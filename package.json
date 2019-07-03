@@ -20,7 +20,9 @@
     "test:lint": "eslint --ext .js,jsx,json ./packages ./scripts",
     "test:lint:css": "stylelint 'packages/**/*.js' 'packages/**/*.jsx' 'scripts/**/*.js'",
     "test:unit": "npm run build && jest --verbose --coverage",
-    "updateSnapshots": "npm run ci:packages && npm run test:unit -- -u"
+    "updateSnapshots": "npm run ci:packages && npm run test:unit -- -u",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -35,7 +37,8 @@
   "dependencies": {
     "@bbc/psammead-styles": "^1.0.0",
     "styled-components": "^4.3.2",
-    "styled-normalize": "^8.0.4"
+    "styled-normalize": "^8.0.4",
+    "snyk": "^1.189.0"
   },
   "devDependencies": {
     "@babel/cli": "^7.2.0",
@@ -120,5 +123,6 @@
       "cp -af /usr/lib/PSAMMEAD-COMPONENT-LIBRARY/bake-scripts/. /etc/bake-scripts/PSAMMEAD-COMPONENT-LIBRARY",
       "chmod +x /etc/bake-scripts/PSAMMEAD-COMPONENT-LIBRARY/*"
     ]
-  }
+  },
+  "snyk": true
 }
