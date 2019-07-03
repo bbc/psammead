@@ -65,16 +65,16 @@ const helmetFontStyles = {
   `,
 };
 
-const nessimPersian = `font-family: NassimPersian, Arial, Verdana, Geneva, Helvetica, sans serif`;
+const nassimPersian = `font-family: NassimPersian, Arial, Verdana, Geneva, Helvetica, sans serif;`;
 
 const persianStyles = {
   sansRegular: `
-    ${nessimPersian}
+    ${nassimPersian}
     font-style: normal;
     font-weight: 400;
   `,
   sansBold: `
-    ${nessimPersian} 
+    ${nassimPersian} 
     font-style: normal;
     font-weight: 700;
   `,
