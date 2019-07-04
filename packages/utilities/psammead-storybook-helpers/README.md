@@ -17,6 +17,7 @@ This package provides a collection of common values that are used in storybook b
   - `script`: A [script](https://github.com/bbc/psammead/tree/latest/packages/utilities/gel-foundations#script-support) corresponding to the service selected by the storybook user.
   - `dir`: Either `'ltr'` or `'rtl'`, corresponding to the language currently selected by the storybook user.
   - `service`: The service selected by the storybook user.
+- `services`: Array of services to filter LANGUAGE_VARIANT's provided into a smaller subset. Optional.
 
 `dirDecorator` - A storybook decorator function that uses `inputProvider` internally to provide direction control. It calls the storybook function with an object containing `dir`, `script` and the `service` name.
 
@@ -69,6 +70,7 @@ storiesOf('Caption', module)
           {captionText}
         </Caption>
       ),
+      ['news', 'persian', 'igbo']
     ),
     { knobs: { escapeHTML: false } },
   );

@@ -1,5 +1,6 @@
 import { select, text } from '@storybook/addon-knobs';
 import { testUtilityPackages } from '@bbc/psammead-test-helpers';
+import textVariants from './text-variants';
 import * as underTest from '.';
 
 jest.mock('@storybook/addon-knobs');
@@ -65,6 +66,32 @@ describe('Psammead storybook helpers', () => {
         service: 'news',
       });
       expect(select).toHaveBeenCalledTimes(1);
+      // Allows user to select all availible services
+      expect(select.mock.calls[0][1].length).toEqual(
+        Object.keys(textVariants).length,
+      );
+      expect(text).toHaveBeenCalledTimes(0);
+    });
+
+    it('filters services availible based on array provided', () => {
+      select.mockReturnValueOnce('news');
+
+      underTest.inputProvider([], renderFn, [
+        'mundo',
+        'pidgin',
+        'yoruba',
+        'foobar',
+      ])();
+
+      expect(renderFn).toHaveBeenCalledTimes(1);
+      expect(renderFn).toHaveBeenCalledWith({
+        dir: 'ltr',
+        slotTexts: [],
+        script: 'LATIN SCRIPT OBJECT',
+        service: 'news',
+      });
+      expect(select).toHaveBeenCalledTimes(1);
+      expect(select.mock.calls[0][1]).toEqual(['mundo', 'pidgin', 'yoruba']);
       expect(text).toHaveBeenCalledTimes(0);
     });
 
