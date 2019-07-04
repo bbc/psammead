@@ -38,3 +38,16 @@ describe('MediaIndicator', () => {
     <MediaIndicator offscreenText="Audio" type="audio" />,
   );
 });
+
+describe('MediaIndicator - Top Story', () => {
+  shouldMatchSnapshot(
+    'should render a top story audio promo render correctly',
+    <MediaIndicator
+      duration="2:15"
+      datetime="PT2M15S"
+      offscreenText="Audio"
+      type="audio"
+      topStory="true"
+    />,
+  );
+});
