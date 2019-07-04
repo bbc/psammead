@@ -3,7 +3,8 @@
 <! -- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
-| 1.1.2 |[PR#687](https://github.com/bbc/psammead/pull/687) Change visited text colour to `C_CLOUD_DARK` for `C_METAL` |
+| 1.1.3 | [PR#xxx](https://github.com/bbc/psammead/pull/xxx) Add section to readme regarding using this component without a wrapper and padding/margin |
+| 1.1.2 | [PR#687](https://github.com/bbc/psammead/pull/687) Change visited text colour to `C_CLOUD_DARK` for `C_METAL` |
 | 1.1.1 | [PR#761](https://github.com/bbc/psammead/pull/761) Link default `color` should be `Ebon` not `Postbox` |
 | 1.1.0 | [PR#719](https://github.com/bbc/psammead/pull/719) Updates the link styling to new UX designs |
 | 1.0.1 | [PR#713](https://github.com/bbc/psammead/pull/713) Update `styled-components` to 4.3.2 |
