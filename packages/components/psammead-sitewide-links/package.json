@@ -27,7 +27,7 @@
     "@bbc/psammead-styles": "^0.3.2"
   },
   "devDependencies": {
-    "@bbc/psammead-storybook-helpers": "^2.0.0",
+    "@bbc/psammead-storybook-helpers": "^3.0.0",
     "@bbc/psammead-test-helpers": "^0.3.3",
     "prop-types": "^15.6.2",
     "react": "^16.8.6",

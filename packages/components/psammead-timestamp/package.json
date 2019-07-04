@@ -20,7 +20,7 @@
     "@bbc/gel-foundations": "^3.0.0"
   },
   "devDependencies": {
-    "@bbc/psammead-storybook-helpers": "^2.1.1",
+    "@bbc/psammead-storybook-helpers": "^3.0.0",
     "@bbc/psammead-test-helpers": "^0.3.0",
     "styled-components": "^4.3.2"
   },
