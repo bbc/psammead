@@ -3,7 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
-| 1.0.7   | [PR#746](https://github.com/bbc/psammead/pull/746) Use `@bbc/psammead-inline-link@1.1.0` and add a 'with inline link' story |
+| 1.0.7   | [PR#746](https://github.com/bbc/psammead/pull/746) Use `@bbc/psammead-inline-link@1.1.1` and add a 'with inline link' story |
 | 1.0.6   | [PR#713](https://github.com/bbc/psammead/pull/713) Update `styled-components` to 4.3.2 |
 | 1.0.5   | [PR#677](https://github.com/bbc/psammead/pull/677) Use `@bbc/gel-foundations@3.0.0` |
 | 1.0.4   | [PR#498](https://github.com/bbc/psammead/pull/498) Update stories to use new input provider |
