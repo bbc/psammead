@@ -44,8 +44,9 @@ storiesOf('Components|Caption', module)
       ],
       ([linkText, captionText], script) => (
         <Caption script={script}>
-          {captionText}
-          <InlineLink href="https://www.bbc.com"> {linkText}</InlineLink>.
+          {`${captionText} `}
+          <InlineLink href="https://www.bbc.com">{linkText}</InlineLink>
+          {` ${captionText} `}
         </Caption>
       ),
     ),
