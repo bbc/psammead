@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`MediaIndicator - Top Story should render top story audio promo render correctly 1`] = `
+exports[`MediaIndicator - Top Story should render a top story audio promo render correctly 1`] = `
 .c3 {
   -webkit-clip-path: inset(100%);
   clip-path: inset(100%);
