@@ -50,6 +50,9 @@ storiesOf('Components|MediaIndicator/Video', module)
   );
 
 storiesOf('Components|MediaIndicator/Audio', module)
+  .addDecorator(PageDecorator)
+  .addDecorator(withKnobs)
+  .addDecorator(dirDecorator)
   .add(
     'audio without duration',
     () => (
