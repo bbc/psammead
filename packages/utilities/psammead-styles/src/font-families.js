@@ -2,41 +2,42 @@ const reithFallback = `Helvetica, Arial, sans-serif;`;
 const reithSans = `font-family: ReithSans, ${reithFallback}`;
 const reithSerif = `font-family: ReithSerif, ${reithFallback}`;
 
+const getFontStyleAndWeight = (style, weight) =>
+  `font-weight: ${weight};
+   font-style: ${style};`;
+
 export const news = {
   sansRegular: `
-   ${reithSans} 
-   font-style: normal;
-   font-weight: 400;
+   ${reithSans}
+   ${getFontStyleAndWeight('normal', 400)} 
   `,
   sansItalic: `
    ${reithSans}
-   font-style: italic;
-   font-weight: 400;
+   ${getFontStyleAndWeight('italic', 400)} 
   `,
   sansBold: `
    ${reithSans}
-   font-style: normal;
-   font-weight: 700;
+   ${getFontStyleAndWeight('normal', 700)}
   `,
   sansBoldItalic: `
    ${reithSans}
-   font-style: italic;
-   font-weight: 700;
+   ${getFontStyleAndWeight('italic', 700)}
   `,
   serifRegular: `
-   ${reithSerif},
-   font-style: normal;
-   font-weight: 400;
+   ${reithSerif}
+   ${getFontStyleAndWeight('normal', 400)}
   `,
   serifMedium: `
-   ${reithSerif} 
-   font-style: normal;
-   font-weight: 500;
+   ${reithSerif}
+   ${getFontStyleAndWeight('italic', 500)} 
   `,
   serifMediumItalic: `
-   ${reithSerif} 
-   font-style: italic;
-   font-weight: 500;
+   ${reithSerif}
+   ${getFontStyleAndWeight('italic', 500)}
+  `,
+  serifBold: `
+    ${reithSerif}
+    ${getFontStyleAndWeight('normal', 700)}
   `,
 };
 
@@ -45,23 +46,19 @@ const helmet = `font-family: Helmet, Freesans, Helvetica, Arial, sans serif;`;
 const helmetFontStyles = {
   sansRegular: `
     ${helmet}
-    font-weight: 400;
-    font-style: normal;
+    ${getFontStyleAndWeight('normal', 400)}
   `,
   sansItalic: `
     ${helmet}
-    font-weight: 400;
-    font-style: italic;
+    ${getFontStyleAndWeight('italic', 400)}
   `,
   sansBold: `
     ${helmet}
-    font-weight: 700;
-    font-style: normal;
+    ${getFontStyleAndWeight('normal', 700)}
   `,
   sansBoldItalic: `
     ${helmet}
-    font-weight: 700;
-    font-style: italic;
+    ${getFontStyleAndWeight('italic', 700)}
   `,
 };
 
@@ -70,13 +67,11 @@ const nassimPersian = `font-family: NassimPersian, Arial, Verdana, Geneva, Helve
 const persianStyles = {
   sansRegular: `
     ${nassimPersian}
-    font-style: normal;
-    font-weight: 400;
+    ${getFontStyleAndWeight('normal', 400)}
   `,
   sansBold: `
-    ${nassimPersian} 
-    font-style: normal;
-    font-weight: 700;
+    ${nassimPersian}
+    ${getFontStyleAndWeight('normal', 700)}
   `,
 };
 
