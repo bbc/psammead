@@ -1,0 +1,18 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.13.5
+ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  SNYK-JS-LODASH-450202:
+    - '@bbc/psammead-visually-hidden-text > styled-components > babel-plugin-styled-components > lodash':
+        patched: '2019-07-04T02:26:44.651Z'
+    - '@bbc/psammead-visually-hidden-text > styled-components > @babel/traverse > lodash':
+        patched: '2019-07-04T02:26:44.651Z'
+    - '@bbc/psammead-visually-hidden-text > styled-components > @babel/traverse > @babel/types > lodash':
+        patched: '2019-07-04T02:26:44.651Z'
+    - '@bbc/psammead-visually-hidden-text > styled-components > @babel/traverse > @babel/helper-split-export-declaration > @babel/types > lodash':
+        patched: '2019-07-04T02:26:44.651Z'
+    - '@bbc/psammead-visually-hidden-text > styled-components > babel-plugin-styled-components > @babel/helper-annotate-as-pure > @babel/types > lodash':
+        patched: '2019-07-04T02:26:44.651Z'
+    - '@bbc/psammead-visually-hidden-text > styled-components > @babel/traverse > @babel/helper-function-name > @babel/helper-get-function-arity > @babel/types > lodash':
+        patched: '2019-07-04T02:26:44.651Z'

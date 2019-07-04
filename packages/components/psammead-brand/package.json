@@ -19,7 +19,8 @@
   "dependencies": {
     "@bbc/gel-foundations": "^3.0.0",
     "@bbc/psammead-styles": "^0.3.2",
-    "@bbc/psammead-visually-hidden-text": "^0.1.10"
+    "@bbc/psammead-visually-hidden-text": "^0.1.10",
+    "snyk": "^1.189.0"
   },
   "devDependencies": {
     "@bbc/psammead-assets": "^0.1.9",
@@ -36,5 +37,10 @@
     "bbc",
     "brand",
     "logo"
-  ]
+  ],
+  "scripts": {
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
+  },
+  "snyk": true
 }
