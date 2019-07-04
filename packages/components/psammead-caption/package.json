@@ -1,6 +1,6 @@
 {
   "name": "@bbc/psammead-caption",
-  "version": "1.1.8",
+  "version": "1.1.9",
   "main": "dist/index.js",
   "description": "React styled components for a Caption",
   "repository": {
@@ -18,7 +18,7 @@
   "homepage": "https://github.com/bbc/psammead/blob/latest/packages/components/psammead-caption/README.md",
   "dependencies": {
     "@bbc/gel-foundations": "^3.0.0",
-    "@bbc/psammead-styles": "^0.3.2"
+    "@bbc/psammead-styles": "^1.0.1"
   },
   "devDependencies": {
     "@bbc/psammead-inline-link": "^1.1.1",
