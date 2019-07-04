@@ -3,6 +3,8 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 1.1.9 | [PR#745](https://github.com/bbc/psammead/pull/745) Use `@bbc/psammead-inline-link@1.1.1` and update 'with inline link' story |
+| 1.1.8 | [PR#763](https://github.com/bbc/psammead/pull/763) Change text colour to `C_CLOUD_DARK` for `C_METAL` |
 | 1.1.7 | [PR#713](https://github.com/bbc/psammead/pull/713) Update `styled-components` to 4.3.2 |
 | 1.1.6 | [PR#677](https://github.com/bbc/psammead/pull/677) Use `@bbc/gel-foundations@3.0.0` |
 | 1.1.5 | [PR#524](https://github.com/bbc/psammead/pull/524) Add spacing for nested paragraph |
