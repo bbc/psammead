@@ -23,7 +23,7 @@
     "moment-timezone"
   ],
   "dependencies": {
-    "@bbc/gel-foundations": "^3.0.0",
+    "@bbc/gel-foundations": "^3.0.1",
     "@bbc/psammead-timestamp": "^0.3.3",
     "moment-timezone": "^0.5.25"
   },
