@@ -8,6 +8,6 @@ exports[`Figure should render correctly 1`] = `
 }
 
 <figure
-  className="c0"
+  class="c0"
 />
 `;
