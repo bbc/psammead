@@ -1,23 +1,27 @@
 import styled from 'styled-components';
-import { shape } from 'prop-types';
+import { shape, string } from 'prop-types';
 import { C_SHADOW } from '@bbc/psammead-styles/colours';
+import { getSansRegular } from '@bbc/psammead-styles/font-styles';
 import { GEL_SPACING_TRPL } from '@bbc/gel-foundations/spacings';
-import {
-  getBodyCopy,
-  GEL_FF_REITH_SANS,
-} from '@bbc/gel-foundations/typography';
+import { getBodyCopy } from '@bbc/gel-foundations/typography';
 import { scriptPropType } from '@bbc/gel-foundations/prop-types';
 
 const Paragraph = styled.p`
   ${props => (props.script ? getBodyCopy(props.script) : '')};
+  ${props => getSansRegular(props.service)};
   color: ${C_SHADOW};
-  font-family: ${GEL_FF_REITH_SANS};
   padding-bottom: ${GEL_SPACING_TRPL};
   margin: 0; /* Reset */
 `;
 
 Paragraph.propTypes = {
   script: shape(scriptPropType).isRequired,
+  service: string,
+  // service: oneOf(arrayOfValidServiceNames) // do we have this array somewhere?
+};
+
+Paragraph.defaultProps = {
+  service: 'news',
 };
 
 export default Paragraph;

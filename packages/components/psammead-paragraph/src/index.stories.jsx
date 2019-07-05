@@ -12,8 +12,10 @@ storiesOf('Components|Paragraph', module)
     'default',
     inputProvider(
       [{ name: 'Paragraph' }],
-      ({ slotTexts: [paragraph], script }) => (
-        <Paragraph script={script}>{paragraph}</Paragraph>
+      ({ slotTexts: [paragraph], script, service }) => (
+        <Paragraph script={script} service={service}>
+          {paragraph}
+        </Paragraph>
       ),
     ),
     { notes, knobs: { escapeHTML: false } },
@@ -22,8 +24,8 @@ storiesOf('Components|Paragraph', module)
     'containing an inline link',
     inputProvider(
       [{ name: 'Paragraph' }, { name: 'Inline link' }],
-      ([paragraph, linkText], script) => (
-        <Paragraph script={script}>
+      ({ slotTexts: [paragraph, linkText], script, service }) => (
+        <Paragraph script={script} service={service}>
           {`${paragraph} `}
           <InlineLink href="https://www.bbc.com">{linkText}</InlineLink>
           {` ${paragraph}`}
