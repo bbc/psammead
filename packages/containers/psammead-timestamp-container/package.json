@@ -28,7 +28,7 @@
     "moment-timezone": "^0.5.25"
   },
   "devDependencies": {
-    "@bbc/psammead-test-helpers": "^0.3.4",
+    "@bbc/psammead-test-helpers": "^1.0.1",
     "react": "^16.8.6"
   },
   "peerDependencies": {
