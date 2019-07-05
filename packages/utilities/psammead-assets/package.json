@@ -23,7 +23,7 @@
     "amp"
   ],
   "devDependencies": {
-    "@bbc/psammead-test-helpers": "^0.3.0",
+    "@bbc/psammead-test-helpers": "^1.0.1",
     "prop-types": "^15.7.2",
     "react": "^16.8.6",
     "styled-components": "^4.3.2"
