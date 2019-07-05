@@ -2,10 +2,7 @@ import React from 'react';
 import styled, { css } from 'styled-components';
 import { arrayOf, shape, string } from 'prop-types';
 import { C_EBON, C_WHITE } from '@bbc/psammead-styles/colours';
-import {
-  GEL_BREVIER,
-  GEL_FF_REITH_SANS,
-} from '@bbc/gel-foundations/typography';
+import { GEL_BREVIER } from '@bbc/gel-foundations/typography';
 import {
   GEL_SPACING_DBL,
   GEL_MARGIN_BELOW_400PX,
@@ -15,6 +12,7 @@ import {
   GEL_GROUP_2_SCREEN_WIDTH_MIN,
   GEL_GROUP_5_SCREEN_WIDTH_MIN,
 } from '@bbc/gel-foundations/breakpoints';
+import { getSansRegular } from '@bbc/psammead-styles/font-styles';
 import Link from './Link';
 import List from './List';
 
@@ -31,7 +29,7 @@ const SitewideLinksWrapper = styled.div`
   ${layoutWrapperWithoutGrid};
   background-color: ${C_EBON};
   ${GEL_BREVIER};
-  font-family: ${GEL_FF_REITH_SANS};
+  ${({ service }) => (service ? getSansRegular(service) : '')}
 `;
 
 const ConstrainedWrapper = styled.div`
@@ -45,8 +43,8 @@ const StyledParagraph = styled.p`
   padding: ${GEL_SPACING_DBL} 0;
 `;
 
-const SitewideLinks = ({ links, copyrightText, externalLink }) => (
-  <SitewideLinksWrapper>
+const SitewideLinks = ({ links, copyrightText, externalLink, service }) => (
+  <SitewideLinksWrapper service={service}>
     <ConstrainedWrapper>
       <List links={links} />
       <StyledParagraph>
@@ -66,6 +64,7 @@ SitewideLinks.propTypes = {
   links: arrayOf(linkPropTypes.isRequired).isRequired,
   copyrightText: string.isRequired,
   externalLink: linkPropTypes.isRequired,
+  service: string.isRequired,
 };
 
 export default SitewideLinks;

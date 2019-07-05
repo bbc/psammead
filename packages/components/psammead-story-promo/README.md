@@ -14,6 +14,7 @@ The `StoryPromo` component is designed to be used on 'index' pages, which are pa
 
 ## StoryPromo Props
 
+<!-- prettier-ignore -->
 | Argument | Type   | Required | Default | Example        |
 | -------- | ------ | -------- | ------- | -------------- |
 | image    | node   | No       | Null    | `<img>`          |
@@ -23,21 +24,25 @@ The `StoryPromo` component is designed to be used on 'index' pages, which are pa
 
 ## Headline Props
 
+<!-- prettier-ignore -->
 | Argument  | Type | Required | Default | Example |
 | --------- | ---- | -------- | ------- | ------- |
 | Script    | object | yes | latin | { canon: { groupA: { fontSize: '28', lineHeight: '32',}, groupB: { fontSize: '32', lineHeight: '36', }, groupD: { fontSize: '44', lineHeight: '48', }, }, trafalgar: { groupA: { fontSize: '20', lineHeight: '24', }, groupB: { fontSize: '24', lineHeight: '28', }, groupD: { fontSize: '32', lineHeight: '36', }, }, }|
+| service | string | yes | N/A | `'news'` |
 
 ## Summary Props
 
+<!-- prettier-ignore -->
 | Argument  | Type | Required | Default | Example |
 | --------- | ---- | -------- | ------- | ------- |
 | Script    | object | yes | latin | { canon: { groupA: { fontSize: '28', lineHeight: '32',}, groupB: { fontSize: '32', lineHeight: '36', }, groupD: { fontSize: '44', lineHeight: '48', }, }, trafalgar: { groupA: { fontSize: '20', lineHeight: '24', }, groupB: { fontSize: '24', lineHeight: '28', }, groupD: { fontSize: '32', lineHeight: '36', }, }, }|
+| service | string | yes | N/A | `'news'` |
 
 ## Usage
 
 The typical use-case of this component is as displayed below. A Image sits on the left side of the promo with info elements on the right. These info elements are typically a headline, text summary paragraph and timestamp. The `Headline` and `Summary` components are provided by this package and can be imported as seen below.
 
-This component also has an option to display a media indicator, which consists of a play icon and duration of the media, if that data is provided. 
+This component also has an option to display a media indicator, which consists of a play icon and duration of the media, if that data is provided.
 
 The `topStory` prop can be passed to adopt a vertical card layout under 600px. This is designed to be used only on the first (top) story on an index. This prop must be passed to the StoryPromo, Headline and Summary components.
 
@@ -46,13 +51,11 @@ import React, { Fragment } from 'react';
 import StoryPromo, { Headline, Summary, Link } from '@bbc/psammead-story-promo';
 import { latin } from '@bbc/gel-foundations/scripts';
 
-const Image = (
-  <img src="https://foobar.com/image.jpg" />
-);
+const Image = <img src="https://foobar.com/image.jpg" />;
 
 const Info = (
   <Fragment>
-    <Headline script={latin} topStory={true}>      
+    <Headline script={latin} topStory={true}>
       <Link href="https://www.bbc.co.uk/news">The headline of the promo</Link>
     </Headline>
     <Summary script={latin} topStory={true}>
@@ -62,11 +65,7 @@ const Info = (
   </Fragment>
 );
 
-<StoryPromo
-  image={Image}
-  info={Info}
-  topStory={true}
-/>
+<StoryPromo image={Image} info={Info} topStory={true} />;
 ```
 
 ### When to use this component
@@ -77,7 +76,7 @@ The `StoryPromo` component is designed to be used within a link element to allow
 
 ### Accessibility notes
 
-This component uses full semantic markup for the `Headline`, `Summary`, and `Link`, using `h3`, `p` and `a` respectively. Other accessibility factors such as image alt text and time elements are passed in as props and aren't explicitly set in this component. 
+This component uses full semantic markup for the `Headline`, `Summary`, and `Link`, using `h3`, `p` and `a` respectively. Other accessibility factors such as image alt text and time elements are passed in as props and aren't explicitly set in this component.
 
 The link is nested inside the `h3` for better support with VoiceOver Mac and Safari. We use the `faux block link` pattern which makes the entire block clickable, whilst also enabling links nested within in that block to also be clickable.
 

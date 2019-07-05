@@ -6,7 +6,6 @@ exports[`Timestamp should render Timestamp correctly 1`] = `
   line-height: 1.125rem;
   color: #6E6E73;
   display: block;
-  font-family: ReithSans,Helvetica,Arial,sans-serif;
   padding-bottom: 0.25rem;
 }
 
@@ -42,7 +41,6 @@ exports[`Timestamp should render Timestamp with a prefix 1`] = `
   line-height: 1.25rem;
   color: #6E6E73;
   display: block;
-  font-family: ReithSans,Helvetica,Arial,sans-serif;
   padding-bottom: 0.25rem;
 }
 
@@ -78,7 +76,6 @@ exports[`Timestamp should render Timestamp without padding 1`] = `
   line-height: 1.25rem;
   color: #6E6E73;
   display: block;
-  font-family: ReithSans,Helvetica,Arial,sans-serif;
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
@@ -109,7 +106,6 @@ exports[`Timestamp should render with the correct typography style applied 1`] =
   line-height: 1.25rem;
   color: #6E6E73;
   display: block;
-  font-family: ReithSans,Helvetica,Arial,sans-serif;
   padding-bottom: 0.25rem;
 }
 

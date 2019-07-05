@@ -3,6 +3,8 @@
 exports[`ConsentBanner should correctly render 1`] = `
 .c0 {
   font-family: ReithSans,Helvetica,Arial,sans-serif;
+  font-weight: 400;
+  font-style: normal;
   background-color: #323232;
   padding: 1rem 0.5rem;
 }
@@ -180,6 +182,8 @@ exports[`ConsentBanner should correctly render 1`] = `
 exports[`ConsentBanner with hidden attribute on wrapper should correctly render 1`] = `
 .c0 {
   font-family: ReithSans,Helvetica,Arial,sans-serif;
+  font-weight: 400;
+  font-style: normal;
   background-color: #323232;
   padding: 1rem 0.5rem;
 }

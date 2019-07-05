@@ -13,7 +13,8 @@ exports[`SectionLabel When hideSectionHeader is true should add styling to hide 
   color: #222222;
   background-color: #FFFFFF;
   font-family: ReithSans,Helvetica,Arial,sans-serif;
-  font-weight: normal;
+  font-weight: 400;
+  font-style: normal;
   display: inline-block;
   position: relative;
   margin: 0;
@@ -93,7 +94,8 @@ exports[`SectionLabel With bar With title should render correctly 1`] = `
   color: #222222;
   background-color: #FFFFFF;
   font-family: ReithSans,Helvetica,Arial,sans-serif;
-  font-weight: normal;
+  font-weight: 400;
+  font-style: normal;
   display: inline-block;
   position: relative;
   margin: 0;
@@ -179,8 +181,9 @@ exports[`SectionLabel With bar With title should render correctly with arabic sc
   line-height: 2rem;
   color: #222222;
   background-color: #FFFFFF;
-  font-family: ReithSans,Helvetica,Arial,sans-serif;
-  font-weight: normal;
+  font-family: NassimPersian,Arial,Verdana,Geneva,Helvetica,sans serif;
+  font-weight: 400;
+  font-style: normal;
   display: inline-block;
   position: relative;
   margin: 0;
@@ -267,7 +270,8 @@ exports[`SectionLabel With bar With title should render correctly with explicit 
   color: #222222;
   background-color: #FFFFFF;
   font-family: ReithSans,Helvetica,Arial,sans-serif;
-  font-weight: normal;
+  font-weight: 400;
+  font-style: normal;
   display: inline-block;
   position: relative;
   margin: 0;
@@ -354,7 +358,8 @@ exports[`SectionLabel With bar With title should render correctly with explicitl
   color: #222222;
   background-color: #FFFFFF;
   font-family: ReithSans,Helvetica,Arial,sans-serif;
-  font-weight: normal;
+  font-weight: 400;
+  font-style: normal;
   display: inline-block;
   position: relative;
   margin: 0;
@@ -432,7 +437,8 @@ exports[`SectionLabel Without bar With title should render correctly 1`] = `
   color: #222222;
   background-color: #FFFFFF;
   font-family: ReithSans,Helvetica,Arial,sans-serif;
-  font-weight: normal;
+  font-weight: 400;
+  font-style: normal;
   display: inline-block;
   position: relative;
   margin: 0;
@@ -491,8 +497,9 @@ exports[`SectionLabel Without bar With title should render correctly with arabic
   line-height: 2rem;
   color: #222222;
   background-color: #FFFFFF;
-  font-family: ReithSans,Helvetica,Arial,sans-serif;
-  font-weight: normal;
+  font-family: NassimPersian,Arial,Verdana,Geneva,Helvetica,sans serif;
+  font-weight: 400;
+  font-style: normal;
   display: inline-block;
   position: relative;
   margin: 0;
@@ -552,7 +559,8 @@ exports[`SectionLabel Without bar With title should render correctly with explic
   color: #222222;
   background-color: #FFFFFF;
   font-family: ReithSans,Helvetica,Arial,sans-serif;
-  font-weight: normal;
+  font-weight: 400;
+  font-style: normal;
   display: inline-block;
   position: relative;
   margin: 0;

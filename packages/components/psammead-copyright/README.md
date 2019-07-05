@@ -10,9 +10,11 @@ Displays a source attribution in block capitals in the bottom-right of the paren
 
 ## Props
 
+<!-- prettier-ignore -->
 | Argument  | Type | Required | Default | Example |
 | --------- | ---- | -------- | ------- | ------- |
-| No props. |      |          |         |         |
+| position | string | No | `'left'` | `'right'` |
+| service | string | Yes | N/A | `'news'` |
 
 ## Usage
 
@@ -23,7 +25,7 @@ const WrapperComponent = ({ alt, ratio, src, width }) => (
   <Figure>
     <ImagePlaceholder ratio={ratio}>
       <Image alt={alt} src={src} width={width} />
-      <Copyright>
+      <Copyright service="news" position="right">
         <VisuallyHiddenText>Image source, </VisuallyHiddenText>
         Getty Images
       </Copyright>

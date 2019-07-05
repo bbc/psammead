@@ -12,11 +12,13 @@ npm install @bbc/psammead-sitewide-links --save
 
 ## Props
 
+<!-- prettier-ignore -->
 | Argument      | Type                  | Required | Default | Example                                           |
 | ------------- | --------------------- | -------- | ------- | ------------------------------------------------- |
 | links         | Array of Link objects | Yes      | N/A     | `[{href:'https://www.bbc.com', text: 'The BBC'}]` |
 | copyrightText | String                | Yes      | N/A     | `'Copyright BBC News'`                            |
 | externalLink  | Link object           | Yes      | N/A     | `{href:'https://www.bbc.com', text: 'The BBC'}`   |
+| service | string | Yes | N/A | `'news'` |
 
 ## Usage
 
@@ -30,6 +32,7 @@ const props = {
   ],
   copyrightText: 'Copyright BBC News',
   externalLink: { href: 'https://www.bbc.com', text: 'The BBC' },
+  service: 'news',
 };
 
 const WrappingComponent = () => <SitewideLinks {...props} />;
@@ -41,7 +44,7 @@ _Example -_
 
 ```jsx
 <footer role="contentinfo">
-  <SitewideLinks />
+  <SitewideLinks service="news" />
 </footer>
 ```
 

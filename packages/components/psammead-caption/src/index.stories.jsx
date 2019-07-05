@@ -11,9 +11,14 @@ storiesOf('Components|Caption', module)
   .addDecorator(withKnobs)
   .add(
     'default',
-    inputProvider([{ name: 'Caption' }], ([captionText], script) => (
-      <Caption script={script}>{captionText}</Caption>
-    )),
+    inputProvider(
+      [{ name: 'Caption' }],
+      ({ slotTexts: [captionText], script, service }) => (
+        <Caption script={script} service={service}>
+          {captionText}
+        </Caption>
+      ),
+    ),
     { notes, knobs: { escapeHTML: false } },
   )
   .add(
@@ -23,8 +28,8 @@ storiesOf('Components|Caption', module)
         { name: 'Visual hidden text', defaultText: 'visually hidden text' },
         { name: 'Caption', defaultText: 'caption' },
       ],
-      ([hiddenText, captionText], script) => (
-        <Caption script={script}>
+      ({ slotTexts: [hiddenText, captionText], script, service }) => (
+        <Caption script={script} service={service}>
           <VisuallyHiddenText>{hiddenText}</VisuallyHiddenText>
           {captionText}
         </Caption>
@@ -39,8 +44,8 @@ storiesOf('Components|Caption', module)
         { name: 'Inline link', defaultText: 'inline link' },
         { name: 'Caption', defaultText: 'caption' },
       ],
-      ([linkText, captionText], script) => (
-        <Caption script={script}>
+      ({ slotTexts: [linkText, captionText], script, service }) => (
+        <Caption script={script} service={service}>
           {`${captionText} `}
           <InlineLink href="https://www.bbc.com">{linkText}</InlineLink>
           {` ${captionText} `}
@@ -55,8 +60,8 @@ storiesOf('Components|Caption', module)
   .addDecorator(dirDecorator)
   .add(
     'containing italicisation',
-    inputProvider([], (inputs, script) => (
-      <Caption script={script}>
+    inputProvider([], ({ service, script }) => (
+      <Caption script={script} service={service}>
         Example text with <i>italics</i>
       </Caption>
     )),
@@ -64,8 +69,8 @@ storiesOf('Components|Caption', module)
   )
   .add(
     'containing multiple paragraphs',
-    inputProvider([], (inputs, script) => (
-      <Caption script={script}>
+    inputProvider([], ({ service, script }) => (
+      <Caption script={script} service={service}>
         <p>Paragraph with padding bottom.</p>
         <p>
           Last paragraph - <i>without padding bottom</i>.

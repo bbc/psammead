@@ -18,10 +18,9 @@ import {
   getGreatPrimer,
   getParagon,
   getLongPrimer,
-  GEL_FF_REITH_SERIF,
-  GEL_FF_REITH_SANS,
 } from '@bbc/gel-foundations/typography';
 import { C_EBON, C_SHADOW, C_METAL } from '@bbc/psammead-styles/colours';
+import { getSansRegular, getSerifBold } from '@bbc/psammead-styles/font-styles';
 
 const twoOfSixColumnsMaxWidthScaleable = `33.33%`;
 // (2 / 6) * 100 = 0.3333333333 = 33.33%
@@ -142,10 +141,9 @@ export const Headline = styled.h3`
   }};
 
   color: ${C_EBON};
-  font-family: ${GEL_FF_REITH_SERIF};
+  ${({ service }) => (service ? getSerifBold(service) : '')}
   margin: 0; /* Reset */
   padding-bottom: ${GEL_SPACING};
-  font-weight: 700;
   @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
     ${props => (props.script ? getGreatPrimer(props.script) : '')};
   }
@@ -154,7 +152,7 @@ export const Headline = styled.h3`
 export const Summary = styled.p`
   ${props => (props.script ? getLongPrimer(props.script) : '')};
   color: ${C_SHADOW};
-  font-family: ${GEL_FF_REITH_SANS};
+  ${({ service }) => (service ? getSansRegular(service) : '')}
   margin: 0; /* Reset */
   padding-bottom: ${GEL_SPACING};
 

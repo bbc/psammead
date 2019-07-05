@@ -6,29 +6,37 @@ import { Headline, SubHeading } from './index';
 describe('Headline component', () => {
   shouldMatchSnapshot(
     'should render correctly',
-    <Headline script={latin}>This is my headline.</Headline>,
+    <Headline script={latin} service="news">
+      This is my headline.
+    </Headline>,
   );
 
   shouldMatchSnapshot(
     'should render correctly with arabic script typography values',
-    <Headline script={arabic}>هذا هو العنوان الخاص بي</Headline>,
+    <Headline script={arabic} service="persian">
+      هذا هو العنوان الخاص بي
+    </Headline>,
   );
 });
 
 describe('SubHeading component', () => {
   shouldMatchSnapshot(
     'should render correctly',
-    <SubHeading script={latin}>This is a SubHeading</SubHeading>,
+    <SubHeading script={latin} service="news">
+      This is a SubHeading
+    </SubHeading>,
   );
 
   shouldMatchSnapshot(
     'should render correctly with arabic script typography values',
-    <SubHeading script={arabic}>هذا عنوان فرعي</SubHeading>,
+    <SubHeading script={arabic} service="persian">
+      هذا عنوان فرعي
+    </SubHeading>,
   );
 
   shouldMatchSnapshot(
     'should render correctly with an ID',
-    <SubHeading id="This-is-a-SubHeading" script={latin}>
+    <SubHeading id="This-is-a-SubHeading" script={latin} service="news">
       This is a SubHeading
     </SubHeading>,
   );

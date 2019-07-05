@@ -1,5 +1,5 @@
-import styled, { css } from 'styled-components';
-import { shape } from 'prop-types';
+import styled from 'styled-components';
+import { shape, string } from 'prop-types';
 import {
   GEL_SPACING,
   GEL_SPACING_TRPL,
@@ -11,24 +11,15 @@ import {
   GEL_GROUP_3_SCREEN_WIDTH_MAX,
   GEL_GROUP_4_SCREEN_WIDTH_MIN,
 } from '@bbc/gel-foundations/breakpoints';
-import {
-  getLongPrimer,
-  GEL_FF_REITH_SANS,
-} from '@bbc/gel-foundations/typography';
+import { getLongPrimer } from '@bbc/gel-foundations/typography';
 import { C_METAL } from '@bbc/psammead-styles/colours';
 import { scriptPropType } from '@bbc/gel-foundations/prop-types';
-
-// Defined separately since in future will need to apply
-// only when the script supports italic text
-const FS_ITALIC = css`
-  font-style: italic;
-`;
+import { getSansItalic } from '@bbc/psammead-styles/font-styles';
 
 const Caption = styled.figcaption`
   ${props => (props.script ? getLongPrimer(props.script) : '')};
   color: ${C_METAL};
-  font-family: ${GEL_FF_REITH_SANS};
-  ${FS_ITALIC};
+  ${({ service }) => (service ? getSansItalic(service) : '')}
   padding: ${GEL_SPACING} ${GEL_MARGIN_BELOW_400PX} 0;
   width: 100%;
   @media (min-width: ${GEL_GROUP_2_SCREEN_WIDTH_MIN}) and (max-width: ${GEL_GROUP_3_SCREEN_WIDTH_MAX}) {
@@ -51,6 +42,7 @@ const Caption = styled.figcaption`
 
 Caption.propTypes = {
   script: shape(scriptPropType).isRequired,
+  service: string.isRequired,
 };
 
 export default Caption;

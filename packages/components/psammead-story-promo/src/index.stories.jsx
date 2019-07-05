@@ -8,13 +8,19 @@ import MediaIndicator from '@bbc/psammead-media-indicator';
 import notes from '../README.md';
 import StoryPromo, { Headline, Summary, Link } from './index';
 
-// eslint-disable-next-line react/prop-types
-const InfoComponent = ({ headlineText, summaryText, script, topStory }) => (
+/* eslint-disable react/prop-types */
+const InfoComponent = ({
+  headlineText,
+  summaryText,
+  script,
+  topStory,
+  service,
+}) => (
   <Fragment>
-    <Headline script={script} topStory={topStory}>
+    <Headline script={script} topStory={topStory} service={service}>
       <Link href="https://www.bbc.co.uk/news">{headlineText}</Link>
     </Headline>
-    <Summary script={script} topStory={topStory}>
+    <Summary script={script} topStory={topStory} service={service}>
       {summaryText}
     </Summary>
     <Timestamp
@@ -49,13 +55,14 @@ const MediaIndicatorComponent = (
 const generateStory = ({ mediaIndicator, topStory }) =>
   inputProvider(
     [{ name: 'Headline' }, { name: 'Summary' }],
-    ([headlineText, summaryText], script) => {
+    ({ slotTexts: [headlineText, summaryText], script, service }) => {
       const Info = (
         <InfoComponent
           headlineText={headlineText}
           summaryText={summaryText}
           script={script}
           topStory={topStory}
+          service={service}
         />
       );
 

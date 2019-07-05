@@ -1,8 +1,9 @@
 import styled from 'styled-components';
-import { oneOf } from 'prop-types';
+import { oneOf, string } from 'prop-types';
 import { C_WHITE } from '@bbc/psammead-styles/colours';
 import { GEL_SPACING, GEL_SPACING_HLF } from '@bbc/gel-foundations/spacings';
-import { GEL_MINION, GEL_FF_REITH_SANS } from '@bbc/gel-foundations/typography';
+import { GEL_MINION } from '@bbc/gel-foundations/typography';
+import { getSansRegular } from '@bbc/psammead-styles/font-styles';
 
 const Copyright = styled.p.attrs({
   role: 'text',
@@ -12,7 +13,7 @@ const Copyright = styled.p.attrs({
   text-transform: uppercase;
   color: ${C_WHITE};
   padding: ${GEL_SPACING_HLF} ${GEL_SPACING};
-  font-family: ${GEL_FF_REITH_SANS};
+  ${({ service }) => (service ? getSansRegular(service) : '')}
   position: absolute;
   bottom: 0;
   margin: 0;
@@ -21,6 +22,7 @@ const Copyright = styled.p.attrs({
 
 Copyright.propTypes = {
   position: oneOf(['left', 'right']),
+  service: string.isRequired,
 };
 
 Copyright.defaultProps = {
