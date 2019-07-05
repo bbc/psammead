@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 | ------- | ----------- |
+| 1.0.4   | [PR#XXX](https://github.com/bbc/psammead/pull/XXX) Use rem for the width and height of the Media SVGs |
 | 1.0.3   | [PR#713](https://github.com/bbc/psammead/pull/713) Update `styled-components` to 4.3.2 |
 | 1.0.2   | [PR#722](https://github.com/bbc/psammead/pull/722) Fix hover cap on older browsers |
 | 1.0.1   | [PR#677](https://github.com/bbc/psammead/pull/677) Use `@bbc/gel-foundations@3.0.0` |
