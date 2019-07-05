@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 | ------- | ----------- |
+| 4.1.5   | [PR#000](#) Fix brand colour in Firefox high contrast mode |
 | 4.1.4   | [PR#747](https://github.com/bbc/psammead/pull/747) Add text role to avoid link fragmented on ios voiceover |
 | 4.1.3   | [PR#713](https://github.com/bbc/psammead/pull/713) Update `styled-components` to 4.3.2 |
 | 4.1.2   | [PR#684](https://github.com/bbc/psammead/pull/684) Update brand spacing breakpoint to kick in at 25rem |
@@ -30,3 +31,4 @@
 | 0.1.2   | [PR#227](https://github.com/BBC-News/psammead/pull/227) Replace @bbc/gel-constants and @bbc/gel-foundations-styled-component with [@bbc/gel-foundations in Psammead](https://github.com/BBC-News/psammead/issues/226). |
 | 0.1.1   | [PR#202](https://github.com/BBC-News/psammead/pull/202) Fixes a styling bug caused by an [incorrect constant import](https://github.com/BBC-News/psammead/issues/201). |
 | 0.1.0   | [PR#105](https://github.com/BBC-News/psammead/pull/105) Create initial package, pulled in from [simorgh](https://github.com/BBC-News/simorgh).                         |
+

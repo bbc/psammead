@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 1.0.3   | [PR#000](#) Fix brand stories in Firefox high contrast mode |
 | 1.0.2   | [PR#713](https://github.com/bbc/psammead/pull/713) Update `styled-components` to 4.3.2 |
 | 1.0.1   | [PR#704](https://github.com/bbc/psammead/pull/704) Remove `fill` from SVGs |
 | 1.0.0   | [PR#679](https://github.com/bbc/psammead/pull/679) Bump version number |

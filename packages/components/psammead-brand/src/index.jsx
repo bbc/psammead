@@ -56,9 +56,11 @@ const StyledLink = styled.a`
   ${({ maxWidth, minWidth }) => brandWidth(minWidth, maxWidth)}
 `;
 
+// `currentColor` has been used to address high contrast mode in Firefox.
 const BrandSvg = styled.svg`
   box-sizing: content-box;
-  fill: ${C_WHITE};
+  color: ${C_WHITE};
+  fill: currentColor;
   padding-top: ${GEL_SPACING_DBL};
   padding-bottom: ${SVG_BOTTOM_OFFSET_BELOW_400PX};
 
