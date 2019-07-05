@@ -21,7 +21,7 @@ const StyledTimestamp = styled.time`
   ${props => (props.typographyFunc ? props.typographyFunc(props.script) : '')}
   color: ${C_METAL};
   display: block;
-  ${({ service }) => (service ? getSansRegular(service) : '')}
+  ${({ service }) => getSansRegular(service)}
   ${props => props.padding && PADDING}
  `;
 

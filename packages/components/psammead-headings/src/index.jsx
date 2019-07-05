@@ -13,7 +13,7 @@ import { getSansBold, getSerifMedium } from '@bbc/psammead-styles/font-styles';
 export const Headline = styled.h1`
   ${props => (props.script ? getCanon(props.script) : '')};
   color: ${C_SHADOW};
-  ${({ service }) => (service ? getSerifMedium(service) : '')}
+  ${({ service }) => getSerifMedium(service)}
   margin: 0; /* Reset */
   padding: ${GEL_SPACING_QUAD} 0;
   ${MEDIA_QUERY_TYPOGRAPHY.LAPTOP_AND_LARGER} {
@@ -26,7 +26,7 @@ export const SubHeading = styled.h2.attrs(() => ({
 }))`
   ${props => (props.script ? getTrafalgar(props.script) : '')};
   color: ${C_SHADOW};
-  ${({ service }) => (service ? getSansBold(service) : '')}
+  ${({ service }) => getSansBold(service)}
   margin: 0; /* Reset */
   padding: ${GEL_SPACING_TRPL} 0;
   ${MEDIA_QUERY_TYPOGRAPHY.LAPTOP_AND_LARGER} {

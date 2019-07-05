@@ -9,7 +9,7 @@ import { getSansRegular } from '@bbc/psammead-styles/font-styles';
 const Paragraph = styled.p`
   ${props => (props.script ? getBodyCopy(props.script) : '')};
   color: ${C_SHADOW};
-  ${({ service }) => (service ? getSansRegular(service) : '')}
+  ${({ service }) => getSansRegular(service)}
   padding-bottom: ${GEL_SPACING_TRPL};
   margin: 0; /* Reset */
 `;

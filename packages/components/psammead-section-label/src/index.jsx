@@ -84,7 +84,7 @@ const Title = styled.h2`
   ${({ script }) => script && getDoublePica(script)};
   color: ${C_EBON};
   background-color: ${C_WHITE};
-  ${({ service }) => (service ? getSansRegular(service) : '')}
+  ${({ service }) => getSansRegular(service)}
   display: inline-block;
   position: relative;
 

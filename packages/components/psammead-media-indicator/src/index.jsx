@@ -12,7 +12,7 @@ const MediaIndicatorWrapper = styled.div`
   padding: ${GEL_SPACING} ${GEL_SPACING_HLF};
   background-color: ${C_WHITE};
   display: block;
-  ${({ service }) => (service ? getSansRegular(service) : '')}
+  ${({ service }) => getSansRegular(service)}
   ${GEL_MINION};
   color: ${C_EBON};
   height: 2rem;

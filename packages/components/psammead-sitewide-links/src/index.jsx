@@ -29,7 +29,7 @@ const SitewideLinksWrapper = styled.div`
   ${layoutWrapperWithoutGrid};
   background-color: ${C_EBON};
   ${GEL_BREVIER};
-  ${({ service }) => (service ? getSansRegular(service) : '')}
+  ${({ service }) => getSansRegular(service)}
 `;
 
 const ConstrainedWrapper = styled.div`

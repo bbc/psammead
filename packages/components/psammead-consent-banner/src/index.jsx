@@ -23,7 +23,7 @@ import {
 import { getSansRegular } from '@bbc/psammead-styles/font-styles';
 
 const Wrapper = styled.div`
-${({ service }) => (service ? getSansRegular(service) : '')}
+  ${({ service }) => getSansRegular(service)}
   background-color: ${C_CONSENT_BACKGROUND};
   padding: ${GEL_SPACING_DBL} ${GEL_MARGIN_BELOW_400PX};
 

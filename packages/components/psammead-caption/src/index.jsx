@@ -19,7 +19,7 @@ import { getSansItalic } from '@bbc/psammead-styles/font-styles';
 const Caption = styled.figcaption`
   ${props => (props.script ? getLongPrimer(props.script) : '')};
   color: ${C_METAL};
-  ${({ service }) => (service ? getSansItalic(service) : '')}
+  ${({ service }) => getSansItalic(service)}
   padding: ${GEL_SPACING} ${GEL_MARGIN_BELOW_400PX} 0;
   width: 100%;
   @media (min-width: ${GEL_GROUP_2_SCREEN_WIDTH_MIN}) and (max-width: ${GEL_GROUP_3_SCREEN_WIDTH_MAX}) {

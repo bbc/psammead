@@ -141,7 +141,7 @@ export const Headline = styled.h3`
   }};
 
   color: ${C_EBON};
-  ${({ service }) => (service ? getSerifBold(service) : '')}
+  ${({ service }) => getSerifBold(service)}
   margin: 0; /* Reset */
   padding-bottom: ${GEL_SPACING};
   @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
@@ -152,7 +152,7 @@ export const Headline = styled.h3`
 export const Summary = styled.p`
   ${props => (props.script ? getLongPrimer(props.script) : '')};
   color: ${C_SHADOW};
-  ${({ service }) => (service ? getSansRegular(service) : '')}
+  ${({ service }) => getSansRegular(service)}
   margin: 0; /* Reset */
   padding-bottom: ${GEL_SPACING};
 
