@@ -79,8 +79,6 @@ npm run install:packages:link
 
 ## :dizzy: [Using Psammead](https://github.com/bbc/psammead/blob/latest/packages/components/README.md)
 
-### :fork_and_knife: Consuming Psammead components - pre-requisite
-
 ## :bar_chart: Support levels
 
 We strive for components to conform to the following minimum levels of support, but please check each component's individual README.
