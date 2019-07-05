@@ -43,7 +43,7 @@ storiesOf('Components|MediaIndicator/Video', module)
         datetime={text('datetime', 'PT2M15S')}
         offscreenText={text('offscreenText', 'Video')}
         type="video"
-        topStory="true"
+        topStory
       />
     ),
     { notes },
@@ -83,7 +83,7 @@ storiesOf('Components|MediaIndicator/Audio', module)
         duration={text('duration', '2:15')}
         datetime={text('datetime', 'PT2M15S')}
         type="audio"
-        topStory="true"
+        topStory
       />
     ),
     { notes },
