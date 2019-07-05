@@ -25,7 +25,7 @@
   ],
   "dependencies": {
     "@bbc/gel-foundations": "^3.0.0",
-    "react-helmet": "^5.2.0"
+    "react-helmet": "^5.2.1"
   },
   "devDependencies": {
     "@bbc/psammead-test-helpers": "^0.3.0",
