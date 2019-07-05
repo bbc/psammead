@@ -26,7 +26,8 @@ exports[`Brand should render correctly with link not provided 1`] = `
 
 .c2 {
   box-sizing: content-box;
-  fill: #FFFFFF;
+  color: #FFFFFF;
+  fill: currentColor;
   padding-top: 1rem;
   padding-bottom: 0.75rem;
   width: 100%;
@@ -132,7 +133,8 @@ exports[`Brand should render correctly with link provided 1`] = `
 
 .c4 {
   box-sizing: content-box;
-  fill: #FFFFFF;
+  color: #FFFFFF;
+  fill: currentColor;
   padding-top: 1rem;
   padding-bottom: 0.75rem;
   width: 100%;
@@ -236,7 +238,8 @@ exports[`Brand should render correctly with no service Localised Name 1`] = `
 
 .c2 {
   box-sizing: content-box;
-  fill: #FFFFFF;
+  color: #FFFFFF;
+  fill: currentColor;
   padding-top: 1rem;
   padding-bottom: 0.75rem;
   width: 100%;
@@ -330,7 +333,8 @@ exports[`Brand should render correctly with transparent borders 1`] = `
 
 .c2 {
   box-sizing: content-box;
-  fill: #FFFFFF;
+  color: #FFFFFF;
+  fill: currentColor;
   padding-top: 1rem;
   padding-bottom: 0.75rem;
   width: 100%;
