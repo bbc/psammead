@@ -24,7 +24,7 @@
   "devDependencies": {
     "@bbc/psammead-assets": "^0.1.9",
     "@bbc/psammead-storybook-helpers": "^2.1.1",
-    "@bbc/psammead-test-helpers": "^0.3.3",
+    "@bbc/psammead-test-helpers": "^1.0.1",
     "react": "^16.8.6",
     "styled-components": "^4.3.2",
     "@bbc/psammead-brand": "^4.1.2"
