@@ -3,7 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 | ------- | ----------- |
-| 2.0.0 | [PR#???](https://github.com/bbc/psammead/pull/???) Apply font based on service prop |
+| 2.0.0 | [PR#790](https://github.com/bbc/psammead/pull/790) Apply font based on service prop |
 | 1.0.3   | [PR#713](https://github.com/bbc/psammead/pull/713) Update `styled-components` to 4.3.2 |
 | 1.0.2   | [PR#722](https://github.com/bbc/psammead/pull/722) Fix hover cap on older browsers |
 | 1.0.1   | [PR#677](https://github.com/bbc/psammead/pull/677) Use `@bbc/gel-foundations@3.0.0` |

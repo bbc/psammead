@@ -3,7 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 | ------- | ----------- |
-| 1.0.0-alpha.5 | [PR#???](https://github.com/bbc/psammead/pull/???) Apply font based on service prop |
+| 1.0.0-alpha.5 | [PR#790](https://github.com/bbc/psammead/pull/790) Apply font based on service prop |
 | 1.0.0-alpha.4 | [PR#706](https://github.com/bbc/psammead/pull/706) Fix amp images not showing in IE11  |
 | 1.0.0-alpha.3   | [PR#713](https://github.com/bbc/psammead/pull/713) Update `styled-components` to 4.3.2 |
 | 1.0.0-alpha.2 | [PR#694](https://github.com/bbc/psammead/pull/694) Fix floating media indicator and promo link bugs  |

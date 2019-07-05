@@ -3,7 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
-| 2.0.0 | [PR#???](https://github.com/bbc/psammead/pull/???) Apply font based on service prop |
+| 2.0.0 | [PR#790](https://github.com/bbc/psammead/pull/790) Apply font based on service prop |
 | 1.1.9 | [PR#745](https://github.com/bbc/psammead/pull/745) Use `@bbc/psammead-inline-link@1.1.1` and update 'with inline link' story |
 | 1.1.8 | [PR#763](https://github.com/bbc/psammead/pull/763) Change text colour to `C_CLOUD_DARK` for `C_METAL` |
 | 1.1.7 | [PR#713](https://github.com/bbc/psammead/pull/713) Update `styled-components` to 4.3.2 |
