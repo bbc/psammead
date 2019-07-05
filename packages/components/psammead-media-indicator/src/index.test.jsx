@@ -47,7 +47,7 @@ describe('MediaIndicator - Top Story', () => {
       datetime="PT2M15S"
       offscreenText="Audio"
       type="audio"
-      topStory="true"
+      topStory
     />,
   );
 });
