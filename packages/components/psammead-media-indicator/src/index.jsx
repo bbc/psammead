@@ -21,6 +21,7 @@ const MediaIndicatorWrapper = styled.div`
     !topStory &&
     css`
       @media (max-width: ${GEL_GROUP_1_SCREEN_WIDTH_MAX}) {
+        height: 1.25rem;
         padding: ${GEL_SPACING_HLF} ${GEL_SPACING_HLF} 0;
       }
     `}
