@@ -25,7 +25,7 @@
   ],
   "devDependencies": {
     "@bbc/gel-foundations": "^3.0.0",
-    "@bbc/psammead-storybook-helpers": "^2.1.1",
+    "@bbc/psammead-storybook-helpers": "^3.1.0",
     "@bbc/psammead-test-helpers": "^0.3.0"
   }
 }
