@@ -22,7 +22,7 @@ storiesOf('Components|Paragraph', module)
     'containing an inline link',
     inputProvider(
       [{ name: 'Paragraph' }, { name: 'Inline link' }],
-      ([paragraph, linkText], script) => (
+      ({ slotTexts: [paragraph, linkText], script }) => (
         <Paragraph script={script}>
           {`${paragraph} `}
           <InlineLink href="https://www.bbc.com">{linkText}</InlineLink>

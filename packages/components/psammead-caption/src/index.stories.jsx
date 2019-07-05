@@ -26,7 +26,7 @@ storiesOf('Components|Caption', module)
         { name: 'Visual hidden text', defaultText: 'visually hidden text' },
         { name: 'Caption', defaultText: 'caption' },
       ],
-      ([hiddenText, captionText], script) => (
+      ({ slotTexts: [hiddenText, captionText], script }) => (
         <Caption script={script}>
           <VisuallyHiddenText>{hiddenText}</VisuallyHiddenText>
           {captionText}
@@ -42,7 +42,7 @@ storiesOf('Components|Caption', module)
         { name: 'Inline link', defaultText: 'inline link' },
         { name: 'Caption', defaultText: 'caption' },
       ],
-      ([linkText, captionText], script) => (
+      ({ slotTexts: [linkText, captionText], script }) => (
         <Caption script={script}>
           {`${captionText} `}
           <InlineLink href="https://www.bbc.com">{linkText}</InlineLink>
