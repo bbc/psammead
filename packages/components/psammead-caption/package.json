@@ -22,7 +22,7 @@
   },
   "devDependencies": {
     "@bbc/psammead-inline-link": "^1.1.1",
-    "@bbc/psammead-paragraph": "^1.0.3",
+    "@bbc/psammead-paragraph": "^1.0.7",
     "@bbc/psammead-storybook-helpers": "^2.1.1",
     "@bbc/psammead-test-helpers": "^0.3.3",
     "@bbc/psammead-visually-hidden-text": "^0.1.10",
