@@ -53,7 +53,9 @@ exports[`MediaIndicator should render audio correctly without duration details 1
     <svg
       class="c2"
       focusable="false"
+      height="12px"
       viewBox="0 0 13 12"
+      width="13px"
     >
       <path
         d="M9.021 1.811l-.525.525c.938.938 1.5 2.25 1.5 3.675s-.563 2.738-1.5 3.675l.525.525c1.05-1.087 1.725-2.55 1.725-4.2s-.675-3.112-1.725-4.2z"
@@ -129,7 +131,9 @@ exports[`MediaIndicator should render audio indicator correctly 1`] = `
     <svg
       class="c2"
       focusable="false"
+      height="12px"
       viewBox="0 0 13 12"
+      width="13px"
     >
       <path
         d="M9.021 1.811l-.525.525c.938.938 1.5 2.25 1.5 3.675s-.563 2.738-1.5 3.675l.525.525c1.05-1.087 1.725-2.55 1.725-4.2s-.675-3.112-1.725-4.2z"
@@ -206,7 +210,9 @@ exports[`MediaIndicator should render video by default 1`] = `
     <svg
       class="c2"
       focusable="false"
+      height="12px"
       viewBox="0 0 32 32"
+      width="12px"
     >
       <polygon
         points="3,32 29,16 3,0"
@@ -274,7 +280,9 @@ exports[`MediaIndicator should render video correctly without duration details 1
     <svg
       class="c2"
       focusable="false"
+      height="12px"
       viewBox="0 0 32 32"
+      width="12px"
     >
       <polygon
         points="3,32 29,16 3,0"
@@ -347,7 +355,9 @@ exports[`MediaIndicator should render video indicator correctly 1`] = `
     <svg
       class="c2"
       focusable="false"
+      height="12px"
       viewBox="0 0 32 32"
+      width="12px"
     >
       <polygon
         points="3,32 29,16 3,0"
