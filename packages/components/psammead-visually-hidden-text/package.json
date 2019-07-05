@@ -18,7 +18,7 @@
   "homepage": "https://github.com/bbc/psammead/blob/latest/packages/components/psammead-visually-hidden-text/README.md",
   "devDependencies": {
     "@bbc/psammead-storybook-helpers": "^2.0.0",
-    "@bbc/psammead-test-helpers": "^0.3.0",
+    "@bbc/psammead-test-helpers": "^1.0.1",
     "styled-components": "^4.3.2"
   },
   "peerDependencies": {
