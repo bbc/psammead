@@ -2,17 +2,15 @@ import React from 'react';
 import styled from 'styled-components';
 import { storiesOf } from '@storybook/react';
 import { GEL_SPACING, GEL_SPACING_DBL } from '@bbc/gel-foundations/spacings';
-import {
-  getBodyCopy,
-  GEL_FF_REITH_SANS,
-} from '@bbc/gel-foundations/typography';
+import { getBodyCopy } from '@bbc/gel-foundations/typography';
 import { latin } from '@bbc/gel-foundations/scripts';
 import notes from '../README.md';
 import * as colours from './colours';
+import { getSansRegular } from './font-styles';
 
 const ColourContainer = styled.div`
   padding: ${GEL_SPACING_DBL};
-  font-family: ${GEL_FF_REITH_SANS};
+  ${getSansRegular('news')}
 `;
 
 const ColourRow = styled.div`

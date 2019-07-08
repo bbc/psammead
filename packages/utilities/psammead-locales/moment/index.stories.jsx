@@ -8,7 +8,7 @@ import {
   GEL_SPACING,
   GEL_SPACING_DBL,
 } from '@bbc/gel-foundations/spacings';
-import { GEL_FF_REITH_SANS } from '@bbc/gel-foundations/typography';
+import { getSansRegular } from '@bbc/psammead-styles/font-styles';
 import notes from '../README.md';
 import './ig';
 import './pcm';
@@ -20,7 +20,7 @@ const locales = [
   { name: 'Pidgin', locale: 'pcm' },
 ];
 
-/* eslint-disable prettier/prettier */
+/* prettier-ignore */
 const funcs = [
   locale => moment().locale(locale).format('MMMM Do YYYY, h:mm:ss a'),
   locale => moment().locale(locale).format('dddd'),
@@ -51,12 +51,11 @@ const funcs = [
   locale => moment().locale(locale).format('LLLL'),
   locale => moment().locale(locale).format('llll'),
 ];
-/* eslint-enable prettier/prettier */
 
 const Table = styled.table`
   margin: ${GEL_SPACING_DBL};
   border: 1px solid ${C_PEBBLE};
-  font-family: ${GEL_FF_REITH_SANS};
+  ${getSansRegular('news')};
 
   & td,
   th {
@@ -66,7 +65,7 @@ const Table = styled.table`
 `;
 
 const Paragraph = styled.p`
-  font-family: ${GEL_FF_REITH_SANS};
+  ${getSansRegular('news')};
   margin: ${GEL_SPACING_DBL};
 `;
 
