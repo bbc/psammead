@@ -1,6 +1,6 @@
 # Psammead Image Placeholder Changelog
 
-<! --prettier-ignore -->
+<!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
 | 1.0.2 | [PR#783](https://github.com/bbc/psammead/pull/783) Update to latest psammead-test-helpers. Update snapshots. |
