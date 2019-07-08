@@ -13,5 +13,5 @@ If you have a PR that is not yet merged and you need to preview this on another 
 
 * Install packages ‘npm run install:packages’
 * Run storybook ‘npm run storybook’
-* Run your tunnellinng tool on the Storybook port
+* Run your tunnelling tool on the Storybook port
 * In Storybook [open the component in another tab](#open-the-component-in-a-tab)
