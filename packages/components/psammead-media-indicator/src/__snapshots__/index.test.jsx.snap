@@ -16,6 +16,8 @@ exports[`MediaIndicator - Top Story should render a top story audio promo render
   vertical-align: middle;
   margin: 0 0.25rem;
   fill: #222222;
+  width: 0.8125rem;
+  height: 0.75rem;
 }
 
 .c0 {
@@ -134,13 +136,13 @@ exports[`MediaIndicator should render audio correctly without duration details 1
 
 <div
   aria-hidden="true"
-  class="c0"
+  className="c0"
 >
   <div
-    class="c1"
+    className="c1"
   >
     <svg
-      class="c2"
+      className="c2"
       focusable="false"
       height="12px"
       viewBox="0 0 13 12"
@@ -154,7 +156,7 @@ exports[`MediaIndicator should render audio correctly without duration details 1
       />
     </svg>
     <span
-      class="c3"
+      className="c3"
     >
       Audio
     </span>
@@ -219,13 +221,13 @@ exports[`MediaIndicator should render audio indicator correctly 1`] = `
 
 <div
   aria-hidden="true"
-  class="c0"
+  className="c0"
 >
   <div
-    class="c1"
+    className="c1"
   >
     <svg
-      class="c2"
+      className="c2"
       focusable="false"
       height="12px"
       viewBox="0 0 13 12"
@@ -239,13 +241,13 @@ exports[`MediaIndicator should render audio indicator correctly 1`] = `
       />
     </svg>
     <span
-      class="c3"
+      className="c3"
     >
       Audio
     </span>
     <time
-      class="c4"
-      datetime="PT2M15S"
+      className="c4"
+      dateTime="PT2M15S"
     >
       2:15
     </time>
@@ -305,13 +307,13 @@ exports[`MediaIndicator should render video by default 1`] = `
 
 <div
   aria-hidden="true"
-  class="c0"
+  className="c0"
 >
   <div
-    class="c1"
+    className="c1"
   >
     <svg
-      class="c2"
+      className="c2"
       focusable="false"
       height="12px"
       viewBox="0 0 32 32"
@@ -322,7 +324,7 @@ exports[`MediaIndicator should render video by default 1`] = `
       />
     </svg>
     <span
-      class="c3"
+      className="c3"
     >
       Video
     </span>
@@ -382,13 +384,13 @@ exports[`MediaIndicator should render video correctly without duration details 1
 
 <div
   aria-hidden="true"
-  class="c0"
+  className="c0"
 >
   <div
-    class="c1"
+    className="c1"
   >
     <svg
-      class="c2"
+      className="c2"
       focusable="false"
       height="12px"
       viewBox="0 0 32 32"
@@ -399,7 +401,7 @@ exports[`MediaIndicator should render video correctly without duration details 1
       />
     </svg>
     <span
-      class="c3"
+      className="c3"
     >
       Video
     </span>
@@ -464,13 +466,13 @@ exports[`MediaIndicator should render video indicator correctly 1`] = `
 
 <div
   aria-hidden="true"
-  class="c0"
+  className="c0"
 >
   <div
-    class="c1"
+    className="c1"
   >
     <svg
-      class="c2"
+      className="c2"
       focusable="false"
       height="12px"
       viewBox="0 0 32 32"
@@ -481,13 +483,13 @@ exports[`MediaIndicator should render video indicator correctly 1`] = `
       />
     </svg>
     <span
-      class="c3"
+      className="c3"
     >
       Video
     </span>
     <time
-      class="c4"
-      datetime="PT2M15S"
+      className="c4"
+      dateTime="PT2M15S"
     >
       2:15
     </time>
