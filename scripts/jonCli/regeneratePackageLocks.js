@@ -2,7 +2,7 @@ const { exec } = require('child_process');
 const path = require('path');
 const getPaths = require('./getPaths');
 
-const packagePaths = ['package.json', ...getPaths('package.json')];
+const packagePaths = ['./package.json', ...getPaths('package.json')];
 
 const getPackageDir = packagePath => packagePath.replace('/package.json', '');
 
