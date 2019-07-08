@@ -36,6 +36,7 @@ These values can then be used directly within CSS declarations in code. Note tha
 
 ```jsx
 import { css } from 'styled-components';
+import { getSansRegular } from '@bbc/psammead-styles/font-styles';
 
 // These should only be included on your page once.
 const someGlobalCSS = css`
@@ -45,7 +46,7 @@ const someGlobalCSS = css`
 
 const SomeStyledComponent = css`
   background-color: ${C_POSTBOX};
-  font-family: ${GEL_FF_REITH_SANS};
+  font-family: ${({ service }) => getSansRegular(service)};
 `;
 ```
 
