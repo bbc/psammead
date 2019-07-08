@@ -20,12 +20,18 @@
     "@bbc/gel-foundations": "^3.0.1"
   },
   "devDependencies": {
-    "@bbc/psammead-storybook-helpers": "^2.1.1",
+    "@bbc/psammead-storybook-helpers": "^3.0.0",
     "@bbc/psammead-test-helpers": "^0.3.0",
     "styled-components": "^4.3.2"
   },
   "peerDependencies": {
     "styled-components": "^4.3.2"
   },
-  "keywords": ["bbc", "accessibility", "a11y", "screen readers", "off-screen"]
+  "keywords": [
+    "bbc",
+    "accessibility",
+    "a11y",
+    "screen readers",
+    "off-screen"
+  ]
 }

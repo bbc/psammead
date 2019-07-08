@@ -34,5 +34,10 @@
     "styled-components": "^4.3.2",
     "prop-types": "^15.7.2"
   },
-  "keywords": ["bbc", "story", "promo", "list"]
+  "keywords": [
+    "bbc",
+    "story",
+    "promo",
+    "list"
+  ]
 }

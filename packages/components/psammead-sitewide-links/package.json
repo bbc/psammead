@@ -7,7 +7,12 @@
     "type": "git",
     "url": "https://github.com/bbc/psammead/tree/latest/packages/components/psammead-sitewide-links"
   },
-  "keywords": ["bbc", "links", "sitewide-links", "styled-components"],
+  "keywords": [
+    "bbc",
+    "links",
+    "sitewide-links",
+    "styled-components"
+  ],
   "author": {
     "name": "Psammead Maintainers",
     "email": "PsammeadMaintainers@bbc.co.uk"
@@ -22,7 +27,7 @@
     "@bbc/psammead-styles": "^1.1.1"
   },
   "devDependencies": {
-    "@bbc/psammead-storybook-helpers": "^2.0.0",
+    "@bbc/psammead-storybook-helpers": "^3.0.0",
     "@bbc/psammead-test-helpers": "^0.3.3",
     "prop-types": "^15.6.2",
     "react": "^16.8.6",

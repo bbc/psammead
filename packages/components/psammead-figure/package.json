@@ -25,7 +25,7 @@
     "@bbc/psammead-image": "^0.3.3",
     "@bbc/psammead-image-placeholder": "^0.1.8",
     "@bbc/psammead-paragraph": "^1.0.3",
-    "@bbc/psammead-storybook-helpers": "^2.0.0",
+    "@bbc/psammead-storybook-helpers": "^3.0.0",
     "@bbc/psammead-test-helpers": "^0.3.3",
     "@bbc/psammead-visually-hidden-text": "^1.0.2",
     "react": "^16.8.6",
@@ -34,5 +34,8 @@
   "peerDependencies": {
     "styled-components": "^4.3.2"
   },
-  "keywords": ["bbc", "figure"]
+  "keywords": [
+    "bbc",
+    "figure"
+  ]
 }

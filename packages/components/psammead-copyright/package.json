@@ -28,5 +28,11 @@
   "peerDependencies": {
     "styled-components": "^4.3.2"
   },
-  "keywords": ["bbc", "copyright", "attribution", "image", "figure"]
+  "keywords": [
+    "bbc",
+    "copyright",
+    "attribution",
+    "image",
+    "figure"
+  ]
 }

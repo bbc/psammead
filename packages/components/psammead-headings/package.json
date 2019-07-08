@@ -21,12 +21,17 @@
     "@bbc/psammead-styles": "^1.1.1"
   },
   "devDependencies": {
-    "@bbc/psammead-storybook-helpers": "^2.0.0",
+    "@bbc/psammead-storybook-helpers": "^3.0.0",
     "@bbc/psammead-test-helpers": "^0.3.3",
     "styled-components": "^4.3.2"
   },
   "peerDependencies": {
     "styled-components": "^4.3.2"
   },
-  "keywords": ["bbc", "headings", "headline", "subheading"]
+  "keywords": [
+    "bbc",
+    "headings",
+    "headline",
+    "subheading"
+  ]
 }

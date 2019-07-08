@@ -7,7 +7,12 @@
     "type": "git",
     "url": "https://github.com/bbc/psammead/tree/latest/packages/components/psammead-inline-link"
   },
-  "keywords": ["bbc", "link", "inline-link", "styled-components"],
+  "keywords": [
+    "bbc",
+    "link",
+    "inline-link",
+    "styled-components"
+  ],
   "author": {
     "name": "Psammead Maintainers",
     "email": "PsammeadMaintainers@bbc.co.uk"
@@ -21,7 +26,7 @@
     "@bbc/psammead-styles": "^1.1.1"
   },
   "devDependencies": {
-    "@bbc/psammead-storybook-helpers": "^2.0.0",
+    "@bbc/psammead-storybook-helpers": "^3.0.0",
     "@bbc/psammead-test-helpers": "^0.3.0",
     "react": "^16.8.6",
     "styled-components": "^4.3.2"

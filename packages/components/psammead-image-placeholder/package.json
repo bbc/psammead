@@ -29,5 +29,9 @@
     "react": "^16.8.6",
     "styled-components": "^4.3.2"
   },
-  "keywords": ["bbc", "brand", "logo"]
+  "keywords": [
+    "bbc",
+    "brand",
+    "logo"
+  ]
 }
