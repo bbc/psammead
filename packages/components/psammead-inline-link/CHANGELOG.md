@@ -3,6 +3,7 @@
 <! -- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 1.1.5 | [PR#892](https://github.com/bbc/psammead/pull/892) Bump dependencies |
 | 1.1.4 | [PR#769](https://github.com/bbc/psammead/pull/769) Fix stories not appearing in storybook when using `install:packages:link` |
 | 1.1.3 | [PR#775](https://github.com/bbc/psammead/pull/775) Add section to readme regarding using this component without a wrapper and padding/margin |
 | 1.1.2 | [PR#687](https://github.com/bbc/psammead/pull/687) Change visited text colour to `C_CLOUD_DARK` for `C_METAL` |

@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 | ------- | ----------- |
+| 1.0.6   | [PR#892](https://github.com/bbc/psammead/pull/892) Bump dependencies |
 | 1.0.5   | [PR#788](https://github.com/BBC/psammead/pull/788) Use rem for the width and height of the Media SVGs |
 | 1.0.4   | [PR#769](https://github.com/bbc/psammead/pull/769) Fix stories not appearing in storybook when using `install:packages:link` |
 | 1.0.3   | [PR#713](https://github.com/bbc/psammead/pull/713) Update `styled-components` to 4.3.2 |
