@@ -29,6 +29,7 @@ exports[`Brand should render correctly with link not provided 1`] = `
   fill: #FFFFFF;
   padding-top: 1rem;
   padding-bottom: 0.75rem;
+  height: 1.5rem;
   width: 100%;
   max-width: 17.5rem;
   min-width: 11.25rem;
@@ -135,6 +136,7 @@ exports[`Brand should render correctly with link provided 1`] = `
   fill: #FFFFFF;
   padding-top: 1rem;
   padding-bottom: 0.75rem;
+  height: 1.5rem;
   width: 100%;
   max-width: 17.5rem;
   min-width: 11.25rem;
@@ -239,6 +241,7 @@ exports[`Brand should render correctly with no service Localised Name 1`] = `
   fill: #FFFFFF;
   padding-top: 1rem;
   padding-bottom: 0.75rem;
+  height: 1.5rem;
   width: 100%;
   max-width: 17.5rem;
   min-width: 11.25rem;
@@ -333,6 +336,7 @@ exports[`Brand should render correctly with transparent borders 1`] = `
   fill: #FFFFFF;
   padding-top: 1rem;
   padding-bottom: 0.75rem;
+  height: 1.5rem;
   width: 100%;
   max-width: 17.5rem;
   min-width: 11.25rem;
