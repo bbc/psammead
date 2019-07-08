@@ -3,7 +3,8 @@
 <!-- prettier-ignore -->
 | Version | Description |
 | ------- | ----------- |
-| 4.1.7   | [PR#892](https://github.com/bbc/psammead/pull/892) Bump dependencies |
+| 4.1.8   | [PR#892](https://github.com/bbc/psammead/pull/892) Bump dependencies |
+| 4.1.7   | [PR#787](https://github.com/bbc/psammead/pull/787) Fix brand colour in Firefox high contrast mode |
 | 4.1.6   | [PR#789](https://github.com/bbc/psammead/pull/789) Use rem for the `BrandSvg` height |
 | 4.1.5   | [PR#769](https://github.com/bbc/psammead/pull/769) Fix stories not appearing in storybook when using `install:packages:link` |
 | 4.1.4   | [PR#747](https://github.com/bbc/psammead/pull/747) Add text role to avoid link fragmented on ios voiceover |
