@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 1.1.1   | [PR#790](https://github.com/bbc/psammead/pull/790) Update readme and use font-function for font-style in story |
 | 1.1.0   | [PR#764](https://github.com/bbc/psammead/pull/764) Add function to get serif bold font |
 | 1.0.1   | [PR#677](https://github.com/bbc/psammead/pull/677) Use `@bbc/gel-foundations@3.0.0` |
 | 1.0.0   | [PR#679](https://github.com/bbc/psammead/pull/679) Bump version number |
