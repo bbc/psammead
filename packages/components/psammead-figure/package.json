@@ -23,7 +23,7 @@
     "@bbc/psammead-caption": "^0.3.0",
     "@bbc/psammead-copyright": "^0.3.2",
     "@bbc/psammead-image": "^0.3.3",
-    "@bbc/psammead-image-placeholder": "^0.1.8",
+    "@bbc/psammead-image-placeholder": "^1.0.1",
     "@bbc/psammead-paragraph": "^1.0.3",
     "@bbc/psammead-storybook-helpers": "^2.0.0",
     "@bbc/psammead-test-helpers": "^0.3.3",
