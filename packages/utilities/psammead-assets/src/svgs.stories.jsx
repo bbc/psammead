@@ -6,9 +6,11 @@ import { number as numberKnob, withKnobs } from '@storybook/addon-knobs';
 import notes from '../README.md';
 import * as svgs from './svgs';
 
+// `currentColor` has been used to address high contrast mode in Firefox.
 const Svg = styled.svg`
   display: block;
-  fill: #fff;
+  color: #fff;
+  fill: currentColor;
 `;
 
 const Container = styled.div`
