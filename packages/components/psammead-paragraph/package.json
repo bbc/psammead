@@ -1,17 +1,13 @@
 {
   "name": "@bbc/psammead-paragraph",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "React styled component for a Paragraph",
   "main": "dist/index.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/bbc/psammead/tree/latest/packages/components/psammead-paragraph"
   },
-  "keywords": [
-    "bbc",
-    "paragraph",
-    "styled-components"
-  ],
+  "keywords": ["bbc", "paragraph", "styled-components"],
   "author": {
     "name": "Psammead Maintainers",
     "email": "PsammeadMaintainers@bbc.co.uk"
@@ -22,8 +18,8 @@
   },
   "homepage": "https://github.com/bbc/psammead/blob/latest/packages/components/psammead-paragraph/README.md",
   "dependencies": {
-    "@bbc/gel-foundations": "^3.0.0",
-    "@bbc/psammead-styles": "^0.3.2"
+    "@bbc/gel-foundations": "^3.0.1",
+    "@bbc/psammead-styles": "^1.1.1"
   },
   "devDependencies": {
     "@bbc/psammead-inline-link": "1.1.1",

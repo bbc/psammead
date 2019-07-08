@@ -1,6 +1,6 @@
 {
   "name": "@bbc/psammead-story-promo",
-  "version": "1.0.0-alpha.4",
+  "version": "1.0.0-alpha.5",
   "main": "dist/index.js",
   "description": "A story promo for use on index pages",
   "repository": {
@@ -17,8 +17,8 @@
   },
   "homepage": "https://github.com/bbc/psammead/blob/latest/packages/components/psammead-story-promo/README.md",
   "dependencies": {
-    "@bbc/gel-foundations": "^3.0.0",
-    "@bbc/psammead-styles": "^1.0.0"
+    "@bbc/gel-foundations": "^3.0.1",
+    "@bbc/psammead-styles": "^1.1.1"
   },
   "devDependencies": {
     "@bbc/psammead-image": "^1.0.0",
@@ -34,11 +34,7 @@
     "styled-components": "^4.3.2",
     "prop-types": "^15.7.2"
   },
-  "keywords": [
-    "bbc",
-    "story",
-    "promo"
-  ],
+  "keywords": ["bbc", "story", "promo"],
   "publishConfig": {
     "tag": "alpha"
   }
