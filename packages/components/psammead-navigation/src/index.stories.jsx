@@ -113,7 +113,7 @@ const StyledMain = styled.main`
 `;
 
 const navigationStory = (skipLinkText, currentPageText, navData, brand) =>
-  inputProvider([], (inp, script, dir) => (
+  inputProvider([], ({ script, dir }) => (
     <Fragment>
       {brand && getBrand()}
 

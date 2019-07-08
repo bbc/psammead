@@ -63,7 +63,8 @@ const BrandSvg = styled.svg`
   fill: currentColor;
   padding-top: ${GEL_SPACING_DBL};
   padding-bottom: ${SVG_BOTTOM_OFFSET_BELOW_400PX};
-
+  height: ${props => props.height / 16}rem;
+  
   ${({ maxWidth, minWidth }) => brandWidth(minWidth, maxWidth)}
 
   @media (min-width: ${GEL_GROUP_2_SCREEN_WIDTH_MIN}) {

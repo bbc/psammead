@@ -21,7 +21,7 @@ TypographyText.propTypes = {
 };
 
 const typographyStory = typographyFunc =>
-  inputProvider([{ name: 'sample text' }], ([text], script) => (
+  inputProvider([{ name: 'sample text' }], ({ slotTexts: [text], script }) => (
     <TypographyText script={script} typographyFunc={typographyFunc}>
       {text}
     </TypographyText>
