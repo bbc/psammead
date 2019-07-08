@@ -25,7 +25,7 @@
     "@bbc/psammead-media-indicator": "^1.0.1",
     "@bbc/psammead-storybook-helpers": "^2.1.2",
     "@bbc/psammead-test-helpers": "^1.0.0",
-    "@bbc/psammead-timestamp": "^1.0.1",
+    "@bbc/psammead-timestamp": "^1.0.2",
     "react": "^16.8.6",
     "styled-components": "^4.3.2"
   },
