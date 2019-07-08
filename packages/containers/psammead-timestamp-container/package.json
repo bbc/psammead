@@ -25,7 +25,7 @@
   "dependencies": {
     "@bbc/gel-foundations": "^3.0.0",
     "@bbc/psammead-timestamp": "^0.3.3",
-    "moment-timezone": "^0.5.25"
+    "moment-timezone": "^0.5.26"
   },
   "devDependencies": {
     "@bbc/psammead-test-helpers": "^0.3.4",
