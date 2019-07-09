@@ -1,12 +1,12 @@
 import React from 'react';
 import styled from 'styled-components';
-import { C_EBON } from '@bbc/psammead-styles/colours';
 import { GEL_SPACING_HLF } from '@bbc/gel-foundations/spacings';
 
+// `currentColor` has been used to address high contrast mode in Firefox.
 const MediaIcon = styled.svg`
   vertical-align: middle;
   margin: 0 ${GEL_SPACING_HLF};
-  fill: ${C_EBON};
+  fill: currentColor;
 `;
 
 const VideoMediaIcon = styled(MediaIcon)`
