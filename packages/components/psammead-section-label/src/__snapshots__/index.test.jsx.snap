@@ -61,10 +61,10 @@ exports[`SectionLabel When hideSectionHeader is true should add styling to hide 
 }
 
 <div
-  className="c0"
+  class="c0"
 >
   <h2
-    className="c1"
+    class="c1"
     dir="ltr"
     id="test-section-label"
   />
@@ -146,10 +146,10 @@ exports[`SectionLabel With bar With title should render correctly 1`] = `
 }
 
 <div
-  className="c0"
+  class="c0"
 >
   <h2
-    className="c1"
+    class="c1"
     dir="ltr"
     id="test-section-label"
   >
@@ -233,10 +233,10 @@ exports[`SectionLabel With bar With title should render correctly with arabic sc
 }
 
 <div
-  className="c0"
+  class="c0"
 >
   <h2
-    className="c1"
+    class="c1"
     dir="rtl"
     id="test-section-label"
   >
@@ -320,10 +320,10 @@ exports[`SectionLabel With bar With title should render correctly with explicit 
 }
 
 <div
-  className="c0"
+  class="c0"
 >
   <h2
-    className="c1"
+    class="c1"
     dir="ltr"
     id="test-section-label"
   >
@@ -407,10 +407,10 @@ exports[`SectionLabel With bar With title should render correctly with explicitl
 }
 
 <div
-  className="c0"
+  class="c0"
 >
   <h2
-    className="c1"
+    class="c1"
     dir="ltr"
     id="test-section-label"
   >
@@ -467,10 +467,10 @@ exports[`SectionLabel Without bar With title should render correctly 1`] = `
 }
 
 <div
-  className="c0"
+  class="c0"
 >
   <h2
-    className="c1"
+    class="c1"
     dir="ltr"
     id="test-section-label"
   >
@@ -527,10 +527,10 @@ exports[`SectionLabel Without bar With title should render correctly with arabic
 }
 
 <div
-  className="c0"
+  class="c0"
 >
   <h2
-    className="c1"
+    class="c1"
     dir="rtl"
     id="test-section-label"
   >
@@ -587,10 +587,10 @@ exports[`SectionLabel Without bar With title should render correctly with explic
 }
 
 <div
-  className="c0"
+  class="c0"
 >
   <h2
-    className="c1"
+    class="c1"
     dir="ltr"
     id="test-section-label"
   >

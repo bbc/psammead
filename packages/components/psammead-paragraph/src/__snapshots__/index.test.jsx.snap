@@ -25,7 +25,7 @@ exports[`Paragraph should render a correctly 1`] = `
 }
 
 <p
-  className="c0"
+  class="c0"
 >
   This is text in a paragraph.
 </p>
@@ -56,7 +56,7 @@ exports[`Paragraph should render correctly with arabic script typography values 
 }
 
 <p
-  className="c0"
+  class="c0"
 >
   بعض محتوى النص
 </p>

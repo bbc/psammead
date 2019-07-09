@@ -24,7 +24,7 @@ exports[`InlineLink should render correctly 1`] = `
 }
 
 <a
-  className="c0"
+  class="c0"
   href="https://www.bbc.com/news"
 >
   BBC News

@@ -178,13 +178,13 @@ exports[`StoryPromo - Top Story should render correctly 1`] = `
 }
 
 <div
-  className="c0"
+  class="c0"
 >
   <div
-    className="c1"
+    class="c1"
   >
     <div
-      className="c2"
+      class="c2"
     >
       <img
         alt="Alt text"
@@ -193,20 +193,20 @@ exports[`StoryPromo - Top Story should render correctly 1`] = `
     </div>
   </div>
   <div
-    className="c3"
+    class="c3"
   >
     <h3
-      className="c4"
+      class="c4"
     >
       <a
-        className="c5"
+        class="c5"
         href="https://www.bbc.co.uk/news"
       >
         The headline of the promo
       </a>
     </h3>
     <p
-      className="c6"
+      class="c6"
     >
       The summary of the promo
     </p>
@@ -445,30 +445,30 @@ exports[`StoryPromo - Top Story with Media Indicator should render correctly 1`]
 }
 
 <div
-  className="c0"
+  class="c0"
 >
   <div
-    className="c1"
+    class="c1"
   >
     <div
-      className="c2"
+      class="c2"
     >
       <img
         alt="Alt text"
         src="https://foobar.com/image.png"
       />
       <div
-        className="c3"
+        class="c3"
       >
         <div
           aria-hidden="true"
-          className="c4"
+          class="c4"
         >
           <div
-            className="c5"
+            class="c5"
           >
             <svg
-              className="c6"
+              class="c6"
               focusable="false"
               height="12px"
               viewBox="0 0 32 32"
@@ -479,13 +479,13 @@ exports[`StoryPromo - Top Story with Media Indicator should render correctly 1`]
               />
             </svg>
             <span
-              className="c7"
+              class="c7"
             >
               Video 2 minutes 15 seconds
             </span>
             <time
-              className="c8"
-              dateTime="PT2M15S"
+              class="c8"
+              datetime="PT2M15S"
             >
               2:15
             </time>
@@ -495,20 +495,20 @@ exports[`StoryPromo - Top Story with Media Indicator should render correctly 1`]
     </div>
   </div>
   <div
-    className="c9"
+    class="c9"
   >
     <h3
-      className="c10"
+      class="c10"
     >
       <a
-        className="c11"
+        class="c11"
         href="https://www.bbc.co.uk/news"
       >
         The headline of the promo
       </a>
     </h3>
     <p
-      className="c12"
+      class="c12"
     >
       The summary of the promo
     </p>
@@ -692,13 +692,13 @@ exports[`StoryPromo should render correctly 1`] = `
 }
 
 <div
-  className="c0"
+  class="c0"
 >
   <div
-    className="c1"
+    class="c1"
   >
     <div
-      className="c2"
+      class="c2"
     >
       <img
         alt="Alt text"
@@ -707,20 +707,20 @@ exports[`StoryPromo should render correctly 1`] = `
     </div>
   </div>
   <div
-    className="c3"
+    class="c3"
   >
     <h3
-      className="c4"
+      class="c4"
     >
       <a
-        className="c5"
+        class="c5"
         href="https://www.bbc.co.uk/news"
       >
         The headline of the promo
       </a>
     </h3>
     <p
-      className="c6"
+      class="c6"
     >
       The summary of the promo
     </p>
@@ -956,30 +956,30 @@ exports[`StoryPromo with Media Indicator should render correctly 1`] = `
 }
 
 <div
-  className="c0"
+  class="c0"
 >
   <div
-    className="c1"
+    class="c1"
   >
     <div
-      className="c2"
+      class="c2"
     >
       <img
         alt="Alt text"
         src="https://foobar.com/image.png"
       />
       <div
-        className="c3"
+        class="c3"
       >
         <div
           aria-hidden="true"
-          className="c4"
+          class="c4"
         >
           <div
-            className="c5"
+            class="c5"
           >
             <svg
-              className="c6"
+              class="c6"
               focusable="false"
               height="12px"
               viewBox="0 0 32 32"
@@ -990,13 +990,13 @@ exports[`StoryPromo with Media Indicator should render correctly 1`] = `
               />
             </svg>
             <span
-              className="c7"
+              class="c7"
             >
               Video 2 minutes 15 seconds
             </span>
             <time
-              className="c8"
-              dateTime="PT2M15S"
+              class="c8"
+              datetime="PT2M15S"
             >
               2:15
             </time>
@@ -1006,20 +1006,20 @@ exports[`StoryPromo with Media Indicator should render correctly 1`] = `
     </div>
   </div>
   <div
-    className="c9"
+    class="c9"
   >
     <h3
-      className="c10"
+      class="c10"
     >
       <a
-        className="c11"
+        class="c11"
         href="https://www.bbc.co.uk/news"
       >
         The headline of the promo
       </a>
     </h3>
     <p
-      className="c12"
+      class="c12"
     >
       The summary of the promo
     </p>
