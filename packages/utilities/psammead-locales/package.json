@@ -28,7 +28,7 @@
   },
   "devDependencies": {
     "@bbc/gel-foundations": "^3.0.0",
-    "@bbc/psammead-styles": "^0.4.1",
+    "@bbc/psammead-styles": "^1.1.1",
     "moment": "^2.24.0"
   }
 }
