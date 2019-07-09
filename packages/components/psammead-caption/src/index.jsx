@@ -15,7 +15,7 @@ import {
   getLongPrimer,
   GEL_FF_REITH_SANS,
 } from '@bbc/gel-foundations/typography';
-import { C_CLOUD_DARK } from '@bbc/psammead-styles/colours';
+import { C_METAL } from '@bbc/psammead-styles/colours';
 import { scriptPropType } from '@bbc/gel-foundations/prop-types';
 
 // Defined separately since in future will need to apply
@@ -26,7 +26,7 @@ const FS_ITALIC = css`
 
 const Caption = styled.figcaption`
   ${props => (props.script ? getLongPrimer(props.script) : '')};
-  color: ${C_CLOUD_DARK};
+  color: ${C_METAL};
   font-family: ${GEL_FF_REITH_SANS};
   ${FS_ITALIC};
   padding: ${GEL_SPACING} ${GEL_MARGIN_BELOW_400PX} 0;

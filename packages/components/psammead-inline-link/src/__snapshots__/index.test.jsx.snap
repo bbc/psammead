@@ -9,22 +9,22 @@ exports[`InlineLink should render correctly 1`] = `
 }
 
 .c0:visited {
-  color: #757575;
-  border-bottom: 1px solid #757575;
+  color: #6E6E73;
+  border-bottom: 1px solid #6E6E73;
 }
 
-.c0:focus {
-  color: #B80000;
-  border-bottom: 2px solid #B80000;
-}
-
+.c0:focus,
 .c0:hover {
-  color: #B80000;
+  background-color: #B80000;
   border-bottom: 2px solid #B80000;
+  color: #FFFFFF;
+  margin: 0 -2px;
+  padding: 0 2px;
+  white-space: pre-wrap;
 }
 
 <a
-  className="c0"
+  class="c0"
   href="https://www.bbc.com/news"
 >
   BBC News

@@ -27,7 +27,7 @@ const InfoComponent = ({ headlineText, summaryText, script, topStory }) => (
   </Fragment>
 );
 
-const Img = (
+const buildImg = () => (
   <Image
     alt={text('Image alt text', 'Robert Downey Junior in Iron Man')}
     src={text(
@@ -49,7 +49,7 @@ const MediaIndicatorComponent = (
 const generateStory = ({ mediaIndicator, topStory }) =>
   inputProvider(
     [{ name: 'Headline' }, { name: 'Summary' }],
-    ([headlineText, summaryText], script) => {
+    ({ slotTexts: [headlineText, summaryText], script }) => {
       const Info = (
         <InfoComponent
           headlineText={headlineText}
@@ -58,6 +58,8 @@ const generateStory = ({ mediaIndicator, topStory }) =>
           topStory={topStory}
         />
       );
+
+      const Img = buildImg();
 
       return (
         <StoryPromo

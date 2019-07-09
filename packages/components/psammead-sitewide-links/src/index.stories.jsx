@@ -28,7 +28,7 @@ storiesOf('Components|SitewideLinks', module)
     'default',
     inputProvider(
       linkNames,
-      ([externalLinkText, copyrightText, ...linkTexts]) => {
+      ({ slotTexts: [externalLinkText, copyrightText, ...linkTexts] }) => {
         const links = linkTexts.map(buildLink);
         return (
           <SitewideLinks
