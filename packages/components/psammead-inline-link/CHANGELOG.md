@@ -1,6 +1,6 @@
 # Psammead Inline Link Changelog
 
-<! -- prettier-ignore -->
+<!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
 | 1.1.6 | [PR#942](https://github.com/bbc/psammead/pull/942) Revert new inline-link styling due to [bug](https://github.com/bbc/simorgh/issues/2370) |
