@@ -25,6 +25,8 @@ exports[`MediaIndicator - Top Story should render a top story audio promo render
   background-color: #FFFFFF;
   display: block;
   font-family: ReithSans,Helvetica,Arial,sans-serif;
+  font-weight: 400;
+  font-style: normal;
   font-size: 0.75rem;
   line-height: 1rem;
   color: #222222;
@@ -109,6 +111,8 @@ exports[`MediaIndicator should render audio correctly without duration details 1
   background-color: #FFFFFF;
   display: block;
   font-family: ReithSans,Helvetica,Arial,sans-serif;
+  font-weight: 400;
+  font-style: normal;
   font-size: 0.75rem;
   line-height: 1rem;
   color: #222222;
@@ -189,6 +193,8 @@ exports[`MediaIndicator should render audio indicator correctly 1`] = `
   background-color: #FFFFFF;
   display: block;
   font-family: ReithSans,Helvetica,Arial,sans-serif;
+  font-weight: 400;
+  font-style: normal;
   font-size: 0.75rem;
   line-height: 1rem;
   color: #222222;
@@ -280,6 +286,8 @@ exports[`MediaIndicator should render video by default 1`] = `
   background-color: #FFFFFF;
   display: block;
   font-family: ReithSans,Helvetica,Arial,sans-serif;
+  font-weight: 400;
+  font-style: normal;
   font-size: 0.75rem;
   line-height: 1rem;
   color: #222222;
@@ -357,6 +365,8 @@ exports[`MediaIndicator should render video correctly without duration details 1
   background-color: #FFFFFF;
   display: block;
   font-family: ReithSans,Helvetica,Arial,sans-serif;
+  font-weight: 400;
+  font-style: normal;
   font-size: 0.75rem;
   line-height: 1rem;
   color: #222222;
@@ -434,6 +444,8 @@ exports[`MediaIndicator should render video indicator correctly 1`] = `
   background-color: #FFFFFF;
   display: block;
   font-family: ReithSans,Helvetica,Arial,sans-serif;
+  font-weight: 400;
+  font-style: normal;
   font-size: 0.75rem;
   line-height: 1rem;
   color: #222222;

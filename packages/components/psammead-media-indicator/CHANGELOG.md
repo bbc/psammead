@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 | ------- | ----------- |
+| 2.0.0 | [PR#???](https://github.com/bbc/psammead/pull/???) Apply font based on service prop |
 | 1.1.1 | [PR#783](https://github.com/bbc/psammead/pull/783) Update to latest psammead-test-helpers. Update snapshots. |
 | 1.1.0   | [PR#776](https://github.com/bbc/psammead/pull/776) Add `topStory` prop, change padding <400px and bump dependencies |
 | 1.0.5   | [PR#788](https://github.com/BBC/psammead/pull/788) Use rem for the width and height of the Media SVGs |
