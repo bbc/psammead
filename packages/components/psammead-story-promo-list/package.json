@@ -1,6 +1,6 @@
 {
   "name": "@bbc/psammead-story-promo-list",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "main": "dist/index.js",
   "description": "List of story promos",
   "repository": {
@@ -24,7 +24,7 @@
   "devDependencies": {
     "@bbc/psammead-image": "^1.0.3",
     "@bbc/psammead-storybook-helpers": "^3.0.0",
-    "@bbc/psammead-test-helpers": "^1.0.0",
+    "@bbc/psammead-test-helpers": "^1.0.1",
     "@bbc/psammead-timestamp": "^1.0.2",
     "react": "^16.8.6",
     "styled-components": "^4.3.2"

@@ -32,7 +32,7 @@ exports[`Headline component should render correctly 1`] = `
 }
 
 <h1
-  className="c0"
+  class="c0"
 >
   This is my headline.
 </h1>
@@ -70,7 +70,7 @@ exports[`Headline component should render correctly with arabic script typograph
 }
 
 <h1
-  className="c0"
+  class="c0"
 >
   هذا هو العنوان الخاص بي
 </h1>
@@ -108,8 +108,8 @@ exports[`SubHeading component should render correctly 1`] = `
 }
 
 <h2
-  className="c0"
-  tabIndex="-1"
+  class="c0"
+  tabindex="-1"
 >
   This is a SubHeading
 </h2>
@@ -147,9 +147,9 @@ exports[`SubHeading component should render correctly with an ID 1`] = `
 }
 
 <h2
-  className="c0"
+  class="c0"
   id="This-is-a-SubHeading"
-  tabIndex="-1"
+  tabindex="-1"
 >
   This is a SubHeading
 </h2>
@@ -187,8 +187,8 @@ exports[`SubHeading component should render correctly with arabic script typogra
 }
 
 <h2
-  className="c0"
-  tabIndex="-1"
+  class="c0"
+  tabindex="-1"
 >
   هذا عنوان فرعي
 </h2>
