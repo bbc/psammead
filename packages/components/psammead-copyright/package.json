@@ -18,7 +18,7 @@
   "homepage": "https://github.com/bbc/psammead/blob/latest/packages/components/psammead-copyright/README.md",
   "dependencies": {
     "@bbc/gel-foundations": "^3.0.0",
-    "@bbc/psammead-styles": "^0.3.2"
+    "@bbc/psammead-styles": "^1.1.1"
   },
   "devDependencies": {
     "@bbc/psammead-test-helpers": "^0.3.3",
