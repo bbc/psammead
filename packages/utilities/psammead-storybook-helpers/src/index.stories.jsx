@@ -12,6 +12,15 @@ storiesOf('Utilities|Input Provider', module)
     { notes, knobs: { escapeHTML: false } },
   )
   .add(
+    'simple - limited services',
+    inputProvider(
+      null,
+      () => <span>Im only availible in news, pidgin & thai</span>,
+      ['news', 'pidgin', 'thai'],
+    ),
+    { notes, knobs: { escapeHTML: false } },
+  )
+  .add(
     'complex',
     inputProvider(
       [

@@ -1,6 +1,6 @@
 {
   "name": "@bbc/psammead-inline-link",
-  "version": "1.1.2",
+  "version": "1.1.5",
   "description": "React styled component for an Inline Link",
   "main": "dist/index.js",
   "repository": {
@@ -26,8 +26,8 @@
     "@bbc/psammead-styles": "^1.0.1"
   },
   "devDependencies": {
-    "@bbc/psammead-storybook-helpers": "^2.0.0",
-    "@bbc/psammead-test-helpers": "^0.3.0",
+    "@bbc/psammead-storybook-helpers": "^3.0.0",
+    "@bbc/psammead-test-helpers": "^1.0.1",
     "react": "^16.8.6",
     "styled-components": "^4.3.2"
   },

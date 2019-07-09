@@ -1,6 +1,6 @@
 {
   "name": "@bbc/psammead-styles",
-  "version": "1.0.1",
+  "version": "1.1.2",
   "description": "A collection of string constants for use in CSS, containing non-GEL styling details that are bespoke to specific BBC services and products.",
   "repository": {
     "type": "git",
@@ -25,7 +25,7 @@
   ],
   "devDependencies": {
     "@bbc/gel-foundations": "^3.0.0",
-    "@bbc/psammead-storybook-helpers": "^2.1.1",
-    "@bbc/psammead-test-helpers": "^0.3.0"
+    "@bbc/psammead-storybook-helpers": "^3.0.0",
+    "@bbc/psammead-test-helpers": "^1.0.1"
   }
 }
