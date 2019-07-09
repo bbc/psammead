@@ -4,6 +4,8 @@ exports[`InlineLink should render correctly 1`] = `
 .c0 {
   color: #222222;
   border-bottom: 1px solid #B80000;
+  margin: 0 -2px;
+  padding: 0 2px;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
@@ -18,8 +20,6 @@ exports[`InlineLink should render correctly 1`] = `
   background-color: #B80000;
   border-bottom: 2px solid #B80000;
   color: #FFFFFF;
-  margin: 0 -2px;
-  padding: 0 2px;
   white-space: pre-wrap;
 }
 
