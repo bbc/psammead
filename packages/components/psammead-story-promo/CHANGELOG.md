@@ -3,7 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 | ------- | ----------- |
-| 1.0.0 | [PR#???](https://github.com/bbc/psammead/pull/???) Remove alpha tag, swarm done |
+| 1.0.0 | [PR#937](https://github.com/bbc/psammead/pull/937) Remove alpha tag, swarm done |
 | 1.0.0-alpha.5   | [PR#769](https://github.com/bbc/psammead/pull/769) Fix stories not appearing in storybook when using `install:packages:link` |
 | 1.0.0-alpha.4 | [PR#706](https://github.com/bbc/psammead/pull/706) Fix amp images not showing in IE11  |
 | 1.0.0-alpha.3   | [PR#713](https://github.com/bbc/psammead/pull/713) Update `styled-components` to 4.3.2 |
