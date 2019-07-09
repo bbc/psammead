@@ -27,7 +27,7 @@
     "@bbc/psammead-paragraph": "^1.0.3",
     "@bbc/psammead-storybook-helpers": "^3.0.0",
     "@bbc/psammead-test-helpers": "^0.3.3",
-    "@bbc/psammead-visually-hidden-text": "^0.1.10",
+    "@bbc/psammead-visually-hidden-text": "^1.0.2",
     "react": "^16.8.6",
     "styled-components": "^4.3.2"
   },
