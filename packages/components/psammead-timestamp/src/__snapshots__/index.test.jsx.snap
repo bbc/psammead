@@ -29,8 +29,8 @@ exports[`Timestamp should render Timestamp correctly 1`] = `
 }
 
 <time
-  className="c0"
-  dateTime="1530947227000"
+  class="c0"
+  datetime="1530947227000"
 >
   7 July 2018
 </time>
@@ -65,8 +65,8 @@ exports[`Timestamp should render Timestamp with a prefix 1`] = `
 }
 
 <time
-  className="c0"
-  dateTime="1530947227000"
+  class="c0"
+  datetime="1530947227000"
 >
   Updated 7 July 2018
 </time>
@@ -96,8 +96,8 @@ exports[`Timestamp should render Timestamp without padding 1`] = `
 }
 
 <time
-  className="c0"
-  dateTime="1530947227000"
+  class="c0"
+  datetime="1530947227000"
 >
   Updated 7 July 2018
 </time>
@@ -132,8 +132,8 @@ exports[`Timestamp should render with the correct typography style applied 1`] =
 }
 
 <time
-  className="c0"
-  dateTime="1530947227000"
+  class="c0"
+  datetime="1530947227000"
 >
   7 July 2018
 </time>

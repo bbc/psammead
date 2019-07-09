@@ -3,6 +3,13 @@
 <! -- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 1.1.5 | [PR#783](https://github.com/bbc/psammead/pull/783) Update to latest psammead-test-helpers. Update snapshots. |
+| 1.1.4 | [PR#769](https://github.com/bbc/psammead/pull/769) Fix stories not appearing in storybook when using `install:packages:link` |
+| 1.1.3 | [PR#775](https://github.com/bbc/psammead/pull/775) Add section to readme regarding using this component without a wrapper and padding/margin |
+| 1.1.2 | [PR#687](https://github.com/bbc/psammead/pull/687) Change visited text colour to `C_CLOUD_DARK` for `C_METAL` |
+| 1.1.1 | [PR#761](https://github.com/bbc/psammead/pull/761) Link default `color` should be `Ebon` not `Postbox` |
+| 1.1.0 | [PR#719](https://github.com/bbc/psammead/pull/719) Updates the link styling to new UX designs |
+| 1.0.1 | [PR#713](https://github.com/bbc/psammead/pull/713) Update `styled-components` to 4.3.2 |
 | 1.0.0 | [PR#679](https://github.com/bbc/psammead/pull/679) Bump version number |
 | 0.3.8 | [PR#498](https://github.com/bbc/psammead/pull/498) Update stories to use new input provider |
 | 0.3.7 | [PR#424](https://github.com/bbc/psammead/pull/424) Add Snyk badge to readme |

@@ -3,6 +3,11 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 1.2.6  | [PR#724](https://github.com/bbc/psammead/pull/724) Update babel-plugin-styled-components from version 1.10.1 to 1.10.5 |
+| 1.2.5  | [PR#695](https://github.com/bbc/psammead/pull/695) Bump eslint-plugin-react from 7.13.0 to 7.14.2 |
+| 1.2.4  | [PR#710](https://github.com/bbc/psammead/pull/710) Bump @testing-library/react from 8.0.1 to 8.0.4 |
+| 1.2.3  | [PR#749](https://github.com/bbc/psammead/pull/749) Bump semver from 6.1.1 to 6.2.0 |
+| 1.2.2  | [PR#730](https://github.com/bbc/psammead/pull/730) Bump eslint-plugin-jsx-a11y from 6.2.1 to 6.2.3 |
 | 1.2.1  | [PR#669](https://github.com/bbc/psammead/pull/641) Upgrade many npm dependencies then update snapshots |
 | 1.2.0   | [PR#663](https://github.com/bbc/psammead/pull/663) Add `@testing-library/react` as a dev dependancy |
 | 1.1.10  | [PR#630](https://github.com/BBC/psammead/pull/630) Change storybook port to 8180 |

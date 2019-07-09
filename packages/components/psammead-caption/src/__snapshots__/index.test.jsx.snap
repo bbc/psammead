@@ -15,7 +15,7 @@ exports[`Caption should render with some offscreen text 1`] = `
 .c0 {
   font-size: 0.9375rem;
   line-height: 1.125rem;
-  color: #757575;
+  color: #6E6E73;
   font-family: ReithSans,Helvetica,Arial,sans-serif;
   font-style: italic;
   padding: 0.5rem 0.5rem 0;
@@ -62,11 +62,11 @@ exports[`Caption should render with some offscreen text 1`] = `
 }
 
 <figcaption
-  className="c0"
+  class="c0"
 >
   This is some Caption text
   <span
-    className="c1"
+    class="c1"
   >
     Some offscreen text
   </span>
@@ -88,7 +88,7 @@ exports[`Caption should render with some offscreen text and arabic script typogr
 .c0 {
   font-size: 1.0625rem;
   line-height: 1.5rem;
-  color: #757575;
+  color: #6E6E73;
   font-family: ReithSans,Helvetica,Arial,sans-serif;
   font-style: italic;
   padding: 0.5rem 0.5rem 0;
@@ -135,11 +135,11 @@ exports[`Caption should render with some offscreen text and arabic script typogr
 }
 
 <figcaption
-  className="c0"
+  class="c0"
 >
   هذا هو بعض النص التسمية التوضيحي
   <span
-    className="c1"
+    class="c1"
   >
     Some offscreen text
   </span>
