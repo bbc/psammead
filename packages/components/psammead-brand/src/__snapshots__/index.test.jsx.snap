@@ -64,16 +64,16 @@ exports[`Brand should render correctly with link not provided 1`] = `
 }
 
 <div
-  className="c0"
+  class="c0"
 >
   <div
-    className="c1"
+    class="c1"
   >
     <svg
       aria-hidden="true"
-      className="c2"
+      class="c2"
       focusable="false"
-      height={24}
+      height="24"
       viewBox="0 0 167.95 24"
       xmlns="http://www.w3.org/2000/svg"
     >
@@ -86,7 +86,7 @@ exports[`Brand should render correctly with link not provided 1`] = `
       </g>
     </svg>
     <span
-      className="c3"
+      class="c3"
       role="text"
     >
       <span
@@ -172,20 +172,20 @@ exports[`Brand should render correctly with link provided 1`] = `
 }
 
 <div
-  className="c0"
+  class="c0"
 >
   <div
-    className="c1"
+    class="c1"
   >
     <a
-      className="c2 c3"
+      class="c2 c3"
       href="https://www.bbc.co.uk/news"
     >
       <svg
         aria-hidden="true"
-        className="c4"
+        class="c4"
         focusable="false"
-        height={24}
+        height="24"
         viewBox="0 0 167.95 24"
         xmlns="http://www.w3.org/2000/svg"
       >
@@ -198,7 +198,7 @@ exports[`Brand should render correctly with link provided 1`] = `
         </g>
       </svg>
       <span
-        className="c5"
+        class="c5"
         role="text"
       >
         <span
@@ -278,16 +278,16 @@ exports[`Brand should render correctly with no service Localised Name 1`] = `
 }
 
 <div
-  className="c0"
+  class="c0"
 >
   <div
-    className="c1"
+    class="c1"
   >
     <svg
       aria-hidden="true"
-      className="c2"
+      class="c2"
       focusable="false"
-      height={24}
+      height="24"
       viewBox="0 0 167.95 24"
       xmlns="http://www.w3.org/2000/svg"
     >
@@ -300,7 +300,7 @@ exports[`Brand should render correctly with no service Localised Name 1`] = `
       </g>
     </svg>
     <span
-      className="c3"
+      class="c3"
     >
       BBC News
     </span>
@@ -374,16 +374,16 @@ exports[`Brand should render correctly with transparent borders 1`] = `
 }
 
 <div
-  className="c0"
+  class="c0"
 >
   <div
-    className="c1"
+    class="c1"
   >
     <svg
       aria-hidden="true"
-      className="c2"
+      class="c2"
       focusable="false"
-      height={24}
+      height="24"
       viewBox="0 0 167.95 24"
       xmlns="http://www.w3.org/2000/svg"
     >
@@ -396,7 +396,7 @@ exports[`Brand should render correctly with transparent borders 1`] = `
       </g>
     </svg>
     <span
-      className="c3"
+      class="c3"
     >
       BBC News
     </span>

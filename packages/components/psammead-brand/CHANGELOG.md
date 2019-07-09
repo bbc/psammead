@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 | ------- | ----------- |
+| 4.1.8 | [PR#783](https://github.com/bbc/psammead/pull/783) Update to latest psammead-test-helpers. Update snapshots. |
 | 4.1.7   | [PR#787](https://github.com/bbc/psammead/pull/787) Fix brand colour in Firefox high contrast mode |
 | 4.1.6   | [PR#789](https://github.com/bbc/psammead/pull/789) Use rem for the `BrandSvg` height |
 | 4.1.5   | [PR#769](https://github.com/bbc/psammead/pull/769) Fix stories not appearing in storybook when using `install:packages:link` |
