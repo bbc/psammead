@@ -11,9 +11,12 @@ storiesOf('Components|Caption', module)
   .addDecorator(withKnobs)
   .add(
     'default',
-    inputProvider([{ name: 'Caption' }], ([captionText], script) => (
-      <Caption script={script}>{captionText}</Caption>
-    )),
+    inputProvider(
+      [{ name: 'Caption' }],
+      ({ slotTexts: [captionText], script }) => (
+        <Caption script={script}>{captionText}</Caption>
+      ),
+    ),
     { notes, knobs: { escapeHTML: false } },
   )
   .add(
@@ -23,7 +26,7 @@ storiesOf('Components|Caption', module)
         { name: 'Visual hidden text', defaultText: 'visually hidden text' },
         { name: 'Caption', defaultText: 'caption' },
       ],
-      ([hiddenText, captionText], script) => (
+      ({ slotTexts: [hiddenText, captionText], script }) => (
         <Caption script={script}>
           <VisuallyHiddenText>{hiddenText}</VisuallyHiddenText>
           {captionText}
@@ -39,7 +42,7 @@ storiesOf('Components|Caption', module)
         { name: 'Inline link', defaultText: 'inline link' },
         { name: 'Caption', defaultText: 'caption' },
       ],
-      ([linkText, captionText], script) => (
+      ({ slotTexts: [linkText, captionText], script }) => (
         <Caption script={script}>
           {`${captionText} `}
           <InlineLink href="https://www.bbc.com">{linkText}</InlineLink>
@@ -55,7 +58,7 @@ storiesOf('Components|Caption', module)
   .addDecorator(dirDecorator)
   .add(
     'containing italicisation',
-    inputProvider([], (inputs, script) => (
+    inputProvider([], ({ script }) => (
       <Caption script={script}>
         Example text with <i>italics</i>
       </Caption>
@@ -64,7 +67,7 @@ storiesOf('Components|Caption', module)
   )
   .add(
     'containing multiple paragraphs',
-    inputProvider([], (inputs, script) => (
+    inputProvider([], ({ script }) => (
       <Caption script={script}>
         <p>Paragraph with padding bottom.</p>
         <p>

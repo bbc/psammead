@@ -49,7 +49,7 @@ const MediaIndicatorComponent = (
 const generateStory = ({ mediaIndicator, topStory }) =>
   inputProvider(
     [{ name: 'Headline' }, { name: 'Summary' }],
-    ([headlineText, summaryText], script) => {
+    ({ slotTexts: [headlineText, summaryText], script }) => {
       const Info = (
         <InfoComponent
           headlineText={headlineText}
