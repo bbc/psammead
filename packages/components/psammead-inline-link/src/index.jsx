@@ -9,6 +9,8 @@ import {
 const InlineLink = styled.a`
   color: ${C_EBON};
   border-bottom: 1px solid ${C_POSTBOX};
+  margin: 0 -2px;
+  padding: 0 2px;
   text-decoration: none;
 
   &:visited {
@@ -21,8 +23,6 @@ const InlineLink = styled.a`
     background-color: ${C_POSTBOX};
     border-bottom: 2px solid ${C_POSTBOX};
     color: ${C_WHITE};
-    margin: 0 -2px;
-    padding: 0 2px;
     white-space: pre-wrap;
   }
 `;
