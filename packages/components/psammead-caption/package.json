@@ -1,6 +1,6 @@
 {
   "name": "@bbc/psammead-caption",
-  "version": "1.1.11",
+  "version": "2.0.0",
   "main": "dist/index.js",
   "description": "React styled components for a Caption",
   "repository": {
@@ -18,12 +18,12 @@
   "homepage": "https://github.com/bbc/psammead/blob/latest/packages/components/psammead-caption/README.md",
   "dependencies": {
     "@bbc/gel-foundations": "^3.0.0",
-    "@bbc/psammead-styles": "^1.0.1"
+    "@bbc/psammead-styles": "^1.1.0"
   },
   "devDependencies": {
     "@bbc/psammead-inline-link": "^1.1.1",
     "@bbc/psammead-paragraph": "^1.0.3",
-    "@bbc/psammead-storybook-helpers": "^3.0.0",
+    "@bbc/psammead-storybook-helpers": "^3.1.0",
     "@bbc/psammead-test-helpers": "^1.0.1",
     "@bbc/psammead-visually-hidden-text": "^0.1.10",
     "react": "^16.8.6",

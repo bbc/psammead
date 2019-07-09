@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 2.0.0 | [PR#???](https://github.com/bbc/psammead/pull/???) Apply font based on service prop |
 | 1.1.11 | [PR#783](https://github.com/bbc/psammead/pull/783) Update to latest psammead-test-helpers. Update snapshots. |
 | 1.1.10   | [PR#769](https://github.com/bbc/psammead/pull/769) Fix stories not appearing in storybook when using `install:packages:link` |
 | 1.1.9 | [PR#745](https://github.com/bbc/psammead/pull/745) Use `@bbc/psammead-inline-link@1.1.1` and update 'with inline link' story |
