@@ -39,7 +39,9 @@ pipeline {
         }
       }
       steps {
-        sh "make deprecate packageName='@bbc/psammead-caption' version='>=1.1.9 <=1.1.11' reason='inline link styling bug'"
+        withCredentials([string(credentialsId: 'npm_bbc-online_read_write', variable: 'NPM_TOKEN')]) {	
+          sh "make deprecate packageName='@bbc/psammead-caption' version='>=1.1.9 <=1.1.11' reason='inline link styling bug'"
+        }
       }
     }
   }
