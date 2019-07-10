@@ -30,7 +30,7 @@ pipeline {
     CI = true
   }
   stages {
-    stage ('Run application tests') {
+    stage ('Deprecate a package') {
       agent {
         docker {
           image "${nodeImage}"
@@ -39,50 +39,7 @@ pipeline {
         }
       }
       steps {
-        sh 'rm -rf ./app'
-        script {
-          if (GIT_BRANCH == 'latest') {
-            getCommitInfo()
-          }
-        }
-        sh 'make install'
-        sh 'make code-coverage-before-build'
-        sh 'make tests'
-        withCredentials([string(credentialsId: 'psammead-cc-reporter-id', variable: 'CC_TEST_REPORTER_ID')]) {
-          sh 'make code-coverage-after-build'
-        }
-      }
-      post {
-        always {
-          script {
-            stageName = env.STAGE_NAME
-          }
-        }
-      }
-    }
-    stage ('Deploy Storybook & Publish to NPM') {
-      when {
-        expression { env.BRANCH_NAME == 'latest' }
-      }
-      agent {
-        docker {
-          image "${nodeImage}"
-          label nodeName
-          args '-u root -v /etc/pki:/certs'
-        }
-      }
-      steps {
-        sh 'make storybook'
-        withCredentials([string(credentialsId: 'npm_bbc-online_read_write', variable: 'NPM_TOKEN')]) {
-          sh 'make publish'
-        }
-      }
-      post {
-        always {
-          script {
-            stageName = env.STAGE_NAME
-          }
-        }
+        sh "make deprecate packageName='@bbc/psammead-caption' version='>=1.1.9 <=1.1.11' reason='inline link styling bug'"
       }
     }
   }
