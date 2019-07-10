@@ -3,7 +3,8 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
-| 1.0.9 | [PR#783](https://github.com/bbc/psammead/pull/783) Update to latest psammead-test-helpers. Update snapshots. |
+| 1.0.10  | [PR#xxx](https://github.com/bbc/psammead/pull/xxx) Bump psammead-inline-link to revert styling changes |
+| 1.0.9   | [PR#783](https://github.com/bbc/psammead/pull/783) Update to latest psammead-test-helpers. Update snapshots. |
 | 1.0.8   | [PR#769](https://github.com/bbc/psammead/pull/769) Fix stories not appearing in storybook when using `install:packages:link` |
 | 1.0.7   | [PR#746](https://github.com/bbc/psammead/pull/746) Use `@bbc/psammead-inline-link@1.1.1` and add a 'with inline link' story |
 | 1.0.6   | [PR#713](https://github.com/bbc/psammead/pull/713) Update `styled-components` to 4.3.2 |
