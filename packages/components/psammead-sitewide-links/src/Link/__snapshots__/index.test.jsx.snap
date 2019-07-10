@@ -17,11 +17,11 @@ exports[`Link should render a standard block link 1`] = `
 }
 
 <a
-  className="c0 c1"
+  class="c0 c1"
   href="https://www.bbc.com/"
 >
   <span
-    className="c2"
+    class="c2"
   >
     Some link text
   </span>
@@ -45,11 +45,11 @@ exports[`Link should render an inline link after passing an inline prop 1`] = `
 }
 
 <a
-  className="c0 c1"
+  class="c0 c1"
   href="https://www.bbc.com/"
 >
   <span
-    className="c2"
+    class="c2"
   >
     Some link text
   </span>
