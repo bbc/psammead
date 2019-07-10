@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { C_EBON, C_POSTBOX, C_CLOUD_DARK } from '@bbc/psammead-styles/colours';
+import { C_POSTBOX, C_METAL, C_EBON } from '@bbc/psammead-styles/colours';
 
 const InlineLink = styled.a`
   color: ${C_EBON};
@@ -7,15 +7,11 @@ const InlineLink = styled.a`
   text-decoration: none;
 
   &:visited {
-    color: ${C_CLOUD_DARK};
-    border-bottom: 1px solid ${C_CLOUD_DARK};
+    color: ${C_METAL};
+    border-bottom: 1px solid ${C_METAL};
   }
 
-  &:focus {
-    color: ${C_POSTBOX};
-    border-bottom: 2px solid ${C_POSTBOX};
-  }
-
+  &:focus,
   &:hover {
     color: ${C_POSTBOX};
     border-bottom: 2px solid ${C_POSTBOX};

@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`MediaIndicator should render audio correctly without duration details 1`] = `
+exports[`MediaIndicator - Top Story should render a top story audio promo render correctly 1`] = `
 .c3 {
   -webkit-clip-path: inset(100%);
   clip-path: inset(100%);
@@ -10,18 +10,22 @@ exports[`MediaIndicator should render audio correctly without duration details 1
   overflow: hidden;
   position: absolute;
   width: 1px;
+  margin: 0;
 }
 
 .c2 {
   vertical-align: middle;
   margin: 0 0.25rem;
-  fill: #222222;
+  color: #222222;
+  fill: currentColor;
+  width: 0.8125rem;
+  height: 0.75rem;
 }
 
 .c0 {
   padding: 0.5rem 0.25rem;
   background-color: #FFFFFF;
-  display: inline-block;
+  display: block;
   font-family: ReithSans,Helvetica,Arial,sans-serif;
   font-size: 0.75rem;
   line-height: 1rem;
@@ -41,15 +45,20 @@ exports[`MediaIndicator should render audio correctly without duration details 1
   height: 100%;
 }
 
+.c4 {
+  vertical-align: middle;
+  margin: 0 0.25rem;
+}
+
 <div
   aria-hidden="true"
-  className="c0"
+  class="c0"
 >
   <div
-    className="c1"
+    class="c1"
   >
     <svg
-      className="c2"
+      class="c2"
       focusable="false"
       height="12px"
       viewBox="0 0 13 12"
@@ -63,7 +72,95 @@ exports[`MediaIndicator should render audio correctly without duration details 1
       />
     </svg>
     <span
-      className="c3"
+      class="c3"
+    >
+      Audio
+    </span>
+    <time
+      class="c4"
+      datetime="PT2M15S"
+    >
+      2:15
+    </time>
+  </div>
+</div>
+`;
+
+exports[`MediaIndicator should render audio correctly without duration details 1`] = `
+.c3 {
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  -webkit-clip: rect(1px,1px,1px,1px);
+  clip: rect(1px,1px,1px,1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  width: 1px;
+  margin: 0;
+}
+
+.c2 {
+  vertical-align: middle;
+  margin: 0 0.25rem;
+  color: #222222;
+  fill: currentColor;
+  width: 0.8125rem;
+  height: 0.75rem;
+}
+
+.c0 {
+  padding: 0.5rem 0.25rem;
+  background-color: #FFFFFF;
+  display: block;
+  font-family: ReithSans,Helvetica,Arial,sans-serif;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  color: #222222;
+  height: 2rem;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 100%;
+}
+
+@media (max-width:24.9375rem) {
+  .c0 {
+    height: 1.25rem;
+    padding: 0.25rem 0.25rem 0;
+  }
+}
+
+<div
+  aria-hidden="true"
+  class="c0"
+>
+  <div
+    class="c1"
+  >
+    <svg
+      class="c2"
+      focusable="false"
+      height="12px"
+      viewBox="0 0 13 12"
+      width="13px"
+    >
+      <path
+        d="M9.021 1.811l-.525.525c.938.938 1.5 2.25 1.5 3.675s-.563 2.738-1.5 3.675l.525.525c1.05-1.087 1.725-2.55 1.725-4.2s-.675-3.112-1.725-4.2z"
+      />
+      <path
+        d="M10.596.199l-.525.562c1.35 1.35 2.175 3.225 2.175 5.25s-.825 3.9-2.175 5.25l.525.525c1.5-1.462 2.4-3.525 2.4-5.775s-.9-4.312-2.4-5.812zM6.996 1.511l-2.25 2.25H.996v4.5h3.75l2.25 2.25z"
+      />
+    </svg>
+    <span
+      class="c3"
     >
       Audio
     </span>
@@ -81,18 +178,22 @@ exports[`MediaIndicator should render audio indicator correctly 1`] = `
   overflow: hidden;
   position: absolute;
   width: 1px;
+  margin: 0;
 }
 
 .c2 {
   vertical-align: middle;
   margin: 0 0.25rem;
-  fill: #222222;
+  color: #222222;
+  fill: currentColor;
+  width: 0.8125rem;
+  height: 0.75rem;
 }
 
 .c0 {
   padding: 0.5rem 0.25rem;
   background-color: #FFFFFF;
-  display: inline-block;
+  display: block;
   font-family: ReithSans,Helvetica,Arial,sans-serif;
   font-size: 0.75rem;
   line-height: 1rem;
@@ -117,15 +218,22 @@ exports[`MediaIndicator should render audio indicator correctly 1`] = `
   margin: 0 0.25rem;
 }
 
+@media (max-width:24.9375rem) {
+  .c0 {
+    height: 1.25rem;
+    padding: 0.25rem 0.25rem 0;
+  }
+}
+
 <div
   aria-hidden="true"
-  className="c0"
+  class="c0"
 >
   <div
-    className="c1"
+    class="c1"
   >
     <svg
-      className="c2"
+      class="c2"
       focusable="false"
       height="12px"
       viewBox="0 0 13 12"
@@ -139,13 +247,13 @@ exports[`MediaIndicator should render audio indicator correctly 1`] = `
       />
     </svg>
     <span
-      className="c3"
+      class="c3"
     >
       Audio
     </span>
     <time
-      className="c4"
-      dateTime="PT2M15S"
+      class="c4"
+      datetime="PT2M15S"
     >
       2:15
     </time>
@@ -163,18 +271,22 @@ exports[`MediaIndicator should render video by default 1`] = `
   overflow: hidden;
   position: absolute;
   width: 1px;
+  margin: 0;
 }
 
 .c2 {
   vertical-align: middle;
   margin: 0 0.25rem;
-  fill: #222222;
+  color: #222222;
+  fill: currentColor;
+  width: 0.75rem;
+  height: 0.75rem;
 }
 
 .c0 {
   padding: 0.5rem 0.25rem;
   background-color: #FFFFFF;
-  display: inline-block;
+  display: block;
   font-family: ReithSans,Helvetica,Arial,sans-serif;
   font-size: 0.75rem;
   line-height: 1rem;
@@ -194,15 +306,22 @@ exports[`MediaIndicator should render video by default 1`] = `
   height: 100%;
 }
 
+@media (max-width:24.9375rem) {
+  .c0 {
+    height: 1.25rem;
+    padding: 0.25rem 0.25rem 0;
+  }
+}
+
 <div
   aria-hidden="true"
-  className="c0"
+  class="c0"
 >
   <div
-    className="c1"
+    class="c1"
   >
     <svg
-      className="c2"
+      class="c2"
       focusable="false"
       height="12px"
       viewBox="0 0 32 32"
@@ -213,7 +332,7 @@ exports[`MediaIndicator should render video by default 1`] = `
       />
     </svg>
     <span
-      className="c3"
+      class="c3"
     >
       Video
     </span>
@@ -231,18 +350,22 @@ exports[`MediaIndicator should render video correctly without duration details 1
   overflow: hidden;
   position: absolute;
   width: 1px;
+  margin: 0;
 }
 
 .c2 {
   vertical-align: middle;
   margin: 0 0.25rem;
-  fill: #222222;
+  color: #222222;
+  fill: currentColor;
+  width: 0.75rem;
+  height: 0.75rem;
 }
 
 .c0 {
   padding: 0.5rem 0.25rem;
   background-color: #FFFFFF;
-  display: inline-block;
+  display: block;
   font-family: ReithSans,Helvetica,Arial,sans-serif;
   font-size: 0.75rem;
   line-height: 1rem;
@@ -262,15 +385,22 @@ exports[`MediaIndicator should render video correctly without duration details 1
   height: 100%;
 }
 
+@media (max-width:24.9375rem) {
+  .c0 {
+    height: 1.25rem;
+    padding: 0.25rem 0.25rem 0;
+  }
+}
+
 <div
   aria-hidden="true"
-  className="c0"
+  class="c0"
 >
   <div
-    className="c1"
+    class="c1"
   >
     <svg
-      className="c2"
+      class="c2"
       focusable="false"
       height="12px"
       viewBox="0 0 32 32"
@@ -281,7 +411,7 @@ exports[`MediaIndicator should render video correctly without duration details 1
       />
     </svg>
     <span
-      className="c3"
+      class="c3"
     >
       Video
     </span>
@@ -299,18 +429,22 @@ exports[`MediaIndicator should render video indicator correctly 1`] = `
   overflow: hidden;
   position: absolute;
   width: 1px;
+  margin: 0;
 }
 
 .c2 {
   vertical-align: middle;
   margin: 0 0.25rem;
-  fill: #222222;
+  color: #222222;
+  fill: currentColor;
+  width: 0.75rem;
+  height: 0.75rem;
 }
 
 .c0 {
   padding: 0.5rem 0.25rem;
   background-color: #FFFFFF;
-  display: inline-block;
+  display: block;
   font-family: ReithSans,Helvetica,Arial,sans-serif;
   font-size: 0.75rem;
   line-height: 1rem;
@@ -335,15 +469,22 @@ exports[`MediaIndicator should render video indicator correctly 1`] = `
   margin: 0 0.25rem;
 }
 
+@media (max-width:24.9375rem) {
+  .c0 {
+    height: 1.25rem;
+    padding: 0.25rem 0.25rem 0;
+  }
+}
+
 <div
   aria-hidden="true"
-  className="c0"
+  class="c0"
 >
   <div
-    className="c1"
+    class="c1"
   >
     <svg
-      className="c2"
+      class="c2"
       focusable="false"
       height="12px"
       viewBox="0 0 32 32"
@@ -354,13 +495,13 @@ exports[`MediaIndicator should render video indicator correctly 1`] = `
       />
     </svg>
     <span
-      className="c3"
+      class="c3"
     >
       Video
     </span>
     <time
-      className="c4"
-      dateTime="PT2M15S"
+      class="c4"
+      datetime="PT2M15S"
     >
       2:15
     </time>

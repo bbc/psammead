@@ -3,6 +3,15 @@
 <!-- prettier-ignore -->
 | Version | Description |
 | ------- | ----------- |
+| 4.1.9   | [PR#892](https://github.com/bbc/psammead/pull/892) Bump dependencies |
+| 4.1.8 | [PR#783](https://github.com/bbc/psammead/pull/783) Update to latest psammead-test-helpers. Update snapshots. |
+| 4.1.7   | [PR#787](https://github.com/bbc/psammead/pull/787) Fix brand colour in Firefox high contrast mode |
+| 4.1.6   | [PR#789](https://github.com/bbc/psammead/pull/789) Use rem for the `BrandSvg` height |
+| 4.1.5   | [PR#769](https://github.com/bbc/psammead/pull/769) Fix stories not appearing in storybook when using `install:packages:link` |
+| 4.1.4   | [PR#747](https://github.com/bbc/psammead/pull/747) Add text role to avoid link fragmented on ios voiceover |
+| 4.1.3   | [PR#713](https://github.com/bbc/psammead/pull/713) Update `styled-components` to 4.3.2 |
+| 4.1.2   | [PR#684](https://github.com/bbc/psammead/pull/684) Update brand spacing breakpoint to kick in at 25rem |
+| 4.1.1   | [PR#677](https://github.com/bbc/psammead/pull/677) Use `@bbc/gel-foundations@3.0.0` |
 | 4.1.0   | [PR#647](https://github.com/bbc/psammead/pull/647) Add transparent borders with borderTop and borderBottom props |
 | 4.0.2   | [PR#649](https://github.com/bbc/psammead/pull/649) Update brand to have a max-width of 80rem |
 | 4.0.1   | [PR#642](https://github.com/bbc/psammead/pull/642) Add product and serviceLocalisedName knobs on storybook |

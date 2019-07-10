@@ -35,10 +35,11 @@ const fourOfSixColumnsMaxWidthScaleable = `66.67%`;
 const eightOfTwelveColumnsMaxScaleable = `66.67%`;
 // (8 / 12) * 100 = 66.6666666667 = 66.67%
 
+const fullWidthColumnsMaxScaleable = `100%`;
+// (12 / 12) * 100 = 100 = 100%
+
 const StoryPromoWrapper = styled.div`
-  @media (min-width: ${GEL_GROUP_2_SCREEN_WIDTH_MIN}) {
-    position: relative;
-  }
+  position: relative;
 
   @supports (display: grid) {
     display: grid;
@@ -77,15 +78,16 @@ const ImageGridColumns = css`
 
 const ImageGridFallbackTopStory = css`
   margin-bottom: ${GEL_GUTTER_BELOW_600PX};
+  width: ${fullWidthColumnsMaxScaleable};
 
   @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
-    max-width: ${twoOfSixColumnsMaxWidthScaleable};
+    width: ${twoOfSixColumnsMaxWidthScaleable};
     margin-bottom: none;
   }
 `;
 
 const ImageGridFallback = css`
-  max-width: ${twoOfSixColumnsMaxWidthScaleable};
+  width: ${twoOfSixColumnsMaxWidthScaleable};
 `;
 
 const ImageGridItem = styled.div`
@@ -97,16 +99,20 @@ const ImageGridItem = styled.div`
     topStory ? ImageGridFallbackTopStory : ImageGridFallback}
 
   @media (min-width: ${GEL_GROUP_5_SCREEN_WIDTH_MIN}) {
-    max-width: ${fourOfTwelveColumnsMaxWidthScaleable};
+    width: ${fourOfTwelveColumnsMaxWidthScaleable};
   }
 
   @supports (display: grid) {
     display: block;
-    max-width: initial;
+    width: initial;
 
     ${({ topStory }) =>
       topStory ? ImageGridColumnsTopStory : ImageGridColumns}
   }
+`;
+
+const ImageContentsWrapper = styled.div`
+  position: relative;
 `;
 
 const InlineMediaIndicator = styled.div`
@@ -184,12 +190,12 @@ const TextGridColumns = css`
 
 const TextGridFallbackTopStory = css`
   @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
-    max-width: ${fourOfSixColumnsMaxWidthScaleable};
+    width: ${fourOfSixColumnsMaxWidthScaleable};
   }
 `;
 
 const TextGridFallback = css`
-  max-width: ${fourOfSixColumnsMaxWidthScaleable};
+  width: ${fourOfSixColumnsMaxWidthScaleable};
   padding: 0 ${GEL_SPACING};
 `;
 
@@ -204,12 +210,12 @@ const TextGridItem = styled.div`
   }
 
   @media (min-width: ${GEL_GROUP_5_SCREEN_WIDTH_MIN}) {
-    max-width: ${eightOfTwelveColumnsMaxScaleable};
+    width: ${eightOfTwelveColumnsMaxScaleable};
   }
 
   @supports (display: grid) {
     display: block;
-    max-width: initial;
+    width: initial;
     padding: initial;
 
     ${({ topStory }) => (topStory ? TextGridColumnsTopStory : TextGridColumns)}
@@ -246,12 +252,14 @@ export const Link = styled.a`
 const StoryPromo = ({ image, info, mediaIndicator, topStory }) => (
   <StoryPromoWrapper>
     <ImageGridItem topStory={topStory}>
-      {image}
-      {mediaIndicator && (
-        <InlineMediaIndicator topStory={topStory}>
-          {mediaIndicator}
-        </InlineMediaIndicator>
-      )}
+      <ImageContentsWrapper>
+        {image}
+        {mediaIndicator && (
+          <InlineMediaIndicator topStory={topStory}>
+            {mediaIndicator}
+          </InlineMediaIndicator>
+        )}
+      </ImageContentsWrapper>
     </ImageGridItem>
     <TextGridItem topStory={topStory}>{info}</TextGridItem>
   </StoryPromoWrapper>

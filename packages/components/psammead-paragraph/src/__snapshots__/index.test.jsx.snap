@@ -6,6 +6,8 @@ exports[`Paragraph should render a correctly 1`] = `
   line-height: 1.25rem;
   color: #3F3F42;
   font-family: ReithSans,Helvetica,Arial,sans-serif;
+  font-weight: 400;
+  font-style: normal;
   padding-bottom: 1.5rem;
   margin: 0;
 }
@@ -25,7 +27,7 @@ exports[`Paragraph should render a correctly 1`] = `
 }
 
 <p
-  className="c0"
+  class="c0"
 >
   This is text in a paragraph.
 </p>
@@ -36,27 +38,29 @@ exports[`Paragraph should render correctly with arabic script typography values 
   font-size: 1.125rem;
   line-height: 1.75rem;
   color: #3F3F42;
-  font-family: ReithSans,Helvetica,Arial,sans-serif;
+  font-family: NassimPersian,Arial,Verdana,Geneva,Helvetica,sans serif;
+  font-weight: 400;
+  font-style: normal;
   padding-bottom: 1.5rem;
   margin: 0;
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
   .c0 {
-    font-size: 1.25rem;
-    line-height: 1.875rem;
+    font-size: 1.375rem;
+    line-height: 2rem;
   }
 }
 
 @media (min-width:37.5rem) {
   .c0 {
     font-size: 1.375rem;
-    line-height: 2.125rem;
+    line-height: 2rem;
   }
 }
 
 <p
-  className="c0"
+  class="c0"
 >
   بعض محتوى النص
 </p>

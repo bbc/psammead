@@ -1,0 +1,41 @@
+{
+  "name": "@bbc/psammead-navigation",
+  "version": "1.0.4",
+  "description": "A navigation bar to use on index pages",
+  "main": "dist/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bbc/psammead/tree/latest/packages/components/psammead-navigation"
+  },
+  "author": {
+    "name": "Psammead Maintainers",
+    "email": "PsammeadMaintainers@bbc.co.uk"
+  },
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/bbc/psammead/issues"
+  },
+  "homepage": "https://github.com/bbc/psammead/blob/latest/packages/components/psammead-navigation/README.md",
+  "dependencies": {
+    "@bbc/gel-foundations": "^3.0.2",
+    "@bbc/psammead-styles": "^1.1.2",
+    "@bbc/psammead-visually-hidden-text": "^1.0.4"
+  },
+  "devDependencies": {
+    "@bbc/psammead-assets": "^0.1.9",
+    "@bbc/psammead-storybook-helpers": "^3.0.0",
+    "@bbc/psammead-test-helpers": "^1.0.1",
+    "react": "^16.8.6",
+    "styled-components": "^4.3.2",
+    "@bbc/psammead-brand": "^4.1.2"
+  },
+  "peerDependencies": {
+    "react": "^16.8.6",
+    "styled-components": "^4.3.2",
+    "prop-types": "^15.7.2"
+  },
+  "keywords": [
+    "bbc",
+    "navigation"
+  ]
+}

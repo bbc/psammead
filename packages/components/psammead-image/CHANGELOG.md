@@ -3,6 +3,11 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 1.0.4 | [PR#783](https://github.com/bbc/psammead/pull/783) Update to latest psammead-test-helpers. Update snapshots. |
+| 1.0.3   | [PR#713](https://github.com/bbc/psammead/pull/713) Update `styled-components` to 4.3.2 |
+| 1.0.2   | [PR#703](https://github.com/bbc/psammead/pull/703) Add support for sizes prop in both Img & AmpImg |
+| 1.0.1   | [PR#690](https://github.com/bbc/psammead/pull/690) Updates implementation of image fade in to additionally transition visibility |
+| 1.0.0   | [PR#679](https://github.com/bbc/psammead/pull/679) Bump version number |
 | 0.4.0   | [PR#618](https://github.com/bbc/psammead/pull/618) Option to fade images in. Added optional fade prop. |
 | 0.3.6   | [PR#492](https://github.com/bbc/psammead/pull/492) Make img width prop optional |
 | 0.3.5   | [PR#424](https://github.com/bbc/psammead/pull/424) Add Snyk badge to readme |

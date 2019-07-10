@@ -12,20 +12,30 @@ storiesOf('Utilities|Input Provider', module)
     { notes, knobs: { escapeHTML: false } },
   )
   .add(
+    'simple - limited services',
+    inputProvider(
+      null,
+      () => <span>Im only availible in news, pidgin & thai</span>,
+      ['news', 'pidgin', 'thai'],
+    ),
+    { notes, knobs: { escapeHTML: false } },
+  )
+  .add(
     'complex',
     inputProvider(
       [
         {
           name: 'first slot',
           defaultText:
-            "this slot overwrites the English default; the next one doesn't",
+            "this slot overwrites the news default; the next one doesn't",
         },
         { name: 'second slot' },
       ],
-      ([first, second], script, dir) => (
+      ({ slotTexts: [first, second], script, dir, service }) => (
         <ul>
           <li>{first}</li>
           <li>{second}</li>
+          <li>{service}</li>
           <li>Selected direction: {dir}</li>
           <li>
             Content of selected script:

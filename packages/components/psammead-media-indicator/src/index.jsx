@@ -1,20 +1,30 @@
 import React from 'react';
-import styled from 'styled-components';
-import { string, oneOf } from 'prop-types';
+import styled, { css } from 'styled-components';
+import { string, oneOf, bool } from 'prop-types';
 import { C_WHITE, C_EBON } from '@bbc/psammead-styles/colours';
 import VisuallyHiddenText from '@bbc/psammead-visually-hidden-text';
 import { GEL_SPACING, GEL_SPACING_HLF } from '@bbc/gel-foundations/spacings';
+import { GEL_GROUP_1_SCREEN_WIDTH_MAX } from '@bbc/gel-foundations/breakpoints';
 import { GEL_MINION, GEL_FF_REITH_SANS } from '@bbc/gel-foundations/typography';
 import mediaIcons from './mediaIcons';
 
 const MediaIndicatorWrapper = styled.div`
   padding: ${GEL_SPACING} ${GEL_SPACING_HLF};
   background-color: ${C_WHITE};
-  display: inline-block;
+  display: block;
   font-family: ${GEL_FF_REITH_SANS};
   ${GEL_MINION};
   color: ${C_EBON};
   height: 2rem;
+
+  ${({ topStory }) =>
+    !topStory &&
+    css`
+      @media (max-width: ${GEL_GROUP_1_SCREEN_WIDTH_MAX}) {
+        height: 1.25rem;
+        padding: ${GEL_SPACING_HLF} ${GEL_SPACING_HLF} 0;
+      }
+    `}
 `;
 
 const FlexWrapper = styled.div`
@@ -28,8 +38,14 @@ const TimeDuration = styled.time`
   margin: 0 ${GEL_SPACING_HLF};
 `;
 
-const MediaIndicator = ({ datetime, duration, offscreenText, type }) => (
-  <MediaIndicatorWrapper aria-hidden="true">
+const MediaIndicator = ({
+  datetime,
+  duration,
+  offscreenText,
+  type,
+  topStory,
+}) => (
+  <MediaIndicatorWrapper aria-hidden="true" topStory={topStory}>
     <FlexWrapper>
       {mediaIcons[type]}
       {offscreenText && (
@@ -47,6 +63,7 @@ MediaIndicator.propTypes = {
   duration: string,
   offscreenText: string,
   type: oneOf(['video', 'audio']),
+  topStory: bool,
 };
 
 MediaIndicator.defaultProps = {
@@ -54,6 +71,7 @@ MediaIndicator.defaultProps = {
   duration: null,
   offscreenText: null,
   type: 'video',
+  topStory: false,
 };
 
 export default MediaIndicator;
