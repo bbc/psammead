@@ -1,6 +1,6 @@
 {
   "name": "@bbc/psammead-story-promo",
-  "version": "1.0.0-alpha.6",
+  "version": "1.0.1",
   "main": "dist/index.js",
   "description": "A story promo for use on index pages",
   "repository": {
@@ -24,7 +24,7 @@
     "@bbc/psammead-image": "^1.0.0",
     "@bbc/psammead-media-indicator": "^1.0.1",
     "@bbc/psammead-storybook-helpers": "^3.0.0",
-    "@bbc/psammead-test-helpers": "^1.0.0",
+    "@bbc/psammead-test-helpers": "^1.0.1",
     "@bbc/psammead-timestamp": "^1.0.1",
     "react": "^16.8.6",
     "styled-components": "^4.3.2"
@@ -38,8 +38,5 @@
     "bbc",
     "story",
     "promo"
-  ],
-  "publishConfig": {
-    "tag": "alpha"
-  }
+  ]
 }

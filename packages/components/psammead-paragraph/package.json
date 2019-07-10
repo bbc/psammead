@@ -1,6 +1,6 @@
 {
   "name": "@bbc/psammead-paragraph",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "description": "React styled component for a Paragraph",
   "main": "dist/index.js",
   "repository": {
@@ -28,7 +28,7 @@
   "devDependencies": {
     "@bbc/psammead-storybook-helpers": "^3.0.0",
     "@bbc/psammead-inline-link": "1.1.1",
-    "@bbc/psammead-test-helpers": "^0.3.3",
+    "@bbc/psammead-test-helpers": "^1.0.1",
     "react": "^16.8.6",
     "styled-components": "^4.3.2"
   },

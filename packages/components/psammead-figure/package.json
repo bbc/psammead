@@ -1,6 +1,6 @@
 {
   "name": "@bbc/psammead-figure",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "main": "dist/index.js",
   "description": "React styled component that generates a figure element",
   "repository": {
@@ -26,8 +26,8 @@
     "@bbc/psammead-image-placeholder": "^0.1.8",
     "@bbc/psammead-paragraph": "^1.0.3",
     "@bbc/psammead-storybook-helpers": "^3.0.0",
-    "@bbc/psammead-test-helpers": "^0.3.3",
-    "@bbc/psammead-visually-hidden-text": "^1.0.2",
+    "@bbc/psammead-test-helpers": "^1.0.1",
+    "@bbc/psammead-visually-hidden-text": "^0.1.10",
     "react": "^16.8.6",
     "styled-components": "^4.3.2"
   },

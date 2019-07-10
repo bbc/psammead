@@ -1,6 +1,6 @@
 {
   "name": "@bbc/psammead-section-label",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "React styled component for a section label",
   "main": "dist/index.js",
   "repository": {
@@ -27,7 +27,7 @@
   },
   "devDependencies": {
     "@bbc/psammead-storybook-helpers": "^3.0.0",
-    "@bbc/psammead-test-helpers": "^0.3.4",
+    "@bbc/psammead-test-helpers": "^1.0.1",
     "prop-types": "^15.6.2",
     "react": "^16.8.6",
     "styled-components": "^4.3.2"

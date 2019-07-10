@@ -17,10 +17,13 @@ The `MediaIndicator` component provides a 'play' or 'audio' icon as well as a du
 | datetime      | string | No       | Null    | 'PT2M15S'                    |
 | offscreenText | string | No       | Null    | 'Video'                      |
 | type          | string | No       | 'video' | 'audio'                      |
+| topStory      | boolean | No      | false   | true                         |
 
 ## Usage
 
 The typical use-case of this component is on top of images within promos for articles that contains a video asset at the top of the page. It indicates to the user that the link is to a video and how long the video is in duration.
+
+For top story promos, we should pass the `topStory` prop to the `Media Indicator` to keep the same padding, otherwise this will be modified under 400px.
 
 ```jsx
 import MediaIndicator from '@bbc/psammead-media-indicator';
