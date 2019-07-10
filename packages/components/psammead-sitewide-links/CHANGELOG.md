@@ -3,7 +3,8 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
-| 1.0.6   | [PR#892](https://github.com/bbc/psammead/pull/892) Bump dependencies |
+| 2.0.1   | [PR#892](https://github.com/bbc/psammead/pull/892) Bump dependencies |
+| 2.0.0 | [PR#1018](https://github.com/bbc/psammead/pull/1018) Apply font based on service prop |
 | 1.0.5   | [PR#892](https://github.com/bbc/psammead/pull/892) Bump dependencies |
 | 1.0.4 | [PR#783](https://github.com/bbc/psammead/pull/783) Update to latest psammead-test-helpers. Update snapshots. |
 | 1.0.3 | [PR#769](https://github.com/bbc/psammead/pull/769) Fix stories not appearing in storybook when using `install:packages:link` |
