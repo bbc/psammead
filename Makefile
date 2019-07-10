@@ -31,4 +31,4 @@ publish:
 
 deprecate:
 	echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" > .npmrc
-	npm deprecate ${packageName}@${version} ${reason}
+	npm deprecate ${packageName}@"${version}" "${reason}"
