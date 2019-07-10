@@ -25,6 +25,8 @@ When a date or time is to be displayed inline inside a paragraph.
 | `typographyFunc` | function | No | getBrevier | `function getPica(script){ return 'font-size: 28'; }` |
 | `padding` | boolean | No | `true` | `false` |
 | `script` | object | Yes | N/A | { canon: { groupA: { fontSize: '28', lineHeight: '32',}, groupB: { fontSize: '32', lineHeight: '36', }, groupD: { fontSize: '44', lineHeight: '48', }, }, trafalgar: { groupA: { fontSize: '20', lineHeight: '24', }, groupB: { fontSize: '24', lineHeight: '28', }, groupD: { fontSize: '32', lineHeight: '36', }, }, }|
+| service | string | Yes | N/A | `'news'` |
+
 ## Usage
 
 ```jsx
@@ -37,6 +39,7 @@ const WrappingContainer = () => (
     typographyFunc={getPica}
     padding={false}
     script={latin}
+    service="news"
   >
     Friday 1 March 2019
   </Timestamp>

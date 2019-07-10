@@ -10,9 +10,11 @@ The `psammead-caption` component is a styled `figcaption` element.
 
 ## Props
 
+<!-- prettier-ignore -->
 | Argument  | Type | Required | Default | Example |
 | --------- | ---- | -------- | ------- | ------- |
 | Script    | object | yes | latin | { canon: { groupA: { fontSize: '28', lineHeight: '32',}, groupB: { fontSize: '32', lineHeight: '36', }, groupD: { fontSize: '44', lineHeight: '48', }, }, trafalgar: { groupA: { fontSize: '20', lineHeight: '24', }, groupB: { fontSize: '24', lineHeight: '28', }, groupD: { fontSize: '32', lineHeight: '36', }, }, }|
+| service | string | Yes | N/A | '`news`' |
 
 ## Usage
 
@@ -27,7 +29,7 @@ import { arabic } from '@bbc/gel-foundations/scripts';
 const Wrapper = captionText => (
   <Figure>
     ...
-    <Caption script={arabic}>
+    <Caption script={arabic} service="news">
       <VisuallyHiddenText>Image caption, </VisuallyHiddenText>
       {captionText}
     </Caption>
