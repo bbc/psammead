@@ -24,9 +24,10 @@ exports[`StoryPromo - Top Story should render correctly 1`] = `
   line-height: 1.5rem;
   color: #222222;
   font-family: ReithSerif,Helvetica,Arial,sans-serif;
+  font-weight: 700;
+  font-style: normal;
   margin: 0;
   padding-bottom: 0.5rem;
-  font-weight: 700;
 }
 
 .c6 {
@@ -34,6 +35,8 @@ exports[`StoryPromo - Top Story should render correctly 1`] = `
   line-height: 1.125rem;
   color: #3F3F42;
   font-family: ReithSans,Helvetica,Arial,sans-serif;
+  font-weight: 400;
+  font-style: normal;
   margin: 0;
   padding-bottom: 0.5rem;
 }
@@ -295,9 +298,10 @@ exports[`StoryPromo - Top Story with Media Indicator should render correctly 1`]
   line-height: 1.5rem;
   color: #222222;
   font-family: ReithSerif,Helvetica,Arial,sans-serif;
+  font-weight: 700;
+  font-style: normal;
   margin: 0;
   padding-bottom: 0.5rem;
-  font-weight: 700;
 }
 
 .c12 {
@@ -305,6 +309,8 @@ exports[`StoryPromo - Top Story with Media Indicator should render correctly 1`]
   line-height: 1.125rem;
   color: #3F3F42;
   font-family: ReithSans,Helvetica,Arial,sans-serif;
+  font-weight: 400;
+  font-style: normal;
   margin: 0;
   padding-bottom: 0.5rem;
 }
@@ -553,9 +559,10 @@ exports[`StoryPromo should render correctly 1`] = `
   line-height: 1.25rem;
   color: #222222;
   font-family: ReithSerif,Helvetica,Arial,sans-serif;
+  font-weight: 700;
+  font-style: normal;
   margin: 0;
   padding-bottom: 0.5rem;
-  font-weight: 700;
 }
 
 .c6 {
@@ -563,6 +570,8 @@ exports[`StoryPromo should render correctly 1`] = `
   line-height: 1.125rem;
   color: #3F3F42;
   font-family: ReithSans,Helvetica,Arial,sans-serif;
+  font-weight: 400;
+  font-style: normal;
   margin: 0;
   padding-bottom: 0.5rem;
 }
@@ -814,9 +823,10 @@ exports[`StoryPromo with Media Indicator should render correctly 1`] = `
   line-height: 1.25rem;
   color: #222222;
   font-family: ReithSerif,Helvetica,Arial,sans-serif;
+  font-weight: 700;
+  font-style: normal;
   margin: 0;
   padding-bottom: 0.5rem;
-  font-weight: 700;
 }
 
 .c12 {
@@ -824,6 +834,8 @@ exports[`StoryPromo with Media Indicator should render correctly 1`] = `
   line-height: 1.125rem;
   color: #3F3F42;
   font-family: ReithSans,Helvetica,Arial,sans-serif;
+  font-weight: 400;
+  font-style: normal;
   margin: 0;
   padding-bottom: 0.5rem;
 }

@@ -24,6 +24,7 @@ The `StoryPromo` component is designed to be used on 'index' pages, which are pa
 | Argument  | Type | Required | Default | Example |
 | --------- | ---- | -------- | ------- | ------- |
 | Script    | object | yes | latin | { canon: { groupA: { fontSize: '28', lineHeight: '32',}, groupB: { fontSize: '32', lineHeight: '36', }, groupD: { fontSize: '44', lineHeight: '48', }, }, trafalgar: { groupA: { fontSize: '20', lineHeight: '24', }, groupB: { fontSize: '24', lineHeight: '28', }, groupD: { fontSize: '32', lineHeight: '36', }, }, }|
+| service | string | yes | N/A | `'news'` |
 
 ## Summary Props
 
@@ -31,6 +32,7 @@ The `StoryPromo` component is designed to be used on 'index' pages, which are pa
 | Argument  | Type | Required | Default | Example |
 | --------- | ---- | -------- | ------- | ------- |
 | Script    | object | yes | latin | { canon: { groupA: { fontSize: '28', lineHeight: '32',}, groupB: { fontSize: '32', lineHeight: '36', }, groupD: { fontSize: '44', lineHeight: '48', }, }, trafalgar: { groupA: { fontSize: '20', lineHeight: '24', }, groupB: { fontSize: '24', lineHeight: '28', }, groupD: { fontSize: '32', lineHeight: '36', }, }, }|
+| service | string | yes | N/A | `'news'` |
 
 ## Usage
 
@@ -49,10 +51,10 @@ const Image = <img src="https://foobar.com/image.jpg" />;
 
 const Info = (
   <Fragment>
-    <Headline script={latin} topStory={true}>
+    <Headline script={latin} topStory={true} service="news">
       <Link href="https://www.bbc.co.uk/news">The headline of the promo</Link>
     </Headline>
-    <Summary script={latin} topStory={true}>
+    <Summary script={latin} topStory={true} service="news">
       The summary of the promo
     </Summary>
     <time>12 March 2019</time>

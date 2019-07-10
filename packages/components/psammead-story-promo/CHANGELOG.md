@@ -3,7 +3,8 @@
 <!-- prettier-ignore -->
 | Version | Description |
 | ------- | ----------- |
-| 1.0.2   | [PR#892](https://github.com/bbc/psammead/pull/892) Bump dependencies |
+| 2.0.1   | [PR#892](https://github.com/bbc/psammead/pull/892) Bump dependencies |
+| 2.0.0 | [PR#1022](https://github.com/bbc/psammead/pull/1022) Apply font based on service prop |
 | 1.0.1  | [PR#892](https://github.com/bbc/psammead/pull/892) Bump dependencies |
 | 1.0.0 | [PR#937](https://github.com/bbc/psammead/pull/937) Remove alpha tag, swarm done |
 | 1.0.0-alpha.6   | [PR#893](https://github.com/bbc/psammead/pull/893) Fix knobs for story promo stories |
