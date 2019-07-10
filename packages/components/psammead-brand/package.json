@@ -22,7 +22,7 @@
     "@bbc/psammead-visually-hidden-text": "^0.1.10"
   },
   "devDependencies": {
-    "@bbc/psammead-assets": "^1.0.2",
+    "@bbc/psammead-assets": "^1.0.4",
     "@bbc/psammead-storybook-helpers": "^3.0.0",
     "@bbc/psammead-test-helpers": "^1.0.1",
     "react": "^16.8.6",
