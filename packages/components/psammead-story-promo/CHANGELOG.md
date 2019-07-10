@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 | ------- | ----------- |
+| 1.0.1  | [PR#892](https://github.com/bbc/psammead/pull/892) Bump dependencies |
 | 1.0.0 | [PR#937](https://github.com/bbc/psammead/pull/937) Remove alpha tag, swarm done |
 | 1.0.0-alpha.6   | [PR#893](https://github.com/bbc/psammead/pull/893) Fix knobs for story promo stories |
 | 1.0.0-alpha.5   | [PR#769](https://github.com/bbc/psammead/pull/769) Fix stories not appearing in storybook when using `install:packages:link` |
