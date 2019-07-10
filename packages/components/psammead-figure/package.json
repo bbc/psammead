@@ -20,7 +20,7 @@
     "@bbc/gel-foundations": "^3.0.2"
   },
   "devDependencies": {
-    "@bbc/psammead-caption": "^0.3.0",
+    "@bbc/psammead-caption": "^1.1.12",
     "@bbc/psammead-copyright": "^0.3.2",
     "@bbc/psammead-image": "^0.3.3",
     "@bbc/psammead-image-placeholder": "^0.1.8",
