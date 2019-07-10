@@ -16,9 +16,9 @@ describe(`changeScanner - getChanges`, () => {
       }),
     }));
 
-    const getPackages = require('./getChanges');
+    const getChanges = require('./getChanges');
 
-    expect(getPackages()).toEqual({
+    expect(getChanges()).toEqual({
       barfoo: ['package.json'],
       foobar: ['index.js', 'index.test.js'],
       apples: ['dist/package.json'],
