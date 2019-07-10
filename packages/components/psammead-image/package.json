@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/bbc/psammead/blob/latest/packages/components/psammead-image/README.md",
   "devDependencies": {
-    "@bbc/psammead-assets": "^0.1.3",
+    "@bbc/psammead-assets": "^1.0.4",
     "@bbc/psammead-test-helpers": "^1.0.1",
     "prop-types": "^15.6.2",
     "react": "^16.8.6",
