@@ -28,13 +28,17 @@ storiesOf('Components|SitewideLinks', module)
     'default',
     inputProvider(
       linkNames,
-      ({ slotTexts: [externalLinkText, copyrightText, ...linkTexts] }) => {
+      ({
+        slotTexts: [externalLinkText, copyrightText, ...linkTexts],
+        service,
+      }) => {
         const links = linkTexts.map(buildLink);
         return (
           <SitewideLinks
             links={links}
             copyrightText={copyrightText}
             externalLink={buildLink(externalLinkText)}
+            service={service}
           />
         );
       },
