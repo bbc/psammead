@@ -10,6 +10,7 @@ exports[`Caption should render with some offscreen text 1`] = `
   overflow: hidden;
   position: absolute;
   width: 1px;
+  margin: 0;
 }
 
 .c0 {
@@ -84,6 +85,7 @@ exports[`Caption should render with some offscreen text and arabic script typogr
   overflow: hidden;
   position: absolute;
   width: 1px;
+  margin: 0;
 }
 
 .c0 {
