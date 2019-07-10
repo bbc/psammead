@@ -1,10 +1,5 @@
 import styled from 'styled-components';
-import {
-  C_POSTBOX,
-  C_METAL,
-  C_WHITE,
-  C_EBON,
-} from '@bbc/psammead-styles/colours';
+import { C_POSTBOX, C_METAL, C_EBON } from '@bbc/psammead-styles/colours';
 
 const InlineLink = styled.a`
   color: ${C_EBON};
@@ -18,12 +13,8 @@ const InlineLink = styled.a`
 
   &:focus,
   &:hover {
-    background-color: ${C_POSTBOX};
+    color: ${C_POSTBOX};
     border-bottom: 2px solid ${C_POSTBOX};
-    color: ${C_WHITE};
-    margin: 0 -2px;
-    padding: 0 2px;
-    white-space: pre-wrap;
   }
 `;
 
