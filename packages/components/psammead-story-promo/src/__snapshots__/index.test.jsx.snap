@@ -227,18 +227,22 @@ exports[`StoryPromo - Top Story with Media Indicator should render correctly 1`]
   overflow: hidden;
   position: absolute;
   width: 1px;
+  margin: 0;
 }
 
 .c6 {
   vertical-align: middle;
   margin: 0 0.25rem;
-  fill: #222222;
+  color: #222222;
+  fill: currentColor;
+  width: 0.75rem;
+  height: 0.75rem;
 }
 
 .c4 {
   padding: 0.5rem 0.25rem;
   background-color: #FFFFFF;
-  display: inline-block;
+  display: block;
   font-family: ReithSans,Helvetica,Arial,sans-serif;
   font-size: 0.75rem;
   line-height: 1rem;
@@ -337,6 +341,13 @@ exports[`StoryPromo - Top Story with Media Indicator should render correctly 1`]
 
 .c11:visited {
   color: #6E6E73;
+}
+
+@media (max-width:24.9375rem) {
+  .c4 {
+    height: 1.25rem;
+    padding: 0.25rem 0.25rem 0;
+  }
 }
 
 @supports (display:grid) {
@@ -741,18 +752,22 @@ exports[`StoryPromo with Media Indicator should render correctly 1`] = `
   overflow: hidden;
   position: absolute;
   width: 1px;
+  margin: 0;
 }
 
 .c6 {
   vertical-align: middle;
   margin: 0 0.25rem;
-  fill: #222222;
+  color: #222222;
+  fill: currentColor;
+  width: 0.75rem;
+  height: 0.75rem;
 }
 
 .c4 {
   padding: 0.5rem 0.25rem;
   background-color: #FFFFFF;
-  display: inline-block;
+  display: block;
   font-family: ReithSans,Helvetica,Arial,sans-serif;
   font-size: 0.75rem;
   line-height: 1rem;
@@ -847,6 +862,13 @@ exports[`StoryPromo with Media Indicator should render correctly 1`] = `
 
 .c11:visited {
   color: #6E6E73;
+}
+
+@media (max-width:24.9375rem) {
+  .c4 {
+    height: 1.25rem;
+    padding: 0.25rem 0.25rem 0;
+  }
 }
 
 @supports (display:grid) {

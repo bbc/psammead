@@ -21,9 +21,9 @@
     "@bbc/psammead-styles": "^1.1.2"
   },
   "devDependencies": {
-    "@bbc/psammead-inline-link": "^1.1.6",
-    "@bbc/psammead-paragraph": "^1.0.3",
-    "@bbc/psammead-storybook-helpers": "^3.0.0",
+    "@bbc/psammead-inline-link": "^1.1.7",
+    "@bbc/psammead-paragraph": "^2.0.2",
+    "@bbc/psammead-storybook-helpers": "^3.1.1",
     "@bbc/psammead-test-helpers": "^1.0.1",
     "@bbc/psammead-visually-hidden-text": "^1.0.4",
     "react": "^16.8.6",
