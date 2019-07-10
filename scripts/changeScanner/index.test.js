@@ -58,14 +58,14 @@ describe(`changeScanner - index`, () => {
     expect(mockExit).toHaveBeenCalled();
 
     const expectedMessages = [
-      'Must change CHANGELOG.md in barfoo',
-      'Must change package-lock.json in barfoo',
-      'Must change CHANGELOG.md in foobar',
-      'Must change package-lock.json in foobar',
-      'Must change package.json in foobar',
-      'Must change CHANGELOG.md in apples',
-      'Must change package-lock.json in apples',
-      'Must change package.json in apples',
+      'Branch must update CHANGELOG.md in barfoo',
+      'Branch must update package-lock.json in barfoo',
+      'Branch must update CHANGELOG.md in foobar',
+      'Branch must update package-lock.json in foobar',
+      'Branch must update package.json in foobar',
+      'Branch must update CHANGELOG.md in apples',
+      'Branch must update package-lock.json in apples',
+      'Branch must update package.json in apples',
     ];
 
     expect(consoleLogOutput).not.toHaveBeenCalled();

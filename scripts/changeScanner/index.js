@@ -11,7 +11,7 @@ const changes = getChanges();
 Object.keys(changes).forEach(packageName => {
   requiredChanges.forEach(requiredFile => {
     if (!changes[packageName].includes(requiredFile)) {
-      errors.push(`Must change ${requiredFile} in ${packageName}`);
+      errors.push(`Branch must update ${requiredFile} in ${packageName}`);
     }
   });
 });
