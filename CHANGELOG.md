@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 1.2.7  | [PR#766](https://github.com/bbc/psammead/pull/766) Bump eslint-config-prettier from 5.0.0 to 6.0.0 and eslint-plugin-import from 2.17.3 to 2.18.0 |
 | 1.2.6  | [PR#724](https://github.com/bbc/psammead/pull/724) Update babel-plugin-styled-components from version 1.10.1 to 1.10.5 |
 | 1.2.5  | [PR#695](https://github.com/bbc/psammead/pull/695) Bump eslint-plugin-react from 7.13.0 to 7.14.2 |
 | 1.2.4  | [PR#710](https://github.com/bbc/psammead/pull/710) Bump @testing-library/react from 8.0.1 to 8.0.4 |
