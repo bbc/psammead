@@ -1,6 +1,6 @@
 {
   "name": "@bbc/psammead-headings",
-  "version": "2.0.4",
+  "version": "2.0.5",
   "main": "dist/index.js",
   "description": "React styled components for a Headline and SubHeading",
   "repository": {
@@ -17,8 +17,8 @@
   },
   "homepage": "https://github.com/bbc/psammead/blob/latest/packages/components/psammead-headings/README.md",
   "dependencies": {
-    "@bbc/gel-foundations": "^3.0.0",
-    "@bbc/psammead-styles": "^0.3.2"
+    "@bbc/gel-foundations": "^3.0.2",
+    "@bbc/psammead-styles": "^1.1.2"
   },
   "devDependencies": {
     "@bbc/psammead-storybook-helpers": "^3.0.0",

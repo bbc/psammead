@@ -10,6 +10,7 @@ exports[`MediaIndicator - Top Story should render a top story audio promo render
   overflow: hidden;
   position: absolute;
   width: 1px;
+  margin: 0;
 }
 
 .c2 {
@@ -95,6 +96,7 @@ exports[`MediaIndicator should render audio correctly without duration details 1
   overflow: hidden;
   position: absolute;
   width: 1px;
+  margin: 0;
 }
 
 .c2 {
@@ -176,6 +178,7 @@ exports[`MediaIndicator should render audio indicator correctly 1`] = `
   overflow: hidden;
   position: absolute;
   width: 1px;
+  margin: 0;
 }
 
 .c2 {
@@ -268,6 +271,7 @@ exports[`MediaIndicator should render video by default 1`] = `
   overflow: hidden;
   position: absolute;
   width: 1px;
+  margin: 0;
 }
 
 .c2 {
@@ -346,6 +350,7 @@ exports[`MediaIndicator should render video correctly without duration details 1
   overflow: hidden;
   position: absolute;
   width: 1px;
+  margin: 0;
 }
 
 .c2 {
@@ -424,6 +429,7 @@ exports[`MediaIndicator should render video indicator correctly 1`] = `
   overflow: hidden;
   position: absolute;
   width: 1px;
+  margin: 0;
 }
 
 .c2 {
