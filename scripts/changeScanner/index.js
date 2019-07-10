@@ -18,7 +18,7 @@ Object.keys(changes).forEach(packageName => {
 
 if (errors.length > 0) {
   // eslint-disable-next-line no-console
-  errors.forEach(error => console.log(chalk.red(error)));
+  errors.forEach(error => console.error(chalk.red(error)));
   process.exit(1);
 } else {
   // eslint-disable-next-line no-console

@@ -1,14 +1,11 @@
 const { exec } = require('shelljs');
 
 const getChanges = () => {
-  const execute = exec(`git diff --name-status latest`, {
+  const execute = exec(`git diff --name-only latest ./packages`, {
     silent: true,
   }).stdout;
 
-  const changedFiles = execute
-    .replace(/M\t/g, '')
-    .split('\n')
-    .filter(val => val);
+  const changedFiles = execute.split('\n').filter(val => val);
 
   const changedPackages = {};
 
