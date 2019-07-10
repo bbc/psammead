@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/bbc/psammead/blob/latest/packages/components/psammead-figure/README.md",
   "dependencies": {
-    "@bbc/gel-foundations": "^3.0.1"
+    "@bbc/gel-foundations": "^3.0.2"
   },
   "devDependencies": {
     "@bbc/psammead-caption": "^0.3.0",
@@ -27,7 +27,7 @@
     "@bbc/psammead-paragraph": "^1.0.3",
     "@bbc/psammead-storybook-helpers": "^3.0.0",
     "@bbc/psammead-test-helpers": "^1.0.1",
-    "@bbc/psammead-visually-hidden-text": "^0.1.10",
+    "@bbc/psammead-visually-hidden-text": "^1.0.4",
     "react": "^16.8.6",
     "styled-components": "^4.3.2"
   },

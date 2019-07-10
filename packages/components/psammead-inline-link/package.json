@@ -23,7 +23,7 @@
   },
   "homepage": "https://github.com/bbc/psammead/blob/latest/packages/components/psammead-inline-link/README.md",
   "dependencies": {
-    "@bbc/psammead-styles": "^1.1.1"
+    "@bbc/psammead-styles": "^1.1.2"
   },
   "devDependencies": {
     "@bbc/psammead-storybook-helpers": "^3.0.0",

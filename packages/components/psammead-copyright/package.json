@@ -17,12 +17,12 @@
   },
   "homepage": "https://github.com/bbc/psammead/blob/latest/packages/components/psammead-copyright/README.md",
   "dependencies": {
-    "@bbc/gel-foundations": "^3.0.1",
-    "@bbc/psammead-styles": "^1.1.1"
+    "@bbc/gel-foundations": "^3.0.2",
+    "@bbc/psammead-styles": "^1.1.2"
   },
   "devDependencies": {
     "@bbc/psammead-test-helpers": "^1.0.1",
-    "@bbc/psammead-visually-hidden-text": "^0.1.8",
+    "@bbc/psammead-visually-hidden-text": "^1.0.4",
     "styled-components": "^4.3.2"
   },
   "peerDependencies": {
