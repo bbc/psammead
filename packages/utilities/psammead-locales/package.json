@@ -1,6 +1,7 @@
 {
   "name": "@bbc/psammead-locales",
   "version": "1.0.0",
+  "sideEffects": false,
   "description": "A collection of locale configs, used in BBC World Service sites",
   "repository": {
     "type": "git",
