@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 1.1.14   | [PR#1038](https://github.com/bbc/psammead/pull/1038) Bump dependencies |
 | 1.1.13   | [PR#892](https://github.com/bbc/psammead/pull/892) Bump dependencies |
 | 1.1.12  | [PR#1019](https://github.com/bbc/psammead/pull/1019) Bump psammead-inline-link to revert styling changes |
 | 1.1.11  | [PR#783](https://github.com/bbc/psammead/pull/783) Update to latest psammead-test-helpers. Update snapshots. |
