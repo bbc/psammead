@@ -13,8 +13,9 @@ import {
   GEL_GROUP_3_SCREEN_WIDTH_MIN,
   GEL_GROUP_5_SCREEN_WIDTH_MIN,
 } from '@bbc/gel-foundations/breakpoints';
-import { getPica, GEL_FF_REITH_SANS } from '@bbc/gel-foundations/typography';
+import { getPica } from '@bbc/gel-foundations/typography';
 import { scriptPropType } from '@bbc/gel-foundations/prop-types';
+import { getSansRegular } from '@bbc/psammead-styles/font-styles';
 
 const TOP_BOTTOM_SPACING = '0.75rem'; // 12px
 const CURRENT_ITEM_HOVER_BORDER = '0.3125rem'; // 5px
@@ -50,7 +51,7 @@ const SkipLink = styled.a`
   border: ${SKIP_LINK_BORDER} solid #000;
   color: ${SKIP_LINK_COLOR};
   text-decoration: none;
-  font-family: ${GEL_FF_REITH_SANS};
+  ${({ service }) => getSansRegular(service)}
   ${props => (props.script ? getPica(props.script) : '')};
 
   &:focus {
@@ -115,7 +116,7 @@ const ListItemBorder = css`
 
 const StyledLink = styled.a`
   ${props => (props.script ? getPica(props.script) : '')};
-  font-family: ${GEL_FF_REITH_SANS};
+  ${({ service }) => getSansRegular(service)}
   color: ${C_GHOST};
   cursor: pointer;
   text-decoration: none;
@@ -174,26 +175,32 @@ export const NavigationLi = ({
   dir,
   currentPageText,
   active,
+  service,
 }) => (
   <StyledListItem role="listitem" dir={dir}>
     {active && currentPageText ? (
-      <StyledLink href={url} script={script} currentLink="true">
+      <StyledLink
+        href={url}
+        script={script}
+        currentLink="true"
+        service={service}
+      >
         <CurrentLink script={script} currentPageText={currentPageText}>
           {link}
         </CurrentLink>
       </StyledLink>
     ) : (
-      <StyledLink href={url} script={script}>
+      <StyledLink href={url} script={script} service={service}>
         {link}
       </StyledLink>
     )}
   </StyledListItem>
 );
 
-const Navigation = ({ children, script, skipLinkText }) => (
+const Navigation = ({ children, script, skipLinkText, service }) => (
   <StyledNav role="navigation">
     <NavWrapper>
-      <SkipLink href="#content" script={script}>
+      <SkipLink href="#content" script={script} service={service}>
         {skipLinkText}
       </SkipLink>
       {children}
@@ -205,6 +212,7 @@ Navigation.propTypes = {
   children: node.isRequired,
   script: shape(scriptPropType).isRequired,
   skipLinkText: string.isRequired,
+  service: string.isRequired,
 };
 
 NavigationUl.propTypes = {
@@ -218,6 +226,7 @@ NavigationLi.propTypes = {
   dir: oneOf(['ltr', 'rtl']),
   active: bool,
   currentPageText: string,
+  service: string.isRequired,
 };
 
 NavigationLi.defaultProps = {
