@@ -15,7 +15,8 @@ exports[`MediaIndicator - Top Story should render a top story audio promo render
 .c2 {
   vertical-align: middle;
   margin: 0 0.25rem;
-  fill: #222222;
+  color: #222222;
+  fill: currentColor;
   width: 0.8125rem;
   height: 0.75rem;
 }
@@ -99,7 +100,8 @@ exports[`MediaIndicator should render audio correctly without duration details 1
 .c2 {
   vertical-align: middle;
   margin: 0 0.25rem;
-  fill: #222222;
+  color: #222222;
+  fill: currentColor;
   width: 0.8125rem;
   height: 0.75rem;
 }
@@ -179,7 +181,8 @@ exports[`MediaIndicator should render audio indicator correctly 1`] = `
 .c2 {
   vertical-align: middle;
   margin: 0 0.25rem;
-  fill: #222222;
+  color: #222222;
+  fill: currentColor;
   width: 0.8125rem;
   height: 0.75rem;
 }
@@ -270,7 +273,8 @@ exports[`MediaIndicator should render video by default 1`] = `
 .c2 {
   vertical-align: middle;
   margin: 0 0.25rem;
-  fill: #222222;
+  color: #222222;
+  fill: currentColor;
   width: 0.75rem;
   height: 0.75rem;
 }
@@ -347,7 +351,8 @@ exports[`MediaIndicator should render video correctly without duration details 1
 .c2 {
   vertical-align: middle;
   margin: 0 0.25rem;
-  fill: #222222;
+  color: #222222;
+  fill: currentColor;
   width: 0.75rem;
   height: 0.75rem;
 }
@@ -424,7 +429,8 @@ exports[`MediaIndicator should render video indicator correctly 1`] = `
 .c2 {
   vertical-align: middle;
   margin: 0 0.25rem;
-  fill: #222222;
+  color: #222222;
+  fill: currentColor;
   width: 0.75rem;
   height: 0.75rem;
 }
