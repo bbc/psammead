@@ -10,10 +10,10 @@ const Image = <img src="https://foobar.com/image.png" alt="Alt text" />;
 // eslint-disable-next-line react/prop-types
 const Info = ({ topStory }) => (
   <Fragment>
-    <Headline script={latin} topStory={topStory}>
+    <Headline script={latin} topStory={topStory} service="news">
       <Link href="https://www.bbc.co.uk/news">The headline of the promo</Link>
     </Headline>
-    <Summary script={latin} topStory={topStory}>
+    <Summary script={latin} topStory={topStory} service="news">
       The summary of the promo
     </Summary>
     <time>12 March 2019</time>
