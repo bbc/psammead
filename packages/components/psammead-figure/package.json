@@ -24,7 +24,7 @@
     "@bbc/psammead-copyright": "^1.0.4",
     "@bbc/psammead-image": "^1.0.4",
     "@bbc/psammead-image-placeholder": "^1.0.3",
-    "@bbc/psammead-paragraph": "^2.0.2",
+    "@bbc/psammead-paragraph": "^2.0.4",
     "@bbc/psammead-storybook-helpers": "^3.1.1",
     "@bbc/psammead-test-helpers": "^1.0.1",
     "@bbc/psammead-visually-hidden-text": "^1.0.4",
