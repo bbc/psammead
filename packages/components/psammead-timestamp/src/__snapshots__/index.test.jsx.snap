@@ -7,6 +7,8 @@ exports[`Timestamp should render Timestamp correctly 1`] = `
   color: #6E6E73;
   display: block;
   font-family: ReithSans,Helvetica,Arial,sans-serif;
+  font-weight: 400;
+  font-style: normal;
   padding-bottom: 0.25rem;
 }
 
@@ -29,8 +31,8 @@ exports[`Timestamp should render Timestamp correctly 1`] = `
 }
 
 <time
-  className="c0"
-  dateTime="1530947227000"
+  class="c0"
+  datetime="1530947227000"
 >
   7 July 2018
 </time>
@@ -43,6 +45,8 @@ exports[`Timestamp should render Timestamp with a prefix 1`] = `
   color: #6E6E73;
   display: block;
   font-family: ReithSans,Helvetica,Arial,sans-serif;
+  font-weight: 400;
+  font-style: normal;
   padding-bottom: 0.25rem;
 }
 
@@ -65,8 +69,8 @@ exports[`Timestamp should render Timestamp with a prefix 1`] = `
 }
 
 <time
-  className="c0"
-  dateTime="1530947227000"
+  class="c0"
+  datetime="1530947227000"
 >
   Updated 7 July 2018
 </time>
@@ -79,6 +83,8 @@ exports[`Timestamp should render Timestamp without padding 1`] = `
   color: #6E6E73;
   display: block;
   font-family: ReithSans,Helvetica,Arial,sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
@@ -96,8 +102,8 @@ exports[`Timestamp should render Timestamp without padding 1`] = `
 }
 
 <time
-  className="c0"
-  dateTime="1530947227000"
+  class="c0"
+  datetime="1530947227000"
 >
   Updated 7 July 2018
 </time>
@@ -110,6 +116,8 @@ exports[`Timestamp should render with the correct typography style applied 1`] =
   color: #6E6E73;
   display: block;
   font-family: ReithSans,Helvetica,Arial,sans-serif;
+  font-weight: 400;
+  font-style: normal;
   padding-bottom: 0.25rem;
 }
 
@@ -132,8 +140,8 @@ exports[`Timestamp should render with the correct typography style applied 1`] =
 }
 
 <time
-  className="c0"
-  dateTime="1530947227000"
+  class="c0"
+  datetime="1530947227000"
 >
   7 July 2018
 </time>

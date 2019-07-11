@@ -3,7 +3,9 @@
 <! --prettier-ignore -->
 | Version | Description |
 |---------|-------------|
-| 1.0.1   | [PR#713](https://github.com/bbc/psammead/pull/713) Update `styled-components` to 4.3.2 |
+| 1.0.3 | [PR#892](https://github.com/bbc/psammead/pull/892) Bump dependencies |
+| 1.0.2 | [PR#783](https://github.com/bbc/psammead/pull/783) Update to latest psammead-test-helpers. Update snapshots. |
+| 1.0.1 | [PR#713](https://github.com/bbc/psammead/pull/713) Update `styled-components` to 4.3.2 |
 | 1.0.0 | [PR#679](https://github.com/bbc/psammead/pull/679) Bump version number |
 | 0.1.10 | [PR#424](https://github.com/bbc/psammead/pull/424) Add Snyk badge to readme |
 | 0.1.9 | [PR#407](https://github.com/bbc/psammead/pull/407) Organise dependencies properly |

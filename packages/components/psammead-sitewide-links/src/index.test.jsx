@@ -16,6 +16,7 @@ describe(`SitewideLinks`, () => {
       links={links}
       copyrightText="Text here. "
       externalLink={link}
+      service="news"
     />,
   );
 });
