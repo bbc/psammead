@@ -9,8 +9,8 @@ import {
 const InlineLink = styled.a`
   color: ${C_EBON};
   border-bottom: 1px solid ${C_POSTBOX};
-  margin: 0 -0.25rem;
-  padding: 0 0.25rem;
+  margin: 0 -0.125rem;
+  padding: 0 0.125rem;
   text-decoration: none;
 
   &:visited {
