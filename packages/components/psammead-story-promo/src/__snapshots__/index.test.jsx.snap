@@ -86,7 +86,7 @@ exports[`StoryPromo - Top Story should render correctly 1`] = `
 @media (min-width:37.5rem) {
   .c1 {
     width: 33.33%;
-    margin-bottom: none;
+    margin-bottom: 0;
   }
 }
 
@@ -367,7 +367,7 @@ exports[`StoryPromo - Top Story with Media Indicator should render correctly 1`]
 @media (min-width:37.5rem) {
   .c1 {
     width: 33.33%;
-    margin-bottom: none;
+    margin-bottom: 0;
   }
 }
 
