@@ -3,7 +3,8 @@
 <!-- prettier-ignore -->
 | Version | Description |
 | ------- | ----------- |
-| 1.1.5   | [PR#1082](https://github.com/bbc/psammead/pull/1082) Bump lodash security vulnerability |
+| 2.0.1   | [PR#1082](https://github.com/bbc/psammead/pull/1082) Bump lodash security vulnerability |
+| 2.0.0 | [PR#940](https://github.com/bbc/psammead/pull/940) Apply font based on service prop |
 | 1.1.4 | [PR#1038](https://github.com/bbc/psammead/pull/1038) Bump dependencies |
 | 1.1.3   | [PR#892](https://github.com/bbc/psammead/pull/892) Bump dependencies |
 | 1.1.2   | [PR#935](https://github.com/bbc/psammead/pull/935) Ensure media icons are visible in high contrast / custom colourschemes |
