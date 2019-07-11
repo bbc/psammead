@@ -28,3 +28,6 @@ storybook:
 publish:
 	echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" > .npmrc
 	npm run publish;
+
+change-scanner:
+	npm run changeScanner;
