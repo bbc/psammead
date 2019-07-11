@@ -11,7 +11,7 @@ storiesOf('Components|SectionLabel', module)
     'default',
     inputProvider(
       [{ name: 'title', defaultText: 'Most Read' }],
-      ([title], script, dir) => (
+      ({ slotTexts: [title], script, dir }) => (
         <SectionLabel
           script={script}
           dir={dir}
