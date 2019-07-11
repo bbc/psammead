@@ -1,4 +1,3 @@
-/* eslint-disable global-require */
-module.exports = {
-  scriptPropType: require('../dist/propTypes/scripts').default,
-};
+import scriptPropType from './propTypes/scripts';
+
+export { scriptPropType };

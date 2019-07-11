@@ -1,18 +1,27 @@
-/* eslint-disable global-require */
-module.exports = {
-  latin: require('../dist/scripts/latin-and-cyrillic').default,
-  cyrillic: require('../dist/scripts/latin-and-cyrillic').default,
-  latinDiacritics: require('../dist/scripts/latin-with-diacritics').default,
-  arabic: require('../dist/scripts/arabic').default,
-  arabicPashto: require('../dist/scripts/arabic-pashto').default,
-  bengali: require('../dist/scripts/bengali').default,
-  burmese: require('../dist/scripts/burmese').default,
-  hindi: require('../dist/scripts/devanagari-and-gurmukhi').default,
-  nepali: require('../dist/scripts/devanagari-and-gurmukhi').default,
-  sinhalese: require('../dist/scripts/sinhalese').default,
-  tamil: require('../dist/scripts/tamil').default,
-  thai: require('../dist/scripts/thai').default,
-  chinese: require('../dist/scripts/no-ascenders-or-descenders').default,
-  korean: require('../dist/scripts/no-ascenders-or-descenders').default,
-  ethiopic: require('../dist/scripts/no-ascenders-or-descenders').default,
-};
+import latinAndCyrillic from './scripts/latin-and-cyrillic';
+import latinDiacritics from './scripts/latin-with-diacritics';
+import arabic from './scripts/arabic';
+import arabicPashto from './scripts/arabic-pashto';
+import bengali from './scripts/bengali';
+import burmese from './scripts/burmese';
+import devanagariAndGurmukhi from './scripts/devanagari-and-gurmukhi';
+import sinhalese from './scripts/sinhalese';
+import tamil from './scripts/tamil';
+import thai from './scripts/thai';
+import noAscendersOrDescenders from './scripts/no-ascenders-or-descenders';
+
+export { latinAndCyrillic as latin };
+export { latinAndCyrillic as cyrillic };
+export { latinDiacritics };
+export { arabic };
+export { arabicPashto };
+export { bengali };
+export { burmese };
+export { devanagariAndGurmukhi as hindi };
+export { devanagariAndGurmukhi as nepali };
+export { sinhalese };
+export { tamil };
+export { thai };
+export { noAscendersOrDescenders as chinese };
+export { noAscendersOrDescenders as korean };
+export { noAscendersOrDescenders as ethiopic };
