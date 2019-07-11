@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 | ------- | ----------- |
+| 4.1.9   | [PR#892](https://github.com/bbc/psammead/pull/892) Bump dependencies |
 | 4.1.8 | [PR#783](https://github.com/bbc/psammead/pull/783) Update to latest psammead-test-helpers. Update snapshots. |
 | 4.1.7   | [PR#787](https://github.com/bbc/psammead/pull/787) Fix brand colour in Firefox high contrast mode |
 | 4.1.6   | [PR#789](https://github.com/bbc/psammead/pull/789) Use rem for the `BrandSvg` height |
@@ -34,4 +35,3 @@
 | 0.1.2   | [PR#227](https://github.com/BBC-News/psammead/pull/227) Replace @bbc/gel-constants and @bbc/gel-foundations-styled-component with [@bbc/gel-foundations in Psammead](https://github.com/BBC-News/psammead/issues/226). |
 | 0.1.1   | [PR#202](https://github.com/BBC-News/psammead/pull/202) Fixes a styling bug caused by an [incorrect constant import](https://github.com/BBC-News/psammead/issues/201). |
 | 0.1.0   | [PR#105](https://github.com/BBC-News/psammead/pull/105) Create initial package, pulled in from [simorgh](https://github.com/BBC-News/simorgh).                         |
-

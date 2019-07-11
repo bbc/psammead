@@ -7,6 +7,7 @@ const VisuallyHiddenText = styled.span`
   overflow: hidden;
   position: absolute;
   width: 1px;
+  margin: 0;
 `;
 
 export default VisuallyHiddenText;
