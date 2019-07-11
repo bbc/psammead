@@ -57,7 +57,7 @@
     "babel-plugin-styled-components": "1.10.5",
     "chalk": "^2.4.1",
     "eslint": "^5.9.0",
-    "eslint-config-airbnb": "^17.1.0",
+    "eslint-config-airbnb": "^17.1.1",
     "eslint-config-prettier": "^6.0.0",
     "eslint-plugin-import": "^2.18.0",
     "eslint-plugin-json": "^1.2.1",
