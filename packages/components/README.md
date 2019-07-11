@@ -1,6 +1,14 @@
-# Components
+# Psammead Component
 
-Psammead components are intended to be:
+Please see our [definition of done](https://github.com/bbc/psammead/blob/latest/CONTRIBUTING.md#definition-of-done) for an overview of our components' structure and workflow.
+
+Fundamentally, Psammead components are intended to be:
+
+Presentational
+GEL-Compliant
+Accessible
+
+## What does that mean?
 
 ### Presentational
 

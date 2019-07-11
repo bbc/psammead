@@ -67,6 +67,8 @@ npm run build
 
 ## :computer: Developing with Psammead
 
+Please refer to the [Psammead component guide](https://github.com/bbc/psammead/blob/latest/packages/components/README.md)
+
 When making changes to a package locally if you want to pull those changes into another psammead package then the following command will create the required symlinks for you.
 
 ### :link: Link packages locally
