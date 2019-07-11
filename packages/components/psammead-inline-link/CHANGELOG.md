@@ -3,7 +3,8 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
-| 1.1.8-alpha.1 | [PR#1023](https://github.com/bbc/psammead/pull/1023) Default styling should have padding and margin to fix hover/focus bug |
+| 1.1.9-alpha.1 | [PR#1023](https://github.com/bbc/psammead/pull/1023) Default styling should have padding and margin to fix hover/focus bug |
+| 1.1.8 | [PR#1038](https://github.com/bbc/psammead/pull/1038) Bump dependencies |
 | 1.1.7 | [PR#892](https://github.com/bbc/psammead/pull/892) Bump dependencies |
 | 1.1.6 | [PR#942](https://github.com/bbc/psammead/pull/942) Revert new inline-link styling due to [bug](https://github.com/bbc/simorgh/issues/2370) |
 | 1.1.5 | [PR#783](https://github.com/bbc/psammead/pull/783) Update to latest psammead-test-helpers. Update snapshots. |
