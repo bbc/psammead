@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 | ------- | ----------- |
+| 4.1.10  | [PR#1082](https://github.com/bbc/psammead/pull/1082) Bump lodash security vulnerability |
 | 4.1.9   | [PR#892](https://github.com/bbc/psammead/pull/892) Bump dependencies |
 | 4.1.8 | [PR#783](https://github.com/bbc/psammead/pull/783) Update to latest psammead-test-helpers. Update snapshots. |
 | 4.1.7   | [PR#787](https://github.com/bbc/psammead/pull/787) Fix brand colour in Firefox high contrast mode |

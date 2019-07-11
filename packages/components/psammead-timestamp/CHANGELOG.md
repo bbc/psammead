@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 2.0.1   | [PR#1082](https://github.com/bbc/psammead/pull/1082) Bump lodash security vulnerability |
 | 2.0.0 | [PR#1017](https://github.com/bbc/psammead/pull/1017) Apply font based on service prop |
 | 1.0.5   | [PR#892](https://github.com/bbc/psammead/pull/892) Bump dependencies |
 | 1.0.4 | [PR#783](https://github.com/bbc/psammead/pull/783) Update to latest psammead-test-helpers. Update snapshots. |
