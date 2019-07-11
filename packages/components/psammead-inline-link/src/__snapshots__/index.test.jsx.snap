@@ -15,16 +15,12 @@ exports[`InlineLink should render correctly 1`] = `
 
 .c0:focus,
 .c0:hover {
-  background-color: #B80000;
+  color: #B80000;
   border-bottom: 2px solid #B80000;
-  color: #FFFFFF;
-  margin: 0 -2px;
-  padding: 0 2px;
-  white-space: pre-wrap;
 }
 
 <a
-  className="c0"
+  class="c0"
   href="https://www.bbc.com/news"
 >
   BBC News
