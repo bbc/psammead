@@ -3,6 +3,9 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 2.0.5   | [PR#892](https://github.com/bbc/psammead/pull/892) Bump dependencies |
+| 2.0.4 | [PR#783](https://github.com/bbc/psammead/pull/783) Update to latest psammead-test-helpers. Update snapshots. |
+| 2.0.3 | [PR#769](https://github.com/bbc/psammead/pull/769) Fix stories not appearing in storybook when using `install:packages:link` |
 | 2.0.2   | [PR#713](https://github.com/bbc/psammead/pull/713) Update `styled-components` to 4.3.2 |
 | 2.0.1   | [PR#677](https://github.com/bbc/psammead/pull/677) Use `@bbc/gel-foundations@3.0.0` |
 | 2.0.0   | [PR#504](https://github.com/bbc/psammead/pull/504) Remove required text prop |

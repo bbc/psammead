@@ -1,6 +1,6 @@
 {
   "name": "@bbc/psammead-assets",
-  "version": "1.0.2",
+  "version": "1.0.4",
   "description": "A collection of common assets that are likely to be required by many Psammead components or users, such as SVGs or small scripts.",
   "repository": {
     "type": "git",
@@ -23,7 +23,7 @@
     "amp"
   ],
   "devDependencies": {
-    "@bbc/psammead-test-helpers": "^0.3.0",
+    "@bbc/psammead-test-helpers": "^1.0.1",
     "prop-types": "^15.7.2",
     "react": "^16.8.6",
     "styled-components": "^4.3.2"

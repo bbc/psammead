@@ -2,7 +2,10 @@
 
 <!-- prettier-ignore -->
 | Version | Description |
-| --------------------- |
+ | ------- | ----------- |
+| 1.0.4 | [PR#938](https://github.com/bbc/psammead/pull/938) Add margin:0 to reset any default browser default margins |
+| 1.0.3 | [PR#783](https://github.com/bbc/psammead/pull/783) Update to latest psammead-test-helpers. Update snapshots. |
+| 1.0.2 | [PR#769](https://github.com/bbc/psammead/pull/769) Fix stories not appearing in storybook when using `install:packages:link` |
 | 1.0.1   | [PR#713](https://github.com/bbc/psammead/pull/713) Update `styled-components` to 4.3.2 |
 | 1.0.0  | [PR#679](https://github.com/bbc/psammead/pull/679) Bump version number |
 | 0.1.14  | [PR#498](https://github.com/bbc/psammead/pull/498) Update stories to use new input provider |

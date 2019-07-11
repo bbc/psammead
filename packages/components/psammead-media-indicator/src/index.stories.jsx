@@ -14,7 +14,7 @@ const Page = styled.div`
 
 const PageDecorator = storyFn => <Page>{storyFn()}</Page>;
 
-storiesOf('Components|MediaIndicator', module)
+storiesOf('Components|MediaIndicator/Video', module)
   .addDecorator(PageDecorator)
   .addDecorator(withKnobs)
   .addDecorator(dirDecorator)
@@ -36,6 +36,34 @@ storiesOf('Components|MediaIndicator', module)
     { notes },
   )
   .add(
+    'top story video with duration',
+    () => (
+      <MediaIndicator
+        duration={text('duration', '2:15')}
+        datetime={text('datetime', 'PT2M15S')}
+        offscreenText={text('offscreenText', 'Video')}
+        type="video"
+        topStory
+      />
+    ),
+    { notes },
+  );
+
+storiesOf('Components|MediaIndicator/Audio', module)
+  .addDecorator(PageDecorator)
+  .addDecorator(withKnobs)
+  .addDecorator(dirDecorator)
+  .add(
+    'audio without duration',
+    () => (
+      <MediaIndicator
+        offscreenText={text('offscreenText', 'Audio')}
+        type="audio"
+      />
+    ),
+    { notes },
+  )
+  .add(
     'audio with duration',
     () => (
       <MediaIndicator
@@ -48,11 +76,14 @@ storiesOf('Components|MediaIndicator', module)
     { notes },
   )
   .add(
-    'audio without duration',
+    'top story audio with duration',
     () => (
       <MediaIndicator
         offscreenText={text('offscreenText', 'Audio')}
+        duration={text('duration', '2:15')}
+        datetime={text('datetime', 'PT2M15S')}
         type="audio"
+        topStory
       />
     ),
     { notes },
