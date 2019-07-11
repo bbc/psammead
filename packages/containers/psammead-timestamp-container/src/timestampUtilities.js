@@ -1,5 +1,4 @@
 import moment from 'moment-timezone';
-import relativeTime from './relativeTimestamp';
 
 const defaultFormat = 'D MMMM YYYY, HH:mm z';
 
@@ -32,7 +31,10 @@ export const showRelativeTime = (
   locale,
 ) => {
   if (isRelative) {
-    return relativeTime(timestamp);
+    return moment(timestamp)
+      .locale(locale)
+      .tz(timezone)
+      .fromNow();
   }
   if (format) {
     return formatUnixTimestamp(timestamp, format, timezone, locale);
