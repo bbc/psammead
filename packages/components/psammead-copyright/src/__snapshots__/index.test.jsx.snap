@@ -16,7 +16,7 @@ exports[`Copyright should render correctly 1`] = `
 }
 
 <p
-  className="c0"
+  class="c0"
   role="text"
 >
   Getty Images
@@ -39,7 +39,7 @@ exports[`Copyright should render correctly when passed prop position with value 
 }
 
 <p
-  className="c0"
+  class="c0"
   role="text"
 >
   Getty Images

@@ -10,17 +10,22 @@ storiesOf('Components|Paragraph', module)
   .addDecorator(withKnobs)
   .add(
     'default',
-    inputProvider([{ name: 'Paragraph' }], ([paragraph], script) => (
-      <Paragraph script={script}>{paragraph}</Paragraph>
-    )),
+    inputProvider(
+      [{ name: 'Paragraph' }],
+      ({ slotTexts: [paragraph], script, service }) => (
+        <Paragraph script={script} service={service}>
+          {paragraph}
+        </Paragraph>
+      ),
+    ),
     { notes, knobs: { escapeHTML: false } },
   )
   .add(
     'containing an inline link',
     inputProvider(
       [{ name: 'Paragraph' }, { name: 'Inline link' }],
-      ([paragraph, linkText], script) => (
-        <Paragraph script={script}>
+      ({ slotTexts: [paragraph, linkText], script, service }) => (
+        <Paragraph script={script} service={service}>
           {`${paragraph} `}
           <InlineLink href="https://www.bbc.com">{linkText}</InlineLink>
           {` ${paragraph}`}
