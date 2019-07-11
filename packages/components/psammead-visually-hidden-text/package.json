@@ -1,6 +1,6 @@
 {
   "name": "@bbc/psammead-visually-hidden-text",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "main": "dist/index.js",
   "description": "React styled component for visually hidden text (for screen readers)",
   "repository": {
@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/bbc/psammead/blob/latest/packages/components/psammead-visually-hidden-text/README.md",
   "devDependencies": {
-    "@bbc/psammead-storybook-helpers": "^3.0.0",
+    "@bbc/psammead-storybook-helpers": "^3.1.1",
     "@bbc/psammead-test-helpers": "^1.0.1",
     "styled-components": "^4.3.2"
   },

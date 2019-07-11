@@ -1,6 +1,6 @@
 {
   "name": "@bbc/psammead-media-indicator",
-  "version": "1.1.4",
+  "version": "1.1.5",
   "main": "dist/index.js",
   "description": "Provides a play icon and media duration for media page promos",
   "repository": {
@@ -22,7 +22,7 @@
     "@bbc/psammead-visually-hidden-text": "^1.0.4"
   },
   "devDependencies": {
-    "@bbc/psammead-storybook-helpers": "^3.1.0",
+    "@bbc/psammead-storybook-helpers": "^3.1.1",
     "@bbc/psammead-test-helpers": "^1.0.1",
     "react": "^16.8.6",
     "styled-components": "^4.3.2"
