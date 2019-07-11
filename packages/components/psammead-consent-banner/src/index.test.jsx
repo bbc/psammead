@@ -10,6 +10,7 @@ const baseProps = {
   reject: <a href="https://foobar.com">Reject</a>,
   id: 'banner-id',
   script: latin,
+  service: 'news',
 };
 
 describe('ConsentBanner', () => {
@@ -34,7 +35,7 @@ describe('ConsentBanner', () => {
 describe('ConsentBannerText', () => {
   shouldMatchSnapshot(
     'should correctly render',
-    <ConsentBannerText script={latin}>
+    <ConsentBannerText script={latin} service="news">
       We have made some important changes to our Privacy and Cookies Policy and
       we want you to know what this means for you and your data.
     </ConsentBannerText>,
