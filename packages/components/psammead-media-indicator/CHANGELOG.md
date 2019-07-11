@@ -5,6 +5,9 @@
 | ------- | ----------- |
 | 2.0.0 | [PR#940](https://github.com/bbc/psammead/pull/940) Apply font based on service prop |
 | 1.1.1 | [PR#783](https://github.com/bbc/psammead/pull/783) Update to latest psammead-test-helpers. Update snapshots. |
+| 1.1.3   | [PR#892](https://github.com/bbc/psammead/pull/892) Bump dependencies |
+| 1.1.2   | [PR#935](https://github.com/bbc/psammead/pull/935) Ensure media icons are visible in high contrast / custom colourschemes |
+| 1.1.1   | [PR#783](https://github.com/bbc/psammead/pull/783) Update to latest psammead-test-helpers. Update snapshots. |
 | 1.1.0   | [PR#776](https://github.com/bbc/psammead/pull/776) Add `topStory` prop, change padding <400px and bump dependencies |
 | 1.0.5   | [PR#788](https://github.com/BBC/psammead/pull/788) Use rem for the width and height of the Media SVGs |
 | 1.0.4   | [PR#769](https://github.com/bbc/psammead/pull/769) Fix stories not appearing in storybook when using `install:packages:link` |
