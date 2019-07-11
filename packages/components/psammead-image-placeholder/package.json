@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/bbc/psammead/blob/latest/packages/components/psammead-image-placeholder/README.md",
   "dependencies": {
-    "@bbc/psammead-assets": "^0.1.2",
+    "@bbc/psammead-assets": "^1.0.5",
     "@bbc/psammead-styles": "^1.1.2"
   },
   "devDependencies": {
