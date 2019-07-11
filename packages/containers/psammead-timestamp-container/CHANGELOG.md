@@ -3,6 +3,8 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 1.2.5   | [PR#1038](https://github.com/bbc/psammead/pull/1038) Bump dependencies |
+| 1.2.4 | [PR#892](https://github.com/bbc/psammead/pull/892) Use `@bbc/psammead-timestamp@1.0.3` |
 | 1.2.3 | [PR#783](https://github.com/bbc/psammead/pull/783) Update to latest psammead-test-helpers. Update snapshots. |
 | 1.2.2 | [PR#677](https://github.com/bbc/psammead/pull/677) Use `@bbc/gel-foundations@3.0.0` |
 | 1.2.1 | [PR#666](https://github.com/bbc/psammead/pull/666) Do not localise `datetime` |

@@ -10,12 +10,14 @@ exports[`MediaIndicator - Top Story should render a top story audio promo render
   overflow: hidden;
   position: absolute;
   width: 1px;
+  margin: 0;
 }
 
 .c2 {
   vertical-align: middle;
   margin: 0 0.25rem;
-  fill: #222222;
+  color: #222222;
+  fill: currentColor;
   width: 0.8125rem;
   height: 0.75rem;
 }
@@ -25,6 +27,8 @@ exports[`MediaIndicator - Top Story should render a top story audio promo render
   background-color: #FFFFFF;
   display: block;
   font-family: ReithSans,Helvetica,Arial,sans-serif;
+  font-weight: 400;
+  font-style: normal;
   font-size: 0.75rem;
   line-height: 1rem;
   color: #222222;
@@ -94,12 +98,14 @@ exports[`MediaIndicator should render audio correctly without duration details 1
   overflow: hidden;
   position: absolute;
   width: 1px;
+  margin: 0;
 }
 
 .c2 {
   vertical-align: middle;
   margin: 0 0.25rem;
-  fill: #222222;
+  color: #222222;
+  fill: currentColor;
   width: 0.8125rem;
   height: 0.75rem;
 }
@@ -109,6 +115,8 @@ exports[`MediaIndicator should render audio correctly without duration details 1
   background-color: #FFFFFF;
   display: block;
   font-family: ReithSans,Helvetica,Arial,sans-serif;
+  font-weight: 400;
+  font-style: normal;
   font-size: 0.75rem;
   line-height: 1rem;
   color: #222222;
@@ -174,12 +182,14 @@ exports[`MediaIndicator should render audio indicator correctly 1`] = `
   overflow: hidden;
   position: absolute;
   width: 1px;
+  margin: 0;
 }
 
 .c2 {
   vertical-align: middle;
   margin: 0 0.25rem;
-  fill: #222222;
+  color: #222222;
+  fill: currentColor;
   width: 0.8125rem;
   height: 0.75rem;
 }
@@ -189,6 +199,8 @@ exports[`MediaIndicator should render audio indicator correctly 1`] = `
   background-color: #FFFFFF;
   display: block;
   font-family: ReithSans,Helvetica,Arial,sans-serif;
+  font-weight: 400;
+  font-style: normal;
   font-size: 0.75rem;
   line-height: 1rem;
   color: #222222;
@@ -265,12 +277,14 @@ exports[`MediaIndicator should render video by default 1`] = `
   overflow: hidden;
   position: absolute;
   width: 1px;
+  margin: 0;
 }
 
 .c2 {
   vertical-align: middle;
   margin: 0 0.25rem;
-  fill: #222222;
+  color: #222222;
+  fill: currentColor;
   width: 0.75rem;
   height: 0.75rem;
 }
@@ -280,6 +294,8 @@ exports[`MediaIndicator should render video by default 1`] = `
   background-color: #FFFFFF;
   display: block;
   font-family: ReithSans,Helvetica,Arial,sans-serif;
+  font-weight: 400;
+  font-style: normal;
   font-size: 0.75rem;
   line-height: 1rem;
   color: #222222;
@@ -342,12 +358,14 @@ exports[`MediaIndicator should render video correctly without duration details 1
   overflow: hidden;
   position: absolute;
   width: 1px;
+  margin: 0;
 }
 
 .c2 {
   vertical-align: middle;
   margin: 0 0.25rem;
-  fill: #222222;
+  color: #222222;
+  fill: currentColor;
   width: 0.75rem;
   height: 0.75rem;
 }
@@ -357,6 +375,8 @@ exports[`MediaIndicator should render video correctly without duration details 1
   background-color: #FFFFFF;
   display: block;
   font-family: ReithSans,Helvetica,Arial,sans-serif;
+  font-weight: 400;
+  font-style: normal;
   font-size: 0.75rem;
   line-height: 1rem;
   color: #222222;
@@ -419,12 +439,14 @@ exports[`MediaIndicator should render video indicator correctly 1`] = `
   overflow: hidden;
   position: absolute;
   width: 1px;
+  margin: 0;
 }
 
 .c2 {
   vertical-align: middle;
   margin: 0 0.25rem;
-  fill: #222222;
+  color: #222222;
+  fill: currentColor;
   width: 0.75rem;
   height: 0.75rem;
 }
@@ -434,6 +456,8 @@ exports[`MediaIndicator should render video indicator correctly 1`] = `
   background-color: #FFFFFF;
   display: block;
   font-family: ReithSans,Helvetica,Arial,sans-serif;
+  font-weight: 400;
+  font-style: normal;
   font-size: 0.75rem;
   line-height: 1rem;
   color: #222222;
