@@ -2,15 +2,15 @@ import styled from 'styled-components';
 import {
   C_POSTBOX,
   C_METAL,
-  C_WHITE,
   C_EBON,
+  C_WHITE,
 } from '@bbc/psammead-styles/colours';
 
 const InlineLink = styled.a`
   color: ${C_EBON};
   border-bottom: 1px solid ${C_POSTBOX};
-  margin: 0 -2px;
-  padding: 0 2px;
+  margin: 0 -0.25rem;
+  padding: 0 0.25rem;
   text-decoration: none;
 
   &:visited {

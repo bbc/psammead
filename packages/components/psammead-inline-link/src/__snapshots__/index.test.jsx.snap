@@ -17,10 +17,13 @@ exports[`InlineLink should render correctly 1`] = `
 
 .c0:focus,
 .c0:hover {
-  background-color: #B80000;
+  color: #B80000;
   border-bottom: 2px solid #B80000;
+<<<<<<< HEAD
   color: #FFFFFF;
   white-space: pre-wrap;
+=======
+>>>>>>> ef8ea85e708ce26c8acf7f086ad0b8c294a390fc
 }
 
 <a
