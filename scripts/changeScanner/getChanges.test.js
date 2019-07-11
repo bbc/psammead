@@ -12,6 +12,7 @@ describe(`changeScanner - getChanges`, () => {
           'packages/components/foobar/index.test.js',
           'packages/components/barfoo/package.json',
           'packages/components/apples/dist/package.json',
+          '',
         ].join('\n'),
       }),
     }));

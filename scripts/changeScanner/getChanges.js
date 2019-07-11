@@ -5,7 +5,7 @@ const getChanges = () => {
     silent: true,
   }).stdout;
 
-  const changedFiles = execute.split('\n').filter(val => val);
+  const changedFiles = execute.split('\n').filter(Boolean);
 
   const changedPackages = {};
 

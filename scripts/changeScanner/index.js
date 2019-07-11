@@ -23,6 +23,6 @@ if (errors.length > 0) {
 } else {
   // eslint-disable-next-line no-console
   console.log(
-    chalk.green('All packages have met minmum change requirements 🎉'),
+    chalk.green('All packages have met minimum change requirements 🎉'),
   );
 }

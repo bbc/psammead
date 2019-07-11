@@ -28,7 +28,7 @@ describe(`changeScanner - index`, () => {
     expect(consoleErrorOutput).not.toHaveBeenCalled();
     expect(consoleLogOutput).toHaveBeenCalledTimes(1);
     expect(consoleLogOutput).toHaveBeenCalledWith(
-      'All packages have met minmum change requirements 🎉',
+      'All packages have met minimum change requirements 🎉',
     );
   });
 
@@ -41,7 +41,7 @@ describe(`changeScanner - index`, () => {
     expect(consoleErrorOutput).not.toHaveBeenCalled();
     expect(consoleLogOutput).toHaveBeenCalledTimes(1);
     expect(consoleLogOutput).toHaveBeenCalledWith(
-      'All packages have met minmum change requirements 🎉',
+      'All packages have met minimum change requirements 🎉',
     );
   });
 
