@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 1.1.3 | [PR#1065](https://github.com/bbc/psammead/pull/1065) Fix Serif Medium font. |
 | 1.1.2 | [PR#783](https://github.com/bbc/psammead/pull/783) Update to latest psammead-test-helpers. Update snapshots. |
 | 1.1.1 | [PR#769](https://github.com/bbc/psammead/pull/769) Fix stories not appearing in storybook when using `install:packages:link` |
 | 1.1.0   | [PR#764](https://github.com/bbc/psammead/pull/764) Add function to get serif bold font |
