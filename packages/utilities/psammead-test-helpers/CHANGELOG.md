@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 1.0.2   | [PR#732](https://github.com/bbc/psammead/pull/732) Use @testing-library/react for generating snapshots |
 | 1.0.1   | [PR#732](https://github.com/bbc/psammead/pull/732) Use @testing-library/react for generating snapshots |
 | 1.0.0   | [PR#679](https://github.com/bbc/psammead/pull/679) Bump version number |
 | 0.3.4   | [PR#424](https://github.com/bbc/psammead/pull/424) Add Snyk badge to readme |
