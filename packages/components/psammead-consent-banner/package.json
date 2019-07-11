@@ -1,6 +1,6 @@
 {
   "name": "@bbc/psammead-consent-banner",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "main": "dist/index.js",
   "description": "React styled components for the Consent Banner",
   "repository": {
@@ -17,11 +17,11 @@
   },
   "homepage": "https://github.com/bbc/psammead/blob/latest/packages/components/psammead-consent-banner/README.md",
   "dependencies": {
-    "@bbc/gel-foundations": "^3.0.0",
-    "@bbc/psammead-styles": "^0.3.2"
+    "@bbc/gel-foundations": "^3.0.2",
+    "@bbc/psammead-styles": "^1.1.2"
   },
   "devDependencies": {
-    "@bbc/psammead-test-helpers": "^0.3.0",
+    "@bbc/psammead-test-helpers": "^1.0.1",
     "prop-types": "^15.6.2",
     "react": "^16.8.6",
     "styled-components": "^4.3.2"
