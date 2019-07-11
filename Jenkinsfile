@@ -51,6 +51,7 @@ pipeline {
         withCredentials([string(credentialsId: 'psammead-cc-reporter-id', variable: 'CC_TEST_REPORTER_ID')]) {
           sh 'make code-coverage-after-build'
         }
+        sh 'make change-scanner'
       }
       post {
         always {
