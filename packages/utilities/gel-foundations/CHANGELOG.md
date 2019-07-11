@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 3.0.3 | [PR#783](https://github.com/bbc/psammead/pull/783) use `psammead-test-helpers@1.0.2` |
 | 3.0.2 | [PR#783](https://github.com/bbc/psammead/pull/783) Update to latest psammead-test-helpers. Update snapshots. |
 | 3.0.1 | [PR#701](https://github.com/bbc/psammead/pull/701) Update README `rem` doc link |
 | 3.0.0 | [PR#586](https://github.com/bbc/psammead/pull/586) Update GEL Types values |
