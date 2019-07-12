@@ -3,7 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
-| 3.1.3 | [PR#1083](https://github.com/bbc/psammead/pull/1083) use `gel-foundations@3.0.3` and `psammead-test-helpers@1.0.2`|
+| 3.1.3 | [PR#1179](https://github.com/bbc/psammead/pull/1179) use `gel-foundations@3.0.3` and `psammead-test-helpers@1.0.2`|
 | 3.1.2 | [PR#1083](https://github.com/bbc/psammead/pull/1083) use `react-helmet@5.2.1` |
 | 3.1.1 | [PR#783](https://github.com/bbc/psammead/pull/783) Update to latest psammead-test-helpers. Update snapshots. |
 | 3.1.0   | [PR#758](https://github.com/bbc/psammead/pull/758) Add ability to limit set of services |
