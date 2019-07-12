@@ -113,11 +113,11 @@ const StyledMain = styled.main`
 `;
 
 const navigationStory = (skipLinkText, currentPageText, navData, brand) =>
-  inputProvider([], ({ script, dir }) => (
+  inputProvider([], ({ script, dir, service }) => (
     <Fragment>
       {brand && getBrand()}
 
-      <Navigation script={script} skipLinkText={skipLinkText}>
+      <Navigation script={script} skipLinkText={skipLinkText} service={service}>
         <NavigationUl>
           {navData.map((item, index) => {
             const { title, url } = item;
@@ -131,6 +131,7 @@ const navigationStory = (skipLinkText, currentPageText, navData, brand) =>
                 dir={dir}
                 active={active}
                 currentPageText={currentPageText}
+                service={service}
               >
                 {title}
               </NavigationLi>
