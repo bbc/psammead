@@ -6,6 +6,9 @@ exports[`Timestamp should add prefix and suffix 1`] = `
   line-height: 1.125rem;
   color: #6E6E73;
   display: block;
+  font-family: ReithSans,Helvetica,Arial,sans-serif;
+  font-weight: 400;
+  font-style: normal;
   padding-bottom: 0.25rem;
 }
 
@@ -45,6 +48,9 @@ exports[`Timestamp should render correctly 1`] = `
   line-height: 1.125rem;
   color: #6E6E73;
   display: block;
+  font-family: ReithSans,Helvetica,Arial,sans-serif;
+  font-weight: 400;
+  font-style: normal;
   padding-bottom: 0.25rem;
 }
 
@@ -80,6 +86,9 @@ exports[`Timestamp should render without a leading zero on the day 1`] = `
   line-height: 1.125rem;
   color: #6E6E73;
   display: block;
+  font-family: NassimPersian,Arial,Verdana,Geneva,Helvetica,sans serif;
+  font-weight: 400;
+  font-style: normal;
   padding-bottom: 0.25rem;
 }
 
