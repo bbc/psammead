@@ -3,6 +3,7 @@
   "version": "1.0.3",
   "main": "dist/index.js",
   "module": "esm/index.js",
+  "sideEffects": false,
   "description": "Provides a 'BBC' image placeholder",
   "repository": {
     "type": "git",

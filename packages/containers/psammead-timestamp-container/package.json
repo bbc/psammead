@@ -3,6 +3,7 @@
   "version": "1.2.4",
   "main": "dist/index.js",
   "module": "esm/index.js",
+  "sideEffects": false,
   "description": "React Timestamp container for relative and absolute times, using moment-timezone",
   "repository": {
     "type": "git",

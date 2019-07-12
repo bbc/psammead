@@ -3,6 +3,7 @@
   "version": "1.0.4",
   "main": "dist/index.js",
   "module": "esm/index.js",
+  "sideEffects": false,
   "description": "React styled components for an Image",
   "repository": {
     "type": "git",
