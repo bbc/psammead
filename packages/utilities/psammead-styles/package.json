@@ -24,7 +24,7 @@
     "fonts"
   ],
   "devDependencies": {
-    "@bbc/gel-foundations": "^3.0.0",
+    "@bbc/gel-foundations": "^3.0.3",
     "@bbc/psammead-storybook-helpers": "^3.0.0",
     "@bbc/psammead-test-helpers": "^1.0.1"
   }
