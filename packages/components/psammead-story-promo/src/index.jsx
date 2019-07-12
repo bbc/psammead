@@ -81,7 +81,7 @@ const ImageGridFallbackTopStory = css`
 
   @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
     width: ${twoOfSixColumnsMaxWidthScaleable};
-    margin-bottom: none;
+    margin-bottom: 0;
   }
 `;
 
