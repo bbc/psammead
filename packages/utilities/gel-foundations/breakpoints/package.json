@@ -1,5 +1,5 @@
 {
-  "name": "@bbc/gel-foundations/breakpoints",
+  "name": "drew-testing-123/breakpoints",
   "private": "true",
   "main": "../dist/breakpoints",
   "module": "../esm/breakpoints",
