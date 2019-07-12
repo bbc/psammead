@@ -3,7 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 | ------- | ----------- |
-| 1.0.7   | [PR#1183](https://github.com/bbc/psammead/pull/1182) use `gel-foundations@3.0.3`, `psammead-styles@1.1.3`, bump devDependencies and pass `service` prop to required components in test. |
+| 1.0.7   | [PR#1203](https://github.com/bbc/psammead/pull/1203) use `gel-foundations@3.0.3`, `psammead-styles@1.1.3`, bump devDependencies and pass `service` prop to required components in test. |
 | 1.0.6   | [PR#1082](https://github.com/bbc/psammead/pull/1082) Bump lodash security vulnerability |
 | 1.0.5   | [PR#1038](https://github.com/bbc/psammead/pull/1038) Bump dependencies |
 | 1.0.4   | [PR#892](https://github.com/bbc/psammead/pull/892) Bump dependencies |
