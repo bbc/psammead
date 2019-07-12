@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 | ------- | ----------- |
+| 4.1.12 | [PR#1082](https://github.com/bbc/psammead/pull/1082) Bump dependencies |
 | 4.1.11 | [PR#1082](https://github.com/bbc/psammead/pull/1082) Bump lodash security vulnerability |
 | 4.1.10   | [PR#1038](https://github.com/bbc/psammead/pull/1038) Bump dependencies |
 | 4.1.9   | [PR#892](https://github.com/bbc/psammead/pull/892) Bump dependencies |
