@@ -16,11 +16,18 @@ const ImageComponent = ({ alt, src }) => (
 // eslint-disable-next-line react/prop-types
 const InfoComponent = ({ headlineText, summaryText, datetime, dateformat }) => (
   <Fragment>
-    <Headline script={latin}>
+    <Headline script={latin} service="news">
       <Link href="https://www.bbc.co.uk/news">{headlineText}</Link>
     </Headline>
-    <Summary script={latin}>{summaryText}</Summary>
-    <Timestamp datetime={datetime} script={latin} padding={false}>
+    <Summary script={latin} service="news">
+      {summaryText}
+    </Summary>
+    <Timestamp
+      datetime={datetime}
+      script={latin}
+      padding={false}
+      service="news"
+    >
       {dateformat}
     </Timestamp>
   </Fragment>

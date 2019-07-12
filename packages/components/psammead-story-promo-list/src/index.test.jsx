@@ -8,8 +8,12 @@ const Image = <img src="https://foobar.com/image.png" alt="Alt text" />;
 
 const Info = (
   <Fragment>
-    <Headline script={latin}>The headline of the promo</Headline>
-    <Summary script={latin}>The summary of the promo</Summary>
+    <Headline script={latin} service="news">
+      The headline of the promo
+    </Headline>
+    <Summary script={latin} service="news">
+      The summary of the promo
+    </Summary>
     <time>12 March 2019</time>
   </Fragment>
 );
