@@ -20,6 +20,7 @@ const TimestampContainer = ({
   timezone,
   script,
   locale,
+  service,
 }) => {
   if (!isValidDateTime(new Date(timestamp))) {
     return null;
@@ -34,6 +35,7 @@ const TimestampContainer = ({
       datetime={formatUnixTimestamp(timestamp, dateTimeFormat, timezone)}
       padding={padding}
       script={script}
+      service={service}
     >
       {prefix ? `${prefix} ` : null}
       {showRelativeTime(timestamp, isRelative, format, timezone, locale)}
@@ -53,6 +55,7 @@ TimestampContainer.propTypes = {
   suffix: string,
   script: shape(scriptPropType).isRequired,
   locale: string,
+  service: string.isRequired,
 };
 
 TimestampContainer.defaultProps = {
