@@ -3,6 +3,8 @@
 <!-- prettier-ignore -->
 | Version | Description |
 | ------- | ----------- |
+| 2.0.2   |  [PR#1082](https://github.com/bbc/psammead/pull/1082) Bump lodash security vulnerability |
+| 2.0.1   | [PR#892](https://github.com/bbc/psammead/pull/892) Bump dependencies |
 | 2.0.0 | [PR#1022](https://github.com/bbc/psammead/pull/1022) Apply font based on service prop |
 | 1.0.1  | [PR#892](https://github.com/bbc/psammead/pull/892) Bump dependencies |
 | 1.0.0 | [PR#937](https://github.com/bbc/psammead/pull/937) Remove alpha tag, swarm done |
