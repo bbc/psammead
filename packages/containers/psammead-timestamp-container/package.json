@@ -1,6 +1,6 @@
 {
   "name": "@bbc/psammead-timestamp-container",
-  "version": "1.2.6",
+  "version": "1.2.7",
   "main": "dist/index.js",
   "description": "React Timestamp container for relative and absolute times, using moment-timezone",
   "repository": {
@@ -23,12 +23,12 @@
     "moment-timezone"
   ],
   "dependencies": {
-    "@bbc/gel-foundations": "^3.0.2",
-    "@bbc/psammead-timestamp": "^1.0.5",
+    "@bbc/gel-foundations": "^3.0.3",
+    "@bbc/psammead-timestamp": "^2.0.4",
     "moment-timezone": "^0.5.26"
   },
   "devDependencies": {
-    "@bbc/psammead-test-helpers": "^1.0.1",
+    "@bbc/psammead-test-helpers": "^1.0.2",
     "react": "^16.8.6"
   },
   "peerDependencies": {
