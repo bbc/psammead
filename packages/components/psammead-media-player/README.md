@@ -1,4 +1,4 @@
-# psammead-video &middot; (badges)
+# psammead-media-player &middot; (badges)
 
 ## Description
 Renders an audio or video component via the BBC's Standard Media Player (SMP)
@@ -10,7 +10,7 @@ For displaying an audio or video asset
 For embedding audio video content not served via SMP (e.g. a YouTube video)
 
 ## Installation
-`npm install @bbc/psammead-video`
+`npm install @bbc/psammead-media-player`
 
 ## Props
 
