@@ -15,7 +15,14 @@
     "url": "https://github.com/bbc/psammead/issues"
   },
   "homepage": "https://github.com/bbc/psammead/blob/latest/packages/utilities/psammead-styles/README.md",
-  "keywords": ["bbc", "utilities", "styles", "colours", "colors", "fonts"],
+  "keywords": [
+    "bbc",
+    "utilities",
+    "styles",
+    "colours",
+    "colors",
+    "fonts"
+  ],
   "devDependencies": {
     "@bbc/gel-foundations": "^3.0.3",
     "@bbc/psammead-storybook-helpers": "^3.1.3",

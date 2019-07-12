@@ -24,5 +24,11 @@
   "peerDependencies": {
     "styled-components": "^4.3.2"
   },
-  "keywords": ["bbc", "accessibility", "a11y", "screen readers", "off-screen"]
+  "keywords": [
+    "bbc",
+    "accessibility",
+    "a11y",
+    "screen readers",
+    "off-screen"
+  ]
 }
