@@ -1,0 +1,19 @@
+{
+  "version": "0.1.0",
+  "name": "@bbc/psammead-video",
+  "author": {
+    "name": "BBC Psammead Maintainers",
+    "email": "PsammeadMaintainers@bbc.co.uk"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bbc/psammead/tree/latest/packages/psammead-video"
+  },
+  "homepage": "https://github.com/bbc/psammead/blob/latest/packages/components/psammead-video/README.md",
+  "description": "",
+  "main": "dist/index.js",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/bbc/psammead/issues"
+  }
+}
