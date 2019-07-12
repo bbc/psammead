@@ -35,7 +35,6 @@
   },
   "homepage": "https://github.com/bbc/psammead#readme",
   "dependencies": {
-    "@babel/plugin-proposal-export-default-from": "^7.5.2",
     "@bbc/psammead-styles": "^1.0.0",
     "styled-components": "^4.3.2",
     "styled-normalize": "^8.0.4"
