@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 1.1.10   | [PR#1181](https://github.com/bbc/psammead/pull/1181) use `psammead-styles@1.1.3`, `psammead-storybook-helpers@3.1.3`, `psammead-test-helpers@1.0.2`|
 | 1.1.9   | [PR#1082](https://github.com/bbc/psammead/pull/1082) Bump lodash security vulnerability |
 | 1.1.8 | [PR#1038](https://github.com/bbc/psammead/pull/1038) Bump dependencies |
 | 1.1.7 | [PR#892](https://github.com/bbc/psammead/pull/892) Bump dependencies |

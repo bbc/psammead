@@ -49,6 +49,7 @@ const MediaIndicatorComponent = (
     duration="2:15"
     datetime="PT2M15S"
     offscreenText="Video 2 minutes 15 seconds"
+    service="news"
   />
 );
 
