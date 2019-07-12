@@ -247,6 +247,8 @@ exports[`StoryPromo - Top Story with Media Indicator should render correctly 1`]
   background-color: #FFFFFF;
   display: block;
   font-family: ReithSans,Helvetica,Arial,sans-serif;
+  font-weight: 400;
+  font-style: normal;
   font-size: 0.75rem;
   line-height: 1rem;
   color: #222222;
@@ -778,6 +780,8 @@ exports[`StoryPromo with Media Indicator should render correctly 1`] = `
   background-color: #FFFFFF;
   display: block;
   font-family: ReithSans,Helvetica,Arial,sans-serif;
+  font-weight: 400;
+  font-style: normal;
   font-size: 0.75rem;
   line-height: 1rem;
   color: #222222;
