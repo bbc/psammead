@@ -2,6 +2,7 @@
   "name": "@bbc/psammead-caption",
   "version": "1.1.13",
   "main": "dist/index.js",
+  "module": "esm/index.js",
   "description": "React styled components for a Caption",
   "repository": {
     "type": "git",

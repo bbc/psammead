@@ -2,6 +2,7 @@
   "name": "@bbc/psammead-timestamp-container",
   "version": "1.2.4",
   "main": "dist/index.js",
+  "module": "esm/index.js",
   "description": "React Timestamp container for relative and absolute times, using moment-timezone",
   "repository": {
     "type": "git",

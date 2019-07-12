@@ -2,6 +2,7 @@
   "name": "@bbc/psammead-test-helpers",
   "version": "1.0.1",
   "main": "dist/index.js",
+  "module": "esm/index.js",
   "description": "A collection of helper methods for implementing Jest snapshot tests for styled-components, required by many Psammead components.",
   "repository": {
     "type": "git",

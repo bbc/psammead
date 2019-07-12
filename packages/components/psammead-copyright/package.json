@@ -2,6 +2,7 @@
   "name": "@bbc/psammead-copyright",
   "version": "1.0.4",
   "main": "dist/index.js",
+  "module": "esm/index.js",
   "description": "React styled component for overlaid copyright or source attribution.",
   "repository": {
     "type": "git",

@@ -2,6 +2,7 @@
   "name": "@bbc/psammead-visually-hidden-text",
   "version": "1.0.4",
   "main": "dist/index.js",
+  "module": "esm/index.js",
   "description": "React styled component for visually hidden text (for screen readers)",
   "repository": {
     "type": "git",
