@@ -23,9 +23,10 @@ exports[`StoryPromo list should render correctly 1`] = `
   line-height: 1.25rem;
   color: #222222;
   font-family: ReithSerif,Helvetica,Arial,sans-serif;
+  font-weight: 700;
+  font-style: normal;
   margin: 0;
   padding-bottom: 0.5rem;
-  font-weight: 700;
 }
 
 .c7 {
@@ -33,6 +34,8 @@ exports[`StoryPromo list should render correctly 1`] = `
   line-height: 1.125rem;
   color: #3F3F42;
   font-family: ReithSans,Helvetica,Arial,sans-serif;
+  font-weight: 400;
+  font-style: normal;
   margin: 0;
   padding-bottom: 0.5rem;
 }
