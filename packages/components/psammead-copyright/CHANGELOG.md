@@ -3,7 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
-| 1.0.6   | [PR#1082](https://github.com/bbc/psammead/pull/1082) use `gel-foundations@3.0.3`, `psammead-styles@1.1.3`, `psammead-test-helpers@1.0.2`, `psammead-visually-hidden-text@1.0.7` |
+| 1.0.6   | [PR#1181](https://github.com/bbc/psammead/pull/1181) use `gel-foundations@3.0.3`, `psammead-styles@1.1.3`, `psammead-test-helpers@1.0.2`, `psammead-visually-hidden-text@1.0.7` |
 | 1.0.5   | [PR#1082](https://github.com/bbc/psammead/pull/1082) Bump lodash security vulnerability |
 | 1.0.4   | [PR#892](https://github.com/bbc/psammead/pull/892) Bump dependencies |
 | 1.0.3 | [PR#783](https://github.com/bbc/psammead/pull/783) Update to latest psammead-test-helpers. Update snapshots. |
