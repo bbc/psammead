@@ -89,19 +89,17 @@ We strive for components to conform to the following minimum levels of support, 
 
 | Browser              | Lowest version |
 | -------------------- | -------------- |
-| Safari               | 7              |
-| Facebook for iPhone  | 187            |
-| Chrome for iOS       | 68             |
-| Chrome               | 25             |
-| Edge                 | 14             |
-| Firefox              | 48             |
-| IE                   | 9              |
-| Amazon Silk          | 69             |
-| Opera Mini           | 4              |
-| Android Browser      | 4              |
-| Nokia                | 6280           |
-| Firefox for iOS      | 13             |
-| Facebook for Android | 190            |
+| Safari               | 9              |
+| Chrome               | 53             |
+| Edge                 | 37             |
+| Firefox              | 45             |
+| IE                   | 11             |
+| Opera                | 40             |
+| Opera Mini           | 18             |
+| Android Browser      | 7              |
+| Android Chrome       | 53             |
+| Android Firefox      | 49             |
+| IOS Safari           | 10             |
 
 Note that these browser support levels have been defined by usage statistics for BBC News and BBC Persian.
 

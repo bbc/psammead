@@ -7,7 +7,7 @@ import igboNavData from '../testHelpers/igbo';
 describe('Navigation', () => {
   shouldMatchSnapshot(
     'should render correctly',
-    <Navigation script={latin} skipLinkText="Wụga n’ọdịnaya">
+    <Navigation script={latin} skipLinkText="Wụga n’ọdịnaya" service="news">
       <NavigationUl>
         {igboNavData.map((item, index) => {
           const { title, url } = item;
@@ -20,6 +20,7 @@ describe('Navigation', () => {
               script={latin}
               active={active}
               currentPageText="Current page"
+              service="news"
             >
               {title}
             </NavigationLi>

@@ -1,10 +1,12 @@
 {
   "name": "@bbc/psammead",
-  "version": "1.2.7",
+  "version": "1.3.0",
   "description": "Core Components Library Developed & Maintained By The Articles and Reach & Languages Team",
   "main": "index.js",
   "scripts": {
-    "build": "lerna exec --parallel -- babel src -d dist --ignore '**/*.test.js,**/*.test.jsx,**/*.stories.js,**/*.stories.jsx' --root-mode upward",
+    "build": "npm run build:cjs && npm run build:esm",
+    "build:cjs": "lerna exec --parallel -- babel src -d dist --ignore $npm_package_config_babel_ignore --root-mode upward",
+    "build:esm": "BABEL_TYPE=esm lerna exec --parallel -- babel src -d esm --configFile babel.config.js --ignore $npm_package_config_babel_ignore --root-mode upward",
     "ci:packages": "npm ci && lerna exec -- npm ci",
     "changeScanner": "node scripts/changeScanner",
     "deploy-storybook": "build-storybook -o storybook_dist && gh-pages -d storybook_dist",
@@ -40,8 +42,8 @@
   },
   "devDependencies": {
     "@babel/cli": "^7.2.0",
-    "@babel/core": "^7.2.0",
-    "@babel/preset-env": "^7.2.0",
+    "@babel/core": "^7.5.4",
+    "@babel/preset-env": "^7.5.4",
     "@babel/preset-react": "^7.0.0",
     "@bbc/psammead-assets": "^0.1.3",
     "@storybook/addon-a11y": "^5.1.9",
@@ -55,10 +57,10 @@
     "babel-core": "^7.0.0-bridge.0",
     "babel-eslint": "^10.0.2",
     "babel-loader": "^8.0.4",
-    "babel-plugin-styled-components": "1.10.5",
+    "babel-plugin-styled-components": "1.10.6",
     "chalk": "^2.4.1",
     "eslint": "^5.9.0",
-    "eslint-config-airbnb": "^17.1.0",
+    "eslint-config-airbnb": "^17.1.1",
     "eslint-config-prettier": "^6.0.0",
     "eslint-plugin-import": "^2.18.0",
     "eslint-plugin-json": "^1.2.1",
@@ -67,7 +69,7 @@
     "eslint-plugin-react": "^7.14.2",
     "gh-pages": "^2.0.1",
     "glob-loader": "^0.3.0",
-    "husky": "^2.4.1",
+    "husky": "^3.0.0",
     "jest": "^24.5.0",
     "jest-fetch-mock": "^2.1.2",
     "jest-styled-components": "^6.3.3",
@@ -87,6 +89,9 @@
     "stylelint-config-styled-components": "^0.1.1",
     "stylelint-processor-styled-components": "^1.8.0"
   },
+  "config": {
+    "babel_ignore": "'**/*.test.js,**/*.test.jsx,**/*.stories.js,**/*.stories.jsx'"
+  },
   "husky": {
     "hooks": {
       "pre-commit": "npm run test:lint && npm run test:lint:css",
@@ -99,7 +104,8 @@
       "scripts/**",
       "!**/*.stories.{js,jsx}",
       "!**/.eslintrc.js",
-      "!**/dist/**"
+      "!**/dist/**",
+      "!**/esm/**"
     ],
     "testMatch": [
       "**/*.test.{js,jsx}"
