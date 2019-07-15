@@ -101,7 +101,7 @@ const StyledListItem = styled.li`
           `
         : css`
             right: 0;
-          `};
+          `}
   }
 `;
 

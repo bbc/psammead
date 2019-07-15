@@ -81,7 +81,7 @@ const ImageGridFallbackTopStory = css`
 
   @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
     width: ${twoOfSixColumnsMaxWidthScaleable};
-    margin-bottom: none;
+    margin-bottom: 0;
   }
 `;
 
@@ -138,7 +138,7 @@ export const Headline = styled.h3`
     }
 
     return topStory ? getParagon(script) : getPica(script);
-  }};
+  }}
 
   color: ${C_EBON};
   ${({ service }) => getSerifBold(service)}

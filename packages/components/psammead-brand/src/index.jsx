@@ -32,13 +32,13 @@ const SvgWrapper = styled.div`
 const Banner = styled.div`
   background-color: ${C_POSTBOX};
   ${({ svgHeight }) =>
-    conditionallyRenderHeight(svgHeight, PADDING_AROUND_SVG_BELOW_400PX)};
+    conditionallyRenderHeight(svgHeight, PADDING_AROUND_SVG_BELOW_400PX)}
   width: 100%;
   padding: 0 ${GEL_SPACING};
 
   @media (min-width: ${GEL_GROUP_2_SCREEN_WIDTH_MIN}) {
     ${({ svgHeight }) =>
-      conditionallyRenderHeight(svgHeight, PADDING_AROUND_SVG_ABOVE_400PX)};
+      conditionallyRenderHeight(svgHeight, PADDING_AROUND_SVG_ABOVE_400PX)}
     padding: 0 ${GEL_SPACING_DBL};
   }
   border-top: ${({ borderTop }) => borderTop && TRANSPARENT_BORDER};
@@ -78,7 +78,7 @@ const BrandSvg = styled.svg`
 
   /* stylelint-disable */
   /* https://www.styled-components.com/docs/advanced#referring-to-other-components */
-    ${StyledLink}:hover &,
+  ${StyledLink}:hover &,
     ${StyledLink}:focus & {
     text-decoration: none;
     border-bottom: ${GEL_SPACING_HLF} solid ${C_WHITE};
