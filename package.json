@@ -88,6 +88,12 @@
     "stylelint-csstree-validator": "^1.5.2",
     "stylelint-processor-styled-components": "^1.8.0"
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run test:lint && npm run test:lint:css",
+      "pre-push": "sh scripts/enforceVersions.sh && npm run test:unit"
+    }
+  },
   "jest": {
     "collectCoverageFrom": [
       "**/packages/**/*.{js,jsx}",
