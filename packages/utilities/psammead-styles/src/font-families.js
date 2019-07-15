@@ -29,7 +29,7 @@ export const news = {
   `,
   serifMedium: `
    ${reithSerif}
-   ${getFontStyleAndWeight('italic', 500)} 
+   ${getFontStyleAndWeight('normal', 500)} 
   `,
   serifMediumItalic: `
    ${reithSerif}
