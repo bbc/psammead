@@ -22,6 +22,7 @@ The `psammead-consent-banner` component is a styled `div` that encapsulates info
 | id | string | No | Null | `ConsentBanner` |
 | hidden | bool | No | Null | `false` |
 | script | script | Yes | N/A | { canon: { groupA: { fontSize: '28', lineHeight: '32',}, groupB: { fontSize: '32', lineHeight: '36', }, groupD: { fontSize: '44', lineHeight: '48', }, }, trafalgar: { groupA: { fontSize: '20', lineHeight: '24', }, groupB: { fontSize: '24', lineHeight: '28', }, groupD: { fontSize: '32', lineHeight: '36', }, }, } |
+| service | string | Yes | N/A | `'news'` |
 
 ## Usage
 
@@ -44,7 +45,7 @@ const Reject = (
 );
 
 const Text = (
-  <ConsentBannerText script={latin}>
+  <ConsentBannerText script={latin} service="news">
     This is some text with <a href="https://www.bbc.com/news">a link</a> inside
     the consent banner. We have made some important changes to our Privacy and
     Cookie Policy.
@@ -59,6 +60,7 @@ const props = {
   id: null,
   hidden: false,
   script: latin,
+  service: 'news',
 };
 
 <ConsentBanner {...props} />;

@@ -3,6 +3,9 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 2.0.3   | [PR#1203](https://github.com/bbc/psammead/pull/1203) use `gel-foundations@3.0.3`, `psammead-styles@1.1.3` and bump devDependencies |
+| 2.0.2   | [PR#1082](https://github.com/bbc/psammead/pull/1082) Bump lodash security vulnerability |
+| 2.0.1   | [PR#1038](https://github.com/bbc/psammead/pull/1038) Bump dependencies |
 | 2.0.0 | [PR#939](https://github.com/bbc/psammead/pull/939) Apply font based on service prop |
 | 1.1.11 | [PR#783](https://github.com/bbc/psammead/pull/783) Update to latest psammead-test-helpers. Update snapshots. |
 | 1.1.10   | [PR#769](https://github.com/bbc/psammead/pull/769) Fix stories not appearing in storybook when using `install:packages:link` |
