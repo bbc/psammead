@@ -20,7 +20,7 @@ const PADDING_AROUND_SVG_ABOVE_400PX = 56;
 const PADDING_AROUND_SVG_BELOW_400PX = 32;
 
 const conditionallyRenderHeight = (svgHeight, padding) =>
-  svgHeight ? `height: ${(svgHeight + padding) / 16}rem` : '';
+  svgHeight ? `height: ${(svgHeight + padding) / 16}rem;` : '';
 
 const TRANSPARENT_BORDER = `0.0625rem solid transparent`;
 
