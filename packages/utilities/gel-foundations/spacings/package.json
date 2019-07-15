@@ -1,0 +1,7 @@
+{
+  "name": "drew-testing-123/spacings",
+  "private": "true",
+  "main": "../dist/spacings",
+  "module": "../esm/spacings",
+  "sideEffects": false
+}
