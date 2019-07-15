@@ -103,7 +103,8 @@
       "scripts/**",
       "!**/*.stories.{js,jsx}",
       "!**/.eslintrc.js",
-      "!**/dist/**"
+      "!**/dist/**",
+      "!**/esm/**"
     ],
     "testMatch": [
       "**/*.test.{js,jsx}"
