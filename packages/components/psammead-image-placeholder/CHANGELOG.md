@@ -1,6 +1,6 @@
 # Psammead Image Placeholder Changelog
 
-<! --prettier-ignore -->
+<!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
 | 1.0.5 | [PR#1181](https://github.com/bbc/psammead/pull/1181) use `psammead-assets@1.0.6`, `psammead-styles@1.1.3`, `psammead-test-helpers@1.0.2`|
