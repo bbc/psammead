@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 1.1.4 | [PR#1066](https://github.com/bbc/psammead/pull/1066) Fix Serif Medium font. |
 | 1.1.3 | [PR#1180](https://github.com/bbc/psammead/pull/1180) Update devDependencies |
 | 1.1.2 | [PR#783](https://github.com/bbc/psammead/pull/783) Update to latest psammead-test-helpers. Update snapshots. |
 | 1.1.1 | [PR#769](https://github.com/bbc/psammead/pull/769) Fix stories not appearing in storybook when using `install:packages:link` |
