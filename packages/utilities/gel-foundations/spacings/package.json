@@ -1,5 +1,5 @@
 {
-  "name": "drew-testing-123/spacings",
+  "name": "@bbc/gel-foundations/spacings",
   "private": "true",
   "main": "../dist/spacings",
   "module": "../esm/spacings",

@@ -1,5 +1,5 @@
 {
-  "name": "drew-testing-123/prop-types",
+  "name": "@bbc/gel-foundations/prop-types",
   "private": "true",
   "main": "../dist/propTypes",
   "module": "../esm/propTypes",

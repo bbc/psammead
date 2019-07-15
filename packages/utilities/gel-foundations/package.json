@@ -1,6 +1,6 @@
 {
-  "name": "drew-testing-123",
-  "version": "1.0.8",
+  "name": "@bbc/gel-foundations",
+  "version": "3.0.3",
   "sideEffects": false,
   "description": "A range of string constants for use in CSS, intended to help implement BBC GEL-compliant webpages and components.",
   "repository": {
@@ -26,6 +26,6 @@
     "typography"
   ],
   "devDependencies": {
-    "@bbc/psammead-test-helpers": "^1.0.1"
+    "@bbc/psammead-test-helpers": "^1.0.2"
   }
 }
