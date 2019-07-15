@@ -17,8 +17,8 @@ import '@bbc/psammead-locales/moment/pcm';
 let timestamp = moment();
 
 moment.relativeTimeRounding(Math.floor);
-moment.relativeTimeThreshold('s', 60);
-moment.relativeTimeThreshold('ss', 3);
+// Smallest relative timestamp is 'a minute ago'
+moment.relativeTimeThreshold('s', 0);
 moment.relativeTimeThreshold('m', 60);
 moment.relativeTimeThreshold('h', 24);
 moment.relativeTimeThreshold('d', 30);
