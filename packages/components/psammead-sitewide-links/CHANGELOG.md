@@ -3,6 +3,9 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 2.0.3   | [PR#1181](https://github.com/bbc/psammead/pull/1181) use `gel-foundations@3.0.3`, `psammead-styles@1.1.3`, `psammead-storybook-helpers@3.1.3`, `psammead-test-helpers@1.0.2` |
+| 2.0.2   | [PR#1082](https://github.com/bbc/psammead/pull/1082) Bump lodash security vulnerability |
+| 2.0.1   | [PR#892](https://github.com/bbc/psammead/pull/892) Bump dependencies |
 | 2.0.0 | [PR#1018](https://github.com/bbc/psammead/pull/1018) Apply font based on service prop |
 | 1.0.5   | [PR#892](https://github.com/bbc/psammead/pull/892) Bump dependencies |
 | 1.0.4 | [PR#783](https://github.com/bbc/psammead/pull/783) Update to latest psammead-test-helpers. Update snapshots. |
