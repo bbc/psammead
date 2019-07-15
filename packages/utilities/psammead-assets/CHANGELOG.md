@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 1.1.0   | [PR#XXXX](https://github.com/bbc/psammead/pull/XXXX) Export ESM modules via existing API |
 | 1.0.6   | [PR#1179](https://github.com/bbc/psammead/pull/1179) use `psammead-test-helpers@1.0.2`|
 | 1.0.5   | [PR#1082](https://github.com/bbc/psammead/pull/1082) Bump lodash security vulnerability |
 | 1.0.4   | [PR#783](https://github.com/bbc/psammead/pull/783) Update to latest psammead-test-helpers. Update snapshots. |
