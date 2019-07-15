@@ -3,7 +3,7 @@
     "declaration-no-important": true,
     "csstree/validator": true
   },
-  "processors": ["stylelint-processor-styled-components", "./jonProcessor.js"],
+  "processors": ["stylelint-processor-styled-components", "./lib/stylelint/processorRemoveMixins.js"],
   "extends": [
     "stylelint-config-recommended",
     "stylelint-config-styled-components"
