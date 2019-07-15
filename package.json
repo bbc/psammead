@@ -72,6 +72,7 @@
     "jest-fetch-mock": "^2.1.2",
     "jest-styled-components": "^6.3.3",
     "lerna": "^3.15.0",
+    "npm-registry-client": "^8.6.0",
     "prettier": "^1.18.2",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
