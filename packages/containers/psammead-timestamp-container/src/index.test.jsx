@@ -21,6 +21,7 @@ describe('Timestamp', () => {
       isRelative={false}
       script={latin}
       locale="fa"
+      service="persian"
     />,
   );
 
@@ -32,6 +33,7 @@ describe('Timestamp', () => {
       format="D MMMM YYYY"
       isRelative={false}
       script={latin}
+      service="news"
     />,
   );
 
@@ -43,6 +45,7 @@ describe('Timestamp', () => {
       format="D MMMM YYYY"
       isRelative={false}
       script={latin}
+      service="news"
     />,
   );
 
@@ -56,6 +59,7 @@ describe('Timestamp', () => {
       prefix="Prefix here "
       suffix=" suffix here"
       script={latin}
+      service="news"
     />,
   );
 });
