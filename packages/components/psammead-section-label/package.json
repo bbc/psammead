@@ -3,6 +3,8 @@
   "version": "1.0.8",
   "description": "React styled component for a section label",
   "main": "dist/index.js",
+  "module": "esm/index.js",
+  "sideEffects": false,
   "repository": {
     "type": "git",
     "url": "https://github.com/bbc/psammead/tree/latest/packages/components/psammead-section-label"

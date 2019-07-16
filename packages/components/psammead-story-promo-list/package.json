@@ -2,6 +2,8 @@
   "name": "@bbc/psammead-story-promo-list",
   "version": "1.0.7",
   "main": "dist/index.js",
+  "module": "esm/index.js",
+  "sideEffects": false,
   "description": "List of story promos",
   "repository": {
     "type": "git",
