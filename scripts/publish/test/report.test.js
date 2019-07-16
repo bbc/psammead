@@ -11,12 +11,25 @@ describe(`Publish Script - report`, () => {
   });
 
   it('renders logs correctly when multiple successes and failures', () => {
-    const attempted = {
-      success: ['@bbc/psammead-foobar@1.1.1', '@bbc/psammead-boofar@1.1.1'],
-      failure: ['@bbc/psammead-feeboo@1.1.1'],
-    };
+    const input = [
+      {
+        packageReleaseTag: '@bbc/psammead-foobar@1.1.1',
+        status: true,
+        failure: false,
+      },
+      {
+        packageReleaseTag: '@bbc/psammead-boofar@1.1.1',
+        status: true,
+        failure: false,
+      },
+      {
+        packageReleaseTag: '@bbc/psammead-feeboo@1.1.1',
+        status: false,
+        failure: true,
+      },
+    ];
 
-    report(attempted);
+    report(input);
 
     const expectedOutput = [
       'Published: 2 Successful, 1 Failed, 3 total',
@@ -39,12 +52,18 @@ describe(`Publish Script - report`, () => {
   });
 
   it('renders logs correctly with successes but no failures', () => {
-    const attempted = { success: ['@bbc/psammead-foobar@1.1.1'], failure: [] };
+    const input = [
+      {
+        packageReleaseTag: '@bbc/psammead-foobar@1.1.1',
+        status: true,
+        failure: false,
+      },
+    ];
 
-    report(attempted);
+    report(input);
 
     const expectedOutput = [
-      'Published: 1 Successful, 1 total',
+      'Published: 1 Successful, 0 Failed, 1 total',
       'Successful',
       '@bbc/psammead-foobar@1.1.1',
     ];
@@ -61,12 +80,18 @@ describe(`Publish Script - report`, () => {
   });
 
   it('renders logs correctly with failures but no successes', () => {
-    const attempted = { success: [], failure: ['@bbc/psammead-feeboo@1.1.1'] };
+    const input = [
+      {
+        packageReleaseTag: '@bbc/psammead-feeboo@1.1.1',
+        status: false,
+        failure: true,
+      },
+    ];
 
-    report(attempted);
+    report(input);
 
     const expectedOutput = [
-      'Published: 1 Failed, 1 total',
+      'Published: 0 Successful, 1 Failed, 1 total',
       'Failed',
       '@bbc/psammead-feeboo@1.1.1',
     ];
@@ -83,12 +108,11 @@ describe(`Publish Script - report`, () => {
   });
 
   it('renders logs correctly with no successes or failures', () => {
-    const attempted = { success: [], failure: [] };
-
-    report(attempted);
+    const input = [];
+    report(input);
 
     expect(stripAnsi(console.log.mock.calls[0][0])).toEqual(
-      expect.stringContaining('Published: 0 total'),
+      expect.stringContaining('0 Successful, 0 Failed, 0 total'),
     );
 
     expect(console.log.mock.calls).toHaveLength(1);

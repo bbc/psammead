@@ -1,18 +1,14 @@
 const fs = require('fs');
-const semver = require('semver');
 const report = require('./src/report');
 const publish = require('./src/publish');
 const getPackages = require('./src/getPackages');
 const getRegistryVersion = require('./src/getRegistryVersion');
+const shouldPublish = require('./src/shouldPublish');
 
 const getLatest = async pack => {
   const version = Object.keys(pack.versions);
   const latest = version.pop();
   return latest;
-};
-
-const shouldPub = async (packageJson, lts) => {
-  return !packageJson.private && semver.gt(packageJson.version, lts);
 };
 
 const publishPackage = async packageDir => {
@@ -22,7 +18,7 @@ const publishPackage = async packageDir => {
     );
     const p = await getRegistryVersion(packageJson.name);
     const lts = (await getLatest(p)) || '0.0.0';
-    const canPublish = await shouldPub(packageJson, lts);
+    const canPublish = await shouldPublish(packageJson, lts);
 
     if (canPublish) {
       const publishResult = await publish(packageDir, packageJson);

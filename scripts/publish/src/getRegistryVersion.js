@@ -21,7 +21,8 @@ const client = new RegClient();
 const get = util.promisify(client.get.bind(client));
 // Get version of package in NPM regsitry. Returns 0.0.0 if doesn't exist.
 module.exports = async name => {
-  if (!checkPackage(name)) return 'fuck';
+  // eslint-disable-next-line no-throw-literal
+  if (!checkPackage(name)) throw 'Wrong package name';
 
   return get(createUri(name), PARAMS);
 };

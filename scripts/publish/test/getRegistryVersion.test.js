@@ -1,11 +1,11 @@
 const shelljs = require('shelljs');
 /* eslint-disable global-require */
-describe(`Publish Script - getRegistry`, () => {
-  beforeEach(() => {
+describe(`Publish Script - getRegistry`, async () => {
+  beforeEach(async () => {
     jest.resetModules();
   });
 
-  it('returns latest registry version from array', () => {
+  it('returns latest registry version from array', async () => {
     jest.mock('shelljs', () => ({
       exec: () => ({
         stdout: JSON.stringify(['1.0.0', '1.1.0', '1.1.1']),
@@ -13,11 +13,11 @@ describe(`Publish Script - getRegistry`, () => {
     }));
 
     const getRegistry = require('../src/getRegistryVersion');
-
-    expect(getRegistry('gel-methods')).toEqual('1.1.1');
+    const result = await getRegistry('gel-methods');
+    expect(getRegistry(result)).toEqual('1.1.1');
   });
 
-  it('returns single registry version ', () => {
+  it('returns single registry version ', async () => {
     jest.mock('shelljs', () => ({
       exec: () => ({
         stdout: JSON.stringify(['1.3.2']),
@@ -25,21 +25,22 @@ describe(`Publish Script - getRegistry`, () => {
     }));
 
     const getRegistry = require('../src/getRegistryVersion');
-
-    expect(getRegistry('psammead-caption')).toEqual('1.3.2');
+    const result = await getRegistry('psammead-caption');
+    expect(result).toEqual('1.3.2');
   });
 
-  it('returns default version when an array of versions is not returned', () => {
+  it('returns default version when an array of versions is not returned', async () => {
     jest.mock('shelljs', () => ({
       exec: () => ({}),
     }));
 
     const getRegistry = require('../src/getRegistryVersion');
 
-    expect(getRegistry('psammead-front-end-component')).toEqual('0.0.0');
+    const result = await getRegistry('psammead-front-end-component');
+    expect(result).toEqual('0.0.0');
   });
 
-  it('returns -1 if the package does not match the whitelist', () => {
+  it('returns -1 if the package does not match the whitelist', async () => {
     jest.mock('shelljs', () => ({
       exec: () => ({
         stdout: JSON.stringify(['1.0.0', '1.1.0', '1.1.1']),
@@ -48,21 +49,21 @@ describe(`Publish Script - getRegistry`, () => {
 
     const getRegistry = require('../src/getRegistryVersion');
 
-    expect(getRegistry('foobar')).toEqual('-1');
+    await expect(getRegistry('foobar')).rejects.toThrow('error');
   });
 
   // Example name = 'psammead versions -json; echo I can inject code here; npm view psammead'
   // npm view psammead versions -json; echo I can inject code here; npm view psammead  versions -json
-  it('should block the execution of exec if not in whiteliest ', () => {
+  it('should block the execution of exec if not in whiteliest ', async () => {
     const shell = jest.spyOn(shelljs, 'exec');
 
     const getRegistry = require('../src/getRegistryVersion');
 
-    expect(
+    await expect(
       getRegistry(
         'psammead versions -json; echo I can inject code here; npm view psammead;',
       ),
-    ).toEqual('-1');
-    expect(shell).toHaveBeenCalledTimes(0);
+    ).rejects.toThrow('error');
+    await expect(shell).toHaveBeenCalledTimes(0);
   });
 });
