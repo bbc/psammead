@@ -1,7 +1,9 @@
 {
   "name": "@bbc/psammead-consent-banner",
-  "version": "2.0.1",
+  "version": "2.1.0",
   "main": "dist/index.js",
+  "module": "esm/index.js",
+  "sideEffects": false,
   "description": "React styled components for the Consent Banner",
   "repository": {
     "type": "git",

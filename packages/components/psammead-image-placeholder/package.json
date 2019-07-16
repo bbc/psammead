@@ -1,7 +1,9 @@
 {
   "name": "@bbc/psammead-image-placeholder",
-  "version": "1.0.5",
+  "version": "1.1.0",
   "main": "dist/index.js",
+  "module": "esm/index.js",
+  "sideEffects": false,
   "description": "Provides a 'BBC' image placeholder",
   "repository": {
     "type": "git",
