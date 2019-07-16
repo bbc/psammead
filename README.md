@@ -146,9 +146,9 @@ NB, this automatically pushes to the 'gh-pages' branch, which deploys to the liv
 
 ### Contact
 
-Psammead is currently maintained by developers in the BBC Articles and Reach + Languages teams. If you want to open an issue, please add it to our [issues page](https://github.com/bbc/psammead/issues).
+Psammead is currently maintained by developers in the BBC Simorgh teams. If you want to open an issue, please add it to our [issues page](https://github.com/bbc/psammead/issues).
 
-Contact us by email on [PsammeadMaintainers@bbc.co.uk](mailto:PsammeadMaintainers@bbc.co.uk), or find us on Slack at #psammead in the bbcnews workspace.
+Contact us by email on [PsammeadMaintainers@bbc.co.uk](mailto:PsammeadMaintainers@bbc.co.uk), or find us on Slack at #si_repo-psammead in the bbcnews workspace.
 
 ### The name?
 
