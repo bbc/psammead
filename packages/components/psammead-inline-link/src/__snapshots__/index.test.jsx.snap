@@ -4,6 +4,8 @@ exports[`InlineLink should render correctly 1`] = `
 .c0 {
   color: #222222;
   border-bottom: 1px solid #B80000;
+  margin: 0 -0.125rem;
+  padding: 0 0.125rem;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
@@ -15,8 +17,10 @@ exports[`InlineLink should render correctly 1`] = `
 
 .c0:focus,
 .c0:hover {
-  color: #B80000;
+  background-color: #B80000;
   border-bottom: 2px solid #B80000;
+  color: #FFFFFF;
+  white-space: pre-wrap;
 }
 
 <a
