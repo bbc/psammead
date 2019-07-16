@@ -42,7 +42,7 @@ describe('Psammead assets', () => {
     testUtilityPackages(
       getExports('module'),
       expectedExports,
-      'psammead-assetss',
+      'psammead-assets',
     );
   });
 });
