@@ -1,12 +1,8 @@
 const { exec } = require('child_process');
 const path = require('path');
-const getPaths = require('./getPaths');
+const getPackages = require('../utilities/getPackages');
 
-const packagePaths = ['./package.json', ...getPaths('package.json')];
-
-const getPackageDir = packagePath => packagePath.replace('/package.json', '');
-
-const packageDirs = packagePaths.map(getPackageDir);
+const packageDirs = getPackages();
 
 const removeExistingPackageLocks = packageDir =>
   new Promise((resolve, reject) => {

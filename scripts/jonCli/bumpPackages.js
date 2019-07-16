@@ -1,13 +1,12 @@
 const { prompt } = require('enquirer');
 const { exec } = require('child_process');
-const path = require('path');
 const initialPrompt = require('./initialPrompt');
 const stageFile = require('./stageFile');
 const commitChanges = require('./commitChanges');
 const getVersionBumpCommitMessage = require('./getVersionBumpCommitMessage');
-const getPaths = require('./getPaths');
 const getPackagePath = require('./getPackagePath');
 const promptStageAndCommit = require('./promptStageAndCommit');
+const getPackages = require('../utilities/getPackages');
 
 const promptVersion = async ({ packageNames }) => {
   if (!packageNames.length) throw new Error('No packages selected');
@@ -26,7 +25,7 @@ const runExec = (version, packageDir) =>
     exec(
       `npm version ${version}`,
       {
-        cwd: path.resolve(__dirname, '../../', packageDir),
+        cwd: packageDir,
       },
       error => {
         if (error) {
@@ -41,14 +40,9 @@ const runExec = (version, packageDir) =>
 initialPrompt('How would you like to enter which packages to bump?')
   .then(promptVersion)
   .then(({ packageNames, version }) => {
-    const packagePaths = getPaths('package.json');
-    const bumpVersion = packageName => {
-      const packageDir = getPackagePath(packageName, packagePaths).replace(
-        '/package.json',
-        '',
-      );
-      return runExec(version, packageDir);
-    };
+    const packagePaths = getPackages();
+    const bumpVersion = packageName =>
+      runExec(version, getPackagePath(packageName));
 
     return Promise.all([
       packageNames,

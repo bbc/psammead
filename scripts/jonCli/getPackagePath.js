@@ -1,6 +1,8 @@
-module.exports = (packageName, paths) => {
-  const matchesPath = packagePath =>
-    new RegExp(`/${packageName}/`).test(packagePath);
+const getPackages = require('../utilities/getPackages');
 
-  return paths.find(matchesPath);
+module.exports = packageName => {
+  const matchesPath = packagePath =>
+    new RegExp(`/${packageName}$`).test(packagePath);
+
+  return getPackages().find(matchesPath);
 };

@@ -1,6 +1,5 @@
 const { prompt } = require('enquirer');
-const getPackageNames = require('./getPackageNames');
-const getPaths = require('./getPaths');
+const getPackageNames = require('../utilities/getPackageNames');
 const promptPackageMultiselect = require('./promptPackageMultiselect');
 const promptPackageInput = require('./promptPackageInput');
 
@@ -15,6 +14,6 @@ module.exports = message =>
     ],
   }).then(({ method }) => {
     return method === 'Choose from a list of all packages'
-      ? promptPackageMultiselect(getPackageNames(getPaths('CHANGELOG.md')))
+      ? promptPackageMultiselect(getPackageNames())
       : promptPackageInput();
   });
