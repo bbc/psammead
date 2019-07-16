@@ -1,6 +1,8 @@
 import { testUtilityPackages } from '@bbc/psammead-test-helpers';
 import * as colours from './colours';
 import * as coloursFromSrc from './src/colours';
+import * as detection from './detection';
+import * as detectionFromSrc from './src/detection';
 import * as fonts from './fonts';
 import * as fontsFromSrc from './src/fonts';
 
@@ -31,6 +33,10 @@ const fontsExpectedExports = {
   F_NASSIM_PERSIAN_BOLD: 'string',
 };
 
+const detectionExpectedExports = {
+  gridDetection: 'string',
+};
+
 const coloursExpectedExports = {
   C_EBON: 'string',
   C_POSTBOX: 'string',
@@ -57,16 +63,19 @@ const coloursExpectedExports = {
 
 const expectedExports = {
   colours: coloursExpectedExports,
+  detection: detectionExpectedExports,
   fonts: fontsExpectedExports,
 };
 
 const actualExports = {
   colours,
+  detection,
   fonts,
 };
 
 const actualExportsFromSrc = {
   colours: coloursFromSrc,
+  detection: detectionFromSrc,
   fonts: fontsFromSrc,
 };
 

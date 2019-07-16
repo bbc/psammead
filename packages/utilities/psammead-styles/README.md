@@ -5,6 +5,7 @@ This package provides a collection of string constants for use in CSS, containin
 ## Exports
 
 `/colours` - Project-defined colours that will be required by multiple Psammead components or themes. These colours are not defined by GEL.
+`/detection` - Project-defined CSS feature detection statements.
 `/fonts` - Project-defined browser behaviours for the Reith font. The primary reason these are not considered GEL-defined (and not part of [`@bbc/gel-foundations`](https://www.npmjs.com/package/@bbc/gel-foundations)) is due to the custom weighting and loading definitions. [More details on the font-faces defined in this package are available here.](./font-faces.md)
 
 `/font-styles` provides functions that can be used to get font-styles for different services. If a font-style is not available all the functions will fallback to regular sans font-style of the service.
@@ -51,7 +52,7 @@ const SomeStyledComponent = css`
 
 ### font-styles
 
-In case you are using embeded fonts, you need to make sure you have loaded your fonts first before using the functions. If the embeded font is not loaded, the fallback font will be applied
+In case you are using embedded fonts, you need to make sure you have loaded your fonts first before using the functions. If the embedded font is not loaded, the fallback font will be applied
 
 ```js
 import { getSansRegular } from '@bbc/psammead-styles/font-styles';
@@ -61,6 +62,25 @@ const fontStyle = getSansRegular('news');
 const SomeStyledComponent = css`
   ${fontStyle};
   /* more css styles */
+`;
+```
+
+### detection
+
+We have defined custom feature detection statements (using CSS `@supports` syntax) to provide workarounds for browser-specific bugs.
+
+- gridDetection: We experienced issues using `@supports (display:grid)` from browsers with buggy CSS Grid implementations, and found that detecting on `@supports (grid-template-columns: fit-content(200px))` gave more consistent detection.
+
+```js
+import { gridDetection } from '@bbc/psammead-styles/detection';
+
+const someGridUsingComponent = css`
+  @supports (${gridDetection}) {
+    display: grid;
+    /* grid CSS */
+  }
+
+  /* fallback CSS */
 `;
 ```
 
