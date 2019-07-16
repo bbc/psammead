@@ -1,4 +1,12 @@
 const { exec } = require('shelljs');
+const RegClient = require('npm-registry-client');
+const util = require('util');
+
+const PARAMS = { timeout: 1000 };
+
+const createUri = name => {
+  return `https://registry.npmjs.org/${name}`;
+};
 
 const whitelist = /^psammead-[a-zA-Z0-9-]*$|^gel-[a-zA-Z0-9-]*$/;
 
@@ -10,20 +18,11 @@ const checkPackage = name => {
   return result;
 };
 
+const client = new RegClient();
+const get = util.promisify(client.get.bind(client));
 // Get version of package in NPM regsitry. Returns 0.0.0 if doesn't exist.
-module.exports = name => {
-  let packageVersions = [];
+module.exports = async name => {
+  if (!checkPackage(name)) return 'fuck';
 
-  if (!checkPackage(name)) return '-1';
-
-  const npmVersion = exec(`npm view ${name} versions -json`, { silent: true })
-    .stdout;
-
-  if (typeof npmVersion === 'string' && JSON.parse(npmVersion)) {
-    const jsonResponse = JSON.parse(npmVersion);
-    packageVersions = Array.isArray(jsonResponse) ? jsonResponse : [];
-  }
-
-  const latestPublishedVersion = packageVersions.pop(); // removes the last element from the array and returns it i.e. the latest published version
-  return latestPublishedVersion || '0.0.0';
+  return get(createUri(name), PARAMS);
 };
