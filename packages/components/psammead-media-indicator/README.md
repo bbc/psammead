@@ -15,7 +15,6 @@ The `MediaIndicator` component provides a 'play' or 'audio' icon as well as a du
 | ------------- | ------ | -------- | ------- | ---------------------------- |
 | duration      | string | No       | Null    | '2:15'                       |
 | datetime      | string | No       | Null    | 'PT2M15S'                    |
-| offscreenText | string | No       | Null    | 'Video'                      |
 | type          | string | No       | 'video' | 'audio'                      |
 | topStory      | boolean | No      | false   | true                         |
 | service | string | Yes | N/A | `'news'` |
@@ -32,7 +31,6 @@ import MediaIndicator from '@bbc/psammead-media-indicator';
 <MediaIndicator
   duration="2:15"
   datetime="PT2M15S"
-  offscreenText="Audio"
   type="audio"
   service="news"
 />;
