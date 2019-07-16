@@ -65,13 +65,9 @@ NB, we've defined global styles (normalize, box-sizing, Reith font) in the [Stor
 npm run build
 ```
 
-## :computer: Developing with Psammead
-
-Please refer to the [Psammead component guide](https://github.com/bbc/psammead/blob/latest/packages/components/README.md)
+### :link: Link packages locally
 
 When making changes to a package locally if you want to pull those changes into another psammead package then the following command will create the required symlinks for you.
-
-### :link: Link packages locally
 
 Run the following command to link all psammead packages up regardless of dependency version:
 
@@ -79,7 +75,9 @@ Run the following command to link all psammead packages up regardless of depende
 npm run install:packages:link
 ```
 
-## :dizzy: [Using Psammead](https://github.com/bbc/psammead/blob/latest/packages/components/README.md)
+### :computer: Developing with Psammead
+
+[Learn how to use Psammead components in your own project.](https://github.com/bbc/psammead/blob/latest/packages/components/README.md)
 
 ## :bar_chart: Support levels
 
@@ -87,19 +85,19 @@ We strive for components to conform to the following minimum levels of support, 
 
 ### Browser support
 
-| Browser              | Lowest version |
-| -------------------- | -------------- |
-| Safari               | 9              |
-| Chrome               | 53             |
-| Edge                 | 37             |
-| Firefox              | 45             |
-| IE                   | 11             |
-| Opera                | 40             |
-| Opera Mini           | 18             |
-| Android Browser      | 7              |
-| Android Chrome       | 53             |
-| Android Firefox      | 49             |
-| IOS Safari           | 10             |
+| Browser         | Lowest version |
+| --------------- | -------------- |
+| Safari          | 9              |
+| Chrome          | 53             |
+| Edge            | 37             |
+| Firefox         | 45             |
+| IE              | 11             |
+| Opera           | 40             |
+| Opera Mini      | 18             |
+| Android Browser | 7              |
+| Android Chrome  | 53             |
+| Android Firefox | 49             |
+| IOS Safari      | 10             |
 
 Note that these browser support levels have been defined by usage statistics for BBC News and BBC Persian.
 
