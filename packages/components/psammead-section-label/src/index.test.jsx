@@ -8,28 +8,47 @@ describe('SectionLabel', () => {
     describe('With title', () => {
       shouldMatchSnapshot(
         'should render correctly',
-        <SectionLabel script={latin} labelId="test-section-label">
+        <SectionLabel
+          script={latin}
+          labelId="test-section-label"
+          service="news"
+        >
           This is text in a SectionLabel.
         </SectionLabel>,
       );
 
       shouldMatchSnapshot(
         'should render correctly with explicitly showing the bar',
-        <SectionLabel script={latin} labelId="test-section-label" bar>
+        <SectionLabel
+          script={latin}
+          labelId="test-section-label"
+          bar
+          service="news"
+        >
           This is text in a SectionLabel, and there is a bar over to the right
         </SectionLabel>,
       );
 
       shouldMatchSnapshot(
         'should render correctly with explicit text direction',
-        <SectionLabel script={latin} dir="ltr" labelId="test-section-label">
+        <SectionLabel
+          script={latin}
+          dir="ltr"
+          labelId="test-section-label"
+          service="news"
+        >
           This is text in a SectionLabel rendering in ltr mode.
         </SectionLabel>,
       );
 
       shouldMatchSnapshot(
         'should render correctly with arabic script typography values',
-        <SectionLabel script={arabic} dir="rtl" labelId="test-section-label">
+        <SectionLabel
+          script={arabic}
+          dir="rtl"
+          labelId="test-section-label"
+          service="news"
+        >
           بعض محتوى النص
         </SectionLabel>,
       );
@@ -40,7 +59,12 @@ describe('SectionLabel', () => {
     describe('With title', () => {
       shouldMatchSnapshot(
         'should render correctly',
-        <SectionLabel script={latin} bar={false} labelId="test-section-label">
+        <SectionLabel
+          script={latin}
+          bar={false}
+          labelId="test-section-label"
+          service="news"
+        >
           This is text in a SectionLabel.
         </SectionLabel>,
       );
@@ -52,6 +76,7 @@ describe('SectionLabel', () => {
           dir="ltr"
           bar={false}
           labelId="test-section-label"
+          service="news"
         >
           This is text in a SectionLabel rendering in ltr mode.
         </SectionLabel>,
@@ -64,6 +89,7 @@ describe('SectionLabel', () => {
           dir="rtl"
           bar={false}
           labelId="test-section-label"
+          service="persian"
         >
           بعض محتوى النص
         </SectionLabel>,
@@ -79,6 +105,7 @@ describe('SectionLabel', () => {
         bar={false}
         visuallyHidden
         labelId="test-section-label"
+        service="news"
       />,
     );
   });
