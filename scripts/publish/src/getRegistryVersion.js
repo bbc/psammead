@@ -1,4 +1,3 @@
-const { exec } = require('shelljs');
 const RegClient = require('npm-registry-client');
 const util = require('util');
 

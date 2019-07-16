@@ -2,23 +2,8 @@ const fs = require('fs');
 const semver = require('semver');
 const report = require('./src/report');
 const publish = require('./src/publish');
-const shouldPublish = require('./src/shouldPublish');
 const getPackages = require('./src/getPackages');
 const getRegistryVersion = require('./src/getRegistryVersion');
-
-// should publish
-
-const attempted = { success: [], failure: [] };
-
-// const shouldPub = (packageJson, npmVersion, callback) => {
-//   if(!packageJson.private && semver.gt(packageJson.version, npmVersion)) {
-//     callback(null, )
-//   }
-// };
-
-// const getPackage = async (packageJson, callback) => {
-//   Object.keys(objArr);
-// };
 
 const getLatest = async pack => {
   const version = Object.keys(pack.versions);
@@ -51,8 +36,6 @@ const publishPackage = async packageDir => {
   }
 };
 
-Promise.all(getPackages().map(publishPackage)).then(values => {
-  console.log(values);
+Promise.all(getPackages().map(publishPackage)).then(log => {
+  report(log);
 });
-
-// report(attempted);
