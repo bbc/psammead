@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 1.2.0 | [PR#1233](https://github.com/bbc/psammead/pull/1233) Add ESM modules entry |
 | 1.1.10   | [PR#1181](https://github.com/bbc/psammead/pull/1181) use `psammead-styles@1.1.3`, `psammead-storybook-helpers@3.1.3`, `psammead-test-helpers@1.0.2`|
 | 1.1.9   | [PR#1082](https://github.com/bbc/psammead/pull/1082) Bump lodash security vulnerability |
 | 1.1.8 | [PR#1038](https://github.com/bbc/psammead/pull/1038) Bump dependencies |
