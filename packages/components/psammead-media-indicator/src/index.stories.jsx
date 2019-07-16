@@ -107,4 +107,11 @@ storiesOf('Components|MediaIndicator/Photo', module)
     'photogallery',
     ({ service }) => <MediaIndicator type="photogallery" service={service} />,
     { notes },
+  )
+  .add(
+    'top story photogallery',
+    ({ service }) => (
+      <MediaIndicator type="photogallery" service={service} topStory />
+    ),
+    { notes },
   );
