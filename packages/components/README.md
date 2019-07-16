@@ -78,7 +78,7 @@ Or if you're using [styled-components](https://styled-components.com), you can u
 
 ## Developing with Psammead
 
-1. Find a Psammead component you wish you to use, in your project from the [list of available packages](https://github.com/bbc/psammead/tree/latest/packages/components).
+1. Find a Psammead component you wish you to use, in your project from the [directory of available packages](https://github.com/bbc/psammead/tree/latest/packages), or by running `npx lerna list` inside the repo.
 2. To install the package in your local development, run:
    ```
    npm install @bbc/psammead-<component_name>
