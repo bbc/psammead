@@ -76,7 +76,7 @@ Or if you're using [styled-components](https://styled-components.com), you can u
 
 **NOTE**: if you run into issues with CSS not being applied to your components, it is likely that there is a duplicate `styled-components` dependency somewhere in your packages. You can try running [`npm dedupe`](https://www.styled-components.com/docs/faqs#duplicated-module-in-node_modules) in most cases, or [`lerna bootstrap --hoist`](https://www.styled-components.com/docs/faqs#usage-with-lerna) in monorepo setups such as Psammead's. Failing that, make sure your application's `styled-components` dependency is the same version as that in Psammead.
 
-## Using Component locally example
+## Developing with Psammead
 
 1. Find a Psammead component you wish you to use, in your project from the [list of available packages](https://github.com/bbc/psammead/tree/latest/packages/components).
 2. To install the package in your local development, run:
@@ -84,3 +84,13 @@ Or if you're using [styled-components](https://styled-components.com), you can u
    npm install @bbc/psammead-<component_name>
    ```
 3. See the README for the respective the Psammead component, to see the required props, usage example and use-cases for it.
+
+### Using multiple components locally
+
+When making changes to a package locally if you want to pull those changes into another psammead package then the following command will create the required symlinks for you.
+
+Run the following command to link all psammead packages up regardless of dependency version:
+
+```
+npm run install:packages:link
+```

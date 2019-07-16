@@ -65,16 +65,6 @@ NB, we've defined global styles (normalize, box-sizing, Reith font) in the [Stor
 npm run build
 ```
 
-### :link: Link packages locally
-
-When making changes to a package locally if you want to pull those changes into another psammead package then the following command will create the required symlinks for you.
-
-Run the following command to link all psammead packages up regardless of dependency version:
-
-```
-npm run install:packages:link
-```
-
 ### :computer: Developing with Psammead
 
 [Learn how to use Psammead components in your own project.](https://github.com/bbc/psammead/blob/latest/packages/components/README.md)
