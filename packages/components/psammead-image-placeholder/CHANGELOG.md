@@ -1,6 +1,6 @@
 # Psammead Image Placeholder Changelog
 
-<! --prettier-ignore -->
+<!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
 | 1.2.0 | [PR#1233](https://github.com/bbc/psammead/pull/1233) Add ESM modules entry |
