@@ -3,7 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
-| 1.2.0 | [PR#?](https://github.com/bbc/psammead/pull/?) Add custom CSS Grid feature detector |
+| 1.2.0 | [PR#1234](https://github.com/bbc/psammead/pull/1234) Add custom CSS Grid feature detector |
 | 1.1.5 | [PR#1215](https://github.com/bbc/psammead/pull/1215) Fix `sans serif` typo |
 | 1.1.4 | [PR#1066](https://github.com/bbc/psammead/pull/1066) Fix Serif Medium font. |
 | 1.1.3 | [PR#1180](https://github.com/bbc/psammead/pull/1180) Update devDependencies |
