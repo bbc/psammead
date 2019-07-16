@@ -34,7 +34,7 @@ const fontsExpectedExports = {
 };
 
 const detectionExpectedExports = {
-  gridDetection: 'string',
+  grid: 'string',
 };
 
 const coloursExpectedExports = {

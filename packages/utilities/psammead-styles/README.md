@@ -69,13 +69,13 @@ const SomeStyledComponent = css`
 
 We have defined custom feature detection statements (using CSS `@supports` syntax) to provide workarounds for browser-specific bugs.
 
-- gridDetection: We experienced issues using `@supports (display:grid)` from browsers with buggy CSS Grid implementations, and found that detecting on `@supports (grid-template-columns: fit-content(200px))` gave more consistent detection.
+- grid: We experienced issues using `@supports (display:grid)` from browsers with buggy CSS Grid implementations, and found that detecting on `@supports (grid-template-columns: fit-content(200px))` gave more consistent detection.
 
 ```js
-import { gridDetection } from '@bbc/psammead-styles/detection';
+import { grid } from '@bbc/psammead-styles/detection';
 
 const someGridUsingComponent = css`
-  @supports (${gridDetection}) {
+  @supports (${grid}) {
     display: grid;
     /* grid CSS */
   }

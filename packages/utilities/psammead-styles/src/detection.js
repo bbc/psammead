@@ -7,4 +7,4 @@
  * The `fit-content` CSS function did not land in Firefox until 51 (regardless
  * of feature flag settings) which enables us to better detect our fallback.
  */
-export const gridDetection = 'grid-template-columns: fit-content(200px)';
+export const grid = 'grid-template-columns: fit-content(200px)';

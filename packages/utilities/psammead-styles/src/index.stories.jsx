@@ -9,7 +9,7 @@ import {
 import { latin } from '@bbc/gel-foundations/scripts';
 import notes from '../README.md';
 import * as colours from './colours';
-import { gridDetection } from './detection';
+import { grid } from './detection';
 
 const ColourContainer = styled.div`
   padding: ${GEL_SPACING_DBL};
@@ -51,7 +51,7 @@ const Detects = styled.li`
   }
 `;
 
-const detectionExamples = ['display: grid', gridDetection];
+const detectionExamples = ['display: grid', grid];
 
 storiesOf('Utilities|Psammead Styles', module)
   .add(
