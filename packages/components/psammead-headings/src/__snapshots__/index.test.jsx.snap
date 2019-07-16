@@ -6,9 +6,10 @@ exports[`Headline component should render correctly 1`] = `
   line-height: 2rem;
   color: #3F3F42;
   font-family: ReithSerif,Helvetica,Arial,sans-serif;
+  font-weight: 500;
+  font-style: normal;
   margin: 0;
   padding: 2rem 0;
-  font-weight: 500;
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
@@ -43,10 +44,11 @@ exports[`Headline component should render correctly with arabic script typograph
   font-size: 2rem;
   line-height: 2.625rem;
   color: #3F3F42;
-  font-family: ReithSerif,Helvetica,Arial,sans-serif;
+  font-family: NassimPersian,Arial,Verdana,Geneva,Helvetica,sans-serif;
+  font-weight: 700;
+  font-style: normal;
   margin: 0;
   padding: 2rem 0;
-  font-weight: 500;
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
@@ -82,9 +84,11 @@ exports[`SubHeading component should render correctly 1`] = `
   line-height: 1.5rem;
   color: #3F3F42;
   font-family: ReithSans,Helvetica,Arial,sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  margin: 0;
   margin: 0;
   padding: 1.5rem 0;
-  font-weight: 700;
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
@@ -121,9 +125,11 @@ exports[`SubHeading component should render correctly with an ID 1`] = `
   line-height: 1.5rem;
   color: #3F3F42;
   font-family: ReithSans,Helvetica,Arial,sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  margin: 0;
   margin: 0;
   padding: 1.5rem 0;
-  font-weight: 700;
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
@@ -161,9 +167,11 @@ exports[`SubHeading component should render correctly with arabic script typogra
   line-height: 2.125rem;
   color: #3F3F42;
   font-family: ReithSans,Helvetica,Arial,sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  margin: 0;
   margin: 0;
   padding: 1.5rem 0;
-  font-weight: 700;
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
