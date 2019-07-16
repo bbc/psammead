@@ -87,7 +87,6 @@ exports[`SubHeading component should render correctly 1`] = `
   font-weight: 700;
   font-style: normal;
   margin: 0;
-  margin: 0;
   padding: 1.5rem 0;
 }
 
@@ -127,7 +126,6 @@ exports[`SubHeading component should render correctly with an ID 1`] = `
   font-family: ReithSans,Helvetica,Arial,sans-serif;
   font-weight: 700;
   font-style: normal;
-  margin: 0;
   margin: 0;
   padding: 1.5rem 0;
 }
@@ -169,7 +167,6 @@ exports[`SubHeading component should render correctly with arabic script typogra
   font-family: ReithSans,Helvetica,Arial,sans-serif;
   font-weight: 700;
   font-style: normal;
-  margin: 0;
   margin: 0;
   padding: 1.5rem 0;
 }
