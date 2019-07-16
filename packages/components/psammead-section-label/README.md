@@ -23,6 +23,7 @@ The only provided child should be the title for the section, provided as a _stri
 | dir | string | no | `'ltr'` | `'rtl'` |
 | labelId | string | yes | N/A | `top-stories-label` |
 | script | object | yes | N/A | { canon: { groupA: { fontSize: '28', lineHeight: '32',}, groupB: { fontSize: '32', lineHeight: '36' }, groupD: { fontSize: '44', lineHeight: '48' } }, trafalgar: { groupA: { fontSize: '20', lineHeight: '24' }, groupB: { fontSize: '24', lineHeight: '28' }, groupD: { fontSize: '32', lineHeight: '36' } } } |
+| service | string | yes | N/A | `'news'` |
 
 ## Usage
 
@@ -32,7 +33,12 @@ import { latin } from '@bbc/gel-foundations/scripts';
 
 const WrappingComponent = () => (
   <div aria-labelledby="example-section-label">
-    <SectionLabel script={latin} dir="ltr" labelId="example-section-label">
+    <SectionLabel
+      script={latin}
+      dir="ltr"
+      labelId="example-section-label"
+      service="news"
+    >
       Example section
     </SectionLabel>
   </div>
@@ -52,6 +58,7 @@ const WrappingComponent = () => (
       dir="ltr"
       bar={false}
       labelId="example-section-label"
+      service="news"
     >
       Example section
     </SectionLabel>
@@ -67,7 +74,13 @@ import { latin } from '@bbc/gel-foundations/scripts';
 
 const WrappingComponent = () => (
   <div aria-labelledby="example-section-label">
-    <SectionLabel script={latin} dir="ltr" visuallyHidden={true} labelId="example-section-label">
+    <SectionLabel
+      script={latin}
+      dir="ltr"
+      visuallyHidden={true}
+      labelId="example-section-label"
+      service="news"
+    >
       Example section
     </SectionLabel>
   </div>
