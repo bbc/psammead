@@ -24,7 +24,7 @@ storiesOf('Components|Timestamp', module)
   .addDecorator(dirDecorator)
   .add(
     'default',
-    () => {
+    ({ service }) => {
       const padding = boolean('Padding', true);
       const style = select('Typography', styles, 'Brevier');
       const typographyFunc = typography[`get${style}`];
@@ -35,6 +35,7 @@ storiesOf('Components|Timestamp', module)
           typographyFunc={typographyFunc}
           script={latin}
           padding={padding}
+          service={service}
         >
           {text('Timestamp Text', '7 July 2018')}
         </Timestamp>
@@ -44,7 +45,7 @@ storiesOf('Components|Timestamp', module)
   )
   .add(
     'with "updated" prefix',
-    () => {
+    ({ service }) => {
       const padding = boolean('Padding', true);
       const style = select('Typography', styles, 'Brevier');
       const typographyFunc = typography[`get${style}`];
@@ -55,6 +56,7 @@ storiesOf('Components|Timestamp', module)
           typographyFunc={typographyFunc}
           script={latin}
           padding={padding}
+          service={service}
         >
           {text('Timestamp Text', 'Updated 7 July 2018')}
         </Timestamp>

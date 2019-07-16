@@ -23,9 +23,10 @@ exports[`StoryPromo list should render correctly 1`] = `
   line-height: 1.25rem;
   color: #222222;
   font-family: ReithSerif,Helvetica,Arial,sans-serif;
+  font-weight: 700;
+  font-style: normal;
   margin: 0;
   padding-bottom: 0.5rem;
-  font-weight: 700;
 }
 
 .c7 {
@@ -33,6 +34,8 @@ exports[`StoryPromo list should render correctly 1`] = `
   line-height: 1.125rem;
   color: #3F3F42;
   font-family: ReithSans,Helvetica,Arial,sans-serif;
+  font-weight: 400;
+  font-style: normal;
   margin: 0;
   padding-bottom: 0.5rem;
 }
@@ -182,21 +185,21 @@ exports[`StoryPromo list should render correctly 1`] = `
 }
 
 <ul
-  className="c0"
+  class="c0"
   role="list"
 >
   <li
-    className="c1"
+    class="c1"
     role="listitem"
   >
     <div
-      className="c2"
+      class="c2"
     >
       <div
-        className="c3"
+        class="c3"
       >
         <div
-          className="c4"
+          class="c4"
         >
           <img
             alt="Alt text"
@@ -205,15 +208,15 @@ exports[`StoryPromo list should render correctly 1`] = `
         </div>
       </div>
       <div
-        className="c5"
+        class="c5"
       >
         <h3
-          className="c6"
+          class="c6"
         >
           The headline of the promo
         </h3>
         <p
-          className="c7"
+          class="c7"
         >
           The summary of the promo
         </p>

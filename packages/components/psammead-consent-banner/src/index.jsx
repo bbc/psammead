@@ -8,11 +8,7 @@ import {
   C_CONSENT_CONTENT,
   C_WHITE,
 } from '@bbc/psammead-styles/colours';
-import {
-  getGreatPrimer,
-  getLongPrimer,
-  GEL_FF_REITH_SANS,
-} from '@bbc/gel-foundations/typography';
+import { getGreatPrimer, getLongPrimer } from '@bbc/gel-foundations/typography';
 import {
   GEL_GROUP_3_SCREEN_WIDTH_MIN,
   GEL_GROUP_2_SCREEN_WIDTH_MIN,
@@ -24,9 +20,10 @@ import {
   GEL_SPACING_DBL,
   GEL_SPACING,
 } from '@bbc/gel-foundations/spacings';
+import { getSansRegular } from '@bbc/psammead-styles/font-styles';
 
 const Wrapper = styled.div`
-  font-family: ${GEL_FF_REITH_SANS};
+${({ service }) => getSansRegular(service)}
   background-color: ${C_CONSENT_BACKGROUND};
   padding: ${GEL_SPACING_DBL} ${GEL_MARGIN_BELOW_400PX};
 
@@ -146,8 +143,9 @@ export const ConsentBanner = ({
   id,
   hidden,
   script,
+  service,
 }) => (
-  <Wrapper id={id} hidden={hidden}>
+  <Wrapper id={id} hidden={hidden} service={service}>
     <CenterWrapper>
       <Title script={script}>{title}</Title>
       {text}
@@ -167,6 +165,7 @@ ConsentBanner.propTypes = {
   id: string,
   hidden: bool,
   script: shape(scriptPropType).isRequired,
+  service: string.isRequired,
 };
 
 ConsentBanner.defaultProps = {

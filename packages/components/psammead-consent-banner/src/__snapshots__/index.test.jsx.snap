@@ -3,6 +3,8 @@
 exports[`ConsentBanner should correctly render 1`] = `
 .c0 {
   font-family: ReithSans,Helvetica,Arial,sans-serif;
+  font-weight: 400;
+  font-style: normal;
   background-color: #323232;
   padding: 1rem 0.5rem;
 }
@@ -136,15 +138,14 @@ exports[`ConsentBanner should correctly render 1`] = `
 }
 
 <div
-  className="c0"
-  hidden={null}
+  class="c0"
   id="banner-id"
 >
   <div
-    className="c1"
+    class="c1"
   >
     <h2
-      className="c2"
+      class="c2"
     >
       We've updated our Privacy and Cookies Policy
     </h2>
@@ -152,10 +153,10 @@ exports[`ConsentBanner should correctly render 1`] = `
       Hello
     </p>
     <ul
-      className="c3"
+      class="c3"
     >
       <li
-        className="c4"
+        class="c4"
       >
         <button
           type="button"
@@ -164,7 +165,7 @@ exports[`ConsentBanner should correctly render 1`] = `
         </button>
       </li>
       <li
-        className="c4"
+        class="c4"
       >
         <a
           href="https://foobar.com"
@@ -180,6 +181,8 @@ exports[`ConsentBanner should correctly render 1`] = `
 exports[`ConsentBanner with hidden attribute on wrapper should correctly render 1`] = `
 .c0 {
   font-family: ReithSans,Helvetica,Arial,sans-serif;
+  font-weight: 400;
+  font-style: normal;
   background-color: #323232;
   padding: 1rem 0.5rem;
 }
@@ -313,15 +316,15 @@ exports[`ConsentBanner with hidden attribute on wrapper should correctly render 
 }
 
 <div
-  className="c0"
-  hidden={true}
+  class="c0"
+  hidden=""
   id="banner-id"
 >
   <div
-    className="c1"
+    class="c1"
   >
     <h2
-      className="c2"
+      class="c2"
     >
       We've updated our Privacy and Cookies Policy
     </h2>
@@ -329,10 +332,10 @@ exports[`ConsentBanner with hidden attribute on wrapper should correctly render 
       Hello
     </p>
     <ul
-      className="c3"
+      class="c3"
     >
       <li
-        className="c4"
+        class="c4"
       >
         <button
           type="button"
@@ -341,7 +344,7 @@ exports[`ConsentBanner with hidden attribute on wrapper should correctly render 
         </button>
       </li>
       <li
-        className="c4"
+        class="c4"
       >
         <a
           href="https://foobar.com"
@@ -395,7 +398,7 @@ exports[`ConsentBannerText should correctly render 1`] = `
 }
 
 <p
-  className="c0"
+  class="c0"
 >
   We have made some important changes to our Privacy and Cookies Policy and we want you to know what this means for you and your data.
 </p>

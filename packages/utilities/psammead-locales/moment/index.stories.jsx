@@ -79,16 +79,19 @@ locales.forEach(({ name, locale }) => {
     () => (
       <Fragment>
         <Table>
-          <tr>
-            <th>British English</th>
-            <th>{name}</th>
-          </tr>
-          {funcs.map(func => (
+          <tbody>
             <tr>
-              <td>{func('en-gb')}</td>
-              <td>{func(locale)}</td>
+              <th>British English</th>
+              <th>{name}</th>
             </tr>
-          ))}
+            {funcs.map((func, index) => (
+              /* eslint-disable react/no-array-index-key */
+              <tr key={index}>
+                <td>{func('en-gb')}</td>
+                <td>{func(locale)}</td>
+              </tr>
+            ))}
+          </tbody>
         </Table>
         <Paragraph>
           Spot an incorrect translation? Please write us a github issue{' '}

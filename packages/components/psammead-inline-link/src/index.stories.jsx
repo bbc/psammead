@@ -9,7 +9,7 @@ storiesOf('Components|InlineLink', module)
   .addDecorator(withKnobs)
   .add(
     'default',
-    inputProvider([{ name: 'Link text' }], ([linkText]) => (
+    inputProvider([{ name: 'Link text' }], ({ slotTexts: [linkText] }) => (
       <Fragment>
         <InlineLink href="https://www.bbc.com/news">{linkText}</InlineLink>
         <br />

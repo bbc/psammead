@@ -12,10 +12,11 @@ It uses `@bbc/psammead-styles` for colours and font family and `@bbc/gel-foundat
 
 ## Props
 
+<!-- prettier-ignore -->
 | Argument  | Type | Required | Default | Example |
 | --------- | ---- | -------- | ------- | ------- |
 | Script    | object | yes | latin | { canon: { groupA: { fontSize: '28', lineHeight: '32',}, groupB: { fontSize: '32', lineHeight: '36', }, groupD: { fontSize: '44', lineHeight: '48', }, }, trafalgar: { groupA: { fontSize: '20', lineHeight: '24', }, groupB: { fontSize: '24', lineHeight: '28', }, groupD: { fontSize: '32', lineHeight: '36', }, }, }|
-
+| service | string | yes | N/A | `'news'` |
 
 ## Usage
 
@@ -23,7 +24,11 @@ It uses `@bbc/psammead-styles` for colours and font family and `@bbc/gel-foundat
 import Paragraph from '@bbc/psammead-paragraph';
 import { latin } from '@bbc/gel-foundations/scripts';
 
-const WrappingComponent = () => <Paragraph script={latin}>Text here</Paragraph>;
+const WrappingComponent = () => (
+  <Paragraph script={latin} service="news">
+    Text here
+  </Paragraph>
+);
 ```
 
 ### When to use this component

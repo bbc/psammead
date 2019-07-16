@@ -10,6 +10,7 @@ exports[`Navigation should render correctly 1`] = `
   overflow: hidden;
   position: absolute;
   width: 1px;
+  margin: 0;
 }
 
 .c0 {
@@ -38,6 +39,8 @@ exports[`Navigation should render correctly 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   font-family: ReithSans,Helvetica,Arial,sans-serif;
+  font-weight: 400;
+  font-style: normal;
   font-size: 0.9375rem;
   line-height: 1.25rem;
 }
@@ -81,6 +84,8 @@ exports[`Navigation should render correctly 1`] = `
   font-size: 0.9375rem;
   line-height: 1.25rem;
   font-family: ReithSans,Helvetica,Arial,sans-serif;
+  font-weight: 400;
+  font-style: normal;
   color: #FDFDFD;
   cursor: pointer;
   -webkit-text-decoration: none;
@@ -114,6 +119,8 @@ exports[`Navigation should render correctly 1`] = `
   font-size: 0.9375rem;
   line-height: 1.25rem;
   font-family: ReithSans,Helvetica,Arial,sans-serif;
+  font-weight: 400;
+  font-style: normal;
   color: #FDFDFD;
   cursor: pointer;
   -webkit-text-decoration: none;
@@ -218,37 +225,37 @@ exports[`Navigation should render correctly 1`] = `
 }
 
 <nav
-  className="c0"
+  class="c0"
   role="navigation"
 >
   <div
-    className="c1"
+    class="c1"
   >
     <a
-      className="c2"
+      class="c2"
       href="#content"
     >
       Wụga n’ọdịnaya
     </a>
     <ul
-      className="c3"
+      class="c3"
       role="list"
     >
       <li
-        className="c4"
+        class="c4"
         dir="ltr"
         role="listitem"
       >
         <a
-          className="c5"
+          class="c5"
           href="/igbo"
         >
           <span
-            className="c6"
+            class="c6"
             role="text"
           >
             <span
-              className="c7"
+              class="c7"
             >
               Current page
               , 
@@ -258,36 +265,36 @@ exports[`Navigation should render correctly 1`] = `
         </a>
       </li>
       <li
-        className="c4"
+        class="c4"
         dir="ltr"
         role="listitem"
       >
         <a
-          className="c8"
+          class="c8"
           href="/igbo/egwuregwu"
         >
           Egwuregwu
         </a>
       </li>
       <li
-        className="c4"
+        class="c4"
         dir="ltr"
         role="listitem"
       >
         <a
-          className="c8"
+          class="c8"
           href="/igbo/media/video"
         >
           Ihe nkiri
         </a>
       </li>
       <li
-        className="c4"
+        class="c4"
         dir="ltr"
         role="listitem"
       >
         <a
-          className="c8"
+          class="c8"
           href="/igbo/popular/read"
         >
           Nke ka ewuewu

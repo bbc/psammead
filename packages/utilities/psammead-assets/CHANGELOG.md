@@ -3,6 +3,10 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 1.0.6   | [PR#1179](https://github.com/bbc/psammead/pull/1179) use `psammead-test-helpers@1.0.2`|
+| 1.0.5   | [PR#1082](https://github.com/bbc/psammead/pull/1082) Bump lodash security vulnerability |
+| 1.0.4   | [PR#783](https://github.com/bbc/psammead/pull/783) Update to latest psammead-test-helpers. Update snapshots. |
+| 1.0.3   | [PR#787](https://github.com/bbc/psammead/pull/787) Fix brand stories in Firefox high contrast mode |
 | 1.0.2   | [PR#713](https://github.com/bbc/psammead/pull/713) Update `styled-components` to 4.3.2 |
 | 1.0.1   | [PR#704](https://github.com/bbc/psammead/pull/704) Remove `fill` from SVGs |
 | 1.0.0   | [PR#679](https://github.com/bbc/psammead/pull/679) Bump version number |

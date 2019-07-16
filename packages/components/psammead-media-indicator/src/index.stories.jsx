@@ -14,45 +14,86 @@ const Page = styled.div`
 
 const PageDecorator = storyFn => <Page>{storyFn()}</Page>;
 
-storiesOf('Components|MediaIndicator', module)
+storiesOf('Components|MediaIndicator/Video', module)
   .addDecorator(PageDecorator)
   .addDecorator(withKnobs)
   .addDecorator(dirDecorator)
   .add(
     'video without duration',
-    () => <MediaIndicator offscreenText={text('offscreenText', 'Video')} />,
+    ({ service }) => (
+      <MediaIndicator
+        offscreenText={text('offscreenText', 'Video')}
+        service={service}
+      />
+    ),
     { notes },
   )
   .add(
     'video with duration',
-    () => (
+    ({ service }) => (
       <MediaIndicator
         duration={text('duration', '2:15')}
         datetime={text('datetime', 'PT2M15S')}
         offscreenText={text('offscreenText', 'Video')}
         type="video"
+        service={service}
+      />
+    ),
+    { notes },
+  )
+  .add(
+    'top story video with duration',
+    ({ service }) => (
+      <MediaIndicator
+        duration={text('duration', '2:15')}
+        datetime={text('datetime', 'PT2M15S')}
+        offscreenText={text('offscreenText', 'Video')}
+        type="video"
+        topStory
+        service={service}
+      />
+    ),
+    { notes },
+  );
+
+storiesOf('Components|MediaIndicator/Audio', module)
+  .addDecorator(PageDecorator)
+  .addDecorator(withKnobs)
+  .addDecorator(dirDecorator)
+  .add(
+    'audio without duration',
+    ({ service }) => (
+      <MediaIndicator
+        offscreenText={text('offscreenText', 'Audio')}
+        type="audio"
+        service={service}
       />
     ),
     { notes },
   )
   .add(
     'audio with duration',
-    () => (
+    ({ service }) => (
       <MediaIndicator
         offscreenText={text('offscreenText', 'Audio')}
         duration={text('duration', '2:15')}
         datetime={text('datetime', 'PT2M15S')}
         type="audio"
+        service={service}
       />
     ),
     { notes },
   )
   .add(
-    'audio without duration',
-    () => (
+    'top story audio with duration',
+    ({ service }) => (
       <MediaIndicator
         offscreenText={text('offscreenText', 'Audio')}
+        duration={text('duration', '2:15')}
+        datetime={text('datetime', 'PT2M15S')}
         type="audio"
+        topStory
+        service={service}
       />
     ),
     { notes },

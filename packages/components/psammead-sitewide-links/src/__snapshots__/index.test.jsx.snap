@@ -50,6 +50,8 @@ exports[`SitewideLinks should render correctly 1`] = `
   font-size: 0.875rem;
   line-height: 1rem;
   font-family: ReithSans,Helvetica,Arial,sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .c1 {
@@ -138,115 +140,115 @@ exports[`SitewideLinks should render correctly 1`] = `
 }
 
 <div
-  className="c0"
+  class="c0"
 >
   <div
-    className="c1"
+    class="c1"
   >
     <ul
-      className="c2"
+      class="c2"
       role="list"
     >
       <li
-        className="c3"
+        class="c3"
         role="listitem"
       >
         <a
-          className="c4 c5"
+          class="c4 c5"
           href="https://www.bbc.co.uk/news"
         >
           <span
-            className="c6"
+            class="c6"
           >
             Link
           </span>
         </a>
       </li>
       <li
-        className="c3"
+        class="c3"
         role="listitem"
       >
         <a
-          className="c4 c5"
+          class="c4 c5"
           href="https://www.bbc.co.uk/news"
         >
           <span
-            className="c6"
+            class="c6"
           >
             Link
           </span>
         </a>
       </li>
       <li
-        className="c3"
+        class="c3"
         role="listitem"
       >
         <a
-          className="c4 c5"
+          class="c4 c5"
           href="https://www.bbc.co.uk/news"
         >
           <span
-            className="c6"
+            class="c6"
           >
             Link
           </span>
         </a>
       </li>
       <li
-        className="c3"
+        class="c3"
         role="listitem"
       >
         <a
-          className="c4 c5"
+          class="c4 c5"
           href="https://www.bbc.co.uk/news"
         >
           <span
-            className="c6"
+            class="c6"
           >
             Link
           </span>
         </a>
       </li>
       <li
-        className="c3"
+        class="c3"
         role="listitem"
       >
         <a
-          className="c4 c5"
+          class="c4 c5"
           href="https://www.bbc.co.uk/news"
         >
           <span
-            className="c6"
+            class="c6"
           >
             Link
           </span>
         </a>
       </li>
       <li
-        className="c3"
+        class="c3"
         role="listitem"
       >
         <a
-          className="c4 c5"
+          class="c4 c5"
           href="https://www.bbc.co.uk/news"
         >
           <span
-            className="c6"
+            class="c6"
           >
             Link
           </span>
         </a>
       </li>
       <li
-        className="c3"
+        class="c3"
         role="listitem"
       >
         <a
-          className="c4 c5"
+          class="c4 c5"
           href="https://www.bbc.co.uk/news"
         >
           <span
-            className="c6"
+            class="c6"
           >
             Link
           </span>
@@ -254,15 +256,15 @@ exports[`SitewideLinks should render correctly 1`] = `
       </li>
     </ul>
     <p
-      className="c7"
+      class="c7"
     >
       Text here. 
       <a
-        className="c4 c8"
+        class="c4 c8"
         href="https://www.bbc.co.uk/news"
       >
         <span
-          className="c6"
+          class="c6"
         >
           Link
         </span>
