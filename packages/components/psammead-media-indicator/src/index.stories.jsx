@@ -98,3 +98,13 @@ storiesOf('Components|MediaIndicator/Audio', module)
     ),
     { notes },
   );
+
+storiesOf('Components|MediaIndicator/Photo', module)
+  .addDecorator(PageDecorator)
+  .addDecorator(withKnobs)
+  .addDecorator(dirDecorator)
+  .add(
+    'photogallery',
+    ({ service }) => <MediaIndicator type="photogallery" service={service} />,
+    { notes },
+  );

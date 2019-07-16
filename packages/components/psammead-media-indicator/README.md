@@ -2,7 +2,7 @@
 
 ## Description
 
-The `MediaIndicator` component provides a 'play' or 'audio' icon as well as a duration timestamp depending on the `type` prop. The component by default renders the 'play' icon. This component has options for both providing and not providing a duration. If one isn't provided, it will simply render the play or audio icon. Offscreen text should be used to describe the media type, i.e. `'Audio'` or `'Video'`. It should not be played due to nesting inside an element marked as `aria-hidden="true"`, but will provide a fallback for those user agents which have incomplete aria support.
+The `MediaIndicator` component provides a 'play', 'audio' or 'camera' icon as well as an optional duration timestamp depending on the `type` prop. The component by default renders the 'play' icon. This component has options for both providing and not providing a duration. If one isn't provided, it will simply render the play, audio or camera icon.
 
 ## Installation
 
@@ -19,6 +19,15 @@ The `MediaIndicator` component provides a 'play' or 'audio' icon as well as a du
 | type          | string | No       | 'video' | 'audio'                      |
 | topStory      | boolean | No      | false   | true                         |
 | service | string | Yes | N/A | `'news'` |
+
+### Supported `type`s
+
+<!-- prettier-ignore -->
+| type             | icon |
+| ---------------- | ---- |
+| `'video'`        | <svg viewBox="0 0 32 32" width="12px" height="12px" focusable="false"><polygon points="3,32 29,16 3,0"></polygon></svg> |
+| `'audio'`        | <svg viewBox="0 0 13 12" width="13px" height="12px" focusable="false"><path d="M9.021 1.811l-.525.525c.938.938 1.5 2.25 1.5 3.675s-.563 2.738-1.5 3.675l.525.525c1.05-1.087 1.725-2.55 1.725-4.2s-.675-3.112-1.725-4.2z"></path><path d="M10.596.199l-.525.562c1.35 1.35 2.175 3.225 2.175 5.25s-.825 3.9-2.175 5.25l.525.525c1.5-1.462 2.4-3.525 2.4-5.775s-.9-4.312-2.4-5.812zM6.996 1.511l-2.25 2.25H.996v4.5h3.75l2.25 2.25z"></path></svg> |
+| `'photogallery'` | <svg viewBox="0 0 32 26" width="16px" height="13px" focusable="false"><path d="M9,2V0H4V2H0V26H32V2ZM6.5,10A2.5,2.5,0,1,1,9,7.52,2.5,2.5,0,0,1,6.5,10ZM20,23a9,9,0,1,1,9-9A9,9,0,0,1,20,23Z"></path><circle cx="20" cy="14.02" r="5.5"></circle></svg> |
 
 ## Usage
 
@@ -40,13 +49,13 @@ import MediaIndicator from '@bbc/psammead-media-indicator';
 
 ### When to use this component
 
-The `MediaIndicator` component is designed to be used on top of an image which is linking to a page containing a video or audio based on that image. It tells the user to expect a video or audio on the page as well as how long it is in duration.
+The `MediaIndicator` component is designed to be used on top of an image which is linking to a page containing a video, audio or photo item based on that image. It tells the user to expect video, audio or photographic content on the page as well as how long it is in duration if applicable.
 
 <!-- ### When not to use this component -->
 
 ### Accessibility notes
 
-This component is marked as `aria-hidden="true"`, which means that it should be ignored by screenreaders. It is intended that media promos provide information about their content such as duration in visually hidden text in the promo headline. This component does provide some offscreen text for those user agents which have incomplete aria support, in an attempt to provide context about the timestamp contained in this component.
+This component is marked as `aria-hidden="true"`, which means that it should be ignored by screenreaders. It is expected that media promos provide detailed information about their content such as duration in visually hidden text in the promo headline.
 
 <!-- ## Roadmap -->
 
