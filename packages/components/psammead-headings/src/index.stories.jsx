@@ -11,8 +11,10 @@ storiesOf('Components|Headline', module)
     'default',
     inputProvider(
       [{ name: 'Headline' }],
-      ({ slotTexts: [headline], script }) => (
-        <Headline script={script}>{headline}</Headline>
+      ({ slotTexts: [headline], script, service }) => (
+        <Headline script={script} service={service}>
+          {headline}
+        </Headline>
       ),
     ),
     { notes, knobs: { escapeHTML: false } },
@@ -24,8 +26,10 @@ storiesOf('Components|SubHeading', module)
     'default',
     inputProvider(
       [{ name: 'SubHeading' }],
-      ({ slotTexts: [subheader], script }) => (
-        <SubHeading script={script}>{subheader}</SubHeading>
+      ({ slotTexts: [subheader], script, service }) => (
+        <SubHeading script={script} service={service}>
+          {subheader}
+        </SubHeading>
       ),
     ),
     { notes, knobs: { escapeHTML: false } },
@@ -34,10 +38,10 @@ storiesOf('Components|SubHeading', module)
     'with optional ID',
     inputProvider(
       [{ name: 'SubHeading' }],
-      ({ slotTexts: [subheader], script }) => {
+      ({ slotTexts: [subheader], script, service }) => {
         const id = text('ID', 'foo', 'Other');
         return (
-          <SubHeading id={id} script={script}>
+          <SubHeading id={id} script={script} service={service}>
             {subheader}
           </SubHeading>
         );
