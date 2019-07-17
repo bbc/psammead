@@ -37,6 +37,7 @@
   "homepage": "https://github.com/bbc/psammead#readme",
   "dependencies": {
     "@bbc/psammead-styles": "^1.0.0",
+    "simple-git": "^1.121.0",
     "styled-components": "^4.3.2",
     "styled-normalize": "^8.0.4"
   },
