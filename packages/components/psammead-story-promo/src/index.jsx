@@ -1,6 +1,6 @@
 import React from 'react';
 import styled, { css } from 'styled-components';
-import { node, bool, string } from 'prop-types';
+import { node, bool, string, oneOf } from 'prop-types';
 import {
   GEL_SPACING,
   GEL_SPACING_DBL,
@@ -261,14 +261,19 @@ const StyledLiveLabel = styled.span`
   ${({ service }) => getSansBold(service)}
 `;
 
-export const LiveLabel = ({ service }) => (
-  <StyledLiveLabel service={service} lang="en-GB">
+export const LiveLabel = ({ service, dir }) => (
+  <StyledLiveLabel service={service} lang="en-GB" dir={dir}>
     LIVE{' '}
   </StyledLiveLabel>
 );
 
 LiveLabel.propTypes = {
   service: string.isRequired,
+  dir: oneOf(['ltr', 'rtl']),
+};
+
+LiveLabel.defaultProps = {
+  dir: 'ltr',
 };
 
 const StoryPromo = ({ image, info, mediaIndicator, topStory }) => (

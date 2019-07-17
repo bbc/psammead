@@ -16,10 +16,11 @@ const InfoComponent = ({
   topStory,
   service,
   isLive,
+  dir,
 }) => (
   <Fragment>
     <Headline script={script} topStory={topStory} service={service}>
-      {isLive && <LiveLabel service={service} />}
+      {isLive && <LiveLabel service={service} dir={dir} />}
       <Link href="https://www.bbc.co.uk/news">{headlineText}</Link>
     </Headline>
     <Summary script={script} topStory={topStory} service={service}>
@@ -59,7 +60,7 @@ const MediaIndicatorComponent = (
 const generateStory = ({ mediaIndicator, topStory, isLive }) =>
   inputProvider(
     [{ name: 'Headline' }, { name: 'Summary' }],
-    ({ slotTexts: [headlineText, summaryText], script, service }) => {
+    ({ slotTexts: [headlineText, summaryText], script, service, dir }) => {
       const Info = (
         <InfoComponent
           headlineText={headlineText}
@@ -68,6 +69,7 @@ const generateStory = ({ mediaIndicator, topStory, isLive }) =>
           topStory={topStory}
           service={service}
           isLive={isLive}
+          dir={dir}
         />
       );
 

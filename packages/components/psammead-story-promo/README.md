@@ -44,6 +44,7 @@ The `LiveLabel` component is to be used inside the `Headline` in index pages to 
 | Argument  | Type | Required | Default | Example |
 | --------- | ---- | -------- | ------- | ------- |
 | service | string | yes | N/A | `'news'` |
+| dir | string | no | `'ltr'` | `'rtl'` |
 
 ## Usage
 

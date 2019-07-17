@@ -743,6 +743,7 @@ exports[`StoryPromo should render Live promo correctly 1`] = `
     >
       <span
         class="c5"
+        dir="ltr"
         lang="en-GB"
       >
         LIVE
