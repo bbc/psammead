@@ -39,6 +39,11 @@ describe('MediaIndicator', () => {
     'should render audio correctly without duration details',
     <MediaIndicator offscreenText="Audio" type="audio" service="news" />,
   );
+
+  shouldMatchSnapshot(
+    'should render photogallery correctly',
+    <MediaIndicator type="photogallery" service="news" />,
+  );
 });
 
 describe('MediaIndicator - Top Story', () => {
