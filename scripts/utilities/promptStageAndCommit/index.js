@@ -1,6 +1,6 @@
 const { prompt } = require('enquirer');
 
-module.exports = async args => {
+module.exports = async ([packageNames, paths]) => {
   try {
     const { shouldCommitChanges } = await prompt({
       type: 'toggle',
@@ -9,7 +9,7 @@ module.exports = async args => {
       enabled: 'Yes',
       disabled: 'No',
     });
-    return { ...args, shouldCommitChanges };
+    return { packageNames, paths, shouldCommitChanges };
   } catch (error) {
     return Promise.reject(error);
   }

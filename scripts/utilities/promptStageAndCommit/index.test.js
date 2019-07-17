@@ -5,13 +5,13 @@ jest.mock('enquirer', () => ({
   prompt: jest.fn(),
 }));
 
-const args = {
-  packageNames: ['psammead-brand', 'psammead-image'],
-  paths: [
+const args = [
+  ['psammead-brand', 'psammead-image'],
+  [
     '/psammead/packages/components/psammead-brand',
     '/psammead/packages/components/psammead-image',
   ],
-};
+];
 
 beforeEach(() => {
   prompt.mockResolvedValue({ shouldCommitChanges: true });
