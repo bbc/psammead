@@ -8,11 +8,10 @@ jest.mock('child_process', () => ({
 describe('readFile', () => {
   it('should stage the file', async () => {
     stageFile('/psammead/packages/components/psammead-brand');
-    const [[command, { cwd }]] = execSync.mock.calls;
+    const [[command]] = execSync.mock.calls;
 
     expect(command).toEqual(
       'git add /psammead/packages/components/psammead-brand',
     );
-    expect(cwd).toMatch(/\/psammead$/);
   });
 });
