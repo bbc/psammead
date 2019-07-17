@@ -2,6 +2,8 @@
   "name": "@bbc/psammead-headings",
   "version": "3.0.0",
   "main": "dist/index.js",
+  "module": "esm/index.js",
+  "sideEffects": false,
   "description": "React styled components for a Headline and SubHeading",
   "repository": {
     "type": "git",

@@ -1,7 +1,9 @@
 {
   "name": "@bbc/psammead-story-promo",
-  "version": "2.0.4",
+  "version": "2.1.0",
   "main": "dist/index.js",
+  "module": "esm/index.js",
+  "sideEffects": false,
   "description": "A story promo for use on index pages",
   "repository": {
     "type": "git",
