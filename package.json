@@ -109,7 +109,9 @@
     "testMatch": [
       "**/*.test.{js,jsx}"
     ],
-    "setupFiles": ["<rootDir>/node_modules/regenerator-runtime/runtime"]
+    "setupFiles": [
+      "<rootDir>/node_modules/regenerator-runtime/runtime"
+    ]
   },
   "spec": {
     "prune": false,
