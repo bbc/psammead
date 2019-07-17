@@ -1,6 +1,13 @@
 const { writeFile } = require('fs');
 const writeChangelog = require('./writeChangelog');
 
+const {
+  EXISTING_CHANGELOG_CONTENT1,
+  EXISTING_CHANGELOG_CONTENT2,
+  EXPECTED_NEW_CHANGELOG_CONTENT1,
+  EXPECTED_NEW_CHANGELOG_CONTENT2,
+} = require('./mockChangelogs');
+
 jest.mock('fs', () => ({
   writeFile: jest.fn(),
 }));
@@ -8,31 +15,22 @@ jest.mock('fs', () => ({
 const getNewChangelogContent = require('./getNewChangelogContent');
 const getChangelogCommitMessage = require('./getChangelogCommitMessage');
 
-const EXISTING_CHANGELOG_CONTENT = `
-# Mock Psammead Changelog
-
-| Version | Description |
-|---------|-------------|
-| 1.0.0 | [PR#1023](https://github.com/bbc/psammead/pull/1) mock changes |
-`;
-
 describe('bumpChangelogs', () => {
-  it('should return the changelog content', () => {
-    const actual = getNewChangelogContent(
+  it('should return the new changelog content', () => {
+    const newChangelog1 = getNewChangelogContent(
       '1.0.1',
       'https://github.com/bbc/psammead/pull/10',
       'mock changes',
-    )(EXISTING_CHANGELOG_CONTENT);
-    const NEW_CHANGELOG_CONTENT = `
-# Mock Psammead Changelog
+    )(EXISTING_CHANGELOG_CONTENT1);
 
-| Version | Description |
-|---------|-------------|
-| 1.0.1 | [PR#10](https://github.com/bbc/psammead/pull/10) mock changes |
-| 1.0.0 | [PR#1023](https://github.com/bbc/psammead/pull/1) mock changes |
-`;
+    const newChangelog2 = getNewChangelogContent(
+      '1.0.1',
+      'https://github.com/bbc/psammead/pull/10',
+      'mock changes',
+    )(EXISTING_CHANGELOG_CONTENT2);
 
-    expect(actual).toEqual(NEW_CHANGELOG_CONTENT);
+    expect(newChangelog1).toEqual(EXPECTED_NEW_CHANGELOG_CONTENT1);
+    expect(newChangelog2).toEqual(EXPECTED_NEW_CHANGELOG_CONTENT2);
   });
 
   it('should return the changelog commit message for multiple packages', () => {
