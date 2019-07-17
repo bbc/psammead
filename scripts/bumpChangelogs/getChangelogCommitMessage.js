@@ -5,5 +5,5 @@ module.exports = packageNames => {
   }`;
   const getMessage = () => `Updates changelogs for ${packageNames.join(', ')}`;
 
-  return `${headline}\n\n${hasMultiplePackages ? getMessage() : ''}`;
+  return `${headline}${hasMultiplePackages ? `\n\n${getMessage()}` : ''}`;
 };
