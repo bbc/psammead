@@ -1,10 +1,11 @@
 module.exports = packageNames => {
   const hasMultiplePackages = packageNames.length > 1;
-  const headline = `Bump package version${
-    hasMultiplePackages ? 's' : ` for ${packageNames[0]}`
-  }`;
-  const getMessage = () =>
-    `Bump package versions for ${packageNames.join(', ')}`;
 
-  return `${headline}${hasMultiplePackages ? `\n\n${getMessage()}` : ''}`;
+  const message = hasMultiplePackages
+    ? `Bump package versions\n\nBump package versions for ${packageNames.join(
+        ', ',
+      )}`
+    : `Bump package version for ${packageNames[0]}`;
+
+  return message;
 };
