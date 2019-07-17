@@ -3,5 +3,5 @@ const path = require('path');
 
 module.exports = filePath =>
   execSync(`git add ${filePath}`, {
-    cwd: path.resolve(__dirname, '../../'),
+    cwd: path.resolve(__dirname, '../../../'),
   });
