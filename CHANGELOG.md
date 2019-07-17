@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 1.4.0  | [PR#1212](https://github.com/bbc/psammead/pull/1212) Add export default from babel plugin |
 | 1.3.0  | [PR#1183](https://github.com/bbc/psammead/pull/1183) Build es modules from all packages |
 | 1.2.9  | [PR#1083](https://github.com/bbc/psammead/pull/1083) Bump babel, eslint-config-airbnb and husky dependancy |
 | 1.2.8  | [PR#1082](https://github.com/bbc/psammead/pull/1082) Bump lodash security vulnerability |

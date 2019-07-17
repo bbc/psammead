@@ -1,7 +1,9 @@
 {
   "name": "@bbc/psammead-storybook-helpers",
-  "version": "3.2.0",
+  "version": "3.3.0",
   "main": "dist/index.js",
+  "module": "esm/index.js",
+  "sideEffects": false,
   "description": "A collection of common values that are used in storybook by the Psammead components.",
   "repository": {
     "type": "git",
