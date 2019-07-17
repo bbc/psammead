@@ -38,7 +38,10 @@ module.exports = {
     // used by Jest
     test: {
       presets,
-      plugins: ['@babel/plugin-transform-modules-commonjs'],
+      plugins: [
+        '@babel/plugin-transform-modules-commonjs',
+        '@babel/plugin-transform-runtime',
+      ],
     },
   },
 };

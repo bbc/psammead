@@ -25,6 +25,7 @@
     "test:lint": "eslint --ext .js,jsx,json ./packages ./scripts",
     "test:lint:css": "stylelint 'packages/**/*.js' 'packages/**/*.jsx' 'scripts/**/*.js'",
     "test:unit": "npm run build && jest --verbose --coverage",
+    "test:unit:watch": "npm run build && jest --verbose --coverage --watch",
     "updateSnapshots": "npm run ci:packages && npm run test:unit -- -u"
   },
   "repository": {
@@ -45,6 +46,7 @@
   "devDependencies": {
     "@babel/cli": "^7.2.0",
     "@babel/core": "^7.5.4",
+    "@babel/plugin-transform-runtime": "^7.5.0",
     "@babel/preset-env": "^7.5.4",
     "@babel/preset-react": "^7.0.0",
     "@bbc/psammead-assets": "^0.1.3",

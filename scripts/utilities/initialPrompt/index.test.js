@@ -1,10 +1,9 @@
+const { prompt } = require('enquirer');
 const initialPrompt = require('.');
 
 jest.mock('enquirer', () => ({
   prompt: jest.fn().mockReturnValue({ then: jest.fn() }),
 }));
-// eslint-disable-next-line import/order
-const { prompt } = require('enquirer');
 
 describe('getPackages', () => {
   initialPrompt('mock message');
