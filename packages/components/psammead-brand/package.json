@@ -1,7 +1,9 @@
 {
   "name": "@bbc/psammead-brand",
-  "version": "4.1.12",
+  "version": "4.2.0",
   "main": "dist/index.js",
+  "module": "esm/index.js",
+  "sideEffects": false,
   "description": "Provides the BBC News logo (as SVG), nested a hardcoded link to https://www.bbc.co.uk/news",
   "repository": {
     "type": "git",
