@@ -10,9 +10,7 @@ describe('getPackages', () => {
   const [[{ message, type }]] = prompt.mock.calls;
 
   it('should call prompt api with the correct message', () => {
-    expect(message).toEqual(
-      'Which package(s) changelog would you like to bump?',
-    );
+    expect(message).toEqual('Select package(s) with space bar then hit enter');
   });
 
   it('should request the "multiselect" prompt type', () => {

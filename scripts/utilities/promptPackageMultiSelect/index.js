@@ -5,5 +5,5 @@ module.exports = choices =>
     choices,
     type: 'multiselect',
     name: 'packageNames',
-    message: 'Which package(s) changelog would you like to bump?',
+    message: 'Select package(s) with space bar then hit enter',
   });
