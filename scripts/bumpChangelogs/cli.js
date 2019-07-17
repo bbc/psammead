@@ -2,7 +2,7 @@ const { prompt } = require('enquirer');
 const initialPrompt = require('../utilities/initialPrompt');
 const stageFile = require('../utilities/stageFile');
 const commitChanges = require('../utilities/commitChanges');
-const getChangelogCommitMessage = require('../utilities/getChangelogCommitMessage');
+const getChangelogCommitMessage = require('./getChangelogCommitMessage');
 const bumpChangelogs = require('.');
 const promptStageAndCommit = require('../utilities/promptStageAndCommit');
 

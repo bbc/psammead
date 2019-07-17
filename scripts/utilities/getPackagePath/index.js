@@ -1,4 +1,4 @@
-const getPackages = require('../utilities/getPackages');
+const getPackages = require('../getPackages');
 
 module.exports = packageName => {
   const matchesPath = packagePath =>

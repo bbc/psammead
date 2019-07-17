@@ -1,7 +1,7 @@
-const getNewChangelogContent = require('../utilities/getNewChangelogContent.js');
-const getPackagePath = require('../utilities/getPackagePath.js');
-const writeChangelog = require('../utilities/writeChangelog.js');
-const readFile = require('../utilities/readFile.js');
+const getNewChangelogContent = require('./getNewChangelogContent');
+const getPackagePath = require('../utilities/getPackagePath');
+const writeChangelog = require('../utilities/writeChangelog');
+const readFile = require('../utilities/readFile');
 
 const CHANGELOG = 'CHANGELOG.md';
 

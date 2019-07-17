@@ -3,7 +3,7 @@ const bumpPackages = require('.');
 const initialPrompt = require('../utilities/initialPrompt');
 const stageFile = require('../utilities/stageFile');
 const commitChanges = require('../utilities/commitChanges');
-const getVersionBumpCommitMessage = require('../utilities/getVersionBumpCommitMessage');
+const getVersionBumpCommitMessage = require('./getVersionBumpCommitMessage');
 const promptStageAndCommit = require('../utilities/promptStageAndCommit');
 
 const promptVersion = async ({ packageNames }) => {
