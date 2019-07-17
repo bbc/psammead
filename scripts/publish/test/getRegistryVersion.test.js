@@ -3,14 +3,25 @@ const getRegistry = require('../src/getRegistryVersion');
 
 // jest.mock('npm-registry-client');
 
-jest.mock('npm-registry-client', () => () => ({
-  RegClient: {
-    get: jest.fn((x, y) => ['1.0.0', '1.1.0', '1.1.1']),
-  },
-}));
+// jest.mock('npm-registry-client', () => () => ({
+//   RegClient: {
+//     get: jest.fn((x, y) => ['1.0.0', '1.1.0', '1.1.1']),
+//   },
+// }));
+
+jest.mock(
+  'npm-registry-client',
+  () =>
+    class {
+      // eslint-disable-next-line class-methods-use-this
+      get() {
+        return ['1.0.0', '1.1.0', '1.1.1'];
+      }
+    },
+);
 
 /* eslint-disable global-require */
-describe(`Publish Script - getRegistry`, async () => {
+describe(`Publish Script - getRegistry`, () => {
   beforeEach(async () => {
     // jest.resetModules();
   });
