@@ -52,9 +52,6 @@
     "@storybook/react": "^5.1.9",
     "@storybook/theming": "^5.1.9",
     "@testing-library/react": "^8.0.4",
-    "babel-core": "^7.0.0-bridge.0",
-    "babel-eslint": "^10.0.2",
-    "babel-loader": "^8.0.4",
     "babel-plugin-styled-components": "1.10.6",
     "chalk": "^2.4.1",
     "eslint": "^5.9.0",
@@ -104,7 +101,8 @@
     ],
     "testMatch": [
       "**/*.test.{js,jsx}"
-    ]
+    ],
+    "setupFiles": ["<rootDir>/node_modules/regenerator-runtime/runtime"]
   },
   "spec": {
     "prune": false,

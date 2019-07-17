@@ -25,41 +25,31 @@ const getSlackNotificationMock = () => {
 
 const packageJson = { name: '@foo/psammead-foobar', version: '0.1.2' };
 
-let attempted = {};
-
 describe(`Publish Script - publish`, () => {
   beforeEach(() => {
     jest.resetModules();
     console.log = jest.fn();
-
-    attempted = { success: [], failure: [] };
   });
 
-  it('runs correct publish command and publish is successful ', () => {
+  it('runs correct publish command and publish is successful ', async () => {
     const shelljs = getSuccessfulShellJsMock();
     const slackNotification = getSlackNotificationMock();
     const publish = require('../src/publish');
 
-    publish('/foo/bar', packageJson, attempted);
+    const result = await publish('/foo/bar', packageJson);
 
     expect(shelljs.exec).toHaveBeenCalledWith(
       'npm publish /foo/bar --access public --tag latest',
       { silent: true },
     );
 
-    const expectedOutput = [
-      'Publishing @foo/psammead-foobar',
-      'Successfully published @foo/psammead-foobar',
-    ];
+    const expectedOutput = {
+      packageReleaseTag: '@foo/psammead-foobar@0.1.2',
+      status: true,
+      failure: false,
+    };
 
-    expectedOutput.forEach((element, index) => {
-      expect(stripAnsi(console.log.mock.calls[index][0])).toEqual(
-        expect.stringContaining(element),
-      );
-    });
-
-    expect(attempted.success.length).toEqual(1);
-    expect(attempted.success[0]).toEqual('@foo/psammead-foobar@0.1.2');
+    expect(result).toEqual(expectedOutput);
 
     expect(slackNotification).toHaveBeenCalledWith(
       '@foo/psammead-foobar@0.1.2',
@@ -72,7 +62,7 @@ describe(`Publish Script - publish`, () => {
     const slackNotification = getSlackNotificationMock();
     const publish = require('../src/publish');
 
-    publish('/foo/bar', packageJson, attempted);
+    publish('/foo/bar', packageJson);
 
     expect(shelljs.exec).toHaveBeenCalledWith(
       'npm publish /foo/bar --access public --tag latest',
@@ -89,9 +79,6 @@ describe(`Publish Script - publish`, () => {
         expect.stringContaining(element),
       );
     });
-
-    expect(attempted.failure.length).toEqual(1);
-    expect(attempted.failure[0]).toEqual('@foo/psammead-foobar@0.1.2');
 
     expect(slackNotification).toHaveBeenCalledWith(
       '@foo/psammead-foobar@0.1.2',

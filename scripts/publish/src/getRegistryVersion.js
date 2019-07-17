@@ -18,6 +18,9 @@ const checkPackage = name => {
 };
 
 const client = new RegClient();
+console.log(client);
+console.log(client.get);
+
 const get = util.promisify(client.get.bind(client));
 // Get version of package in NPM regsitry. Returns 0.0.0 if doesn't exist.
 module.exports = async name => {
