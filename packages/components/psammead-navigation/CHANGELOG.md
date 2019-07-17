@@ -3,6 +3,9 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 2.1.0 | [PR#1233](https://github.com/bbc/psammead/pull/1233) Add ESM modules entry |
+| 2.0.1   | [PR#1182](https://github.com/bbc/psammead/pull/1182) Bump dependencies |
+| 2.0.0 | [PR#1027](https://github.com/bbc/psammead/pull/1027) Apply font based on service prop |
 | 1.0.6   | [PR#1082](https://github.com/bbc/psammead/pull/1082) Bump lodash security vulnerability |
 | 1.0.5   | [PR#1038](https://github.com/bbc/psammead/pull/1038) Bump dependencies |
 | 1.0.4   | [PR#892](https://github.com/bbc/psammead/pull/892) Bump dependencies |

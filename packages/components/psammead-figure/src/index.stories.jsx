@@ -31,7 +31,7 @@ storiesOf('Components|Figure', module)
   )
   .add(
     'containing Image, ImagePlaceholder, Copyright and Caption',
-    inputProvider([{ name: 'Caption' }], ({ slotTexts: [caption] }) => (
+    inputProvider([{ name: 'Caption' }], ({ slotTexts: [caption], script }) => (
       <Figure>
         <ImagePlaceholder ratio={imageRatio}>
           <Image alt={imageAlt} src={imageSrc} width={imageWidth} />
@@ -54,9 +54,9 @@ storiesOf('Components|Figure', module)
               'Visually Hidden Caption',
             )}
           </VisuallyHiddenText>
-          <Paragraph>{caption}</Paragraph>
-          <Paragraph>{caption}</Paragraph>
-          <Paragraph>{caption}</Paragraph>
+          <Paragraph script={script}>{caption}</Paragraph>
+          <Paragraph script={script}>{caption}</Paragraph>
+          <Paragraph script={script}>{caption}</Paragraph>
         </Caption>
       </Figure>
     )),

@@ -94,6 +94,7 @@ storiesOf('Containers|TimestampContainer', module)
       isRelative={boolean('isRelative', false)}
       script={latin}
       locale={select('locale', locales, locales[0])}
+      service="news"
     />
   ))
   .add('with prefix', () => (
@@ -105,6 +106,7 @@ storiesOf('Containers|TimestampContainer', module)
       prefix={text('Prefix text', 'Updated')}
       script={latin}
       locale={select('locale', locales, locales[0])}
+      service="news"
     />
   ))
   .add('with prefix and suffix', () => (
@@ -117,5 +119,17 @@ storiesOf('Containers|TimestampContainer', module)
       suffix={text('Suffix text', 'is date of last update')}
       script={latin}
       locale={select('locale', locales, locales[0])}
+      service="news"
+    />
+  ))
+  .add('with locale', () => (
+    <Timestamp
+      timestamp={number('Unix timestamp', 1530947227000)}
+      dateTimeFormat="YYYY-MM-DD"
+      format="D MMMM YYYY, HH:mm z"
+      isRelative={boolean('isRelative', false)}
+      script={latin}
+      locale={select('locale', locales, locales[0])}
+      service="persian"
     />
   ));

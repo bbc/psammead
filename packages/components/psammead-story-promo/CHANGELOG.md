@@ -3,6 +3,9 @@
 <!-- prettier-ignore -->
 | Version | Description |
 | ------- | ----------- |
+| 2.1.0 | [PR#1233](https://github.com/bbc/psammead/pull/1233) Add ESM modules entry |
+| 2.0.4   |  [PR#1089](https://github.com/bbc/psammead/pull/1089) Remove extra margin from 1st story promo |
+| 2.0.3  | [PR#1182](https://github.com/bbc/psammead/pull/1182) Bump dependencies and update test/story to have `service` prop |
 | 2.0.2   |  [PR#1082](https://github.com/bbc/psammead/pull/1082) Bump lodash security vulnerability |
 | 2.0.1   | [PR#892](https://github.com/bbc/psammead/pull/892) Bump dependencies |
 | 2.0.0 | [PR#1022](https://github.com/bbc/psammead/pull/1022) Apply font based on service prop |

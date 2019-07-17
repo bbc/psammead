@@ -5,7 +5,7 @@
 [![Known Vulnerabilities](https://snyk.io/test/github/bbc/psammead/badge.svg)](https://snyk.io/test/github/bbc/psammead)
 [![Maintainability](https://api.codeclimate.com/v1/badges/3f7b756f1358f3633362/maintainability)](https://codeclimate.com/github/bbc/psammead/maintainability)
 [![Test Coverage](https://api.codeclimate.com/v1/badges/3f7b756f1358f3633362/test_coverage)](https://codeclimate.com/github/bbc/psammead/test_coverage)
-[![Storybook](https://raw.githubusercontent.com/storybooks/brand/master/badges/storybook.svg?sanitize=true)](https://bbc.github.io/psammead)
+[![Storybook](https://raw.githubusercontent.com/storybooks/brand/master/badge/badge-storybook.svg?sanitize=true)](https://bbc.github.io/psammead)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/bbc/psammead/blob/latest/CONTRIBUTING.md)
 
 </div>
@@ -65,98 +65,9 @@ NB, we've defined global styles (normalize, box-sizing, Reith font) in the [Stor
 npm run build
 ```
 
-## :computer: Developing with Psammead
+### :computer: Developing with Psammead
 
-When making changes to a package locally if you want to pull those changes into another psammead package then the following command will create the required symlinks for you.
-
-### :link: Link packages locally
-
-Run the following command to link all psammead packages up regardless of dependency version:
-
-```
-npm run install:packages:link
-```
-
-## :dizzy: Using Psammead
-
-### :fork_and_knife: Consuming Psammead components - pre-requisite
-
-These components have been tested in an environment which uses [normalize](https://github.com/necolas/normalize.css) and [`box-sizing: border-box`](https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/) for consistent behaviour across browsers. Additionally, many components depend on the BBC Reith font having been defined.
-
-You can do this in pure CSS:
-
-```html
-<link
-  rel="stylesheet"
-  href="https://necolas.github.io/normalize.css/8.0.0/normalize.css"
-/>
-<style>
-  /* Box Sizing https://bit.ly/1A91I0J */
-  html {
-    box-sizing: border-box;
-    font-size: 100%;
-  }
-  *,
-  *:before,
-  *:after {
-    box-sizing: inherit;
-  }
-
-  @font-face {
-    font-display: optional;
-    font-family: "ReithSans";
-    font-style: normal;
-    font-weight: 400;
-    src: url('https://gel.files.bbci.co.uk/r2.511/BBCReithSans_W_Rg.woff2')
-        format('woff2'), url('https://gel.files.bbci.co.uk/r2.511/BBCReithSans_W_Rg.woff')
-        format('woff');
-  }
-  @font-face {
-    font-display: optional;
-    font-family: "ReithSerif";
-    font-style: normal;
-    font-weight: 600;
-    src: url('https://gel.files.bbci.co.uk/r2.511/BBCReithSerif_W_Md.woff2')
-        format('woff2'), url('https://gel.files.bbci.co.uk/r2.511/BBCReithSerif_W_Md.woff')
-        format('woff');
-  }
-</style>
-```
-
-Or if you're using [styled-components](https://styled-components.com), you can use [styled-normalize](https://www.npmjs.com/package/styled-normalize) (`npm install styled-normalize`) and `createGlobalStyle` to [manage global styles as has been done in Simorgh](https://github.com/bbc/simorgh/blob/latest/src/app/lib/globalStyles.js).
-
-### :nut_and_bolt: Using Psammead components
-
-Psammead components use `styled-components`.
-
-We recommend when you use these in your application, to add the following setup:
-
-`npm install --save-dev babel-plugin-styled-components`
-This plugin adds support for server-side rendering, minification of styles, and a nicer debugging experience by giving meaningful names to the style classes.
-
-Our recommended `.babelrc` config for this is here:
-
-```
-{
-  "plugins": [
-    [
-      "babel-plugin-styled-components",
-      {
-        "ssr": true,
-        "fileName": false
-      }
-    ]
-  ]
-}
-```
-
-`"ssr": true` ensures that when you have server-side rendering, there won't be a checksum mismatch between the StyledComponent class on the server render and client render.
-
-`"filename": false` This is to prevent the filename from appearing in the generated class name, which would generally be a duplication of the component name.
-
-[See documentation on the Styled Components site](https://www.styled-components.com/docs/tooling#babel-plugin)
-
-**NOTE**: if you run into issues with CSS not being applied to your components, it is likely that there is a duplicate `styled-components` dependency somewhere in your packages. You can try running [`npm dedupe`](https://www.styled-components.com/docs/faqs#duplicated-module-in-node_modules) in most cases, or [`lerna bootstrap --hoist`](https://www.styled-components.com/docs/faqs#usage-with-lerna) in monorepo setups such as Psammead's. Failing that, make sure your application's `styled-components` dependency is the same version as that in Psammead.
+[Learn how to use Psammead components in your own project.](https://github.com/bbc/psammead/blob/latest/packages/components/README.md)
 
 ## :bar_chart: Support levels
 
@@ -164,21 +75,19 @@ We strive for components to conform to the following minimum levels of support, 
 
 ### Browser support
 
-| Browser              | Lowest version |
-| -------------------- | -------------- |
-| Safari               | 7              |
-| Facebook for iPhone  | 187            |
-| Chrome for iOS       | 68             |
-| Chrome               | 25             |
-| Edge                 | 14             |
-| Firefox              | 48             |
-| IE                   | 9              |
-| Amazon Silk          | 69             |
-| Opera Mini           | 4              |
-| Android Browser      | 4              |
-| Nokia                | 6280           |
-| Firefox for iOS      | 13             |
-| Facebook for Android | 190            |
+| Browser         | Lowest version |
+| --------------- | -------------- |
+| Safari          | 9              |
+| Chrome          | 53             |
+| Edge            | 37             |
+| Firefox         | 45             |
+| IE              | 11             |
+| Opera           | 40             |
+| Opera Mini      | 18             |
+| Android Browser | 7              |
+| Android Chrome  | 53             |
+| Android Firefox | 49             |
+| IOS Safari      | 10             |
 
 Note that these browser support levels have been defined by usage statistics for BBC News and BBC Persian.
 
@@ -237,9 +146,9 @@ NB, this automatically pushes to the 'gh-pages' branch, which deploys to the liv
 
 ### Contact
 
-Psammead is currently maintained by developers in the BBC Articles and Reach + Languages teams. If you want to open an issue, please add it to our [issues page](https://github.com/bbc/psammead/issues).
+Psammead is currently maintained by developers in the BBC Simorgh teams. If you want to open an issue, please add it to our [issues page](https://github.com/bbc/psammead/issues).
 
-Contact us by email on [PsammeadMaintainers@bbc.co.uk](mailto:PsammeadMaintainers@bbc.co.uk), or find us on Slack at #psammead in the bbcnews workspace.
+Contact us by email on [PsammeadMaintainers@bbc.co.uk](mailto:PsammeadMaintainers@bbc.co.uk), or find us on Slack at #si_repo-psammead in the bbcnews workspace.
 
 ### The name?
 
