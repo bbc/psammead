@@ -1,7 +1,7 @@
 import moment from 'moment-timezone';
 import relativeTime from './relativeTimestamp';
 
-const defaultFormat = 'D MMMM YYYY, HH:mm z';
+const defaultFormat = 'LL, LT z';
 
 // if the date is invalid return false - https://stackoverflow.com/questions/1353684/detecting-an-invalid-date-date-instance-in-javascript#answer-1353711
 export const isValidDateTime = dateTime => {
