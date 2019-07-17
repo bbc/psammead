@@ -34,6 +34,17 @@ The `StoryPromo` component is designed to be used on 'index' pages, which are pa
 | Script    | object | yes | latin | { canon: { groupA: { fontSize: '28', lineHeight: '32',}, groupB: { fontSize: '32', lineHeight: '36', }, groupD: { fontSize: '44', lineHeight: '48', }, }, trafalgar: { groupA: { fontSize: '20', lineHeight: '24', }, groupB: { fontSize: '24', lineHeight: '28', }, groupD: { fontSize: '32', lineHeight: '36', }, }, }|
 | service | string | yes | N/A | `'news'` |
 
+## LiveLabel
+
+The `LiveLabel` component is to be used inside the `Headline` in index pages to show a promo for a Live page.
+
+### Props
+
+<!-- prettier-ignore -->
+| Argument  | Type | Required | Default | Example |
+| --------- | ---- | -------- | ------- | ------- |
+| service | string | yes | N/A | `'news'` |
+
 ## Usage
 
 The typical use-case of this component is as displayed below. A Image sits on the left side of the promo with info elements on the right. These info elements are typically a headline, text summary paragraph and timestamp. The `Headline` and `Summary` components are provided by this package and can be imported as seen below.
@@ -44,14 +55,20 @@ The `topStory` prop can be passed to adopt a vertical card layout under 600px. T
 
 ```jsx
 import React, { Fragment } from 'react';
-import StoryPromo, { Headline, Summary, Link } from '@bbc/psammead-story-promo';
+import StoryPromo, {
+  Headline,
+  Summary,
+  Link,
+  LiveLabel,
+} from '@bbc/psammead-story-promo';
 import { latin } from '@bbc/gel-foundations/scripts';
 
 const Image = <img src="https://foobar.com/image.jpg" />;
 
-const Info = (
+const Info = ({ isLive }) => (
   <Fragment>
     <Headline script={latin} topStory={true} service="news">
+      {isLive && <LiveLabel service="news" />}
       <Link href="https://www.bbc.co.uk/news">The headline of the promo</Link>
     </Headline>
     <Summary script={latin} topStory={true} service="news">
@@ -61,7 +78,7 @@ const Info = (
   </Fragment>
 );
 
-<StoryPromo image={Image} info={Info} topStory={true} />;
+<StoryPromo image={Image} info={Info({ isLive: false })} topStory={true} />;
 ```
 
 ### When to use this component

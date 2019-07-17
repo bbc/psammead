@@ -3,14 +3,15 @@ import { shouldMatchSnapshot } from '@bbc/psammead-test-helpers';
 import { latin } from '@bbc/gel-foundations/scripts';
 import MediaIndicator from '@bbc/psammead-media-indicator';
 import { render } from '@testing-library/react';
-import StoryPromo, { Headline, Summary, Link } from './index';
+import StoryPromo, { Headline, Summary, Link, LiveLabel } from './index';
 
 const Image = <img src="https://foobar.com/image.png" alt="Alt text" />;
 
 // eslint-disable-next-line react/prop-types
-const Info = ({ topStory }) => (
+const Info = ({ topStory, isLive }) => (
   <Fragment>
     <Headline script={latin} topStory={topStory} service="news">
+      {isLive && <LiveLabel service="news" />}
       <Link href="https://www.bbc.co.uk/news">The headline of the promo</Link>
     </Headline>
     <Summary script={latin} topStory={topStory} service="news">
@@ -33,6 +34,10 @@ describe('StoryPromo', () => {
   shouldMatchSnapshot(
     'should render correctly',
     <StoryPromo image={Image} info={Info({ topStory: false })} />,
+  );
+  shouldMatchSnapshot(
+    'should render Live promo correctly',
+    <StoryPromo image={Image} info={Info({ topStory: false, isLive: true })} />,
   );
 });
 

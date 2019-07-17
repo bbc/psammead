@@ -1,6 +1,6 @@
 import React from 'react';
 import styled, { css } from 'styled-components';
-import { node, bool } from 'prop-types';
+import { node, bool, string } from 'prop-types';
 import {
   GEL_SPACING,
   GEL_SPACING_DBL,
@@ -19,8 +19,17 @@ import {
   getParagon,
   getLongPrimer,
 } from '@bbc/gel-foundations/typography';
-import { C_EBON, C_SHADOW, C_METAL } from '@bbc/psammead-styles/colours';
-import { getSansRegular, getSerifBold } from '@bbc/psammead-styles/font-styles';
+import {
+  C_EBON,
+  C_SHADOW,
+  C_METAL,
+  C_POSTBOX,
+} from '@bbc/psammead-styles/colours';
+import {
+  getSansRegular,
+  getSerifBold,
+  getSansBold,
+} from '@bbc/psammead-styles/font-styles';
 
 const twoOfSixColumnsMaxWidthScaleable = `33.33%`;
 // (2 / 6) * 100 = 0.3333333333 = 33.33%
@@ -246,6 +255,21 @@ export const Link = styled.a`
     color: ${C_METAL};
   }
 `;
+
+const StyledLiveLabel = styled.span`
+  color: ${C_POSTBOX};
+  ${({ service }) => getSansBold(service)}
+`;
+
+export const LiveLabel = ({ service }) => (
+  <StyledLiveLabel service={service} lang="en-GB">
+    LIVE{' '}
+  </StyledLiveLabel>
+);
+
+LiveLabel.propTypes = {
+  service: string.isRequired,
+};
 
 const StoryPromo = ({ image, info, mediaIndicator, topStory }) => (
   <StoryPromoWrapper>

@@ -6,7 +6,7 @@ import Image from '@bbc/psammead-image';
 import Timestamp from '@bbc/psammead-timestamp';
 import MediaIndicator from '@bbc/psammead-media-indicator';
 import notes from '../README.md';
-import StoryPromo, { Headline, Summary, Link } from './index';
+import StoryPromo, { Headline, Summary, Link, LiveLabel } from './index';
 
 /* eslint-disable react/prop-types */
 const InfoComponent = ({
@@ -15,9 +15,11 @@ const InfoComponent = ({
   script,
   topStory,
   service,
+  isLive,
 }) => (
   <Fragment>
     <Headline script={script} topStory={topStory} service={service}>
+      {isLive && <LiveLabel service={service} />}
       <Link href="https://www.bbc.co.uk/news">{headlineText}</Link>
     </Headline>
     <Summary script={script} topStory={topStory} service={service}>
@@ -27,6 +29,7 @@ const InfoComponent = ({
       datetime={text('Timestamp datetime', '2019-03-01T14:00+00:00')}
       script={script}
       padding={false}
+      service={service}
     >
       {text('Timestamp', '12 March 2019')}
     </Timestamp>
@@ -53,7 +56,7 @@ const MediaIndicatorComponent = (
   />
 );
 
-const generateStory = ({ mediaIndicator, topStory }) =>
+const generateStory = ({ mediaIndicator, topStory, isLive }) =>
   inputProvider(
     [{ name: 'Headline' }, { name: 'Summary' }],
     ({ slotTexts: [headlineText, summaryText], script, service }) => {
@@ -64,6 +67,7 @@ const generateStory = ({ mediaIndicator, topStory }) =>
           script={script}
           topStory={topStory}
           service={service}
+          isLive={isLive}
         />
       );
 
@@ -83,6 +87,10 @@ const generateStory = ({ mediaIndicator, topStory }) =>
 storiesOf('Components|StoryPromo/StoryPromo', module)
   .addDecorator(withKnobs)
   .add('default', generateStory({}), { notes, knobs: { escapeHTML: false } })
+  .add('Live', generateStory({ isLive: true }), {
+    notes,
+    knobs: { escapeHTML: false },
+  })
   .add('with media indicator', generateStory({ mediaIndicator: true }), {
     notes,
     knobs: { escapeHTML: false },
