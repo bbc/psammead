@@ -31,11 +31,18 @@ const inputProvider = (slots, componentFunction, services) => () => {
 
   const script = scripts[service.script];
   const dir = service.dir || 'ltr';
+  const { locale } = service;
 
   return (
     <Fragment>
       <Helmet htmlAttributes={{ dir }} />
-      {componentFunction({ slotTexts, script, dir, service: serviceName })}
+      {componentFunction({
+        slotTexts,
+        script,
+        dir,
+        locale,
+        service: serviceName,
+      })}
     </Fragment>
   );
 };

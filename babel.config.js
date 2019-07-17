@@ -32,6 +32,7 @@ module.exports = {
         fileName: false,
       },
     ],
+    '@babel/plugin-proposal-export-default-from',
   ],
   presets,
   env: {
