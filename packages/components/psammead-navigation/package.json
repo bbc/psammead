@@ -1,8 +1,10 @@
 {
   "name": "@bbc/psammead-navigation",
-  "version": "2.0.1",
+  "version": "2.1.0",
   "description": "A navigation bar to use on index pages",
   "main": "dist/index.js",
+  "module": "esm/index.js",
+  "sideEffects": false,
   "repository": {
     "type": "git",
     "url": "https://github.com/bbc/psammead/tree/latest/packages/components/psammead-navigation"

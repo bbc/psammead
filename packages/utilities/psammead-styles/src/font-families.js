@@ -29,7 +29,7 @@ export const news = {
   `,
   serifMedium: `
    ${reithSerif}
-   ${getFontStyleAndWeight('italic', 500)} 
+   ${getFontStyleAndWeight('normal', 500)} 
   `,
   serifMediumItalic: `
    ${reithSerif}
@@ -41,7 +41,7 @@ export const news = {
   `,
 };
 
-const helmet = `font-family: Helmet, Freesans, Helvetica, Arial, sans serif;`;
+const helmet = `font-family: Helmet, Freesans, Helvetica, Arial, sans-serif;`;
 
 const helmetFontStyles = {
   sansRegular: `
@@ -62,7 +62,7 @@ const helmetFontStyles = {
   `,
 };
 
-const nassimPersian = `font-family: NassimPersian, Arial, Verdana, Geneva, Helvetica, sans serif;`;
+const nassimPersian = `font-family: NassimPersian, Arial, Verdana, Geneva, Helvetica, sans-serif;`;
 
 const persianStyles = {
   sansRegular: `
