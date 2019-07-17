@@ -216,6 +216,75 @@ exports[`MediaIndicator should render audio indicator correctly 1`] = `
 </div>
 `;
 
+exports[`MediaIndicator should render photogallery correctly 1`] = `
+.c2 {
+  vertical-align: middle;
+  margin: 0 0.25rem;
+  color: #222222;
+  fill: currentColor;
+  width: 1rem;
+  height: 0.8125rem;
+}
+
+.c0 {
+  padding: 0.5rem 0.25rem;
+  background-color: #FFFFFF;
+  display: block;
+  font-family: ReithSans,Helvetica,Arial,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  color: #222222;
+  height: 2rem;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 100%;
+}
+
+@media (max-width:24.9375rem) {
+  .c0 {
+    height: 1.25rem;
+    padding: 0.25rem 0.25rem 0;
+  }
+}
+
+<div
+  aria-hidden="true"
+  class="c0"
+>
+  <div
+    class="c1"
+  >
+    <svg
+      class="c2"
+      focusable="false"
+      height="13px"
+      viewBox="0 0 32 26"
+      width="16px"
+    >
+      <path
+        d="M9,2V0H4V2H0V26H32V2ZM6.5,10A2.5,2.5,0,1,1,9,7.52,2.5,2.5,0,0,1,6.5,10ZM20,23a9,9,0,1,1,9-9A9,9,0,0,1,20,23Z"
+      />
+      <circle
+        cx="20"
+        cy="14.02"
+        r="5.5"
+      />
+    </svg>
+  </div>
+</div>
+`;
+
 exports[`MediaIndicator should render video by default 1`] = `
 .c2 {
   vertical-align: middle;
