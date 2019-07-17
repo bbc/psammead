@@ -16,14 +16,6 @@ import '@bbc/psammead-locales/moment/pcm';
 
 let timestamp = moment();
 
-moment.relativeTimeRounding(Math.floor);
-// Smallest relative timestamp is 'a minute ago'
-moment.relativeTimeThreshold('s', 0);
-moment.relativeTimeThreshold('m', 60);
-moment.relativeTimeThreshold('h', 24);
-moment.relativeTimeThreshold('d', 30);
-moment.relativeTimeThreshold('M', 12);
-
 const date = name => {
   button('now', () => {
     timestamp = moment();
