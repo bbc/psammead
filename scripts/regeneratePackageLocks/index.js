@@ -1,6 +1,6 @@
 const removeExistingPackageLock = require('./removeExistingPackageLock');
 const runNpmInstall = require('./runNpmInstall');
-const getPackages = require('../getPackages');
+const getPackages = require('../utilities/getPackages');
 
 const packageDirs = getPackages();
 
