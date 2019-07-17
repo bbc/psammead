@@ -1,7 +1,7 @@
 const { prompt } = require('enquirer');
-const getPackageNames = require('../utilities/getPackageNames');
-const promptPackageMultiselect = require('./promptPackageMultiselect');
-const promptPackageInput = require('./promptPackageInput');
+const getPackageNames = require('../getPackageNames');
+const promptPackageMultiselect = require('../promptPackageMultiselect');
+const promptPackageInput = require('../promptPackageInput');
 
 module.exports = message =>
   prompt({
