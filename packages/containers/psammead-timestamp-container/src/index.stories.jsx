@@ -1,16 +1,16 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react'; // eslint-disable-line import/no-extraneous-dependencies
-import { latin } from '@bbc/gel-foundations/scripts';
+import { inputProvider } from '@bbc/psammead-storybook-helpers';
 import {
-  button,
-  withKnobs,
-  text,
-  number,
   boolean,
-  select,
+  button,
+  number,
+  text,
+  withKnobs,
 } from '@storybook/addon-knobs';
 import moment from 'moment-timezone';
 import Timestamp from '.';
+
 import '@bbc/psammead-locales/moment/ig';
 import '@bbc/psammead-locales/moment/pcm';
 
@@ -74,54 +74,64 @@ const date = name => {
   return number(name, timestamp.valueOf());
 };
 
-const locales = ['en', 'fa', 'ig', 'pcm', 'yo'];
-
 storiesOf('Containers|TimestampContainer', module)
   .addDecorator(withKnobs)
-  .add('default', () => (
-    <Timestamp
-      timestamp={date('timestamp')}
-      dateTimeFormat="YYYY-MM-DD"
-      format="D MMMM YYYY"
-      isRelative={boolean('isRelative', false)}
-      script={latin}
-      locale={select('locale', locales, locales[0])}
-      service="news"
-    />
-  ))
-  .add('with prefix', () => (
-    <Timestamp
-      timestamp={date('timestamp')}
-      dateTimeFormat="YYYY-MM-DD"
-      format="D MMMM YYYY, HH:mm z"
-      isRelative={boolean('isRelative', true)}
-      prefix={text('Prefix text', 'Updated')}
-      script={latin}
-      locale={select('locale', locales, locales[0])}
-      service="news"
-    />
-  ))
-  .add('with prefix and suffix', () => (
-    <Timestamp
-      timestamp={date('timestamp')}
-      dateTimeFormat="YYYY-MM-DD"
-      format="D MMMM YYYY, HH:mm z"
-      isRelative={boolean('isRelative', false)}
-      prefix={text('Prefix text', 'This')}
-      suffix={text('Suffix text', 'is date of last update')}
-      script={latin}
-      locale={select('locale', locales, locales[0])}
-      service="news"
-    />
-  ))
-  .add('with locale', () => (
-    <Timestamp
-      timestamp={number('Unix timestamp', 1530947227000)}
-      dateTimeFormat="YYYY-MM-DD"
-      format="D MMMM YYYY, HH:mm z"
-      isRelative={boolean('isRelative', false)}
-      script={latin}
-      locale={select('locale', locales, locales[0])}
-      service="persian"
-    />
-  ));
+  .add(
+    'default',
+    inputProvider([], ({ locale, script, service }) => (
+      <Timestamp
+        timestamp={date('timestamp')}
+        dateTimeFormat="YYYY-MM-DD"
+        format="D MMMM YYYY"
+        isRelative={boolean('isRelative', false)}
+        script={script}
+        locale={locale}
+        service={service}
+      />
+    )),
+  )
+  .add(
+    'with prefix',
+    inputProvider([], ({ locale, script, service }) => (
+      <Timestamp
+        timestamp={date('timestamp')}
+        dateTimeFormat="YYYY-MM-DD"
+        format="D MMMM YYYY, HH:mm z"
+        isRelative={boolean('isRelative', true)}
+        prefix={text('Prefix text', 'Updated')}
+        script={script}
+        locale={locale}
+        service={service}
+      />
+    )),
+  )
+  .add(
+    'with prefix and suffix',
+    inputProvider([], ({ locale, script, service }) => (
+      <Timestamp
+        timestamp={date('timestamp')}
+        dateTimeFormat="YYYY-MM-DD"
+        format="D MMMM YYYY, HH:mm z"
+        isRelative={boolean('isRelative', false)}
+        prefix={text('Prefix text', 'This')}
+        suffix={text('Suffix text', 'is date of last update')}
+        script={script}
+        locale={locale}
+        service={service}
+      />
+    )),
+  )
+  .add(
+    'with locale',
+    inputProvider([], ({ locale, script, service }) => (
+      <Timestamp
+        timestamp={number('Unix timestamp', 1530947227000)}
+        dateTimeFormat="YYYY-MM-DD"
+        format="D MMMM YYYY, HH:mm z"
+        isRelative={boolean('isRelative', false)}
+        script={script}
+        locale={locale}
+        service={service}
+      />
+    )),
+  );
