@@ -6,5 +6,5 @@ module.exports = packageNames => {
   const getMessage = () =>
     `Bump package versions for ${packageNames.join(', ')}`;
 
-  return `${headline}\n\n${hasMultiplePackages ? getMessage() : ''}`;
+  return `${headline}${hasMultiplePackages ? `\n\n${getMessage()}` : ''}`;
 };

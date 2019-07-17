@@ -16,7 +16,7 @@ const EXISTING_CHANGELOG_CONTENT = `
 | 1.0.0 | [PR#1023](https://github.com/bbc/psammead/pull/1) mock changes |
 `;
 
-describe('getNewChangelogContent', () => {
+describe('bumpChangelogs', () => {
   it('should return the changelog content', () => {
     const actual = getNewChangelogContent(
       '1.0.1',
