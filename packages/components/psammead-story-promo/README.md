@@ -36,7 +36,7 @@ The `StoryPromo` component is designed to be used on 'index' pages, which are pa
 
 ## LiveLabel
 
-The `LiveLabel` component is to be used inside the `Link` in index pages to show a promo for a Live page.
+The `LiveLabel` component is to be used inside a `Link` in index pages to show a promo for a Live page.
 
 ### Props
 
@@ -44,7 +44,8 @@ The `LiveLabel` component is to be used inside the `Link` in index pages to show
 | Argument  | Type | Required | Default | Example |
 | --------- | ---- | -------- | ------- | ------- |
 | service | string | yes | N/A | `'news'` |
-| dir | string | no | `'ltr'` | `'rtl'` |
+| text | string | yes | N/A | `'This is a live event headline'` |
+| dir | string | no | `'ltr'`| `'rtl'` |
 
 ## Usage
 
@@ -69,8 +70,11 @@ const Image = <img src="https://foobar.com/image.jpg" />;
 const Info = ({ isLive }) => (
   <Fragment>
     <Headline script={latin} topStory={true} service="news">
-      {isLive && <LiveLabel service="news" />}
-      <Link href="https://www.bbc.co.uk/news">The headline of the promo</Link>
+      <Link href="https://www.bbc.co.uk/news">
+        {isLive ? (
+          <LiveLabel service="news" text="The headline of the live promo" />
+        ): The headline of the promo}
+      </Link>
     </Headline>
     <Summary script={latin} topStory={true} service="news">
       The summary of the promo
