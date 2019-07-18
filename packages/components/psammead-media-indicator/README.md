@@ -2,7 +2,7 @@
 
 ## Description
 
-The `MediaIndicator` component provides a 'play' or 'audio' icon as well as a duration timestamp depending on the `type` prop. The component by default renders the 'play' icon. This component has options for both providing and not providing a duration. If one isn't provided, it will simply render the play or audio icon. Offscreen text should be used to describe the media type, i.e. `'Audio'` or `'Video'`. It should not be played due to nesting inside an element marked as `aria-hidden="true"`, but will provide a fallback for those user agents which have incomplete aria support.
+The `MediaIndicator` component provides a 'play', 'audio' or 'camera' icon as well as an optional duration timestamp depending on the `type` prop. The component by default renders the 'play' icon. This component has options for both providing and not providing a duration. If one isn't provided, it will simply render the play, audio or camera icon.
 
 ## Installation
 
@@ -19,6 +19,14 @@ The `MediaIndicator` component provides a 'play' or 'audio' icon as well as a du
 | type          | string | No       | 'video' | 'audio'                      |
 | topStory      | boolean | No      | false   | true                         |
 | service | string | Yes | N/A | `'news'` |
+
+### Supported `type`s
+
+<!-- prettier-ignore -->
+
+- `'video'`
+- `'audio'`
+- `'photogallery'`
 
 ## Usage
 
@@ -40,13 +48,13 @@ import MediaIndicator from '@bbc/psammead-media-indicator';
 
 ### When to use this component
 
-The `MediaIndicator` component is designed to be used on top of an image which is linking to a page containing a video or audio based on that image. It tells the user to expect a video or audio on the page as well as how long it is in duration.
+The `MediaIndicator` component is designed to be used on top of an image which is linking to a page containing a video, audio or photo item based on that image. It tells the user to expect video, audio or photographic content on the page as well as how long it is in duration if applicable.
 
 <!-- ### When not to use this component -->
 
 ### Accessibility notes
 
-This component is marked as `aria-hidden="true"`, which means that it should be ignored by screenreaders. It is intended that media promos provide information about their content such as duration in visually hidden text in the promo headline. This component does provide some offscreen text for those user agents which have incomplete aria support, in an attempt to provide context about the timestamp contained in this component.
+This component is marked as `aria-hidden="true"`, which means that it should be ignored by screenreaders. It is expected that media promos provide detailed information about their content such as duration in visually hidden text in the promo headline.
 
 <!-- ## Roadmap -->
 
