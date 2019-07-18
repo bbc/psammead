@@ -20,7 +20,7 @@
   "homepage": "https://github.com/bbc/psammead/blob/latest/packages/components/psammead-story-promo/README.md",
   "dependencies": {
     "@bbc/gel-foundations": "^3.0.3",
-    "@bbc/psammead-styles": "^1.1.3"
+    "@bbc/psammead-styles": "^1.2.0"
   },
   "devDependencies": {
     "@bbc/psammead-image": "^1.0.6",
