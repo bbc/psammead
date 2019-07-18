@@ -120,18 +120,4 @@ storiesOf('Containers|TimestampContainer', module)
         service={service}
       />
     )),
-  )
-  .add(
-    'with locale',
-    inputProvider([], ({ locale, script, service }) => (
-      <Timestamp
-        timestamp={number('Unix timestamp', 1530947227000)}
-        dateTimeFormat="YYYY-MM-DD"
-        format="D MMMM YYYY, HH:mm z"
-        isRelative={boolean('isRelative', false)}
-        script={script}
-        locale={locale}
-        service={service}
-      />
-    )),
   );
