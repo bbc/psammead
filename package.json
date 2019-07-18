@@ -9,6 +9,9 @@
     "build:esm": "BABEL_TYPE=esm lerna exec --parallel -- babel src -d esm --configFile babel.config.js --ignore $npm_package_config_babel_ignore --root-mode upward",
     "ci:packages": "npm ci && lerna exec -- npm ci",
     "changeScanner": "node scripts/changeScanner",
+    "bumpPackages": "node scripts/bumpPackages/cli",
+    "bumpChangelogs": "node scripts/bumpChangelogs/cli",
+    "regeneratePackageLocks": "node scripts/regeneratePackageLocks",
     "deploy-storybook": "build-storybook -o storybook_dist && gh-pages -d storybook_dist",
     "force-package-lock-https": "find . -type f -name \"package-lock.json\" | grep -v node_modules | xargs -I % sh -c 'echo \"Replacing http->https in %\"; sed -i \"\" -e \"s/http:\\/\\//https:\\/\\//g\" %'",
     "install:packages": "npm i && lerna clean --yes && lerna bootstrap --hoist",
@@ -23,6 +26,7 @@
     "test:lint": "eslint --ext .js,jsx,json ./packages ./scripts",
     "test:lint:css": "stylelint 'packages/**/*.js' 'packages/**/*.jsx' 'scripts/**/*.js'",
     "test:unit": "npm run build && jest --verbose --coverage",
+    "test:unit:watch": "npm run build && jest --verbose --coverage --watch",
     "updateSnapshots": "npm run ci:packages && npm run test:unit -- -u"
   },
   "repository": {
@@ -44,6 +48,7 @@
     "@babel/cli": "^7.2.0",
     "@babel/core": "^7.5.4",
     "@babel/plugin-proposal-export-default-from": "^7.5.2",
+    "@babel/plugin-transform-runtime": "^7.5.0",
     "@babel/preset-env": "^7.5.4",
     "@babel/preset-react": "^7.0.0",
     "@bbc/psammead-assets": "^0.1.3",
@@ -60,6 +65,7 @@
     "babel-loader": "^8.0.4",
     "babel-plugin-styled-components": "1.10.6",
     "chalk": "^2.4.1",
+    "enquirer": "^2.3.1",
     "eslint": "^5.9.0",
     "eslint-config-airbnb": "^17.1.1",
     "eslint-config-prettier": "^6.0.0",
