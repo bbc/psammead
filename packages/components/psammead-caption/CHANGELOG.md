@@ -3,7 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
-| 2.1.1 | [PR#]() Bump psammead-styles to 1.2.0 |
+| 2.1.1 | [PR#1365](https://github.com/bbc/psammead/pull/1365) Bump psammead-styles to 1.2.0 |
 | 2.1.0 | [PR#1233](https://github.com/bbc/psammead/pull/1233) Add ESM modules entry |
 | 2.0.3   | [PR#1203](https://github.com/bbc/psammead/pull/1203) use `gel-foundations@3.0.3`, `psammead-styles@1.1.3` and bump devDependencies |
 | 2.0.2   | [PR#1082](https://github.com/bbc/psammead/pull/1082) Bump lodash security vulnerability |

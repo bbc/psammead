@@ -3,7 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
-| 2.1.1 | [PR#]() Bump psammead-styles to 1.2.0 |
+| 2.1.1 | [PR#1365](https://github.com/bbc/psammead/pull/1365) Bump psammead-styles to 1.2.0 |
 | 2.1.0 | [PR#1233](https://github.com/bbc/psammead/pull/1233) Add ESM modules entry |
 | 2.0.4   | [PR#1181](https://github.com/bbc/psammead/pull/1181) use `psammead-styles@1.1.3`, `gel-foundations@3.0.3`, `psammead-storybook-helpers@3.1.3`, `psammead-test-helpers@1.0.2`  |
 | 2.0.3   | [PR#1087](https://github.com/bbc/psammead/pull/1087) use `psammead-styles@1.1.2` |
