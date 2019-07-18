@@ -1,6 +1,7 @@
 /* eslint-disable no-console */
 const { exec } = require('shelljs');
 const chalk = require('chalk');
+const fs = require('fs');
 
 const slackNotification = require('../src/slackNotification');
 const publishConfig = require('./publishConfig');
@@ -13,7 +14,7 @@ module.exports = (packageDir, packageJson, attempted) => {
   const { access, tag } = publishConfig(packageJson);
 
   const execute = exec(
-    `npm publish ${packageDir} --access ${access} --tag ${tag}`,
+    `npm publish ${packageDir} --access ${access} --tag ${tag} --dry`,
     {
       silent: true,
     },
@@ -28,5 +29,6 @@ module.exports = (packageDir, packageJson, attempted) => {
     console.log(chalk.green(`Successfully published ${packageReleaseTag}`));
     attempted.success.push(packageReleaseTag);
     slackNotification(packageReleaseTag, true);
+    fs.appendFileSync('published.txt', `${packageJson.name},`);
   }
 };
