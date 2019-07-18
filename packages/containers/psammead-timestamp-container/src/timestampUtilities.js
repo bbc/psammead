@@ -17,7 +17,7 @@ export const formatUnixTimestamp = (
   timestamp,
   momentString,
   timezone,
-  locale = 'en-gb',
+  locale = 'en-GB',
 ) =>
   moment(timestamp)
     .locale(locale)
