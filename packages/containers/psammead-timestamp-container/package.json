@@ -1,6 +1,6 @@
 {
   "name": "@bbc/psammead-timestamp-container",
-  "version": "2.1.1",
+  "version": "2.2.1",
   "main": "dist/index.js",
   "module": "esm/index.js",
   "sideEffects": false,
@@ -30,6 +30,7 @@
     "moment-timezone": "^0.5.26"
   },
   "devDependencies": {
+    "@bbc/psammead-storybook-helpers": "^3.3.0",
     "@bbc/psammead-test-helpers": "^1.0.2",
     "react": "^16.8.6"
   },
