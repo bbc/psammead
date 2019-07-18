@@ -96,7 +96,7 @@
   "husky": {
     "hooks": {
       "pre-commit": "npm run test:lint && npm run test:lint:css",
-      "pre-push": "sh scripts/enforceVersions.sh && npm run test:unit"
+      "pre-push": "sh scripts/enforceVersions.sh && npm run test:unit -- --changedSince=latest"
     }
   },
   "jest": {
