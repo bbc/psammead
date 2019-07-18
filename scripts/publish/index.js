@@ -1,9 +1,11 @@
 const fs = require('fs');
 const report = require('./src/report');
 const publish = require('./src/publish');
+
 const getPackages = require('./src/getPackages');
 const getRegistryVersion = require('./src/getRegistryVersion');
 const shouldPublish = require('./src/shouldPublish');
+
 
 const getLatest = async pack => {
   const version = Object.keys(pack.versions);
