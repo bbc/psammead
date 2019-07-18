@@ -68,7 +68,7 @@ MediaIndicator.propTypes = {
   datetime: string,
   duration: string,
   offscreenText: string,
-  type: oneOf(['video', 'audio']),
+  type: oneOf(['video', 'audio', 'photogallery']),
   topStory: bool,
   service: string.isRequired,
 };
