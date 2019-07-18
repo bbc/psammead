@@ -97,7 +97,7 @@ describe('Timestamp utility functions', () => {
         nullFormat,
         timezone,
       );
-      const expectedOutput = 'October 19, 2018, 6:10 PM BST';
+      const expectedOutput = '19 October 2018, 18:10 BST';
       expect(output).toEqual(expectedOutput);
     });
   });
