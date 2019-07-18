@@ -13,11 +13,9 @@ import {
   GEL_SPACING_TRPL,
   GEL_SPACING_QUAD,
 } from '@bbc/gel-foundations/spacings';
-import {
-  getDoublePica,
-  GEL_FF_REITH_SANS,
-} from '@bbc/gel-foundations/typography';
+import { getDoublePica } from '@bbc/gel-foundations/typography';
 import { C_EBON, C_PEBBLE, C_WHITE } from '@bbc/psammead-styles/colours';
+import { getSansRegular } from '@bbc/psammead-styles/font-styles';
 
 const halfLineHeightRem = group => group.lineHeight / 2 / 16;
 
@@ -86,8 +84,7 @@ const Title = styled.h2`
   ${({ script }) => script && getDoublePica(script)};
   color: ${C_EBON};
   background-color: ${C_WHITE};
-  font-family: ${GEL_FF_REITH_SANS};
-  font-weight: normal;
+  ${({ service }) => getSansRegular(service)}
   display: inline-block;
   position: relative;
 
@@ -104,6 +101,7 @@ const Title = styled.h2`
 Title.propTypes = {
   dir: oneOf(['ltr', 'rtl']).isRequired,
   script: shape(scriptPropType).isRequired,
+  service: string.isRequired,
 };
 
 const SectionLabel = ({
@@ -113,9 +111,10 @@ const SectionLabel = ({
   labelId,
   script,
   visuallyHidden,
+  service,
 }) => (
   <Wrapper script={script} bar={bar} visuallyHidden={visuallyHidden}>
-    <Title script={script} dir={dir} id={labelId}>
+    <Title script={script} dir={dir} id={labelId} service={service}>
       {title}
     </Title>
   </Wrapper>
@@ -134,6 +133,7 @@ SectionLabel.propTypes = {
   labelId: string.isRequired,
   script: shape(scriptPropType).isRequired,
   visuallyHidden: bool,
+  service: string.isRequired,
 };
 
 export default SectionLabel;

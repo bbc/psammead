@@ -32,13 +32,17 @@ module.exports = {
         fileName: false,
       },
     ],
+    '@babel/plugin-proposal-export-default-from',
   ],
   presets,
   env: {
     // used by Jest
     test: {
       presets,
-      plugins: ['@babel/plugin-transform-modules-commonjs'],
+      plugins: [
+        '@babel/plugin-transform-modules-commonjs',
+        '@babel/plugin-transform-runtime',
+      ],
     },
   },
 };

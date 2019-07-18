@@ -64,6 +64,7 @@ describe('Psammead storybook helpers', () => {
         slotTexts: [],
         script: 'LATIN SCRIPT OBJECT',
         service: 'news',
+        locale: 'en',
       });
       expect(select).toHaveBeenCalledTimes(1);
       // Allows user to select all availible services
@@ -89,6 +90,7 @@ describe('Psammead storybook helpers', () => {
         slotTexts: [],
         script: 'LATIN SCRIPT OBJECT',
         service: 'news',
+        locale: 'en',
       });
       expect(select).toHaveBeenCalledTimes(1);
       expect(select.mock.calls[0][1]).toEqual(['mundo', 'pidgin', 'yoruba']);
@@ -106,6 +108,7 @@ describe('Psammead storybook helpers', () => {
         slotTexts: [],
         script: 'LATIN SCRIPT OBJECT',
         service: 'news',
+        locale: 'en',
       });
       expect(select).toHaveBeenCalledTimes(1);
       expect(text).toHaveBeenCalledTimes(0);
@@ -127,6 +130,7 @@ describe('Psammead storybook helpers', () => {
           script: 'LATIN SCRIPT OBJECT',
           dir: 'ltr',
           service: 'news',
+          locale: 'en',
         });
 
         expect(select).toHaveBeenCalledTimes(1);
@@ -151,6 +155,7 @@ describe('Psammead storybook helpers', () => {
           script: 'LATIN SCRIPT OBJECT',
           dir: 'ltr',
           service: 'news',
+          locale: 'en',
         });
 
         expect(select).toHaveBeenCalledTimes(1);
@@ -170,6 +175,7 @@ describe('Psammead storybook helpers', () => {
         script: 'LATIN SCRIPT OBJECT',
         dir: 'ltr',
         service: 'news',
+        locale: 'en',
       });
 
       expect(select).toHaveBeenCalledTimes(1);
@@ -193,6 +199,7 @@ describe('Psammead storybook helpers', () => {
         script: 'CYRILLIC SCRIPT OBJECT',
         dir: 'ltr',
         service: 'russian',
+        locale: 'ru',
       });
     });
 
@@ -204,12 +211,7 @@ describe('Psammead storybook helpers', () => {
         underTest.inputProvider([], renderFn)();
 
         expect(renderFn).toHaveBeenCalledTimes(1);
-        expect(renderFn).toHaveBeenCalledWith({
-          slotTexts: [],
-          script: 'CYRILLIC SCRIPT OBJECT',
-          dir: 'ltr',
-          service: 'russian',
-        });
+        expect(renderFn.mock.calls[0][0].dir).toBe('ltr');
       });
 
       it('returns value when specified', () => {
@@ -224,6 +226,7 @@ describe('Psammead storybook helpers', () => {
           script: 'ARABIC SCRIPT OBJECT',
           dir: 'rtl',
           service: 'arabic',
+          locale: 'ar',
         });
       });
     });
