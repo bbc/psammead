@@ -262,9 +262,17 @@ const StyledLiveLabel = styled.span`
 `;
 
 export const LiveLabel = ({ service, dir }) => (
-  <StyledLiveLabel service={service} lang="en-GB" dir={dir}>
-    LIVE{' '}
-  </StyledLiveLabel>
+  // eslint-disable-next-line jsx-a11y/aria-role
+  <span role="text" style={{ color: 'white', textDecoration: 'underline' }}>
+    <StyledLiveLabel
+      service={service}
+      lang="en-GB"
+      dir={dir}
+      aria-hidden="true"
+    >
+      LIVE{' '}
+    </StyledLiveLabel>
+  </span>
 );
 
 LiveLabel.propTypes = {

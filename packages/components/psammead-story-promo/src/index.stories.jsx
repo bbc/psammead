@@ -20,8 +20,10 @@ const InfoComponent = ({
 }) => (
   <Fragment>
     <Headline script={script} topStory={topStory} service={service}>
-      {isLive && <LiveLabel service={service} dir={dir} />}
-      <Link href="https://www.bbc.co.uk/news">{headlineText}</Link>
+      <Link href="https://www.bbc.co.uk/news">
+        {isLive && <LiveLabel service={service} dir={dir} />}
+        {headlineText}
+      </Link>
     </Headline>
     <Summary script={script} topStory={topStory} service={service}>
       {summaryText}

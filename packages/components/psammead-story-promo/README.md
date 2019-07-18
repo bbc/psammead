@@ -36,7 +36,7 @@ The `StoryPromo` component is designed to be used on 'index' pages, which are pa
 
 ## LiveLabel
 
-The `LiveLabel` component is to be used inside the `Headline` in index pages to show a promo for a Live page.
+The `LiveLabel` component is to be used inside the `Link` in index pages to show a promo for a Live page.
 
 ### Props
 

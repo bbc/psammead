@@ -585,14 +585,14 @@ exports[`StoryPromo should render Live promo correctly 1`] = `
   padding: 0 0.5rem;
 }
 
-.c6 {
+.c5 {
   position: static;
   color: #222222;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.c6:before {
+.c5:before {
   bottom: 0;
   content: '';
   left: 0;
@@ -604,17 +604,17 @@ exports[`StoryPromo should render Live promo correctly 1`] = `
   z-index: 1;
 }
 
-.c6:hover,
-.c6:focus {
+.c5:hover,
+.c5:focus {
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
-.c6:visited {
+.c5:visited {
   color: #6E6E73;
 }
 
-.c5 {
+.c6 {
   color: #B80000;
   font-family: ReithSans,Helvetica,Arial,sans-serif;
   font-weight: 700;
@@ -741,18 +741,18 @@ exports[`StoryPromo should render Live promo correctly 1`] = `
     <h3
       class="c4"
     >
-      <span
-        class="c5"
-        dir="ltr"
-        lang="en-GB"
-      >
-        LIVE
-         
-      </span>
       <a
-        class="c6"
+        class="c5"
         href="https://www.bbc.co.uk/news"
       >
+        <span
+          class="c6"
+          dir="ltr"
+          lang="en-GB"
+        >
+          LIVE
+           
+        </span>
         The headline of the promo
       </a>
     </h3>
