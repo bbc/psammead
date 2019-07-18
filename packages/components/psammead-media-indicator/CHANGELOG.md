@@ -3,7 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 | ------- | ----------- |
-| 3.0.0 | [PR#1240](https://github.com/bbc/psammead/pull/1240) Remove unused offscreen text |
+| 2.3.0 | [PR#1240](https://github.com/bbc/psammead/pull/1240) Remove unused offscreen text |
 | 2.2.0 | [PR#1243](https://github.com/bbc/psammead/pull/1243) Add photogallery media icon |
 | 2.1.0 | [PR#1233](https://github.com/bbc/psammead/pull/1233) Add ESM modules entry |
 | 2.0.2 | [PR#1181](https://github.com/bbc/psammead/pull/1181) use `gel-foundations@3.0.3`, `psammead-styles@1.1.3`, `psammead-visually-hidden-text@1.0.7`, `psammead-storybook-helpers@3.1.3`, `psammead-test-helpers@1.0.2`|
