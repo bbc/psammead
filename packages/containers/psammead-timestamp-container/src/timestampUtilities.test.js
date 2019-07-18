@@ -1,3 +1,4 @@
+import moment from 'moment-timezone';
 import {
   formatUnixTimestamp,
   isValidDateTime,
@@ -102,5 +103,88 @@ describe('Timestamp utility functions', () => {
       const expectedOutput = '19 October 2018, 18:10 BST';
       expect(output).toEqual(expectedOutput);
     });
+  });
+});
+
+describe('Moment configuration', () => {
+  it('rounds down', () => {
+    const wouldOtherwiseRoundUp = moment()
+      .subtract(59, 'minutes')
+      .subtract(59, 'seconds');
+
+    // default moment configuration would return 'an hour ago'
+    expect(wouldOtherwiseRoundUp.fromNow()).toEqual('59 minutes ago');
+  });
+
+  it('never reports relative timestamps in seconds', () => {
+    const now = moment();
+    // default moment configuration would return 'a few seconds ago'
+    expect(now.fromNow()).toEqual('a minute ago');
+
+    const ten = moment().subtract(10, 'seconds');
+    // default moment configuration would return '10 seconds ago'
+    expect(ten.fromNow()).toEqual('a minute ago');
+  });
+
+  it('reports all relative timestamps < 1 hour rounded down to nearest minute', () => {
+    const ten = moment().subtract(10, 'minutes');
+    // default moment configuration would return '10 minutes ago' (no change)
+    expect(ten.fromNow()).toEqual('10 minutes ago');
+
+    const fifty = moment().subtract(50, 'minutes');
+    // default moment configuration would return 'an hour ago'
+    expect(fifty.fromNow()).toEqual('50 minutes ago');
+  });
+
+  it('reports all relative timestamps >= 1 hour and < 24 hours rounded down to nearest hour', () => {
+    const one = moment().subtract(1, 'hour');
+    // default moment configuration would return 'an hour ago' (no change)
+    expect(one.fromNow()).toEqual('an hour ago');
+
+    const two = moment().subtract(2, 'hours');
+    // default moment configuration would return '2 hours ago' (no change)
+    expect(two.fromNow()).toEqual('2 hours ago');
+
+    const twentyThree = moment().subtract(23, 'hours');
+    // default moment configuration would return 'a day ago'
+    expect(twentyThree.fromNow()).toEqual('23 hours ago');
+
+    const allButADay = moment()
+      .subtract(23, 'hours')
+      .subtract(59, 'seconds');
+    // default moment configuration would return 'a day ago'
+    expect(allButADay.fromNow()).toEqual('23 hours ago');
+  });
+
+  it('reports all relative timestamps >= 1 day and < 1 month rounded down to nearest day', () => {
+    const one = moment().subtract(1, 'day');
+    // default moment configuration would return 'a day ago' (no change)
+    expect(one.fromNow()).toEqual('a day ago');
+
+    const two = moment().subtract(2, 'days');
+    // default moment configuration would return '2 days ago' (no change)
+    expect(two.fromNow()).toEqual('2 days ago');
+
+    const allButAMonth = moment()
+      .subtract(30, 'days')
+      .add(1, 'second');
+    // default moment configuration would return 'a month ago'
+    expect(allButAMonth.fromNow()).toEqual('29 days ago');
+  });
+
+  it('reports all relative timestamps >= 1 month and < 1 year rounded down to nearest month', () => {
+    const one = moment().subtract(1, 'month');
+    // default moment configuration would return 'a month ago' (no change)
+    expect(one.fromNow()).toEqual('a month ago');
+
+    const two = moment().subtract(2, 'months');
+    // default moment configuration would return '2 months ago' (no change)
+    expect(two.fromNow()).toEqual('2 months ago');
+
+    const allButAYear = moment()
+      .subtract(12, 'months')
+      .add(1, 'second');
+    // default moment configuration would return 'a month ago'
+    expect(allButAYear.fromNow()).toEqual('11 months ago');
   });
 });
