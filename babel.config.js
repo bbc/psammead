@@ -30,7 +30,7 @@ module.exports = {
       {
         ssr: true,
         fileName: false,
-        pure: true,
+        pure: true
       },
     ],
     '@babel/plugin-proposal-export-default-from',
