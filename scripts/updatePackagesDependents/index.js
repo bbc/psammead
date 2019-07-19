@@ -2,10 +2,10 @@ const { exec } = require('shelljs');
 const getPackagesDependents = require('../utilities/getPackagesDependents');
 
 module.exports = packages => {
-  const updateDependents = packagesString =>
+  const updateDependents = packageList =>
     new Promise(resolve => {
       exec(
-        `npx lerna exec --parallel --no-bail -- npx npm-check-updates ${packagesString} -u -a`,
+        `npx lerna exec --parallel --no-bail -- npx npm-check-updates ${packageList} -u -a`,
         {},
         resolve,
       );
