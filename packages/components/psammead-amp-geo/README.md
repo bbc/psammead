@@ -41,7 +41,7 @@ const Wrapper = () => (
         {
         consents: {
           'user-consent': {
-            promptIfUnknownForGeoGroup: 'eu',
+            promptIfUnknownForGeoGroup: 'eea',
             promptUI: 'promptId',
           },
         },
@@ -54,7 +54,7 @@ const Wrapper = () => (
 
 ### When to use this component
 
-Use this component only on AMP pages when you need to have geo-location constrained to a specific list of countries in Europe.
+Use this component only on AMP pages when you need to have geo-location constrained to a specific list of countries in the EEA.
 
 <!-- ### When not to use this component -->
 

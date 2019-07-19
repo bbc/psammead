@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AmpGeo it should render amp-geo with inlined JSON data 1`] = `
+<amp-geo
+  layout="nodisplay"
+>
+  <script
+    type="application/json"
+  >
+    {"ISOCountryGroups":{"eea":["at","be","bg","bl","cy","cz","de","dk","ee","es","fi","fr","gb","gf","gg","gi","gp","gr","hr","hu","ie","im","is","it","je","li","lt","lu","lv","mf","mq","mt","nl","no","pl","pm","pt","re","ro","se","si","sk","yt"]}}
+  </script>
+</amp-geo>
+`;
