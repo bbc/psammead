@@ -1,37 +1,6 @@
 const getPackagesDependents = require('.');
 const parsePackageDependencies = require('./parsePackageDependencies');
 
-const mockExecOutput = `
-{
-  "name": "@bbc/psammead-mock-package2",
-  "version": "1.1.0",
-  "dependencies": {
-    "@bbc/gel-foundations": {},
-    "@bbc/psammead-storybook-helpers": {},
-    "@bbc/psammead-styles": {},
-    "@bbc/psammead-test-helpers": {},
-    "prop-types": {},
-    "react": {},
-    "styled-components": {},
-    "react-dom": {}
-  }
-}
-{
-  "name": "@bbc/psammead-mock-package1",
-  "version": "2.1.0",
-  "dependencies": {
-    "@bbc/gel-foundations": {},
-    "@bbc/psammead-storybook-helpers": {},
-    "@bbc/psammead-styles": {},
-    "@bbc/psammead-test-helpers": {},
-    "prop-types": {},
-    "react": {},
-    "styled-components": {},
-    "react-dom": {}
-  }
-}
-`;
-
 jest.mock('./getAllPackagesDependencies', () => () => [
   {
     name: '@bbc/psammead-assets',
@@ -101,7 +70,37 @@ describe('getPackagesDependents', () => {
     expect(actual).toEqual(expected);
   });
 
-  it("should transform exec string output of mulitple package's dependencies into an array of each package's dependencies", () => {
+  it("should transform exec string output of multiple package's dependencies into an array of each package's dependencies", () => {
+    const mockExecOutput = `
+    {
+      "name": "@bbc/psammead-mock-package2",
+      "version": "1.1.0",
+      "dependencies": {
+        "@bbc/gel-foundations": {},
+        "@bbc/psammead-storybook-helpers": {},
+        "@bbc/psammead-styles": {},
+        "@bbc/psammead-test-helpers": {},
+        "prop-types": {},
+        "react": {},
+        "styled-components": {},
+        "react-dom": {}
+      }
+    }
+    {
+      "name": "@bbc/psammead-mock-package1",
+      "version": "2.1.0",
+      "dependencies": {
+        "@bbc/gel-foundations": {},
+        "@bbc/psammead-storybook-helpers": {},
+        "@bbc/psammead-styles": {},
+        "@bbc/psammead-test-helpers": {},
+        "prop-types": {},
+        "react": {},
+        "styled-components": {},
+        "react-dom": {}
+      }
+    }
+    `;
     const actual = parsePackageDependencies(mockExecOutput);
     const expected = [
       {
