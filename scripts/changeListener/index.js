@@ -3,8 +3,6 @@ const { exec } = require('shelljs');
 const {
   gitAdd,
   gitCommit,
-  gitPull,
-  checkoutBranch,
   createBranch,
   deleteBranch,
 } = require('../utilities/gitCommands');

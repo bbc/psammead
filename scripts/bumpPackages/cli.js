@@ -1,8 +1,7 @@
 const { prompt } = require('enquirer');
 const bumpPackages = require('.');
 const initialPrompt = require('../utilities/initialPrompt');
-const stageFile = require('../utilities/stageFile');
-const commitChanges = require('../utilities/commitChanges');
+const { gitAdd, gitCommit } = require('../utilities/gitCommands');
 const getVersionBumpCommitMessage = require('./getVersionBumpCommitMessage');
 const promptStageAndCommit = require('../utilities/promptStageAndCommit');
 
@@ -29,8 +28,8 @@ initialPrompt('How would you like to enter which packages to bump?')
 
       const packageLockPaths = paths.map(renamePackageJson);
 
-      [...paths, ...packageLockPaths].forEach(stageFile);
-      commitChanges(getVersionBumpCommitMessage(packageNames));
+      [...paths, ...packageLockPaths].forEach(gitAdd);
+      gitCommit(getVersionBumpCommitMessage(packageNames));
     }
   })
   // eslint-disable-next-line no-console

@@ -1,7 +1,6 @@
 const { prompt } = require('enquirer');
 const initialPrompt = require('../utilities/initialPrompt');
-const stageFile = require('../utilities/stageFile');
-const commitChanges = require('../utilities/commitChanges');
+const { gitAdd, gitCommit } = require('../utilities/gitCommands');
 const getChangelogCommitMessage = require('./getChangelogCommitMessage');
 const bumpChangelogs = require('.');
 const promptStageAndCommit = require('../utilities/promptStageAndCommit');
@@ -31,8 +30,8 @@ initialPrompt(
   .then(promptStageAndCommit)
   .then(({ packageNames, paths, shouldCommitChanges }) => {
     if (shouldCommitChanges) {
-      paths.forEach(stageFile);
-      commitChanges(getChangelogCommitMessage(packageNames));
+      paths.forEach(gitAdd);
+      gitCommit(getChangelogCommitMessage(packageNames));
     }
   })
   // eslint-disable-next-line no-console
