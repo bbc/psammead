@@ -280,7 +280,7 @@ export const LiveLabel = ({ service, text, dir }) => (
 LiveLabel.propTypes = {
   service: string.isRequired,
   text: string.isRequired,
-  dir: oneOf(['rlt', 'ltr']),
+  dir: oneOf(['rtl', 'ltr']),
 };
 
 LiveLabel.defaultProps = {
