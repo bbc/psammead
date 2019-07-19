@@ -1,4 +1,36 @@
 const getPackagesDependents = require('.');
+const parsePackageDependencies = require('./parsePackageDependencies');
+
+const mockExecOutput = `
+{
+  "name": "@bbc/psammead-mock-package2",
+  "version": "1.1.0",
+  "dependencies": {
+    "@bbc/gel-foundations": {},
+    "@bbc/psammead-storybook-helpers": {},
+    "@bbc/psammead-styles": {},
+    "@bbc/psammead-test-helpers": {},
+    "prop-types": {},
+    "react": {},
+    "styled-components": {},
+    "react-dom": {}
+  }
+}
+{
+  "name": "@bbc/psammead-mock-package1",
+  "version": "2.1.0",
+  "dependencies": {
+    "@bbc/gel-foundations": {},
+    "@bbc/psammead-storybook-helpers": {},
+    "@bbc/psammead-styles": {},
+    "@bbc/psammead-test-helpers": {},
+    "prop-types": {},
+    "react": {},
+    "styled-components": {},
+    "react-dom": {}
+  }
+}
+`;
 
 jest.mock('./getAllPackagesDependencies', () => () => [
   {
@@ -65,6 +97,40 @@ describe('getPackagesDependents', () => {
       '@bbc/psammead-image',
     ]);
     const expected = ['@bbc/psammead-navigation', '@bbc/psammead-figure'];
+
+    expect(actual).toEqual(expected);
+  });
+
+  it("should transform exec string output of mulitple package's dependencies into an array of each package's dependencies", () => {
+    const actual = parsePackageDependencies(mockExecOutput);
+    const expected = [
+      {
+        name: '@bbc/psammead-mock-package2',
+        dependencies: [
+          '@bbc/gel-foundations',
+          '@bbc/psammead-storybook-helpers',
+          '@bbc/psammead-styles',
+          '@bbc/psammead-test-helpers',
+          'prop-types',
+          'react',
+          'styled-components',
+          'react-dom',
+        ],
+      },
+      {
+        name: '@bbc/psammead-mock-package1',
+        dependencies: [
+          '@bbc/gel-foundations',
+          '@bbc/psammead-storybook-helpers',
+          '@bbc/psammead-styles',
+          '@bbc/psammead-test-helpers',
+          'prop-types',
+          'react',
+          'styled-components',
+          'react-dom',
+        ],
+      },
+    ];
 
     expect(actual).toEqual(expected);
   });
