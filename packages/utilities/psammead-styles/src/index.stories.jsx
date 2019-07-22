@@ -9,6 +9,7 @@ import {
 import { latin } from '@bbc/gel-foundations/scripts';
 import notes from '../README.md';
 import * as colours from './colours';
+import { grid } from './detection';
 
 const ColourContainer = styled.div`
   padding: ${GEL_SPACING_DBL};
@@ -36,19 +37,47 @@ const ColourValue = styled.div`
   ${getBodyCopy(latin)};
 `;
 
-storiesOf('Utilities|Psammead Styles', module).add(
-  'colours',
-  () => (
-    <ColourContainer>
-      {Object.keys(colours).map(colour => (
-        <ColourRow key={colours[colour]}>
-          <ColourBox colour={colours[colour]}>{colours[colour]}</ColourBox>
-          <ColourValue>{colour}</ColourValue>
-        </ColourRow>
-      ))}
-    </ColourContainer>
-  ),
-  {
-    notes,
-  },
-);
+const Detects = styled.li`
+  color: red;
+  &::after {
+    content: ' = NO';
+  }
+
+  @supports (${props => props.detector}) {
+    color: green;
+    &::after {
+      content: ' = YES';
+    }
+  }
+`;
+
+const detectionExamples = ['display: grid', grid];
+
+storiesOf('Utilities|Psammead Styles', module)
+  .add(
+    'colours',
+    () => (
+      <ColourContainer>
+        {Object.keys(colours).map(colour => (
+          <ColourRow key={colours[colour]}>
+            <ColourBox colour={colours[colour]}>{colours[colour]}</ColourBox>
+            <ColourValue>{colour}</ColourValue>
+          </ColourRow>
+        ))}
+      </ColourContainer>
+    ),
+    { notes },
+  )
+  .add(
+    'CSS feature detection',
+    () => (
+      <ul>
+        {detectionExamples.map(ex => (
+          <Detects key={ex} detector={ex}>
+            <pre>@supports ({ex})</pre>
+          </Detects>
+        ))}
+      </ul>
+    ),
+    { notes },
+  );
