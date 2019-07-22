@@ -80,7 +80,7 @@
     "jest": "^24.5.0",
     "jest-fetch-mock": "^2.1.2",
     "jest-styled-components": "^6.3.3",
-    "lerna": "^3.15.0",
+    "lerna": "^3.16.1",
     "prettier": "^1.18.2",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
