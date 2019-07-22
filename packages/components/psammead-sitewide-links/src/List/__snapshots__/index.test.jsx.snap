@@ -74,13 +74,13 @@ exports[`List should render correctly with 7 items 1`] = `
   }
 }
 
-@supports not (display:grid) {
+@supports not (grid-template-columns:fit-content(200px)) {
   .c0 > li:first-child {
     width: 100%;
   }
 }
 
-@supports not (display:grid) {
+@supports not (grid-template-columns:fit-content(200px)) {
   .c1 {
     display: inline-block;
   }
@@ -272,13 +272,13 @@ exports[`List should render correctly with 8 items 1`] = `
   }
 }
 
-@supports not (display:grid) {
+@supports not (grid-template-columns:fit-content(200px)) {
   .c0 > li:first-child {
     width: 100%;
   }
 }
 
-@supports not (display:grid) {
+@supports not (grid-template-columns:fit-content(200px)) {
   .c1 {
     display: inline-block;
   }

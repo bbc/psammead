@@ -13,6 +13,7 @@ import {
   GEL_GROUP_4_SCREEN_WIDTH_MAX,
   GEL_GROUP_5_SCREEN_WIDTH_MIN,
 } from '@bbc/gel-foundations/breakpoints';
+import { grid } from '@bbc/psammead-styles/detection';
 
 import Link from '../Link';
 
@@ -68,7 +69,7 @@ const StyledList = styled.ul`
     padding: ${GEL_SPACING} 0;
     margin-bottom: ${GEL_SPACING};
     grid-column: 1/-1;
-    @supports not (display: grid) {
+    @supports not (${grid}) {
       width: 100%;
     }
   }
@@ -76,7 +77,7 @@ const StyledList = styled.ul`
 
 const StyledListItem = styled.li`
   min-width: 50%;
-  @supports not (display: grid) {
+  @supports not (${grid}) {
     display: inline-block;
   }
 `;

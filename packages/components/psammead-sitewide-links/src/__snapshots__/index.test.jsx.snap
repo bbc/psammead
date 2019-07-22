@@ -103,13 +103,13 @@ exports[`SitewideLinks should render correctly 1`] = `
   }
 }
 
-@supports not (display:grid) {
+@supports not (grid-template-columns:fit-content(200px)) {
   .c2 > li:first-child {
     width: 100%;
   }
 }
 
-@supports not (display:grid) {
+@supports not (grid-template-columns:fit-content(200px)) {
   .c3 {
     display: inline-block;
   }
