@@ -31,7 +31,7 @@
   },
   "devDependencies": {
     "@bbc/psammead-storybook-helpers": "^3.3.0",
-    "@bbc/psammead-test-helpers": "^1.0.2",
+    "@bbc/psammead-test-helpers": "^1.1.0",
     "react": "^16.8.6"
   },
   "peerDependencies": {
