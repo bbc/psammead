@@ -3,7 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
-| 1.2.0-alpha.2 | [PR#xxx](https://github.com/bbc/psammead/pull/xxx) Fix pre-wrap hover bug |
+| 1.2.0-alpha.2 | [PR#1405](https://github.com/bbc/psammead/pull/1405) Fix pre-wrap hover bug |
 | 1.2.0-alpha.1 | [PR#1233](https://github.com/bbc/psammead/pull/1233) Add ESM modules entry |
 | 1.1.11-alpha.1 | [PR#1023](https://github.com/bbc/psammead/pull/1023) Default styling should have padding and margin to fix hover/focus bug |
 | 1.1.10  | [PR#1181](https://github.com/bbc/psammead/pull/1181) use `psammead-styles@1.1.3`, `psammead-storybook-helpers@3.1.3`, `psammead-test-helpers@1.0.2`|
