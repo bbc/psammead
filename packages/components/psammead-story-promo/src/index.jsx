@@ -256,7 +256,7 @@ export const Link = styled.a`
   }
 `;
 
-export const LiveLabel = styled.span.attrs({ 'arria-hiden': true })`
+export const LiveLabel = styled.span.attrs({ 'aria-hidden': 'true' })`
   color: ${C_POSTBOX};
   ${({ service }) => getSansBold(service)}
   text-decoration:none;
