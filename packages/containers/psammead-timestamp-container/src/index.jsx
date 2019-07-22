@@ -65,7 +65,7 @@ TimestampContainer.defaultProps = {
   padding: true,
   prefix: null,
   suffix: null,
-  locale: null,
+  locale: 'en-GB',
 };
 
 export default TimestampContainer;
