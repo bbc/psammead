@@ -14,7 +14,7 @@ module.exports = (packageDir, packageJson, attempted) => {
   const { access, tag } = publishConfig(packageJson);
 
   const execute = exec(
-    `npm publish ${packageDir} --access ${access} --tag ${tag} --dry`,
+    `npm publish ${packageDir} --access ${access} --tag ${tag}`,
     {
       silent: true,
     },

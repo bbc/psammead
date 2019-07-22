@@ -47,11 +47,11 @@ pipeline {
         }
         sh 'make install'
         sh 'make code-coverage-before-build'
-        // sh 'make tests'
-        // withCredentials([string(credentialsId: 'psammead-cc-reporter-id', variable: 'CC_TEST_REPORTER_ID')]) {
-        //   sh 'make code-coverage-after-build'
-        // }
-        // sh 'make change-scanner'
+        sh 'make tests'
+        withCredentials([string(credentialsId: 'psammead-cc-reporter-id', variable: 'CC_TEST_REPORTER_ID')]) {
+          sh 'make code-coverage-after-build'
+        }
+        sh 'make change-scanner'
       }
       post {
         always {
@@ -63,7 +63,7 @@ pipeline {
     }
     stage ('Deploy Storybook & Publish to NPM') {
       when {
-        expression { env.BRANCH_NAME == 'logPublishes' }
+        expression { env.BRANCH_NAME == 'latest' }
       }
       agent {
         docker {
@@ -73,7 +73,7 @@ pipeline {
         }
       }
       steps {
-        // sh 'make storybook'
+        sh 'make storybook'
         sh 'rm published.txt || true'
         withCredentials([string(credentialsId: 'npm_bbc-online_read_write', variable: 'NPM_TOKEN')]) {
           sh 'make publish'
@@ -91,7 +91,7 @@ pipeline {
     }
     stage ('Bump Dependants') {
       when {
-        expression { env.BRANCH_NAME == 'logPublishes' }
+        expression { env.BRANCH_NAME == 'latest' }
       }
       agent {
         docker {
