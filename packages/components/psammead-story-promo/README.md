@@ -44,7 +44,6 @@ The `LiveLabel` component is to be used inside a `Link` in index pages to show a
 | Argument  | Type | Required | Default | Example |
 | --------- | ---- | -------- | ------- | ------- |
 | service | string | yes | N/A | `'news'` |
-| text | string | yes | N/A | `'This is a live event headline'` |
 | dir | string | no | `'ltr'`| `'rtl'` |
 
 ## Usage
@@ -64,15 +63,26 @@ import StoryPromo, {
   LiveLabel,
 } from '@bbc/psammead-story-promo';
 import { latin } from '@bbc/gel-foundations/scripts';
+import VisuallyHiddenText from "@bbc/psammead-visually-hidden-text'
 
 const Image = <img src="https://foobar.com/image.jpg" />;
+
+const LiveComponent = ({ headline, service, dir }) => (
+  <span role="text">
+    <LiveLabel service={service} dir={dir}>
+      LIVE
+    </LiveLabel>
+    <VisuallyHiddenText lang="en-GB">Live, </VisuallyHiddenText>
+    <span>{headline}</span>
+  </span>
+);
 
 const Info = ({ isLive }) => (
   <Fragment>
     <Headline script={latin} topStory={true} service="news">
       <Link href="https://www.bbc.co.uk/news">
         {isLive ? (
-          <LiveLabel service="news" text="The headline of the live promo" />
+          <LiveComponent service="news" headline="The headline of the live promo" />
         ): The headline of the promo}
       </Link>
     </Headline>

@@ -30,7 +30,6 @@ import {
   getSerifBold,
   getSansBold,
 } from '@bbc/psammead-styles/font-styles';
-import VisuallyHiddenText from '@bbc/psammead-visually-hidden-text';
 
 const twoOfSixColumnsMaxWidthScaleable = `33.33%`;
 // (2 / 6) * 100 = 0.3333333333 = 33.33%
@@ -257,7 +256,7 @@ export const Link = styled.a`
   }
 `;
 
-const StyledLiveLabel = styled.span`
+export const LiveLabel = styled.span.attrs({ 'arria-hiden': true })`
   color: ${C_POSTBOX};
   ${({ service }) => getSansBold(service)}
   text-decoration:none;
@@ -266,20 +265,8 @@ const StyledLiveLabel = styled.span`
     dir === 'rtl' ? 'margin-left: 0.5rem;' : 'margin-right: 0.5rem;'}
 `;
 
-export const LiveLabel = ({ service, text, dir }) => (
-  // eslint-disable-next-line jsx-a11y/aria-role
-  <span role="text">
-    <StyledLiveLabel service={service} aria-hidden="true" dir={dir}>
-      LIVE
-    </StyledLiveLabel>
-    <VisuallyHiddenText lang="en-GB">Live, </VisuallyHiddenText>
-    <span>{text}</span>
-  </span>
-);
-
 LiveLabel.propTypes = {
   service: string.isRequired,
-  text: string.isRequired,
   dir: oneOf(['rtl', 'ltr']),
 };
 

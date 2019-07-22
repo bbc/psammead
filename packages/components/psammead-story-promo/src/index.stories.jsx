@@ -5,8 +5,21 @@ import { inputProvider } from '@bbc/psammead-storybook-helpers';
 import Image from '@bbc/psammead-image';
 import Timestamp from '@bbc/psammead-timestamp';
 import MediaIndicator from '@bbc/psammead-media-indicator';
+import VisuallyHiddenText from '@bbc/psammead-visually-hidden-text';
 import notes from '../README.md';
 import StoryPromo, { Headline, Summary, Link, LiveLabel } from './index';
+
+/* eslint-disable-next-line react/prop-types */
+const LiveComponent = ({ headline, service, dir }) => (
+  /* eslint-disable-next-line jsx-a11y/aria-role */
+  <span role="text">
+    <LiveLabel service={service} dir={dir}>
+      LIVE
+    </LiveLabel>
+    <VisuallyHiddenText lang="en-GB">Live, </VisuallyHiddenText>
+    <span>{headline}</span>
+  </span>
+);
 
 /* eslint-disable react/prop-types */
 const InfoComponent = ({
@@ -22,7 +35,7 @@ const InfoComponent = ({
     <Headline script={script} topStory={topStory} service={service}>
       <Link href="https://www.bbc.co.uk/news">
         {isLive ? (
-          <LiveLabel service={service} dir={dir} text={headlineText} />
+          <LiveComponent service={service} dir={dir} headline={headlineText} />
         ) : (
           headlineText
         )}

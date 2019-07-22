@@ -3,16 +3,29 @@ import { shouldMatchSnapshot } from '@bbc/psammead-test-helpers';
 import { latin } from '@bbc/gel-foundations/scripts';
 import MediaIndicator from '@bbc/psammead-media-indicator';
 import { render } from '@testing-library/react';
+import VisuallyHiddenText from '@bbc/psammead-visually-hidden-text';
 import StoryPromo, { Headline, Summary, Link, LiveLabel } from './index';
 
 const Image = <img src="https://foobar.com/image.png" alt="Alt text" />;
+
+/* eslint-disable-next-line react/prop-types */
+const LiveComponent = ({ headline, service }) => (
+  /* eslint-disable-next-line jsx-a11y/aria-role */
+  <span role="text">
+    <LiveLabel service={service}>LIVE</LiveLabel>
+    <VisuallyHiddenText lang="en-GB">Live, </VisuallyHiddenText>
+    <span>{headline}</span>
+  </span>
+);
 
 // eslint-disable-next-line react/prop-types
 const Info = ({ topStory, isLive }) => (
   <Fragment>
     <Headline script={latin} topStory={topStory} service="news">
       <Link href="https://www.bbc.co.uk/news">
-        {isLive && <LiveLabel service="news" />}
+        {isLive && (
+          <LiveComponent headline="The live promo headline" service="news" />
+        )}
         The headline of the promo
       </Link>
     </Headline>
