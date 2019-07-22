@@ -3,7 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 | ------- | ----------- |
-| 2.2.0 | [PR#XXX](https://github.com/bbc/psammead/pull/XXX) Use `@bbc/psammead-styles/detection` to detect grid support |
+| 2.2.0 | [PR#1408](https://github.com/bbc/psammead/pull/1408) Use `@bbc/psammead-styles/detection` to detect grid support |
 | 2.1.0 | [PR#1233](https://github.com/bbc/psammead/pull/1233) Add ESM modules entry |
 | 2.0.4 | [PR#1089](https://github.com/bbc/psammead/pull/1089) Remove extra margin from 1st story promo |
 | 2.0.3 | [PR#1182](https://github.com/bbc/psammead/pull/1182) Bump dependencies and update test/story to have `service` prop |
