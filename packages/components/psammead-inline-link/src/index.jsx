@@ -23,7 +23,6 @@ const InlineLink = styled.a`
     background-color: ${C_POSTBOX};
     border-bottom: 2px solid ${C_POSTBOX};
     color: ${C_WHITE};
-    white-space: pre-wrap;
   }
 `;
 
