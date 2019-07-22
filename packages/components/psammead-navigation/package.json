@@ -21,7 +21,7 @@
   "dependencies": {
     "@bbc/gel-foundations": "^3.0.3",
     "@bbc/psammead-styles": "^1.1.3",
-    "@bbc/psammead-visually-hidden-text": "^1.0.7"
+    "@bbc/psammead-visually-hidden-text": "^1.1.0"
   },
   "devDependencies": {
     "@bbc/psammead-assets": "^1.0.6",
