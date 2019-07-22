@@ -3,6 +3,8 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 2.1.1 | [PR#1362](https://github.com/bbc/psammead/pull/1362) Use `text-decoration` styling instead of border-bottom |
+| 2.1.0 | [PR#1233](https://github.com/bbc/psammead/pull/1233) Add ESM modules entry |
 | 2.0.3   | [PR#1181](https://github.com/bbc/psammead/pull/1181) use `gel-foundations@3.0.3`, `psammead-styles@1.1.3`, `psammead-storybook-helpers@3.1.3`, `psammead-test-helpers@1.0.2` |
 | 2.0.2   | [PR#1082](https://github.com/bbc/psammead/pull/1082) Bump lodash security vulnerability |
 | 2.0.1   | [PR#892](https://github.com/bbc/psammead/pull/892) Bump dependencies |
