@@ -139,7 +139,7 @@ export const Headline = styled.h3`
     }
 
     return topStory ? getParagon(script) : getPica(script);
-  }};
+  }}
 
   color: ${C_EBON};
   ${({ service }) => getSerifBold(service)}
