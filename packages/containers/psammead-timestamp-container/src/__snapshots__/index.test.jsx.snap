@@ -35,7 +35,7 @@ exports[`Timestamp should add prefix and suffix 1`] = `
   datetime="2018-10-19"
 >
   Prefix here  
-  ۱۹ اکتبر ۲۰۱۸
+  19 October 2018
     suffix here
 </time>
 `;
@@ -76,7 +76,7 @@ exports[`Timestamp should render correctly 1`] = `
   class="c0"
   datetime="2018-10-19"
 >
-  ۱۹ اکتبر ۲۰۱۸
+  19 October 2018
 </time>
 `;
 
