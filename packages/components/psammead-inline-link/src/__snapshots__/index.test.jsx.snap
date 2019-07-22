@@ -20,7 +20,6 @@ exports[`InlineLink should render correctly 1`] = `
   background-color: #B80000;
   border-bottom: 2px solid #B80000;
   color: #FFFFFF;
-  white-space: pre-wrap;
 }
 
 <a
