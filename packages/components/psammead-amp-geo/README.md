@@ -30,7 +30,6 @@ Then you can import the AmpGeo component & use it in conjunction with `<amp-cons
 ```jsx
 import AmpGeo from '@bbc/psammead-amp-geo';
 
-
 const Wrapper = () => (
   <>
     <AmpGeo />

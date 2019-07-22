@@ -18,7 +18,6 @@
     "url": "https://github.com/bbc/psammead/issues"
   },
   "homepage": "https://github.com/bbc/psammead/blob/latest/packages/components/psammead-amp-geo/README.md",
-  "dependencies": {},
   "devDependencies": {
     "@bbc/psammead-storybook-helpers": "^3.3.0",
     "@bbc/psammead-test-helpers": "^1.1.0",
