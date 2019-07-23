@@ -25,6 +25,7 @@ const ampGeoData = {
       'gr',
       'hr',
       'hu',
+      'ic',
       'ie',
       'im',
       'is',
