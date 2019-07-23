@@ -17,13 +17,20 @@ tests:
 	npm run build;
 	npm test;
 
-storybook:
+setup-git:
 	git remote set-url origin "https://${GITHUB_TOKEN}@github.com/bbc/psammead.git"
 	# These user config values are needed to avoid error being throw.
 	# These arnt used for authentication however, as it uses the provided github token.
 	git config user.email "foo@bar.com"
 	git config user.name "BBC News CI"
+
+storybook:
+	make setup-git;
 	npm run deploy-storybook;
+
+bump-dependants:
+	make setup-git
+	npm run updateDependants
 
 publish:
 	echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" > .npmrc
