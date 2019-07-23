@@ -4,6 +4,7 @@
 | Version | Description |
 | ------- | ----------- |
 | 2.2.0 | [PR#1359](https://github.com/bbc/psammead/pull/1359) Add LiveLabel to story promo exports |
+| 2.1.2 | [PR#1409](https://github.com/bbc/psammead/pull/1409) Bump media-indicator to v2.3.0 |
 | 2.1.1 | [PR#1365](https://github.com/bbc/psammead/pull/1365) Bump psammead-styles to 1.2.0 |
 | 2.1.0 | [PR#1233](https://github.com/bbc/psammead/pull/1233) Add ESM modules entry |
 | 2.0.4   |  [PR#1089](https://github.com/bbc/psammead/pull/1089) Remove extra margin from 1st story promo |

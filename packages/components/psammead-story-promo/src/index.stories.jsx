@@ -67,12 +67,7 @@ const buildImg = () => (
 );
 
 const MediaIndicatorComponent = (
-  <MediaIndicator
-    duration="2:15"
-    datetime="PT2M15S"
-    offscreenText="Video 2 minutes 15 seconds"
-    service="news"
-  />
+  <MediaIndicator duration="2:15" datetime="PT2M15S" service="news" />
 );
 
 const generateStory = ({ mediaIndicator, topStory }) =>

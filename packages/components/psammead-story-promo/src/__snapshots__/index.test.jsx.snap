@@ -221,18 +221,6 @@ exports[`StoryPromo - Top Story should render correctly 1`] = `
 `;
 
 exports[`StoryPromo - Top Story with Media Indicator should render correctly 1`] = `
-.c7 {
-  -webkit-clip-path: inset(100%);
-  clip-path: inset(100%);
-  -webkit-clip: rect(1px,1px,1px,1px);
-  clip: rect(1px,1px,1px,1px);
-  height: 1px;
-  overflow: hidden;
-  position: absolute;
-  width: 1px;
-  margin: 0;
-}
-
 .c6 {
   vertical-align: middle;
   margin: 0 0.25rem;
@@ -267,7 +255,7 @@ exports[`StoryPromo - Top Story with Media Indicator should render correctly 1`]
   height: 100%;
 }
 
-.c8 {
+.c7 {
   vertical-align: middle;
   margin: 0 0.25rem;
 }
@@ -293,7 +281,7 @@ exports[`StoryPromo - Top Story with Media Indicator should render correctly 1`]
   bottom: 0;
 }
 
-.c10 {
+.c9 {
   font-size: 0.9375rem;
   line-height: 1.25rem;
   font-size: 1.25rem;
@@ -306,7 +294,7 @@ exports[`StoryPromo - Top Story with Media Indicator should render correctly 1`]
   padding-bottom: 0.5rem;
 }
 
-.c12 {
+.c11 {
   font-size: 0.9375rem;
   line-height: 1.125rem;
   color: #3F3F42;
@@ -317,19 +305,19 @@ exports[`StoryPromo - Top Story with Media Indicator should render correctly 1`]
   padding-bottom: 0.5rem;
 }
 
-.c9 {
+.c8 {
   display: inline-block;
   vertical-align: top;
 }
 
-.c11 {
+.c10 {
   position: static;
   color: #222222;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.c11:before {
+.c10:before {
   bottom: 0;
   content: '';
   left: 0;
@@ -341,13 +329,13 @@ exports[`StoryPromo - Top Story with Media Indicator should render correctly 1`]
   z-index: 1;
 }
 
-.c11:hover,
-.c11:focus {
+.c10:hover,
+.c10:focus {
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
-.c11:visited {
+.c10:visited {
   color: #6E6E73;
 }
 
@@ -388,74 +376,74 @@ exports[`StoryPromo - Top Story with Media Indicator should render correctly 1`]
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
-  .c10 {
+  .c9 {
     font-size: 1rem;
     line-height: 1.25rem;
   }
 }
 
 @media (min-width:37.5rem) {
-  .c10 {
+  .c9 {
     font-size: 1rem;
     line-height: 1.25rem;
   }
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
-  .c10 {
+  .c9 {
     font-size: 1.375rem;
     line-height: 1.625rem;
   }
 }
 
 @media (min-width:37.5rem) {
-  .c10 {
+  .c9 {
     font-size: 1.75rem;
     line-height: 2rem;
   }
 }
 
 @media (min-width:37.5rem) {
-  .c10 {
+  .c9 {
     font-size: 1.125rem;
     line-height: 1.375rem;
   }
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
-  .c12 {
+  .c11 {
     font-size: 0.9375rem;
     line-height: 1.125rem;
   }
 }
 
 @media (min-width:37.5rem) {
-  .c12 {
+  .c11 {
     font-size: 0.875rem;
     line-height: 1.125rem;
   }
 }
 
 @media (min-width:37.5rem) {
-  .c9 {
+  .c8 {
     width: 66.67%;
   }
 }
 
 @media (min-width:37.5rem) {
-  .c9 {
+  .c8 {
     padding: 0 1rem;
   }
 }
 
 @media (min-width:80rem) {
-  .c9 {
+  .c8 {
     width: 66.67%;
   }
 }
 
 @supports (display:grid) {
-  .c9 {
+  .c8 {
     display: block;
     width: initial;
     padding: initial;
@@ -497,13 +485,8 @@ exports[`StoryPromo - Top Story with Media Indicator should render correctly 1`]
                 points="3,32 29,16 3,0"
               />
             </svg>
-            <span
-              class="c7"
-            >
-              Video 2 minutes 15 seconds
-            </span>
             <time
-              class="c8"
+              class="c7"
               datetime="PT2M15S"
             >
               2:15
@@ -514,20 +497,20 @@ exports[`StoryPromo - Top Story with Media Indicator should render correctly 1`]
     </div>
   </div>
   <div
-    class="c9"
+    class="c8"
   >
     <h3
-      class="c10"
+      class="c9"
     >
       <a
-        class="c11"
+        class="c10"
         href="https://www.bbc.co.uk/news"
       >
         The headline of the promo
       </a>
     </h3>
     <p
-      class="c12"
+      class="c11"
     >
       The summary of the promo
     </p>
@@ -1007,18 +990,6 @@ exports[`StoryPromo should render correctly 1`] = `
 `;
 
 exports[`StoryPromo with Media Indicator should render correctly 1`] = `
-.c7 {
-  -webkit-clip-path: inset(100%);
-  clip-path: inset(100%);
-  -webkit-clip: rect(1px,1px,1px,1px);
-  clip: rect(1px,1px,1px,1px);
-  height: 1px;
-  overflow: hidden;
-  position: absolute;
-  width: 1px;
-  margin: 0;
-}
-
 .c6 {
   vertical-align: middle;
   margin: 0 0.25rem;
@@ -1053,7 +1024,7 @@ exports[`StoryPromo with Media Indicator should render correctly 1`] = `
   height: 100%;
 }
 
-.c8 {
+.c7 {
   vertical-align: middle;
   margin: 0 0.25rem;
 }
@@ -1073,7 +1044,7 @@ exports[`StoryPromo with Media Indicator should render correctly 1`] = `
   position: relative;
 }
 
-.c10 {
+.c9 {
   font-size: 0.9375rem;
   line-height: 1.25rem;
   font-size: 0.9375rem;
@@ -1086,7 +1057,7 @@ exports[`StoryPromo with Media Indicator should render correctly 1`] = `
   padding-bottom: 0.5rem;
 }
 
-.c12 {
+.c11 {
   font-size: 0.9375rem;
   line-height: 1.125rem;
   color: #3F3F42;
@@ -1097,21 +1068,21 @@ exports[`StoryPromo with Media Indicator should render correctly 1`] = `
   padding-bottom: 0.5rem;
 }
 
-.c9 {
+.c8 {
   display: inline-block;
   vertical-align: top;
   width: 66.67%;
   padding: 0 0.5rem;
 }
 
-.c11 {
+.c10 {
   position: static;
   color: #222222;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.c11:before {
+.c10:before {
   bottom: 0;
   content: '';
   left: 0;
@@ -1123,13 +1094,13 @@ exports[`StoryPromo with Media Indicator should render correctly 1`] = `
   z-index: 1;
 }
 
-.c11:hover,
-.c11:focus {
+.c10:hover,
+.c10:focus {
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
-.c11:visited {
+.c10:visited {
   color: #6E6E73;
 }
 
@@ -1170,75 +1141,75 @@ exports[`StoryPromo with Media Indicator should render correctly 1`] = `
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
-  .c10 {
+  .c9 {
     font-size: 1rem;
     line-height: 1.25rem;
   }
 }
 
 @media (min-width:37.5rem) {
-  .c10 {
+  .c9 {
     font-size: 1rem;
     line-height: 1.25rem;
   }
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
-  .c10 {
+  .c9 {
     font-size: 1rem;
     line-height: 1.25rem;
   }
 }
 
 @media (min-width:37.5rem) {
-  .c10 {
+  .c9 {
     font-size: 1rem;
     line-height: 1.25rem;
   }
 }
 
 @media (min-width:37.5rem) {
-  .c10 {
+  .c9 {
     font-size: 1.125rem;
     line-height: 1.375rem;
   }
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
-  .c12 {
+  .c11 {
     font-size: 0.9375rem;
     line-height: 1.125rem;
   }
 }
 
 @media (min-width:37.5rem) {
-  .c12 {
+  .c11 {
     font-size: 0.875rem;
     line-height: 1.125rem;
   }
 }
 
 @media (max-width:37.4375rem) {
-  .c12 {
+  .c11 {
     display: none;
     visibility: hidden;
   }
 }
 
 @media (min-width:37.5rem) {
-  .c9 {
+  .c8 {
     padding: 0 1rem;
   }
 }
 
 @media (min-width:80rem) {
-  .c9 {
+  .c8 {
     width: 66.67%;
   }
 }
 
 @supports (display:grid) {
-  .c9 {
+  .c8 {
     display: block;
     width: initial;
     padding: initial;
@@ -1280,13 +1251,8 @@ exports[`StoryPromo with Media Indicator should render correctly 1`] = `
                 points="3,32 29,16 3,0"
               />
             </svg>
-            <span
-              class="c7"
-            >
-              Video 2 minutes 15 seconds
-            </span>
             <time
-              class="c8"
+              class="c7"
               datetime="PT2M15S"
             >
               2:15
@@ -1297,20 +1263,20 @@ exports[`StoryPromo with Media Indicator should render correctly 1`] = `
     </div>
   </div>
   <div
-    class="c9"
+    class="c8"
   >
     <h3
-      class="c10"
+      class="c9"
     >
       <a
-        class="c11"
+        class="c10"
         href="https://www.bbc.co.uk/news"
       >
         The headline of the promo
       </a>
     </h3>
     <p
-      class="c12"
+      class="c11"
     >
       The summary of the promo
     </p>
