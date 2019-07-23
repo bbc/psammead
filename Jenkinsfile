@@ -74,9 +74,35 @@ pipeline {
       }
       steps {
         sh 'make storybook'
+        sh 'rm published.txt || true'
         withCredentials([string(credentialsId: 'npm_bbc-online_read_write', variable: 'NPM_TOKEN')]) {
           sh 'make publish'
         }
+        stash name: 'psammead-publishes', includes: 'published.txt'
+        sh 'rm published.txt || true'
+      }
+      post {
+        always {
+          script {
+            stageName = env.STAGE_NAME
+          }
+        }
+      }
+    }
+    stage ('Bump Dependants') {
+      when {
+        expression { env.BRANCH_NAME == 'latest' }
+      }
+      agent {
+        docker {
+          image "${nodeImage}"
+          label nodeName
+          args '-u root -v /etc/pki:/certs'
+        }
+      }
+      steps {
+        unstash 'psammead-publishes'
+        sh 'make bump-dependants'
       }
       post {
         always {
