@@ -38,7 +38,9 @@ stuff.then(bumpedPackages => {
       }),
     )
     .then(() => {
-      execSync(`git config remote.origin.fetch '+refs/heads/*:refs/remotes/origin/*'`);
+      execSync(
+        `git config remote.origin.fetch '+refs/heads/*:refs/remotes/origin/*'`,
+      );
       execSync(`git fetch --all`);
       execSync(`git checkout latest`);
       execSync(`git checkout -b BumperBot${getDate()}`);
