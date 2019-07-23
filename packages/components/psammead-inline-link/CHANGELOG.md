@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 1.2.0-alpha.3 | [PR#1365](https://github.com/bbc/psammead/pull/1365) Bump psammead-styles to 1.2.0 |
 | 1.2.0-alpha.2 | [PR#1405](https://github.com/bbc/psammead/pull/1405) Fix pre-wrap hover bug |
 | 1.2.0-alpha.1 | [PR#1233](https://github.com/bbc/psammead/pull/1233) Add ESM modules entry |
 | 1.1.11-alpha.1 | [PR#1023](https://github.com/bbc/psammead/pull/1023) Default styling should have padding and margin to fix hover/focus bug |
