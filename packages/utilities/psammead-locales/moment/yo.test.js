@@ -2,7 +2,7 @@
 import moment from 'moment';
 import './yo';
 
-moment.locale('yo')
+moment.locale('yo');
 
 // This asset overrides the gunit assertion done in the moment codebase.
 // Format and styling of this file has been keep consistent with the official moment tests.
