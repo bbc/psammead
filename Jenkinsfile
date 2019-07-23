@@ -91,7 +91,7 @@ pipeline {
     }
     stage ('Bumper Bot') {
       when {
-        expression { env.BRANCH_NAME == 'BumperBotIntegrate' }
+        expression { env.BRANCH_NAME == 'BumperBotIntegrate-new' }
       }
       agent {
         docker {
