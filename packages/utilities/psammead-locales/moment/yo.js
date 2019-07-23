@@ -1,4 +1,5 @@
 const moment = require('moment');
+require('moment/locale/yo');
 
 moment.updateLocale('yo', {
   relativeTime: {
