@@ -14,6 +14,8 @@ import {
   GEL_SPACING_TRPL,
 } from '@bbc/gel-foundations/spacings';
 
+import png from './pngs/Afaan_Oromoo_48h.png';
+
 const SVG_TOP_OFFSET_ABOVE_400PX = '1.75rem'; // 28px
 const SVG_BOTTOM_OFFSET_BELOW_400PX = '0.75rem'; // 12px
 const PADDING_AROUND_SVG_ABOVE_400PX = 56;
@@ -91,13 +93,34 @@ const svgSupport = () =>
   !!document.createElementNS &&
   !!document.createElementNS('http://www.w3.org/2000/svg', 'svg').createSVGRect;
 
+const PngImg = styled.img`
+  /* stylelint-disable */
+  /* https://www.styled-components.com/docs/advanced#referring-to-other-components */
+  ${StyledLink}:hover &,
+  ${StyledLink}:focus & {
+    text-decoration: none;
+    border-bottom: ${GEL_SPACING_HLF} solid ${C_WHITE};
+  }
+  /* stylelint-enable */
+`;
+
 // Styling for when brand is a PNG
 // Pass PNG as a required prop from the config
 // - path to PNG needs to be placed in config,
 // what happens when PNG path is not defined?
 // how do I test it?
 const BrandPng = styled.div`
-  background: url();
+  padding-top: ${GEL_SPACING_DBL};
+  padding-bottom: ${SVG_BOTTOM_OFFSET_BELOW_400PX};
+
+  @media (min-width: ${GEL_GROUP_2_SCREEN_WIDTH_MIN}) {
+    padding-top: ${SVG_TOP_OFFSET_ABOVE_400PX};
+    padding-bottom: ${GEL_SPACING_TRPL};
+  }
+
+  @media screen and (-ms-high-contrast: active), print {
+    fill: windowText;
+  }
 `;
 
 const LocalisedBrandName = ({ product, serviceLocalisedName }) =>
@@ -131,7 +154,16 @@ const StyledBrand = ({
     {svg && (
       <Fragment>
         {svgSupport() ? (
-          <BrandPng />
+          <BrandPng>
+            <PngImg
+              src={png}
+              focusable="false"
+              aria-hidden="true"
+              height={svgHeight}
+              maxWidth={maxWidth}
+              minWidth={minWidth}
+            />
+          </BrandPng>
         ) : (
           <BrandSvg
             height={svgHeight}
