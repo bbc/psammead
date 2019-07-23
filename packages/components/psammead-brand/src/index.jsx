@@ -86,6 +86,20 @@ const BrandSvg = styled.svg`
   /* stylelint-enable */
 `;
 
+// Check if browser supports SVG
+const svgSupport = () =>
+  !!document.createElementNS &&
+  !!document.createElementNS('http://www.w3.org/2000/svg', 'svg').createSVGRect;
+
+// Styling for when brand is a PNG
+// Pass PNG as a required prop from the config
+// - path to PNG needs to be placed in config,
+// what happens when PNG path is not defined?
+// how do I test it?
+const BrandPng = styled.div`
+  background: url();
+`;
+
 const LocalisedBrandName = ({ product, serviceLocalisedName }) =>
   serviceLocalisedName ? (
     // eslint-disable-next-line jsx-a11y/aria-role
@@ -116,18 +130,22 @@ const StyledBrand = ({
   <Fragment>
     {svg && (
       <Fragment>
-        <BrandSvg
-          height={svgHeight}
-          viewBox={`0 0 ${svg.viewbox.width} ${svg.viewbox.height}`}
-          xmlns="http://www.w3.org/2000/svg"
-          focusable="false"
-          aria-hidden="true"
-          ratio={svg.ratio}
-          maxWidth={maxWidth}
-          minWidth={minWidth}
-        >
-          {svg.group}
-        </BrandSvg>
+        {svgSupport() ? (
+          <BrandPng />
+        ) : (
+          <BrandSvg
+            height={svgHeight}
+            viewBox={`0 0 ${svg.viewbox.width} ${svg.viewbox.height}`}
+            xmlns="http://www.w3.org/2000/svg"
+            focusable="false"
+            aria-hidden="true"
+            ratio={svg.ratio}
+            maxWidth={maxWidth}
+            minWidth={minWidth}
+          >
+            {svg.group}
+          </BrandSvg>
+        )}
         <LocalisedBrandName
           product={product}
           serviceLocalisedName={serviceLocalisedName}
