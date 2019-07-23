@@ -17,7 +17,7 @@ const LiveComponent = ({ headline, service, dir }) => (
       LIVE
     </LiveLabel>
     <VisuallyHiddenText lang="en-GB">Live, </VisuallyHiddenText>
-    <span>{headline}</span>
+    {headline}
   </span>
 );
 

@@ -775,9 +775,7 @@ exports[`StoryPromo should render Live promo correctly 1`] = `
           >
             Live, 
           </span>
-          <span>
-            The live promo headline
-          </span>
+          The live promo headline
         </span>
       </a>
     </h3>
