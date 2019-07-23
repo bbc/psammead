@@ -19,7 +19,7 @@ tests:
 
 setup-git:
 	git remote set-url origin "https://${GITHUB_TOKEN}@github.com/bbc/psammead.git"
-	git fetch --no-tags --progress 'https://github.com/BBC/psammead.git' '+refs/heads/latest:refs/remotes/origin/latest'
+	git config remote.origin.fetch '+refs/heads/*:refs/remotes/origin/*'
 
 	# These user config values are needed to avoid error being throw.
 	# These arnt used for authentication however, as it uses the provided github token.
