@@ -101,6 +101,7 @@ pipeline {
         }
       }
       steps {
+        sh 'make install'
         sh 'chmod -R 777 .git'
         sh 'make setup-git'
         sh 'git fetch --all'
