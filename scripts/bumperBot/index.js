@@ -43,7 +43,7 @@ stuff.then(bumpedPackages => {
       execSync(`git checkout -b BumperBot${getDate()}`);
       execSync(`git add packages`);
       execSync(`git commit -m "Bump Deps"`);
-      execSync(`git push origin HEAD"`);
+      execSync(`git push origin HEAD`);
 
       console.log('Done');
     });
