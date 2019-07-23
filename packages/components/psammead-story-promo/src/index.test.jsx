@@ -21,12 +21,7 @@ const Info = ({ topStory }) => (
 );
 
 const mediaInfo = (
-  <MediaIndicator
-    duration="2:15"
-    datetime="PT2M15S"
-    offscreenText="Video 2 minutes 15 seconds"
-    service="news"
-  />
+  <MediaIndicator duration="2:15" datetime="PT2M15S" service="news" />
 );
 
 describe('StoryPromo', () => {
@@ -84,9 +79,6 @@ describe('assertions', () => {
     );
 
     const time = container.querySelector('time');
-    const span = container.querySelector('span');
-
-    expect(span.textContent).toEqual('Video 2 minutes 15 seconds');
     expect(time.textContent).toEqual('2:15');
 
     const image = container.querySelector('img');

@@ -27,6 +27,7 @@
     "test:lint:css": "stylelint 'packages/**/*.js' 'packages/**/*.jsx' 'scripts/**/*.js'",
     "test:unit": "npm run build && jest --verbose --coverage",
     "test:unit:watch": "npm run build && jest --verbose --coverage --watch",
+    "updateDependants": "node scripts/updateDependants",
     "updateSnapshots": "npm run ci:packages && npm run test:unit -- -u"
   },
   "repository": {
@@ -94,6 +95,7 @@
     "stylelint": "^10.1.0",
     "stylelint-config-recommended": "^2.1.0",
     "stylelint-config-styled-components": "^0.1.1",
+    "stylelint-csstree-validator": "^1.5.2",
     "stylelint-processor-styled-components": "^1.8.0"
   },
   "config": {
