@@ -631,8 +631,6 @@ exports[`StoryPromo should render Live promo correctly 1`] = `
   font-family: ReithSans,Helvetica,Arial,sans-serif;
   font-weight: 700;
   font-style: normal;
-  -webkit-text-decoration: none;
-  text-decoration: none;
   display: inline-block;
   margin-right: 0.5rem;
 }
