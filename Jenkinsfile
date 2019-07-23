@@ -78,7 +78,7 @@ pipeline {
         withCredentials([string(credentialsId: 'npm_bbc-online_read_write', variable: 'NPM_TOKEN')]) {
           sh 'make publish'
         }
-        stash name: 'psammead-publishes', includes: 'published.txt'
+        stash name: 'psammead-publishes', includes: 'published.txt', allowEmpty: true
         sh 'rm published.txt || true'
       }
       post {
