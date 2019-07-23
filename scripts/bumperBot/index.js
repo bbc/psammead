@@ -41,12 +41,12 @@ stuff.then(bumpedPackages => {
     .then(() => {
       const branchName = `BumperBot${getDate()}`;
 
-      execSync(`git fetch --all`);
-      execSync(`git checkout -f latest`);
-      execSync(`git checkout -b ${branchName}`);
-      execSync(`git add packages`);
-      execSync(`git commit -m "Bump Deps"`);
-      execSync(`git push origin HEAD`);
+      execSync(`git fetch --all`, { stdio: 'inherit' });
+      execSync(`git checkout -f latest`, { stdio: 'inherit' });
+      execSync(`git checkout -b ${branchName}`, { stdio: 'inherit' });
+      execSync(`git add packages`, { stdio: 'inherit' });
+      execSync(`git commit -m "Bump Deps"`, { stdio: 'inherit' });
+      execSync(`git push origin HEAD`, { stdio: 'inherit' });
 
       const gh = new GitHub({
         token: process.env.GITHUB_TOKEN,

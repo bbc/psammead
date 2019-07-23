@@ -30,37 +30,37 @@ pipeline {
     CI = true
   }
   stages {
-    stage ('Run application tests') {
-      agent {
-        docker {
-          image "${nodeImage}"
-          label nodeName
-          args '-u root -v /etc/pki:/certs'
-        }
-      }
-      steps {
-        sh 'rm -rf ./app'
-        script {
-          if (GIT_BRANCH == 'latest') {
-            getCommitInfo()
-          }
-        }
-        sh 'make install'
-        sh 'make code-coverage-before-build'
-        sh 'make tests'
-        withCredentials([string(credentialsId: 'psammead-cc-reporter-id', variable: 'CC_TEST_REPORTER_ID')]) {
-          sh 'make code-coverage-after-build'
-        }
-        sh 'make change-scanner'
-      }
-      post {
-        always {
-          script {
-            stageName = env.STAGE_NAME
-          }
-        }
-      }
-    }
+    // stage ('Run application tests') {
+    //   agent {
+    //     docker {
+    //       image "${nodeImage}"
+    //       label nodeName
+    //       args '-u root -v /etc/pki:/certs'
+    //     }
+    //   }
+    //   steps {
+    //     sh 'rm -rf ./app'
+    //     script {
+    //       if (GIT_BRANCH == 'latest') {
+    //         getCommitInfo()
+    //       }
+    //     }
+    //     sh 'make install'
+    //     sh 'make code-coverage-before-build'
+    //     sh 'make tests'
+    //     withCredentials([string(credentialsId: 'psammead-cc-reporter-id', variable: 'CC_TEST_REPORTER_ID')]) {
+    //       sh 'make code-coverage-after-build'
+    //     }
+    //     sh 'make change-scanner'
+    //   }
+    //   post {
+    //     always {
+    //       script {
+    //         stageName = env.STAGE_NAME
+    //       }
+    //     }
+    //   }
+    // }
     stage ('Deploy Storybook & Publish to NPM') {
       when {
         expression { env.BRANCH_NAME == 'latest' }
