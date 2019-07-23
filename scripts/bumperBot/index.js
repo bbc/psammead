@@ -49,7 +49,7 @@ stuff.then(bumpedPackages => {
       execSync(`git push origin HEAD`);
 
       const gh = new GitHub({
-        token: process.en.GITHUB_TOKEN,
+        token: process.env.GITHUB_TOKEN,
       });
 
       return gh.createPullRequest({
