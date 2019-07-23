@@ -1,4 +1,4 @@
-#!/usr/bin/env groovy
+// #!/usr/bin/env groovy
 
 def dockerRegistry = "329802642264.dkr.ecr.eu-west-1.amazonaws.com"
 def nodeImageVersion = "10.16.0"
@@ -101,7 +101,7 @@ pipeline {
         }
       }
       steps {
-        unstash 'psammead-publishes'
+        // unstash 'psammead-publishes'
         sh 'echo -n "@bbc/psammead-assets,@bbc/gel-foundations," >> published.txt'
         sh 'make bumperBot'
         sh 'git status'
