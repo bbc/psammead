@@ -3,7 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
-| 1.2.1 | [PR#1413](https://github.com/bbc/psammead/pull/1413) Revert alpha changes while they undergo external accesibility review |
+| 1.2.1 | [PR#1413](https://github.com/bbc/psammead/pull/1413) Revert alpha changes while they undergo external accessibility review |
 | 1.2.0-alpha.3 | [PR#1365](https://github.com/bbc/psammead/pull/1365) Bump psammead-styles to 1.2.0 |
 | 1.2.0-alpha.2 | [PR#1405](https://github.com/bbc/psammead/pull/1405) Fix pre-wrap hover bug |
 | 1.2.0-alpha.1 | [PR#1233](https://github.com/bbc/psammead/pull/1233) Add ESM modules entry |
