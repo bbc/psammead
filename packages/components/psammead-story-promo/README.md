@@ -83,7 +83,7 @@ const Info = ({ isLive }) => (
       <Link href="https://www.bbc.co.uk/news">
         {isLive ? (
           <LiveComponent service="news" headline="The headline of the live promo" />
-        ): The headline of the promo}
+        ): 'The headline of the promo'}
       </Link>
     </Headline>
     <Summary script={latin} topStory={true} service="news">

@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react';
 import { storiesOf } from '@storybook/react';
-import { withKnobs, text } from '@storybook/addon-knobs';
+import { withKnobs, text, boolean } from '@storybook/addon-knobs';
 import { inputProvider } from '@bbc/psammead-storybook-helpers';
 import Image from '@bbc/psammead-image';
 import Timestamp from '@bbc/psammead-timestamp';
@@ -75,7 +75,7 @@ const MediaIndicatorComponent = (
   />
 );
 
-const generateStory = ({ mediaIndicator, topStory, isLive }) =>
+const generateStory = ({ mediaIndicator, topStory }) =>
   inputProvider(
     [{ name: 'Headline' }, { name: 'Summary' }],
     ({ slotTexts: [headlineText, summaryText], script, service, dir }) => {
@@ -86,7 +86,7 @@ const generateStory = ({ mediaIndicator, topStory, isLive }) =>
           script={script}
           topStory={topStory}
           service={service}
-          isLive={isLive}
+          isLive={boolean('isLive', false)}
           dir={dir}
         />
       );
@@ -107,10 +107,6 @@ const generateStory = ({ mediaIndicator, topStory, isLive }) =>
 storiesOf('Components|StoryPromo/StoryPromo', module)
   .addDecorator(withKnobs)
   .add('default', generateStory({}), { notes, knobs: { escapeHTML: false } })
-  .add('Live', generateStory({ isLive: true }), {
-    notes,
-    knobs: { escapeHTML: false },
-  })
   .add('with media indicator', generateStory({ mediaIndicator: true }), {
     notes,
     knobs: { escapeHTML: false },

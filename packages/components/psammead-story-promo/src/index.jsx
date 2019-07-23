@@ -259,7 +259,6 @@ export const Link = styled.a`
 export const LiveLabel = styled.span.attrs({ 'aria-hidden': 'true' })`
   color: ${C_POSTBOX};
   ${({ service }) => getSansBold(service)}
-  text-decoration:none;
   display: inline-block;
   ${({ dir }) =>
     dir === 'rtl' ? 'margin-left: 0.5rem;' : 'margin-right: 0.5rem;'}

@@ -23,10 +23,11 @@ const Info = ({ topStory, isLive }) => (
   <Fragment>
     <Headline script={latin} topStory={topStory} service="news">
       <Link href="https://www.bbc.co.uk/news">
-        {isLive && (
+        {isLive ? (
           <LiveComponent headline="The live promo headline" service="news" />
+        ) : (
+          'The headline of the promo'
         )}
-        The headline of the promo
       </Link>
     </Headline>
     <Summary script={latin} topStory={topStory} service="news">
