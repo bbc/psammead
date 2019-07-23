@@ -1,4 +1,5 @@
 const { execSync } = require('child_process');
+const GitHub = require('github-api');
 const getChangedPackages = require('./getChangedPackages');
 const upgradeDependencies = require('../upgradeDependencies');
 const bumpPackages = require('../bumpPackages/index.js');
@@ -38,16 +39,27 @@ stuff.then(bumpedPackages => {
       }),
     )
     .then(() => {
-      execSync(
-        `git config remote.origin.fetch '+refs/heads/*:refs/remotes/origin/*'`,
-      );
+      const branchName = `BumperBot${getDate()}`;
+
       execSync(`git fetch --all`);
       execSync(`git checkout latest`);
-      execSync(`git checkout -b BumperBot${getDate()}`);
+      execSync(`git checkout -b ${branchName}`);
       execSync(`git add packages`);
       execSync(`git commit -m "Bump Deps"`);
       execSync(`git push origin HEAD`);
 
-      console.log('Done');
+      const gh = new GitHub({
+        token: process.en.GITHUB_TOKEN,
+      });
+
+      return gh.createPullRequest({
+        title: 'Hello World',
+        body: 'Body of PR',
+        head: branchName,
+        base: 'latest',
+      });
+    })
+    .then(({ html_url }) => { // eslint-disable-line
+      console.log(`PR is at ${html_url}`); // eslint-disable-line
     });
 });
