@@ -31,7 +31,6 @@ storybook:
 	npm run deploy-storybook;
 
 bumperBot:
-	make setup-git
 	npm run bumperBot
 
 publish:

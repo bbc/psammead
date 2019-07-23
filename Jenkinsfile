@@ -102,6 +102,7 @@ pipeline {
       }
       steps {
         sh 'chmod -R 777 .git'
+        sh 'make setup-git'
         sh 'git fetch --all'
         sh 'git checkout -f latest'
         // unstash 'psammead-publishes'
