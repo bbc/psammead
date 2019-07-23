@@ -443,7 +443,7 @@ exports[`StoryPromo - Top Story with Media Indicator should render correctly 1`]
 }
 
 @supports (grid-template-columns:fit-content(200px)) {
-  .c9 {
+  .c8 {
     display: block;
     width: initial;
     padding: initial;
@@ -956,7 +956,7 @@ exports[`StoryPromo with Media Indicator should render correctly 1`] = `
 }
 
 @supports (grid-template-columns:fit-content(200px)) {
-  .c9 {
+  .c8 {
     display: block;
     width: initial;
     padding: initial;

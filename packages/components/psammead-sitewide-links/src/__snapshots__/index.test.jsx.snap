@@ -27,8 +27,6 @@ exports[`SitewideLinks should render correctly 1`] = `
 
 .c2 {
   border-bottom: 1px solid #3F3F42;
-  display: grid;
-  grid-auto-flow: column;
   list-style-type: none;
   margin: 0;
   padding: 0 0 0.5rem;
@@ -63,6 +61,13 @@ exports[`SitewideLinks should render correctly 1`] = `
   color: #FFFFFF;
   margin: 0;
   padding: 1rem 0;
+}
+
+@supports (grid-template-columns:fit-content(200px)) {
+  .c2 {
+    display: grid;
+    grid-auto-flow: column;
+  }
 }
 
 @media (max-width:14.9375rem) {

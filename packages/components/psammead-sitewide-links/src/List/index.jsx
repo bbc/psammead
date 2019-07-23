@@ -24,11 +24,15 @@ const getRowCount = (children, columns) =>
 
 const StyledList = styled.ul`
   border-bottom: 1px solid ${C_SHADOW};
-  display: grid;
-  grid-auto-flow: column;
   list-style-type: none;
   margin: 0;
   padding: 0 0 ${GEL_SPACING};
+
+  @supports (${grid}) {
+    display: grid;
+    grid-auto-flow: column;
+  }
+
   @media (max-width: ${GEL_GROUP_0_SCREEN_WIDTH_MAX}) {
     grid-auto-flow: row;
   }
