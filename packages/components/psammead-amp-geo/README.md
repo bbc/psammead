@@ -2,7 +2,7 @@
 
 ## Description
 
-The `psammead-amp-geo` component is an `<amp-geo>` element to be used for AMP pages. It has a defined set of ISO country groups and we set for our privacy and cookie banners on AMP pages. 
+The `psammead-amp-geo` component is an `<amp-geo>` element to be used for AMP pages. It has a defined set of ISO country groups that we set for our privacy and cookie banners on AMP pages. 
 
 ## Installation
 
