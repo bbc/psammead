@@ -105,7 +105,7 @@ pipeline {
         sh 'chmod -R 777 .git'
         sh 'make setup-git'
         sh 'git fetch --all'
-        sh 'git checkout -f BumperBotIntegrate-new-new-new-new'
+        sh 'git checkout -f BumperBotIntegrate-new-new-new-new-new'
         // unstash 'psammead-publishes'
         sh 'echo -n "@bbc/psammead-assets,@bbc/gel-foundations," >> published.txt'
         sh 'make bumperBot'

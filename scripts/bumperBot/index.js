@@ -50,7 +50,7 @@ stuff.then(bumpedPackages => {
         title: `BumperBot: Bump ${packages.join(', ')}`,
         body: getPRBody(packages, bumpedPackages),
         head: branchName,
-        base: 'BumperBotIntegrate-new-new-new-new',
+        base: 'BumperBotIntegrate-new-new-new-new-new',
         draft: true,
       });
     })
