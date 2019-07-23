@@ -1,3 +1,4 @@
+const { execSync } = require('child_process');
 const getChangedPackages = require('./getChangedPackages');
 const upgradeDependencies = require('../upgradeDependencies');
 const bumpPackages = require('../bumpPackages/index.js');
@@ -7,6 +8,14 @@ const bumpChangelogs = require('../bumpChangelogs/index.js');
 
 const packages = getChangedPackages();
 const stuff = upgradeDependencies(packages);
+
+const getDate = () => {
+  const today = new Date();
+  const date = `${today.getFullYear()}-${today.getMonth() +
+    1}-${today.getDate()}`;
+  const time = `${today.getHours()}:${today.getMinutes()}:${today.getSeconds()}`;
+  return date + time;
+};
 
 stuff.then(bumpedPackages => {
   const bumpedPackagesNoBBCPrefix = bumpedPackages.map(dep =>
@@ -29,6 +38,12 @@ stuff.then(bumpedPackages => {
       }),
     )
     .then(() => {
+      execSync(`git checkout latest`);
+      execSync(`git checkout -b BumperBot-${getDate}`);
+      execSync(`git add packages`);
+      execSync(`git commit -m "Bump Deps"`);
+      execSync(`git push origin HEAD"`);
+
       console.log('Done');
     });
 });
