@@ -7,7 +7,7 @@ exports[`AmpGeo it should render amp-geo with inlined JSON data 1`] = `
   <script
     type="application/json"
   >
-    {"ISOCountryGroups":{"eea":["at","be","bg","bl","cy","cz","de","dk","ee","es","fi","fr","gb","gf","gg","gi","gp","gr","hr","hu","ie","im","is","it","je","li","lt","lu","lv","mf","mq","mt","nl","no","pl","pm","pt","re","ro","se","si","sk","yt"]}}
+    {"ISOCountryGroups":{"eea":["at","ax","be","bg","bl","cy","cz","de","dk","ea","ee","es","fi","fr","gb","gf","gg","gi","gp","gr","hr","hu","ie","im","is","it","je","li","lt","lu","lv","mf","mq","mt","nc","nl","no","pf","pl","pm","pt","re","ro","se","si","sj","sk","tf","va","wf","yt"]}}
   </script>
 </amp-geo>
 `;
