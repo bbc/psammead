@@ -90,9 +90,9 @@ pipeline {
       }
     }
     stage ('Bumper Bot') {
-      // when {
-      //   expression { env.BRANCH_NAME == 'BumperBotIntegrate-new' }
-      // }
+      when {
+        expression { env.BRANCH_NAME == 'BumperBotIntegrate-new-new-new' }
+      }
       agent {
         docker {
           image "${nodeImage}"
