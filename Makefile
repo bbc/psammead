@@ -28,9 +28,9 @@ storybook:
 	make setup-git;
 	npm run deploy-storybook;
 
-bump-dependants:
+bumperBot:
 	make setup-git
-	npm run updateDependants
+	npm run bumperBot
 
 publish:
 	echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" > .npmrc

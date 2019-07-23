@@ -27,7 +27,7 @@
     "test:lint:css": "stylelint 'packages/**/*.js' 'packages/**/*.jsx' 'scripts/**/*.js'",
     "test:unit": "npm run build && jest --verbose --coverage",
     "test:unit:watch": "npm run build && jest --verbose --coverage --watch",
-    "bumper": "node scripts/bumper",
+    "bumperBot": "node scripts/bumperBot",
     "updateSnapshots": "npm run ci:packages && npm run test:unit -- -u"
   },
   "repository": {

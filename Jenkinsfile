@@ -89,9 +89,9 @@ pipeline {
         }
       }
     }
-    stage ('Bump Dependants') {
+    stage ('Bumper Bot') {
       when {
-        expression { env.BRANCH_NAME == 'latest' }
+        expression { env.BRANCH_NAME == 'BumperBotIntegrate' }
       }
       agent {
         docker {
@@ -102,7 +102,10 @@ pipeline {
       }
       steps {
         unstash 'psammead-publishes'
-        sh 'make bump-dependants'
+        sh 'echo -n "@bbc/psammead-assets,@bbc/gel-foundations," >> published.txt'
+        sh 'make bumperBot'
+        sh 'git status'
+        sh 'git diff'
       }
       post {
         always {
