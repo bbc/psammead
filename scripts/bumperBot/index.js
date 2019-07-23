@@ -59,7 +59,7 @@ stuff.then(bumpedPackages => {
         base: 'BumperBotIntegrate-new-new-new',
       });
     })
-    .then(({ html_url }) => { // eslint-disable-line
-      console.log(`PR is at ${html_url}`); // eslint-disable-line
+    .then(response => {
+      console.log(response); // eslint-disable-line
     });
 });
