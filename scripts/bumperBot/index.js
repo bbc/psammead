@@ -57,9 +57,10 @@ stuff.then(bumpedPackages => {
         body: 'Body of PR',
         head: branchName,
         base: 'BumperBotIntegrate-new-new-new',
+        draft: true,
       });
     })
-    .then(response => {
-      console.log(response); // eslint-disable-line
+    .then(({ data }) => {
+      console.log(data.html_url); // eslint-disable-line
     });
 });
