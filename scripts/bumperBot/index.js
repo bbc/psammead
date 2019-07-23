@@ -39,7 +39,7 @@ stuff.then(bumpedPackages => {
     )
     .then(() => {
       execSync(`git fetch`);
-      // execSync(`git checkout latest`);
+      execSync(`git checkout latest`);
       execSync(`git checkout -b BumperBot${getDate()}`);
       execSync(`git add packages`);
       execSync(`git commit -m "Bump Deps"`);
