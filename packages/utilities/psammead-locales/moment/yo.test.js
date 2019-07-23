@@ -9,6 +9,10 @@ moment.locale('yo');
 // An example of these tests can be seen at https://github.com/moment/moment/blob/develop/src/test/locale/en-gb.js
 const assert = { equal: (val1, val2) => expect(val1).toEqual(val2) };
 
+// These tests are taken (almost) verbatim from the official moment tests. This has been done in an attempt to ensure
+// parity across the two configurations as far as possible.
+// See https://github.com/moment/moment/blob/develop/src/test/locale/yo.js
+
 test('parse', function () {
     var tests = 'Sẹ́rẹ́ Sẹ́r_Èrèlè Èrl_Ẹrẹ̀nà Ẹrn_Ìgbé Ìgb_Èbibi Èbi_Òkùdu Òkù_Agẹmo Agẹ_Ògún Ògú_Owewe Owe_Ọ̀wàrà Ọ̀wà_Bélú Bél_Ọ̀pẹ̀̀ Ọ̀pẹ̀̀'.split('_'), i;
     function equalTest(input, mmm, i) {
