@@ -16,3 +16,5 @@ storybook_dist
 
 packages/**/dist
 packages/**/esm
+
+published.txt
