@@ -1,5 +1,5 @@
 const { execSync } = require('child_process');
-const GitHub = require('github-api');
+// const GitHub = require('github-api');
 const getChangedPackages = require('./getChangedPackages');
 const upgradeDependencies = require('../upgradeDependencies');
 const bumpPackages = require('../bumpPackages/index.js');
@@ -31,13 +31,6 @@ stuff.then(bumpedPackages => {
         ),
       );
     })
-    .then(() =>
-      bumpChangelogs({
-        packageNames: bumpedPackagesNoBBCPrefix,
-        prLink: 'https://hello.com',
-        changesDescription: 'Bump Dependancies',
-      }),
-    )
     .then(() => {
       const branchName = `BumperBot${getDate()}`;
 
@@ -46,21 +39,38 @@ stuff.then(bumpedPackages => {
       execSync(`git commit -m "Bump Deps"`, { stdio: 'inherit' });
       execSync(`git push origin HEAD`, { stdio: 'inherit' });
 
-      const gh = new GitHub({
-        token: process.env.GITHUB_TOKEN,
-      });
+      // const gh = new GitHub({
+      //   token: process.env.GITHUB_TOKEN,
+      // });
 
-      const repo = gh.getRepo('bbc', 'psammead');
+      // const repo = gh.getRepo('bbc', 'psammead');
 
-      return repo.createPullRequest({
-        title: 'Hello World',
-        body: 'Body of PR',
-        head: branchName,
-        base: 'BumperBotIntegrate-new-new-new',
-        draft: true,
+      // return repo.createPullRequest({
+      //   title: 'Hello World',
+      //   body: 'Body of PR',
+      //   head: branchName,
+      //   base: 'BumperBotIntegrate-new-new-new',
+      //   draft: true,
+      // });
+
+      return Promise.resolve({
+        data: {
+          html_url: 'https://github.com/bbc/psammead/pull/12345',
+        },
       });
     })
     .then(({ data }) => {
       console.log(data.html_url); // eslint-disable-line
+
+      return bumpChangelogs({
+        packageNames: bumpedPackagesNoBBCPrefix,
+        prLink: 'https://hello.com',
+        changesDescription: 'Bump Dependancies',
+      });
+    })
+    .then(() => {
+      execSync(`git add packages`, { stdio: 'inherit' });
+      execSync(`git commit -m "Bump Deps"`, { stdio: 'inherit' });
+      execSync(`git push origin HEAD`, { stdio: 'inherit' });
     });
 });
