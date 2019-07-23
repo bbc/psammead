@@ -50,7 +50,7 @@ stuff.then(bumpedPackages => {
         token: process.env.GITHUB_TOKEN,
       });
 
-      const repo = gh.getRepo();
+      const repo = gh.getRepo('bbc', 'psammead');
 
       return repo.createPullRequest({
         title: 'Hello World',
