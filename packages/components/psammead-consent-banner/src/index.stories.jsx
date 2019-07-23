@@ -1,37 +1,64 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import { latin } from '@bbc/gel-foundations/scripts';
+import { withKnobs } from '@storybook/addon-knobs';
+import { inputProvider } from '@bbc/psammead-storybook-helpers';
+import { string } from 'prop-types';
 import { ConsentBanner, ConsentBannerText } from '.';
+import notes from '../README.md';
 
-const Accept = (
+const Accept = acceptText => (
   <button onClick={() => {}} type="button">
-    OK
+    {acceptText}
   </button>
 );
 
-const Reject = (
-  <a href="https://www.bbc.co.uk/usingthebbc/your-data-matters">
-    Find out what&apos;s changed
-  </a>
+const Reject = rejectText => (
+  <a href="https://www.bbc.co.uk/usingthebbc/your-data-matters">{rejectText}</a>
 );
 
-const Text = (
-  <ConsentBannerText script={latin} service="news">
-    This is some text with <a href="https://www.bbc.com/news">a link</a> inside
-    the consent banner. We have made some important changes to our Privacy and
-    Cookie Policy.
+const Text = ({ script, service, shortText, text }) => (
+  <ConsentBannerText script={script} service={service}>
+    {`${text} `}
+    <a href="https://www.bbc.com/news">{shortText}</a>
   </ConsentBannerText>
 );
 
-const props = {
-  title: "We've updated our Privacy and Cookies Policy",
-  text: Text,
-  accept: Accept,
-  reject: Reject,
-  script: latin,
-  service: 'news',
+Text.propTypes = {
+  script: string.isRequired,
+  service: string.isRequired,
+  shortText: string.isRequired,
+  text: string.isRequired,
 };
 
-storiesOf('Components|ConsentBanner', module).add('default', () => (
-  <ConsentBanner {...props} />
-));
+storiesOf('Components|ConsentBanner', module)
+  .addDecorator(withKnobs)
+  .add(
+    'default',
+    inputProvider(
+      [
+        {
+          name: 'title',
+          defaultText: 'Privacy and Cookies Policy',
+        },
+        {
+          name: 'text',
+          defaultText: 'Changes to our Privacy and Cookie Policy ',
+        },
+      ],
+
+      ({ slotTexts: [title, text], script, service }) => {
+        const shortText = text.trim().split(' ')[0];
+        return (
+          <ConsentBanner
+            title={title}
+            text={Text({ script, service, text, shortText })}
+            accept={Accept(shortText)}
+            reject={Reject(shortText)}
+            script={script}
+            service={service}
+          />
+        );
+      },
+    ),
+    { notes, knobs: { escapeHTML: false } },
+  );
