@@ -1,6 +1,6 @@
 {
   "name": "@bbc/psammead-consent-banner",
-  "version": "2.1.1",
+  "version": "2.1.2",
   "main": "dist/index.js",
   "module": "esm/index.js",
   "sideEffects": false,
@@ -23,6 +23,7 @@
     "@bbc/psammead-styles": "^1.2.0"
   },
   "devDependencies": {
+    "@bbc/psammead-storybook-helpers": "^3.3.0",
     "@bbc/psammead-test-helpers": "^1.0.2",
     "prop-types": "^15.6.2",
     "react": "^16.8.6",
