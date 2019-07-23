@@ -1,5 +1,7 @@
 const { execSync } = require('child_process');
+const GitHub = require('github-api');
 const getChangedPackages = require('./getChangedPackages');
+const getPRBody = require('./getPRBody');
 const upgradeDependencies = require('../upgradeDependencies');
 const bumpPackages = require('../bumpPackages/index.js');
 const getPackagePath = require('../utilities/getPackagePath');
@@ -11,9 +13,9 @@ const stuff = upgradeDependencies(packages);
 
 const getDate = () => {
   const today = new Date();
-  const date = `${today.getFullYear()}-${today.getMonth() +
-    1}-${today.getDate()}`;
-  const time = `${today.getHours()}:${today.getMinutes()}:${today.getSeconds()}`;
+  const date = `${today.getFullYear()}${today.getMonth() +
+    1}${today.getDate()}`;
+  const time = `${today.getHours()}${today.getMinutes()}${today.getSeconds()}`;
   return date + time;
 };
 
@@ -30,20 +32,38 @@ stuff.then(bumpedPackages => {
         ),
       );
     })
-    .then(() =>
-      bumpChangelogs({
-        packageNames: bumpedPackagesNoBBCPrefix,
-        prLink: 'https://hello.com',
-        changesDescription: 'Bump Dependancies',
-      }),
-    )
     .then(() => {
-      execSync(`git checkout latest`);
-      execSync(`git checkout -b BumperBot-${getDate}`);
-      execSync(`git add packages`);
-      execSync(`git commit -m "Bump Deps"`);
-      execSync(`git push origin HEAD"`);
+      const branchName = `BumperBot${getDate()}`;
 
-      console.log('Done');
+      execSync(`git checkout -b ${branchName}`, { stdio: 'inherit' });
+      execSync(`git add packages`, { stdio: 'inherit' });
+      execSync(`git commit -m "Bump Deps"`, { stdio: 'inherit' });
+      execSync(`git push origin HEAD`, { stdio: 'inherit' });
+
+      const gh = new GitHub({
+        token: process.env.GITHUB_TOKEN,
+      });
+
+      const repo = gh.getRepo('bbc', 'psammead');
+
+      return repo.createPullRequest({
+        title: `BumperBot: Bump ${packages.join(', ')}`,
+        body: getPRBody(packages, bumpedPackages),
+        head: branchName,
+        base: 'BumperBotIntegrate-new-new-new-new-new',
+        draft: true,
+      });
+    })
+    .then(({ data }) => {
+      return bumpChangelogs({
+        packageNames: bumpedPackagesNoBBCPrefix,
+        prLink: data.html_url,
+        changesDescription: 'Bump Dependencies',
+      });
+    })
+    .then(() => {
+      execSync(`git add packages`, { stdio: 'inherit' });
+      execSync(`git commit -m "Bump Deps"`, { stdio: 'inherit' });
+      execSync(`git push origin HEAD`, { stdio: 'inherit' });
     });
 });

@@ -1,4 +1,4 @@
-// #!/usr/bin/env groovy
+#!/usr/bin/env groovy
 
 def dockerRegistry = "329802642264.dkr.ecr.eu-west-1.amazonaws.com"
 def nodeImageVersion = "10.16.0"
@@ -30,37 +30,37 @@ pipeline {
     CI = true
   }
   stages {
-    stage ('Run application tests') {
-      agent {
-        docker {
-          image "${nodeImage}"
-          label nodeName
-          args '-u root -v /etc/pki:/certs'
-        }
-      }
-      steps {
-        sh 'rm -rf ./app'
-        script {
-          if (GIT_BRANCH == 'latest') {
-            getCommitInfo()
-          }
-        }
-        sh 'make install'
-        sh 'make code-coverage-before-build'
-        sh 'make tests'
-        withCredentials([string(credentialsId: 'psammead-cc-reporter-id', variable: 'CC_TEST_REPORTER_ID')]) {
-          sh 'make code-coverage-after-build'
-        }
-        sh 'make change-scanner'
-      }
-      post {
-        always {
-          script {
-            stageName = env.STAGE_NAME
-          }
-        }
-      }
-    }
+    // stage ('Run application tests') {
+    //   agent {
+    //     docker {
+    //       image "${nodeImage}"
+    //       label nodeName
+    //       args '-u root -v /etc/pki:/certs'
+    //     }
+    //   }
+    //   steps {
+    //     sh 'rm -rf ./app'
+    //     script {
+    //       if (GIT_BRANCH == 'latest') {
+    //         getCommitInfo()
+    //       }
+    //     }
+    //     sh 'make install'
+    //     sh 'make code-coverage-before-build'
+    //     sh 'make tests'
+    //     withCredentials([string(credentialsId: 'psammead-cc-reporter-id', variable: 'CC_TEST_REPORTER_ID')]) {
+    //       sh 'make code-coverage-after-build'
+    //     }
+    //     sh 'make change-scanner'
+    //   }
+    //   post {
+    //     always {
+    //       script {
+    //         stageName = env.STAGE_NAME
+    //       }
+    //     }
+    //   }
+    // }
     stage ('Deploy Storybook & Publish to NPM') {
       when {
         expression { env.BRANCH_NAME == 'latest' }
@@ -91,7 +91,7 @@ pipeline {
     }
     stage ('Bumper Bot') {
       when {
-        expression { env.BRANCH_NAME == 'BumperBotIntegrate' }
+        expression { env.BRANCH_NAME == 'BumperBotIntegrate-new-new-new-new-new' }
       }
       agent {
         docker {
@@ -101,11 +101,17 @@ pipeline {
         }
       }
       steps {
+        sh 'make install'
+        sh 'chmod -R 777 .git'
+        sh 'make setup-git'
+        sh 'git fetch --all'
+        sh 'git checkout -f BumperBotIntegrate-new-new-new-new-new'
         // unstash 'psammead-publishes'
         sh 'echo -n "@bbc/psammead-assets,@bbc/gel-foundations," >> published.txt'
         sh 'make bumperBot'
         sh 'git status'
         sh 'git diff'
+        sh 'chmod -R 777 .git'
       }
       post {
         always {

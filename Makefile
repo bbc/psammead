@@ -19,17 +19,15 @@ tests:
 
 setup-git:
 	git remote set-url origin "https://${GITHUB_TOKEN}@github.com/bbc/psammead.git"
-	# These user config values are needed to avoid error being throw.
-	# These arnt used for authentication however, as it uses the provided github token.
-	git config user.email "foo@bar.com"
-	git config user.name "BBC News CI"
+	git config remote.origin.fetch '+refs/heads/*:refs/remotes/origin/*'
+	git config user.email "bbc-news-frameworks@users.noreply.github.com"
+	git config user.name "BBC News Frameworks"
 
 storybook:
 	make setup-git;
 	npm run deploy-storybook;
 
 bumperBot:
-	make setup-git
 	npm run bumperBot
 
 publish:
