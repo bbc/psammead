@@ -50,7 +50,9 @@ stuff.then(bumpedPackages => {
         token: process.env.GITHUB_TOKEN,
       });
 
-      return gh.createPullRequest({
+      const repo = gh.getRepo();
+
+      return repo.createPullRequest({
         title: 'Hello World',
         body: 'Body of PR',
         head: branchName,
