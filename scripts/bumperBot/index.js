@@ -42,7 +42,7 @@ stuff.then(bumpedPackages => {
       const branchName = `BumperBot${getDate()}`;
 
       execSync(`git fetch --all`);
-      execSync(`git checkout latest`);
+      execSync(`git checkout -f latest`);
       execSync(`git checkout -b ${branchName}`);
       execSync(`git add packages`);
       execSync(`git commit -m "Bump Deps"`);
