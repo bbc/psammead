@@ -54,7 +54,7 @@ stuff.then(bumpedPackages => {
         title: 'Hello World',
         body: 'Body of PR',
         head: branchName,
-        base: 'latest',
+        base: 'BumperBotIntegrate-new-new',
       });
     })
     .then(({ html_url }) => { // eslint-disable-line
