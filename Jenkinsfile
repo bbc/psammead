@@ -101,6 +101,8 @@ pipeline {
         }
       }
       steps {
+        sh 'git fetch --all'
+        sh 'git checkout -f latest'
         // unstash 'psammead-publishes'
         sh 'echo -n "@bbc/psammead-assets,@bbc/gel-foundations," >> published.txt'
         sh 'make bumperBot'

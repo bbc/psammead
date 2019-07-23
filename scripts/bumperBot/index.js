@@ -41,8 +41,6 @@ stuff.then(bumpedPackages => {
     .then(() => {
       const branchName = `BumperBot${getDate()}`;
 
-      execSync(`git fetch --all`, { stdio: 'inherit' });
-      execSync(`git checkout -f latest`, { stdio: 'inherit' });
       execSync(`git checkout -b ${branchName}`, { stdio: 'inherit' });
       execSync(`git add packages`, { stdio: 'inherit' });
       execSync(`git commit -m "Bump Deps"`, { stdio: 'inherit' });
