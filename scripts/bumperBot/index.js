@@ -58,7 +58,7 @@ stuff.then(bumpedPackages => {
       return bumpChangelogs({
         packageNames: bumpedPackagesNoBBCPrefix,
         prLink: data.html_url,
-        changesDescription: 'Bump Dependancies',
+        changesDescription: 'Bump Dependencies',
       });
     })
     .then(() => {

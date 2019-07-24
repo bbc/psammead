@@ -90,9 +90,9 @@ pipeline {
       }
     }
     stage ('Bumper Bot') {
-      // when {
-      //   expression { env.BRANCH_NAME == 'BumperBotIntegrate-new-new-new' }
-      // }
+      when {
+        expression { env.BRANCH_NAME == 'BumperBotIntegrate-new-new-new-new-new' }
+      }
       agent {
         docker {
           image "${nodeImage}"
@@ -111,6 +111,7 @@ pipeline {
         sh 'make bumperBot'
         sh 'git status'
         sh 'git diff'
+        sh 'chmod -R 777 .git'
       }
       post {
         always {
