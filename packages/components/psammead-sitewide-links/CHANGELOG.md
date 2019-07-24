@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 2.1.3 | [PR#1447](https://github.com/bbc/psammead/pull/1447) Bump Dependancies |
 | 2.1.2 | [PR#1365](https://github.com/bbc/psammead/pull/1365) Bump psammead-styles to 1.2.0 |
 | 2.1.1 | [PR#1362](https://github.com/bbc/psammead/pull/1362) Use `text-decoration` styling instead of border-bottom |
 | 2.1.0 | [PR#1233](https://github.com/bbc/psammead/pull/1233) Add ESM modules entry |
