@@ -14,7 +14,7 @@ import {
   GEL_SPACING_DBL,
   GEL_SPACING_TRPL,
 } from '@bbc/gel-foundations/spacings';
-import png from './pngs/Afaan_Oromoo_48h.png';
+import getImage from './images';
 
 const SVG_TOP_OFFSET_ABOVE_400PX = '1.75rem'; // 28px
 const SVG_BOTTOM_OFFSET_BELOW_400PX = '0.75rem'; // 12px
@@ -55,7 +55,6 @@ const brandWidth = (minWidth, maxWidth) => `
 
 const StyledLink = styled.a`
   display: inline-block;
-  ${({ maxWidth, minWidth }) => brandWidth(minWidth, maxWidth)}
 `;
 
 // `currentColor` has been used to address high contrast mode in Firefox.
@@ -96,13 +95,13 @@ const svgSupport = () =>
 const PngImg = styled.img`
   height: ${props => props.height / 16}rem;
   width: 100%;
-  max-width: ${props => props.maxWidth / 6}rem;
-  min-width: ${props => props.minWidth / 6}rem;
+  max-width: ${props => props.maxWidth / 8}rem;
+  min-width: ${props => props.minWidth / 8}rem;
 `;
 
 const BrandPng = styled.div`
-  max-width: ${props => props.maxWidth / 6}rem;
-  min-width: ${props => props.minWidth / 6}rem;
+  max-width: ${props => props.maxWidth / 8}rem;
+  min-width: ${props => props.minWidth / 8}rem;
 
   @media (max-width: ${GEL_GROUP_1_SCREEN_WIDTH_MAX}) {
     padding-top: ${GEL_SPACING_DBL};
@@ -117,6 +116,8 @@ const BrandPng = styled.div`
   /* https://www.styled-components.com/docs/advanced#referring-to-other-components */
   ${StyledLink}:hover &,
   ${StyledLink}:focus & {
+    max-width: ${props => props.maxWidth / 8}rem;
+    min-width: ${props => props.minWidth / 8}rem;
     text-decoration: none;
     border-bottom: ${GEL_SPACING_HLF} solid ${C_WHITE};
   }
@@ -143,6 +144,7 @@ LocalisedBrandName.defaultProps = {
 };
 
 const StyledBrand = ({
+  png,
   product,
   serviceLocalisedName,
   svgHeight,
@@ -153,10 +155,10 @@ const StyledBrand = ({
   <Fragment>
     {svg && (
       <Fragment>
-        {svgSupport() ? (
+        {png && svgSupport() ? (
           <BrandPng maxWidth={maxWidth} minWidth={minWidth}>
             <PngImg
-              src={png}
+              src={getImage(png)}
               focusable="false"
               aria-hidden="true"
               height={svgHeight}
@@ -201,6 +203,7 @@ const brandProps = {
       width: number.isRequired,
     }).isRequired,
   }).isRequired,
+  png: string.isRequired,
 };
 
 StyledBrand.propTypes = brandProps;
@@ -210,7 +213,7 @@ StyledBrand.defaultProps = {
 };
 
 const Brand = props => {
-  const { svgHeight, maxWidth, minWidth, url, borderTop, borderBottom } = props;
+  const { svgHeight, url, borderTop, borderBottom } = props;
 
   return (
     <Banner
@@ -220,7 +223,7 @@ const Brand = props => {
     >
       {url ? (
         <SvgWrapper>
-          <StyledLink href={url} maxWidth={maxWidth} minWidth={minWidth}>
+          <StyledLink href={url}>
             <StyledBrand {...props} />
           </StyledLink>
         </SvgWrapper>
