@@ -13,7 +13,6 @@ import {
   GEL_SPACING_DBL,
   GEL_SPACING_TRPL,
 } from '@bbc/gel-foundations/spacings';
-
 import png from './pngs/Afaan_Oromoo_48h.png';
 
 const SVG_TOP_OFFSET_ABOVE_400PX = '1.75rem'; // 28px
@@ -104,11 +103,6 @@ const PngImg = styled.img`
   /* stylelint-enable */
 `;
 
-// Styling for when brand is a PNG
-// Pass PNG as a required prop from the config
-// - path to PNG needs to be placed in config,
-// what happens when PNG path is not defined?
-// how do I test it?
 const BrandPng = styled.div`
   padding-top: ${GEL_SPACING_DBL};
   padding-bottom: ${SVG_BOTTOM_OFFSET_BELOW_400PX};
