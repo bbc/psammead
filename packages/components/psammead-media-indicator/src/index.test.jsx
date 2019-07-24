@@ -5,7 +5,7 @@ import MediaIndicator from './index';
 describe('MediaIndicator', () => {
   shouldMatchSnapshot(
     'should render video by default',
-    <MediaIndicator offscreenText="Video" service="news" />,
+    <MediaIndicator service="news" />,
   );
 
   shouldMatchSnapshot(
@@ -13,7 +13,6 @@ describe('MediaIndicator', () => {
     <MediaIndicator
       duration="2:15"
       datetime="PT2M15S"
-      offscreenText="Video"
       type="video"
       service="news"
     />,
@@ -21,7 +20,7 @@ describe('MediaIndicator', () => {
 
   shouldMatchSnapshot(
     'should render video correctly without duration details',
-    <MediaIndicator offscreenText="Video" type="video" service="news" />,
+    <MediaIndicator type="video" service="news" />,
   );
 
   shouldMatchSnapshot(
@@ -29,7 +28,6 @@ describe('MediaIndicator', () => {
     <MediaIndicator
       duration="2:15"
       datetime="PT2M15S"
-      offscreenText="Audio"
       type="audio"
       service="news"
     />,
@@ -37,7 +35,7 @@ describe('MediaIndicator', () => {
 
   shouldMatchSnapshot(
     'should render audio correctly without duration details',
-    <MediaIndicator offscreenText="Audio" type="audio" service="news" />,
+    <MediaIndicator type="audio" service="news" />,
   );
 
   shouldMatchSnapshot(
@@ -52,7 +50,6 @@ describe('MediaIndicator - Top Story', () => {
     <MediaIndicator
       duration="2:15"
       datetime="PT2M15S"
-      offscreenText="Audio"
       type="audio"
       topStory
       service="news"
