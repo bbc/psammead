@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 3.0.2 | [PR#1458](https://github.com/bbc/psammead/pull/1458) Bump Dependancies |
 | 3.0.1 | [PR#1365](https://github.com/bbc/psammead/pull/1365) Bump psammead-styles to 1.2.0 |
 | 3.0.0   | [PR#1241](https://github.com/bbc/psammead/pull/1241) Apply font based on service |
 | 2.1.0 | [PR#1233](https://github.com/bbc/psammead/pull/1233) Add ESM modules entry |
