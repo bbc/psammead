@@ -24,7 +24,7 @@ stories.add('Numerals', () => {
       {numeralSystems.map(numeralSystem => (
         <Row>
           <Value>{numeralSystem}</Value>
-          <Value>{numerals[numeralSystem]}</Value>
+          <Value>{numerals[numeralSystem].join(', ')}</Value>
         </Row>
       ))}
     </Container>
