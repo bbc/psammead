@@ -4,6 +4,7 @@ import { string, number, node, shape, bool } from 'prop-types';
 import { C_POSTBOX, C_WHITE } from '@bbc/psammead-styles/colours';
 import VisuallyHiddenText from '@bbc/psammead-visually-hidden-text';
 import {
+  GEL_GROUP_1_SCREEN_WIDTH_MAX,
   GEL_GROUP_2_SCREEN_WIDTH_MIN,
   GEL_GROUP_5_SCREEN_WIDTH_MIN,
 } from '@bbc/gel-foundations/breakpoints';
@@ -93,6 +94,25 @@ const svgSupport = () =>
   !!document.createElementNS('http://www.w3.org/2000/svg', 'svg').createSVGRect;
 
 const PngImg = styled.img`
+  height: ${props => props.height / 16}rem;
+  width: 100%;
+  max-width: ${props => props.maxWidth / 6}rem;
+  min-width: ${props => props.minWidth / 6}rem;
+`;
+
+const BrandPng = styled.div`
+  max-width: ${props => props.maxWidth / 6}rem;
+  min-width: ${props => props.minWidth / 6}rem;
+
+  @media (max-width: ${GEL_GROUP_1_SCREEN_WIDTH_MAX}) {
+    padding-top: ${GEL_SPACING_DBL};
+  }
+
+  @media (min-width: ${GEL_GROUP_2_SCREEN_WIDTH_MIN}) {
+    padding-top: ${SVG_TOP_OFFSET_ABOVE_400PX};
+    padding-bottom: 1.25rem;
+  }
+
   /* stylelint-disable */
   /* https://www.styled-components.com/docs/advanced#referring-to-other-components */
   ${StyledLink}:hover &,
@@ -101,20 +121,6 @@ const PngImg = styled.img`
     border-bottom: ${GEL_SPACING_HLF} solid ${C_WHITE};
   }
   /* stylelint-enable */
-`;
-
-const BrandPng = styled.div`
-  padding-top: ${GEL_SPACING_DBL};
-  padding-bottom: ${SVG_BOTTOM_OFFSET_BELOW_400PX};
-
-  @media (min-width: ${GEL_GROUP_2_SCREEN_WIDTH_MIN}) {
-    padding-top: ${SVG_TOP_OFFSET_ABOVE_400PX};
-    padding-bottom: ${GEL_SPACING_TRPL};
-  }
-
-  @media screen and (-ms-high-contrast: active), print {
-    fill: windowText;
-  }
 `;
 
 const LocalisedBrandName = ({ product, serviceLocalisedName }) =>
@@ -148,7 +154,7 @@ const StyledBrand = ({
     {svg && (
       <Fragment>
         {svgSupport() ? (
-          <BrandPng>
+          <BrandPng maxWidth={maxWidth} minWidth={minWidth}>
             <PngImg
               src={png}
               focusable="false"
