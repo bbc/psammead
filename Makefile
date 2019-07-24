@@ -20,7 +20,7 @@ tests:
 setup-git:
 	git remote set-url origin "https://${GITHUB_TOKEN}@github.com/bbc/psammead.git"
 	git config remote.origin.fetch '+refs/heads/*:refs/remotes/origin/*'
-	git config user.email "D&ENewsFrameworksTeam@bbc.co.uk"
+	git config user.email "bbc-news-frameworks@users.noreply.github.com"
 	git config user.name "BBC News Frameworks"
 
 storybook:
