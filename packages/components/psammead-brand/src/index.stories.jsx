@@ -12,20 +12,19 @@ import { dirDecorator } from '@bbc/psammead-storybook-helpers';
 import notes from '../README.md';
 import Brand from './index';
 
-const pngOptions = {
-  afaan: 'Afaan_Oromoo_48h.png',
-  igbo: 'Igbo_48h.png',
-  yoruba: 'Yoruba_48h.png',
-};
 const inputs = () => {
   // capitalization is only for presentation purpose on the knob
   const svgOptions = Object.keys(svgs)
     .filter(key => key !== 'BBC_BLOCKS')
     .map(key => key.charAt(0).toUpperCase() + key.slice(1));
 
-  const pngs = Object.keys(pngOptions);
+  const pngOptions = ['Afaan', 'Igbo', 'Yoruba'];
   const svgChoice = select('Service SVG', svgOptions, 'News').toLowerCase();
-  const pngChoice = select('Fallback service PNG', pngs, '').toLowerCase();
+  const pngChoice = select(
+    'Fallback service PNG',
+    pngOptions,
+    'Afaan',
+  ).toLowerCase();
   const productInput = text('Product', 'BBC News');
   const serviceLocalisedNameInput = text('Localised service name', 'Yoruba');
   const svgRatio = svgs[svgChoice].ratio;
@@ -123,6 +122,7 @@ storiesOf('Components|Brand/Fallback PNGs', module)
       svgHeightInput,
       minWidthInput,
       maxWidthInput,
+      svgChoice,
       pngChoice,
       borderBottom,
       borderTop,
@@ -135,7 +135,8 @@ storiesOf('Components|Brand/Fallback PNGs', module)
         svgHeight={svgHeightInput}
         minWidth={minWidthInput}
         maxWidth={maxWidthInput}
-        png={pngOptions[pngChoice]}
+        png={pngChoice}
+        svg={svgs[svgChoice]}
         borderBottom={borderBottom}
         borderTop={borderTop}
       />
@@ -149,6 +150,7 @@ storiesOf('Components|Brand/Fallback PNGs', module)
       minWidthInput,
       maxWidthInput,
       pngChoice,
+      svgChoice,
       borderBottom,
       borderTop,
     } = inputs();
@@ -160,7 +162,8 @@ storiesOf('Components|Brand/Fallback PNGs', module)
         svgHeight={svgHeightInput}
         minWidth={minWidthInput}
         maxWidth={maxWidthInput}
-        png={pngOptions[pngChoice]}
+        png={pngChoice}
+        svg={svgs[svgChoice]}
         url="https://www.bbc.com/news"
         borderBottom={borderBottom}
         borderTop={borderTop}

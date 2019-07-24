@@ -47,10 +47,10 @@ const Banner = styled.div`
   border-bottom: ${({ borderBottom }) => borderBottom && TRANSPARENT_BORDER};
 `;
 
-const brandWidth = (minWidth, maxWidth) => `
+const brandWidth = (minWidth, maxWidth, divisor) => `
   width: 100%;
-  max-width: ${maxWidth / 16}rem;
-  min-width: ${minWidth / 16}rem;
+  max-width: ${maxWidth / divisor}rem;
+  min-width: ${minWidth / divisor}rem;
 `;
 
 const StyledLink = styled.a`
@@ -66,7 +66,7 @@ const BrandSvg = styled.svg`
   padding-bottom: ${SVG_BOTTOM_OFFSET_BELOW_400PX};
   height: ${props => props.height / 16}rem;
   
-  ${({ maxWidth, minWidth }) => brandWidth(minWidth, maxWidth)}
+  ${({ maxWidth, minWidth }) => brandWidth(minWidth, maxWidth, 16)}
 
   @media (min-width: ${GEL_GROUP_2_SCREEN_WIDTH_MIN}) {
     padding-top: ${SVG_TOP_OFFSET_ABOVE_400PX};
@@ -80,7 +80,8 @@ const BrandSvg = styled.svg`
   /* stylelint-disable */
   /* https://www.styled-components.com/docs/advanced#referring-to-other-components */
   ${StyledLink}:hover &,
-    ${StyledLink}:focus & {
+  ${StyledLink}:focus & {
+    ${({ maxWidth, minWidth }) => brandWidth(minWidth, maxWidth, 16)}
     text-decoration: none;
     border-bottom: ${GEL_SPACING_HLF} solid ${C_WHITE};
   }
@@ -95,13 +96,11 @@ const svgSupport = () =>
 const PngImg = styled.img`
   height: ${props => props.height / 16}rem;
   width: 100%;
-  max-width: ${props => props.maxWidth / 8}rem;
-  min-width: ${props => props.minWidth / 8}rem;
+  ${({ maxWidth, minWidth }) => brandWidth(minWidth, maxWidth, 8)}
 `;
 
 const BrandPng = styled.div`
-  max-width: ${props => props.maxWidth / 8}rem;
-  min-width: ${props => props.minWidth / 8}rem;
+  ${({ maxWidth, minWidth }) => brandWidth(minWidth, maxWidth, 8)}
 
   @media (max-width: ${GEL_GROUP_1_SCREEN_WIDTH_MAX}) {
     padding-top: ${GEL_SPACING_DBL};
@@ -116,8 +115,7 @@ const BrandPng = styled.div`
   /* https://www.styled-components.com/docs/advanced#referring-to-other-components */
   ${StyledLink}:hover &,
   ${StyledLink}:focus & {
-    max-width: ${props => props.maxWidth / 8}rem;
-    min-width: ${props => props.minWidth / 8}rem;
+    ${({ maxWidth, minWidth }) => brandWidth(minWidth, maxWidth, 8)}
     text-decoration: none;
     border-bottom: ${GEL_SPACING_HLF} solid ${C_WHITE};
   }
