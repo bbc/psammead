@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 3.3.1 | [PR#1444](https://github.com/bbc/psammead/pull/1444) Bump Dependancies |
 | 3.3.0 | [PR#1233](https://github.com/bbc/psammead/pull/1233) Add ESM modules entry |
 | 3.2.0 | [PR#1244](https://github.com/bbc/psammead/pull/1244) `dirDecorator` now includes service `locale` in the object passed to the callback |
 | 3.1.3 | [PR#1179](https://github.com/bbc/psammead/pull/1179) use `gel-foundations@3.0.3` and `psammead-test-helpers@1.0.2`|
