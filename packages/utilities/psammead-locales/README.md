@@ -6,7 +6,7 @@ This package provides a collection of locale configs, used in BBC World Service 
 
 `/moment/ig` - A [moment.js](https://momentjs.com/) locale for Igbo. This can be used to localise timestamps generated using moment.js.
 `/moment/pcm` - A [moment.js](https://momentjs.com/) locale for Pidgin. This can be used to localise timestamps generated using moment.js.
-`/numerals` - Numerals in several different number systems. This can be used for localised numbers for components.
+`/numerals` - Numerals in several different number systems, e.g. Bengali, Nepali, Eastern Arabic, etc. This can be used for localised numbers for components.
 
 
 ## Installation
