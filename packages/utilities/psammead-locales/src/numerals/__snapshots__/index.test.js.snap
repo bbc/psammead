@@ -1,0 +1,209 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should return Bengali numerals 1`] = `
+Array [
+  "০",
+  "১",
+  "২",
+  "৩",
+  "৪",
+  "৫",
+  "৬",
+  "৭",
+  "৮",
+  "৯",
+  "১০",
+]
+`;
+
+exports[`should return Burmese numerals 1`] = `
+Array [
+  "၀",
+  "၁",
+  "၂",
+  "၃",
+  "၄",
+  "၅",
+  "၆",
+  "၇",
+  "၈",
+  "၉",
+  "၁၀",
+]
+`;
+
+exports[`should return Devanagari numerals 1`] = `
+Array [
+  "०",
+  "१",
+  "२",
+  "३",
+  "४",
+  "५",
+  "६",
+  "७",
+  "८",
+  "९",
+  "१०",
+]
+`;
+
+exports[`should return EasternArabic numerals 1`] = `
+Array [
+  "۰",
+  "۱",
+  "۲",
+  "۳",
+  "۴",
+  "۵",
+  "۶",
+  "۷",
+  "۸",
+  "۹",
+  "۱۰",
+]
+`;
+
+exports[`should return Gujarati numerals 1`] = `
+Array [
+  "૦",
+  "૧",
+  "૨",
+  "૩",
+  "૪",
+  "૫",
+  "૬",
+  "૭",
+  "૮",
+  "૯",
+  "૧૦",
+]
+`;
+
+exports[`should return GurmukhiPunjabi numerals 1`] = `
+Array [
+  "੦",
+  "੧",
+  "੨",
+  "੩",
+  "੪",
+  "੫",
+  "੬",
+  "੭",
+  "੮",
+  "੯",
+  "੧੦",
+]
+`;
+
+exports[`should return Kannada numerals 1`] = `
+Array [
+  "೦",
+  "೧",
+  "೨",
+  "೩",
+  "೪",
+  "೫",
+  "೬",
+  "೭",
+  "೮",
+  "೯",
+  "೧೦",
+]
+`;
+
+exports[`should return Malayalam numerals 1`] = `
+Array [
+  "൦",
+  "൧",
+  "൨",
+  "൩",
+  "൪",
+  "൫",
+  "൬",
+  "൭",
+  "൮",
+  "൯",
+  "൧൦",
+]
+`;
+
+exports[`should return Nepali numerals 1`] = `
+Array [
+  "०",
+  "१",
+  "२",
+  "३",
+  "४",
+  "५",
+  "६",
+  "७",
+  "८",
+  "९",
+  "१०",
+]
+`;
+
+exports[`should return Odia numerals 1`] = `
+Array [
+  "୦",
+  "୧",
+  "୨",
+  "୩",
+  "୪",
+  "୫",
+  "୬",
+  "୭",
+  "୮",
+  "୯",
+  "୧୦",
+]
+`;
+
+exports[`should return TamilGrantha numerals 1`] = `
+Array [
+  "௦",
+  "௧",
+  "௨",
+  "௩",
+  "௪",
+  "௫",
+  "௬",
+  "௭",
+  "௮",
+  "௯",
+  "௧௦",
+]
+`;
+
+exports[`should return Telugu numerals 1`] = `
+Array [
+  "౦",
+  "౧",
+  "౨",
+  "౩",
+  "౪",
+  "౫",
+  "౬",
+  "౭",
+  "౮",
+  "౯",
+  "౧౦",
+]
+`;
+
+exports[`should return WesternArabic numerals 1`] = `
+Array [
+  "0",
+  "1",
+  "2",
+  "3",
+  "4",
+  "5",
+  "6",
+  "7",
+  "8",
+  "9",
+  "10",
+]
+`;
