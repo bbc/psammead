@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 2.1.3 | [PR#1471](https://github.com/bbc/psammead/pull/1471) Bump Dependancies |
 | 2.1.2 | [PR#1366](https://github.com/bbc/psammead/pull/1366) Add Storybook entries for all services |
 | 2.1.1 | [PR#1365](https://github.com/bbc/psammead/pull/1365) Bump psammead-styles to 1.2.0 |
 | 2.1.0 | [PR#1233](https://github.com/bbc/psammead/pull/1233) Add ESM modules entry |
