@@ -10,7 +10,7 @@ const createPullRequest = ({ packages, bumpedPackages, branchName }) => {
   const title = `Talos - Bump ${packages.join(', ')}`;
 
   // eslint-disable-next-line no-console
-  console.log(`Creating Pull Request with title "${title}"`);
+  console.log(`* Creating Pull Request with title "${title}"`);
 
   return repo.createPullRequest({
     title,
