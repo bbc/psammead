@@ -11,11 +11,8 @@ const getChangedPackages = () => {
         .split(',')
         .filter(Boolean);
 
-      return published;
+      return [...new Set(published)];
     }
-
-    // eslint-disable-next-line no-console
-    console.log(`No packages were published!`);
   } catch (err) {
     // eslint-disable-next-line no-console
     console.error(err);

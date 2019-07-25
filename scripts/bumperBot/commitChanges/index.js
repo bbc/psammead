@@ -1,4 +1,4 @@
-const runExec = require('../utilities/runExec');
+const runExec = require('../../utilities/runExec');
 
 const commitChanges = message => {
   return runExec({ command: `git add packages` })
