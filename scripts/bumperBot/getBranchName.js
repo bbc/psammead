@@ -6,6 +6,6 @@ const getDate = () => {
   return date + time;
 };
 
-const getBranchName = () => `BumperBot${getDate()}`;
+const getBranchName = () => `Talos/${getDate()}`;
 
 module.exports = getBranchName;
