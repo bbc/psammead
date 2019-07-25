@@ -45,14 +45,16 @@ const buildImg = () => (
   />
 );
 
-const MediaIndicatorComponent = (type, service) => (
-  <MediaIndicator
-    duration="2:15"
-    datetime="PT2M15S"
-    service={service}
-    type={type}
-  />
-);
+const MediaIndicatorComponent = (type, service) => {
+  return (
+    <MediaIndicator
+      duration={type !== 'photogallery' && '2:15'}
+      datetime="PT2M15S"
+      service={service}
+      type={type}
+    />
+  );
+};
 
 const generateStory = ({ topStory }) =>
   inputProvider(
