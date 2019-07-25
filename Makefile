@@ -27,8 +27,8 @@ storybook:
 	make setup-git;
 	npm run deploy-storybook;
 
-bumperBot:
-	npm run bumperBot
+talos:
+	npm run talos
 
 publish:
 	echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" > .npmrc
