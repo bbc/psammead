@@ -12,19 +12,19 @@ const getBranchName = require('./getBranchName');
 const packages = getChangedPackages();
 const branchName = getBranchName();
 
-// if (packages.length <= 0) {
-//   // eslint-disable-next-line no-console
-//   console.log(`No packages were published!`);
-//   process.exit();
-// }
+if (packages.length <= 0) {
+  // eslint-disable-next-line no-console
+  console.log(`No packages were published!`);
+  process.exit();
+}
 
 upgradeDependencies(packages)
   .then(bumpedPackages => {
-    // if (bumpedPackages.length <= 0) {
-    //   // eslint-disable-next-line no-console
-    //   console.log('No packages to bump!');
-    //   process.exit();
-    // }
+    if (bumpedPackages.length <= 0) {
+      // eslint-disable-next-line no-console
+      console.log('No packages to bump!');
+      process.exit();
+    }
 
     const bumpedPackagesNoBBCPrefix = bumpedPackages.map(dep =>
       dep.replace('@bbc/', ''),
