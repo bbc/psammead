@@ -3,7 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 | ------- | ----------- |
-| 2.1.3 | [PR#???](https://github.com/bbc/psammead/pull/???) Add media type knob to story |
+| 2.1.3 | [PR#1502](https://github.com/bbc/psammead/pull/1502) Add media type knob to story |
 | 2.1.2 | [PR#1409](https://github.com/bbc/psammead/pull/1409) Bump media-indicator to v2.3.0 |
 | 2.1.1 | [PR#1365](https://github.com/bbc/psammead/pull/1365) Bump psammead-styles to 1.2.0 |
 | 2.1.0 | [PR#1233](https://github.com/bbc/psammead/pull/1233) Add ESM modules entry |
