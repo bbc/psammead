@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Brand should render correctly with link not provided 1`] = `
+exports[`Brand in SVG compatible browser should render brand SVG correctly with link not provided 1`] = `
 .c3 {
   -webkit-clip-path: inset(100%);
   clip-path: inset(100%);
@@ -39,6 +39,9 @@ exports[`Brand should render correctly with link not provided 1`] = `
 
 .c4:hover .c2,
 .c4:focus .c2 {
+  width: 100%;
+  max-width: 17.5rem;
+  min-width: 11.25rem;
   -webkit-text-decoration: none;
   text-decoration: none;
   border-bottom: 0.25rem solid #FFFFFF;
@@ -79,7 +82,7 @@ exports[`Brand should render correctly with link not provided 1`] = `
       xmlns="http://www.w3.org/2000/svg"
     >
       <g
-        fillrule="evenodd"
+        fill-rule="evenodd"
       >
         <path
           d="M84.32"
@@ -102,7 +105,7 @@ exports[`Brand should render correctly with link not provided 1`] = `
 </div>
 `;
 
-exports[`Brand should render correctly with link provided 1`] = `
+exports[`Brand in SVG compatible browser should render brand SVG correctly with link provided 1`] = `
 .c5 {
   -webkit-clip-path: inset(100%);
   clip-path: inset(100%);
@@ -129,9 +132,6 @@ exports[`Brand should render correctly with link provided 1`] = `
 
 .c3 {
   display: inline-block;
-  width: 100%;
-  max-width: 17.5rem;
-  min-width: 11.25rem;
 }
 
 .c4 {
@@ -148,6 +148,9 @@ exports[`Brand should render correctly with link provided 1`] = `
 
 .c2:hover .c4,
 .c2:focus .c4 {
+  width: 100%;
+  max-width: 17.5rem;
+  min-width: 11.25rem;
   -webkit-text-decoration: none;
   text-decoration: none;
   border-bottom: 0.25rem solid #FFFFFF;
@@ -192,7 +195,7 @@ exports[`Brand should render correctly with link provided 1`] = `
         xmlns="http://www.w3.org/2000/svg"
       >
         <g
-          fillrule="evenodd"
+          fill-rule="evenodd"
         >
           <path
             d="M84.32"
@@ -216,7 +219,7 @@ exports[`Brand should render correctly with link provided 1`] = `
 </div>
 `;
 
-exports[`Brand should render correctly with no service Localised Name 1`] = `
+exports[`Brand in SVG compatible browser should render brand SVG correctly with no service Localised Name 1`] = `
 .c3 {
   -webkit-clip-path: inset(100%);
   clip-path: inset(100%);
@@ -255,6 +258,9 @@ exports[`Brand should render correctly with no service Localised Name 1`] = `
 
 .c4:hover .c2,
 .c4:focus .c2 {
+  width: 100%;
+  max-width: 17.5rem;
+  min-width: 11.25rem;
   -webkit-text-decoration: none;
   text-decoration: none;
   border-bottom: 0.25rem solid #FFFFFF;
@@ -295,7 +301,7 @@ exports[`Brand should render correctly with no service Localised Name 1`] = `
       xmlns="http://www.w3.org/2000/svg"
     >
       <g
-        fillrule="evenodd"
+        fill-rule="evenodd"
       >
         <path
           d="M84.32"
@@ -311,7 +317,7 @@ exports[`Brand should render correctly with no service Localised Name 1`] = `
 </div>
 `;
 
-exports[`Brand should render correctly with transparent borders 1`] = `
+exports[`Brand in SVG compatible browser should render brand SVG correctly with transparent borders 1`] = `
 .c3 {
   -webkit-clip-path: inset(100%);
   clip-path: inset(100%);
@@ -352,6 +358,9 @@ exports[`Brand should render correctly with transparent borders 1`] = `
 
 .c4:hover .c2,
 .c4:focus .c2 {
+  width: 100%;
+  max-width: 17.5rem;
+  min-width: 11.25rem;
   -webkit-text-decoration: none;
   text-decoration: none;
   border-bottom: 0.25rem solid #FFFFFF;
@@ -392,7 +401,7 @@ exports[`Brand should render correctly with transparent borders 1`] = `
       xmlns="http://www.w3.org/2000/svg"
     >
       <g
-        fillrule="evenodd"
+        fill-rule="evenodd"
       >
         <path
           d="M84.32"
@@ -401,6 +410,417 @@ exports[`Brand should render correctly with transparent borders 1`] = `
     </svg>
     <span
       class="c3"
+    >
+      BBC News
+    </span>
+  </div>
+</div>
+`;
+
+exports[`Brand in SVG incompatible browser should render PNG fallback correctly with link provided 1`] = `
+.c6 {
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  -webkit-clip: rect(1px,1px,1px,1px);
+  clip: rect(1px,1px,1px,1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  width: 1px;
+  margin: 0;
+}
+
+.c1 {
+  max-width: 80rem;
+  margin: 0 auto;
+}
+
+.c0 {
+  background-color: #B80000;
+  height: 3.5rem;
+  width: 100%;
+  padding: 0 0.5rem;
+}
+
+.c3 {
+  display: inline-block;
+}
+
+.c2:hover .c7,
+.c2:focus .c7 {
+  width: 100%;
+  max-width: 17.5rem;
+  min-width: 11.25rem;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  border-bottom: 0.25rem solid #FFFFFF;
+}
+
+.c5 {
+  height: 1.5rem;
+  width: 100%;
+  width: 100%;
+  max-width: 35rem;
+  min-width: 22.5rem;
+}
+
+.c4 {
+  width: 100%;
+  max-width: 35rem;
+  min-width: 22.5rem;
+}
+
+.c2:hover .c4,
+.c2:focus .c4 {
+  width: 100%;
+  max-width: 35rem;
+  min-width: 22.5rem;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  border-bottom: 0.25rem solid #FFFFFF;
+}
+
+@media (min-width:25rem) {
+  .c0 {
+    height: 5rem;
+    padding: 0 1rem;
+  }
+}
+
+@media (max-width:24.9375rem) {
+  .c4 {
+    padding-top: 1rem;
+  }
+}
+
+@media (min-width:25rem) {
+  .c4 {
+    padding-top: 1.75rem;
+    padding-bottom: 1.25rem;
+  }
+}
+
+<div
+  class="c0"
+>
+  <div
+    class="c1"
+  >
+    <a
+      class="c2 c3"
+      href="https://www.bbc.co.uk/news"
+    >
+      <div
+        class="c4"
+      >
+        <img
+          alt=""
+          class="c5"
+          height="24"
+          src="test file stub"
+        />
+      </div>
+      <span
+        class="c6"
+        role="text"
+      >
+        <span
+          lang="en-GB"
+        >
+          Default Brand Name
+        </span>
+        , 
+        Service
+      </span>
+    </a>
+  </div>
+</div>
+`;
+
+exports[`Brand in SVG incompatible browser should render brand PNG correctly with link not provided 1`] = `
+.c4 {
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  -webkit-clip: rect(1px,1px,1px,1px);
+  clip: rect(1px,1px,1px,1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  width: 1px;
+  margin: 0;
+}
+
+.c1 {
+  max-width: 80rem;
+  margin: 0 auto;
+}
+
+.c0 {
+  background-color: #B80000;
+  height: 3.5rem;
+  width: 100%;
+  padding: 0 0.5rem;
+}
+
+.c3 {
+  height: 1.5rem;
+  width: 100%;
+  width: 100%;
+  max-width: 35rem;
+  min-width: 22.5rem;
+}
+
+.c2 {
+  width: 100%;
+  max-width: 35rem;
+  min-width: 22.5rem;
+}
+
+.c5:hover .c2,
+.c5:focus .c2 {
+  width: 100%;
+  max-width: 35rem;
+  min-width: 22.5rem;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  border-bottom: 0.25rem solid #FFFFFF;
+}
+
+@media (min-width:25rem) {
+  .c0 {
+    height: 5rem;
+    padding: 0 1rem;
+  }
+}
+
+@media (max-width:24.9375rem) {
+  .c2 {
+    padding-top: 1rem;
+  }
+}
+
+@media (min-width:25rem) {
+  .c2 {
+    padding-top: 1.75rem;
+    padding-bottom: 1.25rem;
+  }
+}
+
+<div
+  class="c0"
+>
+  <div
+    class="c1"
+  >
+    <div
+      class="c2"
+    >
+      <img
+        alt=""
+        class="c3"
+        height="24"
+        src="test file stub"
+      />
+    </div>
+    <span
+      class="c4"
+      role="text"
+    >
+      <span
+        lang="en-GB"
+      >
+        Default Brand Name
+      </span>
+      , 
+      Service
+    </span>
+  </div>
+</div>
+`;
+
+exports[`Brand in SVG incompatible browser should render brand PNG correctly with no service Localised Name 1`] = `
+.c4 {
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  -webkit-clip: rect(1px,1px,1px,1px);
+  clip: rect(1px,1px,1px,1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  width: 1px;
+  margin: 0;
+}
+
+.c1 {
+  max-width: 80rem;
+  margin: 0 auto;
+}
+
+.c0 {
+  background-color: #B80000;
+  height: 3.5rem;
+  width: 100%;
+  padding: 0 0.5rem;
+}
+
+.c3 {
+  height: 1.5rem;
+  width: 100%;
+  width: 100%;
+  max-width: 35rem;
+  min-width: 22.5rem;
+}
+
+.c2 {
+  width: 100%;
+  max-width: 35rem;
+  min-width: 22.5rem;
+}
+
+.c5:hover .c2,
+.c5:focus .c2 {
+  width: 100%;
+  max-width: 35rem;
+  min-width: 22.5rem;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  border-bottom: 0.25rem solid #FFFFFF;
+}
+
+@media (min-width:25rem) {
+  .c0 {
+    height: 5rem;
+    padding: 0 1rem;
+  }
+}
+
+@media (max-width:24.9375rem) {
+  .c2 {
+    padding-top: 1rem;
+  }
+}
+
+@media (min-width:25rem) {
+  .c2 {
+    padding-top: 1.75rem;
+    padding-bottom: 1.25rem;
+  }
+}
+
+<div
+  class="c0"
+>
+  <div
+    class="c1"
+  >
+    <div
+      class="c2"
+    >
+      <img
+        alt=""
+        class="c3"
+        height="24"
+        src="test file stub"
+      />
+    </div>
+    <span
+      class="c4"
+    >
+      BBC News
+    </span>
+  </div>
+</div>
+`;
+
+exports[`Brand in SVG incompatible browser should render brand PNG correctly with transparent borders 1`] = `
+.c4 {
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  -webkit-clip: rect(1px,1px,1px,1px);
+  clip: rect(1px,1px,1px,1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  width: 1px;
+  margin: 0;
+}
+
+.c1 {
+  max-width: 80rem;
+  margin: 0 auto;
+}
+
+.c0 {
+  background-color: #B80000;
+  height: 3.5rem;
+  width: 100%;
+  padding: 0 0.5rem;
+  border-top: 0.0625rem solid transparent;
+  border-bottom: 0.0625rem solid transparent;
+}
+
+.c3 {
+  height: 1.5rem;
+  width: 100%;
+  width: 100%;
+  max-width: 35rem;
+  min-width: 22.5rem;
+}
+
+.c2 {
+  width: 100%;
+  max-width: 35rem;
+  min-width: 22.5rem;
+}
+
+.c5:hover .c2,
+.c5:focus .c2 {
+  width: 100%;
+  max-width: 35rem;
+  min-width: 22.5rem;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  border-bottom: 0.25rem solid #FFFFFF;
+}
+
+@media (min-width:25rem) {
+  .c0 {
+    height: 5rem;
+    padding: 0 1rem;
+  }
+}
+
+@media (max-width:24.9375rem) {
+  .c2 {
+    padding-top: 1rem;
+  }
+}
+
+@media (min-width:25rem) {
+  .c2 {
+    padding-top: 1.75rem;
+    padding-bottom: 1.25rem;
+  }
+}
+
+<div
+  class="c0"
+>
+  <div
+    class="c1"
+  >
+    <div
+      class="c2"
+    >
+      <img
+        alt=""
+        class="c3"
+        height="24"
+        src="test file stub"
+      />
+    </div>
+    <span
+      class="c4"
     >
       BBC News
     </span>

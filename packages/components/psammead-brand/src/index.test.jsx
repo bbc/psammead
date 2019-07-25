@@ -5,7 +5,7 @@ import Brand from './index';
 
 const svg = {
   group: (
-    <g fillrule="evenodd">
+    <g fillRule="evenodd">
       <path d="M84.32" />
     </g>
   ),
@@ -15,89 +15,202 @@ const svg = {
   },
   ratio: 6.9979,
 };
+const png = 'test-image-name';
 
 describe('Brand', () => {
-  shouldMatchSnapshot(
-    'should render correctly with link provided',
-    <Brand
-      product="Default Brand Name"
-      serviceLocalisedName="Service"
-      svgHeight={24}
-      maxWidth={280}
-      minWidth={180}
-      svg={svg}
-      url="https://www.bbc.co.uk/news"
-    />,
-  );
+  describe('in SVG compatible browser', () => {
+    shouldMatchSnapshot(
+      'should render brand SVG correctly with link provided',
+      <Brand
+        product="Default Brand Name"
+        serviceLocalisedName="Service"
+        svgHeight={24}
+        maxWidth={280}
+        minWidth={180}
+        svg={svg}
+        png={png}
+        svgSupport={true}
+        url="https://www.bbc.co.uk/news"
+      />,
+    );
 
-  shouldMatchSnapshot(
-    'should render correctly with link not provided',
-    <Brand
-      product="Default Brand Name"
-      serviceLocalisedName="Service"
-      svg={svg}
-      svgHeight={24}
-      maxWidth={280}
-      minWidth={180}
-    />,
-  );
+    shouldMatchSnapshot(
+      'should render brand SVG correctly with link not provided',
+      <Brand
+        product="Default Brand Name"
+        serviceLocalisedName="Service"
+        svg={svg}
+        png={png}
+        svgSupport={true}
+        svgHeight={24}
+        maxWidth={280}
+        minWidth={180}
+      />,
+    );
 
-  shouldMatchSnapshot(
-    'should render correctly with no service Localised Name',
-    <Brand
-      product="BBC News"
-      svg={svg}
-      svgHeight={24}
-      maxWidth={280}
-      minWidth={180}
-    />,
-  );
+    shouldMatchSnapshot(
+      'should render brand SVG correctly with no service Localised Name',
+      <Brand
+        product="BBC News"
+        svg={svg}
+        png={png}
+        svgSupport={true}
+        svgHeight={24}
+        maxWidth={280}
+        minWidth={180}
+      />,
+    );
 
-  shouldMatchSnapshot(
-    'should render correctly with transparent borders',
-    <Brand
-      product="BBC News"
-      svg={svg}
-      svgHeight={24}
-      maxWidth={280}
-      minWidth={180}
-      borderTop
-      borderBottom
-    />,
-  );
+    shouldMatchSnapshot(
+      'should render brand SVG correctly with transparent borders',
+      <Brand
+        product="BBC News"
+        svg={svg}
+        png={png}
+        svgSupport={true}
+        svgHeight={24}
+        maxWidth={280}
+        minWidth={180}
+        borderTop
+        borderBottom
+      />,
+    );
 
-  describe('assertions - visually hidden text', () => {
-    it('should have role of text when serviceLocalisedName is provided', () => {
-      const { container } = render(
-        <Brand
-          product="Default Brand Name"
-          serviceLocalisedName="Service"
-          svgHeight={24}
-          maxWidth={280}
-          minWidth={180}
-          svg={svg}
-          url="https://www.bbc.co.uk/news"
-        />,
-      );
+    describe('assertions - visually hidden text', () => {
+      it('should have role of text when serviceLocalisedName is provided', () => {
+        const { container } = render(
+          <Brand
+            product="Default Brand Name"
+            serviceLocalisedName="Service"
+            svgSupport={true}
+            svgHeight={24}
+            maxWidth={280}
+            minWidth={180}
+            svg={svg}
+            png={png}
+            url="https://www.bbc.co.uk/news"
+          />,
+        );
 
-      expect(container.querySelector('span').getAttribute('role')).toEqual(
-        'text',
-      );
+        expect(container.querySelector('span').getAttribute('role')).toEqual(
+          'text',
+        );
+      });
+
+      it('should not have role of text when serviceLocalisedName is not provided', () => {
+        const { container } = render(
+          <Brand
+            product="Default Brand Name"
+            svgSupport={true}
+            svgHeight={24}
+            maxWidth={280}
+            minWidth={180}
+            svg={svg}
+            png={png}
+            url="https://www.bbc.co.uk/news"
+          />,
+        );
+
+        expect(container.querySelector('span').getAttribute('role')).toBeNull();
+      });
     });
+  });
 
-    it('should not have role of text when serviceLocalisedName is not provided', () => {
-      const { container } = render(
-        <Brand
-          product="Default Brand Name"
-          svgHeight={24}
-          maxWidth={280}
-          minWidth={180}
-          svg={svg}
-          url="https://www.bbc.co.uk/news"
-        />,
-      );
+  describe('in SVG incompatible browser', () => {
+    shouldMatchSnapshot(
+      'should render PNG fallback correctly with link provided',
+      <Brand
+        product="Default Brand Name"
+        serviceLocalisedName="Service"
+        svgHeight={24}
+        maxWidth={280}
+        minWidth={180}
+        svg={svg}
+        svgSupport={false}
+        png={png}
+        url="https://www.bbc.co.uk/news"
+      />,
+    );
 
-      expect(container.querySelector('span').getAttribute('role')).toBeNull();
+    shouldMatchSnapshot(
+      'should render brand PNG correctly with link not provided',
+      <Brand
+        product="Default Brand Name"
+        serviceLocalisedName="Service"
+        svg={svg}
+        png={png}
+        svgSupport={false}
+        svgHeight={24}
+        maxWidth={280}
+        minWidth={180}
+      />,
+    );
+
+    shouldMatchSnapshot(
+      'should render brand PNG correctly with no service Localised Name',
+      <Brand
+        product="BBC News"
+        svg={svg}
+        png={png}
+        svgSupport={false}
+        svgHeight={24}
+        maxWidth={280}
+        minWidth={180}
+      />,
+    );
+
+    shouldMatchSnapshot(
+      'should render brand PNG correctly with transparent borders',
+      <Brand
+        product="BBC News"
+        svg={svg}
+        png={png}
+        svgSupport={false}
+        svgHeight={24}
+        maxWidth={280}
+        minWidth={180}
+        borderTop
+        borderBottom
+      />,
+    );
+
+    describe('assertions - visually hidden text', () => {
+      it('should have role of text when serviceLocalisedName is provided', () => {
+        const { container } = render(
+          <Brand
+            product="Default Brand Name"
+            serviceLocalisedName="Service"
+            svgSupport={false}
+            svgHeight={24}
+            maxWidth={280}
+            minWidth={180}
+            svg={svg}
+            png={png}
+            url="https://www.bbc.co.uk/news"
+          />,
+        );
+
+        expect(container.querySelector('span').getAttribute('role')).toEqual(
+          'text',
+        );
+      });
+
+      it('should not have role of text when serviceLocalisedName is not provided', () => {
+        const { container } = render(
+          <Brand
+            product="Default Brand Name"
+            svgSupport={false}
+            svgHeight={24}
+            maxWidth={280}
+            minWidth={180}
+            svg={svg}
+            png={png}
+            url="https://www.bbc.co.uk/news"
+          />,
+        );
+
+        expect(container.querySelector('span').getAttribute('role')).toBeNull();
+      });
     });
   });
 });
