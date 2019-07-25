@@ -1,7 +1,9 @@
 const { exec } = require('child_process');
 
-const runExec = ({ command, dir }) =>
-  new Promise((resolve, reject) => {
+const runExec = ({ command, dir }) => {
+  // eslint-disable-next-line no-console
+  console.log(`Running "${command}"${dir ? ` in dir${dir}` : ''}`);
+  return new Promise((resolve, reject) => {
     exec(
       command,
       dir
@@ -18,5 +20,6 @@ const runExec = ({ command, dir }) =>
       },
     );
   });
+};
 
 module.exports = runExec;
