@@ -28,7 +28,7 @@ storybook:
 	npm run deploy-storybook;
 
 talos:
-	npm run talos
+	npm run talos;
 
 publish:
 	echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" > .npmrc
