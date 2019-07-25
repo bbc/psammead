@@ -89,7 +89,7 @@ pipeline {
         }
       }
     }
-    stage ('Bumper Bot') {
+    stage ('Talos') {
       when {
         expression { env.BRANCH_NAME == 'BumperBotIntegrate-new-new-new-new-new' }
       }
@@ -106,7 +106,7 @@ pipeline {
         sh 'git checkout -f BumperBotIntegrate-new-new-new-new-new'
         // unstash 'psammead-publishes'
         sh 'echo -n "@bbc/psammead-assets,@bbc/gel-foundations," >> published.txt'
-        sh 'make bumperBot'
+        sh 'make talos'
       }
       post {
         always {
