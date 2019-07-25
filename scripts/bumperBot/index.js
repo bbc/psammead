@@ -41,5 +41,10 @@ stuff.then(bumpedPackages => {
     )
     .then(() => {
       commitChanges('Update changelogs');
+    })
+    .catch(e => {
+      // eslint-disable-next-line no-console
+      console.error(e);
+      process.exit(1);
     });
 });
