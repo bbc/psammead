@@ -157,8 +157,7 @@ const StyledBrand = ({
           <BrandPng maxWidth={maxWidth} minWidth={minWidth}>
             <PngImg
               src={getImage(png)}
-              focusable="false"
-              aria-hidden="true"
+              alt=""
               height={svgHeight}
               maxWidth={maxWidth}
               minWidth={minWidth}

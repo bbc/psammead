@@ -119,7 +119,10 @@
     ],
     "testMatch": [
       "**/*.test.{js,jsx}"
-    ]
+    ],
+    "moduleNameMapper": {
+      "\\.(png)$": "<rootDir>/__mocks__/fileMock.js"
+    }
   },
   "spec": {
     "prune": false,
