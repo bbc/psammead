@@ -11,6 +11,7 @@ import * as svgs from '@bbc/psammead-assets/svgs';
 import { dirDecorator } from '@bbc/psammead-storybook-helpers';
 import notes from '../README.md';
 import Brand from './index';
+import { images } from './images';
 
 const inputs = () => {
   // capitalization is only for presentation purpose on the knob
@@ -18,12 +19,13 @@ const inputs = () => {
     .filter(key => key !== 'BBC_BLOCKS')
     .map(key => key.charAt(0).toUpperCase() + key.slice(1));
 
-  const pngOptions = ['Afaan', 'Igbo', 'Yoruba'];
+  const pngOptions = Object.keys(images);
   const svgChoice = select('Service SVG', svgOptions, 'News').toLowerCase();
+  const usePNGFallback = boolean('Use SVG instead of PNG fallback image', true);
   const pngChoice = select(
     'Fallback service PNG',
     pngOptions,
-    'Afaan',
+    'Default',
   ).toLowerCase();
   const productInput = text('Product', 'BBC News');
   const serviceLocalisedNameInput = text('Localised service name', 'Yoruba');
@@ -37,6 +39,7 @@ const inputs = () => {
   const borderTop = boolean('Border Top', false);
 
   return {
+    usePNGFallback,
     pngChoice,
     productInput,
     serviceLocalisedNameInput,
@@ -49,19 +52,21 @@ const inputs = () => {
   };
 };
 
-storiesOf('Components|Brand/SVGs', module)
+storiesOf('Components|Brand', module)
   .addDecorator(withKnobs)
   .addDecorator(dirDecorator)
   .add(
     'without brand link',
     () => {
       const {
+        usePNGFallback,
         productInput,
         serviceLocalisedNameInput,
         svgHeightInput,
         minWidthInput,
         maxWidthInput,
         svgChoice,
+        pngChoice,
         borderBottom,
         borderTop,
       } = inputs();
@@ -74,6 +79,8 @@ storiesOf('Components|Brand/SVGs', module)
           minWidth={minWidthInput}
           maxWidth={maxWidthInput}
           svg={svgs[svgChoice]}
+          svgSupport={usePNGFallback}
+          png={pngChoice}
           borderBottom={borderBottom}
           borderTop={borderTop}
         />
@@ -85,7 +92,9 @@ storiesOf('Components|Brand/SVGs', module)
     'with brand link',
     () => {
       const {
+        usePNGFallback,
         productInput,
+        pngChoice,
         serviceLocalisedNameInput,
         svgHeightInput,
         minWidthInput,
@@ -103,6 +112,8 @@ storiesOf('Components|Brand/SVGs', module)
           minWidth={minWidthInput}
           maxWidth={maxWidthInput}
           svg={svgs[svgChoice]}
+          svgSupport={usePNGFallback}
+          png={pngChoice}
           url="https://www.bbc.com/news"
           borderBottom={borderBottom}
           borderTop={borderTop}
@@ -111,62 +122,3 @@ storiesOf('Components|Brand/SVGs', module)
     },
     { notes },
   );
-
-storiesOf('Components|Brand/Fallback PNGs', module)
-  .addDecorator(withKnobs)
-  .addDecorator(dirDecorator)
-  .add('without brand link', () => {
-    const {
-      productInput,
-      serviceLocalisedNameInput,
-      svgHeightInput,
-      minWidthInput,
-      maxWidthInput,
-      svgChoice,
-      pngChoice,
-      borderBottom,
-      borderTop,
-    } = inputs();
-
-    return (
-      <Brand
-        product={productInput}
-        serviceLocalisedName={serviceLocalisedNameInput}
-        svgHeight={svgHeightInput}
-        minWidth={minWidthInput}
-        maxWidth={maxWidthInput}
-        png={pngChoice}
-        svg={svgs[svgChoice]}
-        borderBottom={borderBottom}
-        borderTop={borderTop}
-      />
-    );
-  })
-  .add('with brand link', () => {
-    const {
-      productInput,
-      serviceLocalisedNameInput,
-      svgHeightInput,
-      minWidthInput,
-      maxWidthInput,
-      pngChoice,
-      svgChoice,
-      borderBottom,
-      borderTop,
-    } = inputs();
-
-    return (
-      <Brand
-        product={productInput}
-        serviceLocalisedName={serviceLocalisedNameInput}
-        svgHeight={svgHeightInput}
-        minWidth={minWidthInput}
-        maxWidth={maxWidthInput}
-        png={pngChoice}
-        svg={svgs[svgChoice]}
-        url="https://www.bbc.com/news"
-        borderBottom={borderBottom}
-        borderTop={borderTop}
-      />
-    );
-  });
