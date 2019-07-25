@@ -11,8 +11,6 @@ const Container = styled.div`
   padding: ${GEL_SPACING};
 `;
 
-const Row = styled.div``;
-
 const Value = styled.div`
   display: inline-block;
   margin: ${GEL_SPACING};
@@ -22,10 +20,10 @@ stories.add('Numerals', () => {
   return (
     <Container>
       {numeralSystems.map(numeralSystem => (
-        <Row>
+        <div>
           <Value>{numeralSystem}</Value>
           <Value>{numerals[numeralSystem].join(', ')}</Value>
-        </Row>
+        </div>
       ))}
     </Container>
   );
