@@ -17,7 +17,7 @@ npm install @bbc/psammead-locales --save
 
 ## Usage
 
-**Moment locales**
+### Moment locales
 
 ```jsx
 import moment from 'moment';
@@ -26,7 +26,7 @@ import '@bbc/psammead-locales/moment/ig';
 moment.locale('ig');
 ```
 
-**Numerals**
+### Numerals
 
 ```jsx
 import { Nepali } from '@bbc/psammead-locales/numerals';
