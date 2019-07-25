@@ -88,11 +88,6 @@ const BrandSvg = styled.svg`
   /* stylelint-enable */
 `;
 
-// Check if browser supports SVG
-const svgSupport = () =>
-  !!document.createElementNS &&
-  !!document.createElementNS('http://www.w3.org/2000/svg', 'svg').createSVGRect;
-
 const PngImg = styled.img`
   height: ${props => props.height / 16}rem;
   width: 100%;
@@ -149,34 +144,39 @@ const StyledBrand = ({
   svg,
   maxWidth,
   minWidth,
+  svgSupport,
 }) => (
   <Fragment>
-    {svg && (
+    {svg && svgSupport ? (
       <Fragment>
-        {png && svgSupport() ? (
-          <BrandPng maxWidth={maxWidth} minWidth={minWidth}>
-            <PngImg
-              src={getImage(png)}
-              alt=""
-              height={svgHeight}
-              maxWidth={maxWidth}
-              minWidth={minWidth}
-            />
-          </BrandPng>
-        ) : (
-          <BrandSvg
+        <BrandSvg
+          height={svgHeight}
+          viewBox={`0 0 ${svg.viewbox.width} ${svg.viewbox.height}`}
+          xmlns="http://www.w3.org/2000/svg"
+          focusable="false"
+          aria-hidden="true"
+          ratio={svg.ratio}
+          maxWidth={maxWidth}
+          minWidth={minWidth}
+        >
+          {svg.group}
+        </BrandSvg>
+        <LocalisedBrandName
+          product={product}
+          serviceLocalisedName={serviceLocalisedName}
+        />
+      </Fragment>
+    ) : (
+      <Fragment>
+        <BrandPng maxWidth={maxWidth} minWidth={minWidth}>
+          <PngImg
+            src={getImage(png)}
+            alt=""
             height={svgHeight}
-            viewBox={`0 0 ${svg.viewbox.width} ${svg.viewbox.height}`}
-            xmlns="http://www.w3.org/2000/svg"
-            focusable="false"
-            aria-hidden="true"
-            ratio={svg.ratio}
             maxWidth={maxWidth}
             minWidth={minWidth}
-          >
-            {svg.group}
-          </BrandSvg>
-        )}
+          />
+        </BrandPng>
         <LocalisedBrandName
           product={product}
           serviceLocalisedName={serviceLocalisedName}
@@ -192,6 +192,7 @@ const brandProps = {
   maxWidth: number.isRequired,
   minWidth: number.isRequired,
   svgHeight: number.isRequired,
+  svgSupport: bool.isRequired,
   svg: shape({
     group: node.isRequired,
     ratio: number.isRequired,

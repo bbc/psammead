@@ -29,7 +29,7 @@ describe('Brand', () => {
         minWidth={180}
         svg={svg}
         png={png}
-        svgSupport={true}
+        svgSupport
         url="https://www.bbc.co.uk/news"
       />,
     );
@@ -41,7 +41,7 @@ describe('Brand', () => {
         serviceLocalisedName="Service"
         svg={svg}
         png={png}
-        svgSupport={true}
+        svgSupport
         svgHeight={24}
         maxWidth={280}
         minWidth={180}
@@ -54,7 +54,7 @@ describe('Brand', () => {
         product="BBC News"
         svg={svg}
         png={png}
-        svgSupport={true}
+        svgSupport
         svgHeight={24}
         maxWidth={280}
         minWidth={180}
@@ -67,7 +67,7 @@ describe('Brand', () => {
         product="BBC News"
         svg={svg}
         png={png}
-        svgSupport={true}
+        svgSupport
         svgHeight={24}
         maxWidth={280}
         minWidth={180}
@@ -82,7 +82,7 @@ describe('Brand', () => {
           <Brand
             product="Default Brand Name"
             serviceLocalisedName="Service"
-            svgSupport={true}
+            svgSupport
             svgHeight={24}
             maxWidth={280}
             minWidth={180}
@@ -101,7 +101,7 @@ describe('Brand', () => {
         const { container } = render(
           <Brand
             product="Default Brand Name"
-            svgSupport={true}
+            svgSupport
             svgHeight={24}
             maxWidth={280}
             minWidth={180}
