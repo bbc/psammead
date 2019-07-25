@@ -1,7 +1,7 @@
 const GitHub = require('github-api');
-const getPRBody = require('./getPRBody');
+const getPRBody = require('../getPullRequestBody');
 
-const createPR = ({ packages, bumpedPackages, branchName }) => {
+const createPullRequest = ({ packages, bumpedPackages, branchName }) => {
   const gh = new GitHub({
     token: process.env.GITHUB_TOKEN,
   });
@@ -17,4 +17,4 @@ const createPR = ({ packages, bumpedPackages, branchName }) => {
   });
 };
 
-module.exports = createPR;
+module.exports = createPullRequest;

@@ -6,14 +6,26 @@ const runNpmInstall = require('../regeneratePackageLocks/runNpmInstall');
 const bumpChangelogs = require('../bumpChangelogs/index.js');
 const checkoutBranch = require('./checkoutBranch');
 const commitChanges = require('./commitChanges');
-const createPR = require('./createPR');
+const createPullRequest = require('./createPullRequest');
 const getBranchName = require('./getBranchName');
 
 const packages = getChangedPackages();
 const branchName = getBranchName();
 
+if (packages.length <= 0) {
+  // eslint-disable-next-line no-console
+  console.log(`No packages were published!`);
+  process.exit();
+}
+
 upgradeDependencies(packages)
   .then(bumpedPackages => {
+    if (bumpedPackages.length <= 0) {
+      // eslint-disable-next-line no-console
+      console.log('No packages to bump!');
+      process.exit();
+    }
+
     const bumpedPackagesNoBBCPrefix = bumpedPackages.map(dep =>
       dep.replace('@bbc/', ''),
     );
@@ -31,7 +43,7 @@ upgradeDependencies(packages)
       )
       .then(() => checkoutBranch(branchName))
       .then(() => commitChanges('Talos - Bump Dependencies'))
-      .then(() => createPR({ packages, bumpedPackages, branchName }))
+      .then(() => createPullRequest({ packages, bumpedPackages, branchName }))
       .then(({ data }) =>
         bumpChangelogs({
           packageNames: bumpedPackagesNoBBCPrefix,
