@@ -10,41 +10,39 @@ const createPR = require('./createPR');
 const getBranchName = require('./getBranchName');
 
 const packages = getChangedPackages();
-const stuff = upgradeDependencies(packages);
 const branchName = getBranchName();
 
-stuff.then(bumpedPackages => {
-  const bumpedPackagesNoBBCPrefix = bumpedPackages.map(dep =>
-    dep.replace('@bbc/', ''),
-  );
+upgradeDependencies(packages)
+  .then(bumpedPackages => {
+    const bumpedPackagesNoBBCPrefix = bumpedPackages.map(dep =>
+      dep.replace('@bbc/', ''),
+    );
 
-  bumpPackages({ packageNames: bumpedPackagesNoBBCPrefix, version: 'patch' })
-    .then(() =>
-      Promise.all(
-        bumpedPackagesNoBBCPrefix.map(dep =>
-          runNpmInstall(getPackagePath(dep)),
+    return bumpPackages({
+      packageNames: bumpedPackagesNoBBCPrefix,
+      version: 'patch',
+    })
+      .then(() =>
+        Promise.all(
+          bumpedPackagesNoBBCPrefix.map(dep =>
+            runNpmInstall(getPackagePath(dep)),
+          ),
         ),
-      ),
-    )
-    .then(() => checkoutBranch(branchName))
-    .then(() => {
-      commitChanges('Bump Dependencies');
-
-      return createPR({ packages, bumpedPackages, branchName });
-    })
-    .then(({ data }) =>
-      bumpChangelogs({
-        packageNames: bumpedPackagesNoBBCPrefix,
-        prLink: data.html_url,
-        changesDescription: 'Bump Dependencies',
-      }),
-    )
-    .then(() => {
-      commitChanges('Update changelogs');
-    })
-    .catch(e => {
-      // eslint-disable-next-line no-console
-      console.error(e);
-      process.exit(1);
-    });
-});
+      )
+      .then(() => checkoutBranch(branchName))
+      .then(() => commitChanges('Talos - Bump Dependencies'))
+      .then(() => createPR({ packages, bumpedPackages, branchName }))
+      .then(({ data }) =>
+        bumpChangelogs({
+          packageNames: bumpedPackagesNoBBCPrefix,
+          prLink: data.html_url,
+          changesDescription: 'Talos - Bump Dependencies',
+        }),
+      )
+      .then(() => commitChanges('Talos - Update changelogs'));
+  })
+  .catch(e => {
+    // eslint-disable-next-line no-console
+    console.error(e);
+    process.exit(1);
+  });

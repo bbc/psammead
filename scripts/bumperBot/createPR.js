@@ -9,7 +9,7 @@ const createPR = ({ packages, bumpedPackages, branchName }) => {
   const repo = gh.getRepo('bbc', 'psammead');
 
   return repo.createPullRequest({
-    title: `BumperBot: Bump ${packages.join(', ')}`,
+    title: `Talos - Bump ${packages.join(', ')}`,
     body: getPRBody(packages, bumpedPackages),
     head: branchName,
     base: 'BumperBotIntegrate-new-new-new-new-new',

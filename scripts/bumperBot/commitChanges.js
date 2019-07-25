@@ -1,9 +1,9 @@
-const { execSync } = require('child_process');
+const runExec = require('../utilities/runExec');
 
 const commitChanges = message => {
-  execSync(`git add packages`, { stdio: 'inherit' });
-  execSync(`git commit -m "${message}"`, { stdio: 'inherit' });
-  execSync(`git push origin HEAD`, { stdio: 'inherit' });
+  return runExec({ command: `git add packages` })
+    .then(() => runExec({ command: `git commit -m "${message}` }))
+    .then(() => runExec({ command: `git push origin HEAD` }));
 };
 
 module.exports = commitChanges;
