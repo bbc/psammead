@@ -52,7 +52,7 @@ pipeline {
           sh 'make code-coverage-after-build'
         }
         withCredentials([string(credentialsId: 'simorgh-chromatic-app-code', variable: 'CHROMATIC_APP_CODE')]) {
-          sh 'make change-scanner'
+          sh 'npm run test:chromatic'
         }
       }
       post {
