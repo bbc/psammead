@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 | ------- | ----------- |
+| 4.2.1 | [PR#1365](https://github.com/bbc/psammead/pull/1365) Bump psammead-styles to 1.2.0 |
 | 4.2.0 | [PR#1233](https://github.com/bbc/psammead/pull/1233) Add ESM modules entry |
 | 4.1.12 | [PR#1181](https://github.com/bbc/psammead/pull/1181) Bump dependencies |
 | 4.1.11 | [PR#1082](https://github.com/bbc/psammead/pull/1082) Bump lodash security vulnerability |
