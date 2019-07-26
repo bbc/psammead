@@ -1,3 +1,7 @@
+/*
+ *  BBC REITH
+ */
+
 const reithFallback = `Helvetica, Arial, sans-serif;`;
 const reithSans = `font-family: ReithSans, ${reithFallback}`;
 const reithSerif = `font-family: ReithSerif, ${reithFallback}`;
@@ -41,6 +45,10 @@ export const news = {
   `,
 };
 
+/*
+ *  HELMET
+ */
+
 const helmet = `font-family: Helmet, Freesans, Helvetica, Arial, sans-serif;`;
 
 const helmetFontStyles = {
@@ -62,23 +70,36 @@ const helmetFontStyles = {
   `,
 };
 
-const nassimPersian = `font-family: NassimPersian, Arial, Verdana, Geneva, Helvetica, sans-serif;`;
-
-const persianStyles = {
-  sansRegular: `
-    ${nassimPersian}
-    ${getFontStyleAndWeight('normal', 400)}
-  `,
-  sansBold: `
-    ${nassimPersian}
-    ${getFontStyleAndWeight('normal', 700)}
-  `,
-};
-
-export const persian = persianStyles;
-
 export const igbo = helmetFontStyles;
 
 export const pidgin = helmetFontStyles;
 
 export const yoruba = helmetFontStyles;
+
+/*
+ *  BBC NASSIM
+ */
+
+const nassimArabicFontFamily = `font-family: BBCNassimArabic, Arial, Verdana, Geneva, Helvetica, sans-serif;`;
+const nassimPashtoFontFamily = `font-family: BBCNassimPashto, Arial, Verdana, Geneva, Helvetica, sans-serif;`;
+const nassimPersianFontFamily = `font-family: BBBCNassimPersian, Arial, Verdana, Geneva, Helvetica, sans-serif;`;
+const nassimUrduFontFamily = `font-family: BBCNassimUrdu, Arial, Verdana, Geneva, Helvetica, sans-serif;`;
+
+const nassimStyles = fontFamily => ({
+  sansRegular: `
+    ${fontFamily}
+    ${getFontStyleAndWeight('normal', 400)}
+  `,
+  sansBold: `
+    ${fontFamily}
+    ${getFontStyleAndWeight('normal', 700)}
+  `,
+});
+
+export const arabic = nassimStyles(nassimArabicFontFamily);
+
+export const pashto = nassimStyles(nassimPashtoFontFamily);
+
+export const persian = nassimStyles(nassimPersianFontFamily);
+
+export const urdu = nassimStyles(nassimUrduFontFamily);
