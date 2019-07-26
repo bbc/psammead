@@ -21,6 +21,7 @@ import {
 } from '@bbc/gel-foundations/typography';
 import { C_EBON, C_SHADOW, C_METAL } from '@bbc/psammead-styles/colours';
 import { getSansRegular, getSerifBold } from '@bbc/psammead-styles/font-styles';
+import { grid } from '@bbc/psammead-styles/detection';
 
 const twoOfSixColumnsMaxWidthScaleable = `33.33%`;
 // (2 / 6) * 100 = 0.3333333333 = 33.33%
@@ -40,7 +41,7 @@ const fullWidthColumnsMaxScaleable = `100%`;
 const StoryPromoWrapper = styled.div`
   position: relative;
 
-  @supports (display: grid) {
+  @supports (${grid}) {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-column-gap: ${GEL_GUTTER_BELOW_600PX};
@@ -101,7 +102,7 @@ const ImageGridItem = styled.div`
     width: ${fourOfTwelveColumnsMaxWidthScaleable};
   }
 
-  @supports (display: grid) {
+  @supports (${grid}) {
     display: block;
     width: initial;
 
@@ -211,7 +212,7 @@ const TextGridItem = styled.div`
     width: ${eightOfTwelveColumnsMaxScaleable};
   }
 
-  @supports (display: grid) {
+  @supports (${grid}) {
     display: block;
     width: initial;
     padding: initial;
