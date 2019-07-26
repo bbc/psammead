@@ -13,6 +13,7 @@ import Timestamp from '.';
 
 import '@bbc/psammead-locales/moment/ig';
 import '@bbc/psammead-locales/moment/pcm';
+import '@bbc/psammead-locales/moment/yo';
 
 let timestamp = moment();
 
