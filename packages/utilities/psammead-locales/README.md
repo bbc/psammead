@@ -6,7 +6,7 @@ This package provides a collection of locale configs, used in BBC World Service 
 
 `/moment/ig` - A [moment.js](https://momentjs.com/) locale for Igbo. This can be used to localise timestamps generated using moment.js.
 `/moment/pcm` - A [moment.js](https://momentjs.com/) locale for Pidgin. This can be used to localise timestamps generated using moment.js.
-
+`/moment/yo` - A [moment.js](https://momentjs.com/) locale override for Yoruba. This replaces some translations as requested for BBC News World Service. Note that importing this will also cause the upstream `yo` locale to be loaded.
 
 ## Installation
 
