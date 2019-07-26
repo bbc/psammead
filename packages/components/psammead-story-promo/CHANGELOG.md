@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 | ------- | ----------- |
+| 2.2.1 | [PR#1502](https://github.com/bbc/psammead/pull/1502) Add media type knob to story |
 | 2.2.0 | [PR#1408](https://github.com/bbc/psammead/pull/1408) Use `@bbc/psammead-styles/detection` to detect grid support |
 | 2.1.2 | [PR#1409](https://github.com/bbc/psammead/pull/1409) Bump media-indicator to v2.3.0 |
 | 2.1.1 | [PR#1365](https://github.com/bbc/psammead/pull/1365) Bump psammead-styles to 1.2.0 |
