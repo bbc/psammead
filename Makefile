@@ -28,6 +28,9 @@ storybook:
 	make setup-git;
 	npm run deploy-storybook;
 
+chromaticqaTests:
+	npm run test:chromatic || true
+
 bump-dependants:
 	make setup-git
 	npm run updateDependants
