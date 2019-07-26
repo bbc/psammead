@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`should return Bengali numerals 1`] = `
+exports[`Numerals should return Bengali numerals 1`] = `
 Array [
   "০",
   "১",
@@ -16,7 +16,7 @@ Array [
 ]
 `;
 
-exports[`should return Burmese numerals 1`] = `
+exports[`Numerals should return Burmese numerals 1`] = `
 Array [
   "၀",
   "၁",
@@ -32,7 +32,7 @@ Array [
 ]
 `;
 
-exports[`should return Devanagari numerals 1`] = `
+exports[`Numerals should return Devanagari numerals 1`] = `
 Array [
   "०",
   "१",
@@ -48,7 +48,7 @@ Array [
 ]
 `;
 
-exports[`should return EasternArabic numerals 1`] = `
+exports[`Numerals should return EasternArabic numerals 1`] = `
 Array [
   "۰",
   "۱",
@@ -64,7 +64,7 @@ Array [
 ]
 `;
 
-exports[`should return Gujarati numerals 1`] = `
+exports[`Numerals should return Gujarati numerals 1`] = `
 Array [
   "૦",
   "૧",
@@ -80,7 +80,7 @@ Array [
 ]
 `;
 
-exports[`should return GurmukhiPunjabi numerals 1`] = `
+exports[`Numerals should return GurmukhiPunjabi numerals 1`] = `
 Array [
   "੦",
   "੧",
@@ -96,7 +96,7 @@ Array [
 ]
 `;
 
-exports[`should return Kannada numerals 1`] = `
+exports[`Numerals should return Kannada numerals 1`] = `
 Array [
   "೦",
   "೧",
@@ -112,7 +112,7 @@ Array [
 ]
 `;
 
-exports[`should return Malayalam numerals 1`] = `
+exports[`Numerals should return Malayalam numerals 1`] = `
 Array [
   "൦",
   "൧",
@@ -128,7 +128,7 @@ Array [
 ]
 `;
 
-exports[`should return Nepali numerals 1`] = `
+exports[`Numerals should return Nepali numerals 1`] = `
 Array [
   "०",
   "१",
@@ -144,7 +144,7 @@ Array [
 ]
 `;
 
-exports[`should return Odia numerals 1`] = `
+exports[`Numerals should return Odia numerals 1`] = `
 Array [
   "୦",
   "୧",
@@ -160,7 +160,7 @@ Array [
 ]
 `;
 
-exports[`should return TamilGrantha numerals 1`] = `
+exports[`Numerals should return TamilGrantha numerals 1`] = `
 Array [
   "௦",
   "௧",
@@ -176,7 +176,7 @@ Array [
 ]
 `;
 
-exports[`should return Telugu numerals 1`] = `
+exports[`Numerals should return Telugu numerals 1`] = `
 Array [
   "౦",
   "౧",
@@ -192,7 +192,7 @@ Array [
 ]
 `;
 
-exports[`should return WesternArabic numerals 1`] = `
+exports[`Numerals should return WesternArabic numerals 1`] = `
 Array [
   "0",
   "1",
