@@ -12,12 +12,14 @@ import { GEL_FF_REITH_SANS } from '@bbc/gel-foundations/typography';
 import notes from '../README.md';
 import './ig';
 import './pcm';
+import './yo';
 
 const stories = storiesOf('Utilities|Moment Locales', module);
 
 const locales = [
   { name: 'Igbo', locale: 'ig' },
   { name: 'Pidgin', locale: 'pcm' },
+  { name: 'Yoruba', locale: 'yo' },
 ];
 
 /* eslint-disable prettier/prettier */
