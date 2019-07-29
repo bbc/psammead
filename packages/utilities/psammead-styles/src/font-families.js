@@ -74,15 +74,19 @@ const helmetFontStyles = {
  *  BBC NASSIM
  */
 
-const nassimArabicFontFamily = `font-family: BBCNassimArabic, Arial, Verdana, Geneva, Helvetica, sans-serif;`;
-const nassimPashtoFontFamily = `font-family: BBCNassimPashto, Arial, Verdana, Geneva, Helvetica, sans-serif;`;
-const nassimPersianFontFamily = `font-family: BBCNassimPersian, Arial, Verdana, Geneva, Helvetica, sans-serif;`;
-const nassimUrduFontFamily = `font-family: BBCNassimUrdu, Arial, Verdana, Geneva, Helvetica, sans-serif;`;
+const nassimArabicFontFamily = `font-family: "BBC Nassim Arabic", Arial, Verdana, Geneva, Helvetica, sans-serif;`;
+const nassimPashtoFontFamily = `font-family: "BBC Nassim Pashto", Arial, Verdana, Geneva, Helvetica, sans-serif;`;
+const nassimPersianFontFamily = `font-family: "BBC Nassim Persian", Arial, Verdana, Geneva, Helvetica, sans-serif;`;
+const nassimUrduFontFamily = `font-family: "BBC Nassim Urdu", Arial, Verdana, Geneva, Helvetica, sans-serif;`;
 
 const nassimFontStyles = fontFamily => ({
   sansRegular: `
     ${fontFamily}
     ${getFontStyleAndWeight('normal', 400)}
+  `,
+  sansBold: `
+    ${fontFamily}
+    ${getFontStyleAndWeight('normal', 700)}
   `,
 });
 
@@ -96,6 +100,10 @@ const amharicStyles = {
     ${amharicFontFamily}
     ${getFontStyleAndWeight('normal', 400)}
   `,
+  sansBold: `
+    ${amharicFontFamily}
+    ${getFontStyleAndWeight('normal', 700)}
+  `,
 };
 
 /*
@@ -108,6 +116,10 @@ const bengaliStyles = {
     ${bengaliFontFamily}
     ${getFontStyleAndWeight('normal', 400)}
   `,
+  sansBold: `
+    ${bengaliFontFamily}
+    ${getFontStyleAndWeight('normal', 700)}
+  `,
 };
 
 /*
@@ -119,6 +131,10 @@ const burmeseStyles = {
   sansRegular: `
     ${burmeseFontFamily}
     ${getFontStyleAndWeight('normal', 400)}
+  `,
+  sansBold: `
+    ${burmeseFontFamily}
+    ${getFontStyleAndWeight('normal', 700)}
   `,
 };
 
@@ -148,6 +164,10 @@ const gujaratiStyles = {
     ${gujaratiFontFamily}
     ${getFontStyleAndWeight('normal', 400)}
   `,
+  sansBold: `
+    ${gujaratiFontFamily}
+    ${getFontStyleAndWeight('normal', 700)}
+  `,
 };
 
 /*
@@ -159,6 +179,10 @@ const hindiStyles = {
   sansRegular: `
     ${hindiFontFamily}
     ${getFontStyleAndWeight('normal', 400)}
+  `,
+  sansBold: `
+    ${hindiFontFamily}
+    ${getFontStyleAndWeight('normal', 700)}
   `,
 };
 
@@ -172,6 +196,10 @@ const japaneseStyles = {
     ${japaneseFontFamily}
     ${getFontStyleAndWeight('normal', 400)}
   `,
+  sansBold: `
+    ${japaneseFontFamily}
+    ${getFontStyleAndWeight('normal', 700)}
+  `,
 };
 
 /*
@@ -183,6 +211,10 @@ const koreanStyles = {
   sansRegular: `
     ${koreanFontFamily}
     ${getFontStyleAndWeight('normal', 400)}
+  `,
+  sansBold: `
+    ${koreanFontFamily}
+    ${getFontStyleAndWeight('normal', 700)}
   `,
 };
 
@@ -196,6 +228,10 @@ const marathiStyles = {
     ${marathiFontFamily}
     ${getFontStyleAndWeight('normal', 400)}
   `,
+  sansBold: `
+    ${marathiFontFamily}
+    ${getFontStyleAndWeight('normal', 700)}
+  `,
 };
 
 /*
@@ -207,6 +243,10 @@ const nepaliStyles = {
   sansRegular: `
     ${nepaliFontFamily}
     ${getFontStyleAndWeight('normal', 400)}
+  `,
+  sansBold: `
+    ${nepaliFontFamily}
+    ${getFontStyleAndWeight('normal', 700)}
   `,
 };
 
@@ -221,17 +261,9 @@ const punjabiStyles = {
     ${punjabiFontFamily}
     ${getFontStyleAndWeight('normal', 400)}
   `,
-  sansItalic: `
-    ${punjabiFontFamily}
-    ${getFontStyleAndWeight('italic', 400)}
-  `,
   sansBold: `
     ${punjabiFontFamily}
     ${getFontStyleAndWeight('normal', 700)}
-  `,
-  sansBoldItalic: `
-    ${punjabiFontFamily}
-    ${getFontStyleAndWeight('italic', 700)}
   `,
 };
 
@@ -242,9 +274,13 @@ const sinhalaFontFamily = `font-family: "Iskoola Pota BBC", Arial, Verdana, Gene
 
 const sinhalaStyles = {
   sansRegular: `
-  ${sinhalaFontFamily}
-  ${getFontStyleAndWeight('normal', 400)}
-`,
+    ${sinhalaFontFamily}
+    ${getFontStyleAndWeight('normal', 400)}
+  `,
+  sansBold: `
+    ${sinhalaFontFamily}
+    ${getFontStyleAndWeight('normal', 700)}
+  `,
 };
 
 /*
@@ -254,9 +290,13 @@ const tamilFontFamily = `font-family: Latha, Helmet, Freesans, Helvetica, Arial,
 
 const tamilStyles = {
   sansRegular: `
-  ${tamilFontFamily}
-  ${getFontStyleAndWeight('normal', 400)}
-`,
+    ${tamilFontFamily}
+    ${getFontStyleAndWeight('normal', 400)}
+  `,
+  sansBold: `
+    ${tamilFontFamily}
+    ${getFontStyleAndWeight('normal', 700)}
+  `,
 };
 
 /*
@@ -266,9 +306,13 @@ const teleguFontFamily = `font-family: Mallanna, "Noto Sans Telugu", "Hind Guntu
 
 const teleguStyles = {
   sansRegular: `
-  ${teleguFontFamily}
-  ${getFontStyleAndWeight('normal', 400)}
-`,
+    ${teleguFontFamily}
+    ${getFontStyleAndWeight('normal', 400)}
+  `,
+  sansBold: `
+    ${teleguFontFamily}
+    ${getFontStyleAndWeight('normal', 700)}
+  `,
 };
 
 /*
@@ -281,17 +325,9 @@ const thaiStyles = {
     ${thaiFontFamily}
     ${getFontStyleAndWeight('normal', 400)}
   `,
-  sansItalic: `
-    ${thaiFontFamily}
-    ${getFontStyleAndWeight('italic', 400)}
-  `,
   sansBold: `
     ${thaiFontFamily}
     ${getFontStyleAndWeight('normal', 700)}
-  `,
-  sansBoldItalic: `
-    ${thaiFontFamily}
-    ${getFontStyleAndWeight('italic', 700)}
   `,
 };
 
@@ -304,6 +340,10 @@ const tigrinyaStyles = {
   sansRegular: `
     ${tigrinyaFontFamily}
     ${getFontStyleAndWeight('normal', 400)}
+  `,
+  sansBold: `
+    ${tigrinyaFontFamily}
+    ${getFontStyleAndWeight('normal', 700)}
   `,
 };
 
