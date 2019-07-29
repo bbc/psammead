@@ -28,4 +28,28 @@ storiesOf('Components|SectionLabel', module)
       ),
     ),
     { notes, knobs: { escapeHTML: false } },
+  )
+  .add(
+    'with a link',
+    inputProvider(
+      [{ name: 'title', defaultText: 'Most Read' }],
+      ({ slotTexts: [title], script, dir, service }) => (
+        <SectionLabel
+          script={script}
+          dir={dir}
+          bar={boolean('show bar?', true)}
+          visuallyHidden={boolean(
+            'visually hide component when width less than 600px?',
+            false,
+          )}
+          labelId="example-section-label"
+          service={service}
+          linkText="See More"
+          href="https://www.bbc.com/igbo"
+        >
+          {title}
+        </SectionLabel>
+      ),
+    ),
+    { notes, knobs: { escapeHTML: false } },
   );
