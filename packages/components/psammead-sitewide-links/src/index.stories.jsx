@@ -20,6 +20,7 @@ const linkNames = [1, 2, 3, 4, 5, 6, 7].map(n => ({
 linkNames.unshift(
   { name: 'External Link', defaultText: 'external link' },
   { name: 'Copyright', defaultText: 'copyright text' },
+  { name: 'Copyright Symbol', defaultText: '@' },
 );
 
 storiesOf('Components|SitewideLinks', module)
@@ -29,7 +30,12 @@ storiesOf('Components|SitewideLinks', module)
     inputProvider(
       linkNames,
       ({
-        slotTexts: [externalLinkText, copyrightText, ...linkTexts],
+        slotTexts: [
+          externalLinkText,
+          copyrightText,
+          copyrightSymbol,
+          ...linkTexts
+        ],
         service,
       }) => {
         const links = linkTexts.map(buildLink);
@@ -37,6 +43,7 @@ storiesOf('Components|SitewideLinks', module)
           <SitewideLinks
             links={links}
             copyrightText={copyrightText}
+            copyrightSymbol={copyrightSymbol}
             externalLink={buildLink(externalLinkText)}
             service={service}
           />

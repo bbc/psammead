@@ -263,6 +263,9 @@ exports[`SitewideLinks should render correctly 1`] = `
     <p
       class="c7"
     >
+      <span>
+        @
+      </span>
       Text here. 
       <a
         class="c4 c8"

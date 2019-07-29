@@ -14,6 +14,7 @@ describe(`SitewideLinks`, () => {
     'should render correctly',
     <SitewideLinks
       links={links}
+      copyrightSymbol={<span>@</span>}
       copyrightText="Text here. "
       externalLink={link}
       service="news"
