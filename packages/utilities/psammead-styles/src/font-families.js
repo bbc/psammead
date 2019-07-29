@@ -309,10 +309,6 @@ const teleguStyles = {
     ${teleguFontFamily}
     ${getFontStyleAndWeight('normal', 400)}
   `,
-  sansBold: `
-    ${teleguFontFamily}
-    ${getFontStyleAndWeight('normal', 700)}
-  `,
 };
 
 /*
