@@ -618,7 +618,7 @@ exports[`StoryPromo should render Live promo correctly 1`] = `
   margin-right: 0.5rem;
 }
 
-@supports (display:grid) {
+@supports (grid-template-columns:fit-content(200px)) {
   .c0 {
     display: grid;
     grid-template-columns: repeat(6,1fr);
@@ -632,7 +632,7 @@ exports[`StoryPromo should render Live promo correctly 1`] = `
   }
 }
 
-@supports (display:grid) {
+@supports (grid-template-columns:fit-content(200px)) {
   .c1 {
     display: block;
     width: initial;
@@ -708,7 +708,7 @@ exports[`StoryPromo should render Live promo correctly 1`] = `
   }
 }
 
-@supports (display:grid) {
+@supports (grid-template-columns:fit-content(200px)) {
   .c3 {
     display: block;
     width: initial;
