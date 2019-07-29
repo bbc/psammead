@@ -1,6 +1,16 @@
 const baseFontUrl = 'https://gel.files.bbci.co.uk/r2.511/';
-const nassimPersianBaseUrl =
+
+const baseUrlBBCNassimArabic =
+  'https://ws-downloads.files.bbci.co.uk/fonts/NassimArabic/v1.441/';
+
+const baseUrlBBCNassimPashto =
+  'https://ws-downloads.files.bbci.co.uk/fonts/NassimPashto/v1.57/';
+
+const baseUrlBBCNassimPersian =
   'https://ws-downloads.files.bbci.co.uk/fonts/NassimPersian/v1.511/';
+
+const baseUrlBBCNassimUrdu =
+  'https://ws-downloads.files.bbci.co.uk/fonts/NassimUrdu/v1.60/';
 
 // Serif
 export const F_REITH_SERIF_REGULAR = `
@@ -186,23 +196,86 @@ export const F_REITH_SANS_CONDENSED_BOLD = `
         font-display: optional;
     }`;
 
+// Nassim Arabic
+export const F_NASSIM_ARABIC_REGULAR = `
+  @font-face {
+    font-family: "BBC Nassim Arabic";
+    font-weight: 400;
+    font-style: normal;
+    src: url('${baseUrlBBCNassimArabic}normal.woff') format('woff'), url('${baseUrlBBCNassimArabic}normal.eot') format('eot'), url('${baseUrlBBCNassimArabic}normal.ttf') format('ttf');
+    font-display: optional;
+  }
+`;
+
+export const F_NASSIM_ARABIC_BOLD = `
+  @font-face {
+    font-family: "BBC Nassim Arabic";
+    font-weight: 700;
+    font-style: normal;
+    src: url('${baseUrlBBCNassimArabic}bold.woff') format('woff'), url('${baseUrlBBCNassimArabic}bold.eot') format('eot'), url('${baseUrlBBCNassimArabic}bold.ttf') format('ttf');
+    font-display: optional;
+  }
+`;
+
+// Nassim Pashto
+export const F_NASSIM_PASHTO_REGULAR = `
+  @font-face {
+    font-family: "BBC Nassim Pashto";
+    font-weight: 400;
+    font-style: normal;
+    src: url('${baseUrlBBCNassimPashto}normal.woff') format('woff'), url('${baseUrlBBCNassimPashto}normal.eot') format('eot'), url('${baseUrlBBCNassimPersian}normal.ttf') format('ttf');
+    font-display: optional;
+  }
+`;
+
+export const F_NASSIM_PASHTO_BOLD = `
+  @font-face {
+    font-family: "BBC Nassim Pashto";
+    font-weight: 700;
+    font-style: normal;
+    src: url('${baseUrlBBCNassimPashto}bold.woff') format('woff'), url('${baseUrlBBCNassimPashto}bold.eot') format('eot'), url('${baseUrlBBCNassimPersian}bold.ttf') format('ttf');
+    font-display: optional;
+  }
+`;
+
 // Nassim Persian
 export const F_NASSIM_PERSIAN_REGULAR = `
   @font-face {
-    font-family: "NassimPersian";
+    font-family: "BBC Nassim Persian";
     font-weight: 400;
     font-style: normal;
-    src: url('${nassimPersianBaseUrl}normal.woff') format('woff'), url('${nassimPersianBaseUrl}normal.eot') format('eot'), url('${nassimPersianBaseUrl}normal.ttf') format('ttf');
+    src: url('${baseUrlBBCNassimPersian}normal.woff') format('woff'), url('${baseUrlBBCNassimPersian}normal.eot') format('eot'), url('${baseUrlBBCNassimPersian}normal.ttf') format('ttf');
     font-display: optional;
   }
 `;
 
 export const F_NASSIM_PERSIAN_BOLD = `
   @font-face {
-    font-family: "NassimPersian";
+    font-family: "BBC Nassim Persian";
     font-weight: 700;
     font-style: normal;
-    src: url('${nassimPersianBaseUrl}bold.woff') format('woff'), url('${nassimPersianBaseUrl}bold.eot') format('eot'), url('${nassimPersianBaseUrl}bold.ttf') format('ttf');
+    src: url('${baseUrlBBCNassimPersian}bold.woff') format('woff'), url('${baseUrlBBCNassimPersian}bold.eot') format('eot'), url('${baseUrlBBCNassimPersian}bold.ttf') format('ttf');
+    font-display: optional;
+  }
+`;
+
+// Nassim Urdu
+export const F_NASSIM_URDU_REGULAR = `
+  @font-face {
+    font-family: "BBC Nassim Urdu";
+    font-weight: 400;
+    font-style: normal;
+    src: url('${baseUrlBBCNassimUrdu}normal.woff') format('woff'), url('${baseUrlBBCNassimUrdu}normal.eot') format('eot'), url('${baseUrlBBCNassimUrdu}normal.ttf') format('ttf');
+    font-display: optional;
+  }
+`;
+
+export const F_NASSIM_URDU_BOLD = `
+  @font-face {
+    font-family: "BBC Nassim Urdu";
+    font-weight: 700;
+    font-style: normal;
+    src: url('${baseUrlBBCNassimUrdu}bold.woff') format('woff'), url('${baseUrlBBCNassimUrdu}bold.eot') format('eot'), url('${baseUrlBBCNassimPersian}bold.ttf') format('ttf');
     font-display: optional;
   }
 `;
