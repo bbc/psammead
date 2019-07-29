@@ -56,7 +56,7 @@ const helmetFontStyles = {
     ${helmet}
     ${getFontStyleAndWeight('normal', 400)}
   `,
-  sansItalic: `
+  sansRegularItalic: `
     ${helmet}
     ${getFontStyleAndWeight('italic', 400)}
   `,
