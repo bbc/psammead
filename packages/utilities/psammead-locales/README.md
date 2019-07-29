@@ -30,7 +30,7 @@ moment.locale('ig');
 ### Numerals
 
 ```jsx
-import { Nepali } from '@bbc/psammead-locales/numerals';
+import { Bengali } from '@bbc/psammead-locales/numerals';
 ```
 
 
