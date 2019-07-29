@@ -114,7 +114,8 @@
       "!**/*.stories.{js,jsx}",
       "!**/.eslintrc.js",
       "!**/dist/**",
-      "!**/esm/**"
+      "!**/esm/**",
+      "!**/moment-timezone-include/tz/**"
     ],
     "testMatch": [
       "**/*.test.{js,jsx}"
