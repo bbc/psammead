@@ -3,7 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
-| 2.2.2 | [PR#???](https://github.com/bbc/psammead/pull/???) Clear unit test warnings |
+| 2.2.2 | [PR#1518](https://github.com/bbc/psammead/pull/1518) Clear unit test warnings |
 | 2.2.1 | [PR#1352](https://github.com/bbc/psammead/pull/1352) Update default timestamp format |
 | 2.2.0   | [PR#1245](https://github.com/bbc/psammead/pull/1245) The storybook stories now include the ability to change the service |
 | 2.1.0 | [PR#1233](https://github.com/bbc/psammead/pull/1233) Add ESM modules entry |
