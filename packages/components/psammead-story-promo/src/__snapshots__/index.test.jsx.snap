@@ -75,7 +75,7 @@ exports[`StoryPromo - Top Story should render correctly 1`] = `
   color: #6E6E73;
 }
 
-@supports (display:grid) {
+@supports (grid-template-columns:fit-content(200px)) {
   .c0 {
     display: grid;
     grid-template-columns: repeat(6,1fr);
@@ -96,7 +96,7 @@ exports[`StoryPromo - Top Story should render correctly 1`] = `
   }
 }
 
-@supports (display:grid) {
+@supports (grid-template-columns:fit-content(200px)) {
   .c1 {
     display: block;
     width: initial;
@@ -171,7 +171,7 @@ exports[`StoryPromo - Top Story should render correctly 1`] = `
   }
 }
 
-@supports (display:grid) {
+@supports (grid-template-columns:fit-content(200px)) {
   .c3 {
     display: block;
     width: initial;
@@ -346,7 +346,7 @@ exports[`StoryPromo - Top Story with Media Indicator should render correctly 1`]
   }
 }
 
-@supports (display:grid) {
+@supports (grid-template-columns:fit-content(200px)) {
   .c0 {
     display: grid;
     grid-template-columns: repeat(6,1fr);
@@ -367,7 +367,7 @@ exports[`StoryPromo - Top Story with Media Indicator should render correctly 1`]
   }
 }
 
-@supports (display:grid) {
+@supports (grid-template-columns:fit-content(200px)) {
   .c1 {
     display: block;
     width: initial;
@@ -442,7 +442,7 @@ exports[`StoryPromo - Top Story with Media Indicator should render correctly 1`]
   }
 }
 
-@supports (display:grid) {
+@supports (grid-template-columns:fit-content(200px)) {
   .c8 {
     display: block;
     width: initial;
@@ -850,7 +850,7 @@ exports[`StoryPromo should render correctly 1`] = `
   color: #6E6E73;
 }
 
-@supports (display:grid) {
+@supports (grid-template-columns:fit-content(200px)) {
   .c0 {
     display: grid;
     grid-template-columns: repeat(6,1fr);
@@ -864,7 +864,7 @@ exports[`StoryPromo should render correctly 1`] = `
   }
 }
 
-@supports (display:grid) {
+@supports (grid-template-columns:fit-content(200px)) {
   .c1 {
     display: block;
     width: initial;
@@ -940,7 +940,7 @@ exports[`StoryPromo should render correctly 1`] = `
   }
 }
 
-@supports (display:grid) {
+@supports (grid-template-columns:fit-content(200px)) {
   .c3 {
     display: block;
     width: initial;
@@ -1111,7 +1111,7 @@ exports[`StoryPromo with Media Indicator should render correctly 1`] = `
   }
 }
 
-@supports (display:grid) {
+@supports (grid-template-columns:fit-content(200px)) {
   .c0 {
     display: grid;
     grid-template-columns: repeat(6,1fr);
@@ -1125,7 +1125,7 @@ exports[`StoryPromo with Media Indicator should render correctly 1`] = `
   }
 }
 
-@supports (display:grid) {
+@supports (grid-template-columns:fit-content(200px)) {
   .c1 {
     display: block;
     width: initial;
@@ -1208,7 +1208,7 @@ exports[`StoryPromo with Media Indicator should render correctly 1`] = `
   }
 }
 
-@supports (display:grid) {
+@supports (grid-template-columns:fit-content(200px)) {
   .c8 {
     display: block;
     width: initial;

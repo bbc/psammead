@@ -13,6 +13,7 @@ import {
   GEL_GROUP_4_SCREEN_WIDTH_MAX,
   GEL_GROUP_5_SCREEN_WIDTH_MIN,
 } from '@bbc/gel-foundations/breakpoints';
+import { grid } from '@bbc/psammead-styles/detection';
 
 import Link from '../Link';
 
@@ -23,11 +24,15 @@ const getRowCount = (children, columns) =>
 
 const StyledList = styled.ul`
   border-bottom: 1px solid ${C_SHADOW};
-  display: grid;
-  grid-auto-flow: column;
   list-style-type: none;
   margin: 0;
   padding: 0 0 ${GEL_SPACING};
+
+  @supports (${grid}) {
+    display: grid;
+    grid-auto-flow: column;
+  }
+
   @media (max-width: ${GEL_GROUP_0_SCREEN_WIDTH_MAX}) {
     grid-auto-flow: row;
   }
@@ -68,7 +73,7 @@ const StyledList = styled.ul`
     padding: ${GEL_SPACING} 0;
     margin-bottom: ${GEL_SPACING};
     grid-column: 1/-1;
-    @supports not (display: grid) {
+    @supports not (${grid}) {
       width: 100%;
     }
   }
@@ -76,7 +81,7 @@ const StyledList = styled.ul`
 
 const StyledListItem = styled.li`
   min-width: 50%;
-  @supports not (display: grid) {
+  @supports not (${grid}) {
     display: inline-block;
   }
 `;
