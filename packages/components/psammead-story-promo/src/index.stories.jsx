@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react';
 import { storiesOf } from '@storybook/react';
-import { withKnobs, text } from '@storybook/addon-knobs';
+import { withKnobs, text, select } from '@storybook/addon-knobs';
 import { inputProvider } from '@bbc/psammead-storybook-helpers';
 import Image from '@bbc/psammead-image';
 import Timestamp from '@bbc/psammead-timestamp';
@@ -27,6 +27,7 @@ const InfoComponent = ({
       datetime={text('Timestamp datetime', '2019-03-01T14:00+00:00')}
       script={script}
       padding={false}
+      service={service}
     >
       {text('Timestamp', '12 March 2019')}
     </Timestamp>
@@ -44,11 +45,18 @@ const buildImg = () => (
   />
 );
 
-const MediaIndicatorComponent = (
-  <MediaIndicator duration="2:15" datetime="PT2M15S" service="news" />
-);
+const MediaIndicatorComponent = (type, service) => {
+  return (
+    <MediaIndicator
+      duration={type !== 'photogallery' && '2:15'}
+      datetime="PT2M15S"
+      service={service}
+      type={type}
+    />
+  );
+};
 
-const generateStory = ({ mediaIndicator, topStory }) =>
+const generateStory = ({ topStory }) =>
   inputProvider(
     [{ name: 'Headline' }, { name: 'Summary' }],
     ({ slotTexts: [headlineText, summaryText], script, service }) => {
@@ -62,13 +70,22 @@ const generateStory = ({ mediaIndicator, topStory }) =>
         />
       );
 
+      const mediaType = select(
+        'Media Type',
+        ['No media', 'video', 'audio', 'photogallery'],
+        'No media',
+      );
+
       const Img = buildImg();
 
       return (
         <StoryPromo
           image={Img}
           info={Info}
-          mediaIndicator={mediaIndicator && MediaIndicatorComponent}
+          mediaIndicator={
+            mediaType !== 'No media' &&
+            MediaIndicatorComponent(mediaType, service)
+          }
           topStory={topStory}
         />
       );
@@ -77,17 +94,11 @@ const generateStory = ({ mediaIndicator, topStory }) =>
 
 storiesOf('Components|StoryPromo/StoryPromo', module)
   .addDecorator(withKnobs)
-  .add('default', generateStory({}), { notes, knobs: { escapeHTML: false } })
-  .add('with media indicator', generateStory({ mediaIndicator: true }), {
+  .add('default', generateStory({ topStory: false }), {
     notes,
     knobs: { escapeHTML: false },
   })
   .add('Top story', generateStory({ topStory: true }), {
     notes,
     knobs: { escapeHTML: false },
-  })
-  .add(
-    'Top Story with media indicator',
-    generateStory({ mediaIndicator: true, topStory: true }),
-    { notes, knobs: { escapeHTML: false } },
-  );
+  });
