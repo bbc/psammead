@@ -14,7 +14,7 @@ import './ig';
 import './pcm';
 import './yo';
 
-const stories = storiesOf('Utilities|Moment Locales', module);
+const stories = storiesOf('Utilities|Psammead Locales', module);
 
 const locales = [
   { name: 'Igbo', locale: 'ig' },
@@ -77,7 +77,7 @@ const issueHref = localeName =>
 
 locales.forEach(({ name, locale }) => {
   stories.add(
-    `${name} - ${locale}`,
+    `Moment - ${name}(${locale})`,
     () => (
       <Fragment>
         <Table>
