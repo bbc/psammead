@@ -14,7 +14,7 @@ npm install @bbc/moment-timezone-include --save
 plugins: [new MomentTimezoneInclude({ startYear: 1990, endYear: 2025 })],
 ```
 
-This does two things. Firstly it removes all timezones from the moment-timezone package so that they can be included individually. It also specifies the date range of the specifically included timezone data. If `startYear` isnt provided it defaults to the earliest availile data and likewise if `endYear` isnt included it includes all known future data.
+This does two things. Firstly it removes all timezones from the moment-timezone package so that they can be included individually. It also specifies the date range of the specifically included timezone data. If `startYear` isn't provided it defaults to the earliest available data and likewise if `endYear` isn't included it includes all known future data.
 
 ## Usage - Include specific timezones
 
@@ -22,7 +22,7 @@ This does two things. Firstly it removes all timezones from the moment-timezone 
 import '@bbc/moment-timezone-include/tz/America/New_York'
 ```
 
-This makes the specified timezone availile to moment. It supports all moment timezones buy replacing `America/New_York` in the example above with any moment timezone. The full list of timezones can be found [here](https://github.com/moment/moment-timezone/blob/develop/data/packed/latest.json)
+This makes the specified timezone available to moment. It supports all moment timezones by replacing `America/New_York` in the example above with any moment timezone. The full list of timezones can be found [here](https://github.com/moment/moment-timezone/blob/develop/data/packed/latest.json)
 
 ## Contributing
 
