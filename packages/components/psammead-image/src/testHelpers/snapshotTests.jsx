@@ -61,6 +61,7 @@ const snapshotTests = (Component, additionalProps) => {
       srcset={landscape.srcset}
       height={landscape.height}
       width={landscape.width}
+      {...additionalProps}
     />,
   );
 };
