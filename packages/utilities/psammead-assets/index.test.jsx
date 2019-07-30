@@ -7,12 +7,15 @@ const ampBoilerplateExpectedExports = {
 
 const svgsExpectedExports = {
   BBC_BLOCKS: 'string',
-  news: 'object',
-  yoruba: 'object',
+  arabic: 'object',
   igbo: 'object',
-  thai: 'object',
+  news: 'object',
+  pashto: 'object',
   pidgin: 'object',
   persian: 'object',
+  thai: 'object',
+  urdu: 'object',
+  yoruba: 'object',
 };
 
 const expectedExports = {
