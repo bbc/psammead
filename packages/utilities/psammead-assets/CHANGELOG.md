@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 1.2.0   | [PR#xxx](https://github.com/bbc/psammead/pull/xxx) Add Arabic, Pashto, Urdu SVGs |
 | 1.1.1   | [PR#1360](https://github.com/bbc/psammead/pull/1360) Bump because NPM didnt publish properly for some reason |
 | 1.1.0   | [PR#1214](https://github.com/bbc/psammead/pull/1214) Export ESM modules via existing API |
 | 1.0.6   | [PR#1179](https://github.com/bbc/psammead/pull/1179) use `psammead-test-helpers@1.0.2`|
