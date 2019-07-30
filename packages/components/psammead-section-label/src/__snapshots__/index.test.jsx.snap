@@ -68,7 +68,9 @@ exports[`SectionLabel When hideSectionHeader is true should add styling to hide 
     class="c1"
     dir="ltr"
     id="test-section-label"
-  />
+  >
+    This is the text in a SectionLabel
+  </h2>
 </div>
 `;
 
