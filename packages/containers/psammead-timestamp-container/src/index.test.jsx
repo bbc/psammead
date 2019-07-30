@@ -9,6 +9,7 @@ const invalidData = '8640000000000001'; // A day holds 86,400,000 milliseconds -
 
 describe('Timestamp', () => {
   describe('with no data', () => {
+    console.error = jest.fn(); // eslint-disable-line no-console
     isNull('should return null', <Timestamp />);
   });
 

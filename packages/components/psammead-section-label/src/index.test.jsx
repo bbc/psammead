@@ -106,7 +106,9 @@ describe('SectionLabel', () => {
         visuallyHidden
         labelId="test-section-label"
         service="news"
-      />,
+      >
+        This is the text in a SectionLabel
+      </SectionLabel>,
     );
   });
 });

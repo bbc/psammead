@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 2.2.1 | [PR#1518](https://github.com/bbc/psammead/pull/1518) Clear unit test warnings |
 | 2.2.0 | [PR#1408](https://github.com/bbc/psammead/pull/1408) Use `@bbc/psammead-styles/detection` to detect grid support |
 | 2.1.1 | [PR#1362](https://github.com/bbc/psammead/pull/1362) Use `text-decoration` styling instead of border-bottom |
 | 2.1.0 | [PR#1233](https://github.com/bbc/psammead/pull/1233) Add ESM modules entry |
