@@ -18,7 +18,7 @@ describe('replaceOriginalTimezoneData', () => {
     replaceOriginalTimezoneData();
     expect(writeToNestedFile).toHaveBeenCalledTimes(1);
     expect(writeToNestedFile).toHaveBeenCalledWith(
-      '../tz/versionNumber-raw.json',
+      '../../tz/versionNumber-raw.json',
       '{"version":"versionNumber","zones":[],"links":[]}',
     );
   });

@@ -22,7 +22,7 @@ const writeTimezoneDataToFile = zone => {
   const fileContents = `var moment = require("moment-timezone"); moment.tz.add('${zone}');`;
   const zoneName = zone.split('|')[0];
 
-  writeToNestedFile(`../tz/${zoneName}.js`, fileContents);
+  writeToNestedFile(`../../tz/${zoneName}.js`, fileContents);
 };
 
 const writeNewTimezoneData = (startYear = -Infinity, endYear = Infinity) => {

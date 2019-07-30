@@ -26,23 +26,23 @@ describe('writeNewTimezoneData', () => {
 
     expect(writeToNestedFile).toHaveBeenCalledTimes(5);
     expect(writeToNestedFile).toHaveBeenCalledWith(
-      '../tz/Africa/El_Aaiun.js',
+      '../../tz/Africa/El_Aaiun.js',
       'var moment = require("moment-timezone"); moment.tz.add(\'Africa/El_Aaiun|LMT WAT|-d.A -10|01|-22y0d.A|17e6\');',
     );
     expect(writeToNestedFile).toHaveBeenCalledWith(
-      '../tz/Africa/Bangui.js',
+      '../../tz/Africa/Bangui.js',
       'var moment = require("moment-timezone"); moment.tz.add(\'Africa/Bangui|LMT WAT|-d.A -10|01|-22y0d.A|17e6\');',
     );
     expect(writeToNestedFile).toHaveBeenCalledWith(
-      '../tz/Africa/Brazzaville.js',
+      '../../tz/Africa/Brazzaville.js',
       'var moment = require("moment-timezone"); moment.tz.add(\'Africa/Brazzaville|LMT WAT|-d.A -10|01|-22y0d.A|17e6\');',
     );
     expect(writeToNestedFile).toHaveBeenCalledWith(
-      '../tz/Africa/Lagos.js',
+      '../../tz/Africa/Lagos.js',
       'var moment = require("moment-timezone"); moment.tz.add(\'Africa/Lagos|LMT WAT|-d.A -10|01|-22y0d.A|17e6\');',
     );
     expect(writeToNestedFile).toHaveBeenCalledWith(
-      '../tz/Africa/Abidjan.js',
+      '../../tz/Africa/Abidjan.js',
       'var moment = require("moment-timezone"); moment.tz.add(\'Africa/Abidjan|LMT GMT|g.8 0|01|-2ldXH.Q|48e5\');',
     );
   });
