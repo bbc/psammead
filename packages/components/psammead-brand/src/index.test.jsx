@@ -5,7 +5,7 @@ import Brand from './index';
 
 const svg = {
   group: (
-    <g fillrule="evenodd">
+    <g fillRule="evenodd">
       <path d="M84.32" />
     </g>
   ),
