@@ -16,12 +16,13 @@ import {
 } from './constants';
 
 const Title = styled.span`
-  ${({ script }) => script && getDoublePica(script)};
-  color: ${C_EBON};
-  background-color: ${C_WHITE};
-  ${({ service }) => getSansRegular(service)}
   display: inline-block;
   z-index: 1;
+
+  ${({ script }) => script && getDoublePica(script)};
+  ${({ service }) => getSansRegular(service)}
+  color: ${C_EBON};
+  background-color: ${C_WHITE};
 
   /* Unset the browser's default margins. */
   margin: 0;
@@ -51,22 +52,6 @@ const FlexTextContainer = styled(FlexContainer).attrs({
   role: 'text',
 })``;
 
-/* eslint-disable react/prop-types */
-export const PlainTitle = ({
-  labelId,
-  children: title,
-  dir,
-  script,
-  service,
-  /* eslint-enable react/prop-types */
-}) => (
-  <FlexContainer>
-    <Title script={script} dir={dir} id={labelId} service={service}>
-      {title}
-    </Title>
-  </FlexContainer>
-);
-
 const SectionLabelLink = styled.a.attrs(props => ({
   'aria-labelledby': props.labelId,
 }))`
@@ -84,27 +69,49 @@ const IndexLinkCta = styled.span.attrs({
 })`
   ${({ script }) => script && getBrevier(script)};
   ${({ service }) => getSansBold(service)};
+
   color: ${C_EBON};
   background-color: ${C_WHITE};
+
   ${paddingReverseDir}: ${GEL_SPACING_DBL};
   z-index: 1;
 `;
 
-/* eslint-disable react/prop-types */
+export const PlainTitle = ({
+  children: title,
+  dir,
+  labelId,
+  script,
+  service,
+}) => (
+  <FlexContainer>
+    <Title script={script} dir={dir} id={labelId} service={service}>
+      {title}
+    </Title>
+  </FlexContainer>
+);
+
+PlainTitle.propTypes = {
+  children: string.isRequired,
+  dir: oneOf(['ltr', 'rtl']).isRequired,
+  labelId: string.isRequired,
+  script: shape(scriptPropType).isRequired,
+  service: string.isRequired,
+};
+
 export const LinkTitle = ({
+  children: title,
+  dir,
   href,
   labelId,
-  children,
-  dir,
   linkText,
   script,
   service,
-  /* eslint-enable react/prop-types */
 }) => (
   <SectionLabelLink href={href} labelId={labelId}>
     <FlexTextContainer>
       <Title id={labelId} dir={dir} script={script} service={service}>
-        {children}
+        {title}
       </Title>
       <IndexLinkCta dir={dir} script={script} service={service}>
         {linkText}
@@ -112,3 +119,13 @@ export const LinkTitle = ({
     </FlexTextContainer>
   </SectionLabelLink>
 );
+
+LinkTitle.propTypes = {
+  children: string.isRequired,
+  dir: oneOf(['ltr', 'rtl']).isRequired,
+  href: string.isRequired,
+  labelId: string.isRequired,
+  linkText: string.isRequired,
+  script: shape(scriptPropType).isRequired,
+  service: string.isRequired,
+};

@@ -99,8 +99,8 @@ const SectionLabel = ({
   labelId,
   linkText,
   script,
-  visuallyHidden,
   service,
+  visuallyHidden,
 }) => (
   <SectionLabelWrapper
     script={script}
@@ -144,8 +144,8 @@ SectionLabel.propTypes = {
   labelId: string.isRequired,
   linkText: string,
   script: shape(scriptPropType).isRequired,
-  visuallyHidden: bool,
   service: string.isRequired,
+  visuallyHidden: bool,
 };
 
 export default SectionLabel;
