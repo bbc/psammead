@@ -183,7 +183,7 @@ describe('Moment configuration', () => {
 
     const allButAYear = moment()
       .subtract(12, 'months')
-      .add(1, 'second');
+      .add(5, 'days');
     // default moment configuration would return 'a month ago'
     expect(allButAYear.fromNow()).toEqual('11 months ago');
   });
