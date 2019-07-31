@@ -28,6 +28,7 @@ pipeline {
   }
   environment {
     CI = true
+    CC_TEST_REPORTER_ID = 06c1254d7c2ff48f763492791337193c8345ca8740c34263d68adcc449aff732
   }
   stages {
     stage ('Run application tests') {
