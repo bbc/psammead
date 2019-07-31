@@ -30,7 +30,7 @@ const props = {
     { href: 'https://www.bbc.co.uk/news', text: 'BBC News' },
     { href: 'https://www.bbc.co.uk/sport', text: 'BBC Sport' },
   ],
-  copyrightText: <span>@ BBC News<span>,
+  copyrightText: <span>@ BBC News</span>,
   externalLink: { href: 'https://www.bbc.com', text: 'The BBC' },
   service: 'news',
 };
