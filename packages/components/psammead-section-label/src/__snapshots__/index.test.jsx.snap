@@ -1,11 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`SectionLabel When hideSectionHeader is true should add styling to hide SectionLabel when width of screen is less than 600 px 1`] = `
-.c0 {
-  margin-top: 2rem;
-  position: relative;
-}
-
 .c3 {
   font-size: 1.125rem;
   line-height: 1.375rem;
@@ -18,10 +13,6 @@ exports[`SectionLabel When hideSectionHeader is true should add styling to hide 
   z-index: 1;
   margin: 0;
   padding-right: 0.5rem;
-}
-
-.c1 {
-  margin: 0;
 }
 
 .c2 {
@@ -43,17 +34,13 @@ exports[`SectionLabel When hideSectionHeader is true should add styling to hide 
   min-height: 2.75rem;
 }
 
-@media (max-width:37.4375rem) {
-  .c0 {
-    -webkit-clip-path: inset(100%);
-    clip-path: inset(100%);
-    -webkit-clip: rect(1px,1px,1px,1px);
-    clip: rect(1px,1px,1px,1px);
-    height: 1px;
-    overflow: hidden;
-    position: absolute;
-    width: 1px;
-  }
+.c0 {
+  margin-top: 2rem;
+  position: relative;
+}
+
+.c1 {
+  margin: 0;
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
@@ -73,6 +60,19 @@ exports[`SectionLabel When hideSectionHeader is true should add styling to hide 
 @media (min-width:37.5rem) {
   .c3 {
     padding-right: 1rem;
+  }
+}
+
+@media (max-width:37.4375rem) {
+  .c0 {
+    -webkit-clip-path: inset(100%);
+    clip-path: inset(100%);
+    -webkit-clip: rect(1px,1px,1px,1px);
+    clip: rect(1px,1px,1px,1px);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    width: 1px;
   }
 }
 
@@ -112,7 +112,64 @@ exports[`SectionLabel When hideSectionHeader is true should add styling to hide 
 </div>
 `;
 
-exports[`SectionLabel With bar With title should render correctly 1`] = `
+exports[`SectionLabel With bar With linking title should render correctly 1`] = `
+.c4 {
+  font-size: 1.125rem;
+  line-height: 1.375rem;
+  color: #222222;
+  background-color: #FFFFFF;
+  font-family: ReithSans,Helvetica,Arial,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  display: inline-block;
+  z-index: 1;
+  margin: 0;
+  padding-right: 0.5rem;
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row nowrap;
+  -ms-flex-flow: row nowrap;
+  flex-flow: row nowrap;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  min-height: 2.75rem;
+}
+
+.c2 {
+  color: #222222;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c2:focus,
+.c2:hover {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.c5 {
+  font-size: 0.875rem;
+  line-height: 1.125rem;
+  font-family: ReithSans,Helvetica,Arial,sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: #222222;
+  background-color: #FFFFFF;
+  padding-left: 1rem;
+  z-index: 1;
+}
+
 .c0 {
   margin-top: 2rem;
   position: relative;
@@ -127,7 +184,286 @@ exports[`SectionLabel With bar With title should render correctly 1`] = `
   right: 0;
 }
 
+.c1 {
+  margin: 0;
+}
+
+@media (min-width:20rem) and (max-width:37.4375rem) {
+  .c4 {
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .c4 {
+    font-size: 1.5rem;
+    line-height: 1.75rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .c4 {
+    padding-right: 1rem;
+  }
+}
+
+@media (min-width:20rem) and (max-width:37.4375rem) {
+  .c5 {
+    font-size: 0.875rem;
+    line-height: 1.125rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .c5 {
+    font-size: 0.8125rem;
+    line-height: 1rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .c0::before {
+    top: 1.375rem;
+  }
+}
+
+@media screen and (-ms-high-contrast:active) {
+  .c0::before {
+    border-color: windowText;
+  }
+}
+
+@media (max-width:19.9375rem) {
+  .c1 {
+    padding: 0.3125rem 0;
+  }
+}
+
+@media (min-width:20rem) and (max-width:37.4375rem) {
+  .c1 {
+    padding: 0.375rem 0;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .c1 {
+    padding: 0;
+  }
+}
+
+<div
+  class="c0"
+>
+  <h2
+    class="c1"
+  >
+    <a
+      aria-labelledby="test-section-label"
+      class="c2"
+      href="/igbo/other-index"
+    >
+      <span
+        class="c3"
+        role="text"
+      >
+        <span
+          class="c4"
+          dir="ltr"
+          id="test-section-label"
+        >
+          This is text in a linking SectionLabel.
+        </span>
+        <span
+          aria-hidden="true"
+          class="c5"
+          dir="ltr"
+        >
+          See All
+        </span>
+      </span>
+    </a>
+  </h2>
+</div>
+`;
+
+exports[`SectionLabel With bar With linking title should render correctly with arabic script typography values 1`] = `
+.c4 {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  color: #222222;
+  background-color: #FFFFFF;
+  font-family: NassimPersian,Arial,Verdana,Geneva,Helvetica,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  display: inline-block;
+  z-index: 1;
+  margin: 0;
+  padding-left: 0.5rem;
+}
+
 .c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row nowrap;
+  -ms-flex-flow: row nowrap;
+  flex-flow: row nowrap;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  min-height: 2.75rem;
+}
+
+.c2 {
+  color: #222222;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c2:focus,
+.c2:hover {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.c5 {
+  font-size: 1rem;
+  line-height: 1.25rem;
+  font-family: NassimPersian,Arial,Verdana,Geneva,Helvetica,sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: #222222;
+  background-color: #FFFFFF;
+  padding-right: 1rem;
+  z-index: 1;
+}
+
+.c0 {
+  margin-top: 2rem;
+  position: relative;
+}
+
+.c0::before {
+  top: 0;
+  content: '';
+  position: absolute;
+  border-top: 0.0625rem solid #AEAEB5;
+  left: 0;
+  right: 0;
+}
+
+.c1 {
+  margin: 0;
+}
+
+@media (min-width:20rem) and (max-width:37.4375rem) {
+  .c4 {
+    font-size: 1.625rem;
+    line-height: 2.25rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .c4 {
+    font-size: 1.75rem;
+    line-height: 2.25rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .c4 {
+    padding-left: 1rem;
+  }
+}
+
+@media (min-width:20rem) and (max-width:37.4375rem) {
+  .c5 {
+    font-size: 1.125rem;
+    line-height: 1.5rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .c5 {
+    font-size: 1.125rem;
+    line-height: 1.5rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .c0::before {
+    top: 1.375rem;
+  }
+}
+
+@media screen and (-ms-high-contrast:active) {
+  .c0::before {
+    border-color: windowText;
+  }
+}
+
+@media (max-width:19.9375rem) {
+  .c1 {
+    padding: 0.625rem 0;
+  }
+}
+
+@media (min-width:20rem) and (max-width:37.4375rem) {
+  .c1 {
+    padding: 0.75rem 0;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .c1 {
+    padding: 0;
+  }
+}
+
+<div
+  class="c0"
+>
+  <h2
+    class="c1"
+  >
+    <a
+      aria-labelledby="test-section-label"
+      class="c2"
+      href="/igbo/other-index"
+    >
+      <span
+        class="c3"
+        role="text"
+      >
+        <span
+          class="c4"
+          dir="rtl"
+          id="test-section-label"
+        >
+          بعض محتوى النص
+        </span>
+        <span
+          aria-hidden="true"
+          class="c5"
+          dir="rtl"
+        >
+          See All
+        </span>
+      </span>
+    </a>
+  </h2>
+</div>
+`;
+
+exports[`SectionLabel With bar With linking title should render correctly with explicit text direction 1`] = `
+.c4 {
   font-size: 1.125rem;
   line-height: 1.375rem;
   color: #222222;
@@ -141,8 +477,354 @@ exports[`SectionLabel With bar With title should render correctly 1`] = `
   padding-right: 0.5rem;
 }
 
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row nowrap;
+  -ms-flex-flow: row nowrap;
+  flex-flow: row nowrap;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  min-height: 2.75rem;
+}
+
+.c2 {
+  color: #222222;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c2:focus,
+.c2:hover {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.c5 {
+  font-size: 0.875rem;
+  line-height: 1.125rem;
+  font-family: ReithSans,Helvetica,Arial,sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: #222222;
+  background-color: #FFFFFF;
+  padding-left: 1rem;
+  z-index: 1;
+}
+
+.c0 {
+  margin-top: 2rem;
+  position: relative;
+}
+
+.c0::before {
+  top: 0;
+  content: '';
+  position: absolute;
+  border-top: 0.0625rem solid #AEAEB5;
+  left: 0;
+  right: 0;
+}
+
 .c1 {
   margin: 0;
+}
+
+@media (min-width:20rem) and (max-width:37.4375rem) {
+  .c4 {
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .c4 {
+    font-size: 1.5rem;
+    line-height: 1.75rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .c4 {
+    padding-right: 1rem;
+  }
+}
+
+@media (min-width:20rem) and (max-width:37.4375rem) {
+  .c5 {
+    font-size: 0.875rem;
+    line-height: 1.125rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .c5 {
+    font-size: 0.8125rem;
+    line-height: 1rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .c0::before {
+    top: 1.375rem;
+  }
+}
+
+@media screen and (-ms-high-contrast:active) {
+  .c0::before {
+    border-color: windowText;
+  }
+}
+
+@media (max-width:19.9375rem) {
+  .c1 {
+    padding: 0.3125rem 0;
+  }
+}
+
+@media (min-width:20rem) and (max-width:37.4375rem) {
+  .c1 {
+    padding: 0.375rem 0;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .c1 {
+    padding: 0;
+  }
+}
+
+<div
+  class="c0"
+>
+  <h2
+    class="c1"
+  >
+    <a
+      aria-labelledby="test-section-label"
+      class="c2"
+      href="/igbo/other-index"
+    >
+      <span
+        class="c3"
+        role="text"
+      >
+        <span
+          class="c4"
+          dir="ltr"
+          id="test-section-label"
+        >
+          This is text in a SectionLabel rendering in ltr mode.
+        </span>
+        <span
+          aria-hidden="true"
+          class="c5"
+          dir="ltr"
+        >
+          See All
+        </span>
+      </span>
+    </a>
+  </h2>
+</div>
+`;
+
+exports[`SectionLabel With bar With linking title should render correctly with explicitly showing the bar 1`] = `
+.c4 {
+  font-size: 1.125rem;
+  line-height: 1.375rem;
+  color: #222222;
+  background-color: #FFFFFF;
+  font-family: ReithSans,Helvetica,Arial,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  display: inline-block;
+  z-index: 1;
+  margin: 0;
+  padding-right: 0.5rem;
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row nowrap;
+  -ms-flex-flow: row nowrap;
+  flex-flow: row nowrap;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  min-height: 2.75rem;
+}
+
+.c2 {
+  color: #222222;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c2:focus,
+.c2:hover {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.c5 {
+  font-size: 0.875rem;
+  line-height: 1.125rem;
+  font-family: ReithSans,Helvetica,Arial,sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: #222222;
+  background-color: #FFFFFF;
+  padding-left: 1rem;
+  z-index: 1;
+}
+
+.c0 {
+  margin-top: 2rem;
+  position: relative;
+}
+
+.c0::before {
+  top: 0;
+  content: '';
+  position: absolute;
+  border-top: 0.0625rem solid #AEAEB5;
+  left: 0;
+  right: 0;
+}
+
+.c1 {
+  margin: 0;
+}
+
+@media (min-width:20rem) and (max-width:37.4375rem) {
+  .c4 {
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .c4 {
+    font-size: 1.5rem;
+    line-height: 1.75rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .c4 {
+    padding-right: 1rem;
+  }
+}
+
+@media (min-width:20rem) and (max-width:37.4375rem) {
+  .c5 {
+    font-size: 0.875rem;
+    line-height: 1.125rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .c5 {
+    font-size: 0.8125rem;
+    line-height: 1rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .c0::before {
+    top: 1.375rem;
+  }
+}
+
+@media screen and (-ms-high-contrast:active) {
+  .c0::before {
+    border-color: windowText;
+  }
+}
+
+@media (max-width:19.9375rem) {
+  .c1 {
+    padding: 0.3125rem 0;
+  }
+}
+
+@media (min-width:20rem) and (max-width:37.4375rem) {
+  .c1 {
+    padding: 0.375rem 0;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .c1 {
+    padding: 0;
+  }
+}
+
+<div
+  class="c0"
+>
+  <h2
+    class="c1"
+  >
+    <a
+      aria-labelledby="test-section-label"
+      class="c2"
+      href="/igbo/other-index"
+    >
+      <span
+        class="c3"
+        role="text"
+      >
+        <span
+          class="c4"
+          dir="ltr"
+          id="test-section-label"
+        >
+          This is text in a SectionLabel, and there is a bar over to the right
+        </span>
+        <span
+          aria-hidden="true"
+          class="c5"
+          dir="ltr"
+        >
+          See All
+        </span>
+      </span>
+    </a>
+  </h2>
+</div>
+`;
+
+exports[`SectionLabel With bar With plain title should render correctly 1`] = `
+.c3 {
+  font-size: 1.125rem;
+  line-height: 1.375rem;
+  color: #222222;
+  background-color: #FFFFFF;
+  font-family: ReithSans,Helvetica,Arial,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  display: inline-block;
+  z-index: 1;
+  margin: 0;
+  padding-right: 0.5rem;
 }
 
 .c2 {
@@ -164,16 +846,22 @@ exports[`SectionLabel With bar With title should render correctly 1`] = `
   min-height: 2.75rem;
 }
 
-@media (min-width:37.5rem) {
-  .c0::before {
-    top: 1.375rem;
-  }
+.c0 {
+  margin-top: 2rem;
+  position: relative;
 }
 
-@media screen and (-ms-high-contrast:active) {
-  .c0::before {
-    border-color: windowText;
-  }
+.c0::before {
+  top: 0;
+  content: '';
+  position: absolute;
+  border-top: 0.0625rem solid #AEAEB5;
+  left: 0;
+  right: 0;
+}
+
+.c1 {
+  margin: 0;
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
@@ -193,6 +881,18 @@ exports[`SectionLabel With bar With title should render correctly 1`] = `
 @media (min-width:37.5rem) {
   .c3 {
     padding-right: 1rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .c0::before {
+    top: 1.375rem;
+  }
+}
+
+@media screen and (-ms-high-contrast:active) {
+  .c0::before {
+    border-color: windowText;
   }
 }
 
@@ -234,37 +934,19 @@ exports[`SectionLabel With bar With title should render correctly 1`] = `
 </div>
 `;
 
-exports[`SectionLabel With bar With title should render correctly with arabic script typography values 1`] = `
-.c0 {
-  margin-top: 2rem;
-  position: relative;
-}
-
-.c0::before {
-  top: 0;
-  content: '';
-  position: absolute;
-  border-top: 0.0625rem solid #AEAEB5;
-  left: 0;
-  right: 0;
-}
-
+exports[`SectionLabel With bar With plain title should render correctly with arabic script typography values 1`] = `
 .c3 {
   font-size: 1.5rem;
   line-height: 2rem;
   color: #222222;
   background-color: #FFFFFF;
-  font-family: ReithSans,Helvetica,Arial,sans-serif;
+  font-family: NassimPersian,Arial,Verdana,Geneva,Helvetica,sans-serif;
   font-weight: 400;
   font-style: normal;
   display: inline-block;
   z-index: 1;
   margin: 0;
   padding-left: 0.5rem;
-}
-
-.c1 {
-  margin: 0;
 }
 
 .c2 {
@@ -286,16 +968,22 @@ exports[`SectionLabel With bar With title should render correctly with arabic sc
   min-height: 2.75rem;
 }
 
-@media (min-width:37.5rem) {
-  .c0::before {
-    top: 1.375rem;
-  }
+.c0 {
+  margin-top: 2rem;
+  position: relative;
 }
 
-@media screen and (-ms-high-contrast:active) {
-  .c0::before {
-    border-color: windowText;
-  }
+.c0::before {
+  top: 0;
+  content: '';
+  position: absolute;
+  border-top: 0.0625rem solid #AEAEB5;
+  left: 0;
+  right: 0;
+}
+
+.c1 {
+  margin: 0;
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
@@ -315,6 +1003,18 @@ exports[`SectionLabel With bar With title should render correctly with arabic sc
 @media (min-width:37.5rem) {
   .c3 {
     padding-left: 1rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .c0::before {
+    top: 1.375rem;
+  }
+}
+
+@media screen and (-ms-high-contrast:active) {
+  .c0::before {
+    border-color: windowText;
   }
 }
 
@@ -356,21 +1056,7 @@ exports[`SectionLabel With bar With title should render correctly with arabic sc
 </div>
 `;
 
-exports[`SectionLabel With bar With title should render correctly with explicit text direction 1`] = `
-.c0 {
-  margin-top: 2rem;
-  position: relative;
-}
-
-.c0::before {
-  top: 0;
-  content: '';
-  position: absolute;
-  border-top: 0.0625rem solid #AEAEB5;
-  left: 0;
-  right: 0;
-}
-
+exports[`SectionLabel With bar With plain title should render correctly with explicit text direction 1`] = `
 .c3 {
   font-size: 1.125rem;
   line-height: 1.375rem;
@@ -383,10 +1069,6 @@ exports[`SectionLabel With bar With title should render correctly with explicit 
   z-index: 1;
   margin: 0;
   padding-right: 0.5rem;
-}
-
-.c1 {
-  margin: 0;
 }
 
 .c2 {
@@ -408,16 +1090,22 @@ exports[`SectionLabel With bar With title should render correctly with explicit 
   min-height: 2.75rem;
 }
 
-@media (min-width:37.5rem) {
-  .c0::before {
-    top: 1.375rem;
-  }
+.c0 {
+  margin-top: 2rem;
+  position: relative;
 }
 
-@media screen and (-ms-high-contrast:active) {
-  .c0::before {
-    border-color: windowText;
-  }
+.c0::before {
+  top: 0;
+  content: '';
+  position: absolute;
+  border-top: 0.0625rem solid #AEAEB5;
+  left: 0;
+  right: 0;
+}
+
+.c1 {
+  margin: 0;
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
@@ -437,6 +1125,18 @@ exports[`SectionLabel With bar With title should render correctly with explicit 
 @media (min-width:37.5rem) {
   .c3 {
     padding-right: 1rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .c0::before {
+    top: 1.375rem;
+  }
+}
+
+@media screen and (-ms-high-contrast:active) {
+  .c0::before {
+    border-color: windowText;
   }
 }
 
@@ -478,21 +1178,7 @@ exports[`SectionLabel With bar With title should render correctly with explicit 
 </div>
 `;
 
-exports[`SectionLabel With bar With title should render correctly with explicitly showing the bar 1`] = `
-.c0 {
-  margin-top: 2rem;
-  position: relative;
-}
-
-.c0::before {
-  top: 0;
-  content: '';
-  position: absolute;
-  border-top: 0.0625rem solid #AEAEB5;
-  left: 0;
-  right: 0;
-}
-
+exports[`SectionLabel With bar With plain title should render correctly with explicitly showing the bar 1`] = `
 .c3 {
   font-size: 1.125rem;
   line-height: 1.375rem;
@@ -505,10 +1191,6 @@ exports[`SectionLabel With bar With title should render correctly with explicitl
   z-index: 1;
   margin: 0;
   padding-right: 0.5rem;
-}
-
-.c1 {
-  margin: 0;
 }
 
 .c2 {
@@ -530,16 +1212,22 @@ exports[`SectionLabel With bar With title should render correctly with explicitl
   min-height: 2.75rem;
 }
 
-@media (min-width:37.5rem) {
-  .c0::before {
-    top: 1.375rem;
-  }
+.c0 {
+  margin-top: 2rem;
+  position: relative;
 }
 
-@media screen and (-ms-high-contrast:active) {
-  .c0::before {
-    border-color: windowText;
-  }
+.c0::before {
+  top: 0;
+  content: '';
+  position: absolute;
+  border-top: 0.0625rem solid #AEAEB5;
+  left: 0;
+  right: 0;
+}
+
+.c1 {
+  margin: 0;
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
@@ -559,6 +1247,18 @@ exports[`SectionLabel With bar With title should render correctly with explicitl
 @media (min-width:37.5rem) {
   .c3 {
     padding-right: 1rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .c0::before {
+    top: 1.375rem;
+  }
+}
+
+@media screen and (-ms-high-contrast:active) {
+  .c0::before {
+    border-color: windowText;
   }
 }
 
@@ -600,13 +1300,8 @@ exports[`SectionLabel With bar With title should render correctly with explicitl
 </div>
 `;
 
-exports[`SectionLabel Without bar With title should render correctly 1`] = `
-.c0 {
-  margin-top: 2rem;
-  position: relative;
-}
-
-.c3 {
+exports[`SectionLabel Without bar With linking title should render correctly 1`] = `
+.c4 {
   font-size: 1.125rem;
   line-height: 1.375rem;
   color: #222222;
@@ -620,8 +1315,466 @@ exports[`SectionLabel Without bar With title should render correctly 1`] = `
   padding-right: 0.5rem;
 }
 
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row nowrap;
+  -ms-flex-flow: row nowrap;
+  flex-flow: row nowrap;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  min-height: 2.75rem;
+}
+
+.c2 {
+  color: #222222;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c2:focus,
+.c2:hover {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.c5 {
+  font-size: 0.875rem;
+  line-height: 1.125rem;
+  font-family: ReithSans,Helvetica,Arial,sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: #222222;
+  background-color: #FFFFFF;
+  padding-left: 1rem;
+  z-index: 1;
+}
+
+.c0 {
+  margin-top: 2rem;
+  position: relative;
+}
+
 .c1 {
   margin: 0;
+}
+
+@media (min-width:20rem) and (max-width:37.4375rem) {
+  .c4 {
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .c4 {
+    font-size: 1.5rem;
+    line-height: 1.75rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .c4 {
+    padding-right: 1rem;
+  }
+}
+
+@media (min-width:20rem) and (max-width:37.4375rem) {
+  .c5 {
+    font-size: 0.875rem;
+    line-height: 1.125rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .c5 {
+    font-size: 0.8125rem;
+    line-height: 1rem;
+  }
+}
+
+@media (max-width:19.9375rem) {
+  .c1 {
+    padding: 0.3125rem 0;
+  }
+}
+
+@media (min-width:20rem) and (max-width:37.4375rem) {
+  .c1 {
+    padding: 0.375rem 0;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .c1 {
+    padding: 0;
+  }
+}
+
+<div
+  class="c0"
+>
+  <h2
+    class="c1"
+  >
+    <a
+      aria-labelledby="test-section-label"
+      class="c2"
+      href="/igbo/other-index"
+    >
+      <span
+        class="c3"
+        role="text"
+      >
+        <span
+          class="c4"
+          dir="ltr"
+          id="test-section-label"
+        >
+          This is text in a SectionLabel.
+        </span>
+        <span
+          aria-hidden="true"
+          class="c5"
+          dir="ltr"
+        >
+          See All
+        </span>
+      </span>
+    </a>
+  </h2>
+</div>
+`;
+
+exports[`SectionLabel Without bar With linking title should render correctly with arabic script typography values 1`] = `
+.c4 {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  color: #222222;
+  background-color: #FFFFFF;
+  font-family: NassimPersian,Arial,Verdana,Geneva,Helvetica,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  display: inline-block;
+  z-index: 1;
+  margin: 0;
+  padding-left: 0.5rem;
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row nowrap;
+  -ms-flex-flow: row nowrap;
+  flex-flow: row nowrap;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  min-height: 2.75rem;
+}
+
+.c2 {
+  color: #222222;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c2:focus,
+.c2:hover {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.c5 {
+  font-size: 1rem;
+  line-height: 1.25rem;
+  font-family: NassimPersian,Arial,Verdana,Geneva,Helvetica,sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: #222222;
+  background-color: #FFFFFF;
+  padding-right: 1rem;
+  z-index: 1;
+}
+
+.c0 {
+  margin-top: 2rem;
+  position: relative;
+}
+
+.c1 {
+  margin: 0;
+}
+
+@media (min-width:20rem) and (max-width:37.4375rem) {
+  .c4 {
+    font-size: 1.625rem;
+    line-height: 2.25rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .c4 {
+    font-size: 1.75rem;
+    line-height: 2.25rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .c4 {
+    padding-left: 1rem;
+  }
+}
+
+@media (min-width:20rem) and (max-width:37.4375rem) {
+  .c5 {
+    font-size: 1.125rem;
+    line-height: 1.5rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .c5 {
+    font-size: 1.125rem;
+    line-height: 1.5rem;
+  }
+}
+
+@media (max-width:19.9375rem) {
+  .c1 {
+    padding: 0.625rem 0;
+  }
+}
+
+@media (min-width:20rem) and (max-width:37.4375rem) {
+  .c1 {
+    padding: 0.75rem 0;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .c1 {
+    padding: 0;
+  }
+}
+
+<div
+  class="c0"
+>
+  <h2
+    class="c1"
+  >
+    <a
+      aria-labelledby="test-section-label"
+      class="c2"
+      href="/igbo/other-index"
+    >
+      <span
+        class="c3"
+        role="text"
+      >
+        <span
+          class="c4"
+          dir="rtl"
+          id="test-section-label"
+        >
+          بعض محتوى النص
+        </span>
+        <span
+          aria-hidden="true"
+          class="c5"
+          dir="rtl"
+        >
+          See All
+        </span>
+      </span>
+    </a>
+  </h2>
+</div>
+`;
+
+exports[`SectionLabel Without bar With linking title should render correctly with explicit text direction 1`] = `
+.c4 {
+  font-size: 1.125rem;
+  line-height: 1.375rem;
+  color: #222222;
+  background-color: #FFFFFF;
+  font-family: ReithSans,Helvetica,Arial,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  display: inline-block;
+  z-index: 1;
+  margin: 0;
+  padding-right: 0.5rem;
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row nowrap;
+  -ms-flex-flow: row nowrap;
+  flex-flow: row nowrap;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  min-height: 2.75rem;
+}
+
+.c2 {
+  color: #222222;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c2:focus,
+.c2:hover {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.c5 {
+  font-size: 0.875rem;
+  line-height: 1.125rem;
+  font-family: ReithSans,Helvetica,Arial,sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: #222222;
+  background-color: #FFFFFF;
+  padding-left: 1rem;
+  z-index: 1;
+}
+
+.c0 {
+  margin-top: 2rem;
+  position: relative;
+}
+
+.c1 {
+  margin: 0;
+}
+
+@media (min-width:20rem) and (max-width:37.4375rem) {
+  .c4 {
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .c4 {
+    font-size: 1.5rem;
+    line-height: 1.75rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .c4 {
+    padding-right: 1rem;
+  }
+}
+
+@media (min-width:20rem) and (max-width:37.4375rem) {
+  .c5 {
+    font-size: 0.875rem;
+    line-height: 1.125rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .c5 {
+    font-size: 0.8125rem;
+    line-height: 1rem;
+  }
+}
+
+@media (max-width:19.9375rem) {
+  .c1 {
+    padding: 0.3125rem 0;
+  }
+}
+
+@media (min-width:20rem) and (max-width:37.4375rem) {
+  .c1 {
+    padding: 0.375rem 0;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .c1 {
+    padding: 0;
+  }
+}
+
+<div
+  class="c0"
+>
+  <h2
+    class="c1"
+  >
+    <a
+      aria-labelledby="test-section-label"
+      class="c2"
+      href="/igbo/other-index"
+    >
+      <span
+        class="c3"
+        role="text"
+      >
+        <span
+          class="c4"
+          dir="ltr"
+          id="test-section-label"
+        >
+          This is text in a SectionLabel rendering in ltr mode.
+        </span>
+        <span
+          aria-hidden="true"
+          class="c5"
+          dir="ltr"
+        >
+          See All
+        </span>
+      </span>
+    </a>
+  </h2>
+</div>
+`;
+
+exports[`SectionLabel Without bar With plain title should render correctly 1`] = `
+.c3 {
+  font-size: 1.125rem;
+  line-height: 1.375rem;
+  color: #222222;
+  background-color: #FFFFFF;
+  font-family: ReithSans,Helvetica,Arial,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  display: inline-block;
+  z-index: 1;
+  margin: 0;
+  padding-right: 0.5rem;
 }
 
 .c2 {
@@ -641,6 +1794,15 @@ exports[`SectionLabel Without bar With title should render correctly 1`] = `
   -ms-flex-align: center;
   align-items: center;
   min-height: 2.75rem;
+}
+
+.c0 {
+  margin-top: 2rem;
+  position: relative;
+}
+
+.c1 {
+  margin: 0;
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
@@ -701,12 +1863,7 @@ exports[`SectionLabel Without bar With title should render correctly 1`] = `
 </div>
 `;
 
-exports[`SectionLabel Without bar With title should render correctly with arabic script typography values 1`] = `
-.c0 {
-  margin-top: 2rem;
-  position: relative;
-}
-
+exports[`SectionLabel Without bar With plain title should render correctly with arabic script typography values 1`] = `
 .c3 {
   font-size: 1.5rem;
   line-height: 2rem;
@@ -719,10 +1876,6 @@ exports[`SectionLabel Without bar With title should render correctly with arabic
   z-index: 1;
   margin: 0;
   padding-left: 0.5rem;
-}
-
-.c1 {
-  margin: 0;
 }
 
 .c2 {
@@ -742,6 +1895,15 @@ exports[`SectionLabel Without bar With title should render correctly with arabic
   -ms-flex-align: center;
   align-items: center;
   min-height: 2.75rem;
+}
+
+.c0 {
+  margin-top: 2rem;
+  position: relative;
+}
+
+.c1 {
+  margin: 0;
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
@@ -802,12 +1964,7 @@ exports[`SectionLabel Without bar With title should render correctly with arabic
 </div>
 `;
 
-exports[`SectionLabel Without bar With title should render correctly with explicit text direction 1`] = `
-.c0 {
-  margin-top: 2rem;
-  position: relative;
-}
-
+exports[`SectionLabel Without bar With plain title should render correctly with explicit text direction 1`] = `
 .c3 {
   font-size: 1.125rem;
   line-height: 1.375rem;
@@ -820,10 +1977,6 @@ exports[`SectionLabel Without bar With title should render correctly with explic
   z-index: 1;
   margin: 0;
   padding-right: 0.5rem;
-}
-
-.c1 {
-  margin: 0;
 }
 
 .c2 {
@@ -843,6 +1996,15 @@ exports[`SectionLabel Without bar With title should render correctly with explic
   -ms-flex-align: center;
   align-items: center;
   min-height: 2.75rem;
+}
+
+.c0 {
+  margin-top: 2rem;
+  position: relative;
+}
+
+.c1 {
+  margin: 0;
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {

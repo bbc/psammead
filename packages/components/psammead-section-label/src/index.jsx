@@ -4,20 +4,13 @@ import { bool, oneOf, shape, string } from 'prop-types';
 import { scriptPropType } from '@bbc/gel-foundations/prop-types';
 import {
   GEL_GROUP_2_SCREEN_WIDTH_MAX,
-  GEL_GROUP_3_SCREEN_WIDTH_MIN,
   MEDIA_QUERY_TYPOGRAPHY,
 } from '@bbc/gel-foundations/breakpoints';
-import {
-  GEL_SPACING,
-  GEL_SPACING_DBL,
-  GEL_SPACING_QUAD,
-} from '@bbc/gel-foundations/spacings';
-import { getBrevier, getDoublePica } from '@bbc/gel-foundations/typography';
-import { C_EBON, C_PEBBLE, C_WHITE } from '@bbc/psammead-styles/colours';
-import { getSansBold, getSansRegular } from '@bbc/psammead-styles/font-styles';
+import { GEL_SPACING_QUAD } from '@bbc/gel-foundations/spacings';
+import { C_PEBBLE } from '@bbc/psammead-styles/colours';
 
-const minClickableHeightPx = 44;
-const minClickableHeightRem = minClickableHeightPx / 16;
+import { minClickableHeightPx } from './constants';
+import { PlainTitle, LinkTitle } from './titles';
 
 const barPosition = `
   // @ under 600px, place bar at top of component
@@ -70,46 +63,6 @@ SectionLabelWrapper.propTypes = {
   visuallyHidden: bool.isRequired,
 };
 
-const paddingDir = ({ dir }) => `padding-${dir === 'rtl' ? 'left' : 'right'}`;
-const paddingReverseDir = ({ dir }) =>
-  `padding-${dir === 'rtl' ? 'right' : 'left'}`;
-
-const Title = styled.span`
-  ${({ script }) => script && getDoublePica(script)};
-  color: ${C_EBON};
-  background-color: ${C_WHITE};
-  ${({ service }) => getSansRegular(service)}
-  display: inline-block;
-  z-index: 1;
-
-  /* Unset the browser's default margins. */
-  margin: 0;
-
-  ${paddingDir}: ${GEL_SPACING};
-
-  @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
-    ${paddingDir}: ${GEL_SPACING_DBL};
-  }
-`;
-
-Title.propTypes = {
-  dir: oneOf(['ltr', 'rtl']).isRequired,
-  script: shape(scriptPropType).isRequired,
-  service: string.isRequired,
-};
-
-const SectionLabelLink = styled.a.attrs(props => ({
-  'aria-labelledby': props.labelId,
-}))`
-  color: ${C_EBON};
-  text-decoration: none;
-
-  &:focus,
-  &:hover {
-    text-decoration: underline;
-  }
-`;
-
 const headingPadding = script => `
   ${MEDIA_QUERY_TYPOGRAPHY.FEATURE_PHONE_ONLY} {
     // yeah this is really gross but prettier demands it :shrug:
@@ -136,61 +89,6 @@ const HeadingWithPadding = styled.h2`
   margin: 0;
 
   ${({ script }) => script && headingPadding(script)};
-`;
-
-const FlexContainer = styled.span`
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-between;
-  align-items: center;
-  min-height: ${minClickableHeightRem}rem;
-`;
-
-const FlexTextContainer = styled(FlexContainer).attrs({
-  role: 'text',
-})``;
-
-// eslint-disable-next-line react/prop-types
-const PlainTitle = ({ labelId, children: title, dir, script, service }) => (
-  <FlexContainer>
-    <Title script={script} dir={dir} id={labelId} service={service}>
-      {title}
-    </Title>
-  </FlexContainer>
-);
-
-/* eslint-disable react/prop-types */
-const LinkTitle = ({
-  href,
-  labelId,
-  children,
-  dir,
-  linkText,
-  script,
-  service,
-  /* eslint-enable react/prop-types */
-}) => (
-  <SectionLabelLink href={href} labelId={labelId}>
-    <FlexTextContainer>
-      <Title id={labelId} dir={dir} script={script} service={service}>
-        {children}
-      </Title>
-      <IndexLinkCta dir={dir} script={script} service={service}>
-        {linkText}
-      </IndexLinkCta>
-    </FlexTextContainer>
-  </SectionLabelLink>
-);
-
-const IndexLinkCta = styled.span.attrs({
-  'aria-hidden': 'true',
-})`
-  ${({ script }) => script && getBrevier(script)};
-  ${({ service }) => getSansBold(service)};
-  color: ${C_EBON};
-  background-color: ${C_WHITE};
-  ${paddingReverseDir}: ${GEL_SPACING_DBL};
-  z-index: 1;
 `;
 
 const SectionLabel = ({

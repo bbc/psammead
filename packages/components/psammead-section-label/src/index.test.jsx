@@ -5,7 +5,7 @@ import SectionLabel from './index';
 
 describe('SectionLabel', () => {
   describe('With bar', () => {
-    describe('With title', () => {
+    describe('With plain title', () => {
       shouldMatchSnapshot(
         'should render correctly',
         <SectionLabel
@@ -47,7 +47,64 @@ describe('SectionLabel', () => {
           script={arabic}
           dir="rtl"
           labelId="test-section-label"
+          service="persian"
+        >
+          بعض محتوى النص
+        </SectionLabel>,
+      );
+    });
+
+    describe('With linking title', () => {
+      shouldMatchSnapshot(
+        'should render correctly',
+        <SectionLabel
+          script={latin}
+          labelId="test-section-label"
           service="news"
+          href="/igbo/other-index"
+          linkText="See All"
+        >
+          This is text in a linking SectionLabel.
+        </SectionLabel>,
+      );
+
+      shouldMatchSnapshot(
+        'should render correctly with explicitly showing the bar',
+        <SectionLabel
+          script={latin}
+          labelId="test-section-label"
+          bar
+          service="news"
+          href="/igbo/other-index"
+          linkText="See All"
+        >
+          This is text in a SectionLabel, and there is a bar over to the right
+        </SectionLabel>,
+      );
+
+      shouldMatchSnapshot(
+        'should render correctly with explicit text direction',
+        <SectionLabel
+          script={latin}
+          dir="ltr"
+          labelId="test-section-label"
+          service="news"
+          href="/igbo/other-index"
+          linkText="See All"
+        >
+          This is text in a SectionLabel rendering in ltr mode.
+        </SectionLabel>,
+      );
+
+      shouldMatchSnapshot(
+        'should render correctly with arabic script typography values',
+        <SectionLabel
+          script={arabic}
+          dir="rtl"
+          labelId="test-section-label"
+          service="persian"
+          href="/igbo/other-index"
+          linkText="See All"
         >
           بعض محتوى النص
         </SectionLabel>,
@@ -56,7 +113,7 @@ describe('SectionLabel', () => {
   });
 
   describe('Without bar', () => {
-    describe('With title', () => {
+    describe('With plain title', () => {
       shouldMatchSnapshot(
         'should render correctly',
         <SectionLabel
@@ -90,6 +147,52 @@ describe('SectionLabel', () => {
           bar={false}
           labelId="test-section-label"
           service="persian"
+        >
+          بعض محتوى النص
+        </SectionLabel>,
+      );
+    });
+
+    describe('With linking title', () => {
+      shouldMatchSnapshot(
+        'should render correctly',
+        <SectionLabel
+          script={latin}
+          bar={false}
+          labelId="test-section-label"
+          service="news"
+          href="/igbo/other-index"
+          linkText="See All"
+        >
+          This is text in a SectionLabel.
+        </SectionLabel>,
+      );
+
+      shouldMatchSnapshot(
+        'should render correctly with explicit text direction',
+        <SectionLabel
+          script={latin}
+          dir="ltr"
+          bar={false}
+          labelId="test-section-label"
+          service="news"
+          href="/igbo/other-index"
+          linkText="See All"
+        >
+          This is text in a SectionLabel rendering in ltr mode.
+        </SectionLabel>,
+      );
+
+      shouldMatchSnapshot(
+        'should render correctly with arabic script typography values',
+        <SectionLabel
+          script={arabic}
+          dir="rtl"
+          bar={false}
+          labelId="test-section-label"
+          service="persian"
+          href="/igbo/other-index"
+          linkText="See All"
         >
           بعض محتوى النص
         </SectionLabel>,
