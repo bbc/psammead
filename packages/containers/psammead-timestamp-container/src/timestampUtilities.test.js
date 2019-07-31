@@ -183,7 +183,10 @@ describe('Moment configuration', () => {
 
     const allButAYear = moment()
       .subtract(12, 'months')
-      .add(1, 'second');
+      // this was originally `.add(1, 'second') but that caused the tests to fail on the 31st of the month
+      // (because the threshold for a month has been configured to 30 days) so instead
+      // be safely away from this edge case by going 5 days away
+      .add(5, 'days');
     // default moment configuration would return 'a month ago'
     expect(allButAYear.fromNow()).toEqual('11 months ago');
   });
