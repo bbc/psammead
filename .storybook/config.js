@@ -1,3 +1,4 @@
+import 'storybook-chromatic';
 import React, { Fragment } from 'react';
 import { configure, addDecorator, addParameters } from '@storybook/react';
 import { create } from '@storybook/theming';
@@ -29,12 +30,12 @@ addParameters({
   a11y: {
     options: {
       runOnly: {
-        type: "tag",
-        values: ["wcag2a", "wcag2aa", "wcag21aa"]
+        type: 'tag',
+        values: ['wcag2a', 'wcag2aa', 'wcag21aa'],
       },
       iframes: true,
-    }
-  }
+    },
+  },
 });
 
 const GlobalStyle = createGlobalStyle`

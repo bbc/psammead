@@ -31,34 +31,43 @@ storiesOf('Components|Figure', module)
   )
   .add(
     'containing Image, ImagePlaceholder, Copyright and Caption',
-    inputProvider([{ name: 'Caption' }], ({ slotTexts: [caption], script }) => (
-      <Figure>
-        <ImagePlaceholder ratio={imageRatio}>
-          <Image alt={imageAlt} src={imageSrc} width={imageWidth} />
-          <Copyright>
+    inputProvider(
+      [{ name: 'Caption' }],
+      ({ slotTexts: [caption], script, service }) => (
+        <Figure>
+          <ImagePlaceholder ratio={imageRatio}>
+            <Image alt={imageAlt} src={imageSrc} width={imageWidth} />
+            <Copyright>
+              <VisuallyHiddenText>
+                {text(
+                  'visually hidden copyright',
+                  'Image copyright, ',
+                  'Visually Hidden Copyright',
+                )}
+              </VisuallyHiddenText>
+              {text('copyright', 'Copyright', 'Copyright')}
+            </Copyright>
+          </ImagePlaceholder>
+          <Caption service={service} script={script}>
             <VisuallyHiddenText>
               {text(
-                'visually hidden copyright',
-                'Image copyright, ',
-                'Visually Hidden Copyright',
+                'visually hidden caption',
+                'Image caption, ',
+                'Visually Hidden Caption',
               )}
             </VisuallyHiddenText>
-            {text('copyright', 'Copyright', 'Copyright')}
-          </Copyright>
-        </ImagePlaceholder>
-        <Caption>
-          <VisuallyHiddenText>
-            {text(
-              'visually hidden caption',
-              'Image caption, ',
-              'Visually Hidden Caption',
-            )}
-          </VisuallyHiddenText>
-          <Paragraph script={script}>{caption}</Paragraph>
-          <Paragraph script={script}>{caption}</Paragraph>
-          <Paragraph script={script}>{caption}</Paragraph>
-        </Caption>
-      </Figure>
-    )),
+            <Paragraph script={script} service={service}>
+              {caption}
+            </Paragraph>
+            <Paragraph script={script} service={service}>
+              {caption}
+            </Paragraph>
+            <Paragraph script={script} service={service}>
+              {caption}
+            </Paragraph>
+          </Caption>
+        </Figure>
+      ),
+    ),
     { notes, knobs: { escapeHTML: false } },
   );

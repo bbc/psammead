@@ -7,12 +7,13 @@
     "build": "npm run build:cjs && npm run build:esm",
     "build:cjs": "lerna exec --parallel -- babel src -d dist --ignore $npm_package_config_babel_ignore --root-mode upward",
     "build:esm": "BABEL_TYPE=esm lerna exec --parallel -- babel src -d esm --configFile babel.config.js --ignore $npm_package_config_babel_ignore --root-mode upward",
+    "build:storybook": "build-storybook -o storybook_dist",
     "ci:packages": "npm ci && lerna exec -- npm ci",
     "changeScanner": "node scripts/changeScanner",
     "bumpPackages": "node scripts/bumpPackages/cli",
     "bumpChangelogs": "node scripts/bumpChangelogs/cli",
     "regeneratePackageLocks": "node scripts/regeneratePackageLocks",
-    "deploy-storybook": "build-storybook -o storybook_dist && gh-pages -d storybook_dist",
+    "deploy-storybook": "npm run build:storybook && gh-pages -d storybook_dist",
     "force-package-lock-https": "find . -type f -name \"package-lock.json\" | grep -v node_modules | xargs -I % sh -c 'echo \"Replacing http->https in %\"; sed -i \"\" -e \"s/http:\\/\\//https:\\/\\//g\" %'",
     "install:packages": "npm i && lerna clean --yes && lerna bootstrap --hoist",
     "install:packages:link": "npm i && lerna clean --yes && lerna bootstrap --hoist --force-local",
@@ -22,6 +23,7 @@
     "publish": "npm run build && node scripts/publish",
     "storybook": "NODE_ENV=development start-storybook -p 8180 -c .storybook",
     "test": "npm run test:lint && npm run test:lint:css && npm run test:unit && npm run test:packages",
+    "test:chromatic": "chromatic test run --build-script-name build:storybook || true",
     "test:packages": "lerna run test",
     "test:lint": "eslint --ext .js,jsx,json ./packages ./scripts",
     "test:lint:css": "stylelint 'packages/**/*.js' 'packages/**/*.jsx' 'scripts/**/*.js'",
@@ -90,6 +92,7 @@
     "request": "^2.88.0",
     "semver": "^6.3.0",
     "shelljs": "^0.8.3",
+    "storybook-chromatic": "^2.0.0",
     "storybook-readme": "^5.0.5",
     "strip-ansi": "^5.0.0",
     "stylelint": "^10.1.0",
@@ -114,7 +117,8 @@
       "!**/*.stories.{js,jsx}",
       "!**/.eslintrc.js",
       "!**/dist/**",
-      "!**/esm/**"
+      "!**/esm/**",
+      "!**/moment-timezone-include/tz/**"
     ],
     "testMatch": [
       "**/*.test.{js,jsx}"
