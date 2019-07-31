@@ -2,15 +2,15 @@
 
 exports[`SectionLabel When hideSectionHeader is true should add styling to hide SectionLabel when width of screen is less than 600 px 1`] = `
 .c3 {
+  display: inline-block;
+  z-index: 1;
   font-size: 1.125rem;
   line-height: 1.375rem;
-  color: #222222;
-  background-color: #FFFFFF;
   font-family: ReithSans,Helvetica,Arial,sans-serif;
   font-weight: 400;
   font-style: normal;
-  display: inline-block;
-  z-index: 1;
+  color: #222222;
+  background-color: #FFFFFF;
   margin: 0;
   padding-right: 0.5rem;
 }
@@ -106,7 +106,9 @@ exports[`SectionLabel When hideSectionHeader is true should add styling to hide 
       <span
         class="c3"
         dir="ltr"
-      />
+      >
+        This is the text in a SectionLabel
+      </span>
     </span>
   </h2>
 </div>
@@ -114,15 +116,15 @@ exports[`SectionLabel When hideSectionHeader is true should add styling to hide 
 
 exports[`SectionLabel With bar With linking title should render correctly 1`] = `
 .c4 {
+  display: inline-block;
+  z-index: 1;
   font-size: 1.125rem;
   line-height: 1.375rem;
-  color: #222222;
-  background-color: #FFFFFF;
   font-family: ReithSans,Helvetica,Arial,sans-serif;
   font-weight: 400;
   font-style: normal;
-  display: inline-block;
-  z-index: 1;
+  color: #222222;
+  background-color: #FFFFFF;
   margin: 0;
   padding-right: 0.5rem;
 }
@@ -289,15 +291,15 @@ exports[`SectionLabel With bar With linking title should render correctly 1`] = 
 
 exports[`SectionLabel With bar With linking title should render correctly with arabic script typography values 1`] = `
 .c4 {
+  display: inline-block;
+  z-index: 1;
   font-size: 1.5rem;
   line-height: 2rem;
-  color: #222222;
-  background-color: #FFFFFF;
   font-family: NassimPersian,Arial,Verdana,Geneva,Helvetica,sans-serif;
   font-weight: 400;
   font-style: normal;
-  display: inline-block;
-  z-index: 1;
+  color: #222222;
+  background-color: #FFFFFF;
   margin: 0;
   padding-left: 0.5rem;
 }
@@ -464,15 +466,15 @@ exports[`SectionLabel With bar With linking title should render correctly with a
 
 exports[`SectionLabel With bar With linking title should render correctly with explicit text direction 1`] = `
 .c4 {
+  display: inline-block;
+  z-index: 1;
   font-size: 1.125rem;
   line-height: 1.375rem;
-  color: #222222;
-  background-color: #FFFFFF;
   font-family: ReithSans,Helvetica,Arial,sans-serif;
   font-weight: 400;
   font-style: normal;
-  display: inline-block;
-  z-index: 1;
+  color: #222222;
+  background-color: #FFFFFF;
   margin: 0;
   padding-right: 0.5rem;
 }
@@ -639,15 +641,15 @@ exports[`SectionLabel With bar With linking title should render correctly with e
 
 exports[`SectionLabel With bar With linking title should render correctly with explicitly showing the bar 1`] = `
 .c4 {
+  display: inline-block;
+  z-index: 1;
   font-size: 1.125rem;
   line-height: 1.375rem;
-  color: #222222;
-  background-color: #FFFFFF;
   font-family: ReithSans,Helvetica,Arial,sans-serif;
   font-weight: 400;
   font-style: normal;
-  display: inline-block;
-  z-index: 1;
+  color: #222222;
+  background-color: #FFFFFF;
   margin: 0;
   padding-right: 0.5rem;
 }
@@ -814,15 +816,15 @@ exports[`SectionLabel With bar With linking title should render correctly with e
 
 exports[`SectionLabel With bar With plain title should render correctly 1`] = `
 .c3 {
+  display: inline-block;
+  z-index: 1;
   font-size: 1.125rem;
   line-height: 1.375rem;
-  color: #222222;
-  background-color: #FFFFFF;
   font-family: ReithSans,Helvetica,Arial,sans-serif;
   font-weight: 400;
   font-style: normal;
-  display: inline-block;
-  z-index: 1;
+  color: #222222;
+  background-color: #FFFFFF;
   margin: 0;
   padding-right: 0.5rem;
 }
@@ -936,15 +938,15 @@ exports[`SectionLabel With bar With plain title should render correctly 1`] = `
 
 exports[`SectionLabel With bar With plain title should render correctly with arabic script typography values 1`] = `
 .c3 {
+  display: inline-block;
+  z-index: 1;
   font-size: 1.5rem;
   line-height: 2rem;
-  color: #222222;
-  background-color: #FFFFFF;
   font-family: NassimPersian,Arial,Verdana,Geneva,Helvetica,sans-serif;
   font-weight: 400;
   font-style: normal;
-  display: inline-block;
-  z-index: 1;
+  color: #222222;
+  background-color: #FFFFFF;
   margin: 0;
   padding-left: 0.5rem;
 }
@@ -1058,15 +1060,15 @@ exports[`SectionLabel With bar With plain title should render correctly with ara
 
 exports[`SectionLabel With bar With plain title should render correctly with explicit text direction 1`] = `
 .c3 {
+  display: inline-block;
+  z-index: 1;
   font-size: 1.125rem;
   line-height: 1.375rem;
-  color: #222222;
-  background-color: #FFFFFF;
   font-family: ReithSans,Helvetica,Arial,sans-serif;
   font-weight: 400;
   font-style: normal;
-  display: inline-block;
-  z-index: 1;
+  color: #222222;
+  background-color: #FFFFFF;
   margin: 0;
   padding-right: 0.5rem;
 }
@@ -1180,15 +1182,15 @@ exports[`SectionLabel With bar With plain title should render correctly with exp
 
 exports[`SectionLabel With bar With plain title should render correctly with explicitly showing the bar 1`] = `
 .c3 {
+  display: inline-block;
+  z-index: 1;
   font-size: 1.125rem;
   line-height: 1.375rem;
-  color: #222222;
-  background-color: #FFFFFF;
   font-family: ReithSans,Helvetica,Arial,sans-serif;
   font-weight: 400;
   font-style: normal;
-  display: inline-block;
-  z-index: 1;
+  color: #222222;
+  background-color: #FFFFFF;
   margin: 0;
   padding-right: 0.5rem;
 }
@@ -1302,15 +1304,15 @@ exports[`SectionLabel With bar With plain title should render correctly with exp
 
 exports[`SectionLabel Without bar With linking title should render correctly 1`] = `
 .c4 {
+  display: inline-block;
+  z-index: 1;
   font-size: 1.125rem;
   line-height: 1.375rem;
-  color: #222222;
-  background-color: #FFFFFF;
   font-family: ReithSans,Helvetica,Arial,sans-serif;
   font-weight: 400;
   font-style: normal;
-  display: inline-block;
-  z-index: 1;
+  color: #222222;
+  background-color: #FFFFFF;
   margin: 0;
   padding-right: 0.5rem;
 }
@@ -1456,15 +1458,15 @@ exports[`SectionLabel Without bar With linking title should render correctly 1`]
 
 exports[`SectionLabel Without bar With linking title should render correctly with arabic script typography values 1`] = `
 .c4 {
+  display: inline-block;
+  z-index: 1;
   font-size: 1.5rem;
   line-height: 2rem;
-  color: #222222;
-  background-color: #FFFFFF;
   font-family: NassimPersian,Arial,Verdana,Geneva,Helvetica,sans-serif;
   font-weight: 400;
   font-style: normal;
-  display: inline-block;
-  z-index: 1;
+  color: #222222;
+  background-color: #FFFFFF;
   margin: 0;
   padding-left: 0.5rem;
 }
@@ -1610,15 +1612,15 @@ exports[`SectionLabel Without bar With linking title should render correctly wit
 
 exports[`SectionLabel Without bar With linking title should render correctly with explicit text direction 1`] = `
 .c4 {
+  display: inline-block;
+  z-index: 1;
   font-size: 1.125rem;
   line-height: 1.375rem;
-  color: #222222;
-  background-color: #FFFFFF;
   font-family: ReithSans,Helvetica,Arial,sans-serif;
   font-weight: 400;
   font-style: normal;
-  display: inline-block;
-  z-index: 1;
+  color: #222222;
+  background-color: #FFFFFF;
   margin: 0;
   padding-right: 0.5rem;
 }
@@ -1764,15 +1766,15 @@ exports[`SectionLabel Without bar With linking title should render correctly wit
 
 exports[`SectionLabel Without bar With plain title should render correctly 1`] = `
 .c3 {
+  display: inline-block;
+  z-index: 1;
   font-size: 1.125rem;
   line-height: 1.375rem;
-  color: #222222;
-  background-color: #FFFFFF;
   font-family: ReithSans,Helvetica,Arial,sans-serif;
   font-weight: 400;
   font-style: normal;
-  display: inline-block;
-  z-index: 1;
+  color: #222222;
+  background-color: #FFFFFF;
   margin: 0;
   padding-right: 0.5rem;
 }
@@ -1865,15 +1867,15 @@ exports[`SectionLabel Without bar With plain title should render correctly 1`] =
 
 exports[`SectionLabel Without bar With plain title should render correctly with arabic script typography values 1`] = `
 .c3 {
+  display: inline-block;
+  z-index: 1;
   font-size: 1.5rem;
   line-height: 2rem;
-  color: #222222;
-  background-color: #FFFFFF;
   font-family: NassimPersian,Arial,Verdana,Geneva,Helvetica,sans-serif;
   font-weight: 400;
   font-style: normal;
-  display: inline-block;
-  z-index: 1;
+  color: #222222;
+  background-color: #FFFFFF;
   margin: 0;
   padding-left: 0.5rem;
 }
@@ -1966,15 +1968,15 @@ exports[`SectionLabel Without bar With plain title should render correctly with 
 
 exports[`SectionLabel Without bar With plain title should render correctly with explicit text direction 1`] = `
 .c3 {
+  display: inline-block;
+  z-index: 1;
   font-size: 1.125rem;
   line-height: 1.375rem;
-  color: #222222;
-  background-color: #FFFFFF;
   font-family: ReithSans,Helvetica,Arial,sans-serif;
   font-weight: 400;
   font-style: normal;
-  display: inline-block;
-  z-index: 1;
+  color: #222222;
+  background-color: #FFFFFF;
   margin: 0;
   padding-right: 0.5rem;
 }

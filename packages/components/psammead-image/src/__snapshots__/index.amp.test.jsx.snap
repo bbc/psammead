@@ -17,6 +17,7 @@ exports[`Image - AmpImg should render image with srcset correctly 1`] = `
   alt="Student sitting an exam"
   attribution=""
   height="576"
+  layout="responsive"
   sizes="100vw"
   src="https://ichef.bbci.co.uk/news/300/cpsprodpb/7098/production/_104842882_students.jpg"
   srcset="https://ichef.bbci.co.uk/news/300/cpsprodpb/7098/production/_104842882_students.jpg 300w, https://ichef.bbci.co.uk/news/450/cpsprodpb/7098/production/_104842882_students.jpg 450w, https://ichef.bbci.co.uk/news/600/cpsprodpb/7098/production/_104842882_students.jpg 600w, https://ichef.bbci.co.uk/news/1024/cpsprodpb/7098/production/_104842882_students.jpg 1024w"

@@ -8,7 +8,11 @@ describe(`List`, () => {
     text: 'Link',
   };
 
-  const getLinks = count => new Array(count).fill(link);
+  const getLinks = count =>
+    new Array(count).fill(link).map((linkItem, index) => ({
+      ...linkItem,
+      text: `${linkItem.text}${index}`,
+    }));
 
   shouldMatchSnapshot(
     'should render correctly with 7 items',

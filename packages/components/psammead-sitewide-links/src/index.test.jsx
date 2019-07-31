@@ -8,13 +8,16 @@ describe(`SitewideLinks`, () => {
     text: 'Link',
   };
 
-  const links = new Array(7).fill(link);
+  const links = new Array(7).fill(link).map((linkItem, index) => ({
+    ...linkItem,
+    text: `${linkItem.text}${index}`,
+  }));
 
   shouldMatchSnapshot(
     'should render correctly',
     <SitewideLinks
       links={links}
-      copyrightText="Text here. "
+      copyrightText={<span>Text here.</span>}
       externalLink={link}
       service="news"
     />,
