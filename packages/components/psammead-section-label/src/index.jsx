@@ -20,27 +20,19 @@ import { getSansBold, getSansRegular } from '@bbc/psammead-styles/font-styles';
 const halfLineHeightRem = group => group.lineHeight / 2 / 16;
 
 const top = script => `
+  top: 0;
+
   // place at middle of text line height
-  top: ${halfLineHeightRem(script.doublePica.groupA)}rem;
-
-  ${MEDIA_QUERY_TYPOGRAPHY.SMART_PHONE_ONLY} {
-    top: ${halfLineHeightRem(script.doublePica.groupB)}rem;
-  }
-
   ${MEDIA_QUERY_TYPOGRAPHY.LAPTOP_AND_LARGER} {
-    top: ${halfLineHeightRem(script.doublePica.groupD)}rem;
+    // top: ${halfLineHeightRem(script.doublePica.groupD)}rem;
+    top: ${22 / 16}rem;
   }
 `;
 
-const Wrapper = styled.div`
+const SectionLabelWrapper = styled.div`
+  margin-top: ${GEL_SPACING_QUAD};
+  // margin-bottom: ${GEL_SPACING_TRPL};
   position: relative;
-  margin-top: ${GEL_SPACING_TRPL};
-  margin-bottom: ${GEL_SPACING_DBL};
-
-  ${MEDIA_QUERY_TYPOGRAPHY.LAPTOP_AND_LARGER} {
-    margin-top: ${GEL_SPACING_QUAD};
-    margin-bottom: ${GEL_SPACING_TRPL};
-  }
 
   ${({ bar }) =>
     bar &&
@@ -51,7 +43,7 @@ const Wrapper = styled.div`
         border-top: 0.0625rem solid ${C_PEBBLE};
         left: 0;
         right: 0;
-        ${({ script }) => (script ? top(script) : 'top: 0')};
+        ${({ script }) => (script ? top(script) : `top: 0`)};
         @media screen and (-ms-high-contrast: active) {
           border-color: windowText;
         }
@@ -72,7 +64,7 @@ const Wrapper = styled.div`
     `}
 `;
 
-Wrapper.propTypes = {
+SectionLabelWrapper.propTypes = {
   bar: bool.isRequired,
   script: shape(scriptPropType).isRequired,
   visuallyHidden: bool.isRequired,
@@ -80,13 +72,13 @@ Wrapper.propTypes = {
 
 const paddingDir = ({ dir }) => `padding-${dir === 'ltr' ? 'right' : 'left'}`;
 
-const Title = styled.h2`
+const PlainTitle = styled.h2`
   ${({ script }) => script && getDoublePica(script)};
   color: ${C_EBON};
   background-color: ${C_WHITE};
   ${({ service }) => getSansRegular(service)}
   display: inline-block;
-  position: relative;
+  z-index: 1;
 
   /* Unset the browser's default margins. */
   margin: 0;
@@ -98,38 +90,112 @@ const Title = styled.h2`
   }
 `;
 
-Title.propTypes = {
+PlainTitle.propTypes = {
   dir: oneOf(['ltr', 'rtl']).isRequired,
   script: shape(scriptPropType).isRequired,
   service: string.isRequired,
 };
 
 const lineHeightDiff = (a, b) => (a.lineHeight - b.lineHeight) / 16;
+const halfLineHeightDiff = (a, b) => lineHeightDiff(a, b) / 2;
 
 const seeMoreTop = script => `
-  // place at middle of text line height
-  top: ${lineHeightDiff(script.doublePica.groupA, script.brevier.groupA)}rem;
+  top: ${1 +
+    lineHeightDiff(script.doublePica.groupA, script.brevier.groupA)}rem;
 
   ${MEDIA_QUERY_TYPOGRAPHY.SMART_PHONE_ONLY} {
-    top: ${lineHeightDiff(script.doublePica.groupB, script.brevier.groupB)}rem;
+    top: ${1 +
+      lineHeightDiff(script.doublePica.groupB, script.brevier.groupB)}rem;
   }
 
   ${MEDIA_QUERY_TYPOGRAPHY.LAPTOP_AND_LARGER} {
-    top: ${lineHeightDiff(script.doublePica.groupD, script.brevier.groupD)}rem;
+    top: ${halfLineHeightDiff(script.doublePica.groupD, script.brevier.groupD) +
+      0.625}rem;
   }
 `;
 
-const SeeMore = styled.div.attrs({
+const BlockLink = styled.a.attrs(props => ({
+  'aria-labelledby': props.labelId,
+}))`
+  text-decoration: none;
+`;
+
+const ohGodWhyPadding = script => `
+  ${MEDIA_QUERY_TYPOGRAPHY.FEATURE_PHONE_ONLY} {
+    padding-top: ${1 - (44 - script.doublePica.groupA.lineHeight) / 2 / 16}rem;
+    padding-bottom: ${1 -
+      (44 - script.doublePica.groupA.lineHeight) / 2 / 16}rem;
+  }
+
+  ${MEDIA_QUERY_TYPOGRAPHY.SMART_PHONE_ONLY} {
+    padding-top: ${1 - (44 - script.doublePica.groupB.lineHeight) / 2 / 16}rem;
+    padding-bottom: ${1 -
+      (44 - script.doublePica.groupB.lineHeight) / 2 / 16}rem;
+  }
+
+  ${MEDIA_QUERY_TYPOGRAPHY.LAPTOP_AND_LARGER} {
+    padding: 0;
+  }
+`;
+
+const OhGodWhy = styled.h2`
+  /* reset default margins */
+  margin: 0;
+
+  ${({ script }) => ohGodWhyPadding(script)};
+`;
+
+const FlexContainer = styled.span.attrs({
+  role: 'text',
+})`
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 44px;
+`;
+
+/* eslint-disable react/prop-types */
+const LinkTitle = ({
+  href,
+  labelId,
+  children,
+  dir,
+  linkText,
+  script,
+  service,
+}) => (
+  /* eslint-enable react/prop-types */
+  <OhGodWhy script={script}>
+    <BlockLink href={href} labelId={labelId}>
+      {/* eslint-disable-next-line jsx-a11y/aria-role */}
+      <FlexContainer>
+        <PlainTitle
+          as="span"
+          id={labelId}
+          dir={dir}
+          script={script}
+          service={service}
+        >
+          {children}
+        </PlainTitle>
+        <IndexLinkCta script={script} service={service}>
+          {linkText}
+        </IndexLinkCta>
+      </FlexContainer>
+    </BlockLink>
+  </OhGodWhy>
+);
+
+const IndexLinkCta = styled.span.attrs({
   'aria-hidden': 'true',
 })`
   ${({ script }) => script && getBrevier(script)};
   ${({ service }) => getSansBold(service)};
-  display: inline-block;
-  position: absolute;
-  right: 0;
+  color: ${C_EBON};
   background-color: ${C_WHITE};
   padding-left: 1rem;
-  ${({ script }) => (script ? seeMoreTop(script) : 'top: 0')};
+  z-index: 1;
 `;
 
 const SectionLabel = ({
@@ -143,16 +209,28 @@ const SectionLabel = ({
   visuallyHidden,
   service,
 }) => (
-  <Wrapper script={script} bar={bar} visuallyHidden={visuallyHidden}>
-    <Title script={script} dir={dir} id={labelId} service={service}>
-      {title}
-    </Title>
-    {linkText && href && (
-      <SeeMore script={script} service={service}>
-        {linkText}
-      </SeeMore>
+  <SectionLabelWrapper
+    script={script}
+    bar={bar}
+    visuallyHidden={visuallyHidden}
+  >
+    {linkText && href ? (
+      <LinkTitle
+        script={script}
+        dir={dir}
+        labelId={labelId}
+        service={service}
+        href={href}
+        linkText={linkText}
+      >
+        {title}
+      </LinkTitle>
+    ) : (
+      <PlainTitle script={script} dir={dir} id={labelId} service={service}>
+        {title}
+      </PlainTitle>
     )}
-  </Wrapper>
+  </SectionLabelWrapper>
 );
 
 SectionLabel.defaultProps = {
