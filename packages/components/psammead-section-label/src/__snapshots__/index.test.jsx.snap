@@ -6,7 +6,7 @@ exports[`SectionLabel When hideSectionHeader is true should add styling to hide 
   position: relative;
 }
 
-.c1 {
+.c3 {
   font-size: 1.125rem;
   line-height: 1.375rem;
   color: #222222;
@@ -18,6 +18,29 @@ exports[`SectionLabel When hideSectionHeader is true should add styling to hide 
   z-index: 1;
   margin: 0;
   padding-right: 0.5rem;
+}
+
+.c1 {
+  margin: 0;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row nowrap;
+  -ms-flex-flow: row nowrap;
+  flex-flow: row nowrap;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  min-height: 44px;
 }
 
 @media (max-width:37.4375rem) {
@@ -34,22 +57,42 @@ exports[`SectionLabel When hideSectionHeader is true should add styling to hide 
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
-  .c1 {
+  .c3 {
     font-size: 1.25rem;
     line-height: 1.5rem;
   }
 }
 
 @media (min-width:37.5rem) {
-  .c1 {
+  .c3 {
     font-size: 1.5rem;
     line-height: 1.75rem;
   }
 }
 
 @media (min-width:37.5rem) {
-  .c1 {
+  .c3 {
     padding-right: 1rem;
+  }
+}
+
+@media (max-width:19.9375rem) {
+  .c1 {
+    padding-top: 0.3125rem;
+    padding-bottom: 0.3125rem;
+  }
+}
+
+@media (min-width:20rem) and (max-width:37.4375rem) {
+  .c1 {
+    padding-top: 0.375rem;
+    padding-bottom: 0.375rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .c1 {
+    padding: 0;
   }
 }
 
@@ -58,9 +101,17 @@ exports[`SectionLabel When hideSectionHeader is true should add styling to hide 
 >
   <h2
     class="c1"
-    dir="ltr"
-    id="test-section-label"
-  />
+  >
+    <span
+      class="c2"
+      role="text"
+    >
+      <span
+        class="c3"
+        dir="ltr"
+      />
+    </span>
+  </h2>
 </div>
 `;
 
@@ -79,7 +130,7 @@ exports[`SectionLabel With bar With title should render correctly 1`] = `
   top: 0;
 }
 
-.c1 {
+.c3 {
   font-size: 1.125rem;
   line-height: 1.375rem;
   color: #222222;
@@ -91,6 +142,29 @@ exports[`SectionLabel With bar With title should render correctly 1`] = `
   z-index: 1;
   margin: 0;
   padding-right: 0.5rem;
+}
+
+.c1 {
+  margin: 0;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row nowrap;
+  -ms-flex-flow: row nowrap;
+  flex-flow: row nowrap;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  min-height: 44px;
 }
 
 @media (min-width:37.5rem) {
@@ -106,22 +180,42 @@ exports[`SectionLabel With bar With title should render correctly 1`] = `
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
-  .c1 {
+  .c3 {
     font-size: 1.25rem;
     line-height: 1.5rem;
   }
 }
 
 @media (min-width:37.5rem) {
-  .c1 {
+  .c3 {
     font-size: 1.5rem;
     line-height: 1.75rem;
   }
 }
 
 @media (min-width:37.5rem) {
-  .c1 {
+  .c3 {
     padding-right: 1rem;
+  }
+}
+
+@media (max-width:19.9375rem) {
+  .c1 {
+    padding-top: 0.3125rem;
+    padding-bottom: 0.3125rem;
+  }
+}
+
+@media (min-width:20rem) and (max-width:37.4375rem) {
+  .c1 {
+    padding-top: 0.375rem;
+    padding-bottom: 0.375rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .c1 {
+    padding: 0;
   }
 }
 
@@ -130,10 +224,18 @@ exports[`SectionLabel With bar With title should render correctly 1`] = `
 >
   <h2
     class="c1"
-    dir="ltr"
-    id="test-section-label"
   >
-    This is text in a SectionLabel.
+    <span
+      class="c2"
+      role="text"
+    >
+      <span
+        class="c3"
+        dir="ltr"
+      >
+        This is text in a SectionLabel.
+      </span>
+    </span>
   </h2>
 </div>
 `;
@@ -153,7 +255,7 @@ exports[`SectionLabel With bar With title should render correctly with arabic sc
   top: 0;
 }
 
-.c1 {
+.c3 {
   font-size: 1.5rem;
   line-height: 2rem;
   color: #222222;
@@ -165,6 +267,29 @@ exports[`SectionLabel With bar With title should render correctly with arabic sc
   z-index: 1;
   margin: 0;
   padding-left: 0.5rem;
+}
+
+.c1 {
+  margin: 0;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row nowrap;
+  -ms-flex-flow: row nowrap;
+  flex-flow: row nowrap;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  min-height: 44px;
 }
 
 @media (min-width:37.5rem) {
@@ -180,22 +305,42 @@ exports[`SectionLabel With bar With title should render correctly with arabic sc
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
-  .c1 {
+  .c3 {
     font-size: 1.625rem;
     line-height: 2.25rem;
   }
 }
 
 @media (min-width:37.5rem) {
-  .c1 {
+  .c3 {
     font-size: 1.75rem;
     line-height: 2.25rem;
   }
 }
 
 @media (min-width:37.5rem) {
-  .c1 {
+  .c3 {
     padding-left: 1rem;
+  }
+}
+
+@media (max-width:19.9375rem) {
+  .c1 {
+    padding-top: 0.625rem;
+    padding-bottom: 0.625rem;
+  }
+}
+
+@media (min-width:20rem) and (max-width:37.4375rem) {
+  .c1 {
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .c1 {
+    padding: 0;
   }
 }
 
@@ -204,10 +349,18 @@ exports[`SectionLabel With bar With title should render correctly with arabic sc
 >
   <h2
     class="c1"
-    dir="rtl"
-    id="test-section-label"
   >
-    بعض محتوى النص
+    <span
+      class="c2"
+      role="text"
+    >
+      <span
+        class="c3"
+        dir="rtl"
+      >
+        بعض محتوى النص
+      </span>
+    </span>
   </h2>
 </div>
 `;
@@ -227,7 +380,7 @@ exports[`SectionLabel With bar With title should render correctly with explicit 
   top: 0;
 }
 
-.c1 {
+.c3 {
   font-size: 1.125rem;
   line-height: 1.375rem;
   color: #222222;
@@ -239,6 +392,29 @@ exports[`SectionLabel With bar With title should render correctly with explicit 
   z-index: 1;
   margin: 0;
   padding-right: 0.5rem;
+}
+
+.c1 {
+  margin: 0;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row nowrap;
+  -ms-flex-flow: row nowrap;
+  flex-flow: row nowrap;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  min-height: 44px;
 }
 
 @media (min-width:37.5rem) {
@@ -254,22 +430,42 @@ exports[`SectionLabel With bar With title should render correctly with explicit 
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
-  .c1 {
+  .c3 {
     font-size: 1.25rem;
     line-height: 1.5rem;
   }
 }
 
 @media (min-width:37.5rem) {
-  .c1 {
+  .c3 {
     font-size: 1.5rem;
     line-height: 1.75rem;
   }
 }
 
 @media (min-width:37.5rem) {
-  .c1 {
+  .c3 {
     padding-right: 1rem;
+  }
+}
+
+@media (max-width:19.9375rem) {
+  .c1 {
+    padding-top: 0.3125rem;
+    padding-bottom: 0.3125rem;
+  }
+}
+
+@media (min-width:20rem) and (max-width:37.4375rem) {
+  .c1 {
+    padding-top: 0.375rem;
+    padding-bottom: 0.375rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .c1 {
+    padding: 0;
   }
 }
 
@@ -278,10 +474,18 @@ exports[`SectionLabel With bar With title should render correctly with explicit 
 >
   <h2
     class="c1"
-    dir="ltr"
-    id="test-section-label"
   >
-    This is text in a SectionLabel rendering in ltr mode.
+    <span
+      class="c2"
+      role="text"
+    >
+      <span
+        class="c3"
+        dir="ltr"
+      >
+        This is text in a SectionLabel rendering in ltr mode.
+      </span>
+    </span>
   </h2>
 </div>
 `;
@@ -301,7 +505,7 @@ exports[`SectionLabel With bar With title should render correctly with explicitl
   top: 0;
 }
 
-.c1 {
+.c3 {
   font-size: 1.125rem;
   line-height: 1.375rem;
   color: #222222;
@@ -313,6 +517,29 @@ exports[`SectionLabel With bar With title should render correctly with explicitl
   z-index: 1;
   margin: 0;
   padding-right: 0.5rem;
+}
+
+.c1 {
+  margin: 0;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row nowrap;
+  -ms-flex-flow: row nowrap;
+  flex-flow: row nowrap;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  min-height: 44px;
 }
 
 @media (min-width:37.5rem) {
@@ -328,22 +555,42 @@ exports[`SectionLabel With bar With title should render correctly with explicitl
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
-  .c1 {
+  .c3 {
     font-size: 1.25rem;
     line-height: 1.5rem;
   }
 }
 
 @media (min-width:37.5rem) {
-  .c1 {
+  .c3 {
     font-size: 1.5rem;
     line-height: 1.75rem;
   }
 }
 
 @media (min-width:37.5rem) {
-  .c1 {
+  .c3 {
     padding-right: 1rem;
+  }
+}
+
+@media (max-width:19.9375rem) {
+  .c1 {
+    padding-top: 0.3125rem;
+    padding-bottom: 0.3125rem;
+  }
+}
+
+@media (min-width:20rem) and (max-width:37.4375rem) {
+  .c1 {
+    padding-top: 0.375rem;
+    padding-bottom: 0.375rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .c1 {
+    padding: 0;
   }
 }
 
@@ -352,10 +599,18 @@ exports[`SectionLabel With bar With title should render correctly with explicitl
 >
   <h2
     class="c1"
-    dir="ltr"
-    id="test-section-label"
   >
-    This is text in a SectionLabel, and there is a bar over to the right
+    <span
+      class="c2"
+      role="text"
+    >
+      <span
+        class="c3"
+        dir="ltr"
+      >
+        This is text in a SectionLabel, and there is a bar over to the right
+      </span>
+    </span>
   </h2>
 </div>
 `;
@@ -366,7 +621,7 @@ exports[`SectionLabel Without bar With title should render correctly 1`] = `
   position: relative;
 }
 
-.c1 {
+.c3 {
   font-size: 1.125rem;
   line-height: 1.375rem;
   color: #222222;
@@ -380,23 +635,66 @@ exports[`SectionLabel Without bar With title should render correctly 1`] = `
   padding-right: 0.5rem;
 }
 
+.c1 {
+  margin: 0;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row nowrap;
+  -ms-flex-flow: row nowrap;
+  flex-flow: row nowrap;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  min-height: 44px;
+}
+
 @media (min-width:20rem) and (max-width:37.4375rem) {
-  .c1 {
+  .c3 {
     font-size: 1.25rem;
     line-height: 1.5rem;
   }
 }
 
 @media (min-width:37.5rem) {
-  .c1 {
+  .c3 {
     font-size: 1.5rem;
     line-height: 1.75rem;
   }
 }
 
 @media (min-width:37.5rem) {
-  .c1 {
+  .c3 {
     padding-right: 1rem;
+  }
+}
+
+@media (max-width:19.9375rem) {
+  .c1 {
+    padding-top: 0.3125rem;
+    padding-bottom: 0.3125rem;
+  }
+}
+
+@media (min-width:20rem) and (max-width:37.4375rem) {
+  .c1 {
+    padding-top: 0.375rem;
+    padding-bottom: 0.375rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .c1 {
+    padding: 0;
   }
 }
 
@@ -405,10 +703,18 @@ exports[`SectionLabel Without bar With title should render correctly 1`] = `
 >
   <h2
     class="c1"
-    dir="ltr"
-    id="test-section-label"
   >
-    This is text in a SectionLabel.
+    <span
+      class="c2"
+      role="text"
+    >
+      <span
+        class="c3"
+        dir="ltr"
+      >
+        This is text in a SectionLabel.
+      </span>
+    </span>
   </h2>
 </div>
 `;
@@ -419,7 +725,7 @@ exports[`SectionLabel Without bar With title should render correctly with arabic
   position: relative;
 }
 
-.c1 {
+.c3 {
   font-size: 1.5rem;
   line-height: 2rem;
   color: #222222;
@@ -433,23 +739,66 @@ exports[`SectionLabel Without bar With title should render correctly with arabic
   padding-left: 0.5rem;
 }
 
+.c1 {
+  margin: 0;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row nowrap;
+  -ms-flex-flow: row nowrap;
+  flex-flow: row nowrap;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  min-height: 44px;
+}
+
 @media (min-width:20rem) and (max-width:37.4375rem) {
-  .c1 {
+  .c3 {
     font-size: 1.625rem;
     line-height: 2.25rem;
   }
 }
 
 @media (min-width:37.5rem) {
-  .c1 {
+  .c3 {
     font-size: 1.75rem;
     line-height: 2.25rem;
   }
 }
 
 @media (min-width:37.5rem) {
-  .c1 {
+  .c3 {
     padding-left: 1rem;
+  }
+}
+
+@media (max-width:19.9375rem) {
+  .c1 {
+    padding-top: 0.625rem;
+    padding-bottom: 0.625rem;
+  }
+}
+
+@media (min-width:20rem) and (max-width:37.4375rem) {
+  .c1 {
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .c1 {
+    padding: 0;
   }
 }
 
@@ -458,10 +807,18 @@ exports[`SectionLabel Without bar With title should render correctly with arabic
 >
   <h2
     class="c1"
-    dir="rtl"
-    id="test-section-label"
   >
-    بعض محتوى النص
+    <span
+      class="c2"
+      role="text"
+    >
+      <span
+        class="c3"
+        dir="rtl"
+      >
+        بعض محتوى النص
+      </span>
+    </span>
   </h2>
 </div>
 `;
@@ -472,7 +829,7 @@ exports[`SectionLabel Without bar With title should render correctly with explic
   position: relative;
 }
 
-.c1 {
+.c3 {
   font-size: 1.125rem;
   line-height: 1.375rem;
   color: #222222;
@@ -486,23 +843,66 @@ exports[`SectionLabel Without bar With title should render correctly with explic
   padding-right: 0.5rem;
 }
 
+.c1 {
+  margin: 0;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row nowrap;
+  -ms-flex-flow: row nowrap;
+  flex-flow: row nowrap;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  min-height: 44px;
+}
+
 @media (min-width:20rem) and (max-width:37.4375rem) {
-  .c1 {
+  .c3 {
     font-size: 1.25rem;
     line-height: 1.5rem;
   }
 }
 
 @media (min-width:37.5rem) {
-  .c1 {
+  .c3 {
     font-size: 1.5rem;
     line-height: 1.75rem;
   }
 }
 
 @media (min-width:37.5rem) {
-  .c1 {
+  .c3 {
     padding-right: 1rem;
+  }
+}
+
+@media (max-width:19.9375rem) {
+  .c1 {
+    padding-top: 0.3125rem;
+    padding-bottom: 0.3125rem;
+  }
+}
+
+@media (min-width:20rem) and (max-width:37.4375rem) {
+  .c1 {
+    padding-top: 0.375rem;
+    padding-bottom: 0.375rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .c1 {
+    padding: 0;
   }
 }
 
@@ -511,10 +911,18 @@ exports[`SectionLabel Without bar With title should render correctly with explic
 >
   <h2
     class="c1"
-    dir="ltr"
-    id="test-section-label"
   >
-    This is text in a SectionLabel rendering in ltr mode.
+    <span
+      class="c2"
+      role="text"
+    >
+      <span
+        class="c3"
+        dir="ltr"
+      >
+        This is text in a SectionLabel rendering in ltr mode.
+      </span>
+    </span>
   </h2>
 </div>
 `;

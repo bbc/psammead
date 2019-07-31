@@ -72,7 +72,7 @@ SectionLabelWrapper.propTypes = {
 
 const paddingDir = ({ dir }) => `padding-${dir === 'ltr' ? 'right' : 'left'}`;
 
-const PlainTitle = styled.h2`
+const Title = styled.span`
   ${({ script }) => script && getDoublePica(script)};
   color: ${C_EBON};
   background-color: ${C_WHITE};
@@ -90,7 +90,7 @@ const PlainTitle = styled.h2`
   }
 `;
 
-PlainTitle.propTypes = {
+Title.propTypes = {
   dir: oneOf(['ltr', 'rtl']).isRequired,
   script: shape(scriptPropType).isRequired,
   service: string.isRequired,
@@ -138,7 +138,7 @@ const ohGodWhyPadding = script => `
   }
 `;
 
-const OhGodWhy = styled.h2`
+const HeadingWithPadding = styled.h2`
   /* reset default margins */
   margin: 0;
 
@@ -155,6 +155,15 @@ const FlexContainer = styled.span.attrs({
   min-height: 44px;
 `;
 
+// eslint-disable-next-line react/prop-types
+const PlainTitle = ({ labelId, children: title, dir, script, service }) => (
+  <FlexContainer>
+    <Title script={script} dir={dir} id={labelId} service={service}>
+      {title}
+    </Title>
+  </FlexContainer>
+);
+
 /* eslint-disable react/prop-types */
 const LinkTitle = ({
   href,
@@ -166,25 +175,17 @@ const LinkTitle = ({
   service,
 }) => (
   /* eslint-enable react/prop-types */
-  <OhGodWhy script={script}>
-    <BlockLink href={href} labelId={labelId}>
-      {/* eslint-disable-next-line jsx-a11y/aria-role */}
-      <FlexContainer>
-        <PlainTitle
-          as="span"
-          id={labelId}
-          dir={dir}
-          script={script}
-          service={service}
-        >
-          {children}
-        </PlainTitle>
-        <IndexLinkCta script={script} service={service}>
-          {linkText}
-        </IndexLinkCta>
-      </FlexContainer>
-    </BlockLink>
-  </OhGodWhy>
+  <BlockLink href={href} labelId={labelId}>
+    {/* eslint-disable-next-line jsx-a11y/aria-role */}
+    <FlexContainer>
+      <Title id={labelId} dir={dir} script={script} service={service}>
+        {children}
+      </Title>
+      <IndexLinkCta script={script} service={service}>
+        {linkText}
+      </IndexLinkCta>
+    </FlexContainer>
+  </BlockLink>
 );
 
 const IndexLinkCta = styled.span.attrs({
@@ -214,22 +215,24 @@ const SectionLabel = ({
     bar={bar}
     visuallyHidden={visuallyHidden}
   >
-    {linkText && href ? (
-      <LinkTitle
-        script={script}
-        dir={dir}
-        labelId={labelId}
-        service={service}
-        href={href}
-        linkText={linkText}
-      >
-        {title}
-      </LinkTitle>
-    ) : (
-      <PlainTitle script={script} dir={dir} id={labelId} service={service}>
-        {title}
-      </PlainTitle>
-    )}
+    <HeadingWithPadding script={script}>
+      {linkText && href ? (
+        <LinkTitle
+          script={script}
+          dir={dir}
+          labelId={labelId}
+          service={service}
+          href={href}
+          linkText={linkText}
+        >
+          {title}
+        </LinkTitle>
+      ) : (
+        <PlainTitle script={script} dir={dir} id={labelId} service={service}>
+          {title}
+        </PlainTitle>
+      )}
+    </HeadingWithPadding>
   </SectionLabelWrapper>
 );
 
