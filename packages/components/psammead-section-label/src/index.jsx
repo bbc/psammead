@@ -10,40 +10,39 @@ import {
 import {
   GEL_SPACING,
   GEL_SPACING_DBL,
-  GEL_SPACING_TRPL,
   GEL_SPACING_QUAD,
 } from '@bbc/gel-foundations/spacings';
 import { getBrevier, getDoublePica } from '@bbc/gel-foundations/typography';
 import { C_EBON, C_PEBBLE, C_WHITE } from '@bbc/psammead-styles/colours';
 import { getSansBold, getSansRegular } from '@bbc/psammead-styles/font-styles';
 
-const halfLineHeightRem = group => group.lineHeight / 2 / 16;
+const minClickableHeightPx = 44;
+const minClickableHeightRem = minClickableHeightPx / 16;
 
-const top = script => `
+const barPosition = `
+  // @ under 600px, place bar at top of component
   top: 0;
 
-  // place at middle of text line height
+  // Over 600px, place at middle of clickable area
   ${MEDIA_QUERY_TYPOGRAPHY.LAPTOP_AND_LARGER} {
-    // top: ${halfLineHeightRem(script.doublePica.groupD)}rem;
-    top: ${22 / 16}rem;
+    top: ${minClickableHeightPx / 2 / 16}rem;
   }
 `;
 
 const SectionLabelWrapper = styled.div`
   margin-top: ${GEL_SPACING_QUAD};
-  // margin-bottom: ${GEL_SPACING_TRPL};
   position: relative;
 
   ${({ bar }) =>
     bar &&
     css`
       &::before {
+        ${barPosition};
         content: '';
         position: absolute;
         border-top: 0.0625rem solid ${C_PEBBLE};
         left: 0;
         right: 0;
-        ${({ script }) => (script ? top(script) : `top: 0`)};
         @media screen and (-ms-high-contrast: active) {
           border-color: windowText;
         }
@@ -53,6 +52,7 @@ const SectionLabelWrapper = styled.div`
   ${({ visuallyHidden }) =>
     visuallyHidden &&
     css`
+      // Hide when under 600px
       @media (max-width: ${GEL_GROUP_2_SCREEN_WIDTH_MAX}) {
         clip-path: inset(100%);
         clip: rect(1px, 1px, 1px, 1px);
@@ -70,7 +70,9 @@ SectionLabelWrapper.propTypes = {
   visuallyHidden: bool.isRequired,
 };
 
-const paddingDir = ({ dir }) => `padding-${dir === 'ltr' ? 'right' : 'left'}`;
+const paddingDir = ({ dir }) => `padding-${dir === 'rtl' ? 'left' : 'right'}`;
+const paddingReverseDir = ({ dir }) =>
+  `padding-${dir === 'rtl' ? 'right' : 'left'}`;
 
 const Title = styled.span`
   ${({ script }) => script && getDoublePica(script)};
@@ -96,41 +98,32 @@ Title.propTypes = {
   service: string.isRequired,
 };
 
-const lineHeightDiff = (a, b) => (a.lineHeight - b.lineHeight) / 16;
-const halfLineHeightDiff = (a, b) => lineHeightDiff(a, b) / 2;
-
-const seeMoreTop = script => `
-  top: ${1 +
-    lineHeightDiff(script.doublePica.groupA, script.brevier.groupA)}rem;
-
-  ${MEDIA_QUERY_TYPOGRAPHY.SMART_PHONE_ONLY} {
-    top: ${1 +
-      lineHeightDiff(script.doublePica.groupB, script.brevier.groupB)}rem;
-  }
-
-  ${MEDIA_QUERY_TYPOGRAPHY.LAPTOP_AND_LARGER} {
-    top: ${halfLineHeightDiff(script.doublePica.groupD, script.brevier.groupD) +
-      0.625}rem;
-  }
-`;
-
-const BlockLink = styled.a.attrs(props => ({
+const SectionLabelLink = styled.a.attrs(props => ({
   'aria-labelledby': props.labelId,
 }))`
+  color: ${C_EBON};
   text-decoration: none;
+
+  &:focus,
+  &:hover {
+    text-decoration: underline;
+  }
 `;
 
-const ohGodWhyPadding = script => `
+const headingPadding = script => `
   ${MEDIA_QUERY_TYPOGRAPHY.FEATURE_PHONE_ONLY} {
-    padding-top: ${1 - (44 - script.doublePica.groupA.lineHeight) / 2 / 16}rem;
-    padding-bottom: ${1 -
-      (44 - script.doublePica.groupA.lineHeight) / 2 / 16}rem;
+    // yeah this is really gross but prettier demands it :shrug:
+    padding: ${1 -
+      (minClickableHeightPx - script.doublePica.groupA.lineHeight) /
+        2 /
+        16}rem 0;
   }
 
   ${MEDIA_QUERY_TYPOGRAPHY.SMART_PHONE_ONLY} {
-    padding-top: ${1 - (44 - script.doublePica.groupB.lineHeight) / 2 / 16}rem;
-    padding-bottom: ${1 -
-      (44 - script.doublePica.groupB.lineHeight) / 2 / 16}rem;
+    padding: ${1 -
+      (minClickableHeightPx - script.doublePica.groupB.lineHeight) /
+        2 /
+        16}rem 0;
   }
 
   ${MEDIA_QUERY_TYPOGRAPHY.LAPTOP_AND_LARGER} {
@@ -142,18 +135,20 @@ const HeadingWithPadding = styled.h2`
   /* reset default margins */
   margin: 0;
 
-  ${({ script }) => ohGodWhyPadding(script)};
+  ${({ script }) => script && headingPadding(script)};
 `;
 
-const FlexContainer = styled.span.attrs({
-  role: 'text',
-})`
+const FlexContainer = styled.span`
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
   align-items: center;
-  min-height: 44px;
+  min-height: ${minClickableHeightRem}rem;
 `;
+
+const FlexTextContainer = styled(FlexContainer).attrs({
+  role: 'text',
+})``;
 
 // eslint-disable-next-line react/prop-types
 const PlainTitle = ({ labelId, children: title, dir, script, service }) => (
@@ -173,19 +168,18 @@ const LinkTitle = ({
   linkText,
   script,
   service,
-}) => (
   /* eslint-enable react/prop-types */
-  <BlockLink href={href} labelId={labelId}>
-    {/* eslint-disable-next-line jsx-a11y/aria-role */}
-    <FlexContainer>
+}) => (
+  <SectionLabelLink href={href} labelId={labelId}>
+    <FlexTextContainer>
       <Title id={labelId} dir={dir} script={script} service={service}>
         {children}
       </Title>
-      <IndexLinkCta script={script} service={service}>
+      <IndexLinkCta dir={dir} script={script} service={service}>
         {linkText}
       </IndexLinkCta>
-    </FlexContainer>
-  </BlockLink>
+    </FlexTextContainer>
+  </SectionLabelLink>
 );
 
 const IndexLinkCta = styled.span.attrs({
@@ -195,7 +189,7 @@ const IndexLinkCta = styled.span.attrs({
   ${({ service }) => getSansBold(service)};
   color: ${C_EBON};
   background-color: ${C_WHITE};
-  padding-left: 1rem;
+  ${paddingReverseDir}: ${GEL_SPACING_DBL};
   z-index: 1;
 `;
 
