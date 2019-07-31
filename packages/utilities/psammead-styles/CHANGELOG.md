@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 2.0.0 | [PR#1516](https://github.com/bbc/psammead/pull/1516) Add font-family and font-face declarations for World Service fonts. Changes `getSansItalic` to `getSansRegularItalic`. |
 | 1.2.0 | [PR#1234](https://github.com/bbc/psammead/pull/1234) Add custom CSS Grid feature detector |
 | 1.1.5 | [PR#1215](https://github.com/bbc/psammead/pull/1215) Fix `sans serif` typo |
 | 1.1.4 | [PR#1066](https://github.com/bbc/psammead/pull/1066) Fix Serif Medium font. |
