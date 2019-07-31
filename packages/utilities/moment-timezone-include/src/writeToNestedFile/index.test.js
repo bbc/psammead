@@ -18,9 +18,7 @@ describe('writeToNestedFile', () => {
     writeToNestedFile('path/to/a/place', 'filecontent');
 
     expect(mkdirp.sync).toHaveBeenCalledTimes(1);
-    expect(mkdirp.sync).toHaveBeenCalledWith(
-      path.join(__dirname, 'path/to/a/'),
-    );
+    expect(mkdirp.sync).toHaveBeenCalledWith(path.join(__dirname, 'path/to/a'));
 
     expect(fs.writeFileSync).toHaveBeenCalledTimes(1);
     expect(fs.writeFileSync).toHaveBeenCalledWith(

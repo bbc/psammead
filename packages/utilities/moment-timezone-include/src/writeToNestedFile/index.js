@@ -2,12 +2,9 @@ import fs from 'fs';
 import mkdirp from 'mkdirp';
 import path from 'path';
 
-const getDirOfPath = filePath =>
-  filePath.substring(0, filePath.lastIndexOf('/') + 1);
-
 const writeToNestedFile = (filePath, contents) => {
   const fullFilePath = path.join(__dirname, filePath);
-  const folder = getDirOfPath(fullFilePath);
+  const folder = path.dirname(fullFilePath);
 
   mkdirp.sync(folder);
 
