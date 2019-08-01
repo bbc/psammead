@@ -269,7 +269,7 @@ const StyledIndexAlsos = styled.div`
 
 const StyledIndexAlso = styled.div`
   border-top: 1px solid ${C_LUNAR};
-  padding: ${GEL_SPACING} 0;
+  padding: ${GEL_SPACING} 0 0;
 `;
 
 const StyledIndexAlsosUl = styled.ul`
@@ -281,6 +281,10 @@ const StyledIndexAlsosUl = styled.ul`
 const StyledIndexAlsosLi = styled.li`
   border-top: 1px solid ${C_LUNAR};
   padding: ${GEL_SPACING} 0;
+
+  &:last-child {
+    padding-bottom: 0;
+  }
 `;
 
 const IndexAlsosLink = styled.a`
