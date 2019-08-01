@@ -1,6 +1,6 @@
 const { exec } = require('shelljs');
 
-const whitelist = /^psammead-[a-zA-Z0-9-]*$|^gel-[a-zA-Z0-9-]*$/;
+const whitelist = /^[a-zA-Z0-9-]*$/;
 
 const checkPackage = name => {
   const dirStructure = name.split('/');
