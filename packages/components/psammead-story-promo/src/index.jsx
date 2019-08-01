@@ -1,6 +1,6 @@
 import React from 'react';
 import styled, { css } from 'styled-components';
-import { node, bool } from 'prop-types';
+import { node, bool, string, shape } from 'prop-types';
 import {
   GEL_SPACING,
   GEL_SPACING_DBL,
@@ -14,14 +14,26 @@ import {
   GEL_GROUP_5_SCREEN_WIDTH_MIN,
 } from '@bbc/gel-foundations/breakpoints';
 import {
+  getBrevier,
   getPica,
   getGreatPrimer,
   getParagon,
   getLongPrimer,
 } from '@bbc/gel-foundations/typography';
-import { C_EBON, C_SHADOW, C_METAL } from '@bbc/psammead-styles/colours';
-import { getSansRegular, getSerifBold } from '@bbc/psammead-styles/font-styles';
+import {
+  C_EBON,
+  C_LUNAR,
+  C_METAL,
+  C_SHADOW,
+} from '@bbc/psammead-styles/colours';
+import {
+  getSansRegular,
+  getSansMedium,
+  getSerifBold,
+} from '@bbc/psammead-styles/font-styles';
 import { grid } from '@bbc/psammead-styles/detection';
+import { scriptPropType } from '@bbc/gel-foundations/prop-types';
+import VisuallyHiddenText from '@bbc/psammead-visually-hidden-text';
 
 const twoOfSixColumnsMaxWidthScaleable = `33.33%`;
 // (2 / 6) * 100 = 0.3333333333 = 33.33%
@@ -248,6 +260,67 @@ export const Link = styled.a`
   }
 `;
 
+const StyledIndexAlsos = styled.div`
+  @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
+    display: none;
+  }
+`;
+
+const StyledIndexAlso = styled.div`
+  border-top: 1px solid ${C_LUNAR};
+  padding: ${GEL_SPACING} 0;
+`;
+
+const StyledIndexAlsosUl = styled.ul`
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+`;
+
+const StyledIndexAlsosLi = styled.li`
+  border-top: 1px solid ${C_LUNAR};
+  padding: ${GEL_SPACING} 0;
+`;
+
+const IndexAlsosLink = styled.a`
+  ${props => (props.script ? getBrevier(props.script) : '')};
+  ${({ service }) => getSansMedium(service)}
+  color: ${C_EBON};
+  cursor: pointer;
+  text-decoration: none;
+`;
+
+export const IndexAlsos = ({ children, offScreenText }) => (
+  <StyledIndexAlsos>
+    <VisuallyHiddenText as="h4">{offScreenText}</VisuallyHiddenText>
+    {children}
+  </StyledIndexAlsos>
+);
+
+export const IndexAlso = ({ children, script, service, url }) => {
+  return (
+    <StyledIndexAlso>
+      <IndexAlsosLink href={url} script={script} service={service}>
+        {children}
+      </IndexAlsosLink>
+    </StyledIndexAlso>
+  );
+};
+
+export const IndexAlsosUl = ({ children, ...props }) => (
+  <StyledIndexAlsosUl role="list" {...props}>
+    {children}
+  </StyledIndexAlsosUl>
+);
+
+export const IndexAlsosLi = ({ children, script, service, url }) => (
+  <StyledIndexAlsosLi role="listitem">
+    <IndexAlsosLink href={url} script={script} service={service}>
+      {children}
+    </IndexAlsosLink>
+  </StyledIndexAlsosLi>
+);
+
 const StoryPromo = ({ image, info, mediaIndicator, topStory }) => (
   <StoryPromoWrapper>
     <ImageGridItem topStory={topStory}>
@@ -274,6 +347,33 @@ StoryPromo.propTypes = {
 StoryPromo.defaultProps = {
   mediaIndicator: null,
   topStory: false,
+};
+
+IndexAlso.propTypes = {
+  children: string.isRequired,
+  script: shape(scriptPropType).isRequired,
+  service: string.isRequired,
+  url: string.isRequired,
+};
+
+IndexAlsos.propTypes = {
+  children: node.isRequired,
+  offScreenText: string,
+};
+
+IndexAlsos.defaultProps = {
+  offScreenText: null,
+};
+
+IndexAlsosUl.propTypes = {
+  children: node.isRequired,
+};
+
+IndexAlsosLi.propTypes = {
+  children: node.isRequired,
+  script: shape(scriptPropType).isRequired,
+  service: string.isRequired,
+  url: string.isRequired,
 };
 
 export default StoryPromo;

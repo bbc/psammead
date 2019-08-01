@@ -6,7 +6,48 @@ import Image from '@bbc/psammead-image';
 import Timestamp from '@bbc/psammead-timestamp';
 import MediaIndicator from '@bbc/psammead-media-indicator';
 import notes from '../README.md';
-import StoryPromo, { Headline, Summary, Link } from './index';
+import StoryPromo, {
+  Headline,
+  Summary,
+  Link,
+  IndexAlsos,
+  IndexAlso,
+  IndexAlsosUl,
+  IndexAlsosLi,
+} from './index';
+
+const relatedItems = [
+  {
+    headlines: {
+      headline: 'APC ba ta isa ta kore ni ba – Buba Galadima',
+    },
+    locators: {
+      assetUri: '/hausa/labarai-48916590',
+      cpsUrn: 'urn:bbc:content:assetUri:/hausa/labarai-48916590',
+    },
+    summary:
+      "Buba Galadima ya ce kasancewar yana daya daga cikin mutanen da suka kafa jam'iyya mai mulki ta APC, hakan ya mayar da shi dan jam'iyya na din-din-din.",
+    timestamp: 1562665827,
+    cpsType: 'MAP',
+    id: 'urn:bbc:ares::asset:hausa/labarai-48916590',
+    type: 'cps',
+  },
+  {
+    headlines: {
+      headline: 'Yaushe Obasanjo ya fara yi wa shugabannin kasa baki?',
+    },
+    locators: {
+      assetUri: '/hausa/labarai-42837051',
+      cpsUrn: 'urn:bbc:content:assetUri:/hausa/labarai-42837051',
+    },
+    summary:
+      'Cif Obasanjo ya caccaki kusan daukacin mutanen da suka yi shugabancin Najeriya saboda abin da ya kira rashin iya gudanar da mulkinsu.',
+    timestamp: 1563269515,
+    cpsType: 'STY',
+    id: 'urn:bbc:ares::asset:hausa/labarai-42837051',
+    type: 'cps',
+  },
+];
 
 /* eslint-disable react/prop-types */
 const InfoComponent = ({
@@ -56,7 +97,7 @@ const MediaIndicatorComponent = (type, service) => {
   );
 };
 
-const generateStory = ({ topStory }) =>
+const generateStory = ({ topStory, alsoItems = null }) =>
   inputProvider(
     [{ name: 'Headline' }, { name: 'Summary' }],
     ({ slotTexts: [headlineText, summaryText], script, service }) => {
@@ -78,16 +119,59 @@ const generateStory = ({ topStory }) =>
 
       const Img = buildImg();
 
+      let indexAlsos;
+      if (topStory && alsoItems) {
+        indexAlsos = (
+          <IndexAlsos offScreenText="Related content">
+            {alsoItems.length > 1 ? (
+              <IndexAlsosUl>
+                {alsoItems.map(item => {
+                  const key = item.id;
+                  const { headline } = item.headlines;
+                  const url = item.locators.assetUri;
+
+                  return (
+                    <IndexAlsosLi
+                      key={key}
+                      script={script}
+                      service={service}
+                      url={url}
+                    >
+                      {headline}
+                    </IndexAlsosLi>
+                  );
+                })}
+              </IndexAlsosUl>
+            ) : (
+              // When there is exactly one Index Also, it should not be contained within a list.
+              (() => {
+                const { headline } = alsoItems.headlines;
+                const url = alsoItems.locators.assetUri;
+
+                return (
+                  <IndexAlso script={script} service={service} url={url}>
+                    {headline}
+                  </IndexAlso>
+                );
+              })()
+            )}
+          </IndexAlsos>
+        );
+      }
+
       return (
-        <StoryPromo
-          image={Img}
-          info={Info}
-          mediaIndicator={
-            mediaType !== 'No media' &&
-            MediaIndicatorComponent(mediaType, service)
-          }
-          topStory={topStory}
-        />
+        <Fragment>
+          <StoryPromo
+            image={Img}
+            info={Info}
+            mediaIndicator={
+              mediaType !== 'No media' &&
+              MediaIndicatorComponent(mediaType, service)
+            }
+            topStory={topStory}
+          />
+          {indexAlsos}
+        </Fragment>
       );
     },
   );
@@ -101,4 +185,20 @@ storiesOf('Components|StoryPromo/StoryPromo', module)
   .add('Top story', generateStory({ topStory: true }), {
     notes,
     knobs: { escapeHTML: false },
-  });
+  })
+  .add(
+    'Index Alsos - multiple',
+    generateStory({ topStory: true, alsoItems: relatedItems }),
+    {
+      notes,
+      knobs: { escapeHTML: false },
+    },
+  )
+  .add(
+    'Index Alsos - one',
+    generateStory({ topStory: true, alsoItems: relatedItems[0] }),
+    {
+      notes,
+      knobs: { escapeHTML: false },
+    },
+  );
