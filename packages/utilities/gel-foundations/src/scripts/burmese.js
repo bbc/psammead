@@ -34,11 +34,11 @@ const burmeseTypography = {
     },
     groupB: {
       fontSize: '64',
-      lineHeight: '72',
+      lineHeight: '104',
     },
     groupD: {
       fontSize: '96',
-      lineHeight: '104',
+      lineHeight: '144',
     },
   },
   royal: {
@@ -48,11 +48,11 @@ const burmeseTypography = {
     },
     groupB: {
       fontSize: '52',
-      lineHeight: '60',
+      lineHeight: '84',
     },
     groupD: {
       fontSize: '76',
-      lineHeight: '84',
+      lineHeight: '116',
     },
   },
   foolscap: {
@@ -62,11 +62,11 @@ const burmeseTypography = {
     },
     groupB: {
       fontSize: '40',
-      lineHeight: '44',
+      lineHeight: '66',
     },
     groupD: {
       fontSize: '56',
-      lineHeight: '60',
+      lineHeight: '86',
     },
   },
   canon: {

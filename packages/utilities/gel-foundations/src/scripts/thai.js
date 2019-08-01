@@ -33,11 +33,11 @@ const thaiTypography = {
       lineHeight: '54',
     },
     groupB: {
-      fontSize: '64',
+      fontSize: '52',
       lineHeight: '72',
     },
     groupD: {
-      fontSize: '96',
+      fontSize: '76',
       lineHeight: '104',
     },
   },
@@ -47,11 +47,11 @@ const thaiTypography = {
       lineHeight: '44',
     },
     groupB: {
-      fontSize: '52',
-      lineHeight: '60',
+      fontSize: '40',
+      lineHeight: '58',
     },
     groupD: {
-      fontSize: '76',
+      fontSize: '56',
       lineHeight: '84',
     },
   },
@@ -61,12 +61,12 @@ const thaiTypography = {
       lineHeight: '36',
     },
     groupB: {
-      fontSize: '40',
-      lineHeight: '44',
+      fontSize: '36',
+      lineHeight: '54',
     },
     groupD: {
-      fontSize: '56',
-      lineHeight: '60',
+      fontSize: '50',
+      lineHeight: '76',
     },
   },
   canon: {

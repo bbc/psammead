@@ -38,11 +38,11 @@ const latinWithDiacriticsTypography = {
     },
     groupB: {
       fontSize: '64',
-      lineHeight: '72',
+      lineHeight: '78',
     },
     groupD: {
       fontSize: '96',
-      lineHeight: '104',
+      lineHeight: '116',
     },
   },
   royal: {
@@ -52,11 +52,11 @@ const latinWithDiacriticsTypography = {
     },
     groupB: {
       fontSize: '52',
-      lineHeight: '60',
+      lineHeight: '64',
     },
     groupD: {
       fontSize: '76',
-      lineHeight: '84',
+      lineHeight: '92',
     },
   },
   foolscap: {
@@ -66,11 +66,11 @@ const latinWithDiacriticsTypography = {
     },
     groupB: {
       fontSize: '40',
-      lineHeight: '44',
+      lineHeight: '48',
     },
     groupD: {
       fontSize: '56',
-      lineHeight: '60',
+      lineHeight: '68',
     },
   },
   canon: {

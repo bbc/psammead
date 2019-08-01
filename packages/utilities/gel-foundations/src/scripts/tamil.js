@@ -33,11 +33,11 @@ const tamilTypography = {
       lineHeight: '54',
     },
     groupB: {
-      fontSize: '64',
-      lineHeight: '72',
+      fontSize: '52',
+      lineHeight: '70',
     },
     groupD: {
-      fontSize: '96',
+      fontSize: '76',
       lineHeight: '104',
     },
   },
@@ -47,12 +47,12 @@ const tamilTypography = {
       lineHeight: '44',
     },
     groupB: {
-      fontSize: '52',
-      lineHeight: '60',
+      fontSize: '40',
+      lineHeight: '58',
     },
     groupD: {
-      fontSize: '76',
-      lineHeight: '84',
+      fontSize: '56',
+      lineHeight: '80',
     },
   },
   foolscap: {
@@ -61,12 +61,12 @@ const tamilTypography = {
       lineHeight: '36',
     },
     groupB: {
-      fontSize: '40',
+      fontSize: '30',
       lineHeight: '44',
     },
     groupD: {
-      fontSize: '56',
-      lineHeight: '60',
+      fontSize: '46',
+      lineHeight: '68',
     },
   },
   canon: {
