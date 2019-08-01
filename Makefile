@@ -11,7 +11,7 @@ code-coverage-before-build:
 	./cc-test-reporter before-build;
 
 code-coverage-after-build:
-	./cc-test-reporter after-build -t lcov;
+	./cc-test-reporter after-build --debug -t lcov;
 
 tests:
 	npm run build;
