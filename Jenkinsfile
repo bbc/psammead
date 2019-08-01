@@ -49,10 +49,6 @@ pipeline {
         sh 'make install'
         sh 'make code-coverage-before-build'
         sh 'make tests'
-
-        // withCredentials([string(credentialsId: 'psammead-cc-reporter-id', variable: 'CC_TEST_REPORTER_ID')]) {
-        //   sh 'make code-coverage-after-build'
-        // }
         sh 'make code-coverage-after-build'
 
         withCredentials([string(credentialsId: 'psammead-chromatic-app-code', variable: 'CHROMATIC_APP_CODE')]) {
