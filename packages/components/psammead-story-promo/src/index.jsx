@@ -261,6 +261,7 @@ export const Link = styled.a`
 `;
 
 const StyledIndexAlsos = styled.div`
+  margin: ${GEL_SPACING} 0 0;
   @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
     display: none;
   }

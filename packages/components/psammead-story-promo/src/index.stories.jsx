@@ -56,6 +56,7 @@ const InfoComponent = ({
   script,
   topStory,
   service,
+  indexAlsos,
 }) => (
   <Fragment>
     <Headline script={script} topStory={topStory} service={service}>
@@ -72,6 +73,7 @@ const InfoComponent = ({
     >
       {text('Timestamp', '12 March 2019')}
     </Timestamp>
+    {indexAlsos}
   </Fragment>
 );
 
@@ -101,24 +103,6 @@ const generateStory = ({ topStory, alsoItems = null }) =>
   inputProvider(
     [{ name: 'Headline' }, { name: 'Summary' }],
     ({ slotTexts: [headlineText, summaryText], script, service }) => {
-      const Info = (
-        <InfoComponent
-          headlineText={headlineText}
-          summaryText={summaryText}
-          script={script}
-          topStory={topStory}
-          service={service}
-        />
-      );
-
-      const mediaType = select(
-        'Media Type',
-        ['No media', 'video', 'audio', 'photogallery'],
-        'No media',
-      );
-
-      const Img = buildImg();
-
       let indexAlsos;
       if (topStory && alsoItems) {
         indexAlsos = (
@@ -147,7 +131,6 @@ const generateStory = ({ topStory, alsoItems = null }) =>
               (() => {
                 const { headline } = alsoItems.headlines;
                 const url = alsoItems.locators.assetUri;
-
                 return (
                   <IndexAlso script={script} service={service} url={url}>
                     {headline}
@@ -159,19 +142,35 @@ const generateStory = ({ topStory, alsoItems = null }) =>
         );
       }
 
+      const Info = (
+        <InfoComponent
+          headlineText={headlineText}
+          summaryText={summaryText}
+          script={script}
+          topStory={topStory}
+          service={service}
+          indexAlsos={indexAlsos}
+        />
+      );
+
+      const mediaType = select(
+        'Media Type',
+        ['No media', 'video', 'audio', 'photogallery'],
+        'No media',
+      );
+
+      const Img = buildImg();
+
       return (
-        <Fragment>
-          <StoryPromo
-            image={Img}
-            info={Info}
-            mediaIndicator={
-              mediaType !== 'No media' &&
-              MediaIndicatorComponent(mediaType, service)
-            }
-            topStory={topStory}
-          />
-          {indexAlsos}
-        </Fragment>
+        <StoryPromo
+          image={Img}
+          info={Info}
+          mediaIndicator={
+            mediaType !== 'No media' &&
+            MediaIndicatorComponent(mediaType, service)
+          }
+          topStory={topStory}
+        />
       );
     },
   );
