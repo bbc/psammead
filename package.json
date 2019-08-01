@@ -58,7 +58,7 @@
     "@storybook/addon-a11y": "^5.1.9",
     "@storybook/addon-actions": "^5.1.9",
     "@storybook/addon-knobs": "5.0.6",
-    "@storybook/addon-notes": "^5.1.9",
+    "@storybook/addon-notes": "^5.1.10",
     "@storybook/addon-viewport": "^5.1.9",
     "@storybook/react": "^5.1.9",
     "@storybook/theming": "^5.1.9",
