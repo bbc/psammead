@@ -3,7 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
-| 1.4.1  | [PR#1566](https://github.com/bbc/psammead/pull/1566) Bump @babel/preset-env, eslint-plugin-import, eslint-plugin-react, semver, @babel/cli |
+| 1.4.1  | [PR#1566](https://github.com/bbc/psammead/pull/1566) Bump @babel/preset-env, eslint-plugin-import, eslint-plugin-react, semver, @babel/cli,@babel/core, @babel/plugin-transform-runtime  |
 | 1.4.0  | [PR#1212](https://github.com/bbc/psammead/pull/1212) Add export default from babel plugin |
 | 1.3.0  | [PR#1183](https://github.com/bbc/psammead/pull/1183) Build es modules from all packages |
 | 1.2.9  | [PR#1083](https://github.com/bbc/psammead/pull/1083) Bump babel, eslint-config-airbnb and husky dependancy |
