@@ -3,4 +3,4 @@
 <!-- prettier-ignore -->
 | Version | Description |
 | ------- | ----------- |
-| 1.0.0   | [PR#1521](https://github.com/BBC-News/psammead/pull/1521) Initial creation of package |
+| 1.0.0   | [PR#1565](https://github.com/bbc/psammead/pull/1565) Initial creation of package |
