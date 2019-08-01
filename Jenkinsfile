@@ -51,7 +51,9 @@ pipeline {
         withCredentials([string(credentialsId: 'psammead-cc-reporter-id', variable: 'CC_TEST_REPORTER_ID')]) {
           sh 'make code-coverage-after-build'
         }
-        sh 'make change-scanner'
+        withCredentials([string(credentialsId: 'psammead-chromatic-app-code', variable: 'CHROMATIC_APP_CODE')]) {
+          sh 'npm run test:chromatic'
+        }
       }
       post {
         always {
