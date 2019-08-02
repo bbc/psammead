@@ -14,7 +14,7 @@ const Svg = styled.svg`
 `;
 
 const Container = styled.div`
-  background-color: black;
+  background-color: #B80000;
   padding: 1rem;
   height: 100vh;
 `;
