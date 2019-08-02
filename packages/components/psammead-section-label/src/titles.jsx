@@ -10,6 +10,9 @@ import { C_EBON, C_WHITE } from '@bbc/psammead-styles/colours';
 import { getSansBold, getSansRegular } from '@bbc/psammead-styles/font-styles';
 
 import {
+  // Yes, both the linking *and non-linking* variants of the section label
+  // space themselves according to the minimum clickable height!
+  // There is more information about this decision in the README.
   minClickableHeightRem,
   paddingDir,
   paddingReverseDir,

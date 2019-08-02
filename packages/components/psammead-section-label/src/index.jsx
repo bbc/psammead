@@ -9,6 +9,9 @@ import {
 import { GEL_SPACING_QUAD } from '@bbc/gel-foundations/spacings';
 import { C_PEBBLE } from '@bbc/psammead-styles/colours';
 
+// Yes, both the linking *and non-linking* variants of the section label
+// space themselves according to the minimum clickable height!
+// There is more information about this decision in the README.
 import { minClickableHeightPx } from './constants';
 import { PlainTitle, LinkTitle } from './titles';
 
@@ -22,9 +25,22 @@ const barPosition = `
   }
 `;
 
+const labelWrapperTopMargin = ({ script }) =>
+  script
+    ? `
+        margin-top: ${GEL_SPACING_QUAD};
+
+        ${MEDIA_QUERY_TYPOGRAPHY.LAPTOP_AND_LARGER} {
+          margin-top: ${2 -
+            (minClickableHeightPx - script.doublePica.groupD.lineHeight) /
+              16}rem;
+        }
+      `
+    : `margin-top: ${GEL_SPACING_QUAD};`;
+
 const SectionLabelWrapper = styled.div`
-  margin-top: ${GEL_SPACING_QUAD};
   position: relative;
+  ${labelWrapperTopMargin};
 
   ${({ bar }) =>
     bar &&
@@ -63,32 +79,36 @@ SectionLabelWrapper.propTypes = {
   visuallyHidden: bool.isRequired,
 };
 
-const headingPadding = script => `
+const headingSpacing = script => `
+  padding: 0;
+  margin: 0;
+
   ${MEDIA_QUERY_TYPOGRAPHY.FEATURE_PHONE_ONLY} {
-    // yeah this is really gross but prettier demands it :shrug:
-    padding: ${1 -
-      (minClickableHeightPx - script.doublePica.groupA.lineHeight) /
-        2 /
-        16}rem 0;
+    // hackery to make this component's spacing work until vertical spacing
+    // moves out of psammead
+    padding-top: ${1 -
+      (minClickableHeightPx - script.doublePica.groupA.lineHeight) / 2 / 16}rem;
+    margin-bottom: ${1 -
+      (minClickableHeightPx - script.doublePica.groupA.lineHeight) / 2 / 16}rem;
+
   }
 
   ${MEDIA_QUERY_TYPOGRAPHY.SMART_PHONE_ONLY} {
-    padding: ${1 -
-      (minClickableHeightPx - script.doublePica.groupB.lineHeight) /
-        2 /
-        16}rem 0;
+    // hackery to make this component's spacing work until vertical spacing
+    // moves out of psammead
+    padding-top: ${1 -
+      (minClickableHeightPx - script.doublePica.groupB.lineHeight) / 2 / 16}rem;
+    margin-bottom: ${1 -
+      (minClickableHeightPx - script.doublePica.groupB.lineHeight) / 2 / 16}rem;
   }
 
-  ${MEDIA_QUERY_TYPOGRAPHY.LAPTOP_AND_LARGER} {
-    padding: 0;
-  }
 `;
 
 const HeadingWithPadding = styled.h2`
   /* reset default margins */
   margin: 0;
 
-  ${({ script }) => script && headingPadding(script)};
+  ${({ script }) => script && headingSpacing(script)};
 `;
 
 const SectionLabel = ({
@@ -110,12 +130,12 @@ const SectionLabel = ({
     <HeadingWithPadding script={script}>
       {linkText && href ? (
         <LinkTitle
-          script={script}
           dir={dir}
-          labelId={labelId}
-          service={service}
           href={href}
+          labelId={labelId}
           linkText={linkText}
+          script={script}
+          service={service}
         >
           {title}
         </LinkTitle>
