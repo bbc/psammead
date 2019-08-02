@@ -93,7 +93,7 @@
     "semver": "^6.2.0",
     "shelljs": "^0.8.3",
     "storybook-chromatic": "^2.0.0",
-    "storybook-readme": "^5.0.5",
+    "storybook-readme": "^5.0.6",
     "strip-ansi": "^5.0.0",
     "stylelint": "^10.1.0",
     "stylelint-config-recommended": "^2.1.0",
