@@ -3,15 +3,32 @@ import { shouldMatchSnapshot } from '@bbc/psammead-test-helpers';
 import { latin } from '@bbc/gel-foundations/scripts';
 import MediaIndicator from '@bbc/psammead-media-indicator';
 import { render } from '@testing-library/react';
-import StoryPromo, { Headline, Summary, Link } from './index';
+import VisuallyHiddenText from '@bbc/psammead-visually-hidden-text';
+import StoryPromo, { Headline, Summary, Link, LiveLabel } from './index';
 
 const Image = <img src="https://foobar.com/image.png" alt="Alt text" />;
 
+/* eslint-disable-next-line react/prop-types */
+const LiveComponent = ({ headline, service }) => (
+  /* eslint-disable-next-line jsx-a11y/aria-role */
+  <span role="text">
+    <LiveLabel service={service}>LIVE</LiveLabel>
+    <VisuallyHiddenText lang="en-GB">Live, </VisuallyHiddenText>
+    {headline}
+  </span>
+);
+
 // eslint-disable-next-line react/prop-types
-const Info = ({ topStory }) => (
+const Info = ({ topStory, isLive }) => (
   <Fragment>
     <Headline script={latin} topStory={topStory} service="news">
-      <Link href="https://www.bbc.co.uk/news">The headline of the promo</Link>
+      <Link href="https://www.bbc.co.uk/news">
+        {isLive ? (
+          <LiveComponent headline="The live promo headline" service="news" />
+        ) : (
+          'The headline of the promo'
+        )}
+      </Link>
     </Headline>
     <Summary script={latin} topStory={topStory} service="news">
       The summary of the promo
@@ -28,6 +45,10 @@ describe('StoryPromo', () => {
   shouldMatchSnapshot(
     'should render correctly',
     <StoryPromo image={Image} info={Info({ topStory: false })} />,
+  );
+  shouldMatchSnapshot(
+    'should render Live promo correctly',
+    <StoryPromo image={Image} info={Info({ topStory: false, isLive: true })} />,
   );
 });
 
