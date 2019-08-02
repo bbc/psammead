@@ -7,5 +7,5 @@
   "packages": [
     "packages/*/*"
   ],
-  "version": "independent"
+  "version": "4.3.0"
 }
