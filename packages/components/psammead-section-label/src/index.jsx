@@ -101,7 +101,6 @@ const headingSpacing = script => `
     margin-bottom: ${1 -
       (minClickableHeightPx - script.doublePica.groupB.lineHeight) / 2 / 16}rem;
   }
-
 `;
 
 const HeadingWithPadding = styled.h2`

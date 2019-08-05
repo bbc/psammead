@@ -76,6 +76,7 @@ const IndexLinkCta = styled.span.attrs({
   color: ${C_EBON};
   background-color: ${C_WHITE};
 
+  white-space: nowrap;
   ${paddingReverseDir}: ${GEL_SPACING_DBL};
   z-index: 1;
 `;

@@ -172,6 +172,7 @@ exports[`SectionLabel With bar With linking title should render correctly 1`] = 
   font-style: normal;
   color: #222222;
   background-color: #FFFFFF;
+  white-space: nowrap;
   padding-left: 1rem;
   z-index: 1;
 }
@@ -351,6 +352,7 @@ exports[`SectionLabel With bar With linking title should render correctly with a
   font-style: normal;
   color: #222222;
   background-color: #FFFFFF;
+  white-space: nowrap;
   padding-right: 1rem;
   z-index: 1;
 }
@@ -530,6 +532,7 @@ exports[`SectionLabel With bar With linking title should render correctly with e
   font-style: normal;
   color: #222222;
   background-color: #FFFFFF;
+  white-space: nowrap;
   padding-left: 1rem;
   z-index: 1;
 }
@@ -709,6 +712,7 @@ exports[`SectionLabel With bar With linking title should render correctly with e
   font-style: normal;
   color: #222222;
   background-color: #FFFFFF;
+  white-space: nowrap;
   padding-left: 1rem;
   z-index: 1;
 }
@@ -1392,6 +1396,7 @@ exports[`SectionLabel Without bar With linking title should render correctly 1`]
   font-style: normal;
   color: #222222;
   background-color: #FFFFFF;
+  white-space: nowrap;
   padding-left: 1rem;
   z-index: 1;
 }
@@ -1550,6 +1555,7 @@ exports[`SectionLabel Without bar With linking title should render correctly wit
   font-style: normal;
   color: #222222;
   background-color: #FFFFFF;
+  white-space: nowrap;
   padding-right: 1rem;
   z-index: 1;
 }
@@ -1708,6 +1714,7 @@ exports[`SectionLabel Without bar With linking title should render correctly wit
   font-style: normal;
   color: #222222;
   background-color: #FFFFFF;
+  white-space: nowrap;
   padding-left: 1rem;
   z-index: 1;
 }
