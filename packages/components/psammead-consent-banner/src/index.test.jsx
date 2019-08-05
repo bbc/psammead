@@ -22,7 +22,7 @@ const rtlProps = {
   script: arabic,
   service: 'arabic',
   text: <p>مرحبا</p>,
-  title: "عنوان",
+  title: 'عنوان',
 };
 
 describe('ConsentBanner', () => {

@@ -2,7 +2,7 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { withKnobs } from '@storybook/addon-knobs';
 import { dirDecorator, inputProvider } from '@bbc/psammead-storybook-helpers';
-import { string } from 'prop-types';
+import { oneOf, string } from 'prop-types';
 import { ConsentBanner, ConsentBannerText } from '.';
 import notes from '../README.md';
 
@@ -16,14 +16,15 @@ const Reject = rejectText => (
   <a href="https://www.bbc.co.uk/usingthebbc/your-data-matters">{rejectText}</a>
 );
 
-const Text = ({ script, service, shortText, text }) => (
-  <ConsentBannerText script={script} service={service}>
+const Text = ({ dir, script, service, shortText, text }) => (
+  <ConsentBannerText dir={dir} script={script} service={service}>
     {`${text} `}
     <a href="https://www.bbc.com/news">{shortText}</a>
   </ConsentBannerText>
 );
 
 Text.propTypes = {
+  dir: oneOf(['ltr', 'rtl']).isRequired,
   script: string.isRequired,
   service: string.isRequired,
   shortText: string.isRequired,
