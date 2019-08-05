@@ -1,7 +1,7 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { withKnobs } from '@storybook/addon-knobs';
-import { inputProvider } from '@bbc/psammead-storybook-helpers';
+import { dirDecorator, inputProvider } from '@bbc/psammead-storybook-helpers';
 import { string } from 'prop-types';
 import { ConsentBanner, ConsentBannerText } from '.';
 import notes from '../README.md';
@@ -32,6 +32,7 @@ Text.propTypes = {
 
 storiesOf('Components|ConsentBanner', module)
   .addDecorator(withKnobs)
+  .addDecorator(dirDecorator)
   .add(
     'default',
     inputProvider(
@@ -46,10 +47,11 @@ storiesOf('Components|ConsentBanner', module)
         },
       ],
 
-      ({ slotTexts: [title, text], script, service }) => {
+      ({ slotTexts: [title, text], dir, script, service }) => {
         const shortText = text.trim().split(' ')[0];
         return (
           <ConsentBanner
+            dir={dir}
             title={title}
             text={Text({ script, service, text, shortText })}
             accept={Accept(shortText)}

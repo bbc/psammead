@@ -1,5 +1,5 @@
 import React from 'react';
-import { string, element, bool, shape } from 'prop-types';
+import { string, element, bool, oneOf, shape } from 'prop-types';
 import styled from 'styled-components';
 import { scriptPropType } from '@bbc/gel-foundations/prop-types';
 import {
@@ -60,8 +60,8 @@ const Title = styled.h2`
 
   @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
     width: 22%;
-    margin-right: 3.5%;
-    float: left;
+    ${({ dir }) => `${dir === 'ltr' ? 'margin-right' : 'margin-left'}:3.5%;`};
+    float: ${({ dir }) => (dir === 'ltr' ? 'left' : 'right')};
   }
 `;
 
@@ -82,7 +82,7 @@ const Options = styled.ul`
 
   @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
     width: 18%;
-    float: right;
+    float: ${({ dir }) => (dir === 'ltr' ? 'right' : 'left')};
   }
 `;
 
@@ -99,7 +99,7 @@ export const ConsentBannerText = styled.p`
 
   @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
     margin: 0;
-    float: left;
+    float: ${({ dir }) => (dir === 'ltr' ? 'left' : 'right')};
     width: 53%;
   }
 
@@ -136,6 +136,7 @@ const ListItem = styled.li`
 `;
 
 export const ConsentBanner = ({
+  dir,
   title,
   text,
   accept,
@@ -145,19 +146,26 @@ export const ConsentBanner = ({
   script,
   service,
 }) => (
-  <Wrapper id={id} hidden={hidden} service={service}>
-    <CenterWrapper>
-      <Title script={script}>{title}</Title>
+  <Wrapper dir={dir} hidden={hidden} id={id} service={service}>
+    <CenterWrapper dir={dir}>
+      <Title dir={dir} script={script}>
+        {title}
+      </Title>
       {text}
-      <Options script={script}>
-        <ListItem script={script}>{accept}</ListItem>
-        <ListItem script={script}>{reject}</ListItem>
+      <Options dir={dir} script={script}>
+        <ListItem dir={dir} script={script}>
+          {accept}
+        </ListItem>
+        <ListItem dir={dir} script={script}>
+          {reject}
+        </ListItem>
       </Options>
     </CenterWrapper>
   </Wrapper>
 );
 
 ConsentBanner.propTypes = {
+  dir: oneOf(['ltr', 'rtl']).isRequired,
   title: string.isRequired,
   text: element.isRequired,
   accept: element.isRequired,
