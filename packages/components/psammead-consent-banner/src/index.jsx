@@ -65,7 +65,7 @@ const Title = styled.h2`
 
   @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
     float: ${ltrRtl('left', 'right')};
-    ${ltrRtl('margin-right', 'margin-left')+': 3.5%;'}
+    ${ltrRtl('margin-right: 3.5%;', 'margin-left: 3.5%;')}
     width: 22%;
   }
 `;
