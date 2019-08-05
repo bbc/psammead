@@ -1,6 +1,6 @@
 import React from 'react';
 import styled, { css } from 'styled-components';
-import { node, bool, string, shape } from 'prop-types';
+import { node, bool, string, oneOf, shape } from 'prop-types';
 import {
   GEL_SPACING,
   GEL_SPACING_DBL,
@@ -24,11 +24,13 @@ import {
   C_EBON,
   C_LUNAR,
   C_METAL,
+  C_POSTBOX,
   C_SHADOW,
 } from '@bbc/psammead-styles/colours';
 import {
   getSansRegular,
   getSansMedium,
+  getSansBold,
   getSerifBold,
 } from '@bbc/psammead-styles/font-styles';
 import { grid } from '@bbc/psammead-styles/detection';
@@ -321,6 +323,23 @@ export const IndexAlsosLi = ({ children, script, service, url }) => (
     </IndexAlsosLink>
   </StyledIndexAlsosLi>
 );
+
+export const LiveLabel = styled.span.attrs({ 'aria-hidden': 'true' })`
+  color: ${C_POSTBOX};
+  ${({ service }) => getSansBold(service)}
+  display: inline-block;
+  ${({ dir }) =>
+    dir === 'rtl' ? 'margin-left: 0.5rem;' : 'margin-right: 0.5rem;'}
+`;
+
+LiveLabel.propTypes = {
+  service: string.isRequired,
+  dir: oneOf(['rtl', 'ltr']),
+};
+
+LiveLabel.defaultProps = {
+  dir: 'ltr',
+};
 
 const StoryPromo = ({ image, info, mediaIndicator, topStory }) => (
   <StoryPromoWrapper>

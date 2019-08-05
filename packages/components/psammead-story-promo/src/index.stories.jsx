@@ -1,15 +1,17 @@
 import React, { Fragment } from 'react';
 import { storiesOf } from '@storybook/react';
-import { withKnobs, text, select } from '@storybook/addon-knobs';
+import { withKnobs, text, boolean, select } from '@storybook/addon-knobs';
 import { inputProvider } from '@bbc/psammead-storybook-helpers';
 import Image from '@bbc/psammead-image';
 import Timestamp from '@bbc/psammead-timestamp';
 import MediaIndicator from '@bbc/psammead-media-indicator';
+import VisuallyHiddenText from '@bbc/psammead-visually-hidden-text';
 import notes from '../README.md';
 import StoryPromo, {
   Headline,
   Summary,
   Link,
+  LiveLabel,
   IndexAlsos,
   IndexAlso,
   IndexAlsosUl,
@@ -49,6 +51,18 @@ const relatedItems = [
   },
 ];
 
+/* eslint-disable-next-line react/prop-types */
+const LiveComponent = ({ headline, service, dir }) => (
+  /* eslint-disable-next-line jsx-a11y/aria-role */
+  <span role="text">
+    <LiveLabel service={service} dir={dir}>
+      LIVE
+    </LiveLabel>
+    <VisuallyHiddenText lang="en-GB">Live, </VisuallyHiddenText>
+    {headline}
+  </span>
+);
+
 /* eslint-disable react/prop-types */
 const InfoComponent = ({
   headlineText,
@@ -56,11 +70,19 @@ const InfoComponent = ({
   script,
   topStory,
   service,
+  isLive,
+  dir,
   indexAlsos,
 }) => (
   <Fragment>
     <Headline script={script} topStory={topStory} service={service}>
-      <Link href="https://www.bbc.co.uk/news">{headlineText}</Link>
+      <Link href="https://www.bbc.co.uk/news">
+        {isLive ? (
+          <LiveComponent service={service} dir={dir} headline={headlineText} />
+        ) : (
+          headlineText
+        )}
+      </Link>
     </Headline>
     <Summary script={script} topStory={topStory} service={service}>
       {summaryText}
@@ -102,7 +124,7 @@ const MediaIndicatorComponent = (type, service) => {
 const generateStory = ({ topStory, alsoItems = null }) =>
   inputProvider(
     [{ name: 'Headline' }, { name: 'Summary' }],
-    ({ slotTexts: [headlineText, summaryText], script, service }) => {
+    ({ slotTexts: [headlineText, summaryText], script, service, dir }) => {
       let indexAlsos;
       if (topStory && alsoItems) {
         indexAlsos = (
@@ -149,6 +171,8 @@ const generateStory = ({ topStory, alsoItems = null }) =>
           script={script}
           topStory={topStory}
           service={service}
+          isLive={boolean('isLive', false)}
+          dir={dir}
           indexAlsos={indexAlsos}
         />
       );
