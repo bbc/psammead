@@ -1,4 +1,74 @@
 const tamilTypography = {
+  atlas: {
+    groupA: {
+      fontSize: '78',
+      lineHeight: '84',
+    },
+    groupB: {
+      fontSize: '96',
+      lineHeight: '104',
+    },
+    groupD: {
+      fontSize: '140',
+      lineHeight: '148',
+    },
+  },
+  elephant: {
+    groupA: {
+      fontSize: '60',
+      lineHeight: '64',
+    },
+    groupB: {
+      fontSize: '78',
+      lineHeight: '84',
+    },
+    groupD: {
+      fontSize: '116',
+      lineHeight: '124',
+    },
+  },
+  imperial: {
+    groupA: {
+      fontSize: '50',
+      lineHeight: '54',
+    },
+    groupB: {
+      fontSize: '52',
+      lineHeight: '70',
+    },
+    groupD: {
+      fontSize: '76',
+      lineHeight: '104',
+    },
+  },
+  royal: {
+    groupA: {
+      fontSize: '40',
+      lineHeight: '44',
+    },
+    groupB: {
+      fontSize: '40',
+      lineHeight: '58',
+    },
+    groupD: {
+      fontSize: '56',
+      lineHeight: '80',
+    },
+  },
+  foolscap: {
+    groupA: {
+      fontSize: '32',
+      lineHeight: '36',
+    },
+    groupB: {
+      fontSize: '30',
+      lineHeight: '44',
+    },
+    groupD: {
+      fontSize: '46',
+      lineHeight: '68',
+    },
+  },
   canon: {
     groupA: {
       fontSize: '22',
