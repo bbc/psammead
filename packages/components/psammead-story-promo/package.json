@@ -1,6 +1,6 @@
 {
   "name": "@bbc/psammead-story-promo",
-  "version": "2.2.1",
+  "version": "2.2.0",
   "main": "dist/index.js",
   "module": "esm/index.js",
   "sideEffects": false,
@@ -23,6 +23,7 @@
     "@bbc/psammead-styles": "^1.2.0"
   },
   "devDependencies": {
+    "@bbc/psammead-visually-hidden-text": "^1.1.0",
     "@bbc/psammead-image": "^1.0.6",
     "@bbc/psammead-media-indicator": "^2.3.1",
     "@bbc/psammead-storybook-helpers": "^3.1.3",

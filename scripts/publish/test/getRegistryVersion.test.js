@@ -48,7 +48,7 @@ describe(`Publish Script - getRegistry`, () => {
 
     const getRegistry = require('../src/getRegistryVersion');
 
-    expect(getRegistry('foobar')).toEqual('-1');
+    expect(getRegistry('fo^£ob/.ar')).toEqual('-1');
   });
 
   // Example name = 'psammead versions -json; echo I can inject code here; npm view psammead'
