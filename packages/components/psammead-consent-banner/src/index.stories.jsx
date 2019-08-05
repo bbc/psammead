@@ -54,7 +54,7 @@ storiesOf('Components|ConsentBanner', module)
           <ConsentBanner
             dir={dir}
             title={title}
-            text={Text({ script, service, text, shortText })}
+            text={Text({ dir, script, service, text, shortText })}
             accept={Accept(shortText)}
             reject={Reject(shortText)}
             script={script}
