@@ -20,7 +20,7 @@
   "homepage": "https://github.com/bbc/psammead/blob/latest/packages/utilities/psammead-storybook-helpers/README.md",
   "keywords": ["bbc", "utilities", "storybook", "language", "knobs"],
   "dependencies": {
-    "@bbc/gel-foundations": "^3.3.2",
+    "@bbc/gel-foundations": "^3.2.0",
     "react-helmet": "^5.2.1"
   },
   "devDependencies": {
