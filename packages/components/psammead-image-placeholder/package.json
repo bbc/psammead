@@ -19,11 +19,11 @@
   },
   "homepage": "https://github.com/bbc/psammead/blob/latest/packages/components/psammead-image-placeholder/README.md",
   "dependencies": {
-    "@bbc/psammead-assets": "^1.0.6",
-    "@bbc/psammead-styles": "^1.2.0"
+    "@bbc/psammead-assets": "^1.1.1",
+    "@bbc/psammead-styles": "^2.0.1"
   },
   "devDependencies": {
-    "@bbc/psammead-test-helpers": "^1.0.2",
+    "@bbc/psammead-test-helpers": "^1.1.0",
     "react": "^16.8.6",
     "styled-components": "^4.3.2"
   },
