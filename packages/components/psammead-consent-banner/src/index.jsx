@@ -1,6 +1,6 @@
 import React from 'react';
 import { string, element, bool, oneOf, shape } from 'prop-types';
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 import { scriptPropType } from '@bbc/gel-foundations/prop-types';
 import {
   C_CONSENT_BACKGROUND,
@@ -21,6 +21,11 @@ import {
   GEL_SPACING,
 } from '@bbc/gel-foundations/spacings';
 import { getSansRegular } from '@bbc/psammead-styles/font-styles';
+
+const ltrRtl = (ltrValue, rtlValue) =>
+  css`
+    ${({ dir }) => (dir === 'ltr' ? ltrValue : rtlValue)};
+  `;
 
 const Wrapper = styled.div`
 ${({ service }) => getSansRegular(service)}
@@ -60,8 +65,8 @@ const Title = styled.h2`
 
   @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
     width: 22%;
-    ${({ dir }) => `${dir === 'ltr' ? 'margin-right' : 'margin-left'}:3.5%;`};
-    float: ${({ dir }) => (dir === 'ltr' ? 'left' : 'right')};
+    ${`${ltrRtl('margin-right', 'margin-left')}: 3.5%;`}
+    float: ${ltrRtl('left', 'right')};
   }
 `;
 
@@ -82,7 +87,7 @@ const Options = styled.ul`
 
   @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
     width: 18%;
-    float: ${({ dir }) => (dir === 'ltr' ? 'right' : 'left')};
+    float: ${ltrRtl('right', 'left')};
   }
 `;
 
@@ -99,7 +104,7 @@ export const ConsentBannerText = styled.p`
 
   @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
     margin: 0;
-    float: ${({ dir }) => (dir === 'ltr' ? 'left' : 'right')};
+    float: ${ltrRtl('left', 'right')};
     width: 53%;
   }
 
