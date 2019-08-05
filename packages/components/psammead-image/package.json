@@ -1,6 +1,6 @@
 {
   "name": "@bbc/psammead-image",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "main": "dist/index.js",
   "module": "esm/index.js",
   "sideEffects": false,
@@ -19,8 +19,8 @@
   },
   "homepage": "https://github.com/bbc/psammead/blob/latest/packages/components/psammead-image/README.md",
   "devDependencies": {
-    "@bbc/psammead-assets": "^1.0.6",
-    "@bbc/psammead-test-helpers": "^1.0.2",
+    "@bbc/psammead-assets": "^1.1.1",
+    "@bbc/psammead-test-helpers": "^1.1.0",
     "prop-types": "^15.6.2",
     "react": "^16.8.6",
     "styled-components": "^4.3.2"
@@ -30,8 +30,5 @@
     "react": "^16.8.6",
     "styled-components": "^4.3.2"
   },
-  "keywords": [
-    "bbc",
-    "image"
-  ]
+  "keywords": ["bbc", "image"]
 }
