@@ -1,6 +1,6 @@
 import React from 'react';
 import styled, { css } from 'styled-components';
-import { node, bool } from 'prop-types';
+import { node, bool, string, oneOf } from 'prop-types';
 import {
   GEL_SPACING,
   GEL_SPACING_DBL,
@@ -19,8 +19,17 @@ import {
   getParagon,
   getLongPrimer,
 } from '@bbc/gel-foundations/typography';
-import { C_EBON, C_SHADOW, C_METAL } from '@bbc/psammead-styles/colours';
-import { getSansRegular, getSerifBold } from '@bbc/psammead-styles/font-styles';
+import {
+  C_EBON,
+  C_SHADOW,
+  C_METAL,
+  C_POSTBOX,
+} from '@bbc/psammead-styles/colours';
+import {
+  getSansRegular,
+  getSerifBold,
+  getSansBold,
+} from '@bbc/psammead-styles/font-styles';
 import { grid } from '@bbc/psammead-styles/detection';
 
 const twoOfSixColumnsMaxWidthScaleable = `33.33%`;
@@ -247,6 +256,23 @@ export const Link = styled.a`
     color: ${C_METAL};
   }
 `;
+
+export const LiveLabel = styled.span.attrs({ 'aria-hidden': 'true' })`
+  color: ${C_POSTBOX};
+  ${({ service }) => getSansBold(service)}
+  display: inline-block;
+  ${({ dir }) =>
+    dir === 'rtl' ? 'margin-left: 0.5rem;' : 'margin-right: 0.5rem;'}
+`;
+
+LiveLabel.propTypes = {
+  service: string.isRequired,
+  dir: oneOf(['rtl', 'ltr']),
+};
+
+LiveLabel.defaultProps = {
+  dir: 'ltr',
+};
 
 const StoryPromo = ({ image, info, mediaIndicator, topStory }) => (
   <StoryPromoWrapper>
