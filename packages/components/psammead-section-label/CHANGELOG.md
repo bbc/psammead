@@ -4,6 +4,7 @@
 | Version | Description |
 |---------|-------------|
 | 2.2.0 | [PR#1534](https://github.com/bbc/psammead/pull/1534) Add linking variant of section label |
+| 2.1.3 | [PR#1598](https://github.com/bbc/psammead/pull/1598) Bump dependencies |
 | 2.1.2 | [PR#1517](https://github.com/bbc/psammead/pull/1517) Clear unit test warnings |
 | 2.1.1 | [PR#1365](https://github.com/bbc/psammead/pull/1365) Bump psammead-styles to 1.2.0 |
 | 2.1.0 | [PR#1233](https://github.com/bbc/psammead/pull/1233) Add ESM modules entry |

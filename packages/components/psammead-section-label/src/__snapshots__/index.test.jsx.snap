@@ -301,7 +301,7 @@ exports[`SectionLabel With bar With linking title should render correctly with a
   z-index: 1;
   font-size: 1.5rem;
   line-height: 2rem;
-  font-family: NassimPersian,Arial,Verdana,Geneva,Helvetica,sans-serif;
+  font-family: "BBC Nassim Persian",Arial,Verdana,Geneva,Helvetica,sans-serif;
   font-weight: 400;
   font-style: normal;
   color: #222222;
@@ -342,7 +342,7 @@ exports[`SectionLabel With bar With linking title should render correctly with a
 }
 
 .c6 {
-  font-family: NassimPersian,Arial,Verdana,Geneva,Helvetica,sans-serif;
+  font-family: "BBC Nassim Persian",Arial,Verdana,Geneva,Helvetica,sans-serif;
   font-weight: 700;
   font-style: normal;
   font-size: 1rem;
@@ -977,7 +977,7 @@ exports[`SectionLabel With bar With plain title should render correctly with ara
   z-index: 1;
   font-size: 1.5rem;
   line-height: 2rem;
-  font-family: NassimPersian,Arial,Verdana,Geneva,Helvetica,sans-serif;
+  font-family: "BBC Nassim Persian",Arial,Verdana,Geneva,Helvetica,sans-serif;
   font-weight: 400;
   font-style: normal;
   color: #222222;
@@ -1495,7 +1495,7 @@ exports[`SectionLabel Without bar With linking title should render correctly wit
   z-index: 1;
   font-size: 1.5rem;
   line-height: 2rem;
-  font-family: NassimPersian,Arial,Verdana,Geneva,Helvetica,sans-serif;
+  font-family: "BBC Nassim Persian",Arial,Verdana,Geneva,Helvetica,sans-serif;
   font-weight: 400;
   font-style: normal;
   color: #222222;
@@ -1536,7 +1536,7 @@ exports[`SectionLabel Without bar With linking title should render correctly wit
 }
 
 .c5 {
-  font-family: NassimPersian,Arial,Verdana,Geneva,Helvetica,sans-serif;
+  font-family: "BBC Nassim Persian",Arial,Verdana,Geneva,Helvetica,sans-serif;
   font-weight: 700;
   font-style: normal;
   font-size: 1rem;
@@ -1919,7 +1919,7 @@ exports[`SectionLabel Without bar With plain title should render correctly with 
   z-index: 1;
   font-size: 1.5rem;
   line-height: 2rem;
-  font-family: NassimPersian,Arial,Verdana,Geneva,Helvetica,sans-serif;
+  font-family: "BBC Nassim Persian",Arial,Verdana,Geneva,Helvetica,sans-serif;
   font-weight: 400;
   font-style: normal;
   color: #222222;
