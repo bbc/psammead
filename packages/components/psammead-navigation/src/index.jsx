@@ -177,7 +177,12 @@ export const NavigationLi = ({
   active,
   service,
 }) => (
-  <StyledListItem role="listitem" dir={dir}>
+  <StyledListItem
+    role="listitem"
+    dir={dir}
+    id={`nav-${url}`}
+    data-info={`nav-${url}`}
+  >
     {active && currentPageText ? (
       <StyledLink
         href={url}
