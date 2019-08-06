@@ -21,6 +21,7 @@ export news from './svgs/news';
 export pashto from './svgs/pashto';
 export persian from './svgs/persian';
 export pidgin from './svgs/pidgin';
+export portuguese from './svgs/portuguese';
 export punjabi from './svgs/punjabi';
 export russian from './svgs/russian';
 export serbian from './svgs/serbian';

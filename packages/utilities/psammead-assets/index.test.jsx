@@ -29,6 +29,7 @@ const svgsExpectedExports = {
   pashto: 'object',
   persian: 'object',
   pidgin: 'object',
+  portuguese: 'object',
   punjabi: 'object',
   russian: 'object',
   serbian: 'object',
