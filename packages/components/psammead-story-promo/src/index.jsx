@@ -305,6 +305,15 @@ const StyledIndexAlsosLink = styled.a`
   color: ${C_EBON};
   cursor: pointer;
   text-decoration: none;
+
+  &:hover,
+  &:focus {
+    text-decoration: underline;
+  }
+
+  &:visited {
+    color: ${C_METAL};
+  }
 `;
 
 const StyledIndexAlsosUl = styled.ul`
