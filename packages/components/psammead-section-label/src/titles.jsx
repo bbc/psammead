@@ -3,20 +3,32 @@ import styled from 'styled-components';
 import { oneOf, shape, string } from 'prop-types';
 
 import { scriptPropType } from '@bbc/gel-foundations/prop-types';
-import { GEL_GROUP_3_SCREEN_WIDTH_MIN } from '@bbc/gel-foundations/breakpoints';
+import {
+  GEL_GROUP_3_SCREEN_WIDTH_MIN,
+  MEDIA_QUERY_TYPOGRAPHY,
+} from '@bbc/gel-foundations/breakpoints';
 import { GEL_SPACING, GEL_SPACING_DBL } from '@bbc/gel-foundations/spacings';
-import { getBrevier, getDoublePica } from '@bbc/gel-foundations/typography';
+import {
+  getBrevier,
+  getLongPrimer,
+  getDoublePica,
+} from '@bbc/gel-foundations/typography';
 import { C_EBON, C_WHITE } from '@bbc/psammead-styles/colours';
 import { getSansBold, getSansRegular } from '@bbc/psammead-styles/font-styles';
 
 import {
-  // Yes, both the linking *and non-linking* variants of the section label
-  // space themselves according to the minimum clickable height!
-  // There is more information about this decision in the README.
   minClickableHeightRem,
   paddingDir,
   paddingReverseDir,
 } from './constants';
+
+const titleMargins = `
+  margin: 1rem 0;
+
+  ${MEDIA_QUERY_TYPOGRAPHY.LAPTOP_AND_LARGER} {
+    margin: 0;
+  }
+`;
 
 const Title = styled.span`
   display: inline-block;
@@ -27,8 +39,7 @@ const Title = styled.span`
   color: ${C_EBON};
   background-color: ${C_WHITE};
 
-  /* Unset the browser's default margins. */
-  margin: 0;
+  ${titleMargins};
 
   ${paddingDir}: ${GEL_SPACING};
 
@@ -70,8 +81,14 @@ const SectionLabelLink = styled.a.attrs(props => ({
 const IndexLinkCta = styled.span.attrs({
   'aria-hidden': 'true',
 })`
-  ${({ script }) => script && getBrevier(script)};
   ${({ service }) => getSansBold(service)};
+  ${({ script }) => script && getBrevier(script)};
+
+  ${MEDIA_QUERY_TYPOGRAPHY.LAPTOP_AND_LARGER} {
+    ${({ script }) => script && getLongPrimer(script)};
+  }
+
+  ${titleMargins};
 
   color: ${C_EBON};
   background-color: ${C_WHITE};
