@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import styled, { css } from 'styled-components';
 import { node, bool, string, oneOf, shape } from 'prop-types';
 import {
@@ -235,6 +235,9 @@ const TextGridItem = styled.div`
   }
 `;
 
+/*
+ *  Link
+ */
 export const Link = styled.a`
   position: static;
   color: ${C_EBON};
@@ -262,68 +265,9 @@ export const Link = styled.a`
   }
 `;
 
-const StyledIndexAlsos = styled.div`
-  margin: ${GEL_SPACING_DBL} 0 ${GEL_SPACING};
-  @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
-    display: none;
-  }
-`;
-
-const StyledIndexAlso = styled.div`
-  border-top: 1px solid ${C_LUNAR};
-  padding: ${GEL_SPACING} 0;
-`;
-
-const StyledIndexAlsosUl = styled.ul`
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-`;
-
-const StyledIndexAlsosLi = styled.li`
-  border-top: 1px solid ${C_LUNAR};
-  padding: ${GEL_SPACING} 0;
-`;
-
-const IndexAlsosLink = styled.a`
-  ${props => (props.script ? getBrevier(props.script) : '')};
-  ${({ service }) => getSansMedium(service)}
-  color: ${C_EBON};
-  cursor: pointer;
-  text-decoration: none;
-`;
-
-export const IndexAlsos = ({ children, offScreenText }) => (
-  <StyledIndexAlsos>
-    <VisuallyHiddenText as="h4">{offScreenText}</VisuallyHiddenText>
-    {children}
-  </StyledIndexAlsos>
-);
-
-export const IndexAlso = ({ children, script, service, url }) => {
-  return (
-    <StyledIndexAlso>
-      <IndexAlsosLink href={url} script={script} service={service}>
-        {children}
-      </IndexAlsosLink>
-    </StyledIndexAlso>
-  );
-};
-
-export const IndexAlsosUl = ({ children, ...props }) => (
-  <StyledIndexAlsosUl role="list" {...props}>
-    {children}
-  </StyledIndexAlsosUl>
-);
-
-export const IndexAlsosLi = ({ children, script, service, url }) => (
-  <StyledIndexAlsosLi role="listitem">
-    <IndexAlsosLink href={url} script={script} service={service}>
-      {children}
-    </IndexAlsosLink>
-  </StyledIndexAlsosLi>
-);
-
+/*
+ *  Live Label
+ */
 export const LiveLabel = styled.span.attrs({ 'aria-hidden': 'true' })`
   color: ${C_POSTBOX};
   ${({ service }) => getSansBold(service)}
@@ -341,6 +285,124 @@ LiveLabel.defaultProps = {
   dir: 'ltr',
 };
 
+/*
+ *  Index Alsos
+ */
+const StyledIndexAlsos = styled.div`
+  margin: ${GEL_SPACING_DBL} 0 ${GEL_SPACING};
+  @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
+    display: none;
+  }
+`;
+
+const StyledIndexAlso = styled.div`
+  border-top: 1px solid ${C_LUNAR};
+  padding: ${GEL_SPACING} 0;
+`;
+
+const StyledIndexAlsosLink = styled.a`
+  ${props => (props.script ? getBrevier(props.script) : '')};
+  ${({ service }) => getSansMedium(service)}
+  color: ${C_EBON};
+  cursor: pointer;
+  text-decoration: none;
+`;
+
+const StyledIndexAlsosUl = styled.ul`
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+`;
+
+const StyledIndexAlsosLi = styled.li`
+  border-top: 1px solid ${C_LUNAR};
+  padding: ${GEL_SPACING} 0;
+`;
+
+const IndexAlsosMediaIndicator = styled.div`
+  display: inline-block;
+`;
+
+const IndexAlsosText = styled.div`
+  display: inline-block;
+`;
+
+export const IndexAlsos = ({ children, offScreenText }) => (
+  <StyledIndexAlsos>
+    <VisuallyHiddenText as="h4">{offScreenText}</VisuallyHiddenText>
+    {children}
+  </StyledIndexAlsos>
+);
+
+IndexAlsos.propTypes = {
+  children: node.isRequired,
+  offScreenText: string,
+};
+
+IndexAlsos.defaultProps = {
+  offScreenText: null,
+};
+
+export const IndexAlsosLink = ({
+  children,
+  script,
+  service,
+  url,
+  mediaIndicator,
+}) => {
+  return (
+    <StyledIndexAlsosLink href={url} script={script} service={service}>
+      {mediaIndicator ? (
+        <Fragment>
+          <IndexAlsosMediaIndicator>{mediaIndicator}</IndexAlsosMediaIndicator>
+          <IndexAlsosText>{children}</IndexAlsosText>
+        </Fragment>
+      ) : (
+        <IndexAlsosText>{children}</IndexAlsosText>
+      )}
+    </StyledIndexAlsosLink>
+  );
+};
+
+IndexAlsosLink.propTypes = {
+  children: node.isRequired,
+  script: shape(scriptPropType).isRequired,
+  service: string.isRequired,
+  url: string.isRequired,
+  mediaIndicator: node,
+};
+
+IndexAlsosLink.defaultProps = {
+  mediaIndicator: null,
+};
+
+export const IndexAlso = ({ ...props }) => {
+  return (
+    <StyledIndexAlso>
+      <IndexAlsosLink {...props} />
+    </StyledIndexAlso>
+  );
+};
+
+export const IndexAlsosUl = ({ children, ...props }) => (
+  <StyledIndexAlsosUl role="list" {...props}>
+    {children}
+  </StyledIndexAlsosUl>
+);
+
+IndexAlsosUl.propTypes = {
+  children: node.isRequired,
+};
+
+export const IndexAlsosLi = ({ ...props }) => (
+  <StyledIndexAlsosLi role="listitem">
+    <IndexAlsosLink {...props} />
+  </StyledIndexAlsosLi>
+);
+
+/*
+ *  Story Promo
+ */
 const StoryPromo = ({ image, info, mediaIndicator, topStory }) => (
   <StoryPromoWrapper>
     <ImageGridItem topStory={topStory}>
@@ -367,33 +429,6 @@ StoryPromo.propTypes = {
 StoryPromo.defaultProps = {
   mediaIndicator: null,
   topStory: false,
-};
-
-IndexAlso.propTypes = {
-  children: string.isRequired,
-  script: shape(scriptPropType).isRequired,
-  service: string.isRequired,
-  url: string.isRequired,
-};
-
-IndexAlsos.propTypes = {
-  children: node.isRequired,
-  offScreenText: string,
-};
-
-IndexAlsos.defaultProps = {
-  offScreenText: null,
-};
-
-IndexAlsosUl.propTypes = {
-  children: node.isRequired,
-};
-
-IndexAlsosLi.propTypes = {
-  children: node.isRequired,
-  script: shape(scriptPropType).isRequired,
-  service: string.isRequired,
-  url: string.isRequired,
 };
 
 export default StoryPromo;

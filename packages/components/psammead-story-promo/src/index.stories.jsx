@@ -121,6 +121,20 @@ const MediaIndicatorComponent = (type, service) => {
   );
 };
 
+const getIndexAlsosMediaIndicator = (cpsType, service) => {
+  const isPGL = cpsType === 'PGL';
+  const isMedia = cpsType === 'MAP';
+
+  if (!isPGL && !isMedia) {
+    return null;
+  }
+
+  // Update this once the ARES feed contains the media type
+  const indexAlsosMediaType = isPGL ? 'photogallery' : 'video';
+
+  return <MediaIndicator service={service} type={indexAlsosMediaType} />;
+};
+
 const generateStory = ({ topStory, alsoItems = null }) =>
   inputProvider(
     [{ name: 'Headline' }, { name: 'Summary' }],
@@ -135,6 +149,7 @@ const generateStory = ({ topStory, alsoItems = null }) =>
                   const key = item.id;
                   const { headline } = item.headlines;
                   const url = item.locators.assetUri;
+                  const { cpsType } = item;
 
                   return (
                     <IndexAlsosLi
@@ -142,6 +157,10 @@ const generateStory = ({ topStory, alsoItems = null }) =>
                       script={script}
                       service={service}
                       url={url}
+                      mediaIndicator={getIndexAlsosMediaIndicator(
+                        cpsType,
+                        service,
+                      )}
                     >
                       {headline}
                     </IndexAlsosLi>
@@ -149,12 +168,22 @@ const generateStory = ({ topStory, alsoItems = null }) =>
                 })}
               </IndexAlsosUl>
             ) : (
-              // When there is exactly one Index Also, it should not be contained within a list.
+              // When there is exactly one related item, it should not be contained within a list.
               (() => {
                 const { headline } = alsoItems.headlines;
                 const url = alsoItems.locators.assetUri;
+                const { cpsType } = alsoItems;
+
                 return (
-                  <IndexAlso script={script} service={service} url={url}>
+                  <IndexAlso
+                    script={script}
+                    service={service}
+                    url={url}
+                    mediaIndicator={getIndexAlsosMediaIndicator(
+                      cpsType,
+                      service,
+                    )}
+                  >
                     {headline}
                   </IndexAlso>
                 );
