@@ -4,7 +4,10 @@ import { withKnobs, text, boolean, select } from '@storybook/addon-knobs';
 import { inputProvider } from '@bbc/psammead-storybook-helpers';
 import Image from '@bbc/psammead-image';
 import Timestamp from '@bbc/psammead-timestamp';
-import MediaIndicator from '@bbc/psammead-media-indicator';
+import MediaIndicator, {
+  IndexAlsosMediaIndicator,
+} from '@bbc/psammead-media-indicator';
+
 import VisuallyHiddenText from '@bbc/psammead-visually-hidden-text';
 import notes from '../README.md';
 import StoryPromo, {
@@ -132,7 +135,9 @@ const getIndexAlsosMediaIndicator = (cpsType, service) => {
   // Update this once the ARES feed contains the media type
   const indexAlsosMediaType = isPGL ? 'photogallery' : 'video';
 
-  return <MediaIndicator service={service} type={indexAlsosMediaType} />;
+  return (
+    <IndexAlsosMediaIndicator service={service} type={indexAlsosMediaType} />
+  );
 };
 
 const generateStory = ({ topStory, alsoItems = null }) =>

@@ -68,4 +68,25 @@ MediaIndicator.defaultProps = {
   topStory: false,
 };
 
+const StyledIndexAlsosMediaIndicator = styled.span`
+  & > svg {
+    margin: 0;
+  }
+`;
+
+export const IndexAlsosMediaIndicator = ({ type, service }) => (
+  <StyledIndexAlsosMediaIndicator aria-hidden="true" service={service}>
+    {mediaIcons[type]}
+  </StyledIndexAlsosMediaIndicator>
+);
+
+IndexAlsosMediaIndicator.propTypes = {
+  type: oneOf(['video', 'audio', 'photogallery']),
+  service: string.isRequired,
+};
+
+IndexAlsosMediaIndicator.defaultProps = {
+  type: 'video',
+};
+
 export default MediaIndicator;

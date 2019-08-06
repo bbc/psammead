@@ -29,9 +29,8 @@ import {
 } from '@bbc/psammead-styles/colours';
 import {
   getSansRegular,
-  getSansMedium,
   getSansBold,
-  getSerifBold,
+  getSerifMedium,
 } from '@bbc/psammead-styles/font-styles';
 import { grid } from '@bbc/psammead-styles/detection';
 import { scriptPropType } from '@bbc/gel-foundations/prop-types';
@@ -156,7 +155,7 @@ export const Headline = styled.h3`
   }}
 
   color: ${C_EBON};
-  ${({ service }) => getSerifBold(service)}
+  ${({ service }) => getSerifMedium(service)}
   margin: 0; /* Reset */
   padding-bottom: ${GEL_SPACING};
   @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
@@ -302,7 +301,7 @@ const StyledIndexAlso = styled.div`
 
 const StyledIndexAlsosLink = styled.a`
   ${props => (props.script ? getBrevier(props.script) : '')};
-  ${({ service }) => getSansMedium(service)}
+  ${({ service }) => getSerifMedium(service)}
   color: ${C_EBON};
   cursor: pointer;
   text-decoration: none;
@@ -319,12 +318,13 @@ const StyledIndexAlsosLi = styled.li`
   padding: ${GEL_SPACING} 0;
 `;
 
-const IndexAlsosMediaIndicator = styled.div`
-  display: inline-block;
+const IndexAlsosMediaIndicator = styled.span`
+  padding-right: ${GEL_SPACING};
 `;
 
-const IndexAlsosText = styled.div`
-  display: inline-block;
+const IndexAlsosText = styled.span`
+  display: inline;
+  vertical-align: middle;
 `;
 
 export const IndexAlsos = ({ children, offScreenText }) => (
