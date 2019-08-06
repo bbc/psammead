@@ -336,29 +336,7 @@ const IndexAlsosText = styled.span`
   vertical-align: middle;
 `;
 
-export const IndexAlsos = ({ children, offScreenText }) => (
-  <StyledIndexAlsos>
-    <VisuallyHiddenText as="h4">{offScreenText}</VisuallyHiddenText>
-    {children}
-  </StyledIndexAlsos>
-);
-
-IndexAlsos.propTypes = {
-  children: node.isRequired,
-  offScreenText: string,
-};
-
-IndexAlsos.defaultProps = {
-  offScreenText: null,
-};
-
-export const IndexAlsosLink = ({
-  children,
-  script,
-  service,
-  url,
-  mediaIndicator,
-}) => {
+const IndexAlsosLink = ({ children, script, service, url, mediaIndicator }) => {
   return (
     <StyledIndexAlsosLink href={url} script={script} service={service}>
       {mediaIndicator ? (
@@ -385,18 +363,24 @@ IndexAlsosLink.defaultProps = {
   mediaIndicator: null,
 };
 
-export const IndexAlso = ({ ...props }) => {
-  return (
-    <StyledIndexAlso>
-      <IndexAlsosLink {...props} />
-    </StyledIndexAlso>
-  );
+export const IndexAlsos = ({ children, offScreenText }) => (
+  <StyledIndexAlsos>
+    <VisuallyHiddenText as="h4">{offScreenText}</VisuallyHiddenText>
+    {children}
+  </StyledIndexAlsos>
+);
+
+IndexAlsos.propTypes = {
+  children: node.isRequired,
+  offScreenText: string,
 };
 
-export const IndexAlsosUl = ({ children, ...props }) => (
-  <StyledIndexAlsosUl role="list" {...props}>
-    {children}
-  </StyledIndexAlsosUl>
+IndexAlsos.defaultProps = {
+  offScreenText: null,
+};
+
+export const IndexAlsosUl = ({ children }) => (
+  <StyledIndexAlsosUl role="list">{children}</StyledIndexAlsosUl>
 );
 
 IndexAlsosUl.propTypes = {
@@ -407,6 +391,12 @@ export const IndexAlsosLi = ({ ...props }) => (
   <StyledIndexAlsosLi role="listitem">
     <IndexAlsosLink {...props} />
   </StyledIndexAlsosLi>
+);
+
+export const IndexAlso = ({ ...props }) => (
+  <StyledIndexAlso>
+    <IndexAlsosLink {...props} />
+  </StyledIndexAlso>
 );
 
 /*

@@ -27,7 +27,7 @@ The `StoryPromo` component is designed to be used on 'index' pages, which are pa
 <!-- prettier-ignore -->
 | Argument  | Type | Required | Default | Example |
 | --------- | ---- | -------- | ------- | ------- |
-| Script    | object | yes | latin | { canon: { groupA: { fontSize: '28', lineHeight: '32',}, groupB: { fontSize: '32', lineHeight: '36', }, groupD: { fontSize: '44', lineHeight: '48', }, }, trafalgar: { groupA: { fontSize: '20', lineHeight: '24', }, groupB: { fontSize: '24', lineHeight: '28', }, groupD: { fontSize: '32', lineHeight: '36', }, }, }|
+| Script    | object | yes | latin | `{ canon: { groupA: { fontSize: '28', lineHeight: '32',}, groupB: { fontSize: '32', lineHeight: '36', }, groupD: { fontSize: '44', lineHeight: '48', }, }, trafalgar: { groupA: { fontSize: '20', lineHeight: '24', }, groupB: { fontSize: '24', lineHeight: '28', }, groupD: { fontSize: '32', lineHeight: '36', }, }, }`|
 | service | string | yes | N/A | `'news'` |
 
 ## Summary Props
@@ -35,7 +35,7 @@ The `StoryPromo` component is designed to be used on 'index' pages, which are pa
 <!-- prettier-ignore -->
 | Argument  | Type | Required | Default | Example |
 | --------- | ---- | -------- | ------- | ------- |
-| Script    | object | yes | latin | { canon: { groupA: { fontSize: '28', lineHeight: '32',}, groupB: { fontSize: '32', lineHeight: '36', }, groupD: { fontSize: '44', lineHeight: '48', }, }, trafalgar: { groupA: { fontSize: '20', lineHeight: '24', }, groupB: { fontSize: '24', lineHeight: '28', }, groupD: { fontSize: '32', lineHeight: '36', }, }, }|
+| Script    | object | yes | latin | `{ canon: { groupA: { fontSize: '28', lineHeight: '32',}, groupB: { fontSize: '32', lineHeight: '36', }, groupD: { fontSize: '44', lineHeight: '48', }, }, trafalgar: { groupA: { fontSize: '20', lineHeight: '24', }, groupB: { fontSize: '24', lineHeight: '28', }, groupD: { fontSize: '32', lineHeight: '36', }, }, }`|
 | service | string | yes | N/A | `'news'` |
 
 ## LiveLabel
@@ -45,10 +45,59 @@ The `LiveLabel` component is to be used inside a `Link` in index pages to show a
 ### Props
 
 <!-- prettier-ignore -->
-| Argument  | Type | Required | Default | Example |
-| --------- | ---- | -------- | ------- | ------- |
-| service | string | yes | N/A | `'news'` |
-| dir | string | no | `'ltr'`| `'rtl'` |
+| Argument | Type   | Required | Default | Example  |
+| -------- | ------ | -------- | ------- | -------- |
+| service  | string | yes      | N/A     | `'news'` |
+| dir      | string | no       | `'ltr'` | `'rtl'`  |
+
+## IndexAlsos
+
+The Index Alsos are links to stories that are related to the top story.
+
+Within the `IndexAlsos` component there is a Visually hidden level 4 which announces text passed as prop.
+
+When there are more than one Index Alsos, they should be wrapped in a list item `IndexAlsosLi` within an unordered list `IndexAlsosUl` with the role `listitem` and `list` respectively.
+
+On the other hand, when there is exactly one Index Also, it should not be contained within a list and use the `IndexAlso` component.
+
+### Props
+
+#### IndexAlsos Props
+
+<!-- prettier-ignore -->
+| Argument | Type | Required | Default | Example        |
+| -------- | ---- | -------- | ------- | -------------- |
+| children | node | yes      | N/A     | `<IndexAlsosUl><IndexAlsosLi script={script} service="news" url="https://www.bbc.co.uk/news" mediaIndicator={<IndexAlsosMediaIndicator service="news" type="video"/>}>Related content 1</IndexAlsosLi><IndexAlsosLi script={script} service="news url="https://www.bbc.co.uk/news">Related content 2</IndexAlsosLi></IndexAlsosUl>`|
+| offScreenText | string | no | null | `Related content` |
+
+#### IndexAlsoUl Props
+
+<!-- prettier-ignore -->
+| Argument | Type | Required | Default | Example        |
+| -------- | ---- | -------- | ------- | -------------- |
+| children | node | yes      | N/A     | `<IndexAlsosLi script={script} service="news" url="https://www.bbc.co.uk/news" mediaIndicator={<IndexAlsosMediaIndicator service="news" type="video"/>}>Related content 1</IndexAlsosLi><IndexAlsosLi script={script} service="news url="https://www.bbc.co.uk/news">Related content 2</IndexAlsosLi>`|
+
+#### IndexAlsoLi Props
+
+<!-- prettier-ignore -->
+| Argument       | Type   | Required | Default | Example  |
+| -------------- | ------ | -------- | ------- | -------- |
+| children       | node   | Yes      | N/A     | `This is a headline` |
+| script         | object | yes | latin | { canon: { groupA: { fontSize: '28', lineHeight: '32',}, groupB: { fontSize: '32', lineHeight: '36', }, groupD: { fontSize: '44', lineHeight: '48', }, }, trafalgar: { groupA: { fontSize: '20', lineHeight: '24', }, groupB: { fontSize: '24', lineHeight: '28', }, groupD: { fontSize: '32', lineHeight: '36', }, }, }|
+| service        | string | yes      | N/A     | `'news'`|
+| url            | string | yes      | N/A     | `'https://www.bbc.co.uk/news'`|
+| mediaIndicator | node   | no       | null    | `<IndexAlsosMediaIndicator service="news" type="video" />` |
+
+#### IndexAlso Props
+
+<!-- prettier-ignore -->
+| Argument       | Type   | Required | Default | Example  |
+| -------------- | ------ | -------- | ------- | -------- |
+| children       | node   | Yes      | N/A     | `This is a headline` |
+| script         | object | yes | latin | { canon: { groupA: { fontSize: '28', lineHeight: '32',}, groupB: { fontSize: '32', lineHeight: '36', }, groupD: { fontSize: '44', lineHeight: '48', }, }, trafalgar: { groupA: { fontSize: '20', lineHeight: '24', }, groupB: { fontSize: '24', lineHeight: '28', }, groupD: { fontSize: '32', lineHeight: '36', }, }, }|
+| service        | string | yes      | N/A     | `'news'`|
+| url            | string | yes      | N/A     | `'https://www.bbc.co.uk/news'`|
+| mediaIndicator | node   | no       | null    | `<IndexAlsosMediaIndicator service="news" type="video" />` |
 
 ## Usage
 
