@@ -82,8 +82,8 @@ On the other hand, when there is exactly one Index Also, it should not be contai
 <!-- prettier-ignore -->
 | Argument       | Type   | Required | Default | Example  |
 | -------------- | ------ | -------- | ------- | -------- |
-| children       | node   | Yes      | N/A     | `This is a headline` |
-| script         | object | yes | latin | { canon: { groupA: { fontSize: '28', lineHeight: '32',}, groupB: { fontSize: '32', lineHeight: '36', }, groupD: { fontSize: '44', lineHeight: '48', }, }, trafalgar: { groupA: { fontSize: '20', lineHeight: '24', }, groupB: { fontSize: '24', lineHeight: '28', }, groupD: { fontSize: '32', lineHeight: '36', }, }, }|
+| children       | node   | yes      | N/A     | `This is a headline` |
+| script         | object | yes      | latin | { canon: { groupA: { fontSize: '28', lineHeight: '32',}, groupB: { fontSize: '32', lineHeight: '36', }, groupD: { fontSize: '44', lineHeight: '48', }, }, trafalgar: { groupA: { fontSize: '20', lineHeight: '24', }, groupB: { fontSize: '24', lineHeight: '28', }, groupD: { fontSize: '32', lineHeight: '36', }, }, }|
 | service        | string | yes      | N/A     | `'news'`|
 | url            | string | yes      | N/A     | `'https://www.bbc.co.uk/news'`|
 | mediaIndicator | node   | no       | null    | `<IndexAlsosMediaIndicator service="news" type="video" />` |
@@ -93,8 +93,8 @@ On the other hand, when there is exactly one Index Also, it should not be contai
 <!-- prettier-ignore -->
 | Argument       | Type   | Required | Default | Example  |
 | -------------- | ------ | -------- | ------- | -------- |
-| children       | node   | Yes      | N/A     | `This is a headline` |
-| script         | object | yes | latin | { canon: { groupA: { fontSize: '28', lineHeight: '32',}, groupB: { fontSize: '32', lineHeight: '36', }, groupD: { fontSize: '44', lineHeight: '48', }, }, trafalgar: { groupA: { fontSize: '20', lineHeight: '24', }, groupB: { fontSize: '24', lineHeight: '28', }, groupD: { fontSize: '32', lineHeight: '36', }, }, }|
+| children       | node   | yes      | N/A     | `This is a headline` |
+| script         | object | yes      | latin | { canon: { groupA: { fontSize: '28', lineHeight: '32',}, groupB: { fontSize: '32', lineHeight: '36', }, groupD: { fontSize: '44', lineHeight: '48', }, }, trafalgar: { groupA: { fontSize: '20', lineHeight: '24', }, groupB: { fontSize: '24', lineHeight: '28', }, groupD: { fontSize: '32', lineHeight: '36', }, }, }|
 | service        | string | yes      | N/A     | `'news'`|
 | url            | string | yes      | N/A     | `'https://www.bbc.co.uk/news'`|
 | mediaIndicator | node   | no       | null    | `<IndexAlsosMediaIndicator service="news" type="video" />` |
