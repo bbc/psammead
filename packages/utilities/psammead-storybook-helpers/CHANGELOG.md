@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 3.3.2 | [PR#1595](https://github.com/bbc/psammead/pull/1595) Bump `@bbc/gel-foundations` |
 | 3.3.1 | [PR#1479](https://github.com/bbc/psammead/pull/1479) Import all scripts from gel-foundations |
 | 3.3.0 | [PR#1233](https://github.com/bbc/psammead/pull/1233) Add ESM modules entry |
 | 3.2.0 | [PR#1244](https://github.com/bbc/psammead/pull/1244) `dirDecorator` now includes service `locale` in the object passed to the callback |
