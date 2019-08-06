@@ -9,7 +9,11 @@
     "type": "git",
     "url": "https://github.com/bbc/psammead/tree/latest/packages/components/psammead-paragraph"
   },
-  "keywords": ["bbc", "paragraph", "styled-components"],
+  "keywords": [
+    "bbc",
+    "paragraph",
+    "styled-components"
+  ],
   "author": {
     "name": "Psammead Maintainers",
     "email": "PsammeadMaintainers@bbc.co.uk"
