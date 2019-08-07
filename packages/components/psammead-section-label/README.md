@@ -90,7 +90,7 @@ const WrappingComponent = () => (
 ```
 
 You can even use this component as a link (typically to an index of content related to the section):
-NB. when doing this **both** the `href` **and** the `linkText` must be supplied.
+NB. when doing this **both** the `href` **and** the `linkText` must be supplied. If either is missing, the link will not be rendered.
 
 ```jsx
 import SectionLabel from '@bbc/psammead-section-label';

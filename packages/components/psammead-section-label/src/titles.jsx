@@ -16,11 +16,12 @@ import {
 import { C_EBON, C_WHITE } from '@bbc/psammead-styles/colours';
 import { getSansBold, getSansRegular } from '@bbc/psammead-styles/font-styles';
 
-import {
-  minClickableHeightRem,
-  paddingDir,
-  paddingReverseDir,
-} from './constants';
+const minClickableHeightPx = 44;
+const minClickableHeightRem = minClickableHeightPx / 16;
+
+const paddingDir = ({ dir }) => `padding-${dir === 'rtl' ? 'left' : 'right'}`;
+const paddingReverseDir = ({ dir }) =>
+  `padding-${dir === 'rtl' ? 'right' : 'left'}`;
 
 const titleMargins = `
   margin: 1rem 0;

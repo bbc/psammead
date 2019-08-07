@@ -6,7 +6,10 @@ import {
   GEL_GROUP_2_SCREEN_WIDTH_MAX,
   MEDIA_QUERY_TYPOGRAPHY,
 } from '@bbc/gel-foundations/breakpoints';
-import { GEL_SPACING_QUAD } from '@bbc/gel-foundations/spacings';
+import {
+  GEL_SPACING_TRPL,
+  GEL_SPACING_QUAD,
+} from '@bbc/gel-foundations/spacings';
 import { C_PEBBLE } from '@bbc/psammead-styles/colours';
 
 import { PlainTitle, LinkTitle } from './titles';
@@ -14,10 +17,10 @@ import { PlainTitle, LinkTitle } from './titles';
 const labelWrapperTopMargin = ({ script }) =>
   script
     ? `
-        margin-top: 2rem;
+        margin-top: ${GEL_SPACING_QUAD};
 
         ${MEDIA_QUERY_TYPOGRAPHY.LAPTOP_AND_LARGER} {
-          margin-top: 1rem;
+          margin-top: ${GEL_SPACING_TRPL};
         }
       `
     : `margin-top: ${GEL_SPACING_QUAD};`;
@@ -33,6 +36,7 @@ const Bar = styled.div`
 
   ${MEDIA_QUERY_TYPOGRAPHY.LAPTOP_AND_LARGER} {
     position: absolute;
+    /* Placing bar at the vertical midpoint of the section title */
     top: ${({ script }) =>
       0.5 + script.doublePica.groupD.lineHeight / 2 / 16}rem;
   }

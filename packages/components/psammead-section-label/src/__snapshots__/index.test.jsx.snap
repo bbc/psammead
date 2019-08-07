@@ -72,7 +72,7 @@ exports[`SectionLabel When hideSectionHeader is true should add styling to hide 
 
 @media (min-width:37.5rem) {
   .c0 {
-    margin-top: 1rem;
+    margin-top: 1.5rem;
   }
 }
 
@@ -253,7 +253,7 @@ exports[`SectionLabel With bar With linking title should render correctly 1`] = 
 
 @media (min-width:37.5rem) {
   .c0 {
-    margin-top: 1rem;
+    margin-top: 1.5rem;
   }
 }
 
@@ -439,7 +439,7 @@ exports[`SectionLabel With bar With linking title should render correctly with a
 
 @media (min-width:37.5rem) {
   .c0 {
-    margin-top: 1rem;
+    margin-top: 1.5rem;
   }
 }
 
@@ -625,7 +625,7 @@ exports[`SectionLabel With bar With linking title should render correctly with e
 
 @media (min-width:37.5rem) {
   .c0 {
-    margin-top: 1rem;
+    margin-top: 1.5rem;
   }
 }
 
@@ -811,7 +811,7 @@ exports[`SectionLabel With bar With linking title should render correctly with e
 
 @media (min-width:37.5rem) {
   .c0 {
-    margin-top: 1rem;
+    margin-top: 1.5rem;
   }
 }
 
@@ -944,7 +944,7 @@ exports[`SectionLabel With bar With plain title should render correctly 1`] = `
 
 @media (min-width:37.5rem) {
   .c0 {
-    margin-top: 1rem;
+    margin-top: 1.5rem;
   }
 }
 
@@ -1062,7 +1062,7 @@ exports[`SectionLabel With bar With plain title should render correctly with ara
 
 @media (min-width:37.5rem) {
   .c0 {
-    margin-top: 1rem;
+    margin-top: 1.5rem;
   }
 }
 
@@ -1180,7 +1180,7 @@ exports[`SectionLabel With bar With plain title should render correctly with exp
 
 @media (min-width:37.5rem) {
   .c0 {
-    margin-top: 1rem;
+    margin-top: 1.5rem;
   }
 }
 
@@ -1298,7 +1298,7 @@ exports[`SectionLabel With bar With plain title should render correctly with exp
 
 @media (min-width:37.5rem) {
   .c0 {
-    margin-top: 1rem;
+    margin-top: 1.5rem;
   }
 }
 
@@ -1450,7 +1450,7 @@ exports[`SectionLabel Without bar With linking title should render correctly 1`]
 
 @media (min-width:37.5rem) {
   .c0 {
-    margin-top: 1rem;
+    margin-top: 1.5rem;
   }
 }
 
@@ -1614,7 +1614,7 @@ exports[`SectionLabel Without bar With linking title should render correctly wit
 
 @media (min-width:37.5rem) {
   .c0 {
-    margin-top: 1rem;
+    margin-top: 1.5rem;
   }
 }
 
@@ -1778,7 +1778,7 @@ exports[`SectionLabel Without bar With linking title should render correctly wit
 
 @media (min-width:37.5rem) {
   .c0 {
-    margin-top: 1rem;
+    margin-top: 1.5rem;
   }
 }
 
@@ -1889,7 +1889,7 @@ exports[`SectionLabel Without bar With plain title should render correctly 1`] =
 
 @media (min-width:37.5rem) {
   .c0 {
-    margin-top: 1rem;
+    margin-top: 1.5rem;
   }
 }
 
@@ -1985,7 +1985,7 @@ exports[`SectionLabel Without bar With plain title should render correctly with 
 
 @media (min-width:37.5rem) {
   .c0 {
-    margin-top: 1rem;
+    margin-top: 1.5rem;
   }
 }
 
@@ -2081,7 +2081,7 @@ exports[`SectionLabel Without bar With plain title should render correctly with 
 
 @media (min-width:37.5rem) {
   .c0 {
-    margin-top: 1rem;
+    margin-top: 1.5rem;
   }
 }
 
