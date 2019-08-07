@@ -170,7 +170,7 @@ export const ConsentBanner = ({
 );
 
 ConsentBanner.propTypes = {
-  dir: oneOf(['ltr', 'rtl']).isRequired,
+  dir: oneOf(['ltr', 'rtl']),
   title: string.isRequired,
   text: element.isRequired,
   accept: element.isRequired,
@@ -182,6 +182,7 @@ ConsentBanner.propTypes = {
 };
 
 ConsentBanner.defaultProps = {
+  dir: 'ltr',
   id: null,
   hidden: null,
 };

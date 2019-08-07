@@ -24,11 +24,15 @@ const Text = ({ dir, script, service, shortText, text }) => (
 );
 
 Text.propTypes = {
-  dir: oneOf(['ltr', 'rtl']).isRequired,
+  dir: oneOf(['ltr', 'rtl']),
   script: string.isRequired,
   service: string.isRequired,
   shortText: string.isRequired,
   text: string.isRequired,
+};
+
+Text.defaultProps = {
+  dir: 'ltr',
 };
 
 storiesOf('Components|ConsentBanner', module)
