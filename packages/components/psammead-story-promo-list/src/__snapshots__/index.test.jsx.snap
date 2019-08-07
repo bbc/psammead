@@ -67,7 +67,7 @@ exports[`StoryPromo list should render correctly 1`] = `
   padding: 0;
 }
 
-@supports (display:grid) {
+@supports (grid-template-columns:fit-content(200px)) {
   .c2 {
     display: grid;
     grid-template-columns: repeat(6,1fr);
@@ -81,7 +81,7 @@ exports[`StoryPromo list should render correctly 1`] = `
   }
 }
 
-@supports (display:grid) {
+@supports (grid-template-columns:fit-content(200px)) {
   .c3 {
     display: block;
     width: initial;
@@ -157,7 +157,7 @@ exports[`StoryPromo list should render correctly 1`] = `
   }
 }
 
-@supports (display:grid) {
+@supports (grid-template-columns:fit-content(200px)) {
   .c5 {
     display: block;
     width: initial;
