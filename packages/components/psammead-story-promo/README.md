@@ -67,7 +67,7 @@ On the other hand, when there is exactly one Index Also, it should not be contai
 <!-- prettier-ignore -->
 | Argument | Type | Required | Default | Example        |
 | -------- | ---- | -------- | ------- | -------------- |
-| children | node | yes      | N/A     | `<IndexAlsosUl><IndexAlsosLi script={script} service="news" url="https://www.bbc.co.uk/news" mediaIndicator={<IndexAlsosMediaIndicator service="news" type="video"/>}>Related content 1</IndexAlsosLi><IndexAlsosLi script={script} service="news url="https://www.bbc.co.uk/news">Related content 2</IndexAlsosLi></IndexAlsosUl>`|
+| children | node | yes      | N/A     | `<IndexAlsosUl><IndexAlsosLi script={latin} service="news" url="https://www.bbc.co.uk/news" mediaIndicator={<IndexAlsosMediaIndicator service="news" type="video"/>}>Related content 1</IndexAlsosLi><IndexAlsosLi script={latin} service="news" url="https://www.bbc.co.uk/news">Related content 2</IndexAlsosLi></IndexAlsosUl>`|
 | offScreenText | string | no | null | `Related content` |
 
 #### IndexAlsoUl Props
@@ -75,7 +75,7 @@ On the other hand, when there is exactly one Index Also, it should not be contai
 <!-- prettier-ignore -->
 | Argument | Type | Required | Default | Example        |
 | -------- | ---- | -------- | ------- | -------------- |
-| children | node | yes      | N/A     | `<IndexAlsosLi script={script} service="news" url="https://www.bbc.co.uk/news" mediaIndicator={<IndexAlsosMediaIndicator service="news" type="video"/>}>Related content 1</IndexAlsosLi><IndexAlsosLi script={script} service="news url="https://www.bbc.co.uk/news">Related content 2</IndexAlsosLi>`|
+| children | node | yes      | N/A     | `<IndexAlsosLi script={latin} service="news" url="https://www.bbc.co.uk/news" mediaIndicator={<IndexAlsosMediaIndicator service="news" type="video"/>}>Related content 1</IndexAlsosLi><IndexAlsosLi script={latin} service="news url="https://www.bbc.co.uk/news">Related content 2</IndexAlsosLi>`|
 
 #### IndexAlsoLi Props
 
@@ -114,7 +114,12 @@ import StoryPromo, {
   Summary,
   Link,
   LiveLabel,
+  IndexAlsos,
+  IndexAlso,
+  IndexAlsosUl,
+  IndexAlsosLi
 } from '@bbc/psammead-story-promo';
+import { IndexAlsosMediaIndicator } from '@bbc/psammead-media-indicator';
 import { latin } from '@bbc/gel-foundations/scripts';
 import VisuallyHiddenText from "@bbc/psammead-visually-hidden-text'
 
@@ -130,7 +135,25 @@ const LiveComponent = ({ headline, service, dir }) => (
   </span>
 );
 
-const Info = ({ isLive }) => (
+const IndexAlsosComponent = ({alsoItems, script, service}) => (
+  //This example doesn't show how the alsoItems are destructured to get the respective data
+  <IndexAlsos offScreenText="Related content">
+    {
+      alsoItems.length > 1 ? (
+        <IndexAlsosUl>
+            <IndexAlsosLi script={script} service={service} url="https://www.bbc.co.uk/news" mediaIndicator={<IndexAlsosMediaIndicator service={service} type="video"/>}>Related text 1</IndexAlsosLi>
+            <IndexAlsosLi script={script} service={service} url="https://www.bbc.co.uk/news">Related text 2</IndexAlsosLi>
+        </IndexAlsosUl>
+      ) : (
+        <IndexAlso>
+          Related text
+        </IndexAlso>
+      )
+    }
+  </IndexAlsos>
+);
+
+const Info = ({ isLive, alsoItems }) => (
   <Fragment>
     <Headline script={latin} topStory={true} service="news">
       <Link href="https://www.bbc.co.uk/news">
@@ -143,6 +166,13 @@ const Info = ({ isLive }) => (
       The summary of the promo
     </Summary>
     <time>12 March 2019</time>
+    {topStory && alsoItems && (
+      <IndexAlsosComponent
+        alsoItems={alsoItems}
+        script={latin}
+        service="news"
+      />
+    )}
   </Fragment>
 );
 
