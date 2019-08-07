@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 2.3.3 | [PR#1641](https://github.com/bbc/psammead/pull/1641) Bump dependencies |
 | 2.3.2 | [PR#1532](https://github.com/bbc/psammead/pull/1532) 'fixes' a unit test that flaked on 31st of a month |
 | 2.3.1 | [PR#1518](https://github.com/bbc/psammead/pull/1518) Clear unit test warnings |
 | 2.3.0 | [PR#1067](https://github.com/bbc/psammead/pull/1067) Localise relative timestamps with momentjs |
