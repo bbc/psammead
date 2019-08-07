@@ -33,7 +33,7 @@ The typical use-case of this component is on top of images within promos for art
 
 For top story promos, we should pass the `topStory` prop to the `Media Indicator` to keep the same padding, otherwise this will be modified under 400px.
 
-Top story promos can also have related stories links called `Index Alsos`. When an Index Also item is a video, audio or photogallery, an icon should displayed with the content using the `MediaIndicator` component passing the `indexAlsos` prop.
+Top story promos can also have related stories links called `Index Alsos`. When an Index Also item is a video, audio or photogallery, an icon should be displayed with the content using the `MediaIndicator` component passing the `indexAlsos` prop.
 
 ```jsx
 import MediaIndicator from '@bbc/psammead-media-indicator';
