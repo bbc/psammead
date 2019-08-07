@@ -30,7 +30,7 @@
     "moment-timezone": "^0.5.26"
   },
   "devDependencies": {
-    "@bbc/psammead-locales": "^1.1.0",
+    "@bbc/psammead-locales": "^1.2.1",
     "@bbc/psammead-storybook-helpers": "^3.3.1",
     "@bbc/psammead-test-helpers": "^1.1.0",
     "react": "^16.8.6"
