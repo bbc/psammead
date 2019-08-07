@@ -143,13 +143,6 @@
     ]
   },
   "lint-staged": {
-    "*.js": [
-      "eslint --fix",
-      "git add"
-    ],
-    "*.css": [
-      "stylelint --fix",
-      "git add"
-    ]
+    "*.{js,jsx,json}": "eslint"
   }
 }
