@@ -1,8 +1,5 @@
 import * as fonts from './font-families';
 
-/*
- *  SANS Functions
- */
 export const getSansRegular = service => {
   if (!fonts[service]) {
     return null;
@@ -34,17 +31,6 @@ export const getSansBoldItalic = service => {
   return sansBoldItalic || getSansBold(service);
 };
 
-export const getSansMedium = service => {
-  if (!fonts[service]) {
-    return null;
-  }
-  const { sansMedium } = fonts[service];
-  return sansMedium || getSansBold(service);
-};
-
-/*
- *  SERIF Functions
- */
 export const getSerifRegular = service => {
   if (!fonts[service]) {
     return null;

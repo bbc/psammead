@@ -15,10 +15,6 @@ const latinReithFontStyles = {
    ${reithSans}
    ${getFontStyleAndWeight('normal', 400)} 
   `,
-  sansMedium: `
-  ${reithSans}
-  ${getFontStyleAndWeight('normal', 500)} 
- `,
   sansRegularItalic: `
    ${reithSans}
    ${getFontStyleAndWeight('italic', 400)} 
