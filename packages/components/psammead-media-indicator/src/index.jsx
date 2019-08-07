@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import styled, { css } from 'styled-components';
 import { string, oneOf, bool } from 'prop-types';
 import { C_WHITE, C_EBON } from '@bbc/psammead-styles/colours';
@@ -38,19 +38,40 @@ const TimeDuration = styled.time`
   margin: 0 ${GEL_SPACING_HLF};
 `;
 
-const MediaIndicator = ({ datetime, duration, type, topStory, service }) => (
-  <MediaIndicatorWrapper
-    aria-hidden="true"
-    topStory={topStory}
-    service={service}
-  >
-    <FlexWrapper>
-      {mediaIcons[type]}
-      {duration && datetime && (
-        <TimeDuration dateTime={datetime}>{duration}</TimeDuration>
-      )}
-    </FlexWrapper>
-  </MediaIndicatorWrapper>
+const IndexAlsosMediaIndicator = styled.span.attrs({ 'aria-hidden': 'true' })`
+  & > svg {
+    margin: 0;
+  }
+`;
+
+const MediaIndicator = ({
+  datetime,
+  duration,
+  type,
+  topStory,
+  service,
+  indexAlsos,
+}) => (
+  <Fragment>
+    {indexAlsos ? (
+      <IndexAlsosMediaIndicator aria-hidden="true" service={service}>
+        {mediaIcons[type]}
+      </IndexAlsosMediaIndicator>
+    ) : (
+      <MediaIndicatorWrapper
+        aria-hidden="true"
+        topStory={topStory}
+        service={service}
+      >
+        <FlexWrapper>
+          {mediaIcons[type]}
+          {duration && datetime && (
+            <TimeDuration dateTime={datetime}>{duration}</TimeDuration>
+          )}
+        </FlexWrapper>
+      </MediaIndicatorWrapper>
+    )}
+  </Fragment>
 );
 
 MediaIndicator.propTypes = {
@@ -59,6 +80,7 @@ MediaIndicator.propTypes = {
   type: oneOf(['video', 'audio', 'photogallery']),
   topStory: bool,
   service: string.isRequired,
+  indexAlsos: bool,
 };
 
 MediaIndicator.defaultProps = {
@@ -66,6 +88,7 @@ MediaIndicator.defaultProps = {
   duration: null,
   type: 'video',
   topStory: false,
+  indexAlsos: false,
 };
 
 export default MediaIndicator;

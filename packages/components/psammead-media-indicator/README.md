@@ -11,18 +11,18 @@ The `MediaIndicator` component provides a 'play', 'audio' or 'camera' icon as we
 ## Props
 
 <!-- prettier-ignore -->
-| Argument      | Type   | Required | Default | Example                      |
-| ------------- | ------ | -------- | ------- | ---------------------------- |
-| duration      | string | No       | Null    | '2:15'                       |
-| datetime      | string | No       | Null    | 'PT2M15S'                    |
-| type          | string | No       | 'video' | 'audio'                      |
-| topStory      | boolean | No      | false   | true                         |
-| service | string | Yes | N/A | `'news'` |
+| Argument   | Type    | Required | Default | Example   |
+| ---------- | ------- | -------- | ------- | --------- |
+| duration   | string  | No       | Null    | '2:15'    |
+| datetime   | string  | No       | Null    | 'PT2M15S' |
+| type       | string  | No       | 'video' | 'audio'   |
+| topStory   | boolean | No       | false   | true      |
+| service    | string  | Yes      | N/A     | `'news'`  |
+| indexAlsos | boolean | No       | N/A     | true      |
 
 ### Supported `type`s
 
 <!-- prettier-ignore -->
-
 - `'video'`
 - `'audio'`
 - `'photogallery'`
@@ -32,6 +32,8 @@ The `MediaIndicator` component provides a 'play', 'audio' or 'camera' icon as we
 The typical use-case of this component is on top of images within promos for articles that contains a video asset at the top of the page. It indicates to the user that the link is to a video and how long the video is in duration.
 
 For top story promos, we should pass the `topStory` prop to the `Media Indicator` to keep the same padding, otherwise this will be modified under 400px.
+
+Top story promos can also have related stories links called `Index Alsos`. When an Index Also item is a video, audio or photogallery, an icon should displayed with the content using the `MediaIndicator` component passing the `indexAlsos` prop.
 
 ```jsx
 import MediaIndicator from '@bbc/psammead-media-indicator';
@@ -47,6 +49,8 @@ import MediaIndicator from '@bbc/psammead-media-indicator';
 ### When to use this component
 
 The `MediaIndicator` component is designed to be used on top of an image which is linking to a page containing a video, audio or photo item based on that image. It tells the user to expect video, audio or photographic content on the page as well as how long it is in duration if applicable.
+
+Also, it is used in Top story promos within `Index Alsos` media links.
 
 <!-- ### When not to use this component -->
 
