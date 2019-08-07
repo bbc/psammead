@@ -8,11 +8,7 @@ import {
   MEDIA_QUERY_TYPOGRAPHY,
 } from '@bbc/gel-foundations/breakpoints';
 import { GEL_SPACING, GEL_SPACING_DBL } from '@bbc/gel-foundations/spacings';
-import {
-  getBrevier,
-  getLongPrimer,
-  getDoublePica,
-} from '@bbc/gel-foundations/typography';
+import { getLongPrimer, getDoublePica } from '@bbc/gel-foundations/typography';
 import { C_EBON, C_WHITE } from '@bbc/psammead-styles/colours';
 import { getSansBold, getSansRegular } from '@bbc/psammead-styles/font-styles';
 
@@ -83,11 +79,7 @@ const IndexLinkCta = styled.span.attrs({
   'aria-hidden': 'true',
 })`
   ${({ service }) => getSansBold(service)};
-  ${({ script }) => script && getBrevier(script)};
-
-  ${MEDIA_QUERY_TYPOGRAPHY.LAPTOP_AND_LARGER} {
-    ${({ script }) => script && getLongPrimer(script)};
-  }
+  ${({ script }) => script && getLongPrimer(script)};
 
   ${titleMargins};
 

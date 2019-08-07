@@ -160,7 +160,7 @@ exports[`SectionLabel With bar With linking title should render correctly 1`] = 
   font-family: ReithSans,Helvetica,Arial,sans-serif;
   font-weight: 700;
   font-style: normal;
-  font-size: 0.875rem;
+  font-size: 0.9375rem;
   line-height: 1.125rem;
   margin: 1rem 0;
   color: #222222;
@@ -214,21 +214,14 @@ exports[`SectionLabel With bar With linking title should render correctly 1`] = 
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
   .c6 {
-    font-size: 0.875rem;
+    font-size: 0.9375rem;
     line-height: 1.125rem;
   }
 }
 
 @media (min-width:37.5rem) {
   .c6 {
-    font-size: 0.8125rem;
-    line-height: 1rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c6 {
-    font-size: 0.9375rem;
+    font-size: 0.875rem;
     line-height: 1.125rem;
   }
 }
@@ -346,8 +339,8 @@ exports[`SectionLabel With bar With linking title should render correctly with a
   font-family: "BBC Nassim Persian",Arial,Verdana,Geneva,Helvetica,sans-serif;
   font-weight: 700;
   font-style: normal;
-  font-size: 1rem;
-  line-height: 1.25rem;
+  font-size: 1.0625rem;
+  line-height: 1.5rem;
   margin: 1rem 0;
   color: #222222;
   background-color: #FFFFFF;
@@ -408,13 +401,6 @@ exports[`SectionLabel With bar With linking title should render correctly with a
 @media (min-width:37.5rem) {
   .c6 {
     font-size: 1.125rem;
-    line-height: 1.5rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c6 {
-    font-size: 1.0625rem;
     line-height: 1.5rem;
   }
 }
@@ -532,7 +518,7 @@ exports[`SectionLabel With bar With linking title should render correctly with e
   font-family: ReithSans,Helvetica,Arial,sans-serif;
   font-weight: 700;
   font-style: normal;
-  font-size: 0.875rem;
+  font-size: 0.9375rem;
   line-height: 1.125rem;
   margin: 1rem 0;
   color: #222222;
@@ -586,21 +572,14 @@ exports[`SectionLabel With bar With linking title should render correctly with e
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
   .c6 {
-    font-size: 0.875rem;
+    font-size: 0.9375rem;
     line-height: 1.125rem;
   }
 }
 
 @media (min-width:37.5rem) {
   .c6 {
-    font-size: 0.8125rem;
-    line-height: 1rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c6 {
-    font-size: 0.9375rem;
+    font-size: 0.875rem;
     line-height: 1.125rem;
   }
 }
@@ -718,7 +697,7 @@ exports[`SectionLabel With bar With linking title should render correctly with e
   font-family: ReithSans,Helvetica,Arial,sans-serif;
   font-weight: 700;
   font-style: normal;
-  font-size: 0.875rem;
+  font-size: 0.9375rem;
   line-height: 1.125rem;
   margin: 1rem 0;
   color: #222222;
@@ -772,21 +751,14 @@ exports[`SectionLabel With bar With linking title should render correctly with e
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
   .c6 {
-    font-size: 0.875rem;
+    font-size: 0.9375rem;
     line-height: 1.125rem;
   }
 }
 
 @media (min-width:37.5rem) {
   .c6 {
-    font-size: 0.8125rem;
-    line-height: 1rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c6 {
-    font-size: 0.9375rem;
+    font-size: 0.875rem;
     line-height: 1.125rem;
   }
 }
@@ -1380,7 +1352,7 @@ exports[`SectionLabel Without bar With linking title should render correctly 1`]
   font-family: ReithSans,Helvetica,Arial,sans-serif;
   font-weight: 700;
   font-style: normal;
-  font-size: 0.875rem;
+  font-size: 0.9375rem;
   line-height: 1.125rem;
   margin: 1rem 0;
   color: #222222;
@@ -1428,21 +1400,14 @@ exports[`SectionLabel Without bar With linking title should render correctly 1`]
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
   .c5 {
-    font-size: 0.875rem;
+    font-size: 0.9375rem;
     line-height: 1.125rem;
   }
 }
 
 @media (min-width:37.5rem) {
   .c5 {
-    font-size: 0.8125rem;
-    line-height: 1rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c5 {
-    font-size: 0.9375rem;
+    font-size: 0.875rem;
     line-height: 1.125rem;
   }
 }
@@ -1544,8 +1509,8 @@ exports[`SectionLabel Without bar With linking title should render correctly wit
   font-family: "BBC Nassim Persian",Arial,Verdana,Geneva,Helvetica,sans-serif;
   font-weight: 700;
   font-style: normal;
-  font-size: 1rem;
-  line-height: 1.25rem;
+  font-size: 1.0625rem;
+  line-height: 1.5rem;
   margin: 1rem 0;
   color: #222222;
   background-color: #FFFFFF;
@@ -1600,13 +1565,6 @@ exports[`SectionLabel Without bar With linking title should render correctly wit
 @media (min-width:37.5rem) {
   .c5 {
     font-size: 1.125rem;
-    line-height: 1.5rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c5 {
-    font-size: 1.0625rem;
     line-height: 1.5rem;
   }
 }
@@ -1708,7 +1666,7 @@ exports[`SectionLabel Without bar With linking title should render correctly wit
   font-family: ReithSans,Helvetica,Arial,sans-serif;
   font-weight: 700;
   font-style: normal;
-  font-size: 0.875rem;
+  font-size: 0.9375rem;
   line-height: 1.125rem;
   margin: 1rem 0;
   color: #222222;
@@ -1756,21 +1714,14 @@ exports[`SectionLabel Without bar With linking title should render correctly wit
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
   .c5 {
-    font-size: 0.875rem;
+    font-size: 0.9375rem;
     line-height: 1.125rem;
   }
 }
 
 @media (min-width:37.5rem) {
   .c5 {
-    font-size: 0.8125rem;
-    line-height: 1rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c5 {
-    font-size: 0.9375rem;
+    font-size: 0.875rem;
     line-height: 1.125rem;
   }
 }
