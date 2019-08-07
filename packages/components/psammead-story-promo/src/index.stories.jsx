@@ -5,7 +5,6 @@ import { inputProvider } from '@bbc/psammead-storybook-helpers';
 import Image from '@bbc/psammead-image';
 import Timestamp from '@bbc/psammead-timestamp';
 import MediaIndicator from '@bbc/psammead-media-indicator';
-
 import VisuallyHiddenText from '@bbc/psammead-visually-hidden-text';
 import notes from '../README.md';
 import StoryPromo, {
@@ -18,39 +17,7 @@ import StoryPromo, {
   IndexAlsosUl,
   IndexAlsosLi,
 } from './index';
-
-const relatedItems = [
-  {
-    headlines: {
-      headline: 'APC ba ta isa ta kore ni ba – Buba Galadima',
-    },
-    locators: {
-      assetUri: '/hausa/labarai-48916590',
-      cpsUrn: 'urn:bbc:content:assetUri:/hausa/labarai-48916590',
-    },
-    summary:
-      "Buba Galadima ya ce kasancewar yana daya daga cikin mutanen da suka kafa jam'iyya mai mulki ta APC, hakan ya mayar da shi dan jam'iyya na din-din-din.",
-    timestamp: 1562665827,
-    cpsType: 'MAP',
-    id: 'urn:bbc:ares::asset:hausa/labarai-48916590',
-    type: 'cps',
-  },
-  {
-    headlines: {
-      headline: 'Yaushe Obasanjo ya fara yi wa shugabannin kasa baki?',
-    },
-    locators: {
-      assetUri: '/hausa/labarai-42837051',
-      cpsUrn: 'urn:bbc:content:assetUri:/hausa/labarai-42837051',
-    },
-    summary:
-      'Cif Obasanjo ya caccaki kusan daukacin mutanen da suka yi shugabancin Najeriya saboda abin da ya kira rashin iya gudanar da mulkinsu.',
-    timestamp: 1563269515,
-    cpsType: 'STY',
-    id: 'urn:bbc:ares::asset:hausa/labarai-42837051',
-    type: 'cps',
-  },
-];
+import relatedItems from '../testHelpers/relatedItems';
 
 const buildImg = () => (
   <Image
@@ -128,7 +95,7 @@ const IndexAlsosComponent = ({ alsoItems, script, service }) => (
       </IndexAlsosUl>
     ) : (
       // When there is exactly one related item, it should not be contained within a list.
-      () => {
+      (() => {
         /* eslint-disable-next-line react/prop-types */
         const { headline } = alsoItems.headlines;
         /* eslint-disable-next-line react/prop-types */
@@ -146,7 +113,7 @@ const IndexAlsosComponent = ({ alsoItems, script, service }) => (
             {headline}
           </IndexAlso>
         );
-      }
+      })()
     )}
   </IndexAlsos>
 );
