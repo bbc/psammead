@@ -54,54 +54,6 @@ const relatedItems = [
   },
 ];
 
-/* eslint-disable-next-line react/prop-types */
-const LiveComponent = ({ headline, service, dir }) => (
-  /* eslint-disable-next-line jsx-a11y/aria-role */
-  <span role="text">
-    <LiveLabel service={service} dir={dir}>
-      LIVE
-    </LiveLabel>
-    <VisuallyHiddenText lang="en-GB">Live, </VisuallyHiddenText>
-    {headline}
-  </span>
-);
-
-/* eslint-disable react/prop-types */
-const InfoComponent = ({
-  headlineText,
-  summaryText,
-  script,
-  topStory,
-  service,
-  isLive,
-  dir,
-  indexAlsos,
-}) => (
-  <Fragment>
-    <Headline script={script} topStory={topStory} service={service}>
-      <Link href="https://www.bbc.co.uk/news">
-        {isLive ? (
-          <LiveComponent service={service} dir={dir} headline={headlineText} />
-        ) : (
-          headlineText
-        )}
-      </Link>
-    </Headline>
-    <Summary script={script} topStory={topStory} service={service}>
-      {summaryText}
-    </Summary>
-    <Timestamp
-      datetime={text('Timestamp datetime', '2019-03-01T14:00+00:00')}
-      script={script}
-      padding={false}
-      service={service}
-    >
-      {text('Timestamp', '12 March 2019')}
-    </Timestamp>
-    {indexAlsos}
-  </Fragment>
-);
-
 const buildImg = () => (
   <Image
     alt={text('Image alt text', 'Robert Downey Junior in Iron Man')}
@@ -140,64 +92,115 @@ const getIndexAlsosMediaIndicator = (cpsType, service) => {
   );
 };
 
+/* eslint-disable-next-line react/prop-types */
+const LiveComponent = ({ headline, service, dir }) => (
+  /* eslint-disable-next-line jsx-a11y/aria-role */
+  <span role="text">
+    <LiveLabel service={service} dir={dir}>
+      LIVE
+    </LiveLabel>
+    <VisuallyHiddenText lang="en-GB">Live, </VisuallyHiddenText>
+    {headline}
+  </span>
+);
+
+/* eslint-disable-next-line react/prop-types */
+const IndexAlsosComponent = ({ alsoItems, script, service }) => (
+  <IndexAlsos offScreenText="Related content">
+    {/* eslint-disable-next-line react/prop-types */
+    alsoItems.length > 1 ? (
+      <IndexAlsosUl>
+        {/* eslint-disable-next-line react/prop-types */
+        alsoItems.map(item => {
+          const key = item.id;
+          const { headline } = item.headlines;
+          const url = item.locators.assetUri;
+          const { cpsType } = item;
+
+          return (
+            <IndexAlsosLi
+              key={key}
+              script={script}
+              service={service}
+              url={url}
+              mediaIndicator={getIndexAlsosMediaIndicator(cpsType, service)}
+            >
+              {headline}
+            </IndexAlsosLi>
+          );
+        })}
+      </IndexAlsosUl>
+    ) : (
+      // When there is exactly one related item, it should not be contained within a list.
+      () => {
+        /* eslint-disable-next-line react/prop-types */
+        const { headline } = alsoItems.headlines;
+        /* eslint-disable-next-line react/prop-types */
+        const url = alsoItems.locators.assetUri;
+        // eslint-disable-next-line react/prop-types
+        const { cpsType } = alsoItems;
+
+        return (
+          <IndexAlso
+            script={script}
+            service={service}
+            url={url}
+            mediaIndicator={getIndexAlsosMediaIndicator(cpsType, service)}
+          >
+            {headline}
+          </IndexAlso>
+        );
+      }
+    )}
+  </IndexAlsos>
+);
+
+/* eslint-disable react/prop-types */
+const InfoComponent = ({
+  headlineText,
+  summaryText,
+  script,
+  topStory,
+  service,
+  isLive,
+  dir,
+  alsoItems,
+}) => (
+  <Fragment>
+    <Headline script={script} topStory={topStory} service={service}>
+      <Link href="https://www.bbc.co.uk/news">
+        {isLive ? (
+          <LiveComponent service={service} dir={dir} headline={headlineText} />
+        ) : (
+          headlineText
+        )}
+      </Link>
+    </Headline>
+    <Summary script={script} topStory={topStory} service={service}>
+      {summaryText}
+    </Summary>
+    <Timestamp
+      datetime={text('Timestamp datetime', '2019-03-01T14:00+00:00')}
+      script={script}
+      padding={false}
+      service={service}
+    >
+      {text('Timestamp', '12 March 2019')}
+    </Timestamp>
+    {topStory && alsoItems && (
+      <IndexAlsosComponent
+        alsoItems={alsoItems}
+        script={script}
+        service={service}
+      />
+    )}
+  </Fragment>
+);
+
 const generateStory = ({ topStory, alsoItems = null }) =>
   inputProvider(
     [{ name: 'Headline' }, { name: 'Summary' }],
     ({ slotTexts: [headlineText, summaryText], script, service, dir }) => {
-      let indexAlsos;
-      if (topStory && alsoItems) {
-        indexAlsos = (
-          <IndexAlsos offScreenText="Related content">
-            {alsoItems.length > 1 ? (
-              <IndexAlsosUl>
-                {alsoItems.map(item => {
-                  const key = item.id;
-                  const { headline } = item.headlines;
-                  const url = item.locators.assetUri;
-                  const { cpsType } = item;
-
-                  return (
-                    <IndexAlsosLi
-                      key={key}
-                      script={script}
-                      service={service}
-                      url={url}
-                      mediaIndicator={getIndexAlsosMediaIndicator(
-                        cpsType,
-                        service,
-                      )}
-                    >
-                      {headline}
-                    </IndexAlsosLi>
-                  );
-                })}
-              </IndexAlsosUl>
-            ) : (
-              // When there is exactly one related item, it should not be contained within a list.
-              (() => {
-                const { headline } = alsoItems.headlines;
-                const url = alsoItems.locators.assetUri;
-                const { cpsType } = alsoItems;
-
-                return (
-                  <IndexAlso
-                    script={script}
-                    service={service}
-                    url={url}
-                    mediaIndicator={getIndexAlsosMediaIndicator(
-                      cpsType,
-                      service,
-                    )}
-                  >
-                    {headline}
-                  </IndexAlso>
-                );
-              })()
-            )}
-          </IndexAlsos>
-        );
-      }
-
       const Info = (
         <InfoComponent
           headlineText={headlineText}
@@ -207,7 +210,7 @@ const generateStory = ({ topStory, alsoItems = null }) =>
           service={service}
           isLive={boolean('isLive', false)}
           dir={dir}
-          indexAlsos={indexAlsos}
+          alsoItems={alsoItems}
         />
       );
 

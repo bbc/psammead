@@ -299,23 +299,6 @@ const StyledIndexAlso = styled.div`
   padding: ${GEL_SPACING} 0;
 `;
 
-const StyledIndexAlsosLink = styled.a`
-  ${props => (props.script ? getBrevier(props.script) : '')};
-  ${({ service }) => getSerifMedium(service)}
-  color: ${C_EBON};
-  cursor: pointer;
-  text-decoration: none;
-
-  &:hover,
-  &:focus {
-    text-decoration: underline;
-  }
-
-  &:visited {
-    color: ${C_METAL};
-  }
-`;
-
 const StyledIndexAlsosUl = styled.ul`
   list-style-type: none;
   padding: 0;
@@ -334,6 +317,23 @@ const IndexAlsosMediaIndicator = styled.span`
 const IndexAlsosText = styled.span`
   display: inline;
   vertical-align: middle;
+`;
+
+const StyledIndexAlsosLink = styled.a`
+  ${props => (props.script ? getBrevier(props.script) : '')};
+  ${({ service }) => getSerifMedium(service)}
+  color: ${C_EBON};
+  cursor: pointer;
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    text-decoration: underline;
+  }
+
+  &:visited {
+    color: ${C_METAL};
+  }
 `;
 
 const IndexAlsosLink = ({ children, script, service, url, mediaIndicator }) => {
