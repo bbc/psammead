@@ -100,3 +100,28 @@ storiesOf('Components|MediaIndicator/Photo', module)
     ),
     { notes },
   );
+
+storiesOf('Components|MediaIndicator/Index Alsos', module)
+  .addDecorator(withKnobs)
+  .addDecorator(dirDecorator)
+  .add(
+    'audio',
+    ({ service }) => (
+      <MediaIndicator type="audio" service={service} indexAlsos />
+    ),
+    { notes },
+  )
+  .add(
+    'video',
+    ({ service }) => (
+      <MediaIndicator type="video" service={service} indexAlsos />
+    ),
+    { notes },
+  )
+  .add(
+    'photogallery',
+    ({ service }) => (
+      <MediaIndicator type="photogallery" service={service} indexAlsos />
+    ),
+    { notes },
+  );
