@@ -101,6 +101,7 @@ exports[`SectionLabel When hideSectionHeader is true should add styling to hide 
       <span
         class="c3"
         dir="ltr"
+        id="test-section-label"
       >
         This is the text in a SectionLabel
       </span>
@@ -963,6 +964,7 @@ exports[`SectionLabel With bar With plain title should render correctly 1`] = `
       <span
         class="c4"
         dir="ltr"
+        id="test-section-label"
       >
         This is text in a SectionLabel.
       </span>
@@ -1081,6 +1083,7 @@ exports[`SectionLabel With bar With plain title should render correctly with ara
       <span
         class="c4"
         dir="rtl"
+        id="test-section-label"
       >
         بعض محتوى النص
       </span>
@@ -1199,6 +1202,7 @@ exports[`SectionLabel With bar With plain title should render correctly with exp
       <span
         class="c4"
         dir="ltr"
+        id="test-section-label"
       >
         This is text in a SectionLabel rendering in ltr mode.
       </span>
@@ -1317,6 +1321,7 @@ exports[`SectionLabel With bar With plain title should render correctly with exp
       <span
         class="c4"
         dir="ltr"
+        id="test-section-label"
       >
         This is text in a SectionLabel, and there is a bar over to the right
       </span>
@@ -1905,6 +1910,7 @@ exports[`SectionLabel Without bar With plain title should render correctly 1`] =
       <span
         class="c3"
         dir="ltr"
+        id="test-section-label"
       >
         This is text in a SectionLabel.
       </span>
@@ -2001,6 +2007,7 @@ exports[`SectionLabel Without bar With plain title should render correctly with 
       <span
         class="c3"
         dir="rtl"
+        id="test-section-label"
       >
         بعض محتوى النص
       </span>
@@ -2097,6 +2104,7 @@ exports[`SectionLabel Without bar With plain title should render correctly with 
       <span
         class="c3"
         dir="ltr"
+        id="test-section-label"
       >
         This is text in a SectionLabel rendering in ltr mode.
       </span>

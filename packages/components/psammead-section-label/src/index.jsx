@@ -103,7 +103,12 @@ const SectionLabel = ({
           {title}
         </LinkTitle>
       ) : (
-        <PlainTitle script={script} dir={dir} id={labelId} service={service}>
+        <PlainTitle
+          script={script}
+          dir={dir}
+          labelId={labelId}
+          service={service}
+        >
           {title}
         </PlainTitle>
       )}
