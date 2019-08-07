@@ -12,6 +12,7 @@ export hausa from './svgs/hausa';
 export hindi from './svgs/hindi';
 export igbo from './svgs/igbo';
 export indonesia from './svgs/indonesia';
+export japanese from './svgs/japanese';
 export korean from './svgs/korean';
 export kyrgyz from './svgs/kyrgyz';
 export marathi from './svgs/marathi';

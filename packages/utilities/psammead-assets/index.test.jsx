@@ -20,6 +20,7 @@ const svgsExpectedExports = {
   hindi: 'object',
   igbo: 'object',
   indonesia: 'object',
+  japanese: 'object',
   korean: 'object',
   kyrgyz: 'object',
   marathi: 'object',
