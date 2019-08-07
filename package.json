@@ -143,6 +143,8 @@
     ]
   },
   "lint-staged": {
-    "*.{js,jsx,json}": "eslint"
+    "*.{js,jsx,json}": "eslint",
+    "packages /**/*.{js,jsx}": "stylelint",
+    "scripts /**/*.{js,jsx}": "stylelint"
   }
 }
