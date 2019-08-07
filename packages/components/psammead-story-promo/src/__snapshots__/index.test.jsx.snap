@@ -521,6 +521,259 @@ exports[`StoryPromo - Top Story with Media Indicator should render correctly 1`]
 </div>
 `;
 
+exports[`StoryPromo should render Live promo correctly 1`] = `
+.c7 {
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  -webkit-clip: rect(1px,1px,1px,1px);
+  clip: rect(1px,1px,1px,1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  width: 1px;
+  margin: 0;
+}
+
+.c0 {
+  position: relative;
+}
+
+.c1 {
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+  width: 33.33%;
+}
+
+.c2 {
+  position: relative;
+}
+
+.c4 {
+  font-size: 0.9375rem;
+  line-height: 1.25rem;
+  font-size: 0.9375rem;
+  line-height: 1.25rem;
+  color: #222222;
+  font-family: ReithSerif,Helvetica,Arial,sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  margin: 0;
+  padding-bottom: 0.5rem;
+}
+
+.c8 {
+  font-size: 0.9375rem;
+  line-height: 1.125rem;
+  color: #3F3F42;
+  font-family: ReithSans,Helvetica,Arial,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  margin: 0;
+  padding-bottom: 0.5rem;
+}
+
+.c3 {
+  display: inline-block;
+  vertical-align: top;
+  width: 66.67%;
+  padding: 0 0.5rem;
+}
+
+.c5 {
+  position: static;
+  color: #222222;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c5:before {
+  bottom: 0;
+  content: '';
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  right: 0;
+  top: 0;
+  white-space: nowrap;
+  z-index: 1;
+}
+
+.c5:hover,
+.c5:focus {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.c5:visited {
+  color: #6E6E73;
+}
+
+.c6 {
+  color: #B80000;
+  font-family: ReithSans,Helvetica,Arial,sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  display: inline-block;
+  margin-right: 0.5rem;
+}
+
+@supports (grid-template-columns:fit-content(200px)) {
+  .c0 {
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-column-gap: 0.5rem;
+  }
+}
+
+@media (min-width:80rem) {
+  .c1 {
+    width: 33.33%;
+  }
+}
+
+@supports (grid-template-columns:fit-content(200px)) {
+  .c1 {
+    display: block;
+    width: initial;
+    grid-column: 1 / span 2;
+  }
+}
+
+@media (min-width:20rem) and (max-width:37.4375rem) {
+  .c4 {
+    font-size: 1rem;
+    line-height: 1.25rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .c4 {
+    font-size: 1rem;
+    line-height: 1.25rem;
+  }
+}
+
+@media (min-width:20rem) and (max-width:37.4375rem) {
+  .c4 {
+    font-size: 1rem;
+    line-height: 1.25rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .c4 {
+    font-size: 1rem;
+    line-height: 1.25rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .c4 {
+    font-size: 1.125rem;
+    line-height: 1.375rem;
+  }
+}
+
+@media (min-width:20rem) and (max-width:37.4375rem) {
+  .c8 {
+    font-size: 0.9375rem;
+    line-height: 1.125rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .c8 {
+    font-size: 0.875rem;
+    line-height: 1.125rem;
+  }
+}
+
+@media (max-width:37.4375rem) {
+  .c8 {
+    display: none;
+    visibility: hidden;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .c3 {
+    padding: 0 1rem;
+  }
+}
+
+@media (min-width:80rem) {
+  .c3 {
+    width: 66.67%;
+  }
+}
+
+@supports (grid-template-columns:fit-content(200px)) {
+  .c3 {
+    display: block;
+    width: initial;
+    padding: initial;
+    grid-column: 3 / span 4;
+  }
+}
+
+<div
+  class="c0"
+>
+  <div
+    class="c1"
+  >
+    <div
+      class="c2"
+    >
+      <img
+        alt="Alt text"
+        src="https://foobar.com/image.png"
+      />
+    </div>
+  </div>
+  <div
+    class="c3"
+  >
+    <h3
+      class="c4"
+    >
+      <a
+        class="c5"
+        href="https://www.bbc.co.uk/news"
+      >
+        <span
+          role="text"
+        >
+          <span
+            aria-hidden="true"
+            class="c6"
+            dir="ltr"
+          >
+            LIVE
+          </span>
+          <span
+            class="c7"
+            lang="en-GB"
+          >
+            Live, 
+          </span>
+          The live promo headline
+        </span>
+      </a>
+    </h3>
+    <p
+      class="c8"
+    >
+      The summary of the promo
+    </p>
+    <time>
+      12 March 2019
+    </time>
+  </div>
+</div>
+`;
+
 exports[`StoryPromo should render correctly 1`] = `
 .c0 {
   position: relative;

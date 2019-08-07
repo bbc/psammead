@@ -16,7 +16,7 @@ npm install @bbc/psammead-sitewide-links --save
 | Argument      | Type                  | Required | Default | Example                                           |
 | ------------- | --------------------- | -------- | ------- | ------------------------------------------------- |
 | links         | Array of Link objects | Yes      | N/A     | `[{href:'https://www.bbc.com', text: 'The BBC'}]` |
-| copyrightText | String                | Yes      | N/A     | `'Copyright BBC News'`                            |
+| copyrightText | Node                | Yes      | N/A     | `<span>@ BBC News</span>`                            |
 | externalLink  | Link object           | Yes      | N/A     | `{href:'https://www.bbc.com', text: 'The BBC'}`   |
 | service | String | Yes | N/A | `'news'` |
 
@@ -30,7 +30,7 @@ const props = {
     { href: 'https://www.bbc.co.uk/news', text: 'BBC News' },
     { href: 'https://www.bbc.co.uk/sport', text: 'BBC Sport' },
   ],
-  copyrightText: 'Copyright BBC News',
+  copyrightText: <span>@ BBC News</span>,
   externalLink: { href: 'https://www.bbc.com', text: 'The BBC' },
   service: 'news',
 };

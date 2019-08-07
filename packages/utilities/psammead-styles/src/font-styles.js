@@ -7,12 +7,12 @@ export const getSansRegular = service => {
   return fonts[service].sansRegular;
 };
 
-export const getSansItalic = service => {
+export const getSansRegularItalic = service => {
   if (!fonts[service]) {
     return null;
   }
-  const { sansItalic, sansRegular } = fonts[service];
-  return sansItalic || sansRegular;
+  const { sansRegularItalic, sansRegular } = fonts[service];
+  return sansRegularItalic || sansRegular;
 };
 
 export const getSansBold = service => {
