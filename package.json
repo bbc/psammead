@@ -92,7 +92,7 @@
     "request": "^2.88.0",
     "semver": "^6.3.0",
     "shelljs": "^0.8.3",
-    "storybook-chromatic": "^2.1.0",
+    "storybook-chromatic": "^2.1.1",
     "storybook-readme": "^5.0.6",
     "strip-ansi": "^5.0.0",
     "stylelint": "^10.1.0",
