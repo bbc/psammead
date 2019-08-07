@@ -67,7 +67,7 @@ On the other hand, when there is exactly one Index Also, it should not be contai
 <!-- prettier-ignore -->
 | Argument | Type | Required | Default | Example        |
 | -------- | ---- | -------- | ------- | -------------- |
-| children | node | yes      | N/A     | `<IndexAlsosUl><IndexAlsosLi script={latin} service="news" url="https://www.bbc.co.uk/news" mediaIndicator={<IndexAlsosMediaIndicator service="news" type="video"/>}>Related content 1</IndexAlsosLi><IndexAlsosLi script={latin} service="news" url="https://www.bbc.co.uk/news">Related content 2</IndexAlsosLi></IndexAlsosUl>`|
+| children | node | yes      | N/A     | `<IndexAlsosUl><IndexAlsosLi script={latin} service="news" url="https://www.bbc.co.uk/news" mediaIndicator={<MediaIndicator service="news" type="video" indexAlsos/>}>Related content 1</IndexAlsosLi><IndexAlsosLi script={latin} service="news" url="https://www.bbc.co.uk/news">Related content 2</IndexAlsosLi></IndexAlsosUl>`|
 | offScreenText | string | no | null | `Related content` |
 
 #### IndexAlsoUl Props
@@ -75,7 +75,7 @@ On the other hand, when there is exactly one Index Also, it should not be contai
 <!-- prettier-ignore -->
 | Argument | Type | Required | Default | Example        |
 | -------- | ---- | -------- | ------- | -------------- |
-| children | node | yes      | N/A     | `<IndexAlsosLi script={latin} service="news" url="https://www.bbc.co.uk/news" mediaIndicator={<IndexAlsosMediaIndicator service="news" type="video"/>}>Related content 1</IndexAlsosLi><IndexAlsosLi script={latin} service="news url="https://www.bbc.co.uk/news">Related content 2</IndexAlsosLi>`|
+| children | node | yes      | N/A     | `<IndexAlsosLi script={latin} service="news" url="https://www.bbc.co.uk/news" mediaIndicator={<MediaIndicator service="news" type="video" indexAlsos/>}>Related content 1</IndexAlsosLi><IndexAlsosLi script={latin} service="news url="https://www.bbc.co.uk/news">Related content 2</IndexAlsosLi>`|
 
 #### IndexAlsoLi Props
 
@@ -86,7 +86,7 @@ On the other hand, when there is exactly one Index Also, it should not be contai
 | script         | object | yes      | latin | { canon: { groupA: { fontSize: '28', lineHeight: '32',}, groupB: { fontSize: '32', lineHeight: '36', }, groupD: { fontSize: '44', lineHeight: '48', }, }, trafalgar: { groupA: { fontSize: '20', lineHeight: '24', }, groupB: { fontSize: '24', lineHeight: '28', }, groupD: { fontSize: '32', lineHeight: '36', }, }, }|
 | service        | string | yes      | N/A     | `'news'`|
 | url            | string | yes      | N/A     | `'https://www.bbc.co.uk/news'`|
-| mediaIndicator | node   | no       | null    | `<IndexAlsosMediaIndicator service="news" type="video" />` |
+| mediaIndicator | node   | no       | null    | `<MediaIndicator service="news" type="video" indexAlsos/>` |
 
 #### IndexAlso Props
 
@@ -97,7 +97,7 @@ On the other hand, when there is exactly one Index Also, it should not be contai
 | script         | object | yes      | latin | { canon: { groupA: { fontSize: '28', lineHeight: '32',}, groupB: { fontSize: '32', lineHeight: '36', }, groupD: { fontSize: '44', lineHeight: '48', }, }, trafalgar: { groupA: { fontSize: '20', lineHeight: '24', }, groupB: { fontSize: '24', lineHeight: '28', }, groupD: { fontSize: '32', lineHeight: '36', }, }, }|
 | service        | string | yes      | N/A     | `'news'`|
 | url            | string | yes      | N/A     | `'https://www.bbc.co.uk/news'`|
-| mediaIndicator | node   | no       | null    | `<IndexAlsosMediaIndicator service="news" type="video" />` |
+| mediaIndicator | node   | no       | null    | `<MediaIndicator service="news" type="video" indexAlsos/>` |
 
 ## Usage
 
@@ -119,7 +119,7 @@ import StoryPromo, {
   IndexAlsosUl,
   IndexAlsosLi
 } from '@bbc/psammead-story-promo';
-import { IndexAlsosMediaIndicator } from '@bbc/psammead-media-indicator';
+import MediaIndicator from '@bbc/psammead-media-indicator';
 import { latin } from '@bbc/gel-foundations/scripts';
 import VisuallyHiddenText from "@bbc/psammead-visually-hidden-text'
 
@@ -141,7 +141,7 @@ const IndexAlsosComponent = ({alsoItems, script, service}) => (
     {
       alsoItems.length > 1 ? (
         <IndexAlsosUl>
-            <IndexAlsosLi script={script} service={service} url="https://www.bbc.co.uk/news" mediaIndicator={<IndexAlsosMediaIndicator service={service} type="video"/>}>Related text 1</IndexAlsosLi>
+            <IndexAlsosLi script={script} service={service} url="https://www.bbc.co.uk/news" mediaIndicator={<MediaIndicator service={service} type="video" indexAlsos/>}>Related text 1</IndexAlsosLi>
             <IndexAlsosLi script={script} service={service} url="https://www.bbc.co.uk/news">Related text 2</IndexAlsosLi>
         </IndexAlsosUl>
       ) : (
