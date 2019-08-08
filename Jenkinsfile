@@ -40,6 +40,7 @@ pipeline {
         }
       }
       steps {
+        sh 'ls' // quick debug step
         sh 'rm -rf ./app'
         script {
           if (GIT_BRANCH == 'latest') {
@@ -75,6 +76,7 @@ pipeline {
         }
       }
       steps {
+        sh 'ls' // quick debug step
         sh 'make storybook'
         sh 'rm published.txt || true'
         withCredentials([string(credentialsId: 'npm_bbc-online_read_write', variable: 'NPM_TOKEN')]) {
