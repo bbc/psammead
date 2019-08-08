@@ -27,15 +27,15 @@ Use an alpha version - is where `package.json` / `package-lock.json` version has
 - This is an industry standard way to enable publishing a package that is not yet ready for use in a production environment.
 - We should never use alpha versions of components in our production application.
 
-Follow the [developers checklist](https://bbc-news.github.io/accessibility-news-and-you/accessibility-news-and-developers) to help you code with accessibility in mind
+Follow the [developers checklist](https://bbc-news.github.io/accessibility-news-and-you/accessibility-news-and-developers) to help you code with accessibility in mind.
 
 - Each Psammead PR that changes the UI should include checking local code with assistive technology (which could just be testing with VoiceOver on your Mac)
 
-No change with how Testers test these PRs.
+No change with how test engineers test these PRs.
 
 ## When changing from alpha to production-ready:
 
-Create an issue for changing from an alpha version to a production version (e.g. `1.0.0.alpha.0` to `1.1.0`)
+Create an issue for changing from an alpha version to a production version (e.g. `1.0.0.alpha.0` to `1.1.0`).
 
 - The relevant PR to update the version can only be merged after an [Accessibility Swarm](https://bbc-news.github.io/accessibility-news-and-you/accessibility-swarms) has taken place.
 
