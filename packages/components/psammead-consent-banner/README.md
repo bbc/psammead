@@ -21,6 +21,7 @@ The `psammead-consent-banner` component is a styled `div` that encapsulates info
 | reject | element | Yes | N/A | `<a href="https://www.bbc.co.uk/usingthebbc/your-data-matters">Find out what's changed</a>` |
 | id | string | No | Null | `ConsentBanner` |
 | hidden | bool | No | Null | `false` |
+| dir | string | No | `'ltr'` | One of `'rtl'` `'ltr'` |
 | script | script | Yes | N/A | { canon: { groupA: { fontSize: '28', lineHeight: '32',}, groupB: { fontSize: '32', lineHeight: '36', }, groupD: { fontSize: '44', lineHeight: '48', }, }, trafalgar: { groupA: { fontSize: '20', lineHeight: '24', }, groupB: { fontSize: '24', lineHeight: '28', }, groupD: { fontSize: '32', lineHeight: '36', }, }, } |
 | service | string | Yes | N/A | `'news'` |
 
@@ -45,7 +46,7 @@ const Reject = (
 );
 
 const Text = (
-  <ConsentBannerText script={latin} service="news">
+  <ConsentBannerText dir="ltr" script={latin} service="news">
     This is some text with <a href="https://www.bbc.com/news">a link</a> inside
     the consent banner. We have made some important changes to our Privacy and
     Cookie Policy.
@@ -53,6 +54,7 @@ const Text = (
 );
 
 const props = {
+  dir: 'ltr',
   title: 'We have updated our Privacy and Cookies Policy',
   text: Text,
   accept: Accept,
