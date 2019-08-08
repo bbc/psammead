@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 2.1.5   | [PR#1685](https://github.com/bbc/psammead/pull/1685) Bump dependencies |
 | 2.1.4 | [PR#1682](https://github.com/bbc/psammead/pull/1682) Move all dev dependencies to top level package.json |
 | 2.1.3 | [PR#1599](https://github.com/bbc/psammead/pull/1599) Bump dependencies |
 | 2.1.2 | [PR#1517](https://github.com/bbc/psammead/pull/1517) Clear unit test warnings |
