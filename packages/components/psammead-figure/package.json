@@ -21,18 +21,6 @@
   "dependencies": {
     "@bbc/gel-foundations": "^3.2.0"
   },
-  "devDependencies": {
-    "@bbc/psammead-caption": "^2.1.2",
-    "@bbc/psammead-copyright": "^1.1.2",
-    "@bbc/psammead-image": "^1.1.2",
-    "@bbc/psammead-image-placeholder": "^1.1.2",
-    "@bbc/psammead-paragraph": "^2.1.2",
-    "@bbc/psammead-storybook-helpers": "^3.3.2",
-    "@bbc/psammead-test-helpers": "^1.1.0",
-    "@bbc/psammead-visually-hidden-text": "^1.1.1",
-    "react": "^16.8.6",
-    "styled-components": "^4.3.2"
-  },
   "peerDependencies": {
     "styled-components": "^4.3.2"
   },

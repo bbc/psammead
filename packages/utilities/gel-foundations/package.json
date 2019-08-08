@@ -24,8 +24,5 @@
     "grid",
     "spacing",
     "typography"
-  ],
-  "devDependencies": {
-    "@bbc/psammead-test-helpers": "^1.0.2"
-  }
+  ]
 }

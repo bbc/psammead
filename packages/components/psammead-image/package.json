@@ -18,13 +18,6 @@
     "url": "https://github.com/bbc/psammead/issues"
   },
   "homepage": "https://github.com/bbc/psammead/blob/latest/packages/components/psammead-image/README.md",
-  "devDependencies": {
-    "@bbc/psammead-assets": "^1.1.1",
-    "@bbc/psammead-test-helpers": "^1.1.0",
-    "prop-types": "^15.6.2",
-    "react": "^16.8.6",
-    "styled-components": "^4.3.2"
-  },
   "peerDependencies": {
     "prop-types": "^15.6.2",
     "react": "^16.8.6",

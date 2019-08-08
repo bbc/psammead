@@ -27,10 +27,5 @@
   ],
   "peerDependencies": {
     "moment": "^2.24.0"
-  },
-  "devDependencies": {
-    "@bbc/gel-foundations": "^3.2.0",
-    "@bbc/psammead-styles": "^2.0.1",
-    "moment": "^2.24.0"
   }
 }

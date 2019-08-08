@@ -18,11 +18,6 @@
     "url": "https://github.com/bbc/psammead/issues"
   },
   "homepage": "https://github.com/bbc/psammead/blob/latest/packages/components/psammead-visually-hidden-text/README.md",
-  "devDependencies": {
-    "@bbc/psammead-storybook-helpers": "^3.3.1",
-    "@bbc/psammead-test-helpers": "^1.1.0",
-    "styled-components": "^4.3.2"
-  },
   "peerDependencies": {
     "styled-components": "^4.3.2"
   },
