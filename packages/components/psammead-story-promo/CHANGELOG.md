@@ -3,6 +3,8 @@
 <!-- prettier-ignore -->
 | Version | Description |
 | ------- | ----------- |
+| 2.3.2 | [PR#1682](https://github.com/bbc/psammead/pull/1682) Move all dev dependencies to top level package.json |
+| 2.3.1 | [PR#1641](https://github.com/bbc/psammead/pull/1641) Bump dependencies |
 | 2.3.0 | [PR#1359](https://github.com/bbc/psammead/pull/1359) Add LiveLabel to story promo exports |
 | 2.2.1 | [PR#1502](https://github.com/bbc/psammead/pull/1502) Add media type knob to story |
 | 2.2.0 | [PR#1408](https://github.com/bbc/psammead/pull/1408) Use `@bbc/psammead-styles/detection` to detect grid support |
