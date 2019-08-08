@@ -11,19 +11,7 @@ import {
   GEL_SPACING_QUAD,
 } from '@bbc/gel-foundations/spacings';
 import { C_PEBBLE } from '@bbc/psammead-styles/colours';
-
 import { PlainTitle, LinkTitle } from './titles';
-
-const labelWrapperTopMargin = ({ script }) =>
-  script
-    ? `
-        margin-top: ${GEL_SPACING_QUAD};
-
-        ${MEDIA_QUERY_TYPOGRAPHY.LAPTOP_AND_LARGER} {
-          margin-top: ${GEL_SPACING_TRPL};
-        }
-      `
-    : `margin-top: ${GEL_SPACING_QUAD};`;
 
 const Bar = styled.div`
   border-top: 0.0625rem solid ${C_PEBBLE};
@@ -44,7 +32,12 @@ const Bar = styled.div`
 
 const SectionLabelWrapper = styled.div`
   position: relative;
-  ${labelWrapperTopMargin};
+
+  margin-top: ${GEL_SPACING_QUAD};
+
+  ${MEDIA_QUERY_TYPOGRAPHY.LAPTOP_AND_LARGER} {
+    margin-top: ${GEL_SPACING_TRPL};
+  }
 
   ${({ visuallyHidden }) =>
     visuallyHidden &&
@@ -62,8 +55,6 @@ const SectionLabelWrapper = styled.div`
 `;
 
 SectionLabelWrapper.propTypes = {
-  bar: bool.isRequired,
-  script: shape(scriptPropType).isRequired,
   visuallyHidden: bool.isRequired,
 };
 
@@ -84,11 +75,7 @@ const SectionLabel = ({
   service,
   visuallyHidden,
 }) => (
-  <SectionLabelWrapper
-    script={script}
-    bar={bar}
-    visuallyHidden={visuallyHidden}
-  >
+  <SectionLabelWrapper visuallyHidden={visuallyHidden}>
     {bar && <Bar script={script} />}
     <Heading script={script}>
       {linkText && href ? (
