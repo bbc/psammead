@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 1.1.1 | [PR#1682](https://github.com/bbc/psammead/pull/1682) Move all dev dependencies to top level package.json |
 | 1.1.0   | [PR#1233](https://github.com/bbc/psammead/pull/1233) Add ESM modules entry |
 | 1.0.2   | [PR#1083](https://github.com/bbc/psammead/pull/1083) Use `jest-styled-components@6.3.3` |
 | 1.0.1   | [PR#732](https://github.com/bbc/psammead/pull/732) Use @testing-library/react for generating snapshots |

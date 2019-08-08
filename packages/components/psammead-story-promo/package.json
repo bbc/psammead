@@ -19,18 +19,8 @@
   },
   "homepage": "https://github.com/bbc/psammead/blob/latest/packages/components/psammead-story-promo/README.md",
   "dependencies": {
-    "@bbc/gel-foundations": "^3.2.0",
-    "@bbc/psammead-styles": "^2.0.1"
-  },
-  "devDependencies": {
-    "@bbc/psammead-visually-hidden-text": "^1.1.1",
-    "@bbc/psammead-image": "^1.1.2",
-    "@bbc/psammead-media-indicator": "^2.3.2",
-    "@bbc/psammead-storybook-helpers": "^3.3.2",
-    "@bbc/psammead-test-helpers": "^1.1.0",
-    "@bbc/psammead-timestamp": "^2.1.2",
-    "react": "^16.8.6",
-    "styled-components": "^4.3.2"
+    "@bbc/gel-foundations": "^3.2.1",
+    "@bbc/psammead-styles": "^2.0.2"
   },
   "peerDependencies": {
     "react": "^16.8.6",
