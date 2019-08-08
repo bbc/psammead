@@ -1,4 +1,4 @@
-# Defintion of Done
+# Definition of Done
 ## ADR-0003
 
 * Status: Proposed
