@@ -38,20 +38,38 @@ const TimeDuration = styled.time`
   margin: 0 ${GEL_SPACING_HLF};
 `;
 
-const MediaIndicator = ({ datetime, duration, type, topStory, service }) => (
-  <MediaIndicatorWrapper
-    aria-hidden="true"
-    topStory={topStory}
-    service={service}
-  >
-    <FlexWrapper>
+const IndexAlsosMediaIndicator = styled.span`
+  & > svg {
+    margin: 0;
+  }
+`;
+
+const MediaIndicator = ({
+  datetime,
+  duration,
+  type,
+  topStory,
+  service,
+  indexAlsos,
+}) =>
+  indexAlsos ? (
+    <IndexAlsosMediaIndicator aria-hidden="true">
       {mediaIcons[type]}
-      {duration && datetime && (
-        <TimeDuration dateTime={datetime}>{duration}</TimeDuration>
-      )}
-    </FlexWrapper>
-  </MediaIndicatorWrapper>
-);
+    </IndexAlsosMediaIndicator>
+  ) : (
+    <MediaIndicatorWrapper
+      aria-hidden="true"
+      topStory={topStory}
+      service={service}
+    >
+      <FlexWrapper>
+        {mediaIcons[type]}
+        {duration && datetime && (
+          <TimeDuration dateTime={datetime}>{duration}</TimeDuration>
+        )}
+      </FlexWrapper>
+    </MediaIndicatorWrapper>
+  );
 
 MediaIndicator.propTypes = {
   datetime: string,
@@ -59,6 +77,7 @@ MediaIndicator.propTypes = {
   type: oneOf(['video', 'audio', 'photogallery']),
   topStory: bool,
   service: string.isRequired,
+  indexAlsos: bool,
 };
 
 MediaIndicator.defaultProps = {
@@ -66,6 +85,7 @@ MediaIndicator.defaultProps = {
   duration: null,
   type: 'video',
   topStory: false,
+  indexAlsos: false,
 };
 
 export default MediaIndicator;
