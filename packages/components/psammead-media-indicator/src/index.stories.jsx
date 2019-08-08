@@ -1,14 +1,14 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import styled from 'styled-components';
-import { withKnobs, text } from '@storybook/addon-knobs';
+import { withKnobs, text, boolean } from '@storybook/addon-knobs';
 import { dirDecorator } from '@bbc/psammead-storybook-helpers';
 import notes from '../README.md';
 import MediaIndicator from './index';
 
 // To ensure the white box in the media indicator is visible.
 const Page = styled.div`
-  background: black;
+  background: grey;
   height: 100vh;
 `;
 
@@ -20,7 +20,12 @@ storiesOf('Components|MediaIndicator/Video', module)
   .addDecorator(dirDecorator)
   .add(
     'video without duration',
-    ({ service }) => <MediaIndicator service={service} />,
+    ({ service }) => (
+      <MediaIndicator
+        service={service}
+        indexAlsos={boolean('Index Also', false)}
+      />
+    ),
     { notes },
   )
   .add(
@@ -55,7 +60,13 @@ storiesOf('Components|MediaIndicator/Audio', module)
   .addDecorator(dirDecorator)
   .add(
     'audio without duration',
-    ({ service }) => <MediaIndicator type="audio" service={service} />,
+    ({ service }) => (
+      <MediaIndicator
+        type="audio"
+        service={service}
+        indexAlsos={boolean('Index Also', false)}
+      />
+    ),
     { notes },
   )
   .add(
@@ -90,38 +101,19 @@ storiesOf('Components|MediaIndicator/Photo', module)
   .addDecorator(dirDecorator)
   .add(
     'photogallery',
-    ({ service }) => <MediaIndicator type="photogallery" service={service} />,
+    ({ service }) => (
+      <MediaIndicator
+        type="photogallery"
+        service={service}
+        indexAlsos={boolean('Index Also', false)}
+      />
+    ),
     { notes },
   )
   .add(
     'top story photogallery',
     ({ service }) => (
       <MediaIndicator type="photogallery" service={service} topStory />
-    ),
-    { notes },
-  );
-
-storiesOf('Components|MediaIndicator/Index Alsos', module)
-  .addDecorator(withKnobs)
-  .addDecorator(dirDecorator)
-  .add(
-    'audio',
-    ({ service }) => (
-      <MediaIndicator type="audio" service={service} indexAlsos />
-    ),
-    { notes },
-  )
-  .add(
-    'video',
-    ({ service }) => (
-      <MediaIndicator type="video" service={service} indexAlsos />
-    ),
-    { notes },
-  )
-  .add(
-    'photogallery',
-    ({ service }) => (
-      <MediaIndicator type="photogallery" service={service} indexAlsos />
     ),
     { notes },
   );
