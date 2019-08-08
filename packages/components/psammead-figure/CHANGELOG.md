@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 1.1.3 | [PR#1682](https://github.com/bbc/psammead/pull/1682) Move all dev dependencies to top level package.json |
 | 1.1.2 | [PR#1671](https://github.com/bbc/psammead/pull/1671) Bump dependencies |
 | 1.1.1 | [PR#1522](https://github.com/bbc/psammead/pull/1522) Clear storybook warnings |
 | 1.1.0 | [PR#1233](https://github.com/bbc/psammead/pull/1233) Add ESM modules entry |
