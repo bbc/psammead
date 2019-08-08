@@ -1,6 +1,6 @@
 {
   "name": "@bbc/psammead-brand",
-  "version": "4.2.3",
+  "version": "4.2.4",
   "main": "dist/index.js",
   "module": "esm/index.js",
   "sideEffects": false,
@@ -24,7 +24,7 @@
     "@bbc/psammead-visually-hidden-text": "^1.1.1"
   },
   "devDependencies": {
-    "@bbc/psammead-assets": "^1.1.1",
+    "@bbc/psammead-assets": "^2.0.0",
     "@bbc/psammead-storybook-helpers": "^3.3.2",
     "@bbc/psammead-test-helpers": "^1.1.0",
     "react": "^16.8.6",
