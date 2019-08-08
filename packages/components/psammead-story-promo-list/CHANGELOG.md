@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 | ------- | ----------- |
+| 2.0.0 | [PR#1643](https://github.com/bbc/psammead/pull/1643) Move vertical rhythm out of psammead |
 | 1.1.2 | [PR#1667](https://github.com/bbc/psammead/pull/1667) Bump dependencies |
 | 1.1.1 | [PR#1365](https://github.com/bbc/psammead/pull/1365) Bump psammead-styles to 1.2.0 |
 | 1.1.0 | [PR#1233](https://github.com/bbc/psammead/pull/1233) Add ESM modules entry |
