@@ -28,9 +28,6 @@ const titleMargins = `
 `;
 
 const Title = styled.span`
-  display: inline-block;
-  z-index: 1;
-
   ${({ script }) => script && getDoublePica(script)};
   ${({ service }) => getSansRegular(service)}
   color: ${C_EBON};
@@ -43,6 +40,10 @@ const Title = styled.span`
   @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
     ${paddingDir}: ${GEL_SPACING_DBL};
   }
+
+  /* needed to ensure always vertically centered even when FlexContainer changes alignment */
+  display: flex;
+  align-items: center;
 `;
 
 Title.propTypes = {
@@ -55,8 +56,14 @@ const FlexContainer = styled.span`
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
-  align-items: center;
   min-height: ${minClickableHeightRem}rem;
+
+  align-items: baseline;
+  ${MEDIA_QUERY_TYPOGRAPHY.LAPTOP_AND_LARGER} {
+    /* Allows the IndexLinkCta to take up extra vertical space and unsures bar is hidden
+       with very long section titles over 600px */
+    align-items: stretch;
+  }
 `;
 
 const FlexTextContainer = styled(FlexContainer).attrs({
@@ -88,7 +95,9 @@ const IndexLinkCta = styled.span.attrs({
 
   white-space: nowrap;
   ${paddingReverseDir}: ${GEL_SPACING_DBL};
-  z-index: 1;
+
+  display: flex;
+  align-items: center;
 `;
 
 export const PlainTitle = ({

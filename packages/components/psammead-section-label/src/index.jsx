@@ -17,6 +17,7 @@ const Bar = styled.div`
   border-top: 0.0625rem solid ${C_PEBBLE};
   left: 0;
   right: 0;
+  z-index: -1;
 
   @media screen and (-ms-high-contrast: active) {
     border-color: windowText;
