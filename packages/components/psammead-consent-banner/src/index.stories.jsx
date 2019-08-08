@@ -1,8 +1,8 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { withKnobs } from '@storybook/addon-knobs';
-import { inputProvider } from '@bbc/psammead-storybook-helpers';
-import { string } from 'prop-types';
+import { dirDecorator, inputProvider } from '@bbc/psammead-storybook-helpers';
+import { oneOf, string } from 'prop-types';
 import { ConsentBanner, ConsentBannerText } from '.';
 import notes from '../README.md';
 
@@ -16,22 +16,28 @@ const Reject = rejectText => (
   <a href="https://www.bbc.co.uk/usingthebbc/your-data-matters">{rejectText}</a>
 );
 
-const Text = ({ script, service, shortText, text }) => (
-  <ConsentBannerText script={script} service={service}>
+const Text = ({ dir, script, service, shortText, text }) => (
+  <ConsentBannerText dir={dir} script={script} service={service}>
     {`${text} `}
     <a href="https://www.bbc.com/news">{shortText}</a>
   </ConsentBannerText>
 );
 
 Text.propTypes = {
+  dir: oneOf(['ltr', 'rtl']),
   script: string.isRequired,
   service: string.isRequired,
   shortText: string.isRequired,
   text: string.isRequired,
 };
 
+Text.defaultProps = {
+  dir: 'ltr',
+};
+
 storiesOf('Components|ConsentBanner', module)
   .addDecorator(withKnobs)
+  .addDecorator(dirDecorator)
   .add(
     'default',
     inputProvider(
@@ -46,12 +52,13 @@ storiesOf('Components|ConsentBanner', module)
         },
       ],
 
-      ({ slotTexts: [title, text], script, service }) => {
+      ({ slotTexts: [title, text], dir, script, service }) => {
         const shortText = text.trim().split(' ')[0];
         return (
           <ConsentBanner
+            dir={dir}
             title={title}
-            text={Text({ script, service, text, shortText })}
+            text={Text({ dir, script, service, text, shortText })}
             accept={Accept(shortText)}
             reject={Reject(shortText)}
             script={script}
