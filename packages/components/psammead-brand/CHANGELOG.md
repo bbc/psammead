@@ -3,7 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 | ------- | ----------- |
-| 4.2.4   | [PR#xxx](https://github.com/bbc/psammead/pull/xxx) Bump to use @bbc/psammead-styles@2.0.0 |
+| 4.2.4   | [PR#1681](https://github.com/bbc/psammead/pull/1681) Bump to use @bbc/psammead-styles@2.0.0 |
 | 4.2.3   | [PR#1598](https://github.com/bbc/psammead/pull/1598) Bump dependencies |
 | 4.2.2 | [PR#1518](https://github.com/bbc/psammead/pull/1518) Clear unit test warnings |
 | 4.2.1 | [PR#1365](https://github.com/bbc/psammead/pull/1365) Bump psammead-styles to 1.2.0 |

@@ -3,7 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
-| 1.1.3 | [PR#xxx](https://github.com/bbc/psammead/pull/xxx) Bump to use @bbc/psammead-styles@2.0.0 |
+| 1.1.3 | [PR#1681](https://github.com/bbc/psammead/pull/1681) Bump to use @bbc/psammead-styles@2.0.0 |
 | 1.1.2 | [PR#1597](https://github.com/bbc/psammead/pull/1597) Bump @bbc/psammead-assets, @bbc/psammead-test-helpers |
 | 1.1.1 | [PR#1518](https://github.com/bbc/psammead/pull/1518) Clear unit test warnings |
 | 1.1.0 | [PR#1233](https://github.com/bbc/psammead/pull/1233) Add ESM modules entry |

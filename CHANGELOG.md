@@ -3,7 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
-| 1.4.3 | [PR#xxx](https://github.com/bbc/psammead/pull/xxx) Bump to use @bbc/psammead-styles@2.0.0 |
+| 1.4.3 | [PR#1681](https://github.com/bbc/psammead/pull/1681) Bump to use @bbc/psammead-styles@2.0.0 |
 | 1.4.2  | [PR#1592](https://github.com/bbc/psammead/pull/1592) Bump storybook-readme, storybook-chromatic, @storybook/addon-notes, @storybook/addon-viewport, @storybook/react, gh-pages, @storybook/addon-knobs, @storybook/addon-actions, @bbc/psammead-assets, husky |
 | 1.4.1 | [PR#1566](https://github.com/bbc/psammead/pull/1566) Bump @babel/preset-env, eslint-plugin-import, eslint-plugin-react, semver, @babel/cli,@babel/core, @babel/plugin-transform-runtime, @testing-library/react, lerna, @bbc/psammead-styles |
 | 1.4.0 | [PR#1212](https://github.com/bbc/psammead/pull/1212) Add export default from babel plugin |
