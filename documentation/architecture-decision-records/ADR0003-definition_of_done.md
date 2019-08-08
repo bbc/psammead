@@ -19,7 +19,10 @@ We require a definitive description of when a particular piece of work in Psamme
 
 ## When working on PRs that are not yet ready for production use:
 
-Use an alpha version - is where `package.json` / `package-lock.json` version has format `0.0.0.alpha.0` & `alpha` tag.
+Use an alpha version - is where `package.json` / `package-lock.json` version has format `0.0.0.alpha.0` & `alpha` tag, and add the below text to the top of the README:
+
+  > ### ⛔️ This is an alpha component ⛔️
+  > This component is currently tagged as alpha and is not suitable for production use. Following the passing of an accessibility review this component will be marked as ready for production and the alpha tag removed.
 
 - This is an industry standard way to enable publishing a package that is not yet ready for use in a production environment.
 - We should never use alpha versions of components in our production application.
