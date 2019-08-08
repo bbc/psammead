@@ -21,7 +21,7 @@ const inputProvider = (slots, componentFunction, services) => () => {
     // displaying English language on the story, set the default text for
     // this knob to defaultText.
     // When we switch to a language other than English, set the
-    // text for the knob to the snippet from LANGUAGE_VARIANTS for that
+    // text for the slot to the snippet from LANGUAGE_VARIANTS for that
     // language.
     return defaultText && isNews ? defaultText : service.text;
   });
