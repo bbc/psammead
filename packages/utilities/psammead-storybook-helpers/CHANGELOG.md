@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 3.3.4   | [PR#1599](https://github.com/bbc/psammead/pull/1599) Bump dependencies |
 | 3.3.3 | [PR#1682](https://github.com/bbc/psammead/pull/1682) Move all dev dependencies to top level package.json |
 | 3.3.2 | [PR#1595](https://github.com/bbc/psammead/pull/1595) Bump `@bbc/gel-foundations` |
 | 3.3.1 | [PR#1479](https://github.com/bbc/psammead/pull/1479) Import all scripts from gel-foundations |

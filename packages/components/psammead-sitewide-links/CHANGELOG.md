@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 3.0.3   | [PR#1599](https://github.com/bbc/psammead/pull/1599) Bump dependencies |
 | 3.0.2 | [PR#1682](https://github.com/bbc/psammead/pull/1682) Move all dev dependencies to top level package.json |
 | 3.0.1 | [PR#1599](https://github.com/bbc/psammead/pull/1599) Bump dependencies |
 | 3.0.0 | [PR#1524](https://github.com/bbc/psammead/pull/1524) Change `copyrighText` prop from `string` to `node`  |

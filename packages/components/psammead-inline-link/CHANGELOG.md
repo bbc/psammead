@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 1.2.4   | [PR#1599](https://github.com/bbc/psammead/pull/1599) Bump dependencies |
 | 1.2.3 | [PR#1682](https://github.com/bbc/psammead/pull/1682) Move all dev dependencies to top level package.json |
 | 1.2.2 | [PR#1599](https://github.com/bbc/psammead/pull/1599) Bump dependencies |
 | 1.2.1 | [PR#1413](https://github.com/bbc/psammead/pull/1413) Revert alpha changes while they undergo external accessibility review |
