@@ -19,7 +19,7 @@ We require a definitive description of when a particular piece of work in Psamme
 
 ## When working on PRs that are not yet ready for production use:
 
-Use an alpha version - is where `package.json` / `package-lock.json` version has format `0.0.0.alpha.0` & `alpha tag`.
+Use an alpha version - is where `package.json` / `package-lock.json` version has format `0.0.0.alpha.0` & `alpha` tag.
 
 - This is an industry standard way to enable publishing a package that is not yet ready for use in a production environment.
 - We should never use alpha versions of components in our production application.
@@ -41,16 +41,16 @@ We use our resources and time effectively and therefore have different levels of
 #### Developer accessibility swarm for:
 - Components that are intended to be used by other components and not intended to be used in isolation i.e. a component part or sub component of a feature
 
-For example, [image caption](https://bbc.github.io/psammead/?path=/story/caption--default) would be considered a component part or sub component
+  > For example, [image caption](https://bbc.github.io/psammead/?path=/story/caption--default) would be considered a component part or sub component
 
 - A small change to a live component
 
-For example - changing a color, etc.
+  > For example - changing a color, etc.
 
 #### Team accessibility swarm for:
 - Something that won’t form part of another component - e.g. a full component or feature
 
-An example of this is [figure with caption](https://bbc.github.io/psammead/?path=/story/figure--containing-image-imageplaceholder-copyright-and-caption)
+  > An example of this is [figure with caption](https://bbc.github.io/psammead/?path=/story/figure--containing-image-imageplaceholder-copyright-and-caption)
 
 - A substantial change to a live component
 
