@@ -52,7 +52,9 @@ const getIndexAlsosMediaIndicator = (cpsType, service) => {
   // Update this once the ARES feed contains the media type
   const indexAlsosMediaType = isPGL ? 'photogallery' : 'video';
 
-  return <MediaIndicator service={service} type={indexAlsosMediaType} />; // Add indexAlsos prop
+  return (
+    <MediaIndicator service={service} type={indexAlsosMediaType} indexAlsos />
+  );
 };
 
 /* eslint-disable-next-line react/prop-types */
