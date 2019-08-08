@@ -1,6 +1,25 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`SectionLabel When hideSectionHeader is true should add styling to hide SectionLabel when width of screen is less than 600 px 1`] = `
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row nowrap;
+  -ms-flex-flow: row nowrap;
+  flex-flow: row nowrap;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  min-height: 2.75rem;
+  -webkit-align-items: baseline;
+  -webkit-box-align: baseline;
+  -ms-flex-align: baseline;
+  align-items: baseline;
+}
+
 .c3 {
   font-size: 1.125rem;
   line-height: 1.375rem;
@@ -21,25 +40,6 @@ exports[`SectionLabel When hideSectionHeader is true should add styling to hide 
   align-items: center;
 }
 
-.c2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-flow: row nowrap;
-  -ms-flex-flow: row nowrap;
-  flex-flow: row nowrap;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  min-height: 2.75rem;
-  -webkit-align-items: baseline;
-  -webkit-box-align: baseline;
-  -ms-flex-align: baseline;
-  align-items: baseline;
-}
-
 .c0 {
   position: relative;
   margin-top: 2rem;
@@ -48,6 +48,15 @@ exports[`SectionLabel When hideSectionHeader is true should add styling to hide 
 .c1 {
   margin: 0;
   padding: 0;
+}
+
+@media (min-width:37.5rem) {
+  .c2 {
+    -webkit-align-items: stretch;
+    -webkit-box-align: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+  }
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
@@ -73,15 +82,6 @@ exports[`SectionLabel When hideSectionHeader is true should add styling to hide 
 @media (min-width:37.5rem) {
   .c3 {
     padding-right: 1rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c2 {
-    -webkit-align-items: stretch;
-    -webkit-box-align: stretch;
-    -ms-flex-align: stretch;
-    align-items: stretch;
   }
 }
 
@@ -126,24 +126,16 @@ exports[`SectionLabel When hideSectionHeader is true should add styling to hide 
 `;
 
 exports[`SectionLabel With bar With linking title should render correctly 1`] = `
-.c5 {
-  font-size: 1.125rem;
-  line-height: 1.375rem;
-  font-family: ReithSans,Helvetica,Arial,sans-serif;
-  font-weight: 400;
-  font-style: normal;
+.c3 {
   color: #222222;
-  background-color: #FFFFFF;
-  margin: 1rem 0;
-  padding-right: 0.5rem;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c3:focus,
+.c3:hover {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
 }
 
 .c4 {
@@ -165,16 +157,24 @@ exports[`SectionLabel With bar With linking title should render correctly 1`] = 
   align-items: baseline;
 }
 
-.c3 {
+.c5 {
+  font-size: 1.125rem;
+  line-height: 1.375rem;
+  font-family: ReithSans,Helvetica,Arial,sans-serif;
+  font-weight: 400;
+  font-style: normal;
   color: #222222;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-}
-
-.c3:focus,
-.c3:hover {
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
+  background-color: #FFFFFF;
+  margin: 1rem 0;
+  padding-right: 0.5rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .c6 {
@@ -200,8 +200,6 @@ exports[`SectionLabel With bar With linking title should render correctly 1`] = 
 
 .c1 {
   border-top: 0.0625rem solid #AEAEB5;
-  left: 0;
-  right: 0;
   z-index: -1;
 }
 
@@ -213,6 +211,15 @@ exports[`SectionLabel With bar With linking title should render correctly 1`] = 
 .c2 {
   margin: 0;
   padding: 0;
+}
+
+@media (min-width:37.5rem) {
+  .c4 {
+    -webkit-align-items: stretch;
+    -webkit-box-align: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+  }
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
@@ -238,15 +245,6 @@ exports[`SectionLabel With bar With linking title should render correctly 1`] = 
 @media (min-width:37.5rem) {
   .c5 {
     padding-right: 1rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c4 {
-    -webkit-align-items: stretch;
-    -webkit-box-align: stretch;
-    -ms-flex-align: stretch;
-    align-items: stretch;
   }
 }
 
@@ -279,6 +277,8 @@ exports[`SectionLabel With bar With linking title should render correctly 1`] = 
 @media (min-width:37.5rem) {
   .c1 {
     position: absolute;
+    left: 0;
+    right: 0;
     top: 1.375rem;
   }
 }
@@ -328,24 +328,16 @@ exports[`SectionLabel With bar With linking title should render correctly 1`] = 
 `;
 
 exports[`SectionLabel With bar With linking title should render correctly with arabic script typography values 1`] = `
-.c5 {
-  font-size: 1.5rem;
-  line-height: 2rem;
-  font-family: "BBC Nassim Persian",Arial,Verdana,Geneva,Helvetica,sans-serif;
-  font-weight: 400;
-  font-style: normal;
+.c3 {
   color: #222222;
-  background-color: #FFFFFF;
-  margin: 1rem 0;
-  padding-left: 0.5rem;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c3:focus,
+.c3:hover {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
 }
 
 .c4 {
@@ -367,16 +359,24 @@ exports[`SectionLabel With bar With linking title should render correctly with a
   align-items: baseline;
 }
 
-.c3 {
+.c5 {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-family: "BBC Nassim Persian",Arial,Verdana,Geneva,Helvetica,sans-serif;
+  font-weight: 400;
+  font-style: normal;
   color: #222222;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-}
-
-.c3:focus,
-.c3:hover {
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
+  background-color: #FFFFFF;
+  margin: 1rem 0;
+  padding-left: 0.5rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .c6 {
@@ -402,8 +402,6 @@ exports[`SectionLabel With bar With linking title should render correctly with a
 
 .c1 {
   border-top: 0.0625rem solid #AEAEB5;
-  left: 0;
-  right: 0;
   z-index: -1;
 }
 
@@ -415,6 +413,15 @@ exports[`SectionLabel With bar With linking title should render correctly with a
 .c2 {
   margin: 0;
   padding: 0;
+}
+
+@media (min-width:37.5rem) {
+  .c4 {
+    -webkit-align-items: stretch;
+    -webkit-box-align: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+  }
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
@@ -440,15 +447,6 @@ exports[`SectionLabel With bar With linking title should render correctly with a
 @media (min-width:37.5rem) {
   .c5 {
     padding-left: 1rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c4 {
-    -webkit-align-items: stretch;
-    -webkit-box-align: stretch;
-    -ms-flex-align: stretch;
-    align-items: stretch;
   }
 }
 
@@ -481,6 +479,8 @@ exports[`SectionLabel With bar With linking title should render correctly with a
 @media (min-width:37.5rem) {
   .c1 {
     position: absolute;
+    left: 0;
+    right: 0;
     top: 1.625rem;
   }
 }
@@ -530,24 +530,16 @@ exports[`SectionLabel With bar With linking title should render correctly with a
 `;
 
 exports[`SectionLabel With bar With linking title should render correctly with explicit text direction 1`] = `
-.c5 {
-  font-size: 1.125rem;
-  line-height: 1.375rem;
-  font-family: ReithSans,Helvetica,Arial,sans-serif;
-  font-weight: 400;
-  font-style: normal;
+.c3 {
   color: #222222;
-  background-color: #FFFFFF;
-  margin: 1rem 0;
-  padding-right: 0.5rem;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c3:focus,
+.c3:hover {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
 }
 
 .c4 {
@@ -569,16 +561,24 @@ exports[`SectionLabel With bar With linking title should render correctly with e
   align-items: baseline;
 }
 
-.c3 {
+.c5 {
+  font-size: 1.125rem;
+  line-height: 1.375rem;
+  font-family: ReithSans,Helvetica,Arial,sans-serif;
+  font-weight: 400;
+  font-style: normal;
   color: #222222;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-}
-
-.c3:focus,
-.c3:hover {
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
+  background-color: #FFFFFF;
+  margin: 1rem 0;
+  padding-right: 0.5rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .c6 {
@@ -604,8 +604,6 @@ exports[`SectionLabel With bar With linking title should render correctly with e
 
 .c1 {
   border-top: 0.0625rem solid #AEAEB5;
-  left: 0;
-  right: 0;
   z-index: -1;
 }
 
@@ -617,6 +615,15 @@ exports[`SectionLabel With bar With linking title should render correctly with e
 .c2 {
   margin: 0;
   padding: 0;
+}
+
+@media (min-width:37.5rem) {
+  .c4 {
+    -webkit-align-items: stretch;
+    -webkit-box-align: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+  }
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
@@ -642,15 +649,6 @@ exports[`SectionLabel With bar With linking title should render correctly with e
 @media (min-width:37.5rem) {
   .c5 {
     padding-right: 1rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c4 {
-    -webkit-align-items: stretch;
-    -webkit-box-align: stretch;
-    -ms-flex-align: stretch;
-    align-items: stretch;
   }
 }
 
@@ -683,6 +681,8 @@ exports[`SectionLabel With bar With linking title should render correctly with e
 @media (min-width:37.5rem) {
   .c1 {
     position: absolute;
+    left: 0;
+    right: 0;
     top: 1.375rem;
   }
 }
@@ -732,24 +732,16 @@ exports[`SectionLabel With bar With linking title should render correctly with e
 `;
 
 exports[`SectionLabel With bar With linking title should render correctly with explicitly showing the bar 1`] = `
-.c5 {
-  font-size: 1.125rem;
-  line-height: 1.375rem;
-  font-family: ReithSans,Helvetica,Arial,sans-serif;
-  font-weight: 400;
-  font-style: normal;
+.c3 {
   color: #222222;
-  background-color: #FFFFFF;
-  margin: 1rem 0;
-  padding-right: 0.5rem;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c3:focus,
+.c3:hover {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
 }
 
 .c4 {
@@ -771,16 +763,24 @@ exports[`SectionLabel With bar With linking title should render correctly with e
   align-items: baseline;
 }
 
-.c3 {
+.c5 {
+  font-size: 1.125rem;
+  line-height: 1.375rem;
+  font-family: ReithSans,Helvetica,Arial,sans-serif;
+  font-weight: 400;
+  font-style: normal;
   color: #222222;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-}
-
-.c3:focus,
-.c3:hover {
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
+  background-color: #FFFFFF;
+  margin: 1rem 0;
+  padding-right: 0.5rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .c6 {
@@ -806,8 +806,6 @@ exports[`SectionLabel With bar With linking title should render correctly with e
 
 .c1 {
   border-top: 0.0625rem solid #AEAEB5;
-  left: 0;
-  right: 0;
   z-index: -1;
 }
 
@@ -819,6 +817,15 @@ exports[`SectionLabel With bar With linking title should render correctly with e
 .c2 {
   margin: 0;
   padding: 0;
+}
+
+@media (min-width:37.5rem) {
+  .c4 {
+    -webkit-align-items: stretch;
+    -webkit-box-align: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+  }
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
@@ -844,15 +851,6 @@ exports[`SectionLabel With bar With linking title should render correctly with e
 @media (min-width:37.5rem) {
   .c5 {
     padding-right: 1rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c4 {
-    -webkit-align-items: stretch;
-    -webkit-box-align: stretch;
-    -ms-flex-align: stretch;
-    align-items: stretch;
   }
 }
 
@@ -885,6 +883,8 @@ exports[`SectionLabel With bar With linking title should render correctly with e
 @media (min-width:37.5rem) {
   .c1 {
     position: absolute;
+    left: 0;
+    right: 0;
     top: 1.375rem;
   }
 }
@@ -934,6 +934,25 @@ exports[`SectionLabel With bar With linking title should render correctly with e
 `;
 
 exports[`SectionLabel With bar With plain title should render correctly 1`] = `
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row nowrap;
+  -ms-flex-flow: row nowrap;
+  flex-flow: row nowrap;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  min-height: 2.75rem;
+  -webkit-align-items: baseline;
+  -webkit-box-align: baseline;
+  -ms-flex-align: baseline;
+  align-items: baseline;
+}
+
 .c4 {
   font-size: 1.125rem;
   line-height: 1.375rem;
@@ -954,29 +973,8 @@ exports[`SectionLabel With bar With plain title should render correctly 1`] = `
   align-items: center;
 }
 
-.c3 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-flow: row nowrap;
-  -ms-flex-flow: row nowrap;
-  flex-flow: row nowrap;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  min-height: 2.75rem;
-  -webkit-align-items: baseline;
-  -webkit-box-align: baseline;
-  -ms-flex-align: baseline;
-  align-items: baseline;
-}
-
 .c1 {
   border-top: 0.0625rem solid #AEAEB5;
-  left: 0;
-  right: 0;
   z-index: -1;
 }
 
@@ -988,6 +986,15 @@ exports[`SectionLabel With bar With plain title should render correctly 1`] = `
 .c2 {
   margin: 0;
   padding: 0;
+}
+
+@media (min-width:37.5rem) {
+  .c3 {
+    -webkit-align-items: stretch;
+    -webkit-box-align: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+  }
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
@@ -1016,15 +1023,6 @@ exports[`SectionLabel With bar With plain title should render correctly 1`] = `
   }
 }
 
-@media (min-width:37.5rem) {
-  .c3 {
-    -webkit-align-items: stretch;
-    -webkit-box-align: stretch;
-    -ms-flex-align: stretch;
-    align-items: stretch;
-  }
-}
-
 @media screen and (-ms-high-contrast:active) {
   .c1 {
     border-color: windowText;
@@ -1034,6 +1032,8 @@ exports[`SectionLabel With bar With plain title should render correctly 1`] = `
 @media (min-width:37.5rem) {
   .c1 {
     position: absolute;
+    left: 0;
+    right: 0;
     top: 1.375rem;
   }
 }
@@ -1069,6 +1069,25 @@ exports[`SectionLabel With bar With plain title should render correctly 1`] = `
 `;
 
 exports[`SectionLabel With bar With plain title should render correctly with arabic script typography values 1`] = `
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row nowrap;
+  -ms-flex-flow: row nowrap;
+  flex-flow: row nowrap;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  min-height: 2.75rem;
+  -webkit-align-items: baseline;
+  -webkit-box-align: baseline;
+  -ms-flex-align: baseline;
+  align-items: baseline;
+}
+
 .c4 {
   font-size: 1.5rem;
   line-height: 2rem;
@@ -1089,29 +1108,8 @@ exports[`SectionLabel With bar With plain title should render correctly with ara
   align-items: center;
 }
 
-.c3 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-flow: row nowrap;
-  -ms-flex-flow: row nowrap;
-  flex-flow: row nowrap;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  min-height: 2.75rem;
-  -webkit-align-items: baseline;
-  -webkit-box-align: baseline;
-  -ms-flex-align: baseline;
-  align-items: baseline;
-}
-
 .c1 {
   border-top: 0.0625rem solid #AEAEB5;
-  left: 0;
-  right: 0;
   z-index: -1;
 }
 
@@ -1123,6 +1121,15 @@ exports[`SectionLabel With bar With plain title should render correctly with ara
 .c2 {
   margin: 0;
   padding: 0;
+}
+
+@media (min-width:37.5rem) {
+  .c3 {
+    -webkit-align-items: stretch;
+    -webkit-box-align: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+  }
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
@@ -1151,15 +1158,6 @@ exports[`SectionLabel With bar With plain title should render correctly with ara
   }
 }
 
-@media (min-width:37.5rem) {
-  .c3 {
-    -webkit-align-items: stretch;
-    -webkit-box-align: stretch;
-    -ms-flex-align: stretch;
-    align-items: stretch;
-  }
-}
-
 @media screen and (-ms-high-contrast:active) {
   .c1 {
     border-color: windowText;
@@ -1169,6 +1167,8 @@ exports[`SectionLabel With bar With plain title should render correctly with ara
 @media (min-width:37.5rem) {
   .c1 {
     position: absolute;
+    left: 0;
+    right: 0;
     top: 1.625rem;
   }
 }
@@ -1204,6 +1204,25 @@ exports[`SectionLabel With bar With plain title should render correctly with ara
 `;
 
 exports[`SectionLabel With bar With plain title should render correctly with explicit text direction 1`] = `
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row nowrap;
+  -ms-flex-flow: row nowrap;
+  flex-flow: row nowrap;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  min-height: 2.75rem;
+  -webkit-align-items: baseline;
+  -webkit-box-align: baseline;
+  -ms-flex-align: baseline;
+  align-items: baseline;
+}
+
 .c4 {
   font-size: 1.125rem;
   line-height: 1.375rem;
@@ -1224,29 +1243,8 @@ exports[`SectionLabel With bar With plain title should render correctly with exp
   align-items: center;
 }
 
-.c3 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-flow: row nowrap;
-  -ms-flex-flow: row nowrap;
-  flex-flow: row nowrap;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  min-height: 2.75rem;
-  -webkit-align-items: baseline;
-  -webkit-box-align: baseline;
-  -ms-flex-align: baseline;
-  align-items: baseline;
-}
-
 .c1 {
   border-top: 0.0625rem solid #AEAEB5;
-  left: 0;
-  right: 0;
   z-index: -1;
 }
 
@@ -1258,6 +1256,15 @@ exports[`SectionLabel With bar With plain title should render correctly with exp
 .c2 {
   margin: 0;
   padding: 0;
+}
+
+@media (min-width:37.5rem) {
+  .c3 {
+    -webkit-align-items: stretch;
+    -webkit-box-align: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+  }
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
@@ -1286,15 +1293,6 @@ exports[`SectionLabel With bar With plain title should render correctly with exp
   }
 }
 
-@media (min-width:37.5rem) {
-  .c3 {
-    -webkit-align-items: stretch;
-    -webkit-box-align: stretch;
-    -ms-flex-align: stretch;
-    align-items: stretch;
-  }
-}
-
 @media screen and (-ms-high-contrast:active) {
   .c1 {
     border-color: windowText;
@@ -1304,6 +1302,8 @@ exports[`SectionLabel With bar With plain title should render correctly with exp
 @media (min-width:37.5rem) {
   .c1 {
     position: absolute;
+    left: 0;
+    right: 0;
     top: 1.375rem;
   }
 }
@@ -1339,6 +1339,25 @@ exports[`SectionLabel With bar With plain title should render correctly with exp
 `;
 
 exports[`SectionLabel With bar With plain title should render correctly with explicitly showing the bar 1`] = `
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row nowrap;
+  -ms-flex-flow: row nowrap;
+  flex-flow: row nowrap;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  min-height: 2.75rem;
+  -webkit-align-items: baseline;
+  -webkit-box-align: baseline;
+  -ms-flex-align: baseline;
+  align-items: baseline;
+}
+
 .c4 {
   font-size: 1.125rem;
   line-height: 1.375rem;
@@ -1359,29 +1378,8 @@ exports[`SectionLabel With bar With plain title should render correctly with exp
   align-items: center;
 }
 
-.c3 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-flow: row nowrap;
-  -ms-flex-flow: row nowrap;
-  flex-flow: row nowrap;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  min-height: 2.75rem;
-  -webkit-align-items: baseline;
-  -webkit-box-align: baseline;
-  -ms-flex-align: baseline;
-  align-items: baseline;
-}
-
 .c1 {
   border-top: 0.0625rem solid #AEAEB5;
-  left: 0;
-  right: 0;
   z-index: -1;
 }
 
@@ -1393,6 +1391,15 @@ exports[`SectionLabel With bar With plain title should render correctly with exp
 .c2 {
   margin: 0;
   padding: 0;
+}
+
+@media (min-width:37.5rem) {
+  .c3 {
+    -webkit-align-items: stretch;
+    -webkit-box-align: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+  }
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
@@ -1421,15 +1428,6 @@ exports[`SectionLabel With bar With plain title should render correctly with exp
   }
 }
 
-@media (min-width:37.5rem) {
-  .c3 {
-    -webkit-align-items: stretch;
-    -webkit-box-align: stretch;
-    -ms-flex-align: stretch;
-    align-items: stretch;
-  }
-}
-
 @media screen and (-ms-high-contrast:active) {
   .c1 {
     border-color: windowText;
@@ -1439,6 +1437,8 @@ exports[`SectionLabel With bar With plain title should render correctly with exp
 @media (min-width:37.5rem) {
   .c1 {
     position: absolute;
+    left: 0;
+    right: 0;
     top: 1.375rem;
   }
 }
@@ -1474,24 +1474,16 @@ exports[`SectionLabel With bar With plain title should render correctly with exp
 `;
 
 exports[`SectionLabel Without bar With linking title should render correctly 1`] = `
-.c4 {
-  font-size: 1.125rem;
-  line-height: 1.375rem;
-  font-family: ReithSans,Helvetica,Arial,sans-serif;
-  font-weight: 400;
-  font-style: normal;
+.c2 {
   color: #222222;
-  background-color: #FFFFFF;
-  margin: 1rem 0;
-  padding-right: 0.5rem;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c2:focus,
+.c2:hover {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
 }
 
 .c3 {
@@ -1513,16 +1505,24 @@ exports[`SectionLabel Without bar With linking title should render correctly 1`]
   align-items: baseline;
 }
 
-.c2 {
+.c4 {
+  font-size: 1.125rem;
+  line-height: 1.375rem;
+  font-family: ReithSans,Helvetica,Arial,sans-serif;
+  font-weight: 400;
+  font-style: normal;
   color: #222222;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-}
-
-.c2:focus,
-.c2:hover {
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
+  background-color: #FFFFFF;
+  margin: 1rem 0;
+  padding-right: 0.5rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .c5 {
@@ -1556,6 +1556,15 @@ exports[`SectionLabel Without bar With linking title should render correctly 1`]
   padding: 0;
 }
 
+@media (min-width:37.5rem) {
+  .c3 {
+    -webkit-align-items: stretch;
+    -webkit-box-align: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+  }
+}
+
 @media (min-width:20rem) and (max-width:37.4375rem) {
   .c4 {
     font-size: 1.25rem;
@@ -1579,15 +1588,6 @@ exports[`SectionLabel Without bar With linking title should render correctly 1`]
 @media (min-width:37.5rem) {
   .c4 {
     padding-right: 1rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c3 {
-    -webkit-align-items: stretch;
-    -webkit-box-align: stretch;
-    -ms-flex-align: stretch;
-    align-items: stretch;
   }
 }
 
@@ -1653,24 +1653,16 @@ exports[`SectionLabel Without bar With linking title should render correctly 1`]
 `;
 
 exports[`SectionLabel Without bar With linking title should render correctly with arabic script typography values 1`] = `
-.c4 {
-  font-size: 1.5rem;
-  line-height: 2rem;
-  font-family: "BBC Nassim Persian",Arial,Verdana,Geneva,Helvetica,sans-serif;
-  font-weight: 400;
-  font-style: normal;
+.c2 {
   color: #222222;
-  background-color: #FFFFFF;
-  margin: 1rem 0;
-  padding-left: 0.5rem;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c2:focus,
+.c2:hover {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
 }
 
 .c3 {
@@ -1692,16 +1684,24 @@ exports[`SectionLabel Without bar With linking title should render correctly wit
   align-items: baseline;
 }
 
-.c2 {
+.c4 {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-family: "BBC Nassim Persian",Arial,Verdana,Geneva,Helvetica,sans-serif;
+  font-weight: 400;
+  font-style: normal;
   color: #222222;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-}
-
-.c2:focus,
-.c2:hover {
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
+  background-color: #FFFFFF;
+  margin: 1rem 0;
+  padding-left: 0.5rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .c5 {
@@ -1735,6 +1735,15 @@ exports[`SectionLabel Without bar With linking title should render correctly wit
   padding: 0;
 }
 
+@media (min-width:37.5rem) {
+  .c3 {
+    -webkit-align-items: stretch;
+    -webkit-box-align: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+  }
+}
+
 @media (min-width:20rem) and (max-width:37.4375rem) {
   .c4 {
     font-size: 1.625rem;
@@ -1758,15 +1767,6 @@ exports[`SectionLabel Without bar With linking title should render correctly wit
 @media (min-width:37.5rem) {
   .c4 {
     padding-left: 1rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c3 {
-    -webkit-align-items: stretch;
-    -webkit-box-align: stretch;
-    -ms-flex-align: stretch;
-    align-items: stretch;
   }
 }
 
@@ -1832,24 +1832,16 @@ exports[`SectionLabel Without bar With linking title should render correctly wit
 `;
 
 exports[`SectionLabel Without bar With linking title should render correctly with explicit text direction 1`] = `
-.c4 {
-  font-size: 1.125rem;
-  line-height: 1.375rem;
-  font-family: ReithSans,Helvetica,Arial,sans-serif;
-  font-weight: 400;
-  font-style: normal;
+.c2 {
   color: #222222;
-  background-color: #FFFFFF;
-  margin: 1rem 0;
-  padding-right: 0.5rem;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c2:focus,
+.c2:hover {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
 }
 
 .c3 {
@@ -1871,16 +1863,24 @@ exports[`SectionLabel Without bar With linking title should render correctly wit
   align-items: baseline;
 }
 
-.c2 {
+.c4 {
+  font-size: 1.125rem;
+  line-height: 1.375rem;
+  font-family: ReithSans,Helvetica,Arial,sans-serif;
+  font-weight: 400;
+  font-style: normal;
   color: #222222;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-}
-
-.c2:focus,
-.c2:hover {
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
+  background-color: #FFFFFF;
+  margin: 1rem 0;
+  padding-right: 0.5rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .c5 {
@@ -1914,6 +1914,15 @@ exports[`SectionLabel Without bar With linking title should render correctly wit
   padding: 0;
 }
 
+@media (min-width:37.5rem) {
+  .c3 {
+    -webkit-align-items: stretch;
+    -webkit-box-align: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+  }
+}
+
 @media (min-width:20rem) and (max-width:37.4375rem) {
   .c4 {
     font-size: 1.25rem;
@@ -1937,15 +1946,6 @@ exports[`SectionLabel Without bar With linking title should render correctly wit
 @media (min-width:37.5rem) {
   .c4 {
     padding-right: 1rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c3 {
-    -webkit-align-items: stretch;
-    -webkit-box-align: stretch;
-    -ms-flex-align: stretch;
-    align-items: stretch;
   }
 }
 
@@ -2011,6 +2011,25 @@ exports[`SectionLabel Without bar With linking title should render correctly wit
 `;
 
 exports[`SectionLabel Without bar With plain title should render correctly 1`] = `
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row nowrap;
+  -ms-flex-flow: row nowrap;
+  flex-flow: row nowrap;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  min-height: 2.75rem;
+  -webkit-align-items: baseline;
+  -webkit-box-align: baseline;
+  -ms-flex-align: baseline;
+  align-items: baseline;
+}
+
 .c3 {
   font-size: 1.125rem;
   line-height: 1.375rem;
@@ -2031,25 +2050,6 @@ exports[`SectionLabel Without bar With plain title should render correctly 1`] =
   align-items: center;
 }
 
-.c2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-flow: row nowrap;
-  -ms-flex-flow: row nowrap;
-  flex-flow: row nowrap;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  min-height: 2.75rem;
-  -webkit-align-items: baseline;
-  -webkit-box-align: baseline;
-  -ms-flex-align: baseline;
-  align-items: baseline;
-}
-
 .c0 {
   position: relative;
   margin-top: 2rem;
@@ -2058,6 +2058,15 @@ exports[`SectionLabel Without bar With plain title should render correctly 1`] =
 .c1 {
   margin: 0;
   padding: 0;
+}
+
+@media (min-width:37.5rem) {
+  .c2 {
+    -webkit-align-items: stretch;
+    -webkit-box-align: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+  }
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
@@ -2083,15 +2092,6 @@ exports[`SectionLabel Without bar With plain title should render correctly 1`] =
 @media (min-width:37.5rem) {
   .c3 {
     padding-right: 1rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c2 {
-    -webkit-align-items: stretch;
-    -webkit-box-align: stretch;
-    -ms-flex-align: stretch;
-    align-items: stretch;
   }
 }
 
@@ -2123,6 +2123,25 @@ exports[`SectionLabel Without bar With plain title should render correctly 1`] =
 `;
 
 exports[`SectionLabel Without bar With plain title should render correctly with arabic script typography values 1`] = `
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row nowrap;
+  -ms-flex-flow: row nowrap;
+  flex-flow: row nowrap;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  min-height: 2.75rem;
+  -webkit-align-items: baseline;
+  -webkit-box-align: baseline;
+  -ms-flex-align: baseline;
+  align-items: baseline;
+}
+
 .c3 {
   font-size: 1.5rem;
   line-height: 2rem;
@@ -2143,25 +2162,6 @@ exports[`SectionLabel Without bar With plain title should render correctly with 
   align-items: center;
 }
 
-.c2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-flow: row nowrap;
-  -ms-flex-flow: row nowrap;
-  flex-flow: row nowrap;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  min-height: 2.75rem;
-  -webkit-align-items: baseline;
-  -webkit-box-align: baseline;
-  -ms-flex-align: baseline;
-  align-items: baseline;
-}
-
 .c0 {
   position: relative;
   margin-top: 2rem;
@@ -2170,6 +2170,15 @@ exports[`SectionLabel Without bar With plain title should render correctly with 
 .c1 {
   margin: 0;
   padding: 0;
+}
+
+@media (min-width:37.5rem) {
+  .c2 {
+    -webkit-align-items: stretch;
+    -webkit-box-align: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+  }
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
@@ -2195,15 +2204,6 @@ exports[`SectionLabel Without bar With plain title should render correctly with 
 @media (min-width:37.5rem) {
   .c3 {
     padding-left: 1rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c2 {
-    -webkit-align-items: stretch;
-    -webkit-box-align: stretch;
-    -ms-flex-align: stretch;
-    align-items: stretch;
   }
 }
 
@@ -2235,6 +2235,25 @@ exports[`SectionLabel Without bar With plain title should render correctly with 
 `;
 
 exports[`SectionLabel Without bar With plain title should render correctly with explicit text direction 1`] = `
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row nowrap;
+  -ms-flex-flow: row nowrap;
+  flex-flow: row nowrap;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  min-height: 2.75rem;
+  -webkit-align-items: baseline;
+  -webkit-box-align: baseline;
+  -ms-flex-align: baseline;
+  align-items: baseline;
+}
+
 .c3 {
   font-size: 1.125rem;
   line-height: 1.375rem;
@@ -2255,25 +2274,6 @@ exports[`SectionLabel Without bar With plain title should render correctly with 
   align-items: center;
 }
 
-.c2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-flow: row nowrap;
-  -ms-flex-flow: row nowrap;
-  flex-flow: row nowrap;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  min-height: 2.75rem;
-  -webkit-align-items: baseline;
-  -webkit-box-align: baseline;
-  -ms-flex-align: baseline;
-  align-items: baseline;
-}
-
 .c0 {
   position: relative;
   margin-top: 2rem;
@@ -2282,6 +2282,15 @@ exports[`SectionLabel Without bar With plain title should render correctly with 
 .c1 {
   margin: 0;
   padding: 0;
+}
+
+@media (min-width:37.5rem) {
+  .c2 {
+    -webkit-align-items: stretch;
+    -webkit-box-align: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+  }
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
@@ -2307,15 +2316,6 @@ exports[`SectionLabel Without bar With plain title should render correctly with 
 @media (min-width:37.5rem) {
   .c3 {
     padding-right: 1rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c2 {
-    -webkit-align-items: stretch;
-    -webkit-box-align: stretch;
-    -ms-flex-align: stretch;
-    align-items: stretch;
   }
 }
 

@@ -19,6 +19,41 @@ const paddingDir = ({ dir }) => `padding-${dir === 'rtl' ? 'left' : 'right'}`;
 const paddingReverseDir = ({ dir }) =>
   `padding-${dir === 'rtl' ? 'right' : 'left'}`;
 
+const SectionLabelLink = styled.a.attrs(props => ({
+  'aria-labelledby': props.labelId,
+}))`
+  color: ${C_EBON};
+  text-decoration: none;
+
+  &:focus,
+  &:hover {
+    text-decoration: underline;
+  }
+`;
+
+SectionLabelLink.propTypes = {
+  href: string.isRequired,
+  labelId: string.isRequired,
+};
+
+const FlexContainer = styled.span`
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  min-height: ${minClickableHeightRem}rem;
+
+  align-items: baseline;
+  ${MEDIA_QUERY_TYPOGRAPHY.LAPTOP_AND_LARGER} {
+    /* Allows the IndexLinkCta to take up extra vertical space and unsures bar is hidden
+       with very long section titles over 600px */
+    align-items: stretch;
+  }
+`;
+
+const FlexTextContainer = styled(FlexContainer).attrs({
+  role: 'text',
+})``;
+
 const titleMargins = `
   margin: 1rem 0;
 
@@ -48,39 +83,10 @@ const Title = styled.span`
 
 Title.propTypes = {
   dir: oneOf(['ltr', 'rtl']).isRequired,
+  id: string.isRequired,
   script: shape(scriptPropType).isRequired,
   service: string.isRequired,
 };
-
-const FlexContainer = styled.span`
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-between;
-  min-height: ${minClickableHeightRem}rem;
-
-  align-items: baseline;
-  ${MEDIA_QUERY_TYPOGRAPHY.LAPTOP_AND_LARGER} {
-    /* Allows the IndexLinkCta to take up extra vertical space and unsures bar is hidden
-       with very long section titles over 600px */
-    align-items: stretch;
-  }
-`;
-
-const FlexTextContainer = styled(FlexContainer).attrs({
-  role: 'text',
-})``;
-
-const SectionLabelLink = styled.a.attrs(props => ({
-  'aria-labelledby': props.labelId,
-}))`
-  color: ${C_EBON};
-  text-decoration: none;
-
-  &:focus,
-  &:hover {
-    text-decoration: underline;
-  }
-`;
 
 const IndexLinkCta = styled.span.attrs({
   'aria-hidden': 'true',
@@ -96,9 +102,16 @@ const IndexLinkCta = styled.span.attrs({
   white-space: nowrap;
   ${paddingReverseDir}: ${GEL_SPACING_DBL};
 
+  /* needed to ensure always vertically centered even when FlexContainer changes alignment */
   display: flex;
   align-items: center;
 `;
+
+IndexLinkCta.propTypes = {
+  dir: oneOf(['ltr', 'rtl']).isRequired,
+  script: shape(scriptPropType).isRequired,
+  service: string.isRequired,
+};
 
 export const PlainTitle = ({
   children: title,

@@ -15,8 +15,6 @@ import { PlainTitle, LinkTitle } from './titles';
 
 const Bar = styled.div`
   border-top: 0.0625rem solid ${C_PEBBLE};
-  left: 0;
-  right: 0;
   z-index: -1;
 
   @media screen and (-ms-high-contrast: active) {
@@ -25,6 +23,9 @@ const Bar = styled.div`
 
   ${MEDIA_QUERY_TYPOGRAPHY.LAPTOP_AND_LARGER} {
     position: absolute;
+    left: 0;
+    right: 0;
+
     /* Placing bar at the vertical midpoint of the section title */
     top: ${({ script }) =>
       0.5 + script.doublePica.groupD.lineHeight / 2 / 16}rem;
@@ -78,7 +79,7 @@ const SectionLabel = ({
 }) => (
   <SectionLabelWrapper visuallyHidden={visuallyHidden}>
     {bar && <Bar script={script} />}
-    <Heading script={script}>
+    <Heading>
       {linkText && href ? (
         <LinkTitle
           dir={dir}
@@ -92,9 +93,9 @@ const SectionLabel = ({
         </LinkTitle>
       ) : (
         <PlainTitle
-          script={script}
           dir={dir}
           labelId={labelId}
+          script={script}
           service={service}
         >
           {title}
