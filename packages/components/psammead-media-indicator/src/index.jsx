@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import styled, { css } from 'styled-components';
 import { string, oneOf, bool } from 'prop-types';
 import { C_WHITE, C_EBON } from '@bbc/psammead-styles/colours';
@@ -51,28 +51,25 @@ const MediaIndicator = ({
   topStory,
   service,
   indexAlsos,
-}) => (
-  <Fragment>
-    {indexAlsos ? (
-      <IndexAlsosMediaIndicator aria-hidden="true">
+}) =>
+  indexAlsos ? (
+    <IndexAlsosMediaIndicator aria-hidden="true">
+      {mediaIcons[type]}
+    </IndexAlsosMediaIndicator>
+  ) : (
+    <MediaIndicatorWrapper
+      aria-hidden="true"
+      topStory={topStory}
+      service={service}
+    >
+      <FlexWrapper>
         {mediaIcons[type]}
-      </IndexAlsosMediaIndicator>
-    ) : (
-      <MediaIndicatorWrapper
-        aria-hidden="true"
-        topStory={topStory}
-        service={service}
-      >
-        <FlexWrapper>
-          {mediaIcons[type]}
-          {duration && datetime && (
-            <TimeDuration dateTime={datetime}>{duration}</TimeDuration>
-          )}
-        </FlexWrapper>
-      </MediaIndicatorWrapper>
-    )}
-  </Fragment>
-);
+        {duration && datetime && (
+          <TimeDuration dateTime={datetime}>{duration}</TimeDuration>
+        )}
+      </FlexWrapper>
+    </MediaIndicatorWrapper>
+  );
 
 MediaIndicator.propTypes = {
   datetime: string,
