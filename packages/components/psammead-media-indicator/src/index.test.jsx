@@ -9,6 +9,11 @@ describe('MediaIndicator', () => {
   );
 
   shouldMatchSnapshot(
+    'should render Index Also video indicator correctly',
+    <MediaIndicator type="video" service="news" indexAlsos />,
+  );
+
+  shouldMatchSnapshot(
     'should render video indicator correctly',
     <MediaIndicator
       duration="2:15"
