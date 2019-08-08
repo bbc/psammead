@@ -1,6 +1,6 @@
 {
   "name": "@bbc/psammead-sitewide-links",
-  "version": "3.0.1",
+  "version": "3.0.2",
   "description": "React styled component for a sitewide-links",
   "main": "dist/index.js",
   "module": "esm/index.js",
@@ -27,13 +27,6 @@
   "dependencies": {
     "@bbc/gel-foundations": "^3.2.0",
     "@bbc/psammead-styles": "^2.0.1"
-  },
-  "devDependencies": {
-    "@bbc/psammead-storybook-helpers": "^3.3.2",
-    "@bbc/psammead-test-helpers": "^1.1.0",
-    "prop-types": "^15.6.2",
-    "react": "^16.8.6",
-    "styled-components": "^4.3.2"
   },
   "peerDependencies": {
     "prop-types": "^15.6.2",
