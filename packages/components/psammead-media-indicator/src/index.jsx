@@ -38,7 +38,7 @@ const TimeDuration = styled.time`
   margin: 0 ${GEL_SPACING_HLF};
 `;
 
-const IndexAlsosMediaIndicator = styled.span.attrs({ 'aria-hidden': 'true' })`
+const IndexAlsosMediaIndicator = styled.span`
   & > svg {
     margin: 0;
   }
@@ -54,7 +54,7 @@ const MediaIndicator = ({
 }) => (
   <Fragment>
     {indexAlsos ? (
-      <IndexAlsosMediaIndicator aria-hidden="true" service={service}>
+      <IndexAlsosMediaIndicator aria-hidden="true">
         {mediaIcons[type]}
       </IndexAlsosMediaIndicator>
     ) : (
