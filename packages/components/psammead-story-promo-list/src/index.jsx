@@ -1,4 +1,3 @@
-import React from 'react';
 import styled from 'styled-components';
 import { node } from 'prop-types';
 import { C_LUNAR } from '@bbc/psammead-styles/colours';
@@ -8,12 +7,13 @@ import {
   GEL_SPACING_TRPL,
 } from '@bbc/gel-foundations/spacings';
 import {
-  GEL_GROUP_2_SCREEN_WIDTH_MIN,
   GEL_GROUP_3_SCREEN_WIDTH_MIN,
   GEL_GROUP_4_SCREEN_WIDTH_MIN,
 } from '@bbc/gel-foundations/breakpoints';
 
-const StyledListItem = styled.li`
+export const StoryPromoLi = styled.li.attrs({
+  role: 'listitem',
+})`
   border-bottom: 0.0625rem solid ${C_LUNAR};
   padding: ${GEL_SPACING} 0 ${GEL_SPACING_DBL};
 
@@ -35,27 +35,13 @@ const StyledListItem = styled.li`
   }
 `;
 
-const StyledUnorderedList = styled.ul`
+export const StoryPromoUl = styled.ul.attrs({
+  role: 'list',
+})`
   list-style-type: none;
-  margin: ${GEL_SPACING} 0 0 0;
+  margin: 0;
   padding: 0;
-
-  @media (min-width: ${GEL_GROUP_2_SCREEN_WIDTH_MIN}) {
-    margin: ${GEL_SPACING_DBL} 0 0 0;
-  }
 `;
-
-export const StoryPromoUl = ({ children, ...props }) => (
-  <StyledUnorderedList role="list" {...props}>
-    {children}
-  </StyledUnorderedList>
-);
-
-export const StoryPromoLi = ({ children, ...props }) => (
-  <StyledListItem role="listitem" {...props}>
-    {children}
-  </StyledListItem>
-);
 
 StoryPromoUl.propTypes = {
   children: node.isRequired,
