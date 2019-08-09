@@ -242,12 +242,13 @@ exports[`Navigation should render correctly 1`] = `
       role="list"
     >
       <li
-        class="c4"
+        class="track-nav c4"
         dir="ltr"
         role="listitem"
       >
         <a
           class="c5"
+          data-info="Akụkọ-/igbo"
           href="/igbo"
         >
           <span
@@ -265,36 +266,39 @@ exports[`Navigation should render correctly 1`] = `
         </a>
       </li>
       <li
-        class="c4"
+        class="track-nav c4"
         dir="ltr"
         role="listitem"
       >
         <a
           class="c8"
+          data-info="Egwuregwu-/igbo/egwuregwu"
           href="/igbo/egwuregwu"
         >
           Egwuregwu
         </a>
       </li>
       <li
-        class="c4"
+        class="track-nav c4"
         dir="ltr"
         role="listitem"
       >
         <a
           class="c8"
+          data-info="Ihe nkiri-/igbo/media/video"
           href="/igbo/media/video"
         >
           Ihe nkiri
         </a>
       </li>
       <li
-        class="c4"
+        class="track-nav c4"
         dir="ltr"
         role="listitem"
       >
         <a
           class="c8"
+          data-info="Nke ka ewuewu-/igbo/popular/read"
           href="/igbo/popular/read"
         >
           Nke ka ewuewu
