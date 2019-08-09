@@ -23,7 +23,7 @@
     "publish": "npm run build && node scripts/publish",
     "storybook": "NODE_ENV=development start-storybook -p 8180 -c .storybook",
     "test": "npm run test:lint && npm run test:lint:css && npm run test:unit && npm run test:packages",
-    "test:chromatic": "chromatic test run --build-script-name build:storybook || true",
+    "test:chromatic": "chromatic test run --storybook-build-dir=storybook_dist || true",
     "test:packages": "lerna run test",
     "test:lint": "eslint --ext .js,jsx,json ./packages ./scripts",
     "test:lint:css": "stylelint 'packages/**/*.js' 'packages/**/*.jsx' 'scripts/**/*.js'",

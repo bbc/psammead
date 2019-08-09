@@ -26,52 +26,56 @@ def cleanWS() {
 
 
 node {
-  timeout(time: 60, unit: 'MINUTES')
+  // timeout(time: 60, unit: 'MINUTES')
 
-  environment {
-    CI = true
-    CC_TEST_REPORTER_ID = '06c1254d7c2ff48f763492791337193c8345ca8740c34263d68adcc449aff732'
+  withEnv([
+    'CI=true',
+    'CC_TEST_REPORTER_ID=06c1254d7c2ff48f763492791337193c8345ca8740c34263d68adcc449aff732'
+  ]) {
+    // git checkout
+    checkout scm
+
+    docker.image("${nodeImage}").inside('-u root -v /etc/pki:/certs') {
+      cleanWS()
+
+      sh 'make install'
+
+      sh 'npm run build:storybook'
+
+      stage ('Install & Run Tests') {
+        parallel (
+          'App Tests & Code Coverage': {
+            sh 'make code-coverage-before-build'
+            sh 'make tests'
+            sh 'make code-coverage-after-build'
+          },
+          'ChromaticQA Tests': {
+            withCredentials([string(credentialsId: 'psammead-chromatic-app-code', variable: 'CHROMATIC_APP_CODE')]) {
+              sh 'npm run test:chromatic'
+              sh 'ls'
+            }
+          }
+        )
+      }
+
+      stage ('Deploy Storybook & Publish to NPM') {
+        parallel (
+          'Deploy Storybook': {
+            if (env.BRANCH_NAME != 'latest') {
+              sh 'ls storybook_dist/'
+            }
+          },
+          'Publish to NPM': {
+            if (env.BRANCH_NAME != 'latest') {
+              sh 'true'
+            }
+          }
+        )
+      }
+    }
   }
 
-  // git checkout
-  checkout scm
-
-  docker.image("${nodeImage}") {
-    cleanWS()
-
-    sh 'make install'
-
-    stage ('Install & Run Tests') {
-      parallel (
-        'App Tests & Code Coverage': {
-          sh 'make code-coverage-before-build'
-          sh 'make tests'
-          sh 'make code-coverage-after-build'
-        },
-        'ChromaticQA Tests': {
-          withCredentials([string(credentialsId: 'psammead-chromatic-app-code', variable: 'CHROMATIC_APP_CODE')]) {
-            sh 'npm run test:chromatic'
-            sh 'ls'
-          }
-        }
-      )
-    }
-
-    stage ('Deploy Storybook & Publish to NPM') {
-      parallel (
-        'Deploy Storybook': {
-          if (env.BRANCH_NAME != 'latest') {
-            sh 'ls storybook_dist/'
-          }
-        },
-        'Publish to NPM': {
-          if (env.BRANCH_NAME != 'latest') {
-            sh 'true'
-          }
-        }
-      )
-    }
-  }
+  
 }
 
 
