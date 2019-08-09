@@ -62,7 +62,7 @@
     "@bbc/psammead-image": "^1.1.2",
     "@bbc/psammead-image-placeholder": "^1.1.2",
     "@bbc/psammead-inline-link": "^1.2.2",
-    "@bbc/psammead-locales": "^1.2.1",
+    "@bbc/psammead-locales": "^1.2.2",
     "@bbc/psammead-media-indicator": "^2.3.2",
     "@bbc/psammead-paragraph": "^2.1.2",
     "@bbc/psammead-story-promo": "2.3.1",
