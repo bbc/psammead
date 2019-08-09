@@ -117,11 +117,11 @@ import StoryPromo, {
   IndexAlsos,
   IndexAlso,
   IndexAlsosUl,
-  IndexAlsosLi
+  IndexAlsosLi,
 } from '@bbc/psammead-story-promo';
 import MediaIndicator from '@bbc/psammead-media-indicator';
 import { latin } from '@bbc/gel-foundations/scripts';
-import VisuallyHiddenText from "@bbc/psammead-visually-hidden-text'
+import VisuallyHiddenText from '@bbc/psammead-visually-hidden-text';
 
 const Image = <img src="https://foobar.com/image.jpg" />;
 
@@ -135,21 +135,32 @@ const LiveComponent = ({ headline, service, dir }) => (
   </span>
 );
 
-const IndexAlsosComponent = ({alsoItems, script, service}) => (
+const IndexAlsosComponent = ({ alsoItems, script, service }) => (
   //This example doesn't show how the alsoItems are destructured to get the respective data
   <IndexAlsos offScreenText="Related content">
-    {
-      alsoItems.length > 1 ? (
-        <IndexAlsosUl>
-            <IndexAlsosLi script={script} service={service} url="https://www.bbc.co.uk/news" mediaIndicator={<MediaIndicator service={service} type="video" indexAlsos/>}>Related text 1</IndexAlsosLi>
-            <IndexAlsosLi script={script} service={service} url="https://www.bbc.co.uk/news">Related text 2</IndexAlsosLi>
-        </IndexAlsosUl>
-      ) : (
-        <IndexAlso>
-          Related text
-        </IndexAlso>
-      )
-    }
+    {alsoItems.length > 1 ? (
+      <IndexAlsosUl>
+        <IndexAlsosLi
+          script={script}
+          service={service}
+          url="https://www.bbc.co.uk/news"
+          mediaIndicator={
+            <MediaIndicator service={service} type="video" indexAlsos />
+          }
+        >
+          Related text 1
+        </IndexAlsosLi>
+        <IndexAlsosLi
+          script={script}
+          service={service}
+          url="https://www.bbc.co.uk/news"
+        >
+          Related text 2
+        </IndexAlsosLi>
+      </IndexAlsosUl>
+    ) : (
+      <IndexAlso>Related text</IndexAlso>
+    )}
   </IndexAlsos>
 );
 
@@ -158,8 +169,13 @@ const Info = ({ isLive, alsoItems }) => (
     <Headline script={latin} topStory={true} service="news">
       <Link href="https://www.bbc.co.uk/news">
         {isLive ? (
-          <LiveComponent service="news" headline="The headline of the live promo" />
-        ): 'The headline of the promo'}
+          <LiveComponent
+            service="news"
+            headline="The headline of the live promo"
+          />
+        ) : (
+          'The headline of the promo'
+        )}
       </Link>
     </Headline>
     <Summary script={latin} topStory={true} service="news">
