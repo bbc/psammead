@@ -3,6 +3,8 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 2.1.4   | [PR#1685](https://github.com/bbc/psammead/pull/1685) Bump dependencies |
+| 2.1.3 | [PR#1682](https://github.com/bbc/psammead/pull/1682) Move all dev dependencies to top level package.json |
 | 2.1.2 | [PR#1641](https://github.com/bbc/psammead/pull/1641) Bump dependencies |
 | 2.1.1 | [PR#1365](https://github.com/bbc/psammead/pull/1365) Bump psammead-styles to 1.2.0 |
 | 2.1.0 | [PR#1233](https://github.com/bbc/psammead/pull/1233) Add ESM modules entry |

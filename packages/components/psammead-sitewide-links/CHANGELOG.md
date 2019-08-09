@@ -3,7 +3,9 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
-| 3.0.1 | [PR#1598](https://github.com/bbc/psammead/pull/1598) Bump dependencies |
+| 3.0.3   | [PR#1685](https://github.com/bbc/psammead/pull/1685) Bump dependencies |
+| 3.0.2 | [PR#1682](https://github.com/bbc/psammead/pull/1682) Move all dev dependencies to top level package.json |
+| 3.0.1 | [PR#1599](https://github.com/bbc/psammead/pull/1599) Bump dependencies |
 | 3.0.0 | [PR#1524](https://github.com/bbc/psammead/pull/1524) Change `copyrighText` prop from `string` to `node`  |
 | 2.2.1 | [PR#1518](https://github.com/bbc/psammead/pull/1518) Clear unit test warnings |
 | 2.2.0 | [PR#1408](https://github.com/bbc/psammead/pull/1408) Use `@bbc/psammead-styles/detection` to detect grid support |
