@@ -13,7 +13,7 @@
     "bumpPackages": "node scripts/bumpPackages/cli",
     "bumpChangelogs": "node scripts/bumpChangelogs/cli",
     "regeneratePackageLocks": "node scripts/regeneratePackageLocks",
-    "deploy-storybook": "npm run build:storybook && gh-pages -d storybook_dist",
+    "deploy-storybook": "gh-pages -d storybook_dist",
     "force-package-lock-https": "find . -type f -name \"package-lock.json\" | grep -v node_modules | xargs -I % sh -c 'echo \"Replacing http->https in %\"; sed -i \"\" -e \"s/http:\\/\\//https:\\/\\//g\" %'",
     "install:packages": "npm i && lerna clean --yes && lerna bootstrap --hoist",
     "install:packages:link": "npm i && lerna clean --yes && lerna bootstrap --hoist --force-local",

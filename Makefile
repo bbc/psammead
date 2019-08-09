@@ -25,11 +25,9 @@ setup-git:
 	git config user.name "BBC News CI"
 
 storybook:
-	make setup-git;
 	npm run deploy-storybook;
 
 bump-dependants:
-	make setup-git
 	npm run updateDependants
 
 publish:

@@ -21,61 +21,70 @@ def notifySlack(colour, buildStatus, gitCommitAuthor, stageName, gitCommitMessag
 }
 
 def cleanWS() {
-  sh 'rm -rf ./app'
+  sh 'rm -rf ./app || true'
+  sh 'rm published.txt || true'
 }
 
 
 node {
-  // timeout(time: 60, unit: 'MINUTES')
+  timeout(time: 30, unit: 'MINUTES') {
+    withEnv([
+      'CI=true',
+      'CC_TEST_REPORTER_ID=06c1254d7c2ff48f763492791337193c8345ca8740c34263d68adcc449aff732'
+    ]) {
+      // git checkout
+      checkout scm
 
-  withEnv([
-    'CI=true',
-    'CC_TEST_REPORTER_ID=06c1254d7c2ff48f763492791337193c8345ca8740c34263d68adcc449aff732'
-  ]) {
-    // git checkout
-    checkout scm
+      docker.image("${nodeImage}").inside('-u root -v /etc/pki:/certs') {
+        cleanWS()
 
-    docker.image("${nodeImage}").inside('-u root -v /etc/pki:/certs') {
-      cleanWS()
+        sh 'make setup-git'
 
-      sh 'make install'
+        sh 'make install'
 
-      sh 'npm run build:storybook'
+        sh 'npm run build:storybook'
 
-      stage ('Install & Run Tests') {
-        parallel (
-          'App Tests & Code Coverage': {
-            sh 'make code-coverage-before-build'
-            sh 'make tests'
-            sh 'make code-coverage-after-build'
-          },
-          'ChromaticQA Tests': {
-            withCredentials([string(credentialsId: 'psammead-chromatic-app-code', variable: 'CHROMATIC_APP_CODE')]) {
-              sh 'npm run test:chromatic'
-              sh 'ls'
+        stage ('Development Tests') {
+          parallel (
+            'App Tests & Code Coverage': {
+              sh 'make code-coverage-before-build'
+              sh 'make tests'
+              sh 'make code-coverage-after-build'
+            },
+            'ChromaticQA Tests': {
+              withCredentials([string(credentialsId: 'psammead-chromatic-app-code', variable: 'CHROMATIC_APP_CODE')]) {
+                sh 'npm run test:chromatic'
+                sh 'ls'
+              }
             }
+          )
+        }
+
+        stage ('Deploy Storybook & Publish to NPM') {
+          parallel (
+            'Deploy Storybook': {
+              if (env.BRANCH_NAME == 'latest') {
+                sh 'npm run deploy-storybook'
+              }
+            },
+            'Publish to NPM': {
+              if (env.BRANCH_NAME == 'latest') {
+                withCredentials([string(credentialsId: 'npm_bbc-online_read_write', variable: 'NPM_TOKEN')]) {
+                  sh 'make publish'
+                }
+              }
+            }
+          )
+        }
+
+        stage ('Bump Dependants') {
+          if (env.BRANCH_NAME == 'latest') {
+            sh 'make bump-dependants'
           }
-        )
-      }
-
-      stage ('Deploy Storybook & Publish to NPM') {
-        parallel (
-          'Deploy Storybook': {
-            if (env.BRANCH_NAME != 'latest') {
-              sh 'ls storybook_dist/'
-            }
-          },
-          'Publish to NPM': {
-            if (env.BRANCH_NAME != 'latest') {
-              sh 'true'
-            }
-          }
-        )
+        }
       }
     }
   }
-
-  
 }
 
 
