@@ -54,11 +54,11 @@ The `LiveLabel` component is to be used inside a `Link` in index pages to show a
 
 The Index Alsos are links to stories that are related to the top story.
 
-Within the `IndexAlsos` component there is a Visually hidden level 4 which announces text passed as prop.
+Within the `IndexAlsos` component there is a Visually Hidden level 4 heading, which announces text passed as prop.
 
 When there are more than one Index Alsos, they should be wrapped in a list item `IndexAlsosLi` within an unordered list `IndexAlsosUl` with the role `listitem` and `list` respectively.
 
-On the other hand, when there is exactly one Index Also, it should not be contained within a list and use the `IndexAlso` component.
+On the other hand, when there is exactly one Index Also, it should use the `IndexAlso` component and it should not be contained within a list.
 
 ### Props
 
