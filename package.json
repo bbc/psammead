@@ -99,6 +99,7 @@
     "jest-fetch-mock": "^2.1.2",
     "jest-styled-components": "^6.3.3",
     "lerna": "^3.16.4",
+    "lint-staged": "^9.2.1",
     "prettier": "^1.18.2",
     "prop-types": "^15.7.2",
     "react": "^16.8.6",
@@ -122,7 +123,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "npm run test:lint && npm run test:lint:css",
+      "pre-commit": "lint-staged",
       "pre-push": "sh scripts/enforceVersions.sh && npm run test:unit -- --changedSince=latest"
     }
   },
@@ -156,5 +157,10 @@
       "cp -af /usr/lib/PSAMMEAD-COMPONENT-LIBRARY/bake-scripts/. /etc/bake-scripts/PSAMMEAD-COMPONENT-LIBRARY",
       "chmod +x /etc/bake-scripts/PSAMMEAD-COMPONENT-LIBRARY/*"
     ]
+  },
+  "lint-staged": {
+    "*.{js,jsx,json}": "eslint",
+    "packages /**/*.{js,jsx}": "stylelint",
+    "scripts /**/*.{js,jsx}": "stylelint"
   }
 }
