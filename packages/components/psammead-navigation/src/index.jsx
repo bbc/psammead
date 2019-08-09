@@ -177,25 +177,26 @@ export const NavigationLi = ({
   active,
   service,
 }) => (
-  <StyledListItem
-    role="listitem"
-    dir={dir}
-    id={`nav-${url}`}
-    data-info={`nav-${url}`}
-  >
+  <StyledListItem role="listitem" dir={dir} className="track-nav">
     {active && currentPageText ? (
       <StyledLink
         href={url}
         script={script}
         currentLink="true"
         service={service}
+        data-info={`${link}-${url}`}
       >
         <CurrentLink script={script} currentPageText={currentPageText}>
           {link}
         </CurrentLink>
       </StyledLink>
     ) : (
-      <StyledLink href={url} script={script} service={service}>
+      <StyledLink
+        href={url}
+        script={script}
+        service={service}
+        data-info={`${link}-${url}`}
+      >
         {link}
       </StyledLink>
     )}
