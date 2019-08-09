@@ -40,7 +40,7 @@ node {
               },
               'ChromaticQA Tests': {
                 withCredentials([string(credentialsId: 'psammead-chromatic-app-code', variable: 'CHROMATIC_APP_CODE')]) {
-                  // sh 'npm run test:chromatic'
+                  sh 'npm run test:chromatic'
                 }
               }
             )
