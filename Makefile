@@ -1,10 +1,6 @@
 none:
 	@ echo Please specify a target
 
-install:
-	npm --version; node --version;
-	npm run ci:packages;
-
 code-coverage-before-build:
 	curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter;
 	chmod +x ./cc-test-reporter;
@@ -24,15 +20,8 @@ setup-git:
 	git config user.email "foo@bar.com"
 	git config user.name "BBC News CI"
 
-storybook:
-	npm run deploy-storybook;
-
-bump-dependants:
-	npm run updateDependants
-
-publish:
+setup-npm:
 	echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" > .npmrc
-	npm run publish;
 
 change-scanner:
 	npm run changeScanner;

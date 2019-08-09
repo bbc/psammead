@@ -27,7 +27,7 @@ node {
         try {
           stage ('Setup & Install') {
             sh 'make setup-git'
-            sh 'make install'
+            sh 'npm run ci:packages'
             sh 'npm run build:storybook'
           }
 
@@ -54,14 +54,15 @@ node {
                 },
                 'Publish to NPM': {
                     withCredentials([string(credentialsId: 'npm_bbc-online_read_write', variable: 'NPM_TOKEN')]) {
-                      sh 'make publish'
+                      sh 'make setup-npm'
+                      sh 'npm run publish'
                     }
                 }
               )
             }
 
             stage ('Bump Dependants') {
-              sh 'make bump-dependants'
+              sh 'npm run updateDependants'
             }
           }
         } catch (e) {
