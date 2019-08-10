@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Index Alsos - multiple should render multiple correctly 1`] = `
-.c8 {
+.c7 {
   vertical-align: middle;
   margin: 0 0.25rem;
   color: #222222;
@@ -10,29 +10,8 @@ exports[`Index Alsos - multiple should render multiple correctly 1`] = `
   height: 0.75rem;
 }
 
-.c6 {
-  padding: 0.5rem 0.25rem;
-  background-color: #FFFFFF;
-  display: block;
-  font-family: ReithSans,Helvetica,Arial,sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 0.75rem;
-  line-height: 1rem;
-  color: #222222;
-  height: 2rem;
-}
-
-.c7 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  height: 100%;
+.c6 > svg {
+  margin: 0;
 }
 
 .c1 {
@@ -68,7 +47,7 @@ exports[`Index Alsos - multiple should render multiple correctly 1`] = `
   padding-right: 0.5rem;
 }
 
-.c9 {
+.c8 {
   display: inline;
   vertical-align: middle;
 }
@@ -93,13 +72,6 @@ exports[`Index Alsos - multiple should render multiple correctly 1`] = `
 
 .c4:visited {
   color: #6E6E73;
-}
-
-@media (max-width:24.9375rem) {
-  .c6 {
-    height: 1.25rem;
-    padding: 0.25rem 0.25rem 0;
-  }
 }
 
 @media (min-width:37.5rem) {
@@ -145,29 +117,25 @@ exports[`Index Alsos - multiple should render multiple correctly 1`] = `
         <span
           class="c5"
         >
-          <div
+          <span
             aria-hidden="true"
             class="c6"
           >
-            <div
+            <svg
               class="c7"
+              focusable="false"
+              height="12px"
+              viewBox="0 0 32 32"
+              width="12px"
             >
-              <svg
-                class="c8"
-                focusable="false"
-                height="12px"
-                viewBox="0 0 32 32"
-                width="12px"
-              >
-                <polygon
-                  points="3,32 29,16 3,0"
-                />
-              </svg>
-            </div>
-          </div>
+              <polygon
+                points="3,32 29,16 3,0"
+              />
+            </svg>
+          </span>
         </span>
         <span
-          class="c9"
+          class="c8"
         >
           APC ba ta isa ta kore ni ba – Buba Galadima
         </span>
@@ -182,7 +150,7 @@ exports[`Index Alsos - multiple should render multiple correctly 1`] = `
         href="/hausa/labarai-42837051"
       >
         <span
-          class="c9"
+          class="c8"
         >
           Yaushe Obasanjo ya fara yi wa shugabannin kasa baki?
         </span>
@@ -193,6 +161,19 @@ exports[`Index Alsos - multiple should render multiple correctly 1`] = `
 `;
 
 exports[`Index Alsos - multiple should render one correctly 1`] = `
+.c6 {
+  vertical-align: middle;
+  margin: 0 0.25rem;
+  color: #222222;
+  fill: currentColor;
+  width: 0.75rem;
+  height: 0.75rem;
+}
+
+.c5 > svg {
+  margin: 0;
+}
+
 .c1 {
   -webkit-clip-path: inset(100%);
   clip-path: inset(100%);
@@ -211,9 +192,59 @@ exports[`Index Alsos - multiple should render one correctly 1`] = `
   margin: 1rem 0 0.5rem;
 }
 
+.c2 {
+  border-top: 1px solid #F2F2F2;
+  padding: 0.5rem 0;
+}
+
+.c4 {
+  padding-right: 0.5rem;
+}
+
+.c7 {
+  display: inline;
+  vertical-align: middle;
+}
+
+.c3 {
+  font-size: 0.875rem;
+  line-height: 1.125rem;
+  font-family: ReithSerif,Helvetica,Arial,sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  color: #222222;
+  cursor: pointer;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c3:hover,
+.c3:focus {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.c3:visited {
+  color: #6E6E73;
+}
+
 @media (min-width:37.5rem) {
   .c0 {
     display: none;
+  }
+}
+
+@media (min-width:20rem) and (max-width:37.4375rem) {
+  .c3 {
+    font-size: 0.875rem;
+    line-height: 1.125rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .c3 {
+    font-size: 0.8125rem;
+    line-height: 1rem;
   }
 }
 
@@ -225,6 +256,40 @@ exports[`Index Alsos - multiple should render one correctly 1`] = `
   >
     Related content
   </h4>
+  <div
+    class="c2"
+  >
+    <a
+      class="c3"
+      href="/hausa/labarai-48916590"
+    >
+      <span
+        class="c4"
+      >
+        <span
+          aria-hidden="true"
+          class="c5"
+        >
+          <svg
+            class="c6"
+            focusable="false"
+            height="12px"
+            viewBox="0 0 32 32"
+            width="12px"
+          >
+            <polygon
+              points="3,32 29,16 3,0"
+            />
+          </svg>
+        </span>
+      </span>
+      <span
+        class="c7"
+      >
+        APC ba ta isa ta kore ni ba – Buba Galadima
+      </span>
+    </a>
+  </div>
 </div>
 `;
 
@@ -750,7 +815,7 @@ exports[`StoryPromo - Top Story should render with Media Indicator correctly 1`]
 `;
 
 exports[`StoryPromo - Top Story should render with multiple Index Alsos correctly 1`] = `
-.c15 {
+.c14 {
   vertical-align: middle;
   margin: 0 0.25rem;
   color: #222222;
@@ -759,29 +824,8 @@ exports[`StoryPromo - Top Story should render with multiple Index Alsos correctl
   height: 0.75rem;
 }
 
-.c13 {
-  padding: 0.5rem 0.25rem;
-  background-color: #FFFFFF;
-  display: block;
-  font-family: ReithSans,Helvetica,Arial,sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 0.75rem;
-  line-height: 1rem;
-  color: #222222;
-  height: 2rem;
-}
-
-.c14 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  height: 100%;
+.c13 > svg {
+  margin: 0;
 }
 
 .c8 {
@@ -891,7 +935,7 @@ exports[`StoryPromo - Top Story should render with multiple Index Alsos correctl
   padding-right: 0.5rem;
 }
 
-.c16 {
+.c15 {
   display: inline;
   vertical-align: middle;
 }
@@ -916,13 +960,6 @@ exports[`StoryPromo - Top Story should render with multiple Index Alsos correctl
 
 .c11:visited {
   color: #6E6E73;
-}
-
-@media (max-width:24.9375rem) {
-  .c13 {
-    height: 1.25rem;
-    padding: 0.25rem 0.25rem 0;
-  }
 }
 
 @supports (grid-template-columns:fit-content(200px)) {
@@ -1109,29 +1146,25 @@ exports[`StoryPromo - Top Story should render with multiple Index Alsos correctl
             <span
               class="c12"
             >
-              <div
+              <span
                 aria-hidden="true"
                 class="c13"
               >
-                <div
+                <svg
                   class="c14"
+                  focusable="false"
+                  height="12px"
+                  viewBox="0 0 32 32"
+                  width="12px"
                 >
-                  <svg
-                    class="c15"
-                    focusable="false"
-                    height="12px"
-                    viewBox="0 0 32 32"
-                    width="12px"
-                  >
-                    <polygon
-                      points="3,32 29,16 3,0"
-                    />
-                  </svg>
-                </div>
-              </div>
+                  <polygon
+                    points="3,32 29,16 3,0"
+                  />
+                </svg>
+              </span>
             </span>
             <span
-              class="c16"
+              class="c15"
             >
               APC ba ta isa ta kore ni ba – Buba Galadima
             </span>
@@ -1146,7 +1179,7 @@ exports[`StoryPromo - Top Story should render with multiple Index Alsos correctl
             href="/hausa/labarai-42837051"
           >
             <span
-              class="c16"
+              class="c15"
             >
               Yaushe Obasanjo ya fara yi wa shugabannin kasa baki?
             </span>
@@ -1159,6 +1192,19 @@ exports[`StoryPromo - Top Story should render with multiple Index Alsos correctl
 `;
 
 exports[`StoryPromo - Top Story should render with one Index Also correctly 1`] = `
+.c13 {
+  vertical-align: middle;
+  margin: 0 0.25rem;
+  color: #222222;
+  fill: currentColor;
+  width: 0.75rem;
+  height: 0.75rem;
+}
+
+.c12 > svg {
+  margin: 0;
+}
+
 .c8 {
   -webkit-clip-path: inset(100%);
   clip-path: inset(100%);
@@ -1249,6 +1295,42 @@ exports[`StoryPromo - Top Story should render with one Index Also correctly 1`] 
   position: relative;
   z-index: 2;
   margin: 1rem 0 0.5rem;
+}
+
+.c9 {
+  border-top: 1px solid #F2F2F2;
+  padding: 0.5rem 0;
+}
+
+.c11 {
+  padding-right: 0.5rem;
+}
+
+.c14 {
+  display: inline;
+  vertical-align: middle;
+}
+
+.c10 {
+  font-size: 0.875rem;
+  line-height: 1.125rem;
+  font-family: ReithSerif,Helvetica,Arial,sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  color: #222222;
+  cursor: pointer;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c10:hover,
+.c10:focus {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.c10:visited {
+  color: #6E6E73;
 }
 
 @supports (grid-template-columns:fit-content(200px)) {
@@ -1362,6 +1444,20 @@ exports[`StoryPromo - Top Story should render with one Index Also correctly 1`] 
   }
 }
 
+@media (min-width:20rem) and (max-width:37.4375rem) {
+  .c10 {
+    font-size: 0.875rem;
+    line-height: 1.125rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .c10 {
+    font-size: 0.8125rem;
+    line-height: 1rem;
+  }
+}
+
 <div
   class="c0"
 >
@@ -1406,6 +1502,40 @@ exports[`StoryPromo - Top Story should render with one Index Also correctly 1`] 
       >
         Related content
       </h4>
+      <div
+        class="c9"
+      >
+        <a
+          class="c10"
+          href="/hausa/labarai-48916590"
+        >
+          <span
+            class="c11"
+          >
+            <span
+              aria-hidden="true"
+              class="c12"
+            >
+              <svg
+                class="c13"
+                focusable="false"
+                height="12px"
+                viewBox="0 0 32 32"
+                width="12px"
+              >
+                <polygon
+                  points="3,32 29,16 3,0"
+                />
+              </svg>
+            </span>
+          </span>
+          <span
+            class="c14"
+          >
+            APC ba ta isa ta kore ni ba – Buba Galadima
+          </span>
+        </a>
+      </div>
     </div>
   </div>
 </div>

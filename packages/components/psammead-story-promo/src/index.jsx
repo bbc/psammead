@@ -1,6 +1,7 @@
 import React, { Fragment } from 'react';
 import styled, { css } from 'styled-components';
 import { node, bool, string, oneOf, shape } from 'prop-types';
+import { scriptPropType } from '@bbc/gel-foundations/prop-types';
 import {
   GEL_SPACING,
   GEL_SPACING_DBL,
@@ -33,7 +34,6 @@ import {
   getSerifMedium,
 } from '@bbc/psammead-styles/font-styles';
 import { grid } from '@bbc/psammead-styles/detection';
-import { scriptPropType } from '@bbc/gel-foundations/prop-types';
 import VisuallyHiddenText from '@bbc/psammead-visually-hidden-text';
 
 const twoOfSixColumnsMaxWidthScaleable = `33.33%`;

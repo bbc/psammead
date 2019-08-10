@@ -4,17 +4,9 @@ import { latin } from '@bbc/gel-foundations/scripts';
 import MediaIndicator from '@bbc/psammead-media-indicator';
 import { render } from '@testing-library/react';
 import VisuallyHiddenText from '@bbc/psammead-visually-hidden-text';
-import StoryPromo, {
-  Headline,
-  Summary,
-  Link,
-  LiveLabel,
-  IndexAlsos,
-  IndexAlso,
-  IndexAlsosUl,
-  IndexAlsosLi,
-} from './index';
+import StoryPromo, { Headline, Summary, Link, LiveLabel } from './index';
 import relatedItems from '../testHelpers/relatedItems';
+import IndexAlsosContainer from '../testHelpers/IndexAlsosContainer';
 
 const Image = <img src="https://foobar.com/image.png" alt="Alt text" />;
 
@@ -26,71 +18,6 @@ const LiveComponent = ({ headline, service }) => (
     <VisuallyHiddenText lang="en-GB">Live, </VisuallyHiddenText>
     {headline}
   </span>
-);
-
-const getIndexAlsosMediaIndicator = (cpsType, service) => {
-  const isPGL = cpsType === 'PGL';
-  const isMedia = cpsType === 'MAP';
-
-  if (!isPGL && !isMedia) {
-    return null;
-  }
-
-  // Update this once the ARES feed contains the media type
-  const indexAlsosMediaType = isPGL ? 'photogallery' : 'video';
-
-  return <MediaIndicator service={service} type={indexAlsosMediaType} />; // Add indexAlsos prop
-};
-
-/* eslint-disable-next-line react/prop-types */
-const IndexAlsosComponent = ({ alsoItems, script, service }) => (
-  <IndexAlsos offScreenText="Related content">
-    {/* eslint-disable-next-line react/prop-types */
-    alsoItems.length > 1 ? (
-      <IndexAlsosUl>
-        {/* eslint-disable-next-line react/prop-types */
-        alsoItems.map(item => {
-          const key = item.id;
-          const { headline } = item.headlines;
-          const url = item.locators.assetUri;
-          const { cpsType } = item;
-
-          return (
-            <IndexAlsosLi
-              key={key}
-              script={script}
-              service={service}
-              url={url}
-              mediaIndicator={getIndexAlsosMediaIndicator(cpsType, service)}
-            >
-              {headline}
-            </IndexAlsosLi>
-          );
-        })}
-      </IndexAlsosUl>
-    ) : (
-      // When there is exactly one related item, it should not be contained within a list.
-      () => {
-        /* eslint-disable-next-line react/prop-types */
-        const { headline } = alsoItems.headlines;
-        /* eslint-disable-next-line react/prop-types */
-        const url = alsoItems.locators.assetUri;
-        // eslint-disable-next-line react/prop-types
-        const { cpsType } = alsoItems;
-
-        return (
-          <IndexAlso
-            script={script}
-            service={service}
-            url={url}
-            mediaIndicator={getIndexAlsosMediaIndicator(cpsType, service)}
-          >
-            {headline}
-          </IndexAlso>
-        );
-      }
-    )}
-  </IndexAlsos>
 );
 
 // eslint-disable-next-line react/prop-types
@@ -110,7 +37,7 @@ const Info = ({ topStory, isLive, alsoItems }) => (
     </Summary>
     <time>12 March 2019</time>
     {topStory && alsoItems && (
-      <IndexAlsosComponent
+      <IndexAlsosContainer
         alsoItems={alsoItems}
         script={latin}
         service="news"
@@ -183,7 +110,7 @@ describe('StoryPromo - Top Story', () => {
 describe('Index Alsos - multiple', () => {
   shouldMatchSnapshot(
     'should render multiple correctly',
-    <IndexAlsosComponent
+    <IndexAlsosContainer
       alsoItems={relatedItems}
       script={latin}
       service="news"
@@ -192,7 +119,7 @@ describe('Index Alsos - multiple', () => {
 
   shouldMatchSnapshot(
     'should render one correctly',
-    <IndexAlsosComponent
+    <IndexAlsosContainer
       alsoItems={relatedItems[0]}
       script={latin}
       service="news"
