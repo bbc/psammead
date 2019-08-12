@@ -10,7 +10,7 @@ import {
 } from '../src/IndexAlsos/index';
 
 const IndexAlsosContainer = ({ alsoItems, script, service }) => {
-  const IndexAlsosMediaIndicator = cpsType => {
+  const getMediaType = cpsType => {
     const isPGL = cpsType === 'PGL';
     const isMedia = cpsType === 'MAP';
 
@@ -19,7 +19,13 @@ const IndexAlsosContainer = ({ alsoItems, script, service }) => {
     }
 
     // Update this once the ARES feed contains the media type
-    const indexAlsosMediaType = isPGL ? 'photogallery' : 'video';
+    const mediaType = isPGL ? 'photogallery' : 'video';
+
+    return mediaType;
+  };
+
+  const IndexAlsosMediaIndicator = cpsType => {
+    const indexAlsosMediaType = getMediaType(cpsType);
 
     return (
       <MediaIndicator service={service} type={indexAlsosMediaType} indexAlsos />
@@ -44,6 +50,7 @@ const IndexAlsosContainer = ({ alsoItems, script, service }) => {
                 service={service}
                 url={url}
                 mediaIndicator={IndexAlsosMediaIndicator(cpsType, service)}
+                mediaType={getMediaType(cpsType)}
               >
                 {headline}
               </IndexAlsosLi>
@@ -63,6 +70,7 @@ const IndexAlsosContainer = ({ alsoItems, script, service }) => {
               service={service}
               url={url}
               mediaIndicator={IndexAlsosMediaIndicator(cpsType, service)}
+              mediaType={getMediaType(cpsType)}
             >
               {headline}
             </IndexAlso>

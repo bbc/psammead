@@ -871,9 +871,19 @@ exports[`StoryPromo - Top Story should render with multiple Index Alsos correctl
               </span>
             </span>
             <span
-              class="c15"
+              role="text"
             >
-              APC ba ta isa ta kore ni ba – Buba Galadima
+              <span
+                class="c8"
+              >
+                video
+                , 
+              </span>
+              <span
+                class="c15"
+              >
+                APC ba ta isa ta kore ni ba – Buba Galadima
+              </span>
             </span>
           </a>
         </li>
@@ -886,9 +896,26 @@ exports[`StoryPromo - Top Story should render with multiple Index Alsos correctl
             href="/hausa/labarai-42837051"
           >
             <span
-              class="c15"
+              class="c12"
             >
-              Yaushe Obasanjo ya fara yi wa shugabannin kasa baki?
+              <span
+                aria-hidden="true"
+                class="c13"
+              />
+            </span>
+            <span
+              role="text"
+            >
+              <span
+                class="c8"
+              >
+                , 
+              </span>
+              <span
+                class="c15"
+              >
+                Yaushe Obasanjo ya fara yi wa shugabannin kasa baki?
+              </span>
             </span>
           </a>
         </li>
@@ -1237,9 +1264,19 @@ exports[`StoryPromo - Top Story should render with one Index Also correctly 1`] 
             </span>
           </span>
           <span
-            class="c14"
+            role="text"
           >
-            APC ba ta isa ta kore ni ba – Buba Galadima
+            <span
+              class="c8"
+            >
+              video
+              , 
+            </span>
+            <span
+              class="c14"
+            >
+              APC ba ta isa ta kore ni ba – Buba Galadima
+            </span>
           </span>
         </a>
       </div>

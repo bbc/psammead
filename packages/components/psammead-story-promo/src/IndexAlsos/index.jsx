@@ -60,13 +60,25 @@ text-decoration: none;
 }
 `;
 
-const IndexAlsosLink = ({ children, script, service, url, mediaIndicator }) => {
+const IndexAlsosLink = ({
+  children,
+  script,
+  service,
+  url,
+  mediaIndicator,
+  mediaType,
+}) => {
   return (
     <StyledIndexAlsosLink href={url} script={script} service={service}>
       {mediaIndicator ? (
         <Fragment>
           <IndexAlsosMediaIndicator>{mediaIndicator}</IndexAlsosMediaIndicator>
-          <IndexAlsosText>{children}</IndexAlsosText>
+          <span // eslint-disable-next-line jsx-a11y/aria-role
+            role="text"
+          >
+            <VisuallyHiddenText>{mediaType}, </VisuallyHiddenText>
+            <IndexAlsosText>{children}</IndexAlsosText>
+          </span>
         </Fragment>
       ) : (
         <IndexAlsosText>{children}</IndexAlsosText>
@@ -81,6 +93,7 @@ IndexAlsosLink.propTypes = {
   service: string.isRequired,
   url: string.isRequired,
   mediaIndicator: node,
+  mediaType: string.isRequired,
 };
 
 IndexAlsosLink.defaultProps = {

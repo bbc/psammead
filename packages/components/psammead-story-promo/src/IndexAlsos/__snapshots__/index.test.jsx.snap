@@ -135,9 +135,19 @@ exports[`Index Alsos should render multiple correctly 1`] = `
           </span>
         </span>
         <span
-          class="c8"
+          role="text"
         >
-          APC ba ta isa ta kore ni ba – Buba Galadima
+          <span
+            class="c1"
+          >
+            video
+            , 
+          </span>
+          <span
+            class="c8"
+          >
+            APC ba ta isa ta kore ni ba – Buba Galadima
+          </span>
         </span>
       </a>
     </li>
@@ -150,9 +160,26 @@ exports[`Index Alsos should render multiple correctly 1`] = `
         href="/hausa/labarai-42837051"
       >
         <span
-          class="c8"
+          class="c5"
         >
-          Yaushe Obasanjo ya fara yi wa shugabannin kasa baki?
+          <span
+            aria-hidden="true"
+            class="c6"
+          />
+        </span>
+        <span
+          role="text"
+        >
+          <span
+            class="c1"
+          >
+            , 
+          </span>
+          <span
+            class="c8"
+          >
+            Yaushe Obasanjo ya fara yi wa shugabannin kasa baki?
+          </span>
         </span>
       </a>
     </li>
@@ -284,9 +311,19 @@ exports[`Index Alsos should render one correctly 1`] = `
         </span>
       </span>
       <span
-        class="c7"
+        role="text"
       >
-        APC ba ta isa ta kore ni ba – Buba Galadima
+        <span
+          class="c1"
+        >
+          video
+          , 
+        </span>
+        <span
+          class="c7"
+        >
+          APC ba ta isa ta kore ni ba – Buba Galadima
+        </span>
       </span>
     </a>
   </div>
