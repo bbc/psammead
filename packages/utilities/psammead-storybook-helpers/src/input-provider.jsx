@@ -4,14 +4,23 @@ import { Helmet } from 'react-helmet';
 import * as scripts from '@bbc/gel-foundations/scripts';
 import LANGUAGE_VARIANTS from './text-variants';
 
-const inputProvider = (slots, componentFunction, services) => () => {
+const inputProvider = (
+  slots,
+  componentFunction,
+  services,
+  options = {},
+) => () => {
   let serviceNames = Object.keys(LANGUAGE_VARIANTS);
 
   if (services) {
     serviceNames = serviceNames.filter(service => services.includes(service));
   }
 
-  const serviceName = select('Select a service', serviceNames, 'news');
+  const serviceName = select(
+    'Select a service',
+    serviceNames,
+    options.defaultService || 'news',
+  );
 
   const service = LANGUAGE_VARIANTS[serviceName];
   const isNews = serviceName === 'news';
