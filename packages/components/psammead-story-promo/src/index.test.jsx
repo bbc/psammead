@@ -107,26 +107,6 @@ describe('StoryPromo - Top Story', () => {
   );
 });
 
-describe('Index Alsos - multiple', () => {
-  shouldMatchSnapshot(
-    'should render multiple correctly',
-    <IndexAlsosContainer
-      alsoItems={relatedItems}
-      script={latin}
-      service="news"
-    />,
-  );
-
-  shouldMatchSnapshot(
-    'should render one correctly',
-    <IndexAlsosContainer
-      alsoItems={relatedItems[0]}
-      script={latin}
-      service="news"
-    />,
-  );
-});
-
 describe('assertions', () => {
   it('should render h3, a, p, time', () => {
     const { container } = render(

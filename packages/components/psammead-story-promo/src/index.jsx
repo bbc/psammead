@@ -1,7 +1,6 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import styled, { css } from 'styled-components';
-import { node, bool, string, oneOf, shape } from 'prop-types';
-import { scriptPropType } from '@bbc/gel-foundations/prop-types';
+import { node, bool, string, oneOf } from 'prop-types';
 import {
   GEL_SPACING,
   GEL_SPACING_DBL,
@@ -15,7 +14,6 @@ import {
   GEL_GROUP_5_SCREEN_WIDTH_MIN,
 } from '@bbc/gel-foundations/breakpoints';
 import {
-  getBrevier,
   getPica,
   getGreatPrimer,
   getParagon,
@@ -23,7 +21,6 @@ import {
 } from '@bbc/gel-foundations/typography';
 import {
   C_EBON,
-  C_LUNAR,
   C_METAL,
   C_POSTBOX,
   C_SHADOW,
@@ -34,7 +31,6 @@ import {
   getSerifMedium,
 } from '@bbc/psammead-styles/font-styles';
 import { grid } from '@bbc/psammead-styles/detection';
-import VisuallyHiddenText from '@bbc/psammead-visually-hidden-text';
 
 const twoOfSixColumnsMaxWidthScaleable = `33.33%`;
 // (2 / 6) * 100 = 0.3333333333 = 33.33%
@@ -283,123 +279,6 @@ LiveLabel.propTypes = {
 LiveLabel.defaultProps = {
   dir: 'ltr',
 };
-
-/*
- *  Index Alsos
- */
-const StyledIndexAlsos = styled.div`
-  position: relative;
-  z-index: 2;
-  padding: ${GEL_SPACING_DBL} 0 ${GEL_SPACING};
-  @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
-    display: none;
-  }
-`;
-
-const StyledIndexAlso = styled.div`
-  border-top: 1px solid ${C_LUNAR};
-  padding: ${GEL_SPACING} 0;
-`;
-
-const StyledIndexAlsosUl = styled.ul`
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-`;
-
-const StyledIndexAlsosLi = styled.li`
-  border-top: 1px solid ${C_LUNAR};
-  padding: ${GEL_SPACING} 0;
-`;
-
-const IndexAlsosMediaIndicator = styled.span`
-  padding-right: ${GEL_SPACING};
-`;
-
-const IndexAlsosText = styled.span`
-  display: inline;
-  vertical-align: middle;
-`;
-
-const StyledIndexAlsosLink = styled.a`
-  ${props => (props.script ? getBrevier(props.script) : '')};
-  ${({ service }) => getSerifMedium(service)}
-  color: ${C_EBON};
-  cursor: pointer;
-  text-decoration: none;
-
-  &:hover,
-  &:focus {
-    text-decoration: underline;
-  }
-
-  &:visited {
-    color: ${C_METAL};
-  }
-`;
-
-const IndexAlsosLink = ({ children, script, service, url, mediaIndicator }) => {
-  return (
-    <StyledIndexAlsosLink href={url} script={script} service={service}>
-      {mediaIndicator ? (
-        <Fragment>
-          <IndexAlsosMediaIndicator>{mediaIndicator}</IndexAlsosMediaIndicator>
-          <IndexAlsosText>{children}</IndexAlsosText>
-        </Fragment>
-      ) : (
-        <IndexAlsosText>{children}</IndexAlsosText>
-      )}
-    </StyledIndexAlsosLink>
-  );
-};
-
-IndexAlsosLink.propTypes = {
-  children: node.isRequired,
-  script: shape(scriptPropType).isRequired,
-  service: string.isRequired,
-  url: string.isRequired,
-  mediaIndicator: node,
-};
-
-IndexAlsosLink.defaultProps = {
-  mediaIndicator: null,
-};
-
-export const IndexAlsos = ({ children, offScreenText }) => (
-  <StyledIndexAlsos>
-    <VisuallyHiddenText as="h4">{offScreenText}</VisuallyHiddenText>
-    {children}
-  </StyledIndexAlsos>
-);
-
-IndexAlsos.propTypes = {
-  children: node.isRequired,
-  offScreenText: string,
-};
-
-IndexAlsos.defaultProps = {
-  offScreenText: null,
-};
-
-export const IndexAlsosUl = ({ children }) => (
-  <StyledIndexAlsosUl role="list">{children}</StyledIndexAlsosUl>
-);
-
-IndexAlsosUl.propTypes = {
-  children: node.isRequired,
-};
-
-export const IndexAlsosLi = ({ ...props }) => (
-  <StyledIndexAlsosLi role="listitem">
-    <IndexAlsosLink {...props} />
-  </StyledIndexAlsosLi>
-);
-
-export const IndexAlso = ({ ...props }) => (
-  <StyledIndexAlso>
-    <IndexAlsosLink {...props} />
-  </StyledIndexAlso>
-);
 
 /*
  *  Story Promo

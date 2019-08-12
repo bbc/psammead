@@ -7,7 +7,7 @@ import {
   IndexAlso,
   IndexAlsosUl,
   IndexAlsosLi,
-} from '../src/index';
+} from '../src/IndexAlsos/index';
 
 const IndexAlsosContainer = ({ alsoItems, script, service }) => {
   const IndexAlsosMediaIndicator = cpsType => {
