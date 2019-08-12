@@ -30,11 +30,6 @@ const StyledIndexAlsosUl = styled.ul`
   margin: 0;
 `;
 
-const StyledIndexAlsosLi = styled.li`
-  border-top: 1px solid ${C_LUNAR};
-  padding: ${GEL_SPACING} 0;
-`;
-
 const IndexAlsosMediaIndicator = styled.span`
   padding-right: ${GEL_SPACING};
 `;
@@ -45,20 +40,19 @@ const IndexAlsosText = styled.span`
 `;
 
 const StyledIndexAlsosLink = styled.a`
-${props => (props.script ? getBrevier(props.script) : '')};
-${({ service }) => getSerifMedium(service)}
-color: ${C_EBON};
-cursor: pointer;
-text-decoration: none;
+  ${props => (props.script ? getBrevier(props.script) : '')};
+  ${({ service }) => getSerifMedium(service)}
+  color: ${C_EBON};
+  text-decoration: none;
 
-&:hover,
-&:focus {
-  text-decoration: underline;
-}
+  &:hover,
+  &:focus {
+    text-decoration: underline;
+  }
 
-&:visited {
-  color: ${C_METAL};
-}
+  &:visited {
+    color: ${C_METAL};
+  }
 `;
 
 const IndexAlsosLink = ({
@@ -126,9 +120,9 @@ IndexAlsosUl.propTypes = {
 };
 
 export const IndexAlsosLi = ({ ...props }) => (
-  <StyledIndexAlsosLi role="listitem">
+  <StyledIndexAlso as="li" role="listitem">
     <IndexAlsosLink {...props} />
-  </StyledIndexAlsosLi>
+  </StyledIndexAlso>
 );
 
 export const IndexAlso = ({ ...props }) => (
