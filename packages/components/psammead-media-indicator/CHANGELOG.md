@@ -3,6 +3,10 @@
 <!-- prettier-ignore -->
 | Version | Description |
 | ------- | ----------- |
+| 2.4.1   | [PR#1685](https://github.com/bbc/psammead/pull/1685) Bump dependencies |
+| 2.4.0 | [PR#1669](https://github.com/bbc/psammead/pull/1669) Add `Index Alsos` support |
+| 2.3.3 | [PR#1682](https://github.com/bbc/psammead/pull/1682) Move all dev dependencies to top level package.json |
+| 2.3.2 | [PR#1598](https://github.com/bbc/psammead/pull/1598) Bump dependencies |
 | 2.3.1 | [PR#1365](https://github.com/bbc/psammead/pull/1365) Bump psammead-styles to 1.2.0 |
 | 2.3.0 | [PR#1240](https://github.com/bbc/psammead/pull/1240) Remove unused offscreen text |
 | 2.2.0 | [PR#1243](https://github.com/bbc/psammead/pull/1243) Add photogallery media icon |

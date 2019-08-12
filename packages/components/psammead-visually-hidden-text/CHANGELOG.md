@@ -3,6 +3,8 @@
 <!-- prettier-ignore -->
 | Version | Description |
 | ------- | ----------- |
+| 1.1.2 | [PR#1682](https://github.com/bbc/psammead/pull/1682) Move all dev dependencies to top level package.json |
+| 1.1.1 | [PR#1597](https://github.com/bbc/psammead/pull/1597) Bump @bbc/psammead-storybook-helpers, @bbc/psammead-test-helpers|
 | 1.1.0 | [PR#1233](https://github.com/bbc/psammead/pull/1233) Add ESM modules entry |
 | 1.0.7 | [PR#1180](https://github.com/bbc/psammead/pull/1180) use `psammead-storybook-helpers@3.1.3` and`@bbc/psammead-test-helpers@1.0.2` |
 | 1.0.6 | [PR#1082](https://github.com/bbc/psammead/pull/1082) Bump lodash security vulnerability |

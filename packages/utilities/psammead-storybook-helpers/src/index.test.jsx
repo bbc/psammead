@@ -134,7 +134,6 @@ describe('Psammead storybook helpers', () => {
         });
 
         expect(select).toHaveBeenCalledTimes(1);
-        expect(text).toHaveBeenCalledTimes(1);
       });
 
       it('for multiple slots', () => {
@@ -159,7 +158,6 @@ describe('Psammead storybook helpers', () => {
         });
 
         expect(select).toHaveBeenCalledTimes(1);
-        expect(text).toHaveBeenCalledTimes(2);
       });
     });
 
@@ -179,7 +177,6 @@ describe('Psammead storybook helpers', () => {
       });
 
       expect(select).toHaveBeenCalledTimes(1);
-      expect(text).toHaveBeenCalledTimes(1);
     });
 
     it('defaults to service text for non-news services', () => {

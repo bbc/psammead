@@ -3,6 +3,12 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 2.3.5 | [PR#1686](https://github.com/bbc/psammead/pull/1686) Bump dependencies |
+| 2.3.4 | [PR#1682](https://github.com/bbc/psammead/pull/1682) Move all dev dependencies to top level package.json |
+| 2.3.3 | [PR#1641](https://github.com/bbc/psammead/pull/1641) Bump dependencies |
+| 2.3.2 | [PR#1532](https://github.com/bbc/psammead/pull/1532) 'fixes' a unit test that flaked on 31st of a month |
+| 2.3.1 | [PR#1518](https://github.com/bbc/psammead/pull/1518) Clear unit test warnings |
+| 2.3.0 | [PR#1067](https://github.com/bbc/psammead/pull/1067) Localise relative timestamps with momentjs |
 | 2.2.1 | [PR#1352](https://github.com/bbc/psammead/pull/1352) Update default timestamp format |
 | 2.2.0   | [PR#1245](https://github.com/bbc/psammead/pull/1245) The storybook stories now include the ability to change the service |
 | 2.1.0 | [PR#1233](https://github.com/bbc/psammead/pull/1233) Add ESM modules entry |

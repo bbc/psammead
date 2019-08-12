@@ -3,6 +3,11 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 4.0.0 | [PR#1679](https://github.com/bbc/psammead/pull/1679) Remove text knob from input-provider |
+| 3.3.4   | [PR#1685](https://github.com/bbc/psammead/pull/1685) Bump dependencies |
+| 3.3.3 | [PR#1682](https://github.com/bbc/psammead/pull/1682) Move all dev dependencies to top level package.json |
+| 3.3.2 | [PR#1595](https://github.com/bbc/psammead/pull/1595) Bump `@bbc/gel-foundations` |
+| 3.3.1 | [PR#1479](https://github.com/bbc/psammead/pull/1479) Import all scripts from gel-foundations |
 | 3.3.0 | [PR#1233](https://github.com/bbc/psammead/pull/1233) Add ESM modules entry |
 | 3.2.0 | [PR#1244](https://github.com/bbc/psammead/pull/1244) `dirDecorator` now includes service `locale` in the object passed to the callback |
 | 3.1.3 | [PR#1179](https://github.com/bbc/psammead/pull/1179) use `gel-foundations@3.0.3` and `psammead-test-helpers@1.0.2`|

@@ -3,6 +3,8 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 3.3.1 | [PR#1682](https://github.com/bbc/psammead/pull/1682) Move all dev dependencies to top level package.json |
+| 3.2.0 | [PR#1530](https://github.com/bbc/psammead/pull/1530) Add additional GEL Type sizes for large contexts (Atlas, Elephant, Imperial, Royal, Foolscap) |
 | 3.1.0 | [PR#1212](https://github.com/bbc/psammead/pull/1212) Export ESM modules via existing API |
 | 3.0.3 | [PR#1155](https://github.com/bbc/psammead/pull/1155) Use `psammead-test-helpers@1.0.2` |
 | 3.0.2 | [PR#783](https://github.com/bbc/psammead/pull/783) Update to latest psammead-test-helpers. Update snapshots. |

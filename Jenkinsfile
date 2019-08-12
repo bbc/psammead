@@ -28,6 +28,7 @@ pipeline {
   }
   environment {
     CI = true
+    CC_TEST_REPORTER_ID = '06c1254d7c2ff48f763492791337193c8345ca8740c34263d68adcc449aff732'
   }
   stages {
     stage ('Run application tests') {
@@ -39,6 +40,7 @@ pipeline {
         }
       }
       steps {
+        sh 'ls' // quick debug step
         sh 'rm -rf ./app'
         script {
           if (GIT_BRANCH == 'latest') {
@@ -48,10 +50,11 @@ pipeline {
         sh 'make install'
         sh 'make code-coverage-before-build'
         sh 'make tests'
-        withCredentials([string(credentialsId: 'psammead-cc-reporter-id', variable: 'CC_TEST_REPORTER_ID')]) {
-          sh 'make code-coverage-after-build'
+        sh 'make code-coverage-after-build'
+
+        withCredentials([string(credentialsId: 'psammead-chromatic-app-code', variable: 'CHROMATIC_APP_CODE')]) {
+          sh 'npm run test:chromatic'
         }
-        sh 'make change-scanner'
       }
       post {
         always {
@@ -73,6 +76,7 @@ pipeline {
         }
       }
       steps {
+        sh 'ls' // quick debug step
         sh 'make storybook'
         sh 'rm published.txt || true'
         withCredentials([string(credentialsId: 'npm_bbc-online_read_write', variable: 'NPM_TOKEN')]) {

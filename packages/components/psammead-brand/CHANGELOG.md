@@ -3,6 +3,10 @@
 <!-- prettier-ignore -->
 | Version | Description |
 | ------- | ----------- |
+| 4.2.5   | [PR#1685](https://github.com/bbc/psammead/pull/1685) Bump dependencies |
+| 4.2.4 | [PR#1682](https://github.com/bbc/psammead/pull/1682) Move all dev dependencies to top level package.json |
+| 4.2.3   | [PR#1599](https://github.com/bbc/psammead/pull/1599) Bump dependencies |
+| 4.2.2 | [PR#1518](https://github.com/bbc/psammead/pull/1518) Clear unit test warnings |
 | 4.2.1 | [PR#1365](https://github.com/bbc/psammead/pull/1365) Bump psammead-styles to 1.2.0 |
 | 4.2.0 | [PR#1233](https://github.com/bbc/psammead/pull/1233) Add ESM modules entry |
 | 4.1.12 | [PR#1181](https://github.com/bbc/psammead/pull/1181) Bump dependencies |
