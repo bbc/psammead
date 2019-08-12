@@ -290,7 +290,7 @@ LiveLabel.defaultProps = {
 const StyledIndexAlsos = styled.div`
   position: relative;
   z-index: 2;
-  margin: ${GEL_SPACING_DBL} 0 ${GEL_SPACING};
+  padding: ${GEL_SPACING_DBL} 0 ${GEL_SPACING};
   @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
     display: none;
   }
