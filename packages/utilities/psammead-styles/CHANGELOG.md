@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 2.0.3 | [PR#xxx](https://github.com/bbc/psammead/pull/xxx) Add top-level entry file for font-families. |
 | 2.0.2 | [PR#1682](https://github.com/bbc/psammead/pull/1682) Move all dev dependencies to top level package.json |
 | 2.0.1 | [PR#1597](https://github.com/bbc/psammead/pull/1597) Bump @bbc/gel-foundations, @bbc/psammead-storybook-helpers, @bbc/psammead-test-helpers |
 | 2.0.0 | [PR#1516](https://github.com/bbc/psammead/pull/1516) Add font-family and font-face declarations for World Service fonts. Changes `getSansItalic` to `getSansRegularItalic`. |
