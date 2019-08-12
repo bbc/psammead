@@ -3,6 +3,10 @@
 <!-- prettier-ignore -->
 | Version | Description |
 | ------- | ----------- |
+| 2.0.1   | [PR#1685](https://github.com/bbc/psammead/pull/1685) Bump dependencies |
+| 2.0.0 | [PR#1643](https://github.com/bbc/psammead/pull/1643) Move vertical rhythm out of psammead |
+| 1.1.3 | [PR#1682](https://github.com/bbc/psammead/pull/1682) Move all dev dependencies to top level package.json |
+| 1.1.2 | [PR#1667](https://github.com/bbc/psammead/pull/1667) Bump dependencies |
 | 1.1.1 | [PR#1365](https://github.com/bbc/psammead/pull/1365) Bump psammead-styles to 1.2.0 |
 | 1.1.0 | [PR#1233](https://github.com/bbc/psammead/pull/1233) Add ESM modules entry |
 | 1.0.7   | [PR#1203](https://github.com/bbc/psammead/pull/1203) use `gel-foundations@3.0.3`, `psammead-styles@1.1.3`, bump devDependencies and pass `service` prop to required components in test. |

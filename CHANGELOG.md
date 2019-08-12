@@ -3,7 +3,10 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
-| 1.4.2  | [PR#1592](https://github.com/bbc/psammead/pull/1592) Bump storybook-readme, storybook-chromatic, @storybook/addon-notes, @storybook/addon-viewport, @storybook/react, gh-pages, @storybook/addon-knobs, @storybook/addon-actions, @bbc/psammead-assets, husky |
+| 1.5.1 | [PR#1687](https://github.com/bbc/psammead/pull/1686) Bump psammead package dependencies |
+| 1.5.0 | [PR#1682](https://github.com/bbc/psammead/pull/1682) Move all dev dependencies to top level package.json |
+| 1.4.3 | [PR#1683](https://github.com/bbc/psammead/pull/1683) Bump storybook chromatic to fix vulnerability|
+| 1.4.2 | [PR#1592](https://github.com/bbc/psammead/pull/1592) Bump storybook-readme, storybook-chromatic, @storybook/addon-notes, @storybook/addon-viewport, @storybook/react, gh-pages, @storybook/addon-knobs, @storybook/addon-actions, @bbc/psammead-assets, husky |
 | 1.4.1 | [PR#1566](https://github.com/bbc/psammead/pull/1566) Bump @babel/preset-env, eslint-plugin-import, eslint-plugin-react, semver, @babel/cli,@babel/core, @babel/plugin-transform-runtime, @testing-library/react, lerna, @bbc/psammead-styles |
 | 1.4.0 | [PR#1212](https://github.com/bbc/psammead/pull/1212) Add export default from babel plugin |
 | 1.3.0 | [PR#1183](https://github.com/bbc/psammead/pull/1183) Build es modules from all packages |

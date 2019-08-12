@@ -97,6 +97,16 @@ describe('Psammead storybook helpers', () => {
       expect(text).toHaveBeenCalledTimes(0);
     });
 
+    it('allows default service to be set', () => {
+      select.mockReturnValueOnce('thai');
+      underTest.inputProvider(null, renderFn, null, {
+        defaultService: 'thai',
+      })();
+
+      expect(select).toHaveBeenCalledTimes(1);
+      expect(select.mock.calls[0][2]).toBe('thai');
+    });
+
     it('handles scenario where config is null', () => {
       select.mockReturnValueOnce('news');
 
@@ -134,7 +144,6 @@ describe('Psammead storybook helpers', () => {
         });
 
         expect(select).toHaveBeenCalledTimes(1);
-        expect(text).toHaveBeenCalledTimes(1);
       });
 
       it('for multiple slots', () => {
@@ -159,7 +168,6 @@ describe('Psammead storybook helpers', () => {
         });
 
         expect(select).toHaveBeenCalledTimes(1);
-        expect(text).toHaveBeenCalledTimes(2);
       });
     });
 
@@ -179,7 +187,6 @@ describe('Psammead storybook helpers', () => {
       });
 
       expect(select).toHaveBeenCalledTimes(1);
-      expect(text).toHaveBeenCalledTimes(1);
     });
 
     it('defaults to service text for non-news services', () => {

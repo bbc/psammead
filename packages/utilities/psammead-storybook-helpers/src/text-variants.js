@@ -1,5 +1,5 @@
 const LANGUAGE_VARIANTS = {
-  afaanOromoo: {
+  afaanoromoo: {
     text:
       "Gammadoo ta'uun akkanumaan hin dhufu, waan shaakalamuudha jetti saantoos.",
     script: 'latin',
@@ -83,7 +83,7 @@ const LANGUAGE_VARIANTS = {
     script: 'latinDiacritics',
     locale: 'ig',
   },
-  indonesian: {
+  indonesia: {
     text:
       '"Apa yang terjadi di Selandia Baru adalah kekerasan yang dibawa oleh seseorang yang tumbuh dan belajar ideologinya di tempat lain,\' kata Jacinda Ardern.',
     script: 'latin',

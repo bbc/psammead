@@ -71,6 +71,38 @@ exports[`MediaIndicator - Top Story should render a top story audio promo render
 </div>
 `;
 
+exports[`MediaIndicator should render Index Also video indicator correctly 1`] = `
+.c1 {
+  vertical-align: middle;
+  margin: 0 0.25rem;
+  color: #222222;
+  fill: currentColor;
+  width: 0.75rem;
+  height: 0.75rem;
+}
+
+.c0 > svg {
+  margin: 0;
+}
+
+<span
+  aria-hidden="true"
+  class="c0"
+>
+  <svg
+    class="c1"
+    focusable="false"
+    height="12px"
+    viewBox="0 0 32 32"
+    width="12px"
+  >
+    <polygon
+      points="3,32 29,16 3,0"
+    />
+  </svg>
+</span>
+`;
+
 exports[`MediaIndicator should render audio correctly without duration details 1`] = `
 .c2 {
   vertical-align: middle;
