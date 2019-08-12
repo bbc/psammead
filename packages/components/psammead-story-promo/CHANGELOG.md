@@ -3,7 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 | ------- | ----------- |
-| 2.4.0-alpha.1 | [PR#1567](https://github.com/bbc/psammead/pull/1567) Add Index Alsos |
+| 2.4.0   | [PR#1567](https://github.com/bbc/psammead/pull/1567) Add Index Alsos |
 | 2.3.5   | [PR#1685](https://github.com/bbc/psammead/pull/1685) Bump dependencies |
 | 2.3.2 | [PR#1682](https://github.com/bbc/psammead/pull/1682) Move all dev dependencies to top level package.json |
 | 2.3.1 | [PR#1641](https://github.com/bbc/psammead/pull/1641) Bump dependencies |
