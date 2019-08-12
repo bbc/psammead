@@ -32,15 +32,15 @@ exports[`Index Alsos should render multiple correctly 1`] = `
   padding: 1rem 0 0.5rem;
 }
 
+.c3 {
+  border-top: 1px solid #F2F2F2;
+  padding: 0.5rem 0;
+}
+
 .c2 {
   list-style-type: none;
   padding: 0;
   margin: 0;
-}
-
-.c3 {
-  border-top: 1px solid #F2F2F2;
-  padding: 0.5rem 0;
 }
 
 .c5 {
@@ -59,7 +59,6 @@ exports[`Index Alsos should render multiple correctly 1`] = `
   font-weight: 500;
   font-style: normal;
   color: #222222;
-  cursor: pointer;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
@@ -161,26 +160,9 @@ exports[`Index Alsos should render multiple correctly 1`] = `
         href="/hausa/labarai-42837051"
       >
         <span
-          class="c5"
+          class="c8"
         >
-          <span
-            aria-hidden="true"
-            class="c6"
-          />
-        </span>
-        <span
-          role="text"
-        >
-          <span
-            class="c1"
-          >
-            , 
-          </span>
-          <span
-            class="c8"
-          >
-            Yaushe Obasanjo ya fara yi wa shugabannin kasa baki?
-          </span>
+          Yaushe Obasanjo ya fara yi wa shugabannin kasa baki?
         </span>
       </a>
     </li>
@@ -241,7 +223,6 @@ exports[`Index Alsos should render one correctly 1`] = `
   font-weight: 500;
   font-style: normal;
   color: #222222;
-  cursor: pointer;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
