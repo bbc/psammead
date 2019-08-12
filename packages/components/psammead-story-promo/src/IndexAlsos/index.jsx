@@ -15,6 +15,7 @@ const StyledIndexAlsos = styled.div`
   padding: ${GEL_SPACING_DBL} 0 ${GEL_SPACING};
   @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
     display: none;
+    visibility: hidden;
   }
 `;
 
