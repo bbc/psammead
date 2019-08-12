@@ -3,6 +3,22 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 1.1.4   | [PR#1685](https://github.com/bbc/psammead/pull/1685) Bump dependencies |
+| 1.1.3 | [PR#1682](https://github.com/bbc/psammead/pull/1682) Move all dev dependencies to top level package.json |
+| 1.1.2 | [PR#1671](https://github.com/bbc/psammead/pull/1671) Bump dependencies |
+| 1.1.1 | [PR#1522](https://github.com/bbc/psammead/pull/1522) Clear storybook warnings |
+| 1.1.0 | [PR#1233](https://github.com/bbc/psammead/pull/1233) Add ESM modules entry |
+| 1.0.8   | [PR#1205](https://github.com/bbc/psammead/pull/1205) Bump dependencies |
+| 1.0.7   | [PR#1082](https://github.com/bbc/psammead/pull/1082) Bump lodash security vulnerability |
+| 1.0.6   | [PR#1038](https://github.com/bbc/psammead/pull/1038) Bump dependencies |
+| 1.0.5   | [PR#892](https://github.com/bbc/psammead/pull/892) Bump dependencies |
+| 1.0.4 | [PR#783](https://github.com/bbc/psammead/pull/783) Update to latest psammead-test-helpers. Update snapshots. |
+| 1.0.3 | [PR#769](https://github.com/bbc/psammead/pull/769) Fix stories not appearing in storybook when using `install:packages:link` |
+| 1.0.2   | [PR#713](https://github.com/bbc/psammead/pull/713) Update `styled-components` to 4.3.2 |
+| 1.0.1  | [PR#677](https://github.com/bbc/psammead/pull/677) Use `@bbc/gel-foundations@3.0.0` |
+| 1.0.0  | [PR#679](https://github.com/bbc/psammead/pull/679) Bump version number |
+| 0.1.15  | [PR#491](https://github.com/bbc/psammead/pull/491) Updates Storybook to account for new styling on paragraph elements in captions |
+| 0.1.14  | [PR#498](https://github.com/bbc/psammead/pull/498) Update story to use new input provider |
 | 0.1.13  | [PR#430](https://github.com/bbc/psammead/pull/430) Add text knobs to story |
 | 0.1.12  | [PR#424](https://github.com/bbc/psammead/pull/424) Add Snyk badge to readme |
 | 0.1.11  | [PR#407](https://github.com/bbc/psammead/pull/407) Organise dependencies properly |

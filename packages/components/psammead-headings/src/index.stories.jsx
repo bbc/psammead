@@ -1,29 +1,51 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import { withKnobs } from '@storybook/addon-knobs';
+import { text, withKnobs } from '@storybook/addon-knobs';
 import { inputProvider } from '@bbc/psammead-storybook-helpers';
-import { latin } from '@bbc/gel-foundations/scripts';
 import notes from '../README.md';
 import { Headline, SubHeading } from './index';
 
-storiesOf('Headline', module)
+storiesOf('Components|Headline', module)
   .addDecorator(withKnobs)
   .add(
     'default',
-    inputProvider(['headline'], headline => (
-      <Headline script={latin}>{headline}</Headline>
-    )),
+    inputProvider(
+      [{ name: 'Headline' }],
+      ({ slotTexts: [headline], script, service }) => (
+        <Headline script={script} service={service}>
+          {headline}
+        </Headline>
+      ),
+    ),
     { notes, knobs: { escapeHTML: false } },
   );
 
-storiesOf('SubHeading', module)
+storiesOf('Components|SubHeading', module)
   .addDecorator(withKnobs)
   .add(
     'default',
-    inputProvider(['subheading'], subheader => (
-      <SubHeading text={subheader} script={latin}>
-        {subheader}
-      </SubHeading>
-    )),
+    inputProvider(
+      [{ name: 'SubHeading' }],
+      ({ slotTexts: [subheader], script, service }) => (
+        <SubHeading script={script} service={service}>
+          {subheader}
+        </SubHeading>
+      ),
+    ),
+    { notes, knobs: { escapeHTML: false } },
+  )
+  .add(
+    'with optional ID',
+    inputProvider(
+      [{ name: 'SubHeading' }],
+      ({ slotTexts: [subheader], script, service }) => {
+        const id = text('ID', 'foo', 'Other');
+        return (
+          <SubHeading id={id} script={script} service={service}>
+            {subheader}
+          </SubHeading>
+        );
+      },
+    ),
     { notes, knobs: { escapeHTML: false } },
   );

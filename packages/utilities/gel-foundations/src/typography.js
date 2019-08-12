@@ -7,6 +7,16 @@ export const GEL_FF_REITH_SERIF = `ReithSerif${fontFamilyBase}`;
 export const GEL_FF_REITH_SANS = `ReithSans${fontFamilyBase}`;
 export const GEL_FF_REITH_SANS_COND = `ReithSansCondensed${fontFamilyBase}`;
 
+export const getAtlas = script => getTypeSizes('atlas', script);
+
+export const getElephant = script => getTypeSizes('elephant', script);
+
+export const getImperial = script => getTypeSizes('imperial', script);
+
+export const getRoyal = script => getTypeSizes('royal', script);
+
+export const getFoolscap = script => getTypeSizes('foolscap', script);
+
 export const getCanon = script => getTypeSizes('canon', script);
 
 export const getTrafalgar = script => getTypeSizes('trafalgar', script);
@@ -26,16 +36,6 @@ export const getLongPrimer = script => getTypeSizes('longPrimer', script);
 export const getBrevier = script => getTypeSizes('brevier', script);
 
 export const getMinion = script => getTypeSizes('minion', script);
-
-export const getAtlas = script => getTypeSizes('atlas', script);
-
-export const getElephant = script => getTypeSizes('elephant', script);
-
-export const getImperial = script => getTypeSizes('imperial', script);
-
-export const getRoyal = script => getTypeSizes('royal', script);
-
-export const getFoolscap = script => getTypeSizes('foolscap', script);
 
 /* ORIGINAL CONSTANTS */
 export const GEL_ATLAS = `

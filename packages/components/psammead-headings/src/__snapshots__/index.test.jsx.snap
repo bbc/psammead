@@ -6,9 +6,10 @@ exports[`Headline component should render correctly 1`] = `
   line-height: 2rem;
   color: #3F3F42;
   font-family: ReithSerif,Helvetica,Arial,sans-serif;
+  font-weight: 500;
+  font-style: normal;
   margin: 0;
   padding: 2rem 0;
-  font-weight: 500;
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
@@ -32,7 +33,7 @@ exports[`Headline component should render correctly 1`] = `
 }
 
 <h1
-  className="c0"
+  class="c0"
 >
   This is my headline.
 </h1>
@@ -43,15 +44,16 @@ exports[`Headline component should render correctly with arabic script typograph
   font-size: 2rem;
   line-height: 2.625rem;
   color: #3F3F42;
-  font-family: ReithSerif,Helvetica,Arial,sans-serif;
+  font-family: "BBC Nassim Persian",Arial,Verdana,Geneva,Helvetica,sans-serif;
+  font-weight: 700;
+  font-style: normal;
   margin: 0;
   padding: 2rem 0;
-  font-weight: 500;
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
   .c0 {
-    font-size: 2.25rem;
+    font-size: 2.375rem;
     line-height: 2.875rem;
   }
 }
@@ -70,130 +72,10 @@ exports[`Headline component should render correctly with arabic script typograph
 }
 
 <h1
-  className="c0"
+  class="c0"
 >
   هذا هو العنوان الخاص بي
 </h1>
-`;
-
-exports[`SubHeading component attribute id should render without double quotes 1`] = `
-.c0 {
-  font-size: 1.25rem;
-  line-height: 1.5rem;
-  color: #3F3F42;
-  font-family: ReithSans,Helvetica,Arial,sans-serif;
-  margin: 0;
-  padding: 1.5rem 0;
-  font-weight: 700;
-}
-
-@media (min-width:20rem) and (max-width:37.4375rem) {
-  .c0 {
-    font-size: 1.5rem;
-    line-height: 1.75rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c0 {
-    font-size: 2rem;
-    line-height: 2.25rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c0 {
-    padding-top: 2rem;
-  }
-}
-
-<h2
-  className="c0"
-  id="This-is-a-SubHeading"
-  tabIndex="-1"
->
-  This is a SubHeading
-</h2>
-`;
-
-exports[`SubHeading component attribute id should render without exclamation marks 1`] = `
-.c0 {
-  font-size: 1.25rem;
-  line-height: 1.5rem;
-  color: #3F3F42;
-  font-family: ReithSans,Helvetica,Arial,sans-serif;
-  margin: 0;
-  padding: 1.5rem 0;
-  font-weight: 700;
-}
-
-@media (min-width:20rem) and (max-width:37.4375rem) {
-  .c0 {
-    font-size: 1.5rem;
-    line-height: 1.75rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c0 {
-    font-size: 2rem;
-    line-height: 2.25rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c0 {
-    padding-top: 2rem;
-  }
-}
-
-<h2
-  className="c0"
-  id="This-is-a-SubHeading"
-  tabIndex="-1"
->
-  This is a SubHeading
-</h2>
-`;
-
-exports[`SubHeading component attribute id should render without quotes 1`] = `
-.c0 {
-  font-size: 1.25rem;
-  line-height: 1.5rem;
-  color: #3F3F42;
-  font-family: ReithSans,Helvetica,Arial,sans-serif;
-  margin: 0;
-  padding: 1.5rem 0;
-  font-weight: 700;
-}
-
-@media (min-width:20rem) and (max-width:37.4375rem) {
-  .c0 {
-    font-size: 1.5rem;
-    line-height: 1.75rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c0 {
-    font-size: 2rem;
-    line-height: 2.25rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c0 {
-    padding-top: 2rem;
-  }
-}
-
-<h2
-  className="c0"
-  id="This-is-a-SubHeading"
-  tabIndex="-1"
->
-  This is a SubHeading
-</h2>
 `;
 
 exports[`SubHeading component should render correctly 1`] = `
@@ -202,9 +84,10 @@ exports[`SubHeading component should render correctly 1`] = `
   line-height: 1.5rem;
   color: #3F3F42;
   font-family: ReithSans,Helvetica,Arial,sans-serif;
+  font-weight: 700;
+  font-style: normal;
   margin: 0;
   padding: 1.5rem 0;
-  font-weight: 700;
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
@@ -228,9 +111,49 @@ exports[`SubHeading component should render correctly 1`] = `
 }
 
 <h2
-  className="c0"
+  class="c0"
+  tabindex="-1"
+>
+  This is a SubHeading
+</h2>
+`;
+
+exports[`SubHeading component should render correctly with an ID 1`] = `
+.c0 {
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+  color: #3F3F42;
+  font-family: ReithSans,Helvetica,Arial,sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  margin: 0;
+  padding: 1.5rem 0;
+}
+
+@media (min-width:20rem) and (max-width:37.4375rem) {
+  .c0 {
+    font-size: 1.5rem;
+    line-height: 1.75rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .c0 {
+    font-size: 2rem;
+    line-height: 2.25rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .c0 {
+    padding-top: 2rem;
+  }
+}
+
+<h2
+  class="c0"
   id="This-is-a-SubHeading"
-  tabIndex="-1"
+  tabindex="-1"
 >
   This is a SubHeading
 </h2>
@@ -242,22 +165,23 @@ exports[`SubHeading component should render correctly with arabic script typogra
   line-height: 2.125rem;
   color: #3F3F42;
   font-family: ReithSans,Helvetica,Arial,sans-serif;
+  font-weight: 700;
+  font-style: normal;
   margin: 0;
   padding: 1.5rem 0;
-  font-weight: 700;
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
   .c0 {
-    font-size: 1.625rem;
-    line-height: 2.25rem;
+    font-size: 2rem;
+    line-height: 2.375rem;
   }
 }
 
 @media (min-width:37.5rem) {
   .c0 {
-    font-size: 2.375rem;
-    line-height: 3rem;
+    font-size: 2.25rem;
+    line-height: 3.125rem;
   }
 }
 
@@ -268,9 +192,8 @@ exports[`SubHeading component should render correctly with arabic script typogra
 }
 
 <h2
-  className="c0"
-  id="-"
-  tabIndex="-1"
+  class="c0"
+  tabindex="-1"
 >
   هذا عنوان فرعي
 </h2>

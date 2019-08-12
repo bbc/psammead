@@ -1,11 +1,81 @@
 const arabicPashtoTypography = {
+  atlas: {
+    groupA: {
+      fontSize: '78',
+      lineHeight: '84',
+    },
+    groupB: {
+      fontSize: '96',
+      lineHeight: '104',
+    },
+    groupD: {
+      fontSize: '140',
+      lineHeight: '148',
+    },
+  },
+  elephant: {
+    groupA: {
+      fontSize: '60',
+      lineHeight: '64',
+    },
+    groupB: {
+      fontSize: '78',
+      lineHeight: '84',
+    },
+    groupD: {
+      fontSize: '116',
+      lineHeight: '124',
+    },
+  },
+  imperial: {
+    groupA: {
+      fontSize: '50',
+      lineHeight: '54',
+    },
+    groupB: {
+      fontSize: '64',
+      lineHeight: '72',
+    },
+    groupD: {
+      fontSize: '96',
+      lineHeight: '104',
+    },
+  },
+  royal: {
+    groupA: {
+      fontSize: '40',
+      lineHeight: '44',
+    },
+    groupB: {
+      fontSize: '52',
+      lineHeight: '60',
+    },
+    groupD: {
+      fontSize: '76',
+      lineHeight: '84',
+    },
+  },
+  foolscap: {
+    groupA: {
+      fontSize: '32',
+      lineHeight: '36',
+    },
+    groupB: {
+      fontSize: '40',
+      lineHeight: '44',
+    },
+    groupD: {
+      fontSize: '56',
+      lineHeight: '60',
+    },
+  },
   canon: {
     groupA: {
       fontSize: '32',
       lineHeight: '42',
     },
     groupB: {
-      fontSize: '36',
+      fontSize: '38',
       lineHeight: '46',
     },
     groupD: {
@@ -19,12 +89,12 @@ const arabicPashtoTypography = {
       lineHeight: '34',
     },
     groupB: {
-      fontSize: '26',
-      lineHeight: '36',
+      fontSize: '32',
+      lineHeight: '38',
     },
     groupD: {
-      fontSize: '38',
-      lineHeight: '48',
+      fontSize: '36',
+      lineHeight: '50',
     },
   },
   paragon: {
@@ -34,25 +104,25 @@ const arabicPashtoTypography = {
     },
     groupB: {
       fontSize: '28',
-      lineHeight: '38',
+      lineHeight: '40',
     },
     groupD: {
-      fontSize: '34',
-      lineHeight: '44',
+      fontSize: '32',
+      lineHeight: '40',
     },
   },
   doublePica: {
     groupA: {
       fontSize: '24',
-      lineHeight: '34',
+      lineHeight: '32',
     },
     groupB: {
       fontSize: '26',
       lineHeight: '36',
     },
     groupD: {
-      fontSize: '30',
-      lineHeight: '40',
+      fontSize: '28',
+      lineHeight: '36',
     },
   },
   greatPrimer: {
@@ -62,11 +132,11 @@ const arabicPashtoTypography = {
     },
     groupB: {
       fontSize: '24',
-      lineHeight: '30',
+      lineHeight: '32',
     },
     groupD: {
       fontSize: '26',
-      lineHeight: '32',
+      lineHeight: '34',
     },
   },
   bodyCopy: {
@@ -76,11 +146,11 @@ const arabicPashtoTypography = {
     },
     groupB: {
       fontSize: '20',
-      lineHeight: '30',
+      lineHeight: '32',
     },
     groupD: {
       fontSize: '22',
-      lineHeight: '34',
+      lineHeight: '32',
     },
   },
   pica: {
@@ -89,12 +159,12 @@ const arabicPashtoTypography = {
       lineHeight: '26',
     },
     groupB: {
-      fontSize: '16',
+      fontSize: '20',
       lineHeight: '26',
     },
     groupD: {
-      fontSize: '22',
-      lineHeight: '32',
+      fontSize: '20',
+      lineHeight: '26',
     },
   },
   longPrimer: {
@@ -107,8 +177,8 @@ const arabicPashtoTypography = {
       lineHeight: '24',
     },
     groupD: {
-      fontSize: '20',
-      lineHeight: '26',
+      fontSize: '18',
+      lineHeight: '24',
     },
   },
   brevier: {
@@ -117,26 +187,26 @@ const arabicPashtoTypography = {
       lineHeight: '20',
     },
     groupB: {
-      fontSize: '16',
-      lineHeight: '20',
+      fontSize: '18',
+      lineHeight: '24',
     },
     groupD: {
       fontSize: '18',
-      lineHeight: '22',
+      lineHeight: '24',
     },
   },
   minion: {
     groupA: {
-      fontSize: '14',
-      lineHeight: '20',
+      fontSize: '12',
+      lineHeight: '16',
     },
     groupB: {
-      fontSize: '14',
-      lineHeight: '20',
+      fontSize: '12',
+      lineHeight: '16',
     },
     groupD: {
-      fontSize: '14',
-      lineHeight: '20',
+      fontSize: '12',
+      lineHeight: '16',
     },
   },
 };

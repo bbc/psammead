@@ -1,7 +1,8 @@
-import styled, { css } from 'styled-components';
-import { objectOf, object } from 'prop-types';
+import styled from 'styled-components';
+import { shape, string } from 'prop-types';
 import {
   GEL_SPACING,
+  GEL_SPACING_TRPL,
   GEL_MARGIN_ABOVE_400PX,
   GEL_MARGIN_BELOW_400PX,
 } from '@bbc/gel-foundations/spacings';
@@ -10,36 +11,38 @@ import {
   GEL_GROUP_3_SCREEN_WIDTH_MAX,
   GEL_GROUP_4_SCREEN_WIDTH_MIN,
 } from '@bbc/gel-foundations/breakpoints';
-import {
-  getLongPrimer,
-  GEL_FF_REITH_SANS,
-} from '@bbc/gel-foundations/typography';
-
-import { C_CLOUD_DARK } from '@bbc/psammead-styles/colours';
-
-// Defined separately since in future will need to apply
-// only when the script supports italic text
-const FS_ITALIC = css`
-  font-style: italic;
-`;
+import { getLongPrimer } from '@bbc/gel-foundations/typography';
+import { C_METAL } from '@bbc/psammead-styles/colours';
+import { scriptPropType } from '@bbc/gel-foundations/prop-types';
+import { getSansRegularItalic } from '@bbc/psammead-styles/font-styles';
 
 const Caption = styled.figcaption`
   ${props => (props.script ? getLongPrimer(props.script) : '')};
-  color: ${C_CLOUD_DARK};
-  font-family: ${GEL_FF_REITH_SANS};
-  ${FS_ITALIC};
-  padding: ${GEL_SPACING} ${GEL_MARGIN_BELOW_400PX};
+  color: ${C_METAL};
+  ${({ service }) => getSansRegularItalic(service)}
+  padding: ${GEL_SPACING} ${GEL_MARGIN_BELOW_400PX} 0;
   width: 100%;
   @media (min-width: ${GEL_GROUP_2_SCREEN_WIDTH_MIN}) and (max-width: ${GEL_GROUP_3_SCREEN_WIDTH_MAX}) {
-    padding: ${GEL_SPACING} ${GEL_MARGIN_ABOVE_400PX};
+    padding: ${GEL_SPACING} ${GEL_MARGIN_ABOVE_400PX} 0;
   }
   @media (min-width: ${GEL_GROUP_4_SCREEN_WIDTH_MIN}) {
-    padding: ${GEL_SPACING} 0;
+    padding: ${GEL_SPACING} 0 0;
+  }
+  & > p {
+    padding-bottom: ${GEL_SPACING_TRPL};
+    margin: 0; /* reset */
+  }
+  & > p:last-child {
+    padding-bottom: 0;
+  }
+  & i {
+    font-style: normal;
   }
 `;
 
 Caption.propTypes = {
-  script: objectOf(object).required,
+  script: shape(scriptPropType).isRequired,
+  service: string.isRequired,
 };
 
 export default Caption;

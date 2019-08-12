@@ -1,7 +1,21 @@
 # Psammead Image Changelog
 
+<!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 1.1.3 | [PR#1682](https://github.com/bbc/psammead/pull/1682) Move all dev dependencies to top level package.json |
+| 1.1.2 | [PR#1597](https://github.com/bbc/psammead/pull/1597) Bump @bbc/psammead-assets, @bbc/psammead-test-helpers |
+| 1.1.1 | [PR#1518](https://github.com/bbc/psammead/pull/1518) Clear unit test warnings |
+| 1.1.0 | [PR#1233](https://github.com/bbc/psammead/pull/1233) Add ESM modules entry |
+| 1.0.6 | [PR#1180](https://github.com/bbc/psammead/pull/1180) use `psammead-assets@1.0.6` and `psammead-test-helpers@1.0.2`|
+| 1.0.5 | [PR#1082](https://github.com/bbc/psammead/pull/1082) Bump lodash security vulnerability |
+| 1.0.4 | [PR#783](https://github.com/bbc/psammead/pull/783) Update to latest psammead-test-helpers. Update snapshots. |
+| 1.0.3   | [PR#713](https://github.com/bbc/psammead/pull/713) Update `styled-components` to 4.3.2 |
+| 1.0.2   | [PR#703](https://github.com/bbc/psammead/pull/703) Add support for sizes prop in both Img & AmpImg |
+| 1.0.1   | [PR#690](https://github.com/bbc/psammead/pull/690) Updates implementation of image fade in to additionally transition visibility |
+| 1.0.0   | [PR#679](https://github.com/bbc/psammead/pull/679) Bump version number |
+| 0.4.0   | [PR#618](https://github.com/bbc/psammead/pull/618) Option to fade images in. Added optional fade prop. |
+| 0.3.6   | [PR#492](https://github.com/bbc/psammead/pull/492) Make img width prop optional |
 | 0.3.5   | [PR#424](https://github.com/bbc/psammead/pull/424) Add Snyk badge to readme |
 | 0.3.4   | [PR#407](https://github.com/bbc/psammead/pull/407) Organise dependencies properly |
 | 0.3.3   | [PR#323](https://github.com/bbc/psammead/pull/323) Update storybook badge url |

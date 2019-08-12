@@ -1,7 +1,26 @@
 # @bbc/psammead-styles Changelog
 
+<!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 2.0.2 | [PR#1682](https://github.com/bbc/psammead/pull/1682) Move all dev dependencies to top level package.json |
+| 2.0.1 | [PR#1597](https://github.com/bbc/psammead/pull/1597) Bump @bbc/gel-foundations, @bbc/psammead-storybook-helpers, @bbc/psammead-test-helpers |
+| 2.0.0 | [PR#1516](https://github.com/bbc/psammead/pull/1516) Add font-family and font-face declarations for World Service fonts. Changes `getSansItalic` to `getSansRegularItalic`. |
+| 1.2.0 | [PR#1234](https://github.com/bbc/psammead/pull/1234) Add custom CSS Grid feature detector |
+| 1.1.5 | [PR#1215](https://github.com/bbc/psammead/pull/1215) Fix `sans serif` typo |
+| 1.1.4 | [PR#1066](https://github.com/bbc/psammead/pull/1066) Fix Serif Medium font. |
+| 1.1.3 | [PR#1180](https://github.com/bbc/psammead/pull/1180) Update devDependencies |
+| 1.1.2 | [PR#783](https://github.com/bbc/psammead/pull/783) Update to latest psammead-test-helpers. Update snapshots. |
+| 1.1.1 | [PR#769](https://github.com/bbc/psammead/pull/769) Fix stories not appearing in storybook when using `install:packages:link` |
+| 1.1.0   | [PR#764](https://github.com/bbc/psammead/pull/764) Add function to get serif bold font |
+| 1.0.1   | [PR#677](https://github.com/bbc/psammead/pull/677) Use `@bbc/gel-foundations@3.0.0` |
+| 1.0.0   | [PR#679](https://github.com/bbc/psammead/pull/679) Bump version number |
+| 0.6.0   | [PR#676](https://github.com/bbc/psammead/pull/676) Add Nassim Persian fonts v1.511 |
+| 0.5.0   | [PR#573](https://github.com/bbc/psammead/pull/573) Add functions to get font styles for different services |
+| 0.4.1   | [PR#547](https://github.com/bbc/psammead/pull/547) Create story for gel-foundations typographies |
+| 0.4.0   | [PR#548](https://github.com/bbc/psammead/pull/548) Bump the reith font version from 2.302 to 2.511 |
+| 0.3.5   | [PR#537](https://github.com/bbc/psammead/pull/537) Create story for colours |
+| 0.3.4   | [PR#505](https://github.com/bbc/psammead/pull/505) Add Metal; update Pebble |
 | 0.3.3   | [PR#424](https://github.com/bbc/psammead/pull/424) Add Snyk badge to readme |
 | 0.3.2   | [PR#323](https://github.com/BBC/psammead/pull/323) Update readme storybook badge |
 | 0.3.1   | [PR#264](https://github.com/BBC/psammead/pull/319) Resolving package-lock issues. |

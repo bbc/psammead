@@ -1,22 +1,17 @@
+import 'storybook-chromatic';
 import React, { Fragment } from 'react';
 import { configure, addDecorator, addParameters } from '@storybook/react';
 import { create } from '@storybook/theming';
+import { withA11y } from '@storybook/addon-a11y';
 import styledNormalize from 'styled-normalize';
 import { createGlobalStyle } from 'styled-components';
 import {
   AMP_SCRIPT,
   AMP_NO_SCRIPT,
 } from '@bbc/psammead-assets/amp-boilerplate';
-import {
-  F_REITH_SERIF_MEDIUM,
-  F_REITH_SERIF_MEDIUM_ITALIC,
-  F_REITH_SANS_REGULAR,
-  F_REITH_SANS_ITALIC,
-  F_REITH_SANS_BOLD,
-  F_REITH_SANS_BOLD_ITALIC,
-} from '@bbc/psammead-styles/fonts';
+import * as fontFaces from '@bbc/psammead-styles/fonts';
+
 import Helmet from 'react-helmet';
-import { initializeRTL } from 'storybook-addon-rtl';
 
 const theme = create({
   base: 'light',
@@ -32,6 +27,15 @@ addParameters({
     sidebarAnimations: true,
     theme,
   },
+  a11y: {
+    options: {
+      runOnly: {
+        type: 'tag',
+        values: ['wcag2a', 'wcag2aa', 'wcag21aa'],
+      },
+      iframes: true,
+    },
+  },
 });
 
 const GlobalStyle = createGlobalStyle`
@@ -46,12 +50,9 @@ const GlobalStyle = createGlobalStyle`
     box-sizing: inherit;
   }
 
-  ${F_REITH_SERIF_MEDIUM}
-  ${F_REITH_SERIF_MEDIUM_ITALIC}
-  ${F_REITH_SANS_REGULAR}
-  ${F_REITH_SANS_ITALIC}
-  ${F_REITH_SANS_BOLD}
-  ${F_REITH_SANS_BOLD_ITALIC}
+  
+  ${Object.values(fontFaces).join('')}
+
 `;
 
 addDecorator(story => (
@@ -77,7 +78,7 @@ export const ampDecorator = story => (
 
 function loadAllStories() {
   require('glob-loader!./stories.pattern');
-  initializeRTL();
+  addDecorator(withA11y);
 }
 
 configure(loadAllStories, module);

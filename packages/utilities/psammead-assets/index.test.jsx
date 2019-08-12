@@ -1,8 +1,4 @@
 import { testUtilityPackages } from '@bbc/psammead-test-helpers';
-import * as svgs from './svgs';
-import * as svgsFromSrc from './src/svgs';
-import * as ampBoilerplate from './amp-boilerplate';
-import * as ampBoilerplateFromSrc from './src/amp-boilerplate';
 
 const ampBoilerplateExpectedExports = {
   AMP_SCRIPT: 'string',
@@ -11,36 +7,75 @@ const ampBoilerplateExpectedExports = {
 
 const svgsExpectedExports = {
   BBC_BLOCKS: 'string',
-  news: 'object',
-  yoruba: 'object',
+  afaanoromoo: 'object',
+  afrique: 'object',
+  amharic: 'object',
+  arabic: 'object',
+  azeri: 'object',
+  bengali: 'object',
+  burmese: 'object',
+  gahuza: 'object',
+  gujarati: 'object',
+  hausa: 'object',
+  hindi: 'object',
   igbo: 'object',
-  thai: 'object',
+  indonesia: 'object',
+  japanese: 'object',
+  korean: 'object',
+  kyrgyz: 'object',
+  marathi: 'object',
+  mundo: 'object',
+  nepali: 'object',
+  news: 'object',
+  pashto: 'object',
+  persian: 'object',
   pidgin: 'object',
+  portuguese: 'object',
+  punjabi: 'object',
+  russian: 'object',
+  serbian: 'object',
+  sinhala: 'object',
+  somali: 'object',
+  swahili: 'object',
+  tamil: 'object',
+  telegu: 'object',
+  thai: 'object',
+  tigrinya: 'object',
+  turkce: 'object',
+  urdu: 'object',
+  ukchina: 'object',
+  ukranian: 'object',
+  vietnamese: 'object',
+  yoruba: 'object',
+  zhongwen: 'object',
 };
 
 const expectedExports = {
   svgs: svgsExpectedExports,
-  ampBoilerplate: ampBoilerplateExpectedExports,
+  'amp-boilerplate': ampBoilerplateExpectedExports,
 };
 
-const actualExports = {
-  svgs,
-  ampBoilerplate,
-};
-
-const actualExportsFromSrc = {
-  svgs: svgsFromSrc,
-  ampBoilerplate: ampBoilerplateFromSrc,
+const getExports = key => {
+  const exports = {};
+  Object.keys(expectedExports).forEach(expectedExport => {
+    /* eslint-disable global-require, import/no-dynamic-require */
+    const packageJson = require(`./${expectedExport}/package.json`);
+    exports[
+      expectedExport
+    ] = require(`./${expectedExport}/${packageJson[key]}`);
+    /* eslint-enable global-require, import/no-dynamic-require */
+  });
+  return exports;
 };
 
 describe('Psammead assets', () => {
-  it('should test all the utility exports exist and are the correct type', () => {
-    testUtilityPackages(actualExports, expectedExports, 'psammead-assets');
+  it('should test all the utility exports exist and are the correct type for main', () => {
+    testUtilityPackages(getExports('main'), expectedExports, 'psammead-assets');
   });
 
-  it('should test all the utility exports exist and are the correct type when coming from src/', () => {
+  it('should test all the utility exports exist and are the correct type for module', () => {
     testUtilityPackages(
-      actualExportsFromSrc,
+      getExports('module'),
       expectedExports,
       'psammead-assets',
     );

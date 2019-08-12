@@ -2,7 +2,21 @@
 
 ## Description
 
-The `Brand` component provides the BBC News logo (as SVG), nested inside a styled span, link and div. The link is currently hardcoded to "https://www.bbc.co.uk/news". `Brand` takes a `brandName` as a prop. This prop is passed to a [VisuallyHiddenText](https://github.com/bbc/psammead/tree/latest/packages/components/VisuallyHiddenText) component, nested inside Brand. Note that this does not currently affect the branding itself, which always renders as `BBC NEWS`.
+The `Brand` component provides the BBC service logo (as SVG), nested inside a styled link and div. The link is currently hardcoded to "https://www.bbc.co.uk/news".
+
+`Brand` takes a `product`, `svgHeight`, `minWidth`, `maxWidth`, `url`, `serviceLocalisedName` and `svg` as props.
+
+The `product` is passed to a [VisuallyHiddenText](https://github.com/bbc/psammead/tree/latest/packages/components/VisuallyHiddenText) component, nested inside Brand.
+
+The `serviceLocalisedName` is an optional prop referring to the local name of a service eg `Yoruba`. It is also passed to [VisuallyHiddenText](https://github.com/bbc/psammead/tree/latest/packages/components/VisuallyHiddenText) inside the Brand component.
+
+The `svg` prop must contain a `group`, `viewbox` values and a `ratio`, which is used within an `svg` element. Examples of the `svg` object can be found in [@bbc/psammead-assets](https://github.com/bbc/psammead/blob/latest/packages/utilities/psammead-assets/README.md#service-svgs).
+
+The `minWidth` and `maxWidth` values are required to allow the ability for the `svg` element to dynamically scale as the viewport becomes a very small size EG: feature phones.
+
+The `svgHeight` value acts as a placeholder for the `svg` element meaning the overall banner height does not change with the dynamic scaling, also the `height` allows the contents of the `svg` element to remain vertically centred within the banner at all times.
+
+The `url` value is the link that points to the frontpage of the service associated with the `svg`.
 
 ## Installation
 
@@ -10,20 +24,41 @@ The `Brand` component provides the BBC News logo (as SVG), nested inside a style
 
 ## Props
 
-| Argument  | Type | Required | Default | Example |
-| --------- | ---- | -------- | ------- | ------- |
-| No props. |      |          |         |         |
+<!-- prettier-ignore -->
+| Argument  | Type   | Required | Default | Example      |
+| --------- | ------ | -------- | ------- | ------------ |
+| product | String | yes | N/A | `'BBC News'` |
+| svgHeight | Number | yes | N/A | `24` |
+| minWidth | Number | yes | N/A | `240` |
+| maxWidth | Number | yes | N/A | `380` |
+| svg | Object | yes | N/A | { group: `(<g fillrule="evenodd"><path d="M84.32" /></g>)`, viewbox: { height: 24, width: 167.95 }, ratio: 6.9979 } |
+| url | String | no | N/A | `https://www.bbc.co.uk/news` |
+| serviceLocalisedName | String | no | N/A | `'Yoruba'` |
+| borderTop | bool | no | `false` | `true` |
+| borderBottom | bool | no | `false` | `true` |
 
 ## Usage
 
 The typical use-case of this component is at the top of pages in a [`header` element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/header). When this is done it is recommend that the component is wrapped in a [`banner` role](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/Banner_role). However, a `header` with a `banner` role should only appear once on a page.
 
+When using `Brand` in the header, you should ensure that `borderBottom` prop is set to true. Similarly, when using brand on the footer you should set `borderTop` to true. This ensures when in High Contrast Mode on PC and when the user changes colour preferences in FireFox that the top/bottom of the `Brand` component is visible.
+
 ```jsx
 import Brand from '@bbc/psammead-brand';
+import { igbo } from '@bbc/psammead-assets/svgs';
 
-const Header = brandName => (
+const Header = (product, serviceName) => (
   <header role="banner">
-    <Brand brandName={brandName} />
+    <Brand
+      product={product}
+      serviceLocalisedName={serviceName}
+      svgHeight={24}
+      maxWidth={280}
+      minWidth={180}
+      svg={igbo}
+      url="https://www.bbc.co.uk/news"
+      borderBottom
+    />
   </header>
 );
 ```
@@ -41,6 +76,10 @@ The `Brand` component is designed to be used where a BBC logo is required as SVG
 - The brand SVG has support for users with css disabled or high contrast mode enabled.
 
 <!-- ## Roadmap -->
+
+### Additional notes
+
+- `width: 100%` is needed on both `<a>` and the `<svg>` to allow the brand to dynamically scale on the Firefox browser
 
 ## Contributing
 

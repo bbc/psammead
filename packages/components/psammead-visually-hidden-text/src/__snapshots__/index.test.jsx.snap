@@ -10,10 +10,11 @@ exports[`VisuallyHiddenText should render off screen text for screen readers 1`]
   overflow: hidden;
   position: absolute;
   width: 1px;
+  margin: 0;
 }
 
 <span
-  className="c0"
+  class="c0"
 >
   Some offscreen text
 </span>

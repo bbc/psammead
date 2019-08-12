@@ -4,9 +4,22 @@ This package provides a collection of common values that are used in storybook b
 
 ## Exports
 
-`LANGUAGE_VARIANTS` - A list of text samples in different languages.
+`LANGUAGE_VARIANTS` - A list of text samples in different languages, with the script and direction that should be used for that language.
 
-`inputProvider` - A function that provides support for selecting between the `text` and `select` storybook knobs. When using the `select` knob, users will be prompted to select a language, which will insert text from `LANGUAGE_VARIANTS` into the story.
+`inputProvider` - A function that provides support for previewing components in storybook in different languages. Takes two arguments, `slots` and `renderFn`. Sets the `dir` attribute on the `<html>` element in the story iframe using [Helmet](https://www.npmjs.com/package/react-helmet). Returns the return value of `renderFn`. This should usually be a React Component.
+
+- `slots`: Array of `slot`s. Optional.
+  - `slot`: Object containing configuration for this slot.
+    - `name`: String uniquely identifying this slot in the story. Required.
+    - `defaultText`: String to use when the story is showing English text. Optional.
+- `renderFn`: `function({slotTexts, script, dir, service})` Required.
+  - `slotTexts`: Array of strings to insert into the story. Length and order corresponds to the provided `slots`.
+  - `script`: A [script](https://github.com/bbc/psammead/tree/latest/packages/utilities/gel-foundations#script-support) corresponding to the service selected by the storybook user.
+  - `dir`: Either `'ltr'` or `'rtl'`, corresponding to the language currently selected by the storybook user.
+  - `service`: The service selected by the storybook user.
+- `services`: Array of services to filter LANGUAGE_VARIANT's provided into a smaller subset. Optional.
+
+`dirDecorator` - A storybook decorator function that uses `inputProvider` internally to provide direction control. It calls the storybook function with an object containing `dir`, `script` and the `service` name.
 
 ## Installation
 
@@ -18,8 +31,9 @@ npm install @bbc/psammead-storybook-helpers --save-dev
 
 ### LANGUAGE_VARIANTS
 
+<!-- prettier-ignore -->
 ```jsx
-import { select } from '@storybook/addon-knobs'
+import { select } from '@storybook/addon-knobs';
 import { LANGUAGE_VARIANTS } from '@bbc/psammead-storybook-helpers';
 
 const label = 'Languages';
@@ -27,35 +41,55 @@ const defaultValue = 'This is a caption';
 const groupIdentifier = 'CAPTION VARIANTS';
 
 <Caption>
-  {select(label, LANGUAGE_VARIANTS, defaultValue, groupIdentifier)}
-</Caption>
+  {select(label, LANGUAGE_VARIANTS, LANGUAGE_VARIANTS.news, groupIdentifier).text}
+</Caption>;
 ```
 
 ### inputProvider
 
-N.B. the number of elements in the array should equal the number of arguments taken
-by the render function.
-
 ```jsx
+import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { withKnobs } from '@storybook/addon-knobs';
 import { inputProvider } from '@bbc/psammead-storybook-helpers';
+import Caption from '@bbc/psammead-caption';
+import VisuallyHiddenText from '@bbc/psammead-visually-hidden-text';
 
 storiesOf('Caption', module)
   .addDecorator(withKnobs)
   .add(
     'default',
     inputProvider(
-      ['caption', 'visually hidden text'],
-      (captionText, vhText) => (
-        <Caption>
-          <VisuallyHiddenText>{vhText}</VisuallyHiddenText>
+      [
+        { name: 'caption', defaultText: 'Students sitting an examination' },
+        { name: 'offscreen text', defaultText: 'Image Caption, ' },
+      ],
+      ({ slotTexts: [captionText, offscreenText], script, dir, service }) => (
+        <Caption script={script} dir={dir} service={service}>
+          <VisuallyHiddenText>{offscreenText}</VisuallyHiddenText>
           {captionText}
         </Caption>
-      )
+      ),
+      ['news', 'persian', 'igbo']
     ),
-    { notes },
-  )
+    { knobs: { escapeHTML: false } },
+  );
+```
+
+### dirDecorator
+
+```jsx
+import React from 'react';
+import { storiesOf } from '@storybook/react';
+import { withKnobs } from '@storybook/addon-knobs';
+import { dirDecorator } from '@bbc/psammead-storybook-helpers';
+
+storiesOf('Example', module)
+  .addDecorator(withKnobs)
+  .addDecorator(dirDecorator)
+  .add('default', ({ dir, service }) => (
+    <h1 dir={dir}>Lorem Ipsum ${service}</h1>
+  ));
 ```
 
 ## Contributing

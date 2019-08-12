@@ -6,6 +6,7 @@ import Caption from '@bbc/psammead-caption';
 import Copyright from '@bbc/psammead-copyright';
 import Image from '@bbc/psammead-image';
 import ImagePlaceholder from '@bbc/psammead-image-placeholder';
+import Paragraph from '@bbc/psammead-paragraph';
 import VisuallyHiddenText from '@bbc/psammead-visually-hidden-text';
 import notes from '../README.md';
 import Figure from '.';
@@ -17,7 +18,7 @@ const imageSrc =
 const imageWidth = 853;
 const imageRatio = 125;
 
-storiesOf('Figure', module)
+storiesOf('Components|Figure', module)
   .addDecorator(withKnobs)
   .add(
     'containing Image',
@@ -30,32 +31,43 @@ storiesOf('Figure', module)
   )
   .add(
     'containing Image, ImagePlaceholder, Copyright and Caption',
-    inputProvider(['caption'], caption => (
-      <Figure>
-        <ImagePlaceholder ratio={imageRatio}>
-          <Image alt={imageAlt} src={imageSrc} width={imageWidth} />
-          <Copyright>
+    inputProvider(
+      [{ name: 'Caption' }],
+      ({ slotTexts: [caption], script, service }) => (
+        <Figure>
+          <ImagePlaceholder ratio={imageRatio}>
+            <Image alt={imageAlt} src={imageSrc} width={imageWidth} />
+            <Copyright>
+              <VisuallyHiddenText>
+                {text(
+                  'visually hidden copyright',
+                  'Image copyright, ',
+                  'Visually Hidden Copyright',
+                )}
+              </VisuallyHiddenText>
+              {text('copyright', 'Copyright', 'Copyright')}
+            </Copyright>
+          </ImagePlaceholder>
+          <Caption service={service} script={script}>
             <VisuallyHiddenText>
               {text(
-                'visually hidden copyright',
-                'Image copyright, ',
-                'Visually Hidden Copyright',
+                'visually hidden caption',
+                'Image caption, ',
+                'Visually Hidden Caption',
               )}
             </VisuallyHiddenText>
-            {text('copyright', 'Copyright', 'Copyright')}
-          </Copyright>
-        </ImagePlaceholder>
-        <Caption>
-          <VisuallyHiddenText>
-            {text(
-              'visually hidden caption',
-              'Image caption, ',
-              'Visually Hidden Caption',
-            )}
-          </VisuallyHiddenText>
-          {caption}
-        </Caption>
-      </Figure>
-    )),
+            <Paragraph script={script} service={service}>
+              {caption}
+            </Paragraph>
+            <Paragraph script={script} service={service}>
+              {caption}
+            </Paragraph>
+            <Paragraph script={script} service={service}>
+              {caption}
+            </Paragraph>
+          </Caption>
+        </Figure>
+      ),
+    ),
     { notes, knobs: { escapeHTML: false } },
   );

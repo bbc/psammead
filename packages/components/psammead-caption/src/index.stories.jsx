@@ -1,28 +1,35 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { withKnobs } from '@storybook/addon-knobs';
-import { inputProvider } from '@bbc/psammead-storybook-helpers';
+import { inputProvider, dirDecorator } from '@bbc/psammead-storybook-helpers';
 import InlineLink from '@bbc/psammead-inline-link';
 import VisuallyHiddenText from '@bbc/psammead-visually-hidden-text';
-import { latin } from '@bbc/gel-foundations/scripts';
 import notes from '../README.md';
 import Caption from '.';
 
-storiesOf('Caption', module)
+storiesOf('Components|Caption', module)
   .addDecorator(withKnobs)
   .add(
     'default',
-    inputProvider(['caption'], captionText => (
-      <Caption script={latin}>{captionText}</Caption>
-    )),
+    inputProvider(
+      [{ name: 'Caption' }],
+      ({ slotTexts: [captionText], script, service }) => (
+        <Caption script={script} service={service}>
+          {captionText}
+        </Caption>
+      ),
+    ),
     { notes, knobs: { escapeHTML: false } },
   )
   .add(
     'with offscreen text',
     inputProvider(
-      ['visually hidden text', 'caption'],
-      (hiddenText, captionText) => (
-        <Caption>
+      [
+        { name: 'Visual hidden text', defaultText: 'visually hidden text' },
+        { name: 'Caption', defaultText: 'caption' },
+      ],
+      ({ slotTexts: [hiddenText, captionText], script, service }) => (
+        <Caption script={script} service={service}>
           <VisuallyHiddenText>{hiddenText}</VisuallyHiddenText>
           {captionText}
         </Caption>
@@ -32,10 +39,42 @@ storiesOf('Caption', module)
   )
   .add(
     'containing an inline link',
-    inputProvider(['inline link', 'caption'], (linkText, captionText) => (
-      <Caption script={latin}>
-        {captionText}
-        <InlineLink href="https://www.bbc.com"> {linkText}</InlineLink>.
+    inputProvider(
+      [
+        { name: 'Inline link', defaultText: 'inline link' },
+        { name: 'Caption', defaultText: 'caption' },
+      ],
+      ({ slotTexts: [linkText, captionText], script, service }) => (
+        <Caption script={script} service={service}>
+          {`${captionText} `}
+          <InlineLink href="https://www.bbc.com">{linkText}</InlineLink>
+          {` ${captionText} `}
+        </Caption>
+      ),
+    ),
+    { notes, knobs: { escapeHTML: false } },
+  );
+
+storiesOf('Components|Caption', module)
+  .addDecorator(withKnobs)
+  .addDecorator(dirDecorator)
+  .add(
+    'containing italicisation',
+    inputProvider([], ({ script, service }) => (
+      <Caption script={script} service={service}>
+        Example text with <i>italics</i>
+      </Caption>
+    )),
+    { notes, knobs: { escapeHTML: false } },
+  )
+  .add(
+    'containing multiple paragraphs',
+    inputProvider([], ({ script, service }) => (
+      <Caption script={script} service={service}>
+        <p>Paragraph with padding bottom.</p>
+        <p>
+          Last paragraph - <i>without padding bottom</i>.
+        </p>
       </Caption>
     )),
     { notes, knobs: { escapeHTML: false } },

@@ -7,7 +7,7 @@ import Caption from '.';
 describe('Caption', () => {
   shouldMatchSnapshot(
     'should render with some offscreen text',
-    <Caption script={latin}>
+    <Caption script={latin} service="news">
       This is some Caption text
       <VisuallyHiddenText>Some offscreen text</VisuallyHiddenText>
     </Caption>,
@@ -15,7 +15,7 @@ describe('Caption', () => {
 
   shouldMatchSnapshot(
     'should render with some offscreen text and arabic script typography values',
-    <Caption script={arabic}>
+    <Caption script={arabic} service="persian">
       هذا هو بعض النص التسمية التوضيحي
       <VisuallyHiddenText>Some offscreen text</VisuallyHiddenText>
     </Caption>,

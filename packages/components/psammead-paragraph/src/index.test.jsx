@@ -6,11 +6,15 @@ import Paragraph from './index';
 describe('Paragraph', () => {
   shouldMatchSnapshot(
     'should render a correctly',
-    <Paragraph script={latin}>This is text in a paragraph.</Paragraph>,
+    <Paragraph script={latin} service="news">
+      This is text in a paragraph.
+    </Paragraph>,
   );
 
   shouldMatchSnapshot(
     'should render correctly with arabic script typography values',
-    <Paragraph script={arabic}>بعض محتوى النص</Paragraph>,
+    <Paragraph script={arabic} service="persian">
+      بعض محتوى النص
+    </Paragraph>,
   );
 });

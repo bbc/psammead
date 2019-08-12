@@ -1,4 +1,74 @@
 const bengaliTypography = {
+  atlas: {
+    groupA: {
+      fontSize: '78',
+      lineHeight: '84',
+    },
+    groupB: {
+      fontSize: '96',
+      lineHeight: '104',
+    },
+    groupD: {
+      fontSize: '140',
+      lineHeight: '148',
+    },
+  },
+  elephant: {
+    groupA: {
+      fontSize: '60',
+      lineHeight: '64',
+    },
+    groupB: {
+      fontSize: '78',
+      lineHeight: '84',
+    },
+    groupD: {
+      fontSize: '116',
+      lineHeight: '124',
+    },
+  },
+  imperial: {
+    groupA: {
+      fontSize: '50',
+      lineHeight: '54',
+    },
+    groupB: {
+      fontSize: '64',
+      lineHeight: '72',
+    },
+    groupD: {
+      fontSize: '96',
+      lineHeight: '104',
+    },
+  },
+  royal: {
+    groupA: {
+      fontSize: '40',
+      lineHeight: '44',
+    },
+    groupB: {
+      fontSize: '52',
+      lineHeight: '60',
+    },
+    groupD: {
+      fontSize: '76',
+      lineHeight: '84',
+    },
+  },
+  foolscap: {
+    groupA: {
+      fontSize: '32',
+      lineHeight: '36',
+    },
+    groupB: {
+      fontSize: '40',
+      lineHeight: '44',
+    },
+    groupD: {
+      fontSize: '56',
+      lineHeight: '60',
+    },
+  },
   canon: {
     groupA: {
       fontSize: '30',
@@ -15,11 +85,11 @@ const bengaliTypography = {
   },
   trafalgar: {
     groupA: {
-      fontSize: '20',
-      lineHeight: '30',
+      fontSize: '28',
+      lineHeight: '32',
     },
     groupB: {
-      fontSize: '26',
+      fontSize: '32',
       lineHeight: '36',
     },
     groupD: {
@@ -29,36 +99,36 @@ const bengaliTypography = {
   },
   paragon: {
     groupA: {
-      fontSize: '22',
-      lineHeight: '28',
+      fontSize: '26',
+      lineHeight: '30',
     },
     groupB: {
-      fontSize: '22',
-      lineHeight: '28',
-    },
-    groupD: {
       fontSize: '28',
-      lineHeight: '36',
-    },
-  },
-  doublePica: {
-    groupA: {
-      fontSize: '20',
-      lineHeight: '30',
-    },
-    groupB: {
-      fontSize: '20',
-      lineHeight: '30',
+      lineHeight: '32',
     },
     groupD: {
       fontSize: '32',
       lineHeight: '40',
     },
   },
+  doublePica: {
+    groupA: {
+      fontSize: '26',
+      lineHeight: '30',
+    },
+    groupB: {
+      fontSize: '26',
+      lineHeight: '30',
+    },
+    groupD: {
+      fontSize: '28',
+      lineHeight: '32',
+    },
+  },
   greatPrimer: {
     groupA: {
-      fontSize: '24',
-      lineHeight: '30',
+      fontSize: '22',
+      lineHeight: '28',
     },
     groupB: {
       fontSize: '24',
@@ -66,7 +136,7 @@ const bengaliTypography = {
     },
     groupD: {
       fontSize: '26',
-      lineHeight: '32',
+      lineHeight: '30',
     },
   },
   bodyCopy: {
@@ -75,8 +145,8 @@ const bengaliTypography = {
       lineHeight: '23',
     },
     groupB: {
-      fontSize: '16',
-      lineHeight: '22',
+      fontSize: '20',
+      lineHeight: '26',
     },
     groupD: {
       fontSize: '22',
@@ -93,8 +163,8 @@ const bengaliTypography = {
       lineHeight: '23',
     },
     groupD: {
-      fontSize: '22',
-      lineHeight: '28',
+      fontSize: '20',
+      lineHeight: '24',
     },
   },
   longPrimer: {

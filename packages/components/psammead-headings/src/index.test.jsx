@@ -6,48 +6,38 @@ import { Headline, SubHeading } from './index';
 describe('Headline component', () => {
   shouldMatchSnapshot(
     'should render correctly',
-    <Headline script={latin}>This is my headline.</Headline>,
+    <Headline script={latin} service="news">
+      This is my headline.
+    </Headline>,
   );
 
   shouldMatchSnapshot(
     'should render correctly with arabic script typography values',
-    <Headline script={arabic}>هذا هو العنوان الخاص بي</Headline>,
+    <Headline script={arabic} service="persian">
+      هذا هو العنوان الخاص بي
+    </Headline>,
   );
 });
 
 describe('SubHeading component', () => {
   shouldMatchSnapshot(
     'should render correctly',
-    <SubHeading text="This is a SubHeading" script={latin}>
-      This is a SubHeading
-    </SubHeading>,
-  );
-
-  shouldMatchSnapshot(
-    'attribute id should render without quotes',
-    <SubHeading text="This 'is' a SubHeading" script={latin}>
-      This is a SubHeading
-    </SubHeading>,
-  );
-
-  shouldMatchSnapshot(
-    'attribute id should render without double quotes',
-    <SubHeading text='This "is" a SubHeading' script={latin}>
-      This is a SubHeading
-    </SubHeading>,
-  );
-
-  shouldMatchSnapshot(
-    'attribute id should render without exclamation marks',
-    <SubHeading text="This is! a SubHeading!" script={latin}>
+    <SubHeading script={latin} service="news">
       This is a SubHeading
     </SubHeading>,
   );
 
   shouldMatchSnapshot(
     'should render correctly with arabic script typography values',
-    <SubHeading text="هذا عنوان فرعي" script={arabic}>
+    <SubHeading script={arabic} service="news">
       هذا عنوان فرعي
+    </SubHeading>,
+  );
+
+  shouldMatchSnapshot(
+    'should render correctly with an ID',
+    <SubHeading id="This-is-a-SubHeading" script={latin} service="news">
+      This is a SubHeading
     </SubHeading>,
   );
 });

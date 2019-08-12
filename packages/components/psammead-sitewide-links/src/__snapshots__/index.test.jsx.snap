@@ -21,14 +21,12 @@ exports[`SitewideLinks should render correctly 1`] = `
 
 .c4:hover .c6,
 .c4:focus .c6 {
-  padding-bottom: 2px;
-  border-bottom: 2px solid #FFFFFF;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
 }
 
 .c2 {
   border-bottom: 1px solid #3F3F42;
-  display: grid;
-  grid-auto-flow: column;
   list-style-type: none;
   margin: 0;
   padding: 0 0 0.5rem;
@@ -50,6 +48,8 @@ exports[`SitewideLinks should render correctly 1`] = `
   font-size: 0.875rem;
   line-height: 1rem;
   font-family: ReithSans,Helvetica,Arial,sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .c1 {
@@ -63,11 +63,24 @@ exports[`SitewideLinks should render correctly 1`] = `
   padding: 1rem 0;
 }
 
-@media (max-width:37.4375rem) {
+@supports (grid-template-columns:fit-content(200px)) {
+  .c2 {
+    display: grid;
+    grid-auto-flow: column;
+  }
+}
+
+@media (max-width:14.9375rem) {
+  .c2 {
+    grid-auto-flow: row;
+  }
+}
+
+@media (min-width:15rem) and (max-width:37.4375rem) {
   .c2 {
     grid-column-gap: 0.5rem;
     grid-template-columns: repeat(2,1fr);
-    grid-template-rows: repeat(4,auto);
+    grid-template-rows: repeat( 4,auto );
   }
 }
 
@@ -75,7 +88,7 @@ exports[`SitewideLinks should render correctly 1`] = `
   .c2 {
     grid-column-gap: 1rem;
     grid-template-columns: repeat(3,1fr);
-    grid-template-rows: repeat(3,auto);
+    grid-template-rows: repeat( 3,auto );
   }
 }
 
@@ -83,7 +96,7 @@ exports[`SitewideLinks should render correctly 1`] = `
   .c2 {
     grid-column-gap: 1rem;
     grid-template-columns: repeat(4,1fr);
-    grid-template-rows: repeat(3,auto);
+    grid-template-rows: repeat( 3,auto );
   }
 }
 
@@ -91,17 +104,17 @@ exports[`SitewideLinks should render correctly 1`] = `
   .c2 {
     grid-column-gap: 1rem;
     grid-template-columns: repeat(5,1fr);
-    grid-template-rows: repeat(3,auto);
+    grid-template-rows: repeat( 3,auto );
   }
 }
 
-@supports not (display:grid) {
+@supports not (grid-template-columns:fit-content(200px)) {
   .c2 > li:first-child {
     width: 100%;
   }
 }
 
-@supports not (display:grid) {
+@supports not (grid-template-columns:fit-content(200px)) {
   .c3 {
     display: inline-block;
   }
@@ -132,41 +145,133 @@ exports[`SitewideLinks should render correctly 1`] = `
 }
 
 <div
-  className="c0"
+  class="c0"
 >
   <div
-    className="c1"
+    class="c1"
   >
     <ul
-      className="c2"
+      class="c2"
       role="list"
     >
       <li
-        className="c3"
+        class="c3"
         role="listitem"
       >
         <a
-          className="c4 c5"
+          class="c4 c5"
           href="https://www.bbc.co.uk/news"
         >
           <span
-            className="c6"
+            class="c6"
           >
-            Link
+            Link0
+          </span>
+        </a>
+      </li>
+      <li
+        class="c3"
+        role="listitem"
+      >
+        <a
+          class="c4 c5"
+          href="https://www.bbc.co.uk/news"
+        >
+          <span
+            class="c6"
+          >
+            Link1
+          </span>
+        </a>
+      </li>
+      <li
+        class="c3"
+        role="listitem"
+      >
+        <a
+          class="c4 c5"
+          href="https://www.bbc.co.uk/news"
+        >
+          <span
+            class="c6"
+          >
+            Link2
+          </span>
+        </a>
+      </li>
+      <li
+        class="c3"
+        role="listitem"
+      >
+        <a
+          class="c4 c5"
+          href="https://www.bbc.co.uk/news"
+        >
+          <span
+            class="c6"
+          >
+            Link3
+          </span>
+        </a>
+      </li>
+      <li
+        class="c3"
+        role="listitem"
+      >
+        <a
+          class="c4 c5"
+          href="https://www.bbc.co.uk/news"
+        >
+          <span
+            class="c6"
+          >
+            Link4
+          </span>
+        </a>
+      </li>
+      <li
+        class="c3"
+        role="listitem"
+      >
+        <a
+          class="c4 c5"
+          href="https://www.bbc.co.uk/news"
+        >
+          <span
+            class="c6"
+          >
+            Link5
+          </span>
+        </a>
+      </li>
+      <li
+        class="c3"
+        role="listitem"
+      >
+        <a
+          class="c4 c5"
+          href="https://www.bbc.co.uk/news"
+        >
+          <span
+            class="c6"
+          >
+            Link6
           </span>
         </a>
       </li>
     </ul>
     <p
-      className="c7"
+      class="c7"
     >
-      Text here. 
+      <span>
+        Text here.
+      </span>
       <a
-        className="c4 c8"
+        class="c4 c8"
         href="https://www.bbc.co.uk/news"
       >
         <span
-          className="c6"
+          class="c6"
         >
           Link
         </span>

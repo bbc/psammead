@@ -3,6 +3,18 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 1.1.4   | [PR#1685](https://github.com/bbc/psammead/pull/1685) Bump dependencies |
+| 1.1.3 | [PR#1682](https://github.com/bbc/psammead/pull/1682) Move all dev dependencies to top level package.json |
+| 1.1.2   | [PR#1599](https://github.com/bbc/psammead/pull/1599) Bump dependencies |
+| 1.1.1 | [PR#1365](https://github.com/bbc/psammead/pull/1365) Bump psammead-styles to 1.2.0 |
+| 1.1.0 | [PR#1233](https://github.com/bbc/psammead/pull/1233) Add ESM modules entry |
+| 1.0.6   | [PR#1181](https://github.com/bbc/psammead/pull/1181) use `gel-foundations@3.0.3`, `psammead-styles@1.1.3`, `psammead-test-helpers@1.0.2`, `psammead-visually-hidden-text@1.0.7` |
+| 1.0.5   | [PR#1082](https://github.com/bbc/psammead/pull/1082) Bump lodash security vulnerability |
+| 1.0.4   | [PR#892](https://github.com/bbc/psammead/pull/892) Bump dependencies |
+| 1.0.3 | [PR#783](https://github.com/bbc/psammead/pull/783) Update to latest psammead-test-helpers. Update snapshots. |
+| 1.0.2   | [PR#713](https://github.com/bbc/psammead/pull/713) Update `styled-components` to 4.3.2 |
+| 1.0.1   | [PR#677](https://github.com/bbc/psammead/pull/677) Use `@bbc/gel-foundations@3.0.0` |
+| 1.0.0   | [PR#617](https://github.com/bbc/psammead/pull/617) Add optional `position` prop, and default position to left of its parent container |
 | 0.3.7   | [PR#424](https://github.com/bbc/psammead/pull/424) Add Snyk badge to readme |
 | 0.3.6   | [PR#417](https://github.com/bbc/psammead/pull/417) Add text input knob to Copyright |
 | 0.3.5   | [PR#407](https://github.com/bbc/psammead/pull/407) Organise dependencies properly |

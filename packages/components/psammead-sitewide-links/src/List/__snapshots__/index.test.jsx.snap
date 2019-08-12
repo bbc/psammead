@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`List should render correctly 1`] = `
+exports[`List should render correctly with 7 items 1`] = `
 .c3 {
   padding: 0.5rem 0 0.5rem;
   color: #FFFFFF;
@@ -12,14 +12,12 @@ exports[`List should render correctly 1`] = `
 
 .c2:hover .c4,
 .c2:focus .c4 {
-  padding-bottom: 2px;
-  border-bottom: 2px solid #FFFFFF;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
 }
 
 .c0 {
   border-bottom: 1px solid #3F3F42;
-  display: grid;
-  grid-auto-flow: column;
   list-style-type: none;
   margin: 0;
   padding: 0 0 0.5rem;
@@ -36,11 +34,24 @@ exports[`List should render correctly 1`] = `
   min-width: 50%;
 }
 
-@media (max-width:37.4375rem) {
+@supports (grid-template-columns:fit-content(200px)) {
+  .c0 {
+    display: grid;
+    grid-auto-flow: column;
+  }
+}
+
+@media (max-width:14.9375rem) {
+  .c0 {
+    grid-auto-flow: row;
+  }
+}
+
+@media (min-width:15rem) and (max-width:37.4375rem) {
   .c0 {
     grid-column-gap: 0.5rem;
     grid-template-columns: repeat(2,1fr);
-    grid-template-rows: repeat(4,auto);
+    grid-template-rows: repeat( 4,auto );
   }
 }
 
@@ -48,7 +59,7 @@ exports[`List should render correctly 1`] = `
   .c0 {
     grid-column-gap: 1rem;
     grid-template-columns: repeat(3,1fr);
-    grid-template-rows: repeat(3,auto);
+    grid-template-rows: repeat( 3,auto );
   }
 }
 
@@ -56,7 +67,7 @@ exports[`List should render correctly 1`] = `
   .c0 {
     grid-column-gap: 1rem;
     grid-template-columns: repeat(4,1fr);
-    grid-template-rows: repeat(3,auto);
+    grid-template-rows: repeat( 3,auto );
   }
 }
 
@@ -64,38 +75,346 @@ exports[`List should render correctly 1`] = `
   .c0 {
     grid-column-gap: 1rem;
     grid-template-columns: repeat(5,1fr);
-    grid-template-rows: repeat(3,auto);
+    grid-template-rows: repeat( 3,auto );
   }
 }
 
-@supports not (display:grid) {
+@supports not (grid-template-columns:fit-content(200px)) {
   .c0 > li:first-child {
     width: 100%;
   }
 }
 
-@supports not (display:grid) {
+@supports not (grid-template-columns:fit-content(200px)) {
   .c1 {
     display: inline-block;
   }
 }
 
 <ul
-  className="c0"
+  class="c0"
   role="list"
 >
   <li
-    className="c1"
+    class="c1"
     role="listitem"
   >
     <a
-      className="c2 c3"
+      class="c2 c3"
       href="https://www.bbc.co.uk/news"
     >
       <span
-        className="c4"
+        class="c4"
       >
-        Link
+        Link0
+      </span>
+    </a>
+  </li>
+  <li
+    class="c1"
+    role="listitem"
+  >
+    <a
+      class="c2 c3"
+      href="https://www.bbc.co.uk/news"
+    >
+      <span
+        class="c4"
+      >
+        Link1
+      </span>
+    </a>
+  </li>
+  <li
+    class="c1"
+    role="listitem"
+  >
+    <a
+      class="c2 c3"
+      href="https://www.bbc.co.uk/news"
+    >
+      <span
+        class="c4"
+      >
+        Link2
+      </span>
+    </a>
+  </li>
+  <li
+    class="c1"
+    role="listitem"
+  >
+    <a
+      class="c2 c3"
+      href="https://www.bbc.co.uk/news"
+    >
+      <span
+        class="c4"
+      >
+        Link3
+      </span>
+    </a>
+  </li>
+  <li
+    class="c1"
+    role="listitem"
+  >
+    <a
+      class="c2 c3"
+      href="https://www.bbc.co.uk/news"
+    >
+      <span
+        class="c4"
+      >
+        Link4
+      </span>
+    </a>
+  </li>
+  <li
+    class="c1"
+    role="listitem"
+  >
+    <a
+      class="c2 c3"
+      href="https://www.bbc.co.uk/news"
+    >
+      <span
+        class="c4"
+      >
+        Link5
+      </span>
+    </a>
+  </li>
+  <li
+    class="c1"
+    role="listitem"
+  >
+    <a
+      class="c2 c3"
+      href="https://www.bbc.co.uk/news"
+    >
+      <span
+        class="c4"
+      >
+        Link6
+      </span>
+    </a>
+  </li>
+</ul>
+`;
+
+exports[`List should render correctly with 8 items 1`] = `
+.c3 {
+  padding: 0.5rem 0 0.5rem;
+  color: #FFFFFF;
+  font-weight: 700;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  display: block;
+}
+
+.c2:hover .c4,
+.c2:focus .c4 {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.c0 {
+  border-bottom: 1px solid #3F3F42;
+  list-style-type: none;
+  margin: 0;
+  padding: 0 0 0.5rem;
+}
+
+.c0 > li:first-child {
+  border-bottom: 1px solid #3F3F42;
+  padding: 0.5rem 0;
+  margin-bottom: 0.5rem;
+  grid-column: 1/-1;
+}
+
+.c1 {
+  min-width: 50%;
+}
+
+@supports (grid-template-columns:fit-content(200px)) {
+  .c0 {
+    display: grid;
+    grid-auto-flow: column;
+  }
+}
+
+@media (max-width:14.9375rem) {
+  .c0 {
+    grid-auto-flow: row;
+  }
+}
+
+@media (min-width:15rem) and (max-width:37.4375rem) {
+  .c0 {
+    grid-column-gap: 0.5rem;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat( 5,auto );
+  }
+}
+
+@media (min-width:37.5rem) and (max-width:62.9375rem) {
+  .c0 {
+    grid-column-gap: 1rem;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat( 4,auto );
+  }
+}
+
+@media (min-width:63rem) and (max-width:80rem) {
+  .c0 {
+    grid-column-gap: 1rem;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat( 3,auto );
+  }
+}
+
+@media (min-width:80rem) {
+  .c0 {
+    grid-column-gap: 1rem;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: repeat( 3,auto );
+  }
+}
+
+@supports not (grid-template-columns:fit-content(200px)) {
+  .c0 > li:first-child {
+    width: 100%;
+  }
+}
+
+@supports not (grid-template-columns:fit-content(200px)) {
+  .c1 {
+    display: inline-block;
+  }
+}
+
+<ul
+  class="c0"
+  role="list"
+>
+  <li
+    class="c1"
+    role="listitem"
+  >
+    <a
+      class="c2 c3"
+      href="https://www.bbc.co.uk/news"
+    >
+      <span
+        class="c4"
+      >
+        Link0
+      </span>
+    </a>
+  </li>
+  <li
+    class="c1"
+    role="listitem"
+  >
+    <a
+      class="c2 c3"
+      href="https://www.bbc.co.uk/news"
+    >
+      <span
+        class="c4"
+      >
+        Link1
+      </span>
+    </a>
+  </li>
+  <li
+    class="c1"
+    role="listitem"
+  >
+    <a
+      class="c2 c3"
+      href="https://www.bbc.co.uk/news"
+    >
+      <span
+        class="c4"
+      >
+        Link2
+      </span>
+    </a>
+  </li>
+  <li
+    class="c1"
+    role="listitem"
+  >
+    <a
+      class="c2 c3"
+      href="https://www.bbc.co.uk/news"
+    >
+      <span
+        class="c4"
+      >
+        Link3
+      </span>
+    </a>
+  </li>
+  <li
+    class="c1"
+    role="listitem"
+  >
+    <a
+      class="c2 c3"
+      href="https://www.bbc.co.uk/news"
+    >
+      <span
+        class="c4"
+      >
+        Link4
+      </span>
+    </a>
+  </li>
+  <li
+    class="c1"
+    role="listitem"
+  >
+    <a
+      class="c2 c3"
+      href="https://www.bbc.co.uk/news"
+    >
+      <span
+        class="c4"
+      >
+        Link5
+      </span>
+    </a>
+  </li>
+  <li
+    class="c1"
+    role="listitem"
+  >
+    <a
+      class="c2 c3"
+      href="https://www.bbc.co.uk/news"
+    >
+      <span
+        class="c4"
+      >
+        Link6
+      </span>
+    </a>
+  </li>
+  <li
+    class="c1"
+    role="listitem"
+  >
+    <a
+      class="c2 c3"
+      href="https://www.bbc.co.uk/news"
+    >
+      <span
+        class="c4"
+      >
+        Link7
       </span>
     </a>
   </li>

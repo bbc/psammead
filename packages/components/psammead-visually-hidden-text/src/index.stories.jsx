@@ -5,12 +5,15 @@ import { inputProvider } from '@bbc/psammead-storybook-helpers';
 import notes from '../README.md';
 import VisuallyHiddenText from './index';
 
-storiesOf('VisuallyHiddenText', module)
+storiesOf('Components|VisuallyHiddenText', module)
   .addDecorator(withKnobs)
   .add(
     'default',
-    inputProvider(['visually hidden text'], hiddenText => (
-      <VisuallyHiddenText>{hiddenText}</VisuallyHiddenText>
-    )),
+    inputProvider(
+      [{ name: 'Visually hidden text' }],
+      ({ slotTexts: [hiddenText] }) => (
+        <VisuallyHiddenText>{hiddenText}</VisuallyHiddenText>
+      ),
+    ),
     { notes, knobs: { escapeHTML: false } },
   );

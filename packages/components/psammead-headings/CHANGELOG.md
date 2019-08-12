@@ -3,6 +3,22 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 3.0.4   | [PR#1685](https://github.com/bbc/psammead/pull/1685) Bump dependencies |
+| 3.0.3 | [PR#1682](https://github.com/bbc/psammead/pull/1682) Move all dev dependencies to top level package.json |
+| 3.0.2 | [PR#1672](https://github.com/bbc/psammead/pull/1672) Bump dependencies |
+| 3.0.1 | [PR#1365](https://github.com/bbc/psammead/pull/1365) Bump psammead-styles to 1.2.0 |
+| 3.0.0   | [PR#1241](https://github.com/bbc/psammead/pull/1241) Apply font based on service |
+| 2.1.0 | [PR#1233](https://github.com/bbc/psammead/pull/1233) Add ESM modules entry |
+| 2.0.8   | [PR#1181](https://github.com/bbc/psammead/pull/1181) use `gel-foundations@3.0.3`, `psammead-styles@1.1.3`, `psammead-storybook-helpers@3.1.3`, `psammead-test-helpers@.0.2` |
+| 2.0.7   | [PR#1082](https://github.com/bbc/psammead/pull/1082) Bump lodash security vulnerability |
+| 2.0.6   | [PR#1038](https://github.com/bbc/psammead/pull/1038) Bump dependencies |
+| 2.0.5   | [PR#892](https://github.com/bbc/psammead/pull/892) Bump dependencies |
+| 2.0.4 | [PR#783](https://github.com/bbc/psammead/pull/783) Update to latest psammead-test-helpers. Update snapshots. |
+| 2.0.3 | [PR#769](https://github.com/bbc/psammead/pull/769) Fix stories not appearing in storybook when using `install:packages:link` |
+| 2.0.2   | [PR#713](https://github.com/bbc/psammead/pull/713) Update `styled-components` to 4.3.2 |
+| 2.0.1   | [PR#677](https://github.com/bbc/psammead/pull/677) Use `@bbc/gel-foundations@3.0.0` |
+| 2.0.0   | [PR#504](https://github.com/bbc/psammead/pull/504) Remove required text prop |
+| 1.1.3   | [PR#498](https://github.com/bbc/psammead/pull/498) Update stories to use new input provider |
 | 1.1.2   | [PR#428](https://github.com/bbc/psammead/pull/428) Add custom propTypes shape |
 | 1.1.1   | [PR#412](https://github.com/bbc/psammead/pull/412) Make SubHeading padding-bottom 24px instead of 16px |
 | 1.1.0   | [PR#424](https://github.com/bbc/psammead/pull/424) Add Snyk badge to readme |

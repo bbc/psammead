@@ -18,6 +18,14 @@ const getFailingShellJsMock = () => {
   return require('shelljs');
 };
 
+const getFsMock = () => {
+  jest.mock('fs', () => ({
+    appendFileSync: jest.fn(),
+  }));
+
+  return require('fs');
+};
+
 const getSlackNotificationMock = () => {
   jest.mock('../src/slackNotification');
   return require('../src/slackNotification');
@@ -32,12 +40,12 @@ describe(`Publish Script - publish`, () => {
     jest.resetModules();
     console.log = jest.fn();
 
-    process.argv = process.argv.filter(v => !v.includes('--otp'));
     attempted = { success: [], failure: [] };
   });
 
   it('runs correct publish command and publish is successful ', () => {
     const shelljs = getSuccessfulShellJsMock();
+    const fs = getFsMock();
     const slackNotification = getSlackNotificationMock();
     const publish = require('../src/publish');
 
@@ -66,10 +74,17 @@ describe(`Publish Script - publish`, () => {
       '@foo/psammead-foobar@0.1.2',
       true,
     );
+
+    expect(fs.appendFileSync).toHaveBeenCalledTimes(1);
+    expect(fs.appendFileSync).toHaveBeenCalledWith(
+      'published.txt',
+      '@foo/psammead-foobar,',
+    );
   });
 
   it('runs correct publish command and publish is unsuccessful ', () => {
     const shelljs = getFailingShellJsMock();
+    const fs = getFsMock();
     const slackNotification = getSlackNotificationMock();
     const publish = require('../src/publish');
 
@@ -98,20 +113,7 @@ describe(`Publish Script - publish`, () => {
       '@foo/psammead-foobar@0.1.2',
       false,
     );
-  });
 
-  it('runs correct publish command when otp argument is set and publish is successful', () => {
-    const shelljs = getFailingShellJsMock();
-
-    process.argv.push('--otp=123456');
-
-    const publish = require('../src/publish');
-
-    publish('/foo/bar', packageJson, attempted);
-
-    expect(shelljs.exec).toHaveBeenCalledWith(
-      'npm publish /foo/bar --access public --tag latest --otp 123456',
-      { silent: true },
-    );
+    expect(fs.appendFileSync).not.toHaveBeenCalled();
   });
 });

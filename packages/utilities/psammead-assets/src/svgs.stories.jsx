@@ -4,11 +4,13 @@ import { node, number, shape } from 'prop-types';
 import { storiesOf } from '@storybook/react';
 import { number as numberKnob, withKnobs } from '@storybook/addon-knobs';
 import notes from '../README.md';
-import { news, igbo, yoruba, thai, pidgin } from './svgs';
+import * as svgs from './svgs';
 
+// `currentColor` has been used to address high contrast mode in Firefox.
 const Svg = styled.svg`
   display: block;
-  fill: #fff;
+  color: #fff;
+  fill: currentColor;
 `;
 
 const Container = styled.div`
@@ -37,8 +39,8 @@ const getSVG = ({ group, ratio, viewbox, height }) => {
 };
 
 getSVG.defaultProps = {
-  group: news.group,
-  ratio: news.ratio,
+  group: svgs.news.group,
+  ratio: svgs.news.ratio,
   viewbox: {
     width: 167.95,
     height: 24,
@@ -56,50 +58,17 @@ getSVG.propTypes = {
   height: number,
 };
 
-storiesOf('SVGs', module)
-  .addDecorator(withKnobs)
-  .add(
-    'news',
-    () => {
-      const height = numberKnob('Height', 24);
-      const NewsSvg = getSVG({ ...news, height });
-      return NewsSvg;
-    },
-    { notes },
-  )
-  .add(
-    'Igbo',
-    () => {
-      const height = numberKnob('Height', 24);
-      const IgboSvg = getSVG({ ...igbo, height });
-      return IgboSvg;
-    },
-    { notes },
-  )
-  .add(
-    'Yoruba',
-    () => {
-      const height = numberKnob('Height', 24);
-      const YorubaSvg = getSVG({ ...yoruba, height });
-      return YorubaSvg;
-    },
-    { notes },
-  )
-  .add(
-    'Thai',
-    () => {
-      const height = numberKnob('Height', 24);
-      const ThaiSvg = getSVG({ ...thai, height });
-      return ThaiSvg;
-    },
-    { notes },
-  )
-  .add(
-    'Pidgin',
-    () => {
-      const height = numberKnob('Height', 24);
-      const PidginSvg = getSVG({ ...pidgin, height });
-      return PidginSvg;
-    },
-    { notes },
-  );
+const stories = storiesOf('Utilities|SVGs', module).addDecorator(withKnobs);
+
+Object.keys(svgs)
+  .filter(svgName => svgName !== 'BBC_BLOCKS')
+  .forEach(svgName => {
+    stories.add(
+      svgName,
+      () => {
+        const height = numberKnob('Height', 24);
+        return getSVG({ ...svgs[svgName], height });
+      },
+      { notes },
+    );
+  });

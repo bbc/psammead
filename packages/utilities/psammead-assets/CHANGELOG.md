@@ -1,7 +1,21 @@
 # Psammead Assets Changelog
 
+<!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 2.0.1 | [PR#1682](https://github.com/bbc/psammead/pull/1682) Move all dev dependencies to top level package.json |
+| 2.0.0   | [PR#1646](https://github.com/bbc/psammead/pull/1646) Add SVGs for these services japanese, mundo, punjabi. Update SVG name from turkish to turkce. Update outline styles of SVG to be white. |
+| 1.2.0   | [PR#1523](https://github.com/bbc/psammead/pull/1523) Add SVGs for these services: afaanoromoo, afrique, amharic, arabic, azeri, bengali, burmese, gahuza, gujarati, hausa, hindi, igbo, indonesia, korean, kyrgyz, marathi, nepali, news, pashto, persian, pidgin, russian, serbian, sinhala, somali, swahili, tamil, telegu, thai, tigrinya, turkish, urdu, ukchina, ukranian, vietnamese, zhongwen. Update these existing SVGs: igbo, news, persian, pidgin, thai, yoruba.  |
+| 1.1.1   | [PR#1360](https://github.com/bbc/psammead/pull/1360) Bump because NPM didnt publish properly for some reason |
+| 1.1.0   | [PR#1214](https://github.com/bbc/psammead/pull/1214) Export ESM modules via existing API |
+| 1.0.6   | [PR#1179](https://github.com/bbc/psammead/pull/1179) use `psammead-test-helpers@1.0.2`|
+| 1.0.5   | [PR#1082](https://github.com/bbc/psammead/pull/1082) Bump lodash security vulnerability |
+| 1.0.4   | [PR#783](https://github.com/bbc/psammead/pull/783) Update to latest psammead-test-helpers. Update snapshots. |
+| 1.0.3   | [PR#787](https://github.com/bbc/psammead/pull/787) Fix brand stories in Firefox high contrast mode |
+| 1.0.2   | [PR#713](https://github.com/bbc/psammead/pull/713) Update `styled-components` to 4.3.2 |
+| 1.0.1   | [PR#704](https://github.com/bbc/psammead/pull/704) Remove `fill` from SVGs |
+| 1.0.0   | [PR#679](https://github.com/bbc/psammead/pull/679) Bump version number |
+| 0.1.9   | [PR#490](https://github.com/bbc/psammead/pull/490) Update SVGs to consistent export, minify and add persian |
 | 0.1.8   | [PR#444](https://github.com/bbc/psammead/pull/444) Add service SVG's |
 | 0.1.7   | [PR#424](https://github.com/bbc/psammead/pull/424) Add Snyk badge to readme |
 | 0.1.6   | [PR#323](https://github.com/BBC/psammead/pull/323) Update readme storybook badge |

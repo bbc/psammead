@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { oneOf } from 'prop-types';
 import { C_WHITE } from '@bbc/psammead-styles/colours';
 import { GEL_SPACING, GEL_SPACING_HLF } from '@bbc/gel-foundations/spacings';
 import { GEL_MINION, GEL_FF_REITH_SANS } from '@bbc/gel-foundations/typography';
@@ -14,8 +15,16 @@ const Copyright = styled.p.attrs({
   font-family: ${GEL_FF_REITH_SANS};
   position: absolute;
   bottom: 0;
-  right: 0;
   margin: 0;
+  ${props => props.position}: 0;
 `;
+
+Copyright.propTypes = {
+  position: oneOf(['left', 'right']),
+};
+
+Copyright.defaultProps = {
+  position: 'left',
+};
 
 export default Copyright;

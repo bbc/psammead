@@ -11,7 +11,7 @@ describe(`Publish Script - getPackages`, () => {
       }),
     }));
 
-    const getPackages = require('../src/getPackages');
+    const getPackages = require('../../utilities/getPackages');
 
     expect(getPackages()).toEqual([
       '/foobar/directory/package1',
@@ -26,7 +26,7 @@ describe(`Publish Script - getPackages`, () => {
       }),
     }));
 
-    const getPackages = require('../src/getPackages');
+    const getPackages = require('../../utilities/getPackages');
 
     expect(getPackages()).toEqual(['/foobar/directory/package1']);
   });
@@ -38,7 +38,7 @@ describe(`Publish Script - getPackages`, () => {
       }),
     }));
 
-    const getPackages = require('../src/getPackages');
+    const getPackages = require('../../utilities/getPackages');
 
     expect(getPackages()).toEqual([]);
   });
