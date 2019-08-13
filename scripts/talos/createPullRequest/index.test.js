@@ -44,7 +44,7 @@ describe('createPullRequest', () => {
     );
   });
 
-  it('should should not catch its own errors', async () => {
+  it('should not catch its own errors', async () => {
     createPullRequestMock.mockImplementation(() =>
       Promise.reject(new Error('something bad happened')),
     );
