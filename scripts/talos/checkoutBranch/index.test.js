@@ -12,7 +12,7 @@ describe('checkoutBranch', () => {
     expect(runExec).toHaveBeenCalledWith({ command: 'git checkout -b foobar' });
   });
 
-  it('should should not catch its own errors', async () => {
+  it('should not catch its own errors', async () => {
     runExec.mockImplementation(() =>
       Promise.reject(new Error('something bad happened')),
     );
