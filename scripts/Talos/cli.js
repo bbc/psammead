@@ -1,0 +1,3 @@
+import talos from '.';
+
+talos();
