@@ -1,3 +1,3 @@
-import talos from '.';
+const talos = require('./index');
 
 talos();
