@@ -39,7 +39,7 @@ describe('getChangedPackages', () => {
     expect(packages).toEqual([]);
   });
 
-  it('should return an empty array if file doesn't exist', async () => {
+  it("should return an empty array if file doesn't exist", async () => {
     fs.existsSync.mockImplementation(() => false);
 
     const packages = getChangedPackages();
