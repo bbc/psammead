@@ -66,7 +66,7 @@
     "@bbc/psammead-paragraph": "^2.1.4",
     "@bbc/psammead-story-promo": "2.3.3",
     "@bbc/psammead-storybook-helpers": "^4.0.0",
-    "@bbc/psammead-styles": "^2.0.2",
+    "@bbc/psammead-styles": "^2.0.3",
     "@bbc/psammead-test-helpers": "^1.1.1",
     "@bbc/psammead-timestamp": "^2.1.4",
     "@bbc/psammead-visually-hidden-text": "^1.1.2",
