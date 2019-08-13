@@ -90,11 +90,12 @@ IndexAlsosLink.propTypes = {
   service: string.isRequired,
   url: string.isRequired,
   mediaIndicator: node,
-  mediaType: string.isRequired,
+  mediaType: string,
 };
 
 IndexAlsosLink.defaultProps = {
   mediaIndicator: null,
+  mediaType: null,
 };
 
 export const IndexAlsos = ({ children, offScreenText }) => (
