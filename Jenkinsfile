@@ -2,11 +2,12 @@
 
 def nodeImage = "329802642264.dkr.ecr.eu-west-1.amazonaws.com/bbc-news/node-10-lts:10.16.0"
 
-def slackChannel = "#si_repo-psammead"
+// def slackChannel = "#si_repo-psammead"
+def slackChannel = "#si_repo-infra-sandbox"
 
-def notifySlack(colour, buildStatus, gitCommitAuthor, stageName, gitCommit, gitCommitMessage, slackChannel) {
+def notifySlack(colour, buildStatus, gitCommitAuthor, info, gitCommit, gitCommitMessage, slackChannel) {
   // call the global slackSend method in Jenkins
-  slackSend(color: colour, message: "*${buildStatus}* on ${env.BRANCH_NAME} [build ${BUILD_DISPLAY_NAME}] \n*Author:* ${gitCommitAuthor} \n*Stage:* ${stageName} \n*Commit Hash* \n${gitCommit} \n*Commit Message* \n${gitCommitMessage}", channel: slackChannel)
+  slackSend(color: colour, message: "*${buildStatus}* on ${env.BRANCH_NAME} [build ${BUILD_DISPLAY_NAME}] \n*Author:* ${gitCommitAuthor} \n*Info:* ${info} \n*Commit Hash* \n${gitCommit} \n*Commit Message* \n${gitCommitMessage}", channel: slackChannel)
 }
 
 node {
@@ -26,6 +27,7 @@ node {
       docker.image("${nodeImage}").inside {
         try {
           stage ('Setup & Install') {
+
             sh 'make setup-git'
             sh 'npm run ci:packages'
             sh 'npm run build:storybook'
@@ -42,7 +44,7 @@ node {
                 withCredentials([string(credentialsId: 'psammead-chromatic-app-code', variable: 'CHROMATIC_APP_CODE')]) {
                   sh 'npm run test:chromatic'
                 }
-              }
+              }, failFast: true
             )
           }
 
@@ -65,24 +67,30 @@ node {
               sh 'npm run updateDependants'
             }
           }
-        } catch (e) {
+        } catch (Throwable e) {
+          echo "Pipeline Failed: ${e}"
+
           // send slack notification if building branch: latest
           if (env.BRANCH_NAME == 'latest') {
             // catch error in stages and notify slack
-            notifySlack('bad', 'Failed', gitCommitAuthor, 'FAILED', gitCommitHash, gitCommitMessage, slackChannel)
+            notifySlack('danger', 'Failed', gitCommitAuthor, e, gitCommitHash, gitCommitMessage, slackChannel)
           }
 
           // throw caught error to ensure pipeliune fails
           throw e
         } finally {
-          def buildResult = currentBuild.result ?: 'SUCCESS'
-
           // send slack notification if building branch: latest
           if (env.BRANCH_NAME == 'latest') {
-            if (buildResult == 'SUCCESS') {
-              notifySlack('good', 'Success', gitCommitAuthor, '', gitCommitHash, gitCommitMessage, slackChannel)
-            } else {
-              notifySlack('bad', 'Failed', gitCommitAuthor, 'FAILED', gitCommitHash, gitCommitMessage, slackChannel)
+            switch (currentBuild.result) {
+              case 'SUCCESS':
+                notifySlack('good', 'Success', gitCommitAuthor, 'Successfully Deployed', gitCommitHash, gitCommitMessage, slackChannel)
+                break
+              case 'UNSTABLE':
+                notifySlack('DANGER', 'Ustable', gitCommitAuthor, 'Pipeline in an unstable state', gitCommitHash, gitCommitMessage, slackChannel)
+                break
+              default:
+                echo "Pipeline has failed with an unknow build result"
+                break
             }
           }
         }
