@@ -26,7 +26,6 @@ node {
       docker.image("${nodeImage}").inside {
         try {
           stage ('Setup & Install') {
-
             sh 'make setup-git'
             sh 'npm run ci:packages'
             sh 'npm run build:storybook'
