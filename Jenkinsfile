@@ -88,7 +88,7 @@ node {
                 notifySlack('DANGER', 'Unstable', gitCommitAuthor, 'Pipeline in an unstable state', gitCommitHash, gitCommitMessage, slackChannel)
                 break
               default:
-                echo "Pipeline has failed with an unknow build result"
+                echo "Pipeline has failed with an unknown build result"
                 break
             }
           }
