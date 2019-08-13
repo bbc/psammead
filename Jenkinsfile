@@ -2,8 +2,7 @@
 
 def nodeImage = "329802642264.dkr.ecr.eu-west-1.amazonaws.com/bbc-news/node-10-lts:10.16.0"
 
-// def slackChannel = "#si_repo-psammead"
-def slackChannel = "#si_repo-infra-sandbox"
+def slackChannel = "#si_repo-psammead"
 
 def notifySlack(colour, buildStatus, gitCommitAuthor, info, gitCommit, gitCommitMessage, slackChannel) {
   // call the global slackSend method in Jenkins
