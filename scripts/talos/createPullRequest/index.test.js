@@ -34,7 +34,6 @@ describe('createPullRequest', () => {
     expect(githubMock).toHaveBeenCalledWith({ token: 'fake_github_token' });
     expect(getRepoMock).toHaveBeenCalledWith('bbc', 'psammead');
     expect(createPullRequestMock).toHaveBeenCalledWith({
-      base: 'BumperBotIntegrate-new-new-new-new-new',
       body: 'pull request body',
       draft: true,
       head: 'foobar',

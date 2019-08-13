@@ -16,7 +16,6 @@ const createPullRequest = ({ packages, bumpedPackages, branchName }) => {
     title,
     body: getPRBody(packages, bumpedPackages),
     head: branchName,
-    base: 'BumperBotIntegrate-new-new-new-new-new',
     draft: true,
   });
 };
