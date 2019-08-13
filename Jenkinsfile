@@ -75,7 +75,7 @@ node {
             notifySlack('danger', 'Failed', gitCommitAuthor, e, gitCommitHash, gitCommitMessage, slackChannel)
           }
 
-          // throw caught error to ensure pipeliune fails
+          // throw caught error to ensure pipeline fails
           throw e
         } finally {
           // send slack notification if building branch: latest
