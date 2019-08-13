@@ -97,6 +97,16 @@ describe('Psammead storybook helpers', () => {
       expect(text).toHaveBeenCalledTimes(0);
     });
 
+    it('allows default service to be set', () => {
+      select.mockReturnValueOnce('thai');
+      underTest.inputProvider(null, renderFn, null, {
+        defaultService: 'thai',
+      })();
+
+      expect(select).toHaveBeenCalledTimes(1);
+      expect(select.mock.calls[0][2]).toBe('thai');
+    });
+
     it('handles scenario where config is null', () => {
       select.mockReturnValueOnce('news');
 
