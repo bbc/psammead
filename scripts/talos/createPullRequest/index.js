@@ -16,7 +16,6 @@ const createPullRequest = ({ packages, bumpedPackages, branchName }) => {
     title,
     body: getPRBody(packages, bumpedPackages),
     head: branchName,
-    draft: true,
   });
 };
 

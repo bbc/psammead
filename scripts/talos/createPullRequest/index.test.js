@@ -35,7 +35,6 @@ describe('createPullRequest', () => {
     expect(getRepoMock).toHaveBeenCalledWith('bbc', 'psammead');
     expect(createPullRequestMock).toHaveBeenCalledWith({
       body: 'pull request body',
-      draft: true,
       head: 'foobar',
       title: 'Talos - Bump @bbc/apples, @bbc/pears',
     });
