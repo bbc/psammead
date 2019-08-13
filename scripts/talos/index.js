@@ -9,17 +9,17 @@ const commitChanges = require('./commitChanges');
 const createPullRequest = require('./createPullRequest');
 const getBranchName = require('./getBranchName');
 
-const packages = getChangedPackages();
-const branchName = getBranchName();
+const talos = () => {
+  const packages = getChangedPackages();
+  const branchName = getBranchName();
 
-if (packages.length <= 0) {
-  // eslint-disable-next-line no-console
-  console.log(`No packages were published!`);
-  process.exit();
-}
+  if (packages.length <= 0) {
+    // eslint-disable-next-line no-console
+    console.log(`No packages were published!`);
+    process.exit();
+  }
 
-const talos = () =>
-  upgradeDependencies(packages)
+  return upgradeDependencies(packages)
     .then(bumpedPackages => {
       if (bumpedPackages.length <= 0) {
         // eslint-disable-next-line no-console
@@ -59,5 +59,6 @@ const talos = () =>
       console.error(e);
       process.exit(1);
     });
+};
 
-export default talos;
+module.exports = talos;

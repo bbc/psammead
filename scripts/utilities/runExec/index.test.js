@@ -5,7 +5,7 @@ jest.mock('child_process', () => ({
   exec: jest.fn(),
 }));
 
-describe('commitChanges', () => {
+describe('runExec', () => {
   beforeAll(() => {
     global.console.log = jest.fn();
   });
