@@ -31,7 +31,7 @@ describe('getChangedPackages', () => {
     expect(packages).toEqual(['@bbc/apples', '@bbc/pears']);
   });
 
-  it('should return empty array of empty file', async () => {
+  it('should return an empty array if the file is empty', async () => {
     fs.readFileSync.mockImplementation(() => '');
 
     const packages = getChangedPackages();
@@ -39,7 +39,7 @@ describe('getChangedPackages', () => {
     expect(packages).toEqual([]);
   });
 
-  it('should return empty array if file doesnt exist', async () => {
+  it('should return an empty array if file doesn't exist', async () => {
     fs.existsSync.mockImplementation(() => false);
 
     const packages = getChangedPackages();
