@@ -34,6 +34,10 @@ const IndexAlsosMediaIndicator = styled.span`
   padding-right: ${GEL_SPACING};
 `;
 
+const RoleText = styled.span.attrs({
+  role: 'text',
+})``;
+
 const IndexAlsosText = styled.span`
   display: inline;
   vertical-align: middle;
@@ -68,12 +72,10 @@ const IndexAlsosLink = ({
       {mediaIndicator ? (
         <Fragment>
           <IndexAlsosMediaIndicator>{mediaIndicator}</IndexAlsosMediaIndicator>
-          <span // eslint-disable-next-line jsx-a11y/aria-role
-            role="text"
-          >
+          <RoleText>
             <VisuallyHiddenText>{mediaType}, </VisuallyHiddenText>
             <IndexAlsosText>{children}</IndexAlsosText>
-          </span>
+          </RoleText>
         </Fragment>
       ) : (
         <IndexAlsosText>{children}</IndexAlsosText>
