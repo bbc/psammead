@@ -26,7 +26,7 @@ setup-git:
 	git config user.email "bbc-news-frameworks@users.noreply.github.com"
 	git config user.name "BBC News Frameworks"
 
-publush:
+publish:
 	echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" > .npm
 	npm run publish
 
