@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 5.0.1 | [PR#1734](https://github.com/bbc/psammead/pull/1734) Talos - Bump Dependencies |
 | 5.0.0 | [PR#1714](https://github.com/bbc/psammead/pull/1714) Renamed `indonesian` to `indonesia` and `afaanOromoo` to `afaanoromoo`.  Input provider now has an optional 4th argument that allows the default service to be configured |
 | 4.0.0 | [PR#1679](https://github.com/bbc/psammead/pull/1679) Remove text knob from input-provider |
 | 3.3.4   | [PR#1685](https://github.com/bbc/psammead/pull/1685) Bump dependencies |
