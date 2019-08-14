@@ -30,8 +30,14 @@ pipeline {
     CI = true
     CC_TEST_REPORTER_ID = '06c1254d7c2ff48f763492791337193c8345ca8740c34263d68adcc449aff732'
   }
+  parameters {
+      string(name: 'TALOS_PACKAGES', defaultValue: '', description: 'Comma seperated list of packages to have talos bump. e.g. "@bbc/psammead-styles,@bbc/psammead-brand"')
+  }
   stages {
     stage ('Run application tests') {
+      when {
+        expression { params.TALOS_PACKAGES == '' }
+      }
       agent {
         docker {
           image "${nodeImage}"
@@ -66,7 +72,7 @@ pipeline {
     }
     stage ('Deploy Storybook & Publish to NPM') {
       when {
-        expression { env.BRANCH_NAME == 'latest' }
+        expression { env.BRANCH_NAME == 'latest' && params.TALOS_PACKAGES == '' }
       }
       agent {
         docker {
@@ -108,7 +114,7 @@ pipeline {
         sh 'make setup-git'
         sh 'git fetch --all'
         unstash 'psammead-publishes'
-        sh 'make talos'
+        sh "npm run talos ${params.TALOS_PACKAGES}"
       }
       post {
         always {

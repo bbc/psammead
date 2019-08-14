@@ -2,23 +2,26 @@ const fs = require('fs');
 
 const filePath = 'published.txt';
 
-const getChangedPackages = () => {
+const getFileContents = () => {
   try {
     if (fs.existsSync(filePath)) {
-      const published = fs
-        .readFileSync(filePath)
-        .toString()
-        .split(',')
-        .filter(Boolean);
-
-      return [...new Set(published)];
+      return fs.readFileSync(filePath).toString();
     }
   } catch (err) {
     // eslint-disable-next-line no-console
     console.error(err);
   }
 
-  return [];
+  return '';
+};
+
+const getChangedPackages = () => {
+  const packagesString =
+    process.argv[2] && process.argv[2].length > 0
+      ? process.argv[2]
+      : getFileContents();
+
+  return [...new Set(packagesString.split(',').filter(Boolean))];
 };
 
 module.exports = getChangedPackages;
