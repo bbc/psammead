@@ -40,7 +40,7 @@ describe('Talos', () => {
     bumpPackages.mockImplementation(() => Promise.resolve());
   });
 
-  it('should do stuff', async () => {
+  it('should run expected commands to create PR', async () => {
     await talos();
 
     expect(getChangedPackages).toHaveBeenCalledTimes(1);

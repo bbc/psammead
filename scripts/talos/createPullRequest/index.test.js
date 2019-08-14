@@ -34,9 +34,7 @@ describe('createPullRequest', () => {
     expect(githubMock).toHaveBeenCalledWith({ token: 'fake_github_token' });
     expect(getRepoMock).toHaveBeenCalledWith('bbc', 'psammead');
     expect(createPullRequestMock).toHaveBeenCalledWith({
-      base: 'BumperBotIntegrate-new-new-new-new-new',
       body: 'pull request body',
-      draft: true,
       head: 'foobar',
       title: 'Talos - Bump @bbc/apples, @bbc/pears',
     });
@@ -45,7 +43,7 @@ describe('createPullRequest', () => {
     );
   });
 
-  it('should should not catch its own errors', async () => {
+  it('should not catch its own errors', async () => {
     createPullRequestMock.mockImplementation(() =>
       Promise.reject(new Error('something bad happened')),
     );
