@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "main": "dist/index.js",
   "module": "esm/index.js",
+  "sideEffects": false,
   "description": "<%= description %>",
   "repository": {
     "type": "git",
