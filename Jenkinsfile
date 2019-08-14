@@ -72,21 +72,6 @@ node {
           }
         } catch (Throwable e) {
           echo "Pipeline Failed: ${e}"
-
-          // send slack notification if building branch: latest
-          if (env.BRANCH_NAME == 'latest') {
-            // catch error in stages and notify slack
-            switch (currentBuild.result) {
-              case 'FAILURE':
-                notifySlack('danger', 'Failure', gitCommitAuthor, e, gitCommitHash, gitCommitMessage, slackChannel)
-                break
-              case 'UNSTABLE':
-                notifySlack('danger', 'Unstable', gitCommitAuthor, 'Pipeline in an unstable state', gitCommitHash, gitCommitMessage, slackChannel)
-                break
-              default:
-                break
-          }
-
           // throw caught error to ensure pipeline fails
           throw e
         } finally {
@@ -99,7 +84,7 @@ node {
                 notifySlack('good', 'Success', gitCommitAuthor, 'Successfully Deployed', gitCommitHash, gitCommitMessage, slackChannel)
                 break
               case 'FAILURE':
-                notifySlack('danger', 'Failure', gitCommitAuthor, e, gitCommitHash, gitCommitMessage, slackChannel)
+                notifySlack('danger', 'Failure', gitCommitAuthor, 'Pipeline has failed', gitCommitHash, gitCommitMessage, slackChannel)
                 break
               case 'UNSTABLE':
                 notifySlack('danger', 'Unstable', gitCommitAuthor, 'Pipeline in an unstable state', gitCommitHash, gitCommitMessage, slackChannel)
