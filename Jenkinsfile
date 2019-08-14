@@ -33,20 +33,19 @@ node {
         try {
           stage ('Setup & Install') {
             sh 'make setup-git'
-            sh 'npm run ci:packages'
-            sh 'npm run build:storybook'
+            sh 'make install'
           }
 
           stage ('Development Tests') {
             parallel (
               'App Tests & Code Coverage': {
                 sh 'make code-coverage-before-build'
-                sh 'make tests'
+                sh 'make test'
                 sh 'make code-coverage-after-build'
               },
               'ChromaticQA Tests': {
                 withCredentials([string(credentialsId: 'psammead-chromatic-app-code', variable: 'CHROMATIC_APP_CODE')]) {
-                  sh 'npm run test:chromatic'
+                  sh 'make test:chromatic'
                 }
               }, failFast: true
             )
@@ -60,15 +59,13 @@ node {
                 },
                 'Publish to NPM': {
                     withCredentials([string(credentialsId: 'npm_bbc-online_read_write', variable: 'NPM_TOKEN')]) {
-                      sh 'make setup-npm'
-                      sh 'npm run publish'
+                      sh 'make publish'
                     }
                 }
               )
             }
 
             stage ('Talos') {
-              sh 'make setup-git'
               sh 'git fetch --all'
               sh 'make talos'
             }

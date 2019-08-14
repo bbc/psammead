@@ -9,9 +9,16 @@ code-coverage-before-build:
 code-coverage-after-build:
 	./cc-test-reporter after-build -t lcov;
 
-tests:
+install:
+	npm run ci:packages;
+    npm run build:storybook;
+
+test:
 	npm run build;
 	npm test;
+
+test-chromatic:
+	npm run test:chromatic
 
 setup-git:
 	git remote set-url origin "https://${GITHUB_TOKEN}@github.com/bbc/psammead.git"
@@ -19,8 +26,9 @@ setup-git:
 	git config user.email "bbc-news-frameworks@users.noreply.github.com"
 	git config user.name "BBC News Frameworks"
 
-setup-npm:
-	echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" > .npmrc
+publush:
+	echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" > .npm
+	npm run publish
 
 talos:
 	npm run talos;
