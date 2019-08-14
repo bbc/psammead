@@ -14,6 +14,7 @@ const createPullRequest = ({ packages, bumpedPackages, branchName }) => {
 
   return repo.createPullRequest({
     title,
+    base: 'latest',
     body: getPRBody(packages, bumpedPackages),
     head: branchName,
   });
