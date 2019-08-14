@@ -93,7 +93,7 @@ pipeline {
         }
       }
     }
-    stage ('Bump Dependants') {
+    stage ('Talos') {
       when {
         expression { env.BRANCH_NAME == 'latest' }
       }
@@ -105,14 +105,19 @@ pipeline {
         }
       }
       steps {
+        sh 'make setup-git'
+        sh 'git fetch --all'
         unstash 'psammead-publishes'
-        sh 'make bump-dependants'
+        sh 'make talos'
       }
       post {
         always {
           script {
             stageName = env.STAGE_NAME
           }
+        }
+        cleanup {
+          sh 'chmod -R 777 .git'
         }
       }
     }
