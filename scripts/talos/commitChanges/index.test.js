@@ -16,7 +16,7 @@ describe('commitChanges', () => {
     expect(runExec).toHaveBeenCalledWith({ command: 'git push origin HEAD' });
   });
 
-  it('should should not catch its own errors', async () => {
+  it('should not catch its own errors', async () => {
     runExec.mockImplementation(() =>
       Promise.reject(new Error('something bad happened')),
     );
