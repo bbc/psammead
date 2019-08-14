@@ -76,7 +76,15 @@ node {
           // send slack notification if building branch: latest
           if (env.BRANCH_NAME == 'latest') {
             // catch error in stages and notify slack
-            notifySlack('danger', 'Failed', gitCommitAuthor, e, gitCommitHash, gitCommitMessage, slackChannel)
+            switch (currentBuild.result) {
+              case 'FAILURE':
+                notifySlack('danger', 'Failure', gitCommitAuthor, e, gitCommitHash, gitCommitMessage, slackChannel)
+                break
+              case 'UNSTABLE':
+                notifySlack('danger', 'Unstable', gitCommitAuthor, 'Pipeline in an unstable state', gitCommitHash, gitCommitMessage, slackChannel)
+                break
+              default:
+                break
           }
 
           // throw caught error to ensure pipeline fails
@@ -90,11 +98,8 @@ node {
               case 'SUCCESS':
                 notifySlack('good', 'Success', gitCommitAuthor, 'Successfully Deployed', gitCommitHash, gitCommitMessage, slackChannel)
                 break
-              case 'UNSTABLE':
-                notifySlack('DANGER', 'Unstable', gitCommitAuthor, 'Pipeline in an unstable state', gitCommitHash, gitCommitMessage, slackChannel)
-                break
               default:
-                echo "Pipeline has failed with an unknown build result"
+                echo "Pipeline was not successful"
                 break
             }
           }
