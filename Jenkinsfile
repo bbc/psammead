@@ -95,7 +95,7 @@ pipeline {
     }
     stage ('Talos') {
       when {
-        expression { env.BRANCH_NAME == 'BumperBotIntegrate-new-new-new-new-new' }
+        expression { env.BRANCH_NAME == 'latest' }
       }
       agent {
         docker {
@@ -107,9 +107,7 @@ pipeline {
       steps {
         sh 'make setup-git'
         sh 'git fetch --all'
-        sh 'git checkout -f BumperBotIntegrate-new-new-new-new-new'
-        // unstash 'psammead-publishes'
-        sh 'echo -n "@bbc/psammead-assets,@bbc/gel-foundations," >> published.txt'
+        unstash 'psammead-publishes'
         sh 'make talos'
       }
       post {
