@@ -2,6 +2,7 @@
   "name": "@bbc/psammead-<%= name %>",
   "version": "0.1.0",
   "main": "dist/index.js",
+  "module": "esm/index.js",
   "description": "<%= description %>",
   "repository": {
     "type": "git",
@@ -16,7 +17,8 @@
     "url": "https://github.com/bbc/psammead/issues"
   },
   "homepage": "https://github.com/BBC-News/psammead/blob/latest/packages/components/psammead-<%= name %>/README.md",
-  "dependencies": {
+  "dependencies": {},
+  "peerDependencies": {
     "react": "<%= dependencies.react %>"
   }
 }
