@@ -2,9 +2,9 @@
 const Generator = require('yeoman-generator');
 const chalk = require('chalk');
 const fs = require('fs');
-const fsActions = require('./src/fs-actions');
 const basePackage = require('../package.json');
-const questions = require('./src/questions');
+const fsActions = require('./src/fs-actions/index.js');
+const questions = require('./src/questions/index.js');
 
 const prettyName = (name, join = ' ') =>
   name

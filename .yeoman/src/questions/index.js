@@ -1,4 +1,4 @@
-const getExistingPackages = require('./get-existing');
+const getExistingPackages = require('../get-existing/index.js');
 
 module.exports = [
   {
