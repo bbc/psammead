@@ -126,7 +126,7 @@ This component wraps the title string in an `<h2>` element. The `labelId` prop w
 
 Setting the `visuallyHidden` prop to true visually hides this component at widths <600px, however; it will still be available to screen-readers and other assistive technology.
 
-When supplied with an `href` and the `linkText`, the section label contains an `<a>` link, which is `aria-labelledby` the `labelId` described above. The `linkText` is only expected to be useful to visual users, so is marked as `aria-hidden="true"` to prevent announcement to screen readers.
+When supplied with an `href` and the `linkText`, the section label contains an `<a>` link, which is `aria-labelledby` the `labelId` described above. The `linkText` is only expected to be useful to visual users, so is marked as `aria-hidden="true"` to prevent announcement to screen readers. This `aria-hidden="true"` isn't strictly required - setting the `aria-labelledby` attribute should prevent screen readers from reading out the `linkText`. However, it adding it makes clear to screen readers and other developers that the `linkText` is designed to be ignored by screen readers.
 
 <!-- ## Roadmap -->
 
