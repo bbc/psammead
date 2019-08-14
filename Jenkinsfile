@@ -98,8 +98,17 @@ node {
               case 'SUCCESS':
                 notifySlack('good', 'Success', gitCommitAuthor, 'Successfully Deployed', gitCommitHash, gitCommitMessage, slackChannel)
                 break
+              case 'FAILURE':
+                notifySlack('danger', 'Failure', gitCommitAuthor, e, gitCommitHash, gitCommitMessage, slackChannel)
+                break
+              case 'UNSTABLE':
+                notifySlack('danger', 'Unstable', gitCommitAuthor, 'Pipeline in an unstable state', gitCommitHash, gitCommitMessage, slackChannel)
+                break
+              case 'ABORTED':
+                notifySlack('danger', 'Aborted', gitCommitAuthor, 'Pipeline was aborted', gitCommitHash, gitCommitMessage, slackChannel)
+                break
               default:
-                echo "Pipeline was not successful"
+                notifySlack('danger', 'Unknow', gitCommitAuthor, 'Pipeline has failed', gitCommitHash, gitCommitMessage, slackChannel)
                 break
             }
           }
