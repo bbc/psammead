@@ -197,15 +197,15 @@ const thaiTypography = {
   },
   minion: {
     groupA: {
-      fontSize: '14',
+      fontSize: '12',
       lineHeight: '16',
     },
     groupB: {
-      fontSize: '14',
+      fontSize: '12',
       lineHeight: '16',
     },
     groupD: {
-      fontSize: '14',
+      fontSize: '12',
       lineHeight: '16',
     },
   },
