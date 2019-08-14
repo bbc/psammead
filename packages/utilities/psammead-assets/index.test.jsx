@@ -45,6 +45,7 @@ const svgsExpectedExports = {
   urdu: 'object',
   ukchina: 'object',
   ukrainian: 'object',
+  uzbek: 'object',
   vietnamese: 'object',
   yoruba: 'object',
   zhongwen: 'object',

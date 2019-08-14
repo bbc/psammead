@@ -37,6 +37,7 @@ export turkce from './svgs/turkce';
 export urdu from './svgs/urdu';
 export ukchina from './svgs/ukchina';
 export ukrainian from './svgs/ukrainian';
+export uzbek from './svgs/uzbek';
 export vietnamese from './svgs/vietnamese';
 export yoruba from './svgs/yoruba';
 export zhongwen from './svgs/zhongwen';
