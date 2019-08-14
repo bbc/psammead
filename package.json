@@ -74,7 +74,7 @@
     "@storybook/addon-actions": "^5.1.10",
     "@storybook/addon-knobs": "5.1.10",
     "@storybook/addon-notes": "^5.1.10",
-    "@storybook/addon-viewport": "^5.1.10",
+    "@storybook/addon-viewport": "^5.1.11",
     "@storybook/react": "^5.1.10",
     "@storybook/theming": "^5.1.10",
     "@testing-library/react": "^8.0.7",
