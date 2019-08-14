@@ -15,7 +15,7 @@ const baseUrlBBCNassimUrdu =
 const baseUrlIskoolaPotaBBC =
   'https://ws-downloads.files.bbci.co.uk/fonts/IskoolaPota/v5.91/';
 
-const baseUrlLatha = 'https://ws-downloads.files.bbci.co.uk/fonts/Latha/v5.90';
+const baseUrlLatha = 'https://ws-downloads.files.bbci.co.uk/fonts/Latha/v5.90/';
 
 const baseURlMallanna =
   'https://ws-downloads.files.bbci.co.uk/fonts/Mallanna/v1.0.4/';
@@ -53,7 +53,7 @@ export const F_REITH_SERIF_BOLD = `
     font-display: optional;
   }`;
 
-export const F_REITH_SERIF_BOLD_ITALIC = `  
+export const F_REITH_SERIF_BOLD_ITALIC = `
   @font-face {
     font-family: "ReithSerif";
     src: url("${baseFontUrl}BBCReithSerif_W_BdIt.woff2") format("woff2"), url("${baseFontUrl}BBCReithSerif_W_BdIt.woff") format("woff");
