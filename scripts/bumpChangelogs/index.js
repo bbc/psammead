@@ -14,7 +14,7 @@ module.exports = ({ packageNames, prLink, changesDescription }) => {
     const packageJsonPath = changelogPath.replace(CHANGELOG, 'package.json');
     const { version } = JSON.parse(await readFile(packageJsonPath));
 
-    readFile(changelogPath)
+    return readFile(changelogPath)
       .then(getNewChangelogContent(version, prLink, changesDescription))
       .then(writeChangelog(changelogPath));
   };

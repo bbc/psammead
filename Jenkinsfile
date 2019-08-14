@@ -9,12 +9,18 @@ def notifySlack(colour, buildStatus, gitCommitAuthor, info, gitCommit, gitCommit
   slackSend(color: colour, message: "*${buildStatus}* on ${env.BRANCH_NAME} [build ${BUILD_DISPLAY_NAME}] \n*Author:* ${gitCommitAuthor} \n*Info:* ${info} \n*Commit Hash* \n${gitCommit} \n*Commit Message* \n${gitCommitMessage}", channel: slackChannel)
 }
 
+def cleanUp() {
+  sh 'chmod -R 777 .git'
+}
+
 node {
   timeout(time: 30, unit: 'MINUTES') {
     withEnv([
       'CI=true',
       'CC_TEST_REPORTER_ID=06c1254d7c2ff48f763492791337193c8345ca8740c34263d68adcc449aff732'
     ]) {
+      cleanWs()
+
       // git checkout
       checkout scm
 
@@ -61,8 +67,10 @@ node {
               )
             }
 
-            stage ('Bump Dependants') {
-              sh 'npm run updateDependants'
+            stage ('Talos') {
+              sh 'make setup-git'
+              sh 'git fetch --all'
+              sh 'make talos'
             }
           }
         } catch (Throwable e) {
@@ -77,6 +85,8 @@ node {
           // throw caught error to ensure pipeline fails
           throw e
         } finally {
+          cleanUp()
+
           // send slack notification if building branch: latest
           if (env.BRANCH_NAME == 'latest') {
             switch (currentBuild.result) {
