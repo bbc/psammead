@@ -146,7 +146,7 @@
     ],
     "testMatch": [
       "**/*.test.{js,jsx}",
-      "**/.yeoman/**"
+      "!**/.yeoman/**"
     ]
   },
   "spec": {
