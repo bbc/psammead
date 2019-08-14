@@ -11,7 +11,7 @@ code-coverage-after-build:
 
 install:
 	npm run ci:packages;
-    npm run build:storybook;
+	npm run build:storybook
 
 test:
 	npm run build;
