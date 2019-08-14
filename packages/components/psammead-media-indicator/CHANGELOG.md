@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 | ------- | ----------- |
+| 2.4.2 | [PR#1734](https://github.com/bbc/psammead/pull/1734) Talos - Bump Dependencies |
 | 2.4.1   | [PR#1685](https://github.com/bbc/psammead/pull/1685) Bump dependencies |
 | 2.4.0 | [PR#1669](https://github.com/bbc/psammead/pull/1669) Add `Index Alsos` support |
 | 2.3.3 | [PR#1682](https://github.com/bbc/psammead/pull/1682) Move all dev dependencies to top level package.json |

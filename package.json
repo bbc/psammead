@@ -1,6 +1,6 @@
 {
   "name": "@bbc/psammead",
-  "version": "1.5.1",
+  "version": "1.5.2",
   "description": "Core Components Library Developed & Maintained By The Articles and Reach & Languages Team",
   "main": "index.js",
   "scripts": {
@@ -29,7 +29,7 @@
     "test:lint:css": "stylelint 'packages/**/*.js' 'packages/**/*.jsx' 'scripts/**/*.js'",
     "test:unit": "npm run build && jest --verbose --coverage",
     "test:unit:watch": "npm run build && jest --verbose --coverage --watch",
-    "updateDependants": "node scripts/updateDependants",
+    "talos": "node scripts/talos/cli",
     "updateSnapshots": "npm run ci:packages && npm run test:unit -- -u"
   },
   "repository": {
@@ -53,7 +53,7 @@
     "@babel/plugin-transform-runtime": "^7.5.5",
     "@babel/preset-env": "^7.5.5",
     "@babel/preset-react": "^7.0.0",
-    "@bbc/gel-foundations": "^3.2.1",
+    "@bbc/gel-foundations": "^3.2.2",
     "@bbc/psammead-assets": "^2.0.1",
     "@bbc/psammead-brand": "^4.2.5",
     "@bbc/psammead-caption": "^2.1.4",
@@ -93,6 +93,7 @@
     "eslint-plugin-prettier": "^3.0.0",
     "eslint-plugin-react": "^7.14.3",
     "gh-pages": "2.0.1",
+    "github-api": "^3.2.2",
     "glob-loader": "^0.3.0",
     "husky": "^3.0.2",
     "jest": "^24.5.0",
@@ -110,7 +111,7 @@
     "semver": "^6.3.0",
     "shelljs": "^0.8.3",
     "storybook-chromatic": "^2.1.1",
-    "storybook-readme": "^5.0.6",
+    "storybook-readme": "^5.0.8",
     "strip-ansi": "^5.0.0",
     "stylelint": "^10.1.0",
     "stylelint-config-recommended": "^2.1.0",
