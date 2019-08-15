@@ -103,7 +103,7 @@
     "lint-staged": "^9.2.1",
     "prettier": "^1.18.2",
     "prop-types": "^15.7.2",
-    "react": "^16.8.6",
+    "react": "^16.9.0",
     "react-dom": "^16.8.6",
     "react-helmet": "^5.2.0",
     "react-test-renderer": "^16.8.6",
