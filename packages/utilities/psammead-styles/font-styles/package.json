@@ -1,0 +1,8 @@
+{
+    "name": "@bbc/psammead-styles/font-styles",
+    "private": "true",
+    "main": "../dist/font-styles",
+    "module": "../esm/font-styles",
+    "sideEffects": false
+  }
+  
