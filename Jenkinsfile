@@ -55,7 +55,7 @@ node {
             stage ('Deploy Storybook & Publish to NPM') {
               parallel (
                 'Deploy Storybook': {
-                  sh 'npm run deploy-storybook'
+                  sh 'make deploy-storybook'
                 },
                 'Publish to NPM': {
                     withCredentials([string(credentialsId: 'npm_bbc-online_read_write', variable: 'NPM_TOKEN')]) {

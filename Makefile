@@ -20,6 +20,9 @@ test:
 test-chromatic:
 	npm run test:chromatic
 
+deploy-storybook:
+	npm run deploy-storybook
+
 setup-git:
 	git remote set-url origin "https://${GITHUB_TOKEN}@github.com/bbc/psammead.git"
 	git config remote.origin.fetch '+refs/heads/*:refs/remotes/origin/*'
