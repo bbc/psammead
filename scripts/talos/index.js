@@ -13,9 +13,6 @@ const talos = () => {
   const packages = getChangedPackages();
   const branchName = getBranchName();
 
-  console.log(packages);
-  process.exit();
-
   if (packages.length <= 0) {
     // eslint-disable-next-line no-console
     console.log(`No packages were published!`);
