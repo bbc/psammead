@@ -1,6 +1,6 @@
 import React from 'react';
 
-const telegu = {
+const telugu = {
   group: (
     <g
       fillRule="evenodd"
@@ -22,4 +22,4 @@ const telegu = {
   },
 };
 
-export default telegu;
+export default telugu;

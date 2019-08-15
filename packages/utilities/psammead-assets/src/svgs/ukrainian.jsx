@@ -1,6 +1,6 @@
 import React from 'react';
 
-const ukranian = {
+const ukrainian = {
   group: (
     <g
       fillRule="evenodd"
@@ -22,4 +22,4 @@ const ukranian = {
   },
 };
 
-export default ukranian;
+export default ukrainian;
