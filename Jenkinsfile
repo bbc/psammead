@@ -10,13 +10,15 @@ def stageName = "Unknown"
 def gitCommitAuthor = "Unknown"
 def gitCommitMessage = "Unknown"
 
+def publishesStashed = false
+
 def getCommitInfo = {
   gitCommitAuthor = sh(returnStdout: true, script: "git --no-pager show -s --format='%an' ${GIT_COMMIT}").trim()
   gitCommitMessage = sh(returnStdout: true, script: "git log -1 --pretty=%B").trim()
 }
 
-def unstashPublishes(TALOS_PACKAGES) {
-  if (TALOS_PACKAGES == '') {
+def unstashPublishes(publishesStashed) {
+  if (publishesStashed) {
     unstash 'psammead-publishes'
   }
 }
@@ -95,6 +97,7 @@ pipeline {
           sh 'make publish'
         }
         stash name: 'psammead-publishes', includes: 'published.txt', allowEmpty: true
+        publishesStashed = true
         sh 'rm published.txt || true'
       }
       post {
@@ -119,7 +122,7 @@ pipeline {
       steps {
         sh 'make setup-git'
         sh 'git fetch --all'
-        unstashPublishes(params.TALOS_PACKAGES)
+        unstashPublishes(publishesStashed)
         sh "npm run talos ${params.TALOS_PACKAGES}"
       }
       post {
