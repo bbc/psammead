@@ -113,7 +113,9 @@ pipeline {
       steps {
         sh 'make setup-git'
         sh 'git fetch --all'
-        unstash 'psammead-publishes'
+        if (params.TALOS_PACKAGES == '') {                                          
+          unstash 'psammead-publishes'
+        }
         sh "npm run talos ${params.TALOS_PACKAGES}"
       }
       post {
