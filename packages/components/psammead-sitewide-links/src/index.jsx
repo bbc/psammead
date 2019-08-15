@@ -49,7 +49,7 @@ const SitewideLinks = ({ links, copyrightText, externalLink, service }) => (
     <ConstrainedWrapper>
       <List links={links} />
       <StyledParagraph>
-        {copyrightText}
+        {copyrightText}{' '}
         <Link text={externalLink.text} href={externalLink.href} inline />
       </StyledParagraph>
     </ConstrainedWrapper>
