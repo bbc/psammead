@@ -6,54 +6,10 @@ import Image from '@bbc/psammead-image';
 import Timestamp from '@bbc/psammead-timestamp';
 import MediaIndicator from '@bbc/psammead-media-indicator';
 import VisuallyHiddenText from '@bbc/psammead-visually-hidden-text';
-import notes from '../README.md';
 import StoryPromo, { Headline, Summary, Link, LiveLabel } from './index';
-
-/* eslint-disable-next-line react/prop-types */
-const LiveComponent = ({ headline, service, dir }) => (
-  /* eslint-disable-next-line jsx-a11y/aria-role */
-  <span role="text">
-    <LiveLabel service={service} dir={dir}>
-      LIVE
-    </LiveLabel>
-    <VisuallyHiddenText lang="en-GB">Live, </VisuallyHiddenText>
-    {headline}
-  </span>
-);
-
-/* eslint-disable react/prop-types */
-const InfoComponent = ({
-  headlineText,
-  summaryText,
-  script,
-  topStory,
-  service,
-  isLive,
-  dir,
-}) => (
-  <Fragment>
-    <Headline script={script} topStory={topStory} service={service}>
-      <Link href="https://www.bbc.co.uk/news">
-        {isLive ? (
-          <LiveComponent service={service} dir={dir} headline={headlineText} />
-        ) : (
-          headlineText
-        )}
-      </Link>
-    </Headline>
-    <Summary script={script} topStory={topStory} service={service}>
-      {summaryText}
-    </Summary>
-    <Timestamp
-      datetime={text('Timestamp datetime', '2019-03-01T14:00+00:00')}
-      script={script}
-      padding={false}
-      service={service}
-    >
-      {text('Timestamp', '12 March 2019')}
-    </Timestamp>
-  </Fragment>
-);
+import relatedItems from '../testHelpers/relatedItems';
+import IndexAlsosContainer from '../testHelpers/IndexAlsosContainer';
+import notes from '../README.md';
 
 const buildImg = () => (
   <Image
@@ -77,7 +33,61 @@ const MediaIndicatorComponent = (type, service) => {
   );
 };
 
-const generateStory = ({ topStory }) =>
+/* eslint-disable-next-line react/prop-types */
+const LiveComponent = ({ headline, service, dir }) => (
+  /* eslint-disable-next-line jsx-a11y/aria-role */
+  <span role="text">
+    <LiveLabel service={service} dir={dir}>
+      LIVE
+    </LiveLabel>
+    <VisuallyHiddenText lang="en-GB">Live, </VisuallyHiddenText>
+    {headline}
+  </span>
+);
+
+/* eslint-disable react/prop-types */
+const InfoComponent = ({
+  headlineText,
+  summaryText,
+  script,
+  topStory,
+  service,
+  isLive,
+  dir,
+  alsoItems,
+}) => (
+  <Fragment>
+    <Headline script={script} topStory={topStory} service={service}>
+      <Link href="https://www.bbc.co.uk/news">
+        {isLive ? (
+          <LiveComponent service={service} dir={dir} headline={headlineText} />
+        ) : (
+          headlineText
+        )}
+      </Link>
+    </Headline>
+    <Summary script={script} topStory={topStory} service={service}>
+      {summaryText}
+    </Summary>
+    <Timestamp
+      datetime={text('Timestamp datetime', '2019-03-01T14:00+00:00')}
+      script={script}
+      padding={false}
+      service={service}
+    >
+      {text('Timestamp', '12 March 2019')}
+    </Timestamp>
+    {topStory && alsoItems && (
+      <IndexAlsosContainer
+        alsoItems={alsoItems}
+        script={script}
+        service={service}
+      />
+    )}
+  </Fragment>
+);
+
+const generateStory = ({ topStory, alsoItems = null }) =>
   inputProvider(
     [{ name: 'Headline' }, { name: 'Summary' }],
     ({ slotTexts: [headlineText, summaryText], script, service, dir }) => {
@@ -90,6 +100,7 @@ const generateStory = ({ topStory }) =>
           service={service}
           isLive={boolean('isLive', false)}
           dir={dir}
+          alsoItems={alsoItems}
         />
       );
 
@@ -124,4 +135,20 @@ storiesOf('Components|StoryPromo/StoryPromo', module)
   .add('Top story', generateStory({ topStory: true }), {
     notes,
     knobs: { escapeHTML: false },
-  });
+  })
+  .add(
+    'Index Alsos - multiple',
+    generateStory({ topStory: true, alsoItems: relatedItems }),
+    {
+      notes,
+      knobs: { escapeHTML: false },
+    },
+  )
+  .add(
+    'Index Alsos - one',
+    generateStory({ topStory: true, alsoItems: relatedItems[0] }),
+    {
+      notes,
+      knobs: { escapeHTML: false },
+    },
+  );
