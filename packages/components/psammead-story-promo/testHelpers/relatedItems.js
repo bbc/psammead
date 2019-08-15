@@ -11,6 +11,7 @@ const relatedItems = [
       "Buba Galadima ya ce kasancewar yana daya daga cikin mutanen da suka kafa jam'iyya mai mulki ta APC, hakan ya mayar da shi dan jam'iyya na din-din-din.",
     timestamp: 1562665827,
     cpsType: 'MAP',
+    mediaType: 'Video',
     id: 'urn:bbc:ares::asset:hausa/labarai-48916590',
     type: 'cps',
   },

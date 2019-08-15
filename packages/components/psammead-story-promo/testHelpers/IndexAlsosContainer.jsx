@@ -10,22 +10,22 @@ import {
 } from '../src/IndexAlsos/index';
 
 const IndexAlsosContainer = ({ alsoItems, script, service }) => {
-  const getMediaType = cpsType => {
+  const getMediaType = (cpsType, mediaType) => {
     const isPGL = cpsType === 'PGL';
     const isMedia = cpsType === 'MAP';
+    const media = mediaType || 'Video';
 
     if (!isPGL && !isMedia) {
       return null;
     }
 
-    // Update this once the ARES feed contains the media type
-    const mediaType = isPGL ? 'photogallery' : 'video';
+    const type = isPGL ? 'photogallery' : media.toLowerCase();
 
-    return mediaType;
+    return type;
   };
 
-  const IndexAlsosMediaIndicator = cpsType => {
-    const indexAlsosMediaType = getMediaType(cpsType);
+  const IndexAlsosMediaIndicator = (cpsType, mediaType) => {
+    const indexAlsosMediaType = getMediaType(cpsType, mediaType);
 
     return indexAlsosMediaType ? (
       <MediaIndicator service={service} type={indexAlsosMediaType} indexAlsos />
@@ -39,7 +39,7 @@ const IndexAlsosContainer = ({ alsoItems, script, service }) => {
         <IndexAlsosUl>
           {/* eslint-disable-next-line react/prop-types */
           alsoItems.map(item => {
-            const { id, cpsType } = item;
+            const { id, cpsType, mediaType } = item;
             const { headline } = item.headlines;
             const url = item.locators.assetUri;
 
@@ -49,8 +49,12 @@ const IndexAlsosContainer = ({ alsoItems, script, service }) => {
                 script={script}
                 service={service}
                 url={url}
-                mediaIndicator={IndexAlsosMediaIndicator(cpsType, service)}
-                mediaType={getMediaType(cpsType)}
+                mediaIndicator={IndexAlsosMediaIndicator(
+                  cpsType,
+                  mediaType,
+                  service,
+                )}
+                mediaType={getMediaType(cpsType, mediaType)}
               >
                 {headline}
               </IndexAlsosLi>
@@ -60,7 +64,7 @@ const IndexAlsosContainer = ({ alsoItems, script, service }) => {
       ) : (
         // When there is exactly one related item, it should not be contained within a list.
         (() => {
-          const { cpsType } = alsoItems;
+          const { cpsType, mediaType } = alsoItems;
           const { headline } = alsoItems.headlines;
           const url = alsoItems.locators.assetUri;
 
@@ -69,8 +73,12 @@ const IndexAlsosContainer = ({ alsoItems, script, service }) => {
               script={script}
               service={service}
               url={url}
-              mediaIndicator={IndexAlsosMediaIndicator(cpsType, service)}
-              mediaType={getMediaType(cpsType)}
+              mediaIndicator={IndexAlsosMediaIndicator(
+                cpsType,
+                mediaType,
+                service,
+              )}
+              mediaType={getMediaType(cpsType, mediaType)}
             >
               {headline}
             </IndexAlso>
