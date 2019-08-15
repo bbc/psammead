@@ -140,7 +140,7 @@ pipeline {
             unstash 'psammead-publishes'
           }
         }
-        sh "npm run talos ${params.TALOS_PACKAGES}"
+        sh "npm run talos ${params.TALOS_PACKAGES.replaceAll("[^a-zA-Z0-9.-_/@,]+","")}"
       }
       post {
         always {
