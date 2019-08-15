@@ -24,7 +24,7 @@ exports[`StoryPromo - Top Story should render correctly 1`] = `
   line-height: 1.5rem;
   color: #222222;
   font-family: ReithSerif,Helvetica,Arial,sans-serif;
-  font-weight: 700;
+  font-weight: 500;
   font-style: normal;
   margin: 0;
   padding-bottom: 0.5rem;
@@ -220,7 +220,7 @@ exports[`StoryPromo - Top Story should render correctly 1`] = `
 </div>
 `;
 
-exports[`StoryPromo - Top Story with Media Indicator should render correctly 1`] = `
+exports[`StoryPromo - Top Story should render with Media Indicator correctly 1`] = `
 .c6 {
   vertical-align: middle;
   margin: 0 0.25rem;
@@ -288,7 +288,7 @@ exports[`StoryPromo - Top Story with Media Indicator should render correctly 1`]
   line-height: 1.5rem;
   color: #222222;
   font-family: ReithSerif,Helvetica,Arial,sans-serif;
-  font-weight: 700;
+  font-weight: 500;
   font-style: normal;
   margin: 0;
   padding-bottom: 0.5rem;
@@ -521,6 +521,755 @@ exports[`StoryPromo - Top Story with Media Indicator should render correctly 1`]
 </div>
 `;
 
+exports[`StoryPromo - Top Story should render with multiple Index Alsos correctly 1`] = `
+.c14 {
+  vertical-align: middle;
+  margin: 0 0.25rem;
+  color: #222222;
+  fill: currentColor;
+  width: 0.75rem;
+  height: 0.75rem;
+}
+
+.c13 > svg {
+  margin: 0;
+}
+
+.c8 {
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  -webkit-clip: rect(1px,1px,1px,1px);
+  clip: rect(1px,1px,1px,1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  width: 1px;
+  margin: 0;
+}
+
+.c0 {
+  position: relative;
+}
+
+.c1 {
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+  margin-bottom: 0.5rem;
+  width: 100%;
+}
+
+.c2 {
+  position: relative;
+}
+
+.c4 {
+  font-size: 0.9375rem;
+  line-height: 1.25rem;
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+  color: #222222;
+  font-family: ReithSerif,Helvetica,Arial,sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  margin: 0;
+  padding-bottom: 0.5rem;
+}
+
+.c6 {
+  font-size: 0.9375rem;
+  line-height: 1.125rem;
+  color: #3F3F42;
+  font-family: ReithSans,Helvetica,Arial,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  margin: 0;
+  padding-bottom: 0.5rem;
+}
+
+.c3 {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.c5 {
+  position: static;
+  color: #222222;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c5:before {
+  bottom: 0;
+  content: '';
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  right: 0;
+  top: 0;
+  white-space: nowrap;
+  z-index: 1;
+}
+
+.c5:hover,
+.c5:focus {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.c5:visited {
+  color: #6E6E73;
+}
+
+.c7 {
+  position: relative;
+  z-index: 2;
+  padding: 1rem 0 0.5rem;
+}
+
+.c10 {
+  border-top: 1px solid #F2F2F2;
+  padding: 0.5rem 0;
+}
+
+.c9 {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.c12 {
+  padding-right: 0.5rem;
+}
+
+.c15 {
+  display: inline;
+  vertical-align: middle;
+}
+
+.c11 {
+  font-size: 0.875rem;
+  line-height: 1.125rem;
+  font-family: ReithSerif,Helvetica,Arial,sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  color: #222222;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c11:hover,
+.c11:focus {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.c11:visited {
+  color: #6E6E73;
+}
+
+@supports (grid-template-columns:fit-content(200px)) {
+  .c0 {
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-column-gap: 0.5rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .c1 {
+    width: 33.33%;
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width:80rem) {
+  .c1 {
+    width: 33.33%;
+  }
+}
+
+@supports (grid-template-columns:fit-content(200px)) {
+  .c1 {
+    display: block;
+    width: initial;
+    grid-column: 1 / span 6;
+  }
+}
+
+@media (min-width:20rem) and (max-width:37.4375rem) {
+  .c4 {
+    font-size: 1rem;
+    line-height: 1.25rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .c4 {
+    font-size: 1rem;
+    line-height: 1.25rem;
+  }
+}
+
+@media (min-width:20rem) and (max-width:37.4375rem) {
+  .c4 {
+    font-size: 1.375rem;
+    line-height: 1.625rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .c4 {
+    font-size: 1.75rem;
+    line-height: 2rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .c4 {
+    font-size: 1.125rem;
+    line-height: 1.375rem;
+  }
+}
+
+@media (min-width:20rem) and (max-width:37.4375rem) {
+  .c6 {
+    font-size: 0.9375rem;
+    line-height: 1.125rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .c6 {
+    font-size: 0.875rem;
+    line-height: 1.125rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .c3 {
+    width: 66.67%;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .c3 {
+    padding: 0 1rem;
+  }
+}
+
+@media (min-width:80rem) {
+  .c3 {
+    width: 66.67%;
+  }
+}
+
+@supports (grid-template-columns:fit-content(200px)) {
+  .c3 {
+    display: block;
+    width: initial;
+    padding: initial;
+    grid-column: 1 / span 6;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .c7 {
+    display: none;
+    visibility: hidden;
+  }
+}
+
+@media (min-width:20rem) and (max-width:37.4375rem) {
+  .c11 {
+    font-size: 0.875rem;
+    line-height: 1.125rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .c11 {
+    font-size: 0.8125rem;
+    line-height: 1rem;
+  }
+}
+
+<div
+  class="c0"
+>
+  <div
+    class="c1"
+  >
+    <div
+      class="c2"
+    >
+      <img
+        alt="Alt text"
+        src="https://foobar.com/image.png"
+      />
+    </div>
+  </div>
+  <div
+    class="c3"
+  >
+    <h3
+      class="c4"
+    >
+      <a
+        class="c5"
+        href="https://www.bbc.co.uk/news"
+      >
+        The headline of the promo
+      </a>
+    </h3>
+    <p
+      class="c6"
+    >
+      The summary of the promo
+    </p>
+    <time>
+      12 March 2019
+    </time>
+    <div
+      class="c7"
+    >
+      <h4
+        class="c8"
+      >
+        Related content
+      </h4>
+      <ul
+        class="c9"
+        role="list"
+      >
+        <li
+          class="c10"
+          role="listitem"
+        >
+          <a
+            class="c11"
+            href="/hausa/labarai-48916590"
+          >
+            <span
+              class="c12"
+            >
+              <span
+                aria-hidden="true"
+                class="c13"
+              >
+                <svg
+                  class="c14"
+                  focusable="false"
+                  height="12px"
+                  viewBox="0 0 32 32"
+                  width="12px"
+                >
+                  <polygon
+                    points="3,32 29,16 3,0"
+                  />
+                </svg>
+              </span>
+            </span>
+            <span
+              class=""
+              role="text"
+            >
+              <span
+                class="c8"
+              >
+                video
+                , 
+              </span>
+              <span
+                class="c15"
+              >
+                APC ba ta isa ta kore ni ba – Buba Galadima
+              </span>
+            </span>
+          </a>
+        </li>
+        <li
+          class="c10"
+          role="listitem"
+        >
+          <a
+            class="c11"
+            href="/hausa/labarai-42837051"
+          >
+            <span
+              class="c15"
+            >
+              Yaushe Obasanjo ya fara yi wa shugabannin kasa baki?
+            </span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`StoryPromo - Top Story should render with one Index Also correctly 1`] = `
+.c13 {
+  vertical-align: middle;
+  margin: 0 0.25rem;
+  color: #222222;
+  fill: currentColor;
+  width: 0.75rem;
+  height: 0.75rem;
+}
+
+.c12 > svg {
+  margin: 0;
+}
+
+.c8 {
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  -webkit-clip: rect(1px,1px,1px,1px);
+  clip: rect(1px,1px,1px,1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  width: 1px;
+  margin: 0;
+}
+
+.c0 {
+  position: relative;
+}
+
+.c1 {
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+  margin-bottom: 0.5rem;
+  width: 100%;
+}
+
+.c2 {
+  position: relative;
+}
+
+.c4 {
+  font-size: 0.9375rem;
+  line-height: 1.25rem;
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+  color: #222222;
+  font-family: ReithSerif,Helvetica,Arial,sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  margin: 0;
+  padding-bottom: 0.5rem;
+}
+
+.c6 {
+  font-size: 0.9375rem;
+  line-height: 1.125rem;
+  color: #3F3F42;
+  font-family: ReithSans,Helvetica,Arial,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  margin: 0;
+  padding-bottom: 0.5rem;
+}
+
+.c3 {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.c5 {
+  position: static;
+  color: #222222;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c5:before {
+  bottom: 0;
+  content: '';
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  right: 0;
+  top: 0;
+  white-space: nowrap;
+  z-index: 1;
+}
+
+.c5:hover,
+.c5:focus {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.c5:visited {
+  color: #6E6E73;
+}
+
+.c7 {
+  position: relative;
+  z-index: 2;
+  padding: 1rem 0 0.5rem;
+}
+
+.c9 {
+  border-top: 1px solid #F2F2F2;
+  padding: 0.5rem 0;
+}
+
+.c11 {
+  padding-right: 0.5rem;
+}
+
+.c14 {
+  display: inline;
+  vertical-align: middle;
+}
+
+.c10 {
+  font-size: 0.875rem;
+  line-height: 1.125rem;
+  font-family: ReithSerif,Helvetica,Arial,sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  color: #222222;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c10:hover,
+.c10:focus {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.c10:visited {
+  color: #6E6E73;
+}
+
+@supports (grid-template-columns:fit-content(200px)) {
+  .c0 {
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-column-gap: 0.5rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .c1 {
+    width: 33.33%;
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width:80rem) {
+  .c1 {
+    width: 33.33%;
+  }
+}
+
+@supports (grid-template-columns:fit-content(200px)) {
+  .c1 {
+    display: block;
+    width: initial;
+    grid-column: 1 / span 6;
+  }
+}
+
+@media (min-width:20rem) and (max-width:37.4375rem) {
+  .c4 {
+    font-size: 1rem;
+    line-height: 1.25rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .c4 {
+    font-size: 1rem;
+    line-height: 1.25rem;
+  }
+}
+
+@media (min-width:20rem) and (max-width:37.4375rem) {
+  .c4 {
+    font-size: 1.375rem;
+    line-height: 1.625rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .c4 {
+    font-size: 1.75rem;
+    line-height: 2rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .c4 {
+    font-size: 1.125rem;
+    line-height: 1.375rem;
+  }
+}
+
+@media (min-width:20rem) and (max-width:37.4375rem) {
+  .c6 {
+    font-size: 0.9375rem;
+    line-height: 1.125rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .c6 {
+    font-size: 0.875rem;
+    line-height: 1.125rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .c3 {
+    width: 66.67%;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .c3 {
+    padding: 0 1rem;
+  }
+}
+
+@media (min-width:80rem) {
+  .c3 {
+    width: 66.67%;
+  }
+}
+
+@supports (grid-template-columns:fit-content(200px)) {
+  .c3 {
+    display: block;
+    width: initial;
+    padding: initial;
+    grid-column: 1 / span 6;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .c7 {
+    display: none;
+    visibility: hidden;
+  }
+}
+
+@media (min-width:20rem) and (max-width:37.4375rem) {
+  .c10 {
+    font-size: 0.875rem;
+    line-height: 1.125rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .c10 {
+    font-size: 0.8125rem;
+    line-height: 1rem;
+  }
+}
+
+<div
+  class="c0"
+>
+  <div
+    class="c1"
+  >
+    <div
+      class="c2"
+    >
+      <img
+        alt="Alt text"
+        src="https://foobar.com/image.png"
+      />
+    </div>
+  </div>
+  <div
+    class="c3"
+  >
+    <h3
+      class="c4"
+    >
+      <a
+        class="c5"
+        href="https://www.bbc.co.uk/news"
+      >
+        The headline of the promo
+      </a>
+    </h3>
+    <p
+      class="c6"
+    >
+      The summary of the promo
+    </p>
+    <time>
+      12 March 2019
+    </time>
+    <div
+      class="c7"
+    >
+      <h4
+        class="c8"
+      >
+        Related content
+      </h4>
+      <div
+        class="c9"
+      >
+        <a
+          class="c10"
+          href="/hausa/labarai-48916590"
+        >
+          <span
+            class="c11"
+          >
+            <span
+              aria-hidden="true"
+              class="c12"
+            >
+              <svg
+                class="c13"
+                focusable="false"
+                height="12px"
+                viewBox="0 0 32 32"
+                width="12px"
+              >
+                <polygon
+                  points="3,32 29,16 3,0"
+                />
+              </svg>
+            </span>
+          </span>
+          <span
+            class=""
+            role="text"
+          >
+            <span
+              class="c8"
+            >
+              video
+              , 
+            </span>
+            <span
+              class="c14"
+            >
+              APC ba ta isa ta kore ni ba – Buba Galadima
+            </span>
+          </span>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
 exports[`StoryPromo should render Live promo correctly 1`] = `
 .c7 {
   -webkit-clip-path: inset(100%);
@@ -556,7 +1305,7 @@ exports[`StoryPromo should render Live promo correctly 1`] = `
   line-height: 1.25rem;
   color: #222222;
   font-family: ReithSerif,Helvetica,Arial,sans-serif;
-  font-weight: 700;
+  font-weight: 500;
   font-style: normal;
   margin: 0;
   padding-bottom: 0.5rem;
@@ -797,7 +1546,7 @@ exports[`StoryPromo should render correctly 1`] = `
   line-height: 1.25rem;
   color: #222222;
   font-family: ReithSerif,Helvetica,Arial,sans-serif;
-  font-weight: 700;
+  font-weight: 500;
   font-style: normal;
   margin: 0;
   padding-bottom: 0.5rem;
@@ -1051,7 +1800,7 @@ exports[`StoryPromo with Media Indicator should render correctly 1`] = `
   line-height: 1.25rem;
   color: #222222;
   font-family: ReithSerif,Helvetica,Arial,sans-serif;
-  font-weight: 700;
+  font-weight: 500;
   font-style: normal;
   margin: 0;
   padding-bottom: 0.5rem;
