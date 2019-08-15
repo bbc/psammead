@@ -17,12 +17,6 @@ def getCommitInfo = {
   gitCommitMessage = sh(returnStdout: true, script: "git log -1 --pretty=%B").trim()
 }
 
-def unstashPublishes(publishesStashed) {
-  if (publishesStashed) {
-    unstash 'psammead-publishes'
-  }
-}
-
 def notifySlack(colour, buildStatus, gitCommitAuthor, stageName, gitCommitMessage, slackChannel) {
   // call the global slackSend method in Jenkins
   slackSend(color: colour, message: "*${buildStatus}* on ${GIT_BRANCH} [build ${BUILD_DISPLAY_NAME}] \n*Author:* ${gitCommitAuthor} \n*Stage:* ${stageName} \n*Commit Hash* \n${GIT_COMMIT} \n*Commit Message* \n${gitCommitMessage}", channel: slackChannel)
@@ -97,7 +91,9 @@ pipeline {
           sh 'make publish'
         }
         stash name: 'psammead-publishes', includes: 'published.txt', allowEmpty: true
-        publishesStashed = true
+        script {
+          publishesStashed = true
+        }
         sh 'rm published.txt || true'
       }
       post {
@@ -122,7 +118,11 @@ pipeline {
       steps {
         sh 'make setup-git'
         sh 'git fetch --all'
-        unstashPublishes(publishesStashed)
+        script {
+          if (publishesStashed) {
+            unstash 'psammead-publishes'
+          }
+        }
         sh "npm run talos ${params.TALOS_PACKAGES}"
       }
       post {
