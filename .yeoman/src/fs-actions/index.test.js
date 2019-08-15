@@ -1,13 +1,20 @@
-jest.mock('../fs-actions');
-import { mkDir, install } from '../fs-actions';
-mkDir.mockImplementation(test => test);
-install.mockReturnValue(() => 'cheese');
+const shell = require('shelljs');
+const fsActions = require('./index');
 
+jest.mock('shelljs', () => ({
+  mkdir: jest.fn(),
+  exec: jest.fn(),
+}));
+
+console.log(fsActions.mkDir);
+
+console.log(fsActions.mkDir());
 describe('file system helper tests', () => {
   it('calls mkdir', () => {
-    expect(mkDir('hullaballoo')).toEqual('test');
+    shell.mkdir.mockReturnValue = 'hullaballo';
+    expect(fsActions.mkDir()).toEqual('test');
   });
-  it('calls install', () => {
-    expect(install()).toEqual('cheese');
-  });
+  //   it('calls install', () => {
+  //     expect(fsActions.install('lol')).resolves.toEqual('cheese');
+  //   });
 });
