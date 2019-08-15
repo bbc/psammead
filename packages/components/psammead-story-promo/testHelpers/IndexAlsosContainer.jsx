@@ -34,11 +34,9 @@ const IndexAlsosContainer = ({ alsoItems, script, service }) => {
 
   return (
     <IndexAlsos offScreenText="Related content">
-      {/* eslint-disable-next-line react/prop-types */
-      alsoItems.length > 1 ? (
+      {alsoItems.length > 1 ? (
         <IndexAlsosUl>
-          {/* eslint-disable-next-line react/prop-types */
-          alsoItems.map(item => {
+          {alsoItems.map(item => {
             const { id, cpsType, mediaType } = item;
             const { headline } = item.headlines;
             const url = item.locators.assetUri;
