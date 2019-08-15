@@ -44,7 +44,7 @@ storiesOf('Components|SectionLabel', module)
           )}
           labelId="example-section-label"
           service={service}
-          linkText="See More"
+          linkText="See All"
           href="https://www.bbc.com/igbo"
         >
           {title}
