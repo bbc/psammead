@@ -36,6 +36,25 @@ pipeline {
       string(name: 'TALOS_PACKAGES', defaultValue: '', description: 'Comma seperated list of packages to have talos bump. e.g. "@bbc/psammead-styles,@bbc/psammead-brand"')
   }
   stages {
+    stage ('Install') {
+      agent {
+        docker {
+          image "${nodeImage}"
+          label nodeName
+          args '-u root -v /etc/pki:/certs'
+        }
+      }
+      steps {
+        sh 'make install'
+      }
+      post {
+        always {
+          script {
+            stageName = env.STAGE_NAME
+          }
+        }
+      }
+    }
     stage ('Run application tests') {
       when {
         expression { params.TALOS_PACKAGES == '' }
@@ -55,7 +74,6 @@ pipeline {
             getCommitInfo()
           }
         }
-        sh 'make install'
         sh 'make code-coverage-before-build'
         sh 'make tests'
         sh 'make code-coverage-after-build'
