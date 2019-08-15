@@ -124,7 +124,7 @@ pipeline {
     }
     stage ('Talos') {
       when {
-        expression { env.BRANCH_NAME == 'ManualTalos' }
+        expression { env.BRANCH_NAME == 'latest' }
       }
       agent {
         docker {
