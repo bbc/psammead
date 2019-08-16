@@ -79,7 +79,7 @@ node {
 
           // send slack notification if building branch: latest
           if (env.BRANCH_NAME == 'latest') {
-            switch (currentBuild.result) {
+            switch (currentBuild.currentResult) {
               case 'SUCCESS':
                 notifySlack('good', 'Success', gitCommitAuthor, 'Successfully Deployed', gitCommitHash, gitCommitMessage, slackChannel)
                 break
