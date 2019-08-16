@@ -81,9 +81,11 @@ node {
           }
         } catch (Throwable e) {
           echo "Pipeline Failed: ${e}"
+          currentBuild.result = 'FAILURE'
           // throw caught error to ensure pipeline fails
           throw e
         } finally {
+          def buildResult = currentBuild.result ?: 'SUCCESS'
           cleanUp()
 
           echo "currentBuild.currentResult: ${currentBuild.currentResult}"
@@ -91,7 +93,7 @@ node {
 
           // send slack notification if building branch: latest
           if (env.BRANCH_NAME == 'latest') {
-            switch (currentBuild.currentResult) {
+            switch (buildResult) {
               case 'SUCCESS':
                 notifySlack('good', 'Success', gitCommitAuthor, 'Successfully Deployed', gitCommitHash, gitCommitMessage, slackChannel)
                 break
