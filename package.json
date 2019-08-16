@@ -95,7 +95,7 @@
     "gh-pages": "2.0.1",
     "github-api": "^3.2.2",
     "glob-loader": "^0.3.0",
-    "husky": "^3.0.2",
+    "husky": "^3.0.3",
     "jest": "^24.9.0",
     "jest-fetch-mock": "^2.1.2",
     "jest-styled-components": "^6.3.3",
