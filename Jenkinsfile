@@ -79,7 +79,6 @@ node {
               sh "npm run talos ${params.TALOS_PACKAGES.replaceAll("[^a-zA-Z0-9._/@,-]+","")}"
             }
           }
-          
         } catch (Throwable e) {
           echo "Pipeline Failed: ${e}"
           // throw caught error to ensure pipeline fails
