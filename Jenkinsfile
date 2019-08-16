@@ -77,6 +77,9 @@ node {
         } finally {
           cleanUp()
 
+          echo "currentBuild.currentResult: ${currentBuild.currentResult}"
+          echo "currentBuild.result: ${currentBuild.result}"
+
           // send slack notification if building branch: latest
           if (env.BRANCH_NAME == 'latest') {
             switch (currentBuild.currentResult) {
@@ -93,7 +96,6 @@ node {
                 notifySlack('danger', 'Aborted', gitCommitAuthor, 'Pipeline was aborted', gitCommitHash, gitCommitMessage, slackChannel)
                 break
               default:
-                echo "Build Result: ${currentBuild.currentResult}"
                 notifySlack('danger', 'Unknown', gitCommitAuthor, 'Pipeline has failed', gitCommitHash, gitCommitMessage, slackChannel)
                 break
             }
