@@ -58,7 +58,7 @@ node {
             }
           }
 
-          if (env.BRANCH_NAME == 'ManualTalos-test2' && params.TALOS_PACKAGES == '') {
+          if (env.BRANCH_NAME == 'latest' && params.TALOS_PACKAGES == '') {
             stage ('Deploy Storybook & Publish to NPM') {
               parallel (
                 'Deploy Storybook': {
@@ -73,7 +73,7 @@ node {
             }
           }
 
-          if (env.BRANCH_NAME == 'ManualTalos-test2') {
+          if (env.BRANCH_NAME == 'latest') {
             stage ('Talos') {
               sh 'git fetch --all'
               sh "npm run talos ${params.TALOS_PACKAGES.replaceAll("[^a-zA-Z0-9._/@,-]+","")}"
