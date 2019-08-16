@@ -16,7 +16,7 @@ def cleanUp() {
 node {
   properties([
     parameters([
-      string(name: 'TALOS_PACKAGES', defaultValue: '', description: 'Comma seperated list of packages to have talos bump. e.g. "@bbc/psammead-styles,@bbc/psammead-brand"'
+      string(name: 'TALOS_PACKAGES', defaultValue: '', description: 'Comma seperated list of packages to have talos bump. e.g. "@bbc/psammead-styles,@bbc/psammead-brand"')
     ])
   ])
   timeout(time: 30, unit: 'MINUTES') {
@@ -41,7 +41,7 @@ node {
             sh 'make install'
           }
 
-          if (params.TALOS_PACKAGES != '') {
+          if (params.TALOS_PACKAGES == '') {
             stage ('Development Tests') {
               parallel (
                 'App Tests & Code Coverage': {
@@ -58,7 +58,7 @@ node {
             }
           }
 
-          if (env.BRANCH_NAME == 'latest' && params.TALOS_PACKAGES != '') {
+          if (env.BRANCH_NAME == 'ManualTalos-test2' && params.TALOS_PACKAGES == '') {
             stage ('Deploy Storybook & Publish to NPM') {
               parallel (
                 'Deploy Storybook': {
@@ -73,10 +73,10 @@ node {
             }
           }
 
-          if (env.BRANCH_NAME == 'latest') {
+          if (env.BRANCH_NAME == 'ManualTalos-test2') {
             stage ('Talos') {
               sh 'git fetch --all'
-              sh "npm run talos ${params.TALOS_PACKAGES.replaceAll("[^a-zA-Z0-9.-_/@,]+","")}"
+              sh "npm run talos ${params.TALOS_PACKAGES.replaceAll("[^a-zA-Z0-9._/@,-]+","")}"
             }
           }
           
@@ -103,7 +103,7 @@ node {
                 notifySlack('danger', 'Aborted', gitCommitAuthor, 'Pipeline was aborted', gitCommitHash, gitCommitMessage, slackChannel)
                 break
               default:
-                echo "Default build result: ${currentBuild.result}"
+                echo "Unknown build result: ${currentBuild.result}"
                 notifySlack('danger', 'Unknown', gitCommitAuthor, 'Pipeline has failed', gitCommitHash, gitCommitMessage, slackChannel)
                 break
             }
