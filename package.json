@@ -76,7 +76,7 @@
     "@storybook/addon-notes": "^5.1.10",
     "@storybook/addon-viewport": "^5.1.10",
     "@storybook/react": "^5.1.10",
-    "@storybook/theming": "^5.1.10",
+    "@storybook/theming": "^5.1.11",
     "@testing-library/react": "^8.0.7",
     "babel-core": "^7.0.0-bridge.0",
     "babel-eslint": "^10.0.2",
