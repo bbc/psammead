@@ -4,63 +4,47 @@ import { bool, oneOf, shape, string } from 'prop-types';
 import { scriptPropType } from '@bbc/gel-foundations/prop-types';
 import {
   GEL_GROUP_2_SCREEN_WIDTH_MAX,
-  GEL_GROUP_3_SCREEN_WIDTH_MIN,
   MEDIA_QUERY_TYPOGRAPHY,
 } from '@bbc/gel-foundations/breakpoints';
 import {
-  GEL_SPACING,
-  GEL_SPACING_DBL,
   GEL_SPACING_TRPL,
   GEL_SPACING_QUAD,
 } from '@bbc/gel-foundations/spacings';
-import { getDoublePica } from '@bbc/gel-foundations/typography';
-import { C_EBON, C_PEBBLE, C_WHITE } from '@bbc/psammead-styles/colours';
-import { getSansRegular } from '@bbc/psammead-styles/font-styles';
+import { C_PEBBLE } from '@bbc/psammead-styles/colours';
+import { PlainTitle, LinkTitle } from './titles';
 
-const halfLineHeightRem = group => group.lineHeight / 2 / 16;
+const Bar = styled.div`
+  border-top: 0.0625rem solid ${C_PEBBLE};
+  z-index: -1;
 
-const top = script => `
-  // place at middle of text line height
-  top: ${halfLineHeightRem(script.doublePica.groupA)}rem;
-
-  ${MEDIA_QUERY_TYPOGRAPHY.SMART_PHONE_ONLY} {
-    top: ${halfLineHeightRem(script.doublePica.groupB)}rem;
+  @media screen and (-ms-high-contrast: active) {
+    border-color: windowText;
   }
 
   ${MEDIA_QUERY_TYPOGRAPHY.LAPTOP_AND_LARGER} {
-    top: ${halfLineHeightRem(script.doublePica.groupD)}rem;
+    position: absolute;
+    left: 0;
+    right: 0;
+
+    /* Placing bar at the vertical midpoint of the section title */
+    top: ${({ script }) =>
+      0.5 + script.doublePica.groupD.lineHeight / 2 / 16}rem;
   }
 `;
 
-const Wrapper = styled.div`
+const SectionLabelWrapper = styled.div`
   position: relative;
-  margin-top: ${GEL_SPACING_TRPL};
-  margin-bottom: ${GEL_SPACING_DBL};
+
+  margin-top: ${GEL_SPACING_QUAD};
 
   ${MEDIA_QUERY_TYPOGRAPHY.LAPTOP_AND_LARGER} {
-    margin-top: ${GEL_SPACING_QUAD};
-    margin-bottom: ${GEL_SPACING_TRPL};
+    margin-top: ${GEL_SPACING_TRPL};
   }
-
-  ${({ bar }) =>
-    bar &&
-    css`
-      &::before {
-        content: '';
-        position: absolute;
-        border-top: 0.0625rem solid ${C_PEBBLE};
-        left: 0;
-        right: 0;
-        ${({ script }) => (script ? top(script) : 'top: 0')};
-        @media screen and (-ms-high-contrast: active) {
-          border-color: windowText;
-        }
-      }
-    `}
 
   ${({ visuallyHidden }) =>
     visuallyHidden &&
     css`
+      // Hide when under 600px
       @media (max-width: ${GEL_GROUP_2_SCREEN_WIDTH_MAX}) {
         clip-path: inset(100%);
         clip: rect(1px, 1px, 1px, 1px);
@@ -72,57 +56,60 @@ const Wrapper = styled.div`
     `}
 `;
 
-Wrapper.propTypes = {
-  bar: bool.isRequired,
-  script: shape(scriptPropType).isRequired,
+SectionLabelWrapper.propTypes = {
   visuallyHidden: bool.isRequired,
 };
 
-const paddingDir = ({ dir }) => `padding-${dir === 'ltr' ? 'right' : 'left'}`;
-
-const Title = styled.h2`
-  ${({ script }) => script && getDoublePica(script)};
-  color: ${C_EBON};
-  background-color: ${C_WHITE};
-  ${({ service }) => getSansRegular(service)}
-  display: inline-block;
-  position: relative;
-
-  /* Unset the browser's default margins. */
+const Heading = styled.h2`
+  /* reset default margins */
   margin: 0;
-
-  ${paddingDir}: ${GEL_SPACING};
-
-  @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
-    ${paddingDir}: ${GEL_SPACING_DBL};
-  }
+  padding: 0;
 `;
-
-Title.propTypes = {
-  dir: oneOf(['ltr', 'rtl']).isRequired,
-  script: shape(scriptPropType).isRequired,
-  service: string.isRequired,
-};
 
 const SectionLabel = ({
   bar,
   children: title,
   dir,
+  href,
   labelId,
+  linkText,
   script,
-  visuallyHidden,
   service,
+  visuallyHidden,
 }) => (
-  <Wrapper script={script} bar={bar} visuallyHidden={visuallyHidden}>
-    <Title script={script} dir={dir} id={labelId} service={service}>
-      {title}
-    </Title>
-  </Wrapper>
+  <SectionLabelWrapper visuallyHidden={visuallyHidden}>
+    {bar && <Bar script={script} />}
+    <Heading>
+      {linkText && href ? (
+        <LinkTitle
+          dir={dir}
+          href={href}
+          labelId={labelId}
+          linkText={linkText}
+          script={script}
+          service={service}
+        >
+          {title}
+        </LinkTitle>
+      ) : (
+        <PlainTitle
+          dir={dir}
+          labelId={labelId}
+          script={script}
+          service={service}
+        >
+          {title}
+        </PlainTitle>
+      )}
+    </Heading>
+  </SectionLabelWrapper>
 );
 
 SectionLabel.defaultProps = {
   bar: true,
   dir: 'ltr',
+  href: null,
+  linkText: null,
   visuallyHidden: false,
 };
 
@@ -130,10 +117,12 @@ SectionLabel.propTypes = {
   bar: bool,
   children: string.isRequired,
   dir: oneOf(['ltr', 'rtl']),
+  href: string,
   labelId: string.isRequired,
+  linkText: string,
   script: shape(scriptPropType).isRequired,
-  visuallyHidden: bool,
   service: string.isRequired,
+  visuallyHidden: bool,
 };
 
 export default SectionLabel;

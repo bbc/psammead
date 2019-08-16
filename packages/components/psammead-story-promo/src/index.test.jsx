@@ -5,6 +5,8 @@ import MediaIndicator from '@bbc/psammead-media-indicator';
 import { render } from '@testing-library/react';
 import VisuallyHiddenText from '@bbc/psammead-visually-hidden-text';
 import StoryPromo, { Headline, Summary, Link, LiveLabel } from './index';
+import relatedItems from '../testHelpers/relatedItems';
+import IndexAlsosContainer from '../testHelpers/IndexAlsosContainer';
 
 const Image = <img src="https://foobar.com/image.png" alt="Alt text" />;
 
@@ -19,7 +21,7 @@ const LiveComponent = ({ headline, service }) => (
 );
 
 // eslint-disable-next-line react/prop-types
-const Info = ({ topStory, isLive }) => (
+const Info = ({ topStory, isLive, alsoItems }) => (
   <Fragment>
     <Headline script={latin} topStory={topStory} service="news">
       <Link href="https://www.bbc.co.uk/news">
@@ -34,6 +36,13 @@ const Info = ({ topStory, isLive }) => (
       The summary of the promo
     </Summary>
     <time>12 March 2019</time>
+    {topStory && alsoItems && (
+      <IndexAlsosContainer
+        alsoItems={alsoItems}
+        script={latin}
+        service="news"
+      />
+    )}
   </Fragment>
 );
 
@@ -68,15 +77,31 @@ describe('StoryPromo - Top Story', () => {
     'should render correctly',
     <StoryPromo image={Image} info={Info({ topStory: true })} topStory />,
   );
-});
 
-describe('StoryPromo - Top Story with Media Indicator', () => {
   shouldMatchSnapshot(
-    'should render correctly',
+    'should render with Media Indicator correctly',
     <StoryPromo
       image={Image}
       info={Info({ topStory: true })}
       mediaIndicator={mediaInfo}
+      topStory
+    />,
+  );
+
+  shouldMatchSnapshot(
+    'should render with multiple Index Alsos correctly',
+    <StoryPromo
+      image={Image}
+      info={Info({ topStory: true, alsoItems: relatedItems })}
+      topStory
+    />,
+  );
+
+  shouldMatchSnapshot(
+    'should render with one Index Also correctly',
+    <StoryPromo
+      image={Image}
+      info={Info({ topStory: true, alsoItems: relatedItems[0] })}
       topStory
     />,
   );

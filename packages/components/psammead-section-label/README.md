@@ -18,10 +18,12 @@ The only provided child should be the title for the section, provided as a _stri
 | Argument  | Type | Required | Default | Example |
 | --------- | ---- | -------- | ------- | ------- |
 | bar | boolean | no | `true` | `false` |
-| visuallyHidden | boolean | no | `false ` | `true` |
+| visuallyHidden | boolean | no | `false` | `true` |
 | children | string | yes | N/A | `'Most Read'` |
 | dir | string | no | `'ltr'` | `'rtl'` |
+| href | string | no | `null` | `'https://www.bbc/com/igbo/egwuregwu'`
 | labelId | string | yes | N/A | `top-stories-label` |
+| linkText | string | no | `null` | `'See More'` |
 | script | object | yes | N/A | { canon: { groupA: { fontSize: '28', lineHeight: '32',}, groupB: { fontSize: '32', lineHeight: '36' }, groupD: { fontSize: '44', lineHeight: '48' } }, trafalgar: { groupA: { fontSize: '20', lineHeight: '24' }, groupB: { fontSize: '24', lineHeight: '28' }, groupD: { fontSize: '32', lineHeight: '36' } } } |
 | service | string | yes | N/A | `'news'` |
 
@@ -87,9 +89,32 @@ const WrappingComponent = () => (
 );
 ```
 
+You can even use this component as a link (typically to an index of content related to the section):
+NB. when doing this **both** the `href` **and** the `linkText` must be supplied. If either is missing, the link will not be rendered.
+
+```jsx
+import SectionLabel from '@bbc/psammead-section-label';
+import { latin } from '@bbc/gel-foundations/scripts';
+
+const WrappingComponent = () => (
+  <div aria-labelledby="example-section-label">
+    <SectionLabel
+      script={latin}
+      dir="ltr"
+      href="https://www.bbc.com/news/index"
+      labelId="example-section-label"
+      linkText="See More"
+      service="news"
+    >
+      Example section
+    </SectionLabel>
+  </div>
+);
+```
+
 ### When to use this component
 
-This component should be used to signal the beginning of a grouping of story promos. It should not wrap the story promos or contain any content other than that section's title (aka 'strapline').
+This component should be used to signal the beginning of a grouping of story promos. It should **not** wrap the story promos or contain any content other than that section's title (aka 'strapline').
 
 <!-- ### When not to use this component -->
 
@@ -100,6 +125,8 @@ Although this component has the appearance of a horizontal rule, it does not use
 This component wraps the title string in an `<h2>` element. The `labelId` prop will be applied to the `<h2>` as an `id` attribute, allowing the content of the element to be referenced by an `aria-labelledby` attribute. See the [examples](#usage) above.
 
 Setting the `visuallyHidden` prop to true visually hides this component at widths <600px, however; it will still be available to screen-readers and other assistive technology.
+
+When supplied with an `href` and the `linkText`, the section label contains an `<a>` link, which is `aria-labelledby` the `labelId` described above. The `linkText` is only expected to be useful to visual users, so is marked as `aria-hidden="true"` to prevent announcement to screen readers. This `aria-hidden="true"` isn't strictly required - setting the `aria-labelledby` attribute should prevent screen readers from reading out the `linkText`. However, it adding it makes clear to screen readers and other developers that the `linkText` is designed to be ignored by screen readers.
 
 <!-- ## Roadmap -->
 
