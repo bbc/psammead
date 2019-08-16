@@ -103,7 +103,6 @@ node {
                 notifySlack('danger', 'Aborted', gitCommitAuthor, 'Pipeline was aborted', gitCommitHash, gitCommitMessage, slackChannel)
                 break
               default:
-                echo "Unknown build result: ${currentBuild.result}"
                 notifySlack('danger', 'Unknown', gitCommitAuthor, 'Pipeline has failed', gitCommitHash, gitCommitMessage, slackChannel)
                 break
             }
