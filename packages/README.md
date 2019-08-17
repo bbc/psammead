@@ -1,8 +1,22 @@
 # Psammead Packages Directory...
 
-## Components
+## [Components](.components)
+| Package | Version | Dependencies | Peer Dependencies
+|--------|--------|------------|------------|
 
-## Containers
 
-## Utilities
+## [Containers](.containers)
+| Package | Version | Dependencies | Peer Dependencies
+|--------|--------|------------|------------|
 
+
+## [Utilities](.utilities)
+| Package | Version | Dependencies | Peer Dependencies
+|--------|--------|------------|------------|
+| [`@bbc/gel-foundations`](.utilities/gel-foundations) | ![npm version](https://img.shields.io/npm/v/@bbc/gel-foundations.svg) | ![Dependency Status](https://david-dm.org/bbc/psammead.svg?path=packages/utilities/gel-foundations) | [![peerDependencies Status](https://david-dm.org/bbc/psammead/peer-status.svg?path=packages/utilities/gel-foundations)](https://david-dm.org/bbc/psammead?path=packages/utilities/gel-foundations&type=peer) |
+| [`@bbc/moment-timezone-include`](.utilities/moment-timezone-include) | ![npm version](https://img.shields.io/npm/v/@bbc/moment-timezone-include.svg) | ![Dependency Status](https://david-dm.org/bbc/psammead.svg?path=packages/utilities/moment-timezone-include) | [![peerDependencies Status](https://david-dm.org/bbc/psammead/peer-status.svg?path=packages/utilities/moment-timezone-include)](https://david-dm.org/bbc/psammead?path=packages/utilities/moment-timezone-include&type=peer) |
+| [`@bbc/psammead-assets`](.utilities/psammead-assets) | ![npm version](https://img.shields.io/npm/v/@bbc/psammead-assets.svg) | ![Dependency Status](https://david-dm.org/bbc/psammead.svg?path=packages/utilities/psammead-assets) | [![peerDependencies Status](https://david-dm.org/bbc/psammead/peer-status.svg?path=packages/utilities/psammead-assets)](https://david-dm.org/bbc/psammead?path=packages/utilities/psammead-assets&type=peer) |
+| [`@bbc/psammead-locales`](.utilities/psammead-locales) | ![npm version](https://img.shields.io/npm/v/@bbc/psammead-locales.svg) | ![Dependency Status](https://david-dm.org/bbc/psammead.svg?path=packages/utilities/psammead-locales) | [![peerDependencies Status](https://david-dm.org/bbc/psammead/peer-status.svg?path=packages/utilities/psammead-locales)](https://david-dm.org/bbc/psammead?path=packages/utilities/psammead-locales&type=peer) |
+| [`@bbc/psammead-storybook-helpers`](.utilities/psammead-storybook-helpers) | ![npm version](https://img.shields.io/npm/v/@bbc/psammead-storybook-helpers.svg) | ![Dependency Status](https://david-dm.org/bbc/psammead.svg?path=packages/utilities/psammead-storybook-helpers) | [![peerDependencies Status](https://david-dm.org/bbc/psammead/peer-status.svg?path=packages/utilities/psammead-storybook-helpers)](https://david-dm.org/bbc/psammead?path=packages/utilities/psammead-storybook-helpers&type=peer) |
+| [`@bbc/psammead-styles`](.utilities/psammead-styles) | ![npm version](https://img.shields.io/npm/v/@bbc/psammead-styles.svg) | ![Dependency Status](https://david-dm.org/bbc/psammead.svg?path=packages/utilities/psammead-styles) | [![peerDependencies Status](https://david-dm.org/bbc/psammead/peer-status.svg?path=packages/utilities/psammead-styles)](https://david-dm.org/bbc/psammead?path=packages/utilities/psammead-styles&type=peer) |
+| [`@bbc/psammead-test-helpers`](.utilities/psammead-test-helpers) | ![npm version](https://img.shields.io/npm/v/@bbc/psammead-test-helpers.svg) | ![Dependency Status](https://david-dm.org/bbc/psammead.svg?path=packages/utilities/psammead-test-helpers) | [![peerDependencies Status](https://david-dm.org/bbc/psammead/peer-status.svg?path=packages/utilities/psammead-test-helpers)](https://david-dm.org/bbc/psammead?path=packages/utilities/psammead-test-helpers&type=peer) |
