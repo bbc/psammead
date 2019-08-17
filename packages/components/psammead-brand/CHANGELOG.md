@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 | ------- | ----------- |
+| 4.3.0 | [PR#1794](https://github.com/bbc/psammead/pull/1794) Add david dependency badges |
 | 4.2.6 | [PR#1734](https://github.com/bbc/psammead/pull/1734) Talos - Bump Dependencies |
 | 4.2.5   | [PR#1685](https://github.com/bbc/psammead/pull/1685) Bump dependencies |
 | 4.2.4 | [PR#1682](https://github.com/bbc/psammead/pull/1682) Move all dev dependencies to top level package.json |
