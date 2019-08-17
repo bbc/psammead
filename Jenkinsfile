@@ -14,6 +14,16 @@ def cleanUp() {
 }
 
 node {
+  properties(
+    [
+        buildDiscarder(
+            logRotator(
+                daysToKeepStr: '10',
+                artifactDaysToKeepStr: '10'
+            )
+        )
+    ]
+  )
   timeout(time: 30, unit: 'MINUTES') {
     withEnv([
       'CI=true',
