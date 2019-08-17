@@ -3,12 +3,12 @@
 ## [Components](.components)
 | Package | Version | Dependencies | Peer Dependencies
 |--------|--------|------------|------------|
-
+| [`@bbc/psammead-amp-geo`](.components/psammead-amp-geo) | ![npm version](https://img.shields.io/npm/v/@bbc/psammead-amp-geo.svg) | ![Dependency Status](https://david-dm.org/bbc/psammead.svg?path=packages/components/psammead-amp-geo) | [![peerDependencies Status](https://david-dm.org/bbc/psammead/peer-status.svg?path=packages/components/psammead-amp-geo)](https://david-dm.org/bbc/psammead?path=packages/components/psammead-amp-geo&type=peer) |
 
 ## [Containers](.containers)
 | Package | Version | Dependencies | Peer Dependencies
 |--------|--------|------------|------------|
-
+| [`@bbc/psammead-timestamp-container`](.containers/psammead-timestamp-container) | ![npm version](https://img.shields.io/npm/v/@bbc/psammead-timestamp-container.svg) | ![Dependency Status](https://david-dm.org/bbc/psammead.svg?path=packages/containers/psammead-timestamp-container) | [![peerDependencies Status](https://david-dm.org/bbc/psammead/peer-status.svg?path=packages/containers/psammead-timestamp-container)](https://david-dm.org/bbc/psammead?path=packages/containers/psammead-timestamp-container&type=peer) |
 
 ## [Utilities](.utilities)
 | Package | Version | Dependencies | Peer Dependencies
