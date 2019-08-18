@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 1.2.1 | [PR#1803](https://github.com/bbc/psammead/pull/1803/) Patches broken links on badges in documentation |
 | 1.2.0 | [PR#1794](https://github.com/bbc/psammead/pull/1794) Add david dependency badges |
 | 1.1.5 | [PR#1734](https://github.com/bbc/psammead/pull/1734) Talos - Bump Dependencies |
 | 1.1.4   | [PR#1685](https://github.com/bbc/psammead/pull/1685) Bump dependencies |
