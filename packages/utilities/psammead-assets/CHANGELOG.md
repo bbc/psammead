@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 2.2.1 | [PR#](https://github.com/bbc/psammead/pull/1803/) Patches broken links on badges in documentation |
 | 2.2.0 | [PR#1794](https://github.com/bbc/psammead/pull/1794) Add david dependency badges |
 | 2.1.0 | [PR#1759]https://github.com/bbc/psammead/pull/1759) Add Uzbek SVG & update names for Telugu & Ukrainian. |
 | 2.0.1 | [PR#1682](https://github.com/bbc/psammead/pull/1682) Move all dev dependencies to top level package.json |

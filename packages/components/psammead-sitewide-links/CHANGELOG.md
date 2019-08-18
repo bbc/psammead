@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 3.1.1 | [PR#](https://github.com/bbc/psammead/pull/1803/) Patches broken links on badges in documentation |
 | 3.1.0 | [PR#1794](https://github.com/bbc/psammead/pull/1794) Add david dependency badges |
 | 3.0.5 | [PR#1734](https://github.com/bbc/psammead/pull/1734) Talos - Bump Dependencies |
 | 3.0.4   | [PR#1731](https://github.com/bbc/psammead/pull/1731) Add space after copyright text |

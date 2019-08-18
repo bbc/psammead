@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 2.1.1 | [PR#](https://github.com/bbc/psammead/pull/1803/) Patches broken links on badges in documentation |
 | 2.1.0 | [PR#1794](https://github.com/bbc/psammead/pull/1794) Add david dependency badges |
 | 2.0.3 | [PR#1727](https://github.com/bbc/psammead/pull/1727) Fix for Latha Font URL. |
 | 2.0.2 | [PR#1682](https://github.com/bbc/psammead/pull/1682) Move all dev dependencies to top level package.json |
