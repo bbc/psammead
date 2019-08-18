@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 | ------- | ----------- |
+| 2.5.0 | [PR#1794](https://github.com/bbc/psammead/pull/1794) Add david dependency badges |
 | 2.4.2 | [PR#1734](https://github.com/bbc/psammead/pull/1734) Talos - Bump Dependencies |
 | 2.4.1   | [PR#1685](https://github.com/bbc/psammead/pull/1685) Bump dependencies |
 | 2.4.0 | [PR#1669](https://github.com/bbc/psammead/pull/1669) Add `Index Alsos` support |

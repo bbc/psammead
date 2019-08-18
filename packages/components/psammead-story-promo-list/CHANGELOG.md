@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 | ------- | ----------- |
+| 2.1.0 | [PR#1794](https://github.com/bbc/psammead/pull/1794) Add david dependency badges |
 | 2.0.2 | [PR#1734](https://github.com/bbc/psammead/pull/1734) Talos - Bump Dependencies |
 | 2.0.1   | [PR#1685](https://github.com/bbc/psammead/pull/1685) Bump dependencies |
 | 2.0.0 | [PR#1643](https://github.com/bbc/psammead/pull/1643) Move vertical rhythm out of psammead |
