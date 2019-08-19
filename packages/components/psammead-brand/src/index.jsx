@@ -170,7 +170,13 @@ const Brand = props => {
     >
       {url ? (
         <SvgWrapper>
-          <StyledLink href={url} maxWidth={maxWidth} minWidth={minWidth}>
+          <StyledLink
+            href={url}
+            maxWidth={maxWidth}
+            minWidth={minWidth}
+            className="track-brand"
+            data-info="brand"
+          >
             <StyledBrand {...props} />
           </StyledLink>
         </SvgWrapper>

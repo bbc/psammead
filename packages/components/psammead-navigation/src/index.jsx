@@ -184,7 +184,7 @@ export const NavigationLi = ({
         script={script}
         currentLink="true"
         service={service}
-        data-info={`${link}-${url}`}
+        data-info={`${link.split(' ').join('_')}-${url}`}
       >
         <CurrentLink script={script} currentPageText={currentPageText}>
           {link}

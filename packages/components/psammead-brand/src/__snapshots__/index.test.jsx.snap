@@ -180,7 +180,8 @@ exports[`Brand should render correctly with link provided 1`] = `
     class="c1"
   >
     <a
-      class="c2 c3"
+      class="track-brand c2 c3"
+      data-info="brand"
       href="https://www.bbc.co.uk/news"
     >
       <svg
