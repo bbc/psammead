@@ -2,19 +2,15 @@ const shell = require('shelljs');
 const fsActions = require('./index');
 
 jest.mock('shelljs', () => ({
-  mkdir: jest.fn(),
-  exec: jest.fn(),
+  exec: jest.fn(() => ({ code: 0 })),
 }));
 
-console.log(fsActions.mkDir);
-
-console.log(fsActions.mkDir());
 describe('file system helper tests', () => {
-  it('calls mkdir', () => {
-    shell.mkdir.mockReturnValue = 'hullaballo';
-    expect(fsActions.mkDir()).toEqual('test');
+  it('calls install', () => {
+    expect(fsActions.install('test')).resolves.toEqual(undefined);
   });
-  //   it('calls install', () => {
-  //     expect(fsActions.install('lol')).resolves.toEqual('cheese');
-  //   });
+
+  it('calls installPackage', () => {
+    expect(fsActions.installPackage('test')).resolves.toEqual(undefined);
+  });
 });

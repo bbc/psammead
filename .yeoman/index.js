@@ -1,4 +1,5 @@
 /* eslint-disable max-statements, complexity */
+const shell = require('shelljs');
 const Generator = require('yeoman-generator');
 const chalk = require('chalk');
 const fs = require('fs');
@@ -28,7 +29,7 @@ module.exports = class extends Generator {
     this.log(chalk.blue('Creating your package folder...'));
 
     const destination = `./packages/components/psammead-${this.props.name}`;
-    fsActions.mkDir(destination);
+    shell.mkdir(destination);
     this.destinationRoot(destination);
     this.sourceRoot(`${__dirname}/templates`);
   }

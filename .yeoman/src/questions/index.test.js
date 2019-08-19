@@ -1,4 +1,4 @@
-import questions from './index';
+const questions = require('./index');
 
 describe('question functions', () => {
   it('package name validation works', () => {
