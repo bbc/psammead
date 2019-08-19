@@ -4,7 +4,7 @@ const parseUpgradedPackages = require('./parseUpgradedPackages');
 module.exports = packages => {
   const packageList = packages.join(', ');
   const commands = [
-    `npx npm-check-updates ${packageList} -u -a --jsonUpgraded`,
+    `npx npm-check-updates ${packageList} --packageFile package.json -u -a --jsonUpgraded`,
     `npx lerna exec --parallel --no-bail -- npx npm-check-updates ${packageList} -u -a --jsonUpgraded`,
   ];
 
@@ -17,8 +17,17 @@ module.exports = packages => {
         exec(command, { silent: true }, (code, output) => {
           if (code !== 0) {
             reject(output);
-          } else {
+          } else if (command.includes('lerna')) {
             resolve(parseUpgradedPackages(output));
+          } else {
+            resolve(
+              parseUpgradedPackages(
+                output
+                  .split('/n')
+                  .map(line => `psammead: ${line}`)
+                  .join('/n'),
+              ),
+            );
           }
         });
       }),
