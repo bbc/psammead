@@ -40,7 +40,7 @@ module.exports = [
     message: 'Who should be listed as the author?',
     default: 'Psammead Maintainers',
     validate(answer) {
-      return answer.length > 3 || 'Please enter a valid name';
+      return answer.length > 2 || 'Please enter a valid name';
     },
   },
   {
