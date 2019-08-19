@@ -2,15 +2,21 @@ const shell = require('shelljs');
 const fsActions = require('./index');
 
 jest.mock('shelljs', () => ({
-  exec: jest.fn(() => ({ code: 0 })),
+  exec: jest.fn(),
 }));
 
-describe('file system helper tests', () => {
-  it('calls install', () => {
-    expect(fsActions.install('test')).resolves.toEqual(undefined);
+describe('File system actions', () => {
+  it('should successfully npm install', () => {
+    shell.exec.mockReturnValue({ code: 0, output: 'success' });
+
+    expect(fsActions.install()).toEqual(Promise.resolve('success'));
+    expect(fsActions.installPackage()).toEqual(Promise.resolve('success'));
   });
 
-  it('calls installPackage', () => {
-    expect(fsActions.installPackage('test')).resolves.toEqual(undefined);
+  it('should unsuccessfully npm install', () => {
+    shell.exec.mockReturnValue({ code: 99, output: 'error' });
+
+    expect(fsActions.install()).toEqual(Promise.reject('error'));
+    expect(fsActions.installPackage()).toEqual(Promise.reject('error'));
   });
 });
