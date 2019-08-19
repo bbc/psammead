@@ -14,6 +14,11 @@ def cleanUp() {
 }
 
 node {
+  properties([
+    parameters([
+      string(name: 'TALOS_PACKAGES', defaultValue: '', description: 'Comma seperated list of packages to have talos bump. e.g. "@bbc/psammead-styles,@bbc/psammead-brand"')
+    ])
+  ])
   timeout(time: 30, unit: 'MINUTES') {
     withEnv([
       'CI=true',
@@ -36,22 +41,24 @@ node {
             sh 'make install'
           }
 
-          stage ('Development Tests') {
-            parallel (
-              'App Tests & Code Coverage': {
-                sh 'make code-coverage-before-build'
-                sh 'make test'
-                sh 'make code-coverage-after-build'
-              },
-              'ChromaticQA Tests': {
-                withCredentials([string(credentialsId: 'psammead-chromatic-app-code', variable: 'CHROMATIC_APP_CODE')]) {
-                  sh 'make test-chromatic'
-                }
-              }, failFast: true
-            )
+          if (params.TALOS_PACKAGES == '') {
+            stage ('Development Tests') {
+              parallel (
+                'App Tests & Code Coverage': {
+                  sh 'make code-coverage-before-build'
+                  sh 'make test'
+                  sh 'make code-coverage-after-build'
+                },
+                'ChromaticQA Tests': {
+                  withCredentials([string(credentialsId: 'psammead-chromatic-app-code', variable: 'CHROMATIC_APP_CODE')]) {
+                    sh 'make test-chromatic'
+                  }
+                }, failFast: true
+              )
+            }
           }
 
-          if (env.BRANCH_NAME == 'latest') {
+          if (env.BRANCH_NAME == 'latest' && params.TALOS_PACKAGES == '') {
             stage ('Deploy Storybook & Publish to NPM') {
               parallel (
                 'Deploy Storybook': {
@@ -64,10 +71,12 @@ node {
                 }
               )
             }
+          }
 
+          if (env.BRANCH_NAME == 'latest') {
             stage ('Talos') {
               sh 'git fetch --all'
-              sh 'make talos'
+              sh "npm run talos ${params.TALOS_PACKAGES.replaceAll("[^a-zA-Z0-9._/@,-]+","")}"
             }
           }
         } catch (Throwable e) {
