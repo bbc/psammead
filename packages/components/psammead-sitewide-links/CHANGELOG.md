@@ -3,6 +3,9 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 3.1.2 | [PR#1804](https://github.com/bbc/psammead/pull/1804) Talos - Bump Dependencies |
+| 3.1.1 | [PR#1803](https://github.com/bbc/psammead/pull/1803/) Patches broken links on badges in documentation |
+| 3.1.0 | [PR#1794](https://github.com/bbc/psammead/pull/1794) Add david dependency badges |
 | 3.0.5 | [PR#1734](https://github.com/bbc/psammead/pull/1734) Talos - Bump Dependencies |
 | 3.0.4   | [PR#1731](https://github.com/bbc/psammead/pull/1731) Add space after copyright text |
 | 3.0.3   | [PR#1685](https://github.com/bbc/psammead/pull/1685) Bump dependencies |
