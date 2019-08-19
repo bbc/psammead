@@ -33,8 +33,5 @@ publish:
 	echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" > .npmrc
 	npm run publish
 
-talos:
-	npm run talos;
-
 change-scanner:
 	npm run changeScanner;
