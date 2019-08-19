@@ -14,11 +14,19 @@ def cleanUp() {
 }
 
 node {
-  properties([
-    parameters([
-      string(name: 'TALOS_PACKAGES', defaultValue: '', description: 'Comma seperated list of packages to have talos bump. e.g. "@bbc/psammead-styles,@bbc/psammead-brand"')
-    ])
-  ])
+  properties(
+    [
+        buildDiscarder(
+            logRotator(
+                daysToKeepStr: '10',
+                artifactDaysToKeepStr: '10'
+            )
+        ),
+        parameters([
+          string(name: 'TALOS_PACKAGES', defaultValue: '', description: 'Comma seperated list of packages to have talos bump. e.g. "@bbc/psammead-styles,@bbc/psammead-brand"')
+        ])
+    ]
+  )
   timeout(time: 30, unit: 'MINUTES') {
     withEnv([
       'CI=true',
