@@ -3,6 +3,10 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 2.4.3 | [PR#1805](https://github.com/bbc/psammead/pull/1805) Talos - Bump Dependencies |
+| 2.4.2 | [PR#1804](https://github.com/bbc/psammead/pull/1804) Talos - Bump Dependencies |
+| 2.4.1 | [PR#1803](https://github.com/bbc/psammead/pull/1803/) Patches broken links on badges in documentation |
+| 2.4.0 | [PR#1794](https://github.com/bbc/psammead/pull/1794) Add david dependency badges |
 | 2.3.6 | [PR#1762](https://github.com/bbc/psammead/pull/1762) Talos - Bump Dependencies |
 | 2.3.5 | [PR#1686](https://github.com/bbc/psammead/pull/1686) Bump dependencies |
 | 2.3.4 | [PR#1682](https://github.com/bbc/psammead/pull/1682) Move all dev dependencies to top level package.json |
