@@ -4,7 +4,7 @@ exports.install = () =>
   new Promise((resolve, reject) => {
     const response = shell.exec('npm install --quiet');
     if (response.code === 0) {
-      resolve();
+      resolve(response.output);
     } else {
       reject(response.output);
     }
@@ -15,7 +15,7 @@ exports.installPackage = npmPackage =>
     const response = shell.exec(`npm install ${npmPackage} --quiet`);
 
     if (response.code === 0) {
-      resolve();
+      resolve(response.output);
     } else {
       reject(response.output);
     }
