@@ -1,10 +1,4 @@
 import { testUtilityPackages } from '@bbc/psammead-test-helpers';
-import * as colours from './colours';
-import * as coloursFromSrc from './src/colours';
-import * as detection from './detection';
-import * as detectionFromSrc from './src/detection';
-import * as fonts from './fonts';
-import * as fontsFromSrc from './src/fonts';
 
 const fontsExpectedExports = {
   F_REITH_SERIF_REGULAR: 'string',
@@ -84,26 +78,27 @@ const expectedExports = {
   fonts: fontsExpectedExports,
 };
 
-const actualExports = {
-  colours,
-  detection,
-  fonts,
-};
-
-const actualExportsFromSrc = {
-  colours: coloursFromSrc,
-  detection: detectionFromSrc,
-  fonts: fontsFromSrc,
+const getExports = key => {
+  const exports = {};
+  Object.keys(expectedExports).forEach(expectedExport => {
+    /* eslint-disable global-require, import/no-dynamic-require */
+    const packageJson = require(`./${expectedExport}/package.json`);
+    exports[
+      expectedExport
+    ] = require(`./${expectedExport}/${packageJson[key]}`);
+    /* eslint-enable global-require, import/no-dynamic-require */
+  });
+  return exports;
 };
 
 describe('Psammead styles', () => {
   it('should test all the utility exports exist and are the correct type', () => {
-    testUtilityPackages(actualExports, expectedExports, 'psammead-styles');
+    testUtilityPackages(getExports('main'), expectedExports, 'psammead-styles');
   });
 
   it('should test all the utility exports exist and are the correct type when coming from src/', () => {
     testUtilityPackages(
-      actualExportsFromSrc,
+      getExports('module'),
       expectedExports,
       'psammead-styles',
     );
