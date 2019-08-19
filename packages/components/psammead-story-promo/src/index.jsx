@@ -21,14 +21,14 @@ import {
 } from '@bbc/gel-foundations/typography';
 import {
   C_EBON,
-  C_SHADOW,
   C_METAL,
   C_POSTBOX,
+  C_SHADOW,
 } from '@bbc/psammead-styles/colours';
 import {
   getSansRegular,
-  getSerifBold,
   getSansBold,
+  getSerifMedium,
 } from '@bbc/psammead-styles/font-styles';
 import { grid } from '@bbc/psammead-styles/detection';
 
@@ -151,7 +151,7 @@ export const Headline = styled.h3`
   }}
 
   color: ${C_EBON};
-  ${({ service }) => getSerifBold(service)}
+  ${({ service }) => getSerifMedium(service)}
   margin: 0; /* Reset */
   padding-bottom: ${GEL_SPACING};
   @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
@@ -230,6 +230,9 @@ const TextGridItem = styled.div`
   }
 `;
 
+/*
+ *  Link
+ */
 export const Link = styled.a`
   position: static;
   color: ${C_EBON};
@@ -257,6 +260,9 @@ export const Link = styled.a`
   }
 `;
 
+/*
+ *  Live Label
+ */
 export const LiveLabel = styled.span.attrs({ 'aria-hidden': 'true' })`
   color: ${C_POSTBOX};
   ${({ service }) => getSansBold(service)}
@@ -274,6 +280,9 @@ LiveLabel.defaultProps = {
   dir: 'ltr',
 };
 
+/*
+ *  Story Promo
+ */
 const StoryPromo = ({ image, info, mediaIndicator, topStory }) => (
   <StoryPromoWrapper>
     <ImageGridItem topStory={topStory}>

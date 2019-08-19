@@ -1,6 +1,6 @@
 {
   "name": "@bbc/psammead-assets/svgs",
-  "private": "true",
+  "private": true,
   "main": "../dist/svgs",
   "module": "../esm/svgs",
   "sideEffects": false
