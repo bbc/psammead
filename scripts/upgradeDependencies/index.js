@@ -1,6 +1,26 @@
 const { exec } = require('shelljs');
 const parseUpgradedPackages = require('./parseUpgradedPackages');
 
+const getPromiseFromCommand = command =>
+  new Promise((resolve, reject) => {
+    exec(command, { silent: true }, (code, output) => {
+      if (code !== 0) {
+        reject(output);
+      } else if (command.includes('lerna')) {
+        resolve(parseUpgradedPackages(output));
+      } else {
+        resolve(
+          parseUpgradedPackages(
+            output
+              .split('/n')
+              .map(line => `psammead: ${line}`)
+              .join('/n'),
+          ),
+        );
+      }
+    });
+  });
+
 module.exports = packages => {
   const packageList = packages.join(', ');
   const commands = [
@@ -11,27 +31,7 @@ module.exports = packages => {
   // eslint-disable-next-line no-console
   console.log(`* Running "${commands.join(' && ')}"`);
 
-  const commandPromises = commands.map(
-    command =>
-      new Promise((resolve, reject) => {
-        exec(command, { silent: true }, (code, output) => {
-          if (code !== 0) {
-            reject(output);
-          } else if (command.includes('lerna')) {
-            resolve(parseUpgradedPackages(output));
-          } else {
-            resolve(
-              parseUpgradedPackages(
-                output
-                  .split('/n')
-                  .map(line => `psammead: ${line}`)
-                  .join('/n'),
-              ),
-            );
-          }
-        });
-      }),
-  );
+  const commandPromises = commands.map(getPromiseFromCommand);
 
   return Promise.all(commandPromises).then(outputs => {
     return Promise.resolve([].concat(...outputs));
