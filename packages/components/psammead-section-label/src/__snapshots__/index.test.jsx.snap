@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`SectionLabel When hideSectionHeader is true should add styling to hide SectionLabel when width of screen is less than 600 px 1`] = `
+exports[`SectionLabel When hideSectionHeader is true should add styling to hide SectionLabel when width of screen is less than 1280 px 1`] = `
 .c2 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -91,7 +91,7 @@ exports[`SectionLabel When hideSectionHeader is true should add styling to hide 
   }
 }
 
-@media (max-width:37.4375rem) {
+@media (max-width:80rem) {
   .c0 {
     -webkit-clip-path: inset(100%);
     clip-path: inset(100%);

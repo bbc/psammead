@@ -3,7 +3,7 @@ import styled, { css } from 'styled-components';
 import { bool, oneOf, shape, string } from 'prop-types';
 import { scriptPropType } from '@bbc/gel-foundations/prop-types';
 import {
-  GEL_GROUP_2_SCREEN_WIDTH_MAX,
+  GEL_GROUP_5_SCREEN_WIDTH_MIN,
   MEDIA_QUERY_TYPOGRAPHY,
 } from '@bbc/gel-foundations/breakpoints';
 import {
@@ -44,8 +44,8 @@ const SectionLabelWrapper = styled.div`
   ${({ visuallyHidden }) =>
     visuallyHidden &&
     css`
-      // Hide when under 600px
-      @media (max-width: ${GEL_GROUP_2_SCREEN_WIDTH_MAX}) {
+      // Hide when under 1280px
+      @media (max-width: ${GEL_GROUP_5_SCREEN_WIDTH_MIN}) {
         clip-path: inset(100%);
         clip: rect(1px, 1px, 1px, 1px);
         height: 1px;
