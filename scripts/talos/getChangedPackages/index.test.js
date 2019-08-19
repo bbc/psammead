@@ -1,17 +1,23 @@
 import * as fs from 'fs';
 import getChangedPackages from '.';
 
+const originalProcessArgv = process.argv;
+
 jest.mock('fs', () => ({
   existsSync: jest.fn(),
   readFileSync: jest.fn(),
 }));
 
-fs.existsSync.mockImplementation(() => true);
-fs.readFileSync.mockImplementation(() => '@bbc/apples,@bbc/pears,');
-
 describe('getChangedPackages', () => {
   beforeEach(() => {
     jest.clearAllMocks();
+    fs.existsSync.mockImplementation(() => true);
+    fs.readFileSync.mockImplementation(() => '@bbc/apples,@bbc/pears,');
+    process.argv = ['/User/bob/thin/node', 'file.js'];
+  });
+
+  afterEach(() => {
+    process.argv = originalProcessArgv;
   });
 
   it('should return an array of packages', async () => {
@@ -47,5 +53,23 @@ describe('getChangedPackages', () => {
     expect(packages).toEqual([]);
 
     expect(fs.readFileSync).not.toHaveBeenCalled();
+  });
+
+  it('should return an array of packages from argument when provided', async () => {
+    process.argv.push('@bbc/pie,@bbc/cake,');
+
+    const packages = getChangedPackages();
+
+    expect(packages).toEqual(['@bbc/pie', '@bbc/cake']);
+    expect(fs.readFileSync).not.toHaveBeenCalled();
+  });
+
+  it('should return an array of packages from file when argument is empty string', async () => {
+    process.argv.push('');
+
+    const packages = getChangedPackages();
+
+    expect(packages).toEqual(['@bbc/apples', '@bbc/pears']);
+    expect(fs.readFileSync).toHaveBeenCalledWith('published.txt');
   });
 });

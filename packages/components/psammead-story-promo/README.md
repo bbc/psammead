@@ -1,4 +1,4 @@
-# psammead-story-promo - [![Known Vulnerabilities](https://snyk.io/test/github/bbc/psammead/badge.svg?targetFile=packages%2Fcomponents%2Fpsammead-story-promo%2Fpackage.json)](https://snyk.io/test/github/bbc/psammead?targetFile=packages%2Fcomponents%2Fpsammead-story-promo%2Fpackage.json) [![Storybook](https://raw.githubusercontent.com/storybooks/story-promo/master/badge/badge-storybook.svg?sanitize=true)](https://bbc.github.io/psammead/?path=/story/story-promo--default) [![GitHub license](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](https://github.com/bbc/psammead/blob/latest/LICENSE) [![npm version](https://img.shields.io/npm/v/@bbc/psammead-story-promo.svg)](https://www.npmjs.com/package/@bbc/psammead-story-promo) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/bbc/psammead/blob/latest/CONTRIBUTING.md)
+# psammead-story-promo - [![Known Vulnerabilities](https://snyk.io/test/github/bbc/psammead/badge.svg?targetFile=packages%2Fcomponents%2Fpsammead-story-promo%2Fpackage.json)](https://snyk.io/test/github/bbc/psammead?targetFile=packages%2Fcomponents%2Fpsammead-story-promo%2Fpackage.json) [![Dependency Status](https://david-dm.org/bbc/psammead.svg?path=packages/components/psammead-story-promo-list)](https://david-dm.org/bbc/psammead?path=packages/components/psammead-story-promo-list) [![peerDependencies Status](https://david-dm.org/bbc/psammead/peer-status.svg?path=packages/components/psammead-story-promo-list)](https://david-dm.org/bbc/psammead?path=packages/components/psammead-story-promo-list&type=peer) [![Storybook](https://raw.githubusercontent.com/storybooks/story-promo/master/badge/badge-storybook.svg?sanitize=true)](https://bbc.github.io/psammead/?path=/story/story-promo--default) [![GitHub license](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](https://github.com/bbc/psammead/blob/latest/LICENSE) [![npm version](https://img.shields.io/npm/v/@bbc/psammead-story-promo.svg)](https://www.npmjs.com/package/@bbc/psammead-story-promo) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/bbc/psammead/blob/latest/CONTRIBUTING.md)
 
 ## Description
 
@@ -41,10 +41,59 @@ The `LiveLabel` component is to be used inside a `Link` in index pages to show a
 ### Props
 
 <!-- prettier-ignore -->
-| Argument  | Type | Required | Default | Example |
-| --------- | ---- | -------- | ------- | ------- |
-| service | string | yes | N/A | `'news'` |
-| dir | string | no | `'ltr'`| `'rtl'` |
+| Argument | Type   | Required | Default | Example  |
+| -------- | ------ | -------- | ------- | -------- |
+| service  | string | yes      | N/A     | `'news'` |
+| dir      | string | no       | `'ltr'` | `'rtl'`  |
+
+## IndexAlsos
+
+The Index Alsos are links to stories that are related to the top story.
+
+Within the `IndexAlsos` component there is a Visually Hidden level 4 heading, which announces text passed as prop.
+
+When there are more than one Index Alsos, they should be wrapped in a list item `IndexAlsosLi` within an unordered list `IndexAlsosUl` with the role `listitem` and `list` respectively.
+
+On the other hand, when there is exactly one Index Also, it should use the `IndexAlso` component and it should not be contained within a list.
+
+### Props
+
+#### IndexAlsos Props
+
+<!-- prettier-ignore -->
+| Argument | Type | Required | Default | Example        |
+| -------- | ---- | -------- | ------- | -------------- |
+| children | node | yes      | N/A     | `<IndexAlsosUl><IndexAlsosLi script={latin} service="news" url="https://www.bbc.co.uk/news" mediaIndicator={<MediaIndicator service="news" type="video" indexAlsos/>}>Related content 1</IndexAlsosLi><IndexAlsosLi script={latin} service="news" url="https://www.bbc.co.uk/news">Related content 2</IndexAlsosLi></IndexAlsosUl>`|
+| offScreenText | string | no | null | `Related content` |
+
+#### IndexAlsoUl Props
+
+<!-- prettier-ignore -->
+| Argument | Type | Required | Default | Example        |
+| -------- | ---- | -------- | ------- | -------------- |
+| children | node | yes      | N/A     | `<IndexAlsosLi script={latin} service="news" url="https://www.bbc.co.uk/news" mediaIndicator={<MediaIndicator service="news" type="video" indexAlsos/>}>Related content 1</IndexAlsosLi><IndexAlsosLi script={latin} service="news url="https://www.bbc.co.uk/news">Related content 2</IndexAlsosLi>`|
+
+#### IndexAlsoLi Props
+
+<!-- prettier-ignore -->
+| Argument       | Type   | Required | Default | Example  |
+| -------------- | ------ | -------- | ------- | -------- |
+| children       | node   | yes      | N/A     | `This is a headline` |
+| script         | object | yes      | latin | { canon: { groupA: { fontSize: '28', lineHeight: '32',}, groupB: { fontSize: '32', lineHeight: '36', }, groupD: { fontSize: '44', lineHeight: '48', }, }, trafalgar: { groupA: { fontSize: '20', lineHeight: '24', }, groupB: { fontSize: '24', lineHeight: '28', }, groupD: { fontSize: '32', lineHeight: '36', }, }, }|
+| service        | string | yes      | N/A     | `'news'`|
+| url            | string | yes      | N/A     | `'https://www.bbc.co.uk/news'`|
+| mediaIndicator | node   | no       | null    | `<MediaIndicator service="news" type="video" indexAlsos/>` |
+
+#### IndexAlso Props
+
+<!-- prettier-ignore -->
+| Argument       | Type   | Required | Default | Example  |
+| -------------- | ------ | -------- | ------- | -------- |
+| children       | node   | yes      | N/A     | `This is a headline` |
+| script         | object | yes      | latin | { canon: { groupA: { fontSize: '28', lineHeight: '32',}, groupB: { fontSize: '32', lineHeight: '36', }, groupD: { fontSize: '44', lineHeight: '48', }, }, trafalgar: { groupA: { fontSize: '20', lineHeight: '24', }, groupB: { fontSize: '24', lineHeight: '28', }, groupD: { fontSize: '32', lineHeight: '36', }, }, }|
+| service        | string | yes      | N/A     | `'news'`|
+| url            | string | yes      | N/A     | `'https://www.bbc.co.uk/news'`|
+| mediaIndicator | node   | no       | null    | `<MediaIndicator service="news" type="video" indexAlsos/>` |
 
 ## Usage
 
@@ -61,9 +110,14 @@ import StoryPromo, {
   Summary,
   Link,
   LiveLabel,
+  IndexAlsos,
+  IndexAlso,
+  IndexAlsosUl,
+  IndexAlsosLi,
 } from '@bbc/psammead-story-promo';
+import MediaIndicator from '@bbc/psammead-media-indicator';
 import { latin } from '@bbc/gel-foundations/scripts';
-import VisuallyHiddenText from "@bbc/psammead-visually-hidden-text'
+import VisuallyHiddenText from '@bbc/psammead-visually-hidden-text';
 
 const Image = <img src="https://foobar.com/image.jpg" />;
 
@@ -77,19 +131,60 @@ const LiveComponent = ({ headline, service, dir }) => (
   </span>
 );
 
-const Info = ({ isLive }) => (
+const IndexAlsosComponent = ({ alsoItems, script, service }) => (
+  //This example doesn't show how the alsoItems are destructured to get the respective data
+  <IndexAlsos offScreenText="Related content">
+    {alsoItems.length > 1 ? (
+      <IndexAlsosUl>
+        <IndexAlsosLi
+          script={script}
+          service={service}
+          url="https://www.bbc.co.uk/news"
+          mediaIndicator={
+            <MediaIndicator service={service} type="video" indexAlsos />
+          }
+        >
+          Related text 1
+        </IndexAlsosLi>
+        <IndexAlsosLi
+          script={script}
+          service={service}
+          url="https://www.bbc.co.uk/news"
+        >
+          Related text 2
+        </IndexAlsosLi>
+      </IndexAlsosUl>
+    ) : (
+      <IndexAlso>Related text</IndexAlso>
+    )}
+  </IndexAlsos>
+);
+
+const Info = ({ isLive, alsoItems }) => (
   <Fragment>
     <Headline script={latin} topStory={true} service="news">
       <Link href="https://www.bbc.co.uk/news">
         {isLive ? (
-          <LiveComponent service="news" headline="The headline of the live promo" />
-        ): 'The headline of the promo'}
+          <LiveComponent
+            service="news"
+            headline="The headline of the live promo"
+          />
+        ) : (
+          'The headline of the promo'
+        )}
       </Link>
     </Headline>
     <Summary script={latin} topStory={true} service="news">
       The summary of the promo
     </Summary>
     <time>12 March 2019</time>
+    {topStory && alsoItems && (
+      <IndexAlsosComponent
+        alsoItems={alsoItems}
+        script={latin}
+        service="news"
+      />
+    )}
   </Fragment>
 );
 
