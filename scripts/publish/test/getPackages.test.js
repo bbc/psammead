@@ -4,31 +4,36 @@ describe(`Publish Script - getPackages`, () => {
     jest.resetModules();
   });
 
-  it('returns array of packages with two packages found', () => {
+  it('returns array of packages with the root package and two other packages found', () => {
     jest.mock('shelljs', () => ({
       exec: () => ({
-        stdout: '/foobar/directory/package1\n/foobar/directory/package2',
+        stdout:
+          '/foobar/directory/packages/package1\n/foobar/directory/packages/package2',
       }),
     }));
 
     const getPackages = require('../../utilities/getPackages');
 
     expect(getPackages()).toEqual([
-      '/foobar/directory/package1',
-      '/foobar/directory/package2',
+      '/foobar/directory',
+      '/foobar/directory/packages/package1',
+      '/foobar/directory/packages/package2',
     ]);
   });
 
-  it('returns array of packages with one packages found', () => {
+  it('returns array of packages with the root package and one other package found', () => {
     jest.mock('shelljs', () => ({
       exec: () => ({
-        stdout: '/foobar/directory/package1',
+        stdout: '/foobar/directory/packages/package1',
       }),
     }));
 
     const getPackages = require('../../utilities/getPackages');
 
-    expect(getPackages()).toEqual(['/foobar/directory/package1']);
+    expect(getPackages()).toEqual([
+      '/foobar/directory',
+      '/foobar/directory/packages/package1',
+    ]);
   });
 
   it('returns empty array when no packages are found', () => {

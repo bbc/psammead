@@ -13,6 +13,7 @@ describe('getPackages', () => {
   it("should return array of all package's paths", () => {
     const actual = getPackages();
     const expected = [
+      '/psammead',
       '/psammead/packages/components/psammead-brand',
       '/psammead/packages/components/psammead-image',
     ];
