@@ -73,7 +73,7 @@ const ImageGridColumnsTopStory = css`
   }
 
   @media (min-width: ${GEL_GROUP_5_SCREEN_WIDTH_MIN}) {
-    grid-column: 1 / span 4;
+    grid-column: 1 / span 5;
   }
 `;
 
@@ -184,7 +184,7 @@ const TextGridColumnsTopStory = css`
   }
 
   @media (min-width: ${GEL_GROUP_5_SCREEN_WIDTH_MIN}) {
-    grid-column: 5 / span 8;
+    grid-column: 6 / span 7;
   }
 `;
 
