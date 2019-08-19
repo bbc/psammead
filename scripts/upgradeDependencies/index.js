@@ -3,7 +3,7 @@ const parseUpgradedPackages = require('./parseUpgradedPackages');
 
 module.exports = packages => {
   const packageList = packages.join(', ');
-  const command = `npx lerna exec --parallel --no-bail -- npx npm-check-updates ${packageList} -u -a --jsonUpgraded`;
+  const command = `npx npm-check-updates ${packageList} -u -a --jsonUpgraded && npx lerna exec --parallel --no-bail -- npx npm-check-updates ${packageList} -u -a --jsonUpgraded`;
 
   // eslint-disable-next-line no-console
   console.log(`* Running "${command}"`);
