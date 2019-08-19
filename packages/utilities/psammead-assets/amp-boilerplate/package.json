@@ -1,6 +1,6 @@
 {
   "name": "@bbc/psammead-assets/amp-boilerplate",
-  "private": "true",
+  "private": true,
   "main": "../dist/amp-boilerplate",
   "module": "../esm/amp-boilerplate",
   "sideEffects": false
