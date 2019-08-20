@@ -10,7 +10,9 @@ module.exports = async ({ config, mode }) => {
     ),
   };
 
-  config.mode = 'production';
+  if (process.env.FIX_STORYBOOK_IE11 === 'true') {
+    config.mode = 'production';
+  }
 
   return config;
 };
