@@ -10,5 +10,7 @@ module.exports = async ({ config, mode }) => {
     ),
   };
 
+  config.mode = 'production';
+
   return config;
 };
