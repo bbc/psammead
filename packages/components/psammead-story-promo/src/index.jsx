@@ -32,7 +32,7 @@ import {
 } from '@bbc/psammead-styles/font-styles';
 import { grid } from '@bbc/psammead-styles/detection';
 
-export * as IndexAlsos from './IndexAlsos';
+export * from './IndexAlsos';
 
 const twoOfSixColumnsMaxWidthScaleable = `33.33%`;
 // (2 / 6) * 100 = 0.3333333333 = 33.33%

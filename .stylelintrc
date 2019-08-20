@@ -8,8 +8,7 @@
       "stylelint-processor-styled-components", {
         "parserPlugins": [
           "jsx",
-          "exportDefaultFrom",
-          "exportNamespaceFrom"
+          "exportDefaultFrom"
         ]
       }
     ],

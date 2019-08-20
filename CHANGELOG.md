@@ -3,7 +3,6 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
-| 1.5.3 | [PR#1832](https://github.com/bbc/psammead/pull/1832) Add @babel/plugin-proposal-export-namespace-from to babel plugins |
 | 1.5.2 | [PR#1751](https://github.com/bbc/psammead/pull/1751) Bump storybook-readme to 5.0.8 from 5.0.6 to fix vulnerability |
 | 1.5.1 | [PR#1687](https://github.com/bbc/psammead/pull/1686) Bump psammead package dependencies |
 | 1.5.0 | [PR#1682](https://github.com/bbc/psammead/pull/1682) Move all dev dependencies to top level package.json |
