@@ -547,6 +547,53 @@ exports[`StoryPromo - Top Story should render with multiple Index Alsos correctl
   margin: 0;
 }
 
+.c7 {
+  position: relative;
+  z-index: 2;
+  padding: 1rem 0 0.5rem;
+}
+
+.c10 {
+  border-top: 1px solid #F2F2F2;
+  padding: 0.5rem 0;
+}
+
+.c9 {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.c12 {
+  padding-right: 0.5rem;
+}
+
+.c15 {
+  display: inline;
+  vertical-align: middle;
+}
+
+.c11 {
+  font-size: 0.875rem;
+  line-height: 1.125rem;
+  font-family: ReithSerif,Helvetica,Arial,sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  color: #222222;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c11:hover,
+.c11:focus {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.c11:visited {
+  color: #6E6E73;
+}
+
 .c0 {
   position: relative;
 }
@@ -621,51 +668,25 @@ exports[`StoryPromo - Top Story should render with multiple Index Alsos correctl
   color: #6E6E73;
 }
 
-.c7 {
-  position: relative;
-  z-index: 2;
-  padding: 1rem 0 0.5rem;
+@media (min-width:37.5rem) {
+  .c7 {
+    display: none;
+    visibility: hidden;
+  }
 }
 
-.c10 {
-  border-top: 1px solid #F2F2F2;
-  padding: 0.5rem 0;
+@media (min-width:20rem) and (max-width:37.4375rem) {
+  .c11 {
+    font-size: 0.875rem;
+    line-height: 1.125rem;
+  }
 }
 
-.c9 {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-}
-
-.c12 {
-  padding-right: 0.5rem;
-}
-
-.c15 {
-  display: inline;
-  vertical-align: middle;
-}
-
-.c11 {
-  font-size: 0.875rem;
-  line-height: 1.125rem;
-  font-family: ReithSerif,Helvetica,Arial,sans-serif;
-  font-weight: 500;
-  font-style: normal;
-  color: #222222;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-}
-
-.c11:hover,
-.c11:focus {
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-}
-
-.c11:visited {
-  color: #6E6E73;
+@media (min-width:37.5rem) {
+  .c11 {
+    font-size: 0.8125rem;
+    line-height: 1rem;
+  }
 }
 
 @supports (grid-template-columns:fit-content(200px)) {
@@ -770,27 +791,6 @@ exports[`StoryPromo - Top Story should render with multiple Index Alsos correctl
     width: initial;
     padding: initial;
     grid-column: 1 / span 6;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c7 {
-    display: none;
-    visibility: hidden;
-  }
-}
-
-@media (min-width:20rem) and (max-width:37.4375rem) {
-  .c11 {
-    font-size: 0.875rem;
-    line-height: 1.125rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c11 {
-    font-size: 0.8125rem;
-    line-height: 1rem;
   }
 }
 
@@ -935,6 +935,47 @@ exports[`StoryPromo - Top Story should render with one Index Also correctly 1`] 
   margin: 0;
 }
 
+.c7 {
+  position: relative;
+  z-index: 2;
+  padding: 1rem 0 0.5rem;
+}
+
+.c9 {
+  border-top: 1px solid #F2F2F2;
+  padding: 0.5rem 0;
+}
+
+.c11 {
+  padding-right: 0.5rem;
+}
+
+.c14 {
+  display: inline;
+  vertical-align: middle;
+}
+
+.c10 {
+  font-size: 0.875rem;
+  line-height: 1.125rem;
+  font-family: ReithSerif,Helvetica,Arial,sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  color: #222222;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c10:hover,
+.c10:focus {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.c10:visited {
+  color: #6E6E73;
+}
+
 .c0 {
   position: relative;
 }
@@ -1009,45 +1050,25 @@ exports[`StoryPromo - Top Story should render with one Index Also correctly 1`] 
   color: #6E6E73;
 }
 
-.c7 {
-  position: relative;
-  z-index: 2;
-  padding: 1rem 0 0.5rem;
+@media (min-width:37.5rem) {
+  .c7 {
+    display: none;
+    visibility: hidden;
+  }
 }
 
-.c9 {
-  border-top: 1px solid #F2F2F2;
-  padding: 0.5rem 0;
+@media (min-width:20rem) and (max-width:37.4375rem) {
+  .c10 {
+    font-size: 0.875rem;
+    line-height: 1.125rem;
+  }
 }
 
-.c11 {
-  padding-right: 0.5rem;
-}
-
-.c14 {
-  display: inline;
-  vertical-align: middle;
-}
-
-.c10 {
-  font-size: 0.875rem;
-  line-height: 1.125rem;
-  font-family: ReithSerif,Helvetica,Arial,sans-serif;
-  font-weight: 500;
-  font-style: normal;
-  color: #222222;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-}
-
-.c10:hover,
-.c10:focus {
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-}
-
-.c10:visited {
-  color: #6E6E73;
+@media (min-width:37.5rem) {
+  .c10 {
+    font-size: 0.8125rem;
+    line-height: 1rem;
+  }
 }
 
 @supports (grid-template-columns:fit-content(200px)) {
@@ -1152,27 +1173,6 @@ exports[`StoryPromo - Top Story should render with one Index Also correctly 1`] 
     width: initial;
     padding: initial;
     grid-column: 1 / span 6;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c7 {
-    display: none;
-    visibility: hidden;
-  }
-}
-
-@media (min-width:20rem) and (max-width:37.4375rem) {
-  .c10 {
-    font-size: 0.875rem;
-    line-height: 1.125rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c10 {
-    font-size: 0.8125rem;
-    line-height: 1rem;
   }
 }
 
