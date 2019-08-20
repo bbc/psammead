@@ -1,0 +1,161 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Media Player: AMP Entry renders a landscape container with an amp-iframe and nested amp-img 1`] = `
+.c0 {
+  padding-top: 56.25%;
+  position: relative;
+  overflow: hidden;
+}
+
+<div
+  class="c0"
+  orientation="Landscape"
+>
+  <amp-iframe
+    allowfullscreen="true"
+    frameborder="0"
+    layout="fill"
+    sandbox="allow-scripts allow-same-origin"
+    src="http://foo.bar/iframe/amp"
+  >
+    <amp-img
+      layout="fill"
+      placeholder="true"
+      src="http://foo.bar/placeholder.png"
+    />
+  </amp-iframe>
+</div>
+`;
+
+exports[`Media Player: AMP Entry renders a portrait container with amp-iframe and nested amp-img 1`] = `
+.c0 {
+  padding-top: 177.78%;
+  position: relative;
+  overflow: hidden;
+}
+
+<div
+  class="c0"
+  orientation="Portrait"
+>
+  <amp-iframe
+    allowfullscreen="true"
+    frameborder="0"
+    layout="fill"
+    sandbox="allow-scripts allow-same-origin"
+    src="http://foo.bar/iframe/amp"
+  >
+    <amp-img
+      layout="fill"
+      placeholder="true"
+      src="http://foo.bar/placeholder.png"
+    />
+  </amp-iframe>
+</div>
+`;
+
+exports[`Media Player: Canonical Entry renders a landscape container with a placeholder image 1`] = `
+.c2 {
+  display: block;
+  width: 100%;
+  visibility: visible;
+}
+
+.c1 {
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.c0 {
+  padding-top: 56.25%;
+  position: relative;
+  overflow: hidden;
+}
+
+<div
+  class="c0"
+  orientation="Landscape"
+>
+  <div
+    class="c1"
+  >
+    <img
+      alt="Image Alt"
+      class="c2"
+      src="http://foo.bar/placeholder.png"
+    />
+  </div>
+</div>
+`;
+
+exports[`Media Player: Canonical Entry renders a portrait container with a placeholder image 1`] = `
+.c2 {
+  display: block;
+  width: 100%;
+  visibility: visible;
+}
+
+.c1 {
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.c0 {
+  padding-top: 177.78%;
+  position: relative;
+  overflow: hidden;
+}
+
+<div
+  class="c0"
+  orientation="Portrait"
+>
+  <div
+    class="c1"
+  >
+    <img
+      alt="Image Alt"
+      class="c2"
+      src="http://foo.bar/placeholder.png"
+    />
+  </div>
+</div>
+`;
+
+exports[`Media Player: Canonical Entry renders an iframe when showPlaceholder is false 1`] = `
+.c1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  overflow: hidden;
+}
+
+.c0 {
+  padding-top: 56.25%;
+  position: relative;
+  overflow: hidden;
+}
+
+<div
+  class="c0"
+  orientation="Landscape"
+>
+  <iframe
+    allow="autoplay; fullscreen"
+    class="c1"
+    scrolling="no"
+    src="http://foo.bar/iframe"
+  />
+</div>
+`;
