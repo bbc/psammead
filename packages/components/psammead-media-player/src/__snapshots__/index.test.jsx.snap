@@ -9,7 +9,6 @@ exports[`Media Player: AMP Entry renders a landscape container with an amp-ifram
 
 <div
   class="c0"
-  orientation="Landscape"
 >
   <amp-iframe
     allowfullscreen="true"
@@ -36,7 +35,6 @@ exports[`Media Player: AMP Entry renders a portrait container with amp-iframe an
 
 <div
   class="c0"
-  orientation="Portrait"
 >
   <amp-iframe
     allowfullscreen="true"
@@ -78,7 +76,6 @@ exports[`Media Player: Canonical Entry renders a landscape container with a plac
 
 <div
   class="c0"
-  orientation="Landscape"
 >
   <div
     class="c1"
@@ -116,7 +113,6 @@ exports[`Media Player: Canonical Entry renders a portrait container with a place
 
 <div
   class="c0"
-  orientation="Portrait"
 >
   <div
     class="c1"
@@ -149,7 +145,6 @@ exports[`Media Player: Canonical Entry renders an iframe when showPlaceholder is
 
 <div
   class="c0"
-  orientation="Landscape"
 >
   <iframe
     allow="autoplay; fullscreen"

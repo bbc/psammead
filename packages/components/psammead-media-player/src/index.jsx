@@ -8,8 +8,8 @@ import Canonical from './Canonical';
 const landscapeRatio = '56.25%'; // (9/16)*100 = 16:9
 const portraitRatio = '177.78%'; // (16/9)*100 = 9:16
 const StyledContainer = styled.div`
-  padding-top: ${({ orientation }) =>
-    orientation === 'Portrait' ? portraitRatio : landscapeRatio};
+  padding-top: ${({ frameOrientation }) =>
+    frameOrientation === 'Portrait' ? portraitRatio : landscapeRatio};
   position: relative;
   overflow: hidden;
 `;
@@ -24,7 +24,7 @@ export const CanonicalMediaPlayer = ({
   const handlePlaceholderClick = () => setPlaceholderActive(false);
 
   return (
-    <StyledContainer orientation={orientation}>
+    <StyledContainer frameOrientation={orientation}>
       {placeholderActive ? (
         <Placeholder onClick={handlePlaceholderClick} src={placeholderSrc} />
       ) : (
@@ -35,7 +35,7 @@ export const CanonicalMediaPlayer = ({
 };
 
 export const AmpMediaPlayer = ({ placeholderSrc, orientation, src }) => (
-  <StyledContainer orientation={orientation}>
+  <StyledContainer frameOrientation={orientation}>
     <Amp placeholderSrc={placeholderSrc} src={src} />
   </StyledContainer>
 );
