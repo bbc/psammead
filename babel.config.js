@@ -34,6 +34,7 @@ module.exports = {
       },
     ],
     '@babel/plugin-proposal-export-default-from',
+    '@babel/plugin-proposal-export-namespace-from',
   ],
   presets,
   env: {
