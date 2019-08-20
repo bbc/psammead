@@ -27,5 +27,8 @@
   "peerDependencies": {
     "react": "^16.8.6",
     "styled-components": "^4.3.2"
+  },
+  "dependencies": {
+    "@bbc/psammead-image": "^1.2.1"
   }
 }
