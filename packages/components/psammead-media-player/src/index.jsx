@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import styled from 'styled-components';
 import { string, bool, oneOf } from 'prop-types';
 import Placeholder from './Placeholder';
+import Amp from './Amp';
 import Canonical from './Canonical';
 
 const landscapeRatio = '56.25%'; // (9/16)*100 = 16:9
@@ -12,6 +13,14 @@ const StyledContainer = styled.div`
   position: relative;
   overflow: hidden;
 `;
+
+const renderPlayer = ({ isAmp, placeholderSrc, src }) => {
+  return isAmp ? (
+    <Amp placeholderSrc={placeholderSrc} src={src} />
+  ) : (
+    <Canonical src={src} />
+  );
+};
 
 const MediaPlayer = ({
   showPlaceholder,
@@ -31,7 +40,7 @@ const MediaPlayer = ({
       {placeholderActive ? (
         <Placeholder onClick={handlePlaceholderClick} src={placeholderSrc} />
       ) : (
-        <Canonical src={src} />
+        renderPlayer({ isAmp, placeholderSrc, src })
       )}
     </StyledContainer>
   );
@@ -50,6 +59,12 @@ MediaPlayer.defaultProps = {
   placeholderSrc: null,
   orientation: 'Landscape',
   isAmp: false,
+};
+
+renderPlayer.propTypes = {
+  isAmp: bool.isRequired,
+  src: string.isRequired,
+  placeholderSrc: string.isRequired,
 };
 
 export default MediaPlayer;
