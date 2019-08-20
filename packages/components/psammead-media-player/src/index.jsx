@@ -14,25 +14,13 @@ const StyledContainer = styled.div`
   overflow: hidden;
 `;
 
-const renderPlayer = ({ isAmp, placeholderSrc, src }) => {
-  return isAmp ? (
-    <Amp placeholderSrc={placeholderSrc} src={src} />
-  ) : (
-    <Canonical src={src} />
-  );
-};
-
-const MediaPlayer = ({
+export const CanonicalMediaPlayer = ({
   showPlaceholder,
   placeholderSrc,
   orientation,
-  isAmp,
   src,
 }) => {
-  const shouldShowPlaceholder = !isAmp && showPlaceholder;
-  const [placeholderActive, setPlaceholderActive] = useState(
-    shouldShowPlaceholder,
-  );
+  const [placeholderActive, setPlaceholderActive] = useState(showPlaceholder);
   const handlePlaceholderClick = () => setPlaceholderActive(false);
 
   return (
@@ -40,31 +28,37 @@ const MediaPlayer = ({
       {placeholderActive ? (
         <Placeholder onClick={handlePlaceholderClick} src={placeholderSrc} />
       ) : (
-        renderPlayer({ isAmp, placeholderSrc, src })
+        <Canonical src={src} />
       )}
     </StyledContainer>
   );
 };
 
-MediaPlayer.propTypes = {
+export const AmpMediaPlayer = ({ placeholderSrc, orientation, src }) => (
+  <StyledContainer orientation={orientation}>
+    <Amp placeholderSrc={placeholderSrc} src={src} />
+  </StyledContainer>
+);
+
+CanonicalMediaPlayer.propTypes = {
   showPlaceholder: bool,
   placeholderSrc: string,
   src: string.isRequired,
   orientation: oneOf(['Portrait', 'Landscape']),
-  isAmp: bool,
 };
 
-MediaPlayer.defaultProps = {
+CanonicalMediaPlayer.defaultProps = {
   showPlaceholder: true,
   placeholderSrc: null,
   orientation: 'Landscape',
-  isAmp: false,
 };
 
-renderPlayer.propTypes = {
-  isAmp: bool.isRequired,
-  src: string.isRequired,
+AmpMediaPlayer.propTypes = {
+  orientation: oneOf(['Portrait', 'Landscape']),
   placeholderSrc: string.isRequired,
+  src: string.isRequired,
 };
 
-export default MediaPlayer;
+AmpMediaPlayer.defaultProps = {
+  orientation: 'Landscape',
+};
