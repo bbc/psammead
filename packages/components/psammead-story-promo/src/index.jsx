@@ -69,11 +69,11 @@ const ImageGridColumnsTopStory = css`
   grid-column: 1 / span 6;
 
   @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
-    grid-column: 1 / span 2;
+    grid-column: 1 / span 3;
   }
 
   @media (min-width: ${GEL_GROUP_5_SCREEN_WIDTH_MIN}) {
-    grid-column: 1 / span 5;
+    grid-column: 1 / span 6;
   }
 `;
 
@@ -180,11 +180,11 @@ const TextGridColumnsTopStory = css`
   grid-column: 1 / span 6;
 
   @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
-    grid-column: 3 / span 4;
+    grid-column: 4 / span 3;
   }
 
   @media (min-width: ${GEL_GROUP_5_SCREEN_WIDTH_MIN}) {
-    grid-column: 6 / span 7;
+    grid-column: 7 / span 6;
   }
 `;
 
