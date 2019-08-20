@@ -1,4 +1,4 @@
-# PackageName Changelog
+# Psammead Media Player Changelog
 
 | Version | Description |
 |---------|-------------|
