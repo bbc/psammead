@@ -1,4 +1,10 @@
 import moment from 'moment-timezone';
+/*
+import {
+  displayLocale,
+  displayRelativeLocale,
+} from '../../../utilities/psammead-services/utils/convertToLocale';
+*/
 
 // Note that this next section is globally configuring moment.
 // It is not possible to configure these on specific moment instances.
@@ -36,11 +42,19 @@ export const formatUnixTimestamp = (
   momentString,
   timezone,
   locale = 'en-GB',
-) =>
-  moment(timestamp)
+  localeData,
+  timezoneData,
+) => {
+  if (localeData && timezoneData) {
+    // Would return result from displayLocale instead of Moment:
+    // return displayLocale(localeData, timezoneData, momentString, timestamp);
+  }
+
+  return moment(timestamp)
     .locale(locale)
     .tz(timezone)
     .format(momentString);
+};
 
 export const showRelativeTime = (
   timestamp,
@@ -48,15 +62,36 @@ export const showRelativeTime = (
   format,
   timezone,
   locale,
+  localeData,
+  timezoneData,
 ) => {
   if (isRelative) {
+    if (localeData && timezoneData) {
+      // Would return result from displayRelativeLocale instead of Moment:
+      // return displayRelativeLocale(localeData, timestamp, Date.now());
+    }
+
     return moment(timestamp)
       .locale(locale)
       .tz(timezone)
       .fromNow();
   }
   if (format) {
-    return formatUnixTimestamp(timestamp, format, timezone, locale);
+    return formatUnixTimestamp(
+      timestamp,
+      format,
+      timezone,
+      locale,
+      localeData,
+      timezoneData,
+    );
   }
-  return formatUnixTimestamp(timestamp, defaultFormat, timezone);
+  return formatUnixTimestamp(
+    timestamp,
+    defaultFormat,
+    timezone,
+    undefined,
+    localeData,
+    timezoneData,
+  );
 };

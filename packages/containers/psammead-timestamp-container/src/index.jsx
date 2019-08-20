@@ -1,3 +1,4 @@
+/* eslint-disable react/forbid-prop-types */
 import React from 'react';
 import { number, string, bool, shape } from 'prop-types';
 import { scriptPropType } from '@bbc/gel-foundations/prop-types';
@@ -21,6 +22,8 @@ const TimestampContainer = ({
   script,
   locale,
   service,
+  // localeData,
+  // timezoneData,
 }) => {
   if (!isValidDateTime(new Date(timestamp))) {
     return null;
@@ -32,13 +35,28 @@ const TimestampContainer = ({
 
   return (
     <Timestamp
-      datetime={formatUnixTimestamp(timestamp, dateTimeFormat, timezone)}
+      datetime={formatUnixTimestamp(
+        timestamp,
+        dateTimeFormat,
+        timezone,
+        undefined,
+        // localeData,
+        // timezoneData,
+      )}
       padding={padding}
       script={script}
       service={service}
     >
       {prefix ? `${prefix} ` : null}
-      {showRelativeTime(timestamp, isRelative, format, timezone, locale)}
+      {showRelativeTime(
+        timestamp,
+        isRelative,
+        format,
+        timezone,
+        locale,
+        // localeData,
+        // timezoneData,
+      )}
       {suffix ? ` ${suffix}` : null}
     </Timestamp>
   );
@@ -56,6 +74,8 @@ TimestampContainer.propTypes = {
   script: shape(scriptPropType).isRequired,
   locale: string,
   service: string.isRequired,
+  // localeData: object,
+  // timezoneData: object,
 };
 
 TimestampContainer.defaultProps = {
@@ -66,6 +86,8 @@ TimestampContainer.defaultProps = {
   prefix: null,
   suffix: null,
   locale: 'en-GB',
+  // localeData: null,
+  // timezoneData: null,
 };
 
 export default TimestampContainer;
