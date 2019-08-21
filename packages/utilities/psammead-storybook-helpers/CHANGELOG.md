@@ -3,6 +3,10 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 5.1.3 | [PR#1826](https://github.com/bbc/psammead/pull/1826) Talos - Bump Dependencies |
+| 5.1.2 | [PR#1804](https://github.com/bbc/psammead/pull/1804) Talos - Bump Dependencies |
+| 5.1.1 | [PR#1803](https://github.com/bbc/psammead/pull/1803/) Patches broken links on badges in documentation |
+| 5.1.0 | [PR#1794](https://github.com/bbc/psammead/pull/1794) Add david dependency badges |
 | 5.0.1 | [PR#1734](https://github.com/bbc/psammead/pull/1734) Talos - Bump Dependencies |
 | 5.0.0 | [PR#1714](https://github.com/bbc/psammead/pull/1714) Renamed `indonesian` to `indonesia` and `afaanOromoo` to `afaanoromoo`.  Input provider now has an optional 4th argument that allows the default service to be configured |
 | 4.0.0 | [PR#1679](https://github.com/bbc/psammead/pull/1679) Remove text knob from input-provider |
