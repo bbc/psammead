@@ -47,6 +47,8 @@ const eightOfTwelveColumnsMaxScaleable = `66.67%`;
 const fullWidthColumnsMaxScaleable = `100%`;
 // (12 / 12) * 100 = 100 = 100%
 
+const halfWidthColumnsMaxScaleable = `50%`;
+
 const StoryPromoWrapper = styled.div`
   position: relative;
 
@@ -90,7 +92,7 @@ const ImageGridFallbackTopStory = css`
   width: ${fullWidthColumnsMaxScaleable};
 
   @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
-    width: ${twoOfSixColumnsMaxWidthScaleable};
+    width: ${halfWidthColumnsMaxScaleable};
     margin-bottom: 0;
   }
 `;
@@ -198,7 +200,7 @@ const TextGridColumns = css`
 
 const TextGridFallbackTopStory = css`
   @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
-    width: ${fourOfSixColumnsMaxWidthScaleable};
+    width: ${halfWidthColumnsMaxScaleable};
   }
 `;
 
