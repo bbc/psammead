@@ -63,7 +63,7 @@ test('format ordinal', function () {
     assert.equal(moment([2011, 0, 7]).format('DDDo'), '۷', '۷');
     assert.equal(moment([2011, 0, 8]).format('DDDo'), '۸', '۸');
     assert.equal(moment([2011, 0, 9]).format('DDDo'), '۹', '۹');
-    assert.equal(moment([2011, 0, 10]).format('DDDo'), '۱۰','۱۰');
+    assert.equal(moment([2011, 0, 10]).format('DDDo'), '۱۰', '۱۰');
 
     //'۱۱', '۱۲', '۱۳', '۱٤','۱۵'
     assert.equal(moment([2011, 0, 11]).format('DDDo'), '۱۱', '۱۱');
@@ -95,4 +95,19 @@ test('format ordinal', function () {
 
     // '۳۱'
     assert.equal(moment([2011, 0, 31]).format('DDDo'), '۳۱', '۳۱');
+});
+
+test('format month', function () {
+    var expected = ['جنوري جنوري', 'فبروري فبروري', 'مارچ مارچ', 'اپریل اپریل', 'می می', 'جون جون', 'جولاې جولاې', 'اګست اګست', 'سپتمبر سپتمبر', 'اکتوبر اکتوبر', 'نومبر نومبر', 'ډیسمبر ډیسمبر'];
+    for (var i = 0; i < expected.length; i++) {
+        assert.equal(moment([2011, i, 1]).format('MMMM MMM'), expected[i], expected[i]);
+    }
+});
+
+
+test('format week', function () {
+    var expected = ['اتوار اتوار ا', ' ګول  ګول ګ', 'نهه نهه ن', 'شورو شورو ش', 'زیارت زیارت ز', 'جمعه جمعه ج', 'خالي خالي  خ'];
+    for (var i = 0; i < expected.length; i++) {
+        assert.equal(moment([2011, 0, 2 + i]).format('dddd ddd dd'), expected[i], expected[i]);
+    }
 });
