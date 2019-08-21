@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`SectionLabel When hideSectionHeader is true should add styling to hide SectionLabel when width of screen is less than 1280 px 1`] = `
+exports[`SectionLabel When hideSectionHeader is true should add styling to hide SectionLabel for all breakpoints 1`] = `
 .c2 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -43,6 +43,14 @@ exports[`SectionLabel When hideSectionHeader is true should add styling to hide 
 .c0 {
   position: relative;
   margin-top: 2rem;
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  -webkit-clip: rect(1px,1px,1px,1px);
+  clip: rect(1px,1px,1px,1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  width: 1px;
 }
 
 .c1 {
@@ -88,19 +96,6 @@ exports[`SectionLabel When hideSectionHeader is true should add styling to hide 
 @media (min-width:37.5rem) {
   .c0 {
     margin-top: 1.5rem;
-  }
-}
-
-@media (max-width:80rem) {
-  .c0 {
-    -webkit-clip-path: inset(100%);
-    clip-path: inset(100%);
-    -webkit-clip: rect(1px,1px,1px,1px);
-    clip: rect(1px,1px,1px,1px);
-    height: 1px;
-    overflow: hidden;
-    position: absolute;
-    width: 1px;
   }
 }
 
