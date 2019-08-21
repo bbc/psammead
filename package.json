@@ -23,6 +23,7 @@
     "preinstall": "sh scripts/enforceVersions.sh",
     "publish": "npm run build && node scripts/publish",
     "storybook": "NODE_ENV=development start-storybook -p 8180 -c .storybook",
+    "storybook:ie11": "export FIX_STORYBOOK_IE11=true && npm run storybook",
     "test": "npm run test:lint && npm run test:lint:css && npm run test:unit && npm run test:packages",
     "test:chromatic": "chromatic test run --storybook-build-dir=storybook_dist || true",
     "test:packages": "lerna run test",
