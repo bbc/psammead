@@ -207,11 +207,6 @@ We haven't yet thoroughly looked at cross device browser AT testing yet, this is
 
 ## Roadmap
 
-This component will soon be integrated on to add support for additional UX and product requirements such as;
-
-- Hover and focus states
-- Logic to toggle a 'Top Story' mode which has greater text size and a vertically stacked design
-
 ## Contributing
 
 Psammead is completely open source. We are grateful for any contributions, whether they be new components, bug fixes or general improvements. Please see our primary contributing guide which can be found at [the root of the Psammead repository](https://github.com/bbc/psammead/blob/latest/CONTRIBUTING.md).
