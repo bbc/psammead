@@ -101,7 +101,7 @@ The typical use-case of this component is as displayed below. A Image sits on th
 
 This component also has an option to display a media indicator, which consists of a play icon and duration of the media, if that data is provided.
 
-The `topStory` prop can be passed to adopt a vertical card layout under 600px. This is designed to be used only on the first (top) story on an index. This prop must be passed to the StoryPromo, Headline and Summary components.
+The `topStory` prop can be passed to adopt a vertical card layout under 600px. At breakpoints above 600px a horizontal layout is maintained with image and the text summary each occupying 1/2 of the parent container. This is designed to be used only on the first (top) story on an index. This prop must be passed to the StoryPromo, Headline and Summary components.
 
 ```jsx
 import React, { Fragment } from 'react';
