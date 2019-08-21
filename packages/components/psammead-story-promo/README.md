@@ -4,6 +4,9 @@
 
 The `StoryPromo` component is designed to be used on 'index' pages, which are pages that link to other articles/stories. It supports having an image on the left of the promo with info on the right. This info can be any collection of nodes, however typically these would be a headline, text summary and timestamp.
 
+## Exports
+`/index-alsos` - components for links to stories that are related to the top story.
+
 ## Installation
 
 `npm install @bbc/psammead-story-promo`
