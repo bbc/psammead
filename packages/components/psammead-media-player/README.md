@@ -23,12 +23,12 @@ This component to be used at any point on the page, specifically when a media pl
 | Argument  | Type                | Required | Default | Example         |
 |-----------|---------------------|----------|---------|-----------------|
 | `src` | string | Yes   | - | `http://foobar.com/embeddable_endpoint` |
-| `orientation` | string | No   | `Landscape` | `Portrait` |
 | `showPlaceholder` | boolean | No   | `true` | `false` |
 | `placeholderSrc` | string | No   | `null` | `http://foobar.com/placeholder.png` |
+| `portrait` | boolean | No   | `false` | `true` |
 
 The `src` prop is required, as it tells the component what page it needs to embed.
-The `orientation` prop is not required, and defaults to `Landscape`, but also accepts `Portrait`. This is to support portrait video content in the future.
+The `portrait` prop is not required, and defaults to `false`. This is to support portrait video content in the future.
 The `showPlaceholder` boolean prop is also not required, and defaults to `true`.
 Assuming `showPlaceholder` is `true`, the `placeholderSrc` will be what image to display as the placeholder.
 
@@ -37,7 +37,7 @@ Assuming `showPlaceholder` is `true`, the `placeholderSrc` will be what image to
 | Argument  | Type                | Required | Default | Example         |
 |-----------|---------------------|----------|---------|-----------------|
 | `src` | string | Yes   | - | `http://foobar.com/embeddable_endpoint` |
-| `orientation` | string | No   | `Landscape` | `Portrait` |
+| `portrait` | boolean | No   | `false` | `true` |
 | `placeholderSrc` | string | yes   | - | `http://foobar.com/placeholder.png` |
 
 The `placeholderSrc` prop is required for AMP, as in order to have the component load an `amp-iframe` within 600px or 75% of the viewport from the top, we must have an `amp-img` placeholder. For more information on this, please refer to the [AMP docs for amp-iframe](https://amp.dev/documentation/components/amp-iframe/).
@@ -47,10 +47,10 @@ The `placeholderSrc` prop is required for AMP, as in order to have the component
 ```js
 import { CanonicalMediaPlayer } from '@bbc/psammead-media-player';
 
-const Container = ({ src, orientation, showPlaceholder, placeholderSrc }) => (
+const Container = ({ src, portrait, showPlaceholder, placeholderSrc }) => (
   <CanonicalMediaPlayer
     src={src}
-    orientation={orientation}
+    portrait={portrait}
     placeholderSrc={placeholderSrc}
     showPlaceholder={showPlaceholder}
   />
@@ -61,10 +61,10 @@ const Container = ({ src, orientation, showPlaceholder, placeholderSrc }) => (
 ```js
 import { AmpMediaPlayer } from '@bbc/psammead-media-player';
 
-const Container = ({ src, orientation, placeholderSrc }) => (
+const Container = ({ src, portrait, placeholderSrc }) => (
   <AmpMediaPlayer
     src={src}
-    orientation={orientation}
+    portrait={portrait}
     placeholderSrc={placeholderSrc}
   />
 )

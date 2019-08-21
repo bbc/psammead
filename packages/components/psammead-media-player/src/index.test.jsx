@@ -6,7 +6,6 @@ describe('Media Player: AMP Entry', () => {
   shouldMatchSnapshot(
     'renders a landscape container with an amp-iframe and nested amp-img',
     <AmpMediaPlayer
-      orientation="Landscape"
       placeholderSrc="http://foo.bar/placeholder.png"
       src="http://foo.bar/iframe/amp"
     />,
@@ -15,7 +14,7 @@ describe('Media Player: AMP Entry', () => {
   shouldMatchSnapshot(
     'renders a portrait container with amp-iframe and nested amp-img',
     <AmpMediaPlayer
-      orientation="Portrait"
+      portrait
       placeholderSrc="http://foo.bar/placeholder.png"
       src="http://foo.bar/iframe/amp"
     />,
@@ -36,7 +35,7 @@ describe('Media Player: Canonical Entry', () => {
     <CanonicalMediaPlayer
       placeholderSrc="http://foo.bar/placeholder.png"
       src="http://foo.bar/iframe"
-      orientation="Portrait"
+      portrait
     />,
   );
 
