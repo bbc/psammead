@@ -25,6 +25,9 @@
     "numerals",
     "numbersystems"
   ],
+  "dependencies": {
+    "jalaali-js": "1.0.0"
+  },
   "peerDependencies": {
     "moment": "^2.24.0"
   }
