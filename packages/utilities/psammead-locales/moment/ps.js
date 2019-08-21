@@ -33,6 +33,13 @@ const pashtoMonths = [
   'کب',
 ];
 
+const jalaliFromats = [
+  'HH:mm', // LT
+  'HH:mm:ss', // LTS
+  'D MMMM YYYY', // LL FROMAT
+  'D MMMM YYYY HH:mm', // LLL FROMAT
+  'dddd, D MMMM YYYY HH:mm', // LLLL FROMAT
+];
 moment.defineLocale('ps', {
   months: 'جنوري_فبروري_مارچ_اپریل_می_جون_جولاې_اګست_سپتمبر_اکتوبر_نومبر_ډیسمبر'.split(
     '_',
@@ -47,14 +54,9 @@ moment.defineLocale('ps', {
   longDateFormat: {
     LT: 'HH:mm',
     LTS: 'HH:mm:ss',
-    L: 'YYYY/MM/DD',
-    LL: 'YYYYکالMمیاشتDورځ',
-    LLL: 'YYYYکالMمیاشتDورځ HH:mm',
-    LLLL: 'YYYYکالMمیاشتDورځ HH:mm dddd',
-    l: 'YYYY/MM/DD',
-    ll: 'YYYYکالMمیاشتDورځ',
-    lll: 'YYYYکالMمیاشتDورځ HH:mm',
-    llll: 'YYYYکالMمیاشتDورځ HH:mm dddd',
+    LL: 'D MMMM YYYY',
+    LLL: 'D MMMM YYYY HH:mm',
+    LLLL: 'dddd, D MMMM YYYY HH:mm',
   },
   meridiemParse: /د غرمې دمخه|ماسپښین/,
   isPM(input) {
@@ -96,9 +98,12 @@ moment.defineLocale('ps', {
       })
       .replace(/،/g, ',');
   },
-  postformat: jalaaliHelper.addJalaliDate.bind(null, 'ps', pashtoMonths, [
-    'D MMMM YYYY',
-  ]),
+  postformat: jalaaliHelper.addJalaliDate.bind(
+    null,
+    'ps',
+    pashtoMonths,
+    jalaliFromats,
+  ),
   dayOfMonthOrdinalParse: /\d{1,2}\./,
   ordinal: '%d',
   week: {
