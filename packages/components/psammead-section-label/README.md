@@ -68,7 +68,7 @@ const WrappingComponent = () => (
 );
 ```
 
-You can also visually hide the SectionLabel at all breakpoints by adding the `visuallyHidden` prop:
+You can also visually hide the SectionLabel for all breakpoints by adding the `visuallyHidden` prop:
 
 ```jsx
 import SectionLabel from '@bbc/psammead-section-label';
@@ -124,7 +124,7 @@ Although this component has the appearance of a horizontal rule, it does not use
 
 This component wraps the title string in an `<h2>` element. The `labelId` prop will be applied to the `<h2>` as an `id` attribute, allowing the content of the element to be referenced by an `aria-labelledby` attribute. See the [examples](#usage) above.
 
-Setting the `visuallyHidden` prop to true visually hides this component at all breakpoints, however it will still be available to screen-readers and other assistive technology.
+Setting the `visuallyHidden` prop to true visually hides this component for all breakpoints, however it will still be available to screen-readers and other assistive technology.
 
 When supplied with an `href` and the `linkText`, the section label contains an `<a>` link, which is `aria-labelledby` the `labelId` described above. The `linkText` is only expected to be useful to visual users, so is marked as `aria-hidden="true"` to prevent announcement to screen readers. This `aria-hidden="true"` isn't strictly required - setting the `aria-labelledby` attribute should prevent screen readers from reading out the `linkText`. However, it adding it makes clear to screen readers and other developers that the `linkText` is designed to be ignored by screen readers.
 
