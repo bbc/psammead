@@ -4,6 +4,19 @@
 const moment = require('moment');
 const jalaaliHelper = require('./helpers/jalaali');
 
+const symbolMap = {
+  '1': '۱',
+  '2': '۲',
+  '3': '۳',
+  '4': '٤',
+  '5': '۵',
+  '6': '۶',
+  '7': '۷',
+  '8': '۸',
+  '9': '۹',
+  '0': '۰',
+};
+
 const numberMap = {
   '۱': '1',
   '۲': '2',
@@ -98,12 +111,15 @@ moment.defineLocale('ps', {
       })
       .replace(/،/g, ',');
   },
-  postformat: jalaaliHelper.addJalaliDate.bind(
-    null,
-    'ps',
-    pashtoMonths,
-    jalaliFromats,
-  ),
+  postformat(string) {
+    jalaaliHelper.addJalaliDate.bind(null, 'ps', pashtoMonths, jalaliFromats);
+
+    return string
+      .replace(/\d/g, function(match) {
+        return symbolMap[match];
+      })
+      .replace(/,/g, '،');
+  },
   dayOfMonthOrdinalParse: /\d{1,2}\./,
   ordinal: '%d',
   week: {
