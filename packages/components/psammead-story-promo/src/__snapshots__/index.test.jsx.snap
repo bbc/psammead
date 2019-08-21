@@ -773,13 +773,6 @@ exports[`StoryPromo - Top Story should render with multiple Index Alsos correctl
   }
 }
 
-@media (min-width:37.5rem) {
-  .c7 {
-    display: none;
-    visibility: hidden;
-  }
-}
-
 @media (min-width:20rem) and (max-width:37.4375rem) {
   .c11 {
     font-size: 0.875rem;
@@ -1152,13 +1145,6 @@ exports[`StoryPromo - Top Story should render with one Index Also correctly 1`] 
     width: initial;
     padding: initial;
     grid-column: 1 / span 6;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c7 {
-    display: none;
-    visibility: hidden;
   }
 }
 
