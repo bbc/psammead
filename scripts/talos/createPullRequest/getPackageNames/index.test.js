@@ -7,7 +7,7 @@ describe('getPackageNames', () => {
     ).toEqual('package1, package2, package3...');
   });
 
-  it('should not shorten the title', () => {
+  it('should not shorten the title when less than 3 packages are provided', () => {
     expect(getPackageNames(['package1', 'package2'])).toEqual(
       'package1, package2',
     );
