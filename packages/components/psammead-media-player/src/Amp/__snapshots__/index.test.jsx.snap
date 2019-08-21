@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Media Player: Amp should render an amp-iframe with an amp-img nested inside 1`] = `
+<amp-iframe
+  allowfullscreen="true"
+  frameborder="0"
+  layout="fill"
+  sandbox="allow-scripts allow-same-origin"
+  src="https://foo.bar/iframe"
+>
+  <amp-img
+    layout="fill"
+    placeholder="true"
+    src="https://foo.bar/placeholder.png"
+  />
+</amp-iframe>
+`;
