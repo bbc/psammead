@@ -20,7 +20,7 @@
   "homepage": "https://github.com/bbc/psammead/blob/latest/packages/components/psammead-image/README.md",
   "peerDependencies": {
     "prop-types": "^15.6.2",
-    "react": "^16.8.6",
+    "react": "^16.9.0",
     "styled-components": "^4.3.2"
   },
   "keywords": [

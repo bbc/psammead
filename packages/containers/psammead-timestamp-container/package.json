@@ -30,6 +30,6 @@
     "moment-timezone": "^0.5.26"
   },
   "peerDependencies": {
-    "react": "^16.8.6"
+    "react": "^16.9.0"
   }
 }
