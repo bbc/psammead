@@ -1,4 +1,5 @@
 const GitHub = require('github-api');
+const getPackageNames = require('./getPackageNames');
 const getPRBody = require('../getPullRequestBody');
 
 const createPullRequest = ({ packages, bumpedPackages, branchName }) => {
@@ -7,7 +8,7 @@ const createPullRequest = ({ packages, bumpedPackages, branchName }) => {
   });
 
   const repo = gh.getRepo('bbc', 'psammead');
-  const title = `Talos - Bump ${packages.join(', ')}`;
+  const title = `Talos - Bump ${getPackageNames(packages)}`;
 
   // eslint-disable-next-line no-console
   console.log(`* Creating Pull Request with title "${title}"`);
