@@ -151,3 +151,30 @@ test('from', function () {
 
 
 }); 
+
+test('suffix', function () {
+    assert.equal(moment(30000).from(0), 'وروسته څو ثاني',  'prefix');
+    assert.equal(moment(0).from(30000), 'څو ثاني مخکې', 'suffix');
+});
+
+
+test('now from now', function () {
+    assert.equal(moment().fromNow(), 'څو ثاني مخکې',  'now from now should display as in the past');
+});
+
+test('fromNow', function () {
+    assert.equal(moment().add({s: 30}).fromNow(), 'وروسته څو ثاني', 'in a few seconds');
+    assert.equal(moment().add({d: 5}).fromNow(), 'وروسته ۵ ورځ', 'in 5 days');
+});
+
+
+test('calendar day', function () {
+    var a = moment().hours(12).minutes(0).seconds(0);
+
+    assert.equal(moment(a).calendar(),                   'نن ورځ ۱۲:۰۰',      'today at the same time');
+    assert.equal(moment(a).add({m: 25}).calendar(),      'نن ورځ ۱۲:۲۵',      'Now plus 25 min');
+    assert.equal(moment(a).add({h: 1}).calendar(),       'نن ورځ ۱۳:۰۰',      'Now plus 1 hour');
+    assert.equal(moment(a).add({d: 1}).calendar(),       'سبا ۱۲:۰۰',   'tomorrow at the same time');
+    assert.equal(moment(a).subtract({h: 1}).calendar(),  'نن ورځ ۱۱:۰۰',      'Now minus 1 hour');
+    assert.equal(moment(a).subtract({d: 1}).calendar(),  'پرون ۱۲:۰۰',  'yesterday at the same time');
+});
