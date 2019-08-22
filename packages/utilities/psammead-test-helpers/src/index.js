@@ -68,20 +68,6 @@ export const suppressPropWarnings = warnings => {
   }
 };
 
-// const mocks = {
-//   error: jest.fn(),
-//   warn: jest.fn(),
-//   info: jest.fn(),
-//   verbose: jest.fn(),
-//   debug: jest.fn(),
-//   silly: jest.fn(),
-// };
-
-// jest.mock('../app/lib/logger.node', () => jest.fn());
-// nodeLogger.mockImplementation(() => mocks);
-
-// export const loggerMock = mocks;
-
 const errorIfMissingKey = (keys, object, message) => {
   keys.forEach(key => {
     if (!(key in object)) {
