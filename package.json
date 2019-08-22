@@ -122,9 +122,11 @@
     "stylelint-csstree-validator": "^1.5.2",
     "stylelint-processor-styled-components": "^1.8.0",
     "yargs-parser": "^11.1.1",
+    "yeoman-assert": "^3.1.1",
     "yeoman-environment": "^2.3.4",
     "yeoman-generator": "^3.2.0",
-    "yo": "^2.0.6"
+    "yeoman-test": "^2.0.0",
+    "yo": "^3.1.0"
   },
   "config": {
     "babel_ignore": "'**/*.test.js,**/*.test.jsx,**/*.stories.js,**/*.stories.jsx'"
@@ -139,16 +141,20 @@
     "collectCoverageFrom": [
       "**/packages/**/*.{js,jsx}",
       "scripts/**",
+      "**/.yeoman/support/**",
       "!**/*.stories.{js,jsx}",
       "!**/.eslintrc.js",
       "!**/dist/**",
       "!**/esm/**",
-      "!**/moment-timezone-include/tz/**",
-      "!**/.yeoman/**"
+      "!**/moment-timezone-include/tz/**"
+    ],
+    "transformIgnorePatterns": [
+      "/node_modules/",
+      ".yeoman/index.js"
     ],
     "testMatch": [
       "**/*.test.{js,jsx}",
-      "!**/.yeoman/**"
+      "!**/.yeoman/templates/**gst"
     ]
   },
   "spec": {

@@ -1,20 +1,38 @@
-const helpers = require('yeoman-test');
-const assert = require('yeoman-assert');
-const fs = require('fs');
 const path = require('path');
+const assert = require('yeoman-assert');
+const helpers = require('yeoman-test');
+const shell = require('shelljs');
 
-describe('generator', () => {
+const prompts = {
+  name: 'foo-bar-component',
+  description: 'This is a test',
+  authorName: 'foo bar',
+  authorEmail: 'foobar@foobar.com',
+};
+
+describe('pacakge generator', () => {
   beforeEach(() => {
+    jest.setTimeout(30000);
+
     return helpers
-      .run('.')
-      .inTmpDir(function(dir) {
-        var done = this.async(); // `this` is the RunContext object.
-        this.fs.copy(path.join(__dirname, '../templates/common'), dir, done);
-      })
-      .withPrompts({ name: 'test-name', description: 'I am a description' });
+      .run(path.join(__dirname, '.'))
+      .inDir(path.join(__dirname, './temp'))
+      .withPrompts(prompts);
+  });
+  afterEach(() => {
+    shell.rm('-rf', path.join(__dirname, './temp'));
   });
 
-  it('generates a project', function() {
-    assert.file(path.join(__dirname, 'tmp/test-name/index.jsx'));
+  it('should generate pacakge with prompts', () => {
+    assert.file([
+      path.join(
+        __dirname,
+        './temp/packages/components/psammead-foo-bar-component/README.md',
+      ),
+      path.join(
+        __dirname,
+        './temp/packages/components/psammead-foo-bar-component/package.json',
+      ),
+    ]);
   });
 });
