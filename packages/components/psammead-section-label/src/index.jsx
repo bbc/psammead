@@ -41,7 +41,7 @@ const SectionLabelWrapper = styled.div`
   ${({ visuallyHidden }) =>
     visuallyHidden &&
     css`
-      // Hide for all breakpoints for top story
+      // Hide for all breakpoints
       clip-path: inset(100%);
       clip: rect(1px, 1px, 1px, 1px);
       height: 1px;
