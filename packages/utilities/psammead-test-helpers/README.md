@@ -12,6 +12,10 @@ This package provides a collection of helper methods for implementing Jest snaps
 | isNull                     | title, component                            | Renders the component using react-test-renderer, converts it to JSON and asserts that it is null. The first argument `title` is the title for the test.                                                                          |
 | testUtilityPackages        | actualExports, expectedExports, utilityName | Validates an imported utility package's exported values against an object of key-value pairs in the form `{ name_of_export: 'type of export' }`, e.g. `{ shouldMatchSnapshot: 'function' }`.                                     |
 
+| setWindowValue | key, value | {} |
+| resetWindowValue | key, value | {} |
+| suppressPropWarnings | warnings | {} |
+
 ## Installation
 
 ```jsx
