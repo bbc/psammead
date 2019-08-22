@@ -154,7 +154,7 @@
     ],
     "testMatch": [
       "**/*.test.{js,jsx}",
-      "!**/.yeoman/templates/**gst"
+      "!**/.yeoman/templates/**"
     ]
   },
   "spec": {
