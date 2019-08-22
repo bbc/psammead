@@ -51,6 +51,7 @@ node {
 
           if (params.TALOS_PACKAGES == '') {
             stage ('Development Tests') {
+              failFast true
               parallel (
                 'App Tests & Code Coverage': {
                   sh 'make code-coverage-before-build'
