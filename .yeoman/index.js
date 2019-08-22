@@ -29,7 +29,7 @@ module.exports = class extends Generator {
     this.log(chalk.blue('Creating your package folder...'));
 
     const destination = `./packages/components/psammead-${this.props.name}`;
-    shell.mkdir(destination);
+    shell.mkdir('-p', destination);
     this.destinationRoot(destination);
     this.sourceRoot(`${__dirname}/templates`);
   }
