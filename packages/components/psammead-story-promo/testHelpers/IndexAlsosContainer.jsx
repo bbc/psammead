@@ -40,6 +40,12 @@ const IndexAlsosContainer = ({ alsoItems, script, service }) => {
             const { id, cpsType, mediaType } = item;
             const { headline } = item.headlines;
             const url = item.locators.assetUri;
+            const indexAlsoMediaIndicator = IndexAlsosMediaIndicator(
+              cpsType,
+              mediaType,
+              service,
+            );
+            const indexAlsoMediaType = getMediaType(cpsType, mediaType);
 
             return (
               <IndexAlsosLi
@@ -47,12 +53,8 @@ const IndexAlsosContainer = ({ alsoItems, script, service }) => {
                 script={script}
                 service={service}
                 url={url}
-                mediaIndicator={IndexAlsosMediaIndicator(
-                  cpsType,
-                  mediaType,
-                  service,
-                )}
-                mediaType={getMediaType(cpsType, mediaType)}
+                mediaIndicator={indexAlsoMediaIndicator}
+                mediaType={indexAlsoMediaType}
               >
                 {headline}
               </IndexAlsosLi>
@@ -65,18 +67,20 @@ const IndexAlsosContainer = ({ alsoItems, script, service }) => {
           const { cpsType, mediaType } = alsoItems;
           const { headline } = alsoItems.headlines;
           const url = alsoItems.locators.assetUri;
+          const indexAlsoMediaIndicator = IndexAlsosMediaIndicator(
+            cpsType,
+            mediaType,
+            service,
+          );
+          const indexAlsoMediaType = getMediaType(cpsType, mediaType);
 
           return (
             <IndexAlso
               script={script}
               service={service}
               url={url}
-              mediaIndicator={IndexAlsosMediaIndicator(
-                cpsType,
-                mediaType,
-                service,
-              )}
-              mediaType={getMediaType(cpsType, mediaType)}
+              mediaIndicator={indexAlsoMediaIndicator}
+              mediaType={indexAlsoMediaType}
             >
               {headline}
             </IndexAlso>
