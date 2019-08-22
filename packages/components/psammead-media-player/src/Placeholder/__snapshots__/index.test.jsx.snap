@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Media Player: Placeholder should render a placeholder image with callback function 1`] = `
+.c1 {
+  display: block;
+  width: 100%;
+  visibility: visible;
+}
+
+.c0 {
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+<div
+  class="c0"
+>
+  <img
+    alt="Image Alt"
+    class="c1"
+    src="http://foo.bar/placeholder.png"
+  />
+</div>
+`;
