@@ -7,6 +7,9 @@ const testHelpersExpectedExports = {
   shouldShallowMatchSnapshot: 'function',
   isNull: 'function',
   testUtilityPackages: 'function',
+  setWindowValue: 'function',
+  resetWindowValue: 'function',
+  suppressPropWarnings: 'function',
 };
 
 const expectedExports = { testHelpers: testHelpersExpectedExports };
