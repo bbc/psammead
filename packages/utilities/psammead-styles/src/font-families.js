@@ -300,13 +300,13 @@ const tamilStyles = {
 };
 
 /*
- *  TELEGU
+ *  TELUGU
  */
-const teleguFontFamily = `font-family: Mallanna, "Noto Sans Telugu", "Hind Guntur", Gautami, "Kohinoor Telugu", sans-serif;`;
+const teluguFontFamily = `font-family: Mallanna, "Noto Sans Telugu", "Hind Guntur", Gautami, "Kohinoor Telugu", sans-serif;`;
 
-const teleguStyles = {
+const teluguStyles = {
   sansRegular: `
-    ${teleguFontFamily}
+    ${teluguFontFamily}
     ${getFontStyleAndWeight('normal', 400)}
   `,
 };
@@ -376,7 +376,7 @@ export const sinhala = sinhalaStyles;
 export const somali = helmetFontStyles;
 export const swahili = helmetFontStyles;
 export const tamil = tamilStyles;
-export const telugu = teleguStyles;
+export const telugu = teluguStyles;
 export const thai = thaiStyles;
 export const tigrinya = tigrinyaStyles;
 export const turkce = helmetFontStyles;
