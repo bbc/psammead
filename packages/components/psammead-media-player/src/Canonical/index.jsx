@@ -18,6 +18,7 @@ const Canonical = ({ src }) => (
     scrolling="no"
     allow="autoplay; fullscreen"
     gesture="media"
+    allowFullScreen
   />
 );
 
