@@ -12,9 +12,9 @@ const getPromiseFromCommand = command =>
         resolve(
           parseUpgradedPackages(
             output
-              .split('/n')
+              .split('\n')
               .map(line => `psammead: ${line}`)
-              .join('/n'),
+              .join('\n'),
           ),
         );
       }
