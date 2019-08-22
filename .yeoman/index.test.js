@@ -10,6 +10,15 @@ const prompts = {
   authorEmail: 'foobar@foobar.com',
 };
 
+const tempFiles = [
+  './temp/packages/components/psammead-foo-bar-component/README.md',
+  './temp/packages/components/psammead-foo-bar-component/package.json',
+  './temp/packages/components/psammead-foo-bar-component/CHANGELOG.md',
+  './temp/packages/components/psammead-foo-bar-component/src/index.jsx',
+  './temp/packages/components/psammead-foo-bar-component/src/index.stories.jsx',
+  './temp/packages/components/psammead-foo-bar-component/src/index.test.jsx',
+];
+
 describe('pacakge generator', () => {
   beforeEach(() => {
     jest.setTimeout(30000);
@@ -24,15 +33,11 @@ describe('pacakge generator', () => {
   });
 
   it('should generate pacakge with prompts', () => {
-    assert.file([
-      path.join(
-        __dirname,
-        './temp/packages/components/psammead-foo-bar-component/README.md',
-      ),
-      path.join(
-        __dirname,
-        './temp/packages/components/psammead-foo-bar-component/package.json',
-      ),
-    ]);
+    let expectedFiles = [];
+    tempFiles.map(file => {
+      expectedFiles.push(path.join(__dirname, file));
+    });
+
+    assert.file(expectedFiles);
   });
 });
