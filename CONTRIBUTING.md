@@ -159,9 +159,7 @@ If you wish to exclude one or more sections of this template, we advise you do s
 
 ### After merge
 
-After merging a pull request into `latest`, please follow these steps to ensure that the changes are published to npm and to the Psammead Storybook https://bbc.github.io/psammead.
+After merging a pull request into `latest` the Jenkins pipeline publishes the changes to npm and the Psammead Storybook https://bbc.github.io/psammead. Once the pipeline runs successfully:
 
-- Publish Packages  
-  To make your changes available on the npm registry please publish any package changes. The instructions to do this can be found in the the [repository README](https://github.com/bbc/psammead#rocket-publishing-packages)
-- Publish Storybook  
-  When changes are made to a component its important to ensure the changes are visible on the hosted storybook. To do this please follow the instructions on the [repository README](https://github.com/bbc/psammead#deploying-storybook)
+- Confirm the version update with `npm show {pkg} version`.
+- Confirm storybook updates at https://bbc.github.io/psammead.
