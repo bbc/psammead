@@ -13,7 +13,7 @@ This package provides a collection of helper methods for implementing Jest snaps
 | testUtilityPackages        | actualExports, expectedExports, utilityName | Validates an imported utility package's exported values against an object of key-value pairs in the form `{ name_of_export: 'type of export' }`, e.g. `{ shouldMatchSnapshot: 'function' }`.                                     |
 | setWindowValue             | key, value                                  | {}                                                                                                                                                                                                                               |
 | resetWindowValue           | key, value                                  | {}                                                                                                                                                                                                                               |
-| suppressPropWarnings       | warnings                                    | {}                                                                                                                                                                                                                               |
+| suppressPropWarnings       | warnings                                    | Suppresses predicted prop warnings during tests.                                                                                                                                                                                 |
 
 ## Installation
 
