@@ -26,7 +26,8 @@
     "numbersystems"
   ],
   "dependencies": {
-    "jalaali-js": "1.0.0"
+    "jalaali-js": "1.0.0",
+    "moment-timezone": "^0.5.26"
   },
   "peerDependencies": {
     "moment": "^2.24.0"

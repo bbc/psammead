@@ -1,6 +1,4 @@
-// moment.js locale configuration
-// locale: Pashto (ps)
-
+/* eslint-disable func-names */
 const moment = require('moment');
 const jalaaliHelper = require('./helpers/jalaali');
 
