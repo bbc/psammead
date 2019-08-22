@@ -13,6 +13,7 @@ exports[`Media Player: Canonical should render an iframe 1`] = `
 
 <iframe
   allow="autoplay; fullscreen"
+  allowfullscreen=""
   class="c0"
   scrolling="no"
   src="https://foo.bar/iframe"
