@@ -44,15 +44,15 @@ test('parse', function () {
 
 test('format', function () {
   var a = [
-    ['dddd, MMMM Do YYYY, h:mm:ss a', 'الأحد، فبراير 14 2010، 2:25:50 م'],
-    ['ddd, hA', 'أحد، 2م'],
+    ['dddd, MMMM Do YYYY, h:mm:ss a', 'الأحد، فبراير 14 2010، 3:25:50 م'],
+    ['ddd, hA', 'أحد، 3م'],
     ['M Mo MM MMMM MMM', '2 2 02 فبراير فبراير'],
     ['YYYY YY', '2010 10'],
     ['D Do DD', '14 14 14'],
     ['d do dddd ddd dd', '0 0 الأحد أحد ح'],
     ['DDD DDDo DDDD', '45 45 045'],
     ['w wo ww', '8 8 08'],
-    ['h hh', '2 02'],
+    ['h hh', '3 03'],
     ['H HH', '15 15'],
     ['m mm', '25 25'],
     ['s ss', '50 50'],
@@ -151,7 +151,7 @@ test('from', function () {
   assert.equal(start.from(moment([2007, 1, 28]).add({ d: 43 }), true), 'شهر واحد', '43 days = a month');
   assert.equal(start.from(moment([2007, 1, 28]).add({ d: 46 }), true), 'شهران', '46 days = 2 months');
   assert.equal(start.from(moment([2007, 1, 28]).add({ d: 74 }), true), 'شهران', '75 days = 2 months');
-  assert.equal(start.from(moment([2007, 1, 28]).add({ d: 76 }), true), '2 أشهر', '76 days = 3 months');
+  assert.equal(start.from(moment([2007, 1, 28]).add({ d: 76 }), true), '3 أشهر', '76 days = 3 months');
   assert.equal(start.from(moment([2007, 1, 28]).add({ M: 1 }), true), 'شهر واحد', '1 month = a month');
   assert.equal(start.from(moment([2007, 1, 28]).add({ M: 5 }), true), '5 أشهر', '5 months = 5 months');
   assert.equal(start.from(moment([2007, 1, 28]).add({ d: 345 }), true), 'عام واحد', '345 days = a year');
@@ -161,8 +161,8 @@ test('from', function () {
 });
 
 test('suffix', function () {
-  assert.equal(moment(30000).from(0), 'بعد 20 ثانية', 'prefix');
-  assert.equal(moment(0).from(30000), 'منذ 20 ثانية', 'suffix');
+  assert.equal(moment(30000).from(0), 'بعد 30 ثانية', 'prefix');
+  assert.equal(moment(0).from(30000), 'منذ 30 ثانية', 'suffix');
 });
 
 test('now from now', function () {
@@ -170,7 +170,7 @@ test('now from now', function () {
 });
 
 test('fromNow', function () {
-  assert.equal(moment().add({ s: 30 }).fromNow(), 'بعد 20 ثانية', 'in a few seconds');
+  assert.equal(moment().add({ s: 30 }).fromNow(), 'بعد 30 ثانية', 'in a few seconds');
   assert.equal(moment().add({ d: 5 }).fromNow(), 'بعد 5 أيام', 'in 5 days');
 });
 
@@ -179,7 +179,7 @@ test('calendar day', function () {
 
   assert.equal(moment(a).calendar(), 'اليوم عند الساعة 12:00', 'today at the same time');
   assert.equal(moment(a).add({ m: 25 }).calendar(), 'اليوم عند الساعة 12:25', 'Now plus 25 min');
-  assert.equal(moment(a).add({ h: 1 }).calendar(), 'اليوم عند الساعة 12:00', 'Now plus 1 hour');
+  assert.equal(moment(a).add({ h: 1 }).calendar(), 'اليوم عند الساعة 13:00', 'Now plus 1 hour');
   assert.equal(moment(a).add({ d: 1 }).calendar(), 'غدًا عند الساعة 12:00', 'tomorrow at the same time');
   assert.equal(moment(a).subtract({ h: 1 }).calendar(), 'اليوم عند الساعة 11:00', 'Now minus 1 hour');
   assert.equal(moment(a).subtract({ d: 1 }).calendar(), 'أمس عند الساعة 12:00', 'yesterday at the same time');
@@ -226,8 +226,8 @@ test('calendar all else', function () {
 test('weeks year starting wednesday custom', function () {
   assert.equal(moment('2003 1 6', 'gggg w d').format('YYYY-MM-DD'), '2002-12-28', 'Week 1 of 2003 should be Dec 28 2002');
   assert.equal(moment('2003 1 0', 'gggg w e').format('YYYY-MM-DD'), '2002-12-28', 'Week 1 of 2003 should be Dec 28 2002');
-  assert.equal(moment('2003 1 6', 'gggg w d').format('gggg w d'), '2002 1 6', 'Saturday of week 1 of 2003 parsed should be formatted as 2003 1 6');
-  assert.equal(moment('2003 1 0', 'gggg w e').format('gggg w e'), '2002 1 0', '1st day of week 1 of 2003 parsed should be formatted as 2003 1 0');
+  assert.equal(moment('2003 1 6', 'gggg w d').format('gggg w d'), '2003 1 6', 'Saturday of week 1 of 2003 parsed should be formatted as 2003 1 6');
+  assert.equal(moment('2003 1 0', 'gggg w e').format('gggg w e'), '2003 1 0', '1st day of week 1 of 2003 parsed should be formatted as 2003 1 0');
 });
 
 test('weeks year starting sunday formatted', function () {
@@ -235,7 +235,7 @@ test('weeks year starting sunday formatted', function () {
   assert.equal(moment([2012, 0, 6]).format('w ww wo'), '1 01 1', 'Jan  6 2012 should be week 1');
   assert.equal(moment([2012, 0, 7]).format('w ww wo'), '2 02 2', 'Jan  7 2012 should be week 2');
   assert.equal(moment([2012, 0, 13]).format('w ww wo'), '2 02 2', 'Jan 13 2012 should be week 2');
-  assert.equal(moment([2012, 0, 14]).format('w ww wo'), '2 02 2', 'Jan 14 2012 should be week 3');
+  assert.equal(moment([2012, 0, 14]).format('w ww wo'), '3 03 3', 'Jan 14 2012 should be week 3');
 });
 
 test('no leading zeros in long date formats', function () {
