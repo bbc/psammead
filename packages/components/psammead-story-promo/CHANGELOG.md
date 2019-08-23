@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 | ------- | ----------- |
+| 2.6.2 | [PR#1851](https://github.com/bbc/psammead/pull/1851) Talos - Bump Dependencies |
 | 2.6.1 | [PR#1845](https://github.com/bbc/psammead/pull/1845) Remove padding-bottom from Index Alsos Wrapper |
 | 2.6.0 | [PR#1832](https://github.com/bbc/psammead/pull/1832) Export IndexAlsos from `src/index.jsx` |
 | 2.5.3 | [PR#1826](https://github.com/bbc/psammead/pull/1826) Talos - Bump Dependencies |
