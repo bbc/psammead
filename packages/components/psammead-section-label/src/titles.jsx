@@ -19,6 +19,15 @@ const paddingDir = ({ dir }) => `padding-${dir === 'rtl' ? 'left' : 'right'}`;
 const paddingReverseDir = ({ dir }) =>
   `padding-${dir === 'rtl' ? 'right' : 'left'}`;
 
+// Flex doesn't work right on IE11.
+// This makes it work right. I don't fully understand how, but am
+// eternally grateful to the Flexbugs project.
+// https://github.com/philipwalton/flexbugs#flexbug-3
+const FlexContainerContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+`;
+
 const SectionLabelLink = styled.a.attrs(props => ({
   'aria-labelledby': props.labelId,
 }))`
@@ -120,11 +129,13 @@ export const PlainTitle = ({
   script,
   service,
 }) => (
-  <FlexContainer>
-    <Title script={script} dir={dir} id={labelId} service={service}>
-      {title}
-    </Title>
-  </FlexContainer>
+  <FlexContainerContainer>
+    <FlexContainer>
+      <Title script={script} dir={dir} id={labelId} service={service}>
+        {title}
+      </Title>
+    </FlexContainer>
+  </FlexContainerContainer>
 );
 
 PlainTitle.propTypes = {
@@ -145,14 +156,16 @@ export const LinkTitle = ({
   service,
 }) => (
   <SectionLabelLink href={href} labelId={labelId}>
-    <FlexTextContainer>
-      <Title id={labelId} dir={dir} script={script} service={service}>
-        {title}
-      </Title>
-      <IndexLinkCta dir={dir} script={script} service={service}>
-        {linkText}
-      </IndexLinkCta>
-    </FlexTextContainer>
+    <FlexContainerContainer>
+      <FlexTextContainer>
+        <Title id={labelId} dir={dir} script={script} service={service}>
+          {title}
+        </Title>
+        <IndexLinkCta dir={dir} script={script} service={service}>
+          {linkText}
+        </IndexLinkCta>
+      </FlexTextContainer>
+    </FlexContainerContainer>
   </SectionLabelLink>
 );
 
