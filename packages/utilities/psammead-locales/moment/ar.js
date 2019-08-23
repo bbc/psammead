@@ -32,29 +32,10 @@ const symbolMap = {
   '9': '9',
   '0': '0',
 };
-const numberMap = {
-  '1': '1',
-  '2': '2',
-  '3': '3',
-  '4': '4',
-  '5': '5',
-  '6': '6',
-  '7': '7',
-  '8': '8',
-  '9': '9',
-  '0': '0',
-};
 
 moment.updateLocale('ar', {
   months,
   monthsShort: months,
-  preparse(string) {
-    return string
-      .replace(/[1234567890]/g, function(match) {
-        return numberMap[match];
-      })
-      .replace(/،/g, ',');
-  },
   postformat(string) {
     return string
       .replace(/\d/g, function(match) {
