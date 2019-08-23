@@ -57,6 +57,10 @@ module.exports = class extends Generator {
   }
 
   end() {
-    this.log(chalk.blue('Success!!'));
+    this.log(
+      chalk.green(
+        `Success! You can now start developing on your new Psammead component.\nYour new package can be found here: ./packages/components/psammead-${this.props.name}`,
+      ),
+    );
   }
 };
