@@ -15,8 +15,6 @@ This package provides a collection of helper methods for implementing Jest snaps
 | resetWindowValue           | key, value                                  | {Allows you to reset the WindowValues that are previously overwritten by the setWindowValue function}                                                                                                                            |
 | suppressPropWarnings       | warnings                                    | Suppresses predicted prop warnings during tests.                                                                                                                                                                                 |
 
-//
-
 ## Installation
 
 ```jsx
