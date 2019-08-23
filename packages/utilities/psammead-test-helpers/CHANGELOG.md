@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 1.3.1 | [PR#1849](https://github.com/bbc/psammead/pull/1849) Update README.md |
 | 1.3.0 | [PR#1846](https://github.com/bbc/psammead/pull/1846/) Import test helper functions from simorgh |
 | 1.2.1 | [PR#1803](https://github.com/bbc/psammead/pull/1803/) Patches broken links on badges in documentation |
 | 1.2.0 | [PR#1794](https://github.com/bbc/psammead/pull/1794) Add david dependency badges |
