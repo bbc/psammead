@@ -10,7 +10,7 @@
     "build:storybook": "build-storybook -o storybook_dist",
     "ci:packages": "npm ci && lerna exec -- npm ci",
     "changeScanner": "node scripts/changeScanner",
-    "create": "yo .yeoman",
+    "create:package": "yo .yeoman",
     "bumpPackages": "node scripts/bumpPackages/cli",
     "bumpChangelogs": "node scripts/bumpChangelogs/cli",
     "regeneratePackageLocks": "node scripts/regeneratePackageLocks",
