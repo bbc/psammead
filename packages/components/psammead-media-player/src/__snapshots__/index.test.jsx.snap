@@ -148,6 +148,7 @@ exports[`Media Player: Canonical Entry renders an iframe when showPlaceholder is
 >
   <iframe
     allow="autoplay; fullscreen"
+    allowfullscreen=""
     class="c1"
     scrolling="no"
     src="http://foo.bar/iframe"
