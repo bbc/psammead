@@ -21,7 +21,7 @@ const tempFiles = [
 
 describe('pacakge generator', () => {
   beforeEach(() => {
-    jest.setTimeout(30000);
+    jest.setTimeout(12000);
 
     return helpers
       .run(path.join(__dirname, '.'))
@@ -39,5 +39,9 @@ describe('pacakge generator', () => {
     });
 
     assert.file(expectedFiles);
+    assert.fileContent(
+      expectedFiles[3],
+      "import React from 'react';\n\nconst FooBarComponent = () => <h1>Hello World</h1>;\n\nexport default FooBarComponent;",
+    );
   });
 });
