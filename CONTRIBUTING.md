@@ -159,7 +159,7 @@ If you wish to exclude one or more sections of this template, we advise you do s
 
 ### After merge
 
-After merging a pull request into `latest` the Jenkins pipeline publishes the changes to npm and the Psammead Storybook https://bbc.github.io/psammead. Once the pipeline runs successfully:
+After merging a pull request into `latest` the Jenkins pipeline publishes the new package versions to npm and the Psammead Storybook to github pages at https://bbc.github.io/psammead. Once the pipeline runs successfully:
 
 - Confirm the version update with `npm show {pkg} version`.
 - Confirm storybook updates at https://bbc.github.io/psammead.
