@@ -110,9 +110,14 @@ moment.defineLocale('ps', {
       .replace(/،/g, ',');
   },
   postformat(string) {
-    jalaaliHelper.addJalaliDate.bind(null, 'ps', pashtoMonths, jalaliFromats);
+    const str = jalaaliHelper.addJalaliDate(
+      'ps',
+      pashtoMonths,
+      jalaliFromats,
+      string,
+    );
 
-    return string
+    return str
       .replace(/\d/g, function(match) {
         return symbolMap[match];
       })

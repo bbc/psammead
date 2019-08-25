@@ -37,11 +37,11 @@ test('parse', function () {
 
 test('format', function () {
     var dates = [
-        ['LT', '۰۱:۰۱'],
-        ['LTS', '۰۱:۰۱:۰۱'],
-        ['LL', '۹ اوت ۲۰۱۹'],
-        ['LLL', '۹ اوت ۲۰۱۹ ۰۱:۰۱'],
-        ['LLLL', 'جمعه، ۹ اوت ۲۰۱۹ ۰۱:۰۱']
+        ['LT', '۰۱:۰۱ - ۳ شهریور ۱۳۹۸'],
+        ['LTS', '۰۱:۰۱:۰۱ - ۳ شهریور ۱۳۹۸'],
+        ['LL', '۹ اوت ۲۰۱۹ - ۱۸ مرداد ۱۳۹۸'],
+        ['LLL', '۹ اوت ۲۰۱۹ ۰۱:۰۱ - ۱۸ مرداد ۱۳۹۸'],
+        ['LLLL', 'جمعه، ۹ اوت ۲۰۱۹ ۰۱:۰۱ - ۱۸ مرداد ۱۳۹۸']
     ]
     var gdate = moment(new Date(2019, 7, 9, 1, 1, 1, 1));
 
@@ -100,7 +100,7 @@ test('format ordinal', function () {
 });
 
 test('format month', function () {
-    var expected = ['ژانویه ژانویه', 'فوریه فوریه', 'مارس مارس', 'آوریل آوریل', 'مه مه', 'ژوئن ژوئن', 'ژوئیه ژوئیه', 'اوت اوت', 'سپتامبر سپتامبر', 'اکتبر اکتبر', 'نوامبر نوامبر', 'دسامبر دسامبر'];
+    var expected = 'ژانویه ژانویه_فوریه فوریه_مارس مارس_آوریل آوریل_مه مه_ژوئن ژوئن_ژوئیه ژوئیه_اوت اوت_سپتامبر سپتامبر_اکتبر اکتبر_نوامبر نوامبر_دسامبر دسامبر'.split('_');
     for (var i = 0; i < expected.length; i++) {
         assert.equal(moment([2011, i, 1]).format('MMMM MMM'), expected[i], expected[i]);
     }
@@ -190,4 +190,38 @@ test('calendar next week', function () {
         m.hours(23).minutes(59).seconds(59).milliseconds(999);
         assert.equal(m.calendar(), m.format('dddd [ساعت] LT'), 'Today + ' + i + ' days end of day');
     }
+});
+
+test('calendar last week', function () {
+    var i, m;
+    for (i = 2; i < 7; i++) {
+        m = moment().subtract({d: i});
+        assert.equal(m.calendar(),       m.format('dddd [پیش ساعت] LT'),  'Today - ' + i + ' days current time');
+        m.hours(0).minutes(0).seconds(0).milliseconds(0);
+        assert.equal(m.calendar(),       m.format('dddd [پیش ساعت] LT'),  'Today - ' + i + ' days beginning of day');
+        m.hours(23).minutes(59).seconds(59).milliseconds(999);
+        assert.equal(m.calendar(),       m.format('dddd [پیش ساعت] LT'),  'Today - ' + i + ' days end of day');
+    }
+});
+
+test('calendar all else', function () {
+    var weeksAgo = moment().subtract({w: 1}),
+        weeksFromNow = moment().add({w: 1});
+
+    assert.equal(weeksAgo.calendar(),       weeksAgo.format('L'),  '1 week ago');
+    assert.equal(weeksFromNow.calendar(),   weeksFromNow.format('L'),  'in 1 week');
+
+    weeksAgo = moment().subtract({w: 2});
+    weeksFromNow = moment().add({w: 2});
+
+    assert.equal(weeksAgo.calendar(),       weeksAgo.format('L'),  '2 weeks ago');
+    assert.equal(weeksFromNow.calendar(),   weeksFromNow.format('L'),  'in 2 weeks');
+});
+
+test('weeks year starting sunday formatted', function () {
+    assert.equal(moment([2011, 11, 31]).format('w ww wo'), '۱ ۰۱ ۱م', 'Dec 31 2011 should be week 1');
+    assert.equal(moment([2012,  0,  6]).format('w ww wo'), '۱ ۰۱ ۱م', 'Jan  6 2012 should be week 1');
+    assert.equal(moment([2012,  0,  7]).format('w ww wo'), '۲ ۰۲ ۲م', 'Jan  7 2012 should be week 2');
+    assert.equal(moment([2012,  0, 13]).format('w ww wo'), '۲ ۰۲ ۲م', 'Jan 13 2012 should be week 2');
+    assert.equal(moment([2012,  0, 14]).format('w ww wo'), '۳ ۰۳ ۳م', 'Jan 14 2012 should be week 3');
 });

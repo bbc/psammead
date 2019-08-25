@@ -42,8 +42,13 @@ const jalaliFormats = [
 moment().locale('fa');
 moment.updateLocale('fa', {
   postformat(string) {
-    jalaaliHelper.addJalaliDate.bind(null, 'fa', persianMonths, jalaliFormats);
-    return string
+    const str = jalaaliHelper.addJalaliDate(
+      'fa',
+      persianMonths,
+      jalaliFormats,
+      string,
+    );
+    return str
       .replace(/\d/g, function(match) {
         return symbolMap[match];
       })
