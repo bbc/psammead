@@ -6,7 +6,7 @@ require('./ps');
 moment.locale('ps');
 const assert = { equal: (val1, val2) => expect(val1).toEqual(val2) };
 
-test('parse', function () {
+test('parse Gregorian months', function () {
     const testMonths = 'جنوري_فبروري_مارچ_اپریل_می_جون_جولاې_اګست_سپتمبر_اکتوبر_نومبر_ډیسمبر'.split('_');
     const shortMonths = 'جنوري_فبروري_مارچ_اپریل_می_جون_جولاې_اګست_سپتمبر_اکتوبر_نومبر_ډیسمبر'.split('_');
 
@@ -33,10 +33,10 @@ test('parse', function () {
 });
 
 
-test('format', function () {
+test('format dates and times', function () {
     var dates = [
-        ['LT', '۱۵:۲۵ - ۳ وږی ۱۳۹۸'],
-        ['LTS', '۱۵:۲۵:۵۰ - ۳ وږی ۱۳۹۸'],
+        ['LT', '۱۵:۲۵ - ٤ وږی ۱۳۹۸'],
+        ['LTS', '۱۵:۲۵:۵۰ - ٤ وږی ۱۳۹۸'],
         ['LL', '۱٤ فبروري ۲۰۱۰ - ۲۵ سلواغه ۱۳۸۸'],
         ['LLL', '۱٤ فبروري ۲۰۱۰ ۱۵:۲۵ - ۲۵ سلواغه ۱۳۸۸'],
         ['LLLL', 'اتوار، ۱٤ فبروري ۲۰۱۰ ۱۵:۲۵ - ۲۵ سلواغه ۱۳۸۸']
@@ -97,7 +97,7 @@ test('format ordinal', function () {
     assert.equal(moment([2011, 0, 31]).format('DDDo'), '۳۱', '۳۱');
 });
 
-test('format month', function () {
+test('format Gregorian month', function () {
     var expected = ['جنوري جنوري', 'فبروري فبروري', 'مارچ مارچ', 'اپریل اپریل', 'می می', 'جون جون', 'جولاې جولاې', 'اګست اګست', 'سپتمبر سپتمبر', 'اکتوبر اکتوبر', 'نومبر نومبر', 'ډیسمبر ډیسمبر'];
     for (var i = 0; i < expected.length; i++) {
         assert.equal(moment([2011, i, 1]).format('MMMM MMM'), expected[i], expected[i]);

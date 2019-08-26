@@ -8,7 +8,7 @@ moment.locale('fa');
 
 const assert = { equal: (val1, val2) => expect(val1).toEqual(val2) };
 
-test('parse', function () {
+test('parse Gregorian months', function () {
 
     const testMonths = 'ژانویه_فوریه_مارس_آوریل_مه_ژوئن_ژوئیه_اوت_سپتامبر_اکتبر_نوامبر_دسامبر'.split('_');
     const shortMonths = 'ژانویه_فوریه_مارس_آوریل_مه_ژوئن_ژوئیه_اوت_سپتامبر_اکتبر_نوامبر_دسامبر'.split('_');
@@ -35,10 +35,10 @@ test('parse', function () {
     }
 });
 
-test('format', function () {
+test('format dates and times', function () {
     var dates = [
-        ['LT', '۰۱:۰۱ - ۳ شهریور ۱۳۹۸'],
-        ['LTS', '۰۱:۰۱:۰۱ - ۳ شهریور ۱۳۹۸'],
+        ['LT', '۰۱:۰۱ - ٤ شهریور ۱۳۹۸'],
+        ['LTS', '۰۱:۰۱:۰۱ - ٤ شهریور ۱۳۹۸'],
         ['LL', '۹ اوت ۲۰۱۹ - ۱۸ مرداد ۱۳۹۸'],
         ['LLL', '۹ اوت ۲۰۱۹ ۰۱:۰۱ - ۱۸ مرداد ۱۳۹۸'],
         ['LLLL', 'جمعه، ۹ اوت ۲۰۱۹ ۰۱:۰۱ - ۱۸ مرداد ۱۳۹۸']
