@@ -11,7 +11,6 @@ jest.mock('github-api');
 global.console.log = jest.fn();
 
 const createPullRequestMock = jest.fn();
-createPullRequestMock.mockImplementation(() => Promise.resolve('success'));
 const getRepoMock = jest.fn(() => ({
   createPullRequest: createPullRequestMock,
 }));
@@ -24,6 +23,11 @@ github.mockImplementation(githubMock);
 process.env.GITHUB_TOKEN = 'fake_github_token';
 
 describe('createPullRequest', () => {
+  beforeEach(() => {
+    jest.clearAllMocks();
+    createPullRequestMock.mockImplementation(() => Promise.resolve('success'));
+  });
+
   it('should call github-api correctly', async () => {
     await createPullRequest({
       packages: ['@bbc/apples', '@bbc/pears'],
@@ -56,5 +60,22 @@ describe('createPullRequest', () => {
     }).catch(e => {
       expect(e.message).toEqual('something bad happened');
     });
+  });
+
+  it('should shorten the title', async () => {
+    await createPullRequest({
+      packages: ['@bbc/apples', '@bbc/pears', '@bbc/grapes', '@bbc/oranges'],
+      bumpedPackages: ['@bbc/grapes', '@bbc/oranges'],
+      branchName: 'foobar',
+    });
+    expect(createPullRequestMock).toHaveBeenCalledWith({
+      body: 'pull request body',
+      base: 'latest',
+      head: 'foobar',
+      title: 'Talos - Bump @bbc/apples, @bbc/pears, @bbc/grapes...',
+    });
+    expect(global.console.log).toHaveBeenCalledWith(
+      '* Creating Pull Request with title "Talos - Bump @bbc/apples, @bbc/pears, @bbc/grapes..."',
+    );
   });
 });

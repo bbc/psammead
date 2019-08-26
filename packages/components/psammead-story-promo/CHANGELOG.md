@@ -4,6 +4,7 @@
 | Version | Description |
 | ------- | ----------- |
 | 2.7.0 | [PR#1835](https://github.com/bbc/psammead/pull/1835) Add desktop width top story and show indexAlsos |
+| 2.6.1 | [PR#1845](https://github.com/bbc/psammead/pull/1845) Remove padding-bottom from Index Alsos Wrapper |
 | 2.6.0 | [PR#1832](https://github.com/bbc/psammead/pull/1832) Export IndexAlsos from `src/index.jsx` |
 | 2.5.3 | [PR#1826](https://github.com/bbc/psammead/pull/1826) Talos - Bump Dependencies |
 | 2.5.2 | [PR#1804](https://github.com/bbc/psammead/pull/1804) Talos - Bump Dependencies |

@@ -9,9 +9,11 @@ jest.mock('shelljs', () => ({
 describe('upgradeDependencies', () => {
   it('should run command to update all packages that are dependent on passed in packages', () => {
     upgradeDependencies(['@bbc/psammead-brand', '@bbc/psammead-image']);
-    const [[command]] = exec.mock.calls;
-
-    expect(command).toEqual(
+    const [[firstCommand], [secondCommand]] = exec.mock.calls;
+    expect(firstCommand).toEqual(
+      'npx npm-check-updates @bbc/psammead-brand, @bbc/psammead-image --packageFile package.json -u -a --jsonUpgraded',
+    );
+    expect(secondCommand).toEqual(
       'npx lerna exec --parallel --no-bail -- npx npm-check-updates @bbc/psammead-brand, @bbc/psammead-image -u -a --jsonUpgraded',
     );
   });

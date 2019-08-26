@@ -11,7 +11,7 @@ import VisuallyHiddenText from '@bbc/psammead-visually-hidden-text';
 const StyledIndexAlsos = styled.div`
   position: relative;
   z-index: 2;
-  padding: ${GEL_SPACING_DBL} 0 ${GEL_SPACING};
+  padding: ${GEL_SPACING_DBL} 0 0;
 `;
 
 const StyledIndexAlso = styled.div`
