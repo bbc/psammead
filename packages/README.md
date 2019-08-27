@@ -28,7 +28,7 @@ NB all Development Dependencies are in the top level package.json, none are in t
 | [`@bbc/psammead-timestamp`](./components/psammead-timestamp) |[![npm version](https://img.shields.io/npm/v/@bbc/psammead-timestamp.svg)](https://www.npmjs.com/package/@bbc/psammead-timestamp) |[![Dependency Status](https://david-dm.org/bbc/psammead.svg?path=packages/components/psammead-timestamp)](https://david-dm.org/bbc/psammead?path=packages/components/psammead-timestamp) | [![peerDependencies Status](https://david-dm.org/bbc/psammead/peer-status.svg?path=packages/components/psammead-timestamp)](https://david-dm.org/bbc/psammead?path=packages/components/psammead-timestamp&type=peer) |
 | [`@bbc/psammead-visually-hidden-text`](./components/psammead-visually-hidden-text) |[![npm version](https://img.shields.io/npm/v/@bbc/psammead-visually-hidden-text.svg)](https://www.npmjs.com/package/@bbc/psammead-visually-hidden-text) |[![Dependency Status](https://david-dm.org/bbc/psammead.svg?path=packages/components/psammead-visually-hidden-text)](https://david-dm.org/bbc/psammead?path=packages/components/psammead-visually-hidden-text) | [![peerDependencies Status](https://david-dm.org/bbc/psammead/peer-status.svg?path=packages/components/psammead-visually-hidden-text)](https://david-dm.org/bbc/psammead?path=packages/components/psammead-visually-hidden-text&type=peer) |
 
-## [Containers](.containers)
+## [Containers](./containers)
 
 <!-- prettier-ignore -->
 | Package | Version | Dependencies | Peer Dependencies
