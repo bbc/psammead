@@ -153,7 +153,7 @@ export const Headline = styled.h3`
   margin: 0; /* Reset */
   padding-bottom: ${GEL_SPACING};
   @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
-    ${({ script }) => script && getParagon(script)};
+    ${props => (props.script ? getParagon(props.script) : '')};
   }
 `;
 
