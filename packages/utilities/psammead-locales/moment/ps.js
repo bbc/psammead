@@ -49,7 +49,7 @@ moment.defineLocale('ps', {
     '_',
   ),
   weekdays: 'اتوار_ګول_نهه_شورو_زیارت_جمعه_خالي'.split('_'),
-  weekdaysShort: 'اتوار_ ګول_نهه_شورو_زیارت_جمعه_خالي '.split('_'),
+  weekdaysShort: 'اتوار_ګول_نهه_شورو_زیارت_جمعه_خالي '.split('_'),
   weekdaysMin: 'ا_ګ_ن_ش_ز_ج_خ'.split('_'),
   weekdaysParseExact: true,
   longDateFormat: {
