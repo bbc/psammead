@@ -35,7 +35,7 @@ NB all Development Dependencies are in the top level package.json, none are in t
 |--------|--------|------------|------------|
 | [`@bbc/psammead-timestamp-container`](.containers/psammead-timestamp-container) |[![npm version](https://img.shields.io/npm/v/@bbc/psammead-timestamp-container.svg)](https://www.npmjs.com/package/@bbc/psammead-timestamp-container) |[![Dependency Status](https://david-dm.org/bbc/psammead.svg?path=packages/containers/psammead-timestamp-container)](https://david-dm.org/bbc/psammead?path=packages/containers/psammead-timestamp-container) | [![peerDependencies Status](https://david-dm.org/bbc/psammead/peer-status.svg?path=packages/containers/psammead-timestamp-container)](https://david-dm.org/bbc/psammead?path=packages/containers/psammead-timestamp-container&type=peer) |
 
-## [Utilities](.utilities)
+## [Utilities](./utilities)
 
 <!-- prettier-ignore -->
 | Package | Version | Dependencies | Peer Dependencies
