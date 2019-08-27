@@ -9,7 +9,9 @@ describe('commitChanges', () => {
     await commitChanges('commit message');
 
     expect(runExec).toHaveBeenCalledTimes(3);
-    expect(runExec).toHaveBeenCalledWith({ command: 'git add packages' });
+    expect(runExec).toHaveBeenCalledWith({
+      command: 'git add package.json package-lock.json CHANGELOG.md packages',
+    });
     expect(runExec).toHaveBeenCalledWith({
       command: 'git commit -m "commit message"',
     });

@@ -5,7 +5,7 @@ const getPackages = require('../utilities/getPackages');
 const runExec = (version, packageDir) =>
   new Promise((resolve, reject) => {
     exec(
-      `npm version ${version}`,
+      `npm --no-git-tag-version version ${version}`,
       {
         cwd: packageDir,
       },
