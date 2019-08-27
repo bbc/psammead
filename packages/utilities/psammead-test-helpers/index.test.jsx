@@ -104,5 +104,4 @@ describe('Psammead test helpers', () => {
       testHelpersFromSrc.testUtilityPackages,
     );
   });
-  testHelpers.isNull('some null component', null);
 });
