@@ -3,13 +3,14 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 2.2.3 | [PR#1847](https://github.com/bbc/psammead/pull/1847) Fixed Telugu typos |
 | 2.2.2 | [PR#1806](https://github.com/bbc/psammead/pull/1806/) Change strings to booleans |
 | 2.2.1 | [PR#1803](https://github.com/bbc/psammead/pull/1803/) Patches broken links on badges in documentation |
 | 2.2.0 | [PR#1794](https://github.com/bbc/psammead/pull/1794) Add david dependency badges |
 | 2.1.0 | [PR#1759](https://github.com/bbc/psammead/pull/1759) Add Uzbek SVG & update names for Telugu & Ukrainian. |
 | 2.0.1 | [PR#1682](https://github.com/bbc/psammead/pull/1682) Move all dev dependencies to top level package.json |
 | 2.0.0   | [PR#1646](https://github.com/bbc/psammead/pull/1646) Add SVGs for these services japanese, mundo, punjabi. Update SVG name from turkish to turkce. Update outline styles of SVG to be white. |
-| 1.2.0   | [PR#1523](https://github.com/bbc/psammead/pull/1523) Add SVGs for these services: afaanoromoo, afrique, amharic, arabic, azeri, bengali, burmese, gahuza, gujarati, hausa, hindi, igbo, indonesia, korean, kyrgyz, marathi, nepali, news, pashto, persian, pidgin, russian, serbian, sinhala, somali, swahili, tamil, telegu, thai, tigrinya, turkish, urdu, ukchina, ukranian, vietnamese, zhongwen. Update these existing SVGs: igbo, news, persian, pidgin, thai, yoruba.  |
+| 1.2.0   | [PR#1523](https://github.com/bbc/psammead/pull/1523) Add SVGs for these services: afaanoromoo, afrique, amharic, arabic, azeri, bengali, burmese, gahuza, gujarati, hausa, hindi, igbo, indonesia, korean, kyrgyz, marathi, nepali, news, pashto, persian, pidgin, russian, serbian, sinhala, somali, swahili, tamil, telugu, thai, tigrinya, turkish, urdu, ukchina, ukranian, vietnamese, zhongwen. Update these existing SVGs: igbo, news, persian, pidgin, thai, yoruba.  |
 | 1.1.1   | [PR#1360](https://github.com/bbc/psammead/pull/1360) Bump because NPM didnt publish properly for some reason |
 | 1.1.0   | [PR#1214](https://github.com/bbc/psammead/pull/1214) Export ESM modules via existing API |
 | 1.0.6   | [PR#1179](https://github.com/bbc/psammead/pull/1179) use `psammead-test-helpers@1.0.2`|

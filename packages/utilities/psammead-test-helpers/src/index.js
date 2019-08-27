@@ -1,6 +1,7 @@
 import renderer from 'react-test-renderer';
 import { render } from '@testing-library/react';
 import 'jest-styled-components';
+import deepClone from 'ramda/src/clone';
 import ShallowRenderer from 'react-test-renderer/shallow';
 
 export const shouldMatchSnapshot = (title, component) => {
@@ -30,6 +31,41 @@ export const isNull = (title, component) => {
     const tree = renderer.create(component).toJSON();
     expect(tree).toBeNull();
   });
+};
+
+export const setWindowValue = (key, value) => {
+  const windowValue = window[key];
+  delete window[key];
+
+  let newValue = value;
+
+  if (value && typeof value === 'object') {
+    newValue = {
+      ...deepClone(windowValue),
+      ...value,
+    };
+  }
+
+  Object.defineProperty(window, key, {
+    value: newValue,
+    writable: true,
+  });
+};
+
+export const resetWindowValue = (key, value) => {
+  Object.defineProperty(window, key, {
+    value,
+    writable: true,
+  });
+};
+
+export const suppressPropWarnings = warnings => {
+  const { expectedWarnings } = window;
+  if (expectedWarnings && Array.isArray(expectedWarnings)) {
+    window.expectedWarnings = [...expectedWarnings, warnings];
+  } else {
+    window.expectedWarnings = [warnings];
+  }
 };
 
 const errorIfMissingKey = (keys, object, message) => {
