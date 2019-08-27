@@ -1,6 +1,7 @@
 /* eslint-disable func-names */
 const moment = require('moment-timezone/moment-timezone');
 const jalaaliHelper = require('./jalaali');
+const stringHelper = require('./stringHelper');
 
 const assert = { equal: (val1, val2) => expect(val1).toEqual(val2) };
 const pashtoJalaliFromats = [
@@ -51,8 +52,10 @@ test('getJalaaliDatetime for pashto locale', function() {
     true,
   );
   assert.equal(
-    jalaaliHelper.getJalaaliDatetime(gregorinaMonent, pashtoMonths),
-    '11 سلواغه 1397',
+    stringHelper.useEasternNumerals(
+      jalaaliHelper.getJalaaliDatetime(gregorinaMonent, pashtoMonths),
+    ),
+    '۱۱ سلواغه ۱۳۹۷',
   );
 });
 
@@ -64,7 +67,9 @@ test('getJalaaliDatetime for persian locale', function() {
     true,
   );
   assert.equal(
-    jalaaliHelper.getJalaaliDatetime(gregorinaMonent, persianMonths),
-    '11 بهمن 1397',
+    stringHelper.useEasternNumerals(
+      jalaaliHelper.getJalaaliDatetime(gregorinaMonent, persianMonths),
+    ),
+    '۱۱ بهمن ۱۳۹۷',
   );
 });
