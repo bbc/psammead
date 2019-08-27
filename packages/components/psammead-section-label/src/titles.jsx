@@ -23,7 +23,7 @@ const paddingReverseDir = ({ dir }) =>
 // This makes it work right. I don't fully understand how, but am
 // eternally grateful to the Flexbugs project.
 // https://github.com/philipwalton/flexbugs#flexbug-3
-const FlexContainerContainer = styled.div`
+const FlexColumn = styled.div`
   display: flex;
   flex-direction: column;
 `;
@@ -45,7 +45,7 @@ SectionLabelLink.propTypes = {
   labelId: string.isRequired,
 };
 
-const FlexContainer = styled.span`
+const FlexRow = styled.span`
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
@@ -53,13 +53,13 @@ const FlexContainer = styled.span`
 
   align-items: baseline;
   ${MEDIA_QUERY_TYPOGRAPHY.LAPTOP_AND_LARGER} {
-    /* Allows the IndexLinkCta to take up extra vertical space and unsures bar is hidden
+    /* Allows the IndexLinkCta to take up extra vertical space and ensures bar is hidden
        with very long section titles over 600px */
     align-items: stretch;
   }
 `;
 
-const FlexTextContainer = styled(FlexContainer).attrs({
+const FlexTextRow = styled(FlexRow).attrs({
   role: 'text',
 })``;
 
@@ -85,7 +85,7 @@ const Title = styled.span`
     ${paddingDir}: ${GEL_SPACING_DBL};
   }
 
-  /* needed to ensure always vertically centered even when FlexContainer changes alignment */
+  /* needed to ensure always vertically centered even when FlexRow changes alignment */
   display: flex;
   align-items: center;
 `;
@@ -111,7 +111,7 @@ const IndexLinkCta = styled.span.attrs({
   white-space: nowrap;
   ${paddingReverseDir}: ${GEL_SPACING_DBL};
 
-  /* needed to ensure always vertically centered even when FlexContainer changes alignment */
+  /* needed to ensure always vertically centered even when FlexRow changes alignment */
   display: flex;
   align-items: center;
 `;
@@ -129,13 +129,13 @@ export const PlainTitle = ({
   script,
   service,
 }) => (
-  <FlexContainerContainer>
-    <FlexContainer>
+  <FlexColumn>
+    <FlexRow>
       <Title script={script} dir={dir} id={labelId} service={service}>
         {title}
       </Title>
-    </FlexContainer>
-  </FlexContainerContainer>
+    </FlexRow>
+  </FlexColumn>
 );
 
 PlainTitle.propTypes = {
@@ -156,16 +156,16 @@ export const LinkTitle = ({
   service,
 }) => (
   <SectionLabelLink href={href} labelId={labelId}>
-    <FlexContainerContainer>
-      <FlexTextContainer>
+    <FlexColumn>
+      <FlexTextRow>
         <Title id={labelId} dir={dir} script={script} service={service}>
           {title}
         </Title>
         <IndexLinkCta dir={dir} script={script} service={service}>
           {linkText}
         </IndexLinkCta>
-      </FlexTextContainer>
-    </FlexContainerContainer>
+      </FlexTextRow>
+    </FlexColumn>
   </SectionLabelLink>
 );
 
