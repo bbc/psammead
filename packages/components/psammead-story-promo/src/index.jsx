@@ -11,12 +11,12 @@ import {
   GEL_GROUP_2_SCREEN_WIDTH_MIN,
   GEL_GROUP_2_SCREEN_WIDTH_MAX,
   GEL_GROUP_3_SCREEN_WIDTH_MIN,
+  GEL_GROUP_3_SCREEN_WIDTH_MAX,
   GEL_GROUP_5_SCREEN_WIDTH_MIN,
   GEL_GROUP_4_SCREEN_WIDTH_MAX,
 } from '@bbc/gel-foundations/breakpoints';
 import {
   getPica,
-  getGreatPrimer,
   getParagon,
   getLongPrimer,
 } from '@bbc/gel-foundations/typography';
@@ -148,13 +148,12 @@ export const Headline = styled.h3`
 
     return topStory ? getParagon(script) : getPica(script);
   }}
-
   color: ${C_EBON};
   ${({ service }) => getSerifMedium(service)}
   margin: 0; /* Reset */
   padding-bottom: ${GEL_SPACING};
   @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
-    ${props => (props.script ? getGreatPrimer(props.script) : '')};
+    ${({ script }) => script && getParagon(script)};
   }
 `;
 
@@ -166,13 +165,19 @@ export const Summary = styled.p`
   padding-bottom: ${GEL_SPACING};
 
   ${({ topStory }) =>
-    !topStory &&
-    css`
-      @media (max-width: ${GEL_GROUP_2_SCREEN_WIDTH_MAX}) {
-        display: none;
-        visibility: hidden;
-      }
-    `}
+    topStory
+      ? css`
+          @media (max-width: ${GEL_GROUP_3_SCREEN_WIDTH_MAX}) {
+            display: none;
+            visibility: hidden;
+          }
+        `
+      : css`
+          @media (max-width: ${GEL_GROUP_2_SCREEN_WIDTH_MAX}) {
+            display: none;
+            visibility: hidden;
+          }
+        `}
 `;
 
 const TextGridColumnsTopStory = css`
