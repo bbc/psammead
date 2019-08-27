@@ -10,7 +10,7 @@ moment.locale('ar');
 // An example of these tests can be seen at https://github.com/moment/moment/blob/develop/src/test/locale/en-gb.js
 const assert = { equal: (val1, val2) => expect(val1).toEqual(val2) };
 
-const months = [
+const dualMonthNames = [
   'يناير/ كانون الثاني',
   'فبراير/ شباط',
   'مارس/ آذار',
@@ -26,7 +26,7 @@ const months = [
 ];
 
 test('parse', function () {
-  var tests = months, i;
+  var tests = dualMonthNames, i;
   function equalTest(input, mmm, i) {
     assert.equal(moment(input, mmm).month(), i, input + ' should be month ' + (i + 1) + ' instead is month ' + moment(input, mmm).month());
   }
@@ -114,7 +114,7 @@ test('format ordinal', function () {
 });
 
 test('format month', function () {
-  var expected = months, i;
+  var expected = dualMonthNames, i;
   for (i = 0; i < expected.length; i++) {
     assert.equal(moment([2011, i, 1]).format('MMMM'), expected[i], expected[i]);
     assert.equal(moment([2011, i, 1]).format('MMM'), expected[i], expected[i]);

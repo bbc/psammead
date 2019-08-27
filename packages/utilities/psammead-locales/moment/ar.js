@@ -5,7 +5,7 @@ require('moment/locale/ar');
 // some other keys have been left as set upstream
 // see https://github.com/moment/moment/blob/develop/src/locale/ar.js
 
-const months = [
+const dualMonthNames = [
   'يناير/ كانون الثاني',
   'فبراير/ شباط',
   'مارس/ آذار',
@@ -21,8 +21,8 @@ const months = [
 ];
 
 moment.updateLocale('ar', {
-  months,
-  monthsShort: months,
+  months: dualMonthNames,
+  monthsShort: dualMonthNames,
   postformat(string) {
     return string.replace(/,/g, '،');
   },
