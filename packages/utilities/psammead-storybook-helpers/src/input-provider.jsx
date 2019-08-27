@@ -4,12 +4,12 @@ import { Helmet } from 'react-helmet';
 import * as scripts from '@bbc/gel-foundations/scripts';
 import LANGUAGE_VARIANTS from './text-variants';
 
-const inputProvider = (
+const inputProvider = ({
   slots,
   componentFunction,
   services,
   options = {},
-) => () => {
+}) => () => {
   let serviceNames = Object.keys(LANGUAGE_VARIANTS);
 
   if (services) {
