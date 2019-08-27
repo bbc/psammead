@@ -35,12 +35,12 @@ test('parse Gregorian months', function () {
 
 test('format dates and times', function () {
     var dates = [
-        ['LT', '۱۵:۲۵ - ۵ وږی ۱۳۹۸'],
-        ['LTS', '۱۵:۲۵:۵۰ - ۵ وږی ۱۳۹۸'],
-        ['L','۱٤/۰۲/۲۰۱۰ - ۲۵ سلواغه ۱۳۸۸'],
-        ['LL', '۱٤ فبروري ۲۰۱۰ - ۲۵ سلواغه ۱۳۸۸'],
-        ['LLL', '۱٤ فبروري ۲۰۱۰ ۱۵:۲۵ - ۲۵ سلواغه ۱۳۸۸'],
-        ['LLLL', 'اتوار، ۱٤ فبروري ۲۰۱۰ ۱۵:۲۵ - ۲۵ سلواغه ۱۳۸۸']
+        ['LT', '<time datetime = \"2019-8-27\"> ۱۵:۲۵ </time> - <time> ۵ وږی ۱۳۹۸</time>'],
+        ['LTS', '<time datetime = \"2019-8-27\"> ۱۵:۲۵:۵۰ </time> - <time> ۵ وږی ۱۳۹۸</time>'],
+        ['L','<time datetime = \"2010-2-14\"> ۱٤/۰۲/۲۰۱۰ </time> - <time> ۲۵ سلواغه ۱۳۸۸</time>'],
+        ['LL', '<time datetime = \"2010-2-14\"> ۱٤ فبروري ۲۰۱۰ </time> - <time> ۲۵ سلواغه ۱۳۸۸</time>'],
+        ['LLL', '<time datetime = \"2010-2-14\"> ۱٤ فبروري ۲۰۱۰ ۱۵:۲۵ </time> - <time> ۲۵ سلواغه ۱۳۸۸</time>'],
+        ['LLLL', '<time datetime = \"2010-2-14\"> اتوار، ۱٤ فبروري ۲۰۱۰ ۱۵:۲۵ </time> - <time> ۲۵ سلواغه ۱۳۸۸</time>']
     ]
     var gdate = moment(new Date(2010, 1, 14, 15, 25, 50, 125));
 

@@ -48,10 +48,13 @@ moment.updateLocale('fa', {
       jalaliFormats,
       string,
     );
-    return str
-      .replace(/\d/g, function(match) {
-        return symbolMap[match];
-      })
-      .replace(/,/g, '،');
+    if (!str.includes('datetime =')) {
+      return str
+        .replace(/\d/g, function(match) {
+          return symbolMap[match];
+        })
+        .replace(/,/g, '،');
+    }
+    return str;
   },
 });
