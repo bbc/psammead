@@ -5,6 +5,7 @@
 The `StoryPromo` component is designed to be used on 'index' pages, which are pages that link to other articles/stories. It supports having an image on the left of the promo with info on the right. This info can be any collection of nodes, however typically these would be a headline, text summary and timestamp.
 
 ## Exports
+
 `/index-alsos` - components for links to stories that are related to the top story.
 
 ## Installation
@@ -85,7 +86,9 @@ On the other hand, when there is exactly one Index Also, it should use the `Inde
 | script         | object | yes      | latin | { canon: { groupA: { fontSize: '28', lineHeight: '32',}, groupB: { fontSize: '32', lineHeight: '36', }, groupD: { fontSize: '44', lineHeight: '48', }, }, trafalgar: { groupA: { fontSize: '20', lineHeight: '24', }, groupB: { fontSize: '24', lineHeight: '28', }, groupD: { fontSize: '32', lineHeight: '36', }, }, }|
 | service        | string | yes      | N/A     | `'news'`|
 | url            | string | yes      | N/A     | `'https://www.bbc.co.uk/news'`|
+| dir            | string | no       | `ltr`   | `rtl`   |
 | mediaIndicator | node   | no       | null    | `<MediaIndicator service="news" type="video" indexAlsos/>` |
+| mediaType      | string | no       | null    | `Video` |
 
 #### IndexAlso Props
 
@@ -96,7 +99,9 @@ On the other hand, when there is exactly one Index Also, it should use the `Inde
 | script         | object | yes      | latin | { canon: { groupA: { fontSize: '28', lineHeight: '32',}, groupB: { fontSize: '32', lineHeight: '36', }, groupD: { fontSize: '44', lineHeight: '48', }, }, trafalgar: { groupA: { fontSize: '20', lineHeight: '24', }, groupB: { fontSize: '24', lineHeight: '28', }, groupD: { fontSize: '32', lineHeight: '36', }, }, }|
 | service        | string | yes      | N/A     | `'news'`|
 | url            | string | yes      | N/A     | `'https://www.bbc.co.uk/news'`|
+| dir            | string | no       | `ltr`   | `rtl`   |
 | mediaIndicator | node   | no       | null    | `<MediaIndicator service="news" type="video" indexAlsos/>` |
+| mediaType      | string | no       | null    | `Video` |
 
 ## Usage
 

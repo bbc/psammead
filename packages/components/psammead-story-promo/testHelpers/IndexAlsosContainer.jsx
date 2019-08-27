@@ -1,5 +1,5 @@
-import React from 'react';
-import { oneOfType, arrayOf, shape, number, string } from 'prop-types';
+import React, { Fragment } from 'react';
+import { oneOfType, oneOf, arrayOf, shape, number, string } from 'prop-types';
 import { scriptPropType } from '@bbc/gel-foundations/prop-types';
 import MediaIndicator from '@bbc/psammead-media-indicator';
 import {
@@ -9,65 +9,46 @@ import {
   IndexAlsosLi,
 } from '../src/IndexAlsos/index';
 
-const IndexAlsosContainer = ({ alsoItems, script, service }) => {
-  const getMediaType = (cpsType, mediaType) => {
-    const isPGL = cpsType === 'PGL';
-    const isMedia = cpsType === 'MAP';
-    const media = mediaType || 'Video';
+const MAX_NUM_INDEX_ALSOS = 3; // Cap the number of Index Alsos at 3.
 
-    if (!isPGL && !isMedia) {
-      return null;
-    }
+const getMediaType = (cpsType, mediaType) => {
+  const isPGL = cpsType === 'PGL';
+  const isMedia = cpsType === 'MAP';
+  const media = mediaType || 'Video';
 
-    const type = isPGL ? 'photogallery' : media.toLowerCase();
+  if (!isPGL && !isMedia) {
+    return null;
+  }
 
-    return type;
-  };
+  const type = isPGL ? 'photogallery' : media.toLowerCase();
 
-  const IndexAlsosMediaIndicator = (cpsType, mediaType) => {
-    const indexAlsosMediaType = getMediaType(cpsType, mediaType);
+  return type;
+};
 
-    return indexAlsosMediaType ? (
-      <MediaIndicator service={service} type={indexAlsosMediaType} indexAlsos />
-    ) : null;
-  };
+const buildIndexAlsosMediaIndicator = (cpsType, mediaType, service) => {
+  const indexAlsosMediaType = getMediaType(cpsType, mediaType);
+
+  return indexAlsosMediaType ? (
+    <MediaIndicator service={service} type={indexAlsosMediaType} indexAlsos />
+  ) : null;
+};
+
+/*
+ * When there are more than one Index Alsos, they should be wrapped in a list item `IndexAlsosLi` within an unordered list `IndexAlsosUl`.
+ * On the other hand, when there is exactly one Index Also, it should use the `IndexAlso` component and it should not be contained within a list.
+ */
+const IndexAlsosContainer = ({ alsoItems, script, service, dir }) => {
+  const IndexAlsosWrapper = alsoItems.length > 1 ? IndexAlsosUl : Fragment;
+  const IndexAlsoItem = alsoItems.length > 1 ? IndexAlsosLi : IndexAlso;
 
   return (
     <IndexAlsos offScreenText="Related content">
-      {alsoItems.length > 1 ? (
-        <IndexAlsosUl>
-          {alsoItems.map(item => {
-            const { id, cpsType, mediaType } = item;
-            const { headline } = item.headlines;
-            const url = item.locators.assetUri;
-            const indexAlsoMediaIndicator = IndexAlsosMediaIndicator(
-              cpsType,
-              mediaType,
-              service,
-            );
-            const indexAlsoMediaType = getMediaType(cpsType, mediaType);
-
-            return (
-              <IndexAlsosLi
-                key={id}
-                script={script}
-                service={service}
-                url={url}
-                mediaIndicator={indexAlsoMediaIndicator}
-                mediaType={indexAlsoMediaType}
-              >
-                {headline}
-              </IndexAlsosLi>
-            );
-          })}
-        </IndexAlsosUl>
-      ) : (
-        // When there is exactly one related item, it should not be contained within a list.
-        (() => {
-          const { cpsType, mediaType } = alsoItems;
-          const { headline } = alsoItems.headlines;
-          const url = alsoItems.locators.assetUri;
-          const indexAlsoMediaIndicator = IndexAlsosMediaIndicator(
+      <IndexAlsosWrapper>
+        {alsoItems.slice(0, MAX_NUM_INDEX_ALSOS).map(item => {
+          const { id, cpsType, mediaType } = item;
+          const { headline } = item.headlines;
+          const url = item.locators.assetUri;
+          const indexAlsoMediaIndicator = buildIndexAlsosMediaIndicator(
             cpsType,
             mediaType,
             service,
@@ -75,18 +56,20 @@ const IndexAlsosContainer = ({ alsoItems, script, service }) => {
           const indexAlsoMediaType = getMediaType(cpsType, mediaType);
 
           return (
-            <IndexAlso
+            <IndexAlsoItem
+              key={id}
               script={script}
               service={service}
               url={url}
+              dir={dir}
               mediaIndicator={indexAlsoMediaIndicator}
               mediaType={indexAlsoMediaType}
             >
               {headline}
-            </IndexAlso>
+            </IndexAlsoItem>
           );
-        })()
-      )}
+        })}
+      </IndexAlsosWrapper>
     </IndexAlsos>
   );
 };
@@ -111,6 +94,11 @@ IndexAlsosContainer.propTypes = {
     .isRequired,
   script: shape(scriptPropType).isRequired,
   service: string.isRequired,
+  dir: 'ltr',
+};
+
+IndexAlsosContainer.defaultProps = {
+  dir: oneOf(['ltr', 'rtl']),
 };
 
 export default IndexAlsosContainer;
