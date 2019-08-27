@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 2.3.5 | [PR#1860](https://github.com/bbc/psammead/pull/1860) Make flexbox section labels work on IE11 |
 | 2.3.4 | [PR#1829](https://github.com/bbc/psammead/pull/1829) Hide section labels for all breakpoints |
 | 2.3.3 | [PR#1826](https://github.com/bbc/psammead/pull/1826) Talos - Bump Dependencies |
 | 2.3.2 | [PR#1804](https://github.com/bbc/psammead/pull/1804) Talos - Bump Dependencies |
