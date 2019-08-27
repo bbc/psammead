@@ -1,7 +1,7 @@
 const moment = require('moment-timezone/moment-timezone');
 const jalali = require('jalaali-js');
 
-function getJalaliString(gregorianMoment, jalaliMonths) {
+function getJalaaliDatetime(gregorianMoment, jalaliMonths) {
   const jalaliDate = jalali.toJalaali(
     gregorianMoment.year(),
     gregorianMoment.month() + 1,
@@ -19,7 +19,7 @@ function addJalaliDate(locale, jalaliMonths, jalaliFormats, gregorianString) {
   // gregorianString must be in one of jalaliFormats, and return an isValid moment for
   // Jalali calendar to be applied to - e.g this will exclude timeago timestamps
   if (gregorianMoment.isValid() && jalaliMonths.length === 12) {
-    return `${gregorianString} - ${getJalaliString(
+    return `${gregorianString} - ${getJalaaliDatetime(
       gregorianMoment,
       jalaliMonths,
     )}`;
@@ -28,3 +28,4 @@ function addJalaliDate(locale, jalaliMonths, jalaliFormats, gregorianString) {
 }
 
 exports.addJalaliDate = addJalaliDate;
+exports.getJalaaliDatetime = getJalaaliDatetime;
