@@ -11,12 +11,11 @@ import {
   GEL_GROUP_2_SCREEN_WIDTH_MIN,
   GEL_GROUP_2_SCREEN_WIDTH_MAX,
   GEL_GROUP_3_SCREEN_WIDTH_MIN,
-  GEL_GROUP_3_SCREEN_WIDTH_MAX,
   GEL_GROUP_5_SCREEN_WIDTH_MIN,
-  GEL_GROUP_4_SCREEN_WIDTH_MAX,
 } from '@bbc/gel-foundations/breakpoints';
 import {
   getPica,
+  getGreatPrimer,
   getParagon,
   getLongPrimer,
 } from '@bbc/gel-foundations/typography';
@@ -48,8 +47,6 @@ const eightOfTwelveColumnsMaxScaleable = `66.67%`;
 const fullWidthColumnsMaxScaleable = `100%`;
 // (12 / 12) * 100 = 100 = 100%
 
-const halfWidthColumnsMaxScaleable = `50%`;
-
 const StoryPromoWrapper = styled.div`
   position: relative;
 
@@ -71,8 +68,12 @@ const StoryPromoWrapper = styled.div`
 const ImageGridColumnsTopStory = css`
   grid-column: 1 / span 6;
 
-  @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) and (max-width: ${GEL_GROUP_4_SCREEN_WIDTH_MAX}) {
-    grid-column: 1 / span 3;
+  @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
+    grid-column: 1 / span 2;
+  }
+
+  @media (min-width: ${GEL_GROUP_5_SCREEN_WIDTH_MIN}) {
+    grid-column: 1 / span 4;
   }
 `;
 
@@ -89,7 +90,7 @@ const ImageGridFallbackTopStory = css`
   width: ${fullWidthColumnsMaxScaleable};
 
   @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
-    width: ${halfWidthColumnsMaxScaleable};
+    width: ${twoOfSixColumnsMaxWidthScaleable};
     margin-bottom: 0;
   }
 `;
@@ -139,7 +140,7 @@ const InlineMediaIndicator = styled.div`
 `;
 
 export const Headline = styled.h3`
-  ${props => (props.script ? getPica(props.script) : '')};
+  ${({ script }) => script && getPica(script)};
 
   ${({ script, topStory }) => {
     if (!script) {
@@ -148,47 +149,41 @@ export const Headline = styled.h3`
 
     return topStory ? getParagon(script) : getPica(script);
   }}
+
   color: ${C_EBON};
   ${({ service }) => getSerifMedium(service)}
   margin: 0; /* Reset */
   padding-bottom: ${GEL_SPACING};
   @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
-    ${({ script }) => script && getParagon(script)};
-  }
+    ${({ script }) => script && getGreatPrimer(script)};
 `;
 
 export const Summary = styled.p`
-  ${props => (props.script ? getLongPrimer(props.script) : '')};
+  ${({ script }) => script && getLongPrimer(script)};
   color: ${C_SHADOW};
   ${({ service }) => getSansRegular(service)}
   margin: 0; /* Reset */
   padding-bottom: ${GEL_SPACING};
 
   ${({ topStory }) =>
-    topStory
-      ? css`
-          @media (max-width: ${GEL_GROUP_3_SCREEN_WIDTH_MAX}) {
-            display: none;
-            visibility: hidden;
-          }
-        `
-      : css`
-          @media (max-width: ${GEL_GROUP_2_SCREEN_WIDTH_MAX}) {
-            display: none;
-            visibility: hidden;
-          }
-        `}
+    !topStory &&
+    css`
+      @media (max-width: ${GEL_GROUP_2_SCREEN_WIDTH_MAX}) {
+        display: none;
+        visibility: hidden;
+      }
+    `}
 `;
 
 const TextGridColumnsTopStory = css`
   grid-column: 1 / span 6;
 
   @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
-    grid-column: 4 / span 3;
+    grid-column: 3 / span 4;
   }
 
   @media (min-width: ${GEL_GROUP_5_SCREEN_WIDTH_MIN}) {
-    grid-column: 7 / span 6;
+    grid-column: 5 / span 8;
   }
 `;
 
@@ -202,7 +197,7 @@ const TextGridColumns = css`
 
 const TextGridFallbackTopStory = css`
   @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
-    width: ${halfWidthColumnsMaxScaleable};
+    width: ${fourOfSixColumnsMaxWidthScaleable};
   }
 `;
 
