@@ -202,7 +202,7 @@ describe('SectionLabel', () => {
 
   describe('When hideSectionHeader is true', () => {
     shouldMatchSnapshot(
-      'should add styling to hide SectionLabel for all breakpoints',
+      'should add styling to hide SectionLabel when width of screen is less than 600 px',
       <SectionLabel
         script={latin}
         bar={false}
