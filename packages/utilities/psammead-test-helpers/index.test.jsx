@@ -3,8 +3,6 @@ import * as testHelpersFromSrc from './src/index';
 
 const testHelpersExpectedExports = {
   shouldMatchSnapshot: 'function',
-  shallowRender: 'function',
-  shouldShallowMatchSnapshot: 'function',
   isNull: 'function',
   testUtilityPackages: 'function',
   setWindowValue: 'function',
@@ -106,4 +104,5 @@ describe('Psammead test helpers', () => {
       testHelpersFromSrc.testUtilityPackages,
     );
   });
+  testHelpers.isNull('some null component', null);
 });
