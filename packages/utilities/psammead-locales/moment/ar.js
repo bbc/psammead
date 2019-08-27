@@ -1,4 +1,3 @@
-/* eslint-disable func-names */
 const moment = require('moment');
 require('moment/locale/ar');
 
@@ -20,27 +19,11 @@ const months = [
   'نوفمبر/ تشرين الثاني',
   'ديسمبر/ كانون الأول',
 ];
-const symbolMap = {
-  '1': '1',
-  '2': '2',
-  '3': '3',
-  '4': '4',
-  '5': '5',
-  '6': '6',
-  '7': '7',
-  '8': '8',
-  '9': '9',
-  '0': '0',
-};
 
 moment.updateLocale('ar', {
   months,
   monthsShort: months,
   postformat(string) {
-    return string
-      .replace(/\d/g, function(match) {
-        return symbolMap[match];
-      })
-      .replace(/,/g, '،');
+    return string.replace(/,/g, '،');
   },
 });
