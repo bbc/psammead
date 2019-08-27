@@ -3,7 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
-| 2.3.7 | [PR#??](https://github.com/bbc/psammead/pull/??) Revert "Revert "Hide section labels for all breakpoints"" |
+| 2.3.7 | [PR#1922](https://github.com/bbc/psammead/pull/1922) Revert "Revert "Hide section labels for all breakpoints"" |
 | 2.3.6 | [PR#1860](https://github.com/bbc/psammead/pull/1860) Make flexbox section labels work on IE11 |
 | 2.3.5 | [PR#1918](https://github.com/bbc/psammead/pull/1918) Revert "Hide section labels for all breakpoints" |
 | 2.3.4 | [PR#1829](https://github.com/bbc/psammead/pull/1829) Hide section labels for all breakpoints |
