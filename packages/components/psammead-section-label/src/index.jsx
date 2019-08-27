@@ -2,7 +2,10 @@ import React from 'react';
 import styled, { css } from 'styled-components';
 import { bool, oneOf, shape, string } from 'prop-types';
 import { scriptPropType } from '@bbc/gel-foundations/prop-types';
-import { MEDIA_QUERY_TYPOGRAPHY } from '@bbc/gel-foundations/breakpoints';
+import {
+  GEL_GROUP_2_SCREEN_WIDTH_MAX,
+  MEDIA_QUERY_TYPOGRAPHY,
+} from '@bbc/gel-foundations/breakpoints';
 import {
   GEL_SPACING_TRPL,
   GEL_SPACING_QUAD,
@@ -41,13 +44,15 @@ const SectionLabelWrapper = styled.div`
   ${({ visuallyHidden }) =>
     visuallyHidden &&
     css`
-      // Hide for all breakpoints
-      clip-path: inset(100%);
-      clip: rect(1px, 1px, 1px, 1px);
-      height: 1px;
-      overflow: hidden;
-      position: absolute;
-      width: 1px;
+      // Hide when under 600px
+      @media (max-width: ${GEL_GROUP_2_SCREEN_WIDTH_MAX}) {
+        clip-path: inset(100%);
+        clip: rect(1px, 1px, 1px, 1px);
+        height: 1px;
+        overflow: hidden;
+        position: absolute;
+        width: 1px;
+      }
     `}
 `;
 
