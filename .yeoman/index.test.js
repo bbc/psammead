@@ -10,13 +10,15 @@ const prompts = {
   authorEmail: 'foobar@foobar.com',
 };
 
+const componentDir = './temp/packages/components/psammead-foo-bar-component';
+
 const tempFiles = [
-  './temp/packages/components/psammead-foo-bar-component/README.md',
-  './temp/packages/components/psammead-foo-bar-component/package.json',
-  './temp/packages/components/psammead-foo-bar-component/CHANGELOG.md',
-  './temp/packages/components/psammead-foo-bar-component/src/index.jsx',
-  './temp/packages/components/psammead-foo-bar-component/src/index.stories.jsx',
-  './temp/packages/components/psammead-foo-bar-component/src/index.test.jsx',
+  `${componentDir}/README.md`,
+  `${componentDir}/package.json`,
+  `${componentDir}/CHANGELOG.md`,
+  `${componentDir}/src/index.jsx`,
+  `${componentDir}/src/index.stories.jsx`,
+  `${componentDir}/src/index.test.jsx`,
 ];
 
 describe('pacakge generator', () => {
