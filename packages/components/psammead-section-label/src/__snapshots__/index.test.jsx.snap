@@ -6,6 +6,16 @@ exports[`SectionLabel When hideSectionHeader is true should add styling to hide 
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-flex-flow: row nowrap;
   -ms-flex-flow: row nowrap;
   flex-flow: row nowrap;
@@ -20,7 +30,7 @@ exports[`SectionLabel When hideSectionHeader is true should add styling to hide 
   align-items: baseline;
 }
 
-.c3 {
+.c4 {
   font-size: 1.125rem;
   line-height: 1.375rem;
   font-family: ReithSans,Helvetica,Arial,sans-serif;
@@ -51,7 +61,7 @@ exports[`SectionLabel When hideSectionHeader is true should add styling to hide 
 }
 
 @media (min-width:37.5rem) {
-  .c2 {
+  .c3 {
     -webkit-align-items: stretch;
     -webkit-box-align: stretch;
     -ms-flex-align: stretch;
@@ -60,27 +70,27 @@ exports[`SectionLabel When hideSectionHeader is true should add styling to hide 
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
-  .c3 {
+  .c4 {
     font-size: 1.25rem;
     line-height: 1.5rem;
   }
 }
 
 @media (min-width:37.5rem) {
-  .c3 {
+  .c4 {
     font-size: 1.5rem;
     line-height: 1.75rem;
   }
 }
 
 @media (min-width:37.5rem) {
-  .c3 {
+  .c4 {
     margin: 0;
   }
 }
 
 @media (min-width:37.5rem) {
-  .c3 {
+  .c4 {
     padding-right: 1rem;
   }
 }
@@ -110,22 +120,36 @@ exports[`SectionLabel When hideSectionHeader is true should add styling to hide 
   <h2
     class="c1"
   >
-    <span
+    <div
       class="c2"
     >
       <span
         class="c3"
-        dir="ltr"
-        id="test-section-label"
       >
-        This is the text in a SectionLabel
+        <span
+          class="c4"
+          dir="ltr"
+          id="test-section-label"
+        >
+          This is the text in a SectionLabel
+        </span>
       </span>
-    </span>
+    </div>
   </h2>
 </div>
 `;
 
 exports[`SectionLabel With bar With linking title should render correctly 1`] = `
+.c4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
 .c3 {
   color: #222222;
   -webkit-text-decoration: none;
@@ -138,7 +162,7 @@ exports[`SectionLabel With bar With linking title should render correctly 1`] = 
   text-decoration: underline;
 }
 
-.c4 {
+.c5 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -157,7 +181,7 @@ exports[`SectionLabel With bar With linking title should render correctly 1`] = 
   align-items: baseline;
 }
 
-.c5 {
+.c6 {
   font-size: 1.125rem;
   line-height: 1.375rem;
   font-family: ReithSans,Helvetica,Arial,sans-serif;
@@ -177,7 +201,7 @@ exports[`SectionLabel With bar With linking title should render correctly 1`] = 
   align-items: center;
 }
 
-.c6 {
+.c7 {
   font-family: ReithSans,Helvetica,Arial,sans-serif;
   font-weight: 700;
   font-style: normal;
@@ -214,7 +238,7 @@ exports[`SectionLabel With bar With linking title should render correctly 1`] = 
 }
 
 @media (min-width:37.5rem) {
-  .c4 {
+  .c5 {
     -webkit-align-items: stretch;
     -webkit-box-align: stretch;
     -ms-flex-align: stretch;
@@ -223,47 +247,47 @@ exports[`SectionLabel With bar With linking title should render correctly 1`] = 
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
-  .c5 {
+  .c6 {
     font-size: 1.25rem;
     line-height: 1.5rem;
   }
 }
 
 @media (min-width:37.5rem) {
-  .c5 {
+  .c6 {
     font-size: 1.5rem;
     line-height: 1.75rem;
   }
 }
 
 @media (min-width:37.5rem) {
-  .c5 {
+  .c6 {
     margin: 0;
   }
 }
 
 @media (min-width:37.5rem) {
-  .c5 {
+  .c6 {
     padding-right: 1rem;
   }
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
-  .c6 {
+  .c7 {
     font-size: 0.9375rem;
     line-height: 1.125rem;
   }
 }
 
 @media (min-width:37.5rem) {
-  .c6 {
+  .c7 {
     font-size: 0.875rem;
     line-height: 1.125rem;
   }
 }
 
 @media (min-width:37.5rem) {
-  .c6 {
+  .c7 {
     margin: 0;
   }
 }
@@ -303,31 +327,45 @@ exports[`SectionLabel With bar With linking title should render correctly 1`] = 
       class="c3"
       href="/igbo/other-index"
     >
-      <span
+      <div
         class="c4"
-        role="text"
       >
         <span
           class="c5"
-          dir="ltr"
-          id="test-section-label"
+          role="text"
         >
-          This is text in a linking SectionLabel.
+          <span
+            class="c6"
+            dir="ltr"
+            id="test-section-label"
+          >
+            This is text in a linking SectionLabel.
+          </span>
+          <span
+            aria-hidden="true"
+            class="c7"
+            dir="ltr"
+          >
+            See All
+          </span>
         </span>
-        <span
-          aria-hidden="true"
-          class="c6"
-          dir="ltr"
-        >
-          See All
-        </span>
-      </span>
+      </div>
     </a>
   </h2>
 </div>
 `;
 
 exports[`SectionLabel With bar With linking title should render correctly with arabic script typography values 1`] = `
+.c4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
 .c3 {
   color: #222222;
   -webkit-text-decoration: none;
@@ -340,7 +378,7 @@ exports[`SectionLabel With bar With linking title should render correctly with a
   text-decoration: underline;
 }
 
-.c4 {
+.c5 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -359,7 +397,7 @@ exports[`SectionLabel With bar With linking title should render correctly with a
   align-items: baseline;
 }
 
-.c5 {
+.c6 {
   font-size: 1.5rem;
   line-height: 2rem;
   font-family: "BBC Nassim Persian",Arial,Verdana,Geneva,Helvetica,sans-serif;
@@ -379,7 +417,7 @@ exports[`SectionLabel With bar With linking title should render correctly with a
   align-items: center;
 }
 
-.c6 {
+.c7 {
   font-family: "BBC Nassim Persian",Arial,Verdana,Geneva,Helvetica,sans-serif;
   font-weight: 700;
   font-style: normal;
@@ -416,7 +454,7 @@ exports[`SectionLabel With bar With linking title should render correctly with a
 }
 
 @media (min-width:37.5rem) {
-  .c4 {
+  .c5 {
     -webkit-align-items: stretch;
     -webkit-box-align: stretch;
     -ms-flex-align: stretch;
@@ -425,47 +463,47 @@ exports[`SectionLabel With bar With linking title should render correctly with a
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
-  .c5 {
+  .c6 {
     font-size: 1.625rem;
     line-height: 2.25rem;
   }
 }
 
 @media (min-width:37.5rem) {
-  .c5 {
+  .c6 {
     font-size: 1.75rem;
     line-height: 2.25rem;
   }
 }
 
 @media (min-width:37.5rem) {
-  .c5 {
+  .c6 {
     margin: 0;
   }
 }
 
 @media (min-width:37.5rem) {
-  .c5 {
+  .c6 {
     padding-left: 1rem;
   }
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
-  .c6 {
+  .c7 {
     font-size: 1.125rem;
     line-height: 1.5rem;
   }
 }
 
 @media (min-width:37.5rem) {
-  .c6 {
+  .c7 {
     font-size: 1.125rem;
     line-height: 1.5rem;
   }
 }
 
 @media (min-width:37.5rem) {
-  .c6 {
+  .c7 {
     margin: 0;
   }
 }
@@ -505,31 +543,45 @@ exports[`SectionLabel With bar With linking title should render correctly with a
       class="c3"
       href="/igbo/other-index"
     >
-      <span
+      <div
         class="c4"
-        role="text"
       >
         <span
           class="c5"
-          dir="rtl"
-          id="test-section-label"
+          role="text"
         >
-          بعض محتوى النص
+          <span
+            class="c6"
+            dir="rtl"
+            id="test-section-label"
+          >
+            بعض محتوى النص
+          </span>
+          <span
+            aria-hidden="true"
+            class="c7"
+            dir="rtl"
+          >
+            See All
+          </span>
         </span>
-        <span
-          aria-hidden="true"
-          class="c6"
-          dir="rtl"
-        >
-          See All
-        </span>
-      </span>
+      </div>
     </a>
   </h2>
 </div>
 `;
 
 exports[`SectionLabel With bar With linking title should render correctly with explicit text direction 1`] = `
+.c4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
 .c3 {
   color: #222222;
   -webkit-text-decoration: none;
@@ -542,7 +594,7 @@ exports[`SectionLabel With bar With linking title should render correctly with e
   text-decoration: underline;
 }
 
-.c4 {
+.c5 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -561,7 +613,7 @@ exports[`SectionLabel With bar With linking title should render correctly with e
   align-items: baseline;
 }
 
-.c5 {
+.c6 {
   font-size: 1.125rem;
   line-height: 1.375rem;
   font-family: ReithSans,Helvetica,Arial,sans-serif;
@@ -581,7 +633,7 @@ exports[`SectionLabel With bar With linking title should render correctly with e
   align-items: center;
 }
 
-.c6 {
+.c7 {
   font-family: ReithSans,Helvetica,Arial,sans-serif;
   font-weight: 700;
   font-style: normal;
@@ -618,7 +670,7 @@ exports[`SectionLabel With bar With linking title should render correctly with e
 }
 
 @media (min-width:37.5rem) {
-  .c4 {
+  .c5 {
     -webkit-align-items: stretch;
     -webkit-box-align: stretch;
     -ms-flex-align: stretch;
@@ -627,47 +679,47 @@ exports[`SectionLabel With bar With linking title should render correctly with e
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
-  .c5 {
+  .c6 {
     font-size: 1.25rem;
     line-height: 1.5rem;
   }
 }
 
 @media (min-width:37.5rem) {
-  .c5 {
+  .c6 {
     font-size: 1.5rem;
     line-height: 1.75rem;
   }
 }
 
 @media (min-width:37.5rem) {
-  .c5 {
+  .c6 {
     margin: 0;
   }
 }
 
 @media (min-width:37.5rem) {
-  .c5 {
+  .c6 {
     padding-right: 1rem;
   }
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
-  .c6 {
+  .c7 {
     font-size: 0.9375rem;
     line-height: 1.125rem;
   }
 }
 
 @media (min-width:37.5rem) {
-  .c6 {
+  .c7 {
     font-size: 0.875rem;
     line-height: 1.125rem;
   }
 }
 
 @media (min-width:37.5rem) {
-  .c6 {
+  .c7 {
     margin: 0;
   }
 }
@@ -707,31 +759,45 @@ exports[`SectionLabel With bar With linking title should render correctly with e
       class="c3"
       href="/igbo/other-index"
     >
-      <span
+      <div
         class="c4"
-        role="text"
       >
         <span
           class="c5"
-          dir="ltr"
-          id="test-section-label"
+          role="text"
         >
-          This is text in a SectionLabel rendering in ltr mode.
+          <span
+            class="c6"
+            dir="ltr"
+            id="test-section-label"
+          >
+            This is text in a SectionLabel rendering in ltr mode.
+          </span>
+          <span
+            aria-hidden="true"
+            class="c7"
+            dir="ltr"
+          >
+            See All
+          </span>
         </span>
-        <span
-          aria-hidden="true"
-          class="c6"
-          dir="ltr"
-        >
-          See All
-        </span>
-      </span>
+      </div>
     </a>
   </h2>
 </div>
 `;
 
 exports[`SectionLabel With bar With linking title should render correctly with explicitly showing the bar 1`] = `
+.c4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
 .c3 {
   color: #222222;
   -webkit-text-decoration: none;
@@ -744,7 +810,7 @@ exports[`SectionLabel With bar With linking title should render correctly with e
   text-decoration: underline;
 }
 
-.c4 {
+.c5 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -763,7 +829,7 @@ exports[`SectionLabel With bar With linking title should render correctly with e
   align-items: baseline;
 }
 
-.c5 {
+.c6 {
   font-size: 1.125rem;
   line-height: 1.375rem;
   font-family: ReithSans,Helvetica,Arial,sans-serif;
@@ -783,7 +849,7 @@ exports[`SectionLabel With bar With linking title should render correctly with e
   align-items: center;
 }
 
-.c6 {
+.c7 {
   font-family: ReithSans,Helvetica,Arial,sans-serif;
   font-weight: 700;
   font-style: normal;
@@ -820,7 +886,7 @@ exports[`SectionLabel With bar With linking title should render correctly with e
 }
 
 @media (min-width:37.5rem) {
-  .c4 {
+  .c5 {
     -webkit-align-items: stretch;
     -webkit-box-align: stretch;
     -ms-flex-align: stretch;
@@ -829,47 +895,47 @@ exports[`SectionLabel With bar With linking title should render correctly with e
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
-  .c5 {
+  .c6 {
     font-size: 1.25rem;
     line-height: 1.5rem;
   }
 }
 
 @media (min-width:37.5rem) {
-  .c5 {
+  .c6 {
     font-size: 1.5rem;
     line-height: 1.75rem;
   }
 }
 
 @media (min-width:37.5rem) {
-  .c5 {
+  .c6 {
     margin: 0;
   }
 }
 
 @media (min-width:37.5rem) {
-  .c5 {
+  .c6 {
     padding-right: 1rem;
   }
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
-  .c6 {
+  .c7 {
     font-size: 0.9375rem;
     line-height: 1.125rem;
   }
 }
 
 @media (min-width:37.5rem) {
-  .c6 {
+  .c7 {
     font-size: 0.875rem;
     line-height: 1.125rem;
   }
 }
 
 @media (min-width:37.5rem) {
-  .c6 {
+  .c7 {
     margin: 0;
   }
 }
@@ -909,25 +975,29 @@ exports[`SectionLabel With bar With linking title should render correctly with e
       class="c3"
       href="/igbo/other-index"
     >
-      <span
+      <div
         class="c4"
-        role="text"
       >
         <span
           class="c5"
-          dir="ltr"
-          id="test-section-label"
+          role="text"
         >
-          This is text in a SectionLabel, and there is a bar over to the right
+          <span
+            class="c6"
+            dir="ltr"
+            id="test-section-label"
+          >
+            This is text in a SectionLabel, and there is a bar over to the right
+          </span>
+          <span
+            aria-hidden="true"
+            class="c7"
+            dir="ltr"
+          >
+            See All
+          </span>
         </span>
-        <span
-          aria-hidden="true"
-          class="c6"
-          dir="ltr"
-        >
-          See All
-        </span>
-      </span>
+      </div>
     </a>
   </h2>
 </div>
@@ -939,6 +1009,16 @@ exports[`SectionLabel With bar With plain title should render correctly 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-flex-flow: row nowrap;
   -ms-flex-flow: row nowrap;
   flex-flow: row nowrap;
@@ -953,7 +1033,7 @@ exports[`SectionLabel With bar With plain title should render correctly 1`] = `
   align-items: baseline;
 }
 
-.c4 {
+.c5 {
   font-size: 1.125rem;
   line-height: 1.375rem;
   font-family: ReithSans,Helvetica,Arial,sans-serif;
@@ -989,7 +1069,7 @@ exports[`SectionLabel With bar With plain title should render correctly 1`] = `
 }
 
 @media (min-width:37.5rem) {
-  .c3 {
+  .c4 {
     -webkit-align-items: stretch;
     -webkit-box-align: stretch;
     -ms-flex-align: stretch;
@@ -998,27 +1078,27 @@ exports[`SectionLabel With bar With plain title should render correctly 1`] = `
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
-  .c4 {
+  .c5 {
     font-size: 1.25rem;
     line-height: 1.5rem;
   }
 }
 
 @media (min-width:37.5rem) {
-  .c4 {
+  .c5 {
     font-size: 1.5rem;
     line-height: 1.75rem;
   }
 }
 
 @media (min-width:37.5rem) {
-  .c4 {
+  .c5 {
     margin: 0;
   }
 }
 
 @media (min-width:37.5rem) {
-  .c4 {
+  .c5 {
     padding-right: 1rem;
   }
 }
@@ -1053,23 +1133,37 @@ exports[`SectionLabel With bar With plain title should render correctly 1`] = `
   <h2
     class="c2"
   >
-    <span
+    <div
       class="c3"
     >
       <span
         class="c4"
-        dir="ltr"
-        id="test-section-label"
       >
-        This is text in a SectionLabel.
+        <span
+          class="c5"
+          dir="ltr"
+          id="test-section-label"
+        >
+          This is text in a SectionLabel.
+        </span>
       </span>
-    </span>
+    </div>
   </h2>
 </div>
 `;
 
 exports[`SectionLabel With bar With plain title should render correctly with arabic script typography values 1`] = `
 .c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c4 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1088,7 +1182,7 @@ exports[`SectionLabel With bar With plain title should render correctly with ara
   align-items: baseline;
 }
 
-.c4 {
+.c5 {
   font-size: 1.5rem;
   line-height: 2rem;
   font-family: "BBC Nassim Persian",Arial,Verdana,Geneva,Helvetica,sans-serif;
@@ -1124,7 +1218,7 @@ exports[`SectionLabel With bar With plain title should render correctly with ara
 }
 
 @media (min-width:37.5rem) {
-  .c3 {
+  .c4 {
     -webkit-align-items: stretch;
     -webkit-box-align: stretch;
     -ms-flex-align: stretch;
@@ -1133,27 +1227,27 @@ exports[`SectionLabel With bar With plain title should render correctly with ara
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
-  .c4 {
+  .c5 {
     font-size: 1.625rem;
     line-height: 2.25rem;
   }
 }
 
 @media (min-width:37.5rem) {
-  .c4 {
+  .c5 {
     font-size: 1.75rem;
     line-height: 2.25rem;
   }
 }
 
 @media (min-width:37.5rem) {
-  .c4 {
+  .c5 {
     margin: 0;
   }
 }
 
 @media (min-width:37.5rem) {
-  .c4 {
+  .c5 {
     padding-left: 1rem;
   }
 }
@@ -1188,17 +1282,21 @@ exports[`SectionLabel With bar With plain title should render correctly with ara
   <h2
     class="c2"
   >
-    <span
+    <div
       class="c3"
     >
       <span
         class="c4"
-        dir="rtl"
-        id="test-section-label"
       >
-        بعض محتوى النص
+        <span
+          class="c5"
+          dir="rtl"
+          id="test-section-label"
+        >
+          بعض محتوى النص
+        </span>
       </span>
-    </span>
+    </div>
   </h2>
 </div>
 `;
@@ -1209,6 +1307,16 @@ exports[`SectionLabel With bar With plain title should render correctly with exp
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-flex-flow: row nowrap;
   -ms-flex-flow: row nowrap;
   flex-flow: row nowrap;
@@ -1223,7 +1331,7 @@ exports[`SectionLabel With bar With plain title should render correctly with exp
   align-items: baseline;
 }
 
-.c4 {
+.c5 {
   font-size: 1.125rem;
   line-height: 1.375rem;
   font-family: ReithSans,Helvetica,Arial,sans-serif;
@@ -1259,7 +1367,7 @@ exports[`SectionLabel With bar With plain title should render correctly with exp
 }
 
 @media (min-width:37.5rem) {
-  .c3 {
+  .c4 {
     -webkit-align-items: stretch;
     -webkit-box-align: stretch;
     -ms-flex-align: stretch;
@@ -1268,27 +1376,27 @@ exports[`SectionLabel With bar With plain title should render correctly with exp
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
-  .c4 {
+  .c5 {
     font-size: 1.25rem;
     line-height: 1.5rem;
   }
 }
 
 @media (min-width:37.5rem) {
-  .c4 {
+  .c5 {
     font-size: 1.5rem;
     line-height: 1.75rem;
   }
 }
 
 @media (min-width:37.5rem) {
-  .c4 {
+  .c5 {
     margin: 0;
   }
 }
 
 @media (min-width:37.5rem) {
-  .c4 {
+  .c5 {
     padding-right: 1rem;
   }
 }
@@ -1323,17 +1431,21 @@ exports[`SectionLabel With bar With plain title should render correctly with exp
   <h2
     class="c2"
   >
-    <span
+    <div
       class="c3"
     >
       <span
         class="c4"
-        dir="ltr"
-        id="test-section-label"
       >
-        This is text in a SectionLabel rendering in ltr mode.
+        <span
+          class="c5"
+          dir="ltr"
+          id="test-section-label"
+        >
+          This is text in a SectionLabel rendering in ltr mode.
+        </span>
       </span>
-    </span>
+    </div>
   </h2>
 </div>
 `;
@@ -1344,6 +1456,16 @@ exports[`SectionLabel With bar With plain title should render correctly with exp
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-flex-flow: row nowrap;
   -ms-flex-flow: row nowrap;
   flex-flow: row nowrap;
@@ -1358,7 +1480,7 @@ exports[`SectionLabel With bar With plain title should render correctly with exp
   align-items: baseline;
 }
 
-.c4 {
+.c5 {
   font-size: 1.125rem;
   line-height: 1.375rem;
   font-family: ReithSans,Helvetica,Arial,sans-serif;
@@ -1394,7 +1516,7 @@ exports[`SectionLabel With bar With plain title should render correctly with exp
 }
 
 @media (min-width:37.5rem) {
-  .c3 {
+  .c4 {
     -webkit-align-items: stretch;
     -webkit-box-align: stretch;
     -ms-flex-align: stretch;
@@ -1403,27 +1525,27 @@ exports[`SectionLabel With bar With plain title should render correctly with exp
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
-  .c4 {
+  .c5 {
     font-size: 1.25rem;
     line-height: 1.5rem;
   }
 }
 
 @media (min-width:37.5rem) {
-  .c4 {
+  .c5 {
     font-size: 1.5rem;
     line-height: 1.75rem;
   }
 }
 
 @media (min-width:37.5rem) {
-  .c4 {
+  .c5 {
     margin: 0;
   }
 }
 
 @media (min-width:37.5rem) {
-  .c4 {
+  .c5 {
     padding-right: 1rem;
   }
 }
@@ -1458,22 +1580,36 @@ exports[`SectionLabel With bar With plain title should render correctly with exp
   <h2
     class="c2"
   >
-    <span
+    <div
       class="c3"
     >
       <span
         class="c4"
-        dir="ltr"
-        id="test-section-label"
       >
-        This is text in a SectionLabel, and there is a bar over to the right
+        <span
+          class="c5"
+          dir="ltr"
+          id="test-section-label"
+        >
+          This is text in a SectionLabel, and there is a bar over to the right
+        </span>
       </span>
-    </span>
+    </div>
   </h2>
 </div>
 `;
 
 exports[`SectionLabel Without bar With linking title should render correctly 1`] = `
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
 .c2 {
   color: #222222;
   -webkit-text-decoration: none;
@@ -1486,7 +1622,7 @@ exports[`SectionLabel Without bar With linking title should render correctly 1`]
   text-decoration: underline;
 }
 
-.c3 {
+.c4 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1505,7 +1641,7 @@ exports[`SectionLabel Without bar With linking title should render correctly 1`]
   align-items: baseline;
 }
 
-.c4 {
+.c5 {
   font-size: 1.125rem;
   line-height: 1.375rem;
   font-family: ReithSans,Helvetica,Arial,sans-serif;
@@ -1525,7 +1661,7 @@ exports[`SectionLabel Without bar With linking title should render correctly 1`]
   align-items: center;
 }
 
-.c5 {
+.c6 {
   font-family: ReithSans,Helvetica,Arial,sans-serif;
   font-weight: 700;
   font-style: normal;
@@ -1557,7 +1693,7 @@ exports[`SectionLabel Without bar With linking title should render correctly 1`]
 }
 
 @media (min-width:37.5rem) {
-  .c3 {
+  .c4 {
     -webkit-align-items: stretch;
     -webkit-box-align: stretch;
     -ms-flex-align: stretch;
@@ -1566,47 +1702,47 @@ exports[`SectionLabel Without bar With linking title should render correctly 1`]
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
-  .c4 {
+  .c5 {
     font-size: 1.25rem;
     line-height: 1.5rem;
   }
 }
 
 @media (min-width:37.5rem) {
-  .c4 {
+  .c5 {
     font-size: 1.5rem;
     line-height: 1.75rem;
   }
 }
 
 @media (min-width:37.5rem) {
-  .c4 {
+  .c5 {
     margin: 0;
   }
 }
 
 @media (min-width:37.5rem) {
-  .c4 {
+  .c5 {
     padding-right: 1rem;
   }
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
-  .c5 {
+  .c6 {
     font-size: 0.9375rem;
     line-height: 1.125rem;
   }
 }
 
 @media (min-width:37.5rem) {
-  .c5 {
+  .c6 {
     font-size: 0.875rem;
     line-height: 1.125rem;
   }
 }
 
 @media (min-width:37.5rem) {
-  .c5 {
+  .c6 {
     margin: 0;
   }
 }
@@ -1628,31 +1764,45 @@ exports[`SectionLabel Without bar With linking title should render correctly 1`]
       class="c2"
       href="/igbo/other-index"
     >
-      <span
+      <div
         class="c3"
-        role="text"
       >
         <span
           class="c4"
-          dir="ltr"
-          id="test-section-label"
+          role="text"
         >
-          This is text in a SectionLabel.
+          <span
+            class="c5"
+            dir="ltr"
+            id="test-section-label"
+          >
+            This is text in a SectionLabel.
+          </span>
+          <span
+            aria-hidden="true"
+            class="c6"
+            dir="ltr"
+          >
+            See All
+          </span>
         </span>
-        <span
-          aria-hidden="true"
-          class="c5"
-          dir="ltr"
-        >
-          See All
-        </span>
-      </span>
+      </div>
     </a>
   </h2>
 </div>
 `;
 
 exports[`SectionLabel Without bar With linking title should render correctly with arabic script typography values 1`] = `
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
 .c2 {
   color: #222222;
   -webkit-text-decoration: none;
@@ -1665,7 +1815,7 @@ exports[`SectionLabel Without bar With linking title should render correctly wit
   text-decoration: underline;
 }
 
-.c3 {
+.c4 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1684,7 +1834,7 @@ exports[`SectionLabel Without bar With linking title should render correctly wit
   align-items: baseline;
 }
 
-.c4 {
+.c5 {
   font-size: 1.5rem;
   line-height: 2rem;
   font-family: "BBC Nassim Persian",Arial,Verdana,Geneva,Helvetica,sans-serif;
@@ -1704,7 +1854,7 @@ exports[`SectionLabel Without bar With linking title should render correctly wit
   align-items: center;
 }
 
-.c5 {
+.c6 {
   font-family: "BBC Nassim Persian",Arial,Verdana,Geneva,Helvetica,sans-serif;
   font-weight: 700;
   font-style: normal;
@@ -1736,7 +1886,7 @@ exports[`SectionLabel Without bar With linking title should render correctly wit
 }
 
 @media (min-width:37.5rem) {
-  .c3 {
+  .c4 {
     -webkit-align-items: stretch;
     -webkit-box-align: stretch;
     -ms-flex-align: stretch;
@@ -1745,47 +1895,47 @@ exports[`SectionLabel Without bar With linking title should render correctly wit
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
-  .c4 {
+  .c5 {
     font-size: 1.625rem;
     line-height: 2.25rem;
   }
 }
 
 @media (min-width:37.5rem) {
-  .c4 {
+  .c5 {
     font-size: 1.75rem;
     line-height: 2.25rem;
   }
 }
 
 @media (min-width:37.5rem) {
-  .c4 {
+  .c5 {
     margin: 0;
   }
 }
 
 @media (min-width:37.5rem) {
-  .c4 {
+  .c5 {
     padding-left: 1rem;
   }
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
-  .c5 {
+  .c6 {
     font-size: 1.125rem;
     line-height: 1.5rem;
   }
 }
 
 @media (min-width:37.5rem) {
-  .c5 {
+  .c6 {
     font-size: 1.125rem;
     line-height: 1.5rem;
   }
 }
 
 @media (min-width:37.5rem) {
-  .c5 {
+  .c6 {
     margin: 0;
   }
 }
@@ -1807,31 +1957,45 @@ exports[`SectionLabel Without bar With linking title should render correctly wit
       class="c2"
       href="/igbo/other-index"
     >
-      <span
+      <div
         class="c3"
-        role="text"
       >
         <span
           class="c4"
-          dir="rtl"
-          id="test-section-label"
+          role="text"
         >
-          بعض محتوى النص
+          <span
+            class="c5"
+            dir="rtl"
+            id="test-section-label"
+          >
+            بعض محتوى النص
+          </span>
+          <span
+            aria-hidden="true"
+            class="c6"
+            dir="rtl"
+          >
+            See All
+          </span>
         </span>
-        <span
-          aria-hidden="true"
-          class="c5"
-          dir="rtl"
-        >
-          See All
-        </span>
-      </span>
+      </div>
     </a>
   </h2>
 </div>
 `;
 
 exports[`SectionLabel Without bar With linking title should render correctly with explicit text direction 1`] = `
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
 .c2 {
   color: #222222;
   -webkit-text-decoration: none;
@@ -1842,6 +2006,187 @@ exports[`SectionLabel Without bar With linking title should render correctly wit
 .c2:hover {
   -webkit-text-decoration: underline;
   text-decoration: underline;
+}
+
+.c4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row nowrap;
+  -ms-flex-flow: row nowrap;
+  flex-flow: row nowrap;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  min-height: 2.75rem;
+  -webkit-align-items: baseline;
+  -webkit-box-align: baseline;
+  -ms-flex-align: baseline;
+  align-items: baseline;
+}
+
+.c5 {
+  font-size: 1.125rem;
+  line-height: 1.375rem;
+  font-family: ReithSans,Helvetica,Arial,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #222222;
+  background-color: #FFFFFF;
+  margin: 1rem 0;
+  padding-right: 0.5rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c6 {
+  font-family: ReithSans,Helvetica,Arial,sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 0.9375rem;
+  line-height: 1.125rem;
+  margin: 1rem 0;
+  color: #222222;
+  background-color: #FFFFFF;
+  white-space: nowrap;
+  padding-left: 1rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c0 {
+  position: relative;
+  margin-top: 2rem;
+}
+
+.c1 {
+  margin: 0;
+  padding: 0;
+}
+
+@media (min-width:37.5rem) {
+  .c4 {
+    -webkit-align-items: stretch;
+    -webkit-box-align: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+  }
+}
+
+@media (min-width:20rem) and (max-width:37.4375rem) {
+  .c5 {
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .c5 {
+    font-size: 1.5rem;
+    line-height: 1.75rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .c5 {
+    margin: 0;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .c5 {
+    padding-right: 1rem;
+  }
+}
+
+@media (min-width:20rem) and (max-width:37.4375rem) {
+  .c6 {
+    font-size: 0.9375rem;
+    line-height: 1.125rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .c6 {
+    font-size: 0.875rem;
+    line-height: 1.125rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .c6 {
+    margin: 0;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .c0 {
+    margin-top: 1.5rem;
+  }
+}
+
+<div
+  class="c0"
+>
+  <h2
+    class="c1"
+  >
+    <a
+      aria-labelledby="test-section-label"
+      class="c2"
+      href="/igbo/other-index"
+    >
+      <div
+        class="c3"
+      >
+        <span
+          class="c4"
+          role="text"
+        >
+          <span
+            class="c5"
+            dir="ltr"
+            id="test-section-label"
+          >
+            This is text in a SectionLabel rendering in ltr mode.
+          </span>
+          <span
+            aria-hidden="true"
+            class="c6"
+            dir="ltr"
+          >
+            See All
+          </span>
+        </span>
+      </div>
+    </a>
+  </h2>
+</div>
+`;
+
+exports[`SectionLabel Without bar With plain title should render correctly 1`] = `
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 
 .c3 {
@@ -1883,27 +2228,6 @@ exports[`SectionLabel Without bar With linking title should render correctly wit
   align-items: center;
 }
 
-.c5 {
-  font-family: ReithSans,Helvetica,Arial,sans-serif;
-  font-weight: 700;
-  font-style: normal;
-  font-size: 0.9375rem;
-  line-height: 1.125rem;
-  margin: 1rem 0;
-  color: #222222;
-  background-color: #FFFFFF;
-  white-space: nowrap;
-  padding-left: 1rem;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
 .c0 {
   position: relative;
   margin-top: 2rem;
@@ -1949,26 +2273,6 @@ exports[`SectionLabel Without bar With linking title should render correctly wit
   }
 }
 
-@media (min-width:20rem) and (max-width:37.4375rem) {
-  .c5 {
-    font-size: 0.9375rem;
-    line-height: 1.125rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c5 {
-    font-size: 0.875rem;
-    line-height: 1.125rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c5 {
-    margin: 0;
-  }
-}
-
 @media (min-width:37.5rem) {
   .c0 {
     margin-top: 1.5rem;
@@ -1981,143 +2285,21 @@ exports[`SectionLabel Without bar With linking title should render correctly wit
   <h2
     class="c1"
   >
-    <a
-      aria-labelledby="test-section-label"
+    <div
       class="c2"
-      href="/igbo/other-index"
     >
       <span
         class="c3"
-        role="text"
       >
         <span
           class="c4"
           dir="ltr"
           id="test-section-label"
         >
-          This is text in a SectionLabel rendering in ltr mode.
-        </span>
-        <span
-          aria-hidden="true"
-          class="c5"
-          dir="ltr"
-        >
-          See All
+          This is text in a SectionLabel.
         </span>
       </span>
-    </a>
-  </h2>
-</div>
-`;
-
-exports[`SectionLabel Without bar With plain title should render correctly 1`] = `
-.c2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-flow: row nowrap;
-  -ms-flex-flow: row nowrap;
-  flex-flow: row nowrap;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  min-height: 2.75rem;
-  -webkit-align-items: baseline;
-  -webkit-box-align: baseline;
-  -ms-flex-align: baseline;
-  align-items: baseline;
-}
-
-.c3 {
-  font-size: 1.125rem;
-  line-height: 1.375rem;
-  font-family: ReithSans,Helvetica,Arial,sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  color: #222222;
-  background-color: #FFFFFF;
-  margin: 1rem 0;
-  padding-right: 0.5rem;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c0 {
-  position: relative;
-  margin-top: 2rem;
-}
-
-.c1 {
-  margin: 0;
-  padding: 0;
-}
-
-@media (min-width:37.5rem) {
-  .c2 {
-    -webkit-align-items: stretch;
-    -webkit-box-align: stretch;
-    -ms-flex-align: stretch;
-    align-items: stretch;
-  }
-}
-
-@media (min-width:20rem) and (max-width:37.4375rem) {
-  .c3 {
-    font-size: 1.25rem;
-    line-height: 1.5rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c3 {
-    font-size: 1.5rem;
-    line-height: 1.75rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c3 {
-    margin: 0;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c3 {
-    padding-right: 1rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c0 {
-    margin-top: 1.5rem;
-  }
-}
-
-<div
-  class="c0"
->
-  <h2
-    class="c1"
-  >
-    <span
-      class="c2"
-    >
-      <span
-        class="c3"
-        dir="ltr"
-        id="test-section-label"
-      >
-        This is text in a SectionLabel.
-      </span>
-    </span>
+    </div>
   </h2>
 </div>
 `;
@@ -2128,6 +2310,16 @@ exports[`SectionLabel Without bar With plain title should render correctly with 
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-flex-flow: row nowrap;
   -ms-flex-flow: row nowrap;
   flex-flow: row nowrap;
@@ -2142,7 +2334,7 @@ exports[`SectionLabel Without bar With plain title should render correctly with 
   align-items: baseline;
 }
 
-.c3 {
+.c4 {
   font-size: 1.5rem;
   line-height: 2rem;
   font-family: "BBC Nassim Persian",Arial,Verdana,Geneva,Helvetica,sans-serif;
@@ -2173,7 +2365,7 @@ exports[`SectionLabel Without bar With plain title should render correctly with 
 }
 
 @media (min-width:37.5rem) {
-  .c2 {
+  .c3 {
     -webkit-align-items: stretch;
     -webkit-box-align: stretch;
     -ms-flex-align: stretch;
@@ -2182,27 +2374,27 @@ exports[`SectionLabel Without bar With plain title should render correctly with 
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
-  .c3 {
+  .c4 {
     font-size: 1.625rem;
     line-height: 2.25rem;
   }
 }
 
 @media (min-width:37.5rem) {
-  .c3 {
+  .c4 {
     font-size: 1.75rem;
     line-height: 2.25rem;
   }
 }
 
 @media (min-width:37.5rem) {
-  .c3 {
+  .c4 {
     margin: 0;
   }
 }
 
 @media (min-width:37.5rem) {
-  .c3 {
+  .c4 {
     padding-left: 1rem;
   }
 }
@@ -2219,23 +2411,37 @@ exports[`SectionLabel Without bar With plain title should render correctly with 
   <h2
     class="c1"
   >
-    <span
+    <div
       class="c2"
     >
       <span
         class="c3"
-        dir="rtl"
-        id="test-section-label"
       >
-        بعض محتوى النص
+        <span
+          class="c4"
+          dir="rtl"
+          id="test-section-label"
+        >
+          بعض محتوى النص
+        </span>
       </span>
-    </span>
+    </div>
   </h2>
 </div>
 `;
 
 exports[`SectionLabel Without bar With plain title should render correctly with explicit text direction 1`] = `
 .c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c3 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2254,7 +2460,7 @@ exports[`SectionLabel Without bar With plain title should render correctly with 
   align-items: baseline;
 }
 
-.c3 {
+.c4 {
   font-size: 1.125rem;
   line-height: 1.375rem;
   font-family: ReithSans,Helvetica,Arial,sans-serif;
@@ -2285,7 +2491,7 @@ exports[`SectionLabel Without bar With plain title should render correctly with 
 }
 
 @media (min-width:37.5rem) {
-  .c2 {
+  .c3 {
     -webkit-align-items: stretch;
     -webkit-box-align: stretch;
     -ms-flex-align: stretch;
@@ -2294,27 +2500,27 @@ exports[`SectionLabel Without bar With plain title should render correctly with 
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
-  .c3 {
+  .c4 {
     font-size: 1.25rem;
     line-height: 1.5rem;
   }
 }
 
 @media (min-width:37.5rem) {
-  .c3 {
+  .c4 {
     font-size: 1.5rem;
     line-height: 1.75rem;
   }
 }
 
 @media (min-width:37.5rem) {
-  .c3 {
+  .c4 {
     margin: 0;
   }
 }
 
 @media (min-width:37.5rem) {
-  .c3 {
+  .c4 {
     padding-right: 1rem;
   }
 }
@@ -2331,17 +2537,21 @@ exports[`SectionLabel Without bar With plain title should render correctly with 
   <h2
     class="c1"
   >
-    <span
+    <div
       class="c2"
     >
       <span
         class="c3"
-        dir="ltr"
-        id="test-section-label"
       >
-        This is text in a SectionLabel rendering in ltr mode.
+        <span
+          class="c4"
+          dir="ltr"
+          id="test-section-label"
+        >
+          This is text in a SectionLabel rendering in ltr mode.
+        </span>
       </span>
-    </span>
+    </div>
   </h2>
 </div>
 `;
