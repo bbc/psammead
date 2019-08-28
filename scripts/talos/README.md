@@ -14,9 +14,9 @@ Navigate to [Jenkins](https://ci.news.tools.bbc.co.uk/blue/organizations/jenkins
 
 ![invoke-talos-jenkins](https://user-images.githubusercontent.com/34196381/63758525-d03ef980-c8b3-11e9-9b8c-d4f9a451237b.png)
 
-### Using CLI (not recommended) 
+### Using CLI (not recommended)
 
-    npm run talos "[insert package names with @bbc/]"
+Talos uses the Github API, therefore requires a token. Talos can be used if you setup the Github token, but its is not recommended.
 
 ## How to review PRs?
 
