@@ -1,6 +1,6 @@
 {
   "name": "@bbc/psammead-media-player",
-  "version": "1.0.1-alpha.1",
+  "version": "1.0.1",
   "publishConfig": {
     "tag": "alpha"
   },
@@ -28,7 +28,7 @@
     "embed"
   ],
   "peerDependencies": {
-    "react": "^16.8.6",
+    "react": "^16.9.0",
     "styled-components": "^4.3.2"
   },
   "dependencies": {
