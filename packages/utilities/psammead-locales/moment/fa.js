@@ -19,12 +19,9 @@ const persianMonths = [
 ];
 
 const jalaliFormats = [
-  'HH:mm', // LT FORMAT
-  'HH:mm:ss', // LTS FORMAT
-  'DD/MM/YYYY', // L FROMAT
-  'D MMMM YYYY', // LL FROMAT
-  'D MMMM YYYY HH:mm', // LLL FROMAT
-  'dddd, D MMMM YYYY HH:mm', // LLLL FROMAT
+  'D MMMM YYYY',
+  'D MMMM YYYY HH:mm',
+  'dddd, D MMMM YYYY HH:mm',
 ];
 
 moment().locale('fa');

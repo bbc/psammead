@@ -33,12 +33,9 @@ const pashtoMonths = [
 ];
 
 const jalaliFromats = [
-  'HH:mm', // LT
-  'HH:mm:ss', // LTS
-  'DD/MM/YYYY',
-  'D MMMM YYYY', // LL FROMAT
-  'D MMMM YYYY HH:mm', // LLL FROMAT
-  'dddd, D MMMM YYYY HH:mm', // LLLL FROMAT
+  'D MMMM YYYY',
+  'D MMMM YYYY HH:mm',
+  'dddd, D MMMM YYYY HH:mm',
 ];
 moment.defineLocale('ps', {
   // Gregorian Months
