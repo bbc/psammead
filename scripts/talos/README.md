@@ -40,7 +40,7 @@ Talos only runs on latest therefore does not need to.
 
 Yes. When you make a Psammead package change you publish a new version of it.
 
-When these changes are published, Talos will find where the packages are used across Psammead and will bump them, increasing the version number, then writes a changelog, makes a branch and creates a pull request.
+When these changes are published, Talos will find where the packages are used across Psammead and will bump them, increasing the version number. It then writes a changelog, makes a branch and creates a pull request.
 
 Developers and testers need to review, test and merge the PR.
 
