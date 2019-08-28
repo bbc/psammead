@@ -56,7 +56,7 @@ This runs Jest across any packages matching this glob pattern: `packages/compone
 ### :pencil2: Create a new package
 
 ```
-npm run create
+npm run create:package
 ```
 
 ### :runner: Run Storybook
