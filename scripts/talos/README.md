@@ -6,6 +6,8 @@ Talos is a bumper bot that runs automatically for Psammead packages.
 
 ## Manual Usage
 
+Manual usage of Talos requires access to our Jenkins CI pipeline. So for now it is limited to those employed by the BBC. If you're an external contributor and want Talos run manually, please feel free to [open an issue](https://github.com/bbc/psammead/issues/new/choose). 
+
 ### Using Jenkins
 
 Navigate to [Jenkins](https://ci.news.tools.bbc.co.uk/blue/organizations/jenkins/psammead/branches) and click on the play (run) button, then enter the list of packages you want to bump seperated by commas.
