@@ -18,6 +18,7 @@ import {
 import {
   getPica,
   getParagon,
+  getGreatPrimer,
   getLongPrimer,
 } from '@bbc/gel-foundations/typography';
 import {
@@ -145,7 +146,6 @@ export const Headline = styled.h3`
     if (!script) {
       return '';
     }
-
     return topStory ? getParagon(script) : getPica(script);
   }}
   color: ${C_EBON};
@@ -153,7 +153,10 @@ export const Headline = styled.h3`
   margin: 0; /* Reset */
   padding-bottom: ${GEL_SPACING};
   @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
-    ${props => (props.script ? getParagon(props.script) : '')};
+    ${props =>
+      props.script && props.topStory
+        ? getParagon(props.script)
+        : getGreatPrimer(props.script)};
   }
 `;
 
