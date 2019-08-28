@@ -10,6 +10,10 @@ moment.locale('ar');
 // An example of these tests can be seen at https://github.com/moment/moment/blob/develop/src/test/locale/en-gb.js
 const assert = { equal: (val1, val2) => expect(val1).toEqual(val2) };
 
+// These tests are taken (almost) verbatim from the official moment tests. This has been done in an attempt to ensure
+// parity across the two configurations as far as possible.
+// See https://github.com/moment/moment/blob/develop/src/test/locale/ar.js
+
 const dualMonthNames = [
   'يناير/ كانون الثاني',
   'فبراير/ شباط',
