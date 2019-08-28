@@ -4,7 +4,7 @@
 | Version | Description |
 |---------|-------------|
 | 2.0.0 | [PR#1917](https://github.com/bbc/psammead/pull/1917) Remove react-test-renderer and shallow rendering |
-| 1.3.2 | [PR#1919](https://github.com/bbc/psammead/pull/1919) Use @testing-library-react |
+| 1.3.2 | [PR#1919](https://github.com/bbc/psammead/pull/1919) Accidental version bump |
 | 1.3.1 | [PR#1849](https://github.com/bbc/psammead/pull/1849) Update README.md |
 | 1.3.0 | [PR#1846](https://github.com/bbc/psammead/pull/1846/) Import test helper functions from simorgh |
 | 1.2.1 | [PR#1803](https://github.com/bbc/psammead/pull/1803/) Patches broken links on badges in documentation |
