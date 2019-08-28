@@ -2,7 +2,7 @@
 
 ## Description
 
-Talos is a bumper bot which runs automatically on the latest branch of Psammead. Talos was created to make life easier for developers, with Talos they do not need to keep track of their dependencies, it saves time, makes sure dependencies are up to date and prevents conflicts. Furthermore, it bumps everything packages in 2 PRs, therefore it is quicker to review PRs, whereas Dependabot would do the same in more than 2 PRs.
+Talos is a bumper bot which runs automatically on the latest branch of Psammead. Talos was created to make life easier for developers, with Talos they do not need to keep track of their dependencies, it saves time, makes sure dependencies are up to date and it will prevent a duplicate package bundle from existing in external applications when multiple Psammead packages are used. Furthermore, it bumps everything packages in 2 PRs, therefore it is quicker to review PRs, whereas Dependabot would do the same in more than 2 PRs.
 
 ## Manual Usage
 
