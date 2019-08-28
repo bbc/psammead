@@ -2,9 +2,9 @@
 
 ## Description
 
-Talos is a bumper bot for Psammead packages.
+Talos is a bumper bot that runs automatically for Psammead packages.
 
-## Usage
+## Manual Usage
 
 ### Using Jenkins
 
@@ -41,8 +41,6 @@ Developers and testers need to review, test and merge the PR.
 They are ignored by Talos as it only runs on latest.
 
 ## When Psammead is up to date how do I pull changes through to Simorgh?
-
-Changes can be pulled manually before dependabot or it can do it for you.
 
 The package versions need to be manually updated in Simorgh, then run ``npm install`` in your CLI.
 
