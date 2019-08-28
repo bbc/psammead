@@ -150,7 +150,7 @@ export const Headline = styled.h3`
   padding-bottom: ${GEL_SPACING};
   @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
     ${({ script, topStory }) =>
-      script && topStory ? getParagon(script) : getGreatPrimer(script)}
+      script && (topStory ? getParagon(script) : getGreatPrimer(script))}
   }
 `;
 
