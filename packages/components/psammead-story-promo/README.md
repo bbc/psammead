@@ -109,7 +109,7 @@ The typical use-case of this component is as displayed below. A Image sits on th
 
 This component also has an option to display a media indicator, which consists of a play icon and duration of the media, if that data is provided.
 
-The `topStory` prop can be passed to adopt a vertical card layout under 600px. This is designed to be used only on the first (top) story on an index. This prop must be passed to the StoryPromo, Headline and Summary components.
+The `topStory` prop can be passed to adopt a vertical card layout under 600px. At breakpoints above 600px a horizontal layout is maintained with the image and text summary each occupying 1/2 of the parent container. This is designed to be used only on the first (top) story on an index. This prop must be passed to the StoryPromo, Headline and Summary components.
 
 ```jsx
 import React, { Fragment } from 'react';
@@ -214,11 +214,6 @@ The link is nested inside the `h3` for better support with VoiceOver Mac and Saf
 We haven't yet thoroughly looked at cross device browser AT testing yet, this is in-progress. We will update with a11y notes when carrying out a proper release.
 
 ## Roadmap
-
-This component will soon be integrated on to add support for additional UX and product requirements such as;
-
-- Hover and focus states
-- Logic to toggle a 'Top Story' mode which has greater text size and a vertically stacked design
 
 ## Contributing
 
