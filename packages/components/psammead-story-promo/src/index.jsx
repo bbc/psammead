@@ -156,7 +156,7 @@ export const Headline = styled.h3`
     ${props =>
       props.script && props.topStory
         ? getParagon(props.script)
-        : getGreatPrimer(props.script)};
+        : getGreatPrimer(props.script)}
   }
 `;
 
