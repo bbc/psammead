@@ -94,11 +94,11 @@ IndexAlsosContainer.propTypes = {
     .isRequired,
   script: shape(scriptPropType).isRequired,
   service: string.isRequired,
-  dir: 'ltr',
+  dir: oneOf(['ltr', 'rtl']),
 };
 
 IndexAlsosContainer.defaultProps = {
-  dir: oneOf(['ltr', 'rtl']),
+  dir: 'ltr',
 };
 
 export default IndexAlsosContainer;

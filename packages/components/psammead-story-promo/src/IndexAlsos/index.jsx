@@ -94,13 +94,13 @@ IndexAlsosLink.propTypes = {
   script: shape(scriptPropType).isRequired,
   service: string.isRequired,
   url: string.isRequired,
-  dir: 'ltr',
+  dir: oneOf(['ltr', 'rtl']),
   mediaIndicator: node,
   mediaType: string,
 };
 
 IndexAlsosLink.defaultProps = {
-  dir: oneOf(['ltr', 'rtl']),
+  dir: 'ltr',
   mediaIndicator: null,
   mediaType: null,
 };
