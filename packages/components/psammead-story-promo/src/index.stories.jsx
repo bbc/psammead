@@ -82,6 +82,7 @@ const InfoComponent = ({
         alsoItems={alsoItems}
         script={script}
         service={service}
+        dir={dir}
       />
     )}
   </Fragment>
@@ -146,7 +147,7 @@ storiesOf('Components|StoryPromo/StoryPromo', module)
   )
   .add(
     'Index Alsos - one',
-    generateStory({ topStory: true, alsoItems: relatedItems[0] }),
+    generateStory({ topStory: true, alsoItems: [relatedItems[0]] }),
     {
       notes,
       knobs: { escapeHTML: false },
