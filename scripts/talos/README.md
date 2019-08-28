@@ -16,25 +16,27 @@ Manual usage of Talos requires access to our Jenkins CI pipeline. So for now it 
 
 Navigate to [Jenkins](https://ci.news.tools.bbc.co.uk/blue/organizations/jenkins/psammead/branches) and click on the play (run) button, then enter the list of packages you want to bump seperated by commas.
 
-![screenshot showing the Jenkins interface, starting a Talos job updating react,styled-components](https://user-images.githubusercontent.com/34196381/63758525-d03ef980-c8b3-11e9-9b8c-d4f9a451237b.png)
+<img align="right" alt="screenshot showing the Jenkins interface, starting a Talos job updating react,styled-components" src="https://user-images.githubusercontent.com/34196381/63758525-d03ef980-c8b3-11e9-9b8c-d4f9a451237b.png">
 
 ### Using CLI (not recommended)
 
 Talos uses the Github API, therefore requires a token. Talos can be used if you setup the Github token, but its is not recommended.
 
-## How to review PRs?
+## FAQs
+
+#### How to review PRs?
 
 PRs can be reviewed like any other PR. The PRs should be tested according to what is being bumped.
 
-## When a Talos PR gets conflicts how can I rebase/recreate it?
+#### When a Talos PR gets conflicts how can I rebase/recreate it?
 
 Manually invoking Talos and entering the packages you want to bump can resolve conflicts.
 
-## Does Talos auto-update itself with the latest branch?
+#### Does Talos auto-update itself with the latest branch?
 
 Talos only runs on latest therefore does not need to.
 
-## Does Talos handle the package bumping and changelog?
+#### Does Talos handle the package bumping and changelog?
 
 Yes. When you make a Psammead package change you publish a new version of it.
 
@@ -42,18 +44,18 @@ When these changes are published, Talos will find where the packages are used ac
 
 Developers and testers need to review, test and merge the PR.
 
-## How does Talos treat Release Candidate, alpha, beta and v0.X package versions?
+#### How does Talos treat Release Candidate, alpha, beta and v0.X package versions?
 
 They are ignored by Talos as it only runs on latest.
 
-## When Psammead is up to date how do I pull changes in my application?
+#### When Psammead is up to date how do I pull changes in my application?
 
 You can go into your application and update your `package.json` to include the recently published psammead packages. Then run `npm install`
 
-## I don't see why I wouldn't want to try to update everything, how do I invoke it with \*/ALL packages being updated?
+#### I don't see why I wouldn't want to try to update everything, how do I invoke it with \*/ALL packages being updated?
 
 You would only want to bump packages for components that you have actually changed. This is to reduce the complexity of the PRs generated, allows reviewers to focus on components changed and speeds up testing.
 
-## Who is Talos?
+#### Who is Talos?
 
-In Greek mythology, Talos, also spelled Talus, was a giant automaton made of bronze to protect Europa in Crete from pirates and invaders. In BBC mythology, Talos is a bumper bot made out of code to protect developers from themselves. <img align="right" width="250" height="250" src="https://upload.wikimedia.org/wikipedia/commons/c/c8/Didrachm_Phaistos_obverse_CdM.jpg">
+In Greek mythology, Talos, also spelled Talus, was a giant automaton made of bronze to protect Europa in Crete from pirates and invaders. In BBC mythology, Talos is a bumper bot made out of code to protect developers from themselves. <img align="right" alt="Winged 'ΤΑΛΩΝ' armed with a stone." width="250" height="250" src="https://upload.wikimedia.org/wikipedia/commons/c/c8/Didrachm_Phaistos_obverse_CdM.jpg">
