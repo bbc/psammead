@@ -101,7 +101,7 @@ describe('StoryPromo - Top Story', () => {
     'should render with one Index Also correctly',
     <StoryPromo
       image={Image}
-      info={Info({ topStory: true, alsoItems: relatedItems[0] })}
+      info={Info({ topStory: true, alsoItems: [relatedItems[0]] })}
       topStory
     />,
   );
