@@ -7,12 +7,13 @@ jest.mock('fs', () => ({
 }));
 
 describe('getExistingPackages', () => {
-  it('should return a list of exisiting package names', async () => {
+  it('should return a list of exisiting package names', () => {
     const componentDir = [
       'foobar.js',
       'README.md',
       'psammead-foobar',
       'psammead-foobar',
+      'foobar-psammead',
     ];
 
     fs.readdirSync.mockReturnValue(componentDir);
@@ -23,11 +24,8 @@ describe('getExistingPackages', () => {
       };
     });
 
-    const exisitingPackages = getExistingPackages();
-
-    expect(exisitingPackages).toEqual(expect.not.stringMatching('.'));
-    expect(exisitingPackages).toEqual(
-      expect.arrayContaining([expect.stringMatching(/^psammead-/)]),
+    expect(getExistingPackages()).toEqual(
+      expect.arrayContaining([expect.stringContaining('psammead-')]),
     );
   });
 });
