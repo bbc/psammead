@@ -85,7 +85,7 @@ exports[`StoryPromo - Top Story should render correctly 1`] = `
 
 @media (min-width:37.5rem) {
   .c1 {
-    width: 33.33%;
+    width: 50%;
     margin-bottom: 0;
   }
 }
@@ -134,8 +134,8 @@ exports[`StoryPromo - Top Story should render correctly 1`] = `
 
 @media (min-width:37.5rem) {
   .c4 {
-    font-size: 1.125rem;
-    line-height: 1.375rem;
+    font-size: 1.25rem;
+    line-height: 1.5rem;
   }
 }
 
@@ -153,9 +153,16 @@ exports[`StoryPromo - Top Story should render correctly 1`] = `
   }
 }
 
+@media (max-width:62.9375rem) {
+  .c6 {
+    display: none;
+    visibility: hidden;
+  }
+}
+
 @media (min-width:37.5rem) {
   .c3 {
-    width: 66.67%;
+    width: 50%;
   }
 }
 
@@ -356,7 +363,7 @@ exports[`StoryPromo - Top Story should render with Media Indicator correctly 1`]
 
 @media (min-width:37.5rem) {
   .c1 {
-    width: 33.33%;
+    width: 50%;
     margin-bottom: 0;
   }
 }
@@ -405,8 +412,8 @@ exports[`StoryPromo - Top Story should render with Media Indicator correctly 1`]
 
 @media (min-width:37.5rem) {
   .c9 {
-    font-size: 1.125rem;
-    line-height: 1.375rem;
+    font-size: 1.25rem;
+    line-height: 1.5rem;
   }
 }
 
@@ -424,9 +431,16 @@ exports[`StoryPromo - Top Story should render with Media Indicator correctly 1`]
   }
 }
 
+@media (max-width:62.9375rem) {
+  .c11 {
+    display: none;
+    visibility: hidden;
+  }
+}
+
 @media (min-width:37.5rem) {
   .c8 {
-    width: 66.67%;
+    width: 50%;
   }
 }
 
@@ -678,7 +692,7 @@ exports[`StoryPromo - Top Story should render with multiple Index Alsos correctl
 
 @media (min-width:37.5rem) {
   .c1 {
-    width: 33.33%;
+    width: 50%;
     margin-bottom: 0;
   }
 }
@@ -727,8 +741,8 @@ exports[`StoryPromo - Top Story should render with multiple Index Alsos correctl
 
 @media (min-width:37.5rem) {
   .c4 {
-    font-size: 1.125rem;
-    line-height: 1.375rem;
+    font-size: 1.25rem;
+    line-height: 1.5rem;
   }
 }
 
@@ -746,9 +760,16 @@ exports[`StoryPromo - Top Story should render with multiple Index Alsos correctl
   }
 }
 
+@media (max-width:62.9375rem) {
+  .c6 {
+    display: none;
+    visibility: hidden;
+  }
+}
+
 @media (min-width:37.5rem) {
   .c3 {
-    width: 66.67%;
+    width: 50%;
   }
 }
 
@@ -770,13 +791,6 @@ exports[`StoryPromo - Top Story should render with multiple Index Alsos correctl
     width: initial;
     padding: initial;
     grid-column: 1 / span 6;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c7 {
-    display: none;
-    visibility: hidden;
   }
 }
 
@@ -852,6 +866,7 @@ exports[`StoryPromo - Top Story should render with multiple Index Alsos correctl
           >
             <span
               class="c12"
+              dir="ltr"
             >
               <span
                 aria-hidden="true"
@@ -1060,7 +1075,7 @@ exports[`StoryPromo - Top Story should render with one Index Also correctly 1`] 
 
 @media (min-width:37.5rem) {
   .c1 {
-    width: 33.33%;
+    width: 50%;
     margin-bottom: 0;
   }
 }
@@ -1109,8 +1124,8 @@ exports[`StoryPromo - Top Story should render with one Index Also correctly 1`] 
 
 @media (min-width:37.5rem) {
   .c4 {
-    font-size: 1.125rem;
-    line-height: 1.375rem;
+    font-size: 1.25rem;
+    line-height: 1.5rem;
   }
 }
 
@@ -1128,9 +1143,16 @@ exports[`StoryPromo - Top Story should render with one Index Also correctly 1`] 
   }
 }
 
+@media (max-width:62.9375rem) {
+  .c6 {
+    display: none;
+    visibility: hidden;
+  }
+}
+
 @media (min-width:37.5rem) {
   .c3 {
-    width: 66.67%;
+    width: 50%;
   }
 }
 
@@ -1152,13 +1174,6 @@ exports[`StoryPromo - Top Story should render with one Index Also correctly 1`] 
     width: initial;
     padding: initial;
     grid-column: 1 / span 6;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c7 {
-    display: none;
-    visibility: hidden;
   }
 }
 
@@ -1229,6 +1244,7 @@ exports[`StoryPromo - Top Story should render with one Index Also correctly 1`] 
         >
           <span
             class="c11"
+            dir="ltr"
           >
             <span
               aria-hidden="true"
@@ -1419,8 +1435,8 @@ exports[`StoryPromo should render Live promo correctly 1`] = `
 
 @media (min-width:37.5rem) {
   .c4 {
-    font-size: 1.125rem;
-    line-height: 1.375rem;
+    font-size: 1.25rem;
+    line-height: 1.5rem;
   }
 }
 
@@ -1651,8 +1667,8 @@ exports[`StoryPromo should render correctly 1`] = `
 
 @media (min-width:37.5rem) {
   .c4 {
-    font-size: 1.125rem;
-    line-height: 1.375rem;
+    font-size: 1.25rem;
+    line-height: 1.5rem;
   }
 }
 
@@ -1919,8 +1935,8 @@ exports[`StoryPromo with Media Indicator should render correctly 1`] = `
 
 @media (min-width:37.5rem) {
   .c9 {
-    font-size: 1.125rem;
-    line-height: 1.375rem;
+    font-size: 1.25rem;
+    line-height: 1.5rem;
   }
 }
 
