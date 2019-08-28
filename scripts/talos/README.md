@@ -20,7 +20,7 @@ Navigate to [Jenkins](https://ci.news.tools.bbc.co.uk/blue/organizations/jenkins
 
 ### Using CLI (not recommended)
 
-Talos uses the Github API, therefore requires a token. Talos can be used if you setup the Github token, but its is not recommended.
+Talos uses the Github API, therefore requires a token. Talos can be used if you setup the Github token, but it is not recommended.
 
 ## FAQs
 
