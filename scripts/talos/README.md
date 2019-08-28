@@ -2,7 +2,7 @@
 
 ## Description
 
-Talos is a bumper bot which runs automatically on the latest branch of Psammead. Talos was created to make life easier for developers, with Talos they do not need to keep track of their dependencies, it saves time, makes sure dependencies are up to date and prevents conflicts. Furthermore, it bumps everything packages in 2 PRs, therefore it is quicker to review PRs, whereas Dependabot would do the same in more than 2 PRs.
+Talos is a bumper bot which runs automatically on the latest branch of Psammead. Talos was created to make life easier for developers, with Talos they do not need to keep track of their dependencies, it saves time, makes sure dependencies are up to date and it will prevent a duplicate package bundle from existing in external applications when multiple Psammead packages are used. Furthermore, it bumps everything packages in 2 PRs, therefore it is quicker to review PRs, whereas Dependabot would do the same in more than 2 PRs.
 
 Simorgh uses `inspectpack` which checks if there are any duplicate package bundles in our application, if packages are duplicated they will not be accepted and will be flagged.
 
@@ -56,4 +56,4 @@ You would only want to bump packages for components that you have actually chang
 
 ## Who is Talos?
 
-In Greek mythology, Talos, also spelled Talus, was a giant automaton made of bronze to protect Europa in Crete from pirates and invaders. <img align="right" width="200" height="200" src="https://upload.wikimedia.org/wikipedia/commons/c/c8/Didrachm_Phaistos_obverse_CdM.jpg">
+In Greek mythology, Talos, also spelled Talus, was a giant automaton made of bronze to protect Europa in Crete from pirates and invaders. In BBC mythology, Talos is a bumper bot made out of code to protect developers from themselves. <img align="right" width="200" height="200" src="https://upload.wikimedia.org/wikipedia/commons/c/c8/Didrachm_Phaistos_obverse_CdM.jpg">
