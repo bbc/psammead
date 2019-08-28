@@ -4,5 +4,11 @@ module.exports = packageName => {
   const matchesPath = packagePath =>
     new RegExp(`/${packageName}$`).test(packagePath);
 
-  return getPackages().find(matchesPath);
+  const match = getPackages().find(matchesPath);
+
+  if(!match && packageName == 'psammead') {
+    return getPackages().find(packagePath => !packagePath.includes('/packages/'));
+  }
+
+  return match;
 };
