@@ -3,7 +3,6 @@ import styled from 'styled-components';
 import { node, oneOf, string, shape } from 'prop-types';
 import { scriptPropType } from '@bbc/gel-foundations/prop-types';
 import { GEL_SPACING, GEL_SPACING_DBL } from '@bbc/gel-foundations/spacings';
-import { GEL_GROUP_3_SCREEN_WIDTH_MIN } from '@bbc/gel-foundations/breakpoints';
 import { C_EBON, C_METAL, C_LUNAR } from '@bbc/psammead-styles/colours';
 import { getBrevier } from '@bbc/gel-foundations/typography';
 import { getSerifMedium } from '@bbc/psammead-styles/font-styles';
@@ -15,10 +14,6 @@ const StyledIndexAlsos = styled.div`
   position: relative;
   z-index: 2;
   padding: ${GEL_SPACING_DBL} 0 0;
-  @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
-    display: none;
-    visibility: hidden;
-  }
 `;
 
 const StyledIndexAlso = styled.div`
