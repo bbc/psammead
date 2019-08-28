@@ -8,7 +8,7 @@ Talos is a bumper bot for Psammead packages.
 
 ### Using Jenkins
 
-Navigate to Jenkins and click on the play (run) button, then enter the list of packages you want to bump seperated by commas.
+Navigate to [Jenkins](https://ci.news.tools.bbc.co.uk/blue/organizations/jenkins/psammead/branches) and click on the play (run) button, then enter the list of packages you want to bump seperated by commas.
 
 ![invoke-talos-jenkins](https://user-images.githubusercontent.com/34196381/63758525-d03ef980-c8b3-11e9-9b8c-d4f9a451237b.png)
 
