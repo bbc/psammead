@@ -1,6 +1,6 @@
 import React from 'react';
+import { render, fireEvent } from '@testing-library/react';
 import { shouldMatchSnapshot } from '@bbc/psammead-test-helpers';
-import renderer from 'react-test-renderer';
 import Placeholder from '.';
 
 describe('Media Player: Placeholder', () => {
@@ -16,14 +16,13 @@ describe('Media Player: Placeholder', () => {
   );
 
   it('should call onClick when clicked', () => {
-    const tree = renderer.create(
+    const { container } = render(
       <Placeholder
         onClick={mockOnClick}
         src="http://foo.bar/placeholder.png"
       />,
     );
-
-    tree.root.findByType('div').props.onClick();
-    expect(mockOnClick.mock.calls.length).toEqual(1);
+    fireEvent.click(container.firstChild);
+    expect(mockOnClick).toHaveBeenCalledTimes(1);
   });
 });

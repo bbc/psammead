@@ -58,8 +58,8 @@ In addition to Latin script defaults, Psammead supports typography for a number 
 | latin-with-diacritics | Vietnamese, Mundo, Afrique, Brasil, Turkish | The diacritics make these values differ from Latin | 
 | arabic                      | Urdu, Arabic, Persian | Group as they use the Arabic alphabet | 
 | arabic-pashto               | Pashto | Contains a subset of glyphs that mean it differs from Arabic | 
-| no-ascenders-or-descenders  | Korean, Japanese, Zhongwen, Ukchina, Tigrinya, Amharic | Group all alphabets without ascenders or descenders. This could be implemented as chinese, korean, ethiopic | Hindi, Nepali, Gujarati, Punjabi, Marathi, Telegu | The typography values for Devanagari and Gurmukhi characters are identical |
-| devanagari-and-gurmukhi     |  Hindi, Nepali, Gujarati, Punjabi, Marathi, Telegu | The typography values for Devanagari and Gurmukhi characters are identical |   
+| no-ascenders-or-descenders  | Korean, Japanese, Zhongwen, Ukchina, Tigrinya, Amharic | Group all alphabets without ascenders or descenders. This could be implemented as chinese, korean, ethiopic | Hindi, Nepali, Gujarati, Punjabi, Marathi, Telugu | The typography values for Devanagari and Gurmukhi characters are identical |
+| devanagari-and-gurmukhi     |  Hindi, Nepali, Gujarati, Punjabi, Marathi, Telugu | The typography values for Devanagari and Gurmukhi characters are identical |   
 | thai                        | Thai     | Bespoke to the Thai characters       | 
 | bengali                     | Bengali  | Bespoke to the Bengal characters     | 
 | burmese                     | Burmese  | Bespoke to the Burmese characters    | 
