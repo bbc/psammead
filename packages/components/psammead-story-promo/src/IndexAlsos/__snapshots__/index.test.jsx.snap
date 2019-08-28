@@ -109,6 +109,7 @@ exports[`Index Alsos should render multiple correctly 1`] = `
       >
         <span
           class="c5"
+          dir="ltr"
         >
           <span
             aria-hidden="true"
@@ -262,6 +263,7 @@ exports[`Index Alsos should render one correctly 1`] = `
     >
       <span
         class="c4"
+        dir="ltr"
       >
         <span
           aria-hidden="true"
