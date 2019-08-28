@@ -50,13 +50,8 @@ The package versions need to be manually updated in Simorgh, then run ``npm inst
 
 You would only want to bump packages for components that you have actually changed. This is to reduce the complexity of the PRs generated, allows reviewers to focus on components changed and speeds up testing.
 
-## Short origin (i.e name, why we have it?)
+## Who is Talos?
 
 In Greek mythology, Talos, also spelled Talus, was a giant automaton made of bronze to protect Europa in Crete from pirates and invaders.
 
 ![talos](https://upload.wikimedia.org/wikipedia/commons/c/c8/Didrachm_Phaistos_obverse_CdM.jpg)
-
-
-
-
-
