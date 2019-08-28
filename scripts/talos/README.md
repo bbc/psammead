@@ -12,7 +12,7 @@ Manual usage of Talos requires access to our Jenkins CI pipeline. So for now it 
 
 Navigate to [Jenkins](https://ci.news.tools.bbc.co.uk/blue/organizations/jenkins/psammead/branches) and click on the play (run) button, then enter the list of packages you want to bump seperated by commas.
 
-![invoke-talos-jenkins](https://user-images.githubusercontent.com/34196381/63758525-d03ef980-c8b3-11e9-9b8c-d4f9a451237b.png)
+![screenshot showing the Jenkins interface, starting a Talos job updating react,styled-components](https://user-images.githubusercontent.com/34196381/63758525-d03ef980-c8b3-11e9-9b8c-d4f9a451237b.png)
 
 ### Using CLI (not recommended)
 
@@ -42,9 +42,9 @@ Developers and testers need to review, test and merge the PR.
 
 They are ignored by Talos as it only runs on latest.
 
-## When Psammead is up to date how do I pull changes through to Simorgh?
+## When Psammead is up to date how do I pull changes in my application?
 
-The package versions need to be manually updated in Simorgh, then run ``npm install`` in your CLI.
+You can go into your application and update your `package.json` to include the recently published psammead packages. Then run `npm install`
 
 ## I don't see why I wouldn't want to try to update everything, how do I invoke it with \*/ALL packages being updated?
 
