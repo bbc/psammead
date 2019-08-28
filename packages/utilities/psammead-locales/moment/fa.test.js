@@ -1,13 +1,15 @@
 /* eslint-disable */
-const moment = require('moment');
-
-require('./fa');
+import moment from 'moment';
+import './fa';
 
 moment.locale('fa');
+
+// This asset overrides the gunit assertion done in the moment codebase.
+// Format and styling of this file has been keep consistent with the official moment tests.
+// An example of these tests can be seen at https://github.com/moment/moment/blob/develop/src/test/locale/en-gb.js
 const assert = { equal: (val1, val2) => expect(val1).toEqual(val2) };
 
 test('parse Gregorian months', function () {
-
     const testMonths = 'ژانویه_فوریه_مارس_آوریل_مه_ژوئن_ژوئیه_اوت_سپتامبر_اکتبر_نوامبر_دسامبر'.split('_');
     const shortMonths = 'ژانویه_فوریه_مارس_آوریل_مه_ژوئن_ژوئیه_اوت_سپتامبر_اکتبر_نوامبر_دسامبر'.split('_');
 
