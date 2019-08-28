@@ -44,7 +44,7 @@ They are ignored by Talos as it only runs on latest.
 
 ## When Psammead is up to date how do I pull changes through to Simorgh?
 
-The package versions need to be manually updated in Simorgh, then run ``npm install`` in your CLI.
+You can go into your application and update your `package.json` to include the recently published psammead packages. Then run `npm install`
 
 ## I don't see why I wouldn't want to try to update everything, how do I invoke it with \*/ALL packages being updated?
 
