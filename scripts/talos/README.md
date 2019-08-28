@@ -4,6 +4,10 @@
 
 Talos is a bumper bot which runs automatically on the latest branch of Psammead. Talos was created to make life easier for developers, with Talos they do not need to keep track of their dependencies, it saves time, makes sure dependencies are up to date and prevents conflicts. Furthermore, it bumps everything packages in 2 PRs, therefore it is quicker to review PRs, whereas Dependabot would do the same in more than 2 PRs.
 
+Simorgh uses `inspectpack` which checks if there are any duplicate package bundles in our application, if packages are duplicated they will not be accepted and will be flagged.
+
+Talos solves this issue as it ensure the package version is the same across the whole application (Psammead).
+
 ## Manual Usage
 
 Manual usage of Talos requires access to our Jenkins CI pipeline. So for now it is limited to those employed by the BBC. If you're an external contributor and want Talos run manually, please feel free to [open an issue](https://github.com/bbc/psammead/issues/new/choose). 
