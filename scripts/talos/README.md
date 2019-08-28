@@ -20,24 +20,31 @@ PRs can be reviewed like any other PR.
 
 ## When a Talos PR gets conflicts how can I rebase/recreate it?
 
-## Does it auto-update itself with the latest branch? If not why not do this on a cron? Why only update Talos PRs and not ALL branches every n hours?
+[]
 
-## does Talos handle the package bumping and changelog?
+## Does Talos auto-update itself with the latest branch?
+
+Talos only runs on latest therefore does not need to.
+
+## Does Talos handle the package bumping and changelog?
 
 Yes. When you make a Psammead component change you publish a new version of it.
 
+When these changes are published, Talos will find where the compnents are used across Psammead and will bump them, increasing the version number, then writes a changelog, makes a branch and creates a pull request.
 
-## how does it treat Release Candidate, alpha, beta and v0.X package versions?
+Developers and testers need to review, test and merge the PR.
+
+## How does Talos treat Release Candidate, alpha, beta and v0.X package versions?
 
 []
 
-## when Psammead is up to date how do I pull changes through to Simorgh?
+## When Psammead is up to date how do I pull changes through to Simorgh?
 
-[]
+The package versions need to be manually updated in Simorgh, then run ``npm install`` in your CLI.
 
 ## I don't see why I wouldn't want to try to update everything, how do I invoke it with \*/ALL packages being updated?
 
-[]
+You would only want to bump packages for components that you have actually changed.
 
 ## Short origin (i.e name, why we have it?)
 
@@ -46,5 +53,4 @@ In Greek mythology, Talos, also spelled Talus, was a giant automaton made of bro
 
 
 
-We (dev&test) then need to take this PR, review, test and merge it
 
