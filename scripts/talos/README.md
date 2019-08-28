@@ -42,7 +42,7 @@ Developers and testers need to review, test and merge the PR.
 
 They are ignored by Talos as it only runs on latest.
 
-## When Psammead is up to date how do I pull changes through to Simorgh?
+## When Psammead is up to date how do I pull changes in my application?
 
 You can go into your application and update your `package.json` to include the recently published psammead packages. Then run `npm install`
 
