@@ -81,7 +81,7 @@ node {
             }
           }
 
-          if (env.BRANCH_NAME == 'latest') {
+          if (env.BRANCH_NAME == 'debug-talos') {
             stage ('Talos') {
               sh 'git fetch --all'
               sh "npm run talos ${params.TALOS_PACKAGES.replaceAll("[^a-zA-Z0-9._/@,-]+","")}"
