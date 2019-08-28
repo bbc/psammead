@@ -1,8 +1,11 @@
 const { exec } = require('child_process');
 const path = require('path');
 
-module.exports = packageDir =>
-  new Promise((resolve, reject) => {
+module.exports = packageDir => {
+
+  console.log('packageDir', packageDir, path.resolve(__dirname, '../../', packageDir));
+
+  return new Promise((resolve, reject) => {
     exec(
       'npm install',
       {
@@ -17,3 +20,4 @@ module.exports = packageDir =>
       },
     );
   });
+};
