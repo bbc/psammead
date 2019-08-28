@@ -1,5 +1,9 @@
 # Talos
 
+## Description
+
+Talos is a bumper bot for Psammead packages, it can auto generate PRs.
+
 ## Can Talos be manually invoked?
 
 Yes, Talos can be invoked manually.
@@ -28,7 +32,7 @@ Talos only runs on latest therefore does not need to.
 
 ## Does Talos handle the package bumping and changelog?
 
-Yes. When you make a Psammead component change you publish a new version of it.
+Yes. When you make a Psammead package change you publish a new version of it.
 
 When these changes are published, Talos will find where the compnents are used across Psammead and will bump them, increasing the version number, then writes a changelog, makes a branch and creates a pull request.
 
@@ -36,7 +40,7 @@ Developers and testers need to review, test and merge the PR.
 
 ## How does Talos treat Release Candidate, alpha, beta and v0.X package versions?
 
-[]
+______________It doesn't deal with alpha packages.______________
 
 ## When Psammead is up to date how do I pull changes through to Simorgh?
 
@@ -49,6 +53,8 @@ You would only want to bump packages for components that you have actually chang
 ## Short origin (i.e name, why we have it?)
 
 In Greek mythology, Talos, also spelled Talus, was a giant automaton made of bronze to protect Europa in Crete from pirates and invaders.
+
+![talos](https://upload.wikimedia.org/wikipedia/commons/c/c8/Didrachm_Phaistos_obverse_CdM.jpg)
 
 
 
