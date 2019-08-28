@@ -14,9 +14,7 @@ describe('getPackagePath', () => {
     });
 
     it('should return the path of the package', () => {
-      expect(getPackagePath('psammead')).toEqual(
-        '/psammead',
-      );
+      expect(getPackagePath('psammead')).toEqual('/psammead');
       expect(getPackagePath('psammead-brand')).toEqual(
         '/psammead/packages/components/psammead-brand',
       );
