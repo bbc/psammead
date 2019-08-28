@@ -4,9 +4,7 @@
 
 Talos is a bumper bot for Psammead packages.
 
-## Can Talos be manually invoked?
-
-Yes, Talos can be invoked manually.
+## Usage
 
 ### Using Jenkins
 
@@ -16,15 +14,15 @@ Navigate to Jenkins and click on the play (run) button, then enter the list of p
 
 ### Using CLI (not recommended) 
 
-Run ``npm run talos "[insert package names with @bbc/]"`` in your local CLI.
+    npm run talos "[insert package names with @bbc/]"
 
 ## How to review PRs?
 
-PRs can be reviewed like any other PR.
+PRs can be reviewed like any other PR. The PRs should be tested according to what is being bumped.
 
 ## When a Talos PR gets conflicts how can I rebase/recreate it?
 
-[]
+Manually invoking Talos and entering the packages you want to bump can resolve conflicts.
 
 ## Does Talos auto-update itself with the latest branch?
 
@@ -34,21 +32,23 @@ Talos only runs on latest therefore does not need to.
 
 Yes. When you make a Psammead package change you publish a new version of it.
 
-When these changes are published, Talos will find where the compnents are used across Psammead and will bump them, increasing the version number, then writes a changelog, makes a branch and creates a pull request.
+When these changes are published, Talos will find where the packages are used across Psammead and will bump them, increasing the version number, then writes a changelog, makes a branch and creates a pull request.
 
 Developers and testers need to review, test and merge the PR.
 
 ## How does Talos treat Release Candidate, alpha, beta and v0.X package versions?
 
-______________It doesn't deal with alpha packages.______________
+They are ignored by Talos as it only runs on latest.
 
 ## When Psammead is up to date how do I pull changes through to Simorgh?
+
+Changes can be pulled manually before dependabot or it can do it for you.
 
 The package versions need to be manually updated in Simorgh, then run ``npm install`` in your CLI.
 
 ## I don't see why I wouldn't want to try to update everything, how do I invoke it with \*/ALL packages being updated?
 
-You would only want to bump packages for components that you have actually changed.
+You would only want to bump packages for components that you have actually changed. This is to reduce the complexity of the PRs generated, allows reviewers to focus on components changed and speeds up testing.
 
 ## Short origin (i.e name, why we have it?)
 
