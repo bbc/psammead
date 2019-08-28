@@ -107,7 +107,7 @@ test('format Gregorian month', function () {
 
 
 test('format week', function () {
-    var expected = ['اتوار اتوار ا', 'ګول  ګول ګ', 'نهه نهه ن', 'شورو شورو ش', 'زیارت زیارت ز', 'جمعه جمعه ج', 'خالي خالي  خ'];
+    var expected = ['اتوار اتوار ا', 'ګول ګول ګ', 'نهه نهه ن', 'شورو شورو ش', 'زیارت زیارت ز', 'جمعه جمعه ج', 'خالي خالي  خ'];
     for (var i = 0; i < expected.length; i++) {
         assert.equal(moment([2011, 0, 2 + i]).format('dddd ddd dd'), expected[i], expected[i]);
     }
