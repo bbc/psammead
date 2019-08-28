@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 1.5.3 | [PR#1932](https://github.com/bbc/psammead/pull/1932) Talos - Bump Dependencies |
 | 1.5.3 | [PR#1849](https://github.com/bbc/psammead/pull/1849) Bump @bbc/psammead-test-helpers `^1.1.1` to `^1.3.0`  |
 | 1.5.2 | [PR#1751](https://github.com/bbc/psammead/pull/1751) Bump storybook-readme to 5.0.8 from 5.0.6 to fix vulnerability |
 | 1.5.1 | [PR#1687](https://github.com/bbc/psammead/pull/1686) Bump psammead package dependencies |
