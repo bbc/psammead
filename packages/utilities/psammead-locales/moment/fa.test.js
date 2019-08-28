@@ -4,10 +4,8 @@ const moment = require('moment');
 require('./fa');
 
 moment.locale('fa');
-
-
 const assert = { equal: (val1, val2) => expect(val1).toEqual(val2) };
-/*
+
 test('parse Gregorian months', function () {
 
     const testMonths = 'ژانویه_فوریه_مارس_آوریل_مه_ژوئن_ژوئیه_اوت_سپتامبر_اکتبر_نوامبر_دسامبر'.split('_');
@@ -34,7 +32,7 @@ test('parse Gregorian months', function () {
         equalTest(shortMonths[i].toLocaleUpperCase(), 'MMMM', i);
     }
 });
-*/
+
 test('format dates and times', function () {
     var dates = [
         ['LT', '<time datetime = "2019-8-27"> ۰۱:۰۱ </time> - <time> ۵ شهریور ۱۳۹۸</time>'],       
