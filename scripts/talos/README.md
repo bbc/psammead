@@ -2,7 +2,7 @@
 
 ## Description
 
-Talos is a bumper bot for Psammead packages, it can auto generate PRs.
+Talos is a bumper bot for Psammead packages.
 
 ## Can Talos be manually invoked?
 
