@@ -140,9 +140,8 @@ const InlineMediaIndicator = styled.div`
 `;
 
 export const Headline = styled.h3`
-  ${props => (props.script ? getPica(props.script) : '')};
-
-  ${({ script, topStory }) => (script && topStory ? getParagon(script) : '')}}
+  ${({ script, topStory }) =>
+    script && topStory ? getParagon(script) : getPica(script)}}
 
   color: ${C_EBON};
   ${({ service }) => getSerifMedium(service)}
