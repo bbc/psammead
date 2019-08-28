@@ -1,8 +1,8 @@
 const moment = require('moment');
 require('moment/locale/ar');
 
-// these keys have been overridden to maintain western numerals
-// some other keys have been left as set upstream
+// the months have been overridden to maintain arabic dual month names
+// other values in this locale have been left as set upstream
 // see https://github.com/moment/moment/blob/develop/src/locale/ar.js
 
 const dualMonthNames = [
