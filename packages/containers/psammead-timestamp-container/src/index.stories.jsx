@@ -102,6 +102,12 @@ const updateAllTimestamps = () => {
   });
 };
 
+const getTimestampValue = storyTimestamp => {
+  return storyTimestamp.timestamp === 0 // matches value for 'Custom timestamp'
+    ? number('Timestamp value', Date.now()) // default for custom timestamp is now
+    : storyTimestamp.timestamp;
+};
+
 storiesOf('Containers|TimestampContainer', module)
   .addDecorator(withKnobs)
   .add(
@@ -116,11 +122,7 @@ storiesOf('Containers|TimestampContainer', module)
       );
       return (
         <Timestamp
-          timestamp={
-            storyTimestamp.timestamp === 0 // matches value for 'Custom timestamp'
-              ? number('Timestamp value', Date.now()) // default for custom timestamp is now
-              : storyTimestamp.timestamp
-          }
+          timestamp={getTimestampValue(storyTimestamp)}
           dateTimeFormat="YYYY-MM-DD"
           format={text('Format', 'D MMMM YYYY, HH:mm z')}
           isRelative={boolean('isRelative', false)}
@@ -143,11 +145,7 @@ storiesOf('Containers|TimestampContainer', module)
       );
       return (
         <Timestamp
-          timestamp={
-            storyTimestamp.timestamp === 0 // matches value for 'Custom timestamp'
-              ? number('Timestamp value', Date.now()) // default for custom timestamp is now
-              : storyTimestamp.timestamp
-          }
+          timestamp={getTimestampValue(storyTimestamp)}
           dateTimeFormat="YYYY-MM-DD"
           format={text('Format', 'D MMMM YYYY, HH:mm z')}
           isRelative={boolean('isRelative', false)}
@@ -171,11 +169,7 @@ storiesOf('Containers|TimestampContainer', module)
       );
       return (
         <Timestamp
-          timestamp={
-            storyTimestamp.timestamp === 0 // matches value for 'Custom timestamp'
-              ? number('Timestamp value', Date.now()) // default for custom timestamp is now
-              : storyTimestamp.timestamp
-          }
+          timestamp={getTimestampValue(storyTimestamp)}
           dateTimeFormat="YYYY-MM-DD"
           format={text('Format', 'D MMMM YYYY, HH:mm z')}
           isRelative={boolean('isRelative', false)}
