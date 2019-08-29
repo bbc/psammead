@@ -105,10 +105,7 @@ moment.defineLocale('ps', {
       string,
     );
 
-    if (!str.includes('datetime =')) {
-      return stringHelper.useEasternNumerals(str);
-    }
-    return str;
+    return stringHelper.useEasternNumerals(str);
   },
   dayOfMonthOrdinalParse: /\d{1,2}\./,
   ordinal: '%d',

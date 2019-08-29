@@ -33,9 +33,7 @@ moment.updateLocale('fa', {
       jalaliFormats,
       string,
     );
-    if (!str.includes('datetime =')) {
-      return stringHelper.useEasternNumerals(str);
-    }
-    return str;
+
+    return stringHelper.useEasternNumerals(str);
   },
 });
