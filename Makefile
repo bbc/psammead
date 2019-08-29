@@ -34,5 +34,4 @@ publish:
 	npm run publish
 
 change-scanner:
-	git fetch --all;
 	npm run changeScanner;
