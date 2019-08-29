@@ -19,7 +19,7 @@ Object.keys(changes).forEach(packageName => {
 /* eslint-disable no-console */
 if (errors.length > 0) {
   errors.forEach(error => console.error(chalk.red(error)));
-  console.log(''); // empty line for spacing
+  console.error(''); // empty line for spacing
   process.exit(1);
 } else {
   console.log(
