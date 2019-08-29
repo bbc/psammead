@@ -7,4 +7,6 @@ const Figure = styled.figure`
   width: 100%;
 `;
 
+// DUMMY CHANGE
+
 export default Figure;
