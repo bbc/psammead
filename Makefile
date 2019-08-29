@@ -34,5 +34,5 @@ publish:
 	npm run publish
 
 change-scanner:
-	git checkout --track origin/latest || true;
+	git fetch --all;
 	npm run changeScanner;
