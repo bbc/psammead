@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 2.2.5 | [PR#XXX](https://github.com/bbc/psammead/pull/XXX) Consistent use of destructuring props |
 | 2.2.4 | [PR#1931](https://github.com/bbc/psammead/pull/1931) Talos - Bump Dependencies |
 | 2.2.3 | [PR#1826](https://github.com/bbc/psammead/pull/1826) Talos - Bump Dependencies |
 | 2.2.2 | [PR#1804](https://github.com/bbc/psammead/pull/1804) Talos - Bump Dependencies |
