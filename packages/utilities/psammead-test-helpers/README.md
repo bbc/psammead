@@ -4,16 +4,15 @@ This package provides a collection of helper methods for implementing Jest snaps
 
 ## Exported Functions
 
-| Name                       | Arguments                                   | Description                                                                                                                                                                                                                      |
-| :------------------------- | :------------------------------------------ | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| shouldMatchSnapshot        | title, component                            | Renders the component using react-test-renderer, converts it to JSON and asserts that it matches the given snapshot, which will be saved in the `__snapshots__` directory. The first argument `title` is the title for the test. |
-| shallowRender              | component                                   | Shallow renders the component using react-test-renderer and returns the render output                                                                                                                                            |
-| shouldShallowMatchSnapshot | title, component                            | Shallow renders the component using react-test-renderer and asserts that it matches the given snapshot, which will be saved in the `__snapshots__` directory. The first argument `title` is the title for the test.              |
-| isNull                     | title, component                            | Renders the component using react-test-renderer, converts it to JSON and asserts that it is null. The first argument `title` is the title for the test.                                                                          |
-| testUtilityPackages        | actualExports, expectedExports, utilityName | Validates an imported utility package's exported values against an object of key-value pairs in the form `{ name_of_export: 'type of export' }`, e.g. `{ shouldMatchSnapshot: 'function' }`.                                     |
-| setWindowValue             | key, value                                  | Allows you to set variables on the window (eg. location) that are normally not writable                                                                                                                                        |
-| resetWindowValue           | key, value                                  | Allows you to reset the WindowValues that are previously overwritten by the setWindowValue function                                                                                                                           |
-| suppressPropWarnings       | warnings                                    | Suppresses predicted prop warnings during tests.                                                                                                                                                                                 |
+<!-- prettier-ignore -->
+| Name | Arguments | Description |
+| :---------- | :-------------- | :--------------- |
+| shouldMatchSnapshot | title, component | Renders the component using react-test-renderer, converts it to JSON and asserts that it matches the given snapshot, which will be saved in the `__snapshots__` directory. The first argument `title` is the title for the test. |
+| isNull | title, component | Renders the component using react-test-renderer, converts it to JSON and asserts that it is null. The first argument `title` is the title for the test. |
+| testUtilityPackages | actualExports, expectedExports, utilityName | Validates an imported utility package's exported values against an object of key-value pairs in the form `{ name_of_export: 'type of export' }`, e.g. `{ shouldMatchSnapshot: 'function' }`. |
+| setWindowValue | key, value | Allows you to set variables on the window (eg. location) that are normally not writable |
+| resetWindowValue | key, value | Allows you to reset the WindowValues that are previously overwritten by the setWindowValue function |
+| suppressPropWarnings | warnings | Suppresses predicted prop warnings during tests. |
 
 ## Installation
 
@@ -30,8 +29,6 @@ shouldMatchSnapshot('should render correctly', <h1>Hello World</h1>);
 ```
 
 ## Roadmap
-
-There is currently a plan to migrate from `react-test-renderer` to `enzyme` as it provides a nicer higher-level API over the same functionality, as well as having support for more granular unit tests.
 
 ## Contributing
 
