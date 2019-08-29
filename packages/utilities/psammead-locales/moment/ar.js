@@ -24,6 +24,7 @@ moment.updateLocale('ar', {
   months: dualMonthNames,
   monthsShort: dualMonthNames,
   postformat(string) {
+    // Suppress conversion to Eastern numerals from base `ar` locale but retain use of Arabic comma
     return string.replace(/,/g, '،');
   },
 });
