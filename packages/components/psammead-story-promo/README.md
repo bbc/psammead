@@ -5,6 +5,7 @@
 The `StoryPromo` component is designed to be used on 'index' pages, which are pages that link to other articles/stories. It supports having an image on the left of the promo with info on the right. This info can be any collection of nodes, however typically these would be a headline, text summary and timestamp.
 
 ## Exports
+
 `/index-alsos` - components for links to stories that are related to the top story.
 
 ## Installation
@@ -85,7 +86,9 @@ On the other hand, when there is exactly one Index Also, it should use the `Inde
 | script         | object | yes      | latin | { canon: { groupA: { fontSize: '28', lineHeight: '32',}, groupB: { fontSize: '32', lineHeight: '36', }, groupD: { fontSize: '44', lineHeight: '48', }, }, trafalgar: { groupA: { fontSize: '20', lineHeight: '24', }, groupB: { fontSize: '24', lineHeight: '28', }, groupD: { fontSize: '32', lineHeight: '36', }, }, }|
 | service        | string | yes      | N/A     | `'news'`|
 | url            | string | yes      | N/A     | `'https://www.bbc.co.uk/news'`|
+| dir            | string | no       | `ltr`   | `rtl`   |
 | mediaIndicator | node   | no       | null    | `<MediaIndicator service="news" type="video" indexAlsos/>` |
+| mediaType      | string | no       | null    | `Video` |
 
 #### IndexAlso Props
 
@@ -96,7 +99,9 @@ On the other hand, when there is exactly one Index Also, it should use the `Inde
 | script         | object | yes      | latin | { canon: { groupA: { fontSize: '28', lineHeight: '32',}, groupB: { fontSize: '32', lineHeight: '36', }, groupD: { fontSize: '44', lineHeight: '48', }, }, trafalgar: { groupA: { fontSize: '20', lineHeight: '24', }, groupB: { fontSize: '24', lineHeight: '28', }, groupD: { fontSize: '32', lineHeight: '36', }, }, }|
 | service        | string | yes      | N/A     | `'news'`|
 | url            | string | yes      | N/A     | `'https://www.bbc.co.uk/news'`|
+| dir            | string | no       | `ltr`   | `rtl`   |
 | mediaIndicator | node   | no       | null    | `<MediaIndicator service="news" type="video" indexAlsos/>` |
+| mediaType      | string | no       | null    | `Video` |
 
 ## Usage
 
@@ -104,7 +109,7 @@ The typical use-case of this component is as displayed below. A Image sits on th
 
 This component also has an option to display a media indicator, which consists of a play icon and duration of the media, if that data is provided.
 
-The `topStory` prop can be passed to adopt a vertical card layout under 600px. This is designed to be used only on the first (top) story on an index. This prop must be passed to the StoryPromo, Headline and Summary components.
+The `topStory` prop can be passed to adopt a vertical card layout under 600px. At breakpoints above 600px a horizontal layout is maintained with the image and text summary each occupying 1/2 of the parent container. This is designed to be used only on the first (top) story on an index. This prop must be passed to the StoryPromo, Headline and Summary components.
 
 ```jsx
 import React, { Fragment } from 'react';
@@ -209,11 +214,6 @@ The link is nested inside the `h3` for better support with VoiceOver Mac and Saf
 We haven't yet thoroughly looked at cross device browser AT testing yet, this is in-progress. We will update with a11y notes when carrying out a proper release.
 
 ## Roadmap
-
-This component will soon be integrated on to add support for additional UX and product requirements such as;
-
-- Hover and focus states
-- Logic to toggle a 'Top Story' mode which has greater text size and a vertically stacked design
 
 ## Contributing
 
