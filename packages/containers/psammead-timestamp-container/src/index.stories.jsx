@@ -21,29 +21,85 @@ const fixedTimestamp = 1566914061212;
 const val = momentTimestamp => momentTimestamp.valueOf();
 
 const timestamps = {
-  'Fixed (27 Aug 2019)': fixedTimestamp,
-  Now: Date.now(),
-  '5 seconds ago': val(moment().subtract(5, 'seconds')),
-  '30 seconds ago': val(moment().subtract(30, 'seconds')),
-  '59 seconds ago': val(moment().subtract(59, 'seconds')),
-  '1 minute ago': val(moment().subtract(1, 'minute')),
-  '24 minutes ago': val(moment().subtract(24, 'minute')),
-  '59 minutes ago': val(moment().subtract(59, 'minute')),
-  '63 minutes ago': val(moment().subtract(63, 'minute')),
-  '95 minutes ago': val(moment().subtract(95, 'minute')),
-  '2 hours ago': val(moment().subtract(2, 'hours')),
-  '23 hours ago': val(moment().subtract(23, 'hours')),
-  '1 day ago': val(moment().subtract(1, 'day')),
-  '30 hours ago': val(moment().subtract(30, 'hours')),
-  '20 days ago': val(moment().subtract(20, 'day')),
-  '21 days ago': val(moment().subtract(21, 'day')),
-  '8.9999... months ago': val(
-    moment()
-      .subtract(9, 'months')
-      .add(2, 'second'),
-  ),
-  '9 months ago': val(moment().subtract(9, 'months')),
-  'Custom timestamp': 0,
+  'Fixed (27 Aug 2019)': { timestamp: undefined, update: () => fixedTimestamp },
+  Now: { timestamp: undefined, update: () => Date.now() },
+  '5 seconds ago': {
+    timestamp: undefined,
+    update: () => val(moment().subtract(5, 'seconds')),
+  },
+  '30 seconds ago': {
+    timestamp: undefined,
+    update: () => val(moment().subtract(30, 'seconds')),
+  },
+  '59 seconds ago': {
+    timestamp: undefined,
+    update: () => val(moment().subtract(59, 'seconds')),
+  },
+  '1 minute ago': {
+    timestamp: undefined,
+    update: () => val(moment().subtract(1, 'minute')),
+  },
+  '24 minutes ago': {
+    timestamp: undefined,
+    update: () => val(moment().subtract(24, 'minute')),
+  },
+  '59 minutes ago': {
+    timestamp: undefined,
+    update: () => val(moment().subtract(59, 'minute')),
+  },
+  '63 minutes ago': {
+    timestamp: undefined,
+    update: () => val(moment().subtract(63, 'minute')),
+  },
+  '95 minutes ago': {
+    timestamp: undefined,
+    update: () => val(moment().subtract(95, 'minute')),
+  },
+  '2 hours ago': {
+    timestamp: undefined,
+    update: () => val(moment().subtract(2, 'hours')),
+  },
+  '23 hours ago': {
+    timestamp: undefined,
+    update: () => val(moment().subtract(23, 'hours')),
+  },
+  '1 day ago': {
+    timestamp: undefined,
+    update: () => val(moment().subtract(1, 'day')),
+  },
+  '30 hours ago': {
+    timestamp: undefined,
+    update: () => val(moment().subtract(30, 'hours')),
+  },
+  '20 days ago': {
+    timestamp: undefined,
+    update: () => val(moment().subtract(21, 'day')),
+  },
+  '21 days ago': {
+    timestamp: undefined,
+    update: () => val(moment().subtract(21, 'day')),
+  },
+  '8.9999... months ago': {
+    timestamp: undefined,
+    update: () =>
+      val(
+        moment()
+          .subtract(9, 'months')
+          .add(2, 'second'),
+      ),
+  },
+  '9 months ago': {
+    timestamp: undefined,
+    update: () => val(moment().subtract(9, 'months')),
+  },
+  'Custom timestamp': { timestamp: 0, update: () => 0 },
+};
+
+// update timestamp in place (so that Storybook has fixed value references)
+const updateAllTimestamps = () => {
+  Object.keys(timestamps).forEach(key => {
+    timestamps[key].timestamp = timestamps[key].update();
+  });
 };
 
 storiesOf('Containers|TimestampContainer', module)
@@ -51,13 +107,19 @@ storiesOf('Containers|TimestampContainer', module)
   .add(
     'default',
     inputProvider([], ({ locale, script, service }) => {
-      const storyTimestamp = select('Timestamp', timestamps, fixedTimestamp);
+      updateAllTimestamps();
+
+      const storyTimestamp = select(
+        'Timestamp',
+        timestamps,
+        timestamps['Fixed (27 Aug 2019)'],
+      );
       return (
         <Timestamp
           timestamp={
-            storyTimestamp === 0 // matches value for 'Custom timestamp'
+            storyTimestamp.timestamp === 0 // matches value for 'Custom timestamp'
               ? number('Timestamp value', Date.now()) // default for custom timestamp is now
-              : storyTimestamp
+              : storyTimestamp.timestamp
           }
           dateTimeFormat="YYYY-MM-DD"
           format={text('Format', 'D MMMM YYYY, HH:mm z')}
@@ -72,13 +134,19 @@ storiesOf('Containers|TimestampContainer', module)
   .add(
     'with prefix',
     inputProvider([], ({ locale, script, service }) => {
-      const storyTimestamp = select('Timestamp', timestamps, fixedTimestamp);
+      updateAllTimestamps();
+
+      const storyTimestamp = select(
+        'Timestamp',
+        timestamps,
+        timestamps['Fixed (27 Aug 2019)'],
+      );
       return (
         <Timestamp
           timestamp={
-            storyTimestamp === 0 // matches value for 'Custom timestamp'
+            storyTimestamp.timestamp === 0 // matches value for 'Custom timestamp'
               ? number('Timestamp value', Date.now()) // default for custom timestamp is now
-              : storyTimestamp
+              : storyTimestamp.timestamp
           }
           dateTimeFormat="YYYY-MM-DD"
           format={text('Format', 'D MMMM YYYY, HH:mm z')}
@@ -94,13 +162,19 @@ storiesOf('Containers|TimestampContainer', module)
   .add(
     'with prefix and suffix',
     inputProvider([], ({ locale, script, service }) => {
-      const storyTimestamp = select('Timestamp', timestamps, fixedTimestamp);
+      updateAllTimestamps();
+
+      const storyTimestamp = select(
+        'Timestamp',
+        timestamps,
+        timestamps['Fixed (27 Aug 2019)'],
+      );
       return (
         <Timestamp
           timestamp={
-            storyTimestamp === 0 // matches value for 'Custom timestamp'
+            storyTimestamp.timestamp === 0 // matches value for 'Custom timestamp'
               ? number('Timestamp value', Date.now()) // default for custom timestamp is now
-              : storyTimestamp
+              : storyTimestamp.timestamp
           }
           dateTimeFormat="YYYY-MM-DD"
           format={text('Format', 'D MMMM YYYY, HH:mm z')}
