@@ -19,7 +19,7 @@ const PADDING = `
 
 const StyledTimestamp = styled.time`
   ${({ script, typographyFunc }) =>
-    script && (typographyFunc && typographyFunc(script))};
+    script && (typographyFunc && typographyFunc(script))}
   color: ${C_METAL};
   display: block;
   ${({ service }) => getSansRegular(service)}
