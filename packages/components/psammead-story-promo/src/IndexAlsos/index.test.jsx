@@ -17,7 +17,7 @@ describe('Index Alsos', () => {
   shouldMatchSnapshot(
     'should render one correctly',
     <IndexAlsosContainer
-      alsoItems={relatedItems[0]}
+      alsoItems={[relatedItems[0]]}
       script={latin}
       service="news"
     />,

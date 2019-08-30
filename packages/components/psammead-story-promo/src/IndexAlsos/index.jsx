@@ -1,22 +1,19 @@
 import React, { Fragment } from 'react';
 import styled from 'styled-components';
-import { node, string, shape } from 'prop-types';
+import { node, oneOf, string, shape } from 'prop-types';
 import { scriptPropType } from '@bbc/gel-foundations/prop-types';
 import { GEL_SPACING, GEL_SPACING_DBL } from '@bbc/gel-foundations/spacings';
-import { GEL_GROUP_3_SCREEN_WIDTH_MIN } from '@bbc/gel-foundations/breakpoints';
 import { C_EBON, C_METAL, C_LUNAR } from '@bbc/psammead-styles/colours';
 import { getBrevier } from '@bbc/gel-foundations/typography';
 import { getSerifMedium } from '@bbc/psammead-styles/font-styles';
 import VisuallyHiddenText from '@bbc/psammead-visually-hidden-text';
 
+const paddingDir = ({ dir }) => `padding-${dir === 'rtl' ? 'left' : 'right'}`;
+
 const StyledIndexAlsos = styled.div`
   position: relative;
   z-index: 2;
   padding: ${GEL_SPACING_DBL} 0 0;
-  @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
-    display: none;
-    visibility: hidden;
-  }
 `;
 
 const StyledIndexAlso = styled.div`
@@ -31,7 +28,7 @@ const StyledIndexAlsosUl = styled.ul`
 `;
 
 const IndexAlsosMediaIndicator = styled.span`
-  padding-right: ${GEL_SPACING};
+  ${paddingDir}: ${GEL_SPACING};
 `;
 
 const RoleText = styled.span.attrs({
@@ -44,7 +41,7 @@ const IndexAlsosText = styled.span`
 `;
 
 const StyledIndexAlsosLink = styled.a`
-  ${props => (props.script ? getBrevier(props.script) : '')};
+  ${({ script }) => script && getBrevier(script)};
   ${({ service }) => getSerifMedium(service)}
   color: ${C_EBON};
   text-decoration: none;
@@ -64,6 +61,7 @@ const IndexAlsosLink = ({
   script,
   service,
   url,
+  dir,
   mediaIndicator,
   mediaType,
 }) => {
@@ -71,7 +69,9 @@ const IndexAlsosLink = ({
     <StyledIndexAlsosLink href={url} script={script} service={service}>
       {mediaIndicator ? (
         <Fragment>
-          <IndexAlsosMediaIndicator>{mediaIndicator}</IndexAlsosMediaIndicator>
+          <IndexAlsosMediaIndicator dir={dir}>
+            {mediaIndicator}
+          </IndexAlsosMediaIndicator>
           <RoleText>
             <VisuallyHiddenText>{mediaType}, </VisuallyHiddenText>
             <IndexAlsosText>{children}</IndexAlsosText>
@@ -89,11 +89,13 @@ IndexAlsosLink.propTypes = {
   script: shape(scriptPropType).isRequired,
   service: string.isRequired,
   url: string.isRequired,
+  dir: oneOf(['ltr', 'rtl']),
   mediaIndicator: node,
   mediaType: string,
 };
 
 IndexAlsosLink.defaultProps = {
+  dir: 'ltr',
   mediaIndicator: null,
   mediaType: null,
 };
