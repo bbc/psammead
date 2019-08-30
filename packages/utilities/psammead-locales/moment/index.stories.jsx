@@ -13,10 +13,12 @@ import notes from '../README.md';
 import './ig';
 import './pcm';
 import './yo';
+import './ar';
 
 const stories = storiesOf('Utilities|Psammead Locales', module);
 
 const locales = [
+  { name: 'Arabic', locale: 'ar' },
   { name: 'Igbo', locale: 'ig' },
   { name: 'Pidgin', locale: 'pcm' },
   { name: 'Yoruba', locale: 'yo' },
