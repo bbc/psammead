@@ -20,7 +20,7 @@ npm install @bbc/psammead-<%= name %> --save
 
 <!-- Description of the component usage -->
 
-```jsx
+```
 import <%= componentName %> from "@bbc/psammead-<%= name %>"
 ```
 
