@@ -10,13 +10,11 @@ describe('File system actions', () => {
     shell.exec.mockReturnValue({ code: 0, output: 'success' });
 
     expect(fsActions.install()).toEqual(Promise.resolve('success'));
-    expect(fsActions.installPackage()).toEqual(Promise.resolve('success'));
   });
 
   it('should unsuccessfully npm install', () => {
     shell.exec.mockReturnValue({ code: 99, output: 'error' });
 
     expect(fsActions.install()).toEqual(Promise.reject('error'));
-    expect(fsActions.installPackage()).toEqual(Promise.reject('error'));
   });
 });
