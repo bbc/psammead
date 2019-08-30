@@ -6,11 +6,6 @@ import <%= componentName %> from './index';
 storiesOf('<%= componentName %>', module)
   .add(
     'default',
-    () => {
-
-      return (
-        <<%= componentName %> />
-      );
-    },
+    () => (<<%= componentName %> />),
     { notes },
   );
