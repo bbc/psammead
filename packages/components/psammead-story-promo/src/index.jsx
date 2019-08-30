@@ -17,6 +17,7 @@ import {
 } from '@bbc/gel-foundations/breakpoints';
 import {
   getPica,
+  getGreatPrimer,
   getParagon,
   getLongPrimer,
 } from '@bbc/gel-foundations/typography';
@@ -139,21 +140,16 @@ const InlineMediaIndicator = styled.div`
 `;
 
 export const Headline = styled.h3`
-  ${({ script }) => script && getPica(script)};
+  ${({ script, topStory }) =>
+    script && (topStory ? getParagon(script) : getPica(script))}
   ${({ service }) => getSerifMedium(service)}
-  ${({ script, topStory }) => {
-    if (!script) {
-      return '';
-    }
-
-    return topStory ? getParagon(script) : getPica(script);
-  }}
   color: ${C_EBON};
   margin: 0; /* Reset */
   padding-bottom: ${GEL_SPACING};
 
   @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
-    ${({ script }) => script && getParagon(script)};
+    ${({ script, topStory }) =>
+      script && (topStory ? getParagon(script) : getGreatPrimer(script))}
   }
 `;
 

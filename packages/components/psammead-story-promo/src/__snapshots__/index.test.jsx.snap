@@ -18,13 +18,11 @@ exports[`StoryPromo - Top Story should render correctly 1`] = `
 }
 
 .c4 {
-  font-size: 0.9375rem;
-  line-height: 1.25rem;
+  font-size: 1.25rem;
+  line-height: 1.5rem;
   font-family: ReithSerif,Helvetica,Arial,sans-serif;
   font-weight: 500;
   font-style: normal;
-  font-size: 1.25rem;
-  line-height: 1.5rem;
   color: #222222;
   margin: 0;
   padding-bottom: 0.5rem;
@@ -101,20 +99,6 @@ exports[`StoryPromo - Top Story should render correctly 1`] = `
     display: block;
     width: initial;
     grid-column: 1 / span 6;
-  }
-}
-
-@media (min-width:20rem) and (max-width:37.4375rem) {
-  .c4 {
-    font-size: 1rem;
-    line-height: 1.25rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c4 {
-    font-size: 1rem;
-    line-height: 1.25rem;
   }
 }
 
@@ -289,13 +273,11 @@ exports[`StoryPromo - Top Story should render with Media Indicator correctly 1`]
 }
 
 .c9 {
-  font-size: 0.9375rem;
-  line-height: 1.25rem;
+  font-size: 1.25rem;
+  line-height: 1.5rem;
   font-family: ReithSerif,Helvetica,Arial,sans-serif;
   font-weight: 500;
   font-style: normal;
-  font-size: 1.25rem;
-  line-height: 1.5rem;
   color: #222222;
   margin: 0;
   padding-bottom: 0.5rem;
@@ -379,20 +361,6 @@ exports[`StoryPromo - Top Story should render with Media Indicator correctly 1`]
     display: block;
     width: initial;
     grid-column: 1 / span 6;
-  }
-}
-
-@media (min-width:20rem) and (max-width:37.4375rem) {
-  .c9 {
-    font-size: 1rem;
-    line-height: 1.25rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c9 {
-    font-size: 1rem;
-    line-height: 1.25rem;
   }
 }
 
@@ -578,13 +546,11 @@ exports[`StoryPromo - Top Story should render with multiple Index Alsos correctl
 }
 
 .c4 {
-  font-size: 0.9375rem;
-  line-height: 1.25rem;
+  font-size: 1.25rem;
+  line-height: 1.5rem;
   font-family: ReithSerif,Helvetica,Arial,sans-serif;
   font-weight: 500;
   font-style: normal;
-  font-size: 1.25rem;
-  line-height: 1.5rem;
   color: #222222;
   margin: 0;
   padding-bottom: 0.5rem;
@@ -708,20 +674,6 @@ exports[`StoryPromo - Top Story should render with multiple Index Alsos correctl
     display: block;
     width: initial;
     grid-column: 1 / span 6;
-  }
-}
-
-@media (min-width:20rem) and (max-width:37.4375rem) {
-  .c4 {
-    font-size: 1rem;
-    line-height: 1.25rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c4 {
-    font-size: 1rem;
-    line-height: 1.25rem;
   }
 }
 
@@ -967,13 +919,11 @@ exports[`StoryPromo - Top Story should render with one Index Also correctly 1`] 
 }
 
 .c4 {
-  font-size: 0.9375rem;
-  line-height: 1.25rem;
+  font-size: 1.25rem;
+  line-height: 1.5rem;
   font-family: ReithSerif,Helvetica,Arial,sans-serif;
   font-weight: 500;
   font-style: normal;
-  font-size: 1.25rem;
-  line-height: 1.5rem;
   color: #222222;
   margin: 0;
   padding-bottom: 0.5rem;
@@ -1091,20 +1041,6 @@ exports[`StoryPromo - Top Story should render with one Index Also correctly 1`] 
     display: block;
     width: initial;
     grid-column: 1 / span 6;
-  }
-}
-
-@media (min-width:20rem) and (max-width:37.4375rem) {
-  .c4 {
-    font-size: 1rem;
-    line-height: 1.25rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c4 {
-    font-size: 1rem;
-    line-height: 1.25rem;
   }
 }
 
@@ -1320,8 +1256,6 @@ exports[`StoryPromo should render Live promo correctly 1`] = `
   font-family: ReithSerif,Helvetica,Arial,sans-serif;
   font-weight: 500;
   font-style: normal;
-  font-size: 0.9375rem;
-  line-height: 1.25rem;
   color: #222222;
   margin: 0;
   padding-bottom: 0.5rem;
@@ -1419,24 +1353,10 @@ exports[`StoryPromo should render Live promo correctly 1`] = `
   }
 }
 
-@media (min-width:20rem) and (max-width:37.4375rem) {
-  .c4 {
-    font-size: 1rem;
-    line-height: 1.25rem;
-  }
-}
-
 @media (min-width:37.5rem) {
   .c4 {
-    font-size: 1rem;
-    line-height: 1.25rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c4 {
-    font-size: 1.25rem;
-    line-height: 1.5rem;
+    font-size: 1.125rem;
+    line-height: 1.375rem;
   }
 }
 
@@ -1561,8 +1481,6 @@ exports[`StoryPromo should render correctly 1`] = `
   font-family: ReithSerif,Helvetica,Arial,sans-serif;
   font-weight: 500;
   font-style: normal;
-  font-size: 0.9375rem;
-  line-height: 1.25rem;
   color: #222222;
   margin: 0;
   padding-bottom: 0.5rem;
@@ -1651,24 +1569,10 @@ exports[`StoryPromo should render correctly 1`] = `
   }
 }
 
-@media (min-width:20rem) and (max-width:37.4375rem) {
-  .c4 {
-    font-size: 1rem;
-    line-height: 1.25rem;
-  }
-}
-
 @media (min-width:37.5rem) {
   .c4 {
-    font-size: 1rem;
-    line-height: 1.25rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c4 {
-    font-size: 1.25rem;
-    line-height: 1.5rem;
+    font-size: 1.125rem;
+    line-height: 1.375rem;
   }
 }
 
@@ -1815,8 +1719,6 @@ exports[`StoryPromo with Media Indicator should render correctly 1`] = `
   font-family: ReithSerif,Helvetica,Arial,sans-serif;
   font-weight: 500;
   font-style: normal;
-  font-size: 0.9375rem;
-  line-height: 1.25rem;
   color: #222222;
   margin: 0;
   padding-bottom: 0.5rem;
@@ -1919,24 +1821,10 @@ exports[`StoryPromo with Media Indicator should render correctly 1`] = `
   }
 }
 
-@media (min-width:20rem) and (max-width:37.4375rem) {
-  .c9 {
-    font-size: 1rem;
-    line-height: 1.25rem;
-  }
-}
-
 @media (min-width:37.5rem) {
   .c9 {
-    font-size: 1rem;
-    line-height: 1.25rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c9 {
-    font-size: 1.25rem;
-    line-height: 1.5rem;
+    font-size: 1.125rem;
+    line-height: 1.375rem;
   }
 }
 
