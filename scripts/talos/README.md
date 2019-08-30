@@ -46,7 +46,7 @@ Developers and testers need to review, test and merge the PR.
 
 #### How does Talos treat Release Candidate, alpha, beta and v0.X package versions?
 
-They are ignored by Talos as it only runs on latest.
+They are ignored by Talos as it only updates to the `latest` release of dependancies.
 
 #### When Psammead is up to date how do I pull changes in to my application?
 
