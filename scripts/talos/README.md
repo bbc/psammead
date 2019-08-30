@@ -6,7 +6,7 @@ Talos is a bumper bot which runs automatically on the latest branch of Psammead.
 
 Simorgh uses `inspectpack` which checks if there are any duplicate package bundles in our application, if packages are duplicated they will not be accepted and will be flagged.
 
-Talos solves this issue as it ensures the package version is the same across the whole application (Psammead).
+Talos solves this issue as it ensures the package version is the same across the whole monorepo of packages (Psammead).
 
 ## Manual Usage
 
