@@ -2,10 +2,34 @@ const { exec } = require('child_process');
 const getPackagePath = require('../utilities/getPackagePath');
 const getPackages = require('../utilities/getPackages');
 
-const runExec = (version, packageDir) =>
-  new Promise((resolve, reject) => {
+const isAlpha = packageDir => {
+  return new Promise((resolve, reject) => {
     exec(
-      `npm --no-git-tag-version version ${version}`,
+      'npm version',
+      {
+        cwd: packageDir,
+      },
+      (error, stdout) => {
+        if (error) {
+          reject(error);
+        } else {
+          const alphaRegex = new RegExp(/@bbc.*-alpha/);
+          resolve(alphaRegex.test(stdout));
+        }
+      },
+    );
+  });
+};
+
+const runExec = async (version, packageDir) => {
+  const isAlphaVersion = await isAlpha(packageDir);
+  const command = isAlphaVersion
+    ? 'npm --no-git-tag-version version prerelease'
+    : `npm --no-git-tag-version version ${version}`;
+
+  return new Promise((resolve, reject) => {
+    exec(
+      command,
       {
         cwd: packageDir,
       },
@@ -18,6 +42,7 @@ const runExec = (version, packageDir) =>
       },
     );
   });
+};
 
 module.exports = ({ packageNames, version }) => {
   const packagePaths = getPackages();
