@@ -22,13 +22,11 @@ const isAlpha = packageDir =>
 
 const runExec = async (version, packageDir) => {
   const isAlphaVersion = await isAlpha(packageDir);
-  const command = isAlphaVersion
-    ? 'npm --no-git-tag-version version prerelease'
-    : `npm --no-git-tag-version version ${version}`;
+  const versionTag = isAlphaVersion ? 'prerelease' : version;
 
   return new Promise((resolve, reject) => {
     exec(
-      command,
+      `npm --no-git-tag-version version ${versionTag}`,
       {
         cwd: packageDir,
       },
