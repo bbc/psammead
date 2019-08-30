@@ -57,7 +57,7 @@ const CenterWrapper = styled.div`
 `;
 
 const Title = styled.h2`
-  ${props => (props.script ? getGreatPrimer(props.script) : '')};
+  ${({ script }) => script && getGreatPrimer(script)};
   color: ${C_WHITE};
   font-weight: 700;
   padding: 0;
@@ -74,7 +74,7 @@ const Title = styled.h2`
  * The '& li + li' below allows for styling every `li` element except the first.
  */
 const Options = styled.ul`
-  ${props => (props.script ? getLongPrimer(props.script) : '')};
+  ${({ script }) => script && getLongPrimer(script)};
   color: ${C_CONSENT_ACTION};
   font-weight: 600;
   padding: 0;
@@ -99,7 +99,7 @@ const hoverFocusStyles = `
 `;
 
 export const ConsentBannerText = styled.p`
-  ${props => (props.script ? getLongPrimer(props.script) : '')};
+  ${({ script }) => script && getLongPrimer(script)};
   color: ${C_CONSENT_CONTENT};
 
   @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
@@ -120,7 +120,7 @@ export const ConsentBannerText = styled.p`
 // prop on styled component as required for the amp useage
 const ListItem = styled.li`
   & button {
-    ${props => (props.script ? getGreatPrimer(props.script) : '')};
+    ${({ script }) => script && getGreatPrimer(script)};
     color: ${C_CONSENT_ACTION};
     font-weight: 700;
     background: none;
