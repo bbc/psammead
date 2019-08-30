@@ -3,13 +3,15 @@ import styled from 'styled-components';
 import { storiesOf } from '@storybook/react';
 import { GEL_SPACING, GEL_SPACING_DBL } from '@bbc/gel-foundations/spacings';
 import {
-  getBodyCopy,
   GEL_FF_REITH_SANS,
+  getBodyCopy,
 } from '@bbc/gel-foundations/typography';
 import { latin } from '@bbc/gel-foundations/scripts';
+import { select, withKnobs } from '@storybook/addon-knobs';
 import notes from '../README.md';
 import * as colours from './colours';
 import { grid } from './detection';
+import * as fonts from './fonts';
 
 const ColourContainer = styled.div`
   padding: ${GEL_SPACING_DBL};
@@ -51,9 +53,40 @@ const Detects = styled.li`
   }
 `;
 
+const Paragraph = styled.p`
+  ${Object.values(fonts).join()}
+`;
+
+const fontNames = Object.keys(fonts).sort();
+const fontStyles = fontNames.map(x => x.substring(2).replace(/_/g, ' '));
+
+const getFontFamily = fontName => {
+  const font = fontNames.find(x => x.includes(fontName.replace(/ /g, '_')));
+  const fontFace = fonts[font];
+  const regex = 'font-family:';
+  return fontFace
+    .substring(fontFace.indexOf(regex) + regex.length, fontFace.indexOf(';'))
+    .replace(/"/g, '');
+};
+
 const detectionExamples = ['display: grid', grid];
 
 storiesOf('Utilities|Psammead Styles', module)
+  .addDecorator(withKnobs)
+  .add(
+    'font styles',
+    () => {
+      const fontName = select('Font Style', fontStyles, fontStyles[0]);
+      return (
+        <Paragraph style={{ fontFamily: getFontFamily(fontName) }}>
+          {`This text is displayed in ${fontName.toLowerCase()} fonts`} <br />
+          {'0123456789'} <br />
+          {'مرحبا بالعالم'}
+        </Paragraph>
+      );
+    },
+    { notes, knobs: { escapeHTML: false } },
+  )
   .add(
     'colours',
     () => (
