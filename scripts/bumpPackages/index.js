@@ -2,8 +2,8 @@ const { exec } = require('child_process');
 const getPackagePath = require('../utilities/getPackagePath');
 const getPackages = require('../utilities/getPackages');
 
-const isAlpha = packageDir => {
-  return new Promise((resolve, reject) => {
+const isAlpha = packageDir =>
+  new Promise((resolve, reject) => {
     exec(
       'npm version',
       {
@@ -19,7 +19,6 @@ const isAlpha = packageDir => {
       },
     );
   });
-};
 
 const runExec = async (version, packageDir) => {
   const isAlphaVersion = await isAlpha(packageDir);
