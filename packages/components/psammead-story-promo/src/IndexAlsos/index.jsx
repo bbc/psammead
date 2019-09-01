@@ -41,7 +41,7 @@ const IndexAlsosText = styled.span`
 `;
 
 const StyledIndexAlsosLink = styled.a`
-  ${props => (props.script ? getBrevier(props.script) : '')};
+  ${({ script }) => script && getBrevier(script)};
   ${({ service }) => getSerifMedium(service)}
   color: ${C_EBON};
   text-decoration: none;
