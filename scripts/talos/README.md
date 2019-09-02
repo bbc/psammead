@@ -10,7 +10,7 @@ Talos solves this issue as it ensures the package version is the same across the
 
 ## Manual Usage
 
-Manual usage of Talos requires access to our Jenkins CI pipeline. So for now it is limited to those employed by the BBC. If you're an external contributor and want Talos run manually, please feel free to [open an issue](https://github.com/bbc/psammead/issues/new/choose). 
+Manual usage of Talos requires access to our Jenkins CI pipeline. So for now it is limited to those employed by the BBC. If you're an external contributor and want Talos run manually, please feel free to [open an issue](https://github.com/bbc/psammead/issues/new/choose).
 
 ### Using Jenkins
 
@@ -27,6 +27,10 @@ Talos uses the Github API, therefore requires a token. Talos can be used if you 
 #### How to review PRs?
 
 PRs can be reviewed like any other PR. The PRs should be tested according to what is being bumped.
+
+#### How do we test Talos PRs?
+
+If the PR just updates the dev dependencies there wouldn't be any testing required from the test team.But if there are other dependencies updated then a regression testing along with testing of the changes that have gone in that version for the individual component is required.
 
 #### When a Talos PR gets conflicts how can I rebase/recreate it?
 
