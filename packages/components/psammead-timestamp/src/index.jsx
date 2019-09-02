@@ -18,12 +18,13 @@ const PADDING = `
 `;
 
 const StyledTimestamp = styled.time`
-  ${props => (props.typographyFunc ? props.typographyFunc(props.script) : '')}
+  ${({ script, typographyFunc }) =>
+    script && (typographyFunc && typographyFunc(script))}
   color: ${C_METAL};
   display: block;
   ${({ service }) => getSansRegular(service)}
   ${props => props.padding && PADDING}
- `;
+`;
 
 const Timestamp = ({
   children,
