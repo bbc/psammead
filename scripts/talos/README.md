@@ -30,7 +30,7 @@ PRs can be reviewed like any other PR. The PRs should be tested according to wha
 
 #### How do we test Talos PRs?
 
-If the PR just updates the dev dependencies there wouldn't be any testing required from the test team.But if there are other dependencies updated then a regression testing along with testing of the changes that have gone in that version for the individual component is required.
+If the PR just updates the dev dependencies there wouldn't be any testing required from the test team. But if there are other dependencies updated then a regression testing along with testing of the changes that have gone in that version for the individual component is required.
 
 #### When a Talos PR gets conflicts how can I rebase/recreate it?
 
