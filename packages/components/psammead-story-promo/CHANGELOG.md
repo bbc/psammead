@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 | ------- | ----------- |
+| 2.7.4 | [PR#1942](https://github.com/bbc/psammead/pull/1942) Talos - Bump React to 16.9.0 |
 | 2.7.3 | [PR#1930](https://github.com/bbc/psammead/pull/1930) Fix headline font-size in standard story promo |
 | 2.7.2 | [PR#1938](https://github.com/bbc/psammead/pull/1938) Consistent use of destructuring props |
 | 2.7.1 | [PR#1931](https://github.com/bbc/psammead/pull/1931) Talos - Bump Dependencies |
