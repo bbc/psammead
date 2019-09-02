@@ -1,6 +1,7 @@
 import React, { Fragment } from 'react';
 import { select } from '@storybook/addon-knobs';
 import { Helmet } from 'react-helmet';
+import { arrayOf, shape, string, element } from 'prop-types';
 import * as scripts from '@bbc/gel-foundations/scripts';
 import LANGUAGE_VARIANTS from './text-variants';
 
@@ -8,7 +9,7 @@ const inputProvider = ({
   slots,
   componentFunction,
   services,
-  options = {},
+  options,
 }) => () => {
   let serviceNames = Object.keys(LANGUAGE_VARIANTS);
 
@@ -51,6 +52,22 @@ const inputProvider = ({
       })}
     </Fragment>
   );
+};
+
+inputProvider.propTypes = {
+  slots: arrayOf(
+    shape({
+      name: string,
+      defaultText: string,
+    }),
+  ),
+  componentFunction: element,
+  services: arrayOf(string),
+  options: shape({ defaultService: string }),
+};
+
+inputProvider.defaultProps = {
+  options: {},
 };
 
 export default inputProvider;
