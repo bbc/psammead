@@ -8,6 +8,7 @@ import {
 } from '@bbc/gel-foundations/typography';
 import { latin } from '@bbc/gel-foundations/scripts';
 import { select, withKnobs } from '@storybook/addon-knobs';
+import json5 from 'json5';
 import notes from '../README.md';
 import * as colours from './colours';
 import { grid } from './detection';
@@ -57,16 +58,21 @@ const Paragraph = styled.p`
   ${Object.values(fonts).join()}
 `;
 
+const camelCase = str => str.replace(/-([a-z])/g, g => g[1].toUpperCase());
 const fontNames = Object.keys(fonts).sort();
 const fontStyles = fontNames.map(x => x.substring(2).replace(/_/g, ' '));
 
-const getFontFamily = fontName => {
+const getFontStyles = fontName => {
   const font = fontNames.find(x => x.includes(fontName.replace(/ /g, '_')));
-  const fontFace = fonts[font];
-  const regex = 'font-family:';
-  return fontFace
-    .substring(fontFace.indexOf(regex) + regex.length, fontFace.indexOf(';'))
-    .replace(/"/g, '');
+  const fontFace = fonts[font] || '';
+  const fontStyle = fontFace
+    .replace(/"/g, '')
+    .replace('@font-face', '')
+    .replace(/: /g, ':"')
+    .replace(/;/g, '",');
+
+  const { fontFamily, fontWeight } = json5.parse(camelCase(fontStyle));
+  return { fontFamily, fontWeight };
 };
 
 const detectionExamples = ['display: grid', grid];
@@ -78,10 +84,12 @@ storiesOf('Utilities|Psammead Styles', module)
     () => {
       const fontName = select('Font Style', fontStyles, fontStyles[0]);
       return (
-        <Paragraph style={{ fontFamily: getFontFamily(fontName) }}>
-          {`This text is displayed in ${fontName.toLowerCase()} fonts`} <br />
-          {'0123456789'} <br />
-          {'مرحبا بالعالم'}
+        <Paragraph style={getFontStyles(fontName)}>
+          <span>The quick brown fox jumps over the lazy dog 0123456789</span>
+          <br />
+          <span>
+            نص حكيم له سر قاطع وذو شأن عظيم مكتوب على ثوب أخضر ومغلف بجلد أزرق
+          </span>
         </Paragraph>
       );
     },
