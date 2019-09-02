@@ -51,8 +51,8 @@ const SkipLink = styled.a`
   border: ${SKIP_LINK_BORDER} solid #000;
   color: ${SKIP_LINK_COLOR};
   text-decoration: none;
+  ${({ script }) => script && getPica(script)};
   ${({ service }) => getSansRegular(service)}
-  ${props => (props.script ? getPica(props.script) : '')};
 
   &:focus {
     clip-path: none;
@@ -115,7 +115,7 @@ const ListItemBorder = css`
 `;
 
 const StyledLink = styled.a`
-  ${props => (props.script ? getPica(props.script) : '')};
+  ${({ script }) => script && getPica(script)};
   ${({ service }) => getSansRegular(service)}
   color: ${C_GHOST};
   cursor: pointer;
