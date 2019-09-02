@@ -11,6 +11,7 @@
     "build:storybook": "build-storybook -o storybook_dist",
     "ci:packages": "npm ci && lerna exec -- npm ci",
     "changeScanner": "node scripts/changeScanner",
+    "create:package": "yo .yeoman",
     "bumpPackages": "node scripts/bumpPackages/cli",
     "bumpChangelogs": "node scripts/bumpChangelogs/cli",
     "regeneratePackageLocks": "node scripts/regeneratePackageLocks",
@@ -120,7 +121,13 @@
     "stylelint-config-recommended": "^2.1.0",
     "stylelint-config-styled-components": "^0.1.1",
     "stylelint-csstree-validator": "^1.5.2",
-    "stylelint-processor-styled-components": "^1.8.0"
+    "stylelint-processor-styled-components": "^1.8.0",
+    "yargs-parser": "^11.1.1",
+    "yeoman-assert": "^3.1.1",
+    "yeoman-environment": "^2.3.4",
+    "yeoman-generator": "^3.2.0",
+    "yeoman-test": "^2.0.0",
+    "yo": "^3.1.0"
   },
   "config": {
     "babel_ignore": "'**/*.test.js,**/*.test.jsx,**/*.stories.js,**/*.stories.jsx'"
@@ -135,14 +142,20 @@
     "collectCoverageFrom": [
       "**/packages/**/*.{js,jsx}",
       "scripts/**",
+      "**/.yeoman/support/**",
       "!**/*.stories.{js,jsx}",
       "!**/.eslintrc.js",
       "!**/dist/**",
       "!**/esm/**",
       "!**/moment-timezone-include/tz/**"
     ],
+    "transformIgnorePatterns": [
+      "/node_modules/",
+      ".yeoman/index.js"
+    ],
     "testMatch": [
-      "**/*.test.{js,jsx}"
+      "**/*.test.{js,jsx}",
+      "!**/.yeoman/templates/**"
     ]
   },
   "spec": {
