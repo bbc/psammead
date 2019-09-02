@@ -2,7 +2,7 @@
 
 ## Purpose
 
-We are expecting the Psammead component library to expand in size. To ensure a uniform development pattern is used for creating new pacakges, this script will create a skeleton package that includes all the essential files for a developer to start making Psammead component.
+We are expecting the Psammead component library to expand in size. To ensure a uniform development pattern is used for creating new pacakges, this script will create a skeleton package that includes all the essential files for a developer to start making Psammead components.
 
 ## How to use it?
 
