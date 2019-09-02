@@ -17,6 +17,7 @@ import {
 } from '@bbc/gel-foundations/breakpoints';
 import {
   getPica,
+  getGreatPrimer,
   getParagon,
   getLongPrimer,
 } from '@bbc/gel-foundations/typography';
@@ -139,28 +140,23 @@ const InlineMediaIndicator = styled.div`
 `;
 
 export const Headline = styled.h3`
-  ${props => (props.script ? getPica(props.script) : '')};
-
-  ${({ script, topStory }) => {
-    if (!script) {
-      return '';
-    }
-
-    return topStory ? getParagon(script) : getPica(script);
-  }}
-  color: ${C_EBON};
+  ${({ script, topStory }) =>
+    script && (topStory ? getParagon(script) : getPica(script))}
   ${({ service }) => getSerifMedium(service)}
+  color: ${C_EBON};
   margin: 0; /* Reset */
   padding-bottom: ${GEL_SPACING};
+
   @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
-    ${props => (props.script ? getParagon(props.script) : '')};
+    ${({ script, topStory }) =>
+      script && (topStory ? getParagon(script) : getGreatPrimer(script))}
   }
 `;
 
 export const Summary = styled.p`
-  ${props => (props.script ? getLongPrimer(props.script) : '')};
-  color: ${C_SHADOW};
+  ${({ script }) => script && getLongPrimer(script)};
   ${({ service }) => getSansRegular(service)}
+  color: ${C_SHADOW};
   margin: 0; /* Reset */
   padding-bottom: ${GEL_SPACING};
 
@@ -268,8 +264,8 @@ export const Link = styled.a`
  *  Live Label
  */
 export const LiveLabel = styled.span.attrs({ 'aria-hidden': 'true' })`
-  color: ${C_POSTBOX};
   ${({ service }) => getSansBold(service)}
+  color: ${C_POSTBOX};
   display: inline-block;
   ${({ dir }) =>
     dir === 'rtl' ? 'margin-left: 0.5rem;' : 'margin-right: 0.5rem;'}
