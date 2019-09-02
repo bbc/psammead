@@ -9,7 +9,7 @@ const inputProvider = ({
   slots,
   componentFunction,
   services,
-  options,
+  options = {},
 }) => () => {
   let serviceNames = Object.keys(LANGUAGE_VARIANTS);
 
@@ -64,10 +64,6 @@ inputProvider.propTypes = {
   componentFunction: element,
   services: arrayOf(string),
   options: shape({ defaultService: string }),
-};
-
-inputProvider.defaultProps = {
-  options: {},
 };
 
 export default inputProvider;
