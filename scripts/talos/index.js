@@ -20,7 +20,8 @@ const talos = () => {
   }
 
   return upgradeDependencies(packages)
-    .then(bumpedPackages => {
+    .then(bumpedPackagesObj => {
+      const bumpedPackages = Object.keys(bumpedPackagesObj);
       if (bumpedPackages.length <= 0) {
         // eslint-disable-next-line no-console
         console.log('No packages to bump!');
@@ -47,7 +48,7 @@ const talos = () => {
         .then(() => createPullRequest({ packages, bumpedPackages, branchName }))
         .then(({ data }) =>
           bumpChangelogs({
-            packageNames: bumpedPackagesNoBBCPrefix,
+            bumpedPackages: bumpedPackagesObj,
             prLink: data.html_url,
             changesDescription: 'Talos - Bump Dependencies',
           }),
