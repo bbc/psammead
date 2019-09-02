@@ -1,3 +1,5 @@
+/* eslint react/prop-types: 0 */
+
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { withKnobs } from '@storybook/addon-knobs';
@@ -11,47 +13,55 @@ storiesOf('Components|Caption', module)
   .addDecorator(withKnobs)
   .add(
     'default',
-    inputProvider(
-      [{ name: 'Caption' }],
-      ({ slotTexts: [captionText], script, service }) => (
+    inputProvider({
+      slots: [{ name: 'Caption' }],
+      componentFunction: ({ slotTexts: [captionText], script, service }) => (
         <Caption script={script} service={service}>
           {captionText}
         </Caption>
       ),
-    ),
+    }),
     { notes, knobs: { escapeHTML: false } },
   )
   .add(
     'with offscreen text',
-    inputProvider(
-      [
+    inputProvider({
+      slots: [
         { name: 'Visual hidden text', defaultText: 'visually hidden text' },
         { name: 'Caption', defaultText: 'caption' },
       ],
-      ({ slotTexts: [hiddenText, captionText], script, service }) => (
+      componentFunction: ({
+        slotTexts: [hiddenText, captionText],
+        script,
+        service,
+      }) => (
         <Caption script={script} service={service}>
           <VisuallyHiddenText>{hiddenText}</VisuallyHiddenText>
           {captionText}
         </Caption>
       ),
-    ),
+    }),
     { notes, knobs: { escapeHTML: false } },
   )
   .add(
     'containing an inline link',
-    inputProvider(
-      [
+    inputProvider({
+      slots: [
         { name: 'Inline link', defaultText: 'inline link' },
         { name: 'Caption', defaultText: 'caption' },
       ],
-      ({ slotTexts: [linkText, captionText], script, service }) => (
+      componentFunction: ({
+        slotTexts: [linkText, captionText],
+        script,
+        service,
+      }) => (
         <Caption script={script} service={service}>
           {`${captionText} `}
           <InlineLink href="https://www.bbc.com">{linkText}</InlineLink>
           {` ${captionText} `}
         </Caption>
       ),
-    ),
+    }),
     { notes, knobs: { escapeHTML: false } },
   );
 
@@ -69,13 +79,15 @@ storiesOf('Components|Caption', module)
   )
   .add(
     'containing multiple paragraphs',
-    inputProvider([], ({ script, service }) => (
-      <Caption script={script} service={service}>
-        <p>Paragraph with padding bottom.</p>
-        <p>
-          Last paragraph - <i>without padding bottom</i>.
-        </p>
-      </Caption>
-    )),
+    inputProvider({
+      componentFunction: ({ script, service }) => (
+        <Caption script={script} service={service}>
+          <p>Paragraph with padding bottom.</p>
+          <p>
+            Last paragraph - <i>without padding bottom</i>.
+          </p>
+        </Caption>
+      ),
+    }),
     { notes, knobs: { escapeHTML: false } },
   );
