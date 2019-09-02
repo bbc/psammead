@@ -4,10 +4,10 @@ exports[`Headline component should render correctly 1`] = `
 .c0 {
   font-size: 1.75rem;
   line-height: 2rem;
-  color: #3F3F42;
   font-family: ReithSerif,Helvetica,Arial,sans-serif;
   font-weight: 500;
   font-style: normal;
+  color: #3F3F42;
   margin: 0;
   padding: 2rem 0;
 }
@@ -43,10 +43,10 @@ exports[`Headline component should render correctly with arabic script typograph
 .c0 {
   font-size: 2rem;
   line-height: 2.625rem;
-  color: #3F3F42;
   font-family: "BBC Nassim Persian",Arial,Verdana,Geneva,Helvetica,sans-serif;
   font-weight: 700;
   font-style: normal;
+  color: #3F3F42;
   margin: 0;
   padding: 2rem 0;
 }
@@ -82,10 +82,10 @@ exports[`SubHeading component should render correctly 1`] = `
 .c0 {
   font-size: 1.25rem;
   line-height: 1.5rem;
-  color: #3F3F42;
   font-family: ReithSans,Helvetica,Arial,sans-serif;
   font-weight: 700;
   font-style: normal;
+  color: #3F3F42;
   margin: 0;
   padding: 1.5rem 0;
 }
@@ -122,10 +122,10 @@ exports[`SubHeading component should render correctly with an ID 1`] = `
 .c0 {
   font-size: 1.25rem;
   line-height: 1.5rem;
-  color: #3F3F42;
   font-family: ReithSans,Helvetica,Arial,sans-serif;
   font-weight: 700;
   font-style: normal;
+  color: #3F3F42;
   margin: 0;
   padding: 1.5rem 0;
 }
@@ -163,10 +163,10 @@ exports[`SubHeading component should render correctly with arabic script typogra
 .c0 {
   font-size: 1.5rem;
   line-height: 2.125rem;
-  color: #3F3F42;
   font-family: ReithSans,Helvetica,Arial,sans-serif;
   font-weight: 700;
   font-style: normal;
+  color: #3F3F42;
   margin: 0;
   padding: 1.5rem 0;
 }
