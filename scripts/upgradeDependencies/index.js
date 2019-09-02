@@ -13,7 +13,7 @@ const getPromiseFromCommand = command =>
           parseUpgradedPackages(
             output
               .split('\n')
-              .map(line => `psammead: ${line}`)
+              .map(line => `@bbc/psammead: ${line}`)
               .join('\n'),
           ),
         );
@@ -34,6 +34,8 @@ module.exports = packages => {
   const commandPromises = commands.map(getPromiseFromCommand);
 
   return Promise.all(commandPromises).then(outputs => {
-    return Promise.resolve([].concat(...outputs));
+    return Promise.resolve(
+      outputs.reduce((prev, curr) => ({ ...prev, ...curr })),
+    );
   });
 };
