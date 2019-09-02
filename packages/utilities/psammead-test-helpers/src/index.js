@@ -5,7 +5,7 @@ import deepClone from 'ramda/src/clone';
 export const shouldMatchSnapshot = (title, component) => {
   it(title, () => {
     const { container } = render(component);
-    expect(container.firstChild).toMatchSnapshot();
+    expect(container).toMatchSnapshot();
   });
 };
 

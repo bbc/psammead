@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 2.0.1 | [PR#1917](https://github.com/bbc/psammead/pull/1917) Update `shouldMatchSnapshot` to match entire |
 | 2.0.0 | [PR#1917](https://github.com/bbc/psammead/pull/1917) Remove react-test-renderer and shallow rendering |
 | 1.3.2 | [PR#1919](https://github.com/bbc/psammead/pull/1919) Accidental version bump |
 | 1.3.1 | [PR#1849](https://github.com/bbc/psammead/pull/1849) Update README.md |
