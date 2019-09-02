@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 1.0.1-alpha.3 |  Change <React.Fragment> to <> |
 | 1.0.1-alpha.2 | [PR#1942](https://github.com/bbc/psammead/pull/1942) Talos - Bump React to 16.9.0 |
 | 1.0.1-alpha.1 | [PR#1920](https://github.com/bbc/psammead/pull/1920) Use @testing-library-react |
 | 1.0.1-alpha.0 | [PR#1842](https://github.com/bbc/psammead/pull/1842) Fix fullscreen for Firefox, Internet Explorer and Safari |

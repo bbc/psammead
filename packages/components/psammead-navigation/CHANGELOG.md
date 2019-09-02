@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 2.2.7 |  Change <React.Fragment> to <> |
 | 2.2.6 | [PR#1942](https://github.com/bbc/psammead/pull/1942) Talos - Bump React to 16.9.0 |
 | 2.2.5 | [PR#1938](https://github.com/bbc/psammead/pull/1938) Consistent use of destructuring props |
 | 2.2.4 | [PR#1931](https://github.com/bbc/psammead/pull/1931) Talos - Bump Dependencies |

@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 5.1.5 | Change <React.Fragment> to <> |
 | 5.1.4 | [PR#1931](https://github.com/bbc/psammead/pull/1931) Talos - Bump Dependencies |
 | 5.1.3 | [PR#1826](https://github.com/bbc/psammead/pull/1826) Talos - Bump Dependencies |
 | 5.1.2 | [PR#1804](https://github.com/bbc/psammead/pull/1804) Talos - Bump Dependencies |
