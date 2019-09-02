@@ -35,3 +35,6 @@ publish:
 
 change-scanner:
 	npm run changeScanner;
+
+talos:
+	node scripts/talos/cli;

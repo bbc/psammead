@@ -22,7 +22,6 @@
     "regeneratePackageLocks": "node scripts/regeneratePackageLocks",
     "storybook": "NODE_ENV=development start-storybook -p 8180 -c .storybook",
     "storybook:ie11": "export FIX_STORYBOOK_IE11=true && npm run storybook",
-    "talos": "node scripts/talos/cli",
     "test": "npm run test:lint && npm run test:unit && lerna run test",
     "test:lint": "eslint --ext .js,jsx,json ./packages ./scripts && stylelint 'packages/**/*.js' 'packages/**/*.jsx' 'scripts/**/*.js'",
     "test:unit": "npm run build && jest --verbose --coverage"
