@@ -57,7 +57,6 @@ describe('Psammead storybook helpers', () => {
       select.mockReturnValueOnce('news');
 
       const inputProps = {
-        slots: [],
         componentFunction: renderFn,
       };
 
@@ -84,7 +83,6 @@ describe('Psammead storybook helpers', () => {
       select.mockReturnValueOnce('news');
 
       const inputProps = {
-        slots: [],
         componentFunction: renderFn,
         services: ['mundo', 'pidgin', 'yoruba', 'foobar'],
       };
@@ -242,7 +240,6 @@ describe('Psammead storybook helpers', () => {
         text.mockImplementation((textKnobName, displayText) => displayText);
 
         const inputProps = {
-          slots: [],
           componentFunction: renderFn,
         };
 
@@ -257,7 +254,6 @@ describe('Psammead storybook helpers', () => {
         text.mockImplementation((_, displayText) => displayText);
 
         const inputProps = {
-          slots: [],
           componentFunction: renderFn,
         };
 
