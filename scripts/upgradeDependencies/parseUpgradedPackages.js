@@ -13,7 +13,10 @@ const outputReducer = (accumulator, curr) => {
 };
 
 module.exports = output => {
-  const parsedOutput = output.split('\n').reduce(outputReducer, {});
+  const parsedOutput = [...new Set(output.split('\n'))].reduce(
+    outputReducer,
+    {},
+  );
   const cleanedOutput = {};
   Object.keys(parsedOutput).forEach(key => {
     if (key) {
