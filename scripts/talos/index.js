@@ -47,10 +47,16 @@ const talos = () => {
         .then(() => commitChanges('Talos - Bump Dependencies'))
         .then(() => createPullRequest({ packages, bumpedPackages, branchName }))
         .then(({ data }) =>
-          bumpChangelogs({
-            bumpedPackages: bumpedPackagesObj,
-            prLink: data.html_url,
-            changesDescription: 'Talos - Bump Dependencies',
+          bumpedPackagesNoBBCPrefix.forEach((packageName, index) => {
+            const description = 'Talos - Bump Dependencies';
+            const descriptionDetail = Object.keys(
+              bumpedPackagesObj[bumpPackages[index]].join(', '),
+            );
+            bumpChangelogs({
+              bumpedPackages: packageName,
+              prLink: data.html_url,
+              changesDescription: `${description} - ${descriptionDetail}`,
+            });
           }),
         )
         .then(() => commitChanges('Talos - Update changelogs'));
