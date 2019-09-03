@@ -4,7 +4,7 @@ import writeToNestedFile from '../writeToNestedFile';
 const replaceOriginalTimezoneData = () =>
   writeToNestedFile(
     `../../tz/${rawTimezones.version}-raw.json`,
-    JSON.stringify(Object.assign({}, rawTimezones, { zones: [], links: [] })),
+    JSON.stringify({ ...rawTimezones, ...{ zones: [], links: [] } }),
   );
 
 export default replaceOriginalTimezoneData;

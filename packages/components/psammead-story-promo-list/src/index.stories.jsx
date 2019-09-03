@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import { storiesOf } from '@storybook/react';
 import Timestamp from '@bbc/psammead-timestamp';
 import Image from '@bbc/psammead-image';
@@ -15,7 +15,7 @@ const ImageComponent = ({ alt, src }) => (
 
 // eslint-disable-next-line react/prop-types
 const InfoComponent = ({ headlineText, summaryText, datetime, dateformat }) => (
-  <Fragment>
+  <>
     <Headline script={latin} service="news">
       <Link href="https://www.bbc.co.uk/news">{headlineText}</Link>
     </Headline>
@@ -30,7 +30,7 @@ const InfoComponent = ({ headlineText, summaryText, datetime, dateformat }) => (
     >
       {dateformat}
     </Timestamp>
-  </Fragment>
+  </>
 );
 
 storiesOf('Components|StoryPromo/StoryPromoList', module).add(
