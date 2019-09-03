@@ -21,10 +21,8 @@ function addJalaliDate(locale, jalaliMonths, jalaliFormats, gregorianString) {
   // Jalali calendar to be applied to - e.g this will exclude timeago timestamps
   if (gregorianMoment.isValid() && jalaliMonths.length === 12) {
     return `${stringHelper.useEasternNumerals(
-      gregorianString,
-    )} - ${stringHelper.useEasternNumerals(
       getJalaaliDatetime(gregorianMoment, jalaliMonths),
-    )}`;
+    )} - ${stringHelper.useEasternNumerals(gregorianString)}`;
   }
   return gregorianString;
 }
