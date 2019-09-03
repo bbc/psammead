@@ -45,7 +45,7 @@ const persianMonths = [
 const gregorianString = '31/01/2019';
 
 test('getJalaaliDatetime for pashto locale', function() {
-  const gregorinaMonent = moment(
+  const gregorianMonent = moment(
     gregorianString,
     pashtoJalaliFromats,
     'ps',
@@ -53,14 +53,14 @@ test('getJalaaliDatetime for pashto locale', function() {
   );
   assert.equal(
     stringHelper.useEasternNumerals(
-      jalaaliHelper.getJalaaliDatetime(gregorinaMonent, pashtoMonths),
+      jalaaliHelper.getJalaaliDatetime(gregorianMonent, pashtoMonths),
     ),
     '۱۱ سلواغه ۱۳۹۷',
   );
 });
 
 test('getJalaaliDatetime for persian locale', function() {
-  const gregorinaMonent = moment(
+  const gregorianMonent = moment(
     gregorianString,
     pashtoJalaliFromats,
     'fa',
@@ -68,7 +68,7 @@ test('getJalaaliDatetime for persian locale', function() {
   );
   assert.equal(
     stringHelper.useEasternNumerals(
-      jalaaliHelper.getJalaaliDatetime(gregorinaMonent, persianMonths),
+      jalaaliHelper.getJalaaliDatetime(gregorianMonent, persianMonths),
     ),
     '۱۱ بهمن ۱۳۹۷',
   );
