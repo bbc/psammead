@@ -113,39 +113,46 @@ const StyledMain = styled.main`
 `;
 
 const navigationStory = (skipLinkText, currentPageText, navData, brand) =>
-  inputProvider([], ({ script, dir, service }) => (
-    <Fragment>
-      {brand && getBrand()}
+  inputProvider({
+    // eslint-disable-next-line react/prop-types
+    componentFunction: ({ script, dir, service }) => (
+      <Fragment>
+        {brand && getBrand()}
 
-      <Navigation script={script} skipLinkText={skipLinkText} service={service}>
-        <NavigationUl>
-          {navData.map((item, index) => {
-            const { title, url } = item;
-            const active = index === 0;
+        <Navigation
+          script={script}
+          skipLinkText={skipLinkText}
+          service={service}
+        >
+          <NavigationUl>
+            {navData.map((item, index) => {
+              const { title, url } = item;
+              const active = index === 0;
 
-            return (
-              <NavigationLi
-                key={title}
-                url={url}
-                script={script}
-                dir={dir}
-                active={active}
-                currentPageText={currentPageText}
-                service={service}
-              >
-                {title}
-              </NavigationLi>
-            );
-          })}
-        </NavigationUl>
-      </Navigation>
-      <StyledMain>
-        <VisuallyHiddenText id="content" as="h1" tabIndex="-1">
-          {offScreenText}
-        </VisuallyHiddenText>
-      </StyledMain>
-    </Fragment>
-  ));
+              return (
+                <NavigationLi
+                  key={title}
+                  url={url}
+                  script={script}
+                  dir={dir}
+                  active={active}
+                  currentPageText={currentPageText}
+                  service={service}
+                >
+                  {title}
+                </NavigationLi>
+              );
+            })}
+          </NavigationUl>
+        </Navigation>
+        <StyledMain>
+          <VisuallyHiddenText id="content" as="h1" tabIndex="-1">
+            {offScreenText}
+          </VisuallyHiddenText>
+        </StyledMain>
+      </Fragment>
+    ),
+  });
 
 const stories = storiesOf('Components|Navigation', module)
   .addDecorator(withKnobs)

@@ -26,9 +26,10 @@ storiesOf('Components|SitewideLinks', module)
   .addDecorator(withKnobs)
   .add(
     'default',
-    inputProvider(
-      linkNames,
-      ({
+    inputProvider({
+      slots: linkNames,
+      /* eslint-disable react/prop-types */
+      componentFunction: ({
         slotTexts: [externalLinkText, copyrightText, ...linkTexts],
         service,
       }) => {
@@ -42,6 +43,6 @@ storiesOf('Components|SitewideLinks', module)
           />
         );
       },
-    ),
+    }),
     { notes, knobs: { escapeHTML: false } },
   );

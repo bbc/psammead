@@ -1,5 +1,3 @@
-/* eslint react/prop-types: 0 */
-
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { withKnobs } from '@storybook/addon-knobs';
@@ -15,6 +13,7 @@ storiesOf('Components|Caption', module)
     'default',
     inputProvider({
       slots: [{ name: 'Caption' }],
+      /* eslint-disable react/prop-types */
       componentFunction: ({ slotTexts: [captionText], script, service }) => (
         <Caption script={script} service={service}>
           {captionText}

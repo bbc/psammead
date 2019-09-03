@@ -89,9 +89,15 @@ const InfoComponent = ({
 );
 
 const generateStory = ({ topStory, alsoItems = null }) =>
-  inputProvider(
-    [{ name: 'Headline' }, { name: 'Summary' }],
-    ({ slotTexts: [headlineText, summaryText], script, service, dir }) => {
+  inputProvider({
+    slots: [{ name: 'Headline' }, { name: 'Summary' }],
+    // eslint-disable-next-line react/prop-types
+    componentFunction: ({
+      slotTexts: [headlineText, summaryText],
+      script,
+      service,
+      dir,
+    }) => {
       const Info = (
         <InfoComponent
           headlineText={headlineText}
@@ -125,7 +131,7 @@ const generateStory = ({ topStory, alsoItems = null }) =>
         />
       );
     },
-  );
+  });
 
 storiesOf('Components|StoryPromo/StoryPromo', module)
   .addDecorator(withKnobs)
