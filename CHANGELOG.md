@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 1.6.1 | [PR#1969](https://github.com/bbc/psammead/pull/1969) Talos - Bump Dependencies |
 | 1.6.0 | [PR#1966](https://github.com/bbc/psammead/pull/1966) Enable changeScanner on ci |
 | 1.5.8 | [PR#1968](https://github.com/bbc/psammead/pull/1968) Talos - Bump Dependencies |
 | 1.5.8 | [PR#1960](https://github.com/bbc/psammead/pull/1960) Update eslint-config-airbnb to 18.0.1 |
