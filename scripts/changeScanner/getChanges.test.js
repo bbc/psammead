@@ -35,7 +35,7 @@ describe(`changeScanner - getChanges`, () => {
 
     expect(exec).toHaveBeenCalledWith('git fetch --all;', { silent: true });
     expect(exec).toHaveBeenCalledWith(
-      'git diff --name-only origin/latest ./packages',
+      'git diff --name-only origin/latest ./packages/*/*/*',
       { silent: true },
     );
   });
