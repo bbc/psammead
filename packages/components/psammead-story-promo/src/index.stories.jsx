@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { withKnobs, text, boolean, select } from '@storybook/addon-knobs';
 import { inputProvider } from '@bbc/psammead-storybook-helpers';
@@ -56,7 +56,7 @@ const InfoComponent = ({
   dir,
   alsoItems,
 }) => (
-  <Fragment>
+  <>
     <Headline script={script} topStory={topStory} service={service}>
       <Link href="https://www.bbc.co.uk/news">
         {isLive ? (
@@ -85,7 +85,7 @@ const InfoComponent = ({
         dir={dir}
       />
     )}
-  </Fragment>
+  </>
 );
 
 const generateStory = ({ topStory, alsoItems = null }) =>

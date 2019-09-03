@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import { string } from 'prop-types';
 import Helmet from 'react-helmet';
 
@@ -14,7 +14,7 @@ const AmpHead = () => (
 
 const AmpMediaPlayer = ({ src, placeholderSrc }) => {
   return (
-    <Fragment>
+    <>
       <AmpHead />
       <amp-iframe
         sandbox="allow-scripts allow-same-origin"
@@ -25,7 +25,7 @@ const AmpMediaPlayer = ({ src, placeholderSrc }) => {
       >
         <amp-img layout="fill" src={placeholderSrc} placeholder />
       </amp-iframe>
-    </Fragment>
+    </>
   );
 };
 

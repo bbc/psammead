@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import { select } from '@storybook/addon-knobs';
 import { Helmet } from 'react-helmet';
 import * as scripts from '@bbc/gel-foundations/scripts';
@@ -40,7 +40,7 @@ const inputProvider = (
   const { locale } = service;
 
   return (
-    <Fragment>
+    <>
       <Helmet htmlAttributes={{ dir }} />
       {componentFunction({
         slotTexts,
@@ -49,7 +49,7 @@ const inputProvider = (
         locale,
         service: serviceName,
       })}
-    </Fragment>
+    </>
   );
 };
 

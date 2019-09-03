@@ -1,7 +1,11 @@
 const { exec } = require('shelljs');
 
 const getChanges = () => {
-  const execute = exec(`git diff --name-only latest ./packages`, {
+  exec(`git fetch --all;`, { silent: true });
+
+  // Use ./packages/*/*/* to ensure you only capture
+  // changes in package folders, not readmes outside them
+  const execute = exec(`git diff --name-only origin/latest ./packages/*/*/*`, {
     silent: true,
   }).stdout;
 
