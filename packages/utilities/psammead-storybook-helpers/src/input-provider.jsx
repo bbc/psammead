@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import { select } from '@storybook/addon-knobs';
 import { Helmet } from 'react-helmet';
 import { arrayOf, shape, string, element } from 'prop-types';
@@ -41,7 +41,7 @@ const inputProvider = ({
   const { locale } = service;
 
   return (
-    <Fragment>
+    <>
       <Helmet htmlAttributes={{ dir }} />
       {componentFunction({
         slotTexts,
@@ -50,7 +50,7 @@ const inputProvider = ({
         locale,
         service: serviceName,
       })}
-    </Fragment>
+    </>
   );
 };
 

@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { withKnobs } from '@storybook/addon-knobs';
 import { inputProvider } from '@bbc/psammead-storybook-helpers';
@@ -11,9 +11,9 @@ storiesOf('Components|InlineLink', module)
     'default',
     inputProvider({
       slots: [{ name: 'Link text' }],
-      // eslint-disable-next-line react/prop-types
+      /* eslint-disable-next-line react/prop-types */
       componentFunction: ({ slotTexts: [linkText] }) => (
-        <Fragment>
+        <>
           <InlineLink href="https://www.bbc.com/news">{linkText}</InlineLink>
           <br />
           <br />
@@ -23,7 +23,7 @@ storiesOf('Components|InlineLink', module)
           realistic storybook example of this component see the Paragraph and
           Caption stories - this should be removed in
           https://github.com/bbc/psammead/issues/733
-        </Fragment>
+        </>
       ),
     }),
     { notes, knobs: { escapeHTML: false } },

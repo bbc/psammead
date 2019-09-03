@@ -3,6 +3,8 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 1.5.8 | [PR#1960](https://github.com/bbc/psammead/pull/1960) Update eslint-config-airbnb to 18.0.1 |
+| 1.5.7 | [PR#1961](https://github.com/bbc/psammead/pull/1961) Talos - Bump Dependencies |
 | 1.5.6 | [PR#1942](https://github.com/bbc/psammead/pull/1942) Talos - Bump react, react-dom & react-test-renderer |
 | 1.5.5 | [PR#1935](https://github.com/bbc/psammead/pull/1935) Talos - Bump Dependencies |
 | 1.5.4 | [PR#1937](https://github.com/bbc/psammead/pull/1937) Talos - Bump Dependencies |
