@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 | ------- | ----------- |
+| 2.0.0 | [PR#1960](https://github.com/bbc/psammead/pull/1960) Change <React.Fragment> to <> |
 | 2.0.0 | [PR#1946](https://github.com/bbc/psammead/pull/1946) Add ar locale |
 | 1.3.2 | [PR#1806](https://github.com/bbc/psammead/pull/1806/) Change strings to booleans |
 | 1.3.1 | [PR#1803](https://github.com/bbc/psammead/pull/1803/) Patches broken links on badges in documentation |

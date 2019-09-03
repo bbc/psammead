@@ -16,13 +16,14 @@ Object.keys(changes).forEach(packageName => {
   });
 });
 
+/* eslint-disable no-console */
 if (errors.length > 0) {
-  // eslint-disable-next-line no-console
   errors.forEach(error => console.error(chalk.red(error)));
+  console.error(''); // empty line for spacing
   process.exit(1);
 } else {
-  // eslint-disable-next-line no-console
   console.log(
     chalk.green('All packages have met minimum change requirements 🎉'),
   );
 }
+/* eslint-enable no-console */

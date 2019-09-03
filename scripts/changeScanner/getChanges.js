@@ -1,7 +1,9 @@
 const { exec } = require('shelljs');
 
 const getChanges = () => {
-  const execute = exec(`git diff --name-only latest ./packages`, {
+  exec(`git fetch --all;`, { silent: true });
+
+  const execute = exec(`git diff --name-only origin/latest ./packages`, {
     silent: true,
   }).stdout;
 
