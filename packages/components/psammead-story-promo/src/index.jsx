@@ -17,7 +17,6 @@ import {
 } from '@bbc/gel-foundations/breakpoints';
 import {
   getPica,
-  getGreatPrimer,
   getParagon,
   getLongPrimer,
 } from '@bbc/gel-foundations/typography';
@@ -149,8 +148,16 @@ export const Headline = styled.h3`
 
   @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
     ${({ script, topStory }) =>
-      script && (topStory ? getParagon(script) : getGreatPrimer(script))}
-  }
+      script &&
+      (topStory
+        ? css`
+            font-size: ${script.paragon.groupD.fontSize / 16}rem;
+            line-height: ${script.paragon.groupD.lineHeight / 16}rem;
+          `
+        : css`
+            font-size: ${script.greatPrimer.groupD.fontSize / 16}rem;
+            line-height: ${script.greatPrimer.groupD.lineHeight / 16}rem;
+          `)}
 `;
 
 export const Summary = styled.p`
