@@ -11,7 +11,11 @@ const assert = { equal: (val1, val2) => expect(val1).toEqual(val2) };
 
 test('format', function () {
     var a = [
+            ['MMMM Do YYYY, h:mm:ss',              'فبروري ۱۴ ۲۰۱۰، ۳:۲۵:۵۰'],
+            ['M Mo MM MMMM MMM',                   '۲ ۲ ۰۲ فبروري فبروري'],
+            ['L',                                  '۰۲/۱۴/۲۰۱۰'],
             ['LL',                                 '۲۵ سلواغه ۱۳۸۸ - فبروري ۱۴، ۲۰۱۰'],
+            ['LLL',                                'فبروري ۱۴، ۲۰۱۰ ۳:۲۵ PM'],
             ['D MMMM YYYY',                        '۲۵ سلواغه ۱۳۸۸ - ۱۴ فبروري ۲۰۱۰'],
         ],
         b = moment(new Date(2010, 1, 14, 15, 25, 50, 125)),
