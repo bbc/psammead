@@ -4,6 +4,7 @@ import deepClone from 'ramda/src/clone';
 
 export const shouldMatchSnapshot = (title, component) => {
   it(title, () => {
+    // Components with a single child do not have to be wrapped in a div when matching against a snapshot.
     const removeWrappingDiv = container => container.firstChild;
     const { container } = render(component);
     const hasOneChild = container.children.length === 1;
