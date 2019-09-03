@@ -5,7 +5,11 @@ import deepClone from 'ramda/src/clone';
 export const shouldMatchSnapshot = (title, component) => {
   it(title, () => {
     const { container } = render(component);
-    expect(container).toMatchSnapshot();
+    const hasOneChild = container.children.length === 1;
+    const removeWrappingDiv = containerTwo => containerTwo.firstChild;
+    expect(
+      hasOneChild ? removeWrappingDiv(container) : container,
+    ).toMatchSnapshot();
   });
 };
 
