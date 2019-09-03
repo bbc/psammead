@@ -4,9 +4,9 @@ import deepClone from 'ramda/src/clone';
 
 export const shouldMatchSnapshot = (title, component) => {
   it(title, () => {
+    const removeWrappingDiv = container => container.firstChild;
     const { container } = render(component);
     const hasOneChild = container.children.length === 1;
-    const removeWrappingDiv = containerTwo => containerTwo.firstChild;
     expect(
       hasOneChild ? removeWrappingDiv(container) : container,
     ).toMatchSnapshot();
