@@ -10,13 +10,13 @@ The following [Moment.js](https://momentjs.com/) locales have been added as they
 
 - `/moment/ig` - locale for Igbo
 - `/moment/pcm` - locale for Pidgin
+- `/moment/ps` - locale for Pashto
 
 The following locales have overrides to meet BBC World Service requirements where these differ from the upstream locale. Note that importing them will also cause the upstream locale to be loaded.
 
 - `/moment/ar` - locale override for Arabic
 - `/moment/fa` - locale override for Persian (Farsi)
 - `/moment/yo` - locale override for Yoruba
-- `/moment/ps` - locale override for Pashto
 
 ### Numerals
 
