@@ -7,9 +7,9 @@ import { scriptPropType } from '@bbc/gel-foundations/prop-types';
 import { getSansRegular } from '@bbc/psammead-styles/font-styles';
 
 const Paragraph = styled.p`
-  ${props => (props.script ? getBodyCopy(props.script) : '')};
-  color: ${C_SHADOW};
+  ${({ script }) => script && getBodyCopy(script)};
   ${({ service }) => getSansRegular(service)}
+  color: ${C_SHADOW};
   padding-bottom: ${GEL_SPACING_TRPL};
   margin: 0; /* Reset */
 `;
