@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import styled from 'styled-components';
 import { storiesOf } from '@storybook/react';
 import {
@@ -41,14 +41,14 @@ const navStoriesData = [
 ];
 
 const offScreenText = (
-  <Fragment>
+  <>
     <span
       // eslint-disable-next-line jsx-a11y/aria-role
       role="text"
     >
       <span lang="en-GB">BBC News</span>, Ìgbò - Akụkọ
     </span>
-  </Fragment>
+  </>
 );
 
 const inputs = () => {
@@ -114,7 +114,7 @@ const StyledMain = styled.main`
 
 const navigationStory = (skipLinkText, currentPageText, navData, brand) =>
   inputProvider([], ({ script, dir, service }) => (
-    <Fragment>
+    <>
       {brand && getBrand()}
 
       <Navigation script={script} skipLinkText={skipLinkText} service={service}>
@@ -144,7 +144,7 @@ const navigationStory = (skipLinkText, currentPageText, navData, brand) =>
           {offScreenText}
         </VisuallyHiddenText>
       </StyledMain>
-    </Fragment>
+    </>
   ));
 
 const stories = storiesOf('Components|Navigation', module)
