@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import styled from 'styled-components';
 import { node, oneOf, string, shape } from 'prop-types';
 import { scriptPropType } from '@bbc/gel-foundations/prop-types';
@@ -68,7 +68,7 @@ const IndexAlsosLink = ({
   return (
     <StyledIndexAlsosLink href={url} script={script} service={service}>
       {mediaIndicator ? (
-        <Fragment>
+        <>
           <IndexAlsosMediaIndicator dir={dir}>
             {mediaIndicator}
           </IndexAlsosMediaIndicator>
@@ -76,7 +76,7 @@ const IndexAlsosLink = ({
             <VisuallyHiddenText>{mediaType}, </VisuallyHiddenText>
             <IndexAlsosText>{children}</IndexAlsosText>
           </RoleText>
-        </Fragment>
+        </>
       ) : (
         <IndexAlsosText>{children}</IndexAlsosText>
       )}
