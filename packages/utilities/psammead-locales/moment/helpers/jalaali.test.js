@@ -1,5 +1,5 @@
 /* eslint-disable func-names */
-const moment = require('moment-timezone/moment-timezone');
+const moment = require('moment');
 const jalaaliHelper = require('./jalaali');
 const stringHelper = require('./stringHelper');
 

@@ -1,4 +1,4 @@
-const moment = require('moment-timezone/moment-timezone');
+const moment = require('moment');
 const jalali = require('jalaali-js');
 const stringHelper = require('./stringHelper');
 
