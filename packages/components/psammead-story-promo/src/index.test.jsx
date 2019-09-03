@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import { shouldMatchSnapshot } from '@bbc/psammead-test-helpers';
 import { latin } from '@bbc/gel-foundations/scripts';
 import MediaIndicator from '@bbc/psammead-media-indicator';
@@ -22,7 +22,7 @@ const LiveComponent = ({ headline, service }) => (
 
 // eslint-disable-next-line react/prop-types
 const Info = ({ topStory, isLive, alsoItems }) => (
-  <Fragment>
+  <>
     <Headline script={latin} topStory={topStory} service="news">
       <Link href="https://www.bbc.co.uk/news">
         {isLive ? (
@@ -43,7 +43,7 @@ const Info = ({ topStory, isLive, alsoItems }) => (
         service="news"
       />
     )}
-  </Fragment>
+  </>
 );
 
 const mediaInfo = (
