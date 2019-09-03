@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 1.6.0 | [PR#1940](https://github.com/bbc/psammead/pull/1940) Clean up npm scripts |
 | 1.5.7 | [PR#1961](https://github.com/bbc/psammead/pull/1961) Talos - Bump Dependencies |
 | 1.5.6 | [PR#1942](https://github.com/bbc/psammead/pull/1942) Talos - Bump react, react-dom & react-test-renderer |
 | 1.5.5 | [PR#1935](https://github.com/bbc/psammead/pull/1935) Talos - Bump Dependencies |
