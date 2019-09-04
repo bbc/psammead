@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import styled, { css } from 'styled-components';
 import { shape, string, node, bool, oneOf } from 'prop-types';
 import VisuallyHiddenText from '@bbc/psammead-visually-hidden-text';
@@ -150,7 +150,7 @@ const StyledSpan = styled.span`
 `;
 
 const CurrentLink = ({ children: link, script, currentPageText }) => (
-  <Fragment>
+  <>
     <StyledSpan
       // eslint-disable-next-line jsx-a11y/aria-role
       role="text"
@@ -159,7 +159,7 @@ const CurrentLink = ({ children: link, script, currentPageText }) => (
       <VisuallyHiddenText>{currentPageText}, </VisuallyHiddenText>
       {link}
     </StyledSpan>
-  </Fragment>
+  </>
 );
 
 export const NavigationUl = ({ children, ...props }) => (

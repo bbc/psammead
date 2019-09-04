@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import styled from 'styled-components';
 import moment from 'moment';
 import { storiesOf } from '@storybook/react';
@@ -29,34 +29,128 @@ const fixedTimestamp = 1566914061212;
 
 /* eslint-disable prettier/prettier */
 const funcs = [
-  locale => moment(fixedTimestamp).locale(locale).format('MMMM Do YYYY, h:mm:ss a'),
-  locale => moment(fixedTimestamp).locale(locale).format('dddd'),
-  locale => moment(fixedTimestamp).locale(locale).format("MMM Do YY"),
-  locale => moment(fixedTimestamp).locale(locale).format('YYYY [escaped text] YYYY'),
-  locale => moment(fixedTimestamp).locale(locale).format(),
-  locale => moment("20111031", "YYYYMMDD").locale(locale).from(fixedTimestamp),
-  locale => moment("20120620", "YYYYMMDD").locale(locale).from(fixedTimestamp),
-  locale => moment(fixedTimestamp).locale(locale).startOf('day').from(fixedTimestamp),
-  locale => moment(fixedTimestamp).locale(locale).endOf('day').from(fixedTimestamp),
-  locale => moment(fixedTimestamp).locale(locale).startOf('hour').from(fixedTimestamp),
-  locale => moment(fixedTimestamp).locale(locale).subtract(10, 'days').calendar(fixedTimestamp),
-  locale => moment(fixedTimestamp).locale(locale).subtract(6, 'days').calendar(fixedTimestamp),
-  locale => moment(fixedTimestamp).locale(locale).subtract(3, 'days').calendar(fixedTimestamp),
-  locale => moment(fixedTimestamp).locale(locale).subtract(1, 'days').calendar(fixedTimestamp),
-  locale => moment(fixedTimestamp).locale(locale).calendar(fixedTimestamp),
-  locale => moment(fixedTimestamp).locale(locale).add(1, 'days').calendar(fixedTimestamp),
-  locale => moment(fixedTimestamp).locale(locale).add(3, 'days').calendar(fixedTimestamp),
-  locale => moment(fixedTimestamp).locale(locale).add(10, 'days').calendar(fixedTimestamp),
-  locale => moment(fixedTimestamp).locale(locale).format('LT'),
-  locale => moment(fixedTimestamp).locale(locale).format('LTS'),
-  locale => moment(fixedTimestamp).locale(locale).format('L'),
-  locale => moment(fixedTimestamp).locale(locale).format('l'),
-  locale => moment(fixedTimestamp).locale(locale).format('LL'),
-  locale => moment(fixedTimestamp).locale(locale).format('ll'),
-  locale => moment(fixedTimestamp).locale(locale).format('LLL'),
-  locale => moment(fixedTimestamp).locale(locale).format('lll'),
-  locale => moment(fixedTimestamp).locale(locale).format('LLLL'),
-  locale => moment(fixedTimestamp).locale(locale).format('llll'),
+  locale =>
+    moment(fixedTimestamp)
+      .locale(locale)
+      .format('MMMM Do YYYY, h:mm:ss a'),
+  locale =>
+    moment(fixedTimestamp)
+      .locale(locale)
+      .format('dddd'),
+  locale =>
+    moment(fixedTimestamp)
+      .locale(locale)
+      .format('MMM Do YY'),
+  locale =>
+    moment(fixedTimestamp)
+      .locale(locale)
+      .format('YYYY [escaped text] YYYY'),
+  locale =>
+    moment(fixedTimestamp)
+      .locale(locale)
+      .format(),
+  locale =>
+    moment('20111031', 'YYYYMMDD')
+      .locale(locale)
+      .from(fixedTimestamp),
+  locale =>
+    moment('20120620', 'YYYYMMDD')
+      .locale(locale)
+      .from(fixedTimestamp),
+  locale =>
+    moment(fixedTimestamp)
+      .locale(locale)
+      .startOf('day')
+      .from(fixedTimestamp),
+  locale =>
+    moment(fixedTimestamp)
+      .locale(locale)
+      .endOf('day')
+      .from(fixedTimestamp),
+  locale =>
+    moment(fixedTimestamp)
+      .locale(locale)
+      .startOf('hour')
+      .from(fixedTimestamp),
+  locale =>
+    moment(fixedTimestamp)
+      .locale(locale)
+      .subtract(10, 'days')
+      .calendar(fixedTimestamp),
+  locale =>
+    moment(fixedTimestamp)
+      .locale(locale)
+      .subtract(6, 'days')
+      .calendar(fixedTimestamp),
+  locale =>
+    moment(fixedTimestamp)
+      .locale(locale)
+      .subtract(3, 'days')
+      .calendar(fixedTimestamp),
+  locale =>
+    moment(fixedTimestamp)
+      .locale(locale)
+      .subtract(1, 'days')
+      .calendar(fixedTimestamp),
+  locale =>
+    moment(fixedTimestamp)
+      .locale(locale)
+      .calendar(fixedTimestamp),
+  locale =>
+    moment(fixedTimestamp)
+      .locale(locale)
+      .add(1, 'days')
+      .calendar(fixedTimestamp),
+  locale =>
+    moment(fixedTimestamp)
+      .locale(locale)
+      .add(3, 'days')
+      .calendar(fixedTimestamp),
+  locale =>
+    moment(fixedTimestamp)
+      .locale(locale)
+      .add(10, 'days')
+      .calendar(fixedTimestamp),
+  locale =>
+    moment(fixedTimestamp)
+      .locale(locale)
+      .format('LT'),
+  locale =>
+    moment(fixedTimestamp)
+      .locale(locale)
+      .format('LTS'),
+  locale =>
+    moment(fixedTimestamp)
+      .locale(locale)
+      .format('L'),
+  locale =>
+    moment(fixedTimestamp)
+      .locale(locale)
+      .format('l'),
+  locale =>
+    moment(fixedTimestamp)
+      .locale(locale)
+      .format('LL'),
+  locale =>
+    moment(fixedTimestamp)
+      .locale(locale)
+      .format('ll'),
+  locale =>
+    moment(fixedTimestamp)
+      .locale(locale)
+      .format('LLL'),
+  locale =>
+    moment(fixedTimestamp)
+      .locale(locale)
+      .format('lll'),
+  locale =>
+    moment(fixedTimestamp)
+      .locale(locale)
+      .format('LLLL'),
+  locale =>
+    moment(fixedTimestamp)
+      .locale(locale)
+      .format('llll'),
 ];
 /* eslint-enable prettier/prettier */
 
@@ -84,7 +178,7 @@ locales.forEach(({ name, locale }) => {
   stories.add(
     `Moment - ${name}(${locale})`,
     () => (
-      <Fragment>
+      <>
         <Table>
           <tbody>
             <tr>
@@ -104,7 +198,7 @@ locales.forEach(({ name, locale }) => {
           Spot an incorrect translation? Please write us a github issue{' '}
           <a href={issueHref(name)}>here</a> so we can fix it!
         </Paragraph>
-      </Fragment>
+      </>
     ),
     {
       notes,
