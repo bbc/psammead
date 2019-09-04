@@ -23,7 +23,7 @@ const tempFiles = [
 
 describe('pacakge generator', () => {
   beforeEach(() => {
-    jest.setTimeout(12000);
+    jest.setTimeout(15000);
 
     return helpers
       .run(path.join(__dirname, '.'))
