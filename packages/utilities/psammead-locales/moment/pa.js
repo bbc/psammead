@@ -1,3 +1,4 @@
+/* eslint-disable */
 const moment = require('moment');
 
 moment.defineLocale('pa-in', {
@@ -42,5 +43,39 @@ moment.defineLocale('pa-in', {
     MM: '%d ਮਹੀਨੇ',
     y: 'ਇੱਕ ਸਾਲ',
     yy: '%d ਸਾਲ',
+  },
+  // Punjabi notation for meridiems are quite fuzzy in practice. While there exists
+  // a rigid notion of a 'Pahar' it is not used as rigidly in modern Punjabi.
+  meridiemParse: /ਰਾਤ|ਸਵੇਰ|ਦੁਪਹਿਰ|ਸ਼ਾਮ/,
+  meridiemHour: function(hour, meridiem) {
+    if (hour === 12) {
+      hour = 0;
+    }
+    if (meridiem === 'ਰਾਤ') {
+      return hour < 4 ? hour : hour + 12;
+    } else if (meridiem === 'ਸਵੇਰ') {
+      return hour;
+    } else if (meridiem === 'ਦੁਪਹਿਰ') {
+      return hour >= 10 ? hour : hour + 12;
+    } else if (meridiem === 'ਸ਼ਾਮ') {
+      return hour + 12;
+    }
+  },
+  meridiem: function(hour, minute, isLower) {
+    if (hour < 4) {
+      return 'ਰਾਤ';
+    } else if (hour < 10) {
+      return 'ਸਵੇਰ';
+    } else if (hour < 17) {
+      return 'ਦੁਪਹਿਰ';
+    } else if (hour < 20) {
+      return 'ਸ਼ਾਮ';
+    } else {
+      return 'ਰਾਤ';
+    }
+  },
+  week: {
+    dow: 0, // Sunday is the first day of the week.
+    doy: 6, // The week that contains Jan 6th is the first week of the year.
   },
 });
