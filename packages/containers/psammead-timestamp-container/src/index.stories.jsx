@@ -108,6 +108,12 @@ const getTimestampValue = storyTimestamp => {
     : storyTimestamp.timestamp;
 };
 
+const storyTimestamp = select(
+  'Timestamp',
+  timestamps,
+  timestamps['Fixed (27 Aug 2019)'],
+);
+
 storiesOf('Containers|TimestampContainer', module)
   .addDecorator(withKnobs)
   .add(
@@ -115,11 +121,6 @@ storiesOf('Containers|TimestampContainer', module)
     inputProvider([], ({ locale, script, service }) => {
       updateAllTimestamps();
 
-      const storyTimestamp = select(
-        'Timestamp',
-        timestamps,
-        timestamps['Fixed (27 Aug 2019)'],
-      );
       return (
         <Timestamp
           timestamp={getTimestampValue(storyTimestamp)}
@@ -138,11 +139,6 @@ storiesOf('Containers|TimestampContainer', module)
     inputProvider([], ({ locale, script, service }) => {
       updateAllTimestamps();
 
-      const storyTimestamp = select(
-        'Timestamp',
-        timestamps,
-        timestamps['Fixed (27 Aug 2019)'],
-      );
       return (
         <Timestamp
           timestamp={getTimestampValue(storyTimestamp)}
@@ -162,11 +158,6 @@ storiesOf('Containers|TimestampContainer', module)
     inputProvider([], ({ locale, script, service }) => {
       updateAllTimestamps();
 
-      const storyTimestamp = select(
-        'Timestamp',
-        timestamps,
-        timestamps['Fixed (27 Aug 2019)'],
-      );
       return (
         <Timestamp
           timestamp={getTimestampValue(storyTimestamp)}
