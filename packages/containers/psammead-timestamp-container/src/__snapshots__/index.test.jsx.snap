@@ -40,8 +40,6 @@ exports[`Timestamp should add prefix and suffix 1`] = `
 </time>
 `;
 
-exports[`Timestamp should handle invalid date 1`] = `null`;
-
 exports[`Timestamp should render correctly 1`] = `
 .c0 {
   font-size: 0.875rem;
