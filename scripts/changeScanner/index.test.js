@@ -66,6 +66,7 @@ describe(`changeScanner - index`, () => {
       'Branch must update CHANGELOG.md in apples',
       'Branch must update package-lock.json in apples',
       'Branch must update package.json in apples',
+      '', // empty line for spacing
     ];
 
     expect(consoleLogOutput).not.toHaveBeenCalled();
