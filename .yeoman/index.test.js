@@ -23,8 +23,6 @@ const tempFiles = [
 
 describe('pacakge generator', () => {
   beforeEach(() => {
-    jest.setTimeout(15000);
-
     return helpers
       .run(path.join(__dirname, '.'))
       .inDir(path.join(__dirname, './temp'))
@@ -34,9 +32,9 @@ describe('pacakge generator', () => {
     shell.rm('-rf', path.join(__dirname, './temp'));
   });
 
-  it('should generate pacakge with prompts', () => {
+  it('should generate pacakge with prompts', async () => {
     let expectedFiles = [];
-    tempFiles.map(file => {
+    await tempFiles.map(file => {
       expectedFiles.push(path.join(__dirname, file));
     });
 
