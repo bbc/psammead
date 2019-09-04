@@ -43,7 +43,7 @@ Install dependencies locked to `package-lock.json`:
 npm run ci:packages
 ```
 
-(NB: You can't reliably run the jest tests when the packages are linked locally, as they may have been linked across breaking changes. Running `npm run ci:packages` resets all links. To update snapshots within unit tests, run `npm run updateSnapshots`.)
+(NB: You can't reliably run the jest tests when the packages are linked locally, as they may have been linked across breaking changes. Running `npm run ci:packages` resets all links. To update snapshots within unit tests, run `npm run test:unit -- -u`.)
 
 Run the component tests:
 
