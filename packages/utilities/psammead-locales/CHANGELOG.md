@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 | ------- | ----------- |
+| 2.2.1 | [PR#1992](https://github.com/bbc/psammead/pull/1992) Remove Punjabi numerals from moment |
 | 2.1.1 | [PR#1992](https://github.com/bbc/psammead/pull/1992) update the package with the side-effects flag |
 | 2.1.0 | [PR#1844](https://github.com/bbc/psammead/pull/1844) Add Persian and Pashto locales with dual calendar |
 | 2.0.1 | [PR#1960](https://github.com/bbc/psammead/pull/1960) Change <React.Fragment> to <> |
