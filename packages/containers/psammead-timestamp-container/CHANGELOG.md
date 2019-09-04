@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 2.5.0 | [PR#1933](https://github.com/bbc/psammead/pull/1933) Uses `select` instead of `button` to update time on click in stories |
 | 2.4.9 | [PR#1961](https://github.com/bbc/psammead/pull/1961) Talos - Bump Dependencies |
 | 2.4.8 | [PR#1942](https://github.com/bbc/psammead/pull/1942) Talos - Bump React to 16.9.0 |
 | 2.4.7 | [PR#1935](https://github.com/bbc/psammead/pull/1935) Talos - Bump Dependencies |
