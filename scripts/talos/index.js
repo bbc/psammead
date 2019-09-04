@@ -31,7 +31,7 @@ const talos = () => {
       const bumpedPackagesNoBBCPrefix = bumpedPackages.map(dep =>
         dep.replace('@bbc/', ''),
       );
-
+      console.log(bumpedPackages, bumpedPackagesNoBBCPrefix, bumpedPackagesObj);
       return bumpPackages({
         packageNames: bumpedPackagesNoBBCPrefix,
         version: 'patch',
@@ -49,9 +49,9 @@ const talos = () => {
         .then(({ data }) =>
           bumpedPackagesNoBBCPrefix.forEach((packageName, index) => {
             const description = 'Talos - Bump Dependencies';
-            const descriptionDetail = Object.keys(
-              bumpedPackagesObj[bumpedPackages[index]],
-            ).join(', ');
+            const descriptionDetail = bumpedPackagesObj[
+              bumpedPackages[index]
+            ].join(', ');
             bumpChangelogs({
               packageNames: [packageName],
               prLink: data.html_url,
