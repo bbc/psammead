@@ -4,9 +4,22 @@ This package provides a collection of locale configs, used in BBC World Service 
 
 ## Exports
 
-`/moment/ig` - A [moment.js](https://momentjs.com/) locale for Igbo. This can be used to localise timestamps generated using moment.js.
-`/moment/pcm` - A [moment.js](https://momentjs.com/) locale for Pidgin. This can be used to localise timestamps generated using moment.js.
-`/moment/yo` - A [moment.js](https://momentjs.com/) locale override for Yoruba. This replaces some translations as requested for BBC News World Service. Note that importing this will also cause the upstream `yo` locale to be loaded.
+### Moment locales
+
+The following [Moment.js](https://momentjs.com/) locales have been added as they do not exist upstream:
+
+- `/moment/ig` - locale for Igbo
+- `/moment/pcm` - locale for Pidgin
+- `/moment/ps` - locale for Pashto
+
+The following locales have overrides to meet BBC World Service requirements where these differ from the upstream locale. Note that importing them will also cause the upstream locale to be loaded.
+
+- `/moment/ar` - locale override for Arabic
+- `/moment/fa` - locale override for Persian (Farsi)
+- `/moment/yo` - locale override for Yoruba
+
+### Numerals
+
 `/numerals` - Numerals in several different number systems, e.g. Bengali, Burmese, Eastern Arabic, Western Arabic. This can be used for localised numbers for components. Returns arrays of the format `['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '10'];`
 
 
