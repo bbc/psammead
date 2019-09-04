@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 | ------- | ----------- |
+| 2.1.1 | [PR#2000](https://github.com/bbc/psammead/pull/2000) Add Persian and Pashto locales to Storybook |
 | 2.1.0 | [PR#1844](https://github.com/bbc/psammead/pull/1844) Add Persian and Pashto locales with dual calendar |
 | 2.0.1 | [PR#1960](https://github.com/bbc/psammead/pull/1960) Change <React.Fragment> to <> |
 | 2.0.0 | [PR#1946](https://github.com/bbc/psammead/pull/1946) Add ar locale |
