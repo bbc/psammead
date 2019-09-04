@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 2.3.10 | [PR#1993](https://github.com/bbc/psammead/pull/1993) Talos - Bump Dependencies |
 | 2.3.9 | [PR#1942](https://github.com/bbc/psammead/pull/1942) Talos - Bump React to 16.9.0 |
 | 2.3.8 | [PR#1931](https://github.com/bbc/psammead/pull/1931) Talos - Bump Dependencies |
 | 2.3.7 | [PR#1922](https://github.com/bbc/psammead/pull/1922) Revert "Revert "Hide section labels for all breakpoints"" |
