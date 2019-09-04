@@ -158,6 +158,7 @@ export const Headline = styled.h3`
             font-size: ${script.greatPrimer.groupD.fontSize / 16}rem;
             line-height: ${script.greatPrimer.groupD.lineHeight / 16}rem;
           `)}
+  }
 `;
 
 export const Summary = styled.p`
