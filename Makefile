@@ -37,4 +37,4 @@ change-scanner:
 	npm run changeScanner;
 
 talos:
-	node scripts/talos/cli;
+	node scripts/talos/cli ${ARGS};
