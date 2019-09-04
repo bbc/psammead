@@ -2,8 +2,6 @@
   "name": "@bbc/psammead-locales",
   "version": "2.1.0",
   "description": "A collection of locale configs, used in BBC World Service sites",
-  "main": "dist/index.js",
-  "module": "esm/index.js",
   "sideEffects": false,
   "repository": {
     "type": "git",
