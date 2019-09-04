@@ -31,7 +31,7 @@ const talos = () => {
       const bumpedPackagesNoBBCPrefix = bumpedPackages.map(dep =>
         dep.replace('@bbc/', ''),
       );
-      console.log(bumpedPackages, bumpedPackagesNoBBCPrefix, bumpedPackagesObj);
+
       return bumpPackages({
         packageNames: bumpedPackagesNoBBCPrefix,
         version: 'patch',
