@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 1.7.2 | [PR#1997](https://github.com/bbc/psammead/pull/1997) Talos - Bump Dependencies |
 | 1.7.1 | [PR#1993](https://github.com/bbc/psammead/pull/1993) Talos - Bump Dependencies |
 | 1.7.0 | [PR#1940](https://github.com/bbc/psammead/pull/1940) Clean up npm scripts |
 | 1.6.0 | [PR#1966](https://github.com/bbc/psammead/pull/1966) Enable changeScanner on ci |
