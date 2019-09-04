@@ -38,7 +38,7 @@ describe('Timestamp', () => {
     />,
   );
 
-  shouldMatchSnapshot(
+  isNull(
     'should handle invalid date',
     <Timestamp
       timestamp={invalidData}
