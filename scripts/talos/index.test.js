@@ -33,8 +33,8 @@ describe('Talos', () => {
     getBranchName.mockImplementation(() => 'branchname');
     upgradeDependencies.mockImplementation(() =>
       Promise.resolve({
-        apple: { package1: '1.2' },
-        pears: { package1: '1.2', package2: '1.1' },
+        apple: ['package1  ^1.2  →  ^1.4'],
+        pears: ['package1  ^1.2  →  ^1.4', 'package2  ^1.0  →  ^1.1'],
       }),
     );
     createPullRequest.mockImplementation(() =>
@@ -65,12 +65,13 @@ describe('Talos', () => {
 
     expect(bumpChangelogs).toHaveBeenCalledTimes(2);
     expect(bumpChangelogs).toHaveBeenCalledWith({
-      changesDescription: 'Talos - Bump Dependencies - package1',
+      changesDescription: 'Talos - Bump Dependencies - package1  ^1.2  →  ^1.4',
       packageNames: ['apple'],
       prLink: 'prURL',
     });
     expect(bumpChangelogs).toHaveBeenCalledWith({
-      changesDescription: 'Talos - Bump Dependencies - package1, package2',
+      changesDescription:
+        'Talos - Bump Dependencies - package1  ^1.2  →  ^1.4, package2  ^1.0  →  ^1.1',
       packageNames: ['pears'],
       prLink: 'prURL',
     });
