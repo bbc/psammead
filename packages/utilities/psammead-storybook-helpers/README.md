@@ -59,19 +59,19 @@ storiesOf('Caption', module)
   .addDecorator(withKnobs)
   .add(
     'default',
-    inputProvider(
-      [
+    inputProvider({
+      slots: [
         { name: 'caption', defaultText: 'Students sitting an examination' },
         { name: 'offscreen text', defaultText: 'Image Caption, ' },
       ],
-      ({ slotTexts: [captionText, offscreenText], script, dir, service }) => (
+      componentFunction: ({ slotTexts: [captionText, offscreenText], script, dir, service }) => (
         <Caption script={script} dir={dir} service={service}>
           <VisuallyHiddenText>{offscreenText}</VisuallyHiddenText>
           {captionText}
         </Caption>
       ),
       ['news', 'persian', 'igbo']
-    ),
+    }),
     { knobs: { escapeHTML: false } },
   );
 ```
