@@ -45,7 +45,6 @@ module.exports = ({ packageNames, version }) => {
   const packagePaths = getPackages();
   const bumpVersion = packageName =>
     runExec(version, getPackagePath(packageName));
-
   return Promise.all([
     packageNames,
     packagePaths,
