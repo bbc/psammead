@@ -8,22 +8,25 @@ storiesOf('Utilities|Input Provider', module)
   .addDecorator(withKnobs)
   .add(
     'simple',
-    inputProvider(null, () => <span>I toggle dir based on language</span>),
+    inputProvider({
+      componentFunction: () => <span>I toggle dir based on language</span>,
+    }),
     { notes, knobs: { escapeHTML: false } },
   )
   .add(
     'simple - limited services',
-    inputProvider(
-      null,
-      () => <span>Im only availible in news, pidgin & thai</span>,
-      ['news', 'pidgin', 'thai'],
-    ),
+    inputProvider({
+      componentFunction: () => (
+        <span>Im only availible in news, pidgin & thai</span>
+      ),
+      services: ['news', 'pidgin', 'thai'],
+    }),
     { notes, knobs: { escapeHTML: false } },
   )
   .add(
     'complex',
-    inputProvider(
-      [
+    inputProvider({
+      slots: [
         {
           name: 'first slot',
           defaultText:
@@ -31,7 +34,13 @@ storiesOf('Utilities|Input Provider', module)
         },
         { name: 'second slot' },
       ],
-      ({ slotTexts: [first, second], script, dir, service }) => (
+      /* eslint-disable react/prop-types */
+      componentFunction: ({
+        slotTexts: [first, second],
+        script,
+        dir,
+        service,
+      }) => (
         <ul>
           <li>{first}</li>
           <li>{second}</li>
@@ -43,7 +52,7 @@ storiesOf('Utilities|Input Provider', module)
           </li>
         </ul>
       ),
-    ),
+    }),
     { notes, knobs: { escapeHTML: false } },
   );
 
