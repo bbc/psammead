@@ -49,9 +49,9 @@ const talos = () => {
         .then(({ data }) =>
           bumpedPackagesNoBBCPrefix.forEach((packageName, index) => {
             const description = 'Talos - Bump Dependencies';
-            const descriptionDetail = bumpedPackagesObj[
-              bumpedPackages[index]
-            ].join(', ');
+            const descriptionDetail = bumpedPackagesObj[bumpedPackages[index]]
+              .map(text => text.split(' ')[0])
+              .join(', ');
             bumpChangelogs({
               packageNames: [packageName],
               prLink: data.html_url,
