@@ -20,7 +20,8 @@ const talos = () => {
   }
 
   return upgradeDependencies(packages)
-    .then(bumpedPackages => {
+    .then(bumpedPackagesObj => {
+      const bumpedPackages = Object.keys(bumpedPackagesObj);
       if (bumpedPackages.length <= 0) {
         // eslint-disable-next-line no-console
         console.log('No packages to bump!');
@@ -46,10 +47,16 @@ const talos = () => {
         .then(() => commitChanges('Talos - Bump Dependencies'))
         .then(() => createPullRequest({ packages, bumpedPackages, branchName }))
         .then(({ data }) =>
-          bumpChangelogs({
-            packageNames: bumpedPackagesNoBBCPrefix,
-            prLink: data.html_url,
-            changesDescription: 'Talos - Bump Dependencies',
+          bumpedPackagesNoBBCPrefix.forEach((packageName, index) => {
+            const description = 'Talos - Bump Dependencies';
+            const descriptionDetail = bumpedPackagesObj[bumpedPackages[index]]
+              .map(text => text.split(' ')[0])
+              .join(', ');
+            bumpChangelogs({
+              packageNames: [packageName],
+              prLink: data.html_url,
+              changesDescription: `${description} - ${descriptionDetail}`,
+            });
           }),
         )
         .then(() => commitChanges('Talos - Update changelogs'));

@@ -3,6 +3,8 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 2.4.11 | [PR#1997](https://github.com/bbc/psammead/pull/1997) Talos - Bump Dependencies |
+| 2.4.10 | [PR#1993](https://github.com/bbc/psammead/pull/1993) Update snapshot test to isNull |
 | 2.4.9 | [PR#1961](https://github.com/bbc/psammead/pull/1961) Talos - Bump Dependencies |
 | 2.4.8 | [PR#1942](https://github.com/bbc/psammead/pull/1942) Talos - Bump React to 16.9.0 |
 | 2.4.7 | [PR#1935](https://github.com/bbc/psammead/pull/1935) Talos - Bump Dependencies |
