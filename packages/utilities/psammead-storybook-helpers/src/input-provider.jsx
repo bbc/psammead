@@ -5,14 +5,11 @@ import { arrayOf, shape, string, element } from 'prop-types';
 import * as scripts from '@bbc/gel-foundations/scripts';
 import LANGUAGE_VARIANTS from './text-variants';
 
-const inputProvider = ({
-  slots,
-  componentFunction,
-  services,
-  options = {},
-}) => () => {
+const inputProvider = khoa => () => {
   let serviceNames = Object.keys(LANGUAGE_VARIANTS);
-
+  console.log(khoa);
+  const services = 'khoa';
+  const options = {};
   if (services) {
     serviceNames = serviceNames.filter(service => services.includes(service));
   }
@@ -25,14 +22,15 @@ const inputProvider = ({
 
   const service = LANGUAGE_VARIANTS[serviceName];
   const isNews = serviceName === 'news';
-
+  const slots = khoa.slots;
+  console.log(slots);
   const slotTexts = (slots || []).map(({ defaultText }) => {
-    // Expect defaultText to be in English. When it is provided and we're
-    // displaying English language on the story, set the default text for
-    // this knob to defaultText.
-    // When we switch to a language other than English, set the
-    // text for the slot to the snippet from LANGUAGE_VARIANTS for that
-    // language.
+    //   // Expect defaultText to be in English. When it is provided and we're
+    //   // displaying English language on the story, set the default text for
+    //   // this knob to defaultText.
+    //   // When we switch to a language other than English, set the
+    //   // text for the slot to the snippet from LANGUAGE_VARIANTS for that
+    //   // language.
     return defaultText && isNews ? defaultText : service.text;
   });
 
@@ -43,7 +41,7 @@ const inputProvider = ({
   return (
     <>
       <Helmet htmlAttributes={{ dir }} />
-      {componentFunction({
+      {khoa.componentFunction({
         slotTexts,
         script,
         dir,
