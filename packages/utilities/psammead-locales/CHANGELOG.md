@@ -3,7 +3,8 @@
 <!-- prettier-ignore -->
 | Version | Description |
 | ------- | ----------- |
-| 2.1.3 | [PR#2000](https://github.com/bbc/psammead/pull/2000) Add Persian and Pashto locales to Storybook |
+| 2.1.4 | [PR#2000](https://github.com/bbc/psammead/pull/2000) Add Persian and Pashto locales to Storybook |
+| 2.1.3 | [PR#2013](https://github.com/bbc/psammead/pull/2013) psammead-locale bug fix for IE11 |
 | 2.1.2 | [PR#2003](https://github.com/bbc/psammead/pull/2003) Revert #1992, re-enabling side effects |
 | 2.1.1 | [PR#1992](https://github.com/bbc/psammead/pull/1992) update the package with the side-effects flag |
 | 2.1.0 | [PR#1844](https://github.com/bbc/psammead/pull/1844) Add Persian and Pashto locales with dual calendar |
