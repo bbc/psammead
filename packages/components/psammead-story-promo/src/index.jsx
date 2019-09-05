@@ -138,15 +138,13 @@ const InlineMediaIndicator = styled.div`
       `}
 `;
 
-const getHeadlineFontStyle = (script, topStory) => {
-  const type = topStory ? 'paragon' : 'greatPrimer';
-
-  const lineHeight = script[type].groupD.fontSize / 16;
+const getHeadlineFontStyle = (script, type) => {
   const fontSize = script[type].groupD.fontSize / 16;
+  const lineHeight = script[type].groupD.lineHeight / 16;
 
   return css`
-    font-size: ${lineHeight}rem;
-    line-height: ${fontSize}rem;
+    font-size: ${fontSize}rem;
+    line-height: ${lineHeight}rem;
   `;
 };
 
