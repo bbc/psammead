@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 | ------- | ----------- |
+| 2.1.4 | [PR#2016](https://github.com/bbc/psammead/pull/2016) More psammead-locale fixes for IE11 and linter rule |
 | 2.1.3 | [PR#2013](https://github.com/bbc/psammead/pull/2013) psammead-locale bug fix for IE11 |
 | 2.1.2 | [PR#2003](https://github.com/bbc/psammead/pull/2003) Revert #1992, re-enabling side effects |
 | 2.1.1 | [PR#1992](https://github.com/bbc/psammead/pull/1992) update the package with the side-effects flag |
