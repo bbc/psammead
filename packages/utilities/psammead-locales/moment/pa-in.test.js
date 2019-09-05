@@ -1,8 +1,8 @@
 /* eslint-disable */
 import moment from 'moment';
-import './pa';
+import './pa-in';
 
-moment.locale('pa')
+moment.locale('pa-in')
 
 // This asset overrides the gunit assertion done in the moment codebase.
 // Format and styling of this file has been keep consistent with the official moment tests.

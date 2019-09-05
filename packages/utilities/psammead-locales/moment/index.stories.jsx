@@ -14,7 +14,7 @@ import './ig';
 import './pcm';
 import './yo';
 import './ar';
-import './pa';
+import './pa-in';
 
 const stories = storiesOf('Utilities|Psammead Locales', module);
 
