@@ -23,7 +23,7 @@ const locales = [
   { name: 'Igbo', locale: 'ig' },
   { name: 'Pidgin', locale: 'pcm' },
   { name: 'Yoruba', locale: 'yo' },
-  { name: 'Punjabi', locale: 'pa' },
+  { name: 'Punjabi', locale: 'pa-in' },
 ];
 
 /* eslint-disable prettier/prettier */
