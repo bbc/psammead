@@ -69,11 +69,13 @@ storiesOf('Components|Caption', module)
   .addDecorator(dirDecorator)
   .add(
     'containing italicisation',
-    inputProvider([], ({ script, service }) => (
-      <Caption script={script} service={service}>
-        Example text with <i>italics</i>
-      </Caption>
-    )),
+    inputProvider({
+      componentFunction: ({ script, service }) => (
+        <Caption script={script} service={service}>
+          Example text with <i>italics</i>
+        </Caption>
+      ),
+    }),
     { notes, knobs: { escapeHTML: false } },
   )
   .add(
