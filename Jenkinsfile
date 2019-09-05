@@ -56,6 +56,7 @@ node {
                   sh 'make code-coverage-before-build'
                   sh 'make test'
                   sh 'make code-coverage-after-build'
+                  sh 'make change-scanner'
                 },
                 'ChromaticQA Tests': {
                   withCredentials([string(credentialsId: 'psammead-chromatic-app-code', variable: 'CHROMATIC_APP_CODE')]) {
@@ -84,7 +85,7 @@ node {
           if (env.BRANCH_NAME == 'latest') {
             stage ('Talos') {
               sh 'git fetch --all'
-              sh "npm run talos ${params.TALOS_PACKAGES.replaceAll("[^a-zA-Z0-9._/@,-]+","")}"
+              sh "make talos ARGS='${params.TALOS_PACKAGES.replaceAll("[^a-zA-Z0-9._/@,-]+","")}'"
             }
           }
         } catch (Throwable e) {

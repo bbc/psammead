@@ -18,7 +18,7 @@ test:
 	npm test;
 
 test-chromatic:
-	npm run test:chromatic
+	npx chromatic test run  --storybook-build-dir=storybook_dist || true
 
 deploy-storybook:
 	npm run deploy-storybook
@@ -35,3 +35,6 @@ publish:
 
 change-scanner:
 	npm run changeScanner;
+
+talos:
+	node scripts/talos/cli ${ARGS};

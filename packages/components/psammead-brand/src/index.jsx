@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import styled from 'styled-components';
 import { string, number, node, shape, bool } from 'prop-types';
 import { C_POSTBOX, C_WHITE } from '@bbc/psammead-styles/colours';
@@ -64,7 +64,7 @@ const BrandSvg = styled.svg`
   padding-top: ${GEL_SPACING_DBL};
   padding-bottom: ${SVG_BOTTOM_OFFSET_BELOW_400PX};
   height: ${props => props.height / 16}rem;
-  
+
   ${({ maxWidth, minWidth }) => brandWidth(minWidth, maxWidth)}
 
   @media (min-width: ${GEL_GROUP_2_SCREEN_WIDTH_MIN}) {
@@ -113,9 +113,9 @@ const StyledBrand = ({
   maxWidth,
   minWidth,
 }) => (
-  <Fragment>
+  <>
     {svg && (
-      <Fragment>
+      <>
         <BrandSvg
           height={svgHeight}
           viewBox={`0 0 ${svg.viewbox.width} ${svg.viewbox.height}`}
@@ -132,9 +132,9 @@ const StyledBrand = ({
           product={product}
           serviceLocalisedName={serviceLocalisedName}
         />
-      </Fragment>
+      </>
     )}
-  </Fragment>
+  </>
 );
 
 const brandProps = {

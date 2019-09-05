@@ -3,7 +3,15 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
-| 1.5.6 | [PR#1949](https://github.com/bbc/psammead/pull/1949) Fix alpha version bumping |
+| 1.7.3 | [PR#1949](https://github.com/bbc/psammead/pull/1949) Fix alpha version bumping |
+| 1.7.2 | [PR#1997](https://github.com/bbc/psammead/pull/1997) Talos - Bump Dependencies |
+| 1.7.1 | [PR#1993](https://github.com/bbc/psammead/pull/1993) Talos - Bump Dependencies |
+| 1.7.0 | [PR#1940](https://github.com/bbc/psammead/pull/1940) Clean up npm scripts |
+| 1.6.0 | [PR#1966](https://github.com/bbc/psammead/pull/1966) Enable changeScanner on ci |
+| 1.5.8 | [PR#1968](https://github.com/bbc/psammead/pull/1968) Talos - Bump Dependencies |
+| 1.5.8 | [PR#1960](https://github.com/bbc/psammead/pull/1960) Update eslint-config-airbnb to 18.0.1 |
+| 1.5.7 | [PR#1961](https://github.com/bbc/psammead/pull/1961) Talos - Bump Dependencies |
+| 1.5.6 | [PR#1942](https://github.com/bbc/psammead/pull/1942) Talos - Bump react, react-dom & react-test-renderer |
 | 1.5.5 | [PR#1935](https://github.com/bbc/psammead/pull/1935) Talos - Bump Dependencies |
 | 1.5.4 | [PR#1937](https://github.com/bbc/psammead/pull/1937) Talos - Bump Dependencies |
 | 1.5.3 | [PR#1931](https://github.com/bbc/psammead/pull/1931) Talos - Bump Dependencies |

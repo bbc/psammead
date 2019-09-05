@@ -43,7 +43,7 @@ Install dependencies locked to `package-lock.json`:
 npm run ci:packages
 ```
 
-(NB: You can't reliably run the jest tests when the packages are linked locally, as they may have been linked across breaking changes. Running `npm run ci:packages` resets all links. To update snapshots within unit tests, run `npm run updateSnapshots`.)
+(NB: You can't reliably run the jest tests when the packages are linked locally, as they may have been linked across breaking changes. Running `npm run ci:packages` resets all links. To update snapshots within unit tests, run `npm run test:unit -- -u`.)
 
 Run the component tests:
 
@@ -51,7 +51,13 @@ Run the component tests:
 npm test
 ```
 
-This runs Jest across any packages matching this glob pattern: `packages/components/**/*.test.jsx`. It also runs each package's `npm test` command if it is defined.
+This runs Jest across any packages matching this glob pattern: `packages/components/**/*.test.jsx`. It also runs each package's `npm test` command if it is defined
+
+### :pencil2: Create a new package
+
+```
+npm run create:package
+```
 
 ### :runner: Run Storybook
 
