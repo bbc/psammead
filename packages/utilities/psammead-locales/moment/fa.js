@@ -28,7 +28,8 @@ moment.updateLocale('fa', {
       'fa',
       persianJalaliMonths,
       jalaliFormats,
-      string,
+      // eslint-disable-next-line prettier/prettier
+      string
     );
 
     return stringHelper.useEasternNumerals(str);

@@ -199,6 +199,7 @@ locales.forEach(({ name, locale }) => {
     ),
     {
       notes,
-    },
+      // eslint-disable-next-line prettier/prettier
+    }
   );
 });
