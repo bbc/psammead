@@ -1,15 +1,16 @@
 import React from 'react';
 import { select } from '@storybook/addon-knobs';
 import { Helmet } from 'react-helmet';
+import { arrayOf, shape, string, element } from 'prop-types';
 import * as scripts from '@bbc/gel-foundations/scripts';
 import LANGUAGE_VARIANTS from './text-variants';
 
-const inputProvider = (
+const inputProvider = ({
   slots,
   componentFunction,
   services,
   options = {},
-) => () => {
+}) => () => {
   let serviceNames = Object.keys(LANGUAGE_VARIANTS);
 
   if (services) {
@@ -51,6 +52,18 @@ const inputProvider = (
       })}
     </>
   );
+};
+
+inputProvider.propTypes = {
+  slots: arrayOf(
+    shape({
+      name: string,
+      defaultText: string,
+    }),
+  ),
+  componentFunction: element,
+  services: arrayOf(string),
+  options: shape({ defaultService: string }),
 };
 
 export default inputProvider;
