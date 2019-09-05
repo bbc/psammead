@@ -28,7 +28,6 @@ moment.updateLocale('fa', {
       'fa',
       persianJalaliMonths,
       jalaliFormats,
-      // eslint-disable-next-line prettier/prettier
       string
     );
 

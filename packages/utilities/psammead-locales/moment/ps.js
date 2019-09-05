@@ -33,7 +33,6 @@ moment.defineLocale('ps', {
       'ps',
       pashtoJalaliMonths,
       jalaliFormats,
-      // eslint-disable-next-line prettier/prettier
       string
     );
 

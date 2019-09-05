@@ -1,4 +1,4 @@
-/* eslint-disable func-names, comma-dangle */
+/* eslint-disable func-names */
 const moment = require('moment');
 const jalaaliHelper = require('./jalaali');
 const stringHelper = require('./stringHelper');
@@ -49,13 +49,13 @@ test('getJalaaliDatetime for pashto locale', function() {
     gregorianString,
     pashtoJalaliFromats,
     'ps',
-    true,
+    true
   );
   assert.equal(
     stringHelper.useEasternNumerals(
-      jalaaliHelper.getJalaaliDatetime(gregorianMonent, pashtoMonths),
+      jalaaliHelper.getJalaaliDatetime(gregorianMonent, pashtoMonths)
     ),
-    '۱۱ سلواغه ۱۳۹۷',
+    '۱۱ سلواغه ۱۳۹۷'
   );
 });
 
@@ -64,12 +64,12 @@ test('getJalaaliDatetime for persian locale', function() {
     gregorianString,
     pashtoJalaliFromats,
     'fa',
-    true,
+    true
   );
   assert.equal(
     stringHelper.useEasternNumerals(
-      jalaaliHelper.getJalaaliDatetime(gregorianMonent, persianMonths),
+      jalaaliHelper.getJalaaliDatetime(gregorianMonent, persianMonths)
     ),
-    '۱۱ بهمن ۱۳۹۷',
+    '۱۱ بهمن ۱۳۹۷'
   );
 });
