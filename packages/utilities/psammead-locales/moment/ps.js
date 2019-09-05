@@ -1,4 +1,3 @@
-/* eslint-disable prettier/prettier */
 /* eslint-disable func-names */
 const moment = require('moment');
 const jalaaliHelper = require('./helpers/jalaali');
@@ -19,6 +18,7 @@ const pashtoJalaliMonths = [
   'کب',
 ];
 
+// eslint-disable-next-line prettier/prettier
 const pashtoGregorianMonths = 'جنوري_فبروري_مارچ_اپریل_می_جون_جولاې_اګست_سپتمبر_اکتوبر_نومبر_ډیسمبر'.split('_');
 
 // Moment formats that should have the Jalali date added
