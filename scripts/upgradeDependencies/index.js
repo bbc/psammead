@@ -13,7 +13,7 @@ const getPromiseFromCommand = command =>
           parseUpgradedPackages(
             output
               .split('\n')
-              .map(line => `psammead: ${line}`)
+              .map(line => `@bbc/psammead: ${line}`)
               .join('\n'),
           ),
         );
@@ -24,8 +24,8 @@ const getPromiseFromCommand = command =>
 module.exports = packages => {
   const packageList = packages.join(', ');
   const commands = [
-    `npx npm-check-updates ${packageList} --packageFile package.json -u -a --jsonUpgraded`,
-    `npx lerna exec --parallel --no-bail -- npx npm-check-updates ${packageList} -u -a --jsonUpgraded`,
+    `npx npm-check-updates ${packageList} --packageFile package.json -u -a`,
+    `npx lerna exec --parallel --no-bail -- npx npm-check-updates ${packageList} -u -a`,
   ];
 
   // eslint-disable-next-line no-console
@@ -34,6 +34,8 @@ module.exports = packages => {
   const commandPromises = commands.map(getPromiseFromCommand);
 
   return Promise.all(commandPromises).then(outputs => {
-    return Promise.resolve([].concat(...outputs));
+    return Promise.resolve(
+      outputs.reduce((prev, curr) => ({ ...prev, ...curr })),
+    );
   });
 };
