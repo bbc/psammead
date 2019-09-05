@@ -5,6 +5,6 @@ export const dirDecorator = storyFn => {
   const renderFn = ({ script, dir, service }) =>
     storyFn({ script, dir, service });
 
-  const decoratedComponent = inputProvider(null, renderFn);
+  const decoratedComponent = inputProvider({ componentFunction: renderFn });
   return decoratedComponent();
 };
