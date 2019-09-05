@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 2.0.2 | [PR#1994](https://github.com/bbc/psammead/pull/1994) Add comment to clarify new shouldMatchSnapshot logic |
 | 2.0.1 | [PR#1958](https://github.com/bbc/psammead/pull/1958) Update `shouldMatchSnapshot` to add firstChild logic |
 | 2.0.0 | [PR#1917](https://github.com/bbc/psammead/pull/1917) Remove react-test-renderer and shallow rendering |
 | 1.3.2 | [PR#1919](https://github.com/bbc/psammead/pull/1919) Accidental version bump |
