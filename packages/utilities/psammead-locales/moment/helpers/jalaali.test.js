@@ -1,4 +1,4 @@
-/* eslint-disable func-names */
+/* eslint-disable func-names, comma-dangle */
 const moment = require('moment');
 const jalaaliHelper = require('./jalaali');
 const stringHelper = require('./stringHelper');
