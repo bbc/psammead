@@ -65,13 +65,12 @@ describe('Talos', () => {
 
     expect(bumpChangelogs).toHaveBeenCalledTimes(2);
     expect(bumpChangelogs).toHaveBeenCalledWith({
-      changesDescription: 'Talos - Bump Dependencies - package1  ^1.2  →  ^1.4',
+      changesDescription: 'Talos - Bump Dependencies - package1',
       packageNames: ['apple'],
       prLink: 'prURL',
     });
     expect(bumpChangelogs).toHaveBeenCalledWith({
-      changesDescription:
-        'Talos - Bump Dependencies - package1  ^1.2  →  ^1.4, package2  ^1.0  →  ^1.1',
+      changesDescription: 'Talos - Bump Dependencies - package1, package2',
       packageNames: ['pears'],
       prLink: 'prURL',
     });
