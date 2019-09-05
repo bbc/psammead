@@ -48,6 +48,8 @@ The default styling of this component is intended to comply with WCAG colour con
 
 The `VisuallyHiddenText` component can be used as a child of `Copyright` to add additional context to screen reader users. An example of this can be found in [our storybook](https://bbc.github.io/psammead/?selectedKind=Copyright&selectedStory=with%20visually%20hidden%20text)
 
+This component uses aria role text, to stop '[text splitting](https://axesslab.com/text-splitting/)' that is observed when using VoiceOver on iPhone and therefore improve the screen reader UX. Without this, the image source element is 2 swipes on VoiceOver (left to right), one for 'Image source' and one for the actual source such as 'Getty images'.
+
 <!-- ## Roadmap -->
 
 ## Contributing
