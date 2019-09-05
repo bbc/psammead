@@ -138,6 +138,18 @@ const InlineMediaIndicator = styled.div`
       `}
 `;
 
+const getHeadlineFontStyle = (script, topStory) => {
+  const type = topStory ? 'paragon' : 'greatPrimer';
+
+  const lineHeight = script[type].groupD.fontSize / 16;
+  const fontSize = script[type].groupD.fontSize / 16;
+
+  return css`
+    font-size: ${lineHeight}rem;
+    line-height: ${fontSize}rem;
+  `;
+};
+
 export const Headline = styled.h3`
   ${({ script, topStory }) =>
     script && (topStory ? getParagon(script) : getPica(script))}
@@ -150,14 +162,8 @@ export const Headline = styled.h3`
     ${({ script, topStory }) =>
       script &&
       (topStory
-        ? css`
-            font-size: ${script.paragon.groupD.fontSize / 16}rem;
-            line-height: ${script.paragon.groupD.lineHeight / 16}rem;
-          `
-        : css`
-            font-size: ${script.greatPrimer.groupD.fontSize / 16}rem;
-            line-height: ${script.greatPrimer.groupD.lineHeight / 16}rem;
-          `)}
+        ? getHeadlineFontStyle(script, 'paragon')
+        : getHeadlineFontStyle(script, 'greatPrimer'))}
   }
 `;
 
