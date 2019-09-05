@@ -17,7 +17,6 @@ import {
 } from '@bbc/gel-foundations/breakpoints';
 import {
   getPica,
-  getGreatPrimer,
   getParagon,
   getLongPrimer,
 } from '@bbc/gel-foundations/typography';
@@ -139,6 +138,21 @@ const InlineMediaIndicator = styled.div`
       `}
 `;
 
+// This is needed to get around the issue of IE11 not supporting
+// nested media queries (which would be returned by getParagon() and
+// getGreatPrimer())
+const getHeadlineFontStyle = (script, topStory) => {
+  const type = topStory ? 'paragon' : 'greatPrimer';
+
+  const fontSize = script[type].groupD.fontSize / 16;
+  const lineHeight = script[type].groupD.lineHeight / 16;
+
+  return css`
+    font-size: ${fontSize}rem;
+    line-height: ${lineHeight}rem;
+  `;
+};
+
 export const Headline = styled.h3`
   ${({ script, topStory }) =>
     script && (topStory ? getParagon(script) : getPica(script))}
@@ -149,7 +163,7 @@ export const Headline = styled.h3`
 
   @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
     ${({ script, topStory }) =>
-      script && (topStory ? getParagon(script) : getGreatPrimer(script))}
+      script && getHeadlineFontStyle(script, topStory)}
   }
 `;
 
