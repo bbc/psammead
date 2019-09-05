@@ -162,6 +162,18 @@ exports[`StoryPromo list should render correctly 1`] = `
   }
 }
 
+@media (min-width:37.5rem) {
+  .c1:first-child {
+    padding-top: 1rem;
+  }
+}
+
+@media (min-width:63rem) {
+  .c1:first-child {
+    padding-top: 1.5rem;
+  }
+}
+
 <ul
   class="c0"
   role="list"
