@@ -138,6 +138,9 @@ const InlineMediaIndicator = styled.div`
       `}
 `;
 
+// This is needed to get around the issue of IE11 not supporting
+// nested media queries (which would be returned by getParagon() and
+// getGreatPrimer())
 const getHeadlineFontStyle = (script, type) => {
   const fontSize = script[type].groupD.fontSize / 16;
   const lineHeight = script[type].groupD.lineHeight / 16;
