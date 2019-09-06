@@ -18,7 +18,11 @@ const runExec = ({ command, dir }) => {
           console.error(stderr);
           /* eslint-enable no-console */
           reject(error);
-        } else {
+        } else {  
+          /* eslint-disable no-console */
+          console.error(stdout);
+          console.error(stderr);
+          /* eslint-enable no-console */
           resolve();
         }
       },
