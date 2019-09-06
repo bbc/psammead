@@ -21,11 +21,15 @@ TypographyText.propTypes = {
 };
 
 const typographyStory = typographyFunc =>
-  inputProvider([{ name: 'sample text' }], ({ slotTexts: [text], script }) => (
-    <TypographyText script={script} typographyFunc={typographyFunc}>
-      {text}
-    </TypographyText>
-  ));
+  inputProvider({
+    slots: [{ name: 'sample text' }],
+    // eslint-disable-next-line react/prop-types
+    componentFunction: ({ slotTexts: [text], script }) => (
+      <TypographyText script={script} typographyFunc={typographyFunc}>
+        {text}
+      </TypographyText>
+    ),
+  });
 
 const stories = storiesOf('Typography', module).addDecorator(withKnobs);
 
