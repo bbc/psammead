@@ -64,6 +64,10 @@ const talos = () => {
     .catch(e => {
       // eslint-disable-next-line no-console
       console.error(e);
+      // eslint-disable-next-line no-console
+      if (e.stdout) console.error(e.stdout);
+      // eslint-disable-next-line no-console
+      if (e.stderr) console.error(e.stderr);
       process.exit(1);
     });
 };

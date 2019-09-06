@@ -31,9 +31,10 @@ storiesOf('Components|Figure', module)
   )
   .add(
     'containing Image, ImagePlaceholder, Copyright and Caption',
-    inputProvider(
-      [{ name: 'Caption' }],
-      ({ slotTexts: [caption], script, service }) => (
+    inputProvider({
+      slots: [{ name: 'Caption' }],
+      // eslint-disable-next-line react/prop-types
+      componentFunction: ({ slotTexts: [caption], script, service }) => (
         <Figure>
           <ImagePlaceholder ratio={imageRatio}>
             <Image alt={imageAlt} src={imageSrc} width={imageWidth} />
@@ -68,6 +69,6 @@ storiesOf('Components|Figure', module)
           </Caption>
         </Figure>
       ),
-    ),
+    }),
     { notes, knobs: { escapeHTML: false } },
   );

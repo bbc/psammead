@@ -9,11 +9,12 @@ storiesOf('Components|VisuallyHiddenText', module)
   .addDecorator(withKnobs)
   .add(
     'default',
-    inputProvider(
-      [{ name: 'Visually hidden text' }],
-      ({ slotTexts: [hiddenText] }) => (
+    inputProvider({
+      slots: [{ name: 'Visually hidden text' }],
+      // eslint-disable-next-line react/prop-types
+      componentFunction: ({ slotTexts: [hiddenText] }) => (
         <VisuallyHiddenText>{hiddenText}</VisuallyHiddenText>
       ),
-    ),
+    }),
     { notes, knobs: { escapeHTML: false } },
   );

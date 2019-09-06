@@ -10,18 +10,24 @@ import {
 } from '@bbc/gel-foundations/spacings';
 import { GEL_FF_REITH_SANS } from '@bbc/gel-foundations/typography';
 import notes from '../README.md';
+import './ar';
+import './fa';
 import './ig';
 import './pcm';
+import './ps';
 import './yo';
-import './ar';
+import './pa-in';
 
 const stories = storiesOf('Utilities|Psammead Locales', module);
 
 const locales = [
   { name: 'Arabic', locale: 'ar' },
   { name: 'Igbo', locale: 'ig' },
+  { name: 'Pashto', locale: 'ps' },
+  { name: 'Persian', locale: 'fa' },
   { name: 'Pidgin', locale: 'pcm' },
   { name: 'Yoruba', locale: 'yo' },
+  { name: 'Punjabi', locale: 'pa-in' },
 ];
 
 // Fixed timestamp for 27 August 2019, 14:54 BST
@@ -202,6 +208,6 @@ locales.forEach(({ name, locale }) => {
     ),
     {
       notes,
-    },
+    }
   );
 });
