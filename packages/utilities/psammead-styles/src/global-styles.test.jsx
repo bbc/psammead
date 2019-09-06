@@ -17,10 +17,4 @@ describe('global-styles', () => {
     const styles = getGlobalStyles();
     expect(styles).toMatchSnapshot();
   });
-
-  it('should handle getGlobalStyles', () => {
-    createGlobalStyles({});
-    const styles = getGlobalStyles();
-    expect(styles).toMatchSnapshot();
-  });
 });
