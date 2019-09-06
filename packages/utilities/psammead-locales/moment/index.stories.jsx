@@ -201,6 +201,6 @@ locales.forEach(({ name, locale }) => {
     ),
     {
       notes,
-    },
+    }
   );
 });
