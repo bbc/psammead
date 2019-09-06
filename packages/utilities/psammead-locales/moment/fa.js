@@ -2,6 +2,7 @@
 const moment = require('moment');
 const jalaaliHelper = require('./helpers/jalaali');
 const stringHelper = require('./helpers/stringHelper');
+require('moment/locale/fa');
 
 const persianJalaliMonths = [
   'فروردین',
