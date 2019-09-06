@@ -3,7 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 | ------- | ----------- |
-| 2.7.9 | [PR#2040](https://github.com/bbc/psammead/pull/2040) Fix summary visibility for breakpoints below 1007px |
+| 2.7.9 | [PR#2040](https://github.com/bbc/psammead/pull/2040) Fix summary visibility for breakpoints below 1008px |
 | 2.7.8 | [PR#1926](https://github.com/bbc/psammead/pull/1926) Update component storybook to use latest inputProvider changes |
 | 2.7.7 | [PR#1987](https://github.com/bbc/psammead/pull/1987) Fix font-size and line-height not being applied in IE11 |
 | 2.7.6 | [PR#1993](https://github.com/bbc/psammead/pull/1993) Talos - Bump Dependencies |
