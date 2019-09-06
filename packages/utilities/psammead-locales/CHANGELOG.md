@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 | ------- | ----------- |
+| 2.2.2 | [PR#2044](https://github.com/bbc/psammead/pull/2044) Fix for Persian (`fa`) locale not working on client |
 | 2.2.1 | [PR#2020](https://github.com/bbc/psammead/pull/2020) IE11 fixes |
 | 2.2.0 | [PR#2001](https://github.com/bbc/psammead/pull/2001) Add `pa-in` (Punjabi) locale |
 | 2.1.5 | [PR#2000](https://github.com/bbc/psammead/pull/2000) Add Persian and Pashto locales to Storybook |
