@@ -52,7 +52,7 @@ const talos = () => {
             const descriptionDetail = bumpedPackagesObj[bumpedPackages[index]]
               .map(text => text.split(' ')[0])
               .join(', ');
-            bumpChangelogs({
+            return bumpChangelogs({
               packageNames: [packageName],
               prLink: data.html_url,
               changesDescription: `${description} - ${descriptionDetail}`,
