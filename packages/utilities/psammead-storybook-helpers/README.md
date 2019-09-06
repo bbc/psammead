@@ -6,7 +6,7 @@ This package provides a collection of common values that are used in storybook b
 
 `LANGUAGE_VARIANTS` - A list of text samples in different languages, with the script and direction that should be used for that language.
 
-`inputProvider` - A function that provides support for previewing components in storybook in different languages. Takes 4 props, `slots` and `componentFunction`, `services` and `options`. Returns the return value of `componentFunction`. This should usually be a React Component.
+`inputProvider` - A function that provides support for previewing components in storybook in different languages. Takes 4 props, `slots` and `componentFunction`, `services` and `options`.Sets the `dir` attribute on the `<html>` element in the story iframe using [Helmet](https://www.npmjs.com/package/react-helmet). Returns the return value of `componentFunction`. This should usually be a React Component.
 
 - `slots`: Array of `slot`s. Optional.
   - `slot`: Object containing configuration for this slot.
