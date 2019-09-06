@@ -3,7 +3,8 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
-| 1.7.6 | [PR#1997](https://github.com/bbc/psammead/pull/1997) Bump psammead-storybook-helper to `6.0.0` |
+| 1.7.7 | [PR#1997](https://github.com/bbc/psammead/pull/1997) Bump psammead-storybook-helper to `6.0.0` |
+| 1.7.6 | [PR#2018](https://github.com/bbc/psammead/pull/2018) Talos - Bump Dependencies - @bbc/psammead-locales |
 | 1.7.5 | [PR#2015](https://github.com/bbc/psammead/pull/2015) Talos - Bump Dependencies - @bbc/psammead-locales |
 | 1.7.4 | [PR#2012](https://github.com/bbc/psammead/pull/2012) Talos - Bump Dependencies - @bbc/psammead-test-helpers |
 | 1.7.3 | [PR#2010](https://github.com/bbc/psammead/pull/2010) Talos - Bump Dependencies |
