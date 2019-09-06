@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 2.1.4 | [PR#1926](https://github.com/bbc/psammead/pull/1926) Update component storybook to use latest inputProvider changes |
 | 2.1.3 | [PR#1948](https://github.com/bbc/psammead/pull/1948) Show different font types in storybook |
 | 2.1.2 | [PR#1847](https://github.com/bbc/psammead/pull/1847) Fixed Telugu typos |
 | 2.1.1 | [PR#1803](https://github.com/bbc/psammead/pull/1803/) Patches broken links on badges in documentation |

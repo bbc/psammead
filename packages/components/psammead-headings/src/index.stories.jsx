@@ -9,14 +9,15 @@ storiesOf('Components|Headline', module)
   .addDecorator(withKnobs)
   .add(
     'default',
-    inputProvider(
-      [{ name: 'Headline' }],
-      ({ slotTexts: [headline], script, service }) => (
+    inputProvider({
+      slots: [{ name: 'Headline' }],
+      // eslint-disable-next-line react/prop-types
+      componentFunction: ({ slotTexts: [headline], script, service }) => (
         <Headline script={script} service={service}>
           {headline}
         </Headline>
       ),
-    ),
+    }),
     { notes, knobs: { escapeHTML: false } },
   );
 
@@ -24,21 +25,23 @@ storiesOf('Components|SubHeading', module)
   .addDecorator(withKnobs)
   .add(
     'default',
-    inputProvider(
-      [{ name: 'SubHeading' }],
-      ({ slotTexts: [subheader], script, service }) => (
+    inputProvider({
+      slots: [{ name: 'SubHeading' }],
+      // eslint-disable-next-line react/prop-types
+      componentFunction: ({ slotTexts: [subheader], script, service }) => (
         <SubHeading script={script} service={service}>
           {subheader}
         </SubHeading>
       ),
-    ),
+    }),
     { notes, knobs: { escapeHTML: false } },
   )
   .add(
     'with optional ID',
-    inputProvider(
-      [{ name: 'SubHeading' }],
-      ({ slotTexts: [subheader], script, service }) => {
+    inputProvider({
+      slots: [{ name: 'SubHeading' }],
+      // eslint-disable-next-line react/prop-types
+      componentFunction: ({ slotTexts: [subheader], script, service }) => {
         const id = text('ID', 'foo', 'Other');
         return (
           <SubHeading id={id} script={script} service={service}>
@@ -46,6 +49,6 @@ storiesOf('Components|SubHeading', module)
           </SubHeading>
         );
       },
-    ),
+    }),
     { notes, knobs: { escapeHTML: false } },
   );
