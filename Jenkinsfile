@@ -49,43 +49,10 @@ node {
             sh 'make install'
           }
 
-          if (params.TALOS_PACKAGES == '') {
-            stage ('Development Tests') {
-              parallel (
-                'App Tests & Code Coverage': {
-                  sh 'make code-coverage-before-build'
-                  sh 'make test'
-                  sh 'make code-coverage-after-build'
-                  sh 'make change-scanner'
-                },
-                'ChromaticQA Tests': {
-                  withCredentials([string(credentialsId: 'psammead-chromatic-app-code', variable: 'CHROMATIC_APP_CODE')]) {
-                    sh 'make test-chromatic'
-                  }
-                }, failFast: true
-              )
-            }
-          }
-
-          if (env.BRANCH_NAME == 'latest' && params.TALOS_PACKAGES == '') {
-            stage ('Deploy Storybook & Publish to NPM') {
-              parallel (
-                'Deploy Storybook': {
-                  sh 'make deploy-storybook'
-                },
-                'Publish to NPM': {
-                    withCredentials([string(credentialsId: 'npm_bbc-online_read_write', variable: 'NPM_TOKEN')]) {
-                      sh 'make publish'
-                    }
-                }
-              )
-            }
-          }
-
-          if (env.BRANCH_NAME == 'latest') {
+          if (env.BRANCH_NAME == 'talosdebugging') {
             stage ('Talos') {
               sh 'git fetch --all'
-              sh "make talos ARGS='${params.TALOS_PACKAGES.replaceAll("[^a-zA-Z0-9._/@,-]+","")}'"
+              sh "make talos ARGS='@bbc/psammead-amp-geo,@bbc/psammead-brand,@bbc/psammead-caption,@bbc/psammead-consent-banner,@bbc/psammead-copyright,@bbc/psammead-figure,@bbc/psammead-headings,@bbc/psammead-image-placeholder,@bbc/psammead-image,@bbc/psammead-inline-link,@bbc/psammead-media-indicator,@bbc/psammead-media-player,@bbc/psammead-navigation,@bbc/psammead-paragraph,@bbc/psammead-section-label,@bbc/psammead-sitewide-links,@bbc/psammead-story-promo-list,@bbc/psammead-story-promo,@bbc/psammead-timestamp,@bbc/psammead-visually-hidden-text,@bbc/psammead-timestamp-container,@bbc/gel-foundations,@bbc/moment-timezone-include,@bbc/psammead-assets,@bbc/psammead-locales,@bbc/psammead-storybook-helpers,@bbc/psammead-styles,@bbc/psammead-test-helpers'"
             }
           }
         } catch (Throwable e) {
