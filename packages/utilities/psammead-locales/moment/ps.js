@@ -28,7 +28,8 @@ moment.defineLocale('ps', {
   // Gregorian Months
   months: pashtoGregorianMonths,
   monthsShort: pashtoGregorianMonths,
-  postformat(string) {
+  // eslint-disable-next-line object-shorthand
+  postformat: function(string) {
     const str = jalaaliHelper.addJalaliDate(
       'ps',
       pashtoJalaliMonths,
