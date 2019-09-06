@@ -33,7 +33,7 @@ moment.defineLocale('ps', {
       'ps',
       pashtoJalaliMonths,
       jalaliFormats,
-      string,
+      string
     );
 
     return stringHelper.useEasternNumerals(str);
