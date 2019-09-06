@@ -177,7 +177,7 @@ export const Summary = styled.p`
   ${({ topStory }) =>
     topStory
       ? css`
-          @media (max-width: ${GEL_GROUP_3_SCREEN_WIDTH_MAX}) {
+          @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) and (max-width: ${GEL_GROUP_3_SCREEN_WIDTH_MAX}) {
             display: none;
             visibility: hidden;
           }
