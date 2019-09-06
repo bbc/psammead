@@ -79,46 +79,55 @@ storiesOf('Containers|TimestampContainer', module)
   .addDecorator(withKnobs)
   .add(
     'default',
-    inputProvider([], ({ locale, script, service }) => (
-      <Timestamp
-        timestamp={date('timestamp')}
-        dateTimeFormat="YYYY-MM-DD"
-        format="D MMMM YYYY"
-        isRelative={boolean('isRelative', false)}
-        script={script}
-        locale={locale}
-        service={service}
-      />
-    )),
+    inputProvider({
+      // eslint-disable-next-line react/prop-types
+      componentFunction: ({ locale, script, service }) => (
+        <Timestamp
+          timestamp={date('timestamp')}
+          dateTimeFormat="YYYY-MM-DD"
+          format="D MMMM YYYY"
+          isRelative={boolean('isRelative', false)}
+          script={script}
+          locale={locale}
+          service={service}
+        />
+      ),
+    }),
   )
   .add(
     'with prefix',
-    inputProvider([], ({ locale, script, service }) => (
-      <Timestamp
-        timestamp={date('timestamp')}
-        dateTimeFormat="YYYY-MM-DD"
-        format="D MMMM YYYY, HH:mm z"
-        isRelative={boolean('isRelative', true)}
-        prefix={text('Prefix text', 'Updated')}
-        script={script}
-        locale={locale}
-        service={service}
-      />
-    )),
+    inputProvider({
+      // eslint-disable-next-line react/prop-types
+      componentFunction: ({ locale, script, service }) => (
+        <Timestamp
+          timestamp={date('timestamp')}
+          dateTimeFormat="YYYY-MM-DD"
+          format="D MMMM YYYY, HH:mm z"
+          isRelative={boolean('isRelative', true)}
+          prefix={text('Prefix text', 'Updated')}
+          script={script}
+          locale={locale}
+          service={service}
+        />
+      ),
+    }),
   )
   .add(
     'with prefix and suffix',
-    inputProvider([], ({ locale, script, service }) => (
-      <Timestamp
-        timestamp={date('timestamp')}
-        dateTimeFormat="YYYY-MM-DD"
-        format="D MMMM YYYY, HH:mm z"
-        isRelative={boolean('isRelative', false)}
-        prefix={text('Prefix text', 'This')}
-        suffix={text('Suffix text', 'is date of last update')}
-        script={script}
-        locale={locale}
-        service={service}
-      />
-    )),
+    inputProvider({
+      // eslint-disable-next-line react/prop-types
+      componentFunction: ({ locale, script, service }) => (
+        <Timestamp
+          timestamp={date('timestamp')}
+          dateTimeFormat="YYYY-MM-DD"
+          format="D MMMM YYYY, HH:mm z"
+          isRelative={boolean('isRelative', false)}
+          prefix={text('Prefix text', 'This')}
+          suffix={text('Suffix text', 'is date of last update')}
+          script={script}
+          locale={locale}
+          service={service}
+        />
+      ),
+    }),
   );
