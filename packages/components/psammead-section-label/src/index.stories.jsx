@@ -9,9 +9,10 @@ storiesOf('Components|SectionLabel', module)
   .addDecorator(withKnobs)
   .add(
     'default',
-    inputProvider(
-      [{ name: 'title', defaultText: 'Most Read' }],
-      ({ slotTexts: [title], script, dir, service }) => (
+    inputProvider({
+      slots: [{ name: 'title', defaultText: 'Most Read' }],
+      // eslint-disable-next-line react/prop-types
+      componentFunction: ({ slotTexts: [title], script, dir, service }) => (
         <SectionLabel
           script={script}
           dir={dir}
@@ -26,14 +27,15 @@ storiesOf('Components|SectionLabel', module)
           {title}
         </SectionLabel>
       ),
-    ),
+    }),
     { notes, knobs: { escapeHTML: false } },
   )
   .add(
     'with a link',
-    inputProvider(
-      [{ name: 'title', defaultText: 'Most Read' }],
-      ({ slotTexts: [title], script, dir, service }) => (
+    inputProvider({
+      slots: [{ name: 'title', defaultText: 'Most Read' }],
+      // eslint-disable-next-line react/prop-types
+      componentFunction: ({ slotTexts: [title], script, dir, service }) => (
         <SectionLabel
           script={script}
           dir={dir}
@@ -50,6 +52,6 @@ storiesOf('Components|SectionLabel', module)
           {title}
         </SectionLabel>
       ),
-    ),
+    }),
     { notes, knobs: { escapeHTML: false } },
   );

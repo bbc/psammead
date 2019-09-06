@@ -40,8 +40,8 @@ storiesOf('Components|ConsentBanner', module)
   .addDecorator(dirDecorator)
   .add(
     'default',
-    inputProvider(
-      [
+    inputProvider({
+      slots: [
         {
           name: 'title',
           defaultText: 'Privacy and Cookies Policy',
@@ -51,8 +51,13 @@ storiesOf('Components|ConsentBanner', module)
           defaultText: 'Changes to our Privacy and Cookie Policy ',
         },
       ],
-
-      ({ slotTexts: [title, text], dir, script, service }) => {
+      /* eslint-disable react/prop-types */
+      componentFunction: ({
+        slotTexts: [title, text],
+        dir,
+        script,
+        service,
+      }) => {
         const shortText = text.trim().split(' ')[0];
         return (
           <ConsentBanner
@@ -66,6 +71,6 @@ storiesOf('Components|ConsentBanner', module)
           />
         );
       },
-    ),
+    }),
     { notes, knobs: { escapeHTML: false } },
   );
