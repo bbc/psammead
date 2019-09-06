@@ -18,7 +18,7 @@ This package provides a collection of common values that are used in storybook b
   - `dir`: Either `'ltr'` or `'rtl'`, corresponding to the language currently selected by the storybook user.
   - `service`: The service selected by the storybook user.
 - `services`: Array of services to filter LANGUAGE_VARIANT's provided into a smaller subset. Optional.
-- `options`: Object containing additional context for the input provider. Optional
+- `options`: Object containing additional context for the input provider. Optional.
   - `defaultService`: String to set the default for the select knob in storybook.
 
 `dirDecorator` - A storybook decorator function that uses `inputProvider` internally to provide direction control. It calls the storybook function with an object containing `dir`, `script` and the `service` name.
