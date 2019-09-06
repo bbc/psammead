@@ -24,7 +24,7 @@ const jalaliFormats = ['D MMMM YYYY', 'LL'];
 moment().locale('fa');
 moment.updateLocale('fa', {
   // eslint-disable-next-line object-shorthand
-  postforma: function(string) {
+  postformat: function(string) {
     const str = jalaaliHelper.addJalaliDate(
       'fa',
       persianJalaliMonths,
