@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 | ------- | ----------- |
+| 2.5.7 | [PR#2059](https://github.com/bbc/psammead/pull/2059) Talos - Bump Dependencies - @bbc/psammead-styles |
 | 2.5.6 | [PR#1993](https://github.com/bbc/psammead/pull/1993) Talos - Bump Dependencies |
 | 2.5.5 | [PR#1942](https://github.com/bbc/psammead/pull/1942) Talos - Bump React to 16.9.0 |
 | 2.5.4 | [PR#1931](https://github.com/bbc/psammead/pull/1931) Talos - Bump Dependencies |
