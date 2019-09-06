@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 | ------- | ----------- |
+| 2.1.6 | [PR#2020](https://github.com/bbc/psammead/pull/2020) IE11 fixes |
 | 2.1.5 | [PR#2000](https://github.com/bbc/psammead/pull/2000) Add Persian and Pashto locales to Storybook |
 | 2.1.4 | [PR#2016](https://github.com/bbc/psammead/pull/2016) More psammead-locale fixes for IE11 and linter rule |
 | 2.1.3 | [PR#2013](https://github.com/bbc/psammead/pull/2013) psammead-locale bug fix for IE11 |
