@@ -28,7 +28,7 @@ moment.updateLocale('fa', {
       'fa',
       persianJalaliMonths,
       jalaliFormats,
-      string,
+      string
     );
 
     return stringHelper.useEasternNumerals(str);
