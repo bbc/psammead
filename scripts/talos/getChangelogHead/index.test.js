@@ -13,8 +13,7 @@ describe('getChangelogHead', () => {
   it('should return head of content 1', () => {
     jest.clearAllMocks();
     readFile.mockImplementation(() => EXISTING_CHANGELOG_CONTENT1);
-    const output = getChangelogHead('psammead-caption');
-    console.log(output);
+    const output = getChangelogHead('psammead-caption  ^1.1.0  →  ^1.2.0');
     expect(output).toEqual(EXPECTED_CHANGELOG_HEAD1);
   });
 
@@ -22,7 +21,7 @@ describe('getChangelogHead', () => {
     jest.clearAllMocks();
     readFile.mockImplementation(() => EXISTING_CHANGELOG_CONTENT2);
 
-    expect(getChangelogHead('psammead-brand')).toEqual(
+    expect(getChangelogHead('psammead-brand  ^1.0.0  →  ^1.1.0')).toEqual(
       EXPECTED_CHANGELOG_HEAD2,
     );
   });
