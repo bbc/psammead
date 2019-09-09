@@ -17,4 +17,11 @@ describe('global-styles', () => {
     const styles = getGlobalStyles();
     expect(styles).toMatchSnapshot();
   });
+
+  it('should handle global-styles with fonts props', () => {
+    // eslint-disable-next-line no-unused-expressions
+    <GlobalStyles fonts={['font-family: "Sans-Serif"']} />;
+    const styles = getGlobalStyles();
+    expect(styles).toMatchSnapshot();
+  });
 });
