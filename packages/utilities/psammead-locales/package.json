@@ -26,7 +26,7 @@
     "numbersystems"
   ],
   "dependencies": {
-    "jalaali-js": "1.0.0",
+    "jalaali-js": "1.1.0",
     "moment": "^2.24.0"
   }
 }
