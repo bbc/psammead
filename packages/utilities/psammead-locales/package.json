@@ -1,6 +1,6 @@
 {
   "name": "@bbc/psammead-locales",
-  "version": "2.2.3",
+  "version": "2.2.5",
   "description": "A collection of locale configs, used in BBC World Service sites",
   "repository": {
     "type": "git",
@@ -26,7 +26,7 @@
     "numbersystems"
   ],
   "dependencies": {
-    "jalaali-js": "1.0.0",
+    "jalaali-js": "1.1.0",
     "moment": "^2.24.0"
   }
 }
