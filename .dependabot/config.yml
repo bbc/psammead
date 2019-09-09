@@ -5,4 +5,4 @@ update_configs:
     update_schedule: 'weekly'
     ignored_updates:
       - match:
-          dependency_name: '@psammead*'
+          dependency_name: '@bbc*'
