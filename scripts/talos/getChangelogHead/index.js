@@ -20,16 +20,15 @@ const getChangelogHead = publishedPackage => {
   );
 
   const tableHeadRegex = /\|\s+?Version\s+?|\s+?Description\s+?\|/;
-  const tableHead = changelogLines.find(line => line.match(tableHeadRegex));
-  const firstVersionLine = changelogLines.find(line =>
+  const tableHeadIndex = changelogLines.findIndex(line =>
+    line.match(tableHeadRegex),
+  );
+  const firstVersionIndex = changelogLines.findIndex(line =>
     line.includes(packageVersions[0]),
   );
-
-  const changelogHeadIndex = changelogLines.indexOf(tableHead);
-  const firstVersionIndex = changelogLines.indexOf(firstVersionLine);
   const changelogHead = changelogLines.splice(
-    changelogHeadIndex,
-    firstVersionIndex - changelogHeadIndex,
+    tableHeadIndex,
+    firstVersionIndex - tableHeadIndex,
   );
 
   return changelogHead.join('\n');
