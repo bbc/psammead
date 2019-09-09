@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 | ------- | ----------- |
+| 1.2.2 | [PR#1926](https://github.com/bbc/psammead/pull/1926) Update component storybook to use latest inputProvider changes |
 | 1.2.1 | [PR#1803](https://github.com/bbc/psammead/pull/1803/) Patches broken links on badges in documentation |
 | 1.2.0 | [PR#1794](https://github.com/bbc/psammead/pull/1794) Add david dependency badges |
 | 1.1.2 | [PR#1682](https://github.com/bbc/psammead/pull/1682) Move all dev dependencies to top level package.json |

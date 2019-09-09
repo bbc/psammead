@@ -3,6 +3,15 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 1.7.9 | [PR#2082](https://github.com/bbc/psammead/pull/2082) Talos - Bump Dependencies - @bbc/psammead-brand, @bbc/psammead-caption, @bbc/psammead-copyright, @bbc/psammead-image-placeholder, @bbc/psammead-inline-link, @bbc/psammead-media-indicator, @bbc/psammead-paragraph, @bbc/psammead-story-promo, @bbc/psammead-timestamp |
+| 1.7.8 | [PR#2081](https://github.com/bbc/psammead/pull/2081) Talos - Bump Dependencies - @bbc/psammead-caption, @bbc/psammead-inline-link, @bbc/psammead-locales, @bbc/psammead-paragraph, @bbc/psammead-story-promo, @bbc/psammead-storybook-helpers, @bbc/psammead-styles, @bbc/psammead-visually-hidden-text |
+| 1.7.9 | [PR#1949](https://github.com/bbc/psammead/pull/1949) Fix alpha version bumping |
+| 1.7.8 | [PR#2017](https://github.com/bbc/psammead/pull/2017) Talos - Bump Dependencies - @bbc/psammead-story-promo |
+| 1.7.7 | [PR#1997](https://github.com/bbc/psammead/pull/1997) Bump psammead-storybook-helper to `6.0.0` |
+| 1.7.6 | [PR#2018](https://github.com/bbc/psammead/pull/2018) Talos - Bump Dependencies - @bbc/psammead-locales |
+| 1.7.5 | [PR#2015](https://github.com/bbc/psammead/pull/2015) Talos - Bump Dependencies - @bbc/psammead-locales |
+| 1.7.4 | [PR#2012](https://github.com/bbc/psammead/pull/2012) Talos - Bump Dependencies - @bbc/psammead-test-helpers |
+| 1.7.3 | [PR#2010](https://github.com/bbc/psammead/pull/2010) Talos - Bump Dependencies |
 | 1.7.2 | [PR#1997](https://github.com/bbc/psammead/pull/1997) Talos - Bump Dependencies |
 | 1.7.1 | [PR#1993](https://github.com/bbc/psammead/pull/1993) Talos - Bump Dependencies |
 | 1.7.0 | [PR#1940](https://github.com/bbc/psammead/pull/1940) Clean up npm scripts |

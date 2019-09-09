@@ -11,8 +11,12 @@ const runExec = ({ command, dir }) => {
             cwd: dir,
           }
         : {},
-      error => {
+      (error, stdout, stderr) => {
         if (error) {
+          /* eslint-disable no-console */
+          console.error(stdout);
+          console.error(stderr);
+          /* eslint-enable no-console */
           reject(error);
         } else {
           resolve();

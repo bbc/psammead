@@ -3,6 +3,9 @@
 <!-- prettier-ignore -->
 | Version | Description |
 | ------- | ----------- |
+| 2.1.10 | [PR#2081](https://github.com/bbc/psammead/pull/2081) Talos - Bump Dependencies - @bbc/psammead-styles |
+| 2.1.9 | [PR#2017](https://github.com/bbc/psammead/pull/2017) Bump psammead-story-promo to 2.7.7 |
+| 2.1.8 | [PR#2014](https://github.com/bbc/psammead/pull/2014) Add padding top to top stories on desktop |
 | 2.1.7 | [PR#1993](https://github.com/bbc/psammead/pull/1993) Talos - Bump Dependencies |
 | 2.1.6 | [PR#1960](https://github.com/bbc/psammead/pull/1960) Change <React.Fragment> to <> | |
 | 2.1.5 | [PR#1942](https://github.com/bbc/psammead/pull/1942) Talos - Bump React to 16.9.0 |

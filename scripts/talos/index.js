@@ -47,23 +47,29 @@ const talos = () => {
         .then(() => commitChanges('Talos - Bump Dependencies'))
         .then(() => createPullRequest({ packages, bumpedPackages, branchName }))
         .then(({ data }) =>
-          bumpedPackagesNoBBCPrefix.forEach((packageName, index) => {
-            const description = 'Talos - Bump Dependencies';
-            const descriptionDetail = bumpedPackagesObj[bumpedPackages[index]]
-              .map(text => text.split(' ')[0])
-              .join(', ');
-            bumpChangelogs({
-              packageNames: [packageName],
-              prLink: data.html_url,
-              changesDescription: `${description} - ${descriptionDetail}`,
-            });
-          }),
+          Promise.all(
+            bumpedPackagesNoBBCPrefix.map((packageName, index) => {
+              const description = 'Talos - Bump Dependencies';
+              const descriptionDetail = bumpedPackagesObj[bumpedPackages[index]]
+                .map(text => text.split(' ')[0])
+                .join(', ');
+              return bumpChangelogs({
+                packageNames: [packageName],
+                prLink: data.html_url,
+                changesDescription: `${description} - ${descriptionDetail}`,
+              });
+            }),
+          ),
         )
         .then(() => commitChanges('Talos - Update changelogs'));
     })
     .catch(e => {
       // eslint-disable-next-line no-console
       console.error(e);
+      // eslint-disable-next-line no-console
+      if (e.stdout) console.error(e.stdout);
+      // eslint-disable-next-line no-console
+      if (e.stderr) console.error(e.stderr);
       process.exit(1);
     });
 };
