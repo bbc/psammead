@@ -1,4 +1,3 @@
-/* eslint-disable func-names */
 const moment = require('moment');
 require('moment/locale/ar');
 
@@ -24,7 +23,6 @@ const dualMonthNames = [
 moment.updateLocale('ar', {
   months: dualMonthNames,
   monthsShort: dualMonthNames,
-  // eslint-disable-next-line object-shorthand
   postformat: function(string) {
     // Suppress conversion to Eastern numerals from base `ar` locale but retain use of Arabic comma
     return string.replace(/,/g, '،');
