@@ -118,7 +118,7 @@
     "yargs-parser": "^11.1.1",
     "yeoman-assert": "^3.1.1",
     "yeoman-environment": "^2.3.4",
-    "yeoman-generator": "^3.2.0",
+    "yeoman-generator": "^4.0.2",
     "yeoman-test": "^2.0.0",
     "yo": "^3.1.0"
   },
