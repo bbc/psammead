@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 1.7.8 | [PR#2081](https://github.com/bbc/psammead/pull/2081) Talos - Bump Dependencies - @bbc/psammead-caption, @bbc/psammead-inline-link, @bbc/psammead-locales, @bbc/psammead-paragraph, @bbc/psammead-story-promo, @bbc/psammead-storybook-helpers, @bbc/psammead-styles, @bbc/psammead-visually-hidden-text |
 | 1.7.9 | [PR#1949](https://github.com/bbc/psammead/pull/1949) Fix alpha version bumping |
 | 1.7.8 | [PR#2017](https://github.com/bbc/psammead/pull/2017) Talos - Bump Dependencies - @bbc/psammead-story-promo |
 | 1.7.7 | [PR#1997](https://github.com/bbc/psammead/pull/1997) Bump psammead-storybook-helper to `6.0.0` |
