@@ -27,6 +27,8 @@ describe(`changeScanner - getChanges`, () => {
         'scripts/getChanges.js',
         'scripts/changeScanner/index.js',
         'psammead/packages/components/README.md',
+        'packages/components/README.md',
+        'packages/README.md',
         '',
       ].join('\n'),
     });
@@ -47,6 +49,8 @@ describe(`changeScanner - getChanges`, () => {
         'scripts/getChanges.js',
         'scripts/changeScanner/index.js',
         'psammead/packages/components/README.md',
+        'packages/components/README.md',
+        'packages/README.md',
       ],
     });
 

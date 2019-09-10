@@ -29,7 +29,9 @@ const getChanges = () => {
   changedFiles.forEach(fileName => {
     const nameParts = fileName.split('/');
 
-    const [packageName, filePath] = fileName.startsWith('packages/')
+    const [packageName, filePath] = validPackageNames.some(name =>
+      fileName.startsWith(`packages/components/${name}`),
+    )
       ? [nameParts[2], nameParts.splice(3).join('/')]
       : [DEFAULT_PACKAGE_NAME, fileName];
 
