@@ -1,4 +1,3 @@
-/* eslint-disable */
 const moment = require('moment');
 require('moment/locale/pa-in');
 

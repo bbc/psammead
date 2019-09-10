@@ -8,6 +8,7 @@ module.exports = {
       'objects': 'only-multiline',
       'arrays': 'only-multiline',
     }],
-    'object-shorthand': ['always']
+    'object-shorthand': ['always'],
+    'no-var':['always']
   },
 };
