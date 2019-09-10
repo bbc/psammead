@@ -1,23 +1,12 @@
 const { exec } = require('shelljs');
-const { readdirSync } = require('fs');
 
 jest.mock('shelljs', () => ({
   exec: jest.fn(),
 }));
 
-jest.mock('fs', () => ({
-  readdirSync: jest.fn(),
-}));
-
 /* eslint-disable global-require */
 describe(`changeScanner - getChanges`, () => {
   beforeEach(() => {
-    readdirSync.mockReturnValue(
-      ['foobar', 'barfoo', 'apples'].map(name => ({
-        name,
-        isDirectory: () => true,
-      })),
-    );
     exec.mockReturnValue({
       stdout: [
         'packages/components/foobar/index.js',
