@@ -36,7 +36,7 @@ describe('pacakge generator', () => {
         tempFiles.map(file => {
           expectedFiles.push(path.join(__dirname, file));
         });
-        shell.exec(`ls -R ${__dirname}`);
+        console.log('testing push');
 
         assert.file(expectedFiles);
         assert.fileContent(
