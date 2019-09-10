@@ -24,6 +24,8 @@ describe(`changeScanner - getChanges`, () => {
         'packages/components/foobar/index.test.js',
         'packages/components/barfoo/package.json',
         'packages/components/apples/dist/package.json',
+        'packages/containers/foo-bar/dist/package.json',
+        'packages/utilities/bar-foo/dist/package.json',
         'scripts/getChanges.js',
         'scripts/changeScanner/index.js',
         'psammead/packages/components/README.md',
@@ -45,6 +47,8 @@ describe(`changeScanner - getChanges`, () => {
       barfoo: ['package.json'],
       foobar: ['index.js', 'index.test.js'],
       apples: ['dist/package.json'],
+      'foo-bar': ['dist/package.json'],
+      'bar-foo': ['dist/package.json'],
       psammead: [
         'scripts/getChanges.js',
         'scripts/changeScanner/index.js',
