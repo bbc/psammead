@@ -9,6 +9,8 @@ module.exports = {
       'arrays': 'only-multiline',
     }],
     'object-shorthand': 0,
-    'no-var':['always']
+    'no-var': 0,
+    'one-var': 0,
+    'func-names': 0,
   },
 };
