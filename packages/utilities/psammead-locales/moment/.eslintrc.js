@@ -9,6 +9,6 @@ module.exports = {
       'arrays': 'only-multiline',
     }],
     'object-shorthand': 0,
-    'no-var': 0
+    'no-var':['always']
   },
 };
