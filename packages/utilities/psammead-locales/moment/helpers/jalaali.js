@@ -8,9 +8,9 @@ function getJalaaliDatetime(gregorianMoment, jalaliMonths) {
     gregorianMoment.month() + 1,
     gregorianMoment.date()
   );
-  const output = `${jalaliDate.jd} ${jalaliMonths[jalaliDate.jm - 1]} ${
-    jalaliDate.jy
-  }`;
+  const output =
+    // eslint-disable-next-line prefer-template
+    jalaliDate.jd + ' ' + jalaliMonths[jalaliDate.jm - 1] + ' ' + jalaliDate.jy;
   return output;
 }
 
@@ -20,9 +20,15 @@ function addJalaliDate(locale, jalaliMonths, jalaliFormats, gregorianString) {
   // gregorianString must be in one of jalaliFormats, and return an isValid moment for
   // Jalali calendar to be applied to - e.g this will exclude timeago timestamps
   if (gregorianMoment.isValid() && jalaliMonths.length === 12) {
-    return `${stringHelper.useEasternNumerals(
-      getJalaaliDatetime(gregorianMoment, jalaliMonths)
-    )} - ${stringHelper.useEasternNumerals(gregorianString)}`;
+    // eslint-disable-next-line prefer-template
+    return (
+      // eslint-disable-next-line prefer-template
+      stringHelper.useEasternNumerals(
+        getJalaaliDatetime(gregorianMoment, jalaliMonths)
+      ) +
+      ' - ' +
+      stringHelper.useEasternNumerals(gregorianString)
+    );
   }
   return gregorianString;
 }
