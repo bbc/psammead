@@ -13,6 +13,8 @@ describe(`changeScanner - getChanges`, () => {
         'packages/components/foobar/index.test.js',
         'packages/components/barfoo/package.json',
         'packages/components/apples/dist/package.json',
+        'scripts/getChanges.js',
+        'scripts/changeScanner/index.js',
         '',
       ].join('\n'),
     });
@@ -29,14 +31,14 @@ describe(`changeScanner - getChanges`, () => {
       barfoo: ['package.json'],
       foobar: ['index.js', 'index.test.js'],
       apples: ['dist/package.json'],
+      psammead: ['scripts/getChanges.js', 'scripts/changeScanner/index.js'],
     });
 
     expect(exec).toHaveBeenCalledTimes(2);
 
     expect(exec).toHaveBeenCalledWith('git fetch --all;', { silent: true });
-    expect(exec).toHaveBeenCalledWith(
-      'git diff --name-only origin/latest ./packages/*/*/*',
-      { silent: true },
-    );
+    expect(exec).toHaveBeenCalledWith('git diff --name-only origin/latest', {
+      silent: true,
+    });
   });
 });

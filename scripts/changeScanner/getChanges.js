@@ -3,9 +3,7 @@ const { exec } = require('shelljs');
 const getChanges = () => {
   exec(`git fetch --all;`, { silent: true });
 
-  // Use ./packages/*/*/* to ensure you only capture
-  // changes in package folders, not readmes outside them
-  const execute = exec(`git diff --name-only origin/latest ./packages/*/*/*`, {
+  const execute = exec(`git diff --name-only origin/latest`, {
     silent: true,
   }).stdout;
 
@@ -15,8 +13,10 @@ const getChanges = () => {
 
   changedFiles.forEach(fileName => {
     const nameParts = fileName.split('/');
-    const packageName = nameParts[2];
-    const filePath = nameParts.splice(3).join('/');
+
+    const [packageName, filePath] = fileName.startsWith('packages/')
+      ? [nameParts[2], nameParts.splice(3).join('/')]
+      : ['psammead', fileName];
 
     (changedPackages[packageName] = changedPackages[packageName] || []).push(
       filePath,
