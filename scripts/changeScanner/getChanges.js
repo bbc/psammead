@@ -1,7 +1,22 @@
 const { exec } = require('shelljs');
+const fs = require('fs');
+const path = require('path');
+
+const DEFAULT_PACKAGE_NAME = 'psammead';
+
+const getPackageFolders = () => {
+  const folders = fs
+    .readdirSync(path.resolve('./packages/components'), {
+      withFileTypes: true,
+    })
+    .filter(f => f.isDirectory());
+  return folders.map(f => f.name);
+};
 
 const getChanges = () => {
   exec(`git fetch --all;`, { silent: true });
+
+  const validPackageNames = getPackageFolders().concat(DEFAULT_PACKAGE_NAME);
 
   const execute = exec(`git diff --name-only origin/latest`, {
     silent: true,
@@ -16,11 +31,14 @@ const getChanges = () => {
 
     const [packageName, filePath] = fileName.startsWith('packages/')
       ? [nameParts[2], nameParts.splice(3).join('/')]
-      : ['psammead', fileName];
+      : [DEFAULT_PACKAGE_NAME, fileName];
 
-    (changedPackages[packageName] = changedPackages[packageName] || []).push(
-      filePath,
-    );
+    const revisedPackageName = validPackageNames.includes(packageName)
+      ? packageName
+      : DEFAULT_PACKAGE_NAME;
+
+    (changedPackages[revisedPackageName] =
+      changedPackages[revisedPackageName] || []).push(filePath);
   });
 
   return changedPackages;

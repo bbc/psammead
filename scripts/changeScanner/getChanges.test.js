@@ -1,12 +1,23 @@
 const { exec } = require('shelljs');
+const { readdirSync } = require('fs');
 
 jest.mock('shelljs', () => ({
   exec: jest.fn(),
 }));
 
+jest.mock('fs', () => ({
+  readdirSync: jest.fn(),
+}));
+
 /* eslint-disable global-require */
 describe(`changeScanner - getChanges`, () => {
   beforeEach(() => {
+    readdirSync.mockReturnValue(
+      ['foobar', 'barfoo', 'apples'].map(name => ({
+        name,
+        isDirectory: () => true,
+      })),
+    );
     exec.mockReturnValue({
       stdout: [
         'packages/components/foobar/index.js',
@@ -15,6 +26,7 @@ describe(`changeScanner - getChanges`, () => {
         'packages/components/apples/dist/package.json',
         'scripts/getChanges.js',
         'scripts/changeScanner/index.js',
+        'psammead/packages/components/README.md',
         '',
       ].join('\n'),
     });
@@ -31,7 +43,11 @@ describe(`changeScanner - getChanges`, () => {
       barfoo: ['package.json'],
       foobar: ['index.js', 'index.test.js'],
       apples: ['dist/package.json'],
-      psammead: ['scripts/getChanges.js', 'scripts/changeScanner/index.js'],
+      psammead: [
+        'scripts/getChanges.js',
+        'scripts/changeScanner/index.js',
+        'psammead/packages/components/README.md',
+      ],
     });
 
     expect(exec).toHaveBeenCalledTimes(2);
