@@ -1,4 +1,3 @@
-/* eslint-disable func-names */
 const moment = require('moment');
 const jalaaliHelper = require('./helpers/jalaali');
 const stringHelper = require('./helpers/stringHelper');
@@ -23,7 +22,6 @@ const persianJalaliMonths = [
 const jalaliFormats = ['D MMMM YYYY', 'LL'];
 
 moment.updateLocale('fa', {
-  // eslint-disable-next-line object-shorthand
   postformat: function(string) {
     const str = jalaaliHelper.addJalaliDate(
       'fa',

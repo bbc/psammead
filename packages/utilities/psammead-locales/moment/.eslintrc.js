@@ -1,16 +1,13 @@
 module.exports = {
-  env: {
-    es6: false,
-    browser: true,
-    jest: true,
-    node: true,
-  },
-  parser: 'babel-eslint',
-  parserOptions: {
-    ecmaVersion: 2009,
-    sourceType: 'module',
-    ecmaFeatures: {
-      jsx: true,
-    },
+  rules: {
+    // IE11 gives syntax error for trailing commas on functions and Moment
+    // locales are not transpiled
+    'comma-dangle': ['error', {
+      'functions': 'never',
+      'imports': 'only-multiline',
+      'objects': 'only-multiline',
+      'arrays': 'only-multiline',
+    }],
+    'object-shorthand': ['always']
   },
 };
