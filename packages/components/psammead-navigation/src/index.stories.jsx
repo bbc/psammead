@@ -154,13 +154,16 @@ const navigationStory = (skipLinkText, currentPageText, navData, brand) =>
     ),
   });
 
-const stories = storiesOf('Components|Navigation/without brand', module)
+const storiesWithoutBrand = storiesOf(
+  'Components|Navigation/without brand',
+  module,
+)
   .addDecorator(withKnobs)
   .addDecorator(dirDecorator);
 
 navStoriesData.map(item => {
   const { title, skipLinkText, currentPageText, data } = item;
-  return stories.add(
+  return storiesWithoutBrand.add(
     title,
     navigationStory(skipLinkText, currentPageText, data),
     {
