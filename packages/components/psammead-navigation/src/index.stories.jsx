@@ -24,7 +24,6 @@ const navStoriesData = [
     skipLinkText: 'Wụga n’ọdịnaya',
     currentPageText: 'Current page',
     data: igboNavData,
-    brand: true,
   },
   {
     title: 'pidgin',
