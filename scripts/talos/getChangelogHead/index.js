@@ -1,9 +1,9 @@
 const path = require('path');
 const getPackagePath = require('../../utilities/getPackagePath');
-const readFile = require('../../utilities/readFile');
+const readFile = require('../../utilities/readFileSync');
 
 const getChangelogHead = publishedPackage => {
-  const packageName = publishedPackage.split(' ')[0];
+  const packageName = publishedPackage.split(' ')[0].replace('@bbc/', '');
   const packageVersions = publishedPackage
     .replace(packageName, '')
     .split('→')
