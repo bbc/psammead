@@ -1,10 +1,14 @@
 /* eslint-disable func-names */
-const moment = require('moment');
-const jalaaliHelper = require('./jalaali');
-const stringHelper = require('./stringHelper');
+var moment = require('moment');
+var jalaaliHelper = require('./jalaali');
+var stringHelper = require('./stringHelper');
 
-const assert = { equal: (val1, val2) => expect(val1).toEqual(val2) };
-const pashtoJalaliFromats = [
+var assert = {
+  equal: function(val1, val2) {
+    return expect(val1).toEqual(val2);
+  },
+};
+var pashtoJalaliFromats = [
   'HH:mm', // LT
   'HH:mm:ss', // LTS
   'DD/MM/YYYY', // L
@@ -13,7 +17,7 @@ const pashtoJalaliFromats = [
   'dddd, D MMMM YYYY HH:mm', // LLLL FROMAT
 ];
 
-const pashtoMonths = [
+var pashtoMonths = [
   'وری',
   'غویی',
   'غبرګولی',
@@ -27,7 +31,7 @@ const pashtoMonths = [
   'سلواغه',
   'کب',
 ];
-const persianMonths = [
+var persianMonths = [
   'فروردین',
   'اردیبهشت',
   'خرداد',
@@ -42,10 +46,10 @@ const persianMonths = [
   'اسفند',
 ];
 
-const gregorianString = '31/01/2019';
+var gregorianString = '31/01/2019';
 
 test('getJalaaliDatetime for pashto locale', function() {
-  const gregorianMonent = moment(
+  var gregorianMonent = moment(
     gregorianString,
     pashtoJalaliFromats,
     'ps',
@@ -60,7 +64,7 @@ test('getJalaaliDatetime for pashto locale', function() {
 });
 
 test('getJalaaliDatetime for persian locale', function() {
-  const gregorianMonent = moment(
+  var gregorianMonent = moment(
     gregorianString,
     pashtoJalaliFromats,
     'fa',
