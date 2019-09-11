@@ -1,11 +1,11 @@
-const moment = require('moment');
+var moment = require('moment');
 require('moment/locale/ar');
 
 // the months have been overridden to maintain arabic dual month names
 // other values in this locale have been left as set upstream
 // see https://github.com/moment/moment/blob/develop/src/locale/ar.js
 
-const dualMonthNames = [
+var dualMonthNames = [
   'يناير/ كانون الثاني',
   'فبراير/ شباط',
   'مارس/ آذار',
