@@ -5,6 +5,7 @@ module.exports = {
   ],
   plugins: ['es5'],
   rules: {
+    'func-names': 0,
     'object-shorthand': 0,
     'vars-on-top': 0,
     'no-var': 0,
