@@ -160,11 +160,11 @@ test('from', function () {
 
 test('suffix', function () {
   assert.equal(moment(30000).from(0), 'ਕੁਝ ਸਕਿੰਟ ਵਿੱਚ', 'prefix');
-  assert.equal(moment(0).from(30000), 'ਕੁਝ ਸਕਿੰਟ ਪਿਛਲੇ', 'suffix');
+  assert.equal(moment(0).from(30000), 'ਕੁਝ ਸਕਿੰਟ ਪਹਿਲਾਂ', 'suffix');
 });
 
 test('now from now', function () {
-  assert.equal(moment().fromNow(), 'ਕੁਝ ਸਕਿੰਟ ਪਿਛਲੇ', 'now from now should display as in the past');
+  assert.equal(moment().fromNow(), 'ਕੁਝ ਸਕਿੰਟ ਪਹਿਲਾਂ', 'now from now should display as in the past');
 });
 
 test('fromNow', function () {

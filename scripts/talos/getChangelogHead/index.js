@@ -1,11 +1,14 @@
 const path = require('path');
 const getPackagePath = require('../../utilities/getPackagePath');
-const readFile = require('../../utilities/readFile');
+const readFile = require('../../utilities/readFileSync');
 
-const getChangelogHead = publishedPackage => {
-  const packageName = publishedPackage.split(' ')[0];
-  const packageVersions = publishedPackage
-    .replace(packageName, '')
+const getPackageName = publishedPackage =>
+  publishedPackage.split(' ')[0].replace('@bbc/', '');
+
+const getPackageVersions = publishedPackage =>
+  publishedPackage
+    .replace(getPackageName(publishedPackage), '')
+    .replace('@bbc/', '')
     .split('→')
     .map(version =>
       version
@@ -14,6 +17,9 @@ const getChangelogHead = publishedPackage => {
         .replace('~', ''),
     );
 
+const getChangelogHead = publishedPackage => {
+  const packageName = getPackageName(publishedPackage);
+  const packageVersions = getPackageVersions(publishedPackage);
   const packagePath = getPackagePath(packageName);
   const changelogLines = readFile(path.join(packagePath, 'CHANGELOG.md')).split(
     '\n',
