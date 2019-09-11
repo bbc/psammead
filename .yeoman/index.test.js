@@ -5,20 +5,21 @@ const shell = require('shelljs');
 
 const componentGenerator = path.join(__dirname, '.');
 const tempDir = path.join(__dirname, './temp');
-const componentDir = './temp/packages/components/psammead-foo-bar-component';
+
 const prompts = {
   name: 'foo-bar-component',
   description: 'This is a test',
   authorName: 'foo bar',
   authorEmail: 'foobar@foobar.com',
 };
-const tempFiles = [
-  `${componentDir}/README.md`,
-  `${componentDir}/package.json`,
-  `${componentDir}/CHANGELOG.md`,
-  `${componentDir}/src/index.jsx`,
-  `${componentDir}/src/index.stories.jsx`,
-  `${componentDir}/src/index.test.jsx`,
+
+const expectedFiles = [
+  `${tempDir}/packages/components/psammead-foo-bar-component/README.md`,
+  `${tempDir}/packages/components/psammead-foo-bar-component/package.json`,
+  `${tempDir}/packages/components/psammead-foo-bar-component/CHANGELOG.md`,
+  `${tempDir}/packages/components/psammead-foo-bar-component/src/index.jsx`,
+  `${tempDir}/packages/components/psammead-foo-bar-component/src/index.stories.jsx`,
+  `${tempDir}/packages/components/psammead-foo-bar-component/src/index.test.jsx`,
 ];
 
 describe('pacakge generator', () => {
@@ -26,22 +27,18 @@ describe('pacakge generator', () => {
     shell.rm('-rf', tempDir);
   });
 
-  it('should generate pacakge with prompts', async () => {
+  it('should generate pacakge with prompts', () => {
     return helpers
       .run(componentGenerator)
       .inDir(tempDir)
       .withPrompts(prompts)
       .then(() => {
-        let expectedFiles = [];
-        tempFiles.map(file => {
-          expectedFiles.push(path.join(__dirname, file));
-        });
-
+        shell.exec(`ls -R ${__dirname}`)
         assert.file(expectedFiles);
         assert.fileContent(
           expectedFiles[3],
           "import React from 'react';\n\nconst FooBarComponent = () => <h1>Hello World</h1>;\n\nexport default FooBarComponent;",
         );
       });
-  }, 30000);
+  }, 50000);
 });
