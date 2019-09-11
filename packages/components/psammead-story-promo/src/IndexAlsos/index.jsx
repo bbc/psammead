@@ -10,7 +10,9 @@ import VisuallyHiddenText from '@bbc/psammead-visually-hidden-text';
 
 const paddingDir = ({ dir }) => `padding-${dir === 'rtl' ? 'left' : 'right'}`;
 
-const StyledIndexAlsos = styled.div`
+const StyledIndexAlsos = styled.div.attrs(() => ({
+  'data-cy': 'index-alsos',
+}))`
   position: relative;
   z-index: 2;
   padding: ${GEL_SPACING_DBL} 0 0;
