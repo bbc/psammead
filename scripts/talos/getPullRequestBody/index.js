@@ -7,6 +7,7 @@ const getDetailsFromPackage = publishedPackages =>
 <details>
 <summary>Details</summary>
 ${publishedPackage}
+
 ${getChangelogHead(publishedPackage)}
 </details>`,
     ),

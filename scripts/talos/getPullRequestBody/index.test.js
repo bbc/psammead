@@ -22,6 +22,7 @@ const expected = `👋 The following packages have been updated:
 <details>
 <summary>Details</summary>
 package1  ^1.3  →  ^1.4
+
 ${changelogHead1}
 </details>
 
@@ -31,12 +32,14 @@ ${changelogHead1}
 <details>
 <summary>Details</summary>
 package1  ^1.3  →  ^1.4
+
 ${changelogHead1}
 </details>
 
 <details>
 <summary>Details</summary>
 package2  ^1.1  →  ^1.3
+
 ${changelogHead2}
 </details>
 
