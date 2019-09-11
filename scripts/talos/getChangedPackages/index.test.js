@@ -24,7 +24,7 @@ describe('getChangedPackages', () => {
     const packages = getChangedPackages();
 
     expect(packages).toEqual(['@bbc/apples', '@bbc/pears']);
-    expect(fs.readFileSync).toHaveBeenCalledWith('published.txt');
+    expect(fs.readFileSync).toHaveBeenCalledWith('published.txt', 'utf8');
   });
 
   it('should remove duplicates', async () => {
@@ -70,6 +70,6 @@ describe('getChangedPackages', () => {
     const packages = getChangedPackages();
 
     expect(packages).toEqual(['@bbc/apples', '@bbc/pears']);
-    expect(fs.readFileSync).toHaveBeenCalledWith('published.txt');
+    expect(fs.readFileSync).toHaveBeenCalledWith('published.txt', 'utf8');
   });
 });
