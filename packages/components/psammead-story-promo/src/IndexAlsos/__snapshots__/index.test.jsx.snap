@@ -89,6 +89,7 @@ exports[`Index Alsos should render multiple correctly 1`] = `
 
 <div
   class="c0"
+  data-cy="index-alsos"
 >
   <h4
     class="c1"
@@ -248,6 +249,7 @@ exports[`Index Alsos should render one correctly 1`] = `
 
 <div
   class="c0"
+  data-cy="index-alsos"
 >
   <h4
     class="c1"
