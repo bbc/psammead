@@ -3,9 +3,6 @@ import styledNormalize from 'styled-normalize';
 import { createGlobalStyle } from 'styled-components';
 import { arrayOf, string } from 'prop-types';
 
-const createFontStyles = fonts =>
-  fonts.reduce((fontStyles, fontStyle) => fontStyles + fontStyle, '');
-
 const boxSizing = `/* Box Sizing https://bit.ly/1A91I0J */
     html {
       box-sizing: border-box;
@@ -20,7 +17,7 @@ const GlobalStyles = createGlobalStyle`
     
     ${boxSizing}
 
-    ${({ fonts }) => fonts ? fonts : null;}
+    ${({ fonts }) => fonts || null}
   `;
 
 GlobalStyles.propTypes = {
