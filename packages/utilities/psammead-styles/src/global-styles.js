@@ -20,7 +20,7 @@ const GlobalStyles = createGlobalStyle`
     
     ${boxSizing}
 
-    ${({ fonts }) => fonts && createFontStyles(fonts)}
+    ${({ fonts }) => fonts ? fonts : null;}
   `;
 
 GlobalStyles.propTypes = {
