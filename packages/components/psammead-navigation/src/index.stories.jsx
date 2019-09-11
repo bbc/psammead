@@ -20,11 +20,10 @@ import notes from '../README.md';
 
 const navStoriesData = [
   {
-    title: 'igbo with Brand',
+    title: 'igbo',
     skipLinkText: 'Wụga n’ọdịnaya',
     currentPageText: 'Current page',
     data: igboNavData,
-    brand: true,
   },
   {
     title: 'pidgin',
@@ -154,17 +153,37 @@ const navigationStory = (skipLinkText, currentPageText, navData, brand) =>
     ),
   });
 
-const stories = storiesOf('Components|Navigation', module)
+const storiesWithoutBrand = storiesOf(
+  'Components|Navigation/without brand',
+  module,
+)
   .addDecorator(withKnobs)
   .addDecorator(dirDecorator);
 
 navStoriesData.map(item => {
-  const { title, skipLinkText, currentPageText, data, brand } = item;
-  return stories.add(
+  const { title, skipLinkText, currentPageText, data } = item;
+  return storiesWithoutBrand.add(
     title,
-    navigationStory(skipLinkText, currentPageText, data, brand),
+    navigationStory(skipLinkText, currentPageText, data),
     {
       notes,
     },
   );
 });
+
+const storiesWithBrand = storiesOf('Components|Navigation/with brand', module)
+  .addDecorator(withKnobs)
+  .addDecorator(dirDecorator);
+
+storiesWithBrand.add(
+  navStoriesData[0].title,
+  navigationStory(
+    navStoriesData[0].skipLinkText,
+    navStoriesData[0].currentPageText,
+    igboNavData,
+    true,
+  ),
+  {
+    notes,
+  },
+);
