@@ -17,11 +17,8 @@ module.exports = {
     'vars-on-top': 0,
     'no-var': 0,
     'one-var':0,
-    'no-block-scoping': 0,
+    'no-block-scoping': 2,
     'no-template-literals': 0,
     'no-nested-ternary':0,
   },
 };
-
-
-
