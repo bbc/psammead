@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 | ------- | ----------- |
+| 2.7.11 | [PR#2040](https://github.com/bbc/psammead/pull/2040) Add `data-cy` attribute for testing Index Alsos in Cypress |
 | 2.7.10 | [PR#2040](https://github.com/bbc/psammead/pull/2040) Fix summary visibility for breakpoints below 1008px |
 | 2.7.9 | [PR#2081](https://github.com/bbc/psammead/pull/2081) Talos - Bump Dependencies - @bbc/psammead-styles |
 | 2.7.8 | [PR#1926](https://github.com/bbc/psammead/pull/1926) Update component storybook to use latest inputProvider changes |
