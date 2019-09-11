@@ -2,10 +2,8 @@ const fs = require('fs');
 
 module.exports = (filePath, canFail) => {
   try {
-    if (fs.existsSync(filePath)) {
-      const contents = fs.readFileSync(filePath);
-      return contents ? contents.toString() : '';
-    }
+    if (fs.existsSync(filePath))
+      return fs.readFileSync(filePath, 'utf8').toString();
   } catch (err) {
     if (canFail) {
       // eslint-disable-next-line no-console
