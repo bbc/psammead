@@ -100,12 +100,16 @@ IndexAlsosLink.defaultProps = {
   mediaType: null,
 };
 
-export const IndexAlsos = ({ children, offScreenText }) => (
-  <StyledIndexAlsos>
-    <VisuallyHiddenText as="h4">{offScreenText}</VisuallyHiddenText>
-    {children}
-  </StyledIndexAlsos>
-);
+export const IndexAlsos = props => {
+  const { offScreenText, children } = props;
+
+  return (
+    <StyledIndexAlsos {...props}>
+      <VisuallyHiddenText as="h4">{offScreenText}</VisuallyHiddenText>
+      {children}
+    </StyledIndexAlsos>
+  );
+};
 
 IndexAlsos.propTypes = {
   children: node.isRequired,
