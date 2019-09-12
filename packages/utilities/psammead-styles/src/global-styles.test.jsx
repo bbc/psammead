@@ -1,5 +1,9 @@
 import React from 'react';
 import { render } from '@testing-library/react/pure';
+import {
+  F_REITH_SANS_REGULAR,
+  F_REITH_SERIF_MEDIUM,
+} from '@bbc/psammead-styles/fonts';
 import GlobalStyles from './global-styles';
 
 const getGlobalStyles = () => {
@@ -15,7 +19,9 @@ describe('global-styles', () => {
   });
 
   it('should handle global-styles with fonts props', () => {
-    render(<GlobalStyles fonts={['font-family: "Sans-Serif"']} />);
+    render(
+      <GlobalStyles fonts={[F_REITH_SANS_REGULAR, F_REITH_SERIF_MEDIUM]} />,
+    );
     const styles = getGlobalStyles();
     expect(styles).toMatchSnapshot();
   });

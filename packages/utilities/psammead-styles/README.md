@@ -93,8 +93,16 @@ This component accepts an optional `fonts` prop which is an array of font styles
 
 ```js
 import GlobalStyles from '@bbc/psammead-styles/global-styles';
+import {
+  F_REITH_SANS_REGULAR,
+  F_REITH_SERIF_MEDIUM,
+} from '@bbc/psammead-styles/fonts';
 
-<GlobalStyles fonts={['font-family: "Sans-Serif"']}/>
+<GlobalStyles fonts={[
+      F_REITH_SANS_REGULAR,
+      F_REITH_SERIF_MEDIUM,
+    ]}
+/>
 ```
 
 ## Contributing
