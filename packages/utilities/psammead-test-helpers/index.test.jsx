@@ -125,6 +125,7 @@ describe('Psammead test helpers', () => {
   testHelpers.shouldMatchSnapshot(
     'should match the snapshot for the test component with helmet only',
     <Helmet htmlAttributes={{ dir: 'rtl', lang: 'fa' }}>
+      <title>Snapshot with helmet only</title>
       <meta name="test name" value="test value" />
       <script src="test.js" />
     </Helmet>,
@@ -134,6 +135,7 @@ describe('Psammead test helpers', () => {
     'should match the snapshot for the test component with helmet and other content',
     <>
       <Helmet htmlAttributes={{ dir: 'rtl', lang: 'fa' }}>
+        <title>Snapshot with helmet and and other content</title>
         <meta name="test name" value="test value" />
         <script src="test.js" />
       </Helmet>

@@ -18,9 +18,12 @@ const renderWithHelmet = async component => {
   const { container } = render(component);
   const noop = () => {};
   const ARBITRARY_TIMEOUT = 100; // seems long enough for any dom mutations to occur
+  const headElement = document.querySelector('head');
+
+  headElement.innerHTML = ''; // clear out head mutations from previous tests
 
   return waitForDomChange({
-    container: document.querySelector('head'),
+    container: headElement,
     timeout: ARBITRARY_TIMEOUT,
   })
     .catch(noop) // handle a waitForDomChange timeout
