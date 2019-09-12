@@ -114,7 +114,7 @@ describe('Psammead test helpers', () => {
   );
 
   testHelpers.shouldMatchSnapshot(
-    'should test all the utility exports exist and are the correct type',
+    'should match the snapshot for the test component',
     <TestComponent />,
   );
 
@@ -130,7 +130,7 @@ describe('Psammead test helpers', () => {
     </>
   );
   testHelpers.shouldMatchSnapshot(
-    'should test all the utility exports exist and are the correct type',
+    'should match the snapshot for the test component with helmet',
     <TestComponentWithHelmet />,
   );
 });
