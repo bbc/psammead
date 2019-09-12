@@ -4,16 +4,11 @@ import deepClone from 'ramda/src/clone';
 
 const renderWithHelmet = async component => {
   /*
- * Similar to this problem https://github.com/testing-library/react-testing-library/issues/402
- * This helper was created to solve the problem of rendering helmet/head contents in snapshots.
- * Pass in a component that uses helmet somewhere in the component tree.
- * The full html tree is rendered and returned which you can then use to snapshot helmet/head contents.
- * Example of use in a test file:
- it('should render correctly', async () => {
-    const html = await renderHelmet(<SomeComponent {...someProps} />);
-    expect(html).toMatchSnapshot();
-  });
- */
+   * Similar to this problem https://github.com/testing-library/react-testing-library/issues/402
+   * This helper was created to solve the problem of rendering helmet/head contents in snapshots.
+   * Pass in a component that uses helmet somewhere in the component tree.
+   * The full html tree is returned which you can then use to snapshot helmet/head contents.
+   */
 
   const { container } = render(component);
   const noop = () => {};
