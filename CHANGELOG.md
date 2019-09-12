@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 1.7.12 | [PR#2080](https://github.com/bbc/psammead/pull/2080) Bump @bbc/psammead-locales in use of es5 |
 | 1.7.11 | [PR#2090](https://github.com/bbc/psammead/pull/2090) Talos - Bump Dependencies - @bbc/psammead-locales |
 | 1.7.10 | [PR#2083](https://github.com/bbc/psammead/pull/2083) Talos - Bump Dependencies - babel-eslint, eslint, eslint-config-prettier, github-api, husky, lint-staged, storybook-chromatic |
 | 1.7.10 | [PR#2084](https://github.com/bbc/psammead/pull/2084) Talos - Bump Dependencies - @bbc/psammead-story-promo |
