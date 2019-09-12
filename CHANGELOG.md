@@ -3,7 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
-| 1.7.13 | [PR#2111](https://github.com/bbc/psammead/pull/2111) Talos - Bump Dependencies - @bbc/psammead-locales |
+| 1.7.14 | [PR#2111](https://github.com/bbc/psammead/pull/2111) Talos - Bump Dependencies - @bbc/psammead-locales |
 | 1.7.13 | [PR#2080](https://github.com/bbc/psammead/pull/2080) Add 'eslint-plugin-es5' for use in @bbc/psammead-locales |
 | 1.7.13 | [PR#2090](https://github.com/bbc/psammead/pull/2090) Talos - Bump Dependencies - @bbc/psammead-locales |
 | 1.7.12 | [PR#1967](https://github.com/bbc/psammead/issues/1967) Expand changeScanner to cover base level packages |
