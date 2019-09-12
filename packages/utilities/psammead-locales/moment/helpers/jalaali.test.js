@@ -1,4 +1,3 @@
-/* eslint-disable func-names */
 var moment = require('moment');
 var jalaaliHelper = require('./jalaali');
 var stringHelper = require('./stringHelper');

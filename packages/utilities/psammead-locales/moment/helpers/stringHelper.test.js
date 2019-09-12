@@ -1,4 +1,3 @@
-/* eslint-disable func-names */
 var stringHelper = require('./stringHelper');
 
 var assert = {

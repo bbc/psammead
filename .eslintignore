@@ -3,3 +3,5 @@ packages/**/dist
 packages/**/esm
 
 packages/utilities/moment-timezone-include/tz
+packages/utilities/psammead-locales/moment/index.stories.jsx
+packages/utilities/psammead-locales/moment/*.test.js
