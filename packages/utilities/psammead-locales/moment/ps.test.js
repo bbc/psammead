@@ -1,4 +1,3 @@
-/* eslint-disable */
 import moment from 'moment';
 import './ps';
 
