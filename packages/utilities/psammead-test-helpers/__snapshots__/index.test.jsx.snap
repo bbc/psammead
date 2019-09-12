@@ -29,8 +29,8 @@ exports[`Psammead test helpers should match the snapshot for the test component 
       Snapshot with helmet and and other content
     </title>
     <meta
+      content="test content"
       name="test name"
-      value="test value"
     />
     <script
       src="test.js"
@@ -58,8 +58,8 @@ exports[`Psammead test helpers should match the snapshot for the test component 
       Snapshot with helmet only
     </title>
     <meta
+      content="test content"
       name="test name"
-      value="test value"
     />
     <script
       src="test.js"
