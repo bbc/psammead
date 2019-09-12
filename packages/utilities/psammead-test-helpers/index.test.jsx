@@ -107,18 +107,31 @@ describe('Psammead test helpers', () => {
     );
   });
 
-  const TestComponent = () => (
-    <div>
+  testHelpers.shouldMatchSnapshot(
+    'should match the snapshot for the test component',
+    <main>
       <h1>Hello I am a test component</h1>
-    </div>
+    </main>,
   );
 
   testHelpers.shouldMatchSnapshot(
     'should match the snapshot for the test component',
-    <TestComponent />,
+    <>
+      <h1>Hello I am a test component</h1>
+      <p>I am some test text.</p>
+    </>,
   );
 
-  const TestComponentWithHelmet = () => (
+  testHelpers.shouldMatchSnapshot(
+    'should match the snapshot for the test component with helmet only',
+    <Helmet htmlAttributes={{ dir: 'rtl', lang: 'fa' }}>
+      <meta name="test name" value="test value" />
+      <script src="test.js" />
+    </Helmet>,
+  );
+
+  testHelpers.shouldMatchSnapshot(
+    'should match the snapshot for the test component with helmet and other content',
     <>
       <Helmet htmlAttributes={{ dir: 'rtl', lang: 'fa' }}>
         <meta name="test name" value="test value" />
@@ -127,10 +140,6 @@ describe('Psammead test helpers', () => {
       <main>
         <h1>Hello I am a test component with React Helmet</h1>
       </main>
-    </>
-  );
-  testHelpers.shouldMatchSnapshot(
-    'should match the snapshot for the test component with helmet',
-    <TestComponentWithHelmet />,
+    </>,
   );
 });
