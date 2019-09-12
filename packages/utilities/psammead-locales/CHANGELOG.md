@@ -3,7 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 | ------- | ----------- |
-| 2.3.0 | [PR#???](https://github.com/bbc/psammead/pull/2088) Add `hi` (Hindi) locale |
+| 2.3.0 | [PR#2110](https://github.com/bbc/psammead/pull/2088) Add `hi` (Hindi) locale |
 | 2.2.5 | [PR#2088](https://github.com/bbc/psammead/pull/2088) Another Persian locale IE11 compatibility fix |
 | 2.2.4 | [PR#2087](https://github.com/bbc/psammead/pull/2087) Bumped jalaali-js |
 | 2.2.3 | [PR#2048](https://github.com/bbc/psammead/pull/2048) Import `pa-in` locale to be updated |
