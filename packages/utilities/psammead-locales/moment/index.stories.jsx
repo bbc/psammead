@@ -17,6 +17,7 @@ import './pcm';
 import './ps';
 import './yo';
 import './pa-in';
+import './hi';
 
 const stories = storiesOf('Utilities|Psammead Locales', module);
 
@@ -28,6 +29,7 @@ const locales = [
   { name: 'Pidgin', locale: 'pcm' },
   { name: 'Yoruba', locale: 'yo' },
   { name: 'Punjabi', locale: 'pa-in' },
+  { name: 'Hindi', locale: 'hi' },
 ];
 
 /* eslint-disable prettier/prettier */
