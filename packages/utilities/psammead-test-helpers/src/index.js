@@ -25,9 +25,9 @@ const renderWithHelmet = async component => {
   })
     .catch(noop) // handle a waitForDomChange timeout
     .then(mutationsList => {
-      const domMutationDetected = mutationsList && mutationsList.length;
+      const headMutationDetected = mutationsList && mutationsList.length;
 
-      if (domMutationDetected) {
+      if (headMutationDetected) {
         // helmet was probably used so we should get the full html
 
         const htmlElement = document.querySelector('html');
