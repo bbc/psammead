@@ -3,7 +3,7 @@ import { shouldMatchSnapshot } from '@bbc/psammead-test-helpers';
 import * as svgs from './svgs';
 
 Object.keys(svgs)
-  .filter(svgName => svgName !== 'BBC_BLOCKS')
+  .filter(svgName => svgName !== 'BBC_BLOCKS' && svgName !== 'icons')
   .forEach(svgName => {
     describe(`${svgName} SVG`, () => {
       shouldMatchSnapshot(
