@@ -4,6 +4,7 @@
 | Version | Description |
 | ------- | ----------- |
 | 2.4.0 | [PR#2110](https://github.com/bbc/psammead/pull/2088) Add `hi` (Hindi) locale |
+| 2.3.0 | [PR#2080](https://github.com/bbc/psammead/pull/2080) Add an eslintrc config file to cater for IE11 compatibility issues |
 | 2.2.7 | [PR#2094](https://github.com/bbc/psammead/pull/2094) Fix for Punjabi (`pa-in`) locale spelling of ago |
 | 2.2.6 | [PR#1933](https://github.com/bbc/psammead/pull/1933) Stories now used fixed timestamp |
 | 2.2.5 | [PR#2088](https://github.com/bbc/psammead/pull/2088) Another Persian locale IE11 compatibility fix |
