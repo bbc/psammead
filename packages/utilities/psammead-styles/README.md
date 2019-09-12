@@ -10,6 +10,8 @@ This package provides a collection of string constants for use in CSS, containin
 
 `/font-styles` provides functions that can be used to get font-styles for different services. If a font-style is not available all the functions will fallback to regular sans font-style of the service.
 
+`/global-styles` Provides project-defined global styles defined using `styled-normalize` and box sizing.
+
 ## Installation
 
 ```jsx
@@ -82,6 +84,17 @@ const someGridUsingComponent = css`
 
   /* fallback CSS */
 `;
+```
+
+### global-styles
+
+We export a global styles component which uses `styled-normalize` and defines css rules for `box-sizing`. 
+This component accepts an optional `fonts` prop which is an array of font styles to be applied in the global styles.
+
+```js
+import GlobalStyles from '@bbc/psammead-styles/global-styles';
+
+<GlobalStyles fonts={['font-family: "Sans-Serif"']}/>
 ```
 
 ## Contributing

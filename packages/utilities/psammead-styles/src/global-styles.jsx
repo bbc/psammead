@@ -17,7 +17,9 @@ const GlobalStyles = createGlobalStyle`
     
     ${boxSizing}
 
-    ${({ fonts }) => fonts || null}
+    html{
+      ${({ fonts }) => fonts || null}
+    }
   `;
 
 GlobalStyles.propTypes = {
