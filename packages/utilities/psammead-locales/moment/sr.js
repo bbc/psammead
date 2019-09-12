@@ -1,4 +1,4 @@
-const moment = require('moment');
+var moment = require('moment');
 require('moment/locale/sr');
 
 moment.updateLocale('sr', {

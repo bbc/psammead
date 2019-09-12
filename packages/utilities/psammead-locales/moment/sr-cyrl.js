@@ -1,7 +1,7 @@
-const moment = require('moment');
+var moment = require('moment');
 require('moment/locale/sr-cyrl');
 
-moment.updateLocale('sr', {
+moment.updateLocale('sr-cyrl', {
   longDateFormat: {
     LL: 'D MMMM YYYY',
     LLL: 'D MMMM YYYY H:mm',
