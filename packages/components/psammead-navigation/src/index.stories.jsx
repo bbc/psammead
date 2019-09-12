@@ -122,6 +122,7 @@ const navigationStory = (skipLinkText, currentPageText, navData, brand) =>
           script={script}
           skipLinkText={skipLinkText}
           service={service}
+          dir={dir}
         >
           <NavigationUl>
             {navData.map((item, index) => {
@@ -133,7 +134,6 @@ const navigationStory = (skipLinkText, currentPageText, navData, brand) =>
                   key={title}
                   url={url}
                   script={script}
-                  dir={dir}
                   active={active}
                   currentPageText={currentPageText}
                   service={service}
