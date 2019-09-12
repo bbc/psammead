@@ -28,5 +28,8 @@
   ],
   "dependencies": {
     "jest-styled-components": "^6.3.3"
+  },
+  "devDependencies": {
+    "react-helmet": "^5.2.1"
   }
 }

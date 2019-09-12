@@ -1,3 +1,5 @@
+import React from 'react';
+import Helmet from 'react-helmet';
 import * as testHelpers from '.';
 import * as testHelpersFromSrc from './src/index';
 
@@ -104,4 +106,31 @@ describe('Psammead test helpers', () => {
       testHelpersFromSrc.testUtilityPackages,
     );
   });
+
+  const TestComponent = () => (
+    <div>
+      <h1>Hello I am a test component</h1>
+    </div>
+  );
+
+  testHelpers.shouldMatchSnapshot(
+    'should test all the utility exports exist and are the correct type',
+    <TestComponent />,
+  );
+
+  const TestComponentWithHelmet = () => (
+    <>
+      <Helmet htmlAttributes={{ dir: 'rtl', lang: 'fa' }}>
+        <meta name="test name" value="test value" />
+        <script src="test.js" />
+      </Helmet>
+      <main>
+        <h1>Hello I am a test component with React Helmet</h1>
+      </main>
+    </>
+  );
+  testHelpers.shouldMatchSnapshot(
+    'should test all the utility exports exist and are the correct type',
+    <TestComponentWithHelmet />,
+  );
 });

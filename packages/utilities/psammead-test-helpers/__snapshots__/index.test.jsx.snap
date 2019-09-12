@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Psammead test helpers should test all the utility exports exist and are the correct type 1`] = `
+<div>
+  <h1>
+    Hello I am a test component
+  </h1>
+</div>
+`;
+
+exports[`Psammead test helpers should test all the utility exports exist and are the correct type 2`] = `
+<html
+  dir="rtl"
+  lang="fa"
+>
+  <head>
+    <meta
+      name="test name"
+      value="test value"
+    />
+    <script
+      src="test.js"
+    />
+  </head>
+  <body>
+    <div>
+      <main>
+        <h1>
+          Hello I am a test component with React Helmet
+        </h1>
+      </main>
+    </div>
+  </body>
+</html>
+`;
