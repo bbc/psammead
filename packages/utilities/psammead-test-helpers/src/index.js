@@ -1,12 +1,60 @@
-import { render } from '@testing-library/react';
+import { render, waitForDomChange } from '@testing-library/react';
 import 'jest-styled-components';
 import deepClone from 'ramda/src/clone';
 
+const renderWithHelmet = async component => {
+  /*
+ * Similar to this problem https://github.com/testing-library/react-testing-library/issues/402
+ * This helper was created to solve the problem of rendering helmet/head contents in snapshots.
+ * Pass in a component that uses helmet somewhere in the component tree.
+ * The full html tree is rendered and returned which you can then use to snapshot helmet/head contents.
+ * Example of use in a test file:
+ it('should render correctly', async () => {
+    const html = await renderHelmet(<SomeComponent {...someProps} />);
+    expect(html).toMatchSnapshot();
+  });
+ */
+
+  const { container } = render(component);
+  const noop = () => {};
+  const ARBITRARY_TIMEOUT = 100; // seems long enough for any dom mutations to occur
+
+  return waitForDomChange({
+    container: document.querySelector('head'),
+    timeout: ARBITRARY_TIMEOUT,
+  })
+    .catch(noop) // handle a waitForDomChange timeout
+    .then(mutationsList => {
+      const domMutationDetected = mutationsList && mutationsList.length;
+
+      if (domMutationDetected) {
+        // helmet was probably used so we should get the full html
+
+        const htmlElement = document.querySelector('html');
+
+        const helmetElements = document.querySelectorAll(
+          '[data-react-helmet="true"]',
+        );
+
+        const removeHelmetAttributes = el =>
+          el.removeAttribute('data-react-helmet'); // remove react-helmet attribute noise from elements
+
+        removeHelmetAttributes(htmlElement); // remove react-helmet attribute noise from elements
+
+        Array.from(helmetElements).forEach(removeHelmetAttributes);
+
+        return { container: document.querySelector('html') };
+      }
+
+      return { container };
+    });
+};
+
 export const shouldMatchSnapshot = (title, component) => {
-  it(title, () => {
+  it(title, async () => {
     // select the first child to remove the pointless wrapping div from snapshots
     const removeWrappingDiv = container => container.firstChild;
-    const { container } = render(component);
+    const { container } = await renderWithHelmet(component);
     const hasOneChild = container.children.length === 1;
     /*
      * if the container has more than one child then it's a component that uses a
