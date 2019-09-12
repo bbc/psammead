@@ -70,6 +70,9 @@ On the other hand, when there is exactly one Index Also, it should use the `Inde
 | children | node | yes      | N/A     | `<IndexAlsosUl><IndexAlsosLi script={latin} service="news" url="https://www.bbc.co.uk/news" mediaIndicator={<MediaIndicator service="news" type="video" indexAlsos/>}>Related content 1</IndexAlsosLi><IndexAlsosLi script={latin} service="news" url="https://www.bbc.co.uk/news">Related content 2</IndexAlsosLi></IndexAlsosUl>`|
 | offScreenText | string | no | null | `Related content` |
 
+
+Data attributes, such as `data-e2e` can be passed in for testing as well.
+
 #### IndexAlsoUl Props
 
 <!-- prettier-ignore -->
