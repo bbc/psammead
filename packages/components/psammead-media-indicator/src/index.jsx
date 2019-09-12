@@ -6,7 +6,7 @@ import { GEL_SPACING, GEL_SPACING_HLF } from '@bbc/gel-foundations/spacings';
 import { GEL_GROUP_1_SCREEN_WIDTH_MAX } from '@bbc/gel-foundations/breakpoints';
 import { GEL_MINION } from '@bbc/gel-foundations/typography';
 import { getSansRegular } from '@bbc/psammead-styles/font-styles';
-import mediaIcons from './mediaIcons';
+import { icons } from '@bbc/psammead-assets/svgs';
 
 const MediaIndicatorWrapper = styled.div`
   padding: ${GEL_SPACING} ${GEL_SPACING_HLF};
@@ -54,7 +54,7 @@ const MediaIndicator = ({
 }) =>
   indexAlsos ? (
     <IndexAlsosMediaIndicator aria-hidden="true">
-      {mediaIcons[type]}
+      {icons[type]}
     </IndexAlsosMediaIndicator>
   ) : (
     <MediaIndicatorWrapper
@@ -63,7 +63,7 @@ const MediaIndicator = ({
       service={service}
     >
       <FlexWrapper>
-        {mediaIcons[type]}
+        {icons[type]}
         {duration && datetime && (
           <TimeDuration dateTime={datetime}>{duration}</TimeDuration>
         )}
