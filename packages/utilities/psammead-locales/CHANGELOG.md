@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 | ------- | ----------- |
+| 2.2.8 | [PR#2094](https://github.com/bbc/psammead/pull/2094) Add some overrides for Brazil, Russia, Serbia and Ukrania |
 | 2.2.7 | [PR#2094](https://github.com/bbc/psammead/pull/2094) Fix for Punjabi (`pa-in`) locale spelling of ago |
 | 2.2.6 | [PR#1933](https://github.com/bbc/psammead/pull/1933) Stories now used fixed timestamp |
 | 2.2.5 | [PR#2088](https://github.com/bbc/psammead/pull/2088) Another Persian locale IE11 compatibility fix |

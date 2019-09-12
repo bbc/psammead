@@ -13,21 +13,31 @@ import notes from '../README.md';
 import './ar';
 import './fa';
 import './ig';
+import './pa-in';
 import './pcm';
 import './ps';
+import './pt-br';
+import './ru';
+import './sr';
+import './sr-cyrl';
+import './uk';
 import './yo';
-import './pa-in';
 
 const stories = storiesOf('Utilities|Psammead Locales', module);
 
 const locales = [
   { name: 'Arabic', locale: 'ar' },
+  { name: 'Brasil', locale: 'pt-br' },
   { name: 'Igbo', locale: 'ig' },
   { name: 'Pashto', locale: 'ps' },
   { name: 'Persian', locale: 'fa' },
   { name: 'Pidgin', locale: 'pcm' },
-  { name: 'Yoruba', locale: 'yo' },
   { name: 'Punjabi', locale: 'pa-in' },
+  { name: 'Russian', locale: 'ru' },
+  { name: 'Serbian', locale: 'sr' },
+  { name: 'Serbian Cyrillic', locale: 'sr-cyrl' },
+  { name: 'Ukrainian', locale: 'uk' },
+  { name: 'Yoruba', locale: 'yo' },
 ];
 
 // Fixed timestamp for 27 August 2019, 14:54 BST
