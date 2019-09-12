@@ -1,10 +1,9 @@
-/* eslint-disable func-names */
-const moment = require('moment');
-const jalaaliHelper = require('./helpers/jalaali');
-const stringHelper = require('./helpers/stringHelper');
+var moment = require('moment');
+var jalaaliHelper = require('./helpers/jalaali');
+var stringHelper = require('./helpers/stringHelper');
 require('moment/locale/fa');
 
-const persianJalaliMonths = [
+var persianJalaliMonths = [
   'فروردین',
   'اردیبهشت',
   'خرداد',
@@ -20,12 +19,11 @@ const persianJalaliMonths = [
 ];
 
 // Moment formats that should have the Jalali date added
-const jalaliFormats = ['D MMMM YYYY', 'LL'];
+var jalaliFormats = ['D MMMM YYYY', 'LL'];
 
 moment.updateLocale('fa', {
-  // eslint-disable-next-line object-shorthand
   postformat: function(string) {
-    const str = jalaaliHelper.addJalaliDate(
+    var str = jalaaliHelper.addJalaliDate(
       'fa',
       persianJalaliMonths,
       jalaliFormats,

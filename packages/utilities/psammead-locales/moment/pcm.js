@@ -1,4 +1,4 @@
-const moment = require('moment');
+var moment = require('moment');
 
 moment.defineLocale('pcm', {
   // eslint-disable-next-line prettier/prettier
@@ -43,13 +43,13 @@ moment.defineLocale('pcm', {
   dayOfMonthOrdinalParse: /\d{1,2}(st|nd|rd|th)/,
   /* eslint-disable */
   // Copied exactly from https://github.com/moment/moment/blob/develop/locale/en-gb.js#L50-L57
-  ordinal : function (number) {
-      var b = number % 10,
-          output = (~~(number % 100 / 10) === 1) ? 'th' :
-          (b === 1) ? 'st' :
+  ordinal: function (number) {
+    var b = number % 10,
+      output = (~~(number % 100 / 10) === 1) ? 'th' :
+        (b === 1) ? 'st' :
           (b === 2) ? 'nd' :
-          (b === 3) ? 'rd' : 'th';
-      return number + output;
+            (b === 3) ? 'rd' : 'th';
+    return number + output;
   },
   week: {
     dow: 1, // Monday is the first day of the week.

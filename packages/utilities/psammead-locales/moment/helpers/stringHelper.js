@@ -1,5 +1,5 @@
 /* eslint-disable func-names */
-const symbolMap = {
+var symbolMap = {
   '1': '۱',
   '2': '۲',
   '3': '۳',
