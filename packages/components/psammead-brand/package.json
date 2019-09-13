@@ -20,8 +20,10 @@
   "homepage": "https://github.com/bbc/psammead/blob/latest/packages/components/psammead-brand/README.md",
   "dependencies": {
     "@bbc/gel-foundations": "^3.3.3",
-    "@bbc/psammead-styles": "^2.1.4",
     "@bbc/psammead-visually-hidden-text": "^1.2.2"
+  },
+  "devDependencies": {
+    "@bbc/psammead-styles": "^2.1.4"
   },
   "peerDependencies": {
     "react": "^16.9.0",
