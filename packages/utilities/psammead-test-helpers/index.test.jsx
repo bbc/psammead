@@ -122,11 +122,12 @@ describe('Psammead test helpers', () => {
   );
 
   it('should render the snapshot correctly for components not using helmet', async () => {
-    const actual = await renderWithHelmet(<NoHelmetWithFragment />);
+    const actual = await renderWithHelmet(<NoHelmet />);
     const expected = serializeDomString(`
     <div>
-      <h1>Hello I am a test component</h1>
-      <p>I am some test text.</p>
+      <main>
+        <h1>Hello I am a test component</h1>
+      </main>
     </div>
     `);
 
