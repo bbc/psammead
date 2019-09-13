@@ -4,7 +4,7 @@
 
 The `Brand` component provides the BBC service logo (as SVG), nested inside a styled link and div. The link is currently hardcoded to "https://www.bbc.co.uk/news".
 
-`Brand` takes a `product`, `svgHeight`, `minWidth`, `maxWidth`, `url`, `serviceLocalisedName` and `svg` as props.
+`Brand` takes a `product`, `svgHeight`, `minWidth`, `maxWidth`, `url`, `serviceLocalisedName`, `backgroundColour`, `logoColour` and `svg` as props.
 
 The `product` is passed to a [VisuallyHiddenText](https://github.com/bbc/psammead/tree/latest/packages/components/VisuallyHiddenText) component, nested inside Brand.
 
@@ -15,6 +15,8 @@ The `svg` prop must contain a `group`, `viewbox` values and a `ratio`, which is 
 The `minWidth` and `maxWidth` values are required to allow the ability for the `svg` element to dynamically scale as the viewport becomes a very small size EG: feature phones.
 
 The `svgHeight` value acts as a placeholder for the `svg` element meaning the overall banner height does not change with the dynamic scaling, also the `height` allows the contents of the `svg` element to remain vertically centred within the banner at all times.
+
+The `backgroundColour` is the background colour and `logoColour` is the colour of the SVG and the underline when hovering/focusing on the brand. 
 
 The `url` value is the link that points to the frontpage of the service associated with the `svg`.
 
@@ -48,6 +50,7 @@ When using `Brand` in the header, you should ensure that `borderBottom` prop is 
 ```jsx
 import Brand from '@bbc/psammead-brand';
 import { igbo } from '@bbc/psammead-assets/svgs';
+import { C_POSTBOX, C_WHITE } from '@bbc/psammead-styles/colours';
 
 const Header = (product, serviceName) => (
   <header role="banner">
@@ -59,6 +62,8 @@ const Header = (product, serviceName) => (
       minWidth={180}
       svg={igbo}
       url="https://www.bbc.co.uk/news"
+      backgroundColour={backgroundColour}
+      logoColour={logoColour}
       borderBottom
     />
   </header>
