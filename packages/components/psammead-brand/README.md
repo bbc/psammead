@@ -32,6 +32,8 @@ The `url` value is the link that points to the frontpage of the service associat
 | minWidth | Number | yes | N/A | `240` |
 | maxWidth | Number | yes | N/A | `380` |
 | svg | Object | yes | N/A | { group: `(<g fillrule="evenodd"><path d="M84.32" /></g>)`, viewbox: { height: 24, width: 167.95 }, ratio: 6.9979 } |
+| backgroundColour | string | yes | N/A | `${C_POSTBOX}` or relevant string hex code |
+| logoColour | string | yes | N/A | `${C_WHITE}` or relevant string hex code |
 | url | String | no | N/A | `https://www.bbc.co.uk/news` |
 | serviceLocalisedName | String | no | N/A | `'Yoruba'` |
 | borderTop | bool | no | `false` | `true` |

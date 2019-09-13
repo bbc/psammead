@@ -1,7 +1,8 @@
 import React from 'react';
 import { shouldMatchSnapshot } from '@bbc/psammead-test-helpers';
 import { render } from '@testing-library/react';
-import Brand from './index';
+import { C_POSTBOX, C_WHITE } from '@bbc/psammead-styles/colours';
+import Brand from '.';
 
 const svg = {
   group: (
@@ -27,6 +28,8 @@ describe('Brand', () => {
       minWidth={180}
       svg={svg}
       url="https://www.bbc.co.uk/news"
+      backgroundColour={C_POSTBOX}
+      logoColour={C_WHITE}
     />,
   );
 
@@ -39,6 +42,8 @@ describe('Brand', () => {
       svgHeight={24}
       maxWidth={280}
       minWidth={180}
+      backgroundColour={C_POSTBOX}
+      logoColour={C_WHITE}
     />,
   );
 
@@ -50,6 +55,8 @@ describe('Brand', () => {
       svgHeight={24}
       maxWidth={280}
       minWidth={180}
+      backgroundColour={C_POSTBOX}
+      logoColour={C_WHITE}
     />,
   );
 
@@ -63,6 +70,8 @@ describe('Brand', () => {
       minWidth={180}
       borderTop
       borderBottom
+      backgroundColour={C_POSTBOX}
+      logoColour={C_WHITE}
     />,
   );
 
@@ -77,6 +86,8 @@ describe('Brand', () => {
           minWidth={180}
           svg={svg}
           url="https://www.bbc.co.uk/news"
+          backgroundColour={C_POSTBOX}
+          logoColour={C_WHITE}
         />,
       );
 
@@ -94,6 +105,8 @@ describe('Brand', () => {
           minWidth={180}
           svg={svg}
           url="https://www.bbc.co.uk/news"
+          backgroundColour={C_POSTBOX}
+          logoColour={C_WHITE}
         />,
       );
 
