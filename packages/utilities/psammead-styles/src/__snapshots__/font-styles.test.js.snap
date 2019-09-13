@@ -224,6 +224,14 @@ exports[`should render SansBold correctly for russian 1`] = `
   "
 `;
 
+exports[`should render SansBold correctly for scotland 1`] = `
+"
+   font-family: ReithSans, Helvetica, Arial, sans-serif;
+   font-weight: 700;
+   font-style: normal;
+  "
+`;
+
 exports[`should render SansBold correctly for serbian 1`] = `
 "
     font-family: Helmet, Freesans, Helvetica, Arial, sans-serif;
@@ -572,6 +580,14 @@ exports[`should render SansBoldItalic correctly for russian 1`] = `
 "
     font-family: Helmet, Freesans, Helvetica, Arial, sans-serif;
     font-weight: 700;
+   font-style: italic;
+  "
+`;
+
+exports[`should render SansBoldItalic correctly for scotland 1`] = `
+"
+   font-family: ReithSans, Helvetica, Arial, sans-serif;
+   font-weight: 700;
    font-style: italic;
   "
 `;
@@ -928,6 +944,14 @@ exports[`should render SansRegular correctly for russian 1`] = `
   "
 `;
 
+exports[`should render SansRegular correctly for scotland 1`] = `
+"
+   font-family: ReithSans, Helvetica, Arial, sans-serif;
+   font-weight: 400;
+   font-style: normal; 
+  "
+`;
+
 exports[`should render SansRegular correctly for serbian 1`] = `
 "
     font-family: Helmet, Freesans, Helvetica, Arial, sans-serif;
@@ -1280,6 +1304,14 @@ exports[`should render SansRegularItalic correctly for russian 1`] = `
   "
 `;
 
+exports[`should render SansRegularItalic correctly for scotland 1`] = `
+"
+   font-family: ReithSans, Helvetica, Arial, sans-serif;
+   font-weight: 400;
+   font-style: italic; 
+  "
+`;
+
 exports[`should render SansRegularItalic correctly for serbian 1`] = `
 "
     font-family: Helmet, Freesans, Helvetica, Arial, sans-serif;
@@ -1627,6 +1659,14 @@ exports[`should render SerifBold correctly for punjabi 1`] = `
 exports[`should render SerifBold correctly for russian 1`] = `
 "
     font-family: Helmet, Freesans, Helvetica, Arial, sans-serif;
+    font-weight: 700;
+   font-style: normal;
+  "
+`;
+
+exports[`should render SerifBold correctly for scotland 1`] = `
+"
+    font-family: ReithSerif, Helvetica, Arial, sans-serif;
     font-weight: 700;
    font-style: normal;
   "
@@ -1984,6 +2024,14 @@ exports[`should render SerifMedium correctly for russian 1`] = `
   "
 `;
 
+exports[`should render SerifMedium correctly for scotland 1`] = `
+"
+   font-family: ReithSerif, Helvetica, Arial, sans-serif;
+   font-weight: 500;
+   font-style: normal; 
+  "
+`;
+
 exports[`should render SerifMedium correctly for serbian 1`] = `
 "
     font-family: Helmet, Freesans, Helvetica, Arial, sans-serif;
@@ -2336,6 +2384,14 @@ exports[`should render SerifMediumItalic correctly for russian 1`] = `
   "
 `;
 
+exports[`should render SerifMediumItalic correctly for scotland 1`] = `
+"
+   font-family: ReithSerif, Helvetica, Arial, sans-serif;
+   font-weight: 500;
+   font-style: italic;
+  "
+`;
+
 exports[`should render SerifMediumItalic correctly for serbian 1`] = `
 "
     font-family: Helmet, Freesans, Helvetica, Arial, sans-serif;
@@ -2684,6 +2740,14 @@ exports[`should render SerifRegular correctly for russian 1`] = `
 "
     font-family: Helmet, Freesans, Helvetica, Arial, sans-serif;
     font-weight: 400;
+   font-style: normal;
+  "
+`;
+
+exports[`should render SerifRegular correctly for scotland 1`] = `
+"
+   font-family: ReithSerif, Helvetica, Arial, sans-serif;
+   font-weight: 400;
    font-style: normal;
   "
 `;
