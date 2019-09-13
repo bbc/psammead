@@ -186,20 +186,12 @@ export const NavigationLi = ({
 const StyledNav = styled.nav`
   background-color: ${C_POSTBOX};
 
-  ${StyledListItem} {
-    ${({ dir }) =>
-      dir === 'ltr'
-        ? css`
-            &::after {
-              left: 0;
-            }
-          `
-        : css`
-            &::after {
-              right: 0;
-            }
-          `}
-  }
+  ${StyledListItem} {    
+    ${({ dir }) => css`
+      &::after {
+        ${dir === 'ltr' ? 'left' : 'right'}: 0;
+      }
+    `}
 `;
 
 const Navigation = ({ children, script, skipLinkText, service, dir }) => (
