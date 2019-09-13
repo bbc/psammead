@@ -798,6 +798,7 @@ exports[`StoryPromo - Top Story should render with multiple Index Alsos correctl
     </time>
     <div
       class="c7"
+      data-e2e="index-alsos"
     >
       <h4
         class="c8"
@@ -1165,6 +1166,7 @@ exports[`StoryPromo - Top Story should render with one Index Also correctly 1`] 
     </time>
     <div
       class="c7"
+      data-e2e="index-alsos"
     >
       <h4
         class="c8"
