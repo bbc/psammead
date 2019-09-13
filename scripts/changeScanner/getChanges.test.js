@@ -17,7 +17,6 @@ describe(`changeScanner - getChanges`, () => {
         'packages/utilities/bar-foo/dist/package.json',
         'scripts/getChanges.js',
         'scripts/changeScanner/index.js',
-        'psammead/packages/components/README.md',
         'packages/components/README.md',
         'packages/README.md',
         '',
@@ -41,7 +40,6 @@ describe(`changeScanner - getChanges`, () => {
       psammead: [
         'scripts/getChanges.js',
         'scripts/changeScanner/index.js',
-        'psammead/packages/components/README.md',
         'packages/components/README.md',
         'packages/README.md',
       ],
