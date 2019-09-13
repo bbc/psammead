@@ -121,7 +121,7 @@ describe('Psammead test helpers', () => {
     </main>
   );
 
-  it('should render the snapshot correctly for components not using helmet', async () => {
+  it('should return correct HTML for components not using helmet', async () => {
     const actual = await renderWithHelmet(<NoHelmet />);
     const expected = serializeDomString(`
     <div>
@@ -146,7 +146,7 @@ describe('Psammead test helpers', () => {
     </>
   );
 
-  it('should render the snapshot correctly for components not using helmet and wrapped with fragment', async () => {
+  it('should return correct HTML for components not using helmet and wrapped with fragment', async () => {
     const actual = await renderWithHelmet(<NoHelmetWithFragment />);
     const expected = serializeDomString(`
     <div>
@@ -171,7 +171,7 @@ describe('Psammead test helpers', () => {
     </Helmet>
   );
 
-  it('render the snapshot correctly for components using helmet only', async () => {
+  it('should return correct HTML for components using helmet only', async () => {
     const actual = await renderWithHelmet(<HelmetOnly />);
     const expected = serializeDomString(`
     <html dir="rtl" lang="fa">
@@ -206,7 +206,7 @@ describe('Psammead test helpers', () => {
     </>
   );
 
-  it('should render the snapshot correctly for components helmet only with other content', async () => {
+  it('should return correct HTML for components using helmet only with other content', async () => {
     const actual = await renderWithHelmet(<HelmetWithContent />);
     const expected = serializeDomString(`
     <html dir="rtl" lang="fa">
