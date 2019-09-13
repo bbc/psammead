@@ -34,7 +34,6 @@ module.exports = {
       },
     ],
     '@babel/plugin-proposal-export-default-from',
-    '@babel/plugin-transform-runtime',
   ],
   presets,
   env: {
