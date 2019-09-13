@@ -46,12 +46,12 @@ const LiveComponent = ({ headline, service, dir }) => (
 );
 
 /* eslint-disable-next-line react/prop-types */
-const HiddenText = ({ type, headline, duration }) => (
+const HiddenText = ({ type, headline }) => (
   /* eslint-disable-next-line jsx-a11y/aria-role */
   <span role="text">
     <VisuallyHiddenText>{type}, </VisuallyHiddenText>
     <span>{headline}</span>
-    <VisuallyHiddenText>, {duration}</VisuallyHiddenText>
+    <VisuallyHiddenText>, 2,15</VisuallyHiddenText>
   </span>
 );
 
