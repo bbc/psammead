@@ -22,6 +22,7 @@ import './pt-br';
 import './ru';
 import './sr';
 import './sr-cyrl';
+import './ta';
 import './uk';
 import './yo';
 
@@ -40,6 +41,7 @@ const locales = [
   { name: 'Russian', locale: 'ru' },
   { name: 'Serbian', locale: 'sr' },
   { name: 'Serbian Cyrillic', locale: 'sr-cyrl' },
+  { name: 'Tamil', locale: 'ta' },
   { name: 'Ukrainian', locale: 'uk' },
   { name: 'Yoruba', locale: 'yo' },
 ];
