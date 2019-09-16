@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { storiesOf } from '@storybook/react';
 import {
+  color,
   select,
   number,
   text,
@@ -10,6 +11,7 @@ import {
 } from '@storybook/addon-knobs';
 import { inputProvider, dirDecorator } from '@bbc/psammead-storybook-helpers';
 import * as svgs from '@bbc/psammead-assets/svgs';
+import { C_POSTBOX, C_WHITE } from '@bbc/psammead-styles/colours';
 import VisuallyHiddenText from '@bbc/psammead-visually-hidden-text';
 import Brand from '@bbc/psammead-brand';
 import Navigation, { NavigationUl, NavigationLi } from './index';
@@ -76,6 +78,8 @@ const inputs = () => {
   const svgHeightInput = number('desired height svg', svgMaxHeight);
   const borderBottom = boolean('Border Bottom', false);
   const borderTop = boolean('Border Top', false);
+  const backgroundColour = color('Background colour', `${C_POSTBOX}`);
+  const logoColour = color('Logo colour', `${C_WHITE}`);
 
   return {
     productInput,
@@ -86,6 +90,8 @@ const inputs = () => {
     maxWidthInput,
     borderTop,
     borderBottom,
+    backgroundColour,
+    logoColour,
   };
 };
 
@@ -99,6 +105,8 @@ const getBrand = () => {
     svgChoice,
     borderBottom,
     borderTop,
+    backgroundColour,
+    logoColour,
   } = inputs();
 
   return (
@@ -112,6 +120,8 @@ const getBrand = () => {
       url="https://www.bbc.com/news"
       borderBottom={borderBottom}
       borderTop={borderTop}
+      backgroundColour={backgroundColour}
+      logoColour={logoColour}
     />
   );
 };
