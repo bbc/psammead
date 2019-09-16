@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 2.2.13 | [PR#2147](https://github.com/bbc/psammead/pull/2147) Add props for Storybook story withBrand. |
 | 2.2.12 | [PR#2145](https://github.com/bbc/psammead/pull/2145) Talos - Bump Dependencies - @bbc/psammead-styles |
 | 2.2.11 | [PR#1963](https://github.com/bbc/psammead/pull/2092) Refactored navigation component
 | 2.2.10 | [PR#2081](https://github.com/bbc/psammead/pull/2081) Talos - Bump Dependencies - @bbc/psammead-styles, @bbc/psammead-visually-hidden-text |
