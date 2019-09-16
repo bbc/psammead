@@ -73,9 +73,8 @@ const InfoComponent = ({
         {isLive ? (
           <LiveComponent service={service} dir={dir} headline={headlineText} />
         ) : (
-          headlineText
+          <HiddenText headline={headlineText} type={type} />
         )}
-        <HiddenText headline={headlineText} type={type} />
       </Link>
     </Headline>
     <Summary script={script} topStory={topStory} service={service}>
