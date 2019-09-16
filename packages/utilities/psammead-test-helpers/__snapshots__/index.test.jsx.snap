@@ -1,0 +1,72 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Psammead test helpers should match the snapshot for the test component 1`] = `
+<main>
+  <h1>
+    Hello I am a test component
+  </h1>
+</main>
+`;
+
+exports[`Psammead test helpers should match the snapshot for the test component 2`] = `
+<div>
+  <h1>
+    Hello I am a test component
+  </h1>
+  <p>
+    I am some test text.
+  </p>
+</div>
+`;
+
+exports[`Psammead test helpers should match the snapshot for the test component with helmet and other content 1`] = `
+<html
+  dir="rtl"
+  lang="fa"
+>
+  <head>
+    <title>
+      Snapshot with helmet and and other content
+    </title>
+    <meta
+      content="test content"
+      name="test name"
+    />
+    <script
+      src="test.js"
+    />
+  </head>
+  <body>
+    <div>
+      <main>
+        <h1>
+          Hello I am a test component with React Helmet
+        </h1>
+      </main>
+    </div>
+  </body>
+</html>
+`;
+
+exports[`Psammead test helpers should match the snapshot for the test component with helmet only 1`] = `
+<html
+  dir="rtl"
+  lang="fa"
+>
+  <head>
+    <title>
+      Snapshot with helmet only
+    </title>
+    <meta
+      content="test content"
+      name="test name"
+    />
+    <script
+      src="test.js"
+    />
+  </head>
+  <body>
+    <div />
+  </body>
+</html>
+`;
