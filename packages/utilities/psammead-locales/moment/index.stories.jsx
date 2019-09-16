@@ -19,6 +19,7 @@ import './yo';
 import './pa-in';
 import './mr';
 import './hi';
+import './gu';
 
 const stories = storiesOf('Utilities|Psammead Locales', module);
 
@@ -32,6 +33,7 @@ const locales = [
   { name: 'Punjabi', locale: 'pa-in' },
   { name: 'Marathi', locale: 'mr' },
   { name: 'Hindi', locale: 'hi' },
+  { name: 'Gujarati', locale: 'gu' },
 ];
 
 // Fixed timestamp for 27 August 2019, 14:54 BST
