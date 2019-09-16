@@ -371,6 +371,7 @@ export const pidgin = helmetFontStyles;
 export const portuguese = helmetFontStyles;
 export const punjabi = punjabiStyles;
 export const russian = helmetFontStyles;
+export const scotland = latinReithFontStyles;
 export const serbian = helmetFontStyles;
 export const sinhala = sinhalaStyles;
 export const somali = helmetFontStyles;
