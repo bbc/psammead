@@ -19,7 +19,7 @@ var persianJalaliMonths = [
 ];
 
 // Moment formats that should have the Jalali date added
-var jalaliFormats = ['D MMMM YYYY', 'LL'];
+var jalaliFormats = ['D MMMM YYYY', 'LL', 'D HH:mm [,]YYYY MMMM [BST]'];
 
 moment.updateLocale('fa', {
   postformat: function(string) {
