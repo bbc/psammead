@@ -19,6 +19,7 @@ The following locales have overrides to meet BBC World Service requirements wher
 - `/moment/yo` - locale override for Yoruba
 - `/moment/pa-in` - locale override for Punjabi
 - `/moment/hi` - locale override for Hindi
+- `/moment/ne` - locale override for Nepali
 
 ### Numerals
 
