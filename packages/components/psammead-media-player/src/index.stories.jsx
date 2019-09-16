@@ -19,3 +19,12 @@ storiesOf('Components|Media Player', module)
       placeholderSrc="https://ichef.bbci.co.uk/news/640/cpsdevpb/4eb7/test/ba7482d0-cca8-11e8-b0bf-f33155223fc4.jpg"
     />
   ));
+
+  storiesOf('Components|Media Player', module)
+  .add('Audio Skin', () => (
+    <CanonicalMediaPlayer
+      src="https://www.test.bbc.com/ws/av-embeds/media/bbc_korean_radio/liveradio"
+      showPlaceholder={false}
+      skin="audio"
+    />
+  ));
