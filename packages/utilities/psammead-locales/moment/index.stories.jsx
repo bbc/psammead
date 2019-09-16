@@ -17,6 +17,7 @@ import './pcm';
 import './ps';
 import './yo';
 import './pa-in';
+import './mr';
 import './hi';
 import './ne';
 
@@ -30,6 +31,7 @@ const locales = [
   { name: 'Pidgin', locale: 'pcm' },
   { name: 'Yoruba', locale: 'yo' },
   { name: 'Punjabi', locale: 'pa-in' },
+  { name: 'Marathi', locale: 'mr' },
   { name: 'Hindi', locale: 'hi' },
   { name: 'Nepali', locale: 'ne' },
 ];
