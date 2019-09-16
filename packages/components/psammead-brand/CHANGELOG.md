@@ -3,7 +3,8 @@
 <!-- prettier-ignore -->
 | Version | Description |
 | ------- | ----------- |
-| 4.3.9 | [PR#2145](https://github.com/bbc/psammead/pull/2145) Talos - Bump Dependencies - @bbc/psammead-styles |
+| 5.0.1 | [PR#2145](https://github.com/bbc/psammead/pull/2145) Talos - Bump Dependencies - @bbc/psammead-styles |
+| 5.0.0 | [PR#2127](https://github.com/bbc/psammead/pull/2127) Remove default colours. Add required props backgroundColour & logoColour |
 | 4.3.8 | [PR#2081](https://github.com/bbc/psammead/pull/2081) Talos - Bump Dependencies - @bbc/psammead-styles, @bbc/psammead-visually-hidden-text |
 | 4.3.7 | [PR#1993](https://github.com/bbc/psammead/pull/1993) Talos - Bump Dependencies |
 | 4.3.6 | [PR#1960](https://github.com/bbc/psammead/pull/1960) Change <React.Fragment> to <> |
