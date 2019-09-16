@@ -1,5 +1,6 @@
 import React from 'react';
 import {
+  color,
   select,
   number,
   text,
@@ -30,8 +31,8 @@ const inputs = () => {
   const svgHeightInput = number('desired height svg', svgMaxHeight);
   const borderBottom = boolean('Border Bottom', false);
   const borderTop = boolean('Border Top', false);
-  const backgroundColour = `${C_POSTBOX}`;
-  const logoColour = `${C_WHITE}`;
+  const backgroundColour = color('Background colour', `${C_POSTBOX}`);
+  const logoColour = color('Logo colour', `${C_WHITE}`);
 
   return {
     productInput,
