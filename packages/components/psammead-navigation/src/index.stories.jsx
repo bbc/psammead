@@ -16,6 +16,8 @@ import Navigation, { NavigationUl, NavigationLi } from './index';
 import igboNavData from '../testHelpers/igbo';
 import pidginNavData from '../testHelpers/pidgin';
 import yorubaNavData from '../testHelpers/yoruba';
+import arabicNavData from '../testHelpers/arabic';
+
 import notes from '../README.md';
 
 const navStoriesData = [
@@ -36,6 +38,13 @@ const navStoriesData = [
     skipLinkText: 'Fò kọjá sí nnkan tí ó wà nínú rẹ̀',
     currentPageText: 'Current page',
     data: yorubaNavData,
+  },
+  {
+    title: 'arabic',
+    skipLinkText: 'إذهب الى المحتوى',
+    currentPageText: 'Current page',
+    data: arabicNavData,
+    dir: 'rtl',
   },
 ];
 
@@ -111,10 +120,10 @@ const StyledMain = styled.main`
   padding: 0px 1rem;
 `;
 
-const navigationStory = (skipLinkText, currentPageText, navData, brand) =>
+const navigationStory = (skipLinkText, currentPageText, navData, dir, brand) =>
   inputProvider({
     // eslint-disable-next-line react/prop-types
-    componentFunction: ({ script, dir, service }) => (
+    componentFunction: ({ script, service }) => (
       <>
         {brand && getBrand()}
 
@@ -122,6 +131,7 @@ const navigationStory = (skipLinkText, currentPageText, navData, brand) =>
           script={script}
           skipLinkText={skipLinkText}
           service={service}
+          dir={dir}
         >
           <NavigationUl>
             {navData.map((item, index) => {
@@ -133,7 +143,6 @@ const navigationStory = (skipLinkText, currentPageText, navData, brand) =>
                   key={title}
                   url={url}
                   script={script}
-                  dir={dir}
                   active={active}
                   currentPageText={currentPageText}
                   service={service}
@@ -161,10 +170,10 @@ const storiesWithoutBrand = storiesOf(
   .addDecorator(dirDecorator);
 
 navStoriesData.map(item => {
-  const { title, skipLinkText, currentPageText, data } = item;
+  const { title, skipLinkText, currentPageText, data, dir } = item;
   return storiesWithoutBrand.add(
     title,
-    navigationStory(skipLinkText, currentPageText, data),
+    navigationStory(skipLinkText, currentPageText, data, dir),
     {
       notes,
     },
@@ -181,6 +190,7 @@ storiesWithBrand.add(
     navStoriesData[0].skipLinkText,
     navStoriesData[0].currentPageText,
     igboNavData,
+    navStoriesData[0].dir,
     true,
   ),
   {
