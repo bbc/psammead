@@ -17,6 +17,8 @@ The following locales have overrides to meet BBC World Service requirements wher
 - `/moment/ar` - locale override for Arabic
 - `/moment/fa` - locale override for Persian (Farsi)
 - `/moment/yo` - locale override for Yoruba
+- `/moment/pa-in` - locale override for Punjabi
+- `/moment/hi` - locale override for Hindi
 
 ### Numerals
 
