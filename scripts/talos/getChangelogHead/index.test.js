@@ -8,6 +8,8 @@ const {
 } = require('./mockChangelogs');
 
 jest.mock('../../utilities/readFileSync');
+jest.mock('../../utilities/getPackagePath', () => jest.fn());
+jest.mock('path', () => ({ join: jest.fn() }));
 
 describe('getChangelogHead', () => {
   it('should return head of content 1', () => {
