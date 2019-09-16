@@ -1,12 +1,13 @@
 import { render } from '@testing-library/react';
 import 'jest-styled-components';
 import deepClone from 'ramda/src/clone';
+import renderWithHelmet from './renderWithHelmet';
 
 export const shouldMatchSnapshot = (title, component) => {
-  it(title, () => {
+  it(title, async () => {
     // select the first child to remove the pointless wrapping div from snapshots
     const removeWrappingDiv = container => container.firstChild;
-    const { container } = render(component);
+    const { container } = await renderWithHelmet(component);
     const hasOneChild = container.children.length === 1;
     /*
      * if the container has more than one child then it's a component that uses a

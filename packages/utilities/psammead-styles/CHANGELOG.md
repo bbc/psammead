@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 2.3.0 | [PR#2120](https://github.com/bbc/psammead/pull/2120) Add Scottish colour and scotland service to fonts |
 | 2.2.0 | [PR#2021](https://github.com/bbc/psammead/pull/2021) Export global styles |
 | 2.1.4 | [PR#1926](https://github.com/bbc/psammead/pull/1926) Update component storybook to use latest inputProvider changes |
 | 2.1.3 | [PR#1948](https://github.com/bbc/psammead/pull/1948) Show different font types in storybook |
