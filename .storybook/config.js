@@ -39,7 +39,7 @@ addParameters({
 
 addDecorator(story => (
   <Fragment>
-    <GlobalStyles fonts={fontFaces} />
+    <GlobalStyles fonts={Object.values(fontFaces)} />
     {story()}
   </Fragment>
 ));
