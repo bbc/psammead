@@ -1,5 +1,4 @@
 export BBC_BLOCKS from './svgs/bbcBlocks';
-export icons from './svgs/mediaIcons';
 export afaanoromoo from './svgs/afaanoromoo';
 export afrique from './svgs/afrique';
 export amharic from './svgs/amharic';
