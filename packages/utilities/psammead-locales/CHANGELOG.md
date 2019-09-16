@@ -3,7 +3,8 @@
 <!-- prettier-ignore -->
 | Version | Description |
 | ------- | ----------- |
-| 2.5.0 | [PR#2114](https://github.com/bbc/psammead/pull/2114) Add some overrides for Brasil, Russian, Serbian and Ukrainian |
+| 2.6.0 | [PR#2114](https://github.com/bbc/psammead/pull/2114) Add some overrides for Brasil, Russian, Serbian and Ukrainian |
+| 2.5.0 | [PR#2118](https://github.com/bbc/psammead/pull/2118) Add `mr` (Marathi) locale |
 | 2.4.0 | [PR#2110](https://github.com/bbc/psammead/pull/2110) Add `hi` (Hindi) locale |
 | 2.3.0 | [PR#2080](https://github.com/bbc/psammead/pull/2080) Add an eslintrc config file to cater for IE11 compatibility issues |
 | 2.2.7 | [PR#2094](https://github.com/bbc/psammead/pull/2094) Fix for Punjabi (`pa-in`) locale spelling of ago |

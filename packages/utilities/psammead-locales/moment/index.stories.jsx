@@ -14,6 +14,7 @@ import './ar';
 import './fa';
 import './hi';
 import './ig';
+import './mr';
 import './pa-in';
 import './pcm';
 import './ps';
@@ -31,6 +32,7 @@ const locales = [
   { name: 'Brasil', locale: 'pt-br' },
   { name: 'Hindi', locale: 'hi' },
   { name: 'Igbo', locale: 'ig' },
+  { name: 'Marathi', locale: 'mr' },
   { name: 'Pashto', locale: 'ps' },
   { name: 'Persian', locale: 'fa' },
   { name: 'Pidgin', locale: 'pcm' },

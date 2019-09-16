@@ -22,6 +22,7 @@ The following locales have overrides to meet BBC World Service requirements wher
 - `/moment/sr-cyrl` - locale override for Serbian Cyrillic
 - `/moment/uk` - locale override for Ukrainian
 - `/moment/yo` - locale override for Yoruba
+- `/moment/mr` - locale override for Marathi
 - `/moment/pa-in` - locale override for Punjabi
 - `/moment/hi` - locale override for Hindi
 
