@@ -3,7 +3,8 @@
 <!-- prettier-ignore -->
 | Version | Description |
 | ------- | ----------- |
-| 2.7.0 | [PR#2149](https://github.com/bbc/psammead/pull/2149) Add `gu` (Gujarati) locale |
+| 2.8.0 | [PR#2149](https://github.com/bbc/psammead/pull/2149) Add `gu` (Gujarati) locale |
+| 2.7.0 | [PR#2114](https://github.com/bbc/psammead/pull/2114) Add some overrides for Brasil, Russian, Serbian and Ukrainian |
 | 2.6.0 | [PR#2124](https://github.com/bbc/psammead/pull/2124) Add `ta` (Tamil) locale |
 | 2.5.0 | [PR#2118](https://github.com/bbc/psammead/pull/2118) Add `mr` (Marathi) locale |
 | 2.4.0 | [PR#2110](https://github.com/bbc/psammead/pull/2110) Add `hi` (Hindi) locale |
