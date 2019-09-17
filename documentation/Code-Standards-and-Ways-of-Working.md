@@ -12,3 +12,40 @@ Please familiarise yourself with our:
 NB there is further documentation colocated with relevant packages and code. The above list is an index of the top-level documentation of our repo (and our sibling repo [Simorgh](https://github.com/bbc/simorgh)).
 
 ## Use REMs, explain why and what they are or find a 3rd party ref.
+
+## Testing approaches
+
+### Visual regression / screenshot compare testing
+#### Introduction to ChromaticQA
+[Chromatic Docs](https://docs.chromaticqa.com/)
+
+ChromaticQA is a visual regression tool for storybook maintained by Storybook. The purpose of having chromaticQA run on all stories is to capture unwanted visual changes introduced by every change done to the code base. This reduces the overhead on manual regression as it supports screenshot comparisons for Chrome, IE and FF.
+
+#### Running Test
+ChromaticQA runs as a part of the build. The builds can be seen here (https://www.chromaticqa.com/builds?appId=5d28eb3fe163f6002046d6fa)
+
+To run chromatic locally export the app code in bash profile(`export CHROMATIC_APP_CODE=<app-code>`) and run `npx chromatic test run  --build-script-name build:storybook || true`
+
+- When the tests are run first it creates the baselines screenshots unreviewed for all the browsers enabled in the settings.
+- Each new build creates snapshots of the components which are compared with the baseline screenshots and unchanged ones are automatically accepted and changed ones needs review(accordingly it has to be accepted or denied). If there are new components added they are listed under new components.
+- Each story has its own baseline that is tracked independently on each branch. When you approve a snapshot you also update the baseline for that story.
+
+Chromatic
+Advantages
+- We do not have to manage any infrastructure kind of stuff as it is maintained by the storybook people.
+- Run time for chrome and IE together is approx 6-8m.
+
+### Accessibility testing
+### Storybook
+If the component is publicly available in Storybook you can preview this on any device. Don't forget to follow the [testing steps](https://bbc-news.github.io/accessibility-news-and-you/accessibility-and-testing-with-assistive-technology) and use [supported assistive technology](https://bbc-news.github.io/accessibility-news-and-you/accessibility-and-supported-assistive-technology).
+
+#### Open the component in a tab
+Storybook publishes components in an iframe within the Storybook UI, this will be acknowledged by assistive technology such as a screen reader, it's therefore recommeded to **view/open the component in another tab** to the Storybook UI, you can then see the component code in isolation without the iframe and Storybook UI.
+
+### Local code in Storybook
+If you have a PR that is not yet merged and you need to preview this on another device, you can do so in Storybook via tunnelling:
+
+* Install packages ‘npm run install:packages’
+* Run storybook ‘npm run storybook’
+* Run your tunnelling tool on the Storybook port
+* In Storybook [open the component in another tab](#open-the-component-in-a-tab)
