@@ -12,146 +12,165 @@ import { GEL_FF_REITH_SANS } from '@bbc/gel-foundations/typography';
 import notes from '../README.md';
 import './ar';
 import './fa';
+import './hi';
 import './ig';
+import './mr';
+import './pa-in';
 import './pcm';
 import './ps';
+import './pt-br';
+import './ru';
+import './sr';
+import './sr-cyrl';
+import './ta';
+import './uk';
 import './yo';
-import './pa-in';
 
 const stories = storiesOf('Utilities|Psammead Locales', module);
 
 const locales = [
   { name: 'Arabic', locale: 'ar' },
+  { name: 'Brasil', locale: 'pt-br' },
+  { name: 'Hindi', locale: 'hi' },
   { name: 'Igbo', locale: 'ig' },
+  { name: 'Marathi', locale: 'mr' },
   { name: 'Pashto', locale: 'ps' },
   { name: 'Persian', locale: 'fa' },
   { name: 'Pidgin', locale: 'pcm' },
-  { name: 'Yoruba', locale: 'yo' },
   { name: 'Punjabi', locale: 'pa-in' },
+  { name: 'Russian', locale: 'ru' },
+  { name: 'Serbian', locale: 'sr' },
+  { name: 'Serbian Cyrillic', locale: 'sr-cyrl' },
+  { name: 'Tamil', locale: 'ta' },
+  { name: 'Ukrainian', locale: 'uk' },
+  { name: 'Yoruba', locale: 'yo' },
 ];
+
+// Fixed timestamp for 27 August 2019, 14:54 BST
+const fixedTimestamp = 1566914061212;
 
 /* eslint-disable prettier/prettier */
 const funcs = [
   locale =>
-    moment()
+    moment(fixedTimestamp)
       .locale(locale)
       .format('MMMM Do YYYY, h:mm:ss a'),
   locale =>
-    moment()
+    moment(fixedTimestamp)
       .locale(locale)
       .format('dddd'),
   locale =>
-    moment()
+    moment(fixedTimestamp)
       .locale(locale)
       .format('MMM Do YY'),
   locale =>
-    moment()
+    moment(fixedTimestamp)
       .locale(locale)
       .format('YYYY [escaped text] YYYY'),
   locale =>
-    moment()
+    moment(fixedTimestamp)
       .locale(locale)
       .format(),
   locale =>
     moment('20111031', 'YYYYMMDD')
       .locale(locale)
-      .fromNow(),
+      .from(fixedTimestamp),
   locale =>
     moment('20120620', 'YYYYMMDD')
       .locale(locale)
-      .fromNow(),
+      .from(fixedTimestamp),
   locale =>
-    moment()
+    moment(fixedTimestamp)
       .locale(locale)
       .startOf('day')
-      .fromNow(),
+      .from(fixedTimestamp),
   locale =>
-    moment()
+    moment(fixedTimestamp)
       .locale(locale)
       .endOf('day')
-      .fromNow(),
+      .from(fixedTimestamp),
   locale =>
-    moment()
+    moment(fixedTimestamp)
       .locale(locale)
       .startOf('hour')
-      .fromNow(),
+      .from(fixedTimestamp),
   locale =>
-    moment()
+    moment(fixedTimestamp)
       .locale(locale)
       .subtract(10, 'days')
-      .calendar(),
+      .calendar(fixedTimestamp),
   locale =>
-    moment()
+    moment(fixedTimestamp)
       .locale(locale)
       .subtract(6, 'days')
-      .calendar(),
+      .calendar(fixedTimestamp),
   locale =>
-    moment()
+    moment(fixedTimestamp)
       .locale(locale)
       .subtract(3, 'days')
-      .calendar(),
+      .calendar(fixedTimestamp),
   locale =>
-    moment()
+    moment(fixedTimestamp)
       .locale(locale)
       .subtract(1, 'days')
-      .calendar(),
+      .calendar(fixedTimestamp),
   locale =>
-    moment()
+    moment(fixedTimestamp)
       .locale(locale)
-      .calendar(),
+      .calendar(fixedTimestamp),
   locale =>
-    moment()
+    moment(fixedTimestamp)
       .locale(locale)
       .add(1, 'days')
-      .calendar(),
+      .calendar(fixedTimestamp),
   locale =>
-    moment()
+    moment(fixedTimestamp)
       .locale(locale)
       .add(3, 'days')
-      .calendar(),
+      .calendar(fixedTimestamp),
   locale =>
-    moment()
+    moment(fixedTimestamp)
       .locale(locale)
       .add(10, 'days')
-      .calendar(),
+      .calendar(fixedTimestamp),
   locale =>
-    moment()
+    moment(fixedTimestamp)
       .locale(locale)
       .format('LT'),
   locale =>
-    moment()
+    moment(fixedTimestamp)
       .locale(locale)
       .format('LTS'),
   locale =>
-    moment()
+    moment(fixedTimestamp)
       .locale(locale)
       .format('L'),
   locale =>
-    moment()
+    moment(fixedTimestamp)
       .locale(locale)
       .format('l'),
   locale =>
-    moment()
+    moment(fixedTimestamp)
       .locale(locale)
       .format('LL'),
   locale =>
-    moment()
+    moment(fixedTimestamp)
       .locale(locale)
       .format('ll'),
   locale =>
-    moment()
+    moment(fixedTimestamp)
       .locale(locale)
       .format('LLL'),
   locale =>
-    moment()
+    moment(fixedTimestamp)
       .locale(locale)
       .format('lll'),
   locale =>
-    moment()
+    moment(fixedTimestamp)
       .locale(locale)
       .format('LLLL'),
   locale =>
-    moment()
+    moment(fixedTimestamp)
       .locale(locale)
       .format('llll'),
 ];

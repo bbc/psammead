@@ -3,6 +3,13 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 1.7.15 | [PR#2147](https://github.com/bbc/psammead/pull/2147) Talos - Bump Dependencies - @bbc/psammead-brand, @bbc/psammead-caption, @bbc/psammead-copyright, @bbc/psammead-image-placeholder, @bbc/psammead-inline-link, @bbc/psammead-media-indicator, @bbc/psammead-paragraph, @bbc/psammead-story-promo, @bbc/psammead-timestamp |
+| 1.7.14 | [PR#2145](https://github.com/bbc/psammead/pull/2145) Talos - Bump Dependencies - @bbc/psammead-styles |
+| 1.7.13 | [PR#2111](https://github.com/bbc/psammead/pull/2111) Talos - Bump Dependencies - @bbc/psammead-locales |
+| 1.7.12 | [PR#2080](https://github.com/bbc/psammead/pull/2080) Add 'eslint-plugin-es5' for use in @bbc/psammead-locales |
+| 1.7.11 | [PR#2090](https://github.com/bbc/psammead/pull/2090) Talos - Bump Dependencies - @bbc/psammead-locales |
+| 1.7.10 | [PR#2083](https://github.com/bbc/psammead/pull/2083) Talos - Bump Dependencies - babel-eslint, eslint, eslint-config-prettier, github-api, husky, lint-staged, storybook-chromatic |
+| 1.7.10 | [PR#2084](https://github.com/bbc/psammead/pull/2084) Talos - Bump Dependencies - @bbc/psammead-story-promo |
 | 1.7.9 | [PR#2082](https://github.com/bbc/psammead/pull/2082) Talos - Bump Dependencies - @bbc/psammead-brand, @bbc/psammead-caption, @bbc/psammead-copyright, @bbc/psammead-image-placeholder, @bbc/psammead-inline-link, @bbc/psammead-media-indicator, @bbc/psammead-paragraph, @bbc/psammead-story-promo, @bbc/psammead-timestamp |
 | 1.7.8 | [PR#2081](https://github.com/bbc/psammead/pull/2081) Talos - Bump Dependencies - @bbc/psammead-caption, @bbc/psammead-inline-link, @bbc/psammead-locales, @bbc/psammead-paragraph, @bbc/psammead-story-promo, @bbc/psammead-storybook-helpers, @bbc/psammead-styles, @bbc/psammead-visually-hidden-text |
 | 1.7.9 | [PR#1949](https://github.com/bbc/psammead/pull/1949) Fix alpha version bumping |

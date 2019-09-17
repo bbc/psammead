@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
 import { string, number, node, shape, bool } from 'prop-types';
-import { C_POSTBOX, C_WHITE } from '@bbc/psammead-styles/colours';
 import VisuallyHiddenText from '@bbc/psammead-visually-hidden-text';
 import {
   GEL_GROUP_2_SCREEN_WIDTH_MIN,
@@ -30,7 +29,7 @@ const SvgWrapper = styled.div`
 `;
 
 const Banner = styled.div`
-  background-color: ${C_POSTBOX};
+  background-color: ${props => props.backgroundColour};
   ${({ svgHeight }) =>
     conditionallyRenderHeight(svgHeight, PADDING_AROUND_SVG_BELOW_400PX)}
   width: 100%;
@@ -59,7 +58,7 @@ const StyledLink = styled.a`
 // `currentColor` has been used to address high contrast mode in Firefox.
 const BrandSvg = styled.svg`
   box-sizing: content-box;
-  color: ${C_WHITE};
+  color: ${props => props.logoColour};
   fill: currentColor;
   padding-top: ${GEL_SPACING_DBL};
   padding-bottom: ${SVG_BOTTOM_OFFSET_BELOW_400PX};
@@ -81,7 +80,7 @@ const BrandSvg = styled.svg`
   ${StyledLink}:hover &,
     ${StyledLink}:focus & {
     text-decoration: none;
-    border-bottom: ${GEL_SPACING_HLF} solid ${C_WHITE};
+    border-bottom: ${GEL_SPACING_HLF} solid ${props => props.logoColour};
   }
   /* stylelint-enable */
 `;
@@ -112,6 +111,8 @@ const StyledBrand = ({
   svg,
   maxWidth,
   minWidth,
+  backgroundColour,
+  logoColour,
 }) => (
   <>
     {svg && (
@@ -125,6 +126,8 @@ const StyledBrand = ({
           ratio={svg.ratio}
           maxWidth={maxWidth}
           minWidth={minWidth}
+          backgroundColour={backgroundColour}
+          logoColour={logoColour}
         >
           {svg.group}
         </BrandSvg>
@@ -151,6 +154,8 @@ const brandProps = {
       width: number.isRequired,
     }).isRequired,
   }).isRequired,
+  backgroundColour: string.isRequired,
+  logoColour: string.isRequired,
 };
 
 StyledBrand.propTypes = brandProps;
@@ -160,13 +165,24 @@ StyledBrand.defaultProps = {
 };
 
 const Brand = props => {
-  const { svgHeight, maxWidth, minWidth, url, borderTop, borderBottom } = props;
+  const {
+    svgHeight,
+    maxWidth,
+    minWidth,
+    url,
+    borderTop,
+    borderBottom,
+    backgroundColour,
+    logoColour,
+  } = props;
 
   return (
     <Banner
       svgHeight={svgHeight}
       borderTop={borderTop}
       borderBottom={borderBottom}
+      backgroundColour={backgroundColour}
+      logoColour={logoColour}
     >
       {url ? (
         <SvgWrapper>
