@@ -3,6 +3,16 @@
 <!-- prettier-ignore -->
 | Version | Description |
 | ------- | ----------- |
+| 2.8.0 | [PR#2149](https://github.com/bbc/psammead/pull/2149) Add `gu` (Gujarati) locale |
+| 2.7.0 | [PR#2114](https://github.com/bbc/psammead/pull/2114) Add some overrides for Brasil, Russian, Serbian and Ukrainian |
+| 2.6.0 | [PR#2124](https://github.com/bbc/psammead/pull/2124) Add `ta` (Tamil) locale |
+| 2.5.0 | [PR#2118](https://github.com/bbc/psammead/pull/2118) Add `mr` (Marathi) locale |
+| 2.4.0 | [PR#2110](https://github.com/bbc/psammead/pull/2110) Add `hi` (Hindi) locale |
+| 2.3.0 | [PR#2080](https://github.com/bbc/psammead/pull/2080) Add an eslintrc config file to cater for IE11 compatibility issues |
+| 2.2.7 | [PR#2094](https://github.com/bbc/psammead/pull/2094) Fix for Punjabi (`pa-in`) locale spelling of ago |
+| 2.2.6 | [PR#1933](https://github.com/bbc/psammead/pull/1933) Stories now used fixed timestamp |
+| 2.2.5 | [PR#2088](https://github.com/bbc/psammead/pull/2088) Another Persian locale IE11 compatibility fix |
+| 2.2.4 | [PR#2087](https://github.com/bbc/psammead/pull/2087) Bumped jalaali-js |
 | 2.2.3 | [PR#2048](https://github.com/bbc/psammead/pull/2048) Import `pa-in` locale to be updated |
 | 2.2.2 | [PR#2044](https://github.com/bbc/psammead/pull/2044) Fix for Persian (`fa`) locale not working on client |
 | 2.2.1 | [PR#2020](https://github.com/bbc/psammead/pull/2020) IE11 fixes |

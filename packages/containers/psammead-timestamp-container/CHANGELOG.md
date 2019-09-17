@@ -3,6 +3,8 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 2.4.15 | [PR#2147](https://github.com/bbc/psammead/pull/2147) Talos - Bump Dependencies - @bbc/psammead-timestamp |
+| 2.4.14 | [PR#1933](https://github.com/bbc/psammead/pull/1933) Uses `select` instead of `button` to update time on click in stories |
 | 2.4.13 | [PR#2082](https://github.com/bbc/psammead/pull/2082) Talos - Bump Dependencies - @bbc/psammead-timestamp |
 | 2.4.12 | [PR#1926](https://github.com/bbc/psammead/pull/1926) Update component storybook to use latest inputProvider changes |
 | 2.4.11 | [PR#1997](https://github.com/bbc/psammead/pull/1997) Talos - Bump Dependencies |

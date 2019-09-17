@@ -137,7 +137,7 @@ exports[`StoryPromo - Top Story should render correctly 1`] = `
   }
 }
 
-@media (max-width:62.9375rem) {
+@media (min-width:37.5rem) and (max-width:62.9375rem) {
   .c6 {
     display: none;
     visibility: hidden;
@@ -399,7 +399,7 @@ exports[`StoryPromo - Top Story should render with Media Indicator correctly 1`]
   }
 }
 
-@media (max-width:62.9375rem) {
+@media (min-width:37.5rem) and (max-width:62.9375rem) {
   .c11 {
     display: none;
     visibility: hidden;
@@ -712,7 +712,7 @@ exports[`StoryPromo - Top Story should render with multiple Index Alsos correctl
   }
 }
 
-@media (max-width:62.9375rem) {
+@media (min-width:37.5rem) and (max-width:62.9375rem) {
   .c6 {
     display: none;
     visibility: hidden;
@@ -798,6 +798,7 @@ exports[`StoryPromo - Top Story should render with multiple Index Alsos correctl
     </time>
     <div
       class="c7"
+      data-e2e="index-alsos"
     >
       <h4
         class="c8"
@@ -1079,7 +1080,7 @@ exports[`StoryPromo - Top Story should render with one Index Also correctly 1`] 
   }
 }
 
-@media (max-width:62.9375rem) {
+@media (min-width:37.5rem) and (max-width:62.9375rem) {
   .c6 {
     display: none;
     visibility: hidden;
@@ -1165,6 +1166,7 @@ exports[`StoryPromo - Top Story should render with one Index Also correctly 1`] 
     </time>
     <div
       class="c7"
+      data-e2e="index-alsos"
     >
       <h4
         class="c8"

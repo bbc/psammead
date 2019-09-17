@@ -1,5 +1,3 @@
-/* eslint-disable */
-
 import moment from 'moment';
 import './ar';
 
