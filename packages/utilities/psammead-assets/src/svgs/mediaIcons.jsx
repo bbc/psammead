@@ -26,7 +26,7 @@ const PhotoMediaIcon = styled(MediaIcon)`
   height: 0.8125rem;
 `;
 
-const icons = {
+const mediaIcons = {
   video: (
     <VideoMediaIcon
       viewBox="0 0 32 32"
@@ -61,4 +61,4 @@ const icons = {
   ),
 };
 
-export default icons;
+export default mediaIcons;
