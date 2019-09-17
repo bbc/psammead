@@ -1,3 +1,4 @@
+<!-- MOVE THIS TO CODE STANDARDS AND CUT DECISION PARTS AND REVISE TEACHING TO REFER TO EXTERNAL SOURCES -->
 # REMs vs EMs for spacing
 
 REMs and EMs can be used for spacing (padding/margins/line height). We chose REMs on the basis of clarity and no perceptible difference in rendering.

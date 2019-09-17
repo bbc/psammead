@@ -13,6 +13,8 @@ NB there is further documentation colocated with relevant packages and code. The
 
 ## Use REMs, explain why and what they are or find a 3rd party ref.
 
+## Package publish, deprecation, and alpha publication process
+
 ## Testing approaches
 
 ### Visual regression / screenshot compare testing

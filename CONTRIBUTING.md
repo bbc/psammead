@@ -21,6 +21,7 @@ NB there is further documentation colocated with relevant packages and code. The
 
 **Component Structure**
 
+<!-- CHANGE THIS -->
 As discussed in the [README](https://github.com/bbc/psammead/blob/latest/README.md), Psammead is a library of shared components following the [container / components pattern](https://medium.com/@dan_abramov/smart-and-dumb-components-7ca2f9a7c7d0). Whether you are creating a component from scratch, or preparing to move an existing React component to Psammead, make sure that your component is presentational and reusable. The component should accept props if needed and implement minimal logic. A presentational component shouldn’t handle either fetching or mutation of data.
 
 A component should have this file structure:
@@ -88,7 +89,7 @@ Custom tests must adhere to the following conventions:
 For a sample usage of custom Mocha/Chai tests with Psammead, please refer to [#247](https://github.com/bbc/psammead/pull/247).
 
 **Accessibility Swarms**
-
+<!-- RELATE THIS TO DETAIL ON ACCESSIBBILITY IN THE REPO -->
 When you add a component to this repository, you should carry out an Accessibility Swarm, ideally including team members from multiple disciplines and using [the Assistive Technology we support](./README.md#assistive-technology-support).
 
 For changes to an existing component, a shorter swarm with fewer people should be conducted.
