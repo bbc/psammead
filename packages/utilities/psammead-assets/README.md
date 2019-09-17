@@ -50,13 +50,12 @@ Media icons is an object containing styled SVG icons for video, audio and photog
 ## Usage
 
 ```jsx
-<MediaIndicatorWrapper>
-  <FlexWrapper>
-    {mediaIcons[audio]}
-    {duration && datetime && (
-    <TimeDuration dateTime={datetime}>{duration}</TimeDuration>)}
-  </FlexWrapper>
-</MediaIndicatorWrapper>
+import mediaIcons from '@bbc/psammead-assets/svgs';
+
+<span>
+  {mediaIcons.audio}
+  {duration && datetime && (<time dateTime={datetime}>{duration}</time>)}
+</span>
 ```
 
 ## Contributing
