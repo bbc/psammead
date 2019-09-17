@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 | ------- | ----------- |
+| 2.1.11 | [PR#2145](https://github.com/bbc/psammead/pull/2145) Talos - Bump Dependencies - @bbc/psammead-styles |
 | 2.1.10 | [PR#2081](https://github.com/bbc/psammead/pull/2081) Talos - Bump Dependencies - @bbc/psammead-styles |
 | 2.1.9 | [PR#2017](https://github.com/bbc/psammead/pull/2017) Bump psammead-story-promo to 2.7.7 |
 | 2.1.8 | [PR#2014](https://github.com/bbc/psammead/pull/2014) Add padding top to top stories on desktop |
