@@ -19,6 +19,7 @@ The `@bbc/psammead-navigation` package is a set of two components, `NavigationUl
 | script   | object  | Yes   | N/A     |  `{ canon: { groupA: { fontSize: '28', lineHeight: '32',}, groupB: { fontSize: '32', lineHeight: '36', }, groupD: { fontSize: '44', lineHeight: '48', }, }, trafalgar: { groupA: { fontSize: '20', lineHeight: '24', }, groupB: { fontSize: '24', lineHeight: '28', }, groupD: { fontSize: '32', lineHeight: '36', }, }, }` |
 | skipLinkText | string | Yes | N/A    | `Skip to content` |
 | service | string | Yes | N/A | `'news'` |
+| dir      | string  | No       | `ltr`   | `rtl` |
 
 ### NavigationUl
 
@@ -34,7 +35,6 @@ The `@bbc/psammead-navigation` package is a set of two components, `NavigationUl
 | -------- | ------- | -------- | ------- | -------- |
 | url      | string  | Yes      | N/A     | `/sport` |
 | script   | object  | Yes      | N/A     |  `{ canon: { groupA: { fontSize: '28', lineHeight: '32',}, groupB: { fontSize: '32', lineHeight: '36', }, groupD: { fontSize: '44', lineHeight: '48', }, }, trafalgar: { groupA: { fontSize: '20', lineHeight: '24', }, groupB: { fontSize: '24', lineHeight: '28', }, groupD: { fontSize: '32', lineHeight: '36', }, }, }` |
-| dir      | string  | No       | `ltr`   | `rtl`    |
 | active   | boolean | No       | `false` | `true`   |
 | currentPageText | string | No | `null`  | `Current page` |
 | service | string | Yes | N/A | `'news'` |

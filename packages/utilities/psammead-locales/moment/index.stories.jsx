@@ -12,26 +12,42 @@ import { GEL_FF_REITH_SANS } from '@bbc/gel-foundations/typography';
 import notes from '../README.md';
 import './ar';
 import './fa';
+import './hi';
 import './ig';
+import './mr';
+import './ne';
+import './pa-in';
 import './pcm';
 import './ps';
+import './pt-br';
+import './ru';
+import './sr';
+import './sr-cyrl';
+import './ta';
+import './gu';
+import './uk';
 import './yo';
-import './pa-in';
-import './mr';
-import './hi';
 
 const stories = storiesOf('Utilities|Psammead Locales', module);
 
 const locales = [
   { name: 'Arabic', locale: 'ar' },
+  { name: 'Brasil', locale: 'pt-br' },
+  { name: 'Hindi', locale: 'hi' },
   { name: 'Igbo', locale: 'ig' },
+  { name: 'Marathi', locale: 'mr' },
+  { name: 'Nepali', locale: 'ne' },
   { name: 'Pashto', locale: 'ps' },
   { name: 'Persian', locale: 'fa' },
   { name: 'Pidgin', locale: 'pcm' },
-  { name: 'Yoruba', locale: 'yo' },
   { name: 'Punjabi', locale: 'pa-in' },
-  { name: 'Marathi', locale: 'mr' },
-  { name: 'Hindi', locale: 'hi' },
+  { name: 'Russian', locale: 'ru' },
+  { name: 'Serbian', locale: 'sr' },
+  { name: 'Serbian Cyrillic', locale: 'sr-cyrl' },
+  { name: 'Tamil', locale: 'ta' },
+  { name: 'Gujarati', locale: 'gu' },
+  { name: 'Ukrainian', locale: 'uk' },
+  { name: 'Yoruba', locale: 'yo' },
 ];
 
 // Fixed timestamp for 27 August 2019, 14:54 BST
