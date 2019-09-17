@@ -15,6 +15,7 @@ import './fa';
 import './hi';
 import './ig';
 import './mr';
+import './ne';
 import './pa-in';
 import './pcm';
 import './ps';
@@ -23,6 +24,7 @@ import './ru';
 import './sr';
 import './sr-cyrl';
 import './ta';
+import './gu';
 import './uk';
 import './yo';
 
@@ -34,6 +36,7 @@ const locales = [
   { name: 'Hindi', locale: 'hi' },
   { name: 'Igbo', locale: 'ig' },
   { name: 'Marathi', locale: 'mr' },
+  { name: 'Nepali', locale: 'ne' },
   { name: 'Pashto', locale: 'ps' },
   { name: 'Persian', locale: 'fa' },
   { name: 'Pidgin', locale: 'pcm' },
@@ -42,6 +45,7 @@ const locales = [
   { name: 'Serbian', locale: 'sr' },
   { name: 'Serbian Cyrillic', locale: 'sr-cyrl' },
   { name: 'Tamil', locale: 'ta' },
+  { name: 'Gujarati', locale: 'gu' },
   { name: 'Ukrainian', locale: 'uk' },
   { name: 'Yoruba', locale: 'yo' },
 ];
