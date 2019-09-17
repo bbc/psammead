@@ -133,9 +133,6 @@ The `README.md` should follow this template:
 ## Roadmap
 (what we have planned for this component)
 
-## Additional notes
-(link to any relevant ADRs)
-
 ## Contributing
 
 Psammead is completely open source. We are grateful for any contributions, whether they be new components, bug fixes or general improvements. Please see our primary contributing guide which can be found at [the root of the Psammead respository](https://github.com/bbc/psammead/blob/latest/CONTRIBUTING.md).
