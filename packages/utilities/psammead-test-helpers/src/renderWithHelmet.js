@@ -1,6 +1,6 @@
 import { render, waitForDomChange } from '@testing-library/react';
 
-export default async component => {
+export default component => {
   /*
    * Similar to this problem https://github.com/testing-library/react-testing-library/issues/402
    * This helper was created to solve the problem of rendering helmet/head contents in snapshots.
