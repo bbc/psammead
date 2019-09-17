@@ -45,6 +45,16 @@ const LiveComponent = ({ headline, service, dir }) => (
   </span>
 );
 
+/* eslint-disable-next-line react/prop-types */
+const HiddenText = ({ type, headline }) => (
+  /* eslint-disable-next-line jsx-a11y/aria-role */
+  <span role="text">
+    <VisuallyHiddenText>{type}, </VisuallyHiddenText>
+    <span>{headline}</span>
+    <VisuallyHiddenText>, 2,15</VisuallyHiddenText>
+  </span>
+);
+
 /* eslint-disable react/prop-types */
 const InfoComponent = ({
   headlineText,
@@ -54,6 +64,7 @@ const InfoComponent = ({
   service,
   isLive,
   dir,
+  type,
   alsoItems,
 }) => (
   <>
@@ -62,7 +73,7 @@ const InfoComponent = ({
         {isLive ? (
           <LiveComponent service={service} dir={dir} headline={headlineText} />
         ) : (
-          headlineText
+          <HiddenText headline={headlineText} type={type} />
         )}
       </Link>
     </Headline>
@@ -98,6 +109,12 @@ const generateStory = ({ topStory, alsoItems = null }) =>
       service,
       dir,
     }) => {
+      const mediaType = select(
+        'Media Type',
+        ['No media', 'video', 'audio', 'photogallery'],
+        'No media',
+      );
+
       const Info = (
         <InfoComponent
           headlineText={headlineText}
@@ -107,14 +124,9 @@ const generateStory = ({ topStory, alsoItems = null }) =>
           service={service}
           isLive={boolean('isLive', false)}
           dir={dir}
+          type={mediaType}
           alsoItems={alsoItems}
         />
-      );
-
-      const mediaType = select(
-        'Media Type',
-        ['No media', 'video', 'audio', 'photogallery'],
-        'No media',
       );
 
       const Img = buildImg();
