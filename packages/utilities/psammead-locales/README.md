@@ -26,6 +26,7 @@ The following locales have overrides to meet BBC World Service requirements wher
 - `/moment/mr` - locale override for Marathi
 - `/moment/pa-in` - locale override for Punjabi
 - `/moment/hi` - locale override for Hindi
+- `/moment/gu` - locale override for Gujarati
 
 ### Numerals
 
