@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 1.7.16 | [PR#2160](https://github.com/bbc/psammead/pull/2160) Talos - Bump Dependencies - @bbc/psammead-test-helpers |
 | 1.7.15 | [PR#2147](https://github.com/bbc/psammead/pull/2147) Talos - Bump Dependencies - @bbc/psammead-brand, @bbc/psammead-caption, @bbc/psammead-copyright, @bbc/psammead-image-placeholder, @bbc/psammead-inline-link, @bbc/psammead-media-indicator, @bbc/psammead-paragraph, @bbc/psammead-story-promo, @bbc/psammead-timestamp |
 | 1.7.14 | [PR#2145](https://github.com/bbc/psammead/pull/2145) Talos - Bump Dependencies - @bbc/psammead-styles |
 | 1.7.13 | [PR#2111](https://github.com/bbc/psammead/pull/2111) Talos - Bump Dependencies - @bbc/psammead-locales |
