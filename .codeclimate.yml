@@ -1,0 +1,12 @@
+version: '2'
+plugins:
+  duplication:
+    enabled: true
+    config:
+      languages:
+      - javascript
+    exclude_patterns:
+      - '**/*.test.js'
+
+exclude_patterns:
+  - 'packages/utilities/psammead-locales/moment/*.test.js'
