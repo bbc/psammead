@@ -29,10 +29,6 @@ const SKIP_LINK_BORDER = '0.1875rem'; // 3px
 const SKIP_LINK_TOP_POSITION_LARGE = '-4rem'; // -64px
 const SKIP_LINK_TOP_POSITION_SMALL = '-3rem'; // -48px
 
-const StyledNav = styled.nav`
-  background-color: ${C_POSTBOX};
-`;
-
 const NavWrapper = styled.div`
   position: relative;
   max-width: ${GEL_GROUP_5_SCREEN_WIDTH_MIN};
@@ -93,15 +89,6 @@ const StyledListItem = styled.li`
     width: ${GEL_GROUP_5_SCREEN_WIDTH_MIN};
     border-bottom: 0.0625rem solid ${BORDER_COLOR};
     z-index: -1;
-
-    ${({ dir }) =>
-      dir === 'ltr'
-        ? css`
-            left: 0;
-          `
-        : css`
-            right: 0;
-          `}
   }
 `;
 
@@ -172,12 +159,11 @@ export const NavigationLi = ({
   children: link,
   url,
   script,
-  dir,
   currentPageText,
   active,
   service,
 }) => (
-  <StyledListItem role="listitem" dir={dir}>
+  <StyledListItem role="listitem">
     {active && currentPageText ? (
       <StyledLink
         href={url}
@@ -197,8 +183,20 @@ export const NavigationLi = ({
   </StyledListItem>
 );
 
-const Navigation = ({ children, script, skipLinkText, service }) => (
-  <StyledNav role="navigation">
+const StyledNav = styled.nav`
+  background-color: ${C_POSTBOX};
+
+  ${StyledListItem} {
+    ${({ dir }) => css`
+      &::after {
+        ${dir === 'ltr' ? 'left' : 'right'}: 0;
+      }
+    `}
+  }
+`;
+
+const Navigation = ({ children, script, skipLinkText, service, dir }) => (
+  <StyledNav role="navigation" dir={dir}>
     <NavWrapper>
       <SkipLink href="#content" script={script} service={service}>
         {skipLinkText}
@@ -213,7 +211,10 @@ Navigation.propTypes = {
   script: shape(scriptPropType).isRequired,
   skipLinkText: string.isRequired,
   service: string.isRequired,
+  dir: oneOf(['ltr', 'rtl']),
 };
+
+Navigation.defaultProps = { dir: 'ltr' };
 
 NavigationUl.propTypes = {
   children: node.isRequired,
@@ -223,14 +224,12 @@ NavigationLi.propTypes = {
   children: node.isRequired,
   url: string.isRequired,
   script: shape(scriptPropType).isRequired,
-  dir: oneOf(['ltr', 'rtl']),
   active: bool,
   currentPageText: string,
   service: string.isRequired,
 };
 
 NavigationLi.defaultProps = {
-  dir: 'ltr',
   active: false,
   currentPageText: null,
 };
