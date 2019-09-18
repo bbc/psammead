@@ -1,4 +1,4 @@
-# Code standards?!
+# Code standards
 
 ## Documentation index
 Please familiarise yourself with our:
@@ -12,7 +12,13 @@ Please familiarise yourself with our:
 
 NB there is further documentation colocated with relevant packages and code. The above list is an index of the top-level documentation of our repo (and our sibling repo [Simorgh](https://github.com/bbc/simorgh)).
 
-## Use REMs, explain why and what they are or find a 3rd party ref.
+## Overview
+We follow the project board guide here: [Github Project Board Guide](https://github.com/bbc/simorgh/blob/latest/docs/Project-Board-Guide.md)
+We also generally follow the code standards written in our sibling repo: [Simorgh Code Standards](https://github.com/bbc/simorgh/blob/latest/docs/Code-Standards.md)
+
+## Psammead specific standards:
+
+### We use REMs
 The REM unit represents a size relative to the root element (e.g., the `font-size` of `<html>`). Unlike the EM, which may be different for each element, the REM is constant throughout the document. Therefore spacing will be global across `Psammead`. So when we create a constant expressed in REMs (e.g. `export const GEL_SPACING = '0.5rem'`) that value, or values based of that value, stay constant, which adds simplicity from a developer perspective.
 
 Further information on REM:
@@ -20,10 +26,6 @@ Further information on REM:
 - https://engageinteractive.co.uk/blog/em-vs-rem-vs-px
 - https://zellwk.com/blog/rem-vs-em/
 
-
-## Package publish, deprecation, and alpha publication process
-
-## Testing approaches
 
 ### Visual regression / screenshot compare testing
 #### Introduction to ChromaticQA
@@ -46,6 +48,14 @@ Advantages
 - Run time for chrome and IE together is approx 6-8m.
 
 ### Accessibility testing
+When you add a component to this repository, you should carry out an Accessibility Swarm, ideally including team members from multiple disciplines and using [the Assistive Technology we support](./README.md#assistive-technology-support).
+
+For changes to an existing component, a shorter swarm with fewer people should be conducted.
+
+[Here are detailed steps on how to run accessibility swarms.](https://bbc.github.io/accessibility-news-and-you/accessibility-swarms)
+
+As a result of the swarm, you may find some issues with your implementation. These should be documented and where relevant, [GitHub Issues](https://github.com/bbc/psammead/issues/new?template=bug_report.md) should be raised.
+
 ### Storybook
 If the component is publicly available in Storybook you can preview this on any device. Don't forget to follow the [testing steps](https://bbc.github.io/accessibility-news-and-you/accessibility-and-testing-with-assistive-technology) and use [supported assistive technology](https://bbc.github.io/accessibility-news-and-you/accessibility-and-supported-assistive-technology).
 
@@ -59,3 +69,11 @@ If you have a PR that is not yet merged and you need to preview this on another 
 * Run storybook ‘npm run storybook’
 * Run your tunnelling tool on the Storybook port
 * In Storybook [open the component in another tab](#open-the-component-in-a-tab)
+
+### After merge
+
+After merging a pull request into `latest` the Jenkins pipeline publishes the new package versions to npm and the Psammead Storybook to github pages at https://bbc.github.io/psammead. Once the pipeline runs successfully:
+
+- Confirm the version update with `npm show {pkg} version`.
+- Confirm storybook updates at https://bbc.github.io/psammead.
+- There will be an auto-generated PR by [Talos (package bumping bot)](https://github.com/bbc/psammead/blob/latest/scripts/talos/README.md) you are responsible for completing the chain of updates, so then our Psammead dependency tree is always up to date.
