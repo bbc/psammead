@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 1.2.9 | [PR#2172](https://github.com/bbc/psammead/pull/2172) Talos - Bump Dependencies - @bbc/gel-foundations |
 | 1.2.8 | [PR#2145](https://github.com/bbc/psammead/pull/2145) Talos - Bump Dependencies - @bbc/psammead-styles |
 | 1.2.7 | [PR#2081](https://github.com/bbc/psammead/pull/2081) Talos - Bump Dependencies - @bbc/psammead-styles |
 | 1.2.6 | [PR#1998](https://github.com/bbc/psammead/pull/1998) Add note about role text to accessibility notes for image source |
