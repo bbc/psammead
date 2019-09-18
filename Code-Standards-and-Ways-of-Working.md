@@ -12,6 +12,13 @@ Please familiarise yourself with our:
 NB there is further documentation colocated with relevant packages and code. The above list is an index of the top-level documentation of our repo (and our sibling repo [Simorgh](https://github.com/bbc/simorgh)).
 
 ## Use REMs, explain why and what they are or find a 3rd party ref.
+The REM unit represents a size relative to the root element (e.g., the `font-size` of `<html>`). Unlike the EM, which may be different for each element, the REM is constant throughout the document. Therefore spacing will be global across `Psammead`. So when we create a constant expressed in REMs (e.g. `export const GEL_SPACING = '0.5rem'`) that value, or values based of that value, stay constant, which adds simplicity from a developer perspective.
+
+Further information on REM:
+- https://developer.mozilla.org/en-US/docs/Web/CSS/length
+- https://engageinteractive.co.uk/blog/em-vs-rem-vs-px
+- https://zellwk.com/blog/rem-vs-em/
+
 
 ## Package publish, deprecation, and alpha publication process
 
