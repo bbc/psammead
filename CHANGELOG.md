@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 1.7.18 | [PR#2175](https://github.com/bbc/psammead/pull/2175) Talos - Bump Dependencies - @bbc/psammead-assets |
 | 1.7.17 | [PR#2138](https://github.com/bbc/psammead/pull/2138) Talos - Bump Dependencies - @storybook/addon-a11y, @storybook/addon-actions, @storybook/addon-knobs, @storybook/addon-notes, @storybook/addon-viewport, @storybook/react, @storybook/theming, eslint, eslint-config-prettier, stylelint-config-recommended |
 | 1.7.16 | [PR#2162](https://github.com/bbc/psammead/pull/2162) Talos - Bump Dependencies - @bbc/psammead-locales, @bbc/psammead-story-promo, @bbc/psammead-storybook-helper |
 | 1.7.15 | [PR#2147](https://github.com/bbc/psammead/pull/2147) Talos - Bump Dependencies - @bbc/psammead-brand, @bbc/psammead-caption, @bbc/psammead-copyright, @bbc/psammead-image-placeholder, @bbc/psammead-inline-link, @bbc/psammead-media-indicator, @bbc/psammead-paragraph, @bbc/psammead-story-promo, @bbc/psammead-timestamp |
