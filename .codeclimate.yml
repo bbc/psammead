@@ -7,6 +7,8 @@ plugins:
       - javascript
     exclude_patterns:
       - '**/*.test.js'
+      - '**/*.test.jsx'
+      - '**/*.stories.jsx'
 
 exclude_patterns:
   - 'packages/utilities/psammead-locales/moment/*.test.js'
