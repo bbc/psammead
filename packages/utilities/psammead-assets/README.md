@@ -50,7 +50,7 @@ Media icons is an object containing styled SVG icons for video, audio and photog
 ## Usage
 
 ```jsx
-import mediaIcons from '@bbc/psammead-assets/svgs';
+import { mediaIcons } from '@bbc/psammead-assets/svgs';
 
 <span>
   {mediaIcons.audio}
