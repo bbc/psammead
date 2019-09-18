@@ -3,7 +3,8 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
-| 1.7.16 | [PR#2163](https://github.com/bbc/psammead/pull/2163) Bumping dependencies - @babel/core, @babel/cli, @babel/plugin-transform-runtime, yeoman-environment, @babel/preset-env, @babel/plugin-transform-modules-commonjs, yargs-parser, yeoman-generator |
+| 1.7.17 | [PR#2163](https://github.com/bbc/psammead/pull/2163) Bumping dependencies - @babel/core, @babel/cli, @babel/plugin-transform-runtime, yeoman-environment, @babel/preset-env, @babel/plugin-transform-modules-commonjs, yargs-parser, yeoman-generator |
+| 1.7.16 | [PR#2162](https://github.com/bbc/psammead/pull/2162) Talos - Bump Dependencies - @bbc/psammead-locales, @bbc/psammead-story-promo, @bbc/psammead-storybook-helper |
 | 1.7.15 | [PR#2147](https://github.com/bbc/psammead/pull/2147) Talos - Bump Dependencies - @bbc/psammead-brand, @bbc/psammead-caption, @bbc/psammead-copyright, @bbc/psammead-image-placeholder, @bbc/psammead-inline-link, @bbc/psammead-media-indicator, @bbc/psammead-paragraph, @bbc/psammead-story-promo, @bbc/psammead-timestamp |
 | 1.7.14 | [PR#2145](https://github.com/bbc/psammead/pull/2145) Talos - Bump Dependencies - @bbc/psammead-styles |
 | 1.7.13 | [PR#2111](https://github.com/bbc/psammead/pull/2111) Talos - Bump Dependencies - @bbc/psammead-locales |
