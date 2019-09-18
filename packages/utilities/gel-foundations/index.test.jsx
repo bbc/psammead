@@ -72,21 +72,24 @@ const typographyExpectedExports = {
 };
 
 const scriptsExpectedExports = {
-  latin: 'object',
-  cyrillic: 'object',
-  latinDiacritics: 'object',
   arabic: 'object',
   arabicPashto: 'object',
   bengali: 'object',
   burmese: 'object',
+  chinese: 'object',
+  cyrillic: 'object',
+  cyrillicAndLatin: 'object',
+  devanagariAndGurmukhi: 'object',
+  ethiopic: 'object',
   hindi: 'object',
+  korean: 'object',
+  latin: 'object',
+  latinDiacritics: 'object',
   nepali: 'object',
+  noAscendersOrDescenders: 'object',
   sinhalese: 'object',
   tamil: 'object',
   thai: 'object',
-  chinese: 'object',
-  korean: 'object',
-  ethiopic: 'object',
 };
 
 const expectedExports = {
