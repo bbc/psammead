@@ -2,6 +2,18 @@
 
 NB all Development Dependencies are in the top level package.json, none are in the packages.
 
+## Documentation index
+Please familiarise yourself with our:
+- [Code of conduct](https://github.com/bbc/psammead/blob/latest/CODE_OF_CONDUCT.md)
+- [Code Standards and Ways of Working](https://github.com/bbc/simorgh/blob/latest/Code-Standards-and-Ways-of-Workinnng.md)
+- [Contributing guidelines](https://github.com/bbc/psammead/blob/latest/CONTRIBUTING.md)
+- [Github Project Board Guide](https://github.com/bbc/simorgh/blob/latest/docs/Project-Board-Guide.md)
+- [Primary README](https://github.com/bbc/psammead/blob/latest/README.md)
+- [Talos (package bumping bot)](https://github.com/bbc/psammead/blob/latest/scripts/talos/README.md)
+- [Use/consumption of Psammead packages guidelines and package list](https://github.com/bbc/psammead/blob/latest/packages/README.md) (you are here)
+
+NB there is further documentation colocated with relevant packages and code. The above list is an index of the top-level documentation of our repo (and our sibling repo [Simorgh](https://github.com/bbc/simorgh)).
+
 ## Consuming/using Psammead components - pre-requisite
 
 These components have been tested in an environment which uses [normalize](https://github.com/necolas/normalize.css) and [`box-sizing: border-box`](https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/) for consistent behaviour across browsers. Additionally, many components depend on the BBC Reith font having been defined.
