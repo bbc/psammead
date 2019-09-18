@@ -43,6 +43,21 @@ const WrappingContainer = () => (
 );
 ```
 
+## Media Icons SVGs
+
+Media icons is an object containing styled SVG icons for video, audio and photogallery. Media icons are sized to work well alongside specific text with typography group `GEL Minion`. They are used in `psammead-media-indicator` component.
+
+## Usage
+
+```jsx
+import { mediaIcons } from '@bbc/psammead-assets/svgs';
+
+<span>
+  {mediaIcons.audio}
+  {duration && datetime && (<time dateTime={datetime}>{duration}</time>)}
+</span>
+```
+
 ## Contributing
 
 When **adding** a new export to this utility package the [export tests](https://github.com/bbc/psammead/blob/5d7395fd60bd8d73796d5a23775b4b5b36db1445/packages/utilities/psammead-assets/index.test.jsx#L11-L18) also need to be updated. When **removing** an exisiting export from this utility package the [export tests](https://github.com/bbc/psammead/blob/5d7395fd60bd8d73796d5a23775b4b5b36db1445/packages/utilities/psammead-assets/index.test.jsx#L11-L18) need to be updated and the package version requires a major change (EG: 1.2.1 -> 2.0.0) as this would be considered a breaking change due to functionality being removed.
