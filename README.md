@@ -66,12 +66,6 @@ npm test
 
 This runs Jest across any packages matching this glob pattern: `packages/components/**/*.test.jsx`. It also runs each package's `npm test` command if it is defined
 
-### :pencil2: Create a new package
-
-```
-npm run create:package
-```
-
 ### :runner: Run Storybook
 
 ```
@@ -125,7 +119,7 @@ Note that these browser support levels have been defined by usage statistics for
 
 [Testing instructions for each assistive technology](https://bbc.github.io/accessibility-news-and-you/accessibility-and-supported-assistive-technology), including priority categories.
 
-## :rocket: Publishing Packages
+## :rocket: Publishing Packages (only available for BBC staff as we publish via our corporate npm)
 
 ### :gear: Setting up your npm account
 
