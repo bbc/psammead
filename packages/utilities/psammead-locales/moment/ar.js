@@ -27,4 +27,11 @@ moment.updateLocale('ar', {
     // Suppress conversion to Eastern numerals from base `ar` locale but retain use of Arabic comma
     return string.replace(/,/g, '،');
   },
+  relativeTime: {
+    past: '%s',
+    m: 'قبل دقيقة واحدة',
+    mm: 'قبل %d دقيقة',
+    h: 'قبل ساعة واحدة',
+    hh: 'قبل %d ساع',
+  },
 });
