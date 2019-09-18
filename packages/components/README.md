@@ -35,7 +35,7 @@ GEL is the BBC's shared design language. All Psammead components should be built
 
 #### Accessible
 
-Finally, Psammead components are built and tested against the [BBC News assistive technology guidelines](https://bbc-news.github.io/accessibility-news-and-you/). More information on building components to these guidelines can be found in the [project's contributing guide](../../CONTRIBUTING.md).
+Finally, Psammead components are built and tested against the [BBC News assistive technology guidelines](https://bbc.github.io/accessibility-news-and-you/). More information on building components to these guidelines can be found in the [project's contributing guide](../../CONTRIBUTING.md).
 
 ## Consuming Psammead components - pre-requisite
 
