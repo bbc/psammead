@@ -2,7 +2,7 @@
 
 ## Storybook
 
-If the component is publicly available in Storybook you can preview this on any device. Don't forget to follow the [testing steps](https://bbc-news.github.io/accessibility-news-and-you/accessibility-and-testing-with-assistive-technology) and use [supported assistive technology](https://bbc-news.github.io/accessibility-news-and-you/accessibility-and-supported-assistive-technology).
+If the component is publicly available in Storybook you can preview this on any device. Don't forget to follow the [testing steps](https://bbc.github.io/accessibility-news-and-you/accessibility-and-testing-with-assistive-technology) and use [supported assistive technology](https://bbc.github.io/accessibility-news-and-you/accessibility-and-supported-assistive-technology).
 
 ### Open the component in a tab
 Storybook publishes components in an iframe within the Storybook UI, this will be acknowledged by assistive technology such as a screen reader, it's therefore recommeded to **view/open the component in another tab** to the Storybook UI, you can then see the component code in isolation without the iframe and Storybook UI.
