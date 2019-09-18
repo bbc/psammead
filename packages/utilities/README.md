@@ -1,5 +1,5 @@
 # Utilities
-
+<!-- this is out of date -->
 ## What are Psammead utilities?
 In addition to components, Psammead contains a selection of utility packages. These include dependencies common to many Psammead components or users, as well as more generic packages to aid the building of other BBC components in a GEL-compliant way.
 

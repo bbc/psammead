@@ -17,6 +17,7 @@ Psammead is a [GEL-compliant](https://www.bbc.co.uk/gel/articles/what-is-gel) Re
 Psammead packages are split into:
 
 - [Components](./packages/components) - GEL-compliant presentational React components, ready for use out of the box, regardless of data source.
+- [Containers](./packages/containers) - Functional components for optional use with presentational components of the same name.
 - [Utilities](./packages/utilities) - Commonly shared Psammead dependencies, and fundamentals to aid building additional GEL-compliant components.
 
 ## Documentation index
@@ -85,7 +86,7 @@ npm run build
 ```
 
 ### :computer: Developing with Psammead
-
+<!-- This is both how to develop in psammead and how to use psammead and why is this in the components not packages readme? -->
 [Learn how to use Psammead components in your own project.](https://github.com/bbc/psammead/blob/latest/packages/components/README.md)
 
 ## :bar_chart: Support levels
@@ -162,12 +163,6 @@ npm run deploy-storybook
 ```
 
 NB, this automatically pushes to the 'gh-pages' branch, which deploys to the live GitHub pages site. Please only run this script on the `latest` branch.
-
-### Contact
-
-Psammead is currently maintained by developers in the BBC Simorgh teams. If you want to open an issue, please add it to our [issues page](https://github.com/bbc/psammead/issues).
-
-Contact us by email on [PsammeadMaintainers@bbc.co.uk](mailto:PsammeadMaintainers@bbc.co.uk), or find us on Slack at #si_repo-psammead in the bbcnews workspace.
 
 ### The name?
 

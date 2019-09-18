@@ -1,5 +1,8 @@
 # Psammead Component
 
+<!-- this seems to belong in contributing -->
+
+
 **If you wish to contribute to a Psammead component, please see our [definition of done](https://github.com/bbc/psammead/blob/latest/CONTRIBUTING.md#definition-of-done) for an overview of our components' structure and workflow.**
 
 Fundamentally, Psammead components are intended to be:
