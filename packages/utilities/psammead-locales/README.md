@@ -30,6 +30,7 @@ The following locales have overrides to meet BBC World Service requirements wher
 - `/moment/ne` - locale override for Nepali
 - `/moment/si` - locale override for Sinhala
 - `/moment/th` - locale override for Thai
+- `/moment/ky` - locale override for Kyrgyz
 
 ### Numerals
 
