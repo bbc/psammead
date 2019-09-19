@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 | ------- | ----------- |
+| 2.11.0 | [PR#2186](https://github.com/bbc/psammead/pull/2186)  Add `si` (Sinhala) and `th` (Thai) locales and update `uk` (Ukrainian) |
 | 2.10.0 | [PR#2165](https://github.com/bbc/psammead/pull/2165)  Add `ky` (Kyrgyz) locale and update `mr` (Marathi) and `ta` (Tamil) locales |
 | 2.9.0 | [PR#2141](https://github.com/bbc/psammead/pull/2141) Add `ne` (Nepali) locale |
 | 2.8.0 | [PR#2149](https://github.com/bbc/psammead/pull/2149) Add `gu` (Gujarati) locale |
