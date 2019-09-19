@@ -17,7 +17,20 @@ Psammead is a [GEL-compliant](https://www.bbc.co.uk/gel/articles/what-is-gel) Re
 Psammead packages are split into:
 
 - [Components](./packages/components) - GEL-compliant presentational React components, ready for use out of the box, regardless of data source.
+- [Containers](./packages/containers) - Functional components for optional use with presentational components of the same name.
 - [Utilities](./packages/utilities) - Commonly shared Psammead dependencies, and fundamentals to aid building additional GEL-compliant components.
+
+## Documentation index
+Please familiarise yourself with our:
+- [Code of conduct](https://github.com/bbc/psammead/blob/latest/CODE_OF_CONDUCT.md)
+- [Code Standards and Ways of Working](https://github.com/bbc/simorgh/blob/latest/Code-Standards-and-Ways-of-Working.md)
+- [Contributing guidelines](https://github.com/bbc/psammead/blob/latest/CONTRIBUTING.md)
+- [Github Project Board Guide](https://github.com/bbc/simorgh/blob/latest/docs/Project-Board-Guide.md)
+- [Primary README](https://github.com/bbc/psammead/blob/latest/README.md) (you are here)
+- [Talos (package bumping bot)](https://github.com/bbc/psammead/blob/latest/scripts/talos/README.md)
+- [Use/consumption of Psammead packages guidelines and package list](https://github.com/bbc/psammead/blob/latest/packages/README.md)
+
+NB there is further documentation colocated with relevant packages and code. The above list is an index of the top-level documentation of our repo (and our sibling repo [Simorgh](https://github.com/bbc/simorgh)).
 
 ## :gift: Getting Started
 
@@ -53,12 +66,6 @@ npm test
 
 This runs Jest across any packages matching this glob pattern: `packages/components/**/*.test.jsx`. It also runs each package's `npm test` command if it is defined
 
-### :pencil2: Create a new package
-
-```
-npm run create:package
-```
-
 ### :runner: Run Storybook
 
 ```
@@ -74,7 +81,7 @@ npm run build
 ```
 
 ### :computer: Developing with Psammead
-
+<!-- This is both how to develop in psammead and how to use psammead and why is this in the components not packages readme? -->
 [Learn how to use Psammead components in your own project.](https://github.com/bbc/psammead/blob/latest/packages/components/README.md)
 
 ## :bar_chart: Support levels
@@ -112,7 +119,7 @@ Note that these browser support levels have been defined by usage statistics for
 
 [Testing instructions for each assistive technology](https://bbc.github.io/accessibility-news-and-you/accessibility-and-supported-assistive-technology), including priority categories.
 
-## :rocket: Publishing Packages
+## :rocket: Publishing Packages (only available for BBC staff as we publish via our corporate npm)
 
 ### :gear: Setting up your npm account
 
@@ -151,12 +158,6 @@ npm run deploy-storybook
 ```
 
 NB, this automatically pushes to the 'gh-pages' branch, which deploys to the live GitHub pages site. Please only run this script on the `latest` branch.
-
-### Contact
-
-Psammead is currently maintained by developers in the BBC Simorgh teams. If you want to open an issue, please add it to our [issues page](https://github.com/bbc/psammead/issues).
-
-Contact us by email on [PsammeadMaintainers@bbc.co.uk](mailto:PsammeadMaintainers@bbc.co.uk), or find us on Slack at #si_repo-psammead in the bbcnews workspace.
 
 ### The name?
 
