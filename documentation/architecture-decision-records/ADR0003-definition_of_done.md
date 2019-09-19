@@ -29,7 +29,7 @@ Text below should also be added to the top of the README:
 - This is an industry standard way to enable publishing a package that is not yet ready for use in a production environment.
 - We should never use alpha versions of components in our production application.
 
-Follow the [developers checklist](https://bbc-news.github.io/accessibility-news-and-you/accessibility-news-and-developers) to help you code with accessibility in mind.
+Follow the [developers checklist](https://bbc.github.io/accessibility-news-and-you/accessibility-news-and-developers) to help you code with accessibility in mind.
 
 - Each Psammead PR that changes the UI should include checking local code with assistive technology (which could just be testing with VoiceOver on your Mac).
 
@@ -39,7 +39,7 @@ No change with how test engineers test these PRs.
 
 Create an issue for updating component's alpha version to a production version (e.g. `1.0.0.alpha.0` to `1.1.0`).
 
-- The relevant PR to update the version can only be merged after an [Accessibility Swarm](https://bbc-news.github.io/accessibility-news-and-you/accessibility-swarms) has taken place.
+- The relevant PR to update the version can only be merged after an [Accessibility Swarm](https://bbc.github.io/accessibility-news-and-you/accessibility-swarms) has taken place.
 
 We use our resources and time effectively and therefore have different levels of swarms - Developer and Team. As a general rule, you can follow the following guidance below, however these are not hard and fast rules. You should confirm what makes sense for your project with the Accessibility Lead.
 
@@ -61,7 +61,7 @@ We use our resources and time effectively and therefore have different levels of
 
 If the accessibility swarm is being carried out on an open PR, this should be done after code reviews, when in the A11y review column, prior to being moved to ready for test.
 
-During accessibility swarms (developer or team), you should always complete the [swarm checklist](https://bbc-news.github.io/accessibility-news-and-you/accessibility-news-and-testers) including testing with all [supported AT](https://bbc-news.github.io/accessibility-news-and-you/accessibility-and-supported-assistive-technology).
+During accessibility swarms (developer or team), you should always complete the [swarm checklist](https://bbc.github.io/accessibility-news-and-you/accessibility-news-and-testers) including testing with all [supported AT](https://bbc.github.io/accessibility-news-and-you/accessibility-and-supported-assistive-technology).
 
 If there are any P1 (priority 1) accessibility issues, they must be addressed before moving from an alpha version to a production version.
 
