@@ -1,11 +1,9 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import { withKnobs, text, boolean, select } from '@storybook/addon-knobs';
+import { withKnobs, text } from '@storybook/addon-knobs';
 import { inputProvider } from '@bbc/psammead-storybook-helpers';
 import Image from '@bbc/psammead-image';
 import Timestamp from '@bbc/psammead-timestamp';
-import MediaIndicator from '@bbc/psammead-media-indicator';
-import VisuallyHiddenText from '@bbc/psammead-visually-hidden-text';
 import StoryPromo, { Headline, Summary, Link, LiveLabel } from './index';
 import relatedItems from '../testHelpers/relatedItems';
 import IndexAlsosContainer from '../testHelpers/IndexAlsosContainer';
@@ -22,17 +20,6 @@ const buildImg = () => (
   />
 );
 
-const MediaIndicatorComponent = (type, service) => {
-  return (
-    <MediaIndicator
-      duration={type !== 'photogallery' && '2:15'}
-      datetime="PT2M15S"
-      service={service}
-      type={type}
-    />
-  );
-};
-
 /* eslint-disable-next-line react/prop-types */
 const LiveComponent = ({ headline, service, dir }) => (
   /* eslint-disable-next-line jsx-a11y/aria-role */
@@ -40,18 +27,7 @@ const LiveComponent = ({ headline, service, dir }) => (
     <LiveLabel service={service} dir={dir}>
       LIVE
     </LiveLabel>
-    <VisuallyHiddenText lang="en-GB">Live, </VisuallyHiddenText>
     {headline}
-  </span>
-);
-
-/* eslint-disable-next-line react/prop-types */
-const HiddenText = ({ type, headline }) => (
-  /* eslint-disable-next-line jsx-a11y/aria-role */
-  <span role="text">
-    <VisuallyHiddenText>{type}, </VisuallyHiddenText>
-    <span>{headline}</span>
-    <VisuallyHiddenText>, 2,15</VisuallyHiddenText>
   </span>
 );
 
@@ -62,19 +38,13 @@ const InfoComponent = ({
   script,
   topStory,
   service,
-  isLive,
   dir,
-  type,
   alsoItems,
 }) => (
   <>
     <Headline script={script} topStory={topStory} service={service}>
       <Link href="https://www.bbc.co.uk/news">
-        {isLive ? (
-          <LiveComponent service={service} dir={dir} headline={headlineText} />
-        ) : (
-          <HiddenText headline={headlineText} type={type} />
-        )}
+        <LiveComponent service={service} dir={dir} headline={headlineText} />
       </Link>
     </Headline>
     <Summary script={script} topStory={topStory} service={service}>
@@ -109,12 +79,6 @@ const generateStory = ({ topStory, alsoItems = null }) =>
       service,
       dir,
     }) => {
-      const mediaType = select(
-        'Media Type',
-        ['No media', 'video', 'audio', 'photogallery'],
-        'No media',
-      );
-
       const Info = (
         <InfoComponent
           headlineText={headlineText}
@@ -122,26 +86,14 @@ const generateStory = ({ topStory, alsoItems = null }) =>
           script={script}
           topStory={topStory}
           service={service}
-          isLive={boolean('isLive', false)}
           dir={dir}
-          type={mediaType}
           alsoItems={alsoItems}
         />
       );
 
       const Img = buildImg();
 
-      return (
-        <StoryPromo
-          image={Img}
-          info={Info}
-          mediaIndicator={
-            mediaType !== 'No media' &&
-            MediaIndicatorComponent(mediaType, service)
-          }
-          topStory={topStory}
-        />
-      );
+      return <StoryPromo image={Img} info={Info} topStory={topStory} />;
     },
   });
 

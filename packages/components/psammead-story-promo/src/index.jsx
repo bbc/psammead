@@ -134,7 +134,7 @@ const InlineMediaIndicator = styled.div`
       @media (min-width: ${GEL_GROUP_2_SCREEN_WIDTH_MIN}) {
         position: absolute;
         bottom: 0;
-      }
+      
       `}
 `;
 
