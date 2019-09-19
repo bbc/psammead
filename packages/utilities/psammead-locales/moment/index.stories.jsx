@@ -28,6 +28,7 @@ import './ta';
 import './gu';
 import './uk';
 import './yo';
+import './ky';
 
 const stories = storiesOf('Utilities|Psammead Locales', module);
 
@@ -50,6 +51,7 @@ const locales = [
   { name: 'Gujarati', locale: 'gu' },
   { name: 'Ukrainian', locale: 'uk' },
   { name: 'Yoruba', locale: 'yo' },
+  { name: 'Kyrgyz', locale: 'ky' },
 ];
 
 // Fixed timestamp for 27 August 2019, 14:54 BST
