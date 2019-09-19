@@ -63,7 +63,7 @@ For example, if your component's main entry-point is `src/foo.jsx`, you should p
 
 - When you run `npm test` all unit tests should pass and there should be 100% test coverage of the component.
 - No JS or CSS lint errors should be present.
-- Your component should be fully accessibility-tested. There's a [test guide for testers](https://bbc-news.github.io/accessibility-news-and-you/accessibility-news-and-testers) and a [checklist for developers](https://bbc-news.github.io/accessibility-news-and-you/accessibility-news-and-developers) as well as guides for [designers](https://bbc-news.github.io/accessibility-news-and-you/accessibility-news-and-designers), [business analysts](https://bbc-news.github.io/accessibility-news-and-you/accessibility-news-and-business-analysts), [product owners](https://bbc-news.github.io/accessibility-news-and-you/accessibility-news-and-product-owners) and [project managers](https://bbc-news.github.io/accessibility-news-and-you/accessibility-news-and-project-managers).
+- Your component should be fully accessibility-tested. There's a [test guide for testers](https://bbc.github.io/accessibility-news-and-you/accessibility-news-and-testers) and a [checklist for developers](https://bbc.github.io/accessibility-news-and-you/accessibility-news-and-developers) as well as guides for [designers](https://bbc.github.io/accessibility-news-and-you/accessibility-news-and-designers), [business analysts](https://bbc.github.io/accessibility-news-and-you/accessibility-news-and-business-analysts), [product owners](https://bbc.github.io/accessibility-news-and-you/accessibility-news-and-product-owners) and [project managers](https://bbc.github.io/accessibility-news-and-you/accessibility-news-and-project-managers).
 
 **_Creating custom tests_**
 By default, Psammead's `npm run test` runs unit tests through Jest. However, so long as adequate test coverage exists, it's not mandatory to test a component with Jest.
@@ -82,7 +82,7 @@ When you add a component to this repository, you should carry out an Accessibili
 
 For changes to an existing component, a shorter swarm with fewer people should be conducted.
 
-[Here are detailed steps on how to run accessibility swarms.](https://bbc-news.github.io/accessibility-news-and-you/accessibility-swarms)
+[Here are detailed steps on how to run accessibility swarms.](https://bbc.github.io/accessibility-news-and-you/accessibility-swarms)
 
 As a result of the swarm, you may find some issues with your implementation. These should be documented and where relevant, [GitHub Issues](https://github.com/bbc/psammead/issues/new?template=bug_report.md) should be raised.
 
