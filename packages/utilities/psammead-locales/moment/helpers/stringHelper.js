@@ -20,4 +20,9 @@ function useEasternNumerals(inputString) {
     .replace(/,/g, '،');
 }
 
+function arrayContains(array, string) {
+  return array.indexOf(string) !== -1;
+}
+
 exports.useEasternNumerals = useEasternNumerals;
+exports.arrayContains = arrayContains;

@@ -52,9 +52,10 @@ function getJalaaliDatetime(gregorianMoment, localeJalaliMonths) {
 function addJalaliDate(locale, jalaliFormats, gregorianString) {
   var localeJalaliMonths = jalaliMonths[locale];
   var gregorianMoment = moment(gregorianString, jalaliFormats, locale, true);
-  // gregorianString must be in one of jalaliFormats, and return an isValid moment for
-  // Jalali calendar to be applied to - e.g this will exclude timeago timestamps
-  if (gregorianMoment.isValid() && localeJalaliMonths.length === 12) {
+  var gregorianMonth = moment.months(gregorianMoment.month());
+  // The gregorianMoment month must match up with the months within the current moments locale
+  // Jalali calendar to be applied to -
+  if (stringHelper.arrayContains(moment.months(), gregorianMonth)) {
     // eslint-disable-next-line prefer-template
     return (
       // eslint-disable-next-line prefer-template
