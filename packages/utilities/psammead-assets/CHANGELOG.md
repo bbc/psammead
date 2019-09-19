@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 2.4.0 | [PR#x](https://github.com/bbc/psammead/pull/x) Add SVG for BBC Scotland |
 | 2.3.0 | [PR#2115](https://github.com/bbc/psammead/pull/2115) Added media icons SVGs |
 | 2.2.4 | [PR#1942](https://github.com/bbc/psammead/pull/1942) Talos - Bump React to 16.9.0 |
 | 2.2.3 | [PR#1847](https://github.com/bbc/psammead/pull/1847) Fixed Telugu typos |
