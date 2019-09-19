@@ -114,15 +114,15 @@ test('format week', function () {
 test('from', function () {
     var start = moment([2007, 1, 28]);
     assert.equal(start.from(moment([2007, 1, 28]).add({s: 44}), true),  'තත්පර කිහිපය', '44 seconds = a few seconds');
-    assert.equal(start.from(moment([2007, 1, 28]).add({s: 45}), true),  'මිනිත්තුව',      '45 seconds = a minute');
-    assert.equal(start.from(moment([2007, 1, 28]).add({s: 89}), true),  'මිනිත්තුව',      '89 seconds = a minute');
+    assert.equal(start.from(moment([2007, 1, 28]).add({s: 45}), true),  'මිනිත්තු 1',      '45 seconds = a minute');
+    assert.equal(start.from(moment([2007, 1, 28]).add({s: 89}), true),  'මිනිත්තු 1',      '89 seconds = a minute');
     assert.equal(start.from(moment([2007, 1, 28]).add({s: 90}), true),  'මිනිත්තු 2',     '90 seconds = 2 minutes');
     assert.equal(start.from(moment([2007, 1, 28]).add({m: 44}), true),  'මිනිත්තු 44',    '44 minutes = 44 minutes');
-    assert.equal(start.from(moment([2007, 1, 28]).add({m: 45}), true),  'පැය',       '45 minutes = an hour');
-    assert.equal(start.from(moment([2007, 1, 28]).add({m: 89}), true),  'පැය',       '89 minutes = an hour');
-    assert.equal(start.from(moment([2007, 1, 28]).add({m: 90}), true),  'පැය 2',       '90 minutes = 2 hours');
-    assert.equal(start.from(moment([2007, 1, 28]).add({h: 5}), true),   'පැය 5',       '5 hours = 5 hours');
-    assert.equal(start.from(moment([2007, 1, 28]).add({h: 21}), true),  'පැය 21',      '21 hours = 21 hours');
+    assert.equal(start.from(moment([2007, 1, 28]).add({m: 45}), true),  'පැයකට',       '45 minutes = an hour');
+    assert.equal(start.from(moment([2007, 1, 28]).add({m: 89}), true),  'පැයකට',       '89 minutes = an hour');
+    assert.equal(start.from(moment([2007, 1, 28]).add({m: 90}), true),  'පැය 2 කට',       '90 minutes = 2 hours');
+    assert.equal(start.from(moment([2007, 1, 28]).add({h: 5}), true),   'පැය 5 කට',       '5 hours = 5 hours');
+    assert.equal(start.from(moment([2007, 1, 28]).add({h: 21}), true),  'පැය 21 කට',      '21 hours = 21 hours');
     assert.equal(start.from(moment([2007, 1, 28]).add({h: 22}), true),  'දිනය',         '22 hours = a day');
     assert.equal(start.from(moment([2007, 1, 28]).add({h: 35}), true),  'දිනය',         '35 hours = a day');
     assert.equal(start.from(moment([2007, 1, 28]).add({h: 36}), true),  'දින 2',        '36 hours = 2 days');
@@ -145,11 +145,11 @@ test('from', function () {
 
 test('suffix', function () {
     assert.equal(moment(30000).from(0), 'තත්පර කිහිපයකින්',  'prefix');
-    assert.equal(moment(0).from(30000), 'තත්පර කිහිපයකට පෙර', 'suffix');
+    assert.equal(moment(0).from(30000), 'තත්පර කිහිපය පෙර', 'suffix');
 });
 
 test('now from now', function () {
-    assert.equal(moment().fromNow(), 'තත්පර කිහිපයකට පෙර',  'now from now should display as in the past');
+    assert.equal(moment().fromNow(), 'තත්පර කිහිපය පෙර',  'now from now should display as in the past');
 });
 
 test('fromNow', function () {
