@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 1.7.20 | [PR#2185](https://github.com/bbc/psammead/pull/2185) Talos - Bump Dependencies - @bbc/psammead-locales |
 | 1.7.19 | [PR#1967](https://github.com/bbc/psammead/issues/1967) Expand changeScanner to cover base level packages |
 | 1.7.18 | [PR#2163](https://github.com/bbc/psammead/pull/2163) Bumping dependencies - @babel/core, @babel/cli, @babel/plugin-transform-runtime, yeoman-environment, @babel/preset-env, @babel/plugin-transform-modules-commonjs, yargs-parser |
 | 1.7.17 | [PR#2138](https://github.com/bbc/psammead/pull/2138) Talos - Bump Dependencies - @storybook/addon-a11y, @storybook/addon-actions, @storybook/addon-knobs, @storybook/addon-notes, @storybook/addon-viewport, @storybook/react, @storybook/theming, eslint, eslint-config-prettier, stylelint-config-recommended |
