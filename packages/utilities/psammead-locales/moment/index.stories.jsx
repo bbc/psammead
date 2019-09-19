@@ -28,7 +28,7 @@ import './gu';
 import './uk';
 import './yo';
 import './ky';
-import './so';
+import './om';
 import './am';
 
 const stories = storiesOf('Utilities|Psammead Locales', module);
@@ -52,7 +52,7 @@ const locales = [
   { name: 'Ukrainian', locale: 'uk' },
   { name: 'Yoruba', locale: 'yo' },
   { name: 'Kyrgyz', locale: 'ky' },
-  { name: 'Somali', locale: 'so' },
+  { name: 'Afaan Oromoo', locale: 'om' },
   { name: 'Amharic', locale: 'am' },
 ];
 

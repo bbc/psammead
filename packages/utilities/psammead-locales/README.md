@@ -11,6 +11,8 @@ The following [Moment.js](https://momentjs.com/) locales have been added as they
 - `/moment/ig` - locale for Igbo
 - `/moment/pcm` - locale for Pidgin
 - `/moment/ps` - locale for Pashto
+- `/moment/om` - locale override for Afaan Oromoo
+- `/moment/am` - locale override for Amharic
 
 The following locales have overrides to meet BBC World Service requirements where these differ from the upstream locale. Note that importing them will also cause the upstream locale to be loaded.
 
@@ -29,8 +31,6 @@ The following locales have overrides to meet BBC World Service requirements wher
 - `/moment/gu` - locale override for Gujarati
 - `/moment/ne` - locale override for Nepali
 - `/moment/ky` - locale override for Kyrgyz
-- `/moment/so` - locale override for Somali
-- `/moment/am` - locale override for Amharic
 
 ### Numerals
 
