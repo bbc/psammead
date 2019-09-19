@@ -13,6 +13,12 @@ describe(`changeScanner - getChanges`, () => {
         'packages/components/foobar/index.test.js',
         'packages/components/barfoo/package.json',
         'packages/components/apples/dist/package.json',
+        'packages/containers/foo-bar/dist/package.json',
+        'packages/utilities/bar-foo/dist/package.json',
+        'scripts/getChanges.js',
+        'scripts/changeScanner/index.js',
+        'packages/components/README.md',
+        'packages/README.md',
         '',
       ].join('\n'),
     });
@@ -29,14 +35,21 @@ describe(`changeScanner - getChanges`, () => {
       barfoo: ['package.json'],
       foobar: ['index.js', 'index.test.js'],
       apples: ['dist/package.json'],
+      'foo-bar': ['dist/package.json'],
+      'bar-foo': ['dist/package.json'],
+      psammead: [
+        'scripts/getChanges.js',
+        'scripts/changeScanner/index.js',
+        'packages/components/README.md',
+        'packages/README.md',
+      ],
     });
 
     expect(exec).toHaveBeenCalledTimes(2);
 
     expect(exec).toHaveBeenCalledWith('git fetch --all;', { silent: true });
-    expect(exec).toHaveBeenCalledWith(
-      'git diff --name-only origin/latest ./packages/*/*/*',
-      { silent: true },
-    );
+    expect(exec).toHaveBeenCalledWith('git diff --name-only origin/latest', {
+      silent: true,
+    });
   });
 });
