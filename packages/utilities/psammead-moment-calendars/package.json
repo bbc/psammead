@@ -1,0 +1,25 @@
+{
+  "name": "@bbc/psammead-moment-calendars",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "module": "esm/index.js",
+  "sideEffects": false,
+  "description": "This package provides logic for converting calendar formats using Moment.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/BBC-News/psammead/tree/latest/packages/components/psammead-moment-calendars"
+  },
+  "author": {
+    "name": "Psammead Maintainers",
+    "email": "PsammeadMaintainers@bbc.co.uk"
+  },
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/bbc/psammead/issues"
+  },
+  "homepage": "https://github.com/BBC-News/psammead/blob/latest/packages/components/psammead-moment-calendars/README.md",
+  "dependencies": {},
+  "peerDependencies": {
+    "react": "^16.9.0"
+  }
+}
