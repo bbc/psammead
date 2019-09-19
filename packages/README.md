@@ -2,7 +2,72 @@
 
 NB all Development Dependencies are in the top level package.json, none are in the packages.
 
-## [Components](./components)
+## Documentation index
+Please familiarise yourself with our:
+- [Code of conduct](https://github.com/bbc/psammead/blob/latest/CODE_OF_CONDUCT.md)
+- [Code Standards and Ways of Working](https://github.com/bbc/simorgh/blob/latest/Code-Standards-and-Ways-of-Working.md)
+- [Contributing guidelines](https://github.com/bbc/psammead/blob/latest/CONTRIBUTING.md)
+- [Github Project Board Guide](https://github.com/bbc/simorgh/blob/latest/docs/Project-Board-Guide.md)
+- [Primary README](https://github.com/bbc/psammead/blob/latest/README.md)
+- [Talos (package bumping bot)](https://github.com/bbc/psammead/blob/latest/scripts/talos/README.md)
+- [Use/consumption of Psammead packages guidelines and package list](https://github.com/bbc/psammead/blob/latest/packages/README.md) (you are here)
+
+NB there is further documentation colocated with relevant packages and code. The above list is an index of the top-level documentation of our repo (and our sibling repo [Simorgh](https://github.com/bbc/simorgh)).
+
+## Using/consuming Psammead components
+NB the main example of use is this repo's sibling repo [Simorgh](https://github.com/bbc/simorgh).
+### Pre-requisite for use
+
+These components have been tested in an environment which uses [normalize](https://github.com/necolas/normalize.css) and [`box-sizing: border-box`](https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/) for consistent behaviour across browsers. Additionally, many components depend on the BBC Reith font having been defined.
+
+You can do this in pure CSS:
+
+```html
+<link
+  rel="stylesheet"
+  href="https://necolas.github.io/normalize.css/8.0.0/normalize.css"
+/>
+<style>
+  /* Box Sizing https://bit.ly/1A91I0J */
+  html {
+    box-sizing: border-box;
+    font-size: 100%;
+  }
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+
+  @font-face {
+    font-display: optional;
+    font-family: 'ReithSans';
+    font-style: normal;
+    font-weight: 400;
+    src: url('https://gel.files.bbci.co.uk/r2.511/BBCReithSans_W_Rg.woff2')
+        format('woff2'), url('https://gel.files.bbci.co.uk/r2.511/BBCReithSans_W_Rg.woff')
+        format('woff');
+  }
+  @font-face {
+    font-display: optional;
+    font-family: 'ReithSerif';
+    font-style: normal;
+    font-weight: 600;
+    src: url('https://gel.files.bbci.co.uk/r2.511/BBCReithSerif_W_Md.woff2')
+        format('woff2'), url('https://gel.files.bbci.co.uk/r2.511/BBCReithSerif_W_Md.woff')
+        format('woff');
+  }
+</style>
+```
+
+Or if you're using [styled-components](https://styled-components.com), you can use [styled-normalize](https://www.npmjs.com/package/styled-normalize) (`npm install styled-normalize`) and `createGlobalStyle` to [manage global styles as has been done in Simorgh](https://github.com/bbc/simorgh/blob/latest/src/app/lib/globalStyles.js).
+
+[See documentation on the Styled Components site](https://www.styled-components.com/docs/tooling#babel-plugin)
+
+**NOTE**: if you run into issues with CSS not being applied to your components, it is likely that there is a duplicate `styled-components` dependency somewhere in your packages. You can try running [`npm dedupe`](https://www.styled-components.com/docs/faqs#duplicated-module-in-node_modules) in most cases, or [`lerna bootstrap --hoist`](https://www.styled-components.com/docs/faqs#usage-with-lerna) in monorepo setups such as Psammead's. Failing that, make sure your application's `styled-components` dependency is the same version as that in Psammead.
+
+## List of all packages
+### [Components](./components)
 
 <!-- prettier-ignore -->
 | Package | Version | Dependencies | Peer Dependencies
@@ -28,14 +93,18 @@ NB all Development Dependencies are in the top level package.json, none are in t
 | [`@bbc/psammead-timestamp`](./components/psammead-timestamp) |[![npm version](https://img.shields.io/npm/v/@bbc/psammead-timestamp.svg)](https://www.npmjs.com/package/@bbc/psammead-timestamp) |[![Dependency Status](https://david-dm.org/bbc/psammead.svg?path=packages/components/psammead-timestamp)](https://david-dm.org/bbc/psammead?path=packages/components/psammead-timestamp) | [![peerDependencies Status](https://david-dm.org/bbc/psammead/peer-status.svg?path=packages/components/psammead-timestamp)](https://david-dm.org/bbc/psammead?path=packages/components/psammead-timestamp&type=peer) |
 | [`@bbc/psammead-visually-hidden-text`](./components/psammead-visually-hidden-text) |[![npm version](https://img.shields.io/npm/v/@bbc/psammead-visually-hidden-text.svg)](https://www.npmjs.com/package/@bbc/psammead-visually-hidden-text) |[![Dependency Status](https://david-dm.org/bbc/psammead.svg?path=packages/components/psammead-visually-hidden-text)](https://david-dm.org/bbc/psammead?path=packages/components/psammead-visually-hidden-text) | [![peerDependencies Status](https://david-dm.org/bbc/psammead/peer-status.svg?path=packages/components/psammead-visually-hidden-text)](https://david-dm.org/bbc/psammead?path=packages/components/psammead-visually-hidden-text&type=peer) |
 
-## [Containers](./containers)
+### [Containers](./containers)
 
 <!-- prettier-ignore -->
 | Package | Version | Dependencies | Peer Dependencies
 |--------|--------|------------|------------|
 | [`@bbc/psammead-timestamp-container`](./containers/psammead-timestamp-container) |[![npm version](https://img.shields.io/npm/v/@bbc/psammead-timestamp-container.svg)](https://www.npmjs.com/package/@bbc/psammead-timestamp-container) |[![Dependency Status](https://david-dm.org/bbc/psammead.svg?path=packages/containers/psammead-timestamp-container)](https://david-dm.org/bbc/psammead?path=packages/containers/psammead-timestamp-container) | [![peerDependencies Status](https://david-dm.org/bbc/psammead/peer-status.svg?path=packages/containers/psammead-timestamp-container)](https://david-dm.org/bbc/psammead?path=packages/containers/psammead-timestamp-container&type=peer) |
 
-## [Utilities](./utilities)
+### [Utilities](./utilities)
+
+In order to be added to Psammead, utility packages should:
+* be common requirements of many of the repo's components, or many of the repo's users.
+* contain realistic usage examples.
 
 <!-- prettier-ignore -->
 | Package | Version | Dependencies | Peer Dependencies
