@@ -27,6 +27,7 @@ import './ta';
 import './gu';
 import './uk';
 import './yo';
+import './ky';
 import './so';
 import './am';
 
@@ -50,6 +51,7 @@ const locales = [
   { name: 'Gujarati', locale: 'gu' },
   { name: 'Ukrainian', locale: 'uk' },
   { name: 'Yoruba', locale: 'yo' },
+  { name: 'Kyrgyz', locale: 'ky' },
   { name: 'Somali', locale: 'so' },
   { name: 'Amharic', locale: 'am' },
 ];
