@@ -16,12 +16,22 @@ The following locales have overrides to meet BBC World Service requirements wher
 
 - `/moment/ar` - locale override for Arabic
 - `/moment/fa` - locale override for Persian (Farsi)
+- `/moment/pt-br` - locale override for Brasil
+- `/moment/ru` - locale override for Russian
+- `/moment/sr` - locale override for Serbian
+- `/moment/sr-cyrl` - locale override for Serbian Cyrillic
+- `/moment/uk` - locale override for Ukrainian
 - `/moment/yo` - locale override for Yoruba
+- `/moment/ta` - locale override for Tamil
+- `/moment/mr` - locale override for Marathi
+- `/moment/pa-in` - locale override for Punjabi
+- `/moment/hi` - locale override for Hindi
+- `/moment/gu` - locale override for Gujarati
+- `/moment/ne` - locale override for Nepali
 
 ### Numerals
 
 `/numerals` - Numerals in several different number systems, e.g. Bengali, Burmese, Eastern Arabic, Western Arabic. This can be used for localised numbers for components. Returns arrays of the format `['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '10'];`
-
 
 ## Installation
 
@@ -45,7 +55,6 @@ moment.locale('ig');
 ```jsx
 import { Bengali } from '@bbc/psammead-locales/numerals';
 ```
-
 
 ## Contributing
 

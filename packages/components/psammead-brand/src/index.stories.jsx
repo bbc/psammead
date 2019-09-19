@@ -1,5 +1,6 @@
 import React from 'react';
 import {
+  color,
   select,
   number,
   text,
@@ -9,6 +10,7 @@ import {
 import { storiesOf } from '@storybook/react';
 import * as svgs from '@bbc/psammead-assets/svgs';
 import { dirDecorator } from '@bbc/psammead-storybook-helpers';
+import { C_POSTBOX, C_WHITE } from '@bbc/psammead-styles/colours';
 import notes from '../README.md';
 import Brand from './index';
 
@@ -29,6 +31,8 @@ const inputs = () => {
   const svgHeightInput = number('desired height svg', svgMaxHeight);
   const borderBottom = boolean('Border Bottom', false);
   const borderTop = boolean('Border Top', false);
+  const backgroundColour = color('Background colour', `${C_POSTBOX}`);
+  const logoColour = color('Logo colour', `${C_WHITE}`);
 
   return {
     productInput,
@@ -39,6 +43,8 @@ const inputs = () => {
     maxWidthInput,
     borderTop,
     borderBottom,
+    backgroundColour,
+    logoColour,
   };
 };
 
@@ -57,6 +63,8 @@ storiesOf('Components|Brand', module)
         svgChoice,
         borderBottom,
         borderTop,
+        backgroundColour,
+        logoColour,
       } = inputs();
 
       return (
@@ -69,6 +77,8 @@ storiesOf('Components|Brand', module)
           svg={svgs[svgChoice]}
           borderBottom={borderBottom}
           borderTop={borderTop}
+          backgroundColour={backgroundColour}
+          logoColour={logoColour}
         />
       );
     },
@@ -86,6 +96,8 @@ storiesOf('Components|Brand', module)
         svgChoice,
         borderBottom,
         borderTop,
+        backgroundColour,
+        logoColour,
       } = inputs();
 
       return (
@@ -99,6 +111,8 @@ storiesOf('Components|Brand', module)
           url="https://www.bbc.com/news"
           borderBottom={borderBottom}
           borderTop={borderTop}
+          backgroundColour={backgroundColour}
+          logoColour={logoColour}
         />
       );
     },

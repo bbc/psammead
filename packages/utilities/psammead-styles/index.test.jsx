@@ -70,6 +70,7 @@ const coloursExpectedExports = {
   C_CONSENT_BACKGROUND: 'string',
   C_CONSENT_ACTION: 'string',
   C_CONSENT_CONTENT: 'string',
+  C_DARK_SALTIRE: 'string',
 };
 
 const expectedExports = {
