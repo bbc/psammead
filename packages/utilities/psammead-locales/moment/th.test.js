@@ -76,15 +76,15 @@ test('format week', function () {
 test('from', function () {
     var start = moment([2007, 1, 28]);
     assert.equal(start.from(moment([2007, 1, 28]).add({s: 44}), true),  'ไม่กี่วินาที',   '44 seconds = a few seconds');
-    assert.equal(start.from(moment([2007, 1, 28]).add({s: 45}), true),  '1 นาที', '45 seconds = a minute');
-    assert.equal(start.from(moment([2007, 1, 28]).add({s: 89}), true),  '1 นาที', '89 seconds = a minute');
-    assert.equal(start.from(moment([2007, 1, 28]).add({s: 90}), true),  '2 นาที',  '90 seconds = 2 minutes');
-    assert.equal(start.from(moment([2007, 1, 28]).add({m: 44}), true),  '44 นาที', '44 minutes = 44 minutes');
-    assert.equal(start.from(moment([2007, 1, 28]).add({m: 45}), true),  '1 ชั่วโมง', '45 minutes = an hour');
-    assert.equal(start.from(moment([2007, 1, 28]).add({m: 89}), true),  '1 ชั่วโมง', '89 minutes = an hour');
-    assert.equal(start.from(moment([2007, 1, 28]).add({m: 90}), true),  '2 ชั่วโมง',  '90 minutes = 2 hours');
-    assert.equal(start.from(moment([2007, 1, 28]).add({h: 5}), true),   '5 ชั่วโมง',  '5 hours = 5 hours');
-    assert.equal(start.from(moment([2007, 1, 28]).add({h: 21}), true),  '21 ชั่วโมง', '21 hours = 21 hours');
+    assert.equal(start.from(moment([2007, 1, 28]).add({s: 45}), true),  '1 นาทีที่ผ่านมา', '45 seconds = a minute');
+    assert.equal(start.from(moment([2007, 1, 28]).add({s: 89}), true),  '1 นาทีที่ผ่านมา', '89 seconds = a minute');
+    assert.equal(start.from(moment([2007, 1, 28]).add({s: 90}), true),  '2 นาทีที่ผ่านมา',  '90 seconds = 2 minutes');
+    assert.equal(start.from(moment([2007, 1, 28]).add({m: 44}), true),  '44 นาทีที่ผ่านมา', '44 minutes = 44 minutes');
+    assert.equal(start.from(moment([2007, 1, 28]).add({m: 45}), true),  '1 ชั่วโมงที่แล้ว', '45 minutes = an hour');
+    assert.equal(start.from(moment([2007, 1, 28]).add({m: 89}), true),  '1 ชั่วโมงที่แล้ว', '89 minutes = an hour');
+    assert.equal(start.from(moment([2007, 1, 28]).add({m: 90}), true),  '2 ชั่วโมงที่แล้ว',  '90 minutes = 2 hours');
+    assert.equal(start.from(moment([2007, 1, 28]).add({h: 5}), true),   '5 ชั่วโมงที่แล้ว',  '5 hours = 5 hours');
+    assert.equal(start.from(moment([2007, 1, 28]).add({h: 21}), true),  '21 ชั่วโมงที่แล้ว', '21 hours = 21 hours');
     assert.equal(start.from(moment([2007, 1, 28]).add({h: 22}), true),  '1 วัน',   '22 hours = a day');
     assert.equal(start.from(moment([2007, 1, 28]).add({h: 35}), true),  '1 วัน',   '35 hours = a day');
     assert.equal(start.from(moment([2007, 1, 28]).add({h: 36}), true),  '2 วัน',   '36 hours = 2 days');
@@ -107,11 +107,11 @@ test('from', function () {
 
 test('suffix', function () {
     assert.equal(moment(30000).from(0), 'อีก ไม่กี่วินาที',  'prefix');
-    assert.equal(moment(0).from(30000), 'ไม่กี่วินาทีที่แล้ว', 'suffix');
+    assert.equal(moment(0).from(30000), 'เมื่อ ไม่กี่วินาที', 'suffix');
 });
 
 test('now from now', function () {
-    assert.equal(moment().fromNow(), 'ไม่กี่วินาทีที่แล้ว',  'now from now should display as in the past');
+    assert.equal(moment().fromNow(), 'เมื่อ ไม่กี่วินาที',  'now from now should display as in the past');
 });
 
 test('fromNow', function () {
