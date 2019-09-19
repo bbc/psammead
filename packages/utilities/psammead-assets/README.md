@@ -24,7 +24,7 @@ import { AMP_SCRIPT } from '@bbc/psammead-assets/amp-boilerplate';
 
 Service brand SVGs, like `news`, are objects that contains an svg group, viewbox, ratio and height;
 
-This package currently has brand SVGs for the BBC News World Services as well as for BBC News, BBS Scotland.
+This package currently has brand SVGs for the BBC News World Services as well as for BBC News, BBC Scotland.
 
 <!-- prettier-ignore -->
 | Property   | Type   | Required | Default | Example                  |
