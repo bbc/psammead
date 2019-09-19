@@ -16,7 +16,7 @@ A clear and concise description of any alternative solutions or features you've 
 **Testing notes**
 [Tester to complete]
 
-Dev insight: Will Cypress tests be required or are unit tests sufficient? Will there be any potential regression? etc
+Dev insight: Will there be any potential regression? etc
 
 - [ ] This feature is expected to need manual testing.
 
