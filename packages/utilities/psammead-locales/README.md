@@ -28,6 +28,8 @@ The following locales have overrides to meet BBC World Service requirements wher
 - `/moment/hi` - locale override for Hindi
 - `/moment/gu` - locale override for Gujarati
 - `/moment/ne` - locale override for Nepali
+- `/moment/so` - locale override for Somali
+- `/moment/am` - locale override for Amharic
 
 ### Numerals
 
