@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 | ------- | ----------- |
+| 2.6.0 | [PR#](https://github.com/bbc/psammead/pull/) Pull in media icons from @bbc/psammead-assets |
 | 2.5.8 | [PR#2145](https://github.com/bbc/psammead/pull/2145) Talos - Bump Dependencies - @bbc/psammead-styles |
 | 2.5.7 | [PR#2081](https://github.com/bbc/psammead/pull/2081) Talos - Bump Dependencies - @bbc/psammead-styles |
 | 2.5.6 | [PR#1993](https://github.com/bbc/psammead/pull/1993) Talos - Bump Dependencies |
