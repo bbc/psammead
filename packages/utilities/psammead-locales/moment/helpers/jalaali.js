@@ -49,8 +49,11 @@ function getJalaaliDatetime(gregorianMoment, localeJalaliMonths) {
   return output;
 }
 
-function addJalaliDate(locale, jalaliFormats, gregorianString) {
+function addJalaliDate(locale, gregorianString) {
   var localeJalaliMonths = jalaliMonths[locale];
+  // Moment formats that should have the Jalali date added
+  // Change 'BST' to 'GMT' when https://github.com/bbc/simorgh/pull/3847 is merged
+  var jalaliFormats = ['D MMMM YYYY', 'LL', 'D MMMM YYYY, HH:mm [BST]'];
   var gregorianMoment = moment(gregorianString, jalaliFormats, locale, true);
   var gregorianMonth = moment.months(gregorianMoment.month());
   // The gregorianMoment month must match up with the months within the current moments locale
