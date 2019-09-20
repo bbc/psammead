@@ -23,3 +23,17 @@ test('format', function () {
         assert.equal(b.format(a[i][0]), a[i][1], a[i][0] + ' ---> ' + a[i][1]);
     }
 });
+
+test('from', function () {
+    var start = moment([2007, 1, 28]);
+    assert.equal(start.from(moment([2007, 1, 28]).add({s: 44}), true), 'یو څو ثانیې', '44 seconds = a few seconds');
+    assert.equal(start.from(moment([2007, 1, 28]).add({s: 45}), true), 'یوه دقیقه', '45 seconds = a minute');
+    assert.equal(start.from(moment([2007, 1, 28]).add({s: 89}), true), 'یوه دقیقه', '89 seconds = a minute');
+    assert.equal(start.from(moment([2007, 1, 28]).add({s: 90}), true), '۲ دقیقې', '90 seconds = 2 minutes');
+    assert.equal(start.from(moment([2007, 1, 28]).add({m: 44}), true), '۴۴ دقیقې', '44 minutes = 44 minutes');
+    assert.equal(start.from(moment([2007, 1, 28]).add({m: 45}), true), 'یو ساعت', '45 minutes = an hour');
+    assert.equal(start.from(moment([2007, 1, 28]).add({m: 89}), true), 'یو ساعت', '89 minutes = an hour');
+    assert.equal(start.from(moment([2007, 1, 28]).add({m: 90}), true), '۲ ساعتونه', '90 minutes = 2 hours');
+    assert.equal(start.from(moment([2007, 1, 28]).add({h: 5}), true), '۵ ساعتونه', '5 hours = 5 hours');
+    assert.equal(start.from(moment([2007, 1, 28]).add({h: 21}), true), '۲۱ ساعتونه', '21 hours = 21 hours');
+});
