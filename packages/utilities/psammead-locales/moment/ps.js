@@ -26,7 +26,6 @@ var jalaliFormats = ['D MMMM YYYY', 'LL'];
 moment.defineLocale('ps', {
   months: pashtoGregorianMonths,
   monthsShort: pashtoGregorianMonths,
-
   relativeTime: {
     past: '%s مخکې', // %s 'ago'
     s: 'یو څو ثانیې', // 'a few seconds'
@@ -35,7 +34,6 @@ moment.defineLocale('ps', {
     h: 'یو ساعت', // 'an hour'
     hh: '%d ساعتونه', // %d 'hours'
   },
-
   postformat: function(string) {
     var str = jalaaliHelper.addJalaliDate(
       'ps',
