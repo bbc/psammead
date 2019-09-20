@@ -10,12 +10,17 @@ import {
 } from '@bbc/gel-foundations/spacings';
 import { GEL_FF_REITH_SANS } from '@bbc/gel-foundations/typography';
 import notes from '../README.md';
+import './am';
 import './ar';
 import './fa';
+import './gu';
+import './ha';
 import './hi';
 import './ig';
+import './ky';
 import './mr';
 import './ne';
+import './om';
 import './pa-in';
 import './pcm';
 import './ps';
@@ -23,21 +28,30 @@ import './pt-br';
 import './ru';
 import './si';
 import './sr';
+import './rw';
+import './so';
 import './sr-cyrl';
+import './sr';
 import './ta';
 import './th';
 import './gu';
+import './ti';
 import './uk';
 import './yo';
-import './ky';
 
 const stories = storiesOf('Utilities|Psammead Locales', module);
 
 const locales = [
+  { name: 'Afaan Oromoo', locale: 'om' },
+  { name: 'Amharic', locale: 'am' },
   { name: 'Arabic', locale: 'ar' },
   { name: 'Brasil', locale: 'pt-br' },
+  { name: 'Gahuza', locale: 'rw' },
+  { name: 'Gujarati', locale: 'gu' },
+  { name: 'Hausa', locale: 'ha' },
   { name: 'Hindi', locale: 'hi' },
   { name: 'Igbo', locale: 'ig' },
+  { name: 'Kyrgyz', locale: 'ky' },
   { name: 'Marathi', locale: 'mr' },
   { name: 'Nepali', locale: 'ne' },
   { name: 'Pashto', locale: 'ps' },
@@ -51,9 +65,10 @@ const locales = [
   { name: 'Tamil', locale: 'ta' },
   { name: 'Thai', locale: 'th' },
   { name: 'Gujarati', locale: 'gu' },
+  { name: 'Somali', locale: 'so' },
   { name: 'Ukrainian', locale: 'uk' },
+  { name: 'Tigrinya', locale: 'ti' },
   { name: 'Yoruba', locale: 'yo' },
-  { name: 'Kyrgyz', locale: 'ky' },
 ];
 
 // Fixed timestamp for 27 August 2019, 14:54 BST
