@@ -3,6 +3,9 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 1.8.2 | [PR#2194](https://github.com/bbc/psammead/pull/2194) Talos - Bump Dependencies - @bbc/psammead-assets |
+| 1.8.1 | [PR#2191](https://github.com/bbc/psammead/pull/2191) Talos - Bump Dependencies - @bbc/gel-foundations, @bbc/psammead-assets, @bbc/psammead-locales, @bbc/psammead-test-helpers |
+| 1.8.0 | [PR#2085](https://github.com/bbc/psammead/pull/2085) Improve Talos body to show details of bumped packages |
 | 1.7.19 | [PR#1967](https://github.com/bbc/psammead/issues/1967) Expand changeScanner to cover base level packages |
 | 1.7.18 | [PR#2163](https://github.com/bbc/psammead/pull/2163) Bumping dependencies - @babel/core, @babel/cli, @babel/plugin-transform-runtime, yeoman-environment, @babel/preset-env, @babel/plugin-transform-modules-commonjs, yargs-parser |
 | 1.7.17 | [PR#2138](https://github.com/bbc/psammead/pull/2138) Talos - Bump Dependencies - @storybook/addon-a11y, @storybook/addon-actions, @storybook/addon-knobs, @storybook/addon-notes, @storybook/addon-viewport, @storybook/react, @storybook/theming, eslint, eslint-config-prettier, stylelint-config-recommended |
