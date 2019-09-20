@@ -2,7 +2,7 @@ const GitHub = require('github-api');
 const getPackageNames = require('./getPackageNames');
 const getPRBody = require('../getPullRequestBody');
 
-const createPullRequest = ({ packages, bumpedPackages, branchName }) => {
+const createPullRequest = ({ packages, bumpedPackagesObj, branchName }) => {
   const gh = new GitHub({
     token: process.env.GITHUB_TOKEN,
   });
@@ -16,7 +16,7 @@ const createPullRequest = ({ packages, bumpedPackages, branchName }) => {
   return repo.createPullRequest({
     title,
     base: 'latest',
-    body: getPRBody(packages, bumpedPackages),
+    body: getPRBody(bumpedPackagesObj),
     head: branchName,
   });
 };

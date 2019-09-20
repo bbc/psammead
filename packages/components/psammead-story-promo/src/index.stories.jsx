@@ -3,7 +3,6 @@ import { storiesOf } from '@storybook/react';
 import { withKnobs, text, boolean, select } from '@storybook/addon-knobs';
 import { inputProvider } from '@bbc/psammead-storybook-helpers';
 import Image from '@bbc/psammead-image';
-import Timestamp from '@bbc/psammead-timestamp';
 import MediaIndicator from '@bbc/psammead-media-indicator';
 import VisuallyHiddenText from '@bbc/psammead-visually-hidden-text';
 import StoryPromo, { Headline, Summary, Link, LiveLabel } from './index';
@@ -80,14 +79,6 @@ const InfoComponent = ({
     <Summary script={script} topStory={topStory} service={service}>
       {summaryText}
     </Summary>
-    <Timestamp
-      datetime={text('Timestamp datetime', '2019-03-01T14:00+00:00')}
-      script={script}
-      padding={false}
-      service={service}
-    >
-      {text('Timestamp', '12 March 2019')}
-    </Timestamp>
     {topStory && alsoItems && (
       <IndexAlsosContainer
         alsoItems={alsoItems}

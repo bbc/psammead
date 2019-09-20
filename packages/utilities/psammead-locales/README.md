@@ -8,28 +8,34 @@ This package provides a collection of locale configs, used in BBC World Service 
 
 The following [Moment.js](https://momentjs.com/) locales have been added as they do not exist upstream:
 
+- `/moment/am` - locale override for Amharic
+- `/moment/ha` - locale for Hausa
 - `/moment/ig` - locale for Igbo
+- `/moment/om` - locale override for Afaan Oromoo
 - `/moment/pcm` - locale for Pidgin
 - `/moment/ps` - locale for Pashto
+- `/moment/rw` - locale for Gahuza
+- `/moment/so` - locale for Somali
+- `/moment/ti` - locale for Tigrinya
 
 The following locales have overrides to meet BBC World Service requirements where these differ from the upstream locale. Note that importing them will also cause the upstream locale to be loaded.
 
 - `/moment/ar` - locale override for Arabic
 - `/moment/fa` - locale override for Persian (Farsi)
+- `/moment/gu` - locale override for Gujarati
+- `/moment/hi` - locale override for Hindi
+- `/moment/ky` - locale override for Kyrgyz
+- `/moment/mr` - locale override for Marathi
+- `/moment/ne` - locale override for Nepali
+- `/moment/pa-in` - locale override for Punjabi
 - `/moment/pt-br` - locale override for Brasil
 - `/moment/ru` - locale override for Russian
 - `/moment/sr` - locale override for Serbian
 - `/moment/sr-cyrl` - locale override for Serbian Cyrillic
-- `/moment/uk` - locale override for Ukrainian
-- `/moment/yo` - locale override for Yoruba
 - `/moment/ta` - locale override for Tamil
-- `/moment/mr` - locale override for Marathi
-- `/moment/pa-in` - locale override for Punjabi
-- `/moment/hi` - locale override for Hindi
-- `/moment/gu` - locale override for Gujarati
-- `/moment/ne` - locale override for Nepali
-- `/moment/ky` - locale override for Kyrgyz
+- `/moment/uk` - locale override for Ukrainian
 - `/moment/uz` - locale override for Uzbek
+- `/moment/yo` - locale override for Yoruba
 
 ### Numerals
 
