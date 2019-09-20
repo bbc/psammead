@@ -21,7 +21,7 @@ The following locales have overrides to meet BBC World Service requirements wher
 - `/moment/gu` - locale override for Gujarati
 - `/moment/hi` - locale override for Hindi
 - `/moment/ky` - locale override for Kyrgyz
-- `/moment/mr` - locale override for Marath
+- `/moment/mr` - locale override for Marathi
 - `/moment/ne` - locale override for Nepali
 - `/moment/pa-in` - locale override for Punjabi
 - `/moment/pt-br` - locale override for Brasil
