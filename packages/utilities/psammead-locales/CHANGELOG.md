@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 | ------- | ----------- |
+| 2.14.0 | [PR#2178](https://github.com/bbc/psammead/pull/2178)  Update `ps` (Pashto) locale to add relative time support |
 | 2.13.0 | [PR#2193](https://github.com/bbc/psammead/pull/2193) Create `rw` (Gahuza) and `ti` (Tigrinya) locales |
 | 2.12.0 | [PR#2179](https://github.com/bbc/psammead/pull/2179) Create `om` (Afaan Oromoo) and `am` (Amharic) locales |
 | 2.11.0 | [PR#2196](https://github.com/bbc/psammead/pull/2196) Create `ha` (Hausa) and `so` (Somali) locales |

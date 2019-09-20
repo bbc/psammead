@@ -24,9 +24,16 @@ var pashtoGregorianMonths = 'جنوري_فبروري_مارچ_اپریل_می_ج
 var jalaliFormats = ['D MMMM YYYY', 'LL'];
 
 moment.defineLocale('ps', {
-  // Gregorian Months
   months: pashtoGregorianMonths,
   monthsShort: pashtoGregorianMonths,
+  relativeTime: {
+    past: '%s مخکې', // %s 'ago'
+    s: 'یو څو ثانیې', // 'a few seconds'
+    m: 'یوه دقیقه', // 'a minute'
+    mm: '%d دقیقې', // %d 'minutes'
+    h: 'یو ساعت', // 'an hour'
+    hh: '%d ساعتونه', // %d 'hours'
+  },
   postformat: function(string) {
     var str = jalaaliHelper.addJalaliDate(
       'ps',
