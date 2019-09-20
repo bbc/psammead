@@ -13,6 +13,7 @@ import notes from '../README.md';
 import './ar';
 import './fa';
 import './gu';
+import './ha';
 import './hi';
 import './ig';
 import './ky';
@@ -24,11 +25,12 @@ import './ps';
 import './pt-br';
 import './ru';
 import './rw';
-import './sr';
+import './so';
 import './sr-cyrl';
+import './sr';
 import './ta';
-import './uk';
 import './ti';
+import './uk';
 import './yo';
 
 const stories = storiesOf('Utilities|Psammead Locales', module);
@@ -38,6 +40,7 @@ const locales = [
   { name: 'Brasil', locale: 'pt-br' },
   { name: 'Gahuza', locale: 'rw' },
   { name: 'Gujarati', locale: 'gu' },
+  { name: 'Hausa', locale: 'ha' },
   { name: 'Hindi', locale: 'hi' },
   { name: 'Igbo', locale: 'ig' },
   { name: 'Kyrgyz', locale: 'ky' },
@@ -50,6 +53,7 @@ const locales = [
   { name: 'Russian', locale: 'ru' },
   { name: 'Serbian', locale: 'sr' },
   { name: 'Serbian Cyrillic', locale: 'sr-cyrl' },
+  { name: 'Somali', locale: 'so' },
   { name: 'Tamil', locale: 'ta' },
   { name: 'Ukrainian', locale: 'uk' },
   { name: 'Tigrinya', locale: 'ti' },
