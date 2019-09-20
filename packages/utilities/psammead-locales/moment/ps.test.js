@@ -35,7 +35,5 @@ test('from', function () {
     assert.equal(start.from(moment([2007, 1, 28]).add({m: 89}), true), 'یو ساعت',     '89 minutes = an hour');
     assert.equal(start.from(moment([2007, 1, 28]).add({m: 90}), true), '۲ ساعتونه',   '90 minutes = 2 hours');
     assert.equal(start.from(moment([2007, 1, 28]).add({h: 5}), true),  '۵ ساعتونه',   '5 hours = 5 hours');
-
-    // To do: After 10 hours, shouldn't this be 'a day'?
     assert.equal(start.from(moment([2007, 1, 28]).add({h: 21}), true), '۲۱ ساعتونه', '21 hours = 21 hours');
 });
