@@ -1,13 +1,5 @@
-const { exec } = require('shelljs');
+const getPackages = require('../getPackages');
 
 module.exports = () => {
-  const paths = exec('npx lerna ls', { silent: true })
-    .stdout.split('\n')
-    .filter(Boolean);
-
-  const removePackageScope = packageName => {
-    const [packageNameWithoutScope] = packageName.split('/').splice(-1);
-    return packageNameWithoutScope;
-  };
-  return paths.map(removePackageScope);
+  return getPackages().map(packageName => packageName.split('/').splice(-1)[0]);
 };

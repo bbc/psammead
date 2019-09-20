@@ -85,7 +85,10 @@ describe('Talos', () => {
     expect(createPullRequest).toHaveBeenCalledTimes(1);
     expect(createPullRequest).toHaveBeenCalledWith({
       branchName: 'branchname',
-      bumpedPackages: ['apple', 'pears'],
+      bumpedPackagesObj: {
+        apple: ['package1  ^1.2  →  ^1.4'],
+        pears: ['package1  ^1.2  →  ^1.4', 'package2  ^1.0  →  ^1.1'],
+      },
       packages: ['package1', 'package2'],
     });
 

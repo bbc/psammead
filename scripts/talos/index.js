@@ -45,7 +45,9 @@ const talos = () => {
         )
         .then(() => checkoutBranch(branchName))
         .then(() => commitChanges('Talos - Bump Dependencies'))
-        .then(() => createPullRequest({ packages, bumpedPackages, branchName }))
+        .then(() =>
+          createPullRequest({ packages, bumpedPackagesObj, branchName }),
+        )
         .then(({ data }) =>
           Promise.all(
             bumpedPackagesNoBBCPrefix.map((packageName, index) => {
