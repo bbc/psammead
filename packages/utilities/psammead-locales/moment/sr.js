@@ -10,7 +10,7 @@ moment.updateLocale('sr', {
   relativeTime: {
     past: 'Pre %s',
     m: '1 minuta',
-    mm: ' minuta: %d',
+    mm: 'minuta: %d',
     h: '1 sata',
     hh: 'sati: %d',
   },
