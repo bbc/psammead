@@ -82,5 +82,5 @@ const mediaIconStories = storiesOf(
 ).addDecorator(withKnobs);
 
 Object.keys(mediaIcons).forEach(iconName => {
-  mediaIconStories.add(iconName, () => mediaIcons[iconName]);
+  mediaIconStories.add(iconName, () => mediaIcons[iconName], { notes });
 });
