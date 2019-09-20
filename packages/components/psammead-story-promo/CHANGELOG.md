@@ -3,6 +3,8 @@
 <!-- prettier-ignore -->
 | Version | Description |
 | ------- | ----------- |
+| 2.7.15 | [PR#2181](https://github.com/bbc/psammead/pull/2181) Remove `Timestamp` in StoryPromo story |
+| 2.7.14 | [PR#2191](https://github.com/bbc/psammead/pull/2191) Talos - Bump Dependencies - @bbc/gel-foundations |
 | 2.7.13 | [PR#2119](https://github.com/bbc/psammead/pull/2119) Add visuallyHiddenText for media types in storybook |
 | 2.7.12 | [PR#2145](https://github.com/bbc/psammead/pull/2145) Talos - Bump Dependencies - @bbc/psammead-styles |
 | 2.7.11 | [PR#2040](https://github.com/bbc/psammead/pull/2040) Pass `props` to IndexAlsos without destructuring to allow passing in of attributes onto the top-level to use data attributes, IDs, etc. |
