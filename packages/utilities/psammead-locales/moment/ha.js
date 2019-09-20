@@ -1,22 +1,9 @@
 var moment = require('moment');
 
-var months = [
-  'Janairu',
-  'Fabrairu',
-  'Maris',
-  'Aprilu',
-  'Mayu',
-  'Yuni',
-  'Yuli',
-  'Agusta',
-  'Satumba',
-  'Oktoba',
-  'Nuwamba',
-  'Disamba',
-];
-
 moment.defineLocale('ha', {
-  months: months,
+  months: 'Janairu_Fabrairu_Maris_Aprilu_Mayu_Yuni_Yuli_Agusta_Satumba_Oktoba_Nuwamba_Disamba'.split(
+    '_'
+  ),
   longDateFormat: { LL: 'D MMMM YYYY' },
   relativeTime: {
     past: '%s wuce',
