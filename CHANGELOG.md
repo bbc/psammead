@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 1.8.3 | [PR#2201](https://github.com/bbc/psammead/pull/2201) Talos - Bump Dependencies - @bbc/psammead-story-promo |
 | 1.8.2 | [PR#2194](https://github.com/bbc/psammead/pull/2194) Talos - Bump Dependencies - @bbc/psammead-assets |
 | 1.8.1 | [PR#2191](https://github.com/bbc/psammead/pull/2191) Talos - Bump Dependencies - @bbc/gel-foundations, @bbc/psammead-assets, @bbc/psammead-locales, @bbc/psammead-test-helpers |
 | 1.8.0 | [PR#2085](https://github.com/bbc/psammead/pull/2085) Improve Talos body to show details of bumped packages |
