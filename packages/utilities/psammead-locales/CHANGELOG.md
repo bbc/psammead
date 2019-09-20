@@ -3,10 +3,10 @@
 <!-- prettier-ignore -->
 | Version | Description |
 | ------- | ----------- |
-| 2.13.0 | [PR#]() Add moment relative timestamp overrides for `ne`, `sr` and `sr-cyrl` locales |
+| 2.13.0 | [PR#2210](https://github.com/bbc/psammead/pull/2210) Add moment relative timestamp overrides for `ne`, `sr` and `sr-cyrl` locales |
 | 2.12.0 | [PR#2179](https://github.com/bbc/psammead/pull/2179) Create `om` (Afaan Oromoo) and `am` (Amharic) locales |
 | 2.11.0 | [PR#2196](https://github.com/bbc/psammead/pull/2196) Create `ha` (Hausa) and `so` (Somali) locales |
-| 2.10.0 | [PR#2165](https://github.com/bbc/psammead/pull/2165)  Add `ky` (Kyrgyz) locale and update `mr` (Marathi) and `ta` (Tamil) locales |
+| 2.10.0 | [PR#2165](https://github.com/bbc/psammead/pull/2165) Add `ky` (Kyrgyz) locale and update `mr` (Marathi) and `ta` (Tamil) locales |
 | 2.9.0 | [PR#2141](https://github.com/bbc/psammead/pull/2141) Add `ne` (Nepali) locale |
 | 2.8.0 | [PR#2149](https://github.com/bbc/psammead/pull/2149) Add `gu` (Gujarati) locale |
 | 2.7.0 | [PR#2114](https://github.com/bbc/psammead/pull/2114) Add some overrides for Brasil, Russian, Serbian and Ukrainian |
@@ -38,5 +38,5 @@
 | 1.2.0 | [PR#1477](https://github.com/bbc/psammead/pull/1477) Add numerals as exports |
 | 1.1.0 | [PR#1430](https://github.com/bbc/psammead/pull/1430) Adds some overrides for Yoruba |
 | 1.0.2 | [PR#1365](https://github.com/bbc/psammead/pull/1365) Bump psammead-styles to 1.2.0|
-| 1.0.1 | [PR#1181](https://github.com/BBC-News/psammead/pull/1181) use `gel-foundations@3.0.3` and `psammead-styles@1.1.3` |
+| 1.0.1 | [PR#1181](https://github.com/BBC-News/psammead/pull/1181) Use `gel-foundations@3.0.3` and `psammead-styles@1.1.3` |
 | 1.0.0 | [PR#638](https://github.com/BBC-News/psammead/pull/638) Initial creation of package |
