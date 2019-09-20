@@ -31,7 +31,10 @@ describe('createPullRequest', () => {
   it('should call github-api correctly', async () => {
     await createPullRequest({
       packages: ['@bbc/apples', '@bbc/pears'],
-      bumpedPackages: ['@bbc/grapes', '@bbc/oranges'],
+      bumpedPackagesObj: {
+        '@bbc/apples': ['package1  ^1.2  →  ^1.4'],
+        '@bbc/pears': ['package1  ^1.2  →  ^1.4', 'package2  ^1.0  →  ^1.1'],
+      },
       branchName: 'foobar',
     });
 
@@ -55,7 +58,10 @@ describe('createPullRequest', () => {
 
     await createPullRequest({
       packages: ['@bbc/apples', '@bbc/pears'],
-      bumpedPackages: ['@bbc/grapes', '@bbc/oranges'],
+      bumpedPackages: {
+        '@bbc/apples': ['package1  ^1.2  →  ^1.4'],
+        '@bbc/pears': ['package1  ^1.2  →  ^1.4', 'package2  ^1.0  →  ^1.1'],
+      },
       branchName: 'foobar',
     }).catch(e => {
       expect(e.message).toEqual('something bad happened');
@@ -65,7 +71,12 @@ describe('createPullRequest', () => {
   it('should shorten the title', async () => {
     await createPullRequest({
       packages: ['@bbc/apples', '@bbc/pears', '@bbc/grapes', '@bbc/oranges'],
-      bumpedPackages: ['@bbc/grapes', '@bbc/oranges'],
+      bumpedPackages: {
+        '@bbc/apples': ['package1  ^1.2  →  ^1.4'],
+        '@bbc/pears': ['package1  ^1.2  →  ^1.4', 'package2  ^1.0  →  ^1.1'],
+        '@bbc/grapes': ['package1  ^1.2  →  ^1.4'],
+        '@bbc/oranges': ['package1  ^1.2  →  ^1.4'],
+      },
       branchName: 'foobar',
     });
     expect(createPullRequestMock).toHaveBeenCalledWith({
