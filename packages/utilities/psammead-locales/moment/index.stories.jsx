@@ -34,10 +34,14 @@ import './am';
 const stories = storiesOf('Utilities|Psammead Locales', module);
 
 const locales = [
+  { name: 'Afaan Oromoo', locale: 'om' },
+  { name: 'Amharic', locale: 'am' },
   { name: 'Arabic', locale: 'ar' },
   { name: 'Brasil', locale: 'pt-br' },
+  { name: 'Gujarati', locale: 'gu' },
   { name: 'Hindi', locale: 'hi' },
   { name: 'Igbo', locale: 'ig' },
+  { name: 'Kyrgyz', locale: 'ky' },
   { name: 'Marathi', locale: 'mr' },
   { name: 'Nepali', locale: 'ne' },
   { name: 'Pashto', locale: 'ps' },
@@ -48,12 +52,8 @@ const locales = [
   { name: 'Serbian', locale: 'sr' },
   { name: 'Serbian Cyrillic', locale: 'sr-cyrl' },
   { name: 'Tamil', locale: 'ta' },
-  { name: 'Gujarati', locale: 'gu' },
   { name: 'Ukrainian', locale: 'uk' },
   { name: 'Yoruba', locale: 'yo' },
-  { name: 'Kyrgyz', locale: 'ky' },
-  { name: 'Afaan Oromoo', locale: 'om' },
-  { name: 'Amharic', locale: 'am' },
 ];
 
 // Fixed timestamp for 27 August 2019, 14:54 BST
