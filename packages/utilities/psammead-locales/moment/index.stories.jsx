@@ -36,6 +36,7 @@ const locales = [
   { name: 'Brasil', locale: 'pt-br' },
   { name: 'Hindi', locale: 'hi' },
   { name: 'Igbo', locale: 'ig' },
+  { name: 'Kyrgyz', locale: 'ky' },
   { name: 'Marathi', locale: 'mr' },
   { name: 'Nepali', locale: 'ne' },
   { name: 'Pashto', locale: 'ps' },
@@ -46,10 +47,11 @@ const locales = [
   { name: 'Serbian', locale: 'sr' },
   { name: 'Serbian Cyrillic', locale: 'sr-cyrl' },
   { name: 'Tamil', locale: 'ta' },
+  { name: 'Gahuza', locale: 'ga' },
   { name: 'Gujarati', locale: 'gu' },
   { name: 'Ukrainian', locale: 'uk' },
+  { name: 'Tigrinya', locale: 'ti' },
   { name: 'Yoruba', locale: 'yo' },
-  { name: 'Kyrgyz', locale: 'ky' },
 ];
 
 // Fixed timestamp for 27 August 2019, 14:54 BST
