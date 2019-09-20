@@ -15,7 +15,7 @@ npm install @bbc/psammead-assets --save
 ## Usage
 
 ```jsx
-import { BBC_BLOCKS, news} from '@bbc/psammead-assets/svgs';
+import { BBC_BLOCKS, news } from '@bbc/psammead-assets/svgs';
 
 import { AMP_SCRIPT } from '@bbc/psammead-assets/amp-boilerplate';
 ```
@@ -24,7 +24,7 @@ import { AMP_SCRIPT } from '@bbc/psammead-assets/amp-boilerplate';
 
 Service brand SVGs, like `news`, are objects that contains an svg group, viewbox, ratio and height;
 
-This package currently has brand SVGs for the BBC services `igbo`, `news`, `persian`, `pidgin`, `thai` and `yoruba`.
+This package currently has brand SVGs for the BBC News World Services as well as for BBC News, BBC Scotland.
 
 <!-- prettier-ignore -->
 | Property   | Type   | Required | Default | Example                  |

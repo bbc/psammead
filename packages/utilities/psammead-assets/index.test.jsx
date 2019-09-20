@@ -34,6 +34,7 @@ const svgsExpectedExports = {
   portuguese: 'object',
   punjabi: 'object',
   russian: 'object',
+  scotland: 'object',
   serbian: 'object',
   sinhala: 'object',
   somali: 'object',
