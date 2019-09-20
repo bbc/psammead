@@ -10,28 +10,30 @@ import {
 } from '@bbc/gel-foundations/spacings';
 import { GEL_FF_REITH_SANS } from '@bbc/gel-foundations/typography';
 import notes from '../README.md';
+import './am';
 import './ar';
 import './fa';
+import './gu';
 import './ha';
 import './hi';
 import './ig';
+import './ky';
 import './mr';
 import './ne';
+import './om';
 import './pa-in';
 import './pcm';
 import './ps';
 import './pt-br';
 import './ru';
+import './rw';
 import './so';
-import './sr';
 import './sr-cyrl';
+import './sr';
 import './ta';
-import './gu';
+import './ti';
 import './uk';
 import './yo';
-import './ky';
-import './om';
-import './am';
 
 const stories = storiesOf('Utilities|Psammead Locales', module);
 
@@ -40,6 +42,7 @@ const locales = [
   { name: 'Amharic', locale: 'am' },
   { name: 'Arabic', locale: 'ar' },
   { name: 'Brasil', locale: 'pt-br' },
+  { name: 'Gahuza', locale: 'rw' },
   { name: 'Gujarati', locale: 'gu' },
   { name: 'Hausa', locale: 'ha' },
   { name: 'Hindi', locale: 'hi' },
@@ -57,6 +60,7 @@ const locales = [
   { name: 'Somali', locale: 'so' },
   { name: 'Tamil', locale: 'ta' },
   { name: 'Ukrainian', locale: 'uk' },
+  { name: 'Tigrinya', locale: 'ti' },
   { name: 'Yoruba', locale: 'yo' },
 ];
 
