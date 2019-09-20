@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 1.8.2 | [PR#2198](https://github.com/bbc/psammead/pull/2198) Talos - Bump Dependencies - @bbc/psammead-brand, @bbc/psammead-caption, @bbc/psammead-copyright, @bbc/psammead-image-placeholder, @bbc/psammead-media-indicator, @bbc/psammead-paragraph, @bbc/psammead-story-promo, @bbc/psammead-storybook-helpers, @bbc/psammead-timestamp |
 | 1.8.1 | [PR#2191](https://github.com/bbc/psammead/pull/2191) Talos - Bump Dependencies - @bbc/gel-foundations, @bbc/psammead-assets, @bbc/psammead-locales, @bbc/psammead-test-helpers |
 | 1.8.0 | [PR#2085](https://github.com/bbc/psammead/pull/2085) Improve Talos body to show details of bumped packages |
 | 1.7.19 | [PR#1967](https://github.com/bbc/psammead/issues/1967) Expand changeScanner to cover base level packages |
