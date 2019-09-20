@@ -12,8 +12,10 @@ import { GEL_FF_REITH_SANS } from '@bbc/gel-foundations/typography';
 import notes from '../README.md';
 import './ar';
 import './fa';
+import './gu';
 import './hi';
 import './ig';
+import './ky';
 import './mr';
 import './ne';
 import './pa-in';
@@ -21,20 +23,21 @@ import './pcm';
 import './ps';
 import './pt-br';
 import './ru';
+import './rw';
 import './sr';
 import './sr-cyrl';
 import './ta';
-import './gu';
 import './uk';
 import './yi';
 import './yo';
-import './ky';
 
 const stories = storiesOf('Utilities|Psammead Locales', module);
 
 const locales = [
   { name: 'Arabic', locale: 'ar' },
   { name: 'Brasil', locale: 'pt-br' },
+  { name: 'Gahuza', locale: 'rw' },
+  { name: 'Gujarati', locale: 'gu' },
   { name: 'Hindi', locale: 'hi' },
   { name: 'Igbo', locale: 'ig' },
   { name: 'Kyrgyz', locale: 'ky' },
@@ -48,8 +51,6 @@ const locales = [
   { name: 'Serbian', locale: 'sr' },
   { name: 'Serbian Cyrillic', locale: 'sr-cyrl' },
   { name: 'Tamil', locale: 'ta' },
-  { name: 'Gahuza', locale: 'ga' },
-  { name: 'Gujarati', locale: 'gu' },
   { name: 'Ukrainian', locale: 'uk' },
   { name: 'Tigrinya', locale: 'yi' },
   { name: 'Yoruba', locale: 'yo' },
