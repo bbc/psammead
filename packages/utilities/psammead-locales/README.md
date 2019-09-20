@@ -34,6 +34,7 @@ The following locales have overrides to meet BBC World Service requirements wher
 - `/moment/sr-cyrl` - locale override for Serbian Cyrillic
 - `/moment/ta` - locale override for Tamil
 - `/moment/uk` - locale override for Ukrainian
+- `/moment/uz` - locale override for Uzbek
 - `/moment/yo` - locale override for Yoruba
 
 ### Numerals

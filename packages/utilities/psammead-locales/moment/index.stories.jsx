@@ -33,6 +33,7 @@ import './sr';
 import './ta';
 import './ti';
 import './uk';
+import './uz';
 import './yo';
 
 const stories = storiesOf('Utilities|Psammead Locales', module);
@@ -61,6 +62,7 @@ const locales = [
   { name: 'Tamil', locale: 'ta' },
   { name: 'Ukrainian', locale: 'uk' },
   { name: 'Tigrinya', locale: 'ti' },
+  { name: 'Uzbek', locale: 'uz' },
   { name: 'Yoruba', locale: 'yo' },
 ];
 
