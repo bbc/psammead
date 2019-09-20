@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 1.1.1-alpha.1 | [PR#2191](https://github.com/bbc/psammead/pull/2191) Talos - Bump Dependencies |
 | 1.1.0-alpha.1 | [PR#2144](https://github.com/bbc/psammead/pull/2144) Add `skin` prop |
 | 1.0.1-alpha.4 | [PR#1960](https://github.com/bbc/psammead/pull/1960) Change <React.Fragment> to <> |
 | 1.0.1-alpha.3 | [PR#1961](https://github.com/bbc/psammead/pull/1961) Talos - Bump Dependencies |
