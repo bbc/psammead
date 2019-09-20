@@ -140,47 +140,47 @@ test('from', function() {
   );
   assert.equal(
     start.from(moment([2007, 1, 28]).add({ s: 45 }), true),
-    'један минут',
+    '1 минута',
     '45 seconds = a minute'
   );
   assert.equal(
     start.from(moment([2007, 1, 28]).add({ s: 89 }), true),
-    'један минут',
+    '1 минута',
     '89 seconds = a minute'
   );
   assert.equal(
     start.from(moment([2007, 1, 28]).add({ s: 90 }), true),
-    '2 минуте',
+    'минута: 2',
     '90 seconds = 2 minutes'
   );
   assert.equal(
     start.from(moment([2007, 1, 28]).add({ m: 44 }), true),
-    '44 минута',
+    'минута: 44',
     '44 minutes = 44 minutes'
   );
   assert.equal(
     start.from(moment([2007, 1, 28]).add({ m: 45 }), true),
-    'један сат',
+    '1 сата',
     '45 minutes = an hour'
   );
   assert.equal(
     start.from(moment([2007, 1, 28]).add({ m: 89 }), true),
-    'један сат',
+    '1 сата',
     '89 minutes = an hour'
   );
   assert.equal(
     start.from(moment([2007, 1, 28]).add({ m: 90 }), true),
-    '2 сата',
+    'сати: 2',
     '90 minutes = 2 hours'
   );
   assert.equal(
     start.from(moment([2007, 1, 28]).add({ h: 5 }), true),
-    '5 сати',
+    'сати: 5',
     '5 hours = 5 hours'
   );
   assert.equal(
     start.from(moment([2007, 1, 28]).add({ h: 21 }), true),
-    '21 сати',
+    'сати: 21',
     '21 hours = 21 hours'
   );
   assert.equal(
@@ -277,13 +277,13 @@ test('from', function() {
 
 test('suffix', function() {
   assert.equal(moment(30000).from(0), 'за неколико секунди', 'prefix');
-  assert.equal(moment(0).from(30000), 'пре неколико секунди', 'prefix');
+  assert.equal(moment(0).from(30000), 'Пре неколико секунди', 'prefix');
 });
 
 test('now from now', function() {
   assert.equal(
     moment().fromNow(),
-    'пре неколико секунди',
+    'Пре неколико секунди',
     'now from now should display as in the past'
   );
 });

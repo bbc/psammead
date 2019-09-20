@@ -8,7 +8,7 @@ moment.updateLocale('sr-cyrl', {
     LLLL: 'dddd, D MMMM YYYY H:mm',
   },
   relativeTime: {
-    past: 'Пре  %s',
+    past: 'Пре %s',
     m: '1 минута',
     mm: 'минута: %d',
     h: '1 сата',
