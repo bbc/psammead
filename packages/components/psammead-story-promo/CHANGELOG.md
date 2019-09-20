@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 | ------- | ----------- |
+| 2.7.15 | [PR#2181](https://github.com/bbc/psammead/pull/2181) Remove `Timestamp` in StoryPromo story |
 | 2.7.14 | [PR#2191](https://github.com/bbc/psammead/pull/2191) Talos - Bump Dependencies - @bbc/gel-foundations |
 | 2.7.13 | [PR#2119](https://github.com/bbc/psammead/pull/2119) Add visuallyHiddenText for media types in storybook |
 | 2.7.12 | [PR#2145](https://github.com/bbc/psammead/pull/2145) Talos - Bump Dependencies - @bbc/psammead-styles |
