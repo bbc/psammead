@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 2.3.2 | [PR#2191](https://github.com/bbc/psammead/pull/2191) Talos - Bump Dependencies - @bbc/gel-foundations |
 | 2.3.1 | [PR#2147](https://github.com/bbc/psammead/pull/2147) Add props for Storybook story withBrand. |
 | 2.3.0 | [PR#2117](https://github.com/bbc/psammead/pull/2117) Pass `dir` prop to `Navigation` component instead of `NavigationLi` |
 | 2.2.11 | [PR#2092](https://github.com/bbc/psammead/pull/2092) Refactored navigation component |

@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 6.0.3 | [PR#2191](https://github.com/bbc/psammead/pull/2191) Talos - Bump Dependencies - @bbc/gel-foundations |
 | 6.0.2 | [PR#2114](https://github.com/bbc/psammead/pull/2114) Update serbianCyr locale to `sr-cyrl`|
 | 6.0.1 | [PR#2042](https://github.com/bbc/psammead/pull/1926) Update readme with changes to input provider |
 | 6.0.0 | [PR#1926](https://github.com/bbc/psammead/pull/1926) Update input-provider to accept a single object rather than 4 arguments |
