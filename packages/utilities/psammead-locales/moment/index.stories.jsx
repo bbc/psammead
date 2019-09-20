@@ -10,6 +10,7 @@ import {
 } from '@bbc/gel-foundations/spacings';
 import { GEL_FF_REITH_SANS } from '@bbc/gel-foundations/typography';
 import notes from '../README.md';
+import './am';
 import './ar';
 import './fa';
 import './gu';
@@ -19,6 +20,7 @@ import './ig';
 import './ky';
 import './mr';
 import './ne';
+import './om';
 import './pa-in';
 import './pcm';
 import './ps';
@@ -36,6 +38,8 @@ import './yo';
 const stories = storiesOf('Utilities|Psammead Locales', module);
 
 const locales = [
+  { name: 'Afaan Oromoo', locale: 'om' },
+  { name: 'Amharic', locale: 'am' },
   { name: 'Arabic', locale: 'ar' },
   { name: 'Brasil', locale: 'pt-br' },
   { name: 'Gahuza', locale: 'rw' },

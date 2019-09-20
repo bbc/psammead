@@ -3,7 +3,8 @@
 <!-- prettier-ignore -->
 | Version | Description |
 | ------- | ----------- |
-| 2.12.0 | [PR#2193](https://github.com/bbc/psammead/pull/2193) Create `rw` (Gahuza) and `ti` (Tigrinya) locales |
+| 2.13.0 | [PR#2193](https://github.com/bbc/psammead/pull/2193) Create `rw` (Gahuza) and `ti` (Tigrinya) locales |
+| 2.12.0 | [PR#2179](https://github.com/bbc/psammead/pull/2179) Create `om` (Afaan Oromoo) and `am` (Amharic) locales |
 | 2.11.0 | [PR#2196](https://github.com/bbc/psammead/pull/2196) Create `ha` (Hausa) and `so` (Somali) locales |
 | 2.10.0 | [PR#2165](https://github.com/bbc/psammead/pull/2165)  Add `ky` (Kyrgyz) locale and update `mr` (Marathi) and `ta` (Tamil) locales |
 | 2.9.0 | [PR#2141](https://github.com/bbc/psammead/pull/2141) Add `ne` (Nepali) locale |

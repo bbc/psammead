@@ -8,8 +8,10 @@ This package provides a collection of locale configs, used in BBC World Service 
 
 The following [Moment.js](https://momentjs.com/) locales have been added as they do not exist upstream:
 
+- `/moment/am` - locale override for Amharic
 - `/moment/ha` - locale for Hausa
 - `/moment/ig` - locale for Igbo
+- `/moment/om` - locale override for Afaan Oromoo
 - `/moment/pcm` - locale for Pidgin
 - `/moment/ps` - locale for Pashto
 - `/moment/rw` - locale for Gahuza
