@@ -1,5 +1,17 @@
 # Contributor Covenant Code of Conduct
 
+## Documentation index
+Please familiarise yourself with our:
+- [Code of conduct](https://github.com/bbc/psammead/blob/latest/CODE_OF_CONDUCT.md) (you are here)
+- [Code Standards and Ways of Working](https://github.com/bbc/psammead/blob/latest/Code-Standards-and-Ways-of-Working.md)
+- [Contributing guidelines](https://github.com/bbc/psammead/blob/latest/CONTRIBUTING.md)
+- [Github Project Board Guide](https://github.com/bbc/simorgh/blob/latest/docs/Project-Board-Guide.md)
+- [Primary README](https://github.com/bbc/psammead/blob/latest/README.md)
+- [Talos (package bumping bot)](https://github.com/bbc/psammead/blob/latest/scripts/talos/README.md)
+- [Use/consumption of Psammead packages guidelines and package list](https://github.com/bbc/psammead/blob/latest/packages/README.md)
+
+NB there is further documentation colocated with relevant packages and code. The above list is an index of the top-level documentation of our repo (and our sibling repo [Simorgh](https://github.com/bbc/simorgh)).
+
 ## Our Pledge
 
 In the interest of fostering an open and welcoming environment, we as contributors and maintainers pledge to making participation in our project and our community a harassment-free experience for everyone, regardless of age, body size, disability, ethnicity, gender identity and expression, level of experience, nationality, personal appearance, race, religion, or sexual identity and orientation.

@@ -15,7 +15,7 @@ npm install @bbc/psammead-assets --save
 ## Usage
 
 ```jsx
-import { BBC_BLOCKS, news} from '@bbc/psammead-assets/svgs';
+import { BBC_BLOCKS, news } from '@bbc/psammead-assets/svgs';
 
 import { AMP_SCRIPT } from '@bbc/psammead-assets/amp-boilerplate';
 ```
@@ -24,7 +24,7 @@ import { AMP_SCRIPT } from '@bbc/psammead-assets/amp-boilerplate';
 
 Service brand SVGs, like `news`, are objects that contains an svg group, viewbox, ratio and height;
 
-This package currently has brand SVGs for the BBC services `igbo`, `news`, `persian`, `pidgin`, `thai` and `yoruba`.
+This package currently has brand SVGs for the BBC News World Services as well as for BBC News, BBC Scotland.
 
 <!-- prettier-ignore -->
 | Property   | Type   | Required | Default | Example                  |
@@ -41,6 +41,21 @@ The width of your SVG can be calculated using your desired height multiplied by 
 const WrappingContainer = () => (
   <svg viewBox={`0 0 ${news.viewbox.width} ${news.viewbox.height}`}>{news.group}</svg>
 );
+```
+
+## Media Icons SVGs
+
+Media icons is an object containing styled SVG icons for video, audio and photogallery. Media icons are sized to work well alongside specific text with typography group `GEL Minion`. They are used in `psammead-media-indicator` component.
+
+## Usage
+
+```jsx
+import { mediaIcons } from '@bbc/psammead-assets/svgs';
+
+<span>
+  {mediaIcons.audio}
+  {duration && datetime && (<time dateTime={datetime}>{duration}</time>)}
+</span>
 ```
 
 ## Contributing

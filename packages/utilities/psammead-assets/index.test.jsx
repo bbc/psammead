@@ -7,6 +7,7 @@ const ampBoilerplateExpectedExports = {
 
 const svgsExpectedExports = {
   BBC_BLOCKS: 'string',
+  mediaIcons: 'object',
   afaanoromoo: 'object',
   afrique: 'object',
   amharic: 'object',
@@ -33,6 +34,7 @@ const svgsExpectedExports = {
   portuguese: 'object',
   punjabi: 'object',
   russian: 'object',
+  scotland: 'object',
   serbian: 'object',
   sinhala: 'object',
   somali: 'object',
