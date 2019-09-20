@@ -51,7 +51,7 @@ const locales = [
   { name: 'Gahuza', locale: 'ga' },
   { name: 'Gujarati', locale: 'gu' },
   { name: 'Ukrainian', locale: 'uk' },
-  { name: 'Tigrinya', locale: 'ti' },
+  { name: 'Tigrinya', locale: 'yi' },
   { name: 'Yoruba', locale: 'yo' },
 ];
 
