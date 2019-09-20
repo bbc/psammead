@@ -26,6 +26,7 @@ import './sr-cyrl';
 import './ta';
 import './gu';
 import './uk';
+import './yi';
 import './yo';
 import './ky';
 

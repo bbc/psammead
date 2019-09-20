@@ -15,7 +15,7 @@ var months = [
   'ታሕሳስ',
 ];
 
-moment.defineLocale('ti', {
+moment.defineLocale('yi', {
   months: months,
   longDateFormat: { LL: 'D MMMM YYYY' },
   relativeTime: {
