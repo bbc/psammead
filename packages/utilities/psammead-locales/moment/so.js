@@ -1,21 +1,9 @@
 var moment = require('moment');
 
-var months = [
-  'Jannaayo',
-  'Febraayo',
-  'Maarso',
-  'Abriil',
-  'Maajo',
-  'Juunyo',
-  'Luulyo',
-  'Agoosto',
-  'Sebtembar',
-  'Oktoobar',
-  'Nofembar',
-  'Disembar',
-];
 moment.defineLocale('so', {
-  months: months,
+  months: 'Jannaayo_Febraayo_Maarso_Abriil_Maajo_Juunyo_Luulyo_Agoosto_Sebtembar_Oktoobar_Nofembar_Disembar'.split(
+    '_'
+  ),
   longDateFormat: { LL: 'D MMMM YYYY' },
   relativeTime: {
     past: '%s ka hor',
