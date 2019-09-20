@@ -30,10 +30,14 @@ import './gu';
 import './uk';
 import './yo';
 import './ky';
+import './om';
+import './am';
 
 const stories = storiesOf('Utilities|Psammead Locales', module);
 
 const locales = [
+  { name: 'Afaan Oromoo', locale: 'om' },
+  { name: 'Amharic', locale: 'am' },
   { name: 'Arabic', locale: 'ar' },
   { name: 'Brasil', locale: 'pt-br' },
   { name: 'Gujarati', locale: 'gu' },
