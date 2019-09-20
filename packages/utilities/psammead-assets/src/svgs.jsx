@@ -26,6 +26,7 @@ export pidgin from './svgs/pidgin';
 export portuguese from './svgs/portuguese';
 export punjabi from './svgs/punjabi';
 export russian from './svgs/russian';
+export scotland from './svgs/scotland';
 export serbian from './svgs/serbian';
 export sinhala from './svgs/sinhala';
 export somali from './svgs/somali';
