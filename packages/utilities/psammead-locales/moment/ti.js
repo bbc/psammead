@@ -1,22 +1,7 @@
 var moment = require('moment');
 
-var months = [
-  'ጥሪ',
-  'ለካቲት',
-  'መጋቢት',
-  'ሚያዝያ',
-  'ጉንቦት',
-  'ሰነ',
-  'ሓምለ',
-  'ነሓሰ',
-  'መስከረም',
-  'ጥቅምቲ',
-  'ሕዳር',
-  'ታሕሳስ',
-];
-
 moment.defineLocale('yi', {
-  months: months,
+  months: 'ጥሪ_ለካቲት_መጋቢት_ሚያዝያ_ጉንቦት_ሰነ_ሓምለ_ነሓሰ_መስከረም_ጥቅምቲ_ሕዳር_ታሕሳስ'.split('_'),
   longDateFormat: { LL: 'D MMMM YYYY' },
   relativeTime: {
     past: 'ቅድሚ %s',

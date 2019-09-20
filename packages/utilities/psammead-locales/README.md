@@ -12,7 +12,7 @@ The following [Moment.js](https://momentjs.com/) locales have been added as they
 - `/moment/pcm` - locale for Pidgin
 - `/moment/ps` - locale for Pashto
 - `/moment/rw` - locale for Gahuza
-- `/moment/yi` - locale for Tigrinya
+- `/moment/ti` - locale for Tigrinya
 
 The following locales have overrides to meet BBC World Service requirements where these differ from the upstream locale. Note that importing them will also cause the upstream locale to be loaded.
 

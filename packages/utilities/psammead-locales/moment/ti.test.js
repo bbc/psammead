@@ -1,7 +1,7 @@
 import moment from 'moment';
-import './yi';
+import './ti';
 
-moment.locale('yi');
+moment.locale('ti');
 
 // This asset overrides the gunit assertion done in the moment codebase.
 // Format and styling of this file has been keep consistent with the official moment tests.

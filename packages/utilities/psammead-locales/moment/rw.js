@@ -1,22 +1,9 @@
 var moment = require('moment');
 
-var months = [
-  'Ukwa mbere',
-  'Ukwa kabiri',
-  'Ukwa gatatu',
-  'Ukwa kane',
-  'Ukwa gatanu',
-  'Ukwa gatandatu',
-  "Ukw'indwi",
-  "Ukw'umunani",
-  "Ukw'icenda",
-  "Ukw'icumi",
-  "Ukw'icumi na rimwe",
-  "Ukw'icumi na kabiri",
-];
-
 moment.defineLocale('rw', {
-  months: months,
+  months: "Ukwa mbere_Ukwa kabiri_Ukwa gatatu_Ukwa kane_Ukwa gatanu_Ukwa gatandatu_Ukw'indwi_Ukw'umunani_Ukw'icenda_Ukw'icumi_Ukw'icumi na rimwe_Ukw'icumi na kabiri".split(
+    '_'
+  ),
   longDateFormat: { LL: 'D MMMM YYYY' },
   relativeTime: {
     past: '%s',

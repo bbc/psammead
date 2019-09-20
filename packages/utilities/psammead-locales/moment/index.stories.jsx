@@ -28,7 +28,7 @@ import './sr';
 import './sr-cyrl';
 import './ta';
 import './uk';
-import './yi';
+import './ti';
 import './yo';
 
 const stories = storiesOf('Utilities|Psammead Locales', module);
@@ -52,7 +52,7 @@ const locales = [
   { name: 'Serbian Cyrillic', locale: 'sr-cyrl' },
   { name: 'Tamil', locale: 'ta' },
   { name: 'Ukrainian', locale: 'uk' },
-  { name: 'Tigrinya', locale: 'yi' },
+  { name: 'Tigrinya', locale: 'ti' },
   { name: 'Yoruba', locale: 'yo' },
 ];
 
