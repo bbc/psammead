@@ -1,7 +1,7 @@
 import moment from 'moment';
-import './pt-br';
+import './es';
 
-moment.locale('pt-br');
+moment.locale('es');
 
 // This asset overrides the gunit assertion done in the moment codebase.
 // Format and styling of this file has been keep consistent with the official moment tests.
@@ -9,11 +9,10 @@ moment.locale('pt-br');
 const assert = { equal: (val1, val2) => expect(val1).toEqual(val2) };
 
 test('parse', function() {
-  var tests = 'Janeiro Jan_Fevereiro Fev_Março Mar_Abril Abr_Maio Mai_Junho Jun_Julho Jul_Agosto Ago_Setembro Set_Outubro Out_Novembro Nov_Dezembro Dez'.split(
+  var tests = 'enero ene._febrero feb._marzo mar._abril abr._mayo may._junio jun._julio jul._agosto ago._septiembre sep._octubre oct._noviembre nov._diciembre dic.'.split(
       '_'
     ),
     i;
-
   function equalTest(input, mmm, i) {
     assert.equal(
       moment(input, mmm).month(),
@@ -21,7 +20,6 @@ test('parse', function() {
       input + ' should be month ' + (i + 1)
     );
   }
-
   for (i = 0; i < 12; i++) {
     tests[i] = tests[i].split(' ');
     equalTest(tests[i][0], 'MMM', i);
@@ -39,15 +37,16 @@ test('format', function() {
   var a = [
       [
         'dddd, MMMM Do YYYY, h:mm:ss a',
-        'Domingo, Fevereiro 14º 2010, 3:25:50 pm',
+        'domingo, febrero 14º 2010, 3:25:50 pm',
       ],
-      ['ddd, hA', 'Dom, 3PM'],
-      ['M Mo MM MMMM MMM', '2 2º 02 Fevereiro Fev'],
+      ['ddd, hA', 'dom., 3PM'],
+      ['M Mo MM MMMM MMM', '2 2º 02 febrero feb.'],
       ['YYYY YY', '2010 10'],
       ['D Do DD', '14 14º 14'],
-      ['d do dddd ddd', '0 0º Domingo Dom'],
+      ['d do dddd ddd dd', '0 0º domingo dom. do'],
       ['DDD DDDo DDDD', '45 45º 045'],
-      ['w wo ww', '8 8º 08'],
+      ['w wo ww', '6 6º 06'],
+      ['YYYY-MMM-DD', '2010-feb-14'],
       ['h hh', '3 03'],
       ['H HH', '15 15'],
       ['m mm', '25 25'],
@@ -56,13 +55,13 @@ test('format', function() {
       ['[the] DDDo [day of the year]', 'the 45º day of the year'],
       ['LTS', '15:25:50'],
       ['L', '14/02/2010'],
-      ['LL', '14 Fevereiro 2010'],
-      ['LLL', '14 Fevereiro 2010 às 15:25'],
-      ['LLLL', 'Domingo, 14 Fevereiro 2010 às 15:25'],
+      ['LL', '14 de febrero de 2010'],
+      ['LLL', '14 de febrero de 2010 15:25'],
+      ['LLLL', 'domingo, 14 de febrero de 2010 15:25'],
       ['l', '14/2/2010'],
-      ['ll', '14 Fev 2010'],
-      ['lll', '14 Fev 2010 às 15:25'],
-      ['llll', 'Dom, 14 Fev 2010 às 15:25'],
+      ['ll', '14 de feb. de 2010'],
+      ['lll', '14 de feb. de 2010 15:25'],
+      ['llll', 'dom., 14 de feb. de 2010 15:25'],
     ],
     b = moment(new Date(2010, 1, 14, 15, 25, 50, 125)),
     i;
@@ -109,7 +108,7 @@ test('format ordinal', function() {
 });
 
 test('format month', function() {
-  var expected = 'Janeiro Jan_Fevereiro Fev_Março Mar_Abril Abr_Maio Mai_Junho Jun_Julho Jul_Agosto Ago_Setembro Set_Outubro Out_Novembro Nov_Dezembro Dez'.split(
+  var expected = 'enero ene._febrero feb._marzo mar._abril abr._mayo may._junio jun._julio jul._agosto ago._septiembre sep._octubre oct._noviembre nov._diciembre dic.'.split(
       '_'
     ),
     i;
@@ -123,7 +122,7 @@ test('format month', function() {
 });
 
 test('format week', function() {
-  var expected = 'Domingo Dom Do_Segunda-feira Seg 2ª_Terça-feira Ter 3ª_Quarta-feira Qua 4ª_Quinta-feira Qui 5ª_Sexta-feira Sex 6ª_Sábado Sáb Sá'.split(
+  var expected = 'domingo dom. do_lunes lun. lu_martes mar. ma_miércoles mié. mi_jueves jue. ju_viernes vie. vi_sábado sáb. sá'.split(
       '_'
     ),
     i;
@@ -140,8 +139,8 @@ test('from', function() {
   var start = moment([2007, 1, 28]);
   assert.equal(
     start.from(moment([2007, 1, 28]).add({ s: 44 }), true),
-    'poucos segundos',
-    '44 seconds = seconds'
+    'unos segundos',
+    '44 seconds = a few seconds'
   );
   assert.equal(
     start.from(moment([2007, 1, 28]).add({ s: 45 }), true),
@@ -190,47 +189,47 @@ test('from', function() {
   );
   assert.equal(
     start.from(moment([2007, 1, 28]).add({ h: 22 }), true),
-    'um dia',
+    'un día',
     '22 hours = a day'
   );
   assert.equal(
     start.from(moment([2007, 1, 28]).add({ h: 35 }), true),
-    'um dia',
+    'un día',
     '35 hours = a day'
   );
   assert.equal(
     start.from(moment([2007, 1, 28]).add({ h: 36 }), true),
-    '2 dias',
+    '2 días',
     '36 hours = 2 days'
   );
   assert.equal(
     start.from(moment([2007, 1, 28]).add({ d: 1 }), true),
-    'um dia',
+    'un día',
     '1 day = a day'
   );
   assert.equal(
     start.from(moment([2007, 1, 28]).add({ d: 5 }), true),
-    '5 dias',
+    '5 días',
     '5 days = 5 days'
   );
   assert.equal(
     start.from(moment([2007, 1, 28]).add({ d: 25 }), true),
-    '25 dias',
+    '25 días',
     '25 days = 25 days'
   );
   assert.equal(
     start.from(moment([2007, 1, 28]).add({ d: 26 }), true),
-    'um mês',
+    'un mes',
     '26 days = a month'
   );
   assert.equal(
     start.from(moment([2007, 1, 28]).add({ d: 30 }), true),
-    'um mês',
+    'un mes',
     '30 days = a month'
   );
   assert.equal(
     start.from(moment([2007, 1, 28]).add({ d: 43 }), true),
-    'um mês',
+    'un mes',
     '43 days = a month'
   );
   assert.equal(
@@ -250,7 +249,7 @@ test('from', function() {
   );
   assert.equal(
     start.from(moment([2007, 1, 28]).add({ M: 1 }), true),
-    'um mês',
+    'un mes',
     '1 month = a month'
   );
   assert.equal(
@@ -260,29 +259,37 @@ test('from', function() {
   );
   assert.equal(
     start.from(moment([2007, 1, 28]).add({ d: 345 }), true),
-    'um ano',
+    'un año',
     '345 days = a year'
   );
   assert.equal(
     start.from(moment([2007, 1, 28]).add({ d: 548 }), true),
-    '2 anos',
+    '2 años',
     '548 days = 2 years'
   );
   assert.equal(
     start.from(moment([2007, 1, 28]).add({ y: 1 }), true),
-    'um ano',
+    'un año',
     '1 year = a year'
   );
   assert.equal(
     start.from(moment([2007, 1, 28]).add({ y: 5 }), true),
-    '5 anos',
+    '5 años',
     '5 years = 5 years'
   );
 });
 
 test('suffix', function() {
-  assert.equal(moment(30000).from(0), 'em poucos segundos', 'prefix');
-  assert.equal(moment(0).from(30000), 'Há poucos segundos', 'prefix');
+  assert.equal(moment(30000).from(0), 'en unos segundos', 'prefix');
+  assert.equal(moment(0).from(30000), 'unos segundos', 'suffix');
+});
+
+test('now from now', function() {
+  assert.equal(
+    moment().fromNow(),
+    'unos segundos',
+    'now from now should display as in the past'
+  );
 });
 
 test('fromNow', function() {
@@ -290,15 +297,15 @@ test('fromNow', function() {
     moment()
       .add({ s: 30 })
       .fromNow(),
-    'em poucos segundos',
-    'in seconds'
+    'en unos segundos',
+    'en unos segundos'
   );
   assert.equal(
     moment()
       .add({ d: 5 })
       .fromNow(),
-    'em 5 dias',
-    'in 5 days'
+    'en 5 días',
+    'en 5 días'
   );
 });
 
@@ -308,51 +315,63 @@ test('calendar day', function() {
     .minutes(0)
     .seconds(0);
 
-  assert.equal(moment(a).calendar(), 'Hoje às 12:00', 'today at the same time');
+  assert.equal(
+    moment(a).calendar(),
+    'hoy a las 12:00',
+    'today at the same time'
+  );
   assert.equal(
     moment(a)
       .add({ m: 25 })
       .calendar(),
-    'Hoje às 12:25',
+    'hoy a las 12:25',
     'Now plus 25 min'
   );
   assert.equal(
     moment(a)
       .add({ h: 1 })
       .calendar(),
-    'Hoje às 13:00',
+    'hoy a las 13:00',
     'Now plus 1 hour'
   );
   assert.equal(
     moment(a)
       .add({ d: 1 })
       .calendar(),
-    'Amanhã às 12:00',
+    'mañana a las 12:00',
     'tomorrow at the same time'
+  );
+  assert.equal(
+    moment(a)
+      .add({ d: 1, h: -1 })
+      .calendar(),
+    'mañana a las 11:00',
+    'tomorrow minus 1 hour'
   );
   assert.equal(
     moment(a)
       .subtract({ h: 1 })
       .calendar(),
-    'Hoje às 11:00',
+    'hoy a las 11:00',
     'Now minus 1 hour'
   );
   assert.equal(
     moment(a)
       .subtract({ d: 1 })
       .calendar(),
-    'Ontem às 12:00',
+    'ayer a las 12:00',
     'yesterday at the same time'
   );
 });
 
 test('calendar next week', function() {
   var i, m;
+
   for (i = 2; i < 7; i++) {
     m = moment().add({ d: i });
     assert.equal(
       m.calendar(),
-      m.format('dddd [às] LT'),
+      m.format('dddd [a la' + (m.hours() !== 1 ? 's' : '') + '] LT'),
       'Today + ' + i + ' days current time'
     );
     m.hours(0)
@@ -361,7 +380,7 @@ test('calendar next week', function() {
       .milliseconds(0);
     assert.equal(
       m.calendar(),
-      m.format('dddd [às] LT'),
+      m.format('dddd [a la' + (m.hours() !== 1 ? 's' : '') + '] LT'),
       'Today + ' + i + ' days beginning of day'
     );
     m.hours(23)
@@ -370,7 +389,7 @@ test('calendar next week', function() {
       .milliseconds(999);
     assert.equal(
       m.calendar(),
-      m.format('dddd [às] LT'),
+      m.format('dddd [a la' + (m.hours() !== 1 ? 's' : '') + '] LT'),
       'Today + ' + i + ' days end of day'
     );
   }
@@ -378,14 +397,13 @@ test('calendar next week', function() {
 
 test('calendar last week', function() {
   var i, m;
+
   for (i = 2; i < 7; i++) {
     m = moment().subtract({ d: i });
     assert.equal(
       m.calendar(),
       m.format(
-        m.day() === 0 || m.day() === 6
-          ? '[Último] dddd [às] LT'
-          : '[Última] dddd [às] LT'
+        '[el] dddd [pasado a la' + (m.hours() !== 1 ? 's' : '') + '] LT'
       ),
       'Today - ' + i + ' days current time'
     );
@@ -396,9 +414,7 @@ test('calendar last week', function() {
     assert.equal(
       m.calendar(),
       m.format(
-        m.day() === 0 || m.day() === 6
-          ? '[Último] dddd [às] LT'
-          : '[Última] dddd [às] LT'
+        '[el] dddd [pasado a la' + (m.hours() !== 1 ? 's' : '') + '] LT'
       ),
       'Today - ' + i + ' days beginning of day'
     );
@@ -409,9 +425,7 @@ test('calendar last week', function() {
     assert.equal(
       m.calendar(),
       m.format(
-        m.day() === 0 || m.day() === 6
-          ? '[Último] dddd [às] LT'
-          : '[Última] dddd [às] LT'
+        '[el] dddd [pasado a la' + (m.hours() !== 1 ? 's' : '') + '] LT'
       ),
       'Today - ' + i + ' days end of day'
     );
@@ -432,52 +446,47 @@ test('calendar all else', function() {
   assert.equal(weeksFromNow.calendar(), weeksFromNow.format('L'), 'in 2 weeks');
 });
 
-test('weeks year starting sunday format', function() {
+test('weeks year starting sunday formatted', function() {
   assert.equal(
     moment([2012, 0, 1]).format('w ww wo'),
-    '1 01 1º',
-    'Jan  1 2012 should be week 1'
+    '52 52 52º',
+    'Jan  1 2012 should be week 52'
   );
   assert.equal(
-    moment([2012, 0, 7]).format('w ww wo'),
+    moment([2012, 0, 2]).format('w ww wo'),
     '1 01 1º',
-    'Jan  7 2012 should be week 1'
+    'Jan  2 2012 should be week 1'
   );
   assert.equal(
     moment([2012, 0, 8]).format('w ww wo'),
-    '2 02 2º',
-    'Jan  8 2012 should be week 2'
+    '1 01 1º',
+    'Jan  8 2012 should be week 1'
   );
   assert.equal(
-    moment([2012, 0, 14]).format('w ww wo'),
+    moment([2012, 0, 9]).format('w ww wo'),
     '2 02 2º',
-    'Jan 14 2012 should be week 2'
+    'Jan  9 2012 should be week 2'
   );
   assert.equal(
     moment([2012, 0, 15]).format('w ww wo'),
-    '3 03 3º',
-    'Jan 15 2012 should be week 3'
+    '2 02 2º',
+    'Jan 15 2012 should be week 2'
   );
 });
 
-test('relative time threshold', function() {
-  var rts = moment(),
-    rtsDefault = moment.relativeTimeThreshold('ss');
-
-  moment.relativeTimeThreshold('ss', 3);
-
-  rts.subtract(3, 'seconds');
+test('test short months proper', function() {
+  var str = '02-ago-2016';
   assert.equal(
-    rts.fromNow(),
-    'Há poucos segundos',
-    'Below custom a few seconds to seconds threshold'
+    moment(str, 'DD-MMM-YYYY').month(),
+    7,
+    '02-ago-2016 month should be 7'
   );
-  rts.subtract(1, 'seconds');
-  assert.equal(
-    rts.fromNow(),
-    'Há 4 segundos',
-    'Above custom a few seconds to seconds threshold'
-  );
+});
 
-  moment.relativeTimeThreshold('ss', rtsDefault);
+test('translated invalid date', function() {
+  assert.equal(
+    moment('nonsense', 'DD-MMM-YYYY').format(),
+    'Invalid date',
+    'Invalid date should translate'
+  );
 });
