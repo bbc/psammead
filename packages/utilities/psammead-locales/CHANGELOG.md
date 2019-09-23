@@ -3,7 +3,8 @@
 <!-- prettier-ignore -->
 | Version | Description |
 | ------- | ----------- |
-| 2.16.0 | [PR#2210](https://github.com/bbc/psammead/pull/2210) Add moment relative timestamp overrides for `ne`, `sr` and `sr-cyrl` locales |
+| 2.17.0 | [PR#2210](https://github.com/bbc/psammead/pull/2210) Add moment relative timestamp overrides for `ne` (Nepali), `sr` and `sr-cyrl` (Serbian) locales |
+| 2.16.0 | [PR#2176](https://github.com/bbc/psammead/pull/2176)  Add `es` (Spanish) locale and update `ar` (Arabic) and `pt-br` (Brasil) locales |
 | 2.15.0 | [PR#2184](https://github.com/bbc/psammead/pull/2184) Add `uz` (Uzbek) locale |
 | 2.14.0 | [PR#2178](https://github.com/bbc/psammead/pull/2178)  Update `ps` (Pashto) locale to add relative time support |
 | 2.13.0 | [PR#2193](https://github.com/bbc/psammead/pull/2193) Create `rw` (Gahuza) and `ti` (Tigrinya) locales |
