@@ -12,6 +12,7 @@ import { GEL_FF_REITH_SANS } from '@bbc/gel-foundations/typography';
 import notes from '../README.md';
 import './am';
 import './ar';
+import './es';
 import './fa';
 import './gu';
 import './ha';
@@ -41,7 +42,7 @@ const stories = storiesOf('Utilities|Psammead Locales', module);
 const locales = [
   { name: 'Afaan Oromoo', locale: 'om' },
   { name: 'Amharic', locale: 'am' },
-  { name: 'Arabic', locale: 'ar' },
+  { name: 'Arabic', locale: 'ar', dir: 'rtl' },
   { name: 'Brasil', locale: 'pt-br' },
   { name: 'Gahuza', locale: 'rw' },
   { name: 'Gujarati', locale: 'gu' },
@@ -50,9 +51,10 @@ const locales = [
   { name: 'Igbo', locale: 'ig' },
   { name: 'Kyrgyz', locale: 'ky' },
   { name: 'Marathi', locale: 'mr' },
+  { name: 'Mundo', locale: 'es' },
   { name: 'Nepali', locale: 'ne' },
-  { name: 'Pashto', locale: 'ps' },
-  { name: 'Persian', locale: 'fa' },
+  { name: 'Pashto', locale: 'ps', dir: 'rtl' },
+  { name: 'Persian', locale: 'fa', dir: 'rtl' },
   { name: 'Pidgin', locale: 'pcm' },
   { name: 'Punjabi', locale: 'pa-in' },
   { name: 'Russian', locale: 'ru' },
@@ -216,7 +218,7 @@ const Paragraph = styled.p`
 const issueHref = localeName =>
   `https://github.com/bbc/psammead/issues/new?labels=bug&title=Moment+translation+correction+for+${localeName}&projects=bbc/20`;
 
-locales.forEach(({ name, locale }) => {
+locales.forEach(({ name, locale, dir }) => {
   stories.add(
     `Moment - ${name}(${locale})`,
     () => (
@@ -231,7 +233,7 @@ locales.forEach(({ name, locale }) => {
               /* eslint-disable react/no-array-index-key */
               <tr key={index}>
                 <td>{func('en-gb')}</td>
-                <td>{func(locale)}</td>
+                <td dir={dir}>{func(locale)}</td>
               </tr>
             ))}
           </tbody>
