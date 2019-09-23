@@ -12,7 +12,7 @@ npm install @bbc/psammead-moment-calendars --save
 
 ### Jalaali
 
-The functionality of this helper is to to convert a `Gregorian` calendar dates into it's `Jalaali` equivelant and outputting into a useable format. This helper relies on `jalaali-js` which contains the logic to carry out the conversions from `Gregorian` to `Jalaali`. Documentation of this dependency can be found [here](https://www.npmjs.com/package/jalaali-js).
+The functionality of this helper is to to convert a `Gregorian` calendar moment into it's `Jalaali` equivelant and outputting it as a string to be used by other components. This helper relies on `jalaali-js` which contains the logic to carry out the conversions from `Gregorian` to `Jalaali`. Documentation of this dependency can be found [here](https://www.npmjs.com/package/jalaali-js).
 
 ## Usage
 
