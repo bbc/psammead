@@ -35,7 +35,6 @@ import './sr-cyrl';
 import './sr';
 import './ta';
 import './th';
-import './gu';
 import './ti';
 import './uk';
 import './uz';
@@ -67,7 +66,6 @@ const locales = [
   { name: 'Sinhala', locale: 'si' },
   { name: 'Tamil', locale: 'ta' },
   { name: 'Thai', locale: 'th' },
-  { name: 'Gujarati', locale: 'gu' },
   { name: 'Somali', locale: 'so' },
   { name: 'Ukrainian', locale: 'uk' },
   { name: 'Tigrinya', locale: 'ti' },
