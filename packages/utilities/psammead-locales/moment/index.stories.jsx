@@ -12,6 +12,7 @@ import { GEL_FF_REITH_SANS } from '@bbc/gel-foundations/typography';
 import notes from '../README.md';
 import './am';
 import './ar';
+import './bn';
 import './es';
 import './fa';
 import './gu';
@@ -31,9 +32,11 @@ import './rw';
 import './so';
 import './sr-cyrl';
 import './sr';
+import './sw';
 import './ta';
 import './ti';
 import './uk';
+import './ur';
 import './uz';
 import './yo';
 
@@ -44,6 +47,7 @@ const locales = [
   { name: 'Amharic', locale: 'am' },
   { name: 'Arabic', locale: 'ar', dir: 'rtl' },
   { name: 'Brasil', locale: 'pt-br' },
+  { name: 'Bengali', locale: 'bn' },
   { name: 'Gahuza', locale: 'rw' },
   { name: 'Gujarati', locale: 'gu' },
   { name: 'Hausa', locale: 'ha' },
@@ -61,8 +65,10 @@ const locales = [
   { name: 'Serbian', locale: 'sr' },
   { name: 'Serbian Cyrillic', locale: 'sr-cyrl' },
   { name: 'Somali', locale: 'so' },
+  { name: 'Swahili', locale: 'sw' },
   { name: 'Tamil', locale: 'ta' },
   { name: 'Ukrainian', locale: 'uk' },
+  { name: 'Urdu', locale: 'ur' },
   { name: 'Tigrinya', locale: 'ti' },
   { name: 'Uzbek', locale: 'uz' },
   { name: 'Yoruba', locale: 'yo' },
