@@ -166,7 +166,7 @@ storiesOf('Components|Grid', module)
           <ExampleParagraph number="2" />
         </SingleGridComponent>
         {['3', '4', '5', '6', '7', '8', '9', '10'].map(num => (
-          <SingleGridComponent columns={2} key={`${num}item`}>
+          <SingleGridComponent columns={2} startOffset={7} key={`${num}item`}>
             <ExampleParagraph number={num} />
           </SingleGridComponent>
         ))}

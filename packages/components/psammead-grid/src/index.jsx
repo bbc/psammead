@@ -73,9 +73,9 @@ const Grid = styled.div`
   }
 `;
 
-const getGridStart = ({ columns, parentColumns, center, leftOffset }) => {
-  if (leftOffset) {
-    return `${leftOffset}`;
+const getGridStart = ({ columns, parentColumns, center, startOffset }) => {
+  if (startOffset) {
+    return `${startOffset}`;
   }
 
   if (parentColumns && center) {
