@@ -77,7 +77,7 @@ Object.keys(svgs)
   });
 
 const mediaIconStories = storiesOf(
-  'Utilities|SVGs/MediaIcon Svgs',
+  'Utilities|SVGs/MediaIcons Svgs',
   module,
 ).addDecorator(withKnobs);
 
