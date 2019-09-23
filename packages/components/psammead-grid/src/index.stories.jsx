@@ -82,7 +82,7 @@ storiesOf('Components|Grid', module)
             {
               breakpointMin: GEL_GROUP_0_SCREEN_WIDTH_MIN,
               breakpointMax: GEL_GROUP_4_SCREEN_WIDTH_MAX,
-              start: 1,
+              start: 'content-start',
               span: 8,
             },
           ]}
@@ -96,7 +96,7 @@ storiesOf('Components|Grid', module)
               {
                 breakpointMin: GEL_GROUP_0_SCREEN_WIDTH_MIN,
                 breakpointMax: GEL_GROUP_4_SCREEN_WIDTH_MAX,
-                start: 1,
+                start: 'content-start',
                 span: 2,
               },
             ]}

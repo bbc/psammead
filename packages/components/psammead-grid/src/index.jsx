@@ -47,17 +47,19 @@ const Grid = styled.div`
     grid-column-gap: ${GEL_GUTTER_ABOVE_600PX};
   }
   @media (max-width: ${GEL_GROUP_3_SCREEN_WIDTH_MAX}) {
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: [content-start] repeat(6, 1fr) [content-end];
   }
   @media (min-width: ${GEL_GROUP_4_SCREEN_WIDTH_MIN}) and (max-width: ${GEL_GROUP_4_SCREEN_WIDTH_MAX}) {
     grid-template-columns:
-      1fr repeat(8, minmax(0, ${group4ColWidth}))
+      1fr
+      [content-start] repeat(8, minmax(0, ${group4ColWidth})) [content-end]
       1fr;
     max-width: ${group4WrapperMaxWidth};
   }
   @media (min-width: ${GEL_GROUP_5_SCREEN_WIDTH_MIN}) {
     grid-template-columns:
-      1fr repeat(20, minmax(0, ${group5ColWidth}))
+      1fr
+      [content-start] repeat(20, minmax(0, ${group5ColWidth})) [content-end]
       1fr;
     max-width: ${group5WrapperMaxWidth};
   }
