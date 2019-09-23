@@ -18,7 +18,10 @@
     "url": "https://github.com/bbc/psammead/issues"
   },
   "homepage": "https://github.com/BBC-News/psammead/blob/latest/packages/components/psammead-moment-calendars/README.md",
-  "dependencies": {},
+  "dependencies": {
+    "jalaali-js": "1.1.0",
+    "moment": "^2.24.0"
+  },
   "peerDependencies": {
     "react": "^16.9.0"
   }
