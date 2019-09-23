@@ -28,7 +28,6 @@ import './ps';
 import './pt-br';
 import './ru';
 import './si';
-import './sr';
 import './rw';
 import './so';
 import './sr-cyrl';
