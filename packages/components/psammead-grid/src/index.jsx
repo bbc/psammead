@@ -1,3 +1,5 @@
+import React from 'react';
+import { node } from 'prop-types';
 import styled, { css } from 'styled-components';
 import {
   GEL_MARGIN_BELOW_400PX,
@@ -70,5 +72,63 @@ const Grid = styled.div`
     margin: initial;
   }
 `;
+
+const getGridStart = ({ columns, parentColumns, center, leftOffset }) => {
+  if (leftOffset) {
+    return `${leftOffset}`;
+  }
+
+  if (parentColumns && center) {
+    return `${Math.floor((parentColumns - columns) / 2) + 1}`;
+  }
+
+  return '1';
+};
+
+const SingleGrid = styled.div`
+  width: ${({ columns, parentColumns }) =>
+    `${(columns / parentColumns) * 100}%`};
+  ${({ center }) =>
+    center &&
+    `
+    margin: 0 auto; 
+    @media (max-width: ${GEL_GROUP_2_SCREEN_WIDTH_MIN}) {
+    padding: 0 ${GEL_MARGIN_BELOW_400PX};
+    }
+    @media (min-width: ${GEL_GROUP_2_SCREEN_WIDTH_MIN}) and (max-width: ${GEL_GROUP_3_SCREEN_WIDTH_MAX}) {
+      padding: 0 ${GEL_MARGIN_ABOVE_400PX};
+    }
+  `};
+
+  @supports (display: grid) {
+    width: initial;
+    display: grid;
+    margin: initial;
+
+    grid-template-columns: repeat(${({ columns }) => columns}, 1fr);
+    @media (max-width: ${GEL_GROUP_2_SCREEN_WIDTH_MAX}) {
+      grid-column-gap: ${GEL_GUTTER_BELOW_600PX};
+    }
+    @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
+      grid-column-gap: ${GEL_GUTTER_ABOVE_600PX};
+    }
+
+    grid-column: ${getGridStart} / span ${({ columns }) => columns};
+  }
+`;
+
+export const SingleGridComponent = ({ children, ...otherProps }) => {
+  const renderChildren = () =>
+    React.Children.map(children, child =>
+      React.cloneElement(child, {
+        parentColumns: otherProps.columns,
+      }),
+    );
+
+  return <SingleGrid {...otherProps}>{renderChildren()}</SingleGrid>;
+};
+SingleGridComponent.propTypes = {
+  children: node.isRequired,
+};
 
 export default Grid;

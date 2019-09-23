@@ -13,7 +13,7 @@ import {
   // GEL_GROUP_5_SCREEN_WIDTH_MIN,
 } from '@bbc/gel-foundations/breakpoints';
 import notes from '../README.md';
-import Grid from '.';
+import Grid, { SingleGridComponent } from '.';
 import {
   FullWidth,
   Item,
@@ -122,7 +122,7 @@ storiesOf('Components|Grid', module)
             },
           ]}
         >
-          <ExampleParagraph number={1} />
+          <ExampleParagraph number="1" />
         </ItemMultiConfig>
         <ItemMultiConfig
           layouts={[
@@ -134,7 +134,7 @@ storiesOf('Components|Grid', module)
             },
           ]}
         >
-          <ExampleParagraph number={2} />
+          <ExampleParagraph number="2" />
         </ItemMultiConfig>
         {['3', '4', '5', '6', '7', '8', '9', '10'].map(num => (
           <ItemMultiConfig
@@ -152,6 +152,25 @@ storiesOf('Components|Grid', module)
           </ItemMultiConfig>
         ))}
       </Grid>
+    ),
+    { notes, knobs: { escapeHTML: false } },
+  )
+  .add(
+    'Using single grid for 8 6 2... layout',
+    () => (
+      <SingleGridComponent columns={8} center>
+        <SingleGridComponent columns={8}>
+          <ExampleParagraph number="1" />
+        </SingleGridComponent>
+        <SingleGridComponent columns={6}>
+          <ExampleParagraph number="2" />
+        </SingleGridComponent>
+        {['3', '4', '5', '6', '7', '8', '9', '10'].map(num => (
+          <SingleGridComponent columns={2} key={`${num}item`}>
+            <ExampleParagraph number={num} />
+          </SingleGridComponent>
+        ))}
+      </SingleGridComponent>
     ),
     { notes, knobs: { escapeHTML: false } },
   );
