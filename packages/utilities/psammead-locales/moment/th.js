@@ -2,7 +2,6 @@ var moment = require('moment');
 require('moment/locale/th');
 
 moment.updateLocale('th', {
-  postformat: null,
   relativeTime: {
     past: 'เมื่อ %s',
     m: '1 นาทีที่ผ่านมา',
