@@ -101,9 +101,9 @@ const SingleGrid = styled.div`
   `};
 
   @supports (display: grid) {
-    width: initial;
-    display: grid;
     margin: initial;
+    width: initial;
+    ${({ wrapper }) => wrapper && `display: grid;`}
 
     grid-template-columns: repeat(${({ columns }) => columns}, 1fr);
     @media (max-width: ${GEL_GROUP_2_SCREEN_WIDTH_MAX}) {

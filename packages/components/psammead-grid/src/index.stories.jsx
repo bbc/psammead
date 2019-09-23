@@ -158,7 +158,7 @@ storiesOf('Components|Grid', module)
   .add(
     'Using single grid for 8 6 2... layout',
     () => (
-      <SingleGridComponent columns={8} center>
+      <SingleGridComponent columns={8} center wrapper>
         <SingleGridComponent columns={8}>
           <ExampleParagraph number="1" />
         </SingleGridComponent>
