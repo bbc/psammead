@@ -21,6 +21,7 @@ The following [Moment.js](https://momentjs.com/) locales have been added as they
 The following locales have overrides to meet BBC World Service requirements where these differ from the upstream locale. Note that importing them will also cause the upstream locale to be loaded.
 
 - `/moment/ar` - locale override for Arabic
+- `/moment/es` - locale override for Spanish (Mundo)
 - `/moment/fa` - locale override for Persian (Farsi)
 - `/moment/gu` - locale override for Gujarati
 - `/moment/hi` - locale override for Hindi
@@ -36,6 +37,7 @@ The following locales have overrides to meet BBC World Service requirements wher
 - `/moment/ta` - locale override for Tamil
 - `/moment/th` - locale override for Thai
 - `/moment/uk` - locale override for Ukrainian
+- `/moment/uz` - locale override for Uzbek
 - `/moment/yo` - locale override for Yoruba
 
 ### Numerals
