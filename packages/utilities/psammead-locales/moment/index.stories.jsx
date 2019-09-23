@@ -10,41 +10,51 @@ import {
 } from '@bbc/gel-foundations/spacings';
 import { GEL_FF_REITH_SANS } from '@bbc/gel-foundations/typography';
 import notes from '../README.md';
+import './am';
 import './ar';
+import './es';
 import './fa';
+import './gu';
 import './ha';
 import './hi';
 import './ig';
+import './ky';
 import './mr';
 import './ne';
+import './om';
 import './pa-in';
 import './pcm';
 import './ps';
 import './pt-br';
 import './ru';
+import './rw';
 import './so';
-import './sr';
 import './sr-cyrl';
+import './sr';
 import './ta';
-import './gu';
+import './ti';
 import './uk';
+import './uz';
 import './yo';
-import './ky';
 
 const stories = storiesOf('Utilities|Psammead Locales', module);
 
 const locales = [
-  { name: 'Arabic', locale: 'ar' },
+  { name: 'Afaan Oromoo', locale: 'om' },
+  { name: 'Amharic', locale: 'am' },
+  { name: 'Arabic', locale: 'ar', dir: 'rtl' },
   { name: 'Brasil', locale: 'pt-br' },
+  { name: 'Gahuza', locale: 'rw' },
   { name: 'Gujarati', locale: 'gu' },
   { name: 'Hausa', locale: 'ha' },
   { name: 'Hindi', locale: 'hi' },
   { name: 'Igbo', locale: 'ig' },
   { name: 'Kyrgyz', locale: 'ky' },
   { name: 'Marathi', locale: 'mr' },
+  { name: 'Mundo', locale: 'es' },
   { name: 'Nepali', locale: 'ne' },
-  { name: 'Pashto', locale: 'ps' },
-  { name: 'Persian', locale: 'fa' },
+  { name: 'Pashto', locale: 'ps', dir: 'rtl' },
+  { name: 'Persian', locale: 'fa', dir: 'rtl' },
   { name: 'Pidgin', locale: 'pcm' },
   { name: 'Punjabi', locale: 'pa-in' },
   { name: 'Russian', locale: 'ru' },
@@ -53,6 +63,8 @@ const locales = [
   { name: 'Somali', locale: 'so' },
   { name: 'Tamil', locale: 'ta' },
   { name: 'Ukrainian', locale: 'uk' },
+  { name: 'Tigrinya', locale: 'ti' },
+  { name: 'Uzbek', locale: 'uz' },
   { name: 'Yoruba', locale: 'yo' },
 ];
 
@@ -206,7 +218,7 @@ const Paragraph = styled.p`
 const issueHref = localeName =>
   `https://github.com/bbc/psammead/issues/new?labels=bug&title=Moment+translation+correction+for+${localeName}&projects=bbc/20`;
 
-locales.forEach(({ name, locale }) => {
+locales.forEach(({ name, locale, dir }) => {
   stories.add(
     `Moment - ${name}(${locale})`,
     () => (
@@ -221,7 +233,7 @@ locales.forEach(({ name, locale }) => {
               /* eslint-disable react/no-array-index-key */
               <tr key={index}>
                 <td>{func('en-gb')}</td>
-                <td>{func(locale)}</td>
+                <td dir={dir}>{func(locale)}</td>
               </tr>
             ))}
           </tbody>

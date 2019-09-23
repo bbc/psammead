@@ -8,15 +8,20 @@ This package provides a collection of locale configs, used in BBC World Service 
 
 The following [Moment.js](https://momentjs.com/) locales have been added as they do not exist upstream:
 
+- `/moment/am` - locale override for Amharic
 - `/moment/ha` - locale for Hausa
 - `/moment/ig` - locale for Igbo
+- `/moment/om` - locale override for Afaan Oromoo
 - `/moment/pcm` - locale for Pidgin
 - `/moment/ps` - locale for Pashto
+- `/moment/rw` - locale for Gahuza
 - `/moment/so` - locale for Somali
+- `/moment/ti` - locale for Tigrinya
 
 The following locales have overrides to meet BBC World Service requirements where these differ from the upstream locale. Note that importing them will also cause the upstream locale to be loaded.
 
 - `/moment/ar` - locale override for Arabic
+- `/moment/es` - locale override for Spanish (Mundo)
 - `/moment/fa` - locale override for Persian (Farsi)
 - `/moment/gu` - locale override for Gujarati
 - `/moment/hi` - locale override for Hindi
@@ -30,6 +35,7 @@ The following locales have overrides to meet BBC World Service requirements wher
 - `/moment/sr-cyrl` - locale override for Serbian Cyrillic
 - `/moment/ta` - locale override for Tamil
 - `/moment/uk` - locale override for Ukrainian
+- `/moment/uz` - locale override for Uzbek
 - `/moment/yo` - locale override for Yoruba
 
 ### Numerals

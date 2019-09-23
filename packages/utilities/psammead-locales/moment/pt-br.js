@@ -7,4 +7,11 @@ moment.updateLocale('pt-br', {
     LLL: 'D MMMM YYYY [às] HH:mm',
     LLLL: 'dddd, D MMMM YYYY [às] HH:mm',
   },
+  relativeTime: {
+    past: 'Há %s',
+    m: '1 minuto',
+    mm: '%d minutos',
+    h: '1 hora',
+    hh: '%d horas',
+  },
 });

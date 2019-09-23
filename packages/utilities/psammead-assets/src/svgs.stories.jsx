@@ -4,7 +4,9 @@ import { node, number, shape } from 'prop-types';
 import { storiesOf } from '@storybook/react';
 import { number as numberKnob, withKnobs } from '@storybook/addon-knobs';
 import notes from '../README.md';
-import * as svgs from './svgs';
+import * as allSvgs from './svgs';
+
+const { mediaIcons, ...svgs } = allSvgs;
 
 // `currentColor` has been used to address high contrast mode in Firefox.
 const Svg = styled.svg`
@@ -58,10 +60,11 @@ getSVG.propTypes = {
   height: number,
 };
 
-const stories = storiesOf('Utilities|SVGs', module).addDecorator(withKnobs);
-
+const stories = storiesOf('Utilities|SVGs/Brand Svgs', module).addDecorator(
+  withKnobs,
+);
 Object.keys(svgs)
-  .filter(svgName => svgName !== 'BBC_BLOCKS' && svgName !== 'mediaIcons')
+  .filter(svgName => svgName !== 'BBC_BLOCKS')
   .forEach(svgName => {
     stories.add(
       svgName,
@@ -72,3 +75,12 @@ Object.keys(svgs)
       { notes },
     );
   });
+
+const mediaIconStories = storiesOf(
+  'Utilities|SVGs/MediaIcons Svgs',
+  module,
+).addDecorator(withKnobs);
+
+Object.keys(mediaIcons).forEach(iconName => {
+  mediaIconStories.add(iconName, () => mediaIcons[iconName], { notes });
+});
