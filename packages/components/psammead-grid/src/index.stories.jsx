@@ -107,4 +107,51 @@ storiesOf('Components|Grid', module)
       </Grid>
     ),
     { notes, knobs: { escapeHTML: false } },
+  )
+  .add(
+    '8 6 2...',
+    () => (
+      <Grid>
+        <ItemMultiConfig
+          layouts={[
+            {
+              breakpointMin: GEL_GROUP_0_SCREEN_WIDTH_MIN,
+              breakpointMax: GEL_GROUP_4_SCREEN_WIDTH_MAX,
+              start: 'content-start',
+              end: 'content-end',
+            },
+          ]}
+        >
+          <ExampleParagraph number={1} />
+        </ItemMultiConfig>
+        <ItemMultiConfig
+          layouts={[
+            {
+              breakpointMin: GEL_GROUP_0_SCREEN_WIDTH_MIN,
+              breakpointMax: GEL_GROUP_4_SCREEN_WIDTH_MAX,
+              start: 'content-start',
+              span: 6,
+            },
+          ]}
+        >
+          <ExampleParagraph number={2} />
+        </ItemMultiConfig>
+        {['3', '4', '5', '6', '7', '8', '9', '10'].map(num => (
+          <ItemMultiConfig
+            key={`${num}item`}
+            layouts={[
+              {
+                breakpointMin: GEL_GROUP_0_SCREEN_WIDTH_MIN,
+                breakpointMax: GEL_GROUP_4_SCREEN_WIDTH_MAX,
+                start: 'content-start',
+                span: 2,
+              },
+            ]}
+          >
+            <ExampleParagraph number={num} />
+          </ItemMultiConfig>
+        ))}
+      </Grid>
+    ),
+    { notes, knobs: { escapeHTML: false } },
   );
