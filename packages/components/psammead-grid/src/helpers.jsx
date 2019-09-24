@@ -43,6 +43,11 @@ export const ExampleParagraph = ({ identifier }) => (
   </Paragraph>
 );
 
+export const ExampleFigure = styled.figure`
+  margin: 0;
+  padding: 0;
+`;
+
 ExampleParagraph.propTypes = {
   identifier: string,
 };

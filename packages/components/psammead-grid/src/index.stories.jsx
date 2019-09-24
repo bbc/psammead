@@ -13,12 +13,19 @@ import {
   // GEL_GROUP_5_SCREEN_WIDTH_MIN,
 } from '@bbc/gel-foundations/breakpoints';
 import notes from '../README.md';
-import Grid, { SingleGridComponent, PageStyledGrid } from '.';
+import {
+  LegacyGrid,
+  SingleGridComponent,
+  PageStyledGrid,
+  Grid,
+  PageGrid,
+} from '.';
 import {
   FullWidth,
   Item,
   ItemWithConfig,
   ItemMultiConfig,
+  ExampleFigure,
   ExampleParagraph,
 } from './helpers';
 
@@ -26,18 +33,18 @@ storiesOf('Components|Grid', module)
   .add(
     'FullWidth',
     () => (
-      <Grid>
+      <LegacyGrid>
         <FullWidth>
           <ExampleParagraph />
         </FullWidth>
-      </Grid>
+      </LegacyGrid>
     ),
     { notes, knobs: { escapeHTML: false } },
   )
   .add(
     'Spanning one column',
     () => (
-      <Grid>
+      <LegacyGrid>
         <Item startAtCol={2} span={1}>
           <ExampleParagraph />
         </Item>
@@ -53,14 +60,14 @@ storiesOf('Components|Grid', module)
         <Item startAtCol={7} span={1}>
           <ExampleParagraph />
         </Item>
-      </Grid>
+      </LegacyGrid>
     ),
     { notes, knobs: { escapeHTML: false } },
   )
   .add(
     'Item with config - spanning 6',
     () => (
-      <Grid>
+      <LegacyGrid>
         <ItemWithConfig
           start={1}
           span={6}
@@ -69,14 +76,14 @@ storiesOf('Components|Grid', module)
         >
           <ExampleParagraph />
         </ItemWithConfig>
-      </Grid>
+      </LegacyGrid>
     ),
     { notes, knobs: { escapeHTML: false } },
   )
   .add(
     'Spanning multiple columns / varying at each breakpoint',
     () => (
-      <Grid>
+      <LegacyGrid>
         <ItemMultiConfig
           layouts={[
             {
@@ -104,14 +111,14 @@ storiesOf('Components|Grid', module)
             <ExampleParagraph identifier={num} />
           </ItemMultiConfig>
         ))}
-      </Grid>
+      </LegacyGrid>
     ),
     { notes, knobs: { escapeHTML: false } },
   )
   .add(
     '8 6 2...',
     () => (
-      <Grid>
+      <LegacyGrid>
         <ItemMultiConfig
           layouts={[
             {
@@ -151,7 +158,7 @@ storiesOf('Components|Grid', module)
             <ExampleParagraph identifier={num} />
           </ItemMultiConfig>
         ))}
-      </Grid>
+      </LegacyGrid>
     ),
     { notes, knobs: { escapeHTML: false } },
   )
@@ -221,7 +228,7 @@ storiesOf('Components|Grid', module)
     { notes, knobs: { escapeHTML: false } },
   )
   .add(
-    'Using single grid forlsdfjlk',
+    'Using single grid for 8[6,2,2,2..]',
     () => (
       <PageStyledGrid columns={8} wrapper>
         <SingleGridComponent columns={6}>
@@ -233,6 +240,82 @@ storiesOf('Components|Grid', module)
           </SingleGridComponent>
         ))}
       </PageStyledGrid>
+    ),
+    { notes, knobs: { escapeHTML: false } },
+  )
+  .add(
+    'PageGrid with Grid examples',
+    () => (
+      <PageGrid wrapper columns={{ group3: 6, group4: 8, group5: 20 }}>
+        <Grid
+          startOffset={{ group3: 1, group4: 2, group5: 5 }}
+          columns={{ group3: 6, group4: 6, group5: 12 }}
+        >
+          <ExampleParagraph identifier="1" />
+        </Grid>
+        <Grid
+          wrapper
+          startOffset={{ group3: 1, group4: 2, group5: 5 }}
+          columns={{ group3: 6, group4: 6, group5: 12 }}
+        >
+          <Grid columns={{ group3: 6, group4: 6, group5: 12 }}>
+            <ExampleParagraph identifier="Landscape image " />
+          </Grid>
+          <Grid columns={{ group2: 6, group3: 5, group4: 5, group5: 10 }}>
+            <ExampleParagraph identifier="Landscape image's caption " />
+          </Grid>
+        </Grid>
+        <Grid columns={{ group2: 6, group3: 5, group4: 5, group5: 10 }}>
+          <ExampleParagraph identifier="Paragraph " />
+        </Grid>
+        {['2', '3', '4', '5', '6', '7', '8', '9', '10'].map(num => (
+          <Grid
+            columns={{ group2: 6, group3: 5, group4: 5, group5: 10 }}
+            key={`${num}item`}
+          >
+            <ExampleParagraph identifier={num} />
+          </Grid>
+        ))}
+      </PageGrid>
+    ),
+    { notes, knobs: { escapeHTML: false } },
+  )
+  .add(
+    'Using single grid with multi breakpoints - e.g. an article',
+    () => (
+      <PageGrid columns={{ group3: 6, group4: 8, group5: 20 }} wrapper>
+        <Grid
+          startOffset={{ group3: 1, group4: 2, group5: 5 }}
+          columns={{ group3: 6, group4: 6, group5: 12 }}
+        >
+          <ExampleParagraph identifier="1" />
+        </Grid>
+        <ExampleFigure>
+          <Grid
+            wrapper
+            startOffset={{ group3: 1, group4: 2, group5: 5 }}
+            columns={{ group3: 6, group4: 6, group5: 12 }}
+          >
+            <Grid columns={{ group3: 6, group4: 6, group5: 12 }}>
+              <ExampleParagraph identifier="Landscape image " />
+            </Grid>
+            <Grid columns={{ group2: 6, group3: 5, group4: 5, group5: 10 }}>
+              <ExampleParagraph identifier="Landscape image's caption " />
+            </Grid>
+          </Grid>
+        </ExampleFigure>
+        <Grid columns={{ group2: 6, group3: 5, group4: 5, group5: 10 }}>
+          <ExampleParagraph identifier="Paragraph " />
+        </Grid>
+        {['2', '3', '4', '5', '6', '7', '8', '9', '10'].map(num => (
+          <Grid
+            columns={{ group2: 6, group3: 5, group4: 5, group5: 10 }}
+            key={`${num}item`}
+          >
+            <ExampleParagraph identifier={num} />
+          </Grid>
+        ))}
+      </PageGrid>
     ),
     { notes, knobs: { escapeHTML: false } },
   );
