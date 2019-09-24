@@ -28,10 +28,12 @@ import './ps';
 import './pt-br';
 import './ru';
 import './rw';
+import './si';
 import './so';
-import './sr-cyrl';
 import './sr';
+import './sr-cyrl';
 import './ta';
+import './th';
 import './ti';
 import './uk';
 import './uz';
@@ -61,9 +63,11 @@ const locales = [
   { name: 'Serbian', locale: 'sr' },
   { name: 'Serbian Cyrillic', locale: 'sr-cyrl' },
   { name: 'Somali', locale: 'so' },
+  { name: 'Sinhala', locale: 'si' },
   { name: 'Tamil', locale: 'ta' },
-  { name: 'Ukrainian', locale: 'uk' },
+  { name: 'Thai', locale: 'th' },
   { name: 'Tigrinya', locale: 'ti' },
+  { name: 'Ukrainian', locale: 'uk' },
   { name: 'Uzbek', locale: 'uz' },
   { name: 'Yoruba', locale: 'yo' },
 ];

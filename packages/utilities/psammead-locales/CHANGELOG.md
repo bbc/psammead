@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 | ------- | ----------- |
+| 2.18.0 | [PR#2186](https://github.com/bbc/psammead/pull/2186)  Add `si` (Sinhala) and `th` (Thai) locales and update `uk` (Ukrainian) |
 | 2.17.0 | [PR#2210](https://github.com/bbc/psammead/pull/2210) Add moment relative timestamp overrides for `ne` (Nepali), `sr` and `sr-cyrl` (Serbian) locales |
 | 2.16.0 | [PR#2176](https://github.com/bbc/psammead/pull/2176)  Add `es` (Spanish) locale and update `ar` (Arabic) and `pt-br` (Brasil) locales |
 | 2.15.0 | [PR#2184](https://github.com/bbc/psammead/pull/2184) Add `uz` (Uzbek) locale |
