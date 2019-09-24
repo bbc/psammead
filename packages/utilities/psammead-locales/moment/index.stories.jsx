@@ -43,7 +43,7 @@ const stories = storiesOf('Utilities|Psammead Locales', module);
 const locales = [
   { name: 'Afaan Oromoo', locale: 'om' },
   { name: 'Amharic', locale: 'am' },
-  { name: 'Arabic', locale: 'ar' },
+  { name: 'Arabic', locale: 'ar', dir: 'rtl' },
   { name: 'Azeri', locale: 'az' },
   { name: 'Brasil', locale: 'pt-br' },
   { name: 'Gahuza', locale: 'rw' },
