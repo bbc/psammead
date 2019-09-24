@@ -1,10 +1,10 @@
 {
-  "name": "@bbc/psammead-moment-calendars",
+  "name": "@bbc/psammead-calendars",
   "version": "1.0.0",
   "main": "dist/index.js",
   "module": "esm/index.js",
   "sideEffects": false,
-  "description": "This package provides logic for converting calendar formats using Moment.js",
+  "description": "This package provides logic for formatting alternative (non-Gregorian) calendars",
   "repository": {
     "type": "git",
     "url": "https://github.com/BBC-News/psammead/tree/latest/packages/components/psammead-moment-calendars"

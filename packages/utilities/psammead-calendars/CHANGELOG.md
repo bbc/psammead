@@ -1,4 +1,4 @@
-# Moment Calendars Changelog
+# Calendars Changelog
 
 | Version | Description |
 |---------|-------------|
