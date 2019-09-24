@@ -7,4 +7,11 @@ moment.updateLocale('sr-cyrl', {
     LLL: 'D MMMM YYYY H:mm',
     LLLL: 'dddd, D MMMM YYYY H:mm',
   },
+  relativeTime: {
+    past: 'Пре %s',
+    m: '1 минута',
+    mm: 'минута: %d',
+    h: '1 сата',
+    hh: 'сати: %d',
+  },
 });
