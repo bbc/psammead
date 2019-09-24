@@ -27,10 +27,10 @@ moment.defineLocale('ps', {
   months: pashtoGregorianMonths,
   monthsShort: pashtoGregorianMonths,
   relativeTime: {
-    past: '%s مخکې', // %s 'ago'
-    m: 'یوه دقیقه', // 'a minute'
+    past: '%s وړاندې', // %s 'ago'
+    m: '۱ دقیقه', // '1 minute'
     mm: '%d دقیقې', // %d 'minutes'
-    h: 'یو ساعت', // 'an hour'
+    h: '۱ ساعت', // '1 hour'
     hh: '%d ساعتونه', // %d 'hours'
   },
   postformat: function(string) {
