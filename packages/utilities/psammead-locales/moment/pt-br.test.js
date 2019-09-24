@@ -145,12 +145,12 @@ test('from', function() {
   );
   assert.equal(
     start.from(moment([2007, 1, 28]).add({ s: 45 }), true),
-    'um minuto',
+    '1 minuto',
     '45 seconds = a minute'
   );
   assert.equal(
     start.from(moment([2007, 1, 28]).add({ s: 89 }), true),
-    'um minuto',
+    '1 minuto',
     '89 seconds = a minute'
   );
   assert.equal(
@@ -165,12 +165,12 @@ test('from', function() {
   );
   assert.equal(
     start.from(moment([2007, 1, 28]).add({ m: 45 }), true),
-    'uma hora',
+    '1 hora',
     '45 minutes = an hour'
   );
   assert.equal(
     start.from(moment([2007, 1, 28]).add({ m: 89 }), true),
-    'uma hora',
+    '1 hora',
     '89 minutes = an hour'
   );
   assert.equal(
@@ -282,7 +282,7 @@ test('from', function() {
 
 test('suffix', function() {
   assert.equal(moment(30000).from(0), 'em poucos segundos', 'prefix');
-  assert.equal(moment(0).from(30000), 'há poucos segundos', 'prefix');
+  assert.equal(moment(0).from(30000), 'Há poucos segundos', 'prefix');
 });
 
 test('fromNow', function() {
@@ -469,13 +469,13 @@ test('relative time threshold', function() {
   rts.subtract(3, 'seconds');
   assert.equal(
     rts.fromNow(),
-    'há poucos segundos',
+    'Há poucos segundos',
     'Below custom a few seconds to seconds threshold'
   );
   rts.subtract(1, 'seconds');
   assert.equal(
     rts.fromNow(),
-    'há 4 segundos',
+    'Há 4 segundos',
     'Above custom a few seconds to seconds threshold'
   );
 
