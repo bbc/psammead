@@ -6,7 +6,7 @@ moment.locale('sw');
 const assert = { equal: (val1, val2) => expect(val1).toEqual(val2) };
 
 test('parse', function () {
-  var tests = 'Januari Jan_Februari Feb_Machi Mac_Aprili Apr_Mei Mei_Juni Jun_Julai Jul_Agosti Ago_Septemba Sep_Oktoba Okt_Novemba Nov_Desemba Des'.split('_'), i;
+  var tests = 'Januari Jan_Februari Feb_Machi Mac_Aprili Apr_Mei Mei_Juni Jun_Julai Jul_Agosti Ago_Septemba Sep_Oktoba Okt_Novemba Nov_Disemba Des'.split('_'), i;
   function equalTest(input, mmm, i) {
     assert.equal(moment(input, mmm).month(), i, input + ' should be month ' + (i + 1));
   }
@@ -94,7 +94,7 @@ test('format ordinal', function () {
 });
 
 test('format month', function () {
-  var expected = 'Januari Jan_Februari Feb_Machi Mac_Aprili Apr_Mei Mei_Juni Jun_Julai Jul_Agosti Ago_Septemba Sep_Oktoba Okt_Novemba Nov_Desemba Des'.split('_'), i;
+  var expected = 'Januari Jan_Februari Feb_Machi Mac_Aprili Apr_Mei Mei_Juni Jun_Julai Jul_Agosti Ago_Septemba Sep_Oktoba Okt_Novemba Nov_Disemba Des'.split('_'), i;
   for (i = 0; i < expected.length; i++) {
     assert.equal(moment([2011, i, 1]).format('MMMM MMM'), expected[i], expected[i]);
   }
