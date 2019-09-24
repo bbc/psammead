@@ -128,7 +128,7 @@ export const LegacyGrid = styled.div`
   }
 `;
 
-const gelMarginsAndMaxWidths = css`
+const gelMargins = css`
   margin: 0 auto;
   @media (max-width: ${GEL_GROUP_2_SCREEN_WIDTH_MIN}) {
     padding: 0 ${GEL_MARGIN_BELOW_400PX};
@@ -136,6 +136,8 @@ const gelMarginsAndMaxWidths = css`
   @media (min-width: ${GEL_GROUP_2_SCREEN_WIDTH_MIN}) and (max-width: ${GEL_GROUP_3_SCREEN_WIDTH_MAX}) {
     padding: 0 ${GEL_MARGIN_ABOVE_400PX};
   }
+`;
+const gelMaxWidths = css`
   @media (min-width: ${GEL_GROUP_4_SCREEN_WIDTH_MIN}) and (max-width: ${GEL_GROUP_4_SCREEN_WIDTH_MAX}) {
     max-width: ${GEL_GROUP_4_SCREEN_WIDTH_MIN};
   }
@@ -143,7 +145,6 @@ const gelMarginsAndMaxWidths = css`
     max-width: ${GEL_GROUP_5_SCREEN_WIDTH_MIN};
   }
 `;
-
 const SingleGrid = styled.div`
   @supports (display: grid) {
     ${({ wrapper }) => wrapper && `display: grid;`}
@@ -162,7 +163,7 @@ const SingleGrid = styled.div`
   }
 `;
 
-// PageStyledGrid should extend with the margins gelMarginsAndMaxWidths
+// PageStyledGrid should extend with the margins gelMargins / gelMaxWidths
 // & then set props as defaults in the PageStyledGrid:
 // startOffset={{ group0: 1, group1: 1, group2: 1, group3: 1, group4: 1, group5: 1 }}
 // columns={{ group0: 6, group1: 6, group2: 6, group3: 6, group4: 8, group5: 20 }}
@@ -185,7 +186,8 @@ SingleGridComponent.propTypes = {
 };
 
 export const PageStyledGrid = styled(SingleGrid)`
-  ${gelMarginsAndMaxWidths};
+  ${gelMargins};
+  ${gelMaxWidths};
 `;
 
 const gridMediaQueries = ({ columns, startOffset }) => {
@@ -213,14 +215,15 @@ const gelGridGutters = css`
 
 const GridComponent = styled.div`
   @supports (display: grid) {
-    ${({ topLevel }) => topLevel && `${gelMarginsAndMaxWidths}`}
     ${({ wrapper }) => wrapper && `display: grid;`}
-    ${({ gelGutters }) => gelGutters && `${gelGridGutters}`}
+    ${({ enableGelMargins }) => enableGelMargins && gelMargins}
+    ${({ enableGelGutters }) => enableGelGutters && gelGridGutters}
+    ${({ enableGelMaxWidths }) => enableGelMaxWidths && gelMaxWidths}
     ${gridMediaQueries}
   }
 `;
 
-// PageStyledGrid should extend with the margins gelMarginsAndMaxWidths
+// PageStyledGrid should extend with the margins gelMargins / gelMaxWidths
 // & then set props as defaults in the PageStyledGrid:
 // startOffset={{ group0: 1, group1: 1, group2: 1, group3: 1, group4: 1, group5: 1 }}
 // columns={{ group0: 6, group1: 6, group2: 6, group3: 6, group4: 8, group5: 20 }}
@@ -239,29 +242,5 @@ export const Grid = ({ children, ...otherProps }) => {
   return <GridComponent {...otherProps}>{renderChildren()}</GridComponent>;
 };
 Grid.propTypes = {
-  children: node.isRequired,
-};
-
-const PageGridComponent = styled(GridComponent)`
-  ${gelMarginsAndMaxWidths}
-  ${gelGridGutters}
-`;
-
-export const PageGrid = ({ children, ...otherProps }) => {
-  const renderChildren = () =>
-    React.Children.map(children, child => {
-      return React.cloneElement(child, {
-        parentColumns: otherProps.columns,
-        parentGutterOffset: otherProps.gutterOffset,
-        parentStartOffset: otherProps.startOffset,
-      });
-    });
-
-  return (
-    <PageGridComponent {...otherProps}>{renderChildren()}</PageGridComponent>
-  );
-};
-
-PageGrid.propTypes = {
   children: node.isRequired,
 };

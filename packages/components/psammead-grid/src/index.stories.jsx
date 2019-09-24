@@ -242,7 +242,9 @@ storiesOf('Components|Grid', module)
     () => (
       <Grid
         columns={{ group1: 6, group2: 6, group3: 6, group4: 8, group5: 20 }}
-        topLevel
+        enableGelMargins
+        enableGelGutters
+        enableGelMaxWidths
         wrapper
       >
         <Grid
@@ -266,7 +268,7 @@ storiesOf('Components|Grid', module)
             group4: 2,
             group5: 5,
           }}
-          gelGutters
+          enableGelGutters
           wrapper
         >
           <Grid
@@ -330,6 +332,9 @@ storiesOf('Components|Grid', module)
     () => (
       <Grid
         columns={{ group1: 6, group2: 6, group3: 6, group4: 8, group5: 20 }}
+        enableGelMargins
+        enableGelGutters
+        enableGelMaxWidths
         wrapper
       >
         <Grid

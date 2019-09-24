@@ -14,7 +14,13 @@ describe('Grid component', () => {
   );
   shouldMatchSnapshot(
     'should render Grid wrapper with Grid',
-    <Grid columns={{ group3: 6, group4: 8, group5: 20 }} topLevel wrapper>
+    <Grid
+      columns={{ group3: 6, group4: 8, group5: 20 }}
+      enableGelMargins
+      enableGelGutters
+      enableGelMaxWidths
+      wrapper
+    >
       <Grid
         columns={{ group3: 6, group4: 6, group5: 12 }}
         startOffset={{ group3: 1, group4: 2, group5: 5 }}
@@ -55,7 +61,13 @@ describe('Grid component', () => {
   );
   shouldMatchSnapshot(
     'should render Grid wrapper with Grid including nested non-Grid Figure element',
-    <Grid columns={{ group3: 6, group4: 8, group5: 20 }} topLevel wrapper>
+    <Grid
+      columns={{ group3: 6, group4: 8, group5: 20 }}
+      enableGelMargins
+      enableGelGutters
+      enableGelMaxWidths
+      wrapper
+    >
       <Grid
         columns={{ group3: 6, group4: 6, group5: 12 }}
         startOffset={{ group3: 1, group4: 2, group5: 5 }}

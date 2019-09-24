@@ -14,8 +14,8 @@ exports[`Grid component should render Grid wrapper with Grid 1`] = `
 
 @supports (display:grid) {
   .c0 {
-    margin: 0 auto;
     display: grid;
+    margin: 0 auto;
   }
 }
 
@@ -211,8 +211,8 @@ exports[`Grid component should render Grid wrapper with Grid including nested no
 
 @supports (display:grid) {
   .c0 {
-    margin: 0 auto;
     display: grid;
+    margin: 0 auto;
   }
 }
 
