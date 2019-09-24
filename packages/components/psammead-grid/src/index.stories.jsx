@@ -253,7 +253,7 @@ storiesOf('Components|Grid', module)
             group1: 1,
             group2: 1,
             group3: 1,
-            group4: 2,
+            group4: 1,
             group5: 5,
           }}
         >
@@ -265,7 +265,7 @@ storiesOf('Components|Grid', module)
             group1: 1,
             group2: 1,
             group3: 1,
-            group4: 2,
+            group4: 1,
             group5: 5,
           }}
           enableGelGutters
@@ -277,7 +277,7 @@ storiesOf('Components|Grid', module)
               group1: 1,
               group2: 1,
               group3: 1,
-              group4: 2,
+              group4: 1,
               group5: 5,
             }}
           >
@@ -289,7 +289,7 @@ storiesOf('Components|Grid', module)
               group1: 1,
               group2: 1,
               group3: 1,
-              group4: 2,
+              group4: 1,
               group5: 5,
             }}
           >
@@ -302,7 +302,7 @@ storiesOf('Components|Grid', module)
             group1: 1,
             group2: 1,
             group3: 1,
-            group4: 2,
+            group4: 1,
             group5: 5,
           }}
         >
@@ -315,7 +315,7 @@ storiesOf('Components|Grid', module)
               group1: 1,
               group2: 1,
               group3: 1,
-              group4: 2,
+              group4: 1,
               group5: 5,
             }}
             key={`${num}item`}
@@ -343,7 +343,7 @@ storiesOf('Components|Grid', module)
             group1: 1,
             group2: 1,
             group3: 1,
-            group4: 2,
+            group4: 1,
             group5: 5,
           }}
         >
@@ -356,7 +356,7 @@ storiesOf('Components|Grid', module)
               group1: 1,
               group2: 1,
               group3: 1,
-              group4: 2,
+              group4: 1,
               group5: 5,
             }}
             wrapper
@@ -373,7 +373,7 @@ storiesOf('Components|Grid', module)
                 group1: 1,
                 group2: 1,
                 group3: 1,
-                group4: 2,
+                group4: 1,
                 group5: 5,
               }}
             >
@@ -391,7 +391,7 @@ storiesOf('Components|Grid', module)
                 group1: 1,
                 group2: 1,
                 group3: 1,
-                group4: 2,
+                group4: 1,
                 group5: 5,
               }}
             >
@@ -405,7 +405,7 @@ storiesOf('Components|Grid', module)
             group1: 1,
             group2: 1,
             group3: 1,
-            group4: 2,
+            group4: 1,
             group5: 5,
           }}
         >
@@ -418,7 +418,7 @@ storiesOf('Components|Grid', module)
               group1: 1,
               group2: 1,
               group3: 1,
-              group4: 2,
+              group4: 1,
               group5: 5,
             }}
             key={`${num}item`}

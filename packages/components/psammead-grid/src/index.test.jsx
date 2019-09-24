@@ -23,35 +23,35 @@ describe('Grid component', () => {
     >
       <Grid
         columns={{ group3: 6, group4: 6, group5: 12 }}
-        startOffset={{ group3: 1, group4: 2, group5: 5 }}
+        startOffset={{ group3: 1, group4: 1, group5: 5 }}
       >
         <ExampleParagraph identifier="1" />
       </Grid>
       <Grid
         wrapper
         columns={{ group3: 6, group4: 6, group5: 12 }}
-        startOffset={{ group3: 1, group4: 2, group5: 5 }}
+        startOffset={{ group3: 1, group4: 1, group5: 5 }}
       >
         <Grid columns={{ group3: 6, group4: 6, group5: 12 }}>
           <ExampleParagraph identifier="Landscape image " />
         </Grid>
         <Grid
           columns={{ group2: 6, group3: 5, group4: 5, group5: 10 }}
-          startOffset={{ group3: 1, group4: 2, group5: 5 }}
+          startOffset={{ group3: 1, group4: 1, group5: 5 }}
         >
           <ExampleParagraph identifier="Landscape image's caption " />
         </Grid>
       </Grid>
       <Grid
         columns={{ group2: 6, group3: 5, group4: 5, group5: 10 }}
-        startOffset={{ group3: 1, group4: 2, group5: 5 }}
+        startOffset={{ group3: 1, group4: 1, group5: 5 }}
       >
         <ExampleParagraph identifier="Paragraph " />
       </Grid>
       {['2', '3', '4', '5', '6', '7', '8', '9', '10'].map(num => (
         <Grid
           columns={{ group2: 6, group3: 5, group4: 5, group5: 10 }}
-          startOffset={{ group2: 1, group3: 1, group4: 2, group5: 5 }}
+          startOffset={{ group2: 1, group3: 1, group4: 1, group5: 5 }}
           key={`${num}item`}
         >
           <ExampleParagraph identifier={num} />
@@ -70,25 +70,25 @@ describe('Grid component', () => {
     >
       <Grid
         columns={{ group3: 6, group4: 6, group5: 12 }}
-        startOffset={{ group3: 1, group4: 2, group5: 5 }}
+        startOffset={{ group3: 1, group4: 1, group5: 5 }}
       >
         <ExampleParagraph identifier="1" />
       </Grid>
       <ExampleFigure>
         <Grid
           columns={{ group3: 6, group4: 6, group5: 12 }}
-          startOffset={{ group3: 1, group4: 2, group5: 5 }}
+          startOffset={{ group3: 1, group4: 1, group5: 5 }}
           wrapper
         >
           <Grid
             columns={{ group3: 6, group4: 6, group5: 12 }}
-            startOffset={{ group3: 1, group4: 2, group5: 5 }}
+            startOffset={{ group3: 1, group4: 1, group5: 5 }}
           >
             <ExampleParagraph identifier="Landscape image " />
           </Grid>
           <Grid
             columns={{ group2: 6, group3: 5, group4: 5, group5: 10 }}
-            startOffset={{ group2: 1, group3: 1, group4: 2, group5: 5 }}
+            startOffset={{ group2: 1, group3: 1, group4: 1, group5: 5 }}
           >
             <ExampleParagraph identifier="Landscape image's caption " />
           </Grid>
@@ -96,14 +96,14 @@ describe('Grid component', () => {
       </ExampleFigure>
       <Grid
         columns={{ group2: 6, group3: 5, group4: 5, group5: 10 }}
-        startOffset={{ group2: 1, group3: 1, group4: 2, group5: 5 }}
+        startOffset={{ group2: 1, group3: 1, group4: 1, group5: 5 }}
       >
         <ExampleParagraph identifier="Paragraph " />
       </Grid>
       {['2', '3', '4', '5', '6', '7', '8', '9', '10'].map(num => (
         <Grid
           columns={{ group2: 6, group3: 5, group4: 5, group5: 10 }}
-          startOffset={{ group2: 1, group3: 1, group4: 2, group5: 5 }}
+          startOffset={{ group2: 1, group3: 1, group4: 1, group5: 5 }}
           key={`${num}item`}
         >
           <ExampleParagraph identifier={num} />
