@@ -13,13 +13,7 @@ import {
   // GEL_GROUP_5_SCREEN_WIDTH_MIN,
 } from '@bbc/gel-foundations/breakpoints';
 import notes from '../README.md';
-import {
-  LegacyGrid,
-  SingleGridComponent,
-  PageStyledGrid,
-  Grid,
-  PageGrid,
-} from '.';
+import { LegacyGrid, SingleGridComponent, PageStyledGrid, Grid } from '.';
 import {
   FullWidth,
   Item,
@@ -244,78 +238,190 @@ storiesOf('Components|Grid', module)
     { notes, knobs: { escapeHTML: false } },
   )
   .add(
-    'PageGrid with Grid examples',
+    'Grid with Grid examples',
     () => (
-      <PageGrid wrapper columns={{ group3: 6, group4: 8, group5: 20 }}>
+      <Grid
+        columns={{ group1: 6, group2: 6, group3: 6, group4: 8, group5: 20 }}
+        topLevel
+        wrapper
+      >
         <Grid
-          startOffset={{ group3: 1, group4: 2, group5: 5 }}
-          columns={{ group3: 6, group4: 6, group5: 12 }}
+          columns={{ group1: 6, group2: 6, group3: 6, group4: 6, group5: 12 }}
+          startOffset={{
+            group1: 1,
+            group2: 1,
+            group3: 1,
+            group4: 2,
+            group5: 5,
+          }}
         >
           <ExampleParagraph identifier="1" />
         </Grid>
         <Grid
+          columns={{ group1: 6, group2: 6, group3: 6, group4: 6, group5: 12 }}
+          startOffset={{
+            group1: 1,
+            group2: 1,
+            group3: 1,
+            group4: 2,
+            group5: 5,
+          }}
+          gelGutters
           wrapper
-          startOffset={{ group3: 1, group4: 2, group5: 5 }}
-          columns={{ group3: 6, group4: 6, group5: 12 }}
         >
-          <Grid columns={{ group3: 6, group4: 6, group5: 12 }}>
+          <Grid
+            columns={{ group1: 6, group2: 6, group3: 6, group4: 6, group5: 12 }}
+            startOffset={{
+              group1: 1,
+              group2: 1,
+              group3: 1,
+              group4: 2,
+              group5: 5,
+            }}
+          >
             <ExampleParagraph identifier="Landscape image " />
           </Grid>
-          <Grid columns={{ group2: 6, group3: 5, group4: 5, group5: 10 }}>
+          <Grid
+            columns={{ group1: 6, group2: 6, group3: 5, group4: 5, group5: 10 }}
+            startOffset={{
+              group1: 1,
+              group2: 1,
+              group3: 1,
+              group4: 2,
+              group5: 5,
+            }}
+          >
             <ExampleParagraph identifier="Landscape image's caption " />
           </Grid>
         </Grid>
-        <Grid columns={{ group2: 6, group3: 5, group4: 5, group5: 10 }}>
+        <Grid
+          columns={{ group1: 6, group2: 6, group3: 5, group4: 5, group5: 10 }}
+          startOffset={{
+            group1: 1,
+            group2: 1,
+            group3: 1,
+            group4: 2,
+            group5: 5,
+          }}
+        >
           <ExampleParagraph identifier="Paragraph " />
         </Grid>
         {['2', '3', '4', '5', '6', '7', '8', '9', '10'].map(num => (
           <Grid
-            columns={{ group2: 6, group3: 5, group4: 5, group5: 10 }}
+            columns={{ group1: 6, group2: 6, group3: 5, group4: 5, group5: 10 }}
+            startOffset={{
+              group1: 1,
+              group2: 1,
+              group3: 1,
+              group4: 2,
+              group5: 5,
+            }}
             key={`${num}item`}
           >
             <ExampleParagraph identifier={num} />
           </Grid>
         ))}
-      </PageGrid>
+      </Grid>
     ),
     { notes, knobs: { escapeHTML: false } },
   )
   .add(
-    'Using single grid with multi breakpoints - e.g. an article',
+    'Grid wrapper with Grid using a nested Figure example - e.g. an article',
     () => (
-      <PageGrid columns={{ group3: 6, group4: 8, group5: 20 }} wrapper>
+      <Grid
+        columns={{ group1: 6, group2: 6, group3: 6, group4: 8, group5: 20 }}
+        wrapper
+      >
         <Grid
-          startOffset={{ group3: 1, group4: 2, group5: 5 }}
-          columns={{ group3: 6, group4: 6, group5: 12 }}
+          columns={{ group1: 6, group2: 6, group3: 6, group4: 6, group5: 12 }}
+          startOffset={{
+            group1: 1,
+            group2: 1,
+            group3: 1,
+            group4: 2,
+            group5: 5,
+          }}
         >
           <ExampleParagraph identifier="1" />
         </Grid>
         <ExampleFigure>
           <Grid
+            columns={{ group1: 6, group2: 6, group3: 6, group4: 6, group5: 12 }}
+            startOffset={{
+              group1: 1,
+              group2: 1,
+              group3: 1,
+              group4: 2,
+              group5: 5,
+            }}
             wrapper
-            startOffset={{ group3: 1, group4: 2, group5: 5 }}
-            columns={{ group3: 6, group4: 6, group5: 12 }}
           >
-            <Grid columns={{ group3: 6, group4: 6, group5: 12 }}>
+            <Grid
+              columns={{
+                group1: 6,
+                group2: 6,
+                group3: 6,
+                group4: 6,
+                group5: 12,
+              }}
+              startOffset={{
+                group1: 1,
+                group2: 1,
+                group3: 1,
+                group4: 2,
+                group5: 5,
+              }}
+            >
               <ExampleParagraph identifier="Landscape image " />
             </Grid>
-            <Grid columns={{ group2: 6, group3: 5, group4: 5, group5: 10 }}>
+            <Grid
+              columns={{
+                group1: 6,
+                group2: 6,
+                group3: 5,
+                group4: 5,
+                group5: 10,
+              }}
+              startOffset={{
+                group1: 1,
+                group2: 1,
+                group3: 1,
+                group4: 2,
+                group5: 5,
+              }}
+            >
               <ExampleParagraph identifier="Landscape image's caption " />
             </Grid>
           </Grid>
         </ExampleFigure>
-        <Grid columns={{ group2: 6, group3: 5, group4: 5, group5: 10 }}>
+        <Grid
+          columns={{ group1: 6, group2: 6, group3: 5, group4: 5, group5: 10 }}
+          startOffset={{
+            group1: 1,
+            group2: 1,
+            group3: 1,
+            group4: 2,
+            group5: 5,
+          }}
+        >
           <ExampleParagraph identifier="Paragraph " />
         </Grid>
         {['2', '3', '4', '5', '6', '7', '8', '9', '10'].map(num => (
           <Grid
-            columns={{ group2: 6, group3: 5, group4: 5, group5: 10 }}
+            columns={{ group1: 6, group2: 6, group3: 5, group4: 5, group5: 10 }}
+            startOffset={{
+              group1: 1,
+              group2: 1,
+              group3: 1,
+              group4: 2,
+              group5: 5,
+            }}
             key={`${num}item`}
           >
             <ExampleParagraph identifier={num} />
           </Grid>
         ))}
-      </PageGrid>
+      </Grid>
     ),
     { notes, knobs: { escapeHTML: false } },
   );

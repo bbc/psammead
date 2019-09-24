@@ -213,7 +213,9 @@ const gelGridGutters = css`
 
 const GridComponent = styled.div`
   @supports (display: grid) {
+    ${({ topLevel }) => topLevel && `${gelMarginsAndMaxWidths}`}
     ${({ wrapper }) => wrapper && `display: grid;`}
+    ${({ gelGutters }) => gelGutters && `${gelGridGutters}`}
     ${gridMediaQueries}
   }
 `;
@@ -240,7 +242,26 @@ Grid.propTypes = {
   children: node.isRequired,
 };
 
-export const PageGrid = styled(GridComponent)`
+const PageGridComponent = styled(GridComponent)`
   ${gelMarginsAndMaxWidths}
   ${gelGridGutters}
 `;
+
+export const PageGrid = ({ children, ...otherProps }) => {
+  const renderChildren = () =>
+    React.Children.map(children, child => {
+      return React.cloneElement(child, {
+        parentColumns: otherProps.columns,
+        parentGutterOffset: otherProps.gutterOffset,
+        parentStartOffset: otherProps.startOffset,
+      });
+    });
+
+  return (
+    <PageGridComponent {...otherProps}>{renderChildren()}</PageGridComponent>
+  );
+};
+
+PageGrid.propTypes = {
+  children: node.isRequired,
+};
