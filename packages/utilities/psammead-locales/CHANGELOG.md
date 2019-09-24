@@ -3,7 +3,8 @@
 <!-- prettier-ignore -->
 | Version | Description |
 | ------- | ----------- |
-| 2.17.0 | [PR#2227](https://github.com/bbc/psammead/pull/2227) Add `bn` (Bengali), `sw` (Swahili) and `ur` (Urdu) locales. Update `gu` (Gujarati) and`hi` (Hindi) locales |
+| 2.18.0 | [PR#2227](https://github.com/bbc/psammead/pull/2227) Add `bn` (Bengali), `sw` (Swahili) and `ur` (Urdu) locales. Update `gu` (Gujarati) and`hi` (Hindi) locales |
+| 2.17.0 | [PR#2210](https://github.com/bbc/psammead/pull/2210) Add moment relative timestamp overrides for `ne` (Nepali), `sr` and `sr-cyrl` (Serbian) locales |
 | 2.16.0 | [PR#2176](https://github.com/bbc/psammead/pull/2176) Add `es` (Spanish) locale and update `ar` (Arabic) and `pt-br` (Brasil) locales |
 | 2.15.0 | [PR#2184](https://github.com/bbc/psammead/pull/2184) Add `uz` (Uzbek) locale |
 | 2.14.0 | [PR#2178](https://github.com/bbc/psammead/pull/2178) Update `ps` (Pashto) locale to add relative time support |
@@ -42,5 +43,5 @@
 | 1.2.0 | [PR#1477](https://github.com/bbc/psammead/pull/1477) Add numerals as exports  |
 | 1.1.0 | [PR#1430](https://github.com/bbc/psammead/pull/1430) Adds some overrides for Yoruba  |
 | 1.0.2 | [PR#1365](https://github.com/bbc/psammead/pull/1365) Bump psammead-styles to 1.2.0|
-| 1.0.1 | [PR#1181](https://github.com/bbc/psammead/pull/1181) use `gel-foundations@3.0.3` and `psammead-styles@1.1.3` |
+| 1.0.1 | [PR#1181](https://github.com/bbc/psammead/pull/1181) Use `gel-foundations@3.0.3` and `psammead-styles@1.1.3` |
 | 1.0.0 | [PR#638](https://github.com/bbc/psammead/pull/638) Initial creation of package |

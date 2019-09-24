@@ -143,47 +143,47 @@ test('from', function() {
   );
   assert.equal(
     start.from(moment([2007, 1, 28]).add({ s: 45 }), true),
-    'jedan minut',
+    '1 minuta',
     '45 seconds = a minute'
   );
   assert.equal(
     start.from(moment([2007, 1, 28]).add({ s: 89 }), true),
-    'jedan minut',
+    '1 minuta',
     '89 seconds = a minute'
   );
   assert.equal(
     start.from(moment([2007, 1, 28]).add({ s: 90 }), true),
-    '2 minute',
+    'minuta: 2',
     '90 seconds = 2 minutes'
   );
   assert.equal(
     start.from(moment([2007, 1, 28]).add({ m: 44 }), true),
-    '44 minuta',
+    'minuta: 44',
     '44 minutes = 44 minutes'
   );
   assert.equal(
     start.from(moment([2007, 1, 28]).add({ m: 45 }), true),
-    'jedan sat',
+    '1 sata',
     '45 minutes = an hour'
   );
   assert.equal(
     start.from(moment([2007, 1, 28]).add({ m: 89 }), true),
-    'jedan sat',
+    '1 sata',
     '89 minutes = an hour'
   );
   assert.equal(
     start.from(moment([2007, 1, 28]).add({ m: 90 }), true),
-    '2 sata',
+    'sati: 2',
     '90 minutes = 2 hours'
   );
   assert.equal(
     start.from(moment([2007, 1, 28]).add({ h: 5 }), true),
-    '5 sati',
+    'sati: 5',
     '5 hours = 5 hours'
   );
   assert.equal(
     start.from(moment([2007, 1, 28]).add({ h: 21 }), true),
-    '21 sati',
+    'sati: 21',
     '21 hours = 21 hours'
   );
   assert.equal(
@@ -280,13 +280,13 @@ test('from', function() {
 
 test('suffix', function() {
   assert.equal(moment(30000).from(0), 'za nekoliko sekundi', 'prefix');
-  assert.equal(moment(0).from(30000), 'pre nekoliko sekundi', 'prefix');
+  assert.equal(moment(0).from(30000), 'Pre nekoliko sekundi', 'prefix');
 });
 
 test('now from now', function() {
   assert.equal(
     moment().fromNow(),
-    'pre nekoliko sekundi',
+    'Pre nekoliko sekundi',
     'now from now should display as in the past'
   );
 });
