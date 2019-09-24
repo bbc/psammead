@@ -26,7 +26,6 @@ test('format', function () {
 
 test('from', function () {
     var start = moment([2007, 1, 28]);
-    assert.equal(start.from(moment([2007, 1, 28]).add({s: 44}), true), 'یو څو ثانیې', '44 seconds = a few seconds');
     assert.equal(start.from(moment([2007, 1, 28]).add({s: 45}), true), 'یوه دقیقه', '45 seconds = a minute');
     assert.equal(start.from(moment([2007, 1, 28]).add({s: 89}), true), 'یوه دقیقه', '89 seconds = a minute');
     assert.equal(start.from(moment([2007, 1, 28]).add({s: 90}), true), '۲ دقیقې', '90 seconds = 2 minutes');
