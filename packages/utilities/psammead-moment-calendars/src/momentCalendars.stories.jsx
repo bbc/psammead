@@ -6,10 +6,15 @@ const jalaaliHelper = require('./calendars/jalaali');
 
 const stories = storiesOf('Utilities|Psammead Moment Calendars', module);
 
-const persianMoment = moment('12-25-1995', 'MM-DD-YYYY');
-persianMoment.locale('fa');
-const momentDate = jalaaliHelper.getJalaaliCalendar(persianMoment);
-
-stories.add('Jalaali', () => {
-  return <div>`${momentDate}`</div>;
+const testMoment = moment('09-20-2019', 'MM-DD-YYYY');
+testMoment.locale('fa');
+const momentDate = jalaaliHelper.getJalaaliCalendar(testMoment);
+stories.add('Jalaali Persian', () => {
+  return <div>{momentDate}</div>;
 });
+
+// testMoment.locale('ps');
+// momentDate = jalaaliHelper.getJalaaliCalendar(testMoment);
+// stories.add('Jalaali Pashto', () => {
+//   return <div>{momentDate}</div>;
+// });
