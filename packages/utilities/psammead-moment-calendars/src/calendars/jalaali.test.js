@@ -1,7 +1,9 @@
-// import moment from 'moment';
-// const jalaaliHelper = require('./calendars/jalaali');
-import { isNull } from '@bbc/psammead-test-helpers';
+import moment from 'moment';
+import { getJalaaliCalendar } from './jalaali';
 
-describe('test', () => {
-  isNull('should return null', null);
+const testMoment = moment('09-20-2019', 'MM-DD-YYYY');
+
+test('Persian Tests', () => {
+  testMoment.locale('fa');
+  expect(getJalaaliCalendar(testMoment)).toBe('29 شهریور 1398');
 });
