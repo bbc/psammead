@@ -9,7 +9,7 @@ moment.locale('ne')
 const assert = { equal: (val1, val2) => expect(val1).toEqual(val2) };
 
 test('parse', function () {
-    var tests = 'जनवरी जन._फेब्रुवरी फेब्रु._मार्च मार्च_अप्रिल अप्रि._मई मई_जुन जुन_जुलाई जुलाई._अगष्ट अग._सेप्टेम्बर सेप्ट._अक्टोबर अक्टो._नोभेम्बर नोभे._डिसेम्बर डिसे.'.split('_'), i;
+    var tests = 'जनवरी जन._फेब्रुवरी फेब्रु._मार्च मार्च_एप्रिल अप्रि._मई मई_जुन जुन_जुलाई जुलाई._अगष्ट अग._सेप्टेम्बर सेप्ट._अक्टोबर अक्टो._नोभेम्बर नोभे._डिसेम्बर डिसे.'.split('_'), i;
     function equalTest(input, mmm, i) {
         assert.equal(moment(input, mmm).month(), i, input + ' should be month ' + (i + 1));
     }
@@ -96,7 +96,7 @@ test('format ordinal', function () {
 });
 
 test('format month', function () {
-    var expected = 'जनवरी जन._फेब्रुवरी फेब्रु._मार्च मार्च_अप्रिल अप्रि._मई मई_जुन जुन_जुलाई जुलाई._अगष्ट अग._सेप्टेम्बर सेप्ट._अक्टोबर अक्टो._नोभेम्बर नोभे._डिसेम्बर डिसे.'.split('_'), i;
+    var expected = 'जनवरी जन._फेब्रुवरी फेब्रु._मार्च मार्च_एप्रिल अप्रि._मई मई_जुन जुन_जुलाई जुलाई._अगष्ट अग._सेप्टेम्बर सेप्ट._अक्टोबर अक्टो._नोभेम्बर नोभे._डिसेम्बर डिसे.'.split('_'), i;
     for (i = 0; i < expected.length; i++) {
         assert.equal(moment([2011, i, 1]).format('MMMM MMM'), expected[i], expected[i]);
     }
@@ -112,12 +112,12 @@ test('format week', function () {
 test('from', function () {
     var start = moment([2007, 1, 28]);
     assert.equal(start.from(moment([2007, 1, 28]).add({s: 44}), true),  'केही क्षण', '44 seconds = a few seconds');
-    assert.equal(start.from(moment([2007, 1, 28]).add({s: 45}), true),  'एक मिनेट',      '45 seconds = a minute');
-    assert.equal(start.from(moment([2007, 1, 28]).add({s: 89}), true),  'एक मिनेट',      '89 seconds = a minute');
+    assert.equal(start.from(moment([2007, 1, 28]).add({s: 45}), true),  '१ मिनेट',      '45 seconds = a minute');
+    assert.equal(start.from(moment([2007, 1, 28]).add({s: 89}), true),  '१ मिनेट',      '89 seconds = a minute');
     assert.equal(start.from(moment([2007, 1, 28]).add({s: 90}), true),  '2 मिनेट',     '90 seconds = 2 minutes');
     assert.equal(start.from(moment([2007, 1, 28]).add({m: 44}), true),  '44 मिनेट',    '44 minutes = 44 minutes');
-    assert.equal(start.from(moment([2007, 1, 28]).add({m: 45}), true),  'एक घण्टा',       '45 minutes = an hour');
-    assert.equal(start.from(moment([2007, 1, 28]).add({m: 89}), true),  'एक घण्टा',       '89 minutes = an hour');
+    assert.equal(start.from(moment([2007, 1, 28]).add({m: 45}), true),  '१ घण्टा',       '45 minutes = an hour');
+    assert.equal(start.from(moment([2007, 1, 28]).add({m: 89}), true),  '१ घण्टा',       '89 minutes = an hour');
     assert.equal(start.from(moment([2007, 1, 28]).add({m: 90}), true),  '2 घण्टा',       '90 minutes = 2 hours');
     assert.equal(start.from(moment([2007, 1, 28]).add({h: 5}), true),   '5 घण्टा',       '5 hours = 5 hours');
     assert.equal(start.from(moment([2007, 1, 28]).add({h: 21}), true),  '21 घण्टा',      '21 hours = 21 hours');
@@ -142,12 +142,12 @@ test('from', function () {
 });
 
 test('suffix', function () {
-    assert.equal(moment(30000).from(0), 'केही क्षणमा',  'prefix');
-    assert.equal(moment(0).from(30000), 'केही क्षण अगाडि', 'suffix');
+    assert.equal(moment(30000).from(0), 'केही क्षणमा', 'prefix');
+    assert.equal(moment(0).from(30000), 'केही क्षण पहिले', 'suffix');
 });
 
 test('now from now', function () {
-    assert.equal(moment().fromNow(), 'केही क्षण अगाडि',  'now from now should display as in the past');
+    assert.equal(moment().fromNow(), 'केही क्षण पहिले', 'now from now should display as in the past');
 });
 
 test('fromNow', function () {
