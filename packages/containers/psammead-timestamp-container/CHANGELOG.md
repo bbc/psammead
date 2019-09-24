@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 2.4.17 | [PR#2235](https://github.com/bbc/psammead/pull/2235) Talos - Bump Dependencies - @bbc/psammead-timestamp |
 | 2.4.16 | [PR#2191](https://github.com/bbc/psammead/pull/2191) Talos - Bump Dependencies - @bbc/gel-foundations |
 | 2.4.15 | [PR#2147](https://github.com/bbc/psammead/pull/2147) Talos - Bump Dependencies - @bbc/psammead-timestamp |
 | 2.4.14 | [PR#1933](https://github.com/bbc/psammead/pull/1933) Uses `select` instead of `button` to update time on click in stories |
