@@ -73,33 +73,23 @@ const Grid = styled.div`
   }
 `;
 
-const getGridStart = ({ columns, parentColumns, center, startOffset }) => {
-  if (startOffset) {
-    return `${startOffset}`;
+const gelMarginsAndMaxWidths = css`
+  margin: 0 auto;
+  @media (max-width: ${GEL_GROUP_2_SCREEN_WIDTH_MIN}) {
+    padding: 0 ${GEL_MARGIN_BELOW_400PX};
   }
-
-  if (parentColumns && center) {
-    return `${Math.floor((parentColumns - columns) / 2) + 1}`;
+  @media (min-width: ${GEL_GROUP_2_SCREEN_WIDTH_MIN}) and (max-width: ${GEL_GROUP_3_SCREEN_WIDTH_MAX}) {
+    padding: 0 ${GEL_MARGIN_ABOVE_400PX};
   }
-
-  return '1';
-};
+  @media (min-width: ${GEL_GROUP_4_SCREEN_WIDTH_MIN}) and (max-width: ${GEL_GROUP_4_SCREEN_WIDTH_MAX}) {
+    max-width: ${GEL_GROUP_4_SCREEN_WIDTH_MIN};
+  }
+  @media (min-width: ${GEL_GROUP_5_SCREEN_WIDTH_MIN}) {
+    max-width: ${GEL_GROUP_5_SCREEN_WIDTH_MIN};
+  }
+`;
 
 const SingleGrid = styled.div`
-  width: ${({ columns, parentColumns }) =>
-    `${(columns / parentColumns) * 100}%`};
-  ${({ center }) =>
-    center &&
-    `
-    margin: 0 auto; 
-    @media (max-width: ${GEL_GROUP_2_SCREEN_WIDTH_MIN}) {
-    padding: 0 ${GEL_MARGIN_BELOW_400PX};
-    }
-    @media (min-width: ${GEL_GROUP_2_SCREEN_WIDTH_MIN}) and (max-width: ${GEL_GROUP_3_SCREEN_WIDTH_MAX}) {
-      padding: 0 ${GEL_MARGIN_ABOVE_400PX};
-    }
-  `};
-
   @supports (display: grid) {
     margin: initial;
     width: initial;
@@ -107,28 +97,42 @@ const SingleGrid = styled.div`
 
     grid-template-columns: repeat(${({ columns }) => columns}, 1fr);
     @media (max-width: ${GEL_GROUP_2_SCREEN_WIDTH_MAX}) {
-      grid-column-gap: ${GEL_GUTTER_BELOW_600PX};
+      grid-column-gap: ${({ gutterOffset }) =>
+        gutterOffset || GEL_GUTTER_BELOW_600PX};
     }
     @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
-      grid-column-gap: ${GEL_GUTTER_ABOVE_600PX};
+      grid-column-gap: ${({ gutterOffset }) =>
+        gutterOffset || GEL_GUTTER_ABOVE_600PX};
     }
-
-    grid-column: ${getGridStart} / span ${({ columns }) => columns};
+    ${({ startOffset }) => startOffset && `grid-column-start: ${startOffset};`};
+    grid-column: span ${({ columns }) => columns};
   }
 `;
 
+// PageStyledGrid should extend with the margins gelMarginsAndMaxWidths
+// & then set props as defaults in the PageStyledGrid:
+// startOffset={{ group0: 1, group1: 1, group2: 1, group3: 1, group4: 1, group5: 1 }}
+// columns={{ group0: 6, group1: 6, group2: 6, group3: 6, group4: 8, group5: 20 }}
+// gutters={{ group0: GEL_GUTTER_BELOW_600PX, group1: GEL_GUTTER_BELOW_600PX, group2: GEL_GUTTER_BELOW_600PX, group3: GEL_GUTTER_BELOW_600PX, group4: GEL_GUTTER_ABOVE_600PX, group5: GEL_GUTTER_ABOVE_600PX }}
+
 export const SingleGridComponent = ({ children, ...otherProps }) => {
   const renderChildren = () =>
-    React.Children.map(children, child =>
-      React.cloneElement(child, {
+    React.Children.map(children, child => {
+      return React.cloneElement(child, {
         parentColumns: otherProps.columns,
-      }),
-    );
+        parentGutterOffset: otherProps.gutterOffset,
+        parentStartOffset: otherProps.startOffset,
+      });
+    });
 
   return <SingleGrid {...otherProps}>{renderChildren()}</SingleGrid>;
 };
 SingleGridComponent.propTypes = {
   children: node.isRequired,
 };
+
+export const PageStyledGrid = styled(SingleGrid)`
+  ${gelMarginsAndMaxWidths};
+`;
 
 export default Grid;

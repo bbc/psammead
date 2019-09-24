@@ -31,21 +31,21 @@ export const ItemMultiConfig = styled.div`
   }
 `;
 
-export const ExampleParagraph = ({ number }) => (
+export const ExampleParagraph = ({ identifier }) => (
   <Paragraph script={cyrillicAndLatin} service="news">
-    {number}This is a long paragraph that will wrap for several lines. This is a
-    long paragraph that will wrap for several lines. This is a long paragraph
-    that will wrap for several lines. This is a long paragraph that will wrap
-    for several lines. This is a long paragraph that will wrap for several
-    lines. This is a long paragraph that will wrap for several lines. This is a
-    long paragraph that will wrap for several lines. This is a long paragraph
-    that will wrap for several lines.
+    {identifier}This is a long paragraph that will wrap for several lines. This
+    is a long paragraph that will wrap for several lines. This is a long
+    paragraph that will wrap for several lines. This is a long paragraph that
+    will wrap for several lines. This is a long paragraph that will wrap for
+    several lines. This is a long paragraph that will wrap for several lines.
+    This is a long paragraph that will wrap for several lines. This is a long
+    paragraph that will wrap for several lines.
   </Paragraph>
 );
 
 ExampleParagraph.propTypes = {
-  number: string,
+  identifier: string,
 };
 ExampleParagraph.defaultProps = {
-  number: '1',
+  identifier: '1',
 };

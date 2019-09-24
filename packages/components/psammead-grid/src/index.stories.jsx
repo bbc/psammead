@@ -13,7 +13,7 @@ import {
   // GEL_GROUP_5_SCREEN_WIDTH_MIN,
 } from '@bbc/gel-foundations/breakpoints';
 import notes from '../README.md';
-import Grid, { SingleGridComponent } from '.';
+import Grid, { SingleGridComponent, PageStyledGrid } from '.';
 import {
   FullWidth,
   Item,
@@ -101,7 +101,7 @@ storiesOf('Components|Grid', module)
               },
             ]}
           >
-            <ExampleParagraph number={num} />
+            <ExampleParagraph identifier={num} />
           </ItemMultiConfig>
         ))}
       </Grid>
@@ -122,7 +122,7 @@ storiesOf('Components|Grid', module)
             },
           ]}
         >
-          <ExampleParagraph number="1" />
+          <ExampleParagraph identifier="1" />
         </ItemMultiConfig>
         <ItemMultiConfig
           layouts={[
@@ -134,7 +134,7 @@ storiesOf('Components|Grid', module)
             },
           ]}
         >
-          <ExampleParagraph number="2" />
+          <ExampleParagraph identifier="2" />
         </ItemMultiConfig>
         {['3', '4', '5', '6', '7', '8', '9', '10'].map(num => (
           <ItemMultiConfig
@@ -148,7 +148,7 @@ storiesOf('Components|Grid', module)
               },
             ]}
           >
-            <ExampleParagraph number={num} />
+            <ExampleParagraph identifier={num} />
           </ItemMultiConfig>
         ))}
       </Grid>
@@ -156,21 +156,83 @@ storiesOf('Components|Grid', module)
     { notes, knobs: { escapeHTML: false } },
   )
   .add(
-    'Using single grid for 8 6 2... layout',
+    'Using single grid for 8[6,2,2,2,2...] layout',
     () => (
-      <SingleGridComponent columns={8} center wrapper>
-        <SingleGridComponent columns={8}>
-          <ExampleParagraph number="1" />
-        </SingleGridComponent>
+      <PageStyledGrid columns={8} wrapper>
         <SingleGridComponent columns={6}>
-          <ExampleParagraph number="2" />
+          <ExampleParagraph identifier="1" />
+        </SingleGridComponent>
+        <SingleGridComponent columns={2}>
+          <ExampleParagraph identifier="2" />
         </SingleGridComponent>
         {['3', '4', '5', '6', '7', '8', '9', '10'].map(num => (
-          <SingleGridComponent columns={2} startOffset={7} key={`${num}item`}>
-            <ExampleParagraph number={num} />
+          <SingleGridComponent columns={2} key={`${num}item`}>
+            <ExampleParagraph identifier={num} />
           </SingleGridComponent>
         ))}
-      </SingleGridComponent>
+      </PageStyledGrid>
+    ),
+    { notes, knobs: { escapeHTML: false } },
+  )
+  .add(
+    'Using single grid for 2 2 2... layout',
+    () => (
+      <PageStyledGrid columns={8} wrapper>
+        {['1', '2', '3', '4', '5', '6', '7', '8', '9', '10'].map(num => (
+          <SingleGridComponent columns={2} key={`${num}item`}>
+            <ExampleParagraph identifier={num} />
+          </SingleGridComponent>
+        ))}
+      </PageStyledGrid>
+    ),
+    { notes, knobs: { escapeHTML: false } },
+  )
+  .add(
+    'Using single grid for 8 with children 6 & 5 on different lines... layout',
+    () => (
+      <PageStyledGrid columns={8} wrapper>
+        <SingleGridComponent columns={6}>
+          <ExampleParagraph identifier="1" />
+        </SingleGridComponent>
+        <SingleGridComponent columns={5}>
+          <ExampleParagraph identifier="2" />
+        </SingleGridComponent>
+      </PageStyledGrid>
+    ),
+    { notes, knobs: { escapeHTML: false } },
+  )
+  .add(
+    'Using single grid for 8 with nesting... layout',
+    () => (
+      <PageStyledGrid columns={8} wrapper>
+        <SingleGridComponent columns={5} wrapper>
+          <SingleGridComponent columns={2}>
+            <ExampleParagraph identifier="1" />
+          </SingleGridComponent>
+          <SingleGridComponent columns={3}>
+            <ExampleParagraph identifier="2" />
+          </SingleGridComponent>
+        </SingleGridComponent>
+        <SingleGridComponent columns={3}>
+          <ExampleParagraph identifier="3" />
+        </SingleGridComponent>
+      </PageStyledGrid>
+    ),
+    { notes, knobs: { escapeHTML: false } },
+  )
+  .add(
+    'Using single grid forlsdfjlk',
+    () => (
+      <PageStyledGrid columns={8} wrapper>
+        <SingleGridComponent columns={6}>
+          <ExampleParagraph identifier="1" />
+        </SingleGridComponent>
+        {['2', '3', '4', '5', '6', '7', '8', '9', '10'].map(num => (
+          <SingleGridComponent columns={2} key={`${num}item`}>
+            <ExampleParagraph identifier={num} />
+          </SingleGridComponent>
+        ))}
+      </PageStyledGrid>
     ),
     { notes, knobs: { escapeHTML: false } },
   );
