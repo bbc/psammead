@@ -12,6 +12,7 @@ import { GEL_FF_REITH_SANS } from '@bbc/gel-foundations/typography';
 import notes from '../README.md';
 import './am';
 import './ar';
+import './az';
 import './es';
 import './fa';
 import './gu';
@@ -45,6 +46,7 @@ const locales = [
   { name: 'Afaan Oromoo', locale: 'om' },
   { name: 'Amharic', locale: 'am' },
   { name: 'Arabic', locale: 'ar', dir: 'rtl' },
+  { name: 'Azeri', locale: 'az' },
   { name: 'Brasil', locale: 'pt-br' },
   { name: 'Gahuza', locale: 'rw' },
   { name: 'Gujarati', locale: 'gu' },
