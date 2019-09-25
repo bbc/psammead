@@ -190,7 +190,6 @@ const GridComponent = styled.div`
   }}
 
   @supports (display: grid) {
-
     ${({ enableGelGutters }) => enableGelGutters && gelGridGutters}
     ${({ enableGelMargins }) => enableGelMargins && gelMargins}
     ${({ enableGelMaxWidths }) => enableGelMaxWidths && gelMaxWidths}
@@ -199,7 +198,7 @@ const GridComponent = styled.div`
       if (wrapper) {
         return `display: grid; position: initial;`;
       }
-      return `display: block;`;
+      return `display: block; width: initial;`;
     }}
   }
 `;
