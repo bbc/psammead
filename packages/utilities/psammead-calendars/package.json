@@ -22,7 +22,7 @@
     "jalaali-js": "1.1.0",
     "moment": "^2.24.0"
   },
-  "peerDependencies": {
+  "devDependencies": {
     "react": "^16.9.0"
   }
 }

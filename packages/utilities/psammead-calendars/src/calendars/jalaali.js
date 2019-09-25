@@ -32,12 +32,14 @@ const jalaaliMonths = {
 };
 
 function getJalaaliCalendar(gregorianMoment) {
+  if (!gregorianMoment.isValid()) {
+    return null;
+  }
   const jalaaliDate = jalaali.toJalaali(
     gregorianMoment.year(),
     gregorianMoment.month() + 1,
     gregorianMoment.date(),
   );
-
   const localeJalaaliMonths = jalaaliMonths[gregorianMoment.locale()];
   const jalaaliMonth = localeJalaaliMonths[jalaaliDate.jm - 1];
   const output = `${jalaaliDate.jd} ${jalaaliMonth} ${jalaaliDate.jy}`;

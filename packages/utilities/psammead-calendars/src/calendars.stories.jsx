@@ -5,7 +5,7 @@ import { getJalaaliCalendar } from './calendars/jalaali';
 
 const stories = storiesOf('Utilities|Psammead Moment Calendars', module);
 
-const testMoment = moment('12-31-2019', 'MM-DD-YYYY');
+const testMoment = moment('2019-01-01');
 stories.add('Jalaali Persian', () => {
   testMoment.locale('fa');
   const momentDate = getJalaaliCalendar(testMoment);
