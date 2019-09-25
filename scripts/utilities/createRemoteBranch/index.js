@@ -8,6 +8,10 @@ const createRemoteBranch = async ({
 }) => {
   const fromBranch = oldBranch || 'latest';
   const repo = getGhRepo(username, repoName);
+
+  // eslint-disable-next-line no-console
+  console.log(`* Creating remote branch "${newBranch}" from "${fromBranch}"`);
+
   return repo.createBranch(fromBranch, newBranch);
 };
 

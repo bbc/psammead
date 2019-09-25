@@ -9,6 +9,10 @@ const commitChanges = async ({
   message,
 }) => {
   const repo = getGhRepo(username, repoName);
+
+  // eslint-disable-next-line no-console
+  console.log(`* Updating remote file "${path}"`);
+
   return repo.writeFile(branch, path, content, message, {});
 };
 
