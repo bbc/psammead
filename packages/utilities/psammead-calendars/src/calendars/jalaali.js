@@ -1,4 +1,4 @@
-const jalaali = require('jalaali-js');
+const jalaaliJs = require('jalaali-js');
 
 const jalaaliMonths = {
   fa: [
@@ -31,18 +31,26 @@ const jalaaliMonths = {
   ],
 };
 
-function getJalaaliCalendar(gregorianMoment) {
-  if (!gregorianMoment.isValid()) {
-    return null;
-  }
-  const jalaaliDate = jalaali.toJalaali(
-    gregorianMoment.year(),
-    gregorianMoment.month() + 1,
-    gregorianMoment.date(),
-  );
-  const localeJalaaliMonths = jalaaliMonths[gregorianMoment.locale()];
-  const jalaaliMonth = localeJalaaliMonths[jalaaliDate.jm - 1];
-  const output = `${jalaaliDate.jd} ${jalaaliMonth} ${jalaaliDate.jy}`;
-  return output;
-}
-exports.getJalaaliCalendar = getJalaaliCalendar;
+const jalaali = {
+  formatDate: gregorianMoment => {
+    if (typeof gregorianMoment.locale !== 'function') {
+      return null;
+    }
+    const currentLocale = gregorianMoment.locale();
+    // Check if moment is valid and locale passed in is valid
+    if (!gregorianMoment.isValid() || !(`${currentLocale}` in jalaaliMonths)) {
+      return null;
+    }
+    const jalaaliDate = jalaaliJs.toJalaali(
+      gregorianMoment.year(),
+      gregorianMoment.month() + 1,
+      gregorianMoment.date(),
+    );
+    const localeJalaaliMonths = jalaaliMonths[gregorianMoment.locale()];
+    const jalaaliMonth = localeJalaaliMonths[jalaaliDate.jm - 1];
+    const output = `${jalaaliDate.jd} ${jalaaliMonth} ${jalaaliDate.jy}`;
+    return output;
+  },
+};
+
+export default jalaali;
