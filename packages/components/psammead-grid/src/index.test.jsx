@@ -1,17 +1,9 @@
 import React from 'react';
 import { shouldMatchSnapshot } from '@bbc/psammead-test-helpers';
-import { Grid, LegacyGrid } from '.';
-import { FullWidth, ExampleParagraph, ExampleFigure } from './helpers';
+import { Grid } from '.';
+import { ExampleParagraph, ExampleFigure } from './helpers';
 
 describe('Grid component', () => {
-  shouldMatchSnapshot(
-    'should render LegacyGrid with nested FullWidth item correctly',
-    <LegacyGrid>
-      <FullWidth>
-        <ExampleParagraph />
-      </FullWidth>
-    </LegacyGrid>,
-  );
   shouldMatchSnapshot(
     'should render Grid wrapper with Grid',
     <Grid
