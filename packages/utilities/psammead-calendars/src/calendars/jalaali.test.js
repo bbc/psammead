@@ -1,7 +1,8 @@
 import moment from 'moment';
-import { getJalaaliCalendar } from './jalaali';
+import jalaali from './jalaali';
 
 describe('Jalaali Conversion Tests', () => {
+  moment.defineLocale('ps', {});
   const testScenarios = [
     {
       date: '2019-01-01',
@@ -64,13 +65,22 @@ describe('Jalaali Conversion Tests', () => {
       expected: null,
       summary: 'should return null as this is an invalid moment',
     },
+    {
+      nonMoment: { test: 23 },
+      date: '2019-01-01',
+      locale: 'en',
+      expected: null,
+      summary: 'should return null if object passed is not a moment',
+    },
   ];
-  moment.defineLocale('ps', {});
-  testScenarios.forEach(({ date, locale, expected, summary }) => {
+  testScenarios.forEach(({ nonMoment, date, locale, expected, summary }) => {
     it(summary, () => {
-      const testMoment = moment(date);
+      let testMoment = moment(date);
       testMoment.locale(locale);
-      const jalaaliCalendar = getJalaaliCalendar(testMoment);
+      if (nonMoment) {
+        testMoment = nonMoment;
+      }
+      const jalaaliCalendar = jalaali.formatDate(testMoment);
       expect(jalaaliCalendar).toEqual(expected);
     });
   });
