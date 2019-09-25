@@ -19,6 +19,15 @@
 
 ### When to use this component
 
+**FAQs**
+- When should I use the `wrapper` prop?
+  - On an outer Grid item. It defines the grid, using the `columns` prop values to define how many columns to have.
+  - It should be used in any case where you're defining a new nested grid. 
+- When should I use the `columns` prop?
+  - This should always be defined. For a Grid element that is not a `wrapper`, it's the number of columns it should span.
+- When should I use the `startOffset` prop?
+  - This is `grid-column-start` attribute. If you don't pass it in, the value defaults to 1, the start of the grid.
+
 <!-- ### When not to use this component -->
 
 ### Accessibility notes
