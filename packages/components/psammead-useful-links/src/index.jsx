@@ -26,6 +26,19 @@ const Caption = styled.h2`
   margin-bottom: ${GEL_SPACING_TRPL};
 `;
 
+const UsefulLinkWrapper = styled.div``;
+
+const UsefulLink = styled.a`
+  color: ${C_EBON};
+  ${({ script }) => script && getPica(script)};
+  ${({ service }) => getSerifMedium(service)};
+  &:hover,
+  &:focus {
+    text-decoration: underline;
+    cursor: pointer;
+  }
+`;
+
 const UsefulLinksUl = styled.ul`
   list-style-type: none;
   padding: 0;
@@ -33,21 +46,28 @@ const UsefulLinksUl = styled.ul`
 `;
 
 const UsefulLinksLi = styled.li`
-  color: ${C_EBON};
   padding-bottom: ${GEL_SPACING};
-  ${({ script }) => script && getPica(script)};
-  ${({ service }) => getSerifMedium(service)};
 `;
 
 const UsefulLinks = usefulItems => (
   <div>
     <HorizontalBar />
     <Caption>Useful links</Caption>
-    <UsefulLinksUl usefulItems={usefulItems}>
-      {usefulItems.usefulItems.map(item => {
-        return <UsefulLinksLi>{item}</UsefulLinksLi>;
-      })}
-    </UsefulLinksUl>
+    {usefulItems.length === 1 ? (
+      <UsefulLinkWrapper>
+        <UsefulLink>usefulItems[0]</UsefulLink>
+      </UsefulLinkWrapper>
+    ) : (
+      <UsefulLinksUl role="list" usefulItems={usefulItems}>
+        {usefulItems.usefulItems.map(item => {
+          return (
+            <UsefulLinksLi role="listitem">
+              <UsefulLink>{item}</UsefulLink>
+            </UsefulLinksLi>
+          );
+        })}
+      </UsefulLinksUl>
+    )}
   </div>
 );
 
