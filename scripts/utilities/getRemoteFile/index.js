@@ -7,8 +7,11 @@ const getRemoteFile = async (username, repoName, branch, path) => {
   const repo = gh.getRepo(username, repoName);
   const response = await repo.getContents(branch, path);
   return {
-    contents: Buffer.from(response.data.content, 'base64').toString('binary'),
-    sha: response.data.sha,
+    ...response,
+    data: {
+      ...response.data,
+      contents: Buffer.from(response.data.content, 'base64').toString('binary'),
+    },
   };
 };
 
