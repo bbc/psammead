@@ -216,7 +216,7 @@ const GridComponent = styled.div`
 // columns={{ group0: 6, group1: 6, group2: 6, group3: 6, group4: 8, group5: 20 }}
 // gutters={{ group0: GEL_GUTTER_BELOW_600PX, group1: GEL_GUTTER_BELOW_600PX, group2: GEL_GUTTER_BELOW_600PX, group3: GEL_GUTTER_BELOW_600PX, group4: GEL_GUTTER_ABOVE_600PX, group5: GEL_GUTTER_ABOVE_600PX }}
 
-export const Grid = ({ children, ...otherProps }) => {
+const Grid = ({ children, ...otherProps }) => {
   const renderChildren = () =>
     React.Children.map(children, child => {
       return React.cloneElement(child, {
@@ -230,3 +230,5 @@ export const Grid = ({ children, ...otherProps }) => {
 Grid.propTypes = {
   children: node.isRequired,
 };
+
+export default Grid;
