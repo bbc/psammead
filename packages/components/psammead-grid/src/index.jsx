@@ -153,19 +153,6 @@ const gelMaxWidths = css`
   }
 `;
 
-// const nonGridMediaQueries = ({ columns, parentColumns }) => {
-//   const selectedGroups = Object.keys(columns);
-//   return selectedGroups.map(group =>
-//     mediaQuery({
-//       min: groups[group].min,
-//       max: groups[group].max,
-//       styles: parentColumns
-//         ? `width: ${(100 * columns[group]) / parentColumns[group]}%;`
-//         : ``,
-//     }),
-//   );
-// };
-
 const gridMediaQueries = ({ columns, startOffset }) => {
   const selectedGroups = Object.keys(columns);
   return selectedGroups.map(group =>
@@ -173,21 +160,41 @@ const gridMediaQueries = ({ columns, startOffset }) => {
       min: groups[group].min,
       max: groups[group].max,
       styles: `
+        width: initial;
         grid-template-columns: repeat(${columns[group]}, 1fr);
         grid-column-end: span ${columns[group]};
       ${startOffset ? `grid-column-start: ${startOffset[group]};` : ``}`,
     }),
   );
 };
-// : `display: inline-block; vertical-align: top; position: relative; ${nonGridMediaQueries}`
-// : `display: block; width: initial;`
-const GridComponent = styled.div`
-  ${({ wrapper }) => {
+
+const gridFallbacks = css`
+  ${({ wrapper, columns, parentColumns }) => {
     if (wrapper) {
       return `position: relative;`;
     }
-    return `display: inline-block;`;
+    if (!parentColumns) {
+      return ``;
+    }
+    const selectedGroups = Object.keys(columns);
+    return selectedGroups.map(
+      group =>
+        `display: inline-block; 
+      ${mediaQuery({
+        min: groups[group].min,
+        max: groups[group].max,
+        styles: `
+          width: ${(100 * columns[group]) / parentColumns[group]}%;
+          vertical-align: top;
+        `,
+      })}
+    `,
+    );
   }}
+`;
+
+const GridComponent = styled.div`
+  ${gridFallbacks}
 
   @supports (display: grid) {
     ${({ enableGelGutters }) => enableGelGutters && gelGridGutters}
@@ -198,7 +205,7 @@ const GridComponent = styled.div`
       if (wrapper) {
         return `display: grid; position: initial;`;
       }
-      return `display: block; width: initial;`;
+      return `display: block;`;
     }}
   }
 `;
