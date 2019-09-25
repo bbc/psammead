@@ -75,7 +75,7 @@ const locales = [
   { name: 'Thai', locale: 'th' },
   { name: 'Tigrinya', locale: 'ti' },
   { name: 'Ukrainian', locale: 'uk' },
-  { name: 'Urdu', locale: 'ur' },
+  { name: 'Urdu', locale: 'ur' , dir: 'rtl' },
   { name: 'Uzbek', locale: 'uz' },
   { name: 'Yoruba', locale: 'yo' },
 ];
