@@ -17,7 +17,7 @@ const baseUrlIskoolaPotaBBC =
 
 const baseUrlLatha = 'https://ws-downloads.files.bbci.co.uk/fonts/Latha/v5.90/';
 
-const baseURlMallanna =
+const baseUrlMallanna =
   'https://ws-downloads.files.bbci.co.uk/fonts/Mallanna/v1.0.4/';
 
 const baseUrlNotoSansEthiopic =
@@ -265,10 +265,10 @@ export const F_NASSIM_ARABIC_REGULAR = baseUrlOverride => `
     font-family: "BBC Nassim Arabic";
     font-weight: 400;
     font-style: normal;
-    src: url('${baseUrlBBCNassimArabic ||
-      baseUrlOverride}normal.woff') format('woff'), url('${baseUrlBBCNassimArabic ||
-  baseUrlOverride}normal.eot') format('eot'), url('${baseUrlBBCNassimArabic ||
-  baseUrlOverride}normal.ttf') format('ttf');
+    src: url('${baseUrlOverride ||
+      baseUrlBBCNassimArabic}normal.woff') format('woff'), url('${baseUrlOverride ||
+  baseUrlBBCNassimArabic}normal.eot') format('eot'), url('${baseUrlOverride ||
+  baseUrlBBCNassimArabic}normal.ttf') format('ttf');
     font-display: optional;
   }
 `;
@@ -278,10 +278,10 @@ export const F_NASSIM_ARABIC_BOLD = baseUrlOverride => `
     font-family: "BBC Nassim Arabic";
     font-weight: 700;
     font-style: normal;
-    src: url('${baseUrlBBCNassimArabic ||
-      baseUrlOverride}bold.woff') format('woff'), url('${baseUrlBBCNassimArabic ||
-  baseUrlOverride}bold.eot') format('eot'), url('${baseUrlBBCNassimArabic ||
-  baseUrlOverride}bold.ttf') format('ttf');
+    src: url('${baseUrlOverride ||
+      baseUrlBBCNassimArabic}bold.woff') format('woff'), url('${baseUrlOverride ||
+  baseUrlBBCNassimArabic}bold.eot') format('eot'), url('${baseUrlOverride ||
+  baseUrlBBCNassimArabic}bold.ttf') format('ttf');
     font-display: optional;
   }
 `;
@@ -293,10 +293,10 @@ export const F_NASSIM_PASHTO_REGULAR = baseUrlOverride => `
     font-family: "BBC Nassim Pashto";
     font-weight: 400;
     font-style: normal;
-    src: url('${baseUrlBBCNassimPashto ||
-      baseUrlOverride}normal.woff') format('woff'), url('${baseUrlBBCNassimPashto ||
-  baseUrlOverride}normal.eot') format('eot'), url('${baseUrlBBCNassimPersian ||
-  baseUrlOverride}normal.ttf') format('ttf');
+    src: url('${baseUrlOverride ||
+      baseUrlBBCNassimPashto}normal.woff') format('woff'), url('${baseUrlOverride ||
+  baseUrlBBCNassimPashto}normal.eot') format('eot'), url('${baseUrlOverride ||
+  baseUrlBBCNassimPashto}normal.ttf') format('ttf');
     font-display: optional;
   }
 `;
@@ -306,10 +306,10 @@ export const F_NASSIM_PASHTO_BOLD = baseUrlOverride => `
     font-family: "BBC Nassim Pashto";
     font-weight: 700;
     font-style: normal;
-    src: url('${baseUrlBBCNassimPashto ||
-      baseUrlOverride}bold.woff') format('woff'), url('${baseUrlBBCNassimPashto ||
-  baseUrlOverride}bold.eot') format('eot'), url('${baseUrlBBCNassimPersian ||
-  baseUrlOverride}bold.ttf') format('ttf');
+    src: url('${baseUrlOverride ||
+      baseUrlBBCNassimPashto}bold.woff') format('woff'), url('${baseUrlOverride ||
+  baseUrlBBCNassimPashto}bold.eot') format('eot'), url('${baseUrlOverride ||
+  baseUrlBBCNassimPashto}bold.ttf') format('ttf');
     font-display: optional;
   }
 `;
@@ -321,10 +321,10 @@ export const F_NASSIM_PERSIAN_REGULAR = baseUrlOverride => `
     font-family: "BBC Nassim Persian";
     font-weight: 400;
     font-style: normal;
-    src: url('${baseUrlBBCNassimPersian ||
-      baseUrlOverride}normal.woff') format('woff'), url('${baseUrlBBCNassimPersian ||
-  baseUrlOverride}normal.eot') format('eot'), url('${baseUrlBBCNassimPersian ||
-  baseUrlOverride}normal.ttf') format('ttf');
+    src: url('${baseUrlOverride ||
+      baseUrlBBCNassimPersian}normal.woff') format('woff'), url('${baseUrlBBCNassimPersian ||
+  baseUrlOverride}normal.eot') format('eot'), url('${baseUrlOverride ||
+  baseUrlBBCNassimPersian}normal.ttf') format('ttf');
     font-display: optional;
   }
 `;
@@ -334,10 +334,10 @@ export const F_NASSIM_PERSIAN_BOLD = baseUrlOverride => `
     font-family: "BBC Nassim Persian";
     font-weight: 700;
     font-style: normal;
-    src: url('${baseUrlBBCNassimPersian ||
-      baseUrlOverride}bold.woff') format('woff'), url('${baseUrlBBCNassimPersian ||
-  baseUrlOverride}bold.eot') format('eot'), url('${baseUrlBBCNassimPersian ||
-  baseUrlOverride}bold.ttf') format('ttf');
+    src: url('${baseUrlOverride ||
+      baseUrlBBCNassimPersian}bold.woff') format('woff'), url('${baseUrlBBCNassimPersian ||
+  baseUrlOverride}bold.eot') format('eot'), url('${baseUrlOverride ||
+  baseUrlBBCNassimPersian}bold.ttf') format('ttf');
     font-display: optional;
   }
 `;
@@ -349,10 +349,10 @@ export const F_NASSIM_URDU_REGULAR = baseUrlOverride => `
     font-family: "BBC Nassim Urdu";
     font-weight: 400;
     font-style: normal;
-    src: url('${baseUrlBBCNassimUrdu ||
-      baseUrlOverride}normal.woff') format('woff'), url('${baseUrlBBCNassimUrdu ||
-  baseUrlOverride}normal.eot') format('eot'), url('${baseUrlBBCNassimUrdu ||
-  baseUrlOverride}normal.ttf') format('ttf');
+    src: url('${baseUrlOverride ||
+      baseUrlBBCNassimUrdu}normal.woff') format('woff'), url('${baseUrlOverride ||
+  baseUrlBBCNassimUrdu}normal.eot') format('eot'), url('${baseUrlOverride ||
+  baseUrlBBCNassimUrdu}normal.ttf') format('ttf');
     font-display: optional;
   }
 `;
@@ -362,10 +362,10 @@ export const F_NASSIM_URDU_BOLD = baseUrlOverride => `
     font-family: "BBC Nassim Urdu";
     font-weight: 700;
     font-style: normal;
-    src: url('${baseUrlBBCNassimUrdu ||
-      baseUrlOverride}bold.woff') format('woff'), url('${baseUrlBBCNassimUrdu ||
-  baseUrlOverride}bold.eot') format('eot'), url('${baseUrlBBCNassimPersian ||
-  baseUrlOverride}bold.ttf') format('ttf');
+    src: url('${baseUrlOverride ||
+      baseUrlBBCNassimUrdu}bold.woff') format('woff'), url('${baseUrlOverride ||
+  baseUrlBBCNassimUrdu}bold.eot') format('eot'), url('${baseUrlOverride ||
+  baseUrlBBCNassimUrdu}bold.ttf') format('ttf');
     font-display: optional;
   }
 `;
@@ -377,10 +377,10 @@ export const F_ISKOOLA_POTA_BBC_REGULAR = baseUrlOverride => `
     font-family: "Iskoola Pota BBC";
     font-weight: 400;
     font-style: normal;
-    src: url('${baseUrlIskoolaPotaBBC ||
-      baseUrlOverride}normal.woff') format('woff'), url('${baseUrlIskoolaPotaBBC ||
-  baseUrlOverride}normal.eot') format('eot'), url('${baseUrlIskoolaPotaBBC ||
-  baseUrlOverride}normal.ttf') format('ttf');
+    src: url('${baseUrlOverride ||
+      baseUrlIskoolaPotaBBC}normal.woff') format('woff'), url('${baseUrlOverride ||
+  baseUrlIskoolaPotaBBC}normal.eot') format('eot'), url('${baseUrlOverride ||
+  baseUrlIskoolaPotaBBC}normal.ttf') format('ttf');
     font-display: swap;
   }`;
 
@@ -389,10 +389,10 @@ export const F_ISKOOLA_POTA_BBC_BOLD = baseUrlOverride => `
     font-family: "Iskoola Pota BBC";
     font-weight: 700;
     font-style: normal;
-    src: url('${baseUrlIskoolaPotaBBC ||
-      baseUrlOverride}bold.woff') format('woff'), url('${baseUrlIskoolaPotaBBC ||
-  baseUrlOverride}bold.eot') format('eot'), url('${baseUrlIskoolaPotaBBC ||
-  baseUrlOverride}bold.ttf') format('ttf');
+    src: url('${baseUrlOverride ||
+      baseUrlIskoolaPotaBBC}bold.woff') format('woff'), url('${baseUrlOverride ||
+  baseUrlIskoolaPotaBBC}bold.eot') format('eot'), url('${baseUrlOverride ||
+  baseUrlIskoolaPotaBBC}bold.ttf') format('ttf');
     font-display: swap;
   }
 `;
@@ -404,10 +404,10 @@ export const F_LATHA_REGULAR = baseUrlOverride => `
     font-family: "Latha";
     font-weight: 400;
     font-style: normal;
-    src: url('${baseUrlLatha ||
-      baseUrlOverride}normal.woff') format('woff'), url('${baseUrlLatha ||
-  baseUrlOverride}normal.eot') format('eot'), url('${baseUrlLatha ||
-  baseUrlOverride}normal.ttf') format('ttf');
+    src: url('${baseUrlOverride ||
+      baseUrlLatha}normal.woff') format('woff'), url('${baseUrlOverride ||
+  baseUrlLatha}normal.eot') format('eot'), url('${baseUrlOverride ||
+  baseUrlLatha}normal.ttf') format('ttf');
     font-display: swap;
   }`;
 
@@ -416,10 +416,10 @@ export const F_LATHA_BOLD = baseUrlOverride => `
     font-family: "Latha";
     font-weight: 700;
     font-style: normal;
-    src: url('${baseUrlLatha ||
-      baseUrlOverride}bold.woff') format('woff'), url('${baseUrlLatha ||
-  baseUrlOverride}bold.eot') format('eot'), url('${baseUrlLatha ||
-  baseUrlOverride}bold.ttf') format('ttf');
+    src: url('${baseUrlOverride ||
+      baseUrlLatha}bold.woff') format('woff'), url('${baseUrlOverride ||
+  baseUrlLatha}bold.eot') format('eot'), url('${baseUrlOverride ||
+  baseUrlLatha}bold.ttf') format('ttf');
     font-display: swap;
   }
 `;
@@ -431,10 +431,10 @@ export const F_MALLANNA_REGULAR = baseUrlOverride => `
     font-family: "Mallanna";
     font-weight: 400;
     font-style: normal;
-    src: url('${baseURlMallanna ||
-      baseUrlOverride}normal.woff') format('woff'), url('${baseURlMallanna ||
-  baseUrlOverride}normal.eot') format('eot'), url('${baseURlMallanna ||
-  baseUrlOverride}normal.ttf') format('ttf');
+    src: url('${baseUrlOverride ||
+      baseUrlMallanna}normal.woff') format('woff'), url('${baseUrlOverride ||
+  baseUrlMallanna}normal.eot') format('eot'), url('${baseUrlOverride ||
+  baseUrlMallanna}normal.ttf') format('ttf');
     font-display: swap;
   }
 `;
@@ -446,10 +446,10 @@ export const F_NOTO_SANS_ETHIOPIC_REGULAR = baseUrlOverride => `
     font-family: "Noto Sans Ethiopic";
     font-weight: 400;
     font-style: normal;
-    src: url('${baseUrlNotoSansEthiopic ||
-      baseUrlOverride}normal.woff') format('woff'), url('${baseUrlNotoSansEthiopic ||
-  baseUrlOverride}normal.eot') format('eot'), url('${baseUrlNotoSansEthiopic ||
-  baseUrlOverride}normal.ttf') format('ttf');
+    src: url('${baseUrlOverride ||
+      baseUrlNotoSansEthiopic}normal.woff') format('woff'), url('${baseUrlOverride ||
+  baseUrlNotoSansEthiopic}normal.eot') format('eot'), url('${baseUrlOverride ||
+  baseUrlNotoSansEthiopic}normal.ttf') format('ttf');
     font-display: swap;
   }
   `;
@@ -459,10 +459,10 @@ export const F_NOTO_SANS_ETHIOPIC_BOLD = baseUrlOverride => `
     font-family: "Noto Sans Ethiopic";
     font-weight: 700;
     font-style: normal;
-    src: url('${baseUrlNotoSansEthiopic ||
-      baseUrlOverride}bold.woff') format('woff'), url('${baseUrlNotoSansEthiopic ||
-  baseUrlOverride}bold.eot') format('eot'), url('${baseUrlNotoSansEthiopic ||
-  baseUrlOverride}bold.ttf') format('ttf');
+    src: url('${baseUrlOverride ||
+      baseUrlNotoSansEthiopic}bold.woff') format('woff'), url('${baseUrlOverride ||
+  baseUrlNotoSansEthiopic}bold.eot') format('eot'), url('${baseUrlOverride ||
+  baseUrlNotoSansEthiopic}bold.ttf') format('ttf');
     font-display: swap;
   }
 `;
@@ -474,10 +474,10 @@ export const F_PADAUK_REGULAR = baseUrlOverride => `
     font-family: "Padauk";
     font-weight: 400;
     font-style: normal;
-    src: url('${baseUrlPadauk ||
-      baseUrlOverride}normal.woff') format('woff'), url('${baseUrlPadauk ||
-  baseUrlOverride}normal.eot') format('eot'), url('${baseUrlPadauk ||
-  baseUrlOverride}normal.ttf') format('ttf');
+    src: url('${baseUrlOverride ||
+      baseUrlPadauk}normal.woff') format('woff'), url('${baseUrlOverride ||
+  baseUrlPadauk}normal.eot') format('eot'), url('${baseUrlOverride ||
+  baseUrlPadauk}normal.ttf') format('ttf');
     font-display: swap; 
   }`;
 
@@ -486,10 +486,10 @@ export const F_PADAUK_BOLD = baseUrlOverride => `
     font-family: "Padauk";
     font-weight: 700;
     font-style: normal;
-    src: url('${baseUrlPadauk ||
-      baseUrlOverride}bold.woff') format('woff'), url('${baseUrlPadauk ||
-  baseUrlOverride}bold.eot') format('eot'), url('${baseUrlPadauk ||
-  baseUrlOverride}bold.ttf') format('ttf');
+    src: url('${baseUrlOverride ||
+      baseUrlPadauk}bold.woff') format('woff'), url('${baseUrlOverride ||
+  baseUrlPadauk}bold.eot') format('eot'), url('${baseUrlOverride ||
+  baseUrlPadauk}bold.ttf') format('ttf');
     font-display: swap;
   }
 `;
@@ -501,10 +501,10 @@ export const F_SHONAR_BANGLA_REGULAR = baseUrlOverride => `
     font-family: "Shonar Bangla";
     font-weight: 400;
     font-style: normal;
-    src: url('${baseUrlShonarBangla ||
-      baseUrlOverride}normal.woff') format('woff'), url('${baseUrlShonarBangla ||
-  baseUrlOverride}normal.eot') format('eot'), url('${baseUrlShonarBangla ||
-  baseUrlOverride}normal.ttf') format('ttf');
+    src: url('${baseUrlOverride ||
+      baseUrlShonarBangla}normal.woff') format('woff'), url('${baseUrlOverride ||
+  baseUrlShonarBangla}normal.eot') format('eot'), url('${baseUrlOverride ||
+  baseUrlShonarBangla}normal.ttf') format('ttf');
     font-display: optional;
   }`;
 
@@ -513,10 +513,10 @@ export const F_SHONAR_BANGLA_BOLD = baseUrlOverride => `
     font-family: "Shonar Bangla";
     font-weight: 700;
     font-style: normal;
-    src: url('${baseUrlShonarBangla ||
-      baseUrlOverride}bold.woff') format('woff'), url('${baseUrlShonarBangla ||
-  baseUrlOverride}bold.eot') format('eot'), url('${baseUrlShonarBangla ||
-  baseUrlOverride}bold.ttf') format('ttf');
+    src: url('${baseUrlOverride ||
+      baseUrlShonarBangla}bold.woff') format('woff'), url('${baseUrlOverride ||
+  baseUrlShonarBangla}bold.eot') format('eot'), url('${baseUrlOverride ||
+  baseUrlShonarBangla}bold.ttf') format('ttf');
     font-display: optional;
   }
 `;
