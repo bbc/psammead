@@ -170,16 +170,14 @@ const gridMediaQueries = ({ columns, startOffset }) => {
 
 const gridFallbacks = css`
   ${({ wrapper, columns, parentColumns }) => {
-    if (wrapper) {
+    if (wrapper || !parentColumns) {
       return `position: relative;`;
-    }
-    if (!parentColumns) {
-      return ``;
     }
     const selectedGroups = Object.keys(columns);
     return selectedGroups.map(
       group =>
-        `display: inline-block; 
+        `
+      display: inline-block; 
       ${mediaQuery({
         min: groups[group].min,
         max: groups[group].max,
@@ -201,12 +199,8 @@ const GridComponent = styled.div`
     ${({ enableGelMargins }) => enableGelMargins && gelMargins}
     ${({ enableGelMaxWidths }) => enableGelMaxWidths && gelMaxWidths}
     ${gridMediaQueries}
-    ${({ wrapper }) => {
-      if (wrapper) {
-        return `display: grid; position: initial;`;
-      }
-      return `display: block;`;
-    }}
+    ${({ wrapper }) =>
+      wrapper ? `display: grid; position: initial;` : `display: block;`}
   }
 `;
 
