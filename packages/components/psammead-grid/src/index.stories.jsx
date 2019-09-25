@@ -323,6 +323,148 @@ storiesOf('Components|Grid', module)
     { notes, knobs: { escapeHTML: false } },
   )
   .add(
+    'Normal slice layout for 1 or 5 items',
+    () => (
+      <Grid
+        wrapper
+        columns={{ group4: 8 }}
+        enableGelGutters
+        enableGelMargins
+        enableGelMaxWidths
+      >
+        <Grid columns={{ group4: 8 }} wrapper enableGelGutters>
+          <Grid columns={{ group4: 4 }}>
+            <ExampleImage />
+          </Grid>
+          <Grid columns={{ group4: 4 }}>
+            <ExampleParagraph identifier="1" />
+          </Grid>
+        </Grid>
+        <Grid columns={{ group4: 2 }}>
+          <ExampleImage />
+          <ExampleParagraph identifier="2" />
+        </Grid>
+        <Grid columns={{ group4: 2 }}>
+          <ExampleImage />
+          <ExampleParagraph identifier="3" />
+        </Grid>
+        <Grid columns={{ group4: 2 }}>
+          <ExampleImage />
+          <ExampleParagraph identifier="4" />
+        </Grid>
+        <Grid columns={{ group4: 2 }}>
+          <ExampleImage />
+          <ExampleParagraph identifier="5" />
+        </Grid>
+      </Grid>
+    ),
+    { notes, knobs: { escapeHTML: false } },
+  )
+  .add(
+    'Normal slice layout for 2, 6 or 10 items',
+    () => (
+      <Grid
+        wrapper
+        columns={{ group4: 8 }}
+        enableGelGutters
+        enableGelMargins
+        enableGelMaxWidths
+      >
+        <Grid columns={{ group4: 6 }} wrapper enableGelGutters>
+          <Grid columns={{ group4: 2 }}>
+            <ExampleParagraph identifier="1" />
+          </Grid>
+          <Grid columns={{ group4: 4 }}>
+            <ExampleImage />
+          </Grid>
+        </Grid>
+        <Grid columns={{ group4: 2 }}>
+          <ExampleImage />
+          <ExampleParagraph identifier="2" />
+        </Grid>
+        <Grid columns={{ group4: 2 }}>
+          <ExampleImage />
+          <ExampleParagraph identifier="3" />
+        </Grid>
+        <Grid columns={{ group4: 2 }}>
+          <ExampleImage />
+          <ExampleParagraph identifier="4" />
+        </Grid>
+        <Grid columns={{ group4: 2 }}>
+          <ExampleImage />
+          <ExampleParagraph identifier="5" />
+        </Grid>
+        <Grid columns={{ group4: 2 }}>
+          <ExampleImage />
+          <ExampleParagraph identifier="6" />
+        </Grid>
+        <Grid columns={{ group4: 2 }}>
+          <ExampleImage />
+          <ExampleParagraph identifier="7" />
+        </Grid>
+        <Grid columns={{ group4: 2 }}>
+          <ExampleImage />
+          <ExampleParagraph identifier="8" />
+        </Grid>
+        <Grid columns={{ group4: 2 }}>
+          <ExampleImage />
+          <ExampleParagraph identifier="9" />
+        </Grid>
+        <Grid columns={{ group4: 2 }}>
+          <ExampleImage />
+          <ExampleParagraph identifier="10" />
+        </Grid>
+      </Grid>
+    ),
+    { notes, knobs: { escapeHTML: false } },
+  )
+  .add(
+    'Normal slice layout for 4 or 8 items',
+    () => (
+      <Grid
+        wrapper
+        columns={{ group4: 8 }}
+        enableGelGutters
+        enableGelMargins
+        enableGelMaxWidths
+      >
+        <Grid columns={{ group4: 2 }}>
+          <ExampleImage />
+          <ExampleParagraph identifier="1" />
+        </Grid>
+        <Grid columns={{ group4: 2 }}>
+          <ExampleImage />
+          <ExampleParagraph identifier="2" />
+        </Grid>
+        <Grid columns={{ group4: 2 }}>
+          <ExampleImage />
+          <ExampleParagraph identifier="3" />
+        </Grid>
+        <Grid columns={{ group4: 2 }}>
+          <ExampleImage />
+          <ExampleParagraph identifier="4" />
+        </Grid>
+        <Grid columns={{ group4: 2 }}>
+          <ExampleImage />
+          <ExampleParagraph identifier="5" />
+        </Grid>
+        <Grid columns={{ group4: 2 }}>
+          <ExampleImage />
+          <ExampleParagraph identifier="6" />
+        </Grid>
+        <Grid columns={{ group4: 2 }}>
+          <ExampleImage />
+          <ExampleParagraph identifier="7" />
+        </Grid>
+        <Grid columns={{ group4: 2 }}>
+          <ExampleImage />
+          <ExampleParagraph identifier="8" />
+        </Grid>
+      </Grid>
+    ),
+    { notes, knobs: { escapeHTML: false } },
+  )
+  .add(
     'Single group - group2',
     () => (
       <Grid
