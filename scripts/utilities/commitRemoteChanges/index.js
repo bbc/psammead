@@ -1,17 +1,14 @@
-const GitHub = require('github-api');
+const getGhRepo = require('../getGhRepo');
 
-const commitChanges = async (
+const commitChanges = async ({
   username,
   repoName,
   branch,
   path,
   content,
   message,
-) => {
-  const gh = new GitHub({
-    token: process.env.GITHUB_TOKEN,
-  });
-  const repo = gh.getRepo(username, repoName);
+}) => {
+  const repo = getGhRepo(username, repoName);
   return repo.writeFile(branch, path, content, message, {});
 };
 

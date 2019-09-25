@@ -1,10 +1,7 @@
-const GitHub = require('github-api');
+const getGhRepo = require('../getGhRepo');
 
-const getRemoteFile = async (username, repoName, branch, path) => {
-  const gh = new GitHub({
-    token: process.env.GITHUB_TOKEN,
-  });
-  const repo = gh.getRepo(username, repoName);
+const getRemoteFile = async ({ username, repoName, branch, path }) => {
+  const repo = getGhRepo(username, repoName);
   const response = await repo.getContents(branch, path);
   return {
     ...response,
