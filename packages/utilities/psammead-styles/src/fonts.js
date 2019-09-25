@@ -240,23 +240,23 @@ export const F_REITH_SANS_EXTRA_BOLD_ITALIC = baseUrlOverride => `
 
 // Reith Sans Condensed
 export const F_REITH_SANS_CONDENSED_REGULAR = baseUrlOverride => `
-    @font-face {
-        font-family: "ReithSansCondensed";
-        src: url("${baseUrlOverride ||
-          baseFontUrl}BBCReithSansCd_W_Rg.woff2") format("woff2"), url("${baseUrlOverride ||
-  baseFontUrl}BBCReithSansCd_W_Rg.woff") format("woff");
-        font-display: optional;
-    }`;
+  @font-face {
+      font-family: "ReithSansCondensed";
+      src: url("${baseUrlOverride ||
+        baseFontUrl}BBCReithSansCd_W_Rg.woff2") format("woff2"), url("${baseUrlOverride ||
+baseFontUrl}BBCReithSansCd_W_Rg.woff") format("woff");
+      font-display: optional;
+  }`;
 
 export const F_REITH_SANS_CONDENSED_BOLD = baseUrlOverride => `
-    @font-face {
-        font-family: "ReithSansCondensed";
-        font-weight: 700;
-        src: url("${baseUrlOverride ||
-          baseFontUrl}BBCReithSansCd_W_Bd.woff2") format("woff2"), url("${baseUrlOverride ||
-  baseFontUrl}BBCReithSansCd_W_Bd.woff") format("woff");
-        font-display: optional;
-    }`;
+  @font-face {
+      font-family: "ReithSansCondensed";
+      font-weight: 700;
+      src: url("${baseUrlOverride ||
+        baseFontUrl}BBCReithSansCd_W_Bd.woff2") format("woff2"), url("${baseUrlOverride ||
+baseFontUrl}BBCReithSansCd_W_Bd.woff") format("woff");
+      font-display: optional;
+  }`;
 
 // BBC Nassim Arabic
 

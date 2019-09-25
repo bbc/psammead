@@ -5,7 +5,14 @@ import * as fonts from './fonts';
 const fontNames = Object.values(fonts);
 
 fontNames.forEach(font => {
-  it(`should match base font url`, () => {
+  //console.log(font.name);
+  test = font().split('\n')[2]
+  .replace('font-family:', '')
+  .replace(/"/g, '')
+  .replace(';', '')
+  .replace(/\s/g, '');
+
+  it(`should match ${test} base font url`, () => {
     expect(font()).toMatchSnapshot();
   });
 
