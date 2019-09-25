@@ -95,11 +95,11 @@ test('format ordinal', function() {
 });
 
 test('format month', function() {
-  for (var i = 0; i < month.length; i++) {
+  for (var i = 0; i < test.length; i++) {
     assert.equal(
       moment([2011, i, 1]).format('MMMM MMM'),
-      month[i] + ' ' + month[i],
-      month[i] + ' ' + month[i]
+      test[i] + ' ' + test[i],
+      test[i] + ' ' + test[i]
     );
   }
 });
