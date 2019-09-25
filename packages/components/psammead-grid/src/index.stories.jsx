@@ -22,7 +22,7 @@ import {
   // ItemWithConfig,
   // ItemMultiConfig,
   // ExampleFigure,
-  // ExampleImage,
+  ExampleImage,
   ExampleParagraph,
 } from './helpers';
 
@@ -263,6 +263,60 @@ storiesOf('Components|Grid', module)
         </Grid>
         <Grid columns={{ group4: 2 }}>
           <ExampleParagraph identifier="10" />
+        </Grid>
+      </Grid>
+    ),
+    { notes, knobs: { escapeHTML: false } },
+  )
+  .add(
+    'Top story slice layout',
+    () => (
+      <Grid
+        wrapper
+        columns={{ group4: 8 }}
+        enableGelGutters
+        enableGelMargins
+        enableGelMaxWidths
+      >
+        <Grid columns={{ group4: 8 }} wrapper enableGelGutters>
+          <Grid columns={{ group4: 4 }}>
+            <ExampleImage />
+          </Grid>
+          <Grid columns={{ group4: 4 }}>
+            <ExampleParagraph identifier="1" />
+          </Grid>
+        </Grid>
+        <Grid columns={{ group4: 2 }}>
+          <ExampleImage />
+          <ExampleParagraph identifier="2" />
+        </Grid>
+        <Grid columns={{ group4: 2 }}>
+          <ExampleImage />
+          <ExampleParagraph identifier="3" />
+        </Grid>
+        <Grid columns={{ group4: 2 }}>
+          <ExampleImage />
+          <ExampleParagraph identifier="4" />
+        </Grid>
+        <Grid columns={{ group4: 2 }}>
+          <ExampleImage />
+          <ExampleParagraph identifier="5" />
+        </Grid>
+        <Grid columns={{ group4: 2 }}>
+          <ExampleImage />
+          <ExampleParagraph identifier="6" />
+        </Grid>
+        <Grid columns={{ group4: 2 }}>
+          <ExampleImage />
+          <ExampleParagraph identifier="7" />
+        </Grid>
+        <Grid columns={{ group4: 2 }}>
+          <ExampleImage />
+          <ExampleParagraph identifier="8" />
+        </Grid>
+        <Grid columns={{ group4: 2 }}>
+          <ExampleImage />
+          <ExampleParagraph identifier="9" />
         </Grid>
       </Grid>
     ),
