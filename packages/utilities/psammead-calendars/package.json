@@ -7,7 +7,7 @@
   "description": "This package provides logic for formatting alternative (non-Gregorian) calendars",
   "repository": {
     "type": "git",
-    "url": "https://github.com/BBC-News/psammead/tree/latest/packages/components/psammead-moment-calendars"
+    "url": "https://github.com/BBC-News/psammead/tree/latest/packages/components/psammead-calendars"
   },
   "author": {
     "name": "Psammead Maintainers",
@@ -17,7 +17,7 @@
   "bugs": {
     "url": "https://github.com/bbc/psammead/issues"
   },
-  "homepage": "https://github.com/BBC-News/psammead/blob/latest/packages/components/psammead-moment-calendars/README.md",
+  "homepage": "https://github.com/BBC-News/psammead/blob/latest/packages/components/psammead-calendars/README.md",
   "dependencies": {
     "jalaali-js": "1.1.0",
     "moment": "^2.24.0"
