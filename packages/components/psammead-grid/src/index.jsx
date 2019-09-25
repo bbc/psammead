@@ -157,6 +157,7 @@ const group4MaxWidth = css`
     max-width: ${group4WrapperMaxWidth};
   }
 `;
+
 const gridMediaQueries = ({ columns, startOffset }) => {
   const selectedGroups = Object.keys(columns);
   return selectedGroups.map(group =>
