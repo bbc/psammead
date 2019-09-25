@@ -20,6 +20,7 @@ import {
   GEL_GROUP_4_SCREEN_WIDTH_MAX,
   GEL_GROUP_5_SCREEN_WIDTH_MIN,
 } from '@bbc/gel-foundations/breakpoints';
+// import { grid } from '@bbc/psammead-styles/detection';
 
 const groups = {
   group0: {
@@ -152,6 +153,19 @@ const gelMaxWidths = css`
   }
 `;
 
+// const nonGridMediaQueries = ({ columns, parentColumns }) => {
+//   const selectedGroups = Object.keys(columns);
+//   return selectedGroups.map(group =>
+//     mediaQuery({
+//       min: groups[group].min,
+//       max: groups[group].max,
+//       styles: parentColumns
+//         ? `width: ${(100 * columns[group]) / parentColumns[group]}%;`
+//         : ``,
+//     }),
+//   );
+// };
+
 const gridMediaQueries = ({ columns, startOffset }) => {
   const selectedGroups = Object.keys(columns);
   return selectedGroups.map(group =>
@@ -165,14 +179,28 @@ const gridMediaQueries = ({ columns, startOffset }) => {
     }),
   );
 };
-
+// : `display: inline-block; vertical-align: top; position: relative; ${nonGridMediaQueries}`
+// : `display: block; width: initial;`
 const GridComponent = styled.div`
+  ${({ wrapper }) => {
+    if (wrapper) {
+      return `position: relative;`;
+    }
+    return `display: inline-block;`;
+  }}
+
   @supports (display: grid) {
-    ${({ wrapper }) => wrapper && `display: grid;`}
+
     ${({ enableGelGutters }) => enableGelGutters && gelGridGutters}
     ${({ enableGelMargins }) => enableGelMargins && gelMargins}
     ${({ enableGelMaxWidths }) => enableGelMaxWidths && gelMaxWidths}
     ${gridMediaQueries}
+    ${({ wrapper }) => {
+      if (wrapper) {
+        return `display: grid; position: initial;`;
+      }
+      return `display: block;`;
+    }}
   }
 `;
 
