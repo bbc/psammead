@@ -146,13 +146,17 @@ const gelMargins = css`
 
 const gelMaxWidths = css`
   @media (min-width: ${GEL_GROUP_4_SCREEN_WIDTH_MIN}) and (max-width: ${GEL_GROUP_4_SCREEN_WIDTH_MAX}) {
-    max-width: ${GEL_GROUP_4_SCREEN_WIDTH_MIN};
+    max-width: ${group4WrapperMaxWidth};
   }
   @media (min-width: ${GEL_GROUP_5_SCREEN_WIDTH_MIN}) {
-    max-width: ${GEL_GROUP_5_SCREEN_WIDTH_MIN};
+    max-width: ${group5WrapperMaxWidth};
   }
 `;
-
+const group4MaxWidth = css`
+  @media (min-width: ${GEL_GROUP_4_SCREEN_WIDTH_MIN}) {
+    max-width: ${group4WrapperMaxWidth};
+  }
+`;
 const gridMediaQueries = ({ columns, startOffset }) => {
   const selectedGroups = Object.keys(columns);
   return selectedGroups.map(group =>
@@ -198,6 +202,9 @@ const GridComponent = styled.div`
     ${({ enableGelGutters }) => enableGelGutters && gelGridGutters}
     ${({ enableGelMargins }) => enableGelMargins && gelMargins}
     ${({ enableGelMaxWidths }) => enableGelMaxWidths && gelMaxWidths}
+    ${({ enableGroupFourMaxWidth }) =>
+      enableGroupFourMaxWidth &&
+      group4MaxWidth} /* Don't use a number in a prop! */
     ${gridMediaQueries}
     ${({ wrapper }) =>
       wrapper ? `display: grid; position: initial;` : `display: block;`}

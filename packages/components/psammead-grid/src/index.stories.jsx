@@ -17,7 +17,7 @@ storiesOf('Components|Grid', module)
         columns={{ group4: 8 }}
         enableGelGutters
         enableGelMargins
-        enableGelMaxWidths
+        enableGroupFourMaxWidth
       >
         <Grid columns={{ group4: 6 }}>
           <ExampleParagraph identifier="1" />
@@ -61,7 +61,7 @@ storiesOf('Components|Grid', module)
         columns={{ group4: 8 }}
         enableGelGutters
         enableGelMargins
-        enableGelMaxWidths
+        enableGroupFourMaxWidth
       >
         <Grid columns={{ group4: 8 }} wrapper enableGelGutters>
           <Grid columns={{ group4: 4 }}>
@@ -115,7 +115,7 @@ storiesOf('Components|Grid', module)
         columns={{ group4: 8 }}
         enableGelGutters
         enableGelMargins
-        enableGelMaxWidths
+        enableGroupFourMaxWidth
       >
         <Grid columns={{ group4: 8 }} wrapper enableGelGutters>
           <Grid columns={{ group4: 4 }}>
@@ -146,16 +146,21 @@ storiesOf('Components|Grid', module)
     { notes, knobs: { escapeHTML: false } },
   )
   .add(
-    'Normal slice layout for 2, 6 or 10 items',
+    'Normal slice layout for 2, 6 or 10 items, with enableGroupFourMaxWidth',
     () => (
       <Grid
         wrapper
         columns={{ group4: 8 }}
         enableGelGutters
         enableGelMargins
-        enableGelMaxWidths
+        enableGroupFourMaxWidth
       >
-        <Grid columns={{ group4: 6 }} wrapper enableGelGutters>
+        <Grid
+          columns={{ group4: 6 }}
+          wrapper
+          enableGelGutters
+          enableGroupFourMaxWidth
+        >
           <Grid columns={{ group4: 2 }}>
             <ExampleParagraph identifier="1" />
           </Grid>
@@ -211,7 +216,7 @@ storiesOf('Components|Grid', module)
         columns={{ group4: 8 }}
         enableGelGutters
         enableGelMargins
-        enableGelMaxWidths
+        enableGroupFourMaxWidth
       >
         <Grid columns={{ group4: 2 }}>
           <ExampleImage />
@@ -257,7 +262,7 @@ storiesOf('Components|Grid', module)
         columns={{ group2: 6 }}
         enableGelMargins
         enableGelGutters
-        enableGelMaxWidths
+        enableGroupFourMaxWidth
       >
         <Grid columns={{ group2: 2 }} startOffset={{ group2: 2 }}>
           <ExampleParagraph identifier="1" />
@@ -306,7 +311,7 @@ storiesOf('Components|Grid', module)
     //       columns={{ group1: 6, group2: 6, group3: 6, group4: 8, group5: 20 }}
     //       enableGelMargins
     //       enableGelGutters
-    //       enableGelMaxWidths
+    //       enableGroupFourMaxWidth
     //       wrapper
     //     >
     //       <Grid
@@ -361,7 +366,7 @@ storiesOf('Components|Grid', module)
     //       columns={{ group1: 6, group2: 6, group3: 6, group4: 8, group5: 20 }}
     //       enableGelMargins
     //       enableGelGutters
-    //       enableGelMaxWidths
+    //       enableGroupFourMaxWidth
     //       wrapper
     //     >
     //       <Grid
