@@ -90,16 +90,6 @@ const mediaQuery = ({ min, max, styles }) => {
   return '';
 };
 
-const gelMargins = css`
-  margin: 0 auto;
-  @media (max-width: ${GEL_GROUP_2_SCREEN_WIDTH_MIN}) {
-    padding: 0 ${GEL_MARGIN_BELOW_400PX};
-  }
-  @media (min-width: ${GEL_GROUP_2_SCREEN_WIDTH_MIN}) and (max-width: ${GEL_GROUP_3_SCREEN_WIDTH_MAX}) {
-    padding: 0 ${GEL_MARGIN_ABOVE_400PX};
-  }
-`;
-
 const gelMaxWidths = css`
   @media (min-width: ${GEL_GROUP_4_SCREEN_WIDTH_MIN}) and (max-width: ${GEL_GROUP_4_SCREEN_WIDTH_MAX}) {
     max-width: ${group4WrapperMaxWidth};
@@ -108,13 +98,19 @@ const gelMaxWidths = css`
     max-width: ${group5WrapperMaxWidth};
   }
 `;
+
 const group4MaxWidth = css`
   @media (min-width: ${GEL_GROUP_4_SCREEN_WIDTH_MIN}) {
     max-width: ${group4WrapperMaxWidth};
   }
 `;
 
-const gridMediaQueries = ({ columns, startOffset, enableGelGutters }) => {
+const gridMediaQueries = ({
+  columns,
+  startOffset,
+  enableGelGutters,
+  enableGelMargins,
+}) => {
   const selectedGroups = Object.keys(columns);
   return selectedGroups.map(group =>
     mediaQuery({
@@ -125,6 +121,7 @@ const gridMediaQueries = ({ columns, startOffset, enableGelGutters }) => {
         grid-template-columns: repeat(${columns[group]}, 1fr);
         grid-column-end: span ${columns[group]};
       ${enableGelGutters ? `grid-column-gap: ${groups[group].gutterSize};` : ``}
+      ${enableGelMargins ? `padding: 0 ${groups[group].marginSize};` : ``}
       ${startOffset ? `grid-column-start: ${startOffset[group]};` : ``}`,
     }),
   );
@@ -157,11 +154,10 @@ const GridComponent = styled.div`
   ${gridFallbacks}
 
   @supports (display: grid) {
-    ${({ enableGelMargins }) => enableGelMargins && gelMargins}
+    ${({ enableGelMargins }) => enableGelMargins && `margin: 0 auto;`}
     ${({ enableGelMaxWidths }) => enableGelMaxWidths && gelMaxWidths}
     ${({ enableGroupFourMaxWidth }) =>
-      enableGroupFourMaxWidth &&
-      group4MaxWidth} /* Don't use a number in a prop! */
+      enableGroupFourMaxWidth && group4MaxWidth}
     ${gridMediaQueries}
     ${({ wrapper }) =>
       wrapper ? `display: grid; position: initial;` : `display: block;`}
