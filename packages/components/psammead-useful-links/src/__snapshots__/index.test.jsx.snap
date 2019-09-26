@@ -1,56 +1,28 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`UsefulLinks should render correctly 1`] = `
+exports[`One item should render correctly 1`] = `
 .c0 {
-  border-top: 0.0625rem solid #AEAEB5;
-  width: 224px;
-  margin-top: 2rem;
+  padding-top: 0.5rem;
 }
 
 .c1 {
   color: #222222;
-  margin-top: 1rem;
-  margin-bottom: 1.5rem;
 }
 
-.c2 {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
+.c1:hover,
+.c1:focus {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+  cursor: pointer;
 }
 
-.c3 {
-  color: #222222;
-  padding-bottom: 0.5rem;
-}
-
-<div>
-  <div
-    class="c0"
-  />
-  <h2
+<div
+  class="c0"
+>
+  <a
     class="c1"
   >
-    Useful links
-  </h2>
-  <ul
-    class="c2"
-  >
-    <li
-      class="c3"
-    >
-      Mitocinmu da sauko da sautin labarai
-    </li>
-    <li
-      class="c3"
-    >
-      Labaran BBC Hausa a text
-    </li>
-    <li
-      class="c3"
-    >
-      Abokan huldar BBC Hausa
-    </li>
-  </ul>
+    Labaran BBC Hausa a text
+  </a>
 </div>
 `;
