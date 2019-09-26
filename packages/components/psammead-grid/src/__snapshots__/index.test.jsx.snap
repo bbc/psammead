@@ -203,6 +203,7 @@ exports[`Grid component should render Grid wrapper with Grid 1`] = `
 >
   <div
     class="c1"
+    startoffset="[object Object]"
   >
     <p
       class="c2"
@@ -213,9 +214,11 @@ exports[`Grid component should render Grid wrapper with Grid 1`] = `
   </div>
   <div
     class="c3"
+    startoffset="[object Object]"
   >
     <div
       class="c4"
+      startoffset="[object Object]"
     >
       <p
         class="c2"
@@ -226,6 +229,7 @@ exports[`Grid component should render Grid wrapper with Grid 1`] = `
     </div>
     <div
       class="c5"
+      startoffset="[object Object]"
     >
       <p
         class="c2"
@@ -237,6 +241,7 @@ exports[`Grid component should render Grid wrapper with Grid 1`] = `
   </div>
   <div
     class="c6"
+    startoffset="[object Object]"
   >
     <p
       class="c2"
@@ -247,6 +252,7 @@ exports[`Grid component should render Grid wrapper with Grid 1`] = `
   </div>
   <div
     class="c6"
+    startoffset="[object Object]"
   >
     <p
       class="c2"
@@ -257,6 +263,7 @@ exports[`Grid component should render Grid wrapper with Grid 1`] = `
   </div>
   <div
     class="c6"
+    startoffset="[object Object]"
   >
     <p
       class="c2"
@@ -267,6 +274,7 @@ exports[`Grid component should render Grid wrapper with Grid 1`] = `
   </div>
   <div
     class="c6"
+    startoffset="[object Object]"
   >
     <p
       class="c2"
@@ -277,6 +285,7 @@ exports[`Grid component should render Grid wrapper with Grid 1`] = `
   </div>
   <div
     class="c6"
+    startoffset="[object Object]"
   >
     <p
       class="c2"
@@ -287,6 +296,7 @@ exports[`Grid component should render Grid wrapper with Grid 1`] = `
   </div>
   <div
     class="c6"
+    startoffset="[object Object]"
   >
     <p
       class="c2"
@@ -297,6 +307,7 @@ exports[`Grid component should render Grid wrapper with Grid 1`] = `
   </div>
   <div
     class="c6"
+    startoffset="[object Object]"
   >
     <p
       class="c2"
@@ -307,6 +318,7 @@ exports[`Grid component should render Grid wrapper with Grid 1`] = `
   </div>
   <div
     class="c6"
+    startoffset="[object Object]"
   >
     <p
       class="c2"
@@ -317,6 +329,7 @@ exports[`Grid component should render Grid wrapper with Grid 1`] = `
   </div>
   <div
     class="c6"
+    startoffset="[object Object]"
   >
     <p
       class="c2"
@@ -327,6 +340,7 @@ exports[`Grid component should render Grid wrapper with Grid 1`] = `
   </div>
   <div
     class="c6"
+    startoffset="[object Object]"
   >
     <p
       class="c2"
@@ -542,6 +556,7 @@ exports[`Grid component should render Grid wrapper with Grid including nested no
 
 <div
   class="c0"
+  startoffset="[object Object]"
 >
   <div
     class="c1"
