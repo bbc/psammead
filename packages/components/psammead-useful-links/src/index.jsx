@@ -1,37 +1,25 @@
 import React from 'react';
 import styled from 'styled-components';
-import {
-  getSansRegular,
-  getSerifMedium,
-} from '@bbc/psammead-styles/font-styles';
-import { C_EBON, C_PEBBLE } from '@bbc/psammead-styles/colours';
+// import { shape, string, array } from 'prop-types';
+// import { scriptPropType } from '@bbc/gel-foundations/prop-types';
+import { getSerifMedium } from '@bbc/psammead-styles/font-styles';
+import { C_EBON } from '@bbc/psammead-styles/colours';
 import { getPica } from '@bbc/gel-foundations/typography';
+import { string, arrayOf, shape } from 'prop-types';
+import { scriptPropType } from '@bbc/gel-foundations/prop-types';
 import {
-  GEL_SPACING_DBL, // 16 px
   GEL_SPACING, // 8 px
-  GEL_SPACING_TRPL, // 24 px
-  GEL_SPACING_QUAD, // 32 px
 } from '@bbc/gel-foundations/spacings';
+import { GEL_GROUP_3_SCREEN_WIDTH_MIN } from '@bbc/gel-foundations/breakpoints';
 
-const HorizontalBar = styled.div`
-  border-top: 0.0625rem solid ${C_PEBBLE};
-  width: 224px;
-  margin-top: ${GEL_SPACING_QUAD};
+const UsefulLinkWrapper = styled.div`
+  padding-top: ${GEL_SPACING};
 `;
 
-const Caption = styled.h2`
-  ${({ service }) => getSansRegular(service)};
-  color: ${C_EBON};
-  margin-top: ${GEL_SPACING_DBL};
-  margin-bottom: ${GEL_SPACING_TRPL};
-`;
-
-const UsefulLinkWrapper = styled.div``;
-
-const UsefulLink = styled.a`
-  color: ${C_EBON};
+export const UsefulLinkItem = styled.a`
   ${({ script }) => script && getPica(script)};
   ${({ service }) => getSerifMedium(service)};
+  color: ${C_EBON};
   &:hover,
   &:focus {
     text-decoration: underline;
@@ -39,36 +27,31 @@ const UsefulLink = styled.a`
   }
 `;
 
-const UsefulLinksUl = styled.ul`
-  list-style-type: none;
+export const UsefulLinksUl = styled.ul`
   padding: 0;
   margin: 0;
+  list-style-type: none;
+
+  @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
 `;
 
-const UsefulLinksLi = styled.li`
-  padding-bottom: ${GEL_SPACING};
+export const UsefulLinksLi = styled.li`
+  padding-top: ${GEL_SPACING};
 `;
 
-const UsefulLinks = usefulItems => (
-  <div>
-    <HorizontalBar />
-    <Caption>Useful links</Caption>
-    {usefulItems.length === 1 ? (
-      <UsefulLinkWrapper>
-        <UsefulLink>usefulItems[0]</UsefulLink>
-      </UsefulLinkWrapper>
-    ) : (
-      <UsefulLinksUl role="list" usefulItems={usefulItems}>
-        {usefulItems.usefulItems.map(item => {
-          return (
-            <UsefulLinksLi role="listitem">
-              <UsefulLink>{item}</UsefulLink>
-            </UsefulLinksLi>
-          );
-        })}
-      </UsefulLinksUl>
-    )}
-  </div>
+export const UsefulLink = ({ usefulItems, service, script }) => (
+  <UsefulLinkWrapper>
+    <UsefulLinkItem service={service} sript={script} usefulItems={usefulItems}>
+      {usefulItems[0]}
+    </UsefulLinkItem>
+  </UsefulLinkWrapper>
 );
 
-export default UsefulLinks;
+UsefulLink.propTypes = {
+  script: shape(scriptPropType).isRequired,
+  service: string.isRequired,
+  usefulItems: arrayOf(string).isRequired,
+};
