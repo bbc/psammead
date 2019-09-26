@@ -22,6 +22,7 @@ The following locales have overrides to meet BBC World Service requirements wher
 
 - `/moment/ar` - locale override for Arabic
 - `/moment/az` - locale override for Azeri
+- `/moment/bn` - locale override for Bengali
 - `/moment/es` - locale override for Spanish (Mundo)
 - `/moment/fa` - locale override for Persian (Farsi)
 - `/moment/gu` - locale override for Gujarati
@@ -35,9 +36,11 @@ The following locales have overrides to meet BBC World Service requirements wher
 - `/moment/si` - locale override for Sinhala
 - `/moment/sr` - locale override for Serbian
 - `/moment/sr-cyrl` - locale override for Serbian Cyrillic
+- `/moment/sw` - locale override for Swahili
 - `/moment/ta` - locale override for Tamil
 - `/moment/th` - locale override for Thai
 - `/moment/uk` - locale override for Ukrainian
+- `/moment/ur` - locale override for Urdu
 - `/moment/uz` - locale override for Uzbek
 - `/moment/yo` - locale override for Yoruba
 
