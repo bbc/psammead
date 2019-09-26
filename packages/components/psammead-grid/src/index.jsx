@@ -122,9 +122,9 @@ const gridMediaQueries = ({
         width: initial;
         grid-template-columns: repeat(${columns[group]}, 1fr);
         grid-column-end: span ${columns[group]};
-      ${enableGelGutters ? `grid-column-gap: ${groups[group].gutterSize};` : ``}
-      ${enableGelMargins ? `padding: 0 ${groups[group].marginSize};` : ``}
-      ${startOffset ? `grid-column-start: ${startOffset[group]};` : ``}`,
+      ${enableGelGutters && `grid-column-gap: ${groups[group].gutterSize};`}
+      ${enableGelMargins && `padding: 0 ${groups[group].marginSize};`}
+      ${startOffset && `grid-column-start: ${startOffset[group]};`}`,
     }),
   );
 };
