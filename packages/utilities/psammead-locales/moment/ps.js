@@ -23,7 +23,7 @@ var pashtoGregorianMonths = 'جنوري_فبروري_مارچ_اپریل_می_ج
 // Moment formats that should have the Jalali date added
 var jalaliFormats = ['D MMMM YYYY', 'LL'];
 
-moment.defineLocale('ps-PS', {
+moment.defineLocale('ps', {
   months: pashtoGregorianMonths,
   monthsShort: pashtoGregorianMonths,
   relativeTime: {
