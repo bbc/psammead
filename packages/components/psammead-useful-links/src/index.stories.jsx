@@ -1,5 +1,6 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
+import { withKnobs } from '@storybook/addon-knobs';
 import { inputProvider } from '@bbc/psammead-storybook-helpers';
 import {
   UsefulLink,
@@ -59,11 +60,13 @@ const generateStory = ({ usefulItems, strapline }) =>
   });
 
 storiesOf('Components|UsefulLinks', module)
+  .addDecorator(withKnobs)
   .add(
     'one link',
     generateStory({ usefulItems: singleItem, strapline: false }),
     {
       notes,
+      knobs: { escapeHTML: false },
     },
   )
   .add(
@@ -71,6 +74,7 @@ storiesOf('Components|UsefulLinks', module)
     generateStory({ usefulItems: multipleItems, strapline: false }),
     {
       notes,
+      knobs: { escapeHTML: false },
     },
   )
   .add(
@@ -78,5 +82,6 @@ storiesOf('Components|UsefulLinks', module)
     generateStory({ usefulItems: multipleItems, strapline: true }),
     {
       notes,
+      knobs: { escapeHTML: false },
     },
   );
