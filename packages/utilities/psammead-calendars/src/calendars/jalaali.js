@@ -33,12 +33,17 @@ const jalaaliMonths = {
 
 const jalaali = {
   formatDate: gregorianMoment => {
-    if (typeof gregorianMoment.locale !== 'function') {
+    // Type checks for passed in value gregorianMoment
+    if (
+      !gregorianMoment ||
+      typeof gregorianMoment.locale !== 'function' ||
+      !gregorianMoment.isValid()
+    ) {
       return null;
     }
     const currentLocale = gregorianMoment.locale();
-    // Check if moment is valid and locale passed in is valid
-    if (!gregorianMoment.isValid() || !(`${currentLocale}` in jalaaliMonths)) {
+    // Check if locale passed in is valid
+    if (!(`${currentLocale}` in jalaaliMonths)) {
       return null;
     }
     const jalaaliDate = jalaaliJs.toJalaali(
