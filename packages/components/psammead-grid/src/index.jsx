@@ -1,5 +1,5 @@
 import React from 'react';
-import { node } from 'prop-types';
+import { bool, node, number, shape } from 'prop-types';
 import styled, { css } from 'styled-components';
 import {
   GEL_MARGIN_BELOW_400PX,
@@ -174,8 +174,37 @@ const Grid = ({ children, ...otherProps }) => {
 
   return <GridComponent {...otherProps}>{renderChildren()}</GridComponent>;
 };
+
 Grid.propTypes = {
   children: node.isRequired,
+  columns: shape({
+    group1: number,
+    group2: number,
+    group3: number,
+    group4: number,
+    group5: number,
+  }).isRequired,
+  enableGelGutters: bool,
+  enableGelMargins: bool,
+  enableGelMaxWidths: bool,
+  enableGroupFourMaxWidth: bool,
+  startOffset: shape({
+    group1: number,
+    group2: number,
+    group3: number,
+    group4: number,
+    group5: number,
+  }),
+  wrapper: bool,
+};
+
+Grid.defaultProps = {
+  enableGelGutters: false,
+  enableGelMargins: false,
+  enableGelMaxWidths: false,
+  enableGroupFourMaxWidth: false,
+  startOffset: {},
+  wrapper: false,
 };
 
 export default Grid;
