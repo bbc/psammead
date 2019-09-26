@@ -3,6 +3,11 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 1.8.7 | [PR#2243](https://github.com/bbc/psammead/pull/2243) Talos - Bump Dependencies - @bbc/psammead-locales |
+| 1.8.6 | [PR#2237](https://github.com/bbc/psammead/pull/2237) Talos - Bump Dependencies - @bbc/psammead-locales |
+| 1.8.5 | [PR#2238](https://github.com/bbc/psammead/pull/2238) Bumping dependencies - @storybook/theming, @storybook/react, @storybook/addon-notes, @storybook/knobs, @storybook/addon-a11y, @storybook/addon-actions, @storybook/addon-viewport, eslint-plugin-prettier, enquirer, lint-staged |
+| 1.8.4 | [PR#2235](https://github.com/bbc/psammead/pull/2235) Talos - Bump Dependencies - @bbc/psammead-brand, @bbc/psammead-caption, @bbc/psammead-copyright, @bbc/psammead-image-placeholder, @bbc/psammead-locales, @bbc/psammead-media-indicator, @bbc/psammead-paragraph, @bbc/psammead-story-promo, @bbc/psammead-timestamp |
+| 1.8.3 | [PR#2230](https://github.com/bbc/psammead/pull/2230) Talos - Bump Dependencies - @bbc/psammead-assets, @bbc/psammead-locales, @bbc/psammead-storybook-helpers |
 | 1.8.2 | [PR#2194](https://github.com/bbc/psammead/pull/2194) Talos - Bump Dependencies - @bbc/psammead-assets |
 | 1.8.1 | [PR#2191](https://github.com/bbc/psammead/pull/2191) Talos - Bump Dependencies - @bbc/gel-foundations, @bbc/psammead-assets, @bbc/psammead-locales, @bbc/psammead-test-helpers |
 | 1.8.0 | [PR#2085](https://github.com/bbc/psammead/pull/2085) Improve Talos body to show details of bumped packages |
