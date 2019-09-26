@@ -3,6 +3,7 @@
 
 ## Description
 
+Psammead Grid is a component that you can use to set out column-based layouts using CSS Grid. It is set up to follow the standard [GEL groups for breakpoints](https://www.bbc.co.uk/gel/guidelines/grid#grid-sizes) and you can toggle on the GEL margins, gutters and fixed widths, in accordance with the GEL grid guidelines if you are using it for page layouts. 
 
 ## Installation
 
@@ -13,8 +14,8 @@
 <!-- prettier-ignore -->
 | Argument  | Type | Required | Default | Example |
 | --------- | ---- | -------- | ------- | ------- |
-| columns | object | yes | N/A | { group1: 6, group3: 8 } |
-| startOffset | object | no | Sets all values as 1 for each of the groups defined in `columns`  | { group1: 2, group3: 3 } |
+| columns | object | yes | N/A | { group1: 6, group2: 6, group3: 6, group4: 8, group5: 20 } |
+| startOffset | object | no | Sets all values as 1 for each of the groups defined in `columns`  | { group1: 1, group2: 1, group3: 1, group4: 2, group5: 5 } |
 | wrapper | boolean | no | false | `wrapper` |
 | enableGelGutters | boolean | no | false | `enableGelGutter` |
 | enableGelMargins | boolean | no | false | `enableGelMargins` |
@@ -69,7 +70,7 @@ const MyComponent = () => (
 );
 ```
 
-[Screenshot of this example without GEL Gutters and GEL Margins](./documentation/Screenshot\ example\ without\ gelMargins\ and\ gelGutters.png)
+[Screenshot of this example without GEL Gutters and GEL Margins](./documentation/screenshot-example-without-gelMargins-and-gelGutters.png)
 
 #### <a name="gutters-margins">Setting standard GEL gutters and GEL Margins</a>
 
@@ -79,12 +80,12 @@ Using `enableGelGutters` and `enableGelMargins` on the wrapper Grid element.
 import Grid from '@bbc/psammead-grid';
 
 const MyComponent = () => (
-	<Grid
-		wrapper
-		enableGelGutters
+  <Grid
+    wrapper
+    enableGelGutters
     enableGelMargins
-		columns={{ group3: 6, group4: 8 }}
-	>
+  	columns={{ group3: 6, group4: 8 }}
+  >
     <Grid columns={{ group3: 6, group4: 6 }}>
       <p>Paragraph - for group 3 spans 6/6 columns, for group 4 spans 6/8 columns</p>
     </Grid>
@@ -107,8 +108,8 @@ const MyComponent = () => (
     wrapper
     columns={{ group2: 6, group3: 6 }}
   >
-		<Grid
-		  wrapper
+    <Grid
+      wrapper
       columns={{ group2: 6, group3: 6 }}
     >
       <Grid columns={{ group2: 6, group3: 3 }}>
@@ -128,7 +129,7 @@ const MyComponent = () => (
 );
 ```
 
-[Screenshot of this example with GEL Gutters and GEL Margins enabled](./documentation/Screenshot\ example\ with\ gelMargins\ and\ gelGutters.png)
+[Screenshot of this example with GEL Gutters and GEL Margins enabled](./documentation/Screenshot-example-with-gelMargins-and-gelGutters.png)
 
 ** Setting GEL Max Widths**
 At the page level, you may want to have the GEL Grid's fixed max widths. 
