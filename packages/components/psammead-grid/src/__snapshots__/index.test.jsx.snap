@@ -2,6 +2,7 @@
 
 exports[`Grid component should render Grid wrapper with Grid 1`] = `
 .c0 {
+  margin: 0 auto;
   position: relative;
 }
 
@@ -46,9 +47,20 @@ exports[`Grid component should render Grid wrapper with Grid 1`] = `
   margin: 0;
 }
 
+@media (min-width:63rem) and (max-width:80rem) {
+  .c0 {
+    max-width: 45.5rem;
+  }
+}
+
+@media (min-width:80rem) {
+  .c0 {
+    max-width: 46.4rem;
+  }
+}
+
 @supports (display:grid) {
   .c0 {
-    margin: 0 auto;
     display: grid;
     position: initial;
   }
@@ -340,6 +352,7 @@ exports[`Grid component should render Grid wrapper with Grid 1`] = `
 
 exports[`Grid component should render Grid wrapper with Grid including nested non-Grid Figure element 1`] = `
 .c0 {
+  margin: 0 auto;
   position: relative;
 }
 
@@ -389,9 +402,20 @@ exports[`Grid component should render Grid wrapper with Grid including nested no
   padding: 0;
 }
 
+@media (min-width:63rem) and (max-width:80rem) {
+  .c0 {
+    max-width: 45.5rem;
+  }
+}
+
+@media (min-width:80rem) {
+  .c0 {
+    max-width: 46.4rem;
+  }
+}
+
 @supports (display:grid) {
   .c0 {
-    margin: 0 auto;
     display: grid;
     position: initial;
   }

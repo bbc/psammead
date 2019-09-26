@@ -153,9 +153,9 @@ const gridFallbacks = css`
 `;
 
 const GridComponent = styled.div`
-  ${gridFallbacks}
   ${({ enableGelMaxWidths }) => enableGelMaxWidths && gelMaxWidths}
   ${({ enableGroupFourMaxWidth }) => enableGroupFourMaxWidth && group4MaxWidth}
+  ${gridFallbacks}
   @supports (display: grid) {
     ${gridMediaQueries}
     ${({ wrapper }) =>
