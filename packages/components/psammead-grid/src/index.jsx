@@ -138,11 +138,11 @@ const gridFallbacks = css`
     return selectedGroups.map(
       group =>
         `
-      display: inline-block; 
       ${mediaQuery({
         min: groups[group].min,
         max: groups[group].max,
         styles: `
+          display: inline-block;
           width: ${(100 * columns[group]) / parentColumns[group]}%;
           vertical-align: top;
         `,
