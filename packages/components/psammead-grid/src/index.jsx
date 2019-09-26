@@ -91,6 +91,7 @@ const mediaQuery = ({ min, max, styles }) => {
 };
 
 const gelMaxWidths = css`
+  margin: 0 auto;
   @media (min-width: ${GEL_GROUP_4_SCREEN_WIDTH_MIN}) and (max-width: ${GEL_GROUP_4_SCREEN_WIDTH_MAX}) {
     max-width: ${group4WrapperMaxWidth};
   }
@@ -100,6 +101,7 @@ const gelMaxWidths = css`
 `;
 
 const group4MaxWidth = css`
+  margin: 0 auto;
   @media (min-width: ${GEL_GROUP_4_SCREEN_WIDTH_MIN}) {
     max-width: ${group4WrapperMaxWidth};
   }
@@ -155,7 +157,6 @@ const GridComponent = styled.div`
   ${({ enableGelMaxWidths }) => enableGelMaxWidths && gelMaxWidths}
   ${({ enableGroupFourMaxWidth }) => enableGroupFourMaxWidth && group4MaxWidth}
   @supports (display: grid) {
-    ${({ enableGelMargins }) => enableGelMargins && `margin: 0 auto;`}
     ${gridMediaQueries}
     ${({ wrapper }) =>
       wrapper ? `display: grid; position: initial;` : `display: block;`}
