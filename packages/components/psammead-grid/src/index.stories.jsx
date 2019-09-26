@@ -413,39 +413,6 @@ storiesOf('Components|Grid', module)
       </Grid>
     ),
     { notes },
-    // )
-    // .add(
-    //   'Using single grid for 8 with children 6 & 5 on different lines... layout',
-    //   () => (
-    //     <PageStyledGrid columns={8} wrapper>
-    //       <SingleGridComponent columns={6}>
-    //         <ExampleParagraph identifier="1" />
-    //       </SingleGridComponent>
-    //       <SingleGridComponent columns={5}>
-    //         <ExampleParagraph identifier="2" />
-    //       </SingleGridComponent>
-    //     </PageStyledGrid>
-    //   ),
-    //   { notes, knobs: { escapeHTML: false } },
-    // )
-    // .add(
-    //   'Using single grid for 8 with nesting... layout',
-    //   () => (
-    //     <PageStyledGrid columns={8} wrapper>
-    //       <SingleGridComponent columns={5} wrapper>
-    //         <SingleGridComponent columns={2}>
-    //           <ExampleParagraph identifier="1" />
-    //         </SingleGridComponent>
-    //         <SingleGridComponent columns={3}>
-    //           <ExampleParagraph identifier="2" />
-    //         </SingleGridComponent>
-    //       </SingleGridComponent>
-    //       <SingleGridComponent columns={3}>
-    //         <ExampleParagraph identifier="3" />
-    //       </SingleGridComponent>
-    //     </PageStyledGrid>
-    //   ),
-    //   { notes, knobs: { escapeHTML: false } },
   )
   .add(
     'Grid Article image example',
@@ -501,65 +468,4 @@ storiesOf('Components|Grid', module)
       </Grid>
     ),
     { notes },
-    // )
-    // .add(
-    //   'Grid wrapper with Grid using a nested Figure example - e.g. an article',
-    //   () => (
-    //     <Grid
-    //       columns={{ group1: 6, group2: 6, group3: 6, group4: 8, group5: 20 }}
-    //       enableGelMargins
-    //       enableGelGutters
-    //       enableGroupFourMaxWidth
-    //       wrapper
-    //     >
-    //       <Grid
-    //         columns={{ group1: 6, group2: 6, group3: 6, group4: 6, group5: 12 }}
-    //       >
-    //         <ExampleParagraph identifier="1" />
-    //       </Grid>
-    //       <ExampleFigure>
-    //         <Grid
-    //           columns={{ group1: 6, group2: 6, group3: 6, group4: 6, group5: 12 }}
-    //           wrapper
-    //         >
-    //           <Grid
-    //             columns={{
-    //               group1: 6,
-    //               group2: 6,
-    //               group3: 6,
-    //               group4: 6,
-    //               group5: 12,
-    //             }}
-    //           >
-    //             <ExampleParagraph identifier="Landscape image " />
-    //           </Grid>
-    //           <Grid
-    //             columns={{
-    //               group1: 6,
-    //               group2: 6,
-    //               group3: 5,
-    //               group4: 5,
-    //               group5: 10,
-    //             }}
-    //           >
-    //             <ExampleParagraph identifier="Landscape image's caption " />
-    //           </Grid>
-    //         </Grid>
-    //       </ExampleFigure>
-    //       <Grid
-    //         columns={{ group1: 6, group2: 6, group3: 5, group4: 5, group5: 10 }}
-    //       >
-    //         <ExampleParagraph identifier="Paragraph " />
-    //       </Grid>
-    //       {['2', '3', '4', '5', '6', '7', '8', '9', '10'].map(num => (
-    //         <Grid
-    //           columns={{ group1: 6, group2: 6, group3: 5, group4: 5, group5: 10 }}
-    //           key={`${num}item`}
-    //         >
-    //           <ExampleParagraph identifier={num} />
-    //         </Grid>
-    //       ))}
-    //     </Grid>
-    //   ),
-    //   { notes },
   );
