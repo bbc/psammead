@@ -23,6 +23,8 @@
     "@bbc/psammead-styles": "^2.3.0"
   },
   "peerDependencies": {
-    "react": "^16.9.0"
+    "react": "^16.9.0",
+    "prop-types": "^15.6.2",
+    "styled-components": "^4.3.2"
   }
 }
