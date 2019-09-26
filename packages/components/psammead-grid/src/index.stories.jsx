@@ -2,7 +2,7 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 import notes from '../README.md';
 import Grid from '.';
-import { ExampleImage, ExampleParagraph } from './helpers';
+import { ExampleImage, ExampleParagraph } from './testHelpers';
 
 storiesOf('Components|Grid', module)
   .add(

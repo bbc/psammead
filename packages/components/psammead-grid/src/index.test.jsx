@@ -1,7 +1,7 @@
 import React from 'react';
 import { shouldMatchSnapshot } from '@bbc/psammead-test-helpers';
 import Grid from '.';
-import { ExampleParagraph, ExampleFigure } from './helpers';
+import { ExampleParagraph, ExampleFigure } from './testHelpers';
 
 describe('Grid component', () => {
   shouldMatchSnapshot(
