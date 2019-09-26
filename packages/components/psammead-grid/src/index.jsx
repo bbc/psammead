@@ -152,12 +152,10 @@ const gridFallbacks = css`
 
 const GridComponent = styled.div`
   ${gridFallbacks}
-
+  ${({ enableGelMaxWidths }) => enableGelMaxWidths && gelMaxWidths}
+  ${({ enableGroupFourMaxWidth }) => enableGroupFourMaxWidth && group4MaxWidth}
   @supports (display: grid) {
     ${({ enableGelMargins }) => enableGelMargins && `margin: 0 auto;`}
-    ${({ enableGelMaxWidths }) => enableGelMaxWidths && gelMaxWidths}
-    ${({ enableGroupFourMaxWidth }) =>
-      enableGroupFourMaxWidth && group4MaxWidth}
     ${gridMediaQueries}
     ${({ wrapper }) =>
       wrapper ? `display: grid; position: initial;` : `display: block;`}

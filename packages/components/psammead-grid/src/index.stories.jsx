@@ -61,7 +61,6 @@ storiesOf('Components|Grid', module)
         columns={{ group1: 6, group2: 6, group3: 6, group4: 8, group5: 20 }}
         enableGelGutters
         enableGelMargins
-        enableGelMaxWidths
       >
         <Grid
           columns={{ group1: 4, group2: 4, group3: 4, group4: 4, group5: 12 }}
@@ -92,7 +91,7 @@ storiesOf('Components|Grid', module)
     { notes, knobs: { escapeHTML: false } },
   )
   .add(
-    'Slice layout for 6 or 10 items 8[6,2,2,2..]',
+    'Slice layout for 6 or 10 items with enableGroupFourMaxWidth',
     () => (
       <Grid
         wrapper
@@ -211,7 +210,7 @@ storiesOf('Components|Grid', module)
     { notes, knobs: { escapeHTML: false } },
   )
   .add(
-    'Normal slice layout for 1 or 5 items',
+    'Normal slice layout for 1 or 5 items, with enableGroupFourMaxWidth',
     () => (
       <Grid
         wrapper

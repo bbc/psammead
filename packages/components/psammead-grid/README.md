@@ -161,7 +161,7 @@ Currently this component is in alpha. This is because it has not yet been tested
 
 ## Roadmap
 
-Currently the fallback for browsers that don't support CSS Grid is that there are no gutters. We will implement a fix for this in a future version.
+Currently the fallback for browsers that don't support CSS Grid is that there are no gutters or margins applied. We will implement a fix for this in a future version.
 
 ## Contributing
 
