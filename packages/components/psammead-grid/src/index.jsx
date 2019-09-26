@@ -129,6 +129,11 @@ const gridMediaQueries = ({
   );
 };
 
+/*
+ * 1 We vertically align to the top so that sibling
+ *   grid items that are placed side-by-side within a row
+ *   have their text and images aligned
+ */
 const gridFallbacks = css`
   ${({ wrapper, columns, parentColumns }) => {
     if (wrapper || !parentColumns) {
@@ -144,8 +149,8 @@ const gridFallbacks = css`
         styles: `
           display: inline-block;
           width: ${(100 * columns[group]) / parentColumns[group]}%;
-          vertical-align: top;
-        `,
+          vertical-align: top; `,
+        /* [1] */
       })}
     `,
     );
