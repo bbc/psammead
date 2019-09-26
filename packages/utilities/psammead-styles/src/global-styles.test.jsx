@@ -20,7 +20,7 @@ describe('global-styles', () => {
 
   it('should handle global-styles with fonts props', () => {
     render(
-      <GlobalStyles fonts={[F_REITH_SANS_REGULAR(), F_REITH_SERIF_MEDIUM()]} />,
+      <GlobalStyles fonts={[F_REITH_SANS_REGULAR, F_REITH_SERIF_MEDIUM]} />,
     );
     const styles = getGlobalStyles();
     console.log(styles);
