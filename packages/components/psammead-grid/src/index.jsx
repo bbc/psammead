@@ -24,26 +24,38 @@ const groups = {
   group0: {
     min: null,
     max: GEL_GROUP_0_SCREEN_WIDTH_MAX,
+    gutters: GEL_GUTTER_BELOW_600PX,
+    margins: GEL_MARGIN_BELOW_400PX,
   },
   group1: {
     min: GEL_GROUP_1_SCREEN_WIDTH_MIN,
     max: GEL_GROUP_1_SCREEN_WIDTH_MAX,
+    gutters: GEL_GUTTER_BELOW_600PX,
+    margins: GEL_MARGIN_BELOW_400PX,
   },
   group2: {
     min: GEL_GROUP_2_SCREEN_WIDTH_MIN,
     max: GEL_GROUP_2_SCREEN_WIDTH_MAX,
+    gutters: GEL_GUTTER_BELOW_600PX,
+    margins: GEL_MARGIN_ABOVE_400PX,
   },
   group3: {
     min: GEL_GROUP_3_SCREEN_WIDTH_MIN,
     max: GEL_GROUP_3_SCREEN_WIDTH_MAX,
+    gutters: GEL_GUTTER_ABOVE_600PX,
+    margins: GEL_MARGIN_ABOVE_400PX,
   },
   group4: {
     min: GEL_GROUP_4_SCREEN_WIDTH_MIN,
     max: GEL_GROUP_4_SCREEN_WIDTH_MAX,
+    gutters: GEL_GUTTER_ABOVE_600PX,
+    margins: GEL_MARGIN_ABOVE_400PX,
   },
   group5: {
     min: GEL_GROUP_5_SCREEN_WIDTH_MIN,
     max: null,
+    gutters: GEL_GUTTER_ABOVE_600PX,
+    margins: GEL_MARGIN_ABOVE_400PX,
   },
 };
 
