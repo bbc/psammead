@@ -69,8 +69,8 @@ const MyComponent = () => (
   </Grid>
 );
 ```
-
-[Screenshot of this example without GEL Gutters and GEL Margins](./documentation/screenshot-example-without-gelMargins-and-gelGutters.png)
+Screenshot of this example without GEL Gutters and GEL Margins
+![Screenshot of this example without GEL Gutters and GEL Margins](./documentation/screenshot-example-without-gelMargins-and-gelGutters.png)
 
 #### <a name="gutters-margins">Setting standard GEL gutters and GEL Margins</a>
 
@@ -128,8 +128,8 @@ const MyComponent = () => (
   </Grid>
 );
 ```
-
-[Screenshot of this example with GEL Gutters and GEL Margins enabled](./documentation/Screenshot-example-with-gelMargins-and-gelGutters.png)
+Screenshot of this example with GEL Gutters and GEL Margins enabled
+![Screenshot of this example with GEL Gutters and GEL Margins enabled](./documentation/Screenshot-example-with-gelMargins-and-gelGutters.png)
 
 ** Setting GEL Max Widths**
 At the page level, you may want to have the GEL Grid's fixed max widths. 
