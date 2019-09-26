@@ -1,6 +1,6 @@
 var moment = require('moment');
 
-moment.defineLocale('ha', {
+moment.defineLocale('ha-HA', {
   months: 'Janairu_Fabrairu_Maris_Aprilu_Mayu_Yuni_Yuli_Agusta_Satumba_Oktoba_Nuwamba_Disamba'.split(
     '_'
   ),

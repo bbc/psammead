@@ -1,6 +1,6 @@
 var moment = require('moment');
 
-moment.defineLocale('rw', {
+moment.defineLocale('rw-RW', {
   months: "Ukwa mbere_Ukwa kabiri_Ukwa gatatu_Ukwa kane_Ukwa gatanu_Ukwa gatandatu_Ukw'indwi_Ukw'umunani_Ukw'icenda_Ukw'icumi_Ukw'icumi na rimwe_Ukw'icumi na kabiri".split(
     '_'
   ),
