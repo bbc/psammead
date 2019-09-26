@@ -11,10 +11,6 @@ import {
 import moment from 'moment-timezone';
 import Timestamp from '.';
 
-import '@bbc/psammead-locales/moment/ig';
-import '@bbc/psammead-locales/moment/pcm';
-import '@bbc/psammead-locales/moment/yo';
-
 // Fixed timestamp for 27 August 2019, 14:54 BST
 const fixedTimestamp = 1566914061212;
 
