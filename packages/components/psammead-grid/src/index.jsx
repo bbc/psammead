@@ -24,38 +24,38 @@ const groups = {
   group0: {
     min: null,
     max: GEL_GROUP_0_SCREEN_WIDTH_MAX,
-    gutters: GEL_GUTTER_BELOW_600PX,
-    margins: GEL_MARGIN_BELOW_400PX,
+    gutterSize: GEL_GUTTER_BELOW_600PX,
+    marginSize: GEL_MARGIN_BELOW_400PX,
   },
   group1: {
     min: GEL_GROUP_1_SCREEN_WIDTH_MIN,
     max: GEL_GROUP_1_SCREEN_WIDTH_MAX,
-    gutters: GEL_GUTTER_BELOW_600PX,
-    margins: GEL_MARGIN_BELOW_400PX,
+    gutterSize: GEL_GUTTER_BELOW_600PX,
+    marginSize: GEL_MARGIN_BELOW_400PX,
   },
   group2: {
     min: GEL_GROUP_2_SCREEN_WIDTH_MIN,
     max: GEL_GROUP_2_SCREEN_WIDTH_MAX,
-    gutters: GEL_GUTTER_BELOW_600PX,
-    margins: GEL_MARGIN_ABOVE_400PX,
+    gutterSize: GEL_GUTTER_BELOW_600PX,
+    marginSize: GEL_MARGIN_ABOVE_400PX,
   },
   group3: {
     min: GEL_GROUP_3_SCREEN_WIDTH_MIN,
     max: GEL_GROUP_3_SCREEN_WIDTH_MAX,
-    gutters: GEL_GUTTER_ABOVE_600PX,
-    margins: GEL_MARGIN_ABOVE_400PX,
+    gutterSize: GEL_GUTTER_ABOVE_600PX,
+    marginSize: GEL_MARGIN_ABOVE_400PX,
   },
   group4: {
     min: GEL_GROUP_4_SCREEN_WIDTH_MIN,
     max: GEL_GROUP_4_SCREEN_WIDTH_MAX,
-    gutters: GEL_GUTTER_ABOVE_600PX,
-    margins: GEL_MARGIN_ABOVE_400PX,
+    gutterSize: GEL_GUTTER_ABOVE_600PX,
+    marginSize: GEL_MARGIN_ABOVE_400PX,
   },
   group5: {
     min: GEL_GROUP_5_SCREEN_WIDTH_MIN,
     max: null,
-    gutters: GEL_GUTTER_ABOVE_600PX,
-    margins: GEL_MARGIN_ABOVE_400PX,
+    gutterSize: GEL_GUTTER_ABOVE_600PX,
+    marginSize: GEL_MARGIN_ABOVE_400PX,
   },
 };
 
@@ -90,15 +90,6 @@ const mediaQuery = ({ min, max, styles }) => {
   return '';
 };
 
-const gelGridGutters = css`
-  @media (max-width: ${GEL_GROUP_2_SCREEN_WIDTH_MAX}) {
-    grid-column-gap: ${GEL_GUTTER_BELOW_600PX};
-  }
-  @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
-    grid-column-gap: ${GEL_GUTTER_ABOVE_600PX};
-  }
-`;
-
 const gelMargins = css`
   margin: 0 auto;
   @media (max-width: ${GEL_GROUP_2_SCREEN_WIDTH_MIN}) {
@@ -123,7 +114,7 @@ const group4MaxWidth = css`
   }
 `;
 
-const gridMediaQueries = ({ columns, startOffset }) => {
+const gridMediaQueries = ({ columns, startOffset, enableGelGutters }) => {
   const selectedGroups = Object.keys(columns);
   return selectedGroups.map(group =>
     mediaQuery({
@@ -133,6 +124,7 @@ const gridMediaQueries = ({ columns, startOffset }) => {
         width: initial;
         grid-template-columns: repeat(${columns[group]}, 1fr);
         grid-column-end: span ${columns[group]};
+      ${enableGelGutters ? `grid-column-gap: ${groups[group].gutterSize};` : ``}
       ${startOffset ? `grid-column-start: ${startOffset[group]};` : ``}`,
     }),
   );
@@ -165,7 +157,6 @@ const GridComponent = styled.div`
   ${gridFallbacks}
 
   @supports (display: grid) {
-    ${({ enableGelGutters }) => enableGelGutters && gelGridGutters}
     ${({ enableGelMargins }) => enableGelMargins && gelMargins}
     ${({ enableGelMaxWidths }) => enableGelMaxWidths && gelMaxWidths}
     ${({ enableGroupFourMaxWidth }) =>
