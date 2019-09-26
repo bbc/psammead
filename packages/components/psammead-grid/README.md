@@ -23,11 +23,11 @@
 
 ## Usage
 
-We use the GEL Grid for our breakpoints, as well as for our standard gutters and margins. [The values are defined here in the GEL Grid documentation.](https://www.bbc.co.uk/gel/guidelines/grid#grid-sizes).
+We use the GEL Grid for our breakpoints, as well as for our standard gutters and margins. [The values are defined here in the GEL Grid documentation](https://www.bbc.co.uk/gel/guidelines/grid#grid-sizes).
 
 When we refer to `group3` in this component, we're referring to the breakpoint with a minimum width `GEL_GROUP_3_SCREEN_WIDTH_MIN` & a maximum width `GEL_GROUP_3_SCREEN_WIDTH_MAX`. These values are defined within [`@bbc/gel-foundations/breakpoints`](https://github.com/bbc/psammead/blob/latest/packages/utilities/gel-foundations/src/breakpoints.js).
 
-####<a name="simple-example">Simple example</a>
+#### <a name="simple-example">Simple example</a>
 
 Here is an example of a `Grid` `wrapper` that has 8 columns for `group4` (from 1008px to 1279px). It has two child `Grid` elements, one which spans 6/8 columns and one which spans 2/8 columns within this breakpoint.
 
@@ -52,7 +52,7 @@ const MyComponent = () => (
 );
 ```
 
-####<a name="multiple-groups">Setting values for multiple groups</a>
+#### <a name="multiple-groups">Setting values for multiple groups</a>
 
 ```jsx
 import Grid from '@bbc/psammead-grid';
@@ -71,7 +71,7 @@ const MyComponent = () => (
 
 [Screenshot of this example without GEL Gutters and GEL Margins](./documentation/Screenshot\ example\ without\ gelMargins\ and\ gelGutters.png)
 
-####<a name="gutters-margins">Setting standard GEL gutters and GEL Margins</a>
+#### <a name="gutters-margins">Setting standard GEL gutters and GEL Margins</a>
 
 Using `enableGelGutters` and `enableGelMargins` on the wrapper Grid element.
 
@@ -95,7 +95,7 @@ const MyComponent = () => (
 );
 ```
 
-####<a name="nested-grid">Nested grid example</a>
+#### <a name="nested-grid">Nested grid example</a>
 
 Note that here, for each definition of a parent Grid, we need to use the `wrapper` prop. This sets the total number of columns via the `columns` prop. Then to define how many columns the child should span, you can use the `columns` prop on the child `Grid`.
 
