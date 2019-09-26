@@ -244,7 +244,7 @@ export const F_REITH_SANS_CONDENSED_REGULAR = baseUrlOverride => `
       font-family: "ReithSansCondensed";
       src: url("${baseUrlOverride ||
         baseFontUrl}BBCReithSansCd_W_Rg.woff2") format("woff2"), url("${baseUrlOverride ||
-baseFontUrl}BBCReithSansCd_W_Rg.woff") format("woff");
+  baseFontUrl}BBCReithSansCd_W_Rg.woff") format("woff");
       font-display: optional;
   }`;
 
@@ -254,7 +254,7 @@ export const F_REITH_SANS_CONDENSED_BOLD = baseUrlOverride => `
       font-weight: 700;
       src: url("${baseUrlOverride ||
         baseFontUrl}BBCReithSansCd_W_Bd.woff2") format("woff2"), url("${baseUrlOverride ||
-baseFontUrl}BBCReithSansCd_W_Bd.woff") format("woff");
+  baseFontUrl}BBCReithSansCd_W_Bd.woff") format("woff");
       font-display: optional;
   }`;
 
