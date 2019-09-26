@@ -2,21 +2,17 @@
 
 import * as fonts from './fonts';
 
-const fontNames = Object.values(fonts);
+Object.values(fonts).forEach(font => {
+  const newUrl = 'https://example.com/';
+  const fontName = font.name
+    .replace(/_/g, ' ') // Replace all _ with spaces
+    .substring(2);
 
-fontNames.forEach(font => {
-  //console.log(font.name);
-  test = font().split('\n')[2]
-  .replace('font-family:', '')
-  .replace(/"/g, '')
-  .replace(';', '')
-  .replace(/\s/g, '');
-
-  it(`should match ${test} base font url`, () => {
+  it(`should match ${fontName} base font url`, () => {
     expect(font()).toMatchSnapshot();
   });
 
-  it('should match the overridden url', () => {
-    expect(font('https://example.com/')).toMatchSnapshot();
+  it(`should match the overridden url: ${newUrl}`, () => {
+    expect(font(newUrl)).toMatchSnapshot();
   });
 });
