@@ -3,7 +3,7 @@ import jalaali from './jalaali';
 
 describe('Jalaali Conversion Tests', () => {
   moment.defineLocale('ps', {});
-  const testScenarios = [
+  const dateTestScenarios = [
     {
       date: '2019-01-01',
       locale: 'fa',
@@ -65,22 +65,50 @@ describe('Jalaali Conversion Tests', () => {
       expected: null,
       summary: 'should return null as this is an invalid moment',
     },
+  ];
+  const nonMomentTestScenarios = [
     {
-      nonMoment: { test: 23 },
-      date: '2019-01-01',
-      locale: 'en',
+      nonMoment: null,
       expected: null,
-      summary: 'should return null if object passed is not a moment',
+      summary: 'should return null if item passed is null',
+    },
+    {
+      nonMoment: undefined,
+      expected: null,
+      summary: 'should return null if item passed is undefined',
+    },
+    {
+      nonMoment: {},
+      expected: null,
+      summary: 'should return null if item passed is a random object',
+    },
+    {
+      nonMoment: '',
+      expected: null,
+      summary: 'should return null if item passed is a string',
+    },
+    {
+      nonMoment: 2,
+      expected: null,
+      summary: 'should return null if item passed is an integer',
+    },
+    {
+      nonMoment: false,
+      expected: null,
+      summary: 'should return null if item passed is a boolean',
     },
   ];
-  testScenarios.forEach(({ nonMoment, date, locale, expected, summary }) => {
+  dateTestScenarios.forEach(({ date, locale, expected, summary }) => {
     it(summary, () => {
-      let testMoment = moment(date);
+      const testMoment = moment(date);
       testMoment.locale(locale);
-      if (nonMoment) {
-        testMoment = nonMoment;
-      }
       const jalaaliCalendar = jalaali.formatDate(testMoment);
+      expect(jalaaliCalendar).toEqual(expected);
+    });
+  });
+  nonMomentTestScenarios.forEach(({ nonMoment, expected, summary }) => {
+    it(summary, () => {
+      const jalaaliCalendar = jalaali.formatDate(nonMoment);
       expect(jalaaliCalendar).toEqual(expected);
     });
   });
