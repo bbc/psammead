@@ -12,15 +12,36 @@ Psammead Grid is a component that you can use to set out column-based layouts us
 ## Props
 
 <!-- prettier-ignore -->
-| Argument  | Type | Required | Default | Example | Description |
-| --------- | ---- | -------- | ------- | ------- | ------- |
-| columns | object | yes | N/A | { group1: 6, group2: 6, group3: 6, group4: 8, group5: 20 } |  |
-| startOffset | object | no | Sets all values as 1 for each of the groups defined in `columns`  | { group1: 1, group2: 1, group3: 1, group4: 2, group5: 5 } |  |
-| item | boolean | no | false | `item` |  |
-| enableGelGutters | boolean | no | false | `enableGelGutter` |  |
-| enableGelMargins | boolean | no | false | `enableGelMargins` |  |
-| enableGelMaxWidths | boolean | no | false | `enableGelMaxWidths` |  |
-| enableGroupFourMaxWidth | boolean | no | false | `enableGroupFourMaxWidth` |  |
+| Argument | Type | Required | Default | Example |
+| -------- | ---- | -------- | ------- | ------- |
+| columns | object | yes | N/A | { group1: 6, group2: 6, group3: 6, group4: 8, group5: 20 } |
+| startOffset | object | no | Sets all values as 1 for each of the groups defined in `columns` | { group1: 1, group2: 1, group3: 1, group4: 2, group5: 5 } |
+| item | boolean | no | false | `item` |
+| enableGelGutters | boolean | no | false | `enableGelGutter` |
+| enableGelMargins | boolean | no | false | `enableGelMargins` |
+| enableGelMaxWidths | boolean | no | false | `enableGelMaxWidths` |
+| enableGroupFourMaxWidth | boolean | no | false | `enableGroupFourMaxWidth` |
+
+- When should I use the `columns` prop?
+  - This should always be defined.
+  - For a `<Grid>` element, it's the number of columns the grid has.
+  - For a `<Grid item>` element, it's the number of columns it should span.
+- When should I use the `item` prop?
+  - The `item` prop should be used on a `<Grid>` that is a direct child of another `<Grid>`. Using the `columns` prop's values you can choose how many columns to span at each breakpoint.
+  - It can and should be used whenever you're defining a new grid item - something that you want to span a set number of columns at a breakpoint.
+
+```jsx
+<Grid columns={{ group5: 6 }}>
+  <Grid item columns={{ group5: 1 }}>This spans 1 out of 6 columns</Grid>
+  <Grid item columns={{ group5: 5 }}>This spans 5 out of 6 columns</Grid>
+</Grid>
+```
+
+- When should I use the `startOffset` prop?
+  - `startOffset` is an object structured just like the `columns` prop. You can set it on a `<Grid item>` element to start it at a column other than the first one. 
+  - If you don't pass it in, the offset value defaults to 1, the start of the grid.
+- Why is there no vertical spacing on the grid?
+  - The Grid implementation only has gutters/margins for columns, [according to the GEL specification](https://www.bbc.co.uk/gel/guidelines/grid#grid-sizes).  This is to allow flexibility for a variety of spacing. To add vertical spacing, you should add padding/margin/top/bottom to the contents.
 
 ## Usage
 
