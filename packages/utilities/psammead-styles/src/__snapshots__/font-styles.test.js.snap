@@ -146,8 +146,8 @@ exports[`should render SansBold correctly for marathi 1`] = `
 
 exports[`should render SansBold correctly for mundo 1`] = `
 "
-    font-family: Helmet, Freesans, Helvetica, Arial, sans-serif;
-    font-weight: 700;
+   font-family: ReithSans, Helvetica, Arial, sans-serif;
+   font-weight: 700;
    font-style: normal;
   "
 `;
@@ -202,8 +202,8 @@ exports[`should render SansBold correctly for pidgin 1`] = `
 
 exports[`should render SansBold correctly for portuguese 1`] = `
 "
-    font-family: Helmet, Freesans, Helvetica, Arial, sans-serif;
-    font-weight: 700;
+   font-family: ReithSans, Helvetica, Arial, sans-serif;
+   font-weight: 700;
    font-style: normal;
   "
 `;
@@ -298,8 +298,8 @@ exports[`should render SansBold correctly for tigrinya 1`] = `
 
 exports[`should render SansBold correctly for turkce 1`] = `
 "
-    font-family: Helmet, Freesans, Helvetica, Arial, sans-serif;
-    font-weight: 700;
+   font-family: ReithSans, Helvetica, Arial, sans-serif;
+   font-weight: 700;
    font-style: normal;
   "
 `;
@@ -506,8 +506,8 @@ exports[`should render SansBoldItalic correctly for marathi 1`] = `
 
 exports[`should render SansBoldItalic correctly for mundo 1`] = `
 "
-    font-family: Helmet, Freesans, Helvetica, Arial, sans-serif;
-    font-weight: 700;
+   font-family: ReithSans, Helvetica, Arial, sans-serif;
+   font-weight: 700;
    font-style: italic;
   "
 `;
@@ -562,8 +562,8 @@ exports[`should render SansBoldItalic correctly for pidgin 1`] = `
 
 exports[`should render SansBoldItalic correctly for portuguese 1`] = `
 "
-    font-family: Helmet, Freesans, Helvetica, Arial, sans-serif;
-    font-weight: 700;
+   font-family: ReithSans, Helvetica, Arial, sans-serif;
+   font-weight: 700;
    font-style: italic;
   "
 `;
@@ -658,8 +658,8 @@ exports[`should render SansBoldItalic correctly for tigrinya 1`] = `
 
 exports[`should render SansBoldItalic correctly for turkce 1`] = `
 "
-    font-family: Helmet, Freesans, Helvetica, Arial, sans-serif;
-    font-weight: 700;
+   font-family: ReithSans, Helvetica, Arial, sans-serif;
+   font-weight: 700;
    font-style: italic;
   "
 `;
@@ -866,9 +866,9 @@ exports[`should render SansRegular correctly for marathi 1`] = `
 
 exports[`should render SansRegular correctly for mundo 1`] = `
 "
-    font-family: Helmet, Freesans, Helvetica, Arial, sans-serif;
-    font-weight: 400;
-   font-style: normal;
+   font-family: ReithSans, Helvetica, Arial, sans-serif;
+   font-weight: 400;
+   font-style: normal; 
   "
 `;
 
@@ -922,9 +922,9 @@ exports[`should render SansRegular correctly for pidgin 1`] = `
 
 exports[`should render SansRegular correctly for portuguese 1`] = `
 "
-    font-family: Helmet, Freesans, Helvetica, Arial, sans-serif;
-    font-weight: 400;
-   font-style: normal;
+   font-family: ReithSans, Helvetica, Arial, sans-serif;
+   font-weight: 400;
+   font-style: normal; 
   "
 `;
 
@@ -1018,9 +1018,9 @@ exports[`should render SansRegular correctly for tigrinya 1`] = `
 
 exports[`should render SansRegular correctly for turkce 1`] = `
 "
-    font-family: Helmet, Freesans, Helvetica, Arial, sans-serif;
-    font-weight: 400;
-   font-style: normal;
+   font-family: ReithSans, Helvetica, Arial, sans-serif;
+   font-weight: 400;
+   font-style: normal; 
   "
 `;
 
@@ -1226,9 +1226,9 @@ exports[`should render SansRegularItalic correctly for marathi 1`] = `
 
 exports[`should render SansRegularItalic correctly for mundo 1`] = `
 "
-    font-family: Helmet, Freesans, Helvetica, Arial, sans-serif;
-    font-weight: 400;
-   font-style: italic;
+   font-family: ReithSans, Helvetica, Arial, sans-serif;
+   font-weight: 400;
+   font-style: italic; 
   "
 `;
 
@@ -1282,9 +1282,9 @@ exports[`should render SansRegularItalic correctly for pidgin 1`] = `
 
 exports[`should render SansRegularItalic correctly for portuguese 1`] = `
 "
-    font-family: Helmet, Freesans, Helvetica, Arial, sans-serif;
-    font-weight: 400;
-   font-style: italic;
+   font-family: ReithSans, Helvetica, Arial, sans-serif;
+   font-weight: 400;
+   font-style: italic; 
   "
 `;
 
@@ -1378,9 +1378,9 @@ exports[`should render SansRegularItalic correctly for tigrinya 1`] = `
 
 exports[`should render SansRegularItalic correctly for turkce 1`] = `
 "
-    font-family: Helmet, Freesans, Helvetica, Arial, sans-serif;
-    font-weight: 400;
-   font-style: italic;
+   font-family: ReithSans, Helvetica, Arial, sans-serif;
+   font-weight: 400;
+   font-style: italic; 
   "
 `;
 
@@ -1586,7 +1586,7 @@ exports[`should render SerifBold correctly for marathi 1`] = `
 
 exports[`should render SerifBold correctly for mundo 1`] = `
 "
-    font-family: Helmet, Freesans, Helvetica, Arial, sans-serif;
+    font-family: ReithSerif, Helvetica, Arial, sans-serif;
     font-weight: 700;
    font-style: normal;
   "
@@ -1642,7 +1642,7 @@ exports[`should render SerifBold correctly for pidgin 1`] = `
 
 exports[`should render SerifBold correctly for portuguese 1`] = `
 "
-    font-family: Helmet, Freesans, Helvetica, Arial, sans-serif;
+    font-family: ReithSerif, Helvetica, Arial, sans-serif;
     font-weight: 700;
    font-style: normal;
   "
@@ -1738,7 +1738,7 @@ exports[`should render SerifBold correctly for tigrinya 1`] = `
 
 exports[`should render SerifBold correctly for turkce 1`] = `
 "
-    font-family: Helmet, Freesans, Helvetica, Arial, sans-serif;
+    font-family: ReithSerif, Helvetica, Arial, sans-serif;
     font-weight: 700;
    font-style: normal;
   "
@@ -1946,9 +1946,9 @@ exports[`should render SerifMedium correctly for marathi 1`] = `
 
 exports[`should render SerifMedium correctly for mundo 1`] = `
 "
-    font-family: Helmet, Freesans, Helvetica, Arial, sans-serif;
-    font-weight: 700;
-   font-style: normal;
+   font-family: ReithSerif, Helvetica, Arial, sans-serif;
+   font-weight: 500;
+   font-style: normal; 
   "
 `;
 
@@ -2002,9 +2002,9 @@ exports[`should render SerifMedium correctly for pidgin 1`] = `
 
 exports[`should render SerifMedium correctly for portuguese 1`] = `
 "
-    font-family: Helmet, Freesans, Helvetica, Arial, sans-serif;
-    font-weight: 700;
-   font-style: normal;
+   font-family: ReithSerif, Helvetica, Arial, sans-serif;
+   font-weight: 500;
+   font-style: normal; 
   "
 `;
 
@@ -2098,9 +2098,9 @@ exports[`should render SerifMedium correctly for tigrinya 1`] = `
 
 exports[`should render SerifMedium correctly for turkce 1`] = `
 "
-    font-family: Helmet, Freesans, Helvetica, Arial, sans-serif;
-    font-weight: 700;
-   font-style: normal;
+   font-family: ReithSerif, Helvetica, Arial, sans-serif;
+   font-weight: 500;
+   font-style: normal; 
   "
 `;
 
@@ -2306,8 +2306,8 @@ exports[`should render SerifMediumItalic correctly for marathi 1`] = `
 
 exports[`should render SerifMediumItalic correctly for mundo 1`] = `
 "
-    font-family: Helmet, Freesans, Helvetica, Arial, sans-serif;
-    font-weight: 700;
+   font-family: ReithSerif, Helvetica, Arial, sans-serif;
+   font-weight: 500;
    font-style: italic;
   "
 `;
@@ -2362,8 +2362,8 @@ exports[`should render SerifMediumItalic correctly for pidgin 1`] = `
 
 exports[`should render SerifMediumItalic correctly for portuguese 1`] = `
 "
-    font-family: Helmet, Freesans, Helvetica, Arial, sans-serif;
-    font-weight: 700;
+   font-family: ReithSerif, Helvetica, Arial, sans-serif;
+   font-weight: 500;
    font-style: italic;
   "
 `;
@@ -2458,8 +2458,8 @@ exports[`should render SerifMediumItalic correctly for tigrinya 1`] = `
 
 exports[`should render SerifMediumItalic correctly for turkce 1`] = `
 "
-    font-family: Helmet, Freesans, Helvetica, Arial, sans-serif;
-    font-weight: 700;
+   font-family: ReithSerif, Helvetica, Arial, sans-serif;
+   font-weight: 500;
    font-style: italic;
   "
 `;
@@ -2666,8 +2666,8 @@ exports[`should render SerifRegular correctly for marathi 1`] = `
 
 exports[`should render SerifRegular correctly for mundo 1`] = `
 "
-    font-family: Helmet, Freesans, Helvetica, Arial, sans-serif;
-    font-weight: 400;
+   font-family: ReithSerif, Helvetica, Arial, sans-serif;
+   font-weight: 400;
    font-style: normal;
   "
 `;
@@ -2722,8 +2722,8 @@ exports[`should render SerifRegular correctly for pidgin 1`] = `
 
 exports[`should render SerifRegular correctly for portuguese 1`] = `
 "
-    font-family: Helmet, Freesans, Helvetica, Arial, sans-serif;
-    font-weight: 400;
+   font-family: ReithSerif, Helvetica, Arial, sans-serif;
+   font-weight: 400;
    font-style: normal;
   "
 `;
@@ -2818,8 +2818,8 @@ exports[`should render SerifRegular correctly for tigrinya 1`] = `
 
 exports[`should render SerifRegular correctly for turkce 1`] = `
 "
-    font-family: Helmet, Freesans, Helvetica, Arial, sans-serif;
-    font-weight: 400;
+   font-family: ReithSerif, Helvetica, Arial, sans-serif;
+   font-weight: 400;
    font-style: normal;
   "
 `;
