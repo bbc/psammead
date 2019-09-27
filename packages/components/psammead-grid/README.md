@@ -75,7 +75,7 @@ const MyComponent = () => (
   </Grid>
 );
 ```
-Image of this example
+Image of this example when viewed at within `group4` (from 1008px to 1279px). When you look at this example at any other breakpoint, each of the four items fill up the full width of the row. 
 ![8 column grid with items 6 2 2 2 with labels](packages/components/psammead-grid/documentation/8-column-grid-with-items-6-2-2-2-with-labels.png)
 
 #### <a name="multiple-groups">Setting values for multiple groups</a>
