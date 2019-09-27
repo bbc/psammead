@@ -139,8 +139,8 @@ const gridMediaQueries = ({
  *   have their text and images aligned
  */
 const gridFallbacks = css`
-  ${({ wrapper, columns, parentColumns }) => {
-    if (wrapper || !parentColumns) {
+  ${({ item, columns, parentColumns }) => {
+    if (!item || !parentColumns) {
       return `position: relative;`;
     }
     const selectedGroups = Object.keys(columns);
@@ -167,8 +167,8 @@ const GridComponent = styled.div`
   ${gridFallbacks}
   @supports (display: grid) {
     ${gridMediaQueries}
-    ${({ wrapper }) =>
-      wrapper ? `display: grid; position: initial;` : `display: block;`}
+    ${({ item }) =>
+      item ? `display: block;` : `display: grid; position: initial;`}
   }
 `;
 
@@ -204,7 +204,7 @@ Grid.propTypes = {
     group4: number,
     group5: number,
   }),
-  wrapper: bool,
+  item: bool,
 };
 
 Grid.defaultProps = {
@@ -213,7 +213,7 @@ Grid.defaultProps = {
   enableGelMaxWidths: false,
   enableGroupFourMaxWidth: false,
   startOffset: {},
-  wrapper: false,
+  item: false,
 };
 
 export default Grid;

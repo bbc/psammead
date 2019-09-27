@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Grid component should render Grid wrapper with Grid 1`] = `
+exports[`Grid component should render Grid with Grid items 1`] = `
 .c0 {
   margin: 0 auto;
   position: relative;
@@ -352,7 +352,7 @@ exports[`Grid component should render Grid wrapper with Grid 1`] = `
 </div>
 `;
 
-exports[`Grid component should render Grid wrapper with Grid including nested non-Grid Figure element 1`] = `
+exports[`Grid component should render Grid with Grid items including nested non-Grid Figure element 1`] = `
 .c0 {
   margin: 0 auto;
   position: relative;

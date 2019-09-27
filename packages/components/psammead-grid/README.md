@@ -12,15 +12,15 @@ Psammead Grid is a component that you can use to set out column-based layouts us
 ## Props
 
 <!-- prettier-ignore -->
-| Argument  | Type | Required | Default | Example |
-| --------- | ---- | -------- | ------- | ------- |
-| columns | object | yes | N/A | { group1: 6, group2: 6, group3: 6, group4: 8, group5: 20 } |
-| startOffset | object | no | Sets all values as 1 for each of the groups defined in `columns`  | { group1: 1, group2: 1, group3: 1, group4: 2, group5: 5 } |
-| wrapper | boolean | no | false | `wrapper` |
-| enableGelGutters | boolean | no | false | `enableGelGutter` |
-| enableGelMargins | boolean | no | false | `enableGelMargins` |
-| enableGelMaxWidths | boolean | no | false | `enableGelMaxWidths` |
-| enableGroupFourMaxWidth | boolean | no | false | `enableGroupFourMaxWidth` |
+| Argument  | Type | Required | Default | Example | Description |
+| --------- | ---- | -------- | ------- | ------- | ------- |
+| columns | object | yes | N/A | { group1: 6, group2: 6, group3: 6, group4: 8, group5: 20 } |  |
+| startOffset | object | no | Sets all values as 1 for each of the groups defined in `columns`  | { group1: 1, group2: 1, group3: 1, group4: 2, group5: 5 } |  |
+| item | boolean | no | false | `item` |  |
+| enableGelGutters | boolean | no | false | `enableGelGutter` |  |
+| enableGelMargins | boolean | no | false | `enableGelMargins` |  |
+| enableGelMaxWidths | boolean | no | false | `enableGelMaxWidths` |  |
+| enableGroupFourMaxWidth | boolean | no | false | `enableGroupFourMaxWidth` |  |
 
 ## Usage
 
@@ -30,23 +30,25 @@ When we refer to `group3` in this component, we're referring to the breakpoint w
 
 #### <a name="simple-example">Simple example</a>
 
-Here is an example of a `Grid` `wrapper` that has 8 columns for `group4` (from 1008px to 1279px). It has two child `Grid` elements, one which spans 6/8 columns and one which spans 2/8 columns within this breakpoint.
+Here is an example of a `<Grid>` that has 8 columns for `group4` (from 1008px to 1279px). It has two child `<Grid item>` elements, one which spans 6/8 columns and one which spans 2/8 columns within this breakpoint.
+
+In this example groups 1, 2, 3, & 5 are omitted from the `columns` prop - so at those breakpoints items fill the whole width of the page. 
 
 ```jsx
 import Grid from '@bbc/psammead-grid';
 
 const MyComponent = () => (
-  <Grid wrapper columns={{ group4: 8 }}>
-    <Grid columns={{ group4: 6 }}>
+  <Grid columns={{ group4: 8 }}>
+    <Grid item columns={{ group4: 6 }}>
       <p>Paragraph that spans 6 out of 8 columns through group4</p>
     </Grid>
-    <Grid columns={{ group4: 2 }}>
+    <Grid item columns={{ group4: 2 }}>
       <p>Paragraph that spans 2 out of 8 columns through group4</p>
     </Grid>
-    <Grid columns={{ group4: 2 }}>
+    <Grid item columns={{ group4: 2 }}>
        <p>Paragraph that spans 2 out of 8 columns through group4</p>
     </Grid>
-    <Grid columns={{ group4: 2 }}>
+    <Grid item columns={{ group4: 2 }}>
        <p>Paragraph that spans 2 out of 8 columns through group4</p>
     </Grid>
   </Grid>
@@ -59,11 +61,11 @@ const MyComponent = () => (
 import Grid from '@bbc/psammead-grid';
 
 const MyComponent = () => (
-  <Grid wrapper columns={{ group3: 6, group4: 8 }}>
-    <Grid columns={{ group3: 6, group4: 6 }}>
+  <Grid columns={{ group3: 6, group4: 8 }}>
+    <Grid item columns={{ group3: 6, group4: 6 }}>
       <p>Paragraph - for group 3 spans 6/6 columns, for group 4 spans 6/8 columns</p>
     </Grid>
-    <Grid columns={{ group3: 6, group4: 2 }}>
+    <Grid item columns={{ group3: 6, group4: 2 }}>
       <p>Paragraph - for group 3 spans 6/6 columns, for group 4 spans 2/8 columns</p>
     </Grid>
   </Grid>
@@ -74,22 +76,21 @@ Screenshot of this example without GEL Gutters and GEL Margins
 
 #### <a name="gutters-margins">Setting standard GEL gutters and GEL Margins</a>
 
-Using `enableGelGutters` and `enableGelMargins` on the wrapper Grid element.
+Using `enableGelGutters` and `enableGelMargins` on the `Grid` element. Note: these should *not* be added to a `<Grid item>` element!
 
 ```jsx
 import Grid from '@bbc/psammead-grid';
 
 const MyComponent = () => (
   <Grid
-    wrapper
     enableGelGutters
     enableGelMargins
   	columns={{ group3: 6, group4: 8 }}
   >
-    <Grid columns={{ group3: 6, group4: 6 }}>
+    <Grid item columns={{ group3: 6, group4: 6 }}>
       <p>Paragraph - for group 3 spans 6/6 columns, for group 4 spans 6/8 columns</p>
     </Grid>
-    <Grid columns={{ group3: 6, group4: 2 }}>
+    <Grid item columns={{ group3: 6, group4: 2 }}>
       <p>Paragraph - for group 3 spans 6/6 columns, for group 4 spans 2/8 columns</p>
     </Grid>
   </Grid>
@@ -98,31 +99,26 @@ const MyComponent = () => (
 
 #### <a name="nested-grid">Nested grid example</a>
 
-Note that here, for each definition of a parent Grid, we need to use the `wrapper` prop. This sets the total number of columns via the `columns` prop. Then to define how many columns the child should span, you can use the `columns` prop on the child `Grid`.
+Note that here, any time you use `<Grid>` that generates a new grid. The total number of columns at each breakpoint is set via the `columns` prop. Then to define how many columns the child `<Grid item >` should span, you can use the `columns` prop on the `<Grid item>`.
 
 ```jsx
 import Grid from '@bbc/psammead-grid';
 
 const MyComponent = () => (
-  <Grid
-    wrapper
-    columns={{ group2: 6, group3: 6 }}
-  >
-    <Grid
-      wrapper
-      columns={{ group2: 6, group3: 6 }}
+  <Grid columns={{ group2: 6, group3: 6 }}>
+    <Grid columns={{ group2: 6, group3: 6 }}
     >
-      <Grid columns={{ group2: 6, group3: 3 }}>
+      <Grid item columns={{ group2: 6, group3: 3 }}>
         <ExampleImage />
       </Grid>
-      <Grid columns={{ group2: 6, group3: 3 }}>
+      <Grid item columns={{ group2: 6, group3: 3 }}>
         <ExampleParagraph />
       </Grid>
     </Grid>
-    <Grid columns={{ group2: 2, group3: 2 }}>
+    <Grid item columns={{ group2: 2, group3: 2 }}>
       <ExampleImage />
     </Grid>
-    <Grid columns={{ group2: 4, group3: 4 }}>
+    <Grid item columns={{ group2: 4, group3: 4 }}>
       <ExampleParagraph />
     </Grid>
   </Grid>
@@ -143,16 +139,18 @@ This `Grid` component can be used for page-level layouts as well as for layouts 
 
 ### Frequenty Asked Questions
 
-- When should I use the `wrapper` prop?
-  - The `wrapper` prop should be used on a parent Grid element. It defines the grid, using the `columns` prop's values to define how many columns to define at each breakpoint. 
-  - It can and should be used whenever you're defining a new grid. [See nested grid example.](#nested-grid). It should be used in any case where you're defining a new nested grid.
+- When should I use the `item` prop?
+  - The `item` prop should be used on a child Grid element, that is a direct child of a `<Grid>`. Using the `columns` prop's values you can choose how many columns to span at each breakpoint.
+  - It can and should be used whenever you're defining a new grid item - something that you want to span a set number of columns at a breakpoint. 
 - When should I use the `columns` prop?
-  - This should always be defined. For a Grid element that is not a `wrapper`, it's the number of columns it should span.
+  - This should always be defined.
+  - For a `<Grid>` element, it's the number of columns the grid has.
+  - For a `<Grid item>` element, it's the number of columns it should span.
 - When should I use the `startOffset` prop?
   - `startOffset` is an object just like the `columns` prop. You can set it on a Grid child element to start it at a column other than the first one. 
   - If you don't pass it in, the value defaults to 1, the start of the grid.
 - Why is there no vertical spacing on the grid?
-    - The Grid implementation only has gutters/margins for columns, [according to the GEL specification](https://www.bbc.co.uk/gel/guidelines/grid#grid-sizes).  This is to allow flexibility for a variety of spacing. To add vertical spacing, you should add padding/margin/top/bottom to the contents.
+  - The Grid implementation only has gutters/margins for columns, [according to the GEL specification](https://www.bbc.co.uk/gel/guidelines/grid#grid-sizes).  This is to allow flexibility for a variety of spacing. To add vertical spacing, you should add padding/margin/top/bottom to the contents.
 
 <!-- ### When not to use this component -->
 
