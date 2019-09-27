@@ -23,7 +23,6 @@ describe('global-styles', () => {
       <GlobalStyles fonts={[F_REITH_SANS_REGULAR, F_REITH_SERIF_MEDIUM]} />,
     );
     const styles = getGlobalStyles();
-    console.log(styles);
     expect(styles).toMatchSnapshot();
   });
 });
