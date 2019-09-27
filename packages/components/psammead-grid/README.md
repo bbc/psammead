@@ -61,20 +61,22 @@ import Grid from '@bbc/psammead-grid';
 const MyComponent = () => (
   <Grid columns={{ group4: 8 }}>
     <Grid item columns={{ group4: 6 }}>
-      <p>Paragraph that spans 6 out of 8 columns through group4</p>
+      <p>Item 1 - Paragraph that spans 6 out of 8 columns through group4</p>
     </Grid>
     <Grid item columns={{ group4: 2 }}>
-      <p>Paragraph that spans 2 out of 8 columns through group4</p>
+      <p>Item 2 - Paragraph that spans 2 out of 8 columns through group4</p>
     </Grid>
     <Grid item columns={{ group4: 2 }}>
-       <p>Paragraph that spans 2 out of 8 columns through group4</p>
+       <p>Item 3 - Paragraph that spans 2 out of 8 columns through group4</p>
     </Grid>
     <Grid item columns={{ group4: 2 }}>
-       <p>Paragraph that spans 2 out of 8 columns through group4</p>
+       <p>Item 4 - Paragraph that spans 2 out of 8 columns through group4</p>
     </Grid>
   </Grid>
 );
 ```
+Image of this example
+![8 column grid with items 6 2 2 2 with labels](packages/components/psammead-grid/documentation/8-column-grid-with-items-6-2-2-2-with-labels.png)
 
 #### <a name="multiple-groups">Setting values for multiple groups</a>
 
