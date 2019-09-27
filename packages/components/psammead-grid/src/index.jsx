@@ -59,10 +59,10 @@ const groups = {
   },
 };
 
-const group4WrapperMaxWidth = `45.5rem`;
+const GROUP_4_MAX_WIDTH = `45.5rem`;
 // (6.75rem * 6) + 5*16px gutters = 728 = 45.5 rem
 
-const group5WrapperMaxWidth = `46.4rem`;
+const GROUP_5_MAX_WIDTH = `46.4rem`;
 // (2.95rem * 12) + 11*16px gutters = 742.4 = 46.4 rem
 
 const mediaQuery = ({ min, max, styles }) => {
@@ -93,17 +93,17 @@ const mediaQuery = ({ min, max, styles }) => {
 const gelMaxWidths = css`
   margin: 0 auto;
   @media (min-width: ${GEL_GROUP_4_SCREEN_WIDTH_MIN}) and (max-width: ${GEL_GROUP_4_SCREEN_WIDTH_MAX}) {
-    max-width: ${group4WrapperMaxWidth};
+    max-width: ${GROUP_4_MAX_WIDTH};
   }
   @media (min-width: ${GEL_GROUP_5_SCREEN_WIDTH_MIN}) {
-    max-width: ${group5WrapperMaxWidth};
+    max-width: ${GROUP_5_MAX_WIDTH};
   }
 `;
 
 const group4MaxWidth = css`
   margin: 0 auto;
   @media (min-width: ${GEL_GROUP_4_SCREEN_WIDTH_MIN}) {
-    max-width: ${group4WrapperMaxWidth};
+    max-width: ${GROUP_4_MAX_WIDTH};
   }
 `;
 
@@ -124,7 +124,11 @@ const gridMediaQueries = ({
         grid-column-end: span ${columns[group]};
       ${enableGelGutters ? `grid-column-gap: ${groups[group].gutterSize};` : ``}
       ${enableGelMargins ? `padding: 0 ${groups[group].marginSize};` : ``}
-      ${startOffset ? `grid-column-start: ${startOffset[group]};` : ``}`,
+      ${
+        startOffset && startOffset[group]
+          ? `grid-column-start: ${startOffset[group]};`
+          : ``
+      }`,
     }),
   );
 };
