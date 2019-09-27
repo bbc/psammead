@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 | ------- | ----------- |
+| 5.0.3 | [PR#2251](https://github.com/bbc/psammead/pull/2251) Talos - Bump Dependencies - @bbc/psammead-styles |
 | 5.0.2 | [PR#2191](https://github.com/bbc/psammead/pull/2191) Talos - Bump Dependencies - @bbc/gel-foundations |
 | 5.0.1 | [PR#2145](https://github.com/bbc/psammead/pull/2145) Talos - Bump Dependencies - @bbc/psammead-styles |
 | 5.0.0 | [PR#2127](https://github.com/bbc/psammead/pull/2127) Remove default colours. Add required props backgroundColour & logoColour |
