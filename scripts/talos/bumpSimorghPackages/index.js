@@ -6,6 +6,10 @@ const getBranchName = require('../getBranchName');
 const getPackageNames = require('../createPullRequest/getPackageNames');
 const getChangelogHead = require('../getChangelogHead');
 
+const path = 'package.json';
+const repoName = 'simorgh';
+const branchName = getBranchName();
+
 const getPublishedPackages = bumpedPackages => {
   const publishedPackages = {};
   Object.values(bumpedPackages).forEach(bumpedPackage => {
@@ -45,9 +49,6 @@ const getSimorghPullRequestBody = updates => {
 };
 
 const bumpSimorghPackages = async bumpedPackages => {
-  const path = 'package.json';
-  const repoName = 'simorgh';
-  const branchName = getBranchName();
   const publishedPackages = getPublishedPackages(bumpedPackages);
   const packageList = Object.keys(publishedPackages);
   const title = `Talos - Bump ${getPackageNames(packageList)}`;
