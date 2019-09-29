@@ -8,6 +8,7 @@ const checkoutBranch = require('./checkoutBranch');
 const commitChanges = require('./commitChanges');
 const createPullRequest = require('./createPullRequest');
 const getBranchName = require('./getBranchName');
+const bumpSimorghPackages = require('./bumpSimorghPackages');
 
 const talos = () => {
   const packages = getChangedPackages();
@@ -63,7 +64,8 @@ const talos = () => {
             }),
           ),
         )
-        .then(() => commitChanges('Talos - Update changelogs'));
+        .then(() => commitChanges('Talos - Update changelogs'))
+        .then(() => bumpSimorghPackages(bumpedPackagesObj));
     })
     .catch(e => {
       // eslint-disable-next-line no-console
