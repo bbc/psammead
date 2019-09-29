@@ -13,6 +13,7 @@ import notes from '../README.md';
 import './am';
 import './ar';
 import './az';
+import './bn';
 import './es';
 import './fa';
 import './gu';
@@ -33,10 +34,12 @@ import './si';
 import './so';
 import './sr';
 import './sr-cyrl';
+import './sw';
 import './ta';
 import './th';
 import './ti';
 import './uk';
+import './ur';
 import './uz';
 import './yo';
 
@@ -48,6 +51,7 @@ const locales = [
   { name: 'Arabic', locale: 'ar', dir: 'rtl' },
   { name: 'Azeri', locale: 'az' },
   { name: 'Brasil', locale: 'pt-br' },
+  { name: 'Bengali', locale: 'bn' },
   { name: 'Gahuza', locale: 'rw' },
   { name: 'Gujarati', locale: 'gu' },
   { name: 'Hausa', locale: 'ha' },
@@ -64,12 +68,14 @@ const locales = [
   { name: 'Russian', locale: 'ru' },
   { name: 'Serbian', locale: 'sr' },
   { name: 'Serbian Cyrillic', locale: 'sr-cyrl' },
-  { name: 'Somali', locale: 'so' },
   { name: 'Sinhala', locale: 'si' },
+  { name: 'Somali', locale: 'so' },
+  { name: 'Swahili', locale: 'sw' },
   { name: 'Tamil', locale: 'ta' },
   { name: 'Thai', locale: 'th' },
   { name: 'Tigrinya', locale: 'ti' },
   { name: 'Ukrainian', locale: 'uk' },
+  { name: 'Urdu', locale: 'ur' , dir: 'rtl' },
   { name: 'Uzbek', locale: 'uz' },
   { name: 'Yoruba', locale: 'yo' },
 ];
