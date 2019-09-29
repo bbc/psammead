@@ -6,7 +6,7 @@ const createPullRequest = ({
   body,
   base,
   username,
-  repo: repoName,
+  repoName,
 }) => {
   const repo = getGhRepo(username, repoName);
 

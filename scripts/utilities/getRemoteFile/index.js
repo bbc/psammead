@@ -2,7 +2,7 @@ const getGhRepo = require('../getGhRepo');
 
 const getRemoteFile = async ({ username, repoName, branch, path }) => {
   const repo = getGhRepo(username, repoName);
-  const response = await repo.getContents(branch, path);
+  const response = await repo.getContents(branch || 'latest', path);
   return {
     ...response,
     data: {
