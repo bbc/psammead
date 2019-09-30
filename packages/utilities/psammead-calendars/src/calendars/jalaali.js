@@ -31,30 +31,33 @@ const jalaaliMonths = {
   ],
 };
 
+// Helper function to check if argument passed through is a supported moment
+const isSupportedMoment = moment => {
+  if (
+    moment &&
+    typeof moment.locale === 'function' &&
+    moment.isValid() &&
+    `${moment.locale()}` in jalaaliMonths
+  ) {
+    return true;
+  }
+  return false;
+};
+
 const jalaali = {
   formatDate: gregorianMoment => {
-    // Type checks for passed in value gregorianMoment
-    if (
-      !gregorianMoment ||
-      typeof gregorianMoment.locale !== 'function' ||
-      !gregorianMoment.isValid()
-    ) {
-      return null;
+    if (isSupportedMoment(gregorianMoment)) {
+      const jalaaliDate = jalaaliJs.toJalaali(
+        gregorianMoment.year(),
+        gregorianMoment.month() + 1,
+        gregorianMoment.date(),
+      );
+      const localeJalaaliMonths = jalaaliMonths[gregorianMoment.locale()];
+      const jalaaliMonth = localeJalaaliMonths[jalaaliDate.jm - 1];
+      const output = `${jalaaliDate.jd} ${jalaaliMonth} ${jalaaliDate.jy}`;
+      return output;
     }
-    const currentLocale = gregorianMoment.locale();
-    // Check if locale passed in is valid
-    if (!(`${currentLocale}` in jalaaliMonths)) {
-      return null;
-    }
-    const jalaaliDate = jalaaliJs.toJalaali(
-      gregorianMoment.year(),
-      gregorianMoment.month() + 1,
-      gregorianMoment.date(),
-    );
-    const localeJalaaliMonths = jalaaliMonths[gregorianMoment.locale()];
-    const jalaaliMonth = localeJalaaliMonths[jalaaliDate.jm - 1];
-    const output = `${jalaaliDate.jd} ${jalaaliMonth} ${jalaaliDate.jy}`;
-    return output;
+    return null;
   },
 };
 
