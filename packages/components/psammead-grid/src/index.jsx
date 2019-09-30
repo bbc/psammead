@@ -109,7 +109,7 @@ const group4MaxWidth = css`
 
 const gridMediaQueries = ({
   columns,
-  startOffset,
+  gridStartOffset,
   enableGelGutters,
   enableGelMargins,
 }) => {
@@ -125,8 +125,8 @@ const gridMediaQueries = ({
       ${enableGelGutters ? `grid-column-gap: ${groups[group].gutterSize};` : ``}
       ${enableGelMargins ? `padding: 0 ${groups[group].marginSize};` : ``}
       ${
-        startOffset && startOffset[group]
-          ? `grid-column-start: ${startOffset[group]};`
+        gridStartOffset && gridStartOffset[group]
+          ? `grid-column-start: ${gridStartOffset[group]};`
           : ``
       }`,
     }),
@@ -172,16 +172,24 @@ const GridComponent = styled.div`
   }
 `;
 
-const Grid = ({ children, ...otherProps }) => {
+const Grid = ({
+  children,
+  startOffset: gridStartOffset, // namespace this prop to prevent it rendering as an element attribute e.g. <div startoffset="[object Object]">
+  ...otherProps
+}) => {
   const renderChildren = () =>
     React.Children.map(children, child => {
       return React.cloneElement(child, {
         parentColumns: otherProps.columns,
-        parentStartOffset: otherProps.startOffset,
+        parentStartOffset: gridStartOffset,
       });
     });
 
-  return <GridComponent {...otherProps}>{renderChildren()}</GridComponent>;
+  return (
+    <GridComponent {...otherProps} gridStartOffset={gridStartOffset}>
+      {renderChildren()}
+    </GridComponent>
+  );
 };
 
 Grid.propTypes = {

@@ -199,11 +199,9 @@ exports[`Grid component should render Grid with Grid items 1`] = `
 
 <div
   class="c0"
-  startoffset="[object Object]"
 >
   <div
     class="c1"
-    startoffset="[object Object]"
   >
     <p
       class="c2"
@@ -214,11 +212,9 @@ exports[`Grid component should render Grid with Grid items 1`] = `
   </div>
   <div
     class="c3"
-    startoffset="[object Object]"
   >
     <div
       class="c4"
-      startoffset="[object Object]"
     >
       <p
         class="c2"
@@ -229,7 +225,6 @@ exports[`Grid component should render Grid with Grid items 1`] = `
     </div>
     <div
       class="c5"
-      startoffset="[object Object]"
     >
       <p
         class="c2"
@@ -241,7 +236,6 @@ exports[`Grid component should render Grid with Grid items 1`] = `
   </div>
   <div
     class="c6"
-    startoffset="[object Object]"
   >
     <p
       class="c2"
@@ -252,7 +246,6 @@ exports[`Grid component should render Grid with Grid items 1`] = `
   </div>
   <div
     class="c6"
-    startoffset="[object Object]"
   >
     <p
       class="c2"
@@ -263,7 +256,6 @@ exports[`Grid component should render Grid with Grid items 1`] = `
   </div>
   <div
     class="c6"
-    startoffset="[object Object]"
   >
     <p
       class="c2"
@@ -274,7 +266,6 @@ exports[`Grid component should render Grid with Grid items 1`] = `
   </div>
   <div
     class="c6"
-    startoffset="[object Object]"
   >
     <p
       class="c2"
@@ -285,7 +276,6 @@ exports[`Grid component should render Grid with Grid items 1`] = `
   </div>
   <div
     class="c6"
-    startoffset="[object Object]"
   >
     <p
       class="c2"
@@ -296,7 +286,6 @@ exports[`Grid component should render Grid with Grid items 1`] = `
   </div>
   <div
     class="c6"
-    startoffset="[object Object]"
   >
     <p
       class="c2"
@@ -307,7 +296,6 @@ exports[`Grid component should render Grid with Grid items 1`] = `
   </div>
   <div
     class="c6"
-    startoffset="[object Object]"
   >
     <p
       class="c2"
@@ -318,7 +306,6 @@ exports[`Grid component should render Grid with Grid items 1`] = `
   </div>
   <div
     class="c6"
-    startoffset="[object Object]"
   >
     <p
       class="c2"
@@ -329,7 +316,6 @@ exports[`Grid component should render Grid with Grid items 1`] = `
   </div>
   <div
     class="c6"
-    startoffset="[object Object]"
   >
     <p
       class="c2"
@@ -340,7 +326,6 @@ exports[`Grid component should render Grid with Grid items 1`] = `
   </div>
   <div
     class="c6"
-    startoffset="[object Object]"
   >
     <p
       class="c2"
@@ -556,11 +541,9 @@ exports[`Grid component should render Grid with Grid items including nested non-
 
 <div
   class="c0"
-  startoffset="[object Object]"
 >
   <div
     class="c1"
-    startoffset="[object Object]"
   >
     <p
       class="c2"
@@ -574,11 +557,9 @@ exports[`Grid component should render Grid with Grid items including nested non-
   >
     <div
       class="c4"
-      startoffset="[object Object]"
     >
       <div
         class="c5"
-        startoffset="[object Object]"
       >
         <p
           class="c2"
@@ -589,7 +570,6 @@ exports[`Grid component should render Grid with Grid items including nested non-
       </div>
       <div
         class="c6"
-        startoffset="[object Object]"
       >
         <p
           class="c2"
@@ -602,7 +582,6 @@ exports[`Grid component should render Grid with Grid items including nested non-
   </figure>
   <div
     class="c7"
-    startoffset="[object Object]"
   >
     <p
       class="c2"
@@ -613,7 +592,6 @@ exports[`Grid component should render Grid with Grid items including nested non-
   </div>
   <div
     class="c7"
-    startoffset="[object Object]"
   >
     <p
       class="c2"
@@ -624,7 +602,6 @@ exports[`Grid component should render Grid with Grid items including nested non-
   </div>
   <div
     class="c7"
-    startoffset="[object Object]"
   >
     <p
       class="c2"
@@ -635,7 +612,6 @@ exports[`Grid component should render Grid with Grid items including nested non-
   </div>
   <div
     class="c7"
-    startoffset="[object Object]"
   >
     <p
       class="c2"
@@ -646,7 +622,6 @@ exports[`Grid component should render Grid with Grid items including nested non-
   </div>
   <div
     class="c7"
-    startoffset="[object Object]"
   >
     <p
       class="c2"
@@ -657,7 +632,6 @@ exports[`Grid component should render Grid with Grid items including nested non-
   </div>
   <div
     class="c7"
-    startoffset="[object Object]"
   >
     <p
       class="c2"
@@ -668,7 +642,6 @@ exports[`Grid component should render Grid with Grid items including nested non-
   </div>
   <div
     class="c7"
-    startoffset="[object Object]"
   >
     <p
       class="c2"
@@ -679,7 +652,6 @@ exports[`Grid component should render Grid with Grid items including nested non-
   </div>
   <div
     class="c7"
-    startoffset="[object Object]"
   >
     <p
       class="c2"
@@ -690,7 +662,6 @@ exports[`Grid component should render Grid with Grid items including nested non-
   </div>
   <div
     class="c7"
-    startoffset="[object Object]"
   >
     <p
       class="c2"
@@ -701,7 +672,6 @@ exports[`Grid component should render Grid with Grid items including nested non-
   </div>
   <div
     class="c7"
-    startoffset="[object Object]"
   >
     <p
       class="c2"
