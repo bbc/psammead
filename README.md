@@ -1,4 +1,4 @@
-<h1 align="center">:sparkles: Psammead - BBC Component Library :sparkles:</h1>
+<h1 align="center">:sparkles: Psammead - BBC Package Library :sparkles:</h1>
 
 <div align="center">
 
@@ -12,13 +12,13 @@
 
 </div>
 
-Psammead is a [GEL-compliant](https://www.bbc.co.uk/gel/articles/what-is-gel) React component library for the BBC, built on [`styled-components`](https://www.styled-components.com).
+Psammead is a package library which contains a mixture of components, containers and utilities.
 
 Psammead packages are split into:
 
-- [Components](./packages/components) - GEL-compliant presentational React components, ready for use out of the box, regardless of data source.
+- [Components](./packages/components) - [GEL-compliant](https://www.bbc.co.uk/gel/articles/what-is-gel) presentational React components built on [`styled-components`](https://www.styled-components.com). Theyre ready for use out of the box, regardless of data source.
 - [Containers](./packages/containers) - Functional components for optional use with presentational components of the same name.
-- [Utilities](./packages/utilities) - Commonly shared Psammead dependencies, and fundamentals to aid building additional GEL-compliant components.
+- [Utilities](./packages/utilities) - Commonly shared Psammead dependencies, fundamentals to aid building additional GEL-compliant components, and aditional packages, designed for use in SPAs.
 
 ## Documentation index
 Please familiarise yourself with our:
