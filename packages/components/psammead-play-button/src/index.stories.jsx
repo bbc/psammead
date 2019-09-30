@@ -11,7 +11,11 @@ storiesOf('Components|PlayButton/Video', module)
   .add(
     'video without duration',
     ({ service }) => (
-      <PlayButton service={service} type="video" onClick={() => {}} />
+      <PlayButton
+        service={service}
+        title="Dog chases cat."
+        onClick={() => {}}
+      />
     ),
     { notes },
   )
@@ -20,10 +24,10 @@ storiesOf('Components|PlayButton/Video', module)
     ({ service }) => (
       <PlayButton
         service={service}
-        duration={text('duration', '2:30')}
-        datetime={text('datetime', 'PT2M15S')}
-        type="video"
+        title="Dog chases cat."
         onClick={() => {}}
+        duration={text('duration', '2:30')}
+        datetime={text('datetime', 'PT2M30S')}
       />
     ),
     { notes },
@@ -35,7 +39,12 @@ storiesOf('Components|PlayButton/Audio', module)
   .add(
     'audio without duration',
     ({ service }) => (
-      <PlayButton service={service} type="audio" onClick={() => {}} />
+      <PlayButton
+        service={service}
+        title="Dog barks at cat."
+        onClick={() => {}}
+        type="audio"
+      />
     ),
     { notes },
   )
@@ -44,10 +53,11 @@ storiesOf('Components|PlayButton/Audio', module)
     ({ service }) => (
       <PlayButton
         service={service}
-        duration={text('duration', '2:30')}
-        datetime={text('datetime', 'PT2M15S')}
-        type="audio"
+        title="Dog barks at cat."
         onClick={() => {}}
+        duration={text('duration', '2:30')}
+        datetime={text('datetime', 'PT2M30S')}
+        type="audio"
       />
     ),
     { notes },

@@ -11,44 +11,38 @@ describe('PlayButton', () => {
   shouldMatchSnapshot(
     'should render video indicator correctly',
     <PlayButton
-      duration="2:15"
-      datetime="PT2M15S"
-      type="video"
       service="news"
       title="Dog chases cat."
       onClick={() => {}}
+      duration="2:30"
+      datetime="PT2M30S"
     />,
   );
 
   shouldMatchSnapshot(
     'should render video correctly without duration details',
-    <PlayButton
-      type="video"
-      service="news"
-      title="Dog chases cat."
-      onClick={() => {}}
-    />,
+    <PlayButton service="news" title="Dog chases cat." onClick={() => {}} />,
   );
 
   shouldMatchSnapshot(
     'should render audio indicator correctly',
     <PlayButton
-      duration="2:15"
-      datetime="PT2M15S"
-      type="audio"
       service="news"
-      title="Dog chases cat."
+      title="Dog barks at cat."
       onClick={() => {}}
+      duration="2:30"
+      datetime="PT2M30S"
+      type="audio"
     />,
   );
 
   shouldMatchSnapshot(
     'should render audio correctly without duration details',
     <PlayButton
-      type="audio"
       service="news"
-      title="Dog chases cat."
+      title="Dog barks at cat."
       onClick={() => {}}
+      type="audio"
     />,
   );
 });
