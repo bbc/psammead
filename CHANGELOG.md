@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 1.8.8 | [PR#2251](https://github.com/bbc/psammead/pull/2251) Talos - Bump Dependencies - @bbc/psammead-styles |
 | 1.8.7 | [PR#2243](https://github.com/bbc/psammead/pull/2243) Talos - Bump Dependencies - @bbc/psammead-locales |
 | 1.8.6 | [PR#2237](https://github.com/bbc/psammead/pull/2237) Talos - Bump Dependencies - @bbc/psammead-locales |
 | 1.8.5 | [PR#2238](https://github.com/bbc/psammead/pull/2238) Bumping dependencies - @storybook/theming, @storybook/react, @storybook/addon-notes, @storybook/knobs, @storybook/addon-a11y, @storybook/addon-actions, @storybook/addon-viewport, eslint-plugin-prettier, enquirer, lint-staged |
