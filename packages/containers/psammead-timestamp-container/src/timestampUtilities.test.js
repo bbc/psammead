@@ -74,7 +74,7 @@ describe('Timestamp utility functions', () => {
     it('should return relative timestamp if isRelative is true', () => {
       const nineHoursAgo = timestampGenerator({ hours: 9 });
       const isRelativeIsTrue = true;
-      const locale = 'en-GB';
+      const locale = 'en-gb';
       const output = showRelativeTime(
         nineHoursAgo,
         isRelativeIsTrue,
