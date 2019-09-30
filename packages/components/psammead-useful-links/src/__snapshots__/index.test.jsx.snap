@@ -1,6 +1,85 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`One item should render correctly 1`] = `
+exports[`Multiple useful items should render correctly 1`] = `
+.c2 {
+  color: #222222;
+}
+
+.c2:hover,
+.c2:focus {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.c0 {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.c1 {
+  padding-top: 0.5rem;
+}
+
+<ul
+  class="c0"
+  role="list"
+>
+  <li
+    class="c1"
+    role="listitem"
+  >
+    <a
+      class="c2"
+    >
+      Mitocinmu da sauko da sautin labarai
+    </a>
+  </li>
+  <li
+    class="c1"
+    role="listitem"
+  >
+    <a
+      class="c2"
+    >
+      Labaran BBC Hausa a text
+    </a>
+  </li>
+  <li
+    class="c1"
+    role="listitem"
+  >
+    <a
+      class="c2"
+    >
+      Abokan huldar BBC Hausa
+    </a>
+  </li>
+  <li
+    class="c1"
+    role="listitem"
+  >
+    <a
+      class="c2"
+    >
+      Timi Frank: Osinbajo ya maka mutum biyu
+    </a>
+  </li>
+  <li
+    class="c1"
+    role="listitem"
+  >
+    <a
+      class="c2"
+    >
+      Gwaninta ba ta karbi wani dan Nijeriya
+    </a>
+  </li>
+</ul>
+`;
+
+exports[`One useful item should render correctly 1`] = `
 .c0 {
   padding-top: 0.5rem;
 }
@@ -22,7 +101,7 @@ exports[`One item should render correctly 1`] = `
   <a
     class="c1"
   >
-    Labaran BBC Hausa a text
+    M
   </a>
 </div>
 `;
