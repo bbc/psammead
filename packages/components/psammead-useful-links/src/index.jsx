@@ -1,9 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
-// import { shape, string, array } from 'prop-types';
-// import { scriptPropType } from '@bbc/gel-foundations/prop-types';
 import { getSerifMedium } from '@bbc/psammead-styles/font-styles';
 import { C_EBON } from '@bbc/psammead-styles/colours';
+import { grid } from '@bbc/psammead-styles/detection';
 import { getPica } from '@bbc/gel-foundations/typography';
 import { string, arrayOf, shape } from 'prop-types';
 import { scriptPropType } from '@bbc/gel-foundations/prop-types';
@@ -33,13 +32,21 @@ export const UsefulLinksUl = styled.ul`
   list-style-type: none;
 
   @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
-    display: grid;
-    grid-template-columns: auto auto;
+    @supports (${grid}) {
+      display: grid;
+      grid-template-columns: auto auto;
+    }
   }
 `;
 
 export const UsefulLinksLi = styled.li`
   padding-top: ${GEL_SPACING};
+  @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
+    @supports not (${grid}) {
+      display: inline-block;
+      min-width: 50%;
+    }
+  }
 `;
 
 export const UsefulLink = ({ usefulItems, service, script }) => (
