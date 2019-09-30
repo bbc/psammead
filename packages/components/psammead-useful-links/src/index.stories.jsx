@@ -35,11 +35,9 @@ const generateStory = ({ usefulItems, strapline }) =>
             </SectionLabel>
           )}
           {usefulItems.length === 1 ? (
-            <UsefulLink
-              script={script}
-              service={service}
-              usefulItems={usefulItems}
-            />
+            <UsefulLink script={script} service={service}>
+              {usefulItems[0]}
+            </UsefulLink>
           ) : (
             <UsefulLinksUl>
               {usefulItems.map(item => {

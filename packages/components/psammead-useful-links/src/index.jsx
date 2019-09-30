@@ -4,7 +4,7 @@ import { getSerifMedium } from '@bbc/psammead-styles/font-styles';
 import { C_EBON } from '@bbc/psammead-styles/colours';
 import { grid } from '@bbc/psammead-styles/detection';
 import { getPica } from '@bbc/gel-foundations/typography';
-import { string, arrayOf, shape, node } from 'prop-types';
+import { string, shape, node } from 'prop-types';
 import { scriptPropType } from '@bbc/gel-foundations/prop-types';
 import {
   GEL_SPACING, // 8 px
@@ -61,10 +61,10 @@ export const UsefulLinksLi = ({ children, ...props }) => (
   </StyledUsefulLinksLi>
 );
 
-export const UsefulLink = ({ usefulItems, service, script }) => (
+export const UsefulLink = ({ children, service, script }) => (
   <UsefulLinkWrapper>
-    <UsefulLinkItem service={service} script={script} usefulItems={usefulItems}>
-      {usefulItems[0]}
+    <UsefulLinkItem service={service} script={script}>
+      {children}
     </UsefulLinkItem>
   </UsefulLinkWrapper>
 );
@@ -72,7 +72,7 @@ export const UsefulLink = ({ usefulItems, service, script }) => (
 UsefulLink.propTypes = {
   script: shape(scriptPropType).isRequired,
   service: string.isRequired,
-  usefulItems: arrayOf(string).isRequired,
+  children: string.isRequired,
 };
 
 UsefulLinksUl.propTypes = {
