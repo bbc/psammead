@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 2.4.19 | [PR#2240](https://github.com/bbc/psammead/pull/2240) Update locale code from `en-GB` to `en-gb` to remove a warning from Moment |
 | 2.4.18 | [PR#2252](https://github.com/bbc/psammead/pull/2252) Talos - Bump Dependencies - @bbc/psammead-timestamp |
 | 2.4.17 | [PR#2235](https://github.com/bbc/psammead/pull/2235) Talos - Bump Dependencies - @bbc/psammead-timestamp |
 | 2.4.16 | [PR#2191](https://github.com/bbc/psammead/pull/2191) Talos - Bump Dependencies - @bbc/gel-foundations |
