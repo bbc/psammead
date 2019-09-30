@@ -1,7 +1,7 @@
 /* eslint-disable no-unused-expressions */
 import styledNormalize from 'styled-normalize';
 import { createGlobalStyle } from 'styled-components';
-import { arrayOf, string } from 'prop-types';
+import { arrayOf, func } from 'prop-types';
 
 const boxSizing = `/* Box Sizing https://bit.ly/1A91I0J */
     html {
@@ -23,7 +23,7 @@ const GlobalStyles = createGlobalStyle`
   `;
 
 GlobalStyles.propTypes = {
-  fonts: arrayOf(string),
+  fonts: arrayOf(func),
 };
 
 GlobalStyles.defaultProps = {
