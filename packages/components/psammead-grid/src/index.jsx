@@ -184,7 +184,6 @@ const Grid = ({
       if (isNestedGridComponent) {
         return React.cloneElement(child, {
           parentColumns: otherProps.columns,
-          parentStartOffset: gridStartOffset,
         });
       }
       return child;
