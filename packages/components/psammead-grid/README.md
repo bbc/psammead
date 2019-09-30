@@ -24,7 +24,7 @@ Psammead Grid is a component that you can use to set out column-based layouts us
 
 - When should I use the `columns` prop?
   - This should always be defined.
-  - For a `<Grid>` element, it's the number of columns the grid has.
+  - For a `<Grid>` element, it's the number of columns the grid has, and the number of columns it should span.
   - For a `<Grid item>` element, it's the number of columns it should span.
 - When should I use the `item` prop?
   - The `item` prop should be used on a `<Grid>` that is a direct child of another `<Grid>`. Using the `columns` prop's values you can choose how many columns to span at each breakpoint.
