@@ -1,6 +1,9 @@
 {
   "name": "psammead-grid",
   "version": "1.0.0-alpha.0",
+  "publishConfig": {
+    "tag": "alpha"
+  },
   "description": "Grid setup for components",
   "main": "dist/index.js",
   "module": "esm/index.js",
