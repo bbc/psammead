@@ -179,10 +179,15 @@ const Grid = ({
 }) => {
   const renderChildren = () =>
     React.Children.map(children, child => {
-      return React.cloneElement(child, {
-        parentColumns: otherProps.columns,
-        parentStartOffset: gridStartOffset,
-      });
+      const isNestedGridComponent = child.type === Grid;
+
+      if (isNestedGridComponent) {
+        return React.cloneElement(child, {
+          parentColumns: otherProps.columns,
+          parentStartOffset: gridStartOffset,
+        });
+      }
+      return child;
     });
 
   return (
