@@ -61,10 +61,9 @@ const Paragraph = styled.p`
 const camelCase = str => str.replace(/-([a-z])/g, g => g[1].toUpperCase());
 const fontNames = Object.keys(fonts).sort();
 const fontStyles = fontNames.map(x => x.substring(2).replace(/_/g, ' '));
-
 const getFontStyles = fontName => {
   const font = fontNames.find(x => x.includes(fontName.replace(/ /g, '_')));
-  const fontFace = fonts[font] || '';
+  const fontFace = fonts[font]() || '';
   const fontStyle = fontFace
     .replace(/"/g, '')
     .replace('@font-face', '')
