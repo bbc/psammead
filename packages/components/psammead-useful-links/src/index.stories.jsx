@@ -26,7 +26,7 @@ const generateStory = ({ usefulItems, strapline }) =>
     componentFunction: ({ script, service }) => {
       return (
         <div>
-          {strapline ? (
+          {strapline && (
             <SectionLabel
               script={script}
               labelId="example-section-label"
@@ -34,7 +34,7 @@ const generateStory = ({ usefulItems, strapline }) =>
             >
               Useful links
             </SectionLabel>
-          ) : null}
+          )}
           {usefulItems.length === 1 ? (
             <UsefulLink
               usefulItems={usefulItems}
