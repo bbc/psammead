@@ -6,7 +6,7 @@ This component is currently tagged as alpha and is not suitable for production u
 
 ## Description
 
-The `UsefulLinks` component implements a Link Promo type that accesses links that provide information about various things to do with this world service website. `UsefulLinks` consists of a wrapper and a link element when there is only one useful item. In case there are multiple items, `UsefulLinks` consists of an unordered list with list items.
+The `UsefulLinks` component implements a Link Promo type that accesses links with information about various things to do with the world service website. `UsefulLinks` consists of a wrapper and a link element when there is only one useful item. In case there are multiple items, `UsefulLinks` consists of an unordered list with list items.
 
 ## Installation
 
@@ -26,7 +26,7 @@ npm install @bbc/psammead-useful-links
 
 <!-- Description of the component usage -->
 
-```
+```jsx
 import { latin } from '@bbc/gel-foundations/scripts';
 import {
   UsefulLink,
@@ -36,11 +36,14 @@ import {
 } from './index';
 
 const SingleUsefulItem = () => (
-    <UsefulLink script={latin} service="news" usefulItems=['Labaran BBC Hausa a text']/>
+    <UsefulLink script={latin} service="news" usefulItems={["Labaran BBC Hausa a text"]} />
 );
 
 const MultipleUsefulItems = () => (
-    <UsefulLinksUl role="list" usefulItems=['Mitocinmu da sauko da sautin labarai', 'Labaran BBC Hausa a text', 'Abokan huldar BBC Hausa']>
+    <UsefulLinksUl role="list" 
+                   usefulItems={['Mitocinmu da sauko da sautin labarai',
+                    'Labaran BBC Hausa a text',
+                    'Abokan huldar BBC Hausa']}>
         {usefulItems.map(item => {
             return (
                 <UsefulLinksLi role="listitem">
