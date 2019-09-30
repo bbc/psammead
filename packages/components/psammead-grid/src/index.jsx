@@ -174,7 +174,7 @@ const GridComponent = styled.div`
 
 const Grid = ({
   children,
-  startOffset: gridStartOffset, // namespace this prop to prevent it rendering as an element attribute e.g. <div startoffset="[object Object]">
+  startOffset: gridStartOffset, // alias this prop to prevent it rendering as an element attribute e.g. <div startoffset="[object Object]">
   ...otherProps
 }) => {
   const renderChildren = () =>
