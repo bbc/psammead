@@ -1,47 +1,66 @@
 # psammead-useful-links - [![Known Vulnerabilities](https://snyk.io/test/github/bbc/psammead/badge.svg?targetFile=packages%2Fcomponents%2Fpsammead-useful-links%2Fpackage.json)](https://snyk.io/test/github/bbc/psammead?targetFile=packages%2Fcomponents%2Fpsammead-useful-links%2Fpackage.json) [![Dependency Status](https://david-dm.org/bbc/psammead.svg?path=packages/components/psammead-useful-links)](https://david-dm.org/bbc/psammead?path=packages/components/psammead-useful-links) [![peerDependencies Status](https://david-dm.org/bbc/psammead/peer-status.svg?path=packages/components/psammead-useful-links)](https://david-dm.org/bbc/psammead?path=packages/components/psammead-useful-links&type=peer) [![Storybook](https://raw.githubusercontent.com/storybooks/brand/master/badge/badge-storybook.svg?sanitize=true)](https://bbc.github.io/psammead/?path=/story/useful-links--containing-image) [![GitHub license](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](https://github.com/bbc/psammead/blob/latest/LICENSE) [![npm version](https://img.shields.io/npm/v/@bbc/psammead-useful-links.svg)](https://www.npmjs.com/package/@bbc/psammead-useful-links) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/bbc/psammead/blob/latest/CONTRIBUTING.md)
 
 ## ⛔️ This is an alpha component ⛔️
+
 This component is currently tagged as alpha and is not suitable for production use. Following the passing of an accessibility review this component will be marked as ready for production and the alpha tag removed.
 
 ## Description
 
-The `UsefulLinks` component does...
+The `UsefulLinks` component implements a Link Promo type that accesses links that provide information about various things to do with this world service website. `UsefulLinks` consists of a wrapper and a link element when there is only one useful item. In case there are multiple items, `UsefulLinks` consists of an unordered list with list items.
 
 ## Installation
 
 ```jsx
-npm install @bbc/psammead-useful-links --save
+npm install @bbc/psammead-useful-links
 ```
 
 ## Props
 
 | Argument  | Type | Required | Default | Example |
 | --------- | ---- | -------- | ------- | ------- |
-| No props. |      |          |         |         |
+| service | string | yes | N/A | `'news'` |
+| script | object | yes | latin | { canon: { groupA: { fontSize: '28', lineHeight: '32',}, groupB: { fontSize: '32', lineHeight: '36', }, groupD: { fontSize: '44', lineHeight: '48', }, }, trafalgar: { groupA: { fontSize: '20', lineHeight: '24', }, groupB: { fontSize: '24', lineHeight: '28', }, groupD: { fontSize: '32', lineHeight: '36', }, }, } |
+| usefulItems | array | yes | N/A | ['Mitocinmu da sauko da sautin labarai', 'Labaran BBC Hausa a text', 'Abokan huldar BBC Hausa'] |
 
 ## Usage
 
 <!-- Description of the component usage -->
 
 ```
-import UsefulLinks from "@bbc/psammead-useful-links"
+import { latin } from '@bbc/gel-foundations/scripts';
+import {
+  UsefulLink,
+  UsefulLinksLi,
+  UsefulLinksUl,
+  UsefulLinkItem,
+} from './index';
+
+const SingleUsefulItem = () => (
+    <UsefulLink script={latin} service="news" usefulItems=['Labaran BBC Hausa a text']/>
+);
+
+const MultipleUsefulItems = () => (
+    <UsefulLinksUl role="list" usefulItems=['Mitocinmu da sauko da sautin labarai', 'Labaran BBC Hausa a text', 'Abokan huldar BBC Hausa']>
+        {usefulItems.map(item => {
+            return (
+                <UsefulLinksLi role="listitem">
+                    <UsefulLinkItem script={latin} service="news">
+                      {item}
+                    </UsefulLinkItem>
+                </UsefulLinksLi>
+            );
+        })}
+    </UsefulLinksUl>
+);
 ```
 
 ### When to use this component
 
-<!-- Description of the where the component can be used -->
-
-### When not to use this component
-
-<!-- Description of the where the component shouldn't can be used -->
+This component can be used at any point on the page. `UsefulLinks` link promo should contain items that have a "PRO" `assetTypeCode` and "Guide" `contentType`.
 
 ### Accessibility notes
 
-<!-- Information about accessibility for this component -->
-
-### Roadmap
-
-<!-- Known future changes of the component -->
+The "Useful links" label is unique to the page. In case there are multiple useful items, they are announced by a screen reader as list items within a list. When there is only one useful item, a screen reader does not announce it as a list item. While navigating through the component using keybord only, pressing the TAB key changes state on focus.
 
 ## Contributing
 

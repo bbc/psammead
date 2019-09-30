@@ -4,11 +4,18 @@
   "main": "dist/index.js",
   "module": "esm/index.js",
   "sideEffects": false,
-  "description": "Useful Links",
+  "description": "React styled component for Useful Links",
   "repository": {
     "type": "git",
     "url": "https://github.com/BBC-News/psammead/tree/latest/packages/components/psammead-useful-links"
   },
+  "keywords": [
+    "bbc",
+    "links",
+    "useful-links",
+    "styled-components",
+    "link-promo"
+  ],
   "author": {
     "name": "Psammead Maintainers",
     "email": "PsammeadMaintainers@bbc.co.uk"
@@ -26,5 +33,8 @@
     "react": "^16.9.0",
     "prop-types": "^15.6.2",
     "styled-components": "^4.3.2"
+  },
+  "publishConfig": {
+    "tag": "alpha"
   }
 }
