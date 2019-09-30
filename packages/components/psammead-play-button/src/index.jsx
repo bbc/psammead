@@ -17,6 +17,7 @@ const Button = styled.button`
   ${({ service }) => getSansBold(service)}
   ${GEL_MINION};
   height: 80px;
+  padding: 0;
   transition: background-color 300ms;
   width: 80px;
 
