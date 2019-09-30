@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 4.0.0 | [PR#2229](https://github.com/bbc/psammead/pull/2229) Convert fonts to overridable functions |
 | 3.0.0 | [PR#2250](https://github.com/bbc/psammead/pull/2250) Update Mundo, Brasil and Turkish fonts from Helmet to Reith |
 | 2.3.0 | [PR#2120](https://github.com/bbc/psammead/pull/2120) Add Scottish colour and scotland service to fonts |
 | 2.2.0 | [PR#2021](https://github.com/bbc/psammead/pull/2021) Export global styles |
