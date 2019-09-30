@@ -26,11 +26,6 @@ describe('Jalaali Conversion Tests', () => {
       summary: "should return null as date doesn't exist",
     },
     {
-      testMoment: moment('31-2019-12').locale('fa'),
-      expected: null,
-      summary: 'should return null as this is an invalid moment',
-    },
-    {
       testMoment: moment('2019-01-01').locale('ps'),
       expected: '11 مرغومی 1397',
       summary: 'should return first day of the year 2019 in Jalaali for pashto',
@@ -49,11 +44,6 @@ describe('Jalaali Conversion Tests', () => {
       testMoment: moment('2025-11-31').locale('ps'),
       expected: null,
       summary: "should return null as date doesn't exist",
-    },
-    {
-      testMoment: moment('31-2019-12').locale('ps'),
-      expected: null,
-      summary: 'should return null as this is an invalid moment',
     },
     {
       testMoment: null,
