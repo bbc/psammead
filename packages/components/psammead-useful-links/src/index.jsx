@@ -51,7 +51,7 @@ export const UsefulLinksLi = styled.li`
 
 export const UsefulLink = ({ usefulItems, service, script }) => (
   <UsefulLinkWrapper>
-    <UsefulLinkItem service={service} sript={script} usefulItems={usefulItems}>
+    <UsefulLinkItem service={service} script={script} usefulItems={usefulItems}>
       {usefulItems[0]}
     </UsefulLinkItem>
   </UsefulLinkWrapper>

@@ -11,8 +11,7 @@ import {
 import SectionLabel from '../../psammead-section-label/src';
 import notes from '../README.md';
 
-const singleItem = ['Labaran BBC Hausa a text'];
-const multipleItems = [
+const usefulCaptions = [
   'Mitocinmu da sauko da sautin labarai',
   'Labaran BBC Hausa a text',
   'Abokan huldar BBC Hausa',
@@ -25,7 +24,7 @@ const generateStory = ({ usefulItems, strapline }) =>
     // eslint-disable-next-line react/prop-types
     componentFunction: ({ script, service }) => {
       return (
-        <div>
+        <>
           {strapline && (
             <SectionLabel
               script={script}
@@ -37,12 +36,12 @@ const generateStory = ({ usefulItems, strapline }) =>
           )}
           {usefulItems.length === 1 ? (
             <UsefulLink
-              usefulItems={usefulItems}
               script={script}
               service={service}
+              usefulItems={usefulItems}
             />
           ) : (
-            <UsefulLinksUl role="list" usefulItems={usefulItems}>
+            <UsefulLinksUl role="list">
               {usefulItems.map(item => {
                 return (
                   <UsefulLinksLi role="listitem">
@@ -54,7 +53,7 @@ const generateStory = ({ usefulItems, strapline }) =>
               })}
             </UsefulLinksUl>
           )}
-        </div>
+        </>
       );
     },
   });
@@ -63,7 +62,10 @@ storiesOf('Components|UsefulLinks', module)
   .addDecorator(withKnobs)
   .add(
     'one link',
-    generateStory({ usefulItems: singleItem, strapline: false }),
+    generateStory({
+      usefulItems: usefulCaptions.slice(0, 1),
+      strapline: false,
+    }),
     {
       notes,
       knobs: { escapeHTML: false },
@@ -71,7 +73,7 @@ storiesOf('Components|UsefulLinks', module)
   )
   .add(
     'multiple links',
-    generateStory({ usefulItems: multipleItems, strapline: false }),
+    generateStory({ usefulItems: usefulCaptions, strapline: false }),
     {
       notes,
       knobs: { escapeHTML: false },
@@ -79,7 +81,7 @@ storiesOf('Components|UsefulLinks', module)
   )
   .add(
     'with section label',
-    generateStory({ usefulItems: multipleItems, strapline: true }),
+    generateStory({ usefulItems: usefulCaptions, strapline: true }),
     {
       notes,
       knobs: { escapeHTML: false },
