@@ -36,17 +36,16 @@ import {
 } from './index';
 
 const SingleUsefulItem = () => (
-    <UsefulLink script={latin} service="news" usefulItems={["Labaran BBC Hausa a text"]} />
+    <UsefulLink script={latin} service="news">
+        {usefulItems[0]}
+    </UsefulLink>
 );
 
 const MultipleUsefulItems = () => (
-    <UsefulLinksUl role="list" 
-                   usefulItems={['Mitocinmu da sauko da sautin labarai',
-                    'Labaran BBC Hausa a text',
-                    'Abokan huldar BBC Hausa']}>
+    <UsefulLinksUl>
         {usefulItems.map(item => {
             return (
-                <UsefulLinksLi role="listitem">
+                <UsefulLinksLi>
                     <UsefulLinkItem script={latin} service="news">
                       {item}
                     </UsefulLinkItem>
