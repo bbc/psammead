@@ -25,8 +25,10 @@ const Button = styled.button`
     background-color: ${C_POSTBOX};
     transition: background-color 300ms;
   }
+`;
 
-  & > svg {
+const IconWrapper = styled.div`
+  > svg {
     fill: ${C_WHITE};
     height: 24px;
     ${({ datetime, duration }) =>
@@ -44,20 +46,20 @@ const TimeDuration = styled.time`
   margin-top: ${GEL_SPACING};
 `;
 
-const PlayButton = ({ datetime, duration, type, service, title, onClick }) => (
-  <Button
-    service={service}
-    onClick={onClick}
-    datetime={datetime}
-    duration={duration}
-  >
-    <VisuallyHiddenText>{`Play ${type}, "${title}", ${duration}`}</VisuallyHiddenText>
-    {mediaIcons[type]}
-    {datetime && duration && (
-      <TimeDuration dateTime={datetime}>{duration}</TimeDuration>
-    )}
-  </Button>
-);
+const PlayButton = ({ datetime, duration, type, service, title, onClick }) => {
+  const durationText = datetime && duration ? `, ${duration}` : '';
+  return (
+    <Button service={service} onClick={onClick}>
+      <VisuallyHiddenText>{`Play ${type}, "${title}"${durationText}`}</VisuallyHiddenText>
+      <IconWrapper datetime={datetime} duration={duration} aria-hidden="true">
+        {mediaIcons[type]}
+      </IconWrapper>
+      {datetime && duration && (
+        <TimeDuration dateTime={datetime}>{duration}</TimeDuration>
+      )}
+    </Button>
+  );
+};
 
 PlayButton.propTypes = {
   datetime: string,
