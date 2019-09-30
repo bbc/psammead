@@ -41,10 +41,10 @@ const generateStory = ({ usefulItems, strapline }) =>
               usefulItems={usefulItems}
             />
           ) : (
-            <UsefulLinksUl role="list">
+            <UsefulLinksUl>
               {usefulItems.map(item => {
                 return (
-                  <UsefulLinksLi role="listitem">
+                  <UsefulLinksLi key={usefulItems.indexOf(item)}>
                     <UsefulLinkItem service={service} sript={script}>
                       {item}
                     </UsefulLinkItem>

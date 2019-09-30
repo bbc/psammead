@@ -4,7 +4,7 @@ import { getSerifMedium } from '@bbc/psammead-styles/font-styles';
 import { C_EBON } from '@bbc/psammead-styles/colours';
 import { grid } from '@bbc/psammead-styles/detection';
 import { getPica } from '@bbc/gel-foundations/typography';
-import { string, arrayOf, shape } from 'prop-types';
+import { string, arrayOf, shape, node } from 'prop-types';
 import { scriptPropType } from '@bbc/gel-foundations/prop-types';
 import {
   GEL_SPACING, // 8 px
@@ -26,7 +26,7 @@ export const UsefulLinkItem = styled.a`
   }
 `;
 
-export const UsefulLinksUl = styled.ul`
+const StyledUsefulLinksUl = styled.ul`
   padding: 0;
   margin: 0;
   list-style-type: none;
@@ -39,7 +39,13 @@ export const UsefulLinksUl = styled.ul`
   }
 `;
 
-export const UsefulLinksLi = styled.li`
+export const UsefulLinksUl = ({ children, ...props }) => (
+  <StyledUsefulLinksUl role="list" {...props}>
+    {children}
+  </StyledUsefulLinksUl>
+);
+
+const StyledUsefulLinksLi = styled.li`
   padding-top: ${GEL_SPACING};
   @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
     @supports not (${grid}) {
@@ -48,6 +54,12 @@ export const UsefulLinksLi = styled.li`
     }
   }
 `;
+
+export const UsefulLinksLi = ({ children, ...props }) => (
+  <StyledUsefulLinksLi role="listitem" {...props}>
+    {children}
+  </StyledUsefulLinksLi>
+);
 
 export const UsefulLink = ({ usefulItems, service, script }) => (
   <UsefulLinkWrapper>
@@ -61,4 +73,12 @@ UsefulLink.propTypes = {
   script: shape(scriptPropType).isRequired,
   service: string.isRequired,
   usefulItems: arrayOf(string).isRequired,
+};
+
+UsefulLinksUl.propTypes = {
+  children: node.isRequired,
+};
+
+UsefulLinksLi.propTypes = {
+  children: node.isRequired,
 };
