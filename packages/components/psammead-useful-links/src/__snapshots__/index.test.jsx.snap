@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Multiple useful items should render correctly 1`] = `
+exports[`Multiple useful links should render correctly 1`] = `
 .c2 {
   color: #222222;
 }
@@ -79,7 +79,7 @@ exports[`Multiple useful items should render correctly 1`] = `
 </ul>
 `;
 
-exports[`One useful item should render correctly 1`] = `
+exports[`One useful link should render correctly 1`] = `
 .c0 {
   padding-top: 0.5rem;
 }
@@ -101,7 +101,7 @@ exports[`One useful item should render correctly 1`] = `
   <a
     class="c1"
   >
-    M
+    Mitocinmu da sauko da sautin labarai
   </a>
 </div>
 `;

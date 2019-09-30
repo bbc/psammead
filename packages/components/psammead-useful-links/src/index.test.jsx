@@ -15,14 +15,14 @@ const usefulCaptions = [
   'Gwaninta ba ta karbi wani dan Nijeriya',
 ];
 
-describe('One useful item', () => {
+describe('One useful link', () => {
   shouldMatchSnapshot(
     'should render correctly',
-    <UsefulLink usefulItems={usefulCaptions[0]} />,
+    <UsefulLink>{usefulCaptions[0]}</UsefulLink>,
   );
 });
 
-describe('Multiple useful items', () => {
+describe('Multiple useful links', () => {
   shouldMatchSnapshot(
     'should render correctly',
     <UsefulLinksUl>
