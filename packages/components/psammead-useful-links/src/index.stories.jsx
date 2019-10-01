@@ -11,42 +11,53 @@ import {
 import notes from '../README.md';
 
 const usefulCaptions = [
-  'Mitocinmu da sauko da sautin labarai',
-  'Labaran BBC Hausa a text',
-  'Abokan huldar BBC Hausa',
-  'Timi Frank: Osinbajo ya maka mutum biyu',
-  'Gwaninta ba ta karbi wani dan Nijeriya',
+  {
+    name: 'Mitocinmu da sauko da sautin labarai',
+    url: 'https://www.bbc.com/igbo/afirika-49883577',
+  },
+  {
+    name: 'Labaran BBC Hausa a text',
+    url: 'https://www.bbc.com/igbo/afirika-49872694',
+  },
+  {
+    name: 'Abokan huldar BBC Hausa',
+    url: 'https://www.bbc.com/igbo/afirika-49869003',
+  },
+  {
+    name: 'Timi Frank: Osinbajo ya maka mutum biyu',
+    url: 'https://www.bbc.com/igbo/afirika-49883189',
+  },
+  {
+    name: 'Gwaninta ba ta karbi wani dan Nijeriya',
+    url: 'https://www.bbc.com/igbo/afirika-49869001',
+  },
 ];
 
-const urlSources = [
-  'https://www.bbc.com/igbo/afirika-49883577',
-  'https://www.bbc.com/igbo/afirika-49872694',
-  'https://www.bbc.com/igbo/afirika-49869003',
-  'https://www.bbc.com/igbo/afirika-49883189',
-  'https://www.bbc.com/igbo/afirika-49869001',
-];
-
-const generateStory = ({ usefulItems, url }) =>
+const generateStory = ({ usefulItems }) =>
   inputProvider({
     // eslint-disable-next-line react/prop-types
     componentFunction: ({ script, service }) => {
       return (
         <>
           {usefulItems.length === 1 ? (
-            <UsefulLink script={script} service={service} url={url}>
-              {usefulItems[0]}
+            <UsefulLink
+              script={script}
+              service={service}
+              url={usefulItems[0].url}
+            >
+              {usefulItems[0].name}
             </UsefulLink>
           ) : (
             <UsefulLinksUl>
-              {usefulItems.map((item, index) => {
+              {usefulItems.map(item => {
                 return (
                   <UsefulLinksLi key={usefulItems.indexOf(item)}>
                     <UsefulLinkItem
                       service={service}
                       script={script}
-                      href={url[index]}
+                      href={item.url}
                     >
-                      {item}
+                      {item.name}
                     </UsefulLinkItem>
                   </UsefulLinksLi>
                 );
@@ -64,7 +75,6 @@ storiesOf('Components|UsefulLinks', module)
     'one link',
     generateStory({
       usefulItems: usefulCaptions.slice(0, 1),
-      url: urlSources.slice(0, 1),
     }),
     {
       notes,
@@ -75,7 +85,6 @@ storiesOf('Components|UsefulLinks', module)
     'multiple links',
     generateStory({
       usefulItems: usefulCaptions,
-      url: urlSources,
     }),
     {
       notes,

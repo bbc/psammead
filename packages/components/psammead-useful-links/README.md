@@ -19,9 +19,8 @@ npm install @bbc/psammead-useful-links
 | Argument  | Type | Required | Default | Example |
 | --------- | ---- | -------- | ------- | ------- |
 | service | string | yes | N/A | `'news'` |
-| script | object | yes | latin | { canon: { groupA: { fontSize: '28', lineHeight: '32',}, groupB: { fontSize: '32', lineHeight: '36', }, groupD: { fontSize: '44', lineHeight: '48', }, }, trafalgar: { groupA: { fontSize: '20', lineHeight: '24', }, groupB: { fontSize: '24', lineHeight: '28', }, groupD: { fontSize: '32', lineHeight: '36', }, }, } |
-| usefulItems | array | yes | N/A | ['Mitocinmu da sauko da sautin labarai', 'Labaran BBC Hausa a text', 'Abokan huldar BBC Hausa'] |
-| url | array | yes | N/A | ['https://www.bbc.com/igbo/afirika-49883577', 'https://www.bbc.com/igbo/afirika-49872694'] |
+| script | object | yes | latin | `{ canon: { groupA: { fontSize: '28', lineHeight: '32',}, groupB: { fontSize: '32', lineHeight: '36', }, groupD: { fontSize: '44', lineHeight: '48', }, }, trafalgar: { groupA: { fontSize: '20', lineHeight: '24', }, groupB: { fontSize: '24', lineHeight: '28', }, groupD: { fontSize: '32', lineHeight: '36', }, }, }` |
+| usefulItems | array | yes | N/A | `[{ name: 'Mitocinmu da sauko da sautin labarai', url: 'https://www.bbc.com/igbo/afirika-49883577' }, { name: 'Labaran BBC Hausa a text', url: 'https://www.bbc.com/igbo/afirika-49872694' }]` |
 
 ## Usage
 
@@ -44,11 +43,11 @@ const SingleUsefulItem = () => (
 
 const MultipleUsefulItems = () => (
     <UsefulLinksUl>
-        {usefulItems.map((item, index) => {
+        {usefulItems.map(item => {
             return (
-                <UsefulLinksLi>
-                    <UsefulLinkItem script={latin} service="news" href={url[index]}>
-                      {item}
+                <UsefulLinksLi key={item.id}>
+                    <UsefulLinkItem script={latin} service="news" href={item.url}>
+                      {item.name}
                     </UsefulLinkItem>
                 </UsefulLinksLi>
             );
@@ -59,7 +58,7 @@ const MultipleUsefulItems = () => (
 
 ### When to use this component
 
-This component can be used at any point on the page. `UsefulLinks` link promo should contain items that have a "PRO" `assetTypeCode` and "Guide" `contentType`.
+This component can be used at any point on the page.
 
 ### Accessibility notes
 

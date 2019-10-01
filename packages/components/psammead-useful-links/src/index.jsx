@@ -13,7 +13,7 @@ import { GEL_GROUP_3_SCREEN_WIDTH_MIN } from '@bbc/gel-foundations/breakpoints';
 
 export const UsefulLinkItem = styled.a`
   ${({ script }) => script && getPica(script)};
-  ${({ service }) => getSerifMedium(service)};
+  ${({ service }) => service && getSerifMedium(service)};
   color: ${C_EBON};
   text-decoration: none;
   &:hover,
@@ -70,7 +70,7 @@ export const UsefulLink = ({ children, service, script, url }) => (
 UsefulLink.propTypes = {
   script: shape(scriptPropType).isRequired,
   service: string.isRequired,
-  children: string.isRequired,
+  children: node.isRequired,
   url: string.isRequired,
 };
 
