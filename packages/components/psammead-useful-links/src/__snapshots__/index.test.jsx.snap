@@ -3,6 +3,8 @@
 exports[`Multiple useful links should render correctly 1`] = `
 .c2 {
   color: #222222;
+  -webkit-text-decoration: none;
+  text-decoration: none;
 }
 
 .c2:hover,
@@ -86,6 +88,8 @@ exports[`One useful link should render correctly 1`] = `
 
 .c1 {
   color: #222222;
+  -webkit-text-decoration: none;
+  text-decoration: none;
 }
 
 .c1:hover,
