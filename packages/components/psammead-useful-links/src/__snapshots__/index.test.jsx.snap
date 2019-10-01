@@ -13,6 +13,10 @@ exports[`Multiple useful links should render correctly 1`] = `
   text-decoration: underline;
 }
 
+.c2:visited {
+  color: #6E6E73;
+}
+
 .c0 {
   padding: 0;
   margin: 0;
@@ -82,28 +86,24 @@ exports[`Multiple useful links should render correctly 1`] = `
 
 exports[`One useful link should render correctly 1`] = `
 .c0 {
-  padding-top: 0.5rem;
-}
-
-.c1 {
   color: #222222;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.c1:hover,
-.c1:focus {
+.c0:hover,
+.c0:focus {
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
-<div
+.c0:visited {
+  color: #6E6E73;
+}
+
+<a
   class="c0"
 >
-  <a
-    class="c1"
-  >
-    Mitocinmu da sauko da sautin labarai
-  </a>
-</div>
+  Mitocinmu da sauko da sautin labarai
+</a>
 `;

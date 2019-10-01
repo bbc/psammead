@@ -8,7 +8,6 @@ import {
   UsefulLinksUl,
   UsefulLinkItem,
 } from './index';
-import SectionLabel from '../../psammead-section-label/src';
 import notes from '../README.md';
 
 const usefulCaptions = [
@@ -27,21 +26,12 @@ const urlSources = [
   'https://www.bbc.com/igbo/afirika-49869001',
 ];
 
-const generateStory = ({ usefulItems, strapline, url }) =>
+const generateStory = ({ usefulItems, url }) =>
   inputProvider({
     // eslint-disable-next-line react/prop-types
     componentFunction: ({ script, service }) => {
       return (
         <>
-          {strapline && (
-            <SectionLabel
-              script={script}
-              labelId="example-section-label"
-              service={service}
-            >
-              Useful links
-            </SectionLabel>
-          )}
           {usefulItems.length === 1 ? (
             <UsefulLink script={script} service={service} url={url}>
               {usefulItems[0]}
@@ -53,7 +43,7 @@ const generateStory = ({ usefulItems, strapline, url }) =>
                   <UsefulLinksLi key={usefulItems.indexOf(item)}>
                     <UsefulLinkItem
                       service={service}
-                      sript={script}
+                      script={script}
                       href={url[index]}
                     >
                       {item}
@@ -74,7 +64,6 @@ storiesOf('Components|UsefulLinks', module)
     'one link',
     generateStory({
       usefulItems: usefulCaptions.slice(0, 1),
-      strapline: false,
       url: urlSources.slice(0, 1),
     }),
     {
@@ -86,19 +75,6 @@ storiesOf('Components|UsefulLinks', module)
     'multiple links',
     generateStory({
       usefulItems: usefulCaptions,
-      strapline: false,
-      url: urlSources,
-    }),
-    {
-      notes,
-      knobs: { escapeHTML: false },
-    },
-  )
-  .add(
-    'with section label',
-    generateStory({
-      usefulItems: usefulCaptions,
-      strapline: true,
       url: urlSources,
     }),
     {

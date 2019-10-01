@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { getSerifMedium } from '@bbc/psammead-styles/font-styles';
-import { C_EBON } from '@bbc/psammead-styles/colours';
+import { C_EBON, C_METAL } from '@bbc/psammead-styles/colours';
 import { grid } from '@bbc/psammead-styles/detection';
 import { getPica } from '@bbc/gel-foundations/typography';
 import { string, shape, node } from 'prop-types';
@@ -11,10 +11,6 @@ import {
 } from '@bbc/gel-foundations/spacings';
 import { GEL_GROUP_3_SCREEN_WIDTH_MIN } from '@bbc/gel-foundations/breakpoints';
 
-const UsefulLinkWrapper = styled.div`
-  padding-top: ${GEL_SPACING};
-`;
-
 export const UsefulLinkItem = styled.a`
   ${({ script }) => script && getPica(script)};
   ${({ service }) => getSerifMedium(service)};
@@ -23,6 +19,10 @@ export const UsefulLinkItem = styled.a`
   &:hover,
   &:focus {
     text-decoration: underline;
+  }
+
+  &:visited {
+    color: ${C_METAL};
   }
 `;
 
@@ -62,11 +62,9 @@ export const UsefulLinksLi = ({ children, ...props }) => (
 );
 
 export const UsefulLink = ({ children, service, script, url }) => (
-  <UsefulLinkWrapper>
-    <UsefulLinkItem service={service} script={script} href={url}>
-      {children}
-    </UsefulLinkItem>
-  </UsefulLinkWrapper>
+  <UsefulLinkItem service={service} script={script} href={url}>
+    {children}
+  </UsefulLinkItem>
 );
 
 UsefulLink.propTypes = {
