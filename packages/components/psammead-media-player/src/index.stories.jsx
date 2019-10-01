@@ -23,7 +23,6 @@ storiesOf('Components|Media Player', module)
 storiesOf('Components|Media Player', module).add('Audio Skin', () => (
   <CanonicalMediaPlayer
     src="https://www.test.bbc.com/ws/av-embeds/media/bbc_korean_radio/liveradio"
-    title="Audio - Live Korean Radio"
     showPlaceholder={false}
     skin="audio"
   />
