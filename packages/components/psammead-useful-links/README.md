@@ -63,7 +63,7 @@ This component can be used at any point on the page. `UsefulLinks` link promo sh
 
 ### Accessibility notes
 
-In case there are multiple useful items, they are announced by a screen reader as list items within a list. When there is only one useful item, a screen reader does not announce it as a list item.
+When there are multiple useful items, they are announced by a screen reader as list items within a list. When there is only one useful item, a screen reader does not announce it as a list item.
 
 We have added the role `list` and `listitem` to the corresponding list items due to a VoiceOver bug to reinstate the list semantics.
 

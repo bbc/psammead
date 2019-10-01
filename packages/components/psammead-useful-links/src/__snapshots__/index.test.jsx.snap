@@ -11,7 +11,6 @@ exports[`Multiple useful links should render correctly 1`] = `
 .c2:focus {
   -webkit-text-decoration: underline;
   text-decoration: underline;
-  cursor: pointer;
 }
 
 .c0 {
@@ -96,7 +95,6 @@ exports[`One useful link should render correctly 1`] = `
 .c1:focus {
   -webkit-text-decoration: underline;
   text-decoration: underline;
-  cursor: pointer;
 }
 
 <div

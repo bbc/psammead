@@ -23,7 +23,6 @@ export const UsefulLinkItem = styled.a`
   &:hover,
   &:focus {
     text-decoration: underline;
-    cursor: pointer;
   }
 `;
 
