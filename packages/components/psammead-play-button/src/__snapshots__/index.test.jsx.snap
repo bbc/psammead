@@ -33,11 +33,11 @@ exports[`PlayButton should render audio correctly without duration details 1`] =
   font-style: normal;
   font-size: 0.75rem;
   line-height: 1rem;
-  height: 80px;
+  height: 5rem;
   padding: 0;
   -webkit-transition: background-color 300ms;
   transition: background-color 300ms;
-  width: 80px;
+  width: 5rem;
 }
 
 .c0:hover,
@@ -49,8 +49,8 @@ exports[`PlayButton should render audio correctly without duration details 1`] =
 
 .c2 > svg {
   fill: #FFFFFF;
-  height: 24px;
-  width: 24px;
+  height: 1.5rem;
+  width: 1.5rem;
 }
 
 <button
@@ -116,11 +116,11 @@ exports[`PlayButton should render audio indicator correctly 1`] = `
   font-style: normal;
   font-size: 0.75rem;
   line-height: 1rem;
-  height: 80px;
+  height: 5rem;
   padding: 0;
   -webkit-transition: background-color 300ms;
   transition: background-color 300ms;
-  width: 80px;
+  width: 5rem;
 }
 
 .c0:hover,
@@ -132,9 +132,9 @@ exports[`PlayButton should render audio indicator correctly 1`] = `
 
 .c2 > svg {
   fill: #FFFFFF;
-  height: 24px;
+  height: 1.5rem;
   margin-top: 0.5rem;
-  width: 24px;
+  width: 1.5rem;
 }
 
 .c4 {
@@ -211,11 +211,11 @@ exports[`PlayButton should render video by default 1`] = `
   font-style: normal;
   font-size: 0.75rem;
   line-height: 1rem;
-  height: 80px;
+  height: 5rem;
   padding: 0;
   -webkit-transition: background-color 300ms;
   transition: background-color 300ms;
-  width: 80px;
+  width: 5rem;
 }
 
 .c0:hover,
@@ -227,8 +227,8 @@ exports[`PlayButton should render video by default 1`] = `
 
 .c2 > svg {
   fill: #FFFFFF;
-  height: 24px;
-  width: 24px;
+  height: 1.5rem;
+  width: 1.5rem;
 }
 
 <button
@@ -291,11 +291,11 @@ exports[`PlayButton should render video correctly without duration details 1`] =
   font-style: normal;
   font-size: 0.75rem;
   line-height: 1rem;
-  height: 80px;
+  height: 5rem;
   padding: 0;
   -webkit-transition: background-color 300ms;
   transition: background-color 300ms;
-  width: 80px;
+  width: 5rem;
 }
 
 .c0:hover,
@@ -307,8 +307,8 @@ exports[`PlayButton should render video correctly without duration details 1`] =
 
 .c2 > svg {
   fill: #FFFFFF;
-  height: 24px;
-  width: 24px;
+  height: 1.5rem;
+  width: 1.5rem;
 }
 
 <button
@@ -371,11 +371,11 @@ exports[`PlayButton should render video indicator correctly 1`] = `
   font-style: normal;
   font-size: 0.75rem;
   line-height: 1rem;
-  height: 80px;
+  height: 5rem;
   padding: 0;
   -webkit-transition: background-color 300ms;
   transition: background-color 300ms;
-  width: 80px;
+  width: 5rem;
 }
 
 .c0:hover,
@@ -387,9 +387,9 @@ exports[`PlayButton should render video indicator correctly 1`] = `
 
 .c2 > svg {
   fill: #FFFFFF;
-  height: 24px;
+  height: 1.5rem;
   margin-top: 0.5rem;
-  width: 24px;
+  width: 1.5rem;
 }
 
 .c4 {
