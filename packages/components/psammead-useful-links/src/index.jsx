@@ -4,14 +4,13 @@ import { getSerifMedium } from '@bbc/psammead-styles/font-styles';
 import { C_EBON, C_METAL } from '@bbc/psammead-styles/colours';
 import { grid } from '@bbc/psammead-styles/detection';
 import { getPica } from '@bbc/gel-foundations/typography';
-import { string, shape, node } from 'prop-types';
-import { scriptPropType } from '@bbc/gel-foundations/prop-types';
+import { node } from 'prop-types';
 import {
   GEL_SPACING, // 8 px
 } from '@bbc/gel-foundations/spacings';
 import { GEL_GROUP_3_SCREEN_WIDTH_MIN } from '@bbc/gel-foundations/breakpoints';
 
-export const UsefulLinkItem = styled.a`
+export const UsefulLink = styled.a`
   ${({ script }) => script && getPica(script)};
   ${({ service }) => service && getSerifMedium(service)};
   color: ${C_EBON};
@@ -60,19 +59,6 @@ export const UsefulLinksLi = ({ children, ...props }) => (
     {children}
   </StyledUsefulLinksLi>
 );
-
-export const UsefulLink = ({ children, service, script, url }) => (
-  <UsefulLinkItem service={service} script={script} href={url}>
-    {children}
-  </UsefulLinkItem>
-);
-
-UsefulLink.propTypes = {
-  script: shape(scriptPropType).isRequired,
-  service: string.isRequired,
-  children: node.isRequired,
-  url: string.isRequired,
-};
 
 UsefulLinksUl.propTypes = {
   children: node.isRequired,

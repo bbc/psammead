@@ -2,12 +2,7 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { withKnobs } from '@storybook/addon-knobs';
 import { inputProvider } from '@bbc/psammead-storybook-helpers';
-import {
-  UsefulLink,
-  UsefulLinksLi,
-  UsefulLinksUl,
-  UsefulLinkItem,
-} from './index';
+import { UsefulLink, UsefulLinksLi, UsefulLinksUl } from './index';
 import notes from '../README.md';
 
 const usefulCaptions = [
@@ -43,7 +38,7 @@ const generateStory = ({ usefulItems }) =>
             <UsefulLink
               script={script}
               service={service}
-              url={usefulItems[0].url}
+              href={usefulItems[0].url}
             >
               {usefulItems[0].name}
             </UsefulLink>
@@ -52,13 +47,13 @@ const generateStory = ({ usefulItems }) =>
               {usefulItems.map(item => {
                 return (
                   <UsefulLinksLi key={usefulItems.indexOf(item)}>
-                    <UsefulLinkItem
+                    <UsefulLink
                       service={service}
                       script={script}
                       href={item.url}
                     >
                       {item.name}
-                    </UsefulLinkItem>
+                    </UsefulLink>
                   </UsefulLinksLi>
                 );
               })}

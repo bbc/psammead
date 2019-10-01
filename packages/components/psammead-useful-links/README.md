@@ -28,15 +28,10 @@ npm install @bbc/psammead-useful-links
 
 ```jsx
 import { latin } from '@bbc/gel-foundations/scripts';
-import {
-  UsefulLink,
-  UsefulLinksLi,
-  UsefulLinksUl,
-  UsefulLinkItem,
-} from './index';
+import { UsefulLink, UsefulLinksLi, UsefulLinksUl } from './index';
 
 const SingleUsefulItem = () => (
-    <UsefulLink script={latin} service="news" url={url}>
+    <UsefulLink script={latin} service="news" href={url}>
         {usefulItems[0]}
     </UsefulLink>
 );
@@ -46,9 +41,9 @@ const MultipleUsefulItems = () => (
         {usefulItems.map(item => {
             return (
                 <UsefulLinksLi key={item.id}>
-                    <UsefulLinkItem script={latin} service="news" href={item.url}>
+                    <UsefulLink script={latin} service="news" href={item.url}>
                       {item.name}
-                    </UsefulLinkItem>
+                    </UsefulLink>
                 </UsefulLinksLi>
             );
         })}

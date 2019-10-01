@@ -1,12 +1,7 @@
 import React from 'react';
 import { shouldMatchSnapshot } from '@bbc/psammead-test-helpers';
 import { latin } from '@bbc/gel-foundations/scripts';
-import {
-  UsefulLink,
-  UsefulLinksLi,
-  UsefulLinksUl,
-  UsefulLinkItem,
-} from './index';
+import { UsefulLink, UsefulLinksLi, UsefulLinksUl } from './index';
 
 const usefulCaptions = [
   {
@@ -34,7 +29,7 @@ const usefulCaptions = [
 describe('One useful link', () => {
   shouldMatchSnapshot(
     'should render correctly',
-    <UsefulLink script={latin} service="news" url={usefulCaptions[0].url}>
+    <UsefulLink script={latin} service="news" href={usefulCaptions[0].url}>
       {usefulCaptions[0].name}
     </UsefulLink>,
   );
@@ -47,9 +42,9 @@ describe('Multiple useful links', () => {
       {usefulCaptions.map(item => {
         return (
           <UsefulLinksLi>
-            <UsefulLinkItem script={latin} service="news" href={item.url}>
+            <UsefulLink script={latin} service="news" href={item.url}>
               {item.name}
-            </UsefulLinkItem>
+            </UsefulLink>
           </UsefulLinksLi>
         );
       })}
