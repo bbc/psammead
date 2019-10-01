@@ -58,21 +58,14 @@ exports[`Navigation should render correctly 1`] = `
   margin: 0;
   position: relative;
   overflow: hidden;
+  overflow-x: scroll;
+  white-space: nowrap;
 }
 
 .c5 {
   display: inline-block;
   position: relative;
   z-index: 2;
-}
-
-.c5::after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  width: 80rem;
-  border-bottom: 0.0625rem solid #eab3b3;
-  z-index: -1;
 }
 
 .c6 {
@@ -87,6 +80,7 @@ exports[`Navigation should render correctly 1`] = `
   text-decoration: none;
   display: inline-block;
   padding: 0.75rem 1rem;
+  white-space: nowrap;
 }
 
 .c6:hover::after {
@@ -122,6 +116,7 @@ exports[`Navigation should render correctly 1`] = `
   text-decoration: none;
   display: inline-block;
   padding: 0.75rem 1rem;
+  white-space: nowrap;
 }
 
 .c9:hover::after {

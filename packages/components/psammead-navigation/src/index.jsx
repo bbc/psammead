@@ -20,9 +20,6 @@ import { getSansRegular } from '@bbc/psammead-styles/font-styles';
 const TOP_BOTTOM_SPACING = '0.75rem'; // 12px
 const CURRENT_ITEM_HOVER_BORDER = '0.3125rem'; // 5px
 
-/* White with 30% transparency over #B80000 */
-const BORDER_COLOR = '#eab3b3';
-
 /* Skip to content */
 const SKIP_LINK_COLOR = '#333';
 const SKIP_LINK_BORDER = '0.1875rem'; // 3px
@@ -74,22 +71,14 @@ const StyledUnorderedList = styled.ul`
   margin: 0;
   position: relative;
   overflow: hidden;
+  overflow-x: scroll;
+  white-space: nowrap;
 `;
 
 const StyledListItem = styled.li`
   display: inline-block;
   position: relative;
   z-index: 2;
-
-  /* Trick to display a border between the list items when it breaks into multiple lines, which takes the full width */
-  &::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    width: ${GEL_GROUP_5_SCREEN_WIDTH_MIN};
-    border-bottom: 0.0625rem solid ${BORDER_COLOR};
-    z-index: -1;
-  }
 `;
 
 const ListItemBorder = css`
@@ -109,6 +98,7 @@ const StyledLink = styled.a`
   text-decoration: none;
   display: inline-block;
   padding: ${TOP_BOTTOM_SPACING} ${GEL_SPACING_DBL};
+  white-space: nowrap;
 
   @media (max-width: ${GEL_GROUP_1_SCREEN_WIDTH_MAX}) {
     padding: ${TOP_BOTTOM_SPACING} ${GEL_SPACING};
