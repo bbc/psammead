@@ -59,12 +59,6 @@ const groups = {
   },
 };
 
-const GROUP_4_MAX_WIDTH = `45.5rem`;
-// (6.75rem * 6) + 5*16px gutters = 728 = 45.5 rem
-
-const GROUP_5_MAX_WIDTH = `46.4rem`;
-// (2.95rem * 12) + 11*16px gutters = 742.4 = 46.4 rem
-
 const mediaQuery = ({ min, max, styles }) => {
   if (min && max) {
     return `
@@ -89,23 +83,6 @@ const mediaQuery = ({ min, max, styles }) => {
   }
   return '';
 };
-
-const gelMaxWidths = css`
-  margin: 0 auto;
-  @media (min-width: ${GEL_GROUP_4_SCREEN_WIDTH_MIN}) and (max-width: ${GEL_GROUP_4_SCREEN_WIDTH_MAX}) {
-    max-width: ${GROUP_4_MAX_WIDTH};
-  }
-  @media (min-width: ${GEL_GROUP_5_SCREEN_WIDTH_MIN}) {
-    max-width: ${GROUP_5_MAX_WIDTH};
-  }
-`;
-
-const group4MaxWidth = css`
-  margin: 0 auto;
-  @media (min-width: ${GEL_GROUP_4_SCREEN_WIDTH_MIN}) {
-    max-width: ${GROUP_4_MAX_WIDTH};
-  }
-`;
 
 const gridMediaQueries = ({
   columns,
@@ -162,8 +139,6 @@ const gridFallbacks = css`
 `;
 
 const GridComponent = styled.div`
-  ${({ enableGelMaxWidths }) => enableGelMaxWidths && gelMaxWidths}
-  ${({ enableGroupFourMaxWidth }) => enableGroupFourMaxWidth && group4MaxWidth}
   ${gridFallbacks}
   @supports (display: grid) {
     ${gridMediaQueries}
@@ -207,8 +182,6 @@ Grid.propTypes = {
   }).isRequired,
   enableGelGutters: bool,
   enableGelMargins: bool,
-  enableGelMaxWidths: bool,
-  enableGroupFourMaxWidth: bool,
   startOffset: shape({
     group1: number,
     group2: number,
@@ -222,8 +195,6 @@ Grid.propTypes = {
 Grid.defaultProps = {
   enableGelGutters: false,
   enableGelMargins: false,
-  enableGelMaxWidths: false,
-  enableGroupFourMaxWidth: false,
   startOffset: {},
   item: false,
 };

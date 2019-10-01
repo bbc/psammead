@@ -11,7 +11,6 @@ describe('Grid component', () => {
       startOffset={{ group3: 1, group4: 1, group5: 5 }}
       enableGelMargins
       enableGelGutters
-      enableGelMaxWidths
     >
       <Grid item columns={{ group3: 6, group4: 6, group5: 12 }}>
         <ExampleParagraph identifier="1" />
@@ -40,12 +39,7 @@ describe('Grid component', () => {
   );
   shouldMatchSnapshot(
     'should render Grid with Grid items including nested non-Grid Figure element',
-    <Grid
-      columns={{ group3: 6, group4: 8, group5: 20 }}
-      enableGelMargins
-      enableGelGutters
-      enableGelMaxWidths
-    >
+    <Grid columns={{ group3: 6, group4: 8, group5: 20 }} enableGelMargins>
       <Grid
         item
         columns={{ group3: 6, group4: 6, group5: 12 }}

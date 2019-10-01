@@ -19,8 +19,6 @@ Psammead Grid is a component that you can use to set out column-based layouts us
 | item | boolean | no | false | `item` |
 | enableGelGutters | boolean | no | false | `enableGelGutter` |
 | enableGelMargins | boolean | no | false | `enableGelMargins` |
-| enableGelMaxWidths | boolean | no | false | `enableGelMaxWidths` |
-| enableGroupFourMaxWidth | boolean | no | false | `enableGroupFourMaxWidth` |
 
 - When should I use the `columns` prop?
   - This should always be defined.
@@ -159,12 +157,6 @@ const MyComponent = () => (
 
 Screenshot of this example with GEL Gutters and GEL Margins enabled
 ![Screenshot of this example with GEL Gutters and GEL Margins enabled](packages/components/psammead-grid/documentation/Screenshot-example-with-gelMargins-and-gelGutters.png)
-
-**Setting GEL Max Widths**
-At the page level, you may want to have the GEL Grid's fixed max widths.
-You can enable it with the prop `enableGelMaxWidths`.
-
-For some pages, we will want to constrain the page to 1008px. You can use `enableGroupFourMaxWidth` for this.
 
 ### When to use this component
 
