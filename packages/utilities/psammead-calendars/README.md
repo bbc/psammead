@@ -2,11 +2,6 @@
 
 This package provides a utility to format calendar dates provided in a `Moment` object to other non-gregorian calendars. For now Jalaali is the only calendar which is being converted, more may be added in the future.
 
-Storybook examples:
-
-![Screenshot 2019-10-01 at 11 10 52](https://user-images.githubusercontent.com/4706195/65954836-b195ca80-e43e-11e9-9a10-cf4095db95d7.png)
-![Screenshot 2019-10-01 at 11 11 03](https://user-images.githubusercontent.com/4706195/65954839-b490bb00-e43e-11e9-8e2f-cba22741aa8e.png)
-
 ## Installation
 
 ```jsx
@@ -30,7 +25,8 @@ import { CALENDAR_NAME } from "@bbc/psammead-calendars"
 ```
 import { jalaali } from "@bbc/psammead-calendars"
 
-const formattedDate = jalaali.formatDate();
+const nowMoment = moment().locale('fa');
+const formattedDate = jalaali.formatDate(nowMoment);
 ```
 To use the Jalaali formatter contains a function called `formatDate()`. This function takes a `moment` object as its argument which needs to have `ps` or `fa` set as its locale. The function then uses the `moment` with it's logic to return a string in a day, year, month format e.g. `11 دی 1397`.
 
