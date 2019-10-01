@@ -148,7 +148,7 @@ exports[`PlayButton should render audio indicator correctly 1`] = `
   <span
     class="c1"
   >
-    Play audio, "Dog barks at cat.", 2:30
+    Play audio, "Dog barks at cat."
   </span>
   <div
     aria-hidden="true"
@@ -403,7 +403,7 @@ exports[`PlayButton should render video indicator correctly 1`] = `
   <span
     class="c1"
   >
-    Play video, "Dog chases cat.", 2:30
+    Play video, "Dog chases cat."
   </span>
   <div
     aria-hidden="true"

@@ -47,20 +47,17 @@ const TimeDuration = styled.time`
   margin-top: ${GEL_SPACING};
 `;
 
-const PlayButton = ({ datetime, duration, type, service, title, onClick }) => {
-  const durationText = datetime && duration ? `, ${duration}` : '';
-  return (
-    <Button service={service} onClick={onClick}>
-      <VisuallyHiddenText>{`Play ${type}, "${title}"${durationText}`}</VisuallyHiddenText>
-      <IconWrapper datetime={datetime} duration={duration} aria-hidden="true">
-        {mediaIcons[type]}
-      </IconWrapper>
-      {datetime && duration && (
-        <TimeDuration dateTime={datetime}>{duration}</TimeDuration>
-      )}
-    </Button>
-  );
-};
+const PlayButton = ({ datetime, duration, type, service, title, onClick }) => (
+  <Button service={service} onClick={onClick}>
+    <VisuallyHiddenText>{`Play ${type}, "${title}"`}</VisuallyHiddenText>
+    <IconWrapper datetime={datetime} duration={duration} aria-hidden="true">
+      {mediaIcons[type]}
+    </IconWrapper>
+    {datetime && duration && (
+      <TimeDuration dateTime={datetime}>{duration}</TimeDuration>
+    )}
+  </Button>
+);
 
 PlayButton.propTypes = {
   datetime: string,
