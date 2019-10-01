@@ -3,7 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
-| 2.0.0 | [PR#xxx](https://github.com/bbc/psammead/pull/xxx) A11y best practice changes, remove alpha and add new required prop `title` |
+| 2.0.0 | [PR#2283](https://github.com/bbc/psammead/pull/2283) A11y best practice changes, remove alpha and add new required prop `title` |
 | 1.1.1-alpha.2 | [PR#2247](https://github.com/bbc/psammead/pull/2247) Update article embed URLs in MediaPLayer stories |
 | 1.1.1-alpha.1 | [PR#2191](https://github.com/bbc/psammead/pull/2191) Talos - Bump Dependencies |
 | 1.1.0-alpha.1 | [PR#2144](https://github.com/bbc/psammead/pull/2144) Add `skin` prop |
