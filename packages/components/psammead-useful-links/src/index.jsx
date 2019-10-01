@@ -19,6 +19,7 @@ export const UsefulLinkItem = styled.a`
   ${({ script }) => script && getPica(script)};
   ${({ service }) => getSerifMedium(service)};
   color: ${C_EBON};
+  text-decoration: none;
   &:hover,
   &:focus {
     text-decoration: underline;
@@ -61,9 +62,9 @@ export const UsefulLinksLi = ({ children, ...props }) => (
   </StyledUsefulLinksLi>
 );
 
-export const UsefulLink = ({ children, service, script }) => (
+export const UsefulLink = ({ children, service, script, url }) => (
   <UsefulLinkWrapper>
-    <UsefulLinkItem service={service} script={script}>
+    <UsefulLinkItem service={service} script={script} href={url}>
       {children}
     </UsefulLinkItem>
   </UsefulLinkWrapper>
@@ -73,6 +74,7 @@ UsefulLink.propTypes = {
   script: shape(scriptPropType).isRequired,
   service: string.isRequired,
   children: string.isRequired,
+  url: string.isRequired,
 };
 
 UsefulLinksUl.propTypes = {

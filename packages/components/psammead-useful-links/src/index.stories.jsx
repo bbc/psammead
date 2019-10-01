@@ -19,7 +19,15 @@ const usefulCaptions = [
   'Gwaninta ba ta karbi wani dan Nijeriya',
 ];
 
-const generateStory = ({ usefulItems, strapline }) =>
+const urlSources = [
+  'https://www.bbc.com/igbo/afirika-49883577',
+  'https://www.bbc.com/igbo/afirika-49872694',
+  'https://www.bbc.com/igbo/afirika-49869003',
+  'https://www.bbc.com/igbo/afirika-49883189',
+  'https://www.bbc.com/igbo/afirika-49869001',
+];
+
+const generateStory = ({ usefulItems, strapline, url }) =>
   inputProvider({
     // eslint-disable-next-line react/prop-types
     componentFunction: ({ script, service }) => {
@@ -35,15 +43,19 @@ const generateStory = ({ usefulItems, strapline }) =>
             </SectionLabel>
           )}
           {usefulItems.length === 1 ? (
-            <UsefulLink script={script} service={service}>
+            <UsefulLink script={script} service={service} url={url}>
               {usefulItems[0]}
             </UsefulLink>
           ) : (
             <UsefulLinksUl>
-              {usefulItems.map(item => {
+              {usefulItems.map((item, index) => {
                 return (
                   <UsefulLinksLi key={usefulItems.indexOf(item)}>
-                    <UsefulLinkItem service={service} sript={script}>
+                    <UsefulLinkItem
+                      service={service}
+                      sript={script}
+                      href={url[index]}
+                    >
                       {item}
                     </UsefulLinkItem>
                   </UsefulLinksLi>
@@ -63,6 +75,7 @@ storiesOf('Components|UsefulLinks', module)
     generateStory({
       usefulItems: usefulCaptions.slice(0, 1),
       strapline: false,
+      url: urlSources.slice(0, 1),
     }),
     {
       notes,
@@ -71,7 +84,11 @@ storiesOf('Components|UsefulLinks', module)
   )
   .add(
     'multiple links',
-    generateStory({ usefulItems: usefulCaptions, strapline: false }),
+    generateStory({
+      usefulItems: usefulCaptions,
+      strapline: false,
+      url: urlSources,
+    }),
     {
       notes,
       knobs: { escapeHTML: false },
@@ -79,7 +96,11 @@ storiesOf('Components|UsefulLinks', module)
   )
   .add(
     'with section label',
-    generateStory({ usefulItems: usefulCaptions, strapline: true }),
+    generateStory({
+      usefulItems: usefulCaptions,
+      strapline: true,
+      url: urlSources,
+    }),
     {
       notes,
       knobs: { escapeHTML: false },

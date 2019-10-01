@@ -21,6 +21,7 @@ npm install @bbc/psammead-useful-links
 | service | string | yes | N/A | `'news'` |
 | script | object | yes | latin | { canon: { groupA: { fontSize: '28', lineHeight: '32',}, groupB: { fontSize: '32', lineHeight: '36', }, groupD: { fontSize: '44', lineHeight: '48', }, }, trafalgar: { groupA: { fontSize: '20', lineHeight: '24', }, groupB: { fontSize: '24', lineHeight: '28', }, groupD: { fontSize: '32', lineHeight: '36', }, }, } |
 | usefulItems | array | yes | N/A | ['Mitocinmu da sauko da sautin labarai', 'Labaran BBC Hausa a text', 'Abokan huldar BBC Hausa'] |
+| url | array | yes | N/A | ['https://www.bbc.com/igbo/afirika-49883577', 'https://www.bbc.com/igbo/afirika-49872694'] |
 
 ## Usage
 
@@ -36,17 +37,17 @@ import {
 } from './index';
 
 const SingleUsefulItem = () => (
-    <UsefulLink script={latin} service="news">
+    <UsefulLink script={latin} service="news" url={url}>
         {usefulItems[0]}
     </UsefulLink>
 );
 
 const MultipleUsefulItems = () => (
     <UsefulLinksUl>
-        {usefulItems.map(item => {
+        {usefulItems.map((item, index) => {
             return (
                 <UsefulLinksLi>
-                    <UsefulLinkItem script={latin} service="news">
+                    <UsefulLinkItem script={latin} service="news" href={url[index]}>
                       {item}
                     </UsefulLinkItem>
                 </UsefulLinksLi>
