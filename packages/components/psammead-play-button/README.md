@@ -1,3 +1,7 @@
+# ⛔️ This is an alpha component ⛔️
+
+This component is currently tagged as alpha and is not suitable for production use. Following the passing of an accessibility review this component will be marked as ready for production and the alpha tag removed.
+
 # psammead-play-button - [![Known Vulnerabilities](https://snyk.io/test/github/bbc/psammead/badge.svg?targetFile=packages%2Fcomponents%2Fpsammead-play-button%2Fpackage.json)](https://snyk.io/test/github/bbc/psammead?targetFile=packages%2Fcomponents%2Fpsammead-play-button%2Fpackage.json) [![Dependency Status](https://david-dm.org/bbc/psammead.svg?path=packages/components/psammead-play-button)](https://david-dm.org/bbc/psammead?path=packages/components/psammead-play-button) [![peerDependencies Status](https://david-dm.org/bbc/psammead/peer-status.svg?path=packages/components/psammead-play-button)](https://david-dm.org/bbc/psammead?path=packages/components/psammead-play-button&type=peer) [![Storybook](https://raw.githubusercontent.com/storybooks/play-button/master/badge/badge-storybook.svg?sanitize=true)](https://bbc.github.io/psammead/?path=/story/play-button--default) [![GitHub license](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](https://github.com/bbc/psammead/blob/latest/LICENSE) [![npm version](https://img.shields.io/npm/v/@bbc/psammead-play-button.svg)](https://www.npmjs.com/package/@bbc/psammead-play-button) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/bbc/psammead/blob/latest/CONTRIBUTING.md)
 
 ## Description
