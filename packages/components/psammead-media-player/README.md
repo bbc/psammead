@@ -1,3 +1,7 @@
+# ⛔️ This is an alpha component ⛔️
+
+This component is currently tagged as alpha and is not suitable for production use. Following the passing of an accessibility review this component will be marked as ready for production and the alpha tag removed.
+
 # psammead-media-player &middot; [![Known Vulnerabilities](https://snyk.io/test/github/bbc/psammead/badge.svg?targetFile=packages%2Fcomponents%2Fpsammead-brand%2Fpackage.json)](https://snyk.io/test/github/bbc/psammead?targetFile=packages%2Fcomponents%2Fpsammead-brand%2Fpackage.json) [![Dependency Status](https://david-dm.org/bbc/psammead.svg?path=packages/components/psammead-media-player)](https://david-dm.org/bbc/psammead?path=packages/components/psammead-media-player) [![peerDependencies Status](https://david-dm.org/bbc/psammead/peer-status.svg?path=packages/components/psammead-media-player)](https://david-dm.org/bbc/psammead?path=packages/components/psammead-media-player&type=peer) [![Storybook](https://raw.githubusercontent.com/storybooks/brand/master/badge/badge-storybook.svg?sanitize=true)](https://bbc.github.io/psammead/?path=/story/brand--default) [![GitHub license](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](https://github.com/bbc/psammead/blob/latest/LICENSE) [![npm version](https://img.shields.io/npm/v/@bbc/psammead-media-player.svg)](https://www.npmjs.com/package/@bbc/psammead-media-player) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/bbc/psammead/blob/latest/CONTRIBUTING.md) 
 
 ## Description
@@ -19,13 +23,11 @@ This component to be used at any point on the page, specifically when a media pl
 | Argument  | Type                | Required | Default | Example         |
 |-----------|---------------------|----------|---------|-----------------|
 | `src` | string | Yes   | - | `http://foobar.com/embeddable_endpoint` |
-| `title` | string | Yes   | - | `Video - description of video` |
 | `showPlaceholder` | boolean | No   | `true` | `false` |
 | `placeholderSrc` | string | No   | `null` | `http://foobar.com/placeholder.png` |
 | `portrait` | boolean | No   | `false` | `true` |
 
 The `src` prop is required, as it tells the component what page it needs to embed.
-The `title` prop is required, as it is part of a11y best practices.
 The `portrait` prop is not required, and defaults to `false`. This is to support portrait video content in the future.
 The `showPlaceholder` boolean prop is also not required, and defaults to `true`.
 Assuming `showPlaceholder` is `true`, the `placeholderSrc` will be what image to display as the placeholder.
@@ -35,7 +37,6 @@ Assuming `showPlaceholder` is `true`, the `placeholderSrc` will be what image to
 | Argument  | Type                | Required | Default | Example         |
 |-----------|---------------------|----------|---------|-----------------|
 | `src` | string | Yes   | - | `http://foobar.com/embeddable_endpoint` |
-| `title` | string | Yes   | - | `Video - description of video` |
 | `portrait` | boolean | No   | `false` | `true` |
 | `placeholderSrc` | string | yes   | - | `http://foobar.com/placeholder.png` |
 
@@ -46,10 +47,9 @@ The `placeholderSrc` prop is required for AMP, as in order to have the component
 ```js
 import { CanonicalMediaPlayer } from '@bbc/psammead-media-player';
 
-const Container = ({ src, portrait, showPlaceholder, placeholderSrc, title }) => (
+const Container = ({ src, portrait, showPlaceholder, placeholderSrc }) => (
   <CanonicalMediaPlayer
     src={src}
-    title={title}
     portrait={portrait}
     placeholderSrc={placeholderSrc}
     showPlaceholder={showPlaceholder}
@@ -61,10 +61,9 @@ const Container = ({ src, portrait, showPlaceholder, placeholderSrc, title }) =>
 ```js
 import { AmpMediaPlayer } from '@bbc/psammead-media-player';
 
-const Container = ({ src, portrait, placeholderSrc, title }) => (
+const Container = ({ src, portrait, placeholderSrc }) => (
   <AmpMediaPlayer
     src={src}
-    title={title}
     portrait={portrait}
     placeholderSrc={placeholderSrc}
   />
@@ -72,7 +71,7 @@ const Container = ({ src, portrait, placeholderSrc, title }) => (
 ```
 
 ## Accessibility notes
-This component requires a `title` value for accessibilty best practices. It also should not have `scrolling="no"` added in the future as this is against a11y best practices.
+This component is still in its initial alpha stages, and requires a full and extensive accessibility review.
 
 ## Contributing
 

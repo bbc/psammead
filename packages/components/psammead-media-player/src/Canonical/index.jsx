@@ -12,10 +12,9 @@ const StyledIframe = styled.iframe`
   overflow: hidden;
 `;
 
-const Canonical = ({ src, title }) => (
+const Canonical = ({ src }) => (
   <StyledIframe
     src={src}
-    title={title}
     allow="autoplay; fullscreen"
     gesture="media"
     allowFullScreen
@@ -24,7 +23,6 @@ const Canonical = ({ src, title }) => (
 
 Canonical.propTypes = {
   src: string.isRequired,
-  title: string.isRequired,
 };
 
 export default Canonical;

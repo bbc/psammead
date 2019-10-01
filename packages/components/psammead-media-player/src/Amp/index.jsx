@@ -12,13 +12,12 @@ const AmpHead = () => (
   </Helmet>
 );
 
-const AmpMediaPlayer = ({ src, placeholderSrc, title }) => {
+const AmpMediaPlayer = ({ src, placeholderSrc }) => {
   return (
     <>
       <AmpHead />
       <amp-iframe
         sandbox="allow-scripts allow-same-origin"
-        title={title}
         layout="fill"
         frameborder="0"
         src={src}
@@ -33,7 +32,6 @@ const AmpMediaPlayer = ({ src, placeholderSrc, title }) => {
 AmpMediaPlayer.propTypes = {
   src: string.isRequired,
   placeholderSrc: string.isRequired,
-  title: string.isRequired,
 };
 
 export default AmpMediaPlayer;

@@ -25,7 +25,6 @@ export const CanonicalMediaPlayer = ({
   portrait,
   src,
   skin,
-  title,
 }) => {
   const [placeholderActive, setPlaceholderActive] = useState(showPlaceholder);
   const handlePlaceholderClick = () => setPlaceholderActive(false);
@@ -38,25 +37,19 @@ export const CanonicalMediaPlayer = ({
       {placeholderActive ? (
         <Placeholder onClick={handlePlaceholderClick} src={placeholderSrc} />
       ) : (
-        <Canonical src={src} title={title} />
+        <Canonical src={src} />
       )}
     </StyledContainer>
   );
 };
 
-export const AmpMediaPlayer = ({
-  placeholderSrc,
-  portrait,
-  src,
-  skin,
-  title,
-}) => {
+export const AmpMediaPlayer = ({ placeholderSrc, portrait, src, skin }) => {
   const StyledContainer =
     skin === 'audio' ? StyledAudioContainer : StyledVideoContainer;
 
   return (
     <StyledContainer portrait={portrait}>
-      <Amp placeholderSrc={placeholderSrc} src={src} title={title} />
+      <Amp placeholderSrc={placeholderSrc} src={src} />
     </StyledContainer>
   );
 };
@@ -66,7 +59,6 @@ CanonicalMediaPlayer.propTypes = {
   portrait: bool,
   showPlaceholder: bool,
   src: string.isRequired,
-  title: string.isRequired,
   skin: oneOf(['classic', 'audio']),
 };
 
@@ -81,7 +73,6 @@ AmpMediaPlayer.propTypes = {
   placeholderSrc: string.isRequired,
   portrait: bool,
   src: string.isRequired,
-  title: string.isRequired,
   skin: oneOf(['classic', 'audio']),
 };
 
