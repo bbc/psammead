@@ -24,6 +24,8 @@ import { CALENDAR_NAME } from "@bbc/psammead-calendars"
 ### Jalaali Usage
 ```
 import { jalaali } from "@bbc/psammead-calendars"
+
+const formattedDate = jalaali.formatDate();
 ```
 To use the Jalaali formatter contains a function called `formatDate()`. This function takes a `moment` object as its argument which needs to have `ps` or `fa` set as its locale. The function then uses the `moment` with it's logic to return a string in a day, year, month format e.g. `11 دی 1397`.
 
