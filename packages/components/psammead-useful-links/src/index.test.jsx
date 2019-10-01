@@ -1,5 +1,6 @@
 import React from 'react';
 import { shouldMatchSnapshot } from '@bbc/psammead-test-helpers';
+import { latin } from '@bbc/gel-foundations/scripts';
 import {
   UsefulLink,
   UsefulLinksLi,
@@ -8,17 +9,34 @@ import {
 } from './index';
 
 const usefulCaptions = [
-  'Mitocinmu da sauko da sautin labarai',
-  'Labaran BBC Hausa a text',
-  'Abokan huldar BBC Hausa',
-  'Timi Frank: Osinbajo ya maka mutum biyu',
-  'Gwaninta ba ta karbi wani dan Nijeriya',
+  {
+    name: 'Mitocinmu da sauko da sautin labarai',
+    url: 'https://www.bbc.com/igbo/afirika-49883577',
+  },
+  {
+    name: 'Labaran BBC Hausa a text',
+    url: 'https://www.bbc.com/igbo/afirika-49872694',
+  },
+  {
+    name: 'Abokan huldar BBC Hausa',
+    url: 'https://www.bbc.com/igbo/afirika-49869003',
+  },
+  {
+    name: 'Timi Frank: Osinbajo ya maka mutum biyu',
+    url: 'https://www.bbc.com/igbo/afirika-49883189',
+  },
+  {
+    name: 'Gwaninta ba ta karbi wani dan Nijeriya',
+    url: 'https://www.bbc.com/igbo/afirika-49869001',
+  },
 ];
 
 describe('One useful link', () => {
   shouldMatchSnapshot(
     'should render correctly',
-    <UsefulLink>{usefulCaptions[0]}</UsefulLink>,
+    <UsefulLink script={latin} service="news" url={usefulCaptions[0].url}>
+      {usefulCaptions[0].name}
+    </UsefulLink>,
   );
 });
 
@@ -29,7 +47,9 @@ describe('Multiple useful links', () => {
       {usefulCaptions.map(item => {
         return (
           <UsefulLinksLi>
-            <UsefulLinkItem>{item}</UsefulLinkItem>
+            <UsefulLinkItem script={latin} service="news" href={item.url}>
+              {item.name}
+            </UsefulLinkItem>
           </UsefulLinksLi>
         );
       })}

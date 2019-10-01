@@ -2,6 +2,11 @@
 
 exports[`Multiple useful links should render correctly 1`] = `
 .c2 {
+  font-size: 0.9375rem;
+  line-height: 1.25rem;
+  font-family: ReithSerif,Helvetica,Arial,sans-serif;
+  font-weight: 500;
+  font-style: normal;
   color: #222222;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -27,6 +32,20 @@ exports[`Multiple useful links should render correctly 1`] = `
   padding-top: 0.5rem;
 }
 
+@media (min-width:20rem) and (max-width:37.4375rem) {
+  .c2 {
+    font-size: 1rem;
+    line-height: 1.25rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .c2 {
+    font-size: 1rem;
+    line-height: 1.25rem;
+  }
+}
+
 <ul
   class="c0"
   role="list"
@@ -37,6 +56,7 @@ exports[`Multiple useful links should render correctly 1`] = `
   >
     <a
       class="c2"
+      href="https://www.bbc.com/igbo/afirika-49883577"
     >
       Mitocinmu da sauko da sautin labarai
     </a>
@@ -47,6 +67,7 @@ exports[`Multiple useful links should render correctly 1`] = `
   >
     <a
       class="c2"
+      href="https://www.bbc.com/igbo/afirika-49872694"
     >
       Labaran BBC Hausa a text
     </a>
@@ -57,6 +78,7 @@ exports[`Multiple useful links should render correctly 1`] = `
   >
     <a
       class="c2"
+      href="https://www.bbc.com/igbo/afirika-49869003"
     >
       Abokan huldar BBC Hausa
     </a>
@@ -67,6 +89,7 @@ exports[`Multiple useful links should render correctly 1`] = `
   >
     <a
       class="c2"
+      href="https://www.bbc.com/igbo/afirika-49883189"
     >
       Timi Frank: Osinbajo ya maka mutum biyu
     </a>
@@ -77,6 +100,7 @@ exports[`Multiple useful links should render correctly 1`] = `
   >
     <a
       class="c2"
+      href="https://www.bbc.com/igbo/afirika-49869001"
     >
       Gwaninta ba ta karbi wani dan Nijeriya
     </a>
@@ -86,6 +110,11 @@ exports[`Multiple useful links should render correctly 1`] = `
 
 exports[`One useful link should render correctly 1`] = `
 .c0 {
+  font-size: 0.9375rem;
+  line-height: 1.25rem;
+  font-family: ReithSerif,Helvetica,Arial,sans-serif;
+  font-weight: 500;
+  font-style: normal;
   color: #222222;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -101,8 +130,23 @@ exports[`One useful link should render correctly 1`] = `
   color: #6E6E73;
 }
 
+@media (min-width:20rem) and (max-width:37.4375rem) {
+  .c0 {
+    font-size: 1rem;
+    line-height: 1.25rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .c0 {
+    font-size: 1rem;
+    line-height: 1.25rem;
+  }
+}
+
 <a
   class="c0"
+  href="https://www.bbc.com/igbo/afirika-49883577"
 >
   Mitocinmu da sauko da sautin labarai
 </a>
