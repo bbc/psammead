@@ -11,7 +11,7 @@ const assert = { equal: (val1, val2) => expect(val1).toEqual(val2) };
 test('parse', function() {
   var tests = 'Janeiro Jan_Fevereiro Fev_Março Mar_Abril Abr_Maio Mai_Junho Jun_Julho Jul_Agosto Ago_Setembro Set_Outubro Out_Novembro Nov_Dezembro Dez'.split(
       '_'
-    ), 
+    ),
     i;
 
   function equalTest(input, mmm, i) {
