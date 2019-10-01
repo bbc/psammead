@@ -1,7 +1,7 @@
 {
   "name": "@bbc/psammead-play-button",
-  "description": "Provides a play button and media duration that overlays media asset placeholders",
   "version": "1.0.0",
+  "description": "Provides a play button, with optional duration, for playable media.",
   "main": "dist/index.js",
   "module": "esm/index.js",
   "sideEffects": false,
