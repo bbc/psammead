@@ -11,7 +11,7 @@ const assert = { equal: (val1, val2) => expect(val1).toEqual(val2) };
 test('parse', function() {
   var tests = 'Janeiro Jan_Fevereiro Fev_Março Mar_Abril Abr_Maio Mai_Junho Jun_Julho Jul_Agosto Ago_Setembro Set_Outubro Out_Novembro Nov_Dezembro Dez'.split(
       '_'
-    ),
+    ), 
     i;
 
   function equalTest(input, mmm, i) {
@@ -39,10 +39,10 @@ test('format', function() {
   var a = [
       [
         'dddd, MMMM Do YYYY, h:mm:ss a',
-        'Domingo, Fevereiro 14º 2010, 3:25:50 pm',
+        'Domingo, fevereiro 14º 2010, 3:25:50 pm',
       ],
       ['ddd, hA', 'Dom, 3PM'],
-      ['M Mo MM MMMM MMM', '2 2º 02 Fevereiro Fev'],
+      ['M Mo MM MMMM MMM', '2 2º 02 fevereiro Fev'],
       ['YYYY YY', '2010 10'],
       ['D Do DD', '14 14º 14'],
       ['d do dddd ddd', '0 0º Domingo Dom'],
@@ -56,9 +56,9 @@ test('format', function() {
       ['[the] DDDo [day of the year]', 'the 45º day of the year'],
       ['LTS', '15:25:50'],
       ['L', '14/02/2010'],
-      ['LL', '14 Fevereiro 2010'],
-      ['LLL', '14 Fevereiro 2010 às 15:25'],
-      ['LLLL', 'Domingo, 14 Fevereiro 2010 às 15:25'],
+      ['LL', '14 fevereiro 2010'],
+      ['LLL', '14 fevereiro 2010 às 15:25'],
+      ['LLLL', 'Domingo, 14 fevereiro 2010 às 15:25'],
       ['l', '14/2/2010'],
       ['ll', '14 Fev 2010'],
       ['lll', '14 Fev 2010 às 15:25'],
@@ -109,7 +109,7 @@ test('format ordinal', function() {
 });
 
 test('format month', function() {
-  var expected = 'Janeiro Jan_Fevereiro Fev_Março Mar_Abril Abr_Maio Mai_Junho Jun_Julho Jul_Agosto Ago_Setembro Set_Outubro Out_Novembro Nov_Dezembro Dez'.split(
+  var expected = 'janeiro Jan_fevereiro Fev_março Mar_abril Abr_maio Mai_junho Jun_julho Jul_agosto Ago_setembro Set_outubro Out_novembro Nov_dezembro Dez'.split(
       '_'
     ),
     i;
