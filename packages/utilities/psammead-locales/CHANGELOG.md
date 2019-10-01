@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 | ------- | ----------- |
+| 2.22.0 | [PR#2290](https://github.com/bbc/psammead/pull/2290) Add `en-gb` (English) locale. |
 | 2.21.0 | [PR#2227](https://github.com/bbc/psammead/pull/2227) Add `bn` (Bengali), `sw` (Swahili) and `ur` (Urdu) locales. Update `gu` (Gujarati) and`hi` (Hindi) locales |
 | 2.20.0 | [PR#2232](https://github.com/bbc/psammead/pull/2232) Add `az` (Azeri) locale |
 | 2.19.0 | [PR#2210](https://github.com/bbc/psammead/pull/2210) Amend relative time translations for `ps` (Pashto) locale |
