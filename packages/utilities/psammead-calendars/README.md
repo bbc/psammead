@@ -2,6 +2,11 @@
 
 This package provides a utility to format calendar dates provided in a `Moment` object to other non-gregorian calendars. For now Jalaali is the only calendar which is being converted, more may be added in the future.
 
+Storybook examples:
+
+![Screenshot 2019-10-01 at 11 10 52](https://user-images.githubusercontent.com/4706195/65954836-b195ca80-e43e-11e9-9a10-cf4095db95d7.png)
+![Screenshot 2019-10-01 at 11 11 03](https://user-images.githubusercontent.com/4706195/65954839-b490bb00-e43e-11e9-8e2f-cba22741aa8e.png)
+
 ## Installation
 
 ```jsx
