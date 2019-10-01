@@ -7,7 +7,7 @@ const getChangelogHead = require('../getChangelogHead');
 const getPublishedPackages = require('./getPublishedPackages');
 const getUpdates = require('./getUpdates');
 const updatePackageLock = require('./updatePackageLock');
-const updatePackageJson = require('./updatePackageLock');
+const updatePackageJson = require('./updatePackageJson');
 
 const path = 'package.json';
 const repoName = 'simorgh';
