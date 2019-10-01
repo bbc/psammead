@@ -8,7 +8,6 @@ describe('Media Player: Amp', () => {
     <Amp
       placeholderSrc="https://foo.bar/placeholder.png"
       src="https://foo.bar/iframe"
-      title="An iframe"
     />,
   );
 });
