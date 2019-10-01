@@ -41,7 +41,7 @@ describe('Multiple useful links', () => {
     <UsefulLinksUl>
       {usefulCaptions.map(item => {
         return (
-          <UsefulLinksLi>
+          <UsefulLinksLi key={usefulCaptions.indexOf(item)}>
             <UsefulLink script={latin} service="news" href={item.url}>
               {item.name}
             </UsefulLink>
