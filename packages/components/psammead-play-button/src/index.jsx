@@ -9,6 +9,8 @@ import { mediaIcons } from '@bbc/psammead-assets/svgs';
 import VisuallyHiddenText from '@bbc/psammead-visually-hidden-text';
 
 const GEL_SPACING_DEC = '5rem';
+const BGC_TRANSITION_DURATION = '300ms';
+
 const Button = styled.button`
   background-color: ${C_EBON};
   border: none;
@@ -19,13 +21,13 @@ const Button = styled.button`
   ${GEL_MINION};
   height: ${GEL_SPACING_DEC};
   padding: 0;
-  transition: background-color 300ms;
+  transition: background-color ${BGC_TRANSITION_DURATION};
   width: ${GEL_SPACING_DEC};
 
   &:hover,
   &:focus {
     background-color: ${C_POSTBOX};
-    transition: background-color 300ms;
+    transition: background-color ${BGC_TRANSITION_DURATION};
   }
 `;
 
