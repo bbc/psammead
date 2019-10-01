@@ -8,6 +8,7 @@ import { getSansBold } from '@bbc/psammead-styles/font-styles';
 import { mediaIcons } from '@bbc/psammead-assets/svgs';
 import VisuallyHiddenText from '@bbc/psammead-visually-hidden-text';
 
+const GEL_SPACING_DEC = '5rem';
 const Button = styled.button`
   background-color: ${C_EBON};
   border: none;
@@ -16,10 +17,10 @@ const Button = styled.button`
   display: block;
   ${({ service }) => getSansBold(service)}
   ${GEL_MINION};
-  height: 80px;
+  height: ${GEL_SPACING_DEC};
   padding: 0;
   transition: background-color 300ms;
-  width: 80px;
+  width: ${GEL_SPACING_DEC};
 
   &:hover,
   &:focus {
