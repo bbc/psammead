@@ -29,7 +29,7 @@ storiesOf('Components|Media Player', module).add('Audio Skin', () => (
 ));
 
 storiesOf('Components|Media Player', module)
-  .add(ampDecorator)
+  .addDecorator(ampDecorator)
   .add('Audio Skin AMP', () => (
     <AmpMediaPlayer
       isAmp
