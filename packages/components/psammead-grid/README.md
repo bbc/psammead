@@ -3,7 +3,7 @@
 
 ## Description
 
-Psammead Grid is a component that you can use to set out column-based layouts using CSS Grid. It is set up to follow the standard [GEL groups for breakpoints](https://www.bbc.co.uk/gel/guidelines/grid#grid-sizes) and you can toggle on the GEL margins, gutters and fixed widths, in accordance with the GEL grid guidelines if you are using it for page layouts. 
+Psammead Grid is a component that you can use to set out column-based layouts using CSS Grid. It is set up to follow the standard [GEL groups for breakpoints](https://www.bbc.co.uk/gel/guidelines/grid#grid-sizes) and you can toggle on the GEL margins, gutters and fixed widths, in accordance with the GEL grid guidelines if you are using it for page layouts.
 
 ## Installation
 
@@ -32,16 +32,20 @@ Psammead Grid is a component that you can use to set out column-based layouts us
 
 ```jsx
 <Grid columns={{ group5: 6 }}>
-  <Grid item columns={{ group5: 1 }}>This spans 1 out of 6 columns</Grid>
-  <Grid item columns={{ group5: 5 }}>This spans 5 out of 6 columns</Grid>
+  <Grid item columns={{ group5: 1 }}>
+    This spans 1 out of 6 columns
+  </Grid>
+  <Grid item columns={{ group5: 5 }}>
+    This spans 5 out of 6 columns
+  </Grid>
 </Grid>
 ```
 
 - When should I use the `startOffset` prop?
-  - `startOffset` is an object structured just like the `columns` prop. You can set it on a `<Grid item>` element to start it at a column other than the first one. 
+  - `startOffset` is an object structured just like the `columns` prop. You can set it on a `<Grid item>` element to start it at a column other than the first one.
   - If you don't pass it in, the offset value defaults to 1, the start of the grid.
 - Why is there no vertical spacing on the grid?
-  - The Grid implementation only has gutters/margins for columns, [according to the GEL specification](https://www.bbc.co.uk/gel/guidelines/grid#grid-sizes).  This is to allow flexibility for a variety of spacing. To add vertical spacing, you should add padding/margin/top/bottom to the contents.
+  - The Grid implementation only has gutters/margins for columns, [according to the GEL specification](https://www.bbc.co.uk/gel/guidelines/grid#grid-sizes). This is to allow flexibility for a variety of spacing. To add vertical spacing, you should add padding/margin/top/bottom to the contents.
 
 ## Usage
 
@@ -53,7 +57,7 @@ When we refer to `group3` in this component, we're referring to the breakpoint w
 
 Here is an example of a `<Grid>` that has 8 columns for `group4` (from 1008px to 1279px). It has two child `<Grid item>` elements, one which spans 6/8 columns and one which spans 2/8 columns within this breakpoint.
 
-In this example groups 1, 2, 3, & 5 are omitted from the `columns` prop - so at those breakpoints items fill the whole width of the page. 
+In this example groups 1, 2, 3, & 5 are omitted from the `columns` prop - so at those breakpoints items fill the whole width of the page.
 
 ```jsx
 import Grid from '@bbc/psammead-grid';
@@ -67,15 +71,16 @@ const MyComponent = () => (
       <p>Item 2 - Paragraph that spans 2 out of 8 columns through group4</p>
     </Grid>
     <Grid item columns={{ group4: 2 }}>
-       <p>Item 3 - Paragraph that spans 2 out of 8 columns through group4</p>
+      <p>Item 3 - Paragraph that spans 2 out of 8 columns through group4</p>
     </Grid>
     <Grid item columns={{ group4: 2 }}>
-       <p>Item 4 - Paragraph that spans 2 out of 8 columns through group4</p>
+      <p>Item 4 - Paragraph that spans 2 out of 8 columns through group4</p>
     </Grid>
   </Grid>
 );
 ```
-Image of this example when viewed at within `group4` (from 1008px to 1279px). When you look at this example at any other breakpoint, each of the four items fill up the full width of the row. 
+
+Image of this example when viewed at within `group4` (from 1008px to 1279px). When you look at this example at any other breakpoint, each of the four items fill up the full width of the row.
 ![8 column grid with items 6 2 2 2 with labels](packages/components/psammead-grid/documentation/8-column-grid-with-items-6-2-2-2-with-labels.png)
 
 #### <a name="multiple-groups">Setting values for multiple groups</a>
@@ -86,35 +91,40 @@ import Grid from '@bbc/psammead-grid';
 const MyComponent = () => (
   <Grid columns={{ group3: 6, group4: 8 }}>
     <Grid item columns={{ group3: 6, group4: 6 }}>
-      <p>Paragraph - for group 3 spans 6/6 columns, for group 4 spans 6/8 columns</p>
+      <p>
+        Paragraph - for group 3 spans 6/6 columns, for group 4 spans 6/8 columns
+      </p>
     </Grid>
     <Grid item columns={{ group3: 6, group4: 2 }}>
-      <p>Paragraph - for group 3 spans 6/6 columns, for group 4 spans 2/8 columns</p>
+      <p>
+        Paragraph - for group 3 spans 6/6 columns, for group 4 spans 2/8 columns
+      </p>
     </Grid>
   </Grid>
 );
 ```
+
 Screenshot of this example without GEL Gutters and GEL Margins
 ![Screenshot of this example without GEL Gutters and GEL Margins](packages/components/psammead-grid/documentation/screenshot-example-without-gelMargins-and-gelGutters.png)
 
 #### <a name="gutters-margins">Setting standard GEL gutters and GEL Margins</a>
 
-Using `enableGelGutters` and `enableGelMargins` on the `Grid` element. Note: these should *not* be added to a `<Grid item>` element!
+Using `enableGelGutters` and `enableGelMargins` on the `Grid` element. Note: these should _not_ be added to a `<Grid item>` element!
 
 ```jsx
 import Grid from '@bbc/psammead-grid';
 
 const MyComponent = () => (
-  <Grid
-    enableGelGutters
-    enableGelMargins
-  	columns={{ group3: 6, group4: 8 }}
-  >
+  <Grid enableGelGutters enableGelMargins columns={{ group3: 6, group4: 8 }}>
     <Grid item columns={{ group3: 6, group4: 6 }}>
-      <p>Paragraph - for group 3 spans 6/6 columns, for group 4 spans 6/8 columns</p>
+      <p>
+        Paragraph - for group 3 spans 6/6 columns, for group 4 spans 6/8 columns
+      </p>
     </Grid>
     <Grid item columns={{ group3: 6, group4: 2 }}>
-      <p>Paragraph - for group 3 spans 6/6 columns, for group 4 spans 2/8 columns</p>
+      <p>
+        Paragraph - for group 3 spans 6/6 columns, for group 4 spans 2/8 columns
+      </p>
     </Grid>
   </Grid>
 );
@@ -129,8 +139,7 @@ import Grid from '@bbc/psammead-grid';
 
 const MyComponent = () => (
   <Grid columns={{ group2: 6, group3: 6 }}>
-    <Grid columns={{ group2: 6, group3: 6 }}
-    >
+    <Grid columns={{ group2: 6, group3: 6 }}>
       <Grid item columns={{ group2: 6, group3: 3 }}>
         <ExampleImage />
       </Grid>
@@ -147,14 +156,15 @@ const MyComponent = () => (
   </Grid>
 );
 ```
+
 Screenshot of this example with GEL Gutters and GEL Margins enabled
 ![Screenshot of this example with GEL Gutters and GEL Margins enabled](packages/components/psammead-grid/documentation/Screenshot-example-with-gelMargins-and-gelGutters.png)
 
-** Setting GEL Max Widths**
-At the page level, you may want to have the GEL Grid's fixed max widths. 
-You can enable it with the prop `enableGelMaxWidths`. 
+**Setting GEL Max Widths**
+At the page level, you may want to have the GEL Grid's fixed max widths.
+You can enable it with the prop `enableGelMaxWidths`.
 
-For some pages, we will want to constrain the page to 1008px. You can use `enableGroupFourMaxWidth` for this. 
+For some pages, we will want to constrain the page to 1008px. You can use `enableGroupFourMaxWidth` for this.
 
 ### When to use this component
 
@@ -164,16 +174,16 @@ This `Grid` component can be used for page-level layouts as well as for layouts 
 
 - When should I use the `item` prop?
   - The `item` prop should be used on a child Grid element, that is a direct child of a `<Grid>`. Using the `columns` prop's values you can choose how many columns to span at each breakpoint.
-  - It can and should be used whenever you're defining a new grid item - something that you want to span a set number of columns at a breakpoint. 
+  - It can and should be used whenever you're defining a new grid item - something that you want to span a set number of columns at a breakpoint.
 - When should I use the `columns` prop?
   - This should always be defined.
   - For a `<Grid>` element, it's the number of columns the grid has.
   - For a `<Grid item>` element, it's the number of columns it should span.
 - When should I use the `startOffset` prop?
-  - `startOffset` is an object just like the `columns` prop. You can set it on a Grid child element to start it at a column other than the first one. 
+  - `startOffset` is an object just like the `columns` prop. You can set it on a Grid child element to start it at a column other than the first one.
   - If you don't pass it in, the value defaults to 1, the start of the grid.
 - Why is there no vertical spacing on the grid?
-  - The Grid implementation only has gutters/margins for columns, [according to the GEL specification](https://www.bbc.co.uk/gel/guidelines/grid#grid-sizes).  This is to allow flexibility for a variety of spacing. To add vertical spacing, you should add padding/margin/top/bottom to the contents.
+  - The Grid implementation only has gutters/margins for columns, [according to the GEL specification](https://www.bbc.co.uk/gel/guidelines/grid#grid-sizes). This is to allow flexibility for a variety of spacing. To add vertical spacing, you should add padding/margin/top/bottom to the contents.
 
 <!-- ### When not to use this component -->
 
