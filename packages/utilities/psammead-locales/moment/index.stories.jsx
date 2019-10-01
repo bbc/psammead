@@ -14,6 +14,7 @@ import './am';
 import './ar';
 import './az';
 import './bn';
+import './en-gb';
 import './es';
 import './fa';
 import './gu';
@@ -61,11 +62,13 @@ const locales = [
   { name: 'Marathi', locale: 'mr' },
   { name: 'Mundo', locale: 'es' },
   { name: 'Nepali', locale: 'ne' },
+  { name: 'News', locale: 'en-GB' },
   { name: 'Pashto', locale: 'ps', dir: 'rtl' },
   { name: 'Persian', locale: 'fa', dir: 'rtl' },
   { name: 'Pidgin', locale: 'pcm' },
   { name: 'Punjabi', locale: 'pa-in' },
   { name: 'Russian', locale: 'ru' },
+  { name: 'Scotland', locale: 'en-GB' },
   { name: 'Serbian', locale: 'sr' },
   { name: 'Serbian Cyrillic', locale: 'sr-cyrl' },
   { name: 'Sinhala', locale: 'si' },
