@@ -23,11 +23,13 @@ This component to be used at any point on the page, specifically when a media pl
 | Argument  | Type                | Required | Default | Example         |
 |-----------|---------------------|----------|---------|-----------------|
 | `src` | string | Yes   | - | `http://foobar.com/embeddable_endpoint` |
+| `title` | string | Yes   | - | `Video - description of video` |
 | `showPlaceholder` | boolean | No   | `true` | `false` |
 | `placeholderSrc` | string | No   | `null` | `http://foobar.com/placeholder.png` |
 | `portrait` | boolean | No   | `false` | `true` |
 
 The `src` prop is required, as it tells the component what page it needs to embed.
+The `title` prop is required, as it is part of a11y best practices.
 The `portrait` prop is not required, and defaults to `false`. This is to support portrait video content in the future.
 The `showPlaceholder` boolean prop is also not required, and defaults to `true`.
 Assuming `showPlaceholder` is `true`, the `placeholderSrc` will be what image to display as the placeholder.
@@ -37,6 +39,7 @@ Assuming `showPlaceholder` is `true`, the `placeholderSrc` will be what image to
 | Argument  | Type                | Required | Default | Example         |
 |-----------|---------------------|----------|---------|-----------------|
 | `src` | string | Yes   | - | `http://foobar.com/embeddable_endpoint` |
+| `title` | string | Yes   | - | `Video - description of video` |
 | `portrait` | boolean | No   | `false` | `true` |
 | `placeholderSrc` | string | yes   | - | `http://foobar.com/placeholder.png` |
 
@@ -47,9 +50,10 @@ The `placeholderSrc` prop is required for AMP, as in order to have the component
 ```js
 import { CanonicalMediaPlayer } from '@bbc/psammead-media-player';
 
-const Container = ({ src, portrait, showPlaceholder, placeholderSrc }) => (
+const Container = ({ src, portrait, showPlaceholder, placeholderSrc, title }) => (
   <CanonicalMediaPlayer
     src={src}
+    title={title}
     portrait={portrait}
     placeholderSrc={placeholderSrc}
     showPlaceholder={showPlaceholder}
@@ -61,9 +65,10 @@ const Container = ({ src, portrait, showPlaceholder, placeholderSrc }) => (
 ```js
 import { AmpMediaPlayer } from '@bbc/psammead-media-player';
 
-const Container = ({ src, portrait, placeholderSrc }) => (
+const Container = ({ src, portrait, placeholderSrc, title }) => (
   <AmpMediaPlayer
     src={src}
+    title={title}
     portrait={portrait}
     placeholderSrc={placeholderSrc}
   />
