@@ -2,7 +2,7 @@
 
 ## Description
 
-The `PlayButton` component provides a 'play' or 'audio' icon as well as an optional duration timestamp depending on the `type` prop. The component by default renders the 'play' icon. This component has options for both providing and not providing a duration. If one isn't provided, it will simply render the play, audio or camera icon.
+The `PlayButton` component renders a button with a 'video' or 'audio' icon and optional duration timestamp. Which icon is displayed is defined by the value of the `type` prop. The component displays a 'video' icon by default. This component has options for displaying a duration timestamp, which if not provided will render gracefully without. When clicked, the function passed to `onClick` will be called.
 
 ## Installation
 
@@ -11,12 +11,14 @@ The `PlayButton` component provides a 'play' or 'audio' icon as well as an optio
 ## Props
 
 <!-- prettier-ignore -->
-| Argument   | Type    | Required | Default | Example   |
-| ---------- | ------- | -------- | ------- | --------- |
-| duration   | string  | No       | Null    | '2:15'    |
-| datetime   | string  | No       | Null    | 'PT2M15S' |
-| type       | string  | No       | 'video' | 'audio'   |
-| service    | string  | Yes      | N/A     | `'news'`  |
+| Argument   | Type      | Required | Default   | Example     |
+| ---------- | --------- | -------- | --------- | ----------- |
+| service    | string    | Yes      | N/A       | `'news'`    |
+| title      | string    | Yes      | N/A       | `'Foo.'`    |
+| onClick    | function  | Yes      | N/A       | `() => {}`  |
+| duration   | string    | No       | `null`    | `'2:30'`    |
+| datetime   | string    | No       | `null`    | `'PT2M30S'` |
+| type       | string    | No       | `'video'` | `'audio'`   |
 
 ### Supported `type`s
 
@@ -26,34 +28,30 @@ The `PlayButton` component provides a 'play' or 'audio' icon as well as an optio
 
 ## Usage
 
-The typical use-case of this component is on top of images within promos for articles that contains a video asset at the top of the page. It indicates to the user that the link is to a video and how long the video is in duration.
-
-For top story promos, we should pass the `topStory` prop to the `Media Indicator` to keep the same padding, otherwise this will be modified under 400px.
-
-Top story promos can also have related stories links called `Index Alsos`. When an Index Also item is a video, audio or photogallery, an icon should be displayed with the content using the `PlayButton` component passing the `indexAlsos` prop.
+A typical use case for this component would be to indicate to a user that a media asset placeholder contains playable media, which is either 'video' or 'audio' and, if applicable, its duration. A function triggering playback would be passed to the button's `onClick` prop.
 
 ```jsx
 import PlayButton from '@bbc/psammead-play-button';
 
 <PlayButton
-  duration="2:15"
-  datetime="PT2M15S"
-  type="audio"
   service="news"
+  title="Dog barks at cat."
+  onClick={handleClick}
+  duration="2:30"
+  datetime="PT2M30S"
+  type="audio"
 />;
 ```
 
 ### When to use this component
 
-The `PlayButton` component is designed to be used on top of an image which is linking to a page containing a video, audio or photo item based on that image. It tells the user to expect video, audio or photographic content on the page as well as how long it is in duration if applicable.
-
-Also, it is used in Top story promos within `Index Alsos` media links.
+The `PlayButton` component is designed to be used in a media asset placeholder containing playable media. It indicates to the user to expect 'video' or 'audio' content, as well as its duration, if applicable.
 
 <!-- ### When not to use this component -->
 
 ### Accessibility notes
 
-This component is marked as `aria-hidden="true"`, which means that it should be ignored by screenreaders. It is expected that media promos provide detailed information about their content such as duration in visually hidden text in the promo headline.
+This component is expected to provide information about the playable media to screenreaders and other assistive technology. It is required that the title of the media is passed to the `title` prop. This is used to build a human-readable string, which is rendered in a [VisuallyHiddenText](https://github.com/bbc/psammead/tree/latest/packages/components/psammead-visually-hidden-text) element. The icon is marked as `aria-hidden="true"`, which means it should be ignored by screenreaders.
 
 <!-- ## Roadmap -->
 
