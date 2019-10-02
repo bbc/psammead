@@ -27,3 +27,14 @@ storiesOf('Components|Media Player', module).add('Audio Skin', () => (
     skin="audio"
   />
 ));
+
+storiesOf('Components|Media Player', module)
+  .addDecorator(ampDecorator)
+  .add('Audio Skin AMP', () => (
+    <AmpMediaPlayer
+      isAmp
+      src="https://www.test.bbc.com/ws/av-embeds/media/bbc_korean_radio/liveradio/amp"
+      placeholderSrc="https://news.files.bbci.co.uk/include/articles/public/images/audio-player-placeholder.png"
+      skin="audio"
+    />
+  ));
