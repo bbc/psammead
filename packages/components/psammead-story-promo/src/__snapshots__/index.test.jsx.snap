@@ -17,6 +17,11 @@ exports[`StoryPromo - Top Story should render correctly 1`] = `
   position: relative;
 }
 
+.c3 {
+  display: inline-block;
+  vertical-align: top;
+}
+
 .c4 {
   font-size: 1.25rem;
   line-height: 1.5rem;
@@ -37,11 +42,6 @@ exports[`StoryPromo - Top Story should render correctly 1`] = `
   color: #3F3F42;
   margin: 0;
   padding-bottom: 0.5rem;
-}
-
-.c3 {
-  display: inline-block;
-  vertical-align: top;
 }
 
 .c5 {
@@ -102,6 +102,33 @@ exports[`StoryPromo - Top Story should render correctly 1`] = `
   }
 }
 
+@media (min-width:37.5rem) {
+  .c3 {
+    width: 50%;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .c3 {
+    padding: 0 1rem;
+  }
+}
+
+@media (min-width:80rem) {
+  .c3 {
+    width: 66.67%;
+  }
+}
+
+@supports (grid-template-columns:fit-content(200px)) {
+  .c3 {
+    display: block;
+    width: initial;
+    padding: initial;
+    grid-column: 1 / span 6;
+  }
+}
+
 @media (min-width:20rem) and (max-width:37.4375rem) {
   .c4 {
     font-size: 1.375rem;
@@ -141,33 +168,6 @@ exports[`StoryPromo - Top Story should render correctly 1`] = `
   .c6 {
     display: none;
     visibility: hidden;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c3 {
-    width: 50%;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c3 {
-    padding: 0 1rem;
-  }
-}
-
-@media (min-width:80rem) {
-  .c3 {
-    width: 66.67%;
-  }
-}
-
-@supports (grid-template-columns:fit-content(200px)) {
-  .c3 {
-    display: block;
-    width: initial;
-    padding: initial;
-    grid-column: 1 / span 6;
   }
 }
 
@@ -272,6 +272,11 @@ exports[`StoryPromo - Top Story should render with Media Indicator correctly 1`]
   bottom: 0;
 }
 
+.c8 {
+  display: inline-block;
+  vertical-align: top;
+}
+
 .c9 {
   font-size: 1.25rem;
   line-height: 1.5rem;
@@ -292,11 +297,6 @@ exports[`StoryPromo - Top Story should render with Media Indicator correctly 1`]
   color: #3F3F42;
   margin: 0;
   padding-bottom: 0.5rem;
-}
-
-.c8 {
-  display: inline-block;
-  vertical-align: top;
 }
 
 .c10 {
@@ -364,6 +364,33 @@ exports[`StoryPromo - Top Story should render with Media Indicator correctly 1`]
   }
 }
 
+@media (min-width:37.5rem) {
+  .c8 {
+    width: 50%;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .c8 {
+    padding: 0 1rem;
+  }
+}
+
+@media (min-width:80rem) {
+  .c8 {
+    width: 66.67%;
+  }
+}
+
+@supports (grid-template-columns:fit-content(200px)) {
+  .c8 {
+    display: block;
+    width: initial;
+    padding: initial;
+    grid-column: 1 / span 6;
+  }
+}
+
 @media (min-width:20rem) and (max-width:37.4375rem) {
   .c9 {
     font-size: 1.375rem;
@@ -403,33 +430,6 @@ exports[`StoryPromo - Top Story should render with Media Indicator correctly 1`]
   .c11 {
     display: none;
     visibility: hidden;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c8 {
-    width: 50%;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c8 {
-    padding: 0 1rem;
-  }
-}
-
-@media (min-width:80rem) {
-  .c8 {
-    width: 66.67%;
-  }
-}
-
-@supports (grid-template-columns:fit-content(200px)) {
-  .c8 {
-    display: block;
-    width: initial;
-    padding: initial;
-    grid-column: 1 / span 6;
   }
 }
 
@@ -545,6 +545,11 @@ exports[`StoryPromo - Top Story should render with multiple Index Alsos correctl
   position: relative;
 }
 
+.c3 {
+  display: inline-block;
+  vertical-align: top;
+}
+
 .c4 {
   font-size: 1.25rem;
   line-height: 1.5rem;
@@ -565,11 +570,6 @@ exports[`StoryPromo - Top Story should render with multiple Index Alsos correctl
   color: #3F3F42;
   margin: 0;
   padding-bottom: 0.5rem;
-}
-
-.c3 {
-  display: inline-block;
-  vertical-align: top;
 }
 
 .c5 {
@@ -677,6 +677,33 @@ exports[`StoryPromo - Top Story should render with multiple Index Alsos correctl
   }
 }
 
+@media (min-width:37.5rem) {
+  .c3 {
+    width: 50%;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .c3 {
+    padding: 0 1rem;
+  }
+}
+
+@media (min-width:80rem) {
+  .c3 {
+    width: 66.67%;
+  }
+}
+
+@supports (grid-template-columns:fit-content(200px)) {
+  .c3 {
+    display: block;
+    width: initial;
+    padding: initial;
+    grid-column: 1 / span 6;
+  }
+}
+
 @media (min-width:20rem) and (max-width:37.4375rem) {
   .c4 {
     font-size: 1.375rem;
@@ -716,33 +743,6 @@ exports[`StoryPromo - Top Story should render with multiple Index Alsos correctl
   .c6 {
     display: none;
     visibility: hidden;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c3 {
-    width: 50%;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c3 {
-    padding: 0 1rem;
-  }
-}
-
-@media (min-width:80rem) {
-  .c3 {
-    width: 66.67%;
-  }
-}
-
-@supports (grid-template-columns:fit-content(200px)) {
-  .c3 {
-    display: block;
-    width: initial;
-    padding: initial;
-    grid-column: 1 / span 6;
   }
 }
 
@@ -919,6 +919,11 @@ exports[`StoryPromo - Top Story should render with one Index Also correctly 1`] 
   position: relative;
 }
 
+.c3 {
+  display: inline-block;
+  vertical-align: top;
+}
+
 .c4 {
   font-size: 1.25rem;
   line-height: 1.5rem;
@@ -939,11 +944,6 @@ exports[`StoryPromo - Top Story should render with one Index Also correctly 1`] 
   color: #3F3F42;
   margin: 0;
   padding-bottom: 0.5rem;
-}
-
-.c3 {
-  display: inline-block;
-  vertical-align: top;
 }
 
 .c5 {
@@ -1045,6 +1045,33 @@ exports[`StoryPromo - Top Story should render with one Index Also correctly 1`] 
   }
 }
 
+@media (min-width:37.5rem) {
+  .c3 {
+    width: 50%;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .c3 {
+    padding: 0 1rem;
+  }
+}
+
+@media (min-width:80rem) {
+  .c3 {
+    width: 66.67%;
+  }
+}
+
+@supports (grid-template-columns:fit-content(200px)) {
+  .c3 {
+    display: block;
+    width: initial;
+    padding: initial;
+    grid-column: 1 / span 6;
+  }
+}
+
 @media (min-width:20rem) and (max-width:37.4375rem) {
   .c4 {
     font-size: 1.375rem;
@@ -1084,33 +1111,6 @@ exports[`StoryPromo - Top Story should render with one Index Also correctly 1`] 
   .c6 {
     display: none;
     visibility: hidden;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c3 {
-    width: 50%;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c3 {
-    padding: 0 1rem;
-  }
-}
-
-@media (min-width:80rem) {
-  .c3 {
-    width: 66.67%;
-  }
-}
-
-@supports (grid-template-columns:fit-content(200px)) {
-  .c3 {
-    display: block;
-    width: initial;
-    padding: initial;
-    grid-column: 1 / span 6;
   }
 }
 
@@ -1252,6 +1252,13 @@ exports[`StoryPromo should render Live promo correctly 1`] = `
   position: relative;
 }
 
+.c3 {
+  display: inline-block;
+  vertical-align: top;
+  width: 66.67%;
+  padding: 0 0.5rem;
+}
+
 .c4 {
   font-size: 0.9375rem;
   line-height: 1.25rem;
@@ -1272,13 +1279,6 @@ exports[`StoryPromo should render Live promo correctly 1`] = `
   color: #3F3F42;
   margin: 0;
   padding-bottom: 0.5rem;
-}
-
-.c3 {
-  display: inline-block;
-  vertical-align: top;
-  width: 66.67%;
-  padding: 0 0.5rem;
 }
 
 .c5 {
@@ -1341,6 +1341,33 @@ exports[`StoryPromo should render Live promo correctly 1`] = `
   }
 }
 
+@media (min-width:63rem) {
+  .c3 {
+    padding-top: 0.5rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .c3 {
+    padding: 0 1rem;
+  }
+}
+
+@media (min-width:80rem) {
+  .c3 {
+    width: 66.67%;
+  }
+}
+
+@supports (grid-template-columns:fit-content(200px)) {
+  .c3 {
+    display: block;
+    width: initial;
+    padding: initial;
+    grid-column: 3 / span 4;
+  }
+}
+
 @media (min-width:20rem) and (max-width:37.4375rem) {
   .c4 {
     font-size: 1rem;
@@ -1380,27 +1407,6 @@ exports[`StoryPromo should render Live promo correctly 1`] = `
   .c8 {
     display: none;
     visibility: hidden;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c3 {
-    padding: 0 1rem;
-  }
-}
-
-@media (min-width:80rem) {
-  .c3 {
-    width: 66.67%;
-  }
-}
-
-@supports (grid-template-columns:fit-content(200px)) {
-  .c3 {
-    display: block;
-    width: initial;
-    padding: initial;
-    grid-column: 3 / span 4;
   }
 }
 
@@ -1477,6 +1483,13 @@ exports[`StoryPromo should render correctly 1`] = `
   position: relative;
 }
 
+.c3 {
+  display: inline-block;
+  vertical-align: top;
+  width: 66.67%;
+  padding: 0 0.5rem;
+}
+
 .c4 {
   font-size: 0.9375rem;
   line-height: 1.25rem;
@@ -1497,13 +1510,6 @@ exports[`StoryPromo should render correctly 1`] = `
   color: #3F3F42;
   margin: 0;
   padding-bottom: 0.5rem;
-}
-
-.c3 {
-  display: inline-block;
-  vertical-align: top;
-  width: 66.67%;
-  padding: 0 0.5rem;
 }
 
 .c5 {
@@ -1557,6 +1563,33 @@ exports[`StoryPromo should render correctly 1`] = `
   }
 }
 
+@media (min-width:63rem) {
+  .c3 {
+    padding-top: 0.5rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .c3 {
+    padding: 0 1rem;
+  }
+}
+
+@media (min-width:80rem) {
+  .c3 {
+    width: 66.67%;
+  }
+}
+
+@supports (grid-template-columns:fit-content(200px)) {
+  .c3 {
+    display: block;
+    width: initial;
+    padding: initial;
+    grid-column: 3 / span 4;
+  }
+}
+
 @media (min-width:20rem) and (max-width:37.4375rem) {
   .c4 {
     font-size: 1rem;
@@ -1596,27 +1629,6 @@ exports[`StoryPromo should render correctly 1`] = `
   .c6 {
     display: none;
     visibility: hidden;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c3 {
-    padding: 0 1rem;
-  }
-}
-
-@media (min-width:80rem) {
-  .c3 {
-    width: 66.67%;
-  }
-}
-
-@supports (grid-template-columns:fit-content(200px)) {
-  .c3 {
-    display: block;
-    width: initial;
-    padding: initial;
-    grid-column: 3 / span 4;
   }
 }
 
@@ -1715,6 +1727,13 @@ exports[`StoryPromo with Media Indicator should render correctly 1`] = `
   position: relative;
 }
 
+.c8 {
+  display: inline-block;
+  vertical-align: top;
+  width: 66.67%;
+  padding: 0 0.5rem;
+}
+
 .c9 {
   font-size: 0.9375rem;
   line-height: 1.25rem;
@@ -1735,13 +1754,6 @@ exports[`StoryPromo with Media Indicator should render correctly 1`] = `
   color: #3F3F42;
   margin: 0;
   padding-bottom: 0.5rem;
-}
-
-.c8 {
-  display: inline-block;
-  vertical-align: top;
-  width: 66.67%;
-  padding: 0 0.5rem;
 }
 
 .c10 {
@@ -1809,6 +1821,33 @@ exports[`StoryPromo with Media Indicator should render correctly 1`] = `
   }
 }
 
+@media (min-width:63rem) {
+  .c8 {
+    padding-top: 0.5rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .c8 {
+    padding: 0 1rem;
+  }
+}
+
+@media (min-width:80rem) {
+  .c8 {
+    width: 66.67%;
+  }
+}
+
+@supports (grid-template-columns:fit-content(200px)) {
+  .c8 {
+    display: block;
+    width: initial;
+    padding: initial;
+    grid-column: 3 / span 4;
+  }
+}
+
 @media (min-width:20rem) and (max-width:37.4375rem) {
   .c9 {
     font-size: 1rem;
@@ -1848,27 +1887,6 @@ exports[`StoryPromo with Media Indicator should render correctly 1`] = `
   .c11 {
     display: none;
     visibility: hidden;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c8 {
-    padding: 0 1rem;
-  }
-}
-
-@media (min-width:80rem) {
-  .c8 {
-    width: 66.67%;
-  }
-}
-
-@supports (grid-template-columns:fit-content(200px)) {
-  .c8 {
-    display: block;
-    width: initial;
-    padding: initial;
-    grid-column: 3 / span 4;
   }
 }
 
