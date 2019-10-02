@@ -52,9 +52,11 @@ The following locales have overrides to meet BBC World Service requirements wher
 
 These can either be imported and used directly or in conjunction with the `makeNumeralTranslator` helper function below.
 
-#### `makeNumeralTranslator`
+#### `makeNumeralTranslator(system)`
 
-`makeNumeralTranslator` is a small helper that returns a function that translates any 'Western' Arabic numbers in the input string into the specified numeral system (see Usage, below).
+`makeNumeralTranslator` is a small helper that returns a function that translates any 'Western' Arabic numbers in the input string into the specified numeral system.
+
+It accepts one argument `system` which is the numeral system to use and returns a function. If the argument is omitted or an unsupported numeral system is supplied then the translator returns the input string unchanged. For an example see Usage, below.
 
 ## Installation
 
