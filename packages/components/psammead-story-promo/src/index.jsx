@@ -62,21 +62,22 @@ const StoryPromoWrapper = styled.div`
     @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
       grid-column-gap: ${GEL_GUTTER_ABOVE_600PX};
     }
-    
+
     ${({ topStory }) =>
       topStory
-        ? `
-          @media (min-width: ${GEL_GROUP_5_SCREEN_WIDTH_MIN}) {
-            grid-template-columns: repeat(12, 1fr);
-          }
+        ? css`
+            @media (min-width: ${GEL_GROUP_5_SCREEN_WIDTH_MIN}) {
+              grid-template-columns: repeat(12, 1fr);
+            }
           `
-        : `
-          @media (min-width: ${GEL_GROUP_4_SCREEN_WIDTH_MIN}) {
-            display: block;
-            grid-template-columns: none;
-            grid-column-gap: initial;
-          }
+        : css`
+            @media (min-width: ${GEL_GROUP_4_SCREEN_WIDTH_MIN}) {
+              display: block;
+              grid-template-columns: none;
+              grid-column-gap: initial;
+            }
           `}
+  }
 `;
 
 /*
