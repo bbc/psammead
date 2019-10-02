@@ -12,8 +12,9 @@ import {
   GEL_GROUP_2_SCREEN_WIDTH_MAX,
   GEL_GROUP_3_SCREEN_WIDTH_MIN,
   GEL_GROUP_3_SCREEN_WIDTH_MAX,
-  GEL_GROUP_5_SCREEN_WIDTH_MIN,
+  GEL_GROUP_4_SCREEN_WIDTH_MIN,
   GEL_GROUP_4_SCREEN_WIDTH_MAX,
+  GEL_GROUP_5_SCREEN_WIDTH_MIN,
 } from '@bbc/gel-foundations/breakpoints';
 import {
   getPica,
@@ -61,13 +62,26 @@ const StoryPromoWrapper = styled.div`
     @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
       grid-column-gap: ${GEL_GUTTER_ABOVE_600PX};
     }
-
-    @media (min-width: ${GEL_GROUP_5_SCREEN_WIDTH_MIN}) {
-      grid-template-columns: repeat(12, 1fr);
-    }
-  }
+    
+    ${({ topStory }) =>
+      topStory
+        ? `
+          @media (min-width: ${GEL_GROUP_5_SCREEN_WIDTH_MIN}) {
+            grid-template-columns: repeat(12, 1fr);
+          }
+          `
+        : `
+          @media (min-width: ${GEL_GROUP_4_SCREEN_WIDTH_MIN}) {
+            display: block;
+            grid-template-columns: none;
+            grid-column-gap: initial;
+          }
+          `}
 `;
 
+/*
+ *  Image
+ */
 const ImageGridColumnsTopStory = css`
   grid-column: 1 / span 6;
 
@@ -79,8 +93,8 @@ const ImageGridColumnsTopStory = css`
 const ImageGridColumns = css`
   grid-column: 1 / span 2;
 
-  @media (min-width: ${GEL_GROUP_5_SCREEN_WIDTH_MIN}) {
-    grid-column: 1 / span 4;
+  @media (min-width: ${GEL_GROUP_4_SCREEN_WIDTH_MIN}) {
+    grid-column: none;
   }
 `;
 
@@ -138,6 +152,68 @@ const InlineMediaIndicator = styled.div`
       `}
 `;
 
+/*
+ *  Text
+ */
+const TextGridColumnsTopStory = css`
+  grid-column: 1 / span 6;
+
+  @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
+    grid-column: 4 / span 3;
+  }
+
+  @media (min-width: ${GEL_GROUP_5_SCREEN_WIDTH_MIN}) {
+    grid-column: 7 / span 6;
+  }
+`;
+
+const TextGridColumns = css`
+  grid-column: 3 / span 4;
+
+  @media (min-width: ${GEL_GROUP_4_SCREEN_WIDTH_MIN}) {
+    grid-column: none;
+    padding-top: ${GEL_SPACING};
+  }
+`;
+
+const TextGridFallbackTopStory = css`
+  @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
+    width: ${halfWidthColumnsMaxScaleable};
+  }
+`;
+
+const TextGridFallback = css`
+  width: ${fourOfSixColumnsMaxWidthScaleable};
+  padding: 0 ${GEL_SPACING};
+
+  @media (min-width: ${GEL_GROUP_4_SCREEN_WIDTH_MIN}) {
+    padding-top: ${GEL_SPACING};
+  }
+`;
+
+const TextGridItem = styled.div`
+  display: inline-block;
+  vertical-align: top;
+
+  ${({ topStory }) => (topStory ? TextGridFallbackTopStory : TextGridFallback)}
+
+  @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
+    padding: 0 ${GEL_SPACING_DBL};
+  }
+
+  @media (min-width: ${GEL_GROUP_5_SCREEN_WIDTH_MIN}) {
+    width: ${eightOfTwelveColumnsMaxScaleable};
+  }
+
+  @supports (${grid}) {
+    display: block;
+    width: initial;
+    padding: initial;
+
+    ${({ topStory }) => (topStory ? TextGridColumnsTopStory : TextGridColumns)}
+  }
+`;
+
 // This is needed to get around the issue of IE11 not supporting
 // nested media queries (which would be returned by getParagon() and
 // getGreatPrimer())
@@ -188,60 +264,6 @@ export const Summary = styled.p`
             visibility: hidden;
           }
         `}
-`;
-
-const TextGridColumnsTopStory = css`
-  grid-column: 1 / span 6;
-
-  @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
-    grid-column: 4 / span 3;
-  }
-
-  @media (min-width: ${GEL_GROUP_5_SCREEN_WIDTH_MIN}) {
-    grid-column: 7 / span 6;
-  }
-`;
-
-const TextGridColumns = css`
-  grid-column: 3 / span 4;
-
-  @media (min-width: ${GEL_GROUP_5_SCREEN_WIDTH_MIN}) {
-    grid-column: 5 / span 8;
-  }
-`;
-
-const TextGridFallbackTopStory = css`
-  @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
-    width: ${halfWidthColumnsMaxScaleable};
-  }
-`;
-
-const TextGridFallback = css`
-  width: ${fourOfSixColumnsMaxWidthScaleable};
-  padding: 0 ${GEL_SPACING};
-`;
-
-const TextGridItem = styled.div`
-  display: inline-block;
-  vertical-align: top;
-
-  ${({ topStory }) => (topStory ? TextGridFallbackTopStory : TextGridFallback)}
-
-  @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
-    padding: 0 ${GEL_SPACING_DBL};
-  }
-
-  @media (min-width: ${GEL_GROUP_5_SCREEN_WIDTH_MIN}) {
-    width: ${eightOfTwelveColumnsMaxScaleable};
-  }
-
-  @supports (${grid}) {
-    display: block;
-    width: initial;
-    padding: initial;
-
-    ${({ topStory }) => (topStory ? TextGridColumnsTopStory : TextGridColumns)}
-  }
 `;
 
 /*
@@ -298,7 +320,7 @@ LiveLabel.defaultProps = {
  *  Story Promo
  */
 const StoryPromo = ({ image, info, mediaIndicator, topStory }) => (
-  <StoryPromoWrapper>
+  <StoryPromoWrapper topStory={topStory}>
     <ImageGridItem topStory={topStory}>
       <ImageContentsWrapper>
         {image}
