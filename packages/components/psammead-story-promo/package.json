@@ -31,5 +31,8 @@
     "bbc",
     "story",
     "promo"
-  ]
+  ],
+  "publishConfig": {
+    "tag": "alpha"
+  }
 }
