@@ -17,6 +17,7 @@ describe('PlayButton', () => {
       duration="2:30"
       durationHidden="2 minutes 30 seconds"
       datetime="PT2M30S"
+      className="foo"
     />,
   );
 
@@ -35,6 +36,7 @@ describe('PlayButton', () => {
       durationHidden="2 minutes 30 seconds"
       datetime="PT2M30S"
       type="audio"
+      className="foo"
     />,
   );
 
