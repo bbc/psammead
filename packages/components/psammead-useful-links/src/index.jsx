@@ -7,6 +7,8 @@ import {
   GEL_SPACING, // 8 px
 } from '@bbc/gel-foundations/spacings';
 import { GEL_GROUP_3_SCREEN_WIDTH_MIN } from '@bbc/gel-foundations/breakpoints';
+import { node, string, shape } from 'prop-types';
+import { scriptPropType } from '@bbc/gel-foundations/prop-types';
 
 export const UsefulLink = styled.a`
   ${({ script }) => script && getPica(script)};
@@ -45,3 +47,17 @@ export const UsefulLinksLi = styled.li.attrs({ role: 'listitem' })`
     }
   }
 `;
+
+UsefulLink.propTypes = {
+  script: shape(scriptPropType).isRequired,
+  service: string.isRequired,
+  href: string.isRequired,
+};
+
+UsefulLinksUl.propTypes = {
+  children: node.isRequired,
+};
+
+UsefulLinksLi.propTypes = {
+  children: node.isRequired,
+};
