@@ -15,7 +15,7 @@ storiesOf('Components|Media Player', module)
   .add('AMP', () => (
     <AmpMediaPlayer
       isAmp
-      src="https://www.test.bbc.co.uk/ws/av-embeds/articles/c3wmq4d1y3wo/p01k6msp"
+      src="https://www.test.bbc.co.uk/ws/av-embeds/articles/c3wmq4d1y3wo/p01k6msp/amp"
       placeholderSrc="https://ichef.bbci.co.uk/news/640/cpsdevpb/4eb7/test/ba7482d0-cca8-11e8-b0bf-f33155223fc4.jpg"
     />
   ));
