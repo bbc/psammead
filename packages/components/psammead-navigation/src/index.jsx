@@ -1,6 +1,6 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styled, { css } from 'styled-components';
-import { shape, string, node, bool, oneOf } from 'prop-types';
+import { shape, string, node, bool, oneOf, func } from 'prop-types';
 import VisuallyHiddenText from '@bbc/psammead-visually-hidden-text';
 import { C_WHITE, C_POSTBOX, C_GHOST } from '@bbc/psammead-styles/colours';
 import {
@@ -30,6 +30,7 @@ const NavWrapper = styled.div`
   position: relative;
   max-width: ${GEL_GROUP_5_SCREEN_WIDTH_MIN};
   margin: 0 auto;
+  display: flex;
 `;
 
 const SkipLink = styled.a`
@@ -71,8 +72,7 @@ const StyledUnorderedList = styled.ul`
   margin: 0;
   position: relative;
   overflow: hidden;
-  overflow-x: scroll;
-  white-space: nowrap;
+  ${({ inMenu }) => !inMenu && 'overflow-x: scroll;white-space: nowrap;'}
 `;
 
 const StyledListItem = styled.li`
@@ -81,40 +81,41 @@ const StyledListItem = styled.li`
   z-index: 2;
 `;
 
-const ListItemBorder = css`
+const ListItemBorder = inMenu => css`
   content: '';
   position: absolute;
   left: 0;
   right: 0;
   bottom: 0;
-  border-bottom: ${GEL_SPACING_HLF} solid ${C_WHITE};
+  border-bottom: ${GEL_SPACING_HLF} solid ${inMenu ? C_POSTBOX : C_WHITE};
 `;
 
 const StyledLink = styled.a`
   ${({ script }) => script && getPica(script)};
   ${({ service }) => getSansRegular(service)}
-  color: ${C_GHOST};
+  color: ${({ inMenu }) => (inMenu ? C_POSTBOX : C_GHOST)};
   cursor: pointer;
   text-decoration: none;
   display: inline-block;
   padding: ${TOP_BOTTOM_SPACING} ${GEL_SPACING_DBL};
-  white-space: nowrap;
+  ${({ inMenu }) => !inMenu && 'white-space: nowrap;'}
 
   @media (max-width: ${GEL_GROUP_1_SCREEN_WIDTH_MAX}) {
     padding: ${TOP_BOTTOM_SPACING} ${GEL_SPACING};
   }
 
   &:hover::after {
-    ${ListItemBorder}
-    ${({ currentLink }) =>
+    ${({ inMenu }) => ListItemBorder(inMenu)}
+    ${({ currentLink, inMenu }) =>
       currentLink &&
       css`
-        border-bottom: ${CURRENT_ITEM_HOVER_BORDER} solid ${C_WHITE};
+        border-bottom: ${CURRENT_ITEM_HOVER_BORDER} solid
+          ${inMenu ? C_POSTBOX : C_WHITE};
       `}
   }
 
   &:focus::after {
-    ${ListItemBorder}
+    ${({ inMenu }) => ListItemBorder(inMenu)}
     top: 0;
     border: 0.25rem solid ${C_WHITE};
   }
@@ -122,16 +123,17 @@ const StyledLink = styled.a`
 
 const StyledSpan = styled.span`
   &::after {
-    ${ListItemBorder}
+    ${({ inMenu }) => ListItemBorder(inMenu)}
   }
 `;
 
-const CurrentLink = ({ children: link, script, currentPageText }) => (
+const CurrentLink = ({ children: link, script, currentPageText, inMenu }) => (
   <>
     <StyledSpan
       // eslint-disable-next-line jsx-a11y/aria-role
       role="text"
       script={script}
+      inMenu={inMenu}
     >
       <VisuallyHiddenText>{currentPageText}, </VisuallyHiddenText>
       {link}
@@ -139,9 +141,13 @@ const CurrentLink = ({ children: link, script, currentPageText }) => (
   </>
 );
 
-export const NavigationUl = ({ children, ...props }) => (
-  <StyledUnorderedList role="list" {...props}>
-    {children}
+export const NavigationUl = ({ children, inMenu, ...props }) => (
+  <StyledUnorderedList role="list" inMenu={inMenu} {...props}>
+    {inMenu
+      ? React.Children.map(children, child =>
+          React.cloneElement(child, { inMenu: true }),
+        )
+      : children}
   </StyledUnorderedList>
 );
 
@@ -152,6 +158,7 @@ export const NavigationLi = ({
   currentPageText,
   active,
   service,
+  inMenu,
 }) => (
   <StyledListItem role="listitem">
     {active && currentPageText ? (
@@ -160,13 +167,18 @@ export const NavigationLi = ({
         script={script}
         currentLink="true"
         service={service}
+        inMenu={inMenu}
       >
-        <CurrentLink script={script} currentPageText={currentPageText}>
+        <CurrentLink
+          script={script}
+          currentPageText={currentPageText}
+          inMenu={inMenu}
+        >
           {link}
         </CurrentLink>
       </StyledLink>
     ) : (
-      <StyledLink href={url} script={script} service={service}>
+      <StyledLink href={url} script={script} service={service} inMenu={inMenu}>
         {link}
       </StyledLink>
     )}
@@ -185,16 +197,101 @@ const StyledNav = styled.nav`
   }
 `;
 
-const Navigation = ({ children, script, skipLinkText, service, dir }) => (
-  <StyledNav role="navigation" dir={dir}>
-    <NavWrapper>
-      <SkipLink href="#content" script={script} service={service}>
-        {skipLinkText}
-      </SkipLink>
-      {children}
-    </NavWrapper>
-  </StyledNav>
+// Prototype components
+const UpChevronSvg = () => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="8px"
+    height="8px"
+    viewBox="0 0 32 32"
+    focusable="false"
+    fill="white"
+    style={{ marginLeft: '8px' }}
+  >
+    <title>up</title>
+    <path d="M16 3L0 29h7.2L16 13.7 24.8 29H32L16 3z" />
+  </svg>
 );
+
+const DownChevronSvg = () => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="8px"
+    height="8px"
+    viewBox="0 0 32 32"
+    focusable="false"
+    fill="white"
+    style={{ marginLeft: '8px' }}
+  >
+    <title>down</title>
+    <path d="M16 29L32 3h-7.2L16 18.3 7.2 3H0l16 26z" />
+  </svg>
+);
+
+const NavMenu = ({ script, service, setMenuVisibile, menuVisible }) => {
+  const updateMenuVisiblity = () => setMenuVisibile(!menuVisible);
+  return (
+    <div style={{ position: 'relative', borderRight: 'white solid' }}>
+      <button
+        style={{ border: 0, padding: 0, backgroundColor: 'inherit' }}
+        onClick={updateMenuVisiblity}
+        type="button"
+      >
+        <StyledLink script={script} service={service}>
+          Menu
+          {menuVisible ? <UpChevronSvg /> : <DownChevronSvg />}
+        </StyledLink>
+      </button>
+    </div>
+  );
+};
+
+const Menu = ({ children, visible }) => {
+  const display = visible ? 'block' : 'none';
+  return (
+    <div style={{ display, borderBottom: `solid ${C_POSTBOX}` }}>
+      {React.Children.map(children, child =>
+        React.cloneElement(child, { inMenu: true }),
+      )}
+    </div>
+  );
+};
+
+NavMenu.propTypes = {
+  script: shape(scriptPropType).isRequired,
+  service: string.isRequired,
+  setMenuVisibile: func.isRequired,
+  menuVisible: bool.isRequired,
+};
+
+Menu.propTypes = {
+  children: node.isRequired,
+  visible: bool.isRequired,
+};
+// End prototypes
+
+const Navigation = ({ children, script, skipLinkText, service, dir }) => {
+  const [menuVisible, setMenuVisibile] = useState(false);
+  return (
+    <>
+      <StyledNav role="navigation" dir={dir}>
+        <NavWrapper>
+          <SkipLink href="#content" script={script} service={service}>
+            {skipLinkText}
+          </SkipLink>
+          <NavMenu
+            script={script}
+            service={service}
+            setMenuVisibile={setMenuVisibile}
+            menuVisible={menuVisible}
+          />
+          {children}
+        </NavWrapper>
+      </StyledNav>
+      <Menu visible={menuVisible}>{children}</Menu>
+    </>
+  );
+};
 
 Navigation.propTypes = {
   children: node.isRequired,
@@ -208,7 +305,10 @@ Navigation.defaultProps = { dir: 'ltr' };
 
 NavigationUl.propTypes = {
   children: node.isRequired,
+  inMenu: bool,
 };
+
+NavigationUl.defaultProps = { inMenu: false };
 
 NavigationLi.propTypes = {
   children: node.isRequired,
@@ -217,21 +317,25 @@ NavigationLi.propTypes = {
   active: bool,
   currentPageText: string,
   service: string.isRequired,
+  inMenu: bool,
 };
 
 NavigationLi.defaultProps = {
   active: false,
   currentPageText: null,
+  inMenu: false,
 };
 
 CurrentLink.propTypes = {
   children: string.isRequired,
   script: shape(scriptPropType).isRequired,
   currentPageText: string,
+  inMenu: bool,
 };
 
 CurrentLink.defaultProps = {
   currentPageText: null,
+  inMenu: false,
 };
 
 export default Navigation;
