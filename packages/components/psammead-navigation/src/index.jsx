@@ -76,7 +76,7 @@ const StyledUnorderedList = styled.ul`
 `;
 
 const StyledListItem = styled.li`
-  display: inline-block;
+  display: ${({ inMenu }) => (inMenu ? 'block' : 'inline-block')};
   position: relative;
   z-index: 2;
 `;
@@ -160,7 +160,7 @@ export const NavigationLi = ({
   service,
   inMenu,
 }) => (
-  <StyledListItem role="listitem">
+  <StyledListItem role="listitem" inMenu={inMenu}>
     {active && currentPageText ? (
       <StyledLink
         href={url}
@@ -198,7 +198,19 @@ const StyledNav = styled.nav`
 `;
 
 // Prototype components
-const UpChevronSvg = () => (
+const MenuWrapper = styled.div`
+  max-width: ${GEL_GROUP_5_SCREEN_WIDTH_MIN};
+  border-bottom: solid ${C_POSTBOX};
+  display: ${({ visible }) => (visible ? 'block' : 'none')};
+  background-color: white;
+  margin: 0 auto;
+  @media (min-width: ${GEL_GROUP_5_SCREEN_WIDTH_MIN}) {
+    border-left: solid ${C_POSTBOX};
+    border-right: solid ${C_POSTBOX};
+  }
+`;
+
+const Chevron = ({ dir, children }) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     width="8px"
@@ -206,32 +218,34 @@ const UpChevronSvg = () => (
     viewBox="0 0 32 32"
     focusable="false"
     fill="white"
-    style={{ marginLeft: '8px' }}
+    style={dir === 'ltr' ? { marginLeft: '8px' } : { marginRight: '8px' }}
   >
+    {children}
+  </svg>
+);
+
+const UpChevronSvg = ({ dir }) => (
+  <Chevron dir={dir}>
     <title>up</title>
     <path d="M16 3L0 29h7.2L16 13.7 24.8 29H32L16 3z" />
-  </svg>
+  </Chevron>
 );
 
-const DownChevronSvg = () => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="8px"
-    height="8px"
-    viewBox="0 0 32 32"
-    focusable="false"
-    fill="white"
-    style={{ marginLeft: '8px' }}
-  >
+const DownChevronSvg = ({ dir }) => (
+  <Chevron dir={dir}>
     <title>down</title>
     <path d="M16 29L32 3h-7.2L16 18.3 7.2 3H0l16 26z" />
-  </svg>
+  </Chevron>
 );
 
-const NavMenu = ({ script, service, setMenuVisibile, menuVisible }) => {
+const NavMenu = ({ script, service, setMenuVisibile, menuVisible, dir }) => {
   const updateMenuVisiblity = () => setMenuVisibile(!menuVisible);
+  const border =
+    dir === 'ltr'
+      ? { borderRight: 'white solid' }
+      : { borderLeft: 'white solid' };
   return (
-    <div style={{ position: 'relative', borderRight: 'white solid' }}>
+    <div style={{ position: 'relative', ...border }}>
       <button
         style={{ border: 0, padding: 0, backgroundColor: 'inherit' }}
         onClick={updateMenuVisiblity}
@@ -239,7 +253,11 @@ const NavMenu = ({ script, service, setMenuVisibile, menuVisible }) => {
       >
         <StyledLink script={script} service={service}>
           Menu
-          {menuVisible ? <UpChevronSvg /> : <DownChevronSvg />}
+          {menuVisible ? (
+            <UpChevronSvg dir={dir} />
+          ) : (
+            <DownChevronSvg dir={dir} />
+          )}
         </StyledLink>
       </button>
     </div>
@@ -247,13 +265,12 @@ const NavMenu = ({ script, service, setMenuVisibile, menuVisible }) => {
 };
 
 const Menu = ({ children, visible }) => {
-  const display = visible ? 'block' : 'none';
   return (
-    <div style={{ display, borderBottom: `solid ${C_POSTBOX}` }}>
+    <MenuWrapper visible={visible}>
       {React.Children.map(children, child =>
         React.cloneElement(child, { inMenu: true }),
       )}
-    </div>
+    </MenuWrapper>
   );
 };
 
@@ -262,12 +279,24 @@ NavMenu.propTypes = {
   service: string.isRequired,
   setMenuVisibile: func.isRequired,
   menuVisible: bool.isRequired,
+  dir: string.isRequired,
 };
 
 Menu.propTypes = {
   children: node.isRequired,
   visible: bool.isRequired,
 };
+
+Chevron.propTypes = {
+  children: node.isRequired,
+  dir: string.isRequired,
+};
+
+UpChevronSvg.propTypes = {
+  dir: string.isRequired,
+};
+
+DownChevronSvg.propTypes = UpChevronSvg.propTypes;
 // End prototypes
 
 const Navigation = ({ children, script, skipLinkText, service, dir }) => {
