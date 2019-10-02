@@ -15,6 +15,7 @@ describe('PlayButton', () => {
       title="Dog chases cat."
       onClick={() => {}}
       duration="2:30"
+      durationHidden="2 minutes 30 seconds"
       datetime="PT2M30S"
     />,
   );
@@ -31,6 +32,7 @@ describe('PlayButton', () => {
       title="Dog barks at cat."
       onClick={() => {}}
       duration="2:30"
+      durationHidden="2 minutes 30 seconds"
       datetime="PT2M30S"
       type="audio"
     />,
