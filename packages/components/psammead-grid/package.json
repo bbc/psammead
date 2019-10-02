@@ -1,19 +1,16 @@
 {
-  "name": "@bbc/psammead-paragraph",
-  "version": "2.2.13",
-  "description": "React styled component for a Paragraph",
+  "name": "psammead-grid",
+  "version": "1.0.0",
+  "publishConfig": {
+    "tag": "alpha"
+  },
+  "description": "Grid setup for components",
   "main": "dist/index.js",
   "module": "esm/index.js",
-  "sideEffects": false,
   "repository": {
     "type": "git",
-    "url": "https://github.com/bbc/psammead/tree/latest/packages/components/psammead-paragraph"
+    "url": "https://github.com/bbc/psammead/tree/latest/packages/components/psammead-grid"
   },
-  "keywords": [
-    "bbc",
-    "paragraph",
-    "styled-components"
-  ],
   "author": {
     "name": "Psammead Maintainers",
     "email": "PsammeadMaintainers@bbc.co.uk"
@@ -22,7 +19,12 @@
   "bugs": {
     "url": "https://github.com/bbc/psammead/issues"
   },
-  "homepage": "https://github.com/bbc/psammead/blob/latest/packages/components/psammead-paragraph/README.md",
+  "keywords": [
+    "bbc",
+    "grid",
+    "cssgrid",
+    "styled-components"
+  ],
   "dependencies": {
     "@bbc/gel-foundations": "^3.4.0",
     "@bbc/psammead-styles": "^4.0.1"
