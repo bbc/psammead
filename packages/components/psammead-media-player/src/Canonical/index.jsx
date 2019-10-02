@@ -15,7 +15,6 @@ const StyledIframe = styled.iframe`
 const Canonical = ({ src }) => (
   <StyledIframe
     src={src}
-    scrolling="no"
     allow="autoplay; fullscreen"
     gesture="media"
     allowFullScreen
