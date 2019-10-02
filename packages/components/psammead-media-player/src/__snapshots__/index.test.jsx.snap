@@ -108,6 +108,7 @@ exports[`Media Player: AMP Entry renders the audio skin 1`] = `
           <amp-img
             layout="fill"
             placeholder="true"
+            src="http://foo.bar/placeholder.png"
           />
         </amp-iframe>
       </div>
