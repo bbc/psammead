@@ -17,12 +17,18 @@ describe('ScriptSwitch', () => {
   );
 
   it('should render a link', () => {
-    const { container } = render(<ScriptSwitch {...props}>Lat</ScriptSwitch>);
+    const { container } = render(
+      <ScriptSwitch {...props} variant="lat">
+        Lat
+      </ScriptSwitch>,
+    );
     const links = container.querySelectorAll('a');
 
     expect(links).toHaveLength(1);
     expect(links[0]).toHaveProperty('href');
     expect(links[0].href).toEqual('https://www.bbc.co.uk/news');
     expect(links[0].textContent).toEqual('Lat');
+    expect(links[0].dataset).toHaveProperty('variant');
+    expect(links[0].dataset.variant).toEqual('lat');
   });
 });
