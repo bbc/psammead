@@ -33,17 +33,15 @@ storiesOf('Components|UsefulLinks', module)
   .addDecorator(dirDecorator)
   .add(
     'one link',
-    ({ service, script }) => {
-      return (
-        <UsefulLink
-          script={script}
-          service={service}
-          href={usefulCaptions[0].url}
-        >
-          {usefulCaptions[0].name}
-        </UsefulLink>
-      );
-    },
+    ({ service, script }) => (
+      <UsefulLink
+        script={script}
+        service={service}
+        href={usefulCaptions[0].url}
+      >
+        {usefulCaptions[0].name}
+      </UsefulLink>
+    ),
     {
       notes,
       knobs: { escapeHTML: false },
@@ -51,21 +49,19 @@ storiesOf('Components|UsefulLinks', module)
   )
   .add(
     'multiple links',
-    ({ service, script }) => {
-      return (
-        <UsefulLinksUl>
-          {usefulCaptions.map(item => {
-            return (
-              <UsefulLinksLi key={usefulCaptions.indexOf(item)}>
-                <UsefulLink service={service} script={script} href={item.url}>
-                  {item.name}
-                </UsefulLink>
-              </UsefulLinksLi>
-            );
-          })}
-        </UsefulLinksUl>
-      );
-    },
+    ({ service, script }) => (
+      <UsefulLinksUl>
+        {usefulCaptions.map(item => {
+          return (
+            <UsefulLinksLi key={usefulCaptions.indexOf(item)}>
+              <UsefulLink service={service} script={script} href={item.url}>
+                {item.name}
+              </UsefulLink>
+            </UsefulLinksLi>
+          );
+        })}
+      </UsefulLinksUl>
+    ),
     {
       notes,
       knobs: { escapeHTML: false },
