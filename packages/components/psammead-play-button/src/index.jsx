@@ -35,9 +35,10 @@ const IconWrapper = styled.div`
   > svg {
     fill: ${C_WHITE};
     height: ${GEL_SPACING_TRPL};
-    ${({ datetime, duration }) =>
+    ${({ datetime, duration, durationHidden }) =>
       datetime &&
       duration &&
+      durationHidden &&
       css`
         margin-top: ${GEL_SPACING};
       `}
@@ -50,31 +51,57 @@ const TimeDuration = styled.time`
   margin-top: ${GEL_SPACING};
 `;
 
-const PlayButton = ({ datetime, duration, type, service, title, onClick }) => (
-  <Button service={service} onClick={onClick}>
-    <VisuallyHiddenText>{`Play ${type}, "${title}"`}</VisuallyHiddenText>
-    <IconWrapper datetime={datetime} duration={duration} aria-hidden="true">
-      {mediaIcons[type]}
-    </IconWrapper>
-    {datetime && duration && (
-      <TimeDuration dateTime={datetime}>{duration}</TimeDuration>
-    )}
-  </Button>
-);
+const PlayButton = ({
+  className,
+  datetime,
+  duration,
+  durationHidden,
+  type,
+  service,
+  title,
+  onClick,
+}) => {
+  const hiddenText =
+    datetime && duration && durationHidden
+      ? `Play ${type}, "${title}", ${durationHidden}`
+      : `Play ${type}, "${title}"`;
+  return (
+    <Button className={className} service={service} onClick={onClick}>
+      <VisuallyHiddenText>{hiddenText}</VisuallyHiddenText>
+      <IconWrapper
+        datetime={datetime}
+        duration={duration}
+        durationHidden={durationHidden}
+        aria-hidden="true"
+      >
+        {mediaIcons[type]}
+      </IconWrapper>
+      {datetime && duration && durationHidden && (
+        <TimeDuration dateTime={datetime} aria-hidden="true">
+          {duration}
+        </TimeDuration>
+      )}
+    </Button>
+  );
+};
 
 PlayButton.propTypes = {
   datetime: string,
   duration: string,
+  durationHidden: string,
   type: oneOf(['video', 'audio']),
   title: string.isRequired,
   service: string.isRequired,
   onClick: func.isRequired,
+  className: string,
 };
 
 PlayButton.defaultProps = {
   datetime: null,
   duration: null,
+  durationHidden: null,
   type: 'video',
+  className: null,
 };
 
 export default PlayButton;
