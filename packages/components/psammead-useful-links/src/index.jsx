@@ -34,7 +34,6 @@ export const UsefulLinksUl = styled.ul.attrs({ role: 'list' })`
     @supports (${grid}) {
       display: grid;
       grid-template-columns: auto auto;
-      grid-column-gap: 50px;
     }
   }
 `;
