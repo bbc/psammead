@@ -21,7 +21,7 @@ The `PlayButton` component renders a button with a 'video' or 'audio' icon and o
 | title          | string    | Yes      | N/A       | `'Foo.'`                 |
 | onClick        | function  | Yes      | N/A       | `() => {}`               |
 | duration       | string    | No       | `null`    | `'2:30'`                 |
-| durationHidden | string    | No       | `null`    | `'2 minutes 30 seconds'` |
+| durationSpoken | string    | No       | `null`    | `'2 minutes 30 seconds'` |
 | datetime       | string    | No       | `null`    | `'PT2M30S'`              |
 | type           | string    | No       | `'video'` | `'audio'`                |
 | className      | string    | No       | `null`    | `'bar'`                  |
@@ -44,7 +44,7 @@ import PlayButton from '@bbc/psammead-play-button';
   title="Dog barks at cat."
   onClick={handleClick}
   duration="2:30"
-  durationHidden="2 minutes 30 seconds"
+  durationSpoken="2 minutes 30 seconds"
   datetime="PT2M30S"
   type="audio"
 />;
@@ -58,7 +58,7 @@ The `PlayButton` component is designed to be used in a media asset placeholder c
 
 ### Accessibility notes
 
-This component is expected to provide information about the playable media to screenreaders and other assistive technology. It is required that the title of the media be passed to the `title` prop and, if duration is to be displayed, a human-friendly version to `durationHidden`. This is used to build a string, which is rendered in a [VisuallyHiddenText](https://github.com/bbc/psammead/tree/latest/packages/components/psammead-visually-hidden-text) element. The icon is marked as `aria-hidden="true"`, which means it should be ignored by screenreaders.
+This component is expected to provide information about the playable media to screenreaders and other assistive technology. It is required that the title of the media be passed to the `title` prop and, if duration is to be displayed, a human-friendly version to `durationSpoken`. This is used to build a string, which is rendered in a [VisuallyHiddenText](https://github.com/bbc/psammead/tree/latest/packages/components/psammead-visually-hidden-text) element. The icon is marked as `aria-hidden="true"`, which means it should be ignored by screenreaders.
 
 <!-- ## Roadmap -->
 

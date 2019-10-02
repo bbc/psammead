@@ -27,7 +27,7 @@ storiesOf('Components|PlayButton/Video', module)
         title="Dog chases cat."
         onClick={() => {}}
         duration={text('duration', '2:30')}
-        durationHidden={text('durationHidden', '2 minutes 30 seconds')}
+        durationSpoken={text('durationSpoken', '2 minutes 30 seconds')}
         datetime={text('datetime', 'PT2M30S')}
       />
     ),
@@ -57,7 +57,7 @@ storiesOf('Components|PlayButton/Audio', module)
         title="Dog barks at cat."
         onClick={() => {}}
         duration={text('duration', '2:30')}
-        durationHidden={text('durationHidden', '2 minutes 30 seconds')}
+        durationSpoken={text('durationSpoken', '2 minutes 30 seconds')}
         datetime={text('datetime', 'PT2M30S')}
         type="audio"
       />

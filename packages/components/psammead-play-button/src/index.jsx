@@ -35,10 +35,10 @@ const IconWrapper = styled.div`
   > svg {
     fill: ${C_WHITE};
     height: ${GEL_SPACING_TRPL};
-    ${({ datetime, duration, durationHidden }) =>
+    ${({ datetime, duration, durationSpoken }) =>
       datetime &&
       duration &&
-      durationHidden &&
+      durationSpoken &&
       css`
         margin-top: ${GEL_SPACING};
       `}
@@ -55,15 +55,15 @@ const PlayButton = ({
   className,
   datetime,
   duration,
-  durationHidden,
+  durationSpoken,
   type,
   service,
   title,
   onClick,
 }) => {
   const hiddenText =
-    datetime && duration && durationHidden
-      ? `Play ${type}, "${title}", ${durationHidden}`
+    datetime && duration && durationSpoken
+      ? `Play ${type}, "${title}", ${durationSpoken}`
       : `Play ${type}, "${title}"`;
   return (
     <Button className={className} service={service} onClick={onClick}>
@@ -71,12 +71,12 @@ const PlayButton = ({
       <IconWrapper
         datetime={datetime}
         duration={duration}
-        durationHidden={durationHidden}
+        durationSpoken={durationSpoken}
         aria-hidden="true"
       >
         {mediaIcons[type]}
       </IconWrapper>
-      {datetime && duration && durationHidden && (
+      {datetime && duration && durationSpoken && (
         <TimeDuration dateTime={datetime} aria-hidden="true">
           {duration}
         </TimeDuration>
@@ -88,7 +88,7 @@ const PlayButton = ({
 PlayButton.propTypes = {
   datetime: string,
   duration: string,
-  durationHidden: string,
+  durationSpoken: string,
   type: oneOf(['video', 'audio']),
   title: string.isRequired,
   service: string.isRequired,
@@ -99,7 +99,7 @@ PlayButton.propTypes = {
 PlayButton.defaultProps = {
   datetime: null,
   duration: null,
-  durationHidden: null,
+  durationSpoken: null,
   type: 'video',
   className: null,
 };
