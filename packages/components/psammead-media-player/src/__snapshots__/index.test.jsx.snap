@@ -21,7 +21,7 @@ exports[`Media Player: AMP Entry renders a landscape container with an amp-ifram
         class="c0"
       >
         <amp-iframe
-          allowfullscreen="true"
+          allowfullscreen="allowfullscreen"
           frameborder="0"
           layout="fill"
           sandbox="allow-scripts allow-same-origin"
@@ -60,7 +60,7 @@ exports[`Media Player: AMP Entry renders a portrait container with amp-iframe an
         class="c0"
       >
         <amp-iframe
-          allowfullscreen="true"
+          allowfullscreen="allowfullscreen"
           frameborder="0"
           layout="fill"
           sandbox="allow-scripts allow-same-origin"
@@ -99,7 +99,7 @@ exports[`Media Player: AMP Entry renders the audio skin 1`] = `
         class="c0"
       >
         <amp-iframe
-          allowfullscreen="true"
+          allowfullscreen="allowfullscreen"
           frameborder="0"
           layout="fill"
           sandbox="allow-scripts allow-same-origin"
@@ -214,7 +214,6 @@ exports[`Media Player: Canonical Entry renders an iframe when showPlaceholder is
     allow="autoplay; fullscreen"
     allowfullscreen=""
     class="c1"
-    scrolling="no"
     src="http://foo.bar/iframe"
   />
 </div>
@@ -244,7 +243,6 @@ exports[`Media Player: Canonical Entry renders the audio skin 1`] = `
     allow="autoplay; fullscreen"
     allowfullscreen=""
     class="c1"
-    scrolling="no"
     src="https://www.test.bbc.com/ws/av-embeds/media/bbc_korean_radio/liveradio"
   />
 </div>
