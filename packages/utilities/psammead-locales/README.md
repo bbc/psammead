@@ -50,11 +50,11 @@ The following locales have overrides to meet BBC World Service requirements wher
 
 `/numerals` - Numerals in several different number systems, e.g. Bengali, Burmese, Eastern Arabic, Western Arabic. This can be used for localised numbers for components. Returns arrays of the format `['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '10'];`
 
-These can either be used directly or via the `makeNumeralTranslator` helper function, below.
+These can either be imported and used directly or in conjunction with the `makeNumeralTranslator` helper function below.
 
 #### `makeNumeralTranslator`
 
-`makeNumeralTranslator` returns a function that will translate any numbers in the input string into the specified numeral system.
+`makeNumeralTranslator` is a small helper that returns a function that translates any 'Western' Arabic numbers in the input string into the specified numeral system (see Usage, below).
 
 ## Installation
 
@@ -79,7 +79,7 @@ moment.locale('ig');
 import { Bengali, makeNumeralTranslator } from '@bbc/psammead-locales/numerals';
 
 const translateNumerals = makeNumeralTranslator(Bengali);
-translateNumerals(someInput);
+const result = translateNumerals(someInput); // returns someInput with numbers translated to Bengali
 ```
 
 ## Contributing
