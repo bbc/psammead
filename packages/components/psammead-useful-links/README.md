@@ -14,13 +14,25 @@ The `UsefulLinks` component implements a Link Promo type that accesses links wit
 npm install @bbc/psammead-useful-links
 ```
 
-## Props
+## UsefulLink Props
 
 | Argument  | Type | Required | Default | Example |
 | --------- | ---- | -------- | ------- | ------- |
 | service | string | yes | N/A | `'news'` |
 | script | object | yes | latin | `{ canon: { groupA: { fontSize: '28', lineHeight: '32',}, groupB: { fontSize: '32', lineHeight: '36', }, groupD: { fontSize: '44', lineHeight: '48', }, }, trafalgar: { groupA: { fontSize: '20', lineHeight: '24', }, groupB: { fontSize: '24', lineHeight: '28', }, groupD: { fontSize: '32', lineHeight: '36', }, }, }` |
-| usefulItems | array | yes | N/A | `[{ name: 'Mitocinmu da sauko da sautin labarai', url: 'https://www.bbc.com/igbo/afirika-49883577' }, { name: 'Labaran BBC Hausa a text', url: 'https://www.bbc.com/igbo/afirika-49872694' }]` |
+| href | string | yes | N/A | `'https://www.bbc.com/igbo/afirika-49883577'` |
+
+## UsefulLinksUl Props
+
+| Argument  | Type | Required | Default | Example |
+| --------- | ---- | -------- | ------- | ------- |
+| children | node | yes | N/A | `<UsefulLinksLi><UsefulLink service='news' script={latin href='https://www.bbc.com/igbo/afirika-49883577'> Mitocinmu da sauko da sautin labarai </UsefulLink></UsefulLinksLi>` |
+
+## UsefulLinksLi Props
+
+| Argument  | Type | Required | Default | Example |
+| --------- | ---- | -------- | ------- | ------- |
+| children | node | yes | N/A | `<UsefulLink service='news' script={latin href='https://www.bbc.com/igbo/afirika-49883577'> Mitocinmu da sauko da sautin labarai </UsefulLink>` |
 
 ## Usage
 

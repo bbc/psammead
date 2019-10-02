@@ -1,10 +1,8 @@
-import React from 'react';
 import styled from 'styled-components';
 import { getSerifMedium } from '@bbc/psammead-styles/font-styles';
 import { C_EBON, C_METAL } from '@bbc/psammead-styles/colours';
 import { grid } from '@bbc/psammead-styles/detection';
 import { getPica } from '@bbc/gel-foundations/typography';
-import { node } from 'prop-types';
 import {
   GEL_SPACING, // 8 px
 } from '@bbc/gel-foundations/spacings';
@@ -25,7 +23,7 @@ export const UsefulLink = styled.a`
   }
 `;
 
-const StyledUsefulLinksUl = styled.ul`
+export const UsefulLinksUl = styled.ul.attrs({ role: 'list' })`
   padding: 0;
   margin: 0;
   list-style-type: none;
@@ -38,13 +36,7 @@ const StyledUsefulLinksUl = styled.ul`
   }
 `;
 
-export const UsefulLinksUl = ({ children, ...props }) => (
-  <StyledUsefulLinksUl role="list" {...props}>
-    {children}
-  </StyledUsefulLinksUl>
-);
-
-const StyledUsefulLinksLi = styled.li`
+export const UsefulLinksLi = styled.li.attrs({ role: 'listitem' })`
   padding-top: ${GEL_SPACING};
   @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
     @supports not (${grid}) {
@@ -53,17 +45,3 @@ const StyledUsefulLinksLi = styled.li`
     }
   }
 `;
-
-export const UsefulLinksLi = ({ children, ...props }) => (
-  <StyledUsefulLinksLi role="listitem" {...props}>
-    {children}
-  </StyledUsefulLinksLi>
-);
-
-UsefulLinksUl.propTypes = {
-  children: node.isRequired,
-};
-
-UsefulLinksLi.propTypes = {
-  children: node.isRequired,
-};
