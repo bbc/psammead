@@ -12,7 +12,7 @@ exports[`Media Player: Amp should render an amp-iframe with an amp-img nested in
   <body>
     <div>
       <amp-iframe
-        allowfullscreen="true"
+        allowfullscreen="allowfullscreen"
         frameborder="0"
         layout="fill"
         sandbox="allow-scripts allow-same-origin"

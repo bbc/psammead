@@ -1,6 +1,6 @@
 {
   "name": "psammead-grid",
-  "version": "1.0.0-alpha.0",
+  "version": "1.0.0",
   "publishConfig": {
     "tag": "alpha"
   },
@@ -27,7 +27,7 @@
   ],
   "dependencies": {
     "@bbc/gel-foundations": "^3.4.0",
-    "@bbc/psammead-styles": "^2.3.0"
+    "@bbc/psammead-styles": "^4.0.1"
   },
   "peerDependencies": {
     "styled-components": "^4.3.2"
