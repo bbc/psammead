@@ -1,6 +1,6 @@
 {
   "name": "@bbc/psammead-script-switch",
-  "version": "1.0.0.aplha-1",
+  "version": "1.0.0-alpha.1",
   "main": "dist/index.js",
   "module": "esm/index.js",
   "sideEffects": false,
@@ -25,7 +25,7 @@
   "homepage": "https://github.com/BBC-News/psammead/blob/latest/packages/components/psammead-script-switch/README.md",
   "dependencies": {
     "@bbc/gel-foundations": "^3.4.0",
-    "@bbc/psammead-styles": "^3.0.0"
+    "@bbc/psammead-styles": "^4.0.1"
   },
   "peerDependencies": {
     "react": "^16.9.0",
