@@ -1,7 +1,7 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { withKnobs } from '@storybook/addon-knobs';
-import { inputProvider } from '@bbc/psammead-storybook-helpers';
+import { dirDecorator } from '@bbc/psammead-storybook-helpers';
 import { UsefulLink, UsefulLinksLi, UsefulLinksUl } from './index';
 import notes from '../README.md';
 
@@ -28,49 +28,22 @@ const usefulCaptions = [
   },
 ];
 
-const generateStory = ({ usefulItems }) =>
-  inputProvider({
-    // eslint-disable-next-line react/prop-types
-    componentFunction: ({ script, service }) => {
-      return (
-        <>
-          {usefulItems.length === 1 ? (
-            <UsefulLink
-              script={script}
-              service={service}
-              href={usefulItems[0].url}
-            >
-              {usefulItems[0].name}
-            </UsefulLink>
-          ) : (
-            <UsefulLinksUl>
-              {usefulItems.map(item => {
-                return (
-                  <UsefulLinksLi key={usefulItems.indexOf(item)}>
-                    <UsefulLink
-                      service={service}
-                      script={script}
-                      href={item.url}
-                    >
-                      {item.name}
-                    </UsefulLink>
-                  </UsefulLinksLi>
-                );
-              })}
-            </UsefulLinksUl>
-          )}
-        </>
-      );
-    },
-  });
-
 storiesOf('Components|UsefulLinks', module)
   .addDecorator(withKnobs)
+  .addDecorator(dirDecorator)
   .add(
     'one link',
-    generateStory({
-      usefulItems: usefulCaptions.slice(0, 1),
-    }),
+    ({ service, script }) => {
+      return (
+        <UsefulLink
+          script={script}
+          service={service}
+          href={usefulCaptions[0].url}
+        >
+          {usefulCaptions[0].name}
+        </UsefulLink>
+      );
+    },
     {
       notes,
       knobs: { escapeHTML: false },
@@ -78,9 +51,21 @@ storiesOf('Components|UsefulLinks', module)
   )
   .add(
     'multiple links',
-    generateStory({
-      usefulItems: usefulCaptions,
-    }),
+    ({ service, script }) => {
+      return (
+        <UsefulLinksUl>
+          {usefulCaptions.map(item => {
+            return (
+              <UsefulLinksLi key={usefulCaptions.indexOf(item)}>
+                <UsefulLink service={service} script={script} href={item.url}>
+                  {item.name}
+                </UsefulLink>
+              </UsefulLinksLi>
+            );
+          })}
+        </UsefulLinksUl>
+      );
+    },
     {
       notes,
       knobs: { escapeHTML: false },
