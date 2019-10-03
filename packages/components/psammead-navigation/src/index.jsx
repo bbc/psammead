@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import styled, { css } from 'styled-components';
-import { shape, string, node, bool, oneOf, func } from 'prop-types';
+import { shape, string, node, bool, oneOf, func, instanceOf } from 'prop-types';
 import VisuallyHiddenText from '@bbc/psammead-visually-hidden-text';
 import { C_WHITE, C_POSTBOX, C_GHOST } from '@bbc/psammead-styles/colours';
 import {
@@ -198,6 +198,17 @@ const StyledNav = styled.nav`
 `;
 
 // Prototype components
+const useOutsideHandler = (ref, handler) => {
+  useEffect(() => {
+    // Bind the event listener
+    document.addEventListener('mousedown', handler);
+    return () => {
+      // Unbind the event listener on clean up
+      document.removeEventListener('mousedown', handler);
+    };
+  });
+};
+
 const MenuWrapper = styled.div`
   max-width: ${GEL_GROUP_5_SCREEN_WIDTH_MIN};
   overflow: scroll;
@@ -291,7 +302,14 @@ const MenuPositioningWrapper = ({ children, dir }) => {
   );
 };
 
-const NavMenu = ({ script, service, setMenuVisibile, menuVisible, dir }) => {
+const NavMenu = ({
+  script,
+  service,
+  setMenuVisibile,
+  menuVisible,
+  dir,
+  buttonRef,
+}) => {
   const updateMenuVisiblity = () => setMenuVisibile(!menuVisible);
   return (
     <StyledNavMenu dir={dir}>
@@ -299,6 +317,7 @@ const NavMenu = ({ script, service, setMenuVisibile, menuVisible, dir }) => {
         style={{ border: 0, padding: 0, backgroundColor: 'inherit' }}
         onClick={updateMenuVisiblity}
         type="button"
+        ref={buttonRef}
       >
         <StyledLink script={script} service={service}>
           Menu
@@ -313,17 +332,27 @@ const NavMenu = ({ script, service, setMenuVisibile, menuVisible, dir }) => {
   );
 };
 
-const Menu = ({ children, visible, dir, fullLength }) => {
+const Menu = ({ children, visible, dir, fullLength, wrapperRef }) => {
   return fullLength ? (
     <MenuPositioningWrapper dir={dir}>
-      <MenuWrapper visible={visible} dir={dir} fullLength={fullLength}>
+      <MenuWrapper
+        visible={visible}
+        dir={dir}
+        fullLength={fullLength}
+        ref={wrapperRef}
+      >
         {React.Children.map(children, child =>
           React.cloneElement(child, { inMenu: true }),
         )}
       </MenuWrapper>
     </MenuPositioningWrapper>
   ) : (
-    <MenuWrapper visible={visible} dir={dir} fullLength={fullLength}>
+    <MenuWrapper
+      visible={visible}
+      dir={dir}
+      fullLength={fullLength}
+      ref={wrapperRef}
+    >
       {React.Children.map(children, child =>
         React.cloneElement(child, { inMenu: true }),
       )}
@@ -337,12 +366,14 @@ NavMenu.propTypes = {
   setMenuVisibile: func.isRequired,
   menuVisible: bool.isRequired,
   dir: string.isRequired,
+  buttonRef: instanceOf(Element).isRequired,
 };
 
 Menu.propTypes = {
   children: node.isRequired,
   visible: bool.isRequired,
   dir: string.isRequired,
+  wrapperRef: instanceOf(Element).isRequired,
   fullLength: bool,
 };
 
@@ -376,6 +407,22 @@ const Navigation = ({
   fullLength,
 }) => {
   const [menuVisible, setMenuVisibile] = useState(false);
+  const wrapperRef = useRef(null);
+  const buttonRef = useRef(null);
+
+  const handleClickOutside = event => {
+    if (
+      wrapperRef.current &&
+      !wrapperRef.current.contains(event.target) &&
+      buttonRef.current &&
+      !buttonRef.current.contains(event.target) &&
+      menuVisible
+    ) {
+      setMenuVisibile(false);
+    }
+  };
+
+  useOutsideHandler(wrapperRef, handleClickOutside);
   return (
     <>
       <StyledNav role="navigation" dir={dir}>
@@ -389,11 +436,17 @@ const Navigation = ({
             setMenuVisibile={setMenuVisibile}
             menuVisible={menuVisible}
             dir={dir}
+            buttonRef={buttonRef}
           />
           {children}
         </NavWrapper>
       </StyledNav>
-      <Menu visible={menuVisible} dir={dir} fullLength={fullLength}>
+      <Menu
+        visible={menuVisible}
+        dir={dir}
+        fullLength={fullLength}
+        wrapperRef={wrapperRef}
+      >
         {children}
       </Menu>
     </>
