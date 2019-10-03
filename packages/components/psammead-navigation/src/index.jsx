@@ -202,17 +202,19 @@ const MenuWrapper = styled.div`
   max-width: ${GEL_GROUP_5_SCREEN_WIDTH_MIN};
   overflow: scroll;
   border-bottom: solid ${C_POSTBOX};
-  display: ${({ visible }) => (visible ? 'block' : 'none')};
+  display: ${({ visible }) => (visible ? 'inline-block' : 'none')};
   background-color: ${C_WHITE};
   margin: 0 auto;
-  position: relative;
+  position: ${({ fullLength }) => (fullLength ? 'relative' : 'absolute')};
   ${({ dir }) => (dir === 'ltr' ? 'left' : 'right')}: 0;
+  ${({ dir }) => dir === 'rtl' && 'float: right;'}
   border-left: solid ${C_POSTBOX};
   border-right: solid ${C_POSTBOX};
-  z-index: 10000000000000;
-  bottom: 0;
+  z-index: 10;
+  ${({ fullLength }) => fullLength && 'bottom: 0;'}
   flex-grow: 1;
   pointer-events: auto;
+  height: 90vh;
 
   @media (min-width: ${GEL_GROUP_5_SCREEN_WIDTH_MIN}) {
     display: none;
@@ -257,6 +259,9 @@ const StyledNavMenu = styled.div`
   }
 `;
 
+// This is a "dummy" nav bar that is invisible but moves the real menu dropdown down
+// below the nav bar allowing for position to be absolute and fill screen but leave
+// the real nav bar visible.
 const MenuPositioningWrapper = ({ children, dir }) => {
   const positioning = dir === 'ltr' ? { left: 0 } : { right: 0 };
   return (
@@ -308,15 +313,21 @@ const NavMenu = ({ script, service, setMenuVisibile, menuVisible, dir }) => {
   );
 };
 
-const Menu = ({ children, visible, dir }) => {
-  return (
+const Menu = ({ children, visible, dir, fullLength }) => {
+  return fullLength ? (
     <MenuPositioningWrapper dir={dir}>
-      <MenuWrapper visible={visible} dir={dir}>
+      <MenuWrapper visible={visible} dir={dir} fullLength={fullLength}>
         {React.Children.map(children, child =>
           React.cloneElement(child, { inMenu: true }),
         )}
       </MenuWrapper>
     </MenuPositioningWrapper>
+  ) : (
+    <MenuWrapper visible={visible} dir={dir} fullLength={fullLength}>
+      {React.Children.map(children, child =>
+        React.cloneElement(child, { inMenu: true }),
+      )}
+    </MenuWrapper>
   );
 };
 
@@ -332,6 +343,11 @@ Menu.propTypes = {
   children: node.isRequired,
   visible: bool.isRequired,
   dir: string.isRequired,
+  fullLength: bool,
+};
+
+Menu.defaultProps = {
+  fullLength: false,
 };
 
 Chevron.propTypes = {
@@ -349,9 +365,16 @@ MenuPositioningWrapper.propTypes = {
   children: node.isRequired,
   dir: string.isRequired,
 };
-// End prototypes
 
-const Navigation = ({ children, script, skipLinkText, service, dir }) => {
+// End prototypes
+const Navigation = ({
+  children,
+  script,
+  skipLinkText,
+  service,
+  dir,
+  fullLength,
+}) => {
   const [menuVisible, setMenuVisibile] = useState(false);
   return (
     <>
@@ -370,7 +393,7 @@ const Navigation = ({ children, script, skipLinkText, service, dir }) => {
           {children}
         </NavWrapper>
       </StyledNav>
-      <Menu visible={menuVisible} dir={dir}>
+      <Menu visible={menuVisible} dir={dir} fullLength={fullLength}>
         {children}
       </Menu>
     </>
@@ -383,9 +406,10 @@ Navigation.propTypes = {
   skipLinkText: string.isRequired,
   service: string.isRequired,
   dir: oneOf(['ltr', 'rtl']),
+  fullLength: bool,
 };
 
-Navigation.defaultProps = { dir: 'ltr' };
+Navigation.defaultProps = { dir: 'ltr', fullLength: false };
 
 NavigationUl.propTypes = {
   children: node.isRequired,
