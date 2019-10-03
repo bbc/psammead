@@ -65,7 +65,7 @@ const talos = () => {
           ),
         )
         .then(() => commitChanges('Talos - Update changelogs'))
-        .then(() => bumpSimorghPackages(bumpedPackagesObj));
+        .then(() => bumpSimorghPackages(bumpedPackagesObj, branchName));
     })
     .catch(e => {
       // eslint-disable-next-line no-console
