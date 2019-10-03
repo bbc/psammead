@@ -14,15 +14,14 @@ const StyledLink = styled.a`
   display: inline-block;
   border: 0.0625rem solid ${C_WHITE};
   color: ${C_WHITE};
-  text-align: center;
   text-decoration: none;
   padding: 0 1rem;
   height: 3rem;
 
   &:hover {
     border-width: 0.25rem;
-    line-height: 2.675rem;
-    padding: 0 0.8rem;
+    line-height: 2.62rem;
+    padding: 0 0.81rem;
   }
   &:focus {
     background-color: ${C_WHITE};
@@ -37,8 +36,8 @@ const StyledLink = styled.a`
     height: 2.5rem;
     padding: 0 0.75rem;
     &:hover {
-      line-height: 2.125rem;
-      padding: 0 0.585rem;
+      line-height: 2.1rem;
+      padding: 0 0.56rem;
     }
   }
 `;
