@@ -199,7 +199,7 @@ const TextGridFallback = css`
   @media (min-width: ${GEL_GROUP_4_SCREEN_WIDTH_MIN}) {
     display: block;
     width: 100%;
-    padding: ${GEL_SPACING} 0 !important;
+    padding: ${GEL_SPACING} 0;
   }
 `;
 
@@ -207,11 +207,11 @@ const TextGridItem = styled.div`
   display: inline-block;
   vertical-align: top;
 
-  ${({ topStory }) => (topStory ? TextGridFallbackTopStory : TextGridFallback)}
-
   @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
     padding: 0 ${GEL_SPACING_DBL};
   }
+
+  ${({ topStory }) => (topStory ? TextGridFallbackTopStory : TextGridFallback)}
 
   @supports (${grid}) {
     display: block;
