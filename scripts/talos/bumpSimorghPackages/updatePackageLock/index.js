@@ -25,7 +25,7 @@ const updatePackageLock = async (packageFile, branchName) => {
     repoName: 'simorgh',
     branchName,
     path: 'package-lock.json',
-    content: JSON.stringify(newPackageLock),
+    content: newPackageLock,
     message: 'Talos - Update package-lock.json',
   });
 };
