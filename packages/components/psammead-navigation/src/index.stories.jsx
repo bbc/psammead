@@ -19,6 +19,7 @@ import igboNavData from '../testHelpers/igbo';
 import pidginNavData from '../testHelpers/pidgin';
 import yorubaNavData from '../testHelpers/yoruba';
 import arabicNavData from '../testHelpers/arabic';
+import ukrainianNavData from '../testHelpers/ukrainian';
 
 import notes from '../README.md';
 
@@ -47,6 +48,13 @@ const navStoriesData = [
     currentPageText: 'Current page',
     data: arabicNavData,
     dir: 'rtl',
+  },
+  {
+    title: 'ukrainian',
+    skipLinkText: 'Skip to content',
+    currentPageText: 'Current page',
+    data: ukrainianNavData,
+    dir: 'ltr',
   },
 ];
 
