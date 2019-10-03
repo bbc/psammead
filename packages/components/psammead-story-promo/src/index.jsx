@@ -185,6 +185,7 @@ const TextGridColumns = css`
 const TextGridFallbackTopStory = css`
   @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
     width: ${halfWidthColumnsMaxScaleable};
+    padding: 0 ${GEL_SPACING_DBL};
   }
 
   @media (min-width: ${GEL_GROUP_5_SCREEN_WIDTH_MIN}) {
@@ -196,6 +197,10 @@ const TextGridFallback = css`
   width: ${fourOfSixColumnsMaxWidthScaleable};
   padding: 0 ${GEL_SPACING};
 
+  @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
+    padding: 0 ${GEL_SPACING_DBL};
+  }
+
   @media (min-width: ${GEL_GROUP_4_SCREEN_WIDTH_MIN}) {
     display: block;
     width: 100%;
@@ -206,10 +211,6 @@ const TextGridFallback = css`
 const TextGridItem = styled.div`
   display: inline-block;
   vertical-align: top;
-
-  @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
-    padding: 0 ${GEL_SPACING_DBL};
-  }
 
   ${({ topStory }) => (topStory ? TextGridFallbackTopStory : TextGridFallback)}
 
