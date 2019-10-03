@@ -6,8 +6,10 @@ const createRemoteBranch = async ({
   newBranch,
   oldBranch,
 }) => {
+  if (!newBranch) return Promise.reject(Error('Invalid new branch name'));
+
   const fromBranch = oldBranch || 'latest';
-  const repo = getGhRepo(username, repoName);
+  const repo = await getGhRepo(username, repoName);
 
   // eslint-disable-next-line no-console
   console.log(`* Creating remote branch "${newBranch}" from "${fromBranch}"`);

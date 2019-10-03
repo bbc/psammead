@@ -8,7 +8,12 @@ const commitChanges = async ({
   content,
   message,
 }) => {
-  const repo = getGhRepo(username, repoName);
+  if (!branchName) return Promise.reject(Error('Invalid branch name'));
+  if (!path) return Promise.reject(Error('Invalid repository path'));
+  if (!content) return Promise.reject(Error('Invalid commit content'));
+  if (!message) return Promise.reject(Error('Invalid commit message'));
+
+  const repo = await getGhRepo(username, repoName);
 
   // eslint-disable-next-line no-console
   console.log(`* Updating remote file "${path}"`);

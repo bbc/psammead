@@ -1,7 +1,9 @@
 const getGhRepo = require('../getGhRepo');
 
 const getRemoteFile = async ({ username, repoName, branch, path }) => {
-  const repo = getGhRepo(username, repoName);
+  if (!path) return Promise.reject(Error('Invalid path'));
+
+  const repo = await getGhRepo(username, repoName);
   const response = await repo.getContents(branch || 'latest', path);
   return {
     ...response,
