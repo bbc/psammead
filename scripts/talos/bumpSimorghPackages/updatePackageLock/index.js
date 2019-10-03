@@ -15,7 +15,7 @@ const updatePackageLock = async (packageFile, branchName) => {
   const folder = 'simorgh-package';
   rm('-rf', `./${folder}`);
   mkdir(`./${folder}`);
-  fs.writeFileSync(`./${folder}/package.json`, packageFile);
+  fs.writeFileSync(`./${folder}/package.json`, JSON.stringify(packageFile));
   fs.writeFileSync(`./${folder}/package-lock.json`, packageLock);
   exec('npm install', { cwd: `./${folder}` });
   const newPackageLock = readFileSync(`./${folder}/package-lock.json`);
