@@ -78,6 +78,7 @@ const inputs = () => {
   const svgHeightInput = number('desired height svg', svgMaxHeight);
   const borderBottom = boolean('Border Bottom', false);
   const borderTop = boolean('Border Top', false);
+  const fullLength = boolean('Screen length menu', false);
   const backgroundColour = color('Background colour', `${C_POSTBOX}`);
   const logoColour = color('Logo colour', `${C_WHITE}`);
 
@@ -92,6 +93,7 @@ const inputs = () => {
     borderBottom,
     backgroundColour,
     logoColour,
+    fullLength,
   };
 };
 
@@ -142,6 +144,7 @@ const navigationStory = (skipLinkText, currentPageText, navData, dir, brand) =>
           skipLinkText={skipLinkText}
           service={service}
           dir={dir}
+          fullLength={inputs().fullLength}
         >
           <NavigationUl>
             {navData.map((item, index) => {
