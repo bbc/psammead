@@ -225,7 +225,7 @@ const MenuWrapper = styled.div`
   ${({ fullLength }) => fullLength && 'bottom: 0;'}
   flex-grow: 1;
   pointer-events: auto;
-  height: 90vh;
+  max-height: 85vh;
 
   @media (min-width: ${GEL_GROUP_5_SCREEN_WIDTH_MIN}) {
     display: none;
