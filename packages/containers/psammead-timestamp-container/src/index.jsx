@@ -3,10 +3,12 @@ import { number, string, bool, shape } from 'prop-types';
 import { scriptPropType } from '@bbc/gel-foundations/prop-types';
 import Timestamp from '@bbc/psammead-timestamp';
 import moment from 'moment-timezone';
+import { jalaali as secondaryCalendar } from '../../../utilities/psammead-calendars';
 import {
   isValidDateTime,
+  unixTimestampToMoment,
   formatUnixTimestamp,
-  showRelativeTime,
+  getDateTime,
 } from './timestampUtilities';
 
 const TimestampContainer = ({
@@ -22,12 +24,24 @@ const TimestampContainer = ({
   locale,
   service,
 }) => {
+  let secondaryString;
   if (!isValidDateTime(new Date(timestamp))) {
     return null;
   }
-
   if (locale) {
     moment.locale(locale);
+  }
+
+  if (
+    (typeof secondaryCalendar !== 'undefined' || secondaryCalendar !== null) &&
+    !isRelative
+  ) {
+    const calendarString = secondaryCalendar.formatDate(
+      unixTimestampToMoment(timestamp),
+    );
+    if (calendarString != null) {
+      secondaryString = ` - ${calendarString}`;
+    }
   }
 
   return (
@@ -38,7 +52,8 @@ const TimestampContainer = ({
       service={service}
     >
       {prefix ? `${prefix} ` : null}
-      {showRelativeTime(timestamp, isRelative, format, timezone, locale)}
+      {getDateTime(timestamp, isRelative, format, timezone, locale)}
+      {secondaryString}
       {suffix ? ` ${suffix}` : null}
     </Timestamp>
   );

@@ -30,19 +30,23 @@ export const isValidDateTime = dateTime => {
   return !isNaN(new Date(dateTime)); // eslint-disable-line no-restricted-globals
 };
 
-// when using this function, we recommend using webpack configuration to only load in the relevant timezone, rather than all of moment-timezone
+// when using the following 2 functions, we recommend using webpack configuration to only load in the relevant timezone, rather than all of moment-timezone
+export const unixTimestampToMoment = (timestamp, locale) => {
+  moment.locale(locale);
+  return moment(timestamp);
+};
+
 export const formatUnixTimestamp = (
   timestamp,
   momentString,
   timezone,
   locale = 'en-gb',
 ) =>
-  moment(timestamp)
-    .locale(locale)
+  unixTimestampToMoment(timestamp, locale)
     .tz(timezone)
     .format(momentString);
 
-export const showRelativeTime = (
+export const getDateTime = (
   timestamp,
   isRelative,
   format,
