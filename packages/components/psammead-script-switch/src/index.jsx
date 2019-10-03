@@ -7,14 +7,6 @@ import { C_WHITE, C_EBON } from '@bbc/psammead-styles/colours';
 import { string, shape, node } from 'prop-types';
 import { scriptPropType } from '@bbc/gel-foundations/prop-types';
 
-const SIZE_ABOVE_600PX = '3rem'; // 48px
-const SIZE_BELOW_600PX = '2.5rem'; // 40px
-
-const getDimensions = size => `
-  height: ${size}
-  width: ${size}
-`;
-
 const StyledLink = styled.a`
   ${({ script }) => script && getPica(script)}
   ${({ service }) => service && getSansRegular(service)}
@@ -24,10 +16,13 @@ const StyledLink = styled.a`
   color: ${C_WHITE};
   text-align: center;
   text-decoration: none;
+  padding: 0 1rem;
+  height: 3rem;
 
   &:hover {
     border-width: 0.25rem;
     line-height: 2.675rem;
+    padding: 0 0.8rem;
   }
   &:focus {
     background-color: ${C_WHITE};
@@ -35,30 +30,29 @@ const StyledLink = styled.a`
   }
 
   @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
-    line-height: ${SIZE_ABOVE_600PX};
-    ${getDimensions(SIZE_ABOVE_600PX)}
+    line-height: 3rem;
   }
   @media (max-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
-    line-height: ${SIZE_BELOW_600PX};
-    ${getDimensions(SIZE_BELOW_600PX)}
+    line-height: 2.5rem;
+    height: 2.5rem;
+    padding: 0 0.75rem;
     &:hover {
       line-height: 2.125rem;
+      padding: 0 0.585rem;
     }
   }
 `;
 
-const ScriptSwitch = ({ children, script, service, href, variant }) => {
-  return (
-    <StyledLink
-      script={script}
-      service={service}
-      href={href}
-      data-variant={variant}
-    >
-      {children}
-    </StyledLink>
-  );
-};
+const ScriptSwitch = ({ children, script, service, href, variant }) => (
+  <StyledLink
+    script={script}
+    service={service}
+    href={href}
+    data-variant={variant}
+  >
+    {children}
+  </StyledLink>
+);
 
 ScriptSwitch.defaultProps = {
   variant: null,

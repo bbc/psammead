@@ -13,11 +13,13 @@ exports[`ScriptSwitch should render correctly 1`] = `
   text-align: center;
   -webkit-text-decoration: none;
   text-decoration: none;
+  padding: 0 1rem;
 }
 
 .c0:hover {
   border-width: 0.25rem;
   line-height: 2.675rem;
+  padding: 0 0.8rem;
 }
 
 .c0:focus {
@@ -43,7 +45,6 @@ exports[`ScriptSwitch should render correctly 1`] = `
   .c0 {
     line-height: 3rem;
     height: 3rem;
-    width: 3rem;
   }
 }
 
@@ -51,7 +52,6 @@ exports[`ScriptSwitch should render correctly 1`] = `
   .c0 {
     line-height: 2.5rem;
     height: 2.5rem;
-    width: 2.5rem;
   }
 
   .c0:hover {
