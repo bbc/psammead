@@ -269,7 +269,7 @@ exports[`Navigation should render correctly 1`] = `
   -ms-flex-positive: 1;
   flex-grow: 1;
   pointer-events: auto;
-  height: 90vh;
+  max-height: 85vh;
 }
 
 .c3 {
