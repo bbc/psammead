@@ -24,12 +24,12 @@ describe('makeNumeralTranslator', () => {
     ];
     const translate = numerals.makeNumeralTranslator(RomanNumerals);
 
-    it.each(examples)('should translate %s', (input, expected) => {
+    it.each(examples)('should translate input %s', (input, expected) => {
       expect(translate(input)).toBe(expected);
     });
   });
 
-  it('invalid numeral systems', () => {
+  describe('invalid numeral systems', () => {
     const invalidSystems = [
       '0_1_2'.split('_'), // too small
       '0_1_2_3_4_5_6_7_8_9_A'.split('_'), // too big
@@ -37,10 +37,12 @@ describe('makeNumeralTranslator', () => {
       undefined, // missing arg
     ];
 
-    invalidSystems.forEach(invalidSystem => {
-      const translate = numerals.makeNumeralTranslator(invalidSystem);
-      const input = 'Test 123';
-      expect(translate(input)).toBe(input);
+    it('should return the input unchanged', () => {
+      invalidSystems.forEach(invalidSystem => {
+        const translate = numerals.makeNumeralTranslator(invalidSystem);
+        const input = 'Test 123';
+        expect(translate(input)).toBe(input);
+      });
     });
   });
 });
