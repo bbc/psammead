@@ -8,6 +8,7 @@ const checkoutBranch = require('./checkoutBranch');
 const commitChanges = require('./commitChanges');
 const createPullRequest = require('./createPullRequest');
 const getBranchName = require('./getBranchName');
+const bumpSimorghPackages = require('./bumpSimorghPackages');
 const talos = require('./index');
 
 jest.mock('./getChangedPackages');
@@ -20,6 +21,7 @@ jest.mock('./checkoutBranch');
 jest.mock('./commitChanges');
 jest.mock('./createPullRequest');
 jest.mock('./getBranchName');
+jest.mock('./bumpSimorghPackages');
 
 jest.spyOn(process, 'exit').mockImplementation(() => {});
 jest.spyOn(global.console, 'log').mockImplementation(() => {});
@@ -41,6 +43,7 @@ describe('Talos', () => {
       Promise.resolve({ data: { html_url: 'prURL' } }),
     );
     bumpPackages.mockImplementation(() => Promise.resolve());
+    bumpSimorghPackages.mockImplementation(async () => {});
   });
 
   it('should run expected commands to create PR', async () => {
@@ -94,6 +97,14 @@ describe('Talos', () => {
 
     expect(getBranchName).toHaveBeenCalledTimes(1);
     expect(getBranchName).toHaveBeenCalled();
+
+    expect(bumpSimorghPackages).toHaveBeenCalledWith(
+      {
+        apple: ['package1  ^1.2  →  ^1.4'],
+        pears: ['package1  ^1.2  →  ^1.4', 'package2  ^1.0  →  ^1.1'],
+      },
+      'branchname',
+    );
 
     expect(process.exit).not.toHaveBeenCalled();
     expect(global.console.log).not.toHaveBeenCalled();
