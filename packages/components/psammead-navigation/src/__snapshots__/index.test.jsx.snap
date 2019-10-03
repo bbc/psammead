@@ -21,6 +21,11 @@ exports[`Navigation should render correctly 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-right: 0;
 }
 
 .c2 {
@@ -66,7 +71,7 @@ exports[`Navigation should render correctly 1`] = `
   white-space: nowrap;
 }
 
-.c12 {
+.c13 {
   list-style-type: none;
   padding: 0;
   margin: 0;
@@ -80,7 +85,7 @@ exports[`Navigation should render correctly 1`] = `
   z-index: 2;
 }
 
-.c13 {
+.c14 {
   display: block;
   position: relative;
   z-index: 2;
@@ -157,7 +162,37 @@ exports[`Navigation should render correctly 1`] = `
   border: 0.25rem solid #FFFFFF;
 }
 
-.c14 {
+.c11 {
+  color: #FDFDFD;
+  cursor: pointer;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  display: inline-block;
+  padding: 0.75rem 1rem;
+  white-space: nowrap;
+}
+
+.c11:hover::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-bottom: 0.25rem solid #FFFFFF;
+}
+
+.c11:focus::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-bottom: 0.25rem solid #FFFFFF;
+  top: 0;
+  border: 0.25rem solid #FFFFFF;
+}
+
+.c15 {
   font-size: 0.9375rem;
   line-height: 1.25rem;
   font-family: ReithSans,Helvetica,Arial,sans-serif;
@@ -171,7 +206,7 @@ exports[`Navigation should render correctly 1`] = `
   padding: 0.75rem 1rem;
 }
 
-.c14:hover::after {
+.c15:hover::after {
   content: '';
   position: absolute;
   left: 0;
@@ -181,7 +216,7 @@ exports[`Navigation should render correctly 1`] = `
   border-bottom: 0.3125rem solid #B80000;
 }
 
-.c14:focus::after {
+.c15:focus::after {
   content: '';
   position: absolute;
   left: 0;
@@ -192,7 +227,7 @@ exports[`Navigation should render correctly 1`] = `
   border: 0.25rem solid #FFFFFF;
 }
 
-.c16 {
+.c17 {
   font-size: 0.9375rem;
   line-height: 1.25rem;
   font-family: ReithSans,Helvetica,Arial,sans-serif;
@@ -206,7 +241,7 @@ exports[`Navigation should render correctly 1`] = `
   padding: 0.75rem 1rem;
 }
 
-.c16:hover::after {
+.c17:hover::after {
   content: '';
   position: absolute;
   left: 0;
@@ -215,7 +250,7 @@ exports[`Navigation should render correctly 1`] = `
   border-bottom: 0.25rem solid #B80000;
 }
 
-.c16:focus::after {
+.c17:focus::after {
   content: '';
   position: absolute;
   left: 0;
@@ -235,7 +270,7 @@ exports[`Navigation should render correctly 1`] = `
   border-bottom: 0.25rem solid #FFFFFF;
 }
 
-.c15::after {
+.c16::after {
   content: '';
   position: absolute;
   left: 0;
@@ -252,7 +287,7 @@ exports[`Navigation should render correctly 1`] = `
   left: 0;
 }
 
-.c11 {
+.c12 {
   max-width: 80rem;
   overflow: scroll;
   border-bottom: solid #B80000;
@@ -343,55 +378,49 @@ exports[`Navigation should render correctly 1`] = `
   }
 }
 
-@media (min-width:20rem) and (max-width:37.4375rem) {
-  .c14 {
-    font-size: 1rem;
-    line-height: 1.25rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c14 {
-    font-size: 1rem;
-    line-height: 1.25rem;
-  }
-}
-
 @media (max-width:24.9375rem) {
-  .c14 {
-    padding: 0.75rem 0.5rem;
-  }
-}
-
-@media (min-width:20rem) and (max-width:37.4375rem) {
-  .c16 {
-    font-size: 1rem;
-    line-height: 1.25rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c16 {
-    font-size: 1rem;
-    line-height: 1.25rem;
-  }
-}
-
-@media (max-width:24.9375rem) {
-  .c16 {
-    padding: 0.75rem 0.5rem;
-  }
-}
-
-@media (min-width:80rem) {
   .c11 {
-    display: none;
+    padding: 0.75rem 0.5rem;
   }
 }
 
-@media (min-width:80rem) {
-  .c3 {
-    display: none;
+@media (min-width:20rem) and (max-width:37.4375rem) {
+  .c15 {
+    font-size: 1rem;
+    line-height: 1.25rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .c15 {
+    font-size: 1rem;
+    line-height: 1.25rem;
+  }
+}
+
+@media (max-width:24.9375rem) {
+  .c15 {
+    padding: 0.75rem 0.5rem;
+  }
+}
+
+@media (min-width:20rem) and (max-width:37.4375rem) {
+  .c17 {
+    font-size: 1rem;
+    line-height: 1.25rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .c17 {
+    font-size: 1rem;
+    line-height: 1.25rem;
+  }
+}
+
+@media (max-width:24.9375rem) {
+  .c17 {
+    padding: 0.75rem 0.5rem;
   }
 }
 
@@ -500,27 +529,37 @@ exports[`Navigation should render correctly 1`] = `
             Nke ka ewuewu
           </a>
         </li>
+        <a
+          class="c11"
+        >
+          <div
+            style="width: 1rem; height: 1px;"
+          />
+        </a>
       </ul>
+      <div
+        style="width: 2rem; height: 100%; flex-shrink: 0; z-index: 3; overflow: hidden; position: absolute; right: 0px; top: 0px;"
+      />
     </div>
   </nav>
   <div
-    class="c11"
+    class="c12"
     dir="ltr"
   >
     <ul
-      class="c12"
+      class="c13"
       role="list"
     >
       <li
-        class="c6 c13"
+        class="c6 c14"
         role="listitem"
       >
         <a
-          class="c14"
+          class="c15"
           href="/igbo"
         >
           <span
-            class="c15"
+            class="c16"
             role="text"
           >
             <span
@@ -534,33 +573,33 @@ exports[`Navigation should render correctly 1`] = `
         </a>
       </li>
       <li
-        class="c6 c13"
+        class="c6 c14"
         role="listitem"
       >
         <a
-          class="c16"
+          class="c17"
           href="/igbo/egwuregwu"
         >
           Egwuregwu
         </a>
       </li>
       <li
-        class="c6 c13"
+        class="c6 c14"
         role="listitem"
       >
         <a
-          class="c16"
+          class="c17"
           href="/igbo/media/video"
         >
           Ihe nkiri
         </a>
       </li>
       <li
-        class="c6 c13"
+        class="c6 c14"
         role="listitem"
       >
         <a
-          class="c16"
+          class="c17"
           href="/igbo/popular/read"
         >
           Nke ka ewuewu

@@ -7,6 +7,7 @@ import {
   GEL_SPACING_HLF,
   GEL_SPACING,
   GEL_SPACING_DBL,
+  GEL_SPACING_QUAD,
 } from '@bbc/gel-foundations/spacings';
 import {
   GEL_GROUP_1_SCREEN_WIDTH_MAX,
@@ -31,6 +32,8 @@ const NavWrapper = styled.div`
   max-width: ${GEL_GROUP_5_SCREEN_WIDTH_MIN};
   margin: 0 auto;
   display: flex;
+  align-items: center;
+  margin-right: 0;
 `;
 
 const SkipLink = styled.a`
@@ -72,7 +75,7 @@ const StyledUnorderedList = styled.ul`
   margin: 0;
   position: relative;
   overflow: hidden;
-  ${({ inMenu }) => !inMenu && 'overflow-x: scroll;white-space: nowrap;'}
+  ${({ inMenu }) => !inMenu && 'overflow-x: scroll; white-space: nowrap;'}
 `;
 
 const StyledListItem = styled.li`
@@ -148,6 +151,11 @@ export const NavigationUl = ({ children, inMenu, ...props }) => (
           React.cloneElement(child, { inMenu: true }),
         )
       : children}
+    {!inMenu && (
+      <StyledLink>
+        <div style={{ width: GEL_SPACING_DBL, height: '1px' }} />
+      </StyledLink>
+    )}
   </StyledUnorderedList>
 );
 
@@ -226,10 +234,6 @@ const MenuWrapper = styled.div`
   flex-grow: 1;
   pointer-events: auto;
   max-height: 85vh;
-
-  @media (min-width: ${GEL_GROUP_5_SCREEN_WIDTH_MIN}) {
-    display: none;
-  }
 `;
 
 const Chevron = ({ dir, children }) => (
@@ -262,12 +266,8 @@ const DownChevronSvg = ({ dir }) => (
 
 const StyledNavMenu = styled.div`
   position: relative;
-  ${({ dir }) =>
-    dir === 'ltr' ? 'border-right' : 'border-left'}: ${C_WHITE} solid;
-
-  @media (min-width: ${GEL_GROUP_5_SCREEN_WIDTH_MIN}) {
-    display: none;
-  }
+  ${({ dir }) => (dir === 'ltr' ? 'border-right' : 'border-left')}: ${C_WHITE}
+    solid;
 `;
 
 // This is a "dummy" nav bar that is invisible but moves the real menu dropdown down
@@ -423,6 +423,9 @@ const Navigation = ({
   };
 
   useOutsideHandler(wrapperRef, handleClickOutside);
+
+  const gradSide = dir === 'ltr' ? { right: 0 } : { left: 0 };
+
   return (
     <>
       <StyledNav role="navigation" dir={dir}>
@@ -439,6 +442,22 @@ const Navigation = ({
             buttonRef={buttonRef}
           />
           {children}
+          <div
+            style={{
+              width: GEL_SPACING_QUAD,
+              height: '100%',
+              flexShrink: 0,
+              zIndex: 3,
+              overflow: 'hidden',
+              backgroundColor: 'rgb(184,0,0,0)',
+              backgroundImage: `linear-gradient(to ${
+                dir === 'ltr' ? 'right' : 'left'
+              }, rgba(184,0,0,0), ${C_POSTBOX})`,
+              position: 'absolute',
+              ...gradSide,
+              top: 0,
+            }}
+          />
         </NavWrapper>
       </StyledNav>
       <Menu
