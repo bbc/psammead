@@ -200,13 +200,22 @@ const StyledNav = styled.nav`
 // Prototype components
 const MenuWrapper = styled.div`
   max-width: ${GEL_GROUP_5_SCREEN_WIDTH_MIN};
+  overflow: scroll;
   border-bottom: solid ${C_POSTBOX};
   display: ${({ visible }) => (visible ? 'block' : 'none')};
-  background-color: white;
+  background-color: ${C_WHITE};
   margin: 0 auto;
+  position: relative;
+  ${({ dir }) => (dir === 'ltr' ? 'left' : 'right')}: 0;
+  border-left: solid ${C_POSTBOX};
+  border-right: solid ${C_POSTBOX};
+  z-index: 10000000000000;
+  bottom: 0;
+  flex-grow: 1;
+  pointer-events: auto;
+
   @media (min-width: ${GEL_GROUP_5_SCREEN_WIDTH_MIN}) {
-    border-left: solid ${C_POSTBOX};
-    border-right: solid ${C_POSTBOX};
+    display: none;
   }
 `;
 
@@ -238,14 +247,49 @@ const DownChevronSvg = ({ dir }) => (
   </Chevron>
 );
 
+const StyledNavMenu = styled.div`
+  position: relative;
+  ${({ dir }) =>
+    dir === 'ltr' ? 'border-right' : 'border-left'}: ${C_WHITE} solid;
+
+  @media (min-width: ${GEL_GROUP_5_SCREEN_WIDTH_MIN}) {
+    display: none;
+  }
+`;
+
+const MenuPositioningWrapper = ({ children, dir }) => {
+  const positioning = dir === 'ltr' ? { left: 0 } : { right: 0 };
+  return (
+    <NavWrapper
+      dir={dir}
+      style={{
+        position: 'absolute',
+        top: 0,
+        bottom: 0,
+        display: 'flex',
+        flexDirection: 'column',
+        pointerEvents: 'none',
+        ...positioning,
+      }}
+    >
+      <div
+        style={{
+          visibility: 'hidden',
+          display: 'block',
+          pointerEvents: 'none',
+        }}
+      >
+        <NavMenu dir={dir} />
+      </div>
+      {children}
+    </NavWrapper>
+  );
+};
+
 const NavMenu = ({ script, service, setMenuVisibile, menuVisible, dir }) => {
   const updateMenuVisiblity = () => setMenuVisibile(!menuVisible);
-  const border =
-    dir === 'ltr'
-      ? { borderRight: 'white solid' }
-      : { borderLeft: 'white solid' };
   return (
-    <div style={{ position: 'relative', ...border }}>
+    <StyledNavMenu dir={dir}>
       <button
         style={{ border: 0, padding: 0, backgroundColor: 'inherit' }}
         onClick={updateMenuVisiblity}
@@ -260,17 +304,19 @@ const NavMenu = ({ script, service, setMenuVisibile, menuVisible, dir }) => {
           )}
         </StyledLink>
       </button>
-    </div>
+    </StyledNavMenu>
   );
 };
 
-const Menu = ({ children, visible }) => {
+const Menu = ({ children, visible, dir }) => {
   return (
-    <MenuWrapper visible={visible}>
-      {React.Children.map(children, child =>
-        React.cloneElement(child, { inMenu: true }),
-      )}
-    </MenuWrapper>
+    <MenuPositioningWrapper dir={dir}>
+      <MenuWrapper visible={visible} dir={dir}>
+        {React.Children.map(children, child =>
+          React.cloneElement(child, { inMenu: true }),
+        )}
+      </MenuWrapper>
+    </MenuPositioningWrapper>
   );
 };
 
@@ -285,6 +331,7 @@ NavMenu.propTypes = {
 Menu.propTypes = {
   children: node.isRequired,
   visible: bool.isRequired,
+  dir: string.isRequired,
 };
 
 Chevron.propTypes = {
@@ -297,6 +344,11 @@ UpChevronSvg.propTypes = {
 };
 
 DownChevronSvg.propTypes = UpChevronSvg.propTypes;
+
+MenuPositioningWrapper.propTypes = {
+  children: node.isRequired,
+  dir: string.isRequired,
+};
 // End prototypes
 
 const Navigation = ({ children, script, skipLinkText, service, dir }) => {
@@ -313,11 +365,14 @@ const Navigation = ({ children, script, skipLinkText, service, dir }) => {
             service={service}
             setMenuVisibile={setMenuVisibile}
             menuVisible={menuVisible}
+            dir={dir}
           />
           {children}
         </NavWrapper>
       </StyledNav>
-      <Menu visible={menuVisible}>{children}</Menu>
+      <Menu visible={menuVisible} dir={dir}>
+        {children}
+      </Menu>
     </>
   );
 };
