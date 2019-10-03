@@ -75,7 +75,10 @@ const StyledUnorderedList = styled.ul`
   margin: 0;
   position: relative;
   overflow: hidden;
-  ${({ inMenu }) => !inMenu && 'overflow-x: scroll; white-space: nowrap;'}
+  ${({ inMenu }) =>
+    !inMenu &&
+    `overflow-x: scroll; white-space: nowrap; &::-webkit-scrollbar{
+      display:none}`}
 `;
 
 const StyledListItem = styled.li`
@@ -456,6 +459,7 @@ const Navigation = ({
               position: 'absolute',
               ...gradSide,
               top: 0,
+              pointerEvents: 'none',
             }}
           />
         </NavWrapper>
