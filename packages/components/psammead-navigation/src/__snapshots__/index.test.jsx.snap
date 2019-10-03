@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Navigation should render correctly 1`] = `
-.c8 {
+.c10 {
   -webkit-clip-path: inset(100%);
   clip-path: inset(100%);
   -webkit-clip: rect(1px,1px,1px,1px);
@@ -17,6 +17,10 @@ exports[`Navigation should render correctly 1`] = `
   position: relative;
   max-width: 80rem;
   margin: 0 auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .c2 {
@@ -52,7 +56,7 @@ exports[`Navigation should render correctly 1`] = `
   left: 0.5rem;
 }
 
-.c3 {
+.c5 {
   list-style-type: none;
   padding: 0;
   margin: 0;
@@ -62,13 +66,27 @@ exports[`Navigation should render correctly 1`] = `
   white-space: nowrap;
 }
 
-.c5 {
+.c13 {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.c7 {
   display: inline-block;
   position: relative;
   z-index: 2;
 }
 
-.c6 {
+.c14 {
+  display: block;
+  position: relative;
+  z-index: 2;
+}
+
+.c4 {
   font-size: 0.9375rem;
   line-height: 1.25rem;
   font-family: ReithSans,Helvetica,Arial,sans-serif;
@@ -83,7 +101,42 @@ exports[`Navigation should render correctly 1`] = `
   white-space: nowrap;
 }
 
-.c6:hover::after {
+.c4:hover::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-bottom: 0.25rem solid #FFFFFF;
+}
+
+.c4:focus::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-bottom: 0.25rem solid #FFFFFF;
+  top: 0;
+  border: 0.25rem solid #FFFFFF;
+}
+
+.c8 {
+  font-size: 0.9375rem;
+  line-height: 1.25rem;
+  font-family: ReithSans,Helvetica,Arial,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #FDFDFD;
+  cursor: pointer;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  display: inline-block;
+  padding: 0.75rem 1rem;
+  white-space: nowrap;
+}
+
+.c8:hover::after {
   content: '';
   position: absolute;
   left: 0;
@@ -93,7 +146,7 @@ exports[`Navigation should render correctly 1`] = `
   border-bottom: 0.3125rem solid #FFFFFF;
 }
 
-.c6:focus::after {
+.c8:focus::after {
   content: '';
   position: absolute;
   left: 0;
@@ -104,12 +157,7 @@ exports[`Navigation should render correctly 1`] = `
   border: 0.25rem solid #FFFFFF;
 }
 
-.c9 {
-  font-size: 0.9375rem;
-  line-height: 1.25rem;
-  font-family: ReithSans,Helvetica,Arial,sans-serif;
-  font-weight: 400;
-  font-style: normal;
+.c11 {
   color: #FDFDFD;
   cursor: pointer;
   -webkit-text-decoration: none;
@@ -119,7 +167,7 @@ exports[`Navigation should render correctly 1`] = `
   white-space: nowrap;
 }
 
-.c9:hover::after {
+.c11:hover::after {
   content: '';
   position: absolute;
   left: 0;
@@ -128,7 +176,7 @@ exports[`Navigation should render correctly 1`] = `
   border-bottom: 0.25rem solid #FFFFFF;
 }
 
-.c9:focus::after {
+.c11:focus::after {
   content: '';
   position: absolute;
   left: 0;
@@ -139,7 +187,76 @@ exports[`Navigation should render correctly 1`] = `
   border: 0.25rem solid #FFFFFF;
 }
 
-.c7::after {
+.c15 {
+  font-size: 0.9375rem;
+  line-height: 1.25rem;
+  font-family: ReithSans,Helvetica,Arial,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #B80000;
+  cursor: pointer;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  display: inline-block;
+  padding: 0.75rem 1rem;
+}
+
+.c15:hover::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-bottom: 0.25rem solid #B80000;
+  border-bottom: 0.3125rem solid #B80000;
+}
+
+.c15:focus::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-bottom: 0.25rem solid #B80000;
+  top: 0;
+  border: 0.25rem solid #FFFFFF;
+}
+
+.c17 {
+  font-size: 0.9375rem;
+  line-height: 1.25rem;
+  font-family: ReithSans,Helvetica,Arial,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #B80000;
+  cursor: pointer;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  display: inline-block;
+  padding: 0.75rem 1rem;
+}
+
+.c17:hover::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-bottom: 0.25rem solid #B80000;
+}
+
+.c17:focus::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-bottom: 0.25rem solid #B80000;
+  top: 0;
+  border: 0.25rem solid #FFFFFF;
+}
+
+.c9::after {
   content: '';
   position: absolute;
   left: 0;
@@ -148,12 +265,46 @@ exports[`Navigation should render correctly 1`] = `
   border-bottom: 0.25rem solid #FFFFFF;
 }
 
+.c16::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-bottom: 0.25rem solid #B80000;
+}
+
 .c0 {
   background-color: #B80000;
 }
 
-.c0 .c4::after {
+.c0 .c6::after {
   left: 0;
+}
+
+.c12 {
+  max-width: 80rem;
+  overflow: scroll;
+  border-bottom: solid #B80000;
+  display: none;
+  background-color: #FFFFFF;
+  margin: 0 auto;
+  position: relative;
+  left: 0;
+  border-left: solid #B80000;
+  border-right: solid #B80000;
+  z-index: 10000000000000;
+  bottom: 0;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  pointer-events: auto;
+}
+
+.c3 {
+  position: relative;
+  border-right: #FFFFFF solid;
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
@@ -183,119 +334,316 @@ exports[`Navigation should render correctly 1`] = `
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
-  .c6 {
+  .c4 {
     font-size: 1rem;
     line-height: 1.25rem;
   }
 }
 
 @media (min-width:37.5rem) {
-  .c6 {
+  .c4 {
     font-size: 1rem;
     line-height: 1.25rem;
   }
 }
 
 @media (max-width:24.9375rem) {
-  .c6 {
+  .c4 {
     padding: 0.75rem 0.5rem;
   }
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
-  .c9 {
+  .c8 {
     font-size: 1rem;
     line-height: 1.25rem;
   }
 }
 
 @media (min-width:37.5rem) {
-  .c9 {
+  .c8 {
     font-size: 1rem;
     line-height: 1.25rem;
   }
 }
 
 @media (max-width:24.9375rem) {
-  .c9 {
+  .c8 {
     padding: 0.75rem 0.5rem;
   }
 }
 
-<nav
-  class="c0"
-  dir="ltr"
-  role="navigation"
->
-  <div
-    class="c1"
+@media (max-width:24.9375rem) {
+  .c11 {
+    padding: 0.75rem 0.5rem;
+  }
+}
+
+@media (min-width:20rem) and (max-width:37.4375rem) {
+  .c15 {
+    font-size: 1rem;
+    line-height: 1.25rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .c15 {
+    font-size: 1rem;
+    line-height: 1.25rem;
+  }
+}
+
+@media (max-width:24.9375rem) {
+  .c15 {
+    padding: 0.75rem 0.5rem;
+  }
+}
+
+@media (min-width:20rem) and (max-width:37.4375rem) {
+  .c17 {
+    font-size: 1rem;
+    line-height: 1.25rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .c17 {
+    font-size: 1rem;
+    line-height: 1.25rem;
+  }
+}
+
+@media (max-width:24.9375rem) {
+  .c17 {
+    padding: 0.75rem 0.5rem;
+  }
+}
+
+@media (min-width:80rem) {
+  .c12 {
+    display: none;
+  }
+}
+
+@media (min-width:80rem) {
+  .c3 {
+    display: none;
+  }
+}
+
+<div>
+  <nav
+    class="c0"
+    dir="ltr"
+    role="navigation"
   >
-    <a
-      class="c2"
-      href="#content"
+    <div
+      class="c1"
     >
-      Wụga n’ọdịnaya
-    </a>
-    <ul
-      class="c3"
-      role="list"
-    >
-      <li
-        class="c4 c5"
-        role="listitem"
+      <a
+        class="c2"
+        href="#content"
       >
-        <a
-          class="c6"
-          href="/igbo"
+        Wụga n’ọdịnaya
+      </a>
+      <div
+        class="c3"
+        dir="ltr"
+      >
+        <button
+          style="border: 0px; padding: 0px; background-color: inherit;"
+          type="button"
         >
-          <span
-            class="c7"
-            role="text"
+          <a
+            class="c4"
+          >
+            Menu
+            <svg
+              fill="white"
+              focusable="false"
+              height="8px"
+              style="margin-left: 8px;"
+              viewBox="0 0 32 32"
+              width="8px"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <title>
+                down
+              </title>
+              <path
+                d="M16 29L32 3h-7.2L16 18.3 7.2 3H0l16 26z"
+              />
+            </svg>
+          </a>
+        </button>
+      </div>
+      <ul
+        class="c5"
+        role="list"
+      >
+        <li
+          class="c6 c7"
+          role="listitem"
+        >
+          <a
+            class="c8"
+            href="/igbo"
           >
             <span
-              class="c8"
+              class="c9"
+              role="text"
             >
-              Current page
-              , 
+              <span
+                class="c10"
+              >
+                Current page
+                , 
+              </span>
+              Akụkọ
             </span>
-            Akụkọ
-          </span>
-        </a>
-      </li>
-      <li
-        class="c4 c5"
-        role="listitem"
-      >
-        <a
-          class="c9"
-          href="/igbo/egwuregwu"
+          </a>
+        </li>
+        <li
+          class="c6 c7"
+          role="listitem"
         >
-          Egwuregwu
-        </a>
-      </li>
-      <li
-        class="c4 c5"
-        role="listitem"
-      >
-        <a
-          class="c9"
-          href="/igbo/media/video"
+          <a
+            class="c4"
+            href="/igbo/egwuregwu"
+          >
+            Egwuregwu
+          </a>
+        </li>
+        <li
+          class="c6 c7"
+          role="listitem"
         >
-          Ihe nkiri
-        </a>
-      </li>
-      <li
-        class="c4 c5"
-        role="listitem"
-      >
-        <a
-          class="c9"
-          href="/igbo/popular/read"
+          <a
+            class="c4"
+            href="/igbo/media/video"
+          >
+            Ihe nkiri
+          </a>
+        </li>
+        <li
+          class="c6 c7"
+          role="listitem"
         >
-          Nke ka ewuewu
-        </a>
-      </li>
-    </ul>
+          <a
+            class="c4"
+            href="/igbo/popular/read"
+          >
+            Nke ka ewuewu
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <div
+    class="c1"
+    dir="ltr"
+    style="position: absolute; top: 0px; bottom: 0px; display: flex; flex-direction: column; pointer-events: none; left: 0px;"
+  >
+    <div
+      style="visibility: hidden; display: block; pointer-events: none;"
+    >
+      <div
+        class="c3"
+        dir="ltr"
+      >
+        <button
+          style="border: 0px; padding: 0px; background-color: inherit;"
+          type="button"
+        >
+          <a
+            class="c11"
+          >
+            Menu
+            <svg
+              fill="white"
+              focusable="false"
+              height="8px"
+              style="margin-left: 8px;"
+              viewBox="0 0 32 32"
+              width="8px"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <title>
+                down
+              </title>
+              <path
+                d="M16 29L32 3h-7.2L16 18.3 7.2 3H0l16 26z"
+              />
+            </svg>
+          </a>
+        </button>
+      </div>
+    </div>
+    <div
+      class="c12"
+      dir="ltr"
+    >
+      <ul
+        class="c13"
+        role="list"
+      >
+        <li
+          class="c6 c14"
+          role="listitem"
+        >
+          <a
+            class="c15"
+            href="/igbo"
+          >
+            <span
+              class="c16"
+              role="text"
+            >
+              <span
+                class="c10"
+              >
+                Current page
+                , 
+              </span>
+              Akụkọ
+            </span>
+          </a>
+        </li>
+        <li
+          class="c6 c14"
+          role="listitem"
+        >
+          <a
+            class="c17"
+            href="/igbo/egwuregwu"
+          >
+            Egwuregwu
+          </a>
+        </li>
+        <li
+          class="c6 c14"
+          role="listitem"
+        >
+          <a
+            class="c17"
+            href="/igbo/media/video"
+          >
+            Ihe nkiri
+          </a>
+        </li>
+        <li
+          class="c6 c14"
+          role="listitem"
+        >
+          <a
+            class="c17"
+            href="/igbo/popular/read"
+          >
+            Nke ka ewuewu
+          </a>
+        </li>
+      </ul>
+    </div>
   </div>
-</nav>
+</div>
 `;
