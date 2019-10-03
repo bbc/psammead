@@ -45,6 +45,7 @@ const xml = `
 
 candyXmlToRichText(xml)
 ```
+
 ```json
  {
   "type": "text",
@@ -109,6 +110,7 @@ const string = "Hello world"
 
 stringToRichText(string)
 ```
+
 ```json
 {
   "type": "text",
