@@ -30,7 +30,7 @@ describe('updatePackageLock', () => {
   });
 
   it('should try to update package lock', async () => {
-    await updatePackageLock('packageFile', 'test-branch');
+    await updatePackageLock({ home: 'heart' }, 'test-branch');
 
     expect(readFileSync).toHaveBeenCalledTimes(1);
     expect(readFileSync).toHaveBeenCalledWith(
@@ -47,7 +47,7 @@ describe('updatePackageLock', () => {
     expect(fs.writeFileSync).toHaveBeenCalledTimes(2);
     expect(fs.writeFileSync).toHaveBeenCalledWith(
       './simorgh-package/package.json',
-      'packageFile',
+      '{"home":"heart"}',
     );
     expect(fs.writeFileSync).toHaveBeenCalledWith(
       './simorgh-package/package-lock.json',
