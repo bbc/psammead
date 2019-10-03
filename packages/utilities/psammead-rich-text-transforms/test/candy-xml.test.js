@@ -377,3 +377,32 @@ test('returns null when given invalid xml', () => {
 
   expect(richText).toStrictEqual(null);
 });
+
+test('returns plain text is wrapped in an unsupport xml node', () => {
+  const richText = candyXmlToRichText(
+    createBody(`
+      <paragraph><strikethrough>Struck through text</strikethrough> followed by normal text</paragraph>`),
+  );
+
+  expect(richText).toStrictEqual({
+    type: 'text',
+    model: {
+      blocks: [
+        {
+          type: 'paragraph',
+          model: {
+            text: 'Struck through text',
+            blocks: [],
+          },
+        },
+        {
+          type: 'paragraph',
+          model: {
+            text: ' followed by normal text',
+            blocks: [],
+          },
+        },
+      ],
+    },
+  });
+});
