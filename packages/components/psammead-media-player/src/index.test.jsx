@@ -26,6 +26,7 @@ describe('Media Player: AMP Entry', () => {
       showPlaceholder={false}
       src="https://www.test.bbc.com/ws/av-embeds/media/bbc_korean_radio/liveradio"
       skin="audio"
+      placeholderSrc="http://foo.bar/placeholder.png"
     />,
   );
 });
