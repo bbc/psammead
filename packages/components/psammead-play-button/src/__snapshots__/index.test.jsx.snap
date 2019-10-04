@@ -48,7 +48,8 @@ exports[`PlayButton should render audio correctly without duration details 1`] =
 }
 
 .c2 > svg {
-  fill: #FFFFFF;
+  color: #FFFFFF;
+  fill: currentColor;
   height: 1.5rem;
   width: 1.5rem;
 }
@@ -131,7 +132,8 @@ exports[`PlayButton should render audio indicator correctly 1`] = `
 }
 
 .c2 > svg {
-  fill: #FFFFFF;
+  color: #FFFFFF;
+  fill: currentColor;
   height: 1.5rem;
   margin-top: 0.5rem;
   width: 1.5rem;
@@ -227,7 +229,8 @@ exports[`PlayButton should render video by default 1`] = `
 }
 
 .c2 > svg {
-  fill: #FFFFFF;
+  color: #FFFFFF;
+  fill: currentColor;
   height: 1.5rem;
   width: 1.5rem;
 }
@@ -307,7 +310,8 @@ exports[`PlayButton should render video correctly without duration details 1`] =
 }
 
 .c2 > svg {
-  fill: #FFFFFF;
+  color: #FFFFFF;
+  fill: currentColor;
   height: 1.5rem;
   width: 1.5rem;
 }
@@ -387,7 +391,8 @@ exports[`PlayButton should render video indicator correctly 1`] = `
 }
 
 .c2 > svg {
-  fill: #FFFFFF;
+  color: #FFFFFF;
+  fill: currentColor;
   height: 1.5rem;
   margin-top: 0.5rem;
   width: 1.5rem;
