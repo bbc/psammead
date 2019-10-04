@@ -32,8 +32,6 @@ const NavWrapper = styled.div`
   max-width: ${GEL_GROUP_5_SCREEN_WIDTH_MIN};
   margin: 0 auto;
   display: flex;
-  align-items: center;
-  margin-right: 0;
 `;
 
 const SkipLink = styled.a`
