@@ -272,6 +272,11 @@ export const Summary = styled.p`
             display: none;
             visibility: hidden;
           }
+
+          @media (min-width: ${GEL_GROUP_4_SCREEN_WIDTH_MIN}) {
+            display: none;
+            visibility: hidden;
+          }
         `}
 `;
 

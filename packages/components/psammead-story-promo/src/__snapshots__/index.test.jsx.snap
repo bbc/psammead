@@ -1387,6 +1387,13 @@ exports[`StoryPromo should render Live promo correctly 1`] = `
   }
 }
 
+@media (min-width:63rem) {
+  .c8 {
+    display: none;
+    visibility: hidden;
+  }
+}
+
 <div
   class="c0"
 >
@@ -1600,6 +1607,13 @@ exports[`StoryPromo should render correctly 1`] = `
 }
 
 @media (max-width:37.4375rem) {
+  .c6 {
+    display: none;
+    visibility: hidden;
+  }
+}
+
+@media (min-width:63rem) {
   .c6 {
     display: none;
     visibility: hidden;
@@ -1855,6 +1869,13 @@ exports[`StoryPromo with Media Indicator should render correctly 1`] = `
 }
 
 @media (max-width:37.4375rem) {
+  .c11 {
+    display: none;
+    visibility: hidden;
+  }
+}
+
+@media (min-width:63rem) {
   .c11 {
     display: none;
     visibility: hidden;
