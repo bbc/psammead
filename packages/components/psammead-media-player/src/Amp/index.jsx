@@ -21,7 +21,7 @@ const AmpMediaPlayer = ({ src, placeholderSrc }) => {
         layout="fill"
         frameborder="0"
         src={src}
-        allowfullscreen
+        allowfullscreen="allowfullscreen"
       >
         <amp-img layout="fill" src={placeholderSrc} placeholder />
       </amp-iframe>
