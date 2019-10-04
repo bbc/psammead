@@ -391,15 +391,23 @@ test('returns plain text is wrapped in an unsupport xml node', () => {
         {
           type: 'paragraph',
           model: {
-            text: 'Struck through text',
-            blocks: [],
-          },
-        },
-        {
-          type: 'paragraph',
-          model: {
-            text: ' followed by normal text',
-            blocks: [],
+            text: 'Struck through text followed by normal text',
+            blocks: [
+              {
+                type: 'fragment',
+                model: {
+                  text: 'Struck through text',
+                  attributes: [],
+                },
+              },
+              {
+                type: 'fragment',
+                model: {
+                  text: ' followed by normal text',
+                  attributes: [],
+                },
+              },
+            ],
           },
         },
       ],
