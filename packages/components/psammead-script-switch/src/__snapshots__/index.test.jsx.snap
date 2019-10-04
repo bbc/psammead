@@ -7,8 +7,8 @@ exports[`ScriptSwitch should render correctly 1`] = `
   font-family: ReithSans,Helvetica,Arial,sans-serif;
   font-weight: 400;
   font-style: normal;
+  position: relative;
   display: inline-block;
-  border: 0.0625rem solid #FFFFFF;
   color: #FFFFFF;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -16,10 +16,18 @@ exports[`ScriptSwitch should render correctly 1`] = `
   height: 3rem;
 }
 
-.c0:hover {
-  border-width: 0.25rem;
-  line-height: 2.62rem;
-  padding: 0 0.81rem;
+.c0::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border: 0.0625rem solid #FFFFFF;
+}
+
+.c0:hover::after {
+  border: 0.25rem solid #FFFFFF;
 }
 
 .c0:focus {
@@ -52,11 +60,6 @@ exports[`ScriptSwitch should render correctly 1`] = `
     line-height: 2.5rem;
     height: 2.5rem;
     padding: 0 0.75rem;
-  }
-
-  .c0:hover {
-    line-height: 2.1rem;
-    padding: 0 0.56rem;
   }
 }
 

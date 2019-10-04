@@ -10,24 +10,29 @@ import { scriptPropType } from '@bbc/gel-foundations/prop-types';
 const StyledLink = styled.a`
   ${({ script }) => script && getPica(script)}
   ${({ service }) => service && getSansRegular(service)}
-
+  position: relative;
   display: inline-block;
-  border: 0.0625rem solid ${C_WHITE};
   color: ${C_WHITE};
   text-decoration: none;
   padding: 0 1rem;
   height: 3rem;
 
-  &:hover {
-    border-width: 0.25rem;
-    line-height: 2.62rem;
-    padding: 0 0.81rem;
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 0.0625rem solid ${C_WHITE};
+  }
+  &:hover::after {
+    border: 0.25rem solid ${C_WHITE};
   }
   &:focus {
     background-color: ${C_WHITE};
     color: ${C_EBON};
   }
-
   @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
     line-height: 3rem;
   }
@@ -35,10 +40,6 @@ const StyledLink = styled.a`
     line-height: 2.5rem;
     height: 2.5rem;
     padding: 0 0.75rem;
-    &:hover {
-      line-height: 2.1rem;
-      padding: 0 0.56rem;
-    }
   }
 `;
 
