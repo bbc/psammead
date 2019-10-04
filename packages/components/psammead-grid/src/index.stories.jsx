@@ -868,10 +868,39 @@ storiesOf('Components|Grid', module)
     { notes, knobs: { escapeHTML: false } },
   )
   .add(
-    'Single group - group2',
+    'No change on any breakpoint',
     () => (
-      <Grid columns={{ group2: 6 }} enableGelMargins enableGelGutters>
-        <Grid item columns={{ group2: 2 }} startOffset={{ group2: 2 }}>
+      <Grid
+        columns={{
+          group0: 6,
+          group1: 6,
+          group2: 6,
+          group3: 6,
+          group4: 6,
+          group5: 6,
+        }}
+        enableGelMargins
+        enableGelGutters
+      >
+        <Grid
+          item
+          columns={{
+            group0: 2,
+            group1: 2,
+            group2: 2,
+            group3: 2,
+            group4: 2,
+            group5: 2,
+          }}
+          startOffset={{
+            group0: 2,
+            group1: 2,
+            group2: 2,
+            group3: 2,
+            group4: 2,
+            group5: 2,
+          }}
+        >
           <ExampleParagraph identifier="1" />
         </Grid>
       </Grid>
