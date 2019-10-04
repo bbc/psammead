@@ -42,12 +42,13 @@ export const UsefulLinksUl = styled.ul.attrs({ role: 'list' })`
 export const UsefulLinksLi = styled.li.attrs({ role: 'listitem' })`
   padding-top: ${GEL_SPACING};
   @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
+    display: inline-block;
+    min-width: 50%;
+
     @supports (${grid}) {
+      display: block;
+      min-width: initial;
       align-self: start;
-    }
-    @supports not (${grid}) {
-      display: inline-block;
-      min-width: 50%;
     }
   }
 `;
