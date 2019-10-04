@@ -3,7 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
-| 2.4.2 | [PR#2309](https://github.com/bbc/psammead/pull/2309) Add SVGs for Cymru Fyw and Naidheachdan |
+| 2.5.0 | [PR#2309](https://github.com/bbc/psammead/pull/2309) Add SVGs for Cymru Fyw and Naidheachdan |
 | 2.4.1 | [PR#2189](https://github.com/bbc/psammead/pull/2189) Add storybook stories for media icons in psammead-assets |
 | 2.4.0 | [PR#2192](https://github.com/bbc/psammead/pull/2192) Add SVG for BBC Scotland |
 | 2.3.0 | [PR#2115](https://github.com/bbc/psammead/pull/2115) Added media icons SVGs |
