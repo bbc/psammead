@@ -71,6 +71,10 @@ exports[`Navigation should render correctly 1`] = `
   white-space: nowrap;
 }
 
+.c5::-webkit-scrollbar {
+  display: none;
+}
+
 .c13 {
   list-style-type: none;
   padding: 0;
@@ -538,7 +542,7 @@ exports[`Navigation should render correctly 1`] = `
         </a>
       </ul>
       <div
-        style="width: 2rem; height: 100%; flex-shrink: 0; z-index: 3; overflow: hidden; position: absolute; right: 0px; top: 0px;"
+        style="width: 2rem; height: 100%; flex-shrink: 0; z-index: 3; overflow: hidden; position: absolute; right: 0px; top: 0px; pointer-events: none;"
       />
     </div>
   </nav>
