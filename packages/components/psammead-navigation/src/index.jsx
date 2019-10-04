@@ -115,9 +115,11 @@ const StyledLink = styled.a`
   display: inline-block;
   padding: ${TOP_BOTTOM_SPACING} ${GEL_SPACING_DBL};
   ${({ inMenu }) => !inMenu && 'white-space: nowrap;'}
+  ${({ inMenu }) => inMenu && 'width: 100%;'}
 
   @media (max-width: ${GEL_GROUP_1_SCREEN_WIDTH_MAX}) {
-    padding: ${TOP_BOTTOM_SPACING} ${GEL_SPACING};
+    padding: ${({ inMenu }) =>
+      inMenu ? '0.5rem' : TOP_BOTTOM_SPACING} ${GEL_SPACING};
   }
 
   &:hover::after {
@@ -220,7 +222,7 @@ const StyledNav = styled.nav`
 `;
 
 // Prototype components
-const useOutsideHandler = (ref, handler) => {
+const useOutsideHandler = handler => {
   useEffect(() => {
     // Bind the event listener
     document.addEventListener('mousedown', handler);
@@ -238,16 +240,16 @@ const MenuWrapper = styled.div`
   display: ${({ visible }) => (visible ? 'inline-block' : 'none')};
   background-color: ${C_WHITE};
   margin: 0 auto;
-  position: ${({ fullLength }) => (fullLength ? 'relative' : 'absolute')};
+  position: ${({ moveContent }) => (moveContent ? 'relative' : 'absolute')};
   ${({ dir }) => (dir === 'ltr' ? 'left' : 'right')}: 0;
   ${({ dir }) => dir === 'rtl' && 'float: right;'}
   border-left: solid ${C_POSTBOX};
   border-right: solid ${C_POSTBOX};
   z-index: 10;
-  ${({ fullLength }) => fullLength && 'bottom: 0;'}
+  ${({ moveContent }) => moveContent && 'width: 100%;'}
   flex-grow: 1;
   pointer-events: auto;
-  max-height: 85vh;
+  ${({ moveContent }) => !moveContent && 'max-height: 85vh;'}
 `;
 
 const Chevron = ({ dir, children }) => (
@@ -284,37 +286,14 @@ const StyledNavMenu = styled.div`
     solid;
 `;
 
-// This is a "dummy" nav bar that is invisible but moves the real menu dropdown down
-// below the nav bar allowing for position to be absolute and fill screen but leave
-// the real nav bar visible.
-const MenuPositioningWrapper = ({ children, dir }) => {
-  const positioning = dir === 'ltr' ? { left: 0 } : { right: 0 };
-  return (
-    <NavWrapper
-      dir={dir}
-      style={{
-        position: 'absolute',
-        top: 0,
-        bottom: 0,
-        display: 'flex',
-        flexDirection: 'column',
-        pointerEvents: 'none',
-        ...positioning,
-      }}
-    >
-      <div
-        style={{
-          visibility: 'hidden',
-          display: 'block',
-          pointerEvents: 'none',
-        }}
-      >
-        <NavMenu dir={dir} />
-      </div>
-      {children}
-    </NavWrapper>
-  );
-};
+const StyledMenuBottomContainer = styled.div`
+  width: 100%;
+  height: 0;
+  position: sticky;
+  bottom: 0;
+  pointer-events: none;
+  z-index: 3;
+`;
 
 const NavMenu = ({
   script,
@@ -346,7 +325,7 @@ const NavMenu = ({
   );
 };
 
-const Menu = ({ children, visible, dir, fullLength, wrapperRef }) => {
+const Menu = ({ children, visible, dir, moveContent, wrapperRef }) => {
   const [gradDisplay, setGradDisplay] = useState(false);
 
   useEffect(() => {
@@ -356,7 +335,7 @@ const Menu = ({ children, visible, dir, fullLength, wrapperRef }) => {
           wrapperRef.current.scrollHeight -
             wrapperRef.current.offsetHeight -
             wrapperRef.current.scrollTop >
-            5,
+            7,
         );
       settingGrad();
       /* eslint-disable-next-line no-param-reassign */
@@ -364,39 +343,17 @@ const Menu = ({ children, visible, dir, fullLength, wrapperRef }) => {
     }
   }, [wrapperRef.current]);
 
-  return fullLength ? (
-    <MenuPositioningWrapper dir={dir}>
-      <MenuWrapper
-        visible={visible}
-        dir={dir}
-        fullLength={fullLength}
-        ref={wrapperRef}
-      >
-        {React.Children.map(children, child =>
-          React.cloneElement(child, { inMenu: true }),
-        )}
-      </MenuWrapper>
-    </MenuPositioningWrapper>
-  ) : (
+  return (
     <MenuWrapper
       visible={visible}
       dir={dir}
-      fullLength={fullLength}
+      moveContent={moveContent}
       ref={wrapperRef}
     >
       {React.Children.map(children, child =>
         React.cloneElement(child, { inMenu: true }),
       )}
-      <div
-        style={{
-          width: '100%',
-          height: 0,
-          position: 'sticky',
-          bottom: 0,
-          pointerEvents: 'none',
-          zIndex: 3,
-        }}
-      >
+      <StyledMenuBottomContainer>
         <div
           style={{
             height: '4rem',
@@ -409,7 +366,7 @@ const Menu = ({ children, visible, dir, fullLength, wrapperRef }) => {
             display: gradDisplay ? 'block' : 'none',
           }}
         />
-      </div>
+      </StyledMenuBottomContainer>
     </MenuWrapper>
   );
 };
@@ -428,11 +385,11 @@ Menu.propTypes = {
   visible: bool.isRequired,
   dir: string.isRequired,
   wrapperRef: instanceOf(Element).isRequired,
-  fullLength: bool,
+  moveContent: bool,
 };
 
 Menu.defaultProps = {
-  fullLength: false,
+  moveContent: false,
 };
 
 Chevron.propTypes = {
@@ -446,11 +403,6 @@ UpChevronSvg.propTypes = {
 
 DownChevronSvg.propTypes = UpChevronSvg.propTypes;
 
-MenuPositioningWrapper.propTypes = {
-  children: node.isRequired,
-  dir: string.isRequired,
-};
-
 // End prototypes
 const Navigation = ({
   children,
@@ -458,7 +410,7 @@ const Navigation = ({
   skipLinkText,
   service,
   dir,
-  fullLength,
+  moveContent,
 }) => {
   const [menuVisible, setMenuVisibile] = useState(false);
   const wrapperRef = useRef(null);
@@ -476,7 +428,7 @@ const Navigation = ({
     }
   };
 
-  useOutsideHandler(wrapperRef, handleClickOutside);
+  useOutsideHandler(handleClickOutside);
 
   const gradSide = dir === 'ltr' ? { right: 0 } : { left: 0 };
 
@@ -520,7 +472,7 @@ const Navigation = ({
       <Menu
         visible={menuVisible}
         dir={dir}
-        fullLength={fullLength}
+        moveContent={moveContent}
         wrapperRef={wrapperRef}
       >
         {children}
@@ -535,10 +487,10 @@ Navigation.propTypes = {
   skipLinkText: string.isRequired,
   service: string.isRequired,
   dir: oneOf(['ltr', 'rtl']),
-  fullLength: bool,
+  moveContent: bool,
 };
 
-Navigation.defaultProps = { dir: 'ltr', fullLength: false };
+Navigation.defaultProps = { dir: 'ltr', moveContent: false };
 
 NavigationUl.propTypes = {
   children: node.isRequired,

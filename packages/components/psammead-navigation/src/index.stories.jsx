@@ -86,7 +86,7 @@ const inputs = () => {
   const svgHeightInput = number('desired height svg', svgMaxHeight);
   const borderBottom = boolean('Border Bottom', false);
   const borderTop = boolean('Border Top', false);
-  const fullLength = boolean('Screen length menu', false);
+  const moveContent = boolean('Move content for menu', false);
   const grid = boolean('Grid menu', false);
   const backgroundColour = color('Background colour', `${C_POSTBOX}`);
   const logoColour = color('Logo colour', `${C_WHITE}`);
@@ -102,7 +102,7 @@ const inputs = () => {
     borderBottom,
     backgroundColour,
     logoColour,
-    fullLength,
+    moveContent,
     grid,
   };
 };
@@ -154,7 +154,7 @@ const navigationStory = (skipLinkText, currentPageText, navData, dir, brand) =>
           skipLinkText={skipLinkText}
           service={service}
           dir={dir}
-          fullLength={inputs().fullLength}
+          moveContent={inputs().moveContent}
         >
           <NavigationUl grid={inputs().grid}>
             {navData.map((item, index) => {
