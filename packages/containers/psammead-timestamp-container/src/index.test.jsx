@@ -1,6 +1,7 @@
 import React from 'react';
 import { isNull, shouldMatchSnapshot } from '@bbc/psammead-test-helpers';
 import { latin } from '@bbc/gel-foundations/scripts';
+import { jalaali } from '@bbc/psammead-calendars';
 import Timestamp from '.';
 
 const defaultTimestamp = 1539969006000; // 19 October 2018
@@ -61,6 +62,34 @@ describe('Timestamp', () => {
       suffix=" suffix here"
       script={latin}
       service="news"
+    />,
+  );
+
+  shouldMatchSnapshot(
+    'should add alternative calendar before main date and time',
+    <Timestamp
+      timestamp={defaultTimestamp}
+      dateTimeFormat="YYYY-MM-DD"
+      format="D MMMM YYYY"
+      isRelative={false}
+      script={latin}
+      locale="fa"
+      service="persian"
+      altCalendar={jalaali}
+    />,
+  );
+
+  shouldMatchSnapshot(
+    'should not add alternative calendar before main date and time',
+    <Timestamp
+      timestamp={defaultTimestamp}
+      dateTimeFormat="YYYY-MM-DD"
+      format="D MMMM YYYY"
+      isRelative
+      script={latin}
+      locale="fa"
+      service="persian"
+      altCalendar={jalaali}
     />,
   );
 });
