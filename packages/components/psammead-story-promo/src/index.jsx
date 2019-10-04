@@ -73,8 +73,6 @@ const StoryPromoWrapper = styled.div`
         : css`
             @media (min-width: ${GEL_GROUP_4_SCREEN_WIDTH_MIN}) {
               display: block;
-              grid-template-columns: none;
-              grid-column-gap: initial;
             }
           `}
   }
@@ -93,10 +91,6 @@ const ImageGridColumnsTopStory = css`
 
 const ImageGridColumns = css`
   grid-column: 1 / span 2;
-
-  @media (min-width: ${GEL_GROUP_4_SCREEN_WIDTH_MIN}) {
-    grid-column: none;
-  }
 `;
 
 const ImageGridFallbackTopStory = css`
@@ -177,7 +171,6 @@ const TextGridColumns = css`
   grid-column: 3 / span 4;
 
   @media (min-width: ${GEL_GROUP_4_SCREEN_WIDTH_MIN}) {
-    grid-column: none;
     padding-top: ${GEL_SPACING};
   }
 `;
