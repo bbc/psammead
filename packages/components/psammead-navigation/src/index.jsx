@@ -34,10 +34,6 @@ const NavWrapper = styled.div`
   display: flex;
   align-items: center;
   margin-right: 0;
-
-  @media (min-width: ${GEL_GROUP_5_SCREEN_WIDTH_MIN}) {
-    width: ${GEL_GROUP_5_SCREEN_WIDTH_MIN};
-  }
 `;
 
 const SkipLink = styled.a`
@@ -210,7 +206,6 @@ export const NavigationLi = ({
 
 const StyledNav = styled.nav`
   background-color: ${C_POSTBOX};
-  display: flex;
 
   ${StyledListItem} {
     ${({ dir }) => css`
@@ -435,7 +430,6 @@ const Navigation = ({
   return (
     <>
       <StyledNav role="navigation" dir={dir}>
-        <div style={{ flexGrow: 1 }} />
         <NavWrapper>
           <SkipLink href="#content" script={script} service={service}>
             {skipLinkText}
@@ -467,7 +461,6 @@ const Navigation = ({
             }}
           />
         </NavWrapper>
-        <div style={{ flexGrow: 1 }} />
       </StyledNav>
       <Menu
         visible={menuVisible}
