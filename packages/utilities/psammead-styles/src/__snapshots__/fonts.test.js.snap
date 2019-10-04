@@ -728,7 +728,7 @@ exports[`Psammead Styles - Fonts should match the overridden url: https://exampl
     font-family: \\"BBC Nassim Persian\\";
     font-weight: 400;
     font-style: normal;
-    src: url('https://example.com/normal.woff') format('woff'), url('https://ws-downloads.files.bbci.co.uk/fonts/NassimPersian/v1.511/normal.eot') format('eot'), url('https://example.com/normal.ttf') format('ttf');
+    src: url('https://example.com/normal.woff') format('woff'), url('https://example.com/normal.eot') format('eot'), url('https://example.com/normal.ttf') format('ttf');
     font-display: optional;
   }
 "
@@ -740,7 +740,7 @@ exports[`Psammead Styles - Fonts should match the overridden url: https://exampl
     font-family: \\"BBC Nassim Persian\\";
     font-weight: 700;
     font-style: normal;
-    src: url('https://example.com/bold.woff') format('woff'), url('https://ws-downloads.files.bbci.co.uk/fonts/NassimPersian/v1.511/bold.eot') format('eot'), url('https://example.com/bold.ttf') format('ttf');
+    src: url('https://example.com/bold.woff') format('woff'), url('https://example.com/bold.eot') format('eot'), url('https://example.com/bold.ttf') format('ttf');
     font-display: optional;
   }
 "
