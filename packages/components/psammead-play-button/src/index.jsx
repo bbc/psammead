@@ -33,7 +33,8 @@ const Button = styled.button`
 
 const IconWrapper = styled.div`
   > svg {
-    fill: ${C_WHITE};
+    color: ${C_WHITE};
+    fill: currentColor;
     height: ${GEL_SPACING_TRPL};
     ${({ datetime, duration, durationSpoken }) =>
       datetime &&
