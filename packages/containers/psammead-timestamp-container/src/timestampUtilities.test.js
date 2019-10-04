@@ -2,7 +2,7 @@ import moment from 'moment-timezone';
 import {
   formatUnixTimestamp,
   isValidDateTime,
-  showRelativeTime,
+  getDateTime,
 } from './timestampUtilities';
 import timestampGenerator from './helpers/testHelpers';
 
@@ -67,7 +67,7 @@ describe('Timestamp utility functions', () => {
     });
   });
 
-  describe('showRelativetime', () => {
+  describe('getDateTime', () => {
     const format = 'D MMMM YYYY';
     const isRelative = false;
 
@@ -75,7 +75,7 @@ describe('Timestamp utility functions', () => {
       const nineHoursAgo = timestampGenerator({ hours: 9 });
       const isRelativeIsTrue = true;
       const locale = 'en-gb';
-      const output = showRelativeTime(
+      const output = getDateTime(
         nineHoursAgo,
         isRelativeIsTrue,
         format,
@@ -87,19 +87,14 @@ describe('Timestamp utility functions', () => {
     });
 
     it('should return timestamp with format if format is provided', () => {
-      const output = showRelativeTime(timestamp, isRelative, format, timezone);
+      const output = getDateTime(timestamp, isRelative, format, timezone);
       const expectedOutput = '19 October 2018';
       expect(output).toEqual(expectedOutput);
     });
 
     it('should return timestamp with default format if format is not provided', () => {
       const nullFormat = null;
-      const output = showRelativeTime(
-        timestamp,
-        isRelative,
-        nullFormat,
-        timezone,
-      );
+      const output = getDateTime(timestamp, isRelative, nullFormat, timezone);
       const expectedOutput = '19 October 2018, 18:10 BST';
       expect(output).toEqual(expectedOutput);
     });
