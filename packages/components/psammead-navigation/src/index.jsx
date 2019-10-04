@@ -79,6 +79,12 @@ const StyledUnorderedList = styled.ul`
     !inMenu &&
     `overflow-x: scroll; white-space: nowrap; &::-webkit-scrollbar{
       display:none}`}
+
+  ${({ inMenu, grid }) =>
+    inMenu &&
+    grid &&
+    `display: grid;
+    grid-template-columns: repeat(3, 1fr);`}
 `;
 
 const StyledListItem = styled.li`
@@ -147,8 +153,8 @@ const CurrentLink = ({ children: link, script, currentPageText, inMenu }) => (
   </>
 );
 
-export const NavigationUl = ({ children, inMenu, ...props }) => (
-  <StyledUnorderedList role="list" inMenu={inMenu} {...props}>
+export const NavigationUl = ({ children, inMenu, grid, ...props }) => (
+  <StyledUnorderedList role="list" inMenu={inMenu} grid={grid} {...props}>
     {inMenu
       ? React.Children.map(children, child =>
           React.cloneElement(child, { inMenu: true }),
@@ -490,9 +496,10 @@ Navigation.defaultProps = { dir: 'ltr', fullLength: false };
 NavigationUl.propTypes = {
   children: node.isRequired,
   inMenu: bool,
+  grid: bool,
 };
 
-NavigationUl.defaultProps = { inMenu: false };
+NavigationUl.defaultProps = { inMenu: false, grid: false };
 
 NavigationLi.propTypes = {
   children: node.isRequired,

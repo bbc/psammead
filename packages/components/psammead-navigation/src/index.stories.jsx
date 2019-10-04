@@ -87,6 +87,7 @@ const inputs = () => {
   const borderBottom = boolean('Border Bottom', false);
   const borderTop = boolean('Border Top', false);
   const fullLength = boolean('Screen length menu', false);
+  const grid = boolean('Grid menu', false);
   const backgroundColour = color('Background colour', `${C_POSTBOX}`);
   const logoColour = color('Logo colour', `${C_WHITE}`);
 
@@ -102,6 +103,7 @@ const inputs = () => {
     backgroundColour,
     logoColour,
     fullLength,
+    grid,
   };
 };
 
@@ -154,7 +156,7 @@ const navigationStory = (skipLinkText, currentPageText, navData, dir, brand) =>
           dir={dir}
           fullLength={inputs().fullLength}
         >
-          <NavigationUl>
+          <NavigationUl grid={inputs().grid}>
             {navData.map((item, index) => {
               const { title, url } = item;
               const active = index === 0;
