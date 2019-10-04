@@ -1,9 +1,8 @@
 import React from 'react';
-import { number, string, bool, shape } from 'prop-types';
+import { number, string, bool, shape, func } from 'prop-types';
 import { scriptPropType } from '@bbc/gel-foundations/prop-types';
 import Timestamp from '@bbc/psammead-timestamp';
 import moment from 'moment-timezone';
-import { jalaali as altCalendar } from '../../../utilities/psammead-calendars';
 import {
   isValidDateTime,
   unixTimestampToMoment,
@@ -23,6 +22,7 @@ const TimestampContainer = ({
   script,
   locale,
   service,
+  altCalendar,
 }) => {
   let altDateTime;
   if (!isValidDateTime(new Date(timestamp))) {
@@ -71,6 +71,9 @@ TimestampContainer.propTypes = {
   script: shape(scriptPropType).isRequired,
   locale: string,
   service: string.isRequired,
+  altCalendar: shape({
+    formatDate: func.isRequired,
+  }),
 };
 
 TimestampContainer.defaultProps = {
@@ -81,6 +84,7 @@ TimestampContainer.defaultProps = {
   prefix: null,
   suffix: null,
   locale: 'en-gb',
+  altCalendar: null,
 };
 
 export default TimestampContainer;
