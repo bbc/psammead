@@ -34,6 +34,7 @@ export const UsefulLinksUl = styled.ul.attrs({ role: 'list' })`
     @supports (${grid}) {
       display: grid;
       grid-template-columns: auto auto;
+      grid-column-gap: 1.875rem;
     }
   }
 `;
@@ -42,7 +43,7 @@ export const UsefulLinksLi = styled.li.attrs({ role: 'listitem' })`
   padding-top: ${GEL_SPACING};
   @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
     @supports (${grid}) {
-      align-self: center;
+      align-self: start;
     }
     @supports not (${grid}) {
       display: inline-block;
