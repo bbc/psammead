@@ -1,5 +1,6 @@
 import moment from 'moment-timezone';
 import {
+  unixTimestampToMoment,
   formatUnixTimestamp,
   isValidDateTime,
   getDateTime,
@@ -8,6 +9,7 @@ import timestampGenerator from './helpers/testHelpers';
 
 const timezone = 'Europe/London';
 const timestamp = 1539969006000; // 19 October 2018
+const locale = 'en-gb';
 
 describe('Timestamp utility functions', () => {
   describe('isValidDateTime', () => {
@@ -22,6 +24,14 @@ describe('Timestamp utility functions', () => {
       expect(isValidDateTime(null)).toEqual(false);
       expect(isValidDateTime(undefined)).toEqual(false);
       expect(isValidDateTime()).toEqual(false);
+    });
+  });
+
+  describe('unixTimestampToMoment', () => {
+    it("should a moment that's valid", () => {
+      expect(unixTimestampToMoment(timestamp, locale)).toHaveProperty(
+        'isValid',
+      );
     });
   });
 
@@ -74,7 +84,6 @@ describe('Timestamp utility functions', () => {
     it('should return relative timestamp if isRelative is true', () => {
       const nineHoursAgo = timestampGenerator({ hours: 9 });
       const isRelativeIsTrue = true;
-      const locale = 'en-gb';
       const output = getDateTime(
         nineHoursAgo,
         isRelativeIsTrue,
