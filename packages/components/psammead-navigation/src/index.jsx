@@ -342,6 +342,23 @@ const NavMenu = ({
 };
 
 const Menu = ({ children, visible, dir, fullLength, wrapperRef }) => {
+  const [gradDisplay, setGradDisplay] = useState(false);
+
+  useEffect(() => {
+    if (wrapperRef.current) {
+      const settingGrad = () =>
+        setGradDisplay(
+          wrapperRef.current.scrollHeight -
+            wrapperRef.current.offsetHeight -
+            wrapperRef.current.scrollTop >
+            5,
+        );
+      settingGrad();
+      /* eslint-disable-next-line no-param-reassign */
+      wrapperRef.current.onscroll = settingGrad;
+    }
+  }, [wrapperRef.current]);
+
   return fullLength ? (
     <MenuPositioningWrapper dir={dir}>
       <MenuWrapper
@@ -365,6 +382,29 @@ const Menu = ({ children, visible, dir, fullLength, wrapperRef }) => {
       {React.Children.map(children, child =>
         React.cloneElement(child, { inMenu: true }),
       )}
+      <div
+        style={{
+          width: '100%',
+          height: 0,
+          position: 'sticky',
+          bottom: 0,
+          pointerEvents: 'none',
+          zIndex: 3,
+        }}
+      >
+        <div
+          style={{
+            height: '4rem',
+            width: '100%',
+            overflow: 'hidden',
+            backgroundColor: 'rgb(184,0,0,0)',
+            backgroundImage: `linear-gradient(to bottom, rgba(255,255,255,0), ${C_WHITE})`,
+            position: 'absolute',
+            bottom: 0,
+            display: gradDisplay ? 'block' : 'none',
+          }}
+        />
+      </div>
     </MenuWrapper>
   );
 };
