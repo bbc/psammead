@@ -22,7 +22,7 @@ storiesOf('Components|Media Player', module)
 
 storiesOf('Components|Media Player', module).add('Audio Skin', () => (
   <CanonicalMediaPlayer
-    src="https://www.test.bbc.com/ws/av-embeds/media/bbc_korean_radio/liveradio/ko"
+    src="https://www.bbc.com/ws/av-embeds/media/bbc_korean_radio/liveradio/ko"
     showPlaceholder={false}
     skin="audio"
   />
@@ -33,7 +33,7 @@ storiesOf('Components|Media Player', module)
   .add('Audio Skin AMP', () => (
     <AmpMediaPlayer
       isAmp
-      src="https://www.test.bbc.com/ws/av-embeds/media/bbc_korean_radio/liveradio/ko/amp"
+      src="https://www.bbc.com/ws/av-embeds/media/bbc_korean_radio/liveradio/ko/amp"
       placeholderSrc="https://news.files.bbci.co.uk/include/articles/public/images/audio-player-placeholder.png"
       skin="audio"
     />
