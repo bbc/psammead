@@ -208,6 +208,7 @@ exports[`Navigation should render correctly 1`] = `
   text-decoration: none;
   display: inline-block;
   padding: 0.75rem 1rem;
+  width: 100%;
 }
 
 .c15:hover::after {
@@ -243,6 +244,7 @@ exports[`Navigation should render correctly 1`] = `
   text-decoration: none;
   display: inline-block;
   padding: 0.75rem 1rem;
+  width: 100%;
 }
 
 .c17:hover::after {
@@ -285,6 +287,10 @@ exports[`Navigation should render correctly 1`] = `
 
 .c0 {
   background-color: #B80000;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .c0 .c6::after {
@@ -314,6 +320,22 @@ exports[`Navigation should render correctly 1`] = `
 .c3 {
   position: relative;
   border-right: #FFFFFF solid;
+}
+
+.c18 {
+  width: 100%;
+  height: 0;
+  position: -webkit-sticky;
+  position: sticky;
+  bottom: 0;
+  pointer-events: none;
+  z-index: 3;
+}
+
+@media (min-width:80rem) {
+  .c1 {
+    width: 80rem;
+  }
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
@@ -404,7 +426,7 @@ exports[`Navigation should render correctly 1`] = `
 
 @media (max-width:24.9375rem) {
   .c15 {
-    padding: 0.75rem 0.5rem;
+    padding: 0.5rem 0.5rem;
   }
 }
 
@@ -424,7 +446,7 @@ exports[`Navigation should render correctly 1`] = `
 
 @media (max-width:24.9375rem) {
   .c17 {
-    padding: 0.75rem 0.5rem;
+    padding: 0.5rem 0.5rem;
   }
 }
 
@@ -434,6 +456,9 @@ exports[`Navigation should render correctly 1`] = `
     dir="ltr"
     role="navigation"
   >
+    <div
+      style="flex-grow: 1;"
+    />
     <div
       class="c1"
     >
@@ -545,6 +570,9 @@ exports[`Navigation should render correctly 1`] = `
         style="width: 2rem; height: 100%; flex-shrink: 0; z-index: 3; overflow: hidden; position: absolute; right: 0px; top: 0px; pointer-events: none;"
       />
     </div>
+    <div
+      style="flex-grow: 1;"
+    />
   </nav>
   <div
     class="c12"
@@ -610,6 +638,13 @@ exports[`Navigation should render correctly 1`] = `
         </a>
       </li>
     </ul>
+    <div
+      class="c18"
+    >
+      <div
+        style="height: 4rem; width: 100%; overflow: hidden; position: absolute; bottom: 0px; display: none;"
+      />
+    </div>
   </div>
 </div>
 `;
