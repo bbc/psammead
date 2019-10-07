@@ -65,16 +65,16 @@ const StoryPromoWrapper = styled.div`
 
     ${({ topStory }) =>
       topStory
-        ? css`
-            @media (min-width: ${GEL_GROUP_5_SCREEN_WIDTH_MIN}) {
-              grid-template-columns: repeat(12, 1fr);
-            }
-          `
-        : css`
-            @media (min-width: ${GEL_GROUP_4_SCREEN_WIDTH_MIN}) {
-              display: block;
-            }
-          `}
+        ? `
+          @media (min-width: ${GEL_GROUP_5_SCREEN_WIDTH_MIN}) {
+            grid-template-columns: repeat(12, 1fr);
+          }
+        `
+        : `
+          @media (min-width: ${GEL_GROUP_4_SCREEN_WIDTH_MIN}) {
+            display: block;
+          }
+        `}
   }
 `;
 
@@ -248,23 +248,23 @@ export const Summary = styled.p`
 
   ${({ topStory }) =>
     topStory
-      ? css`
-          @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) and (max-width: ${GEL_GROUP_3_SCREEN_WIDTH_MAX}) {
-            display: none;
-            visibility: hidden;
-          }
-        `
-      : css`
-          @media (max-width: ${GEL_GROUP_2_SCREEN_WIDTH_MAX}) {
-            display: none;
-            visibility: hidden;
-          }
+      ? `
+        @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) and (max-width: ${GEL_GROUP_3_SCREEN_WIDTH_MAX}) {
+          display: none;
+          visibility: hidden;
+        }
+      `
+      : `
+        @media (max-width: ${GEL_GROUP_2_SCREEN_WIDTH_MAX}) {
+          display: none;
+          visibility: hidden;
+        }
 
-          @media (min-width: ${GEL_GROUP_4_SCREEN_WIDTH_MIN}) {
-            display: none;
-            visibility: hidden;
-          }
-        `}
+        @media (min-width: ${GEL_GROUP_4_SCREEN_WIDTH_MIN}) {
+          display: none;
+          visibility: hidden;
+        }
+      `}
 `;
 
 export const Link = styled.a`
