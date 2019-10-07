@@ -44,12 +44,23 @@ const StyledParagraph = styled.p`
   padding: ${GEL_SPACING_DBL} 0;
 `;
 
-const SitewideLinks = ({ links, copyrightText, externalLink, service }) => (
+const SitewideLinks = ({
+  links,
+  copyrightText,
+  trustProjectLink,
+  externalLink,
+  service,
+}) => (
   <SitewideLinksWrapper service={service}>
     <ConstrainedWrapper>
       <List links={links} />
       <StyledParagraph>
         {copyrightText}{' '}
+        <Link
+          text={trustProjectLink.text}
+          href={trustProjectLink.href}
+          inline
+        />
         <Link text={externalLink.text} href={externalLink.href} inline />
       </StyledParagraph>
     </ConstrainedWrapper>
@@ -64,6 +75,7 @@ const linkPropTypes = shape({
 SitewideLinks.propTypes = {
   links: arrayOf(linkPropTypes.isRequired).isRequired,
   copyrightText: node.isRequired,
+  trustProjectLink: linkPropTypes.isRequired,
   externalLink: linkPropTypes.isRequired,
   service: string.isRequired,
 };
