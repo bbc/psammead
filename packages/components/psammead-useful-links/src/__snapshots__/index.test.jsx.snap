@@ -46,6 +46,13 @@ exports[`Multiple useful links should render correctly 1`] = `
   }
 }
 
+@media (min-width:37.5rem) {
+  .c1 {
+    display: inline-block;
+    min-width: 50%;
+  }
+}
+
 <ul
   class="c0"
   role="list"
