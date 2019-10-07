@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 1.8.14 | [PR#2318](https://github.com/bbc/psammead/pull/2298) Bumping 3rd party dependencies |
 | 1.8.13 | [PR#2298](https://github.com/bbc/psammead/pull/2298) Talos - Bump Dependencies - @bbc/psammead-locales |
 | 1.8.12 | [PR#2289](https://github.com/bbc/psammead/pull/2289) Talos - Bump Dependencies - @bbc/psammead-brand, @bbc/psammead-caption, @bbc/psammead-copyright, @bbc/psammead-image-placeholder, @bbc/psammead-inline-link, @bbc/psammead-media-indicator, @bbc/psammead-paragraph, @bbc/psammead-story-promo, @bbc/psammead-styles, @bbc/psammead-timestamp |
 | 1.8.12 | [PR#2273](https://github.com/bbc/psammead/pull/2273) Talos - Bump Dependencies - @bbc/psammead-styles |
