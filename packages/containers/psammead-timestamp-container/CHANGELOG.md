@@ -3,7 +3,11 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+<<<<<<< HEAD
 | 2.5.0 | [PR#2303](https://github.com/bbc/psammead/pull/2303) Add option for alternative calendar timestamps |
+=======
+| 2.4.21 | [PR#2314](https://github.com/bbc/psammead/pull/2314) Talos - Bump Dependencies - @bbc/psammead-timestamp |
+>>>>>>> 0eac2370cf1200bcdfdddc70f1a11f2c9b2b58c3
 | 2.4.20 | [PR#2289](https://github.com/bbc/psammead/pull/2289) Talos - Bump Dependencies - @bbc/psammead-timestamp |
 | 2.4.19 | [PR#2240](https://github.com/bbc/psammead/pull/2240) Update locale code from `en-GB` to `en-gb` to remove a warning from Moment |
 | 2.4.18 | [PR#2252](https://github.com/bbc/psammead/pull/2252) Talos - Bump Dependencies - @bbc/psammead-timestamp |
