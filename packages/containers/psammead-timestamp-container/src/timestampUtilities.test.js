@@ -28,7 +28,7 @@ describe('Timestamp utility functions', () => {
   });
 
   describe('unixTimestampToMoment', () => {
-    it("should a moment that's valid", () => {
+    it('should be a valid moment', () => {
       expect(unixTimestampToMoment(timestamp, locale)).toHaveProperty(
         'isValid',
       );

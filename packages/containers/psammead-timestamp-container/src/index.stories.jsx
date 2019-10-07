@@ -143,7 +143,7 @@ storiesOf('Containers|TimestampContainer', module)
             script={script}
             locale={locale}
             service={service}
-            altCalendar={getAltCalendar() || null}
+            altCalendar={getAltCalendar()}
           />
         );
       },
