@@ -333,7 +333,7 @@ exports[`Navigation should render correctly 1`] = `
   z-index: 3;
   overflow: hidden;
   background-color: rgb(184,0,0,0);
-  background-image: linear-gradient( right,rgba(184,0,0,0),#B80000 );
+  background-image: linear-gradient( to right,rgba(184,0,0,0),#B80000 );
   position: absolute;
   right: 0;
   top: 0;

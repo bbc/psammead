@@ -297,7 +297,7 @@ const StyledNavGradient = styled.div`
   overflow: hidden;
   background-color: rgb(184, 0, 0, 0);
   background-image: linear-gradient(
-    ${({ dir }) => (dir === 'ltr' ? 'right' : 'left')},
+    ${({ dir }) => (dir === 'ltr' ? 'to right' : 'to left')},
     rgba(184, 0, 0, 0),
     ${C_POSTBOX}
   );
