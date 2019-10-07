@@ -78,9 +78,6 @@ const StoryPromoWrapper = styled.div`
   }
 `;
 
-/*
- *  Image
- */
 const ImageGridColumnsTopStory = css`
   grid-column: 1 / span 6;
 
@@ -152,9 +149,6 @@ const InlineMediaIndicator = styled.div`
       `}
 `;
 
-/*
- *  Text
- */
 const TextGridColumnsTopStory = css`
   grid-column: 1 / span 6;
 
@@ -273,9 +267,6 @@ export const Summary = styled.p`
         `}
 `;
 
-/*
- *  Link
- */
 export const Link = styled.a`
   position: static;
   color: ${C_EBON};
@@ -303,9 +294,6 @@ export const Link = styled.a`
   }
 `;
 
-/*
- *  Live Label
- */
 export const LiveLabel = styled.span.attrs({ 'aria-hidden': 'true' })`
   ${({ service }) => getSansBold(service)}
   color: ${C_POSTBOX};
@@ -323,9 +311,6 @@ LiveLabel.defaultProps = {
   dir: 'ltr',
 };
 
-/*
- *  Story Promo
- */
 const StoryPromo = ({ image, info, mediaIndicator, topStory }) => (
   <StoryPromoWrapper topStory={topStory}>
     <ImageGridItem topStory={topStory}>
