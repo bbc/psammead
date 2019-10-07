@@ -128,12 +128,11 @@ storiesOf('Containers|TimestampContainer', module)
           timestamps,
           timestamps['Fixed (27 Aug 2019)'],
         );
-        const getAltCalendar = () => {
-          if (locale === 'fa' || locale === 'ps') {
-            return jalaali;
-          }
-          return null;
-        };
+        const getAltCalendar = () =>
+          ({
+            fa: jalaali,
+            ps: jalaali,
+          }[locale]);
         return (
           <Timestamp
             timestamp={getTimestampValue(storyTimestamp)}
