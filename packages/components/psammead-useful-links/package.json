@@ -1,0 +1,40 @@
+{
+  "name": "@bbc/psammead-useful-links",
+  "version": "1.0.0-alpha.2",
+  "main": "dist/index.js",
+  "module": "esm/index.js",
+  "sideEffects": false,
+  "description": "React styled component for Useful Links",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/BBC-News/psammead/tree/latest/packages/components/psammead-useful-links"
+  },
+  "keywords": [
+    "bbc",
+    "links",
+    "useful-links",
+    "styled-components",
+    "link-promo"
+  ],
+  "author": {
+    "name": "Psammead Maintainers",
+    "email": "PsammeadMaintainers@bbc.co.uk"
+  },
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/bbc/psammead/issues"
+  },
+  "homepage": "https://github.com/BBC-News/psammead/blob/latest/packages/components/psammead-useful-links/README.md",
+  "dependencies": {
+    "@bbc/gel-foundations": "^3.4.0",
+    "@bbc/psammead-styles": "^2.3.0"
+  },
+  "peerDependencies": {
+    "react": "^16.9.0",
+    "prop-types": "^15.6.2",
+    "styled-components": "^4.3.2"
+  },
+  "publishConfig": {
+    "tag": "alpha"
+  }
+}
