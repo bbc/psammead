@@ -73,4 +73,82 @@ storiesOf('Components|ConsentBanner', module)
       },
     }),
     { notes, knobs: { escapeHTML: false } },
+    { chromatic: { disable: true } },
+  );
+
+storiesOf('Components|ConsentBanner', module)
+  .addDecorator(dirDecorator)
+  .add(
+    'rtl',
+    inputProvider({
+      slots: [
+        {
+          name: 'title',
+          defaultText:
+            'المحكمة العليا الأمريكية ذات الأغلبية المحافظة وافقت على احتجاز غير المواطنين لأجل غير مسمى حتى بعد سنوات من خروجهم من السجن',
+        },
+        {
+          name: 'text',
+          defaultText: 'Changes to our Privacy and Cookie Policy ',
+        },
+      ],
+      /* eslint-disable react/prop-types */
+      componentFunction: ({
+        slotTexts: [title, text],
+        dir = 'rtl',
+        script = 'arabic',
+        service = 'persian',
+      }) => {
+        const shortText = text.trim().split(' ')[0];
+        return (
+          <ConsentBanner
+            dir="rtl"
+            title={title}
+            text={Text({ dir, script, service, text, shortText })}
+            accept={Accept(shortText)}
+            reject={Reject(shortText)}
+            script={script}
+            service={service}
+          />
+        );
+      },
+    }),
+  );
+
+storiesOf('Components|ConsentBanner', module)
+  .addDecorator(dirDecorator)
+  .add(
+    'ltr',
+    inputProvider({
+      slots: [
+        {
+          name: 'title',
+          defaultText: 'Privacy and Cookies Policy',
+        },
+        {
+          name: 'text',
+          defaultText: 'Changes to our Privacy and Cookie Policy ',
+        },
+      ],
+      /* eslint-disable react/prop-types */
+      componentFunction: ({
+        slotTexts: [title, text],
+        dir = 'ltr',
+        script = 'latin',
+        service = 'news',
+      }) => {
+        const shortText = text.trim().split(' ')[0];
+        return (
+          <ConsentBanner
+            dir="rtl"
+            title={title}
+            text={Text({ dir, script, service, text, shortText })}
+            accept={Accept(shortText)}
+            reject={Reject(shortText)}
+            script={script}
+            service={service}
+          />
+        );
+      },
+    }),
   );
