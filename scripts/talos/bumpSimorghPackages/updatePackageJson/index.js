@@ -3,9 +3,11 @@ const commitRemoteChanges = require('../../../utilities/commitRemoteChanges');
 const mergeUpdates = (packageJson, publishedPackages) => {
   const newPackageJson = { ...packageJson };
   Object.keys(publishedPackages).forEach(key => {
-    if (newPackageJson.dependencies[key])
+    const hasNewDependency = newPackageJson.dependencies[key];
+    const hasNewDevDependency = newPackageJson.devDependencies[key];
+    if (hasNewDependency)
       newPackageJson.dependencies[key] = publishedPackages[key];
-    if (newPackageJson.devDependencies[key])
+    if (hasNewDevDependency)
       newPackageJson.devDependencies[key] = publishedPackages[key];
   });
   return newPackageJson;
