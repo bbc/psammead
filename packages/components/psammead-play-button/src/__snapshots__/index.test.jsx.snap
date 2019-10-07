@@ -145,7 +145,7 @@ exports[`PlayButton should render audio indicator correctly 1`] = `
 }
 
 <button
-  class="foo c0"
+  class="c0 foo"
 >
   <span
     class="c1"
@@ -404,7 +404,7 @@ exports[`PlayButton should render video indicator correctly 1`] = `
 }
 
 <button
-  class="foo c0"
+  class="c0 foo"
 >
   <span
     class="c1"
