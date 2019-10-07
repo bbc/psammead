@@ -8,11 +8,6 @@ describe(`SitewideLinks`, () => {
     text: 'Link',
   };
 
-  const trustProject = {
-    href: 'https://www.bbc.com/news/help-41670342',
-    text: 'Why you can trust the BBC',
-  };
-
   const links = new Array(7).fill(link).map((linkItem, index) => ({
     ...linkItem,
     text: `${linkItem.text}${index}`,
@@ -34,7 +29,7 @@ describe(`SitewideLinks`, () => {
     <SitewideLinks
       links={links}
       copyrightText={<span>Text here.</span>}
-      trustProjectLink={trustProject}
+      trustProjectLink={link}
       externalLink={link}
       service="news"
     />,

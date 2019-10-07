@@ -30,7 +30,12 @@ storiesOf('Components|SitewideLinks', module)
       slots: linkNames,
       /* eslint-disable react/prop-types */
       componentFunction: ({
-        slotTexts: [externalLinkText, copyrightText, ...linkTexts],
+        slotTexts: [
+          externalLinkText,
+          trustProjectLinkText,
+          copyrightText,
+          ...linkTexts
+        ],
         service,
       }) => {
         const links = linkTexts.map(buildLink);
@@ -38,6 +43,7 @@ storiesOf('Components|SitewideLinks', module)
           <SitewideLinks
             links={links}
             copyrightText={copyrightText}
+            trustProjectLink={buildLink(trustProjectLinkText)}
             externalLink={buildLink(externalLinkText)}
             service={service}
           />

@@ -57,8 +57,8 @@ const SitewideLinks = ({
       <StyledParagraph>
         {copyrightText}{' '}
         <Link
-          text={trustProjectLink.text}
           href={trustProjectLink.href}
+          text={trustProjectLink.text}
           inline
         />
         <Link text={externalLink.text} href={externalLink.href} inline />

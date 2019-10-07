@@ -269,12 +269,12 @@ exports[`SitewideLinks should render correctly 1`] = `
        
       <a
         class="c4 c8"
-        href="https://www.bbc.com/news/help-41670342"
+        href="https://www.bbc.co.uk/news"
       >
         <span
           class="c6"
         >
-          Why you can trust the BBC
+          Link
         </span>
       </a>
       <a
