@@ -32,11 +32,19 @@ describe('Media Player: AMP Entry', () => {
 });
 
 describe('Media Player: Canonical Entry', () => {
+  const mediaInfo = {
+    duration: '2:30',
+    durationSpoken: '2 minutes 30 seconds',
+    datetime: 'PT2M30S',
+  };
+
   shouldMatchSnapshot(
     'renders a landscape container with a placeholder image',
     <CanonicalMediaPlayer
       placeholderSrc="http://foo.bar/placeholder.png"
       src="http://foo.bar/iframe"
+      service="news"
+      mediaInfo={{ title: 'Dog chases cat.', ...mediaInfo }}
     />,
   );
 
@@ -46,6 +54,8 @@ describe('Media Player: Canonical Entry', () => {
       placeholderSrc="http://foo.bar/placeholder.png"
       src="http://foo.bar/iframe"
       portrait
+      service="news"
+      mediaInfo={{ title: 'Dog chases cat.', ...mediaInfo }}
     />,
   );
 
@@ -54,6 +64,8 @@ describe('Media Player: Canonical Entry', () => {
     <CanonicalMediaPlayer
       showPlaceholder={false}
       src="http://foo.bar/iframe"
+      service="news"
+      mediaInfo={{ title: 'Dog chases cat.', ...mediaInfo }}
     />,
   );
 
@@ -63,6 +75,8 @@ describe('Media Player: Canonical Entry', () => {
       showPlaceholder={false}
       src="https://www.test.bbc.com/ws/av-embeds/media/bbc_korean_radio/liveradio"
       skin="audio"
+      service="news"
+      mediaInfo={{ type: 'audio', title: 'Dog barks at cat.', ...mediaInfo }}
     />,
   );
 });
