@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
 import styled, { css } from 'styled-components';
-import { shape, string, node, bool, oneOf, func, instanceOf } from 'prop-types';
+import { shape, string, node, bool, oneOf, func } from 'prop-types';
 import VisuallyHiddenText from '@bbc/psammead-visually-hidden-text';
 import { C_WHITE, C_POSTBOX, C_GHOST } from '@bbc/psammead-styles/colours';
 import {
@@ -226,7 +226,7 @@ const useOutsideHandler = handler => {
   });
 };
 
-const MenuWrapper = styled.div`
+const MenuWrapper = styled.menu`
   max-width: ${GEL_GROUP_5_SCREEN_WIDTH_MIN};
   overflow: scroll;
   border-bottom: solid ${C_POSTBOX};
@@ -243,6 +243,7 @@ const MenuWrapper = styled.div`
   flex-grow: 1;
   pointer-events: auto;
   ${({ moveContent }) => !moveContent && 'max-height: 85vh;'}
+  padding: 0;
 `;
 
 const Chevron = ({ dir, children }) => (
@@ -370,14 +371,14 @@ NavMenu.propTypes = {
   setMenuVisibile: func.isRequired,
   menuVisible: bool.isRequired,
   dir: string.isRequired,
-  buttonRef: instanceOf(Element).isRequired,
+  buttonRef: shape({ current: node }).isRequired,
 };
 
 Menu.propTypes = {
   children: node.isRequired,
   visible: bool.isRequired,
   dir: string.isRequired,
-  wrapperRef: instanceOf(Element).isRequired,
+  wrapperRef: shape({ current: node }).isRequired,
   moveContent: bool,
 };
 
