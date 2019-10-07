@@ -289,6 +289,24 @@ const StyledMenuBottomContainer = styled.div`
   z-index: 3;
 `;
 
+const StyledNavGradient = styled.div`
+  width: ${GEL_SPACING_QUAD};
+  height: 100%;
+  flex-shrink: 0;
+  z-index: 3;
+  overflow: hidden;
+  background-color: rgb(184, 0, 0, 0);
+  background-image: linear-gradient(
+    ${({ dir }) => (dir === 'ltr' ? 'right' : 'left')},
+    rgba(184, 0, 0, 0),
+    ${C_POSTBOX}
+  );
+  position: absolute;
+  ${({ dir }) => (dir === 'ltr' ? 'right' : 'left')}: 0;
+  top: 0;
+  pointer-events: none;
+`;
+
 const NavMenu = ({
   script,
   service,
@@ -424,8 +442,6 @@ const Navigation = ({
 
   useOutsideHandler(handleClickOutside);
 
-  const gradSide = dir === 'ltr' ? { right: 0 } : { left: 0 };
-
   return (
     <>
       <StyledNav role="navigation" dir={dir}>
@@ -442,23 +458,7 @@ const Navigation = ({
             buttonRef={buttonRef}
           />
           {children}
-          <div
-            style={{
-              width: GEL_SPACING_QUAD,
-              height: '100%',
-              flexShrink: 0,
-              zIndex: 3,
-              overflow: 'hidden',
-              backgroundColor: 'rgb(184,0,0,0)',
-              backgroundImage: `linear-gradient(to ${
-                dir === 'ltr' ? 'right' : 'left'
-              }, rgba(184,0,0,0), ${C_POSTBOX})`,
-              position: 'absolute',
-              ...gradSide,
-              top: 0,
-              pointerEvents: 'none',
-            }}
-          />
+          <StyledNavGradient dir={dir} />
         </NavWrapper>
       </StyledNav>
       <Menu
