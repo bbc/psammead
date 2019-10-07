@@ -1,13 +1,72 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Media Player: Placeholder should render a placeholder image with callback function 1`] = `
-.c1 {
+exports[`Media Player: Placeholder should render a video placeholder 1`] = `
+.c8 {
   display: block;
   width: 100%;
   visibility: visible;
 }
 
-.c0 {
+.c6 {
+  vertical-align: middle;
+  margin: 0 0.25rem;
+  color: #222222;
+  fill: currentColor;
+  width: 0.75rem;
+  height: 0.75rem;
+}
+
+.c4 {
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  -webkit-clip: rect(1px,1px,1px,1px);
+  clip: rect(1px,1px,1px,1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  width: 1px;
+  margin: 0;
+}
+
+.c3 {
+  background-color: #222222;
+  border: none;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: block;
+  font-family: ReithSans,Helvetica,Arial,sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  height: 5rem;
+  padding: 0;
+  -webkit-transition: background-color 300ms;
+  transition: background-color 300ms;
+  width: 5rem;
+}
+
+.c3:hover,
+.c3:focus {
+  background-color: #B80000;
+  -webkit-transition: background-color 300ms;
+  transition: background-color 300ms;
+}
+
+.c5 > svg {
+  color: #FFFFFF;
+  fill: currentColor;
+  height: 1.5rem;
+  margin-top: 0.5rem;
+  width: 1.5rem;
+}
+
+.c7 {
+  display: block;
+  margin-top: 0.5rem;
+}
+
+.c1 {
   cursor: pointer;
   position: absolute;
   top: 0;
@@ -16,12 +75,185 @@ exports[`Media Player: Placeholder should render a placeholder image with callba
   height: 100%;
 }
 
+.c2 {
+  position: absolute;
+  bottom: 0;
+}
+
+.c0:hover .c2,
+.c0:focus .c2 {
+  background-color: #B80000;
+}
+
 <div
-  class="c0"
+  class="c0 c1"
 >
+  <button
+    class="c2 c3"
+  >
+    <span
+      class="c4"
+    >
+      Play video, "Dog chases cat.", 2 minutes 30 seconds
+    </span>
+    <div
+      aria-hidden="true"
+      class="c5"
+    >
+      <svg
+        class="c6"
+        focusable="false"
+        height="12px"
+        viewBox="0 0 32 32"
+        width="12px"
+      >
+        <polygon
+          points="3,32 29,16 3,0"
+        />
+      </svg>
+    </div>
+    <time
+      aria-hidden="true"
+      class="c7"
+      datetime="PT2M30S"
+    >
+      2:30
+    </time>
+  </button>
   <img
     alt="Image Alt"
-    class="c1"
+    class="c8"
+    src="http://foo.bar/placeholder.png"
+  />
+</div>
+`;
+
+exports[`Media Player: Placeholder should render an audio placeholder 1`] = `
+.c8 {
+  display: block;
+  width: 100%;
+  visibility: visible;
+}
+
+.c6 {
+  vertical-align: middle;
+  margin: 0 0.25rem;
+  color: #222222;
+  fill: currentColor;
+  width: 0.8125rem;
+  height: 0.75rem;
+}
+
+.c4 {
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  -webkit-clip: rect(1px,1px,1px,1px);
+  clip: rect(1px,1px,1px,1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  width: 1px;
+  margin: 0;
+}
+
+.c3 {
+  background-color: #222222;
+  border: none;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: block;
+  font-family: ReithSans,Helvetica,Arial,sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  height: 5rem;
+  padding: 0;
+  -webkit-transition: background-color 300ms;
+  transition: background-color 300ms;
+  width: 5rem;
+}
+
+.c3:hover,
+.c3:focus {
+  background-color: #B80000;
+  -webkit-transition: background-color 300ms;
+  transition: background-color 300ms;
+}
+
+.c5 > svg {
+  color: #FFFFFF;
+  fill: currentColor;
+  height: 1.5rem;
+  margin-top: 0.5rem;
+  width: 1.5rem;
+}
+
+.c7 {
+  display: block;
+  margin-top: 0.5rem;
+}
+
+.c1 {
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.c2 {
+  position: absolute;
+  bottom: 0;
+}
+
+.c0:hover .c2,
+.c0:focus .c2 {
+  background-color: #B80000;
+}
+
+<div
+  class="c0 c1"
+>
+  <button
+    class="c2 c3"
+  >
+    <span
+      class="c4"
+    >
+      Play audio, "Dog barks at cat.", 2 minutes 30 seconds
+    </span>
+    <div
+      aria-hidden="true"
+      class="c5"
+    >
+      <svg
+        class="c6"
+        focusable="false"
+        height="12px"
+        viewBox="0 0 13 12"
+        width="13px"
+      >
+        <path
+          d="M9.021 1.811l-.525.525c.938.938 1.5 2.25 1.5 3.675s-.563 2.738-1.5 3.675l.525.525c1.05-1.087 1.725-2.55 1.725-4.2s-.675-3.112-1.725-4.2z"
+        />
+        <path
+          d="M10.596.199l-.525.562c1.35 1.35 2.175 3.225 2.175 5.25s-.825 3.9-2.175 5.25l.525.525c1.5-1.462 2.4-3.525 2.4-5.775s-.9-4.312-2.4-5.812zM6.996 1.511l-2.25 2.25H.996v4.5h3.75l2.25 2.25z"
+        />
+      </svg>
+    </div>
+    <time
+      aria-hidden="true"
+      class="c7"
+      datetime="PT2M30S"
+    >
+      2:30
+    </time>
+  </button>
+  <img
+    alt="Image Alt"
+    class="c8"
     src="http://foo.bar/placeholder.png"
   />
 </div>
