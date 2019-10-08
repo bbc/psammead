@@ -46,7 +46,7 @@ const createUrlLink = element => {
 
 const handleSupportedNodes = (childNode, attributes, acc) => {
   const block = xmlNodeToBlock(childNode, attributes);
-  const blocks = Array.isArray(block) ? block : [block];
+  const blocks = is(Array, block) ? block : [block];
   return [...acc, ...blocks];
 };
 
@@ -59,7 +59,7 @@ const convertToBlocks = (node, attributes = []) =>
       return handleSupportedNodes(childNode, attributes, acc);
     }
 
-    if (Array.isArray(childNode.elements)) {
+    if (is(Array, childNode.elements)) {
       return handleUnsupportedNodes(childNode, attributes);
     }
 
