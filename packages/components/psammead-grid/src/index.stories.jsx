@@ -823,22 +823,22 @@ storiesOf('Components|Grid', module)
           group1: 6,
           group2: 6,
           group3: 6,
-          group4: 20,
-          group5: 20,
+          group4: 8,
+          group5: 8,
         }}
         enableGelGutters
         enableGelMargins
       >
         <Grid
-          enableGelGutters
           columns={{
             group0: 6,
             group1: 6,
             group2: 6,
             group3: 6,
-            group4: 4,
-            group5: 4,
+            group4: 6,
+            group5: 6,
           }}
+          enableGelGutters
         >
           <Grid
             item
@@ -847,21 +847,8 @@ storiesOf('Components|Grid', module)
               group1: 2,
               group2: 2,
               group3: 2,
-              group4: 4,
-              group5: 4,
-            }}
-          >
-            <ExampleImage />
-          </Grid>
-          <Grid
-            item
-            columns={{
-              group0: 4,
-              group1: 4,
-              group2: 4,
-              group3: 4,
-              group4: 4,
-              group5: 4,
+              group4: 2,
+              group5: 2,
             }}
           >
             <ExampleParagraph identifier="1" />
@@ -869,19 +856,6 @@ storiesOf('Components|Grid', module)
           <Grid
             item
             columns={{
-              group0: 2,
-              group1: 2,
-              group2: 2,
-              group3: 2,
-              group4: 4,
-              group5: 4,
-            }}
-          >
-            <ExampleImage />
-          </Grid>
-          <Grid
-            item
-            columns={{
               group0: 4,
               group1: 4,
               group2: 4,
@@ -890,72 +864,134 @@ storiesOf('Components|Grid', module)
               group5: 4,
             }}
           >
-            <ExampleParagraph identifier="2" />
-          </Grid>
-          <Grid
-            item
-            columns={{
-              group0: 2,
-              group1: 2,
-              group2: 2,
-              group3: 2,
-              group4: 4,
-              group5: 4,
-            }}
-          >
             <ExampleImage />
           </Grid>
-          <Grid
-            item
-            columns={{
-              group0: 4,
-              group1: 4,
-              group2: 4,
-              group3: 4,
-              group4: 4,
-              group5: 4,
-            }}
-          >
-            <ExampleParagraph identifier="3" />
-          </Grid>
-          <Grid
-            enableGelGutters
-            columns={{
-              group0: 6,
-              group1: 6,
-              group2: 6,
-              group3: 6,
-              group4: 4,
-              group5: 4,
-            }}
-          >
-            <Grid
-              item
-              columns={{
-                group0: 2,
-                group1: 2,
-                group2: 2,
-                group3: 2,
-                group4: 4,
-                group5: 4,
-              }}
-            >
-              <ExampleImage />
-            </Grid>
-            <Grid
-              item
-              columns={{
-                group0: 4,
-                group1: 4,
-                group2: 4,
-                group3: 4,
-                group4: 4,
-                group5: 4,
-              }}
-            >
-              <ExampleParagraph identifier="4" />
-            </Grid>
-          </Grid>
+        </Grid>
+        <Grid
+          item
+          columns={{
+            group0: 2,
+            group1: 2,
+            group2: 2,
+            group3: 2,
+            group4: 2,
+            group5: 2,
+          }}
+        >
+          <ExampleImage />
+          <ExampleParagraph identifier="2" />
+        </Grid>
+        <Grid
+          item
+          columns={{
+            group0: 2,
+            group1: 2,
+            group2: 2,
+            group3: 2,
+            group4: 2,
+            group5: 2,
+          }}
+        >
+          <ExampleImage />
+          <ExampleParagraph identifier="3" />
+        </Grid>
+        <Grid
+          item
+          columns={{
+            group0: 2,
+            group1: 2,
+            group2: 2,
+            group3: 2,
+            group4: 2,
+            group5: 2,
+          }}
+        >
+          <ExampleImage />
+          <ExampleParagraph identifier="4" />
+        </Grid>
+        <Grid
+          item
+          columns={{
+            group0: 2,
+            group1: 2,
+            group2: 2,
+            group3: 2,
+            group4: 2,
+            group5: 2,
+          }}
+        >
+          <ExampleImage />
+          <ExampleParagraph identifier="5" />
+        </Grid>
+        <Grid
+          item
+          columns={{
+            group0: 2,
+            group1: 2,
+            group2: 2,
+            group3: 2,
+            group4: 2,
+            group5: 2,
+          }}
+        >
+          <ExampleImage />
+          <ExampleParagraph identifier="6" />
+        </Grid>
+        <Grid
+          item
+          columns={{
+            group0: 2,
+            group1: 2,
+            group2: 2,
+            group3: 2,
+            group4: 2,
+            group5: 2,
+          }}
+        >
+          <ExampleImage />
+          <ExampleParagraph identifier="7" />
+        </Grid>
+        <Grid
+          item
+          columns={{
+            group0: 2,
+            group1: 2,
+            group2: 2,
+            group3: 2,
+            group4: 2,
+            group5: 2,
+          }}
+        >
+          <ExampleImage />
+          <ExampleParagraph identifier="8" />
+        </Grid>
+        <Grid
+          item
+          columns={{
+            group0: 2,
+            group1: 2,
+            group2: 2,
+            group3: 2,
+            group4: 2,
+            group5: 2,
+          }}
+        >
+          <ExampleImage />
+          <ExampleParagraph identifier="9" />
+        </Grid>
+        <Grid
+          item
+          columns={{
+            group0: 2,
+            group1: 2,
+            group2: 2,
+            group3: 2,
+            group4: 2,
+            group5: 2,
+          }}
+        >
+          <ExampleImage />
+          <ExampleParagraph identifier="10" />
         </Grid>
       </Grid>
     ),
