@@ -215,6 +215,7 @@ export const NavigationLi = ({
         script={script}
         currentLink="true"
         service={service}
+        data-navigation={`${link}_${url}`}
         inMenu={inMenu}
       >
         <CurrentLink
@@ -226,7 +227,13 @@ export const NavigationLi = ({
         </CurrentLink>
       </StyledLink>
     ) : (
-      <StyledLink href={url} script={script} service={service} inMenu={inMenu}>
+      <StyledLink
+        href={url}
+        script={script}
+        service={service}
+        data-navigation={`${link}_${url}`}
+        inMenu={inMenu}
+      >
         {link}
       </StyledLink>
     )}
