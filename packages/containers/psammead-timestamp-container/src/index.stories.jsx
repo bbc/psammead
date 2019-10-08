@@ -12,16 +12,6 @@ import moment from 'moment-timezone';
 import { jalaali } from '@bbc/psammead-calendars';
 import Timestamp from '.';
 
-import '@bbc/psammead-locales/moment/am';
-import '@bbc/psammead-locales/moment/ha';
-import '@bbc/psammead-locales/moment/ig';
-import '@bbc/psammead-locales/moment/om';
-import '@bbc/psammead-locales/moment/pcm';
-import '@bbc/psammead-locales/moment/ps';
-import '@bbc/psammead-locales/moment/rw';
-import '@bbc/psammead-locales/moment/so';
-import '@bbc/psammead-locales/moment/ti';
-
 // Fixed timestamp for 27 August 2019, 14:54 BST
 const fixedTimestamp = 1566914061212;
 
