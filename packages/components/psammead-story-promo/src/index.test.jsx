@@ -151,4 +151,18 @@ describe('assertions', () => {
       container.querySelector('div').getAttribute('data-story-promo'),
     ).toEqual('section-name');
   });
+
+  it('should not have data-story-promo attribute when sectionName is not provided', () => {
+    const { container } = render(
+      <StoryPromo
+        image={Image}
+        info={Info({ topStory: true })}
+        mediaIndicator={mediaInfo}
+      />,
+    );
+
+    expect(
+      container.querySelector('div').getAttribute('data-story-promo'),
+    ).toBeNull();
+  });
 });
