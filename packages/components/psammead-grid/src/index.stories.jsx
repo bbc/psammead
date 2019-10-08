@@ -6,7 +6,7 @@ import { ExampleImage, ExampleParagraph } from './testHelpers';
 
 storiesOf('Components|Grid', module)
   .add(
-    'Simple example with layout change at group4+',
+    'Example with layout change at group4+',
     () => (
       <Grid
         columns={{
@@ -57,104 +57,7 @@ storiesOf('Components|Grid', module)
     { notes, knobs: { escapeHTML: false } },
   )
   .add(
-    'Simple example using gelGutters and gelMargins',
-    () => (
-      <Grid
-        enableGelGutters
-        enableGelMargins
-        columns={{
-          group0: 8,
-          group1: 8,
-          group2: 8,
-          group3: 8,
-          group4: 8,
-          group5: 8,
-        }}
-      >
-        <Grid
-          item
-          columns={{
-            group0: 6,
-            group1: 6,
-            group2: 6,
-            group3: 6,
-            group4: 6,
-            group5: 6,
-          }}
-        >
-          <ExampleParagraph identifier="1" />
-        </Grid>
-        <Grid
-          item
-          columns={{
-            group0: 2,
-            group1: 2,
-            group2: 2,
-            group3: 2,
-            group4: 2,
-            group5: 2,
-          }}
-        >
-          <ExampleParagraph identifier="2" />
-        </Grid>
-        <Grid
-          item
-          columns={{
-            group0: 2,
-            group1: 2,
-            group2: 2,
-            group3: 2,
-            group4: 2,
-            group5: 2,
-          }}
-        >
-          <ExampleParagraph identifier="3" />
-        </Grid>
-        <Grid
-          item
-          columns={{
-            group0: 2,
-            group1: 2,
-            group2: 2,
-            group3: 2,
-            group4: 2,
-            group5: 2,
-          }}
-        >
-          <ExampleParagraph identifier="4" />
-        </Grid>
-        <Grid
-          item
-          columns={{
-            group0: 2,
-            group1: 2,
-            group2: 2,
-            group3: 2,
-            group4: 2,
-            group5: 2,
-          }}
-        >
-          <ExampleParagraph identifier="5" />
-        </Grid>
-        <Grid
-          item
-          columns={{
-            group0: 2,
-            group1: 2,
-            group2: 2,
-            group3: 2,
-            group4: 2,
-            group5: 2,
-          }}
-        >
-          <ExampleParagraph identifier="6" />
-        </Grid>
-      </Grid>
-    ),
-    { notes, knobs: { escapeHTML: false } },
-  )
-  .add(
-    'Simple example with startOffset',
+    'Example with startOffset',
     () => (
       <Grid
         columns={{
