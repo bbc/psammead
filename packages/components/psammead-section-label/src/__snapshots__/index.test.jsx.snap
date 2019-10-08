@@ -1121,6 +1121,7 @@ exports[`SectionLabel With bar With plain title should render correctly 1`] = `
 
 <div
   class="c0"
+  data-section-divider="top-stories"
 >
   <div
     class="c1"

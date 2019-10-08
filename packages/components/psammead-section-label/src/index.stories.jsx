@@ -23,6 +23,7 @@ storiesOf('Components|SectionLabel', module)
           )}
           labelId="example-section-label"
           service={service}
+          sectionName="top-stories"
         >
           {title}
         </SectionLabel>

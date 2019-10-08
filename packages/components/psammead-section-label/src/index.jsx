@@ -71,8 +71,12 @@ const SectionLabel = ({
   script,
   service,
   visuallyHidden,
+  sectionName,
 }) => (
-  <SectionLabelWrapper visuallyHidden={visuallyHidden}>
+  <SectionLabelWrapper
+    visuallyHidden={visuallyHidden}
+    data-section-divider={sectionName}
+  >
     {bar && <Bar script={script} />}
     <Heading>
       {linkText && href ? (
@@ -106,6 +110,7 @@ SectionLabel.defaultProps = {
   href: null,
   linkText: null,
   visuallyHidden: false,
+  sectionName: null,
 };
 
 SectionLabel.propTypes = {
@@ -118,6 +123,7 @@ SectionLabel.propTypes = {
   script: shape(scriptPropType).isRequired,
   service: string.isRequired,
   visuallyHidden: bool,
+  sectionName: string,
 };
 
 export default SectionLabel;

@@ -12,6 +12,7 @@ describe('SectionLabel', () => {
           script={latin}
           labelId="test-section-label"
           service="news"
+          sectionName="top-stories"
         >
           This is text in a SectionLabel.
         </SectionLabel>,
