@@ -41,7 +41,9 @@ const TimestampContainer = ({
   );
 
   if (altCalendar && !isRelative) {
-    altDateTime = altCalendar.formatDate(unixTimestampToMoment(timestamp));
+    altDateTime = altCalendar.formatDate(
+      unixTimestampToMoment(timestamp, locale),
+    );
   }
 
   return (
