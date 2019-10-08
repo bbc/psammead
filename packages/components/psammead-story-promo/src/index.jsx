@@ -12,8 +12,9 @@ import {
   GEL_GROUP_2_SCREEN_WIDTH_MAX,
   GEL_GROUP_3_SCREEN_WIDTH_MIN,
   GEL_GROUP_3_SCREEN_WIDTH_MAX,
-  GEL_GROUP_5_SCREEN_WIDTH_MIN,
+  GEL_GROUP_4_SCREEN_WIDTH_MIN,
   GEL_GROUP_4_SCREEN_WIDTH_MAX,
+  GEL_GROUP_5_SCREEN_WIDTH_MIN,
 } from '@bbc/gel-foundations/breakpoints';
 import {
   getPica,
@@ -62,9 +63,18 @@ const StoryPromoWrapper = styled.div`
       grid-column-gap: ${GEL_GUTTER_ABOVE_600PX};
     }
 
-    @media (min-width: ${GEL_GROUP_5_SCREEN_WIDTH_MIN}) {
-      grid-template-columns: repeat(12, 1fr);
-    }
+    ${({ topStory }) =>
+      topStory
+        ? `
+          @media (min-width: ${GEL_GROUP_5_SCREEN_WIDTH_MIN}) {
+            grid-template-columns: repeat(12, 1fr);
+          }
+        `
+        : `
+          @media (min-width: ${GEL_GROUP_4_SCREEN_WIDTH_MIN}) {
+            display: block;
+          }
+        `}
   }
 `;
 
@@ -78,10 +88,6 @@ const ImageGridColumnsTopStory = css`
 
 const ImageGridColumns = css`
   grid-column: 1 / span 2;
-
-  @media (min-width: ${GEL_GROUP_5_SCREEN_WIDTH_MIN}) {
-    grid-column: 1 / span 4;
-  }
 `;
 
 const ImageGridFallbackTopStory = css`
@@ -92,10 +98,19 @@ const ImageGridFallbackTopStory = css`
     width: ${halfWidthColumnsMaxScaleable};
     margin-bottom: 0;
   }
+
+  @media (min-width: ${GEL_GROUP_5_SCREEN_WIDTH_MIN}) {
+    width: ${fourOfTwelveColumnsMaxWidthScaleable};
+  }
 `;
 
 const ImageGridFallback = css`
   width: ${twoOfSixColumnsMaxWidthScaleable};
+
+  @media (min-width: ${GEL_GROUP_4_SCREEN_WIDTH_MIN}) {
+    display: block;
+    width: 100%;
+  }
 `;
 
 const ImageGridItem = styled.div`
@@ -105,10 +120,6 @@ const ImageGridItem = styled.div`
 
   ${({ topStory }) =>
     topStory ? ImageGridFallbackTopStory : ImageGridFallback}
-
-  @media (min-width: ${GEL_GROUP_5_SCREEN_WIDTH_MIN}) {
-    width: ${fourOfTwelveColumnsMaxWidthScaleable};
-  }
 
   @supports (${grid}) {
     display: block;
@@ -136,6 +147,67 @@ const InlineMediaIndicator = styled.div`
         bottom: 0;
       }
       `}
+`;
+
+const TextGridColumnsTopStory = css`
+  grid-column: 1 / span 6;
+
+  @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
+    grid-column: 4 / span 3;
+  }
+
+  @media (min-width: ${GEL_GROUP_5_SCREEN_WIDTH_MIN}) {
+    grid-column: 7 / span 6;
+  }
+`;
+
+const TextGridColumns = css`
+  grid-column: 3 / span 4;
+
+  @media (min-width: ${GEL_GROUP_4_SCREEN_WIDTH_MIN}) {
+    padding-top: ${GEL_SPACING};
+  }
+`;
+
+const TextGridFallbackTopStory = css`
+  @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
+    width: ${halfWidthColumnsMaxScaleable};
+    padding: 0 ${GEL_SPACING_DBL};
+  }
+
+  @media (min-width: ${GEL_GROUP_5_SCREEN_WIDTH_MIN}) {
+    width: ${eightOfTwelveColumnsMaxScaleable};
+  }
+`;
+
+const TextGridFallback = css`
+  width: ${fourOfSixColumnsMaxWidthScaleable};
+  padding: 0 ${GEL_SPACING};
+
+  @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
+    padding: 0 ${GEL_SPACING_DBL};
+  }
+
+  @media (min-width: ${GEL_GROUP_4_SCREEN_WIDTH_MIN}) {
+    display: block;
+    width: 100%;
+    padding: ${GEL_SPACING} 0;
+  }
+`;
+
+const TextGridItem = styled.div`
+  display: inline-block;
+  vertical-align: top;
+
+  ${({ topStory }) => (topStory ? TextGridFallbackTopStory : TextGridFallback)}
+
+  @supports (${grid}) {
+    display: block;
+    width: initial;
+    padding: initial;
+
+    ${({ topStory }) => (topStory ? TextGridColumnsTopStory : TextGridColumns)}
+  }
 `;
 
 // This is needed to get around the issue of IE11 not supporting
@@ -176,77 +248,25 @@ export const Summary = styled.p`
 
   ${({ topStory }) =>
     topStory
-      ? css`
-          @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) and (max-width: ${GEL_GROUP_3_SCREEN_WIDTH_MAX}) {
-            display: none;
-            visibility: hidden;
-          }
-        `
-      : css`
-          @media (max-width: ${GEL_GROUP_2_SCREEN_WIDTH_MAX}) {
-            display: none;
-            visibility: hidden;
-          }
-        `}
+      ? `
+        @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) and (max-width: ${GEL_GROUP_3_SCREEN_WIDTH_MAX}) {
+          display: none;
+          visibility: hidden;
+        }
+      `
+      : `
+        @media (max-width: ${GEL_GROUP_2_SCREEN_WIDTH_MAX}) {
+          display: none;
+          visibility: hidden;
+        }
+
+        @media (min-width: ${GEL_GROUP_4_SCREEN_WIDTH_MIN}) {
+          display: none;
+          visibility: hidden;
+        }
+      `}
 `;
 
-const TextGridColumnsTopStory = css`
-  grid-column: 1 / span 6;
-
-  @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
-    grid-column: 4 / span 3;
-  }
-
-  @media (min-width: ${GEL_GROUP_5_SCREEN_WIDTH_MIN}) {
-    grid-column: 7 / span 6;
-  }
-`;
-
-const TextGridColumns = css`
-  grid-column: 3 / span 4;
-
-  @media (min-width: ${GEL_GROUP_5_SCREEN_WIDTH_MIN}) {
-    grid-column: 5 / span 8;
-  }
-`;
-
-const TextGridFallbackTopStory = css`
-  @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
-    width: ${halfWidthColumnsMaxScaleable};
-  }
-`;
-
-const TextGridFallback = css`
-  width: ${fourOfSixColumnsMaxWidthScaleable};
-  padding: 0 ${GEL_SPACING};
-`;
-
-const TextGridItem = styled.div`
-  display: inline-block;
-  vertical-align: top;
-
-  ${({ topStory }) => (topStory ? TextGridFallbackTopStory : TextGridFallback)}
-
-  @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
-    padding: 0 ${GEL_SPACING_DBL};
-  }
-
-  @media (min-width: ${GEL_GROUP_5_SCREEN_WIDTH_MIN}) {
-    width: ${eightOfTwelveColumnsMaxScaleable};
-  }
-
-  @supports (${grid}) {
-    display: block;
-    width: initial;
-    padding: initial;
-
-    ${({ topStory }) => (topStory ? TextGridColumnsTopStory : TextGridColumns)}
-  }
-`;
-
-/*
- *  Link
- */
 export const Link = styled.a`
   position: static;
   color: ${C_EBON};
@@ -274,9 +294,6 @@ export const Link = styled.a`
   }
 `;
 
-/*
- *  Live Label
- */
 export const LiveLabel = styled.span.attrs({ 'aria-hidden': 'true' })`
   ${({ service }) => getSansBold(service)}
   color: ${C_POSTBOX};
@@ -294,11 +311,8 @@ LiveLabel.defaultProps = {
   dir: 'ltr',
 };
 
-/*
- *  Story Promo
- */
 const StoryPromo = ({ image, info, mediaIndicator, topStory }) => (
-  <StoryPromoWrapper>
+  <StoryPromoWrapper topStory={topStory}>
     <ImageGridItem topStory={topStory}>
       <ImageContentsWrapper>
         {image}
