@@ -74,7 +74,7 @@ TimestampContainer.propTypes = {
   locale: string,
   service: string.isRequired,
   altCalendar: shape({
-    formatDate: func,
+    formatDate: func.isRequired,
   }),
 };
 
