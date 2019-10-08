@@ -19,8 +19,7 @@ import Link from '../Link';
 
 // Gets the number of grid rows, taking into account the
 // first-child in the grid being separate, on its own row.
-const getRowCount = (children, columns) =>
-  Math.ceil((React.Children.count(children) - 1) / columns) + 1;
+const getRowCount = (links, columns) => Math.ceil((links.length - 1) / columns);
 
 const StyledList = styled.ul`
   border-bottom: 1px solid ${C_SHADOW};
@@ -39,43 +38,22 @@ const StyledList = styled.ul`
   @media (min-width: ${GEL_GROUP_1_SCREEN_WIDTH_MIN}) and (max-width: ${GEL_GROUP_2_SCREEN_WIDTH_MAX}) {
     grid-column-gap: ${GEL_SPACING};
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(
-      ${({ children }) => getRowCount(children, 2)},
-      auto
-    );
+    grid-template-rows: repeat(${({ links }) => getRowCount(links, 2)}, auto);
   }
   @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) and (max-width: ${GEL_GROUP_3_SCREEN_WIDTH_MAX}) {
     grid-column-gap: ${GEL_SPACING_DBL};
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(
-      ${({ children }) => getRowCount(children, 3)},
-      auto
-    );
+    grid-template-rows: repeat(${({ links }) => getRowCount(links, 3)}, auto);
   }
   @media (min-width: ${GEL_GROUP_4_SCREEN_WIDTH_MIN}) and (max-width: ${GEL_GROUP_4_SCREEN_WIDTH_MAX}) {
     grid-column-gap: ${GEL_SPACING_DBL};
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(
-      ${({ children }) => getRowCount(children, 4)},
-      auto
-    );
+    grid-template-rows: repeat(${({ links }) => getRowCount(links, 4)}, auto);
   }
   @media (min-width: ${GEL_GROUP_5_SCREEN_WIDTH_MIN}) {
     grid-column-gap: ${GEL_SPACING_DBL};
     grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(
-      ${({ children }) => getRowCount(children, 5)},
-      auto
-    );
-  }
-  > li:first-child {
-    border-bottom: 1px solid ${C_SHADOW};
-    padding: ${GEL_SPACING} 0;
-    margin-bottom: ${GEL_SPACING};
-    grid-column: 1/-1;
-    @supports not (${grid}) {
-      width: 100%;
-    }
+    grid-template-rows: repeat(${({ links }) => getRowCount(links, 5)}, auto);
   }
 `;
 
@@ -86,8 +64,13 @@ const StyledListItem = styled.li`
   }
 `;
 
-const List = ({ links }) => (
-  <StyledList role="list">
+const List = ({ links, trustProjectLink }) => (
+  <StyledList role="list" trustProjectLink={trustProjectLink} links={links}>
+    {trustProjectLink && (
+      <StyledListItem key={trustProjectLink.text} role="listitem">
+        <Link text={trustProjectLink.text} href={trustProjectLink.href} />
+      </StyledListItem>
+    )}
     {links.map(link => (
       <StyledListItem key={link.text} role="listitem">
         <Link text={link.text} href={link.href} />
@@ -101,8 +84,16 @@ const linkPropTypes = shape({
   text: string.isRequired,
 });
 
+const trustProjectLinkPropTypes = shape({
+  href: string,
+  text: string,
+});
+
 List.propTypes = {
   links: arrayOf(linkPropTypes.isRequired).isRequired,
+  trustProjectLink: trustProjectLinkPropTypes,
 };
+
+List.defaultProps = { trustProjectLink: null };
 
 export default List;
