@@ -59,7 +59,7 @@ const convertToBlocks = (node, attributes = []) =>
       return handleSupportedNodes(childNode, attributes, acc);
     }
 
-    if (is(Array, childNode.elements)) {
+    if (childNode.elements) {
       return handleUnsupportedNodes(childNode, attributes);
     }
 
