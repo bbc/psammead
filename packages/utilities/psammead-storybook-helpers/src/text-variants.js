@@ -136,7 +136,7 @@ const LANGUAGE_VARIANTS = {
     text:
       'ਪਾਕਿਸਤਾਨੀ ਮਹਿਲਾ ਰਾਹਿਲਾ ਨੇ ਭਾਰਤੀ ਵਕੀਲ ਜ਼ਰੀਏ ਅਦਾਲਤ ਵਿੱਚ ਦਿੱਤੀ ਅਰਜ਼ੀ ਵਿੱਚ ਕਿਹਾ ਕਿ ਮਾਮਲੇ ਨਾਲ ਜੁੜੇ ਪਾਕਿਸਤਾਨੀ ਗਵਾਹਾਂ ਨੂੰ ਬੁਲਾਇਆ ਜਾਵੇ',
     script: 'hindi',
-    locale: 'pa',
+    locale: 'pa-in',
   },
   russian: {
     text:
