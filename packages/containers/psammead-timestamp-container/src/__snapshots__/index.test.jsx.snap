@@ -1,44 +1,5 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Timestamp should add alternative calendar before main date and time 1`] = `
-.c0 {
-  font-size: 0.875rem;
-  line-height: 1.125rem;
-  color: #6E6E73;
-  display: block;
-  font-family: "BBC Nassim Persian",Arial,Verdana,Geneva,Helvetica,sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  padding-bottom: 0.25rem;
-}
-
-.c0:last-child {
-  padding-bottom: 1rem;
-}
-
-@media (min-width:20rem) and (max-width:37.4375rem) {
-  .c0 {
-    font-size: 0.875rem;
-    line-height: 1.125rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c0 {
-    font-size: 0.8125rem;
-    line-height: 1rem;
-  }
-}
-
-<time
-  class="c0"
-  datetime="2018-10-19"
->
-  27 مهر 1397 - 
-  ۱۹ اکتبر ۲۰۱۸
-</time>
-`;
-
 exports[`Timestamp should add prefix and suffix 1`] = `
 .c0 {
   font-size: 0.875rem;
@@ -76,44 +37,6 @@ exports[`Timestamp should add prefix and suffix 1`] = `
   Prefix here  
   19 October 2018
     suffix here
-</time>
-`;
-
-exports[`Timestamp should not add alternative calendar before main date and time 1`] = `
-.c0 {
-  font-size: 0.875rem;
-  line-height: 1.125rem;
-  color: #6E6E73;
-  display: block;
-  font-family: "BBC Nassim Persian",Arial,Verdana,Geneva,Helvetica,sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  padding-bottom: 0.25rem;
-}
-
-.c0:last-child {
-  padding-bottom: 1rem;
-}
-
-@media (min-width:20rem) and (max-width:37.4375rem) {
-  .c0 {
-    font-size: 0.875rem;
-    line-height: 1.125rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c0 {
-    font-size: 0.8125rem;
-    line-height: 1rem;
-  }
-}
-
-<time
-  class="c0"
-  datetime="2018-10-19"
->
-  ۱۱ ماه پیش
 </time>
 `;
 
@@ -190,5 +113,82 @@ exports[`Timestamp should render without a leading zero on the day 1`] = `
   datetime="2018-07-07"
 >
   ۷ ژوئیه ۲۰۱۸
+</time>
+`;
+
+exports[`Timestamp with alternative calendar props should add alternative calendar if timestamp is not relative 1`] = `
+.c0 {
+  font-size: 0.875rem;
+  line-height: 1.125rem;
+  color: #6E6E73;
+  display: block;
+  font-family: "BBC Nassim Persian",Arial,Verdana,Geneva,Helvetica,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  padding-bottom: 0.25rem;
+}
+
+.c0:last-child {
+  padding-bottom: 1rem;
+}
+
+@media (min-width:20rem) and (max-width:37.4375rem) {
+  .c0 {
+    font-size: 0.875rem;
+    line-height: 1.125rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .c0 {
+    font-size: 0.8125rem;
+    line-height: 1rem;
+  }
+}
+
+<time
+  class="c0"
+  datetime="2018-10-19"
+>
+  27 مهر 1397 - 
+  ۱۹ اکتبر ۲۰۱۸
+</time>
+`;
+
+exports[`Timestamp with alternative calendar props should not add alternative calendar if timestamp is relative 1`] = `
+.c0 {
+  font-size: 0.875rem;
+  line-height: 1.125rem;
+  color: #6E6E73;
+  display: block;
+  font-family: "BBC Nassim Persian",Arial,Verdana,Geneva,Helvetica,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  padding-bottom: 0.25rem;
+}
+
+.c0:last-child {
+  padding-bottom: 1rem;
+}
+
+@media (min-width:20rem) and (max-width:37.4375rem) {
+  .c0 {
+    font-size: 0.875rem;
+    line-height: 1.125rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .c0 {
+    font-size: 0.8125rem;
+    line-height: 1rem;
+  }
+}
+
+<time
+  class="c0"
+  datetime="2018-10-19"
+>
+  ۱۱ ماه پیش
 </time>
 `;

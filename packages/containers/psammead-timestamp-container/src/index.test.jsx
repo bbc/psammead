@@ -1,12 +1,19 @@
 import React from 'react';
 import { isNull, shouldMatchSnapshot } from '@bbc/psammead-test-helpers';
 import { latin } from '@bbc/gel-foundations/scripts';
-import { jalaali } from '@bbc/psammead-calendars';
 import Timestamp from '.';
 
 const defaultTimestamp = 1539969006000; // 19 October 2018
 const noLeadingZeroTimestamp = 1530947227000; // 07 July 2018
 const invalidData = '8640000000000001'; // A day holds 86,400,000 milliseconds - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date#Description
+const mockCalendar = {
+  formatDate: moment => {
+    if (moment) {
+      return '27 مهر 1397';
+    }
+    return null;
+  },
+};
 
 describe('Timestamp', () => {
   describe('with no data', () => {
@@ -65,31 +72,33 @@ describe('Timestamp', () => {
     />,
   );
 
-  shouldMatchSnapshot(
-    'should add alternative calendar before main date and time',
-    <Timestamp
-      timestamp={defaultTimestamp}
-      dateTimeFormat="YYYY-MM-DD"
-      format="D MMMM YYYY"
-      isRelative={false}
-      script={latin}
-      locale="fa"
-      service="persian"
-      altCalendar={jalaali}
-    />,
-  );
+  describe('with alternative calendar props', () => {
+    shouldMatchSnapshot(
+      'should add alternative calendar if timestamp is not relative',
+      <Timestamp
+        timestamp={defaultTimestamp}
+        dateTimeFormat="YYYY-MM-DD"
+        format="D MMMM YYYY"
+        isRelative={false}
+        script={latin}
+        locale="fa"
+        service="persian"
+        altCalendar={mockCalendar}
+      />,
+    );
 
-  shouldMatchSnapshot(
-    'should not add alternative calendar before main date and time',
-    <Timestamp
-      timestamp={defaultTimestamp}
-      dateTimeFormat="YYYY-MM-DD"
-      format="D MMMM YYYY"
-      isRelative
-      script={latin}
-      locale="fa"
-      service="persian"
-      altCalendar={jalaali}
-    />,
-  );
+    shouldMatchSnapshot(
+      'should not add alternative calendar if timestamp is relative',
+      <Timestamp
+        timestamp={defaultTimestamp}
+        dateTimeFormat="YYYY-MM-DD"
+        format="D MMMM YYYY"
+        isRelative
+        script={latin}
+        locale="fa"
+        service="persian"
+        altCalendar={mockCalendar}
+      />,
+    );
+  });
 });
