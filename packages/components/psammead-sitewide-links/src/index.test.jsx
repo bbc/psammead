@@ -14,22 +14,10 @@ describe(`SitewideLinks`, () => {
   }));
 
   shouldMatchSnapshot(
-    'should render correctly if no trustProjectLink is passed',
-    <SitewideLinks
-      links={links}
-      copyrightText={<span>Text here.</span>}
-      trustProjectLink="null"
-      externalLink={link}
-      service="news"
-    />,
-  );
-
-  shouldMatchSnapshot(
     'should render correctly',
     <SitewideLinks
       links={links}
       copyrightText={<span>Text here.</span>}
-      trustProjectLink={link}
       externalLink={link}
       service="news"
     />,
