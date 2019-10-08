@@ -76,6 +76,8 @@ exports[`Navigation should render correctly 1`] = `
   margin: 0;
   position: relative;
   overflow: hidden;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
 }
 
 .c7 {
@@ -282,6 +284,7 @@ exports[`Navigation should render correctly 1`] = `
 
 .c0 {
   background-color: #B80000;
+  position: relative;
 }
 
 .c0 .c6::after {
@@ -295,17 +298,12 @@ exports[`Navigation should render correctly 1`] = `
   display: none;
   background-color: #FFFFFF;
   margin: 0 auto;
-  position: absolute;
+  position: relative;
   left: 0;
   border-left: solid #B80000;
   border-right: solid #B80000;
-  z-index: 10;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
+  width: 100%;
   pointer-events: auto;
-  max-height: 85vh;
   padding: 0;
 }
 
@@ -327,13 +325,10 @@ exports[`Navigation should render correctly 1`] = `
 .c12 {
   width: 2rem;
   height: 100%;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
   z-index: 3;
   overflow: hidden;
-  background-color: rgb(184,0,0,0);
-  background-image: linear-gradient( to right,rgba(184,0,0,0),#B80000 );
+  background-color: #B8000000;
+  background-image: linear-gradient( to right,#B8000000,#B80000FF );
   position: absolute;
   right: 0;
   top: 0;

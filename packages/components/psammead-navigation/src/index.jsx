@@ -212,6 +212,7 @@ const StyledNav = styled.nav`
       }
     `}
   }
+  position: relative;
 `;
 
 // Prototype components
@@ -230,19 +231,17 @@ const MenuWrapper = styled.menu`
   max-width: ${GEL_GROUP_5_SCREEN_WIDTH_MIN};
   overflow: scroll;
   border-bottom: solid ${C_POSTBOX};
-  display: ${({ visible }) => (visible ? 'inline-block' : 'none')};
+  display: ${({ visible, moveContent }) =>
+    visible ? !moveContent && 'inline-block' : 'none'};
   background-color: ${C_WHITE};
   margin: 0 auto;
   position: ${({ moveContent }) => (moveContent ? 'relative' : 'absolute')};
   ${({ dir }) => (dir === 'ltr' ? 'left' : 'right')}: 0;
-  ${({ dir }) => dir === 'rtl' && 'float: right;'}
   border-left: solid ${C_POSTBOX};
   border-right: solid ${C_POSTBOX};
-  z-index: 10;
   ${({ moveContent }) => moveContent && 'width: 100%;'}
-  flex-grow: 1;
   pointer-events: auto;
-  ${({ moveContent }) => !moveContent && 'max-height: 85vh;'}
+  ${({ moveContent }) => !moveContent && 'max-height: 75vh;'}
   padding: 0;
 `;
 
@@ -292,14 +291,13 @@ const StyledMenuBottomContainer = styled.div`
 const StyledNavGradient = styled.div`
   width: ${GEL_SPACING_QUAD};
   height: 100%;
-  flex-shrink: 0;
   z-index: 3;
   overflow: hidden;
-  background-color: rgb(184, 0, 0, 0);
+  background-color: ${C_POSTBOX}00;
   background-image: linear-gradient(
     ${({ dir }) => (dir === 'ltr' ? 'to right' : 'to left')},
-    rgba(184, 0, 0, 0),
-    ${C_POSTBOX}
+    ${C_POSTBOX}00,
+    ${C_POSTBOX}FF
   );
   position: absolute;
   ${({ dir }) => (dir === 'ltr' ? 'right' : 'left')}: 0;
@@ -397,11 +395,7 @@ Menu.propTypes = {
   visible: bool.isRequired,
   dir: string.isRequired,
   wrapperRef: shape({ current: node }).isRequired,
-  moveContent: bool,
-};
-
-Menu.defaultProps = {
-  moveContent: false,
+  moveContent: bool.isRequired,
 };
 
 Chevron.propTypes = {
@@ -414,6 +408,29 @@ UpChevronSvg.propTypes = {
 };
 
 DownChevronSvg.propTypes = UpChevronSvg.propTypes;
+
+const MenuHider = ({ menuVisible }) => {
+  const vis = menuVisible ? { display: 'block' } : { display: 'none' };
+  return (
+    <div
+      style={{
+        position: 'fixed',
+        backgroundColor: 'black',
+        opacity: 0.4,
+        top: 0,
+        bottom: 0,
+        left: 0,
+        right: 0,
+        zIndex: -1,
+        ...vis,
+      }}
+    />
+  );
+};
+
+MenuHider.propTypes = {
+  menuVisible: bool.isRequired,
+};
 
 // End prototypes
 const Navigation = ({
@@ -469,6 +486,7 @@ const Navigation = ({
       >
         {children}
       </Menu>
+      {!moveContent && <MenuHider menuVisible={menuVisible} />}
     </>
   );
 };
@@ -482,7 +500,7 @@ Navigation.propTypes = {
   moveContent: bool,
 };
 
-Navigation.defaultProps = { dir: 'ltr', moveContent: false };
+Navigation.defaultProps = { dir: 'ltr', moveContent: true };
 
 NavigationUl.propTypes = {
   children: node.isRequired,
@@ -490,7 +508,7 @@ NavigationUl.propTypes = {
   grid: bool,
 };
 
-NavigationUl.defaultProps = { inMenu: false, grid: false };
+NavigationUl.defaultProps = { inMenu: false, grid: true };
 
 NavigationLi.propTypes = {
   children: node.isRequired,
