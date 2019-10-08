@@ -40,5 +40,5 @@ describe('pacakge generator', () => {
           "import React from 'react';\n\nconst FooBarComponent = () => <h1>Hello World</h1>;\n\nexport default FooBarComponent;",
         );
       });
-  }, 100000);
+  }, 50000);
 });
