@@ -1,4 +1,4 @@
-# Script Switch Changelog
+# Script Link Changelog
 
 <!-- prettier-ignore -->
 | Version | Description |

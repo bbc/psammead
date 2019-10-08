@@ -6,7 +6,7 @@ This component is currently tagged as alpha and is not suitable for production u
 
 ## Description
 
-The `SwitchScript` component is designed to be used where a service has multiple variants and there is a need to switch between them.
+The `ScriptLink` component is designed to be used where a service has multiple variants and there is a need to switch between them.
 
 ## Installation
 
@@ -30,6 +30,7 @@ npm install @bbc/psammead-script-link --save
 ```jsx
 import ScriptLink from '@bbc/psammead-script-link';
 import { latin } from '@bbc/gel-foundations/scripts';
+import VisuallyHiddenText from '@bbc/psammead-visually-hidden-text';
 
 const WrappingComponent = () => (
   <div>
@@ -39,7 +40,8 @@ const WrappingComponent = () => (
       href="https://www.bbc.com/serbian/lat"
       variant="lat"
     >
-      Lat
+      <span aria-hidden>Lat</span>
+      <VisuallyHiddenText> Latin </VisuallyHiddenText>
     </ScriptLink>
   </div>
 );
@@ -51,7 +53,7 @@ The `ScriptLink` component is to be used on the `Brand` component.
 
 ### Accessibility notes
 
-This component is still in its initial alpha stages, and requires a full and extensive accessibility review.
+When navigating to the `ScriptLink` using a screen reader, it is identified as a link and the text is announced as `Simplified, Traditional, Latin or Cyrillic`.
 
 ## Contributing
 
