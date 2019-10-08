@@ -26,7 +26,6 @@ The only provided child should be the title for the section, provided as a _stri
 | linkText | string | no | `null` | `'See More'` |
 | script | object | yes | N/A | { canon: { groupA: { fontSize: '28', lineHeight: '32',}, groupB: { fontSize: '32', lineHeight: '36' }, groupD: { fontSize: '44', lineHeight: '48' } }, trafalgar: { groupA: { fontSize: '20', lineHeight: '24' }, groupB: { fontSize: '24', lineHeight: '28' }, groupD: { fontSize: '32', lineHeight: '36' } } } |
 | service | string | yes | N/A | `'news'` |
-| sectionName | string | no | `null` | `'top-stories'` |
 
 ## Usage
 
@@ -41,7 +40,6 @@ const WrappingComponent = () => (
       dir="ltr"
       labelId="example-section-label"
       service="news"
-      sectionName="top-stories"
     >
       Example section
     </SectionLabel>
