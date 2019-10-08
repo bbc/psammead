@@ -170,13 +170,19 @@ export const NavigationLi = ({
         script={script}
         currentLink="true"
         service={service}
+        data-navigation={`${link}_${url}`}
       >
         <CurrentLink script={script} currentPageText={currentPageText}>
           {link}
         </CurrentLink>
       </StyledLink>
     ) : (
-      <StyledLink href={url} script={script} service={service}>
+      <StyledLink
+        href={url}
+        script={script}
+        service={service}
+        data-navigation={`${link}_${url}`}
+      >
         {link}
       </StyledLink>
     )}
