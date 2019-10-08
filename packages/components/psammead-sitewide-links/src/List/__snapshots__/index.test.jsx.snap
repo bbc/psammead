@@ -28,9 +28,11 @@ exports[`List should render correctly with 7 items 1`] = `
   padding: 0.5rem 0;
   margin-bottom: 0.5rem;
   grid-column: 1/-1;
+  width: 100%;
 }
 
 .c1 {
+  display: inline-block;
   min-width: 50%;
 }
 
@@ -76,18 +78,6 @@ exports[`List should render correctly with 7 items 1`] = `
     grid-column-gap: 1rem;
     grid-template-columns: repeat(5,1fr);
     grid-template-rows: repeat( 3,auto );
-  }
-}
-
-@supports not (grid-template-columns:fit-content(200px)) {
-  .c0 > li:first-child {
-    width: 100%;
-  }
-}
-
-@supports not (grid-template-columns:fit-content(200px)) {
-  .c1 {
-    display: inline-block;
   }
 }
 
@@ -231,9 +221,11 @@ exports[`List should render correctly with 8 items 1`] = `
   padding: 0.5rem 0;
   margin-bottom: 0.5rem;
   grid-column: 1/-1;
+  width: 100%;
 }
 
 .c1 {
+  display: inline-block;
   min-width: 50%;
 }
 
@@ -279,18 +271,6 @@ exports[`List should render correctly with 8 items 1`] = `
     grid-column-gap: 1rem;
     grid-template-columns: repeat(5,1fr);
     grid-template-rows: repeat( 3,auto );
-  }
-}
-
-@supports not (grid-template-columns:fit-content(200px)) {
-  .c0 > li:first-child {
-    width: 100%;
-  }
-}
-
-@supports not (grid-template-columns:fit-content(200px)) {
-  .c1 {
-    display: inline-block;
   }
 }
 

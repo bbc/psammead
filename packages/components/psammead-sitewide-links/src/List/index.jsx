@@ -73,17 +73,14 @@ const StyledList = styled.ul`
     padding: ${GEL_SPACING} 0;
     margin-bottom: ${GEL_SPACING};
     grid-column: 1/-1;
-    @supports not (${grid}) {
       width: 100%;
     }
   }
 `;
 
 const StyledListItem = styled.li`
+  display: inline-block;
   min-width: 50%;
-  @supports not (${grid}) {
-    display: inline-block;
-  }
 `;
 
 const List = ({ links }) => (
