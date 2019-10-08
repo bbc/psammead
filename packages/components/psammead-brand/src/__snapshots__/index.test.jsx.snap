@@ -23,6 +23,7 @@ exports[`Brand should render correctly with link not provided 1`] = `
   height: 3.5rem;
   width: 100%;
   padding: 0 0.5rem;
+  border-top: 0.0625rem solid transparent;
 }
 
 .c2 {
@@ -66,6 +67,7 @@ exports[`Brand should render correctly with link not provided 1`] = `
 
 <div
   class="c0"
+  data-brand="footer"
 >
   <div
     class="c1"
@@ -125,6 +127,7 @@ exports[`Brand should render correctly with link provided 1`] = `
   height: 3.5rem;
   width: 100%;
   padding: 0 0.5rem;
+  border-bottom: 0.0625rem solid transparent;
 }
 
 .c3 {
@@ -175,6 +178,7 @@ exports[`Brand should render correctly with link provided 1`] = `
 
 <div
   class="c0"
+  data-brand="header"
 >
   <div
     class="c1"
@@ -379,6 +383,7 @@ exports[`Brand should render correctly with transparent borders 1`] = `
 
 <div
   class="c0"
+  data-brand="header"
 >
   <div
     class="c1"

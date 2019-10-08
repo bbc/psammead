@@ -164,6 +164,13 @@ StyledBrand.defaultProps = {
   serviceLocalisedName: null,
 };
 
+const getLocation = (borderTop, borderBottom) => {
+  if (!borderTop && !borderBottom) {
+    return null;
+  }
+  return borderBottom ? 'header' : 'footer';
+};
+
 const Brand = props => {
   const {
     svgHeight,
@@ -176,6 +183,7 @@ const Brand = props => {
     logoColour,
   } = props;
 
+  const location = getLocation(borderTop, borderBottom);
   return (
     <Banner
       svgHeight={svgHeight}
@@ -183,6 +191,7 @@ const Brand = props => {
       borderBottom={borderBottom}
       backgroundColour={backgroundColour}
       logoColour={logoColour}
+      data-brand={location}
     >
       {url ? (
         <SvgWrapper>

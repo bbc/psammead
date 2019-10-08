@@ -16,7 +16,7 @@ The `minWidth` and `maxWidth` values are required to allow the ability for the `
 
 The `svgHeight` value acts as a placeholder for the `svg` element meaning the overall banner height does not change with the dynamic scaling, also the `height` allows the contents of the `svg` element to remain vertically centred within the banner at all times.
 
-The `backgroundColour` is the background colour and `logoColour` is the colour of the SVG and the underline when hovering/focusing on the brand. 
+The `backgroundColour` is the background colour and `logoColour` is the colour of the SVG and the underline when hovering/focusing on the brand.
 
 The `url` value is the link that points to the frontpage of the service associated with the `svg`.
 

@@ -30,6 +30,7 @@ describe('Brand', () => {
       url="https://www.bbc.co.uk/news"
       backgroundColour={C_POSTBOX}
       logoColour={C_WHITE}
+      borderBottom
     />,
   );
 
@@ -44,6 +45,7 @@ describe('Brand', () => {
       minWidth={180}
       backgroundColour={C_POSTBOX}
       logoColour={C_WHITE}
+      borderTop
     />,
   );
 
@@ -111,6 +113,48 @@ describe('Brand', () => {
       );
 
       expect(container.querySelector('span').getAttribute('role')).toBeNull();
+    });
+
+    it('should have data-brand header when borderBottom is provided', () => {
+      const { container } = render(
+        <Brand
+          product="Default Brand Name"
+          serviceLocalisedName="Service"
+          svgHeight={24}
+          maxWidth={280}
+          minWidth={180}
+          svg={svg}
+          url="https://www.bbc.co.uk/news"
+          backgroundColour={C_POSTBOX}
+          logoColour={C_WHITE}
+          borderBottom
+        />,
+      );
+
+      expect(container.querySelector('div').getAttribute('data-brand')).toEqual(
+        'header',
+      );
+    });
+
+    it('should have data-brand footer when borderTop is provided', () => {
+      const { container } = render(
+        <Brand
+          product="Default Brand Name"
+          serviceLocalisedName="Service"
+          svgHeight={24}
+          maxWidth={280}
+          minWidth={180}
+          svg={svg}
+          url="https://www.bbc.co.uk/news"
+          backgroundColour={C_POSTBOX}
+          logoColour={C_WHITE}
+          borderTop
+        />,
+      );
+
+      expect(container.querySelector('div').getAttribute('data-brand')).toEqual(
+        'footer',
+      );
     });
   });
 });
