@@ -1,7 +1,9 @@
 import * as numerals from '.';
 
 describe('Numeral systems', () => {
-  const numeralSystems = Object.keys(numerals);
+  const numeralSystems = Object.keys(numerals).filter(key =>
+    Array.isArray(numerals[key]),
+  );
   numeralSystems.forEach(numeralSystem => {
     it(`should return ${numeralSystem} numerals`, () => {
       expect(numerals[numeralSystem]).toMatchSnapshot();

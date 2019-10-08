@@ -63,5 +63,3 @@ Array [
   "10",
 ]
 `;
-
-exports[`Numeral systems should return makeNumeralTranslator numerals 1`] = `[Function]`;
