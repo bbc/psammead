@@ -5,7 +5,7 @@ import Placeholder from '.';
 
 describe('Media Player: Placeholder', () => {
   const mockOnClick = jest.fn();
-  const mediaInfo = {
+  const withDuration = {
     duration: '2:30',
     durationSpoken: '2 minutes 30 seconds',
     datetime: 'PT2M30S',
@@ -21,7 +21,18 @@ describe('Media Player: Placeholder', () => {
       onClick={mockOnClick}
       src="http://foo.bar/placeholder.png"
       service="news"
-      mediaInfo={{ title: 'Dog chases cat.', ...mediaInfo }}
+      mediaInfo={{ title: 'Dog chases cat.', ...withDuration }}
+      className="foo"
+    />,
+  );
+
+  shouldMatchSnapshot(
+    'should render a video placeholder without duration',
+    <Placeholder
+      onClick={mockOnClick}
+      src="http://foo.bar/placeholder.png"
+      service="news"
+      mediaInfo={{ title: 'Dog chases cat.', ...withDuration }}
       className="foo"
     />,
   );
@@ -32,7 +43,18 @@ describe('Media Player: Placeholder', () => {
       onClick={mockOnClick}
       src="http://foo.bar/placeholder.png"
       service="news"
-      mediaInfo={{ type: 'audio', title: 'Dog barks at cat.', ...mediaInfo }}
+      mediaInfo={{ type: 'audio', title: 'Dog barks at cat.', ...withDuration }}
+      className="foo"
+    />,
+  );
+
+  shouldMatchSnapshot(
+    'should render an audio placeholder without duration',
+    <Placeholder
+      onClick={mockOnClick}
+      src="http://foo.bar/placeholder.png"
+      service="news"
+      mediaInfo={{ type: 'audio', title: 'Dog barks at cat.', ...withDuration }}
       className="foo"
     />,
   );
@@ -43,7 +65,7 @@ describe('Media Player: Placeholder', () => {
         onClick={mockOnClick}
         src="http://foo.bar/placeholder.png"
         service="news"
-        mediaInfo={{ title: 'Dog chases cat.', ...mediaInfo }}
+        mediaInfo={{ title: 'Dog chases cat.', ...withDuration }}
         className="foo"
       />,
     );
