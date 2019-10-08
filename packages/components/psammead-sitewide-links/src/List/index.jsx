@@ -73,8 +73,7 @@ const StyledList = styled.ul`
     padding: ${GEL_SPACING} 0;
     margin-bottom: ${GEL_SPACING};
     grid-column: 1/-1;
-      width: 100%;
-    }
+    width: 100%;
   }
 `;
 
