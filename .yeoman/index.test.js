@@ -33,12 +33,11 @@ describe('pacakge generator', () => {
       .inDir(tempDir)
       .withPrompts(prompts)
       .then(() => {
-        shell.exec(`ls -R ${__dirname}`);
         assert.file(expectedFiles);
         assert.fileContent(
           expectedFiles[3],
           "import React from 'react';\n\nconst FooBarComponent = () => <h1>Hello World</h1>;\n\nexport default FooBarComponent;",
         );
       });
-  }, 50000);
+  }, 100000);
 });
