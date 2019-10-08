@@ -18,10 +18,11 @@ describe('makeNumeralTranslator', () => {
   });
 
   describe('valid numeral system', () => {
-    const RomanNumerals = 'O_Ⅰ_Ⅱ_Ⅲ_Ⅳ_Ⅴ_Ⅵ_Ⅶ_Ⅷ_Ⅸ'.split('_');
+    const RomanNumerals = 'N_Ⅰ_Ⅱ_Ⅲ_Ⅳ_Ⅴ_Ⅵ_Ⅶ_Ⅷ_Ⅸ_X'.split('_');
     const examples = [
-      ['0 1 2 3', 'O Ⅰ Ⅱ Ⅲ'],
+      ['0 1 2 3', 'N Ⅰ Ⅱ Ⅲ'],
       ['9', 'Ⅸ'],
+      ['10', 'ⅠN'], // Only first 10 symbols are currently used
       ['The Magnificent 7', 'The Magnificent Ⅶ'],
     ];
     const translate = numerals.makeNumeralTranslator(RomanNumerals);
@@ -33,8 +34,7 @@ describe('makeNumeralTranslator', () => {
 
   describe('invalid numeral systems', () => {
     const invalidSystems = [
-      '0_1_2'.split('_'), // too small
-      '0_1_2_3_4_5_6_7_8_9_A'.split('_'), // too big
+      '0_1_2_3_4_5_6_7_8'.split('_'), // too small
       'potato', // wrong type
       undefined, // missing arg
     ];

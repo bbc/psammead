@@ -54,9 +54,11 @@ These can either be imported and used directly or in conjunction with the `makeN
 
 #### `makeNumeralTranslator(system)`
 
-`makeNumeralTranslator` is a small helper that returns a function that translates any 'Western' Arabic numbers in the input string into the specified numeral system.
+`makeNumeralTranslator` is a small helper that returns a function that translates any 'Western' Arabic numerals in the input string into the specified numeral system.
 
-It accepts one argument `system` which is the numeral system to use and returns a function. If the argument is omitted or an unsupported numeral system is supplied then the translator returns the input string unchanged. For an example see Usage, below.
+It accepts one argument `system` which is an array of numeral system symbols such as one of the ones above, and returns a translator function. If the argument is omitted or an invalid numeral system is supplied then the translator returns input strings unchanged. Note that currently only the first 10 symbols from the array are used.
+
+For an example see Usage, below.
 
 ## Installation
 

@@ -27,7 +27,7 @@ export const WesternArabic = [
   '10',
 ];
 
-const isValid = numerals => Array.isArray(numerals) && numerals.length === 10;
+const isValid = numerals => Array.isArray(numerals) && numerals.length >= 10;
 
 const noOpTranslator = input => input;
 
