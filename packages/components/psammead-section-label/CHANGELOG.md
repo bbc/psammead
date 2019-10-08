@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 2.3.18 | [PR#2353](https://github.com/bbc/psammead/pull/2353) Use `labelId` prop to set `data-section-divider` for event tracking |
 | 2.3.17 | [PR#2289](https://github.com/bbc/psammead/pull/2289) Talos - Bump Dependencies - @bbc/psammead-styles |
 | 2.3.16 | [PR#2273](https://github.com/bbc/psammead/pull/2273) Talos - Bump Dependencies - @bbc/psammead-styles |
 | 2.3.15 | [PR#2251](https://github.com/bbc/psammead/pull/2251) Talos - Bump Dependencies - @bbc/psammead-styles |
