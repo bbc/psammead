@@ -659,212 +659,156 @@ storiesOf('Components|Grid', module)
           </Grid>
         </Grid>
         <Grid
-          item
           columns={{
-            group0: 2,
-            group1: 2,
-            group2: 2,
-            group3: 2,
+            group0: 6,
+            group1: 6,
+            group2: 6,
+            group3: 6,
             group4: 2,
             group5: 2,
           }}
+          enableGelGutters
         >
-          <ExampleImage />
+          <Grid
+            item
+            columns={{
+              group0: 2,
+              group1: 2,
+              group2: 2,
+              group3: 2,
+              group4: 2,
+              group5: 2,
+            }}
+          >
+            <ExampleImage />
+          </Grid>
+          <Grid
+            item
+            columns={{
+              group0: 4,
+              group1: 4,
+              group2: 4,
+              group3: 4,
+              group4: 2,
+              group5: 2,
+            }}
+          >
+            <ExampleParagraph identifier="2" />
+          </Grid>
         </Grid>
         <Grid
-          item
           columns={{
-            group0: 4,
-            group1: 4,
-            group2: 4,
-            group3: 4,
+            group0: 6,
+            group1: 6,
+            group2: 6,
+            group3: 6,
             group4: 2,
             group5: 2,
           }}
+          enableGelGutters
         >
-          <ExampleParagraph identifier="2" />
+          <Grid
+            item
+            columns={{
+              group0: 2,
+              group1: 2,
+              group2: 2,
+              group3: 2,
+              group4: 2,
+              group5: 2,
+            }}
+          >
+            <ExampleImage />
+          </Grid>
+          <Grid
+            item
+            columns={{
+              group0: 4,
+              group1: 4,
+              group2: 4,
+              group3: 4,
+              group4: 2,
+              group5: 2,
+            }}
+          >
+            <ExampleParagraph identifier="3" />
+          </Grid>
         </Grid>
         <Grid
-          item
           columns={{
-            group0: 2,
-            group1: 2,
-            group2: 2,
-            group3: 2,
+            group0: 6,
+            group1: 6,
+            group2: 6,
+            group3: 6,
             group4: 2,
             group5: 2,
           }}
+          enableGelGutters
         >
-          <ExampleImage />
+          <Grid
+            item
+            columns={{
+              group0: 2,
+              group1: 2,
+              group2: 2,
+              group3: 2,
+              group4: 2,
+              group5: 2,
+            }}
+          >
+            <ExampleImage />
+          </Grid>
+          <Grid
+            item
+            columns={{
+              group0: 4,
+              group1: 4,
+              group2: 4,
+              group3: 4,
+              group4: 2,
+              group5: 2,
+            }}
+          >
+            <ExampleParagraph identifier="4" />
+          </Grid>
         </Grid>
         <Grid
-          item
           columns={{
-            group0: 4,
-            group1: 4,
-            group2: 4,
-            group3: 4,
+            group0: 6,
+            group1: 6,
+            group2: 6,
+            group3: 6,
             group4: 2,
             group5: 2,
           }}
+          enableGelGutters
         >
-          <ExampleParagraph identifier="3" />
-        </Grid>
-        <Grid
-          item
-          columns={{
-            group0: 2,
-            group1: 2,
-            group2: 2,
-            group3: 2,
-            group4: 2,
-            group5: 2,
-          }}
-        >
-          <ExampleImage />
-        </Grid>
-        <Grid
-          item
-          columns={{
-            group0: 4,
-            group1: 4,
-            group2: 4,
-            group3: 4,
-            group4: 2,
-            group5: 2,
-          }}
-        >
-          <ExampleParagraph identifier="4" />
-        </Grid>
-        <Grid
-          item
-          columns={{
-            group0: 2,
-            group1: 2,
-            group2: 2,
-            group3: 2,
-            group4: 2,
-            group5: 2,
-          }}
-        >
-          <ExampleImage />
-        </Grid>
-        <Grid
-          item
-          columns={{
-            group0: 4,
-            group1: 4,
-            group2: 4,
-            group3: 4,
-            group4: 2,
-            group5: 2,
-          }}
-        >
-          <ExampleParagraph identifier="5" />
-        </Grid>
-        <Grid
-          item
-          columns={{
-            group0: 2,
-            group1: 2,
-            group2: 2,
-            group3: 2,
-            group4: 2,
-            group5: 2,
-          }}
-        >
-          <ExampleImage />
-        </Grid>
-        <Grid
-          item
-          columns={{
-            group0: 4,
-            group1: 4,
-            group2: 4,
-            group3: 4,
-            group4: 2,
-            group5: 2,
-          }}
-        >
-          <ExampleParagraph identifier="6" />
-        </Grid>
-        <Grid
-          item
-          columns={{
-            group0: 2,
-            group1: 2,
-            group2: 2,
-            group3: 2,
-            group4: 2,
-            group5: 2,
-          }}
-        >
-          <ExampleImage />
-        </Grid>
-        <Grid
-          item
-          columns={{
-            group0: 4,
-            group1: 4,
-            group2: 4,
-            group3: 4,
-            group4: 2,
-            group5: 2,
-          }}
-        >
-          <ExampleParagraph identifier="7" />
-        </Grid>
-        <Grid
-          item
-          columns={{
-            group0: 2,
-            group1: 2,
-            group2: 2,
-            group3: 2,
-            group4: 2,
-            group5: 2,
-          }}
-        >
-          <ExampleImage />
-        </Grid>
-        <Grid
-          item
-          columns={{
-            group0: 4,
-            group1: 4,
-            group2: 4,
-            group3: 4,
-            group4: 2,
-            group5: 2,
-          }}
-        >
-          <ExampleParagraph identifier="8" />
-        </Grid>
-        <Grid
-          item
-          columns={{
-            group0: 2,
-            group1: 2,
-            group2: 2,
-            group3: 2,
-            group4: 2,
-            group5: 2,
-          }}
-        >
-          <ExampleImage />
-        </Grid>
-        <Grid
-          item
-          columns={{
-            group0: 4,
-            group1: 4,
-            group2: 4,
-            group3: 4,
-            group4: 2,
-            group5: 2,
-          }}
-        >
-          <ExampleParagraph identifier="9" />
+          <Grid
+            item
+            columns={{
+              group0: 2,
+              group1: 2,
+              group2: 2,
+              group3: 2,
+              group4: 2,
+              group5: 2,
+            }}
+          >
+            <ExampleImage />
+          </Grid>
+          <Grid
+            item
+            columns={{
+              group0: 4,
+              group1: 4,
+              group2: 4,
+              group3: 4,
+              group4: 2,
+              group5: 2,
+            }}
+          >
+            <ExampleParagraph identifier="5" />
+          </Grid>
         </Grid>
       </Grid>
     ),
