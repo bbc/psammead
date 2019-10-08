@@ -361,6 +361,13 @@ exports[`Navigation should render correctly 1`] = `
   }
 }
 
+@media (min-width:80rem) {
+  .c5 {
+    overflow-x: hidden;
+    white-space: normal;
+  }
+}
+
 @media (min-width:37.5rem) {
   .c14 {
     grid-template-columns: repeat(4,1fr);
@@ -376,6 +383,28 @@ exports[`Navigation should render correctly 1`] = `
 @media (max-width:24.9375rem) {
   .c14 {
     grid-template-columns: repeat(2,1fr);
+  }
+}
+
+@media (min-width:80rem) {
+  .c7::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 80rem;
+    border-bottom: 0.0625rem solid #eab3b3;
+    z-index: -1;
+  }
+}
+
+@media (min-width:80rem) {
+  .c15::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 80rem;
+    border-bottom: 0.0625rem solid #eab3b3;
+    z-index: -1;
   }
 }
 
@@ -462,6 +491,18 @@ exports[`Navigation should render correctly 1`] = `
 @media (max-width:24.9375rem) {
   .c18 {
     padding: 0.5rem 0.5rem;
+  }
+}
+
+@media (min-width:80rem) {
+  .c3 {
+    display: none;
+  }
+}
+
+@media (min-width:80rem) {
+  .c12 {
+    display: none;
   }
 }
 

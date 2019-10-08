@@ -12,6 +12,7 @@ import {
 import {
   GEL_GROUP_1_SCREEN_WIDTH_MAX,
   GEL_GROUP_3_SCREEN_WIDTH_MIN,
+  GEL_GROUP_4_SCREEN_WIDTH_MAX,
   GEL_GROUP_5_SCREEN_WIDTH_MIN,
 } from '@bbc/gel-foundations/breakpoints';
 import { getPica } from '@bbc/gel-foundations/typography';
@@ -20,6 +21,9 @@ import { getSansRegular } from '@bbc/psammead-styles/font-styles';
 
 const TOP_BOTTOM_SPACING = '0.75rem'; // 12px
 const CURRENT_ITEM_HOVER_BORDER = '0.3125rem'; // 5px
+
+/* White with 30% transparency over #B80000 */
+const BORDER_COLOR = '#eab3b3';
 
 /* Skip to content */
 const SKIP_LINK_COLOR = '#333';
@@ -76,7 +80,13 @@ const StyledUnorderedList = styled.ul`
   ${({ inMenu }) =>
     !inMenu &&
     `overflow-x: scroll; white-space: nowrap; &::-webkit-scrollbar{
-      display:none}`}
+      display:none}
+      
+      @media (min-width: ${GEL_GROUP_4_SCREEN_WIDTH_MAX}) {
+        overflow-x: hidden;
+        white-space: normal;
+      }
+      `}
 
   ${({ inMenu, grid }) =>
     inMenu &&
@@ -99,6 +109,17 @@ const StyledListItem = styled.li`
   display: ${({ inMenu }) => (inMenu ? 'block' : 'inline-block')};
   position: relative;
   z-index: 2;
+
+  @media (min-width: ${GEL_GROUP_4_SCREEN_WIDTH_MAX}) {
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      width: ${GEL_GROUP_5_SCREEN_WIDTH_MIN};
+      border-bottom: 0.0625rem solid ${BORDER_COLOR};
+      z-index: -1;
+    }
+  }
 `;
 
 const ListItemBorder = inMenu => css`
@@ -285,8 +306,12 @@ const DownChevronSvg = ({ dir }) => (
 
 const StyledNavMenu = styled.div`
   position: relative;
-  ${({ dir }) => (dir === 'ltr' ? 'border-right' : 'border-left')}: ${C_WHITE}
+  ${({ dir }) =>
+    dir === 'ltr' ? 'border-right' : 'border-left'}: ${C_WHITE}
     solid;
+  @media (min-width: ${GEL_GROUP_4_SCREEN_WIDTH_MAX}) {
+    display: none;
+  }
 `;
 
 const StyledMenuBottomContainer = styled.div`
@@ -313,6 +338,9 @@ const StyledNavGradient = styled.div`
   ${({ dir }) => (dir === 'ltr' ? 'right' : 'left')}: 0;
   top: 0;
   pointer-events: none;
+  @media (min-width: ${GEL_GROUP_4_SCREEN_WIDTH_MAX}) {
+    display: none;
+  }
 `;
 
 const NavMenu = ({
