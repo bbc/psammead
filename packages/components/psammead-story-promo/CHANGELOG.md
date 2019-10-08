@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 | ------- | ----------- |
+| 2.8.0-alpha.1 | [PR#???](https://github.com/bbc/psammead/pull/???) Add `sectionName` prop to set `data-story-promo` for event tracking |
 | 2.8.0-alpha.0 | [PR#2296](https://github.com/bbc/psammead/pull/2296) Change Story Promo design 1080+px |
 | 2.7.18 | [PR#2289](https://github.com/bbc/psammead/pull/2289) Talos - Bump Dependencies - @bbc/psammead-styles |
 | 2.7.17 | [PR#2273](https://github.com/bbc/psammead/pull/2273) Talos - Bump Dependencies - @bbc/psammead-styles |

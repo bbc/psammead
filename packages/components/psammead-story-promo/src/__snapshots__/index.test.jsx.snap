@@ -1622,6 +1622,7 @@ exports[`StoryPromo should render correctly 1`] = `
 
 <div
   class="c0"
+  data-story-promo="section-name"
 >
   <div
     class="c1"

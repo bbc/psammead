@@ -53,7 +53,11 @@ const mediaInfo = (
 describe('StoryPromo', () => {
   shouldMatchSnapshot(
     'should render correctly',
-    <StoryPromo image={Image} info={Info({ topStory: false })} />,
+    <StoryPromo
+      image={Image}
+      info={Info({ topStory: false })}
+      sectionName="section-name"
+    />,
   );
   shouldMatchSnapshot(
     'should render Live promo correctly',
@@ -131,5 +135,20 @@ describe('assertions', () => {
 
     expect(image.getAttribute('src')).toEqual('https://foobar.com/image.png');
     expect(image.getAttribute('alt')).toEqual('Alt text');
+  });
+
+  it('should have data-story-promo attribute when sectionName is provided', () => {
+    const { container } = render(
+      <StoryPromo
+        image={Image}
+        info={Info({ topStory: true })}
+        mediaIndicator={mediaInfo}
+        sectionName="section-name"
+      />,
+    );
+
+    expect(
+      container.querySelector('div').getAttribute('data-story-promo'),
+    ).toEqual('section-name');
   });
 });
