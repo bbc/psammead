@@ -31,6 +31,7 @@ describe('Brand', () => {
       backgroundColour={C_POSTBOX}
       logoColour={C_WHITE}
       borderBottom
+      location="header"
     />,
   );
 
@@ -46,6 +47,7 @@ describe('Brand', () => {
       backgroundColour={C_POSTBOX}
       logoColour={C_WHITE}
       borderTop
+      location="footer"
     />,
   );
 
@@ -115,7 +117,7 @@ describe('Brand', () => {
       expect(container.querySelector('span').getAttribute('role')).toBeNull();
     });
 
-    it('should have data-brand header when borderBottom is provided', () => {
+    it('should have data-brand when location is provided', () => {
       const { container } = render(
         <Brand
           product="Default Brand Name"
@@ -127,7 +129,7 @@ describe('Brand', () => {
           url="https://www.bbc.co.uk/news"
           backgroundColour={C_POSTBOX}
           logoColour={C_WHITE}
-          borderBottom
+          location="header"
         />,
       );
 
@@ -136,7 +138,7 @@ describe('Brand', () => {
       );
     });
 
-    it('should have data-brand footer when borderTop is provided', () => {
+    it('should not have data-brand when location is not provided', () => {
       const { container } = render(
         <Brand
           product="Default Brand Name"
@@ -148,13 +150,12 @@ describe('Brand', () => {
           url="https://www.bbc.co.uk/news"
           backgroundColour={C_POSTBOX}
           logoColour={C_WHITE}
-          borderTop
         />,
       );
 
-      expect(container.querySelector('div').getAttribute('data-brand')).toEqual(
-        'footer',
-      );
+      expect(
+        container.querySelector('div').getAttribute('data-brand'),
+      ).toBeNull();
     });
   });
 });

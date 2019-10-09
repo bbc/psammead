@@ -3,7 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 | ------- | ----------- |
-| 5.0.6 | [PR#2352](https://github.com/bbc/psammead/pull/2352) Add `data-brand` attribute for event tracking |
+| 5.1.0 | [PR#2352](https://github.com/bbc/psammead/pull/2352) Add location prop to set `data-brand` attribute for event tracking |
 | 5.0.5 | [PR#2289](https://github.com/bbc/psammead/pull/2289) Talos - Bump Dependencies - @bbc/psammead-styles |
 | 5.0.4 | [PR#2273](https://github.com/bbc/psammead/pull/2273) Talos - Bump Dependencies - @bbc/psammead-styles |
 | 5.0.3 | [PR#2251](https://github.com/bbc/psammead/pull/2251) Talos - Bump Dependencies - @bbc/psammead-styles |

@@ -4,7 +4,7 @@
 
 The `Brand` component provides the BBC service logo (as SVG), nested inside a styled link and div. The link is currently hardcoded to "https://www.bbc.co.uk/news".
 
-`Brand` takes a `product`, `svgHeight`, `minWidth`, `maxWidth`, `url`, `serviceLocalisedName`, `backgroundColour`, `logoColour` and `svg` as props.
+`Brand` takes a `product`, `svgHeight`, `minWidth`, `maxWidth`, `url`, `serviceLocalisedName`, `backgroundColour`, `logoColour`, `location` and `svg` as props.
 
 The `product` is passed to a [VisuallyHiddenText](https://github.com/bbc/psammead/tree/latest/packages/components/VisuallyHiddenText) component, nested inside Brand.
 
@@ -19,6 +19,8 @@ The `svgHeight` value acts as a placeholder for the `svg` element meaning the ov
 The `backgroundColour` is the background colour and `logoColour` is the colour of the SVG and the underline when hovering/focusing on the brand.
 
 The `url` value is the link that points to the frontpage of the service associated with the `svg`.
+
+The `location` value is used to set `data-brand` attribute and state where the `Brand` component was rendered. This can be used for event tracking.
 
 ## Installation
 
@@ -40,6 +42,7 @@ The `url` value is the link that points to the frontpage of the service associat
 | serviceLocalisedName | String | no | N/A | `'Yoruba'` |
 | borderTop | bool | no | `false` | `true` |
 | borderBottom | bool | no | `false` | `true` |
+| location | string | no | `null` | `'header'` |
 
 ## Usage
 
@@ -65,6 +68,7 @@ const Header = (product, serviceName) => (
       backgroundColour={backgroundColour}
       logoColour={logoColour}
       borderBottom
+      location="header"
     />
   </header>
 );

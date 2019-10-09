@@ -383,7 +383,6 @@ exports[`Brand should render correctly with transparent borders 1`] = `
 
 <div
   class="c0"
-  data-brand="header"
 >
   <div
     class="c1"
