@@ -5,7 +5,7 @@ const createBody = inner =>
 
 test('can parse XML with a paragraph', () => {
   const richText = candyXmlToRichText(
-    createBody(`<paragraph>One two three four!</paragraph>`),
+    createBody('<paragraph>One two three four!</paragraph>'),
   );
 
   expect(richText).toStrictEqual({
@@ -193,8 +193,7 @@ test('can parse XML with multiple paragraphs', () => {
 
 test('can render bold text within a paragraph', () => {
   const richText = candyXmlToRichText(
-    createBody(`
-      <paragraph>One <bold>two</bold> three!</paragraph>`),
+    createBody('<paragraph>One <bold>two</bold> three!</paragraph>'),
   );
 
   expect(richText).toStrictEqual({
@@ -237,8 +236,7 @@ test('can render bold text within a paragraph', () => {
 
 test('can render italic text within a paragraph', () => {
   const richText = candyXmlToRichText(
-    createBody(`
-      <paragraph><italic>One</italic> two three!</paragraph>`),
+    createBody('<paragraph><italic>One</italic> two three!</paragraph>'),
   );
 
   expect(richText).toStrictEqual({
@@ -274,8 +272,9 @@ test('can render italic text within a paragraph', () => {
 
 test('can render bold italic text within a paragraph', () => {
   const richText = candyXmlToRichText(
-    createBody(`
-      <paragraph><bold><italic>One</italic></bold> two three!</paragraph>`),
+    createBody(
+      '<paragraph><bold><italic>One</italic></bold> two three!</paragraph>',
+    ),
   );
 
   expect(richText).toStrictEqual({
@@ -311,8 +310,9 @@ test('can render bold italic text within a paragraph', () => {
 
 test('can render bold and italic text within a paragraph', () => {
   const richText = candyXmlToRichText(
-    createBody(`
-      <paragraph><bold><italic>One</italic> two</bold> three!</paragraph>`),
+    createBody(
+      '<paragraph><bold><italic>One</italic> two</bold> three!</paragraph>',
+    ),
   );
 
   expect(richText).toStrictEqual({
@@ -381,7 +381,8 @@ test('returns null when given invalid xml', () => {
 test('returns plain text if wrapped in an unsupport xml node', () => {
   const richText = candyXmlToRichText(
     createBody(`
-      <paragraph><foobar>Struck through text</foobar> followed by normal text</paragraph>`),
+      <paragraph><foobar>Struck through text</foobar> followed by normal text</paragraph>
+    `),
   );
 
   expect(richText).toStrictEqual({
@@ -418,7 +419,8 @@ test('returns plain text if wrapped in an unsupport xml node', () => {
 test('can handle chaos', () => {
   const richText = candyXmlToRichText(
     createBody(`
-      <paragraph><foo><bar><bold><meh>Bold text in unsupported nodes</meh></bold></bar></foo> followed by normal text then <italic><this><is>some <bold>carnage<carnage> </carnage></bold></is></this></italic>.</paragraph>`),
+      <paragraph><foo><bar><bold><meh>Bold text in unsupported nodes</meh></bold></bar></foo> followed by normal text then <italic><this><is>some <bold>carnage<carnage> </carnage></bold></is></this></italic>.</paragraph>
+    `),
   );
 
   expect(richText).toStrictEqual({
