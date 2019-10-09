@@ -30,6 +30,7 @@ exports[`Multiple useful links should render correctly 1`] = `
 
 .c1 {
   padding-top: 0.5rem;
+  width: 100%;
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {

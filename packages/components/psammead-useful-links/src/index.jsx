@@ -53,12 +53,14 @@ export const UsefulLinksUl = styled.ul.attrs({ role: 'list' })`
 
 export const UsefulLinksLi = styled.li.attrs({ role: 'listitem' })`
   padding-top: ${GEL_SPACING};
+  width: 100%;
   @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
     display: inline-block;
 
     @supports (${grid}) {
       display: block;
       align-self: start;
+      width: initial;
     }
   }
 `;
