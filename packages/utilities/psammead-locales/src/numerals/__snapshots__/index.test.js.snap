@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Numerals should return Bengali numerals 1`] = `
+exports[`Numeral systems should return Bengali numerals 1`] = `
 Array [
   "০",
   "১",
@@ -16,7 +16,7 @@ Array [
 ]
 `;
 
-exports[`Numerals should return Burmese numerals 1`] = `
+exports[`Numeral systems should return Burmese numerals 1`] = `
 Array [
   "၀",
   "၁",
@@ -32,7 +32,7 @@ Array [
 ]
 `;
 
-exports[`Numerals should return EasternArabic numerals 1`] = `
+exports[`Numeral systems should return EasternArabic numerals 1`] = `
 Array [
   "۰",
   "۱",
@@ -48,7 +48,7 @@ Array [
 ]
 `;
 
-exports[`Numerals should return WesternArabic numerals 1`] = `
+exports[`Numeral systems should return WesternArabic numerals 1`] = `
 Array [
   "0",
   "1",
