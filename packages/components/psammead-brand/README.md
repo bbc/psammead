@@ -20,7 +20,7 @@ The `backgroundColour` is the background colour and `logoColour` is the colour o
 
 The `url` value is the link that points to the frontpage of the service associated with the `svg`.
 
-The `location` value is used to set `data-brand` attribute and state where the `Brand` component was rendered. This can be used for event tracking.
+The `location` value is used to set `data-brand` attribute and state where the `Brand` component is rendered. This can be used for event tracking.
 
 ## Installation
 
