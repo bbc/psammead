@@ -1,3 +1,4 @@
+import React from 'react';
 import styled from 'styled-components';
 import { getSerifMedium } from '@bbc/psammead-styles/font-styles';
 import { C_EBON, C_METAL } from '@bbc/psammead-styles/colours';
@@ -9,6 +10,9 @@ import {
 import { GEL_GROUP_3_SCREEN_WIDTH_MIN } from '@bbc/gel-foundations/breakpoints';
 import { node, string, shape } from 'prop-types';
 import { scriptPropType } from '@bbc/gel-foundations/prop-types';
+
+const getRowCount = (children, columns) =>
+  Math.ceil(React.Children.count(children) / columns);
 
 export const UsefulLink = styled.a`
   ${({ script }) => script && getPica(script)};
@@ -28,12 +32,20 @@ export const UsefulLink = styled.a`
 export const UsefulLinksUl = styled.ul.attrs({ role: 'list' })`
   padding: 0;
   margin: 0;
-  list-style-type: none;
 
   @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
+    list-style-type: none;
+    column-count: 2;
+    column-gap: 1.875rem;
+
     @supports (${grid}) {
       display: grid;
-      grid-template-columns: auto auto;
+      grid-auto-flow: column;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(
+        ${({ children }) => getRowCount(children, 2)},
+        auto
+      );
       grid-column-gap: 1.875rem;
     }
   }
@@ -43,11 +55,9 @@ export const UsefulLinksLi = styled.li.attrs({ role: 'listitem' })`
   padding-top: ${GEL_SPACING};
   @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
     display: inline-block;
-    min-width: 50%;
 
     @supports (${grid}) {
       display: block;
-      min-width: initial;
       align-self: start;
     }
   }

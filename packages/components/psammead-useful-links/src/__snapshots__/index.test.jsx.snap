@@ -25,7 +25,6 @@ exports[`Multiple useful links should render correctly 1`] = `
 .c0 {
   padding: 0;
   margin: 0;
-  list-style-type: none;
 }
 
 .c1 {
@@ -47,9 +46,18 @@ exports[`Multiple useful links should render correctly 1`] = `
 }
 
 @media (min-width:37.5rem) {
+  .c0 {
+    list-style-type: none;
+    -webkit-column-count: 2;
+    column-count: 2;
+    -webkit-column-gap: 1.875rem;
+    column-gap: 1.875rem;
+  }
+}
+
+@media (min-width:37.5rem) {
   .c1 {
     display: inline-block;
-    min-width: 50%;
   }
 }
 
