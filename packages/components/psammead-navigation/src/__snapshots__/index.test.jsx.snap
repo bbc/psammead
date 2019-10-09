@@ -295,7 +295,6 @@ exports[`Navigation should render correctly 1`] = `
   max-width: 80rem;
   overflow: scroll;
   border-bottom: solid #B80000;
-  display: none;
   background-color: #FFFFFF;
   margin: 0 auto;
   position: relative;

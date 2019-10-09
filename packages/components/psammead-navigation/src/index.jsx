@@ -269,8 +269,6 @@ const MenuWrapper = styled.menu`
   max-width: ${GEL_GROUP_5_SCREEN_WIDTH_MIN};
   overflow: scroll;
   border-bottom: solid ${C_POSTBOX};
-  display: ${({ amp, visible, moveContent }) =>
-    amp || visible ? !moveContent && 'inline-block' : 'none'};
   background-color: ${C_WHITE};
   margin: 0 auto;
   position: ${({ moveContent }) => (moveContent ? 'relative' : 'absolute')};
@@ -415,7 +413,7 @@ const Menu = ({
       moveContent={moveContent}
       ref={wrapperRef}
       grid={grid}
-      hidden
+      hidden={amp || !visible}
       amp={amp}
     >
       {React.Children.map(children, child =>
@@ -454,11 +452,9 @@ Menu.propTypes = {
   dir: string.isRequired,
   wrapperRef: shape({ current: node }).isRequired,
   moveContent: bool.isRequired,
-  grid: bool,
+  grid: bool.isRequired,
   amp: bool.isRequired,
 };
-
-Menu.defaultProps = { grid: true };
 
 Chevron.propTypes = {
   children: node.isRequired,
@@ -502,6 +498,7 @@ const Navigation = ({
   service,
   dir,
   moveContent,
+  grid,
   amp,
 }) => {
   const [menuVisible, setMenuVisibile] = useState(false);
@@ -546,6 +543,7 @@ const Navigation = ({
         dir={dir}
         moveContent={moveContent}
         wrapperRef={wrapperRef}
+        grid={grid}
         amp={amp}
       >
         {children}
@@ -562,10 +560,11 @@ Navigation.propTypes = {
   service: string.isRequired,
   dir: oneOf(['ltr', 'rtl']),
   moveContent: bool,
+  grid: bool,
   amp: bool.isRequired,
 };
 
-Navigation.defaultProps = { dir: 'ltr', moveContent: true };
+Navigation.defaultProps = { dir: 'ltr', moveContent: true, grid: true };
 
 NavigationUl.propTypes = {
   children: node.isRequired,
