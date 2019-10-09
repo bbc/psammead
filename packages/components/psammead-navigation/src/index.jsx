@@ -269,8 +269,8 @@ const MenuWrapper = styled.menu`
   max-width: ${GEL_GROUP_5_SCREEN_WIDTH_MIN};
   overflow: scroll;
   border-bottom: solid ${C_POSTBOX};
-  display: ${({ visible, moveContent }) =>
-    visible ? !moveContent && 'inline-block' : 'none'};
+  display: ${({ amp, visible, moveContent }) =>
+    amp || visible ? !moveContent && 'inline-block' : 'none'};
   background-color: ${C_WHITE};
   margin: 0 auto;
   position: ${({ moveContent }) => (moveContent ? 'relative' : 'absolute')};
@@ -366,6 +366,7 @@ const NavMenu = ({
         onClick={updateMenuVisiblity}
         type="button"
         ref={buttonRef}
+        on="tap:menu.toggleVisibility"
       >
         <StyledLink script={script} service={service}>
           Menu
@@ -380,7 +381,15 @@ const NavMenu = ({
   );
 };
 
-const Menu = ({ children, visible, dir, moveContent, wrapperRef, grid }) => {
+const Menu = ({
+  children,
+  visible,
+  dir,
+  moveContent,
+  wrapperRef,
+  grid,
+  amp,
+}) => {
   const [gradDisplay, setGradDisplay] = useState(false);
 
   useEffect(() => {
@@ -400,11 +409,14 @@ const Menu = ({ children, visible, dir, moveContent, wrapperRef, grid }) => {
 
   return (
     <MenuWrapper
+      id="menu"
       visible={visible}
       dir={dir}
       moveContent={moveContent}
       ref={wrapperRef}
       grid={grid}
+      hidden
+      amp={amp}
     >
       {React.Children.map(children, child =>
         React.cloneElement(child, { inMenu: true }),
@@ -443,6 +455,7 @@ Menu.propTypes = {
   wrapperRef: shape({ current: node }).isRequired,
   moveContent: bool.isRequired,
   grid: bool,
+  amp: bool.isRequired,
 };
 
 Menu.defaultProps = { grid: true };
@@ -489,6 +502,7 @@ const Navigation = ({
   service,
   dir,
   moveContent,
+  amp,
 }) => {
   const [menuVisible, setMenuVisibile] = useState(false);
   const wrapperRef = useRef(null);
@@ -532,6 +546,7 @@ const Navigation = ({
         dir={dir}
         moveContent={moveContent}
         wrapperRef={wrapperRef}
+        amp={amp}
       >
         {children}
       </Menu>
@@ -547,6 +562,7 @@ Navigation.propTypes = {
   service: string.isRequired,
   dir: oneOf(['ltr', 'rtl']),
   moveContent: bool,
+  amp: bool.isRequired,
 };
 
 Navigation.defaultProps = { dir: 'ltr', moveContent: true };

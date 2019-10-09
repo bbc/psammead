@@ -526,6 +526,7 @@ exports[`Navigation should render correctly 1`] = `
         dir="ltr"
       >
         <button
+          on="tap:menu.toggleVisibility"
           style="border: 0px; padding: 0px; background-color: inherit;"
           type="button"
         >
@@ -632,6 +633,8 @@ exports[`Navigation should render correctly 1`] = `
   <menu
     class="c13"
     dir="ltr"
+    hidden=""
+    id="menu"
   >
     <ul
       class="c14"

@@ -155,6 +155,7 @@ const navigationStory = (skipLinkText, currentPageText, navData, dir, brand) =>
           service={service}
           dir={dir}
           moveContent={inputs().moveContent}
+          amp={false}
         >
           <NavigationUl grid={inputs().grid}>
             {navData.map((item, index) => {
