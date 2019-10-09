@@ -117,10 +117,7 @@
     "stylelint-csstree-validator": "^1.6.1",
     "stylelint-processor-styled-components": "^1.8.0",
     "yargs-parser": "^15.0.0",
-    "yeoman-assert": "^3.1.1",
-    "yeoman-environment": "^2.4.0",
     "yeoman-generator": "^4.1.0",
-    "yeoman-test": "^2.0.0",
     "yo": "^3.1.0"
   },
   "config": {
