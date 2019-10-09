@@ -80,6 +80,10 @@ const StyledList = styled.ul`
 const StyledListItem = styled.li`
   display: inline-block;
   min-width: 50%;
+
+  @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    padding-right: 8px;
+  }
 `;
 
 const List = ({ links }) => (
