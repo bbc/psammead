@@ -25,6 +25,7 @@ The `StoryPromo` component is designed to be used on 'index' pages, which are pa
 | info     | node   | Yes      | N/A     | `<h2>Title</h2>` |
 | mediaIndicator     | node   | No      | null     | `<MediaIndicator duration="2:15" datetime="PT2M15S" offscreenText="Video 2 minutes 15 seconds" />` |
 | topStory | boolean | No      | false   | true          |
+| sectionName| string | No | `null` | `'story-promo-section-name'` |
 
 ## Headline Props
 
@@ -202,7 +203,12 @@ const Info = ({ isLive, alsoItems }) => (
   </Fragment>
 );
 
-<StoryPromo image={Image} info={Info({ isLive: false })} topStory={true} />;
+<StoryPromo
+  image={Image}
+  info={Info({ isLive: false })}
+  topStory={true}
+  sectionName="story-promo-section-name"
+/>;
 ```
 
 ### When to use this component
