@@ -277,7 +277,7 @@ const MenuWrapper = styled.menu`
   ${({ dir }) => (dir === 'ltr' ? 'left' : 'right')}: 0;
   border-left: solid ${C_POSTBOX};
   border-right: solid ${C_POSTBOX};
-  ${({ moveContent }) => moveContent && 'width: 100%;'}
+  ${({ grid }) => grid && 'width: 100%;'}
   pointer-events: auto;
   ${({ moveContent }) => !moveContent && 'max-height: 75vh;'}
   padding: 0;
@@ -380,7 +380,7 @@ const NavMenu = ({
   );
 };
 
-const Menu = ({ children, visible, dir, moveContent, wrapperRef }) => {
+const Menu = ({ children, visible, dir, moveContent, wrapperRef, grid }) => {
   const [gradDisplay, setGradDisplay] = useState(false);
 
   useEffect(() => {
@@ -404,6 +404,7 @@ const Menu = ({ children, visible, dir, moveContent, wrapperRef }) => {
       dir={dir}
       moveContent={moveContent}
       ref={wrapperRef}
+      grid={grid}
     >
       {React.Children.map(children, child =>
         React.cloneElement(child, { inMenu: true }),
@@ -441,7 +442,10 @@ Menu.propTypes = {
   dir: string.isRequired,
   wrapperRef: shape({ current: node }).isRequired,
   moveContent: bool.isRequired,
+  grid: bool,
 };
+
+Menu.defaultProps = { grid: true };
 
 Chevron.propTypes = {
   children: node.isRequired,
