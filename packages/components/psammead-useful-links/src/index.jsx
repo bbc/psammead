@@ -32,9 +32,9 @@ export const UsefulLink = styled.a`
 export const UsefulLinksUl = styled.ul.attrs({ role: 'list' })`
   padding: 0;
   margin: 0;
+  list-style-type: none;
 
   @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
-    list-style-type: none;
     column-count: 2;
     column-gap: 1.875rem;
 
