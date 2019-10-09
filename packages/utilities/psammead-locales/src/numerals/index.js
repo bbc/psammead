@@ -26,3 +26,12 @@ export const WesternArabic = [
   '9',
   '10',
 ];
+
+const isValid = numerals => Array.isArray(numerals) && numerals.length >= 10;
+
+const noOpTranslator = input => input;
+
+export const makeNumeralTranslator = numeralSystem =>
+  isValid(numeralSystem)
+    ? input => input.replace(/\d/g, match => numeralSystem[match])
+    : noOpTranslator;
