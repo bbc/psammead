@@ -110,6 +110,12 @@ exports[`SitewideLinks should render correctly 1`] = `
   }
 }
 
+@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
+  .c3 {
+    padding-right: 8px;
+  }
+}
+
 @media (max-width:25rem) {
   .c0 {
     padding: 0 0.5rem;

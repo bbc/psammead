@@ -81,6 +81,12 @@ exports[`List should render correctly with 7 items 1`] = `
   }
 }
 
+@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
+  .c1 {
+    padding-right: 8px;
+  }
+}
+
 <ul
   class="c0"
   role="list"
@@ -271,6 +277,12 @@ exports[`List should render correctly with 8 items 1`] = `
     grid-column-gap: 1rem;
     grid-template-columns: repeat(5,1fr);
     grid-template-rows: repeat( 3,auto );
+  }
+}
+
+@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
+  .c1 {
+    padding-right: 8px;
   }
 }
 
