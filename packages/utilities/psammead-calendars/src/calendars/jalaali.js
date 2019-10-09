@@ -1,4 +1,8 @@
 import jalaaliJs from 'jalaali-js';
+import {
+  EasternArabic,
+  makeNumeralTranslator,
+} from '@bbc/psammead-locales/numerals';
 
 const jalaaliMonths = {
   fa: [
@@ -31,6 +35,8 @@ const jalaaliMonths = {
   ],
 };
 
+const useEasternNumerals = makeNumeralTranslator(EasternArabic);
+
 // Helper function to check if argument passed through is a supported moment
 const isSupportedMoment = moment => {
   if (
@@ -53,9 +59,12 @@ const jalaali = {
         gregorianMoment.date(),
       );
       const localeJalaaliMonths = jalaaliMonths[gregorianMoment.locale()];
+
+      const jalaaliDay = useEasternNumerals(jalaaliDate.jd.toString());
       const jalaaliMonth = localeJalaaliMonths[jalaaliDate.jm - 1];
-      const output = `${jalaaliDate.jd} ${jalaaliMonth} ${jalaaliDate.jy}`;
-      return output;
+      const jalaaliYear = useEasternNumerals(jalaaliDate.jy.toString());
+
+      return `${jalaaliDay} ${jalaaliMonth} ${jalaaliYear}`;
     }
     return null;
   },
