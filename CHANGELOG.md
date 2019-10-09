@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 1.8.16 | [PR#2349](https://github.com/bbc/psammead/pull/2349) Try to fix Yeoman test bug |
 | 1.8.15 | [PR#2318](https://github.com/bbc/psammead/pull/2318) Bumping 3rd party dependencies |
 | 1.8.14 | [PR#2314](https://github.com/bbc/psammead/pull/2314) Talos - Bump Dependencies - @bbc/psammead-brand, @bbc/psammead-caption, @bbc/psammead-copyright, @bbc/psammead-image-placeholder, @bbc/psammead-inline-link, @bbc/psammead-media-indicator, @bbc/psammead-paragraph, @bbc/psammead-story-promo, @bbc/psammead-timestamp |
 | 1.8.13 | [PR#2298](https://github.com/bbc/psammead/pull/2298) Talos - Bump Dependencies - @bbc/psammead-locales |
