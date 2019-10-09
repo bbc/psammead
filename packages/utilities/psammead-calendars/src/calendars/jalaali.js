@@ -1,4 +1,4 @@
-const jalaaliJs = require('jalaali-js');
+import jalaaliJs from 'jalaali-js';
 
 const jalaaliMonths = {
   fa: [
