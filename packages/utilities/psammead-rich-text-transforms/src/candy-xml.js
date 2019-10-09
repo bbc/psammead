@@ -50,9 +50,6 @@ const handleSupportedNodes = (childNode, attributes, acc) => {
   return [...acc, ...blocks];
 };
 
-const handleUnsupportedNodes = (childNode, attributes) =>
-  convertToBlocks(childNode, attributes);
-
 const convertToBlocks = (node, attributes = []) =>
   pathOr([], ['elements'], node).reduce((acc, childNode) => {
     if (isXmlNodeSupported(childNode, attributes)) {
@@ -60,7 +57,8 @@ const convertToBlocks = (node, attributes = []) =>
     }
 
     if (childNode.elements) {
-      return handleUnsupportedNodes(childNode, attributes);
+      // ignore the unsupported node and try to render it's children
+      return convertToBlocks(childNode, attributes);
     }
 
     return acc;
