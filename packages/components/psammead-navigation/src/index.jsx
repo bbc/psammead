@@ -2,7 +2,12 @@ import React, { useState, useRef, useEffect } from 'react';
 import styled, { css } from 'styled-components';
 import { shape, string, node, bool, oneOf, func } from 'prop-types';
 import VisuallyHiddenText from '@bbc/psammead-visually-hidden-text';
-import { C_WHITE, C_POSTBOX, C_GHOST } from '@bbc/psammead-styles/colours';
+import {
+  C_WHITE,
+  C_POSTBOX,
+  C_GHOST,
+  C_CLOUD_DARK,
+} from '@bbc/psammead-styles/colours';
 import {
   GEL_SPACING_HLF,
   GEL_SPACING,
@@ -12,6 +17,7 @@ import {
 import {
   GEL_GROUP_1_SCREEN_WIDTH_MAX,
   GEL_GROUP_3_SCREEN_WIDTH_MIN,
+  GEL_GROUP_3_SCREEN_WIDTH_MAX,
   GEL_GROUP_4_SCREEN_WIDTH_MAX,
   GEL_GROUP_5_SCREEN_WIDTH_MIN,
 } from '@bbc/gel-foundations/breakpoints';
@@ -100,9 +106,10 @@ const StyledUnorderedList = styled.ul`
       grid-template-columns: repeat(5, 1fr);
     }
     @media (max-width: ${GEL_GROUP_1_SCREEN_WIDTH_MAX}) {
-      grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: repeat(1, 1fr);
     }
   `}
+}
 `;
 
 const StyledListItem = styled.li`
@@ -267,7 +274,7 @@ const useOutsideHandler = handler => {
 
 const MenuWrapper = styled.menu`
   max-width: ${GEL_GROUP_5_SCREEN_WIDTH_MIN};
-  overflow: scroll;
+  overflow: auto;
   border-bottom: solid ${C_POSTBOX};
   background-color: ${C_WHITE};
   margin: 0 auto;
@@ -279,20 +286,35 @@ const MenuWrapper = styled.menu`
   pointer-events: auto;
   ${({ moveContent }) => !moveContent && 'max-height: 75vh;'}
   padding: 0;
+  &::-webkit-scrollbar {
+    width: 6px;
+    margin-right: 2px;
+  }
+  &::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background: ${C_CLOUD_DARK};
+  }
+`;
+
+const ChevronSvg = styled.svg`
+  margin: 0px;
+  @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MAX}) {
+    ${({ dir }) => (dir === 'ltr' ? 'margin-left: 8px;' : 'margin-right: 8px;')}
+  }
 `;
 
 const Chevron = ({ dir, children }) => (
-  <svg
+  <ChevronSvg
     xmlns="http://www.w3.org/2000/svg"
     width="8px"
     height="8px"
     viewBox="0 0 32 32"
     focusable="false"
     fill="white"
-    style={dir === 'ltr' ? { marginLeft: '8px' } : { marginRight: '8px' }}
+    dir={dir}
   >
     {children}
-  </svg>
+  </ChevronSvg>
 );
 
 const UpChevronSvg = ({ dir }) => (
@@ -348,6 +370,13 @@ const StyledNavGradient = styled.div`
   }
 `;
 
+const MenuSpan = styled.span`
+  display: none;
+  @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MAX}) {
+    display: inline-block;
+  }
+`;
+
 const NavMenu = ({
   script,
   service,
@@ -367,7 +396,7 @@ const NavMenu = ({
         on="tap:menu.toggleVisibility"
       >
         <StyledLink script={script} service={service}>
-          Menu
+          <MenuSpan>Menu</MenuSpan>
           {menuVisible ? (
             <UpChevronSvg dir={dir} />
           ) : (
