@@ -449,6 +449,72 @@ test('can handle an empty XML tag', () => {
   });
 });
 
+test('can handle horrible nesting', () => {
+  const richText = candyXmlToRichText(
+    createBody(
+      '<paragraph>Some <foo>text <bar>content with<meh> </meh>many nested</bar></foo> tags</paragraph>',
+    ),
+  );
+
+  expect(richText).toStrictEqual({
+    type: 'text',
+    model: {
+      blocks: [
+        {
+          type: 'paragraph',
+          model: {
+            text: 'Some text content with many nested tags',
+            blocks: [
+              {
+                type: 'fragment',
+                model: {
+                  text: 'Some ',
+                  attributes: [],
+                },
+              },
+              {
+                type: 'fragment',
+                model: {
+                  text: 'text ',
+                  attributes: [],
+                },
+              },
+              {
+                type: 'fragment',
+                model: {
+                  text: 'content with',
+                  attributes: [],
+                },
+              },
+              {
+                type: 'fragment',
+                model: {
+                  text: ' ',
+                  attributes: [],
+                },
+              },
+              {
+                type: 'fragment',
+                model: {
+                  text: 'many nested',
+                  attributes: [],
+                },
+              },
+              {
+                type: 'fragment',
+                model: {
+                  text: ' tags',
+                  attributes: [],
+                },
+              },
+            ],
+          },
+        },
+      ],
+    },
+  });
+});
+
 test('can handle chaos', () => {
   const richText = candyXmlToRichText(
     createBody(
