@@ -317,7 +317,7 @@ exports[`Navigation should render correctly 1`] = `
 }
 
 .c6 {
-  margin: 0px;
+  margin-left: 8px;
 }
 
 .c3 {
@@ -349,7 +349,7 @@ exports[`Navigation should render correctly 1`] = `
 }
 
 .c5 {
-  display: none;
+  display: inline-block;
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
@@ -511,12 +511,6 @@ exports[`Navigation should render correctly 1`] = `
   }
 }
 
-@media (min-width:62.9375rem) {
-  .c6 {
-    margin-left: 8px;
-  }
-}
-
 @media (min-width:80rem) {
   .c3 {
     display: none;
@@ -526,12 +520,6 @@ exports[`Navigation should render correctly 1`] = `
 @media (min-width:80rem) {
   .c14 {
     display: none;
-  }
-}
-
-@media (min-width:62.9375rem) {
-  .c5 {
-    display: inline-block;
   }
 }
 

@@ -17,7 +17,6 @@ import {
 import {
   GEL_GROUP_1_SCREEN_WIDTH_MAX,
   GEL_GROUP_3_SCREEN_WIDTH_MIN,
-  GEL_GROUP_3_SCREEN_WIDTH_MAX,
   GEL_GROUP_4_SCREEN_WIDTH_MAX,
   GEL_GROUP_5_SCREEN_WIDTH_MIN,
 } from '@bbc/gel-foundations/breakpoints';
@@ -297,10 +296,7 @@ const MenuWrapper = styled.menu`
 `;
 
 const ChevronSvg = styled.svg`
-  margin: 0px;
-  @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MAX}) {
-    ${({ dir }) => (dir === 'ltr' ? 'margin-left: 8px;' : 'margin-right: 8px;')}
-  }
+  ${({ dir }) => (dir === 'ltr' ? 'margin-left: 8px;' : 'margin-right: 8px;')}
 `;
 
 const Chevron = ({ dir, children }) => (
@@ -371,10 +367,7 @@ const StyledNavGradient = styled.div`
 `;
 
 const MenuSpan = styled.span`
-  display: none;
-  @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MAX}) {
-    display: inline-block;
-  }
+  display: inline-block;
 `;
 
 const NavMenu = ({
