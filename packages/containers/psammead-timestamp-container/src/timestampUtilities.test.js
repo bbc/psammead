@@ -3,7 +3,6 @@ import {
   unixTimestampToMoment,
   formatUnixTimestamp,
   isValidDateTime,
-  getDateTime,
 } from './timestampUtilities';
 import timestampGenerator from './helpers/testHelpers';
 
@@ -36,6 +35,7 @@ describe('Timestamp utility functions', () => {
   describe('formatUnixTimestamp', () => {
     const GMTTimestamp = 1483275600000; // 1 January 2017 GMT
     const BSTTimestamp = 1496235600000; // 31 May 2017 BST
+    const isRelative = false;
 
     it('should return BST for a BST timestamp', () => {
       const result = formatUnixTimestamp(
@@ -86,33 +86,27 @@ describe('Timestamp utility functions', () => {
       );
       expect(result).toEqual('1 January 2017');
     });
-  });
-
-  describe('getDateTime', () => {
-    const format = 'D MMMM YYYY';
-    const isRelative = false;
-
     it('should return relative timestamp if isRelative is true', () => {
       const nineHoursAgo = timestampGenerator({ hours: 9 });
       const isRelativeIsTrue = true;
-      const output = getDateTime(
+      const output = formatUnixTimestamp(
         nineHoursAgo,
-        isRelativeIsTrue,
-        format,
+        'D MMMM YYYY',
         timezone,
         locale,
+        isRelativeIsTrue,
       );
       const expectedOutput = '9 hours ago';
       expect(output).toEqual(expectedOutput);
     });
 
     it('should return timestamp with format if format is provided', () => {
-      const output = getDateTime(
+      const output = formatUnixTimestamp(
         timestamp,
-        isRelative,
-        format,
+        'D MMMM YYYY',
         timezone,
         locale,
+        isRelative,
       );
       const expectedOutput = '19 October 2018';
       expect(output).toEqual(expectedOutput);
@@ -120,12 +114,12 @@ describe('Timestamp utility functions', () => {
 
     it('should return timestamp with default format if format is not provided', () => {
       const nullFormat = null;
-      const output = getDateTime(
+      const output = formatUnixTimestamp(
         timestamp,
-        isRelative,
         nullFormat,
         timezone,
         locale,
+        isRelative,
       );
       const expectedOutput = '19 October 2018, 18:10 BST';
       expect(output).toEqual(expectedOutput);

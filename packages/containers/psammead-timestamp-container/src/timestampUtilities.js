@@ -37,30 +37,17 @@ export const unixTimestampToMoment = timestamp => {
 
 export const formatUnixTimestamp = (
   timestamp,
-  momentString,
-  timezone,
-  locale,
-) =>
-  unixTimestampToMoment(timestamp)
-    .locale(locale)
-    .tz(timezone)
-    .format(momentString);
-
-export const getDateTime = (
-  timestamp,
-  isRelative,
   format,
   timezone,
   locale,
+  isRelative,
 ) => {
+  const momentObj = unixTimestampToMoment(timestamp)
+    .locale(locale)
+    .tz(timezone);
+
   if (isRelative) {
-    return unixTimestampToMoment(timestamp)
-      .locale(locale)
-      .tz(timezone)
-      .fromNow();
+    return momentObj.fromNow();
   }
-  if (format) {
-    return formatUnixTimestamp(timestamp, format, timezone, locale);
-  }
-  return formatUnixTimestamp(timestamp, defaultFormat, timezone, locale);
+  return format ? momentObj.format(format) : momentObj.format(defaultFormat);
 };

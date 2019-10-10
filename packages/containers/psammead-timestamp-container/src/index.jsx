@@ -6,7 +6,6 @@ import {
   isValidDateTime,
   unixTimestampToMoment,
   formatUnixTimestamp,
-  getDateTime,
 } from './timestampUtilities';
 
 const TimestampContainer = ({
@@ -28,12 +27,12 @@ const TimestampContainer = ({
     return null;
   }
 
-  const mainDateTime = getDateTime(
+  const mainDateTime = formatUnixTimestamp(
     timestamp,
-    isRelative,
     format,
     timezone,
     locale,
+    isRelative,
   );
 
   if (altCalendar && !isRelative) {
