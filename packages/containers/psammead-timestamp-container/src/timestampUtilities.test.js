@@ -107,14 +107,26 @@ describe('Timestamp utility functions', () => {
     });
 
     it('should return timestamp with format if format is provided', () => {
-      const output = getDateTime(timestamp, isRelative, format, timezone);
+      const output = getDateTime(
+        timestamp,
+        isRelative,
+        format,
+        timezone,
+        locale,
+      );
       const expectedOutput = '19 October 2018';
       expect(output).toEqual(expectedOutput);
     });
 
     it('should return timestamp with default format if format is not provided', () => {
       const nullFormat = null;
-      const output = getDateTime(timestamp, isRelative, nullFormat, timezone);
+      const output = getDateTime(
+        timestamp,
+        isRelative,
+        nullFormat,
+        timezone,
+        locale,
+      );
       const expectedOutput = '19 October 2018, 18:10 BST';
       expect(output).toEqual(expectedOutput);
     });
