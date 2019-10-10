@@ -44,13 +44,23 @@ const createUrlLink = element => {
   return urlLink(text, locator, blocks);
 };
 
+const handleSupportedNodes = (childNode, attributes, acc) => {
+  const block = xmlNodeToBlock(childNode, attributes);
+  const blocks = is(Array, block) ? block : [block];
+  return [...acc, ...blocks];
+};
+
 const convertToBlocks = (node, attributes = []) =>
   pathOr([], ['elements'], node).reduce((acc, childNode) => {
-    if (isXmlNodeSupported(childNode)) {
-      const block = xmlNodeToBlock(childNode, attributes);
-      const blocks = is(Array, block) ? block : [block];
-      return [...acc, ...blocks];
+    if (isXmlNodeSupported(childNode, attributes)) {
+      return handleSupportedNodes(childNode, attributes, acc);
     }
+
+    if (childNode.elements) {
+      // ignore the unsupported node and try to render it's children
+      return convertToBlocks(childNode, attributes);
+    }
+
     return acc;
   }, []);
 
