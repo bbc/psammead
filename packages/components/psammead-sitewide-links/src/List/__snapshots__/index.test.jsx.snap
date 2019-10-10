@@ -36,7 +36,7 @@ exports[`List should render correctly with 7 items 1`] = `
 }
 
 .c1 {
-  min-width: 100%;
+  min-width: 50%;
   -webkit-column-gap: 1rem;
   column-gap: 1rem;
 }
@@ -234,7 +234,7 @@ exports[`List should render correctly with 8 items 1`] = `
 }
 
 .c1 {
-  min-width: 100%;
+  min-width: 50%;
   -webkit-column-gap: 1rem;
   column-gap: 1rem;
 }

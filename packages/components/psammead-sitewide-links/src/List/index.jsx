@@ -80,7 +80,7 @@ const StyledList = styled.ul`
 `;
 
 const StyledListItem = styled.li`
-  min-width: 100%;
+  min-width: 50%;
   column-gap: 1rem;
 `;
 
