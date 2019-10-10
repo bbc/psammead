@@ -30,6 +30,8 @@ exports[`SitewideLinks should render correctly 1`] = `
   list-style-type: none;
   margin: 0;
   padding: 0 0 0.5rem;
+  -webkit-column-count: 2;
+  column-count: 2;
 }
 
 .c2 > li:first-child {
@@ -38,11 +40,14 @@ exports[`SitewideLinks should render correctly 1`] = `
   margin-bottom: 0.5rem;
   grid-column: 1/-1;
   width: 100%;
+  -webkit-column-span: all;
+  column-span: all;
 }
 
 .c3 {
-  display: inline-block;
-  min-width: 50%;
+  min-width: 100%;
+  -webkit-column-gap: 1rem;
+  column-gap: 1rem;
 }
 
 .c0 {
@@ -107,12 +112,6 @@ exports[`SitewideLinks should render correctly 1`] = `
     grid-column-gap: 1rem;
     grid-template-columns: repeat(5,1fr);
     grid-template-rows: repeat( 3,auto );
-  }
-}
-
-@media all and (-ms-high-contrast:none),(-ms-high-contrast:active) {
-  .c3 {
-    padding-right: 8px;
   }
 }
 
