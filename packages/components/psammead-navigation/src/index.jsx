@@ -87,14 +87,21 @@ const StyledUnorderedList = styled.ul`
   overflow: hidden;
   ${({ inMenu }) =>
     !inMenu &&
-    `overflow-x: scroll; white-space: nowrap; &::-webkit-scrollbar{
-      display:none}
+    `overflow-x: scroll;
+    white-space: nowrap;
+    &::-webkit-scrollbar{
+      display:none
+    }
+
+    scroll-behavior: smooth;
+    overflow-scrolling: touch;
+    -webkit-overflow-scrolling: touch;
       
-      @media (min-width: ${GEL_GROUP_4_SCREEN_WIDTH_MAX}) {
-        overflow-x: hidden;
-        white-space: normal;
-      }
-      `}
+    @media (min-width: ${GEL_GROUP_4_SCREEN_WIDTH_MAX}) {
+      overflow-x: hidden;
+      white-space: normal;
+    }
+  `}
 
   ${({ inMenu, grid }) =>
     inMenu &&

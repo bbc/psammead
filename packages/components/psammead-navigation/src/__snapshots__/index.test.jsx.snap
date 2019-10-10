@@ -64,6 +64,12 @@ exports[`Navigation should render correctly 1`] = `
   overflow: hidden;
   overflow-x: scroll;
   white-space: nowrap;
+  -webkit-scroll-behavior: smooth;
+  -moz-scroll-behavior: smooth;
+  -ms-scroll-behavior: smooth;
+  scroll-behavior: smooth;
+  overflow-scrolling: touch;
+  -webkit-overflow-scrolling: touch;
 }
 
 .c7::-webkit-scrollbar {
