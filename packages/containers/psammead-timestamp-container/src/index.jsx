@@ -27,12 +27,7 @@ const TimestampContainer = ({
 
   return (
     <Timestamp
-      datetime={formatUnixTimestamp(
-        timestamp,
-        dateTimeFormat,
-        timezone,
-        locale,
-      )}
+      datetime={formatUnixTimestamp(timestamp, dateTimeFormat, timezone)}
       padding={padding}
       script={script}
       service={service}
