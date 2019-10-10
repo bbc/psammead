@@ -49,13 +49,13 @@ exports[`ScriptLink should render correctly 1`] = `
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width:25rem) {
   .c0 {
     line-height: 3rem;
   }
 }
 
-@media (max-width:37.5rem) {
+@media (max-width:24.9375rem) {
   .c0 {
     line-height: 2.5rem;
     height: 2.5rem;
