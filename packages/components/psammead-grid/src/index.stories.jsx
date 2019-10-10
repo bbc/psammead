@@ -1,10 +1,19 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import notes from '../README.md';
+import { withKnobs } from '@storybook/addon-knobs';
+import { dirDecorator } from '@bbc/psammead-storybook-helpers';
+import Image from '@bbc/psammead-image';
+import MediaIndicator from '@bbc/psammead-media-indicator';
+import StoryPromo, { Headline, Summary, Link } from '@bbc/psammead-story-promo';
+import IndexAlsosContainer from '../../psammead-story-promo/testHelpers/IndexAlsosContainer';
+import relatedItems from '../../psammead-story-promo/testHelpers/relatedItems';
 import Grid from '.';
 import { ExampleImage, ExampleParagraph } from './testHelpers';
+import notes from '../README.md';
 
 storiesOf('Components|Grid', module)
+  .addDecorator(withKnobs)
+  .addDecorator(dirDecorator)
   .add(
     'Example with layout change at group4+',
     () => (
@@ -1138,4 +1147,200 @@ storiesOf('Components|Grid', module)
       </Grid>
     ),
     { notes },
+  )
+  .add(
+    'Example with Top story and regular promos',
+    ({ service, script, dir }) => {
+      // eslint-disable-next-line react/prop-types
+      const generateStory = ({ topStory, alsoItems = null, mediaType }) => {
+        const MediaIndicatorComponent = type => {
+          return (
+            <MediaIndicator
+              duration={type !== 'photogallery' && '2:15'}
+              datetime="PT2M15S"
+              service={service}
+              type={type}
+            />
+          );
+        };
+
+        const Info = (
+          <>
+            <Headline script={script} topStory={topStory} service={service}>
+              <Link href="https://www.bbc.co.uk/news">
+                Could a computer ever create better art than a human?
+              </Link>
+            </Headline>
+            <Summary script={script} topStory={topStory} service={service}>
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry.
+            </Summary>
+            {topStory && alsoItems && (
+              <IndexAlsosContainer
+                alsoItems={alsoItems}
+                script={script}
+                service={service}
+                dir={dir}
+              />
+            )}
+          </>
+        );
+
+        const Img = (
+          <Image
+            alt="Robert Downey Junior in Iron Man"
+            src="https://ichef.bbci.co.uk/news/660/cpsprodpb/11897/production/_106613817_999_al_.jpg"
+            width="640"
+          />
+        );
+
+        return (
+          <StoryPromo
+            image={Img}
+            info={Info}
+            mediaIndicator={
+              mediaType && MediaIndicatorComponent(mediaType, service)
+            }
+            topStory={topStory}
+          />
+        );
+      };
+
+      return (
+        <Grid
+          columns={{
+            group0: 6,
+            group1: 6,
+            group2: 6,
+            group3: 6,
+            group4: 8,
+            group5: 8,
+          }}
+          enableGelGutters
+          enableGelMargins
+        >
+          <Grid
+            item
+            columns={{
+              group0: 6,
+              group1: 6,
+              group2: 6,
+              group3: 6,
+              group4: 8,
+              group5: 8,
+            }}
+          >
+            {generateStory({
+              topStory: true,
+              alsoItems: relatedItems,
+            })}
+          </Grid>
+          <Grid
+            item
+            columns={{
+              group0: 6,
+              group1: 6,
+              group2: 6,
+              group3: 6,
+              group4: 2,
+              group5: 2,
+            }}
+          >
+            {generateStory({ topStory: false, mediaType: 'audio' })}
+          </Grid>
+          <Grid
+            item
+            columns={{
+              group0: 6,
+              group1: 6,
+              group2: 6,
+              group3: 6,
+              group4: 2,
+              group5: 2,
+            }}
+          >
+            {generateStory({ topStory: false, mediaType: 'video' })}
+          </Grid>
+          <Grid
+            item
+            columns={{
+              group0: 6,
+              group1: 6,
+              group2: 6,
+              group3: 6,
+              group4: 2,
+              group5: 2,
+            }}
+          >
+            {generateStory({ topStory: false, mediaType: 'photogallery' })}
+          </Grid>
+          <Grid
+            item
+            columns={{
+              group0: 6,
+              group1: 6,
+              group2: 6,
+              group3: 6,
+              group4: 2,
+              group5: 2,
+            }}
+          >
+            {generateStory({ topStory: false })}
+          </Grid>
+          <Grid
+            item
+            columns={{
+              group0: 6,
+              group1: 6,
+              group2: 6,
+              group3: 6,
+              group4: 2,
+              group5: 2,
+            }}
+          >
+            {generateStory({ topStory: false })}
+          </Grid>
+          <Grid
+            item
+            columns={{
+              group0: 6,
+              group1: 6,
+              group2: 6,
+              group3: 6,
+              group4: 2,
+              group5: 2,
+            }}
+          >
+            {generateStory({ topStory: false })}
+          </Grid>
+          <Grid
+            item
+            columns={{
+              group0: 6,
+              group1: 6,
+              group2: 6,
+              group3: 6,
+              group4: 2,
+              group5: 2,
+            }}
+          >
+            {generateStory({ topStory: false })}
+          </Grid>
+          <Grid
+            item
+            columns={{
+              group0: 6,
+              group1: 6,
+              group2: 6,
+              group3: 6,
+              group4: 2,
+              group5: 2,
+            }}
+          >
+            {generateStory({ topStory: false })}
+          </Grid>
+        </Grid>
+      );
+    },
+    { notes, knobs: { escapeHTML: false } },
   );
