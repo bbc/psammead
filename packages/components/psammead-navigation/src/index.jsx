@@ -36,6 +36,9 @@ const SKIP_LINK_BORDER = '0.1875rem'; // 3px
 const SKIP_LINK_TOP_POSITION_LARGE = '-4rem'; // -64px
 const SKIP_LINK_TOP_POSITION_SMALL = '-3rem'; // -48px
 
+const GRID = true;
+const MOVE_CONTENT = true;
+
 const NavWrapper = styled.div`
   position: relative;
   max-width: ${GEL_GROUP_5_SCREEN_WIDTH_MIN};
@@ -588,7 +591,7 @@ Navigation.propTypes = {
   amp: bool.isRequired,
 };
 
-Navigation.defaultProps = { dir: 'ltr', moveContent: true, grid: true };
+Navigation.defaultProps = { dir: 'ltr', moveContent: MOVE_CONTENT, grid: GRID };
 
 NavigationUl.propTypes = {
   children: node.isRequired,
@@ -596,7 +599,7 @@ NavigationUl.propTypes = {
   grid: bool,
 };
 
-NavigationUl.defaultProps = { inMenu: false, grid: true };
+NavigationUl.defaultProps = { inMenu: false, grid: GRID };
 
 NavigationLi.propTypes = {
   children: node.isRequired,
