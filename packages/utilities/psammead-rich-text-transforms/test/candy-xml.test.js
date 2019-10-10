@@ -411,6 +411,44 @@ test('returns plain text if wrapped in an unsupport xml node', () => {
   });
 });
 
+test('can handle an empty XML tag', () => {
+  const richText = candyXmlToRichText(
+    createBody(
+      '<paragraph>Some text content with <foo></foo>an empty XML tag.</paragraph>',
+    ),
+  );
+
+  expect(richText).toStrictEqual({
+    type: 'text',
+    model: {
+      blocks: [
+        {
+          type: 'paragraph',
+          model: {
+            text: 'Some text content with an empty XML tag.',
+            blocks: [
+              {
+                type: 'fragment',
+                model: {
+                  text: 'Some text content with ',
+                  attributes: [],
+                },
+              },
+              {
+                type: 'fragment',
+                model: {
+                  text: 'an empty XML tag.',
+                  attributes: [],
+                },
+              },
+            ],
+          },
+        },
+      ],
+    },
+  });
+});
+
 test('can handle chaos', () => {
   const richText = candyXmlToRichText(
     createBody(
