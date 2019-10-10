@@ -27,6 +27,7 @@ const StyledList = styled.ul`
   list-style-type: none;
   margin: 0;
   padding: 0 0 ${GEL_SPACING};
+  column-count: 2;
 
   @supports (${grid}) {
     display: grid;
@@ -74,16 +75,13 @@ const StyledList = styled.ul`
     margin-bottom: ${GEL_SPACING};
     grid-column: 1/-1;
     width: 100%;
+    column-span: all;
   }
 `;
 
 const StyledListItem = styled.li`
-  display: inline-block;
-  min-width: 50%;
-
-  @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-    padding-right: 8px;
-  }
+  min-width: 100%;
+  column-gap: 1rem;
 `;
 
 const List = ({ links }) => (
