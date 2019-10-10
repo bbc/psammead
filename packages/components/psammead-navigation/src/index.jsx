@@ -386,7 +386,7 @@ const NavMenu = ({
         onClick={updateMenuVisiblity}
         type="button"
         ref={buttonRef}
-        on="tap:menu.toggleVisibility"
+        on="tap:menu.toggleVisibility,menu_hider.toggleVisibility"
       >
         <StyledLink script={script} service={service}>
           <MenuSpan>Menu</MenuSpan>
@@ -490,9 +490,9 @@ UpChevronSvg.propTypes = {
 DownChevronSvg.propTypes = UpChevronSvg.propTypes;
 
 const MenuHider = ({ menuVisible }) => {
-  const vis = menuVisible ? { display: 'block' } : { display: 'none' };
   return (
     <div
+      id="menu_hider"
       style={{
         position: 'fixed',
         backgroundColor: 'black',
@@ -502,8 +502,10 @@ const MenuHider = ({ menuVisible }) => {
         left: 0,
         right: 0,
         zIndex: -1,
-        ...vis,
+        cursor: 'default',
       }}
+      hidden={!menuVisible}
+      on="tap:menu.hide,menu_hider.hide"
     />
   );
 };

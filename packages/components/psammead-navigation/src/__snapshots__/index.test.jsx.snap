@@ -543,7 +543,7 @@ exports[`Navigation should render correctly 1`] = `
         dir="ltr"
       >
         <button
-          on="tap:menu.toggleVisibility"
+          on="tap:menu.toggleVisibility,menu_hider.toggleVisibility"
           style="border: 0px; padding: 0px; background-color: inherit;"
           type="button"
         >
