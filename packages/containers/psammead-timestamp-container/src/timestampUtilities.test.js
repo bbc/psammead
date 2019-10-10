@@ -29,9 +29,7 @@ describe('Timestamp utility functions', () => {
 
   describe('unixTimestampToMoment', () => {
     it('should be a valid moment', () => {
-      expect(unixTimestampToMoment(timestamp, locale)).toHaveProperty(
-        'isValid',
-      );
+      expect(unixTimestampToMoment(timestamp)).toHaveProperty('isValid');
     });
   });
 
@@ -44,6 +42,7 @@ describe('Timestamp utility functions', () => {
         BSTTimestamp,
         'D MMMM YYYY, HH:mm z',
         timezone,
+        locale,
       );
       expect(result).toContain('BST');
     });
@@ -53,6 +52,7 @@ describe('Timestamp utility functions', () => {
         GMTTimestamp,
         'D MMMM YYYY, HH:mm z',
         timezone,
+        locale,
       );
       expect(result).toContain('GMT');
     });
@@ -62,17 +62,28 @@ describe('Timestamp utility functions', () => {
         GMTTimestamp,
         'D MMMM YYYY, HH:mm z',
         timezone,
+        locale,
       );
       expect(result).toEqual('1 January 2017, 13:00 GMT');
     });
 
     it('should return short date in expected format', () => {
-      const result = formatUnixTimestamp(GMTTimestamp, 'YYYY-MM-DD', timezone);
+      const result = formatUnixTimestamp(
+        GMTTimestamp,
+        'YYYY-MM-DD',
+        timezone,
+        locale,
+      );
       expect(result).toEqual('2017-01-01');
     });
 
     it('should return long date in expected format', () => {
-      const result = formatUnixTimestamp(GMTTimestamp, 'D MMMM YYYY', timezone);
+      const result = formatUnixTimestamp(
+        GMTTimestamp,
+        'D MMMM YYYY',
+        timezone,
+        locale,
+      );
       expect(result).toEqual('1 January 2017');
     });
   });
