@@ -110,7 +110,7 @@ exports[`Timestamp should render without a leading zero on the day 1`] = `
 
 <time
   class="c0"
-  datetime="2018-07-07"
+  datetime="۲۰۱۸-۰۷-۰۷"
 >
   ۷ ژوئیه ۲۰۱۸
 </time>
