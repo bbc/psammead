@@ -1,7 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
 import { getPica } from '@bbc/gel-foundations/typography';
-import { GEL_GROUP_3_SCREEN_WIDTH_MIN } from '@bbc/gel-foundations/breakpoints';
+import {
+  GEL_GROUP_2_SCREEN_WIDTH_MIN,
+  GEL_GROUP_1_SCREEN_WIDTH_MAX,
+} from '@bbc/gel-foundations/breakpoints';
 import { getSansRegular } from '@bbc/psammead-styles/font-styles';
 import { C_WHITE, C_EBON } from '@bbc/psammead-styles/colours';
 import { string, shape, node } from 'prop-types';
@@ -32,10 +35,10 @@ const StyledLink = styled.a`
     background-color: ${C_WHITE};
     color: ${C_EBON};
   }
-  @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
+  @media (min-width: ${GEL_GROUP_2_SCREEN_WIDTH_MIN}) {
     line-height: 3rem;
   }
-  @media (max-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
+  @media (max-width: ${GEL_GROUP_1_SCREEN_WIDTH_MAX}) {
     line-height: 2.5rem;
     height: 2.5rem;
     padding: 0 0.75rem;

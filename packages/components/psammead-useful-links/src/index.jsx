@@ -36,7 +36,7 @@ export const UsefulLinksUl = styled.ul.attrs({ role: 'list' })`
 
   @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
     column-count: 2;
-    column-gap: 1.875rem;
+    column-gap: 1rem;
 
     @supports (${grid}) {
       display: grid;
@@ -46,7 +46,7 @@ export const UsefulLinksUl = styled.ul.attrs({ role: 'list' })`
         ${({ children }) => getRowCount(children, 2)},
         auto
       );
-      grid-column-gap: 1.875rem;
+      grid-column-gap: 1rem;
     }
   }
 `;
