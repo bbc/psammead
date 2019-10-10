@@ -452,7 +452,7 @@ test('can handle an empty XML tag', () => {
 test('can handle chaos', () => {
   const richText = candyXmlToRichText(
     createBody(
-      '<paragraph><foo><bar><bold><meh>Bold text in unsupported nodes</meh></bold></bar></foo> followed by normal text then <italic><this><is>some <bold>carnage<carnage></carnage></bold></is></this></italic>.</paragraph>',
+      '<paragraph><foo><bar><bold><meh>Bold text in unsupported nodes</meh></bold></bar></foo> followed by normal text then <italic><this><is>some <bold>carnage<carnage> stuff</carnage></bold></is></this></italic>.</paragraph>',
     ),
   );
 
@@ -464,7 +464,7 @@ test('can handle chaos', () => {
           type: 'paragraph',
           model: {
             text:
-              'Bold text in unsupported nodes followed by normal text then some carnage.',
+              'Bold text in unsupported nodes followed by normal text then some carnage stuff.',
             blocks: [
               {
                 type: 'fragment',
@@ -491,6 +491,13 @@ test('can handle chaos', () => {
                 type: 'fragment',
                 model: {
                   text: 'carnage',
+                  attributes: ['italic', 'bold'],
+                },
+              },
+              {
+                type: 'fragment',
+                model: {
+                  text: ' stuff',
                   attributes: ['italic', 'bold'],
                 },
               },
