@@ -1,6 +1,12 @@
 import 'storybook-chromatic';
 import React, { Fragment } from 'react';
-import { configure, addDecorator, addParameters } from '@storybook/react';
+import {
+  configure,
+  addDecorator,
+  addParameters,
+  getStorybook,
+  storiesOf,
+} from '@storybook/react';
 import { create } from '@storybook/theming';
 import { withA11y } from '@storybook/addon-a11y';
 import {
@@ -11,6 +17,7 @@ import * as fontFaces from '@bbc/psammead-styles/fonts';
 import GlobalStyles from '@bbc/psammead-styles/global-styles';
 
 import Helmet from 'react-helmet';
+import withServicesKnob from './withServicesKnob';
 
 const theme = create({
   base: 'light',
@@ -68,3 +75,13 @@ function loadAllStories() {
 }
 
 configure(loadAllStories, module);
+
+const allStoryKinds = getStorybook();
+
+allStoryKinds.forEach(({ kind, stories }) => {
+  stories.forEach(({ name, render }) => {
+    storiesOf(kind, module)
+      .addDecorator(withServicesKnob('arabic'))
+      .add(`RTL - ${name}`, render);
+  });
+});
