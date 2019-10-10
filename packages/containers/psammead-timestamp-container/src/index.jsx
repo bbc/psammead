@@ -2,7 +2,6 @@ import React from 'react';
 import { number, string, bool, shape, func } from 'prop-types';
 import { scriptPropType } from '@bbc/gel-foundations/prop-types';
 import Timestamp from '@bbc/psammead-timestamp';
-import moment from 'moment-timezone';
 import {
   isValidDateTime,
   unixTimestampToMoment,
@@ -28,9 +27,6 @@ const TimestampContainer = ({
   if (!isValidDateTime(new Date(timestamp))) {
     return null;
   }
-  if (locale) {
-    moment.locale(locale);
-  }
 
   const mainDateTime = getDateTime(
     timestamp,
@@ -42,13 +38,18 @@ const TimestampContainer = ({
 
   if (altCalendar && !isRelative) {
     altDateTime = altCalendar.formatDate(
-      unixTimestampToMoment(timestamp, locale),
+      unixTimestampToMoment(timestamp).locale(locale),
     );
   }
 
   return (
     <Timestamp
-      datetime={formatUnixTimestamp(timestamp, dateTimeFormat, timezone)}
+      datetime={formatUnixTimestamp(
+        timestamp,
+        dateTimeFormat,
+        timezone,
+        'en-gb',
+      )}
       padding={padding}
       script={script}
       service={service}
