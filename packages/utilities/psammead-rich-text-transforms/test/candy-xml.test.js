@@ -449,76 +449,10 @@ test('can handle an empty XML tag', () => {
   });
 });
 
-test('can handle horrible nesting', () => {
-  const richText = candyXmlToRichText(
-    createBody(
-      '<paragraph>Some <foo>text <bar>content with<meh> </meh>many nested</bar></foo> tags</paragraph>',
-    ),
-  );
-
-  expect(richText).toStrictEqual({
-    type: 'text',
-    model: {
-      blocks: [
-        {
-          type: 'paragraph',
-          model: {
-            text: 'Some text content with many nested tags',
-            blocks: [
-              {
-                type: 'fragment',
-                model: {
-                  text: 'Some ',
-                  attributes: [],
-                },
-              },
-              {
-                type: 'fragment',
-                model: {
-                  text: 'text ',
-                  attributes: [],
-                },
-              },
-              {
-                type: 'fragment',
-                model: {
-                  text: 'content with',
-                  attributes: [],
-                },
-              },
-              {
-                type: 'fragment',
-                model: {
-                  text: ' ',
-                  attributes: [],
-                },
-              },
-              {
-                type: 'fragment',
-                model: {
-                  text: 'many nested',
-                  attributes: [],
-                },
-              },
-              {
-                type: 'fragment',
-                model: {
-                  text: ' tags',
-                  attributes: [],
-                },
-              },
-            ],
-          },
-        },
-      ],
-    },
-  });
-});
-
 test('can handle chaos', () => {
   const richText = candyXmlToRichText(
     createBody(
-      '<paragraph><foo><bar><bold><meh>Bold text in unsupported nodes</meh></bold></bar></foo> followed by normal text then <italic><this><is>some <bold>carnage<carnage> stuff</carnage></bold></is></this></italic>.</paragraph>',
+      '<paragraph><foo><bar><bold><meh>Bold text in unsupported nodes</meh></bold></bar></foo> followed by normal text then <italic><this><is>some <bold>carnage<carnage></carnage></bold></is></this></italic>.</paragraph>',
     ),
   );
 
@@ -530,7 +464,7 @@ test('can handle chaos', () => {
           type: 'paragraph',
           model: {
             text:
-              'Bold text in unsupported nodes followed by normal text then some carnage stuff.',
+              'Bold text in unsupported nodes followed by normal text then some carnage.',
             blocks: [
               {
                 type: 'fragment',
@@ -557,13 +491,6 @@ test('can handle chaos', () => {
                 type: 'fragment',
                 model: {
                   text: 'carnage',
-                  attributes: ['italic', 'bold'],
-                },
-              },
-              {
-                type: 'fragment',
-                model: {
-                  text: ' stuff',
                   attributes: ['italic', 'bold'],
                 },
               },
