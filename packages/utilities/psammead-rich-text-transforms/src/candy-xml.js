@@ -9,7 +9,7 @@ const attributeTags = ['bold', 'italic'];
 const supportedXmlNodeNames = ['paragraph', 'link', 'url', ...attributeTags];
 
 const isXmlNodeSupported = node => {
-  if (node.constructor.name === 'XmlTextNode') {
+  if (path(['constructor', 'name'], node) === 'XmlTextNode') {
     return true;
   }
 
