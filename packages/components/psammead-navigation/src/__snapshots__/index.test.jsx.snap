@@ -251,7 +251,7 @@ exports[`Navigation should render correctly 1`] = `
       >
         <a
           class="c6"
-          data-navigation="Akụkọ_/igbo"
+          data-naviation="test_navigation"
           href="/igbo"
         >
           <span
@@ -274,7 +274,7 @@ exports[`Navigation should render correctly 1`] = `
       >
         <a
           class="c9"
-          data-navigation="Egwuregwu_/igbo/egwuregwu"
+          data-naviation="test_navigation"
           href="/igbo/egwuregwu"
         >
           Egwuregwu
@@ -286,7 +286,7 @@ exports[`Navigation should render correctly 1`] = `
       >
         <a
           class="c9"
-          data-navigation="Ihe nkiri_/igbo/media/video"
+          data-naviation="test_navigation"
           href="/igbo/media/video"
         >
           Ihe nkiri
@@ -298,7 +298,7 @@ exports[`Navigation should render correctly 1`] = `
       >
         <a
           class="c9"
-          data-navigation="Nke ka ewuewu_/igbo/popular/read"
+          data-naviation="test_navigation"
           href="/igbo/popular/read"
         >
           Nke ka ewuewu
