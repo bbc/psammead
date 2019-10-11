@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
 import moment from 'moment';
-import { storiesOf } from '@storybook/react';
 import { C_PEBBLE } from '@bbc/psammead-styles/colours';
 import {
   GEL_SPACING_HLF,
@@ -78,7 +77,7 @@ const locales = [
   { name: 'Thai', locale: 'th' },
   { name: 'Tigrinya', locale: 'ti' },
   { name: 'Ukrainian', locale: 'uk' },
-  { name: 'Urdu', locale: 'ur' , dir: 'rtl' },
+  { name: 'Urdu', locale: 'ur', dir: 'rtl' },
   { name: 'Uzbek', locale: 'uz' },
   { name: 'Yoruba', locale: 'yo' },
 ];

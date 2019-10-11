@@ -1,5 +1,4 @@
 import React from 'react';
-import { storiesOf } from '@storybook/react';
 import { withKnobs, text } from '@storybook/addon-knobs';
 import { inputProvider } from '@bbc/psammead-storybook-helpers';
 import Caption from '@bbc/psammead-caption';
@@ -18,57 +17,65 @@ const imageSrc =
 const imageWidth = 853;
 const imageRatio = 125;
 
-storiesOf('Components|Figure', module)
-  .addDecorator(withKnobs)
-  .add(
-    'containing Image',
-    () => (
+export default {
+  title: 'Components|Figure',
+  decorators: [withKnobs],
+};
+
+export const containingImage = () => (
+  <Figure>
+    <Image alt={imageAlt} src={imageSrc} width={imageWidth} />
+  </Figure>
+);
+
+containingImage.story = {
+  name: 'containing Image',
+  parameters: { notes },
+};
+
+export const containingImageImagePlaceholderCopyrightAndCaption = inputProvider(
+  {
+    slots: [{ name: 'Caption' }],
+    // eslint-disable-next-line react/prop-types
+    componentFunction: ({ slotTexts: [caption], script, service }) => (
       <Figure>
-        <Image alt={imageAlt} src={imageSrc} width={imageWidth} />
-      </Figure>
-    ),
-    { notes },
-  )
-  .add(
-    'containing Image, ImagePlaceholder, Copyright and Caption',
-    inputProvider({
-      slots: [{ name: 'Caption' }],
-      // eslint-disable-next-line react/prop-types
-      componentFunction: ({ slotTexts: [caption], script, service }) => (
-        <Figure>
-          <ImagePlaceholder ratio={imageRatio}>
-            <Image alt={imageAlt} src={imageSrc} width={imageWidth} />
-            <Copyright>
-              <VisuallyHiddenText>
-                {text(
-                  'visually hidden copyright',
-                  'Image copyright, ',
-                  'Visually Hidden Copyright',
-                )}
-              </VisuallyHiddenText>
-              {text('copyright', 'Copyright', 'Copyright')}
-            </Copyright>
-          </ImagePlaceholder>
-          <Caption service={service} script={script}>
+        <ImagePlaceholder ratio={imageRatio}>
+          <Image alt={imageAlt} src={imageSrc} width={imageWidth} />
+          <Copyright>
             <VisuallyHiddenText>
               {text(
-                'visually hidden caption',
-                'Image caption, ',
-                'Visually Hidden Caption',
+                'visually hidden copyright',
+                'Image copyright, ',
+                'Visually Hidden Copyright',
               )}
             </VisuallyHiddenText>
-            <Paragraph script={script} service={service}>
-              {caption}
-            </Paragraph>
-            <Paragraph script={script} service={service}>
-              {caption}
-            </Paragraph>
-            <Paragraph script={script} service={service}>
-              {caption}
-            </Paragraph>
-          </Caption>
-        </Figure>
-      ),
-    }),
-    { notes, knobs: { escapeHTML: false } },
-  );
+            {text('copyright', 'Copyright', 'Copyright')}
+          </Copyright>
+        </ImagePlaceholder>
+        <Caption service={service} script={script}>
+          <VisuallyHiddenText>
+            {text(
+              'visually hidden caption',
+              'Image caption, ',
+              'Visually Hidden Caption',
+            )}
+          </VisuallyHiddenText>
+          <Paragraph script={script} service={service}>
+            {caption}
+          </Paragraph>
+          <Paragraph script={script} service={service}>
+            {caption}
+          </Paragraph>
+          <Paragraph script={script} service={service}>
+            {caption}
+          </Paragraph>
+        </Caption>
+      </Figure>
+    ),
+  },
+);
+
+containingImageImagePlaceholderCopyrightAndCaption.story = {
+  name: 'containing Image, ImagePlaceholder, Copyright and Caption',
+  parameters: { notes, knobs: { escapeHTML: false } },
+};

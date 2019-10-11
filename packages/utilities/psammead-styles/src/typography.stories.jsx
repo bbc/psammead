@@ -1,6 +1,5 @@
 import React from 'react';
 import { shape, func } from 'prop-types';
-import { storiesOf } from '@storybook/react';
 import { withKnobs } from '@storybook/addon-knobs';
 import * as typographies from '@bbc/gel-foundations/typography';
 import { inputProvider } from '@bbc/psammead-storybook-helpers';
@@ -39,6 +38,9 @@ Object.keys(typographies)
     stories.add(
       typographyName.replace(/^get/, ''),
       typographyStory(typographies[typographyName]),
-      { notes, knobs: { escapeHTML: false } },
+      {
+        notes,
+        knobs: { escapeHTML: false },
+      },
     );
   });

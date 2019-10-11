@@ -1,5 +1,4 @@
 import React from 'react';
-import { storiesOf } from '@storybook/react';
 import { withKnobs, text } from '@storybook/addon-knobs';
 import { dirDecorator } from '@bbc/psammead-storybook-helpers';
 import styled from 'styled-components';
@@ -12,29 +11,33 @@ const Container = styled.div`
   height: 100vh;
 `;
 
-storiesOf('Components|ScriptLink', module)
-  .addDecorator(withKnobs)
-  .addDecorator(dirDecorator)
-  .add(
-    'default',
-    ({ script, service }) => {
-      const label = text('Link Label', 'Lat');
-      const variant = text('Variant', 'lat');
+export default {
+  title: 'Components|ScriptLink',
+  decorators: [withKnobs, dirDecorator],
+};
 
-      return (
-        <Container>
-          <ScriptLink
-            script={script}
-            service={service}
-            href="https://www.bbc.com/serbian/lat"
-            variant={variant}
-          >
-            {label}
-          </ScriptLink>
-        </Container>
-      );
-    },
-    {
-      notes,
-    },
+export const defaultStory = ({ script, service }) => {
+  const label = text('Link Label', 'Lat');
+  const variant = text('Variant', 'lat');
+
+  return (
+    <Container>
+      <ScriptLink
+        script={script}
+        service={service}
+        href="https://www.bbc.com/serbian/lat"
+        variant={variant}
+      >
+        {label}
+      </ScriptLink>
+    </Container>
   );
+};
+
+defaultStory.story = {
+  name: 'default',
+
+  parameters: {
+    notes,
+  },
+};

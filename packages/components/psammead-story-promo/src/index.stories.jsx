@@ -1,5 +1,4 @@
 import React from 'react';
-import { storiesOf } from '@storybook/react';
 import { withKnobs, text, boolean, select } from '@storybook/addon-knobs';
 import { inputProvider } from '@bbc/psammead-storybook-helpers';
 import Image from '@bbc/psammead-image';
@@ -136,29 +135,57 @@ const generateStory = ({ topStory, alsoItems = null }) =>
     },
   });
 
-storiesOf('Components|StoryPromo/StoryPromo', module)
-  .addDecorator(withKnobs)
-  .add('default', generateStory({ topStory: false }), {
+export default {
+  title: 'Components|StoryPromo/StoryPromo',
+  decorators: [withKnobs],
+};
+
+export const defaultStory = generateStory({ topStory: false });
+
+defaultStory.story = {
+  name: 'default',
+
+  parameters: {
     notes,
     knobs: { escapeHTML: false },
-  })
-  .add('Top story', generateStory({ topStory: true }), {
+  },
+};
+
+export const topStoryStory = generateStory({ topStory: true });
+
+topStoryStory.story = {
+  name: 'Top story',
+
+  parameters: {
     notes,
     knobs: { escapeHTML: false },
-  })
-  .add(
-    'Index Alsos - multiple',
-    generateStory({ topStory: true, alsoItems: relatedItems }),
-    {
-      notes,
-      knobs: { escapeHTML: false },
-    },
-  )
-  .add(
-    'Index Alsos - one',
-    generateStory({ topStory: true, alsoItems: [relatedItems[0]] }),
-    {
-      notes,
-      knobs: { escapeHTML: false },
-    },
-  );
+  },
+};
+
+export const indexAlsosMultiple = generateStory({
+  topStory: true,
+  alsoItems: relatedItems,
+});
+
+indexAlsosMultiple.story = {
+  name: 'Index Alsos - multiple',
+
+  parameters: {
+    notes,
+    knobs: { escapeHTML: false },
+  },
+};
+
+export const indexAlsosOne = generateStory({
+  topStory: true,
+  alsoItems: [relatedItems[0]],
+});
+
+indexAlsosOne.story = {
+  name: 'Index Alsos - one',
+
+  parameters: {
+    notes,
+    knobs: { escapeHTML: false },
+  },
+};

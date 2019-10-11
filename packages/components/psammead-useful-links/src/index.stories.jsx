@@ -1,5 +1,4 @@
 import React from 'react';
-import { storiesOf } from '@storybook/react';
 import { withKnobs } from '@storybook/addon-knobs';
 import { dirDecorator } from '@bbc/psammead-storybook-helpers';
 import { UsefulLink, UsefulLinksLi, UsefulLinksUl } from './index';
@@ -28,42 +27,45 @@ const usefulCaptions = [
   },
 ];
 
-storiesOf('Components|UsefulLinks', module)
-  .addDecorator(withKnobs)
-  .addDecorator(dirDecorator)
-  .add(
-    'one link',
-    ({ service, script }) => (
-      <UsefulLink
-        script={script}
-        service={service}
-        href={usefulCaptions[0].url}
-      >
-        {usefulCaptions[0].name}
-      </UsefulLink>
-    ),
-    {
-      notes,
-      knobs: { escapeHTML: false },
-    },
-  )
-  .add(
-    'multiple links',
-    ({ service, script }) => (
-      <UsefulLinksUl>
-        {usefulCaptions.map(item => {
-          return (
-            <UsefulLinksLi key={usefulCaptions.indexOf(item)}>
-              <UsefulLink service={service} script={script} href={item.url}>
-                {item.name}
-              </UsefulLink>
-            </UsefulLinksLi>
-          );
-        })}
-      </UsefulLinksUl>
-    ),
-    {
-      notes,
-      knobs: { escapeHTML: false },
-    },
-  );
+export default {
+  title: 'Components|UsefulLinks',
+  decorators: [withKnobs, dirDecorator],
+};
+
+export const oneLink = ({ service, script }) => (
+  <UsefulLink script={script} service={service} href={usefulCaptions[0].url}>
+    {usefulCaptions[0].name}
+  </UsefulLink>
+);
+
+oneLink.story = {
+  name: 'one link',
+
+  parameters: {
+    notes,
+    knobs: { escapeHTML: false },
+  },
+};
+
+export const multipleLinks = ({ service, script }) => (
+  <UsefulLinksUl>
+    {usefulCaptions.map(item => {
+      return (
+        <UsefulLinksLi key={usefulCaptions.indexOf(item)}>
+          <UsefulLink service={service} script={script} href={item.url}>
+            {item.name}
+          </UsefulLink>
+        </UsefulLinksLi>
+      );
+    })}
+  </UsefulLinksUl>
+);
+
+multipleLinks.story = {
+  name: 'multiple links',
+
+  parameters: {
+    notes,
+    knobs: { escapeHTML: false },
+  },
+};

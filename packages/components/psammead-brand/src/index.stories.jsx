@@ -7,7 +7,6 @@ import {
   withKnobs,
   boolean,
 } from '@storybook/addon-knobs';
-import { storiesOf } from '@storybook/react';
 import * as svgs from '@bbc/psammead-assets/svgs';
 import { dirDecorator } from '@bbc/psammead-storybook-helpers';
 import { C_POSTBOX, C_WHITE } from '@bbc/psammead-styles/colours';
@@ -48,73 +47,78 @@ const inputs = () => {
   };
 };
 
-storiesOf('Components|Brand', module)
-  .addDecorator(withKnobs)
-  .addDecorator(dirDecorator)
-  .add(
-    'without brand link',
-    () => {
-      const {
-        productInput,
-        serviceLocalisedNameInput,
-        svgHeightInput,
-        minWidthInput,
-        maxWidthInput,
-        svgChoice,
-        borderBottom,
-        borderTop,
-        backgroundColour,
-        logoColour,
-      } = inputs();
+export default {
+  title: 'Components|Brand',
+  decorators: [withKnobs, dirDecorator],
+};
 
-      return (
-        <Brand
-          product={productInput}
-          serviceLocalisedName={serviceLocalisedNameInput}
-          svgHeight={svgHeightInput}
-          minWidth={minWidthInput}
-          maxWidth={maxWidthInput}
-          svg={svgs[svgChoice]}
-          borderBottom={borderBottom}
-          borderTop={borderTop}
-          backgroundColour={backgroundColour}
-          logoColour={logoColour}
-        />
-      );
-    },
-    { notes },
-  )
-  .add(
-    'with brand link',
-    () => {
-      const {
-        productInput,
-        serviceLocalisedNameInput,
-        svgHeightInput,
-        minWidthInput,
-        maxWidthInput,
-        svgChoice,
-        borderBottom,
-        borderTop,
-        backgroundColour,
-        logoColour,
-      } = inputs();
+export const withoutBrandLink = () => {
+  const {
+    productInput,
+    serviceLocalisedNameInput,
+    svgHeightInput,
+    minWidthInput,
+    maxWidthInput,
+    svgChoice,
+    borderBottom,
+    borderTop,
+    backgroundColour,
+    logoColour,
+  } = inputs();
 
-      return (
-        <Brand
-          product={productInput}
-          serviceLocalisedName={serviceLocalisedNameInput}
-          svgHeight={svgHeightInput}
-          minWidth={minWidthInput}
-          maxWidth={maxWidthInput}
-          svg={svgs[svgChoice]}
-          url="https://www.bbc.com/news"
-          borderBottom={borderBottom}
-          borderTop={borderTop}
-          backgroundColour={backgroundColour}
-          logoColour={logoColour}
-        />
-      );
-    },
-    { notes },
+  return (
+    <Brand
+      product={productInput}
+      serviceLocalisedName={serviceLocalisedNameInput}
+      svgHeight={svgHeightInput}
+      minWidth={minWidthInput}
+      maxWidth={maxWidthInput}
+      svg={svgs[svgChoice]}
+      borderBottom={borderBottom}
+      borderTop={borderTop}
+      backgroundColour={backgroundColour}
+      logoColour={logoColour}
+    />
   );
+};
+
+withoutBrandLink.story = {
+  name: 'without brand link',
+  parameters: { notes },
+};
+
+export const withBrandLink = () => {
+  const {
+    productInput,
+    serviceLocalisedNameInput,
+    svgHeightInput,
+    minWidthInput,
+    maxWidthInput,
+    svgChoice,
+    borderBottom,
+    borderTop,
+    backgroundColour,
+    logoColour,
+  } = inputs();
+
+  return (
+    <Brand
+      product={productInput}
+      serviceLocalisedName={serviceLocalisedNameInput}
+      svgHeight={svgHeightInput}
+      minWidth={minWidthInput}
+      maxWidth={maxWidthInput}
+      svg={svgs[svgChoice]}
+      url="https://www.bbc.com/news"
+      borderBottom={borderBottom}
+      borderTop={borderTop}
+      backgroundColour={backgroundColour}
+      logoColour={logoColour}
+    />
+  );
+};
+
+withBrandLink.story = {
+  name: 'with brand link',
+  parameters: { notes },
+};

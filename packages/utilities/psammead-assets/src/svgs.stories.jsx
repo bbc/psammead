@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
 import { node, number, shape } from 'prop-types';
-import { storiesOf } from '@storybook/react';
 import { number as numberKnob, withKnobs } from '@storybook/addon-knobs';
 import notes from '../README.md';
 import * as allSvgs from './svgs';

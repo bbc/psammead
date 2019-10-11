@@ -1,12 +1,12 @@
 import React from 'react';
-import { storiesOf } from '@storybook/react';
 import moment from 'moment';
 import { jalaali } from './index';
 
 const stories = storiesOf('Utilities|Psammead Moment Calendars', module);
 
 const testMoment = moment('2019-01-01');
-stories.add('Jalaali Persian', () => {
+
+export const jalaaliPersian = () => {
   testMoment.locale('fa');
   const jalaaliMomentDate = jalaali.formatDate(testMoment);
   const gregorianMomentDate = testMoment.format('DD YYYY MMMM');
@@ -28,9 +28,9 @@ stories.add('Jalaali Persian', () => {
       </div>
     </div>
   );
-});
+};
 
-stories.add('Jalaali Pashto', () => {
+export const jalaaliPashto = () => {
   testMoment.locale('ps');
   const jalaaliMomentDate = jalaali.formatDate(testMoment);
   const gregorianMomentDate = testMoment.format('DD YYYY MMMM');
@@ -52,4 +52,4 @@ stories.add('Jalaali Pashto', () => {
       </div>
     </div>
   );
-});
+};

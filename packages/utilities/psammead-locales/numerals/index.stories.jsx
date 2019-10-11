@@ -1,5 +1,4 @@
 import React from 'react';
-import { storiesOf } from '@storybook/react';
 import styled from 'styled-components';
 import { GEL_SPACING } from '@bbc/gel-foundations/spacings';
 import * as numerals from '../src/numerals';
@@ -18,7 +17,7 @@ const Value = styled.div`
   margin: ${GEL_SPACING};
 `;
 
-stories.add('Numerals', () => {
+export const numeralsStory = () => {
   return (
     <Container>
       {numeralSystems.map(numeralSystem => (
@@ -29,4 +28,8 @@ stories.add('Numerals', () => {
       ))}
     </Container>
   );
-});
+};
+
+numeralsStory.story = {
+  name: 'Numerals',
+};

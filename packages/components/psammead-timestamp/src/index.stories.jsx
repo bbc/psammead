@@ -1,5 +1,4 @@
 import React from 'react';
-import { storiesOf } from '@storybook/react'; // eslint-disable-line import/no-extraneous-dependencies
 import { text, select, boolean, withKnobs } from '@storybook/addon-knobs';
 import * as typography from '@bbc/gel-foundations/typography';
 import { latin } from '@bbc/gel-foundations/scripts';
@@ -19,48 +18,53 @@ const styles = Object.keys(typography)
   })
   .filter(style => style);
 
-storiesOf('Components|Timestamp', module)
-  .addDecorator(withKnobs)
-  .addDecorator(dirDecorator)
-  .add(
-    'default',
-    ({ service }) => {
-      const padding = boolean('Padding', true);
-      const style = select('Typography', styles, 'Brevier');
-      const typographyFunc = typography[`get${style}`];
+export default {
+  title: 'Components|Timestamp',
+  decorators: [withKnobs, dirDecorator],
+};
 
-      return (
-        <Timestamp
-          datetime="1530947227000"
-          typographyFunc={typographyFunc}
-          script={latin}
-          padding={padding}
-          service={service}
-        >
-          {text('Timestamp Text', '7 July 2018')}
-        </Timestamp>
-      );
-    },
-    { notes },
-  )
-  .add(
-    'with "updated" prefix',
-    ({ service }) => {
-      const padding = boolean('Padding', true);
-      const style = select('Typography', styles, 'Brevier');
-      const typographyFunc = typography[`get${style}`];
+export const defaultStory = ({ service }) => {
+  const padding = boolean('Padding', true);
+  const style = select('Typography', styles, 'Brevier');
+  const typographyFunc = typography[`get${style}`];
 
-      return (
-        <Timestamp
-          datetime="1530947227000"
-          typographyFunc={typographyFunc}
-          script={latin}
-          padding={padding}
-          service={service}
-        >
-          {text('Timestamp Text', 'Updated 7 July 2018')}
-        </Timestamp>
-      );
-    },
-    { notes },
+  return (
+    <Timestamp
+      datetime="1530947227000"
+      typographyFunc={typographyFunc}
+      script={latin}
+      padding={padding}
+      service={service}
+    >
+      {text('Timestamp Text', '7 July 2018')}
+    </Timestamp>
   );
+};
+
+defaultStory.story = {
+  name: 'default',
+  parameters: { notes },
+};
+
+export const withUpdatedPrefix = ({ service }) => {
+  const padding = boolean('Padding', true);
+  const style = select('Typography', styles, 'Brevier');
+  const typographyFunc = typography[`get${style}`];
+
+  return (
+    <Timestamp
+      datetime="1530947227000"
+      typographyFunc={typographyFunc}
+      script={latin}
+      padding={padding}
+      service={service}
+    >
+      {text('Timestamp Text', 'Updated 7 July 2018')}
+    </Timestamp>
+  );
+};
+
+withUpdatedPrefix.story = {
+  name: 'with "updated" prefix',
+  parameters: { notes },
+};

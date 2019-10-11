@@ -1,5 +1,4 @@
 import React from 'react';
-import { storiesOf } from '@storybook/react';
 import styled from 'styled-components';
 import { withKnobs, text, boolean } from '@storybook/addon-knobs';
 import { dirDecorator } from '@bbc/psammead-storybook-helpers';
@@ -14,106 +13,122 @@ const Page = styled.div`
 
 const PageDecorator = storyFn => <Page>{storyFn()}</Page>;
 
-storiesOf('Components|MediaIndicator/Video', module)
-  .addDecorator(PageDecorator)
-  .addDecorator(withKnobs)
-  .addDecorator(dirDecorator)
-  .add(
-    'video without duration',
-    ({ service }) => (
-      <MediaIndicator
-        service={service}
-        indexAlsos={boolean('Index Also', false)}
-      />
-    ),
-    { notes },
-  )
-  .add(
-    'video with duration',
-    ({ service }) => (
-      <MediaIndicator
-        duration={text('duration', '2:15')}
-        datetime={text('datetime', 'PT2M15S')}
-        type="video"
-        service={service}
-      />
-    ),
-    { notes },
-  )
-  .add(
-    'top story video with duration',
-    ({ service }) => (
-      <MediaIndicator
-        duration={text('duration', '2:15')}
-        datetime={text('datetime', 'PT2M15S')}
-        type="video"
-        topStory
-        service={service}
-      />
-    ),
-    { notes },
-  );
+export default {
+  title: 'Components|MediaIndicator/Video',
+  decorators: [PageDecorator, withKnobs, dirDecorator],
+};
 
-storiesOf('Components|MediaIndicator/Audio', module)
-  .addDecorator(PageDecorator)
-  .addDecorator(withKnobs)
-  .addDecorator(dirDecorator)
-  .add(
-    'audio without duration',
-    ({ service }) => (
-      <MediaIndicator
-        type="audio"
-        service={service}
-        indexAlsos={boolean('Index Also', false)}
-      />
-    ),
-    { notes },
-  )
-  .add(
-    'audio with duration',
-    ({ service }) => (
-      <MediaIndicator
-        duration={text('duration', '2:15')}
-        datetime={text('datetime', 'PT2M15S')}
-        type="audio"
-        service={service}
-      />
-    ),
-    { notes },
-  )
-  .add(
-    'top story audio with duration',
-    ({ service }) => (
-      <MediaIndicator
-        duration={text('duration', '2:15')}
-        datetime={text('datetime', 'PT2M15S')}
-        type="audio"
-        topStory
-        service={service}
-      />
-    ),
-    { notes },
-  );
+export const videoWithoutDuration = ({ service }) => (
+  <MediaIndicator
+    service={service}
+    indexAlsos={boolean('Index Also', false)}
+  />
+);
 
-storiesOf('Components|MediaIndicator/Photo', module)
-  .addDecorator(PageDecorator)
-  .addDecorator(withKnobs)
-  .addDecorator(dirDecorator)
-  .add(
-    'photogallery',
-    ({ service }) => (
-      <MediaIndicator
-        type="photogallery"
-        service={service}
-        indexAlsos={boolean('Index Also', false)}
-      />
-    ),
-    { notes },
-  )
-  .add(
-    'top story photogallery',
-    ({ service }) => (
-      <MediaIndicator type="photogallery" service={service} topStory />
-    ),
-    { notes },
-  );
+videoWithoutDuration.story = {
+  name: 'video without duration',
+  parameters: { notes },
+};
+
+export const videoWithDuration = ({ service }) => (
+  <MediaIndicator
+    duration={text('duration', '2:15')}
+    datetime={text('datetime', 'PT2M15S')}
+    type="video"
+    service={service}
+  />
+);
+
+videoWithDuration.story = {
+  name: 'video with duration',
+  parameters: { notes },
+};
+
+export const topStoryVideoWithDuration = ({ service }) => (
+  <MediaIndicator
+    duration={text('duration', '2:15')}
+    datetime={text('datetime', 'PT2M15S')}
+    type="video"
+    topStory
+    service={service}
+  />
+);
+
+topStoryVideoWithDuration.story = {
+  name: 'top story video with duration',
+  parameters: { notes },
+};
+
+export default {
+  title: 'Components|MediaIndicator/Audio',
+  decorators: [PageDecorator, withKnobs, dirDecorator],
+};
+
+export const audioWithoutDuration = ({ service }) => (
+  <MediaIndicator
+    type="audio"
+    service={service}
+    indexAlsos={boolean('Index Also', false)}
+  />
+);
+
+audioWithoutDuration.story = {
+  name: 'audio without duration',
+  parameters: { notes },
+};
+
+export const audioWithDuration = ({ service }) => (
+  <MediaIndicator
+    duration={text('duration', '2:15')}
+    datetime={text('datetime', 'PT2M15S')}
+    type="audio"
+    service={service}
+  />
+);
+
+audioWithDuration.story = {
+  name: 'audio with duration',
+  parameters: { notes },
+};
+
+export const topStoryAudioWithDuration = ({ service }) => (
+  <MediaIndicator
+    duration={text('duration', '2:15')}
+    datetime={text('datetime', 'PT2M15S')}
+    type="audio"
+    topStory
+    service={service}
+  />
+);
+
+topStoryAudioWithDuration.story = {
+  name: 'top story audio with duration',
+  parameters: { notes },
+};
+
+export default {
+  title: 'Components|MediaIndicator/Photo',
+  decorators: [PageDecorator, withKnobs, dirDecorator],
+};
+
+export const photogallery = ({ service }) => (
+  <MediaIndicator
+    type="photogallery"
+    service={service}
+    indexAlsos={boolean('Index Also', false)}
+  />
+);
+
+photogallery.story = {
+  name: 'photogallery',
+  parameters: { notes },
+};
+
+export const topStoryPhotogallery = ({ service }) => (
+  <MediaIndicator type="photogallery" service={service} topStory />
+);
+
+topStoryPhotogallery.story = {
+  name: 'top story photogallery',
+  parameters: { notes },
+};

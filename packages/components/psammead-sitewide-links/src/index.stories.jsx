@@ -1,5 +1,4 @@
 import React from 'react';
-import { storiesOf } from '@storybook/react';
 import { withKnobs } from '@storybook/addon-knobs';
 import { inputProvider } from '@bbc/psammead-storybook-helpers';
 import notes from '../README.md';
@@ -22,27 +21,31 @@ linkNames.unshift(
   { name: 'Copyright', defaultText: 'copyright text' },
 );
 
-storiesOf('Components|SitewideLinks', module)
-  .addDecorator(withKnobs)
-  .add(
-    'default',
-    inputProvider({
-      slots: linkNames,
-      /* eslint-disable react/prop-types */
-      componentFunction: ({
-        slotTexts: [externalLinkText, copyrightText, ...linkTexts],
-        service,
-      }) => {
-        const links = linkTexts.map(buildLink);
-        return (
-          <SitewideLinks
-            links={links}
-            copyrightText={copyrightText}
-            externalLink={buildLink(externalLinkText)}
-            service={service}
-          />
-        );
-      },
-    }),
-    { notes, knobs: { escapeHTML: false } },
-  );
+export default {
+  title: 'Components|SitewideLinks',
+  decorators: [withKnobs],
+};
+
+export const defaultStory = inputProvider({
+  slots: linkNames,
+  /* eslint-disable react/prop-types */
+  componentFunction: ({
+    slotTexts: [externalLinkText, copyrightText, ...linkTexts],
+    service,
+  }) => {
+    const links = linkTexts.map(buildLink);
+    return (
+      <SitewideLinks
+        links={links}
+        copyrightText={copyrightText}
+        externalLink={buildLink(externalLinkText)}
+        service={service}
+      />
+    );
+  },
+});
+
+defaultStory.story = {
+  name: 'default',
+  parameters: { notes, knobs: { escapeHTML: false } },
+};

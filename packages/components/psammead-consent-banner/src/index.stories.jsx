@@ -1,5 +1,4 @@
 import React from 'react';
-import { storiesOf } from '@storybook/react';
 import { withKnobs } from '@storybook/addon-knobs';
 import { dirDecorator, inputProvider } from '@bbc/psammead-storybook-helpers';
 import { oneOf, string } from 'prop-types';
@@ -35,42 +34,40 @@ Text.defaultProps = {
   dir: 'ltr',
 };
 
-storiesOf('Components|ConsentBanner', module)
-  .addDecorator(withKnobs)
-  .addDecorator(dirDecorator)
-  .add(
-    'default',
-    inputProvider({
-      slots: [
-        {
-          name: 'title',
-          defaultText: 'Privacy and Cookies Policy',
-        },
-        {
-          name: 'text',
-          defaultText: 'Changes to our Privacy and Cookie Policy ',
-        },
-      ],
-      /* eslint-disable react/prop-types */
-      componentFunction: ({
-        slotTexts: [title, text],
-        dir,
-        script,
-        service,
-      }) => {
-        const shortText = text.trim().split(' ')[0];
-        return (
-          <ConsentBanner
-            dir={dir}
-            title={title}
-            text={Text({ dir, script, service, text, shortText })}
-            accept={Accept(shortText)}
-            reject={Reject(shortText)}
-            script={script}
-            service={service}
-          />
-        );
-      },
-    }),
-    { notes, knobs: { escapeHTML: false } },
-  );
+export default {
+  title: 'Components|ConsentBanner',
+  decorators: [withKnobs, dirDecorator],
+};
+
+export const defaultStory = inputProvider({
+  slots: [
+    {
+      name: 'title',
+      defaultText: 'Privacy and Cookies Policy',
+    },
+    {
+      name: 'text',
+      defaultText: 'Changes to our Privacy and Cookie Policy ',
+    },
+  ],
+  /* eslint-disable react/prop-types */
+  componentFunction: ({ slotTexts: [title, text], dir, script, service }) => {
+    const shortText = text.trim().split(' ')[0];
+    return (
+      <ConsentBanner
+        dir={dir}
+        title={title}
+        text={Text({ dir, script, service, text, shortText })}
+        accept={Accept(shortText)}
+        reject={Reject(shortText)}
+        script={script}
+        service={service}
+      />
+    );
+  },
+});
+
+defaultStory.story = {
+  name: 'default',
+  parameters: { notes, knobs: { escapeHTML: false } },
+};

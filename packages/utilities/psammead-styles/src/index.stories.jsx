@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-import { storiesOf } from '@storybook/react';
 import { GEL_SPACING, GEL_SPACING_DBL } from '@bbc/gel-foundations/spacings';
 import {
   GEL_FF_REITH_SANS,
@@ -76,48 +75,56 @@ const getFontStyles = fontName => {
 
 const detectionExamples = ['display: grid', grid];
 
-storiesOf('Utilities|Psammead Styles', module)
-  .addDecorator(withKnobs)
-  .add(
-    'font styles',
-    () => {
-      const fontName = select('Font Style', fontStyles, fontStyles[0]);
-      return (
-        <Paragraph style={getFontStyles(fontName)}>
-          <span>The quick brown fox jumps over the lazy dog 0123456789</span>
-          <br />
-          <span>
-            نص حكيم له سر قاطع وذو شأن عظيم مكتوب على ثوب أخضر ومغلف بجلد أزرق
-          </span>
-        </Paragraph>
-      );
-    },
-    { notes, knobs: { escapeHTML: false } },
-  )
-  .add(
-    'colours',
-    () => (
-      <ColourContainer>
-        {Object.keys(colours).map(colour => (
-          <ColourRow key={colours[colour]}>
-            <ColourBox colour={colours[colour]}>{colours[colour]}</ColourBox>
-            <ColourValue>{colour}</ColourValue>
-          </ColourRow>
-        ))}
-      </ColourContainer>
-    ),
-    { notes },
-  )
-  .add(
-    'CSS feature detection',
-    () => (
-      <ul>
-        {detectionExamples.map(ex => (
-          <Detects key={ex} detector={ex}>
-            <pre>@supports ({ex})</pre>
-          </Detects>
-        ))}
-      </ul>
-    ),
-    { notes },
+export default {
+  title: 'Utilities|Psammead Styles',
+  decorators: [withKnobs],
+};
+
+export const fontStylesStory = () => {
+  const fontName = select('Font Style', fontStyles, fontStyles[0]);
+  return (
+    <Paragraph style={getFontStyles(fontName)}>
+      <span>The quick brown fox jumps over the lazy dog 0123456789</span>
+      <br />
+      <span>
+        نص حكيم له سر قاطع وذو شأن عظيم مكتوب على ثوب أخضر ومغلف بجلد أزرق
+      </span>
+    </Paragraph>
   );
+};
+
+fontStylesStory.story = {
+  name: 'font styles',
+  parameters: { notes, knobs: { escapeHTML: false } },
+};
+
+export const coloursStory = () => (
+  <ColourContainer>
+    {Object.keys(colours).map(colour => (
+      <ColourRow key={colours[colour]}>
+        <ColourBox colour={colours[colour]}>{colours[colour]}</ColourBox>
+        <ColourValue>{colour}</ColourValue>
+      </ColourRow>
+    ))}
+  </ColourContainer>
+);
+
+coloursStory.story = {
+  name: 'colours',
+  parameters: { notes },
+};
+
+export const cssFeatureDetection = () => (
+  <ul>
+    {detectionExamples.map(ex => (
+      <Detects key={ex} detector={ex}>
+        <pre>@supports ({ex})</pre>
+      </Detects>
+    ))}
+  </ul>
+);
+
+cssFeatureDetection.story = {
+  name: 'CSS feature detection',
+  parameters: { notes },
+};

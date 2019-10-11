@@ -7,8 +7,11 @@ import notes from '../README.md';
 
 const type = 'Img';
 
-stories(Img, 'Components|Images/Image - Img', false, {}, withKnobs, type).add(
-  'image without width',
-  () => <Img {...getProps(landscape, false, type)} width={null} />,
-  { notes },
+export const imageWithoutWidth = () => (
+  <Img {...getProps(landscape, false, type)} width={null} />
 );
+
+imageWithoutWidth.story = {
+  name: 'image without width',
+  parameters: { notes },
+};
