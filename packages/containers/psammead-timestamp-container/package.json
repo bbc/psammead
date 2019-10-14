@@ -30,7 +30,6 @@
     "moment-timezone": "^0.5.26"
   },
   "devDependencies": {
-    "react": "^16.9.0",
     "@bbc/psammead-calendars": "^2.0.0"
   },
   "peerDependencies": {
