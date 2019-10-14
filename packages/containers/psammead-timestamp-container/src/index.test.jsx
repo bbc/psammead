@@ -1,5 +1,6 @@
 import React from 'react';
 import { isNull, shouldMatchSnapshot } from '@bbc/psammead-test-helpers';
+import { render } from '@testing-library/react';
 import { latin } from '@bbc/gel-foundations/scripts';
 import Timestamp from '.';
 
@@ -63,4 +64,23 @@ describe('Timestamp', () => {
       service="news"
     />,
   );
+
+  describe('assertions', () => {
+    it('should render a non localised dateTime', () => {
+      const { container } = render(
+        <Timestamp
+          timestamp={defaultTimestamp}
+          dateTimeFormat="YYYY-MM-DD"
+          format="D MMMM YYYY"
+          isRelative={false}
+          script={latin}
+          locale="ha"
+          service="hausa"
+        />,
+      );
+
+      const time = container.querySelector('time');
+      expect(time.textContent).toEqual('19 October 2018');
+    });
+  });
 });
