@@ -12,7 +12,9 @@ npm install @bbc/psammead-calendars --save
 
 ### Jalaali
 
-The functionality of this helper is to to convert a `Gregorian` calendar moment into its `Jalaali` equivalent and outputting it as a string to be used by other components. This helper relies on `jalaali-js` which contains the logic to carry out the conversions from `Gregorian` to `Jalaali`. Documentation of this dependency can be found [here](https://www.npmjs.com/package/jalaali-js). This helper currently only supports Pashto and Persian/Farsi Jalaali calendar month names.
+Converts a Gregorian calendar date represented by a [moment](https://momentjs.com) object into its Jalaali calendar equivalent and outputs it as a string to be used by other components. This helper relies on `jalaali-js` which contains the logic to carry out the conversions from Gregorian to Jalaali. Documentation of this dependency can be found [here](https://www.npmjs.com/package/jalaali-js).
+
+This helper currently only supports Pashto and Persian/Farsi Jalaali calendar month names and Eastern Arabic numerals (translated using [psammead-locales](../psammead-locales)).
 
 ## Usage
 
@@ -28,7 +30,7 @@ import { jalaali } from "@bbc/psammead-calendars"
 const nowMoment = moment().locale('fa');
 const formattedDate = jalaali.formatDate(nowMoment);
 ```
-The Jalaali formatter contains a function called `formatDate()`. This function takes a `moment` object as its argument, which needs to have `ps` or `fa` set as its locale. The function then uses the `moment` with it's logic to return a string in a day, year, month format e.g. `11 دی 1397`.
+The Jalaali formatter contains a function called `formatDate()`. This function takes a `moment` object as its argument, which needs to have `ps` or `fa` set as its locale. The function then uses the `moment` with its logic to return a string in a day, year, month format using Eastern Arabic numerals e.g. `۱۱ دی ۱۳۹۷`.
 
 If an unsupported `moment` or locale set on the `moment` is passed in, then the output will `return null`.
 
