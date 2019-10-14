@@ -6,18 +6,18 @@ describe('Jalaali Conversion Tests', () => {
   const testScenarios = [
     {
       testMoment: moment('2019-01-01').locale('fa'),
-      expected: '11 دی 1397',
+      expected: '۱۱ دی ۱۳۹۷',
       summary:
         'should return first day of the year 2019 in Jalaali for persian',
     },
     {
       testMoment: moment('2019-12-31').locale('fa'),
-      expected: '10 دی 1398',
+      expected: '۱۰ دی ۱۳۹۸',
       summary: 'should return last day of the year 2019 in Jalaali for persian',
     },
     {
       testMoment: moment('2025-02-01').locale('fa'),
-      expected: '13 بهمن 1403',
+      expected: '۱۳ بهمن ۱۴۰۳',
       summary: 'should return first day of Febuary 2025 in Jalaali for persian',
     },
     {
@@ -27,17 +27,17 @@ describe('Jalaali Conversion Tests', () => {
     },
     {
       testMoment: moment('2019-01-01').locale('ps'),
-      expected: '11 مرغومی 1397',
+      expected: '۱۱ مرغومی ۱۳۹۷',
       summary: 'should return first day of the year 2019 in Jalaali for pashto',
     },
     {
       testMoment: moment('2019-12-31').locale('ps'),
-      expected: '10 مرغومی 1398',
+      expected: '۱۰ مرغومی ۱۳۹۸',
       summary: 'should return last day of the year 2019 in Jalaali for pashto',
     },
     {
       testMoment: moment('2025-02-01').locale('ps'),
-      expected: '13 سلواغه 1403',
+      expected: '۱۳ سلواغه ۱۴۰۳',
       summary: 'should return first day of Febuary 2025 in Jalaali for pashto',
     },
     {
