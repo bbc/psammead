@@ -1,23 +1,28 @@
 {
-  "name": "@bbc/psammead-story-promo",
-  "version": "2.8.0-alpha.1",
+  "name": "@bbc/psammead-script-link",
+  "version": "1.0.0-alpha.2",
   "main": "dist/index.js",
   "module": "esm/index.js",
   "sideEffects": false,
-  "description": "A story promo for use on index pages",
+  "description": "React styled component for a script switch",
   "repository": {
     "type": "git",
-    "url": "https://github.com/bbc/psammead/tree/latest/packages/components/psammead-story-promo"
+    "url": "https://github.com/BBC-News/psammead/tree/latest/packages/components/psammead-script-link"
   },
   "author": {
     "name": "Psammead Maintainers",
     "email": "PsammeadMaintainers@bbc.co.uk"
   },
   "license": "Apache-2.0",
+  "keywords": [
+    "bbc",
+    "script-link",
+    "brand"
+  ],
   "bugs": {
     "url": "https://github.com/bbc/psammead/issues"
   },
-  "homepage": "https://github.com/bbc/psammead/blob/latest/packages/components/psammead-story-promo/README.md",
+  "homepage": "https://github.com/BBC-News/psammead/blob/latest/packages/components/psammead-script-link/README.md",
   "dependencies": {
     "@bbc/gel-foundations": "^3.4.0",
     "@bbc/psammead-styles": "^4.0.1"
@@ -27,11 +32,6 @@
     "styled-components": "^4.3.2",
     "prop-types": "^15.7.2"
   },
-  "keywords": [
-    "bbc",
-    "story",
-    "promo"
-  ],
   "publishConfig": {
     "tag": "alpha"
   }

@@ -3,7 +3,10 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
-| 1.9.0 | [PR#2244](https://github.com/bbc/psammead/pull/2244) Open PR in Simorgh when Talos is run |
+| 1.8.18 | [PR#2356](https://github.com/bbc/psammead/pull/2356) Talos - Bump Dependencies - @bbc/psammead-locales |
+| 1.8.17 | [PR#2359](https://github.com/bbc/psammead/pull/2359) Remove Yeoman script test |
+| 1.8.16 | [PR#2349](https://github.com/bbc/psammead/pull/2349) Try to fix Yeoman test bug |
+| 1.8.15 | [PR#2318](https://github.com/bbc/psammead/pull/2318) Bumping 3rd party dependencies |
 | 1.8.14 | [PR#2314](https://github.com/bbc/psammead/pull/2314) Talos - Bump Dependencies - @bbc/psammead-brand, @bbc/psammead-caption, @bbc/psammead-copyright, @bbc/psammead-image-placeholder, @bbc/psammead-inline-link, @bbc/psammead-media-indicator, @bbc/psammead-paragraph, @bbc/psammead-story-promo, @bbc/psammead-timestamp |
 | 1.8.13 | [PR#2298](https://github.com/bbc/psammead/pull/2298) Talos - Bump Dependencies - @bbc/psammead-locales |
 | 1.8.12 | [PR#2289](https://github.com/bbc/psammead/pull/2289) Talos - Bump Dependencies - @bbc/psammead-brand, @bbc/psammead-caption, @bbc/psammead-copyright, @bbc/psammead-image-placeholder, @bbc/psammead-inline-link, @bbc/psammead-media-indicator, @bbc/psammead-paragraph, @bbc/psammead-story-promo, @bbc/psammead-styles, @bbc/psammead-timestamp |

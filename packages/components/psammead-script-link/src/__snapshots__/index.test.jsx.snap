@@ -1,0 +1,72 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ScriptLink should render correctly 1`] = `
+.c0 {
+  font-size: 0.9375rem;
+  line-height: 1.25rem;
+  font-family: ReithSans,Helvetica,Arial,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  position: relative;
+  display: inline-block;
+  color: #FFFFFF;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  padding: 0 1rem;
+  height: 3rem;
+}
+
+.c0::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border: 0.0625rem solid #FFFFFF;
+}
+
+.c0:hover::after {
+  border: 0.25rem solid #FFFFFF;
+}
+
+.c0:focus {
+  background-color: #FFFFFF;
+  color: #222222;
+}
+
+@media (min-width:20rem) and (max-width:37.4375rem) {
+  .c0 {
+    font-size: 1rem;
+    line-height: 1.25rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .c0 {
+    font-size: 1rem;
+    line-height: 1.25rem;
+  }
+}
+
+@media (min-width:25rem) {
+  .c0 {
+    line-height: 3rem;
+  }
+}
+
+@media (max-width:24.9375rem) {
+  .c0 {
+    line-height: 2.5rem;
+    height: 2.5rem;
+    padding: 0 0.75rem;
+  }
+}
+
+<a
+  class="c0"
+  href="https://www.bbc.co.uk/news"
+>
+  Lat
+</a>
+`;

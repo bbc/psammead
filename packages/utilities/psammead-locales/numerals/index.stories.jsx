@@ -4,7 +4,9 @@ import styled from 'styled-components';
 import { GEL_SPACING } from '@bbc/gel-foundations/spacings';
 import * as numerals from '../src/numerals';
 
-const numeralSystems = Object.keys(numerals);
+const numeralSystems = Object.keys(numerals).filter(key =>
+  Array.isArray(numerals[key]),
+);
 const stories = storiesOf('Utilities|Psammead Locales', module);
 
 const Container = styled.div`
