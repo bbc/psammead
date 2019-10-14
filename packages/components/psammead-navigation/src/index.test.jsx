@@ -22,7 +22,7 @@ describe('Navigation', () => {
               active={active}
               currentPageText="Current page"
               service="news"
-              data-naviation="test_navigation"
+              data-navigation="test_navigation"
             >
               {title}
             </NavigationLi>
