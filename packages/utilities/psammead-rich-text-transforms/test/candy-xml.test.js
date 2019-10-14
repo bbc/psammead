@@ -34,12 +34,9 @@ test('can parse XML with a paragraph', () => {
 
 test('can parse XML with a link', () => {
   const richText = candyXmlToRichText(
-    createBody(`
-      <link>
-        <caption>foo</caption>
-        <url href="https://example.com/foo"/>
-      </link>
-    `),
+    createBody(
+      '<link><caption>foo</caption><url href="https://example.com/foo"/></link>',
+    ),
   );
 
   expect(richText).toEqual({
@@ -69,9 +66,9 @@ test('can parse XML with a link', () => {
 
 test('returns a plain text representation of the data', () => {
   const richText = candyXmlToRichText(
-    createBody(`
-      <paragraph>Read more: <link><caption>foo</caption><url href="https://example.com/foo"/></link> bar <bold>baz</bold></paragraph>
-    `),
+    createBody(
+      '<paragraph>Read more: <link><caption>foo</caption><url href="https://example.com/foo"/></link> bar <bold>baz</bold></paragraph>',
+    ),
   );
 
   expect(richText).toEqual({
@@ -130,11 +127,9 @@ test('returns a plain text representation of the data', () => {
 
 test('can parse XML with multiple paragraphs', () => {
   const richText = candyXmlToRichText(
-    createBody(`
-      <paragraph>foo</paragraph>
-      <paragraph>bar</paragraph>
-      <paragraph>baz</paragraph>
-    `),
+    createBody(
+      '<paragraph>foo</paragraph><paragraph>bar</paragraph><paragraph>baz</paragraph>',
+    ),
   );
 
   expect(richText).toStrictEqual({
@@ -380,9 +375,9 @@ test('returns null when given invalid xml', () => {
 
 test('returns plain text if wrapped in an unsupport xml node', () => {
   const richText = candyXmlToRichText(
-    createBody(`
-      <paragraph><foobar>Struck through text</foobar> followed by normal text</paragraph>
-    `),
+    createBody(
+      '<paragraph><foobar>Struck through text</foobar> followed by normal text</paragraph>',
+    ),
   );
 
   expect(richText).toStrictEqual({
@@ -416,11 +411,49 @@ test('returns plain text if wrapped in an unsupport xml node', () => {
   });
 });
 
+test('can handle an empty XML tag', () => {
+  const richText = candyXmlToRichText(
+    createBody(
+      '<paragraph>Some text content with <foo></foo>an empty XML tag.</paragraph>',
+    ),
+  );
+
+  expect(richText).toStrictEqual({
+    type: 'text',
+    model: {
+      blocks: [
+        {
+          type: 'paragraph',
+          model: {
+            text: 'Some text content with an empty XML tag.',
+            blocks: [
+              {
+                type: 'fragment',
+                model: {
+                  text: 'Some text content with ',
+                  attributes: [],
+                },
+              },
+              {
+                type: 'fragment',
+                model: {
+                  text: 'an empty XML tag.',
+                  attributes: [],
+                },
+              },
+            ],
+          },
+        },
+      ],
+    },
+  });
+});
+
 test('can handle chaos', () => {
   const richText = candyXmlToRichText(
-    createBody(`
-      <paragraph><foo><bar><bold><meh>Bold text in unsupported nodes</meh></bold></bar></foo> followed by normal text then <italic><this><is>some <bold>carnage<carnage> </carnage></bold></is></this></italic>.</paragraph>
-    `),
+    createBody(
+      '<paragraph><foo><bar><bold><meh>Bold text in unsupported nodes</meh></bold></bar></foo> followed by normal text then <italic><this><is>some <bold>carnage<carnage></carnage></bold></is></this></italic>.</paragraph>',
+    ),
   );
 
   expect(richText).toStrictEqual({
