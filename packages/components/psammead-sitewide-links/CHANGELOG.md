@@ -2,7 +2,7 @@
 
 <!-- prettier-ignore -->
 | Version | Description |
-| ------- | ----------- |
+|---------|-------------|
 | 4.0.0 | [PR#2340](https://github.com/bbc/psammead/pull/2340) Add trustProjectLink to psammead-sitewide-links |
 | 3.1.14 | [PR#2351](https://github.com/bbc/psammead/pull/2351) Fix styling for IE11 |
 | 3.1.13 | [PR#2289](https://github.com/bbc/psammead/pull/2289) Talos - Bump Dependencies - @bbc/psammead-styles |
