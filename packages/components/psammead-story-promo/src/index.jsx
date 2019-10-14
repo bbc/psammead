@@ -164,6 +164,8 @@ const TextGridColumnsTopStory = css`
 const TextGridColumns = css`
   grid-column: 3 / span 4;
 
+  ${({ displayImage }) => displayImage && `grid-column: 1 / span 6;`}
+
   @media (min-width: ${GEL_GROUP_4_SCREEN_WIDTH_MIN}) {
     padding-top: ${GEL_SPACING};
   }
@@ -311,19 +313,39 @@ LiveLabel.defaultProps = {
   dir: 'ltr',
 };
 
-const StoryPromo = ({ image, info, mediaIndicator, topStory, sectionName }) => (
+const StoryPromo = ({
+  image,
+  info,
+  mediaIndicator,
+  topStory,
+  sectionName,
+  displayImage,
+}) => (
   <StoryPromoWrapper topStory={topStory} data-story-promo={sectionName}>
-    <ImageGridItem topStory={topStory}>
-      <ImageContentsWrapper>
-        {image}
+    {displayImage ? (
+      <>
+        <ImageGridItem topStory={topStory}>
+          <ImageContentsWrapper>
+            {image}
+            {mediaIndicator && (
+              <InlineMediaIndicator topStory={topStory}>
+                {mediaIndicator}
+              </InlineMediaIndicator>
+            )}
+          </ImageContentsWrapper>
+        </ImageGridItem>
+        <TextGridItem topStory={topStory}>{info}</TextGridItem>
+      </>
+    ) : (
+      <TextGridItem topStory={topStory}>
         {mediaIndicator && (
           <InlineMediaIndicator topStory={topStory}>
             {mediaIndicator}
           </InlineMediaIndicator>
         )}
-      </ImageContentsWrapper>
-    </ImageGridItem>
-    <TextGridItem topStory={topStory}>{info}</TextGridItem>
+        {info}
+      </TextGridItem>
+    )}
   </StoryPromoWrapper>
 );
 
@@ -333,12 +355,14 @@ StoryPromo.propTypes = {
   mediaIndicator: node,
   topStory: bool,
   sectionName: string,
+  displayImage: bool,
 };
 
 StoryPromo.defaultProps = {
   mediaIndicator: null,
   topStory: false,
   sectionName: null,
+  displayImage: true,
 };
 
 export default StoryPromo;
