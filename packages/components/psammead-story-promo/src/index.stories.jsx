@@ -90,7 +90,7 @@ const InfoComponent = ({
   </>
 );
 
-const generateStory = ({ topStory, alsoItems = null }) =>
+const generateStory = ({ topStory, alsoItems = null, displayImage }) =>
   inputProvider({
     slots: [{ name: 'Headline' }, { name: 'Summary' }],
     // eslint-disable-next-line react/prop-types
@@ -126,6 +126,7 @@ const generateStory = ({ topStory, alsoItems = null }) =>
         <StoryPromo
           image={Img}
           info={Info}
+          displayImage={displayImage}
           mediaIndicator={
             mediaType !== 'No media' &&
             MediaIndicatorComponent(mediaType, service)
@@ -161,4 +162,8 @@ storiesOf('Components|StoryPromo/StoryPromo', module)
       notes,
       knobs: { escapeHTML: false },
     },
-  );
+  )
+  .add('No image', generateStory({ topStory: false, displayImage: false }), {
+    notes,
+    knobs: { escapeHTML: false },
+  });
