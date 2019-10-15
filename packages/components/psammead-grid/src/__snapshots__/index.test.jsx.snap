@@ -27,6 +27,30 @@ exports[`Grid component should render Grid with Grid items 1`] = `
   }
 }
 
+@media (max-width:14.9375rem) {
+  .c1 {
+    display: inline-block;
+    width: 100%;
+    vertical-align: top;
+  }
+}
+
+@media (min-width:15rem) and (max-width:24.9375rem) {
+  .c1 {
+    display: inline-block;
+    width: 100%;
+    vertical-align: top;
+  }
+}
+
+@media (min-width:25rem) and (max-width:37.4375rem) {
+  .c1 {
+    display: inline-block;
+    width: 100%;
+    vertical-align: top;
+  }
+}
+
 @media (min-width:37.5rem) and (max-width:62.9375rem) {
   .c1 {
     display: inline-block;
@@ -64,6 +88,30 @@ exports[`Grid component should render Grid with Grid items 1`] = `
   }
 }
 
+@media (max-width:14.9375rem) {
+  .c4 {
+    display: inline-block;
+    width: 100%;
+    vertical-align: top;
+  }
+}
+
+@media (min-width:15rem) and (max-width:24.9375rem) {
+  .c4 {
+    display: inline-block;
+    width: 100%;
+    vertical-align: top;
+  }
+}
+
+@media (min-width:25rem) and (max-width:37.4375rem) {
+  .c4 {
+    display: inline-block;
+    width: 100%;
+    vertical-align: top;
+  }
+}
+
 @media (min-width:37.5rem) and (max-width:62.9375rem) {
   .c4 {
     display: inline-block;
@@ -91,13 +139,29 @@ exports[`Grid component should render Grid with Grid items 1`] = `
 @supports (display:grid) {
   .c4 {
     display: block;
+  }
+}
+
+@media (max-width:14.9375rem) {
+  .c5 {
+    display: inline-block;
+    width: 100%;
+    vertical-align: top;
+  }
+}
+
+@media (min-width:15rem) and (max-width:24.9375rem) {
+  .c5 {
+    display: inline-block;
+    width: 100%;
+    vertical-align: top;
   }
 }
 
 @media (min-width:25rem) and (max-width:37.4375rem) {
   .c5 {
     display: inline-block;
-    width: NaN%;
+    width: 100%;
     vertical-align: top;
   }
 }
@@ -129,13 +193,29 @@ exports[`Grid component should render Grid with Grid items 1`] = `
 @supports (display:grid) {
   .c5 {
     display: block;
+  }
+}
+
+@media (max-width:14.9375rem) {
+  .c6 {
+    display: inline-block;
+    width: 100%;
+    vertical-align: top;
+  }
+}
+
+@media (min-width:15rem) and (max-width:24.9375rem) {
+  .c6 {
+    display: inline-block;
+    width: 100%;
+    vertical-align: top;
   }
 }
 
 @media (min-width:25rem) and (max-width:37.4375rem) {
   .c6 {
     display: inline-block;
-    width: NaN%;
+    width: 100%;
     vertical-align: top;
   }
 }
@@ -356,6 +436,30 @@ exports[`Grid component should render Grid with Grid items including nested non-
   }
 }
 
+@media (max-width:14.9375rem) {
+  .c1 {
+    display: inline-block;
+    width: 100%;
+    vertical-align: top;
+  }
+}
+
+@media (min-width:15rem) and (max-width:24.9375rem) {
+  .c1 {
+    display: inline-block;
+    width: 100%;
+    vertical-align: top;
+  }
+}
+
+@media (min-width:25rem) and (max-width:37.4375rem) {
+  .c1 {
+    display: inline-block;
+    width: 100%;
+    vertical-align: top;
+  }
+}
+
 @media (min-width:37.5rem) and (max-width:62.9375rem) {
   .c1 {
     display: inline-block;
@@ -393,6 +497,30 @@ exports[`Grid component should render Grid with Grid items including nested non-
   }
 }
 
+@media (max-width:14.9375rem) {
+  .c5 {
+    display: inline-block;
+    width: 100%;
+    vertical-align: top;
+  }
+}
+
+@media (min-width:15rem) and (max-width:24.9375rem) {
+  .c5 {
+    display: inline-block;
+    width: 100%;
+    vertical-align: top;
+  }
+}
+
+@media (min-width:25rem) and (max-width:37.4375rem) {
+  .c5 {
+    display: inline-block;
+    width: 100%;
+    vertical-align: top;
+  }
+}
+
 @media (min-width:37.5rem) and (max-width:62.9375rem) {
   .c5 {
     display: inline-block;
@@ -420,13 +548,29 @@ exports[`Grid component should render Grid with Grid items including nested non-
 @supports (display:grid) {
   .c5 {
     display: block;
+  }
+}
+
+@media (max-width:14.9375rem) {
+  .c6 {
+    display: inline-block;
+    width: 100%;
+    vertical-align: top;
+  }
+}
+
+@media (min-width:15rem) and (max-width:24.9375rem) {
+  .c6 {
+    display: inline-block;
+    width: 100%;
+    vertical-align: top;
   }
 }
 
 @media (min-width:25rem) and (max-width:37.4375rem) {
   .c6 {
     display: inline-block;
-    width: NaN%;
+    width: 100%;
     vertical-align: top;
   }
 }
@@ -458,13 +602,29 @@ exports[`Grid component should render Grid with Grid items including nested non-
 @supports (display:grid) {
   .c6 {
     display: block;
+  }
+}
+
+@media (max-width:14.9375rem) {
+  .c7 {
+    display: inline-block;
+    width: 100%;
+    vertical-align: top;
+  }
+}
+
+@media (min-width:15rem) and (max-width:24.9375rem) {
+  .c7 {
+    display: inline-block;
+    width: 100%;
+    vertical-align: top;
   }
 }
 
 @media (min-width:25rem) and (max-width:37.4375rem) {
   .c7 {
     display: inline-block;
-    width: NaN%;
+    width: 100%;
     vertical-align: top;
   }
 }
