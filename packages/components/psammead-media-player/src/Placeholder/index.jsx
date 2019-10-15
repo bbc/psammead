@@ -55,7 +55,16 @@ Placeholder.propTypes = {
     duration: string,
     durationSpoken: string,
     type: oneOf(['video', 'audio']),
-  }).isRequired,
+  }),
+};
+Placeholder.defaultProps = {
+  mediaInfo: shape({
+    title: string.isRequired,
+    datetime: string,
+    duration: string,
+    durationSpoken: string,
+    type: oneOf(['video', 'audio']),
+  }),
 };
 
 export default Placeholder;

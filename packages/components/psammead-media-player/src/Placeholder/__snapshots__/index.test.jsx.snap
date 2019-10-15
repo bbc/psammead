@@ -28,7 +28,7 @@ exports[`Media Player: Placeholder should render a video placeholder 1`] = `
   margin: 0;
 }
 
-.c3 {
+.c2 {
   background-color: #222222;
   border: none;
   color: #FFFFFF;
@@ -46,8 +46,8 @@ exports[`Media Player: Placeholder should render a video placeholder 1`] = `
   width: 5rem;
 }
 
-.c3:hover,
-.c3:focus {
+.c2:hover,
+.c2:focus {
   background-color: #B80000;
   -webkit-transition: background-color 300ms;
   transition: background-color 300ms;
@@ -75,13 +75,13 @@ exports[`Media Player: Placeholder should render a video placeholder 1`] = `
   height: 100%;
 }
 
-.c2 {
+.c3 {
   position: absolute;
   bottom: 0;
 }
 
-.c0:hover .c2,
-.c0:focus .c2 {
+.c0:hover .c3,
+.c0:focus .c3 {
   background-color: #B80000;
 }
 
@@ -156,7 +156,7 @@ exports[`Media Player: Placeholder should render a video placeholder without dur
   margin: 0;
 }
 
-.c3 {
+.c2 {
   background-color: #222222;
   border: none;
   color: #FFFFFF;
@@ -174,8 +174,8 @@ exports[`Media Player: Placeholder should render a video placeholder without dur
   width: 5rem;
 }
 
-.c3:hover,
-.c3:focus {
+.c2:hover,
+.c2:focus {
   background-color: #B80000;
   -webkit-transition: background-color 300ms;
   transition: background-color 300ms;
@@ -203,13 +203,13 @@ exports[`Media Player: Placeholder should render a video placeholder without dur
   height: 100%;
 }
 
-.c2 {
+.c3 {
   position: absolute;
   bottom: 0;
 }
 
-.c0:hover .c2,
-.c0:focus .c2 {
+.c0:hover .c3,
+.c0:focus .c3 {
   background-color: #B80000;
 }
 
@@ -284,7 +284,7 @@ exports[`Media Player: Placeholder should render an audio placeholder 1`] = `
   margin: 0;
 }
 
-.c3 {
+.c2 {
   background-color: #222222;
   border: none;
   color: #FFFFFF;
@@ -302,8 +302,8 @@ exports[`Media Player: Placeholder should render an audio placeholder 1`] = `
   width: 5rem;
 }
 
-.c3:hover,
-.c3:focus {
+.c2:hover,
+.c2:focus {
   background-color: #B80000;
   -webkit-transition: background-color 300ms;
   transition: background-color 300ms;
@@ -331,13 +331,13 @@ exports[`Media Player: Placeholder should render an audio placeholder 1`] = `
   height: 100%;
 }
 
-.c2 {
+.c3 {
   position: absolute;
   bottom: 0;
 }
 
-.c0:hover .c2,
-.c0:focus .c2 {
+.c0:hover .c3,
+.c0:focus .c3 {
   background-color: #B80000;
 }
 
@@ -415,7 +415,7 @@ exports[`Media Player: Placeholder should render an audio placeholder without du
   margin: 0;
 }
 
-.c3 {
+.c2 {
   background-color: #222222;
   border: none;
   color: #FFFFFF;
@@ -433,8 +433,8 @@ exports[`Media Player: Placeholder should render an audio placeholder without du
   width: 5rem;
 }
 
-.c3:hover,
-.c3:focus {
+.c2:hover,
+.c2:focus {
   background-color: #B80000;
   -webkit-transition: background-color 300ms;
   transition: background-color 300ms;
@@ -462,13 +462,13 @@ exports[`Media Player: Placeholder should render an audio placeholder without du
   height: 100%;
 }
 
-.c2 {
+.c3 {
   position: absolute;
   bottom: 0;
 }
 
-.c0:hover .c2,
-.c0:focus .c2 {
+.c0:hover .c3,
+.c0:focus .c3 {
   background-color: #B80000;
 }
 

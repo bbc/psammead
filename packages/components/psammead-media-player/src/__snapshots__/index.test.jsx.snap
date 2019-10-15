@@ -145,7 +145,7 @@ exports[`Media Player: Canonical Entry renders a landscape container with a plac
   margin: 0;
 }
 
-.c4 {
+.c3 {
   background-color: #222222;
   border: none;
   color: #FFFFFF;
@@ -163,8 +163,8 @@ exports[`Media Player: Canonical Entry renders a landscape container with a plac
   width: 5rem;
 }
 
-.c4:hover,
-.c4:focus {
+.c3:hover,
+.c3:focus {
   background-color: #B80000;
   -webkit-transition: background-color 300ms;
   transition: background-color 300ms;
@@ -192,13 +192,13 @@ exports[`Media Player: Canonical Entry renders a landscape container with a plac
   height: 100%;
 }
 
-.c3 {
+.c4 {
   position: absolute;
   bottom: 0;
 }
 
-.c1:hover .c3,
-.c1:focus .c3 {
+.c1:hover .c4,
+.c1:focus .c4 {
   background-color: #B80000;
 }
 
@@ -283,7 +283,7 @@ exports[`Media Player: Canonical Entry renders a portrait container with a place
   margin: 0;
 }
 
-.c4 {
+.c3 {
   background-color: #222222;
   border: none;
   color: #FFFFFF;
@@ -301,8 +301,8 @@ exports[`Media Player: Canonical Entry renders a portrait container with a place
   width: 5rem;
 }
 
-.c4:hover,
-.c4:focus {
+.c3:hover,
+.c3:focus {
   background-color: #B80000;
   -webkit-transition: background-color 300ms;
   transition: background-color 300ms;
@@ -330,13 +330,13 @@ exports[`Media Player: Canonical Entry renders a portrait container with a place
   height: 100%;
 }
 
-.c3 {
+.c4 {
   position: absolute;
   bottom: 0;
 }
 
-.c1:hover .c3,
-.c1:focus .c3 {
+.c1:hover .c4,
+.c1:focus .c4 {
   background-color: #B80000;
 }
 
