@@ -147,6 +147,7 @@ const InlineMediaIndicator = styled.div`
         bottom: 0;
       }
       `}
+  ${({ displayImage }) => displayImage && `position: relative;`}
 `;
 
 const TextGridColumnsTopStory = css`
@@ -164,7 +165,7 @@ const TextGridColumnsTopStory = css`
 const TextGridColumns = css`
   grid-column: 3 / span 4;
 
-  ${({ displayImage }) => displayImage && `grid-column: 1 / span 6;`}
+  ${({ displayImage }) => !displayImage && `grid-column: 1 / span 6;`}
 
   @media (min-width: ${GEL_GROUP_4_SCREEN_WIDTH_MIN}) {
     padding-top: ${GEL_SPACING};
