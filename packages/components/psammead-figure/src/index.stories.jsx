@@ -1,7 +1,6 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { withKnobs, text } from '@storybook/addon-knobs';
-import { inputProvider } from '@bbc/psammead-storybook-helpers';
 import Caption from '@bbc/psammead-caption';
 import Copyright from '@bbc/psammead-copyright';
 import Image from '@bbc/psammead-image';
@@ -10,6 +9,7 @@ import Paragraph from '@bbc/psammead-paragraph';
 import VisuallyHiddenText from '@bbc/psammead-visually-hidden-text';
 import notes from '../README.md';
 import Figure from '.';
+import withServicesKnob from '../../../utilities/psammead-storybook-helpers/src/withServicesKnob';
 
 const imageAlt =
   'Map of the UK displaying Syrian refugees and asylum seekers per 10000 population. Ranges from 0 to 17.';
@@ -20,6 +20,7 @@ const imageRatio = 125;
 
 storiesOf('Components|Figure', module)
   .addDecorator(withKnobs)
+  .addDecorator(withServicesKnob())
   .add(
     'containing Image',
     () => (
@@ -31,44 +32,40 @@ storiesOf('Components|Figure', module)
   )
   .add(
     'containing Image, ImagePlaceholder, Copyright and Caption',
-    inputProvider({
-      slots: [{ name: 'Caption' }],
-      // eslint-disable-next-line react/prop-types
-      componentFunction: ({ slotTexts: [caption], script, service }) => (
-        <Figure>
-          <ImagePlaceholder ratio={imageRatio}>
-            <Image alt={imageAlt} src={imageSrc} width={imageWidth} />
-            <Copyright>
-              <VisuallyHiddenText>
-                {text(
-                  'visually hidden copyright',
-                  'Image copyright, ',
-                  'Visually Hidden Copyright',
-                )}
-              </VisuallyHiddenText>
-              {text('copyright', 'Copyright', 'Copyright')}
-            </Copyright>
-          </ImagePlaceholder>
-          <Caption service={service} script={script}>
+    ({ text: textSnippet, script, service }) => (
+      <Figure>
+        <ImagePlaceholder ratio={imageRatio}>
+          <Image alt={imageAlt} src={imageSrc} width={imageWidth} />
+          <Copyright>
             <VisuallyHiddenText>
               {text(
-                'visually hidden caption',
-                'Image caption, ',
-                'Visually Hidden Caption',
+                'visually hidden copyright',
+                'Image copyright, ',
+                'Visually Hidden Copyright',
               )}
             </VisuallyHiddenText>
-            <Paragraph script={script} service={service}>
-              {caption}
-            </Paragraph>
-            <Paragraph script={script} service={service}>
-              {caption}
-            </Paragraph>
-            <Paragraph script={script} service={service}>
-              {caption}
-            </Paragraph>
-          </Caption>
-        </Figure>
-      ),
-    }),
+            {text('copyright', 'Copyright', 'Copyright')}
+          </Copyright>
+        </ImagePlaceholder>
+        <Caption service={service} script={script}>
+          <VisuallyHiddenText>
+            {text(
+              'visually hidden caption',
+              'Image caption, ',
+              'Visually Hidden Caption',
+            )}
+          </VisuallyHiddenText>
+          <Paragraph script={script} service={service}>
+            {service === 'news' ? 'Caption' : textSnippet}
+          </Paragraph>
+          <Paragraph script={script} service={service}>
+            {service === 'news' ? 'Caption' : textSnippet}
+          </Paragraph>
+          <Paragraph script={script} service={service}>
+            {service === 'news' ? 'Caption' : textSnippet}
+          </Paragraph>
+        </Caption>
+      </Figure>
+    ),
     { notes, knobs: { escapeHTML: false } },
   );

@@ -18,7 +18,6 @@ storiesOf('Components|Paragraph', module)
         {text}
       </Paragraph>
     ),
-
     { notes, knobs: { escapeHTML: false } },
   )
   .add(

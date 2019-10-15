@@ -3,9 +3,9 @@ import { storiesOf } from '@storybook/react'; // eslint-disable-line import/no-e
 import { text, select, boolean, withKnobs } from '@storybook/addon-knobs';
 import * as typography from '@bbc/gel-foundations/typography';
 import { latin } from '@bbc/gel-foundations/scripts';
-import { dirDecorator } from '@bbc/psammead-storybook-helpers';
 import notes from '../README.md';
 import Timestamp from '.';
+import withServicesKnob from '../../../utilities/psammead-storybook-helpers/src/withServicesKnob';
 
 const styles = Object.keys(typography)
   .map(key => {
@@ -21,7 +21,7 @@ const styles = Object.keys(typography)
 
 storiesOf('Components|Timestamp', module)
   .addDecorator(withKnobs)
-  .addDecorator(dirDecorator)
+  .addDecorator(withServicesKnob())
   .add(
     'default',
     ({ service }) => {
