@@ -99,10 +99,7 @@ describe('Talos', () => {
     expect(getBranchName).toHaveBeenCalled();
 
     expect(bumpSimorghPackages).toHaveBeenCalledWith(
-      {
-        apple: ['package1  ^1.2  →  ^1.4'],
-        pears: ['package1  ^1.2  →  ^1.4', 'package2  ^1.0  →  ^1.1'],
-      },
+      ['package1', 'package2'],
       'branchname',
     );
 
@@ -120,10 +117,18 @@ describe('Talos', () => {
     );
   });
 
+  it('should run bumpSimorgh even if no packages were published', async () => {
+    upgradeDependencies.mockImplementation(() => Promise.resolve([]));
+    await talos();
+
+    expect(bumpSimorghPackages).toHaveBeenCalled();
+    expect(global.console.log).toHaveBeenCalledWith('No packages to bump!');
+  });
+
   it('should exit if promise chain rejects a promise', async () => {
     // Reject a random promise in the chain
     const error = new Error('something bad happened');
-    checkoutBranch.mockImplementation(() => Promise.reject(error));
+    createPullRequest.mockImplementation(() => Promise.reject(error));
 
     await talos();
 
