@@ -1057,16 +1057,14 @@ storiesOf('Components|Grid', module)
     ({ service, script, dir }) => {
       // eslint-disable-next-line react/prop-types
       const generateStory = ({ topStory, alsoItems = null, mediaType }) => {
-        const MediaIndicatorComponent = type => {
-          return (
-            <MediaIndicator
-              duration={type !== 'photogallery' && '2:15'}
-              datetime="PT2M15S"
-              service={service}
-              type={type}
-            />
-          );
-        };
+        const MediaIndicatorComponent = type => (
+          <MediaIndicator
+            duration={type !== 'photogallery' && '2:15'}
+            datetime="PT2M15S"
+            service={service}
+            type={type}
+          />
+        );
 
         const Info = (
           <>
