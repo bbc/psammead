@@ -3,7 +3,8 @@ const semver = require('semver');
 const shouldUpdate = (oldVersion, newVersion) => {
   return (
     semver.validRange(oldVersion) &&
-    semver.validRange(oldVersion) &&
+    semver.validRange(newVersion) &&
+    semver.gt(semver.minVersion(newVersion), semver.minVersion(oldVersion)) &&
     semver.intersects(oldVersion, newVersion)
   );
 };
