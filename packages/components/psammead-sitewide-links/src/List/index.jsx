@@ -135,7 +135,7 @@ const List = ({ links, trustProjectLink }) => (
     )}
 
     {!trustProjectLink && (
-      <StyledListNoTrustLink role="list" links={links}>
+      <StyledListNoTrustLink role="list">
         {links.map(link => (
           <StyledListItem key={link.text} role="listitem">
             <Link text={link.text} href={link.href} />
