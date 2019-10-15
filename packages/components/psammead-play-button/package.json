@@ -1,6 +1,6 @@
 {
   "name": "@bbc/psammead-play-button",
-  "version": "1.0.0-alpha.2",
+  "version": "1.0.0-alpha.3",
   "description": "Provides a play button, with optional duration, for playable media.",
   "main": "dist/index.js",
   "module": "esm/index.js",
@@ -20,7 +20,7 @@
   "dependencies": {
     "@bbc/gel-foundations": "^3.4.0",
     "@bbc/psammead-styles": "^4.0.1",
-    "@bbc/psammead-assets": "^2.4.1"
+    "@bbc/psammead-assets": "^2.5.0"
   },
   "peerDependencies": {
     "react": "^16.9.0",
