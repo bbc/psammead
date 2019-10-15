@@ -8,6 +8,7 @@ const publishedPackages = {
   '@bbc/gel-foundations': '^3.5.2',
   '@bbc/psammead-assets': '^2.5.1',
   '@bbc/psammead-storybook-helpers': '^6.2.1',
+  '@bbc/psammead-figure': '^2.1.0',
 };
 
 const expectedPackageJson = {
@@ -33,7 +34,7 @@ describe('updatePackageJson', () => {
     commitRemoteChanges.mockImplementation(async () => {});
   });
 
-  it('should try to update packageJson', async () => {
+  it('should try to update packageJson ignoring breaking changes', async () => {
     await updatePackageJson(packageJson, publishedPackages, 'test-branch');
 
     expect(commitRemoteChanges).toHaveBeenCalledTimes(1);
