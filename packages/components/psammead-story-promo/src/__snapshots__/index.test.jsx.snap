@@ -1342,6 +1342,7 @@ exports[`StoryPromo should render Live promo correctly 1`] = `
     width: initial;
     padding: initial;
     grid-column: 3 / span 4;
+    grid-column: 1 / span 6;
   }
 }
 
@@ -1568,6 +1569,7 @@ exports[`StoryPromo should render correctly 1`] = `
     width: initial;
     padding: initial;
     grid-column: 3 / span 4;
+    grid-column: 1 / span 6;
   }
 }
 
@@ -1831,6 +1833,7 @@ exports[`StoryPromo with Media Indicator should render correctly 1`] = `
     width: initial;
     padding: initial;
     grid-column: 3 / span 4;
+    grid-column: 1 / span 6;
   }
 }
 
