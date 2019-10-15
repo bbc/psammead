@@ -1,8 +1,8 @@
 const getRemoteFile = require('../../utilities/getRemoteFile');
 const createRemoteBranch = require('../../utilities/createRemoteBranch');
 const createPullRequest = require('../../utilities/createPullRequest');
+const getPackageVersion = require('../../utilities/getPackageVersion');
 const getPackageNames = require('../createPullRequest/getPackageNames');
-const getPublishedPackages = require('./getPublishedPackages');
 const getChangelogHead = require('../getChangelogHead');
 const getUpdates = require('./getUpdates');
 const updatePackageLock = require('./updatePackageLock');
@@ -11,9 +11,9 @@ const {
   EXPECTED_CHANGELOG_HEAD1,
 } = require('../getChangelogHead/mockChangelogs');
 const {
-  BUMPED_PACKAGES,
+  CHANGED_PACKAGES,
   PUBLISHED_PACKAGES,
-} = require('./getPublishedPackages/mockPublishedPackages');
+} = require('./mockPublishedPackages');
 const bumpSimorghPackages = require('.');
 const PACKAGE_JSON = require('./mockPackageJson');
 
@@ -48,9 +48,9 @@ const mockPrBody = `@bbc/gel-foundations  ^3.4.0  →  ^3.5.2
 jest.mock('../../utilities/getRemoteFile');
 jest.mock('../../utilities/createRemoteBranch');
 jest.mock('../../utilities/createPullRequest');
+jest.mock('../../utilities/getPackageVersion');
 jest.mock('../createPullRequest/getPackageNames');
 jest.mock('../getChangelogHead');
-jest.mock('./getPublishedPackages');
 jest.mock('./getUpdates');
 jest.mock('./updatePackageLock');
 jest.mock('./updatePackageJson');
@@ -65,7 +65,12 @@ describe('bumpSimorghPackages', () => {
     createPullRequest.mockImplementation(async () => {});
     getPackageNames.mockImplementation(() => 'packages');
     getChangelogHead.mockImplementation(() => EXPECTED_CHANGELOG_HEAD1);
-    getPublishedPackages.mockImplementation(() => PUBLISHED_PACKAGES);
+    getPackageVersion.mockImplementation(packageName => {
+      if (packageName === '@bbc/psammead-image') return '1.3.0';
+      if (packageName === '@bbc/psammead-image-placeholder') return '1.2.1';
+      if (packageName === '@bbc/psammead-brand') return '4.2.0';
+      return '2.1.0';
+    });
     getUpdates.mockImplementation(() => [
       '@bbc/gel-foundations  ^3.4.0  →  ^3.5.2',
       '@bbc/psammead-assets  ^2.4.0  →  ^2.5.1',
@@ -77,9 +82,8 @@ describe('bumpSimorghPackages', () => {
   });
 
   it('should run commands to create pr', async () => {
-    await bumpSimorghPackages(BUMPED_PACKAGES, generatedBranchName);
+    await bumpSimorghPackages(CHANGED_PACKAGES, generatedBranchName);
 
-    expect(getPublishedPackages).toBeCalledWith(BUMPED_PACKAGES);
     expect(getPackageNames).toBeCalledWith(Object.keys(PUBLISHED_PACKAGES));
 
     expect(getRemoteFile).toBeCalledWith({
