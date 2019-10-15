@@ -74,6 +74,8 @@ storiesOf('Components|Paragraph', module)
     ),
 ```
 
+`buildRTLSubstories` - a function that gets all stories and creates right-to-left variants as substories. Internally it uses the `withServicesKnob` to set the default service as `arabic`. The appropriate place to use this function is in `storybook/config.js`.
+
 ## Installation
 
 ```sh
@@ -145,6 +147,17 @@ storiesOf('Example', module)
   ));
 ```
 
+### buildRTLSubstories
+
+```jsx
+// storybook/config.js
+
+import { buildRTLSubstories } from '@bbc/psammead-storybook-helpers';
+
+// must be placed after the storybook configure function
+buildRTLSubstories();
+```
+
 ## Contributing
 
 When **adding** a new export to this utility package the [export tests](https://github.com/bbc/psammead/blob/dab14a2732cfa620e083b7da66a148b4189474a7/packages/utilities/psammead-storybook-helpers/index.test.jsx#L13-L15) also need to be updated. When **removing** an exisiting export from this utility package the [export tests](https://github.com/bbc/psammead/blob/dab14a2732cfa620e083b7da66a148b4189474a7/packages/utilities/psammead-storybook-helpers/index.test.jsx#L13-L15) need to be updated and the package version requires a major change (EG: 1.2.1 -> 2.0.0) as this would be considered a breaking change due to functionality being removed.
@@ -158,3 +171,7 @@ We welcome feedback and help on this work. By participating in this project, you
 ### License
 
 Psammead is [Apache 2.0 licensed](https://github.com/bbc/psammead/blob/latest/LICENSE).
+
+```
+
+```
