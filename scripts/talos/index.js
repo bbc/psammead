@@ -10,7 +10,7 @@ const createPullRequest = require('./createPullRequest');
 const getBranchName = require('./getBranchName');
 const bumpSimorghPackages = require('./bumpSimorghPackages');
 
-const talos = () => {
+const talos = async () => {
   const packages = getChangedPackages();
   const branchName = getBranchName();
 
@@ -26,7 +26,7 @@ const talos = () => {
       if (bumpedPackages.length <= 0) {
         // eslint-disable-next-line no-console
         console.log('No packages to bump!');
-        process.exit();
+        return null;
       }
 
       const bumpedPackagesNoBBCPrefix = bumpedPackages.map(dep =>
@@ -64,9 +64,9 @@ const talos = () => {
             }),
           ),
         )
-        .then(() => commitChanges('Talos - Update changelogs'))
-        .then(() => bumpSimorghPackages(bumpedPackagesObj, branchName));
+        .then(() => commitChanges('Talos - Update changelogs'));
     })
+    .then(() => bumpSimorghPackages(packages, branchName))
     .catch(e => {
       // eslint-disable-next-line no-console
       console.error(e);
