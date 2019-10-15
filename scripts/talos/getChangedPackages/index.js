@@ -1,6 +1,14 @@
 const readFileSync = require('../../utilities/readFileSync');
+const getPackageVersion = require('../../utilities/getPackageVersion');
 
 const filePath = 'published.txt';
+
+const changedPackagesReducer = (accumulator, currentValue) => {
+  return {
+    ...accumulator,
+    [currentValue]: `^${getPackageVersion(currentValue)}`,
+  };
+};
 
 const getChangedPackages = () => {
   const packagesString =
@@ -8,7 +16,10 @@ const getChangedPackages = () => {
       ? process.argv[2]
       : readFileSync(filePath, true);
 
-  return [...new Set(packagesString.split(',').filter(Boolean))];
+  return [...new Set(packagesString.split(',').filter(Boolean))].reduce(
+    changedPackagesReducer,
+    {},
+  );
 };
 
 module.exports = getChangedPackages;

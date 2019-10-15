@@ -1,5 +1,5 @@
 const getChangedPackages = require('./getChangedPackages');
-const upgradeDependencies = require('../upgradeDependencies');
+const upgradeDependencies = require('./upgradeDependencies');
 const bumpPackages = require('../bumpPackages/index.js');
 const getPackagePath = require('../utilities/getPackagePath');
 const runNpmInstall = require('../regeneratePackageLocks/runNpmInstall');
@@ -12,9 +12,10 @@ const bumpSimorghPackages = require('./bumpSimorghPackages');
 
 const talos = async () => {
   const packages = getChangedPackages();
+  const packageList = Object.keys(packages);
   const branchName = getBranchName();
 
-  if (packages.length <= 0) {
+  if (packageList.length <= 0) {
     // eslint-disable-next-line no-console
     console.log(`No packages were published!`);
     process.exit();
