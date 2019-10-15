@@ -34,7 +34,7 @@ This package provides a collection of common values that are used in storybook b
 
 2. Toggles the layout directionality of the chosen service.
 
-The `withServicesKnob` function accepts 2 arguments:
+The `withServicesKnob` function accepts an options argument with 2 properties:
 
 - `defaultService`(String): The default selected service of the services dropdown e.g. `arabic`. The default is `news`.
 - `services`(Array): A list of services that the dropdown will display. The default is all services.
