@@ -4,10 +4,10 @@ import { select } from '@storybook/addon-knobs';
 import * as scripts from '@bbc/gel-foundations/scripts';
 import LANGUAGE_VARIANTS from './text-variants';
 
-export default (
+export default ({
   defaultService = 'news',
   services = Object.keys(LANGUAGE_VARIANTS),
-) => storyFn => {
+} = {}) => storyFn => {
   const includesService = service => services.includes(service);
   const service = select(
     'Select a service',

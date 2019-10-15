@@ -44,7 +44,7 @@ An example of `withServicesKnob` usage:
 ```js
 storiesOf('Components|Paragraph', module)
   .addDecorator(withKnobs)
-  .addDecorator(withServicesKnob()); // default selected service is `news`
+  .addDecorator(withServicesKnob()) // default selected service is `news`
   .add(
     'A paragraph with English text',
     ({ text, script, service }) => (
@@ -59,7 +59,12 @@ To set a default service:
 ```js
 storiesOf('Components|Paragraph', module)
   .addDecorator(withKnobs)
-  .addDecorator(withServicesKnob('arabic', ['news', 'arabic', 'amharic'])); // default selected service is `arabic` and the available services in the dropdown are `news`, `arabic`, `amharic`
+  .addDecorator(
+    withServicesKnob({
+      defaultService: 'arabic',
+      services: ['news', 'arabic', 'amharic']
+    })
+  ) // default selected service is `arabic` and the available services in the dropdown are `news`, `arabic`, `amharic`
   .add(
     'A paragraph with Arabic text',
     ({ text, script, service }) => (
