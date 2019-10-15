@@ -32,7 +32,7 @@ const Placeholder = ({ onClick, service, src, mediaInfo }) => {
         title={title}
         service={service}
         onClick={event => {
-          event.preventDefault();
+          event.stopPropagation();
           onClick();
         }}
         datetime={datetime}
