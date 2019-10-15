@@ -8,8 +8,8 @@ import {
   GEL_SPACING, // 8 px
 } from '@bbc/gel-foundations/spacings';
 import {
-  GEL_GROUP_2_SCREEN_WIDTH_MAX,
   GEL_GROUP_3_SCREEN_WIDTH_MIN,
+  GEL_GROUP_2_SCREEN_WIDTH_MAX,
 } from '@bbc/gel-foundations/breakpoints';
 import { node, string, shape } from 'prop-types';
 import { scriptPropType } from '@bbc/gel-foundations/prop-types';
@@ -37,12 +37,6 @@ export const UsefulLinksUl = styled.ul.attrs({ role: 'list' })`
   margin: 0;
   list-style-type: none;
 
-  @media (max-width: ${GEL_GROUP_2_SCREEN_WIDTH_MAX}) {
-    > li:first-child {
-      padding-top: 0;
-    }
-  }
-
   @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
     column-count: 2;
     column-gap: 1rem;
@@ -62,6 +56,13 @@ export const UsefulLinksUl = styled.ul.attrs({ role: 'list' })`
 
 export const UsefulLinksLi = styled.li.attrs({ role: 'listitem' })`
   padding-top: ${GEL_SPACING};
+
+  @media (max-width: ${GEL_GROUP_2_SCREEN_WIDTH_MAX}) {
+    &:first-child {
+      padding-top: 0;
+    }
+  }
+
   width: 100%;
   @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
     display: inline-block;
