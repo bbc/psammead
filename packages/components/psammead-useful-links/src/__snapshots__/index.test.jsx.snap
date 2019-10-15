@@ -47,6 +47,12 @@ exports[`Multiple useful links should render correctly 1`] = `
   }
 }
 
+@media (max-width:37.4375rem) {
+  .c0 > li:first-child {
+    padding-top: 0;
+  }
+}
+
 @media (min-width:37.5rem) {
   .c0 {
     -webkit-column-count: 2;
