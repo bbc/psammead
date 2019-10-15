@@ -1,14 +1,34 @@
+const semver = require('semver');
 const commitRemoteChanges = require('../../../utilities/commitRemoteChanges');
 
+const shouldUpdate = (oldVersion, newVersion) => {
+  return (
+    semver.validRange(oldVersion) &&
+    semver.validRange(oldVersion) &&
+    semver.intersects(oldVersion, newVersion)
+  );
+};
+
 const mergeUpdates = (packageJson, publishedPackages) => {
-  const newPackageJson = { ...packageJson };
+  let newPackageJson = { ...packageJson };
   Object.keys(publishedPackages).forEach(key => {
-    const hasNewDependency = newPackageJson.dependencies[key];
-    const hasNewDevDependency = newPackageJson.devDependencies[key];
-    if (hasNewDependency)
-      newPackageJson.dependencies[key] = publishedPackages[key];
-    if (hasNewDevDependency)
-      newPackageJson.devDependencies[key] = publishedPackages[key];
+    const newVersion = publishedPackages[key];
+    const oldVersion = newPackageJson.dependencies[key];
+    const oldDevVersion = newPackageJson.devDependencies[key];
+
+    if (shouldUpdate(oldVersion, newVersion))
+      newPackageJson = {
+        ...newPackageJson,
+        dependencies: { ...newPackageJson.dependencies, [key]: newVersion },
+      };
+    if (shouldUpdate(oldDevVersion, newVersion))
+      newPackageJson = {
+        ...newPackageJson,
+        devDependencies: {
+          ...newPackageJson.devDependencies,
+          [key]: newVersion,
+        },
+      };
   });
   return newPackageJson;
 };
