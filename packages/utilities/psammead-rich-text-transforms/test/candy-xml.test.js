@@ -5,7 +5,7 @@ const createBody = inner =>
 
 test('can parse XML with a paragraph', () => {
   const richText = candyXmlToRichText(
-    createBody(`<paragraph>One two three four!</paragraph>`),
+    createBody('<paragraph>One two three four!</paragraph>'),
   );
 
   expect(richText).toStrictEqual({
@@ -34,12 +34,9 @@ test('can parse XML with a paragraph', () => {
 
 test('can parse XML with a link', () => {
   const richText = candyXmlToRichText(
-    createBody(`
-      <link>
-        <caption>foo</caption>
-        <url href="https://example.com/foo"/>
-      </link>
-    `),
+    createBody(
+      '<link><caption>foo</caption><url href="https://example.com/foo"/></link>',
+    ),
   );
 
   expect(richText).toEqual({
@@ -69,9 +66,9 @@ test('can parse XML with a link', () => {
 
 test('returns a plain text representation of the data', () => {
   const richText = candyXmlToRichText(
-    createBody(`
-      <paragraph>Read more: <link><caption>foo</caption><url href="https://example.com/foo"/></link> bar <bold>baz</bold></paragraph>
-    `),
+    createBody(
+      '<paragraph>Read more: <link><caption>foo</caption><url href="https://example.com/foo"/></link> bar <bold>baz</bold></paragraph>',
+    ),
   );
 
   expect(richText).toEqual({
@@ -130,11 +127,9 @@ test('returns a plain text representation of the data', () => {
 
 test('can parse XML with multiple paragraphs', () => {
   const richText = candyXmlToRichText(
-    createBody(`
-      <paragraph>foo</paragraph>
-      <paragraph>bar</paragraph>
-      <paragraph>baz</paragraph>
-    `),
+    createBody(
+      '<paragraph>foo</paragraph><paragraph>bar</paragraph><paragraph>baz</paragraph>',
+    ),
   );
 
   expect(richText).toStrictEqual({
@@ -193,8 +188,7 @@ test('can parse XML with multiple paragraphs', () => {
 
 test('can render bold text within a paragraph', () => {
   const richText = candyXmlToRichText(
-    createBody(`
-      <paragraph>One <bold>two</bold> three!</paragraph>`),
+    createBody('<paragraph>One <bold>two</bold> three!</paragraph>'),
   );
 
   expect(richText).toStrictEqual({
@@ -237,8 +231,7 @@ test('can render bold text within a paragraph', () => {
 
 test('can render italic text within a paragraph', () => {
   const richText = candyXmlToRichText(
-    createBody(`
-      <paragraph><italic>One</italic> two three!</paragraph>`),
+    createBody('<paragraph><italic>One</italic> two three!</paragraph>'),
   );
 
   expect(richText).toStrictEqual({
@@ -274,8 +267,9 @@ test('can render italic text within a paragraph', () => {
 
 test('can render bold italic text within a paragraph', () => {
   const richText = candyXmlToRichText(
-    createBody(`
-      <paragraph><bold><italic>One</italic></bold> two three!</paragraph>`),
+    createBody(
+      '<paragraph><bold><italic>One</italic></bold> two three!</paragraph>',
+    ),
   );
 
   expect(richText).toStrictEqual({
@@ -311,8 +305,9 @@ test('can render bold italic text within a paragraph', () => {
 
 test('can render bold and italic text within a paragraph', () => {
   const richText = candyXmlToRichText(
-    createBody(`
-      <paragraph><bold><italic>One</italic> two</bold> three!</paragraph>`),
+    createBody(
+      '<paragraph><bold><italic>One</italic> two</bold> three!</paragraph>',
+    ),
   );
 
   expect(richText).toStrictEqual({
@@ -376,4 +371,140 @@ test('returns null when given invalid xml', () => {
   const richText = candyXmlToRichText('foobar');
 
   expect(richText).toStrictEqual(null);
+});
+
+test('returns plain text if wrapped in an unsupport xml node', () => {
+  const richText = candyXmlToRichText(
+    createBody(
+      '<paragraph><foobar>Struck through text</foobar> followed by normal text</paragraph>',
+    ),
+  );
+
+  expect(richText).toStrictEqual({
+    type: 'text',
+    model: {
+      blocks: [
+        {
+          type: 'paragraph',
+          model: {
+            text: 'Struck through text followed by normal text',
+            blocks: [
+              {
+                type: 'fragment',
+                model: {
+                  text: 'Struck through text',
+                  attributes: [],
+                },
+              },
+              {
+                type: 'fragment',
+                model: {
+                  text: ' followed by normal text',
+                  attributes: [],
+                },
+              },
+            ],
+          },
+        },
+      ],
+    },
+  });
+});
+
+test('can handle an empty XML tag', () => {
+  const richText = candyXmlToRichText(
+    createBody(
+      '<paragraph>Some text content with <foo></foo>an empty XML tag.</paragraph>',
+    ),
+  );
+
+  expect(richText).toStrictEqual({
+    type: 'text',
+    model: {
+      blocks: [
+        {
+          type: 'paragraph',
+          model: {
+            text: 'Some text content with an empty XML tag.',
+            blocks: [
+              {
+                type: 'fragment',
+                model: {
+                  text: 'Some text content with ',
+                  attributes: [],
+                },
+              },
+              {
+                type: 'fragment',
+                model: {
+                  text: 'an empty XML tag.',
+                  attributes: [],
+                },
+              },
+            ],
+          },
+        },
+      ],
+    },
+  });
+});
+
+test('can handle chaos', () => {
+  const richText = candyXmlToRichText(
+    createBody(
+      '<paragraph><foo><bar><bold><meh>Bold text in unsupported nodes</meh></bold></bar></foo> followed by normal text then <italic><this><is>some <bold>carnage<carnage></carnage></bold></is></this></italic>.</paragraph>',
+    ),
+  );
+
+  expect(richText).toStrictEqual({
+    type: 'text',
+    model: {
+      blocks: [
+        {
+          type: 'paragraph',
+          model: {
+            text:
+              'Bold text in unsupported nodes followed by normal text then some carnage.',
+            blocks: [
+              {
+                type: 'fragment',
+                model: {
+                  text: 'Bold text in unsupported nodes',
+                  attributes: ['bold'],
+                },
+              },
+              {
+                type: 'fragment',
+                model: {
+                  text: ' followed by normal text then ',
+                  attributes: [],
+                },
+              },
+              {
+                type: 'fragment',
+                model: {
+                  text: 'some ',
+                  attributes: ['italic'],
+                },
+              },
+              {
+                type: 'fragment',
+                model: {
+                  text: 'carnage',
+                  attributes: ['italic', 'bold'],
+                },
+              },
+              {
+                type: 'fragment',
+                model: {
+                  text: '.',
+                  attributes: [],
+                },
+              },
+            ],
+          },
+        },
+      ],
+    },
+  });
 });

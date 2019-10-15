@@ -1,5 +1,5 @@
 /* eslint-disable no-use-before-define */
-const { xml2json } = require('xml-js');
+const xmldoc = require('xmldoc');
 const path = require('ramda/src/path');
 const pathOr = require('ramda/src/pathOr');
 const is = require('ramda/src/is');
@@ -9,8 +9,8 @@ const attributeTags = ['bold', 'italic'];
 const supportedXmlNodeNames = ['paragraph', 'link', 'url', ...attributeTags];
 
 const isXmlNodeSupported = node => {
-  if (path(['type'], node) === 'text') {
-    return Boolean(pathOr('', ['text'], node).trim());
+  if (path(['constructor', 'name'], node) === 'XmlTextNode') {
+    return true;
   }
 
   return supportedXmlNodeNames.includes(path(['name'], node));
@@ -22,42 +22,50 @@ const getTextFromChildBlocks = childBlocks => {
   return childBlocks.map(({ model }) => pathOr('', ['text'], model)).join('');
 };
 
-const findEl = (element, name, key) => {
-  const elements = path(['elements'], element);
-
-  if (!is(Array, elements)) return undefined;
-
-  return elements.find(el => path([key], el) === name);
-};
-
-const findAtr = (element, name) => path(['attributes', name], element);
-
 const createUrlLink = element => {
-  const captionTextNode = findEl(element, 'caption', 'name');
+  let text;
+  let locator;
+  let blocks;
 
-  const locator = findAtr(findEl(element, 'url', 'name'), 'href');
+  path(['children'], element).forEach(childNode => {
+    if (childNode.name === 'caption') {
+      text = path(['children', 0, 'text'], childNode);
+    }
 
-  const text = path(['text'], findEl(captionTextNode, 'text', 'type'));
+    if (childNode.name === 'url') {
+      locator = path(['attr', 'href'], childNode);
+    }
 
-  const blocks = [fragment(text)];
+    blocks = [fragment(text)];
+  });
 
   return urlLink(text, locator, blocks);
 };
 
+const handleSupportedNodes = (childNode, attributes, acc) => {
+  const block = xmlNodeToBlock(childNode, attributes);
+  const blocks = is(Array, block) ? block : [block];
+  return [...acc, ...blocks];
+};
+
 const convertToBlocks = (node, attributes = []) =>
-  pathOr([], ['elements'], node).reduce((acc, childNode) => {
-    if (isXmlNodeSupported(childNode)) {
-      const block = xmlNodeToBlock(childNode, attributes);
-      const blocks = is(Array, block) ? block : [block];
-      return [...acc, ...blocks];
+  pathOr([], ['children'], node).reduce((acc, childNode) => {
+    if (isXmlNodeSupported(childNode, attributes)) {
+      return handleSupportedNodes(childNode, attributes, acc);
     }
+
+    if (childNode.children && childNode.children.length !== 0) {
+      // ignore the unsupported node and try to render it's children
+      return convertToBlocks(childNode, attributes);
+    }
+
     return acc;
   }, []);
 
 const xmlNodeToBlock = (node, attributes) => {
   if (!is(Object, node)) return undefined;
 
-  if (node.type === 'text') {
+  if (node.constructor.name === 'XmlTextNode') {
     return fragment(node.text, attributes);
   }
 
@@ -85,11 +93,8 @@ const xmlNodeToBlock = (node, attributes) => {
 
 const candyXmlToRichText = xml => {
   try {
-    const parsedXml = JSON.parse(xml2json(xml));
-
-    const bodyXmlNode = path(['elements', 0], parsedXml);
-
-    const blocks = convertToBlocks(bodyXmlNode);
+    const parsedXml = new xmldoc.XmlDocument(xml);
+    const blocks = convertToBlocks(parsedXml);
 
     return {
       type: 'text',
