@@ -20,6 +20,9 @@ Talos is a bumper bot which runs automatically on the latest branch of Psammead.
 
 Talos solves this issue as it ensures the package version is the same across the whole monorepo and component library of packages (Psammead).
 
+### Talos on Simorgh
+From `psammead 1.9.0`, Talos automatically updates Simorgh to ensure that the updates to Psammead reflect on Simorgh.
+
 ## Manual Usage
 
 Manual usage of Talos requires access to our Jenkins CI pipeline. So for now it is limited to those employed by the BBC. If you're an external contributor and want Talos run manually, please feel free to [open an issue](https://github.com/bbc/psammead/issues/new/choose).
@@ -66,7 +69,7 @@ They are ignored by Talos as it only updates to the `latest` release of dependan
 
 #### When Psammead is up to date how do I pull changes in to my application?
 
-You can go into your application and update your `package.json` to include the recently published psammead packages. Then run `npm install`.
+From version 1.9.0, Talos updates Simorgh automatically. All you need to do is to merge the `latest` branch into your branch and run `npm install`. For other applications however, you can go into your application and update your `package.json` to include the recently published psammead packages. Then run `npm install`.
 
 #### I don't see why I wouldn't want to try to update everything, how do I invoke it with \*/ALL packages being updated?
 
