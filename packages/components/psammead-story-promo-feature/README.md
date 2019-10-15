@@ -7,7 +7,7 @@ The `PsammeadLeadingStoryPromo` component does...
 ## Installation
 
 ```jsx
-npm install @bbc/psammead-leading-story-promo --save
+npm install @bbc/psammead-story-promo-feature --save
 ```
 
 ## Props
