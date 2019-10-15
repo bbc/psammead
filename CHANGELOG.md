@@ -4,6 +4,7 @@
 | Version | Description |
 |---------|-------------|
 | 1.8.21 | [PR#2405](https://github.com/bbc/psammead/pull/2405) Remove react-test-renderer |
+| 1.8.20 | [PR#2401](https://github.com/bbc/psammead/pull/2401) Talos - Bump Dependencies - @bbc/psammead-assets, @bbc/psammead-storybook-helpers |
 | 1.8.19 | [PR#2356](https://github.com/bbc/psammead/pull/2356) Bump @bbc/psammead-story-promo |
 | 1.8.18 | [PR#2356](https://github.com/bbc/psammead/pull/2356) Talos - Bump Dependencies - @bbc/psammead-locales |
 | 1.8.17 | [PR#2359](https://github.com/bbc/psammead/pull/2359) Remove Yeoman script test |
