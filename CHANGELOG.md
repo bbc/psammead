@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 1.9.0 | [PR#2244](https://github.com/bbc/psammead/pull/2244) Open PR in simorgh on successful Talos run |
 | 1.8.18 | [PR#2356](https://github.com/bbc/psammead/pull/2356) Talos - Bump Dependencies - @bbc/psammead-locales |
 | 1.8.17 | [PR#2359](https://github.com/bbc/psammead/pull/2359) Remove Yeoman script test |
 | 1.8.16 | [PR#2349](https://github.com/bbc/psammead/pull/2349) Try to fix Yeoman test bug |
