@@ -257,8 +257,13 @@ storiesOf('Components|Grid', module)
   .add(
     'Normal slice layout for 1 or 5 items',
     () => (
-      <Grid columns={{ group1: 6, group2: 6, group3: 6, group4: 8, group5: 8 }} enableGelGutters enableGelMargins>
-        <Grid columns={{ group1: 6, group2: 6, group3: 6, group4: 8, group5: 8 }}
+      <Grid
+        columns={{ group1: 6, group2: 6, group3: 6, group4: 8, group5: 8 }}
+        enableGelGutters
+        enableGelMargins
+      >
+        <Grid
+          columns={{ group1: 6, group2: 6, group3: 6, group4: 8, group5: 8 }}
           enableGelGutters
         >
           <Grid

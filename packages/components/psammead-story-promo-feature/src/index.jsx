@@ -1,11 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
+import { node, shape } from 'prop-types';
 import Grid from '@bbc/psammead-grid';
-
-// Do I need these? ////////////////////////////////////
-import {
-  GEL_GROUP_2_SCREEN_WIDTH_MIN,
-} from '@bbc/gel-foundations/breakpoints';
+import { GEL_GROUP_2_SCREEN_WIDTH_MIN } from '@bbc/gel-foundations/breakpoints';
 
 const InlineMediaIndicator = styled.div`
   @media (min-width: ${GEL_GROUP_2_SCREEN_WIDTH_MIN}) {
@@ -14,68 +11,60 @@ const InlineMediaIndicator = styled.div`
   }
 `;
 
-///////////////////////////////////////////////////////
-
-/*
-* I need to show both the main story
-* I also need to show the secondary smaller story -- can be a normal storyPromo whose size is restricted by the grid ???
-* Component should be an alpha component
-*/
-
-// Image component - to contain the image -- image content should come from Simorgh
 const ImageComponent = ({ image, mediaIndicator }) => (
   <>
     {image}
     {mediaIndicator && (
-      <InlineMediaIndicator>
-        {mediaIndicator}
-      </InlineMediaIndicator>
+      <InlineMediaIndicator>{mediaIndicator}</InlineMediaIndicator>
     )}
   </>
 );
 
-/*
-* Leading story promo (the big one)
-*/
-const LeadingStoryPromo = ({ image, info, mediaIndicator }) => (
+ImageComponent.propTypes = {
+  image: node.isRequired,
+  mediaIndicator: node,
+};
+
+ImageComponent.defaultProps = {
+  mediaIndicator: null,
+};
+
+const FeaturedStoryPromo = ({ leadingPromo, secondaryPromo }) => (
   <Grid columns={{ group4: 8 }} enableGelGutters>
     <Grid columns={{ group4: 6 }} enableGelGutters>
       <Grid item columns={{ group4: 2 }}>
-        {info}
+        {leadingPromo.info}
       </Grid>
       <Grid item columns={{ group4: 4 }}>
-        <ImageComponent image={image} mediaIndicator={mediaIndicator} />
+        <ImageComponent
+          image={leadingPromo.image}
+          mediaIndicator={leadingPromo.mediaIndicator}
+        />
       </Grid>
     </Grid>
-    {/* <Grid columns={{ group4: 2 }} enableGelGutters>
-      <p>This is the secondary story promo</p>
-    </Grid> */}
+    <Grid columns={{ group4: 2 }} enableGelGutters>
+      <Grid item columns={{ group4: 2 }}>
+        <ImageComponent
+          image={secondaryPromo.image}
+          mediaIndicator={secondaryPromo.mediaIndicator}
+        />
+      </Grid>
+      <Grid item columns={{ group4: 2 }}>
+        {secondaryPromo.info}
+      </Grid>
+    </Grid>
   </Grid>
 );
 
-/*
-* Secondary Story promo (the smaller story)
-*/
-// const SecondaryStoryPromo = ({ image, info, mediaIndicator }) => (
-//   <StoryPromo
-//     image={image}
-//     info={info}
-//     mediaIndicator={mediaIndicator}
-//   />
-// )
+const featurePromoProps = {
+  image: node.isRequired,
+  info: node.isRequired,
+  mediaIndicator: node,
+};
 
-/*
-* Featured story promo
-*/
-// const FeaturedStoryPromo = () => (
-//   <Grid enableGelGutters enableGelMargins columns={{ group4: 8 }}>
-//     <Grid item columns={{ group4: 6 }}>
-//       <LeadingStoryPromo />
-//     </Grid>
-//     <Grid item columns={{ group4: 2}}>
-//       <SecondaryStoryPromo />
-//     </Grid>
-//   </Grid>
-// );
+FeaturedStoryPromo.propTypes = {
+  leadingPromo: shape(featurePromoProps).isRequired,
+  secondaryPromo: shape(featurePromoProps).isRequired,
+};
 
-export default LeadingStoryPromo;
+export default FeaturedStoryPromo;

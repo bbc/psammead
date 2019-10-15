@@ -3,13 +3,9 @@ import { storiesOf } from '@storybook/react';
 import { withKnobs, text } from '@storybook/addon-knobs';
 import { inputProvider } from '@bbc/psammead-storybook-helpers';
 import Image from '@bbc/psammead-image';
+import { Headline, Summary, Link } from '@bbc/psammead-story-promo';
 import notes from '../README.md';
-import LeadingStoryPromo from './index';
-import {
-  Headline,
-  Summary,
-  Link,
-} from '@bbc/psammead-story-promo';
+import FeaturedStoryPromo from './index';
 
 const buildImg = () => (
   <Image
@@ -22,17 +18,11 @@ const buildImg = () => (
   />
 );
 
-const InfoComponent = ({
-  headlineText,
-  summaryText,
-  script,
-  service,
-}) => (
+/* eslint-disable-next-line react/prop-types */
+const InfoComponent = ({ headlineText, summaryText, script, service }) => (
   <>
     <Headline script={script} service={service}>
-      <Link href="https://www.bbc.co.uk/news">
-        {headlineText} 
-      </Link>
+      <Link href="https://www.bbc.co.uk/news">{headlineText}</Link>
     </Headline>
     <Summary script={script} service={service}>
       {summaryText}
@@ -40,10 +30,10 @@ const InfoComponent = ({
   </>
 );
 
+/* eslint-disable react/prop-types */
 const generateStory = () =>
   inputProvider({
     slots: [{ name: 'Headline' }, { name: 'Summary' }],
-    // eslint-disable-next-line react/prop-types
     componentFunction: ({
       slotTexts: [headlineText, summaryText],
       script,
@@ -61,16 +51,26 @@ const generateStory = () =>
       );
 
       const Img = buildImg();
+      const leadingStoryPromo = {
+        image: Img,
+        info: Info,
+        mediaIndicator: null,
+      };
+      const secondaryStoryPromo = {
+        image: Img,
+        info: Info,
+        mediaIndicator: null,
+      };
 
       return (
-        <LeadingStoryPromo
-          image={Img}
-          info={Info}
-          mediaIndicator={false}
+        <FeaturedStoryPromo
+          leadingPromo={leadingStoryPromo}
+          secondaryPromo={secondaryStoryPromo}
         />
       );
     },
   });
+/* eslint-enable react/prop-types */
 
 storiesOf('Components|FeaturedStoryPromo', module)
   .addDecorator(withKnobs)
