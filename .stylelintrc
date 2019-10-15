@@ -1,7 +1,8 @@
 {
   "rules": {
     "declaration-no-important": true,
-    "csstree/validator": true
+    "csstree/validator": true,
+    "property-no-unknown": [true, {"ignoreProperties": ["/-styled-mixin/"]}]
   },
   "processors": [
     [
