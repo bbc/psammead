@@ -4,7 +4,12 @@ import { withKnobs, text } from '@storybook/addon-knobs';
 import { inputProvider } from '@bbc/psammead-storybook-helpers';
 import Image from '@bbc/psammead-image';
 import notes from '../README.md';
-import FeaturedStoryPromo from './index';
+import LeadingStoryPromo from './index';
+import {
+  Headline,
+  Summary,
+  Link,
+} from '@bbc/psammead-story-promo';
 
 const buildImg = () => (
   <Image
@@ -21,36 +26,21 @@ const InfoComponent = ({
   headlineText,
   summaryText,
   script,
-  topStory,
   service,
-  dir,
-  type,
 }) => (
   <>
-    <Headline script={script} topStory={topStory} service={service}>
+    <Headline script={script} service={service}>
       <Link href="https://www.bbc.co.uk/news">
-        {/* {isLive ? (
-          <LiveComponent service={service} dir={dir} headline={headlineText} />
-        ) : (
-          <HiddenText headline={headlineText} type={type} />
-        )} */}
         {headlineText} 
       </Link>
     </Headline>
-    <Summary script={script} topStory={topStory} service={service}>
+    <Summary script={script} service={service}>
       {summaryText}
     </Summary>
-    {topStory && (
-      <IndexAlsosContainer
-        script={script}
-        service={service}
-        dir={dir}
-      />
-    )}
   </>
 );
 
-const generateStory = ({ topStory }) =>
+const generateStory = () =>
   inputProvider({
     slots: [{ name: 'Headline' }, { name: 'Summary' }],
     // eslint-disable-next-line react/prop-types
@@ -65,7 +55,6 @@ const generateStory = ({ topStory }) =>
           headlineText={headlineText}
           summaryText={summaryText}
           script={script}
-          topStory={topStory}
           service={service}
           dir={dir}
         />
@@ -74,11 +63,10 @@ const generateStory = ({ topStory }) =>
       const Img = buildImg();
 
       return (
-        <FeaturedStoryPromo
+        <LeadingStoryPromo
           image={Img}
           info={Info}
           mediaIndicator={false}
-          topStory={topStory}
         />
       );
     },
@@ -86,7 +74,7 @@ const generateStory = ({ topStory }) =>
 
 storiesOf('Components|FeaturedStoryPromo', module)
   .addDecorator(withKnobs)
-  .add('default', generateStory({ topStory: false }), {
+  .add('default', generateStory(), {
     notes,
     knobs: { escapeHTML: false },
   });
