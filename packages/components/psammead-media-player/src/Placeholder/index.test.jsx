@@ -71,6 +71,6 @@ describe('Media Player: Placeholder', () => {
     );
     fireEvent.click(getByText(container.firstChild, '2:30'));
     fireEvent.click(container.firstChild);
-    expect(mockOnClick).toHaveBeenCalledTimes(2);
+    expect(mockOnClick).toHaveBeenCalledTimes(1);
   });
 });

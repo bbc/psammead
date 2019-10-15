@@ -27,14 +27,11 @@ const StyledPlayButton = styled(PlayButton)`
 const Placeholder = ({ onClick, service, src, mediaInfo }) => {
   const { title, datetime, duration, durationSpoken, type } = mediaInfo;
   return (
-    <StyledPlaceholder onClick={onClick}>
+    <StyledPlaceholder onClick={() => {}}>
       <StyledPlayButton
         title={title}
         service={service}
-        onClick={event => {
-          event.stopPropagation();
-          onClick();
-        }}
+        onClick={onClick}
         datetime={datetime}
         duration={duration}
         durationSpoken={durationSpoken}
