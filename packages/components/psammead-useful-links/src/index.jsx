@@ -7,7 +7,10 @@ import { getPica } from '@bbc/gel-foundations/typography';
 import {
   GEL_SPACING, // 8 px
 } from '@bbc/gel-foundations/spacings';
-import { GEL_GROUP_3_SCREEN_WIDTH_MIN } from '@bbc/gel-foundations/breakpoints';
+import {
+  GEL_GROUP_2_SCREEN_WIDTH_MAX,
+  GEL_GROUP_3_SCREEN_WIDTH_MIN,
+} from '@bbc/gel-foundations/breakpoints';
 import { node, string, shape } from 'prop-types';
 import { scriptPropType } from '@bbc/gel-foundations/prop-types';
 
@@ -33,6 +36,12 @@ export const UsefulLinksUl = styled.ul.attrs({ role: 'list' })`
   padding: 0;
   margin: 0;
   list-style-type: none;
+
+  @media (max-width: ${GEL_GROUP_2_SCREEN_WIDTH_MAX}) {
+    > li:first-child {
+      padding-top: 0;
+    }
+  }
 
   @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
     column-count: 2;
