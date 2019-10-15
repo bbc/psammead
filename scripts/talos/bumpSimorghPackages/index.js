@@ -13,8 +13,8 @@ const repoName = 'simorgh';
 
 const getSimorghPullRequestBody = updates => {
   return updates
-    .map(update => `${update}\n${getChangelogHead(update)}`)
-    .join('\n\n');
+    .map(update => `${update}\n\n${getChangelogHead(update)}`)
+    .join('\n\n\n');
 };
 
 const changedPackagesReducer = (accumulator, currentValue) => {
