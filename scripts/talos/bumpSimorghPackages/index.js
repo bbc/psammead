@@ -1,9 +1,9 @@
 const getRemoteFile = require('../../utilities/getRemoteFile');
 const createRemoteBranch = require('../../utilities/createRemoteBranch');
 const createPullRequest = require('../../utilities/createPullRequest');
+const getPackageVersion = require('../../utilities/getPackageVersion');
 const getPackageNames = require('../createPullRequest/getPackageNames');
 const getChangelogHead = require('../getChangelogHead');
-const getPublishedPackages = require('./getPublishedPackages');
 const getUpdates = require('./getUpdates');
 const updatePackageLock = require('./updatePackageLock');
 const updatePackageJson = require('./updatePackageJson');
@@ -17,8 +17,15 @@ const getSimorghPullRequestBody = updates => {
     .join('\n\n');
 };
 
-const bumpSimorghPackages = async (bumpedPackages, branchName) => {
-  const publishedPackages = getPublishedPackages(bumpedPackages);
+const changedPackagesReducer = (accumulator, currentValue) => {
+  return {
+    ...accumulator,
+    [currentValue]: `^${getPackageVersion(currentValue)}`,
+  };
+};
+
+const bumpSimorghPackages = async (changedPackages, branchName) => {
+  const publishedPackages = changedPackages.reduce(changedPackagesReducer, {});
   const packageList = Object.keys(publishedPackages);
   const title = `Talos - Bump ${getPackageNames(packageList)}`;
 
