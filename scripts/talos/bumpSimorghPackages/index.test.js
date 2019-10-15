@@ -22,24 +22,31 @@ const repoName = 'simorgh';
 const generatedBranchName = 'branchname';
 
 const mockPrBody = `@bbc/gel-foundations  ^3.4.0  →  ^3.5.2
+
 | Version | Description |
 |---------|-------------|
 | 1.3.0 | [PR#1025](https://github.com/bbc/psammead/pull/3) mock changes 4 |
 | 1.2.0 | [PR#1025](https://github.com/bbc/psammead/pull/3) mock changes 3 |
+
 
 @bbc/psammead-assets  ^2.4.0  →  ^2.5.1
+
 | Version | Description |
 |---------|-------------|
 | 1.3.0 | [PR#1025](https://github.com/bbc/psammead/pull/3) mock changes 4 |
 | 1.2.0 | [PR#1025](https://github.com/bbc/psammead/pull/3) mock changes 3 |
+
 
 @bbc/psammead-caption  ^2.2.9  →  ^2.3.2
+
 | Version | Description |
 |---------|-------------|
 | 1.3.0 | [PR#1025](https://github.com/bbc/psammead/pull/3) mock changes 4 |
 | 1.2.0 | [PR#1025](https://github.com/bbc/psammead/pull/3) mock changes 3 |
 
+
 @bbc/psammead-storybook-helpers  ^6.0.1  →  ^6.2.1
+
 | Version | Description |
 |---------|-------------|
 | 1.3.0 | [PR#1025](https://github.com/bbc/psammead/pull/3) mock changes 4 |
