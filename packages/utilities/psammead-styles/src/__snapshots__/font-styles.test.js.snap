@@ -344,6 +344,14 @@ exports[`should render SansBold correctly for vietnamese 1`] = `
   "
 `;
 
+exports[`should render SansBold correctly for weather 1`] = `
+"
+   font-family: ReithSans, Helvetica, Arial, sans-serif;
+   font-weight: 700;
+   font-style: normal;
+  "
+`;
+
 exports[`should render SansBold correctly for yoruba 1`] = `
 "
     font-family: Helmet, Freesans, Helvetica, Arial, sans-serif;
@@ -700,6 +708,14 @@ exports[`should render SansBoldItalic correctly for vietnamese 1`] = `
 "
     font-family: Helmet, Freesans, Helvetica, Arial, sans-serif;
     font-weight: 700;
+   font-style: italic;
+  "
+`;
+
+exports[`should render SansBoldItalic correctly for weather 1`] = `
+"
+   font-family: ReithSans, Helvetica, Arial, sans-serif;
+   font-weight: 700;
    font-style: italic;
   "
 `;
@@ -1064,6 +1080,14 @@ exports[`should render SansRegular correctly for vietnamese 1`] = `
   "
 `;
 
+exports[`should render SansRegular correctly for weather 1`] = `
+"
+   font-family: ReithSans, Helvetica, Arial, sans-serif;
+   font-weight: 400;
+   font-style: normal; 
+  "
+`;
+
 exports[`should render SansRegular correctly for yoruba 1`] = `
 "
     font-family: Helmet, Freesans, Helvetica, Arial, sans-serif;
@@ -1424,6 +1448,14 @@ exports[`should render SansRegularItalic correctly for vietnamese 1`] = `
   "
 `;
 
+exports[`should render SansRegularItalic correctly for weather 1`] = `
+"
+   font-family: ReithSans, Helvetica, Arial, sans-serif;
+   font-weight: 400;
+   font-style: italic; 
+  "
+`;
+
 exports[`should render SansRegularItalic correctly for yoruba 1`] = `
 "
     font-family: Helmet, Freesans, Helvetica, Arial, sans-serif;
@@ -1779,6 +1811,14 @@ exports[`should render SerifBold correctly for uzbek 1`] = `
 exports[`should render SerifBold correctly for vietnamese 1`] = `
 "
     font-family: Helmet, Freesans, Helvetica, Arial, sans-serif;
+    font-weight: 700;
+   font-style: normal;
+  "
+`;
+
+exports[`should render SerifBold correctly for weather 1`] = `
+"
+    font-family: ReithSerif, Helvetica, Arial, sans-serif;
     font-weight: 700;
    font-style: normal;
   "
@@ -2144,6 +2184,14 @@ exports[`should render SerifMedium correctly for vietnamese 1`] = `
   "
 `;
 
+exports[`should render SerifMedium correctly for weather 1`] = `
+"
+   font-family: ReithSerif, Helvetica, Arial, sans-serif;
+   font-weight: 500;
+   font-style: normal; 
+  "
+`;
+
 exports[`should render SerifMedium correctly for yoruba 1`] = `
 "
     font-family: Helmet, Freesans, Helvetica, Arial, sans-serif;
@@ -2504,6 +2552,14 @@ exports[`should render SerifMediumItalic correctly for vietnamese 1`] = `
   "
 `;
 
+exports[`should render SerifMediumItalic correctly for weather 1`] = `
+"
+   font-family: ReithSerif, Helvetica, Arial, sans-serif;
+   font-weight: 500;
+   font-style: italic;
+  "
+`;
+
 exports[`should render SerifMediumItalic correctly for yoruba 1`] = `
 "
     font-family: Helmet, Freesans, Helvetica, Arial, sans-serif;
@@ -2860,6 +2916,14 @@ exports[`should render SerifRegular correctly for vietnamese 1`] = `
 "
     font-family: Helmet, Freesans, Helvetica, Arial, sans-serif;
     font-weight: 400;
+   font-style: normal;
+  "
+`;
+
+exports[`should render SerifRegular correctly for weather 1`] = `
+"
+   font-family: ReithSerif, Helvetica, Arial, sans-serif;
+   font-weight: 400;
    font-style: normal;
   "
 `;
