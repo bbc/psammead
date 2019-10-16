@@ -59,7 +59,7 @@ describe('Media Player: Placeholder', () => {
     />,
   );
 
-  it('should call onClick when the placeholder or play button is clicked', () => {
+  it('should call onClick when the placeholder and play button is clicked', () => {
     const { container } = render(
       <Placeholder
         onClick={mockOnClick}
@@ -69,8 +69,8 @@ describe('Media Player: Placeholder', () => {
         className="foo"
       />,
     );
-    fireEvent.click(getByText(container.firstChild, '2:30'));
     fireEvent.click(container.firstChild);
-    expect(mockOnClick).toHaveBeenCalledTimes(1);
+    fireEvent.click(getByText(container.firstChild, '2:30'));
+    expect(mockOnClick).toHaveBeenCalledTimes(2);
   });
 });
