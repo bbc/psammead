@@ -53,11 +53,7 @@ const mediaInfo = (
 describe('StoryPromo', () => {
   shouldMatchSnapshot(
     'should render correctly',
-    <StoryPromo
-      image={Image}
-      info={Info({ topStory: false })}
-      sectionName="section-name"
-    />,
+    <StoryPromo image={Image} info={Info({ topStory: false })} />,
   );
   shouldMatchSnapshot(
     'should render Live promo correctly',
@@ -137,32 +133,18 @@ describe('assertions', () => {
     expect(image.getAttribute('alt')).toEqual('Alt text');
   });
 
-  it('should have data-story-promo attribute when sectionName is provided', () => {
+  it('should add extra props passed to the component', () => {
     const { container } = render(
       <StoryPromo
         image={Image}
         info={Info({ topStory: true })}
         mediaIndicator={mediaInfo}
-        sectionName="section-name"
+        data-story-promo="story_promo"
       />,
     );
 
     expect(
       container.querySelector('div').getAttribute('data-story-promo'),
-    ).toEqual('section-name');
-  });
-
-  it('should not have data-story-promo attribute when sectionName is not provided', () => {
-    const { container } = render(
-      <StoryPromo
-        image={Image}
-        info={Info({ topStory: true })}
-        mediaIndicator={mediaInfo}
-      />,
-    );
-
-    expect(
-      container.querySelector('div').getAttribute('data-story-promo'),
-    ).toBeNull();
+    ).toEqual('story_promo');
   });
 });

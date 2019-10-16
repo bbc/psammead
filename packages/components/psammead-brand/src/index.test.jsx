@@ -112,5 +112,25 @@ describe('Brand', () => {
 
       expect(container.querySelector('span').getAttribute('role')).toBeNull();
     });
+
+    it('should add extra props passed to the component', () => {
+      const { container } = render(
+        <Brand
+          product="Default Brand Name"
+          svgHeight={24}
+          maxWidth={280}
+          minWidth={180}
+          svg={svg}
+          url="https://www.bbc.co.uk/news"
+          backgroundColour={C_POSTBOX}
+          logoColour={C_WHITE}
+          data-brand="header"
+        />,
+      );
+
+      expect(container.querySelector('div').getAttribute('data-brand')).toEqual(
+        'header',
+      );
+    });
   });
 });
