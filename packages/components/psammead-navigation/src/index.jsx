@@ -162,6 +162,7 @@ export const NavigationLi = ({
   currentPageText,
   active,
   service,
+  ...props
 }) => (
   <StyledListItem role="listitem">
     {active && currentPageText ? (
@@ -170,19 +171,14 @@ export const NavigationLi = ({
         script={script}
         currentLink="true"
         service={service}
-        data-navigation={`${link}_${url}`}
+        {...props}
       >
         <CurrentLink script={script} currentPageText={currentPageText}>
           {link}
         </CurrentLink>
       </StyledLink>
     ) : (
-      <StyledLink
-        href={url}
-        script={script}
-        service={service}
-        data-navigation={`${link}_${url}`}
-      >
+      <StyledLink href={url} script={script} service={service} {...props}>
         {link}
       </StyledLink>
     )}
