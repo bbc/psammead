@@ -45,7 +45,7 @@ storiesOf('Components|SitewideLinks', module)
     { notes, knobs: { escapeHTML: false } },
   )
   .add(
-    'with trustProjectLink',
+    'with TrustProjectLink',
     inputProvider({
       slots: linkNames,
       /* eslint-disable react/prop-types */
@@ -58,7 +58,7 @@ storiesOf('Components|SitewideLinks', module)
           <SitewideLinks
             links={links}
             copyrightText={copyrightText}
-            trustProjectLink={{
+            TrustProjectLink={{
               href: 'https://www.bbc.co.uk/news',
               text: 'Why you can trust the bbc',
             }}

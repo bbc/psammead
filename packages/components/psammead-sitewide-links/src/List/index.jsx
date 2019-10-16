@@ -119,12 +119,12 @@ const StyledListItem = styled.li`
   column-gap: 1rem;
 `;
 
-const List = ({ links, trustprojectlink }) => (
+const List = ({ links, TrustProjectLink }) => (
   <div>
-    {trustprojectlink && (
-      <StyledList role="list" trustprojectlink={trustprojectlink} links={links}>
-        <StyledListItem key={trustprojectlink.text} role="listitem">
-          <Link text={trustprojectlink.text} href={trustprojectlink.href} />
+    {TrustProjectLink && (
+      <StyledList role="list" TrustProjectLink={TrustProjectLink} links={links}>
+        <StyledListItem key={TrustProjectLink.text} role="listitem">
+          <Link text={TrustProjectLink.text} href={TrustProjectLink.href} />
         </StyledListItem>
         {links.map(link => (
           <StyledListItem key={link.text} role="listitem">
@@ -134,7 +134,7 @@ const List = ({ links, trustprojectlink }) => (
       </StyledList>
     )}
 
-    {!trustprojectlink && (
+    {!TrustProjectLink && (
       <StyledListNoTrustLink role="list" links={links}>
         {links.map(link => (
           <StyledListItem key={link.text} role="listitem">
@@ -151,16 +151,16 @@ const linkPropTypes = shape({
   text: string.isRequired,
 });
 
-const trustprojectlinkPropTypes = shape({
+const TrustProjectLinkPropTypes = shape({
   href: string,
   text: string,
 });
 
 List.propTypes = {
   links: arrayOf(linkPropTypes.isRequired).isRequired,
-  trustprojectlink: trustprojectlinkPropTypes,
+  TrustProjectLink: TrustProjectLinkPropTypes,
 };
 
-List.defaultProps = { trustprojectlink: null };
+List.defaultProps = { TrustProjectLink: null };
 
 export default List;
