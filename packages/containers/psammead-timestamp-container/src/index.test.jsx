@@ -2,15 +2,20 @@ import React from 'react';
 import { isNull, shouldMatchSnapshot } from '@bbc/psammead-test-helpers';
 import { render } from '@testing-library/react';
 import { latin } from '@bbc/gel-foundations/scripts';
+import moment from 'moment';
 import '@bbc/psammead-locales/moment/ha';
 import Timestamp from '.';
 
 const defaultTimestamp = 1539969006000; // 19 October 2018
+const elevenMonthsFromNow = moment(Date.now())
+  .subtract(11, 'months')
+  .valueOf();
+
 const noLeadingZeroTimestamp = 1530947227000; // 07 July 2018
 const invalidData = '8640000000000001'; // A day holds 86,400,000 milliseconds - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date#Description
 const mockCalendar = {
-  formatDate: moment => {
-    if (moment) {
+  formatDate: momentLocale => {
+    if (momentLocale) {
       return '27 مهر 1397';
     }
     return null;
@@ -125,7 +130,7 @@ describe('Timestamp', () => {
     it('should render a hausa relative timestamp', () => {
       const { container } = render(
         <Timestamp
-          timestamp={defaultTimestamp}
+          timestamp={elevenMonthsFromNow}
           dateTimeFormat="YYYY-MM-DD"
           format="D MMMM YYYY"
           isRelative
