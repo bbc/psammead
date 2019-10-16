@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 4.0.2 | [PR#2348](https://github.com/bbc/psammead/pull/2348) Adds colour 'Weather Blue' and add weather to fonts |
 | 4.0.1 | [PR#2273](https://github.com/bbc/psammead/pull/2273) Snapshot update |
 | 4.0.0 | [PR#2229](https://github.com/bbc/psammead/pull/2229) Convert fonts to overridable functions |
 | 3.0.0 | [PR#2250](https://github.com/bbc/psammead/pull/2250) Update Mundo, Brasil and Turkish fonts from Helmet to Reith |

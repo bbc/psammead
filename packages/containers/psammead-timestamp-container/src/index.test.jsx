@@ -6,6 +6,14 @@ import Timestamp from '.';
 const defaultTimestamp = 1539969006000; // 19 October 2018
 const noLeadingZeroTimestamp = 1530947227000; // 07 July 2018
 const invalidData = '8640000000000001'; // A day holds 86,400,000 milliseconds - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date#Description
+const mockCalendar = {
+  formatDate: moment => {
+    if (moment) {
+      return '27 مهر 1397';
+    }
+    return null;
+  },
+};
 
 describe('Timestamp', () => {
   describe('with no data', () => {
@@ -63,4 +71,34 @@ describe('Timestamp', () => {
       service="news"
     />,
   );
+
+  describe('with alternative calendar props', () => {
+    shouldMatchSnapshot(
+      'should add alternative calendar if timestamp is not relative',
+      <Timestamp
+        timestamp={defaultTimestamp}
+        dateTimeFormat="YYYY-MM-DD"
+        format="D MMMM YYYY"
+        isRelative={false}
+        script={latin}
+        locale="fa"
+        service="persian"
+        altCalendar={mockCalendar}
+      />,
+    );
+
+    shouldMatchSnapshot(
+      'should not add alternative calendar if timestamp is relative',
+      <Timestamp
+        timestamp={defaultTimestamp}
+        dateTimeFormat="YYYY-MM-DD"
+        format="D MMMM YYYY"
+        isRelative
+        script={latin}
+        locale="fa"
+        service="persian"
+        altCalendar={mockCalendar}
+      />,
+    );
+  });
 });

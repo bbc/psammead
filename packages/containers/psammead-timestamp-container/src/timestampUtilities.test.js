@@ -1,13 +1,14 @@
 import moment from 'moment-timezone';
 import {
+  unixTimestampToMoment,
   formatUnixTimestamp,
   isValidDateTime,
-  showRelativeTime,
 } from './timestampUtilities';
 import timestampGenerator from './helpers/testHelpers';
 
 const timezone = 'Europe/London';
 const timestamp = 1539969006000; // 19 October 2018
+const locale = 'en-gb';
 
 describe('Timestamp utility functions', () => {
   describe('isValidDateTime', () => {
@@ -25,15 +26,23 @@ describe('Timestamp utility functions', () => {
     });
   });
 
+  describe('unixTimestampToMoment', () => {
+    it('should be a valid moment', () => {
+      expect(unixTimestampToMoment(timestamp)).toHaveProperty('isValid');
+    });
+  });
+
   describe('formatUnixTimestamp', () => {
     const GMTTimestamp = 1483275600000; // 1 January 2017 GMT
     const BSTTimestamp = 1496235600000; // 31 May 2017 BST
+    const isRelative = false;
 
     it('should return BST for a BST timestamp', () => {
       const result = formatUnixTimestamp(
         BSTTimestamp,
         'D MMMM YYYY, HH:mm z',
         timezone,
+        locale,
       );
       expect(result).toContain('BST');
     });
@@ -43,6 +52,7 @@ describe('Timestamp utility functions', () => {
         GMTTimestamp,
         'D MMMM YYYY, HH:mm z',
         timezone,
+        locale,
       );
       expect(result).toContain('GMT');
     });
@@ -52,53 +62,64 @@ describe('Timestamp utility functions', () => {
         GMTTimestamp,
         'D MMMM YYYY, HH:mm z',
         timezone,
+        locale,
       );
       expect(result).toEqual('1 January 2017, 13:00 GMT');
     });
 
     it('should return short date in expected format', () => {
-      const result = formatUnixTimestamp(GMTTimestamp, 'YYYY-MM-DD', timezone);
+      const result = formatUnixTimestamp(
+        GMTTimestamp,
+        'YYYY-MM-DD',
+        timezone,
+        locale,
+      );
       expect(result).toEqual('2017-01-01');
     });
 
     it('should return long date in expected format', () => {
-      const result = formatUnixTimestamp(GMTTimestamp, 'D MMMM YYYY', timezone);
+      const result = formatUnixTimestamp(
+        GMTTimestamp,
+        'D MMMM YYYY',
+        timezone,
+        locale,
+      );
       expect(result).toEqual('1 January 2017');
     });
-  });
-
-  describe('showRelativetime', () => {
-    const format = 'D MMMM YYYY';
-    const isRelative = false;
-
     it('should return relative timestamp if isRelative is true', () => {
       const nineHoursAgo = timestampGenerator({ hours: 9 });
       const isRelativeIsTrue = true;
-      const locale = 'en-gb';
-      const output = showRelativeTime(
+      const output = formatUnixTimestamp(
         nineHoursAgo,
-        isRelativeIsTrue,
-        format,
+        'D MMMM YYYY',
         timezone,
         locale,
+        isRelativeIsTrue,
       );
       const expectedOutput = '9 hours ago';
       expect(output).toEqual(expectedOutput);
     });
 
     it('should return timestamp with format if format is provided', () => {
-      const output = showRelativeTime(timestamp, isRelative, format, timezone);
+      const output = formatUnixTimestamp(
+        timestamp,
+        'D MMMM YYYY',
+        timezone,
+        locale,
+        isRelative,
+      );
       const expectedOutput = '19 October 2018';
       expect(output).toEqual(expectedOutput);
     });
 
     it('should return timestamp with default format if format is not provided', () => {
       const nullFormat = null;
-      const output = showRelativeTime(
+      const output = formatUnixTimestamp(
         timestamp,
-        isRelative,
         nullFormat,
         timezone,
+        locale,
+        isRelative,
       );
       const expectedOutput = '19 October 2018, 18:10 BST';
       expect(output).toEqual(expectedOutput);

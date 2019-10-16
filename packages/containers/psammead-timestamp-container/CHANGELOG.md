@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 2.5.0 | [PR#2303](https://github.com/bbc/psammead/pull/2303) Add option for alternative calendar timestamps |
 | 2.4.22 | [PR#2342](https://github.com/bbc/psammead/pull/2342) Remove psammead-locales imports from story |
 | 2.4.21 | [PR#2314](https://github.com/bbc/psammead/pull/2314) Talos - Bump Dependencies - @bbc/psammead-timestamp |
 | 2.4.20 | [PR#2289](https://github.com/bbc/psammead/pull/2289) Talos - Bump Dependencies - @bbc/psammead-timestamp |
