@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { string, func, oneOf, shape } from 'prop-types';
+import { string, func, shape } from 'prop-types';
 import Image from '@bbc/psammead-image';
 import PlayButton from '@bbc/psammead-play-button';
 import { C_POSTBOX } from '@bbc/psammead-styles/colours';
@@ -56,16 +56,16 @@ Placeholder.propTypes = {
     datetime: string,
     duration: string,
     durationSpoken: string,
-    type: oneOf(['video', 'audio']),
+    type: 'video',
   }),
 };
 Placeholder.defaultProps = {
   mediaInfo: shape({
-    title: string.isRequired,
-    datetime: string,
-    duration: string,
-    durationSpoken: string,
-    type: oneOf(['video', 'audio']),
+    title: null,
+    datetime: null,
+    duration: null,
+    durationSpoken: null,
+    type: 'video',
   }),
 };
 
