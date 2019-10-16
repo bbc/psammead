@@ -39,41 +39,6 @@ The `withServicesKnob` function accepts an options argument with 2 properties:
 - `defaultService`(String): The default selected service of the services dropdown e.g. `arabic`. The default is `news`.
 - `services`(Array): A list of services that the dropdown will display. The default is all services.
 
-An example of `withServicesKnob` usage:
-
-```js
-storiesOf('Components|Paragraph', module)
-  .addDecorator(withKnobs)
-  .addDecorator(withServicesKnob()) // default selected service is `news`
-  .add(
-    'A paragraph with English text',
-    ({ text, script, service }) => (
-      <Paragraph script={script} service={service}>
-        {text}
-      </Paragraph>
-    ),
-```
-
-To set a default service:
-
-```js
-storiesOf('Components|Paragraph', module)
-  .addDecorator(withKnobs)
-  .addDecorator(
-    withServicesKnob({
-      defaultService: 'arabic',
-      services: ['news', 'arabic', 'amharic']
-    })
-  ) // default selected service is `arabic` and the available services in the dropdown are `news`, `arabic`, `amharic`
-  .add(
-    'A paragraph with Arabic text',
-    ({ text, script, service }) => (
-      <Paragraph script={script} service={service}>
-        {text}
-      </Paragraph>
-    ),
-```
-
 `buildRTLSubstories` - a function that gets all stories and creates right-to-left variants as substories. Internally it uses the `withServicesKnob` to set the default service as `arabic`. The appropriate place to use this function is in `storybook/config.js`.
 
 ## Installation
@@ -146,6 +111,60 @@ storiesOf('Example', module)
     <h1 dir={dir}>Lorem Ipsum ${service}</h1>
   ));
 ```
+
+### withServicesKnob
+
+```js
+storiesOf('Components|Paragraph', module)
+  .addDecorator(withKnobs)
+  .addDecorator(withServicesKnob()) // default selected service is `news`
+  .add(
+    'A paragraph with English text',
+    ({ text, script, service }) => (
+      <Paragraph script={script} service={service}>
+        {text}
+      </Paragraph>
+    ),
+```
+
+To set a default service:
+
+```js
+storiesOf('Components|Paragraph', module)
+  .addDecorator(withKnobs)
+  .addDecorator(
+    withServicesKnob({
+      defaultService: 'arabic',
+      services: ['news', 'arabic', 'amharic']
+    })
+  ) // default selected service is `arabic` and the available services in the dropdown are `news`, `arabic`, `amharic`
+  .add(
+    'A paragraph with Arabic text',
+    ({ text, script, service }) => (
+      <Paragraph script={script} service={service}>
+        {text}
+      </Paragraph>
+    ),
+```
+
+If you want to add this decorator to a single story rather than a series of stories as documented above then you could write a story like this:
+
+```js
+storiesOf('Components|Paragraph', module)
+  .addDecorator(withKnobs)
+  .add('A paragraph with Arabic text', () =>
+    withServicesKnob({
+      defaultService: 'arabic',
+      services: ['news', 'arabic', 'amharic'],
+    })(({ text, script, service }) => (
+      <Paragraph script={script} service={service}>
+        {text}
+      </Paragraph>
+    )),
+  );
+```
+
+The above example dismisses the use of the `addDecorator` method and decorates the story directly.
 
 ### buildRTLSubstories
 
