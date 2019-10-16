@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`FeaturedStoryPromo should render correctly 1`] = `
-.c10 {
+exports[`LeadingStoryPromo should render default leading story promo correctly 1`] = `
+.c9 {
   vertical-align: middle;
   margin: 0 0.25rem;
   color: #222222;
@@ -10,7 +10,7 @@ exports[`FeaturedStoryPromo should render correctly 1`] = `
   height: 0.75rem;
 }
 
-.c8 {
+.c7 {
   padding: 0.5rem 0.25rem;
   background-color: #FFFFFF;
   display: block;
@@ -23,7 +23,7 @@ exports[`FeaturedStoryPromo should render correctly 1`] = `
   height: 2rem;
 }
 
-.c9 {
+.c8 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -35,12 +35,12 @@ exports[`FeaturedStoryPromo should render correctly 1`] = `
   height: 100%;
 }
 
-.c11 {
+.c10 {
   vertical-align: middle;
   margin: 0 0.25rem;
 }
 
-.c3 {
+.c2 {
   font-size: 0.9375rem;
   line-height: 1.25rem;
   font-family: ReithSerif,Helvetica,Arial,sans-serif;
@@ -51,7 +51,7 @@ exports[`FeaturedStoryPromo should render correctly 1`] = `
   padding-bottom: 0.5rem;
 }
 
-.c5 {
+.c4 {
   font-size: 0.9375rem;
   line-height: 1.125rem;
   font-family: ReithSans,Helvetica,Arial,sans-serif;
@@ -62,14 +62,14 @@ exports[`FeaturedStoryPromo should render correctly 1`] = `
   padding-bottom: 0.5rem;
 }
 
-.c4 {
+.c3 {
   position: static;
   color: #222222;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.c4:before {
+.c3:before {
   bottom: 0;
   content: '';
   left: 0;
@@ -81,13 +81,13 @@ exports[`FeaturedStoryPromo should render correctly 1`] = `
   z-index: 1;
 }
 
-.c4:hover,
-.c4:focus {
+.c3:hover,
+.c3:focus {
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
-.c4:visited {
+.c3:visited {
   color: #6E6E73;
 }
 
@@ -95,58 +95,50 @@ exports[`FeaturedStoryPromo should render correctly 1`] = `
   position: relative;
 }
 
-.c1 {
-  position: relative;
-}
-
-.c12 {
-  position: relative;
-}
-
 @media (max-width:24.9375rem) {
-  .c8 {
+  .c7 {
     height: 1.25rem;
     padding: 0.25rem 0.25rem 0;
   }
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
-  .c3 {
+  .c2 {
     font-size: 1rem;
     line-height: 1.25rem;
   }
 }
 
 @media (min-width:37.5rem) {
-  .c3 {
+  .c2 {
     font-size: 1rem;
     line-height: 1.25rem;
   }
 }
 
 @media (min-width:37.5rem) {
-  .c3 {
+  .c2 {
     font-size: 1.25rem;
     line-height: 1.5rem;
   }
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
-  .c5 {
+  .c4 {
     font-size: 0.9375rem;
     line-height: 1.125rem;
   }
 }
 
 @media (min-width:37.5rem) {
-  .c5 {
+  .c4 {
     font-size: 0.875rem;
     line-height: 1.125rem;
   }
 }
 
 @media (max-width:37.4375rem) {
-  .c5 {
+  .c4 {
     display: none;
     visibility: hidden;
   }
@@ -159,64 +151,36 @@ exports[`FeaturedStoryPromo should render correctly 1`] = `
   }
 }
 
+@media (min-width:63rem) and (max-width:80rem) {
+  .c1 {
+    display: inline-block;
+    width: 25%;
+    vertical-align: top;
+  }
+}
+
 @supports (display:grid) {
   .c1 {
-    display: grid;
-    position: initial;
-  }
-}
-
-@media (min-width:63rem) and (max-width:80rem) {
-  .c2 {
-    display: inline-block;
-    width: 33.333333333333336%;
-    vertical-align: top;
-  }
-}
-
-@supports (display:grid) {
-  .c2 {
     display: block;
   }
 }
 
 @media (min-width:63rem) and (max-width:80rem) {
-  .c6 {
+  .c5 {
     display: inline-block;
-    width: 66.66666666666667%;
+    width: 75%;
     vertical-align: top;
   }
 }
 
 @supports (display:grid) {
-  .c6 {
-    display: block;
-  }
-}
-
-@supports (display:grid) {
-  .c12 {
-    display: grid;
-    position: initial;
-  }
-}
-
-@media (min-width:63rem) and (max-width:80rem) {
-  .c13 {
-    display: inline-block;
-    width: 100%;
-    vertical-align: top;
-  }
-}
-
-@supports (display:grid) {
-  .c13 {
+  .c5 {
     display: block;
   }
 }
 
 @media (min-width:25rem) {
-  .c7 {
+  .c6 {
     position: absolute;
     bottom: 0;
   }
@@ -228,123 +192,58 @@ exports[`FeaturedStoryPromo should render correctly 1`] = `
   <div
     class="c1"
   >
-    <div
+    <h3
       class="c2"
     >
-      <h3
+      <a
         class="c3"
+        href="https://www.bbc.co.uk/news"
       >
-        <a
-          class="c4"
-          href="https://www.bbc.co.uk/news"
-        >
-          The headline of the promo
-        </a>
-      </h3>
-      <p
-        class="c5"
-      >
-        The summary of the promo
-      </p>
-    </div>
+        The headline of the promo
+      </a>
+    </h3>
+    <p
+      class="c4"
+    >
+      The summary of the promo
+    </p>
+  </div>
+  <div
+    class="c5"
+  >
+    <img
+      alt="Alt text"
+      src="https://foobar.com/image.png"
+    />
     <div
       class="c6"
     >
-      <img
-        alt="Alt text"
-        src="https://foobar.com/image.png"
-      />
       <div
+        aria-hidden="true"
         class="c7"
       >
         <div
-          aria-hidden="true"
           class="c8"
         >
-          <div
+          <svg
             class="c9"
+            focusable="false"
+            height="12px"
+            viewBox="0 0 32 32"
+            width="12px"
           >
-            <svg
-              class="c10"
-              focusable="false"
-              height="12px"
-              viewBox="0 0 32 32"
-              width="12px"
-            >
-              <polygon
-                points="3,32 29,16 3,0"
-              />
-            </svg>
-            <time
-              class="c11"
-              datetime="PT2M15S"
-            >
-              2:15
-            </time>
-          </div>
+            <polygon
+              points="3,32 29,16 3,0"
+            />
+          </svg>
+          <time
+            class="c10"
+            datetime="PT2M15S"
+          >
+            2:15
+          </time>
         </div>
       </div>
-    </div>
-  </div>
-  <div
-    class="c12"
-  >
-    <div
-      class="c13"
-    >
-      <img
-        alt="Alt text"
-        src="https://foobar.com/image.png"
-      />
-      <div
-        class="c7"
-      >
-        <div
-          aria-hidden="true"
-          class="c8"
-        >
-          <div
-            class="c9"
-          >
-            <svg
-              class="c10"
-              focusable="false"
-              height="12px"
-              viewBox="0 0 32 32"
-              width="12px"
-            >
-              <polygon
-                points="3,32 29,16 3,0"
-              />
-            </svg>
-            <time
-              class="c11"
-              datetime="PT2M15S"
-            >
-              2:15
-            </time>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div
-      class="c13"
-    >
-      <h3
-        class="c3"
-      >
-        <a
-          class="c4"
-          href="https://www.bbc.co.uk/news"
-        >
-          The headline of the promo
-        </a>
-      </h3>
-      <p
-        class="c5"
-      >
-        The summary of the promo
-      </p>
     </div>
   </div>
 </div>
