@@ -120,7 +120,7 @@ const StyledListItem = styled.li`
 `;
 
 const List = ({ links, TrustProjectLink }) => (
-  <div>
+  <>
     {TrustProjectLink && (
       <StyledList role="list" TrustProjectLink={TrustProjectLink} links={links}>
         <StyledListItem key={TrustProjectLink.text} role="listitem">
@@ -143,7 +143,7 @@ const List = ({ links, TrustProjectLink }) => (
         ))}
       </StyledListNoTrustLink>
     )}
-  </div>
+  </>
 );
 
 const linkPropTypes = shape({

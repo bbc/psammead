@@ -1,6 +1,6 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import { withKnobs } from '@storybook/addon-knobs';
+import { withKnobs, boolean } from '@storybook/addon-knobs';
 import { inputProvider } from '@bbc/psammead-storybook-helpers';
 import notes from '../README.md';
 import SitewideLinks from './index';
@@ -36,32 +36,12 @@ storiesOf('Components|SitewideLinks', module)
           <SitewideLinks
             links={links}
             copyrightText={copyrightText}
-            externalLink={buildLink(externalLinkText)}
-            service={service}
-          />
-        );
-      },
-    }),
-    { notes, knobs: { escapeHTML: false } },
-  )
-  .add(
-    'with TrustProjectLink',
-    inputProvider({
-      slots: linkNames,
-      /* eslint-disable react/prop-types */
-      componentFunction: ({
-        slotTexts: [externalLinkText, copyrightText, ...linkTexts],
-        service,
-      }) => {
-        const links = linkTexts.map(buildLink);
-        return (
-          <SitewideLinks
-            links={links}
-            copyrightText={copyrightText}
-            TrustProjectLink={{
-              href: 'https://www.bbc.co.uk/news',
-              text: 'Why you can trust the bbc',
-            }}
+            TrustProjectLink={
+              boolean('TrustProjectLink', false) && {
+                href: 'https://www.bbc.co.uk/news',
+                text: 'Why you can trust the bbc',
+              }
+            }
             externalLink={buildLink(externalLinkText)}
             service={service}
           />

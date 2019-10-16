@@ -145,118 +145,116 @@ exports[`SitewideLinks should render correctly 1`] = `
   <div
     class="c1"
   >
-    <div>
-      <ul
-        class="c2"
-        role="list"
+    <ul
+      class="c2"
+      role="list"
+    >
+      <li
+        class="c3"
+        role="listitem"
       >
-        <li
-          class="c3"
-          role="listitem"
+        <a
+          class="c4 c5"
+          href="https://www.bbc.co.uk/news"
         >
-          <a
-            class="c4 c5"
-            href="https://www.bbc.co.uk/news"
+          <span
+            class="c6"
           >
-            <span
-              class="c6"
-            >
-              Link0
-            </span>
-          </a>
-        </li>
-        <li
-          class="c3"
-          role="listitem"
+            Link0
+          </span>
+        </a>
+      </li>
+      <li
+        class="c3"
+        role="listitem"
+      >
+        <a
+          class="c4 c5"
+          href="https://www.bbc.co.uk/news"
         >
-          <a
-            class="c4 c5"
-            href="https://www.bbc.co.uk/news"
+          <span
+            class="c6"
           >
-            <span
-              class="c6"
-            >
-              Link1
-            </span>
-          </a>
-        </li>
-        <li
-          class="c3"
-          role="listitem"
+            Link1
+          </span>
+        </a>
+      </li>
+      <li
+        class="c3"
+        role="listitem"
+      >
+        <a
+          class="c4 c5"
+          href="https://www.bbc.co.uk/news"
         >
-          <a
-            class="c4 c5"
-            href="https://www.bbc.co.uk/news"
+          <span
+            class="c6"
           >
-            <span
-              class="c6"
-            >
-              Link2
-            </span>
-          </a>
-        </li>
-        <li
-          class="c3"
-          role="listitem"
+            Link2
+          </span>
+        </a>
+      </li>
+      <li
+        class="c3"
+        role="listitem"
+      >
+        <a
+          class="c4 c5"
+          href="https://www.bbc.co.uk/news"
         >
-          <a
-            class="c4 c5"
-            href="https://www.bbc.co.uk/news"
+          <span
+            class="c6"
           >
-            <span
-              class="c6"
-            >
-              Link3
-            </span>
-          </a>
-        </li>
-        <li
-          class="c3"
-          role="listitem"
+            Link3
+          </span>
+        </a>
+      </li>
+      <li
+        class="c3"
+        role="listitem"
+      >
+        <a
+          class="c4 c5"
+          href="https://www.bbc.co.uk/news"
         >
-          <a
-            class="c4 c5"
-            href="https://www.bbc.co.uk/news"
+          <span
+            class="c6"
           >
-            <span
-              class="c6"
-            >
-              Link4
-            </span>
-          </a>
-        </li>
-        <li
-          class="c3"
-          role="listitem"
+            Link4
+          </span>
+        </a>
+      </li>
+      <li
+        class="c3"
+        role="listitem"
+      >
+        <a
+          class="c4 c5"
+          href="https://www.bbc.co.uk/news"
         >
-          <a
-            class="c4 c5"
-            href="https://www.bbc.co.uk/news"
+          <span
+            class="c6"
           >
-            <span
-              class="c6"
-            >
-              Link5
-            </span>
-          </a>
-        </li>
-        <li
-          class="c3"
-          role="listitem"
+            Link5
+          </span>
+        </a>
+      </li>
+      <li
+        class="c3"
+        role="listitem"
+      >
+        <a
+          class="c4 c5"
+          href="https://www.bbc.co.uk/news"
         >
-          <a
-            class="c4 c5"
-            href="https://www.bbc.co.uk/news"
+          <span
+            class="c6"
           >
-            <span
-              class="c6"
-            >
-              Link6
-            </span>
-          </a>
-        </li>
-      </ul>
-    </div>
+            Link6
+          </span>
+        </a>
+      </li>
+    </ul>
     <p
       class="c7"
     >

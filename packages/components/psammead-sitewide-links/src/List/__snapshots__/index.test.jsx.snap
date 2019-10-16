@@ -86,118 +86,116 @@ exports[`List should render correctly with 7 items 1`] = `
   }
 }
 
-<div>
-  <ul
-    class="c0"
-    role="list"
+<ul
+  class="c0"
+  role="list"
+>
+  <li
+    class="c1"
+    role="listitem"
   >
-    <li
-      class="c1"
-      role="listitem"
+    <a
+      class="c2 c3"
+      href="https://www.bbc.co.uk/news"
     >
-      <a
-        class="c2 c3"
-        href="https://www.bbc.co.uk/news"
+      <span
+        class="c4"
       >
-        <span
-          class="c4"
-        >
-          Link0
-        </span>
-      </a>
-    </li>
-    <li
-      class="c1"
-      role="listitem"
+        Link0
+      </span>
+    </a>
+  </li>
+  <li
+    class="c1"
+    role="listitem"
+  >
+    <a
+      class="c2 c3"
+      href="https://www.bbc.co.uk/news"
     >
-      <a
-        class="c2 c3"
-        href="https://www.bbc.co.uk/news"
+      <span
+        class="c4"
       >
-        <span
-          class="c4"
-        >
-          Link1
-        </span>
-      </a>
-    </li>
-    <li
-      class="c1"
-      role="listitem"
+        Link1
+      </span>
+    </a>
+  </li>
+  <li
+    class="c1"
+    role="listitem"
+  >
+    <a
+      class="c2 c3"
+      href="https://www.bbc.co.uk/news"
     >
-      <a
-        class="c2 c3"
-        href="https://www.bbc.co.uk/news"
+      <span
+        class="c4"
       >
-        <span
-          class="c4"
-        >
-          Link2
-        </span>
-      </a>
-    </li>
-    <li
-      class="c1"
-      role="listitem"
+        Link2
+      </span>
+    </a>
+  </li>
+  <li
+    class="c1"
+    role="listitem"
+  >
+    <a
+      class="c2 c3"
+      href="https://www.bbc.co.uk/news"
     >
-      <a
-        class="c2 c3"
-        href="https://www.bbc.co.uk/news"
+      <span
+        class="c4"
       >
-        <span
-          class="c4"
-        >
-          Link3
-        </span>
-      </a>
-    </li>
-    <li
-      class="c1"
-      role="listitem"
+        Link3
+      </span>
+    </a>
+  </li>
+  <li
+    class="c1"
+    role="listitem"
+  >
+    <a
+      class="c2 c3"
+      href="https://www.bbc.co.uk/news"
     >
-      <a
-        class="c2 c3"
-        href="https://www.bbc.co.uk/news"
+      <span
+        class="c4"
       >
-        <span
-          class="c4"
-        >
-          Link4
-        </span>
-      </a>
-    </li>
-    <li
-      class="c1"
-      role="listitem"
+        Link4
+      </span>
+    </a>
+  </li>
+  <li
+    class="c1"
+    role="listitem"
+  >
+    <a
+      class="c2 c3"
+      href="https://www.bbc.co.uk/news"
     >
-      <a
-        class="c2 c3"
-        href="https://www.bbc.co.uk/news"
+      <span
+        class="c4"
       >
-        <span
-          class="c4"
-        >
-          Link5
-        </span>
-      </a>
-    </li>
-    <li
-      class="c1"
-      role="listitem"
+        Link5
+      </span>
+    </a>
+  </li>
+  <li
+    class="c1"
+    role="listitem"
+  >
+    <a
+      class="c2 c3"
+      href="https://www.bbc.co.uk/news"
     >
-      <a
-        class="c2 c3"
-        href="https://www.bbc.co.uk/news"
+      <span
+        class="c4"
       >
-        <span
-          class="c4"
-        >
-          Link6
-        </span>
-      </a>
-    </li>
-  </ul>
-</div>
+        Link6
+      </span>
+    </a>
+  </li>
+</ul>
 `;
 
 exports[`List should render correctly with 8 items 1`] = `
@@ -286,131 +284,129 @@ exports[`List should render correctly with 8 items 1`] = `
   }
 }
 
-<div>
-  <ul
-    class="c0"
-    role="list"
+<ul
+  class="c0"
+  role="list"
+>
+  <li
+    class="c1"
+    role="listitem"
   >
-    <li
-      class="c1"
-      role="listitem"
+    <a
+      class="c2 c3"
+      href="https://www.bbc.co.uk/news"
     >
-      <a
-        class="c2 c3"
-        href="https://www.bbc.co.uk/news"
+      <span
+        class="c4"
       >
-        <span
-          class="c4"
-        >
-          Link0
-        </span>
-      </a>
-    </li>
-    <li
-      class="c1"
-      role="listitem"
+        Link0
+      </span>
+    </a>
+  </li>
+  <li
+    class="c1"
+    role="listitem"
+  >
+    <a
+      class="c2 c3"
+      href="https://www.bbc.co.uk/news"
     >
-      <a
-        class="c2 c3"
-        href="https://www.bbc.co.uk/news"
+      <span
+        class="c4"
       >
-        <span
-          class="c4"
-        >
-          Link1
-        </span>
-      </a>
-    </li>
-    <li
-      class="c1"
-      role="listitem"
+        Link1
+      </span>
+    </a>
+  </li>
+  <li
+    class="c1"
+    role="listitem"
+  >
+    <a
+      class="c2 c3"
+      href="https://www.bbc.co.uk/news"
     >
-      <a
-        class="c2 c3"
-        href="https://www.bbc.co.uk/news"
+      <span
+        class="c4"
       >
-        <span
-          class="c4"
-        >
-          Link2
-        </span>
-      </a>
-    </li>
-    <li
-      class="c1"
-      role="listitem"
+        Link2
+      </span>
+    </a>
+  </li>
+  <li
+    class="c1"
+    role="listitem"
+  >
+    <a
+      class="c2 c3"
+      href="https://www.bbc.co.uk/news"
     >
-      <a
-        class="c2 c3"
-        href="https://www.bbc.co.uk/news"
+      <span
+        class="c4"
       >
-        <span
-          class="c4"
-        >
-          Link3
-        </span>
-      </a>
-    </li>
-    <li
-      class="c1"
-      role="listitem"
+        Link3
+      </span>
+    </a>
+  </li>
+  <li
+    class="c1"
+    role="listitem"
+  >
+    <a
+      class="c2 c3"
+      href="https://www.bbc.co.uk/news"
     >
-      <a
-        class="c2 c3"
-        href="https://www.bbc.co.uk/news"
+      <span
+        class="c4"
       >
-        <span
-          class="c4"
-        >
-          Link4
-        </span>
-      </a>
-    </li>
-    <li
-      class="c1"
-      role="listitem"
+        Link4
+      </span>
+    </a>
+  </li>
+  <li
+    class="c1"
+    role="listitem"
+  >
+    <a
+      class="c2 c3"
+      href="https://www.bbc.co.uk/news"
     >
-      <a
-        class="c2 c3"
-        href="https://www.bbc.co.uk/news"
+      <span
+        class="c4"
       >
-        <span
-          class="c4"
-        >
-          Link5
-        </span>
-      </a>
-    </li>
-    <li
-      class="c1"
-      role="listitem"
+        Link5
+      </span>
+    </a>
+  </li>
+  <li
+    class="c1"
+    role="listitem"
+  >
+    <a
+      class="c2 c3"
+      href="https://www.bbc.co.uk/news"
     >
-      <a
-        class="c2 c3"
-        href="https://www.bbc.co.uk/news"
+      <span
+        class="c4"
       >
-        <span
-          class="c4"
-        >
-          Link6
-        </span>
-      </a>
-    </li>
-    <li
-      class="c1"
-      role="listitem"
+        Link6
+      </span>
+    </a>
+  </li>
+  <li
+    class="c1"
+    role="listitem"
+  >
+    <a
+      class="c2 c3"
+      href="https://www.bbc.co.uk/news"
     >
-      <a
-        class="c2 c3"
-        href="https://www.bbc.co.uk/news"
+      <span
+        class="c4"
       >
-        <span
-          class="c4"
-        >
-          Link7
-        </span>
-      </a>
-    </li>
-  </ul>
-</div>
+        Link7
+      </span>
+    </a>
+  </li>
+</ul>
 `;
