@@ -6,6 +6,7 @@ import renderWithHelmet from './src/renderWithHelmet';
 
 const testHelpersExpectedExports = {
   shouldMatchSnapshot: 'function',
+  matchSnapshotAsync: 'function',
   isNull: 'function',
   testUtilityPackages: 'function',
   setWindowValue: 'function',
