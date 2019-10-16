@@ -1,4 +1,4 @@
-# Psammead Story Promo Feature Changelog
+# Leading Story Promo Changelog
 
 | Version | Description |
 |---------|-------------|

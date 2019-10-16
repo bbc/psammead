@@ -3,7 +3,7 @@ import { shouldMatchSnapshot } from '@bbc/psammead-test-helpers';
 import { latin } from '@bbc/gel-foundations/scripts';
 import MediaIndicator from '@bbc/psammead-media-indicator';
 import { Headline, Summary, Link } from '@bbc/psammead-story-promo';
-import FeaturedStoryPromo from './index';
+import LeadingStoryPromo from './index';
 
 const Image = <img src="https://foobar.com/image.png" alt="Alt text" />;
 
@@ -23,7 +23,7 @@ const mediaInfo = (
   <MediaIndicator duration="2:15" datetime="PT2M15S" service="news" />
 );
 
-describe('FeaturedStoryPromo', () => {
+describe('LeadingStoryPromo', () => {
   const leadingPromo = {
     image: Image,
     info: Info(),
@@ -32,7 +32,7 @@ describe('FeaturedStoryPromo', () => {
 
   shouldMatchSnapshot(
     'should render correctly',
-    <FeaturedStoryPromo
+    <LeadingStoryPromo
       leadingPromo={leadingPromo}
       secondaryPromo={leadingPromo}
     />,

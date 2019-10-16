@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`FeaturedStoryPromo should render correctly 1`] = `
+exports[`LeadingStoryPromo should render correctly 1`] = `
 .c10 {
   vertical-align: middle;
   margin: 0 0.25rem;

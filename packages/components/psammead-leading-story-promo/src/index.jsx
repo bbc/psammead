@@ -29,7 +29,7 @@ ImageComponent.defaultProps = {
   mediaIndicator: null,
 };
 
-const FeaturedStoryPromo = ({ leadingPromo, secondaryPromo }) => (
+const LeadingStoryPromo = ({ leadingPromo, secondaryPromo }) => (
   <Grid columns={{ group4: 8 }} enableGelGutters>
     <Grid columns={{ group4: 6 }} enableGelGutters>
       <Grid item columns={{ group4: 2 }}>
@@ -56,15 +56,15 @@ const FeaturedStoryPromo = ({ leadingPromo, secondaryPromo }) => (
   </Grid>
 );
 
-const featurePromoProps = {
+const leadingPromoProps = {
   image: node.isRequired,
   info: node.isRequired,
   mediaIndicator: node,
 };
 
-FeaturedStoryPromo.propTypes = {
-  leadingPromo: shape(featurePromoProps).isRequired,
-  secondaryPromo: shape(featurePromoProps).isRequired,
+LeadingStoryPromo.propTypes = {
+  leadingPromo: shape(leadingPromoProps).isRequired,
+  secondaryPromo: shape(leadingPromoProps).isRequired,
 };
 
-export default FeaturedStoryPromo;
+export default LeadingStoryPromo;

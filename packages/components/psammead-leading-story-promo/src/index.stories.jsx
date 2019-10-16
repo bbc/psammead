@@ -5,7 +5,7 @@ import { inputProvider } from '@bbc/psammead-storybook-helpers';
 import Image from '@bbc/psammead-image';
 import { Headline, Summary, Link } from '@bbc/psammead-story-promo';
 import notes from '../README.md';
-import FeaturedStoryPromo from './index';
+import LeadingStoryPromo from './index';
 
 const buildImg = () => (
   <Image
@@ -63,7 +63,7 @@ const generateStory = () =>
       };
 
       return (
-        <FeaturedStoryPromo
+        <LeadingStoryPromo
           leadingPromo={leadingStoryPromo}
           secondaryPromo={secondaryStoryPromo}
         />
@@ -72,7 +72,7 @@ const generateStory = () =>
   });
 /* eslint-enable react/prop-types */
 
-storiesOf('Components|FeaturedStoryPromo', module)
+storiesOf('Components|LeadingStoryPromo', module)
   .addDecorator(withKnobs)
   .add('default', generateStory(), {
     notes,
