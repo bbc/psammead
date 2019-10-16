@@ -1,9 +1,9 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { withKnobs } from '@storybook/addon-knobs';
+import { withServicesKnob } from '@bbc/psammead-test-helpers';
 import notes from '../README.md';
 import SitewideLinks from './index';
-import { withServicesKnob } from '../../../utilities/psammead-storybook-helpers/src';
 
 const buildLink = text => ({
   text,
