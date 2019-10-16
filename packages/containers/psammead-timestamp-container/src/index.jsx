@@ -1,7 +1,6 @@
 import React from 'react';
 import { number, string, bool, shape, func } from 'prop-types';
 import { scriptPropType } from '@bbc/gel-foundations/prop-types';
-import moment from 'moment';
 import Timestamp from '@bbc/psammead-timestamp';
 import {
   isValidDateTime,
@@ -26,10 +25,6 @@ const TimestampContainer = ({
   let altDateTime;
   if (!isValidDateTime(new Date(timestamp))) {
     return null;
-  }
-
-  if (locale) {
-    moment.locale(locale);
   }
 
   const mainDateTime = formatUnixTimestamp(
