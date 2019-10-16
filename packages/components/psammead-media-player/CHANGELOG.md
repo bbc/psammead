@@ -3,7 +3,7 @@
 <!-- prettier-ignore -->
 | Version       | Description                                                                                                                  |
 | ------------- | ---------------------------------------------------------------------------------------------------------------------------- |
-| 1.1.1-alpha.8 | [PR#xxx](https://github.com/bbc/psammead/pull/xxx) Update AMP story audio skin AMP placeholder image                       |
+| 1.1.1-alpha.8 | [PR#2410](https://github.com/bbc/psammead/pull/2410) Update AMP story audio skin AMP placeholder image                       |
 | 1.1.1-alpha.7 | [PR#2312](https://github.com/bbc/psammead/pull/2312) Add lang to the embed src URL in storybook examples                     |
 | 1.1.1-alpha.6 | [PR#2297](https://github.com/bbc/psammead/pull/2297) define placeholderSrc                                                   |
 | 1.1.1-alpha.5 | [PR#2280](https://github.com/bbc/psammead/pull/2280) Remove `scrolling="no"` for a11y best practice                          |
