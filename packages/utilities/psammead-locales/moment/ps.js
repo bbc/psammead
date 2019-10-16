@@ -15,9 +15,7 @@ moment.defineLocale('ps', {
     hh: '%d ساعتونه', // %d 'hours'
   },
   postformat: function(string) {
-    var useEasternNumerals = numerals.makeNumeralTranslator(
-      numerals.EasternArabic
-    );
+    var useEasternNumerals = numerals.makeNumeralTranslator(numerals.EasternArabic);
     return useEasternNumerals(string).replace(/,/g, '،');
   },
 });
