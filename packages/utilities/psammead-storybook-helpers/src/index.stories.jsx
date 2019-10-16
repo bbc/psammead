@@ -65,74 +65,71 @@ storiesOf('Utilities|Input Provider', module)
     { notes },
   );
 
-const withServicesKnobStories = storiesOf('Utilities|withServicesKnob', module);
-
-withServicesKnobStories
+storiesOf('Utilities|withServicesKnob', module)
   .addDecorator(withKnobs)
-  .addDecorator(withServicesKnob())
   .add(
     'default',
-    ({ text, dir, script, service }) => (
-      <>
-        <p>I toggle dir based on language.</p>
-        <p>I also provide components with these props:</p>
-        <ul>
-          <li>text: {text}</li>
-          <li>service: {service}</li>
-          <li>dir: {dir}</li>
-          <li>
-            script: <pre>{JSON.stringify(script, null, ' ')}</pre>
-          </li>
-        </ul>
-      </>
-    ),
+    () =>
+      withServicesKnob()(({ text, dir, script, service }) => (
+        <>
+          <p>I toggle dir based on language.</p>
+          <p>I also provide components with these props:</p>
+          <ul>
+            <li>text: {text}</li>
+            <li>service: {service}</li>
+            <li>dir: {dir}</li>
+            <li>
+              script: <pre>{JSON.stringify(script, null, ' ')}</pre>
+            </li>
+          </ul>
+        </>
+      )),
     { notes },
-  );
-
-withServicesKnobStories
-  .addDecorator(withKnobs)
-  .addDecorator(withServicesKnob({ defaultService: 'arabic' }))
+  )
   .add(
     'withServicesKnob with defaultService option',
-    ({ text, dir, script, service }) => (
-      <>
-        <p>I toggle dir based on language.</p>
-        <p>The default service is `arabic`.</p>
-        <p>I also provide components with these props:</p>
-        <ul>
-          <li>text: {text}</li>
-          <li>service: {service}</li>
-          <li>dir: {dir}</li>
-          <li>
-            script: <pre>{JSON.stringify(script, null, ' ')}</pre>
-          </li>
-        </ul>
-      </>
-    ),
+    () =>
+      withServicesKnob({ defaultService: 'arabic' })(
+        ({ text, dir, script, service }) => (
+          <>
+            <p>I toggle dir based on language.</p>
+            <p>The default service is `arabic`.</p>
+            <p>I also provide components with these props:</p>
+            <ul>
+              <li>text: {text}</li>
+              <li>service: {service}</li>
+              <li>dir: {dir}</li>
+              <li>
+                script: <pre>{JSON.stringify(script, null, ' ')}</pre>
+              </li>
+            </ul>
+          </>
+        ),
+      ),
     { notes },
-  );
-
-storiesOf('Utilities|withServicesKnob', module)
-  .addDecorator(withServicesKnob({ services: ['news', 'arabic', 'amharic'] }))
+  )
   .add(
     'withServicesKnob with services option',
-    ({ text, dir, script, service }) => (
-      <>
-        <p>I toggle dir based on language.</p>
-        <p>
-          The list of services you can select include only `news`, `arabic`,
-          `amharic`.
-        </p>
-        <p>I also provide components with these props:</p>
-        <ul>
-          <li>text: {text}</li>
-          <li>service: {service}</li>
-          <li>dir: {dir}</li>
-          <li>
-            script: <pre>{JSON.stringify(script, null, ' ')}</pre>
-          </li>
-        </ul>
-      </>
-    ),
+    () =>
+      withServicesKnob({ services: ['news', 'arabic', 'amharic'] })(
+        ({ text, dir, script, service }) => (
+          <>
+            <p>I toggle dir based on language.</p>
+            <p>
+              The list of services you can select include only `news`, `arabic`,
+              `amharic`.
+            </p>
+            <p>I also provide components with these props:</p>
+            <ul>
+              <li>text: {text}</li>
+              <li>service: {service}</li>
+              <li>dir: {dir}</li>
+              <li>
+                script: <pre>{JSON.stringify(script, null, ' ')}</pre>
+              </li>
+            </ul>
+          </>
+        ),
+      ),
     { notes },
   );
