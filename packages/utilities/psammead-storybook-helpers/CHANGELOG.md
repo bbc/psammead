@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 6.1.0 | [PR#2402](https://github.com/bbc/psammead/pull/2402) adds withServicesKnob decorator |
 | 6.0.4 | [PR#2344](https://github.com/bbc/psammead/pull/2344) Update `punjabi` locale from `pa` to `pa-in` |
 | 6.0.3 | [PR#2191](https://github.com/bbc/psammead/pull/2191) Talos - Bump Dependencies - @bbc/gel-foundations |
 | 6.0.2 | [PR#2114](https://github.com/bbc/psammead/pull/2114) Update serbianCyr locale to `sr-cyrl`|
