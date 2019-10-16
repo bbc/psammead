@@ -9,6 +9,7 @@ import {
   withKnobs,
 } from '@storybook/addon-knobs';
 import moment from 'moment';
+import { jalaali } from '@bbc/psammead-calendars';
 
 // New locales
 import '@bbc/psammead-locales/moment/am';
@@ -149,13 +150,16 @@ storiesOf('Containers|TimestampContainer', module)
       // eslint-disable-next-line react/prop-types
       componentFunction: ({ locale, script, service }) => {
         updateAllTimestamps();
-
         const storyTimestamp = select(
           'Timestamp',
           timestamps,
           timestamps['Fixed (27 Aug 2019)'],
         );
-
+        const getAltCalendar = () =>
+          ({
+            fa: jalaali,
+            ps: jalaali,
+          }[locale]);
         return (
           <TimestampContainer
             timestamp={getTimestampValue(storyTimestamp)}
@@ -165,6 +169,7 @@ storiesOf('Containers|TimestampContainer', module)
             script={script}
             locale={locale}
             service={service}
+            altCalendar={getAltCalendar()}
           />
         );
       },
