@@ -70,9 +70,9 @@ CanonicalMediaPlayer.propTypes = {
   service: string.isRequired,
   mediaInfo: shape({
     title: string.isRequired,
-    datetime: string.isRequired,
-    duration: string.isRequired,
-    durationSpoken: string.isRequired,
+    datetime: string,
+    duration: string,
+    durationSpoken: string,
     type: oneOf(['video', 'audio']),
   }).isRequired,
 };
