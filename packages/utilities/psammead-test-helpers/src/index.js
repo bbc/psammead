@@ -3,24 +3,32 @@ import 'jest-styled-components';
 import deepClone from 'ramda/src/clone';
 import renderWithHelmet from './renderWithHelmet';
 
+const createSnapshot = (component, done) => {
+  // select the first child to remove the pointless wrapping div from snapshots
+  const removeWrappingDiv = container => container.firstChild;
+  renderWithHelmet(component).then(({ container }) => {
+    const hasOneChild = container.children.length === 1;
+    /*
+     * if the container has more than one child then it's a component that uses a
+     * fragment at the top level so we should not select the first child because it
+     * wouldn't snapshot the whole component
+     */
+    expect(
+      hasOneChild ? removeWrappingDiv(container) : container,
+    ).toMatchSnapshot();
+
+    done();
+  });
+};
+
 export const shouldMatchSnapshot = (title, component) => {
   it(title, done => {
-    // select the first child to remove the pointless wrapping div from snapshots
-    const removeWrappingDiv = container => container.firstChild;
-    renderWithHelmet(component).then(({ container }) => {
-      const hasOneChild = container.children.length === 1;
-      /*
-       * if the container has more than one child then it's a component that uses a
-       * fragment at the top level so we should not select the first child because it
-       * wouldn't snapshot the whole component
-       */
-      expect(
-        hasOneChild ? removeWrappingDiv(container) : container,
-      ).toMatchSnapshot();
-
-      done();
-    });
+    createSnapshot(component, done);
   });
+};
+
+export const matchSnapshotAsync = (component, done) => {
+  createSnapshot(component, done);
 };
 
 export const isNull = (title, component) => {
@@ -129,22 +137,5 @@ export const testUtilityPackages = (
       expectedExports,
       utilityName,
     );
-  });
-};
-
-export const matchSnapshotAsync = (component, done) => {
-  const removeWrappingDiv = container => container.firstChild;
-  renderWithHelmet(component).then(({ container }) => {
-    const hasOneChild = container.children.length === 1;
-    /*
-     * if the container has more than one child then it's a component that uses a
-     * fragment at the top level so we should not select the first child because it
-     * wouldn't snapshot the whole component
-     */
-    expect(
-      hasOneChild ? removeWrappingDiv(container) : container,
-    ).toMatchSnapshot();
-
-    done();
   });
 };
