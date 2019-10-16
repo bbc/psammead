@@ -131,3 +131,20 @@ export const testUtilityPackages = (
     );
   });
 };
+
+export const matchSnapshotAsync = (component, done) => {
+  const removeWrappingDiv = container => container.firstChild;
+  renderWithHelmet(component).then(({ container }) => {
+    const hasOneChild = container.children.length === 1;
+    /*
+     * if the container has more than one child then it's a component that uses a
+     * fragment at the top level so we should not select the first child because it
+     * wouldn't snapshot the whole component
+     */
+    expect(
+      hasOneChild ? removeWrappingDiv(container) : container,
+    ).toMatchSnapshot();
+
+    done();
+  });
+};
