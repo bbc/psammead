@@ -80,7 +80,9 @@ withServicesKnobStories
           <li>text: {text}</li>
           <li>service: {service}</li>
           <li>dir: {dir}</li>
-          <li>script: {JSON.stringify(script)}</li>
+          <li>
+            script: <pre>{JSON.stringify(script, null, ' ')}</pre>
+          </li>
         </ul>
       </>
     ),
@@ -101,7 +103,9 @@ withServicesKnobStories
           <li>text: {text}</li>
           <li>service: {service}</li>
           <li>dir: {dir}</li>
-          <li>script: {JSON.stringify(script)}</li>
+          <li>
+            script: <pre>{JSON.stringify(script, null, ' ')}</pre>
+          </li>
         </ul>
       </>
     ),
@@ -124,7 +128,9 @@ storiesOf('Utilities|withServicesKnob', module)
           <li>text: {text}</li>
           <li>service: {service}</li>
           <li>dir: {dir}</li>
-          <li>script: {JSON.stringify(script)}</li>
+          <li>
+            script: <pre>{JSON.stringify(script, null, ' ')}</pre>
+          </li>
         </ul>
       </>
     ),
