@@ -523,6 +523,12 @@ exports[`Navigation should render correctly 1`] = `
   }
 }
 
+@media (min-width:24.9375rem) {
+  .c14 {
+    width: 4rem;
+  }
+}
+
 @media (min-width:80rem) {
   .c14 {
     display: none;

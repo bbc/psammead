@@ -371,6 +371,9 @@ const StyledNavGradient = styled.div`
   ${({ dir }) => (dir === 'ltr' ? 'right' : 'left')}: 0;
   top: 0;
   pointer-events: none;
+  @media (min-width: ${GEL_GROUP_1_SCREEN_WIDTH_MAX}) {
+    width: 4rem;
+  }
   @media (min-width: ${GEL_GROUP_4_SCREEN_WIDTH_MAX}) {
     display: none;
   }
