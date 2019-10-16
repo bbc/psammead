@@ -171,7 +171,3 @@ We welcome feedback and help on this work. By participating in this project, you
 ### License
 
 Psammead is [Apache 2.0 licensed](https://github.com/bbc/psammead/blob/latest/LICENSE).
-
-```
-
-```
