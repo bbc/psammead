@@ -120,7 +120,7 @@ const StyledListItem = styled.li`
 `;
 
 const List = ({ links, trustProjectLink }) => (
-  <div trustProjectLink={trustProjectLink} links={links}>
+  <div>
     {trustProjectLink && (
       <StyledList role="list" trustProjectLink={trustProjectLink} links={links}>
         <StyledListItem key={trustProjectLink.text} role="listitem">

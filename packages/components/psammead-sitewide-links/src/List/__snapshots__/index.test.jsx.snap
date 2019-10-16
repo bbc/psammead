@@ -86,9 +86,7 @@ exports[`List should render correctly with 7 items 1`] = `
   }
 }
 
-<div
-  links="[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]"
->
+<div>
   <ul
     class="c0"
     role="list"
@@ -288,9 +286,7 @@ exports[`List should render correctly with 8 items 1`] = `
   }
 }
 
-<div
-  links="[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]"
->
+<div>
   <ul
     class="c0"
     role="list"

@@ -145,9 +145,7 @@ exports[`SitewideLinks should render correctly 1`] = `
   <div
     class="c1"
   >
-    <div
-      links="[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]"
-    >
+    <div>
       <ul
         class="c2"
         role="list"
