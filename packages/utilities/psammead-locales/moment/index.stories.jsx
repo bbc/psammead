@@ -16,7 +16,6 @@ import './az';
 import './bn';
 import './en-gb';
 import './es';
-import './fa';
 import './gu';
 import './ha';
 import './hi';
@@ -64,7 +63,6 @@ const locales = [
   { name: 'Nepali', locale: 'ne' },
   { name: 'News', locale: 'en-gb' },
   { name: 'Pashto', locale: 'ps', dir: 'rtl' },
-  { name: 'Persian', locale: 'fa', dir: 'rtl' },
   { name: 'Pidgin', locale: 'pcm' },
   { name: 'Punjabi', locale: 'pa-in' },
   { name: 'Russian', locale: 'ru' },
