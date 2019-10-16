@@ -145,6 +145,41 @@ storiesOf('Example', module)
   ));
 ```
 
+### withServicesKnob
+
+```js
+storiesOf('Components|Paragraph', module)
+  .addDecorator(withKnobs)
+  .addDecorator(withServicesKnob()) // default selected service is `news`
+  .add(
+    'A paragraph with English text',
+    ({ text, script, service }) => (
+      <Paragraph script={script} service={service}>
+        {text}
+      </Paragraph>
+    ),
+```
+
+To set a default service:
+
+```js
+storiesOf('Components|Paragraph', module)
+  .addDecorator(withKnobs)
+  .addDecorator(
+    withServicesKnob({
+      defaultService: 'arabic',
+      services: ['news', 'arabic', 'amharic']
+    })
+  ) // default selected service is `arabic` and the available services in the dropdown are `news`, `arabic`, `amharic`
+  .add(
+    'A paragraph with Arabic text',
+    ({ text, script, service }) => (
+      <Paragraph script={script} service={service}>
+        {text}
+      </Paragraph>
+    ),
+```
+
 ## Contributing
 
 When **adding** a new export to this utility package the [export tests](https://github.com/bbc/psammead/blob/dab14a2732cfa620e083b7da66a148b4189474a7/packages/utilities/psammead-storybook-helpers/index.test.jsx#L13-L15) also need to be updated. When **removing** an exisiting export from this utility package the [export tests](https://github.com/bbc/psammead/blob/dab14a2732cfa620e083b7da66a148b4189474a7/packages/utilities/psammead-storybook-helpers/index.test.jsx#L13-L15) need to be updated and the package version requires a major change (EG: 1.2.1 -> 2.0.0) as this would be considered a breaking change due to functionality being removed.
