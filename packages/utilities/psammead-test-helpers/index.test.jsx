@@ -233,4 +233,14 @@ describe('Psammead test helpers', () => {
     'should match the snapshot for the test component with helmet and other content',
     <HelmetWithContent />,
   );
+
+  it('should create a snapshot from an async it() block with component and done props', async done => {
+    const data = Promise.resolve('Foobar');
+    const component = (
+      <div>
+        <p>{await data}</p>
+      </div>
+    );
+    testHelpers.matchSnapshotAsync(component, done);
+  });
 });
