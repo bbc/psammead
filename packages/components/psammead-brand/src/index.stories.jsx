@@ -9,10 +9,10 @@ import {
 } from '@storybook/addon-knobs';
 import { storiesOf } from '@storybook/react';
 import * as svgs from '@bbc/psammead-assets/svgs';
-import { dirDecorator } from '@bbc/psammead-storybook-helpers';
 import { C_POSTBOX, C_WHITE } from '@bbc/psammead-styles/colours';
 import notes from '../README.md';
 import Brand from './index';
+import withServicesKnob from '../../../utilities/psammead-storybook-helpers/src/withServicesKnob';
 
 const inputs = () => {
   // capitalization is only for presentation purpose on the knob
@@ -50,7 +50,7 @@ const inputs = () => {
 
 storiesOf('Components|Brand', module)
   .addDecorator(withKnobs)
-  .addDecorator(dirDecorator)
+  .addDecorator(withServicesKnob())
   .add(
     'without brand link',
     () => {

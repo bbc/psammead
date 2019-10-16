@@ -2,9 +2,9 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 import styled from 'styled-components';
 import { withKnobs, text, boolean } from '@storybook/addon-knobs';
-import { dirDecorator } from '@bbc/psammead-storybook-helpers';
 import notes from '../README.md';
 import MediaIndicator from './index';
+import withServicesKnob from '../../../utilities/psammead-storybook-helpers/src/withServicesKnob';
 
 // To ensure the white box in the media indicator is visible.
 const Page = styled.div`
@@ -17,7 +17,7 @@ const PageDecorator = storyFn => <Page>{storyFn()}</Page>;
 storiesOf('Components|MediaIndicator/Video', module)
   .addDecorator(PageDecorator)
   .addDecorator(withKnobs)
-  .addDecorator(dirDecorator)
+  .addDecorator(withServicesKnob())
   .add(
     'video without duration',
     ({ service }) => (
@@ -57,7 +57,7 @@ storiesOf('Components|MediaIndicator/Video', module)
 storiesOf('Components|MediaIndicator/Audio', module)
   .addDecorator(PageDecorator)
   .addDecorator(withKnobs)
-  .addDecorator(dirDecorator)
+  .addDecorator(withServicesKnob())
   .add(
     'audio without duration',
     ({ service }) => (
@@ -98,7 +98,7 @@ storiesOf('Components|MediaIndicator/Audio', module)
 storiesOf('Components|MediaIndicator/Photo', module)
   .addDecorator(PageDecorator)
   .addDecorator(withKnobs)
-  .addDecorator(dirDecorator)
+  .addDecorator(withServicesKnob())
   .add(
     'photogallery',
     ({ service }) => (
