@@ -27,6 +27,7 @@ const StyledList = styled.ul`
   list-style-type: none;
   margin: 0;
   padding: 0 0 ${GEL_SPACING};
+  column-count: 3;
 
   @supports (${grid}) {
     display: grid;
@@ -35,6 +36,7 @@ const StyledList = styled.ul`
 
   @media (max-width: ${GEL_GROUP_0_SCREEN_WIDTH_MAX}) {
     grid-auto-flow: row;
+    column-count: 1;
   }
   @media (min-width: ${GEL_GROUP_1_SCREEN_WIDTH_MIN}) and (max-width: ${GEL_GROUP_2_SCREEN_WIDTH_MAX}) {
     grid-column-gap: ${GEL_SPACING};
@@ -43,6 +45,7 @@ const StyledList = styled.ul`
       ${({ children }) => getRowCount(children, 2)},
       auto
     );
+    column-count: 2;
   }
   @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) and (max-width: ${GEL_GROUP_3_SCREEN_WIDTH_MAX}) {
     grid-column-gap: ${GEL_SPACING_DBL};
@@ -51,6 +54,7 @@ const StyledList = styled.ul`
       ${({ children }) => getRowCount(children, 3)},
       auto
     );
+    column-count: 3;
   }
   @media (min-width: ${GEL_GROUP_4_SCREEN_WIDTH_MIN}) and (max-width: ${GEL_GROUP_4_SCREEN_WIDTH_MAX}) {
     grid-column-gap: ${GEL_SPACING_DBL};
@@ -59,6 +63,7 @@ const StyledList = styled.ul`
       ${({ children }) => getRowCount(children, 4)},
       auto
     );
+    column-count: 3;
   }
   @media (min-width: ${GEL_GROUP_5_SCREEN_WIDTH_MIN}) {
     grid-column-gap: ${GEL_SPACING_DBL};
@@ -67,23 +72,21 @@ const StyledList = styled.ul`
       ${({ children }) => getRowCount(children, 5)},
       auto
     );
+    column-count: 3;
   }
   > li:first-child {
     border-bottom: 1px solid ${C_SHADOW};
     padding: ${GEL_SPACING} 0;
     margin-bottom: ${GEL_SPACING};
     grid-column: 1/-1;
-    @supports not (${grid}) {
-      width: 100%;
-    }
+    width: 100%;
+    column-span: all;
   }
 `;
 
 const StyledListItem = styled.li`
   min-width: 50%;
-  @supports not (${grid}) {
-    display: inline-block;
-  }
+  column-gap: 1rem;
 `;
 
 const List = ({ links }) => (

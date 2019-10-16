@@ -14,8 +14,8 @@ Psammead Grid is a component that you can use to set out column-based layouts us
 <!-- prettier-ignore -->
 | Argument | Type | Required | Default | Example |
 | -------- | ---- | -------- | ------- | ------- |
-| columns | object | yes | N/A | { group1: 6, group2: 6, group3: 6, group4: 8, group5: 20 } |
-| startOffset | object | no | Sets all values as 1 for each of the groups defined in `columns` | { group1: 1, group2: 1, group3: 1, group4: 2, group5: 5 } |
+| columns | object | yes | N/A | { group0: 6, group1: 6, group2: 6, group3: 6, group4: 8, group5: 20 } |
+| startOffset | object | no | Sets all values as 1 for each of the groups defined in `columns` | { group0: 1, group1: 1, group2: 1, group3: 1, group4: 2, group5: 5 } |
 | item | boolean | no | false | `item` |
 | enableGelGutters | boolean | no | false | `enableGelGutter` |
 | enableGelMargins | boolean | no | false | `enableGelMargins` |
