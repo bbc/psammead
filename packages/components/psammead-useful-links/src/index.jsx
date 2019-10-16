@@ -7,7 +7,10 @@ import { getPica } from '@bbc/gel-foundations/typography';
 import {
   GEL_SPACING, // 8 px
 } from '@bbc/gel-foundations/spacings';
-import { GEL_GROUP_3_SCREEN_WIDTH_MIN } from '@bbc/gel-foundations/breakpoints';
+import {
+  GEL_GROUP_3_SCREEN_WIDTH_MIN,
+  GEL_GROUP_2_SCREEN_WIDTH_MAX,
+} from '@bbc/gel-foundations/breakpoints';
 import { node, string, shape } from 'prop-types';
 import { scriptPropType } from '@bbc/gel-foundations/prop-types';
 
@@ -53,6 +56,13 @@ export const UsefulLinksUl = styled.ul.attrs({ role: 'list' })`
 
 export const UsefulLinksLi = styled.li.attrs({ role: 'listitem' })`
   padding-top: ${GEL_SPACING};
+
+  @media (max-width: ${GEL_GROUP_2_SCREEN_WIDTH_MAX}) {
+    &:first-child {
+      padding-top: 0;
+    }
+  }
+
   width: 100%;
   @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
     display: inline-block;
