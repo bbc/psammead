@@ -29,7 +29,7 @@ ImageComponent.defaultProps = {
   mediaIndicator: null,
 };
 
-const LeadingStoryPromo = ({ info, image, mediaIndicator }) => (
+const LeadingStoryPromo = ({ image, info, mediaIndicator }) => (
   <Grid columns={{ group4: 8 }} enableGelGutters>
     <Grid item columns={{ group4: 2 }}>
       {info}
