@@ -46,14 +46,14 @@ const StyledParagraph = styled.p`
 
 const SitewideLinks = ({
   links,
-  trustProjectLink,
+  trustprojectlink,
   copyrightText,
   externalLink,
   service,
 }) => (
   <SitewideLinksWrapper service={service}>
     <ConstrainedWrapper>
-      <List links={links} trustProjectLink={trustProjectLink} />
+      <List links={links} trustprojectlink={trustprojectlink} />
       <StyledParagraph>
         {copyrightText}{' '}
         <Link text={externalLink.text} href={externalLink.href} inline />
@@ -67,7 +67,7 @@ const linkPropTypes = shape({
   text: string.isRequired,
 });
 
-const trustProjectLinkPropTypes = shape({
+const trustprojectlinkPropTypes = shape({
   href: string,
   text: string,
 });
@@ -75,11 +75,11 @@ const trustProjectLinkPropTypes = shape({
 SitewideLinks.propTypes = {
   links: arrayOf(linkPropTypes.isRequired).isRequired,
   copyrightText: node.isRequired,
-  trustProjectLink: trustProjectLinkPropTypes,
+  trustprojectlink: trustprojectlinkPropTypes,
   externalLink: linkPropTypes.isRequired,
   service: string.isRequired,
 };
 
-SitewideLinks.defaultProps = { trustProjectLink: null };
+SitewideLinks.defaultProps = { trustprojectlink: null };
 
 export default SitewideLinks;
