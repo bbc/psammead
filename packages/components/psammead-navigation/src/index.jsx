@@ -118,7 +118,6 @@ const StyledUnorderedList = styled.ul`
       grid-template-columns: repeat(1, 1fr);
     }
   `}
-}
 `;
 
 const StyledListItem = styled.li`

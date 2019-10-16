@@ -7,7 +7,12 @@ import igboNavData from '../testHelpers/igbo';
 describe('Navigation', () => {
   shouldMatchSnapshot(
     'should render correctly',
-    <Navigation script={latin} skipLinkText="Wụga n’ọdịnaya" service="news">
+    <Navigation
+      script={latin}
+      skipLinkText="Wụga n’ọdịnaya"
+      service="news"
+      amp={false}
+    >
       <NavigationUl>
         {igboNavData.map((item, index) => {
           const { title, url } = item;
