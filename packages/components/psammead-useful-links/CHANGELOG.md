@@ -2,6 +2,7 @@
 
 | Version | Description |
 |---------|-------------|
+| 1.0.2 | [PR#2414](https://github.com/bbc/psammead/pull/2414) Talos - Bump Dependencies - @bbc/psammead-styles |
 | 1.0.1 | [PR#2380](https://github.com/bbc/psammead/pull/2380) Talos - Bump Dependencies - @bbc/psammead-styles |
 | 1.0.0 | [PR#2370](https://github.com/bbc/psammead/pull/2370) Alpha tag removed from component |
 | 1.0.0-alpha.4 | [PR#2365](https://github.com/bbc/psammead/pull/2365) Change size of column gap |

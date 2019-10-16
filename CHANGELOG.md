@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 1.8.22 | [PR#2414](https://github.com/bbc/psammead/pull/2414) Talos - Bump Dependencies - @bbc/psammead-styles |
 | 1.8.21 | [PR#2303](https://github.com/bbc/psammead/pull/2303) Added psammead-calendars as a dependency |
 | 1.8.20 | [PR#2401](https://github.com/bbc/psammead/pull/2401) Talos - Bump Dependencies - @bbc/psammead-assets, @bbc/psammead-storybook-helpers |
 | 1.8.19 | [PR#2356](https://github.com/bbc/psammead/pull/2356) Bump @bbc/psammead-story-promo |
