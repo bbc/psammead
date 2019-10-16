@@ -145,6 +145,25 @@ storiesOf('Components|Paragraph', module)
     ),
 ```
 
+If you want to add this decorator to a single story rather than a series of stories as documented above then you could write a story like this:
+
+```js
+storiesOf('Components|Paragraph', module)
+  .addDecorator(withKnobs)
+  .add('A paragraph with Arabic text', () =>
+    withServicesKnob({
+      defaultService: 'arabic',
+      services: ['news', 'arabic', 'amharic'],
+    })(({ text, script, service }) => (
+      <Paragraph script={script} service={service}>
+        {text}
+      </Paragraph>
+    )),
+  );
+```
+
+The above example dismisses the use of the `addDecorator` method and decorates the story directly.
+
 ## Contributing
 
 When **adding** a new export to this utility package the [export tests](https://github.com/bbc/psammead/blob/dab14a2732cfa620e083b7da66a148b4189474a7/packages/utilities/psammead-storybook-helpers/index.test.jsx#L13-L15) also need to be updated. When **removing** an exisiting export from this utility package the [export tests](https://github.com/bbc/psammead/blob/dab14a2732cfa620e083b7da66a148b4189474a7/packages/utilities/psammead-storybook-helpers/index.test.jsx#L13-L15) need to be updated and the package version requires a major change (EG: 1.2.1 -> 2.0.0) as this would be considered a breaking change due to functionality being removed.
