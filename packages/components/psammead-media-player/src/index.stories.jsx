@@ -9,12 +9,21 @@ const withDuration = {
   datetime: 'PT2M30S',
 };
 
-storiesOf('Components|Media Player', module).add('default', () => (
+storiesOf('Components|Media Player', module).add('Default', () => (
   <CanonicalMediaPlayer
     src="https://www.test.bbc.co.uk/ws/av-embeds/articles/c3wmq4d1y3wo/p01k6msp/en"
     placeholderSrc="https://ichef.bbci.co.uk/news/640/cpsdevpb/4eb7/test/ba7482d0-cca8-11e8-b0bf-f33155223fc4.jpg"
     service="news"
     mediaInfo={{ title: 'Dog chases cat.', ...withDuration }}
+  />
+));
+
+storiesOf('Components|Media Player', module).add('Audio', () => (
+  <CanonicalMediaPlayer
+    src="https://www.test.bbc.co.uk/ws/av-embeds/articles/c3wmq4d1y3wo/p01k6msp/en"
+    placeholderSrc="https://ichef.bbci.co.uk/news/640/cpsdevpb/4eb7/test/ba7482d0-cca8-11e8-b0bf-f33155223fc4.jpg"
+    service="news"
+    mediaInfo={{ type: 'audio', title: 'Dog barks at cat.', ...withDuration }}
   />
 ));
 
@@ -34,7 +43,6 @@ storiesOf('Components|Media Player', module).add('Audio Skin', () => (
     showPlaceholder={false}
     skin="audio"
     service="news"
-    mediaInfo={{ type: 'audio', title: 'Dog barks at cat.', ...withDuration }}
   />
 ));
 

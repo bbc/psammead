@@ -34,9 +34,7 @@ const Placeholder = ({ onClick, service, src, mediaInfo }) => {
       <StyledPlayButton
         title={title}
         service={service}
-        onClick={event => {
-          event.stopPropagation();
-        }}
+        onClick={() => {}}
         datetime={datetime}
         duration={duration}
         durationSpoken={durationSpoken}
