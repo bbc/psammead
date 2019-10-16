@@ -1,9 +1,9 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { withKnobs } from '@storybook/addon-knobs';
+import { withServicesKnob } from '@bbc/psammead-storybook-helpers';
 import { UsefulLink, UsefulLinksLi, UsefulLinksUl } from './index';
 import notes from '../README.md';
-import withServicesKnob from '../../../utilities/psammead-storybook-helpers/src/withServicesKnob';
 
 const usefulCaptions = [
   {

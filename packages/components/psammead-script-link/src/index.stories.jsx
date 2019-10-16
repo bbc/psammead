@@ -2,9 +2,9 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { withKnobs, text } from '@storybook/addon-knobs';
 import styled from 'styled-components';
+import { withServicesKnob } from '@bbc/psammead-storybook-helpers';
 import notes from '../README.md';
 import ScriptLink from './index';
-import withServicesKnob from '../../../utilities/psammead-storybook-helpers/src/withServicesKnob';
 
 const Container = styled.div`
   background-color: black;

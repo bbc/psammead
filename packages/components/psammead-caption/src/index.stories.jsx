@@ -3,9 +3,9 @@ import { storiesOf } from '@storybook/react';
 import { withKnobs } from '@storybook/addon-knobs';
 import InlineLink from '@bbc/psammead-inline-link';
 import VisuallyHiddenText from '@bbc/psammead-visually-hidden-text';
+import { withServicesKnob } from '@bbc/psammead-storybook-helpers';
 import notes from '../README.md';
 import Caption from '.';
-import withServicesKnob from '../../../utilities/psammead-storybook-helpers/src/withServicesKnob';
 
 storiesOf('Components|Caption', module)
   .addDecorator(withKnobs)

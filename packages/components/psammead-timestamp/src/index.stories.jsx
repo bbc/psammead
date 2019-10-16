@@ -2,10 +2,10 @@ import React from 'react';
 import { storiesOf } from '@storybook/react'; // eslint-disable-line import/no-extraneous-dependencies
 import { text, select, boolean, withKnobs } from '@storybook/addon-knobs';
 import * as typography from '@bbc/gel-foundations/typography';
+import { withServicesKnob } from '@bbc/psammead-storybook-helpers';
 import { latin } from '@bbc/gel-foundations/scripts';
 import notes from '../README.md';
 import Timestamp from '.';
-import withServicesKnob from '../../../utilities/psammead-storybook-helpers/src/withServicesKnob';
 
 const styles = Object.keys(typography)
   .map(key => {

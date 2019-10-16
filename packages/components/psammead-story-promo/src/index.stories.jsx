@@ -4,11 +4,11 @@ import { withKnobs, text, boolean, select } from '@storybook/addon-knobs';
 import Image from '@bbc/psammead-image';
 import MediaIndicator from '@bbc/psammead-media-indicator';
 import VisuallyHiddenText from '@bbc/psammead-visually-hidden-text';
+import { withServicesKnob } from '@bbc/psammead-storybook-helpers';
 import StoryPromo, { Headline, Summary, Link, LiveLabel } from './index';
 import relatedItems from '../testHelpers/relatedItems';
 import IndexAlsosContainer from '../testHelpers/IndexAlsosContainer';
 import notes from '../README.md';
-import withServicesKnob from '../../../utilities/psammead-storybook-helpers/src/withServicesKnob';
 
 const buildImg = () => (
   <Image

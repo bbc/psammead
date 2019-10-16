@@ -13,6 +13,7 @@ import * as svgs from '@bbc/psammead-assets/svgs';
 import { C_POSTBOX, C_WHITE } from '@bbc/psammead-styles/colours';
 import VisuallyHiddenText from '@bbc/psammead-visually-hidden-text';
 import Brand from '@bbc/psammead-brand';
+import { withServicesKnob } from '@bbc/psammead-storybook-helpers';
 import Navigation, { NavigationUl, NavigationLi } from './index';
 import igboNavData from '../testHelpers/igbo';
 import pidginNavData from '../testHelpers/pidgin';
@@ -20,7 +21,6 @@ import yorubaNavData from '../testHelpers/yoruba';
 import arabicNavData from '../testHelpers/arabic';
 
 import notes from '../README.md';
-import withServicesKnob from '../../../utilities/psammead-storybook-helpers/src/withServicesKnob';
 
 const navStoriesData = [
   {
