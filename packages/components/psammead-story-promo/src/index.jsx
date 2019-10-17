@@ -329,7 +329,7 @@ const StoryPromo = ({
   topStory,
   displayImage,
   dir,
-  ...props,
+  ...props
 }) => (
   <StoryPromoWrapper topStory={topStory} {...props}>
     {displayImage ? (
