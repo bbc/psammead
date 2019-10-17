@@ -39,6 +39,8 @@ The `withServicesKnob` function accepts an options argument with 2 properties:
 - `defaultService`(String): The default selected service of the services dropdown e.g. `arabic`. The default is `news`.
 - `services`(Array): A list of services that the dropdown will display. The default is all services.
 
+`buildRTLSubstories` - a function that gets all stories and creates right-to-left variants as substories. Internally it uses the `withServicesKnob` to set the default service as `arabic`. The appropriate place to use this function is in `storybook/config.js`.
+
 ## Installation
 
 ```sh
@@ -163,6 +165,17 @@ storiesOf('Components|Paragraph', module)
 ```
 
 The above example dismisses the use of the `addDecorator` method and decorates the story directly.
+
+### buildRTLSubstories
+
+```jsx
+// storybook/config.js
+
+import { buildRTLSubstories } from '@bbc/psammead-storybook-helpers';
+
+// must be placed after the storybook configure function
+buildRTLSubstories();
+```
 
 ## Contributing
 
