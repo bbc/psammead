@@ -9,6 +9,7 @@ import {
 } from '@bbc/psammead-assets/amp-boilerplate';
 import * as fontFaces from '@bbc/psammead-styles/fonts';
 import GlobalStyles from '@bbc/psammead-styles/global-styles';
+import buildRTLSubstories from '../packages/utilities/psammead-storybook-helpers/src/buildRTLSubstories';
 
 import Helmet from 'react-helmet';
 
@@ -68,3 +69,4 @@ function loadAllStories() {
 }
 
 configure(loadAllStories, module);
+buildRTLSubstories();
