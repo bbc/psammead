@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
-import { string, bool, oneOf } from 'prop-types';
+import { string, bool, oneOf, arrayOf } from 'prop-types';
 import Placeholder from './Placeholder';
 import Amp from './Amp';
 import Canonical from './Canonical';
@@ -21,7 +21,7 @@ const StyledAudioContainer = styled.div`
 
 export const CanonicalMediaPlayer = ({
   showPlaceholder,
-  placeholderSrc,
+  placeholderSrcset,
   portrait,
   src,
   skin,
@@ -35,7 +35,10 @@ export const CanonicalMediaPlayer = ({
   return (
     <StyledContainer portrait={portrait}>
       {placeholderActive ? (
-        <Placeholder onClick={handlePlaceholderClick} src={placeholderSrc} />
+        <Placeholder
+          onClick={handlePlaceholderClick}
+          srcset={placeholderSrcset}
+        />
       ) : (
         <Canonical src={src} />
       )}
@@ -43,19 +46,19 @@ export const CanonicalMediaPlayer = ({
   );
 };
 
-export const AmpMediaPlayer = ({ placeholderSrc, portrait, src, skin }) => {
+export const AmpMediaPlayer = ({ placeholderSrcset, portrait, src, skin }) => {
   const StyledContainer =
     skin === 'audio' ? StyledAudioContainer : StyledVideoContainer;
 
   return (
     <StyledContainer portrait={portrait}>
-      <Amp placeholderSrc={placeholderSrc} src={src} />
+      <Amp placeholderSrcset={placeholderSrcset} src={src} />
     </StyledContainer>
   );
 };
 
 CanonicalMediaPlayer.propTypes = {
-  placeholderSrc: string,
+  placeholderSrcset: arrayOf(string),
   portrait: bool,
   showPlaceholder: bool,
   src: string.isRequired,
@@ -63,14 +66,14 @@ CanonicalMediaPlayer.propTypes = {
 };
 
 CanonicalMediaPlayer.defaultProps = {
-  placeholderSrc: null,
+  placeholderSrcset: null,
   portrait: false,
   showPlaceholder: true,
   skin: 'classic',
 };
 
 AmpMediaPlayer.propTypes = {
-  placeholderSrc: string.isRequired,
+  placeholderSrcset: arrayOf(string).isRequired,
   portrait: bool,
   src: string.isRequired,
   skin: oneOf(['classic', 'audio']),

@@ -12,15 +12,15 @@ const StyledPlaceholder = styled.div`
   height: 100%;
 `;
 
-const Placeholder = ({ onClick, src }) => (
+const Placeholder = ({ onClick, srcset }) => (
   <StyledPlaceholder onClick={onClick}>
-    <Image alt="Image Alt" src={src} />
+    <Image alt="Image Alt" srcset={srcset} />
   </StyledPlaceholder>
 );
 
 Placeholder.propTypes = {
   onClick: func.isRequired,
-  src: string.isRequired,
+  srcset: string.isRequired,
 };
 
 export default Placeholder;
