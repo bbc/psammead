@@ -32,7 +32,7 @@ describe('Media Player: Placeholder', () => {
       onClick={mockOnClick}
       src="http://foo.bar/placeholder.png"
       service="news"
-      mediaInfo={{ title: 'Dog chases cat.', ...withDuration }}
+      mediaInfo={{ title: 'Dog chases cat.' }}
       className="foo"
     />,
   );
@@ -54,7 +54,7 @@ describe('Media Player: Placeholder', () => {
       onClick={mockOnClick}
       src="http://foo.bar/placeholder.png"
       service="news"
-      mediaInfo={{ type: 'audio', title: 'Dog barks at cat.', ...withDuration }}
+      mediaInfo={{ type: 'audio', title: 'Dog barks at cat.' }}
       className="foo"
     />,
   );

@@ -129,7 +129,7 @@ exports[`Media Player: Placeholder should render a video placeholder 1`] = `
 `;
 
 exports[`Media Player: Placeholder should render a video placeholder without duration 1`] = `
-.c8 {
+.c7 {
   display: block;
   width: 100%;
   visibility: visible;
@@ -185,13 +185,7 @@ exports[`Media Player: Placeholder should render a video placeholder without dur
   color: #FFFFFF;
   fill: currentColor;
   height: 1.5rem;
-  margin-top: 0.5rem;
   width: 1.5rem;
-}
-
-.c7 {
-  display: block;
-  margin-top: 0.5rem;
 }
 
 .c1 {
@@ -222,7 +216,7 @@ exports[`Media Player: Placeholder should render a video placeholder without dur
     <span
       class="c4"
     >
-      Play video, "Dog chases cat.", 2 minutes 30 seconds
+      Play video, "Dog chases cat."
     </span>
     <div
       aria-hidden="true"
@@ -240,17 +234,10 @@ exports[`Media Player: Placeholder should render a video placeholder without dur
         />
       </svg>
     </div>
-    <time
-      aria-hidden="true"
-      class="c7"
-      datetime="PT2M30S"
-    >
-      2:30
-    </time>
   </button>
   <img
     alt="Image Alt"
-    class="c8"
+    class="c7"
     src="http://foo.bar/placeholder.png"
   />
 </div>
@@ -388,7 +375,7 @@ exports[`Media Player: Placeholder should render an audio placeholder 1`] = `
 `;
 
 exports[`Media Player: Placeholder should render an audio placeholder without duration 1`] = `
-.c8 {
+.c7 {
   display: block;
   width: 100%;
   visibility: visible;
@@ -444,13 +431,7 @@ exports[`Media Player: Placeholder should render an audio placeholder without du
   color: #FFFFFF;
   fill: currentColor;
   height: 1.5rem;
-  margin-top: 0.5rem;
   width: 1.5rem;
-}
-
-.c7 {
-  display: block;
-  margin-top: 0.5rem;
 }
 
 .c1 {
@@ -481,7 +462,7 @@ exports[`Media Player: Placeholder should render an audio placeholder without du
     <span
       class="c4"
     >
-      Play audio, "Dog barks at cat.", 2 minutes 30 seconds
+      Play audio, "Dog barks at cat."
     </span>
     <div
       aria-hidden="true"
@@ -502,17 +483,10 @@ exports[`Media Player: Placeholder should render an audio placeholder without du
         />
       </svg>
     </div>
-    <time
-      aria-hidden="true"
-      class="c7"
-      datetime="PT2M30S"
-    >
-      2:30
-    </time>
   </button>
   <img
     alt="Image Alt"
-    class="c8"
+    class="c7"
     src="http://foo.bar/placeholder.png"
   />
 </div>
