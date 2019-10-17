@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Psammead test helpers should create a snapshot from an async it() block with component and done props 1`] = `
+exports[`Psammead test helpers should create a snapshot from an async it() block 1`] = `
 <div>
   <p>
     Foobar
