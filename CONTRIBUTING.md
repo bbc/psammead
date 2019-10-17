@@ -75,3 +75,28 @@ npm run install:packages --force-local
 
 ## The package publish, deprecation, and alpha publication process
 <!-- TODO: Add this, also consider where to mention npm linking, either here or in the packages README -->
+### Alpha Components
+
+#### Description
+
+The purpose of an Alpha Component is to allow an engineer to work on a component, merge it into Psammead and publish it to npm before it is ready for use in production.
+
+#### Use Cases
+
+The accepted uses of an Alpha Component are:
+
+- When engineering do not have all of the acceptance or accessibility criteria yet but want to make a start on building the component (with the agreement they may need to change it based on the finalised criteria).
+- When a component needs to be merged into Psammead and published, then pulled into Simorgh in order to UX review or a11y test it properly.
+- This means that an Alpha component does not need a UX review or a11y swarm when it is first merged into Psammead, only when it needs to come out of Alpha.
+
+#### Workflow
+
+- A new component is created in Psammead, the version is set to “0.1.0-alpha.1”, and "tag": "alpha" is added to the publish config in the package.json, e.g [alpha tag example](https://github.com/bbc/psammead/commit/64d7aa18a6b6d0861c9fdcd1b88047e634376bb7#diff-19d4d1f1939749aaffae0b8080cc09f4R37-R38)
+- An alpha component warning is added to the ReadMe, e.g [alpha warning example](https://github.com/bbc/psammead/commit/eb794cb4b18eb3c0f5857bc5e5476f92fbc7c1cc#diff-4124748292798b73a7d123a33fc255faR1-R3)
+- The component can then be worked on, merged into latest in Psammead and published to npm under the alpha tag.
+- The component can be used in branches in Simorgh that are not `latest` in order for UX to review it in a page, and for easier a11y testing to take place.
+- The alpha component CAN NOT be used in a live/production page.
+- In order to come out of Alpha, the component needs to have had a full a11y swarm, a UX review if required, and all necessary criteria met.
+- Any P1 bugs that come out of the a11y swarm need to be fixed before the component comes out of Alpha and goes live, P2 and lower can be fixed after.
+- For functional issues the functionality must work on the biggest browsers on the services is released on.
+- The component can then be set to a normal version of “1.0.0", and the alpha tag and warning in the ReadMe can be removed.
