@@ -1,0 +1,129 @@
+# ⛔️ This is an alpha component ⛔️
+
+This component is currently tagged as alpha and is not suitable for production use. Following the passing of an accessibility review this component will be marked as ready for production and the alpha tag removed.
+
+# psammead-bulletin - [![Known Vulnerabilities](https://snyk.io/test/github/bbc/psammead/badge.svg?targetFile=packages%2Fcomponents%2Fpsammead-bulletin%2Fpackage.json)](https://snyk.io/test/github/bbc/psammead?targetFile=packages%2Fcomponents%2Fpsammead-bulletin%2Fpackage.json) [![Dependency Status](https://david-dm.org/bbc/psammead.svg?path=packages/components/psammead-bulletin)](https://david-dm.org/bbc/psammead?path=packages/components/psammead-bulletin) [![peerDependencies Status](https://david-dm.org/bbc/psammead/peer-status.svg?path=packages/components/psammead-bulletin)](https://david-dm.org/bbc/psammead?path=packages/components/psammead-bulletin&type=peer) [![Storybook](https://raw.githubusercontent.com/storybooks/brand/master/badge/badge-storybook.svg?sanitize=true)](https://bbc.github.io/psammead/?path=/story/bulletin--containing-image) [![GitHub license](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](https://github.com/bbc/psammead/blob/latest/LICENSE) [![npm version](https://img.shields.io/npm/v/@bbc/psammead-bulletin.svg)](https://www.npmjs.com/package/@bbc/psammead-bulletin) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/bbc/psammead/blob/latest/CONTRIBUTING.md)
+
+## Description
+
+The `Bulletin` package contains all the elements to form a `Bulletin`, which can be of used to build `RadioBulletin` or `TVBulletin`. It exports the following elements:
+
+- `Bulletin` A wrapper around the `Bulletin` component to control the visibility of the component.
+- `BulletinHeading` The headline of the bulletin
+- `BulletinSummary` A `p` element to wrap the summary text and apply neccessary padding.
+- `BulletinCTA` The call to action of the bulletin
+
+This component is hidden on breakpoints above 600px.
+
+## Installation
+
+```jsx
+npm install @bbc/psammead-bulletin --save
+```
+
+## Props
+
+### BulletinHeading
+
+<!-- prettier-ignore -->
+| Argument  | Type | Required | Default | Example |
+| --------- | ---- | -------- | ------- | ------- |
+| `script` | object | yes | N/A | `{ canon: { groupA: { fontSize: '28', lineHeight: '32',}, groupB: { fontSize: '32', lineHeight: '36', }, groupD: { fontSize: '44', lineHeight: '48', }, }, trafalgar: { groupA: { fontSize: '20', lineHeight: '24', }, groupB: { fontSize: '24', lineHeight: '28', }, groupD: { fontSize: '32', lineHeight: '36', }, }, }` |
+| `service` | string | yes | - | `'pidgin'` |
+
+### BulletinSummary
+
+<!-- prettier-ignore -->
+| Argument  | Type | Required | Default | Example |
+| --------- | ---- | -------- | ------- | ------- |
+| `script` | object | yes | N/A | `{ canon: { groupA: { fontSize: '28', lineHeight: '32',}, groupB: { fontSize: '32', lineHeight: '36', }, groupD: { fontSize: '44', lineHeight: '48', }, }, trafalgar: { groupA: { fontSize: '20', lineHeight: '24', }, groupB: { fontSize: '24', lineHeight: '28', }, groupD: { fontSize: '32', lineHeight: '36', }, }, }` |
+| `service` | string | yes | N/A | `'pidgin'` |
+
+### BulletinCTA
+
+<!-- prettier-ignore -->
+| Argument  | Type | Required | Default | Example |
+| --------- | ---- | -------- | ------- | ------- |
+| `dir` | string | yes | N/A | `one of ['ltr', rtl']` |
+| `script` | object | yes | N/A | `{ canon: { groupA: { fontSize: '28', lineHeight: '32',}, groupB: { fontSize: '32', lineHeight: '36', }, groupD: { fontSize: '44', lineHeight: '48', }, }, trafalgar: { groupA: { fontSize: '20', lineHeight: '24', }, groupB: { fontSize: '24', lineHeight: '28', }, groupD: { fontSize: '32', lineHeight: '36', }, }, }` |
+| `service` | string | yes | N/A | `'pidgin'` |
+| `type` | string | yes | N/A | `one of ['audio', 'video']` |
+| `children` | node | yes | N/A | `Watch` |
+
+## Usage
+
+```jsx
+import {
+  Bulletin,
+  BulletinHeading,
+  BulletinSummary,
+  BulletinCTA,
+} from psammead-bulletin;
+import VisuallyHiddenText from '@bbc/psammead-visually-hidden-text';
+import { Link, LiveLabel } from '@bbc/psammead-story-promo';
+import { Image } from '@bbc/psammead-image'
+
+const TVBulletin  = ({
+  imgAltText,
+  imgSrc,
+  script,
+  service,
+  isLive,
+  bulletinLink,
+  headlineText,
+  summaryText,
+  dir,
+}) => (
+  <Bulletin>
+    <Image
+      src={imgSrc}
+      alt={imgAltText}
+    />
+    <BulletinHeading script={script} service={service}>
+      <VisuallyHiddenText>Watch, </VisuallyHiddenText>
+      {isLive && <LiveLabel service={service} dir={dir}>Live</LiveLabel>}
+      <Link href={bulletinLink}>
+        {headlineText}
+      </Link>
+    </BulletinHeading>
+    <BulletinSummary script={script} service={service}>
+      {summaryText}
+    </BulletinSummary>
+    <BulletinCTA
+      type="video"
+      isLive={isLive}
+      dir={dir}
+      service={service}
+      script={script}
+    >
+      Watch
+    </BulletinCTA>
+  </Bulletin>
+);
+```
+
+### When to use this component
+
+The `Bulletin` component is designed to be used to link to a page on which the user can play the radio or TV content.
+
+<!-- ### When not to use this component -->
+
+### Accessibility notes
+
+This component uses full semantic markup for the `BulletinHeading`, `BulletinSummary`, and `BulletinHeadingLink`, using `h3`, `p` and `a` respectively. Other accessibility factors such as image alt text and time elements are passed in as props and aren't explicitly set in this component.
+
+The link is nested inside the `h3` for better support with VoiceOver Mac and Safari. We use the `faux block link` pattern which makes the entire block clickable, whilst also enabling links nested within in that block to also be clickable.
+
+The Call To Action is hidden from screen-readers to prevent the repetition from the title. The hidden text passed in as a prop is used before the headline to indicate to screen-reader users what type of content it is.
+
+## Contributing
+
+Psammead is completely open source. We are grateful for any contributions, whether they be new components, bug fixes or general improvements. Please see our primary contributing guide which can be found at [the root of the Psammead repository](https://github.com/bbc/psammead/blob/latest/CONTRIBUTING.md).
+
+### [Code of Conduct](https://github.com/bbc/psammead/blob/latest/CODE_OF_CONDUCT.md)
+
+We welcome feedback and help on this work. By participating in this project, you agree to abide by the [code of conduct](https://github.com/bbc/psammead/blob/latest/CODE_OF_CONDUCT.md). Please take a moment to read it.
+
+### License
+
+Psammead is [Apache 2.0 licensed](https://github.com/bbc/psammead/blob/latest/LICENSE).
