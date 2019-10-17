@@ -22,7 +22,6 @@ exports[`Media Player: Placeholder should render a placeholder image with callba
   <img
     alt="Image Alt"
     class="c1"
-    src="http://foo.bar/placeholder.png"
   />
 </div>
 `;
