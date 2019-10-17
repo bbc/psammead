@@ -104,8 +104,8 @@ const generateStory = ({ topStory, alsoItems = null }) => ({
 
   const Info = (
     <InfoComponent
-      headlineText={service === 'news' ? 'Headline' : textSnippet}
-      summaryText={service === 'news' ? 'Summary' : textSnippet}
+      headlineText={textSnippet}
+      summaryText={textSnippet}
       script={script}
       topStory={topStory}
       service={service}

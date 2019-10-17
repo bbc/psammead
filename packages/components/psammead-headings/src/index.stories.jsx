@@ -12,7 +12,7 @@ storiesOf('Components|Headline', module)
     'default',
     ({ text: textSnippet, script, service }) => (
       <Headline script={script} service={service}>
-        {service === 'news' ? 'Headline' : textSnippet}
+        {textSnippet}
       </Headline>
     ),
     { notes, knobs: { escapeHTML: false } },
@@ -25,7 +25,7 @@ storiesOf('Components|SubHeading', module)
     'default',
     ({ text: textSnippet, script, service }) => (
       <SubHeading script={script} service={service}>
-        {service === 'news' ? 'SubHeading' : textSnippet}
+        {textSnippet}
       </SubHeading>
     ),
     { notes, knobs: { escapeHTML: false } },
@@ -36,7 +36,7 @@ storiesOf('Components|SubHeading', module)
       const id = text('ID', 'foo', 'Other');
       return (
         <SubHeading id={id} script={script} service={service}>
-          {service === 'news' ? 'SubHeading' : textSnippet}
+          {textSnippet}
         </SubHeading>
       );
     },

@@ -22,7 +22,7 @@ storiesOf('Components|SectionLabel', module)
         labelId="example-section-label"
         service={service}
       >
-        {service === 'news' ? 'Most read' : text}
+        {service === 'news' ? 'Most Read' : text}
       </SectionLabel>
     ),
     { notes, knobs: { escapeHTML: false } },
@@ -43,7 +43,7 @@ storiesOf('Components|SectionLabel', module)
         linkText="See All"
         href="https://www.bbc.com/igbo"
       >
-        {service === 'news' ? 'Most read' : text}
+        {service === 'news' ? 'Most Read' : text}
       </SectionLabel>
     ),
     { notes, knobs: { escapeHTML: false } },

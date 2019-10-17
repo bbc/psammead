@@ -10,11 +10,9 @@ storiesOf('Components|InlineLink', module)
   .addDecorator(withServicesKnob())
   .add(
     'default',
-    ({ text, service }) => (
+    ({ text }) => (
       <>
-        <InlineLink href="https://www.bbc.com/news">
-          {service === 'news' ? 'Link Text' : text}
-        </InlineLink>
+        <InlineLink href="https://www.bbc.com/news">{text}</InlineLink>
         <br />
         <br />
         Please note this component does not have its own typography styling

@@ -45,8 +45,17 @@ storiesOf('Components|ConsentBanner', module)
       return (
         <ConsentBanner
           dir={dir}
-          title={text}
-          text={Text({ dir, script, service, text, shortText })}
+          title={service === 'news' ? 'Privacy and Cookies Policy' : text}
+          text={Text({
+            dir,
+            script,
+            service,
+            text:
+              service === 'news'
+                ? 'Changes to our Privacy and Cookie Policy '
+                : text,
+            shortText,
+          })}
           accept={Accept(shortText)}
           reject={Reject(shortText)}
           script={script}

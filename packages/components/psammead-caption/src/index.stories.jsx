@@ -14,7 +14,7 @@ storiesOf('Components|Caption', module)
     'default',
     ({ text, script, service }) => (
       <Caption script={script} service={service}>
-        {service === 'news' ? 'Caption' : text}
+        {text}
       </Caption>
     ),
     { notes, knobs: { escapeHTML: false } },
