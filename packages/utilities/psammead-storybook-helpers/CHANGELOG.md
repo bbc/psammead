@@ -3,6 +3,8 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 7.0.0 | [PR#2404](https://github.com/bbc/psammead/pull/2404) replace inputProvider and dirDecorator with withServicesInput |
+| 6.2.0 | [PR#2407](https://github.com/bbc/psammead/pull/2407) adds buildRTLSubstories to create right-to-left variants of all stories |
 | 6.1.0 | [PR#2402](https://github.com/bbc/psammead/pull/2402) adds withServicesKnob decorator |
 | 6.0.4 | [PR#2344](https://github.com/bbc/psammead/pull/2344) Update `punjabi` locale from `pa` to `pa-in` |
 | 6.0.3 | [PR#2191](https://github.com/bbc/psammead/pull/2191) Talos - Bump Dependencies - @bbc/gel-foundations |
