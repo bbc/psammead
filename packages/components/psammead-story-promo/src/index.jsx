@@ -339,7 +339,9 @@ const StoryPromo = ({
             )}
           </ImageContentsWrapper>
         </ImageGridItem>
-        <TextGridItem topStory={topStory}>{info}</TextGridItem>
+        <TextGridItem topStory={topStory} displayImage={displayImage}>
+          {info}
+        </TextGridItem>
       </>
     ) : (
       <>
