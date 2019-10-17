@@ -311,8 +311,8 @@ LiveLabel.defaultProps = {
   dir: 'ltr',
 };
 
-const StoryPromo = ({ image, info, mediaIndicator, topStory, sectionName }) => (
-  <StoryPromoWrapper topStory={topStory} data-story-promo={sectionName}>
+const StoryPromo = ({ image, info, mediaIndicator, topStory, ...props }) => (
+  <StoryPromoWrapper topStory={topStory} {...props}>
     <ImageGridItem topStory={topStory}>
       <ImageContentsWrapper>
         {image}
@@ -332,13 +332,11 @@ StoryPromo.propTypes = {
   info: node.isRequired,
   mediaIndicator: node,
   topStory: bool,
-  sectionName: string,
 };
 
 StoryPromo.defaultProps = {
   mediaIndicator: null,
   topStory: false,
-  sectionName: null,
 };
 
 export default StoryPromo;
