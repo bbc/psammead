@@ -6,7 +6,7 @@ This package provides a collection of common values that are used in storybook b
 
 `LANGUAGE_VARIANTS` - A list of text samples in different languages, with the script and direction that should be used for that language.
 
-`inputProvider` - A function that provides support for previewing components in storybook in different languages. Takes 1 argument of an object, with these possible keys: `slots`, `componentFunction`, `services` and `options`. Sets the `dir` attribute on the `<html>` element in the story iframe using [Helmet](https://www.npmjs.com/package/react-helmet). Returns the return value of `componentFunction`. This should usually be a React Component.
+**(Deprecated)** `inputProvider` - A function that provides support for previewing components in storybook in different languages. Takes 1 argument of an object, with these possible keys: `slots`, `componentFunction`, `services` and `options`. Sets the `dir` attribute on the `<html>` element in the story iframe using [Helmet](https://www.npmjs.com/package/react-helmet). Returns the return value of `componentFunction`. This should usually be a React Component.
 
 - `slots`: Array of `slot`s. Optional.
   - `slot`: Object containing configuration for this slot.
@@ -21,7 +21,25 @@ This package provides a collection of common values that are used in storybook b
 - `options`: Object containing additional context for the input provider. Optional.
   - `defaultService`: String to set the default for the select knob in storybook.
 
-`dirDecorator` - A storybook decorator function that uses `inputProvider` internally to provide direction control. It calls the storybook function with an object containing `dir`, `script` and the `service` name.
+**(Deprecated)** `dirDecorator` - A storybook decorator function that uses `inputProvider` internally to provide direction control. It calls the storybook function with an object containing `dir`, `script` and the c name.
+
+`withServicesKnob` - Is a function that returns a storybook decorator function that adds a `Select a service` dropdown to the knobs panel. When a service is selected from the dropdown it does 2 things:
+
+1. Provides the decorated stories with the following properties that can be passed into components:
+
+- `text`: A string of text in the language of the chosen service.
+- `dir`: The reading directionality of the chosen service e.g. `ltr` or `rtl`
+- `script`: The chosen service's script typography settings e.g. the font-size and line-heights.
+- `service`: The name of the chosen service e.g. `arabic`
+
+2. Toggles the layout directionality of the chosen service.
+
+The `withServicesKnob` function accepts an options argument with 2 properties:
+
+- `defaultService`(String): The default selected service of the services dropdown e.g. `arabic`. The default is `news`.
+- `services`(Array): A list of services that the dropdown will display. The default is all services.
+
+`buildRTLSubstories` - a function that gets all stories and creates right-to-left variants as substories. Internally it uses the `withServicesKnob` to set the default service as `arabic`. The appropriate place to use this function is in `storybook/config.js`.
 
 ## Installation
 
@@ -92,6 +110,71 @@ storiesOf('Example', module)
   .add('default', ({ dir, service }) => (
     <h1 dir={dir}>Lorem Ipsum ${service}</h1>
   ));
+```
+
+### withServicesKnob
+
+```js
+storiesOf('Components|Paragraph', module)
+  .addDecorator(withKnobs)
+  .addDecorator(withServicesKnob()) // default selected service is `news`
+  .add(
+    'A paragraph with English text',
+    ({ text, script, service }) => (
+      <Paragraph script={script} service={service}>
+        {text}
+      </Paragraph>
+    ),
+```
+
+To set a default service:
+
+```js
+storiesOf('Components|Paragraph', module)
+  .addDecorator(withKnobs)
+  .addDecorator(
+    withServicesKnob({
+      defaultService: 'arabic',
+      services: ['news', 'arabic', 'amharic']
+    })
+  ) // default selected service is `arabic` and the available services in the dropdown are `news`, `arabic`, `amharic`
+  .add(
+    'A paragraph with Arabic text',
+    ({ text, script, service }) => (
+      <Paragraph script={script} service={service}>
+        {text}
+      </Paragraph>
+    ),
+```
+
+If you want to add this decorator to a single story rather than a series of stories as documented above then you could write a story like this:
+
+```js
+storiesOf('Components|Paragraph', module)
+  .addDecorator(withKnobs)
+  .add('A paragraph with Arabic text', () =>
+    withServicesKnob({
+      defaultService: 'arabic',
+      services: ['news', 'arabic', 'amharic'],
+    })(({ text, script, service }) => (
+      <Paragraph script={script} service={service}>
+        {text}
+      </Paragraph>
+    )),
+  );
+```
+
+The above example dismisses the use of the `addDecorator` method and decorates the story directly.
+
+### buildRTLSubstories
+
+```jsx
+// storybook/config.js
+
+import { buildRTLSubstories } from '@bbc/psammead-storybook-helpers';
+
+// must be placed after the storybook configure function
+buildRTLSubstories();
 ```
 
 ## Contributing

@@ -327,11 +327,11 @@ const StoryPromo = ({
   info,
   mediaIndicator,
   topStory,
-  sectionName,
   displayImage,
   dir,
+  ...props,
 }) => (
-  <StoryPromoWrapper topStory={topStory} data-story-promo={sectionName}>
+  <StoryPromoWrapper topStory={topStory} {...props}>
     {displayImage ? (
       <>
         <ImageGridItem topStory={topStory}>
@@ -370,7 +370,6 @@ StoryPromo.propTypes = {
   info: node.isRequired,
   mediaIndicator: node,
   topStory: bool,
-  sectionName: string,
   displayImage: bool,
   dir: oneOf(['ltr', 'rtl']),
 };
@@ -378,7 +377,6 @@ StoryPromo.propTypes = {
 StoryPromo.defaultProps = {
   mediaIndicator: null,
   topStory: false,
-  sectionName: null,
   displayImage: true,
   dir: 'ltr',
 };

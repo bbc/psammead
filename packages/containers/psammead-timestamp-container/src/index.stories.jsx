@@ -9,6 +9,7 @@ import {
   withKnobs,
 } from '@storybook/addon-knobs';
 import moment from 'moment-timezone';
+import { jalaali } from '@bbc/psammead-calendars';
 import Timestamp from '.';
 
 // Fixed timestamp for 27 August 2019, 14:54 BST
@@ -112,13 +113,16 @@ storiesOf('Containers|TimestampContainer', module)
       // eslint-disable-next-line react/prop-types
       componentFunction: ({ locale, script, service }) => {
         updateAllTimestamps();
-
         const storyTimestamp = select(
           'Timestamp',
           timestamps,
           timestamps['Fixed (27 Aug 2019)'],
         );
-
+        const getAltCalendar = () =>
+          ({
+            fa: jalaali,
+            ps: jalaali,
+          }[locale]);
         return (
           <Timestamp
             timestamp={getTimestampValue(storyTimestamp)}
@@ -128,6 +132,7 @@ storiesOf('Containers|TimestampContainer', module)
             script={script}
             locale={locale}
             service={service}
+            altCalendar={getAltCalendar()}
           />
         );
       },
