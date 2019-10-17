@@ -1,10 +1,10 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { withKnobs, text, boolean, select } from '@storybook/addon-knobs';
-import { inputProvider } from '@bbc/psammead-storybook-helpers';
 import Image from '@bbc/psammead-image';
 import MediaIndicator from '@bbc/psammead-media-indicator';
 import VisuallyHiddenText from '@bbc/psammead-visually-hidden-text';
+import { withServicesKnob } from '@bbc/psammead-storybook-helpers';
 import StoryPromo, { Headline, Summary, Link, LiveLabel } from './index';
 import relatedItems from '../testHelpers/relatedItems';
 import IndexAlsosContainer from '../testHelpers/IndexAlsosContainer';
@@ -90,54 +90,49 @@ const InfoComponent = ({
   </>
 );
 
-const generateStory = ({ topStory, alsoItems = null }) =>
-  inputProvider({
-    slots: [{ name: 'Headline' }, { name: 'Summary' }],
-    // eslint-disable-next-line react/prop-types
-    componentFunction: ({
-      slotTexts: [headlineText, summaryText],
-      script,
-      service,
-      dir,
-    }) => {
-      const mediaType = select(
-        'Media Type',
-        ['No media', 'video', 'audio', 'photogallery'],
-        'No media',
-      );
+const generateStory = ({ topStory, alsoItems = null }) => ({
+  text: textSnippet,
+  script,
+  service,
+  dir,
+}) => {
+  const mediaType = select(
+    'Media Type',
+    ['No media', 'video', 'audio', 'photogallery'],
+    'No media',
+  );
 
-      const Info = (
-        <InfoComponent
-          headlineText={headlineText}
-          summaryText={summaryText}
-          script={script}
-          topStory={topStory}
-          service={service}
-          isLive={boolean('isLive', false)}
-          dir={dir}
-          type={mediaType}
-          alsoItems={alsoItems}
-        />
-      );
+  const Info = (
+    <InfoComponent
+      headlineText={textSnippet}
+      summaryText={textSnippet}
+      script={script}
+      topStory={topStory}
+      service={service}
+      isLive={boolean('isLive', false)}
+      dir={dir}
+      type={mediaType}
+      alsoItems={alsoItems}
+    />
+  );
 
-      const Img = buildImg();
+  const Img = buildImg();
 
-      return (
-        <StoryPromo
-          image={Img}
-          info={Info}
-          mediaIndicator={
-            mediaType !== 'No media' &&
-            MediaIndicatorComponent(mediaType, service)
-          }
-          topStory={topStory}
-        />
-      );
-    },
-  });
+  return (
+    <StoryPromo
+      image={Img}
+      info={Info}
+      mediaIndicator={
+        mediaType !== 'No media' && MediaIndicatorComponent(mediaType, service)
+      }
+      topStory={topStory}
+    />
+  );
+};
 
 storiesOf('Components|StoryPromo/StoryPromo', module)
   .addDecorator(withKnobs)
+  .addDecorator(withServicesKnob())
   .add('default', generateStory({ topStory: false }), {
     notes,
     knobs: { escapeHTML: false },

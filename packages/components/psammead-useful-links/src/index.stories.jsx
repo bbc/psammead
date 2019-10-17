@@ -1,7 +1,7 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { withKnobs } from '@storybook/addon-knobs';
-import { dirDecorator } from '@bbc/psammead-storybook-helpers';
+import { withServicesKnob } from '@bbc/psammead-storybook-helpers';
 import { UsefulLink, UsefulLinksLi, UsefulLinksUl } from './index';
 import notes from '../README.md';
 
@@ -30,7 +30,7 @@ const usefulCaptions = [
 
 storiesOf('Components|UsefulLinks', module)
   .addDecorator(withKnobs)
-  .addDecorator(dirDecorator)
+  .addDecorator(withServicesKnob())
   .add(
     'one link',
     ({ service, script }) => (
