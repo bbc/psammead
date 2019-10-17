@@ -147,7 +147,7 @@ const InlineMediaIndicator = styled.div`
         bottom: 0;
       }
       `}
-  ${({ displayImage }) => displayImage && `position: relative;`}
+  ${({ displayImage }) => !displayImage && `display: inline-block;`}
 `;
 
 const TextGridColumnsTopStory = css`
@@ -235,6 +235,7 @@ export const Headline = styled.h3`
   color: ${C_EBON};
   margin: 0; /* Reset */
   padding-bottom: ${GEL_SPACING};
+  ${({ displayImage }) => !displayImage && `display: inline-block;`}
 
   @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
     ${({ script, topStory }) =>
@@ -329,7 +330,10 @@ const StoryPromo = ({
           <ImageContentsWrapper>
             {image}
             {mediaIndicator && (
-              <InlineMediaIndicator topStory={topStory}>
+              <InlineMediaIndicator
+                topStory={topStory}
+                displayImage={displayImage}
+              >
                 {mediaIndicator}
               </InlineMediaIndicator>
             )}
@@ -338,14 +342,14 @@ const StoryPromo = ({
         <TextGridItem topStory={topStory}>{info}</TextGridItem>
       </>
     ) : (
-      <TextGridItem topStory={topStory}>
-        {mediaIndicator && (
-          <InlineMediaIndicator topStory={topStory}>
+      <>
+        <TextGridItem topStory={topStory}>
+          <InlineMediaIndicator displayImage={displayImage}>
             {mediaIndicator}
           </InlineMediaIndicator>
-        )}
-        {info}
-      </TextGridItem>
+          {info}
+        </TextGridItem>
+      </>
     )}
   </StoryPromoWrapper>
 );

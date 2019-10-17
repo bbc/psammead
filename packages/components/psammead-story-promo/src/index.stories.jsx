@@ -21,10 +21,10 @@ const buildImg = () => (
   />
 );
 
-const MediaIndicatorComponent = (type, service) => {
+const MediaIndicatorComponent = (type, service, displayImage) => {
   return (
     <MediaIndicator
-      duration={type !== 'photogallery' && '2:15'}
+      duration={displayImage && type !== 'photogallery' && '2:15'}
       datetime="PT2M15S"
       service={service}
       type={type}
@@ -129,7 +129,7 @@ const generateStory = ({ topStory, alsoItems = null, displayImage }) =>
           displayImage={displayImage}
           mediaIndicator={
             mediaType !== 'No media' &&
-            MediaIndicatorComponent(mediaType, service)
+            MediaIndicatorComponent(mediaType, service, displayImage)
           }
           topStory={topStory}
         />
@@ -143,7 +143,7 @@ storiesOf('Components|StoryPromo/StoryPromo', module)
     notes,
     knobs: { escapeHTML: false },
   })
-  .add('Top story', generateStory({ topStory: true }), {
+  .add('Top story', generateStory({ topStory: true, displayImage: true }), {
     notes,
     knobs: { escapeHTML: false },
   })
