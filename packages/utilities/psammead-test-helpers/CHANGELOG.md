@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 3.1.0 | [PR#2416](https://github.com/bbc/psammead/pull/2416) Adds matchSnapshotAsync export |
 | 3.0.2 | [PR#2166](https://github.com/bbc/psammead/pull/2166) remove async keyword from test helper to fix regenerator runtime plugin error |
 | 3.0.1 | [PR#2123](https://github.com/bbc/psammead/pull/2125) Removes use of async/await |
 | 3.0.0 | [PR#2104](https://github.com/bbc/psammead/pull/2104) add function to detect and render helmet for use in snapshots |
