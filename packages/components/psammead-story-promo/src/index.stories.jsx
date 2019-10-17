@@ -65,9 +65,15 @@ const InfoComponent = ({
   dir,
   type,
   alsoItems,
+  displayImage,
 }) => (
   <>
-    <Headline script={script} topStory={topStory} service={service}>
+    <Headline
+      script={script}
+      topStory={topStory}
+      service={service}
+      displayImage={displayImage}
+    >
       <Link href="https://www.bbc.co.uk/news">
         {isLive ? (
           <LiveComponent service={service} dir={dir} headline={headlineText} />
@@ -90,7 +96,7 @@ const InfoComponent = ({
   </>
 );
 
-const generateStory = ({ topStory, alsoItems = null, displayImage }) =>
+const generateStory = ({ topStory, alsoItems = null, displayImage = true }) =>
   inputProvider({
     slots: [{ name: 'Headline' }, { name: 'Summary' }],
     // eslint-disable-next-line react/prop-types
@@ -117,6 +123,7 @@ const generateStory = ({ topStory, alsoItems = null, displayImage }) =>
           dir={dir}
           type={mediaType}
           alsoItems={alsoItems}
+          displayImage={displayImage}
         />
       );
 
@@ -127,6 +134,7 @@ const generateStory = ({ topStory, alsoItems = null, displayImage }) =>
           image={Img}
           info={Info}
           displayImage={displayImage}
+          dir={dir}
           mediaIndicator={
             mediaType !== 'No media' &&
             MediaIndicatorComponent(mediaType, service, displayImage)
@@ -143,7 +151,7 @@ storiesOf('Components|StoryPromo/StoryPromo', module)
     notes,
     knobs: { escapeHTML: false },
   })
-  .add('Top story', generateStory({ topStory: true, displayImage: true }), {
+  .add('Top story', generateStory({ topStory: true }), {
     notes,
     knobs: { escapeHTML: false },
   })

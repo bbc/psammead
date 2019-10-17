@@ -147,7 +147,11 @@ const InlineMediaIndicator = styled.div`
         bottom: 0;
       }
       `}
-  ${({ displayImage }) => !displayImage && `display: inline-block;`}
+  ${({ displayImage, dir }) =>
+    !displayImage &&
+    (dir === 'ltr'
+      ? `float:left; position: relative !important;`
+      : `float:right; position: relative !important;`)}
 `;
 
 const TextGridColumnsTopStory = css`
@@ -196,6 +200,9 @@ const TextGridFallback = css`
     width: 100%;
     padding: ${GEL_SPACING} 0;
   }
+
+  ${({ displayImage }) =>
+    !displayImage && `width: ${fullWidthColumnsMaxScaleable};`}
 `;
 
 const TextGridItem = styled.div`
@@ -235,7 +242,7 @@ export const Headline = styled.h3`
   color: ${C_EBON};
   margin: 0; /* Reset */
   padding-bottom: ${GEL_SPACING};
-  ${({ displayImage }) => !displayImage && `display: inline-block;`}
+  ${({ displayImage }) => !displayImage && `display: inline;`}
 
   @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
     ${({ script, topStory }) =>
@@ -322,6 +329,7 @@ const StoryPromo = ({
   topStory,
   sectionName,
   displayImage,
+  dir,
 }) => (
   <StoryPromoWrapper topStory={topStory} data-story-promo={sectionName}>
     {displayImage ? (
@@ -333,6 +341,7 @@ const StoryPromo = ({
               <InlineMediaIndicator
                 topStory={topStory}
                 displayImage={displayImage}
+                dir={dir}
               >
                 {mediaIndicator}
               </InlineMediaIndicator>
@@ -345,8 +354,8 @@ const StoryPromo = ({
       </>
     ) : (
       <>
-        <TextGridItem topStory={topStory}>
-          <InlineMediaIndicator displayImage={displayImage}>
+        <TextGridItem topStory={topStory} displayImage={displayImage}>
+          <InlineMediaIndicator displayImage={displayImage} dir={dir}>
             {mediaIndicator}
           </InlineMediaIndicator>
           {info}
@@ -363,6 +372,7 @@ StoryPromo.propTypes = {
   topStory: bool,
   sectionName: string,
   displayImage: bool,
+  dir: oneOf(['ltr', 'rtl']),
 };
 
 StoryPromo.defaultProps = {
@@ -370,6 +380,7 @@ StoryPromo.defaultProps = {
   topStory: false,
   sectionName: null,
   displayImage: true,
+  dir: 'ltr',
 };
 
 export default StoryPromo;
