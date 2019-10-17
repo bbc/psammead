@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 | ------- | ----------- |
+| 2.8.0-alpha.2 | [PR#2397](https://github.com/bbc/psammead/pull/2397) Add a `displayImage` prop to render story promo without an image |
 | 2.8.0-alpha.1 | [PR#2354](https://github.com/bbc/psammead/pull/2354) Add `sectionName` prop to set `data-story-promo` for event tracking |
 | 2.8.0-alpha.0 | [PR#2296](https://github.com/bbc/psammead/pull/2296) Change Story Promo design 1080+px |
 | 2.7.18 | [PR#2289](https://github.com/bbc/psammead/pull/2289) Talos - Bump Dependencies - @bbc/psammead-styles |
