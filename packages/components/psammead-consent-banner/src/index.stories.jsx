@@ -23,6 +23,8 @@ const Text = ({ dir, script, service, shortText, text }) => (
   </ConsentBannerText>
 );
 
+const BANNER_TEXT = 'Changes to our Privacy and Cookie Policy ';
+
 Text.propTypes = {
   dir: oneOf(['ltr', 'rtl']),
   script: string.isRequired,
@@ -41,7 +43,9 @@ storiesOf('Components|ConsentBanner', module)
   .add(
     'default',
     ({ text, dir, script, service }) => {
-      const shortText = text.trim().split(' ')[0];
+      const shortText = (service === 'news' ? BANNER_TEXT : text)
+        .trim()
+        .split(' ')[0];
       return (
         <ConsentBanner
           dir={dir}
@@ -50,10 +54,7 @@ storiesOf('Components|ConsentBanner', module)
             dir,
             script,
             service,
-            text:
-              service === 'news'
-                ? 'Changes to our Privacy and Cookie Policy '
-                : text,
+            text: service === 'news' ? BANNER_TEXT : text,
             shortText,
           })}
           accept={Accept(shortText)}

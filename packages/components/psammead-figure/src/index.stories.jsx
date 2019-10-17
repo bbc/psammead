@@ -56,13 +56,13 @@ storiesOf('Components|Figure', module)
             )}
           </VisuallyHiddenText>
           <Paragraph script={script} service={service}>
-            {service === 'news' ? 'Caption' : textSnippet}
+            {textSnippet}
           </Paragraph>
           <Paragraph script={script} service={service}>
-            {service === 'news' ? 'Caption' : textSnippet}
+            {textSnippet}
           </Paragraph>
           <Paragraph script={script} service={service}>
-            {service === 'news' ? 'Caption' : textSnippet}
+            {textSnippet}
           </Paragraph>
         </Caption>
       </Figure>
