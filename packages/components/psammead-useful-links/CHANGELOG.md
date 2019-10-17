@@ -2,6 +2,7 @@
 
 | Version | Description |
 |---------|-------------|
+| 1.0.4 | [PR#2432](https://github.com/bbc/psammead/pull/2432) Talos - Bump Dependencies - @bbc/psammead-styles |
 | 1.0.3 | [PR#2404](https://github.com/bbc/psammead/pull/2404) replace inputProvider and dirDecorator with withServicesInput |
 | 1.0.2 | [PR#2406](https://github.com/bbc/psammead/pull/2406) Remove padding from first list item |
 | 1.0.1 | [PR#2380](https://github.com/bbc/psammead/pull/2380) Talos - Bump Dependencies - @bbc/psammead-styles |

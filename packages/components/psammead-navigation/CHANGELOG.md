@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 3.0.2 | [PR#2432](https://github.com/bbc/psammead/pull/2432) Talos - Bump Dependencies - @bbc/psammead-styles, @bbc/psammead-visually-hidden-text |
 | 3.0.1 | [PR#2404](https://github.com/bbc/psammead/pull/2404) replace inputProvider and dirDecorator with withServicesInput |
 | 3.0.0 | [PR#2377](https://github.com/bbc/psammead/pull/2377) Spread extra props to the component |
 | 2.3.6 | [PR#2343](https://github.com/bbc/psammead/pull/2343) Add `data-navigation` data attribute to navigation links |
