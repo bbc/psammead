@@ -107,7 +107,7 @@ const getTimestampValue = storyTimestamp => {
 
 storiesOf('Containers|TimestampContainer', module)
   .addDecorator(withKnobs)
-  .addDecorator(withServicesKnob)
+  .addDecorator(withServicesKnob())
   .add('default', ({ locale, script, service }) => {
     updateAllTimestamps();
     const storyTimestamp = select(

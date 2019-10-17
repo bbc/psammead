@@ -13,7 +13,7 @@ import notes from '../README.md';
 
 storiesOf('Components|Grid', module)
   .addDecorator(withKnobs)
-  .addDecorator(withServicesKnob)
+  .addDecorator(withServicesKnob())
   .add(
     'Example with layout change at group4+',
     () => (
