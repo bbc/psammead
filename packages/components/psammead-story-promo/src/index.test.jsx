@@ -23,7 +23,7 @@ const LiveComponent = ({ headline, service }) => (
 // eslint-disable-next-line react/prop-types
 const Info = ({ topStory, isLive, alsoItems }) => (
   <>
-    <Headline script={latin} topStory={topStory} service="news">
+    <Headline script={latin} topStory={topStory} service="news" displayImage>
       <Link href="https://www.bbc.co.uk/news">
         {isLive ? (
           <LiveComponent headline="The live promo headline" service="news" />
@@ -107,6 +107,16 @@ describe('StoryPromo - Top Story', () => {
       image={Image}
       info={Info({ topStory: true, alsoItems: [relatedItems[0]] })}
       topStory
+    />,
+  );
+
+  shouldMatchSnapshot(
+    'should render story promo without an image',
+    <StoryPromo
+      image={Image}
+      displayImage={false}
+      info={Info({ topStory: false })}
+      mediaIndicator={mediaInfo}
     />,
   );
 });
