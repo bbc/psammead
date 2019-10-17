@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
-import { string, bool, oneOf, arrayOf } from 'prop-types';
+import { string, bool, oneOf } from 'prop-types';
 import Placeholder from './Placeholder';
 import Amp from './Amp';
 import Canonical from './Canonical';
@@ -21,6 +21,7 @@ const StyledAudioContainer = styled.div`
 
 export const CanonicalMediaPlayer = ({
   showPlaceholder,
+  placeholderSrc,
   placeholderSrcset,
   portrait,
   src,
@@ -37,6 +38,7 @@ export const CanonicalMediaPlayer = ({
       {placeholderActive ? (
         <Placeholder
           onClick={handlePlaceholderClick}
+          src={placeholderSrc}
           srcset={placeholderSrcset}
         />
       ) : (
@@ -46,19 +48,30 @@ export const CanonicalMediaPlayer = ({
   );
 };
 
-export const AmpMediaPlayer = ({ placeholderSrcset, portrait, src, skin }) => {
+export const AmpMediaPlayer = ({
+  placeholderSrcset,
+  placeholderSrc,
+  portrait,
+  src,
+  skin,
+}) => {
   const StyledContainer =
     skin === 'audio' ? StyledAudioContainer : StyledVideoContainer;
 
   return (
     <StyledContainer portrait={portrait}>
-      <Amp placeholderSrcset={placeholderSrcset} src={src} />
+      <Amp
+        placeholderSrcset={placeholderSrcset}
+        placeholderSrc={placeholderSrc}
+        src={src}
+      />
     </StyledContainer>
   );
 };
 
 CanonicalMediaPlayer.propTypes = {
-  placeholderSrcset: arrayOf(string),
+  placeholderSrc: string,
+  placeholderSrcset: string,
   portrait: bool,
   showPlaceholder: bool,
   src: string.isRequired,
@@ -66,6 +79,7 @@ CanonicalMediaPlayer.propTypes = {
 };
 
 CanonicalMediaPlayer.defaultProps = {
+  placeholderSrc: null,
   placeholderSrcset: null,
   portrait: false,
   showPlaceholder: true,
@@ -73,7 +87,8 @@ CanonicalMediaPlayer.defaultProps = {
 };
 
 AmpMediaPlayer.propTypes = {
-  placeholderSrcset: arrayOf(string).isRequired,
+  placeholderSrc: string.isRequired,
+  placeholderSrcset: string.isRequired,
   portrait: bool,
   src: string.isRequired,
   skin: oneOf(['classic', 'audio']),
