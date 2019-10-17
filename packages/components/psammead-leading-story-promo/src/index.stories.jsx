@@ -53,9 +53,7 @@ const generateStory = () =>
 
       const Img = buildImg();
 
-      return (
-        <LeadingStoryPromo image={Img} info={Info} mediaIndicator={null} />
-      );
+      return <LeadingStoryPromo image={Img} info={Info} />;
     },
   });
 
@@ -83,7 +81,7 @@ const generate2FeatureStory = () =>
       return (
         <Grid columns={{ group4: 8 }} enableGelGutters>
           <Grid item columns={{ group4: 6 }}>
-            <LeadingStoryPromo image={Img} info={Info} mediaIndicator={null} />
+            <LeadingStoryPromo image={Img} info={Info} />
           </Grid>
           <Grid columns={{ group4: 2 }}>
             <Grid item columns={{ group4: 2 }}>

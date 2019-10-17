@@ -6,35 +6,40 @@ This component is currently tagged as alpha and is not suitable for production u
 
 ## Description
 
-The `LeadingStoryPromo` component does...
+The `LeadingStoryPromo` componentis designed to be used on 'index' pages for feature - similar to `@bbc/psammead-story-promo`, but for featured stories. It supports having info on the left with an image on the right. This info would be a headline, text summary and timestamp.
 
 ## Installation
 
-```jsx
-npm install @bbc/psammead-leading-story-promo --save
-```
+`npm install @bbc/psammead-leading-story-promo`
 
 ## Props
 
 | Argument  | Type | Required | Default | Example |
 | --------- | ---- | -------- | ------- | ------- |
-| No props. |      |          |         |         |
+| image     | node | Yes      | N/A     | `<img />` |
+| info      | node | Yes      | N/A     | `<h2>Title</h2>` |
 
 ## Usage
 
-<!-- Description of the component usage -->
+This component relies on `@bbc/psammead-grid` to achieve the positioning on the info and image. 
 
-```
-import LeadingStoryPromo from "@bbc/psammead-leading-story-promo"
+```jsx
+import LeadingStoryPromo from '@bbc/psammead-leading-story-promo';
+
+const WrappingComponent = () => (
+  <div>
+    <LeadingStoryPromo image={image} info={info} />
+  </div>
+);
 ```
 
 ### When to use this component
 
-<!-- Description of the where the component can be used -->
+The `LeadingStoryPromo` component is designed to be used within a link element to allow the user to navigate to the featured story on another page.
 
 ### When not to use this component
 
-<!-- Description of the where the component shouldn't can be used -->
+<!-- Description of the where the component shouldn't be used -->
 
 ### Accessibility notes
 This component is still in its initial alpha stages, and requires a full and extensive accessibility review.
