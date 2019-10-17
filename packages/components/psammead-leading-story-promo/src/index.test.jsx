@@ -1,7 +1,6 @@
 import React from 'react';
 import { shouldMatchSnapshot } from '@bbc/psammead-test-helpers';
 import { latin } from '@bbc/gel-foundations/scripts';
-import MediaIndicator from '@bbc/psammead-media-indicator';
 import { Headline, Summary, Link } from '@bbc/psammead-story-promo';
 import LeadingStoryPromo from './index';
 
@@ -19,17 +18,9 @@ const Info = () => (
   </>
 );
 
-const mediaInfo = (
-  <MediaIndicator duration="2:15" datetime="PT2M15S" service="news" />
-);
-
 describe('LeadingStoryPromo', () => {
   shouldMatchSnapshot(
     'should render default leading story promo correctly',
-    <LeadingStoryPromo
-      image={Image}
-      info={Info()}
-      mediaIndicator={mediaInfo}
-    />,
+    <LeadingStoryPromo image={Image} info={Info()} />,
   );
 });
