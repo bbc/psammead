@@ -9,8 +9,8 @@ import {
 } from '@storybook/addon-knobs';
 import { storiesOf } from '@storybook/react';
 import * as svgs from '@bbc/psammead-assets/svgs';
-import { dirDecorator } from '@bbc/psammead-storybook-helpers';
 import { C_POSTBOX, C_WHITE } from '@bbc/psammead-styles/colours';
+import { withServicesKnob } from '@bbc/psammead-storybook-helpers';
 import notes from '../README.md';
 import Brand from './index';
 
@@ -50,7 +50,7 @@ const inputs = () => {
 
 storiesOf('Components|Brand', module)
   .addDecorator(withKnobs)
-  .addDecorator(dirDecorator)
+  .addDecorator(withServicesKnob())
   .add(
     'without brand link',
     () => {
