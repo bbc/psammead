@@ -34,7 +34,7 @@ storiesOf('Components|Media Player', module)
     <AmpMediaPlayer
       isAmp
       src="https://www.bbc.com/ws/av-embeds/media/bbc_korean_radio/liveradio/ko/amp"
-      placeholderSrc="https://news.files.bbci.co.uk/include/articles/public/images/audio-player-placeholder.png"
+      placeholderSrc="https://news.files.bbci.co.uk/include/articles/public/images/amp_audio_placeholder.png"
       skin="audio"
     />
   ));
