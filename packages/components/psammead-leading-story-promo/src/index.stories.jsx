@@ -7,7 +7,6 @@ import { Headline, Summary, Link } from '@bbc/psammead-story-promo';
 import Grid from '@bbc/psammead-grid';
 import notes from '../README.md';
 import LeadingStoryPromo from './index';
-import LeadingFallbackStoryPromo from './fallback-index';
 
 const buildImg = () => (
   <Image
@@ -82,7 +81,7 @@ const generate2FeatureStory = () =>
       return (
         <Grid columns={{ group4: 8 }} enableGelGutters>
           <Grid item columns={{ group4: 6 }}>
-            <LeadingFallbackStoryPromo image={Img} info={Info} />
+            <LeadingStoryPromo image={Img} info={Info} />
           </Grid>
           <Grid columns={{ group4: 2 }}>
             <Grid item columns={{ group4: 2 }}>
@@ -96,40 +95,11 @@ const generate2FeatureStory = () =>
       );
     },
   });
-
-const generateFallbackStory = () =>
-  inputProvider({
-    slots: [{ name: 'Headline' }, { name: 'Summary' }],
-    componentFunction: ({
-      slotTexts: [headlineText, summaryText],
-      script,
-      service,
-      dir,
-    }) => {
-      const Info = (
-        <InfoComponent
-          headlineText={headlineText}
-          summaryText={summaryText}
-          script={script}
-          service={service}
-          dir={dir}
-        />
-      );
-
-      const Img = buildImg();
-
-      return <LeadingFallbackStoryPromo image={Img} info={Info} />;
-    },
-  });
 /* eslint-enable react/prop-types */
 
 storiesOf('Components|LeadingStoryPromo', module)
   .addDecorator(withKnobs)
   .add('default', generateStory(), {
-    notes,
-    knobs: { escapeHTML: false },
-  })
-  .add('fallback grid', generateFallbackStory(), {
     notes,
     knobs: { escapeHTML: false },
   })
