@@ -1,6 +1,6 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react'; // eslint-disable-line import/no-extraneous-dependencies
-import { inputProvider } from '@bbc/psammead-storybook-helpers';
+import { withServicesKnob } from '@bbc/psammead-storybook-helpers';
 import {
   boolean,
   number,
@@ -107,89 +107,72 @@ const getTimestampValue = storyTimestamp => {
 
 storiesOf('Containers|TimestampContainer', module)
   .addDecorator(withKnobs)
-  .add(
-    'default',
-    inputProvider({
-      // eslint-disable-next-line react/prop-types
-      componentFunction: ({ locale, script, service }) => {
-        updateAllTimestamps();
-        const storyTimestamp = select(
-          'Timestamp',
-          timestamps,
-          timestamps['Fixed (27 Aug 2019)'],
-        );
-        const getAltCalendar = () =>
-          ({
-            fa: jalaali,
-            ps: jalaali,
-          }[locale]);
-        return (
-          <Timestamp
-            timestamp={getTimestampValue(storyTimestamp)}
-            dateTimeFormat="YYYY-MM-DD"
-            format={text('Format', 'D MMMM YYYY, HH:mm z')}
-            isRelative={boolean('isRelative', false)}
-            script={script}
-            locale={locale}
-            service={service}
-            altCalendar={getAltCalendar()}
-          />
-        );
-      },
-    }),
-  )
-  .add(
-    'with prefix',
-    inputProvider({
-      // eslint-disable-next-line react/prop-types
-      componentFunction: ({ locale, script, service }) => {
-        updateAllTimestamps();
+  .addDecorator(withServicesKnob())
+  .add('default', ({ locale, script, service }) => {
+    updateAllTimestamps();
+    const storyTimestamp = select(
+      'Timestamp',
+      timestamps,
+      timestamps['Fixed (27 Aug 2019)'],
+    );
+    const getAltCalendar = () =>
+      ({
+        fa: jalaali,
+        ps: jalaali,
+      }[locale]);
+    return (
+      <Timestamp
+        timestamp={getTimestampValue(storyTimestamp)}
+        dateTimeFormat="YYYY-MM-DD"
+        format={text('Format', 'D MMMM YYYY, HH:mm z')}
+        isRelative={boolean('isRelative', false)}
+        script={script}
+        locale={locale}
+        service={service}
+        altCalendar={getAltCalendar()}
+      />
+    );
+  })
+  .add('with prefix', ({ locale, script, service }) => {
+    updateAllTimestamps();
 
-        const storyTimestamp = select(
-          'Timestamp',
-          timestamps,
-          timestamps['Fixed (27 Aug 2019)'],
-        );
-        return (
-          <Timestamp
-            timestamp={getTimestampValue(storyTimestamp)}
-            dateTimeFormat="YYYY-MM-DD"
-            format={text('Format', 'D MMMM YYYY, HH:mm z')}
-            isRelative={boolean('isRelative', false)}
-            prefix={text('Prefix text', 'Updated')}
-            script={script}
-            locale={locale}
-            service={service}
-          />
-        );
-      },
-    }),
-  )
-  .add(
-    'with prefix and suffix',
-    inputProvider({
-      // eslint-disable-next-line react/prop-types
-      componentFunction: ({ locale, script, service }) => {
-        updateAllTimestamps();
+    const storyTimestamp = select(
+      'Timestamp',
+      timestamps,
+      timestamps['Fixed (27 Aug 2019)'],
+    );
+    return (
+      <Timestamp
+        timestamp={getTimestampValue(storyTimestamp)}
+        dateTimeFormat="YYYY-MM-DD"
+        format={text('Format', 'D MMMM YYYY, HH:mm z')}
+        isRelative={boolean('isRelative', false)}
+        prefix={text('Prefix text', 'Updated')}
+        script={script}
+        locale={locale}
+        service={service}
+      />
+    );
+  })
+  .add('with prefix and suffix', ({ locale, script, service }) => {
+    updateAllTimestamps();
 
-        const storyTimestamp = select(
-          'Timestamp',
-          timestamps,
-          timestamps['Fixed (27 Aug 2019)'],
-        );
-        return (
-          <Timestamp
-            timestamp={getTimestampValue(storyTimestamp)}
-            dateTimeFormat="YYYY-MM-DD"
-            format={text('Format', 'D MMMM YYYY, HH:mm z')}
-            isRelative={boolean('isRelative', false)}
-            prefix={text('Prefix text', 'This')}
-            suffix={text('Suffix text', 'is date of last update')}
-            script={script}
-            locale={locale}
-            service={service}
-          />
-        );
-      },
-    }),
-  );
+    const storyTimestamp = select(
+      'Timestamp',
+      timestamps,
+      timestamps['Fixed (27 Aug 2019)'],
+    );
+    return (
+      <Timestamp
+        timestamp={getTimestampValue(storyTimestamp)}
+        dateTimeFormat="YYYY-MM-DD"
+        format={text('Format', 'D MMMM YYYY, HH:mm z')}
+        isRelative={boolean('isRelative', false)}
+        prefix={text('Prefix text', 'This')}
+        suffix={text('Suffix text', 'is date of last update')}
+        script={script}
+        locale={locale}
+        service={service}
+      />
+    );
+  });
