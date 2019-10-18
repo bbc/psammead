@@ -1,8 +1,8 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { withKnobs, text } from '@storybook/addon-knobs';
-import { dirDecorator } from '@bbc/psammead-storybook-helpers';
 import styled from 'styled-components';
+import { withServicesKnob } from '@bbc/psammead-storybook-helpers';
 import notes from '../README.md';
 import ScriptLink from './index';
 
@@ -14,7 +14,7 @@ const Container = styled.div`
 
 storiesOf('Components|ScriptLink', module)
   .addDecorator(withKnobs)
-  .addDecorator(dirDecorator)
+  .addDecorator(withServicesKnob())
   .add(
     'default',
     ({ script, service }) => {
