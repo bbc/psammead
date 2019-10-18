@@ -60,11 +60,14 @@ exports[`LeadingStoryPromo should render default leading story promo correctly 1
   display: inline-block;
   vertical-align: top;
   position: relative;
+  width: 66.67%;
+  display: inline-block;
 }
 
 .c1 {
   display: inline-block;
   vertical-align: top;
+  width: 33.33%;
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
@@ -119,9 +122,9 @@ exports[`LeadingStoryPromo should render default leading story promo correctly 1
 @supports (grid-template-columns:fit-content(200px)) {
   .c0 {
     display: grid;
-    grid-template-columns: repeat(8,1fr);
+    grid-template-columns: repeat(6,1fr);
     grid-column-gap: 1rem;
-    grid-column-end: span 8;
+    grid-column-end: span 6;
   }
 }
 
@@ -135,6 +138,7 @@ exports[`LeadingStoryPromo should render default leading story promo correctly 1
 @supports (grid-template-columns:fit-content(200px)) {
   .c1 {
     display: block;
+    width: 100%;
   }
 }
 
