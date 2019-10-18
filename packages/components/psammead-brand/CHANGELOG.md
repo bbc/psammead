@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 | ------- | ----------- |
+| 5.0.7 | [PR#2404](https://github.com/bbc/psammead/pull/2404) replace inputProvider and dirDecorator with withServicesInput |
 | 5.0.6 | [PR#2377](https://github.com/bbc/psammead/pull/2377) Spread extra props to the component |
 | 5.0.5 | [PR#2289](https://github.com/bbc/psammead/pull/2289) Talos - Bump Dependencies - @bbc/psammead-styles |
 | 5.0.4 | [PR#2273](https://github.com/bbc/psammead/pull/2273) Talos - Bump Dependencies - @bbc/psammead-styles |
