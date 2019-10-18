@@ -59,7 +59,6 @@ Placeholder.propTypes = {
 };
 Placeholder.defaultProps = {
   mediaInfo: shape({
-    title: null,
     datetime: null,
     duration: null,
     durationSpoken: null,
