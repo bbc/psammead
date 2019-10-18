@@ -386,5 +386,6 @@ export const ukrainian = helmetFontStyles;
 export const urdu = nassimFontStyles(nassimUrduFontFamily);
 export const uzbek = helmetFontStyles;
 export const vietnamese = helmetFontStyles;
+export const weather = latinReithFontStyles;
 export const yoruba = helmetFontStyles;
 export const zhongwen = chineseFontStyles;

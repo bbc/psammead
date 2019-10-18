@@ -71,11 +71,9 @@ const SectionLabel = ({
   script,
   service,
   visuallyHidden,
+  ...props
 }) => (
-  <SectionLabelWrapper
-    visuallyHidden={visuallyHidden}
-    data-section-divider={labelId}
-  >
+  <SectionLabelWrapper visuallyHidden={visuallyHidden} {...props}>
     {bar && <Bar script={script} />}
     <Heading>
       {linkText && href ? (
