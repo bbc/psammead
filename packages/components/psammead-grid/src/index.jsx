@@ -130,7 +130,8 @@ const gridFallbacks = css`
         styles: `
           display: inline-block;
           width: ${(100 * columns[group]) / parentColumns[group]}%;
-          vertical-align: top;`,
+          vertical-align: top; `,
+        /* [1] */
       })}
     `,
     );
