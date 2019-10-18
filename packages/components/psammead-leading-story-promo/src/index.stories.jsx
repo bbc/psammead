@@ -79,15 +79,65 @@ const generate2FeatureStory = () =>
       const Img = buildImg();
 
       return (
-        <Grid columns={{ group4: 8 }} enableGelGutters>
-          <Grid item columns={{ group4: 6 }}>
+        <Grid
+          columns={{
+            group0: 8,
+            group1: 8,
+            group2: 8,
+            group3: 8,
+            group4: 8,
+            group5: 8,
+          }}
+          enableGelGutters
+        >
+          <Grid
+            item
+            columns={{
+              group0: 8,
+              group1: 8,
+              group2: 8,
+              group3: 8,
+              group4: 6,
+              group5: 6,
+            }}
+          >
             <LeadingStoryPromo image={Img} info={Info} />
           </Grid>
-          <Grid columns={{ group4: 2 }}>
-            <Grid item columns={{ group4: 2 }}>
+          <Grid
+            columns={{
+              group0: 8,
+              group1: 8,
+              group2: 8,
+              group3: 8,
+              group4: 2,
+              group5: 2,
+            }}
+            enableGelGutters
+          >
+            <Grid
+              item
+              columns={{
+                group0: 2,
+                group1: 2,
+                group2: 2,
+                group3: 2,
+                group4: 2,
+                group5: 2,
+              }}
+            >
               {Img}
             </Grid>
-            <Grid item columns={{ group4: 2 }}>
+            <Grid
+              item
+              columns={{
+                group0: 6,
+                group1: 6,
+                group2: 6,
+                group3: 6,
+                group4: 2,
+                group5: 2,
+              }}
+            >
               {Info}
             </Grid>
           </Grid>
