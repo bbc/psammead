@@ -1,7 +1,7 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { withKnobs } from '@storybook/addon-knobs';
-import { dirDecorator } from '@bbc/psammead-storybook-helpers';
+import { withServicesKnob } from '@bbc/psammead-storybook-helpers';
 import Image from '@bbc/psammead-image';
 import MediaIndicator from '@bbc/psammead-media-indicator';
 import StoryPromo, { Headline, Summary, Link } from '@bbc/psammead-story-promo';
@@ -13,7 +13,7 @@ import notes from '../README.md';
 
 storiesOf('Components|Grid', module)
   .addDecorator(withKnobs)
-  .addDecorator(dirDecorator)
+  .addDecorator(withServicesKnob())
   .add(
     'Example with layout change at group4+',
     () => (
