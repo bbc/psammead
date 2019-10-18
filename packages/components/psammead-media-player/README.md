@@ -23,11 +23,13 @@ This component to be used at any point on the page, specifically when a media pl
 | Argument  | Type                | Required | Default | Example         |
 |-----------|---------------------|----------|---------|-----------------|
 | `src` | string | Yes   | - | `http://foobar.com/embeddable_endpoint` |
+| `srcset` | string | Yes   | - | `http://foobar.com/images/ic/512xn/p01k6mtv.jpg` |
 | `showPlaceholder` | boolean | No   | `true` | `false` |
 | `placeholderSrc` | string | No   | `null` | `http://foobar.com/placeholder.png` |
 | `portrait` | boolean | No   | `false` | `true` |
 
 The `src` prop is required, as it tells the component what page it needs to embed.
+The `srcset` prop is required, as it allows image responsiveness and optimization depending on the size of the screen .
 The `portrait` prop is not required, and defaults to `false`. This is to support portrait video content in the future.
 The `showPlaceholder` boolean prop is also not required, and defaults to `true`.
 Assuming `showPlaceholder` is `true`, the `placeholderSrc` will be what image to display as the placeholder.
@@ -37,6 +39,7 @@ Assuming `showPlaceholder` is `true`, the `placeholderSrc` will be what image to
 | Argument  | Type                | Required | Default | Example         |
 |-----------|---------------------|----------|---------|-----------------|
 | `src` | string | Yes   | - | `http://foobar.com/embeddable_endpoint` |
+| `srcset` | string | Yes   | - | `http://foobar.com/images/ic/512xn/p01k6mtv.jpg` |
 | `portrait` | boolean | No   | `false` | `true` |
 | `placeholderSrc` | string | yes   | - | `http://foobar.com/placeholder.png` |
 
@@ -52,6 +55,7 @@ const Container = ({ src, portrait, showPlaceholder, placeholderSrc }) => (
     src={src}
     portrait={portrait}
     placeholderSrc={placeholderSrc}
+    placeholdersrcset={placeholdersrcset}
     showPlaceholder={showPlaceholder}
   />
 )
@@ -66,6 +70,7 @@ const Container = ({ src, portrait, placeholderSrc }) => (
     src={src}
     portrait={portrait}
     placeholderSrc={placeholderSrc}
+    placeholdersrcset={placeholdersrcset}
   />
 )
 ```
