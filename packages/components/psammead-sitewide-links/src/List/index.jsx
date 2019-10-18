@@ -27,7 +27,7 @@ const StyledList = styled.ul`
   list-style-type: none;
   margin: 0;
   padding: 0 0 ${GEL_SPACING};
-  column-count: 3;
+  column-count: 4;
 
   @supports (${grid}) {
     display: grid;
@@ -64,11 +64,13 @@ const StyledList = styled.ul`
   }
   @media (min-width: ${GEL_GROUP_5_SCREEN_WIDTH_MIN}) {
     grid-column-gap: ${GEL_SPACING_DBL};
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(
+      ${props => (props.TrustProjectLink ? 5 : 4)},
+      1fr
+    );
     grid-template-rows: repeat(${({ links }) => getRowCount(links, 5)}, auto);
-    column-count: 3;
+    column-count: 4;
   }
-
   ${props =>
     props.TrustProjectLink
       ? `> li:first-child {
@@ -79,12 +81,13 @@ const StyledList = styled.ul`
     width: 100%;
     column-span: all;
   }`
-      : `display: none`};
+      : `display: hide`};
 `;
 
 const StyledListItem = styled.li`
   min-width: 50%;
   column-gap: 1rem;
+  break-inside: avoid-column;
 `;
 
 const List = ({ links, TrustProjectLink }) => (
