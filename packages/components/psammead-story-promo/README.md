@@ -26,6 +26,7 @@ The `StoryPromo` component is designed to be used on 'index' pages, which are pa
 | mediaIndicator     | node   | No      | null     | `<MediaIndicator duration="2:15" datetime="PT2M15S" offscreenText="Video 2 minutes 15 seconds" />` |
 | topStory | boolean | No      | false   | true          |
 | displayImage | boolean | No      | true   | false      |
+| dir            | string | no       | `ltr`   | `rtl`   |
 
 ## Headline Props
 
