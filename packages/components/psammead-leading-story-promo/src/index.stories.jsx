@@ -97,7 +97,7 @@ const generate2FeatureStory = () =>
   });
 /* eslint-enable react/prop-types */
 
-storiesOf('Components|LeadingStoryPromo', module)
+storiesOf('Components|StoryPromo/LeadingStoryPromo', module)
   .addDecorator(withKnobs)
   .add('default', generateStory(), {
     notes,

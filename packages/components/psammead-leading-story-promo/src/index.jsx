@@ -8,7 +8,6 @@ import { GEL_SPACING_DBL } from '@bbc/gel-foundations/spacings';
 /**
  * Add fallbacks
  */
-
 const LeadingPromoWrapper = styled.div`
   position: relative;
 
