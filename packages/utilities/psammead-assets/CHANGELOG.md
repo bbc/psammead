@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 2.5.0 | [PR#2433](https://github.com/bbc/psammead/pull/2433) Add AMP js script boilerplate to psammead-assets. |
 | 2.4.1 | [PR#2189](https://github.com/bbc/psammead/pull/2189) Add storybook stories for media icons in psammead-assets |
 | 2.4.0 | [PR#2192](https://github.com/bbc/psammead/pull/2192) Add SVG for BBC Scotland |
 | 2.3.0 | [PR#2115](https://github.com/bbc/psammead/pull/2115) Added media icons SVGs |
