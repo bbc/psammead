@@ -1,7 +1,7 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { withKnobs, text } from '@storybook/addon-knobs';
-import { inputProvider } from '@bbc/psammead-storybook-helpers';
+import { withServicesKnob } from '@bbc/psammead-storybook-helpers';
 import Image from '@bbc/psammead-image';
 import { Headline, Summary, Link } from '@bbc/psammead-story-promo';
 import Grid from '@bbc/psammead-grid';
@@ -31,129 +31,107 @@ const InfoComponent = ({ headlineText, summaryText, script, service }) => (
   </>
 );
 
-/* eslint-disable react/prop-types */
-const generateStory = () =>
-  inputProvider({
-    slots: [{ name: 'Headline' }, { name: 'Summary' }],
-    componentFunction: ({
-      slotTexts: [headlineText, summaryText],
-      script,
-      service,
-      dir,
-    }) => {
-      const Info = (
-        <InfoComponent
-          headlineText={headlineText}
-          summaryText={summaryText}
-          script={script}
-          service={service}
-          dir={dir}
-        />
-      );
+/* eslint-disable-next-line no-shadow */
+const generateInfo = (text, script, service, dir) => (
+  <InfoComponent
+    headlineText={text}
+    summaryText={text}
+    script={script}
+    service={service}
+    dir={dir}
+  />
+);
 
-      const Img = buildImg();
-
-      return <LeadingStoryPromo image={Img} info={Info} />;
-    },
-  });
-
-const generate2FeatureStory = () =>
-  inputProvider({
-    slots: [{ name: 'Headline' }, { name: 'Summary' }],
-    componentFunction: ({
-      slotTexts: [headlineText, summaryText],
-      script,
-      service,
-      dir,
-    }) => {
-      const Info = (
-        <InfoComponent
-          headlineText={headlineText}
-          summaryText={summaryText}
-          script={script}
-          service={service}
-          dir={dir}
-        />
-      );
-
-      const Img = buildImg();
-
-      return (
+/* eslint-disable-next-line no-shadow */
+const generate2FeatureStory = (text, script, service, dir, Img) => {
+  const Info = generateInfo(text, script, service, dir);
+  return (
+    <Grid
+      columns={{
+        group0: 8,
+        group1: 8,
+        group2: 8,
+        group3: 8,
+        group4: 8,
+        group5: 8,
+      }}
+      enableGelGutters
+    >
+      <Grid
+        item
+        columns={{
+          group0: 8,
+          group1: 8,
+          group2: 8,
+          group3: 8,
+          group4: 6,
+          group5: 6,
+        }}
+      >
+        <LeadingStoryPromo image={Img} info={Info} />
+      </Grid>
+      <Grid
+        columns={{
+          group0: 8,
+          group1: 8,
+          group2: 8,
+          group3: 8,
+          group4: 2,
+          group5: 2,
+        }}
+        enableGelGutters
+      >
         <Grid
+          item
           columns={{
-            group0: 8,
-            group1: 8,
-            group2: 8,
-            group3: 8,
-            group4: 8,
-            group5: 8,
+            group0: 2,
+            group1: 2,
+            group2: 2,
+            group3: 2,
+            group4: 2,
+            group5: 2,
           }}
-          enableGelGutters
         >
-          <Grid
-            item
-            columns={{
-              group0: 8,
-              group1: 8,
-              group2: 8,
-              group3: 8,
-              group4: 6,
-              group5: 6,
-            }}
-          >
-            <LeadingStoryPromo image={Img} info={Info} />
-          </Grid>
-          <Grid
-            columns={{
-              group0: 8,
-              group1: 8,
-              group2: 8,
-              group3: 8,
-              group4: 2,
-              group5: 2,
-            }}
-            enableGelGutters
-          >
-            <Grid
-              item
-              columns={{
-                group0: 2,
-                group1: 2,
-                group2: 2,
-                group3: 2,
-                group4: 2,
-                group5: 2,
-              }}
-            >
-              {Img}
-            </Grid>
-            <Grid
-              item
-              columns={{
-                group0: 6,
-                group1: 6,
-                group2: 6,
-                group3: 6,
-                group4: 2,
-                group5: 2,
-              }}
-            >
-              {Info}
-            </Grid>
-          </Grid>
+          {Img}
         </Grid>
-      );
-    },
-  });
-/* eslint-enable react/prop-types */
+        <Grid
+          item
+          columns={{
+            group0: 6,
+            group1: 6,
+            group2: 6,
+            group3: 6,
+            group4: 2,
+            group5: 2,
+          }}
+        >
+          {Info}
+        </Grid>
+      </Grid>
+    </Grid>
+  );
+};
+
+const Img = buildImg();
 
 storiesOf('Components|StoryPromo/LeadingStoryPromo', module)
   .addDecorator(withKnobs)
-  .add('default', generateStory(), {
-    notes,
-    knobs: { escapeHTML: false },
-  })
-  .add('leading promo + secondary story promo', generate2FeatureStory(), {
-    notes,
-    knobs: { escapeHTML: false },
-  });
+  .addDecorator(withServicesKnob())
+  .add(
+    'default',
+    /* eslint-disable-next-line no-shadow */
+    ({ text, script, service, dir }) => (
+      <LeadingStoryPromo
+        image={Img}
+        info={generateInfo(text, script, service, dir)}
+      />
+    ),
+    { notes, knobs: { escapeHTML: false } },
+  )
+  .add(
+    'leading promo + secondary story promo',
+    /* eslint-disable-next-line no-shadow */
+    ({ text, script, service, dir }) =>
+      generate2FeatureStory(text, script, service, dir, Img),
+    { notes, knobs: { escapeHTML: false } },
+  );
