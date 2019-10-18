@@ -1,48 +1,32 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { withKnobs } from '@storybook/addon-knobs';
-import { inputProvider } from '@bbc/psammead-storybook-helpers';
+import { withServicesKnob } from '@bbc/psammead-storybook-helpers';
 import notes from '../README.md';
 import SitewideLinks from './index';
 
-const buildLink = (text, index) => {
-  const linkText = index >= 0 ? `${text} ${index}` : text;
-  return {
-    href: 'https://www.bbc.co.uk/news',
-    text: linkText,
-  };
-};
+const buildLink = text => ({
+  text,
+  href: 'https://www.bbc.co.uk/news',
+});
 
-const linkNames = [1, 2, 3, 4, 5, 6, 7].map(n => ({
-  name: `Link ${n}`,
-  defaultText: 'link',
-}));
-linkNames.unshift(
-  { name: 'External Link', defaultText: 'external link' },
-  { name: 'Copyright', defaultText: 'copyright text' },
-);
+const links = Array(7)
+  .fill()
+  .map((el, n) => `link ${n}`)
+  .map(buildLink);
 
 storiesOf('Components|SitewideLinks', module)
   .addDecorator(withKnobs)
+  .addDecorator(withServicesKnob())
   .add(
     'default',
-    inputProvider({
-      slots: linkNames,
-      /* eslint-disable react/prop-types */
-      componentFunction: ({
-        slotTexts: [externalLinkText, copyrightText, ...linkTexts],
-        service,
-      }) => {
-        const links = linkTexts.map(buildLink);
-        return (
-          <SitewideLinks
-            links={links}
-            copyrightText={copyrightText}
-            externalLink={buildLink(externalLinkText)}
-            service={service}
-          />
-        );
-      },
-    }),
+    ({ text, service }) => (
+      <SitewideLinks
+        links={links}
+        copyrightText={service === 'news' ? 'copyright text' : text}
+        externalLink={buildLink(service === 'news' ? 'external link' : text)}
+        service={service}
+      />
+    ),
     { notes, knobs: { escapeHTML: false } },
   );

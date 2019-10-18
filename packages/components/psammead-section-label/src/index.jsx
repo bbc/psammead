@@ -71,8 +71,9 @@ const SectionLabel = ({
   script,
   service,
   visuallyHidden,
+  ...props
 }) => (
-  <SectionLabelWrapper visuallyHidden={visuallyHidden}>
+  <SectionLabelWrapper visuallyHidden={visuallyHidden} {...props}>
     {bar && <Bar script={script} />}
     <Heading>
       {linkText && href ? (

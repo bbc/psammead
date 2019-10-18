@@ -132,4 +132,19 @@ describe('assertions', () => {
     expect(image.getAttribute('src')).toEqual('https://foobar.com/image.png');
     expect(image.getAttribute('alt')).toEqual('Alt text');
   });
+
+  it('should add extra props passed to the component', () => {
+    const { container } = render(
+      <StoryPromo
+        image={Image}
+        info={Info({ topStory: true })}
+        mediaIndicator={mediaInfo}
+        data-story-promo="story_promo"
+      />,
+    );
+
+    expect(
+      container.querySelector('div').getAttribute('data-story-promo'),
+    ).toEqual('story_promo');
+  });
 });

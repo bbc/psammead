@@ -3,6 +3,8 @@
 <!-- prettier-ignore -->
 | Version | Description |
 | ------- | ----------- |
+| 3.0.0 | [PR#2375](https://github.com/bbc/psammead/pull/2375) Removed `fa` locale override and jalaali calendar helper  |
+| 2.23.0 | [PR#2300](https://github.com/bbc/psammead/pull/2300) Add `makeNumeralTranslator` helper |
 | 2.22.0 | [PR#2290](https://github.com/bbc/psammead/pull/2290) Add `en-gb` (English) locale. |
 | 2.21.1 | [PR#2288](https://github.com/bbc/psammead/pull/2288) Remove `de` from `es` (Mundo) locale long date format. Add `pt-br` (Brasil) locale month override |
 | 2.21.0 | [PR#2227](https://github.com/bbc/psammead/pull/2227) Add `bn` (Bengali), `sw` (Swahili) and `ur` (Urdu) locales. Update `gu` (Gujarati) and`hi` (Hindi) locales |

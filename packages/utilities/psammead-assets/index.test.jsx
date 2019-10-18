@@ -15,6 +15,7 @@ const svgsExpectedExports = {
   azeri: 'object',
   bengali: 'object',
   burmese: 'object',
+  cymrufyw: 'object',
   gahuza: 'object',
   gujarati: 'object',
   hausa: 'object',
@@ -26,6 +27,7 @@ const svgsExpectedExports = {
   kyrgyz: 'object',
   marathi: 'object',
   mundo: 'object',
+  naidheachdan: 'object',
   nepali: 'object',
   news: 'object',
   pashto: 'object',
@@ -49,6 +51,7 @@ const svgsExpectedExports = {
   ukrainian: 'object',
   uzbek: 'object',
   vietnamese: 'object',
+  weather: 'object',
   yoruba: 'object',
   zhongwen: 'object',
 };
