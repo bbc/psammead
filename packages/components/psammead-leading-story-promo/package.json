@@ -23,7 +23,8 @@
   "homepage": "https://github.com/BBC-News/psammead/blob/latest/packages/components/psammead-leading-story-promo/README.md",
   "dependencies": {
     "@bbc/gel-foundations": "^3.4.0",
-    "@bbc/psammead-grid": "^1.0.0-alpha.1"
+    "@bbc/psammead-grid": "^1.0.0-alpha.1",
+    "@bbc/psammead-styles": "^4.0.3"
   },
   "peerDependencies": {
     "react": "^16.10.2"
