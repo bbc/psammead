@@ -40,63 +40,19 @@ const StyledList = styled.ul`
   }
   @media (min-width: ${GEL_GROUP_1_SCREEN_WIDTH_MIN}) and (max-width: ${GEL_GROUP_2_SCREEN_WIDTH_MAX}) {
     grid-column-gap: ${GEL_SPACING};
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(4, auto);
-    column-count: 2;
-  }
-  @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) and (max-width: ${GEL_GROUP_3_SCREEN_WIDTH_MAX}) {
-    grid-column-gap: ${GEL_SPACING_DBL};
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(4, auto);
-    column-count: 3;
-  }
-  @media (min-width: ${GEL_GROUP_4_SCREEN_WIDTH_MIN}) and (max-width: ${GEL_GROUP_4_SCREEN_WIDTH_MAX}) {
-    grid-column-gap: ${GEL_SPACING_DBL};
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(${({ links }) => getRowCount(links, 4)}, auto);
-    column-count: 3;
-  }
-  @media (min-width: ${GEL_GROUP_5_SCREEN_WIDTH_MIN}) {
-    grid-column-gap: ${GEL_SPACING_DBL};
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(${({ links }) => getRowCount(links, 5)}, auto);
-    column-count: 3;
-  }
-  > li:first-child {
-    border-bottom: 1px solid ${C_SHADOW};
-    padding: ${GEL_SPACING} 0;
-    margin-bottom: ${GEL_SPACING};
-    grid-column: 1/-1;
-    width: 100%;
-    column-span: all;
-  }
-`;
-
-const StyledListNoTrustLink = styled.ul`
-  border-bottom: 1px solid ${C_SHADOW};
-  list-style-type: none;
-  margin: 0;
-  padding: 0 0 ${GEL_SPACING};
-  column-count: 3;
-
-  @supports (${grid}) {
-    display: grid;
-    grid-auto-flow: column;
-  }
-
-  @media (max-width: ${GEL_GROUP_0_SCREEN_WIDTH_MAX}) {
-    grid-auto-flow: row;
-    column-count: 1;
-  }
-  @media (min-width: ${GEL_GROUP_1_SCREEN_WIDTH_MIN}) and (max-width: ${GEL_GROUP_2_SCREEN_WIDTH_MAX}) {
-    grid-column-gap: ${GEL_SPACING};
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(
+      ${props => (props.TrustProjectLink ? 3 : 2)},
+      1fr
+    );
     grid-template-rows: repeat(${({ links }) => getRowCount(links, 2)}, auto);
     column-count: 2;
   }
   @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) and (max-width: ${GEL_GROUP_3_SCREEN_WIDTH_MAX}) {
     grid-column-gap: ${GEL_SPACING_DBL};
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(
+      ${props => (props.TrustProjectLink ? 4 : 3)},
+      1fr
+    );
     grid-template-rows: repeat(${({ links }) => getRowCount(links, 3)}, auto);
     column-count: 3;
   }
@@ -112,6 +68,18 @@ const StyledListNoTrustLink = styled.ul`
     grid-template-rows: repeat(${({ links }) => getRowCount(links, 5)}, auto);
     column-count: 3;
   }
+
+  ${props =>
+    props.TrustProjectLink
+      ? `> li:first-child {
+    border-bottom: 1px solid ${C_SHADOW};
+    padding: ${GEL_SPACING} 0;
+    margin-bottom: ${GEL_SPACING};
+    grid-column: 1/-1;
+    width: 100%;
+    column-span: all;
+  }`
+      : `display: none`};
 `;
 
 const StyledListItem = styled.li`
@@ -121,28 +89,18 @@ const StyledListItem = styled.li`
 
 const List = ({ links, TrustProjectLink }) => (
   <>
-    {TrustProjectLink && (
-      <StyledList role="list" TrustProjectLink={TrustProjectLink} links={links}>
+    <StyledList role="list" TrustProjectLink={TrustProjectLink} links={links}>
+      {TrustProjectLink && (
         <StyledListItem key={TrustProjectLink.text} role="listitem">
           <Link text={TrustProjectLink.text} href={TrustProjectLink.href} />
         </StyledListItem>
-        {links.map(link => (
-          <StyledListItem key={link.text} role="listitem">
-            <Link text={link.text} href={link.href} />
-          </StyledListItem>
-        ))}
-      </StyledList>
-    )}
-
-    {!TrustProjectLink && (
-      <StyledListNoTrustLink role="list" links={links}>
-        {links.map(link => (
-          <StyledListItem key={link.text} role="listitem">
-            <Link text={link.text} href={link.href} />
-          </StyledListItem>
-        ))}
-      </StyledListNoTrustLink>
-    )}
+      )}
+      {links.map(link => (
+        <StyledListItem key={link.text} role="listitem">
+          <Link text={link.text} href={link.href} />
+        </StyledListItem>
+      ))}
+    </StyledList>
   </>
 );
 
