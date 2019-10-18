@@ -6,7 +6,7 @@ This component is currently tagged as alpha and is not suitable for production u
 
 ## Description
 
-The `LeadingStoryPromo` componentis designed to be used on 'index' pages for feature - similar to `@bbc/psammead-story-promo`, but for featured stories. It supports having info on the left with an image on the right. This info would be a headline, text summary and timestamp.
+The `LeadingStoryPromo` component is designed to be used on 'index' pages, which are pages that link to other articles/stories. It supports having info on the left with an image on the right. This can be a collection of any nodes.
 
 ## Installation
 
@@ -21,7 +21,7 @@ The `LeadingStoryPromo` componentis designed to be used on 'index' pages for fea
 
 ## Usage
 
-This component relies on `@bbc/psammead-grid` to achieve the positioning on the info and image. 
+The typical usage of this component is as described below. An image sits on the right side of the promo with info elements on the left.
 
 ```jsx
 import LeadingStoryPromo from '@bbc/psammead-leading-story-promo';
