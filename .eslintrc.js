@@ -23,6 +23,6 @@ module.exports = {
     'react/jsx-props-no-spreading': 'off',
     'react/jsx-one-expression-per-line': 'off',
     'linebreak-style': process.platform === 'win32' ? 'off' : ['error', 'unix'],
-    'import/no-extraneous-dependencies': 2,
+    'import/no-extraneous-dependencies': 'off',
   },
 };
