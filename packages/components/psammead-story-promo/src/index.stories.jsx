@@ -96,12 +96,11 @@ const InfoComponent = ({
   </>
 );
 
-const generateStory = ({ topStory, alsoItems = null, displayImage = true }) => ({
-  text: textSnippet,
-  script,
-  service,
-  dir,
-}) => {
+const generateStory = ({
+  topStory,
+  alsoItems = null,
+  displayImage = true,
+}) => ({ text: textSnippet, script, service, dir }) => {
   const mediaType = select(
     'Media Type',
     ['No media', 'video', 'audio', 'photogallery'],
@@ -125,21 +124,20 @@ const generateStory = ({ topStory, alsoItems = null, displayImage = true }) => (
 
   const Img = buildImg();
 
-      return (
-        <StoryPromo
-          image={Img}
-          info={Info}
-          displayImage={displayImage}
-          dir={dir}
-          mediaIndicator={
-            mediaType !== 'No media' &&
-            MediaIndicatorComponent(mediaType, service, displayImage)
-          }
-          topStory={topStory}
-        />
-      );
-    },
-  });
+  return (
+    <StoryPromo
+      image={Img}
+      info={Info}
+      displayImage={displayImage}
+      dir={dir}
+      mediaIndicator={
+        mediaType !== 'No media' &&
+        MediaIndicatorComponent(mediaType, service, displayImage)
+      }
+      topStory={topStory}
+    />
+  );
+};
 
 storiesOf('Components|StoryPromo/StoryPromo', module)
   .addDecorator(withKnobs)
