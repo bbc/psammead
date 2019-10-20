@@ -91,14 +91,16 @@ const gridMediaQueries = ({
   enableGelMargins,
 }) => {
   const selectedGroups = Object.keys(columns);
+
   return selectedGroups.map(group =>
     mediaQuery({
       min: groups[group].min,
       max: groups[group].max,
       styles: `
-        width: initial;
-        grid-template-columns: repeat(${columns[group]}, 1fr);
-        grid-column-end: span ${columns[group]};
+      width: initial;
+      margin: 0;
+      grid-template-columns: repeat(${columns[group]}, 1fr);
+      grid-column-end: span ${columns[group]};
       ${enableGelGutters ? `grid-column-gap: ${groups[group].gutterSize};` : ``}
       ${enableGelMargins ? `padding: 0 ${groups[group].marginSize};` : ``}
       ${
@@ -115,26 +117,71 @@ const gridMediaQueries = ({
  *   grid items that are placed side-by-side within a row
  *   have their text and images aligned
  */
+const gridChildrenFallback = (
+  item,
+  columnsGroup,
+  parentColumnsGroup,
+  parentEnableGelGutters,
+  gutterSize,
+) => `
+  display: inline-block;
+  vertical-align: top; 
+  ${
+    item
+      ? `width: calc(${(100 * columnsGroup) /
+          parentColumnsGroup}% - ${gutterSize});`
+      : `width: ${(100 * columnsGroup) / parentColumnsGroup}%;`
+  }
+  ${
+    item && parentEnableGelGutters
+      ? `margin: 0 ${parseFloat(gutterSize, 10) / 2}rem;`
+      : ``
+  }   
+`; /* [1] */
+
+const gridParentFallback = (enableGelGutters, gutterSize) => `
+  ${enableGelGutters ? `margin: 0 -${parseFloat(gutterSize, 10) / 2}rem;` : ``}
+`;
+
 const gridFallbacks = css`
-  ${({ item, columns, parentColumns }) => {
-    if (!item || !parentColumns) {
-      return `position: relative;`;
-    }
+  ${({
+    item,
+    columns,
+    parentColumns,
+    enableGelGutters,
+    parentEnableGelGutters,
+  }) => {
     const selectedGroups = Object.keys(columns);
-    return selectedGroups.map(
-      group =>
-        `
-      ${mediaQuery({
-        min: groups[group].min,
-        max: groups[group].max,
-        styles: `
-          display: inline-block;
-          width: ${(100 * columns[group]) / parentColumns[group]}%;
-          vertical-align: top; `,
-        /* [1] */
-      })}
-    `,
-    );
+
+    return `
+      ${!parentColumns ? 'position: relative;' : ''}
+
+      ${selectedGroups
+        .map(
+          group => `
+            ${mediaQuery({
+              min: groups[group].min,
+              max: groups[group].max,
+              styles: `
+              ${
+                !parentColumns
+                  ? gridParentFallback(
+                      enableGelGutters,
+                      groups[group].gutterSize,
+                    )
+                  : gridChildrenFallback(
+                      item,
+                      columns[group],
+                      parentColumns[group],
+                      parentEnableGelGutters,
+                      groups[group].gutterSize,
+                    )
+              }`,
+            })}
+          `,
+        )
+        .join('')} 
+    `;
   }}
 `;
 
@@ -144,6 +191,27 @@ const GridComponent = styled.div`
     ${gridMediaQueries}
     ${({ item }) =>
       item ? `display: block;` : `display: grid; position: initial;`}
+  }
+`;
+
+const wrapperFallbacks = ({ columns }) => {
+  const selectedGroups = Object.keys(columns);
+
+  return selectedGroups.map(group =>
+    mediaQuery({
+      min: groups[group].min,
+      max: groups[group].max,
+      styles: `
+        padding: 0 ${groups[group].marginSize};
+      `,
+    }),
+  );
+};
+
+const MarginWrapper = styled.div`
+  ${wrapperFallbacks}
+  @supports (display: grid) {
+    padding: 0;
   }
 `;
 
@@ -159,16 +227,27 @@ const Grid = ({
       if (isNestedGridComponent) {
         return React.cloneElement(child, {
           parentColumns: otherProps.columns,
+          parentEnableGelGutters: otherProps.enableGelGutters,
         });
       }
       return child;
     });
 
-  return (
+  const renderGridComponent = () => (
     <GridComponent {...otherProps} gridStartOffset={gridStartOffset}>
       {renderChildren()}
     </GridComponent>
   );
+
+  if (otherProps.enableGelMargins && !otherProps.parentColumns) {
+    return (
+      <MarginWrapper columns={otherProps.columns}>
+        {renderGridComponent()}
+      </MarginWrapper>
+    );
+  }
+
+  return renderGridComponent();
 };
 
 Grid.propTypes = {
