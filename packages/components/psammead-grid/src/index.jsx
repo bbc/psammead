@@ -247,10 +247,10 @@ const gridFallbacks = css`
 
 const GridComponent = styled.div`
   ${gridFallbacks}
-  /* @supports (display: grid) {
+  @supports (display: grid) {
     ${gridMediaQueries}
     ${({ item }) =>
-      item ? `display: block;` : `display: grid; position: initial;`} */
+      item ? `display: block;` : `display: grid; position: initial;`}
   }
 `;
 
@@ -269,9 +269,10 @@ const wrapperFallbacks = ({ columns }) => {
 };
 
 const MarginWrapper = styled.div`
-  ${wrapperFallbacks} /* @supports (display: grid) {
+  ${wrapperFallbacks}
+  @supports (display: grid) {
     padding: 0;
-  } */
+  }
 `;
 
 const Grid = ({
