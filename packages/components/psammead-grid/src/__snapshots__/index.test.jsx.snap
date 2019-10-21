@@ -58,13 +58,6 @@ exports[`Grid component should render Grid with Grid items 1`] = `
   }
 }
 
-@supports (display:grid) {
-  .c1 {
-    display: grid;
-    position: initial;
-  }
-}
-
 @media (max-width:14.9375rem) {
   .c2 {
     margin: 0 0.25rem;
@@ -119,12 +112,6 @@ exports[`Grid component should render Grid with Grid items 1`] = `
   }
 }
 
-@supports (display:grid) {
-  .c2 {
-    display: block;
-  }
-}
-
 @media (max-width:14.9375rem) {
   .c4 {
     width: calc(100% );
@@ -173,13 +160,6 @@ exports[`Grid component should render Grid with Grid items 1`] = `
   }
 }
 
-@supports (display:grid) {
-  .c4 {
-    display: grid;
-    position: initial;
-  }
-}
-
 @media (max-width:14.9375rem) {
   .c5 {
     width: calc(100%  );
@@ -228,12 +208,6 @@ exports[`Grid component should render Grid with Grid items 1`] = `
   }
 }
 
-@supports (display:grid) {
-  .c5 {
-    display: block;
-  }
-}
-
 @media (max-width:14.9375rem) {
   .c6 {
     width: calc(100%  );
@@ -279,12 +253,6 @@ exports[`Grid component should render Grid with Grid items 1`] = `
     width: calc(83.33333333333333%  );
     display: inline-block;
     vertical-align: top;
-  }
-}
-
-@supports (display:grid) {
-  .c6 {
-    display: block;
   }
 }
 
@@ -342,12 +310,6 @@ exports[`Grid component should render Grid with Grid items 1`] = `
   }
 }
 
-@supports (display:grid) {
-  .c7 {
-    display: block;
-  }
-}
-
 @media (max-width:14.9375rem) {
   .c0 {
     padding: 0 0.5rem;
@@ -384,12 +346,6 @@ exports[`Grid component should render Grid with Grid items 1`] = `
   }
 }
 
-@supports (display:grid) {
-  .c0 {
-    padding: 0;
-  }
-}
-
 @media (min-width:20rem) and (max-width:37.4375rem) {
   .c3 {
     font-size: 1rem;
@@ -409,9 +365,11 @@ exports[`Grid component should render Grid with Grid items 1`] = `
 >
   <div
     class="c1"
+    dir="ltr"
   >
     <div
       class="c2"
+      dir="ltr"
     >
       <p
         class="c3"
@@ -422,9 +380,11 @@ exports[`Grid component should render Grid with Grid items 1`] = `
     </div>
     <div
       class="c4"
+      dir="ltr"
     >
       <div
         class="c5"
+        dir="ltr"
       >
         <p
           class="c3"
@@ -435,6 +395,7 @@ exports[`Grid component should render Grid with Grid items 1`] = `
       </div>
       <div
         class="c6"
+        dir="ltr"
       >
         <p
           class="c3"
@@ -446,6 +407,7 @@ exports[`Grid component should render Grid with Grid items 1`] = `
     </div>
     <div
       class="c7"
+      dir="ltr"
     >
       <p
         class="c3"
@@ -456,6 +418,7 @@ exports[`Grid component should render Grid with Grid items 1`] = `
     </div>
     <div
       class="c7"
+      dir="ltr"
     >
       <p
         class="c3"
@@ -466,6 +429,7 @@ exports[`Grid component should render Grid with Grid items 1`] = `
     </div>
     <div
       class="c7"
+      dir="ltr"
     >
       <p
         class="c3"
@@ -476,6 +440,7 @@ exports[`Grid component should render Grid with Grid items 1`] = `
     </div>
     <div
       class="c7"
+      dir="ltr"
     >
       <p
         class="c3"
@@ -486,6 +451,7 @@ exports[`Grid component should render Grid with Grid items 1`] = `
     </div>
     <div
       class="c7"
+      dir="ltr"
     >
       <p
         class="c3"
@@ -496,6 +462,7 @@ exports[`Grid component should render Grid with Grid items 1`] = `
     </div>
     <div
       class="c7"
+      dir="ltr"
     >
       <p
         class="c3"
@@ -506,6 +473,7 @@ exports[`Grid component should render Grid with Grid items 1`] = `
     </div>
     <div
       class="c7"
+      dir="ltr"
     >
       <p
         class="c3"
@@ -516,6 +484,7 @@ exports[`Grid component should render Grid with Grid items 1`] = `
     </div>
     <div
       class="c7"
+      dir="ltr"
     >
       <p
         class="c3"
@@ -526,6 +495,7 @@ exports[`Grid component should render Grid with Grid items 1`] = `
     </div>
     <div
       class="c7"
+      dir="ltr"
     >
       <p
         class="c3"
@@ -536,6 +506,7 @@ exports[`Grid component should render Grid with Grid items 1`] = `
     </div>
     <div
       class="c7"
+      dir="ltr"
     >
       <p
         class="c3"
@@ -571,13 +542,6 @@ exports[`Grid component should render Grid with Grid items including nested non-
 .c4 {
   margin: 0;
   padding: 0;
-}
-
-@supports (display:grid) {
-  .c1 {
-    display: grid;
-    position: initial;
-  }
 }
 
 @media (max-width:14.9375rem) {
@@ -634,12 +598,6 @@ exports[`Grid component should render Grid with Grid items including nested non-
   }
 }
 
-@supports (display:grid) {
-  .c2 {
-    display: block;
-  }
-}
-
 @media (max-width:14.9375rem) {
   .c5 {
     margin-left: 0%;
@@ -673,13 +631,6 @@ exports[`Grid component should render Grid with Grid items including nested non-
 @media (min-width:80rem) {
   .c5 {
     margin-left: 33.333333333333336%;
-  }
-}
-
-@supports (display:grid) {
-  .c5 {
-    display: grid;
-    position: initial;
   }
 }
 
@@ -737,12 +688,6 @@ exports[`Grid component should render Grid with Grid items including nested non-
   }
 }
 
-@supports (display:grid) {
-  .c6 {
-    display: block;
-  }
-}
-
 @media (max-width:14.9375rem) {
   .c7 {
     width: calc(100%  - 0%);
@@ -794,12 +739,6 @@ exports[`Grid component should render Grid with Grid items including nested non-
     margin-left: 33.333333333333336%;
     display: inline-block;
     vertical-align: top;
-  }
-}
-
-@supports (display:grid) {
-  .c7 {
-    display: block;
   }
 }
 
@@ -857,12 +796,6 @@ exports[`Grid component should render Grid with Grid items including nested non-
   }
 }
 
-@supports (display:grid) {
-  .c8 {
-    display: block;
-  }
-}
-
 @media (max-width:14.9375rem) {
   .c0 {
     padding: 0 0.5rem;
@@ -899,12 +832,6 @@ exports[`Grid component should render Grid with Grid items including nested non-
   }
 }
 
-@supports (display:grid) {
-  .c0 {
-    padding: 0;
-  }
-}
-
 @media (min-width:20rem) and (max-width:37.4375rem) {
   .c3 {
     font-size: 1rem;
@@ -924,9 +851,11 @@ exports[`Grid component should render Grid with Grid items including nested non-
 >
   <div
     class="c1"
+    dir="ltr"
   >
     <div
       class="c2"
+      dir="ltr"
     >
       <p
         class="c3"
@@ -940,9 +869,11 @@ exports[`Grid component should render Grid with Grid items including nested non-
     >
       <div
         class="c5"
+        dir="ltr"
       >
         <div
           class="c6"
+          dir="ltr"
         >
           <p
             class="c3"
@@ -953,6 +884,7 @@ exports[`Grid component should render Grid with Grid items including nested non-
         </div>
         <div
           class="c7"
+          dir="ltr"
         >
           <p
             class="c3"
@@ -965,6 +897,7 @@ exports[`Grid component should render Grid with Grid items including nested non-
     </figure>
     <div
       class="c8"
+      dir="ltr"
     >
       <p
         class="c3"
@@ -975,6 +908,7 @@ exports[`Grid component should render Grid with Grid items including nested non-
     </div>
     <div
       class="c8"
+      dir="ltr"
     >
       <p
         class="c3"
@@ -985,6 +919,7 @@ exports[`Grid component should render Grid with Grid items including nested non-
     </div>
     <div
       class="c8"
+      dir="ltr"
     >
       <p
         class="c3"
@@ -995,6 +930,7 @@ exports[`Grid component should render Grid with Grid items including nested non-
     </div>
     <div
       class="c8"
+      dir="ltr"
     >
       <p
         class="c3"
@@ -1005,6 +941,7 @@ exports[`Grid component should render Grid with Grid items including nested non-
     </div>
     <div
       class="c8"
+      dir="ltr"
     >
       <p
         class="c3"
@@ -1015,6 +952,7 @@ exports[`Grid component should render Grid with Grid items including nested non-
     </div>
     <div
       class="c8"
+      dir="ltr"
     >
       <p
         class="c3"
@@ -1025,6 +963,7 @@ exports[`Grid component should render Grid with Grid items including nested non-
     </div>
     <div
       class="c8"
+      dir="ltr"
     >
       <p
         class="c3"
@@ -1035,6 +974,7 @@ exports[`Grid component should render Grid with Grid items including nested non-
     </div>
     <div
       class="c8"
+      dir="ltr"
     >
       <p
         class="c3"
@@ -1045,6 +985,7 @@ exports[`Grid component should render Grid with Grid items including nested non-
     </div>
     <div
       class="c8"
+      dir="ltr"
     >
       <p
         class="c3"
@@ -1055,6 +996,7 @@ exports[`Grid component should render Grid with Grid items including nested non-
     </div>
     <div
       class="c8"
+      dir="ltr"
     >
       <p
         class="c3"
