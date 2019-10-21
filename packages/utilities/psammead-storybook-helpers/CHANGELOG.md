@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 7.0.1 | [PR#2436](https://github.com/bbc/psammead/pull/2436) Update chinese locales |
 | 7.0.0 | [PR#2404](https://github.com/bbc/psammead/pull/2404) replace inputProvider and dirDecorator with withServicesInput |
 | 6.2.0 | [PR#2407](https://github.com/bbc/psammead/pull/2407) adds buildRTLSubstories to create right-to-left variants of all stories |
 | 6.1.0 | [PR#2402](https://github.com/bbc/psammead/pull/2402) adds withServicesKnob decorator |
