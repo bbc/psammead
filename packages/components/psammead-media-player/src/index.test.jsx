@@ -8,6 +8,7 @@ describe('Media Player: AMP Entry', () => {
     <AmpMediaPlayer
       placeholderSrc="http://foo.bar/placeholder.png"
       src="http://foo.bar/iframe/amp"
+      title="Media player"
     />,
   );
 
@@ -17,6 +18,7 @@ describe('Media Player: AMP Entry', () => {
       portrait
       placeholderSrc="http://foo.bar/placeholder.png"
       src="http://foo.bar/iframe/amp"
+      title="Media player"
     />,
   );
 
@@ -27,6 +29,7 @@ describe('Media Player: AMP Entry', () => {
       src="https://www.test.bbc.com/ws/av-embeds/media/bbc_korean_radio/liveradio"
       skin="audio"
       placeholderSrc="http://foo.bar/placeholder.png"
+      title="Audio player"
     />,
   );
 });
@@ -37,6 +40,7 @@ describe('Media Player: Canonical Entry', () => {
     <CanonicalMediaPlayer
       placeholderSrc="http://foo.bar/placeholder.png"
       src="http://foo.bar/iframe"
+      title="Media player"
     />,
   );
 
@@ -46,6 +50,7 @@ describe('Media Player: Canonical Entry', () => {
       placeholderSrc="http://foo.bar/placeholder.png"
       src="http://foo.bar/iframe"
       portrait
+      title="Media player"
     />,
   );
 
@@ -54,6 +59,7 @@ describe('Media Player: Canonical Entry', () => {
     <CanonicalMediaPlayer
       showPlaceholder={false}
       src="http://foo.bar/iframe"
+      title="Media player"
     />,
   );
 
@@ -63,6 +69,7 @@ describe('Media Player: Canonical Entry', () => {
       showPlaceholder={false}
       src="https://www.test.bbc.com/ws/av-embeds/media/bbc_korean_radio/liveradio"
       skin="audio"
+      title="Audio player"
     />,
   );
 });
