@@ -26,6 +26,7 @@ exports[`Media Player: AMP Entry renders a landscape container with an amp-ifram
           layout="fill"
           sandbox="allow-scripts allow-same-origin"
           src="http://foo.bar/iframe/amp"
+          title="Media player"
         >
           <amp-img
             layout="fill"
@@ -65,6 +66,7 @@ exports[`Media Player: AMP Entry renders a portrait container with amp-iframe an
           layout="fill"
           sandbox="allow-scripts allow-same-origin"
           src="http://foo.bar/iframe/amp"
+          title="Media player"
         >
           <amp-img
             layout="fill"
@@ -104,6 +106,7 @@ exports[`Media Player: AMP Entry renders the audio skin 1`] = `
           layout="fill"
           sandbox="allow-scripts allow-same-origin"
           src="https://www.test.bbc.com/ws/av-embeds/media/bbc_korean_radio/liveradio"
+          title="Audio player"
         >
           <amp-img
             layout="fill"
@@ -216,6 +219,7 @@ exports[`Media Player: Canonical Entry renders an iframe when showPlaceholder is
     allowfullscreen=""
     class="c1"
     src="http://foo.bar/iframe"
+    title="Media player"
   />
 </div>
 `;
@@ -245,6 +249,7 @@ exports[`Media Player: Canonical Entry renders the audio skin 1`] = `
     allowfullscreen=""
     class="c1"
     src="https://www.test.bbc.com/ws/av-embeds/media/bbc_korean_radio/liveradio"
+    title="Audio player"
   />
 </div>
 `;
