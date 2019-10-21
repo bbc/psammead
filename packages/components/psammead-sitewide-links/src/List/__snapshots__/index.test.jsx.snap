@@ -17,13 +17,13 @@ exports[`List should render correctly with 7 items 1`] = `
 }
 
 .c0 {
-  border-bottom: 1px solid #3F3F42;
+  border: 1px solid #3F3F42;
+  border-width: 1px 0;
   list-style-type: none;
   margin: 0;
-  padding: 0 0 0.5rem;
+  padding: 0.5rem 0;
   -webkit-column-count: 4;
   column-count: 4;
-  display: hide;
 }
 
 .c1 {
@@ -218,13 +218,13 @@ exports[`List should render correctly with 8 items 1`] = `
 }
 
 .c0 {
-  border-bottom: 1px solid #3F3F42;
+  border: 1px solid #3F3F42;
+  border-width: 1px 0;
   list-style-type: none;
   margin: 0;
-  padding: 0 0 0.5rem;
+  padding: 0.5rem 0;
   -webkit-column-count: 4;
   column-count: 4;
-  display: hide;
 }
 
 .c1 {

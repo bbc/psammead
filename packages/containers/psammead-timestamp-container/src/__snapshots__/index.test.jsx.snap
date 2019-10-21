@@ -189,6 +189,6 @@ exports[`Timestamp with alternative calendar props should not add alternative ca
   class="c0"
   datetime="2018-10-19"
 >
-  ۱۱ ماه پیش
+  یک سال پیش
 </time>
 `;

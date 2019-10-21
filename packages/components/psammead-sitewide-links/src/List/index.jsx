@@ -23,10 +23,13 @@ const getRowCount = (links, columns) =>
   Math.ceil((links.length - 1) / columns) + 1;
 
 const StyledList = styled.ul`
-  border-bottom: 1px solid ${C_SHADOW};
+  border: 1px solid ${C_SHADOW};
+  border-width: ${({ TrustProjectLink }) =>
+    TrustProjectLink ? `0 0 1px 0` : `1px 0`};
   list-style-type: none;
   margin: 0;
-  padding: 0 0 ${GEL_SPACING};
+  padding: ${({ TrustProjectLink }) =>
+    TrustProjectLink ? `0 0 ${GEL_SPACING}` : `${GEL_SPACING} 0`};
   column-count: 4;
 
   @supports (${grid}) {
@@ -72,22 +75,15 @@ const StyledList = styled.ul`
     column-count: 4;
   }
   ${props =>
-    props.TrustProjectLink
-      ? `> li:first-child {
+    props.TrustProjectLink &&
+    `> li:first-child {
     border-bottom: 1px solid ${C_SHADOW};
     padding: ${GEL_SPACING} 0;
     margin-bottom: ${GEL_SPACING};
     grid-column: 1/-1;
     width: 100%;
     column-span: all;
-  }`
-      : `
-    div {
-      width: 100%;
-      column-span: all;
-      padding: 50px;
-    }
-      display: hide`};
+  }`};
 `;
 
 const StyledListItem = styled.li`
@@ -104,7 +100,6 @@ const List = ({ links, TrustProjectLink }) => (
           <Link text={TrustProjectLink.text} href={TrustProjectLink.href} />
         </StyledListItem>
       )}
-      <div>a</div>
       {links.map(link => (
         <StyledListItem key={link.text} role="listitem">
           <Link text={link.text} href={link.href} />
