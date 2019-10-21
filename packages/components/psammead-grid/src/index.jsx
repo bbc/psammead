@@ -116,8 +116,8 @@ const gridMediaQueries = ({
  *   have their text and images aligned
  */
 const gridFallbacks = css`
-  ${({ item, columns, parentColumns }) => {
-    if (!item || !parentColumns) {
+  ${({ columns, parentColumns }) => {
+    if (!parentColumns) {
       return `position: relative;`;
     }
     const selectedGroups = Object.keys(columns);
