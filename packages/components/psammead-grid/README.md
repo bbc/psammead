@@ -183,9 +183,7 @@ This `Grid` component can be used for page-level layouts as well as for layouts 
 
 Currently this component is in alpha. This is because it has not yet been tested with various assistive technologies. After it has had an accessibility swarm, this will be published under a standard version.
 
-## Roadmap
-
-Currently the fallback for browsers that don't support CSS Grid is that there are no gutters or margins applied. We will implement a fix for this in a future version.
+<!-- ## Roadmap -->
 
 ## Contributing
 
