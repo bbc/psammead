@@ -83,7 +83,7 @@ const StyledList = styled.ul`
     grid-column: 1/-1;
     width: 100%;
     column-span: all;
-  }`};
+  }`}
 `;
 
 const StyledListItem = styled.li`
