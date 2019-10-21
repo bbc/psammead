@@ -115,6 +115,19 @@ const gridMediaQueries = ({
 const gridOffsetFallback = (columnsGroup, gridStartOffsetGroup) =>
   `${(100 / columnsGroup) * (gridStartOffsetGroup - 1)}%`;
 
+const negativeOffset = (
+  columnsGroup,
+  parentColumnsGroup,
+  gridStartOffset,
+  gridStartOffsetGroup,
+) => {
+  return gridStartOffsetGroup &&
+    gridStartOffsetGroup < parentColumnsGroup &&
+    columnsGroup === parentColumnsGroup
+    ? `- ${gridOffsetFallback(parentColumnsGroup, gridStartOffsetGroup)}`
+    : ``;
+};
+
 /*
  * 1 We vertically align to the top so that sibling
  *   grid items that are placed side-by-side within a row
@@ -122,6 +135,7 @@ const gridOffsetFallback = (columnsGroup, gridStartOffsetGroup) =>
  */
 const childrenFallback = (
   item,
+  dir,
   columnsGroup,
   parentColumnsGroup,
   parentEnableGelGutters,
@@ -134,46 +148,36 @@ const childrenFallback = (
       ? `
         ${
           parentEnableGelGutters
-            ? ` margin: 0 ${parseFloat(gutterSize) / 2}rem;
+            ? ` 
+              margin: 0 ${parseFloat(gutterSize) / 2}rem;
               width: calc(${(100 * columnsGroup) / parentColumnsGroup}%
                 - ${gutterSize} 
-                ${
-                  gridStartOffsetGroup &&
-                  gridStartOffsetGroup < parentColumnsGroup &&
-                  columnsGroup === parentColumnsGroup
-                    ? `- ${gridOffsetFallback(
-                        parentColumnsGroup,
-                        gridStartOffsetGroup,
-                      )}`
-                    : ``
-                });`
+                ${negativeOffset(
+                  columnsGroup,
+                  parentColumnsGroup,
+                  gridStartOffset,
+                  gridStartOffsetGroup,
+                )});`
             : `width: calc(${(100 * columnsGroup) / parentColumnsGroup}% 
-              ${
-                gridStartOffsetGroup &&
-                gridStartOffsetGroup < parentColumnsGroup &&
-                columnsGroup === parentColumnsGroup
-                  ? `- ${gridOffsetFallback(
-                      parentColumnsGroup,
-                      gridStartOffsetGroup,
-                    )}`
-                  : ``
-              });`
+              ${negativeOffset(
+                columnsGroup,
+                parentColumnsGroup,
+                gridStartOffset,
+                gridStartOffsetGroup,
+              )});
+            `
         }`
       : `width: calc(${(100 * columnsGroup) / parentColumnsGroup}%
-        ${
-          gridStartOffsetGroup &&
-          gridStartOffsetGroup < parentColumnsGroup &&
-          columnsGroup === parentColumnsGroup
-            ? `- ${gridOffsetFallback(
-                parentColumnsGroup,
-                gridStartOffsetGroup,
-              )}`
-            : ``
-        });`
+        ${negativeOffset(
+          columnsGroup,
+          parentColumnsGroup,
+          gridStartOffset,
+          gridStartOffsetGroup,
+        )});`
   }
   ${
-    gridStartOffset && gridStartOffsetGroup < parentColumnsGroup
-      ? `margin-left: ${gridOffsetFallback(
+    gridStartOffsetGroup && gridStartOffsetGroup < parentColumnsGroup
+      ? `margin-${dir === 'ltr' ? 'left' : 'right'}: ${gridOffsetFallback(
           parentColumnsGroup,
           gridStartOffsetGroup,
         )}`
@@ -236,6 +240,7 @@ const gridFallbacks = css`
                     )
                   : childrenFallback(
                       item,
+                      dir,
                       columns[group],
                       parentColumns[group],
                       parentEnableGelGutters,
