@@ -4,6 +4,7 @@
 | Version | Description |
 |---------|-------------|
 | 4.0.0 | [PR#2340](https://github.com/bbc/psammead/pull/2340) Add trustProjectLink to psammead-sitewide-links |
+| 3.1.16 | [PR#2440](https://github.com/bbc/psammead/pull/2440) Talos - Bump Dependencies - @bbc/psammead-styles |
 | 3.1.15 | [PR#2404](https://github.com/bbc/psammead/pull/2404) replace inputProvider and dirDecorator with withServicesInput |
 | 3.1.14 | [PR#2351](https://github.com/bbc/psammead/pull/2351) Fix styling for IE11 |
 | 3.1.13 | [PR#2289](https://github.com/bbc/psammead/pull/2289) Talos - Bump Dependencies - @bbc/psammead-styles |
