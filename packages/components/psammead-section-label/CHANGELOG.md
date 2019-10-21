@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 3.0.2 | [PR#2440](https://github.com/bbc/psammead/pull/2440) Talos - Bump Dependencies - @bbc/psammead-styles |
 | 3.0.1 | [PR#2404](https://github.com/bbc/psammead/pull/2404) replace inputProvider and dirDecorator with withServicesInput |
 | 3.0.0 | [PR#2377](https://github.com/bbc/psammead/pull/2377) Spread extra props to the component |
 | 2.3.18 | [PR#2353](https://github.com/bbc/psammead/pull/2353) Use `labelId` prop to set `data-section-divider` for event tracking |
