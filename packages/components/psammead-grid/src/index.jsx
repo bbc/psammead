@@ -1,5 +1,5 @@
 import React from 'react';
-import { bool, node, number, shape } from 'prop-types';
+import { bool, node, number, shape, oneOf } from 'prop-types';
 import styled, { css } from 'styled-components';
 import {
   GEL_MARGIN_BELOW_400PX,
@@ -120,7 +120,7 @@ const gridOffsetFallback = (columnsGroup, gridStartOffsetGroup) =>
  *   grid items that are placed side-by-side within a row
  *   have their text and images aligned
  */
-const gridChildrenFallback = (
+const childrenFallback = (
   item,
   columnsGroup,
   parentColumnsGroup,
@@ -183,7 +183,8 @@ const gridChildrenFallback = (
   vertical-align: top; 
 `; /* [1] */
 
-const gridParentFallback = (
+const outerGridFallback = (
+  dir,
   columnsGroup,
   enableGelGutters,
   gutterSize,
@@ -193,23 +194,28 @@ const gridParentFallback = (
   ${enableGelGutters ? `margin: 0 -${parseFloat(gutterSize) / 2}rem;` : ``}
   ${
     gridStartOffset && gridStartOffsetGroup < columnsGroup
-      ? `margin-left: ${gridOffsetFallback(columnsGroup, gridStartOffsetGroup)}`
+      ? `margin-${dir === 'ltr' ? 'left' : 'right'}: ${gridOffsetFallback(
+          columnsGroup,
+          gridStartOffsetGroup,
+        )}`
       : ``
   }`;
 
 const gridFallbacks = css`
   ${({
     item,
+    dir,
     columns,
     parentColumns,
     enableGelGutters,
     parentEnableGelGutters,
     gridStartOffset,
   }) => {
-    const selectedGroups = Object.keys(columns);
+    const isOuterGrid = !parentColumns;
 
+    const selectedGroups = Object.keys(columns);
     return `
-      ${!parentColumns ? 'position: relative;' : ''}
+      ${isOuterGrid ? 'position: relative;' : ''}
 
       ${selectedGroups
         .map(
@@ -219,15 +225,16 @@ const gridFallbacks = css`
               max: groups[group].max,
               styles: `
               ${
-                !parentColumns
-                  ? gridParentFallback(
+                isOuterGrid
+                  ? outerGridFallback(
+                      dir,
                       columns[group],
                       enableGelGutters,
                       groups[group].gutterSize,
                       gridStartOffset,
                       gridStartOffset[group],
                     )
-                  : gridChildrenFallback(
+                  : childrenFallback(
                       item,
                       columns[group],
                       parentColumns[group],
@@ -247,11 +254,11 @@ const gridFallbacks = css`
 
 const GridComponent = styled.div`
   ${gridFallbacks}
-  @supports (display: grid) {
+  /* @supports (display: grid) {
     ${gridMediaQueries}
     ${({ item }) =>
       item ? `display: block;` : `display: grid; position: initial;`}
-  }
+  } */
 `;
 
 const wrapperFallbacks = ({ columns }) => {
@@ -268,11 +275,10 @@ const wrapperFallbacks = ({ columns }) => {
   );
 };
 
-const MarginWrapper = styled.div`
-  ${wrapperFallbacks}
-  @supports (display: grid) {
+const Wrapper = styled.div`
+  ${wrapperFallbacks} /* @supports (display: grid) {
     padding: 0;
-  }
+  } */
 `;
 
 const Grid = ({
@@ -299,11 +305,12 @@ const Grid = ({
     </GridComponent>
   );
 
-  if (otherProps.enableGelMargins && !otherProps.parentColumns) {
+  const isOuterGrid = otherProps.enableGelMargins && !otherProps.parentColumns;
+
+  if (isOuterGrid) {
+    // This is done to add a wrapper with padding when CSS Grid is not supported and enableGelMargins is passed
     return (
-      <MarginWrapper columns={otherProps.columns}>
-        {renderGridComponent()}
-      </MarginWrapper>
+      <Wrapper columns={otherProps.columns}>{renderGridComponent()}</Wrapper>
     );
   }
 
@@ -312,6 +319,7 @@ const Grid = ({
 
 Grid.propTypes = {
   children: node.isRequired,
+  dir: oneOf(['ltr', 'rtl']),
   columns: shape({
     group1: number,
     group2: number,
@@ -332,6 +340,7 @@ Grid.propTypes = {
 };
 
 Grid.defaultProps = {
+  dir: 'ltr',
   enableGelGutters: false,
   enableGelMargins: false,
   startOffset: {},
