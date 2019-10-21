@@ -3,7 +3,6 @@
 <!-- prettier-ignore -->
 | Version | Description                                                                                                                                                                  |
 | ------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 2.2.14  | [PR#2400](https://github.com/bbc/psammead/pull/2400) chore: bump dependencies (#2385 - #2396)                                                                                |
 | 2.2.13  | [PR#2404](https://github.com/bbc/psammead/pull/2404) replace inputProvider and dirDecorator with withServicesInput                                                           |
 | 2.2.12  | [PR#2289](https://github.com/bbc/psammead/pull/2289) Talos - Bump Dependencies - @bbc/psammead-styles                                                                        |
 | 2.2.11  | [PR#2273](https://github.com/bbc/psammead/pull/2273) Talos - Bump Dependencies - @bbc/psammead-styles                                                                        |
