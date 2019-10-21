@@ -1,4 +1,4 @@
-const { candyXmlToRichText } = require('../index');
+const { candyXmlToRichText } = require('../src/index');
 
 const createBody = inner =>
   `<body xmlns="http://www.bbc.co.uk/asset" xml:space="preserve" xml:base="http://www.bbc.co.uk/article/abc123">${inner}</body>`;
