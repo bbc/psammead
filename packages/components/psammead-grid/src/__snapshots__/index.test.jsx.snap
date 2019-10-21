@@ -5,10 +5,6 @@ exports[`Grid component should render Grid with Grid items 1`] = `
   position: relative;
 }
 
-.c3 {
-  position: relative;
-}
-
 .c2 {
   font-size: 0.9375rem;
   line-height: 1.25rem;
@@ -78,6 +74,54 @@ exports[`Grid component should render Grid with Grid items 1`] = `
 @supports (display:grid) {
   .c1 {
     display: block;
+  }
+}
+
+@media (max-width:14.9375rem) {
+  .c3 {
+    display: inline-block;
+    width: 100%;
+    vertical-align: top;
+  }
+}
+
+@media (min-width:15rem) and (max-width:24.9375rem) {
+  .c3 {
+    display: inline-block;
+    width: 100%;
+    vertical-align: top;
+  }
+}
+
+@media (min-width:25rem) and (max-width:37.4375rem) {
+  .c3 {
+    display: inline-block;
+    width: 100%;
+    vertical-align: top;
+  }
+}
+
+@media (min-width:37.5rem) and (max-width:62.9375rem) {
+  .c3 {
+    display: inline-block;
+    width: 100%;
+    vertical-align: top;
+  }
+}
+
+@media (min-width:63rem) and (max-width:80rem) {
+  .c3 {
+    display: inline-block;
+    width: 75%;
+    vertical-align: top;
+  }
+}
+
+@media (min-width:80rem) {
+  .c3 {
+    display: inline-block;
+    width: 60%;
+    vertical-align: top;
   }
 }
 
