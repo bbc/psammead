@@ -12,7 +12,7 @@ const AmpHead = () => (
   </Helmet>
 );
 
-const AmpMediaPlayer = ({ src, placeholderSrc, placeholderSrcset }) => {
+const AmpMediaPlayer = ({ src, placeholderSrc, placeholderSrcset, title }) => {
   return (
     <>
       <AmpHead />
@@ -21,6 +21,7 @@ const AmpMediaPlayer = ({ src, placeholderSrc, placeholderSrcset }) => {
         layout="fill"
         frameborder="0"
         src={src}
+        title={title}
         allowfullscreen="allowfullscreen"
       >
         <amp-img
@@ -38,6 +39,7 @@ AmpMediaPlayer.propTypes = {
   src: string.isRequired,
   placeholderSrc: string.isRequired,
   placeholderSrcset: string.isRequired,
+  title: string.isRequired,
 };
 
 export default AmpMediaPlayer;
