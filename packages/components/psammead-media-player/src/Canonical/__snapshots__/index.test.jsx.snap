@@ -16,5 +16,6 @@ exports[`Media Player: Canonical should render an iframe 1`] = `
   allowfullscreen=""
   class="c0"
   src="https://foo.bar/iframe"
+  title="Media player"
 />
 `;

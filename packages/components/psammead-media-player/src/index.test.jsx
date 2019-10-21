@@ -8,6 +8,7 @@ describe('Media Player: AMP Entry', () => {
     <AmpMediaPlayer
       placeholderSrc="http://foo.bar/placeholder.png"
       src="http://foo.bar/iframe/amp"
+      title="Media player"
     />,
   );
 
@@ -17,6 +18,7 @@ describe('Media Player: AMP Entry', () => {
       portrait
       placeholderSrc="http://foo.bar/placeholder.png"
       src="http://foo.bar/iframe/amp"
+      title="Media player"
     />,
   );
 
@@ -27,6 +29,7 @@ describe('Media Player: AMP Entry', () => {
       src="https://www.test.bbc.com/ws/av-embeds/media/bbc_korean_radio/liveradio"
       skin="audio"
       placeholderSrc="http://foo.bar/placeholder.png"
+      title="Audio player"
     />,
   );
 });
@@ -45,6 +48,7 @@ describe('Media Player: Canonical Entry', () => {
       src="http://foo.bar/iframe"
       service="news"
       mediaInfo={{ title: 'Dog chases cat.', ...mediaInfo }}
+      title="Media player"
     />,
   );
 
@@ -56,6 +60,7 @@ describe('Media Player: Canonical Entry', () => {
       portrait
       service="news"
       mediaInfo={{ title: 'Dog chases cat.', ...mediaInfo }}
+      title="Media player"
     />,
   );
 
@@ -66,6 +71,7 @@ describe('Media Player: Canonical Entry', () => {
       src="http://foo.bar/iframe"
       service="news"
       mediaInfo={{ title: 'Dog chases cat.', ...mediaInfo }}
+      title="Media player"
     />,
   );
 
@@ -77,6 +83,7 @@ describe('Media Player: Canonical Entry', () => {
       skin="audio"
       service="news"
       mediaInfo={{ type: 'audio', title: 'Dog barks at cat.', ...mediaInfo }}
+      title="Audio player"
     />,
   );
 });
