@@ -112,7 +112,7 @@ const gridMediaQueries = ({
   );
 };
 
-const gridOffsetFallback = (columnsGroup, gridStartOffsetGroup) =>
+const startOffsetPercentage = (columnsGroup, gridStartOffsetGroup) =>
   `${(100 / columnsGroup) * (gridStartOffsetGroup - 1)}%`;
 
 const negativeOffset = (
@@ -121,10 +121,14 @@ const negativeOffset = (
   gridStartOffset,
   gridStartOffsetGroup,
 ) => {
-  return gridStartOffsetGroup &&
+  const isValidOffset =
+    gridStartOffset &&
+    gridStartOffsetGroup &&
     gridStartOffsetGroup < parentColumnsGroup &&
-    columnsGroup === parentColumnsGroup
-    ? `- ${gridOffsetFallback(parentColumnsGroup, gridStartOffsetGroup)}`
+    columnsGroup === parentColumnsGroup;
+
+  return isValidOffset
+    ? ` - ${startOffsetPercentage(parentColumnsGroup, gridStartOffsetGroup)}`
     : ``;
 };
 
@@ -144,40 +148,30 @@ const childrenFallback = (
   gridStartOffsetGroup,
 ) => ` 
   ${
-    item
-      ? `
-        ${
-          parentEnableGelGutters
-            ? ` 
-              margin: 0 ${parseFloat(gutterSize) / 2}rem;
-              width: calc(${(100 * columnsGroup) / parentColumnsGroup}%
-                - ${gutterSize} 
-                ${negativeOffset(
-                  columnsGroup,
-                  parentColumnsGroup,
-                  gridStartOffset,
-                  gridStartOffsetGroup,
-                )});`
-            : `width: calc(${(100 * columnsGroup) / parentColumnsGroup}% 
-              ${negativeOffset(
-                columnsGroup,
-                parentColumnsGroup,
-                gridStartOffset,
-                gridStartOffsetGroup,
-              )});
-            `
-        }`
-      : `width: calc(${(100 * columnsGroup) / parentColumnsGroup}%
-        ${negativeOffset(
+    item && parentEnableGelGutters
+      ? ` 
+        margin: 0 ${parseFloat(gutterSize) / 2}rem;
+        width: calc(${(100 * columnsGroup) / parentColumnsGroup}%
+          - ${gutterSize}${negativeOffset(
           columnsGroup,
           parentColumnsGroup,
           gridStartOffset,
           gridStartOffsetGroup,
-        )});`
+        )});
+        `
+      : `
+        width: calc(${(100 * columnsGroup) /
+          parentColumnsGroup}%${negativeOffset(
+          columnsGroup,
+          parentColumnsGroup,
+          gridStartOffset,
+          gridStartOffsetGroup,
+        )});
+        `
   }
   ${
     gridStartOffsetGroup && gridStartOffsetGroup < parentColumnsGroup
-      ? `margin-${dir === 'ltr' ? 'left' : 'right'}: ${gridOffsetFallback(
+      ? `margin-${dir === 'ltr' ? 'left' : 'right'}: ${startOffsetPercentage(
           parentColumnsGroup,
           gridStartOffsetGroup,
         )}`
@@ -198,7 +192,7 @@ const outerGridFallback = (
   ${enableGelGutters ? `margin: 0 -${parseFloat(gutterSize) / 2}rem;` : ``}
   ${
     gridStartOffset && gridStartOffsetGroup < columnsGroup
-      ? `margin-${dir === 'ltr' ? 'left' : 'right'}: ${gridOffsetFallback(
+      ? `margin-${dir === 'ltr' ? 'left' : 'right'}: ${startOffsetPercentage(
           columnsGroup,
           gridStartOffsetGroup,
         )}`
