@@ -3,6 +3,8 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 2.6.2 | [PR#2440](https://github.com/bbc/psammead/pull/2440) Talos - Bump Dependencies - @bbc/psammead-timestamp, @bbc/psammead-locales |
+| 2.6.1 | [PR#2438](https://github.com/bbc/psammead/pull/2438) Fix relative timestamp snaps that change over time |
 | 2.6.0 | [PR#2369](https://github.com/bbc/psammead/pull/2369) Add @bbc/psammead-locales as a dev dependency and import custom moment locales in the story |
 | 2.5.1 | [PR#2404](https://github.com/bbc/psammead/pull/2404) replace inputProvider and dirDecorator with withServicesInput |
 | 2.5.0 | [PR#2303](https://github.com/bbc/psammead/pull/2303) Add option for alternative calendar timestamps |
