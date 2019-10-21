@@ -7,8 +7,11 @@ import InlineLink from '@bbc/psammead-inline-link';
 import { withServicesKnob } from '@bbc/psammead-storybook-helpers';
 import notes from '../README.md';
 import Paragraph from './index';
+import { buildRTLSubstories } from '../../../utilities/psammead-storybook-helpers/src';
 
-storiesOf('Components|Paragraph', module)
+const stories = storiesOf('Components|Paragraph', module);
+
+stories
   .addDecorator(withKnobs)
   .addDecorator(withServicesKnob())
   .add(
@@ -32,3 +35,5 @@ storiesOf('Components|Paragraph', module)
 
     { notes, knobs: { escapeHTML: false } },
   );
+
+buildRTLSubstories({ stories });
