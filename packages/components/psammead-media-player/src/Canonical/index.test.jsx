@@ -5,6 +5,6 @@ import Canonical from '.';
 describe('Media Player: Canonical', () => {
   shouldMatchSnapshot(
     'should render an iframe',
-    <Canonical src="https://foo.bar/iframe" />,
+    <Canonical src="https://foo.bar/iframe" title="Media player" />,
   );
 });
