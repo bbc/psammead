@@ -48,12 +48,12 @@ const LANGUAGE_VARIANTS = {
   chineseSimp: {
     text: '家长们在学校门口维权。',
     script: 'chinese',
-    locale: 'zh',
+    locale: 'zh-cn',
   },
   chineseTrad: {
     text: '家長們在學校門口維權。',
     script: 'chinese',
-    locale: 'zh',
+    locale: 'zh-tw',
   },
   news: {
     text: 'Could a computer ever create better art than a human?',
@@ -192,12 +192,12 @@ const LANGUAGE_VARIANTS = {
   ukChinaSimp: {
     text: '该计划的批评者说，这个政策不能解决住房短缺的问题（Credit: Alamy）',
     script: 'chinese',
-    locale: 'zh',
+    locale: 'zh-cn',
   },
   ukChinaTrad: {
     text: '該計劃的批評者說，這個政策不能解決住房短缺的問題（Credit: Alamy）',
     script: 'chinese',
-    locale: 'zh',
+    locale: 'zh-tw',
   },
   ukrainian: {
     text:
