@@ -17,8 +17,6 @@ import { grid } from '@bbc/psammead-styles/detection';
 
 import Link from '../Link';
 
-// Gets the number of grid rows, taking into account the
-// first-child in the grid being separate, on its own row.
 const getRowCount = (links, columns) =>
   Math.ceil((links.length - 1) / columns) + 1;
 
