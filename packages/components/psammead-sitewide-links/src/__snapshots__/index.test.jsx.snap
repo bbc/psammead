@@ -55,6 +55,7 @@ exports[`SitewideLinks should render correctly 1`] = `
 .c1 {
   max-width: 80rem;
   margin: 0 auto;
+  padding-top: 0.5rem;
 }
 
 .c7 {

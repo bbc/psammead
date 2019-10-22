@@ -38,7 +38,7 @@ const ConstrainedWrapper = styled.div`
   max-width: ${GEL_GROUP_5_SCREEN_WIDTH_MIN};
   margin: 0 auto;
   ${({ isTrustProject }) => {
-    return isTrustProject !== 'object' && `padding-top: ${GEL_SPACING}`;
+    return isTrustProject && `padding-top: ${GEL_SPACING}`;
   }}
 `;
 
