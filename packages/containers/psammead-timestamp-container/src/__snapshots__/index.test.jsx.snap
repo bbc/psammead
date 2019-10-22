@@ -114,3 +114,4 @@ exports[`Timestamp should render without a leading zero on the day 1`] = `
 >
   ۷ ژوئیه ۲۰۱۸
 </time>
+`;
