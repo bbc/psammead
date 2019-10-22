@@ -1,5 +1,5 @@
 import { getStorybook, storiesOf } from '@storybook/react';
-import buildRTLSubstories from './buildRTLSubstories';
+import { buildRTLSubstories } from './buildRTLSubstories';
 import * as withServicesKnob from './withServicesKnob';
 
 const mockAddStory = jest.fn();
@@ -44,13 +44,13 @@ jest.mock('@storybook/react', () => ({
 afterEach(jest.clearAllMocks);
 
 it('should get all stories', () => {
-  buildRTLSubstories({ storyKind: 'Components|Brand' });
+  buildRTLSubstories('Components|Brand');
 
   expect(getStorybook).toHaveBeenCalled();
 });
 
 it('should add the withServicesKnob decorator so that the default service is configured', () => {
-  buildRTLSubstories({ storyKind: 'Components|Brand' });
+  buildRTLSubstories('Components|Brand');
 
   expect(withServicesKnob.default).toHaveBeenCalledWith({
     defaultService: 'arabic',
@@ -58,7 +58,7 @@ it('should add the withServicesKnob decorator so that the default service is con
 });
 
 it("should build RTL variants of story kind's full suite of stories", () => {
-  buildRTLSubstories({ storyKind: 'Components|Brand' });
+  buildRTLSubstories('Components|Brand');
 
   expect(storiesOf.mock.calls[0][0]).toEqual('Components|Brand/RTL');
   expect(mockAddStory.mock.calls[0][0]).toEqual('RTL - without brand link');
@@ -70,10 +70,7 @@ it("should build RTL variants of story kind's full suite of stories", () => {
 });
 
 it("should build RTL variants of story kind's specified stories", () => {
-  buildRTLSubstories({
-    storyKind: 'Components|Brand',
-    include: ['with brand link'],
-  });
+  buildRTLSubstories('Components|Brand', { include: ['with brand link'] });
 
   expect(storiesOf.mock.calls[0][0]).toEqual('Components|Brand/RTL');
   expect(mockAddStory.mock.calls[0][0]).toEqual('RTL - with brand link');

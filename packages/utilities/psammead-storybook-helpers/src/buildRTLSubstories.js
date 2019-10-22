@@ -12,7 +12,8 @@ const buildRTLSubstory = (kind, name, storyFn) => {
   );
 };
 
-export default ({ storyKind = '', include = [] }) => {
+// eslint-disable-next-line import/prefer-default-export
+export const buildRTLSubstories = (storyKind = '', { include = [] } = {}) => {
   const allStories = getStorybook();
   const { stories } = allStories.find(matchesStoryKind(storyKind));
 
