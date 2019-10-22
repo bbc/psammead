@@ -238,7 +238,13 @@ export const Headline = styled.h3`
   color: ${C_EBON};
   margin: 0; /* Reset */
   padding-bottom: ${GEL_SPACING};
-  ${({ displayImage }) => !displayImage && `display: inline;`}
+  ${({ displayImage }) =>
+    !displayImage &&
+    `display: inline-block; @media (max-width: ${GEL_GROUP_2_SCREEN_WIDTH_MAX}) {
+    display: inline;
+  }; @media (min-width: ${GEL_GROUP_4_SCREEN_WIDTH_MIN}) {
+    display: inline;
+  } `}
 
   @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
     ${({ script, topStory }) =>
