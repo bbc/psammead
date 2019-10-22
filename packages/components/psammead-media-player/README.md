@@ -22,7 +22,7 @@ This component to be used at any point on the page, specifically when a media pl
 | `title` | string | Yes | - | `Video player` |
 | `showPlaceholder` | boolean | No   | `true` | `false` |
 | `placeholderSrc` | string | No   | `null` | `http://foobar.com/placeholder.png` |
-| `placeholderSrcset` | string | Yes   | - | `http://foobar.com/images/ic/512xn/p01k6mtv.jpg` |
+| `placeholderSrcset` | string | Yes   | - | `"https://bbc.com/300/cat.jpg 300w, https://bbc.com/450/cat.jpg 450w, https://bbc.com/600/cat.jpg 600w"` |
 | `portrait` | boolean | No   | `false` | `true` |
 
 The `src` prop is required, as it tells the component what page it needs to embed.
@@ -37,7 +37,7 @@ Assuming `showPlaceholder` is `true`, the `placeholderSrc` will be what image to
 | Argument  | Type                | Required | Default | Example         |
 |-----------|---------------------|----------|---------|-----------------|
 | `src` | string | Yes   | - | `http://foobar.com/embeddable_endpoint` |
-| `placeholderSrcset` | string | Yes   | - | `http://foobar.com/images/ic/512xn/p01k6mtv.jpg` |
+| `placeholderSrcset` | string | Yes   | - | `	"https://bbc.com/300/cat.jpg 300w, https://bbc.com/450/cat.jpg 450w, https://bbc.com/600/cat.jpg 600w"` |
 | `title` | string | Yes | - | `Video player` |
 | `portrait` | boolean | No   | `false` | `true` |
 | `placeholderSrc` | string | yes   | - | `http://foobar.com/placeholder.png` |
