@@ -129,7 +129,6 @@ const generateStory = ({
       image={Img}
       info={Info}
       displayImage={displayImage}
-      dir={dir}
       mediaIndicator={
         mediaType !== 'No media' &&
         MediaIndicatorComponent(mediaType, service, displayImage)

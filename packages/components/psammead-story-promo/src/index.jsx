@@ -324,7 +324,6 @@ const StoryPromo = ({
   mediaIndicator,
   topStory,
   displayImage,
-  dir,
   ...props
 }) => (
   <StoryPromoWrapper topStory={topStory} {...props}>
@@ -334,11 +333,7 @@ const StoryPromo = ({
           <ImageContentsWrapper>
             {image}
             {mediaIndicator && (
-              <InlineMediaIndicator
-                topStory={topStory}
-                displayImage={displayImage}
-                dir={dir}
-              >
+              <InlineMediaIndicator topStory={topStory}>
                 {mediaIndicator}
               </InlineMediaIndicator>
             )}
@@ -365,14 +360,12 @@ StoryPromo.propTypes = {
   mediaIndicator: node,
   topStory: bool,
   displayImage: bool,
-  dir: oneOf(['ltr', 'rtl']),
 };
 
 StoryPromo.defaultProps = {
   mediaIndicator: null,
   topStory: false,
   displayImage: true,
-  dir: 'ltr',
 };
 
 export default StoryPromo;
