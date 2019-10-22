@@ -53,7 +53,7 @@ const StyledList = styled.ul`
   @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) and (max-width: ${GEL_GROUP_3_SCREEN_WIDTH_MAX}) {
     grid-column-gap: ${GEL_SPACING_DBL};
     grid-template-columns: repeat(
-      ${props => (props.TrustProjectLink ? 4 : 3)},
+      ${({ TrustProjectLink })=> (TrustProjectLink ? 4 : 3)},
       1fr
     );
     grid-template-rows: repeat(${({ links }) => getRowCount(links, 3)}, auto);
