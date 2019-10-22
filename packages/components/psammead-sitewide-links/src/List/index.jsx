@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { string, arrayOf, shape } from 'prop-types';
+import { string, arrayOf, shape, bool, oneOfType } from 'prop-types';
 import { C_SHADOW } from '@bbc/psammead-styles/colours';
 import { GEL_SPACING, GEL_SPACING_DBL } from '@bbc/gel-foundations/spacings';
 import {
@@ -121,7 +121,7 @@ const TrustProjectLinkPropTypes = shape({
 
 List.propTypes = {
   links: arrayOf(linkPropTypes.isRequired).isRequired,
-  TrustProjectLink: TrustProjectLinkPropTypes,
+  TrustProjectLink: oneOfType([TrustProjectLinkPropTypes, bool]),
 };
 
 List.defaultProps = { TrustProjectLink: null };
