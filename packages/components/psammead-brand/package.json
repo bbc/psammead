@@ -1,6 +1,6 @@
 {
   "name": "@bbc/psammead-brand",
-  "version": "5.0.8",
+  "version": "5.1.0-alpha.1",
   "main": "dist/index.js",
   "module": "esm/index.js",
   "sideEffects": false,
@@ -23,6 +23,7 @@
     "@bbc/psammead-visually-hidden-text": "^1.2.3"
   },
   "devDependencies": {
+    "@bbc/psammead-script-link": "^1.0.0-alpha.4",
     "@bbc/psammead-styles": "^4.0.3"
   },
   "peerDependencies": {
@@ -33,5 +34,8 @@
     "bbc",
     "brand",
     "logo"
-  ]
+  ],
+  "publishConfig": {
+    "tag": "alpha"
+  }
 }

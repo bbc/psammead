@@ -11,6 +11,7 @@ import { storiesOf } from '@storybook/react';
 import * as svgs from '@bbc/psammead-assets/svgs';
 import { C_POSTBOX, C_WHITE } from '@bbc/psammead-styles/colours';
 import { withServicesKnob } from '@bbc/psammead-storybook-helpers';
+import ScriptLink from '@bbc/psammead-script-link';
 import notes from '../README.md';
 import Brand from './index';
 
@@ -113,6 +114,52 @@ storiesOf('Components|Brand', module)
           borderTop={borderTop}
           backgroundColour={backgroundColour}
           logoColour={logoColour}
+        />
+      );
+    },
+    { notes },
+  )
+  .add(
+    'with script link',
+    ({ service, dir, script }) => {
+      const scriptLink = (
+        <ScriptLink
+          script={script}
+          service={service}
+          href="https://www.bbc.com/serbian/lat"
+        >
+          Lat
+        </ScriptLink>
+      );
+
+      const {
+        productInput,
+        serviceLocalisedNameInput,
+        svgHeightInput,
+        minWidthInput,
+        maxWidthInput,
+        svgChoice,
+        borderBottom,
+        borderTop,
+        backgroundColour,
+        logoColour,
+      } = inputs();
+
+      return (
+        <Brand
+          dir={dir}
+          product={productInput}
+          serviceLocalisedName={serviceLocalisedNameInput}
+          svgHeight={svgHeightInput}
+          minWidth={minWidthInput}
+          maxWidth={maxWidthInput}
+          svg={svgs[svgChoice]}
+          url="https://www.bbc.com/news"
+          borderBottom={borderBottom}
+          borderTop={borderTop}
+          backgroundColour={backgroundColour}
+          logoColour={logoColour}
+          scriptLink={scriptLink}
         />
       );
     },
