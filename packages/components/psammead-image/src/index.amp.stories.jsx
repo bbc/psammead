@@ -1,5 +1,5 @@
 import AmpImg from './index.amp';
-import stories from './testHelpers/stories';
+import { stories } from './testHelpers/stories';
 import { ampDecorator } from '../../../../.storybook/config';
 
 const additionalProps = {
