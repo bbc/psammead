@@ -115,7 +115,7 @@ const gridMediaQueries = ({
 const startOffsetPercentage = (columnsGroup, gridStartOffsetGroup) =>
   `${(100 / columnsGroup) * (gridStartOffsetGroup - 1)}%`;
 
-const negativeOffset = (
+const getNegativeOffset = (
   columnsGroup,
   parentColumnsGroup,
   gridStartOffset,
@@ -146,27 +146,25 @@ const childrenFallback = (
   gutterSize,
   gridStartOffset,
   gridStartOffsetGroup,
-) => ` 
+) => {
+  const negativeOffset = getNegativeOffset(
+    columnsGroup,
+    parentColumnsGroup,
+    gridStartOffset,
+    gridStartOffsetGroup,
+  );
+
+  return ` 
   ${
     item && parentEnableGelGutters
       ? ` 
         margin: 0 ${parseFloat(gutterSize) / 2}rem;
         width: calc(${(100 * columnsGroup) / parentColumnsGroup}%
-          - ${gutterSize}${negativeOffset(
-          columnsGroup,
-          parentColumnsGroup,
-          gridStartOffset,
-          gridStartOffsetGroup,
-        )});
+          - ${gutterSize}${negativeOffset});
         `
       : `
         width: calc(${(100 * columnsGroup) /
-          parentColumnsGroup}%${negativeOffset(
-          columnsGroup,
-          parentColumnsGroup,
-          gridStartOffset,
-          gridStartOffsetGroup,
-        )});
+          parentColumnsGroup}%${negativeOffset});
         `
   }
   ${
@@ -179,7 +177,8 @@ const childrenFallback = (
   }
   display: inline-block;
   vertical-align: top; 
-`; /* [1] */
+`;
+}; /* [1] */
 
 const outerGridFallback = (
   dir,
