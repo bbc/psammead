@@ -55,7 +55,7 @@ const Container = ({ src, title, portrait, showPlaceholder, placeholderSrc }) =>
     title={title}
     portrait={portrait}
     placeholderSrc={placeholderSrc}
-    placeholdersrcset={placeholdersrcset}
+    placeholderSrcset={placeholderSrcset}
     showPlaceholder={showPlaceholder}
   />
 )
@@ -71,7 +71,7 @@ const Container = ({ src, title, portrait, placeholderSrc }) => (
     title={title}
     portrait={portrait}
     placeholderSrc={placeholderSrc}
-    placeholdersrcset={placeholdersrcset}
+    placeholderSrcset={placeholderSrcset}
   />
 )
 ```
