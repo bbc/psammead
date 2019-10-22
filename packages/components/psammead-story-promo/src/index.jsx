@@ -147,11 +147,6 @@ const InlineMediaIndicator = styled.div`
         bottom: 0;
       }
       `}
-  ${({ displayImage, dir }) =>
-    !displayImage &&
-    (dir === 'ltr'
-      ? `float:left; position: relative !important;`
-      : `float:right; position: relative !important;`)}
 `;
 
 const TextGridColumnsTopStory = css`
@@ -217,6 +212,7 @@ const TextGridItem = styled.div`
     padding: initial;
 
     ${({ topStory }) => (topStory ? TextGridColumnsTopStory : TextGridColumns)}
+    ${({ displayImage }) => !displayImage && '>div{ display:inline-block; }'}
   }
 `;
 
@@ -355,11 +351,7 @@ const StoryPromo = ({
     ) : (
       <>
         <TextGridItem topStory={topStory} displayImage={displayImage}>
-          {mediaIndicator && (
-            <InlineMediaIndicator displayImage={displayImage} dir={dir}>
-              {mediaIndicator}
-            </InlineMediaIndicator>
-          )}
+          {mediaIndicator}
           {info}
         </TextGridItem>
       </>
