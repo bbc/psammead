@@ -6,7 +6,7 @@ This component is currently tagged as alpha and is not suitable for production u
 
 ## Description
 
-The `LeadingStoryPromo` component is designed to be used on 'index' pages, which are pages that link to other articles/stories. It supports having info on the left with an image on the right. This can be a collection of any nodes.
+The `LeadingStoryPromo` component is designed to be used on 'index' pages, which are pages that link to other articles/stories. It displays both an image and info, where `info` can be a collection of any nodes.
 
 ## Installation
 
@@ -21,7 +21,7 @@ The `LeadingStoryPromo` component is designed to be used on 'index' pages, which
 
 ## Usage
 
-The typical usage of this component is as described below. An image sits on the right side of the promo with info elements on the left.
+The typical usage of this component is as described below. For LTR services an image sits on the right side of the promo with info elements on the left, while for RTL services an image sits on the left side of the promo with info elements on the right.
 
 ```jsx
 import LeadingStoryPromo from '@bbc/psammead-leading-story-promo';
