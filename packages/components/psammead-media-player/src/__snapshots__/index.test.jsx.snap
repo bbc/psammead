@@ -124,19 +124,88 @@ exports[`Media Player: AMP Entry renders the audio skin 1`] = `
 `;
 
 exports[`Media Player: Canonical Entry renders a landscape container with a placeholder image 1`] = `
-.c2 {
+.c9 {
   display: block;
   width: 100%;
   visibility: visible;
 }
 
-.c1 {
+.c7 {
+  vertical-align: middle;
+  margin: 0 0.25rem;
+  color: #222222;
+  fill: currentColor;
+  width: 0.75rem;
+  height: 0.75rem;
+}
+
+.c5 {
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  -webkit-clip: rect(1px,1px,1px,1px);
+  clip: rect(1px,1px,1px,1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  width: 1px;
+  margin: 0;
+}
+
+.c3 {
+  background-color: #222222;
+  border: none;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: block;
+  font-family: ReithSans,Helvetica,Arial,sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  height: 5rem;
+  padding: 0;
+  -webkit-transition: background-color 300ms;
+  transition: background-color 300ms;
+  width: 5rem;
+}
+
+.c3:hover,
+.c3:focus {
+  background-color: #B80000;
+  -webkit-transition: background-color 300ms;
+  transition: background-color 300ms;
+}
+
+.c6 > svg {
+  color: #FFFFFF;
+  fill: currentColor;
+  height: 1.5rem;
+  margin-top: 0.5rem;
+  width: 1.5rem;
+}
+
+.c8 {
+  display: block;
+  margin-top: 0.5rem;
+}
+
+.c2 {
   cursor: pointer;
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
+}
+
+.c4 {
+  position: absolute;
+  bottom: 0;
+}
+
+.c1:hover .c4,
+.c1:focus .c4 {
+  background-color: #B80000;
 }
 
 .c0 {
@@ -149,11 +218,43 @@ exports[`Media Player: Canonical Entry renders a landscape container with a plac
   class="c0"
 >
   <div
-    class="c1"
+    class="c1 c2"
   >
+    <button
+      class="c3 c4"
+    >
+      <span
+        class="c5"
+      >
+        Play video, "Dog chases cat.", 2 minutes 30 seconds
+      </span>
+      <div
+        aria-hidden="true"
+        class="c6"
+      >
+        <svg
+          class="c7"
+          focusable="false"
+          height="12px"
+          viewBox="0 0 32 32"
+          width="12px"
+        >
+          <polygon
+            points="3,32 29,16 3,0"
+          />
+        </svg>
+      </div>
+      <time
+        aria-hidden="true"
+        class="c8"
+        datetime="PT2M30S"
+      >
+        2:30
+      </time>
+    </button>
     <img
       alt="Image Alt"
-      class="c2"
+      class="c9"
       src="http://foo.bar/placeholder.png"
     />
   </div>
@@ -161,19 +262,88 @@ exports[`Media Player: Canonical Entry renders a landscape container with a plac
 `;
 
 exports[`Media Player: Canonical Entry renders a portrait container with a placeholder image 1`] = `
-.c2 {
+.c9 {
   display: block;
   width: 100%;
   visibility: visible;
 }
 
-.c1 {
+.c7 {
+  vertical-align: middle;
+  margin: 0 0.25rem;
+  color: #222222;
+  fill: currentColor;
+  width: 0.75rem;
+  height: 0.75rem;
+}
+
+.c5 {
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  -webkit-clip: rect(1px,1px,1px,1px);
+  clip: rect(1px,1px,1px,1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  width: 1px;
+  margin: 0;
+}
+
+.c3 {
+  background-color: #222222;
+  border: none;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: block;
+  font-family: ReithSans,Helvetica,Arial,sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  height: 5rem;
+  padding: 0;
+  -webkit-transition: background-color 300ms;
+  transition: background-color 300ms;
+  width: 5rem;
+}
+
+.c3:hover,
+.c3:focus {
+  background-color: #B80000;
+  -webkit-transition: background-color 300ms;
+  transition: background-color 300ms;
+}
+
+.c6 > svg {
+  color: #FFFFFF;
+  fill: currentColor;
+  height: 1.5rem;
+  margin-top: 0.5rem;
+  width: 1.5rem;
+}
+
+.c8 {
+  display: block;
+  margin-top: 0.5rem;
+}
+
+.c2 {
   cursor: pointer;
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
+}
+
+.c4 {
+  position: absolute;
+  bottom: 0;
+}
+
+.c1:hover .c4,
+.c1:focus .c4 {
+  background-color: #B80000;
 }
 
 .c0 {
@@ -186,11 +356,43 @@ exports[`Media Player: Canonical Entry renders a portrait container with a place
   class="c0"
 >
   <div
-    class="c1"
+    class="c1 c2"
   >
+    <button
+      class="c3 c4"
+    >
+      <span
+        class="c5"
+      >
+        Play video, "Dog chases cat.", 2 minutes 30 seconds
+      </span>
+      <div
+        aria-hidden="true"
+        class="c6"
+      >
+        <svg
+          class="c7"
+          focusable="false"
+          height="12px"
+          viewBox="0 0 32 32"
+          width="12px"
+        >
+          <polygon
+            points="3,32 29,16 3,0"
+          />
+        </svg>
+      </div>
+      <time
+        aria-hidden="true"
+        class="c8"
+        datetime="PT2M30S"
+      >
+        2:30
+      </time>
+    </button>
     <img
       alt="Image Alt"
-      class="c2"
+      class="c9"
       src="http://foo.bar/placeholder.png"
     />
   </div>
