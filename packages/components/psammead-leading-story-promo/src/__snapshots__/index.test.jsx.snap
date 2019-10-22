@@ -52,16 +52,9 @@ exports[`LeadingStoryPromo should render RTL leading story promo correctly 1`] =
   color: #6E6E73;
 }
 
-.c0 {
-  position: relative;
-}
-
 .c5 {
   display: inline-block;
-  vertical-align: top;
-  position: relative;
   width: 66.67%;
-  display: inline-block;
 }
 
 .c1 {
@@ -130,14 +123,12 @@ exports[`LeadingStoryPromo should render RTL leading story promo correctly 1`] =
 
 @supports (grid-template-columns:fit-content(200px)) {
   .c5 {
-    display: block;
     width: initial;
   }
 }
 
 @supports (grid-template-columns:fit-content(200px)) {
   .c1 {
-    display: block;
     width: 100%;
   }
 }
@@ -227,16 +218,9 @@ exports[`LeadingStoryPromo should render default leading story promo correctly 1
   color: #6E6E73;
 }
 
-.c0 {
-  position: relative;
-}
-
 .c5 {
   display: inline-block;
-  vertical-align: top;
-  position: relative;
   width: 66.67%;
-  display: inline-block;
 }
 
 .c1 {
@@ -305,14 +289,12 @@ exports[`LeadingStoryPromo should render default leading story promo correctly 1
 
 @supports (grid-template-columns:fit-content(200px)) {
   .c5 {
-    display: block;
     width: initial;
   }
 }
 
 @supports (grid-template-columns:fit-content(200px)) {
   .c1 {
-    display: block;
     width: 100%;
   }
 }
