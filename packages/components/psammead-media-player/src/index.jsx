@@ -77,8 +77,8 @@ export const AmpMediaPlayer = ({
 };
 
 CanonicalMediaPlayer.propTypes = {
-  placeholderSrc: string.isRequired,
-  placeholderSrcset: string.isRequired,
+  placeholderSrc: string,
+  placeholderSrcset: string,
   portrait: bool,
   showPlaceholder: bool,
   src: string.isRequired,
@@ -98,6 +98,8 @@ CanonicalMediaPlayer.defaultProps = {
   portrait: false,
   showPlaceholder: true,
   skin: 'classic',
+  placeholderSrc: null,
+  placeholderSrcset: null,
 };
 
 AmpMediaPlayer.propTypes = {
