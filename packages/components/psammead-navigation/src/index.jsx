@@ -222,6 +222,7 @@ export const NavigationLi = ({
   active,
   service,
   inMenu,
+  ...props
 }) => (
   <StyledListItem role="listitem" inMenu={inMenu}>
     {active && currentPageText ? (
@@ -232,6 +233,7 @@ export const NavigationLi = ({
         service={service}
         data-navigation={`${link}_${url}`}
         inMenu={inMenu}
+        {...props}
       >
         <CurrentLink
           script={script}
@@ -248,6 +250,7 @@ export const NavigationLi = ({
         service={service}
         data-navigation={`${link}_${url}`}
         inMenu={inMenu}
+        {...props}
       >
         {link}
       </StyledLink>

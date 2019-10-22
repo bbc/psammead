@@ -6,6 +6,7 @@ import renderWithHelmet from './src/renderWithHelmet';
 
 const testHelpersExpectedExports = {
   shouldMatchSnapshot: 'function',
+  matchSnapshotAsync: 'function',
   isNull: 'function',
   testUtilityPackages: 'function',
   setWindowValue: 'function',
@@ -232,4 +233,13 @@ describe('Psammead test helpers', () => {
     'should match the snapshot for the test component with helmet and other content',
     <HelmetWithContent />,
   );
+
+  it('should create a snapshot from an async it() block', async () => {
+    const data = await Promise.resolve('Foobar');
+    await testHelpers.matchSnapshotAsync(
+      <div>
+        <p>{data}</p>
+      </div>,
+    );
+  });
 });

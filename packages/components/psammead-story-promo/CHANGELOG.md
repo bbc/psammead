@@ -3,6 +3,9 @@
 <!-- prettier-ignore -->
 | Version | Description |
 | ------- | ----------- |
+| 3.0.0-alpha.2 | [PR#2440](https://github.com/bbc/psammead/pull/2440) Talos - Bump Dependencies - @bbc/psammead-styles |
+| 3.0.0-alpha.1 | [PR#2404](https://github.com/bbc/psammead/pull/2404) replace inputProvider and dirDecorator with withServicesInput |
+| 3.0.0-alpha.0 | [PR#2377](https://github.com/bbc/psammead/pull/2377) Spread extra props to the component |
 | 2.8.0-alpha.1 | [PR#2354](https://github.com/bbc/psammead/pull/2354) Add `sectionName` prop to set `data-story-promo` for event tracking |
 | 2.8.0-alpha.0 | [PR#2296](https://github.com/bbc/psammead/pull/2296) Change Story Promo design 1080+px |
 | 2.7.18 | [PR#2289](https://github.com/bbc/psammead/pull/2289) Talos - Bump Dependencies - @bbc/psammead-styles |

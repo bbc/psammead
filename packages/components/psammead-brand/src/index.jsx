@@ -174,6 +174,7 @@ const Brand = props => {
     borderBottom,
     backgroundColour,
     logoColour,
+    ...rest
   } = props;
 
   return (
@@ -183,6 +184,7 @@ const Brand = props => {
       borderBottom={borderBottom}
       backgroundColour={backgroundColour}
       logoColour={logoColour}
+      {...rest}
     >
       {url ? (
         <SvgWrapper>

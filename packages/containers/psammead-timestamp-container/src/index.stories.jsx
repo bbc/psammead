@@ -1,6 +1,6 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react'; // eslint-disable-line import/no-extraneous-dependencies
-import { inputProvider } from '@bbc/psammead-storybook-helpers';
+import { withServicesKnob } from '@bbc/psammead-storybook-helpers';
 import {
   boolean,
   number,
@@ -8,8 +8,45 @@ import {
   text,
   withKnobs,
 } from '@storybook/addon-knobs';
-import moment from 'moment-timezone';
-import Timestamp from '.';
+import moment from 'moment';
+import { jalaali } from '@bbc/psammead-calendars';
+
+// New locales
+import '@bbc/psammead-locales/moment/am';
+import '@bbc/psammead-locales/moment/ha';
+import '@bbc/psammead-locales/moment/ig';
+import '@bbc/psammead-locales/moment/om';
+import '@bbc/psammead-locales/moment/pcm';
+import '@bbc/psammead-locales/moment/ps';
+import '@bbc/psammead-locales/moment/rw';
+import '@bbc/psammead-locales/moment/so';
+import '@bbc/psammead-locales/moment/ti';
+
+// Updated locales
+import '@bbc/psammead-locales/moment/ar';
+import '@bbc/psammead-locales/moment/az';
+import '@bbc/psammead-locales/moment/bn';
+import '@bbc/psammead-locales/moment/es';
+import '@bbc/psammead-locales/moment/gu';
+import '@bbc/psammead-locales/moment/hi';
+import '@bbc/psammead-locales/moment/ky';
+import '@bbc/psammead-locales/moment/mr';
+import '@bbc/psammead-locales/moment/ne';
+import '@bbc/psammead-locales/moment/pa-in';
+import '@bbc/psammead-locales/moment/pt-br';
+import '@bbc/psammead-locales/moment/ru';
+import '@bbc/psammead-locales/moment/si';
+import '@bbc/psammead-locales/moment/sr';
+import '@bbc/psammead-locales/moment/sr-cyrl';
+import '@bbc/psammead-locales/moment/sw';
+import '@bbc/psammead-locales/moment/ta';
+import '@bbc/psammead-locales/moment/th';
+import '@bbc/psammead-locales/moment/uk';
+import '@bbc/psammead-locales/moment/ur';
+import '@bbc/psammead-locales/moment/uz';
+import '@bbc/psammead-locales/moment/yo';
+
+import TimestampContainer from '.';
 
 // Fixed timestamp for 27 August 2019, 14:54 BST
 const fixedTimestamp = 1566914061212;
@@ -106,85 +143,72 @@ const getTimestampValue = storyTimestamp => {
 
 storiesOf('Containers|TimestampContainer', module)
   .addDecorator(withKnobs)
-  .add(
-    'default',
-    inputProvider({
-      // eslint-disable-next-line react/prop-types
-      componentFunction: ({ locale, script, service }) => {
-        updateAllTimestamps();
+  .addDecorator(withServicesKnob())
+  .add('default', ({ locale, script, service }) => {
+    updateAllTimestamps();
+    const storyTimestamp = select(
+      'Timestamp',
+      timestamps,
+      timestamps['Fixed (27 Aug 2019)'],
+    );
+    const getAltCalendar = () =>
+      ({
+        fa: jalaali,
+        ps: jalaali,
+      }[locale]);
+    return (
+      <TimestampContainer
+        timestamp={getTimestampValue(storyTimestamp)}
+        dateTimeFormat="YYYY-MM-DD"
+        format={text('Format', 'D MMMM YYYY, HH:mm z')}
+        isRelative={boolean('isRelative', false)}
+        script={script}
+        locale={locale}
+        service={service}
+        altCalendar={getAltCalendar()}
+      />
+    );
+  })
+  .add('with prefix', ({ locale, script, service }) => {
+    updateAllTimestamps();
 
-        const storyTimestamp = select(
-          'Timestamp',
-          timestamps,
-          timestamps['Fixed (27 Aug 2019)'],
-        );
+    const storyTimestamp = select(
+      'Timestamp',
+      timestamps,
+      timestamps['Fixed (27 Aug 2019)'],
+    );
+    return (
+      <TimestampContainer
+        timestamp={getTimestampValue(storyTimestamp)}
+        dateTimeFormat="YYYY-MM-DD"
+        format={text('Format', 'D MMMM YYYY, HH:mm z')}
+        isRelative={boolean('isRelative', false)}
+        prefix={text('Prefix text', 'Updated')}
+        script={script}
+        locale={locale}
+        service={service}
+      />
+    );
+  })
+  .add('with prefix and suffix', ({ locale, script, service }) => {
+    updateAllTimestamps();
 
-        return (
-          <Timestamp
-            timestamp={getTimestampValue(storyTimestamp)}
-            dateTimeFormat="YYYY-MM-DD"
-            format={text('Format', 'D MMMM YYYY, HH:mm z')}
-            isRelative={boolean('isRelative', false)}
-            script={script}
-            locale={locale}
-            service={service}
-          />
-        );
-      },
-    }),
-  )
-  .add(
-    'with prefix',
-    inputProvider({
-      // eslint-disable-next-line react/prop-types
-      componentFunction: ({ locale, script, service }) => {
-        updateAllTimestamps();
-
-        const storyTimestamp = select(
-          'Timestamp',
-          timestamps,
-          timestamps['Fixed (27 Aug 2019)'],
-        );
-        return (
-          <Timestamp
-            timestamp={getTimestampValue(storyTimestamp)}
-            dateTimeFormat="YYYY-MM-DD"
-            format={text('Format', 'D MMMM YYYY, HH:mm z')}
-            isRelative={boolean('isRelative', false)}
-            prefix={text('Prefix text', 'Updated')}
-            script={script}
-            locale={locale}
-            service={service}
-          />
-        );
-      },
-    }),
-  )
-  .add(
-    'with prefix and suffix',
-    inputProvider({
-      // eslint-disable-next-line react/prop-types
-      componentFunction: ({ locale, script, service }) => {
-        updateAllTimestamps();
-
-        const storyTimestamp = select(
-          'Timestamp',
-          timestamps,
-          timestamps['Fixed (27 Aug 2019)'],
-        );
-        return (
-          <Timestamp
-            timestamp={getTimestampValue(storyTimestamp)}
-            dateTimeFormat="YYYY-MM-DD"
-            format={text('Format', 'D MMMM YYYY, HH:mm z')}
-            isRelative={boolean('isRelative', false)}
-            prefix={text('Prefix text', 'This')}
-            suffix={text('Suffix text', 'is date of last update')}
-            script={script}
-            locale={locale}
-            service={service}
-          />
-        );
-      },
-    }),
-  );
+    const storyTimestamp = select(
+      'Timestamp',
+      timestamps,
+      timestamps['Fixed (27 Aug 2019)'],
+    );
+    return (
+      <TimestampContainer
+        timestamp={getTimestampValue(storyTimestamp)}
+        dateTimeFormat="YYYY-MM-DD"
+        format={text('Format', 'D MMMM YYYY, HH:mm z')}
+        isRelative={boolean('isRelative', false)}
+        prefix={text('Prefix text', 'This')}
+        suffix={text('Suffix text', 'is date of last update')}
+        script={script}
+        locale={locale}
+        service={service}
+      />
+    );
+  });
