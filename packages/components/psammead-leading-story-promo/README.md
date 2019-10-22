@@ -6,7 +6,7 @@ This component is currently tagged as alpha and is not suitable for production u
 
 ## Description
 
-The `LeadingStoryPromo` component is designed to be used on 'index' pages, which are pages that link to other articles/stories. It displays both an image and info, where `info` can be a collection of any nodes.
+The `LeadingStoryPromo` component is designed to be used on 'index' pages, which are pages that contain a list or collection of stories. Examples of index pages include front pages, feature index pages, topic pages. The `LeadingStoryPromo` component displays both an image and info, where `info` can be a collection of any nodes.
 
 ## Installation
 

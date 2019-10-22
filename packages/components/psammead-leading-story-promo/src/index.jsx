@@ -12,8 +12,6 @@ const twoOfSixColumnsMaxWidthScaleable = `33.33%`;
 // (2 / 6) * 100 = 0.3333333333 = 33.33%
 
 const LeadingPromoWrapper = styled.div`
-  position: relative;
-
   @supports (${grid}) {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
@@ -29,18 +27,14 @@ const ImageGridColumns = css`
 
 const ImageGridColumnsFallback = css`
   width: ${fourOfSixColumnsMaxWidthScaleable};
-  display: inline-block;
 `;
 
 const ImageGridItem = styled.div`
   display: inline-block;
-  vertical-align: top;
-  position: relative;
 
   ${ImageGridColumnsFallback}
 
   @supports (${grid}) {
-    display: block;
     width: initial;
 
     @media (min-width: ${GEL_GROUP_4_SCREEN_WIDTH_MIN}) {
@@ -65,7 +59,6 @@ const TextGridItem = styled.div`
   ${TextGridColumnsFallBack}
 
   @supports (${grid}) {
-    display: block;
     width: 100%;
 
     @media (min-width: ${GEL_GROUP_4_SCREEN_WIDTH_MIN}) {
