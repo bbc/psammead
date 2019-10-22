@@ -25,7 +25,7 @@ const getRowCount = (links, columns) =>
 const StyledList = styled.ul`
   border: 1px solid ${C_SHADOW};
   border-width: ${({ TrustProjectLink }) =>
-    TrustProjectLink ? `0 0 1px 0` : `1px 0`};
+    TrustProjectLink ? `0 0 0.0625rem 0` : `0.0625rem 0`};
   list-style-type: none;
   margin: 0;
   padding: ${({ TrustProjectLink }) =>
@@ -44,7 +44,7 @@ const StyledList = styled.ul`
   @media (min-width: ${GEL_GROUP_1_SCREEN_WIDTH_MIN}) and (max-width: ${GEL_GROUP_2_SCREEN_WIDTH_MAX}) {
     grid-column-gap: ${GEL_SPACING};
     grid-template-columns: repeat(
-      ${props => (props.TrustProjectLink ? 3 : 2)},
+      ${({ TrustProjectLink }) => (TrustProjectLink ? 3 : 2)},
       1fr
     );
     grid-template-rows: repeat(${({ links }) => getRowCount(links, 2)}, auto);
@@ -53,7 +53,7 @@ const StyledList = styled.ul`
   @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) and (max-width: ${GEL_GROUP_3_SCREEN_WIDTH_MAX}) {
     grid-column-gap: ${GEL_SPACING_DBL};
     grid-template-columns: repeat(
-      ${({ TrustProjectLink })=> (TrustProjectLink ? 4 : 3)},
+      ${({ TrustProjectLink }) => (TrustProjectLink ? 4 : 3)},
       1fr
     );
     grid-template-rows: repeat(${({ links }) => getRowCount(links, 3)}, auto);
@@ -68,7 +68,7 @@ const StyledList = styled.ul`
   @media (min-width: ${GEL_GROUP_5_SCREEN_WIDTH_MIN}) {
     grid-column-gap: ${GEL_SPACING_DBL};
     grid-template-columns: repeat(
-      ${props => (props.TrustProjectLink ? 5 : 4)},
+      ${({ TrustProjectLink }) => (TrustProjectLink ? 5 : 4)},
       1fr
     );
     grid-template-rows: repeat(${({ links }) => getRowCount(links, 5)}, auto);
