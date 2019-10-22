@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version       | Description                                                                                                                  |
 | ------------- | ---------------------------------------------------------------------------------------------------------------------------- |
+| 2.0.1 | [PR#2317](https://github.com/bbc/psammead/pull/2317) Add `psammead-play-button` to Media Player placeholder |
 | 2.0.0 | [PR#2434](https://github.com/bbc/psammead/pull/2434) Add `title` attribute to AV media player |
 | 1.1.1-alpha.8 | [PR#2410](https://github.com/bbc/psammead/pull/2410) Update AMP story audio skin AMP placeholder image                       |
 | 1.1.1-alpha.7 | [PR#2312](https://github.com/bbc/psammead/pull/2312) Add lang to the embed src URL in storybook examples     
