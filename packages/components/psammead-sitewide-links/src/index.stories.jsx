@@ -10,10 +10,11 @@ const buildLink = text => ({
   href: 'https://www.bbc.co.uk/news',
 });
 
-const links = Array(7)
-  .fill()
-  .map((el, n) => `link ${n}`)
-  .map(buildLink);
+const links = (text, service) =>
+  Array(7)
+    .fill()
+    .map((el, n) => (service === 'news' ? `link ${n}` : `${text} ${n}`))
+    .map(buildLink);
 
 storiesOf('Components|SitewideLinks', module)
   .addDecorator(withKnobs)
@@ -22,7 +23,7 @@ storiesOf('Components|SitewideLinks', module)
     'default',
     ({ text, service }) => (
       <SitewideLinks
-        links={links}
+        links={links(text, service)}
         copyrightText={service === 'news' ? 'copyright text' : text}
         externalLink={buildLink(service === 'news' ? 'external link' : text)}
         service={service}
