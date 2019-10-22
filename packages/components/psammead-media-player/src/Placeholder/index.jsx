@@ -47,9 +47,9 @@ const Placeholder = ({ onClick, service, src, srcset, mediaInfo }) => {
 
 Placeholder.propTypes = {
   onClick: func.isRequired,
-  srcset: string.isRequired,
   service: string.isRequired,
   src: string.isRequired,
+  srcset: string,
   mediaInfo: shape({
     title: string.isRequired,
     datetime: string,
@@ -59,6 +59,7 @@ Placeholder.propTypes = {
   }),
 };
 Placeholder.defaultProps = {
+  srcset: null,
   mediaInfo: shape({
     datetime: null,
     duration: null,

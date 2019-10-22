@@ -102,7 +102,7 @@ CanonicalMediaPlayer.defaultProps = {
 
 AmpMediaPlayer.propTypes = {
   placeholderSrc: string.isRequired,
-  placeholderSrcset: string.isRequired,
+  placeholderSrcset: string,
   portrait: bool,
   src: string.isRequired,
   title: string.isRequired,
@@ -112,4 +112,5 @@ AmpMediaPlayer.propTypes = {
 AmpMediaPlayer.defaultProps = {
   portrait: false,
   skin: 'classic',
+  placeholderSrcset: null,
 };

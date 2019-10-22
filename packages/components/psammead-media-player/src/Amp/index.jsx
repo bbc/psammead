@@ -39,8 +39,11 @@ const AmpMediaPlayer = ({ src, placeholderSrc, placeholderSrcset, title }) => {
 AmpMediaPlayer.propTypes = {
   src: string.isRequired,
   placeholderSrc: string.isRequired,
-  placeholderSrcset: string.isRequired,
+  placeholderSrcset: string,
   title: string.isRequired,
+};
+AmpMediaPlayer.defaultProps = {
+  placeholderSrcset: null,
 };
 
 export default AmpMediaPlayer;
