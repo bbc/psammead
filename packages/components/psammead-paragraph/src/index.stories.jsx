@@ -9,9 +9,9 @@ import notes from '../README.md';
 import Paragraph from './index';
 import { buildRTLSubstories } from '../../../utilities/psammead-storybook-helpers/src';
 
-const stories = storiesOf('Components|Paragraph', module);
+const storyKind = 'Components|Paragraph';
 
-stories
+storiesOf(storyKind, module)
   .addDecorator(withKnobs)
   .addDecorator(withServicesKnob())
   .add(
@@ -36,4 +36,4 @@ stories
     { notes, knobs: { escapeHTML: false } },
   );
 
-buildRTLSubstories({ stories });
+buildRTLSubstories({ storyKind });
