@@ -79,37 +79,45 @@ describe('Timestamp', () => {
     />,
   );
 
-  describe('with alternative calendar props', () => {
-    shouldMatchSnapshot(
-      'should add alternative calendar if timestamp is not relative',
-      <Timestamp
-        timestamp={defaultTimestamp}
-        dateTimeFormat="YYYY-MM-DD"
-        format="D MMMM YYYY"
-        isRelative={false}
-        script={latin}
-        locale="fa"
-        service="persian"
-        altCalendar={mockCalendar}
-      />,
-    );
-
-    shouldMatchSnapshot(
-      'should not add alternative calendar if timestamp is relative',
-      <Timestamp
-        timestamp={defaultTimestamp}
-        dateTimeFormat="YYYY-MM-DD"
-        format="D MMMM YYYY"
-        isRelative
-        script={latin}
-        locale="fa"
-        service="persian"
-        altCalendar={mockCalendar}
-      />,
-    );
-  });
-
   describe('assertions', () => {
+    describe('with alternative calendar props', () => {
+      it('should add alternative calendar if timestamp is not relative', () => {
+        const { container } = render(
+          <Timestamp
+            timestamp={defaultTimestamp}
+            dateTimeFormat="YYYY-MM-DD"
+            format="D MMMM YYYY"
+            isRelative={false}
+            script={latin}
+            locale="fa"
+            service="persian"
+            altCalendar={mockCalendar}
+          />,
+        );
+
+        const time = container.querySelector('time');
+        expect(time.textContent).toEqual('27 مهر 1397 - ۱۹ اکتبر ۲۰۱۸');
+      });
+
+      it('should not add alternative calendar if timestamp is relative', () => {
+        const { container } = render(
+          <Timestamp
+            timestamp={elevenMonthsFromNow}
+            dateTimeFormat="YYYY-MM-DD"
+            format="D MMMM YYYY"
+            isRelative
+            script={latin}
+            locale="fa"
+            service="persian"
+            altCalendar={mockCalendar}
+          />,
+        );
+
+        const time = container.querySelector('time');
+        expect(time.textContent).toEqual('۱۱ ماه پیش');
+      });
+    });
+
     it('should render a hausa timestamp', () => {
       const { container } = render(
         <Timestamp

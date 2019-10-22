@@ -27,7 +27,6 @@ import '@bbc/psammead-locales/moment/ar';
 import '@bbc/psammead-locales/moment/az';
 import '@bbc/psammead-locales/moment/bn';
 import '@bbc/psammead-locales/moment/es';
-import '@bbc/psammead-locales/moment/fa';
 import '@bbc/psammead-locales/moment/gu';
 import '@bbc/psammead-locales/moment/hi';
 import '@bbc/psammead-locales/moment/ky';
