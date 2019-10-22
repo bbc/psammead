@@ -355,9 +355,11 @@ const StoryPromo = ({
     ) : (
       <>
         <TextGridItem topStory={topStory} displayImage={displayImage}>
-          <InlineMediaIndicator displayImage={displayImage} dir={dir}>
-            {mediaIndicator}
-          </InlineMediaIndicator>
+          {mediaIndicator && (
+            <InlineMediaIndicator displayImage={displayImage} dir={dir}>
+              {mediaIndicator}
+            </InlineMediaIndicator>
+          )}
           {info}
         </TextGridItem>
       </>
