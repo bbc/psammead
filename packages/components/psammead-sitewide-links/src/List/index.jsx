@@ -74,8 +74,8 @@ const StyledList = styled.ul`
     grid-template-rows: repeat(${({ links }) => getRowCount(links, 5)}, auto);
     column-count: 4;
   }
-  ${props =>
-    props.TrustProjectLink &&
+  ${({ TrustProjectLink }) =>
+    TrustProjectLink &&
     `> li:first-child {
     border-bottom: 1px solid ${C_SHADOW};
     padding: ${GEL_SPACING} 0;
