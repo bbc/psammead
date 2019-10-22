@@ -26,7 +26,7 @@ This component to be used at any point on the page, specifically when a media pl
 | `portrait` | boolean | No   | `false` | `true` |
 
 The `src` prop is required, as it tells the component what page it needs to embed.
-The `placeholderSrcset` prop is required, as it allows image responsiveness and optimization depending on the size of the screen .
+The `placeholderSrcset` prop is not required, as it allows image responsiveness and optimization depending on the size of the screen .
 The `title` prop is required for accessibility of the embedded iframe.
 The `portrait` prop is not required, and defaults to `false`. This is to support portrait video content in the future.
 The `showPlaceholder` boolean prop is also not required, and defaults to `true`.
