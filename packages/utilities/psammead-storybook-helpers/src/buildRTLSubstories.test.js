@@ -70,7 +70,6 @@ it("should build RTL variants of story kind's full suite of stories", () => {
   expect(mockAddStory.mock.calls[1][0]).toEqual('RTL - with brand link');
 
   expect(mockAddStory.mock.calls[2]).toBeUndefined();
-  expect(mockAddStory.mock.calls[2]).toBeUndefined();
 });
 
 it("should build RTL variants of story kind's specified stories", () => {
