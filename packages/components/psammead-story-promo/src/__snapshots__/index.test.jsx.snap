@@ -207,7 +207,7 @@ exports[`StoryPromo - Top Story should render correctly 1`] = `
 `;
 
 exports[`StoryPromo - Top Story should render story promo without an image 1`] = `
-.c5 {
+.c4 {
   vertical-align: middle;
   margin: 0 0.25rem;
   color: #222222;
@@ -216,7 +216,7 @@ exports[`StoryPromo - Top Story should render story promo without an image 1`] =
   height: 0.75rem;
 }
 
-.c3 {
+.c2 {
   padding: 0.5rem 0.25rem;
   background-color: #FFFFFF;
   display: block;
@@ -229,7 +229,7 @@ exports[`StoryPromo - Top Story should render story promo without an image 1`] =
   height: 2rem;
 }
 
-.c4 {
+.c3 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -241,18 +241,13 @@ exports[`StoryPromo - Top Story should render story promo without an image 1`] =
   height: 100%;
 }
 
-.c6 {
+.c5 {
   vertical-align: middle;
   margin: 0 0.25rem;
 }
 
 .c0 {
   position: relative;
-}
-
-.c2 {
-  float: left;
-  position: relative !important;
 }
 
 .c1 {
@@ -263,7 +258,7 @@ exports[`StoryPromo - Top Story should render story promo without an image 1`] =
   width: 100%;
 }
 
-.c7 {
+.c6 {
   font-size: 0.9375rem;
   line-height: 1.25rem;
   font-family: ReithSerif,Helvetica,Arial,sans-serif;
@@ -274,7 +269,7 @@ exports[`StoryPromo - Top Story should render story promo without an image 1`] =
   padding-bottom: 0.5rem;
 }
 
-.c9 {
+.c8 {
   font-size: 0.9375rem;
   line-height: 1.125rem;
   font-family: ReithSans,Helvetica,Arial,sans-serif;
@@ -285,14 +280,14 @@ exports[`StoryPromo - Top Story should render story promo without an image 1`] =
   padding-bottom: 0.5rem;
 }
 
-.c8 {
+.c7 {
   position: static;
   color: #222222;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.c8:before {
+.c7:before {
   bottom: 0;
   content: '';
   left: 0;
@@ -304,18 +299,18 @@ exports[`StoryPromo - Top Story should render story promo without an image 1`] =
   z-index: 1;
 }
 
-.c8:hover,
-.c8:focus {
+.c7:hover,
+.c7:focus {
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
-.c8:visited {
+.c7:visited {
   color: #6E6E73;
 }
 
 @media (max-width:24.9375rem) {
-  .c3 {
+  .c2 {
     height: 1.25rem;
     padding: 0.25rem 0.25rem 0;
   }
@@ -326,13 +321,6 @@ exports[`StoryPromo - Top Story should render story promo without an image 1`] =
     display: grid;
     grid-template-columns: repeat(6,1fr);
     grid-column-gap: 0.5rem;
-  }
-}
-
-@media (min-width:25rem) {
-  .c2 {
-    position: absolute;
-    bottom: 0;
   }
 }
 
@@ -358,52 +346,56 @@ exports[`StoryPromo - Top Story should render story promo without an image 1`] =
     grid-column: 3 / span 4;
     grid-column: 1 / span 6;
   }
+
+  .c1 >div {
+    display: inline-block;
+  }
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
-  .c7 {
+  .c6 {
     font-size: 1rem;
     line-height: 1.25rem;
   }
 }
 
 @media (min-width:37.5rem) {
-  .c7 {
+  .c6 {
     font-size: 1rem;
     line-height: 1.25rem;
   }
 }
 
 @media (min-width:37.5rem) {
-  .c7 {
+  .c6 {
     font-size: 1.25rem;
     line-height: 1.5rem;
   }
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
-  .c9 {
+  .c8 {
     font-size: 0.9375rem;
     line-height: 1.125rem;
   }
 }
 
 @media (min-width:37.5rem) {
-  .c9 {
+  .c8 {
     font-size: 0.875rem;
     line-height: 1.125rem;
   }
 }
 
 @media (max-width:37.4375rem) {
-  .c9 {
+  .c8 {
     display: none;
     visibility: hidden;
   }
 }
 
 @media (min-width:63rem) {
-  .c9 {
+  .c8 {
     display: none;
     visibility: hidden;
   }
@@ -416,48 +408,43 @@ exports[`StoryPromo - Top Story should render story promo without an image 1`] =
     class="c1"
   >
     <div
+      aria-hidden="true"
       class="c2"
-      dir="ltr"
     >
       <div
-        aria-hidden="true"
         class="c3"
       >
-        <div
+        <svg
           class="c4"
+          focusable="false"
+          height="12px"
+          viewBox="0 0 32 32"
+          width="12px"
         >
-          <svg
-            class="c5"
-            focusable="false"
-            height="12px"
-            viewBox="0 0 32 32"
-            width="12px"
-          >
-            <polygon
-              points="3,32 29,16 3,0"
-            />
-          </svg>
-          <time
-            class="c6"
-            datetime="PT2M15S"
-          >
-            2:15
-          </time>
-        </div>
+          <polygon
+            points="3,32 29,16 3,0"
+          />
+        </svg>
+        <time
+          class="c5"
+          datetime="PT2M15S"
+        >
+          2:15
+        </time>
       </div>
     </div>
     <h3
-      class="c7"
+      class="c6"
     >
       <a
-        class="c8"
+        class="c7"
         href="https://www.bbc.co.uk/news"
       >
         The headline of the promo
       </a>
     </h3>
     <p
-      class="c9"
+      class="c8"
     >
       The summary of the promo
     </p>
