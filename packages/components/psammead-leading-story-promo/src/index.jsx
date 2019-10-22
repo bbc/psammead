@@ -16,7 +16,6 @@ const LeadingPromoWrapper = styled.div`
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-column-gap: ${GEL_SPACING_DBL};
-    grid-column-end: span 6;
   }
 `;
 
