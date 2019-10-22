@@ -597,7 +597,7 @@ exports[`Navigation should render correctly 1`] = `
         >
           <a
             class="c10"
-            data-navigation="Akụkọ_/igbo"
+            data-navigation="test_navigation"
             href="/igbo"
           >
             <span
@@ -620,7 +620,7 @@ exports[`Navigation should render correctly 1`] = `
         >
           <a
             class="c4"
-            data-navigation="Egwuregwu_/igbo/egwuregwu"
+            data-navigation="test_navigation"
             href="/igbo/egwuregwu"
           >
             Egwuregwu
@@ -632,7 +632,7 @@ exports[`Navigation should render correctly 1`] = `
         >
           <a
             class="c4"
-            data-navigation="Ihe nkiri_/igbo/media/video"
+            data-navigation="test_navigation"
             href="/igbo/media/video"
           >
             Ihe nkiri
@@ -644,7 +644,7 @@ exports[`Navigation should render correctly 1`] = `
         >
           <a
             class="c4"
-            data-navigation="Nke ka ewuewu_/igbo/popular/read"
+            data-navigation="test_navigation"
             href="/igbo/popular/read"
           >
             Nke ka ewuewu
@@ -680,7 +680,7 @@ exports[`Navigation should render correctly 1`] = `
       >
         <a
           class="c18"
-          data-navigation="Akụkọ_/igbo"
+          data-navigation="test_navigation"
           href="/igbo"
         >
           <span
@@ -703,7 +703,7 @@ exports[`Navigation should render correctly 1`] = `
       >
         <a
           class="c20"
-          data-navigation="Egwuregwu_/igbo/egwuregwu"
+          data-navigation="test_navigation"
           href="/igbo/egwuregwu"
         >
           Egwuregwu
@@ -715,7 +715,7 @@ exports[`Navigation should render correctly 1`] = `
       >
         <a
           class="c20"
-          data-navigation="Ihe nkiri_/igbo/media/video"
+          data-navigation="test_navigation"
           href="/igbo/media/video"
         >
           Ihe nkiri
@@ -727,7 +727,7 @@ exports[`Navigation should render correctly 1`] = `
       >
         <a
           class="c20"
-          data-navigation="Nke ka ewuewu_/igbo/popular/read"
+          data-navigation="test_navigation"
           href="/igbo/popular/read"
         >
           Nke ka ewuewu
