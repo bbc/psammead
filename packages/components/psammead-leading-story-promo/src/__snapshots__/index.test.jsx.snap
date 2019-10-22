@@ -117,7 +117,6 @@ exports[`LeadingStoryPromo should render RTL leading story promo correctly 1`] =
     display: grid;
     grid-template-columns: repeat(6,1fr);
     grid-column-gap: 1rem;
-    grid-column-end: span 6;
   }
 }
 
@@ -283,7 +282,6 @@ exports[`LeadingStoryPromo should render default leading story promo correctly 1
     display: grid;
     grid-template-columns: repeat(6,1fr);
     grid-column-gap: 1rem;
-    grid-column-end: span 6;
   }
 }
 
