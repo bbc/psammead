@@ -22,6 +22,7 @@ Psammead Grid is a component that you can use to set out column-based layouts us
 
 - When should I use the `columns` prop?
   - This should always be defined.
+  - All columns groups `group0` through `group5`  should be provided.
   - For a `<Grid>` element, it's the number of columns the grid has, and the number of columns it should span.
   - For a `<Grid item>` element, it's the number of columns it should span.
 - When should I use the `item` prop?
@@ -29,12 +30,12 @@ Psammead Grid is a component that you can use to set out column-based layouts us
   - It can and should be used whenever you're defining a new grid item - something that you want to span a set number of columns at a breakpoint.
 
 ```jsx
-<Grid columns={{ group5: 6 }}>
-  <Grid item columns={{ group5: 1 }}>
-    This spans 1 out of 6 columns
+<Grid columns={{ group0: 6, group1: 6, group2: 6, group3: 6, group4: 6, group5: 6 }}>
+  <Grid item columns={{ group0: 1, group1: 1, group2: 1, group3: 1, group4: 1, group5: 1 }}>
+    This spans 1 out of 6 columns for all widths
   </Grid>
-  <Grid item columns={{ group5: 5 }}>
-    This spans 5 out of 6 columns
+  <Grid item columns={{ group0: 5, group1: 5, group2: 5, group3: 5, group4: 5, group5: 5 }}>
+    This spans 5 out of 6 columns for all width
   </Grid>
 </Grid>
 ```
