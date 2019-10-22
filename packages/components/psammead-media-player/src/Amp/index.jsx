@@ -1,6 +1,7 @@
 import React from 'react';
 import { string } from 'prop-types';
 import Helmet from 'react-helmet';
+import { AmpImg } from '@bbc/psammead-image';
 
 const AmpHead = () => (
   <Helmet>
@@ -24,7 +25,7 @@ const AmpMediaPlayer = ({ src, placeholderSrc, placeholderSrcset, title }) => {
         title={title}
         allowfullscreen="allowfullscreen"
       >
-        <amp-img
+        <AmpImg
           layout="fill"
           src={placeholderSrc}
           srcset={placeholderSrcset}
