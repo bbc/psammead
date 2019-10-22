@@ -5,28 +5,25 @@ const matchesStoryKind = kind => story => story.kind === kind;
 
 const matchesStoryName = name => story => story.name === name;
 
-const buildRTLSubstory = (kind, name, storyFn) =>
-  storiesOf(`${kind}/RTL`, module)
-    .addDecorator(withServicesKnob({ defaultService: 'arabic' }))
-    .add(`RTL - ${name}`, storyFn);
+const buildRTLSubstory = (kind, name, storyFn) => {
+  const arabicServiceDecorator = withServicesKnob({ defaultService: 'arabic' });
+  storiesOf(`${kind}/RTL`, module).add(`RTL - ${name}`, () =>
+    arabicServiceDecorator(storyFn),
+  );
+};
 
-export default ({ stories = {}, include = [] }) => {
+export default ({ storyKind = '', include = [] }) => {
   const allStories = getStorybook();
-  const storyKind = allStories.find(matchesStoryKind(stories.kind));
+  const { stories } = allStories.find(matchesStoryKind(storyKind));
 
-  if (storyKind) {
-    if (include.length) {
-      include.forEach(name => {
-        const story = storyKind.stories.find(matchesStoryName(name));
-
-        if (story) {
-          buildRTLSubstory(stories.kind, name, story.render);
-        }
-      });
-    } else {
-      storyKind.stories.forEach(({ name, render }) =>
-        buildRTLSubstory(stories.kind, name, render),
-      );
-    }
+  if (include.length) {
+    include.forEach(name => {
+      const { render } = stories.find(matchesStoryName(name));
+      buildRTLSubstory(storyKind, name, render);
+    });
+  } else {
+    stories.forEach(({ name, render }) =>
+      buildRTLSubstory(storyKind, name, render),
+    );
   }
 };

@@ -3,13 +3,12 @@ import buildRTLSubstories from './buildRTLSubstories';
 import * as withServicesKnob from './withServicesKnob';
 
 const mockAddStory = jest.fn();
-const mockAddDecorator = jest.fn(() => ({ add: mockAddStory }));
 
 withServicesKnob.default = jest.fn(() => 'withServicesKnob');
 
 jest.mock('@storybook/react', () => ({
   storiesOf: jest.fn(() => ({
-    addDecorator: mockAddDecorator,
+    add: mockAddStory,
   })),
   getStorybook: jest.fn(() => [
     {
@@ -45,25 +44,24 @@ jest.mock('@storybook/react', () => ({
 afterEach(jest.clearAllMocks);
 
 it('should get all stories', () => {
-  const stories = { kind: 'Components|Brand' };
-  buildRTLSubstories({ stories });
+  const storyKind = 'Components|Brand';
+  buildRTLSubstories({ storyKind });
 
   expect(getStorybook).toHaveBeenCalled();
 });
 
 it('should add the withServicesKnob decorator so that the default service is configured', () => {
-  const stories = { kind: 'Components|Brand' };
-  buildRTLSubstories({ stories });
+  const storyKind = 'Components|Brand';
+  buildRTLSubstories({ storyKind });
 
   expect(withServicesKnob.default).toHaveBeenCalledWith({
     defaultService: 'arabic',
   });
-  expect(mockAddDecorator).toHaveBeenCalledWith('withServicesKnob');
 });
 
 it("should build RTL variants of story kind's full suite of stories", () => {
-  const stories = { kind: 'Components|Brand' };
-  buildRTLSubstories({ stories });
+  const storyKind = 'Components|Brand';
+  buildRTLSubstories({ storyKind });
 
   expect(storiesOf.mock.calls[0][0]).toEqual('Components|Brand/RTL');
   expect(mockAddStory.mock.calls[0][0]).toEqual('RTL - without brand link');
@@ -76,8 +74,8 @@ it("should build RTL variants of story kind's full suite of stories", () => {
 });
 
 it("should build RTL variants of story kind's specified stories", () => {
-  const stories = { kind: 'Components|Brand' };
-  buildRTLSubstories({ stories, include: ['with brand link'] });
+  const storyKind = 'Components|Brand';
+  buildRTLSubstories({ storyKind, include: ['with brand link'] });
 
   expect(storiesOf.mock.calls[0][0]).toEqual('Components|Brand/RTL');
   expect(mockAddStory.mock.calls[0][0]).toEqual('RTL - with brand link');
@@ -86,7 +84,6 @@ it("should build RTL variants of story kind's specified stories", () => {
 });
 
 it('should not create RTL substories when no params', () => {
-  buildRTLSubstories({});
-
+  expect(() => buildRTLSubstories()).toThrow();
   expect(mockAddStory).not.toHaveBeenCalled();
 });
