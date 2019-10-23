@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 1.8.35 | [PR#2485](https://github.com/bbc/psammead/pull/2485) Talos - Bump Dependencies - @bbc/psammead-assets |
 | 1.8.34 | [PR#2433](https://github.com/bbc/psammead/pull/2433) Add script boilerplate for amp js  |
 | 1.8.33 | [PR#2405](https://github.com/bbc/psammead/pull/2405) Remove react-test-renderer |
 | 1.8.32 | [PR#2481](https://github.com/bbc/psammead/pull/2481) Updating lerna patch version to fix 10 high vulnerabilities |
