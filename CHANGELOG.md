@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 1.8.30 | [PR#2463](https://github.com/bbc/psammead/pull/2463) Talos - Bump Dependencies - @bbc/psammead-image |
 | 1.8.29 | [PR#2317](https://github.com/bbc/psammead/pull/2317) Bump @bbc/psammead-media-player |
 | 1.8.28 | [PR#2452](https://github.com/bbc/psammead/pull/2452) Bump dependencies (#2441 - #2445) |
 | 1.8.27 | [PR#2400](https://github.com/bbc/psammead/pull/2400) bump dependencies (#2385 - #2396) |
