@@ -3,7 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 | ------- | ----------- |
-| 5.1.0-alpha.1 | [PR#???](https://github.com/bbc/psammead/pull/???) Add scriptLink prop to render `ScriptLink` used for linking to service variants |
+| 5.1.0-alpha.1 | [PR#2474](https://github.com/bbc/psammead/pull/2474) Add scriptLink prop to render `ScriptLink` used for linking to service variants |
 | 5.0.8 | [PR#2440](https://github.com/bbc/psammead/pull/2440) Talos - Bump Dependencies - @bbc/psammead-visually-hidden-text, @bbc/psammead-styles |
 | 5.0.7 | [PR#2404](https://github.com/bbc/psammead/pull/2404) replace inputProvider and dirDecorator with withServicesInput |
 | 5.0.6 | [PR#2377](https://github.com/bbc/psammead/pull/2377) Spread extra props to the component |
