@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 1.2.3 | [PR#2460](https://github.com/bbc/psammead/pull/2460) Fix Storybook console errors |
 | 1.2.2 | [PR#1942](https://github.com/bbc/psammead/pull/1942) Talos - Bump React to 16.9.0 |
 | 1.2.1 | [PR#1803](https://github.com/bbc/psammead/pull/1803/) Patches broken links on badges in documentation |
 | 1.2.0 | [PR#1794](https://github.com/bbc/psammead/pull/1794) Add david dependency badges |
