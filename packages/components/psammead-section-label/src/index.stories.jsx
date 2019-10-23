@@ -1,11 +1,16 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { boolean, withKnobs } from '@storybook/addon-knobs';
-import { withServicesKnob } from '@bbc/psammead-storybook-helpers';
+import {
+  withServicesKnob,
+  buildRTLSubstories,
+} from '@bbc/psammead-storybook-helpers';
 import notes from '../README.md';
 import SectionLabel from './index';
 
-storiesOf('Components|SectionLabel', module)
+const STORY_KIND = 'Components|SectionLabel';
+
+storiesOf(STORY_KIND, module)
   .addDecorator(withKnobs)
   .addDecorator(withServicesKnob())
   .add(
@@ -48,3 +53,7 @@ storiesOf('Components|SectionLabel', module)
     ),
     { notes, knobs: { escapeHTML: false } },
   );
+
+buildRTLSubstories(STORY_KIND, {
+  include: ['default'],
+});

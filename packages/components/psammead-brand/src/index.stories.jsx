@@ -10,10 +10,14 @@ import {
 import { storiesOf } from '@storybook/react';
 import * as svgs from '@bbc/psammead-assets/svgs';
 import { C_POSTBOX, C_WHITE } from '@bbc/psammead-styles/colours';
-import { withServicesKnob } from '@bbc/psammead-storybook-helpers';
+import {
+  withServicesKnob,
+  buildRTLSubstories,
+} from '@bbc/psammead-storybook-helpers';
 import notes from '../README.md';
 import Brand from './index';
 
+const STORY_KIND = 'Components|Brand';
 const inputs = () => {
   // capitalization is only for presentation purpose on the knob
   const options = Object.keys(svgs)
@@ -48,7 +52,7 @@ const inputs = () => {
   };
 };
 
-storiesOf('Components|Brand', module)
+storiesOf(STORY_KIND, module)
   .addDecorator(withKnobs)
   .addDecorator(withServicesKnob())
   .add(
@@ -118,3 +122,5 @@ storiesOf('Components|Brand', module)
     },
     { notes },
   );
+
+buildRTLSubstories(STORY_KIND, { include: ['with brand link'] });
