@@ -1,7 +1,7 @@
 import React from 'react';
 import { withKnobs } from '@storybook/addon-knobs';
 import { Img } from '.';
-import stories, { getProps } from './testHelpers/stories';
+import { stories, getProps } from './testHelpers/stories';
 import { landscape } from './testHelpers/fixtureData';
 import notes from '../README.md';
 
