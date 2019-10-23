@@ -332,7 +332,7 @@ const StoryPromo = ({
   displayImage,
   ...props
 }) => {
-  const imageRenderer = displayImage && (
+  const renderImage = displayImage && (
     <ImageGridItem topStory={topStory}>
       <ImageContentsWrapper>
         {image}
@@ -347,7 +347,7 @@ const StoryPromo = ({
 
   return (
     <StoryPromoWrapper topStory={topStory} {...props}>
-      {imageRenderer}
+      {renderImage}
       <TextGridItem topStory={topStory} displayImage={displayImage}>
         {!displayImage && mediaIndicator}
         {info}
