@@ -3,10 +3,11 @@
 <!-- prettier-ignore -->
 | Version       | Description                                                                                                                  |
 | ------------- | ---------------------------------------------------------------------------------------------------------------------------- |
+| 2.0.2 | [PR#2467](https://github.com/bbc/psammead/pull/2476) Update image `alt` to be empty for Media Player placeholder |
 | 2.0.1 | [PR#2317](https://github.com/bbc/psammead/pull/2317) Add `psammead-play-button` to Media Player placeholder |
 | 2.0.0 | [PR#2434](https://github.com/bbc/psammead/pull/2434) Add `title` attribute to AV media player |
 | 1.1.1-alpha.8 | [PR#2410](https://github.com/bbc/psammead/pull/2410) Update AMP story audio skin AMP placeholder image                       |
-| 1.1.1-alpha.7 | [PR#2312](https://github.com/bbc/psammead/pull/2312) Add lang to the embed src URL in storybook examples     
+| 1.1.1-alpha.7 | [PR#2312](https://github.com/bbc/psammead/pull/2312) Add lang to the embed src URL in storybook examples
 | 1.1.1-alpha.6 | [PR#2297](https://github.com/bbc/psammead/pull/2297) define placeholderSrc                                                   |
 | 1.1.1-alpha.5 | [PR#2280](https://github.com/bbc/psammead/pull/2280) Remove `scrolling="no"` for a11y best practice                          |
 | 1.1.1-alpha.4 | [PR#2281](https://github.com/bbc/psammead/pull/2281) Change allowfullscreen attribute value to valid value `allowfullscreen` |
