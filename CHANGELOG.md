@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 1.8.33 | [PR#2483](https://github.com/bbc/psammead/pull/2483) Talos - Bump Dependencies - @bbc/psammead-brand, @bbc/psammead-caption, @bbc/psammead-copyright, @bbc/psammead-image, @bbc/psammead-image-placeholder, @bbc/psammead-inline-link, @bbc/psammead-media-indicator, @bbc/psammead-paragraph, @bbc/psammead-storybook-helpers, @bbc/psammead-timestamp |
 | 1.8.32 | [PR#2481](https://github.com/bbc/psammead/pull/2481) Updating lerna patch version to fix 10 high vulnerabilities |
 | 1.8.31 | [PR#2477](https://github.com/bbc/psammead/pull/2477) Talos - Bump Dependencies - @bbc/psammead-styles |
 | 1.8.30 | [PR#2464](https://github.com/bbc/psammead/pull/2464) Add more context to changeScanner error output |
