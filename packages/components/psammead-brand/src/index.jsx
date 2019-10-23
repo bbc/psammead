@@ -91,7 +91,7 @@ const BrandSvg = styled.svg`
     border-bottom: ${GEL_SPACING_HLF} solid ${props => props.logoColour};
   }
   /* stylelint-enable */
-  `;
+`;
 
 const LocalisedBrandName = ({ product, serviceLocalisedName }) =>
   serviceLocalisedName ? (
