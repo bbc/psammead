@@ -24,8 +24,8 @@ storiesOf('Components|SitewideLinks', module)
     ({ text, service }) => (
       <SitewideLinks
         links={links(text, service)}
-        TrustProjectLink={
-          boolean('TrustProjectLink', false) && {
+        trustProjectLink={
+          boolean('trustProjectLink', false) && {
             href: 'https://www.bbc.co.uk/news',
             text: 'Why you can trust the bbc',
           }
