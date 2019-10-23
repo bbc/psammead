@@ -26,7 +26,7 @@ exports[`SitewideLinks should render correctly 1`] = `
 }
 
 .c2 {
-  border: 1px solid #3F3F42;
+  border: 0.0625rem solid #3F3F42;
   border-width: 0.0625rem 0;
   list-style-type: none;
   margin: 0;

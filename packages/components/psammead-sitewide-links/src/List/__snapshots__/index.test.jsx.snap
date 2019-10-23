@@ -17,7 +17,7 @@ exports[`List should render correctly with 7 items 1`] = `
 }
 
 .c0 {
-  border: 1px solid #3F3F42;
+  border: 0.0625rem solid #3F3F42;
   border-width: 0.0625rem 0;
   list-style-type: none;
   margin: 0;
@@ -218,7 +218,7 @@ exports[`List should render correctly with 8 items 1`] = `
 }
 
 .c0 {
-  border: 1px solid #3F3F42;
+  border: 0.0625rem solid #3F3F42;
   border-width: 0.0625rem 0;
   list-style-type: none;
   margin: 0;

@@ -21,7 +21,7 @@ const getRowCount = (links, columns) =>
   Math.ceil((links.length - 1) / columns) + 1;
 
 const StyledList = styled.ul`
-  border: 1px solid ${C_SHADOW};
+  border: 0.0625rem solid ${C_SHADOW};
   border-width: ${({ TrustProjectLink }) =>
     TrustProjectLink ? `0 0 0.0625rem 0` : `0.0625rem 0`};
   list-style-type: none;
@@ -75,7 +75,7 @@ const StyledList = styled.ul`
   ${({ TrustProjectLink }) =>
     TrustProjectLink &&
     `> li:first-child {
-    border-bottom: 1px solid ${C_SHADOW};
+    border-bottom: 0.0625rem solid ${C_SHADOW};
     padding: ${GEL_SPACING} 0;
     margin-bottom: ${GEL_SPACING};
     grid-column: 1/-1;
