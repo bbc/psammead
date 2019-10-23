@@ -49,11 +49,12 @@ it('should get all stories', () => {
   expect(getStorybook).toHaveBeenCalled();
 });
 
-it('should add the withServicesKnob decorator so that the default service is configured', () => {
+it('should add the withServicesKnob decorator so that the default service and service options are configured', () => {
   buildRTLSubstories('Components|Brand');
 
   expect(withServicesKnob.default).toHaveBeenCalledWith({
     defaultService: 'arabic',
+    services: ['arabic', 'persian', 'urdu', 'pashto'],
   });
 });
 

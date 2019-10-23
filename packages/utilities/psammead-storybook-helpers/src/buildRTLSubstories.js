@@ -6,9 +6,12 @@ const matchesStoryKind = kind => story => story.kind === kind;
 const matchesStoryName = name => story => story.name === name;
 
 const buildRTLSubstory = (kind, name, storyFn) => {
-  const arabicServiceDecorator = withServicesKnob({ defaultService: 'arabic' });
+  const rtlServiceDecorator = withServicesKnob({
+    defaultService: 'arabic',
+    services: ['arabic', 'persian', 'urdu', 'pashto'],
+  });
   storiesOf(`${kind}/RTL`, module).add(`RTL - ${name}`, () =>
-    arabicServiceDecorator(storyFn),
+    rtlServiceDecorator(storyFn),
   );
 };
 
