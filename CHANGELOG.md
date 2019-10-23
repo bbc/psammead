@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 1.8.31 | [PR#2477](https://github.com/bbc/psammead/pull/2477) Talos - Bump Dependencies - @bbc/psammead-styles |
 | 1.8.30 | [PR#2464](https://github.com/bbc/psammead/pull/2464) Add more context to changeScanner error output |
 | 1.8.29 | [PR#2317](https://github.com/bbc/psammead/pull/2317) Bump @bbc/psammead-media-player |
 | 1.8.28 | [PR#2452](https://github.com/bbc/psammead/pull/2452) Bump dependencies (#2441 - #2445) |
