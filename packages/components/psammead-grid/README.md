@@ -76,7 +76,7 @@ When we refer to `group3` in this component, we're referring to the breakpoint w
 
 #### <a name="simple-example">Simple example</a>
 
-Here is an example of a `<Grid>` that has 8 columns for `group4` (from 1008px to 1279px). It has four child `<Grid item>` elements, one which spans 6/8 columns and one which spans 2/8 columns within this breakpoint.
+Here is an example of a `<Grid>` that has 8 columns for `group4` (from 1008px to 1279px). It has two child `<Grid item>` elements, one which spans 6/8 columns and one which spans 2/8 columns within this breakpoint.
 
 ```jsx
 import Grid from '@bbc/psammead-grid';
@@ -84,12 +84,12 @@ import Grid from '@bbc/psammead-grid';
 const MyComponent = () => (
   <Grid
     columns={{
-      group0: 6,
-      group1: 6,
-      group2: 6,
-      group3: 6,
+      group0: 8,
+      group1: 8,
+      group2: 8,
+      group3: 8,
       group4: 8,
-      group5: 12,
+      group5: 8,
     }}
   >
     <Grid
@@ -100,7 +100,7 @@ const MyComponent = () => (
         group2: 6,
         group3: 6,
         group4: 6,
-        group5: 12,
+        group5: 6,
       }}
     >
       <p>Item 1 - Paragraph that spans 6 out of 8 columns through group4</p>
@@ -108,41 +108,15 @@ const MyComponent = () => (
     <Grid
       item
       columns={{
-        group0: 6,
-        group1: 6,
-        group2: 6,
-        group3: 6,
+        group0: 2,
+        group1: 2,
+        group2: 2,
+        group3: 2,
         group4: 2,
-        group5: 12,
+        group5: 2,
       }}
     >
       <p>Item 2 - Paragraph that spans 2 out of 8 columns through group4</p>
-    </Grid>
-    <Grid
-      item
-      columns={{
-        group0: 6,
-        group1: 6,
-        group2: 6,
-        group3: 6,
-        group4: 2,
-        group5: 12,
-      }}
-    >
-      <p>Item 3 - Paragraph that spans 2 out of 8 columns through group4</p>
-    </Grid>
-    <Grid
-      item
-      columns={{
-        group0: 6,
-        group1: 6,
-        group2: 6,
-        group3: 6,
-        group4: 2,
-        group5: 12,
-      }}
-    >
-      <p>Item 4 - Paragraph that spans 2 out of 8 columns through group4</p>
     </Grid>
   </Grid>
 );
@@ -215,33 +189,33 @@ import Grid from '@bbc/psammead-grid';
 const MyComponent = () => (
   <Grid
     columns={{
-      group0: 4,
-      group1: 4,
+      group0: 6,
+      group1: 6,
       group2: 6,
       group3: 6,
-      group4: 8,
-      group5: 12,
+      group4: 6,
+      group5: 6,
     }}
   >
     <Grid
       columns={{
-        group0: 2,
-        group1: 4,
-        group2: 4,
+        group0: 6,
+        group1: 6,
+        group2: 6,
         group3: 6,
-        group4: 8,
-        group5: 12,
+        group4: 6,
+        group5: 6,
       }}
     >
       <Grid
         item
         columns={{
-          group0: 2,
-          group1: 4,
-          group2: 4,
+          group0: 6,
+          group1: 6,
+          group2: 6,
           group3: 3,
-          group4: 4,
-          group5: 6,
+          group4: 3,
+          group5: 3,
         }}
       >
         <ExampleImage />
@@ -249,12 +223,12 @@ const MyComponent = () => (
       <Grid
         item
         columns={{
-          group0: 2,
-          group1: 4,
-          group2: 4,
+          group0: 6,
+          group1: 6,
+          group2: 6,
           group3: 3,
-          group4: 4,
-          group5: 6,
+          group4: 3,
+          group5: 3,
         }}
       >
         <ExampleParagraph />
@@ -267,8 +241,8 @@ const MyComponent = () => (
         group1: 2,
         group2: 2,
         group3: 2,
-        group4: 4,
-        group5: 6,
+        group4: 2,
+        group5: 2,
       }}
     >
       <ExampleImage />
@@ -276,12 +250,12 @@ const MyComponent = () => (
     <Grid
       item
       columns={{
-        group0: 2,
+        group0: 4,
         group1: 4,
         group2: 4,
         group3: 4,
         group4: 4,
-        group5: 6,
+        group5: 4,
       }}
     >
       <ExampleParagraph />
@@ -291,7 +265,7 @@ const MyComponent = () => (
 ```
 
 Screenshot of this example with GEL Gutters and GEL Margins enabled
-![Screenshot of this example with GEL Gutters and GEL Margins enabled](packages/components/psammead-grid/documentation/Screenshot-example-with-gelMargins-and-gelGutters.png)
+![Screenshot of this example with GEL Gutters and GEL Margins enabled](documentation/Screenshot-example-with-gelMargins-and-gelGutters.png)
 
 ### When to use this component
 
