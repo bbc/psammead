@@ -18,6 +18,9 @@ Object.keys(changes).forEach(packageName => {
 
 /* eslint-disable no-console */
 if (errors.length > 0) {
+  console.error(`Please update the version number and CHANGELOG for every package that is being
+changed in this branch. The following problems were found:
+`);
   errors.forEach(error => console.error(chalk.red(error)));
   console.error(''); // empty line for spacing
   process.exit(1);
