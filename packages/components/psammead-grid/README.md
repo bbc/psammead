@@ -29,18 +29,18 @@ Psammead Grid is a component that you can use to set out column-based layouts us
   - It can and should be used whenever you're defining a new grid item - something that you want to span a set number of columns at a breakpoint.
 
 ```jsx
-<Grid columns={{ group5: 6 }}>
-  <Grid item columns={{ group5: 1 }}>
+<Grid columns={{ {{ group0: 6, group1: 6, group2: 6, group3: 6, group4: 6, group5: 6 }} }}>
+  <Grid item columns={{ {{ group0: 1, group1: 1, group2: 1, group3: 1, group4: 1, group5: 1 }} }}>
     This spans 1 out of 6 columns
   </Grid>
-  <Grid item columns={{ group5: 5 }}>
+  <Grid item columns={{ {{ group0: 5, group1: 5, group2: 5, group3: 5, group4: 5, group5: 5 }} }}>
     This spans 5 out of 6 columns
   </Grid>
 </Grid>
 ```
 
 - When should I use the `startOffset` prop?
-  - `startOffset` is an object structured just like the `columns` prop. You can set it on a `<Grid item>` element to start it at a column other than the first one.
+  - `startOffset` is an object structured just like the `columns` prop. You can set it on a nested `Grid` or `<Grid item>` element to start it at a column other than the first one. It should not be added to the outer `Grid` as it won’t be working as expected unless its immediate parent has a `display: grid`.
   - If you don't pass it in, the offset value defaults to 1, the start of the grid.
 - Why is there no vertical spacing on the grid?
   - The Grid implementation only has gutters/margins for columns, [according to the GEL specification](https://www.bbc.co.uk/gel/guidelines/grid#grid-sizes). This is to allow flexibility for a variety of spacing. To add vertical spacing, you should add padding/margin/top/bottom to the contents.
@@ -61,18 +61,41 @@ In this example groups 1, 2, 3, & 5 are omitted from the `columns` prop - so at 
 import Grid from '@bbc/psammead-grid';
 
 const MyComponent = () => (
-  <Grid columns={{ group4: 8 }}>
-    <Grid item columns={{ group4: 6 }}>
+  <Grid
+    columns={{
+      group0: 8,
+      group1: 8,
+      group2: 8,
+      group3: 8,
+      group4: 8,
+      group5: 8,
+    }}
+  >
+    <Grid
+      item
+      columns={{
+        group0: 6,
+        group1: 6,
+        group2: 6,
+        group3: 6,
+        group4: 6,
+        group5: 6,
+      }}
+    >
       <p>Item 1 - Paragraph that spans 6 out of 8 columns through group4</p>
     </Grid>
-    <Grid item columns={{ group4: 2 }}>
+    <Grid
+      item
+      columns={{
+        group0: 2,
+        group1: 2,
+        group2: 2,
+        group3: 2,
+        group4: 2,
+        group5: 2,
+      }}
+    >
       <p>Item 2 - Paragraph that spans 2 out of 8 columns through group4</p>
-    </Grid>
-    <Grid item columns={{ group4: 2 }}>
-      <p>Item 3 - Paragraph that spans 2 out of 8 columns through group4</p>
-    </Grid>
-    <Grid item columns={{ group4: 2 }}>
-      <p>Item 4 - Paragraph that spans 2 out of 8 columns through group4</p>
     </Grid>
   </Grid>
 );
@@ -87,13 +110,19 @@ Image of this example when viewed at within `group4` (from 1008px to 1279px). Wh
 import Grid from '@bbc/psammead-grid';
 
 const MyComponent = () => (
-  <Grid columns={{ group3: 6, group4: 8 }}>
-    <Grid item columns={{ group3: 6, group4: 6 }}>
+  <Grid columns={{ group1: 6, group2: 6, group3: 6, group4: 8, group5: 8 }}>
+    <Grid
+      item
+      columns={{ group1: 6, group2: 6, group3: 6, group4: 6, group5: 6 }}
+    >
       <p>
         Paragraph - for group 3 spans 6/6 columns, for group 4 spans 6/8 columns
       </p>
     </Grid>
-    <Grid item columns={{ group3: 6, group4: 2 }}>
+    <Grid
+      item
+      columns={{ group1: 6, group2: 6, group3: 6, group4: 2, group5: 2 }}
+    >
       <p>
         Paragraph - for group 3 spans 6/6 columns, for group 4 spans 2/8 columns
       </p>
@@ -113,13 +142,44 @@ Using `enableGelGutters` and `enableGelMargins` on the `Grid` element. Note: the
 import Grid from '@bbc/psammead-grid';
 
 const MyComponent = () => (
-  <Grid enableGelGutters enableGelMargins columns={{ group3: 6, group4: 8 }}>
-    <Grid item columns={{ group3: 6, group4: 6 }}>
+  <Grid
+    enableGelGutters
+    enableGelMargins
+    columns={{
+      group0: 2,
+      group1: 4,
+      group2: 4,
+      group3: 6,
+      group4: 8,
+      group5: 12,
+    }}
+  >
+    <Grid
+      item
+      columns={{
+        group0: 2,
+        group1: 4,
+        group2: 4,
+        group3: 6,
+        group4: 6,
+        group5: 12,
+      }}
+    >
       <p>
         Paragraph - for group 3 spans 6/6 columns, for group 4 spans 6/8 columns
       </p>
     </Grid>
-    <Grid item columns={{ group3: 6, group4: 2 }}>
+    <Grid
+      item
+      columns={{
+        group0: 2,
+        group1: 4,
+        group2: 4,
+        group3: 6,
+        group4: 2,
+        group5: 12,
+      }}
+    >
       <p>
         Paragraph - for group 3 spans 6/6 columns, for group 4 spans 2/8 columns
       </p>
@@ -136,19 +196,77 @@ Note that here, any time you use `<Grid>` that generates a new grid. The total n
 import Grid from '@bbc/psammead-grid';
 
 const MyComponent = () => (
-  <Grid columns={{ group2: 6, group3: 6 }}>
-    <Grid columns={{ group2: 6, group3: 6 }}>
-      <Grid item columns={{ group2: 6, group3: 3 }}>
+  <Grid
+    columns={{
+      group0: 6,
+      group1: 6,
+      group2: 6,
+      group3: 6,
+      group4: 6,
+      group5: 6,
+    }}
+  >
+    <Grid
+      columns={{
+        group0: 6,
+        group1: 6,
+        group2: 6,
+        group3: 6,
+        group4: 6,
+        group5: 6,
+      }}
+    >
+      <Grid
+        item
+        columns={{
+          group0: 6,
+          group1: 6,
+          group2: 6,
+          group3: 3,
+          group4: 3,
+          group5: 3,
+        }}
+      >
         <ExampleImage />
       </Grid>
-      <Grid item columns={{ group2: 6, group3: 3 }}>
+      <Grid
+        item
+        columns={{
+          group0: 6,
+          group1: 6,
+          group2: 6,
+          group3: 3,
+          group4: 3,
+          group5: 3,
+        }}
+      >
         <ExampleParagraph />
       </Grid>
     </Grid>
-    <Grid item columns={{ group2: 2, group3: 2 }}>
+    <Grid
+      item
+      columns={{
+        group0: 2,
+        group1: 2,
+        group2: 2,
+        group3: 2,
+        group4: 2,
+        group5: 2,
+      }}
+    >
       <ExampleImage />
     </Grid>
-    <Grid item columns={{ group2: 4, group3: 4 }}>
+    <Grid
+      item
+      columns={{
+        group0: 4,
+        group1: 4,
+        group2: 4,
+        group3: 4,
+        group4: 4,
+        group5: 4,
+      }}
+    >
       <ExampleParagraph />
     </Grid>
   </Grid>
