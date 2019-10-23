@@ -40,7 +40,7 @@ Assuming `showPlaceholder` is `true`, the `placeholderSrc` will be what image to
 | `placeholderSrcset` | string | No   | - | `	"https://bbc.com/300/cat.jpg 300w, https://bbc.com/450/cat.jpg 450w, https://bbc.com/600/cat.jpg 600w"` |
 | `title` | string | Yes | - | `Video player` |
 | `portrait` | boolean | No   | `false` | `true` |
-| `placeholderSrc` | string | yes   | - | `http://foobar.com/placeholder.png` |
+| `placeholderSrc` | string | Yes   | - | `http://foobar.com/placeholder.png` |
 
 The `placeholderSrc` prop is required for AMP, as in order to have the component load an `amp-iframe` within 600px or 75% of the viewport from the top, we must have an `amp-img` placeholder. For more information on this, please refer to the [AMP docs for amp-iframe](https://amp.dev/documentation/components/amp-iframe/).
 
