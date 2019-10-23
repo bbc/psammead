@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
-import { string, bool, oneOf } from 'prop-types';
+import { string, bool, oneOf, shape } from 'prop-types';
 import Placeholder from './Placeholder';
 import Amp from './Amp';
 import Canonical from './Canonical';
@@ -26,6 +26,8 @@ export const CanonicalMediaPlayer = ({
   src,
   title,
   skin,
+  service,
+  mediaInfo,
 }) => {
   const [placeholderActive, setPlaceholderActive] = useState(showPlaceholder);
   const handlePlaceholderClick = () => setPlaceholderActive(false);
@@ -36,7 +38,12 @@ export const CanonicalMediaPlayer = ({
   return (
     <StyledContainer portrait={portrait}>
       {placeholderActive ? (
-        <Placeholder onClick={handlePlaceholderClick} src={placeholderSrc} />
+        <Placeholder
+          onClick={handlePlaceholderClick}
+          src={placeholderSrc}
+          service={service}
+          mediaInfo={mediaInfo}
+        />
       ) : (
         <Canonical src={src} title={title} />
       )}
@@ -68,6 +75,14 @@ CanonicalMediaPlayer.propTypes = {
   src: string.isRequired,
   title: string.isRequired,
   skin: oneOf(['classic', 'audio']),
+  service: string.isRequired,
+  mediaInfo: shape({
+    title: string.isRequired,
+    datetime: string,
+    duration: string,
+    durationSpoken: string,
+    type: oneOf(['video', 'audio']),
+  }).isRequired,
 };
 
 CanonicalMediaPlayer.defaultProps = {

@@ -3,7 +3,8 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
-| 1.8.29 | [PR#2405](https://github.com/bbc/psammead/pull/2405) Remove react-test-renderer |
+| 1.8.30 | [PR#2405](https://github.com/bbc/psammead/pull/2405) Remove react-test-renderer |
+| 1.8.29 | [PR#2317](https://github.com/bbc/psammead/pull/2317) Bump @bbc/psammead-media-player |
 | 1.8.28 | [PR#2452](https://github.com/bbc/psammead/pull/2452) Bump dependencies (#2441 - #2445) |
 | 1.8.27 | [PR#2400](https://github.com/bbc/psammead/pull/2400) bump dependencies (#2385 - #2396) |
 | 1.8.26 | [PR#2450](https://github.com/bbc/psammead/pull/2450) Talos - Bump Dependencies - @bbc/psammead-brand, @bbc/psammead-caption, @bbc/psammead-copyright, @bbc/psammead-image-placeholder, @bbc/psammead-inline-link, @bbc/psammead-media-indicator, @bbc/psammead-paragraph, @bbc/psammead-storybook-helpers, @bbc/psammead-timestamp |
