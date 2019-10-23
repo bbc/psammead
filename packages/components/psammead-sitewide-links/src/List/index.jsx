@@ -103,7 +103,6 @@ const List = ({ links, trustProjectLink }) => (
         </StyledListItem>
       ))}
     </StyledList>
-  </>
 );
 
 const linkPropTypes = shape({
