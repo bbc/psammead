@@ -57,7 +57,7 @@ Psammead Grid is a component that you can use to set out column-based layouts us
       group5: 5,
     }}
   >
-    This spans 5 out of 6 columns for all width
+    This spans 5 out of 6 columns for all widths
   </Grid>
 </Grid>
 ```
