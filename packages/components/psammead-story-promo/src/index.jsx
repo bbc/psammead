@@ -331,34 +331,30 @@ const StoryPromo = ({
   topStory,
   displayImage,
   ...props
-}) => (
-  <StoryPromoWrapper topStory={topStory} {...props}>
-    {displayImage ? (
-      <>
-        <ImageGridItem topStory={topStory}>
-          <ImageContentsWrapper>
-            {image}
-            {mediaIndicator && (
-              <InlineMediaIndicator topStory={topStory}>
-                {mediaIndicator}
-              </InlineMediaIndicator>
-            )}
-          </ImageContentsWrapper>
-        </ImageGridItem>
-        <TextGridItem topStory={topStory} displayImage={displayImage}>
-          {info}
-        </TextGridItem>
-      </>
-    ) : (
-      <>
-        <TextGridItem topStory={topStory} displayImage={displayImage}>
-          {mediaIndicator}
-          {info}
-        </TextGridItem>
-      </>
-    )}
-  </StoryPromoWrapper>
-);
+}) => {
+  const imageRenderer = displayImage && (
+    <ImageGridItem topStory={topStory}>
+      <ImageContentsWrapper>
+        {image}
+        {mediaIndicator && (
+          <InlineMediaIndicator topStory={topStory}>
+            {mediaIndicator}
+          </InlineMediaIndicator>
+        )}
+      </ImageContentsWrapper>
+    </ImageGridItem>
+  );
+
+  return (
+    <StoryPromoWrapper topStory={topStory} {...props}>
+      {imageRenderer}
+      <TextGridItem topStory={topStory} displayImage={displayImage}>
+        {!displayImage && mediaIndicator}
+        {info}
+      </TextGridItem>
+    </StoryPromoWrapper>
+  );
+};
 
 StoryPromo.propTypes = {
   image: node.isRequired,
