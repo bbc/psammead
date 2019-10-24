@@ -3,7 +3,8 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
-| 1.8.35 | [PR#2317](https://github.com/bbc/psammead/pull/2317) Bump @bbc/psammead-storybook-helpers |
+| 1.8.36 | [PR#2317](https://github.com/bbc/psammead/pull/2317) Bump @bbc/psammead-storybook-helpers |
+| 1.8.35 | [PR#2486](https://github.com/bbc/psammead/pull/2486) Talos - Bump Dependencies - @bbc/psammead-assets, @bbc/psammead-brand, @bbc/psammead-caption, @bbc/psammead-copyright, @bbc/psammead-image, @bbc/psammead-image-placeholder, @bbc/psammead-inline-link, @bbc/psammead-media-indicator, @bbc/psammead-paragraph, @bbc/psammead-storybook-helpers, @bbc/psammead-test-helpers, @bbc/psammead-timestamp |
 | 1.8.34 | [PR#2433](https://github.com/bbc/psammead/pull/2433) Add script boilerplate for amp js  |
 | 1.8.33 | [PR#2405](https://github.com/bbc/psammead/pull/2405) Remove react-test-renderer |
 | 1.8.32 | [PR#2481](https://github.com/bbc/psammead/pull/2481) Updating lerna patch version to fix 10 high vulnerabilities |
