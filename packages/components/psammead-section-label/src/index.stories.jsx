@@ -9,6 +9,11 @@ import notes from '../README.md';
 import SectionLabel from './index';
 
 const STORY_KIND = 'Components|SectionLabel';
+const selectFirst2Words = text =>
+  text
+    .split(' ')
+    .filter((word, i) => i < 2)
+    .join(' ');
 
 storiesOf(STORY_KIND, module)
   .addDecorator(withKnobs)
@@ -45,7 +50,7 @@ storiesOf(STORY_KIND, module)
         )}
         labelId="example-section-label"
         service={service}
-        linkText="See All"
+        linkText={service === 'news' ? 'See All' : selectFirst2Words(text)}
         href="https://www.bbc.com/igbo"
       >
         {service === 'news' ? 'Most Read' : text}
@@ -55,5 +60,5 @@ storiesOf(STORY_KIND, module)
   );
 
 buildRTLSubstories(STORY_KIND, {
-  include: ['default'],
+  include: ['default', 'with a link'],
 });
