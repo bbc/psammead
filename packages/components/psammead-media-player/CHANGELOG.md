@@ -4,6 +4,7 @@
 | Version       | Description                                                                                                                  |
 | ------------- | ---------------------------------------------------------------------------------------------------------------------------- |
 | 2.1.0 | [PR#2424](https://github.com/bbc/psammead/pull/2424) Add srcset to placeholder image
+| 2.0.2 | [PR#2486](https://github.com/bbc/psammead/pull/2486) Talos - Bump Dependencies - @bbc/psammead-image |
 | 2.0.1 | [PR#2317](https://github.com/bbc/psammead/pull/2317) Add `psammead-play-button` to Media Player placeholder |
 | 2.0.0 | [PR#2434](https://github.com/bbc/psammead/pull/2434) Add `title` attribute to AV media player |
 | 1.1.1-alpha.8 | [PR#2410](https://github.com/bbc/psammead/pull/2410) Update AMP story audio skin AMP placeholder image                       |
