@@ -65,7 +65,7 @@ test('can parse XML with a link', () => {
   });
 });
 
-test('can returns link with "isExternal: true" for "www.bbc.com"', () => {
+test('can return a link with "isExternal: false" for "www.bbc.com"', () => {
   const richText = candyXmlToRichText(
     createBody(
       '<link><caption>foo</caption><url href="https://www.bbc.com/foo"/></link>',
@@ -98,7 +98,7 @@ test('can returns link with "isExternal: true" for "www.bbc.com"', () => {
   });
 });
 
-test('can returns link with "isExternal: true" for "www.bbc.in"', () => {
+test('can return a link with "isExternal: false" for "www.bbc.in"', () => {
   const richText = candyXmlToRichText(
     createBody(
       '<link><caption>foo</caption><url href="https://www.bbc.in/foo"/></link>',
@@ -131,7 +131,7 @@ test('can returns link with "isExternal: true" for "www.bbc.in"', () => {
   });
 });
 
-test('can returns link with "isExternal: true" for "www.bbc.co.uk"', () => {
+test('can return a link with "isExternal: false" for "www.bbc.co.uk"', () => {
   const richText = candyXmlToRichText(
     createBody(
       '<link><caption>foo</caption><url href="https://www.bbc.co.uk/foo"/></link>',
@@ -147,6 +147,39 @@ test('can returns link with "isExternal: true" for "www.bbc.co.uk"', () => {
           model: {
             text: 'foo',
             locator: 'https://www.bbc.co.uk/foo',
+            isExternal: false,
+            blocks: [
+              {
+                type: 'fragment',
+                model: {
+                  text: 'foo',
+                  attributes: [],
+                },
+              },
+            ],
+          },
+        },
+      ],
+    },
+  });
+});
+
+test('can return a link with "isExternal: false" for "www.test.bbc.com"', () => {
+  const richText = candyXmlToRichText(
+    createBody(
+      '<link><caption>foo</caption><url href="https://www.test.bbc.com/foo"/></link>',
+    ),
+  );
+
+  expect(richText).toEqual({
+    type: 'text',
+    model: {
+      blocks: [
+        {
+          type: 'urlLink',
+          model: {
+            text: 'foo',
+            locator: 'https://www.test.bbc.com/foo',
             isExternal: false,
             blocks: [
               {
