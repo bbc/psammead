@@ -350,6 +350,10 @@ exports[`StoryPromo - Top Story should render story promo without an image 1`] =
   .c1 >div {
     display: inline-block;
   }
+
+  .c1 >div {
+    padding: 0;
+  }
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {

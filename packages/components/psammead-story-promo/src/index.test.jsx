@@ -32,7 +32,7 @@ const Info = ({ topStory, isLive, alsoItems }) => (
         )}
       </Link>
     </Headline>
-    <Summary script={latin} topStory={topStory} service="news">
+    <Summary script={latin} topStory={topStory} service="news" displayImage>
       The summary of the promo
     </Summary>
     <time>12 March 2019</time>

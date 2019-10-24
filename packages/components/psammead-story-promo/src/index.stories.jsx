@@ -82,7 +82,12 @@ const InfoComponent = ({
         )}
       </Link>
     </Headline>
-    <Summary script={script} topStory={topStory} service={service}>
+    <Summary
+      script={script}
+      topStory={topStory}
+      service={service}
+      displayImage={displayImage}
+    >
       {summaryText}
     </Summary>
     {topStory && alsoItems && (
