@@ -4,7 +4,7 @@ import { withKnobs } from '@storybook/addon-knobs';
 import { withServicesKnob } from '@bbc/psammead-storybook-helpers';
 import MostRead from '.';
 
-storiesOf('Components|MostRead', module)
+storiesOf('Components|MostRead/MostRead', module)
   .addDecorator(withKnobs)
   .addDecorator(withServicesKnob())
-  .add('Example with layout change at group4+', () => <MostRead />);
+  .add('Default', () => <MostRead />);
