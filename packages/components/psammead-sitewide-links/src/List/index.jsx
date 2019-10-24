@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { string, arrayOf, shape, bool, oneOfType } from 'prop-types';
+import { string, arrayOf, shape } from 'prop-types';
 import { C_SHADOW } from '@bbc/psammead-styles/colours';
 import { GEL_SPACING, GEL_SPACING_DBL } from '@bbc/gel-foundations/spacings';
 import {
@@ -21,7 +21,7 @@ const getRowCount = (links, columns) =>
   Math.ceil((links.length - 1) / columns) + 1;
 
 const StyledList = styled.ul`
-  border: 0.0625rem solid ${C_SHADOW};
+  border: solid ${C_SHADOW};
   border-width: ${({ trustProjectLink }) =>
     trustProjectLink ? `0 0 0.0625rem 0` : `0.0625rem 0`};
   list-style-type: none;
@@ -91,18 +91,18 @@ const StyledListItem = styled.li`
 `;
 
 const List = ({ links, trustProjectLink }) => (
-    <StyledList role="list" trustProjectLink={trustProjectLink} links={links}>
-      {trustProjectLink && (
-        <StyledListItem key={trustProjectLink.text} role="listitem">
-          <Link text={trustProjectLink.text} href={trustProjectLink.href} />
-        </StyledListItem>
-      )}
-      {links.map(link => (
-        <StyledListItem key={link.text} role="listitem">
-          <Link text={link.text} href={link.href} />
-        </StyledListItem>
-      ))}
-    </StyledList>
+  <StyledList role="list" trustProjectLink={trustProjectLink} links={links}>
+    {trustProjectLink && (
+      <StyledListItem key={trustProjectLink.text} role="listitem">
+        <Link text={trustProjectLink.text} href={trustProjectLink.href} />
+      </StyledListItem>
+    )}
+    {links.map(link => (
+      <StyledListItem key={link.text} role="listitem">
+        <Link text={link.text} href={link.href} />
+      </StyledListItem>
+    ))}
+  </StyledList>
 );
 
 const linkPropTypes = shape({
@@ -110,14 +110,9 @@ const linkPropTypes = shape({
   text: string.isRequired,
 });
 
-const trustProjectLinkPropTypes = shape({
-  href: string,
-  text: string,
-});
-
 List.propTypes = {
   links: arrayOf(linkPropTypes.isRequired).isRequired,
-  trustProjectLink: oneOfType([trustProjectLinkPropTypes, bool]),
+  trustProjectLink: linkPropTypes,
 };
 
 List.defaultProps = { trustProjectLink: null };
