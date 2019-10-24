@@ -121,7 +121,7 @@ storiesOf('Components|Brand', module)
   )
   .add(
     'with script link',
-    ({ service, dir, script }) => {
+    ({ service, script }) => {
       const scriptLink = (
         <ScriptLink
           script={script}
@@ -147,7 +147,6 @@ storiesOf('Components|Brand', module)
 
       return (
         <Brand
-          dir={dir}
           product={productInput}
           serviceLocalisedName={serviceLocalisedNameInput}
           svgHeight={svgHeightInput}

@@ -47,7 +47,6 @@ The `scriptLink` can be used to render [ScriptLink](https://github.com/bbc/psamm
 | borderTop | Boolean | no | `false` | `true` |
 | borderBottom | Boolean | no | `false` | `true` |
 | scriptLink | Node | no | `null` | `<ScriptLink service='news' script={latin} href='https://www.bbc.com/serbian/lat'> Lat </ScriptLink>` |
-| dir | string | No | `'ltr' | One of `'rtl'` `'ltr' |
 
 ## Usage
 
@@ -87,7 +86,6 @@ const Header = (product, serviceName) => (
       logoColour={logoColour}
       borderBottom
       scriptLink={scriptLink}
-      dir="ltr"
     />
   </header>
 );
