@@ -76,57 +76,57 @@ const latinWithDiacriticsTypography = {
   canon: {
     groupA: {
       fontSize: '28',
-      lineHeight: '32',
+      lineHeight: '36',
     },
     groupB: {
       fontSize: '32',
-      lineHeight: '38',
+      lineHeight: '42',
     },
     groupD: {
       fontSize: '44',
-      lineHeight: '52',
+      lineHeight: '58',
     },
   },
   trafalgar: {
     groupA: {
-      fontSize: '20',
-      lineHeight: '24',
+      fontSize: '22',
+      lineHeight: '28',
     },
     groupB: {
       fontSize: '24',
-      lineHeight: '30',
+      lineHeight: '32',
     },
     groupD: {
       fontSize: '32',
-      lineHeight: '38',
+      lineHeight: '42',
     },
   },
   paragon: {
     groupA: {
       fontSize: '20',
-      lineHeight: '24',
+      lineHeight: '26',
     },
     groupB: {
       fontSize: '22',
-      lineHeight: '28',
+      lineHeight: '30',
     },
     groupD: {
       fontSize: '28',
-      lineHeight: '34',
+      lineHeight: '38',
     },
   },
   doublePica: {
     groupA: {
       fontSize: '18',
-      lineHeight: '22',
+      lineHeight: '24',
     },
     groupB: {
       fontSize: '20',
-      lineHeight: '24',
+      lineHeight: '26',
     },
     groupD: {
       fontSize: '24',
-      lineHeight: '30',
+      lineHeight: '32',
     },
   },
   greatPrimer: {
