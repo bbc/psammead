@@ -1,5 +1,5 @@
 {
-  "name": "psammead-most-read",
+  "name": "@bbc/psammead-most-read",
   "version": "1.0.0-alpha.0",
   "publishConfig": {
     "tag": "alpha"
@@ -23,5 +23,8 @@
     "bbc",
     "most",
     "read"
-  ]
+  ],
+  "dependencies": {
+    "@bbc/psammead-grid": "^1.0.0-alpha.7"
+  }
 }
