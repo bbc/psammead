@@ -1,15 +1,15 @@
 import React from 'react';
 import { bool, node, number, oneOf, shape, string } from 'prop-types';
-import styled, { css } from 'styled-components';
+// import styled, { css } from 'styled-components';
 import Grid from '@bbc/psammead-grid';
 
 const MostRead = ({ dir, item, script, service }) => (
   <Grid
     columns={{
-      group0: 8,
-      group1: 8,
-      group2: 8,
-      group3: 8,
+      group0: 6,
+      group1: 6,
+      group2: 6,
+      group3: 6,
       group4: 8,
       group5: 8,
     }}
@@ -17,28 +17,31 @@ const MostRead = ({ dir, item, script, service }) => (
     <Grid
       item
       columns={{
-        group0: 6,
-        group1: 6,
-        group2: 6,
-        group3: 6,
-        group4: 6,
-        group5: 6,
+        group0: 1,
+        group1: 1,
+        group2: 1,
+        group3: 1,
+        group4: 1,
+        group5: 1,
       }}
     >
-      <p>Item 1 - Paragraph that spans 6 out of 8 columns through group4</p>
+      <p>No. 1</p>
     </Grid>
     <Grid
       item
       columns={{
-        group0: 6,
-        group1: 6,
-        group2: 6,
-        group3: 6,
-        group4: 6,
-        group5: 6,
+        group0: 5,
+        group1: 5,
+        group2: 5,
+        group3: 5,
+        group4: 7,
+        group5: 7,
       }}
     >
-      <p>Item 1 - Paragraph that spans 6 out of 8 columns through group4</p>
+      <p>
+        Paragraph that describes No.1, Paragraph that describes No.1, Paragraph
+        that describes No.1
+      </p>
     </Grid>
   </Grid>
 );
