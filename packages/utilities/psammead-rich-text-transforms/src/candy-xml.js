@@ -39,7 +39,7 @@ const createUrlLink = element => {
     blocks = [fragment(text)];
   });
 
-  const isInternalRegex = /bbc.(in|com|co.uk)/;
+  const isInternalRegex = /.bbc.(in|com|co.uk)/;
   const isExternal = !isInternalRegex.test(locator);
 
   return urlLink(text, locator, blocks, isExternal);
