@@ -18,13 +18,9 @@ import notes from '../README.md';
 import Brand from './index';
 
 const STORY_KIND = 'Components|Brand';
-const inputs = () => {
-  // capitalization is only for presentation purpose on the knob
-  const options = Object.keys(svgs)
-    .filter(key => key !== 'BBC_BLOCKS')
-    .map(key => key.charAt(0).toUpperCase() + key.slice(1));
-
-  const svgChoice = select('Service SVG', options, 'News').toLowerCase();
+const inputs = (service = 'news') => {
+  const options = Object.keys(svgs).filter(key => key !== 'BBC_BLOCKS');
+  const svgChoice = select('Service SVG', options, service).toLowerCase();
   const productInput = text('Product', 'BBC News');
   const serviceLocalisedNameInput = text('Localised service name', 'Yoruba');
   const svgRatio = svgs[svgChoice].ratio;
@@ -57,7 +53,7 @@ storiesOf(STORY_KIND, module)
   .addDecorator(withServicesKnob())
   .add(
     'without brand link',
-    () => {
+    ({ service }) => {
       const {
         productInput,
         serviceLocalisedNameInput,
@@ -69,7 +65,7 @@ storiesOf(STORY_KIND, module)
         borderTop,
         backgroundColour,
         logoColour,
-      } = inputs();
+      } = inputs(service);
 
       return (
         <Brand
@@ -90,7 +86,7 @@ storiesOf(STORY_KIND, module)
   )
   .add(
     'with brand link',
-    () => {
+    ({ service }) => {
       const {
         productInput,
         serviceLocalisedNameInput,
@@ -102,7 +98,7 @@ storiesOf(STORY_KIND, module)
         borderTop,
         backgroundColour,
         logoColour,
-      } = inputs();
+      } = inputs(service);
 
       return (
         <Brand
