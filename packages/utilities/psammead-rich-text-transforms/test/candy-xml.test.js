@@ -98,6 +98,39 @@ test('can returns link with "isExternal: true" for "www.bbc.com"', () => {
   });
 });
 
+test('can returns link with "isExternal: true" for "www.bbc.in"', () => {
+  const richText = candyXmlToRichText(
+    createBody(
+      '<link><caption>foo</caption><url href="https://www.bbc.in/foo"/></link>',
+    ),
+  );
+
+  expect(richText).toEqual({
+    type: 'text',
+    model: {
+      blocks: [
+        {
+          type: 'urlLink',
+          model: {
+            text: 'foo',
+            locator: 'https://www.bbc.in/foo',
+            isExternal: false,
+            blocks: [
+              {
+                type: 'fragment',
+                model: {
+                  text: 'foo',
+                  attributes: [],
+                },
+              },
+            ],
+          },
+        },
+      ],
+    },
+  });
+});
+
 test('can returns link with "isExternal: true" for "www.bbc.co.uk"', () => {
   const richText = candyXmlToRichText(
     createBody(
