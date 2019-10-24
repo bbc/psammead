@@ -1,6 +1,6 @@
 {
   "name": "@bbc/psammead-story-promo-list",
-  "version": "2.1.18",
+  "version": "2.1.19",
   "main": "dist/index.js",
   "module": "esm/index.js",
   "sideEffects": false,
@@ -19,7 +19,7 @@
   },
   "homepage": "https://github.com/bbc/psammead/blob/latest/packages/components/psammead-story-promo-list/README.md",
   "dependencies": {
-    "@bbc/gel-foundations": "^3.4.0",
+    "@bbc/gel-foundations": "^3.4.1",
     "@bbc/psammead-styles": "^4.0.4"
   },
   "peerDependencies": {
