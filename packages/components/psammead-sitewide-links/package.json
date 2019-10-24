@@ -1,36 +1,36 @@
 {
-  "name": "@bbc/psammead-sitewide-links",
-  "version": "4.0.0",
-  "description": "React styled component for a sitewide-links",
-  "main": "dist/index.js",
-  "module": "esm/index.js",
-  "sideEffects": false,
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/bbc/psammead/tree/latest/packages/components/psammead-sitewide-links"
-  },
-  "keywords": [
-    "bbc",
-    "links",
-    "sitewide-links",
-    "styled-components"
-  ],
-  "author": {
-    "name": "Psammead Maintainers",
-    "email": "PsammeadMaintainers@bbc.co.uk"
-  },
-  "license": "Apache-2.0",
-  "bugs": {
-    "url": "https://github.com/bbc/psammead/issues"
-  },
-  "homepage": "https://github.com/bbc/psammead/blob/latest/packages/components/psammead-sitewide-links/README.md",
-  "dependencies": {
-    "@bbc/gel-foundations": "^3.4.0",
-    "@bbc/psammead-styles": "^4.0.3"
-  },
-  "peerDependencies": {
-    "prop-types": "^15.6.2",
-    "react": "^16.9.0",
-    "styled-components": "^4.3.2"
-  }
+    "name": "@bbc/psammead-sitewide-links",
+    "version": "4.0.0",
+    "description": "React styled component for a sitewide-links",
+    "main": "dist/index.js",
+    "module": "esm/index.js",
+    "sideEffects": false,
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/bbc/psammead/tree/latest/packages/components/psammead-sitewide-links"
+    },
+    "keywords": [
+        "bbc",
+        "links",
+        "sitewide-links",
+        "styled-components"
+    ],
+    "author": {
+        "name": "Psammead Maintainers",
+        "email": "PsammeadMaintainers@bbc.co.uk"
+    },
+    "license": "Apache-2.0",
+    "bugs": {
+        "url": "https://github.com/bbc/psammead/issues"
+    },
+    "homepage": "https://github.com/bbc/psammead/blob/latest/packages/components/psammead-sitewide-links/README.md",
+    "dependencies": {
+        "@bbc/gel-foundations": "^3.4.1",
+        "@bbc/psammead-styles": "^4.0.4"
+    },
+    "peerDependencies": {
+        "prop-types": "^15.6.2",
+        "react": "^16.9.0",
+        "styled-components": "^4.3.2"
+    }
 }
