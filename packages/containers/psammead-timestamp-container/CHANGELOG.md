@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 2.6.4 | [PR#2486](https://github.com/bbc/psammead/pull/2486) Talos - Bump Dependencies - @bbc/psammead-timestamp |
 | 2.6.3 | [PR#2450](https://github.com/bbc/psammead/pull/2450) Talos - Bump Dependencies - @bbc/psammead-timestamp |
 | 2.6.2 | [PR#2440](https://github.com/bbc/psammead/pull/2440) Talos - Bump Dependencies - @bbc/psammead-timestamp, @bbc/psammead-locales |
 | 2.6.1 | [PR#2438](https://github.com/bbc/psammead/pull/2438) Fix relative timestamp snaps that change over time |
