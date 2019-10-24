@@ -212,11 +212,10 @@ const TextGridItem = styled.div`
     padding: initial;
 
     ${({ topStory }) => (topStory ? TextGridColumnsTopStory : TextGridColumns)}
-    ${({ displayImage }) =>
-      !displayImage &&
-      `>div{ display:inline-block; } 
-       >div { padding: 0; }`}
   }
+
+  ${({ displayImage }) =>
+    !displayImage && `>div{ display:inline-block; padding: 0; } `}
 `;
 
 // This is needed to get around the issue of IE11 not supporting

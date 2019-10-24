@@ -258,6 +258,11 @@ exports[`StoryPromo - Top Story should render story promo without an image 1`] =
   width: 100%;
 }
 
+.c1 >div {
+  display: inline-block;
+  padding: 0;
+}
+
 .c6 {
   font-size: 0.9375rem;
   line-height: 1.25rem;
@@ -345,14 +350,6 @@ exports[`StoryPromo - Top Story should render story promo without an image 1`] =
     padding: initial;
     grid-column: 3 / span 4;
     grid-column: 1 / span 6;
-  }
-
-  .c1 >div {
-    display: inline-block;
-  }
-
-  .c1 >div {
-    padding: 0;
   }
 }
 
