@@ -37,9 +37,8 @@ const SitewideLinksWrapper = styled.div`
 const ConstrainedWrapper = styled.div`
   max-width: ${GEL_GROUP_5_SCREEN_WIDTH_MIN};
   margin: 0 auto;
-  ${({ isTrustProject }) => {
-    return isTrustProject && `padding-top: ${GEL_SPACING}`;
-  }}
+  ${({ trustProjectLink }) =>
+    trustProjectLink && `padding-top: ${GEL_SPACING})`}
 `;
 
 const StyledParagraph = styled.p`
@@ -56,7 +55,7 @@ const SitewideLinks = ({
   service,
 }) => (
   <SitewideLinksWrapper service={service}>
-    <ConstrainedWrapper isTrustProject={typeof trustProjectLink}>
+    <ConstrainedWrapper trustProjectLink={trustProjectLink}>
       <List links={links} trustProjectLink={trustProjectLink} />
       <StyledParagraph>
         {copyrightText}{' '}
