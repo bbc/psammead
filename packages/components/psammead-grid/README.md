@@ -76,7 +76,7 @@ When we refer to `group3` in this component, we're referring to the breakpoint w
 
 #### <a name="simple-example">Simple example</a>
 
-Here is an example of a `<Grid>` that has 8 columns for `group4` (from 1008px to 1279px). It has two child `<Grid item>` elements, one which spans 6/8 columns and one which spans 2/8 columns within this breakpoint.
+Here is an example of a `<Grid>` that has 8 columns for `group4` (from 1008px to 1279px). It has four child `<Grid item>` elements, one which spans 6/8 columns and three others which spans 2/8 columns within this breakpoint.
 
 ```jsx
 import Grid from '@bbc/psammead-grid';
@@ -118,12 +118,41 @@ const MyComponent = () => (
     >
       <p>Item 2 - Paragraph that spans 2 out of 8 columns through group4</p>
     </Grid>
+    <Grid
+      item
+      columns={{
+        group0: 2,
+        group1: 2,
+        group2: 2,
+        group3: 2,
+        group4: 2,
+        group5: 2,
+      }}
+    >
+      <p>Item 3 - Paragraph that spans 2 out of 8 columns through group4</p>
+    </Grid>
+    <Grid
+      item
+      columns={{
+        group0: 2,
+        group1: 2,
+        group2: 2,
+        group3: 2,
+        group4: 2,
+        group5: 2,
+      }}
+    >
+      <p>Item 4 - Paragraph that spans 2 out of 8 columns through group4</p>
+    </Grid>
   </Grid>
 );
 ```
 
 Image of this example when viewed at within `group4` (from 1008px to 1279px). When you look at this example at any other breakpoint, each of the four items fill up the full width of the row.
-![8 column grid with items 6 2 2 2 with labels](packages/components/psammead-grid/documentation/8-column-grid-with-items-6-2-2-2-with-labels.png)
+![8 column grid with items 6 2 2 2 with labels](documentation/8-column-grid-with-items-6-2-2-2-with-labels.png)
+
+Screenshot of this example without GEL Gutters and GEL Margins
+![Screenshot of this example without GEL Gutters and GEL Margins](documentation/screenshot-example-without-gelMargins-and-gelGutters.png)
 
 #### <a name="gutters-margins">Setting standard GEL gutters and GEL Margins</a>
 
