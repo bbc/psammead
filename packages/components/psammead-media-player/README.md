@@ -22,9 +22,11 @@ This component to be used at any point on the page, specifically when a media pl
 | `title` | string | Yes | - | `Video player` |
 | `showPlaceholder` | boolean | No   | `true` | `false` |
 | `placeholderSrc` | string | No   | `null` | `http://foobar.com/placeholder.png` |
+| `placeholderSrcset` | string | No   | - | `"https://bbc.com/300/cat.jpg 300w, https://bbc.com/450/cat.jpg 450w, https://bbc.com/600/cat.jpg 600w"` |
 | `portrait` | boolean | No   | `false` | `true` |
 
 The `src` prop is required, as it tells the component what page it needs to embed.
+The `placeholderSrcset` prop is not required, as it allows image responsiveness and optimization depending on the size of the screen.
 The `title` prop is required for accessibility of the embedded iframe.
 The `portrait` prop is not required, and defaults to `false`. This is to support portrait video content in the future.
 The `showPlaceholder` boolean prop is also not required, and defaults to `true`.
@@ -35,9 +37,10 @@ Assuming `showPlaceholder` is `true`, the `placeholderSrc` will be what image to
 | Argument  | Type                | Required | Default | Example         |
 |-----------|---------------------|----------|---------|-----------------|
 | `src` | string | Yes   | - | `http://foobar.com/embeddable_endpoint` |
+| `placeholderSrcset` | string | No   | - | `	"https://bbc.com/300/cat.jpg 300w, https://bbc.com/450/cat.jpg 450w, https://bbc.com/600/cat.jpg 600w"` |
 | `title` | string | Yes | - | `Video player` |
 | `portrait` | boolean | No   | `false` | `true` |
-| `placeholderSrc` | string | yes   | - | `http://foobar.com/placeholder.png` |
+| `placeholderSrc` | string | Yes   | - | `http://foobar.com/placeholder.png` |
 
 The `placeholderSrc` prop is required for AMP, as in order to have the component load an `amp-iframe` within 600px or 75% of the viewport from the top, we must have an `amp-img` placeholder. For more information on this, please refer to the [AMP docs for amp-iframe](https://amp.dev/documentation/components/amp-iframe/).
 
@@ -52,6 +55,7 @@ const Container = ({ src, title, portrait, showPlaceholder, placeholderSrc }) =>
     title={title}
     portrait={portrait}
     placeholderSrc={placeholderSrc}
+    placeholderSrcset={placeholderSrcset}
     showPlaceholder={showPlaceholder}
   />
 )
@@ -67,6 +71,7 @@ const Container = ({ src, title, portrait, placeholderSrc }) => (
     title={title}
     portrait={portrait}
     placeholderSrc={placeholderSrc}
+    placeholderSrcset={placeholderSrcset}
   />
 )
 ```
