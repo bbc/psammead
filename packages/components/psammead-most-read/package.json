@@ -1,0 +1,20 @@
+{
+  "name": "psammead-most-read",
+  "version": "1.0.0-alpha.0",
+  "description": "A component for the most read item",
+  "main": "dist/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bbc/psammead/tree/latest/packages/components/psammead-most-read"
+  },
+  "keywords": [
+    "bbc",
+    "most",
+    "read"
+  ],
+  "author": {
+    "name": "Psammead Maintainers",
+    "email": "PsammeadMaintainers@bbc.co.uk"
+  },
+  "license": "Apache-2.0"
+}
