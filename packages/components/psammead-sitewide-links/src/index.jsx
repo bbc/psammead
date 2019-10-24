@@ -1,6 +1,6 @@
 import React from 'react';
 import styled, { css } from 'styled-components';
-import { arrayOf, shape, string, node, bool, oneOfType } from 'prop-types';
+import { arrayOf, shape, string, node } from 'prop-types';
 import { C_EBON, C_WHITE } from '@bbc/psammead-styles/colours';
 import { GEL_BREVIER } from '@bbc/gel-foundations/typography';
 import {
@@ -71,15 +71,10 @@ const linkPropTypes = shape({
   text: string.isRequired,
 });
 
-const trustProjectLinkPropTypes = shape({
-  href: string,
-  text: string,
-});
-
 SitewideLinks.propTypes = {
   links: arrayOf(linkPropTypes.isRequired).isRequired,
   copyrightText: node.isRequired,
-  trustProjectLink: oneOfType([trustProjectLinkPropTypes, bool]),
+  trustProjectLink: linkPropTypes,
   externalLink: linkPropTypes.isRequired,
   service: string.isRequired,
 };
