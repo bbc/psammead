@@ -1,15 +1,14 @@
 import { getStorybook, storiesOf } from '@storybook/react';
-import buildRTLSubstories from './buildRTLSubstories';
+import { buildRTLSubstories } from './buildRTLSubstories';
 import * as withServicesKnob from './withServicesKnob';
 
 const mockAddStory = jest.fn();
-const mockAddDecorator = jest.fn(() => ({ add: mockAddStory }));
 
 withServicesKnob.default = jest.fn(() => 'withServicesKnob');
 
 jest.mock('@storybook/react', () => ({
   storiesOf: jest.fn(() => ({
-    addDecorator: mockAddDecorator,
+    add: mockAddStory,
   })),
   getStorybook: jest.fn(() => [
     {
@@ -42,34 +41,45 @@ jest.mock('@storybook/react', () => ({
   ]),
 }));
 
-buildRTLSubstories();
+afterEach(jest.clearAllMocks);
 
 it('should get all stories', () => {
+  buildRTLSubstories('Components|Brand');
+
   expect(getStorybook).toHaveBeenCalled();
 });
 
-it('should add the withServicesKnob decorator', () => {
+it('should add the withServicesKnob decorator so that the default service and service options are configured', () => {
+  buildRTLSubstories('Components|Brand');
+
   expect(withServicesKnob.default).toHaveBeenCalledWith({
     defaultService: 'arabic',
+    services: ['arabic', 'persian', 'urdu', 'pashto'],
   });
-  expect(mockAddDecorator).toHaveBeenCalledWith('withServicesKnob');
 });
 
-it('should create the substories', () => {
+it("should build RTL variants of story kind's full suite of stories", () => {
+  buildRTLSubstories('Components|Brand');
+
   expect(storiesOf.mock.calls[0][0]).toEqual('Components|Brand/RTL');
   expect(mockAddStory.mock.calls[0][0]).toEqual('RTL - without brand link');
 
   expect(storiesOf.mock.calls[1][0]).toEqual('Components|Brand/RTL');
   expect(mockAddStory.mock.calls[1][0]).toEqual('RTL - with brand link');
 
-  expect(storiesOf.mock.calls[2][0]).toEqual('Components|Caption/RTL');
-  expect(mockAddStory.mock.calls[2][0]).toEqual('RTL - default');
+  expect(mockAddStory.mock.calls[2]).toBeUndefined();
+});
 
-  expect(storiesOf.mock.calls[3][0]).toEqual('Components|Caption/RTL');
-  expect(mockAddStory.mock.calls[3][0]).toEqual('RTL - with offscreen text');
+it("should build RTL variants of story kind's specified stories", () => {
+  buildRTLSubstories('Components|Brand', { include: ['with brand link'] });
 
-  expect(storiesOf.mock.calls[4][0]).toEqual('Components|Caption/RTL');
-  expect(mockAddStory.mock.calls[4][0]).toEqual(
-    'RTL - containing an inline link',
-  );
+  expect(storiesOf.mock.calls[0][0]).toEqual('Components|Brand/RTL');
+  expect(mockAddStory.mock.calls[0][0]).toEqual('RTL - with brand link');
+
+  expect(storiesOf.mock.calls[1]).toBeUndefined();
+});
+
+it('should not create RTL substories when no params', () => {
+  expect(() => buildRTLSubstories()).toThrow();
+  expect(mockAddStory).not.toHaveBeenCalled();
 });

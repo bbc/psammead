@@ -3,6 +3,9 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 3.1.19 | [PR#2488](https://github.com/bbc/psammead/pull/2488) Talos - Bump Dependencies - @bbc/gel-foundations |
+| 3.1.18 | [PR#2477](https://github.com/bbc/psammead/pull/2477) Talos - Bump Dependencies - @bbc/psammead-styles |
+| 3.1.17 | [PR#2457](https://github.com/bbc/psammead/pull/2457) Show relevant link text when selecting service in storybook |
 | 3.1.16 | [PR#2440](https://github.com/bbc/psammead/pull/2440) Talos - Bump Dependencies - @bbc/psammead-styles |
 | 3.1.15 | [PR#2404](https://github.com/bbc/psammead/pull/2404) replace inputProvider and dirDecorator with withServicesInput |
 | 3.1.14 | [PR#2351](https://github.com/bbc/psammead/pull/2351) Fix styling for IE11 |
