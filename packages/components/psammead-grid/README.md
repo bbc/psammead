@@ -151,9 +151,6 @@ const MyComponent = () => (
 Image of this example when viewed at within `group4` (from 1008px to 1279px). When you look at this example at any other breakpoint, each of the four items fill up the full width of the row.
 ![8 column grid with items 6 2 2 2 with labels](documentation/8-column-grid-with-items-6-2-2-2-with-labels.png)
 
-Screenshot of this example without GEL Gutters and GEL Margins
-![Screenshot of this example without GEL Gutters and GEL Margins](documentation/screenshot-example-without-gelMargins-and-gelGutters.png)
-
 #### <a name="gutters-margins">Setting standard GEL gutters and GEL Margins</a>
 
 Using `enableGelGutters` and `enableGelMargins` on the `Grid` element. Note: these should _not_ be added to a `<Grid item>` element!
@@ -207,6 +204,12 @@ const MyComponent = () => (
   </Grid>
 );
 ```
+
+Screenshot of this example with GEL Gutters and GEL Margins enabled
+![Screenshot of this example with GEL Gutters and GEL Margins enabled](documentation/Screenshot-example-with-gelMargins-and-gelGutters.png)
+
+Screenshot of this example without GEL Gutters and GEL Margins
+![Screenshot of this example without GEL Gutters and GEL Margins](documentation/Screenshot-example-without-gelMargins-and-gelGutters.png)
 
 #### <a name="nested-grid">Nested grid example</a>
 
@@ -292,9 +295,6 @@ const MyComponent = () => (
   </Grid>
 );
 ```
-
-Screenshot of this example with GEL Gutters and GEL Margins enabled
-![Screenshot of this example with GEL Gutters and GEL Margins enabled](documentation/Screenshot-example-with-gelMargins-and-gelGutters.png)
 
 ### When to use this component
 
