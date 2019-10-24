@@ -1,6 +1,6 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import { withKnobs, boolean } from '@storybook/addon-knobs';
+import { withKnobs } from '@storybook/addon-knobs';
 import { withServicesKnob } from '@bbc/psammead-storybook-helpers';
 import notes from '../README.md';
 import SitewideLinks from './index';
@@ -24,12 +24,22 @@ storiesOf('Components|SitewideLinks', module)
     ({ text, service }) => (
       <SitewideLinks
         links={links(text, service)}
-        trustProjectLink={
-          boolean('trustProjectLink', false) && {
-            href: 'https://www.bbc.co.uk/news',
-            text: 'Why you can trust the bbc',
-          }
-        }
+        copyrightText={service === 'news' ? 'copyright text' : text}
+        externalLink={buildLink(service === 'news' ? 'external link' : text)}
+        service={service}
+      />
+    ),
+    { notes, knobs: { escapeHTML: false } },
+  )
+  .add(
+    'with Trust Project Link',
+    ({ text, service }) => (
+      <SitewideLinks
+        links={links(text, service)}
+        trustProjectLink={{
+          href: 'https://www.bbc.co.uk/news',
+          text: 'Why you can trust the bbc',
+        }}
         copyrightText={service === 'news' ? 'copyright text' : text}
         externalLink={buildLink(service === 'news' ? 'external link' : text)}
         service={service}
