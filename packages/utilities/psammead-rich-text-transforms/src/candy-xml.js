@@ -83,7 +83,7 @@ const xmlNodeToBlock = (node, attributes) => {
     return convertToBlocks(node, [...attributes, styleAttribute]);
   }
 
-  const childBlocks = convertToBlocks(node); // why isn't this 'convertToBlocks(node, attributes);' ???
+  const childBlocks = convertToBlocks(node);
 
   return {
     type: node.name,
