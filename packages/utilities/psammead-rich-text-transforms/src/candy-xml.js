@@ -65,7 +65,7 @@ const convertToBlocks = (node, attributes = []) =>
 const xmlNodeToBlock = (node, attributes) => {
   if (!is(Object, node)) return undefined;
 
-  if (node.constructor.name === 'XmlTextNode') {
+  if (path(node.text)) {
     return fragment(node.text, attributes);
   }
 
@@ -80,7 +80,7 @@ const xmlNodeToBlock = (node, attributes) => {
     return convertToBlocks(node, [...attributes, styleAttribute]);
   }
 
-  const childBlocks = convertToBlocks(node);
+  const childBlocks = convertToBlocks(node); // why isn't this 'convertToBlocks(node, attributes);' ???
 
   return {
     type: node.name,
