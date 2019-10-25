@@ -22,7 +22,13 @@ The `withServicesKnob` function accepts an options argument with 2 properties:
 - `defaultService`(String): The default selected service of the services dropdown e.g. `arabic`. The default is `news`.
 - `services`(Array): A list of services that the dropdown will display. The default is all services.
 
-`buildRTLSubstories` - a function that gets all stories and creates right-to-left variants as substories. Internally it uses the `withServicesKnob` to set the default service as `arabic`. The appropriate place to use this function is in `storybook/config.js`.
+`buildRTLSubstories` - a function to create right-to-left variants of stories as substories. Internally it uses the `withServicesKnob` to set the default service as `arabic`.
+
+The `buildRTLSubstories` function accepts 2 arguments.
+
+- `storyKind`(String) - This is the story kind that you want you want to create RTL substories from. This will normally be the first argument you pass into `storiesOf` e.g. `storiesOf('Components|Paragraph', module)`. This parameter is required.
+- `options`(Object) - Available options:
+  - `include`(Array) - A list of specific story names to create RTL substories of. If this is not provided then all stories will have RTL substories.
 
 ## Installation
 
@@ -105,12 +111,19 @@ The above example dismisses the use of the `addDecorator` method and decorates t
 ### buildRTLSubstories
 
 ```jsx
-// storybook/config.js
-
 import { buildRTLSubstories } from '@bbc/psammead-storybook-helpers';
 
-// must be placed after the storybook configure function
-buildRTLSubstories();
+// create RTL variants of all stories of a kind
+buildRTLSubstories('Components|Paragraph');
+```
+
+```jsx
+import { buildRTLSubstories } from '@bbc/psammead-storybook-helpers';
+
+// create RTL variants of specific stories of a kind
+buildRTLSubstories('Components|Paragraph', {
+  include: ['containing an inline link'],
+});
 ```
 
 ## Contributing
