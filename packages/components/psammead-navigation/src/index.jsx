@@ -341,9 +341,6 @@ const DownChevronSvg = ({ dir }) => (
 
 const StyledNavMenu = styled.div`
   position: relative;
-  ${({ dir }) =>
-    dir === 'ltr' ? 'border-right' : 'border-left'}: ${C_WHITE}
-    solid;
   @media (min-width: ${GEL_GROUP_4_SCREEN_WIDTH_MAX}) {
     display: none;
   }
@@ -404,12 +401,12 @@ const NavMenu = ({
         on="tap:menu.toggleVisibility,menu_hider.toggleVisibility"
       >
         <StyledLink script={script} service={service}>
-          <MenuSpan>Menu</MenuSpan>
-          {menuVisible ? (
+          <MenuSpan>{menuVisible ? 'x' : '☰'}</MenuSpan>
+          {/* {menuVisible ? (
             <UpChevronSvg dir={dir} />
           ) : (
             <DownChevronSvg dir={dir} />
-          )}
+          )} */}
         </StyledLink>
       </button>
     </StyledNavMenu>
