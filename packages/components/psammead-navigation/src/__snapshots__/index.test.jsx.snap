@@ -205,7 +205,7 @@ exports[`Navigation should render correctly 1`] = `
   font-family: ReithSans,Helvetica,Arial,sans-serif;
   font-weight: 400;
   font-style: normal;
-  color: #B80000;
+  color: #FDFDFD;
   cursor: pointer;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -220,8 +220,8 @@ exports[`Navigation should render correctly 1`] = `
   left: 0;
   right: 0;
   bottom: 0;
-  border-bottom: 0.25rem solid #B80000;
-  border-bottom: 0.3125rem solid #B80000;
+  border-bottom: 0.25rem solid #FFFFFF;
+  border-bottom: 0.3125rem solid #FFFFFF;
 }
 
 .c17:focus::after {
@@ -230,18 +230,18 @@ exports[`Navigation should render correctly 1`] = `
   left: 0;
   right: 0;
   bottom: 0;
-  border-bottom: 0.25rem solid #B80000;
+  border-bottom: 0.25rem solid #FFFFFF;
   top: 0;
   border: 0.25rem solid #FFFFFF;
 }
 
-.c19 {
+.c18 {
   font-size: 0.9375rem;
   line-height: 1.25rem;
   font-family: ReithSans,Helvetica,Arial,sans-serif;
   font-weight: 400;
   font-style: normal;
-  color: #B80000;
+  color: #FDFDFD;
   cursor: pointer;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -250,22 +250,22 @@ exports[`Navigation should render correctly 1`] = `
   width: 100%;
 }
 
-.c19:hover::after {
+.c18:hover::after {
   content: '';
   position: absolute;
   left: 0;
   right: 0;
   bottom: 0;
-  border-bottom: 0.25rem solid #B80000;
+  border-bottom: 0.25rem solid #FFFFFF;
 }
 
-.c19:focus::after {
+.c18:focus::after {
   content: '';
   position: absolute;
   left: 0;
   right: 0;
   bottom: 0;
-  border-bottom: 0.25rem solid #B80000;
+  border-bottom: 0.25rem solid #FFFFFF;
   top: 0;
   border: 0.25rem solid #FFFFFF;
 }
@@ -277,15 +277,6 @@ exports[`Navigation should render correctly 1`] = `
   right: 0;
   bottom: 0;
   border-bottom: 0.25rem solid #FFFFFF;
-}
-
-.c18::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  border-bottom: 0.25rem solid #B80000;
 }
 
 .c0 {
@@ -300,13 +291,10 @@ exports[`Navigation should render correctly 1`] = `
 .c14 {
   max-width: 80rem;
   overflow: auto;
-  border-bottom: solid #B80000;
-  background-color: #FFFFFF;
+  background-color: #222222;
   margin: 0 auto;
   position: relative;
   left: 0;
-  border-left: solid #B80000;
-  border-right: solid #B80000;
   width: 100%;
   pointer-events: auto;
   padding: 0;
@@ -324,9 +312,10 @@ exports[`Navigation should render correctly 1`] = `
 
 .c3 {
   position: relative;
+  background-color: #B80000;
 }
 
-.c20 {
+.c19 {
   width: 100%;
   height: 0;
   position: -webkit-sticky;
@@ -493,21 +482,21 @@ exports[`Navigation should render correctly 1`] = `
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
-  .c19 {
+  .c18 {
     font-size: 1rem;
     line-height: 1.25rem;
   }
 }
 
 @media (min-width:37.5rem) {
-  .c19 {
+  .c18 {
     font-size: 1rem;
     line-height: 1.25rem;
   }
 }
 
 @media (max-width:24.9375rem) {
-  .c19 {
+  .c18 {
     padding: 0.5rem 0.5rem;
   }
 }
@@ -547,7 +536,6 @@ exports[`Navigation should render correctly 1`] = `
       </a>
       <div
         class="c3"
-        dir="ltr"
       >
         <button
           on="tap:menu.toggleVisibility,menu_hider.toggleVisibility"
@@ -662,7 +650,7 @@ exports[`Navigation should render correctly 1`] = `
           href="/igbo"
         >
           <span
-            class="c18"
+            class="c10"
             role="text"
           >
             <span
@@ -680,7 +668,7 @@ exports[`Navigation should render correctly 1`] = `
         role="listitem"
       >
         <a
-          class="c19"
+          class="c18"
           data-navigation="test_navigation"
           href="/igbo/egwuregwu"
         >
@@ -692,7 +680,7 @@ exports[`Navigation should render correctly 1`] = `
         role="listitem"
       >
         <a
-          class="c19"
+          class="c18"
           data-navigation="test_navigation"
           href="/igbo/media/video"
         >
@@ -704,7 +692,7 @@ exports[`Navigation should render correctly 1`] = `
         role="listitem"
       >
         <a
-          class="c19"
+          class="c18"
           data-navigation="test_navigation"
           href="/igbo/popular/read"
         >
@@ -713,7 +701,7 @@ exports[`Navigation should render correctly 1`] = `
       </li>
     </ul>
     <div
-      class="c20"
+      class="c19"
     >
       <div
         style="height: 4rem; width: 100%; overflow: hidden; position: absolute; bottom: 0px; display: none;"

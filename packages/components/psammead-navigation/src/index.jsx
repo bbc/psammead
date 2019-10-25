@@ -7,6 +7,7 @@ import {
   C_POSTBOX,
   C_GHOST,
   C_CLOUD_DARK,
+  C_EBON,
 } from '@bbc/psammead-styles/colours';
 import {
   GEL_SPACING_HLF,
@@ -137,19 +138,19 @@ const StyledListItem = styled.li`
   }
 `;
 
-const ListItemBorder = inMenu => css`
+const ListItemBorder = css`
   content: '';
   position: absolute;
   left: 0;
   right: 0;
   bottom: 0;
-  border-bottom: ${GEL_SPACING_HLF} solid ${inMenu ? C_POSTBOX : C_WHITE};
+  border-bottom: ${GEL_SPACING_HLF} solid ${C_WHITE};
 `;
 
 const StyledLink = styled.a`
   ${({ script }) => script && getPica(script)};
   ${({ service }) => getSansRegular(service)}
-  color: ${({ inMenu }) => (inMenu ? C_POSTBOX : C_GHOST)};
+  color: ${C_GHOST};
   cursor: pointer;
   text-decoration: none;
   display: inline-block;
@@ -163,17 +164,16 @@ const StyledLink = styled.a`
   }
 
   &:hover::after {
-    ${({ inMenu }) => ListItemBorder(inMenu)}
-    ${({ currentLink, inMenu }) =>
+    ${ListItemBorder}
+    ${({ currentLink }) =>
       currentLink &&
       css`
-        border-bottom: ${CURRENT_ITEM_HOVER_BORDER} solid
-          ${inMenu ? C_POSTBOX : C_WHITE};
+        border-bottom: ${CURRENT_ITEM_HOVER_BORDER} solid ${C_WHITE};
       `}
   }
 
   &:focus::after {
-    ${({ inMenu }) => ListItemBorder(inMenu)}
+    ${ListItemBorder}
     top: 0;
     border: 0.25rem solid ${C_WHITE};
   }
@@ -181,7 +181,7 @@ const StyledLink = styled.a`
 
 const StyledSpan = styled.span`
   &::after {
-    ${({ inMenu }) => ListItemBorder(inMenu)}
+    ${ListItemBorder}
   }
 `;
 
@@ -286,13 +286,13 @@ const useOutsideHandler = handler => {
 const MenuWrapper = styled.menu`
   max-width: ${GEL_GROUP_5_SCREEN_WIDTH_MIN};
   overflow: auto;
-  border-bottom: solid ${C_POSTBOX};
-  background-color: ${C_WHITE};
+  // border-bottom: solid ${C_POSTBOX};
+  background-color: ${C_EBON};
   margin: 0 auto;
   position: ${({ moveContent }) => (moveContent ? 'relative' : 'absolute')};
   ${({ dir }) => (dir === 'ltr' ? 'left' : 'right')}: 0;
-  border-left: solid ${C_POSTBOX};
-  border-right: solid ${C_POSTBOX};
+  // border-left: solid ${C_POSTBOX};
+  // border-right: solid ${C_POSTBOX};
   ${({ grid }) => grid && 'width: 100%;'}
   pointer-events: auto;
   ${({ moveContent }) => !moveContent && 'max-height: 75vh;'}
@@ -344,6 +344,7 @@ const StyledNavMenu = styled.div`
   @media (min-width: ${GEL_GROUP_4_SCREEN_WIDTH_MAX}) {
     display: none;
   }
+  background-color: ${({ menuVisible }) => (menuVisible ? C_EBON : C_POSTBOX)};
 `;
 
 const StyledMenuBottomContainer = styled.div`
@@ -387,12 +388,11 @@ const NavMenu = ({
   service,
   setMenuVisibile,
   menuVisible,
-  dir,
   buttonRef,
 }) => {
   const updateMenuVisiblity = () => setMenuVisibile(!menuVisible);
   return (
-    <StyledNavMenu dir={dir}>
+    <StyledNavMenu menuVisible={menuVisible}>
       <button
         style={{ border: 0, padding: 0, backgroundColor: 'inherit' }}
         onClick={updateMenuVisiblity}
@@ -402,11 +402,6 @@ const NavMenu = ({
       >
         <StyledLink script={script} service={service}>
           <MenuSpan>{menuVisible ? 'x' : '☰'}</MenuSpan>
-          {/* {menuVisible ? (
-            <UpChevronSvg dir={dir} />
-          ) : (
-            <DownChevronSvg dir={dir} />
-          )} */}
         </StyledLink>
       </button>
     </StyledNavMenu>
@@ -476,7 +471,6 @@ NavMenu.propTypes = {
   service: string.isRequired,
   setMenuVisibile: func.isRequired,
   menuVisible: bool.isRequired,
-  dir: string.isRequired,
   buttonRef: shape({ current: node }).isRequired,
 };
 
