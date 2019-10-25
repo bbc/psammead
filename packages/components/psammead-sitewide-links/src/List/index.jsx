@@ -90,18 +90,21 @@ const StyledListItem = styled.li`
   break-inside: avoid-column;
 `;
 
+const listItem = (key, text, href) => (
+  <StyledListItem key={key} role="listitem">
+    <Link text={text} href={href} />
+  </StyledListItem>
+);
+
 const List = ({ links, trustProjectLink }) => (
   <StyledList role="list" trustProjectLink={trustProjectLink} links={links}>
-    {trustProjectLink && (
-      <StyledListItem key={trustProjectLink.text} role="listitem">
-        <Link text={trustProjectLink.text} href={trustProjectLink.href} />
-      </StyledListItem>
-    )}
-    {links.map(link => (
-      <StyledListItem key={link.text} role="listitem">
-        <Link text={link.text} href={link.href} />
-      </StyledListItem>
-    ))}
+    {trustProjectLink &&
+      listItem(
+        trustProjectLink.text,
+        trustProjectLink.text,
+        trustProjectLink.href,
+      )}
+    {links.map(link => listItem(link.text, link.text, link.href))}
   </StyledList>
 );
 
