@@ -47,7 +47,7 @@ export const CanonicalMediaPlayer = ({
           mediaInfo={mediaInfo}
         />
       ) : (
-        <Canonical src={src} title={title} />
+        <Canonical src={src} title={title} placeholderSrc={placeholderSrc} />
       )}
     </StyledContainer>
   );
