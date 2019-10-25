@@ -15,6 +15,7 @@ storiesOf('Components|Media Player', module).add('Default', () => (
     placeholderSrc="https://ichef.bbci.co.uk/news/640/cpsdevpb/4eb7/test/ba7482d0-cca8-11e8-b0bf-f33155223fc4.jpg"
     service="news"
     mediaInfo={{ title: 'Dog chases cat.', ...withDuration }}
+    title="Video player"
   />
 ));
 
