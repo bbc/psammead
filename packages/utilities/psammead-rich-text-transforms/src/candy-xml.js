@@ -65,7 +65,7 @@ const convertToBlocks = (node, attributes = []) =>
 const xmlNodeToBlock = (node, attributes) => {
   if (!is(Object, node)) return undefined;
 
-  if (path(node.text)) {
+  if (path(['text'], node)) {
     return fragment(node.text, attributes);
   }
 
