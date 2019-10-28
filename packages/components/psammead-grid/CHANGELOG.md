@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 1.0.0-alpha.9 | [PR#2458](https://github.com/bbc/psammead/pull/2458) Make all grid columns required |
 | 1.0.0-alpha.8 | [PR#2466](https://github.com/bbc/psammead/pull/2466) create rtl substories |
 | 1.0.0-alpha.7 | [PR#2488](https://github.com/bbc/psammead/pull/2488) Talos - Bump Dependencies - @bbc/gel-foundations |
 | 1.0.0-alpha.6 | [PR#2477](https://github.com/bbc/psammead/pull/2477) Talos - Bump Dependencies - @bbc/psammead-styles |
