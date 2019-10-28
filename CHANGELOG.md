@@ -3,6 +3,8 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 1.8.41 | [PR#2494](https://github.com/bbc/psammead/pull/2494) Remove IE11 storybook bug-fix code |
+| 1.8.40 | [PR#2466](https://github.com/bbc/psammead/pull/2466) Create RTL substories |
 | 1.8.39 | [PR#2498](https://github.com/bbc/psammead/pull/2498) Install `browserslist@4.7.2` explicitly in devDeps + ran `npm update` |
 | 1.8.38 | [PR#2490](https://github.com/bbc/psammead/pull/2490) Talos - Bump Dependencies - @bbc/psammead-brand, @bbc/psammead-caption, @bbc/psammead-copyright, @bbc/psammead-media-indicator, @bbc/psammead-paragraph, @bbc/psammead-storybook-helpers, @bbc/psammead-timestamp |
 | 1.8.37 | [PR#2487](https://github.com/bbc/psammead/pull/2487) Talos - Bump Dependencies - @bbc/psammead-image-placeholder, @bbc/psammead-media-indicator |
