@@ -69,7 +69,7 @@ const StyledList = styled.ul`
         getRowCount(links, 4, trustProjectLink)},
       auto
     );
-    column-count: 3;
+    column-count: 4;
   }
   @media (min-width: ${GEL_GROUP_5_SCREEN_WIDTH_MIN}) {
     grid-column-gap: ${GEL_SPACING_DBL};
