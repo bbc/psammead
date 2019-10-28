@@ -29,6 +29,7 @@ exports[`Media Player: AMP Entry renders a landscape container with an amp-ifram
           title="Media player"
         >
           <amp-img
+            alt="Image alt"
             attribution=""
             layout="fill"
             placeholder="true"
@@ -70,6 +71,7 @@ exports[`Media Player: AMP Entry renders a portrait container with amp-iframe an
           title="Media player"
         >
           <amp-img
+            alt="Image alt"
             attribution=""
             layout="fill"
             placeholder="true"
@@ -111,6 +113,7 @@ exports[`Media Player: AMP Entry renders the audio skin 1`] = `
           title="Audio player"
         >
           <amp-img
+            alt="Image alt"
             attribution=""
             layout="fill"
             placeholder="true"
