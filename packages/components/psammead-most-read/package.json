@@ -1,0 +1,30 @@
+{
+  "name": "@bbc/psammead-most-read",
+  "version": "0.1.0-alpha.1",
+  "publishConfig": {
+    "tag": "alpha"
+  },
+  "description": "The `MostRead` component details the most read articles given a certain amount of time.",
+  "main": "dist/index.js",
+  "module": "esm/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bbc/psammead/tree/latest/packages/components/psammead-most-read"
+  },
+  "author": {
+    "name": "Psammead Maintainers",
+    "email": "PsammeadMaintainers@bbc.co.uk"
+  },
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/bbc/psammead/issues"
+  },
+  "keywords": [
+    "bbc",
+    "most",
+    "read"
+  ],
+  "dependencies": {
+    "@bbc/psammead-grid": "^1.0.0-alpha.7"
+  }
+}
