@@ -1,6 +1,6 @@
 {
   "name": "@bbc/psammead",
-  "version": "1.8.40",
+  "version": "1.8.41",
   "description": "Core Components Library Developed & Maintained By The Articles and Reach & Languages Team",
   "main": "index.js",
   "private": true,
@@ -22,7 +22,6 @@
     "publish": "npm run build && node scripts/publish",
     "regeneratePackageLocks": "node scripts/regeneratePackageLocks",
     "storybook": "NODE_ENV=development start-storybook -p 8180 -c .storybook",
-    "storybook:ie11": "export FIX_STORYBOOK_IE11=true && npm run storybook",
     "test": "npm run test:lint && npm run test:unit && lerna run test",
     "test:lint": "eslint --ext .js,jsx,json ./packages ./scripts && stylelint 'packages/**/*.js' 'packages/**/*.jsx' 'scripts/**/*.js'",
     "test:unit": "npm run build && jest --verbose --coverage"
