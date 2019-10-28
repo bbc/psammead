@@ -1,5 +1,5 @@
 import React from 'react';
-import { string, number } from 'prop-types';
+import { string } from 'prop-types';
 import Helmet from 'react-helmet';
 import { AmpImg } from '@bbc/psammead-image';
 
@@ -19,8 +19,6 @@ const AmpMediaPlayer = ({
   placeholderSrcset,
   title,
   alt,
-  height,
-  width,
 }) => {
   return (
     <>
@@ -39,8 +37,6 @@ const AmpMediaPlayer = ({
           srcset={placeholderSrcset}
           placeholder
           alt={alt}
-          height={height}
-          width={width}
         />
       </amp-iframe>
     </>
@@ -53,14 +49,10 @@ AmpMediaPlayer.propTypes = {
   placeholderSrcset: string,
   title: string.isRequired,
   alt: string,
-  height: number,
-  width: number,
 };
 AmpMediaPlayer.defaultProps = {
   placeholderSrcset: null,
-  alt: null,
-  width: null,
-  height: null,
+  alt: 'Image alt',
 };
 
 export default AmpMediaPlayer;
