@@ -3,7 +3,8 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
-| 1.8.39 | [PR#2317](https://github.com/bbc/psammead/pull/2317) Bump @bbc/psammead-storybook-helpers |
+| 1.8.40 | [PR#2466](https://github.com/bbc/psammead/pull/2466) Create RTL substories |
+| 1.8.39 | [PR#2498](https://github.com/bbc/psammead/pull/2498) Install `browserslist@4.7.2` explicitly in devDeps + ran `npm update` |
 | 1.8.38 | [PR#2490](https://github.com/bbc/psammead/pull/2490) Talos - Bump Dependencies - @bbc/psammead-brand, @bbc/psammead-caption, @bbc/psammead-copyright, @bbc/psammead-media-indicator, @bbc/psammead-paragraph, @bbc/psammead-storybook-helpers, @bbc/psammead-timestamp |
 | 1.8.37 | [PR#2487](https://github.com/bbc/psammead/pull/2487) Talos - Bump Dependencies - @bbc/psammead-image-placeholder, @bbc/psammead-media-indicator |
 | 1.8.36 | [PR#2488](https://github.com/bbc/psammead/pull/2488) Talos - Bump Dependencies - @bbc/gel-foundations |
