@@ -1,6 +1,6 @@
 {
   "name": "@bbc/psammead",
-  "version": "1.8.40",
+  "version": "1.8.41",
   "description": "Core Components Library Developed & Maintained By The Articles and Reach & Languages Team",
   "main": "index.js",
   "private": true,
@@ -51,7 +51,7 @@
     "@babel/preset-react": "^7.6.3",
     "@bbc/gel-foundations": "^3.4.1",
     "@bbc/psammead-assets": "^2.6.0",
-    "@bbc/psammead-brand": "^5.0.10",
+    "@bbc/psammead-brand": "^5.0.11",
     "@bbc/psammead-calendars": "^2.0.1",
     "@bbc/psammead-caption": "^2.2.17",
     "@bbc/psammead-copyright": "^1.2.15",
