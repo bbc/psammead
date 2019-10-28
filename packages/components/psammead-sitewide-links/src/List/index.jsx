@@ -21,13 +21,11 @@ import Link from '../Link';
 // trustProjectLink in the grid being separate, on its own row.
 const getRowCount = (links, columns, trustProjectLink) =>
   trustProjectLink
-    ? Math.ceil((links.length - 1) / columns) + 2
-    : Math.ceil((links.length - 1) / columns) + 1;
+    ? Math.ceil(links.length / columns) + 1
+    : Math.ceil(links.length / columns);
 
 const StyledList = styled.ul`
-  border: solid ${C_SHADOW};
-  border-width: ${({ trustProjectLink }) =>
-    trustProjectLink ? `0.0625rem 0` : `0 0 0.0625rem 0`};
+  border-bottom: 0.0625rem solid ${C_SHADOW};
   list-style-type: none;
   margin: 0;
   padding: ${({ trustProjectLink }) =>
@@ -48,7 +46,7 @@ const StyledList = styled.ul`
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(
       ${({ links, trustProjectLink }) =>
-        getRowCount(links, 3, trustProjectLink)},
+        getRowCount(links, 2, trustProjectLink)},
       auto
     );
     column-count: 2;
@@ -58,30 +56,30 @@ const StyledList = styled.ul`
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(
       ${({ links, trustProjectLink }) =>
-        getRowCount(links, 5, trustProjectLink)},
+        getRowCount(links, 3, trustProjectLink)},
       auto
     );
     column-count: 3;
   }
   @media (min-width: ${GEL_GROUP_4_SCREEN_WIDTH_MIN}) and (max-width: ${GEL_GROUP_4_SCREEN_WIDTH_MAX}) {
     grid-column-gap: ${GEL_SPACING_DBL};
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(
       ${({ links, trustProjectLink }) =>
-        getRowCount(links, 5, trustProjectLink)},
+        getRowCount(links, 4, trustProjectLink)},
       auto
     );
     column-count: 3;
   }
   @media (min-width: ${GEL_GROUP_5_SCREEN_WIDTH_MIN}) {
     grid-column-gap: ${GEL_SPACING_DBL};
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(
       ${({ links, trustProjectLink }) =>
         getRowCount(links, 5, trustProjectLink)},
       auto
     );
-    column-count: 4;
+    column-count: 5;
   }
   ${({ trustProjectLink }) =>
     trustProjectLink &&
