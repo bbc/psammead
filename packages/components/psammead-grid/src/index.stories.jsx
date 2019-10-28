@@ -1,7 +1,10 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { withKnobs } from '@storybook/addon-knobs';
-import { withServicesKnob } from '@bbc/psammead-storybook-helpers';
+import {
+  withServicesKnob,
+  buildRTLSubstories,
+} from '@bbc/psammead-storybook-helpers';
 import Image from '@bbc/psammead-image';
 import MediaIndicator from '@bbc/psammead-media-indicator';
 import StoryPromo, { Headline, Summary, Link } from '@bbc/psammead-story-promo';
@@ -11,7 +14,9 @@ import Grid from '.';
 import { ExampleImage, ExampleParagraph } from './testHelpers';
 import notes from '../README.md';
 
-storiesOf('Components|Grid', module)
+const STORY_KIND = 'Components|Grid';
+
+storiesOf(STORY_KIND, module)
   .addDecorator(withKnobs)
   .addDecorator(withServicesKnob())
   .add(
@@ -1263,7 +1268,7 @@ storiesOf('Components|Grid', module)
   )
   .add(
     'Example with Top story and regular promos',
-    ({ service, script, dir }) => {
+    ({ service, script, dir, text }) => {
       // eslint-disable-next-line react/prop-types
       const generateStory = ({ topStory, alsoItems = null, mediaType }) => {
         const MediaIndicatorComponent = type => (
@@ -1278,13 +1283,12 @@ storiesOf('Components|Grid', module)
         const Info = (
           <>
             <Headline script={script} topStory={topStory} service={service}>
-              <Link href="https://www.bbc.co.uk/news">
-                Could a computer ever create better art than a human?
-              </Link>
+              <Link href="https://www.bbc.co.uk/news">{text}</Link>
             </Headline>
             <Summary script={script} topStory={topStory} service={service}>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry.
+              {service === 'news'
+                ? 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.'
+                : text}
             </Summary>
             {topStory && alsoItems && (
               <IndexAlsosContainer
@@ -1343,7 +1347,10 @@ storiesOf('Components|Grid', module)
           >
             {generateStory({
               topStory: true,
-              alsoItems: relatedItems,
+              alsoItems: relatedItems.map(item => ({
+                ...item,
+                headlines: { headline: text },
+              })),
             })}
           </Grid>
           <Grid
@@ -1455,3 +1462,7 @@ storiesOf('Components|Grid', module)
     },
     { notes, knobs: { escapeHTML: false } },
   );
+
+buildRTLSubstories(STORY_KIND, {
+  include: ['Example with Top story and regular promos'],
+});
