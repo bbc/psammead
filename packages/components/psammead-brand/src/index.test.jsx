@@ -2,6 +2,8 @@ import React from 'react';
 import { shouldMatchSnapshot } from '@bbc/psammead-test-helpers';
 import { render } from '@testing-library/react';
 import { C_POSTBOX, C_WHITE } from '@bbc/psammead-styles/colours';
+import ScriptLink from '@bbc/psammead-script-link';
+import { latin } from '@bbc/gel-foundations/scripts';
 import Brand from '.';
 
 const svg = {
@@ -131,6 +133,40 @@ describe('Brand', () => {
       expect(container.querySelector('div').getAttribute('data-brand')).toEqual(
         'header',
       );
+    });
+    it('should render script link', () => {
+      const scriptLinkComponent = (
+        <ScriptLink
+          script={latin}
+          service="serbian"
+          href="https://www.bbc.com/serbian/lat"
+        >
+          Lat
+        </ScriptLink>
+      );
+      const { container } = render(
+        <Brand
+          product="Default Brand Name"
+          svgHeight={24}
+          maxWidth={280}
+          minWidth={180}
+          svg={svg}
+          url="https://www.bbc.co.uk/news"
+          backgroundColour={C_POSTBOX}
+          logoColour={C_WHITE}
+          data-brand="header"
+          scriptLink={scriptLinkComponent}
+        />,
+      );
+
+      const links = container.querySelectorAll('a');
+      expect(links).toHaveLength(2);
+
+      const scriptLink = links[1];
+      expect(scriptLink.getAttribute('href')).toEqual(
+        'https://www.bbc.com/serbian/lat',
+      );
+      expect(scriptLink.textContent).toEqual('Lat');
     });
   });
 });
