@@ -1,6 +1,6 @@
 {
   "name": "@bbc/psammead-most-read",
-  "version": "1.0.0-alpha.0",
+  "version": "0.1.0-alpha.1",
   "publishConfig": {
     "tag": "alpha"
   },
@@ -25,6 +25,10 @@
     "read"
   ],
   "dependencies": {
-    "@bbc/psammead-grid": "^1.0.0-alpha.7"
+    "@bbc/gel-foundations": "^3.4.1",
+    "@bbc/psammead-styles": "^4.1.0"
+  },
+  "peerDependencies": {
+    "styled-components": "^4.3.2"
   }
 }
