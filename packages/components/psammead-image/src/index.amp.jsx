@@ -10,18 +10,20 @@ const AmpImg = props => {
 AmpImg.propTypes = {
   alt: string.isRequired,
   attribution: string,
-  height: number.isRequired,
+  height: number,
   layout: string.isRequired,
   sizes: string,
   src: string.isRequired,
   srcset: string,
-  width: number.isRequired,
+  width: number,
 };
 
 AmpImg.defaultProps = {
   attribution: '',
   sizes: null,
   srcset: null,
+  height: null,
+  width: null,
 };
 
 export default AmpImg;
