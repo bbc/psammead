@@ -7,7 +7,7 @@ import { scriptPropType } from '@bbc/gel-foundations/prop-types';
 import { GEL_SPACING } from '@bbc/gel-foundations/spacings';
 import {
   getSerifMedium,
-  getSerifRegular,
+  getSerifLight,
 } from '@bbc/psammead-styles/font-styles';
 
 const MostReadWrapper = styled.div`
@@ -16,7 +16,7 @@ const MostReadWrapper = styled.div`
 
 export const CountWrapper = styled.p`
   ${({ script }) => script && getCanon(script)};
-  ${({ service }) => getSerifRegular(service)}
+  ${({ service }) => getSerifLight(service)}
   color: ${C_POSTBOX};
   margin: 0; /* Reset */
   width: 50px;

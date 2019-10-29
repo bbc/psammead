@@ -23,5 +23,12 @@
     "bbc",
     "most",
     "read"
-  ]
+  ],
+  "dependencies": {
+    "@bbc/gel-foundations": "^3.4.1",
+    "@bbc/psammead-styles": "^4.1.0"
+  },
+  "peerDependencies": {
+    "styled-components": "^4.3.2"
+  }
 }

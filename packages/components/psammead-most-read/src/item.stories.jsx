@@ -28,7 +28,7 @@ const stories = storiesOf('Components|MostRead/MostRead', module)
   .addDecorator(withServicesKnob());
 
 items.forEach(({ item, count, dir }) => {
-  stories.add(`Most read item ${dir}`, ({ script, service }) => (
+  stories.add(`Default ${dir}`, ({ script, service }) => (
     <MostRead
       dir={dir}
       item={item}
