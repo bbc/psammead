@@ -41,7 +41,7 @@ const item = {
 
 ### When to use this component
 
-<!-- ### When not to use this component -->
+This component is to be used on `article` pages.
 
 ### Accessibility notes
 
