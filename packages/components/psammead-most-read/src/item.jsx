@@ -1,44 +1,62 @@
 import React from 'react';
-import { node, oneOf, shape, string } from 'prop-types';
+import { oneOf, shape, string } from 'prop-types';
 import styled from 'styled-components';
-import { getLongPrimer, getPica } from '@bbc/gel-foundations/typography';
-import { getSerifMedium } from '@bbc/psammead-styles/font-styles';
+import { getCanon, getPica } from '@bbc/gel-foundations/typography';
 import { C_POSTBOX, C_EBON } from '@bbc/psammead-styles/colours';
 import { scriptPropType } from '@bbc/gel-foundations/prop-types';
 import { GEL_SPACING } from '@bbc/gel-foundations/spacings';
+import {
+  getSerifMedium,
+  getSerifRegular,
+} from '@bbc/psammead-styles/font-styles';
 
 const MostReadWrapper = styled.div`
-  position: relative;
+  display: flex;
 `;
-export const ItemWrapper = styled.p`
+
+export const CountWrapper = styled.p`
+  ${({ script }) => script && getCanon(script)};
+  ${({ service }) => getSerifRegular(service)}
+  color: ${C_POSTBOX};
+  margin: 0; /* Reset */
+  width: 50px;
+  padding-bottom: ${GEL_SPACING};
+  display: inline-block;
+`;
+
+export const ItemWrapper = styled.a`
   ${({ script }) => script && getPica(script)};
   ${({ service }) => getSerifMedium(service)}
   color: ${C_EBON};
   margin: 0; /* Reset */
+  text-decoration: none;
   padding-bottom: ${GEL_SPACING};
-  `;
+  
+  &:hover,
+  &:focus {
+    text-decoration: underline;
+    cursor: pointer;
+  }
+`;
 
-export const CountWrapper = styled.p`
-  ${({ script }) => script && getLongPrimer(script)};
-  ${({ service }) => getSerifMedium(service)}
-  color: ${C_POSTBOX};
-  margin: 0; /* Reset */
-  padding-bottom: ${GEL_SPACING};
-  `;
-
-const MostRead = ({ count, item, dir, ...props }) => (
-  <MostReadWrapper>
+const MostRead = ({ count, item: { header, href }, ...props }) => (
+  <MostReadWrapper {...props}>
     <CountWrapper {...props}>{count}</CountWrapper>
-    <ItemWrapper {...props}>{item}</ItemWrapper>
+    <ItemWrapper href={href} {...props}>
+      {header}
+    </ItemWrapper>
   </MostReadWrapper>
 );
 
 MostRead.propTypes = {
   dir: string,
-  item: node.isRequired,
-  count: node.isRequired,
-  script: shape(scriptPropType).isRequired,
+  count: string.isRequired,
   service: string.isRequired,
+  script: shape(scriptPropType).isRequired,
+  item: shape({
+    header: string.isRequired,
+    href: string.isRequired,
+  }).isRequired,
 };
 
 MostRead.defaultProps = {
