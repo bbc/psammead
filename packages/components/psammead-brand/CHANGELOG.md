@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 | ------- | ----------- |
+| 5.1.0-alpha.1 | [PR#2474](https://github.com/bbc/psammead/pull/2474) Add scriptLink prop to render `ScriptLink` used for linking to service variants |
 | 5.0.11 | [PR#2466](https://github.com/bbc/psammead/pull/2466) create rtl substories |
 | 5.0.10 | [PR#2488](https://github.com/bbc/psammead/pull/2488) Talos - Bump Dependencies - @bbc/gel-foundations |
 | 5.0.9 | [PR#2477](https://github.com/bbc/psammead/pull/2477) Talos - Bump Dependencies - @bbc/psammead-styles |
