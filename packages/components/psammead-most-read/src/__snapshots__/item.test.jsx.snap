@@ -1,0 +1,103 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Most read should render ltr correctly 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c1 {
+  color: #B80000;
+  margin: 0;
+  width: 50px;
+  padding-bottom: 0.5rem;
+  display: inline-block;
+}
+
+.c2 {
+  color: #222222;
+  margin: 0;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  padding-bottom: 0.5rem;
+}
+
+.c2:hover,
+.c2:focus {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+<div
+  class="c0"
+  dir="ltr"
+>
+  <p
+    class="c1"
+    dir="ltr"
+  >
+    1
+  </p>
+  <a
+    class="c2"
+    dir="ltr"
+    href="https://www.bbc.com/vietnamese/institutional-49283563"
+  >
+    John Lewis staff bonus cut again as profits fall
+  </a>
+</div>
+`;
+
+exports[`Most read should render rtl correctly 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c1 {
+  color: #B80000;
+  margin: 0;
+  width: 50px;
+  padding-bottom: 0.5rem;
+  display: inline-block;
+}
+
+.c2 {
+  color: #222222;
+  margin: 0;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  padding-bottom: 0.5rem;
+}
+
+.c2:hover,
+.c2:focus {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+<div
+  class="c0"
+  dir="rtl"
+>
+  <p
+    class="c1"
+    dir="rtl"
+  >
+    1
+  </p>
+  <a
+    class="c2"
+    dir="rtl"
+    href="https://www.bbc.com/vietnamese/institutional-49283563"
+  >
+    ایران از لغو 'رزمایش قطع اینترنت' خبر داد
+  </a>
+</div>
+`;
