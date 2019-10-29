@@ -28,7 +28,7 @@ const StyledPlayButton = styled(PlayButton)`
   /* stylelint-enable */
 `;
 
-const Placeholder = ({ onClick, service, src, mediaInfo }) => {
+const Placeholder = ({ onClick, service, src, srcset, mediaInfo }) => {
   const { title, datetime, duration, durationSpoken, type } = mediaInfo;
   const guidance =
     'May contain strong language, sexual or violent content that may offend.';
@@ -45,7 +45,7 @@ const Placeholder = ({ onClick, service, src, mediaInfo }) => {
           type={type}
         />
       </Guidance>
-      <Image alt="Image Alt" src={src} />
+      <Image alt="Image Alt" src={src} srcset={srcset} />
     </StyledPlaceholder>
   );
 };
@@ -54,6 +54,7 @@ Placeholder.propTypes = {
   onClick: func.isRequired,
   service: string.isRequired,
   src: string.isRequired,
+  srcset: string,
   mediaInfo: shape({
     title: string.isRequired,
     datetime: string,
@@ -63,6 +64,7 @@ Placeholder.propTypes = {
   }),
 };
 Placeholder.defaultProps = {
+  srcset: null,
   mediaInfo: shape({
     datetime: null,
     duration: null,
