@@ -35,6 +35,8 @@ export const CanonicalMediaPlayer = ({
   const StyledContainer =
     skin === 'audio' ? StyledAudioContainer : StyledVideoContainer;
 
+  const guidance = 'Contains strong language and adult humour.';
+
   return (
     <StyledContainer portrait={portrait}>
       {placeholderActive ? (
@@ -42,7 +44,10 @@ export const CanonicalMediaPlayer = ({
           onClick={handlePlaceholderClick}
           src={placeholderSrc}
           service={service}
-          mediaInfo={mediaInfo}
+          mediaInfo={{
+            ...mediaInfo,
+            guidance,
+          }}
         />
       ) : (
         <Canonical src={src} title={title} />

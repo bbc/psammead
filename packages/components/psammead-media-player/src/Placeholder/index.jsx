@@ -4,6 +4,7 @@ import { string, func, shape, oneOf } from 'prop-types';
 import Image from '@bbc/psammead-image';
 import PlayButton from '@bbc/psammead-play-button';
 import { C_POSTBOX } from '@bbc/psammead-styles/colours';
+import Guidance from '../Guidance';
 
 const StyledPlaceholder = styled.div`
   cursor: pointer;
@@ -29,17 +30,21 @@ const StyledPlayButton = styled(PlayButton)`
 
 const Placeholder = ({ onClick, service, src, mediaInfo }) => {
   const { title, datetime, duration, durationSpoken, type } = mediaInfo;
+  const guidance =
+    'May contain strong language, sexual or violent content that may offend.';
   return (
     <StyledPlaceholder onClick={onClick}>
-      <StyledPlayButton
-        title={title}
-        service={service}
-        onClick={() => {}}
-        datetime={datetime}
-        duration={duration}
-        durationSpoken={durationSpoken}
-        type={type}
-      />
+      <Guidance service={service} type={type} message={guidance}>
+        <StyledPlayButton
+          title={title}
+          service={service}
+          onClick={() => {}}
+          datetime={datetime}
+          duration={duration}
+          durationSpoken={durationSpoken}
+          type={type}
+        />
+      </Guidance>
       <Image alt="Image Alt" src={src} />
     </StyledPlaceholder>
   );
