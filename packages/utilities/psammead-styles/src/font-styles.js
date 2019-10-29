@@ -76,5 +76,5 @@ export const getSerifLight = service => {
     return null;
   }
   const { serifLight } = fonts[service];
-  return serifLight || getSansRegular(service);
+  return serifLight || getSerifRegular(service);
 };
