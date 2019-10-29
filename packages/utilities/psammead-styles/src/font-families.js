@@ -31,10 +31,6 @@ const latinReithFontStyles = {
    ${reithSans}
    ${getFontStyleAndWeight('normal', 300)}
   `,
-  sansLightItalic: `
-   ${reithSans}
-   ${getFontStyleAndWeight('italic', 300)}
-  `,
   serifRegular: `
    ${reithSerif}
    ${getFontStyleAndWeight('normal', 400)}
@@ -54,10 +50,6 @@ const latinReithFontStyles = {
   serifLight: `
    ${reithSerif}
    ${getFontStyleAndWeight('normal', 300)}
-  `,
-  serifLightItalic: `
-   ${reithSerif}
-   ${getFontStyleAndWeight('italic', 300)}
   `,
 };
 
