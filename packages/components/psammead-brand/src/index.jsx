@@ -1,10 +1,12 @@
 import React from 'react';
 import styled from 'styled-components';
-import { string, number, node, shape, bool } from 'prop-types';
+import { string, number, node, shape, bool, oneOf } from 'prop-types';
 import VisuallyHiddenText from '@bbc/psammead-visually-hidden-text';
 import {
   GEL_GROUP_2_SCREEN_WIDTH_MIN,
   GEL_GROUP_5_SCREEN_WIDTH_MIN,
+  GEL_GROUP_0_SCREEN_WIDTH_MAX,
+  GEL_GROUP_1_SCREEN_WIDTH_MAX,
 } from '@bbc/gel-foundations/breakpoints';
 import {
   GEL_SPACING_HLF,
@@ -24,6 +26,7 @@ const conditionallyRenderHeight = (svgHeight, padding) =>
 const TRANSPARENT_BORDER = `0.0625rem solid transparent`;
 
 const SvgWrapper = styled.div`
+  position: relative;
   max-width: ${GEL_GROUP_5_SCREEN_WIDTH_MIN};
   margin: 0 auto;
 `;
@@ -40,6 +43,11 @@ const Banner = styled.div`
       conditionallyRenderHeight(svgHeight, PADDING_AROUND_SVG_ABOVE_400PX)}
     padding: 0 ${GEL_SPACING_DBL};
   }
+
+  @media (max-width: ${GEL_GROUP_0_SCREEN_WIDTH_MAX}) {
+    min-height: ${({ svgHeight }) => svgHeight / 16 + 5}rem;
+  }
+
   border-top: ${({ borderTop }) => borderTop && TRANSPARENT_BORDER};
   border-bottom: ${({ borderBottom }) => borderBottom && TRANSPARENT_BORDER};
 `;
@@ -83,7 +91,7 @@ const BrandSvg = styled.svg`
     border-bottom: ${GEL_SPACING_HLF} solid ${props => props.logoColour};
   }
   /* stylelint-enable */
-`;
+  `;
 
 const LocalisedBrandName = ({ product, serviceLocalisedName }) =>
   serviceLocalisedName ? (
@@ -164,6 +172,30 @@ StyledBrand.defaultProps = {
   serviceLocalisedName: null,
 };
 
+const ScriptLinkWrapper = styled.div`
+  display: inline-block;
+  @media (max-width: ${GEL_GROUP_0_SCREEN_WIDTH_MAX}) {
+    padding-top: 0;
+    position: relative;
+    right: 0;
+    display: block;
+  }
+
+  @media (max-width: ${GEL_GROUP_1_SCREEN_WIDTH_MAX}) {
+    top: calc(50% - 1.25rem);
+  }
+  position: absolute;
+  ${({ dir }) => (dir === 'ltr' ? 'right: 0' : 'left: 0')};
+  top: calc(50% - 1.5rem);
+`;
+
+const renderScriptLink = (scriptLink, dir, svgHeight) =>
+  scriptLink && (
+    <ScriptLinkWrapper dir={dir} svgHeight={svgHeight}>
+      {scriptLink}
+    </ScriptLinkWrapper>
+  );
+
 const Brand = props => {
   const {
     svgHeight,
@@ -174,8 +206,12 @@ const Brand = props => {
     borderBottom,
     backgroundColour,
     logoColour,
+    scriptLink,
+    dir,
     ...rest
   } = props;
+
+  const scriptLinkComponent = renderScriptLink(scriptLink, dir, svgHeight);
 
   return (
     <Banner
@@ -191,10 +227,12 @@ const Brand = props => {
           <StyledLink href={url} maxWidth={maxWidth} minWidth={minWidth}>
             <StyledBrand {...props} />
           </StyledLink>
+          {scriptLinkComponent}
         </SvgWrapper>
       ) : (
         <SvgWrapper>
           <StyledBrand {...props} />
+          {scriptLinkComponent}
         </SvgWrapper>
       )}
     </Banner>
@@ -206,6 +244,8 @@ Brand.defaultProps = {
   serviceLocalisedName: null,
   borderTop: false,
   borderBottom: false,
+  scriptLink: null,
+  dir: 'ltr',
 };
 
 Brand.propTypes = {
@@ -214,6 +254,8 @@ Brand.propTypes = {
   serviceLocalisedName: string,
   borderTop: bool,
   borderBottom: bool,
+  scriptLink: node,
+  dir: oneOf(['rtl', 'ltr']),
 };
 
 export default Brand;
