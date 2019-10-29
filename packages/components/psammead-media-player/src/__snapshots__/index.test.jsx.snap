@@ -261,6 +261,232 @@ exports[`Media Player: Canonical Entry renders a landscape container with a plac
 </div>
 `;
 
+exports[`Media Player: Canonical Entry renders a placeholder image with guidance 1`] = `
+.c15 {
+  display: block;
+  width: 100%;
+  visibility: visible;
+}
+
+.c13 {
+  vertical-align: middle;
+  margin: 0 0.25rem;
+  color: #222222;
+  fill: currentColor;
+  width: 0.75rem;
+  height: 0.75rem;
+}
+
+.c11 {
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  -webkit-clip: rect(1px,1px,1px,1px);
+  clip: rect(1px,1px,1px,1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  width: 1px;
+  margin: 0;
+}
+
+.c9 {
+  background-color: #222222;
+  border: none;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: block;
+  font-family: ReithSans,Helvetica,Arial,sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  height: 5rem;
+  padding: 0;
+  -webkit-transition: background-color 300ms;
+  transition: background-color 300ms;
+  width: 5rem;
+}
+
+.c9:hover,
+.c9:focus {
+  background-color: #B80000;
+  -webkit-transition: background-color 300ms;
+  transition: background-color 300ms;
+}
+
+.c12 > svg {
+  color: #FFFFFF;
+  fill: currentColor;
+  height: 1.5rem;
+  margin-top: 0.5rem;
+  width: 1.5rem;
+}
+
+.c14 {
+  display: block;
+  margin-top: 0.5rem;
+}
+
+.c7 {
+  color: #222222;
+  fill: currentColor;
+}
+
+.c3 {
+  font-family: ReithSans,Helvetica,Arial,sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+
+.c4 {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: rgba(34,34,34,0.75);
+  color: #FFFFFF;
+  padding: 0.5rem;
+  border: none;
+}
+
+.c5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  padding: 1rem 0.5rem;
+}
+
+.c6 > svg {
+  color: #FFFFFF;
+  fill: currentColor;
+}
+
+.c2 {
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.c10 {
+  position: absolute;
+  bottom: 0;
+}
+
+.c1:hover .c10,
+.c1:focus .c10 {
+  background-color: #B80000;
+}
+
+.c0 {
+  padding-top: 56.25%;
+  position: relative;
+  overflow: hidden;
+}
+
+@media (min-width:25rem) {
+  .c8 {
+    padding: 0.5rem 0 0 0;
+  }
+}
+
+<div
+  class="c0"
+>
+  <div
+    class="c1 c2"
+  >
+    <div
+      class="c3"
+    >
+      <div
+        class="c4"
+      >
+        <div
+          class="c5"
+        >
+          <div
+            aria-hidden="true"
+            class="c6"
+          >
+            <svg
+              class="c7"
+              focusable="false"
+              height="35px"
+              viewBox="0 0 44 44"
+              width="35px"
+            >
+              <g>
+                <circle
+                  cx="22"
+                  cy="22"
+                  fill="inherit"
+                  r="11"
+                />
+                <path
+                  d="M27.1,27.5h-1.8L25,26.3c-0.8,1.1-2,1.4-3.1,1.4c-3.3,0-5.5-2.5-5.5-5.7c0-3.2,2.2-5.7,5.5-5.7c2.3,0,4.7,1.2,5,4h-2.9c-0.1-0.9-1-1.5-2.2-1.5c-1.8,0-2.6,1.6-2.6,3.3c0,1.6,0.7,3.3,2.6,3.3c1.4,0,2.4-0.7,2.5-1.7h-2v-2.1h4.6V27.5z"
+                  fill="#222222"
+                />
+              </g>
+            </svg>
+          </div>
+          <span
+            class="c8"
+          >
+            Guidance: 
+            May contain strong language, sexual or violent content that may offend.
+          </span>
+        </div>
+      </div>
+      <button
+        class="c9 c10"
+      >
+        <span
+          class="c11"
+        >
+          Play video, "Dog chases cat.", 2 minutes 30 seconds
+        </span>
+        <div
+          aria-hidden="true"
+          class="c12"
+        >
+          <svg
+            class="c13"
+            focusable="false"
+            height="12px"
+            viewBox="0 0 32 32"
+            width="12px"
+          >
+            <polygon
+              points="3,32 29,16 3,0"
+            />
+          </svg>
+        </div>
+        <time
+          aria-hidden="true"
+          class="c14"
+          datetime="PT2M30S"
+        >
+          2:30
+        </time>
+      </button>
+    </div>
+    <img
+      alt="Image Alt"
+      class="c15"
+      src="http://foo.bar/placeholder.png"
+    />
+  </div>
+</div>
+`;
+
 exports[`Media Player: Canonical Entry renders a portrait container with a placeholder image 1`] = `
 .c9 {
   display: block;

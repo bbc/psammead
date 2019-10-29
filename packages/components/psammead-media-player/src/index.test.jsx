@@ -86,4 +86,20 @@ describe('Media Player: Canonical Entry', () => {
       title="Audio player"
     />,
   );
+
+  shouldMatchSnapshot(
+    'renders a placeholder image with guidance',
+    <CanonicalMediaPlayer
+      placeholderSrc="http://foo.bar/placeholder.png"
+      src="http://foo.bar/iframe"
+      service="news"
+      mediaInfo={{
+        title: 'Dog chases cat.',
+        guidance:
+          'May contain strong language, sexual or violent content that may offend.',
+        ...mediaInfo,
+      }}
+      title="Media player"
+    />,
+  );
 });

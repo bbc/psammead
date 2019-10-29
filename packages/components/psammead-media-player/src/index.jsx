@@ -36,8 +36,6 @@ export const CanonicalMediaPlayer = ({
   const StyledContainer =
     skin === 'audio' ? StyledAudioContainer : StyledVideoContainer;
 
-  const guidance = 'Contains strong language and adult humour.';
-
   return (
     <StyledContainer portrait={portrait}>
       {placeholderActive ? (
@@ -48,7 +46,6 @@ export const CanonicalMediaPlayer = ({
           service={service}
           mediaInfo={{
             ...mediaInfo,
-            guidance,
           }}
         />
       ) : (
@@ -96,6 +93,7 @@ CanonicalMediaPlayer.propTypes = {
     duration: string,
     durationSpoken: string,
     type: oneOf(['video', 'audio']),
+    guidance: string,
   }).isRequired,
 };
 

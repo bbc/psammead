@@ -29,22 +29,34 @@ const StyledPlayButton = styled(PlayButton)`
 `;
 
 const Placeholder = ({ onClick, service, src, srcset, mediaInfo }) => {
-  const { title, datetime, duration, durationSpoken, type } = mediaInfo;
-  const guidance =
-    'May contain strong language, sexual or violent content that may offend.';
+  const {
+    title,
+    datetime,
+    duration,
+    durationSpoken,
+    type,
+    guidance,
+  } = mediaInfo;
+  const renderPlaybutton = () => (
+    <StyledPlayButton
+      title={title}
+      service={service}
+      onClick={() => {}}
+      datetime={datetime}
+      duration={duration}
+      durationSpoken={durationSpoken}
+      type={type}
+    />
+  );
   return (
     <StyledPlaceholder onClick={onClick}>
-      <Guidance service={service} type={type} message={guidance}>
-        <StyledPlayButton
-          title={title}
-          service={service}
-          onClick={() => {}}
-          datetime={datetime}
-          duration={duration}
-          durationSpoken={durationSpoken}
-          type={type}
-        />
-      </Guidance>
+      {guidance ? (
+        <Guidance service={service} type={type} message={guidance}>
+          {renderPlaybutton()}
+        </Guidance>
+      ) : (
+        renderPlaybutton()
+      )}
       <Image alt="Image Alt" src={src} srcset={srcset} />
     </StyledPlaceholder>
   );

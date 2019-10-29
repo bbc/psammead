@@ -5,9 +5,7 @@ import { C_EBON, C_WHITE } from '@bbc/psammead-styles/colours';
 import { GEL_GROUP_2_SCREEN_WIDTH_MIN } from '@bbc/gel-foundations/breakpoints';
 import {
   GEL_MARGIN_BELOW_400PX,
-  GEL_MARGIN_ABOVE_400PX,
   GEL_SPACING_DBL,
-  GEL_SPACING,
 } from '@bbc/gel-foundations/spacings';
 import { GEL_MINION } from '@bbc/gel-foundations/typography';
 import { getSansBold } from '@bbc/psammead-styles/font-styles';
@@ -21,8 +19,8 @@ const GuidanceIcon = () => (
   <StyledGuidanceIcon
     viewBox="0 0 44 44"
     focusable="false"
-    height="30px"
-    width="30px"
+    height="35px"
+    width="35px"
   >
     <g>
       <circle fill="inherit" cx="22" cy="22" r="11" />
@@ -45,7 +43,7 @@ const GuidanceWrapper = styled.div`
   position: absolute;
   background-color: rgba(34, 34, 34, 0.75);
   color: ${C_WHITE};
-  padding: ${GEL_SPACING};
+  padding: ${GEL_MARGIN_BELOW_400PX};
   border: none;
 `;
 
@@ -53,15 +51,11 @@ const Content = styled.div`
   display: flex;
   flex-direction: row;
   padding: ${GEL_SPACING_DBL} ${GEL_MARGIN_BELOW_400PX};
-
-  @media (min-width: ${GEL_GROUP_2_SCREEN_WIDTH_MIN}) {
-    padding: ${GEL_MARGIN_ABOVE_400PX};
-  }
 `;
 
 const GuidanceMessage = styled.span`
   @media (min-width: ${GEL_GROUP_2_SCREEN_WIDTH_MIN}) {
-    padding: ${GEL_MARGIN_ABOVE_400PX};
+    padding: ${GEL_MARGIN_BELOW_400PX} 0 0 0;
   }
 `;
 
@@ -75,16 +69,14 @@ const IconWrapper = styled.div`
 const Guidance = ({ className, message, service, children }) => {
   return (
     <StyledGuidance className={className} service={service}>
-      {message && (
-        <GuidanceWrapper>
-          <Content>
-            <IconWrapper aria-hidden="true">
-              <GuidanceIcon />
-            </IconWrapper>
-            <GuidanceMessage>Guidance: {message}</GuidanceMessage>
-          </Content>
-        </GuidanceWrapper>
-      )}
+      <GuidanceWrapper>
+        <Content>
+          <IconWrapper aria-hidden="true">
+            <GuidanceIcon />
+          </IconWrapper>
+          <GuidanceMessage>Guidance: {message}</GuidanceMessage>
+        </Content>
+      </GuidanceWrapper>
       {children}
     </StyledGuidance>
   );
