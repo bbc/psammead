@@ -11,7 +11,7 @@ const buildLink = text => ({
 });
 
 const links = (text, service) =>
-  Array(7)
+  Array(6)
     .fill()
     .map((el, n) => (service === 'news' ? `link ${n}` : `${text} ${n}`))
     .map(buildLink);
