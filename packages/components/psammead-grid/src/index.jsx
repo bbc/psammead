@@ -174,11 +174,11 @@ const Grid = ({
 Grid.propTypes = {
   children: node.isRequired,
   columns: shape({
-    group1: number,
-    group2: number,
-    group3: number,
-    group4: number,
-    group5: number,
+    group1: number.isRequired,
+    group2: number.isRequired,
+    group3: number.isRequired,
+    group4: number.isRequired,
+    group5: number.isRequired,
   }).isRequired,
   enableGelGutters: bool,
   enableGelMargins: bool,
