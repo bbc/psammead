@@ -3,7 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
-| 4.0.5 | [PR#2514](https://github.com/bbc/psammead/pull/2514) Add SerifLight and SansLight functions |
+| 4.1.0 | [PR#2514](https://github.com/bbc/psammead/pull/2514) Add SerifLight and SansLight functions |
 | 4.0.4 | [PR#2471](https://github.com/bbc/psammead/pull/2471) Switch Russian service to use Reith fonts |
 | 4.0.3 | [PR#2404](https://github.com/bbc/psammead/pull/2404) replace inputProvider and dirDecorator with withServicesInput |
 | 4.0.2 | [PR#2348](https://github.com/bbc/psammead/pull/2348) Adds colour 'Weather Blue' and add weather to fonts |
