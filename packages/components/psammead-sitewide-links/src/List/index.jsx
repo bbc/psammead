@@ -18,16 +18,19 @@ import { grid } from '@bbc/psammead-styles/detection';
 import Link from '../Link';
 
 // Gets the number of grid rows, taking into account the
-// first-child in the grid being separate, on its own row.
-const getRowCount = (children, columns) =>
-  Math.ceil((React.Children.count(children) - 1) / columns) + 1;
+// trustProjectLink in the grid being separate, on its own row.
+const getRowCount = (links, columns, trustProjectLink) =>
+  trustProjectLink
+    ? Math.ceil(links.length / columns) + 1
+    : Math.ceil(links.length / columns);
 
 const StyledList = styled.ul`
-  border-bottom: 1px solid ${C_SHADOW};
+  border-bottom: 0.0625rem solid ${C_SHADOW};
   list-style-type: none;
   margin: 0;
-  padding: 0 0 ${GEL_SPACING};
-  column-count: 3;
+  padding: ${({ trustProjectLink }) =>
+    trustProjectLink ? `0 0 ${GEL_SPACING}` : `${GEL_SPACING} 0`};
+  column-count: 4;
 
   @supports (${grid}) {
     display: grid;
@@ -42,7 +45,8 @@ const StyledList = styled.ul`
     grid-column-gap: ${GEL_SPACING};
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(
-      ${({ children }) => getRowCount(children, 2)},
+      ${({ links, trustProjectLink }) =>
+        getRowCount(links, 2, trustProjectLink)},
       auto
     );
     column-count: 2;
@@ -51,7 +55,8 @@ const StyledList = styled.ul`
     grid-column-gap: ${GEL_SPACING_DBL};
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(
-      ${({ children }) => getRowCount(children, 3)},
+      ${({ links, trustProjectLink }) =>
+        getRowCount(links, 3, trustProjectLink)},
       auto
     );
     column-count: 3;
@@ -60,42 +65,55 @@ const StyledList = styled.ul`
     grid-column-gap: ${GEL_SPACING_DBL};
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(
-      ${({ children }) => getRowCount(children, 4)},
+      ${({ links, trustProjectLink }) =>
+        getRowCount(links, 4, trustProjectLink)},
       auto
     );
-    column-count: 3;
+    column-count: 4;
   }
   @media (min-width: ${GEL_GROUP_5_SCREEN_WIDTH_MIN}) {
     grid-column-gap: ${GEL_SPACING_DBL};
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(
-      ${({ children }) => getRowCount(children, 5)},
+      ${({ links, trustProjectLink }) =>
+        getRowCount(links, 5, trustProjectLink)},
       auto
     );
-    column-count: 3;
+    column-count: 5;
   }
-  > li:first-child {
-    border-bottom: 1px solid ${C_SHADOW};
+  ${({ trustProjectLink }) =>
+    trustProjectLink &&
+    `> li:first-child {
+    border-bottom: 0.0625rem solid ${C_SHADOW};
     padding: ${GEL_SPACING} 0;
     margin-bottom: ${GEL_SPACING};
     grid-column: 1/-1;
     width: 100%;
     column-span: all;
-  }
+  }`}
 `;
 
 const StyledListItem = styled.li`
   min-width: 50%;
   column-gap: 1rem;
+  break-inside: avoid-column;
 `;
 
-const List = ({ links }) => (
-  <StyledList role="list">
-    {links.map(link => (
-      <StyledListItem key={link.text} role="listitem">
-        <Link text={link.text} href={link.href} />
-      </StyledListItem>
-    ))}
+const listItem = (key, text, href) => (
+  <StyledListItem key={key} role="listitem">
+    <Link text={text} href={href} />
+  </StyledListItem>
+);
+
+const List = ({ links, trustProjectLink }) => (
+  <StyledList role="list" trustProjectLink={trustProjectLink} links={links}>
+    {trustProjectLink &&
+      listItem(
+        trustProjectLink.text,
+        trustProjectLink.text,
+        trustProjectLink.href,
+      )}
+    {links.map(link => listItem(link.text, link.text, link.href))}
   </StyledList>
 );
 
@@ -106,6 +124,9 @@ const linkPropTypes = shape({
 
 List.propTypes = {
   links: arrayOf(linkPropTypes.isRequired).isRequired,
+  trustProjectLink: linkPropTypes,
 };
+
+List.defaultProps = { trustProjectLink: null };
 
 export default List;
