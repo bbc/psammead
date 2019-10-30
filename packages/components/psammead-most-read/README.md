@@ -10,7 +10,7 @@ The `MostReadItem` component is designed to display the most read articles given
 `npm install @bbc/psammead-most-read/esm/item`
 
 ## Props
-
+### MostReadItem props
 <!-- prettier-ignore -->
 | Argument | Type | Required | Default | Example |
 | -------- | ---- | -------- | ------- | ------- |
