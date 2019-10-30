@@ -27,7 +27,7 @@ storiesOf('Components|Media Player', module).add(
       service="news"
       mediaInfo={{
         title: 'Dog chases cat.',
-        guidance: 'Contains strong language withh adult humor',
+        guidance: 'Contains strong language with adult humor',
         ...withDuration,
       }}
     />
