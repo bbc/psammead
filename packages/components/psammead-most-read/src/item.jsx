@@ -25,7 +25,7 @@ const MostReadWrapper = styled.div`
 
 const ItemWrapper = styled.div``;
 
-export const CountWrapper = styled.p`
+export const StyledCountSpan = styled.span`
   ${({ script }) => script && getFoolscap(script)};
   ${({ service }) => getSerifLight(service)}
   color: ${C_POSTBOX};
