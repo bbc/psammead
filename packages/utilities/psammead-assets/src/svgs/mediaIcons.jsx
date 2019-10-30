@@ -1,9 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
-import { C_EBON, C_WHITE } from '@bbc/psammead-styles/colours';
+import { C_EBON } from '@bbc/psammead-styles/colours';
 import {
   GEL_SPACING_HLF,
-  GEL_SPACING_TRPL,
+  GEL_SPACING_DBL,
 } from '@bbc/gel-foundations/spacings';
 
 // `currentColor` has been used to better reflect user colour choices in Firefox.
@@ -30,8 +30,8 @@ const PhotoMediaIcon = styled(MediaIcon)`
 `;
 
 const GuidanceIcon = styled(MediaIcon)`
-  width: ${GEL_SPACING_TRPL};
-  height: ${GEL_SPACING_TRPL};
+  width: ${GEL_SPACING_DBL};
+  height: ${GEL_SPACING_DBL};
 `;
 
 const mediaIcons = {
@@ -68,17 +68,8 @@ const mediaIcons = {
     </PhotoMediaIcon>
   ),
   guidance: (
-    <GuidanceIcon
-      viewBox="0 0 44 44"
-      focusable="false"
-      height="24px"
-      width="24px"
-    >
-      <circle cx="22" cy="22" r="11" />
-      <path
-        fill={C_WHITE}
-        d="M27.1,27.5h-1.8L25,26.3c-0.8,1.1-2,1.4-3.1,1.4c-3.3,0-5.5-2.5-5.5-5.7c0-3.2,2.2-5.7,5.5-5.7c2.3,0,4.7,1.2,5,4h-2.9c-0.1-0.9-1-1.5-2.2-1.5c-1.8,0-2.6,1.6-2.6,3.3c0,1.6,0.7,3.3,2.6,3.3c1.4,0,2.4-0.7,2.5-1.7h-2v-2.1h4.6V27.5z"
-      />
+    <GuidanceIcon width="32" height="32" viewBox="0 0 32 32">
+      <path d="M32 16A16 16 0 1 1 16 0a16 16 0 0 1 16 16zm-8.6-.8h-6.8v3.1h2.9c-.2 1.5-1.6 2.4-3.7 2.4s-3.7-2.4-3.7-4.7 1-4.7 3.7-4.7 3 .8 3.2 2.2h4.2c-.4-4-3.9-5.8-7.2-5.8-4.8 0-8 3.7-8 8.3s3.1 8.3 8 8.3a5.4 5.4 0 0 0 4.5-2.1l.2 1.7h2.7z" />
     </GuidanceIcon>
   ),
 };
