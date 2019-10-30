@@ -246,6 +246,10 @@ export const Headline = styled.h3`
     ${({ script, topStory }) =>
       script && getHeadlineFontStyle(script, topStory)}
   }
+
+  @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MAX}) {
+    ${({ script, displayImage }) => !displayImage && script && getPica(script)}
+  }
 `;
 
 export const Summary = styled.p`
