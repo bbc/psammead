@@ -39,7 +39,7 @@ export const CountWrapper = styled.p`
   }
 `;
 
-export const TitleWrapper = styled.a`
+export const StyledLink = styled.a`
   ${({ script }) => script && getDoublePica(script)};
   ${({ service }) => getSerifMedium(service)}
   color: ${C_EBON};
