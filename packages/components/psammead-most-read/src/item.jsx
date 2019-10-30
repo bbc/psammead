@@ -1,5 +1,5 @@
 import React from 'react';
-import { oneOf, shape, string } from 'prop-types';
+import { node, oneOf, shape, string } from 'prop-types';
 import styled from 'styled-components';
 import { getCanon, getPica } from '@bbc/gel-foundations/typography';
 import { C_EBON, C_POSTBOX } from '@bbc/psammead-styles/colours';
@@ -23,6 +23,8 @@ const MostReadWrapper = styled.div`
   }
 `;
 
+const ItemWrapper = styled.div``;
+
 export const CountWrapper = styled.p`
   ${({ script }) => script && getCanon(script)};
   ${({ service }) => getSerifLight(service)}
@@ -37,7 +39,7 @@ export const CountWrapper = styled.p`
   }
 `;
 
-export const ItemWrapper = styled.a`
+export const TitleWrapper = styled.a`
   ${({ script }) => script && getPica(script)};
   ${({ service }) => getSerifMedium(service)}
   color: ${C_EBON};
@@ -51,11 +53,19 @@ export const ItemWrapper = styled.a`
   }
 `;
 
-const MostReadItem = ({ count, item: { header, href }, ...props }) => (
+const MostReadItem = ({
+  count,
+  lastUpdated,
+  item: { title, href },
+  ...props
+}) => (
   <MostReadWrapper {...props}>
     <CountWrapper {...props}>{count}</CountWrapper>
-    <ItemWrapper href={href} {...props}>
-      {header}
+    <ItemWrapper>
+      <TitleWrapper href={href} {...props}>
+        {title}
+      </TitleWrapper>
+      {lastUpdated}
     </ItemWrapper>
   </MostReadWrapper>
 );
@@ -65,14 +75,16 @@ MostReadItem.propTypes = {
   count: string.isRequired,
   service: string.isRequired,
   script: shape(scriptPropType).isRequired,
+  lastUpdated: node,
   item: shape({
-    header: string.isRequired,
+    title: string.isRequired,
     href: string.isRequired,
   }).isRequired,
 };
 
 MostReadItem.defaultProps = {
   dir: oneOf(['rtl', 'ltr']),
+  lastUpdated: null,
 };
 
 export default MostReadItem;

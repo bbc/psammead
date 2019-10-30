@@ -14,11 +14,12 @@ The `MostReadItem` component is designed to display the most read articles given
 <!-- prettier-ignore -->
 | Argument | Type | Required | Default | Example |
 | -------- | ---- | -------- | ------- | ------- |
-| item | object | yes | N/A | `{ header: 'This is a item', href: 'https://www.bbc.com' }` |
+| item | object | yes | N/A | `{ title: 'This is a item', href: 'https://www.bbc.com' }` |
 | count | string | yes | N/A | `'rtl'`  |
 | script | object | yes | N/A | `{ canon: { groupA: { fontSize: '28', lineHeight: '32',}, groupB: { fontSize: '32', lineHeight: '36', }, groupD: { fontSize: '44', lineHeight: '48', }, }, trafalgar: { groupA: { fontSize: '20', lineHeight: '24', }, groupB: { fontSize: '24', lineHeight: '28', }, groupD: { fontSize: '32', lineHeight: '36', }, }, }` |
 | service | string | yes | N/A | `'news'` |
 | dir | string | no | `'ltr'` | `'rtl'`  |
+| lastUpdated | node | no | N/A | `<time>12 March 2019</time>` |
 
 ## Usage
 
@@ -30,15 +31,57 @@ import { latin } from '@bbc/gel-foundations/scripts';
 import MostReadItem from '@bbc/psammead-most-read/esm/item';
 
 const item = {
-    header: 'Cranberries singer O'Riordan died by drowning,
+    title: 'Cranberries singer O'Riordan died by drowning,
     href: 'https://www.bbc.com'
 }
 
 <MostReadItem item={item} script={latin} count="1" service="news" dir="ltr" />;
 
 ```
+Screenshot
 
 ![most-read-single-item](documentation/most-read-single-item.png)
+
+
+#### <a name="example with last updated date">Example with last updated date</a>
+
+
+```jsx
+import React from 'react';
+import { latin } from '@bbc/gel-foundations/scripts';
+import Timestamp from '@bbc/psammead-timestamp-container';
+import MostReadItem from '@bbc/psammead-most-read/esm/item';
+
+const item = {
+    title: 'Cranberries singer O'Riordan died by drowning,
+    href: 'https://www.bbc.com'
+}
+
+const lastUpdated = (script, service) => (
+  <Timestamp
+    timestamp={1570031976502}
+    dateTimeFormat="YYYY-MM-DD"
+    prefix="Last updated: "
+    format="LL"
+    script={script}
+    service={service}
+  />
+);
+
+<MostReadItem 
+    lastUpdated={lastUpdated} 
+    item={item} 
+    script={latin} 
+    count="1" 
+    service="news" 
+    dir="ltr"
+/>;
+
+```
+
+Screenshot
+
+![most-read-item-with-last-Updated-date](documentation/most-read-item-with-last-Updated-date.png)
 
 ### When to use this component
 

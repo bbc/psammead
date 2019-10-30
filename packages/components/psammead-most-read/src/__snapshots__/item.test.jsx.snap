@@ -1,5 +1,145 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Most read should render last updated date correctly 1`] = `
+.c3 {
+  font-size: 0.875rem;
+  line-height: 1.125rem;
+  color: #6E6E73;
+  display: block;
+  font-family: ReithSans,Helvetica,Arial,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c1 {
+  font-size: 1.75rem;
+  line-height: 2rem;
+  font-family: ReithSerif,Helvetica,Arial,sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  color: #B80000;
+  margin: 0;
+  padding-bottom: 0.5rem;
+  display: inline-block;
+  min-width: 3rem;
+}
+
+.c2 {
+  font-size: 0.9375rem;
+  line-height: 1.25rem;
+  font-family: ReithSerif,Helvetica,Arial,sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  color: #222222;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  padding-bottom: 0.5rem;
+}
+
+.c2:hover,
+.c2:focus {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+@media (min-width:20rem) and (max-width:37.4375rem) {
+  .c3 {
+    font-size: 0.875rem;
+    line-height: 1.125rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .c3 {
+    font-size: 0.8125rem;
+    line-height: 1rem;
+  }
+}
+
+@media (max-width:37.5rem) {
+  .c0 {
+    margin-top: 4px;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .c0 {
+    margin-top: 6px;
+  }
+}
+
+@media (min-width:20rem) and (max-width:37.4375rem) {
+  .c1 {
+    font-size: 2rem;
+    line-height: 2.25rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .c1 {
+    font-size: 2.75rem;
+    line-height: 3rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .c1 {
+    width: 4rem;
+  }
+}
+
+@media (min-width:20rem) and (max-width:37.4375rem) {
+  .c2 {
+    font-size: 1rem;
+    line-height: 1.25rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .c2 {
+    font-size: 1rem;
+    line-height: 1.25rem;
+  }
+}
+
+<div
+  class="c0"
+  dir="ltr"
+>
+  <p
+    class="c1"
+    dir="ltr"
+  >
+    10
+  </p>
+  <div
+    class=""
+  >
+    <a
+      class="c2"
+      dir="ltr"
+      href="https://www.bbc.com/vietnamese/institutional-49283563"
+    >
+      John Lewis staff bonus cut again as profits fall
+    </a>
+    <time
+      class="c3"
+      datetime="2019-03-01T14:00+00:00"
+    >
+      Last updated: 5th November 2016
+    </time>
+  </div>
+</div>
+`;
+
 exports[`Most read should render ltr correctly 1`] = `
 .c0 {
   display: -webkit-box;
@@ -96,13 +236,17 @@ exports[`Most read should render ltr correctly 1`] = `
   >
     1
   </p>
-  <a
-    class="c2"
-    dir="ltr"
-    href="https://www.bbc.com/vietnamese/institutional-49283563"
+  <div
+    class=""
   >
-    John Lewis staff bonus cut again as profits fall
-  </a>
+    <a
+      class="c2"
+      dir="ltr"
+      href="https://www.bbc.com/vietnamese/institutional-49283563"
+    >
+      John Lewis staff bonus cut again as profits fall
+    </a>
+  </div>
 </div>
 `;
 
@@ -202,12 +346,16 @@ exports[`Most read should render rtl correctly 1`] = `
   >
     1
   </p>
-  <a
-    class="c2"
-    dir="rtl"
-    href="https://www.bbc.com/vietnamese/institutional-49283563"
+  <div
+    class=""
   >
-    ایران از لغو 'رزمایش قطع اینترنت' خبر داد
-  </a>
+    <a
+      class="c2"
+      dir="rtl"
+      href="https://www.bbc.com/vietnamese/institutional-49283563"
+    >
+      ایران از لغو 'رزمایش قطع اینترنت' خبر داد
+    </a>
+  </div>
 </div>
 `;
