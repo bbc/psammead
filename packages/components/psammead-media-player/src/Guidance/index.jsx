@@ -8,10 +8,10 @@ import {
   GEL_SPACING_DBL,
 } from '@bbc/gel-foundations/spacings';
 import { GEL_MINION } from '@bbc/gel-foundations/typography';
-import { getSansBold } from '@bbc/psammead-styles/font-styles';
+import { getSansRegular } from '@bbc/psammead-styles/font-styles';
 
 const StyledGuidanceIcon = styled.svg`
-  color: ${C_EBON};
+  color: ${C_WHITE};
   fill: currentColor;
 `;
 
@@ -33,7 +33,7 @@ const GuidanceIcon = () => (
 );
 
 const StyledGuidance = styled.div`
-  ${({ service }) => getSansBold(service)}
+  ${({ service }) => getSansRegular(service)}
   ${GEL_MINION};
 `;
 
@@ -59,16 +59,11 @@ const GuidanceMessage = styled.span`
   }
 `;
 
-const IconWrapper = styled.div`
-  > svg {
-    color: ${C_WHITE};
-    fill: currentColor;
-  }
-`;
+const IconWrapper = styled.div``;
 
-const Guidance = ({ className, message, service, children }) => {
+const Guidance = ({ message, service, children }) => {
   return (
-    <StyledGuidance className={className} service={service}>
+    <StyledGuidance service={service}>
       <GuidanceWrapper>
         <Content>
           <IconWrapper aria-hidden="true">
@@ -83,15 +78,12 @@ const Guidance = ({ className, message, service, children }) => {
 };
 
 Guidance.propTypes = {
-  message: string,
-  className: string,
+  message: string.isRequired,
   service: string.isRequired,
   children: node,
 };
 
 Guidance.defaultProps = {
-  message: null,
-  className: null,
   children: null,
 };
 
