@@ -1,14 +1,14 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Media Player: Guidance should render Guidance 1`] = `
-.c4 {
-  color: #222222;
+.c3 {
+  color: #FFFFFF;
   fill: currentColor;
 }
 
 .c0 {
   font-family: ReithSans,Helvetica,Arial,sans-serif;
-  font-weight: 700;
+  font-weight: 400;
   font-style: normal;
   font-size: 0.75rem;
   line-height: 1rem;
@@ -35,13 +35,8 @@ exports[`Media Player: Guidance should render Guidance 1`] = `
   padding: 1rem 0.5rem;
 }
 
-.c3 > svg {
-  color: #FFFFFF;
-  fill: currentColor;
-}
-
 @media (min-width:25rem) {
-  .c5 {
+  .c4 {
     padding: 0.5rem 0 0 0;
   }
 }
@@ -57,10 +52,10 @@ exports[`Media Player: Guidance should render Guidance 1`] = `
     >
       <div
         aria-hidden="true"
-        class="c3"
+        class=""
       >
         <svg
-          class="c4"
+          class="c3"
           focusable="false"
           height="35px"
           viewBox="0 0 44 44"
@@ -81,7 +76,7 @@ exports[`Media Player: Guidance should render Guidance 1`] = `
         </svg>
       </div>
       <span
-        class="c5"
+        class="c4"
       >
         Guidance: 
         Contains strong language with adult humor

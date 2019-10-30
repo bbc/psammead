@@ -262,13 +262,13 @@ exports[`Media Player: Canonical Entry renders a landscape container with a plac
 `;
 
 exports[`Media Player: Canonical Entry renders a placeholder image with guidance 1`] = `
-.c15 {
+.c14 {
   display: block;
   width: 100%;
   visibility: visible;
 }
 
-.c13 {
+.c12 {
   vertical-align: middle;
   margin: 0 0.25rem;
   color: #222222;
@@ -277,7 +277,7 @@ exports[`Media Player: Canonical Entry renders a placeholder image with guidance
   height: 0.75rem;
 }
 
-.c11 {
+.c10 {
   -webkit-clip-path: inset(100%);
   clip-path: inset(100%);
   -webkit-clip: rect(1px,1px,1px,1px);
@@ -289,7 +289,7 @@ exports[`Media Player: Canonical Entry renders a placeholder image with guidance
   margin: 0;
 }
 
-.c9 {
+.c8 {
   background-color: #222222;
   border: none;
   color: #FFFFFF;
@@ -307,14 +307,14 @@ exports[`Media Player: Canonical Entry renders a placeholder image with guidance
   width: 5rem;
 }
 
-.c9:hover,
-.c9:focus {
+.c8:hover,
+.c8:focus {
   background-color: #B80000;
   -webkit-transition: background-color 300ms;
   transition: background-color 300ms;
 }
 
-.c12 > svg {
+.c11 > svg {
   color: #FFFFFF;
   fill: currentColor;
   height: 1.5rem;
@@ -322,19 +322,19 @@ exports[`Media Player: Canonical Entry renders a placeholder image with guidance
   width: 1.5rem;
 }
 
-.c14 {
+.c13 {
   display: block;
   margin-top: 0.5rem;
 }
 
-.c7 {
-  color: #222222;
+.c6 {
+  color: #FFFFFF;
   fill: currentColor;
 }
 
 .c3 {
   font-family: ReithSans,Helvetica,Arial,sans-serif;
-  font-weight: 700;
+  font-weight: 400;
   font-style: normal;
   font-size: 0.75rem;
   line-height: 1rem;
@@ -361,11 +361,6 @@ exports[`Media Player: Canonical Entry renders a placeholder image with guidance
   padding: 1rem 0.5rem;
 }
 
-.c6 > svg {
-  color: #FFFFFF;
-  fill: currentColor;
-}
-
 .c2 {
   cursor: pointer;
   position: absolute;
@@ -375,13 +370,13 @@ exports[`Media Player: Canonical Entry renders a placeholder image with guidance
   height: 100%;
 }
 
-.c10 {
+.c9 {
   position: absolute;
   bottom: 0;
 }
 
-.c1:hover .c10,
-.c1:focus .c10 {
+.c1:hover .c9,
+.c1:focus .c9 {
   background-color: #B80000;
 }
 
@@ -392,7 +387,7 @@ exports[`Media Player: Canonical Entry renders a placeholder image with guidance
 }
 
 @media (min-width:25rem) {
-  .c8 {
+  .c7 {
     padding: 0.5rem 0 0 0;
   }
 }
@@ -414,10 +409,10 @@ exports[`Media Player: Canonical Entry renders a placeholder image with guidance
         >
           <div
             aria-hidden="true"
-            class="c6"
+            class=""
           >
             <svg
-              class="c7"
+              class="c6"
               focusable="false"
               height="35px"
               viewBox="0 0 44 44"
@@ -438,7 +433,7 @@ exports[`Media Player: Canonical Entry renders a placeholder image with guidance
             </svg>
           </div>
           <span
-            class="c8"
+            class="c7"
           >
             Guidance: 
             May contain strong language, sexual or violent content that may offend.
@@ -446,19 +441,19 @@ exports[`Media Player: Canonical Entry renders a placeholder image with guidance
         </div>
       </div>
       <button
-        class="c9 c10"
+        class="c8 c9"
       >
         <span
-          class="c11"
+          class="c10"
         >
           Play video, "Dog chases cat.", 2 minutes 30 seconds
         </span>
         <div
           aria-hidden="true"
-          class="c12"
+          class="c11"
         >
           <svg
-            class="c13"
+            class="c12"
             focusable="false"
             height="12px"
             viewBox="0 0 32 32"
@@ -471,7 +466,7 @@ exports[`Media Player: Canonical Entry renders a placeholder image with guidance
         </div>
         <time
           aria-hidden="true"
-          class="c14"
+          class="c13"
           datetime="PT2M30S"
         >
           2:30
@@ -480,7 +475,7 @@ exports[`Media Player: Canonical Entry renders a placeholder image with guidance
     </div>
     <img
       alt="Image Alt"
-      class="c15"
+      class="c14"
       src="http://foo.bar/placeholder.png"
     />
   </div>
