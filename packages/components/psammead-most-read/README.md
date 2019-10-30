@@ -50,7 +50,7 @@ Currently this component is in alpha. This is because it has not yet been tested
 
 ## Roadmap
 
-Currently this package only exports the `MostReadItem` component. We will add a wrapper that will export a list of most read components using `@bbc/psammead-grid` to display the most read items on a grid. 
+Currently, this package only exports the `MostReadItem` component. We will add a wrapper that will export a list of most read components using `@bbc/psammead-grid` to display the most read items on a grid. 
 
 ## Contributing
 

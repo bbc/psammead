@@ -41,7 +41,6 @@ export const ItemWrapper = styled.a`
   ${({ script }) => script && getPica(script)};
   ${({ service }) => getSerifMedium(service)}
   color: ${C_EBON};
-  margin: 0; /* Reset */
   text-decoration: none;
   padding-bottom: ${GEL_SPACING};
   
