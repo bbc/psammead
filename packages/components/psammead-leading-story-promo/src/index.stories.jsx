@@ -3,10 +3,10 @@ import { storiesOf } from '@storybook/react';
 import { withKnobs, text } from '@storybook/addon-knobs';
 import { withServicesKnob } from '@bbc/psammead-storybook-helpers';
 import Image from '@bbc/psammead-image';
-import { Headline, Summary, Link } from '@bbc/psammead-story-promo';
+import { Summary, Link } from '@bbc/psammead-story-promo';
 import Grid from '@bbc/psammead-grid';
 import notes from '../README.md';
-import LeadingStoryPromo from './index';
+import LeadingStoryPromo, { LeadingPromoHeadline } from './index';
 
 const buildImg = () => (
   <Image
@@ -22,9 +22,9 @@ const buildImg = () => (
 /* eslint-disable-next-line react/prop-types */
 const InfoComponent = ({ headlineText, summaryText, script, service }) => (
   <>
-    <Headline script={script} service={service}>
+    <LeadingPromoHeadline script={script} service={service}>
       <Link href="https://www.bbc.co.uk/news">{headlineText}</Link>
-    </Headline>
+    </LeadingPromoHeadline>
     <Summary script={script} service={service}>
       {summaryText}
     </Summary>

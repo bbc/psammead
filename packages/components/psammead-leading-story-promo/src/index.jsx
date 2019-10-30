@@ -1,9 +1,12 @@
 import React from 'react';
 import styled, { css } from 'styled-components';
 import { node } from 'prop-types';
+import { C_EBON } from '@bbc/psammead-styles/colours';
+import { getSerifMedium } from '@bbc/psammead-styles/font-styles';
 import { grid } from '@bbc/psammead-styles/detection';
 import { GEL_GROUP_4_SCREEN_WIDTH_MIN } from '@bbc/gel-foundations/breakpoints';
-import { GEL_SPACING_DBL } from '@bbc/gel-foundations/spacings';
+import { GEL_SPACING_DBL, GEL_SPACING } from '@bbc/gel-foundations/spacings';
+import { getDoublePica } from '@bbc/gel-foundations/dist/typography';
 
 const fourOfSixColumnsMaxWidthScaleable = `66.67%`;
 // (4 / 6) * 100 = 66.6666666667 = 66.67%
@@ -64,6 +67,14 @@ const TextGridItem = styled.div`
       ${TextGridColumns}
     }
   }
+`;
+
+export const LeadingPromoHeadline = styled.h3`
+  ${({ script }) => script && getDoublePica(script)}
+  ${({ service }) => getSerifMedium(service)}
+  color: ${C_EBON};
+  margin: 0; /* Reset */
+  padding-bottom: ${GEL_SPACING};
 `;
 
 const LeadingStoryPromo = ({ image, info }) => (
