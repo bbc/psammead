@@ -44,9 +44,7 @@ export const CanonicalMediaPlayer = ({
           src={placeholderSrc}
           srcset={placeholderSrcset}
           service={service}
-          mediaInfo={{
-            ...mediaInfo,
-          }}
+          mediaInfo={mediaInfo}
         />
       ) : (
         <Canonical src={src} title={title} />
