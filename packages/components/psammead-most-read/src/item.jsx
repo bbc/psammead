@@ -52,7 +52,7 @@ export const ItemWrapper = styled.a`
   }
 `;
 
-const MostRead = ({ count, item: { header, href }, ...props }) => (
+const MostReadItem = ({ count, item: { header, href }, ...props }) => (
   <MostReadWrapper {...props}>
     <CountWrapper {...props}>{count}</CountWrapper>
     <ItemWrapper href={href} {...props}>
@@ -61,7 +61,7 @@ const MostRead = ({ count, item: { header, href }, ...props }) => (
   </MostReadWrapper>
 );
 
-MostRead.propTypes = {
+MostReadItem.propTypes = {
   dir: string,
   count: string.isRequired,
   service: string.isRequired,
@@ -72,8 +72,8 @@ MostRead.propTypes = {
   }).isRequired,
 };
 
-MostRead.defaultProps = {
+MostReadItem.defaultProps = {
   dir: oneOf(['rtl', 'ltr']),
 };
 
-export default MostRead;
+export default MostReadItem;

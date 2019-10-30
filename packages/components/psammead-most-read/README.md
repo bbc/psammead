@@ -3,11 +3,11 @@
 
 ## Description
 
-The `MostRead` component is designed to display the most read articles given a designated period of time which is dependent on service. The component comprises of a `MostReadTitle`, a `MostReadList` which is a grid containing `MostReadItems`. A `MostReadItem` comprises of a numerical counter representing it's ranking and a link to the article.
+The `MostReadItem` component is designed to display the most read articles given a designated period of time which is dependent on service. The component comprises of a `MostReadTitle`, a `MostReadList` which is a grid containing `MostReadItems`. A `MostReadItem` comprises of a numerical counter representing it's ranking and a link to the article.
 
 ## Installation
 
-`npm install @bbc/psammead-most-read`
+`npm install @bbc/psammead-most-read/esm/item`
 
 ## Props
 
@@ -26,14 +26,15 @@ A typical use-case of this component is as displayed below. It contains a count 
 
 ```jsx
 import React from 'react';
-import MostRead from '@bbc/psammead-most-read';
+import { latin } from '@bbc/gel-foundations/scripts';
+import MostReadItem from '@bbc/psammead-most-read/esm/item';
 
 const item = {
     header: 'Cranberries singer O'Riordan died by drowning,
     href: 'https://www.bbc.com'
 }
 
-<MostRead item={item} count="1" service="news" dir="ltr" />;
+<MostReadItem item={item} script={latin} count="1" service="news" dir="ltr" />;
 
 ```
 
@@ -48,6 +49,8 @@ This component is to be used on `article` pages.
 Currently this component is in alpha. This is because it has not yet been tested with various assistive technologies. After it has had an accessibility swarm, this will be published under a standard version.
 
 ## Roadmap
+
+Currently this package only exports the `MostReadItem` component. We will add a wrapper that will export a list of most read components using `@bbc/psammead-grid` to display the most read items on a grid. 
 
 ## Contributing
 

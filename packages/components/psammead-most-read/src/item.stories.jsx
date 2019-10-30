@@ -2,7 +2,7 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { withKnobs } from '@storybook/addon-knobs';
 import { withServicesKnob } from '@bbc/psammead-storybook-helpers';
-import MostRead from './item';
+import MostReadItem from './item';
 
 const items = [
   {
@@ -23,13 +23,13 @@ const items = [
   },
 ];
 
-const stories = storiesOf('Components|MostRead/MostRead', module)
+const stories = storiesOf('Components|MostRead/MostReadItem', module)
   .addDecorator(withKnobs)
   .addDecorator(withServicesKnob());
 
 items.forEach(({ item, count, dir }) => {
   stories.add(`Default ${dir}`, ({ script, service }) => (
-    <MostRead
+    <MostReadItem
       dir={dir}
       item={item}
       count={count}
