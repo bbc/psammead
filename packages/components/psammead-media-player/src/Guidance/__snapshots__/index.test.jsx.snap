@@ -1,0 +1,95 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Media Player: Guidance should render Guidance 1`] = `
+.c4 {
+  color: #222222;
+  fill: currentColor;
+}
+
+.c0 {
+  font-family: ReithSans,Helvetica,Arial,sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+
+.c1 {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: rgba(34,34,34,0.75);
+  color: #FFFFFF;
+  padding: 0.5rem;
+  border: none;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  padding: 1rem 0.5rem;
+}
+
+.c3 > svg {
+  color: #FFFFFF;
+  fill: currentColor;
+}
+
+@media (min-width:25rem) {
+  .c5 {
+    padding: 0.5rem 0 0 0;
+  }
+}
+
+<div
+  class="c0"
+>
+  <div
+    class="c1"
+  >
+    <div
+      class="c2"
+    >
+      <div
+        aria-hidden="true"
+        class="c3"
+      >
+        <svg
+          class="c4"
+          focusable="false"
+          height="35px"
+          viewBox="0 0 44 44"
+          width="35px"
+        >
+          <g>
+            <circle
+              cx="22"
+              cy="22"
+              fill="inherit"
+              r="11"
+            />
+            <path
+              d="M27.1,27.5h-1.8L25,26.3c-0.8,1.1-2,1.4-3.1,1.4c-3.3,0-5.5-2.5-5.5-5.7c0-3.2,2.2-5.7,5.5-5.7c2.3,0,4.7,1.2,5,4h-2.9c-0.1-0.9-1-1.5-2.2-1.5c-1.8,0-2.6,1.6-2.6,3.3c0,1.6,0.7,3.3,2.6,3.3c1.4,0,2.4-0.7,2.5-1.7h-2v-2.1h4.6V27.5z"
+              fill="#222222"
+            />
+          </g>
+        </svg>
+      </div>
+      <span
+        class="c5"
+      >
+        Guidance: 
+        Contains strong language with adult humor
+      </span>
+    </div>
+  </div>
+  <p>
+    within the guidance container
+  </p>
+</div>
+`;
