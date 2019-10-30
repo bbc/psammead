@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 8.0.1 | [PR#2488](https://github.com/bbc/psammead/pull/2488) Talos - Bump Dependencies - @bbc/gel-foundations |
 | 8.0.0 | [PR#2453](https://github.com/bbc/psammead/pull/2453) ability to create RTL variants of all stories of a specific kind or specific stories of specific kind |
 | 7.0.1 | [PR#2436](https://github.com/bbc/psammead/pull/2436) Update chinese locales |
 | 7.0.0 | [PR#2404](https://github.com/bbc/psammead/pull/2404) replace inputProvider and dirDecorator with withServicesInput |

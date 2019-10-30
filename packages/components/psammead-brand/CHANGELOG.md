@@ -3,6 +3,11 @@
 <!-- prettier-ignore -->
 | Version | Description |
 | ------- | ----------- |
+| 5.1.0-alpha.2 | [PR#2519](https://github.com/bbc/psammead/pull/2519) Talos - Bump Dependencies - @bbc/psammead-styles |
+| 5.1.0-alpha.1 | [PR#2474](https://github.com/bbc/psammead/pull/2474) Add scriptLink prop to render `ScriptLink` used for linking to service variants |
+| 5.0.11 | [PR#2466](https://github.com/bbc/psammead/pull/2466) create rtl substories |
+| 5.0.10 | [PR#2488](https://github.com/bbc/psammead/pull/2488) Talos - Bump Dependencies - @bbc/gel-foundations |
+| 5.0.9 | [PR#2477](https://github.com/bbc/psammead/pull/2477) Talos - Bump Dependencies - @bbc/psammead-styles |
 | 5.0.8 | [PR#2440](https://github.com/bbc/psammead/pull/2440) Talos - Bump Dependencies - @bbc/psammead-visually-hidden-text, @bbc/psammead-styles |
 | 5.0.7 | [PR#2404](https://github.com/bbc/psammead/pull/2404) replace inputProvider and dirDecorator with withServicesInput |
 | 5.0.6 | [PR#2377](https://github.com/bbc/psammead/pull/2377) Spread extra props to the component |
