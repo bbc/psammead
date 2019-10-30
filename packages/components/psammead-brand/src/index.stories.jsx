@@ -10,17 +10,18 @@ import {
 import { storiesOf } from '@storybook/react';
 import * as svgs from '@bbc/psammead-assets/svgs';
 import { C_POSTBOX, C_WHITE } from '@bbc/psammead-styles/colours';
-import { withServicesKnob } from '@bbc/psammead-storybook-helpers';
+import {
+  withServicesKnob,
+  buildRTLSubstories,
+} from '@bbc/psammead-storybook-helpers';
+import ScriptLink from '@bbc/psammead-script-link';
 import notes from '../README.md';
 import Brand from './index';
 
-const inputs = () => {
-  // capitalization is only for presentation purpose on the knob
-  const options = Object.keys(svgs)
-    .filter(key => key !== 'BBC_BLOCKS')
-    .map(key => key.charAt(0).toUpperCase() + key.slice(1));
-
-  const svgChoice = select('Service SVG', options, 'News').toLowerCase();
+const STORY_KIND = 'Components|Brand';
+const inputs = (service = 'news') => {
+  const options = Object.keys(svgs).filter(key => key !== 'BBC_BLOCKS');
+  const svgChoice = select('Service SVG', options, service).toLowerCase();
   const productInput = text('Product', 'BBC News');
   const serviceLocalisedNameInput = text('Localised service name', 'Yoruba');
   const svgRatio = svgs[svgChoice].ratio;
@@ -48,12 +49,12 @@ const inputs = () => {
   };
 };
 
-storiesOf('Components|Brand', module)
+storiesOf(STORY_KIND, module)
   .addDecorator(withKnobs)
   .addDecorator(withServicesKnob())
   .add(
     'without brand link',
-    () => {
+    ({ service }) => {
       const {
         productInput,
         serviceLocalisedNameInput,
@@ -65,7 +66,7 @@ storiesOf('Components|Brand', module)
         borderTop,
         backgroundColour,
         logoColour,
-      } = inputs();
+      } = inputs(service);
 
       return (
         <Brand
@@ -86,7 +87,7 @@ storiesOf('Components|Brand', module)
   )
   .add(
     'with brand link',
-    () => {
+    ({ service }) => {
       const {
         productInput,
         serviceLocalisedNameInput,
@@ -98,7 +99,7 @@ storiesOf('Components|Brand', module)
         borderTop,
         backgroundColour,
         logoColour,
-      } = inputs();
+      } = inputs(service);
 
       return (
         <Brand
@@ -117,4 +118,52 @@ storiesOf('Components|Brand', module)
       );
     },
     { notes },
+  )
+  .add(
+    'with script link',
+    ({ service, dir, script }) => {
+      const scriptLink = (
+        <ScriptLink
+          script={script}
+          service={service}
+          href="https://www.bbc.com/serbian/lat"
+        >
+          Lat
+        </ScriptLink>
+      );
+
+      const {
+        productInput,
+        serviceLocalisedNameInput,
+        svgHeightInput,
+        minWidthInput,
+        maxWidthInput,
+        svgChoice,
+        borderBottom,
+        borderTop,
+        backgroundColour,
+        logoColour,
+      } = inputs();
+
+      return (
+        <Brand
+          dir={dir}
+          product={productInput}
+          serviceLocalisedName={serviceLocalisedNameInput}
+          svgHeight={svgHeightInput}
+          minWidth={minWidthInput}
+          maxWidth={maxWidthInput}
+          svg={svgs[svgChoice]}
+          url="https://www.bbc.com/news"
+          borderBottom={borderBottom}
+          borderTop={borderTop}
+          backgroundColour={backgroundColour}
+          logoColour={logoColour}
+          scriptLink={scriptLink}
+        />
+      );
+    },
+    { notes },
   );
+
+buildRTLSubstories(STORY_KIND, { include: ['with brand link'] });
