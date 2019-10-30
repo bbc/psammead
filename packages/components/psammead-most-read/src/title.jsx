@@ -6,7 +6,7 @@ import { getTrafalgar } from '@bbc/gel-foundations/typography';
 import { scriptPropType } from '@bbc/gel-foundations/prop-types';
 import { getSansRegular } from '@bbc/psammead-styles/font-styles';
 
-const MostReadTitleWrapper = styled.h2`
+const StyledHeading = styled.h2`
   ${({ script }) => script && getTrafalgar(script)};
   ${({ service }) => getSansRegular(service)}
   color: ${C_SHADOW};
