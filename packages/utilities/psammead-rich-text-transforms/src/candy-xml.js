@@ -9,7 +9,7 @@ const attributeTags = ['bold', 'italic'];
 const supportedXmlNodeNames = ['paragraph', 'link', 'url', ...attributeTags];
 
 const isXmlNodeSupported = node => {
-  if (path(['constructor', 'name'], node) === 'XmlTextNode') {
+  if (path(['type'], node) === 'text') {
     return true;
   }
 
@@ -68,7 +68,7 @@ const convertToBlocks = (node, attributes = []) =>
 const xmlNodeToBlock = (node, attributes) => {
   if (!is(Object, node)) return undefined;
 
-  if (node.constructor.name === 'XmlTextNode') {
+  if (node.type === 'text') {
     return fragment(node.text, attributes);
   }
 

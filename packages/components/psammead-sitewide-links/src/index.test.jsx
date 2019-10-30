@@ -22,4 +22,18 @@ describe(`SitewideLinks`, () => {
       service="news"
     />,
   );
+
+  shouldMatchSnapshot(
+    'should render correctly with trust project link',
+    <SitewideLinks
+      links={links}
+      trustProjectLink={{
+        href: 'http://www.bbc.com/terms',
+        text: 'Why you can trust the bbc',
+      }}
+      copyrightText={<span>Text here.</span>}
+      externalLink={link}
+      service="news"
+    />,
+  );
 });
