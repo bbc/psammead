@@ -11,9 +11,9 @@ exports[`Most read should render ltr correctly 1`] = `
 .c1 {
   color: #B80000;
   margin: 0;
-  width: 50px;
   padding-bottom: 0.5rem;
   display: inline-block;
+  min-width: 3rem;
 }
 
 .c2 {
@@ -29,6 +29,24 @@ exports[`Most read should render ltr correctly 1`] = `
   -webkit-text-decoration: underline;
   text-decoration: underline;
   cursor: pointer;
+}
+
+@media (max-width:37.5rem) {
+  .c0 {
+    margin-top: 4px;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .c0 {
+    margin-top: 6px;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .c1 {
+    width: 4rem;
+  }
 }
 
 <div
@@ -62,9 +80,9 @@ exports[`Most read should render rtl correctly 1`] = `
 .c1 {
   color: #B80000;
   margin: 0;
-  width: 50px;
   padding-bottom: 0.5rem;
   display: inline-block;
+  min-width: 3rem;
 }
 
 .c2 {
@@ -80,6 +98,24 @@ exports[`Most read should render rtl correctly 1`] = `
   -webkit-text-decoration: underline;
   text-decoration: underline;
   cursor: pointer;
+}
+
+@media (max-width:37.5rem) {
+  .c0 {
+    margin-top: 4px;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .c0 {
+    margin-top: 6px;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .c1 {
+    width: 4rem;
+  }
 }
 
 <div

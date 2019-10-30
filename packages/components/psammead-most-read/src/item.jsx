@@ -2,16 +2,25 @@ import React from 'react';
 import { oneOf, shape, string } from 'prop-types';
 import styled from 'styled-components';
 import { getCanon, getPica } from '@bbc/gel-foundations/typography';
-import { C_POSTBOX, C_EBON } from '@bbc/psammead-styles/colours';
+import { C_EBON, C_POSTBOX } from '@bbc/psammead-styles/colours';
 import { scriptPropType } from '@bbc/gel-foundations/prop-types';
 import { GEL_SPACING } from '@bbc/gel-foundations/spacings';
+import { GEL_GROUP_3_SCREEN_WIDTH_MIN } from '@bbc/gel-foundations/breakpoints';
 import {
-  getSerifMedium,
   getSerifLight,
+  getSerifMedium,
 } from '@bbc/psammead-styles/font-styles';
 
 const MostReadWrapper = styled.div`
   display: flex;
+
+  @media (max-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
+    margin-top: 4px;
+  }
+
+  @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
+    margin-top: 6px;
+  }
 `;
 
 export const CountWrapper = styled.p`
@@ -19,9 +28,13 @@ export const CountWrapper = styled.p`
   ${({ service }) => getSerifLight(service)}
   color: ${C_POSTBOX};
   margin: 0; /* Reset */
-  width: 50px;
   padding-bottom: ${GEL_SPACING};
   display: inline-block;
+  min-width: 3rem;
+  
+  @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
+    width: 4rem;
+  }
 `;
 
 export const ItemWrapper = styled.a`
