@@ -51,7 +51,7 @@ const Placeholder = ({ onClick, service, src, srcset, mediaInfo }) => {
   return (
     <StyledPlaceholder onClick={onClick}>
       {guidance ? (
-        <Guidance service={service} type={type} message={guidance}>
+        <Guidance service={service} message={guidance}>
           {renderPlaybutton()}
         </Guidance>
       ) : (
