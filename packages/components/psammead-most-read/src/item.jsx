@@ -15,7 +15,7 @@ const MostReadWrapper = styled.div`
   display: flex;
 
   @media (max-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
-    margin-top: 4px;
+    margin-top: 0.25rem;
   }
 
   @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
