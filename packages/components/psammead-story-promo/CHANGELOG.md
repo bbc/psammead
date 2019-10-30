@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 | ------- | ----------- |
+| 2.7.19 | [PR#2289](https://github.com/bbc/psammead/pull/2289) Patch - Bumping psammead-styles to 4.1.0 |
 | 3.0.0-alpha.5 | [PR#2519](https://github.com/bbc/psammead/pull/2519) Talos - Bump Dependencies - @bbc/psammead-styles |
 | 3.0.0-alpha.4 | [PR#2488](https://github.com/bbc/psammead/pull/2488) Talos - Bump Dependencies - @bbc/gel-foundations |
 | 3.0.0-alpha.3 | [PR#2477](https://github.com/bbc/psammead/pull/2477) Talos - Bump Dependencies - @bbc/psammead-styles |
@@ -11,7 +12,6 @@
 | 3.0.0-alpha.0 | [PR#2377](https://github.com/bbc/psammead/pull/2377) Spread extra props to the component |
 | 2.8.0-alpha.1 | [PR#2354](https://github.com/bbc/psammead/pull/2354) Add `sectionName` prop to set `data-story-promo` for event tracking |
 | 2.8.0-alpha.0 | [PR#2296](https://github.com/bbc/psammead/pull/2296) Change Story Promo design 1080+px |
-| 2.7.19 | [PR#2289](https://github.com/bbc/psammead/pull/2289) Patch - Bumping psammead-styles to 4.1.0 |
 | 2.7.18 | [PR#2289](https://github.com/bbc/psammead/pull/2289) Talos - Bump Dependencies - @bbc/psammead-styles |
 | 2.7.17 | [PR#2273](https://github.com/bbc/psammead/pull/2273) Talos - Bump Dependencies - @bbc/psammead-styles |
 | 2.7.16 | [PR#2251](https://github.com/bbc/psammead/pull/2251) Talos - Bump Dependencies - @bbc/psammead-styles |
