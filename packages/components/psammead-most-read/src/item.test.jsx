@@ -1,5 +1,6 @@
 import React from 'react';
 import { shouldMatchSnapshot } from '@bbc/psammead-test-helpers';
+import { latin } from '@bbc/gel-foundations/scripts';
 import MostRead from './item';
 
 const ltrItem = {
@@ -14,11 +15,23 @@ const rtlItem = {
 describe('Most read', () => {
   shouldMatchSnapshot(
     'should render ltr correctly',
-    <MostRead count="1" dir="ltr" item={ltrItem} />,
+    <MostRead
+      service="news"
+      script={latin}
+      count="1"
+      dir="ltr"
+      item={ltrItem}
+    />,
   );
 
   shouldMatchSnapshot(
     'should render rtl correctly',
-    <MostRead count="1" dir="rtl" item={rtlItem} />,
+    <MostRead
+      service="persian"
+      script={latin}
+      count="1"
+      dir="rtl"
+      item={rtlItem}
+    />,
   );
 });
