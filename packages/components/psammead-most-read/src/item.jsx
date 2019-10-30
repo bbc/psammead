@@ -40,7 +40,7 @@ export const CountWrapper = styled.p`
 `;
 
 export const TitleWrapper = styled.a`
-  ${({ script }) => script && getPica(script)};
+  ${({ script }) => script && getDoublePica(script)};
   ${({ service }) => getSerifMedium(service)}
   color: ${C_EBON};
   text-decoration: none;
