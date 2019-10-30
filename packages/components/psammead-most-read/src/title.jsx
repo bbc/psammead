@@ -13,7 +13,7 @@ const StyledHeading = styled.h2`
 `;
 
 const MostReadTitle = ({ header, ...props }) => (
-  <MostReadTitleWrapper {...props}>{header}</MostReadTitleWrapper>
+  <StyledHeading {...props}>{header}</StyledHeading>
 );
 
 MostReadTitle.propTypes = {
