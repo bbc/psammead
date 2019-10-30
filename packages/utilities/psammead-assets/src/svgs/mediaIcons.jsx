@@ -1,7 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
 import { C_EBON, C_WHITE } from '@bbc/psammead-styles/colours';
-import { GEL_SPACING_HLF } from '@bbc/gel-foundations/spacings';
+import {
+  GEL_SPACING_HLF,
+  GEL_SPACING_TRPL,
+} from '@bbc/gel-foundations/spacings';
 
 // `currentColor` has been used to better reflect user colour choices in Firefox.
 const MediaIcon = styled.svg`
@@ -27,8 +30,8 @@ const PhotoMediaIcon = styled(MediaIcon)`
 `;
 
 const GuidanceIcon = styled(MediaIcon)`
-  width: 1.5rem;
-  height: 1.5rem;
+  width: ${GEL_SPACING_TRPL};
+  height: ${GEL_SPACING_TRPL};
 `;
 
 const mediaIcons = {
