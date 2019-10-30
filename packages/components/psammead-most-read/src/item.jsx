@@ -19,7 +19,7 @@ const MostReadWrapper = styled.div`
   }
 
   @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
-    margin-top: 6px;
+    margin-top: 0.0625rem;
   }
 `;
 
