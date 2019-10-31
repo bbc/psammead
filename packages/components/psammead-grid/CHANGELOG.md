@@ -3,6 +3,8 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 1.0.0-alpha.11 | [PR#2439](https://github.com/bbc/psammead/pull/2439) Start offset, gutters and margins fallbacks |
+| 1.0.0-alpha.10 | [PR#2519](https://github.com/bbc/psammead/pull/2519) Talos - Bump Dependencies - @bbc/psammead-styles |
 | 1.0.0-alpha.9 | [PR#2458](https://github.com/bbc/psammead/pull/2458) Make all grid columns required |
 | 1.0.0-alpha.8 | [PR#2466](https://github.com/bbc/psammead/pull/2466) create rtl substories |
 | 1.0.0-alpha.7 | [PR#2488](https://github.com/bbc/psammead/pull/2488) Talos - Bump Dependencies - @bbc/gel-foundations |
