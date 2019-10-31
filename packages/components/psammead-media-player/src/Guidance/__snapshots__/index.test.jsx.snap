@@ -1,9 +1,13 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Media Player: Guidance should render Guidance 1`] = `
-.c3 {
-  color: #FFFFFF;
+.c4 {
+  vertical-align: middle;
+  margin: 0 0.25rem;
+  color: #222222;
   fill: currentColor;
+  width: 1rem;
+  height: 1rem;
 }
 
 .c0 {
@@ -12,6 +16,10 @@ exports[`Media Player: Guidance should render Guidance 1`] = `
   font-style: normal;
   font-size: 0.75rem;
   line-height: 1rem;
+}
+
+.c0 strong {
+  font-weight: normal;
 }
 
 .c1 {
@@ -25,19 +33,25 @@ exports[`Media Player: Guidance should render Guidance 1`] = `
 }
 
 .c2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
+  display: inline-grid;
+  grid-auto-flow: column;
   padding: 1rem 0.5rem;
 }
 
-@media (min-width:25rem) {
-  .c4 {
-    padding: 0.5rem 0 0 0;
+.c5 {
+  padding: 0 0 0 0.25rem;
+}
+
+.c3 > svg {
+  color: #FFFFFF;
+  fill: currentColor;
+  height: 1rem;
+  width: 1rem;
+}
+
+@media (max-width:25rem) {
+  .c3 {
+    padding: 0.25rem 0 0 0;
   }
 }
 
@@ -52,34 +66,25 @@ exports[`Media Player: Guidance should render Guidance 1`] = `
     >
       <div
         aria-hidden="true"
-        class=""
+        class="c3"
       >
         <svg
-          class="c3"
+          class="c4"
           focusable="false"
-          height="35px"
-          viewBox="0 0 44 44"
-          width="35px"
+          height="32"
+          viewBox="0 0 32 32"
+          width="32"
         >
-          <g>
-            <circle
-              cx="22"
-              cy="22"
-              fill="inherit"
-              r="11"
-            />
-            <path
-              d="M27.1,27.5h-1.8L25,26.3c-0.8,1.1-2,1.4-3.1,1.4c-3.3,0-5.5-2.5-5.5-5.7c0-3.2,2.2-5.7,5.5-5.7c2.3,0,4.7,1.2,5,4h-2.9c-0.1-0.9-1-1.5-2.2-1.5c-1.8,0-2.6,1.6-2.6,3.3c0,1.6,0.7,3.3,2.6,3.3c1.4,0,2.4-0.7,2.5-1.7h-2v-2.1h4.6V27.5z"
-              fill="#222222"
-            />
-          </g>
+          <path
+            d="M32,16A16,16,0,1,1,16,0,16,16,0,0,1,32,16Zm-8.6-.8H16.6v3.1h2.9c-.2,1.5-1.6,2.4-3.7,2.4s-3.7-2.4-3.7-4.7,1-4.7,3.7-4.7,3,.8,3.2,2.2h4.2c-.4-4-3.9-5.8-7.2-5.8-4.8,0-8,3.7-8,8.3s3.1,8.3,8,8.3a5.4,5.4,0,0,0,4.5-2.1l.2,1.7h2.7Z"
+          />
         </svg>
       </div>
-      <span
-        class="c4"
+      <strong
+        class="c5"
       >
         Guidance: Contains strong language with adult humor
-      </span>
+      </strong>
     </div>
   </div>
   <p>

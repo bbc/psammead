@@ -129,13 +129,13 @@ exports[`Media Player: Placeholder should render a video placeholder 1`] = `
 `;
 
 exports[`Media Player: Placeholder should render a video placeholder with guidance 1`] = `
-.c13 {
+.c14 {
   display: block;
   width: 100%;
   visibility: visible;
 }
 
-.c11 {
+.c12 {
   vertical-align: middle;
   margin: 0 0.25rem;
   color: #222222;
@@ -144,7 +144,16 @@ exports[`Media Player: Placeholder should render a video placeholder with guidan
   height: 0.75rem;
 }
 
-.c9 {
+.c6 {
+  vertical-align: middle;
+  margin: 0 0.25rem;
+  color: #222222;
+  fill: currentColor;
+  width: 1rem;
+  height: 1rem;
+}
+
+.c10 {
   -webkit-clip-path: inset(100%);
   clip-path: inset(100%);
   -webkit-clip: rect(1px,1px,1px,1px);
@@ -156,7 +165,7 @@ exports[`Media Player: Placeholder should render a video placeholder with guidan
   margin: 0;
 }
 
-.c7 {
+.c8 {
   background-color: #222222;
   border: none;
   color: #FFFFFF;
@@ -174,14 +183,14 @@ exports[`Media Player: Placeholder should render a video placeholder with guidan
   width: 5rem;
 }
 
-.c7:hover,
-.c7:focus {
+.c8:hover,
+.c8:focus {
   background-color: #B80000;
   -webkit-transition: background-color 300ms;
   transition: background-color 300ms;
 }
 
-.c10 > svg {
+.c11 > svg {
   color: #FFFFFF;
   fill: currentColor;
   height: 1.5rem;
@@ -189,14 +198,9 @@ exports[`Media Player: Placeholder should render a video placeholder with guidan
   width: 1.5rem;
 }
 
-.c12 {
+.c13 {
   display: block;
   margin-top: 0.5rem;
-}
-
-.c5 {
-  color: #FFFFFF;
-  fill: currentColor;
 }
 
 .c2 {
@@ -205,6 +209,10 @@ exports[`Media Player: Placeholder should render a video placeholder with guidan
   font-style: normal;
   font-size: 0.75rem;
   line-height: 1rem;
+}
+
+.c2 strong {
+  font-weight: normal;
 }
 
 .c3 {
@@ -218,14 +226,20 @@ exports[`Media Player: Placeholder should render a video placeholder with guidan
 }
 
 .c4 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
+  display: inline-grid;
+  grid-auto-flow: column;
   padding: 1rem 0.5rem;
+}
+
+.c7 {
+  padding: 0 0 0 0.25rem;
+}
+
+.c5 > svg {
+  color: #FFFFFF;
+  fill: currentColor;
+  height: 1rem;
+  width: 1rem;
 }
 
 .c1 {
@@ -237,19 +251,19 @@ exports[`Media Player: Placeholder should render a video placeholder with guidan
   height: 100%;
 }
 
-.c8 {
+.c9 {
   position: absolute;
   bottom: 0;
 }
 
-.c0:hover .c8,
-.c0:focus .c8 {
+.c0:hover .c9,
+.c0:focus .c9 {
   background-color: #B80000;
 }
 
-@media (min-width:25rem) {
-  .c6 {
-    padding: 0.5rem 0 0 0;
+@media (max-width:25rem) {
+  .c5 {
+    padding: 0.25rem 0 0 0;
   }
 }
 
@@ -267,51 +281,42 @@ exports[`Media Player: Placeholder should render a video placeholder with guidan
       >
         <div
           aria-hidden="true"
-          class=""
+          class="c5"
         >
           <svg
-            class="c5"
+            class="c6"
             focusable="false"
-            height="35px"
-            viewBox="0 0 44 44"
-            width="35px"
+            height="32"
+            viewBox="0 0 32 32"
+            width="32"
           >
-            <g>
-              <circle
-                cx="22"
-                cy="22"
-                fill="inherit"
-                r="11"
-              />
-              <path
-                d="M27.1,27.5h-1.8L25,26.3c-0.8,1.1-2,1.4-3.1,1.4c-3.3,0-5.5-2.5-5.5-5.7c0-3.2,2.2-5.7,5.5-5.7c2.3,0,4.7,1.2,5,4h-2.9c-0.1-0.9-1-1.5-2.2-1.5c-1.8,0-2.6,1.6-2.6,3.3c0,1.6,0.7,3.3,2.6,3.3c1.4,0,2.4-0.7,2.5-1.7h-2v-2.1h4.6V27.5z"
-                fill="#222222"
-              />
-            </g>
+            <path
+              d="M32,16A16,16,0,1,1,16,0,16,16,0,0,1,32,16Zm-8.6-.8H16.6v3.1h2.9c-.2,1.5-1.6,2.4-3.7,2.4s-3.7-2.4-3.7-4.7,1-4.7,3.7-4.7,3,.8,3.2,2.2h4.2c-.4-4-3.9-5.8-7.2-5.8-4.8,0-8,3.7-8,8.3s3.1,8.3,8,8.3a5.4,5.4,0,0,0,4.5-2.1l.2,1.7h2.7Z"
+            />
           </svg>
         </div>
-        <span
-          class="c6"
+        <strong
+          class="c7"
         >
           Guidance: May contain strong language, sexual or violent content that may offend.
-        </span>
+        </strong>
       </div>
     </div>
   </div>
   <button
-    class="c7 c8"
+    class="c8 c9"
   >
     <span
-      class="c9"
+      class="c10"
     >
       Play video, "Dog chases cat.", 2 minutes 30 seconds
     </span>
     <div
       aria-hidden="true"
-      class="c10"
+      class="c11"
     >
       <svg
-        class="c11"
+        class="c12"
         focusable="false"
         height="12px"
         viewBox="0 0 32 32"
@@ -324,7 +329,7 @@ exports[`Media Player: Placeholder should render a video placeholder with guidan
     </div>
     <time
       aria-hidden="true"
-      class="c12"
+      class="c13"
       datetime="PT2M30S"
     >
       2:30
@@ -332,7 +337,7 @@ exports[`Media Player: Placeholder should render a video placeholder with guidan
   </button>
   <img
     alt="Image Alt"
-    class="c13"
+    class="c14"
     src="http://foo.bar/placeholder.png"
   />
 </div>
