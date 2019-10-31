@@ -2,9 +2,10 @@
 
 <!-- prettier-ignore -->
 | Version | Description |
-| ------- |------------ |
-| 2.1.1 | [PR#2516](https://github.com/bbc/psammead/pull/2516) Add notes to stories. Add default `alt`, `height` and `width` values |
-| 2.1.0 | [PR#2424](https://github.com/bbc/psammead/pull/2424) Add srcset to placeholder image |
+| ------- | ----------- |
+| 2.1.2 | [PR#2516](https://github.com/bbc/psammead/pull/2516) Add notes to stories. Add default `alt`, `height` and `width` values |
+| 2.1.1 | [PR#2532](https://github.com/bbc/psammead/pull/2532) Rename "Media Player" story to "MediaPlayer"
+| 2.1.0 | [PR#2424](https://github.com/bbc/psammead/pull/2424) Add srcset to placeholder image
 | 2.0.2 | [PR#2486](https://github.com/bbc/psammead/pull/2486) Talos - Bump Dependencies - @bbc/psammead-image |
 | 2.0.1 | [PR#2317](https://github.com/bbc/psammead/pull/2317) Add `psammead-play-button` to Media Player placeholder |
 | 2.0.0 | [PR#2434](https://github.com/bbc/psammead/pull/2434) Add `title` attribute to AV media player |

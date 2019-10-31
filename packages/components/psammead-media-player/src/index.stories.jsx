@@ -38,7 +38,7 @@ storiesOf('Components|Media Player', module).add(
   { notes, knobs: { escapeHTML: false } },
 );
 
-storiesOf('Components|Media Player', module)
+storiesOf('Components|MediaPlayer', module)
   .addDecorator(ampDecorator)
   .add(
     'AMP',
@@ -47,6 +47,12 @@ storiesOf('Components|Media Player', module)
         isAmp
         src="https://www.test.bbc.co.uk/ws/av-embeds/articles/c3wmq4d1y3wo/p01k6msp/en/amp"
         placeholderSrc="https://ichef.bbci.co.uk/news/640/cpsdevpb/4eb7/test/ba7482d0-cca8-11e8-b0bf-f33155223fc4.jpg"
+        service="news"
+        mediaInfo={{
+          type: 'audio',
+          title: 'Dog barks at cat.',
+          ...withDuration,
+        }}
         title="Video player"
       />
     ),

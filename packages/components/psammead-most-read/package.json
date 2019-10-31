@@ -1,15 +1,15 @@
 {
-  "name": "@bbc/psammead-grid",
-  "version": "1.0.0-alpha.11",
+  "name": "@bbc/psammead-most-read",
+  "version": "0.1.0-alpha.1",
   "publishConfig": {
     "tag": "alpha"
   },
-  "description": "Grid setup for components",
+  "description": "A component for the most read item",
   "main": "dist/index.js",
   "module": "esm/index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/bbc/psammead/tree/latest/packages/components/psammead-grid"
+    "url": "https://github.com/bbc/psammead/tree/latest/packages/components/psammead-most-read"
   },
   "author": {
     "name": "Psammead Maintainers",
@@ -21,9 +21,8 @@
   },
   "keywords": [
     "bbc",
-    "grid",
-    "cssgrid",
-    "styled-components"
+    "most",
+    "read"
   ],
   "dependencies": {
     "@bbc/gel-foundations": "^3.4.1",
