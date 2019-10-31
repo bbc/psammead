@@ -19,7 +19,7 @@ The `MostReadItem` component is designed to display the most read articles given
 | script | object | yes | N/A | `{ canon: { groupA: { fontSize: '28', lineHeight: '32',}, groupB: { fontSize: '32', lineHeight: '36', }, groupD: { fontSize: '44', lineHeight: '48', }, }, trafalgar: { groupA: { fontSize: '20', lineHeight: '24', }, groupB: { fontSize: '24', lineHeight: '28', }, groupD: { fontSize: '32', lineHeight: '36', }, }, }` |
 | service | string | yes | N/A | `'news'` |
 | dir | string | no | `'ltr'` | `'rtl'`  |
-| lastUpdated | node | no | N/A | `<time>12 March 2019</time>` |
+| lastUpdated | node | no | null | `<time>12 March 2019</time>` |
 
 ## Usage
 
