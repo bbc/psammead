@@ -15,6 +15,10 @@ import { getSansRegular } from '@bbc/psammead-styles/font-styles';
 const StyledGuidance = styled.div`
   ${({ service }) => getSansRegular(service)}
   ${GEL_MINION};
+
+  strong {
+    font-weight: normal;
+  }
 `;
 
 const GuidanceWrapper = styled.div`
