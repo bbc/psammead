@@ -88,7 +88,7 @@ const lastUpdated = (script, service) => (
 
 Screenshot
 
-![most-read-item-with-last-Updated-date](documentation/most-read-item-with-last-Updated-date.png)
+![image](https://user-images.githubusercontent.com/53564281/67952042-8bea1580-fbe4-11e9-9c03-501fe1d4f6fc.png)
 
 ### When to use this component
 
