@@ -3,7 +3,7 @@
 
 ## Description
 
-The `MostReadItem` component is designed to display the most read articles given a designated period of time which is dependent on service. The component comprises of a `MostReadTitle`, a `MostReadList` which is a grid containing a `MostReadCount/Rank` (name subject to change) and a `MostReadItem`.
+The `MostRead` component is designed to display the most read articles given a designated period of time which is dependent on service. The component comprises of a `MostReadTitle`, a `MostReadList` which is a grid containing a `MostReadCount/Rank` (name subject to change) and a `MostReadItem`.
 
 ## Installation
 
