@@ -293,44 +293,43 @@ exports[`Media Player: Placeholder should render a video placeholder with guidan
         <span
           class="c6"
         >
-          Guidance: 
-          May contain strong language, sexual or violent content that may offend.
+          Guidance: May contain strong language, sexual or violent content that may offend.
         </span>
       </div>
     </div>
-    <button
-      class="c7 c8"
-    >
-      <span
-        class="c9"
-      >
-        Play video, "Dog chases cat.", 2 minutes 30 seconds
-      </span>
-      <div
-        aria-hidden="true"
-        class="c10"
-      >
-        <svg
-          class="c11"
-          focusable="false"
-          height="12px"
-          viewBox="0 0 32 32"
-          width="12px"
-        >
-          <polygon
-            points="3,32 29,16 3,0"
-          />
-        </svg>
-      </div>
-      <time
-        aria-hidden="true"
-        class="c12"
-        datetime="PT2M30S"
-      >
-        2:30
-      </time>
-    </button>
   </div>
+  <button
+    class="c7 c8"
+  >
+    <span
+      class="c9"
+    >
+      Play video, "Dog chases cat.", 2 minutes 30 seconds
+    </span>
+    <div
+      aria-hidden="true"
+      class="c10"
+    >
+      <svg
+        class="c11"
+        focusable="false"
+        height="12px"
+        viewBox="0 0 32 32"
+        width="12px"
+      >
+        <polygon
+          points="3,32 29,16 3,0"
+        />
+      </svg>
+    </div>
+    <time
+      aria-hidden="true"
+      class="c12"
+      datetime="PT2M30S"
+    >
+      2:30
+    </time>
+  </button>
   <img
     alt="Image Alt"
     class="c13"

@@ -78,8 +78,7 @@ exports[`Media Player: Guidance should render Guidance 1`] = `
       <span
         class="c4"
       >
-        Guidance: 
-        Contains strong language with adult humor
+        Guidance: Contains strong language with adult humor
       </span>
     </div>
   </div>
