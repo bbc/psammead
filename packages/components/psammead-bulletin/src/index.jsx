@@ -69,12 +69,13 @@ const Bulletin = ({
   type,
   ctaText,
   ctaLink,
+  liveText,
 }) => (
   <BulletinWrapper>
     {image && type === 'video' && image}
     <BulletinHeading script={script} service={service}>
       <VisuallyHiddenText>{ctaText}, </VisuallyHiddenText>
-      {isLive && <LiveLabel service={service}>Live</LiveLabel>}
+      {isLive && <LiveLabel service={service}>{liveText}</LiveLabel>}
       <Link href={ctaLink}>{headlineText}</Link>
     </BulletinHeading>
     <BulletinSummary script={script} service={service}>
@@ -97,11 +98,13 @@ Bulletin.propTypes = {
   image: node,
   summaryText: string.isRequired,
   headlineText: string.isRequired,
+  liveText: string,
 };
 
 Bulletin.defaultProps = {
   isLive: false,
   image: null,
+  liveText: 'Live',
 };
 
 export default Bulletin;
