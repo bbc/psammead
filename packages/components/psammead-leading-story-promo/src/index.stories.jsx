@@ -132,7 +132,7 @@ storiesOf('Components|StoryPromo/LeadingStoryPromo', module)
     ({ text, script, service, dir }) => (
       <LeadingStoryPromo
         image={Img}
-        info={generateInfo(text, script, service, dir)}
+        info={generateInfo(text, script, service, dir, true)}
       />
     ),
     { notes, knobs: { escapeHTML: false } },
