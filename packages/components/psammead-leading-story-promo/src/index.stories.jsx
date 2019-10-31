@@ -3,7 +3,7 @@ import { storiesOf } from '@storybook/react';
 import { withKnobs, text } from '@storybook/addon-knobs';
 import { withServicesKnob } from '@bbc/psammead-storybook-helpers';
 import Image from '@bbc/psammead-image';
-import StoryPromo, { Summary, Link } from '@bbc/psammead-story-promo';
+import StoryPromo, { Headline, Summary, Link } from '@bbc/psammead-story-promo';
 import Grid from '@bbc/psammead-grid';
 import notes from '../README.md';
 import LeadingStoryPromo, { LeadingPromoHeadline } from './index';
@@ -19,32 +19,48 @@ const buildImg = () => (
   />
 );
 
-/* eslint-disable-next-line react/prop-types */
-const InfoComponent = ({ headlineText, summaryText, script, service }) => (
-  <>
-    <LeadingPromoHeadline script={script} service={service}>
-      <Link href="https://www.bbc.co.uk/news">{headlineText}</Link>
-    </LeadingPromoHeadline>
-    <Summary script={script} service={service}>
-      {summaryText}
-    </Summary>
-  </>
-);
+/* eslint-disable react/prop-types */
+const InfoComponent = ({
+  headlineText,
+  summaryText,
+  script,
+  service,
+  isLeadingPromo,
+}) => {
+  const link = <Link href="https://www.bbc.co.uk/news">{headlineText}</Link>;
+  return (
+    <>
+      {isLeadingPromo ? (
+        <LeadingPromoHeadline script={script} service={service}>
+          {link}
+        </LeadingPromoHeadline>
+      ) : (
+        <Headline script={script} service={service}>
+          {link}
+        </Headline>
+      )}
+      <Summary script={script} service={service}>
+        {summaryText}
+      </Summary>
+    </>
+  );
+};
+/* eslint-enable react/prop-types */
 
 /* eslint-disable-next-line no-shadow */
-const generateInfo = (text, script, service, dir) => (
+const generateInfo = (text, script, service, dir, isLeadingPromo) => (
   <InfoComponent
     headlineText={text}
     summaryText={text}
     script={script}
     service={service}
     dir={dir}
+    isLeadingPromo={isLeadingPromo}
   />
 );
 
 /* eslint-disable-next-line no-shadow */
 const generate2FeatureStory = (text, script, service, dir, Img) => {
-  const Info = generateInfo(text, script, service, dir);
   return (
     <Grid
       columns={{
@@ -68,7 +84,10 @@ const generate2FeatureStory = (text, script, service, dir, Img) => {
           group5: 6,
         }}
       >
-        <LeadingStoryPromo image={Img} info={Info} />
+        <LeadingStoryPromo
+          image={Img}
+          info={generateInfo(text, script, service, dir, true)}
+        />
       </Grid>
       <Grid
         columns={{
@@ -92,7 +111,10 @@ const generate2FeatureStory = (text, script, service, dir, Img) => {
             group5: 2,
           }}
         >
-          <StoryPromo image={Img} info={Info} />
+          <StoryPromo
+            image={Img}
+            info={generateInfo(text, script, service, dir, false)}
+          />
         </Grid>
       </Grid>
     </Grid>
