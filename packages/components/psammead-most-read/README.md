@@ -3,14 +3,16 @@
 
 ## Description
 
-The `MostReadItem` component is designed to display the most read articles given a designated period of time which is dependent on service. The component comprises of a `MostReadTitle`, a `MostReadList` which is a grid containing `MostReadItems`. A `MostReadItem` comprises of a numerical counter representing its ranking and a link to the article.
+The `MostRead` component is designed to display the most read articles given a designated period of time which is dependent on service. The component comprises of a `MostReadTitle`, a `MostReadList` which is a grid containing `MostReadItems`, a `MostReadItem` comprising of and a link to the article, and a `StyledCountSpan` which is a numerical counter representing its ranking.
 
 ## Installation
 
-`npm install @bbc/psammead-most-read/esm/item`
+`npm install @bbc/psammead-most-read`
 
 ## Props
+
 ### MostReadItem props
+
 <!-- prettier-ignore -->
 | Argument | Type | Required | Default | Example |
 | -------- | ---- | -------- | ------- | ------- |
@@ -21,36 +23,35 @@ The `MostReadItem` component is designed to display the most read articles given
 | dir | string | no | `'ltr'` | `'rtl'`  |
 | lastUpdated | node | no | null | `<time>12 March 2019</time>` |
 
-## Usage
+## MostReadItem Usage
 
 A typical use-case of this component is as displayed below. It contains a count and an info element. The info element is a link which points to the corresponding article while the count is a number that represents the position of the info element on the list of info elements.
 
 ```jsx
 import React from 'react';
 import { latin } from '@bbc/gel-foundations/scripts';
-import MostReadItem from '@bbc/psammead-most-read/esm/item';
+import { MostReadItem } from '@bbc/psammead-most-read/esm/item';
 
 const item = {
     title: 'Cranberries singer O'Riordan died by drowning,
     href: 'https://www.bbc.com'
 }
 
-<MostReadItem item={item} script={latin} count="1" service="news" dir="ltr" />;
+<MostReadItem item={item} script={latin} service="news" dir="ltr" />;
 
 ```
+
 Screenshot
 
 ![most-read-single-item](documentation/most-read-single-item.png)
 
-
 #### <a name="example with last updated date">Example with last updated date</a>
-
 
 ```jsx
 import React from 'react';
 import { latin } from '@bbc/gel-foundations/scripts';
 import Timestamp from '@bbc/psammead-timestamp-container';
-import MostReadItem from '@bbc/psammead-most-read/esm/item';
+import { MostReadItem } from '@bbc/psammead-most-read/esm/item';
 
 const item = {
     title: 'Cranberries singer O'Riordan died by drowning,
@@ -68,12 +69,11 @@ const lastUpdated = (script, service) => (
   />
 );
 
-<MostReadItem 
-    lastUpdated={lastUpdated} 
-    item={item} 
-    script={latin} 
-    count="1" 
-    service="news" 
+<MostReadItem
+    lastUpdated={lastUpdated}
+    item={item}
+    script={latin}
+    service="news"
     dir="ltr"
 />;
 
@@ -82,6 +82,25 @@ const lastUpdated = (script, service) => (
 Screenshot
 
 ![most-read-item-with-last-Updated-date](documentation/most-read-item-with-last-Updated-date.png)
+
+### StyledCountSpan props
+
+<!-- prettier-ignore -->
+| Argument | Type | Required | Default | Example |
+| -------- | ---- | -------- | ------- | ------- |
+| script | object | yes | N/A | `{ canon: { groupA: { fontSize: '28', lineHeight: '32',}, groupB: { fontSize: '32', lineHeight: '36', }, groupD: { fontSize: '44', lineHeight: '48', }, }, trafalgar: { groupA: { fontSize: '20', lineHeight: '24', }, groupB: { fontSize: '24', lineHeight: '28', }, groupD: { fontSize: '32', lineHeight: '36', }, }, }` |
+| service | string | yes | N/A | `'news'` |
+
+## StyledCountSpan Usage
+
+```jsx
+import React from 'react';
+import { latin } from '@bbc/gel-foundations/scripts';
+import { StyledCountSpan } from '@bbc/psammead-most-read/esm/item';
+
+<StyledCountSpan script={latin} service="news">10</StyledCountSpan>;
+
+```
 
 ### When to use this component
 
@@ -93,7 +112,7 @@ Currently this component is in alpha. This is because it has not yet been tested
 
 ## Roadmap
 
-Currently, this package only exports the `MostReadItem` component. We will add a wrapper that will export a list of most read components using `@bbc/psammead-grid` to display the most read items on a grid. 
+Currently, this package only exports the `MostReadItem` component. We will add a wrapper that will export a list of most read components using `@bbc/psammead-grid` to display the most read items on a grid.
 
 ## Contributing
 
