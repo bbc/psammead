@@ -1,17 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`LeadingStoryPromo should render RTL leading story promo correctly 1`] = `
-.c2 {
-  font-size: 1rem;
-  line-height: 1.625rem;
-  font-family: ReithSerif,Helvetica,Arial,sans-serif;
-  font-weight: 500;
-  font-style: normal;
-  color: #222222;
-  margin: 0;
-  padding-bottom: 0.5rem;
-}
-
 .c4 {
   font-size: 1.0625rem;
   line-height: 1.5rem;
@@ -63,25 +52,15 @@ exports[`LeadingStoryPromo should render RTL leading story promo correctly 1`] =
   width: 33.33%;
 }
 
-@media (min-width:20rem) and (max-width:37.4375rem) {
-  .c2 {
-    font-size: 1.25rem;
-    line-height: 1.625rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c2 {
-    font-size: 1.25rem;
-    line-height: 1.625rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c2 {
-    font-size: 1.625rem;
-    line-height: 2.125rem;
-  }
+.c2 {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-family: ReithSerif,Helvetica,Arial,sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  color: #222222;
+  margin: 0;
+  padding-bottom: 0.5rem;
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
@@ -132,6 +111,20 @@ exports[`LeadingStoryPromo should render RTL leading story promo correctly 1`] =
   }
 }
 
+@media (min-width:20rem) and (max-width:37.4375rem) {
+  .c2 {
+    font-size: 1.625rem;
+    line-height: 2.25rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .c2 {
+    font-size: 1.75rem;
+    line-height: 2.25rem;
+  }
+}
+
 <div
   class="c0"
 >
@@ -166,17 +159,6 @@ exports[`LeadingStoryPromo should render RTL leading story promo correctly 1`] =
 `;
 
 exports[`LeadingStoryPromo should render default leading story promo correctly 1`] = `
-.c2 {
-  font-size: 0.9375rem;
-  line-height: 1.25rem;
-  font-family: ReithSerif,Helvetica,Arial,sans-serif;
-  font-weight: 500;
-  font-style: normal;
-  color: #222222;
-  margin: 0;
-  padding-bottom: 0.5rem;
-}
-
 .c4 {
   font-size: 0.9375rem;
   line-height: 1.125rem;
@@ -228,25 +210,15 @@ exports[`LeadingStoryPromo should render default leading story promo correctly 1
   width: 33.33%;
 }
 
-@media (min-width:20rem) and (max-width:37.4375rem) {
-  .c2 {
-    font-size: 1rem;
-    line-height: 1.25rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c2 {
-    font-size: 1rem;
-    line-height: 1.25rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c2 {
-    font-size: 1.25rem;
-    line-height: 1.5rem;
-  }
+.c2 {
+  font-size: 1.125rem;
+  line-height: 1.375rem;
+  font-family: ReithSerif,Helvetica,Arial,sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  color: #222222;
+  margin: 0;
+  padding-bottom: 0.5rem;
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
@@ -294,6 +266,20 @@ exports[`LeadingStoryPromo should render default leading story promo correctly 1
 @supports (grid-template-columns:fit-content(200px)) {
   .c1 {
     width: 100%;
+  }
+}
+
+@media (min-width:20rem) and (max-width:37.4375rem) {
+  .c2 {
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .c2 {
+    font-size: 1.5rem;
+    line-height: 1.75rem;
   }
 }
 

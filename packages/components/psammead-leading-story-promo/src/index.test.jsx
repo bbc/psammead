@@ -1,17 +1,17 @@
 import React from 'react';
 import { shouldMatchSnapshot } from '@bbc/psammead-test-helpers';
 import { latin, arabic } from '@bbc/gel-foundations/scripts';
-import { Headline, Summary, Link } from '@bbc/psammead-story-promo';
-import LeadingStoryPromo from './index';
+import { Summary, Link } from '@bbc/psammead-story-promo';
+import LeadingStoryPromo, { LeadingPromoHeadline } from './index';
 
 const Image = <img src="https://foobar.com/image.png" alt="Alt text" />;
 
 // eslint-disable-next-line react/prop-types
 const Info = (script, headlineText, summaryText) => (
   <>
-    <Headline script={script} service="news">
+    <LeadingPromoHeadline script={script} service="news">
       <Link href="https://www.bbc.co.uk/news">{headlineText}</Link>
-    </Headline>
+    </LeadingPromoHeadline>
     <Summary script={script} service="news">
       {summaryText}
     </Summary>
