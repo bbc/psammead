@@ -3,51 +3,104 @@
 
 ## Description
 
-The `MostRead` component is designed to be used on the `article` pages, which are pages that display articles/stories. It's designed to have a numerical count and a link to another article.
+The `MostReadItem` component is designed to display the most read articles given a designated period of time which is dependent on service. The component comprises of a `MostReadTitle`, a `MostReadList` which is a grid containing a `MostReadCount/Rank` (name subject to change) and a `MostReadItem`.
 
 ## Installation
 
-`npm install @bbc/psammead-most-read`
+`npm install @bbc/psammead-most-read/esm/item`
 
 ## Props
-
+### MostReadTitle props
 <!-- prettier-ignore -->
 | Argument | Type | Required | Default | Example |
 | -------- | ---- | -------- | ------- | ------- |
-| item | object | yes | N/A | `{ header: 'This is a item', href: 'https://www.bbc.com' }` |
-| count | string | yes | N/A | `'rtl'`  |
+| script | object | yes | N/A | `{ canon: { groupA: { fontSize: '28', lineHeight: '32',}, groupB: { fontSize: '32', lineHeight: '36', }, groupD: { fontSize: '44', lineHeight: '48', }, }, trafalgar: { groupA: { fontSize: '20', lineHeight: '24', }, groupB: { fontSize: '24', lineHeight: '28', }, groupD: { fontSize: '32', lineHeight: '36', }, }, }` |
+| service | string | yes | N/A | `'news'` |
+| header | string | yes | N/A | `'Most Read'`  |
+
+
+### MostReadItem props
+<!-- prettier-ignore -->
+| Argument | Type | Required | Default | Example |
+| -------- | ---- | -------- | ------- | ------- |
+| item | object | yes | N/A | `{ title: 'This is a item', href: 'https://www.bbc.com' }` |
 | script | object | yes | N/A | `{ canon: { groupA: { fontSize: '28', lineHeight: '32',}, groupB: { fontSize: '32', lineHeight: '36', }, groupD: { fontSize: '44', lineHeight: '48', }, }, trafalgar: { groupA: { fontSize: '20', lineHeight: '24', }, groupB: { fontSize: '24', lineHeight: '28', }, groupD: { fontSize: '32', lineHeight: '36', }, }, }` |
 | service | string | yes | N/A | `'news'` |
 | dir | string | no | `'ltr'` | `'rtl'`  |
+| lastUpdated | node | no | null | `<time>12 March 2019</time>` |
 
 ## Usage
 
-A typical use-case of this component is as displayed below. It contains a count and an info elements. The info element is a link which point to the corresponding article while the count is a number that represent the position of the info element on the list of info elements.
+A typical use-case of this component is as displayed below. It contains a ranking and an info element. The info element is a link which points to the corresponding article whilst the rank is a number that represents the position of the info element on the list of info elements. (WIP)
 
 ```jsx
 import React from 'react';
-import MostRead from '@bbc/psammead-most-read';
+import { latin } from '@bbc/gel-foundations/scripts';
+import MostReadItem from '@bbc/psammead-most-read/esm/item';
 
 const item = {
-    header: 'Cranberries singer O'Riordan died by drowning,
+    title: 'Cranberries singer O'Riordan died by drowning,
     href: 'https://www.bbc.com'
 }
 
-<MostRead item={item} count="1" service="news" dir="ltr" />;
+<MostReadItem item={item} script={latin} service="news" dir="ltr" />;
 
 ```
+Screenshot
 
 ![most-read-single-item](documentation/most-read-single-item.png)
 
+
+#### <a name="example with last updated date">Example with last updated date</a>
+
+
+```jsx
+import React from 'react';
+import { latin } from '@bbc/gel-foundations/scripts';
+import Timestamp from '@bbc/psammead-timestamp-container';
+import MostReadItem from '@bbc/psammead-most-read/esm/item';
+
+const item = {
+    title: 'Cranberries singer O'Riordan died by drowning,
+    href: 'https://www.bbc.com'
+}
+
+const lastUpdated = (script, service) => (
+  <Timestamp
+    timestamp={1570031976502}
+    dateTimeFormat="YYYY-MM-DD"
+    prefix="Last updated: "
+    format="LL"
+    script={script}
+    service={service}
+  />
+);
+
+<MostReadItem 
+    lastUpdated={lastUpdated} 
+    item={item} 
+    script={latin} 
+    service="news" 
+    dir="ltr"
+/>;
+
+```
+
+Screenshot
+
+![most-read-item-with-last-Updated-date](documentation/most-read-item-with-last-Updated-date.png)
+
 ### When to use this component
 
-<!-- ### When not to use this component -->
+This component is to be used on `article` pages.
 
 ### Accessibility notes
 
 Currently this component is in alpha. This is because it has not yet been tested with various assistive technologies. After it has had an accessibility swarm, this will be published under a standard version.
 
 ## Roadmap
+
+Currently, this package only exports the `MostReadItem` component. We will add a wrapper that will export a list of most read components using `@bbc/psammead-grid` to display the most read items on a grid. 
 
 ## Contributing
 
