@@ -115,7 +115,6 @@ exports[`Most read should render last updated date correctly 1`] = `
 >
   <span
     class="c1"
-    dir="ltr"
   >
     10
   </span>
@@ -124,7 +123,6 @@ exports[`Most read should render last updated date correctly 1`] = `
   >
     <a
       class="c2"
-      dir="ltr"
       href="https://www.bbc.com/vietnamese/institutional-49283563"
     >
       John Lewis staff bonus cut again as profits fall
@@ -230,7 +228,6 @@ exports[`Most read should render ltr correctly 1`] = `
 >
   <span
     class="c1"
-    dir="ltr"
   >
     1
   </span>
@@ -239,7 +236,6 @@ exports[`Most read should render ltr correctly 1`] = `
   >
     <a
       class="c2"
-      dir="ltr"
       href="https://www.bbc.com/vietnamese/institutional-49283563"
     >
       John Lewis staff bonus cut again as profits fall
@@ -339,7 +335,6 @@ exports[`Most read should render rtl correctly 1`] = `
 >
   <span
     class="c1"
-    dir="rtl"
   >
     1
   </span>
@@ -348,7 +343,6 @@ exports[`Most read should render rtl correctly 1`] = `
   >
     <a
       class="c2"
-      dir="rtl"
       href="https://www.bbc.com/vietnamese/institutional-49283563"
     >
       ایران از لغو 'رزمایش قطع اینترنت' خبر داد

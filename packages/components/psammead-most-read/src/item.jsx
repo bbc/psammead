@@ -54,11 +54,12 @@ export const StyledLink = styled.a`
 
 const MostReadItem = ({
   count,
+  dir,
   lastUpdated,
   item: { title, href },
   ...props
 }) => (
-  <MostReadWrapper {...props}>
+  <MostReadWrapper dir={dir}>
     <StyledCountSpan {...props}>{count}</StyledCountSpan>
     <ItemWrapper>
       <StyledLink href={href} {...props}>
