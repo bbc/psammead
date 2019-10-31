@@ -259,6 +259,7 @@ locales.forEach(({ name, locale, dir }) => {
     ),
     {
       notes,
+      chromatic: { disable: true },
     }
   );
 });
