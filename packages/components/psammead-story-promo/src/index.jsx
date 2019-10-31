@@ -197,7 +197,8 @@ const TextGridFallback = css`
   }
 
   ${({ displayImage }) =>
-    !displayImage && `width: ${fullWidthColumnsMaxScaleable};`}
+    !displayImage &&
+    `width: ${fullWidthColumnsMaxScaleable}; >div{ vertical-align: middle; }`}
 `;
 
 const TextGridItem = styled.div`
@@ -215,7 +216,8 @@ const TextGridItem = styled.div`
   }
 
   ${({ displayImage }) =>
-    !displayImage && `>div{ display:inline-block; padding: 0; } `}
+    !displayImage &&
+    `>div{ display:inline-block; padding: 0; vertical-align:initial; } `}
 `;
 
 // This is needed to get around the issue of IE11 not supporting
