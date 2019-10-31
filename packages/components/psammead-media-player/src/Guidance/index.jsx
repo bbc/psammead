@@ -1,36 +1,16 @@
 import React from 'react';
 import { string, node } from 'prop-types';
 import styled from 'styled-components';
-import { C_EBON, C_WHITE } from '@bbc/psammead-styles/colours';
+import { C_WHITE } from '@bbc/psammead-styles/colours';
 import { GEL_GROUP_2_SCREEN_WIDTH_MIN } from '@bbc/gel-foundations/breakpoints';
+import { mediaIcons } from '@bbc/psammead-assets/svgs';
 import {
   GEL_MARGIN_BELOW_400PX,
   GEL_SPACING_DBL,
+  GEL_SPACING_HLF,
 } from '@bbc/gel-foundations/spacings';
 import { GEL_MINION } from '@bbc/gel-foundations/typography';
 import { getSansRegular } from '@bbc/psammead-styles/font-styles';
-
-const StyledGuidanceIcon = styled.svg`
-  color: ${C_WHITE};
-  fill: currentColor;
-`;
-
-const GuidanceIcon = () => (
-  <StyledGuidanceIcon
-    viewBox="0 0 44 44"
-    focusable="false"
-    height="35px"
-    width="35px"
-  >
-    <g>
-      <circle fill="inherit" cx="22" cy="22" r="11" />
-      <path
-        fill={C_EBON}
-        d="M27.1,27.5h-1.8L25,26.3c-0.8,1.1-2,1.4-3.1,1.4c-3.3,0-5.5-2.5-5.5-5.7c0-3.2,2.2-5.7,5.5-5.7c2.3,0,4.7,1.2,5,4h-2.9c-0.1-0.9-1-1.5-2.2-1.5c-1.8,0-2.6,1.6-2.6,3.3c0,1.6,0.7,3.3,2.6,3.3c1.4,0,2.4-0.7,2.5-1.7h-2v-2.1h4.6V27.5z"
-      />
-    </g>
-  </StyledGuidanceIcon>
-);
 
 const StyledGuidance = styled.div`
   ${({ service }) => getSansRegular(service)}
@@ -48,27 +28,33 @@ const GuidanceWrapper = styled.div`
 `;
 
 const Content = styled.div`
-  display: flex;
-  flex-direction: row;
+  display: inline-grid;
+  grid-auto-flow: column;
   padding: ${GEL_SPACING_DBL} ${GEL_MARGIN_BELOW_400PX};
 `;
 
-const GuidanceMessage = styled.span`
-  @media (min-width: ${GEL_GROUP_2_SCREEN_WIDTH_MIN}) {
-    padding: ${GEL_MARGIN_BELOW_400PX} 0 0 0;
-  }
+const GuidanceMessage = styled.strong`
+  padding: 0 0 0 ${GEL_SPACING_HLF};
 `;
 
-const IconWrapper = styled.div``;
+const IconWrapper = styled.div`
+  > svg {
+    color: ${C_WHITE};
+    fill: currentColor;
+    height: ${GEL_SPACING_DBL};
+    width: ${GEL_SPACING_DBL};
+  }
+  @media (max-width: ${GEL_GROUP_2_SCREEN_WIDTH_MIN}) {
+    padding: ${GEL_SPACING_HLF} 0 0 0;
+  }
+`;
 
 const Guidance = ({ guidanceMessage, service, children }) => {
   return (
     <StyledGuidance service={service}>
       <GuidanceWrapper>
         <Content>
-          <IconWrapper aria-hidden="true">
-            <GuidanceIcon />
-          </IconWrapper>
+          <IconWrapper aria-hidden="true">{mediaIcons.guidance}</IconWrapper>
           <GuidanceMessage>{guidanceMessage}</GuidanceMessage>
         </Content>
       </GuidanceWrapper>
