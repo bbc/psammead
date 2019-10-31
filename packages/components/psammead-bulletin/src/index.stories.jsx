@@ -38,14 +38,13 @@ storiesOf('Components|Bulletin', module)
   .addDecorator(withServicesKnob())
   .add(
     'Tv Bulletin',
-    ({ script, service, dir }) => {
+    ({ script, service }) => {
       const isLive = boolean('Live', false);
       return (
         <BulletinComponent
           isLive={isLive}
           script={script}
           service={service}
-          dir={dir}
           type="video"
           ctaText="Watch"
         />
@@ -55,14 +54,13 @@ storiesOf('Components|Bulletin', module)
   )
   .add(
     'Radio Bulletin',
-    ({ script, service, dir }) => {
+    ({ script, service }) => {
       const isLive = boolean('Live', false);
       return (
         <BulletinComponent
           isLive={isLive}
           script={script}
           service={service}
-          dir={dir}
           type="audio"
           ctaText="Listen"
         />

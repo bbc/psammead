@@ -37,7 +37,6 @@ describe('Bulletin', () => {
     <BulletinComponent
       script={latin}
       service="news"
-      dir="ltr"
       ctaText="Listen"
       type="audio"
     />,
@@ -48,7 +47,6 @@ describe('Bulletin', () => {
     <BulletinComponent
       script={latin}
       service="news"
-      dir="ltr"
       ctaText="Watch"
       type="video"
     />,
@@ -59,7 +57,6 @@ describe('Bulletin', () => {
     <BulletinComponent
       script={latin}
       service="news"
-      dir="ltr"
       ctaText="Listen"
       type="audio"
       isLive
@@ -71,7 +68,6 @@ describe('Bulletin', () => {
     <BulletinComponent
       script={latin}
       service="news"
-      dir="ltr"
       ctaText="Watch"
       type="video"
       isLive
