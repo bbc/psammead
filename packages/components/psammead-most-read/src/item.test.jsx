@@ -2,7 +2,7 @@ import React from 'react';
 import { shouldMatchSnapshot } from '@bbc/psammead-test-helpers';
 import Timestamp from '@bbc/psammead-timestamp';
 import { latin, arabic } from '@bbc/gel-foundations/scripts';
-import MostReadItem from './item';
+import { MostReadItem, StyledCountSpan } from './item';
 
 const ltrItem = {
   title: 'John Lewis staff bonus cut again as profits fall',
@@ -24,27 +24,15 @@ const lastUpdated = (script, service) => (
   </Timestamp>
 );
 
-describe('Most read', () => {
+describe('Most read item', () => {
   shouldMatchSnapshot(
     'should render ltr correctly',
-    <MostReadItem
-      service="news"
-      script={latin}
-      count="1"
-      dir="ltr"
-      item={ltrItem}
-    />,
+    <MostReadItem service="news" script={latin} dir="ltr" item={ltrItem} />,
   );
 
   shouldMatchSnapshot(
     'should render rtl correctly',
-    <MostReadItem
-      service="persian"
-      script={arabic}
-      count="1"
-      dir="rtl"
-      item={rtlItem}
-    />,
+    <MostReadItem service="persian" script={arabic} dir="rtl" item={rtlItem} />,
   );
 
   shouldMatchSnapshot(
@@ -52,10 +40,32 @@ describe('Most read', () => {
     <MostReadItem
       service="news"
       script={latin}
-      count="10"
       dir="ltr"
       item={ltrItem}
       lastUpdated={lastUpdated(latin, 'news')}
     />,
+  );
+});
+
+describe('Most read count', () => {
+  shouldMatchSnapshot(
+    'should render ltr correctly',
+    <StyledCountSpan service="news" script={latin}>
+      5
+    </StyledCountSpan>,
+  );
+
+  shouldMatchSnapshot(
+    'should render ltr double digit correctly',
+    <StyledCountSpan service="news" script={latin}>
+      10
+    </StyledCountSpan>,
+  );
+
+  shouldMatchSnapshot(
+    'should render rtl correctly',
+    <StyledCountSpan service="persian" script={arabic}>
+      ۲
+    </StyledCountSpan>,
   );
 });

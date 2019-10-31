@@ -3,7 +3,7 @@ import { storiesOf } from '@storybook/react';
 import { withKnobs } from '@storybook/addon-knobs';
 import { withServicesKnob } from '@bbc/psammead-storybook-helpers';
 import Timestamp from '@bbc/psammead-timestamp';
-import MostReadItem from './item';
+import { MostReadItem, StyledCountSpan } from './item';
 
 const items = [
   {
@@ -11,7 +11,6 @@ const items = [
       title: 'John Lewis staff bonus cut again as profits fall',
       href: 'https://www.bbc.com/vietnamese/institutional-49283563',
     },
-    count: '6',
     dir: 'ltr',
   },
   {
@@ -19,7 +18,6 @@ const items = [
       title: "ایران از لغو 'رزمایش قطع اینترنت' خبر داد",
       href: 'https://www.bbc.com/vietnamese/institutional-49283563',
     },
-    count: '۲',
     dir: 'rtl',
   },
 ];
@@ -39,28 +37,40 @@ const stories = storiesOf('Components|MostRead/MostReadItem', module)
   .addDecorator(withKnobs)
   .addDecorator(withServicesKnob());
 
-items.forEach(({ item, count, dir }) => {
-  stories.add(`Default ${dir}`, ({ script, service }) => (
-    <MostReadItem
-      dir={dir}
-      item={item}
-      count={count}
-      service={service}
-      script={script}
-    />
+items.forEach(({ item, dir }) => {
+  stories.add(`MostReadItem ${dir}`, ({ script, service }) => (
+    <MostReadItem dir={dir} item={item} service={service} script={script} />
   ));
 });
 
-stories.add(`Item with last updated date`, ({ script, service }) => (
+const item = {
+  title: 'Stranded Indian ship put up for sale',
+  href: 'https://www.bbc.com',
+};
+
+stories.add(`MostReadItem with last updated date`, ({ script, service }) => (
   <MostReadItem
     dir="ltr"
-    item={{
-      title: 'Stranded Indian ship put up for sale',
-      href: 'https://www.bbc.com',
-    }}
-    count="10"
+    item={item}
     service={service}
     script={script}
     lastUpdated={lastUpdated(script, service)}
   />
 ));
+
+stories
+  .add(`StyledCountSpan LTR`, ({ script, service }) => (
+    <StyledCountSpan dir="ltr" service={service} script={script}>
+      5
+    </StyledCountSpan>
+  ))
+  .add(`StyledCountSpan LTR double digits`, ({ script, service }) => (
+    <StyledCountSpan dir="ltr" service={service} script={script}>
+      10
+    </StyledCountSpan>
+  ))
+  .add(`StyledCountSpan RTL`, ({ script, service }) => (
+    <StyledCountSpan dir="rtl" service={service} script={script}>
+      ۲
+    </StyledCountSpan>
+  ));

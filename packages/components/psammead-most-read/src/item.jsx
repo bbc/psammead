@@ -11,18 +11,6 @@ import {
   getSerifMedium,
 } from '@bbc/psammead-styles/font-styles';
 
-const MostReadWrapper = styled.div`
-  display: flex;
-
-  @media (max-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
-    margin-top: 0.25rem;
-  }
-
-  @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
-    margin-top: 0.0625rem;
-  }
-`;
-
 const ItemWrapper = styled.div``;
 
 export const StyledCountSpan = styled.span`
@@ -39,7 +27,7 @@ export const StyledCountSpan = styled.span`
   }
 `;
 
-export const StyledLink = styled.a`
+const StyledLink = styled.a`
   ${({ script }) => script && getDoublePica(script)};
   ${({ service }) => getSerifMedium(service)}
   color: ${C_EBON};
@@ -52,27 +40,28 @@ export const StyledLink = styled.a`
   }
 `;
 
-const MostReadItem = ({
-  count,
+export const MostReadItem = ({
   dir,
   lastUpdated,
+  script,
+  service,
   item: { title, href },
-  ...props
 }) => (
-  <MostReadWrapper dir={dir}>
-    <StyledCountSpan {...props}>{count}</StyledCountSpan>
-    <ItemWrapper>
-      <StyledLink href={href} {...props}>
-        {title}
-      </StyledLink>
-      {lastUpdated}
-    </ItemWrapper>
-  </MostReadWrapper>
+  <ItemWrapper dir={dir}>
+    <StyledLink href={href} script={script} service={service}>
+      {title}
+    </StyledLink>
+    {lastUpdated}
+  </ItemWrapper>
 );
+
+StyledCountSpan.propTypes = {
+  service: string.isRequired,
+  script: shape(scriptPropType).isRequired,
+};
 
 MostReadItem.propTypes = {
   dir: string,
-  count: string.isRequired,
   service: string.isRequired,
   script: shape(scriptPropType).isRequired,
   lastUpdated: node,
@@ -86,5 +75,3 @@ MostReadItem.defaultProps = {
   dir: oneOf(['rtl', 'ltr']),
   lastUpdated: null,
 };
-
-export default MostReadItem;

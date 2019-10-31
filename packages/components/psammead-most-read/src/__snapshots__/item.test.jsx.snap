@@ -1,24 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Most read should render last updated date correctly 1`] = `
-.c3 {
-  font-size: 0.875rem;
-  line-height: 1.125rem;
-  color: #6E6E73;
-  display: block;
-  font-family: ReithSans,Helvetica,Arial,sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
+exports[`Most read count should render ltr correctly 1`] = `
 .c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.c1 {
   font-size: 2rem;
   line-height: 2.25rem;
   font-family: ReithSerif,Helvetica,Arial,sans-serif;
@@ -31,121 +14,35 @@ exports[`Most read should render last updated date correctly 1`] = `
   min-width: 3rem;
 }
 
-.c2 {
-  font-size: 1.125rem;
-  line-height: 1.375rem;
-  font-family: ReithSerif,Helvetica,Arial,sans-serif;
-  font-weight: 500;
-  font-style: normal;
-  color: #222222;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  padding-bottom: 0.5rem;
-}
-
-.c2:hover,
-.c2:focus {
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-}
-
 @media (min-width:20rem) and (max-width:37.4375rem) {
-  .c3 {
-    font-size: 0.875rem;
-    line-height: 1.125rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c3 {
-    font-size: 0.8125rem;
-    line-height: 1rem;
-  }
-}
-
-@media (max-width:37.5rem) {
   .c0 {
-    margin-top: 0.25rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c0 {
-    margin-top: 0.0625rem;
-  }
-}
-
-@media (min-width:20rem) and (max-width:37.4375rem) {
-  .c1 {
     font-size: 2.5rem;
     line-height: 2.75rem;
   }
 }
 
 @media (min-width:37.5rem) {
-  .c1 {
+  .c0 {
     font-size: 3.5rem;
     line-height: 3.75rem;
   }
 }
 
 @media (min-width:37.5rem) {
-  .c1 {
+  .c0 {
     width: 4rem;
   }
 }
 
-@media (min-width:20rem) and (max-width:37.4375rem) {
-  .c2 {
-    font-size: 1.25rem;
-    line-height: 1.5rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c2 {
-    font-size: 1.5rem;
-    line-height: 1.75rem;
-  }
-}
-
-<div
+<span
   class="c0"
-  dir="ltr"
 >
-  <span
-    class="c1"
-  >
-    10
-  </span>
-  <div
-    class=""
-  >
-    <a
-      class="c2"
-      href="https://www.bbc.com/vietnamese/institutional-49283563"
-    >
-      John Lewis staff bonus cut again as profits fall
-    </a>
-    <time
-      class="c3"
-      datetime="2019-03-01T14:00+00:00"
-    >
-      Last updated: 5th November 2016
-    </time>
-  </div>
-</div>
+  5
+</span>
 `;
 
-exports[`Most read should render ltr correctly 1`] = `
+exports[`Most read count should render ltr double digit correctly 1`] = `
 .c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.c1 {
   font-size: 2rem;
   line-height: 2.25rem;
   font-family: ReithSerif,Helvetica,Arial,sans-serif;
@@ -158,101 +55,35 @@ exports[`Most read should render ltr correctly 1`] = `
   min-width: 3rem;
 }
 
-.c2 {
-  font-size: 1.125rem;
-  line-height: 1.375rem;
-  font-family: ReithSerif,Helvetica,Arial,sans-serif;
-  font-weight: 500;
-  font-style: normal;
-  color: #222222;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  padding-bottom: 0.5rem;
-}
-
-.c2:hover,
-.c2:focus {
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-}
-
-@media (max-width:37.5rem) {
-  .c0 {
-    margin-top: 0.25rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c0 {
-    margin-top: 0.0625rem;
-  }
-}
-
 @media (min-width:20rem) and (max-width:37.4375rem) {
-  .c1 {
+  .c0 {
     font-size: 2.5rem;
     line-height: 2.75rem;
   }
 }
 
 @media (min-width:37.5rem) {
-  .c1 {
+  .c0 {
     font-size: 3.5rem;
     line-height: 3.75rem;
   }
 }
 
 @media (min-width:37.5rem) {
-  .c1 {
+  .c0 {
     width: 4rem;
   }
 }
 
-@media (min-width:20rem) and (max-width:37.4375rem) {
-  .c2 {
-    font-size: 1.25rem;
-    line-height: 1.5rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c2 {
-    font-size: 1.5rem;
-    line-height: 1.75rem;
-  }
-}
-
-<div
+<span
   class="c0"
-  dir="ltr"
 >
-  <span
-    class="c1"
-  >
-    1
-  </span>
-  <div
-    class=""
-  >
-    <a
-      class="c2"
-      href="https://www.bbc.com/vietnamese/institutional-49283563"
-    >
-      John Lewis staff bonus cut again as profits fall
-    </a>
-  </div>
-</div>
+  10
+</span>
 `;
 
-exports[`Most read should render rtl correctly 1`] = `
+exports[`Most read count should render rtl correctly 1`] = `
 .c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.c1 {
   font-size: 2rem;
   line-height: 2.25rem;
   font-family: "BBC Nassim Persian",Arial,Verdana,Geneva,Helvetica,sans-serif;
@@ -265,7 +96,157 @@ exports[`Most read should render rtl correctly 1`] = `
   min-width: 3rem;
 }
 
-.c2 {
+@media (min-width:20rem) and (max-width:37.4375rem) {
+  .c0 {
+    font-size: 2.5rem;
+    line-height: 2.75rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .c0 {
+    font-size: 3.5rem;
+    line-height: 3.75rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .c0 {
+    width: 4rem;
+  }
+}
+
+<span
+  class="c0"
+>
+  ۲
+</span>
+`;
+
+exports[`Most read item should render last updated date correctly 1`] = `
+.c1 {
+  font-size: 0.875rem;
+  line-height: 1.125rem;
+  color: #6E6E73;
+  display: block;
+  font-family: ReithSans,Helvetica,Arial,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.c0 {
+  font-size: 1.125rem;
+  line-height: 1.375rem;
+  font-family: ReithSerif,Helvetica,Arial,sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  color: #222222;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  padding-bottom: 0.5rem;
+}
+
+.c0:hover,
+.c0:focus {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+@media (min-width:20rem) and (max-width:37.4375rem) {
+  .c1 {
+    font-size: 0.875rem;
+    line-height: 1.125rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .c1 {
+    font-size: 0.8125rem;
+    line-height: 1rem;
+  }
+}
+
+@media (min-width:20rem) and (max-width:37.4375rem) {
+  .c0 {
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .c0 {
+    font-size: 1.5rem;
+    line-height: 1.75rem;
+  }
+}
+
+<div
+  class=""
+  dir="ltr"
+>
+  <a
+    class="c0"
+    href="https://www.bbc.com/vietnamese/institutional-49283563"
+  >
+    John Lewis staff bonus cut again as profits fall
+  </a>
+  <time
+    class="c1"
+    datetime="2019-03-01T14:00+00:00"
+  >
+    Last updated: 5th November 2016
+  </time>
+</div>
+`;
+
+exports[`Most read item should render ltr correctly 1`] = `
+.c0 {
+  font-size: 1.125rem;
+  line-height: 1.375rem;
+  font-family: ReithSerif,Helvetica,Arial,sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  color: #222222;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  padding-bottom: 0.5rem;
+}
+
+.c0:hover,
+.c0:focus {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+@media (min-width:20rem) and (max-width:37.4375rem) {
+  .c0 {
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .c0 {
+    font-size: 1.5rem;
+    line-height: 1.75rem;
+  }
+}
+
+<div
+  class=""
+  dir="ltr"
+>
+  <a
+    class="c0"
+    href="https://www.bbc.com/vietnamese/institutional-49283563"
+  >
+    John Lewis staff bonus cut again as profits fall
+  </a>
+</div>
+`;
+
+exports[`Most read item should render rtl correctly 1`] = `
+.c0 {
   font-size: 1.5rem;
   line-height: 2rem;
   font-family: "BBC Nassim Persian",Arial,Verdana,Geneva,Helvetica,sans-serif;
@@ -277,76 +258,35 @@ exports[`Most read should render rtl correctly 1`] = `
   padding-bottom: 0.5rem;
 }
 
-.c2:hover,
-.c2:focus {
+.c0:hover,
+.c0:focus {
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
-@media (max-width:37.5rem) {
-  .c0 {
-    margin-top: 0.25rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c0 {
-    margin-top: 0.0625rem;
-  }
-}
-
 @media (min-width:20rem) and (max-width:37.4375rem) {
-  .c1 {
-    font-size: 2.5rem;
-    line-height: 2.75rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c1 {
-    font-size: 3.5rem;
-    line-height: 3.75rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c1 {
-    width: 4rem;
-  }
-}
-
-@media (min-width:20rem) and (max-width:37.4375rem) {
-  .c2 {
+  .c0 {
     font-size: 1.625rem;
     line-height: 2.25rem;
   }
 }
 
 @media (min-width:37.5rem) {
-  .c2 {
+  .c0 {
     font-size: 1.75rem;
     line-height: 2.25rem;
   }
 }
 
 <div
-  class="c0"
+  class=""
   dir="rtl"
 >
-  <span
-    class="c1"
+  <a
+    class="c0"
+    href="https://www.bbc.com/vietnamese/institutional-49283563"
   >
-    1
-  </span>
-  <div
-    class=""
-  >
-    <a
-      class="c2"
-      href="https://www.bbc.com/vietnamese/institutional-49283563"
-    >
-      ایران از لغو 'رزمایش قطع اینترنت' خبر داد
-    </a>
-  </div>
+    ایران از لغو 'رزمایش قطع اینترنت' خبر داد
+  </a>
 </div>
 `;
