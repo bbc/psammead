@@ -1,7 +1,7 @@
 import React from 'react';
 import { node, oneOf, shape, string } from 'prop-types';
 import styled from 'styled-components';
-import { getCanon, getPica } from '@bbc/gel-foundations/typography';
+import { getFoolscap, getDoublePica } from '@bbc/gel-foundations/typography';
 import { C_EBON, C_POSTBOX } from '@bbc/psammead-styles/colours';
 import { scriptPropType } from '@bbc/gel-foundations/prop-types';
 import { GEL_SPACING } from '@bbc/gel-foundations/spacings';
@@ -59,11 +59,11 @@ const MostReadItem = ({
   ...props
 }) => (
   <MostReadWrapper {...props}>
-    <CountWrapper {...props}>{count}</CountWrapper>
+    <StyledCountSpan {...props}>{count}</StyledCountSpan>
     <ItemWrapper>
-      <TitleWrapper href={href} {...props}>
+      <StyledLink href={href} {...props}>
         {title}
-      </TitleWrapper>
+      </StyledLink>
       {lastUpdated}
     </ItemWrapper>
   </MostReadWrapper>

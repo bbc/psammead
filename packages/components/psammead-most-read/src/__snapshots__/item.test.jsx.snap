@@ -19,8 +19,8 @@ exports[`Most read should render last updated date correctly 1`] = `
 }
 
 .c1 {
-  font-size: 1.75rem;
-  line-height: 2rem;
+  font-size: 2rem;
+  line-height: 2.25rem;
   font-family: ReithSerif,Helvetica,Arial,sans-serif;
   font-weight: 300;
   font-style: normal;
@@ -32,8 +32,8 @@ exports[`Most read should render last updated date correctly 1`] = `
 }
 
 .c2 {
-  font-size: 0.9375rem;
-  line-height: 1.25rem;
+  font-size: 1.125rem;
+  line-height: 1.375rem;
   font-family: ReithSerif,Helvetica,Arial,sans-serif;
   font-weight: 500;
   font-style: normal;
@@ -47,7 +47,6 @@ exports[`Most read should render last updated date correctly 1`] = `
 .c2:focus {
   -webkit-text-decoration: underline;
   text-decoration: underline;
-  cursor: pointer;
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
@@ -66,27 +65,27 @@ exports[`Most read should render last updated date correctly 1`] = `
 
 @media (max-width:37.5rem) {
   .c0 {
-    margin-top: 4px;
+    margin-top: 0.25rem;
   }
 }
 
 @media (min-width:37.5rem) {
   .c0 {
-    margin-top: 6px;
+    margin-top: 0.0625rem;
   }
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
   .c1 {
-    font-size: 2rem;
-    line-height: 2.25rem;
+    font-size: 2.5rem;
+    line-height: 2.75rem;
   }
 }
 
 @media (min-width:37.5rem) {
   .c1 {
-    font-size: 2.75rem;
-    line-height: 3rem;
+    font-size: 3.5rem;
+    line-height: 3.75rem;
   }
 }
 
@@ -98,15 +97,15 @@ exports[`Most read should render last updated date correctly 1`] = `
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
   .c2 {
-    font-size: 1rem;
-    line-height: 1.25rem;
+    font-size: 1.25rem;
+    line-height: 1.5rem;
   }
 }
 
 @media (min-width:37.5rem) {
   .c2 {
-    font-size: 1rem;
-    line-height: 1.25rem;
+    font-size: 1.5rem;
+    line-height: 1.75rem;
   }
 }
 
@@ -114,12 +113,12 @@ exports[`Most read should render last updated date correctly 1`] = `
   class="c0"
   dir="ltr"
 >
-  <p
+  <span
     class="c1"
     dir="ltr"
   >
     10
-  </p>
+  </span>
   <div
     class=""
   >
@@ -149,8 +148,8 @@ exports[`Most read should render ltr correctly 1`] = `
 }
 
 .c1 {
-  font-size: 1.75rem;
-  line-height: 2rem;
+  font-size: 2rem;
+  line-height: 2.25rem;
   font-family: ReithSerif,Helvetica,Arial,sans-serif;
   font-weight: 300;
   font-style: normal;
@@ -162,8 +161,8 @@ exports[`Most read should render ltr correctly 1`] = `
 }
 
 .c2 {
-  font-size: 0.9375rem;
-  line-height: 1.25rem;
+  font-size: 1.125rem;
+  line-height: 1.375rem;
   font-family: ReithSerif,Helvetica,Arial,sans-serif;
   font-weight: 500;
   font-style: normal;
@@ -177,32 +176,31 @@ exports[`Most read should render ltr correctly 1`] = `
 .c2:focus {
   -webkit-text-decoration: underline;
   text-decoration: underline;
-  cursor: pointer;
 }
 
 @media (max-width:37.5rem) {
   .c0 {
-    margin-top: 4px;
+    margin-top: 0.25rem;
   }
 }
 
 @media (min-width:37.5rem) {
   .c0 {
-    margin-top: 6px;
+    margin-top: 0.0625rem;
   }
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
   .c1 {
-    font-size: 2rem;
-    line-height: 2.25rem;
+    font-size: 2.5rem;
+    line-height: 2.75rem;
   }
 }
 
 @media (min-width:37.5rem) {
   .c1 {
-    font-size: 2.75rem;
-    line-height: 3rem;
+    font-size: 3.5rem;
+    line-height: 3.75rem;
   }
 }
 
@@ -214,15 +212,15 @@ exports[`Most read should render ltr correctly 1`] = `
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
   .c2 {
-    font-size: 1rem;
-    line-height: 1.25rem;
+    font-size: 1.25rem;
+    line-height: 1.5rem;
   }
 }
 
 @media (min-width:37.5rem) {
   .c2 {
-    font-size: 1rem;
-    line-height: 1.25rem;
+    font-size: 1.5rem;
+    line-height: 1.75rem;
   }
 }
 
@@ -230,12 +228,12 @@ exports[`Most read should render ltr correctly 1`] = `
   class="c0"
   dir="ltr"
 >
-  <p
+  <span
     class="c1"
     dir="ltr"
   >
     1
-  </p>
+  </span>
   <div
     class=""
   >
@@ -260,7 +258,7 @@ exports[`Most read should render rtl correctly 1`] = `
 
 .c1 {
   font-size: 2rem;
-  line-height: 2.625rem;
+  line-height: 2.25rem;
   font-family: "BBC Nassim Persian",Arial,Verdana,Geneva,Helvetica,sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -272,8 +270,8 @@ exports[`Most read should render rtl correctly 1`] = `
 }
 
 .c2 {
-  font-size: 1rem;
-  line-height: 1.625rem;
+  font-size: 1.5rem;
+  line-height: 2rem;
   font-family: "BBC Nassim Persian",Arial,Verdana,Geneva,Helvetica,sans-serif;
   font-weight: 700;
   font-style: normal;
@@ -287,32 +285,31 @@ exports[`Most read should render rtl correctly 1`] = `
 .c2:focus {
   -webkit-text-decoration: underline;
   text-decoration: underline;
-  cursor: pointer;
 }
 
 @media (max-width:37.5rem) {
   .c0 {
-    margin-top: 4px;
+    margin-top: 0.25rem;
   }
 }
 
 @media (min-width:37.5rem) {
   .c0 {
-    margin-top: 6px;
+    margin-top: 0.0625rem;
   }
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
   .c1 {
-    font-size: 2.375rem;
-    line-height: 2.875rem;
+    font-size: 2.5rem;
+    line-height: 2.75rem;
   }
 }
 
 @media (min-width:37.5rem) {
   .c1 {
-    font-size: 2.75rem;
-    line-height: 3.375rem;
+    font-size: 3.5rem;
+    line-height: 3.75rem;
   }
 }
 
@@ -324,15 +321,15 @@ exports[`Most read should render rtl correctly 1`] = `
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
   .c2 {
-    font-size: 1.25rem;
-    line-height: 1.625rem;
+    font-size: 1.625rem;
+    line-height: 2.25rem;
   }
 }
 
 @media (min-width:37.5rem) {
   .c2 {
-    font-size: 1.25rem;
-    line-height: 1.625rem;
+    font-size: 1.75rem;
+    line-height: 2.25rem;
   }
 }
 
@@ -340,12 +337,12 @@ exports[`Most read should render rtl correctly 1`] = `
   class="c0"
   dir="rtl"
 >
-  <p
+  <span
     class="c1"
     dir="rtl"
   >
     1
-  </p>
+  </span>
   <div
     class=""
   >
