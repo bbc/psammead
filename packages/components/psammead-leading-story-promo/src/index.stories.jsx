@@ -3,7 +3,7 @@ import { storiesOf } from '@storybook/react';
 import { withKnobs, text } from '@storybook/addon-knobs';
 import { withServicesKnob } from '@bbc/psammead-storybook-helpers';
 import Image from '@bbc/psammead-image';
-import { Summary, Link } from '@bbc/psammead-story-promo';
+import StoryPromo, { Summary, Link } from '@bbc/psammead-story-promo';
 import Grid from '@bbc/psammead-grid';
 import notes from '../README.md';
 import LeadingStoryPromo, { LeadingPromoHeadline } from './index';
@@ -92,20 +92,7 @@ const generate2FeatureStory = (text, script, service, dir, Img) => {
             group5: 2,
           }}
         >
-          {Img}
-        </Grid>
-        <Grid
-          item
-          columns={{
-            group0: 6,
-            group1: 6,
-            group2: 6,
-            group3: 6,
-            group4: 2,
-            group5: 2,
-          }}
-        >
-          {Info}
+          <StoryPromo image={Img} info={Info} />
         </Grid>
       </Grid>
     </Grid>
