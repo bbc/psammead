@@ -6,7 +6,7 @@ describe('Media Player: Guidance', () => {
   shouldMatchSnapshot(
     'should render Guidance',
     <Guidance
-      message="Contains strong language with adult humor"
+      guidanceMessage="Guidance: Contains strong language with adult humor"
       service="news"
     >
       <p>within the guidance container</p>

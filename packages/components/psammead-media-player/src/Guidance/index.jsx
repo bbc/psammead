@@ -61,7 +61,7 @@ const GuidanceMessage = styled.span`
 
 const IconWrapper = styled.div``;
 
-const Guidance = ({ message, service, children }) => {
+const Guidance = ({ guidanceMessage, service, children }) => {
   return (
     <StyledGuidance service={service}>
       <GuidanceWrapper>
@@ -69,7 +69,7 @@ const Guidance = ({ message, service, children }) => {
           <IconWrapper aria-hidden="true">
             <GuidanceIcon />
           </IconWrapper>
-          <GuidanceMessage>Guidance: {message}</GuidanceMessage>
+          <GuidanceMessage>{guidanceMessage}</GuidanceMessage>
         </Content>
       </GuidanceWrapper>
       {children}
@@ -78,7 +78,7 @@ const Guidance = ({ message, service, children }) => {
 };
 
 Guidance.propTypes = {
-  message: string.isRequired,
+  guidanceMessage: string.isRequired,
   service: string.isRequired,
   children: node,
 };

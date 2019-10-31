@@ -35,28 +35,23 @@ const Placeholder = ({ onClick, service, src, srcset, mediaInfo }) => {
     duration,
     durationSpoken,
     type,
-    guidance,
+    guidanceMessage,
   } = mediaInfo;
-  const renderPlaybutton = () => (
-    <StyledPlayButton
-      title={title}
-      service={service}
-      onClick={() => {}}
-      datetime={datetime}
-      duration={duration}
-      durationSpoken={durationSpoken}
-      type={type}
-    />
-  );
+
   return (
     <StyledPlaceholder onClick={onClick}>
-      {guidance ? (
-        <Guidance service={service} message={guidance}>
-          {renderPlaybutton()}
-        </Guidance>
-      ) : (
-        renderPlaybutton()
+      {guidanceMessage && (
+        <Guidance service={service} guidanceMessage={guidanceMessage} />
       )}
+      <StyledPlayButton
+        title={title}
+        service={service}
+        onClick={() => {}}
+        datetime={datetime}
+        duration={duration}
+        durationSpoken={durationSpoken}
+        type={type}
+      />
       <Image alt="Image Alt" src={src} srcset={srcset} />
     </StyledPlaceholder>
   );
@@ -73,6 +68,7 @@ Placeholder.propTypes = {
     duration: string,
     durationSpoken: string,
     type: oneOf(['audio', 'video']),
+    guidanceMessage: string,
   }),
 };
 Placeholder.defaultProps = {
@@ -82,6 +78,7 @@ Placeholder.defaultProps = {
     duration: null,
     durationSpoken: null,
     type: 'video',
+    guidanceMessage: null,
   }),
 };
 

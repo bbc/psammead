@@ -82,8 +82,8 @@ describe('Media Player: Placeholder', () => {
       service="news"
       mediaInfo={{
         title: 'Dog chases cat.',
-        guidance:
-          'May contain strong language, sexual or violent content that may offend.',
+        guidanceMessage:
+          'Guidance: May contain strong language, sexual or violent content that may offend.',
         ...withDuration,
       }}
       className="foo"
