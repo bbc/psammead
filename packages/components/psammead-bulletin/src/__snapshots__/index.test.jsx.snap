@@ -1,6 +1,27 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Bulletin should render audio correctly 1`] = `
+.c7 {
+  vertical-align: middle;
+  margin: 0 0.25rem;
+  color: #222222;
+  fill: currentColor;
+  width: 0.8125rem;
+  height: 0.75rem;
+}
+
+.c2 {
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  -webkit-clip: rect(1px,1px,1px,1px);
+  clip: rect(1px,1px,1px,1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  width: 1px;
+  margin: 0;
+}
+
 .c3 {
   position: static;
   color: #222222;
@@ -28,27 +49,6 @@ exports[`Bulletin should render audio correctly 1`] = `
 
 .c3:visited {
   color: #6E6E73;
-}
-
-.c2 {
-  -webkit-clip-path: inset(100%);
-  clip-path: inset(100%);
-  -webkit-clip: rect(1px,1px,1px,1px);
-  clip: rect(1px,1px,1px,1px);
-  height: 1px;
-  overflow: hidden;
-  position: absolute;
-  width: 1px;
-  margin: 0;
-}
-
-.c7 {
-  vertical-align: middle;
-  margin: 0 0.25rem;
-  color: #222222;
-  fill: currentColor;
-  width: 0.8125rem;
-  height: 0.75rem;
 }
 
 .c6 {
@@ -185,8 +185,6 @@ exports[`Bulletin should render audio correctly 1`] = `
   <div
     aria-hidden="true"
     class="c5"
-    dir="ltr"
-    type="audio"
   >
     <span
       class="c6"
@@ -212,6 +210,27 @@ exports[`Bulletin should render audio correctly 1`] = `
 `;
 
 exports[`Bulletin should render live audio correctly 1`] = `
+.c8 {
+  vertical-align: middle;
+  margin: 0 0.25rem;
+  color: #222222;
+  fill: currentColor;
+  width: 0.8125rem;
+  height: 0.75rem;
+}
+
+.c2 {
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  -webkit-clip: rect(1px,1px,1px,1px);
+  clip: rect(1px,1px,1px,1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  width: 1px;
+  margin: 0;
+}
+
 .c4 {
   position: static;
   color: #222222;
@@ -248,27 +267,6 @@ exports[`Bulletin should render live audio correctly 1`] = `
   color: #B80000;
   display: inline-block;
   margin-right: 0.5rem;
-}
-
-.c2 {
-  -webkit-clip-path: inset(100%);
-  clip-path: inset(100%);
-  -webkit-clip: rect(1px,1px,1px,1px);
-  clip: rect(1px,1px,1px,1px);
-  height: 1px;
-  overflow: hidden;
-  position: absolute;
-  width: 1px;
-  margin: 0;
-}
-
-.c8 {
-  vertical-align: middle;
-  margin: 0 0.25rem;
-  color: #222222;
-  fill: currentColor;
-  width: 0.8125rem;
-  height: 0.75rem;
 }
 
 .c7 {
@@ -412,8 +410,6 @@ exports[`Bulletin should render live audio correctly 1`] = `
   <div
     aria-hidden="true"
     class="c6"
-    dir="ltr"
-    type="audio"
   >
     <span
       class="c7"
@@ -439,6 +435,33 @@ exports[`Bulletin should render live audio correctly 1`] = `
 `;
 
 exports[`Bulletin should render live video correctly 1`] = `
+.c1 {
+  display: block;
+  width: 100%;
+  visibility: visible;
+}
+
+.c9 {
+  vertical-align: middle;
+  margin: 0 0.25rem;
+  color: #222222;
+  fill: currentColor;
+  width: 0.75rem;
+  height: 0.75rem;
+}
+
+.c3 {
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  -webkit-clip: rect(1px,1px,1px,1px);
+  clip: rect(1px,1px,1px,1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  width: 1px;
+  margin: 0;
+}
+
 .c5 {
   position: static;
   color: #222222;
@@ -475,33 +498,6 @@ exports[`Bulletin should render live video correctly 1`] = `
   color: #B80000;
   display: inline-block;
   margin-right: 0.5rem;
-}
-
-.c3 {
-  -webkit-clip-path: inset(100%);
-  clip-path: inset(100%);
-  -webkit-clip: rect(1px,1px,1px,1px);
-  clip: rect(1px,1px,1px,1px);
-  height: 1px;
-  overflow: hidden;
-  position: absolute;
-  width: 1px;
-  margin: 0;
-}
-
-.c1 {
-  display: block;
-  width: 100%;
-  visibility: visible;
-}
-
-.c9 {
-  vertical-align: middle;
-  margin: 0 0.25rem;
-  color: #222222;
-  fill: currentColor;
-  width: 0.75rem;
-  height: 0.75rem;
 }
 
 .c8 {
@@ -650,8 +646,6 @@ exports[`Bulletin should render live video correctly 1`] = `
   <div
     aria-hidden="true"
     class="c7"
-    dir="ltr"
-    type="video"
   >
     <span
       class="c8"
@@ -674,6 +668,33 @@ exports[`Bulletin should render live video correctly 1`] = `
 `;
 
 exports[`Bulletin should render video correctly 1`] = `
+.c1 {
+  display: block;
+  width: 100%;
+  visibility: visible;
+}
+
+.c8 {
+  vertical-align: middle;
+  margin: 0 0.25rem;
+  color: #222222;
+  fill: currentColor;
+  width: 0.75rem;
+  height: 0.75rem;
+}
+
+.c3 {
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  -webkit-clip: rect(1px,1px,1px,1px);
+  clip: rect(1px,1px,1px,1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  width: 1px;
+  margin: 0;
+}
+
 .c4 {
   position: static;
   color: #222222;
@@ -701,33 +722,6 @@ exports[`Bulletin should render video correctly 1`] = `
 
 .c4:visited {
   color: #6E6E73;
-}
-
-.c3 {
-  -webkit-clip-path: inset(100%);
-  clip-path: inset(100%);
-  -webkit-clip: rect(1px,1px,1px,1px);
-  clip: rect(1px,1px,1px,1px);
-  height: 1px;
-  overflow: hidden;
-  position: absolute;
-  width: 1px;
-  margin: 0;
-}
-
-.c1 {
-  display: block;
-  width: 100%;
-  visibility: visible;
-}
-
-.c8 {
-  vertical-align: middle;
-  margin: 0 0.25rem;
-  color: #222222;
-  fill: currentColor;
-  width: 0.75rem;
-  height: 0.75rem;
 }
 
 .c7 {
@@ -869,8 +863,6 @@ exports[`Bulletin should render video correctly 1`] = `
   <div
     aria-hidden="true"
     class="c6"
-    dir="ltr"
-    type="video"
   >
     <span
       class="c7"

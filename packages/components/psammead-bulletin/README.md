@@ -6,12 +6,7 @@ This component is currently tagged as alpha and is not suitable for production u
 
 ## Description
 
-The `Bulletin` package contains all the elements to form a `Bulletin`, which can be of used to build `RadioBulletin` or `TVBulletin`. It exports the following elements:
-
-- `Bulletin` A wrapper around the `Bulletin` component to control the visibility of the component.
-- `BulletinHeading` The headline of the bulletin
-- `BulletinSummary` A `p` element to wrap the summary text and apply neccessary padding.
-- `BulletinCTA` The call to action of the bulletin
+The `Bulletin` component can be used to render `Radio` or `TVBulletin` by passing in the `type`.
 
 This component is hidden on breakpoints above 600px.
 
@@ -23,83 +18,45 @@ npm install @bbc/psammead-bulletin --save
 
 ## Props
 
-### BulletinHeading
-
-<!-- prettier-ignore -->
-| Argument  | Type | Required | Default | Example |
-| --------- | ---- | -------- | ------- | ------- |
-| `script` | object | yes | N/A | `{ canon: { groupA: { fontSize: '28', lineHeight: '32',}, groupB: { fontSize: '32', lineHeight: '36', }, groupD: { fontSize: '44', lineHeight: '48', }, }, trafalgar: { groupA: { fontSize: '20', lineHeight: '24', }, groupB: { fontSize: '24', lineHeight: '28', }, groupD: { fontSize: '32', lineHeight: '36', }, }, }` |
-| `service` | string | yes | - | `'pidgin'` |
-
-### BulletinSummary
+### Bulletin
 
 <!-- prettier-ignore -->
 | Argument  | Type | Required | Default | Example |
 | --------- | ---- | -------- | ------- | ------- |
 | `script` | object | yes | N/A | `{ canon: { groupA: { fontSize: '28', lineHeight: '32',}, groupB: { fontSize: '32', lineHeight: '36', }, groupD: { fontSize: '44', lineHeight: '48', }, }, trafalgar: { groupA: { fontSize: '20', lineHeight: '24', }, groupB: { fontSize: '24', lineHeight: '28', }, groupD: { fontSize: '32', lineHeight: '36', }, }, }` |
 | `service` | string | yes | N/A | `'pidgin'` |
-
-### BulletinCTA
-
-<!-- prettier-ignore -->
-| Argument  | Type | Required | Default | Example |
-| --------- | ---- | -------- | ------- | ------- |
-| `dir` | string | yes | N/A | `one of ['ltr', rtl']` |
-| `script` | object | yes | N/A | `{ canon: { groupA: { fontSize: '28', lineHeight: '32',}, groupB: { fontSize: '32', lineHeight: '36', }, groupD: { fontSize: '44', lineHeight: '48', }, }, trafalgar: { groupA: { fontSize: '20', lineHeight: '24', }, groupB: { fontSize: '24', lineHeight: '28', }, groupD: { fontSize: '32', lineHeight: '36', }, }, }` |
-| `service` | string | yes | N/A | `'pidgin'` |
-| `type` | string | yes | N/A | `one of ['audio', 'video']` |
-| `children` | node | yes | N/A | `Watch` |
+| `image` | node | no | `null` | `<Image src={src} alt={alt} />` |
+| `type` | string | yes | N/A | `One of ['audio', 'video']` |
+| `ctaText` | string | yes | N/A | `Watch` |
+| `ctaLink` | string | yes | N/A | `'http://link.to.resource'` |
+| `summary` | string | yes | N/A | `'Bulletin summary'` |
+| `headlineText` | string | yes | N/A  | `'Bulletin headline'` |
+| `isLive` | boolean | no | `false` | `true` |
 
 ## Usage
 
 ```jsx
-import {
-  Bulletin,
-  BulletinHeading,
-  BulletinSummary,
-  BulletinCTA,
-} from psammead-bulletin;
-import VisuallyHiddenText from '@bbc/psammead-visually-hidden-text';
-import { Link, LiveLabel } from '@bbc/psammead-story-promo';
-import { Image } from '@bbc/psammead-image'
+import Bulletin from '@bbc/psammead-bulletin';
+import { Image } from '@bbc/psammead-image';
+import { latin } from '@bbc/gel-foundations/scripts';
 
-const TVBulletin  = ({
-  imgAltText,
-  imgSrc,
-  script,
-  service,
-  isLive,
-  bulletinLink,
-  headlineText,
-  summaryText,
-  dir,
-}) => (
-  <Bulletin>
-    <Image
-      src={imgSrc}
-      alt={imgAltText}
-    />
-    <BulletinHeading script={script} service={service}>
-      <VisuallyHiddenText>Watch, </VisuallyHiddenText>
-      {isLive && <LiveLabel service={service} dir={dir}>Live</LiveLabel>}
-      <Link href={bulletinLink}>
-        {headlineText}
-      </Link>
-    </BulletinHeading>
-    <BulletinSummary script={script} service={service}>
-      {summaryText}
-    </BulletinSummary>
-    <BulletinCTA
+const WrappingComponent = () => {
+  const image = <Image src="/image.png" altText="alt text" />;
+
+  return (
+    <Bulletin
+      image={image}
+      service="news"
+      script={latin}
       type="video"
-      isLive={isLive}
-      dir={dir}
-      service={service}
-      script={script}
-    >
-      Watch
-    </BulletinCTA>
-  </Bulletin>
-);
+      ctaLink="/cta"
+      ctaText="Watch"
+      summary="This is the summary"
+      headlineText="This is the headline"
+      isLive
+    />
+  );
+};
 ```
 
 ### When to use this component

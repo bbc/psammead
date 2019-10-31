@@ -13,8 +13,10 @@ import { getSansRegular, getSansBold } from '@bbc/psammead-styles/font-styles';
 import { scriptPropType } from '@bbc/gel-foundations/prop-types';
 import { getPica, getLongPrimer } from '@bbc/gel-foundations/typography';
 import { mediaIcons } from '@bbc/psammead-assets/svgs';
+import VisuallyHiddenText from '@bbc/psammead-visually-hidden-text';
+import { Link, LiveLabel } from '@bbc/psammead-story-promo';
 
-export const Bulletin = styled.div`
+const BulletinWrapper = styled.div`
   @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
     display: none;
   }
@@ -40,7 +42,7 @@ const PlayCTA = styled.div.attrs({ 'aria-hidden': true })`
   justify-content: center;
 `;
 
-export const BulletinSummary = styled.p`
+const BulletinSummary = styled.p`
   ${({ script }) => script && getLongPrimer(script)};
   ${({ service }) => service && getSansRegular(service)}
   color: ${C_SHADOW};
@@ -48,7 +50,7 @@ export const BulletinSummary = styled.p`
   padding-bottom: ${GEL_SPACING_DBL};
 `;
 
-export const BulletinHeading = styled.h3`
+const BulletinHeading = styled.h3`
   ${({ script }) => script && getPica(script)}
   ${({ service }) => getSansBold(service)}
   color: ${C_EBON};
@@ -57,36 +59,49 @@ export const BulletinHeading = styled.h3`
   padding-bottom:${GEL_SPACING};
 `;
 
-export const BulletinCTA = ({
-  type,
-  isLive,
-  dir,
-  service,
+const Bulletin = ({
   script,
-  children,
+  service,
+  isLive,
+  headlineText,
+  summaryText,
+  image,
+  type,
+  ctaText,
+  ctaLink,
 }) => (
-  <PlayCTA
-    type={type}
-    isLive={isLive}
-    dir={dir}
-    service={service}
-    script={script}
-  >
-    <IconWrapper>{mediaIcons[type.toLowerCase()]}</IconWrapper>
-    {children}
-  </PlayCTA>
+  <BulletinWrapper>
+    {image && type === 'video' && image}
+    <BulletinHeading script={script} service={service}>
+      <VisuallyHiddenText>{ctaText}, </VisuallyHiddenText>
+      {isLive && <LiveLabel service={service}>Live</LiveLabel>}
+      <Link href={ctaLink}>{headlineText}</Link>
+    </BulletinHeading>
+    <BulletinSummary script={script} service={service}>
+      {summaryText}
+    </BulletinSummary>
+    <PlayCTA isLive={isLive} service={service} script={script}>
+      <IconWrapper>{mediaIcons[type.toLowerCase()]}</IconWrapper>
+      {ctaText}
+    </PlayCTA>
+  </BulletinWrapper>
 );
 
-BulletinCTA.propTypes = {
+Bulletin.propTypes = {
   type: oneOf(['video', 'audio']).isRequired,
   isLive: bool,
-  dir: oneOf(['ltr', 'rtl']),
   service: string.isRequired,
   script: shape(scriptPropType).isRequired,
-  children: node.isRequired,
+  ctaText: string.isRequired,
+  ctaLink: string.isRequired,
+  image: node,
+  summaryText: string.isRequired,
+  headlineText: string.isRequired,
 };
 
-BulletinCTA.defaultProps = {
-  dir: 'ltr',
+Bulletin.defaultProps = {
   isLive: false,
+  image: null,
 };
+
+export default Bulletin;
