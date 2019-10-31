@@ -23,7 +23,7 @@ The `MostReadItem` component is designed to display the most read articles given
 
 ## Usage
 
-A typical use-case of this component is as displayed below. It contains a count and an info elements. The info element is a link which point to the corresponding article while the count is a number that represent the position of the info element on the list of info elements.
+A typical use-case of this component is as displayed below. It contains a count and an info element. The info element is a link which points to the corresponding article while the count is a number that represents the position of the info element on the list of info elements.
 
 ```jsx
 import React from 'react';
