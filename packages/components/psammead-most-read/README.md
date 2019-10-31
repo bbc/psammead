@@ -48,7 +48,7 @@ const item = {
 ```
 Screenshot
 
-![most-read-single-item](documentation/most-read-single-item.png)
+![image](https://user-images.githubusercontent.com/30599794/67940838-59342300-fbcc-11e9-89e0-3982543596cf.png)
 
 
 #### <a name="example with last updated date">Example with last updated date</a>
