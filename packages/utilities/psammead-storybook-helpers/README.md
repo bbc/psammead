@@ -89,7 +89,7 @@ storiesOf('Components|Paragraph', module)
     ),
 ```
 
-If you want to add this decorator to a single story rather than a series of stories as documented above, perhaps because you need each story to have a different default service, then need to decorate each story directly instead of use the `addDecorator` method. An example of you write this is show below:
+If you want to add this decorator to a single story rather than a series of stories as documented above, perhaps because you need each story to have a different default service, then you need to decorate each story directly instead of using the `addDecorator` method. An example of you could write this is shown below:
 
 ```js
 const arabicServiceDecorator = withServicesKnob({
@@ -118,7 +118,6 @@ storiesOf('Components|Paragraph', module)
       </Paragraph>
     )),
   );
-
 ```
 
 The above example dismisses the use of the `addDecorator` method and decorates the story directly.
