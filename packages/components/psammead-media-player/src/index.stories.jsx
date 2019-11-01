@@ -10,33 +10,51 @@ const withDuration = {
   datetime: 'PT2M30S',
 };
 
-storiesOf('Components|Media Player', module).add(
-  'Default',
-  () => (
-    <CanonicalMediaPlayer
-      src="https://www.test.bbc.co.uk/ws/av-embeds/articles/c3wmq4d1y3wo/p01k6msp/en"
-      placeholderSrc="https://ichef.bbci.co.uk/news/640/cpsdevpb/4eb7/test/ba7482d0-cca8-11e8-b0bf-f33155223fc4.jpg"
-      service="news"
-      mediaInfo={{ title: 'Dog chases cat.', ...withDuration }}
-      title="Default Video player"
-    />
-  ),
-  { notes, knobs: { escapeHTML: false } },
-);
-
-storiesOf('Components|Media Player', module).add(
-  'Audio',
-  () => (
-    <CanonicalMediaPlayer
-      src="https://www.test.bbc.co.uk/ws/av-embeds/articles/c3wmq4d1y3wo/p01k6msp/en"
-      placeholderSrc="https://ichef.bbci.co.uk/news/640/cpsdevpb/4eb7/test/ba7482d0-cca8-11e8-b0bf-f33155223fc4.jpg"
-      service="news"
-      mediaInfo={{ type: 'audio', title: 'Dog barks at cat.', ...withDuration }}
-      title="Video player"
-    />
-  ),
-  { notes, knobs: { escapeHTML: false } },
-);
+storiesOf('Components|Media Player', module)
+  .add(
+    'Default',
+    () => (
+      <CanonicalMediaPlayer
+        src="https://www.test.bbc.co.uk/ws/av-embeds/articles/c3wmq4d1y3wo/p01k6msp/en"
+        placeholderSrc="https://ichef.bbci.co.uk/news/640/cpsdevpb/4eb7/test/ba7482d0-cca8-11e8-b0bf-f33155223fc4.jpg"
+        service="news"
+        mediaInfo={{ title: 'Dog chases cat.', ...withDuration }}
+        title="Default Video player"
+      />
+    ),
+    { notes, knobs: { escapeHTML: false } },
+  )
+  .add(
+    'Audio',
+    () => (
+      <CanonicalMediaPlayer
+        src="https://www.test.bbc.co.uk/ws/av-embeds/articles/c3wmq4d1y3wo/p01k6msp/en"
+        placeholderSrc="https://ichef.bbci.co.uk/news/640/cpsdevpb/4eb7/test/ba7482d0-cca8-11e8-b0bf-f33155223fc4.jpg"
+        service="news"
+        mediaInfo={{
+          type: 'audio',
+          title: 'Dog barks at cat.',
+          ...withDuration,
+        }}
+        title="Video player"
+      />
+    ),
+    { notes, knobs: { escapeHTML: false } },
+  )
+  .add(
+    'Audio Skin',
+    () => (
+      <CanonicalMediaPlayer
+        src="https://www.bbc.com/ws/av-embeds/media/bbc_korean_radio/liveradio/ko"
+        showPlaceholder={false}
+        skin="audio"
+        service="news"
+        mediaInfo={{ type: 'audio', title: 'Live show intro.' }}
+        title="Audio player"
+      />
+    ),
+    { notes, knobs: { escapeHTML: false } },
+  );
 
 storiesOf('Components|Media Player', module)
   .addDecorator(ampDecorator)
@@ -57,25 +75,7 @@ storiesOf('Components|Media Player', module)
       />
     ),
     { notes, knobs: { escapeHTML: false } },
-  );
-
-storiesOf('Components|Media Player', module).add(
-  'Audio Skin',
-  () => (
-    <CanonicalMediaPlayer
-      src="https://www.bbc.com/ws/av-embeds/media/bbc_korean_radio/liveradio/ko"
-      showPlaceholder={false}
-      skin="audio"
-      service="news"
-      mediaInfo={{ type: 'audio', title: 'Live show intro.' }}
-      title="Audio player"
-    />
-  ),
-  { notes, knobs: { escapeHTML: false } },
-);
-
-storiesOf('Components|Media Player', module)
-  .addDecorator(ampDecorator)
+  )
   .add(
     'Audio Skin AMP',
     () => (
