@@ -121,7 +121,7 @@ exports[`Media Player: Placeholder should render a video placeholder 1`] = `
     </time>
   </button>
   <img
-    alt="Image Alt"
+    alt=""
     class="c8"
     src="http://foo.bar/placeholder.png"
   />
@@ -458,7 +458,7 @@ exports[`Media Player: Placeholder should render a video placeholder without dur
     </div>
   </button>
   <img
-    alt="Image Alt"
+    alt=""
     class="c7"
     src="http://foo.bar/placeholder.png"
   />
@@ -589,7 +589,7 @@ exports[`Media Player: Placeholder should render an audio placeholder 1`] = `
     </time>
   </button>
   <img
-    alt="Image Alt"
+    alt=""
     class="c8"
     src="http://foo.bar/placeholder.png"
   />
@@ -707,7 +707,7 @@ exports[`Media Player: Placeholder should render an audio placeholder without du
     </div>
   </button>
   <img
-    alt="Image Alt"
+    alt=""
     class="c7"
     src="http://foo.bar/placeholder.png"
   />
