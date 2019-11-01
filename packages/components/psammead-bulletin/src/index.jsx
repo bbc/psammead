@@ -104,7 +104,7 @@ Bulletin.propTypes = {
 Bulletin.defaultProps = {
   isLive: false,
   image: null,
-  liveText: 'Live',
+  liveText: 'LIVE',
 };
 
 export default Bulletin;
