@@ -99,6 +99,7 @@ const BrandSvg = styled.svg`
     ${StyledLink}:focus & {
     text-decoration: none;
     border-bottom: ${GEL_SPACING_HLF} solid ${props => props.logoColour};
+    margin-bottom: -${GEL_SPACING_HLF};
   }
   /* stylelint-enable */
 `;

@@ -57,6 +57,7 @@ exports[`Brand should render correctly with link not provided 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   border-bottom: 0.25rem solid #FFFFFF;
+  margin-bottom: -0.25rem;
 }
 
 @media (max-width:14.9375rem) {
@@ -193,6 +194,7 @@ exports[`Brand should render correctly with link provided 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   border-bottom: 0.25rem solid #FFFFFF;
+  margin-bottom: -0.25rem;
 }
 
 @media (max-width:14.9375rem) {
@@ -333,6 +335,7 @@ exports[`Brand should render correctly with no service Localised Name 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   border-bottom: 0.25rem solid #FFFFFF;
+  margin-bottom: -0.25rem;
 }
 
 @media (max-width:14.9375rem) {
@@ -457,6 +460,7 @@ exports[`Brand should render correctly with transparent borders 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   border-bottom: 0.25rem solid #FFFFFF;
+  margin-bottom: -0.25rem;
 }
 
 @media (max-width:14.9375rem) {
