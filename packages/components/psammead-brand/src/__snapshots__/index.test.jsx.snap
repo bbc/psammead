@@ -35,7 +35,7 @@ exports[`Brand should render correctly with link not provided 1`] = `
 
 .c0 {
   background-color: #B80000;
-  height: 3.5rem;
+  min-height: 3.5rem;
   width: 100%;
   padding: 0 0.5rem;
 }
@@ -67,7 +67,7 @@ exports[`Brand should render correctly with link not provided 1`] = `
 
 @media (min-width:25rem) {
   .c0 {
-    height: 5rem;
+    min-height: 5rem;
     padding: 0 1rem;
   }
 }
@@ -164,7 +164,7 @@ exports[`Brand should render correctly with link provided 1`] = `
 
 .c0 {
   background-color: #B80000;
-  height: 3.5rem;
+  min-height: 3.5rem;
   width: 100%;
   padding: 0 0.5rem;
 }
@@ -203,7 +203,7 @@ exports[`Brand should render correctly with link provided 1`] = `
 
 @media (min-width:25rem) {
   .c0 {
-    height: 5rem;
+    min-height: 5rem;
     padding: 0 1rem;
   }
 }
@@ -311,7 +311,7 @@ exports[`Brand should render correctly with no service Localised Name 1`] = `
 
 .c0 {
   background-color: #B80000;
-  height: 3.5rem;
+  min-height: 3.5rem;
   width: 100%;
   padding: 0 0.5rem;
 }
@@ -343,7 +343,7 @@ exports[`Brand should render correctly with no service Localised Name 1`] = `
 
 @media (min-width:25rem) {
   .c0 {
-    height: 5rem;
+    min-height: 5rem;
     padding: 0 1rem;
   }
 }
@@ -433,7 +433,7 @@ exports[`Brand should render correctly with transparent borders 1`] = `
 
 .c0 {
   background-color: #B80000;
-  height: 3.5rem;
+  min-height: 3.5rem;
   width: 100%;
   padding: 0 0.5rem;
   border-top: 0.0625rem solid transparent;
@@ -467,7 +467,7 @@ exports[`Brand should render correctly with transparent borders 1`] = `
 
 @media (min-width:25rem) {
   .c0 {
-    height: 5rem;
+    min-height: 5rem;
     padding: 0 1rem;
   }
 }
