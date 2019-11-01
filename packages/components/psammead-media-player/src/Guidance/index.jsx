@@ -2,12 +2,10 @@ import React from 'react';
 import { string, node } from 'prop-types';
 import styled from 'styled-components';
 import { C_WHITE } from '@bbc/psammead-styles/colours';
-import { GEL_GROUP_2_SCREEN_WIDTH_MIN } from '@bbc/gel-foundations/breakpoints';
 import { mediaIcons } from '@bbc/psammead-assets/svgs';
 import {
   GEL_MARGIN_BELOW_400PX,
   GEL_SPACING,
-  GEL_SPACING_HLF,
   GEL_SPACING_DBL,
   GEL_SPACING_TRPL,
 } from '@bbc/gel-foundations/spacings';
@@ -17,10 +15,6 @@ import { getSansRegular } from '@bbc/psammead-styles/font-styles';
 const StyledGuidance = styled.div`
   ${({ service }) => getSansRegular(service)}
   ${GEL_LONG_PRIMER};
-
-  strong {
-    font-weight: normal;
-  }
 `;
 
 const GuidanceWrapper = styled.div`
@@ -34,18 +28,16 @@ const GuidanceWrapper = styled.div`
 `;
 
 const Content = styled.div`
-  display: inline-grid;
-  grid-auto-flow: column;
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
   height: ${GEL_SPACING_TRPL};
   padding: ${GEL_SPACING_DBL} ${GEL_MARGIN_BELOW_400PX};
 `;
 
 const GuidanceMessage = styled.strong`
   padding: 0 0 0 ${GEL_SPACING};
-  @media (min-width: ${GEL_GROUP_2_SCREEN_WIDTH_MIN}) {
-    position: relative;
-    top: ${GEL_SPACING_HLF};
-  }
+  font-weight: normal;
 `;
 
 const IconWrapper = styled.div`
@@ -54,9 +46,6 @@ const IconWrapper = styled.div`
     fill: currentColor;
     height: ${GEL_SPACING_TRPL};
     width: ${GEL_SPACING_TRPL};
-  }
-  @media (max-width: ${GEL_GROUP_2_SCREEN_WIDTH_MIN}) {
-    padding: ${GEL_SPACING} 0 0 0;
   }
 `;
 
