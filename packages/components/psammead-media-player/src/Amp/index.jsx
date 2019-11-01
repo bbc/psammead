@@ -18,7 +18,6 @@ const AmpMediaPlayer = ({
   placeholderSrc,
   placeholderSrcset,
   title,
-  alt,
   height,
   width,
 }) => {
@@ -38,7 +37,7 @@ const AmpMediaPlayer = ({
           src={placeholderSrc}
           srcset={placeholderSrcset}
           placeholder
-          alt={alt}
+          alt=""
           height={height}
           width={width}
         />
@@ -52,15 +51,11 @@ AmpMediaPlayer.propTypes = {
   placeholderSrc: string.isRequired,
   placeholderSrcset: string,
   title: string.isRequired,
-  alt: string,
-  height: number,
-  width: number,
+  height: number.isRequired,
+  width: number.isRequired,
 };
 AmpMediaPlayer.defaultProps = {
   placeholderSrcset: null,
-  alt: 'Image alt',
-  height: 640,
-  width: 450,
 };
 
 export default AmpMediaPlayer;

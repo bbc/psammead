@@ -38,7 +38,7 @@ storiesOf('Components|Media Player', module).add(
   { notes, knobs: { escapeHTML: false } },
 );
 
-storiesOf('Components|MediaPlayer', module)
+storiesOf('Components|Media Player', module)
   .addDecorator(ampDecorator)
   .add(
     'AMP',
