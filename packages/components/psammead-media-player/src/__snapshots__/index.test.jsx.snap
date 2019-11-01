@@ -253,7 +253,7 @@ exports[`Media Player: Canonical Entry renders a landscape container with a plac
       </time>
     </button>
     <img
-      alt="Image Alt"
+      alt=""
       class="c9"
       src="http://foo.bar/placeholder.png"
     />
@@ -391,7 +391,7 @@ exports[`Media Player: Canonical Entry renders a portrait container with a place
       </time>
     </button>
     <img
-      alt="Image Alt"
+      alt=""
       class="c9"
       src="http://foo.bar/placeholder.png"
     />
