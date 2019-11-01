@@ -95,7 +95,7 @@ describe('Media Player: Canonical Entry', () => {
       service="news"
       mediaInfo={{
         title: 'Dog chases cat.',
-        guidance:
+        guidanceMessage:
           'May contain strong language, sexual or violent content that may offend.',
         ...mediaInfo,
       }}
