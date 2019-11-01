@@ -4,13 +4,14 @@ import styled from 'styled-components';
 import { C_WHITE } from '@bbc/psammead-styles/colours';
 import { mediaIcons } from '@bbc/psammead-assets/svgs';
 import {
-  GEL_MARGIN_BELOW_400PX,
   GEL_SPACING,
   GEL_SPACING_DBL,
   GEL_SPACING_TRPL,
 } from '@bbc/gel-foundations/spacings';
 import { GEL_LONG_PRIMER } from '@bbc/gel-foundations/typography';
 import { getSansRegular } from '@bbc/psammead-styles/font-styles';
+
+const GUIDANCE_BACKGROUND = 'rgba(34, 34, 34, 0.75)';
 
 const StyledGuidance = styled.div`
   ${({ service }) => getSansRegular(service)}
@@ -21,10 +22,9 @@ const GuidanceWrapper = styled.div`
   width: 100%;
   height: 100%;
   position: absolute;
-  background-color: rgba(34, 34, 34, 0.75);
+  background-color: ${GUIDANCE_BACKGROUND};
   color: ${C_WHITE};
-  padding: ${GEL_MARGIN_BELOW_400PX};
-  border: none;
+  padding: ${GEL_SPACING};
 `;
 
 const Content = styled.div`
@@ -32,7 +32,7 @@ const Content = styled.div`
   flex-direction: row;
   align-items: center;
   height: ${GEL_SPACING_TRPL};
-  padding: ${GEL_SPACING_DBL} ${GEL_MARGIN_BELOW_400PX};
+  padding: ${GEL_SPACING_DBL} ${GEL_SPACING};
 `;
 
 const GuidanceMessage = styled.strong`
