@@ -393,7 +393,7 @@ exports[`Bulletin should render live audio correctly 1`] = `
       class="c3"
       dir="ltr"
     >
-      Live
+      LIVE
     </span>
     <a
       class="c4"
@@ -629,7 +629,7 @@ exports[`Bulletin should render live video correctly 1`] = `
       class="c4"
       dir="ltr"
     >
-      Live
+      LIVE
     </span>
     <a
       class="c5"
