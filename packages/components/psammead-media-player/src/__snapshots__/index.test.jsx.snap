@@ -351,22 +351,17 @@ exports[`Media Player: Canonical Entry renders a placeholder image with guidance
   background-color: rgba(34,34,34,0.75);
   color: #FFFFFF;
   padding: 0.5rem;
-  border: none;
 }
 
 .c5 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  height: 1.5rem;
   padding: 1rem 0.5rem;
 }
 
@@ -410,6 +405,12 @@ exports[`Media Player: Canonical Entry renders a placeholder image with guidance
 @media (min-width:37.5rem) {
   .c3 {
     font-size: 0.875rem;
+  }
+}
+
+@media (min-width:25rem) {
+  .c5 {
+    padding: 1rem 0.5rem;
   }
 }
 
@@ -485,7 +486,7 @@ exports[`Media Player: Canonical Entry renders a placeholder image with guidance
       </time>
     </button>
     <img
-      alt="Image Alt"
+      alt=""
       class="c15"
       src="http://foo.bar/placeholder.png"
     />
