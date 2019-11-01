@@ -14,8 +14,8 @@ exports[`Media Player: Guidance should render Guidance 1`] = `
   font-family: ReithSans,Helvetica,Arial,sans-serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 0.75rem;
-  line-height: 1rem;
+  font-size: 0.9375rem;
+  line-height: 1.125rem;
 }
 
 .c0 strong {
@@ -35,23 +35,37 @@ exports[`Media Player: Guidance should render Guidance 1`] = `
 .c2 {
   display: inline-grid;
   grid-auto-flow: column;
+  height: 1.5rem;
   padding: 1rem 0.5rem;
 }
 
 .c5 {
-  padding: 0 0 0 0.25rem;
+  padding: 0 0 0 0.5rem;
 }
 
 .c3 > svg {
   color: #FFFFFF;
   fill: currentColor;
-  height: 1rem;
-  width: 1rem;
+  height: 1.5rem;
+  width: 1.5rem;
+}
+
+@media (min-width:37.5rem) {
+  .c0 {
+    font-size: 0.875rem;
+  }
+}
+
+@media (min-width:25rem) {
+  .c5 {
+    position: relative;
+    top: 0.25rem;
+  }
 }
 
 @media (max-width:25rem) {
   .c3 {
-    padding: 0.25rem 0 0 0;
+    padding: 0.5rem 0 0 0;
   }
 }
 
