@@ -3,6 +3,7 @@ import { string, node } from 'prop-types';
 import styled from 'styled-components';
 import { C_WHITE } from '@bbc/psammead-styles/colours';
 import { mediaIcons } from '@bbc/psammead-assets/svgs';
+import { GEL_GROUP_2_SCREEN_WIDTH_MIN } from '@bbc/gel-foundations/breakpoints';
 import {
   GEL_SPACING,
   GEL_SPACING_DBL,
@@ -28,11 +29,13 @@ const GuidanceWrapper = styled.div`
 `;
 
 const Content = styled.div`
-  display: inline-flex;
-  flex-direction: row;
+  display: flex;
   align-items: center;
-  height: ${GEL_SPACING_TRPL};
   padding: ${GEL_SPACING_DBL} ${GEL_SPACING};
+
+  @media (min-width: ${GEL_GROUP_2_SCREEN_WIDTH_MIN}) {
+    padding: ${GEL_SPACING_DBL} ${GEL_SPACING};
+  }
 `;
 
 const GuidanceMessage = styled.strong`
