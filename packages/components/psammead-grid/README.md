@@ -41,7 +41,7 @@ Psammead Grid is a component that you can use to set out column-based layouts us
       group2: 1,
       group3: 1,
       group4: 1,
-      group5: 1,
+      group5: 1
     }}
   >
     This spans 1 out of 6 columns for all widths
@@ -54,7 +54,7 @@ Psammead Grid is a component that you can use to set out column-based layouts us
       group2: 5,
       group3: 5,
       group4: 5,
-      group5: 5,
+      group5: 5
     }}
   >
     This spans 5 out of 6 columns for all widths
@@ -63,7 +63,7 @@ Psammead Grid is a component that you can use to set out column-based layouts us
 ```
 
 - When should I use the `startOffset` prop?
-  - `startOffset` is an object structured just like the `columns` prop. You can set it on a `<Grid item>` element to start it at a column other than the first one.
+  - `startOffset` is an object structured just like the `columns` prop. You can set it on a nested `Grid` or `<Grid item>` element to start it at a column other than the first one. It should not be added to the outer `Grid` as it won’t be working as expected unless its immediate parent has a `display: grid`.
   - If you don't pass it in, the offset value defaults to 1, the start of the grid.
 - Why is there no vertical spacing on the grid?
   - The Grid implementation only has gutters/margins for columns, [according to the GEL specification](https://www.bbc.co.uk/gel/guidelines/grid#grid-sizes). This is to allow flexibility for a variety of spacing. To add vertical spacing, you should add padding/margin/top/bottom to the contents.
@@ -79,7 +79,7 @@ When we refer to `group3` in this component, we're referring to the breakpoint w
 Here is an example of a `<Grid>` that has 8 columns for `group4` (from 1008px to 1279px). It has four child `<Grid item>` elements, one which spans 6/8 columns and three others which spans 2/8 columns within this breakpoint.
 
 ```jsx
-import Grid from '@bbc/psammead-grid';
+import Grid from "@bbc/psammead-grid";
 
 const MyComponent = () => (
   <Grid
@@ -89,7 +89,7 @@ const MyComponent = () => (
       group2: 8,
       group3: 8,
       group4: 8,
-      group5: 8,
+      group5: 8
     }}
   >
     <Grid
@@ -100,7 +100,7 @@ const MyComponent = () => (
         group2: 6,
         group3: 6,
         group4: 6,
-        group5: 6,
+        group5: 6
       }}
     >
       <p>Item 1 - Paragraph that spans 6 out of 8 columns through group4</p>
@@ -113,7 +113,7 @@ const MyComponent = () => (
         group2: 2,
         group3: 2,
         group4: 2,
-        group5: 2,
+        group5: 2
       }}
     >
       <p>Item 2 - Paragraph that spans 2 out of 8 columns through group4</p>
@@ -126,7 +126,7 @@ const MyComponent = () => (
         group2: 2,
         group3: 2,
         group4: 2,
-        group5: 2,
+        group5: 2
       }}
     >
       <p>Item 3 - Paragraph that spans 2 out of 8 columns through group4</p>
@@ -139,7 +139,7 @@ const MyComponent = () => (
         group2: 2,
         group3: 2,
         group4: 2,
-        group5: 2,
+        group5: 2
       }}
     >
       <p>Item 4 - Paragraph that spans 2 out of 8 columns through group4</p>
@@ -156,7 +156,7 @@ Image of this example when viewed at within `group4` (from 1008px to 1279px). Wh
 Using `enableGelGutters` and `enableGelMargins` on the `Grid` element. Note: these should _not_ be added to a `<Grid item>` element!
 
 ```jsx
-import Grid from '@bbc/psammead-grid';
+import Grid from "@bbc/psammead-grid";
 
 const MyComponent = () => (
   <Grid
@@ -168,7 +168,7 @@ const MyComponent = () => (
       group2: 4,
       group3: 6,
       group4: 8,
-      group5: 12,
+      group5: 12
     }}
   >
     <Grid
@@ -179,7 +179,7 @@ const MyComponent = () => (
         group2: 4,
         group3: 6,
         group4: 6,
-        group5: 12,
+        group5: 12
       }}
     >
       <p>
@@ -194,7 +194,7 @@ const MyComponent = () => (
         group2: 4,
         group3: 6,
         group4: 2,
-        group5: 12,
+        group5: 12
       }}
     >
       <p>
@@ -216,7 +216,7 @@ Screenshot of this example without GEL Gutters and GEL Margins
 Note that here, any time you use `<Grid>` that generates a new grid. The total number of columns at each breakpoint is set via the `columns` prop. Then to define how many columns the child `<Grid item >` should span, you can use the `columns` prop on the `<Grid item>`.
 
 ```jsx
-import Grid from '@bbc/psammead-grid';
+import Grid from "@bbc/psammead-grid";
 
 const MyComponent = () => (
   <Grid
@@ -226,7 +226,7 @@ const MyComponent = () => (
       group2: 6,
       group3: 6,
       group4: 6,
-      group5: 6,
+      group5: 6
     }}
   >
     <Grid
@@ -236,7 +236,7 @@ const MyComponent = () => (
         group2: 6,
         group3: 6,
         group4: 6,
-        group5: 6,
+        group5: 6
       }}
     >
       <Grid
@@ -247,7 +247,7 @@ const MyComponent = () => (
           group2: 6,
           group3: 3,
           group4: 3,
-          group5: 3,
+          group5: 3
         }}
       >
         <ExampleImage />
@@ -260,7 +260,7 @@ const MyComponent = () => (
           group2: 6,
           group3: 3,
           group4: 3,
-          group5: 3,
+          group5: 3
         }}
       >
         <ExampleParagraph />
@@ -274,7 +274,7 @@ const MyComponent = () => (
         group2: 2,
         group3: 2,
         group4: 2,
-        group5: 2,
+        group5: 2
       }}
     >
       <ExampleImage />
@@ -287,7 +287,7 @@ const MyComponent = () => (
         group2: 4,
         group3: 4,
         group4: 4,
-        group5: 4,
+        group5: 4
       }}
     >
       <ExampleParagraph />
@@ -321,9 +321,7 @@ This `Grid` component can be used for page-level layouts as well as for layouts 
 
 Currently this component is in alpha. This is because it has not yet been tested with various assistive technologies. After it has had an accessibility swarm, this will be published under a standard version.
 
-## Roadmap
-
-Currently the fallback for browsers that don't support CSS Grid is that there are no gutters or margins applied. We will implement a fix for this in a future version.
+<!-- ## Roadmap -->
 
 ## Contributing
 

@@ -20,7 +20,7 @@
   "dependencies": {
     "@bbc/gel-foundations": "^3.4.1",
     "@bbc/psammead-styles": "^4.1.0",
-    "@bbc/psammead-assets": "^2.6.0"
+    "@bbc/psammead-assets": "^2.7.0"
   },
   "peerDependencies": {
     "react": "^16.9.0",
