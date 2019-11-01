@@ -41,10 +41,6 @@ const item = {
 
 ```
 
-Screenshot
-
-![most-read-single-item](documentation/most-read-single-item.png)
-
 #### <a name="example with last updated date">Example with last updated date</a>
 
 ```jsx
@@ -78,10 +74,6 @@ const lastUpdated = (script, service) => (
 />;
 
 ```
-
-Screenshot
-
-![most-read-item-with-last-Updated-date](documentation/most-read-item-with-last-Updated-date.png)
 
 ### StyledCountSpan props
 
