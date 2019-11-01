@@ -40,7 +40,7 @@ const Placeholder = ({ onClick, service, src, srcset, mediaInfo }) => {
         durationSpoken={durationSpoken}
         type={type}
       />
-      <Image alt="Image Alt" src={src} srcset={srcset} />
+      <Image alt="" src={src} srcset={srcset} />
     </StyledPlaceholder>
   );
 };
