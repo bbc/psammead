@@ -33,7 +33,7 @@ const lastUpdated = (script, service) => (
   </Timestamp>
 );
 
-const stories = storiesOf('Components|MostRead/MostReadItem', module)
+const stories = storiesOf('Components|MostRead/Item', module)
   .addDecorator(withKnobs)
   .addDecorator(withServicesKnob());
 
