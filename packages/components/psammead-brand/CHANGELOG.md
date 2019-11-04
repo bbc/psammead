@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 | ------- | ----------- |
+| 5.1.0-alpha.3 | [PR#2539](https://github.com/bbc/psammead/pull/2539) Fix overlapping between `ScriptLink` and `Brand` |
 | 5.1.0-alpha.2 | [PR#2519](https://github.com/bbc/psammead/pull/2519) Talos - Bump Dependencies - @bbc/psammead-styles |
 | 5.1.0-alpha.1 | [PR#2474](https://github.com/bbc/psammead/pull/2474) Add scriptLink prop to render `ScriptLink` used for linking to service variants |
 | 5.0.11 | [PR#2466](https://github.com/bbc/psammead/pull/2466) create rtl substories |
