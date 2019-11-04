@@ -9,6 +9,8 @@ describe('Media Player: AMP Entry', () => {
       placeholderSrc="http://foo.bar/placeholder.png"
       src="http://foo.bar/iframe/amp"
       title="Media player"
+      height={16}
+      width={9}
     />,
   );
 
@@ -19,6 +21,8 @@ describe('Media Player: AMP Entry', () => {
       placeholderSrc="http://foo.bar/placeholder.png"
       src="http://foo.bar/iframe/amp"
       title="Media player"
+      height={9}
+      width={16}
     />,
   );
 
@@ -30,6 +34,8 @@ describe('Media Player: AMP Entry', () => {
       skin="audio"
       placeholderSrc="http://foo.bar/placeholder.png"
       title="Audio player"
+      height={9}
+      width={16}
     />,
   );
 });
