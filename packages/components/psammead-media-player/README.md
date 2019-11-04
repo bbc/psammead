@@ -37,12 +37,16 @@ Assuming `showPlaceholder` is `true`, the `placeholderSrc` will be what image to
 | Argument  | Type                | Required | Default | Example         |
 |-----------|---------------------|----------|---------|-----------------|
 | `src` | string | Yes   | - | `http://foobar.com/embeddable_endpoint` |
-| `placeholderSrcset` | string | No   | - | `	"https://bbc.com/300/cat.jpg 300w, https://bbc.com/450/cat.jpg 450w, https://bbc.com/600/cat.jpg 600w"` |
+| `placeholderSrcset` | string | No   | `null` | `	"https://bbc.com/300/cat.jpg 300w, https://bbc.com/450/cat.jpg 450w, https://bbc.com/600/cat.jpg 600w"` |
 | `title` | string | Yes | - | `Video player` |
 | `portrait` | boolean | No   | `false` | `true` |
 | `placeholderSrc` | string | Yes   | - | `http://foobar.com/placeholder.png` |
+| `height` | number | Yes | - | `9` |
+| `width` | number | Yes | - | `16` |
 
 The `placeholderSrc` prop is required for AMP, as in order to have the component load an `amp-iframe` within 600px or 75% of the viewport from the top, we must have an `amp-img` placeholder. For more information on this, please refer to the [AMP docs for amp-iframe](https://amp.dev/documentation/components/amp-iframe/).
+
+The `height` and `width` props are required to be provided in advance by AMP so that the aspect ratio can be known without fetching the image. For more information on this you can refer to the [AMP docs for amp-img](https://amp.dev/documentation/components/amp-img/).
 
 ## Usage
 ### CanonicalMediaPlayer
@@ -65,13 +69,15 @@ const Container = ({ src, title, portrait, showPlaceholder, placeholderSrc }) =>
 ```js
 import { AmpMediaPlayer } from '@bbc/psammead-media-player';
 
-const Container = ({ src, title, portrait, placeholderSrc }) => (
+const Container = ({ src, title, portrait, placeholderSrc, height, width }) => (
   <AmpMediaPlayer
     src={src}
     title={title}
     portrait={portrait}
     placeholderSrc={placeholderSrc}
     placeholderSrcset={placeholderSrcset}
+    height={height}
+    width={width}
   />
 )
 ```
