@@ -33,7 +33,7 @@ const Content = styled.div`
 `;
 
 const GuidanceMessage = styled.strong`
-  padding--left: ${GEL_SPACING_HLF};
+  padding-left: ${GEL_SPACING_HLF};
   font-weight: normal;
 `;
 
