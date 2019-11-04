@@ -5,7 +5,6 @@ import { getFoolscap, getDoublePica } from '@bbc/gel-foundations/typography';
 import { C_EBON, C_POSTBOX } from '@bbc/psammead-styles/colours';
 import { scriptPropType } from '@bbc/gel-foundations/prop-types';
 import { GEL_SPACING } from '@bbc/gel-foundations/spacings';
-import { GEL_GROUP_3_SCREEN_WIDTH_MIN } from '@bbc/gel-foundations/breakpoints';
 import {
   getSerifLight,
   getSerifMedium,
@@ -19,10 +18,6 @@ export const StyledCountSpan = styled.span`
   padding-bottom: ${GEL_SPACING};
   display: inline-block;
   min-width: 3rem;
-  
-  @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
-    width: 4rem;
-  }
 `;
 
 const StyledLink = styled.a`

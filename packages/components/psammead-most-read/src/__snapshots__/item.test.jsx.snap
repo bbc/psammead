@@ -28,12 +28,6 @@ exports[`Most read count should render ltr correctly 1`] = `
   }
 }
 
-@media (min-width:37.5rem) {
-  .c0 {
-    width: 4rem;
-  }
-}
-
 <span
   class="c0"
 >
@@ -69,12 +63,6 @@ exports[`Most read count should render ltr double digit correctly 1`] = `
   }
 }
 
-@media (min-width:37.5rem) {
-  .c0 {
-    width: 4rem;
-  }
-}
-
 <span
   class="c0"
 >
@@ -107,12 +95,6 @@ exports[`Most read count should render rtl correctly 1`] = `
   .c0 {
     font-size: 3.5rem;
     line-height: 3.75rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c0 {
-    width: 4rem;
   }
 }
 

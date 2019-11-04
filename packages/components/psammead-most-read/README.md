@@ -17,7 +17,6 @@ The `MostRead` component is designed to display the most read articles given a d
 | Argument | Type | Required | Default | Example |
 | -------- | ---- | -------- | ------- | ------- |
 | item | object | yes | N/A | `{ title: 'This is a item', href: 'https://www.bbc.com' }` |
-| count | string | yes | N/A | `'2'`  |
 | script | object | yes | N/A | `{ canon: { groupA: { fontSize: '28', lineHeight: '32',}, groupB: { fontSize: '32', lineHeight: '36', }, groupD: { fontSize: '44', lineHeight: '48', }, }, trafalgar: { groupA: { fontSize: '20', lineHeight: '24', }, groupB: { fontSize: '24', lineHeight: '28', }, groupD: { fontSize: '32', lineHeight: '36', }, }, }` |
 | service | string | yes | N/A | `'news'` |
 | dir | string | no | `'ltr'` | `'rtl'`  |
@@ -25,7 +24,7 @@ The `MostRead` component is designed to display the most read articles given a d
 
 ## MostReadItem Usage
 
-A typical use-case of this component is as displayed below. It contains a count and an info element. The info element is a link which points to the corresponding article while the count is a number that represents the position of the info element on the list of info elements.
+A typical use-case of this component is as displayed below. It contains an info element. The info element is a link which points to the corresponding article.
 
 ```jsx
 import React from 'react';
@@ -94,25 +93,6 @@ import { StyledCountSpan } from '@bbc/psammead-most-read/esm/item';
 
 ```
 
-### When to use this component
-
-This component is to be used on `article` pages.
-
-### Accessibility notes
-
-Currently this component is in alpha. This is because it has not yet been tested with various assistive technologies. After it has had an accessibility swarm, this will be published under a standard version.
-
-## Roadmap
-
-Currently, this package only exports the `MostReadItem` component. We will add a wrapper that will export a list of most read components using `@bbc/psammead-grid` to display the most read items on a grid.
-=======
-The `MostRead` component is designed to display the most read articles given a designated period of time which is dependent on service. The component comprises of a `MostReadTitle`, a `MostReadList` which is a grid containing a `MostReadCount/Rank` (name subject to change) and a `MostReadItem`.
-
-## Installation
-
-`npm install @bbc/psammead-most-read/esm/item`
-
-## Props
 ### MostReadTitle props
 <!-- prettier-ignore -->
 | Argument | Type | Required | Default | Example |
@@ -136,24 +116,7 @@ Currently this component is in alpha. This is because it has not yet been tested
 
 ## Roadmap
 
-Currently, this package only exports the `MostReadTitle` component. The next steps are to create and add the `MostReadItem` and `MostReadCount/Rank`. Finally we will add a wrapper that will export a list of most read components using `@bbc/psammead-grid` to display the most read items on a grid. 
-Documentation for MostReadItem as it is currently is as follows:
-
-### Item props
-<!-- prettier-ignore -->
-| Argument | Type | Required | Default | Example |
-| -------- | ---- | -------- | ------- | ------- |
-| item | object | yes | N/A | `{ title: 'This is a item', href: 'https://www.bbc.com' }` |
-| script | object | yes | N/A | `{ canon: { groupA: { fontSize: '28', lineHeight: '32',}, groupB: { fontSize: '32', lineHeight: '36', }, groupD: { fontSize: '44', lineHeight: '48', }, }, trafalgar: { groupA: { fontSize: '20', lineHeight: '24', }, groupB: { fontSize: '24', lineHeight: '28', }, groupD: { fontSize: '32', lineHeight: '36', }, }, }` |
-| service | string | yes | N/A | `'news'` |
-| dir | string | no | `'ltr'` | `'rtl'`  |
-| lastUpdated | node | no | null | `<time>12 March 2019</time>` |
-
-#### Example
-![image](https://user-images.githubusercontent.com/30599794/67940838-59342300-fbcc-11e9-89e0-3982543596cf.png)
-
-#### Example with last updated date (to be used if article is 60 days old or older)
-![image](https://user-images.githubusercontent.com/53564281/67952042-8bea1580-fbe4-11e9-9c03-501fe1d4f6fc.png)
+The `MostRead` component is designed to display the most read articles given a designated period of time which is dependent on service. The component comprises of a `MostReadTitle`, a `MostReadList` which is a grid containing a `MostReadCount/Rank` (name subject to change) and a `MostReadItem`. Finally we will add a wrapper that will export a list of most read components using `@bbc/psammead-grid` to display the most read items on a grid.
 
 ## Contributing
 
