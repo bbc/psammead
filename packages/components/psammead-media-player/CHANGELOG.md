@@ -4,6 +4,7 @@
 | Version       | Description                                                                                                                  |
 | ------------- | ---------------------------------------------------------------------------------------------------------------------------- |
 | 2.2.0 | [PR#2517](https://github.com/bbc/psammead/pull/2517) Add Guidance to media placeholder image
+| 2.1.3 | [PR#2542](https://github.com/bbc/psammead/pull/2542) Talos - Bump Dependencies - @bbc/psammead-play-button |
 | 2.1.2 | [PR#2467](https://github.com/bbc/psammead/pull/2476) Update image `alt` to be empty for Media Player placeholder |
 | 2.1.1 | [PR#2532](https://github.com/bbc/psammead/pull/2532) Rename "Media Player" story to "MediaPlayer"
 | 2.1.0 | [PR#2424](https://github.com/bbc/psammead/pull/2424) Add srcset to placeholder image
