@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 1.8.47 | [PR#2491](https://github.com/bbc/psammead/pull/2491) Add `psammead-most-read` component |
 | 1.8.46 | [PR#2428](https://github.com/bbc/psammead/pull/2428) Update alpha component documentation |
 | 1.8.45 | [PR#2533](https://github.com/bbc/psammead/pull/2533) Talos - Bump Dependencies - @bbc/psammead-assets |
 | 1.8.44 | [PR#2528](https://github.com/bbc/psammead/pull/2528) Bump dependencies |
