@@ -39,7 +39,7 @@ exports[`Media Player: Guidance should render Guidance 1`] = `
 }
 
 .c5 {
-  padding--left: 0.25rem;
+  padding-left: 0.25rem;
   font-weight: normal;
 }
 

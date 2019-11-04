@@ -232,7 +232,7 @@ exports[`Media Player: Placeholder should render a video placeholder with guidan
 }
 
 .c7 {
-  padding--left: 0.25rem;
+  padding-left: 0.25rem;
   font-weight: normal;
 }
 

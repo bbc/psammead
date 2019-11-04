@@ -374,7 +374,7 @@ exports[`Media Player: Canonical Entry renders a placeholder image with guidance
 }
 
 .c8 {
-  padding--left: 0.25rem;
+  padding-left: 0.25rem;
   font-weight: normal;
 }
 
