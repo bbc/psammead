@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import { node, oneOf, shape, string } from 'prop-types';
 import styled from 'styled-components';
 import { getFoolscap, getDoublePica } from '@bbc/gel-foundations/typography';
@@ -10,8 +10,6 @@ import {
   getSerifLight,
   getSerifMedium,
 } from '@bbc/psammead-styles/font-styles';
-
-const ItemWrapper = styled.div``;
 
 export const StyledCountSpan = styled.span`
   ${({ script }) => script && getFoolscap(script)};
@@ -47,12 +45,12 @@ export const MostReadItem = ({
   service,
   item: { title, href },
 }) => (
-  <ItemWrapper dir={dir}>
+  <Fragment dir={dir}>
     <StyledLink href={href} script={script} service={service}>
       {title}
     </StyledLink>
     {lastUpdated}
-  </ItemWrapper>
+  </Fragment>
 );
 
 StyledCountSpan.propTypes = {
