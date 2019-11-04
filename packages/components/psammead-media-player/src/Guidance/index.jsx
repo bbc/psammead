@@ -3,11 +3,10 @@ import { string, node } from 'prop-types';
 import styled from 'styled-components';
 import { C_WHITE } from '@bbc/psammead-styles/colours';
 import { mediaIcons } from '@bbc/psammead-assets/svgs';
-import { GEL_GROUP_2_SCREEN_WIDTH_MIN } from '@bbc/gel-foundations/breakpoints';
 import {
-  GEL_SPACING,
   GEL_SPACING_DBL,
   GEL_SPACING_TRPL,
+  GEL_SPACING_HLF,
 } from '@bbc/gel-foundations/spacings';
 import { GEL_LONG_PRIMER } from '@bbc/gel-foundations/typography';
 import { getSansRegular } from '@bbc/psammead-styles/font-styles';
@@ -25,21 +24,16 @@ const GuidanceWrapper = styled.div`
   position: absolute;
   background-color: ${GUIDANCE_BACKGROUND};
   color: ${C_WHITE};
-  padding: ${GEL_SPACING};
 `;
 
 const Content = styled.div`
   display: flex;
   align-items: center;
-  padding: ${GEL_SPACING_DBL} ${GEL_SPACING};
-
-  @media (min-width: ${GEL_GROUP_2_SCREEN_WIDTH_MIN}) {
-    padding: ${GEL_SPACING_DBL} ${GEL_SPACING};
-  }
+  padding: ${GEL_SPACING_DBL};
 `;
 
 const GuidanceMessage = styled.strong`
-  padding: 0 0 0 ${GEL_SPACING};
+  padding--left: ${GEL_SPACING_HLF};
   font-weight: normal;
 `;
 
