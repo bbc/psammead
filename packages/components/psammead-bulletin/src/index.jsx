@@ -11,7 +11,7 @@ import {
 import { string, oneOf, node, bool, shape } from 'prop-types';
 import { getSansRegular, getSansBold } from '@bbc/psammead-styles/font-styles';
 import { scriptPropType } from '@bbc/gel-foundations/prop-types';
-import { getPica, getLongPrimer } from '@bbc/gel-foundations/typography';
+import { getPica, getBrevier } from '@bbc/gel-foundations/typography';
 import { mediaIcons } from '@bbc/psammead-assets/svgs';
 import VisuallyHiddenText from '@bbc/psammead-visually-hidden-text';
 import { Link, LiveLabel } from '@bbc/psammead-story-promo';
@@ -43,7 +43,7 @@ const PlayCTA = styled.div.attrs({ 'aria-hidden': true })`
 `;
 
 const BulletinSummary = styled.p`
-  ${({ script }) => script && getLongPrimer(script)};
+  ${({ script }) => script && getBrevier(script)};
   ${({ service }) => service && getSansRegular(service)}
   color: ${C_SHADOW};
   margin: 0; /* Reset */
