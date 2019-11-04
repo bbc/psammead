@@ -46,7 +46,7 @@ storiesOf('Components|Bulletin', module)
           script={script}
           service={service}
           type="video"
-          ctaText="Watch"
+          ctaText={isLive ? 'Watch Live' : 'Watch'}
         />
       );
     },
@@ -62,7 +62,7 @@ storiesOf('Components|Bulletin', module)
           script={script}
           service={service}
           type="audio"
-          ctaText="Listen"
+          ctaText={isLive ? 'Listen Live' : 'Listen'}
         />
       );
     },
