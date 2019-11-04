@@ -30,9 +30,18 @@ The `src` prop is required, as it tells the component what page it needs to embe
 The `placeholderSrcset` prop is not required, as it allows image responsiveness and optimization depending on the size of the screen.
 The `title` prop is required for accessibility of the embedded iframe.
 The `portrait` prop is not required, and defaults to `false`. This is to support portrait video content in the future.
-The `mediaInfo` prop is required, as it shows info regarding the media such as title, duration, durationSpoken and type of media either Video or Audio
 The `showPlaceholder` boolean prop is also not required, and defaults to `true`.
 Assuming `showPlaceholder` is `true`, the `placeholderSrc` will be what image to display as the placeholder.
+The `mediaInfo` prop is required, and has the following properties
+
+| Argument  | Type                | Required | Default | Example         |
+|-----------|---------------------|----------|---------|-----------------|
+| `title` | string | Yes   | - | `"A vertical video pretending to be a cat title"` |
+| `datetime` | string | No| - | `"PT11S"` |
+| `duration` | string| No   | - | `"0,11"` |
+| `durationSpoken` | string | No   | - | `"0,11"` |
+| `type` | function | No   | - | `"video"` |
+| `guidanceMessage` | string | No   | - | `"May contain strong language,sexual or violent content that may offend"` |
 
 ### AmpMediaPlayer
 
