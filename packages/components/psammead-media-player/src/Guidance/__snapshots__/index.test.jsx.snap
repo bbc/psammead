@@ -24,7 +24,6 @@ exports[`Media Player: Guidance should render Guidance 1`] = `
   position: absolute;
   background-color: rgba(34,34,34,0.75);
   color: #FFFFFF;
-  padding: 0.5rem;
 }
 
 .c2 {
@@ -36,11 +35,11 @@ exports[`Media Player: Guidance should render Guidance 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 1rem 0.5rem;
+  padding: 1rem;
 }
 
 .c5 {
-  padding: 0 0 0 0.5rem;
+  padding--left: 0.25rem;
   font-weight: normal;
 }
 
@@ -54,12 +53,6 @@ exports[`Media Player: Guidance should render Guidance 1`] = `
 @media (min-width:37.5rem) {
   .c0 {
     font-size: 0.875rem;
-  }
-}
-
-@media (min-width:25rem) {
-  .c2 {
-    padding: 1rem 0.5rem;
   }
 }
 

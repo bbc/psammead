@@ -217,7 +217,6 @@ exports[`Media Player: Placeholder should render a video placeholder with guidan
   position: absolute;
   background-color: rgba(34,34,34,0.75);
   color: #FFFFFF;
-  padding: 0.5rem;
 }
 
 .c4 {
@@ -229,11 +228,11 @@ exports[`Media Player: Placeholder should render a video placeholder with guidan
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 1rem 0.5rem;
+  padding: 1rem;
 }
 
 .c7 {
-  padding: 0 0 0 0.5rem;
+  padding--left: 0.25rem;
   font-weight: normal;
 }
 
@@ -266,12 +265,6 @@ exports[`Media Player: Placeholder should render a video placeholder with guidan
 @media (min-width:37.5rem) {
   .c2 {
     font-size: 0.875rem;
-  }
-}
-
-@media (min-width:25rem) {
-  .c4 {
-    padding: 1rem 0.5rem;
   }
 }
 
