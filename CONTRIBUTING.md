@@ -99,7 +99,7 @@ The accepted uses of an Alpha Component are:
 
 #### Prerequisites & Conditions
 
-- The component can be used in branches in Simorgh that are not `latest` in order for UX to review it in a page, and for easier a11y testing to take place.
+- The component can be used in branches in Simorgh that are **not** `latest` in order for UX to review it in a page, and for easier a11y testing to take place.
 - The alpha component **CAN NOT** be used in a live/production page.
 - Any P1 bugs that come out of the a11y swarm need to be fixed before the component comes out of Alpha and goes live, P2 and lower can be fixed after.
 - For functional issues the functionality must work on the biggest browsers on the services it's released on. This can be worked out by looking at a combination of our [browser support](https://github.com/bbc/psammead#bar_chart-support-levels) and browser usage statistics for different services.
