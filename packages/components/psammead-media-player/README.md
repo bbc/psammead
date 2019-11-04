@@ -72,7 +72,7 @@ const Container = ({ src, title, portrait, showPlaceholder, placeholderSrc, plac
 ```js
 import { AmpMediaPlayer } from '@bbc/psammead-media-player';
 
-const Container = ({ src, title, portrait, placeholderSrc, placeholderSrcset}) => (
+const Container = ({ src, title, portrait, placeholderSrc,height, width, placeholderSrcset}) => (
   <AmpMediaPlayer
     src={src}
     title={title}
