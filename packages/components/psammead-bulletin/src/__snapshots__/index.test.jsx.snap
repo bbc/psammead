@@ -88,7 +88,7 @@ exports[`Bulletin should render audio correctly 1`] = `
 }
 
 .c4 {
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   line-height: 1.125rem;
   font-family: ReithSans,Helvetica,Arial,sans-serif;
   font-weight: 400;
@@ -132,15 +132,15 @@ exports[`Bulletin should render audio correctly 1`] = `
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
   .c4 {
-    font-size: 0.9375rem;
+    font-size: 0.875rem;
     line-height: 1.125rem;
   }
 }
 
 @media (min-width:37.5rem) {
   .c4 {
-    font-size: 0.875rem;
-    line-height: 1.125rem;
+    font-size: 0.8125rem;
+    line-height: 1rem;
   }
 }
 
@@ -306,7 +306,7 @@ exports[`Bulletin should render live audio correctly 1`] = `
 }
 
 .c5 {
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   line-height: 1.125rem;
   font-family: ReithSans,Helvetica,Arial,sans-serif;
   font-weight: 400;
@@ -350,15 +350,15 @@ exports[`Bulletin should render live audio correctly 1`] = `
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
   .c5 {
-    font-size: 0.9375rem;
+    font-size: 0.875rem;
     line-height: 1.125rem;
   }
 }
 
 @media (min-width:37.5rem) {
   .c5 {
-    font-size: 0.875rem;
-    line-height: 1.125rem;
+    font-size: 0.8125rem;
+    line-height: 1rem;
   }
 }
 
@@ -537,7 +537,7 @@ exports[`Bulletin should render live video correctly 1`] = `
 }
 
 .c6 {
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   line-height: 1.125rem;
   font-family: ReithSans,Helvetica,Arial,sans-serif;
   font-weight: 400;
@@ -581,15 +581,15 @@ exports[`Bulletin should render live video correctly 1`] = `
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
   .c6 {
-    font-size: 0.9375rem;
+    font-size: 0.875rem;
     line-height: 1.125rem;
   }
 }
 
 @media (min-width:37.5rem) {
   .c6 {
-    font-size: 0.875rem;
-    line-height: 1.125rem;
+    font-size: 0.8125rem;
+    line-height: 1rem;
   }
 }
 
@@ -761,7 +761,7 @@ exports[`Bulletin should render video correctly 1`] = `
 }
 
 .c5 {
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   line-height: 1.125rem;
   font-family: ReithSans,Helvetica,Arial,sans-serif;
   font-weight: 400;
@@ -805,15 +805,15 @@ exports[`Bulletin should render video correctly 1`] = `
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
   .c5 {
-    font-size: 0.9375rem;
+    font-size: 0.875rem;
     line-height: 1.125rem;
   }
 }
 
 @media (min-width:37.5rem) {
   .c5 {
-    font-size: 0.875rem;
-    line-height: 1.125rem;
+    font-size: 0.8125rem;
+    line-height: 1rem;
   }
 }
 
