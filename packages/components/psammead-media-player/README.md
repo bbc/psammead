@@ -19,14 +19,14 @@ This component to be used at any point on the page, specifically when a media pl
 | Argument  | Type                | Required | Default | Example         |
 |-----------|---------------------|----------|---------|-----------------|
 | `src` | string | Yes   | - | `http://foobar.com/embeddable_endpoint` |
-| `skin` | string | No   | - | `"audio"` |
+| `skin` | string | No   | `"classic"` | `"audio"` |
 | `title` | string | Yes | - | `Video player` |
 | `service` | string | Yes   | - | `"news"` |
 | `showPlaceholder` | boolean | No   | `true` | `false` |
 | `placeholderSrc` | string | No   | `null` | `http://foobar.com/placeholder.png` |
-| `placeholderSrcset` | string | No   | - | `"https://bbc.com/300/cat.jpg 300w, https://bbc.com/450/cat.jpg 450w, https://bbc.com/600/cat.jpg 600w"` |
+| `placeholderSrcset` | string | No   | `null` | `"https://bbc.com/300/cat.jpg 300w, https://bbc.com/450/cat.jpg 450w, https://bbc.com/600/cat.jpg 600w"` |
 | `portrait` | boolean | No   | `false` | `true` |
-| `mediaInfo` | object | Yes   | - | `{ title: 'A vertical video pretending to be a cat title',duration: '0:11',durationSpoken: '0,11',datetime: 'PT11S',type: 'video' }`|
+| `mediaInfo` | object | Yes   | - | `{ title: 'A vertical video pretending to be a cat title',duration: '0:11',durationSpoken: '2 minutes 11 seconds',datetime: 'PT11S',type: 'video' }`|
 
 The `src` prop is required, as it tells the component what page it needs to embed.
 The `placeholderSrcset` prop is not required, as it allows image responsiveness and optimization depending on the size of the screen.
@@ -34,10 +34,9 @@ The `title` prop is required for accessibility of the embedded iframe.
 The `portrait` prop is not required, and defaults to `false`. This is to support portrait video content in the future.
 The `showPlaceholder` boolean prop is also not required, and defaults to `true`.
 Assuming `showPlaceholder` is `true`, the `placeholderSrc` will be what image to display as the placeholder.
+The `mediaInfo` prop is required, and has the following properties.
 
 #### mediaInfo
-
-The `mediaInfo` prop is required, and has the following properties
 
 | Argument  | Type                | Required | Default | Example         |
 |-----------|---------------------|----------|---------|-----------------|
@@ -57,12 +56,8 @@ The `mediaInfo` prop is required, and has the following properties
 | `title` | string | Yes | - | `Video player` |
 | `portrait` | boolean | No   | `false` | `true` |
 | `placeholderSrc` | string | Yes   | - | `http://foobar.com/placeholder.png` |
-| `height` | number | Yes | - | `9` |
-| `width` | number | Yes | - | `16` |
 
 The `placeholderSrc` prop is required for AMP, as in order to have the component load an `amp-iframe` within 600px or 75% of the viewport from the top, we must have an `amp-img` placeholder. For more information on this, please refer to the [AMP docs for amp-iframe](https://amp.dev/documentation/components/amp-iframe/).
-
-The `height` and `width` props are required to be provided in advance by AMP so that the aspect ratio can be known without fetching the image. For more information on this you can refer to the [AMP docs for amp-img](https://amp.dev/documentation/components/amp-img/).
 
 ## Usage
 ### CanonicalMediaPlayer
@@ -78,7 +73,8 @@ const Container = ({
   showPlaceholder, 
   placeholderSrc, 
   placeholderSrcset, 
-  mediaInfo }) => (
+  mediaInfo,
+   }) => (
   <CanonicalMediaPlayer
     src={src}
     skin={skin}
@@ -97,15 +93,13 @@ const Container = ({
 ```js
 import { AmpMediaPlayer } from '@bbc/psammead-media-player';
 
-const Container = ({ src, title, portrait, placeholderSrc,height, width, placeholderSrcset}) => (
+const Container = ({ src, title, portrait, placeholderSrc, placeholderSrcset}) => (
   <AmpMediaPlayer
     src={src}
     title={title}
     portrait={portrait}
     placeholderSrc={placeholderSrc}
     placeholderSrcset={placeholderSrcset}
-    height={height}
-    width={width}
   />
 )
 ```
