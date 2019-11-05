@@ -22,7 +22,6 @@ describe('Media Player: Placeholder', () => {
       src="http://foo.bar/placeholder.png"
       service="news"
       mediaInfo={{ title: 'Dog chases cat.', ...withDuration }}
-      className="foo"
     />,
   );
 
@@ -33,7 +32,6 @@ describe('Media Player: Placeholder', () => {
       src="http://foo.bar/placeholder.png"
       service="news"
       mediaInfo={{ title: 'Dog chases cat.' }}
-      className="foo"
     />,
   );
 
@@ -44,7 +42,6 @@ describe('Media Player: Placeholder', () => {
       src="http://foo.bar/placeholder.png"
       service="news"
       mediaInfo={{ type: 'audio', title: 'Dog barks at cat.', ...withDuration }}
-      className="foo"
     />,
   );
 
@@ -55,7 +52,6 @@ describe('Media Player: Placeholder', () => {
       src="http://foo.bar/placeholder.png"
       service="news"
       mediaInfo={{ type: 'audio', title: 'Dog barks at cat.' }}
-      className="foo"
     />,
   );
 
@@ -66,7 +62,6 @@ describe('Media Player: Placeholder', () => {
         src="http://foo.bar/placeholder.png"
         service="news"
         mediaInfo={{ title: 'Dog chases cat.', ...withDuration }}
-        className="foo"
       />,
     );
     fireEvent.click(container.firstChild);
@@ -86,7 +81,6 @@ describe('Media Player: Placeholder', () => {
           'Guidance: May contain strong language, sexual or violent content that may offend.',
         ...withDuration,
       }}
-      className="foo"
     />,
   );
 });
