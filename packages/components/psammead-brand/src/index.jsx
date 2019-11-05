@@ -133,11 +133,6 @@ const SkipLink = styled.a`
     clip: auto;
     height: auto;
     width: auto;
-    left: ${GEL_SPACING};
-
-    @media (min-width: ${GEL_GROUP_5_SCREEN_WIDTH_MIN}) {
-      left: 0;
-    }
   }
 `;
 
