@@ -287,13 +287,15 @@ const Grid = ({
 }) => {
   const renderChildren = () =>
     React.Children.map(children, child => {
-      const isNestedGridComponent = child.type === Grid;
+      if (child) {
+        const isNestedGridComponent = child.type === Grid;
 
-      if (isNestedGridComponent) {
-        return React.cloneElement(child, {
-          parentColumns: otherProps.columns,
-          parentEnableGelGutters: otherProps.enableGelGutters,
-        });
+        if (isNestedGridComponent) {
+          return React.cloneElement(child, {
+            parentColumns: otherProps.columns,
+            parentEnableGelGutters: otherProps.enableGelGutters,
+          });
+        }
       }
       return child;
     });
