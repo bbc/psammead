@@ -7,11 +7,16 @@ import {
   C_POSTBOX,
   C_SHADOW,
   C_EBON,
+  C_LUNAR,
 } from '@bbc/psammead-styles/colours';
 import { string, oneOf, node, bool, shape } from 'prop-types';
 import { getSansRegular, getSansBold } from '@bbc/psammead-styles/font-styles';
 import { scriptPropType } from '@bbc/gel-foundations/prop-types';
-import { getPica, getBrevier } from '@bbc/gel-foundations/typography';
+import {
+  getPica,
+  getBrevier,
+  getLongPrimer,
+} from '@bbc/gel-foundations/typography';
 import { mediaIcons } from '@bbc/psammead-assets/svgs';
 import VisuallyHiddenText from '@bbc/psammead-visually-hidden-text';
 import { Link, LiveLabel } from '@bbc/psammead-story-promo';
@@ -20,6 +25,9 @@ const BulletinWrapper = styled.div`
   @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
     display: none;
   }
+
+  ${({ type }) =>
+    type.toLowerCase() === 'audio' && `background-color: ${C_LUNAR};`}
 `;
 
 const IconWrapper = styled.span`
@@ -43,10 +51,13 @@ const PlayCTA = styled.div.attrs({ 'aria-hidden': true })`
 `;
 
 const BulletinSummary = styled.p`
-  ${({ script }) => script && getBrevier(script)};
+  ${({ script, type }) =>
+    script && type === 'audio' ? getLongPrimer(script) : getBrevier(script)};
   ${({ service }) => service && getSansRegular(service)}
   color: ${C_SHADOW};
   margin: 0; /* Reset */
+  ${({ type }) =>
+    type.toLowerCase() === 'audio' && `padding: 0 ${GEL_SPACING};`}
   padding-bottom: ${GEL_SPACING_DBL};
 `;
 
@@ -55,6 +66,8 @@ const BulletinHeading = styled.h3`
   ${({ service }) => getSansBold(service)}
   color: ${C_EBON};
   margin: 0; /* Reset */
+  ${({ type }) =>
+    type.toLowerCase() === 'audio' && `padding: 0 ${GEL_SPACING};`}
   padding-top: ${GEL_SPACING_DBL}; 
   padding-bottom:${GEL_SPACING};
 `;
@@ -71,14 +84,14 @@ const Bulletin = ({
   ctaLink,
   liveText,
 }) => (
-  <BulletinWrapper>
+  <BulletinWrapper type={type}>
     {image && type === 'video' && image}
-    <BulletinHeading script={script} service={service}>
+    <BulletinHeading script={script} service={service} type={type}>
       <VisuallyHiddenText>{ctaText}, </VisuallyHiddenText>
       {isLive && <LiveLabel service={service}>{liveText}</LiveLabel>}
       <Link href={ctaLink}>{headlineText}</Link>
     </BulletinHeading>
-    <BulletinSummary script={script} service={service}>
+    <BulletinSummary script={script} service={service} type={type}>
       {summaryText}
     </BulletinSummary>
     <PlayCTA isLive={isLive} service={service} script={script}>
