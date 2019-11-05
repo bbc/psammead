@@ -52,7 +52,7 @@ const PlayCTA = styled.div.attrs({ 'aria-hidden': true })`
 
 const BulletinSummary = styled.p`
   ${({ script, type }) =>
-    script && type === 'audio' ? getLongPrimer(script) : getBrevier(script)};
+    script && type === 'audio' ? getLongPrimer(script) : getBrevier(script)}
   ${({ service }) => service && getSansRegular(service)}
   color: ${C_SHADOW};
   margin: 0; /* Reset */
