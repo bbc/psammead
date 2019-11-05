@@ -47,9 +47,7 @@ The `scriptLink` can be used to render [ScriptLink](https://github.com/bbc/psamm
 | borderTop | Boolean | no | `false` | `true` |
 | borderBottom | Boolean | no | `false` | `true` |
 | scriptLink | Node | no | `null` | `<ScriptLink service='news' script={latin} href='https://www.bbc.com/serbian/lat'> Lat </ScriptLink>` |
-| script   | object  | no   | `null` | `{ canon: { groupA: { fontSize: '28', lineHeight: '32',}, groupB: { fontSize: '32', lineHeight: '36', }, groupD: { fontSize: '44', lineHeight: '48', }, }, trafalgar: { groupA: { fontSize: '20', lineHeight: '24', }, groupB: { fontSize: '24', lineHeight: '28', }, groupD: { fontSize: '32', lineHeight: '36', }, }, }` |
-| skipLinkText | string | no | `null`| `Skip to content` |
-| service | string | no | `null` | `'news'` |
+| skipLink | Node | no | `null` | `<SkipLink service='news' script={latin} href='#content'> Skip to content </SkipLink>` |
 
 ## Usage
 
@@ -60,7 +58,7 @@ When using `Brand` in the header, you should ensure that `borderBottom` prop is 
 `ScriptLink` component should be passed to `scriptLink` only when linking to a service variant.
 
 ```jsx
-import Brand from '@bbc/psammead-brand';
+import Brand, { SkipLink } from '@bbc/psammead-brand';
 import { igbo } from '@bbc/psammead-assets/svgs';
 import ScriptLink from '@bbc/psammead-script-link';
 import { C_POSTBOX, C_WHITE } from '@bbc/psammead-styles/colours';
@@ -74,6 +72,12 @@ const scriptLink = (
   >
     Lat
   </ScriptLink>
+);
+
+const skipLink = (
+  <SkipLink service="news" script={latin} href="#content">
+    Skip to content
+  </SkipLink>
 );
 
 const Header = (product, serviceName) => (
@@ -90,9 +94,7 @@ const Header = (product, serviceName) => (
       logoColour={logoColour}
       borderBottom
       scriptLink={scriptLink}
-      service="news"
-      script={latin}
-      skipLinkText="Skip to content"
+      skipLink={skipLink}
     />
   </header>
 );
