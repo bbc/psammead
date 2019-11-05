@@ -24,7 +24,6 @@ This component to be used at any point on the page, specifically when a media pl
 | `placeholderSrc` | string | No   | `null` | `http://foobar.com/placeholder.png` |
 | `placeholderSrcset` | string | No   | - | `"https://bbc.com/300/cat.jpg 300w, https://bbc.com/450/cat.jpg 450w, https://bbc.com/600/cat.jpg 600w"` |
 | `portrait` | boolean | No   | `false` | `true` |
-| `mediaInfo` | object | Yes | - | `{ title: "Dog chases cat", datetime: "PT2M30S", duration: "2:30", durationSpoken: "2 minutes 30 seconds", type: "video", guidanceMessage: "May contain strong language that may offend" }` |
 
 The `src` prop is required, as it tells the component what page it needs to embed.
 The `placeholderSrcset` prop is not required, as it allows image responsiveness and optimization depending on the size of the screen.
@@ -32,7 +31,6 @@ The `title` prop is required for accessibility of the embedded iframe.
 The `portrait` prop is not required, and defaults to `false`. This is to support portrait video content in the future.
 The `showPlaceholder` boolean prop is also not required, and defaults to `true`.
 Assuming `showPlaceholder` is `true`, the `placeholderSrc` will be what image to display as the placeholder.
-The `mediaInfo` prop is required as it is contains data used to display information about the audio/video content eg. duration, title and guidance message.
 
 ### AmpMediaPlayer
 
@@ -55,7 +53,7 @@ The `height` and `width` props are required to be provided in advance by AMP so 
 ```js
 import { CanonicalMediaPlayer } from '@bbc/psammead-media-player';
 
-const Container = ({ src, title, portrait, showPlaceholder, placeholderSrc, mediaInfo }) => (
+const Container = ({ src, title, portrait, showPlaceholder, placeholderSrc }) => (
   <CanonicalMediaPlayer
     src={src}
     title={title}
@@ -63,7 +61,6 @@ const Container = ({ src, title, portrait, showPlaceholder, placeholderSrc, medi
     placeholderSrc={placeholderSrc}
     placeholderSrcset={placeholderSrcset}
     showPlaceholder={showPlaceholder}
-    mediaInfo={mediaInfo}
   />
 )
 ```
