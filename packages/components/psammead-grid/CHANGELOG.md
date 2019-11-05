@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 1.0.0-alpha.12 | [PR#2565](https://github.com/bbc/psammead/pull/2565) Fix case where child of Grid component is not defined |
 | 1.0.0-alpha.11 | [PR#2439](https://github.com/bbc/psammead/pull/2439) Start offset, gutters and margins fallbacks |
 | 1.0.0-alpha.10 | [PR#2519](https://github.com/bbc/psammead/pull/2519) Talos - Bump Dependencies - @bbc/psammead-styles |
 | 1.0.0-alpha.9 | [PR#2458](https://github.com/bbc/psammead/pull/2458) Make all grid columns required |

@@ -1,6 +1,6 @@
 {
   "name": "@bbc/psammead",
-  "version": "1.8.48",
+  "version": "1.8.49",
   "description": "Core Components Library Developed & Maintained By The Articles and Reach & Languages Team",
   "main": "index.js",
   "private": true,
@@ -37,7 +37,7 @@
   },
   "homepage": "https://github.com/bbc/psammead#readme",
   "dependencies": {
-    "styled-components": "^4.4.0",
+    "styled-components": "^4.4.1",
     "styled-normalize": "^8.0.4"
   },
   "devDependencies": {
@@ -70,10 +70,10 @@
     "@storybook/addon-actions": "^5.2.5",
     "@storybook/addon-knobs": "^5.2.5",
     "@storybook/addon-notes": "^5.2.5",
-    "@storybook/addon-viewport": "^5.2.4",
+    "@storybook/addon-viewport": "^5.2.5",
     "@storybook/react": "^5.2.5",
     "@storybook/theming": "^5.2.5",
-    "@testing-library/react": "^9.2.0",
+    "@testing-library/react": "^9.3.2",
     "babel-core": "^7.0.0-bridge.0",
     "babel-eslint": "^10.0.3",
     "babel-loader": "^8.0.4",
@@ -116,7 +116,7 @@
     "stylelint-config-styled-components": "^0.1.1",
     "stylelint-csstree-validator": "^1.6.1",
     "stylelint-processor-styled-components": "^1.8.0",
-    "yargs-parser": "^16.0.0",
+    "yargs-parser": "^16.1.0",
     "yeoman-generator": "^4.2.0",
     "yo": "^3.1.0"
   },
