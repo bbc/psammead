@@ -175,8 +175,7 @@ exports[`Bulletin should render audio correctly 1`] = `
     <span
       class="c2"
     >
-      Listen
-      , 
+      Listen 
     </span>
     <a
       class="c3"
@@ -402,8 +401,7 @@ exports[`Bulletin should render live audio correctly 1`] = `
     <span
       class="c2"
     >
-      Listen
-      , 
+      Listen LIVE 
     </span>
     <span
       aria-hidden="true"
@@ -641,8 +639,7 @@ exports[`Bulletin should render live video correctly 1`] = `
     <span
       class="c3"
     >
-      Watch
-      , 
+      Watch LIVE 
     </span>
     <span
       aria-hidden="true"
@@ -868,8 +865,7 @@ exports[`Bulletin should render video correctly 1`] = `
     <span
       class="c3"
     >
-      Watch
-      , 
+      Watch 
     </span>
     <a
       class="c4"

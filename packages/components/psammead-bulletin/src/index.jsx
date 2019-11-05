@@ -87,7 +87,9 @@ const Bulletin = ({
   <BulletinWrapper type={type}>
     {image && type === 'video' && image}
     <BulletinHeading script={script} service={service} type={type}>
-      <VisuallyHiddenText>{ctaText}, </VisuallyHiddenText>
+      <VisuallyHiddenText>
+        {isLive ? `${ctaText} ${liveText} ` : `${ctaText} `}
+      </VisuallyHiddenText>
       {isLive && <LiveLabel service={service}>{liveText}</LiveLabel>}
       <Link href={ctaLink}>{headlineText}</Link>
     </BulletinHeading>
