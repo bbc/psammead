@@ -19,7 +19,9 @@ This component to be used at any point on the page, specifically when a media pl
 | Argument  | Type                | Required | Default | Example         |
 |-----------|---------------------|----------|---------|-----------------|
 | `src` | string | Yes   | - | `http://foobar.com/embeddable_endpoint` |
+| `skin` | string | No   | - | `"audio"` |
 | `title` | string | Yes | - | `Video player` |
+| `service` | string | Yes   | - | `"news"` |
 | `showPlaceholder` | boolean | No   | `true` | `false` |
 | `placeholderSrc` | string | No   | `null` | `http://foobar.com/placeholder.png` |
 | `placeholderSrcset` | string | No   | - | `"https://bbc.com/300/cat.jpg 300w, https://bbc.com/450/cat.jpg 450w, https://bbc.com/600/cat.jpg 600w"` |
@@ -69,7 +71,9 @@ import { CanonicalMediaPlayer } from '@bbc/psammead-media-player';
 
 const Container = ({ 
   src, 
+  skin,
   title, 
+  service,
   portrait, 
   showPlaceholder, 
   placeholderSrc, 
@@ -77,7 +81,9 @@ const Container = ({
   mediaInfo }) => (
   <CanonicalMediaPlayer
     src={src}
+    skin={skin}
     title={title}
+    service={service}
     portrait={portrait}
     placeholderSrc={placeholderSrc}
     placeholderSrcset={placeholderSrcset}
