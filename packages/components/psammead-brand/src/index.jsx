@@ -16,7 +16,6 @@ import {
 } from '@bbc/gel-foundations/spacings';
 import { getPica } from '@bbc/gel-foundations/typography';
 import { getSansRegular } from '@bbc/psammead-styles/font-styles';
-import { scriptPropType } from '@bbc/gel-foundations/prop-types';
 
 const SVG_TOP_OFFSET_ABOVE_400PX = '1.75rem'; // 28px
 const SVG_BOTTOM_OFFSET_BELOW_400PX = '0.75rem'; // 12px
@@ -114,7 +113,7 @@ const SKIP_LINK_COLOR = '#333';
 const SKIP_LINK_BORDER = '0.1875rem'; // 3px
 const TOP_BOTTOM_SPACING = '0.75rem'; // 12px
 
-const SkipLink = styled.a`
+export const SkipLink = styled.a`
   position: absolute;
   clip-path: inset(100%);
   clip: rect(1px, 1px, 1px, 1px);
@@ -235,17 +234,9 @@ const Brand = props => {
     backgroundColour,
     logoColour,
     scriptLink,
-    skipLinkText,
-    script,
-    service,
+    skipLink,
     ...rest
   } = props;
-
-  const renderSkipLink = skipLinkText && script && service && (
-    <SkipLink href="#content" script={script} service={service}>
-      {skipLinkText}
-    </SkipLink>
-  );
 
   return (
     <Banner
@@ -264,7 +255,7 @@ const Brand = props => {
         ) : (
           <StyledBrand {...props} />
         )}
-        {renderSkipLink}
+        {skipLink}
         {scriptLink}
       </SvgWrapper>
     </Banner>
@@ -277,9 +268,7 @@ Brand.defaultProps = {
   borderTop: false,
   borderBottom: false,
   scriptLink: null,
-  script: null,
-  service: null,
-  skipLinkText: null,
+  skipLink: null,
 };
 
 Brand.propTypes = {
@@ -289,9 +278,7 @@ Brand.propTypes = {
   borderTop: bool,
   borderBottom: bool,
   scriptLink: node,
-  script: shape(scriptPropType),
-  skipLinkText: string,
-  service: string,
+  skipLink: node,
 };
 
 export default Brand;

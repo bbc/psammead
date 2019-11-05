@@ -4,7 +4,7 @@ import { render } from '@testing-library/react';
 import { C_POSTBOX, C_WHITE } from '@bbc/psammead-styles/colours';
 import ScriptLink from '@bbc/psammead-script-link';
 import { latin } from '@bbc/gel-foundations/scripts';
-import Brand from '.';
+import Brand, { SkipLink } from '.';
 
 const svg = {
   group: (
@@ -144,6 +144,13 @@ describe('Brand', () => {
           Lat
         </ScriptLink>
       );
+
+      const skipLink = (
+        <SkipLink service="news" script={latin} href="#content">
+          Skip to content
+        </SkipLink>
+      );
+
       const { container } = render(
         <Brand
           product="Default Brand Name"
@@ -154,9 +161,7 @@ describe('Brand', () => {
           url="https://www.bbc.co.uk/news"
           backgroundColour={C_POSTBOX}
           logoColour={C_WHITE}
-          service="news"
-          script={latin}
-          skipLinkText="Skip to content"
+          skipLink={skipLink}
           data-brand="header"
           scriptLink={scriptLinkComponent}
         />,
