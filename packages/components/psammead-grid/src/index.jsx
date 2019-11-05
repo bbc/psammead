@@ -285,19 +285,21 @@ const Grid = ({
   startOffset: gridStartOffset, // alias this prop to prevent it rendering as an element attribute e.g. <div startoffset="[object Object]">
   ...otherProps
 }) => {
-  const renderChildren = () =>
-    React.Children.map(children, child => {
-      const isNestedGridComponent = child.type === Grid;
+  const renderChildren = () => {
+    return React.Children.map(children, child => {
+      if (child) {
+        const isNestedGridComponent = child.type === Grid;
 
-      if (isNestedGridComponent) {
-        return React.cloneElement(child, {
-          parentColumns: otherProps.columns,
-          parentEnableGelGutters: otherProps.enableGelGutters,
-        });
+        if (isNestedGridComponent) {
+          return React.cloneElement(child, {
+            parentColumns: otherProps.columns,
+            parentEnableGelGutters: otherProps.enableGelGutters,
+          });
+        }
       }
       return child;
     });
-
+  };
   const renderGridComponent = () => (
     <GridComponent {...otherProps} gridStartOffset={gridStartOffset}>
       {renderChildren()}
