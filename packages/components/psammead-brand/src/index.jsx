@@ -4,7 +4,6 @@ import { string, number, node, shape, bool } from 'prop-types';
 import VisuallyHiddenText from '@bbc/psammead-visually-hidden-text';
 import {
   GEL_GROUP_2_SCREEN_WIDTH_MIN,
-  GEL_GROUP_3_SCREEN_WIDTH_MIN,
   GEL_GROUP_5_SCREEN_WIDTH_MIN,
   GEL_GROUP_0_SCREEN_WIDTH_MAX,
 } from '@bbc/gel-foundations/breakpoints';
@@ -134,9 +133,6 @@ export const SkipLink = styled.a`
     height: auto;
     width: auto;
     left: ${GEL_SPACING};
-
-    @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
-    }
 
     @media (min-width: ${GEL_GROUP_5_SCREEN_WIDTH_MIN}) {
       left: 0;
