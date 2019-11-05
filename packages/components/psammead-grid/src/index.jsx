@@ -285,8 +285,8 @@ const Grid = ({
   startOffset: gridStartOffset, // alias this prop to prevent it rendering as an element attribute e.g. <div startoffset="[object Object]">
   ...otherProps
 }) => {
-  const renderChildren = () => {
-    return React.Children.map(children, child => {
+  const renderChildren = () =>
+    React.Children.map(children, child => {
       if (child) {
         const isNestedGridComponent = child.type === Grid;
 
@@ -299,7 +299,7 @@ const Grid = ({
       }
       return child;
     });
-  };
+
   const renderGridComponent = () => (
     <GridComponent {...otherProps} gridStartOffset={gridStartOffset}>
       {renderChildren()}
