@@ -7,6 +7,6 @@ import MostReadTitle from './title';
 storiesOf('Components|MostRead', module)
   .addDecorator(withKnobs)
   .addDecorator(withServicesKnob())
-  .add('title', ({ script, service }) => (
+  .add('Title', ({ script, service }) => (
     <MostReadTitle script={script} service={service} header="Most Read" />
   ));
