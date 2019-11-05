@@ -134,7 +134,7 @@ describe('Brand', () => {
         'header',
       );
     });
-    it('should render script link', () => {
+    it('should render script, frontpage and skip to content links', () => {
       const scriptLinkComponent = (
         <ScriptLink
           script={latin}
@@ -154,15 +154,28 @@ describe('Brand', () => {
           url="https://www.bbc.co.uk/news"
           backgroundColour={C_POSTBOX}
           logoColour={C_WHITE}
+          service="news"
+          script={latin}
+          skipLinkText="Skip to content"
           data-brand="header"
           scriptLink={scriptLinkComponent}
         />,
       );
 
       const links = container.querySelectorAll('a');
-      expect(links).toHaveLength(2);
+      expect(links).toHaveLength(3);
 
-      const scriptLink = links[1];
+      const frontpageLink = links[0];
+      expect(frontpageLink.getAttribute('href')).toEqual(
+        'https://www.bbc.co.uk/news',
+      );
+      expect(frontpageLink.textContent).toEqual('Default Brand Name');
+
+      const skipToContentLink = links[1];
+      expect(skipToContentLink.getAttribute('href')).toEqual('#content');
+      expect(skipToContentLink.textContent).toEqual('Skip to content');
+
+      const scriptLink = links[2];
       expect(scriptLink.getAttribute('href')).toEqual(
         'https://www.bbc.com/serbian/lat',
       );

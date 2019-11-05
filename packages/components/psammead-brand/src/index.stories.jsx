@@ -54,7 +54,7 @@ storiesOf(STORY_KIND, module)
   .addDecorator(withServicesKnob())
   .add(
     'without brand link',
-    ({ service }) => {
+    ({ service, script }) => {
       const {
         productInput,
         serviceLocalisedNameInput,
@@ -79,6 +79,9 @@ storiesOf(STORY_KIND, module)
           borderBottom={borderBottom}
           borderTop={borderTop}
           backgroundColour={backgroundColour}
+          service={service}
+          script={script}
+          skipLinkText="Skip to content"
           logoColour={logoColour}
         />
       );
@@ -87,7 +90,7 @@ storiesOf(STORY_KIND, module)
   )
   .add(
     'with brand link',
-    ({ service }) => {
+    ({ service, script }) => {
       const {
         productInput,
         serviceLocalisedNameInput,
@@ -113,6 +116,9 @@ storiesOf(STORY_KIND, module)
           borderBottom={borderBottom}
           borderTop={borderTop}
           backgroundColour={backgroundColour}
+          service={service}
+          script={script}
+          skipLinkText="Skip to content"
           logoColour={logoColour}
         />
       );
@@ -159,6 +165,9 @@ storiesOf(STORY_KIND, module)
           backgroundColour={backgroundColour}
           logoColour={logoColour}
           scriptLink={scriptLink}
+          service={service}
+          script={script}
+          skipLinkText="Skip to content"
         />
       );
     },
