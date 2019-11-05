@@ -145,6 +145,41 @@ storiesOf(STORY_KIND, module)
         logoColour,
       } = inputs();
 
+      return (
+        <Brand
+          product={productInput}
+          serviceLocalisedName={serviceLocalisedNameInput}
+          svgHeight={svgHeightInput}
+          minWidth={minWidthInput}
+          maxWidth={maxWidthInput}
+          svg={svgs[svgChoice]}
+          url="https://www.bbc.com/news"
+          borderBottom={borderBottom}
+          borderTop={borderTop}
+          backgroundColour={backgroundColour}
+          logoColour={logoColour}
+          scriptLink={scriptLink}
+        />
+      );
+    },
+    { notes },
+  )
+  .add(
+    'with skip to content link',
+    ({ service, script }) => {
+      const {
+        productInput,
+        serviceLocalisedNameInput,
+        svgHeightInput,
+        minWidthInput,
+        maxWidthInput,
+        svgChoice,
+        borderBottom,
+        borderTop,
+        backgroundColour,
+        logoColour,
+      } = inputs();
+
       const skipLink = (
         <SkipLink service={service} script={script} href="#content">
           Skip to content
@@ -164,7 +199,6 @@ storiesOf(STORY_KIND, module)
           borderTop={borderTop}
           backgroundColour={backgroundColour}
           logoColour={logoColour}
-          scriptLink={scriptLink}
           skipLink={skipLink}
         />
       );
