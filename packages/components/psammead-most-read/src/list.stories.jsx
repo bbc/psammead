@@ -40,6 +40,8 @@ storiesOf(STORY_KIND, module)
         </Grid>
 
         <Grid
+          enableGelGutters
+          enableGelMargins
           item
           columns={{
             group0: 5,
@@ -71,6 +73,8 @@ storiesOf(STORY_KIND, module)
         </Grid>
 
         <Grid
+          enableGelGutters
+          enableGelMargins
           item
           columns={{
             group0: 5,
@@ -102,6 +106,8 @@ storiesOf(STORY_KIND, module)
         </Grid>
 
         <Grid
+          enableGelGutters
+          enableGelMargins
           item
           columns={{
             group0: 5,
@@ -133,6 +139,8 @@ storiesOf(STORY_KIND, module)
         </Grid>
 
         <Grid
+          enableGelGutters
+          enableGelMargins
           item
           columns={{
             group0: 5,
@@ -164,6 +172,8 @@ storiesOf(STORY_KIND, module)
         </Grid>
 
         <Grid
+          enableGelGutters
+          enableGelMargins
           item
           columns={{
             group0: 5,
@@ -195,6 +205,8 @@ storiesOf(STORY_KIND, module)
         </Grid>
 
         <Grid
+          enableGelGutters
+          enableGelMargins
           item
           columns={{
             group0: 5,
@@ -226,6 +238,8 @@ storiesOf(STORY_KIND, module)
         </Grid>
 
         <Grid
+          enableGelGutters
+          enableGelMargins
           item
           columns={{
             group0: 5,
@@ -257,6 +271,8 @@ storiesOf(STORY_KIND, module)
         </Grid>
 
         <Grid
+          enableGelGutters
+          enableGelMargins
           item
           columns={{
             group0: 5,
@@ -288,6 +304,8 @@ storiesOf(STORY_KIND, module)
         </Grid>
 
         <Grid
+          enableGelGutters
+          enableGelMargins
           item
           columns={{
             group0: 5,
@@ -319,6 +337,8 @@ storiesOf(STORY_KIND, module)
         </Grid>
 
         <Grid
+          enableGelGutters
+          enableGelMargins
           item
           columns={{
             group0: 5,
@@ -369,6 +389,8 @@ storiesOf(STORY_KIND, module)
         </Grid>
 
         <Grid
+          enableGelGutters
+          enableGelMargins
           item
           columns={{
             group0: 7,
@@ -400,6 +422,8 @@ storiesOf(STORY_KIND, module)
         </Grid>
 
         <Grid
+          enableGelGutters
+          enableGelMargins
           item
           columns={{
             group0: 7,
@@ -431,6 +455,8 @@ storiesOf(STORY_KIND, module)
         </Grid>
 
         <Grid
+          enableGelGutters
+          enableGelMargins
           item
           columns={{
             group0: 7,
@@ -462,6 +488,8 @@ storiesOf(STORY_KIND, module)
         </Grid>
 
         <Grid
+          enableGelGutters
+          enableGelMargins
           item
           columns={{
             group0: 7,
@@ -493,6 +521,8 @@ storiesOf(STORY_KIND, module)
         </Grid>
 
         <Grid
+          enableGelGutters
+          enableGelMargins
           item
           columns={{
             group0: 7,
@@ -524,6 +554,8 @@ storiesOf(STORY_KIND, module)
         </Grid>
 
         <Grid
+          enableGelGutters
+          enableGelMargins
           item
           columns={{
             group0: 7,
@@ -555,6 +587,8 @@ storiesOf(STORY_KIND, module)
         </Grid>
 
         <Grid
+          enableGelGutters
+          enableGelMargins
           item
           columns={{
             group0: 7,
@@ -586,6 +620,8 @@ storiesOf(STORY_KIND, module)
         </Grid>
 
         <Grid
+          enableGelGutters
+          enableGelMargins
           item
           columns={{
             group0: 7,
@@ -617,6 +653,8 @@ storiesOf(STORY_KIND, module)
         </Grid>
 
         <Grid
+          enableGelGutters
+          enableGelMargins
           item
           columns={{
             group0: 7,
@@ -648,6 +686,8 @@ storiesOf(STORY_KIND, module)
         </Grid>
 
         <Grid
+          enableGelGutters
+          enableGelMargins
           item
           columns={{
             group0: 7,
