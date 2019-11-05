@@ -14,14 +14,28 @@ exports[`Brand should render correctly with link not provided 1`] = `
 }
 
 .c1 {
-  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
   max-width: 80rem;
   margin: 0 auto;
 }
 
 .c0 {
   background-color: #B80000;
-  height: 3.5rem;
+  min-height: 3.5rem;
   width: 100%;
   padding: 0 0.5rem;
 }
@@ -43,11 +57,18 @@ exports[`Brand should render correctly with link not provided 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   border-bottom: 0.25rem solid #FFFFFF;
+  margin-bottom: -0.25rem;
+}
+
+@media (max-width:14.9375rem) {
+  .c1 {
+    display: block;
+  }
 }
 
 @media (min-width:25rem) {
   .c0 {
-    height: 5rem;
+    min-height: 5rem;
     padding: 0 1rem;
   }
 }
@@ -123,14 +144,28 @@ exports[`Brand should render correctly with link provided 1`] = `
 }
 
 .c1 {
-  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
   max-width: 80rem;
   margin: 0 auto;
 }
 
 .c0 {
   background-color: #B80000;
-  height: 3.5rem;
+  min-height: 3.5rem;
   width: 100%;
   padding: 0 0.5rem;
 }
@@ -159,11 +194,18 @@ exports[`Brand should render correctly with link provided 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   border-bottom: 0.25rem solid #FFFFFF;
+  margin-bottom: -0.25rem;
+}
+
+@media (max-width:14.9375rem) {
+  .c1 {
+    display: block;
+  }
 }
 
 @media (min-width:25rem) {
   .c0 {
-    height: 5rem;
+    min-height: 5rem;
     padding: 0 1rem;
   }
 }
@@ -171,6 +213,12 @@ exports[`Brand should render correctly with link provided 1`] = `
 @media (max-width:14.9375rem) {
   .c0 {
     min-height: 6.5rem;
+  }
+}
+
+@media (max-width:14.9375rem) {
+  .c3 {
+    display: block;
   }
 }
 
@@ -244,14 +292,28 @@ exports[`Brand should render correctly with no service Localised Name 1`] = `
 }
 
 .c1 {
-  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
   max-width: 80rem;
   margin: 0 auto;
 }
 
 .c0 {
   background-color: #B80000;
-  height: 3.5rem;
+  min-height: 3.5rem;
   width: 100%;
   padding: 0 0.5rem;
 }
@@ -273,11 +335,18 @@ exports[`Brand should render correctly with no service Localised Name 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   border-bottom: 0.25rem solid #FFFFFF;
+  margin-bottom: -0.25rem;
+}
+
+@media (max-width:14.9375rem) {
+  .c1 {
+    display: block;
+  }
 }
 
 @media (min-width:25rem) {
   .c0 {
-    height: 5rem;
+    min-height: 5rem;
     padding: 0 1rem;
   }
 }
@@ -346,14 +415,28 @@ exports[`Brand should render correctly with transparent borders 1`] = `
 }
 
 .c1 {
-  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
   max-width: 80rem;
   margin: 0 auto;
 }
 
 .c0 {
   background-color: #B80000;
-  height: 3.5rem;
+  min-height: 3.5rem;
   width: 100%;
   padding: 0 0.5rem;
   border-top: 0.0625rem solid transparent;
@@ -377,11 +460,18 @@ exports[`Brand should render correctly with transparent borders 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   border-bottom: 0.25rem solid #FFFFFF;
+  margin-bottom: -0.25rem;
+}
+
+@media (max-width:14.9375rem) {
+  .c1 {
+    display: block;
+  }
 }
 
 @media (min-width:25rem) {
   .c0 {
-    height: 5rem;
+    min-height: 5rem;
     padding: 0 1rem;
   }
 }
