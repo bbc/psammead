@@ -32,15 +32,18 @@ The `title` prop is required for accessibility of the embedded iframe.
 The `portrait` prop is not required, and defaults to `false`. This is to support portrait video content in the future.
 The `showPlaceholder` boolean prop is also not required, and defaults to `true`.
 Assuming `showPlaceholder` is `true`, the `placeholderSrc` will be what image to display as the placeholder.
+
+## mediaInfo
+
 The `mediaInfo` prop is required, and has the following properties
 
 | Argument  | Type                | Required | Default | Example         |
 |-----------|---------------------|----------|---------|-----------------|
 | `title` | string | Yes   | - | `"A vertical video pretending to be a cat title"` |
 | `datetime` | string | No| - | `"PT11S"` |
-| `duration` | string| No   | - | `"0,11"` |
-| `durationSpoken` | string | No   | - | `"0,11"` |
-| `type` | function | No   | - | `"video"` |
+| `duration` | string| No   | - | `"0:11"` |
+| `durationSpoken` | string | No   | - | `"2 minutes 11 seconds"` |
+| `type` | string | No   | `"video"` | `"video"` |
 | `guidanceMessage` | string | No   | - | `"May contain strong language,sexual or violent content that may offend"` |
 
 ### AmpMediaPlayer
@@ -64,7 +67,14 @@ The `height` and `width` props are required to be provided in advance by AMP so 
 ```js
 import { CanonicalMediaPlayer } from '@bbc/psammead-media-player';
 
-const Container = ({ src, title, portrait, showPlaceholder, placeholderSrc, placeholderSrcset, mediaInfo }) => (
+const Container = ({ 
+  src, 
+  title, 
+  portrait, 
+  showPlaceholder, 
+  placeholderSrc, 
+  placeholderSrcset, 
+  mediaInfo }) => (
   <CanonicalMediaPlayer
     src={src}
     title={title}
