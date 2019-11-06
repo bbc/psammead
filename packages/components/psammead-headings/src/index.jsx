@@ -15,7 +15,6 @@ export const Headline = styled.h1`
   ${({ service }) => getSerifMedium(service)}
   color: ${C_SHADOW};
   display: block; /* Explicitly set */
-  font-weight: 500; /* Explicitly set */
   margin: 0; /* Reset */
   padding: ${GEL_SPACING_QUAD} 0;
   ${MEDIA_QUERY_TYPOGRAPHY.LAPTOP_AND_LARGER} {

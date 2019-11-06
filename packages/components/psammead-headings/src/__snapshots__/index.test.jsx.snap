@@ -9,7 +9,6 @@ exports[`Headline component should render correctly 1`] = `
   font-style: normal;
   color: #3F3F42;
   display: block;
-  font-weight: 500;
   margin: 0;
   padding: 2rem 0;
 }
@@ -50,7 +49,6 @@ exports[`Headline component should render correctly with arabic script typograph
   font-style: normal;
   color: #3F3F42;
   display: block;
-  font-weight: 500;
   margin: 0;
   padding: 2rem 0;
 }
