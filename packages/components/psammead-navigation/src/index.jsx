@@ -147,7 +147,7 @@ export const NavigationLi = ({
 
 const StyledNav = styled.nav`
   background-color: ${C_POSTBOX};
-
+  border-top: 0.0625rem solid ${C_WHITE};
   ${StyledListItem} {
     ${({ dir }) => css`
       &::after {

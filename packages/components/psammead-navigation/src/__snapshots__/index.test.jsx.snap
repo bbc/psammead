@@ -122,6 +122,7 @@ exports[`Navigation should render correctly 1`] = `
 
 .c0 {
   background-color: #B80000;
+  border-top: 0.0625rem solid #FFFFFF;
 }
 
 .c0 .c3::after {
