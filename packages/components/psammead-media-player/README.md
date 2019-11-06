@@ -43,7 +43,7 @@ The `mediaInfo` prop is required, and has the following properties.
 | `title` | string | Yes   | - | `"A vertical video pretending to be a cat title"` |
 | `datetime` | string | No| - | `"PT11S"` |
 | `duration` | string| No   | - | `"0:11"` |
-| `durationSpoken` | string | No   | - | `"2 minutes 11 seconds"` |
+| `durationSpoken` | string | No   | - | `"11 seconds"` |
 | `type` | string | No   | `"video"` | `"video"` |
 | `guidanceMessage` | string | No   | - | `"May contain strong language,sexual or violent content that may offend"` |
 
