@@ -25,6 +25,24 @@ storiesOf('Components|Media Player', module)
     { notes, knobs: { escapeHTML: false } },
   )
   .add(
+    'Guidance',
+    () => (
+      <CanonicalMediaPlayer
+        src="https://www.test.bbc.co.uk/ws/av-embeds/articles/c3wmq4d1y3wo/p01k6msp/en"
+        placeholderSrc="https://ichef.bbci.co.uk/news/640/cpsdevpb/4eb7/test/ba7482d0-cca8-11e8-b0bf-f33155223fc4.jpg"
+        service="news"
+        title="Video player"
+        mediaInfo={{
+          title: 'Dog chases cat.',
+          guidanceMessage:
+            'Guidance: May contain strong language that may offend',
+          ...withDuration,
+        }}
+      />
+    ),
+    { notes, knobs: { escapeHTML: false } },
+  )
+  .add(
     'Audio',
     () => (
       <CanonicalMediaPlayer
