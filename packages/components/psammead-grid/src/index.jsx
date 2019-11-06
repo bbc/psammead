@@ -150,6 +150,8 @@ const childrenFallback = (
   parentColumnsGroup,
   parentEnableGelGutters,
   gutterSize,
+  enableNegativeGelMargins,
+  marginSize,
   gridStartOffset,
   gridStartOffsetGroup,
 ) => {
@@ -173,6 +175,7 @@ const childrenFallback = (
           parentColumnsGroup}%${negativeOffset});
         `
   }
+  ${enableNegativeGelMargins && !item ? `margin: 0 -${marginSize};` : ``}
   ${
     gridStartOffsetGroup && gridStartOffsetGroup < parentColumnsGroup
       ? `margin-${dir === 'ltr' ? 'left' : 'right'}: ${startOffsetPercentage(
@@ -191,10 +194,13 @@ const outerGridFallback = (
   columnsGroup,
   enableGelGutters,
   gutterSize,
+  enableNegativeGelMargins,
+  marginSize,
   gridStartOffset,
   gridStartOffsetGroup,
 ) => `
   ${enableGelGutters ? `margin: 0 -${parseFloat(gutterSize) / 2}rem;` : ``}
+  ${enableNegativeGelMargins ? `margin: 0 -${marginSize};` : ``}
   ${
     gridStartOffset && gridStartOffsetGroup < columnsGroup
       ? `margin-${dir === 'ltr' ? 'left' : 'right'}: ${startOffsetPercentage(
@@ -212,6 +218,7 @@ const gridFallbacks = css`
     parentColumns,
     enableGelGutters,
     parentEnableGelGutters,
+    enableNegativeGelMargins,
     gridStartOffset,
   }) => {
     const isOuterGrid = !parentColumns;
@@ -234,6 +241,8 @@ const gridFallbacks = css`
                       columns[group],
                       enableGelGutters,
                       groups[group].gutterSize,
+                      enableNegativeGelMargins,
+                      groups[group].marginSize,
                       gridStartOffset,
                       gridStartOffset[group],
                     )
@@ -244,6 +253,8 @@ const gridFallbacks = css`
                       parentColumns[group],
                       parentEnableGelGutters,
                       groups[group].gutterSize,
+                      enableNegativeGelMargins,
+                      groups[group].marginSize,
                       gridStartOffset,
                       gridStartOffset[group],
                     )
