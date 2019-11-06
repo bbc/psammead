@@ -3,7 +3,7 @@ import { storiesOf } from '@storybook/react';
 import { withKnobs } from '@storybook/addon-knobs';
 import { withServicesKnob } from '@bbc/psammead-storybook-helpers';
 import Timestamp from '@bbc/psammead-timestamp';
-import { MostReadItem, StyledCountSpan } from './item';
+import { MostReadItem, MostReadRank } from './item';
 
 const items = [
   {
@@ -59,18 +59,18 @@ stories.add(`MostReadItem with last updated date`, ({ script, service }) => (
 ));
 
 stories
-  .add(`StyledCountSpan LTR`, ({ script, service }) => (
-    <StyledCountSpan dir="ltr" service={service} script={script}>
+  .add(`MostReadRank LTR`, ({ script, service }) => (
+    <MostReadRank dir="ltr" service={service} script={script}>
       5
-    </StyledCountSpan>
+    </MostReadRank>
   ))
-  .add(`StyledCountSpan LTR double digits`, ({ script, service }) => (
-    <StyledCountSpan dir="ltr" service={service} script={script}>
+  .add(`MostReadRank LTR double digits`, ({ script, service }) => (
+    <MostReadRank dir="ltr" service={service} script={script}>
       10
-    </StyledCountSpan>
+    </MostReadRank>
   ))
-  .add(`StyledCountSpan RTL`, ({ script, service }) => (
-    <StyledCountSpan dir="rtl" service={service} script={script}>
+  .add(`MostReadRank RTL`, ({ script, service }) => (
+    <MostReadRank dir="rtl" service={service} script={script}>
       ۲
-    </StyledCountSpan>
+    </MostReadRank>
   ));

@@ -3,7 +3,7 @@
 
 ## Description
 
-The `MostRead` component is designed to display the most read articles given a designated period of time which is dependent on service. The component comprises of a `MostReadTitle`, a `MostReadList` which is a grid containing `MostReadItems`, a `MostReadItem` comprising of and a link to the article, and a `StyledCountSpan` which is a numerical counter representing its ranking.
+The `MostRead` component is designed to display the most read articles given a designated period of time which is dependent on service. The component comprises of a `MostReadTitle`, a `MostReadList` which is a grid containing `MostReadItems`, a `MostReadItem` comprising of and a link to the article, and a `MostReadRank` which is a numerical counter representing its ranking.
 
 ## Installation
 
@@ -74,7 +74,7 @@ const lastUpdated = (script, service) => (
 
 ```
 
-### StyledCountSpan props
+### MostReadRank props
 
 <!-- prettier-ignore -->
 | Argument | Type | Required | Default | Example |
@@ -82,14 +82,14 @@ const lastUpdated = (script, service) => (
 | script | object | yes | N/A | `{ canon: { groupA: { fontSize: '28', lineHeight: '32',}, groupB: { fontSize: '32', lineHeight: '36', }, groupD: { fontSize: '44', lineHeight: '48', }, }, trafalgar: { groupA: { fontSize: '20', lineHeight: '24', }, groupB: { fontSize: '24', lineHeight: '28', }, groupD: { fontSize: '32', lineHeight: '36', }, }, }` |
 | service | string | yes | N/A | `'news'` |
 
-## StyledCountSpan Usage
+## MostReadRank Usage
 
 ```jsx
 import React from 'react';
 import { latin } from '@bbc/gel-foundations/scripts';
-import { StyledCountSpan } from '@bbc/psammead-most-read/esm/item';
+import { MostReadRank } from '@bbc/psammead-most-read/esm/item';
 
-<StyledCountSpan script={latin} service="news">10</StyledCountSpan>;
+<MostReadRank script={latin} service="news">10</MostReadRank>;
 
 ```
 

@@ -2,14 +2,139 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { withKnobs } from '@storybook/addon-knobs';
 import { withServicesKnob } from '@bbc/psammead-storybook-helpers';
+import { GEL_SPACING } from '@bbc/gel-foundations/spacings';
 import Grid from '../../psammead-grid';
 import notes from '../README.md';
+import { MostReadRank, MostReadItem } from './item';
 
 const STORY_KIND = 'Components|MostRead/List';
+const items = [
+  {
+    item: {
+      title: 'John Lewis staff bonus cut again as profits fall',
+      href: 'https://www.bbc.com/vietnamese/institutional-49283563',
+    },
+    dir: 'ltr',
+  },
+  {
+    item: {
+      title: "ایران از لغو 'رزمایش قطع اینترنت' خبر داد",
+      href: 'https://www.bbc.com/vietnamese/institutional-49283563',
+    },
+    dir: 'rtl',
+  },
+];
 
-storiesOf(STORY_KIND, module)
+const stories = storiesOf(STORY_KIND, module)
   .addDecorator(withKnobs)
-  .addDecorator(withServicesKnob())
+  .addDecorator(withServicesKnob());
+items.forEach(({ item, dir }) => {
+  stories.add(`With item ${dir}`, ({ script, service }) => (
+    <Grid
+      as="ol"
+      enableGelGutters
+      enableGelMargins
+      columns={{
+        group0: 10,
+        group1: 10,
+        group2: 20,
+        group3: 20,
+        group4: 20,
+        group5: 50,
+      }}
+    >
+      <Grid
+        as="li"
+        item
+        columns={{
+          group0: 1,
+          group1: 1,
+          group2: 1,
+          group3: 1,
+          group4: 1,
+          group5: 1,
+        }}
+      >
+        <MostReadRank dir="ltr" service={service} script={script}>
+          1
+        </MostReadRank>
+      </Grid>
+
+      <Grid
+        item
+        columns={{
+          group0: 9,
+          group1: 9,
+          group2: 9,
+          group3: 9,
+          group4: 9,
+          group5: 9,
+        }}
+      >
+        <MostReadItem dir={dir} item={item} service={service} script={script} />
+      </Grid>
+      <Grid
+        item
+        columns={{
+          group0: 1,
+          group1: 1,
+          group2: 1,
+          group3: 1,
+          group4: 1,
+          group5: 1,
+        }}
+      >
+        <MostReadRank dir="ltr" service={service} script={script}>
+          2
+        </MostReadRank>
+      </Grid>
+
+      <Grid
+        item
+        columns={{
+          group0: 9,
+          group1: 9,
+          group2: 9,
+          group3: 9,
+          group4: 9,
+          group5: 9,
+        }}
+      >
+        <MostReadItem dir={dir} item={item} service={service} script={script} />
+      </Grid>
+      <Grid
+        item
+        columns={{
+          group0: 1,
+          group1: 1,
+          group2: 1,
+          group3: 1,
+          group4: 1,
+          group5: 1,
+        }}
+      >
+        <MostReadRank dir="ltr" service={service} script={script}>
+          10
+        </MostReadRank>
+      </Grid>
+
+      <Grid
+        item
+        columns={{
+          group0: 9,
+          group1: 9,
+          group2: 9,
+          group3: 9,
+          group4: 9,
+          group5: 9,
+        }}
+      >
+        <MostReadItem dir={dir} item={item} service={service} script={script} />
+      </Grid>
+    </Grid>
+  ));
+});
+stories
   .add(
     'Column size 6',
     () => (

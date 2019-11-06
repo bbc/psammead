@@ -10,12 +10,11 @@ import {
   getSerifMedium,
 } from '@bbc/psammead-styles/font-styles';
 
-export const StyledCountSpan = styled.span`
+export const MostReadRank = styled.span`
   ${({ script }) => script && getFoolscap(script)};
   ${({ service }) => getSerifLight(service)}
   color: ${C_POSTBOX};
   margin: 0; /* Reset */
-  padding-bottom: ${GEL_SPACING};
   display: inline-block;
   min-width: 3rem;
 `;
@@ -25,7 +24,6 @@ const StyledLink = styled.a`
   ${({ service }) => getSerifMedium(service)}
   color: ${C_EBON};
   text-decoration: none;
-  padding-bottom: ${GEL_SPACING};
   
   &:hover,
   &:focus {
@@ -48,7 +46,7 @@ export const MostReadItem = ({
   </Fragment>
 );
 
-StyledCountSpan.propTypes = {
+MostReadRank.propTypes = {
   service: string.isRequired,
   script: shape(scriptPropType).isRequired,
 };

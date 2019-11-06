@@ -2,7 +2,7 @@ import React from 'react';
 import { shouldMatchSnapshot } from '@bbc/psammead-test-helpers';
 import Timestamp from '@bbc/psammead-timestamp';
 import { latin, arabic } from '@bbc/gel-foundations/scripts';
-import { MostReadItem, StyledCountSpan } from './item';
+import { MostReadItem, MostReadRank } from './item';
 
 const ltrItem = {
   title: 'John Lewis staff bonus cut again as profits fall',
@@ -50,22 +50,22 @@ describe('Most read item', () => {
 describe('Most read count', () => {
   shouldMatchSnapshot(
     'should render ltr correctly',
-    <StyledCountSpan service="news" script={latin}>
+    <MostReadRank service="news" script={latin}>
       5
-    </StyledCountSpan>,
+    </MostReadRank>,
   );
 
   shouldMatchSnapshot(
     'should render ltr double digit correctly',
-    <StyledCountSpan service="news" script={latin}>
+    <MostReadRank service="news" script={latin}>
       10
-    </StyledCountSpan>,
+    </MostReadRank>,
   );
 
   shouldMatchSnapshot(
     'should render rtl correctly',
-    <StyledCountSpan service="persian" script={arabic}>
+    <MostReadRank service="persian" script={arabic}>
       ۲
-    </StyledCountSpan>,
+    </MostReadRank>,
   );
 });
