@@ -23,7 +23,7 @@ This component to be used at any point on the page, specifically when a media pl
 | `title` | string | Yes | - | `'Video player'` |
 | `service` | string | Yes   | - | `'news'` |
 | `showPlaceholder` | boolean | No   | `true` | `false` |
-| `placeholderSrc` | string | No   | `null` | `http://foobar.com/placeholder.png` |
+| `placeholderSrc` | string | No   | `null` | `'http://foobar.com/placeholder.png'` |
 | `placeholderSrcset` | string | No   | `null` | `'https://bbc.com/300/cat.jpg 300w, https://bbc.com/450/cat.jpg 450w, https://bbc.com/600/cat.jpg 600w'` |
 | `portrait` | boolean | No   | `false` | `true` |
 | [`mediaInfo`](#mediaInfo) | object | Yes   | - | `{ title: 'A vertical video pretending to be a cat title', duration: '2:30', durationSpoken: '2 minutes 11 seconds', datetime: 'PT2M30S' }`|
