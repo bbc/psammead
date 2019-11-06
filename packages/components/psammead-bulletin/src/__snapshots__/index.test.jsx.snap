@@ -64,6 +64,7 @@ exports[`Bulletin should render audio correctly 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  margin: 0 0.25rem;
 }
 
 .c6 > svg {
@@ -111,9 +112,7 @@ exports[`Bulletin should render audio correctly 1`] = `
   font-style: normal;
   color: #222222;
   margin: 0;
-  padding: 0 0.5rem;
-  padding-top: 1rem;
-  padding-bottom: 0.5rem;
+  padding: 0.5rem 0.5rem;
 }
 
 @media (min-width:37.5rem) {
@@ -290,6 +289,7 @@ exports[`Bulletin should render live audio correctly 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  margin: 0 0.25rem;
 }
 
 .c7 > svg {
@@ -337,9 +337,7 @@ exports[`Bulletin should render live audio correctly 1`] = `
   font-style: normal;
   color: #222222;
   margin: 0;
-  padding: 0 0.5rem;
-  padding-top: 1rem;
-  padding-bottom: 0.5rem;
+  padding: 0.5rem 0.5rem;
 }
 
 @media (min-width:37.5rem) {
@@ -525,6 +523,7 @@ exports[`Bulletin should render live video correctly 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  margin: 0 0.25rem;
 }
 
 .c8 > svg {
@@ -553,7 +552,7 @@ exports[`Bulletin should render live video correctly 1`] = `
 }
 
 .c6 {
-  font-size: 0.875rem;
+  font-size: 0.9375rem;
   line-height: 1.125rem;
   font-family: ReithSans,Helvetica,Arial,sans-serif;
   font-weight: 400;
@@ -571,8 +570,7 @@ exports[`Bulletin should render live video correctly 1`] = `
   font-style: normal;
   color: #222222;
   margin: 0;
-  padding-top: 1rem;
-  padding-bottom: 0.5rem;
+  padding: 0.5rem 0;
 }
 
 @media (min-width:37.5rem) {
@@ -597,15 +595,15 @@ exports[`Bulletin should render live video correctly 1`] = `
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
   .c6 {
-    font-size: 0.875rem;
+    font-size: 0.9375rem;
     line-height: 1.125rem;
   }
 }
 
 @media (min-width:37.5rem) {
   .c6 {
-    font-size: 0.8125rem;
-    line-height: 1rem;
+    font-size: 0.875rem;
+    line-height: 1.125rem;
   }
 }
 
@@ -751,6 +749,7 @@ exports[`Bulletin should render video correctly 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  margin: 0 0.25rem;
 }
 
 .c7 > svg {
@@ -779,7 +778,7 @@ exports[`Bulletin should render video correctly 1`] = `
 }
 
 .c5 {
-  font-size: 0.875rem;
+  font-size: 0.9375rem;
   line-height: 1.125rem;
   font-family: ReithSans,Helvetica,Arial,sans-serif;
   font-weight: 400;
@@ -797,8 +796,7 @@ exports[`Bulletin should render video correctly 1`] = `
   font-style: normal;
   color: #222222;
   margin: 0;
-  padding-top: 1rem;
-  padding-bottom: 0.5rem;
+  padding: 0.5rem 0;
 }
 
 @media (min-width:37.5rem) {
@@ -823,15 +821,15 @@ exports[`Bulletin should render video correctly 1`] = `
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
   .c5 {
-    font-size: 0.875rem;
+    font-size: 0.9375rem;
     line-height: 1.125rem;
   }
 }
 
 @media (min-width:37.5rem) {
   .c5 {
-    font-size: 0.8125rem;
-    line-height: 1rem;
+    font-size: 0.875rem;
+    line-height: 1.125rem;
   }
 }
 

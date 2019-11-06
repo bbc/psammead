@@ -12,11 +12,7 @@ import {
 import { string, oneOf, node, bool, shape } from 'prop-types';
 import { getSansRegular, getSansBold } from '@bbc/psammead-styles/font-styles';
 import { scriptPropType } from '@bbc/gel-foundations/prop-types';
-import {
-  getPica,
-  getBrevier,
-  getLongPrimer,
-} from '@bbc/gel-foundations/typography';
+import { getPica, getLongPrimer } from '@bbc/gel-foundations/typography';
 import { mediaIcons } from '@bbc/psammead-assets/svgs';
 import VisuallyHiddenText from '@bbc/psammead-visually-hidden-text';
 import { Link, LiveLabel } from '@bbc/psammead-story-promo';
@@ -37,6 +33,7 @@ const IconWrapper = styled.span`
     color: ${C_WHITE};
     fill: currentColor;
   }
+  margin: 0 0.25rem;
 `;
 
 const PlayCTA = styled.div.attrs({ 'aria-hidden': true })`
@@ -51,8 +48,7 @@ const PlayCTA = styled.div.attrs({ 'aria-hidden': true })`
 `;
 
 const BulletinSummary = styled.p`
-  ${({ script, type }) =>
-    script && type === 'audio' ? getLongPrimer(script) : getBrevier(script)}
+  ${({ script }) => script && getLongPrimer(script)}
   ${({ service }) => service && getSansRegular(service)}
   color: ${C_SHADOW};
   margin: 0; /* Reset */
@@ -67,9 +63,9 @@ const BulletinHeading = styled.h3`
   color: ${C_EBON};
   margin: 0; /* Reset */
   ${({ type }) =>
-    type.toLowerCase() === 'audio' && `padding: 0 ${GEL_SPACING};`}
-  padding-top: ${GEL_SPACING_DBL}; 
-  padding-bottom:${GEL_SPACING};
+    type.toLowerCase() === 'audio'
+      ? `padding: ${GEL_SPACING} ${GEL_SPACING};`
+      : `padding: ${GEL_SPACING} 0;`}
 `;
 
 const Bulletin = ({
