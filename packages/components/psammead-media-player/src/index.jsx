@@ -93,6 +93,7 @@ CanonicalMediaPlayer.propTypes = {
     duration: string,
     durationSpoken: string,
     type: oneOf(['video', 'audio']),
+    guidanceMessage: string,
   }).isRequired,
 };
 
