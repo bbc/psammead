@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 1.9.1 | [PR#2561](https://github.com/bbc/psammead/pull/2561) Talos - Bump Dependencies - @bbc/psammead-calendars |
 | 1.9.0  | [PR#2566](https://github.com/bbc/psammead/pull/2566) Use latest version of NPM and Node.js |
 | 1.8.49 | [PR#2491](https://github.com/bbc/psammead/pull/2491) Bump dependencies |
 | 1.8.48 | [PR#2551](https://github.com/bbc/psammead/pull/2551) Talos - Bump Dependencies - @bbc/psammead-image-placeholder, @bbc/psammead-locales, @bbc/psammead-media-indicator |
