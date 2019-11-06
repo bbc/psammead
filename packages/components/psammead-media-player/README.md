@@ -74,7 +74,7 @@ const Container = ({
   placeholderSrc, 
   placeholderSrcset, 
   mediaInfo,
-   }) => (
+}) => (
   <CanonicalMediaPlayer
     src={src}
     skin={skin}
