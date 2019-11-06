@@ -44,7 +44,7 @@ The `mediaInfo` prop is required, and has the following properties.
 | `datetime` | string | No| - | `"PT11S"` |
 | `duration` | string| No   | - | `"0:11"` |
 | `durationSpoken` | string | No   | - | `"11 seconds"` |
-| `type` | string | No   | `"video"` | `"video"` |
+| `type` | string | No   | `"video"` | `"audio"` |
 | `guidanceMessage` | string | No   | - | `"May contain strong language,sexual or violent content that may offend"` |
 
 ### AmpMediaPlayer
