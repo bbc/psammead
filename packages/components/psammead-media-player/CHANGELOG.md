@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 | ------- | ----------- |
+| 2.2.1 | [PR#2578](https://github.com/bbc/psammead/pull/2578) Fix HCM for guidance background colour on windows |
 | 2.2.0 | [PR#2517](https://github.com/bbc/psammead/pull/2517) Add Guidance to media placeholder image |
 | 2.1.5 | [PR#2545](https://github.com/bbc/psammead/pull/2545) Update psammead-media-player prop documentation |
 | 2.1.4 | [PR#2516](https://github.com/bbc/psammead/pull/2516) Add notes to stories. Fix prop-type warnings |
