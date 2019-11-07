@@ -27,6 +27,10 @@ const latinReithFontStyles = {
    ${reithSans}
    ${getFontStyleAndWeight('italic', 700)}
   `,
+  sansLight: `
+   ${reithSans}
+   ${getFontStyleAndWeight('normal', 300)}
+  `,
   serifRegular: `
    ${reithSerif}
    ${getFontStyleAndWeight('normal', 400)}
@@ -42,6 +46,10 @@ const latinReithFontStyles = {
   serifBold: `
     ${reithSerif}
     ${getFontStyleAndWeight('normal', 700)}
+  `,
+  serifLight: `
+   ${reithSerif}
+   ${getFontStyleAndWeight('normal', 300)}
   `,
 };
 
@@ -370,7 +378,7 @@ export const persian = nassimFontStyles(nassimPersianFontFamily);
 export const pidgin = helmetFontStyles;
 export const portuguese = latinReithFontStyles;
 export const punjabi = punjabiStyles;
-export const russian = helmetFontStyles;
+export const russian = latinReithFontStyles;
 export const scotland = latinReithFontStyles;
 export const serbian = helmetFontStyles;
 export const sinhala = sinhalaStyles;
@@ -386,5 +394,6 @@ export const ukrainian = helmetFontStyles;
 export const urdu = nassimFontStyles(nassimUrduFontFamily);
 export const uzbek = helmetFontStyles;
 export const vietnamese = helmetFontStyles;
+export const weather = latinReithFontStyles;
 export const yoruba = helmetFontStyles;
 export const zhongwen = chineseFontStyles;

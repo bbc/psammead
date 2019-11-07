@@ -30,33 +30,24 @@ export const isValidDateTime = dateTime => {
   return !isNaN(new Date(dateTime)); // eslint-disable-line no-restricted-globals
 };
 
-// when using this function, we recommend using webpack configuration to only load in the relevant timezone, rather than all of moment-timezone
+// when using the following 2 functions, we recommend using webpack configuration to only load in the relevant timezone, rather than all of moment-timezone
+export const unixTimestampToMoment = timestamp => {
+  return moment(timestamp);
+};
+
 export const formatUnixTimestamp = (
   timestamp,
-  momentString,
-  timezone,
-  locale = 'en-gb',
-) =>
-  moment(timestamp)
-    .locale(locale)
-    .tz(timezone)
-    .format(momentString);
-
-export const showRelativeTime = (
-  timestamp,
-  isRelative,
   format,
   timezone,
   locale,
+  isRelative,
 ) => {
+  const momentObj = unixTimestampToMoment(timestamp)
+    .locale(locale)
+    .tz(timezone);
+
   if (isRelative) {
-    return moment(timestamp)
-      .locale(locale)
-      .tz(timezone)
-      .fromNow();
+    return momentObj.fromNow();
   }
-  if (format) {
-    return formatUnixTimestamp(timestamp, format, timezone, locale);
-  }
-  return formatUnixTimestamp(timestamp, defaultFormat, timezone);
+  return format ? momentObj.format(format) : momentObj.format(defaultFormat);
 };

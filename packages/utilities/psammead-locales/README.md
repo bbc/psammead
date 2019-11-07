@@ -24,7 +24,6 @@ The following locales have overrides to meet BBC World Service requirements wher
 - `/moment/az` - locale override for Azeri
 - `/moment/bn` - locale override for Bengali
 - `/moment/es` - locale override for Spanish (Mundo)
-- `/moment/fa` - locale override for Persian (Farsi)
 - `/moment/gu` - locale override for Gujarati
 - `/moment/hi` - locale override for Hindi
 - `/moment/ky` - locale override for Kyrgyz

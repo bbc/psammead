@@ -10,7 +10,6 @@ import {
 } from '@bbc/gel-foundations/spacings';
 import {
   GEL_GROUP_1_SCREEN_WIDTH_MAX,
-  GEL_GROUP_3_SCREEN_WIDTH_MIN,
   GEL_GROUP_5_SCREEN_WIDTH_MIN,
 } from '@bbc/gel-foundations/breakpoints';
 import { getPica } from '@bbc/gel-foundations/typography';
@@ -23,49 +22,10 @@ const CURRENT_ITEM_HOVER_BORDER = '0.3125rem'; // 5px
 /* White with 30% transparency over #B80000 */
 const BORDER_COLOR = '#eab3b3';
 
-/* Skip to content */
-const SKIP_LINK_COLOR = '#333';
-const SKIP_LINK_BORDER = '0.1875rem'; // 3px
-const SKIP_LINK_TOP_POSITION_LARGE = '-4rem'; // -64px
-const SKIP_LINK_TOP_POSITION_SMALL = '-3rem'; // -48px
-
 const NavWrapper = styled.div`
   position: relative;
   max-width: ${GEL_GROUP_5_SCREEN_WIDTH_MIN};
   margin: 0 auto;
-`;
-
-const SkipLink = styled.a`
-  position: absolute;
-  clip-path: inset(100%);
-  clip: rect(1px, 1px, 1px, 1px);
-  height: 1px;
-  width: 1px;
-  overflow: hidden;
-  padding: ${TOP_BOTTOM_SPACING} ${GEL_SPACING};
-  background-color: #ffffff;
-  border: ${SKIP_LINK_BORDER} solid #000;
-  color: ${SKIP_LINK_COLOR};
-  text-decoration: none;
-  ${({ script }) => script && getPica(script)};
-  ${({ service }) => getSansRegular(service)}
-
-  &:focus {
-    clip-path: none;
-    clip: auto;
-    height: auto;
-    width: auto;
-    top: ${SKIP_LINK_TOP_POSITION_SMALL};
-    left: ${GEL_SPACING};
-
-    @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
-      top: ${SKIP_LINK_TOP_POSITION_LARGE};
-    }
-
-    @media (min-width: ${GEL_GROUP_5_SCREEN_WIDTH_MIN}) {
-      left: 0;
-    }
-  }
 `;
 
 const StyledUnorderedList = styled.ul`
@@ -162,6 +122,7 @@ export const NavigationLi = ({
   currentPageText,
   active,
   service,
+  ...props
 }) => (
   <StyledListItem role="listitem">
     {active && currentPageText ? (
@@ -170,19 +131,14 @@ export const NavigationLi = ({
         script={script}
         currentLink="true"
         service={service}
-        data-navigation={`${link}_${url}`}
+        {...props}
       >
         <CurrentLink script={script} currentPageText={currentPageText}>
           {link}
         </CurrentLink>
       </StyledLink>
     ) : (
-      <StyledLink
-        href={url}
-        script={script}
-        service={service}
-        data-navigation={`${link}_${url}`}
-      >
+      <StyledLink href={url} script={script} service={service} {...props}>
         {link}
       </StyledLink>
     )}
@@ -191,7 +147,7 @@ export const NavigationLi = ({
 
 const StyledNav = styled.nav`
   background-color: ${C_POSTBOX};
-
+  border-top: 0.0625rem solid ${C_WHITE};
   ${StyledListItem} {
     ${({ dir }) => css`
       &::after {
@@ -201,22 +157,14 @@ const StyledNav = styled.nav`
   }
 `;
 
-const Navigation = ({ children, script, skipLinkText, service, dir }) => (
+const Navigation = ({ children, dir }) => (
   <StyledNav role="navigation" dir={dir}>
-    <NavWrapper>
-      <SkipLink href="#content" script={script} service={service}>
-        {skipLinkText}
-      </SkipLink>
-      {children}
-    </NavWrapper>
+    <NavWrapper>{children}</NavWrapper>
   </StyledNav>
 );
 
 Navigation.propTypes = {
   children: node.isRequired,
-  script: shape(scriptPropType).isRequired,
-  skipLinkText: string.isRequired,
-  service: string.isRequired,
   dir: oneOf(['ltr', 'rtl']),
 };
 

@@ -5,6 +5,7 @@ import VisuallyHiddenText from '@bbc/psammead-visually-hidden-text';
 import {
   GEL_GROUP_2_SCREEN_WIDTH_MIN,
   GEL_GROUP_5_SCREEN_WIDTH_MIN,
+  GEL_GROUP_0_SCREEN_WIDTH_MAX,
 } from '@bbc/gel-foundations/breakpoints';
 import {
   GEL_SPACING_HLF,
@@ -12,6 +13,8 @@ import {
   GEL_SPACING_DBL,
   GEL_SPACING_TRPL,
 } from '@bbc/gel-foundations/spacings';
+import { getPica } from '@bbc/gel-foundations/typography';
+import { getSansRegular } from '@bbc/psammead-styles/font-styles';
 
 const SVG_TOP_OFFSET_ABOVE_400PX = '1.75rem'; // 28px
 const SVG_BOTTOM_OFFSET_BELOW_400PX = '0.75rem'; // 12px
@@ -19,13 +22,22 @@ const PADDING_AROUND_SVG_ABOVE_400PX = 56;
 const PADDING_AROUND_SVG_BELOW_400PX = 32;
 
 const conditionallyRenderHeight = (svgHeight, padding) =>
-  svgHeight ? `height: ${(svgHeight + padding) / 16}rem;` : '';
+  svgHeight ? `min-height: ${(svgHeight + padding) / 16}rem;` : '';
 
 const TRANSPARENT_BORDER = `0.0625rem solid transparent`;
 
 const SvgWrapper = styled.div`
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
   max-width: ${GEL_GROUP_5_SCREEN_WIDTH_MIN};
   margin: 0 auto;
+
+  @media (max-width: ${GEL_GROUP_0_SCREEN_WIDTH_MAX}) {
+    display: block;
+  }
 `;
 
 const Banner = styled.div`
@@ -40,6 +52,11 @@ const Banner = styled.div`
       conditionallyRenderHeight(svgHeight, PADDING_AROUND_SVG_ABOVE_400PX)}
     padding: 0 ${GEL_SPACING_DBL};
   }
+
+  @media (max-width: ${GEL_GROUP_0_SCREEN_WIDTH_MAX}) {
+    min-height: ${({ svgHeight }) => svgHeight / 16 + 5}rem;
+  }
+
   border-top: ${({ borderTop }) => borderTop && TRANSPARENT_BORDER};
   border-bottom: ${({ borderBottom }) => borderBottom && TRANSPARENT_BORDER};
 `;
@@ -53,6 +70,10 @@ const brandWidth = (minWidth, maxWidth) => `
 const StyledLink = styled.a`
   display: inline-block;
   ${({ maxWidth, minWidth }) => brandWidth(minWidth, maxWidth)}
+
+  @media (max-width: ${GEL_GROUP_0_SCREEN_WIDTH_MAX}) {
+    display: block;
+  }
 `;
 
 // `currentColor` has been used to address high contrast mode in Firefox.
@@ -81,8 +102,37 @@ const BrandSvg = styled.svg`
     ${StyledLink}:focus & {
     text-decoration: none;
     border-bottom: ${GEL_SPACING_HLF} solid ${props => props.logoColour};
+    margin-bottom: -${GEL_SPACING_HLF};
   }
   /* stylelint-enable */
+`;
+
+/* Skip to content */
+const SKIP_LINK_COLOR = '#333';
+const SKIP_LINK_BORDER = '0.1875rem'; // 3px
+const TOP_BOTTOM_SPACING = '0.75rem'; // 12px
+
+export const SkipLink = styled.a`
+  position: absolute;
+  clip-path: inset(100%);
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  padding: ${TOP_BOTTOM_SPACING} ${GEL_SPACING};
+  background-color: #ffffff;
+  border: ${SKIP_LINK_BORDER} solid #000;
+  color: ${SKIP_LINK_COLOR};
+  text-decoration: none;
+  ${({ script }) => script && getPica(script)};
+  ${({ service }) => service && getSansRegular(service)}
+
+  &:focus {
+    clip-path: none;
+    clip: auto;
+    height: auto;
+    width: auto;
+  }
 `;
 
 const LocalisedBrandName = ({ product, serviceLocalisedName }) =>
@@ -174,6 +224,9 @@ const Brand = props => {
     borderBottom,
     backgroundColour,
     logoColour,
+    scriptLink,
+    skipLink,
+    ...rest
   } = props;
 
   return (
@@ -183,18 +236,19 @@ const Brand = props => {
       borderBottom={borderBottom}
       backgroundColour={backgroundColour}
       logoColour={logoColour}
+      {...rest}
     >
-      {url ? (
-        <SvgWrapper>
+      <SvgWrapper>
+        {url ? (
           <StyledLink href={url} maxWidth={maxWidth} minWidth={minWidth}>
             <StyledBrand {...props} />
           </StyledLink>
-        </SvgWrapper>
-      ) : (
-        <SvgWrapper>
+        ) : (
           <StyledBrand {...props} />
-        </SvgWrapper>
-      )}
+        )}
+        {skipLink}
+        {scriptLink}
+      </SvgWrapper>
     </Banner>
   );
 };
@@ -204,6 +258,8 @@ Brand.defaultProps = {
   serviceLocalisedName: null,
   borderTop: false,
   borderBottom: false,
+  scriptLink: null,
+  skipLink: null,
 };
 
 Brand.propTypes = {
@@ -212,6 +268,8 @@ Brand.propTypes = {
   serviceLocalisedName: string,
   borderTop: bool,
   borderBottom: bool,
+  scriptLink: node,
+  skipLink: node,
 };
 
 export default Brand;

@@ -1,6 +1,6 @@
 {
   "name": "@bbc/psammead-navigation",
-  "version": "2.3.6",
+  "version": "4.0.0-alpha.1",
   "description": "A navigation bar to use on index pages",
   "main": "dist/index.js",
   "module": "esm/index.js",
@@ -19,9 +19,9 @@
   },
   "homepage": "https://github.com/bbc/psammead/blob/latest/packages/components/psammead-navigation/README.md",
   "dependencies": {
-    "@bbc/gel-foundations": "^3.4.0",
-    "@bbc/psammead-styles": "^4.0.1",
-    "@bbc/psammead-visually-hidden-text": "^1.2.2"
+    "@bbc/gel-foundations": "^3.4.1",
+    "@bbc/psammead-styles": "^4.1.0",
+    "@bbc/psammead-visually-hidden-text": "^1.2.3"
   },
   "peerDependencies": {
     "react": "^16.9.0",
@@ -31,5 +31,8 @@
   "keywords": [
     "bbc",
     "navigation"
-  ]
+  ],
+  "publishConfig": {
+    "tag": "alpha"
+  }
 }

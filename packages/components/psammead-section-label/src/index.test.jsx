@@ -1,5 +1,6 @@
 import React from 'react';
 import { shouldMatchSnapshot } from '@bbc/psammead-test-helpers';
+import { render } from '@testing-library/react';
 import { latin, arabic } from '@bbc/gel-foundations/scripts';
 import SectionLabel from './index';
 
@@ -213,5 +214,26 @@ describe('SectionLabel', () => {
         This is the text in a SectionLabel
       </SectionLabel>,
     );
+  });
+
+  describe('Assertions', () => {
+    it('should add extra props passed to the component', () => {
+      const { container } = render(
+        <SectionLabel
+          script={latin}
+          bar={false}
+          visuallyHidden
+          labelId="test-section-label"
+          service="news"
+          data-section-divider="section_name"
+        >
+          This is the text in a SectionLabel
+        </SectionLabel>,
+      );
+
+      expect(
+        container.querySelector('div').getAttribute('data-section-divider'),
+      ).toEqual('section_name');
+    });
   });
 });

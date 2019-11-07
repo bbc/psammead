@@ -69,9 +69,13 @@ describe(`changeScanner - index`, () => {
       '', // empty line for spacing
     ];
 
-    expect(consoleLogOutput).not.toHaveBeenCalled();
+    expect(consoleErrorOutput).toHaveBeenCalledTimes(
+      expectedMessages.length + 1,
+    );
 
-    expect(consoleErrorOutput).toHaveBeenCalledTimes(expectedMessages.length);
+    expect(consoleErrorOutput).toHaveBeenCalledWith(
+      expect.stringContaining('Please update the version number'),
+    );
 
     expectedMessages.forEach(msg =>
       expect(consoleErrorOutput).toHaveBeenCalledWith(msg),

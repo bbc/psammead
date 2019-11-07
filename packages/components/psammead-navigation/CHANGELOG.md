@@ -3,6 +3,14 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 4.0.0-alpha.1 | [PR#2563](https://github.com/bbc/psammead/pull/2563) Remove skip to content link |
+| 3.1.0-alpha.1 | [PR#2567](https://github.com/bbc/psammead/pull/2567) Add `C_WHITE` top border to `Navigation` |
+| 3.0.5 | [PR#2519](https://github.com/bbc/psammead/pull/2519) Talos - Bump Dependencies - @bbc/psammead-styles |
+| 3.0.4 | [PR#2488](https://github.com/bbc/psammead/pull/2488) Talos - Bump Dependencies - @bbc/gel-foundations |
+| 3.0.3 | [PR#2477](https://github.com/bbc/psammead/pull/2477) Talos - Bump Dependencies - @bbc/psammead-styles |
+| 3.0.2 | [PR#2440](https://github.com/bbc/psammead/pull/2440) Talos - Bump Dependencies - @bbc/psammead-styles, @bbc/psammead-visually-hidden-text |
+| 3.0.1 | [PR#2404](https://github.com/bbc/psammead/pull/2404) replace inputProvider and dirDecorator with withServicesInput |
+| 3.0.0 | [PR#2377](https://github.com/bbc/psammead/pull/2377) Spread extra props to the component |
 | 2.3.6 | [PR#2343](https://github.com/bbc/psammead/pull/2343) Add `data-navigation` data attribute to navigation links |
 | 2.3.5 | [PR#2289](https://github.com/bbc/psammead/pull/2289) Talos - Bump Dependencies - @bbc/psammead-styles |
 | 2.3.4 | [PR#2273](https://github.com/bbc/psammead/pull/2273) Talos - Bump Dependencies - @bbc/psammead-styles |

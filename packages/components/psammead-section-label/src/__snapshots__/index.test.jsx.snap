@@ -111,7 +111,6 @@ exports[`SectionLabel When hideSectionHeader is true should add styling to hide 
 
 <div
   class="c0"
-  data-section-divider="test-section-label"
 >
   <h2
     class="c1"
@@ -311,7 +310,6 @@ exports[`SectionLabel With bar With linking title should render correctly 1`] = 
 
 <div
   class="c0"
-  data-section-divider="test-section-label"
 >
   <div
     class="c1"
@@ -528,7 +526,6 @@ exports[`SectionLabel With bar With linking title should render correctly with a
 
 <div
   class="c0"
-  data-section-divider="test-section-label"
 >
   <div
     class="c1"
@@ -745,7 +742,6 @@ exports[`SectionLabel With bar With linking title should render correctly with e
 
 <div
   class="c0"
-  data-section-divider="test-section-label"
 >
   <div
     class="c1"
@@ -962,7 +958,6 @@ exports[`SectionLabel With bar With linking title should render correctly with e
 
 <div
   class="c0"
-  data-section-divider="test-section-label"
 >
   <div
     class="c1"
@@ -1126,7 +1121,6 @@ exports[`SectionLabel With bar With plain title should render correctly 1`] = `
 
 <div
   class="c0"
-  data-section-divider="test-section-label"
 >
   <div
     class="c1"
@@ -1276,7 +1270,6 @@ exports[`SectionLabel With bar With plain title should render correctly with ara
 
 <div
   class="c0"
-  data-section-divider="test-section-label"
 >
   <div
     class="c1"
@@ -1426,7 +1419,6 @@ exports[`SectionLabel With bar With plain title should render correctly with exp
 
 <div
   class="c0"
-  data-section-divider="test-section-label"
 >
   <div
     class="c1"
@@ -1576,7 +1568,6 @@ exports[`SectionLabel With bar With plain title should render correctly with exp
 
 <div
   class="c0"
-  data-section-divider="test-section-label"
 >
   <div
     class="c1"
@@ -1759,7 +1750,6 @@ exports[`SectionLabel Without bar With linking title should render correctly 1`]
 
 <div
   class="c0"
-  data-section-divider="test-section-label"
 >
   <h2
     class="c1"
@@ -1953,7 +1943,6 @@ exports[`SectionLabel Without bar With linking title should render correctly wit
 
 <div
   class="c0"
-  data-section-divider="test-section-label"
 >
   <h2
     class="c1"
@@ -2147,7 +2136,6 @@ exports[`SectionLabel Without bar With linking title should render correctly wit
 
 <div
   class="c0"
-  data-section-divider="test-section-label"
 >
   <h2
     class="c1"
@@ -2288,7 +2276,6 @@ exports[`SectionLabel Without bar With plain title should render correctly 1`] =
 
 <div
   class="c0"
-  data-section-divider="test-section-label"
 >
   <h2
     class="c1"
@@ -2415,7 +2402,6 @@ exports[`SectionLabel Without bar With plain title should render correctly with 
 
 <div
   class="c0"
-  data-section-divider="test-section-label"
 >
   <h2
     class="c1"
@@ -2542,7 +2528,6 @@ exports[`SectionLabel Without bar With plain title should render correctly with 
 
 <div
   class="c0"
-  data-section-divider="test-section-label"
 >
   <h2
     class="c1"

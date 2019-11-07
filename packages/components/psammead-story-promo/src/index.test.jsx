@@ -23,7 +23,7 @@ const LiveComponent = ({ headline, service }) => (
 // eslint-disable-next-line react/prop-types
 const Info = ({ topStory, isLive, alsoItems }) => (
   <>
-    <Headline script={latin} topStory={topStory} service="news">
+    <Headline script={latin} topStory={topStory} service="news" displayImage>
       <Link href="https://www.bbc.co.uk/news">
         {isLive ? (
           <LiveComponent headline="The live promo headline" service="news" />
@@ -32,7 +32,7 @@ const Info = ({ topStory, isLive, alsoItems }) => (
         )}
       </Link>
     </Headline>
-    <Summary script={latin} topStory={topStory} service="news">
+    <Summary script={latin} topStory={topStory} service="news" displayImage>
       The summary of the promo
     </Summary>
     <time>12 March 2019</time>
@@ -53,11 +53,7 @@ const mediaInfo = (
 describe('StoryPromo', () => {
   shouldMatchSnapshot(
     'should render correctly',
-    <StoryPromo
-      image={Image}
-      info={Info({ topStory: false })}
-      sectionName="section-name"
-    />,
+    <StoryPromo image={Image} info={Info({ topStory: false })} />,
   );
   shouldMatchSnapshot(
     'should render Live promo correctly',
@@ -109,6 +105,16 @@ describe('StoryPromo - Top Story', () => {
       topStory
     />,
   );
+
+  shouldMatchSnapshot(
+    'should render story promo without an image',
+    <StoryPromo
+      image={Image}
+      displayImage={false}
+      info={Info({ topStory: false })}
+      mediaIndicator={mediaInfo}
+    />,
+  );
 });
 
 describe('assertions', () => {
@@ -137,32 +143,18 @@ describe('assertions', () => {
     expect(image.getAttribute('alt')).toEqual('Alt text');
   });
 
-  it('should have data-story-promo attribute when sectionName is provided', () => {
+  it('should add extra props passed to the component', () => {
     const { container } = render(
       <StoryPromo
         image={Image}
         info={Info({ topStory: true })}
         mediaIndicator={mediaInfo}
-        sectionName="section-name"
+        data-story-promo="story_promo"
       />,
     );
 
     expect(
       container.querySelector('div').getAttribute('data-story-promo'),
-    ).toEqual('section-name');
-  });
-
-  it('should not have data-story-promo attribute when sectionName is not provided', () => {
-    const { container } = render(
-      <StoryPromo
-        image={Image}
-        info={Info({ topStory: true })}
-        mediaIndicator={mediaInfo}
-      />,
-    );
-
-    expect(
-      container.querySelector('div').getAttribute('data-story-promo'),
-    ).toBeNull();
+    ).toEqual('story_promo');
   });
 });

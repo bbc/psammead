@@ -18,7 +18,7 @@ export function getProps(image, includeHeight, type) {
   return props;
 }
 
-const stories = (
+export const stories = (
   Component,
   title,
   includeHeight = false,
@@ -79,5 +79,3 @@ const stories = (
       ),
       { notes },
     );
-
-export default stories;

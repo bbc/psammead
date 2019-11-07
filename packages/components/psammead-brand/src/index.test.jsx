@@ -2,7 +2,9 @@ import React from 'react';
 import { shouldMatchSnapshot } from '@bbc/psammead-test-helpers';
 import { render } from '@testing-library/react';
 import { C_POSTBOX, C_WHITE } from '@bbc/psammead-styles/colours';
-import Brand from '.';
+import ScriptLink from '@bbc/psammead-script-link';
+import { latin } from '@bbc/gel-foundations/scripts';
+import Brand, { SkipLink } from '.';
 
 const svg = {
   group: (
@@ -111,6 +113,78 @@ describe('Brand', () => {
       );
 
       expect(container.querySelector('span').getAttribute('role')).toBeNull();
+    });
+
+    it('should add extra props passed to the component', () => {
+      const { container } = render(
+        <Brand
+          product="Default Brand Name"
+          svgHeight={24}
+          maxWidth={280}
+          minWidth={180}
+          svg={svg}
+          url="https://www.bbc.co.uk/news"
+          backgroundColour={C_POSTBOX}
+          logoColour={C_WHITE}
+          data-brand="header"
+        />,
+      );
+
+      expect(container.querySelector('div').getAttribute('data-brand')).toEqual(
+        'header',
+      );
+    });
+    it('should render script, frontpage and skip to content links', () => {
+      const scriptLinkComponent = (
+        <ScriptLink
+          script={latin}
+          service="serbian"
+          href="https://www.bbc.com/serbian/lat"
+        >
+          Lat
+        </ScriptLink>
+      );
+
+      const skipLink = (
+        <SkipLink service="news" script={latin} href="#content">
+          Skip to content
+        </SkipLink>
+      );
+
+      const { container } = render(
+        <Brand
+          product="Default Brand Name"
+          svgHeight={24}
+          maxWidth={280}
+          minWidth={180}
+          svg={svg}
+          url="https://www.bbc.co.uk/news"
+          backgroundColour={C_POSTBOX}
+          logoColour={C_WHITE}
+          skipLink={skipLink}
+          data-brand="header"
+          scriptLink={scriptLinkComponent}
+        />,
+      );
+
+      const links = container.querySelectorAll('a');
+      expect(links).toHaveLength(3);
+
+      const frontpageLink = links[0];
+      expect(frontpageLink.getAttribute('href')).toEqual(
+        'https://www.bbc.co.uk/news',
+      );
+      expect(frontpageLink.textContent).toEqual('Default Brand Name');
+
+      const skipToContentLink = links[1];
+      expect(skipToContentLink.getAttribute('href')).toEqual('#content');
+      expect(skipToContentLink.textContent).toEqual('Skip to content');
+
+      const scriptLink = links[2];
+      expect(scriptLink.getAttribute('href')).toEqual(
+        'https://www.bbc.com/serbian/lat',
+      );
+      expect(scriptLink.textContent).toEqual('Lat');
     });
   });
 });

@@ -3,7 +3,7 @@ import { shape, func } from 'prop-types';
 import { storiesOf } from '@storybook/react';
 import { withKnobs } from '@storybook/addon-knobs';
 import * as typographies from '@bbc/gel-foundations/typography';
-import { inputProvider } from '@bbc/psammead-storybook-helpers';
+import { withServicesKnob } from '@bbc/psammead-storybook-helpers';
 import { scriptPropType } from '@bbc/gel-foundations/prop-types';
 import styled from 'styled-components';
 import notes from '../README.md';
@@ -20,18 +20,15 @@ TypographyText.propTypes = {
   typographyFunc: func.isRequired,
 };
 
-const typographyStory = typographyFunc =>
-  inputProvider({
-    slots: [{ name: 'sample text' }],
-    // eslint-disable-next-line react/prop-types
-    componentFunction: ({ slotTexts: [text], script }) => (
-      <TypographyText script={script} typographyFunc={typographyFunc}>
-        {text}
-      </TypographyText>
-    ),
-  });
+const typographyStory = typographyFunc => ({ text, script }) => (
+  <TypographyText script={script} typographyFunc={typographyFunc}>
+    {text}
+  </TypographyText>
+);
 
-const stories = storiesOf('Typography', module).addDecorator(withKnobs);
+const stories = storiesOf('Typography', module)
+  .addDecorator(withKnobs)
+  .addDecorator(withServicesKnob());
 
 Object.keys(typographies)
   .filter(typographyName => typeof typographies[typographyName] === 'function')

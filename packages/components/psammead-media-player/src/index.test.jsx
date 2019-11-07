@@ -8,6 +8,9 @@ describe('Media Player: AMP Entry', () => {
     <AmpMediaPlayer
       placeholderSrc="http://foo.bar/placeholder.png"
       src="http://foo.bar/iframe/amp"
+      title="Media player"
+      height={16}
+      width={9}
     />,
   );
 
@@ -17,6 +20,9 @@ describe('Media Player: AMP Entry', () => {
       portrait
       placeholderSrc="http://foo.bar/placeholder.png"
       src="http://foo.bar/iframe/amp"
+      title="Media player"
+      height={9}
+      width={16}
     />,
   );
 
@@ -27,16 +33,28 @@ describe('Media Player: AMP Entry', () => {
       src="https://www.test.bbc.com/ws/av-embeds/media/bbc_korean_radio/liveradio"
       skin="audio"
       placeholderSrc="http://foo.bar/placeholder.png"
+      title="Audio player"
+      height={9}
+      width={16}
     />,
   );
 });
 
 describe('Media Player: Canonical Entry', () => {
+  const mediaInfo = {
+    duration: '2:30',
+    durationSpoken: '2 minutes 30 seconds',
+    datetime: 'PT2M30S',
+  };
+
   shouldMatchSnapshot(
     'renders a landscape container with a placeholder image',
     <CanonicalMediaPlayer
       placeholderSrc="http://foo.bar/placeholder.png"
       src="http://foo.bar/iframe"
+      service="news"
+      mediaInfo={{ title: 'Dog chases cat.', ...mediaInfo }}
+      title="Media player"
     />,
   );
 
@@ -46,6 +64,9 @@ describe('Media Player: Canonical Entry', () => {
       placeholderSrc="http://foo.bar/placeholder.png"
       src="http://foo.bar/iframe"
       portrait
+      service="news"
+      mediaInfo={{ title: 'Dog chases cat.', ...mediaInfo }}
+      title="Media player"
     />,
   );
 
@@ -54,6 +75,9 @@ describe('Media Player: Canonical Entry', () => {
     <CanonicalMediaPlayer
       showPlaceholder={false}
       src="http://foo.bar/iframe"
+      service="news"
+      mediaInfo={{ title: 'Dog chases cat.', ...mediaInfo }}
+      title="Media player"
     />,
   );
 
@@ -63,6 +87,25 @@ describe('Media Player: Canonical Entry', () => {
       showPlaceholder={false}
       src="https://www.test.bbc.com/ws/av-embeds/media/bbc_korean_radio/liveradio"
       skin="audio"
+      service="news"
+      mediaInfo={{ type: 'audio', title: 'Dog barks at cat.', ...mediaInfo }}
+      title="Audio player"
+    />,
+  );
+
+  shouldMatchSnapshot(
+    'renders a placeholder image with guidance',
+    <CanonicalMediaPlayer
+      placeholderSrc="http://foo.bar/placeholder.png"
+      src="http://foo.bar/iframe"
+      service="news"
+      mediaInfo={{
+        title: 'Dog chases cat.',
+        guidanceMessage:
+          'May contain strong language, sexual or violent content that may offend.',
+        ...mediaInfo,
+      }}
+      title="Media player"
     />,
   );
 });

@@ -1,13 +1,13 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { withKnobs, text } from '@storybook/addon-knobs';
-import { dirDecorator } from '@bbc/psammead-storybook-helpers';
+import { withServicesKnob } from '@bbc/psammead-storybook-helpers';
 import notes from '../README.md';
 import PlayButton from './index';
 
 storiesOf('Components|PlayButton/Video', module)
   .addDecorator(withKnobs)
-  .addDecorator(dirDecorator)
+  .addDecorator(withServicesKnob())
   .add(
     'video without duration',
     ({ service }) => (
@@ -36,7 +36,7 @@ storiesOf('Components|PlayButton/Video', module)
 
 storiesOf('Components|PlayButton/Audio', module)
   .addDecorator(withKnobs)
-  .addDecorator(dirDecorator)
+  .addDecorator(withServicesKnob())
   .add(
     'audio without duration',
     ({ service }) => (

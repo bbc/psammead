@@ -1,4 +1,4 @@
-const { stringToRichText } = require('../index');
+const { stringToRichText } = require('../src/index');
 
 test('returns a paragraph block when given a string', () => {
   const mockString = 'Hello world';

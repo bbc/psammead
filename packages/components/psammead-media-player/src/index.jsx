@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
-import { string, bool, oneOf } from 'prop-types';
+import { string, bool, oneOf, shape } from 'prop-types';
 import Placeholder from './Placeholder';
 import Amp from './Amp';
 import Canonical from './Canonical';
@@ -22,9 +22,13 @@ const StyledAudioContainer = styled.div`
 export const CanonicalMediaPlayer = ({
   showPlaceholder,
   placeholderSrc,
+  placeholderSrcset,
   portrait,
   src,
+  title,
   skin,
+  service,
+  mediaInfo,
 }) => {
   const [placeholderActive, setPlaceholderActive] = useState(showPlaceholder);
   const handlePlaceholderClick = () => setPlaceholderActive(false);
@@ -35,48 +39,83 @@ export const CanonicalMediaPlayer = ({
   return (
     <StyledContainer portrait={portrait}>
       {placeholderActive ? (
-        <Placeholder onClick={handlePlaceholderClick} src={placeholderSrc} />
+        <Placeholder
+          onClick={handlePlaceholderClick}
+          src={placeholderSrc}
+          srcset={placeholderSrcset}
+          service={service}
+          mediaInfo={mediaInfo}
+        />
       ) : (
-        <Canonical src={src} />
+        <Canonical src={src} title={title} />
       )}
     </StyledContainer>
   );
 };
 
-export const AmpMediaPlayer = ({ placeholderSrc, portrait, src, skin }) => {
+export const AmpMediaPlayer = ({
+  placeholderSrcset,
+  placeholderSrc,
+  portrait,
+  src,
+  title,
+  skin,
+}) => {
   const StyledContainer =
     skin === 'audio' ? StyledAudioContainer : StyledVideoContainer;
 
   return (
     <StyledContainer portrait={portrait}>
-      <Amp placeholderSrc={placeholderSrc} src={src} />
+      <Amp
+        placeholderSrcset={placeholderSrcset}
+        placeholderSrc={placeholderSrc}
+        src={src}
+        title={title}
+        height={portrait ? 9 : 16}
+        width={portrait ? 16 : 9}
+      />
     </StyledContainer>
   );
 };
 
 CanonicalMediaPlayer.propTypes = {
   placeholderSrc: string,
+  placeholderSrcset: string,
   portrait: bool,
   showPlaceholder: bool,
   src: string.isRequired,
+  title: string.isRequired,
   skin: oneOf(['classic', 'audio']),
+  service: string.isRequired,
+  mediaInfo: shape({
+    title: string.isRequired,
+    datetime: string,
+    duration: string,
+    durationSpoken: string,
+    type: oneOf(['video', 'audio']),
+    guidanceMessage: string,
+  }).isRequired,
 };
 
 CanonicalMediaPlayer.defaultProps = {
-  placeholderSrc: null,
   portrait: false,
   showPlaceholder: true,
   skin: 'classic',
+  placeholderSrc: null,
+  placeholderSrcset: null,
 };
 
 AmpMediaPlayer.propTypes = {
   placeholderSrc: string.isRequired,
+  placeholderSrcset: string,
   portrait: bool,
   src: string.isRequired,
+  title: string.isRequired,
   skin: oneOf(['classic', 'audio']),
 };
 
 AmpMediaPlayer.defaultProps = {
   portrait: false,
   skin: 'classic',
+  placeholderSrcset: null,
 };

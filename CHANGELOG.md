@@ -3,7 +3,38 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
-| 1.9.0 | [PR#2244](https://github.com/bbc/psammead/pull/2244) Open PR in Simorgh when packages are published on psammead |
+| 1.10.0 | [PR#2244](https://github.com/bbc/psammead/pull/2244) Open PR in Simorgh when packages are published on psammead |
+| 1.9.1 | [PR#2561](https://github.com/bbc/psammead/pull/2561) Talos - Bump Dependencies - @bbc/psammead-calendars |
+| 1.9.0  | [PR#2566](https://github.com/bbc/psammead/pull/2566) Use latest version of NPM and Node.js |
+| 1.8.49 | [PR#2491](https://github.com/bbc/psammead/pull/2491) Bump dependencies |
+| 1.8.48 | [PR#2551](https://github.com/bbc/psammead/pull/2551) Talos - Bump Dependencies - @bbc/psammead-image-placeholder, @bbc/psammead-locales, @bbc/psammead-media-indicator |
+| 1.8.47 | [PR#2491](https://github.com/bbc/psammead/pull/2491) Add `psammead-most-read` component |
+| 1.8.46 | [PR#2428](https://github.com/bbc/psammead/pull/2428) Update alpha component documentation |
+| 1.8.45 | [PR#2533](https://github.com/bbc/psammead/pull/2533) Talos - Bump Dependencies - @bbc/psammead-assets |
+| 1.8.44 | [PR#2528](https://github.com/bbc/psammead/pull/2528) Bump dependencies |
+| 1.8.43 | [PR#2520](https://github.com/bbc/psammead/pull/2520) Talos - Bump Dependencies - @bbc/psammead-brand, @bbc/psammead-caption, @bbc/psammead-copyright, @bbc/psammead-image-placeholder, @bbc/psammead-inline-link, @bbc/psammead-media-indicator, @bbc/psammead-paragraph, @bbc/psammead-timestamp |
+| 1.8.42 | [PR#2519](https://github.com/bbc/psammead/pull/2519) Talos - Bump Dependencies - @bbc/psammead-styles |
+| 1.8.41 | [PR#2494](https://github.com/bbc/psammead/pull/2494) Remove IE11 storybook bug-fix code |
+| 1.8.40 | [PR#2466](https://github.com/bbc/psammead/pull/2466) Create RTL substories |
+| 1.8.39 | [PR#2498](https://github.com/bbc/psammead/pull/2498) Install `browserslist@4.7.2` explicitly in devDeps + ran `npm update` |
+| 1.8.38 | [PR#2490](https://github.com/bbc/psammead/pull/2490) Talos - Bump Dependencies - @bbc/psammead-brand, @bbc/psammead-caption, @bbc/psammead-copyright, @bbc/psammead-media-indicator, @bbc/psammead-paragraph, @bbc/psammead-storybook-helpers, @bbc/psammead-timestamp |
+| 1.8.37 | [PR#2487](https://github.com/bbc/psammead/pull/2487) Talos - Bump Dependencies - @bbc/psammead-image-placeholder, @bbc/psammead-media-indicator |
+| 1.8.36 | [PR#2488](https://github.com/bbc/psammead/pull/2488) Talos - Bump Dependencies - @bbc/gel-foundations |
+| 1.8.35 | [PR#2486](https://github.com/bbc/psammead/pull/2486) Talos - Bump Dependencies - @bbc/psammead-assets, @bbc/psammead-brand, @bbc/psammead-caption, @bbc/psammead-copyright, @bbc/psammead-image, @bbc/psammead-image-placeholder, @bbc/psammead-inline-link, @bbc/psammead-media-indicator, @bbc/psammead-paragraph, @bbc/psammead-storybook-helpers, @bbc/psammead-test-helpers, @bbc/psammead-timestamp |
+| 1.8.34 | [PR#2433](https://github.com/bbc/psammead/pull/2433) Add script boilerplate for amp js  |
+| 1.8.33 | [PR#2405](https://github.com/bbc/psammead/pull/2405) Remove react-test-renderer |
+| 1.8.32 | [PR#2481](https://github.com/bbc/psammead/pull/2481) Updating lerna patch version to fix 10 high vulnerabilities |
+| 1.8.31 | [PR#2477](https://github.com/bbc/psammead/pull/2477) Talos - Bump Dependencies - @bbc/psammead-styles |
+| 1.8.30 | [PR#2464](https://github.com/bbc/psammead/pull/2464) Add more context to changeScanner error output |
+| 1.8.29 | [PR#2317](https://github.com/bbc/psammead/pull/2317) Bump @bbc/psammead-media-player |
+| 1.8.28 | [PR#2452](https://github.com/bbc/psammead/pull/2452) Bump dependencies (#2441 - #2445) |
+| 1.8.27 | [PR#2400](https://github.com/bbc/psammead/pull/2400) bump dependencies (#2385 - #2396) |
+| 1.8.26 | [PR#2450](https://github.com/bbc/psammead/pull/2450) Talos - Bump Dependencies - @bbc/psammead-brand, @bbc/psammead-caption, @bbc/psammead-copyright, @bbc/psammead-image-placeholder, @bbc/psammead-inline-link, @bbc/psammead-media-indicator, @bbc/psammead-paragraph, @bbc/psammead-storybook-helpers, @bbc/psammead-timestamp |
+| 1.8.25 | [PR#2440](https://github.com/bbc/psammead/pull/2440) Talos - Bump Dependencies - @bbc/psammead-brand, @bbc/psammead-calendars, @bbc/psammead-caption, @bbc/psammead-image-placeholder, @bbc/psammead-inline-link, @bbc/psammead-media-indicator, @bbc/psammead-paragraph, @bbc/psammead-storybook-helpers, @bbc/psammead-styles, @bbc/psammead-test-helpers, @bbc/psammead-timestamp, @bbc/psammead-visually-hidden-text |
+| 1.8.24 | [PR#2437](https://github.com/bbc/psammead/pull/2437) Remove import storybook-chromatic |
+| 1.8.23 | [PR#2404](https://github.com/bbc/psammead/pull/2404) Bump @bbc/psammead-storybook-helpers |
+| 1.8.22 | [PR#2413](https://github.com/bbc/psammead/pull/2413) Talos - Bump Dependencies - @bbc/psammead-locales |
+| 1.8.21 | [PR#2303](https://github.com/bbc/psammead/pull/2303) Added psammead-calendars as a dependency |
 | 1.8.20 | [PR#2401](https://github.com/bbc/psammead/pull/2401) Talos - Bump Dependencies - @bbc/psammead-assets, @bbc/psammead-storybook-helpers |
 | 1.8.19 | [PR#2356](https://github.com/bbc/psammead/pull/2356) Bump @bbc/psammead-story-promo |
 | 1.8.18 | [PR#2356](https://github.com/bbc/psammead/pull/2356) Talos - Bump Dependencies - @bbc/psammead-locales |
