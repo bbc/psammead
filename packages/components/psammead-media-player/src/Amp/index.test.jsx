@@ -10,6 +10,8 @@ describe('Media Player: Amp', () => {
       placeholderSrcset="https://bbc.com/300/cat.jpg 300w, https://bbc.com/450/cat.jpg 450w, https://bbc.com/600/cat.jpg 600w"
       src="https://foo.bar/iframe"
       title="Media player"
+      height={9}
+      width={16}
     />,
   );
 });

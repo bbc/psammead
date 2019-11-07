@@ -47,7 +47,7 @@ The `scriptLink` can be used to render [ScriptLink](https://github.com/bbc/psamm
 | borderTop | Boolean | no | `false` | `true` |
 | borderBottom | Boolean | no | `false` | `true` |
 | scriptLink | Node | no | `null` | `<ScriptLink service='news' script={latin} href='https://www.bbc.com/serbian/lat'> Lat </ScriptLink>` |
-| dir | string | No | `'ltr' | One of `'rtl'` `'ltr' |
+| skipLink | Node | no | `null` | `<SkipLink service='news' script={latin} href='#content'> Skip to content </SkipLink>` |
 
 ## Usage
 
@@ -58,10 +58,11 @@ When using `Brand` in the header, you should ensure that `borderBottom` prop is 
 `ScriptLink` component should be passed to `scriptLink` only when linking to a service variant.
 
 ```jsx
-import Brand from '@bbc/psammead-brand';
+import Brand, { SkipLink } from '@bbc/psammead-brand';
 import { igbo } from '@bbc/psammead-assets/svgs';
 import ScriptLink from '@bbc/psammead-script-link';
 import { C_POSTBOX, C_WHITE } from '@bbc/psammead-styles/colours';
+import { latin } from '@bbc/gel-foundations/scripts';
 
 const scriptLink = (
   <ScriptLink
@@ -71,6 +72,12 @@ const scriptLink = (
   >
     Lat
   </ScriptLink>
+);
+
+const skipLink = (
+  <SkipLink service="news" script={latin} href="#content">
+    Skip to content
+  </SkipLink>
 );
 
 const Header = (product, serviceName) => (
@@ -87,7 +94,7 @@ const Header = (product, serviceName) => (
       logoColour={logoColour}
       borderBottom
       scriptLink={scriptLink}
-      dir="ltr"
+      skipLink={skipLink}
     />
   </header>
 );

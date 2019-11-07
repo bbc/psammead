@@ -3,6 +3,12 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 1.9.1 | [PR#2561](https://github.com/bbc/psammead/pull/2561) Talos - Bump Dependencies - @bbc/psammead-calendars |
+| 1.9.0  | [PR#2566](https://github.com/bbc/psammead/pull/2566) Use latest version of NPM and Node.js |
+| 1.8.49 | [PR#2491](https://github.com/bbc/psammead/pull/2491) Bump dependencies |
+| 1.8.48 | [PR#2551](https://github.com/bbc/psammead/pull/2551) Talos - Bump Dependencies - @bbc/psammead-image-placeholder, @bbc/psammead-locales, @bbc/psammead-media-indicator |
+| 1.8.47 | [PR#2491](https://github.com/bbc/psammead/pull/2491) Add `psammead-most-read` component |
+| 1.8.46 | [PR#2428](https://github.com/bbc/psammead/pull/2428) Update alpha component documentation |
 | 1.8.45 | [PR#2533](https://github.com/bbc/psammead/pull/2533) Talos - Bump Dependencies - @bbc/psammead-assets |
 | 1.8.44 | [PR#2528](https://github.com/bbc/psammead/pull/2528) Bump dependencies |
 | 1.8.43 | [PR#2520](https://github.com/bbc/psammead/pull/2520) Talos - Bump Dependencies - @bbc/psammead-brand, @bbc/psammead-caption, @bbc/psammead-copyright, @bbc/psammead-image-placeholder, @bbc/psammead-inline-link, @bbc/psammead-media-indicator, @bbc/psammead-paragraph, @bbc/psammead-timestamp |

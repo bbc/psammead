@@ -9,6 +9,8 @@ describe('Media Player: AMP Entry', () => {
       placeholderSrc="http://foo.bar/placeholder.png"
       src="http://foo.bar/iframe/amp"
       title="Media player"
+      height={16}
+      width={9}
     />,
   );
 
@@ -19,6 +21,8 @@ describe('Media Player: AMP Entry', () => {
       placeholderSrc="http://foo.bar/placeholder.png"
       src="http://foo.bar/iframe/amp"
       title="Media player"
+      height={9}
+      width={16}
     />,
   );
 
@@ -30,6 +34,8 @@ describe('Media Player: AMP Entry', () => {
       skin="audio"
       placeholderSrc="http://foo.bar/placeholder.png"
       title="Audio player"
+      height={9}
+      width={16}
     />,
   );
 });
@@ -84,6 +90,22 @@ describe('Media Player: Canonical Entry', () => {
       service="news"
       mediaInfo={{ type: 'audio', title: 'Dog barks at cat.', ...mediaInfo }}
       title="Audio player"
+    />,
+  );
+
+  shouldMatchSnapshot(
+    'renders a placeholder image with guidance',
+    <CanonicalMediaPlayer
+      placeholderSrc="http://foo.bar/placeholder.png"
+      src="http://foo.bar/iframe"
+      service="news"
+      mediaInfo={{
+        title: 'Dog chases cat.',
+        guidanceMessage:
+          'May contain strong language, sexual or violent content that may offend.',
+        ...mediaInfo,
+      }}
+      title="Media player"
     />,
   );
 });
