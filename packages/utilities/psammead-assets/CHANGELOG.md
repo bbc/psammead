@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 2.8.0 | [PR#xxxx](https://github.com/bbc/psammead/pull/xxxx) Added hamburger and cross icons for Navigation |
 | 2.7.0 | [PR#2531](https://github.com/bbc/psammead/pull/2531) Added Guidance icon |
 | 2.6.0 | [PR#2433](https://github.com/bbc/psammead/pull/2433) Add AMP js script boilerplate to psammead-assets. |
 | 2.5.0 | [PR#2309](https://github.com/bbc/psammead/pull/2309) Add SVGs for Weather, Cymru Fyw and Naidheachdan |
