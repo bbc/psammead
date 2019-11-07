@@ -179,7 +179,6 @@ exports[`Navigation should render correctly 1`] = `
     -moz-scroll-behavior: smooth;
     -ms-scroll-behavior: smooth;
     scroll-behavior: smooth;
-    overflow-scrolling: touch;
     -webkit-overflow-scrolling: touch;
     -webkit-scrollbar-width: none;
     -moz-scrollbar-width: none;
