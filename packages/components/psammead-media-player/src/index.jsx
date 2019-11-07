@@ -71,6 +71,8 @@ export const AmpMediaPlayer = ({
         placeholderSrc={placeholderSrc}
         src={src}
         title={title}
+        height={portrait ? 9 : 16}
+        width={portrait ? 16 : 9}
       />
     </StyledContainer>
   );
@@ -91,6 +93,7 @@ CanonicalMediaPlayer.propTypes = {
     duration: string,
     durationSpoken: string,
     type: oneOf(['video', 'audio']),
+    guidanceMessage: string,
   }).isRequired,
 };
 
