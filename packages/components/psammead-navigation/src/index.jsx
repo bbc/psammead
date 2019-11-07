@@ -199,7 +199,9 @@ const SwipeableNav = styled.div`
       height: 100%;
       width: 3rem;
       position: absolute;
-      right: 0;
+      ${({ dir }) => css`
+        ${dir === 'ltr' ? 'right' : 'left'}: 0;
+      `}
       bottom: 0;
       z-index: 3;
       overflow: hidden;
