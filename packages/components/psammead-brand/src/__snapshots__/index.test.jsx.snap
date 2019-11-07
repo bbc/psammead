@@ -74,12 +74,6 @@ exports[`Brand should render correctly with link not provided 1`] = `
   }
 }
 
-@media (max-width:14.9375rem) {
-  .c0 {
-    min-height: 6.5rem;
-  }
-}
-
 @media (min-width:25rem) {
   .c2 {
     padding-top: 1rem;
@@ -216,12 +210,6 @@ exports[`Brand should render correctly with link provided 1`] = `
   .c0 {
     min-height: 3.25rem;
     padding: 0 1rem;
-  }
-}
-
-@media (max-width:14.9375rem) {
-  .c0 {
-    min-height: 6.5rem;
   }
 }
 
@@ -368,12 +356,6 @@ exports[`Brand should render correctly with no service Localised Name 1`] = `
   }
 }
 
-@media (max-width:14.9375rem) {
-  .c0 {
-    min-height: 6.5rem;
-  }
-}
-
 @media (min-width:25rem) {
   .c2 {
     padding-top: 1rem;
@@ -498,12 +480,6 @@ exports[`Brand should render correctly with transparent borders 1`] = `
   .c0 {
     min-height: 3.25rem;
     padding: 0 1rem;
-  }
-}
-
-@media (max-width:14.9375rem) {
-  .c0 {
-    min-height: 6.5rem;
   }
 }
 
