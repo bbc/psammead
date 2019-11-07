@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Navigation should render correctly 1`] = `
-.c7 {
+.c8 {
   -webkit-clip-path: inset(100%);
   clip-path: inset(100%);
   -webkit-clip: rect(1px,1px,1px,1px);
@@ -19,7 +19,7 @@ exports[`Navigation should render correctly 1`] = `
   margin: 0 auto;
 }
 
-.c2 {
+.c3 {
   list-style-type: none;
   padding: 0;
   margin: 0;
@@ -27,13 +27,13 @@ exports[`Navigation should render correctly 1`] = `
   overflow: hidden;
 }
 
-.c4 {
+.c5 {
   display: inline-block;
   position: relative;
   z-index: 2;
 }
 
-.c4::after {
+.c5::after {
   content: '';
   position: absolute;
   bottom: 0;
@@ -42,7 +42,7 @@ exports[`Navigation should render correctly 1`] = `
   z-index: -1;
 }
 
-.c5 {
+.c6 {
   font-size: 0.9375rem;
   line-height: 1.25rem;
   font-family: ReithSans,Helvetica,Arial,sans-serif;
@@ -56,7 +56,7 @@ exports[`Navigation should render correctly 1`] = `
   padding: 0.75rem 1rem;
 }
 
-.c5:hover::after {
+.c6:hover::after {
   content: '';
   position: absolute;
   left: 0;
@@ -66,7 +66,7 @@ exports[`Navigation should render correctly 1`] = `
   border-bottom: 0.3125rem solid #FFFFFF;
 }
 
-.c5:focus::after {
+.c6:focus::after {
   content: '';
   position: absolute;
   left: 0;
@@ -77,7 +77,7 @@ exports[`Navigation should render correctly 1`] = `
   border: 0.25rem solid #FFFFFF;
 }
 
-.c8 {
+.c9 {
   font-size: 0.9375rem;
   line-height: 1.25rem;
   font-family: ReithSans,Helvetica,Arial,sans-serif;
@@ -91,7 +91,7 @@ exports[`Navigation should render correctly 1`] = `
   padding: 0.75rem 1rem;
 }
 
-.c8:hover::after {
+.c9:hover::after {
   content: '';
   position: absolute;
   left: 0;
@@ -100,7 +100,7 @@ exports[`Navigation should render correctly 1`] = `
   border-bottom: 0.25rem solid #FFFFFF;
 }
 
-.c8:focus::after {
+.c9:focus::after {
   content: '';
   position: absolute;
   left: 0;
@@ -111,7 +111,7 @@ exports[`Navigation should render correctly 1`] = `
   border: 0.25rem solid #FFFFFF;
 }
 
-.c6::after {
+.c7::after {
   content: '';
   position: absolute;
   left: 0;
@@ -121,51 +121,88 @@ exports[`Navigation should render correctly 1`] = `
 }
 
 .c0 {
+  position: relative;
   background-color: #B80000;
   border-top: 0.0625rem solid #FFFFFF;
 }
 
-.c0 .c3::after {
+.c0 .c4::after {
   left: 0;
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
-  .c5 {
+  .c6 {
     font-size: 1rem;
     line-height: 1.25rem;
   }
 }
 
 @media (min-width:37.5rem) {
-  .c5 {
+  .c6 {
     font-size: 1rem;
     line-height: 1.25rem;
   }
 }
 
 @media (max-width:24.9375rem) {
-  .c5 {
+  .c6 {
     padding: 0.75rem 0.5rem;
   }
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
-  .c8 {
+  .c9 {
     font-size: 1rem;
     line-height: 1.25rem;
   }
 }
 
 @media (min-width:37.5rem) {
-  .c8 {
+  .c9 {
     font-size: 1rem;
     line-height: 1.25rem;
   }
 }
 
 @media (max-width:24.9375rem) {
-  .c8 {
+  .c9 {
     padding: 0.75rem 0.5rem;
+  }
+}
+
+@media (max-width:37.4375rem) {
+  .c2 {
+    position: relative;
+    overflow-x: scroll;
+    white-space: nowrap;
+    -webkit-scroll-behavior: smooth;
+    -moz-scroll-behavior: smooth;
+    -ms-scroll-behavior: smooth;
+    scroll-behavior: smooth;
+    overflow-scrolling: touch;
+    -webkit-overflow-scrolling: touch;
+    -webkit-scrollbar-width: none;
+    -moz-scrollbar-width: none;
+    -ms-scrollbar-width: none;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+
+  .c2::-webkit-scrollbar {
+    display: none;
+  }
+
+  .c2:before {
+    content: ' ';
+    height: 100%;
+    width: 3rem;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 3;
+    overflow: hidden;
+    pointer-events: none;
+    background: linear-gradient( to right,rgba(184,0,0,0) 0%,rgba(184,0,0,1) 100% );
   }
 }
 
@@ -177,70 +214,75 @@ exports[`Navigation should render correctly 1`] = `
   <div
     class="c1"
   >
-    <ul
+    <div
       class="c2"
-      role="list"
+      dir="ltr"
     >
-      <li
-        class="c3 c4"
-        role="listitem"
+      <ul
+        class="c3"
+        role="list"
       >
-        <a
-          class="c5"
-          data-navigation="test_navigation"
-          href="/igbo"
+        <li
+          class="c4 c5"
+          role="listitem"
         >
-          <span
+          <a
             class="c6"
-            role="text"
+            data-navigation="test_navigation"
+            href="/igbo"
           >
             <span
               class="c7"
+              role="text"
             >
-              Current page
-              , 
+              <span
+                class="c8"
+              >
+                Current page
+                , 
+              </span>
+              Akụkọ
             </span>
-            Akụkọ
-          </span>
-        </a>
-      </li>
-      <li
-        class="c3 c4"
-        role="listitem"
-      >
-        <a
-          class="c8"
-          data-navigation="test_navigation"
-          href="/igbo/egwuregwu"
+          </a>
+        </li>
+        <li
+          class="c4 c5"
+          role="listitem"
         >
-          Egwuregwu
-        </a>
-      </li>
-      <li
-        class="c3 c4"
-        role="listitem"
-      >
-        <a
-          class="c8"
-          data-navigation="test_navigation"
-          href="/igbo/media/video"
+          <a
+            class="c9"
+            data-navigation="test_navigation"
+            href="/igbo/egwuregwu"
+          >
+            Egwuregwu
+          </a>
+        </li>
+        <li
+          class="c4 c5"
+          role="listitem"
         >
-          Ihe nkiri
-        </a>
-      </li>
-      <li
-        class="c3 c4"
-        role="listitem"
-      >
-        <a
-          class="c8"
-          data-navigation="test_navigation"
-          href="/igbo/popular/read"
+          <a
+            class="c9"
+            data-navigation="test_navigation"
+            href="/igbo/media/video"
+          >
+            Ihe nkiri
+          </a>
+        </li>
+        <li
+          class="c4 c5"
+          role="listitem"
         >
-          Nke ka ewuewu
-        </a>
-      </li>
-    </ul>
+          <a
+            class="c9"
+            data-navigation="test_navigation"
+            href="/igbo/popular/read"
+          >
+            Nke ka ewuewu
+          </a>
+        </li>
+      </ul>
+    </div>
   </div>
 </nav>
 `;
