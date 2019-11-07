@@ -161,12 +161,13 @@ const childrenFallback = (
     gridStartOffset,
     gridStartOffsetGroup,
   );
-
-  return ` 
+  const shouldApplyGutters = parentEnableGelGutters && item;
+  const shouldApplyOffset =
+    gridStartOffsetGroup && gridStartOffsetGroup < parentColumnsGroup;
+  return `
   ${
     item && parentEnableGelGutters
       ? ` 
-        margin: 0 ${parseFloat(gutterSize) / 2}rem;
         width: calc(${(100 * columnsGroup) / parentColumnsGroup}%
           - ${gutterSize}${negativeOffset});
         `
@@ -175,13 +176,41 @@ const childrenFallback = (
           parentColumnsGroup}%${negativeOffset});
         `
   }
-  ${enableNegativeGelMargins && !item ? `margin: 0 -${marginSize};` : ``}
   ${
-    gridStartOffsetGroup && gridStartOffsetGroup < parentColumnsGroup
+    shouldApplyGutters && !enableNegativeGelMargins
+      ? `margin: 0 ${parseFloat(gutterSize) / 2}rem;`
+      : ``
+  }
+  /* we want margins/negative margins to be applied on either the item or the grid */
+  /* initially, only on the grid is necessary */
+  ${
+    enableNegativeGelMargins && !shouldApplyGutters
+      ? `margin: 0 -${marginSize};`
+      : ``
+  }
+  
+  /* has negative margins plus has gutters*/
+  ${
+    enableNegativeGelMargins && shouldApplyGutters
+      ? `margin: 0 calc(${parseFloat(gutterSize) / 2}rem - ${marginSize});`
+      : ``
+  }
+  ${
+    shouldApplyOffset && !enableNegativeGelMargins
       ? `margin-${dir === 'ltr' ? 'left' : 'right'}: ${startOffsetPercentage(
           parentColumnsGroup,
           gridStartOffsetGroup,
         )}`
+      : ``
+  }
+  ${
+    shouldApplyOffset && enableNegativeGelMargins
+      ? `margin-${
+          dir === 'ltr' ? 'left' : 'right'
+        }: calc(${startOffsetPercentage(
+          parentColumnsGroup,
+          gridStartOffsetGroup,
+        )} + ${marginSize})`
       : ``
   }
   display: inline-block;
@@ -194,13 +223,28 @@ const outerGridFallback = (
   columnsGroup,
   enableGelGutters,
   gutterSize,
+  enableGelMargins,
   enableNegativeGelMargins,
   marginSize,
   gridStartOffset,
   gridStartOffsetGroup,
 ) => `
-  ${enableGelGutters ? `margin: 0 -${parseFloat(gutterSize) / 2}rem;` : ``}
-  ${enableNegativeGelMargins ? `margin: 0 -${marginSize};` : ``}
+  /* gutters mean adding negative half of the gutter size since
+   * it is the simplest way to ensure each child has an equal 'gutter' applied to it
+   * without having to look at the first in each row/last in each row. 
+   */
+  ${enableGelMargins && !enableGelGutters ? `margin: 0 ${marginSize};` : ``}
+  ${
+    enableGelGutters && !enableGelMargins
+      ? `margin: 0 -${parseFloat(gutterSize) / 2}rem;`
+      : ``
+  }
+  ${
+    enableGelGutters && enableGelMargins
+      ? `margin: 0 calc(${marginSize} - ${parseFloat(gutterSize) / 2}rem);`
+      : ``
+  }
+  /*TODO - consider cases with startOffset AND gutters/margins */
   ${
     gridStartOffset && gridStartOffsetGroup < columnsGroup
       ? `margin-${dir === 'ltr' ? 'left' : 'right'}: ${startOffsetPercentage(
@@ -218,6 +262,7 @@ const gridFallbacks = css`
     parentColumns,
     enableGelGutters,
     parentEnableGelGutters,
+    enableGelMargins,
     enableNegativeGelMargins,
     gridStartOffset,
   }) => {
@@ -241,6 +286,7 @@ const gridFallbacks = css`
                       columns[group],
                       enableGelGutters,
                       groups[group].gutterSize,
+                      enableGelMargins,
                       enableNegativeGelMargins,
                       groups[group].marginSize,
                       gridStartOffset,

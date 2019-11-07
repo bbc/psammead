@@ -1327,6 +1327,7 @@ storiesOf(STORY_KIND, module)
         group5: 8,
       }}
       enableGelMargins
+      enableGelGutters
     >
       <Grid
         item
@@ -1343,7 +1344,7 @@ storiesOf(STORY_KIND, module)
         <Image
           alt="Robert Downey Junior in Iron Man"
           src="https://ichef.bbci.co.uk/news/660/cpsprodpb/11897/production/_106613817_999_al_.jpg"
-          width="640"
+          width="100%"
         />
       </Grid>
       <Grid
