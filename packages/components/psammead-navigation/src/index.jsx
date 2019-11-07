@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import styled, { css } from 'styled-components';
 import { shape, string, node, bool, oneOf } from 'prop-types';
 import VisuallyHiddenText from '@bbc/psammead-visually-hidden-text';
@@ -10,6 +10,7 @@ import {
 } from '@bbc/gel-foundations/spacings';
 import {
   GEL_GROUP_1_SCREEN_WIDTH_MAX,
+  GEL_GROUP_2_SCREEN_WIDTH_MAX,
   GEL_GROUP_3_SCREEN_WIDTH_MIN,
   GEL_GROUP_5_SCREEN_WIDTH_MIN,
 } from '@bbc/gel-foundations/breakpoints';
@@ -22,6 +23,10 @@ const CURRENT_ITEM_HOVER_BORDER = '0.3125rem'; // 5px
 
 /* White with 30% transparency over #B80000 */
 const BORDER_COLOR = '#eab3b3';
+
+/* Convert C_POSTBOX to rgba as IE doesn't like 8 digit hex */
+const C_POSTBOX_TRANSPARENT = `rgba(184, 0, 0, 0)`;
+const C_POSTBOX_OPAQUE = `rgba(184, 0, 0, 1)`;
 
 /* Skip to content */
 const SKIP_LINK_COLOR = '#333';
@@ -149,9 +154,12 @@ const CurrentLink = ({ children: link, script, currentPageText }) => (
   </>
 );
 
-export const NavigationUl = ({ children, ...props }) => (
+// eslint-disable-next-line react/prop-types
+export const NavigationUl = ({ children, isMobile, ...props }) => (
   <StyledUnorderedList role="list" {...props}>
-    {children}
+    {React.Children.map(children, child =>
+      React.cloneElement(child, { isMobile }),
+    )}
   </StyledUnorderedList>
 );
 
@@ -162,31 +170,45 @@ export const NavigationLi = ({
   currentPageText,
   active,
   service,
+  // eslint-disable-next-line react/prop-types
+  isMobile,
   ...props
-}) => (
-  <StyledListItem role="listitem">
-    {active && currentPageText ? (
-      <StyledLink
-        href={url}
-        script={script}
-        currentLink="true"
-        service={service}
-        {...props}
-      >
-        <CurrentLink script={script} currentPageText={currentPageText}>
+}) => {
+  const tabIndex = isMobile && { tabIndex: -1 };
+
+  return (
+    <StyledListItem role="listitem">
+      {active && currentPageText ? (
+        <StyledLink
+          href={url}
+          script={script}
+          currentLink="true"
+          service={service}
+          {...props}
+          {...tabIndex}
+        >
+          <CurrentLink script={script} currentPageText={currentPageText}>
+            {link}
+          </CurrentLink>
+        </StyledLink>
+      ) : (
+        <StyledLink
+          href={url}
+          script={script}
+          service={service}
+          {...tabIndex}
+          {...props}
+        >
           {link}
-        </CurrentLink>
-      </StyledLink>
-    ) : (
-      <StyledLink href={url} script={script} service={service} {...props}>
-        {link}
-      </StyledLink>
-    )}
-  </StyledListItem>
-);
+        </StyledLink>
+      )}
+    </StyledListItem>
+  );
+};
 
 const StyledNav = styled.nav`
   background-color: ${C_POSTBOX};
+  position: relative;
 
   ${StyledListItem} {
     ${({ dir }) => css`
@@ -197,16 +219,70 @@ const StyledNav = styled.nav`
   }
 `;
 
-const Navigation = ({ children, script, skipLinkText, service, dir }) => (
-  <StyledNav role="navigation" dir={dir}>
-    <NavWrapper>
-      <SkipLink href="#content" script={script} service={service}>
-        {skipLinkText}
-      </SkipLink>
-      {children}
-    </NavWrapper>
-  </StyledNav>
-);
+const SwipeableNav = styled.div`
+  @media (max-width: ${GEL_GROUP_2_SCREEN_WIDTH_MAX}) {
+    position: relative;
+    overflow-x: scroll;
+    white-space: nowrap;
+    scroll-behavior: smooth;
+    overflow-scrolling: touch;
+    -webkit-overflow-scrolling: touch;
+
+    /* Hide scrollbar */
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+    &:before {
+      content: ' ';
+      height: 100%;
+      width: 3rem;
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      z-index: 3;
+      overflow: hidden;
+      pointer-events: none; /* ignore clicks */
+      background: linear-gradient(
+        ${({ dir }) => (dir === 'ltr' ? 'to right' : 'to left')},
+        ${C_POSTBOX_TRANSPARENT} 0%,
+        ${C_POSTBOX_OPAQUE} 100%
+      );
+    }
+  }
+`;
+
+const Navigation = ({ children, script, skipLinkText, service, dir }) => {
+  const [width, setWidth] = useState(window.innerWidth);
+
+  useEffect(() => {
+    const handleResize = () => setWidth(window.innerWidth);
+    window.addEventListener('resize', handleResize);
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []); // Empty array ensures that effect is only run on mount and unmount
+
+  const isMobile = width < 600;
+  const ariaHidden = isMobile && { 'aria-hidden': true };
+
+  return (
+    <StyledNav role="navigation" dir={dir}>
+      <NavWrapper>
+        <SkipLink href="#content" script={script} service={service}>
+          {skipLinkText}
+        </SkipLink>
+        <SwipeableNav dir={dir} {...ariaHidden}>
+          {React.Children.map(children, child =>
+            React.cloneElement(child, { isMobile }),
+          )}
+        </SwipeableNav>
+      </NavWrapper>
+    </StyledNav>
+  );
+};
 
 Navigation.propTypes = {
   children: node.isRequired,
