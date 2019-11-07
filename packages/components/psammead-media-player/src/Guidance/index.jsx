@@ -30,13 +30,11 @@ const GuidanceMessage = styled.strong`
   font-weight: normal;
 `;
 
-const Guidance = ({ guidanceMessage, service }) => {
-  return (
-    <GuidanceWrapper service={service}>
-      <GuidanceMessage>{guidanceMessage}</GuidanceMessage>
-    </GuidanceWrapper>
-  );
-};
+const Guidance = ({ guidanceMessage, service }) => (
+  <GuidanceWrapper service={service}>
+    <GuidanceMessage>{guidanceMessage}</GuidanceMessage>
+  </GuidanceWrapper>
+);
 
 Guidance.propTypes = {
   guidanceMessage: string.isRequired,
