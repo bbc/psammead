@@ -20,6 +20,7 @@ const SVG_TOP_OFFSET_BELOW_400PX = '0.625rem'; // 10px
 const SVG_BOTTOM_OFFSET_BELOW_400PX = '0.375rem'; // 6px
 const SVG_BOTTOM_OFFSET_ABOVE_400PX = '0.75rem'; // 12px
 const SVG_BOTTOM_OFFSET_ABOVE_600PX = '1.25rem'; // 20px
+const SCRIPT_LINK_OFFSET_BELOW_240PX = 52;
 const PADDING_AROUND_SVG_BELOW_400PX = 16;
 const PADDING_AROUND_SVG_ABOVE_400PX = 28;
 
@@ -56,7 +57,12 @@ const Banner = styled.div`
   }
 
   @media (max-width: ${GEL_GROUP_0_SCREEN_WIDTH_MAX}) {
-    min-height: ${({ svgHeight }) => svgHeight / 16 + 5}rem;
+    ${({ scriptLink, svgHeight }) =>
+      scriptLink !== null &&
+      `min-height: ${(svgHeight +
+        PADDING_AROUND_SVG_BELOW_400PX +
+        SCRIPT_LINK_OFFSET_BELOW_240PX) /
+        16}rem;`}
   }
 
   border-top: ${({ borderTop }) => borderTop && TRANSPARENT_BORDER};
@@ -243,6 +249,7 @@ const Brand = props => {
       borderBottom={borderBottom}
       backgroundColour={backgroundColour}
       logoColour={logoColour}
+      scriptLink={scriptLink}
       {...rest}
     >
       <SvgWrapper>
