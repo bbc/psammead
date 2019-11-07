@@ -16,7 +16,7 @@ import {
 } from '@bbc/psammead-storybook-helpers';
 import ScriptLink from '@bbc/psammead-script-link';
 import notes from '../README.md';
-import Brand from './index';
+import Brand, { SkipLink } from './index';
 
 const STORY_KIND = 'Components|Brand';
 const inputs = (service = 'news') => {
@@ -159,6 +159,47 @@ storiesOf(STORY_KIND, module)
           backgroundColour={backgroundColour}
           logoColour={logoColour}
           scriptLink={scriptLink}
+        />
+      );
+    },
+    { notes },
+  )
+  .add(
+    'with skip to content link',
+    ({ service, script }) => {
+      const {
+        productInput,
+        serviceLocalisedNameInput,
+        svgHeightInput,
+        minWidthInput,
+        maxWidthInput,
+        svgChoice,
+        borderBottom,
+        borderTop,
+        backgroundColour,
+        logoColour,
+      } = inputs();
+
+      const skipLink = (
+        <SkipLink service={service} script={script} href="#content">
+          Skip to content
+        </SkipLink>
+      );
+
+      return (
+        <Brand
+          product={productInput}
+          serviceLocalisedName={serviceLocalisedNameInput}
+          svgHeight={svgHeightInput}
+          minWidth={minWidthInput}
+          maxWidth={maxWidthInput}
+          svg={svgs[svgChoice]}
+          url="https://www.bbc.com/news"
+          borderBottom={borderBottom}
+          borderTop={borderTop}
+          backgroundColour={backgroundColour}
+          logoColour={logoColour}
+          skipLink={skipLink}
         />
       );
     },

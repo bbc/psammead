@@ -3,7 +3,8 @@
 <!-- prettier-ignore -->
 | Version | Description |
 | ------- | ----------- |
-| 5.1.0-alpha.4 | [PR#2569](https://github.com/bbc/psammead/pull/2569) Reduce height of Brand Component |
+| 5.1.0-alpha.5 | [PR#2569](https://github.com/bbc/psammead/pull/2569) Reduce height of Brand Component for all breakpoints |
+| 5.1.0-alpha.4 | [PR#2564](https://github.com/bbc/psammead/pull/2564) Add skip to content link |
 | 5.1.0-alpha.3 | [PR#2539](https://github.com/bbc/psammead/pull/2539) Fix overlapping between `ScriptLink` and `Brand` |
 | 5.1.0-alpha.2 | [PR#2519](https://github.com/bbc/psammead/pull/2519) Talos - Bump Dependencies - @bbc/psammead-styles |
 | 5.1.0-alpha.1 | [PR#2474](https://github.com/bbc/psammead/pull/2474) Add scriptLink prop to render `ScriptLink` used for linking to service variants |

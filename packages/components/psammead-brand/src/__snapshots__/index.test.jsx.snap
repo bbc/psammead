@@ -14,6 +14,7 @@ exports[`Brand should render correctly with link not provided 1`] = `
 }
 
 .c1 {
+  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -151,6 +152,7 @@ exports[`Brand should render correctly with link provided 1`] = `
 }
 
 .c1 {
+  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -306,6 +308,7 @@ exports[`Brand should render correctly with no service Localised Name 1`] = `
 }
 
 .c1 {
+  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -436,6 +439,7 @@ exports[`Brand should render correctly with transparent borders 1`] = `
 }
 
 .c1 {
+  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
