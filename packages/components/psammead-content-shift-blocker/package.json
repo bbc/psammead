@@ -1,0 +1,32 @@
+{
+  "name": "@bbc/psammead-content-shift-blocker",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "module": "esm/index.js",
+  "sideEffects": false,
+  "description": "A component used to mitigate the jarring user experience of the page moving while the user is in the middle of consuming content",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/BBC-News/psammead/tree/latest/packages/components/psammead-content-shift-blocker"
+  },
+  "author": {
+    "name": "Psammead Maintainers",
+    "email": "PsammeadMaintainers@bbc.co.uk"
+  },
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/bbc/psammead/issues"
+  },
+  "homepage": "https://github.com/BBC-News/psammead/blob/latest/packages/components/psammead-content-shift-blocker/README.md",
+  "dependencies": {
+    "@juggle/resize-observer": "^2.4.0",
+    "intersection-observer": "^0.7.0"
+  },
+  "peerDependencies": {
+    "react": "^16.11.0"
+  },
+  "devDependencies": {
+    "@bbc/psammead-consent-banner": "^2.3.20",
+    "@bbc/psammead-headings": "^3.1.18"
+  }
+}
