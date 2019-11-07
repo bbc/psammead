@@ -24,6 +24,9 @@ const GuidanceWrapper = styled.div`
   position: absolute;
   background-color: ${GUIDANCE_BACKGROUND};
   color: ${C_WHITE};
+  @media screen and (-ms-high-contrast: active) {
+    background-color: transparent;
+  }
 `;
 
 const Content = styled.div`
