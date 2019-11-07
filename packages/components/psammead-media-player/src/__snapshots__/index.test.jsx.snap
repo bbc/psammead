@@ -271,13 +271,13 @@ exports[`Media Player: Canonical Entry renders a landscape container with a plac
 `;
 
 exports[`Media Player: Canonical Entry renders a placeholder image with guidance 1`] = `
-.c15 {
+.c13 {
   display: block;
   width: 100%;
   visibility: visible;
 }
 
-.c13 {
+.c11 {
   vertical-align: middle;
   margin: 0 0.25rem;
   color: #222222;
@@ -286,16 +286,7 @@ exports[`Media Player: Canonical Entry renders a placeholder image with guidance
   height: 0.75rem;
 }
 
-.c7 {
-  vertical-align: middle;
-  margin: 0 0.25rem;
-  color: #222222;
-  fill: currentColor;
-  width: 1rem;
-  height: 1rem;
-}
-
-.c11 {
+.c9 {
   -webkit-clip-path: inset(100%);
   clip-path: inset(100%);
   -webkit-clip: rect(1px,1px,1px,1px);
@@ -307,7 +298,7 @@ exports[`Media Player: Canonical Entry renders a placeholder image with guidance
   margin: 0;
 }
 
-.c9 {
+.c7 {
   background-color: #222222;
   border: none;
   color: #FFFFFF;
@@ -325,14 +316,14 @@ exports[`Media Player: Canonical Entry renders a placeholder image with guidance
   width: 5rem;
 }
 
-.c9:hover,
-.c9:focus {
+.c7:hover,
+.c7:focus {
   background-color: #B80000;
   -webkit-transition: background-color 300ms;
   transition: background-color 300ms;
 }
 
-.c12 > svg {
+.c10 > svg {
   color: #FFFFFF;
   fill: currentColor;
   height: 1.5rem;
@@ -340,7 +331,7 @@ exports[`Media Player: Canonical Entry renders a placeholder image with guidance
   width: 1.5rem;
 }
 
-.c14 {
+.c12 {
   display: block;
   margin-top: 0.5rem;
 }
@@ -362,27 +353,11 @@ exports[`Media Player: Canonical Entry renders a placeholder image with guidance
 }
 
 .c5 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  padding: 1rem;
+  padding: 0.5rem;
 }
 
-.c8 {
-  padding-left: 0.25rem;
+.c6 {
   font-weight: normal;
-}
-
-.c6 > svg {
-  color: #FFFFFF;
-  fill: currentColor;
-  height: 1.5rem;
-  width: 1.5rem;
 }
 
 .c2 {
@@ -394,13 +369,13 @@ exports[`Media Player: Canonical Entry renders a placeholder image with guidance
   height: 100%;
 }
 
-.c10 {
+.c8 {
   position: absolute;
   bottom: 0;
 }
 
-.c1:hover .c10,
-.c1:focus .c10 {
+.c1:hover .c8,
+.c1:focus .c8 {
   background-color: #B80000;
 }
 
@@ -413,6 +388,12 @@ exports[`Media Player: Canonical Entry renders a placeholder image with guidance
 @media (min-width:37.5rem) {
   .c3 {
     font-size: 0.875rem;
+  }
+}
+
+@media (min-width:25rem) {
+  .c5 {
+    padding: 1rem;
   }
 }
 
@@ -431,24 +412,8 @@ exports[`Media Player: Canonical Entry renders a placeholder image with guidance
         <div
           class="c5"
         >
-          <div
-            aria-hidden="true"
-            class="c6"
-          >
-            <svg
-              class="c7"
-              focusable="false"
-              height="32"
-              viewBox="0 0 32 32"
-              width="32"
-            >
-              <path
-                d="M32,16A16,16,0,1,1,16,0,16,16,0,0,1,32,16Zm-8.6-.8H16.6v3.1h2.9c-.2,1.5-1.6,2.4-3.7,2.4s-3.7-2.4-3.7-4.7,1-4.7,3.7-4.7,3,.8,3.2,2.2h4.2c-.4-4-3.9-5.8-7.2-5.8-4.8,0-8,3.7-8,8.3s3.1,8.3,8,8.3a5.4,5.4,0,0,0,4.5-2.1l.2,1.7h2.7Z"
-              />
-            </svg>
-          </div>
           <strong
-            class="c8"
+            class="c6"
           >
             May contain strong language, sexual or violent content that may offend.
           </strong>
@@ -456,19 +421,19 @@ exports[`Media Player: Canonical Entry renders a placeholder image with guidance
       </div>
     </div>
     <button
-      class="c9 c10"
+      class="c7 c8"
     >
       <span
-        class="c11"
+        class="c9"
       >
         Play video, "Dog chases cat.", 2 minutes 30 seconds
       </span>
       <div
         aria-hidden="true"
-        class="c12"
+        class="c10"
       >
         <svg
-          class="c13"
+          class="c11"
           focusable="false"
           height="12px"
           viewBox="0 0 32 32"
@@ -481,7 +446,7 @@ exports[`Media Player: Canonical Entry renders a placeholder image with guidance
       </div>
       <time
         aria-hidden="true"
-        class="c14"
+        class="c12"
         datetime="PT2M30S"
       >
         2:30
@@ -489,7 +454,7 @@ exports[`Media Player: Canonical Entry renders a placeholder image with guidance
     </button>
     <img
       alt=""
-      class="c15"
+      class="c13"
       src="http://foo.bar/placeholder.png"
     />
   </div>
