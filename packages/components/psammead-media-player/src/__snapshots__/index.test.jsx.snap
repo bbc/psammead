@@ -271,13 +271,13 @@ exports[`Media Player: Canonical Entry renders a landscape container with a plac
 `;
 
 exports[`Media Player: Canonical Entry renders a placeholder image with guidance 1`] = `
-.c13 {
+.c11 {
   display: block;
   width: 100%;
   visibility: visible;
 }
 
-.c11 {
+.c9 {
   vertical-align: middle;
   margin: 0 0.25rem;
   color: #222222;
@@ -286,7 +286,7 @@ exports[`Media Player: Canonical Entry renders a placeholder image with guidance
   height: 0.75rem;
 }
 
-.c9 {
+.c7 {
   -webkit-clip-path: inset(100%);
   clip-path: inset(100%);
   -webkit-clip: rect(1px,1px,1px,1px);
@@ -298,7 +298,7 @@ exports[`Media Player: Canonical Entry renders a placeholder image with guidance
   margin: 0;
 }
 
-.c7 {
+.c5 {
   background-color: #222222;
   border: none;
   color: #FFFFFF;
@@ -316,14 +316,14 @@ exports[`Media Player: Canonical Entry renders a placeholder image with guidance
   width: 5rem;
 }
 
-.c7:hover,
-.c7:focus {
+.c5:hover,
+.c5:focus {
   background-color: #B80000;
   -webkit-transition: background-color 300ms;
   transition: background-color 300ms;
 }
 
-.c10 > svg {
+.c8 > svg {
   color: #FFFFFF;
   fill: currentColor;
   height: 1.5rem;
@@ -331,7 +331,7 @@ exports[`Media Player: Canonical Entry renders a placeholder image with guidance
   width: 1.5rem;
 }
 
-.c12 {
+.c10 {
   display: block;
   margin-top: 0.5rem;
 }
@@ -342,21 +342,15 @@ exports[`Media Player: Canonical Entry renders a placeholder image with guidance
   font-style: normal;
   font-size: 0.9375rem;
   line-height: 1.125rem;
-}
-
-.c4 {
   width: 100%;
   height: 100%;
   position: absolute;
   background-color: rgba(34,34,34,0.75);
   color: #FFFFFF;
-}
-
-.c5 {
   padding: 0.5rem;
 }
 
-.c6 {
+.c4 {
   font-weight: normal;
 }
 
@@ -369,13 +363,13 @@ exports[`Media Player: Canonical Entry renders a placeholder image with guidance
   height: 100%;
 }
 
-.c8 {
+.c6 {
   position: absolute;
   bottom: 0;
 }
 
-.c1:hover .c8,
-.c1:focus .c8 {
+.c1:hover .c6,
+.c1:focus .c6 {
   background-color: #B80000;
 }
 
@@ -392,7 +386,7 @@ exports[`Media Player: Canonical Entry renders a placeholder image with guidance
 }
 
 @media (min-width:25rem) {
-  .c5 {
+  .c3 {
     padding: 1rem;
   }
 }
@@ -406,34 +400,26 @@ exports[`Media Player: Canonical Entry renders a placeholder image with guidance
     <div
       class="c3"
     >
-      <div
+      <strong
         class="c4"
       >
-        <div
-          class="c5"
-        >
-          <strong
-            class="c6"
-          >
-            May contain strong language, sexual or violent content that may offend.
-          </strong>
-        </div>
-      </div>
+        May contain strong language, sexual or violent content that may offend.
+      </strong>
     </div>
     <button
-      class="c7 c8"
+      class="c5 c6"
     >
       <span
-        class="c9"
+        class="c7"
       >
         Play video, "Dog chases cat.", 2 minutes 30 seconds
       </span>
       <div
         aria-hidden="true"
-        class="c10"
+        class="c8"
       >
         <svg
-          class="c11"
+          class="c9"
           focusable="false"
           height="12px"
           viewBox="0 0 32 32"
@@ -446,7 +432,7 @@ exports[`Media Player: Canonical Entry renders a placeholder image with guidance
       </div>
       <time
         aria-hidden="true"
-        class="c12"
+        class="c10"
         datetime="PT2M30S"
       >
         2:30
@@ -454,7 +440,7 @@ exports[`Media Player: Canonical Entry renders a placeholder image with guidance
     </button>
     <img
       alt=""
-      class="c13"
+      class="c11"
       src="http://foo.bar/placeholder.png"
     />
   </div>

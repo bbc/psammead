@@ -129,13 +129,13 @@ exports[`Media Player: Placeholder should render a video placeholder 1`] = `
 `;
 
 exports[`Media Player: Placeholder should render a video placeholder with guidance 1`] = `
-.c12 {
+.c10 {
   display: block;
   width: 100%;
   visibility: visible;
 }
 
-.c10 {
+.c8 {
   vertical-align: middle;
   margin: 0 0.25rem;
   color: #222222;
@@ -144,7 +144,7 @@ exports[`Media Player: Placeholder should render a video placeholder with guidan
   height: 0.75rem;
 }
 
-.c8 {
+.c6 {
   -webkit-clip-path: inset(100%);
   clip-path: inset(100%);
   -webkit-clip: rect(1px,1px,1px,1px);
@@ -156,7 +156,7 @@ exports[`Media Player: Placeholder should render a video placeholder with guidan
   margin: 0;
 }
 
-.c6 {
+.c4 {
   background-color: #222222;
   border: none;
   color: #FFFFFF;
@@ -174,14 +174,14 @@ exports[`Media Player: Placeholder should render a video placeholder with guidan
   width: 5rem;
 }
 
-.c6:hover,
-.c6:focus {
+.c4:hover,
+.c4:focus {
   background-color: #B80000;
   -webkit-transition: background-color 300ms;
   transition: background-color 300ms;
 }
 
-.c9 > svg {
+.c7 > svg {
   color: #FFFFFF;
   fill: currentColor;
   height: 1.5rem;
@@ -189,7 +189,7 @@ exports[`Media Player: Placeholder should render a video placeholder with guidan
   width: 1.5rem;
 }
 
-.c11 {
+.c9 {
   display: block;
   margin-top: 0.5rem;
 }
@@ -200,21 +200,15 @@ exports[`Media Player: Placeholder should render a video placeholder with guidan
   font-style: normal;
   font-size: 0.9375rem;
   line-height: 1.125rem;
-}
-
-.c3 {
   width: 100%;
   height: 100%;
   position: absolute;
   background-color: rgba(34,34,34,0.75);
   color: #FFFFFF;
-}
-
-.c4 {
   padding: 0.5rem;
 }
 
-.c5 {
+.c3 {
   font-weight: normal;
 }
 
@@ -227,13 +221,13 @@ exports[`Media Player: Placeholder should render a video placeholder with guidan
   height: 100%;
 }
 
-.c7 {
+.c5 {
   position: absolute;
   bottom: 0;
 }
 
-.c0:hover .c7,
-.c0:focus .c7 {
+.c0:hover .c5,
+.c0:focus .c5 {
   background-color: #B80000;
 }
 
@@ -244,7 +238,7 @@ exports[`Media Player: Placeholder should render a video placeholder with guidan
 }
 
 @media (min-width:25rem) {
-  .c4 {
+  .c2 {
     padding: 1rem;
   }
 }
@@ -255,34 +249,26 @@ exports[`Media Player: Placeholder should render a video placeholder with guidan
   <div
     class="c2"
   >
-    <div
+    <strong
       class="c3"
     >
-      <div
-        class="c4"
-      >
-        <strong
-          class="c5"
-        >
-          Guidance: May contain strong language, sexual or violent content that may offend.
-        </strong>
-      </div>
-    </div>
+      Guidance: May contain strong language, sexual or violent content that may offend.
+    </strong>
   </div>
   <button
-    class="c6 c7"
+    class="c4 c5"
   >
     <span
-      class="c8"
+      class="c6"
     >
       Play video, "Dog chases cat.", 2 minutes 30 seconds
     </span>
     <div
       aria-hidden="true"
-      class="c9"
+      class="c7"
     >
       <svg
-        class="c10"
+        class="c8"
         focusable="false"
         height="12px"
         viewBox="0 0 32 32"
@@ -295,7 +281,7 @@ exports[`Media Player: Placeholder should render a video placeholder with guidan
     </div>
     <time
       aria-hidden="true"
-      class="c11"
+      class="c9"
       datetime="PT2M30S"
     >
       2:30
@@ -303,7 +289,7 @@ exports[`Media Player: Placeholder should render a video placeholder with guidan
   </button>
   <img
     alt=""
-    class="c12"
+    class="c10"
     src="http://foo.bar/placeholder.png"
   />
 </div>
