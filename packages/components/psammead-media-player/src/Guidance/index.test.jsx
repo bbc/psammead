@@ -8,8 +8,6 @@ describe('Media Player: Guidance', () => {
     <Guidance
       guidanceMessage="Guidance: Contains strong language with adult humor"
       service="news"
-    >
-      <p>within the guidance container</p>
-    </Guidance>,
+    />,
   );
 });
