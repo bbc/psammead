@@ -2,14 +2,10 @@ import React from 'react';
 import { string, node } from 'prop-types';
 import styled from 'styled-components';
 import { C_WHITE } from '@bbc/psammead-styles/colours';
-import { mediaIcons } from '@bbc/psammead-assets/svgs';
-import {
-  GEL_SPACING_DBL,
-  GEL_SPACING_TRPL,
-  GEL_SPACING_HLF,
-} from '@bbc/gel-foundations/spacings';
+import { GEL_SPACING_DBL, GEL_SPACING } from '@bbc/gel-foundations/spacings';
 import { GEL_LONG_PRIMER } from '@bbc/gel-foundations/typography';
 import { getSansRegular } from '@bbc/psammead-styles/font-styles';
+import { GEL_GROUP_2_SCREEN_WIDTH_MIN } from '@bbc/gel-foundations/breakpoints';
 
 const GUIDANCE_BACKGROUND = 'rgba(34, 34, 34, 0.75)';
 
@@ -27,23 +23,15 @@ const GuidanceWrapper = styled.div`
 `;
 
 const Content = styled.div`
-  display: flex;
-  align-items: center;
-  padding: ${GEL_SPACING_DBL};
+  padding: ${GEL_SPACING};
+
+  @media (min-width: ${GEL_GROUP_2_SCREEN_WIDTH_MIN}) {
+    padding: ${GEL_SPACING_DBL};
+  }
 `;
 
 const GuidanceMessage = styled.strong`
-  padding-left: ${GEL_SPACING_HLF};
   font-weight: normal;
-`;
-
-const IconWrapper = styled.div`
-  > svg {
-    color: ${C_WHITE};
-    fill: currentColor;
-    height: ${GEL_SPACING_TRPL};
-    width: ${GEL_SPACING_TRPL};
-  }
 `;
 
 const Guidance = ({ guidanceMessage, service, children }) => {
@@ -51,7 +39,6 @@ const Guidance = ({ guidanceMessage, service, children }) => {
     <StyledGuidance service={service}>
       <GuidanceWrapper>
         <Content>
-          <IconWrapper aria-hidden="true">{mediaIcons.guidance}</IconWrapper>
           <GuidanceMessage>{guidanceMessage}</GuidanceMessage>
         </Content>
       </GuidanceWrapper>
