@@ -4,13 +4,15 @@
 
 `ContentShiftBlocker` is a component to mitigate the jarring user experience of the page moving while the user is in the middle of consuming the content.
 
-Today, users of the web are often distracted by content moving around due to changes that occur outside the viewport. Examples include script inserting an iframe containing an ad, or non-sized images loading on a slow network.
+> Today, users of the web are often distracted by content moving around due to changes that occur outside the viewport. Examples include script inserting an iframe containing an ad, or non-sized images loading on a slow network. - [CSS Working Group](https://drafts.csswg.org/css-scroll-anchoring/#intro*)
 
 Such content can be wrapped with `ContentShiftBlocker` to prevent the page from jumping around.
 
 ## How it works
 
-`ContentShiftBlocker` will never resize when in view even if the child content resizes. `ContentShiftBlocker` content is allowed to resize when it is outside of the viewport. If the `ContentShiftBlocker` component is above the scrollable region of the viewport and scroll height of the page changes then the Y scroll position is adjusted to prevent a vertical scroll jump that would disrupt the user's reading experience. This technique is called scroll anchoring https://drafts.csswg.org/css-scroll-anchoring/ (https://github.com/WICG/ScrollAnchoring/blob/master/explainer.md). It is enabled in Chrome 56 and Firefox 66 https://caniuse.com/#feat=css-overflow-anchor by default https://www.chromestatus.com/feature/5700102471548928 (important) and implemented in `ContentShiftBlocker` using javascript for browsers that do not have support for CSS `overflow-anchor`. For browsers that do support CSS `overflow-anchor`, this component assumes you have not disabled it by explicitly setting `overflow-anchor: none` on any parent elements. If you have then the user may experience content shifting. It is advisable to explicitly set `overflow-anchor: auto` on the body element when `ContentShiftBlocker`.
+`ContentShiftBlocker` will never resize when in view even if the child content resizes. `ContentShiftBlocker` content is allowed to resize when it is outside of the viewport. If the `ContentShiftBlocker` component is above the scrollable region of the viewport and scroll height of the page changes then the Y scroll position is adjusted to prevent a vertical scroll jump that would disrupt the user's reading experience. This technique is called [scroll anchoring](https://drafts.csswg.org/css-scroll-anchoring/) and can be achieved by setting `overflow-anchor: auto` on a scrollable container such as the body element. It is enabled in Chrome 56 and Firefox 66 https://caniuse.com/#feat=css-overflow-anchor as an [opt-out for developers](https://www.chromestatus.com/feature/5700102471548928) and is implemented in `ContentShiftBlocker` using javascript for browsers that do not have support for `overflow-anchor`.
+
+⚠️ For browsers that do support `overflow-anchor`, `ContentShiftBlocker` assumes you have not disabled it by explicitly setting `overflow-anchor: none` on any parent elements. If you have then the user may experience content shifting. I would even recommend you explicitly set `overflow-anchor: auto` on the body element in case browser vendors decide to make this feature opt-in rather than opt-out.
 
 ## Installation
 
