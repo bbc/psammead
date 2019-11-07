@@ -23,6 +23,7 @@ const GuidanceWrapper = styled.div`
   height: 100%;
   position: absolute;
   background-color: ${GUIDANCE_BACKGROUND};
+  border: 1px solid transparent;
   color: ${C_WHITE};
   @media screen and (-ms-high-contrast: active) {
     background-color: transparent;
@@ -33,6 +34,7 @@ const Content = styled.div`
   display: flex;
   align-items: center;
   padding: ${GEL_SPACING_DBL};
+  border-bottom: 1px solid transparent;
   @media screen and (-ms-high-contrast: active) {
     background-color: window;
   }
