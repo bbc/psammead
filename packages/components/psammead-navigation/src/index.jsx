@@ -185,7 +185,6 @@ const SwipeableNav = styled.div`
     overflow-x: scroll;
     white-space: nowrap;
     scroll-behavior: smooth;
-    overflow-scrolling: touch;
     -webkit-overflow-scrolling: touch;
 
     /* Hide scrollbar */
