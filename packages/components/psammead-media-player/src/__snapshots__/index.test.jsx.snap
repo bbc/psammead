@@ -358,6 +358,7 @@ exports[`Media Player: Canonical Entry renders a placeholder image with guidance
   height: 100%;
   position: absolute;
   background-color: rgba(34,34,34,0.75);
+  border: 1px solid transparent;
   color: #FFFFFF;
 }
 
@@ -371,6 +372,7 @@ exports[`Media Player: Canonical Entry renders a placeholder image with guidance
   -ms-flex-align: center;
   align-items: center;
   padding: 1rem;
+  border-bottom: 1px solid transparent;
 }
 
 .c8 {

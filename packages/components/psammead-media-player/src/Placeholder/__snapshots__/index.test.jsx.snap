@@ -216,6 +216,7 @@ exports[`Media Player: Placeholder should render a video placeholder with guidan
   height: 100%;
   position: absolute;
   background-color: rgba(34,34,34,0.75);
+  border: 1px solid transparent;
   color: #FFFFFF;
 }
 
@@ -229,6 +230,7 @@ exports[`Media Player: Placeholder should render a video placeholder with guidan
   -ms-flex-align: center;
   align-items: center;
   padding: 1rem;
+  border-bottom: 1px solid transparent;
 }
 
 .c7 {
