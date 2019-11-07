@@ -416,6 +416,12 @@ exports[`Media Player: Canonical Entry renders a placeholder image with guidance
   }
 }
 
+@media screen and (-ms-high-contrast:active) {
+  .c4 {
+    background-color: transparent;
+  }
+}
+
 <div
   class="c0"
 >
