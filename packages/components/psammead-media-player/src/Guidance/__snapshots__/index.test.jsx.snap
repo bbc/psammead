@@ -62,6 +62,12 @@ exports[`Media Player: Guidance should render Guidance 1`] = `
   }
 }
 
+@media screen and (-ms-high-contrast:active) {
+  .c2 {
+    background-color: window;
+  }
+}
+
 <div
   class="c0"
 >
