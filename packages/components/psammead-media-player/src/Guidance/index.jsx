@@ -1,7 +1,7 @@
 import React from 'react';
 import { string, node } from 'prop-types';
 import styled from 'styled-components';
-import { C_WHITE, C_SHADOW } from '@bbc/psammead-styles/colours';
+import { C_WHITE } from '@bbc/psammead-styles/colours';
 import { mediaIcons } from '@bbc/psammead-assets/svgs';
 import {
   GEL_SPACING_DBL,
@@ -34,7 +34,7 @@ const Content = styled.div`
   align-items: center;
   padding: ${GEL_SPACING_DBL};
   @media screen and (-ms-high-contrast: active) {
-    background-color: ${C_SHADOW};
+    background-color: window;
   }
 `;
 
