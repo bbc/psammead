@@ -188,7 +188,6 @@ const outerGridFallback = (
   gridStartOffset,
   gridStartOffsetGroup,
 ) => `
-
   ${enableGelGutters ? `margin: 0 -${parseFloat(gutterSize) / 2}rem;` : ``}
   ${
     gridStartOffset && gridStartOffsetGroup < columnsGroup
@@ -253,11 +252,11 @@ const gridFallbacks = css`
 
 const GridComponent = styled.div`
   ${gridFallbacks}
-  /* @supports (display: grid) {
+  @supports (display: grid) {
     ${gridMediaQueries}
     ${({ item }) =>
       item ? `display: block;` : `display: grid; position: initial;`}
-  } */
+  }
 `;
 
 const wrapperFallbacks = ({ columns }) => {
