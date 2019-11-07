@@ -3,7 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 | ------- | ----------- |
-| 2.2.1 | [PR#2576](https://github.com/bbc/psammead/pull/2576) Add support for 240px screen width |
+| 2.2.1 | [PR#2576](https://github.com/bbc/psammead/pull/2576) Add support for 240px screen width & remove Guidance SVG |
 | 2.2.0 | [PR#2517](https://github.com/bbc/psammead/pull/2517) Add Guidance to media placeholder image |
 | 2.1.5 | [PR#2545](https://github.com/bbc/psammead/pull/2545) Update psammead-media-player prop documentation |
 | 2.1.4 | [PR#2516](https://github.com/bbc/psammead/pull/2516) Add notes to stories. Fix prop-type warnings |
