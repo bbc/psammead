@@ -38,7 +38,8 @@ const StyledUnorderedList = styled.ul`
   padding: 0;
   margin: 0;
   position: relative;
-  overflow: hidden;
+
+  ${({ isMobile }) => !isMobile && `overflow: hidden;`}
 `;
 
 const StyledListItem = styled.li`
@@ -116,7 +117,7 @@ const CurrentLink = ({ children: link, script, currentPageText }) => (
 
 // eslint-disable-next-line react/prop-types
 export const NavigationUl = ({ children, isMobile, ...props }) => (
-  <StyledUnorderedList role="list" {...props}>
+  <StyledUnorderedList role="list" isMobile={isMobile} {...props}>
     {React.Children.map(children, child =>
       React.cloneElement(child, { isMobile }),
     )}
@@ -181,9 +182,8 @@ const StyledNav = styled.nav`
 
 const SwipeableNav = styled.div`
   @media (max-width: ${GEL_GROUP_2_SCREEN_WIDTH_MAX}) {
-    position: relative;
-    overflow-x: scroll;
     white-space: nowrap;
+    overflow-x: scroll;
     scroll-behavior: smooth;
     -webkit-overflow-scrolling: touch;
 
