@@ -1,5 +1,5 @@
 {
-  "name": "@bbc/psammead-psammead-bulleted-list",
+  "name": "@bbc/psammead-bulleted-list",
   "version": "0.1.0-alpha.1",
   "main": "dist/index.js",
   "module": "esm/index.js",
@@ -7,7 +7,7 @@
   "description": "React styled component for ordered and unordered lists",
   "repository": {
     "type": "git",
-    "url": "https://github.com/BBC-News/psammead/tree/latest/packages/components/psammead-psammead-bulleted-list"
+    "url": "https://github.com/BBC-News/psammead/tree/latest/packages/components/psammead-bulleted-list"
   },
   "author": {
     "name": "Psammead Maintainers",
@@ -17,7 +17,7 @@
   "bugs": {
     "url": "https://github.com/bbc/psammead/issues"
   },
-  "homepage": "https://github.com/BBC-News/psammead/blob/latest/packages/components/psammead-psammead-bulleted-list/README.md",
+  "homepage": "https://github.com/BBC-News/psammead/blob/latest/packages/components/psammead-bulleted-list/README.md",
   "dependencies": {},
   "peerDependencies": {
     "react": "^16.11.0"
