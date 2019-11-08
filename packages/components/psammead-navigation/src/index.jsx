@@ -11,6 +11,7 @@ import {
 import {
   GEL_GROUP_1_SCREEN_WIDTH_MAX,
   GEL_GROUP_2_SCREEN_WIDTH_MAX,
+  GEL_GROUP_3_SCREEN_WIDTH_MIN,
   GEL_GROUP_5_SCREEN_WIDTH_MIN,
 } from '@bbc/gel-foundations/breakpoints';
 import { getPica } from '@bbc/gel-foundations/typography';
@@ -47,14 +48,16 @@ const StyledListItem = styled.li`
   position: relative;
   z-index: 2;
 
-  /* Trick to display a border between the list items when it breaks into multiple lines, which takes the full width */
-  &::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    width: ${GEL_GROUP_5_SCREEN_WIDTH_MIN};
-    border-bottom: 0.0625rem solid ${BORDER_COLOR};
-    z-index: -1;
+  @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
+    /* Trick to display a border between the list items when it breaks into multiple lines, which takes the full width */
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      width: ${GEL_GROUP_5_SCREEN_WIDTH_MIN};
+      border-bottom: 0.0625rem solid ${BORDER_COLOR};
+      z-index: -1;
+    }
   }
 `;
 

@@ -33,15 +33,6 @@ exports[`Navigation should render correctly 1`] = `
   z-index: 2;
 }
 
-.c5::after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  width: 80rem;
-  border-bottom: 0.0625rem solid #eab3b3;
-  z-index: -1;
-}
-
 .c6 {
   font-size: 0.9375rem;
   line-height: 1.25rem;
@@ -128,6 +119,17 @@ exports[`Navigation should render correctly 1`] = `
 
 .c0 .c4::after {
   left: 0;
+}
+
+@media (min-width:37.5rem) {
+  .c5::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 80rem;
+    border-bottom: 0.0625rem solid #eab3b3;
+    z-index: -1;
+  }
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
