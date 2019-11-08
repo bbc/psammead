@@ -1,0 +1,27 @@
+{
+  "name": "@bbc/psammead-onward-journeys",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "module": "esm/index.js",
+  "sideEffects": false,
+  "description": "Onward journeys",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/BBC-News/psammead/tree/latest/packages/components/psammead-onward-journeys"
+  },
+  "author": {
+    "name": "Psammead Maintainers",
+    "email": "PsammeadMaintainers@bbc.co.uk"
+  },
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/bbc/psammead/issues"
+  },
+  "homepage": "https://github.com/BBC-News/psammead/blob/latest/packages/components/psammead-onward-journeys/README.md",
+  "dependencies": {
+    "@bbc/psammead-headings": "^3.1.19"
+  },
+  "peerDependencies": {
+    "react": "^16.11.0"
+  }
+}

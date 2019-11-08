@@ -1,0 +1,43 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PsammeadOnwardJourneys should render correctly 1`] = `
+.c0 {
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+  font-family: ReithSans,Helvetica,Arial,sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: #3F3F42;
+  margin: 0;
+  padding: 1.5rem 0;
+}
+
+@media (min-width:20rem) and (max-width:37.4375rem) {
+  .c0 {
+    font-size: 1.5rem;
+    line-height: 1.75rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .c0 {
+    font-size: 2rem;
+    line-height: 2.25rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .c0 {
+    padding-top: 2rem;
+  }
+}
+
+<div>
+  <h2
+    class="c0"
+    tabindex="-1"
+  >
+    More from the BBC
+  </h2>
+</div>
+`;
