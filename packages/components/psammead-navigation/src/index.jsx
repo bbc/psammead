@@ -39,7 +39,7 @@ const StyledUnorderedList = styled.ul`
   margin: 0;
   position: relative;
 
-  ${({ isMobile }) => !isMobile && `overflow: hidden;`}
+  ${({ isSwipeable }) => !isSwipeable && `overflow: hidden;`}
 `;
 
 const StyledListItem = styled.li`
@@ -115,14 +115,30 @@ const CurrentLink = ({ children: link, script, currentPageText }) => (
   </>
 );
 
-// eslint-disable-next-line react/prop-types
-export const NavigationUl = ({ children, isMobile, ...props }) => (
-  <StyledUnorderedList role="list" isMobile={isMobile} {...props}>
+CurrentLink.propTypes = {
+  children: string.isRequired,
+  script: shape(scriptPropType).isRequired,
+  currentPageText: string,
+};
+
+CurrentLink.defaultProps = {
+  currentPageText: null,
+};
+
+export const NavigationUl = ({ children, isSwipeable, ...props }) => (
+  <StyledUnorderedList role="list" isSwipeable={isSwipeable} {...props}>
     {React.Children.map(children, child =>
-      React.cloneElement(child, { isMobile }),
+      React.cloneElement(child, { isSwipeable }),
     )}
   </StyledUnorderedList>
 );
+
+NavigationUl.propTypes = {
+  children: node.isRequired,
+  isSwipeable: bool,
+};
+
+NavigationUl.defaultProps = { isSwipeable: false };
 
 export const NavigationLi = ({
   children: link,
@@ -131,11 +147,10 @@ export const NavigationLi = ({
   currentPageText,
   active,
   service,
-  // eslint-disable-next-line react/prop-types
-  isMobile,
+  isSwipeable,
   ...props
 }) => {
-  const tabIndex = isMobile && { tabIndex: -1 };
+  const tabIndex = isSwipeable && { tabIndex: -1 };
 
   return (
     <StyledListItem role="listitem">
@@ -165,6 +180,22 @@ export const NavigationLi = ({
       )}
     </StyledListItem>
   );
+};
+
+NavigationLi.propTypes = {
+  children: node.isRequired,
+  url: string.isRequired,
+  script: shape(scriptPropType).isRequired,
+  active: bool,
+  currentPageText: string,
+  service: string.isRequired,
+  isSwipeable: bool,
+};
+
+NavigationLi.defaultProps = {
+  active: false,
+  currentPageText: null,
+  isSwipeable: false,
 };
 
 const StyledNav = styled.nav`
@@ -226,15 +257,15 @@ const Navigation = ({ children, dir }) => {
     };
   }, []); // Empty array ensures that effect is only run on mount and unmount
 
-  const isMobile = width < 600;
-  const ariaHidden = isMobile && { 'aria-hidden': true };
+  const isSwipeable = width < 600;
+  const ariaHidden = isSwipeable && { 'aria-hidden': true };
 
   return (
     <StyledNav role="navigation" dir={dir}>
       <NavWrapper>
         <SwipeableNav dir={dir} {...ariaHidden}>
           {React.Children.map(children, child =>
-            React.cloneElement(child, { isMobile }),
+            React.cloneElement(child, { isSwipeable }),
           )}
         </SwipeableNav>
       </NavWrapper>
@@ -248,33 +279,5 @@ Navigation.propTypes = {
 };
 
 Navigation.defaultProps = { dir: 'ltr' };
-
-NavigationUl.propTypes = {
-  children: node.isRequired,
-};
-
-NavigationLi.propTypes = {
-  children: node.isRequired,
-  url: string.isRequired,
-  script: shape(scriptPropType).isRequired,
-  active: bool,
-  currentPageText: string,
-  service: string.isRequired,
-};
-
-NavigationLi.defaultProps = {
-  active: false,
-  currentPageText: null,
-};
-
-CurrentLink.propTypes = {
-  children: string.isRequired,
-  script: shape(scriptPropType).isRequired,
-  currentPageText: string,
-};
-
-CurrentLink.defaultProps = {
-  currentPageText: null,
-};
 
 export default Navigation;
