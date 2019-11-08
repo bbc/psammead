@@ -9,9 +9,9 @@ const getSize = when(is(Number), addPixelUnit);
 const getHeight = ({ wrapperHeight }) => getSize(wrapperHeight);
 const getWidth = ({ wrapperWidth }) => getSize(wrapperWidth);
 const Wrapper = styled.div`
+  overflow: auto;
   height: ${getHeight};
   width: ${getWidth};
-  overflow: scroll;
 `;
 const ContentShiftBlocker = ({ children, initialHeight, initialWidth }) => {
   const wrapperEl = useRef(null);
@@ -29,8 +29,9 @@ const ContentShiftBlocker = ({ children, initialHeight, initialWidth }) => {
     let IO;
     let RO;
     let { ResizeObserver } = window;
-    scrollAnchorIsSupported.current =
-      CSS && CSS.supports && CSS.supports('overflow-anchor', 'auto');
+    if ('CSS' in window) {
+      scrollAnchorIsSupported.current = CSS.supports('overflow-anchor', 'auto');
+    }
 
     const initIO = () => {
       const callback = ([wrapperEntry]) => {
