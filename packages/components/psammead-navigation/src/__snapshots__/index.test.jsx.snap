@@ -172,9 +172,8 @@ exports[`Navigation should render correctly 1`] = `
 
 @media (max-width:37.4375rem) {
   .c2 {
-    position: relative;
-    overflow-x: scroll;
     white-space: nowrap;
+    overflow-x: scroll;
     -webkit-scroll-behavior: smooth;
     -moz-scroll-behavior: smooth;
     -ms-scroll-behavior: smooth;
