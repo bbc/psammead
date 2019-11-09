@@ -1,0 +1,33 @@
+{
+  "name": "@bbc/psammead-synopsis",
+  "version": "0.1.0",
+  "description": "React styled component for a Synopsis",
+  "main": "dist/index.js",
+  "module": "esm/index.js",
+  "sideEffects": false,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bbc/psammead/tree/latest/packages/components/psammead-synopsis"
+  },
+  "keywords": [
+    "bbc",
+    "synopsis",
+    "styled-components"
+  ],
+  "author": {
+    "name": "Psammead Maintainers",
+    "email": "PsammeadMaintainers@bbc.co.uk"
+  },
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/bbc/psammead/issues"
+  },
+  "homepage": "https://github.com/bbc/psammead/blob/latest/packages/components/psammead-synopsis/README.md",
+  "dependencies": {
+    "@bbc/gel-foundations": "^3.4.1",
+    "@bbc/psammead-styles": "^4.1.0"
+  },
+  "peerDependencies": {
+    "styled-components": "^4.3.2"
+  }
+}
