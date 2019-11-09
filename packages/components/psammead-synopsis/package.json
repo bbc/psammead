@@ -1,6 +1,6 @@
 {
   "name": "@bbc/psammead-synopsis",
-  "version": "0.1.0",
+  "version": "0.1.0-alpha.1",
   "description": "React styled component for a Synopsis",
   "main": "dist/index.js",
   "module": "esm/index.js",
@@ -29,5 +29,8 @@
   },
   "peerDependencies": {
     "styled-components": "^4.3.2"
+  },
+  "publishConfig": {
+    "tag": "alpha"
   }
 }
