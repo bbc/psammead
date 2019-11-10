@@ -1,43 +1,439 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`OnwardJourneys should render correctly 1`] = `
+.c13 {
+  display: block;
+  width: 100%;
+  visibility: visible;
+}
+
+.c5 {
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  -webkit-clip: rect(1px,1px,1px,1px);
+  clip: rect(1px,1px,1px,1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  width: 1px;
+  margin: 0;
+}
+
 .c0 {
-  font-size: 1.25rem;
-  line-height: 1.5rem;
+  padding-top: calc(4 * 1rem);
+  padding-bottom: calc(2 * 1rem);
+  background-color: #D5D0CD;
+}
+
+.c11 {
+  padding: 0 1rem 0 1rem;
+  min-width: 20%;
+}
+
+.c6 {
+  padding: 1rem;
+}
+
+.c7 {
+  border: none;
+  font-size: 1.125rem;
+  line-height: 1.375rem;
   font-family: ReithSans,Helvetica,Arial,sans-serif;
   font-weight: 700;
   font-style: normal;
-  color: #3F3F42;
+  color: #222222;
+  background-color: #D5D0CD;
+  padding: 0.5rem 1rem;
+}
+
+.c7:first-child {
+  background-color: #222222;
+  color: #FFFFFF;
+}
+
+.c2 {
+  overflow: hidden;
+  padding: 0;
   margin: 0;
-  padding: 1.5rem 0;
+  border: 0;
+}
+
+.c3 {
+  position: absolute;
+  top: 6.5rem;
+  right: 20rem;
+}
+
+.c4 {
+  border: none;
+  background-color: #D5D0CD;
+}
+
+.c8 {
+  display: block;
+  list-style-type: none;
+  margin: 0 1rem;
+  padding: 0;
+}
+
+.c10 {
+  background-color: #FFFFFF;
+  display: inline-block;
+  width: calc(20% - 4 * 0.5rem);
+  margin: 0 0.5rem 1rem 0.5rem;
+}
+
+.c9 {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c12 {
+  color: #222222;
+  font-family: ReithSerif,Helvetica,Arial,sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 0.9375rem;
+  line-height: 1.25rem;
+}
+
+.c14 {
+  color: #222222;
+  border-bottom: 1px solid #B80000;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  font-size: 0.9375rem;
+  line-height: 1.25rem;
+  font-family: ReithSans,Helvetica,Arial,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #222222;
+  margin: 1rem;
+}
+
+.c14:visited {
+  color: #6E6E73;
+  border-bottom: 1px solid #6E6E73;
+}
+
+.c14:focus,
+.c14:hover {
+  border-bottom: 2px solid #B80000;
+  color: #B80000;
+}
+
+.c1 {
+  font-size: 1.125rem;
+  line-height: 1.375rem;
+  font-family: ReithSans,Helvetica,Arial,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #222222;
+  margin: 0 1rem;
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
-  .c0 {
+  .c7 {
+    font-size: 1.125rem;
+    line-height: 1.375rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .c7 {
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+  }
+}
+
+@media (min-width:20rem) and (max-width:37.4375rem) {
+  .c12 {
+    font-size: 1rem;
+    line-height: 1.25rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .c12 {
+    font-size: 1rem;
+    line-height: 1.25rem;
+  }
+}
+
+@media (min-width:20rem) and (max-width:37.4375rem) {
+  .c14 {
+    font-size: 1rem;
+    line-height: 1.25rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .c14 {
+    font-size: 1rem;
+    line-height: 1.25rem;
+  }
+}
+
+@media (min-width:20rem) and (max-width:37.4375rem) {
+  .c1 {
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .c1 {
     font-size: 1.5rem;
     line-height: 1.75rem;
   }
 }
 
-@media (min-width:37.5rem) {
-  .c0 {
-    font-size: 2rem;
-    line-height: 2.25rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c0 {
-    padding-top: 2rem;
-  }
-}
-
-<div>
+<div
+  class="c0"
+>
   <h2
-    class="c0"
-    tabindex="-1"
+    class="c1"
   >
     More from the BBC
   </h2>
+  <div
+    class="c2"
+  >
+    <div
+      class="c3"
+    >
+      <button
+        class="c4"
+        type="button"
+      >
+        <span
+          class="c5"
+        >
+          Scroll carousel left
+        </span>
+        <svg
+          enable-background="new 0 0 18 22"
+          height="44px"
+          version="1.1"
+          viewBox="0 0 44 44"
+          width="44px"
+          x="0px"
+          xml:space="preserve"
+          xmlns="http://www.w3.org/2000/svg"
+          y="0px"
+        >
+          <g
+            fill="#6e6e73"
+            id="arrow-left"
+          >
+            <rect
+              fill="#6e6e73"
+              height="44"
+              width="44"
+            />
+            <rect
+              fill="#f2f2f2"
+              height="40"
+              width="40"
+              x="2"
+              y="2"
+            />
+            <polygon
+              points="13,22 31,33 31,28.1 20.9,22 31,15.9 31,11"
+            />
+          </g>
+        </svg>
+      </button>
+      <button
+        class="c4"
+        type="button"
+      >
+        <span
+          class="c5"
+        >
+          Scroll carousel right
+        </span>
+        <svg
+          enable-background="new 0 0 44 44"
+          height="44px"
+          version="1.1"
+          viewBox="0 0 44 44"
+          width="44px"
+          x="0px"
+          xml:space="preserve"
+          xmlns="http://www.w3.org/2000/svg"
+          y="0px"
+        >
+          <g
+            fill="#222222"
+            id="arrow-right"
+          >
+            <rect
+              fill="#222222"
+              height="44"
+              width="44"
+            />
+            <rect
+              fill="#FFFFFF"
+              height="40"
+              width="40"
+              x="2"
+              y="2"
+            />
+            <polygon
+              points="31,22 13,11 13,15.9 23.1,22 13,28.1 13,33"
+            />
+          </g>
+        </svg>
+      </button>
+    </div>
+    <div
+      class="c6"
+    >
+      <button
+        class="c7"
+      >
+        Climate change
+      </button>
+      <button
+        class="c7"
+      >
+        Environment
+      </button>
+      <button
+        class="c7"
+      />
+    </div>
+  </div>
+  <ul
+    class="c8"
+  >
+    <a
+      class="c9"
+      href="https://www.bbc.co.uk/news/science-environment-50237551"
+    >
+      <li
+        class="c10"
+      >
+        <div
+          class="c11"
+        >
+          <h4
+            class="c12"
+          >
+            Climate change 'making mountaineering riskier'
+          </h4>
+        </div>
+        <img
+          alt="Mountaineers climbing the Alps"
+          class="c13"
+          src="http://c.files.bbci.co.uk/14A56/production/_109466548_crevasses.jpg"
+          width="100%"
+        />
+      </li>
+    </a>
+    <a
+      class="c9"
+      href="https://www.bbc.co.uk/news/uk-politics-50318521"
+    >
+      <li
+        class="c10"
+      >
+        <div
+          class="c11"
+        >
+          <h4
+            class="c12"
+          >
+            Corbyn plans 'green industrial revolution'
+          </h4>
+        </div>
+        <img
+          alt="Jeremy Corbyn"
+          class="c13"
+          src="http://c.files.bbci.co.uk/D615/production/_109550845_p07t5pvs.jpg"
+          width="100%"
+        />
+      </li>
+    </a>
+    <a
+      class="c9"
+      href="https://www.bbc.co.uk/news/uk-politics-50315720"
+    >
+      <li
+        class="c10"
+      >
+        <div
+          class="c11"
+        >
+          <h4
+            class="c12"
+          >
+            How would the Greens fund climate pledge?
+          </h4>
+        </div>
+        <img
+          alt="Wind turbines"
+          class="c13"
+          src="http://c.files.bbci.co.uk/AAAE/production/_109549634_gettyimages-976800330.jpg"
+          width="100%"
+        />
+      </li>
+    </a>
+    <a
+      class="c9"
+      href="https://www.bbc.co.uk/news/uk-politics-50317421"
+    >
+      <li
+        class="c10"
+      >
+        <div
+          class="c11"
+        >
+          <h4
+            class="c12"
+          >
+            Green Party: 'This must be the climate election'
+          </h4>
+        </div>
+        <img
+          alt="Sian Berry, Carla Denyer and Amelia Womack"
+          class="c13"
+          src="http://c.files.bbci.co.uk/036A/production/_109547800_p07t5lh8.jpg"
+          width="100%"
+        />
+      </li>
+    </a>
+    <a
+      class="c9"
+      href="https://www.bbc.co.uk/news/science-environment-50267017"
+    >
+      <li
+        class="c10"
+      >
+        <div
+          class="c11"
+        >
+          <h4
+            class="c12"
+          >
+            Nuclear fusion: 'A question of when, not if'
+          </h4>
+        </div>
+        <img
+          alt="fusion"
+          class="c13"
+          src="http://c.files.bbci.co.uk/5494/production/_109525612_gettyimages-1095967942.jpg"
+          width="100%"
+        />
+      </li>
+    </a>
+  </ul>
+  <a
+    class="c14"
+    href="https://www.bbc.co.uk/news/topics/cmj34zmwm1zt/climate-change"
+  >
+    Climate change
+  </a>
 </div>
 `;
