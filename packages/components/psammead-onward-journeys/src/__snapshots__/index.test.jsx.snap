@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`PsammeadOnwardJourneys should render correctly 1`] = `
+exports[`OnwardJourneys should render correctly 1`] = `
 .c0 {
   font-size: 1.25rem;
   line-height: 1.5rem;

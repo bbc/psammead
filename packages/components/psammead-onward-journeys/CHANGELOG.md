@@ -1,4 +1,4 @@
-# Psammead Onward Journeys Changelog
+# Onward Journeys Changelog
 
 | Version | Description |
 |---------|-------------|
