@@ -8,7 +8,7 @@ exports[`Synopsis should render a correctly 1`] = `
   font-weight: 700;
   font-style: normal;
   color: #6E6E73;
-  padding-bottom: 2 * 1rem;
+  padding: 0 0 2rem 0;
   margin: 0;
 }
 
@@ -41,7 +41,7 @@ exports[`Synopsis should render correctly with arabic script typography values 1
   font-weight: 700;
   font-style: normal;
   color: #6E6E73;
-  padding-bottom: 2 * 1rem;
+  padding: 0 0 2rem 0;
   margin: 0;
 }
 
