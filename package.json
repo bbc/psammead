@@ -79,7 +79,7 @@
     "babel-loader": "^8.0.4",
     "babel-plugin-styled-components": "1.10.6",
     "browserslist": "^4.7.2",
-    "chalk": "^2.4.1",
+    "chalk": "^3.0.0",
     "enquirer": "^2.3.2",
     "eslint": "^6.6.0",
     "eslint-config-airbnb": "^18.0.1",
