@@ -25,7 +25,6 @@ const GuidanceWrapper = styled.div`
 `;
 
 const Content = styled.div`
-  align-items: center;
   padding: ${GEL_SPACING};
   border-bottom: 1px solid transparent;
   @media screen and (-ms-high-contrast: active) {
