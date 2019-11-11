@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version       | Description                                                                                                                  |
 | ------------- | ---------------------------------------------------------------------------------------------------------------------------- |
+| 2.2.3 | [PR#2608](https://github.com/bbc/psammead/pull/2608) Talos - Bump Dependencies - @bbc/psammead-assets |
 | 2.2.2 | [PR#2493](https://github.com/bbc/psammead/pull/2493) Show media player placeholder while loading on canonical |
 | 2.2.1 | [PR#2576](https://github.com/bbc/psammead/pull/2576) Add support for 240px screen width & remove Guidance SVG |
 | 2.2.0 | [PR#2517](https://github.com/bbc/psammead/pull/2517) Add Guidance to media placeholder image |
