@@ -13,7 +13,7 @@ const navigationIcons = {
     </MenuIcon>
   ),
   cross: (
-    <MenuIcon width={44} height={44}>
+    <MenuIcon width="44px" height="44px">
       <path
         d="M26.741 15L21.6 20.142 16.458 15 15 16.458l5.142 5.142L15 26.742l1.458 1.458 5.142-5.141 5.141 5.141 1.459-1.458-5.142-5.142 5.142-5.142z"
         fillRule="evenodd"
