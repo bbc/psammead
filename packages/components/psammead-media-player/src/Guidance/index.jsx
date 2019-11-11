@@ -34,6 +34,7 @@ const Content = styled.div`
   }
   @media (min-width: ${GEL_GROUP_2_SCREEN_WIDTH_MIN}) {
     padding: ${GEL_SPACING_DBL};
+  }
 `;
 
 const GuidanceMessage = styled.strong`
