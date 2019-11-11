@@ -21,7 +21,8 @@
   "dependencies": {
     "@bbc/gel-foundations": "^3.4.1",
     "@bbc/psammead-styles": "^4.1.0",
-    "@bbc/psammead-visually-hidden-text": "^1.2.3"
+    "@bbc/psammead-visually-hidden-text": "^1.2.3",
+    "@bbc/psammead-assets": "^2.8.0"
   },
   "peerDependencies": {
     "react": "^16.9.0",
