@@ -28,7 +28,7 @@ const GuidanceMessage = styled.strong`
   display: block;
   font-weight: normal;
   padding: ${GEL_SPACING};
-  border-bottom: 1px solid transparent;
+  border-bottom: 0.0625rem solid transparent;
   @media screen and (-ms-high-contrast: active) {
     background-color: window;
   }
