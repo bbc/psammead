@@ -24,9 +24,11 @@ const GuidanceWrapper = styled.div`
   }
 `;
 
-const Content = styled.div`
+const GuidanceMessage = styled.strong`
+  display: block;
+  font-weight: normal;
   padding: ${GEL_SPACING};
-  border-bottom: 0.0625rem solid transparent;
+  border-bottom: 1px solid transparent;
   @media screen and (-ms-high-contrast: active) {
     background-color: window;
   }
@@ -35,15 +37,9 @@ const Content = styled.div`
   }
 `;
 
-const GuidanceMessage = styled.strong`
-  font-weight: normal;
-`;
-
 const Guidance = ({ guidanceMessage, service }) => (
   <GuidanceWrapper service={service}>
-    <Content>
-      <GuidanceMessage>{guidanceMessage}</GuidanceMessage>
-    </Content>
+    <GuidanceMessage>{guidanceMessage}</GuidanceMessage>
   </GuidanceWrapper>
 );
 
