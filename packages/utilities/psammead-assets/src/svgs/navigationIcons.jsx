@@ -8,7 +8,7 @@ const MenuIcon = styled.svg`
 
 const navigationIcons = {
   hamburger: (
-    <MenuIcon width={44} height={44}>
+    <MenuIcon width="44px" height="44px">
       <path d="M12 29h21v-2.333H12V29zm0-5.833h21v-2.334H12v2.334zM12 15v2.333h21V15H12z" />
     </MenuIcon>
   ),
