@@ -212,7 +212,7 @@ exports[`Media Player: Placeholder should render a video placeholder with guidan
   display: block;
   font-weight: normal;
   padding: 0.5rem;
-  border-bottom: 1px solid transparent;
+  border-bottom: 0.0625rem solid transparent;
 }
 
 .c1 {

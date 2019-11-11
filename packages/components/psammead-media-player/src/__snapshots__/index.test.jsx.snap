@@ -354,7 +354,7 @@ exports[`Media Player: Canonical Entry renders a placeholder image with guidance
   display: block;
   font-weight: normal;
   padding: 0.5rem;
-  border-bottom: 1px solid transparent;
+  border-bottom: 0.0625rem solid transparent;
 }
 
 .c2 {

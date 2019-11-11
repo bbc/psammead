@@ -19,7 +19,7 @@ exports[`Media Player: Guidance should render Guidance 1`] = `
   display: block;
   font-weight: normal;
   padding: 0.5rem;
-  border-bottom: 1px solid transparent;
+  border-bottom: 0.0625rem solid transparent;
 }
 
 @media (min-width:37.5rem) {
