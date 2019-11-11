@@ -28,6 +28,7 @@ The `@bbc/psammead-navigation` package is a set of two components, `NavigationUl
 | Argument | Type | Required | Default | Example |
 | -------- | ---- | -------- | ------- | ------- |
 | children | node | Yes      | N/A     | `<NavigationLi url="/" script={latin} active="true">Home</NavigationLi><NavigationLi url="/sport" script={latin}>{Sport}</NavigationLi>` |
+| isSwipeable | boolean | No | `false` | `true` |
 
 ### NavigationLi
 
