@@ -1,5 +1,6 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
+import styled from 'styled-components';
 import {
   color,
   select,
@@ -12,7 +13,11 @@ import * as svgs from '@bbc/psammead-assets/svgs';
 import { C_POSTBOX, C_WHITE } from '@bbc/psammead-styles/colours';
 import Brand from '@bbc/psammead-brand';
 import { withServicesKnob } from '@bbc/psammead-storybook-helpers';
-import Navigation, { NavigationUl, NavigationLi } from './index';
+import Navigation, {
+  NavigationUl,
+  NavigationLi,
+  CanonicalHamburgerMenu,
+} from './index';
 import igboNavData from '../testHelpers/igbo';
 import pidginNavData from '../testHelpers/pidgin';
 import yorubaNavData from '../testHelpers/yoruba';
@@ -43,6 +48,11 @@ const navStoriesData = [
     dir: 'rtl',
   },
 ];
+
+const BackgroundContainer = styled.div`
+  background-color: black;
+  height: 100vh;
+`;
 
 const inputs = () => {
   // capitalization is only for presentation purpose on the knob
@@ -148,6 +158,14 @@ const navigationStory = (
   </>
 );
 
+const hamburgerStory = () => {
+  return (
+    <BackgroundContainer>
+      <CanonicalHamburgerMenu />
+    </BackgroundContainer>
+  );
+};
+
 const storiesWithoutBrand = storiesOf(
   'Components|Navigation/without brand',
   module,
@@ -164,6 +182,10 @@ navStoriesData.map(item => {
       notes,
     },
   );
+});
+
+storiesWithoutBrand.add('Hamburger menu', hamburgerStory, {
+  notes,
 });
 
 const storiesWithBrand = storiesOf('Components|Navigation/with brand', module)

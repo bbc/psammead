@@ -2,6 +2,7 @@ import React from 'react';
 import styled, { css } from 'styled-components';
 import { shape, string, node, bool, oneOf } from 'prop-types';
 import VisuallyHiddenText from '@bbc/psammead-visually-hidden-text';
+import { navigationIcons } from '@bbc/psammead-assets/svgs';
 import { C_WHITE, C_POSTBOX, C_GHOST } from '@bbc/psammead-styles/colours';
 import {
   GEL_SPACING_HLF,
@@ -10,6 +11,7 @@ import {
 } from '@bbc/gel-foundations/spacings';
 import {
   GEL_GROUP_1_SCREEN_WIDTH_MAX,
+  GEL_GROUP_3_SCREEN_WIDTH_MIN,
   GEL_GROUP_5_SCREEN_WIDTH_MIN,
 } from '@bbc/gel-foundations/breakpoints';
 import { getPica } from '@bbc/gel-foundations/typography';
@@ -21,6 +23,44 @@ const CURRENT_ITEM_HOVER_BORDER = '0.3125rem'; // 5px
 
 /* White with 30% transparency over #B80000 */
 const BORDER_COLOR = '#eab3b3';
+
+const HamburgerMenu = styled.button`
+  width: 44px;
+  height: 44px;
+  background-color: ${C_POSTBOX};
+  padding: 0;
+  margin: 0;
+  border: 0;
+
+  &:hover,
+  &:focus {
+    box-shadow: inset 0 0 0 0.25rem ${C_WHITE};
+  }
+
+  @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
+    visibility: hidden;
+  }
+`;
+
+export const AmpHamburgerMenu = (announcedText, action, isMenuOpen) => (
+  <HamburgerMenu
+    aria-label={announcedText}
+    on={action}
+    aria-expanded={isMenuOpen}
+  >
+    {navigationIcons.hamburger}
+  </HamburgerMenu>
+);
+
+export const CanonicalHamburgerMenu = (announcedText, onClick, isMenuOpen) => (
+  <HamburgerMenu
+    aria-label={announcedText}
+    onClick={onClick}
+    aria-expanded={isMenuOpen}
+  >
+    {navigationIcons.hamburger}
+  </HamburgerMenu>
+);
 
 const NavWrapper = styled.div`
   position: relative;
