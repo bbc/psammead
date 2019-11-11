@@ -16,12 +16,10 @@ exports[`Media Player: Guidance should render Guidance 1`] = `
 }
 
 .c1 {
-  padding: 0.5rem;
-  border-bottom: 0.0625rem solid transparent;
-}
-
-.c2 {
+  display: block;
   font-weight: normal;
+  padding: 0.5rem;
+  border-bottom: 1px solid transparent;
 }
 
 @media (min-width:37.5rem) {
@@ -51,14 +49,10 @@ exports[`Media Player: Guidance should render Guidance 1`] = `
 <div
   class="c0"
 >
-  <div
+  <strong
     class="c1"
   >
-    <strong
-      class="c2"
-    >
-      Guidance: Contains strong language with adult humor
-    </strong>
-  </div>
+    Guidance: Contains strong language with adult humor
+  </strong>
 </div>
 `;
