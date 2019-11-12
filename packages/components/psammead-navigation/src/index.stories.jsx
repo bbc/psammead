@@ -17,6 +17,8 @@ import Navigation, {
   NavigationUl,
   NavigationLi,
   CanonicalHamburgerMenu,
+  CanonicalDropdown,
+  DropdownNavigationLi,
 } from './index';
 import igboNavData from '../testHelpers/igbo';
 import pidginNavData from '../testHelpers/pidgin';
@@ -166,6 +168,28 @@ const hamburgerStory = () => {
   );
 };
 
+const dropdownStory = () => ({ dir, script, service }) => (
+  <CanonicalDropdown>
+    {pidginNavData.map((item, index) => {
+      const active = index === 0;
+      const { title, url } = item;
+
+      return (
+        <DropdownNavigationLi
+          script={script}
+          service={service}
+          dir={dir}
+          url={url}
+          active={active}
+          currentPageText="Current page"
+        >
+          {title}
+        </DropdownNavigationLi>
+      );
+    })}
+  </CanonicalDropdown>
+);
+
 const storiesWithoutBrand = storiesOf(
   'Components|Navigation/without brand',
   module,
@@ -185,6 +209,10 @@ navStoriesData.map(item => {
 });
 
 storiesWithoutBrand.add('Hamburger menu', hamburgerStory, {
+  notes,
+});
+
+storiesWithoutBrand.add('Dropdown menu', dropdownStory(), {
   notes,
 });
 
