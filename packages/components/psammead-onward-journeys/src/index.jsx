@@ -17,7 +17,14 @@ import {
 } from '@bbc/psammead-styles/font-styles';
 import VisuallyHiddenText from '@bbc/psammead-visually-hidden-text';
 
-const RightArrowSVG = ({ height = '44px', width = '44px' }) => (
+// eslint-disable-next-line no-useless-escape
+const regexPunctuationSymbols = /[\[\]\.,\/#?¿!$'"%^&*;:{}=\-_`~()؟؛٬«»！，。？、@#￥……（）：；《）《》“”〔〕’|]/gi;
+const regexSpaces = /\s+/g;
+
+const idSanitiser = text =>
+  text.replace(regexPunctuationSymbols, '').replace(regexSpaces, '-');
+
+const RightArrowSVG = ({ height, width }) => (
   <svg
     version="1.1"
     xmlns="http://www.w3.org/2000/svg"
@@ -37,11 +44,15 @@ const RightArrowSVG = ({ height = '44px', width = '44px' }) => (
   </svg>
 );
 RightArrowSVG.propTypes = {
-  height: string.isRequired,
-  width: string.isRequired,
+  height: string,
+  width: string,
+};
+RightArrowSVG.defaultProps = {
+  height: '44px',
+  width: '44px',
 };
 
-const LeftArrowSVG = ({ height = '44px', width = '44px' }) => (
+const LeftArrowSVG = ({ height, width }) => (
   <svg
     version="1.1"
     xmlns="http://www.w3.org/2000/svg"
@@ -60,20 +71,27 @@ const LeftArrowSVG = ({ height = '44px', width = '44px' }) => (
     </g>
   </svg>
 );
-
 LeftArrowSVG.propTypes = {
-  height: string.isRequired,
-  width: string.isRequired,
+  height: string,
+  width: string,
+};
+LeftArrowSVG.defaultProps = {
+  height: '44px',
+  width: '44px',
 };
 
-const OnwardJourneys = ({ onwardJourneysData, service, script }) => {
-  const selectedTopic = 'Climate change';
-  const selectedTopicData = onwardJourneysData.filter(
-    topics => topics.name === selectedTopic,
-  )[0];
-  const visibleRecords = selectedTopicData.records;
+const OnwardJourneys = ({
+  headingText,
+  onwardJourneysData,
+  service,
+  script,
+  labelId,
+}) => {
+  const selectedTopicData = selectedTopicName =>
+    onwardJourneysData.filter(topics => topics.name === selectedTopicName)[0]
+      .records;
 
-  const OnwardJourneysWrapper = styled.div`
+  const OnwardJourneysSection = styled.section`
     padding-top: calc(4 * ${GEL_SPACING_DBL});
     padding-bottom: calc(2 * ${GEL_SPACING_DBL});
     background-color: ${C_STONE};
@@ -82,17 +100,21 @@ const OnwardJourneys = ({ onwardJourneysData, service, script }) => {
     padding: 0 ${GEL_SPACING_DBL} 0 ${GEL_SPACING_DBL};
     min-width: 20%;
   `;
-  const TabsList = styled.div`
+  const TabsList = styled.ul`
+    list-style-type: none;
     padding: ${GEL_SPACING_DBL};
   `;
-  const Tab = styled.button`
-    border: none;
+  const TabLi = styled.li`
+    display: inline-block;
+  `;
+  const TabLink = styled.a`
     ${getGreatPrimer(script)};
     ${getSansBold(service)};
     color: ${C_EBON};
     background-color: ${C_STONE};
     padding: ${GEL_SPACING} ${GEL_SPACING_DBL};
-    &:first-child {
+    text-decoration: none;
+    &[aria-selected='true'] {
       background-color: ${C_EBON};
       color: ${C_WHITE};
     }
@@ -118,7 +140,7 @@ const OnwardJourneys = ({ onwardJourneysData, service, script }) => {
     margin: 0 ${GEL_SPACING_DBL};
     padding: 0;
   `;
-  const Card = styled.li`
+  const CardItem = styled.li`
     background-color: ${C_WHITE};
     display: inline-block;
     width: calc(20% - 4 * ${GEL_SPACING});
@@ -146,11 +168,25 @@ const OnwardJourneys = ({ onwardJourneysData, service, script }) => {
   `;
 
   return (
-    <OnwardJourneysWrapper>
-      <OnwardJourneysHeading script={script} service={service}>
-        More from the BBC
+    <OnwardJourneysSection role="region" aria-labelledby={labelId}>
+      <OnwardJourneysHeading id={labelId} script={script} service={service}>
+        {headingText}
       </OnwardJourneysHeading>
       <Carousel>
+        <TabsList role="tablist">
+          {onwardJourneysData.map((topic, index) => (
+            <TabLi role="presentation" key={topic.name}>
+              <TabLink
+                role="tab"
+                id={`tab-section-${idSanitiser(topic.name)}`}
+                href={`#section-${idSanitiser(topic.name)}`}
+                aria-selected={index === 0}
+              >
+                {topic.name}
+              </TabLink>
+            </TabLi>
+          ))}
+        </TabsList>
         <Arrows>
           <ArrowButton type="button">
             <VisuallyHiddenText>Scroll carousel left</VisuallyHiddenText>
@@ -161,42 +197,56 @@ const OnwardJourneys = ({ onwardJourneysData, service, script }) => {
             <RightArrowSVG />
           </ArrowButton>
         </Arrows>
-        <TabsList>
-          {onwardJourneysData.map(topic => (
-            <Tab>{topic.name}</Tab>
-          ))}
-          <Tab />
-        </TabsList>
       </Carousel>
-      <CardList>
-        {visibleRecords.map(record => (
-          <CardLink href={record.url}>
-            <Card>
-              <HeadingWrapper>
-                <CardHeadline>{record.headline}</CardHeadline>
-              </HeadingWrapper>
-              <Img
-                src={record.image.href}
-                width="100%"
-                alt={record.image.altText}
-              />
-            </Card>
-          </CardLink>
-        ))}
-      </CardList>
-      <TopicLink script={script} service={service} href={selectedTopicData.url}>
-        {selectedTopicData.name}
+      {onwardJourneysData.map(topic => (
+        <section
+          aria-labelledby={`tab-section-${idSanitiser(topic.name)}`}
+          id={`section-${idSanitiser(topic.name)}`}
+          role="tabpanel"
+          tabIndex="-1"
+        >
+          <VisuallyHiddenText as="h3">{topic.name}</VisuallyHiddenText>
+          <CardList>
+            {selectedTopicData(topic.name).map(record => (
+              <CardLink href={record.url} key={record.headline}>
+                <CardItem>
+                  <HeadingWrapper>
+                    <CardHeadline>{record.headline}</CardHeadline>
+                  </HeadingWrapper>
+                  <Img
+                    src={record.image.href}
+                    width="100%"
+                    alt={record.image.altText}
+                  />
+                </CardItem>
+              </CardLink>
+            ))}
+          </CardList>
+        </section>
+      ))}
+      <TopicLink
+        script={script}
+        service={service}
+        href={selectedTopicData('Climate change').url}
+      >
+        {selectedTopicData('Climate change').name}
       </TopicLink>
-    </OnwardJourneysWrapper>
+    </OnwardJourneysSection>
   );
 };
 
 OnwardJourneys.propTypes = {
+  headingText: string,
+  labelId: string.isRequired,
   onwardJourneysData: arrayOf(
     shape({ href: string.isRequired, name: string.isRequired }),
   ).isRequired,
   service: string.isRequired,
   script: string.isRequired,
+};
+
+OnwardJourneys.defaultProps = {
+  headingText: 'More from the BBC',
 };
 
 export default OnwardJourneys;
