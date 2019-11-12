@@ -1,8 +1,12 @@
 # Psammead Media Player Changelog
 
 <!-- prettier-ignore -->
-| Version | Description |
-| ------- | ----------- |
+| Version       | Description                                                                                                                  |
+| ------------- | ---------------------------------------------------------------------------------------------------------------------------- |
+| 2.2.2 | [PR#2493](https://github.com/bbc/psammead/pull/2493) Show media player placeholder while loading on canonical |
+| 2.2.1 | [PR#2576](https://github.com/bbc/psammead/pull/2576) Add support for 240px screen width & remove Guidance SVG |
+| 2.2.0 | [PR#2517](https://github.com/bbc/psammead/pull/2517) Add Guidance to media placeholder image |
+| 2.1.5 | [PR#2545](https://github.com/bbc/psammead/pull/2545) Update psammead-media-player prop documentation |
 | 2.1.4 | [PR#2516](https://github.com/bbc/psammead/pull/2516) Add notes to stories. Fix prop-type warnings |
 | 2.1.3 | [PR#2542](https://github.com/bbc/psammead/pull/2542) Talos - Bump Dependencies - @bbc/psammead-play-button |
 | 2.1.2 | [PR#2467](https://github.com/bbc/psammead/pull/2476) Update image `alt` to be empty for Media Player placeholder |

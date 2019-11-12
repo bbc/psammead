@@ -1,0 +1,43 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Media Player: Guidance should render Guidance 1`] = `
+.c0 {
+  font-family: ReithSans,Helvetica,Arial,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 0.9375rem;
+  line-height: 1.125rem;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: rgba(34,34,34,0.75);
+  color: #FFFFFF;
+  padding: 0.5rem;
+}
+
+.c1 {
+  font-weight: normal;
+}
+
+@media (min-width:37.5rem) {
+  .c0 {
+    font-size: 0.875rem;
+  }
+}
+
+@media (min-width:25rem) {
+  .c0 {
+    padding: 1rem;
+  }
+}
+
+<div
+  class="c0"
+>
+  <strong
+    class="c1"
+  >
+    Guidance: Contains strong language with adult humor
+  </strong>
+</div>
+`;

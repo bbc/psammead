@@ -47,7 +47,7 @@ export const CanonicalMediaPlayer = ({
           mediaInfo={mediaInfo}
         />
       ) : (
-        <Canonical src={src} title={title} />
+        <Canonical src={src} title={title} placeholderSrc={placeholderSrc} />
       )}
     </StyledContainer>
   );
@@ -93,6 +93,7 @@ CanonicalMediaPlayer.propTypes = {
     duration: string,
     durationSpoken: string,
     type: oneOf(['video', 'audio']),
+    guidanceMessage: string,
   }).isRequired,
 };
 
