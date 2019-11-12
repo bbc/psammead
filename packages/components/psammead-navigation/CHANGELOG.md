@@ -3,7 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
-| 5.0.0-alpha.1 | [PR#xxxx](https://github.com/bbc/psammead/pull/xxxx) Add dropdown menu with a hamburger button |
+| 5.0.0-alpha.1 | [PR#2613](https://github.com/bbc/psammead/pull/2613) Add dropdown menu with a hamburger button |
 | 4.0.0-alpha.1 | [PR#2563](https://github.com/bbc/psammead/pull/2563) Remove skip to content link |
 | 3.1.0-alpha.1 | [PR#2567](https://github.com/bbc/psammead/pull/2567) Add `C_WHITE` top border to `Navigation` |
 | 3.0.5 | [PR#2519](https://github.com/bbc/psammead/pull/2519) Talos - Bump Dependencies - @bbc/psammead-styles |
