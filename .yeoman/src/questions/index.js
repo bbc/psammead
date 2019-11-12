@@ -3,6 +3,20 @@ const getExistingPackages = require('../get-existing/index.js');
 module.exports = [
   {
     type: 'input',
+    name: 'kind',
+    message:
+      'Please enter a letter for the kind of package you would like: C for Component, U for Utility and N for coNtainer',
+    default: 'C',
+    validate(answer) {
+      if (!answer || answer.replace(/[^a-zA-Z]/g, '') !== answer) {
+        return 'Please choose a package type - letters only please.';
+      }
+      return true;
+    },
+  },
+
+  {
+    type: 'input',
     name: 'name',
     message:
       "What would you like to call your package? We'll automatically namespace it for you.",
