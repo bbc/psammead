@@ -52,7 +52,7 @@ const navStoriesData = [
 ];
 
 const BackgroundContainer = styled.div`
-  background-color: black;
+  background-color: #000000;
   height: 100vh;
 `;
 

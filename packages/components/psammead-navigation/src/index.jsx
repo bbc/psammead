@@ -35,7 +35,7 @@ const DropdownWrapper = styled.div`
   width: 100vw;
 
   @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
-    visibility: hidden;
+    display: none;
   }
 `;
 
@@ -66,6 +66,7 @@ const DropdownLi = styled.li`
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
   border-bottom: 0.0625rem solid ${C_SHADOW};
+
   &:last-child {
     padding-bottom: ${GEL_SPACING_DBL};
     border: 0;
@@ -192,7 +193,7 @@ const HamburgerButton = styled.button`
   }
 
   @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
-    visibility: hidden;
+    display: none;
   }
 `;
 
