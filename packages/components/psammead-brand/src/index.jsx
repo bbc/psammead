@@ -3,23 +3,26 @@ import styled from 'styled-components';
 import { string, number, node, shape, bool } from 'prop-types';
 import VisuallyHiddenText from '@bbc/psammead-visually-hidden-text';
 import {
-  GEL_GROUP_2_SCREEN_WIDTH_MIN,
-  GEL_GROUP_5_SCREEN_WIDTH_MIN,
   GEL_GROUP_0_SCREEN_WIDTH_MAX,
+  GEL_GROUP_2_SCREEN_WIDTH_MIN,
+  GEL_GROUP_3_SCREEN_WIDTH_MIN,
+  GEL_GROUP_5_SCREEN_WIDTH_MIN,
 } from '@bbc/gel-foundations/breakpoints';
 import {
   GEL_SPACING_HLF,
   GEL_SPACING,
   GEL_SPACING_DBL,
-  GEL_SPACING_TRPL,
 } from '@bbc/gel-foundations/spacings';
 import { getPica } from '@bbc/gel-foundations/typography';
 import { getSansRegular } from '@bbc/psammead-styles/font-styles';
 
-const SVG_TOP_OFFSET_ABOVE_400PX = '1.75rem'; // 28px
-const SVG_BOTTOM_OFFSET_BELOW_400PX = '0.75rem'; // 12px
-const PADDING_AROUND_SVG_ABOVE_400PX = 56;
-const PADDING_AROUND_SVG_BELOW_400PX = 32;
+const SVG_TOP_OFFSET_BELOW_400PX = '0.625rem'; // 10px
+const SVG_BOTTOM_OFFSET_BELOW_400PX = '0.375rem'; // 6px
+const SVG_BOTTOM_OFFSET_ABOVE_400PX = '0.75rem'; // 12px
+const SVG_BOTTOM_OFFSET_ABOVE_600PX = '1.25rem'; // 20px
+const SCRIPT_LINK_OFFSET_BELOW_240PX = 52;
+const PADDING_AROUND_SVG_BELOW_400PX = 16;
+const PADDING_AROUND_SVG_ABOVE_400PX = 28;
 
 const conditionallyRenderHeight = (svgHeight, padding) =>
   svgHeight ? `min-height: ${(svgHeight + padding) / 16}rem;` : '';
@@ -54,7 +57,12 @@ const Banner = styled.div`
   }
 
   @media (max-width: ${GEL_GROUP_0_SCREEN_WIDTH_MAX}) {
-    min-height: ${({ svgHeight }) => svgHeight / 16 + 5}rem;
+    ${({ scriptLink, svgHeight }) =>
+      scriptLink &&
+      `min-height: ${(svgHeight +
+        PADDING_AROUND_SVG_BELOW_400PX +
+        SCRIPT_LINK_OFFSET_BELOW_240PX) /
+        16}rem;`}
   }
 
   border-top: ${({ borderTop }) => borderTop && TRANSPARENT_BORDER};
@@ -81,15 +89,20 @@ const BrandSvg = styled.svg`
   box-sizing: content-box;
   color: ${props => props.logoColour};
   fill: currentColor;
-  padding-top: ${GEL_SPACING_DBL};
+  padding-top: ${SVG_TOP_OFFSET_BELOW_400PX};
   padding-bottom: ${SVG_BOTTOM_OFFSET_BELOW_400PX};
   height: ${props => props.height / 16}rem;
 
   ${({ maxWidth, minWidth }) => brandWidth(minWidth, maxWidth)}
 
   @media (min-width: ${GEL_GROUP_2_SCREEN_WIDTH_MIN}) {
-    padding-top: ${SVG_TOP_OFFSET_ABOVE_400PX};
-    padding-bottom: ${GEL_SPACING_TRPL};
+    padding-top: ${GEL_SPACING_DBL};
+    padding-bottom: ${SVG_BOTTOM_OFFSET_ABOVE_400PX};
+  }
+
+  @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
+    padding-top: ${SVG_BOTTOM_OFFSET_ABOVE_600PX};
+    padding-bottom: ${GEL_SPACING_DBL};
   }
 
   @media screen and (-ms-high-contrast: active), print {
@@ -236,6 +249,7 @@ const Brand = props => {
       borderBottom={borderBottom}
       backgroundColour={backgroundColour}
       logoColour={logoColour}
+      scriptLink={scriptLink}
       {...rest}
     >
       <SvgWrapper>

@@ -2,8 +2,9 @@ import React from 'react';
 import styled from 'styled-components';
 import { getPica } from '@bbc/gel-foundations/typography';
 import {
-  GEL_GROUP_2_SCREEN_WIDTH_MIN,
   GEL_GROUP_1_SCREEN_WIDTH_MAX,
+  GEL_GROUP_2_SCREEN_WIDTH_MIN,
+  GEL_GROUP_3_SCREEN_WIDTH_MIN,
 } from '@bbc/gel-foundations/breakpoints';
 import { getSansRegular } from '@bbc/psammead-styles/font-styles';
 import { C_WHITE, C_EBON } from '@bbc/psammead-styles/colours';
@@ -42,6 +43,11 @@ const StyledLink = styled.a`
     line-height: 2.5rem;
     height: 2.5rem;
     padding: 0 0.75rem;
+  }
+  @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
+    height: 2.25rem;
+    line-height: 2.25rem;
+    padding: 0 0.625rem;
   }
 `;
 
