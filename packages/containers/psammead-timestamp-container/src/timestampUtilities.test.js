@@ -180,7 +180,7 @@ describe('Moment configuration', () => {
   // the expect functionality fails, is done to fix the bug.
   it('reports all relative timestamps >= 1 day and < 1 month rounded down to nearest day in DST', () => {
     moment.now = jest.fn().mockImplementation(() => {
-      // June
+      // July
       return 1657637911000;
     });
     const one = moment().subtract(1, 'day');
