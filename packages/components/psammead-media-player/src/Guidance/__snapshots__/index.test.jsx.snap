@@ -35,6 +35,7 @@ exports[`Media Player: Guidance should render Guidance 1`] = `
   class="c0"
 >
   <strong
+    aria-hidden="true"
     class="c1"
   >
     Guidance: Contains strong language with adult humor

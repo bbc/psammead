@@ -401,6 +401,7 @@ exports[`Media Player: Canonical Entry renders a placeholder image with guidance
       class="c3"
     >
       <strong
+        aria-hidden="true"
         class="c4"
       >
         May contain strong language, sexual or violent content that may offend.

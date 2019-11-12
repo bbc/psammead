@@ -63,8 +63,10 @@ const PlayButton = ({
   onClick,
   guidanceMessage,
 }) => {
-  const hiddenText = `${guidanceMessage || ''} Play ${type}, "${title}", ${
-    datetime && duration && durationSpoken ? durationSpoken : ''
+  const hiddenText = `${guidanceMessage || ''} Play ${type}, ${
+    datetime && duration && durationSpoken
+      ? `"${title}", ${durationSpoken}`
+      : `"${title}"`
   } `;
 
   return (
