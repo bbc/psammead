@@ -84,6 +84,8 @@ We have added the role `list` and `listitem` to the `NavigationUl` and `Navigati
 
 We have also added visually hidden text to let the user know which item in the Navigation is the current page. Note the use of visually hidden text here is due to lack of support at this time for the aria-current page attribute. Also note the use of `role="text"` to stop splitting in VoiceOver.
 
+In the screen reader UX only the menu button and its content should be available to assistive technology. The exposed swipeable navigation should be hidden. To achieve this we add `aria-hidden:true` to the exposed swipeable navigation so that this is not expose to these users and also add `tabindex=-1` to the links contained within this to remove them from the tab order.
+
 ## Contributing
 
 Psammead is completely open source. We are grateful for any contributions, whether they be new components, bug fixes or general improvements. Please see our primary contributing guide which can be found at [the root of the Psammead respository](https://github.com/bbc/psammead/blob/latest/CONTRIBUTING.md).
