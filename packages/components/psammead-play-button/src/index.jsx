@@ -61,11 +61,12 @@ const PlayButton = ({
   service,
   title,
   onClick,
+  guidanceMessage,
 }) => {
-  const hiddenText =
-    datetime && duration && durationSpoken
-      ? `Play ${type}, "${title}", ${durationSpoken}`
-      : `Play ${type}, "${title}"`;
+  const hiddenText = `${guidanceMessage || ''} Play ${type}, "${title}", ${
+    datetime && duration && durationSpoken ? durationSpoken : ''
+  } `;
+
   return (
     <Button className={className} service={service} onClick={onClick}>
       <VisuallyHiddenText>{hiddenText}</VisuallyHiddenText>
@@ -95,6 +96,7 @@ PlayButton.propTypes = {
   service: string.isRequired,
   onClick: func.isRequired,
   className: string,
+  guidanceMessage: string,
 };
 
 PlayButton.defaultProps = {
@@ -103,6 +105,7 @@ PlayButton.defaultProps = {
   durationSpoken: null,
   type: 'video',
   className: null,
+  guidanceMessage: null,
 };
 
 export default PlayButton;
