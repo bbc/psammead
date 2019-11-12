@@ -161,8 +161,8 @@ export const NavigationLi = ({
         <StyledLink
           href={url}
           script={script}
-          currentLink="true"
           service={service}
+          currentLink
           {...props}
           {...tabIndex}
         >
