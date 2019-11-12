@@ -40,7 +40,9 @@ const StyledUnorderedList = styled.ul`
   margin: 0;
   position: relative;
 
-  ${({ isSwipeable }) => !isSwipeable && `overflow: hidden;`}
+  @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
+    overflow: hidden;
+  }
 `;
 
 const StyledListItem = styled.li`
@@ -272,6 +274,7 @@ function useWindowWidth() {
       setWidth(window.innerWidth);
     };
     window.addEventListener('resize', handleResize);
+
     return () => {
       window.removeEventListener('resize', handleResize);
     };
