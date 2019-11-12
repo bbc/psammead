@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import styled, { css } from 'styled-components';
 import { shape, string, node, bool, oneOf } from 'prop-types';
 import VisuallyHiddenText from '@bbc/psammead-visually-hidden-text';
@@ -228,45 +228,75 @@ const SwipeableNav = styled.div`
       display: none;
     }
 
-    &:before {
-      content: ' ';
-      height: 100%;
-      width: 3rem;
-      position: absolute;
-      ${({ dir }) => css`
-        ${dir === 'ltr' ? 'right' : 'left'}: 0;
+    ${({ overflowed }) =>
+      overflowed &&
+      css`
+        &:before {
+          content: ' ';
+          height: 100%;
+          width: 3rem;
+          position: absolute;
+          ${({ dir }) => css`
+            ${dir === 'ltr' ? 'right' : 'left'}: 0;
+          `}
+          bottom: 0;
+          z-index: 3;
+          overflow: hidden;
+          pointer-events: none; /* ignore clicks */
+          background: linear-gradient(
+            ${({ dir }) => (dir === 'ltr' ? 'to right' : 'to left')},
+            ${C_POSTBOX_TRANSPARENT} 0%,
+            ${C_POSTBOX_OPAQUE} 100%
+          );
+        }
       `}
-      bottom: 0;
-      z-index: 3;
-      overflow: hidden;
-      pointer-events: none; /* ignore clicks */
-      background: linear-gradient(
-        ${({ dir }) => (dir === 'ltr' ? 'to right' : 'to left')},
-        ${C_POSTBOX_TRANSPARENT} 0%,
-        ${C_POSTBOX_OPAQUE} 100%
-      );
-    }
   }
 `;
 
-const Navigation = ({ children, dir }) => {
+function useOverflowedNav(ref, width) {
+  const [isOverflowed, setIsOverflowed] = useState();
+
+  useEffect(() => {
+    const overflow = ref.current.scrollWidth > ref.current.offsetWidth;
+    setIsOverflowed(overflow);
+  }, [width]);
+
+  return isOverflowed;
+}
+
+function useWindowWidth() {
   const [width, setWidth] = useState(window.innerWidth);
 
   useEffect(() => {
-    const handleResize = () => setWidth(window.innerWidth);
+    const handleResize = () => {
+      setWidth(window.innerWidth);
+    };
     window.addEventListener('resize', handleResize);
     return () => {
       window.removeEventListener('resize', handleResize);
     };
-  }, []); // Empty array ensures that effect is only run on mount and unmount
+  });
 
+  return width;
+}
+
+const Navigation = ({ children, dir }) => {
+  const width = useWindowWidth();
   const isSwipeable = width < 600;
   const ariaHidden = isSwipeable && { 'aria-hidden': true };
+
+  const ref = useRef(null);
+  const isOverflowed = useOverflowedNav(ref, width);
 
   return (
     <StyledNav role="navigation" dir={dir}>
       <NavWrapper>
-        <SwipeableNav dir={dir} {...ariaHidden}>
+        <SwipeableNav
+          ref={ref}
+          dir={dir}
+          overflowed={isOverflowed}
+          {...ariaHidden}
+        >
           {React.Children.map(children, child =>
             React.cloneElement(child, { isSwipeable }),
           )}

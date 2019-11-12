@@ -191,19 +191,6 @@ exports[`Navigation should render correctly 1`] = `
   .c2::-webkit-scrollbar {
     display: none;
   }
-
-  .c2:before {
-    content: ' ';
-    height: 100%;
-    width: 3rem;
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    z-index: 3;
-    overflow: hidden;
-    pointer-events: none;
-    background: linear-gradient( to right,rgba(184,0,0,0) 0%,rgba(184,0,0,1) 100% );
-  }
 }
 
 <nav
