@@ -2,8 +2,14 @@ import React from 'react';
 import { shouldMatchSnapshot } from '@bbc/psammead-test-helpers';
 import { render } from '@testing-library/react';
 import { latin } from '@bbc/gel-foundations/scripts';
-import Navigation, { NavigationUl, NavigationLi } from './index';
+import Navigation, {
+  NavigationUl,
+  NavigationLi,
+  CanonicalDropdown,
+  DropdownNavigationLi,
+} from './index';
 import igboNavData from '../testHelpers/igbo';
+import pidginNavData from '../testHelpers/pidgin';
 
 describe('Navigation', () => {
   shouldMatchSnapshot(
@@ -30,6 +36,30 @@ describe('Navigation', () => {
         })}
       </NavigationUl>
     </Navigation>,
+  );
+});
+
+describe('Navigation', () => {
+  shouldMatchSnapshot(
+    'dropdown should render correctly',
+    <CanonicalDropdown>
+      {pidginNavData.map((item, index) => {
+        const active = index === 0;
+        const { title, url } = item;
+
+        return (
+          <DropdownNavigationLi
+            script={latin}
+            service="news"
+            url={url}
+            active={active}
+            currentPageText="Current page"
+          >
+            {title}
+          </DropdownNavigationLi>
+        );
+      })}
+    </CanonicalDropdown>,
   );
 });
 
