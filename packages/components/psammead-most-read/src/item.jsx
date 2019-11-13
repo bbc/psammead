@@ -1,5 +1,5 @@
-import React, { Fragment } from 'react';
-import { node, oneOf, shape, string } from 'prop-types';
+import React from 'react';
+import { node, shape, string } from 'prop-types';
 import styled from 'styled-components';
 import { getFoolscap, getDoublePica } from '@bbc/gel-foundations/typography';
 import { C_EBON, C_POSTBOX } from '@bbc/psammead-styles/colours';
