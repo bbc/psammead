@@ -40,7 +40,37 @@ The `@bbc/psammead-navigation` package is a set of two components, `NavigationUl
 | currentPageText | string | No | `null`  | `Current page` |
 | service | string | Yes | N/A | `'news'` |
 
-## Usage
+### CanonicalDropdown
+
+<!-- prettier-ignore -->
+| Argument | Type | Required | Default | Example |
+| -------- | ---- | -------- | ------- | ------- |
+| children | node | Yes      | N/A     | `<DropdownNavigationLi script={latin} service='news' key='sport' url='/sport' active={false}> Sport </DropdownNavigationLi>` |
+| announcedText      | string  | Yes       | N/A   | `'Menu'` |
+| closeAction      | function  | Yes       | N/A   |  |
+
+### DropdownNavigationLi
+
+<!-- prettier-ignore -->
+| Argument | Type    | Required | Default | Example  |
+| -------- | ------- | -------- | ------- | -------- |
+| children | string | Yes      | N/A     | `'Sport'` |
+| url      | string  | Yes      | N/A     | `/sport` |
+| script   | object  | Yes      | N/A     |  `{ canon: { groupA: { fontSize: '28', lineHeight: '32',}, groupB: { fontSize: '32', lineHeight: '36', }, groupD: { fontSize: '44', lineHeight: '48', }, }, trafalgar: { groupA: { fontSize: '20', lineHeight: '24', }, groupB: { fontSize: '24', lineHeight: '28', }, groupD: { fontSize: '32', lineHeight: '36', }, }, }` |
+| service | string | Yes | N/A | `'news'` |
+| active   | boolean | No       | `false` | `true`   |
+| currentPageText | string | No | `null`  | `Current page` |
+| dir      | string  | No       | `ltr`   | `rtl` |
+
+### CanonicalHamburgerMenu
+
+<!-- prettier-ignore -->
+| Argument | Type | Required | Default | Example |
+| -------- | ---- | -------- | ------- | ------- |
+| announcedText      | string  | Yes       | N/A   | `'Menu'` |
+| openAction      | function  | Yes       | N/A   |  |
+
+## Navigation Usage
 
 ```jsx
 import React from 'react';
@@ -69,6 +99,34 @@ import { latin } from '@bbc/gel-foundations/scripts';
     </NavigationLi>
   </NavigationUl>
 </Navigation>;
+```
+
+## Dropdown Navigation Usage
+
+```jsx
+import React from 'react';
+import {
+  CanonicalHamburgerMenu,
+  CanonicalDropdown,
+  DropdownNavigationLi,
+} from '@bbc/psammead-navigation';
+import { latin } from '@bbc/gel-foundations/scripts';
+
+<CanonicalDropdown announcedText="Menu" closeAction={() => {}}>
+    <DropdownNavigationLi
+        script={latin}
+        service="news"
+        key="Home"
+        url="/"
+        active={true}
+        currentPageText="Current page"
+    >
+      Home
+    </DropdownNavigationLi>
+    <DropdownNavigationLi script={latin} service="news" key="Sport" url="/sport">
+      Sport
+    </DropdownNavigationLi>
+</CanonicalDropdown>
 ```
 
 ### When to use this component
