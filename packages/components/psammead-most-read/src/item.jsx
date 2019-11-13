@@ -23,7 +23,6 @@ const StyledLink = styled.a`
   ${({ service }) => getSerifMedium(service)}
   color: ${C_EBON};
   text-decoration: none;
-  align: top;
   
   &:hover,
   &:focus {
