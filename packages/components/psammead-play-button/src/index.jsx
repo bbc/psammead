@@ -67,7 +67,7 @@ const PlayButton = ({
     datetime && duration && durationSpoken
       ? `"${title}", ${durationSpoken}`
       : `"${title}"`
-  } `;
+  } `.trim();
 
   return (
     <Button className={className} service={service} onClick={onClick}>
