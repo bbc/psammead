@@ -63,8 +63,9 @@ storiesOf('Components|Media Player', module)
     'Audio Skin',
     () => (
       <CanonicalMediaPlayer
-        src="https://www.bbc.com/ws/av-embeds/media/bbc_korean_radio/liveradio/ko"
+        src="https://www.test.bbc.com/ws/av-embeds/media/bbc_korean_radio/liveradio/ko"
         showPlaceholder={false}
+        placeholderSrc="https://news.files.bbci.co.uk/include/articles/public/images/amp_audio_placeholder.png"
         skin="audio"
         service="news"
         mediaInfo={{ type: 'audio', title: 'Live show intro.' }}
