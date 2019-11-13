@@ -1,6 +1,9 @@
 {
   "name": "@bbc/psammead-av-embed-error",
-  "version": "1.0.0",
+  "version": "1.0.0.alpha.1",
+  "publishConfig": {
+    "tag": "alpha"
+  },
   "main": "dist/index.js",
   "module": "esm/index.js",
   "sideEffects": false,
