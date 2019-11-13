@@ -43,7 +43,10 @@ storiesOf('Components|PlayButton/Video', module)
         duration={text('duration', '2:30')}
         durationSpoken={text('durationSpoken', '2 minutes 30 seconds')}
         datetime={text('datetime', 'PT2M30S')}
-        guidanceMessage="Guidance: May contain strong language that may offend."
+        guidanceMessage={text(
+          'guidanceMessage',
+          'Guidance: May contain strong language that may offend.',
+        )}
       />
     ),
     { notes },
