@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 2.0.1 | [PR#2615](https://github.com/bbc/psammead/pull/2615) Talos - Bump Dependencies - @bbc/psammead-assets, @bbc/psammead-image, @bbc/psammead-timestamp |
 | 2.0.0 | [PR#2607](https://github.com/bbc/psammead/pull/2607) Bump dependencies |
 | 1.9.2 | [PR#2586](https://github.com/bbc/psammead/pull/2586) Fix a hyperlink in the readme |
 | 1.9.1 | [PR#2561](https://github.com/bbc/psammead/pull/2561) Talos - Bump Dependencies - @bbc/psammead-calendars |
