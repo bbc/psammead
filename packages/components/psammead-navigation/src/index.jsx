@@ -19,6 +19,7 @@ import { getSansRegular } from '@bbc/psammead-styles/font-styles';
 import SwipeableNav from './SwipeableNavigation/index';
 import useWindowWidth from '../hooks/useWindowWidth';
 import useOverflowed from '../hooks/useOverflowed';
+import useMediaQuery from '../hooks/useMediaQuery';
 
 const TOP_BOTTOM_SPACING = '0.75rem'; // 12px
 const CURRENT_ITEM_HOVER_BORDER = '0.3125rem'; // 5px
@@ -215,11 +216,11 @@ const StyledNav = styled.nav`
 `;
 
 const Navigation = ({ children, dir }) => {
-  const width = useWindowWidth();
-  const isSwipeable = width < 600;
+  const isSwipeable = useMediaQuery('(max-width: 600px)');
   const ariaHidden = isSwipeable && { 'aria-hidden': true };
 
   const ref = useRef(null);
+  const width = useWindowWidth();
   const isOverflowed = useOverflowed(ref, width);
 
   return (
