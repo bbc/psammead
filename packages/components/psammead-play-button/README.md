@@ -21,7 +21,7 @@ The `PlayButton` component renders a button with a 'video' or 'audio' icon and o
 | datetime       | string    | No       | `null`    | `'PT2M30S'`              |
 | type           | string    | No       | `'video'` | `'audio'`                |
 | className      | string    | No       | `null`    | `'bar'`                  |
-| guidanceMessage| string    | No       | `null`    | `'Contains strong language'`|
+| guidanceMessage| string    | No       | `null`    | `'Contains strong language.'`|
 
 ### Supported `type`s
 
