@@ -1,8 +1,11 @@
+import React from 'react';
 import styled from 'styled-components';
-import { node } from 'prop-types';
+import { node, shape, string, arrayOf, integer } from 'prop-types';
+import { EasternArabic, WesternArabic } from '@bbc/psammead-locales/numerals';
+import { scriptPropType } from '@bbc/gel-foundations/prop-types';
 import { MostReadRank, MostReadItem } from './item';
 
-export const MostReadOl = styled.ol.attrs({
+const StyledOl = styled.ol.attrs({
   role: 'list',
 })`
   list-style-type: none;
@@ -10,17 +13,73 @@ export const MostReadOl = styled.ol.attrs({
   padding: 0;
 `;
 
-export const MostReadLi = styled.li.attrs({
+const StyledLi = styled.li.attrs({
   role: 'listitem',
 })`
   margin: 0;
   padding: 0;
+  display: flex;
+  align-items: center;
 `;
 
-MostReadOl.propTypes = {
+const serviceNumerals = {
+  news: WesternArabic,
+  arabic: EasternArabic,
+};
+
+const MostReadListItem = ({ service, script, item, rank, dir }) => (
+  <StyledLi>
+    <MostReadRank service={service} script={script} dir={dir}>
+      {rank}
+    </MostReadRank>
+    <MostReadItem service={service} item={item} dir={dir} />
+  </StyledLi>
+);
+
+const MostReadList = ({ items, service, script }) => {
+  const numerals = serviceNumerals[service];
+  return (
+    <StyledOl>
+      {items.map(({ item, dir }, i) => {
+        return (
+          <MostReadListItem
+            item={item}
+            service={service}
+            script={script}
+            rank={numerals[i + 1]}
+            dir={dir}
+          />
+        );
+      })}
+    </StyledOl>
+  );
+};
+
+StyledOl.propTypes = {
   children: node.isRequired,
 };
 
-MostReadLi.propTypes = {
+StyledLi.propTypes = {
   children: node.isRequired,
 };
+
+const itemPropTypes = shape({
+  title: string.isRequired,
+  href: string.isRequired,
+}).isRequired;
+
+MostReadListItem.propTypes = {
+  service: string.isRequired,
+  script: shape(scriptPropType).isRequired,
+  item: itemPropTypes.isRequired,
+  rank: integer.isRequired,
+  dir: string.isRequired,
+};
+
+MostReadList.propTypes = {
+  service: string.isRequired,
+  script: shape(scriptPropType).isRequired,
+  items: arrayOf(itemPropTypes).isRequired,
+};
+
+export default MostReadList;

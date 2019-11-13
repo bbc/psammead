@@ -4,7 +4,6 @@ import styled from 'styled-components';
 import { getFoolscap, getDoublePica } from '@bbc/gel-foundations/typography';
 import { C_EBON, C_POSTBOX } from '@bbc/psammead-styles/colours';
 import { scriptPropType } from '@bbc/gel-foundations/prop-types';
-import { GEL_SPACING } from '@bbc/gel-foundations/spacings';
 import {
   getSerifLight,
   getSerifMedium,
@@ -24,6 +23,7 @@ const StyledLink = styled.a`
   ${({ service }) => getSerifMedium(service)}
   color: ${C_EBON};
   text-decoration: none;
+  align: top;
   
   &:hover,
   &:focus {
