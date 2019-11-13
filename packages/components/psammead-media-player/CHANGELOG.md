@@ -3,7 +3,7 @@
 <!-- prettier-ignore -->
 | Version       | Description                                                                                                                  |
 | ------------- | ---------------------------------------------------------------------------------------------------------------------------- |
-| 2.3.0 | [PR#2610](https://github.com/bbc/psammead/pull/2610) Passed `guidanceMessage` prop to play button & Adds `aria-hidden=true` to media player placeholder guidance |
+| 2.3.0 | [PR#2610](https://github.com/bbc/psammead/pull/2610) Add guidance message for assistive technology in Play Button and hide it in Guidance |
 | 2.2.4 | [PR#2615](https://github.com/bbc/psammead/pull/2615) Talos - Bump Dependencies - @bbc/psammead-assets, @bbc/psammead-image |
 | 2.2.3 | [PR#2578](https://github.com/bbc/psammead/pull/2578) Fix HCM for guidance background colour on windows |
 | 2.2.2 | [PR#2493](https://github.com/bbc/psammead/pull/2493) Show media player placeholder while loading on canonical |
