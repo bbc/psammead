@@ -60,7 +60,7 @@ exports[`PlayButton should render audio correctly without duration details 1`] =
   <span
     class="c1"
   >
-     Play audio, "Dog barks at cat." 
+    Play audio, "Dog barks at cat."
   </span>
   <div
     aria-hidden="true"
@@ -150,7 +150,7 @@ exports[`PlayButton should render audio indicator correctly 1`] = `
   <span
     class="c1"
   >
-     Play audio, "Dog barks at cat.", 2 minutes 30 seconds 
+    Play audio, "Dog barks at cat.", 2 minutes 30 seconds
   </span>
   <div
     aria-hidden="true"
@@ -241,7 +241,7 @@ exports[`PlayButton should render video by default 1`] = `
   <span
     class="c1"
   >
-     Play video, "Dog chases cat." 
+    Play video, "Dog chases cat."
   </span>
   <div
     aria-hidden="true"
@@ -328,7 +328,7 @@ exports[`PlayButton should render video correctly with duration and guidance mes
   <span
     class="c1"
   >
-    Guidance: May contain strong language that may offend. Play video, "Dog chases cat.", 2 minutes 30 seconds 
+    Guidance: May contain strong language that may offend. Play video, "Dog chases cat.", 2 minutes 30 seconds
   </span>
   <div
     aria-hidden="true"
@@ -416,7 +416,7 @@ exports[`PlayButton should render video correctly without duration details 1`] =
   <span
     class="c1"
   >
-     Play video, "Dog chases cat." 
+    Play video, "Dog chases cat."
   </span>
   <div
     aria-hidden="true"
@@ -503,7 +503,7 @@ exports[`PlayButton should render video indicator correctly 1`] = `
   <span
     class="c1"
   >
-     Play video, "Dog chases cat.", 2 minutes 30 seconds 
+    Play video, "Dog chases cat.", 2 minutes 30 seconds
   </span>
   <div
     aria-hidden="true"
