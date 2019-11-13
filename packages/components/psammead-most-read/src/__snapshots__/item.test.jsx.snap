@@ -9,7 +9,6 @@ exports[`Most read count should render ltr correctly 1`] = `
   font-style: normal;
   color: #B80000;
   margin: 0;
-  padding-bottom: 0.5rem;
   display: inline-block;
   min-width: 3rem;
 }
@@ -44,7 +43,6 @@ exports[`Most read count should render ltr double digit correctly 1`] = `
   font-style: normal;
   color: #B80000;
   margin: 0;
-  padding-bottom: 0.5rem;
   display: inline-block;
   min-width: 3rem;
 }
@@ -79,7 +77,6 @@ exports[`Most read count should render rtl correctly 1`] = `
   font-style: normal;
   color: #B80000;
   margin: 0;
-  padding-bottom: 0.5rem;
   display: inline-block;
   min-width: 3rem;
 }
@@ -125,7 +122,7 @@ exports[`Most read item should render last updated date correctly 1`] = `
   color: #222222;
   -webkit-text-decoration: none;
   text-decoration: none;
-  padding-bottom: 0.5rem;
+  align: top;
 }
 
 .c0:hover,
@@ -188,7 +185,7 @@ exports[`Most read item should render ltr correctly 1`] = `
   color: #222222;
   -webkit-text-decoration: none;
   text-decoration: none;
-  padding-bottom: 0.5rem;
+  align: top;
 }
 
 .c0:hover,
@@ -229,7 +226,7 @@ exports[`Most read item should render rtl correctly 1`] = `
   color: #222222;
   -webkit-text-decoration: none;
   text-decoration: none;
-  padding-bottom: 0.5rem;
+  align: top;
 }
 
 .c0:hover,
