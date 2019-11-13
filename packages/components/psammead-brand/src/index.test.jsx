@@ -4,7 +4,7 @@ import { render } from '@testing-library/react';
 import { C_POSTBOX, C_WHITE } from '@bbc/psammead-styles/colours';
 import ScriptLink from '@bbc/psammead-script-link';
 import { latin } from '@bbc/gel-foundations/scripts';
-import Brand from '.';
+import Brand, { SkipLink } from '.';
 
 const svg = {
   group: (
@@ -134,7 +134,7 @@ describe('Brand', () => {
         'header',
       );
     });
-    it('should render script link', () => {
+    it('should render script, frontpage and skip to content links', () => {
       const scriptLinkComponent = (
         <ScriptLink
           script={latin}
@@ -144,6 +144,13 @@ describe('Brand', () => {
           Lat
         </ScriptLink>
       );
+
+      const skipLink = (
+        <SkipLink service="news" script={latin} href="#content">
+          Skip to content
+        </SkipLink>
+      );
+
       const { container } = render(
         <Brand
           product="Default Brand Name"
@@ -154,15 +161,26 @@ describe('Brand', () => {
           url="https://www.bbc.co.uk/news"
           backgroundColour={C_POSTBOX}
           logoColour={C_WHITE}
+          skipLink={skipLink}
           data-brand="header"
           scriptLink={scriptLinkComponent}
         />,
       );
 
       const links = container.querySelectorAll('a');
-      expect(links).toHaveLength(2);
+      expect(links).toHaveLength(3);
 
-      const scriptLink = links[1];
+      const frontpageLink = links[0];
+      expect(frontpageLink.getAttribute('href')).toEqual(
+        'https://www.bbc.co.uk/news',
+      );
+      expect(frontpageLink.textContent).toEqual('Default Brand Name');
+
+      const skipToContentLink = links[1];
+      expect(skipToContentLink.getAttribute('href')).toEqual('#content');
+      expect(skipToContentLink.textContent).toEqual('Skip to content');
+
+      const scriptLink = links[2];
       expect(scriptLink.getAttribute('href')).toEqual(
         'https://www.bbc.com/serbian/lat',
       );
