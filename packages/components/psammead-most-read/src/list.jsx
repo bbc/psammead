@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { node, shape, string, arrayOf, integer } from 'prop-types';
+import { node, shape, string, arrayOf } from 'prop-types';
 import { EasternArabic, WesternArabic } from '@bbc/psammead-locales/numerals';
 import { scriptPropType } from '@bbc/gel-foundations/prop-types';
 import { MostReadRank, MostReadItem } from './item';
@@ -69,7 +69,7 @@ MostReadListItem.propTypes = {
   service: string.isRequired,
   script: shape(scriptPropType).isRequired,
   item: itemPropTypes.isRequired,
-  rank: integer.isRequired,
+  rank: string.isRequired,
 };
 
 MostReadList.propTypes = {

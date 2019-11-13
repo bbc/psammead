@@ -87,6 +87,10 @@ const itemsRTL = [
     title: "ایران از لغو 'رزمایش قطع اینترنت' خبر داد",
     href: 'https://www.bbc.com/vietnamese/institutional-49283563',
   },
+  {
+    title: "ایران از لغو 'رزمایش قطع اینترنت' خبر داد",
+    href: 'https://www.bbc.com/vietnamese/institutional-49283563',
+  },
 ];
 
 const stories = storiesOf(STORY_KIND, module)
