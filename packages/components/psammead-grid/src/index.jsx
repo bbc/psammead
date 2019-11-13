@@ -89,6 +89,7 @@ const gridMediaQueries = ({
   gridStartOffset,
   enableGelGutters,
   enableGelMargins,
+  enableNegativeGelMargins,
 }) => {
   const selectedGroups = Object.keys(columns);
 
@@ -103,6 +104,11 @@ const gridMediaQueries = ({
       grid-column-end: span ${columns[group]};
       ${enableGelGutters ? `grid-column-gap: ${groups[group].gutterSize};` : ``}
       ${enableGelMargins ? `padding: 0 ${groups[group].marginSize};` : ``}
+      ${
+        enableNegativeGelMargins
+          ? `margin: 0 -${groups[group].marginSize};`
+          : ``
+      }
       ${
         gridStartOffset && gridStartOffset[group]
           ? `grid-column-start: ${gridStartOffset[group]};`
@@ -330,6 +336,7 @@ Grid.propTypes = {
   }).isRequired,
   enableGelGutters: bool,
   enableGelMargins: bool,
+  enableNegativeGelMargins: bool,
   startOffset: shape({
     group1: number,
     group2: number,
@@ -344,6 +351,7 @@ Grid.defaultProps = {
   dir: 'ltr',
   enableGelGutters: false,
   enableGelMargins: false,
+  enableNegativeGelMargins: false,
   startOffset: {},
   item: false,
 };
