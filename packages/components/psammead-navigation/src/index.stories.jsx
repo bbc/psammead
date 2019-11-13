@@ -13,13 +13,12 @@ import * as svgs from '@bbc/psammead-assets/svgs';
 import { C_POSTBOX, C_WHITE } from '@bbc/psammead-styles/colours';
 import Brand from '@bbc/psammead-brand';
 import { withServicesKnob } from '@bbc/psammead-storybook-helpers';
-import Navigation, {
-  NavigationUl,
-  NavigationLi,
+import Navigation, { NavigationUl, NavigationLi } from './index';
+import {
   CanonicalHamburgerMenu,
   CanonicalDropdown,
   DropdownNavigationLi,
-} from './index';
+} from './Dropdown';
 import igboNavData from '../testHelpers/igbo';
 import pidginNavData from '../testHelpers/pidgin';
 import yorubaNavData from '../testHelpers/yoruba';
@@ -178,6 +177,7 @@ const dropdownStory = () => ({ dir, script, service }) => (
         <DropdownNavigationLi
           script={script}
           service={service}
+          key={title}
           dir={dir}
           url={url}
           active={active}
