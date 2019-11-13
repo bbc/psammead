@@ -198,7 +198,7 @@ describe('Moment configuration', () => {
     expect(allButAMonth.fromNow()).toEqual('29 days ago');
   });
 
-  it('reports all relative timestamps >= 1 day and < 1 month rounded down to nearest day fails out of DST', () => {
+  it('reports all relative timestamps >= 1 day and < 1 month rounded down to nearest day out of DST', () => {
     moment.now = jest.fn().mockImplementation(() => {
       // Nov
       return 1668265111000;
@@ -213,9 +213,9 @@ describe('Moment configuration', () => {
 
     const allButAMonth = moment()
       .subtract(30, 'days')
-      .add(1, 'second');
+      .add(1, 'day');
     // default moment configuration would return 'a month ago'
-    expect(allButAMonth.fromNow()).toEqual('a month ago');
+    expect(allButAMonth.fromNow()).toEqual('29 days ago');
   });
 
   it('reports all relative timestamps >= 1 month and < 1 year rounded down to nearest month', () => {
