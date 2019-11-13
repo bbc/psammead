@@ -76,6 +76,8 @@ import { latin } from '@bbc/gel-foundations/scripts';
 
 The `Navigation` is designed to show a navigation bar on `index` pages, which will show all sections on a site. If there are too many items to fit on one line, the items will wrap to the next lines.
 
+On the other hand, under 600px, the list remains on one line, which is horizontally swipeable to allow access to further links.
+
 ### Accessibility notes
 
 The Navigation has a [`navigation` landmark](https://www.w3.org/TR/wai-aria-practices/examples/landmarks/navigation.html) to provide a way to identify links that are intended to be used for navigation.
