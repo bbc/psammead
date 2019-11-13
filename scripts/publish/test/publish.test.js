@@ -51,7 +51,9 @@ describe(`Publish Script - publish`, () => {
 
     publish('/foo/bar', packageJson, attempted);
 
-    expect(shelljs.exec).toHaveBeenCalledWith(
+    expect(
+      shelljs.exec,
+    ).toHaveBeenCalledWith(
       'npm publish /foo/bar --access public --tag latest',
       { silent: true },
     );
@@ -90,7 +92,9 @@ describe(`Publish Script - publish`, () => {
 
     publish('/foo/bar', packageJson, attempted);
 
-    expect(shelljs.exec).toHaveBeenCalledWith(
+    expect(
+      shelljs.exec,
+    ).toHaveBeenCalledWith(
       'npm publish /foo/bar --access public --tag latest',
       { silent: true },
     );
