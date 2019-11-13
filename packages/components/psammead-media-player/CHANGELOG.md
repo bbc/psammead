@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version       | Description                                                                                                                  |
 | ------------- | ---------------------------------------------------------------------------------------------------------------------------- |
+| 2.2.5 | [PR#2620](https://github.com/bbc/psammead/pull/2620) Talos - Bump Dependencies - @bbc/psammead-play-button |
 | 2.2.4 | [PR#2615](https://github.com/bbc/psammead/pull/2615) Talos - Bump Dependencies - @bbc/psammead-assets, @bbc/psammead-image |
 | 2.2.3 | [PR#2578](https://github.com/bbc/psammead/pull/2578) Fix HCM for guidance background colour on windows |
 | 2.2.2 | [PR#2493](https://github.com/bbc/psammead/pull/2493) Show media player placeholder while loading on canonical |
