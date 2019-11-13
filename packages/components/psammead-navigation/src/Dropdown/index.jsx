@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { shape, string, node, bool, oneOf } from 'prop-types';
+import { shape, string, node, bool, func, oneOf } from 'prop-types';
 import VisuallyHiddenText from '@bbc/psammead-visually-hidden-text';
 import { navigationIcons } from '@bbc/psammead-assets/svgs';
 import {
@@ -66,6 +66,7 @@ const StyledDropdownLink = styled.a`
   ${({ script }) => script && getPica(script)};
   ${({ service }) => service && getSansRegular(service)}
   color: ${C_WHITE};
+  text-decoration: none;
 
   &:hover,
   &:focus {
@@ -83,15 +84,6 @@ const StyledCurrentLink = styled.span`
         padding-right: ${GEL_SPACING};`}
 `;
 
-const CurrentDropdownLink = ({ children, currentPageText, dir }) => (
-  <>
-    <StyledCurrentLink dir={dir}>
-      <VisuallyHiddenText>{currentPageText}, </VisuallyHiddenText>
-      {children}
-    </StyledCurrentLink>
-  </>
-);
-
 export const DropdownNavigationLi = ({
   children,
   script,
@@ -103,69 +95,47 @@ export const DropdownNavigationLi = ({
 }) => (
   <DropdownLi role="listitem">
     {active && currentPageText ? (
-      <StyledDropdownLink script={script} service={service} url={url}>
-        <CurrentDropdownLink currentPageText={currentPageText} dir={dir}>
+      <StyledDropdownLink script={script} service={service} href={url}>
+        <StyledCurrentLink dir={dir}>
+          <VisuallyHiddenText>{currentPageText}</VisuallyHiddenText>
           {children}
-        </CurrentDropdownLink>
+        </StyledCurrentLink>
       </StyledDropdownLink>
     ) : (
-      <StyledDropdownLink script={script} service={service} url={url}>
+      <StyledDropdownLink script={script} service={service} href={url}>
         {children}
       </StyledDropdownLink>
     )}
   </DropdownLi>
 );
 
-export const AmpDropdown = ({ closeAction, children }) => (
+export const AmpDropdown = ({ announcedText, closeAction, children }) => (
   <DropdownWrapper>
-    <CrossButton on={closeAction}>{navigationIcons.cross}</CrossButton>
-    <DropdownUl>{children}</DropdownUl>
+    <CrossButton
+      aria-label={announcedText}
+      on={closeAction}
+      // eslint-disable-next-line react/jsx-boolean-value
+      aria-expanded={true}
+    >
+      {navigationIcons.cross}
+    </CrossButton>
+    <DropdownUl role="list">{children}</DropdownUl>
   </DropdownWrapper>
 );
 
-export const CanonicalDropdown = ({ onClose, children }) => (
+export const CanonicalDropdown = ({ announcedText, closeAction, children }) => (
   <DropdownWrapper>
-    <CrossButton onClick={onClose}>{navigationIcons.cross}</CrossButton>
-    <DropdownUl>{children}</DropdownUl>
+    <CrossButton
+      aria-label={announcedText}
+      onClick={closeAction}
+      // eslint-disable-next-line react/jsx-boolean-value
+      aria-expanded={true}
+    >
+      {navigationIcons.cross}
+    </CrossButton>
+    <DropdownUl role="list">{children}</DropdownUl>
   </DropdownWrapper>
 );
-
-DropdownNavigationLi.propTypes = {
-  children: node.isRequired,
-  url: string.isRequired,
-  script: shape(scriptPropType).isRequired,
-  active: bool,
-  currentPageText: string,
-  service: string.isRequired,
-  dir: oneOf(['ltr', 'rtl']),
-};
-
-DropdownNavigationLi.defaultProps = {
-  active: false,
-  currentPageText: null,
-  dir: 'ltr',
-};
-
-CurrentDropdownLink.propTypes = {
-  children: string.isRequired,
-  currentPageText: string,
-  dir: oneOf(['ltr', 'rtl']),
-};
-
-CurrentDropdownLink.defaultProps = {
-  currentPageText: null,
-  dir: 'ltr',
-};
-
-AmpDropdown.propTypes = {
-  children: string.isRequired,
-  closeAction: node.isRequired,
-};
-
-CanonicalDropdown.propTypes = {
-  children: string.isRequired,
-  onClose: node.isRequired,
-};
 
 const HamburgerButton = styled.button`
   width: 2.75rem;
@@ -186,22 +156,60 @@ const HamburgerButton = styled.button`
   }
 `;
 
-export const AmpHamburgerMenu = (announcedText, action, isMenuOpen) => (
+export const AmpHamburgerMenu = ({ announcedText, openAction }) => (
   <HamburgerButton
     aria-label={announcedText}
-    on={action}
-    aria-expanded={isMenuOpen}
+    on={openAction}
+    aria-expanded={false}
   >
     {navigationIcons.hamburger}
   </HamburgerButton>
 );
 
-export const CanonicalHamburgerMenu = (announcedText, onClick, isMenuOpen) => (
+export const CanonicalHamburgerMenu = ({ announcedText, openAction }) => (
   <HamburgerButton
     aria-label={announcedText}
-    onClick={onClick}
-    aria-expanded={isMenuOpen}
+    onClick={openAction}
+    aria-expanded={false}
   >
     {navigationIcons.hamburger}
   </HamburgerButton>
 );
+
+DropdownNavigationLi.propTypes = {
+  children: node.isRequired,
+  url: string.isRequired,
+  script: shape(scriptPropType).isRequired,
+  service: string.isRequired,
+  active: bool,
+  currentPageText: string,
+  dir: oneOf(['ltr', 'rtl']),
+};
+
+DropdownNavigationLi.defaultProps = {
+  active: false,
+  currentPageText: null,
+  dir: 'ltr',
+};
+
+AmpDropdown.propTypes = {
+  announcedText: string.isRequired,
+  children: node.isRequired,
+  closeAction: func.isRequired,
+};
+
+CanonicalDropdown.propTypes = {
+  announcedText: string.isRequired,
+  children: node.isRequired,
+  closeAction: func.isRequired,
+};
+
+AmpHamburgerMenu.propTypes = {
+  announcedText: string.isRequired,
+  openAction: func.isRequired,
+};
+
+CanonicalHamburgerMenu.propTypes = {
+  announcedText: string.isRequired,
+  openAction: func.isRequired,
+};
