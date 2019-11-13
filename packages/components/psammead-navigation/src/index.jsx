@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useRef } from 'react';
 import styled, { css } from 'styled-components';
 import { shape, string, node, bool, oneOf } from 'prop-types';
 import VisuallyHiddenText from '@bbc/psammead-visually-hidden-text';
@@ -10,23 +10,21 @@ import {
 } from '@bbc/gel-foundations/spacings';
 import {
   GEL_GROUP_1_SCREEN_WIDTH_MAX,
-  GEL_GROUP_2_SCREEN_WIDTH_MAX,
   GEL_GROUP_3_SCREEN_WIDTH_MIN,
   GEL_GROUP_5_SCREEN_WIDTH_MIN,
 } from '@bbc/gel-foundations/breakpoints';
 import { getPica } from '@bbc/gel-foundations/typography';
 import { scriptPropType } from '@bbc/gel-foundations/prop-types';
 import { getSansRegular } from '@bbc/psammead-styles/font-styles';
+import SwipeableNav from './SwipeableNavigation/index';
+import useWindowWidth from '../hooks/useWindowWidthHook';
+import useOverflowed from '../hooks/useOverflowedHook';
 
 const TOP_BOTTOM_SPACING = '0.75rem'; // 12px
 const CURRENT_ITEM_HOVER_BORDER = '0.3125rem'; // 5px
 
 /* White with 30% transparency over #B80000 */
 const BORDER_COLOR = '#eab3b3';
-
-/* Convert C_POSTBOX to rgba as IE doesn't like 8 digit hex */
-const C_POSTBOX_TRANSPARENT = `rgba(184, 0, 0, 0)`;
-const C_POSTBOX_OPAQUE = `rgba(184, 0, 0, 1)`;
 
 const NavWrapper = styled.div`
   position: relative;
@@ -216,80 +214,13 @@ const StyledNav = styled.nav`
   }
 `;
 
-const SwipeableNav = styled.div`
-  @media (max-width: ${GEL_GROUP_2_SCREEN_WIDTH_MAX}) {
-    white-space: nowrap;
-    overflow-x: scroll;
-    scroll-behavior: smooth;
-    -webkit-overflow-scrolling: touch;
-
-    /* Hide scrollbar */
-    scrollbar-width: none;
-    -ms-overflow-style: none;
-    &::-webkit-scrollbar {
-      display: none;
-    }
-
-    ${({ overflowed }) =>
-      overflowed &&
-      css`
-        &:before {
-          content: ' ';
-          height: 100%;
-          width: 3rem;
-          position: absolute;
-          ${({ dir }) => css`
-            ${dir === 'ltr' ? 'right' : 'left'}: 0;
-          `}
-          bottom: 0;
-          z-index: 3;
-          overflow: hidden;
-          pointer-events: none; /* ignore clicks */
-          background: linear-gradient(
-            ${({ dir }) => (dir === 'ltr' ? 'to right' : 'to left')},
-            ${C_POSTBOX_TRANSPARENT} 0%,
-            ${C_POSTBOX_OPAQUE} 100%
-          );
-        }
-      `}
-  }
-`;
-
-function useOverflowedNav(ref, width) {
-  const [isOverflowed, setIsOverflowed] = useState();
-
-  useEffect(() => {
-    const overflow = ref.current.scrollWidth > ref.current.offsetWidth;
-    setIsOverflowed(overflow);
-  }, [width]);
-
-  return isOverflowed;
-}
-
-function useWindowWidth() {
-  const [width, setWidth] = useState(window.innerWidth);
-
-  useEffect(() => {
-    const handleResize = () => {
-      setWidth(window.innerWidth);
-    };
-    window.addEventListener('resize', handleResize);
-
-    return () => {
-      window.removeEventListener('resize', handleResize);
-    };
-  });
-
-  return width;
-}
-
 const Navigation = ({ children, dir }) => {
   const width = useWindowWidth();
   const isSwipeable = width < 600;
   const ariaHidden = isSwipeable && { 'aria-hidden': true };
 
   const ref = useRef(null);
-  const isOverflowed = useOverflowedNav(ref, width);
+  const isOverflowed = useOverflowed(ref, width);
 
   return (
     <StyledNav role="navigation" dir={dir}>
