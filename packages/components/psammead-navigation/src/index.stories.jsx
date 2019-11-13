@@ -162,15 +162,15 @@ const navigationStory = (
 const hamburgerStory = () => {
   return (
     <BackgroundContainer>
-      <CanonicalHamburgerMenu />
+      <CanonicalHamburgerMenu announcedText="Menu" openAction={() => {}} />
     </BackgroundContainer>
   );
 };
 
 const dropdownStory = () => ({ dir, script, service }) => (
-  <CanonicalDropdown>
+  <CanonicalDropdown announcedText="Menu" closeAction={() => {}}>
     {pidginNavData.map((item, index) => {
-      const active = index === 0;
+      const active = index === 3;
       const { title, url } = item;
 
       return (
