@@ -24,7 +24,6 @@ exports[`Navigation should render correctly 1`] = `
   padding: 0;
   margin: 0;
   position: relative;
-  overflow: hidden;
 }
 
 .c5 {
@@ -121,6 +120,33 @@ exports[`Navigation should render correctly 1`] = `
   left: 0;
 }
 
+@media (max-width:37.4375rem) {
+  .c2 {
+    white-space: nowrap;
+    overflow-x: scroll;
+    -webkit-scroll-behavior: smooth;
+    -moz-scroll-behavior: smooth;
+    -ms-scroll-behavior: smooth;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    -webkit-scrollbar-width: none;
+    -moz-scrollbar-width: none;
+    -ms-scrollbar-width: none;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+
+  .c2::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .c3 {
+    overflow: hidden;
+  }
+}
+
 @media (min-width:37.5rem) {
   .c5::after {
     content: '';
@@ -169,27 +195,6 @@ exports[`Navigation should render correctly 1`] = `
 @media (max-width:24.9375rem) {
   .c9 {
     padding: 0.75rem 0.5rem;
-  }
-}
-
-@media (max-width:37.4375rem) {
-  .c2 {
-    white-space: nowrap;
-    overflow-x: scroll;
-    -webkit-scroll-behavior: smooth;
-    -moz-scroll-behavior: smooth;
-    -ms-scroll-behavior: smooth;
-    scroll-behavior: smooth;
-    -webkit-overflow-scrolling: touch;
-    -webkit-scrollbar-width: none;
-    -moz-scrollbar-width: none;
-    -ms-scrollbar-width: none;
-    scrollbar-width: none;
-    -ms-overflow-style: none;
-  }
-
-  .c2::-webkit-scrollbar {
-    display: none;
   }
 }
 

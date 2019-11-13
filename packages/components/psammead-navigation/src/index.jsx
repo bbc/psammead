@@ -17,8 +17,8 @@ import { getPica } from '@bbc/gel-foundations/typography';
 import { scriptPropType } from '@bbc/gel-foundations/prop-types';
 import { getSansRegular } from '@bbc/psammead-styles/font-styles';
 import SwipeableNav from './SwipeableNavigation/index';
-import useWindowWidth from '../hooks/useWindowWidthHook';
-import useOverflowed from '../hooks/useOverflowedHook';
+import useWindowWidth from '../hooks/useWindowWidth';
+import useOverflowed from '../hooks/useOverflowed';
 
 const TOP_BOTTOM_SPACING = '0.75rem'; // 12px
 const CURRENT_ITEM_HOVER_BORDER = '0.3125rem'; // 5px
