@@ -27,12 +27,12 @@ const serviceNumerals = {
   arabic: EasternArabic,
 };
 
-const MostReadListItem = ({ service, script, item, rank, dir }) => (
+const MostReadListItem = ({ service, script, item, rank }) => (
   <StyledLi>
-    <MostReadRank service={service} script={script} dir={dir}>
+    <MostReadRank service={service} script={script}>
       {rank}
     </MostReadRank>
-    <MostReadItem service={service} item={item} dir={dir} />
+    <MostReadItem service={service} item={item} />
   </StyledLi>
 );
 
@@ -40,17 +40,14 @@ const MostReadList = ({ items, service, script }) => {
   const numerals = serviceNumerals[service];
   return (
     <StyledOl>
-      {items.map(({ item, dir }, i) => {
-        return (
-          <MostReadListItem
-            item={item}
-            service={service}
-            script={script}
-            rank={numerals[i + 1]}
-            dir={dir}
-          />
-        );
-      })}
+      {items.map((item, i) => (
+        <MostReadListItem
+          item={item}
+          service={service}
+          script={script}
+          rank={numerals[i + 1]}
+        />
+      ))}
     </StyledOl>
   );
 };
@@ -66,14 +63,13 @@ StyledLi.propTypes = {
 const itemPropTypes = shape({
   title: string.isRequired,
   href: string.isRequired,
-}).isRequired;
+});
 
 MostReadListItem.propTypes = {
   service: string.isRequired,
   script: shape(scriptPropType).isRequired,
   item: itemPropTypes.isRequired,
   rank: integer.isRequired,
-  dir: string.isRequired,
 };
 
 MostReadList.propTypes = {

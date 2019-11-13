@@ -32,18 +32,17 @@ const StyledLink = styled.a`
 `;
 
 export const MostReadItem = ({
-  dir,
   lastUpdated,
   script,
   service,
   item: { title, href },
 }) => (
-  <Fragment dir={dir}>
+  <>
     <StyledLink href={href} script={script} service={service}>
       {title}
     </StyledLink>
     {lastUpdated}
-  </Fragment>
+  </>
 );
 
 MostReadRank.propTypes = {
@@ -52,7 +51,6 @@ MostReadRank.propTypes = {
 };
 
 MostReadItem.propTypes = {
-  dir: string,
   service: string.isRequired,
   script: shape(scriptPropType).isRequired,
   lastUpdated: node,
@@ -63,6 +61,5 @@ MostReadItem.propTypes = {
 };
 
 MostReadItem.defaultProps = {
-  dir: oneOf(['rtl', 'ltr']),
   lastUpdated: null,
 };

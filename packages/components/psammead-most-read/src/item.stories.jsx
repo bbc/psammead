@@ -7,18 +7,14 @@ import { MostReadItem, MostReadRank } from './item';
 
 const items = [
   {
-    item: {
-      title: 'John Lewis staff bonus cut again as profits fall',
-      href: 'https://www.bbc.com/vietnamese/institutional-49283563',
-    },
-    dir: 'ltr',
+    language: 'news',
+    title: 'John Lewis staff bonus cut again as profits fall',
+    href: 'https://www.bbc.com/vietnamese/institutional-49283563',
   },
   {
-    item: {
-      title: "ایران از لغو 'رزمایش قطع اینترنت' خبر داد",
-      href: 'https://www.bbc.com/vietnamese/institutional-49283563',
-    },
-    dir: 'rtl',
+    language: 'arabic',
+    title: "ایران از لغو 'رزمایش قطع اینترنت' خبر داد",
+    href: 'https://www.bbc.com/vietnamese/institutional-49283563',
   },
 ];
 
@@ -37,9 +33,9 @@ const stories = storiesOf('Components|MostRead/Item', module)
   .addDecorator(withKnobs)
   .addDecorator(withServicesKnob());
 
-items.forEach(({ item, dir }) => {
-  stories.add(`MostReadItem ${dir}`, ({ script, service }) => (
-    <MostReadItem dir={dir} item={item} service={service} script={script} />
+items.forEach(({ language, ...rest }) => {
+  stories.add(`MostReadItem ${language}`, ({ script, service }) => (
+    <MostReadItem item={rest} service={service} script={script} />
   ));
 });
 
@@ -50,7 +46,6 @@ const item = {
 
 stories.add(`MostReadItem with last updated date`, ({ script, service }) => (
   <MostReadItem
-    dir="ltr"
     item={item}
     service={service}
     script={script}
@@ -60,17 +55,17 @@ stories.add(`MostReadItem with last updated date`, ({ script, service }) => (
 
 stories
   .add(`MostReadRank LTR`, ({ script, service }) => (
-    <MostReadRank dir="ltr" service={service} script={script}>
+    <MostReadRank service={service} script={script}>
       5
     </MostReadRank>
   ))
   .add(`MostReadRank LTR double digits`, ({ script, service }) => (
-    <MostReadRank dir="ltr" service={service} script={script}>
+    <MostReadRank service={service} script={script}>
       10
     </MostReadRank>
   ))
   .add(`MostReadRank RTL`, ({ script, service }) => (
-    <MostReadRank dir="rtl" service={service} script={script}>
+    <MostReadRank service={service} script={script}>
       ۲
     </MostReadRank>
   ));

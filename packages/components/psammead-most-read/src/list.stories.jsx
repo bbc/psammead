@@ -9,147 +9,83 @@ import MostReadList from './list';
 const STORY_KIND = 'Components|MostRead/List';
 const itemsLTR = [
   {
-    item: {
-      title: 'John Lewis staff bonus cut again as profits fall',
-      href: 'https://www.bbc.com/vietnamese/institutional-49283563',
-    },
-    dir: 'ltr',
+    title: 'John Lewis staff bonus cut again as profits fall',
+    href: 'https://www.bbc.com/vietnamese/institutional-49283563',
   },
   {
-    item: {
-      title: 'John Lewis staff bonus cut again as profits fall',
-      href: 'https://www.bbc.com/vietnamese/institutional-49283563',
-    },
-    dir: 'ltr',
+    title: 'John Lewis staff bonus cut again as profits fall',
+    href: 'https://www.bbc.com/vietnamese/institutional-49283563',
   },
   {
-    item: {
-      title: 'John Lewis staff bonus cut again as profits fall',
-      href: 'https://www.bbc.com/vietnamese/institutional-49283563',
-    },
-    dir: 'ltr',
+    title: 'John Lewis staff bonus cut again as profits fall',
+    href: 'https://www.bbc.com/vietnamese/institutional-49283563',
   },
   {
-    item: {
-      title: 'John Lewis staff bonus cut again as profits fall',
-      href: 'https://www.bbc.com/vietnamese/institutional-49283563',
-    },
-    dir: 'ltr',
+    title: 'John Lewis staff bonus cut again as profits fall',
+    href: 'https://www.bbc.com/vietnamese/institutional-49283563',
   },
   {
-    item: {
-      title: 'John Lewis staff bonus cut again as profits fall',
-      href: 'https://www.bbc.com/vietnamese/institutional-49283563',
-    },
-    dir: 'ltr',
+    title: 'John Lewis staff bonus cut again as profits fall',
+    href: 'https://www.bbc.com/vietnamese/institutional-49283563',
   },
   {
-    item: {
-      title: 'John Lewis staff bonus cut again as profits fall',
-      href: 'https://www.bbc.com/vietnamese/institutional-49283563',
-    },
-    dir: 'ltr',
+    title: 'John Lewis staff bonus cut again as profits fall',
+    href: 'https://www.bbc.com/vietnamese/institutional-49283563',
   },
   {
-    item: {
-      title: 'John Lewis staff bonus cut again as profits fall',
-      href: 'https://www.bbc.com/vietnamese/institutional-49283563',
-    },
-    dir: 'ltr',
+    title: 'John Lewis staff bonus cut again as profits fall',
+    href: 'https://www.bbc.com/vietnamese/institutional-49283563',
   },
   {
-    item: {
-      title: 'John Lewis staff bonus cut again as profits fall',
-      href: 'https://www.bbc.com/vietnamese/institutional-49283563',
-    },
-    dir: 'ltr',
+    title: 'John Lewis staff bonus cut again as profits fall',
+    href: 'https://www.bbc.com/vietnamese/institutional-49283563',
   },
   {
-    item: {
-      title: 'John Lewis staff bonus cut again as profits fall',
-      href: 'https://www.bbc.com/vietnamese/institutional-49283563',
-    },
-    dir: 'ltr',
+    title: 'John Lewis staff bonus cut again as profits fall',
+    href: 'https://www.bbc.com/vietnamese/institutional-49283563',
   },
   {
-    item: {
-      title: 'John Lewis staff bonus cut again as profits fall',
-      href: 'https://www.bbc.com/vietnamese/institutional-49283563',
-    },
-    dir: 'ltr',
+    title: 'John Lewis staff bonus cut again as profits fall',
+    href: 'https://www.bbc.com/vietnamese/institutional-49283563',
   },
 ];
 
 const itemsRTL = [
   {
-    item: {
-      title: "ایران از لغو 'رزمایش قطع اینترنت' خبر داد",
-      href: 'https://www.bbc.com/vietnamese/institutional-49283563',
-    },
-    dir: 'rtl',
+    title: "ایران از لغو 'رزمایش قطع اینترنت' خبر داد",
+    href: 'https://www.bbc.com/vietnamese/institutional-49283563',
   },
   {
-    item: {
-      title: "ایران از لغو 'رزمایش قطع اینترنت' خبر داد",
-      href: 'https://www.bbc.com/vietnamese/institutional-49283563',
-    },
-    dir: 'rtl',
+    title: "ایران از لغو 'رزمایش قطع اینترنت' خبر داد",
+    href: 'https://www.bbc.com/vietnamese/institutional-49283563',
   },
   {
-    item: {
-      title: "ایران از لغو 'رزمایش قطع اینترنت' خبر داد",
-      href: 'https://www.bbc.com/vietnamese/institutional-49283563',
-    },
-    dir: 'rtl',
+    title: "ایران از لغو 'رزمایش قطع اینترنت' خبر داد",
+    href: 'https://www.bbc.com/vietnamese/institutional-49283563',
   },
   {
-    item: {
-      title: "ایران از لغو 'رزمایش قطع اینترنت' خبر داد",
-      href: 'https://www.bbc.com/vietnamese/institutional-49283563',
-    },
-    dir: 'rtl',
+    title: "ایران از لغو 'رزمایش قطع اینترنت' خبر داد",
+    href: 'https://www.bbc.com/vietnamese/institutional-49283563',
   },
   {
-    item: {
-      title: "ایران از لغو 'رزمایش قطع اینترنت' خبر داد",
-      href: 'https://www.bbc.com/vietnamese/institutional-49283563',
-    },
-    dir: 'rtl',
+    title: "ایران از لغو 'رزمایش قطع اینترنت' خبر داد",
+    href: 'https://www.bbc.com/vietnamese/institutional-49283563',
   },
   {
-    item: {
-      title: "ایران از لغو 'رزمایش قطع اینترنت' خبر داد",
-      href: 'https://www.bbc.com/vietnamese/institutional-49283563',
-    },
-    dir: 'rtl',
+    title: "ایران از لغو 'رزمایش قطع اینترنت' خبر داد",
+    href: 'https://www.bbc.com/vietnamese/institutional-49283563',
   },
   {
-    item: {
-      title: "ایران از لغو 'رزمایش قطع اینترنت' خبر داد",
-      href: 'https://www.bbc.com/vietnamese/institutional-49283563',
-    },
-    dir: 'rtl',
+    title: "ایران از لغو 'رزمایش قطع اینترنت' خبر داد",
+    href: 'https://www.bbc.com/vietnamese/institutional-49283563',
   },
   {
-    item: {
-      title: "ایران از لغو 'رزمایش قطع اینترنت' خبر داد",
-      href: 'https://www.bbc.com/vietnamese/institutional-49283563',
-    },
-    dir: 'rtl',
+    title: "ایران از لغو 'رزمایش قطع اینترنت' خبر داد",
+    href: 'https://www.bbc.com/vietnamese/institutional-49283563',
   },
   {
-    item: {
-      title: "ایران از لغو 'رزمایش قطع اینترنت' خبر داد",
-      href: 'https://www.bbc.com/vietnamese/institutional-49283563',
-    },
-    dir: 'rtl',
-  },
-  {
-    item: {
-      title: "ایران از لغو 'رزمایش قطع اینترنت' خبر داد",
-      href: 'https://www.bbc.com/vietnamese/institutional-49283563',
-    },
-    dir: 'rtl',
+    title: "ایران از لغو 'رزمایش قطع اینترنت' خبر داد",
+    href: 'https://www.bbc.com/vietnamese/institutional-49283563',
   },
 ];
 
