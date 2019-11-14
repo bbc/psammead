@@ -4,7 +4,7 @@ import is from 'ramda/src/is';
 import { number, string, node, oneOfType } from 'prop-types';
 import styled from 'styled-components';
 
-const convertToPixels = n => `${n}px`;
+const convertToPixels = num => `${num}px`;
 
 const getSize = when(is(Number), convertToPixels);
 
@@ -18,7 +18,7 @@ const Wrapper = styled.div`
   width: ${getWidth};
 `;
 
-const initIntersectionObserver = ({ setWrapperIO, wrapperEl }) => () => {
+const initIntersectionObserver = ({ wrapperEl, setWrapperIO }) => () => {
   // component did mount
   let IO;
   const init = () => {
@@ -43,7 +43,7 @@ const initIntersectionObserver = ({ setWrapperIO, wrapperEl }) => () => {
   return cleanup;
 };
 
-const initResizeObserver = ({ setContentElRect, wrapperEl }) => () => {
+const initResizeObserver = ({ wrapperEl, setContentElRect }) => () => {
   let RO;
 
   const init = ResizeObserver => {
@@ -51,7 +51,7 @@ const initResizeObserver = ({ setContentElRect, wrapperEl }) => () => {
       setContentElRect(contentEntry.contentRect);
     };
     RO = new ResizeObserver(callback);
-    RO.observe(wrapperEl.current.firstChild);
+    RO.observe(wrapperEl.current.firstChild); // will break if using a fragment :thinking:
   };
 
   if ('ResizeObserver' in window) {
@@ -95,6 +95,7 @@ const ContentShiftBlocker = ({ children, initialHeight, initialWidth }) => {
   }, []);
 
   useLayoutEffect(() => {
+    // child content did resize
     const wrapperIsOutOfView = wrapperIO.isIntersecting === false;
 
     if (wrapperIsOutOfView) {
