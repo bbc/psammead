@@ -170,7 +170,7 @@ const StyledNav = styled.nav`
 
 const Navigation = ({ children, dir }) => (
   <StyledNav role="navigation" dir={dir}>
-    <CanonicalHamburgerMenu announcedText="Menu" openAction={() => {}} />
+    <CanonicalHamburgerMenu announcedText="Menu" onOpen={() => {}} />
     <NavWrapper>{children}</NavWrapper>
   </StyledNav>
 );

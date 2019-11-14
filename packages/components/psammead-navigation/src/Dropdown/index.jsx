@@ -112,11 +112,11 @@ export const DropdownNavigationLi = ({
   </DropdownLi>
 );
 
-export const AmpDropdown = ({ announcedText, closeAction, children }) => (
+export const AmpDropdown = ({ announcedText, onClose, children }) => (
   <DropdownWrapper>
     <CrossButton
       aria-label={announcedText}
-      on={closeAction}
+      on={onClose}
       // eslint-disable-next-line react/jsx-boolean-value
       aria-expanded={true}
     >
@@ -126,11 +126,11 @@ export const AmpDropdown = ({ announcedText, closeAction, children }) => (
   </DropdownWrapper>
 );
 
-export const CanonicalDropdown = ({ announcedText, closeAction, children }) => (
+export const CanonicalDropdown = ({ announcedText, onClose, children }) => (
   <DropdownWrapper>
     <CrossButton
       aria-label={announcedText}
-      onClick={closeAction}
+      onClick={onClose}
       // eslint-disable-next-line react/jsx-boolean-value
       aria-expanded={true}
     >
@@ -161,20 +161,16 @@ const HamburgerButton = styled.button`
   }
 `;
 
-export const AmpHamburgerMenu = ({ announcedText, openAction }) => (
-  <HamburgerButton
-    aria-label={announcedText}
-    on={openAction}
-    aria-expanded={false}
-  >
+export const AmpHamburgerMenu = ({ announcedText, onOpen }) => (
+  <HamburgerButton aria-label={announcedText} on={onOpen} aria-expanded={false}>
     {navigationIcons.hamburger}
   </HamburgerButton>
 );
 
-export const CanonicalHamburgerMenu = ({ announcedText, openAction }) => (
+export const CanonicalHamburgerMenu = ({ announcedText, onOpen }) => (
   <HamburgerButton
     aria-label={announcedText}
-    onClick={openAction}
+    onClick={onOpen}
     aria-expanded={false}
   >
     {navigationIcons.hamburger}
@@ -200,21 +196,21 @@ DropdownNavigationLi.defaultProps = {
 AmpDropdown.propTypes = {
   announcedText: string.isRequired,
   children: node.isRequired,
-  closeAction: func.isRequired,
+  onClose: func.isRequired,
 };
 
 CanonicalDropdown.propTypes = {
   announcedText: string.isRequired,
   children: node.isRequired,
-  closeAction: func.isRequired,
+  onClose: func.isRequired,
 };
 
 AmpHamburgerMenu.propTypes = {
   announcedText: string.isRequired,
-  openAction: func.isRequired,
+  onOpen: func.isRequired,
 };
 
 CanonicalHamburgerMenu.propTypes = {
   announcedText: string.isRequired,
-  openAction: func.isRequired,
+  onOpen: func.isRequired,
 };

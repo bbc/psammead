@@ -47,7 +47,7 @@ The `@bbc/psammead-navigation` package is a set of two components, `NavigationUl
 | -------- | ---- | -------- | ------- | ------- |
 | children | node | Yes      | N/A     | `<DropdownNavigationLi script={latin} service='news' key='sport' url='/sport' active={false}> Sport </DropdownNavigationLi>` |
 | announcedText      | string  | Yes       | N/A   | `'Menu'` |
-| closeAction      | function  | Yes       | N/A   |  |
+| onClose      | function  | Yes       | N/A   |  |
 
 ### DropdownNavigationLi
 
@@ -68,7 +68,7 @@ The `@bbc/psammead-navigation` package is a set of two components, `NavigationUl
 | Argument | Type | Required | Default | Example |
 | -------- | ---- | -------- | ------- | ------- |
 | announcedText      | string  | Yes       | N/A   | `'Menu'` |
-| openAction      | function  | Yes       | N/A   |  |
+| onOpen      | function  | Yes       | N/A   |  |
 
 ## Navigation Usage
 
@@ -112,7 +112,7 @@ import {
 } from '@bbc/psammead-navigation';
 import { latin } from '@bbc/gel-foundations/scripts';
 
-<CanonicalDropdown announcedText="Menu" closeAction={() => {}}>
+<CanonicalDropdown announcedText="Menu" onClose={() => {}}>
     <DropdownNavigationLi
         script={latin}
         service="news"
