@@ -27,10 +27,8 @@ exports[`Navigation should render correctly 1`] = `
   border: 0;
 }
 
-.c1:hover,
 .c1:focus {
   box-shadow: inset 0 0 0 0.25rem #FFFFFF;
-  cursor: pointer;
 }
 
 .c3 {

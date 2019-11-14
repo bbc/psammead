@@ -24,7 +24,6 @@ import { getSansRegular } from '@bbc/psammead-styles/font-styles';
 
 const DropdownWrapper = styled.div`
   background-color: ${C_EBON};
-  width: 100vw;
 
   @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
     display: none;
@@ -39,10 +38,8 @@ const CrossButton = styled.button`
   margin: 0;
   border: 0;
 
-  &:hover,
   &:focus {
     box-shadow: inset 0 0 0 0.25rem ${C_WHITE};
-    cursor: pointer;
   }
 `;
 
@@ -71,10 +68,8 @@ const StyledDropdownLink = styled.a`
   color: ${C_WHITE};
   text-decoration: none;
 
-  &:hover,
   &:focus {
     text-decoration: underline;
-    cursor: pointer;
   }
 `;
 
@@ -152,10 +147,8 @@ const HamburgerButton = styled.button`
   margin: 0;
   border: 0;
 
-  &:hover,
   &:focus {
     box-shadow: inset 0 0 0 0.25rem ${C_WHITE};
-    cursor: pointer;
   }
 
   @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {

@@ -15,10 +15,8 @@ exports[`Hamburger menu should render correctly 1`] = `
   border: 0;
 }
 
-.c0:hover,
 .c0:focus {
   box-shadow: inset 0 0 0 0.25rem #FFFFFF;
-  cursor: pointer;
 }
 
 @media (min-width:37.5rem) {
@@ -70,7 +68,6 @@ exports[`Navigation dropdown should render correctly 1`] = `
 
 .c0 {
   background-color: #222222;
-  width: 100vw;
 }
 
 .c1 {
@@ -82,10 +79,8 @@ exports[`Navigation dropdown should render correctly 1`] = `
   border: 0;
 }
 
-.c1:hover,
 .c1:focus {
   box-shadow: inset 0 0 0 0.25rem #FFFFFF;
-  cursor: pointer;
 }
 
 .c3 {
@@ -118,11 +113,9 @@ exports[`Navigation dropdown should render correctly 1`] = `
   text-decoration: none;
 }
 
-.c5:hover,
 .c5:focus {
   -webkit-text-decoration: underline;
   text-decoration: underline;
-  cursor: pointer;
 }
 
 .c6 {
