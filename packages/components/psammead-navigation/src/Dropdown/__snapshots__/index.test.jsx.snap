@@ -27,6 +27,12 @@ exports[`Hamburger menu should render correctly 1`] = `
   }
 }
 
+@media (max-width:37.4375rem) {
+  .c0 {
+    display: inline-block;
+  }
+}
+
 <button
   aria-expanded="false"
   aria-label="Menu"
@@ -211,6 +217,7 @@ exports[`Navigation dropdown should render correctly 1`] = `
         <span
           class="c6"
           dir="ltr"
+          role="text"
         >
           <span
             class="c7"
