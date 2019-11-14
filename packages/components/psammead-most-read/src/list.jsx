@@ -1,7 +1,12 @@
 import React from 'react';
 import styled from 'styled-components';
 import { shape, string, arrayOf } from 'prop-types';
-import { EasternArabic, WesternArabic } from '@bbc/psammead-locales/numerals';
+import {
+  Burmese,
+  Bengali,
+  EasternArabic,
+  WesternArabic,
+} from '@bbc/psammead-locales/numerals';
 import { scriptPropType } from '@bbc/gel-foundations/prop-types';
 import Grid from '../../psammead-grid';
 import { MostReadRank, MostReadLink } from './item';
@@ -54,9 +59,18 @@ const MostReadListColumns = {
   },
 };
 
-const serviceNumerals = {
-  news: WesternArabic,
-  arabic: EasternArabic,
+const serviceNumerals = service => {
+  const servicesNonWesternNumerals = {
+    arabic: EasternArabic,
+    bengali: Bengali,
+    burmese: Burmese,
+    pashto: EasternArabic,
+    persian: EasternArabic,
+    urdu: EasternArabic,
+  };
+  return servicesNonWesternNumerals[service]
+    ? servicesNonWesternNumerals[service]
+    : WesternArabic;
 };
 
 const StyledOl = styled.ol.attrs({
@@ -67,40 +81,39 @@ const StyledOl = styled.ol.attrs({
   padding: 0;
 `;
 
-const StyledLi = styled.li.attrs({
-  role: 'listitem',
-})`
-  padding: 0.2rem;
-`;
-
-const MostReadItem = ({ service, script, item, rank }) => (
-  <StyledLi>
-    <Grid {...MostReadItemColumns}>
-      <Grid {...MostReadRankColumns}>
+const MostReadItem = ({ service, script, item, rank, dir }) => (
+  <li>
+    <Grid {...MostReadItemColumns} dir={dir}>
+      <Grid {...MostReadRankColumns} dir={dir}>
         <MostReadRank service={service} script={script}>
           {rank}
         </MostReadRank>
       </Grid>
-      <Grid {...MostReadLinkColumns}>
-        <MostReadLink service={service} item={item} />
+      <Grid {...MostReadLinkColumns} dir={dir}>
+        <MostReadLink service={service} item={item} script={script} />
       </Grid>
     </Grid>
-  </StyledLi>
+  </li>
 );
 
-const MostReadList = ({ items, service, script }) => {
-  const numerals = serviceNumerals[service];
+const MostReadList = ({ items, service, script, dir }) => {
+  const numerals = serviceNumerals(service);
   return (
     <StyledOl>
-      <Grid {...MostReadListColumns}>
-        {items.map((item, i) => (
-          <MostReadItem
-            item={item}
-            service={service}
-            script={script}
-            rank={numerals[i + 1]}
-          />
-        ))}
+      <Grid {...MostReadListColumns} dir={dir}>
+        {items.map((item, i) => {
+          const rank = numerals[i + 1];
+          return (
+            <MostReadItem
+              key={rank}
+              item={item}
+              service={service}
+              script={script}
+              rank={rank}
+              dir={dir}
+            />
+          );
+        })}
       </Grid>
     </StyledOl>
   );
@@ -116,12 +129,14 @@ MostReadItem.propTypes = {
   script: shape(scriptPropType).isRequired,
   item: itemPropTypes.isRequired,
   rank: string.isRequired,
+  dir: string.isRequired,
 };
 
 MostReadList.propTypes = {
   service: string.isRequired,
   script: shape(scriptPropType).isRequired,
   items: arrayOf(itemPropTypes).isRequired,
+  dir: string.isRequired,
 };
 
 export default MostReadList;

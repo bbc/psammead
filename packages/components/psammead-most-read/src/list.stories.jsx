@@ -96,9 +96,9 @@ const stories = storiesOf(STORY_KIND, module)
   .addDecorator(withServicesKnob());
 
 stories.add(`MostReadList LTR`, ({ script, service }) => (
-  <MostReadList items={itemsLTR} service={service} script={script} />
+  <MostReadList items={itemsLTR} service={service} script={script} dir="ltr" />
 ));
 
 stories.add(`MostReadList RTL`, ({ script, service }) => (
-  <MostReadList items={itemsRTL} service={service} script={script} />
+  <MostReadList items={itemsRTL} service={service} script={script} dir="rtl" />
 ));
