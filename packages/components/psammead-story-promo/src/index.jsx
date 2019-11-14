@@ -89,12 +89,12 @@ const ImageGridFallbackTopStory = css`
   width: ${fullWidthColumnsMaxScaleable};
 
   @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
-    width: ${halfWidthColumnsMaxScaleable};
+    width: calc(${halfWidthColumnsMaxScaleable} - ${GEL_SPACING});
     margin-bottom: 0;
   }
 
   @media (min-width: ${GEL_GROUP_4_SCREEN_WIDTH_MIN}) {
-    width: ${halfWidthColumnsMaxScaleable};
+    width: calc(${halfWidthColumnsMaxScaleable} - ${GEL_SPACING});
   }
 `;
 
