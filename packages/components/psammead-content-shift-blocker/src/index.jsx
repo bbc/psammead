@@ -23,7 +23,7 @@ const initIntersectionObserver = ({ wrapperEl, setWrapperIO }) => {
     const callback = ([wrapperEntry]) => {
       setWrapperIO(wrapperEntry);
     };
-    const IO = IntersectionObserver(callback);
+    const IO = new IntersectionObserver(callback);
 
     IO.observe(wrapperEl.current);
 
@@ -31,13 +31,13 @@ const initIntersectionObserver = ({ wrapperEl, setWrapperIO }) => {
   };
 
   if ('IntersectionObserver' in window) {
-    init();
-  } else {
-    import('intersection-observer').then(() => {
-      IntersectionObserver.prototype.POLL_INTERVAL = 100;
-      init();
-    });
+    return init();
   }
+
+  return import('intersection-observer').then(() => {
+    IntersectionObserver.prototype.POLL_INTERVAL = 100;
+    return init();
+  });
 };
 
 const initResizeObserver = ({ wrapperEl, setContentElRect }) => {
@@ -56,13 +56,12 @@ const initResizeObserver = ({ wrapperEl, setContentElRect }) => {
   };
 
   if ('ResizeObserver' in window) {
-    init(ResizeObserver);
-  } else {
-    import('resize-observer-polyfill').then(module => {
-      const ResizeObserver = module.default;
-      init(ResizeObserver);
-    });
+    return init(ResizeObserver);
   }
+  return import('resize-observer-polyfill').then(module => {
+    const ResizeObserver = module.default;
+    return init(ResizeObserver);
+  });
 };
 
 const isScrollAnchoringSupported = () => {
