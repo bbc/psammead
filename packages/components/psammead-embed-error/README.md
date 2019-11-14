@@ -6,7 +6,7 @@ This component is currently tagged as alpha and is not suitable for production u
 
 ## Description
 
-The `EmbedError` component provides a generic error for embeds. Here 'embed' refers to content embedded in an iframe. The content this component provides will fill the viewport and position itself accordingly. It is therefore designed to be used in isolation, as the sole content in a page.
+The `EmbedError` component provides a lean error page for embedded content, such as that in an iframe. This component's content will fill the viewport and position itself accordingly - tt is therefore designed to be used in isolation.
 
 ## Installation
 
@@ -49,11 +49,11 @@ This component should be used when you want an error message to fill the viewpor
 
 ### When not to use this component
 
-This component is not designed for use alongside other content, because it fills the viewport and positions its content accordingly.
+This component fills the viewport and is not designed for use alongside other content.
 
 ### Accessibility notes
 
-This component's error message is wrapped in a `<strong>` element, indicating to users of assistive technology that it is important content. This is similar behaviour to the Guidance message component used in Media Player's Placeholder.
+This component's error message is wrapped in a `<strong>` element, indicating to users of assistive technology that it is an important message. This is similar behaviour to the Guidance component used in Media Player's Placeholder.
 
 ### Roadmap
 
