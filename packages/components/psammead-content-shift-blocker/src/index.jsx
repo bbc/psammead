@@ -23,7 +23,11 @@ const initIntersectionObserver = ({ wrapperEl, setWrapperIO }) => {
     const callback = ([wrapperEntry]) => {
       setWrapperIO(wrapperEntry);
     };
-    return new IntersectionObserver(callback).observe(wrapperEl.current);
+    const IO = IntersectionObserver(callback);
+
+    IO.observe(wrapperEl.current);
+
+    return IO;
   };
 
   if ('IntersectionObserver' in window) {
@@ -41,10 +45,14 @@ const initResizeObserver = ({ wrapperEl, setContentElRect }) => {
     const callback = ([contentEntry]) => {
       setContentElRect(contentEntry.contentRect);
     };
-    return new ResizeObserver(callback).observe(
+    const RO = new ResizeObserver(callback);
+
+    RO.observe(
       wrapperEl.current
         .firstChild /* will break if using a fragment :thinking: */,
     );
+
+    return RO;
   };
 
   if ('ResizeObserver' in window) {
