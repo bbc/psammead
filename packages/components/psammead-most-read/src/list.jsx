@@ -6,6 +6,59 @@ import { scriptPropType } from '@bbc/gel-foundations/prop-types';
 import Grid from '../../psammead-grid';
 import { MostReadRank, MostReadItem } from './item';
 
+const MostReadLiOuterProps = {
+  columns: {
+    group0: 5,
+    group1: 5,
+    group2: 5,
+    group3: 5,
+    group4: 5,
+    group5: 5,
+  },
+};
+
+const MostReadLiRankProps = {
+  item: true,
+  columns: {
+    group0: 1,
+    group1: 1,
+    group2: 1,
+    group3: 1,
+    group4: 1,
+    group5: 1,
+  },
+};
+
+const MostReadLiItemProps = {
+  item: true,
+  columns: {
+    group0: 4,
+    group1: 4,
+    group2: 4,
+    group3: 4,
+    group4: 4,
+    group5: 4,
+  },
+};
+
+const MostReadListOuterProps = {
+  enableGelGutters: true,
+  enableGelMargins: true,
+  columns: {
+    group0: 1,
+    group1: 1,
+    group2: 2,
+    group3: 2,
+    group4: 2,
+    group5: 5,
+  },
+};
+
+const serviceNumerals = {
+  news: WesternArabic,
+  arabic: EasternArabic,
+};
+
 const StyledOl = styled.ol.attrs({
   role: 'list',
 })`
@@ -20,49 +73,15 @@ const StyledLi = styled.li.attrs({
   padding: 0.2rem;
 `;
 
-const serviceNumerals = {
-  news: WesternArabic,
-  arabic: EasternArabic,
-};
-
-const MostReadListItem = ({ service, script, item, rank }) => (
+const MostReadLi = ({ service, script, item, rank }) => (
   <StyledLi>
-    <Grid
-      columns={{
-        group0: 5,
-        group1: 5,
-        group2: 5,
-        group3: 5,
-        group4: 5,
-        group5: 5,
-      }}
-    >
-      <Grid
-        item
-        columns={{
-          group0: 1,
-          group1: 1,
-          group2: 1,
-          group3: 1,
-          group4: 1,
-          group5: 1,
-        }}
-      >
+    <Grid {...MostReadLiOuterProps}>
+      <Grid {...MostReadLiRankProps}>
         <MostReadRank service={service} script={script}>
           {rank}
         </MostReadRank>
       </Grid>
-      <Grid
-        item
-        columns={{
-          group0: 4,
-          group1: 4,
-          group2: 4,
-          group3: 4,
-          group4: 4,
-          group5: 4,
-        }}
-      >
+      <Grid {...MostReadLiItemProps}>
         <MostReadItem service={service} item={item} />
       </Grid>
     </Grid>
@@ -73,20 +92,9 @@ const MostReadList = ({ items, service, script }) => {
   const numerals = serviceNumerals[service];
   return (
     <StyledOl>
-      <Grid
-        enableGelGutters
-        enableGelMargins
-        columns={{
-          group0: 1,
-          group1: 1,
-          group2: 2,
-          group3: 2,
-          group4: 2,
-          group5: 5,
-        }}
-      >
+      <Grid {...MostReadListOuterProps}>
         {items.map((item, i) => (
-          <MostReadListItem
+          <MostReadLi
             item={item}
             service={service}
             script={script}
@@ -111,7 +119,7 @@ const itemPropTypes = shape({
   href: string.isRequired,
 });
 
-MostReadListItem.propTypes = {
+MostReadLi.propTypes = {
   service: string.isRequired,
   script: shape(scriptPropType).isRequired,
   item: itemPropTypes.isRequired,
