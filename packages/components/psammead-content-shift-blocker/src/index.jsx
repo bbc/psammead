@@ -4,19 +4,82 @@ import is from 'ramda/src/is';
 import { number, string, node, oneOfType } from 'prop-types';
 import styled from 'styled-components';
 
-const addPixelUnit = n => `${n}px`;
-const getSize = when(is(Number), addPixelUnit);
+const convertToPixels = n => `${n}px`;
+
+const getSize = when(is(Number), convertToPixels);
+
 const getHeight = ({ wrapperHeight }) => getSize(wrapperHeight);
+
 const getWidth = ({ wrapperWidth }) => getSize(wrapperWidth);
+
 const Wrapper = styled.div`
   overflow: auto;
   height: ${getHeight};
   width: ${getWidth};
 `;
+
+const initIntersectionObserver = ({ setWrapperIO, wrapperEl }) => () => {
+  // component did mount
+  let IO;
+  const init = () => {
+    const callback = ([wrapperEntry]) => {
+      setWrapperIO(wrapperEntry);
+    };
+    IO = new IntersectionObserver(callback);
+    IO.observe(wrapperEl.current);
+  };
+
+  if ('IntersectionObserver' in window) {
+    init();
+  } else {
+    import('intersection-observer').then(() => {
+      IntersectionObserver.prototype.POLL_INTERVAL = 100;
+      init();
+    });
+  }
+  const cleanup = () => {
+    IO.disconnect();
+  };
+  return cleanup;
+};
+
+const initResizeObserver = ({ setContentElRect, wrapperEl }) => () => {
+  let RO;
+
+  const init = ResizeObserver => {
+    const callback = ([contentEntry]) => {
+      setContentElRect(contentEntry.contentRect);
+    };
+    RO = new ResizeObserver(callback);
+    RO.observe(wrapperEl.current.firstChild);
+  };
+
+  if ('ResizeObserver' in window) {
+    init(ResizeObserver);
+  } else {
+    import('resize-observer-polyfill').then(module => {
+      const ResizeObserver = module.default;
+      init(ResizeObserver);
+    });
+  }
+  const cleanup = () => {
+    RO.disconnect();
+  };
+  return cleanup;
+};
+
+const isScrollAnchoringSupported = () => {
+  // https://drafts.csswg.org/css-scroll-anchoring/
+  if ('CSS' in window) {
+    return CSS.supports('overflow-anchor', 'auto');
+  }
+  return false;
+};
+
 const ContentShiftBlocker = ({ children, initialHeight, initialWidth }) => {
   const wrapperEl = useRef(null);
   const scrollHeight = useRef(null);
-  const scrollAnchorIsSupported = useRef(null);
+  const scrollAnchoringIsSupported = useRef(null);
   const [wrapperIO, setWrapperIO] = useState({});
   const [contentElRect, setContentElRect] = useState({});
   const [wrapperDimensions, setWrapperDimensions] = useState({
@@ -24,52 +87,11 @@ const ContentShiftBlocker = ({ children, initialHeight, initialWidth }) => {
     width: initialWidth,
   });
 
+  useEffect(initIntersectionObserver({ setWrapperIO, wrapperEl }), []); // runs only on mount
+  useEffect(initResizeObserver({ setContentElRect, wrapperEl }), []); // runs only on mount
   useEffect(() => {
-    // component did mount
-    let IO;
-    let RO;
-    if ('CSS' in window) {
-      scrollAnchorIsSupported.current = CSS.supports('overflow-anchor', 'auto');
-    }
-
-    const initIO = () => {
-      const callback = ([wrapperEntry]) => {
-        setWrapperIO(wrapperEntry);
-      };
-      IO = new IntersectionObserver(callback);
-      IO.observe(wrapperEl.current);
-    };
-
-    const initRO = (ResizeObserver = window.ResizeObserver) => {
-      const callback = ([contentEntry]) => {
-        setContentElRect(contentEntry.contentRect);
-      };
-      RO = new ResizeObserver(callback);
-      RO.observe(wrapperEl.current.firstChild);
-    };
-
-    if ('IntersectionObserver' in window) {
-      initIO();
-    } else {
-      import('intersection-observer').then(() => {
-        IntersectionObserver.prototype.POLL_INTERVAL = 100;
-        initIO();
-      });
-    }
-
-    if ('ResizeObserver' in window) {
-      initRO();
-    } else {
-      import('resize-observer-polyfill').then(module => {
-        const ResizeObserver = module.default;
-        initRO(ResizeObserver);
-      });
-    }
-    const cleanup = () => {
-      IO.disconnect();
-      RO.disconnect();
-    };
-    return cleanup;
+    // runs only on mount
+    isScrollAnchoringSupported.current = isScrollAnchoringSupported();
   }, []);
 
   useLayoutEffect(() => {
@@ -83,7 +105,7 @@ const ContentShiftBlocker = ({ children, initialHeight, initialWidth }) => {
         height: nextWrapperHeight,
       } = contentElRect;
 
-      if (!scrollAnchorIsSupported.current && wrapperIsAboveViewport) {
+      if (!scrollAnchoringIsSupported.current && wrapperIsAboveViewport) {
         scrollHeight.current = document.body.scrollHeight;
       }
 
@@ -96,7 +118,7 @@ const ContentShiftBlocker = ({ children, initialHeight, initialWidth }) => {
 
   useEffect(() => {
     // wrapper did resize
-    if (scrollAnchorIsSupported.current || scrollHeight.current === null) {
+    if (scrollAnchoringIsSupported.current || scrollHeight.current === null) {
       return;
     }
 
@@ -107,7 +129,7 @@ const ContentShiftBlocker = ({ children, initialHeight, initialWidth }) => {
 
     if (scrollHeightDiff && scrollY > 0) {
       // adjust scrollY position to prevent visible jump
-      window.scrollTo(0, window.pageYOffset - scrollHeightDiff);
+      window.scrollTo(0, scrollY - scrollHeightDiff);
     }
   }, [wrapperDimensions]);
 

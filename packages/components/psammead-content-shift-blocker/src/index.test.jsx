@@ -44,7 +44,7 @@ beforeEach(() => {
       this._scrollHeight = val;
     },
   });
-
+  global.pageYOffset = 300;
   document.body.scrollHeight = 768; // set the default height of the document
 });
 
@@ -68,8 +68,9 @@ it('should render children', () => {
 });
 
 it('should accept string measurements', () => {
+  const stringSize = '10em';
   const { container } = render(
-    <ContentShiftBlocker initialWidth="10em" initialHeight="10em">
+    <ContentShiftBlocker initialWidth={stringSize} initialHeight={stringSize}>
       <Content />
     </ContentShiftBlocker>,
   );
@@ -177,7 +178,7 @@ it('should resize when not in view', () => {
 
 it('should adjust Y scroll position when above viewport and child content becomes smaller', () => {
   const expectedXPos = 0;
-  const expectedYPos = -100;
+  const expectedYPos = 200;
 
   Object.defineProperty(HTMLElement.prototype, 'scrollHeight', {
     get() {
@@ -218,7 +219,7 @@ it('should adjust Y scroll position when above viewport and child content become
 
 it('should adjust Y scroll position when above viewport and child content becomes larger', () => {
   const expectedXPos = 0;
-  const expectedYPos = 100;
+  const expectedYPos = 400;
 
   render(
     <ContentShiftBlocker initialWidth={100} initialHeight={100}>
