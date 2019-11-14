@@ -1,0 +1,1243 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MostReadList should render with ltr items with correct dir 1`] = `
+.c2 {
+  position: relative;
+}
+
+.c3 {
+  position: relative;
+}
+
+.c5 {
+  font-size: 2rem;
+  line-height: 2.25rem;
+  font-family: ReithSerif,Helvetica,Arial,sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  color: #B80000;
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  width: 3rem;
+}
+
+.c8 {
+  font-size: 1.125rem;
+  line-height: 1.375rem;
+  font-family: ReithSerif,Helvetica,Arial,sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  color: #222222;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c8:hover,
+.c8:focus {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.c7 {
+  padding-top: 0.25rem;
+  padding-left: 0.25rem;
+}
+
+.c0 {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+@media (max-width:14.9375rem) {
+  .c2 {
+    margin: 0 -0.25rem;
+  }
+}
+
+@media (min-width:15rem) and (max-width:24.9375rem) {
+  .c2 {
+    margin: 0 -0.25rem;
+  }
+}
+
+@media (min-width:25rem) and (max-width:37.4375rem) {
+  .c2 {
+    margin: 0 -0.25rem;
+  }
+}
+
+@media (min-width:37.5rem) and (max-width:62.9375rem) {
+  .c2 {
+    margin: 0 -0.5rem;
+  }
+}
+
+@media (min-width:63rem) and (max-width:80rem) {
+  .c2 {
+    margin: 0 -0.5rem;
+  }
+}
+
+@media (min-width:80rem) {
+  .c2 {
+    margin: 0 -0.5rem;
+  }
+}
+
+@supports (display:grid) {
+  .c2 {
+    display: grid;
+    position: initial;
+  }
+}
+
+@supports (display:grid) {
+  .c3 {
+    display: grid;
+    position: initial;
+  }
+}
+
+@media (max-width:14.9375rem) {
+  .c4 {
+    width: calc(20%);
+    display: inline-block;
+    vertical-align: top;
+  }
+}
+
+@media (min-width:15rem) and (max-width:24.9375rem) {
+  .c4 {
+    width: calc(20%);
+    display: inline-block;
+    vertical-align: top;
+  }
+}
+
+@media (min-width:25rem) and (max-width:37.4375rem) {
+  .c4 {
+    width: calc(20%);
+    display: inline-block;
+    vertical-align: top;
+  }
+}
+
+@media (min-width:37.5rem) and (max-width:62.9375rem) {
+  .c4 {
+    width: calc(20%);
+    display: inline-block;
+    vertical-align: top;
+  }
+}
+
+@media (min-width:63rem) and (max-width:80rem) {
+  .c4 {
+    width: calc(20%);
+    display: inline-block;
+    vertical-align: top;
+  }
+}
+
+@media (min-width:80rem) {
+  .c4 {
+    width: calc(20%);
+    display: inline-block;
+    vertical-align: top;
+  }
+}
+
+@supports (display:grid) {
+  .c4 {
+    display: block;
+  }
+}
+
+@media (max-width:14.9375rem) {
+  .c6 {
+    width: calc(80%);
+    display: inline-block;
+    vertical-align: top;
+  }
+}
+
+@media (min-width:15rem) and (max-width:24.9375rem) {
+  .c6 {
+    width: calc(80%);
+    display: inline-block;
+    vertical-align: top;
+  }
+}
+
+@media (min-width:25rem) and (max-width:37.4375rem) {
+  .c6 {
+    width: calc(80%);
+    display: inline-block;
+    vertical-align: top;
+  }
+}
+
+@media (min-width:37.5rem) and (max-width:62.9375rem) {
+  .c6 {
+    width: calc(80%);
+    display: inline-block;
+    vertical-align: top;
+  }
+}
+
+@media (min-width:63rem) and (max-width:80rem) {
+  .c6 {
+    width: calc(80%);
+    display: inline-block;
+    vertical-align: top;
+  }
+}
+
+@media (min-width:80rem) {
+  .c6 {
+    width: calc(80%);
+    display: inline-block;
+    vertical-align: top;
+  }
+}
+
+@supports (display:grid) {
+  .c6 {
+    display: block;
+  }
+}
+
+@media (max-width:14.9375rem) {
+  .c1 {
+    padding: 0 0.5rem;
+  }
+}
+
+@media (min-width:15rem) and (max-width:24.9375rem) {
+  .c1 {
+    padding: 0 0.5rem;
+  }
+}
+
+@media (min-width:25rem) and (max-width:37.4375rem) {
+  .c1 {
+    padding: 0 1rem;
+  }
+}
+
+@media (min-width:37.5rem) and (max-width:62.9375rem) {
+  .c1 {
+    padding: 0 1rem;
+  }
+}
+
+@media (min-width:63rem) and (max-width:80rem) {
+  .c1 {
+    padding: 0 1rem;
+  }
+}
+
+@media (min-width:80rem) {
+  .c1 {
+    padding: 0 1rem;
+  }
+}
+
+@supports (display:grid) {
+  .c1 {
+    padding: 0;
+  }
+}
+
+@media (min-width:20rem) and (max-width:37.4375rem) {
+  .c5 {
+    font-size: 2.5rem;
+    line-height: 2.75rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .c5 {
+    font-size: 3.5rem;
+    line-height: 3.75rem;
+  }
+}
+
+@media (min-width:20rem) and (max-width:37.4375rem) {
+  .c8 {
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .c8 {
+    font-size: 1.5rem;
+    line-height: 1.75rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .c7 {
+    padding-top: 0.5rem;
+    padding-left: 1rem;
+  }
+}
+
+<ol
+  class="c0"
+  role="list"
+>
+  <div
+    class="c1"
+  >
+    <div
+      class="c2"
+      dir="ltr"
+    >
+      <li>
+        <div
+          class="c3"
+          dir="ltr"
+        >
+          <div
+            class="c4"
+            dir="ltr"
+          >
+            <span
+              class="c5"
+            >
+              1
+            </span>
+          </div>
+          <div
+            class="c6"
+            dir="ltr"
+          >
+            <div
+              class="c7"
+            >
+              <a
+                class="c8"
+                href="https://www.bbc.com/vietnamese/institutional-49283563"
+              >
+                John Lewis staff bonus cut again as profits fall
+              </a>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div
+          class="c3"
+          dir="ltr"
+        >
+          <div
+            class="c4"
+            dir="ltr"
+          >
+            <span
+              class="c5"
+            >
+              2
+            </span>
+          </div>
+          <div
+            class="c6"
+            dir="ltr"
+          >
+            <div
+              class="c7"
+            >
+              <a
+                class="c8"
+                href="https://www.bbc.com/vietnamese/institutional-49283563"
+              >
+                John Lewis staff bonus cut again as profits fall
+              </a>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div
+          class="c3"
+          dir="ltr"
+        >
+          <div
+            class="c4"
+            dir="ltr"
+          >
+            <span
+              class="c5"
+            >
+              3
+            </span>
+          </div>
+          <div
+            class="c6"
+            dir="ltr"
+          >
+            <div
+              class="c7"
+            >
+              <a
+                class="c8"
+                href="https://www.bbc.com/vietnamese/institutional-49283563"
+              >
+                John Lewis staff bonus cut again as profits fall
+              </a>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div
+          class="c3"
+          dir="ltr"
+        >
+          <div
+            class="c4"
+            dir="ltr"
+          >
+            <span
+              class="c5"
+            >
+              4
+            </span>
+          </div>
+          <div
+            class="c6"
+            dir="ltr"
+          >
+            <div
+              class="c7"
+            >
+              <a
+                class="c8"
+                href="https://www.bbc.com/vietnamese/institutional-49283563"
+              >
+                John Lewis staff bonus cut again as profits fall
+              </a>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div
+          class="c3"
+          dir="ltr"
+        >
+          <div
+            class="c4"
+            dir="ltr"
+          >
+            <span
+              class="c5"
+            >
+              5
+            </span>
+          </div>
+          <div
+            class="c6"
+            dir="ltr"
+          >
+            <div
+              class="c7"
+            >
+              <a
+                class="c8"
+                href="https://www.bbc.com/vietnamese/institutional-49283563"
+              >
+                John Lewis staff bonus cut again as profits fall
+              </a>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div
+          class="c3"
+          dir="ltr"
+        >
+          <div
+            class="c4"
+            dir="ltr"
+          >
+            <span
+              class="c5"
+            >
+              6
+            </span>
+          </div>
+          <div
+            class="c6"
+            dir="ltr"
+          >
+            <div
+              class="c7"
+            >
+              <a
+                class="c8"
+                href="https://www.bbc.com/vietnamese/institutional-49283563"
+              >
+                John Lewis staff bonus cut again as profits fall
+              </a>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div
+          class="c3"
+          dir="ltr"
+        >
+          <div
+            class="c4"
+            dir="ltr"
+          >
+            <span
+              class="c5"
+            >
+              7
+            </span>
+          </div>
+          <div
+            class="c6"
+            dir="ltr"
+          >
+            <div
+              class="c7"
+            >
+              <a
+                class="c8"
+                href="https://www.bbc.com/vietnamese/institutional-49283563"
+              >
+                John Lewis staff bonus cut again as profits fall
+              </a>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div
+          class="c3"
+          dir="ltr"
+        >
+          <div
+            class="c4"
+            dir="ltr"
+          >
+            <span
+              class="c5"
+            >
+              8
+            </span>
+          </div>
+          <div
+            class="c6"
+            dir="ltr"
+          >
+            <div
+              class="c7"
+            >
+              <a
+                class="c8"
+                href="https://www.bbc.com/vietnamese/institutional-49283563"
+              >
+                John Lewis staff bonus cut again as profits fall
+              </a>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div
+          class="c3"
+          dir="ltr"
+        >
+          <div
+            class="c4"
+            dir="ltr"
+          >
+            <span
+              class="c5"
+            >
+              9
+            </span>
+          </div>
+          <div
+            class="c6"
+            dir="ltr"
+          >
+            <div
+              class="c7"
+            >
+              <a
+                class="c8"
+                href="https://www.bbc.com/vietnamese/institutional-49283563"
+              >
+                John Lewis staff bonus cut again as profits fall
+              </a>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div
+          class="c3"
+          dir="ltr"
+        >
+          <div
+            class="c4"
+            dir="ltr"
+          >
+            <span
+              class="c5"
+            >
+              10
+            </span>
+          </div>
+          <div
+            class="c6"
+            dir="ltr"
+          >
+            <div
+              class="c7"
+            >
+              <a
+                class="c8"
+                href="https://www.bbc.com/vietnamese/institutional-49283563"
+              >
+                John Lewis staff bonus cut again as profits fall
+              </a>
+            </div>
+          </div>
+        </div>
+      </li>
+    </div>
+  </div>
+</ol>
+`;
+
+exports[`MostReadList should render with rtl arabic items with correct dir 1`] = `
+.c2 {
+  position: relative;
+}
+
+.c3 {
+  position: relative;
+}
+
+.c5 {
+  font-size: 2rem;
+  line-height: 2.25rem;
+  font-family: "BBC Nassim Arabic",Arial,Verdana,Geneva,Helvetica,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #B80000;
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  width: 3rem;
+}
+
+.c8 {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-family: "BBC Nassim Arabic",Arial,Verdana,Geneva,Helvetica,sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: #222222;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c8:hover,
+.c8:focus {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.c7 {
+  padding-top: 0.25rem;
+  padding-left: 0.25rem;
+}
+
+.c0 {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+@media (max-width:14.9375rem) {
+  .c2 {
+    margin: 0 -0.25rem;
+  }
+}
+
+@media (min-width:15rem) and (max-width:24.9375rem) {
+  .c2 {
+    margin: 0 -0.25rem;
+  }
+}
+
+@media (min-width:25rem) and (max-width:37.4375rem) {
+  .c2 {
+    margin: 0 -0.25rem;
+  }
+}
+
+@media (min-width:37.5rem) and (max-width:62.9375rem) {
+  .c2 {
+    margin: 0 -0.5rem;
+  }
+}
+
+@media (min-width:63rem) and (max-width:80rem) {
+  .c2 {
+    margin: 0 -0.5rem;
+  }
+}
+
+@media (min-width:80rem) {
+  .c2 {
+    margin: 0 -0.5rem;
+  }
+}
+
+@supports (display:grid) {
+  .c2 {
+    display: grid;
+    position: initial;
+  }
+}
+
+@supports (display:grid) {
+  .c3 {
+    display: grid;
+    position: initial;
+  }
+}
+
+@media (max-width:14.9375rem) {
+  .c4 {
+    width: calc(20%);
+    display: inline-block;
+    vertical-align: top;
+  }
+}
+
+@media (min-width:15rem) and (max-width:24.9375rem) {
+  .c4 {
+    width: calc(20%);
+    display: inline-block;
+    vertical-align: top;
+  }
+}
+
+@media (min-width:25rem) and (max-width:37.4375rem) {
+  .c4 {
+    width: calc(20%);
+    display: inline-block;
+    vertical-align: top;
+  }
+}
+
+@media (min-width:37.5rem) and (max-width:62.9375rem) {
+  .c4 {
+    width: calc(20%);
+    display: inline-block;
+    vertical-align: top;
+  }
+}
+
+@media (min-width:63rem) and (max-width:80rem) {
+  .c4 {
+    width: calc(20%);
+    display: inline-block;
+    vertical-align: top;
+  }
+}
+
+@media (min-width:80rem) {
+  .c4 {
+    width: calc(20%);
+    display: inline-block;
+    vertical-align: top;
+  }
+}
+
+@supports (display:grid) {
+  .c4 {
+    display: block;
+  }
+}
+
+@media (max-width:14.9375rem) {
+  .c6 {
+    width: calc(80%);
+    display: inline-block;
+    vertical-align: top;
+  }
+}
+
+@media (min-width:15rem) and (max-width:24.9375rem) {
+  .c6 {
+    width: calc(80%);
+    display: inline-block;
+    vertical-align: top;
+  }
+}
+
+@media (min-width:25rem) and (max-width:37.4375rem) {
+  .c6 {
+    width: calc(80%);
+    display: inline-block;
+    vertical-align: top;
+  }
+}
+
+@media (min-width:37.5rem) and (max-width:62.9375rem) {
+  .c6 {
+    width: calc(80%);
+    display: inline-block;
+    vertical-align: top;
+  }
+}
+
+@media (min-width:63rem) and (max-width:80rem) {
+  .c6 {
+    width: calc(80%);
+    display: inline-block;
+    vertical-align: top;
+  }
+}
+
+@media (min-width:80rem) {
+  .c6 {
+    width: calc(80%);
+    display: inline-block;
+    vertical-align: top;
+  }
+}
+
+@supports (display:grid) {
+  .c6 {
+    display: block;
+  }
+}
+
+@media (max-width:14.9375rem) {
+  .c1 {
+    padding: 0 0.5rem;
+  }
+}
+
+@media (min-width:15rem) and (max-width:24.9375rem) {
+  .c1 {
+    padding: 0 0.5rem;
+  }
+}
+
+@media (min-width:25rem) and (max-width:37.4375rem) {
+  .c1 {
+    padding: 0 1rem;
+  }
+}
+
+@media (min-width:37.5rem) and (max-width:62.9375rem) {
+  .c1 {
+    padding: 0 1rem;
+  }
+}
+
+@media (min-width:63rem) and (max-width:80rem) {
+  .c1 {
+    padding: 0 1rem;
+  }
+}
+
+@media (min-width:80rem) {
+  .c1 {
+    padding: 0 1rem;
+  }
+}
+
+@supports (display:grid) {
+  .c1 {
+    padding: 0;
+  }
+}
+
+@media (min-width:20rem) and (max-width:37.4375rem) {
+  .c5 {
+    font-size: 2.5rem;
+    line-height: 2.75rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .c5 {
+    font-size: 3.5rem;
+    line-height: 3.75rem;
+  }
+}
+
+@media (min-width:20rem) and (max-width:37.4375rem) {
+  .c8 {
+    font-size: 1.625rem;
+    line-height: 2.25rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .c8 {
+    font-size: 1.75rem;
+    line-height: 2.25rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .c7 {
+    padding-top: 0.5rem;
+    padding-left: 1rem;
+  }
+}
+
+<ol
+  class="c0"
+  role="list"
+>
+  <div
+    class="c1"
+  >
+    <div
+      class="c2"
+      dir="ltr"
+    >
+      <li>
+        <div
+          class="c3"
+          dir="ltr"
+        >
+          <div
+            class="c4"
+            dir="ltr"
+          >
+            <span
+              class="c5"
+            >
+              ۱
+            </span>
+          </div>
+          <div
+            class="c6"
+            dir="ltr"
+          >
+            <div
+              class="c7"
+            >
+              <a
+                class="c8"
+                href="https://www.bbc.com/vietnamese/institutional-49283563"
+              >
+                ایران از لغو 'رزمایش قطع اینترنت' خبر داد
+              </a>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div
+          class="c3"
+          dir="ltr"
+        >
+          <div
+            class="c4"
+            dir="ltr"
+          >
+            <span
+              class="c5"
+            >
+              ۲
+            </span>
+          </div>
+          <div
+            class="c6"
+            dir="ltr"
+          >
+            <div
+              class="c7"
+            >
+              <a
+                class="c8"
+                href="https://www.bbc.com/vietnamese/institutional-49283563"
+              >
+                ایران از لغو 'رزمایش قطع اینترنت' خبر داد
+              </a>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div
+          class="c3"
+          dir="ltr"
+        >
+          <div
+            class="c4"
+            dir="ltr"
+          >
+            <span
+              class="c5"
+            >
+              ۳
+            </span>
+          </div>
+          <div
+            class="c6"
+            dir="ltr"
+          >
+            <div
+              class="c7"
+            >
+              <a
+                class="c8"
+                href="https://www.bbc.com/vietnamese/institutional-49283563"
+              >
+                ایران از لغو 'رزمایش قطع اینترنت' خبر داد
+              </a>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div
+          class="c3"
+          dir="ltr"
+        >
+          <div
+            class="c4"
+            dir="ltr"
+          >
+            <span
+              class="c5"
+            >
+              ۴
+            </span>
+          </div>
+          <div
+            class="c6"
+            dir="ltr"
+          >
+            <div
+              class="c7"
+            >
+              <a
+                class="c8"
+                href="https://www.bbc.com/vietnamese/institutional-49283563"
+              >
+                ایران از لغو 'رزمایش قطع اینترنت' خبر داد
+              </a>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div
+          class="c3"
+          dir="ltr"
+        >
+          <div
+            class="c4"
+            dir="ltr"
+          >
+            <span
+              class="c5"
+            >
+              ۵
+            </span>
+          </div>
+          <div
+            class="c6"
+            dir="ltr"
+          >
+            <div
+              class="c7"
+            >
+              <a
+                class="c8"
+                href="https://www.bbc.com/vietnamese/institutional-49283563"
+              >
+                ایران از لغو 'رزمایش قطع اینترنت' خبر داد
+              </a>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div
+          class="c3"
+          dir="ltr"
+        >
+          <div
+            class="c4"
+            dir="ltr"
+          >
+            <span
+              class="c5"
+            >
+              ۶
+            </span>
+          </div>
+          <div
+            class="c6"
+            dir="ltr"
+          >
+            <div
+              class="c7"
+            >
+              <a
+                class="c8"
+                href="https://www.bbc.com/vietnamese/institutional-49283563"
+              >
+                ایران از لغو 'رزمایش قطع اینترنت' خبر داد
+              </a>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div
+          class="c3"
+          dir="ltr"
+        >
+          <div
+            class="c4"
+            dir="ltr"
+          >
+            <span
+              class="c5"
+            >
+              ۷
+            </span>
+          </div>
+          <div
+            class="c6"
+            dir="ltr"
+          >
+            <div
+              class="c7"
+            >
+              <a
+                class="c8"
+                href="https://www.bbc.com/vietnamese/institutional-49283563"
+              >
+                ایران از لغو 'رزمایش قطع اینترنت' خبر داد
+              </a>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div
+          class="c3"
+          dir="ltr"
+        >
+          <div
+            class="c4"
+            dir="ltr"
+          >
+            <span
+              class="c5"
+            >
+              ۸
+            </span>
+          </div>
+          <div
+            class="c6"
+            dir="ltr"
+          >
+            <div
+              class="c7"
+            >
+              <a
+                class="c8"
+                href="https://www.bbc.com/vietnamese/institutional-49283563"
+              >
+                ایران از لغو 'رزمایش قطع اینترنت' خبر داد
+              </a>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div
+          class="c3"
+          dir="ltr"
+        >
+          <div
+            class="c4"
+            dir="ltr"
+          >
+            <span
+              class="c5"
+            >
+              ۹
+            </span>
+          </div>
+          <div
+            class="c6"
+            dir="ltr"
+          >
+            <div
+              class="c7"
+            >
+              <a
+                class="c8"
+                href="https://www.bbc.com/vietnamese/institutional-49283563"
+              >
+                ایران از لغو 'رزمایش قطع اینترنت' خبر داد
+              </a>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div
+          class="c3"
+          dir="ltr"
+        >
+          <div
+            class="c4"
+            dir="ltr"
+          >
+            <span
+              class="c5"
+            >
+              ۱۰
+            </span>
+          </div>
+          <div
+            class="c6"
+            dir="ltr"
+          >
+            <div
+              class="c7"
+            >
+              <a
+                class="c8"
+                href="https://www.bbc.com/vietnamese/institutional-49283563"
+              >
+                ایران از لغو 'رزمایش قطع اینترنت' خبر داد
+              </a>
+            </div>
+          </div>
+        </div>
+      </li>
+    </div>
+  </div>
+</ol>
+`;
