@@ -11,7 +11,7 @@ exports[`Most read count should render ltr correctly 1`] = `
   margin: 0;
   padding: 0;
   display: inline-block;
-  min-width: 3rem;
+  width: 3rem;
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
@@ -46,7 +46,7 @@ exports[`Most read count should render ltr double digit correctly 1`] = `
   margin: 0;
   padding: 0;
   display: inline-block;
-  min-width: 3rem;
+  width: 3rem;
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
@@ -81,7 +81,7 @@ exports[`Most read count should render rtl correctly 1`] = `
   margin: 0;
   padding: 0;
   display: inline-block;
-  min-width: 3rem;
+  width: 3rem;
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
@@ -106,7 +106,7 @@ exports[`Most read count should render rtl correctly 1`] = `
 `;
 
 exports[`Most read item should render last updated date correctly 1`] = `
-.c1 {
+.c2 {
   font-size: 0.875rem;
   line-height: 1.125rem;
   color: #6E6E73;
@@ -116,7 +116,7 @@ exports[`Most read item should render last updated date correctly 1`] = `
   font-style: normal;
 }
 
-.c0 {
+.c1 {
   font-size: 1.125rem;
   line-height: 1.375rem;
   font-family: ReithSerif,Helvetica,Arial,sans-serif;
@@ -127,49 +127,63 @@ exports[`Most read item should render last updated date correctly 1`] = `
   text-decoration: none;
 }
 
-.c0:hover,
-.c0:focus {
+.c1:hover,
+.c1:focus {
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
+.c0 {
+  padding-top: 0.3rem;
+  padding-left: 0.3rem;
+}
+
 @media (min-width:20rem) and (max-width:37.4375rem) {
-  .c1 {
+  .c2 {
     font-size: 0.875rem;
     line-height: 1.125rem;
   }
 }
 
 @media (min-width:37.5rem) {
-  .c1 {
+  .c2 {
     font-size: 0.8125rem;
     line-height: 1rem;
   }
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
-  .c0 {
+  .c1 {
     font-size: 1.25rem;
     line-height: 1.5rem;
   }
 }
 
 @media (min-width:37.5rem) {
-  .c0 {
+  .c1 {
     font-size: 1.5rem;
     line-height: 1.75rem;
   }
 }
 
-<div>
+@media (min-width:37.5rem) {
+  .c0 {
+    padding-top: 0.5rem;
+    padding-left: 1rem;
+  }
+}
+
+<div
+  class="c0"
+>
   <a
-    class="c0"
+    class="c1"
     href="https://www.bbc.com/vietnamese/institutional-49283563"
   >
     John Lewis staff bonus cut again as profits fall
   </a>
   <time
-    class="c1"
+    class="c2"
     datetime="2019-03-01T14:00+00:00"
   >
     Last updated: 5th November 2016
@@ -178,7 +192,7 @@ exports[`Most read item should render last updated date correctly 1`] = `
 `;
 
 exports[`Most read item should render ltr correctly 1`] = `
-.c0 {
+.c1 {
   font-size: 1.125rem;
   line-height: 1.375rem;
   font-family: ReithSerif,Helvetica,Arial,sans-serif;
@@ -189,36 +203,52 @@ exports[`Most read item should render ltr correctly 1`] = `
   text-decoration: none;
 }
 
-.c0:hover,
-.c0:focus {
+.c1:hover,
+.c1:focus {
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
+.c0 {
+  padding-top: 0.3rem;
+  padding-left: 0.3rem;
+}
+
 @media (min-width:20rem) and (max-width:37.4375rem) {
-  .c0 {
+  .c1 {
     font-size: 1.25rem;
     line-height: 1.5rem;
   }
 }
 
 @media (min-width:37.5rem) {
-  .c0 {
+  .c1 {
     font-size: 1.5rem;
     line-height: 1.75rem;
   }
 }
 
-<a
+@media (min-width:37.5rem) {
+  .c0 {
+    padding-top: 0.5rem;
+    padding-left: 1rem;
+  }
+}
+
+<div
   class="c0"
-  href="https://www.bbc.com/vietnamese/institutional-49283563"
 >
-  John Lewis staff bonus cut again as profits fall
-</a>
+  <a
+    class="c1"
+    href="https://www.bbc.com/vietnamese/institutional-49283563"
+  >
+    John Lewis staff bonus cut again as profits fall
+  </a>
+</div>
 `;
 
 exports[`Most read item should render rtl correctly 1`] = `
-.c0 {
+.c1 {
   font-size: 1.5rem;
   line-height: 2rem;
   font-family: "BBC Nassim Persian",Arial,Verdana,Geneva,Helvetica,sans-serif;
@@ -229,30 +259,46 @@ exports[`Most read item should render rtl correctly 1`] = `
   text-decoration: none;
 }
 
-.c0:hover,
-.c0:focus {
+.c1:hover,
+.c1:focus {
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
+.c0 {
+  padding-top: 0.3rem;
+  padding-left: 0.3rem;
+}
+
 @media (min-width:20rem) and (max-width:37.4375rem) {
-  .c0 {
+  .c1 {
     font-size: 1.625rem;
     line-height: 2.25rem;
   }
 }
 
 @media (min-width:37.5rem) {
-  .c0 {
+  .c1 {
     font-size: 1.75rem;
     line-height: 2.25rem;
   }
 }
 
-<a
+@media (min-width:37.5rem) {
+  .c0 {
+    padding-top: 0.5rem;
+    padding-left: 1rem;
+  }
+}
+
+<div
   class="c0"
-  href="https://www.bbc.com/vietnamese/institutional-49283563"
 >
-  ایران از لغو 'رزمایش قطع اینترنت' خبر داد
-</a>
+  <a
+    class="c1"
+    href="https://www.bbc.com/vietnamese/institutional-49283563"
+  >
+    ایران از لغو 'رزمایش قطع اینترنت' خبر داد
+  </a>
+</div>
 `;

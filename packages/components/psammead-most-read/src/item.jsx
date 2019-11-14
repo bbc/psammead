@@ -2,7 +2,7 @@ import React from 'react';
 import { node, shape, string } from 'prop-types';
 import styled from 'styled-components';
 import { getFoolscap, getDoublePica } from '@bbc/gel-foundations/typography';
-import { GEL_GROUP_3_SCREEN_WIDTH_MIN } from '@bbc/gel-foundations/esm/breakpoints';
+import { GEL_GROUP_3_SCREEN_WIDTH_MIN } from '@bbc/gel-foundations/breakpoints';
 import { C_EBON, C_POSTBOX } from '@bbc/psammead-styles/colours';
 import { scriptPropType } from '@bbc/gel-foundations/prop-types';
 import {
