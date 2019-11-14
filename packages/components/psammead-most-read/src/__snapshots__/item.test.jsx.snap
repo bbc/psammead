@@ -134,8 +134,8 @@ exports[`Most read item should render last updated date correctly 1`] = `
 }
 
 .c0 {
-  padding-top: 0.3rem;
-  padding-left: 0.3rem;
+  padding-top: 0.25rem;
+  padding-left: 0.25rem;
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
@@ -210,8 +210,8 @@ exports[`Most read item should render ltr correctly 1`] = `
 }
 
 .c0 {
-  padding-top: 0.3rem;
-  padding-left: 0.3rem;
+  padding-top: 0.25rem;
+  padding-left: 0.25rem;
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
@@ -266,8 +266,8 @@ exports[`Most read item should render rtl correctly 1`] = `
 }
 
 .c0 {
-  padding-top: 0.3rem;
-  padding-left: 0.3rem;
+  padding-top: 0.25rem;
+  padding-left: 0.25rem;
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
