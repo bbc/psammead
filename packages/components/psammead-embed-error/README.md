@@ -6,7 +6,7 @@ This component is currently tagged as alpha and is not suitable for production u
 
 ## Description
 
-The `EmbedError` component provides a generic error for embeds. Here an 'embed' refers to content embedded in an iframe. The error message this component provides is designed to be used in isolation. It will fill the viewport and position its content accordingly.
+The `EmbedError` component provides a generic error for embeds. Here 'embed' refers to content embedded in an iframe. The content this component provides will fill the viewport and position itself accordingly. It is therefore designed to be used in isolation, as the sole content in a page.
 
 ## Installation
 
@@ -16,10 +16,10 @@ npm install @bbc/psammead-embed-error --save
 
 ## Props
 
-| Argument  | Type | Required | Default | Example |
-| --------- | ---- | -------- | ------- | ------- |
-| `service` | String | No | `news` | `arabic` |
-| `message` | String | Yes | - | `Sorry, the server's on fire.` |
+| Argument  | Type   | Required | Default | Example                        |
+| --------- | ------ | -------- | ------- | ------------------------------ |
+| `service` | String | No       | `news`  | `arabic`                       |
+| `message` | String | Yes      | -       | `Sorry, the server's on fire.` |
 
 ## Usage
 
@@ -30,22 +30,22 @@ This component is particularly useful if you serve content from an iframe and wa
 
 import EmbedError from "@bbc/psammead-embed-error"
 
-// ...
-
-if (error) {
-  <EmbedError message="Sorry, the server's on fire." />
-}
+const Page = () => {
+  if (error) {
+    return <EmbedError message="Sorry, the server's on fire." />;
+  }
+};
 ```
 
 ```
 // https://www.bbc.co.uk/news/articles/the-truth-about-cats
 
-<iframe src="https://www.bbc.co.uk/news/av-embed/a-cat-video"></iframe>
+<iframe src="https://www.bbc.co.uk/news/av-embed/a-video-about-cats"></iframe>
 ```
 
 ### When to use this component
 
-This component should be used when you want an error message to fillw the viewport and position its content accordingly.
+This component should be used when you want an error message to fill the viewport and position its content accordingly.
 
 ### When not to use this component
 
@@ -53,7 +53,7 @@ This component is not designed for use alongside other content, because it fills
 
 ### Accessibility notes
 
-This component's error message is wrapped in a `<strong>` element, indicating it is important content to users of assistive technology. This is similar behaviour to the Guidance message component used in Media Player's Placeholder.
+This component's error message is wrapped in a `<strong>` element, indicating to users of assistive technology that it is important content. This is similar behaviour to the Guidance message component used in Media Player's Placeholder.
 
 ### Roadmap
 
