@@ -7,7 +7,7 @@
   "main": "dist/index.js",
   "module": "esm/index.js",
   "sideEffects": false,
-  "description": "A generic error for embeds.",
+  "description": "A lean error page for embedded content.",
   "repository": {
     "type": "git",
     "url": "https://github.com/bbc/psammead/tree/latest/packages/components/psammead-embed-error"
