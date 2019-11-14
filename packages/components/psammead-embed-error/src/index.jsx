@@ -7,7 +7,7 @@ import { getSansRegular } from '@bbc/psammead-styles/font-styles';
 import { GEL_BODY_COPY } from '@bbc/gel-foundations/typography';
 import { BBC_BLOCKS } from '@bbc/psammead-assets/svgs';
 
-const StyledAvEmbedError = styled.div`
+const StyledEmbedError = styled.div`
   ${({ service }) => getSansRegular(service)}
   ${GEL_BODY_COPY};
   background-color: ${C_CHALK};
@@ -20,7 +20,7 @@ const StyledAvEmbedError = styled.div`
   position: relative;
 `;
 
-const StyledMessage = styled.p`
+const StyledErrorMessage = styled.p`
   position: absolute;
   margin: ${GEL_SPACING_TRPL};
   bottom: 0;
@@ -31,11 +31,11 @@ const StyledMessage = styled.p`
 `;
 
 const EmbedError = ({ service, message }) => (
-  <StyledAvEmbedError service={service}>
-    <StyledMessage>
+  <StyledEmbedError service={service}>
+    <StyledErrorMessage>
       <strong>{message}</strong>
-    </StyledMessage>
-  </StyledAvEmbedError>
+    </StyledErrorMessage>
+  </StyledEmbedError>
 );
 
 EmbedError.defaultProps = {
