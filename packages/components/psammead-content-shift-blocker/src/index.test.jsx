@@ -44,7 +44,9 @@ beforeEach(() => {
       this._scrollHeight = val;
     },
   });
-  global.pageYOffset = 300;
+
+  global.pageYOffset = 300; // set the scroll Y position to an arbitrary number
+
   document.body.scrollHeight = 768; // set the default height of the document
 });
 
