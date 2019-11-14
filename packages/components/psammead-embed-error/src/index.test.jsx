@@ -4,7 +4,7 @@ import EmbedError from './index';
 
 describe('EmbedError', () => {
   shouldMatchSnapshot(
-    'renders an embed error',
+    'renders a default embed error',
     <EmbedError message="Sorry, we're unable to bring you this media right now." />,
   );
 });
