@@ -11,7 +11,7 @@ import { scriptPropType } from '@bbc/gel-foundations/prop-types';
 import Grid from '../../psammead-grid';
 import { MostReadRank, MostReadLink } from './item';
 
-const MostReadItemColumns = {
+const MostReadItemProps = {
   columns: {
     group0: 5,
     group1: 5,
@@ -22,7 +22,7 @@ const MostReadItemColumns = {
   },
 };
 
-const MostReadRankColumns = {
+const MostReadRankProps = {
   item: true,
   columns: {
     group0: 1,
@@ -34,7 +34,7 @@ const MostReadRankColumns = {
   },
 };
 
-const MostReadLinkColumns = {
+const MostReadLinkProps = {
   item: true,
   columns: {
     group0: 4,
@@ -46,7 +46,7 @@ const MostReadLinkColumns = {
   },
 };
 
-const MostReadListColumns = {
+const MostReadListProps = {
   enableGelGutters: true,
   enableGelMargins: true,
   columns: {
@@ -83,13 +83,13 @@ const StyledOl = styled.ol.attrs({
 
 const MostReadItem = ({ service, script, item, rank, dir }) => (
   <li>
-    <Grid {...MostReadItemColumns} dir={dir}>
-      <Grid {...MostReadRankColumns} dir={dir}>
+    <Grid {...MostReadItemProps} dir={dir}>
+      <Grid {...MostReadRankProps} dir={dir}>
         <MostReadRank service={service} script={script}>
           {rank}
         </MostReadRank>
       </Grid>
-      <Grid {...MostReadLinkColumns} dir={dir}>
+      <Grid {...MostReadLinkProps} dir={dir}>
         <MostReadLink service={service} item={item} script={script} />
       </Grid>
     </Grid>
@@ -100,7 +100,7 @@ const MostReadList = ({ items, service, script, dir }) => {
   const numerals = serviceNumerals(service);
   return (
     <StyledOl>
-      <Grid {...MostReadListColumns} dir={dir}>
+      <Grid {...MostReadListProps} dir={dir}>
         {items.map((item, i) => {
           const rank = numerals[i + 1];
           return (
