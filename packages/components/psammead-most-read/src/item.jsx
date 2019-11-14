@@ -2,6 +2,7 @@ import React from 'react';
 import { node, shape, string } from 'prop-types';
 import styled from 'styled-components';
 import { getFoolscap, getDoublePica } from '@bbc/gel-foundations/typography';
+import { GEL_GROUP_3_SCREEN_WIDTH_MIN } from '@bbc/gel-foundations/esm/breakpoints';
 import { C_EBON, C_POSTBOX } from '@bbc/psammead-styles/colours';
 import { scriptPropType } from '@bbc/gel-foundations/prop-types';
 import {
@@ -16,7 +17,7 @@ export const MostReadRank = styled.span`
   margin: 0; /* Reset */
   padding: 0;
   display: inline-block;
-  min-width: 3rem;
+  width: 3rem;
 `;
 
 const StyledLink = styled.a`
@@ -32,18 +33,27 @@ const StyledLink = styled.a`
   }
 `;
 
+const StyledItem = styled.div`
+  padding-top: 0.3rem;
+  padding-left: 0.3rem;
+  
+  @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
+    padding-top: 0.5rem;
+    padding-left: 1rem;
+`;
+
 export const MostReadItem = ({
   lastUpdated,
   script,
   service,
   item: { title, href },
 }) => (
-  <>
+  <StyledItem>
     <StyledLink href={href} script={script} service={service}>
       {title}
     </StyledLink>
     {lastUpdated}
-  </>
+  </StyledItem>
 );
 
 MostReadRank.propTypes = {

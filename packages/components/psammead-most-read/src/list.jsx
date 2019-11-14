@@ -17,9 +17,7 @@ const StyledOl = styled.ol.attrs({
 const StyledLi = styled.li.attrs({
   role: 'listitem',
 })`
-  margin: 1rem;
-  padding: 0;
-  background: #99ffff;
+  padding: 0.2rem;
 `;
 
 const serviceNumerals = {
