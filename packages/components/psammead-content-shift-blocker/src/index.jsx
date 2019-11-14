@@ -19,13 +19,11 @@ const Wrapper = styled.div`
 `;
 
 const initIntersectionObserver = ({ wrapperEl, setWrapperIO }) => {
-  let IO;
   const init = () => {
     const callback = ([wrapperEntry]) => {
       setWrapperIO(wrapperEntry);
     };
-    IO = new IntersectionObserver(callback);
-    IO.observe(wrapperEl.current);
+    return new IntersectionObserver(callback).observe(wrapperEl.current);
   };
 
   if ('IntersectionObserver' in window) {
@@ -36,21 +34,17 @@ const initIntersectionObserver = ({ wrapperEl, setWrapperIO }) => {
       init();
     });
   }
-  const cleanup = () => {
-    IO.disconnect();
-  };
-  return cleanup;
 };
 
 const initResizeObserver = ({ wrapperEl, setContentElRect }) => {
-  let RO;
-
   const init = ResizeObserver => {
     const callback = ([contentEntry]) => {
       setContentElRect(contentEntry.contentRect);
     };
-    RO = new ResizeObserver(callback);
-    RO.observe(wrapperEl.current.firstChild); // will break if using a fragment :thinking:
+    return new ResizeObserver(callback).observe(
+      wrapperEl.current
+        .firstChild /* will break if using a fragment :thinking: */,
+    );
   };
 
   if ('ResizeObserver' in window) {
@@ -61,10 +55,6 @@ const initResizeObserver = ({ wrapperEl, setContentElRect }) => {
       init(ResizeObserver);
     });
   }
-  const cleanup = () => {
-    RO.disconnect();
-  };
-  return cleanup;
 };
 
 const isScrollAnchoringSupported = () => {
@@ -88,9 +78,14 @@ const ContentShiftBlocker = ({ children, initialHeight, initialWidth }) => {
 
   useEffect(() => {
     // component did mount
-    initIntersectionObserver({ wrapperEl, setWrapperIO });
-    initResizeObserver({ wrapperEl, setContentElRect });
+    const IO = initIntersectionObserver({ wrapperEl, setWrapperIO });
+    const RO = initResizeObserver({ wrapperEl, setContentElRect });
     scrollAnchoringIsSupported.current = isScrollAnchoringSupported();
+
+    return function cleanup() {
+      IO.disconnect();
+      RO.disconnect();
+    };
   }, []);
 
   useLayoutEffect(() => {
