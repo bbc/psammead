@@ -15,7 +15,6 @@ const useWindowWidth = () => {
 
     const handleResize = () => {
       setWidth(getSize());
-      console.log('entro');
     };
 
     window.addEventListener('resize', debounce(handleResize, 100));
