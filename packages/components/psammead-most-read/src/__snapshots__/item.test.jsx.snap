@@ -9,6 +9,7 @@ exports[`Most read count should render ltr correctly 1`] = `
   font-style: normal;
   color: #B80000;
   margin: 0;
+  padding: 0;
   display: inline-block;
   min-width: 3rem;
 }
@@ -43,6 +44,7 @@ exports[`Most read count should render ltr double digit correctly 1`] = `
   font-style: normal;
   color: #B80000;
   margin: 0;
+  padding: 0;
   display: inline-block;
   min-width: 3rem;
 }
@@ -77,6 +79,7 @@ exports[`Most read count should render rtl correctly 1`] = `
   font-style: normal;
   color: #B80000;
   margin: 0;
+  padding: 0;
   display: inline-block;
   min-width: 3rem;
 }
