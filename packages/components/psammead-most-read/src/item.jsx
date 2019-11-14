@@ -36,13 +36,14 @@ const StyledLink = styled.a`
 const StyledItem = styled.div`
   padding-top: 0.3rem;
   padding-left: 0.3rem;
-  
+
   @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
     padding-top: 0.5rem;
     padding-left: 1rem;
+  }
 `;
 
-export const MostReadItem = ({
+export const MostReadLink = ({
   lastUpdated,
   script,
   service,
@@ -61,7 +62,7 @@ MostReadRank.propTypes = {
   script: shape(scriptPropType).isRequired,
 };
 
-MostReadItem.propTypes = {
+MostReadLink.propTypes = {
   service: string.isRequired,
   script: shape(scriptPropType).isRequired,
   lastUpdated: node,
@@ -71,6 +72,6 @@ MostReadItem.propTypes = {
   }).isRequired,
 };
 
-MostReadItem.defaultProps = {
+MostReadLink.defaultProps = {
   lastUpdated: null,
 };

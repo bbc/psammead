@@ -4,9 +4,9 @@ import { shape, string, arrayOf } from 'prop-types';
 import { EasternArabic, WesternArabic } from '@bbc/psammead-locales/numerals';
 import { scriptPropType } from '@bbc/gel-foundations/prop-types';
 import Grid from '../../psammead-grid';
-import { MostReadRank, MostReadItem } from './item';
+import { MostReadRank, MostReadLink } from './item';
 
-const MostReadLiOuterProps = {
+const MostReadItemColumns = {
   columns: {
     group0: 5,
     group1: 5,
@@ -17,7 +17,7 @@ const MostReadLiOuterProps = {
   },
 };
 
-const MostReadLiRankProps = {
+const MostReadRankColumns = {
   item: true,
   columns: {
     group0: 1,
@@ -29,7 +29,7 @@ const MostReadLiRankProps = {
   },
 };
 
-const MostReadLiItemProps = {
+const MostReadLinkColumns = {
   item: true,
   columns: {
     group0: 4,
@@ -41,7 +41,7 @@ const MostReadLiItemProps = {
   },
 };
 
-const MostReadListOuterProps = {
+const MostReadListColumns = {
   enableGelGutters: true,
   enableGelMargins: true,
   columns: {
@@ -73,16 +73,16 @@ const StyledLi = styled.li.attrs({
   padding: 0.2rem;
 `;
 
-const MostReadLi = ({ service, script, item, rank }) => (
+const MostReadItem = ({ service, script, item, rank }) => (
   <StyledLi>
-    <Grid {...MostReadLiOuterProps}>
-      <Grid {...MostReadLiRankProps}>
+    <Grid {...MostReadItemColumns}>
+      <Grid {...MostReadRankColumns}>
         <MostReadRank service={service} script={script}>
           {rank}
         </MostReadRank>
       </Grid>
-      <Grid {...MostReadLiItemProps}>
-        <MostReadItem service={service} item={item} />
+      <Grid {...MostReadLinkColumns}>
+        <MostReadLink service={service} item={item} />
       </Grid>
     </Grid>
   </StyledLi>
@@ -92,9 +92,9 @@ const MostReadList = ({ items, service, script }) => {
   const numerals = serviceNumerals[service];
   return (
     <StyledOl>
-      <Grid {...MostReadListOuterProps}>
+      <Grid {...MostReadListColumns}>
         {items.map((item, i) => (
-          <MostReadLi
+          <MostReadItem
             item={item}
             service={service}
             script={script}
@@ -111,7 +111,7 @@ const itemPropTypes = shape({
   href: string.isRequired,
 });
 
-MostReadLi.propTypes = {
+MostReadItem.propTypes = {
   service: string.isRequired,
   script: shape(scriptPropType).isRequired,
   item: itemPropTypes.isRequired,

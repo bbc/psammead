@@ -2,7 +2,7 @@ import React from 'react';
 import { shouldMatchSnapshot } from '@bbc/psammead-test-helpers';
 import Timestamp from '@bbc/psammead-timestamp';
 import { latin, arabic } from '@bbc/gel-foundations/scripts';
-import { MostReadItem, MostReadRank } from './item';
+import { MostReadLink, MostReadRank } from './item';
 
 const ltrItem = {
   title: 'John Lewis staff bonus cut again as profits fall',
@@ -27,17 +27,17 @@ const lastUpdated = (script, service) => (
 describe('Most read item', () => {
   shouldMatchSnapshot(
     'should render ltr correctly',
-    <MostReadItem service="news" script={latin} dir="ltr" item={ltrItem} />,
+    <MostReadLink service="news" script={latin} dir="ltr" item={ltrItem} />,
   );
 
   shouldMatchSnapshot(
     'should render rtl correctly',
-    <MostReadItem service="persian" script={arabic} dir="rtl" item={rtlItem} />,
+    <MostReadLink service="persian" script={arabic} dir="rtl" item={rtlItem} />,
   );
 
   shouldMatchSnapshot(
     'should render last updated date correctly',
-    <MostReadItem
+    <MostReadLink
       service="news"
       script={latin}
       dir="ltr"

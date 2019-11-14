@@ -3,7 +3,7 @@ import { storiesOf } from '@storybook/react';
 import { withKnobs } from '@storybook/addon-knobs';
 import { withServicesKnob } from '@bbc/psammead-storybook-helpers';
 import Timestamp from '@bbc/psammead-timestamp';
-import { MostReadItem, MostReadRank } from './item';
+import { MostReadLink, MostReadRank } from './item';
 
 const items = [
   {
@@ -34,8 +34,8 @@ const stories = storiesOf('Components|MostRead/Item', module)
   .addDecorator(withServicesKnob());
 
 items.forEach(({ language, ...rest }) => {
-  stories.add(`MostReadItem ${language}`, ({ script, service }) => (
-    <MostReadItem item={rest} service={service} script={script} />
+  stories.add(`MostReadLink ${language}`, ({ script, service }) => (
+    <MostReadLink item={rest} service={service} script={script} />
   ));
 });
 
@@ -44,8 +44,8 @@ const item = {
   href: 'https://www.bbc.com',
 };
 
-stories.add(`MostReadItem with last updated date`, ({ script, service }) => (
-  <MostReadItem
+stories.add(`MostReadLink with last updated date`, ({ script, service }) => (
+  <MostReadLink
     item={item}
     service={service}
     script={script}
