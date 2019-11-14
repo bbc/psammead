@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`EmbedError renders an embed error message 1`] = `
+exports[`EmbedError renders an embed error 1`] = `
 .c0 {
   font-family: ReithSans,Helvetica,Arial,sans-serif;
   font-weight: 400;
