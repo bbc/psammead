@@ -14,7 +14,10 @@ import {
   GEL_SPACING,
   GEL_SPACING_DBL,
 } from '@bbc/gel-foundations/spacings';
-import { GEL_GROUP_3_SCREEN_WIDTH_MIN } from '@bbc/gel-foundations/breakpoints';
+import {
+  GEL_GROUP_2_SCREEN_WIDTH_MAX,
+  GEL_GROUP_3_SCREEN_WIDTH_MIN,
+} from '@bbc/gel-foundations/breakpoints';
 import { getPica } from '@bbc/gel-foundations/typography';
 import { scriptPropType } from '@bbc/gel-foundations/prop-types';
 import { getSansRegular } from '@bbc/psammead-styles/font-styles';
@@ -96,7 +99,11 @@ export const DropdownNavigationLi = ({
   <DropdownLi role="listitem">
     {active && currentPageText ? (
       <StyledDropdownLink script={script} service={service} href={url}>
-        <StyledCurrentLink dir={dir}>
+        <StyledCurrentLink
+          dir={dir}
+          // eslint-disable-next-line jsx-a11y/aria-role
+          role="text"
+        >
           <VisuallyHiddenText>{currentPageText}</VisuallyHiddenText>
           {children}
         </StyledCurrentLink>
@@ -154,6 +161,10 @@ const HamburgerButton = styled.button`
   @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
     display: none;
   }
+
+  @media (max-width: ${GEL_GROUP_2_SCREEN_WIDTH_MAX}) {
+    display: inline-block;
+  }
 `;
 
 export const AmpHamburgerMenu = ({ announcedText, openAction }) => (
@@ -177,7 +188,7 @@ export const CanonicalHamburgerMenu = ({ announcedText, openAction }) => (
 );
 
 DropdownNavigationLi.propTypes = {
-  children: node.isRequired,
+  children: string.isRequired,
   url: string.isRequired,
   script: shape(scriptPropType).isRequired,
   service: string.isRequired,
