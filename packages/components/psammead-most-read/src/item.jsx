@@ -14,6 +14,7 @@ export const MostReadRank = styled.span`
   ${({ service }) => getSerifLight(service)}
   color: ${C_POSTBOX};
   margin: 0; /* Reset */
+  padding: 0;
   display: inline-block;
   min-width: 3rem;
 `;
@@ -22,6 +23,7 @@ const StyledLink = styled.a`
   ${({ script }) => script && getDoublePica(script)};
   ${({ service }) => getSerifMedium(service)}
   color: ${C_EBON};
+  
   text-decoration: none;
   
   &:hover,
