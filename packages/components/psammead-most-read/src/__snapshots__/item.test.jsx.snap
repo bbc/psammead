@@ -122,7 +122,6 @@ exports[`Most read item should render last updated date correctly 1`] = `
   color: #222222;
   -webkit-text-decoration: none;
   text-decoration: none;
-  align: top;
 }
 
 .c0:hover,
@@ -185,7 +184,6 @@ exports[`Most read item should render ltr correctly 1`] = `
   color: #222222;
   -webkit-text-decoration: none;
   text-decoration: none;
-  align: top;
 }
 
 .c0:hover,
@@ -226,7 +224,6 @@ exports[`Most read item should render rtl correctly 1`] = `
   color: #222222;
   -webkit-text-decoration: none;
   text-decoration: none;
-  align: top;
 }
 
 .c0:hover,
