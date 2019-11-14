@@ -1,9 +1,12 @@
+/* eslint-disable react/prop-types */
+
 import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
 import { storiesOf } from '@storybook/react';
 import { withKnobs } from '@storybook/addon-knobs';
 import Paragraph from '@bbc/psammead-paragraph';
 import { Headline } from '@bbc/psammead-headings';
+import { withServicesKnob } from '@bbc/psammead-storybook-helpers';
 import notes from '../README.md';
 import ContentShiftBlocker from './index';
 
@@ -18,6 +21,7 @@ const Wrapper = styled.div`
 const StyledImage = styled.img`
   display: block;
 `;
+
 const renderImage = src => <StyledImage src={src} alt="Lovely dogs :)" />;
 
 const ImageTicker = () => {
@@ -37,7 +41,7 @@ const ImageTicker = () => {
   return renderImage(`https://placekitten.com/${sizes}`);
 };
 
-const Gallery = () => {
+const Gallery = ({ script, service }) => {
   const StyledFigure = styled.figure`
     border: solid #ccc 1px;
     padding: 16px;
@@ -53,7 +57,9 @@ const Gallery = () => {
         <ImageTicker />
       </ContentShiftBlocker>
       <StyledCaption>
-        <Paragraph service="news">A gallery of good dogs :)</Paragraph>
+        <Paragraph script={script} service={service}>
+          A gallery of good dogs :)
+        </Paragraph>
       </StyledCaption>
     </StyledFigure>
   );
@@ -64,22 +70,26 @@ const paragraphs = [
   'Smol puggorino clouds puggo, waggy wags. Extremely cuuuuuute you are doing me the shock borkdrive yapper, you are doin me a concern. Lotsa pats extremely cuuuuuute pupper ruff very jealous pupper adorable doggo doggo, aqua doggo you are doing me the shock boofers wow such tempt borkf. Tungg lotsa pats heck big ol, wow such tempt. Floofs he made many woofs heckin good boys and girls porgo boof, fat boi big ol pupper. What a nice floof wow very biscit yapper, heckin. Noodle horse bork puggo doggo adorable doggo wrinkler heck, fat boi very jealous pupper shooberino porgo. Extremely cuuuuuute tungg borkdrive big ol pupper shibe waggy wags borkdrive heckin, wrinkler you are doing me a frighten pupper porgo blop length boy. Long doggo thicc long woofer, porgo. Boof long woofer super chub fluffer yapper, extremely cuuuuuute sub woofer. borkdrive yapper long water shoob. I am bekom fat you are doing me the shock ur givin me a spook, extremely cuuuuuute.',
   'Fat boi heckin good boys and girls ruff puggorino big ol pupper thicc, many pats much ruin diet you are doing me a frighten sub woofer vvv, lotsa pats snoot much ruin diet puggo. fat boi shooberino long bois. Noodle horse thicc much ruin diet puggorino lotsa pats, noodle horse yapper very good spot. Doggorino shoob super chub such treat, pupper very good spot. Smol borking doggo with a long snoot for pats clouds pupper borkf maximum borkdrive, puggo snoot floofs. very good spot yapper you are doing me a frighten. Blep smol borking doggo with a long snoot for pats heck borkf, lotsa pats.',
 ];
-const renderedParagraphs = paragraphs.map(paragraph => (
-  <Paragraph service="news">{paragraph}</Paragraph>
-));
+const renderParagraphs = ({ script, service }) =>
+  paragraphs.map(paragraph => (
+    <Paragraph script={script} service={service}>
+      {paragraph}
+    </Paragraph>
+  ));
 
 storiesOf('Components|ContentShiftBlocker', module)
   .addDecorator(withKnobs)
+  .addDecorator(withServicesKnob())
   .add(
     'vertical content shift',
-    () => {
+    ({ script, service }) => {
       return (
         <Wrapper>
           <Headline>The Daily Doggo</Headline>
-          {renderedParagraphs}
-          <Gallery />
-          {renderedParagraphs}
-          {renderedParagraphs}
+          {renderParagraphs({ script, service })}
+          <Gallery script={script} service={service} />
+          {renderParagraphs({ script, service })}
+          {renderParagraphs({ script, service })}
         </Wrapper>
       );
     },

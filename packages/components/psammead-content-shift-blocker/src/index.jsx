@@ -18,8 +18,7 @@ const Wrapper = styled.div`
   width: ${getWidth};
 `;
 
-const initIntersectionObserver = ({ wrapperEl, setWrapperIO }) => () => {
-  // component did mount
+const initIntersectionObserver = ({ wrapperEl, setWrapperIO }) => {
   let IO;
   const init = () => {
     const callback = ([wrapperEntry]) => {
@@ -43,7 +42,7 @@ const initIntersectionObserver = ({ wrapperEl, setWrapperIO }) => () => {
   return cleanup;
 };
 
-const initResizeObserver = ({ wrapperEl, setContentElRect }) => () => {
+const initResizeObserver = ({ wrapperEl, setContentElRect }) => {
   let RO;
 
   const init = ResizeObserver => {
@@ -87,11 +86,11 @@ const ContentShiftBlocker = ({ children, initialHeight, initialWidth }) => {
     width: initialWidth,
   });
 
-  useEffect(initIntersectionObserver({ setWrapperIO, wrapperEl }), []); // runs only on mount
-  useEffect(initResizeObserver({ setContentElRect, wrapperEl }), []); // runs only on mount
   useEffect(() => {
-    // runs only on mount
-    isScrollAnchoringSupported.current = isScrollAnchoringSupported();
+    // component did mount
+    initIntersectionObserver({ wrapperEl, setWrapperIO });
+    initResizeObserver({ wrapperEl, setContentElRect });
+    scrollAnchoringIsSupported.current = isScrollAnchoringSupported();
   }, []);
 
   useLayoutEffect(() => {
