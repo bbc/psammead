@@ -96,8 +96,9 @@ const ContentShiftBlocker = ({ children, initialHeight, initialWidth }) => {
 
   useEffect(() => {
     // wrapper did resize
-    if (scrollAnchorIsSupported.current || scrollHeight.current === null)
+    if (scrollAnchorIsSupported.current || scrollHeight.current === null) {
       return;
+    }
 
     const { scrollHeight: newScrollHeight } = document.body;
     const { current: prevScrollHeight } = scrollHeight;
