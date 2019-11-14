@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 import styled, { css } from 'styled-components';
 import { shape, string, node, bool, oneOf } from 'prop-types';
 import VisuallyHiddenText from '@bbc/psammead-visually-hidden-text';
@@ -223,13 +223,30 @@ const Navigation = ({ children, dir }) => {
   const width = useWindowWidth();
   const isOverflowed = useOverflowed(ref, width);
 
+  const [scrollEnd, setScrollEnd] = useState(false);
+
+  const handleScroll = event => {
+    const { scrollLeft, scrollWidth } = event.target;
+
+    const isEnd =
+      scrollWidth - Math.abs(scrollLeft) === event.target.offsetWidth;
+
+    if (isEnd) {
+      setScrollEnd(true);
+    } else {
+      setScrollEnd(false);
+    }
+  };
+
   return (
     <StyledNav role="navigation" dir={dir}>
       <NavWrapper>
         <SwipeableNav
+          onScroll={handleScroll}
           ref={ref}
           dir={dir}
           overflowed={isOverflowed}
+          scrollEnd={scrollEnd}
           {...ariaHidden}
         >
           {React.Children.map(children, child =>

@@ -19,8 +19,9 @@ const SwipeableNav = styled.div`
       display: none;
     }
 
-    ${({ overflowed }) =>
+    ${({ overflowed, scrollEnd }) =>
       overflowed &&
+      !scrollEnd &&
       css`
         &:before {
           content: ' ';

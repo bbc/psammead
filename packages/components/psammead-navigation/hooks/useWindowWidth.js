@@ -15,8 +15,8 @@ const useWindowWidth = () => {
     const handleResize = () => {
       setWidth(getSize());
     };
-    window.addEventListener('resize', handleResize);
 
+    window.addEventListener('resize', handleResize);
     return () => {
       window.removeEventListener('resize', handleResize);
     };
