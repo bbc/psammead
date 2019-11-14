@@ -1,5 +1,5 @@
 {
-  "name": "@bbc/psammead-av-embed-error",
+  "name": "@bbc/psammead-embed-error",
   "version": "1.0.0.alpha.1",
   "publishConfig": {
     "tag": "alpha"
@@ -10,7 +10,7 @@
   "description": "A generic error message that is designed to be displayed in an AV embed.",
   "repository": {
     "type": "git",
-    "url": "https://github.com/BBC-News/psammead/tree/latest/packages/components/psammead-av-embed-error"
+    "url": "https://github.com/BBC-News/psammead/tree/latest/packages/components/psammead-embed-error"
   },
   "author": {
     "name": "Psammead Maintainers",
@@ -20,7 +20,7 @@
   "bugs": {
     "url": "https://github.com/bbc/psammead/issues"
   },
-  "homepage": "https://github.com/BBC-News/psammead/blob/latest/packages/components/psammead-av-embed-error/README.md",
+  "homepage": "https://github.com/BBC-News/psammead/blob/latest/packages/components/psammead-embed-error/README.md",
   "dependencies": {},
   "peerDependencies": {
     "react": "^16.11.0"

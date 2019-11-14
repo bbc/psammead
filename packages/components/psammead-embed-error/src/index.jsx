@@ -11,46 +11,40 @@ const StyledAvEmbedError = styled.div`
   ${({ service }) => getSansRegular(service)}
   ${GEL_BODY_COPY};
   background-color: ${C_CHALK};
+  background-image: url(data:image/svg+xml;base64,${BBC_BLOCKS});
   background-position: center center;
   background-repeat: no-repeat;
-  background-size: 33.33%;
-  background-image: url(data:image/svg+xml;base64,${BBC_BLOCKS});
+  background-size: 38.2%; // Golden Ratio
   color: ${C_EBON};
-  position: relative;
   height: 100vh;
+  position: relative;
 `;
 
-const MessageWrapper = styled.div`
+const StyledMessage = styled.p`
   position: absolute;
-  bottom: ${GEL_SPACING_TRPL};
-  left: ${GEL_SPACING_TRPL};
+  margin: ${GEL_SPACING_TRPL};
+  bottom: 0;
+
+  strong {
+    font-weight: normal;
+  }
 `;
 
-// const IconWrapper = styled.div`
-//   > svg {
-//     color: ${C_EBON};
-//     fill: currentColor;
-//     height: ${GEL_SPACING_TRPL};
-//     width: ${GEL_SPACING_TRPL};
-//   }
-// `;
-
-const AvEmbedError = ({ service, message }) => (
+const EmbedError = ({ service, message }) => (
   <StyledAvEmbedError service={service}>
-    <MessageWrapper>
-      {/* <IconWrapper aria-hidden="true">{mediaIcons[type]}</IconWrapper> */}
+    <StyledMessage>
       <strong>{message}</strong>
-    </MessageWrapper>
+    </StyledMessage>
   </StyledAvEmbedError>
 );
 
-AvEmbedError.defaultProps = {
+EmbedError.defaultProps = {
   service: 'news',
 };
 
-AvEmbedError.propTypes = {
+EmbedError.propTypes = {
   service: string,
   message: string.isRequired,
 };
 
-export default AvEmbedError;
+export default EmbedError;

@@ -3,15 +3,15 @@ import { storiesOf } from '@storybook/react';
 import { withKnobs, text } from '@storybook/addon-knobs';
 import { withServicesKnob } from '@bbc/psammead-storybook-helpers';
 import notes from '../README.md';
-import AvEmbedError from './index';
+import EmbedError from './index';
 
-storiesOf('Components|AvEmbedError', module)
+storiesOf('Components|EmbedError', module)
   .addDecorator(withKnobs)
   .addDecorator(withServicesKnob())
   .add(
     'default',
     ({ service }) => (
-      <AvEmbedError
+      <EmbedError
         service={service}
         message={text(
           'message',

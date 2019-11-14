@@ -1,11 +1,11 @@
 import React from 'react';
 import { shouldMatchSnapshot } from '@bbc/psammead-test-helpers';
-import AvEmbedError from './index';
+import EmbedError from './index';
 
-describe('AvEmbedError', () => {
+describe('EmbedError', () => {
   shouldMatchSnapshot(
-    'renders an AV-embed error message',
-    <AvEmbedError
+    'renders an embed error message',
+    <EmbedError
       service="news"
       message="Sorry, we're unable to bring you this media right now."
     />,

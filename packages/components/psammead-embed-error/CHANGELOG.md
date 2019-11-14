@@ -1,4 +1,4 @@
-# Av Embed Error Changelog
+# Embed Error Changelog
 
 | Version       | Description                                                                       |
 |---------------|-----------------------------------------------------------------------------------|
