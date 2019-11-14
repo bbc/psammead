@@ -22,6 +22,12 @@ import { getPica } from '@bbc/gel-foundations/typography';
 import { scriptPropType } from '@bbc/gel-foundations/prop-types';
 import { getSansRegular } from '@bbc/psammead-styles/font-styles';
 
+const getStyles = dir => {
+  const direction = dir === 'ltr' ? 'left' : 'right';
+  return `border-${direction}: ${GEL_SPACING_HLF} solid ${C_WHITE};
+          padding-${direction}: ${GEL_SPACING}`;
+};
+
 const DropdownWrapper = styled.div`
   background-color: ${C_EBON};
 
@@ -74,12 +80,7 @@ const StyledDropdownLink = styled.a`
 `;
 
 const StyledCurrentLink = styled.span`
-  ${({ dir }) =>
-    dir === 'ltr'
-      ? `border-left: ${GEL_SPACING_HLF} solid ${C_WHITE};
-        padding-left: ${GEL_SPACING};`
-      : `border-right: ${GEL_SPACING_HLF} solid ${C_WHITE};
-        padding-right: ${GEL_SPACING};`}
+  ${({ dir }) => getStyles(dir)}
 `;
 
 export const DropdownNavigationLi = ({
