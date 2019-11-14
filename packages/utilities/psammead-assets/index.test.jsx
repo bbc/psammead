@@ -7,6 +7,9 @@ const ampBoilerplateExpectedExports = {
   AMP_GEO_JS: 'object',
   AMP_CONSENT_JS: 'object',
   AMP_ANALYTICS_JS: 'object',
+  AMP_BIND: 'object',
+  AMP_LIST: 'object',
+  AMP_MUSTACHE: 'object',
 };
 
 const svgsExpectedExports = {

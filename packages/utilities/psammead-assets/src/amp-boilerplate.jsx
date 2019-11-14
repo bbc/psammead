@@ -28,3 +28,24 @@ export const AMP_ANALYTICS_JS = (
     src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"
   />
 );
+export const AMP_BIND = (
+  <script
+    async
+    custom-element="amp-bind"
+    src="https://cdn.ampproject.org/v0/amp-bind-0.1.js"
+  />
+);
+export const AMP_LIST = (
+  <script
+    async
+    custom-element="amp-list"
+    src="https://cdn.ampproject.org/v0/amp-list-0.1.js"
+  />
+);
+export const AMP_MUSTACHE = (
+  <script
+    async
+    custom-template="amp-mustache"
+    src="https://cdn.ampproject.org/v0/amp-mustache-0.2.js"
+  />
+);
