@@ -37,14 +37,8 @@ import { grid } from '@bbc/psammead-styles/detection';
 const twoOfSixColumnsMaxWidthScaleable = `33.33%`;
 // (2 / 6) * 100 = 0.3333333333 = 33.33%
 
-// const fourOfTwelveColumnsMaxWidthScaleable = `33.33%`;
-// (4 / 12) * 100 = 0.3333333333 = 33.33%
-
 const fourOfSixColumnsMaxWidthScaleable = `66.67%`;
 // (4 / 6) * 100 = 66.6666666667 = 66.67%
-
-// const eightOfTwelveColumnsMaxScaleable = `66.67%`;
-// (8 / 12) * 100 = 66.6666666667 = 66.67%
 
 const fullWidthColumnsMaxScaleable = `100%`;
 // (12 / 12) * 100 = 100 = 100%
