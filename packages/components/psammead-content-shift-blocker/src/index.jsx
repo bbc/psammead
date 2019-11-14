@@ -122,7 +122,7 @@ const ContentShiftBlocker = ({ children, initialHeight, initialWidth }) => {
     const scrollHeightDiff = prevScrollHeight - newScrollHeight;
     const scrollY = window.pageYOffset;
 
-    if (scrollHeightDiff && scrollY > 0) {
+    if (scrollHeightDiff) {
       // adjust scrollY position to prevent visible jump
       window.scrollTo(0, scrollY - scrollHeightDiff);
     }
