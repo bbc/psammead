@@ -28,7 +28,6 @@ const ContentShiftBlocker = ({ children, initialHeight, initialWidth }) => {
     // component did mount
     let IO;
     let RO;
-    let { ResizeObserver } = window;
     if ('CSS' in window) {
       scrollAnchorIsSupported.current = CSS.supports('overflow-anchor', 'auto');
     }
@@ -41,7 +40,7 @@ const ContentShiftBlocker = ({ children, initialHeight, initialWidth }) => {
       IO.observe(wrapperEl.current);
     };
 
-    const initRO = () => {
+    const initRO = (ResizeObserver = window.ResizeObserver) => {
       const callback = ([contentEntry]) => {
         setContentElRect(contentEntry.contentRect);
       };
@@ -61,9 +60,9 @@ const ContentShiftBlocker = ({ children, initialHeight, initialWidth }) => {
     if ('ResizeObserver' in window) {
       initRO();
     } else {
-      import('@juggle/resize-observer').then(module => {
-        ResizeObserver = module.default;
-        initRO();
+      import('resize-observer-polyfill').then(module => {
+        const ResizeObserver = module.default;
+        initRO(ResizeObserver);
       });
     }
     const cleanup = () => {
@@ -78,7 +77,7 @@ const ContentShiftBlocker = ({ children, initialHeight, initialWidth }) => {
 
     if (wrapperIsOutOfView) {
       // wrapper will resize
-      const wrapperIsAboveViewport = wrapperIO.boundingClientRect.y < 0;
+      const wrapperIsAboveViewport = wrapperIO.boundingClientRect.top < 0;
       const {
         width: nextWrapperWidth,
         height: nextWrapperHeight,
@@ -106,7 +105,7 @@ const ContentShiftBlocker = ({ children, initialHeight, initialWidth }) => {
 
     if (scrollHeightDiff) {
       // adjust scrollY position to prevent visible jump
-      window.scrollTo(0, window.scrollY - scrollHeightDiff);
+      window.scrollTo(0, document.documentElement.scrollTop - scrollHeightDiff);
     }
   }, [wrapperDimensions]);
 

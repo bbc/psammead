@@ -8,10 +8,33 @@ import ContentShiftBlocker from '.';
 let IOInstance;
 let ROInstance;
 
-afterEach(() => {
+beforeEach(() => {
   IOInstance = null;
   ROInstance = null;
 
+  delete global.CSS; // delete our mocked CSS.supports API so the scroll adjustment logic is the default behaviour
+
+  global.IntersectionObserver = callback => {
+    // return a mock instance and store it globally so we can fire the callback to simulate an intersection event
+    IOInstance = {
+      observe: jest.fn(),
+      disconnect: jest.fn(),
+      fireIntersectEvent: callback,
+    };
+    return IOInstance;
+  };
+
+  global.ResizeObserver = callback => {
+    // return a mock instance and store it globally so we can fire the callback to simulate a resize event
+    ROInstance = {
+      observe: jest.fn(),
+      disconnect: jest.fn(),
+      fireResizeEvent: callback,
+    };
+    return ROInstance;
+  };
+
+  // mock scrollHeight - not supported in jsdom
   Object.defineProperty(HTMLElement.prototype, 'scrollHeight', {
     configurable: true,
     get() {
@@ -21,47 +44,27 @@ afterEach(() => {
       this._scrollHeight = val;
     },
   });
-  document.body.scrollHeight = 768;
-  jest.clearAllMocks();
+
+  document.body.scrollHeight = 768; // set the default height of the document
 });
 
-window.IntersectionObserver = callback => {
-  IOInstance = {
-    observe: jest.fn(),
-    disconnect: jest.fn(),
-    fireIntersectEvent: entries => callback(entries),
-  };
-  return IOInstance;
-};
-window.ResizeObserver = callback => {
-  ROInstance = {
-    observe: jest.fn(),
-    disconnect: jest.fn(),
-    fireResizeEvent: entries => callback(entries),
-  };
-  return ROInstance;
-};
+afterEach(jest.clearAllMocks);
 
-window.scrollTo = jest.fn();
+global.scrollTo = jest.fn();
 
-jest.mock('intersection-observer', () => jest.fn());
-jest.mock('@juggle/resize-observer');
-
-const getHeight = ({ contentHeight }) => `${contentHeight}px`;
-const getWidth = ({ contentWidth }) => `${contentWidth}px`;
 const Content = styled.div`
-  height: ${getHeight};
-  width: ${getWidth};
+  height: 100px;
+  width: 100px;
 `;
 
 it('should render children', () => {
   const { getByText } = render(
     <ContentShiftBlocker>
-      <span>I should render</span>
+      <Content>Test content</Content>
     </ContentShiftBlocker>,
   );
 
-  expect(getByText('I should render')).toBeTruthy();
+  expect(getByText('Test content')).toBeTruthy();
 });
 
 it('should accept string measurements', () => {
@@ -83,7 +86,7 @@ it('should accept string measurements', () => {
 it('should not resize when in view', async () => {
   const { container } = render(
     <ContentShiftBlocker initialWidth={100} initialHeight={100}>
-      <Content contentWidth={100} contentHeight={100} />
+      <Content />
     </ContentShiftBlocker>,
   );
 
@@ -116,22 +119,19 @@ it('should not resize when in view', async () => {
     ]);
   });
 
-  const wrapperWidth = getComputedStyle(container.firstChild).getPropertyValue(
-    'width',
-  );
-  const wrapperHeight = getComputedStyle(container.firstChild).getPropertyValue(
-    'height',
-  );
-
   // check the wrapper did not resize
-  expect(wrapperWidth).toEqual('100px');
-  expect(wrapperHeight).toEqual('100px');
+  expect(
+    getComputedStyle(container.firstChild).getPropertyValue('width'),
+  ).toEqual('100px');
+  expect(
+    getComputedStyle(container.firstChild).getPropertyValue('height'),
+  ).toEqual('100px');
 });
 
 it('should resize when not in view', () => {
   const { container } = render(
     <ContentShiftBlocker initialWidth={100} initialHeight={100}>
-      <Content contentWidth={100} contentHeight={100} />
+      <Content />
     </ContentShiftBlocker>,
   );
 
@@ -150,7 +150,7 @@ it('should resize when not in view', () => {
       {
         isIntersecting: false,
         boundingClientRect: {
-          y: -9999,
+          top: -9999,
           height: 100,
           width: 100,
         },
@@ -165,29 +165,29 @@ it('should resize when not in view', () => {
       },
     ]);
   });
-
-  const wrapperWidth = getComputedStyle(container.firstChild).getPropertyValue(
-    'width',
-  );
-  const wrapperHeight = getComputedStyle(container.firstChild).getPropertyValue(
-    'height',
-  );
 
   // check the wrapper resized
-  expect(wrapperWidth).toEqual('200px');
-  expect(wrapperHeight).toEqual('200px');
+  expect(
+    getComputedStyle(container.firstChild).getPropertyValue('width'),
+  ).toEqual('200px');
+  expect(
+    getComputedStyle(container.firstChild).getPropertyValue('height'),
+  ).toEqual('200px');
 });
 
-it('should adjust Y scroll position when above viewport and child content gets smaller', () => {
+it('should adjust Y scroll position when above viewport and child content becomes smaller', () => {
+  const expectedXPos = 0;
+  const expectedYPos = -100;
+
   Object.defineProperty(HTMLElement.prototype, 'scrollHeight', {
     get() {
-      this._scrollHeight -= 100; // simulate the viewport getting smaller
+      this._scrollHeight -= 100; // simulate the viewport becoming smaller
       return this._scrollHeight;
     },
   });
   render(
     <ContentShiftBlocker initialWidth={100} initialHeight={100}>
-      <Content contentWidth={100} contentHeight={100} />
+      <Content />
     </ContentShiftBlocker>,
   );
 
@@ -197,35 +197,38 @@ it('should adjust Y scroll position when above viewport and child content gets s
       {
         isIntersecting: false,
         boundingClientRect: {
-          y: -9999,
-          height: 100,
-          width: 100,
+          top: -9999,
+          height: 200,
+          width: 200,
         },
       },
     ]);
     ROInstance.fireResizeEvent([
       {
         contentRect: {
-          height: 200,
-          width: 200,
+          height: 100, // becomes 100px smaller
+          width: 100, // becomes 100px smaller
         },
       },
     ]);
   });
 
-  expect(window.scrollTo).toHaveBeenCalledWith(0, -100);
+  expect(global.scrollTo).toHaveBeenCalledWith(expectedXPos, expectedYPos);
 });
 
-it('should adjust Y scroll position when above viewport and child content gets bigger', () => {
+it('should adjust Y scroll position when above viewport and child content becomes larger', () => {
+  const expectedXPos = 0;
+  const expectedYPos = 100;
+
   render(
     <ContentShiftBlocker initialWidth={100} initialHeight={100}>
-      <Content contentWidth={100} contentHeight={100} />
+      <Content />
     </ContentShiftBlocker>,
   );
 
   Object.defineProperty(HTMLElement.prototype, 'scrollHeight', {
     get() {
-      this._scrollHeight += 100; // simulate the viewport getting bigger
+      this._scrollHeight += 100; // simulate the viewport becoming larger
       return this._scrollHeight;
     },
   });
@@ -236,7 +239,7 @@ it('should adjust Y scroll position when above viewport and child content gets b
       {
         isIntersecting: false,
         boundingClientRect: {
-          y: -9999,
+          top: -9999,
           height: 100,
           width: 100,
         },
@@ -245,36 +248,76 @@ it('should adjust Y scroll position when above viewport and child content gets b
     ROInstance.fireResizeEvent([
       {
         contentRect: {
-          height: 200,
-          width: 200,
+          height: 200, // becomes 100px larger
+          width: 200, // becomes 100px larger
         },
       },
     ]);
   });
 
-  expect(window.scrollTo).toHaveBeenCalledWith(0, 100);
+  expect(global.scrollTo).toHaveBeenCalledWith(expectedXPos, expectedYPos);
 });
 
-// it('should dynamically import the ResizeObserver polyfill', () => {
-//   delete window.ResizeObserver;
+xit('should load ResizeObserver polyfill if not natively suported', async () => {
+  delete global.ResizeObserver;
 
-//   render(
-//     <ContentShiftBlocker initialWidth={100} initialHeight={100}>
-//       <Content contentWidth={100} contentHeight={100} />
-//     </ContentShiftBlocker>,
-//   );
+  expect(global.ResizeObserver).not.toBeTruthy();
 
-//   expect(2).toHaveBeenCalledWith();
-// });
+  await render(
+    <ContentShiftBlocker>
+      <Content />
+    </ContentShiftBlocker>,
+  );
 
-// it('should dynamically import the IntersectionObserver polyfill', () => {
-//   delete window.IntersectionObserver;
+  expect(true).toEqual(true); // TODO
+});
 
-//   render(
-//     <ContentShiftBlocker initialWidth={100} initialHeight={100}>
-//       <Content contentWidth={100} contentHeight={100} />
-//     </ContentShiftBlocker>,
-//   );
+it('should load IntersectionObserver polyfill if not natively supported', async () => {
+  delete global.IntersectionObserver;
 
-//   expect(2).toHaveBeenCalledWith();
-// });
+  expect(global.IntersectionObserver).not.toBeTruthy();
+
+  await render(
+    <ContentShiftBlocker>
+      <Content />
+    </ContentShiftBlocker>,
+  );
+
+  expect(global.IntersectionObserver).toBeTruthy();
+});
+
+it('should not adjust scroll position if CSS scroll anchoring is supported', () => {
+  global.CSS = {
+    supports: () => true, // simulate support for overflow-anchor: auto
+  };
+
+  render(
+    <ContentShiftBlocker>
+      <Content />
+    </ContentShiftBlocker>,
+  );
+
+  act(() => {
+    // simulate above viewport and resize events
+    IOInstance.fireIntersectEvent([
+      {
+        isIntersecting: false,
+        boundingClientRect: {
+          top: -9999,
+          height: 100,
+          width: 100,
+        },
+      },
+    ]);
+    ROInstance.fireResizeEvent([
+      {
+        contentRect: {
+          height: 200, // becomes 100px larger
+          width: 200, // becomes 100px larger
+        },
+      },
+    ]);
+  });
+
+  expect(global.scrollTo).not.toHaveBeenCalled();
+});
