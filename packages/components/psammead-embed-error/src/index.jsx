@@ -14,7 +14,7 @@ const StyledEmbedError = styled.div`
   background-image: url(data:image/svg+xml;base64,${BBC_BLOCKS});
   background-position: center center;
   background-repeat: no-repeat;
-  background-size: 38.2%; // Golden Ratio
+  background-size: 38.2%;
   color: ${C_EBON};
   height: 100vh;
   position: relative;
