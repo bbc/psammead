@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { node, shape, string, arrayOf } from 'prop-types';
+import { shape, string, arrayOf } from 'prop-types';
 import { EasternArabic, WesternArabic } from '@bbc/psammead-locales/numerals';
 import { scriptPropType } from '@bbc/gel-foundations/prop-types';
 import Grid from '../../psammead-grid';
@@ -104,14 +104,6 @@ const MostReadList = ({ items, service, script }) => {
       </Grid>
     </StyledOl>
   );
-};
-
-StyledOl.propTypes = {
-  children: node.isRequired,
-};
-
-StyledLi.propTypes = {
-  children: node.isRequired,
 };
 
 const itemPropTypes = shape({
