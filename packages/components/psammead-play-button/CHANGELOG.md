@@ -3,7 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 | ------------- | ----------- |
-| 1.1.0 | [PR#2610](https://github.com/bbc/psammead/issues/2610) Add `guidanceMessage` prop |
+| 1.1.0 | [PR#2627](https://github.com/bbc/psammead/issues/2627) Add `guidanceMessage` prop |
 | 1.0.1 | [PR#2615](https://github.com/bbc/psammead/pull/2615) Talos - Bump Dependencies - @bbc/psammead-assets |
 | 1.0.0 | [PR#2522](https://github.com/bbc/psammead/issues/2522) Remove alpha tag. |
 | 1.0.0-alpha.10 | [PR#2533](https://github.com/bbc/psammead/pull/2533) Talos - Bump Dependencies - @bbc/psammead-assets |
