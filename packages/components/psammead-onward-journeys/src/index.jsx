@@ -96,10 +96,6 @@ const OnwardJourneys = ({
     padding-bottom: calc(2 * ${GEL_SPACING_DBL});
     background-color: ${C_STONE};
   `;
-  const HeadingWrapper = styled.div`
-    padding: 0 ${GEL_SPACING_DBL} 0 ${GEL_SPACING_DBL};
-    min-width: 20%;
-  `;
   const TabsList = styled.ul`
     list-style-type: none;
     padding: ${GEL_SPACING_DBL};
@@ -142,12 +138,20 @@ const OnwardJourneys = ({
   `;
   const CardItem = styled.li`
     background-color: ${C_WHITE};
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
     width: calc(20% - 4 * ${GEL_SPACING});
     margin: 0 ${GEL_SPACING} ${GEL_SPACING_DBL} ${GEL_SPACING};
   `;
   const CardLink = styled.a`
     text-decoration: none;
+  `;
+  const CardInfo = styled.div`
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    padding: 0 ${GEL_SPACING_DBL} 0 ${GEL_SPACING_DBL};
+    min-width: 20%;
   `;
   const CardHeadline = styled.h4`
     color: ${C_EBON};
@@ -208,18 +212,18 @@ const OnwardJourneys = ({
           <VisuallyHiddenText as="h3">{topic.name}</VisuallyHiddenText>
           <CardList>
             {selectedTopicData(topic.name).map(record => (
-              <CardLink href={record.url} key={record.headline}>
-                <CardItem>
-                  <HeadingWrapper>
+              <CardItem>
+                <CardLink href={record.url} key={record.headline}>
+                  <CardInfo>
                     <CardHeadline>{record.headline}</CardHeadline>
-                  </HeadingWrapper>
+                  </CardInfo>
                   <Img
                     src={record.image.href}
                     width="100%"
                     alt={record.image.altText}
                   />
-                </CardItem>
-              </CardLink>
+                </CardLink>
+              </CardItem>
             ))}
           </CardList>
         </section>
