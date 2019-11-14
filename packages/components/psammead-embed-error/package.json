@@ -7,10 +7,10 @@
   "main": "dist/index.js",
   "module": "esm/index.js",
   "sideEffects": false,
-  "description": "A generic error message that is designed to be displayed in an AV embed.",
+  "description": "A generic error for embeds.",
   "repository": {
     "type": "git",
-    "url": "https://github.com/BBC-News/psammead/tree/latest/packages/components/psammead-embed-error"
+    "url": "https://github.com/bbc/psammead/tree/latest/packages/components/psammead-embed-error"
   },
   "author": {
     "name": "Psammead Maintainers",
@@ -20,9 +20,20 @@
   "bugs": {
     "url": "https://github.com/bbc/psammead/issues"
   },
-  "homepage": "https://github.com/BBC-News/psammead/blob/latest/packages/components/psammead-embed-error/README.md",
-  "dependencies": {},
+  "homepage": "https://github.com/bbc/psammead/blob/latest/packages/components/psammead-embed-error/README.md",
+  "keywords": [
+    "bbc",
+    "embed",
+    "error",
+    "av"
+  ],
+  "dependencies": {
+    "@bbc/gel-foundations": "^3.4.1",
+    "@bbc/psammead-assets": "^2.8.0",
+    "@bbc/psammead-styles": "^4.1.0"
+  },
   "peerDependencies": {
-    "react": "^16.11.0"
+    "react": "^16.9.0",
+    "styled-components": "^4.3.2"
   }
 }
