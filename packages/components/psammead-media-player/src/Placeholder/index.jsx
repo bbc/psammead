@@ -51,7 +51,6 @@ const Placeholder = ({ onClick, service, src, srcset, mediaInfo }) => {
         duration={duration}
         durationSpoken={durationSpoken}
         type={type}
-        guidanceMessage={guidanceMessage}
       />
       <Image alt="" src={src} srcset={srcset} />
     </StyledPlaceholder>

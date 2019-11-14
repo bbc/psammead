@@ -39,7 +39,7 @@ const GuidanceMessage = styled.strong`
 
 const Guidance = ({ guidanceMessage, service }) => (
   <GuidanceWrapper service={service}>
-    <GuidanceMessage aria-hidden="true">{guidanceMessage}</GuidanceMessage>
+    <GuidanceMessage>{guidanceMessage}</GuidanceMessage>
   </GuidanceWrapper>
 );
 
