@@ -47,7 +47,7 @@ The `@bbc/psammead-navigation` package is a set of two components, `NavigationUl
 | -------- | ---- | -------- | ------- | ------- |
 | children | node | Yes | N/A | `<DropdownNavigationLi script={latin} service='news' key='sport' url='/sport' active={false}> Sport </DropdownNavigationLi>` |
 | announcedText | string | Yes | N/A | `'Menu'` |
-| onClose | function | Yes | N/A | () => { console.log("Handle close action"); } |
+| onClose | function | Yes | N/A | `() => { console.log("Handle close action"); }` |
 
 ### DropdownNavigationLi
 
@@ -68,7 +68,7 @@ The `@bbc/psammead-navigation` package is a set of two components, `NavigationUl
 | Argument | Type | Required | Default | Example |
 | -------- | ---- | -------- | ------- | ------- |
 | announcedText | string | Yes | N/A | `'Menu'` |
-| onOpen | function | Yes | N/A | () => { console.log("Handle open action"); } |
+| onOpen | function | Yes | N/A | `() => { console.log("Handle open action"); }` |
 
 ## Navigation Usage
 
