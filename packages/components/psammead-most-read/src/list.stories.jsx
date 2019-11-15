@@ -4,7 +4,6 @@ import { withKnobs } from '@storybook/addon-knobs';
 import { withServicesKnob } from '@bbc/psammead-storybook-helpers';
 import MostReadList from './list';
 
-const STORY_KIND = 'Components|MostRead/List';
 const itemsLTR = [
   {
     title: 'John Lewis staff bonus cut again as profits fall',
@@ -91,14 +90,64 @@ const itemsRTL = [
   },
 ];
 
-const stories = storiesOf(STORY_KIND, module)
+const arabicServiceDecorator = withServicesKnob({
+  defaultService: 'arabic',
+});
+
+const bengaliServiceDecorator = withServicesKnob({
+  defaultService: 'bengali',
+});
+
+const burmeseServiceDecorator = withServicesKnob({
+  defaultService: 'burmese',
+});
+
+const newsServiceDecorator = withServicesKnob({
+  defaultService: 'news',
+});
+
+storiesOf('Components|MostRead/List/LTR', module)
   .addDecorator(withKnobs)
-  .addDecorator(withServicesKnob());
+  .add(`News LTR`, () =>
+    newsServiceDecorator(({ script, service }) => (
+      <MostReadList
+        items={itemsLTR}
+        service={service}
+        script={script}
+        dir="ltr"
+      />
+    )),
+  )
+  .add(`Bengali LTR`, () =>
+    bengaliServiceDecorator(({ script, service }) => (
+      <MostReadList
+        items={itemsLTR}
+        service={service}
+        script={script}
+        dir="ltr"
+      />
+    )),
+  )
+  .add(`Burmese LTR`, () =>
+    burmeseServiceDecorator(({ script, service }) => (
+      <MostReadList
+        items={itemsLTR}
+        service={service}
+        script={script}
+        dir="ltr"
+      />
+    )),
+  );
 
-stories.add(`MostReadList LTR`, ({ script, service }) => (
-  <MostReadList items={itemsLTR} service={service} script={script} dir="ltr" />
-));
-
-stories.add(`MostReadList RTL`, ({ script, service }) => (
-  <MostReadList items={itemsRTL} service={service} script={script} dir="rtl" />
-));
+storiesOf('Components|MostRead/List/RTL', module)
+  .addDecorator(withKnobs)
+  .add(`Arabic RTL`, () =>
+    arabicServiceDecorator(({ script, service }) => (
+      <MostReadList
+        items={itemsRTL}
+        service={service}
+        script={script}
+        dir="rtl"
+      />
+    )),
+  );
