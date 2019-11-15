@@ -1,5 +1,5 @@
 import React from 'react';
-import { node, shape, string } from 'prop-types';
+import { node, oneOf, shape, string } from 'prop-types';
 import styled from 'styled-components';
 import { getFoolscap, getDoublePica } from '@bbc/gel-foundations/typography';
 import {
@@ -14,6 +14,8 @@ import {
   getSerifLight,
   getSerifMedium,
 } from '@bbc/psammead-styles/font-styles';
+
+const paddingStart = ({ dir }) => `padding-${dir === 'ltr' ? 'left' : 'right'}`;
 
 export const MostReadRank = styled.span`
   ${({ script }) => script && getFoolscap(script)};
@@ -40,11 +42,11 @@ const StyledLink = styled.a`
 
 const StyledItem = styled.div`
   padding-top: ${GEL_SPACING_HLF};
-  padding-left: ${GEL_SPACING_HLF};
+  ${paddingStart}: ${GEL_SPACING_HLF};
 
   @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
     padding-top: ${GEL_SPACING};
-    padding-left: ${GEL_SPACING_DBL};
+    ${paddingStart}: ${GEL_SPACING_DBL};
   }
 `;
 
@@ -53,8 +55,9 @@ export const MostReadLink = ({
   script,
   service,
   link: { title, href },
+  dir,
 }) => (
-  <StyledItem>
+  <StyledItem dir={dir}>
     <StyledLink href={href} script={script} service={service}>
       {title}
     </StyledLink>
@@ -75,8 +78,10 @@ MostReadLink.propTypes = {
     title: string.isRequired,
     href: string.isRequired,
   }).isRequired,
+  dir: oneOf(['rtl', 'ltr']),
 };
 
 MostReadLink.defaultProps = {
   lastUpdated: null,
+  dir: 'ltr',
 };

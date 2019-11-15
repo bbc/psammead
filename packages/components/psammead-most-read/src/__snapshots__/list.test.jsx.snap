@@ -317,6 +317,7 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
           >
             <div
               class="c7"
+              dir="ltr"
             >
               <a
                 class="c8"
@@ -349,6 +350,7 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
           >
             <div
               class="c7"
+              dir="ltr"
             >
               <a
                 class="c8"
@@ -381,6 +383,7 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
           >
             <div
               class="c7"
+              dir="ltr"
             >
               <a
                 class="c8"
@@ -413,6 +416,7 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
           >
             <div
               class="c7"
+              dir="ltr"
             >
               <a
                 class="c8"
@@ -445,6 +449,7 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
           >
             <div
               class="c7"
+              dir="ltr"
             >
               <a
                 class="c8"
@@ -477,6 +482,7 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
           >
             <div
               class="c7"
+              dir="ltr"
             >
               <a
                 class="c8"
@@ -509,6 +515,7 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
           >
             <div
               class="c7"
+              dir="ltr"
             >
               <a
                 class="c8"
@@ -541,6 +548,7 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
           >
             <div
               class="c7"
+              dir="ltr"
             >
               <a
                 class="c8"
@@ -573,6 +581,7 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
           >
             <div
               class="c7"
+              dir="ltr"
             >
               <a
                 class="c8"
@@ -605,6 +614,7 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
           >
             <div
               class="c7"
+              dir="ltr"
             >
               <a
                 class="c8"
@@ -938,6 +948,7 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
           >
             <div
               class="c7"
+              dir="ltr"
             >
               <a
                 class="c8"
@@ -970,6 +981,7 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
           >
             <div
               class="c7"
+              dir="ltr"
             >
               <a
                 class="c8"
@@ -1002,6 +1014,7 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
           >
             <div
               class="c7"
+              dir="ltr"
             >
               <a
                 class="c8"
@@ -1034,6 +1047,7 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
           >
             <div
               class="c7"
+              dir="ltr"
             >
               <a
                 class="c8"
@@ -1066,6 +1080,7 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
           >
             <div
               class="c7"
+              dir="ltr"
             >
               <a
                 class="c8"
@@ -1098,6 +1113,7 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
           >
             <div
               class="c7"
+              dir="ltr"
             >
               <a
                 class="c8"
@@ -1130,6 +1146,7 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
           >
             <div
               class="c7"
+              dir="ltr"
             >
               <a
                 class="c8"
@@ -1162,6 +1179,7 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
           >
             <div
               class="c7"
+              dir="ltr"
             >
               <a
                 class="c8"
@@ -1194,6 +1212,7 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
           >
             <div
               class="c7"
+              dir="ltr"
             >
               <a
                 class="c8"
@@ -1226,6 +1245,7 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
           >
             <div
               class="c7"
+              dir="ltr"
             >
               <a
                 class="c8"
@@ -1559,6 +1579,7 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
           >
             <div
               class="c7"
+              dir="ltr"
             >
               <a
                 class="c8"
@@ -1591,6 +1612,7 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
           >
             <div
               class="c7"
+              dir="ltr"
             >
               <a
                 class="c8"
@@ -1623,6 +1645,7 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
           >
             <div
               class="c7"
+              dir="ltr"
             >
               <a
                 class="c8"
@@ -1655,6 +1678,7 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
           >
             <div
               class="c7"
+              dir="ltr"
             >
               <a
                 class="c8"
@@ -1687,6 +1711,7 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
           >
             <div
               class="c7"
+              dir="ltr"
             >
               <a
                 class="c8"
@@ -1719,6 +1744,7 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
           >
             <div
               class="c7"
+              dir="ltr"
             >
               <a
                 class="c8"
@@ -1751,6 +1777,7 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
           >
             <div
               class="c7"
+              dir="ltr"
             >
               <a
                 class="c8"
@@ -1783,6 +1810,7 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
           >
             <div
               class="c7"
+              dir="ltr"
             >
               <a
                 class="c8"
@@ -1815,6 +1843,7 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
           >
             <div
               class="c7"
+              dir="ltr"
             >
               <a
                 class="c8"
@@ -1847,6 +1876,7 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
           >
             <div
               class="c7"
+              dir="ltr"
             >
               <a
                 class="c8"
@@ -2180,6 +2210,7 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
           >
             <div
               class="c7"
+              dir="ltr"
             >
               <a
                 class="c8"
@@ -2212,6 +2243,7 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
           >
             <div
               class="c7"
+              dir="ltr"
             >
               <a
                 class="c8"
@@ -2244,6 +2276,7 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
           >
             <div
               class="c7"
+              dir="ltr"
             >
               <a
                 class="c8"
@@ -2276,6 +2309,7 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
           >
             <div
               class="c7"
+              dir="ltr"
             >
               <a
                 class="c8"
@@ -2308,6 +2342,7 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
           >
             <div
               class="c7"
+              dir="ltr"
             >
               <a
                 class="c8"
@@ -2340,6 +2375,7 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
           >
             <div
               class="c7"
+              dir="ltr"
             >
               <a
                 class="c8"
@@ -2372,6 +2408,7 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
           >
             <div
               class="c7"
+              dir="ltr"
             >
               <a
                 class="c8"
@@ -2404,6 +2441,7 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
           >
             <div
               class="c7"
+              dir="ltr"
             >
               <a
                 class="c8"
@@ -2436,6 +2474,7 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
           >
             <div
               class="c7"
+              dir="ltr"
             >
               <a
                 class="c8"
@@ -2468,6 +2507,7 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
           >
             <div
               class="c7"
+              dir="ltr"
             >
               <a
                 class="c8"
