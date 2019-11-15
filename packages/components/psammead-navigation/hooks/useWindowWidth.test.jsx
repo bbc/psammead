@@ -1,5 +1,5 @@
-import React from 'react';
-import { render, act } from '@testing-library/react';
+import { act } from 'react-test-renderer';
+import { renderHook } from '@testing-library/react-hooks';
 import useWindowWidth from './useWindowWidth';
 
 // Trigger the window resize event
@@ -8,23 +8,14 @@ function fireResize(width) {
   window.dispatchEvent(new Event('resize'));
 }
 
-const TestComponent = () => {
-  const windowWidth = useWindowWidth(false);
-
-  return <span>{windowWidth}</span>;
-};
-
 describe('WindowWith hook', () => {
-  it('should test that the viewport changes', async () => {
-    const { container, rerender } = render(<TestComponent />);
-    const span = container.firstChild;
-
+  it('should test that the viewport changes', () => {
+    const hook = renderHook(() => useWindowWidth(false));
     // The default innerWidth set by Jest is 1024px
-    expect(span.textContent).toBe('1024');
+    expect(hook.result.current).toEqual(1024);
 
-    await act(async () => fireResize(600));
-
-    rerender(<TestComponent />);
-    expect(span.textContent).toBe('600');
+    act(() => fireResize(600));
+    hook.rerender(true);
+    expect(hook.result.current).toEqual(600);
   });
 });
