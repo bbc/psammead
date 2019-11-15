@@ -5,16 +5,13 @@ import { latin } from '@bbc/gel-foundations/scripts';
 import Navigation, { NavigationUl, NavigationLi } from './index';
 import igboNavData from '../testHelpers/igbo';
 
-beforeAll(() => {
-  Object.defineProperty(window, 'matchMedia', {
-    value: jest.fn(() => {
-      return {
-        matches: false,
-        addListener: jest.fn(),
-        removeListener: jest.fn(),
-      };
-    }),
-  });
+window.matchMedia = jest.fn().mockImplementation(query => {
+  return {
+    matches: false,
+    media: query,
+    addListener: jest.fn(),
+    removeListener: jest.fn(),
+  };
 });
 
 describe('Navigation', () => {
