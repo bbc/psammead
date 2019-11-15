@@ -129,7 +129,7 @@ MostReadItem.propTypes = {
   script: shape(scriptPropType).isRequired,
   link: linkPropTypes.isRequired,
   rank: string.isRequired,
-  dir: string.isRequired,
+  dir: oneOf(['rtl', 'ltr']),
 };
 
 MostReadList.propTypes = {
@@ -137,6 +137,10 @@ MostReadList.propTypes = {
   script: shape(scriptPropType).isRequired,
   items: arrayOf(linkPropTypes).isRequired,
   dir: oneOf(['rtl', 'ltr']),
+};
+
+MostReadItem.defaultProps = {
+  dir: 'ltr',
 };
 
 MostReadList.defaultProps = {
