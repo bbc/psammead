@@ -20,33 +20,51 @@ import { mediaIcons } from '@bbc/psammead-assets/svgs';
 import VisuallyHiddenText from '@bbc/psammead-visually-hidden-text';
 import { Link, LiveLabel } from '@bbc/psammead-story-promo';
 
-const BulletinWrapper = styled.div`
-  ${({ type }) => type === 'audio' && `background-color: ${C_LUNAR};`}
+const TVBulletinWrapper = styled.div`
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   grid-column-gap: ${GEL_SPACING_DBL};
-  ${({ type }) => type === 'video' && `padding: ${GEL_SPACING}`};
+  padding: ${GEL_SPACING};
   @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
-    ${({ type }) => type === 'video' && `padding: ${GEL_SPACING_DBL}`};
+    padding: ${GEL_SPACING_DBL};
   }
 `;
 
-const ImageWrapper = styled.div`
+const RadioBulletinWrapper = styled.div`
+  background-color: ${C_LUNAR};
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-column-gap: ${GEL_SPACING_DBL};
+`;
+
+const TVImageWrapper = styled.div`
   grid-column: 1 / span 6;
   @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
-    grid-column: ${({ type }) =>
-      type === 'audio' ? '1 / span 2' : '1 / span 3'};
+    grid-column: 1 / span 3;
+  }
+`;
+
+const RadioImageWrapper = styled.div`
+  grid-column: 1 / span 6;
+  @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
+    grid-column: 1 / span 2;
   }
   @media (max-width: ${GEL_GROUP_2_SCREEN_WIDTH_MAX}) {
-    ${({ type }) => type === 'audio' && 'display: none'}
+    display: none;
   }
 `;
 
-const TextWrapper = styled.div`
+const TVTextWrapper = styled.div`
   grid-column: 1 / span 6;
   @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
-    grid-column: ${({ type }) =>
-      type === 'audio' ? '3 / span 4' : '4 /span 3'};
+    grid-column: 4 / span 3;
+  }
+`;
+
+const RadioTextWrapper = styled.div`
+  grid-column: 1 / span 6;
+  @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
+    grid-column: 3 / span 4;
   }
 `;
 
@@ -87,19 +105,25 @@ const BulletinSummary = styled.p`
   padding-bottom: ${GEL_SPACING_DBL};
 `;
 
-const BulletinHeading = styled.h3`
+const TVHeading = styled.h3`
   ${({ script }) => script && getPica(script)}
   ${({ service }) => getSansBold(service)}
   color: ${C_EBON};
   margin: 0; /* Reset */
-  ${({ type }) =>
-    type === 'audio'
-      ? `padding: ${GEL_SPACING} ${GEL_SPACING};`
-      : `padding: ${GEL_SPACING} 0;`}
-
+  padding: ${GEL_SPACING} 0;
   @media(min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
-   padding: ${({ type }) =>
-     type === 'video' ? `0 0 ${GEL_SPACING} 0` : `${GEL_SPACING} 0`};
+    padding:0 0 ${GEL_SPACING} 0;
+  }
+`;
+
+const RadioHeading = styled.h3`
+  ${({ script }) => script && getPica(script)}
+  ${({ service }) => getSansBold(service)}
+  color: ${C_EBON};
+  margin: 0; /* Reset */
+  padding: ${GEL_SPACING} ${GEL_SPACING};
+  @media(min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
+    padding: ${GEL_SPACING} 0;
   }
 `;
 
@@ -114,27 +138,35 @@ const Bulletin = ({
   ctaText,
   ctaLink,
   liveText,
-}) => (
-  <BulletinWrapper type={type}>
-    <ImageWrapper type={type}>{image}</ImageWrapper>
-    <TextWrapper type={type}>
-      <BulletinHeading script={script} service={service} type={type}>
-        <VisuallyHiddenText>
-          {isLive ? `${ctaText} ${liveText} ` : `${ctaText} `}
-        </VisuallyHiddenText>
-        {isLive && <LiveLabel service={service}>{liveText}</LiveLabel>}
-        <Link href={ctaLink}>{headlineText}</Link>
-      </BulletinHeading>
-      <BulletinSummary script={script} service={service} type={type}>
-        {summaryText}
-      </BulletinSummary>
-      <PlayCTA isLive={isLive} service={service} script={script}>
-        <IconWrapper>{mediaIcons[type]}</IconWrapper>
-        {ctaText}
-      </PlayCTA>
-    </TextWrapper>
-  </BulletinWrapper>
-);
+}) => {
+  const isAudio = type === 'audio';
+  const BulletinWrapper = isAudio ? RadioBulletinWrapper : TVBulletinWrapper;
+  const ImageWrapper = isAudio ? RadioImageWrapper : TVImageWrapper;
+  const TextWrapper = isAudio ? RadioTextWrapper : TVTextWrapper;
+  const BulletinHeading = isAudio ? RadioHeading : TVHeading;
+
+  return (
+    <BulletinWrapper>
+      <ImageWrapper type={type}>{image}</ImageWrapper>
+      <TextWrapper type={type}>
+        <BulletinHeading script={script} service={service} type={type}>
+          <VisuallyHiddenText>
+            {isLive ? `${ctaText} ${liveText} ` : `${ctaText} `}
+          </VisuallyHiddenText>
+          {isLive && <LiveLabel service={service}>{liveText}</LiveLabel>}
+          <Link href={ctaLink}>{headlineText}</Link>
+        </BulletinHeading>
+        <BulletinSummary script={script} service={service} type={type}>
+          {summaryText}
+        </BulletinSummary>
+        <PlayCTA isLive={isLive} service={service} script={script}>
+          <IconWrapper>{mediaIcons[type]}</IconWrapper>
+          {ctaText}
+        </PlayCTA>
+      </TextWrapper>
+    </BulletinWrapper>
+  );
+};
 
 Bulletin.propTypes = {
   type: oneOf(['video', 'audio']).isRequired,
