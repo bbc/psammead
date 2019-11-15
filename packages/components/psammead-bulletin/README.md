@@ -8,8 +8,6 @@ This component is currently tagged as alpha and is not suitable for production u
 
 The `Bulletin` component can be used to render `Radio` or `TVBulletin` by passing in the `type`.
 
-This component is hidden on breakpoints above 600px.
-
 ## Installation
 
 ```jsx
