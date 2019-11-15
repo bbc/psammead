@@ -6,7 +6,7 @@ This component is currently tagged as alpha and is not suitable for production u
 
 ## Description
 
-The `EmbedError` component provides a lean error page for embedded content, such as that in an iframe. This component's content will fill the viewport and position itself accordingly - tt is therefore designed to be used in isolation.
+The `EmbedError` component provides a lean error page for embedded content, such as that in an iframe. This component's content will fill the viewport and position itself accordingly - it is therefore designed to be used in isolation.
 
 ## Installation
 
