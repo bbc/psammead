@@ -1,20 +1,24 @@
 const getExistingPackages = require('../get-existing/index.js');
+const fs = require('fs');
+const path = require('path');
+
+const packagesDirectory = path.join(__dirname, '../../../packages');
+const possibleChoices = fs
+  .readdirSync(packagesDirectory)
+  .filter(item => fs.lstatSync(path.join(packagesDirectory, item)).isDirectory())
+  .map(name => ({
+    name,
+    value: name
+  }));
 
 module.exports = [
   {
-    type: 'input',
+    type: 'list',
     name: 'kind',
     message:
-      'Please enter a letter for the kind of package you would like: C for Component, U for Utility and N for coNtainer',
-    default: 'C',
-    validate(answer) {
-      if (!answer || answer.replace(/[^a-zA-Z]/g, '') !== answer) {
-        return 'Please choose a package type - letters only please.';
-      }
-      return true;
-    },
+      'Please choose the template you want to create',
+    choices: possibleChoices,
   },
-
   {
     type: 'input',
     name: 'name',
