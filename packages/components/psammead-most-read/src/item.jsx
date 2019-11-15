@@ -52,7 +52,7 @@ export const MostReadLink = ({
   lastUpdated,
   script,
   service,
-  item: { title, href },
+  link: { title, href },
 }) => (
   <StyledItem>
     <StyledLink href={href} script={script} service={service}>
@@ -71,7 +71,7 @@ MostReadLink.propTypes = {
   service: string.isRequired,
   script: shape(scriptPropType).isRequired,
   lastUpdated: node,
-  item: shape({
+  link: shape({
     title: string.isRequired,
     href: string.isRequired,
   }).isRequired,

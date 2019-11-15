@@ -3,7 +3,7 @@
 
 ## Description
 
-The `MostRead` component is designed to display the most read articles given a designated period of time which is dependent on service. The component comprises of a `MostReadTitle`, a `MostReadList` which is a grid containing `MostReadItems`, a `MostReadItem` comprising of and a link to the article, and a `MostReadRank` which is a numerical counter representing its ranking.
+The `MostRead` component is designed to display the most read articles given a designated period of time which is dependent on service. The component comprises of a `MostReadTitle`, a `MostReadList` containing an ordered list of `MostReadItems`. A `MostReadItem` is a list item comprised of and a `MostReadLink`, a link to the article, and a `MostReadRank` which is a numerical counter representing the article's ranking.
 
 ## Installation
 
@@ -11,15 +11,14 @@ The `MostRead` component is designed to display the most read articles given a d
 
 ## Props
 
-### MostReadItem props
+### MostReadLink props
 
 <!-- prettier-ignore -->
 | Argument | Type | Required | Default | Example |
 | -------- | ---- | -------- | ------- | ------- |
-| item | object | yes | N/A | `{ title: 'This is a item', href: 'https://www.bbc.com' }` |
+| link | object | yes | N/A | `{ title: 'This is a headline', href: 'https://www.bbc.com' }` |
 | script | object | yes | N/A | `{ canon: { groupA: { fontSize: '28', lineHeight: '32',}, groupB: { fontSize: '32', lineHeight: '36', }, groupD: { fontSize: '44', lineHeight: '48', }, }, trafalgar: { groupA: { fontSize: '20', lineHeight: '24', }, groupB: { fontSize: '24', lineHeight: '28', }, groupD: { fontSize: '32', lineHeight: '36', }, }, }` |
 | service | string | yes | N/A | `'news'` |
-| dir | string | no | `'ltr'` | `'rtl'`  |
 | lastUpdated | node | no | null | `<time>12 March 2019</time>` |
 
 ## MostReadItem Usage

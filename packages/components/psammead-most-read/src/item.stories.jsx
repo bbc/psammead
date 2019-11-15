@@ -5,7 +5,7 @@ import { withServicesKnob } from '@bbc/psammead-storybook-helpers';
 import Timestamp from '@bbc/psammead-timestamp';
 import { MostReadLink, MostReadRank } from './item';
 
-const items = [
+const links = [
   {
     language: 'news',
     title: 'John Lewis staff bonus cut again as profits fall',
@@ -33,20 +33,20 @@ const stories = storiesOf('Components|MostRead/Item', module)
   .addDecorator(withKnobs)
   .addDecorator(withServicesKnob());
 
-items.forEach(({ language, ...rest }) => {
+links.forEach(({ language, ...props }) => {
   stories.add(`MostReadLink ${language}`, ({ script, service }) => (
-    <MostReadLink item={rest} service={service} script={script} />
+    <MostReadLink link={props} service={service} script={script} />
   ));
 });
 
-const item = {
+const link = {
   title: 'Stranded Indian ship put up for sale',
   href: 'https://www.bbc.com',
 };
 
 stories.add(`MostReadLink with last updated date`, ({ script, service }) => (
   <MostReadLink
-    item={item}
+    link={link}
     service={service}
     script={script}
     lastUpdated={lastUpdated(script, service)}

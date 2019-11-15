@@ -81,7 +81,7 @@ const StyledOl = styled.ol.attrs({
   padding: 0;
 `;
 
-const MostReadItem = ({ service, script, item, rank, dir }) => (
+const MostReadItem = ({ service, script, link, rank, dir }) => (
   <li>
     <Grid {...MostReadItemProps} dir={dir}>
       <Grid {...MostReadRankProps} dir={dir}>
@@ -90,7 +90,7 @@ const MostReadItem = ({ service, script, item, rank, dir }) => (
         </MostReadRank>
       </Grid>
       <Grid {...MostReadLinkProps} dir={dir}>
-        <MostReadLink service={service} item={item} script={script} />
+        <MostReadLink service={service} link={link} script={script} />
       </Grid>
     </Grid>
   </li>
@@ -101,12 +101,12 @@ const MostReadList = ({ items, service, script, dir }) => {
   return (
     <StyledOl>
       <Grid {...MostReadListProps} dir={dir}>
-        {items.map((item, i) => {
+        {items.map((link, i) => {
           const rank = numerals[i + 1];
           return (
             <MostReadItem
               key={rank}
-              item={item}
+              link={link}
               service={service}
               script={script}
               rank={rank}
@@ -119,7 +119,7 @@ const MostReadList = ({ items, service, script, dir }) => {
   );
 };
 
-const itemPropTypes = shape({
+const linkPropTypes = shape({
   title: string.isRequired,
   href: string.isRequired,
 });
@@ -127,7 +127,7 @@ const itemPropTypes = shape({
 MostReadItem.propTypes = {
   service: string.isRequired,
   script: shape(scriptPropType).isRequired,
-  item: itemPropTypes.isRequired,
+  link: linkPropTypes.isRequired,
   rank: string.isRequired,
   dir: string.isRequired,
 };
@@ -135,7 +135,7 @@ MostReadItem.propTypes = {
 MostReadList.propTypes = {
   service: string.isRequired,
   script: shape(scriptPropType).isRequired,
-  items: arrayOf(itemPropTypes).isRequired,
+  items: arrayOf(linkPropTypes).isRequired,
   dir: string.isRequired,
 };
 
