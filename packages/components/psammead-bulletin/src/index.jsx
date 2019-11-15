@@ -1,6 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
-import { GEL_GROUP_3_SCREEN_WIDTH_MIN } from '@bbc/gel-foundations/breakpoints';
+import {
+  GEL_GROUP_3_SCREEN_WIDTH_MIN,
+  GEL_GROUP_2_SCREEN_WIDTH_MAX,
+} from '@bbc/gel-foundations/breakpoints';
 import { GEL_SPACING, GEL_SPACING_DBL } from '@bbc/gel-foundations/spacings';
 import {
   C_WHITE,
@@ -18,12 +21,33 @@ import VisuallyHiddenText from '@bbc/psammead-visually-hidden-text';
 import { Link, LiveLabel } from '@bbc/psammead-story-promo';
 
 const BulletinWrapper = styled.div`
+  ${({ type }) => type === 'audio' && `background-color: ${C_LUNAR};`}
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-column-gap: ${GEL_SPACING_DBL};
+  ${({ type }) => type === 'video' && `padding: ${GEL_SPACING}`};
   @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
-    display: none;
+    ${({ type }) => type === 'video' && `padding: ${GEL_SPACING_DBL}`};
   }
+`;
 
-  ${({ type }) =>
-    type.toLowerCase() === 'audio' && `background-color: ${C_LUNAR};`}
+const ImageWrapper = styled.div`
+  grid-column: 1 / span 6;
+  @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
+    grid-column: ${({ type }) =>
+      type === 'audio' ? '1 / span 2' : '1 / span 3'};
+  }
+  @media (max-width: ${GEL_GROUP_2_SCREEN_WIDTH_MAX}) {
+    ${({ type }) => type === 'audio' && 'display: none'}
+  }
+`;
+
+const TextWrapper = styled.div`
+  grid-column: 1 / span 6;
+  @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
+    grid-column: ${({ type }) =>
+      type === 'audio' ? '3 / span 4' : '4 /span 3'};
+  }
 `;
 
 const IconWrapper = styled.span`
@@ -45,6 +69,9 @@ const PlayCTA = styled.div.attrs({ 'aria-hidden': true })`
   padding: 0.75rem;
   display: flex;
   justify-content: center;
+  @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
+    width: 6.125rem;
+  }
 `;
 
 const BulletinSummary = styled.p`
@@ -52,8 +79,11 @@ const BulletinSummary = styled.p`
   ${({ service }) => service && getSansRegular(service)}
   color: ${C_SHADOW};
   margin: 0; /* Reset */
-  ${({ type }) =>
-    type.toLowerCase() === 'audio' && `padding: 0 ${GEL_SPACING};`}
+  ${({ type }) => type === 'audio' && `padding: 0 ${GEL_SPACING};`}
+  @media(min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
+    padding-left: 0;
+    padding-right: 0;
+  }
   padding-bottom: ${GEL_SPACING_DBL};
 `;
 
@@ -63,9 +93,14 @@ const BulletinHeading = styled.h3`
   color: ${C_EBON};
   margin: 0; /* Reset */
   ${({ type }) =>
-    type.toLowerCase() === 'audio'
+    type === 'audio'
       ? `padding: ${GEL_SPACING} ${GEL_SPACING};`
       : `padding: ${GEL_SPACING} 0;`}
+
+  @media(min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
+   padding: ${({ type }) =>
+     type === 'video' ? `0 0 ${GEL_SPACING} 0` : `${GEL_SPACING} 0`};
+  }
 `;
 
 const Bulletin = ({
@@ -81,21 +116,23 @@ const Bulletin = ({
   liveText,
 }) => (
   <BulletinWrapper type={type}>
-    {image && type === 'video' && image}
-    <BulletinHeading script={script} service={service} type={type}>
-      <VisuallyHiddenText>
-        {isLive ? `${ctaText} ${liveText} ` : `${ctaText} `}
-      </VisuallyHiddenText>
-      {isLive && <LiveLabel service={service}>{liveText}</LiveLabel>}
-      <Link href={ctaLink}>{headlineText}</Link>
-    </BulletinHeading>
-    <BulletinSummary script={script} service={service} type={type}>
-      {summaryText}
-    </BulletinSummary>
-    <PlayCTA isLive={isLive} service={service} script={script}>
-      <IconWrapper>{mediaIcons[type.toLowerCase()]}</IconWrapper>
-      {ctaText}
-    </PlayCTA>
+    <ImageWrapper type={type}>{image}</ImageWrapper>
+    <TextWrapper type={type}>
+      <BulletinHeading script={script} service={service} type={type}>
+        <VisuallyHiddenText>
+          {isLive ? `${ctaText} ${liveText} ` : `${ctaText} `}
+        </VisuallyHiddenText>
+        {isLive && <LiveLabel service={service}>{liveText}</LiveLabel>}
+        <Link href={ctaLink}>{headlineText}</Link>
+      </BulletinHeading>
+      <BulletinSummary script={script} service={service} type={type}>
+        {summaryText}
+      </BulletinSummary>
+      <PlayCTA isLive={isLive} service={service} script={script}>
+        <IconWrapper>{mediaIcons[type]}</IconWrapper>
+        {ctaText}
+      </PlayCTA>
+    </TextWrapper>
   </BulletinWrapper>
 );
 
