@@ -58,7 +58,7 @@ const initResizeObserver = ({ wrapperEl, setContentElRect }) => {
   if ('ResizeObserver' in window) {
     return init(ResizeObserver);
   }
-  return import('resize-observer-polyfill').then(module => {
+  return import('@juggle/resize-observer').then(module => {
     const ResizeObserver = module.default;
     return init(ResizeObserver);
   });
