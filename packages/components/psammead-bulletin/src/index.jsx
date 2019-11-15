@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import {
   GEL_GROUP_3_SCREEN_WIDTH_MIN,
   GEL_GROUP_2_SCREEN_WIDTH_MAX,
+  GEL_GROUP_4_SCREEN_WIDTH_MIN,
 } from '@bbc/gel-foundations/breakpoints';
 import { GEL_SPACING, GEL_SPACING_DBL } from '@bbc/gel-foundations/spacings';
 import {
@@ -28,6 +29,9 @@ const TVBulletinWrapper = styled.div`
   @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
     padding: ${GEL_SPACING_DBL};
   }
+  @media (min-width: ${GEL_GROUP_4_SCREEN_WIDTH_MIN}) {
+    display: block;
+  }
 `;
 
 const RadioBulletinWrapper = styled.div`
@@ -35,6 +39,9 @@ const RadioBulletinWrapper = styled.div`
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   grid-column-gap: ${GEL_SPACING_DBL};
+  @media (min-width: ${GEL_GROUP_4_SCREEN_WIDTH_MIN}) {
+    display: block;
+  }
 `;
 
 const TVImageWrapper = styled.div`
@@ -90,6 +97,9 @@ const PlayCTA = styled.div.attrs({ 'aria-hidden': true })`
   @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
     width: 6.125rem;
   }
+  @media (min-width: ${GEL_GROUP_4_SCREEN_WIDTH_MIN}) {
+    width: 100%;
+  }
 `;
 
 const BulletinSummary = styled.p`
@@ -114,6 +124,10 @@ const TVHeading = styled.h3`
   @media(min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
     padding:0 0 ${GEL_SPACING} 0;
   }
+  @media (min-width: ${GEL_GROUP_4_SCREEN_WIDTH_MIN}) {
+    padding-top: ${GEL_SPACING};
+  }
+
 `;
 
 const RadioHeading = styled.h3`
