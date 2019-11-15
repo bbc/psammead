@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { shape, string, arrayOf } from 'prop-types';
+import { shape, string, oneOf, arrayOf } from 'prop-types';
 import {
   Burmese,
   Bengali,
@@ -136,7 +136,11 @@ MostReadList.propTypes = {
   service: string.isRequired,
   script: shape(scriptPropType).isRequired,
   items: arrayOf(linkPropTypes).isRequired,
-  dir: string.isRequired,
+  dir: oneOf(['rtl', 'ltr']),
+};
+
+MostReadList.defaultProps = {
+  dir: 'ltr',
 };
 
 export default MostReadList;
