@@ -28,6 +28,7 @@ exports[`Hamburger menu should render correctly 1`] = `
 @media (max-width:37.4375rem) {
   .c0 {
     display: inline-block;
+    float: left;
   }
 }
 

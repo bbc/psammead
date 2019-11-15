@@ -156,6 +156,7 @@ exports[`Navigation should render correctly 1`] = `
 @media (max-width:37.4375rem) {
   .c1 {
     display: inline-block;
+    float: left;
   }
 }
 

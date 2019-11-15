@@ -158,6 +158,7 @@ const HamburgerButton = styled.button`
 
   @media (max-width: ${GEL_GROUP_2_SCREEN_WIDTH_MAX}) {
     display: inline-block;
+    float: left;
   }
 `;
 
