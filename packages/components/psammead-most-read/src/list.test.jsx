@@ -1,6 +1,6 @@
 import React from 'react';
 import { shouldMatchSnapshot } from '@bbc/psammead-test-helpers';
-import { latin, arabic } from '@bbc/gel-foundations/scripts';
+import { arabic, bengali, burmese, latin } from '@bbc/gel-foundations/scripts';
 import MostReadList from './list';
 
 const itemsLTR = [
@@ -91,7 +91,7 @@ const itemsRTL = [
 
 describe('MostReadList', () => {
   shouldMatchSnapshot(
-    'should render with ltr items with correct dir',
+    'should render with ltr news items with correct dir',
     <MostReadList items={itemsLTR} service="news" script={latin} dir="ltr" />,
   );
   shouldMatchSnapshot(
@@ -100,6 +100,24 @@ describe('MostReadList', () => {
       items={itemsRTL}
       service="arabic"
       script={arabic}
+      dir="ltr"
+    />,
+  );
+  shouldMatchSnapshot(
+    'should render with ltr bengali items with correct dir',
+    <MostReadList
+      items={itemsLTR}
+      service="bengali"
+      script={bengali}
+      dir="ltr"
+    />,
+  );
+  shouldMatchSnapshot(
+    'should render with ltr burmese items with correct dir',
+    <MostReadList
+      items={itemsLTR}
+      service="burmese"
+      script={burmese}
       dir="ltr"
     />,
   );
