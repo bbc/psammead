@@ -220,8 +220,8 @@ const Navigation = ({ children, dir }) => {
   const ariaHidden = isSwipeable && { 'aria-hidden': true };
 
   const ref = useRef(null);
-  const width = useWindowWidth();
-  const isOverflowed = useOverflowed(ref, width);
+  const windowWidth = useWindowWidth();
+  const isOverflowed = useOverflowed(ref, windowWidth);
 
   const [scrollEnd, setScrollEnd] = useState(false);
 

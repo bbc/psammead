@@ -1,7 +1,7 @@
 import debounce from 'lodash/debounce';
 import { useState, useEffect } from 'react';
 
-const useWindowWidth = () => {
+const useWindowWidth = (limitRate = true) => {
   const isClient = typeof window === 'object';
 
   const getSize = () => (isClient ? window.innerWidth : undefined);
@@ -17,7 +17,10 @@ const useWindowWidth = () => {
       setWidth(getSize());
     };
 
-    window.addEventListener('resize', debounce(handleResize, 100));
+    window.addEventListener(
+      'resize',
+      limitRate ? debounce(handleResize, 100) : handleResize, // Don't apply debounce when calling from the test
+    );
     return () => {
       window.removeEventListener('resize', handleResize);
     };
