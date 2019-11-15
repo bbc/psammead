@@ -1096,3 +1096,210 @@ exports[`Grid component should render Grid with Grid items including nested non-
   </div>
 </div>
 `;
+
+exports[`Grid component should render Grid with enableGelGutters, enableGelMargins & a nested one with enableNegativeGelMargins 1`] = `
+.c1 {
+  position: relative;
+}
+
+.c4 {
+  display: block;
+  width: 100%;
+  visibility: visible;
+}
+
+.c3 {
+  margin: 0;
+  padding: 0 0 0.5rem 0;
+}
+
+@supports (display:grid) {
+  .c1 {
+    display: grid;
+    position: initial;
+  }
+}
+
+@media (max-width:14.9375rem) {
+  .c2 {
+    width: calc(100%);
+    display: inline-block;
+    vertical-align: top;
+  }
+}
+
+@media (min-width:15rem) and (max-width:24.9375rem) {
+  .c2 {
+    width: calc(100%);
+    display: inline-block;
+    vertical-align: top;
+  }
+}
+
+@media (min-width:25rem) and (max-width:37.4375rem) {
+  .c2 {
+    width: calc(100%);
+    display: inline-block;
+    vertical-align: top;
+  }
+}
+
+@media (min-width:37.5rem) and (max-width:62.9375rem) {
+  .c2 {
+    width: calc(100%);
+    display: inline-block;
+    vertical-align: top;
+  }
+}
+
+@media (min-width:63rem) and (max-width:80rem) {
+  .c2 {
+    width: calc(75%);
+    display: inline-block;
+    vertical-align: top;
+  }
+}
+
+@media (min-width:80rem) {
+  .c2 {
+    width: calc(75%);
+    display: inline-block;
+    vertical-align: top;
+  }
+}
+
+@supports (display:grid) {
+  .c2 {
+    display: block;
+  }
+}
+
+@media (max-width:14.9375rem) {
+  .c5 {
+    width: calc(100%);
+    display: inline-block;
+    vertical-align: top;
+  }
+}
+
+@media (min-width:15rem) and (max-width:24.9375rem) {
+  .c5 {
+    width: calc(100%);
+    display: inline-block;
+    vertical-align: top;
+  }
+}
+
+@media (min-width:25rem) and (max-width:37.4375rem) {
+  .c5 {
+    width: calc(100%);
+    display: inline-block;
+    vertical-align: top;
+  }
+}
+
+@media (min-width:37.5rem) and (max-width:62.9375rem) {
+  .c5 {
+    width: calc(100%);
+    display: inline-block;
+    vertical-align: top;
+  }
+}
+
+@media (min-width:63rem) and (max-width:80rem) {
+  .c5 {
+    width: calc(75%);
+    display: inline-block;
+    vertical-align: top;
+  }
+}
+
+@media (min-width:80rem) {
+  .c5 {
+    width: calc(75%);
+    display: inline-block;
+    vertical-align: top;
+  }
+}
+
+@supports (display:grid) {
+  .c5 {
+    display: block;
+  }
+}
+
+@media (max-width:14.9375rem) {
+  .c0 {
+    padding: 0 0.5rem;
+  }
+}
+
+@media (min-width:15rem) and (max-width:24.9375rem) {
+  .c0 {
+    padding: 0 0.5rem;
+  }
+}
+
+@media (min-width:25rem) and (max-width:37.4375rem) {
+  .c0 {
+    padding: 0 1rem;
+  }
+}
+
+@media (min-width:37.5rem) and (max-width:62.9375rem) {
+  .c0 {
+    padding: 0 1rem;
+  }
+}
+
+@media (min-width:63rem) and (max-width:80rem) {
+  .c0 {
+    padding: 0 1rem;
+  }
+}
+
+@media (min-width:80rem) {
+  .c0 {
+    padding: 0 1rem;
+  }
+}
+
+@supports (display:grid) {
+  .c0 {
+    padding: 0;
+  }
+}
+
+<div
+  class="c0"
+>
+  <div
+    class="c1"
+    dir="ltr"
+  >
+    <div
+      class="c2"
+      dir="ltr"
+    >
+      <div
+        class="c3"
+      >
+        <img
+          alt="Robert Downey Junior in Iron Man"
+          class="c4"
+          src="https://ichef.bbci.co.uk/news/660/cpsprodpb/11897/production/_106613817_999_al_.jpg"
+          width="640"
+        />
+      </div>
+    </div>
+    <div
+      class="c5"
+      dir="ltr"
+    >
+      <p>
+        Image & Paragraph - groups 0-3 span 6/6 columns, groups 4+ span 6/8 columns. Outer Grid has enableGelMargins & Image Grid has enableNegativeGelMargins
+      </p>
+    </div>
+  </div>
+</div>
+`;
