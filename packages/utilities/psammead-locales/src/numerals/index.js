@@ -1,4 +1,4 @@
-export const Bengali = ['০', '১', '২', '৩', '৫', '৫', '৬', '৭', '৮', '৯', '১০'];
+export const Bengali = ['০', '১', '২', '৩', '৪', '৫', '৬', '৭', '৮', '৯', '১০'];
 export const Burmese = ['၀', '၁', '၂', '၃', '၄', '၅', '၆', '၇', '၈', '၉', '၁၀'];
 export const EasternArabic = [
   '۰',
