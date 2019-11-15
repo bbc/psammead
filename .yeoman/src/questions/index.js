@@ -3,7 +3,7 @@ const fs = require('fs');
 const path = require('path');
 
 const packagesDirectory = path.join(__dirname, '../../../packages');
-const possibleChoices = fs
+const packageTypes = fs
   .readdirSync(packagesDirectory)
   .filter(item => fs.lstatSync(path.join(packagesDirectory, item)).isDirectory())
   .map(name => ({
@@ -17,7 +17,7 @@ module.exports = [
     name: 'kind',
     message:
       'Please choose the template you want to create',
-    choices: possibleChoices,
+    choices: packageTypes,
   },
   {
     type: 'input',
