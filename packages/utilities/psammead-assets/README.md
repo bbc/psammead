@@ -35,7 +35,7 @@ This package currently has brand SVGs for the BBC News World Services as well as
 
 The width of your SVG can be calculated using your desired height multiplied by the `ratio` value provided above.
 
-## Usage
+### Usage
 
 ```jsx
 const WrappingContainer = () => (
@@ -58,7 +58,7 @@ import { coreIcons } from '@bbc/psammead-assets/svgs';
 
 Media icons is an object containing styled SVG icons for video, audio and photogallery. Media icons are sized to work well alongside specific text with typography group `GEL Minion`. They are used in `psammead-media-indicator` component.
 
-## Usage
+### Usage
 
 ```jsx
 import { mediaIcons } from '@bbc/psammead-assets/svgs';
@@ -73,7 +73,7 @@ import { mediaIcons } from '@bbc/psammead-assets/svgs';
 
 Navigation icons is an object containing styled SVG icons for hamburger and cross. They are used in `psammead-navigation` component.
 
-## Usage
+### Usage
 
 ```jsx
 import { navigationIcons } from '@bbc/psammead-assets/svgs';
