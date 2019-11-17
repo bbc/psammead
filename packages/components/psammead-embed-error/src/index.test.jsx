@@ -7,4 +7,12 @@ describe('EmbedError', () => {
     'renders a default embed error',
     <EmbedError message="Sorry, we're unable to bring you this media right now." />,
   );
+
+  shouldMatchSnapshot(
+    'renders an embed error that fills the viewport',
+    <EmbedError
+      message="Sorry, we're unable to bring you this media right now."
+      fillViewport
+    />,
+  );
 });

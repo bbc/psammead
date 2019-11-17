@@ -20,4 +20,18 @@ storiesOf('Components|EmbedError', module)
       />
     ),
     { notes, knobs: { escapeHTML: false } },
+  )
+  .add(
+    'fill page',
+    ({ service }) => (
+      <EmbedError
+        service={service}
+        message={text(
+          'message',
+          "Sorry, we're unable to bring you this media right now.",
+        )}
+        fillViewport
+      />
+    ),
+    { notes, knobs: { escapeHTML: false } },
   );

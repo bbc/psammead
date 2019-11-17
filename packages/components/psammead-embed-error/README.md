@@ -6,7 +6,7 @@ This component is currently tagged as alpha and is not suitable for production u
 
 ## Description
 
-The `EmbedError` component provides a lean error page for embedded content, such as that in an iframe. This component's content will fill the viewport and position itself accordingly - it is therefore designed to be used in isolation.
+`EmbedError` is a lean error message component, designed for embedded content, such as that in an iframe. It will fill its parent container and can optionally fill the viewport, while positioning its content accordingly.
 
 ## Installation
 
@@ -16,10 +16,11 @@ npm install @bbc/psammead-embed-error --save
 
 ## Props
 
-| Argument  | Type   | Required | Default | Example                        |
-| --------- | ------ | -------- | ------- | ------------------------------ |
-| `service` | String | No       | `news`  | `arabic`                       |
-| `message` | String | Yes      | -       | `Sorry, the server's on fire.` |
+| Argument       | Type    | Required | Default | Example                        |
+| -------------- | ------- | -------- | ------- | ------------------------------ |
+| `service`      | String  | No       | `news`  | `arabic`                       |
+| `fillViewport` | Boolean | No       | `false` | `true`                         |
+| `message`      | String  | Yes      | -       | `Sorry, the server's on fire.` |
 
 ## Usage
 
@@ -32,7 +33,11 @@ import EmbedError from "@bbc/psammead-embed-error"
 
 const Page = () => {
   if (error) {
-    return <EmbedError message="Sorry, the server's on fire." />;
+    return
+      <EmbedError
+        message="Sorry, the server's on fire."
+        fillViewport
+      />;
   }
 };
 ```
@@ -45,11 +50,11 @@ const Page = () => {
 
 ### When to use this component
 
-This component should be used when you want an error message to fill the viewport and position its content accordingly.
+This component should be used when you want to display an error message that fills a container or viewport.
 
 ### When not to use this component
 
-This component fills the viewport and is not designed for use alongside other content.
+This component should not be used to display messages other than errors.
 
 ### Accessibility notes
 

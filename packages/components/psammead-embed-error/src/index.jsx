@@ -1,5 +1,5 @@
 import React from 'react';
-import { string } from 'prop-types';
+import { string, bool } from 'prop-types';
 import styled from 'styled-components';
 import { C_CHALK, C_EBON } from '@bbc/psammead-styles/colours';
 import { GEL_SPACING_TRPL } from '@bbc/gel-foundations/spacings';
@@ -16,22 +16,22 @@ const StyledEmbedError = styled.div`
   background-repeat: no-repeat;
   background-size: 38.2%;
   color: ${C_EBON};
-  height: 100vh;
-  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: ${({ fillViewport }) => (fillViewport ? '100vh' : '100%')};
+  justify-content: flex-end;
 `;
 
 const StyledErrorMessage = styled.p`
-  position: absolute;
   margin: ${GEL_SPACING_TRPL};
-  bottom: 0;
 
   strong {
     font-weight: normal;
   }
 `;
 
-const EmbedError = ({ service, message }) => (
-  <StyledEmbedError service={service}>
+const EmbedError = ({ service, message, fillViewport }) => (
+  <StyledEmbedError service={service} fillViewport={fillViewport}>
     <StyledErrorMessage>
       <strong>{message}</strong>
     </StyledErrorMessage>
@@ -40,10 +40,12 @@ const EmbedError = ({ service, message }) => (
 
 EmbedError.defaultProps = {
   service: 'news',
+  fillViewport: false,
 };
 
 EmbedError.propTypes = {
   service: string,
+  fillViewport: bool,
   message: string.isRequired,
 };
 
