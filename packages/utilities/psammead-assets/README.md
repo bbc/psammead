@@ -43,6 +43,17 @@ const WrappingContainer = () => (
 );
 ```
 
+## Core Icons SVGs
+
+Core icons is an object containing styled SVG icons from GEL Iconography Core. By default Core icons are sized to work well alongside text from the `GEL BodyCopy` typography group, but can be sized differently within the component they're being used if necessary.
+
+### Usage
+```jsx
+import { coreIcons } from '@bbc/psammead-assets/svgs';
+
+<p>{coreIcons.info} Did you know, in Switzerland it's illegal to own just one guinea pig?</p>
+```
+
 ## Media Icons SVGs
 
 Media icons is an object containing styled SVG icons for video, audio and photogallery. Media icons are sized to work well alongside specific text with typography group `GEL Minion`. They are used in `psammead-media-indicator` component.
