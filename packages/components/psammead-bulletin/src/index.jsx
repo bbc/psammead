@@ -133,7 +133,7 @@ const IconWrapper = styled.span`
   margin: 0 0.25rem;
   @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) and (max-width: ${GEL_GROUP_3_SCREEN_WIDTH_MAX}) {
     display: inline-block;
-    margin: 0;
+    margin-left: 0;
     padding-left: ${GEL_SPACING};
   }
 `;
