@@ -23,7 +23,7 @@ const LiveComponent = ({ headline, service }) => (
 // eslint-disable-next-line react/prop-types
 const Info = ({ topStory, isLive, alsoItems }) => (
   <>
-    <Headline script={latin} topStory={topStory} service="news" displayImage>
+    <Headline script={latin} topStory={topStory} service="news" withImage>
       <Link href="https://www.bbc.co.uk/news">
         {isLive ? (
           <LiveComponent headline="The live promo headline" service="news" />
