@@ -49,7 +49,7 @@
     "@babel/preset-env": "^7.7.1",
     "@babel/preset-react": "^7.7.0",
     "@bbc/gel-foundations": "^3.4.1",
-    "@bbc/psammead-assets": "^2.8.0",
+    "@bbc/psammead-assets": "^2.9.0",
     "@bbc/psammead-brand": "^5.0.11",
     "@bbc/psammead-calendars": "^2.0.2",
     "@bbc/psammead-caption": "^2.2.18",
