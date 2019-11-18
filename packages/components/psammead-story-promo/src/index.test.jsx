@@ -41,7 +41,7 @@ const Info = ({ topStory, isLive, alsoItems, promoHasImage = true }) => (
       script={latin}
       topStory={topStory}
       service="news"
-      displayImage={promoHasImage}
+      promoHasImage={promoHasImage}
     >
       The summary of the promo
     </Summary>

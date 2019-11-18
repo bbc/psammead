@@ -273,7 +273,7 @@ export const Summary = styled.p`
   margin: 0; /* Reset */
   padding-bottom: ${GEL_SPACING};
 
-  ${({ displayImage }) => !displayImage && `padding-top: ${GEL_SPACING};`}
+  ${({ promoHasImage }) => !promoHasImage && `padding-top: ${GEL_SPACING};`}
 
   ${({ topStory }) =>
     topStory
@@ -295,6 +295,18 @@ export const Summary = styled.p`
         }
       `}
 `;
+
+Summary.propTypes = {
+  script: shape(scriptPropType).isRequired,
+  service: string.isRequired,
+  promoHasImage: bool,
+  topStory: bool,
+};
+
+Summary.defaultProps = {
+  promoHasImage: true,
+  topStory: false,
+};
 
 export const Link = styled.a`
   position: static;
