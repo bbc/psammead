@@ -12,7 +12,7 @@ const ltrProps = {
 const rtlProps = {
   dir: 'rtl',
   script: arabic,
-  service: 'news',
+  service: 'arabic',
 };
 
 describe('PsammeadBulletedList', () => {
