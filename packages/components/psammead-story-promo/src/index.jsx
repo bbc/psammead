@@ -164,6 +164,8 @@ const TextGridColumnsTopStory = css`
 const TextGridColumns = css`
   grid-column: 3 / span 4;
 
+  ${({ displayImage }) => !displayImage && `grid-column: 1 / span 6;`}
+
   @media (min-width: ${GEL_GROUP_4_SCREEN_WIDTH_MIN}) {
     padding-top: ${GEL_SPACING};
   }
@@ -193,6 +195,10 @@ const TextGridFallback = css`
     width: 100%;
     padding: ${GEL_SPACING} 0;
   }
+
+  ${({ displayImage }) =>
+    !displayImage &&
+    `width: ${fullWidthColumnsMaxScaleable}; >div{ vertical-align: middle; }`}
 `;
 
 const TextGridItem = styled.div`
@@ -208,6 +214,10 @@ const TextGridItem = styled.div`
 
     ${({ topStory }) => (topStory ? TextGridColumnsTopStory : TextGridColumns)}
   }
+
+  ${({ displayImage }) =>
+    !displayImage &&
+    `>div{ display:inline-block; padding: 0; vertical-align:initial; } `}
 `;
 
 // This is needed to get around the issue of IE11 not supporting
@@ -232,10 +242,15 @@ export const Headline = styled.h3`
   color: ${C_EBON};
   margin: 0; /* Reset */
   padding-bottom: ${GEL_SPACING};
+  ${({ displayImage }) => !displayImage && `display: inline;`}
 
   @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
     ${({ script, topStory }) =>
       script && getHeadlineFontStyle(script, topStory)}
+  }
+
+  @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MAX}) {
+    ${({ script, displayImage }) => !displayImage && script && getPica(script)}
   }
 `;
 
@@ -245,6 +260,8 @@ export const Summary = styled.p`
   color: ${C_SHADOW};
   margin: 0; /* Reset */
   padding-bottom: ${GEL_SPACING};
+
+  ${({ displayImage }) => !displayImage && `padding-top: ${GEL_SPACING};`}
 
   ${({ topStory }) =>
     topStory
@@ -311,8 +328,15 @@ LiveLabel.defaultProps = {
   dir: 'ltr',
 };
 
-const StoryPromo = ({ image, info, mediaIndicator, topStory, ...props }) => (
-  <StoryPromoWrapper topStory={topStory} {...props}>
+const StoryPromo = ({
+  image,
+  info,
+  mediaIndicator,
+  topStory,
+  displayImage,
+  ...props
+}) => {
+  const renderImage = displayImage && (
     <ImageGridItem topStory={topStory}>
       <ImageContentsWrapper>
         {image}
@@ -323,20 +347,31 @@ const StoryPromo = ({ image, info, mediaIndicator, topStory, ...props }) => (
         )}
       </ImageContentsWrapper>
     </ImageGridItem>
-    <TextGridItem topStory={topStory}>{info}</TextGridItem>
-  </StoryPromoWrapper>
-);
+  );
+
+  return (
+    <StoryPromoWrapper topStory={topStory} {...props}>
+      {renderImage}
+      <TextGridItem topStory={topStory} displayImage={displayImage}>
+        {!displayImage && mediaIndicator}
+        {info}
+      </TextGridItem>
+    </StoryPromoWrapper>
+  );
+};
 
 StoryPromo.propTypes = {
   image: node.isRequired,
   info: node.isRequired,
   mediaIndicator: node,
   topStory: bool,
+  displayImage: bool,
 };
 
 StoryPromo.defaultProps = {
   mediaIndicator: null,
   topStory: false,
+  displayImage: true,
 };
 
 export default StoryPromo;

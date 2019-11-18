@@ -1315,7 +1315,56 @@ storiesOf(STORY_KIND, module)
       );
     },
     { notes, knobs: { escapeHTML: false } },
-  );
+  )
+  .add('Example with enableNegativeGelMargins on the image Grid', () => (
+    <Grid
+      columns={{
+        group0: 6,
+        group1: 6,
+        group2: 6,
+        group3: 6,
+        group4: 8,
+        group5: 8,
+      }}
+      enableGelMargins
+    >
+      <Grid
+        item
+        columns={{
+          group0: 6,
+          group1: 6,
+          group2: 6,
+          group3: 6,
+          group4: 6,
+          group5: 6,
+        }}
+        enableNegativeGelMargins
+      >
+        <Image
+          alt="Robert Downey Junior in Iron Man"
+          src="https://ichef.bbci.co.uk/news/660/cpsprodpb/11897/production/_106613817_999_al_.jpg"
+          width="640"
+        />
+      </Grid>
+      <Grid
+        item
+        columns={{
+          group0: 6,
+          group1: 6,
+          group2: 6,
+          group3: 6,
+          group4: 6,
+          group5: 6,
+        }}
+      >
+        <p>
+          Image & Paragraph - groups 0-3 span 6/6 columns, groups 4+ span 6/8
+          columns. Outer Grid has enableGelMargins & Image Grid has
+          enableNegativeGelMargins
+        </p>
+      </Grid>
+    </Grid>
+  ));
 
 storiesOf('Components|Grid/startOffset', module)
   .addDecorator(withKnobs)
@@ -1847,6 +1896,7 @@ storiesOf('Components|Grid/startOffset', module)
               group4: 6,
               group5: 12,
             }}
+            enableNegativeGelMargins
           >
             <Grid
               item
