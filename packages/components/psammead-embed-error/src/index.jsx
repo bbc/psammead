@@ -7,6 +7,7 @@ import { getSansRegular } from '@bbc/psammead-styles/font-styles';
 import { GEL_BODY_COPY } from '@bbc/gel-foundations/typography';
 import { BBC_BLOCKS, coreIcons } from '@bbc/psammead-assets/svgs';
 
+const GOLDEN_RATIO_PERCENT = '38.2%';
 const GEL_SPACING_QRT = '0.125rem';
 
 const StyledEmbedError = styled.div`
@@ -16,7 +17,7 @@ const StyledEmbedError = styled.div`
   background-image: url(data:image/svg+xml;base64,${BBC_BLOCKS});
   background-position: center center;
   background-repeat: no-repeat;
-  background-size: 38.2%;
+  background-size: ${GOLDEN_RATIO_PERCENT};
   color: ${C_EBON};
   display: flex;
   flex-direction: column;
