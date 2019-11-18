@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Navigation should render correctly 1`] = `
-.c8 {
+.c7 {
   -webkit-clip-path: inset(100%);
   clip-path: inset(100%);
   -webkit-clip: rect(1px,1px,1px,1px);
@@ -19,20 +19,20 @@ exports[`Navigation should render correctly 1`] = `
   margin: 0 auto;
 }
 
-.c3 {
+.c2 {
   list-style-type: none;
   padding: 0;
   margin: 0;
   position: relative;
 }
 
-.c5 {
+.c4 {
   display: inline-block;
   position: relative;
   z-index: 2;
 }
 
-.c6 {
+.c5 {
   font-size: 0.9375rem;
   line-height: 1.25rem;
   font-family: ReithSans,Helvetica,Arial,sans-serif;
@@ -46,7 +46,7 @@ exports[`Navigation should render correctly 1`] = `
   padding: 0.75rem 1rem;
 }
 
-.c6:hover::after {
+.c5:hover::after {
   content: '';
   position: absolute;
   left: 0;
@@ -56,7 +56,7 @@ exports[`Navigation should render correctly 1`] = `
   border-bottom: 0.3125rem solid #FFFFFF;
 }
 
-.c6:focus::after {
+.c5:focus::after {
   content: '';
   position: absolute;
   left: 0;
@@ -67,7 +67,7 @@ exports[`Navigation should render correctly 1`] = `
   border: 0.25rem solid #FFFFFF;
 }
 
-.c9 {
+.c8 {
   font-size: 0.9375rem;
   line-height: 1.25rem;
   font-family: ReithSans,Helvetica,Arial,sans-serif;
@@ -81,7 +81,7 @@ exports[`Navigation should render correctly 1`] = `
   padding: 0.75rem 1rem;
 }
 
-.c9:hover::after {
+.c8:hover::after {
   content: '';
   position: absolute;
   left: 0;
@@ -90,7 +90,7 @@ exports[`Navigation should render correctly 1`] = `
   border-bottom: 0.25rem solid #FFFFFF;
 }
 
-.c9:focus::after {
+.c8:focus::after {
   content: '';
   position: absolute;
   left: 0;
@@ -101,7 +101,7 @@ exports[`Navigation should render correctly 1`] = `
   border: 0.25rem solid #FFFFFF;
 }
 
-.c7::after {
+.c6::after {
   content: '';
   position: absolute;
   left: 0;
@@ -116,39 +116,18 @@ exports[`Navigation should render correctly 1`] = `
   border-top: 0.0625rem solid #FFFFFF;
 }
 
-.c0 .c4::after {
+.c0 .c3::after {
   left: 0;
 }
 
-@media (max-width:37.4375rem) {
-  .c2 {
-    white-space: nowrap;
-    overflow-x: scroll;
-    -webkit-scroll-behavior: smooth;
-    -moz-scroll-behavior: smooth;
-    -ms-scroll-behavior: smooth;
-    scroll-behavior: smooth;
-    -webkit-overflow-scrolling: touch;
-    -webkit-scrollbar-width: none;
-    -moz-scrollbar-width: none;
-    -ms-scrollbar-width: none;
-    scrollbar-width: none;
-    -ms-overflow-style: none;
-  }
-
-  .c2::-webkit-scrollbar {
-    display: none;
-  }
-}
-
 @media (min-width:37.5rem) {
-  .c3 {
+  .c2 {
     overflow: hidden;
   }
 }
 
 @media (min-width:37.5rem) {
-  .c5::after {
+  .c4::after {
     content: '';
     position: absolute;
     bottom: 0;
@@ -159,41 +138,41 @@ exports[`Navigation should render correctly 1`] = `
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
-  .c6 {
+  .c5 {
     font-size: 1rem;
     line-height: 1.25rem;
   }
 }
 
 @media (min-width:37.5rem) {
-  .c6 {
+  .c5 {
     font-size: 1rem;
     line-height: 1.25rem;
   }
 }
 
 @media (max-width:24.9375rem) {
-  .c6 {
+  .c5 {
     padding: 0.75rem 0.5rem;
   }
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
-  .c9 {
+  .c8 {
     font-size: 1rem;
     line-height: 1.25rem;
   }
 }
 
 @media (min-width:37.5rem) {
-  .c9 {
+  .c8 {
     font-size: 1rem;
     line-height: 1.25rem;
   }
 }
 
 @media (max-width:24.9375rem) {
-  .c9 {
+  .c8 {
     padding: 0.75rem 0.5rem;
   }
 }
@@ -206,75 +185,70 @@ exports[`Navigation should render correctly 1`] = `
   <div
     class="c1"
   >
-    <div
+    <ul
       class="c2"
-      dir="ltr"
+      role="list"
     >
-      <ul
-        class="c3"
-        role="list"
+      <li
+        class="c3 c4"
+        role="listitem"
       >
-        <li
-          class="c4 c5"
-          role="listitem"
+        <a
+          class="c5"
+          data-navigation="test_navigation"
+          href="/igbo"
         >
-          <a
+          <span
             class="c6"
-            data-navigation="test_navigation"
-            href="/igbo"
+            role="text"
           >
             <span
               class="c7"
-              role="text"
             >
-              <span
-                class="c8"
-              >
-                Current page
-                , 
-              </span>
-              Akụkọ
+              Current page
+              , 
             </span>
-          </a>
-        </li>
-        <li
-          class="c4 c5"
-          role="listitem"
+            Akụkọ
+          </span>
+        </a>
+      </li>
+      <li
+        class="c3 c4"
+        role="listitem"
+      >
+        <a
+          class="c8"
+          data-navigation="test_navigation"
+          href="/igbo/egwuregwu"
         >
-          <a
-            class="c9"
-            data-navigation="test_navigation"
-            href="/igbo/egwuregwu"
-          >
-            Egwuregwu
-          </a>
-        </li>
-        <li
-          class="c4 c5"
-          role="listitem"
+          Egwuregwu
+        </a>
+      </li>
+      <li
+        class="c3 c4"
+        role="listitem"
+      >
+        <a
+          class="c8"
+          data-navigation="test_navigation"
+          href="/igbo/media/video"
         >
-          <a
-            class="c9"
-            data-navigation="test_navigation"
-            href="/igbo/media/video"
-          >
-            Ihe nkiri
-          </a>
-        </li>
-        <li
-          class="c4 c5"
-          role="listitem"
+          Ihe nkiri
+        </a>
+      </li>
+      <li
+        class="c3 c4"
+        role="listitem"
+      >
+        <a
+          class="c8"
+          data-navigation="test_navigation"
+          href="/igbo/popular/read"
         >
-          <a
-            class="c9"
-            data-navigation="test_navigation"
-            href="/igbo/popular/read"
-          >
-            Nke ka ewuewu
-          </a>
-        </li>
-      </ul>
-    </div>
+          Nke ka ewuewu
+        </a>
+      </li>
+    </ul>
   </div>
 </nav>
 `;
