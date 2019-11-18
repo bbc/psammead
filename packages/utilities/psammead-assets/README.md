@@ -45,7 +45,7 @@ const WrappingContainer = () => (
 
 ## Core Icons SVGs
 
-Core icons is an object containing styled SVG icons from GEL Iconography Core. By default Core icons are sized to work well alongside text from the `GEL BodyCopy` typography group, but can be sized differently within the component they're being used if necessary.
+Core icons is an object containing styled SVG icons from GEL Iconography Core. By default Core icons are sized to work well alongside text from the `GEL BodyCopy` typography group.
 
 ### Usage
 ```jsx
