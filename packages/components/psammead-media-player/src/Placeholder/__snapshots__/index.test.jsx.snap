@@ -265,7 +265,6 @@ exports[`Media Player: Placeholder should render a video placeholder with guidan
     class="c2"
   >
     <strong
-      aria-hidden="true"
       class="c3"
     >
       Guidance: May contain strong language, sexual or violent content that may offend.
