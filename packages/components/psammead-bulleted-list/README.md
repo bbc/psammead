@@ -44,7 +44,7 @@ const props = {
 
 ### When to use this component
 
-`BulletedLst`s can be used wherever you need a standard GEL unordered list.
+`BulletedList`s can be used wherever you need a standard GEL unordered list.
 
 ### When not to use this component
 
