@@ -1,8 +1,12 @@
+# ⛔️ This is an alpha component ⛔️
+
+This component is currently tagged as alpha and is not suitable for production use. Following the passing of an accessibility review this component will be marked as ready for production and the alpha tag removed.
+
 # psammead-bulleted-list - [![Known Vulnerabilities](https://snyk.io/test/github/bbc/psammead/badge.svg?targetFile=packages%2Fcomponents%2Fpsammead-bulleted-list%2Fpackage.json)](https://snyk.io/test/github/bbc/psammead?targetFile=packages%2Fcomponents%2Fpsammead-bulleted-list%2Fpackage.json) [![Dependency Status](https://david-dm.org/bbc/psammead.svg?path=packages/components/psammead-bulleted-list)](https://david-dm.org/bbc/psammead?path=packages/components/psammead-bulleted-list) [![peerDependencies Status](https://david-dm.org/bbc/psammead/peer-status.svg?path=packages/components/psammead-bulleted-list)](https://david-dm.org/bbc/psammead?path=packages/components/psammead-bulleted-list&type=peer) [![Storybook](https://raw.githubusercontent.com/storybooks/brand/master/badge/badge-storybook.svg?sanitize=true)](https://bbc.github.io/psammead/?path=/story/psammead-bulleted-list--containing-image) [![GitHub license](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](https://github.com/bbc/psammead/blob/latest/LICENSE) [![npm version](https://img.shields.io/npm/v/@bbc/psammead-bulleted-list.svg)](https://www.npmjs.com/package/@bbc/psammead-bulleted-list) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/bbc/psammead/blob/latest/CONTRIBUTING.md)
 
 ## Description
 
-The `PsammeadBulletedList` component does...
+The `BulletedList` component is a styled bulleted (unordered) list that works for right-to-left and left-to-right languages.
 
 ## Installation
 
@@ -14,31 +18,43 @@ npm install @bbc/psammead-bulleted-list --save
 
 | Argument  | Type | Required | Default | Example |
 | --------- | ---- | -------- | ------- | ------- |
-| No props. |      |          |         |         |
+| dir | string | No | `'ltr'` | One of `'rtl'` `'ltr'` |
+| script | script | Yes | N/A | { canon: { groupA: { fontSize: '28', lineHeight: '32',}, groupB: { fontSize: '32', lineHeight: '36', }, groupD: { fontSize: '44', lineHeight: '48', }, }, trafalgar: { groupA: { fontSize: '20', lineHeight: '24', }, groupB: { fontSize: '24', lineHeight: '28', }, groupD: { fontSize: '32', lineHeight: '36', }, }, } |
+| service | string | Yes | N/A | `'news'` |
 
 ## Usage
 
-<!-- Description of the component usage -->
+Use `BulletedList` in place of a `ul` element with required props. It styles all its direct `li` children.
 
-```
-import PsammeadBulletedList from "@bbc/psammead-bulleted-list"
+```jsx
+import BulletedList from "@bbc/psammead-bulleted-list";
+
+const props = {
+  dir: 'ltr',
+  script: latin,
+  service: 'news',
+};
+
+<BulletedList {...props}>
+  <li>A list item</li>
+  <li>Another item</li>
+</BulletedList>
+
 ```
 
 ### When to use this component
 
-<!-- Description of the where the component can be used -->
+`BulletedLst`s can be used wherever you need a standard GEL unordered list.
 
 ### When not to use this component
 
-<!-- Description of the where the component shouldn't can be used -->
+It's not ideal for ordered lists or for when you need a custom bullet. Use the standard <ol> or <ul> respectively in those cases.
 
 ### Accessibility notes
 
-<!-- Information about accessibility for this component -->
+The bullets in `psammead-bulleted-lists` are not read by screen readers and are generated using pseudo-elements.
 
-### Roadmap
-
-<!-- Known future changes of the component -->
+<!-- Roadmap -->
 
 ## Contributing
 
