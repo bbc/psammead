@@ -100,7 +100,10 @@ exports[`Bulletin should render audio correctly 1`] = `
   font-size: 0.9375rem;
   line-height: 1.25rem;
   color: #FFFFFF;
-  text-align: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   padding: 0.75rem;
   display: -webkit-box;
   display: -webkit-flex;
@@ -187,6 +190,14 @@ exports[`Bulletin should render audio correctly 1`] = `
   }
 }
 
+@media (min-width:37.5rem) and (max-width:62.9375rem) {
+  .c9 {
+    display: inline-block;
+    margin: 0;
+    padding-left: 0.5rem;
+  }
+}
+
 @media (min-width:20rem) and (max-width:37.4375rem) {
   .c8 {
     font-size: 1rem;
@@ -201,9 +212,10 @@ exports[`Bulletin should render audio correctly 1`] = `
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width:37.5rem) and (max-width:62.9375rem) {
   .c8 {
-    width: 6.125rem;
+    display: inline-block;
+    padding: 0.5rem 1rem 0.5rem 0;
   }
 }
 
@@ -439,7 +451,10 @@ exports[`Bulletin should render live audio correctly 1`] = `
   font-size: 0.9375rem;
   line-height: 1.25rem;
   color: #FFFFFF;
-  text-align: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   padding: 0.75rem;
   display: -webkit-box;
   display: -webkit-flex;
@@ -526,6 +541,14 @@ exports[`Bulletin should render live audio correctly 1`] = `
   }
 }
 
+@media (min-width:37.5rem) and (max-width:62.9375rem) {
+  .c10 {
+    display: inline-block;
+    margin: 0;
+    padding-left: 0.5rem;
+  }
+}
+
 @media (min-width:20rem) and (max-width:37.4375rem) {
   .c9 {
     font-size: 1rem;
@@ -540,9 +563,10 @@ exports[`Bulletin should render live audio correctly 1`] = `
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width:37.5rem) and (max-width:62.9375rem) {
   .c9 {
-    width: 6.125rem;
+    display: inline-block;
+    padding: 0.5rem 1rem 0.5rem 0;
   }
 }
 
@@ -785,7 +809,10 @@ exports[`Bulletin should render live video correctly 1`] = `
   font-size: 0.9375rem;
   line-height: 1.25rem;
   color: #FFFFFF;
-  text-align: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   padding: 0.75rem;
   display: -webkit-box;
   display: -webkit-flex;
@@ -874,6 +901,14 @@ exports[`Bulletin should render live video correctly 1`] = `
   }
 }
 
+@media (min-width:37.5rem) and (max-width:62.9375rem) {
+  .c10 {
+    display: inline-block;
+    margin: 0;
+    padding-left: 0.5rem;
+  }
+}
+
 @media (min-width:20rem) and (max-width:37.4375rem) {
   .c9 {
     font-size: 1rem;
@@ -888,9 +923,10 @@ exports[`Bulletin should render live video correctly 1`] = `
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width:37.5rem) and (max-width:62.9375rem) {
   .c9 {
-    width: 6.125rem;
+    display: inline-block;
+    padding: 0.5rem 1rem 0.5rem 0;
   }
 }
 
@@ -1115,7 +1151,10 @@ exports[`Bulletin should render video correctly 1`] = `
   font-size: 0.9375rem;
   line-height: 1.25rem;
   color: #FFFFFF;
-  text-align: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   padding: 0.75rem;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1204,6 +1243,14 @@ exports[`Bulletin should render video correctly 1`] = `
   }
 }
 
+@media (min-width:37.5rem) and (max-width:62.9375rem) {
+  .c9 {
+    display: inline-block;
+    margin: 0;
+    padding-left: 0.5rem;
+  }
+}
+
 @media (min-width:20rem) and (max-width:37.4375rem) {
   .c8 {
     font-size: 1rem;
@@ -1218,9 +1265,10 @@ exports[`Bulletin should render video correctly 1`] = `
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width:37.5rem) and (max-width:62.9375rem) {
   .c8 {
-    width: 6.125rem;
+    display: inline-block;
+    padding: 0.5rem 1rem 0.5rem 0;
   }
 }
 

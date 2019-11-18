@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import {
   GEL_GROUP_3_SCREEN_WIDTH_MIN,
+  GEL_GROUP_3_SCREEN_WIDTH_MAX,
   GEL_GROUP_2_SCREEN_WIDTH_MAX,
   GEL_GROUP_4_SCREEN_WIDTH_MIN,
 } from '@bbc/gel-foundations/breakpoints';
@@ -130,6 +131,11 @@ const IconWrapper = styled.span`
     fill: currentColor;
   }
   margin: 0 0.25rem;
+  @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) and (max-width: ${GEL_GROUP_3_SCREEN_WIDTH_MAX}) {
+    display: inline-block;
+    margin: 0;
+    padding-left: ${GEL_SPACING};
+  }
 `;
 
 const PlayCTA = styled.div.attrs({ 'aria-hidden': true })`
@@ -137,12 +143,13 @@ const PlayCTA = styled.div.attrs({ 'aria-hidden': true })`
   ${({ service }) => service && getSansRegular(service)};
   ${({ script }) => script && getPica(script)};
   color: ${C_WHITE};
-  text-align: center;
+  align-items: center;
   padding: 0.75rem;
   display: flex;
   justify-content: center;
-  @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
-    width: 6.125rem;
+  @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) and (max-width: ${GEL_GROUP_3_SCREEN_WIDTH_MAX}) {
+    display: inline-block;
+    padding: ${GEL_SPACING} ${GEL_SPACING_DBL} ${GEL_SPACING} 0;
   }
   @media (min-width: ${GEL_GROUP_4_SCREEN_WIDTH_MIN}) {
     width: 100%;
@@ -192,7 +199,6 @@ const RadioHeading = styled.h3`
   @media(min-width: ${GEL_GROUP_4_SCREEN_WIDTH_MIN}) {
     padding: ${GEL_SPACING};
   }
-
 `;
 
 const Bulletin = ({
