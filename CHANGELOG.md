@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 2.0.3 | [PR#2577](https://github.com/bbc/psammead/pull/2577) Add `react-test-renderer` and `@testing-library/react-hooks` |
 | 2.0.2 | [PR#2645](https://github.com/bbc/psammead/pull/2645) Talos - Bump Dependencies - @bbc/psammead-assets |
 | 2.0.1 | [PR#2615](https://github.com/bbc/psammead/pull/2615) Talos - Bump Dependencies - @bbc/psammead-assets, @bbc/psammead-image, @bbc/psammead-timestamp |
 | 2.0.0 | [PR#2607](https://github.com/bbc/psammead/pull/2607) Bump dependencies |
