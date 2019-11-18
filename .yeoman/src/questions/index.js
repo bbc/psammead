@@ -24,7 +24,7 @@ module.exports = [
     name: 'name',
     message:
       "What would you like to call your package? We'll automatically namespace it for you.",
-    default: 'my-component',
+    default: 'my-package',
     validate(answer) {
       const existingPackages = getExistingPackages();
       if (
