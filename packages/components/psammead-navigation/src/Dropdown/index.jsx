@@ -118,7 +118,7 @@ export const AmpDropdown = ({ announcedText, onClose, children }) => (
       aria-label={announcedText}
       on={onClose}
       // eslint-disable-next-line react/jsx-boolean-value
-      aria-expanded={true}
+      aria-expanded="true"
     >
       {navigationIcons.cross}
     </CrossButton>
@@ -132,7 +132,7 @@ export const CanonicalDropdown = ({ announcedText, onClose, children }) => (
       aria-label={announcedText}
       onClick={onClose}
       // eslint-disable-next-line react/jsx-boolean-value
-      aria-expanded={true}
+      aria-expanded="true"
     >
       {navigationIcons.cross}
     </CrossButton>
@@ -163,7 +163,7 @@ const HamburgerButton = styled.button`
 `;
 
 export const AmpHamburgerMenu = ({ announcedText, onOpen }) => (
-  <HamburgerButton aria-label={announcedText} on={onOpen} aria-expanded={false}>
+  <HamburgerButton aria-label={announcedText} on={onOpen} aria-expanded="false">
     {navigationIcons.hamburger}
   </HamburgerButton>
 );
@@ -172,7 +172,7 @@ export const CanonicalHamburgerMenu = ({ announcedText, onOpen }) => (
   <HamburgerButton
     aria-label={announcedText}
     onClick={onOpen}
-    aria-expanded={false}
+    aria-expanded="false"
   >
     {navigationIcons.hamburger}
   </HamburgerButton>
