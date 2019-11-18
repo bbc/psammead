@@ -81,7 +81,7 @@ const StyledOl = styled.ol.attrs({
   padding: 0;
 `;
 
-const MostReadItem = ({ service, script, link, rank, dir }) => (
+const MostReadItem = ({ rank, link, service, script, dir }) => (
   <li>
     <Grid {...MostReadItemProps} dir={dir}>
       <Grid {...MostReadRankProps} dir={dir}>
@@ -125,17 +125,17 @@ const linkPropTypes = shape({
 });
 
 MostReadItem.propTypes = {
+  rank: string.isRequired,
+  link: linkPropTypes.isRequired,
   service: string.isRequired,
   script: shape(scriptPropType).isRequired,
-  link: linkPropTypes.isRequired,
-  rank: string.isRequired,
   dir: oneOf(['rtl', 'ltr']),
 };
 
 MostReadList.propTypes = {
+  items: arrayOf(linkPropTypes).isRequired,
   service: string.isRequired,
   script: shape(scriptPropType).isRequired,
-  items: arrayOf(linkPropTypes).isRequired,
   dir: oneOf(['rtl', 'ltr']),
 };
 

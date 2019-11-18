@@ -7,8 +7,8 @@ import { scriptPropType } from '@bbc/gel-foundations/prop-types';
 import { getSansRegular } from '@bbc/psammead-styles/font-styles';
 
 const StyledHeading = styled.h2`
-  ${({ script }) => script && getTrafalgar(script)};
   ${({ service }) => getSansRegular(service)}
+  ${({ script }) => script && getTrafalgar(script)};
   color: ${C_SHADOW};
 `;
 
@@ -17,9 +17,9 @@ const MostReadTitle = ({ header, ...props }) => (
 );
 
 MostReadTitle.propTypes = {
-  script: shape(scriptPropType).isRequired,
-  service: string.isRequired,
   header: string.isRequired,
+  service: string.isRequired,
+  script: shape(scriptPropType).isRequired,
 };
 
 export default MostReadTitle;

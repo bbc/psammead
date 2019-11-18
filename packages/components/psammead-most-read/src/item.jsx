@@ -17,23 +17,13 @@ import {
 
 const paddingStart = ({ dir }) => `padding-${dir === 'ltr' ? 'left' : 'right'}`;
 
-export const MostReadRank = styled.span`
-  ${({ script }) => script && getFoolscap(script)};
-  ${({ service }) => getSerifLight(service)}
-  color: ${C_POSTBOX};
-  margin: 0; /* Reset */
-  padding: 0;
-  display: inline-block;
-  width: 3rem;
-`;
-
 const StyledLink = styled.a`
-  ${({ script }) => script && getDoublePica(script)};
   ${({ service }) => getSerifMedium(service)}
+  ${({ script }) => script && getDoublePica(script)};
   color: ${C_EBON};
-  
+
   text-decoration: none;
-  
+
   &:hover,
   &:focus {
     text-decoration: underline;
@@ -50,11 +40,21 @@ const StyledItem = styled.div`
   }
 `;
 
+export const MostReadRank = styled.span`
+  ${({ service }) => getSerifLight(service)}
+  ${({ script }) => script && getFoolscap(script)};
+  color: ${C_POSTBOX};
+  margin: 0; /* Reset */
+  padding: 0;
+  display: inline-block;
+  width: 3rem;
+`;
+
 export const MostReadLink = ({
-  lastUpdated,
-  script,
-  service,
   link: { title, href },
+  lastUpdated,
+  service,
+  script,
   dir,
 }) => (
   <StyledItem dir={dir}>
@@ -71,13 +71,13 @@ MostReadRank.propTypes = {
 };
 
 MostReadLink.propTypes = {
-  service: string.isRequired,
-  script: shape(scriptPropType).isRequired,
-  lastUpdated: node,
   link: shape({
     title: string.isRequired,
     href: string.isRequired,
   }).isRequired,
+  lastUpdated: node,
+  service: string.isRequired,
+  script: shape(scriptPropType).isRequired,
   dir: oneOf(['rtl', 'ltr']),
 };
 

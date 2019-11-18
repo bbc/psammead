@@ -8,5 +8,5 @@ storiesOf('Components|MostRead', module)
   .addDecorator(withKnobs)
   .addDecorator(withServicesKnob())
   .add('Title', ({ script, service }) => (
-    <MostReadTitle script={script} service={service} header="Most Read" />
+    <MostReadTitle header="Most Read" script={script} service={service} />
   ));

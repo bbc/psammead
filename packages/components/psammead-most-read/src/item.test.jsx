@@ -27,22 +27,22 @@ const lastUpdated = (script, service) => (
 describe('MostReadLink', () => {
   shouldMatchSnapshot(
     'should render ltr correctly',
-    <MostReadLink service="news" script={latin} dir="ltr" link={ltrLink} />,
+    <MostReadLink link={ltrLink} service="news" script={latin} dir="ltr" />,
   );
 
   shouldMatchSnapshot(
     'should render rtl correctly',
-    <MostReadLink service="persian" script={arabic} dir="rtl" link={rtlLink} />,
+    <MostReadLink link={rtlLink} service="persian" script={arabic} dir="rtl" />,
   );
 
   shouldMatchSnapshot(
     'should render with last updated date correctly',
     <MostReadLink
+      link={ltrLink}
+      lastUpdated={lastUpdated(latin, 'news')}
       service="news"
       script={latin}
       dir="ltr"
-      link={ltrLink}
-      lastUpdated={lastUpdated(latin, 'news')}
     />,
   );
 });

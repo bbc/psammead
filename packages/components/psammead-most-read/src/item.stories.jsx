@@ -47,9 +47,9 @@ const link = {
 stories.add(`MostReadLink with last updated date`, ({ script, service }) => (
   <MostReadLink
     link={link}
+    lastUpdated={lastUpdated(script, service)}
     service={service}
     script={script}
-    lastUpdated={lastUpdated(script, service)}
   />
 ));
 

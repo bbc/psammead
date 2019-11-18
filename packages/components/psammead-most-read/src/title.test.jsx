@@ -6,11 +6,11 @@ import MostReadTitle from './title';
 describe('Most read title', () => {
   shouldMatchSnapshot(
     'should render with ReithSans',
-    <MostReadTitle script={latin} service="news" header="Most Read" />,
+    <MostReadTitle header="Most Read" script={latin} service="news" />,
   );
 
   shouldMatchSnapshot(
     'should render with BBCNassimArabic',
-    <MostReadTitle script={arabic} service="arabic" header="Most Read" />,
+    <MostReadTitle header="Most Read" script={arabic} service="arabic" />,
   );
 });
