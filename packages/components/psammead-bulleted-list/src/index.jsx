@@ -13,7 +13,7 @@ const dirMargin = css`
   ${({ dir }) =>
     dir === 'rtl'
       ? `margin-right: -${GEL_SPACING_TRPL}`
-      : `margin-left: -${GEL_SPACING_TRPL}`};
+      : `margin-left: -${GEL_SPACING_TRPL}`}
 `;
 
 const BulletedList = styled.ul`
@@ -25,7 +25,7 @@ const BulletedList = styled.ul`
     display: inline-block;
     width: ${GEL_SPACING_TRPL};
     ${dirBackground}
-    ${dirMargin}
+    ${dirMargin};
     background-size: 30%;
   }
 `;
