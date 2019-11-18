@@ -1,34 +1,46 @@
 import React from 'react';
 import styled from 'styled-components';
-import { string, number, node, shape, bool, oneOf } from 'prop-types';
+import { string, number, node, shape, bool } from 'prop-types';
 import VisuallyHiddenText from '@bbc/psammead-visually-hidden-text';
 import {
-  GEL_GROUP_2_SCREEN_WIDTH_MIN,
-  GEL_GROUP_5_SCREEN_WIDTH_MIN,
   GEL_GROUP_0_SCREEN_WIDTH_MAX,
-  GEL_GROUP_1_SCREEN_WIDTH_MAX,
+  GEL_GROUP_2_SCREEN_WIDTH_MIN,
+  GEL_GROUP_3_SCREEN_WIDTH_MIN,
+  GEL_GROUP_5_SCREEN_WIDTH_MIN,
 } from '@bbc/gel-foundations/breakpoints';
 import {
   GEL_SPACING_HLF,
   GEL_SPACING,
   GEL_SPACING_DBL,
-  GEL_SPACING_TRPL,
 } from '@bbc/gel-foundations/spacings';
+import { getPica } from '@bbc/gel-foundations/typography';
+import { getSansRegular } from '@bbc/psammead-styles/font-styles';
 
-const SVG_TOP_OFFSET_ABOVE_400PX = '1.75rem'; // 28px
-const SVG_BOTTOM_OFFSET_BELOW_400PX = '0.75rem'; // 12px
-const PADDING_AROUND_SVG_ABOVE_400PX = 56;
-const PADDING_AROUND_SVG_BELOW_400PX = 32;
+const SVG_TOP_OFFSET_BELOW_400PX = '0.625rem'; // 10px
+const SVG_BOTTOM_OFFSET_BELOW_400PX = '0.375rem'; // 6px
+const SVG_BOTTOM_OFFSET_ABOVE_400PX = '0.75rem'; // 12px
+const SVG_BOTTOM_OFFSET_ABOVE_600PX = '1.25rem'; // 20px
+const SCRIPT_LINK_OFFSET_BELOW_240PX = 52;
+const PADDING_AROUND_SVG_BELOW_400PX = 16;
+const PADDING_AROUND_SVG_ABOVE_400PX = 28;
 
 const conditionallyRenderHeight = (svgHeight, padding) =>
-  svgHeight ? `height: ${(svgHeight + padding) / 16}rem;` : '';
+  svgHeight ? `min-height: ${(svgHeight + padding) / 16}rem;` : '';
 
 const TRANSPARENT_BORDER = `0.0625rem solid transparent`;
 
 const SvgWrapper = styled.div`
   position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
   max-width: ${GEL_GROUP_5_SCREEN_WIDTH_MIN};
   margin: 0 auto;
+
+  @media (max-width: ${GEL_GROUP_0_SCREEN_WIDTH_MAX}) {
+    display: block;
+  }
 `;
 
 const Banner = styled.div`
@@ -45,7 +57,12 @@ const Banner = styled.div`
   }
 
   @media (max-width: ${GEL_GROUP_0_SCREEN_WIDTH_MAX}) {
-    min-height: ${({ svgHeight }) => svgHeight / 16 + 5}rem;
+    ${({ scriptLink, svgHeight }) =>
+      scriptLink &&
+      `min-height: ${(svgHeight +
+        PADDING_AROUND_SVG_BELOW_400PX +
+        SCRIPT_LINK_OFFSET_BELOW_240PX) /
+        16}rem;`}
   }
 
   border-top: ${({ borderTop }) => borderTop && TRANSPARENT_BORDER};
@@ -61,6 +78,10 @@ const brandWidth = (minWidth, maxWidth) => `
 const StyledLink = styled.a`
   display: inline-block;
   ${({ maxWidth, minWidth }) => brandWidth(minWidth, maxWidth)}
+
+  @media (max-width: ${GEL_GROUP_0_SCREEN_WIDTH_MAX}) {
+    display: block;
+  }
 `;
 
 // `currentColor` has been used to address high contrast mode in Firefox.
@@ -68,15 +89,20 @@ const BrandSvg = styled.svg`
   box-sizing: content-box;
   color: ${props => props.logoColour};
   fill: currentColor;
-  padding-top: ${GEL_SPACING_DBL};
+  padding-top: ${SVG_TOP_OFFSET_BELOW_400PX};
   padding-bottom: ${SVG_BOTTOM_OFFSET_BELOW_400PX};
   height: ${props => props.height / 16}rem;
 
   ${({ maxWidth, minWidth }) => brandWidth(minWidth, maxWidth)}
 
   @media (min-width: ${GEL_GROUP_2_SCREEN_WIDTH_MIN}) {
-    padding-top: ${SVG_TOP_OFFSET_ABOVE_400PX};
-    padding-bottom: ${GEL_SPACING_TRPL};
+    padding-top: ${GEL_SPACING_DBL};
+    padding-bottom: ${SVG_BOTTOM_OFFSET_ABOVE_400PX};
+  }
+
+  @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
+    padding-top: ${SVG_BOTTOM_OFFSET_ABOVE_600PX};
+    padding-bottom: ${GEL_SPACING_DBL};
   }
 
   @media screen and (-ms-high-contrast: active), print {
@@ -89,9 +115,38 @@ const BrandSvg = styled.svg`
     ${StyledLink}:focus & {
     text-decoration: none;
     border-bottom: ${GEL_SPACING_HLF} solid ${props => props.logoColour};
+    margin-bottom: -${GEL_SPACING_HLF};
   }
   /* stylelint-enable */
-  `;
+`;
+
+/* Skip to content */
+const SKIP_LINK_COLOR = '#333';
+const SKIP_LINK_BORDER = '0.1875rem'; // 3px
+const TOP_BOTTOM_SPACING = '0.75rem'; // 12px
+
+export const SkipLink = styled.a`
+  position: absolute;
+  clip-path: inset(100%);
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  padding: ${TOP_BOTTOM_SPACING} ${GEL_SPACING};
+  background-color: #ffffff;
+  border: ${SKIP_LINK_BORDER} solid #000;
+  color: ${SKIP_LINK_COLOR};
+  text-decoration: none;
+  ${({ script }) => script && getPica(script)};
+  ${({ service }) => service && getSansRegular(service)}
+
+  &:focus {
+    clip-path: none;
+    clip: auto;
+    height: auto;
+    width: auto;
+  }
+`;
 
 const LocalisedBrandName = ({ product, serviceLocalisedName }) =>
   serviceLocalisedName ? (
@@ -172,30 +227,6 @@ StyledBrand.defaultProps = {
   serviceLocalisedName: null,
 };
 
-const ScriptLinkWrapper = styled.div`
-  display: inline-block;
-  @media (max-width: ${GEL_GROUP_0_SCREEN_WIDTH_MAX}) {
-    padding-top: 0;
-    position: relative;
-    right: 0;
-    display: block;
-  }
-
-  @media (max-width: ${GEL_GROUP_1_SCREEN_WIDTH_MAX}) {
-    top: calc(50% - 1.25rem);
-  }
-  position: absolute;
-  ${({ dir }) => (dir === 'ltr' ? 'right: 0' : 'left: 0')};
-  top: calc(50% - 1.5rem);
-`;
-
-const renderScriptLink = (scriptLink, dir, svgHeight) =>
-  scriptLink && (
-    <ScriptLinkWrapper dir={dir} svgHeight={svgHeight}>
-      {scriptLink}
-    </ScriptLinkWrapper>
-  );
-
 const Brand = props => {
   const {
     svgHeight,
@@ -207,11 +238,9 @@ const Brand = props => {
     backgroundColour,
     logoColour,
     scriptLink,
-    dir,
+    skipLink,
     ...rest
   } = props;
-
-  const scriptLinkComponent = renderScriptLink(scriptLink, dir, svgHeight);
 
   return (
     <Banner
@@ -220,21 +249,20 @@ const Brand = props => {
       borderBottom={borderBottom}
       backgroundColour={backgroundColour}
       logoColour={logoColour}
+      scriptLink={scriptLink}
       {...rest}
     >
-      {url ? (
-        <SvgWrapper>
+      <SvgWrapper>
+        {url ? (
           <StyledLink href={url} maxWidth={maxWidth} minWidth={minWidth}>
             <StyledBrand {...props} />
           </StyledLink>
-          {scriptLinkComponent}
-        </SvgWrapper>
-      ) : (
-        <SvgWrapper>
+        ) : (
           <StyledBrand {...props} />
-          {scriptLinkComponent}
-        </SvgWrapper>
-      )}
+        )}
+        {skipLink}
+        {scriptLink}
+      </SvgWrapper>
     </Banner>
   );
 };
@@ -245,7 +273,7 @@ Brand.defaultProps = {
   borderTop: false,
   borderBottom: false,
   scriptLink: null,
-  dir: 'ltr',
+  skipLink: null,
 };
 
 Brand.propTypes = {
@@ -255,7 +283,7 @@ Brand.propTypes = {
   borderTop: bool,
   borderBottom: bool,
   scriptLink: node,
-  dir: oneOf(['rtl', 'ltr']),
+  skipLink: node,
 };
 
 export default Brand;
