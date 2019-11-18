@@ -21,27 +21,26 @@ import { mediaIcons } from '@bbc/psammead-assets/svgs';
 import VisuallyHiddenText from '@bbc/psammead-visually-hidden-text';
 import { Link, LiveLabel } from '@bbc/psammead-story-promo';
 
-const TVBulletinWrapper = styled.div`
+const bulletinWrapperStyles = `
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   grid-column-gap: ${GEL_SPACING_DBL};
-  padding: ${GEL_SPACING};
-  @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
-    padding: ${GEL_SPACING_DBL};
-  }
   @media (min-width: ${GEL_GROUP_4_SCREEN_WIDTH_MIN}) {
     display: block;
   }
 `;
 
-const RadioBulletinWrapper = styled.div`
-  background-color: ${C_LUNAR};
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  grid-column-gap: ${GEL_SPACING_DBL};
-  @media (min-width: ${GEL_GROUP_4_SCREEN_WIDTH_MIN}) {
-    display: block;
+const TVBulletinWrapper = styled.div`
+  ${bulletinWrapperStyles};
+  padding: ${GEL_SPACING};
+  @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
+    padding: ${GEL_SPACING_DBL};
   }
+`;
+
+const RadioBulletinWrapper = styled.div`
+  ${bulletinWrapperStyles};
+  background-color: ${C_LUNAR};
 `;
 
 const TVImageWrapper = styled.div`
