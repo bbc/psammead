@@ -21,9 +21,14 @@ const LiveComponent = ({ headline, service }) => (
 );
 
 // eslint-disable-next-line react/prop-types
-const Info = ({ topStory, isLive, alsoItems }) => (
+const Info = ({ topStory, isLive, alsoItems, promoHasImage = true }) => (
   <>
-    <Headline script={latin} topStory={topStory} service="news" promoHasImage>
+    <Headline
+      script={latin}
+      topStory={topStory}
+      service="news"
+      promoHasImage={promoHasImage}
+    >
       <Link href="https://www.bbc.co.uk/news">
         {isLive ? (
           <LiveComponent headline="The live promo headline" service="news" />
@@ -32,7 +37,12 @@ const Info = ({ topStory, isLive, alsoItems }) => (
         )}
       </Link>
     </Headline>
-    <Summary script={latin} topStory={topStory} service="news" displayImage>
+    <Summary
+      script={latin}
+      topStory={topStory}
+      service="news"
+      displayImage={promoHasImage}
+    >
       The summary of the promo
     </Summary>
     <time>12 March 2019</time>
@@ -111,7 +121,7 @@ describe('StoryPromo - Top Story', () => {
     <StoryPromo
       image={Image}
       displayImage={false}
-      info={Info({ topStory: false })}
+      info={Info({ topStory: false, promoHasImage: false })}
       mediaIndicator={mediaInfo}
     />,
   );
