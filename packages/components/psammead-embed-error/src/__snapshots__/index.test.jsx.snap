@@ -1,6 +1,13 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`EmbedError renders a default embed error 1`] = `
+.c3 {
+  vertical-align: middle;
+  margin: 0 0.25rem;
+  color: #222222;
+  fill: currentColor;
+}
+
 .c0 {
   font-family: ReithSans,Helvetica,Arial,sans-serif;
   font-weight: 400;
@@ -28,11 +35,28 @@ exports[`EmbedError renders a default embed error 1`] = `
 }
 
 .c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   margin: 1.5rem;
 }
 
 .c1 strong {
   font-weight: normal;
+}
+
+.c2 {
+  margin-right: 0.5rem;
+  position: relative;
+  top: -0.125rem;
+}
+
+.c2 > svg {
+  fill: currentColor;
+  height: 1.5rem;
+  margin: 0;
+  width: 1.5rem;
 }
 
 @media (min-width:20rem) {
@@ -45,17 +69,40 @@ exports[`EmbedError renders a default embed error 1`] = `
 <div
   class="c0"
 >
-  <p
+  <div
     class="c1"
   >
+    <span
+      aria-hidden="true"
+      class="c2"
+    >
+      <svg
+        class="c3"
+        focusable="false"
+        height="1rem"
+        viewBox="0 0 32 32"
+        width="1rem"
+      >
+        <path
+          d="M16 2L0 30h32zm2 25h-4v-4h4zm-4-6V11h4v10z"
+        />
+      </svg>
+    </span>
     <strong>
       Sorry, we're unable to bring you this media right now.
     </strong>
-  </p>
+  </div>
 </div>
 `;
 
 exports[`EmbedError renders an embed error that fills the viewport 1`] = `
+.c3 {
+  vertical-align: middle;
+  margin: 0 0.25rem;
+  color: #222222;
+  fill: currentColor;
+}
+
 .c0 {
   font-family: ReithSans,Helvetica,Arial,sans-serif;
   font-weight: 400;
@@ -83,11 +130,28 @@ exports[`EmbedError renders an embed error that fills the viewport 1`] = `
 }
 
 .c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   margin: 1.5rem;
 }
 
 .c1 strong {
   font-weight: normal;
+}
+
+.c2 {
+  margin-right: 0.5rem;
+  position: relative;
+  top: -0.125rem;
+}
+
+.c2 > svg {
+  fill: currentColor;
+  height: 1.5rem;
+  margin: 0;
+  width: 1.5rem;
 }
 
 @media (min-width:20rem) {
@@ -100,12 +164,28 @@ exports[`EmbedError renders an embed error that fills the viewport 1`] = `
 <div
   class="c0"
 >
-  <p
+  <div
     class="c1"
   >
+    <span
+      aria-hidden="true"
+      class="c2"
+    >
+      <svg
+        class="c3"
+        focusable="false"
+        height="1rem"
+        viewBox="0 0 32 32"
+        width="1rem"
+      >
+        <path
+          d="M16 2L0 30h32zm2 25h-4v-4h4zm-4-6V11h4v10z"
+        />
+      </svg>
+    </span>
     <strong>
       Sorry, we're unable to bring you this media right now.
     </strong>
-  </p>
+  </div>
 </div>
 `;
