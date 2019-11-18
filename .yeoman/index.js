@@ -31,13 +31,13 @@ module.exports = class extends Generator {
     const destination = `./packages/${this.props.kind}/psammead-${this.props.name}`;
     shell.mkdir('-p', destination);
     this.destinationRoot(destination);
-    this.sourceRoot(`${__dirname}/templates`);
+    this.sourceRoot(`${__dirname}/templates/${this.props.kind}`);
   }
 
   writing() {
     this.log(chalk.blue('Generating your package files...'));
 
-    fs.readdir(`${__dirname}/templates`, (err, files) => {
+    fs.readdir(`${__dirname}/templates/${this.props.kind}`, (err, files) => {
       files.forEach(filename => {
         this.fs.copyTpl(
           this.templatePath(filename),
