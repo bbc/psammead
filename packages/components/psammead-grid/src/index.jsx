@@ -86,10 +86,9 @@ const mediaQuery = ({ min, max, styles }) => {
 
 const gridMediaQueries = ({
   columns,
+  margins,
   gridStartOffset,
   enableGelGutters,
-  enableGelMargins,
-  enableNegativeGelMargins,
 }) => {
   const selectedGroups = Object.keys(columns);
 
@@ -103,12 +102,7 @@ const gridMediaQueries = ({
       grid-template-columns: repeat(${columns[group]}, 1fr);
       grid-column-end: span ${columns[group]};
       ${enableGelGutters ? `grid-column-gap: ${groups[group].gutterSize};` : ``}
-      ${enableGelMargins ? `padding: 0 ${groups[group].marginSize};` : ``}
-      ${
-        enableNegativeGelMargins
-          ? `margin: 0 -${groups[group].marginSize};`
-          : ``
-      }
+      ${margins[group] ? `padding: 0 ${groups[group].marginSize};` : ``}
       ${
         gridStartOffset && gridStartOffset[group]
           ? `grid-column-start: ${gridStartOffset[group]};`
@@ -131,7 +125,7 @@ const getNegativeOffset = (
     gridStartOffset &&
     gridStartOffsetGroup &&
     gridStartOffsetGroup < parentColumnsGroup &&
-    columnsGroup === parentColumnsGroup;
+    columnsGroup === parentColumnsGroup; // if fills out whole page
 
   return isValidOffset
     ? ` - ${startOffsetPercentage(parentColumnsGroup, gridStartOffsetGroup)}`
@@ -147,6 +141,8 @@ const childrenFallback = (
   item,
   dir,
   columnsGroup,
+  marginsGroup,
+  marginSize,
   parentColumnsGroup,
   parentEnableGelGutters,
   gutterSize,
@@ -161,6 +157,7 @@ const childrenFallback = (
   );
 
   return ` 
+  ${marginsGroup ? `padding: 0 ${marginSize};` : ``}
   ${
     item && parentEnableGelGutters
       ? ` 
@@ -189,11 +186,14 @@ const childrenFallback = (
 const outerGridFallback = (
   dir,
   columnsGroup,
+  marginsGroup,
+  marginSize,
   enableGelGutters,
   gutterSize,
   gridStartOffset,
   gridStartOffsetGroup,
 ) => `
+  ${marginsGroup ? `padding: 0 ${marginSize};` : ``}
   ${enableGelGutters ? `margin: 0 -${parseFloat(gutterSize) / 2}rem;` : ``}
   ${
     gridStartOffset && gridStartOffsetGroup < columnsGroup
@@ -209,6 +209,7 @@ const gridFallbacks = css`
     item,
     dir,
     columns,
+    margins,
     parentColumns,
     enableGelGutters,
     parentEnableGelGutters,
@@ -232,6 +233,8 @@ const gridFallbacks = css`
                   ? outerGridFallback(
                       dir,
                       columns[group],
+                      margins[group],
+                      groups[group].marginSize,
                       enableGelGutters,
                       groups[group].gutterSize,
                       gridStartOffset,
@@ -241,6 +244,8 @@ const gridFallbacks = css`
                       item,
                       dir,
                       columns[group],
+                      margins[group],
+                      groups[group].marginSize,
                       parentColumns[group],
                       parentEnableGelGutters,
                       groups[group].gutterSize,
@@ -262,27 +267,6 @@ const GridComponent = styled.div`
     ${gridMediaQueries}
     ${({ item }) =>
       item ? `display: block;` : `display: grid; position: initial;`}
-  }
-`;
-
-const wrapperFallbacks = ({ columns }) => {
-  const selectedGroups = Object.keys(columns);
-
-  return selectedGroups.map(group =>
-    mediaQuery({
-      min: groups[group].min,
-      max: groups[group].max,
-      styles: `
-        padding: 0 ${groups[group].marginSize};
-      `,
-    }),
-  );
-};
-
-const Wrapper = styled.div`
-  ${wrapperFallbacks}
-  @supports (display: grid) {
-    padding: 0;
   }
 `;
 
@@ -312,15 +296,6 @@ const Grid = ({
     </GridComponent>
   );
 
-  const isOuterGrid = otherProps.enableGelMargins && !otherProps.parentColumns;
-
-  if (isOuterGrid) {
-    // This is done to add a wrapper with padding when CSS Grid is not supported and enableGelMargins is passed
-    return (
-      <Wrapper columns={otherProps.columns}>{renderGridComponent()}</Wrapper>
-    );
-  }
-
   return renderGridComponent();
 };
 
@@ -335,8 +310,14 @@ Grid.propTypes = {
     group5: number.isRequired,
   }).isRequired,
   enableGelGutters: bool,
-  enableGelMargins: bool,
   enableNegativeGelMargins: bool,
+  margins: shape({
+    group1: bool,
+    group2: bool,
+    group3: bool,
+    group4: bool,
+    group5: bool,
+  }),
   startOffset: shape({
     group1: number,
     group2: number,
@@ -350,8 +331,13 @@ Grid.propTypes = {
 Grid.defaultProps = {
   dir: 'ltr',
   enableGelGutters: false,
-  enableGelMargins: false,
-  enableNegativeGelMargins: false,
+  margins: {
+    group1: false,
+    group2: false,
+    group3: false,
+    group4: false,
+    group5: false,
+  },
   startOffset: {},
   item: false,
 };
