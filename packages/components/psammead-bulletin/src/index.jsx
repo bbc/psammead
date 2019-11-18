@@ -52,10 +52,16 @@ const RadioBulletinWrapper = styled.div`
   background-color: ${C_LUNAR};
 `;
 
-const TVImageWrapper = styled.div`
-  grid-column: 1 / span 6;
-  display: inline-block;
+const imageWrapperStyles = `
   vertical-align: top;
+  display: inline-block;
+  grid-column: 1 / span 6;
+  @supports (${grid}) {
+    width: initial;
+  }
+`;
+
+const TVImageWrapper = styled.div`
   @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
     grid-column: 1 / span 3;
     width: ${halfWidthColumnsMaxScaleable};
@@ -64,36 +70,35 @@ const TVImageWrapper = styled.div`
     display: block;
     width: ${fullWidthColumnsMaxScaleable};
   }
-  @supports (${grid}) {
-    width: initial;
-  }
+  ${imageWrapperStyles};
 `;
 
 const RadioImageWrapper = styled.div`
-  grid-column: 1 / span 6;
   @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
     grid-column: 1 / span 2;
-    display: inline-block;
     width: ${twoOfSixColumnsMaxWidthScaleable};
   }
   @media (max-width: ${GEL_GROUP_2_SCREEN_WIDTH_MAX}) {
     display: none;
   }
+  @media (min-width: ${GEL_GROUP_4_SCREEN_WIDTH_MIN}) {
+    display: none;
+  }
+  ${imageWrapperStyles};
+`;
+
+const textWrapperStyles = `
+  grid-column: 1 / span 6;
+  display: inline-block;
   @supports (${grid}) {
     width: initial;
-  }
-  @media (min-width: ${GEL_GROUP_4_SCREEN_WIDTH_MIN}) {
-    display: block;
-    width: ${fullWidthColumnsMaxScaleable};
+    padding-left: 0;
   }
 `;
 
 const TVTextWrapper = styled.div`
-  grid-column: 1 / span 6;
-  width: ${fullWidthColumnsMaxScaleable};
   @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
     grid-column: 4 / span 3;
-    display: inline-block;
     width: ${halfWidthColumnsMaxScaleable};
     padding-left: ${GEL_SPACING_DBL};
   }
@@ -102,28 +107,19 @@ const TVTextWrapper = styled.div`
     width: ${fullWidthColumnsMaxScaleable};
     padding-left: 0;
   }
-  @supports (${grid}) {
-    width: initial;
-    padding-left: 0;
-  }
+  ${textWrapperStyles};
 `;
 
 const RadioTextWrapper = styled.div`
-  grid-column: 1 / span 6;
-  vertical-align: top;
   @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
     grid-column: 3 / span 4;
-    display: inline-block;
     padding-left: ${GEL_SPACING_DBL};
-  }
-  @supports (${grid}) {
-    width: initial;
-    padding-left: 0;
   }
   @media (min-width: ${GEL_GROUP_4_SCREEN_WIDTH_MIN}) {
     display: block;
     padding-left: 0;
   }
+  ${textWrapperStyles};
 `;
 
 const IconWrapper = styled.span`
@@ -164,6 +160,9 @@ const BulletinSummary = styled.p`
     padding-right: 0;
   }
   padding-bottom: ${GEL_SPACING_DBL};
+  @media(min-width: ${GEL_GROUP_4_SCREEN_WIDTH_MIN}) {
+    ${({ type }) => type === 'audio' && `padding-left: ${GEL_SPACING}`}
+  }
 `;
 
 const TVHeading = styled.h3`
@@ -178,7 +177,6 @@ const TVHeading = styled.h3`
   @media (min-width: ${GEL_GROUP_4_SCREEN_WIDTH_MIN}) {
     padding-top: ${GEL_SPACING};
   }
-
 `;
 
 const RadioHeading = styled.h3`
@@ -190,6 +188,11 @@ const RadioHeading = styled.h3`
   @media(min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
     padding: ${GEL_SPACING} 0;
   }
+
+  @media(min-width: ${GEL_GROUP_4_SCREEN_WIDTH_MIN}) {
+    padding: ${GEL_SPACING};
+  }
+
 `;
 
 const Bulletin = ({
@@ -212,9 +215,9 @@ const Bulletin = ({
 
   return (
     <BulletinWrapper>
-      <ImageWrapper type={type}>{image}</ImageWrapper>
-      <TextWrapper type={type}>
-        <BulletinHeading script={script} service={service} type={type}>
+      <ImageWrapper>{image}</ImageWrapper>
+      <TextWrapper>
+        <BulletinHeading script={script} service={service}>
           <VisuallyHiddenText>
             {isLive ? `${ctaText} ${liveText} ` : `${ctaText} `}
           </VisuallyHiddenText>
