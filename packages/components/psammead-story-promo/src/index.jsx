@@ -37,19 +37,17 @@ import { grid } from '@bbc/psammead-styles/detection';
 const twoOfSixColumnsMaxWidthScaleable = `33.33%`;
 // (2 / 6) * 100 = 0.3333333333 = 33.33%
 
-const fourOfTwelveColumnsMaxWidthScaleable = `33.33%`;
-// (4 / 12) * 100 = 0.3333333333 = 33.33%
-
 const fourOfSixColumnsMaxWidthScaleable = `66.67%`;
 // (4 / 6) * 100 = 66.6666666667 = 66.67%
-
-const eightOfTwelveColumnsMaxScaleable = `66.67%`;
-// (8 / 12) * 100 = 66.6666666667 = 66.67%
 
 const fullWidthColumnsMaxScaleable = `100%`;
 // (12 / 12) * 100 = 100 = 100%
 
 const halfWidthColumnsMaxScaleable = `50%`;
+
+const gridFallbackImageWidth = css`
+  width: calc(${halfWidthColumnsMaxScaleable} - ${GEL_SPACING});
+`;
 
 const StoryPromoWrapper = styled.div`
   position: relative;
@@ -95,12 +93,12 @@ const ImageGridFallbackTopStory = css`
   width: ${fullWidthColumnsMaxScaleable};
 
   @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
-    width: ${halfWidthColumnsMaxScaleable};
+    ${gridFallbackImageWidth};
     margin-bottom: 0;
   }
 
-  @media (min-width: ${GEL_GROUP_5_SCREEN_WIDTH_MIN}) {
-    width: ${fourOfTwelveColumnsMaxWidthScaleable};
+  @media (min-width: ${GEL_GROUP_4_SCREEN_WIDTH_MIN}) {
+    ${gridFallbackImageWidth};
   }
 `;
 
@@ -177,8 +175,8 @@ const TextGridFallbackTopStory = css`
     padding: 0 ${GEL_SPACING_DBL};
   }
 
-  @media (min-width: ${GEL_GROUP_5_SCREEN_WIDTH_MIN}) {
-    width: ${eightOfTwelveColumnsMaxScaleable};
+  @media (min-width: ${GEL_GROUP_4_SCREEN_WIDTH_MIN}) {
+    width: ${halfWidthColumnsMaxScaleable};
   }
 `;
 
