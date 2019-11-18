@@ -20,6 +20,15 @@ import { getPica, getLongPrimer } from '@bbc/gel-foundations/typography';
 import { mediaIcons } from '@bbc/psammead-assets/svgs';
 import VisuallyHiddenText from '@bbc/psammead-visually-hidden-text';
 import { Link, LiveLabel } from '@bbc/psammead-story-promo';
+import { grid } from '@bbc/psammead-styles/detection';
+
+const twoOfSixColumnsMaxWidthScaleable = `33.33%`;
+// (2 / 6) * 100 = 0.3333333333 = 33.33%
+
+const fullWidthColumnsMaxScaleable = `100%`;
+// (12 / 12) * 100 = 100 = 100%
+
+const halfWidthColumnsMaxScaleable = `50%`;
 
 const bulletinWrapperStyles = `
   display: grid;
@@ -45,8 +54,18 @@ const RadioBulletinWrapper = styled.div`
 
 const TVImageWrapper = styled.div`
   grid-column: 1 / span 6;
+  display: inline-block;
+  vertical-align: top;
   @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
     grid-column: 1 / span 3;
+    width: ${halfWidthColumnsMaxScaleable};
+  }
+  @media (min-width: ${GEL_GROUP_4_SCREEN_WIDTH_MIN}) {
+    display: block;
+    width: ${fullWidthColumnsMaxScaleable};
+  }
+  @supports (${grid}) {
+    width: initial;
   }
 `;
 
@@ -54,23 +73,56 @@ const RadioImageWrapper = styled.div`
   grid-column: 1 / span 6;
   @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
     grid-column: 1 / span 2;
+    display: inline-block;
+    width: ${twoOfSixColumnsMaxWidthScaleable};
   }
   @media (max-width: ${GEL_GROUP_2_SCREEN_WIDTH_MAX}) {
     display: none;
+  }
+  @supports (${grid}) {
+    width: initial;
+  }
+  @media (min-width: ${GEL_GROUP_4_SCREEN_WIDTH_MIN}) {
+    display: block;
+    width: ${fullWidthColumnsMaxScaleable};
   }
 `;
 
 const TVTextWrapper = styled.div`
   grid-column: 1 / span 6;
+  width: ${fullWidthColumnsMaxScaleable};
   @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
     grid-column: 4 / span 3;
+    display: inline-block;
+    width: ${halfWidthColumnsMaxScaleable};
+    padding-left: ${GEL_SPACING_DBL};
+  }
+  @media (min-width: ${GEL_GROUP_4_SCREEN_WIDTH_MIN}) {
+    display: block;
+    width: ${fullWidthColumnsMaxScaleable};
+    padding-left: 0;
+  }
+  @supports (${grid}) {
+    width: initial;
+    padding-left: 0;
   }
 `;
 
 const RadioTextWrapper = styled.div`
   grid-column: 1 / span 6;
+  vertical-align: top;
   @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
     grid-column: 3 / span 4;
+    display: inline-block;
+    padding-left: ${GEL_SPACING_DBL};
+  }
+  @supports (${grid}) {
+    width: initial;
+    padding-left: 0;
+  }
+  @media (min-width: ${GEL_GROUP_4_SCREEN_WIDTH_MIN}) {
+    display: block;
+    padding-left: 0;
   }
 `;
 
