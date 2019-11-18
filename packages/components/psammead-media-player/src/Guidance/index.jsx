@@ -17,17 +17,24 @@ const GuidanceWrapper = styled.div`
   height: 100%;
   position: absolute;
   background-color: ${GUIDANCE_BACKGROUND};
+  border: 0.0625rem solid transparent;
   color: ${C_WHITE};
-
-  padding: ${GEL_SPACING};
-
-  @media (min-width: ${GEL_GROUP_2_SCREEN_WIDTH_MIN}) {
-    padding: ${GEL_SPACING_DBL};
+  @media screen and (-ms-high-contrast: active) {
+    background-color: transparent;
   }
 `;
 
 const GuidanceMessage = styled.strong`
+  display: block;
   font-weight: normal;
+  padding: ${GEL_SPACING};
+  border-bottom: 0.0625rem solid transparent;
+  @media screen and (-ms-high-contrast: active) {
+    background-color: window;
+  }
+  @media (min-width: ${GEL_GROUP_2_SCREEN_WIDTH_MIN}) {
+    padding: ${GEL_SPACING_DBL};
+  }
 `;
 
 const Guidance = ({ guidanceMessage, service }) => (

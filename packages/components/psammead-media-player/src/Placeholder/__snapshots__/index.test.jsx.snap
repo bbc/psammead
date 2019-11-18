@@ -204,12 +204,15 @@ exports[`Media Player: Placeholder should render a video placeholder with guidan
   height: 100%;
   position: absolute;
   background-color: rgba(34,34,34,0.75);
+  border: 0.0625rem solid transparent;
   color: #FFFFFF;
-  padding: 0.5rem;
 }
 
 .c3 {
+  display: block;
   font-weight: normal;
+  padding: 0.5rem;
+  border-bottom: 0.0625rem solid transparent;
 }
 
 .c1 {
@@ -237,8 +240,20 @@ exports[`Media Player: Placeholder should render a video placeholder with guidan
   }
 }
 
-@media (min-width:25rem) {
+@media screen and (-ms-high-contrast:active) {
   .c2 {
+    background-color: transparent;
+  }
+}
+
+@media screen and (-ms-high-contrast:active) {
+  .c3 {
+    background-color: window;
+  }
+}
+
+@media (min-width:25rem) {
+  .c3 {
     padding: 1rem;
   }
 }
