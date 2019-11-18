@@ -32,6 +32,24 @@ storiesOf('Components|PlayButton/Video', module)
       />
     ),
     { notes },
+  )
+  .add(
+    'video with guidance',
+    ({ service }) => (
+      <PlayButton
+        service={service}
+        title="Dog chases cat."
+        onClick={() => {}}
+        duration={text('duration', '2:30')}
+        durationSpoken={text('durationSpoken', '2 minutes 30 seconds')}
+        datetime={text('datetime', 'PT2M30S')}
+        guidanceMessage={text(
+          'guidanceMessage',
+          'Guidance: May contain strong language that may offend.',
+        )}
+      />
+    ),
+    { notes },
   );
 
 storiesOf('Components|PlayButton/Audio', module)
