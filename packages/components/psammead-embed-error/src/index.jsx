@@ -2,12 +2,16 @@ import React from 'react';
 import { string, bool } from 'prop-types';
 import styled from 'styled-components';
 import { C_CHALK, C_EBON } from '@bbc/psammead-styles/colours';
-import { GEL_SPACING_TRPL, GEL_SPACING } from '@bbc/gel-foundations/spacings';
+import {
+  GEL_SPACING_TRPL,
+  GEL_SPACING_HLF,
+} from '@bbc/gel-foundations/spacings';
 import { getSansRegular } from '@bbc/psammead-styles/font-styles';
 import { GEL_BODY_COPY } from '@bbc/gel-foundations/typography';
 import { BBC_BLOCKS, coreIcons } from '@bbc/psammead-assets/svgs';
 
 const GOLDEN_RATIO_PERCENT = '38.2%';
+const GEL_SPACING_TRPL_MINUS_HLF = '1.25rem';
 const GEL_SPACING_QRT = '0.125rem';
 
 const StyledEmbedError = styled.div`
@@ -27,22 +31,21 @@ const StyledEmbedError = styled.div`
 
 const StyledErrorMessage = styled.div`
   display: flex;
-  margin: ${GEL_SPACING_TRPL};
+  margin: ${GEL_SPACING_TRPL} ${GEL_SPACING_TRPL_MINUS_HLF};
 
   strong {
     font-weight: normal;
+    margin: 0 ${GEL_SPACING_HLF};
   }
 `;
 
 const IconWrapper = styled.span`
-  margin-right: ${GEL_SPACING};
   position: relative;
   top: -${GEL_SPACING_QRT};
 
   > svg {
     fill: currentColor;
     height: ${GEL_SPACING_TRPL};
-    margin: 0;
     width: ${GEL_SPACING_TRPL};
   }
 `;
