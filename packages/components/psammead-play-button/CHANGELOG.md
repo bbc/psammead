@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 | ------------- | ----------- |
+| 1.1.0 | [PR#2627](https://github.com/bbc/psammead/issues/2627) Add `guidanceMessage` prop |
 | 1.0.3 | [PR#2647](https://github.com/bbc/psammead/pull/2647) Talos - Bump Dependencies - @bbc/psammead-assets |
 | 1.0.2 | [PR#2645](https://github.com/bbc/psammead/pull/2645) Talos - Bump Dependencies - @bbc/psammead-assets |
 | 1.0.1 | [PR#2615](https://github.com/bbc/psammead/pull/2615) Talos - Bump Dependencies - @bbc/psammead-assets |
