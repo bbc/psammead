@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react';
+import React from 'react';
 import styled, { css } from 'styled-components';
 import { shape, string, node, bool, oneOf } from 'prop-types';
 import VisuallyHiddenText from '@bbc/psammead-visually-hidden-text';
@@ -16,10 +16,6 @@ import {
 import { getPica } from '@bbc/gel-foundations/typography';
 import { scriptPropType } from '@bbc/gel-foundations/prop-types';
 import { getSansRegular } from '@bbc/psammead-styles/font-styles';
-import SwipeableNav from './SwipeableNavigation/index';
-import useWindowWidth from '../hooks/useWindowWidth';
-import useOverflowed from '../hooks/useOverflowed';
-import useMediaQuery from '../hooks/useMediaQuery';
 
 const TOP_BOTTOM_SPACING = '0.75rem'; // 12px
 const CURRENT_ITEM_HOVER_BORDER = '0.3125rem'; // 5px
@@ -216,44 +212,9 @@ const StyledNav = styled.nav`
 `;
 
 const Navigation = ({ children, dir }) => {
-  const isSwipeable = useMediaQuery('(max-width: 600px)');
-  const ariaHidden = isSwipeable && { 'aria-hidden': true };
-
-  const ref = useRef(null);
-  const windowWidth = useWindowWidth();
-  const isOverflowed = useOverflowed(ref, windowWidth);
-
-  const [scrollEnd, setScrollEnd] = useState(false);
-
-  const handleScroll = event => {
-    const { scrollLeft, scrollWidth } = event.target;
-
-    const isEnd =
-      scrollWidth - Math.abs(scrollLeft) === event.target.offsetWidth;
-
-    if (isEnd) {
-      setScrollEnd(true);
-    } else {
-      setScrollEnd(false);
-    }
-  };
-
   return (
     <StyledNav role="navigation" dir={dir}>
-      <NavWrapper>
-        <SwipeableNav
-          onScroll={handleScroll}
-          ref={ref}
-          dir={dir}
-          overflowed={isOverflowed}
-          scrollEnd={scrollEnd}
-          {...ariaHidden}
-        >
-          {React.Children.map(children, child =>
-            React.cloneElement(child, { isSwipeable }),
-          )}
-        </SwipeableNav>
-      </NavWrapper>
+      <NavWrapper>{children}</NavWrapper>
     </StyledNav>
   );
 };

@@ -13,6 +13,7 @@ import { C_POSTBOX, C_WHITE } from '@bbc/psammead-styles/colours';
 import Brand from '@bbc/psammead-brand';
 import { withServicesKnob } from '@bbc/psammead-storybook-helpers';
 import Navigation, { NavigationUl, NavigationLi } from './index';
+import SwipeableNavigation from './SwipeableNavigation/index';
 import igboNavData from '../testHelpers/igbo';
 import pidginNavData from '../testHelpers/pidgin';
 import yorubaNavData from '../testHelpers/yoruba';
@@ -125,25 +126,27 @@ const navigationStory = (
       service={service}
       dir={dir}
     >
-      <NavigationUl>
-        {navData.map((item, index) => {
-          const { title, url } = item;
-          const active = index === 0;
+      <SwipeableNavigation dir={dir}>
+        <NavigationUl>
+          {navData.map((item, index) => {
+            const { title, url } = item;
+            const active = index === 0;
 
-          return (
-            <NavigationLi
-              key={title}
-              url={url}
-              script={script}
-              active={active}
-              currentPageText={currentPageText}
-              service={service}
-            >
-              {title}
-            </NavigationLi>
-          );
-        })}
-      </NavigationUl>
+            return (
+              <NavigationLi
+                key={title}
+                url={url}
+                script={script}
+                active={active}
+                currentPageText={currentPageText}
+                service={service}
+              >
+                {title}
+              </NavigationLi>
+            );
+          })}
+        </NavigationUl>
+      </SwipeableNavigation>
     </Navigation>
   </>
 );
