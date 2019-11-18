@@ -72,7 +72,7 @@ const InfoComponent = ({
       script={script}
       topStory={topStory}
       service={service}
-      withImage={displayImage}
+      promoHasImage={displayImage}
     >
       <Link href="https://www.bbc.co.uk/news">
         {isLive ? (

@@ -243,7 +243,7 @@ export const Headline = styled.h3`
   color: ${C_EBON};
   margin: 0; /* Reset */
   padding-bottom: ${GEL_SPACING};
-  ${({ withImage }) => !withImage && `display: inline;`}
+  ${({ promoHasImage }) => !promoHasImage && `display: inline;`}
 
   @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
     ${({ script, topStory }) =>
@@ -251,19 +251,20 @@ export const Headline = styled.h3`
   }
 
   @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MAX}) {
-    ${({ script, withImage }) => !withImage && script && getPica(script)}
+    ${({ script, promoHasImage }) =>
+      !promoHasImage && script && getPica(script)}
   }
 `;
 
 Headline.propTypes = {
   script: shape(scriptPropType).isRequired,
   service: string.isRequired,
-  withImage: bool,
+  promoHasImage: bool,
   topStory: bool,
 };
 
 Headline.defaultProps = {
-  withImage: true,
+  promoHasImage: true,
   topStory: false,
 };
 
