@@ -4,6 +4,7 @@
 | Version | Description |
 |---------|-------------|
 | 2.10.0 | [PR#2631](https://github.com/bbc/psammead/pull/2631) Add AMP_BIND, AMP_LIST, AMP_MUSTACHE scripts to amp-boilerplate exports |
+| 2.9.0 | [PR#2641](https://github.com/bbc/psammead/pull/2641) Add Core icons group with Alert and Info icons |
 | 2.8.0 | [PR#2581](https://github.com/bbc/psammead/pull/2581) Added hamburger and cross icons for Navigation |
 | 2.7.0 | [PR#2531](https://github.com/bbc/psammead/pull/2531) Added Guidance icon |
 | 2.6.0 | [PR#2433](https://github.com/bbc/psammead/pull/2433) Add AMP js script boilerplate to psammead-assets. |
