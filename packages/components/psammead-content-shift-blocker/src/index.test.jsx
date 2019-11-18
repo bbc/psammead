@@ -189,13 +189,21 @@ it('should not adjust scroll position when content is below viewport', () => {
   const initialScrollYPosition = 300;
   const initialSize = 200;
   const sizeDecrease = 100;
+  const initialPagelHeight = 5000;
+  const pageHeightDecreaseAmount = sizeDecrease;
 
   global.pageYOffset = initialScrollYPosition;
 
+  // simulate the document becoming smaller with each call to document.body.scrollHeight
+  const mockScrollHeight = jest
+    .fn()
+    .mockReturnValueOnce(initialPagelHeight) // 1st call to document.body.scrollHeight
+    .mockReturnValueOnce(initialPagelHeight - pageHeightDecreaseAmount); // 2nd call to document.body.scrollHeight
+
   Object.defineProperty(HTMLElement.prototype, 'scrollHeight', {
+    configurable: true,
     get() {
-      this._scrollHeight -= sizeDecrease; // simulate the viewport becoming smaller
-      return this._scrollHeight;
+      return mockScrollHeight();
     },
   });
 
