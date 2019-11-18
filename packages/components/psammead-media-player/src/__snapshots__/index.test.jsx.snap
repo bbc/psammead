@@ -416,6 +416,7 @@ exports[`Media Player: Canonical Entry renders a placeholder image with guidance
       class="c3"
     >
       <strong
+        aria-hidden="true"
         class="c4"
       >
         May contain strong language, sexual or violent content that may offend.
@@ -427,7 +428,7 @@ exports[`Media Player: Canonical Entry renders a placeholder image with guidance
       <span
         class="c7"
       >
-        Play video, "Dog chases cat.", 2 minutes 30 seconds
+        May contain strong language, sexual or violent content that may offend. Play video, "Dog chases cat.", 2 minutes 30 seconds
       </span>
       <div
         aria-hidden="true"
