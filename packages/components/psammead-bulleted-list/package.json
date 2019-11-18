@@ -18,8 +18,14 @@
     "url": "https://github.com/bbc/psammead/issues"
   },
   "homepage": "https://github.com/BBC-News/psammead/blob/latest/packages/components/psammead-bulleted-list/README.md",
-  "dependencies": {},
+  "dependencies": {
+    "@bbc/gel-foundations": "^3.4.1",
+    "@bbc/psammead-styles": "^4.1.0"
+  },
   "peerDependencies": {
-    "react": "^16.11.0"
+    "styled-components": "^4.3.2"
+  },
+  "publishConfig": {
+    "tag": "alpha"
   }
 }
