@@ -29,7 +29,7 @@
   ],
   "dependencies": {
     "@bbc/gel-foundations": "^3.4.1",
-    "@bbc/psammead-assets": "^2.8.0",
+    "@bbc/psammead-assets": "^2.9.0",
     "@bbc/psammead-styles": "^4.1.0"
   },
   "peerDependencies": {
