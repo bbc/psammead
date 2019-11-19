@@ -1,15 +1,5 @@
 const getExistingPackages = require('../get-existing/index.js');
-const fs = require('fs');
-const path = require('path');
-
-const packagesDirectory = path.join(__dirname, '../../../packages');
-const packageTypes = fs
-  .readdirSync(packagesDirectory)
-  .filter(item => fs.lstatSync(path.join(packagesDirectory, item)).isDirectory())
-  .map(name => ({
-    name,
-    value: name
-  }));
+const getPackageTypes = require('../get-package-types');
 
 module.exports = [
   {
@@ -17,7 +7,7 @@ module.exports = [
     name: 'kind',
     message:
       'Please choose the template you want to create',
-    choices: packageTypes,
+    choices: getPackageTypes().map(name => ({ name, value: name })),
   },
   {
     type: 'input',
