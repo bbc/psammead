@@ -94,7 +94,7 @@ exports[`Media Player: Placeholder should render a video placeholder 1`] = `
     <span
       class="c4"
     >
-      Play video, "Dog chases cat.", 2 minutes 30 seconds
+      Guidance: May contain strong language, sexual or violent content that may offend. Play video, "Dog chases cat.", 2 minutes 30 seconds
     </span>
     <div
       aria-hidden="true"
