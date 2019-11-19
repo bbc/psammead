@@ -298,6 +298,42 @@ exports[`Navigation should render correctly 1`] = `
   width: 100%;
   pointer-events: auto;
   padding: 0;
+  max-height: 0;
+  display: none;
+  -webkit-transition: max-height 500ms ease-out;
+  transition: max-height 500ms ease-out;
+}
+
+.c14.menu-animation-enter {
+  max-height: 0;
+  display: block;
+}
+
+.c14.menu-animation-enter-active {
+  max-height: 100vh;
+  display: block;
+}
+
+.c14.menu-animation-enter-done {
+  max-height: -webkit-fit-content;
+  max-height: -moz-fit-content;
+  max-height: fit-content;
+  display: block;
+}
+
+.c14.menu-animation-exit {
+  max-height: 100vh;
+  display: block;
+}
+
+.c14.menu-animation-exit-active {
+  max-height: 0;
+  display: block;
+}
+
+.c14.menu-animation-exit-done {
+  max-height: 0;
+  display: none;
 }
 
 .c14::-webkit-scrollbar {
@@ -313,16 +349,6 @@ exports[`Navigation should render correctly 1`] = `
 .c3 {
   position: relative;
   background-color: #B80000;
-}
-
-.c19 {
-  width: 100%;
-  height: 0;
-  position: -webkit-sticky;
-  position: sticky;
-  bottom: 0;
-  pointer-events: none;
-  z-index: 3;
 }
 
 .c13 {
@@ -633,7 +659,6 @@ exports[`Navigation should render correctly 1`] = `
   <menu
     class="c14"
     dir="ltr"
-    hidden=""
     id="menu"
   >
     <ul
@@ -700,13 +725,6 @@ exports[`Navigation should render correctly 1`] = `
         </a>
       </li>
     </ul>
-    <div
-      class="c19"
-    >
-      <div
-        style="height: 4rem; width: 100%; overflow: hidden; position: absolute; bottom: 0px; display: none;"
-      />
-    </div>
   </menu>
 </div>
 `;

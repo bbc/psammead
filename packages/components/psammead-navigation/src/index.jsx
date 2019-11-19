@@ -300,6 +300,15 @@ const MenuWrapper = styled.menu`
   padding: 0;
   max-height: 0;
   display: none;
+  transition: max-height 500ms ease-out;
+
+  // We can't transition to height auto in css sadly.
+  // This transitions to a full screen max-height then sets it to fit-content.
+  // This introduces to smallest possible delay to things
+  // that are shorter than full-screen without
+  // ruining the ones that are longer than the screen.
+  // Unfortunately, there is a delay closing services with a menu shorter
+  // than the height of the screen. This could probably be solved with js. 
 
   &.menu-animation-enter {
     max-height: 0;
@@ -308,7 +317,6 @@ const MenuWrapper = styled.menu`
   &.menu-animation-enter-active {
     max-height: 100vh;
     display: block;
-    transition: max-height 500ms ease-in-out;
   }
   &.menu-animation-enter-done {
     max-height: fit-content;
@@ -317,12 +325,10 @@ const MenuWrapper = styled.menu`
 
   &.menu-animation-exit {
     max-height: 100vh;
-    transition: max-height 500ms ease-out;
     display: block;
   }
   &.menu-animation-exit-active {
     max-height: 0;
-    transition: max-height 500ms ease-out;
     display: block;
   }
   &.menu-animation-exit-done {
