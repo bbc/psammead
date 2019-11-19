@@ -44,7 +44,7 @@ const CrossButton = styled.button`
   border: 0;
 
   &:focus {
-    box-shadow: inset 0 0 0 0.25rem ${C_WHITE};
+    box-shadow: inset 0 0 0 ${GEL_SPACING_HLF} ${C_WHITE};
   }
 `;
 
@@ -148,7 +148,7 @@ const HamburgerButton = styled.button`
   border: 0;
 
   &:focus {
-    box-shadow: inset 0 0 0 0.25rem ${C_WHITE};
+    box-shadow: inset 0 0 0 ${GEL_SPACING_HLF} ${C_WHITE};
   }
 
   @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
