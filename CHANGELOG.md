@@ -3,7 +3,8 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
-| 2.0.6 | [PR#2583](https://github.com/bbc/psammead/pull/2583) Install jest-svg-transformer |
+| 2.0.7 | [PR#2583](https://github.com/bbc/psammead/pull/2583) Install jest-svg-transformer |
+| 2.0.6 | [PR#2644](https://github.com/bbc/psammead/pull/2644) Bump dependencies |
 | 2.0.5 | [PR#2635](https://github.com/bbc/psammead/pull/2635) generate withServiceKnob |
 | 2.0.4 | [PR#2650](https://github.com/bbc/psammead/pull/2650) Update codeowners |
 | 2.0.3 | [PR#2647](https://github.com/bbc/psammead/pull/2647) Talos - Bump Dependencies - @bbc/psammead-assets, @bbc/psammead-image-placeholder, @bbc/psammead-media-indicator |
