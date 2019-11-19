@@ -3,7 +3,8 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
-| 2.0.7 | [PR#2577](https://github.com/bbc/psammead/pull/2577) Add `react-test-renderer` and `@testing-library/react-hooks` |
+| 2.0.8 | [PR#2577](https://github.com/bbc/psammead/pull/2577) Add `react-test-renderer` and `@testing-library/react-hooks` |
+| 2.0.7 | [PR#2656](https://github.com/bbc/psammead/pull/2656) Talos - Bump Dependencies - @bbc/psammead-image-placeholder, @bbc/psammead-media-indicator |
 | 2.0.6 | [PR#2644](https://github.com/bbc/psammead/pull/2644) Bump dependencies |
 | 2.0.5 | [PR#2635](https://github.com/bbc/psammead/pull/2635) generate withServiceKnob |
 | 2.0.4 | [PR#2650](https://github.com/bbc/psammead/pull/2650) Update codeowners |
