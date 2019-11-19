@@ -50,12 +50,12 @@ const MostReadListProps = {
   enableGelGutters: true,
   enableGelMargins: true,
   columns: {
-    group0: 12,
-    group1: 12,
-    group2: 12,
-    group3: 12,
-    group4: 16,
-    group5: 40,
+    group0: 6,
+    group1: 6,
+    group2: 6,
+    group3: 6,
+    group4: 8,
+    group5: 20,
   },
 };
 
