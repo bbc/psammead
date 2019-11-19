@@ -38,6 +38,7 @@
   },
   "homepage": "https://github.com/bbc/psammead#readme",
   "dependencies": {
+    "react-transition-group": "^4.3.0",
     "styled-components": "^4.4.0",
     "styled-normalize": "^8.0.4"
   },

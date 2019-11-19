@@ -24,6 +24,7 @@ import {
 import { getPica } from '@bbc/gel-foundations/typography';
 import { scriptPropType } from '@bbc/gel-foundations/prop-types';
 import { getSansRegular } from '@bbc/psammead-styles/font-styles';
+import { CSSTransition } from 'react-transition-group';
 
 const TOP_BOTTOM_SPACING = '0.75rem'; // 12px
 const CURRENT_ITEM_HOVER_BORDER = '0.3125rem'; // 5px
@@ -297,6 +298,38 @@ const MenuWrapper = styled.menu`
   pointer-events: auto;
   ${({ moveContent }) => !moveContent && 'max-height: 75vh;'}
   padding: 0;
+  max-height: 0;
+  display: none;
+
+  &.menu-animation-enter {
+    max-height: 0;
+    display: block;
+  }
+  &.menu-animation-enter-active {
+    max-height: 100vh;
+    display: block;
+    transition: max-height 500ms ease-in-out;
+  }
+  &.menu-animation-enter-done {
+    max-height: fit-content;
+    display: block;
+  }
+
+  &.menu-animation-exit {
+    max-height: 100vh;
+    transition: max-height 500ms ease-out;
+    display: block;
+  }
+  &.menu-animation-exit-active {
+    max-height: 0;
+    transition: max-height 500ms ease-out;
+    display: block;
+  }
+  &.menu-animation-exit-done {
+    max-height: 0;
+    display: none;
+  }
+
   &::-webkit-scrollbar {
     width: 6px;
     margin-right: 2px;
@@ -345,15 +378,6 @@ const StyledNavMenu = styled.div`
     display: none;
   }
   background-color: ${({ menuVisible }) => (menuVisible ? C_EBON : C_POSTBOX)};
-`;
-
-const StyledMenuBottomContainer = styled.div`
-  width: 100%;
-  height: 0;
-  position: sticky;
-  bottom: 0;
-  pointer-events: none;
-  z-index: 3;
 `;
 
 const StyledNavGradient = styled.div`
@@ -417,23 +441,6 @@ const Menu = ({
   grid,
   amp,
 }) => {
-  const [gradDisplay, setGradDisplay] = useState(false);
-
-  useEffect(() => {
-    if (wrapperRef.current) {
-      const settingGrad = () =>
-        setGradDisplay(
-          wrapperRef.current.scrollHeight -
-            wrapperRef.current.offsetHeight -
-            wrapperRef.current.scrollTop >
-            7,
-        );
-      settingGrad();
-      /* eslint-disable-next-line no-param-reassign */
-      wrapperRef.current.onscroll = settingGrad;
-    }
-  }, [wrapperRef.current]);
-
   return (
     <MenuWrapper
       id="menu"
@@ -448,20 +455,6 @@ const Menu = ({
       {React.Children.map(children, child =>
         React.cloneElement(child, { inMenu: true }),
       )}
-      <StyledMenuBottomContainer>
-        <div
-          style={{
-            height: '4rem',
-            width: '100%',
-            overflow: 'hidden',
-            backgroundColor: 'rgb(184,0,0,0)',
-            backgroundImage: `linear-gradient(to bottom, rgba(255,255,255,0), ${C_WHITE})`,
-            position: 'absolute',
-            bottom: 0,
-            display: gradDisplay ? 'block' : 'none',
-          }}
-        />
-      </StyledMenuBottomContainer>
     </MenuWrapper>
   );
 };
@@ -568,16 +561,18 @@ const Navigation = ({
           <StyledNavGradient dir={dir} />
         </NavWrapper>
       </StyledNav>
-      <Menu
-        visible={menuVisible}
-        dir={dir}
-        moveContent={moveContent}
-        wrapperRef={wrapperRef}
-        grid={grid}
-        amp={amp}
-      >
-        {children}
-      </Menu>
+      <CSSTransition in={menuVisible} timeout={500} classNames="menu-animation">
+        <Menu
+          visible
+          dir={dir}
+          moveContent={moveContent}
+          wrapperRef={wrapperRef}
+          grid={grid}
+          amp={amp}
+        >
+          {children}
+        </Menu>
+      </CSSTransition>
       {!moveContent && <MenuHider menuVisible={menuVisible} />}
     </>
   );
