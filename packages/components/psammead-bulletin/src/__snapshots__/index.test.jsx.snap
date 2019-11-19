@@ -190,7 +190,7 @@ exports[`Bulletin should render audio correctly 1`] = `
   }
 }
 
-@media (min-width:37.5rem) and (max-width:62.9375rem) {
+@media (min-width:37.5rem) {
   .c9 {
     display: inline-block;
     margin-left: 0;
@@ -212,16 +212,10 @@ exports[`Bulletin should render audio correctly 1`] = `
   }
 }
 
-@media (min-width:37.5rem) and (max-width:62.9375rem) {
+@media (min-width:37.5rem) {
   .c8 {
     display: inline-block;
     padding: 0.5rem 1rem 0.5rem 0;
-  }
-}
-
-@media (min-width:63rem) {
-  .c8 {
-    width: 100%;
   }
 }
 
@@ -541,7 +535,7 @@ exports[`Bulletin should render live audio correctly 1`] = `
   }
 }
 
-@media (min-width:37.5rem) and (max-width:62.9375rem) {
+@media (min-width:37.5rem) {
   .c10 {
     display: inline-block;
     margin-left: 0;
@@ -563,16 +557,10 @@ exports[`Bulletin should render live audio correctly 1`] = `
   }
 }
 
-@media (min-width:37.5rem) and (max-width:62.9375rem) {
+@media (min-width:37.5rem) {
   .c9 {
     display: inline-block;
     padding: 0.5rem 1rem 0.5rem 0;
-  }
-}
-
-@media (min-width:63rem) {
-  .c9 {
-    width: 100%;
   }
 }
 
@@ -846,15 +834,15 @@ exports[`Bulletin should render live video correctly 1`] = `
   padding: 0.5rem 0;
 }
 
-@media (min-width:63rem) {
-  .c0 {
-    display: block;
-  }
-}
-
 @media (min-width:37.5rem) {
   .c0 {
     padding: 1rem;
+  }
+}
+
+@media (min-width:63rem) {
+  .c0 {
+    grid-template-columns: repeat(8,1fr);
   }
 }
 
@@ -867,8 +855,8 @@ exports[`Bulletin should render live video correctly 1`] = `
 
 @media (min-width:63rem) {
   .c1 {
-    display: block;
-    width: 100%;
+    grid-column: 1 / span 4;
+    width: 50%;
   }
 }
 
@@ -888,9 +876,9 @@ exports[`Bulletin should render live video correctly 1`] = `
 
 @media (min-width:63rem) {
   .c3 {
-    display: block;
-    width: 100%;
-    padding-left: 0;
+    grid-column: 5 / span 4;
+    width: 50%;
+    padding-left: 1rem;
   }
 }
 
@@ -901,7 +889,7 @@ exports[`Bulletin should render live video correctly 1`] = `
   }
 }
 
-@media (min-width:37.5rem) and (max-width:62.9375rem) {
+@media (min-width:37.5rem) {
   .c10 {
     display: inline-block;
     margin-left: 0;
@@ -923,16 +911,10 @@ exports[`Bulletin should render live video correctly 1`] = `
   }
 }
 
-@media (min-width:37.5rem) and (max-width:62.9375rem) {
+@media (min-width:37.5rem) {
   .c9 {
     display: inline-block;
     padding: 0.5rem 1rem 0.5rem 0;
-  }
-}
-
-@media (min-width:63rem) {
-  .c9 {
-    width: 100%;
   }
 }
 
@@ -974,12 +956,6 @@ exports[`Bulletin should render live video correctly 1`] = `
 @media (min-width:37.5rem) {
   .c4 {
     padding: 0 0 0.5rem 0;
-  }
-}
-
-@media (min-width:63rem) {
-  .c4 {
-    padding-top: 0.5rem;
   }
 }
 
@@ -1188,15 +1164,15 @@ exports[`Bulletin should render video correctly 1`] = `
   padding: 0.5rem 0;
 }
 
-@media (min-width:63rem) {
-  .c0 {
-    display: block;
-  }
-}
-
 @media (min-width:37.5rem) {
   .c0 {
     padding: 1rem;
+  }
+}
+
+@media (min-width:63rem) {
+  .c0 {
+    grid-template-columns: repeat(8,1fr);
   }
 }
 
@@ -1209,8 +1185,8 @@ exports[`Bulletin should render video correctly 1`] = `
 
 @media (min-width:63rem) {
   .c1 {
-    display: block;
-    width: 100%;
+    grid-column: 1 / span 4;
+    width: 50%;
   }
 }
 
@@ -1230,9 +1206,9 @@ exports[`Bulletin should render video correctly 1`] = `
 
 @media (min-width:63rem) {
   .c3 {
-    display: block;
-    width: 100%;
-    padding-left: 0;
+    grid-column: 5 / span 4;
+    width: 50%;
+    padding-left: 1rem;
   }
 }
 
@@ -1243,7 +1219,7 @@ exports[`Bulletin should render video correctly 1`] = `
   }
 }
 
-@media (min-width:37.5rem) and (max-width:62.9375rem) {
+@media (min-width:37.5rem) {
   .c9 {
     display: inline-block;
     margin-left: 0;
@@ -1265,16 +1241,10 @@ exports[`Bulletin should render video correctly 1`] = `
   }
 }
 
-@media (min-width:37.5rem) and (max-width:62.9375rem) {
+@media (min-width:37.5rem) {
   .c8 {
     display: inline-block;
     padding: 0.5rem 1rem 0.5rem 0;
-  }
-}
-
-@media (min-width:63rem) {
-  .c8 {
-    width: 100%;
   }
 }
 
@@ -1316,12 +1286,6 @@ exports[`Bulletin should render video correctly 1`] = `
 @media (min-width:37.5rem) {
   .c4 {
     padding: 0 0 0.5rem 0;
-  }
-}
-
-@media (min-width:63rem) {
-  .c4 {
-    padding-top: 0.5rem;
   }
 }
 

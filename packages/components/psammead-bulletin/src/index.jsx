@@ -35,9 +35,6 @@ const bulletinWrapperStyles = `
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   grid-column-gap: ${GEL_SPACING_DBL};
-  @media (min-width: ${GEL_GROUP_4_SCREEN_WIDTH_MIN}) {
-    display: block;
-  }
 `;
 
 const TVBulletinWrapper = styled.div`
@@ -46,11 +43,17 @@ const TVBulletinWrapper = styled.div`
   @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
     padding: ${GEL_SPACING_DBL};
   }
+  @media (min-width: ${GEL_GROUP_4_SCREEN_WIDTH_MIN}) {
+    grid-template-columns: repeat(8, 1fr);
+  }
 `;
 
 const RadioBulletinWrapper = styled.div`
   ${bulletinWrapperStyles};
   background-color: ${C_LUNAR};
+  @media (min-width: ${GEL_GROUP_4_SCREEN_WIDTH_MIN}) {
+    display: block;
+  }
 `;
 
 const imageWrapperStyles = `
@@ -68,8 +71,8 @@ const TVImageWrapper = styled.div`
     width: ${halfWidthColumnsMaxScaleable};
   }
   @media (min-width: ${GEL_GROUP_4_SCREEN_WIDTH_MIN}) {
-    display: block;
-    width: ${fullWidthColumnsMaxScaleable};
+    grid-column: 1 / span 4;
+    width: ${halfWidthColumnsMaxScaleable};
   }
   ${imageWrapperStyles};
 `;
@@ -104,9 +107,9 @@ const TVTextWrapper = styled.div`
     padding-left: ${GEL_SPACING_DBL};
   }
   @media (min-width: ${GEL_GROUP_4_SCREEN_WIDTH_MIN}) {
-    display: block;
-    width: ${fullWidthColumnsMaxScaleable};
-    padding-left: 0;
+    grid-column: 5 / span 4;
+    width: ${halfWidthColumnsMaxScaleable};
+    padding-left: ${GEL_SPACING_DBL};
   }
   ${textWrapperStyles};
 `;
@@ -131,7 +134,7 @@ const IconWrapper = styled.span`
     fill: currentColor;
   }
   margin: 0 0.25rem;
-  @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) and (max-width: ${GEL_GROUP_3_SCREEN_WIDTH_MAX}) {
+  @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
     display: inline-block;
     margin-left: 0;
     padding-left: ${GEL_SPACING};
@@ -147,12 +150,9 @@ const PlayCTA = styled.div.attrs({ 'aria-hidden': true })`
   padding: 0.75rem;
   display: flex;
   justify-content: center;
-  @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) and (max-width: ${GEL_GROUP_3_SCREEN_WIDTH_MAX}) {
+  @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
     display: inline-block;
     padding: ${GEL_SPACING} ${GEL_SPACING_DBL} ${GEL_SPACING} 0;
-  }
-  @media (min-width: ${GEL_GROUP_4_SCREEN_WIDTH_MIN}) {
-    width: 100%;
   }
 `;
 
@@ -180,9 +180,6 @@ const TVHeading = styled.h3`
   padding: ${GEL_SPACING} 0;
   @media(min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
     padding:0 0 ${GEL_SPACING} 0;
-  }
-  @media (min-width: ${GEL_GROUP_4_SCREEN_WIDTH_MIN}) {
-    padding-top: ${GEL_SPACING};
   }
 `;
 
