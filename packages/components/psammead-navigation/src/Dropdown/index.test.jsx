@@ -8,9 +8,9 @@ import {
 } from './index';
 import pidginNavData from '../../testHelpers/pidgin';
 
-describe('Navigation', () => {
+describe('Canonical dropdown navigation', () => {
   shouldMatchSnapshot(
-    'canonical dropdown should render correctly',
+    'should render correctly',
     <CanonicalDropdown announcedText="Menu" onClose={() => {}}>
       {pidginNavData.map((item, index) => {
         const active = index === 3;
@@ -33,9 +33,9 @@ describe('Navigation', () => {
   );
 });
 
-describe('Hamburger menu', () => {
+describe('Canonical hamburger menu', () => {
   shouldMatchSnapshot(
-    'canonical should render correctly',
+    'should render correctly',
     <CanonicalHamburgerMenu announcedText="Menu" onOpen={() => {}} />,
   );
 });

@@ -1,48 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Hamburger menu canonical should render correctly 1`] = `
-.c1 {
-  color: #fff;
-  fill: currentColor;
-}
-
-.c0 {
-  width: 2.75rem;
-  height: 2.75rem;
-  background-color: #B80000;
-  padding: 0;
-  margin: 0;
-  border: 0;
-}
-
-.c0:focus {
-  box-shadow: inset 0 0 0 0.25rem #FFFFFF;
-}
-
-@media (min-width:37.5rem) {
-  .c0 {
-    display: none;
-  }
-}
-
-<button
-  aria-expanded="false"
-  aria-label="Menu"
-  class="c0"
->
-  <svg
-    class="c1"
-    height="44px"
-    width="44px"
-  >
-    <path
-      d="M12 29h21v-2.333H12V29zm0-5.833h21v-2.334H12v2.334zM12 15v2.333h21V15H12z"
-    />
-  </svg>
-</button>
-`;
-
-exports[`Navigation canonical dropdown should render correctly 1`] = `
+exports[`Canonical dropdown navigation should render correctly 1`] = `
 .c7 {
   -webkit-clip-path: inset(100%);
   clip-path: inset(100%);
@@ -272,4 +230,46 @@ exports[`Navigation canonical dropdown should render correctly 1`] = `
     </li>
   </ul>
 </div>
+`;
+
+exports[`Canonical hamburger menu should render correctly 1`] = `
+.c1 {
+  color: #fff;
+  fill: currentColor;
+}
+
+.c0 {
+  width: 2.75rem;
+  height: 2.75rem;
+  background-color: #B80000;
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+.c0:focus {
+  box-shadow: inset 0 0 0 0.25rem #FFFFFF;
+}
+
+@media (min-width:37.5rem) {
+  .c0 {
+    display: none;
+  }
+}
+
+<button
+  aria-expanded="false"
+  aria-label="Menu"
+  class="c0"
+>
+  <svg
+    class="c1"
+    height="44px"
+    width="44px"
+  >
+    <path
+      d="M12 29h21v-2.333H12V29zm0-5.833h21v-2.334H12v2.334zM12 15v2.333h21V15H12z"
+    />
+  </svg>
+</button>
 `;
