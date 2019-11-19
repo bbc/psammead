@@ -1,6 +1,6 @@
 import React from 'react';
 import styled, { css } from 'styled-components';
-import { node, bool, string, oneOf } from 'prop-types';
+import { node, bool, string, oneOf, shape } from 'prop-types';
 import {
   GEL_SPACING,
   GEL_SPACING_DBL,
@@ -32,6 +32,7 @@ import {
   getSansBold,
   getSerifMedium,
 } from '@bbc/psammead-styles/font-styles';
+import { scriptPropType } from '@bbc/gel-foundations/prop-types';
 import { grid } from '@bbc/psammead-styles/detection';
 
 const twoOfSixColumnsMaxWidthScaleable = `33.33%`;
@@ -240,7 +241,7 @@ export const Headline = styled.h3`
   color: ${C_EBON};
   margin: 0; /* Reset */
   padding-bottom: ${GEL_SPACING};
-  ${({ displayImage }) => !displayImage && `display: inline;`}
+  ${({ promoHasImage }) => !promoHasImage && `display: inline;`}
 
   @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
     ${({ script, topStory }) =>
@@ -248,9 +249,22 @@ export const Headline = styled.h3`
   }
 
   @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MAX}) {
-    ${({ script, displayImage }) => !displayImage && script && getPica(script)}
+    ${({ script, promoHasImage }) =>
+      !promoHasImage && script && getPica(script)}
   }
 `;
+
+Headline.propTypes = {
+  script: shape(scriptPropType).isRequired,
+  service: string.isRequired,
+  promoHasImage: bool,
+  topStory: bool,
+};
+
+Headline.defaultProps = {
+  promoHasImage: true,
+  topStory: false,
+};
 
 export const Summary = styled.p`
   ${({ script }) => script && getLongPrimer(script)};
@@ -259,7 +273,7 @@ export const Summary = styled.p`
   margin: 0; /* Reset */
   padding-bottom: ${GEL_SPACING};
 
-  ${({ displayImage }) => !displayImage && `padding-top: ${GEL_SPACING};`}
+  ${({ promoHasImage }) => !promoHasImage && `padding-top: ${GEL_SPACING};`}
 
   ${({ topStory }) =>
     topStory
@@ -281,6 +295,18 @@ export const Summary = styled.p`
         }
       `}
 `;
+
+Summary.propTypes = {
+  script: shape(scriptPropType).isRequired,
+  service: string.isRequired,
+  promoHasImage: bool,
+  topStory: bool,
+};
+
+Summary.defaultProps = {
+  promoHasImage: true,
+  topStory: false,
+};
 
 export const Link = styled.a`
   position: static;
