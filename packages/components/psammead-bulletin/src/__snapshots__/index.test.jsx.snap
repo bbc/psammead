@@ -212,10 +212,19 @@ exports[`Bulletin should render audio correctly 1`] = `
   }
 }
 
-@media (min-width:37.5rem) and (max-width:62.9375rem) {
+@media (min-width:37.5rem) {
   .c8 {
     display: inline-block;
     padding: 0.5rem 1rem 0.5rem 0;
+  }
+}
+
+@media (min-width:63rem) {
+  .c8 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
   }
 }
 
@@ -311,6 +320,7 @@ exports[`Bulletin should render audio correctly 1`] = `
     <div
       aria-hidden="true"
       class="c8"
+      type="audio"
     >
       <span
         class="c9"
@@ -557,10 +567,19 @@ exports[`Bulletin should render live audio correctly 1`] = `
   }
 }
 
-@media (min-width:37.5rem) and (max-width:62.9375rem) {
+@media (min-width:37.5rem) {
   .c9 {
     display: inline-block;
     padding: 0.5rem 1rem 0.5rem 0;
+  }
+}
+
+@media (min-width:63rem) {
+  .c9 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
   }
 }
 
@@ -663,6 +682,7 @@ exports[`Bulletin should render live audio correctly 1`] = `
     <div
       aria-hidden="true"
       class="c9"
+      type="audio"
     >
       <span
         class="c10"
@@ -911,7 +931,7 @@ exports[`Bulletin should render live video correctly 1`] = `
   }
 }
 
-@media (min-width:37.5rem) and (max-width:62.9375rem) {
+@media (min-width:37.5rem) {
   .c9 {
     display: inline-block;
     padding: 0.5rem 1rem 0.5rem 0;
@@ -1005,6 +1025,7 @@ exports[`Bulletin should render live video correctly 1`] = `
     <div
       aria-hidden="true"
       class="c9"
+      type="video"
     >
       <span
         class="c10"
@@ -1241,7 +1262,7 @@ exports[`Bulletin should render video correctly 1`] = `
   }
 }
 
-@media (min-width:37.5rem) and (max-width:62.9375rem) {
+@media (min-width:37.5rem) {
   .c8 {
     display: inline-block;
     padding: 0.5rem 1rem 0.5rem 0;
@@ -1328,6 +1349,7 @@ exports[`Bulletin should render video correctly 1`] = `
     <div
       aria-hidden="true"
       class="c8"
+      type="video"
     >
       <span
         class="c9"

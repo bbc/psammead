@@ -2,7 +2,6 @@ import React from 'react';
 import styled from 'styled-components';
 import {
   GEL_GROUP_3_SCREEN_WIDTH_MIN,
-  GEL_GROUP_3_SCREEN_WIDTH_MAX,
   GEL_GROUP_4_SCREEN_WIDTH_MIN,
 } from '@bbc/gel-foundations/breakpoints';
 import { GEL_SPACING, GEL_SPACING_DBL } from '@bbc/gel-foundations/spacings';
@@ -159,13 +158,16 @@ const PlayCTA = styled.div.attrs({ 'aria-hidden': true })`
   padding: 0.75rem;
   display: flex;
   justify-content: center;
-  @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) and (max-width: ${GEL_GROUP_3_SCREEN_WIDTH_MAX}) {
+  @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
     ${({ fullWidth }) =>
       !fullWidth &&
       `
         display: inline-block;
         padding: ${GEL_SPACING} ${GEL_SPACING_DBL} ${GEL_SPACING} 0;
       `}
+  }
+  @media (min-width: ${GEL_GROUP_4_SCREEN_WIDTH_MIN}) {
+    ${({ type }) => type === 'audio' && 'display: flex;'}
   }
 `;
 
@@ -265,8 +267,9 @@ const Bulletin = ({
           service={service}
           script={script}
           fullWidth={fullWidth}
+          type={type}
         >
-          <IconWrapper fullWidth={fullWidth}>{mediaIcons[type]}</IconWrapper>
+          <IconWrapper>{mediaIcons[type]}</IconWrapper>
           {ctaText}
         </PlayCTA>
       </TextWrapper>
