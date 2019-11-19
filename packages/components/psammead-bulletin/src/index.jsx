@@ -3,7 +3,6 @@ import styled from 'styled-components';
 import {
   GEL_GROUP_3_SCREEN_WIDTH_MIN,
   GEL_GROUP_3_SCREEN_WIDTH_MAX,
-  GEL_GROUP_2_SCREEN_WIDTH_MAX,
   GEL_GROUP_4_SCREEN_WIDTH_MIN,
 } from '@bbc/gel-foundations/breakpoints';
 import { GEL_SPACING, GEL_SPACING_DBL } from '@bbc/gel-foundations/spacings';
@@ -35,24 +34,8 @@ const bulletinWrapperStyles = `
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   grid-column-gap: ${GEL_SPACING_DBL};
-`;
-
-const TVBulletinWrapper = styled.div`
-  ${bulletinWrapperStyles};
-  padding: ${GEL_SPACING};
-  @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
-    padding: ${GEL_SPACING_DBL};
-  }
   @media (min-width: ${GEL_GROUP_4_SCREEN_WIDTH_MIN}) {
     grid-template-columns: repeat(8, 1fr);
-  }
-`;
-
-const RadioBulletinWrapper = styled.div`
-  ${bulletinWrapperStyles};
-  background-color: ${C_LUNAR};
-  @media (min-width: ${GEL_GROUP_4_SCREEN_WIDTH_MIN}) {
-    display: block;
   }
 `;
 
@@ -62,6 +45,23 @@ const imageWrapperStyles = `
   grid-column: 1 / span 6;
   @supports (${grid}) {
     width: initial;
+  }
+`;
+
+const textWrapperStyles = `
+  grid-column: 1 / span 6;
+  display: inline-block;
+  @supports (${grid}) {
+    width: initial;
+    padding-left: 0;
+  }
+`;
+
+const TVBulletinWrapper = styled.div`
+  ${bulletinWrapperStyles};
+  padding: ${GEL_SPACING};
+  @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
+    padding: ${GEL_SPACING_DBL};
   }
 `;
 
@@ -75,29 +75,6 @@ const TVImageWrapper = styled.div`
     width: ${halfWidthColumnsMaxScaleable};
   }
   ${imageWrapperStyles};
-`;
-
-const RadioImageWrapper = styled.div`
-  @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
-    grid-column: 1 / span 2;
-    width: ${twoOfSixColumnsMaxWidthScaleable};
-  }
-  @media (max-width: ${GEL_GROUP_2_SCREEN_WIDTH_MAX}) {
-    display: none;
-  }
-  @media (min-width: ${GEL_GROUP_4_SCREEN_WIDTH_MIN}) {
-    display: none;
-  }
-  ${imageWrapperStyles};
-`;
-
-const textWrapperStyles = `
-  grid-column: 1 / span 6;
-  display: inline-block;
-  @supports (${grid}) {
-    width: initial;
-    padding-left: 0;
-  }
 `;
 
 const TVTextWrapper = styled.div`
@@ -114,14 +91,46 @@ const TVTextWrapper = styled.div`
   ${textWrapperStyles};
 `;
 
+const RadioBulletinWrapper = styled.div`
+  ${bulletinWrapperStyles};
+  background-color: ${C_LUNAR};
+`;
+
+const RadioImageWrapper = styled.div`
+  padding: ${GEL_SPACING} ${GEL_SPACING} 0 ${GEL_SPACING};
+  @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
+    grid-column: 1 / span 2;
+    width: ${twoOfSixColumnsMaxWidthScaleable};
+    padding: 0;
+  }
+
+  @media (min-width: ${GEL_GROUP_4_SCREEN_WIDTH_MIN}) {
+    display: block;
+    width: ${fullWidthColumnsMaxScaleable};
+    grid-column: 1 / span 8;
+    padding: ${GEL_SPACING} ${GEL_SPACING} 0 ${GEL_SPACING};
+  }
+  ${imageWrapperStyles};
+`;
+
 const RadioTextWrapper = styled.div`
   @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
-    grid-column: 3 / span 4;
-    padding-left: ${GEL_SPACING_DBL};
+    ${({ fullWidth }) =>
+      fullWidth
+        ? `
+          grid-column: 1 / span 6;
+          padding: 0;
+          width: 100%;
+          `
+        : `
+          grid-column: 3 / span 4;
+          padding-left: ${GEL_SPACING_DBL};
+        `}
   }
   @media (min-width: ${GEL_GROUP_4_SCREEN_WIDTH_MIN}) {
     display: block;
     padding-left: 0;
+    grid-column: 1 / span 8;
   }
   ${textWrapperStyles};
 `;
@@ -150,9 +159,13 @@ const PlayCTA = styled.div.attrs({ 'aria-hidden': true })`
   padding: 0.75rem;
   display: flex;
   justify-content: center;
-  @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
-    display: inline-block;
-    padding: ${GEL_SPACING} ${GEL_SPACING_DBL} ${GEL_SPACING} 0;
+  @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) and (max-width: ${GEL_GROUP_3_SCREEN_WIDTH_MAX}) {
+    ${({ fullWidth }) =>
+      !fullWidth &&
+      `
+        display: inline-block;
+        padding: ${GEL_SPACING} ${GEL_SPACING_DBL} ${GEL_SPACING} 0;
+      `}
   }
 `;
 
@@ -165,6 +178,9 @@ const BulletinSummary = styled.p`
   @media(min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
     padding-left: 0;
     padding-right: 0;
+    ${({ applyLeftPadding }) =>
+      applyLeftPadding && `padding-left: ${GEL_SPACING}`}
+
   }
   padding-bottom: ${GEL_SPACING_DBL};
   @media(min-width: ${GEL_GROUP_4_SCREEN_WIDTH_MIN}) {
@@ -191,6 +207,8 @@ const RadioHeading = styled.h3`
   padding: ${GEL_SPACING} ${GEL_SPACING};
   @media(min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
     padding: ${GEL_SPACING} 0;
+    ${({ applyLeftPadding }) =>
+      applyLeftPadding && `padding-left: ${GEL_SPACING}`}
   }
 
   @media(min-width: ${GEL_GROUP_4_SCREEN_WIDTH_MIN}) {
@@ -216,22 +234,39 @@ const Bulletin = ({
   const TextWrapper = isAudio ? RadioTextWrapper : TVTextWrapper;
   const BulletinHeading = isAudio ? RadioHeading : TVHeading;
 
+  const hasImage = !!image; // convert to boolean value
+  const fullWidth = !hasImage && isAudio;
+
   return (
-    <BulletinWrapper>
-      <ImageWrapper>{image}</ImageWrapper>
-      <TextWrapper>
-        <BulletinHeading script={script} service={service}>
+    <BulletinWrapper hasImage={hasImage}>
+      {image && <ImageWrapper>{image}</ImageWrapper>}
+      <TextWrapper fullWidth={fullWidth}>
+        <BulletinHeading
+          script={script}
+          service={service}
+          applyLeftPadding={fullWidth}
+        >
           <VisuallyHiddenText>
             {isLive ? `${ctaText} ${liveText} ` : `${ctaText} `}
           </VisuallyHiddenText>
           {isLive && <LiveLabel service={service}>{liveText}</LiveLabel>}
           <Link href={ctaLink}>{headlineText}</Link>
         </BulletinHeading>
-        <BulletinSummary script={script} service={service} type={type}>
+        <BulletinSummary
+          script={script}
+          service={service}
+          type={type}
+          applyLeftPadding={fullWidth}
+        >
           {summaryText}
         </BulletinSummary>
-        <PlayCTA isLive={isLive} service={service} script={script}>
-          <IconWrapper>{mediaIcons[type]}</IconWrapper>
+        <PlayCTA
+          isLive={isLive}
+          service={service}
+          script={script}
+          fullWidth={fullWidth}
+        >
+          <IconWrapper fullWidth={fullWidth}>{mediaIcons[type]}</IconWrapper>
           {ctaText}
         </PlayCTA>
       </TextWrapper>

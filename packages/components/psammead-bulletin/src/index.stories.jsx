@@ -7,10 +7,12 @@ import notes from '../README.md';
 import Bulletin from '.';
 
 /* eslint-disable react/prop-types */
-const BulletinComponent = ({ script, service, isLive, type, ctaText }) => {
+const BulletinComponent = ({ script, service, type, ctaText, hasImage }) => {
   const summaryText = 'This is the summary text';
   const headlineText = 'This is the headline';
   const ctaLink = 'https://bbc.co.uk';
+
+  const isLive = boolean('Live', false);
 
   const image = (
     <Image
@@ -18,9 +20,10 @@ const BulletinComponent = ({ script, service, isLive, type, ctaText }) => {
       alt="Iron man"
     />
   );
+
   return (
     <Bulletin
-      image={image}
+      image={hasImage && image}
       type={type}
       isLive={isLive}
       script={script}
@@ -38,31 +41,29 @@ storiesOf('Components|Bulletin', module)
   .addDecorator(withServicesKnob())
   .add(
     'Tv Bulletin',
-    ({ script, service }) => {
-      const isLive = boolean('Live', false);
-      return (
-        <BulletinComponent
-          isLive={isLive}
-          script={script}
-          service={service}
-          type="video"
-          ctaText="Watch"
-        />
-      );
-    },
+    ({ script, service }) => (
+      <BulletinComponent
+        script={script}
+        service={service}
+        type="video"
+        ctaText="Watch"
+        hasImage
+      />
+    ),
     { notes },
   )
   .add(
     'Radio Bulletin',
     ({ script, service }) => {
-      const isLive = boolean('Live', false);
+      const hasImage = boolean('With Image', true);
+
       return (
         <BulletinComponent
-          isLive={isLive}
           script={script}
           service={service}
           type="audio"
           ctaText="Listen"
+          hasImage={hasImage}
         />
       );
     },
