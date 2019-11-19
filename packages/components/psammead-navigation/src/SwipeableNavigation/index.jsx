@@ -1,10 +1,9 @@
 import React, { useRef, useState } from 'react';
 import styled, { css } from 'styled-components';
-import { node, oneOf } from 'prop-types';
+import { node, oneOf, bool } from 'prop-types';
 import { GEL_GROUP_2_SCREEN_WIDTH_MAX } from '@bbc/gel-foundations/breakpoints';
 import useWindowWidth from '../../hooks/useWindowWidth';
 import useOverflowed from '../../hooks/useOverflowed';
-import useMediaQuery from '../../hooks/useMediaQuery';
 
 /* Convert C_POSTBOX to rgba as IE doesn't like 8 digit hex */
 const C_POSTBOX_TRANSPARENT = `rgba(184, 0, 0, 0)`;
@@ -50,8 +49,7 @@ const StyledSwipeableNav = styled.div`
   }
 `;
 
-const SwipeableNavigation = ({ children, dir }) => {
-  const isSwipeable = useMediaQuery('(max-width: 600px)');
+const SwipeableNavigation = ({ children, dir, isSwipeable }) => {
   const ariaHidden = isSwipeable && { 'aria-hidden': true };
 
   const ref = useRef(null);
@@ -92,8 +90,9 @@ const SwipeableNavigation = ({ children, dir }) => {
 SwipeableNavigation.propTypes = {
   children: node.isRequired,
   dir: oneOf(['ltr', 'rtl']),
+  isSwipeable: bool,
 };
 
-SwipeableNavigation.defaultProps = { dir: 'ltr' };
+SwipeableNavigation.defaultProps = { dir: 'ltr', isSwipeable: false };
 
 export default SwipeableNavigation;

@@ -18,6 +18,7 @@ import igboNavData from '../testHelpers/igbo';
 import pidginNavData from '../testHelpers/pidgin';
 import yorubaNavData from '../testHelpers/yoruba';
 import arabicNavData from '../testHelpers/arabic';
+import useMediaQuery from '../hooks/useMediaQuery';
 
 import notes from '../README.md';
 
@@ -116,40 +117,44 @@ const navigationStory = (
   navData,
   dir,
   brand,
-) => ({ script, service }) => (
-  <>
-    {brand && getBrand()}
+) => ({ script, service }) => {
+  const isSwipeable = useMediaQuery('(max-width: 600px)');
 
-    <Navigation
-      script={script}
-      skipLinkText={skipLinkText}
-      service={service}
-      dir={dir}
-    >
-      <SwipeableNavigation dir={dir}>
-        <NavigationUl>
-          {navData.map((item, index) => {
-            const { title, url } = item;
-            const active = index === 0;
+  return (
+    <>
+      {brand && getBrand()}
 
-            return (
-              <NavigationLi
-                key={title}
-                url={url}
-                script={script}
-                active={active}
-                currentPageText={currentPageText}
-                service={service}
-              >
-                {title}
-              </NavigationLi>
-            );
-          })}
-        </NavigationUl>
-      </SwipeableNavigation>
-    </Navigation>
-  </>
-);
+      <Navigation
+        script={script}
+        skipLinkText={skipLinkText}
+        service={service}
+        dir={dir}
+      >
+        <SwipeableNavigation dir={dir} isSwipeable={isSwipeable}>
+          <NavigationUl>
+            {navData.map((item, index) => {
+              const { title, url } = item;
+              const active = index === 0;
+
+              return (
+                <NavigationLi
+                  key={title}
+                  url={url}
+                  script={script}
+                  active={active}
+                  currentPageText={currentPageText}
+                  service={service}
+                >
+                  {title}
+                </NavigationLi>
+              );
+            })}
+          </NavigationUl>
+        </SwipeableNavigation>
+      </Navigation>
+    </>
+  );
+};
 
 const storiesWithoutBrand = storiesOf(
   'Components|Navigation/without brand',
