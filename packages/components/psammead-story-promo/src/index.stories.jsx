@@ -65,14 +65,14 @@ const InfoComponent = ({
   dir,
   type,
   alsoItems,
-  displayImage,
+  promoHasImage,
 }) => (
   <>
     <Headline
       script={script}
       topStory={topStory}
       service={service}
-      displayImage={displayImage}
+      promoHasImage={promoHasImage}
     >
       <Link href="https://www.bbc.co.uk/news">
         {isLive ? (
@@ -86,7 +86,7 @@ const InfoComponent = ({
       script={script}
       topStory={topStory}
       service={service}
-      displayImage={displayImage}
+      promoHasImage={promoHasImage}
     >
       {summaryText}
     </Summary>
@@ -123,7 +123,7 @@ const generateStory = ({
       dir={dir}
       type={mediaType}
       alsoItems={alsoItems}
-      displayImage={displayImage}
+      promoHasImage={displayImage}
     />
   );
 
