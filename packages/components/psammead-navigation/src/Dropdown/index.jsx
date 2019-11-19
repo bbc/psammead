@@ -22,6 +22,8 @@ import { getPica } from '@bbc/gel-foundations/typography';
 import { scriptPropType } from '@bbc/gel-foundations/prop-types';
 import { getSansRegular } from '@bbc/psammead-styles/font-styles';
 
+const MENU_ICON_SIDE_LENGTH = '2.75rem'; // 44px
+
 const getStyles = dir => {
   const direction = dir === 'ltr' ? 'left' : 'right';
   return `border-${direction}: ${GEL_SPACING_HLF} solid ${C_WHITE};
@@ -38,8 +40,8 @@ const DropdownWrapper = styled.div`
 
 const CrossButton = styled.button`
   background-color: ${C_EBON};
-  width: 2.75rem;
-  height: 2.75rem;
+  width: ${MENU_ICON_SIDE_LENGTH};
+  height: ${MENU_ICON_SIDE_LENGTH};
   padding: 0;
   margin: 0;
   border: 0;
@@ -141,8 +143,8 @@ export const CanonicalDropdown = ({ announcedText, onClose, children }) => (
 );
 
 const HamburgerButton = styled.button`
-  width: 2.75rem;
-  height: 2.75rem;
+  width: ${MENU_ICON_SIDE_LENGTH};
+  height: ${MENU_ICON_SIDE_LENGTH};
   background-color: ${C_POSTBOX};
   padding: 0;
   margin: 0;
