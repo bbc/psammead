@@ -13,12 +13,12 @@ import { MostReadRank, MostReadLink } from './item';
 
 const MostReadItemProps = {
   columns: {
-    group0: 5,
-    group1: 5,
-    group2: 5,
-    group3: 5,
-    group4: 5,
-    group5: 5,
+    group0: 6,
+    group1: 6,
+    group2: 3,
+    group3: 3,
+    group4: 4,
+    group5: 4,
   },
 };
 
@@ -37,12 +37,12 @@ const MostReadRankProps = {
 const MostReadLinkProps = {
   item: true,
   columns: {
-    group0: 4,
-    group1: 4,
-    group2: 4,
-    group3: 4,
-    group4: 4,
-    group5: 4,
+    group0: 5,
+    group1: 5,
+    group2: 2,
+    group3: 2,
+    group4: 3,
+    group5: 3,
   },
 };
 
@@ -50,12 +50,12 @@ const MostReadListProps = {
   enableGelGutters: true,
   enableGelMargins: true,
   columns: {
-    group0: 1,
-    group1: 1,
-    group2: 2,
-    group3: 2,
-    group4: 2,
-    group5: 5,
+    group0: 12,
+    group1: 12,
+    group2: 12,
+    group3: 12,
+    group4: 16,
+    group5: 40,
   },
 };
 
@@ -82,18 +82,16 @@ const StyledOl = styled.ol.attrs({
 `;
 
 const MostReadItem = ({ rank, link, service, script, dir }) => (
-  <li>
-    <Grid {...MostReadItemProps} dir={dir}>
-      <Grid {...MostReadRankProps} dir={dir}>
-        <MostReadRank service={service} script={script}>
-          {rank}
-        </MostReadRank>
-      </Grid>
-      <Grid {...MostReadLinkProps} dir={dir}>
-        <MostReadLink service={service} link={link} script={script} />
-      </Grid>
+  <Grid {...MostReadItemProps} dir={dir} forwardedAs="li">
+    <Grid {...MostReadRankProps} dir={dir}>
+      <MostReadRank service={service} script={script}>
+        {rank}
+      </MostReadRank>
     </Grid>
-  </li>
+    <Grid {...MostReadLinkProps} dir={dir}>
+      <MostReadLink service={service} link={link} script={script} />
+    </Grid>
+  </Grid>
 );
 
 const MostReadList = ({ items, service, script, dir }) => {
