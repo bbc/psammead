@@ -14,10 +14,7 @@ import {
   GEL_SPACING,
   GEL_SPACING_DBL,
 } from '@bbc/gel-foundations/spacings';
-import {
-  GEL_GROUP_2_SCREEN_WIDTH_MAX,
-  GEL_GROUP_3_SCREEN_WIDTH_MIN,
-} from '@bbc/gel-foundations/breakpoints';
+import { GEL_GROUP_3_SCREEN_WIDTH_MIN } from '@bbc/gel-foundations/breakpoints';
 import { getPica } from '@bbc/gel-foundations/typography';
 import { scriptPropType } from '@bbc/gel-foundations/prop-types';
 import { getSansRegular } from '@bbc/psammead-styles/font-styles';
@@ -156,11 +153,6 @@ const HamburgerButton = styled.button`
 
   @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
     display: none;
-  }
-
-  @media (max-width: ${GEL_GROUP_2_SCREEN_WIDTH_MAX}) {
-    display: inline-block;
-    float: left;
   }
 `;
 

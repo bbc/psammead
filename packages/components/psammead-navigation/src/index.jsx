@@ -10,13 +10,11 @@ import {
 } from '@bbc/gel-foundations/spacings';
 import {
   GEL_GROUP_1_SCREEN_WIDTH_MAX,
-  GEL_GROUP_2_SCREEN_WIDTH_MAX,
   GEL_GROUP_5_SCREEN_WIDTH_MIN,
 } from '@bbc/gel-foundations/breakpoints';
 import { getPica } from '@bbc/gel-foundations/typography';
 import { scriptPropType } from '@bbc/gel-foundations/prop-types';
 import { getSansRegular } from '@bbc/psammead-styles/font-styles';
-import { CanonicalHamburgerMenu } from './Dropdown';
 
 const TOP_BOTTOM_SPACING = '0.75rem'; // 12px
 const CURRENT_ITEM_HOVER_BORDER = '0.3125rem'; // 5px
@@ -28,10 +26,6 @@ const NavWrapper = styled.div`
   position: relative;
   max-width: ${GEL_GROUP_5_SCREEN_WIDTH_MIN};
   margin: 0 auto;
-
-  @media (max-width: ${GEL_GROUP_2_SCREEN_WIDTH_MAX}) {
-    display: inline-block;
-  }
 `;
 
 const StyledUnorderedList = styled.ul`
@@ -155,10 +149,6 @@ const StyledNav = styled.nav`
   background-color: ${C_POSTBOX};
   border-top: 0.0625rem solid ${C_WHITE};
 
-  @media (max-width: ${GEL_GROUP_2_SCREEN_WIDTH_MAX}) {
-    height: 2.75rem;
-  }
-
   ${StyledListItem} {
     ${({ dir }) => css`
       &::after {
@@ -170,7 +160,6 @@ const StyledNav = styled.nav`
 
 const Navigation = ({ children, dir }) => (
   <StyledNav role="navigation" dir={dir}>
-    <CanonicalHamburgerMenu announcedText="Menu" onOpen={() => {}} />
     <NavWrapper>{children}</NavWrapper>
   </StyledNav>
 );

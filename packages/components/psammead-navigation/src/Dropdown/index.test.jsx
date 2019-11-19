@@ -10,7 +10,7 @@ import pidginNavData from '../../testHelpers/pidgin';
 
 describe('Navigation', () => {
   shouldMatchSnapshot(
-    'dropdown should render correctly',
+    'canonical dropdown should render correctly',
     <CanonicalDropdown announcedText="Menu" onClose={() => {}}>
       {pidginNavData.map((item, index) => {
         const active = index === 3;
@@ -35,7 +35,7 @@ describe('Navigation', () => {
 
 describe('Hamburger menu', () => {
   shouldMatchSnapshot(
-    'should render correctly',
+    'canonical should render correctly',
     <CanonicalHamburgerMenu announcedText="Menu" onOpen={() => {}} />,
   );
 });
