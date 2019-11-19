@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Hamburger menu should render correctly 1`] = `
+exports[`Hamburger menu canonical should render correctly 1`] = `
 .c1 {
   color: #fff;
   fill: currentColor;
@@ -25,13 +25,6 @@ exports[`Hamburger menu should render correctly 1`] = `
   }
 }
 
-@media (max-width:37.4375rem) {
-  .c0 {
-    display: inline-block;
-    float: left;
-  }
-}
-
 <button
   aria-expanded="false"
   aria-label="Menu"
@@ -49,7 +42,7 @@ exports[`Hamburger menu should render correctly 1`] = `
 </button>
 `;
 
-exports[`Navigation dropdown should render correctly 1`] = `
+exports[`Navigation canonical dropdown should render correctly 1`] = `
 .c7 {
   -webkit-clip-path: inset(100%);
   clip-path: inset(100%);
