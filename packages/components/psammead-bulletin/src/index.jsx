@@ -107,7 +107,10 @@ const IconWrapper = styled.span`
   @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
     display: inline-block;
     margin-left: 0;
-    padding-left: ${GEL_SPACING};
+    ${({ dir }) =>
+      dir === 'ltr'
+        ? `pading-left: ${GEL_SPACING}; margin-left: 0;`
+        : `pading-left: ${GEL_SPACING}; margin-right: 0;`}
   }
 `;
 
@@ -122,7 +125,7 @@ const PlayCTA = styled.div.attrs({ 'aria-hidden': true })`
   justify-content: center;
   @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
     display: inline-block;
-    padding: ${GEL_SPACING} ${GEL_SPACING_DBL} ${GEL_SPACING} 0;
+    padding: ${GEL_SPACING} ${GEL_SPACING_DBL};
   }
 `;
 
@@ -177,6 +180,7 @@ const Bulletin = ({
   ctaText,
   ctaLink,
   liveText,
+  dir,
 }) => {
   const isAudio = type === 'audio';
   const BulletinWrapper = isAudio ? RadioBulletinWrapper : TVBulletinWrapper;
@@ -198,8 +202,14 @@ const Bulletin = ({
         <BulletinSummary script={script} service={service} type={type}>
           {summaryText}
         </BulletinSummary>
-        <PlayCTA isLive={isLive} service={service} script={script} type={type}>
-          <IconWrapper>{mediaIcons[type]}</IconWrapper>
+        <PlayCTA
+          isLive={isLive}
+          service={service}
+          script={script}
+          type={type}
+          dir={dir}
+        >
+          <IconWrapper dir={dir}>{mediaIcons[type]}</IconWrapper>
           {ctaText}
         </PlayCTA>
       </TextWrapper>
@@ -218,12 +228,14 @@ Bulletin.propTypes = {
   summaryText: string.isRequired,
   headlineText: string.isRequired,
   liveText: string,
+  dir: oneOf(['ltr', 'rtl']),
 };
 
 Bulletin.defaultProps = {
   isLive: false,
   image: null,
   liveText: 'LIVE',
+  dir: 'ltr',
 };
 
 export default Bulletin;

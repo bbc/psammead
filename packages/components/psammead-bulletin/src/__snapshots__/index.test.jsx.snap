@@ -172,7 +172,8 @@ exports[`Bulletin should render audio correctly 1`] = `
   .c9 {
     display: inline-block;
     margin-left: 0;
-    padding-left: 0.5rem;
+    pading-left: 0.5rem;
+    margin-left: 0;
   }
 }
 
@@ -193,7 +194,7 @@ exports[`Bulletin should render audio correctly 1`] = `
 @media (min-width:37.5rem) {
   .c8 {
     display: inline-block;
-    padding: 0.5rem 1rem 0.5rem 0;
+    padding: 0.5rem 1rem;
   }
 }
 
@@ -277,10 +278,12 @@ exports[`Bulletin should render audio correctly 1`] = `
     <div
       aria-hidden="true"
       class="c8"
+      dir="ltr"
       type="audio"
     >
       <span
         class="c9"
+        dir="ltr"
       >
         <svg
           class="c10"
@@ -484,7 +487,8 @@ exports[`Bulletin should render live audio correctly 1`] = `
   .c10 {
     display: inline-block;
     margin-left: 0;
-    padding-left: 0.5rem;
+    pading-left: 0.5rem;
+    margin-left: 0;
   }
 }
 
@@ -505,7 +509,7 @@ exports[`Bulletin should render live audio correctly 1`] = `
 @media (min-width:37.5rem) {
   .c9 {
     display: inline-block;
-    padding: 0.5rem 1rem 0.5rem 0;
+    padding: 0.5rem 1rem;
   }
 }
 
@@ -596,10 +600,12 @@ exports[`Bulletin should render live audio correctly 1`] = `
     <div
       aria-hidden="true"
       class="c9"
+      dir="ltr"
       type="audio"
     >
       <span
         class="c10"
+        dir="ltr"
       >
         <svg
           class="c11"
@@ -807,7 +813,8 @@ exports[`Bulletin should render live video correctly 1`] = `
   .c10 {
     display: inline-block;
     margin-left: 0;
-    padding-left: 0.5rem;
+    pading-left: 0.5rem;
+    margin-left: 0;
   }
 }
 
@@ -828,7 +835,7 @@ exports[`Bulletin should render live video correctly 1`] = `
 @media (min-width:37.5rem) {
   .c9 {
     display: inline-block;
-    padding: 0.5rem 1rem 0.5rem 0;
+    padding: 0.5rem 1rem;
   }
 }
 
@@ -919,10 +926,12 @@ exports[`Bulletin should render live video correctly 1`] = `
     <div
       aria-hidden="true"
       class="c9"
+      dir="ltr"
       type="video"
     >
       <span
         class="c10"
+        dir="ltr"
       >
         <svg
           class="c11"
@@ -1118,7 +1127,8 @@ exports[`Bulletin should render video correctly 1`] = `
   .c9 {
     display: inline-block;
     margin-left: 0;
-    padding-left: 0.5rem;
+    pading-left: 0.5rem;
+    margin-left: 0;
   }
 }
 
@@ -1139,7 +1149,7 @@ exports[`Bulletin should render video correctly 1`] = `
 @media (min-width:37.5rem) {
   .c8 {
     display: inline-block;
-    padding: 0.5rem 1rem 0.5rem 0;
+    padding: 0.5rem 1rem;
   }
 }
 
@@ -1223,10 +1233,12 @@ exports[`Bulletin should render video correctly 1`] = `
     <div
       aria-hidden="true"
       class="c8"
+      dir="ltr"
       type="video"
     >
       <span
         class="c9"
+        dir="ltr"
       >
         <svg
           class="c10"
