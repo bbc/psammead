@@ -90,7 +90,7 @@ exports[`should render SansBold correctly for hausa 1`] = `
 
 exports[`should render SansBold correctly for hindi 1`] = `
 "
-    font-family: \\"Noto Sans Devanagari\\", Arial, Verdana, Geneva, Helvetica, sans-serif;
+    font-family: Arial, Verdana, Geneva, Helvetica, sans-serif;
     font-weight: 700;
    font-style: normal;
   "
@@ -162,7 +162,7 @@ exports[`should render SansBold correctly for naidheachdan 1`] = `
 
 exports[`should render SansBold correctly for nepali 1`] = `
 "
-    font-family: \\"Noto Sans Devanagari\\", Arial, Verdana, Geneva, Helvetica, sans-serif;
+    font-family: Arial, Verdana, Geneva, Helvetica, sans-serif;
     font-weight: 700;
    font-style: normal;
   "
@@ -458,7 +458,7 @@ exports[`should render SansBoldItalic correctly for hausa 1`] = `
 
 exports[`should render SansBoldItalic correctly for hindi 1`] = `
 "
-    font-family: \\"Noto Sans Devanagari\\", Arial, Verdana, Geneva, Helvetica, sans-serif;
+    font-family: Arial, Verdana, Geneva, Helvetica, sans-serif;
     font-weight: 700;
    font-style: normal;
   "
@@ -530,7 +530,7 @@ exports[`should render SansBoldItalic correctly for naidheachdan 1`] = `
 
 exports[`should render SansBoldItalic correctly for nepali 1`] = `
 "
-    font-family: \\"Noto Sans Devanagari\\", Arial, Verdana, Geneva, Helvetica, sans-serif;
+    font-family: Arial, Verdana, Geneva, Helvetica, sans-serif;
     font-weight: 700;
    font-style: normal;
   "
@@ -826,7 +826,7 @@ exports[`should render SansLight correctly for hausa 1`] = `
 
 exports[`should render SansLight correctly for hindi 1`] = `
 "
-    font-family: \\"Noto Sans Devanagari\\", Arial, Verdana, Geneva, Helvetica, sans-serif;
+    font-family: Arial, Verdana, Geneva, Helvetica, sans-serif;
     font-weight: 400;
    font-style: normal;
   "
@@ -898,7 +898,7 @@ exports[`should render SansLight correctly for naidheachdan 1`] = `
 
 exports[`should render SansLight correctly for nepali 1`] = `
 "
-    font-family: \\"Noto Sans Devanagari\\", Arial, Verdana, Geneva, Helvetica, sans-serif;
+    font-family: Arial, Verdana, Geneva, Helvetica, sans-serif;
     font-weight: 400;
    font-style: normal;
   "
@@ -1194,7 +1194,7 @@ exports[`should render SansRegular correctly for hausa 1`] = `
 
 exports[`should render SansRegular correctly for hindi 1`] = `
 "
-    font-family: \\"Noto Sans Devanagari\\", Arial, Verdana, Geneva, Helvetica, sans-serif;
+    font-family: Arial, Verdana, Geneva, Helvetica, sans-serif;
     font-weight: 400;
    font-style: normal;
   "
@@ -1266,7 +1266,7 @@ exports[`should render SansRegular correctly for naidheachdan 1`] = `
 
 exports[`should render SansRegular correctly for nepali 1`] = `
 "
-    font-family: \\"Noto Sans Devanagari\\", Arial, Verdana, Geneva, Helvetica, sans-serif;
+    font-family: Arial, Verdana, Geneva, Helvetica, sans-serif;
     font-weight: 400;
    font-style: normal;
   "
@@ -1562,7 +1562,7 @@ exports[`should render SansRegularItalic correctly for hausa 1`] = `
 
 exports[`should render SansRegularItalic correctly for hindi 1`] = `
 "
-    font-family: \\"Noto Sans Devanagari\\", Arial, Verdana, Geneva, Helvetica, sans-serif;
+    font-family: Arial, Verdana, Geneva, Helvetica, sans-serif;
     font-weight: 400;
    font-style: normal;
   "
@@ -1634,7 +1634,7 @@ exports[`should render SansRegularItalic correctly for naidheachdan 1`] = `
 
 exports[`should render SansRegularItalic correctly for nepali 1`] = `
 "
-    font-family: \\"Noto Sans Devanagari\\", Arial, Verdana, Geneva, Helvetica, sans-serif;
+    font-family: Arial, Verdana, Geneva, Helvetica, sans-serif;
     font-weight: 400;
    font-style: normal;
   "
@@ -1930,7 +1930,7 @@ exports[`should render SerifBold correctly for hausa 1`] = `
 
 exports[`should render SerifBold correctly for hindi 1`] = `
 "
-    font-family: \\"Noto Sans Devanagari\\", Arial, Verdana, Geneva, Helvetica, sans-serif;
+    font-family: Arial, Verdana, Geneva, Helvetica, sans-serif;
     font-weight: 700;
    font-style: normal;
   "
@@ -2002,7 +2002,7 @@ exports[`should render SerifBold correctly for naidheachdan 1`] = `
 
 exports[`should render SerifBold correctly for nepali 1`] = `
 "
-    font-family: \\"Noto Sans Devanagari\\", Arial, Verdana, Geneva, Helvetica, sans-serif;
+    font-family: Arial, Verdana, Geneva, Helvetica, sans-serif;
     font-weight: 700;
    font-style: normal;
   "
@@ -2298,7 +2298,7 @@ exports[`should render SerifLight correctly for hausa 1`] = `
 
 exports[`should render SerifLight correctly for hindi 1`] = `
 "
-    font-family: \\"Noto Sans Devanagari\\", Arial, Verdana, Geneva, Helvetica, sans-serif;
+    font-family: Arial, Verdana, Geneva, Helvetica, sans-serif;
     font-weight: 400;
    font-style: normal;
   "
@@ -2370,7 +2370,7 @@ exports[`should render SerifLight correctly for naidheachdan 1`] = `
 
 exports[`should render SerifLight correctly for nepali 1`] = `
 "
-    font-family: \\"Noto Sans Devanagari\\", Arial, Verdana, Geneva, Helvetica, sans-serif;
+    font-family: Arial, Verdana, Geneva, Helvetica, sans-serif;
     font-weight: 400;
    font-style: normal;
   "
@@ -2666,7 +2666,7 @@ exports[`should render SerifMedium correctly for hausa 1`] = `
 
 exports[`should render SerifMedium correctly for hindi 1`] = `
 "
-    font-family: \\"Noto Sans Devanagari\\", Arial, Verdana, Geneva, Helvetica, sans-serif;
+    font-family: Arial, Verdana, Geneva, Helvetica, sans-serif;
     font-weight: 700;
    font-style: normal;
   "
@@ -2738,7 +2738,7 @@ exports[`should render SerifMedium correctly for naidheachdan 1`] = `
 
 exports[`should render SerifMedium correctly for nepali 1`] = `
 "
-    font-family: \\"Noto Sans Devanagari\\", Arial, Verdana, Geneva, Helvetica, sans-serif;
+    font-family: Arial, Verdana, Geneva, Helvetica, sans-serif;
     font-weight: 700;
    font-style: normal;
   "
@@ -3034,7 +3034,7 @@ exports[`should render SerifMediumItalic correctly for hausa 1`] = `
 
 exports[`should render SerifMediumItalic correctly for hindi 1`] = `
 "
-    font-family: \\"Noto Sans Devanagari\\", Arial, Verdana, Geneva, Helvetica, sans-serif;
+    font-family: Arial, Verdana, Geneva, Helvetica, sans-serif;
     font-weight: 700;
    font-style: normal;
   "
@@ -3106,7 +3106,7 @@ exports[`should render SerifMediumItalic correctly for naidheachdan 1`] = `
 
 exports[`should render SerifMediumItalic correctly for nepali 1`] = `
 "
-    font-family: \\"Noto Sans Devanagari\\", Arial, Verdana, Geneva, Helvetica, sans-serif;
+    font-family: Arial, Verdana, Geneva, Helvetica, sans-serif;
     font-weight: 700;
    font-style: normal;
   "
@@ -3402,7 +3402,7 @@ exports[`should render SerifRegular correctly for hausa 1`] = `
 
 exports[`should render SerifRegular correctly for hindi 1`] = `
 "
-    font-family: \\"Noto Sans Devanagari\\", Arial, Verdana, Geneva, Helvetica, sans-serif;
+    font-family: Arial, Verdana, Geneva, Helvetica, sans-serif;
     font-weight: 400;
    font-style: normal;
   "
@@ -3474,7 +3474,7 @@ exports[`should render SerifRegular correctly for naidheachdan 1`] = `
 
 exports[`should render SerifRegular correctly for nepali 1`] = `
 "
-    font-family: \\"Noto Sans Devanagari\\", Arial, Verdana, Geneva, Helvetica, sans-serif;
+    font-family: Arial, Verdana, Geneva, Helvetica, sans-serif;
     font-weight: 400;
    font-style: normal;
   "
