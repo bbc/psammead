@@ -191,7 +191,7 @@ DropdownNavigationLi.defaultProps = {
 AmpDropdown.propTypes = {
   announcedText: string.isRequired,
   children: node.isRequired,
-  onClose: func.isRequired,
+  onClose: string.isRequired,
 };
 
 CanonicalDropdown.propTypes = {
