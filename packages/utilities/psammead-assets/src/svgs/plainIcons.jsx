@@ -9,12 +9,13 @@ const defaultAttrs = {
   height: GEL_SPACING_DBL,
   focusable: 'false',
   xmlns: 'http://www.w3.org/2000/svg',
+  fill: 'currentcolor',
 };
 
 const PlainIcons = {
   bullet: (
     <svg {...defaultAttrs}>
-      <circle cx="10" cy="10" r="8" fill="#3f3f3f" />
+      <circle cx="16" cy="16" r="12" />
     </svg>
   ),
 };
