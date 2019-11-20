@@ -28,7 +28,7 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
 
 .c7 {
   padding-top: 0.25rem;
-  padding-left: 0.25rem;
+  padding-left: 1rem;
 }
 
 .c5 {
@@ -102,7 +102,7 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
 
 @media (max-width:14.9375rem) {
   .c4 {
-    width: calc(16.666666666666668%);
+    width: calc(11.11111111111111%);
     display: inline-block;
     vertical-align: top;
   }
@@ -110,7 +110,7 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
 
 @media (min-width:15rem) and (max-width:24.9375rem) {
   .c4 {
-    width: calc(16.666666666666668%);
+    width: calc(11.11111111111111%);
     display: inline-block;
     vertical-align: top;
   }
@@ -118,7 +118,7 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
 
 @media (min-width:25rem) and (max-width:37.4375rem) {
   .c4 {
-    width: calc(33.333333333333336%);
+    width: calc(22.22222222222222%);
     display: inline-block;
     vertical-align: top;
   }
@@ -126,7 +126,7 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
 
 @media (min-width:37.5rem) and (max-width:62.9375rem) {
   .c4 {
-    width: calc(33.333333333333336%);
+    width: calc(22.22222222222222%);
     display: inline-block;
     vertical-align: top;
   }
@@ -134,7 +134,7 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
 
 @media (min-width:63rem) and (max-width:80rem) {
   .c4 {
-    width: calc(25%);
+    width: calc(16.666666666666668%);
     display: inline-block;
     vertical-align: top;
   }
@@ -142,7 +142,7 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
 
 @media (min-width:80rem) {
   .c4 {
-    width: calc(25%);
+    width: calc(16.666666666666668%);
     display: inline-block;
     vertical-align: top;
   }
@@ -156,7 +156,7 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
 
 @media (max-width:14.9375rem) {
   .c6 {
-    width: calc(83.33333333333333%);
+    width: calc(88.88888888888889%);
     display: inline-block;
     vertical-align: top;
   }
@@ -164,7 +164,7 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
 
 @media (min-width:15rem) and (max-width:24.9375rem) {
   .c6 {
-    width: calc(83.33333333333333%);
+    width: calc(88.88888888888889%);
     display: inline-block;
     vertical-align: top;
   }
@@ -172,7 +172,7 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
 
 @media (min-width:25rem) and (max-width:37.4375rem) {
   .c6 {
-    width: calc(66.66666666666667%);
+    width: calc(77.77777777777777%);
     display: inline-block;
     vertical-align: top;
   }
@@ -180,7 +180,7 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
 
 @media (min-width:37.5rem) and (max-width:62.9375rem) {
   .c6 {
-    width: calc(66.66666666666667%);
+    width: calc(77.77777777777777%);
     display: inline-block;
     vertical-align: top;
   }
@@ -188,7 +188,7 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
 
 @media (min-width:63rem) and (max-width:80rem) {
   .c6 {
-    width: calc(75%);
+    width: calc(83.33333333333333%);
     display: inline-block;
     vertical-align: top;
   }
@@ -196,7 +196,7 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
 
 @media (min-width:80rem) {
   .c6 {
-    width: calc(75%);
+    width: calc(83.33333333333333%);
     display: inline-block;
     vertical-align: top;
   }
@@ -264,10 +264,10 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width:80rem) {
   .c7 {
     padding-top: 0.5rem;
-    padding-left: 1rem;
+    padding-left: 2rem;
   }
 }
 
@@ -649,7 +649,7 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
 
 .c7 {
   padding-top: 0.25rem;
-  padding-left: 0.25rem;
+  padding-left: 1rem;
 }
 
 .c5 {
@@ -723,7 +723,7 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
 
 @media (max-width:14.9375rem) {
   .c4 {
-    width: calc(16.666666666666668%);
+    width: calc(11.11111111111111%);
     display: inline-block;
     vertical-align: top;
   }
@@ -731,7 +731,7 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
 
 @media (min-width:15rem) and (max-width:24.9375rem) {
   .c4 {
-    width: calc(16.666666666666668%);
+    width: calc(11.11111111111111%);
     display: inline-block;
     vertical-align: top;
   }
@@ -739,7 +739,7 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
 
 @media (min-width:25rem) and (max-width:37.4375rem) {
   .c4 {
-    width: calc(33.333333333333336%);
+    width: calc(22.22222222222222%);
     display: inline-block;
     vertical-align: top;
   }
@@ -747,7 +747,7 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
 
 @media (min-width:37.5rem) and (max-width:62.9375rem) {
   .c4 {
-    width: calc(33.333333333333336%);
+    width: calc(22.22222222222222%);
     display: inline-block;
     vertical-align: top;
   }
@@ -755,7 +755,7 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
 
 @media (min-width:63rem) and (max-width:80rem) {
   .c4 {
-    width: calc(25%);
+    width: calc(16.666666666666668%);
     display: inline-block;
     vertical-align: top;
   }
@@ -763,7 +763,7 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
 
 @media (min-width:80rem) {
   .c4 {
-    width: calc(25%);
+    width: calc(16.666666666666668%);
     display: inline-block;
     vertical-align: top;
   }
@@ -777,7 +777,7 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
 
 @media (max-width:14.9375rem) {
   .c6 {
-    width: calc(83.33333333333333%);
+    width: calc(88.88888888888889%);
     display: inline-block;
     vertical-align: top;
   }
@@ -785,7 +785,7 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
 
 @media (min-width:15rem) and (max-width:24.9375rem) {
   .c6 {
-    width: calc(83.33333333333333%);
+    width: calc(88.88888888888889%);
     display: inline-block;
     vertical-align: top;
   }
@@ -793,7 +793,7 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
 
 @media (min-width:25rem) and (max-width:37.4375rem) {
   .c6 {
-    width: calc(66.66666666666667%);
+    width: calc(77.77777777777777%);
     display: inline-block;
     vertical-align: top;
   }
@@ -801,7 +801,7 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
 
 @media (min-width:37.5rem) and (max-width:62.9375rem) {
   .c6 {
-    width: calc(66.66666666666667%);
+    width: calc(77.77777777777777%);
     display: inline-block;
     vertical-align: top;
   }
@@ -809,7 +809,7 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
 
 @media (min-width:63rem) and (max-width:80rem) {
   .c6 {
-    width: calc(75%);
+    width: calc(83.33333333333333%);
     display: inline-block;
     vertical-align: top;
   }
@@ -817,7 +817,7 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
 
 @media (min-width:80rem) {
   .c6 {
-    width: calc(75%);
+    width: calc(83.33333333333333%);
     display: inline-block;
     vertical-align: top;
   }
@@ -885,10 +885,10 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width:80rem) {
   .c7 {
     padding-top: 0.5rem;
-    padding-left: 1rem;
+    padding-left: 2rem;
   }
 }
 
@@ -1270,7 +1270,7 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
 
 .c7 {
   padding-top: 0.25rem;
-  padding-left: 0.25rem;
+  padding-left: 1rem;
 }
 
 .c5 {
@@ -1344,7 +1344,7 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
 
 @media (max-width:14.9375rem) {
   .c4 {
-    width: calc(16.666666666666668%);
+    width: calc(11.11111111111111%);
     display: inline-block;
     vertical-align: top;
   }
@@ -1352,7 +1352,7 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
 
 @media (min-width:15rem) and (max-width:24.9375rem) {
   .c4 {
-    width: calc(16.666666666666668%);
+    width: calc(11.11111111111111%);
     display: inline-block;
     vertical-align: top;
   }
@@ -1360,7 +1360,7 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
 
 @media (min-width:25rem) and (max-width:37.4375rem) {
   .c4 {
-    width: calc(33.333333333333336%);
+    width: calc(22.22222222222222%);
     display: inline-block;
     vertical-align: top;
   }
@@ -1368,7 +1368,7 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
 
 @media (min-width:37.5rem) and (max-width:62.9375rem) {
   .c4 {
-    width: calc(33.333333333333336%);
+    width: calc(22.22222222222222%);
     display: inline-block;
     vertical-align: top;
   }
@@ -1376,7 +1376,7 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
 
 @media (min-width:63rem) and (max-width:80rem) {
   .c4 {
-    width: calc(25%);
+    width: calc(16.666666666666668%);
     display: inline-block;
     vertical-align: top;
   }
@@ -1384,7 +1384,7 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
 
 @media (min-width:80rem) {
   .c4 {
-    width: calc(25%);
+    width: calc(16.666666666666668%);
     display: inline-block;
     vertical-align: top;
   }
@@ -1398,7 +1398,7 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
 
 @media (max-width:14.9375rem) {
   .c6 {
-    width: calc(83.33333333333333%);
+    width: calc(88.88888888888889%);
     display: inline-block;
     vertical-align: top;
   }
@@ -1406,7 +1406,7 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
 
 @media (min-width:15rem) and (max-width:24.9375rem) {
   .c6 {
-    width: calc(83.33333333333333%);
+    width: calc(88.88888888888889%);
     display: inline-block;
     vertical-align: top;
   }
@@ -1414,7 +1414,7 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
 
 @media (min-width:25rem) and (max-width:37.4375rem) {
   .c6 {
-    width: calc(66.66666666666667%);
+    width: calc(77.77777777777777%);
     display: inline-block;
     vertical-align: top;
   }
@@ -1422,7 +1422,7 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
 
 @media (min-width:37.5rem) and (max-width:62.9375rem) {
   .c6 {
-    width: calc(66.66666666666667%);
+    width: calc(77.77777777777777%);
     display: inline-block;
     vertical-align: top;
   }
@@ -1430,7 +1430,7 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
 
 @media (min-width:63rem) and (max-width:80rem) {
   .c6 {
-    width: calc(75%);
+    width: calc(83.33333333333333%);
     display: inline-block;
     vertical-align: top;
   }
@@ -1438,7 +1438,7 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
 
 @media (min-width:80rem) {
   .c6 {
-    width: calc(75%);
+    width: calc(83.33333333333333%);
     display: inline-block;
     vertical-align: top;
   }
@@ -1506,10 +1506,10 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width:80rem) {
   .c7 {
     padding-top: 0.5rem;
-    padding-left: 1rem;
+    padding-left: 2rem;
   }
 }
 
@@ -1891,7 +1891,7 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
 
 .c7 {
   padding-top: 0.25rem;
-  padding-left: 0.25rem;
+  padding-left: 1rem;
 }
 
 .c5 {
@@ -1965,7 +1965,7 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
 
 @media (max-width:14.9375rem) {
   .c4 {
-    width: calc(16.666666666666668%);
+    width: calc(11.11111111111111%);
     display: inline-block;
     vertical-align: top;
   }
@@ -1973,7 +1973,7 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
 
 @media (min-width:15rem) and (max-width:24.9375rem) {
   .c4 {
-    width: calc(16.666666666666668%);
+    width: calc(11.11111111111111%);
     display: inline-block;
     vertical-align: top;
   }
@@ -1981,7 +1981,7 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
 
 @media (min-width:25rem) and (max-width:37.4375rem) {
   .c4 {
-    width: calc(33.333333333333336%);
+    width: calc(22.22222222222222%);
     display: inline-block;
     vertical-align: top;
   }
@@ -1989,7 +1989,7 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
 
 @media (min-width:37.5rem) and (max-width:62.9375rem) {
   .c4 {
-    width: calc(33.333333333333336%);
+    width: calc(22.22222222222222%);
     display: inline-block;
     vertical-align: top;
   }
@@ -1997,7 +1997,7 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
 
 @media (min-width:63rem) and (max-width:80rem) {
   .c4 {
-    width: calc(25%);
+    width: calc(16.666666666666668%);
     display: inline-block;
     vertical-align: top;
   }
@@ -2005,7 +2005,7 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
 
 @media (min-width:80rem) {
   .c4 {
-    width: calc(25%);
+    width: calc(16.666666666666668%);
     display: inline-block;
     vertical-align: top;
   }
@@ -2019,7 +2019,7 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
 
 @media (max-width:14.9375rem) {
   .c6 {
-    width: calc(83.33333333333333%);
+    width: calc(88.88888888888889%);
     display: inline-block;
     vertical-align: top;
   }
@@ -2027,7 +2027,7 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
 
 @media (min-width:15rem) and (max-width:24.9375rem) {
   .c6 {
-    width: calc(83.33333333333333%);
+    width: calc(88.88888888888889%);
     display: inline-block;
     vertical-align: top;
   }
@@ -2035,7 +2035,7 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
 
 @media (min-width:25rem) and (max-width:37.4375rem) {
   .c6 {
-    width: calc(66.66666666666667%);
+    width: calc(77.77777777777777%);
     display: inline-block;
     vertical-align: top;
   }
@@ -2043,7 +2043,7 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
 
 @media (min-width:37.5rem) and (max-width:62.9375rem) {
   .c6 {
-    width: calc(66.66666666666667%);
+    width: calc(77.77777777777777%);
     display: inline-block;
     vertical-align: top;
   }
@@ -2051,7 +2051,7 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
 
 @media (min-width:63rem) and (max-width:80rem) {
   .c6 {
-    width: calc(75%);
+    width: calc(83.33333333333333%);
     display: inline-block;
     vertical-align: top;
   }
@@ -2059,7 +2059,7 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
 
 @media (min-width:80rem) {
   .c6 {
-    width: calc(75%);
+    width: calc(83.33333333333333%);
     display: inline-block;
     vertical-align: top;
   }
@@ -2127,10 +2127,10 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width:80rem) {
   .c7 {
     padding-top: 0.5rem;
-    padding-left: 1rem;
+    padding-left: 2rem;
   }
 }
 

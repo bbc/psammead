@@ -20,7 +20,7 @@ exports[`MostReadLink should render ltr correctly 1`] = `
 
 .c0 {
   padding-top: 0.25rem;
-  padding-left: 0.25rem;
+  padding-left: 1rem;
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
@@ -37,10 +37,10 @@ exports[`MostReadLink should render ltr correctly 1`] = `
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width:80rem) {
   .c0 {
     padding-top: 0.5rem;
-    padding-left: 1rem;
+    padding-left: 2rem;
   }
 }
 
@@ -77,7 +77,7 @@ exports[`MostReadLink should render rtl correctly 1`] = `
 
 .c0 {
   padding-top: 0.25rem;
-  padding-right: 0.25rem;
+  padding-right: 1rem;
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
@@ -94,10 +94,10 @@ exports[`MostReadLink should render rtl correctly 1`] = `
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width:80rem) {
   .c0 {
     padding-top: 0.5rem;
-    padding-right: 1rem;
+    padding-right: 2rem;
   }
 }
 
@@ -144,7 +144,7 @@ exports[`MostReadLink should render with last updated date correctly 1`] = `
 
 .c0 {
   padding-top: 0.25rem;
-  padding-left: 0.25rem;
+  padding-left: 1rem;
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
@@ -175,10 +175,10 @@ exports[`MostReadLink should render with last updated date correctly 1`] = `
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width:80rem) {
   .c0 {
     padding-top: 0.5rem;
-    padding-left: 1rem;
+    padding-left: 2rem;
   }
 }
 
