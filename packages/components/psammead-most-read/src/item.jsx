@@ -3,7 +3,6 @@ import { node, oneOf, shape, string } from 'prop-types';
 import styled from 'styled-components';
 import { getFoolscap, getDoublePica } from '@bbc/gel-foundations/typography';
 import {
-  GEL_SPACING_HLF,
   GEL_SPACING,
   GEL_SPACING_DBL,
   GEL_SPACING_TRPL,
@@ -33,7 +32,6 @@ const StyledLink = styled.a`
 `;
 
 const StyledItem = styled.div`
-  padding-top: ${GEL_SPACING_HLF};
   padding-bottom: ${GEL_SPACING_TRPL};
   ${paddingStart}: ${GEL_SPACING_DBL};
 

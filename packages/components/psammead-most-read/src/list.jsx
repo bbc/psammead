@@ -89,7 +89,7 @@ const MostReadItem = ({ rank, link, service, script, dir }) => (
       </MostReadRank>
     </Grid>
     <Grid {...MostReadLinkProps} dir={dir}>
-      <MostReadLink service={service} link={link} script={script} />
+      <MostReadLink service={service} link={link} script={script} dir={dir} />
     </Grid>
   </Grid>
 );

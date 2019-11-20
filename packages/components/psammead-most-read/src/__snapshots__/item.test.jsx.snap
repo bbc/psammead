@@ -19,7 +19,6 @@ exports[`MostReadLink should render ltr correctly 1`] = `
 }
 
 .c0 {
-  padding-top: 0.25rem;
   padding-bottom: 1.5rem;
   padding-left: 1rem;
 }
@@ -77,7 +76,6 @@ exports[`MostReadLink should render rtl correctly 1`] = `
 }
 
 .c0 {
-  padding-top: 0.25rem;
   padding-bottom: 1.5rem;
   padding-right: 1rem;
 }
@@ -145,7 +143,6 @@ exports[`MostReadLink should render with last updated date correctly 1`] = `
 }
 
 .c0 {
-  padding-top: 0.25rem;
   padding-bottom: 1.5rem;
   padding-left: 1rem;
 }
