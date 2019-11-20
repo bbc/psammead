@@ -3,7 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
-| 4.1.1 | [PR#????](https://github.com/bbc/psammead/pull/????) Update Nepali and Hindi font stacks |
+| 4.1.1 | [PR#2661](https://github.com/bbc/psammead/pull/2661) Update Nepali and Hindi font stacks |
 | 4.1.0 | [PR#2514](https://github.com/bbc/psammead/pull/2514) Add SerifLight and SansLight functions |
 | 4.0.4 | [PR#2471](https://github.com/bbc/psammead/pull/2471) Switch Russian service to use Reith fonts |
 | 4.0.3 | [PR#2404](https://github.com/bbc/psammead/pull/2404) replace inputProvider and dirDecorator with withServicesInput |
