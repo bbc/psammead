@@ -97,7 +97,6 @@
     "jest": "^24.9.0",
     "jest-fetch-mock": "^2.1.2",
     "jest-styled-components": "^6.3.4",
-    "jest-svg-transformer": "^1.0.0",
     "json5": "^2.1.1",
     "lerna": "^3.18.4",
     "lint-staged": "^9.4.3",
@@ -148,11 +147,7 @@
     "testMatch": [
       "**/*.test.{js,jsx}",
       "!**/.yeoman/templates/**"
-    ],
-    "transform": {
-      "^.+\\.jsx?$": "babel-jest",
-      "^.+\\.svg$": "jest-svg-transformer"
-    }
+    ]
   },
   "spec": {
     "prune": false,
