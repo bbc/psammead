@@ -275,7 +275,7 @@ exports[`should render SansBold correctly for tamil 1`] = `
 exports[`should render SansBold correctly for telugu 1`] = `
 "
     font-family: Mallanna, \\"Noto Sans Telugu\\", \\"Hind Guntur\\", Gautami, \\"Kohinoor Telugu\\", sans-serif;
-    font-weight: 400;
+    font-weight: 700;
    font-style: normal;
   "
 `;
@@ -643,7 +643,7 @@ exports[`should render SansBoldItalic correctly for tamil 1`] = `
 exports[`should render SansBoldItalic correctly for telugu 1`] = `
 "
     font-family: Mallanna, \\"Noto Sans Telugu\\", \\"Hind Guntur\\", Gautami, \\"Kohinoor Telugu\\", sans-serif;
-    font-weight: 400;
+    font-weight: 700;
    font-style: normal;
   "
 `;
@@ -2115,7 +2115,7 @@ exports[`should render SerifBold correctly for tamil 1`] = `
 exports[`should render SerifBold correctly for telugu 1`] = `
 "
     font-family: Mallanna, \\"Noto Sans Telugu\\", \\"Hind Guntur\\", Gautami, \\"Kohinoor Telugu\\", sans-serif;
-    font-weight: 400;
+    font-weight: 700;
    font-style: normal;
   "
 `;
@@ -2851,7 +2851,7 @@ exports[`should render SerifMedium correctly for tamil 1`] = `
 exports[`should render SerifMedium correctly for telugu 1`] = `
 "
     font-family: Mallanna, \\"Noto Sans Telugu\\", \\"Hind Guntur\\", Gautami, \\"Kohinoor Telugu\\", sans-serif;
-    font-weight: 400;
+    font-weight: 700;
    font-style: normal;
   "
 `;
@@ -3219,7 +3219,7 @@ exports[`should render SerifMediumItalic correctly for tamil 1`] = `
 exports[`should render SerifMediumItalic correctly for telugu 1`] = `
 "
     font-family: Mallanna, \\"Noto Sans Telugu\\", \\"Hind Guntur\\", Gautami, \\"Kohinoor Telugu\\", sans-serif;
-    font-weight: 400;
+    font-weight: 700;
    font-style: normal;
   "
 `;

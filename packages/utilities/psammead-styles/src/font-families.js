@@ -317,6 +317,10 @@ const teluguStyles = {
     ${teluguFontFamily}
     ${getFontStyleAndWeight('normal', 400)}
   `,
+  sansBold: `
+    ${teluguFontFamily}
+    ${getFontStyleAndWeight('normal', 700)}
+  `,
 };
 
 /*
