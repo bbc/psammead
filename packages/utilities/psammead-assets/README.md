@@ -91,7 +91,7 @@ Plain icons is an object containing SVG icons plain svgs that can be b64 encoded
 
 ```jsx
 import styled from 'styled-components';
-import ReactDomServer from '';
+import ReactDomServer from 'react-dom/server';
 import { plainIcons } from '@bbc/psammead-assets/svgs';
 
 const bullet = btoa(ReactDomServer.renderToString(plainIcons.bullet));
