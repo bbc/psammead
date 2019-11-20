@@ -34,7 +34,9 @@ const initIntersectionObserver = ({ wrapperEl, setWrapperIO }) => {
     return init();
   }
 
-  return import('intersection-observer').then(() => {
+  return import(
+    /* webpackChunkName: "intersection-observer-polyfill" */ 'intersection-observer'
+  ).then(() => {
     IntersectionObserver.prototype.POLL_INTERVAL = 100;
     return init();
   });
@@ -55,7 +57,9 @@ const initResizeObserver = ({ wrapperEl, setContentElRect }) => {
   if ('ResizeObserver' in window) {
     return init(ResizeObserver);
   }
-  return import('@juggle/resize-observer').then(module => {
+  return import(
+    /* webpackChunkName: "resize-observer-polyfill" */ '@juggle/resize-observer'
+  ).then(module => {
     const ResizeObserver = module.default;
     return init(ResizeObserver);
   });
