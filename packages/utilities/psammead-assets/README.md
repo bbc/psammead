@@ -83,9 +83,9 @@ import { navigationIcons } from '@bbc/psammead-assets/svgs';
 </span>
 ```
 
-## Plain Icons SVGs
+## Unclassed Icons SVGs
 
-Plain icons is an object containing SVG icons plain svgs that can be b64 encoded for css data-urls. They are used in `psammead-bulleted-list` component.
+Unclassed icons is an object containing SVGs without classes that can be b64 encoded for css data-urls. They are used in `psammead-bulleted-list` component.
 
 ### Usage
 

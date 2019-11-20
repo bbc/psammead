@@ -6,7 +6,13 @@ import { number as numberKnob, withKnobs } from '@storybook/addon-knobs';
 import notes from '../README.md';
 import * as allSvgs from './svgs';
 
-const { coreIcons, mediaIcons, navigationIcons, plainIcons, ...svgs } = allSvgs;
+const {
+  coreIcons,
+  mediaIcons,
+  navigationIcons,
+  unclassedIcons,
+  ...svgs
+} = allSvgs;
 
 // `currentColor` has been used to address high contrast mode in Firefox.
 const Svg = styled.svg`
@@ -106,10 +112,10 @@ Object.keys(navigationIcons).forEach(iconName => {
   );
 });
 
-const plainIconStories = storiesOf(
-  'Utilities|SVGs/PlainIcons Svgs',
+const unclassedIconStories = storiesOf(
+  'Utilities|SVGs/UnclassedIcons Svgs',
   module,
 ).addDecorator(withKnobs);
-Object.keys(plainIcons).forEach(iconName => {
-  plainIconStories.add(iconName, () => plainIcons[iconName], { notes });
+Object.keys(unclassedIcons).forEach(iconName => {
+  unclassedIconStories.add(iconName, () => unclassedIcons[iconName], { notes });
 });

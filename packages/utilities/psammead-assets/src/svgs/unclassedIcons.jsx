@@ -1,4 +1,4 @@
-/* Plain Icons contain svgs which are b64 transformed and so cannot depend on any classes
+/* Unclassed Icons contain svgs which do not depend on any classes and have styles directly added to them
  */
 import React from 'react';
 import { GEL_SPACING_DBL } from '@bbc/gel-foundations/spacings';
