@@ -49,17 +49,4 @@ describe('PlayButton', () => {
       type="audio"
     />,
   );
-
-  shouldMatchSnapshot(
-    'should render video correctly with duration and guidance message',
-    <PlayButton
-      service="news"
-      title="Dog chases cat."
-      onClick={() => {}}
-      duration="2:30"
-      durationSpoken="2 minutes 30 seconds"
-      datetime="PT2M30S"
-      guidanceMessage="Guidance: May contain strong language that may offend."
-    />,
-  );
 });

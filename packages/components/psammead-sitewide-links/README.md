@@ -19,7 +19,6 @@ npm install @bbc/psammead-sitewide-links --save
 | copyrightText | Node                | Yes      | N/A     | `<span>@ BBC News</span>`                            |
 | externalLink  | Link object           | Yes      | N/A     | `{href:'https://www.bbc.com', text: 'The BBC'}`   |
 | service | String | Yes | N/A | `'news'` |
-| trustProjectLink | Link object | No | null | `{href:'https://www.bbc.co.uk/news', text: 'Why you can trust the bbc'}` |
 
 ## Usage
 

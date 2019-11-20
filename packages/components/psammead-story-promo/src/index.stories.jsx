@@ -21,10 +21,10 @@ const buildImg = () => (
   />
 );
 
-const MediaIndicatorComponent = (type, service, displayImage) => {
+const MediaIndicatorComponent = (type, service) => {
   return (
     <MediaIndicator
-      duration={displayImage && type !== 'photogallery' && '2:15'}
+      duration={type !== 'photogallery' && '2:15'}
       datetime="PT2M15S"
       service={service}
       type={type}
@@ -65,15 +65,9 @@ const InfoComponent = ({
   dir,
   type,
   alsoItems,
-  promoHasImage,
 }) => (
   <>
-    <Headline
-      script={script}
-      topStory={topStory}
-      service={service}
-      promoHasImage={promoHasImage}
-    >
+    <Headline script={script} topStory={topStory} service={service}>
       <Link href="https://www.bbc.co.uk/news">
         {isLive ? (
           <LiveComponent service={service} dir={dir} headline={headlineText} />
@@ -82,12 +76,7 @@ const InfoComponent = ({
         )}
       </Link>
     </Headline>
-    <Summary
-      script={script}
-      topStory={topStory}
-      service={service}
-      promoHasImage={promoHasImage}
-    >
+    <Summary script={script} topStory={topStory} service={service}>
       {summaryText}
     </Summary>
     {topStory && alsoItems && (
@@ -101,11 +90,12 @@ const InfoComponent = ({
   </>
 );
 
-const generateStory = ({
-  topStory,
-  alsoItems = null,
-  displayImage = true,
-}) => ({ text: textSnippet, script, service, dir }) => {
+const generateStory = ({ topStory, alsoItems = null }) => ({
+  text: textSnippet,
+  script,
+  service,
+  dir,
+}) => {
   const mediaType = select(
     'Media Type',
     ['No media', 'video', 'audio', 'photogallery'],
@@ -123,7 +113,6 @@ const generateStory = ({
       dir={dir}
       type={mediaType}
       alsoItems={alsoItems}
-      promoHasImage={displayImage}
     />
   );
 
@@ -133,10 +122,8 @@ const generateStory = ({
     <StoryPromo
       image={Img}
       info={Info}
-      displayImage={displayImage}
       mediaIndicator={
-        mediaType !== 'No media' &&
-        MediaIndicatorComponent(mediaType, service, displayImage)
+        mediaType !== 'No media' && MediaIndicatorComponent(mediaType, service)
       }
       topStory={topStory}
     />
@@ -169,8 +156,4 @@ storiesOf('Components|StoryPromo/StoryPromo', module)
       notes,
       knobs: { escapeHTML: false },
     },
-  )
-  .add('No image', generateStory({ topStory: false, displayImage: false }), {
-    notes,
-    knobs: { escapeHTML: false },
-  });
+  );

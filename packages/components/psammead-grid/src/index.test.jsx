@@ -1,7 +1,7 @@
 import React from 'react';
 import { shouldMatchSnapshot } from '@bbc/psammead-test-helpers';
 import Grid from '.';
-import { ExampleParagraph, ExampleFigure, ExampleImage } from './testHelpers';
+import { ExampleParagraph, ExampleFigure } from './testHelpers';
 
 describe('Grid component', () => {
   shouldMatchSnapshot(
@@ -249,52 +249,6 @@ describe('Grid component', () => {
           <ExampleParagraph identifier={num} />
         </Grid>
       ))}
-    </Grid>,
-  );
-  shouldMatchSnapshot(
-    'should render Grid with enableGelGutters, enableGelMargins & a nested one with enableNegativeGelMargins',
-    <Grid
-      columns={{
-        group0: 6,
-        group1: 6,
-        group2: 6,
-        group3: 6,
-        group4: 8,
-        group5: 8,
-      }}
-      enableGelMargins
-    >
-      <Grid
-        item
-        columns={{
-          group0: 6,
-          group1: 6,
-          group2: 6,
-          group3: 6,
-          group4: 6,
-          group5: 6,
-        }}
-        enableNegativeGelMargins
-      >
-        <ExampleImage />
-      </Grid>
-      <Grid
-        item
-        columns={{
-          group0: 6,
-          group1: 6,
-          group2: 6,
-          group3: 6,
-          group4: 6,
-          group5: 6,
-        }}
-      >
-        <p>
-          Image & Paragraph - groups 0-3 span 6/6 columns, groups 4+ span 6/8
-          columns. Outer Grid has enableGelMargins & Image Grid has
-          enableNegativeGelMargins
-        </p>
-      </Grid>
     </Grid>,
   );
 });

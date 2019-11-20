@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Navigation should render correctly 1`] = `
-.c10 {
+.c11 {
   -webkit-clip-path: inset(100%);
   clip-path: inset(100%);
   -webkit-clip: rect(1px,1px,1px,1px);
@@ -23,7 +23,40 @@ exports[`Navigation should render correctly 1`] = `
   display: flex;
 }
 
-.c5 {
+.c2 {
+  position: absolute;
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  -webkit-clip: rect(1px,1px,1px,1px);
+  clip: rect(1px,1px,1px,1px);
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  padding: 0.75rem 0.5rem;
+  background-color: #ffffff;
+  border: 0.1875rem solid #000;
+  color: #333;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  font-size: 0.9375rem;
+  line-height: 1.25rem;
+  font-family: ReithSans,Helvetica,Arial,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.c2:focus {
+  -webkit-clip-path: none;
+  clip-path: none;
+  -webkit-clip: auto;
+  clip: auto;
+  height: auto;
+  width: auto;
+  top: -3rem;
+  left: 0.5rem;
+}
+
+.c6 {
   list-style-type: none;
   padding: 0;
   margin: 0;
@@ -39,11 +72,11 @@ exports[`Navigation should render correctly 1`] = `
   -webkit-overflow-scrolling: touch;
 }
 
-.c5::-webkit-scrollbar {
+.c6::-webkit-scrollbar {
   display: none;
 }
 
-.c14 {
+.c15 {
   list-style-type: none;
   padding: 0;
   margin: 0;
@@ -53,19 +86,19 @@ exports[`Navigation should render correctly 1`] = `
   grid-template-columns: repeat(3,1fr);
 }
 
-.c7 {
+.c8 {
   display: inline-block;
   position: relative;
   z-index: 2;
 }
 
-.c15 {
+.c16 {
   display: block;
   position: relative;
   z-index: 2;
 }
 
-.c3 {
+.c4 {
   font-size: 0.9375rem;
   line-height: 1.25rem;
   font-family: ReithSans,Helvetica,Arial,sans-serif;
@@ -80,7 +113,7 @@ exports[`Navigation should render correctly 1`] = `
   white-space: nowrap;
 }
 
-.c3:hover::after {
+.c4:hover::after {
   content: '';
   position: absolute;
   left: 0;
@@ -89,7 +122,7 @@ exports[`Navigation should render correctly 1`] = `
   border-bottom: 0.25rem solid #FFFFFF;
 }
 
-.c3:focus::after {
+.c4:focus::after {
   content: '';
   position: absolute;
   left: 0;
@@ -100,7 +133,7 @@ exports[`Navigation should render correctly 1`] = `
   border: 0.25rem solid #FFFFFF;
 }
 
-.c8 {
+.c9 {
   font-size: 0.9375rem;
   line-height: 1.25rem;
   font-family: ReithSans,Helvetica,Arial,sans-serif;
@@ -115,7 +148,7 @@ exports[`Navigation should render correctly 1`] = `
   white-space: nowrap;
 }
 
-.c8:hover::after {
+.c9:hover::after {
   content: '';
   position: absolute;
   left: 0;
@@ -125,7 +158,7 @@ exports[`Navigation should render correctly 1`] = `
   border-bottom: 0.3125rem solid #FFFFFF;
 }
 
-.c8:focus::after {
+.c9:focus::after {
   content: '';
   position: absolute;
   left: 0;
@@ -136,7 +169,7 @@ exports[`Navigation should render correctly 1`] = `
   border: 0.25rem solid #FFFFFF;
 }
 
-.c11 {
+.c12 {
   color: #FDFDFD;
   cursor: pointer;
   -webkit-text-decoration: none;
@@ -146,7 +179,7 @@ exports[`Navigation should render correctly 1`] = `
   white-space: nowrap;
 }
 
-.c11:hover::after {
+.c12:hover::after {
   content: '';
   position: absolute;
   left: 0;
@@ -155,43 +188,7 @@ exports[`Navigation should render correctly 1`] = `
   border-bottom: 0.25rem solid #FFFFFF;
 }
 
-.c11:focus::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  border-bottom: 0.25rem solid #FFFFFF;
-  top: 0;
-  border: 0.25rem solid #FFFFFF;
-}
-
-.c16 {
-  font-size: 0.9375rem;
-  line-height: 1.25rem;
-  font-family: ReithSans,Helvetica,Arial,sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  color: #FDFDFD;
-  cursor: pointer;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  display: inline-block;
-  padding: 0.75rem 1rem;
-  width: 100%;
-}
-
-.c16:hover::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  border-bottom: 0.25rem solid #FFFFFF;
-  border-bottom: 0.3125rem solid #FFFFFF;
-}
-
-.c16:focus::after {
+.c12:focus::after {
   content: '';
   position: absolute;
   left: 0;
@@ -224,6 +221,7 @@ exports[`Navigation should render correctly 1`] = `
   right: 0;
   bottom: 0;
   border-bottom: 0.25rem solid #FFFFFF;
+  border-bottom: 0.3125rem solid #FFFFFF;
 }
 
 .c17:focus::after {
@@ -237,7 +235,42 @@ exports[`Navigation should render correctly 1`] = `
   border: 0.25rem solid #FFFFFF;
 }
 
-.c9::after {
+.c18 {
+  font-size: 0.9375rem;
+  line-height: 1.25rem;
+  font-family: ReithSans,Helvetica,Arial,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #FDFDFD;
+  cursor: pointer;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  display: inline-block;
+  padding: 0.75rem 1rem;
+  width: 100%;
+}
+
+.c18:hover::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-bottom: 0.25rem solid #FFFFFF;
+}
+
+.c18:focus::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-bottom: 0.25rem solid #FFFFFF;
+  top: 0;
+  border: 0.25rem solid #FFFFFF;
+}
+
+.c10::after {
   content: '';
   position: absolute;
   left: 0;
@@ -248,15 +281,14 @@ exports[`Navigation should render correctly 1`] = `
 
 .c0 {
   background-color: #B80000;
-  border-top: 0.0625rem solid #FFFFFF;
   position: relative;
 }
 
-.c0 .c6::after {
+.c0 .c7::after {
   left: 0;
 }
 
-.c13 {
+.c14 {
   max-width: 80rem;
   overflow: auto;
   background-color: #222222;
@@ -272,48 +304,48 @@ exports[`Navigation should render correctly 1`] = `
   transition: height 500ms ease-out;
 }
 
-.c13.menu-animation-enter {
+.c14.menu-animation-enter {
   height: 0;
 }
 
-.c13.menu-animation-enter-active {
+.c14.menu-animation-enter-active {
   height: 100vh;
 }
 
-.c13.menu-animation-enter-done {
+.c14.menu-animation-enter-done {
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
 }
 
-.c13.menu-animation-exit {
+.c14.menu-animation-exit {
   height: 100vh;
 }
 
-.c13.menu-animation-exit-active {
+.c14.menu-animation-exit-active {
   height: 0;
 }
 
-.c13.menu-animation-exit-done {
+.c14.menu-animation-exit-done {
   height: 0;
 }
 
-.c13::-webkit-scrollbar {
+.c14::-webkit-scrollbar {
   width: 6px;
   margin-right: 2px;
 }
 
-.c13::-webkit-scrollbar-thumb {
+.c14::-webkit-scrollbar-thumb {
   border-radius: 4px;
   background: #757575;
 }
 
-.c2 {
+.c3 {
   position: relative;
   background-color: #B80000;
 }
 
-.c12 {
+.c13 {
   width: 2rem;
   height: 100%;
   z-index: 3;
@@ -326,37 +358,63 @@ exports[`Navigation should render correctly 1`] = `
   pointer-events: none;
 }
 
-.c4 {
+.c5 {
   display: inline-block;
 }
 
+@media (min-width:20rem) and (max-width:37.4375rem) {
+  .c2 {
+    font-size: 1rem;
+    line-height: 1.25rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .c2 {
+    font-size: 1rem;
+    line-height: 1.25rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .c2:focus {
+    top: -4rem;
+  }
+}
+
 @media (min-width:80rem) {
-  .c5 {
+  .c2:focus {
+    left: 0;
+  }
+}
+
+@media (min-width:80rem) {
+  .c6 {
     overflow-x: hidden;
     white-space: normal;
   }
 }
 
 @media (min-width:37.5rem) {
-  .c14 {
+  .c15 {
     grid-template-columns: repeat(4,1fr);
   }
 }
 
 @media (min-width:80rem) {
-  .c14 {
+  .c15 {
     grid-template-columns: repeat(5,1fr);
   }
 }
 
 @media (max-width:24.9375rem) {
-  .c14 {
+  .c15 {
     grid-template-columns: repeat(1,1fr);
   }
 }
 
 @media (min-width:80rem) {
-  .c7::after {
+  .c8::after {
     content: '';
     position: absolute;
     bottom: 0;
@@ -367,7 +425,7 @@ exports[`Navigation should render correctly 1`] = `
 }
 
 @media (min-width:80rem) {
-  .c15::after {
+  .c16::after {
     content: '';
     position: absolute;
     bottom: 0;
@@ -378,68 +436,48 @@ exports[`Navigation should render correctly 1`] = `
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
-  .c3 {
+  .c4 {
     font-size: 1rem;
     line-height: 1.25rem;
   }
 }
 
 @media (min-width:37.5rem) {
-  .c3 {
+  .c4 {
     font-size: 1rem;
     line-height: 1.25rem;
   }
 }
 
 @media (max-width:24.9375rem) {
-  .c3 {
+  .c4 {
     padding: 0.75rem 0.5rem;
   }
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
-  .c8 {
+  .c9 {
     font-size: 1rem;
     line-height: 1.25rem;
   }
 }
 
 @media (min-width:37.5rem) {
-  .c8 {
+  .c9 {
     font-size: 1rem;
     line-height: 1.25rem;
   }
 }
 
 @media (max-width:24.9375rem) {
-  .c8 {
+  .c9 {
     padding: 0.75rem 0.5rem;
   }
 }
 
 @media (max-width:24.9375rem) {
-  .c11 {
+  .c12 {
     padding: 0.75rem 0.5rem;
-  }
-}
-
-@media (min-width:20rem) and (max-width:37.4375rem) {
-  .c16 {
-    font-size: 1rem;
-    line-height: 1.25rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c16 {
-    font-size: 1rem;
-    line-height: 1.25rem;
-  }
-}
-
-@media (max-width:24.9375rem) {
-  .c16 {
-    padding: 0.5rem 0.5rem;
   }
 }
 
@@ -463,20 +501,40 @@ exports[`Navigation should render correctly 1`] = `
   }
 }
 
+@media (min-width:20rem) and (max-width:37.4375rem) {
+  .c18 {
+    font-size: 1rem;
+    line-height: 1.25rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .c18 {
+    font-size: 1rem;
+    line-height: 1.25rem;
+  }
+}
+
+@media (max-width:24.9375rem) {
+  .c18 {
+    padding: 0.5rem 0.5rem;
+  }
+}
+
 @media (min-width:80rem) {
-  .c2 {
+  .c3 {
     display: none;
   }
 }
 
 @media (min-width:24.9375rem) {
-  .c12 {
+  .c13 {
     width: 4rem;
   }
 }
 
 @media (min-width:80rem) {
-  .c12 {
+  .c13 {
     display: none;
   }
 }
@@ -490,8 +548,14 @@ exports[`Navigation should render correctly 1`] = `
     <div
       class="c1"
     >
-      <div
+      <a
         class="c2"
+        href="#content"
+      >
+        Wụga n’ọdịnaya
+      </a>
+      <div
+        class="c3"
       >
         <button
           on="tap:menu.toggleVisibility,menu_hider.toggleVisibility"
@@ -499,10 +563,10 @@ exports[`Navigation should render correctly 1`] = `
           type="button"
         >
           <a
-            class="c3"
+            class="c4"
           >
             <span
-              class="c4"
+              class="c5"
             >
               ☰
             </span>
@@ -510,24 +574,24 @@ exports[`Navigation should render correctly 1`] = `
         </button>
       </div>
       <ul
-        class="c5"
+        class="c6"
         role="list"
       >
         <li
-          class="c6 c7"
+          class="c7 c8"
           role="listitem"
         >
           <a
-            class="c8"
+            class="c9"
             data-navigation="test_navigation"
             href="/igbo"
           >
             <span
-              class="c9"
+              class="c10"
               role="text"
             >
               <span
-                class="c10"
+                class="c11"
               >
                 Current page
                 , 
@@ -537,11 +601,11 @@ exports[`Navigation should render correctly 1`] = `
           </a>
         </li>
         <li
-          class="c6 c7"
+          class="c7 c8"
           role="listitem"
         >
           <a
-            class="c3"
+            class="c4"
             data-navigation="test_navigation"
             href="/igbo/egwuregwu"
           >
@@ -549,11 +613,11 @@ exports[`Navigation should render correctly 1`] = `
           </a>
         </li>
         <li
-          class="c6 c7"
+          class="c7 c8"
           role="listitem"
         >
           <a
-            class="c3"
+            class="c4"
             data-navigation="test_navigation"
             href="/igbo/media/video"
           >
@@ -561,11 +625,11 @@ exports[`Navigation should render correctly 1`] = `
           </a>
         </li>
         <li
-          class="c6 c7"
+          class="c7 c8"
           role="listitem"
         >
           <a
-            class="c3"
+            class="c4"
             data-navigation="test_navigation"
             href="/igbo/popular/read"
           >
@@ -573,7 +637,7 @@ exports[`Navigation should render correctly 1`] = `
           </a>
         </li>
         <a
-          class="c11"
+          class="c12"
         >
           <div
             style="width: 1rem; height: 1px;"
@@ -581,38 +645,38 @@ exports[`Navigation should render correctly 1`] = `
         </a>
       </ul>
       <div
-        class="c12"
+        class="c13"
         dir="ltr"
       />
     </div>
   </nav>
   <menu
     aria-hidden="true"
-    class="c13"
+    class="c14"
     dir="ltr"
     id="menu"
     tabindex="-1"
   >
     <ul
-      class="c14"
+      class="c15"
       role="list"
     >
       <li
-        class="c6 c15"
+        class="c7 c16"
         role="listitem"
         tabindex="-1"
       >
         <a
-          class="c16"
+          class="c17"
           data-navigation="test_navigation"
           href="/igbo"
         >
           <span
-            class="c9"
+            class="c10"
             role="text"
           >
             <span
-              class="c10"
+              class="c11"
             >
               Current page
               , 
@@ -622,12 +686,12 @@ exports[`Navigation should render correctly 1`] = `
         </a>
       </li>
       <li
-        class="c6 c15"
+        class="c7 c16"
         role="listitem"
         tabindex="-1"
       >
         <a
-          class="c17"
+          class="c18"
           data-navigation="test_navigation"
           href="/igbo/egwuregwu"
           tabindex="-1"
@@ -636,12 +700,12 @@ exports[`Navigation should render correctly 1`] = `
         </a>
       </li>
       <li
-        class="c6 c15"
+        class="c7 c16"
         role="listitem"
         tabindex="-1"
       >
         <a
-          class="c17"
+          class="c18"
           data-navigation="test_navigation"
           href="/igbo/media/video"
           tabindex="-1"
@@ -650,12 +714,12 @@ exports[`Navigation should render correctly 1`] = `
         </a>
       </li>
       <li
-        class="c6 c15"
+        class="c7 c16"
         role="listitem"
         tabindex="-1"
       >
         <a
-          class="c17"
+          class="c18"
           data-navigation="test_navigation"
           href="/igbo/popular/read"
           tabindex="-1"

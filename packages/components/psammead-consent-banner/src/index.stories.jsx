@@ -1,10 +1,7 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { withKnobs } from '@storybook/addon-knobs';
-import {
-  withServicesKnob,
-  buildRTLSubstories,
-} from '@bbc/psammead-storybook-helpers';
+import { withServicesKnob } from '@bbc/psammead-storybook-helpers';
 import { oneOf, string } from 'prop-types';
 import { ConsentBanner, ConsentBannerText } from '.';
 import notes from '../README.md';
@@ -26,7 +23,6 @@ const Text = ({ dir, script, service, shortText, text }) => (
   </ConsentBannerText>
 );
 
-const STORY_KIND = 'Components|ConsentBanner';
 const BANNER_TEXT = 'Changes to our Privacy and Cookie Policy ';
 
 Text.propTypes = {
@@ -41,7 +37,7 @@ Text.defaultProps = {
   dir: 'ltr',
 };
 
-storiesOf(STORY_KIND, module)
+storiesOf('Components|ConsentBanner', module)
   .addDecorator(withKnobs)
   .addDecorator(withServicesKnob())
   .add(
@@ -70,5 +66,3 @@ storiesOf(STORY_KIND, module)
     },
     { notes, knobs: { escapeHTML: false } },
   );
-
-buildRTLSubstories(STORY_KIND, { include: ['default'] });

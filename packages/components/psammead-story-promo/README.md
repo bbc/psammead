@@ -25,27 +25,22 @@ The `StoryPromo` component is designed to be used on 'index' pages, which are pa
 | info     | node   | Yes      | N/A     | `<h2>Title</h2>` |
 | mediaIndicator     | node   | No      | null     | `<MediaIndicator duration="2:15" datetime="PT2M15S" offscreenText="Video 2 minutes 15 seconds" />` |
 | topStory | boolean | No      | false   | true          |
-| displayImage | boolean | No      | true   | false      |
 
 ## Headline Props
 
 <!-- prettier-ignore -->
 | Argument  | Type | Required | Default | Example |
 | --------- | ---- | -------- | ------- | ------- |
-| Script    | object | yes | latin | `{ canon: { groupA: { fontSize: '28', lineHeight: '32',}, groupB: { fontSize: '32', lineHeight: '36', }, groupD: { fontSize: '44', lineHeight: '48', }, }, trafalgar: { groupA: { fontSize: '20', lineHeight: '24', }, groupB: { fontSize: '24', lineHeight: '28', }, groupD: { fontSize: '32', lineHeight: '36', }, }, }` |
+| Script    | object | yes | latin | { canon: { groupA: { fontSize: '28', lineHeight: '32',}, groupB: { fontSize: '32', lineHeight: '36', }, groupD: { fontSize: '44', lineHeight: '48', }, }, trafalgar: { groupA: { fontSize: '20', lineHeight: '24', }, groupB: { fontSize: '24', lineHeight: '28', }, groupD: { fontSize: '32', lineHeight: '36', }, }, }|
 | service | string | yes | N/A | `'news'` |
-| promoHasImage | bool | no | true | `false` |
-| topStory | bool | no | false | `true` |
 
 ## Summary Props
 
 <!-- prettier-ignore -->
 | Argument  | Type | Required | Default | Example |
 | --------- | ---- | -------- | ------- | ------- |
-| Script    | object | yes | latin | `{ canon: { groupA: { fontSize: '28', lineHeight: '32',}, groupB: { fontSize: '32', lineHeight: '36', }, groupD: { fontSize: '44', lineHeight: '48', }, }, trafalgar: { groupA: { fontSize: '20', lineHeight: '24', }, groupB: { fontSize: '24', lineHeight: '28', }, groupD: { fontSize: '32', lineHeight: '36', }, }, }` |
+| Script    | object | yes | latin | { canon: { groupA: { fontSize: '28', lineHeight: '32',}, groupB: { fontSize: '32', lineHeight: '36', }, groupD: { fontSize: '44', lineHeight: '48', }, }, trafalgar: { groupA: { fontSize: '20', lineHeight: '24', }, groupB: { fontSize: '24', lineHeight: '28', }, groupD: { fontSize: '32', lineHeight: '36', }, }, }|
 | service | string | yes | N/A | `'news'` |
-| promoHasImage | bool | no | true | `false` |
-| topStory | bool | no | false | `true` |
 
 ## LiveLabel
 

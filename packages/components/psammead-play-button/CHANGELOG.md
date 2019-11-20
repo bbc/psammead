@@ -3,13 +3,6 @@
 <!-- prettier-ignore -->
 | Version | Description |
 | ------------- | ----------- |
-| 1.1.0 | [PR#2627](https://github.com/bbc/psammead/issues/2627) Add `guidanceMessage` prop |
-| 1.0.3 | [PR#2647](https://github.com/bbc/psammead/pull/2647) Talos - Bump Dependencies - @bbc/psammead-assets |
-| 1.0.2 | [PR#2645](https://github.com/bbc/psammead/pull/2645) Talos - Bump Dependencies - @bbc/psammead-assets |
-| 1.0.1 | [PR#2615](https://github.com/bbc/psammead/pull/2615) Talos - Bump Dependencies - @bbc/psammead-assets |
-| 1.0.0 | [PR#2522](https://github.com/bbc/psammead/issues/2522) Remove alpha tag. |
-| 1.0.0-alpha.10 | [PR#2533](https://github.com/bbc/psammead/pull/2533) Talos - Bump Dependencies - @bbc/psammead-assets |
-| 1.0.0-alpha.9 | [PR#2519](https://github.com/bbc/psammead/pull/2519) Talos - Bump Dependencies - @bbc/psammead-styles |
 | 1.0.0-alpha.8 | [PR#2488](https://github.com/bbc/psammead/pull/2488) Talos - Bump Dependencies - @bbc/gel-foundations |
 | 1.0.0-alpha.7 | [PR#2486](https://github.com/bbc/psammead/pull/2486) Talos - Bump Dependencies - @bbc/psammead-assets |
 | 1.0.0-alpha.6 | [PR#2477](https://github.com/bbc/psammead/pull/2477) Talos - Bump Dependencies - @bbc/psammead-styles |

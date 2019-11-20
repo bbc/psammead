@@ -22,6 +22,7 @@ describe('Media Player: Placeholder', () => {
       src="http://foo.bar/placeholder.png"
       service="news"
       mediaInfo={{ title: 'Dog chases cat.', ...withDuration }}
+      className="foo"
     />,
   );
 
@@ -32,6 +33,7 @@ describe('Media Player: Placeholder', () => {
       src="http://foo.bar/placeholder.png"
       service="news"
       mediaInfo={{ title: 'Dog chases cat.' }}
+      className="foo"
     />,
   );
 
@@ -42,6 +44,7 @@ describe('Media Player: Placeholder', () => {
       src="http://foo.bar/placeholder.png"
       service="news"
       mediaInfo={{ type: 'audio', title: 'Dog barks at cat.', ...withDuration }}
+      className="foo"
     />,
   );
 
@@ -52,6 +55,7 @@ describe('Media Player: Placeholder', () => {
       src="http://foo.bar/placeholder.png"
       service="news"
       mediaInfo={{ type: 'audio', title: 'Dog barks at cat.' }}
+      className="foo"
     />,
   );
 
@@ -62,25 +66,11 @@ describe('Media Player: Placeholder', () => {
         src="http://foo.bar/placeholder.png"
         service="news"
         mediaInfo={{ title: 'Dog chases cat.', ...withDuration }}
+        className="foo"
       />,
     );
     fireEvent.click(container.firstChild);
     fireEvent.click(getByText(container.firstChild, '2:30'));
     expect(mockOnClick).toHaveBeenCalledTimes(2);
   });
-
-  shouldMatchSnapshot(
-    'should render a video placeholder with guidance',
-    <Placeholder
-      onClick={mockOnClick}
-      src="http://foo.bar/placeholder.png"
-      service="news"
-      mediaInfo={{
-        title: 'Dog chases cat.',
-        guidanceMessage:
-          'Guidance: May contain strong language, sexual or violent content that may offend.',
-        ...withDuration,
-      }}
-    />,
-  );
 });

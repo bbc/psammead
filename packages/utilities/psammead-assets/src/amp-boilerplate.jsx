@@ -7,26 +7,11 @@ export const AMP_SCRIPT = `body{-webkit-animation:-amp-start 8s steps(1,end) 0s 
 export const AMP_NO_SCRIPT = `body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}`;
 
 export const AMP_JS = <script async src="https://cdn.ampproject.org/v0.js" />;
-
-export const AMP_ACCESS_JS = (
+export const AMP_GEO_JS = (
   <script
     async
-    custom-element="amp-access"
-    src="https://cdn.ampproject.org/v0/amp-access-0.1.js"
-  />
-);
-export const AMP_ANALYTICS_JS = (
-  <script
-    async
-    custom-element="amp-analytics"
-    src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"
-  />
-);
-export const AMP_BIND_JS = (
-  <script
-    async
-    custom-element="amp-bind"
-    src="https://cdn.ampproject.org/v0/amp-bind-0.1.js"
+    custom-element="amp-geo"
+    src="https://cdn.ampproject.org/v0/amp-geo-0.1.js"
   />
 );
 export const AMP_CONSENT_JS = (
@@ -36,24 +21,10 @@ export const AMP_CONSENT_JS = (
     src="https://cdn.ampproject.org/v0/amp-consent-0.1.js"
   />
 );
-export const AMP_GEO_JS = (
+export const AMP_ANALYTICS_JS = (
   <script
     async
-    custom-element="amp-geo"
-    src="https://cdn.ampproject.org/v0/amp-geo-0.1.js"
-  />
-);
-export const AMP_LIST_JS = (
-  <script
-    async
-    custom-element="amp-list"
-    src="https://cdn.ampproject.org/v0/amp-list-0.1.js"
-  />
-);
-export const AMP_MUSTACHE_JS = (
-  <script
-    async
-    custom-template="amp-mustache"
-    src="https://cdn.ampproject.org/v0/amp-mustache-0.2.js"
+    custom-element="amp-analytics"
+    src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"
   />
 );

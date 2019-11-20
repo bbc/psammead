@@ -3,39 +3,6 @@ const { candyXmlToRichText } = require('../src/index');
 const createBody = inner =>
   `<body xmlns="http://www.bbc.co.uk/asset" xml:space="preserve" xml:base="http://www.bbc.co.uk/article/abc123">${inner}</body>`;
 
-const testLink = ({ url, isExternal }) => {
-  const output = candyXmlToRichText(
-    createBody(`<link><caption>foo</caption><url href="${url}"/></link>`),
-  );
-
-  const expectation = {
-    type: 'text',
-    model: {
-      blocks: [
-        {
-          type: 'urlLink',
-          model: {
-            text: 'foo',
-            locator: url,
-            isExternal,
-            blocks: [
-              {
-                type: 'fragment',
-                model: {
-                  text: 'foo',
-                  attributes: [],
-                },
-              },
-            ],
-          },
-        },
-      ],
-    },
-  };
-
-  return [output, expectation];
-};
-
 test('can parse XML with a paragraph', () => {
   const richText = candyXmlToRichText(
     createBody('<paragraph>One two three four!</paragraph>'),
@@ -66,57 +33,168 @@ test('can parse XML with a paragraph', () => {
 });
 
 test('can parse XML with a link', () => {
-  const [actualOutput, expectedOutput] = testLink({
-    url: 'https://example.com/foo',
-    isExternal: true,
-  });
+  const richText = candyXmlToRichText(
+    createBody(
+      '<link><caption>foo</caption><url href="https://example.com/foo"/></link>',
+    ),
+  );
 
-  expect(actualOutput).toEqual(expectedOutput);
+  expect(richText).toEqual({
+    type: 'text',
+    model: {
+      blocks: [
+        {
+          type: 'urlLink',
+          model: {
+            text: 'foo',
+            locator: 'https://example.com/foo',
+            isExternal: true,
+            blocks: [
+              {
+                type: 'fragment',
+                model: {
+                  text: 'foo',
+                  attributes: [],
+                },
+              },
+            ],
+          },
+        },
+      ],
+    },
+  });
 });
 
 test('can return a link with "isExternal: false" for "www.bbc.com"', () => {
-  const [actualOutput, expectedOutput] = testLink({
-    url: 'https://www.bbc.com/foo',
-    isExternal: false,
-  });
+  const richText = candyXmlToRichText(
+    createBody(
+      '<link><caption>foo</caption><url href="https://www.bbc.com/foo"/></link>',
+    ),
+  );
 
-  expect(actualOutput).toEqual(expectedOutput);
+  expect(richText).toEqual({
+    type: 'text',
+    model: {
+      blocks: [
+        {
+          type: 'urlLink',
+          model: {
+            text: 'foo',
+            locator: 'https://www.bbc.com/foo',
+            isExternal: false,
+            blocks: [
+              {
+                type: 'fragment',
+                model: {
+                  text: 'foo',
+                  attributes: [],
+                },
+              },
+            ],
+          },
+        },
+      ],
+    },
+  });
 });
 
 test('can return a link with "isExternal: false" for "www.bbc.in"', () => {
-  const [actualOutput, expectedOutput] = testLink({
-    url: 'https://www.bbc.in/foo',
-    isExternal: false,
-  });
+  const richText = candyXmlToRichText(
+    createBody(
+      '<link><caption>foo</caption><url href="https://www.bbc.in/foo"/></link>',
+    ),
+  );
 
-  expect(actualOutput).toEqual(expectedOutput);
+  expect(richText).toEqual({
+    type: 'text',
+    model: {
+      blocks: [
+        {
+          type: 'urlLink',
+          model: {
+            text: 'foo',
+            locator: 'https://www.bbc.in/foo',
+            isExternal: false,
+            blocks: [
+              {
+                type: 'fragment',
+                model: {
+                  text: 'foo',
+                  attributes: [],
+                },
+              },
+            ],
+          },
+        },
+      ],
+    },
+  });
 });
 
 test('can return a link with "isExternal: false" for "www.bbc.co.uk"', () => {
-  const [actualOutput, expectedOutput] = testLink({
-    url: 'https://www.bbc.co.uk/foo',
-    isExternal: false,
-  });
+  const richText = candyXmlToRichText(
+    createBody(
+      '<link><caption>foo</caption><url href="https://www.bbc.co.uk/foo"/></link>',
+    ),
+  );
 
-  expect(actualOutput).toEqual(expectedOutput);
+  expect(richText).toEqual({
+    type: 'text',
+    model: {
+      blocks: [
+        {
+          type: 'urlLink',
+          model: {
+            text: 'foo',
+            locator: 'https://www.bbc.co.uk/foo',
+            isExternal: false,
+            blocks: [
+              {
+                type: 'fragment',
+                model: {
+                  text: 'foo',
+                  attributes: [],
+                },
+              },
+            ],
+          },
+        },
+      ],
+    },
+  });
 });
 
 test('can return a link with "isExternal: false" for "www.test.bbc.com"', () => {
-  const [actualOutput, expectedOutput] = testLink({
-    url: 'https://www.test.bbc.com/foo',
-    isExternal: false,
+  const richText = candyXmlToRichText(
+    createBody(
+      '<link><caption>foo</caption><url href="https://www.test.bbc.com/foo"/></link>',
+    ),
+  );
+
+  expect(richText).toEqual({
+    type: 'text',
+    model: {
+      blocks: [
+        {
+          type: 'urlLink',
+          model: {
+            text: 'foo',
+            locator: 'https://www.test.bbc.com/foo',
+            isExternal: false,
+            blocks: [
+              {
+                type: 'fragment',
+                model: {
+                  text: 'foo',
+                  attributes: [],
+                },
+              },
+            ],
+          },
+        },
+      ],
+    },
   });
-
-  expect(actualOutput).toEqual(expectedOutput);
-});
-
-test('can return a link with "isExternal: false" for "bbc.com"', () => {
-  const [actualOutput, expectedOutput] = testLink({
-    url: 'https://bbc.com',
-    isExternal: false,
-  });
-
-  expect(actualOutput).toEqual(expectedOutput);
 });
 
 test('returns a plain text representation of the data', () => {

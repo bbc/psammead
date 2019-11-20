@@ -82,7 +82,7 @@ npm run build
 
 ### :computer: Developing with Psammead
 <!-- This is both how to develop in psammead and how to use psammead and why is this in the components not packages readme? -->
-[Learn how to use Psammead components in your own project.](https://github.com/bbc/psammead/blob/latest/packages/README.md)
+[Learn how to use Psammead components in your own project.](https://github.com/bbc/psammead/blob/latest/packages/components/README.md)
 
 ## :bar_chart: Support levels
 

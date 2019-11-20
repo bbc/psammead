@@ -1,6 +1,6 @@
 import React from 'react';
 import styled, { css } from 'styled-components';
-import { node, bool, string, oneOf, shape } from 'prop-types';
+import { node, bool, string, oneOf } from 'prop-types';
 import {
   GEL_SPACING,
   GEL_SPACING_DBL,
@@ -32,23 +32,24 @@ import {
   getSansBold,
   getSerifMedium,
 } from '@bbc/psammead-styles/font-styles';
-import { scriptPropType } from '@bbc/gel-foundations/prop-types';
 import { grid } from '@bbc/psammead-styles/detection';
 
 const twoOfSixColumnsMaxWidthScaleable = `33.33%`;
 // (2 / 6) * 100 = 0.3333333333 = 33.33%
 
+const fourOfTwelveColumnsMaxWidthScaleable = `33.33%`;
+// (4 / 12) * 100 = 0.3333333333 = 33.33%
+
 const fourOfSixColumnsMaxWidthScaleable = `66.67%`;
 // (4 / 6) * 100 = 66.6666666667 = 66.67%
+
+const eightOfTwelveColumnsMaxScaleable = `66.67%`;
+// (8 / 12) * 100 = 66.6666666667 = 66.67%
 
 const fullWidthColumnsMaxScaleable = `100%`;
 // (12 / 12) * 100 = 100 = 100%
 
 const halfWidthColumnsMaxScaleable = `50%`;
-
-const gridFallbackImageWidth = css`
-  width: calc(${halfWidthColumnsMaxScaleable} - ${GEL_SPACING});
-`;
 
 const StoryPromoWrapper = styled.div`
   position: relative;
@@ -94,12 +95,12 @@ const ImageGridFallbackTopStory = css`
   width: ${fullWidthColumnsMaxScaleable};
 
   @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
-    ${gridFallbackImageWidth};
+    width: ${halfWidthColumnsMaxScaleable};
     margin-bottom: 0;
   }
 
-  @media (min-width: ${GEL_GROUP_4_SCREEN_WIDTH_MIN}) {
-    ${gridFallbackImageWidth};
+  @media (min-width: ${GEL_GROUP_5_SCREEN_WIDTH_MIN}) {
+    width: ${fourOfTwelveColumnsMaxWidthScaleable};
   }
 `;
 
@@ -163,8 +164,6 @@ const TextGridColumnsTopStory = css`
 const TextGridColumns = css`
   grid-column: 3 / span 4;
 
-  ${({ displayImage }) => !displayImage && `grid-column: 1 / span 6;`}
-
   @media (min-width: ${GEL_GROUP_4_SCREEN_WIDTH_MIN}) {
     padding-top: ${GEL_SPACING};
   }
@@ -176,8 +175,8 @@ const TextGridFallbackTopStory = css`
     padding: 0 ${GEL_SPACING_DBL};
   }
 
-  @media (min-width: ${GEL_GROUP_4_SCREEN_WIDTH_MIN}) {
-    width: ${halfWidthColumnsMaxScaleable};
+  @media (min-width: ${GEL_GROUP_5_SCREEN_WIDTH_MIN}) {
+    width: ${eightOfTwelveColumnsMaxScaleable};
   }
 `;
 
@@ -194,10 +193,6 @@ const TextGridFallback = css`
     width: 100%;
     padding: ${GEL_SPACING} 0;
   }
-
-  ${({ displayImage }) =>
-    !displayImage &&
-    `width: ${fullWidthColumnsMaxScaleable}; >div{ vertical-align: middle; }`}
 `;
 
 const TextGridItem = styled.div`
@@ -213,10 +208,6 @@ const TextGridItem = styled.div`
 
     ${({ topStory }) => (topStory ? TextGridColumnsTopStory : TextGridColumns)}
   }
-
-  ${({ displayImage }) =>
-    !displayImage &&
-    `>div{ display:inline-block; padding: 0; vertical-align:initial; } `}
 `;
 
 // This is needed to get around the issue of IE11 not supporting
@@ -241,30 +232,12 @@ export const Headline = styled.h3`
   color: ${C_EBON};
   margin: 0; /* Reset */
   padding-bottom: ${GEL_SPACING};
-  ${({ promoHasImage }) => !promoHasImage && `display: inline;`}
 
   @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
     ${({ script, topStory }) =>
       script && getHeadlineFontStyle(script, topStory)}
   }
-
-  @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MAX}) {
-    ${({ script, promoHasImage }) =>
-      !promoHasImage && script && getPica(script)}
-  }
 `;
-
-Headline.propTypes = {
-  script: shape(scriptPropType).isRequired,
-  service: string.isRequired,
-  promoHasImage: bool,
-  topStory: bool,
-};
-
-Headline.defaultProps = {
-  promoHasImage: true,
-  topStory: false,
-};
 
 export const Summary = styled.p`
   ${({ script }) => script && getLongPrimer(script)};
@@ -272,8 +245,6 @@ export const Summary = styled.p`
   color: ${C_SHADOW};
   margin: 0; /* Reset */
   padding-bottom: ${GEL_SPACING};
-
-  ${({ promoHasImage }) => !promoHasImage && `padding-top: ${GEL_SPACING};`}
 
   ${({ topStory }) =>
     topStory
@@ -295,18 +266,6 @@ export const Summary = styled.p`
         }
       `}
 `;
-
-Summary.propTypes = {
-  script: shape(scriptPropType).isRequired,
-  service: string.isRequired,
-  promoHasImage: bool,
-  topStory: bool,
-};
-
-Summary.defaultProps = {
-  promoHasImage: true,
-  topStory: false,
-};
 
 export const Link = styled.a`
   position: static;
@@ -352,15 +311,8 @@ LiveLabel.defaultProps = {
   dir: 'ltr',
 };
 
-const StoryPromo = ({
-  image,
-  info,
-  mediaIndicator,
-  topStory,
-  displayImage,
-  ...props
-}) => {
-  const renderImage = displayImage && (
+const StoryPromo = ({ image, info, mediaIndicator, topStory, ...props }) => (
+  <StoryPromoWrapper topStory={topStory} {...props}>
     <ImageGridItem topStory={topStory}>
       <ImageContentsWrapper>
         {image}
@@ -371,31 +323,20 @@ const StoryPromo = ({
         )}
       </ImageContentsWrapper>
     </ImageGridItem>
-  );
-
-  return (
-    <StoryPromoWrapper topStory={topStory} {...props}>
-      {renderImage}
-      <TextGridItem topStory={topStory} displayImage={displayImage}>
-        {!displayImage && mediaIndicator}
-        {info}
-      </TextGridItem>
-    </StoryPromoWrapper>
-  );
-};
+    <TextGridItem topStory={topStory}>{info}</TextGridItem>
+  </StoryPromoWrapper>
+);
 
 StoryPromo.propTypes = {
   image: node.isRequired,
   info: node.isRequired,
   mediaIndicator: node,
   topStory: bool,
-  displayImage: bool,
 };
 
 StoryPromo.defaultProps = {
   mediaIndicator: null,
   topStory: false,
-  displayImage: true,
 };
 
 export default StoryPromo;

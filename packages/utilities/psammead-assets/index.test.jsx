@@ -3,21 +3,15 @@ import { testUtilityPackages } from '@bbc/psammead-test-helpers';
 const ampBoilerplateExpectedExports = {
   AMP_SCRIPT: 'string',
   AMP_NO_SCRIPT: 'string',
-  AMP_ACCESS_JS: 'object',
-  AMP_ANALYTICS_JS: 'object',
-  AMP_BIND_JS: 'object',
-  AMP_CONSENT_JS: 'object',
-  AMP_GEO_JS: 'object',
   AMP_JS: 'object',
-  AMP_LIST_JS: 'object',
-  AMP_MUSTACHE_JS: 'object',
+  AMP_GEO_JS: 'object',
+  AMP_CONSENT_JS: 'object',
+  AMP_ANALYTICS_JS: 'object',
 };
 
 const svgsExpectedExports = {
   BBC_BLOCKS: 'string',
-  coreIcons: 'object',
   mediaIcons: 'object',
-  navigationIcons: 'object',
   afaanoromoo: 'object',
   afrique: 'object',
   amharic: 'object',

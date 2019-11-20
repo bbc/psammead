@@ -63,14 +63,6 @@ exports[`ScriptLink should render correctly 1`] = `
   }
 }
 
-@media (min-width:37.5rem) {
-  .c0 {
-    height: 2.25rem;
-    line-height: 2.25rem;
-    padding: 0 0.625rem;
-  }
-}
-
 <a
   class="c0"
   href="https://www.bbc.co.uk/news"

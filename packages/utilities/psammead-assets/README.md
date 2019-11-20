@@ -35,7 +35,7 @@ This package currently has brand SVGs for the BBC News World Services as well as
 
 The width of your SVG can be calculated using your desired height multiplied by the `ratio` value provided above.
 
-### Usage
+## Usage
 
 ```jsx
 const WrappingContainer = () => (
@@ -43,22 +43,11 @@ const WrappingContainer = () => (
 );
 ```
 
-## Core Icons SVGs
-
-Core icons is an object containing styled SVG icons from GEL Iconography Core. By default Core icons are sized to work well alongside text from the `GEL BodyCopy` typography group.
-
-### Usage
-```jsx
-import { coreIcons } from '@bbc/psammead-assets/svgs';
-
-<p>{coreIcons.info} Did you know, in Switzerland it's illegal to own just one guinea pig?</p>
-```
-
 ## Media Icons SVGs
 
 Media icons is an object containing styled SVG icons for video, audio and photogallery. Media icons are sized to work well alongside specific text with typography group `GEL Minion`. They are used in `psammead-media-indicator` component.
 
-### Usage
+## Usage
 
 ```jsx
 import { mediaIcons } from '@bbc/psammead-assets/svgs';
@@ -66,20 +55,6 @@ import { mediaIcons } from '@bbc/psammead-assets/svgs';
 <span>
   {mediaIcons.audio}
   {duration && datetime && (<time dateTime={datetime}>{duration}</time>)}
-</span>
-```
-
-## Navigation Icons SVGs
-
-Navigation icons is an object containing styled SVG icons for hamburger and cross. They are used in `psammead-navigation` component.
-
-### Usage
-
-```jsx
-import { navigationIcons } from '@bbc/psammead-assets/svgs';
-
-<span>
-  {navigationIcons.cross}
 </span>
 ```
 

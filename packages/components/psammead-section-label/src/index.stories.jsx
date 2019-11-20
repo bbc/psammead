@@ -1,21 +1,11 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { boolean, withKnobs } from '@storybook/addon-knobs';
-import {
-  withServicesKnob,
-  buildRTLSubstories,
-} from '@bbc/psammead-storybook-helpers';
+import { withServicesKnob } from '@bbc/psammead-storybook-helpers';
 import notes from '../README.md';
 import SectionLabel from './index';
 
-const STORY_KIND = 'Components|SectionLabel';
-const selectFirst2Words = text =>
-  text
-    .split(' ')
-    .filter((word, i) => i < 2)
-    .join(' ');
-
-storiesOf(STORY_KIND, module)
+storiesOf('Components|SectionLabel', module)
   .addDecorator(withKnobs)
   .addDecorator(withServicesKnob())
   .add(
@@ -50,7 +40,7 @@ storiesOf(STORY_KIND, module)
         )}
         labelId="example-section-label"
         service={service}
-        linkText={service === 'news' ? 'See All' : selectFirst2Words(text)}
+        linkText="See All"
         href="https://www.bbc.com/igbo"
       >
         {service === 'news' ? 'Most Read' : text}
@@ -58,7 +48,3 @@ storiesOf(STORY_KIND, module)
     ),
     { notes, knobs: { escapeHTML: false } },
   );
-
-buildRTLSubstories(STORY_KIND, {
-  include: ['default', 'with a link'],
-});

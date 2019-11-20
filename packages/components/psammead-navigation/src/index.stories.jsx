@@ -1,4 +1,5 @@
 import React from 'react';
+import styled from 'styled-components';
 import { storiesOf } from '@storybook/react';
 import {
   color,
@@ -10,6 +11,7 @@ import {
 } from '@storybook/addon-knobs';
 import * as svgs from '@bbc/psammead-assets/svgs';
 import { C_POSTBOX, C_WHITE } from '@bbc/psammead-styles/colours';
+import VisuallyHiddenText from '@bbc/psammead-visually-hidden-text';
 import Brand from '@bbc/psammead-brand';
 import { withServicesKnob } from '@bbc/psammead-storybook-helpers';
 import Navigation, { NavigationUl, NavigationLi } from './index';
@@ -24,21 +26,25 @@ import notes from '../README.md';
 const navStoriesData = [
   {
     title: 'igbo',
+    skipLinkText: 'Wụga n’ọdịnaya',
     currentPageText: 'Current page',
     data: igboNavData,
   },
   {
     title: 'pidgin',
+    skipLinkText: 'Waka go wetin de inside',
     currentPageText: 'Current page',
     data: pidginNavData,
   },
   {
     title: 'yoruba',
+    skipLinkText: 'Fò kọjá sí nnkan tí ó wà nínú rẹ̀',
     currentPageText: 'Current page',
     data: yorubaNavData,
   },
   {
     title: 'arabic',
+    skipLinkText: 'إذهب الى المحتوى',
     currentPageText: 'Current page',
     data: arabicNavData,
     dir: 'rtl',
@@ -51,6 +57,17 @@ const navStoriesData = [
     dir: 'ltr',
   },
 ];
+
+const offScreenText = (
+  <>
+    <span
+      // eslint-disable-next-line jsx-a11y/aria-role
+      role="text"
+    >
+      <span lang="en-GB">BBC News</span>, Ìgbò - Akụkọ
+    </span>
+  </>
+);
 
 const inputs = () => {
   // capitalization is only for presentation purpose on the knob
@@ -121,6 +138,10 @@ const getBrand = () => {
   );
 };
 
+const StyledMain = styled.main`
+  padding: 0px 1rem;
+`;
+
 const navigationStory = (skipLinkText, currentPageText, navData, dir, brand) =>
   // eslint-disable-next-line react/prop-types
   ({ script, service }) => (
@@ -156,6 +177,19 @@ const navigationStory = (skipLinkText, currentPageText, navData, dir, brand) =>
           })}
         </NavigationUl>
       </Navigation>
+      <StyledMain>
+        <VisuallyHiddenText id="content" as="h1" tabIndex="-1">
+          {offScreenText}
+        </VisuallyHiddenText>
+        <p>content conty conty content</p>
+        <p>content conty conty content</p>
+        <p>content conty conty content</p>
+        <p>content conty conty content</p>
+        <p>content conty conty content</p>
+        <p>content conty conty content</p>
+        <p>content conty conty content</p>
+        <p>content conty conty content</p>
+      </StyledMain>
     </>
   );
 

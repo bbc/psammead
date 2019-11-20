@@ -1,7 +1,3 @@
-# ⛔️ This is an alpha component ⛔️
-
-This component is currently tagged as alpha and is not suitable for production use. Following the passing of an accessibility review this component will be marked as ready for production and the alpha tag removed.
-
 # psammead-brand - [![Known Vulnerabilities](https://snyk.io/test/github/bbc/psammead/badge.svg?targetFile=packages%2Fcomponents%2Fpsammead-brand%2Fpackage.json)](https://snyk.io/test/github/bbc/psammead?targetFile=packages%2Fcomponents%2Fpsammead-brand%2Fpackage.json) [![Dependency Status](https://david-dm.org/bbc/psammead.svg?path=packages/components/psammead-brand)](https://david-dm.org/bbc/psammead?path=packages/components/psammead-brand) [![peerDependencies Status](https://david-dm.org/bbc/psammead/peer-status.svg?path=packages/components/psammead-brand)](https://david-dm.org/bbc/psammead?path=packages/components/psammead-brand&type=peer) [![Storybook](https://raw.githubusercontent.com/storybooks/brand/master/badge/badge-storybook.svg?sanitize=true)](https://bbc.github.io/psammead/?path=/story/brand--default) [![GitHub license](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](https://github.com/bbc/psammead/blob/latest/LICENSE) [![npm version](https://img.shields.io/npm/v/@bbc/psammead-brand.svg)](https://www.npmjs.com/package/@bbc/psammead-brand) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/bbc/psammead/blob/latest/CONTRIBUTING.md)
 
 ## Description
@@ -10,9 +6,9 @@ The `Brand` component provides the BBC service logo (as SVG), nested inside a st
 
 `Brand` takes a `product`, `svgHeight`, `minWidth`, `maxWidth`, `url`, `serviceLocalisedName`, `backgroundColour`, `logoColour` and `svg` as props.
 
-The `product` is passed to a [VisuallyHiddenText](https://github.com/bbc/psammead/tree/latest/packages/components/psammead-visually-hidden-text) component, nested inside Brand.
+The `product` is passed to a [VisuallyHiddenText](https://github.com/bbc/psammead/tree/latest/packages/components/VisuallyHiddenText) component, nested inside Brand.
 
-The `serviceLocalisedName` is an optional prop referring to the local name of a service eg `Yoruba`. It is also passed to [VisuallyHiddenText](https://github.com/bbc/psammead/tree/latest/packages/components/psammead-visually-hidden-text) inside the Brand component.
+The `serviceLocalisedName` is an optional prop referring to the local name of a service eg `Yoruba`. It is also passed to [VisuallyHiddenText](https://github.com/bbc/psammead/tree/latest/packages/components/VisuallyHiddenText) inside the Brand component.
 
 The `svg` prop must contain a `group`, `viewbox` values and a `ratio`, which is used within an `svg` element. Examples of the `svg` object can be found in [@bbc/psammead-assets](https://github.com/bbc/psammead/blob/latest/packages/utilities/psammead-assets/README.md#service-svgs).
 
@@ -20,11 +16,9 @@ The `minWidth` and `maxWidth` values are required to allow the ability for the `
 
 The `svgHeight` value acts as a placeholder for the `svg` element meaning the overall banner height does not change with the dynamic scaling, also the `height` allows the contents of the `svg` element to remain vertically centred within the banner at all times.
 
-The `backgroundColour` is the background colour and `logoColour` is the colour of the SVG and the underline when hovering/focusing on the brand.
+The `backgroundColour` is the background colour and `logoColour` is the colour of the SVG and the underline when hovering/focusing on the brand. 
 
 The `url` value is the link that points to the frontpage of the service associated with the `svg`.
-
-The `scriptLink` can be used to render [ScriptLink](https://github.com/bbc/psammead/tree/latest/packages/components/psammead-script-link) component which is a link to the service variant.
 
 ## Installation
 
@@ -40,14 +34,12 @@ The `scriptLink` can be used to render [ScriptLink](https://github.com/bbc/psamm
 | minWidth | Number | yes | N/A | `240` |
 | maxWidth | Number | yes | N/A | `380` |
 | svg | Object | yes | N/A | { group: `(<g fillrule="evenodd"><path d="M84.32" /></g>)`, viewbox: { height: 24, width: 167.95 }, ratio: 6.9979 } |
-| backgroundColour | String | yes | N/A | `${C_POSTBOX}` or relevant string hex code |
-| logoColour | String | yes | N/A | `${C_WHITE}` or relevant string hex code |
+| backgroundColour | string | yes | N/A | `${C_POSTBOX}` or relevant string hex code |
+| logoColour | string | yes | N/A | `${C_WHITE}` or relevant string hex code |
 | url | String | no | N/A | `https://www.bbc.co.uk/news` |
 | serviceLocalisedName | String | no | N/A | `'Yoruba'` |
-| borderTop | Boolean | no | `false` | `true` |
-| borderBottom | Boolean | no | `false` | `true` |
-| scriptLink | Node | no | `null` | `<ScriptLink service='news' script={latin} href='https://www.bbc.com/serbian/lat'> Lat </ScriptLink>` |
-| skipLink | Node | no | `null` | `<SkipLink service='news' script={latin} href='#content'> Skip to content </SkipLink>` |
+| borderTop | bool | no | `false` | `true` |
+| borderBottom | bool | no | `false` | `true` |
 
 ## Usage
 
@@ -55,30 +47,10 @@ The typical use-case of this component is at the top of pages in a [`header` ele
 
 When using `Brand` in the header, you should ensure that `borderBottom` prop is set to true. Similarly, when using brand on the footer you should set `borderTop` to true. This ensures when in High Contrast Mode on PC and when the user changes colour preferences in FireFox that the top/bottom of the `Brand` component is visible.
 
-`ScriptLink` component should be passed to `scriptLink` only when linking to a service variant.
-
 ```jsx
-import Brand, { SkipLink } from '@bbc/psammead-brand';
+import Brand from '@bbc/psammead-brand';
 import { igbo } from '@bbc/psammead-assets/svgs';
-import ScriptLink from '@bbc/psammead-script-link';
 import { C_POSTBOX, C_WHITE } from '@bbc/psammead-styles/colours';
-import { latin } from '@bbc/gel-foundations/scripts';
-
-const scriptLink = (
-  <ScriptLink
-    service="news"
-    script={latin}
-    href="https://www.bbc.com/serbian/lat"
-  >
-    Lat
-  </ScriptLink>
-);
-
-const skipLink = (
-  <SkipLink service="news" script={latin} href="#content">
-    Skip to content
-  </SkipLink>
-);
 
 const Header = (product, serviceName) => (
   <header role="banner">
@@ -93,8 +65,6 @@ const Header = (product, serviceName) => (
       backgroundColour={backgroundColour}
       logoColour={logoColour}
       borderBottom
-      scriptLink={scriptLink}
-      skipLink={skipLink}
     />
   </header>
 );

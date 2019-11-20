@@ -4,7 +4,6 @@ import { string, func, shape, oneOf } from 'prop-types';
 import Image from '@bbc/psammead-image';
 import PlayButton from '@bbc/psammead-play-button';
 import { C_POSTBOX } from '@bbc/psammead-styles/colours';
-import Guidance from '../Guidance';
 
 const StyledPlaceholder = styled.div`
   cursor: pointer;
@@ -29,20 +28,9 @@ const StyledPlayButton = styled(PlayButton)`
 `;
 
 const Placeholder = ({ onClick, service, src, srcset, mediaInfo }) => {
-  const {
-    title,
-    datetime,
-    duration,
-    durationSpoken,
-    type,
-    guidanceMessage,
-  } = mediaInfo;
-
+  const { title, datetime, duration, durationSpoken, type } = mediaInfo;
   return (
     <StyledPlaceholder onClick={onClick}>
-      {guidanceMessage && (
-        <Guidance service={service} guidanceMessage={guidanceMessage} />
-      )}
       <StyledPlayButton
         title={title}
         service={service}
@@ -51,9 +39,8 @@ const Placeholder = ({ onClick, service, src, srcset, mediaInfo }) => {
         duration={duration}
         durationSpoken={durationSpoken}
         type={type}
-        guidanceMessage={guidanceMessage}
       />
-      <Image alt="" src={src} srcset={srcset} />
+      <Image alt="Image Alt" src={src} srcset={srcset} />
     </StyledPlaceholder>
   );
 };
@@ -69,7 +56,6 @@ Placeholder.propTypes = {
     duration: string,
     durationSpoken: string,
     type: oneOf(['audio', 'video']),
-    guidanceMessage: string,
   }),
 };
 Placeholder.defaultProps = {
@@ -79,7 +65,6 @@ Placeholder.defaultProps = {
     duration: null,
     durationSpoken: null,
     type: 'video',
-    guidanceMessage: null,
   }),
 };
 
