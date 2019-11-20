@@ -49,6 +49,15 @@ The `@bbc/psammead-navigation` package is a set of two components, `NavigationUl
 | announcedText | string | Yes | N/A | `'Menu'` |
 | onClose | function | Yes | N/A | `() => { console.log("Handle close action"); }` |
 
+### AmpDropdown
+
+<!-- prettier-ignore -->
+| Argument | Type | Required | Default | Example |
+| -------- | ---- | -------- | ------- | ------- |
+| children | node | Yes | N/A | `<DropdownNavigationLi script={latin} service='news' key='sport' url='/sport' active={false}> Sport </DropdownNavigationLi>` |
+| announcedText | string | Yes | N/A | `'Menu'` |
+| onClose | string | Yes | N/A | `"tap:menu.toggleVisibility"` |
+
 ### DropdownNavigationLi
 
 <!-- prettier-ignore -->
@@ -69,6 +78,14 @@ The `@bbc/psammead-navigation` package is a set of two components, `NavigationUl
 | -------- | ---- | -------- | ------- | ------- |
 | announcedText | string | Yes | N/A | `'Menu'` |
 | onOpen | function | Yes | N/A | `() => { console.log("Handle open action"); }` |
+
+### AmpHamburgerMenu
+
+<!-- prettier-ignore -->
+| Argument | Type | Required | Default | Example |
+| -------- | ---- | -------- | ------- | ------- |
+| announcedText | string | Yes | N/A | `'Menu'` |
+| onOpen | string | Yes | N/A | `"tap:menu.toggleVisibility"` |
 
 ## Navigation Usage
 
@@ -101,7 +118,7 @@ import { latin } from '@bbc/gel-foundations/scripts';
 </Navigation>;
 ```
 
-## Dropdown Navigation Usage
+## Canonical Dropdown Navigation Usage
 
 ```jsx
 import React from 'react';
@@ -123,6 +140,48 @@ import { latin } from '@bbc/gel-foundations/scripts';
       Sport
     </DropdownNavigationLi>
 </CanonicalDropdown>
+```
+
+## Amp Dropdown Navigation Usage
+
+```jsx
+import React from 'react';
+import { AmpDropdown, DropdownNavigationLi } from '@bbc/psammead-navigation';
+import { latin } from '@bbc/gel-foundations/scripts';
+
+<AmpDropdown announcedText="Menu" onClose="tap:menu.toggleVisibility">
+    <DropdownNavigationLi
+        script={latin}
+        service="news"
+        key="Home"
+        url="/"
+        active={true}
+        currentPageText="Current page"
+    >
+      Home
+    </DropdownNavigationLi>
+    <DropdownNavigationLi script={latin} service="news" key="Sport" url="/sport">
+      Sport
+    </DropdownNavigationLi>
+</AmpDropdown>
+```
+
+## Canonical Hamburger Menu Usage
+
+```jsx
+import React from 'react';
+import { CanonicalHamburgerMenu } from '@bbc/psammead-navigation';
+
+<CanonicalHamburgerMenu announcedText="Menu" onOpen={() => { console.log("Handle open action"); }} />
+```
+
+## Amp Hamburger Menu Usage
+
+```jsx
+import React from 'react';
+import { AmpHamburgerMenu } from '@bbc/psammead-navigation';
+
+<AmpHamburgerMenu announcedText="Menu" onOpen="tap:menu.toggleVisibility" />
 ```
 
 ### When to use this component
