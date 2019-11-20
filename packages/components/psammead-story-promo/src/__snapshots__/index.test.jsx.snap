@@ -277,6 +277,7 @@ exports[`StoryPromo - Top Story should render story promo without an image 1`] =
   color: #222222;
   margin: 0;
   padding-bottom: 0.5rem;
+  display: inline;
 }
 
 .c8 {
@@ -288,6 +289,7 @@ exports[`StoryPromo - Top Story should render story promo without an image 1`] =
   color: #3F3F42;
   margin: 0;
   padding-bottom: 0.5rem;
+  padding-top: 0.5rem;
 }
 
 .c7 {
@@ -376,6 +378,13 @@ exports[`StoryPromo - Top Story should render story promo without an image 1`] =
   .c6 {
     font-size: 1.25rem;
     line-height: 1.5rem;
+  }
+}
+
+@media (min-width:62.9375rem) {
+  .c6 {
+    font-size: 0.9375rem;
+    line-height: 1.25rem;
   }
 }
 
