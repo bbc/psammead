@@ -6,6 +6,7 @@ import {
   GEL_SPACING_HLF,
   GEL_SPACING,
   GEL_SPACING_DBL,
+  GEL_SPACING_TRPL,
   GEL_SPACING_QUAD,
 } from '@bbc/gel-foundations/spacings';
 import { GEL_GROUP_5_SCREEN_WIDTH_MIN } from '@bbc/gel-foundations/breakpoints';
@@ -33,6 +34,7 @@ const StyledLink = styled.a`
 
 const StyledItem = styled.div`
   padding-top: ${GEL_SPACING_HLF};
+  padding-bottom: ${GEL_SPACING_TRPL};
   ${paddingStart}: ${GEL_SPACING_DBL};
 
   @media (min-width: ${GEL_GROUP_5_SCREEN_WIDTH_MIN}) {
