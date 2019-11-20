@@ -23,7 +23,8 @@
     "@bbc/psammead-styles": "^4.1.0"
   },
   "peerDependencies": {
-    "styled-components": "^4.3.2"
+    "styled-components": "^4.3.2",
+    "react-dom": "^16.12.0"
   },
   "publishConfig": {
     "tag": "alpha"
