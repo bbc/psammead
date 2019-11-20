@@ -1,9 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import {
-  GEL_GROUP_3_SCREEN_WIDTH_MIN,
-  GEL_GROUP_4_SCREEN_WIDTH_MIN,
-} from '@bbc/gel-foundations/breakpoints';
+import { GEL_GROUP_3_SCREEN_WIDTH_MIN } from '@bbc/gel-foundations/breakpoints';
 import { GEL_SPACING, GEL_SPACING_DBL } from '@bbc/gel-foundations/spacings';
 import {
   C_WHITE,
@@ -24,18 +21,13 @@ import { grid } from '@bbc/psammead-styles/detection';
 const twoOfSixColumnsMaxWidthScaleable = `33.33%`;
 // (2 / 6) * 100 = 0.3333333333 = 33.33%
 
-const fullWidthColumnsMaxScaleable = `100%`;
-// (12 / 12) * 100 = 100 = 100%
-
 const halfWidthColumnsMaxScaleable = `50%`;
 
 const bulletinWrapperStyles = `
+  background-color: ${C_LUNAR};
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   grid-column-gap: ${GEL_SPACING_DBL};
-  @media (min-width: ${GEL_GROUP_4_SCREEN_WIDTH_MIN}) {
-    grid-template-columns: repeat(8, 1fr);
-  }
 `;
 
 const imageWrapperStyles = `
@@ -69,21 +61,12 @@ const TVImageWrapper = styled.div`
     grid-column: 1 / span 3;
     width: ${halfWidthColumnsMaxScaleable};
   }
-  @media (min-width: ${GEL_GROUP_4_SCREEN_WIDTH_MIN}) {
-    grid-column: 1 / span 4;
-    width: ${halfWidthColumnsMaxScaleable};
-  }
   ${imageWrapperStyles};
 `;
 
 const TVTextWrapper = styled.div`
   @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
     grid-column: 4 / span 3;
-    width: ${halfWidthColumnsMaxScaleable};
-    padding-left: ${GEL_SPACING_DBL};
-  }
-  @media (min-width: ${GEL_GROUP_4_SCREEN_WIDTH_MIN}) {
-    grid-column: 5 / span 4;
     width: ${halfWidthColumnsMaxScaleable};
     padding-left: ${GEL_SPACING_DBL};
   }
@@ -102,34 +85,13 @@ const RadioImageWrapper = styled.div`
     width: ${twoOfSixColumnsMaxWidthScaleable};
     padding: 0;
   }
-
-  @media (min-width: ${GEL_GROUP_4_SCREEN_WIDTH_MIN}) {
-    display: block;
-    width: ${fullWidthColumnsMaxScaleable};
-    grid-column: 1 / span 8;
-    padding: ${GEL_SPACING} ${GEL_SPACING} 0 ${GEL_SPACING};
-  }
   ${imageWrapperStyles};
 `;
 
 const RadioTextWrapper = styled.div`
   @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
-    ${({ fullWidth }) =>
-      fullWidth
-        ? `
-          grid-column: 1 / span 6;
-          padding: 0;
-          width: 100%;
-          `
-        : `
-          grid-column: 3 / span 4;
-          padding-left: ${GEL_SPACING_DBL};
-        `}
-  }
-  @media (min-width: ${GEL_GROUP_4_SCREEN_WIDTH_MIN}) {
-    display: block;
-    padding-left: 0;
-    grid-column: 1 / span 8;
+    grid-column: 3 / span 4;
+    padding-left: ${GEL_SPACING_DBL};
   }
   ${textWrapperStyles};
 `;
@@ -159,15 +121,8 @@ const PlayCTA = styled.div.attrs({ 'aria-hidden': true })`
   display: flex;
   justify-content: center;
   @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
-    ${({ fullWidth }) =>
-      !fullWidth &&
-      `
-        display: inline-block;
-        padding: ${GEL_SPACING} ${GEL_SPACING_DBL} ${GEL_SPACING} 0;
-      `}
-  }
-  @media (min-width: ${GEL_GROUP_4_SCREEN_WIDTH_MIN}) {
-    ${({ type }) => type === 'audio' && 'display: flex;'}
+    display: inline-block;
+    padding: ${GEL_SPACING} ${GEL_SPACING_DBL} ${GEL_SPACING} 0;
   }
 `;
 
@@ -185,9 +140,6 @@ const BulletinSummary = styled.p`
 
   }
   padding-bottom: ${GEL_SPACING_DBL};
-  @media(min-width: ${GEL_GROUP_4_SCREEN_WIDTH_MIN}) {
-    ${({ type }) => type === 'audio' && `padding-left: ${GEL_SPACING}`}
-  }
 `;
 
 const TVHeading = styled.h3`
@@ -212,10 +164,6 @@ const RadioHeading = styled.h3`
     ${({ applyLeftPadding }) =>
       applyLeftPadding && `padding-left: ${GEL_SPACING}`}
   }
-
-  @media(min-width: ${GEL_GROUP_4_SCREEN_WIDTH_MIN}) {
-    padding: ${GEL_SPACING};
-  }
 `;
 
 const Bulletin = ({
@@ -236,39 +184,21 @@ const Bulletin = ({
   const TextWrapper = isAudio ? RadioTextWrapper : TVTextWrapper;
   const BulletinHeading = isAudio ? RadioHeading : TVHeading;
 
-  const hasImage = !!image; // convert to boolean value
-  const fullWidth = !hasImage && isAudio;
-
   return (
-    <BulletinWrapper hasImage={hasImage}>
-      {image && <ImageWrapper>{image}</ImageWrapper>}
-      <TextWrapper fullWidth={fullWidth}>
-        <BulletinHeading
-          script={script}
-          service={service}
-          applyLeftPadding={fullWidth}
-        >
+    <BulletinWrapper>
+      <ImageWrapper>{image}</ImageWrapper>
+      <TextWrapper>
+        <BulletinHeading script={script} service={service}>
           <VisuallyHiddenText>
             {isLive ? `${ctaText} ${liveText} ` : `${ctaText} `}
           </VisuallyHiddenText>
           {isLive && <LiveLabel service={service}>{liveText}</LiveLabel>}
           <Link href={ctaLink}>{headlineText}</Link>
         </BulletinHeading>
-        <BulletinSummary
-          script={script}
-          service={service}
-          type={type}
-          applyLeftPadding={fullWidth}
-        >
+        <BulletinSummary script={script} service={service} type={type}>
           {summaryText}
         </BulletinSummary>
-        <PlayCTA
-          isLive={isLive}
-          service={service}
-          script={script}
-          fullWidth={fullWidth}
-          type={type}
-        >
+        <PlayCTA isLive={isLive} service={service} script={script} type={type}>
           <IconWrapper>{mediaIcons[type]}</IconWrapper>
           {ctaText}
         </PlayCTA>
