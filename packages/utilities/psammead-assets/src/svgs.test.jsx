@@ -7,6 +7,7 @@ const svgExceptions = [
   'coreIcons',
   'mediaIcons',
   'navigationIcons',
+  'plainIcons',
 ];
 
 Object.keys(svgs)
