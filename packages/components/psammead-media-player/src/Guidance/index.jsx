@@ -37,15 +37,18 @@ const GuidanceMessage = styled.strong`
   }
 `;
 
-const Guidance = ({ guidanceMessage, service }) => (
+const Guidance = ({ guidanceMessage, service, messageId }) => (
   <GuidanceWrapper service={service}>
-    <GuidanceMessage aria-hidden="true">{guidanceMessage}</GuidanceMessage>
+    <GuidanceMessage id={messageId} aria-hidden="true">
+      {guidanceMessage}
+    </GuidanceMessage>
   </GuidanceWrapper>
 );
 
 Guidance.propTypes = {
   guidanceMessage: string.isRequired,
   service: string.isRequired,
+  messageId: string.isRequired,
 };
 
 export default Guidance;
