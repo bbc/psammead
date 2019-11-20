@@ -202,7 +202,7 @@ CanonicalDropdown.propTypes = {
 
 AmpHamburgerMenu.propTypes = {
   announcedText: string.isRequired,
-  onOpen: func.isRequired,
+  onClose: string.isRequired,
 };
 
 CanonicalHamburgerMenu.propTypes = {
