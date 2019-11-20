@@ -18,7 +18,6 @@ const svgsExpectedExports = {
   coreIcons: 'object',
   mediaIcons: 'object',
   navigationIcons: 'object',
-  unclassedIcons: 'object',
   afaanoromoo: 'object',
   afrique: 'object',
   amharic: 'object',

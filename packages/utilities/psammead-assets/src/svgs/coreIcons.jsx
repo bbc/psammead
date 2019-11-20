@@ -31,6 +31,15 @@ const CoreIcons = {
       <path d="M16 0a16 16 0 1 0 16 16A16 16 0 0 0 16 0zm2 25h-4V13h4zm0-14h-4V7h4z" />
     </CoreIcon>
   ),
+  listBullet: (
+    <svg
+      fill="currentcolor"
+      xmlns="http://www.w3.org/2000/svg"
+      {...defaultAttrs}
+    >
+      <circle cx="16" cy="16" r="12" />
+    </svg>
+  ),
 };
 
 export default CoreIcons;

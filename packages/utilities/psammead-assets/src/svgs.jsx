@@ -2,7 +2,6 @@ export BBC_BLOCKS from './svgs/bbcBlocks';
 export coreIcons from './svgs/coreIcons';
 export mediaIcons from './svgs/mediaIcons';
 export navigationIcons from './svgs/navigationIcons';
-export unclassedIcons from './svgs/unclassedIcons';
 export afaanoromoo from './svgs/afaanoromoo';
 export afrique from './svgs/afrique';
 export amharic from './svgs/amharic';

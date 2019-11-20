@@ -3,7 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
-| 2.11.0 | [PR#2658](https://github.com/bbc/psammead/pull/2658) Add list bullet to unclassedIcons icons |
+| 2.11.0 | [PR#2658](https://github.com/bbc/psammead/pull/2658) Add list bullet to core icons |
 | 2.10.0 | [PR#2631](https://github.com/bbc/psammead/pull/2631) Add AMP_BIND, AMP_LIST, AMP_MUSTACHE scripts to amp-boilerplate exports |
 | 2.9.0 | [PR#2641](https://github.com/bbc/psammead/pull/2641) Add Core icons group with Alert and Info icons |
 | 2.8.0 | [PR#2581](https://github.com/bbc/psammead/pull/2581) Added hamburger and cross icons for Navigation |

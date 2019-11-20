@@ -83,24 +83,6 @@ import { navigationIcons } from '@bbc/psammead-assets/svgs';
 </span>
 ```
 
-## Unclassed Icons SVGs
-
-Unclassed icons is an object containing SVGs without classes that can be b64 encoded for css data-urls. They are used in `psammead-bulleted-list` component.
-
-### Usage
-
-```jsx
-import styled from 'styled-components';
-import ReactDomServer from 'react-dom/server';
-import { plainIcons } from '@bbc/psammead-assets/svgs';
-
-const bullet = btoa(ReactDomServer.renderToString(plainIcons.bullet));
-
-styled.li`
-  list-style-image: url(data:image/svg+xml;base64,${bullet})
-`;
-```
-
 ## Contributing
 
 When **adding** a new export to this utility package the [export tests](https://github.com/bbc/psammead/blob/5d7395fd60bd8d73796d5a23775b4b5b36db1445/packages/utilities/psammead-assets/index.test.jsx#L11-L18) also need to be updated. When **removing** an exisiting export from this utility package the [export tests](https://github.com/bbc/psammead/blob/5d7395fd60bd8d73796d5a23775b4b5b36db1445/packages/utilities/psammead-assets/index.test.jsx#L11-L18) need to be updated and the package version requires a major change (EG: 1.2.1 -> 2.0.0) as this would be considered a breaking change due to functionality being removed.
