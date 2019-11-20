@@ -6,8 +6,9 @@ import {
   GEL_SPACING_HLF,
   GEL_SPACING,
   GEL_SPACING_DBL,
+  GEL_SPACING_QUAD,
 } from '@bbc/gel-foundations/spacings';
-import { GEL_GROUP_3_SCREEN_WIDTH_MIN } from '@bbc/gel-foundations/breakpoints';
+import { GEL_GROUP_5_SCREEN_WIDTH_MIN } from '@bbc/gel-foundations/breakpoints';
 import { C_EBON, C_POSTBOX } from '@bbc/psammead-styles/colours';
 import { scriptPropType } from '@bbc/gel-foundations/prop-types';
 import {
@@ -32,11 +33,11 @@ const StyledLink = styled.a`
 
 const StyledItem = styled.div`
   padding-top: ${GEL_SPACING_HLF};
-  ${paddingStart}: ${GEL_SPACING_HLF};
+  ${paddingStart}: ${GEL_SPACING_DBL};
 
-  @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
+  @media (min-width: ${GEL_GROUP_5_SCREEN_WIDTH_MIN}) {
     padding-top: ${GEL_SPACING};
-    ${paddingStart}: ${GEL_SPACING_DBL};
+    ${paddingStart}: ${GEL_SPACING_QUAD};
   }
 `;
 
