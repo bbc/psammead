@@ -1,9 +1,8 @@
-import React, { useRef, useState } from 'react';
+import React from 'react';
 import styled, { css } from 'styled-components';
-import { node, oneOf, bool } from 'prop-types';
+import { node, oneOf } from 'prop-types';
 import { GEL_GROUP_2_SCREEN_WIDTH_MAX } from '@bbc/gel-foundations/breakpoints';
-import useWindowWidth from '../../hooks/useWindowWidth';
-import useOverflowed from '../../hooks/useOverflowed';
+import useMediaQuery from '../../hooks/useMediaQuery';
 
 /* Convert C_POSTBOX to rgba as IE doesn't like 8 digit hex */
 const C_POSTBOX_TRANSPARENT = `rgba(184, 0, 0, 0)`;
@@ -23,63 +22,33 @@ const StyledSwipeableNav = styled.div`
       display: none;
     }
 
-    ${({ overflowed, scrollEnd }) =>
-      overflowed &&
-      !scrollEnd &&
-      css`
-        &:before {
-          content: ' ';
-          height: 100%;
-          width: 3rem;
-          position: absolute;
-          ${({ dir }) => css`
-            ${dir === 'ltr' ? 'right' : 'left'}: 0;
-          `}
-          bottom: 0;
-          z-index: 3;
-          overflow: hidden;
-          pointer-events: none; /* ignore clicks */
-          background: linear-gradient(
-            ${({ dir }) => (dir === 'ltr' ? 'to right' : 'to left')},
-            ${C_POSTBOX_TRANSPARENT} 0%,
-            ${C_POSTBOX_OPAQUE} 100%
-          );
-        }
+    &:after {
+      content: ' ';
+      height: 100%;
+      width: 3rem;
+      position: absolute;
+      ${({ dir }) => css`
+        ${dir === 'ltr' ? 'right' : 'left'}: 0;
       `}
+      bottom: 0;
+      z-index: 3;
+      overflow: hidden;
+      pointer-events: none;
+      background: linear-gradient(
+        ${({ dir }) => (dir === 'ltr' ? 'to right' : 'to left')},
+        ${C_POSTBOX_TRANSPARENT} 0%,
+        ${C_POSTBOX_OPAQUE} 100%
+      );
+    }
   }
 `;
 
-const SwipeableNavigation = ({ children, dir, isSwipeable }) => {
+export const CanonicalSwipeableNavigation = ({ children, dir }) => {
+  const isSwipeable = useMediaQuery('(max-width: 600px)');
   const ariaHidden = isSwipeable && { 'aria-hidden': true };
 
-  const ref = useRef(null);
-  const windowWidth = useWindowWidth();
-  const isOverflowed = useOverflowed(ref, windowWidth);
-
-  const [scrollEnd, setScrollEnd] = useState(false);
-
-  const handleScroll = event => {
-    const { scrollLeft, scrollWidth } = event.target;
-
-    const isEnd =
-      scrollWidth - Math.abs(scrollLeft) === event.target.offsetWidth;
-
-    if (isEnd) {
-      setScrollEnd(true);
-    } else {
-      setScrollEnd(false);
-    }
-  };
-
   return (
-    <StyledSwipeableNav
-      onScroll={handleScroll}
-      ref={ref}
-      dir={dir}
-      overflowed={isOverflowed}
-      scrollEnd={scrollEnd}
-      {...ariaHidden}
-    >
+    <StyledSwipeableNav dir={dir} {...ariaHidden}>
       {React.Children.map(children, child =>
         React.cloneElement(child, { isSwipeable }),
       )}
@@ -87,12 +56,20 @@ const SwipeableNavigation = ({ children, dir, isSwipeable }) => {
   );
 };
 
-SwipeableNavigation.propTypes = {
+CanonicalSwipeableNavigation.propTypes = {
   children: node.isRequired,
   dir: oneOf(['ltr', 'rtl']),
-  isSwipeable: bool,
 };
 
-SwipeableNavigation.defaultProps = { dir: 'ltr', isSwipeable: false };
+CanonicalSwipeableNavigation.defaultProps = { dir: 'ltr' };
 
-export default SwipeableNavigation;
+export const AmpSwipeableNavigation = ({ children, dir }) => (
+  <StyledSwipeableNav dir={dir}>{children}</StyledSwipeableNav>
+);
+
+AmpSwipeableNavigation.propTypes = {
+  children: node.isRequired,
+  dir: oneOf(['ltr', 'rtl']),
+};
+
+AmpSwipeableNavigation.defaultProps = { dir: 'ltr' };

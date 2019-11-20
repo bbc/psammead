@@ -2,35 +2,62 @@ import React from 'react';
 import { shouldMatchSnapshot } from '@bbc/psammead-test-helpers';
 import { render } from '@testing-library/react';
 import { latin } from '@bbc/gel-foundations/scripts';
-import SwipeableNavigation from './SwipeableNavigation';
+import {
+  CanonicalSwipeableNavigation,
+  AmpSwipeableNavigation,
+} from './SwipeableNavigation';
 import Navigation, { NavigationUl, NavigationLi } from './index';
 import igboNavData from '../testHelpers/igbo';
 
-describe('Navigation', () => {
-  shouldMatchSnapshot(
-    'should render correctly',
-    <Navigation script={latin} skipLinkText="Wụga n’ọdịnaya" service="news">
-      <NavigationUl>
-        {igboNavData.map((item, index) => {
-          const { title, url } = item;
-          const active = index === 0;
+const NavigationExample = (
+  <Navigation script={latin} skipLinkText="Wụga n’ọdịnaya" service="news">
+    <NavigationUl>
+      {igboNavData.map((item, index) => {
+        const { title, url } = item;
+        const active = index === 0;
 
-          return (
-            <NavigationLi
-              key={title}
-              url={url}
-              script={latin}
-              active={active}
-              currentPageText="Current page"
-              service="news"
-              data-navigation="test_navigation"
-            >
-              {title}
-            </NavigationLi>
-          );
-        })}
-      </NavigationUl>
-    </Navigation>,
+        return (
+          <NavigationLi
+            key={title}
+            url={url}
+            script={latin}
+            active={active}
+            currentPageText="Current page"
+            service="news"
+            data-navigation="test_navigation"
+          >
+            {title}
+          </NavigationLi>
+        );
+      })}
+    </NavigationUl>
+  </Navigation>
+);
+
+describe('Navigation', () => {
+  shouldMatchSnapshot('should render correctly', NavigationExample);
+});
+
+describe('Swipeable Navigation', () => {
+  window.matchMedia = jest.fn().mockImplementation(query => {
+    return {
+      matches: false,
+      media: query,
+      addListener: jest.fn(),
+      removeListener: jest.fn(),
+    };
+  });
+
+  shouldMatchSnapshot(
+    'should render Canonical version correctly',
+    <CanonicalSwipeableNavigation>
+      {NavigationExample}
+    </CanonicalSwipeableNavigation>,
+  );
+
+  shouldMatchSnapshot(
+    'should render AMP version correctly',
+    <AmpSwipeableNavigation>{NavigationExample};</AmpSwipeableNavigation>,
   );
 });
 
@@ -53,43 +80,4 @@ describe('Assertions', () => {
       container.querySelector('a').getAttribute('data-navigation'),
     ).toEqual('test_navigation');
   });
-});
-
-describe('Swipeable Navigation', () => {
-  window.matchMedia = jest.fn().mockImplementation(query => {
-    return {
-      matches: false,
-      media: query,
-      addListener: jest.fn(),
-      removeListener: jest.fn(),
-    };
-  });
-
-  shouldMatchSnapshot(
-    'should render correctly',
-    <SwipeableNavigation>
-      <Navigation script={latin} skipLinkText="Wụga n’ọdịnaya" service="news">
-        <NavigationUl>
-          {igboNavData.map((item, index) => {
-            const { title, url } = item;
-            const active = index === 0;
-
-            return (
-              <NavigationLi
-                key={title}
-                url={url}
-                script={latin}
-                active={active}
-                currentPageText="Current page"
-                service="news"
-                data-navigation="test_navigation"
-              >
-                {title}
-              </NavigationLi>
-            );
-          })}
-        </NavigationUl>
-      </Navigation>
-    </SwipeableNavigation>,
-  );
 });

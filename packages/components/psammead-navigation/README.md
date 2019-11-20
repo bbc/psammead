@@ -22,15 +22,6 @@ The `@bbc/psammead-navigation` package is a set of two components, `NavigationUl
 | children | node | Yes      | N/A     | `<SwipeableNavigation dir={dir}><NavigationUl><NavigationLi url="/" script={latin} active="true">Home</NavigationLi><NavigationLi url="/sport" script={latin}>{Sport}</NavigationLi></NavigationUl><SwipeableNavigation/>` |
 | dir      | string  | No       | `ltr`   | `rtl` |
 
-### SwipeableNavigation
-
-<!-- prettier-ignore -->
-| Argument | Type | Required | Default | Example |
-| -------- | ---- | -------- | ------- | ------- |
-| children | node | Yes      | N/A     | `<NavigationUl><NavigationLi url="/" script={latin} active="true">Home</NavigationLi><NavigationLi url="/sport" script={latin}>{Sport}</NavigationLi></NavigationUl>` |
-| dir      | string  | No       | `ltr`   | `rtl` |
-| isSwipeable | boolean | No | `false` | `true` |
-
 ### NavigationUl
 
 <!-- prettier-ignore -->
@@ -49,6 +40,25 @@ The `@bbc/psammead-navigation` package is a set of two components, `NavigationUl
 | active   | boolean | No       | `false` | `true`   |
 | currentPageText | string | No | `null`  | `Current page` |
 | service | string | Yes | N/A | `'news'` |
+| dir      | string  | No       | `ltr`   | `rtl` |
+| isSwipeable | boolean | No | `false` | `true` |
+
+### CanonicalSwipeableNavigation
+
+<!-- prettier-ignore -->
+| Argument | Type | Required | Default | Example |
+| -------- | ---- | -------- | ------- | ------- |
+| children | node | Yes      | N/A     | `<NavigationUl><NavigationLi url="/" script={latin} active="true">Home</NavigationLi><NavigationLi url="/sport" script={latin}>{Sport}</NavigationLi></NavigationUl>` |
+| dir      | string  | No       | `ltr`   | `rtl` |
+| isSwipeable | boolean | No | `false` | `true` |
+
+### AmpSwipeableNavigation
+
+<!-- prettier-ignore -->
+| Argument | Type | Required | Default | Example |
+| -------- | ---- | -------- | ------- | ------- |
+| children | node | Yes      | N/A     | `<NavigationUl><NavigationLi url="/" script={latin} active="true">Home</NavigationLi><NavigationLi url="/sport" script={latin}>{Sport}</NavigationLi></NavigationUl>` |
+| dir      | string  | No       | `ltr`   | `rtl` |
 
 ## Usage
 
