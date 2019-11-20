@@ -4,9 +4,33 @@ import { withKnobs } from '@storybook/addon-knobs';
 import { withServicesKnob } from '@bbc/psammead-storybook-helpers';
 import MostReadTitle from './title';
 
-storiesOf('Components|MostRead', module)
+const arabicServiceDecorator = withServicesKnob({
+  defaultService: 'arabic',
+});
+
+const newsServiceDecorator = withServicesKnob({
+  defaultService: 'news',
+});
+
+storiesOf('Components|MostRead/Title', module)
   .addDecorator(withKnobs)
-  .addDecorator(withServicesKnob())
-  .add('Title', ({ script, service }) => (
-    <MostReadTitle header="Most Read" script={script} service={service} />
-  ));
+  .add('LTR', () =>
+    newsServiceDecorator(({ script, service }) => (
+      <MostReadTitle
+        header="Most Read"
+        script={script}
+        service={service}
+        dir="ltr"
+      />
+    )),
+  )
+  .add('RTL', () =>
+    arabicServiceDecorator(({ script, service }) => (
+      <MostReadTitle
+        header="الأكثر قراءة"
+        script={script}
+        service={service}
+        dir="rtl"
+      />
+    )),
+  );

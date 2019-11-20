@@ -26,6 +26,7 @@ exports[`Most read title should render with BBCNassimArabic 1`] = `
 
 <h2
   class="c0"
+  dir="rtl"
 >
   Most Read
 </h2>
@@ -57,6 +58,7 @@ exports[`Most read title should render with ReithSans 1`] = `
 
 <h2
   class="c0"
+  dir="ltr"
 >
   Most Read
 </h2>
