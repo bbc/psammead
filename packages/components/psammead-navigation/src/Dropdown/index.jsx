@@ -111,19 +111,21 @@ export const DropdownNavigationLi = ({
   </DropdownLi>
 );
 
-export const AmpDropdown = ({ announcedText, onClose, children }) => (
-  <DropdownWrapper>
-    <CrossButton
-      aria-label={announcedText}
-      on={onClose}
-      // eslint-disable-next-line react/jsx-boolean-value
-      aria-expanded="true"
-    >
-      {navigationIcons.cross}
-    </CrossButton>
-    <DropdownUl role="list">{children}</DropdownUl>
-  </DropdownWrapper>
-);
+DropdownNavigationLi.propTypes = {
+  children: string.isRequired,
+  url: string.isRequired,
+  script: shape(scriptPropType).isRequired,
+  service: string.isRequired,
+  active: bool,
+  currentPageText: string,
+  dir: oneOf(['ltr', 'rtl']),
+};
+
+DropdownNavigationLi.defaultProps = {
+  active: false,
+  currentPageText: null,
+  dir: 'ltr',
+};
 
 export const CanonicalDropdown = ({ announcedText, onClose, children }) => (
   <DropdownWrapper>
@@ -138,6 +140,32 @@ export const CanonicalDropdown = ({ announcedText, onClose, children }) => (
     <DropdownUl role="list">{children}</DropdownUl>
   </DropdownWrapper>
 );
+
+CanonicalDropdown.propTypes = {
+  announcedText: string.isRequired,
+  children: node.isRequired,
+  onClose: func.isRequired,
+};
+
+export const AmpDropdown = ({ announcedText, onClose, children }) => (
+  <DropdownWrapper>
+    <CrossButton
+      aria-label={announcedText}
+      on={onClose}
+      // eslint-disable-next-line react/jsx-boolean-value
+      aria-expanded="true"
+    >
+      {navigationIcons.cross}
+    </CrossButton>
+    <DropdownUl role="list">{children}</DropdownUl>
+  </DropdownWrapper>
+);
+
+AmpDropdown.propTypes = {
+  announcedText: string.isRequired,
+  children: node.isRequired,
+  onClose: string.isRequired,
+};
 
 const HamburgerButton = styled.button`
   width: ${MENU_ICON_SIDE_LENGTH};
@@ -156,12 +184,6 @@ const HamburgerButton = styled.button`
   }
 `;
 
-export const AmpHamburgerMenu = ({ announcedText, onOpen }) => (
-  <HamburgerButton aria-label={announcedText} on={onOpen} aria-expanded="false">
-    {navigationIcons.hamburger}
-  </HamburgerButton>
-);
-
 export const CanonicalHamburgerMenu = ({ announcedText, onOpen }) => (
   <HamburgerButton
     aria-label={announcedText}
@@ -172,40 +194,18 @@ export const CanonicalHamburgerMenu = ({ announcedText, onOpen }) => (
   </HamburgerButton>
 );
 
-DropdownNavigationLi.propTypes = {
-  children: string.isRequired,
-  url: string.isRequired,
-  script: shape(scriptPropType).isRequired,
-  service: string.isRequired,
-  active: bool,
-  currentPageText: string,
-  dir: oneOf(['ltr', 'rtl']),
-};
-
-DropdownNavigationLi.defaultProps = {
-  active: false,
-  currentPageText: null,
-  dir: 'ltr',
-};
-
-AmpDropdown.propTypes = {
+CanonicalHamburgerMenu.propTypes = {
   announcedText: string.isRequired,
-  children: node.isRequired,
-  onClose: string.isRequired,
+  onOpen: func.isRequired,
 };
 
-CanonicalDropdown.propTypes = {
-  announcedText: string.isRequired,
-  children: node.isRequired,
-  onClose: func.isRequired,
-};
+export const AmpHamburgerMenu = ({ announcedText, onOpen }) => (
+  <HamburgerButton aria-label={announcedText} on={onOpen} aria-expanded="false">
+    {navigationIcons.hamburger}
+  </HamburgerButton>
+);
 
 AmpHamburgerMenu.propTypes = {
   announcedText: string.isRequired,
   onOpen: string.isRequired,
-};
-
-CanonicalHamburgerMenu.propTypes = {
-  announcedText: string.isRequired,
-  onOpen: func.isRequired,
 };
