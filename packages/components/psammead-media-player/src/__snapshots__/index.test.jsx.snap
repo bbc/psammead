@@ -133,7 +133,7 @@ exports[`Media Player: AMP Entry renders the audio skin 1`] = `
 `;
 
 exports[`Media Player: Canonical Entry renders a landscape container with a placeholder image 1`] = `
-.c9 {
+.c10 {
   display: block;
   width: 100%;
   visibility: visible;
@@ -207,6 +207,20 @@ exports[`Media Player: Canonical Entry renders a landscape container with a plac
   height: 100%;
 }
 
+.c9 {
+  font-family: ReithSans,Helvetica,Arial,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 0.9375rem;
+  line-height: 1.125rem;
+  position: absolute;
+  bottom: 0;
+  font-weight: normal;
+  padding: 0.5rem;
+  color: #FFFFFF;
+  border-bottom: 0.0625rem solid transparent;
+}
+
 .c4 {
   position: absolute;
   bottom: 0;
@@ -223,47 +237,76 @@ exports[`Media Player: Canonical Entry renders a landscape container with a plac
   overflow: hidden;
 }
 
+@media (min-width:37.5rem) {
+  .c9 {
+    font-size: 0.875rem;
+  }
+}
+
+@media screen and (-ms-high-contrast:active) {
+  .c9 {
+    background-color: window;
+  }
+}
+
+@media (min-width:25rem) {
+  .c9 {
+    padding: 1rem;
+  }
+}
+
 <div
   class="c0"
 >
   <div
     class="c1 c2"
   >
-    <button
-      class="c3 c4"
+    <noscript />
+    <span
+      class=""
+      id="media-player-play-button"
     >
-      <span
-        class="c5"
+      <button
+        class="c3 c4"
       >
-        Play video, "Dog chases cat.", 2 minutes 30 seconds
-      </span>
-      <div
-        aria-hidden="true"
-        class="c6"
-      >
-        <svg
-          class="c7"
-          focusable="false"
-          height="12px"
-          viewBox="0 0 32 32"
-          width="12px"
+        <span
+          class="c5"
         >
-          <polygon
-            points="3,32 29,16 3,0"
-          />
-        </svg>
-      </div>
-      <time
-        aria-hidden="true"
-        class="c8"
-        datetime="PT2M30S"
-      >
-        2:30
-      </time>
-    </button>
+          Play video, "Dog chases cat.", 2 minutes 30 seconds
+        </span>
+        <div
+          aria-hidden="true"
+          class="c6"
+        >
+          <svg
+            class="c7"
+            focusable="false"
+            height="12px"
+            viewBox="0 0 32 32"
+            width="12px"
+          >
+            <polygon
+              points="3,32 29,16 3,0"
+            />
+          </svg>
+        </div>
+        <time
+          aria-hidden="true"
+          class="c8"
+          datetime="PT2M30S"
+        >
+          2:30
+        </time>
+      </button>
+    </span>
+    <noscript
+      class="c9"
+    >
+      This video cannot play in your browser. Please enable Javascript or try a different browser.
+    </noscript>
     <img
       alt=""
-      class="c9"
+      class="c10"
       src="http://foo.bar/placeholder.png"
     />
   </div>
@@ -271,7 +314,7 @@ exports[`Media Player: Canonical Entry renders a landscape container with a plac
 `;
 
 exports[`Media Player: Canonical Entry renders a placeholder image with guidance 1`] = `
-.c11 {
+.c12 {
   display: block;
   width: 100%;
   visibility: visible;
@@ -366,6 +409,20 @@ exports[`Media Player: Canonical Entry renders a placeholder image with guidance
   height: 100%;
 }
 
+.c11 {
+  font-family: ReithSans,Helvetica,Arial,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 0.9375rem;
+  line-height: 1.125rem;
+  position: absolute;
+  bottom: 0;
+  font-weight: normal;
+  padding: 0.5rem;
+  color: #FFFFFF;
+  border-bottom: 0.0625rem solid transparent;
+}
+
 .c6 {
   position: absolute;
   bottom: 0;
@@ -406,57 +463,87 @@ exports[`Media Player: Canonical Entry renders a placeholder image with guidance
   }
 }
 
+@media (min-width:37.5rem) {
+  .c11 {
+    font-size: 0.875rem;
+  }
+}
+
+@media screen and (-ms-high-contrast:active) {
+  .c11 {
+    background-color: window;
+  }
+}
+
+@media (min-width:25rem) {
+  .c11 {
+    padding: 1rem;
+  }
+}
+
 <div
   class="c0"
 >
   <div
     class="c1 c2"
   >
+    <noscript />
     <div
       class="c3"
     >
       <strong
         aria-hidden="true"
         class="c4"
+        id="media-player-guiidance"
       >
         May contain strong language, sexual or violent content that may offend.
       </strong>
     </div>
-    <button
-      class="c5 c6"
+    <span
+      class=""
+      id="media-player-play-button"
     >
-      <span
-        class="c7"
+      <button
+        class="c5 c6"
       >
-        May contain strong language, sexual or violent content that may offend. Play video, "Dog chases cat.", 2 minutes 30 seconds
-      </span>
-      <div
-        aria-hidden="true"
-        class="c8"
-      >
-        <svg
-          class="c9"
-          focusable="false"
-          height="12px"
-          viewBox="0 0 32 32"
-          width="12px"
+        <span
+          class="c7"
         >
-          <polygon
-            points="3,32 29,16 3,0"
-          />
-        </svg>
-      </div>
-      <time
-        aria-hidden="true"
-        class="c10"
-        datetime="PT2M30S"
-      >
-        2:30
-      </time>
-    </button>
+          May contain strong language, sexual or violent content that may offend. Play video, "Dog chases cat.", 2 minutes 30 seconds
+        </span>
+        <div
+          aria-hidden="true"
+          class="c8"
+        >
+          <svg
+            class="c9"
+            focusable="false"
+            height="12px"
+            viewBox="0 0 32 32"
+            width="12px"
+          >
+            <polygon
+              points="3,32 29,16 3,0"
+            />
+          </svg>
+        </div>
+        <time
+          aria-hidden="true"
+          class="c10"
+          datetime="PT2M30S"
+        >
+          2:30
+        </time>
+      </button>
+    </span>
+    <noscript
+      class="c11"
+    >
+      This video cannot play in your browser. Please enable Javascript or try a different browser.
+    </noscript>
     <img
       alt=""
-      class="c11"
+      class="c12"
       src="http://foo.bar/placeholder.png"
     />
   </div>
@@ -464,7 +551,7 @@ exports[`Media Player: Canonical Entry renders a placeholder image with guidance
 `;
 
 exports[`Media Player: Canonical Entry renders a portrait container with a placeholder image 1`] = `
-.c9 {
+.c10 {
   display: block;
   width: 100%;
   visibility: visible;
@@ -538,6 +625,20 @@ exports[`Media Player: Canonical Entry renders a portrait container with a place
   height: 100%;
 }
 
+.c9 {
+  font-family: ReithSans,Helvetica,Arial,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 0.9375rem;
+  line-height: 1.125rem;
+  position: absolute;
+  bottom: 0;
+  font-weight: normal;
+  padding: 0.5rem;
+  color: #FFFFFF;
+  border-bottom: 0.0625rem solid transparent;
+}
+
 .c4 {
   position: absolute;
   bottom: 0;
@@ -554,47 +655,76 @@ exports[`Media Player: Canonical Entry renders a portrait container with a place
   overflow: hidden;
 }
 
+@media (min-width:37.5rem) {
+  .c9 {
+    font-size: 0.875rem;
+  }
+}
+
+@media screen and (-ms-high-contrast:active) {
+  .c9 {
+    background-color: window;
+  }
+}
+
+@media (min-width:25rem) {
+  .c9 {
+    padding: 1rem;
+  }
+}
+
 <div
   class="c0"
 >
   <div
     class="c1 c2"
   >
-    <button
-      class="c3 c4"
+    <noscript />
+    <span
+      class=""
+      id="media-player-play-button"
     >
-      <span
-        class="c5"
+      <button
+        class="c3 c4"
       >
-        Play video, "Dog chases cat.", 2 minutes 30 seconds
-      </span>
-      <div
-        aria-hidden="true"
-        class="c6"
-      >
-        <svg
-          class="c7"
-          focusable="false"
-          height="12px"
-          viewBox="0 0 32 32"
-          width="12px"
+        <span
+          class="c5"
         >
-          <polygon
-            points="3,32 29,16 3,0"
-          />
-        </svg>
-      </div>
-      <time
-        aria-hidden="true"
-        class="c8"
-        datetime="PT2M30S"
-      >
-        2:30
-      </time>
-    </button>
+          Play video, "Dog chases cat.", 2 minutes 30 seconds
+        </span>
+        <div
+          aria-hidden="true"
+          class="c6"
+        >
+          <svg
+            class="c7"
+            focusable="false"
+            height="12px"
+            viewBox="0 0 32 32"
+            width="12px"
+          >
+            <polygon
+              points="3,32 29,16 3,0"
+            />
+          </svg>
+        </div>
+        <time
+          aria-hidden="true"
+          class="c8"
+          datetime="PT2M30S"
+        >
+          2:30
+        </time>
+      </button>
+    </span>
+    <noscript
+      class="c9"
+    >
+      This video cannot play in your browser. Please enable Javascript or try a different browser.
+    </noscript>
     <img
       alt=""
-      class="c9"
+      class="c10"
       src="http://foo.bar/placeholder.png"
     />
   </div>
