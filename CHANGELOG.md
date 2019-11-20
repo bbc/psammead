@@ -3,6 +3,28 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 2.0.7 | [PR#2656](https://github.com/bbc/psammead/pull/2656) Talos - Bump Dependencies - @bbc/psammead-image-placeholder, @bbc/psammead-media-indicator |
+| 2.0.6 | [PR#2644](https://github.com/bbc/psammead/pull/2644) Bump dependencies |
+| 2.0.5 | [PR#2635](https://github.com/bbc/psammead/pull/2635) generate withServiceKnob |
+| 2.0.4 | [PR#2650](https://github.com/bbc/psammead/pull/2650) Update codeowners |
+| 2.0.3 | [PR#2647](https://github.com/bbc/psammead/pull/2647) Talos - Bump Dependencies - @bbc/psammead-assets, @bbc/psammead-image-placeholder, @bbc/psammead-media-indicator |
+| 2.0.2 | [PR#2645](https://github.com/bbc/psammead/pull/2645) Talos - Bump Dependencies - @bbc/psammead-assets |
+| 2.0.1 | [PR#2615](https://github.com/bbc/psammead/pull/2615) Talos - Bump Dependencies - @bbc/psammead-assets, @bbc/psammead-image, @bbc/psammead-timestamp |
+| 2.0.0 | [PR#2607](https://github.com/bbc/psammead/pull/2607) Bump dependencies |
+| 1.9.2 | [PR#2586](https://github.com/bbc/psammead/pull/2586) Fix a hyperlink in the readme |
+| 1.9.1 | [PR#2561](https://github.com/bbc/psammead/pull/2561) Talos - Bump Dependencies - @bbc/psammead-calendars |
+| 1.9.0  | [PR#2566](https://github.com/bbc/psammead/pull/2566) Use latest version of NPM and Node.js |
+| 1.8.49 | [PR#2491](https://github.com/bbc/psammead/pull/2491) Bump dependencies |
+| 1.8.48 | [PR#2551](https://github.com/bbc/psammead/pull/2551) Talos - Bump Dependencies - @bbc/psammead-image-placeholder, @bbc/psammead-locales, @bbc/psammead-media-indicator |
+| 1.8.47 | [PR#2491](https://github.com/bbc/psammead/pull/2491) Add `psammead-most-read` component |
+| 1.8.46 | [PR#2428](https://github.com/bbc/psammead/pull/2428) Update alpha component documentation |
+| 1.8.45 | [PR#2533](https://github.com/bbc/psammead/pull/2533) Talos - Bump Dependencies - @bbc/psammead-assets |
+| 1.8.44 | [PR#2528](https://github.com/bbc/psammead/pull/2528) Bump dependencies |
+| 1.8.43 | [PR#2520](https://github.com/bbc/psammead/pull/2520) Talos - Bump Dependencies - @bbc/psammead-brand, @bbc/psammead-caption, @bbc/psammead-copyright, @bbc/psammead-image-placeholder, @bbc/psammead-inline-link, @bbc/psammead-media-indicator, @bbc/psammead-paragraph, @bbc/psammead-timestamp |
+| 1.8.42 | [PR#2519](https://github.com/bbc/psammead/pull/2519) Talos - Bump Dependencies - @bbc/psammead-styles |
+| 1.8.41 | [PR#2494](https://github.com/bbc/psammead/pull/2494) Remove IE11 storybook bug-fix code |
+| 1.8.40 | [PR#2466](https://github.com/bbc/psammead/pull/2466) Create RTL substories |
+| 1.8.39 | [PR#2498](https://github.com/bbc/psammead/pull/2498) Install `browserslist@4.7.2` explicitly in devDeps + ran `npm update` |
 | 1.8.38 | [PR#2490](https://github.com/bbc/psammead/pull/2490) Talos - Bump Dependencies - @bbc/psammead-brand, @bbc/psammead-caption, @bbc/psammead-copyright, @bbc/psammead-media-indicator, @bbc/psammead-paragraph, @bbc/psammead-storybook-helpers, @bbc/psammead-timestamp |
 | 1.8.37 | [PR#2487](https://github.com/bbc/psammead/pull/2487) Talos - Bump Dependencies - @bbc/psammead-image-placeholder, @bbc/psammead-media-indicator |
 | 1.8.36 | [PR#2488](https://github.com/bbc/psammead/pull/2488) Talos - Bump Dependencies - @bbc/gel-foundations |

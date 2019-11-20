@@ -1,7 +1,3 @@
-# ⛔️ This is an alpha component ⛔️
-
-This component is currently tagged as alpha and is not suitable for production use. Following the passing of an accessibility review this component will be marked as ready for production and the alpha tag removed.
-
 # psammead-play-button - [![Known Vulnerabilities](https://snyk.io/test/github/bbc/psammead/badge.svg?targetFile=packages%2Fcomponents%2Fpsammead-play-button%2Fpackage.json)](https://snyk.io/test/github/bbc/psammead?targetFile=packages%2Fcomponents%2Fpsammead-play-button%2Fpackage.json) [![Dependency Status](https://david-dm.org/bbc/psammead.svg?path=packages/components/psammead-play-button)](https://david-dm.org/bbc/psammead?path=packages/components/psammead-play-button) [![peerDependencies Status](https://david-dm.org/bbc/psammead/peer-status.svg?path=packages/components/psammead-play-button)](https://david-dm.org/bbc/psammead?path=packages/components/psammead-play-button&type=peer) [![Storybook](https://raw.githubusercontent.com/storybooks/play-button/master/badge/badge-storybook.svg?sanitize=true)](https://bbc.github.io/psammead/?path=/story/play-button--default) [![GitHub license](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](https://github.com/bbc/psammead/blob/latest/LICENSE) [![npm version](https://img.shields.io/npm/v/@bbc/psammead-play-button.svg)](https://www.npmjs.com/package/@bbc/psammead-play-button) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/bbc/psammead/blob/latest/CONTRIBUTING.md)
 
 ## Description
@@ -25,6 +21,7 @@ The `PlayButton` component renders a button with a 'video' or 'audio' icon and o
 | datetime       | string    | No       | `null`    | `'PT2M30S'`              |
 | type           | string    | No       | `'video'` | `'audio'`                |
 | className      | string    | No       | `null`    | `'bar'`                  |
+| guidanceMessage| string    | No       | `null`    | `'Contains strong language.'`|
 
 ### Supported `type`s
 
@@ -47,6 +44,7 @@ import PlayButton from '@bbc/psammead-play-button';
   durationSpoken="2 minutes 30 seconds"
   datetime="PT2M30S"
   type="audio"
+  guidanceMessage="Contains strong language."
 />;
 ```
 
@@ -58,7 +56,7 @@ The `PlayButton` component is designed to be used in a media asset placeholder c
 
 ### Accessibility notes
 
-This component is expected to provide information about the playable media to screenreaders and other assistive technology. It is required that the title of the media be passed to the `title` prop and, if duration is to be displayed, a human-friendly version to `durationSpoken`. This is used to build a string, which is rendered in a [VisuallyHiddenText](https://github.com/bbc/psammead/tree/latest/packages/components/psammead-visually-hidden-text) element. The icon is marked as `aria-hidden="true"`, which means it should be ignored by screenreaders.
+This component is expected to provide information about the playable media to screenreaders and other assistive technology. It is required that the title of the media be passed to the `title` prop and, if duration is to be displayed, a human-friendly version to `durationSpoken`. If the video has guidance information, this is also read out in the assitive text. This is used to build a string, which is rendered in a [VisuallyHiddenText](https://github.com/bbc/psammead/tree/latest/packages/components/psammead-visually-hidden-text) element. The icon is marked as `aria-hidden="true"`, which means it should be ignored by screenreaders.
 
 <!-- ## Roadmap -->
 

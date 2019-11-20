@@ -3,6 +3,9 @@
 <!-- prettier-ignore -->
 | Version | Description |
 | ------- | ----------- |
+| 2.0.0 | [PR#2556](https://github.com/bbc/psammead/pull/2556) Tightened conditions for a link to be considered external |
+| 1.1.2 | [PR#2466](https://github.com/bbc/psammead/pull/2466) Package-lock updates |
+| 1.1.1 | [PR#2495](https://github.com/bbc/psammead/pull/2495) Replaces `node.constructor.name` logic as it caused a bug on client-side code execution |
 | 1.1.0 | [PR#2492](https://github.com/bbc/psammead/pull/2492) Adds `isExternal` to `urlLink` |
 | 1.0.3 | [PR#2438](https://github.com/bbc/psammead/pull/2438) Fix exports resolving to `src` |
 | 1.0.2 | [PR#2364](https://github.com/bbc/psammead/pull/2364) Swaps `xml-js` to `xmldoc` in the hopes it reduces the install size |

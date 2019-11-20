@@ -9,7 +9,7 @@ const attributeTags = ['bold', 'italic'];
 const supportedXmlNodeNames = ['paragraph', 'link', 'url', ...attributeTags];
 
 const isXmlNodeSupported = node => {
-  if (path(['constructor', 'name'], node) === 'XmlTextNode') {
+  if (path(['type'], node) === 'text') {
     return true;
   }
 
@@ -39,7 +39,7 @@ const createUrlLink = element => {
     blocks = [fragment(text)];
   });
 
-  const isInternalRegex = /\.bbc\.(in|com|co\.uk)/;
+  const isInternalRegex = /(\.|\/)bbc\.(in|com|co\.uk)/;
   const isExternal = !isInternalRegex.test(locator);
 
   return urlLink(text, locator, blocks, isExternal);
@@ -68,7 +68,7 @@ const convertToBlocks = (node, attributes = []) =>
 const xmlNodeToBlock = (node, attributes) => {
   if (!is(Object, node)) return undefined;
 
-  if (node.constructor.name === 'XmlTextNode') {
+  if (node.type === 'text') {
     return fragment(node.text, attributes);
   }
 
