@@ -10,6 +10,7 @@ import {
 } from '@bbc/gel-foundations/spacings';
 import {
   GEL_GROUP_1_SCREEN_WIDTH_MAX,
+  GEL_GROUP_2_SCREEN_WIDTH_MAX,
   GEL_GROUP_3_SCREEN_WIDTH_MIN,
   GEL_GROUP_5_SCREEN_WIDTH_MIN,
 } from '@bbc/gel-foundations/breakpoints';
@@ -19,6 +20,7 @@ import { getSansRegular } from '@bbc/psammead-styles/font-styles';
 
 const TOP_BOTTOM_SPACING = '0.75rem'; // 12px
 const CURRENT_ITEM_HOVER_BORDER = '0.3125rem'; // 5px
+const GRADIENT_WIDTH = '3rem'; // 48px
 
 /* White with 30% transparency over #B80000 */
 const BORDER_COLOR = '#eab3b3';
@@ -37,24 +39,6 @@ const StyledUnorderedList = styled.ul`
 
   @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
     overflow: hidden;
-  }
-`;
-
-const StyledListItem = styled.li`
-  display: inline-block;
-  position: relative;
-  z-index: 2;
-
-  @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
-    /* Trick to display a border between the list items when it breaks into multiple lines, which takes the full width */
-    &::after {
-      content: '';
-      position: absolute;
-      bottom: 0;
-      width: ${GEL_GROUP_5_SCREEN_WIDTH_MIN};
-      border-bottom: 0.0625rem solid ${BORDER_COLOR};
-      z-index: -1;
-    }
   }
 `;
 
@@ -93,6 +77,44 @@ const StyledLink = styled.a`
     ${ListItemBorder}
     top: 0;
     border: 0.25rem solid ${C_WHITE};
+  }
+`;
+
+const StyledListItem = styled.li`
+  display: inline-block;
+  position: relative;
+  z-index: 2;
+
+  @media (max-width: ${GEL_GROUP_2_SCREEN_WIDTH_MAX}) {
+    &:last-child > ${StyledLink} {
+      ${({ dir }) => css`
+        padding-${dir === 'ltr' ? 'right' : 'left'}: ${GRADIENT_WIDTH}; 
+      `}
+    }
+
+    &:last-child > ${StyledLink}:hover::after {
+      ${({ dir }) => css`
+        ${dir === 'ltr' ? 'right' : 'left'}: ${GRADIENT_WIDTH};
+      `}
+    }
+
+    &:last-child > ${StyledLink}:focus::after {
+      ${({ dir }) => css`
+        ${dir === 'ltr' ? 'right' : 'left'}: ${GRADIENT_WIDTH};
+      `}
+    }
+  }
+
+  @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
+    /* Trick to display a border between the list items when it breaks into multiple lines, which takes the full width */
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      width: ${GEL_GROUP_5_SCREEN_WIDTH_MIN};
+      border-bottom: 0.0625rem solid ${BORDER_COLOR};
+      z-index: -1;
+    }
   }
 `;
 
@@ -147,13 +169,14 @@ export const NavigationLi = ({
   currentPageText,
   active,
   service,
+  dir,
   isSwipeable,
   ...props
 }) => {
   const tabIndex = isSwipeable && { tabIndex: -1 };
 
   return (
-    <StyledListItem role="listitem">
+    <StyledListItem dir={dir} role="listitem">
       {active && currentPageText ? (
         <StyledLink
           href={url}
@@ -190,12 +213,14 @@ NavigationLi.propTypes = {
   currentPageText: string,
   service: string.isRequired,
   isSwipeable: bool,
+  dir: oneOf(['ltr', 'rtl']),
 };
 
 NavigationLi.defaultProps = {
   active: false,
   currentPageText: null,
   isSwipeable: false,
+  dir: 'ltr',
 };
 
 const StyledNav = styled.nav`

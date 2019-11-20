@@ -8,17 +8,20 @@ import {
   withKnobs,
   boolean,
 } from '@storybook/addon-knobs';
+import { withServicesKnob } from '@bbc/psammead-storybook-helpers';
 import * as svgs from '@bbc/psammead-assets/svgs';
 import { C_POSTBOX, C_WHITE } from '@bbc/psammead-styles/colours';
 import Brand from '@bbc/psammead-brand';
-import { withServicesKnob } from '@bbc/psammead-storybook-helpers';
+import { ampDecorator } from '../../../../.storybook/config';
 import Navigation, { NavigationUl, NavigationLi } from './index';
-import SwipeableNavigation from './SwipeableNavigation/index';
+import {
+  CanonicalSwipeableNavigation,
+  AmpSwipeableNavigation,
+} from './SwipeableNavigation';
 import igboNavData from '../testHelpers/igbo';
 import pidginNavData from '../testHelpers/pidgin';
 import yorubaNavData from '../testHelpers/yoruba';
 import arabicNavData from '../testHelpers/arabic';
-import useMediaQuery from '../hooks/useMediaQuery';
 
 import notes from '../README.md';
 
@@ -117,8 +120,11 @@ const navigationStory = (
   navData,
   dir,
   brand,
+  isAmp,
 ) => ({ script, service }) => {
-  const isSwipeable = useMediaQuery('(max-width: 600px)');
+  const SwipeableNavigation = isAmp
+    ? AmpSwipeableNavigation
+    : CanonicalSwipeableNavigation;
 
   return (
     <>
@@ -130,7 +136,7 @@ const navigationStory = (
         service={service}
         dir={dir}
       >
-        <SwipeableNavigation dir={dir} isSwipeable={isSwipeable}>
+        <SwipeableNavigation dir={dir}>
           <NavigationUl>
             {navData.map((item, index) => {
               const { title, url } = item;
@@ -144,6 +150,7 @@ const navigationStory = (
                   active={active}
                   currentPageText={currentPageText}
                   service={service}
+                  dir={dir}
                 >
                   {title}
                 </NavigationLi>
@@ -165,9 +172,11 @@ const storiesWithoutBrand = storiesOf(
 
 navStoriesData.map(item => {
   const { title, skipLinkText, currentPageText, data, dir } = item;
+  const isAmp = false;
+
   return storiesWithoutBrand.add(
     title,
-    navigationStory(skipLinkText, currentPageText, data, dir),
+    navigationStory(skipLinkText, currentPageText, data, dir, false, isAmp),
     {
       notes,
     },
@@ -186,8 +195,27 @@ storiesWithBrand.add(
     igboNavData,
     navStoriesData[0].dir,
     true,
+    false,
   ),
   {
     notes,
   },
 );
+
+const ampStories = storiesOf('Components|Navigation/AMP', module)
+  .addDecorator(ampDecorator)
+  .addDecorator(withKnobs)
+  .addDecorator(withServicesKnob());
+
+navStoriesData.map(item => {
+  const { title, skipLinkText, currentPageText, data, dir } = item;
+  const isAmp = true;
+
+  return ampStories.add(
+    title,
+    navigationStory(skipLinkText, currentPageText, data, dir, false, isAmp),
+    {
+      notes,
+    },
+  );
+});
