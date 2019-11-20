@@ -243,7 +243,7 @@ it('should adjust Y scroll position when above viewport and child content become
   const initialScrollYPosition = 1000;
   const expectedXPos = 0;
   const expectedYPos = 900;
-  const initialSize = 200; // todo change this name
+  const initialSize = 200;
   const sizeDecrease = 100;
   const initialPagelHeight = 5000;
   const pageHeightDecreaseAmount = sizeDecrease;
@@ -297,6 +297,64 @@ it('should adjust Y scroll position when above viewport and child content become
   );
 });
 
+it('should adjust Y scroll position when above viewport and child content becomes larger', () => {
+  const initialScrollYPosition = 1000;
+  const expectedXPos = 0;
+  const expectedYPos = 1100;
+  const initialSize = 200;
+  const sizeIncrease = 100;
+  const initialPagelHeight = 5000;
+  const pageHeightIncreaseAmount = sizeIncrease;
+
+  global.pageYOffset = initialScrollYPosition;
+
+  // simulate the document becoming smaller with each call to document.body.scrollHeight
+  const mockScrollHeight = jest
+    .fn()
+    .mockReturnValueOnce(initialPagelHeight) // 1st call to document.body.scrollHeight
+    .mockReturnValueOnce(initialPagelHeight + pageHeightIncreaseAmount); // 2nd call to document.body.scrollHeight
+
+  Object.defineProperty(HTMLElement.prototype, 'scrollHeight', {
+    configurable: true,
+    get() {
+      return mockScrollHeight();
+    },
+  });
+
+  render(
+    <ContentShiftBlocker initialWidth={100} initialHeight={100}>
+      <Content />
+    </ContentShiftBlocker>,
+  );
+
+  act(() => {
+    // simulate above viewport and resize events
+    IOInstance.fireIntersectEvent([
+      {
+        isIntersecting: false,
+        boundingClientRect: {
+          top: -9999, // is above viewport
+          height: initialSize,
+          width: initialSize,
+        },
+      },
+    ]);
+    ROInstance.fireResizeEvent([
+      {
+        contentRect: {
+          height: initialSize + sizeIncrease, // becomes 100px larger
+          width: initialSize + sizeIncrease, // becomes 100px larger
+        },
+      },
+    ]);
+  });
+
+  expect(global.scrollTo).toHaveBeenCalledWith(expectedXPos, expectedYPos);
+  expect(global.pageYOffset).toEqual(
+    initialScrollYPosition + pageHeightIncreaseAmount,
+  );
+});
+
 it('should not adjust scroll position (with js) if CSS scroll anchoring is supported', () => {
   const initialScrollYPosition = 300;
   const initialSize = 100;
@@ -337,95 +395,4 @@ it('should not adjust scroll position (with js) if CSS scroll anchoring is suppo
 
   expect(global.scrollTo).not.toHaveBeenCalled();
   expect(global.pageYOffset).toEqual(initialScrollYPosition);
-});
-
-it('should adjust Y scroll position when above viewport and child content becomes larger', () => {
-  const initialScrollYPosition = 1000;
-  const expectedXPos = 0;
-  const expectedYPos = 1100;
-  const initialSize = 200; // todo change this name
-  const sizeIncrease = 100;
-  const initialPagelHeight = 5000;
-  const pageHeightDecreaseAmount = sizeIncrease;
-
-  global.pageYOffset = initialScrollYPosition;
-
-  // simulate the document becoming smaller with each call to document.body.scrollHeight
-  const mockScrollHeight = jest
-    .fn()
-    .mockReturnValueOnce(initialPagelHeight) // 1st call to document.body.scrollHeight
-    .mockReturnValueOnce(initialPagelHeight + pageHeightDecreaseAmount); // 2nd call to document.body.scrollHeight
-
-  Object.defineProperty(HTMLElement.prototype, 'scrollHeight', {
-    configurable: true,
-    get() {
-      return mockScrollHeight();
-    },
-  });
-
-  render(
-    <ContentShiftBlocker initialWidth={100} initialHeight={100}>
-      <Content />
-    </ContentShiftBlocker>,
-  );
-
-  Object.defineProperty(HTMLElement.prototype, 'scrollHeight', {
-    get() {
-      this._scrollHeight += 100; // simulate the viewport becoming larger
-      return this._scrollHeight;
-    },
-  });
-
-  act(() => {
-    // simulate above viewport and resize events
-    IOInstance.fireIntersectEvent([
-      {
-        isIntersecting: false,
-        boundingClientRect: {
-          top: -9999, // is above viewport
-          height: initialSize,
-          width: initialSize,
-        },
-      },
-    ]);
-    ROInstance.fireResizeEvent([
-      {
-        contentRect: {
-          height: initialSize + sizeIncrease, // becomes 100px larger
-          width: initialSize + sizeIncrease, // becomes 100px larger
-        },
-      },
-    ]);
-  });
-
-  expect(global.scrollTo).toHaveBeenCalledWith(expectedXPos, expectedYPos);
-  expect(global.pageYOffset).toEqual(1100);
-});
-
-xit('should load ResizeObserver polyfill if not natively suported', async () => {
-  delete global.ResizeObserver;
-
-  expect(global.ResizeObserver).not.toBeTruthy();
-
-  await render(
-    <ContentShiftBlocker>
-      <Content />
-    </ContentShiftBlocker>,
-  );
-
-  expect(true).toEqual(true); // TODO
-});
-
-xit('should load IntersectionObserver polyfill if not natively supported', async () => {
-  delete global.IntersectionObserver;
-
-  expect(global.IntersectionObserver).not.toBeTruthy();
-
-  await render(
-    <ContentShiftBlocker>
-      <Content />
-    </ContentShiftBlocker>,
-  );
-
-  expect(global.IntersectionObserver).toBeTruthy();
 });
