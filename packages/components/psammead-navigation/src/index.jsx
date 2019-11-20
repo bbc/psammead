@@ -225,7 +225,11 @@ export const NavigationLi = ({
   inMenu,
   ...props
 }) => (
-  <StyledListItem role="listitem" inMenu={inMenu}>
+  <StyledListItem
+    role="listitem"
+    inMenu={inMenu}
+    tabIndex={inMenu ? '-1' : undefined}
+  >
     {active && currentPageText ? (
       <StyledLink
         href={url}
@@ -251,6 +255,7 @@ export const NavigationLi = ({
         service={service}
         data-navigation={`${link}_${url}`}
         inMenu={inMenu}
+        tabIndex={inMenu ? '-1' : undefined}
         {...props}
       >
         {link}
@@ -296,44 +301,30 @@ const MenuWrapper = styled.menu`
   // border-right: solid ${C_POSTBOX};
   ${({ grid }) => grid && 'width: 100%;'}
   pointer-events: auto;
-  ${({ moveContent }) => !moveContent && 'max-height: 75vh;'}
+  ${({ moveContent }) =>
+    moveContent ? 'overflow: hidden;' : 'max-height: 75vh;'}
   padding: 0;
-  max-height: 0;
-  display: none;
-  transition: max-height 500ms ease-out;
-
-  // We can't transition to height auto in css sadly.
-  // This transitions to a full screen max-height then sets it to fit-content.
-  // This introduces to smallest possible delay to things
-  // that are shorter than full-screen without
-  // ruining the ones that are longer than the screen.
-  // Unfortunately, there is a delay closing services with a menu shorter
-  // than the height of the screen. This could probably be solved with js. 
+  height: 0;
+  transition: height 500ms ease-out;
 
   &.menu-animation-enter {
-    max-height: 0;
-    display: block;
+    height: 0;
   }
   &.menu-animation-enter-active {
-    max-height: 100vh;
-    display: block;
+    height: ${({ height }) => (height ? `${height}px` : '100vh')};
   }
   &.menu-animation-enter-done {
-    max-height: fit-content;
-    display: block;
+    height: fit-content;
   }
 
   &.menu-animation-exit {
-    max-height: 100vh;
-    display: block;
+    height: ${({ height }) => (height ? `${height}px` : '100vh')};
   }
   &.menu-animation-exit-active {
-    max-height: 0;
-    display: block;
+    height: 0;
   }
   &.menu-animation-exit-done {
-    max-height: 0;
-    display: none;
+    height: 0;
   }
 
   &::-webkit-scrollbar {
@@ -447,6 +438,8 @@ const Menu = ({
   grid,
   amp,
 }) => {
+  const menu = document.getElementById('menu');
+  const height = menu && menu.scrollHeight;
   return (
     <MenuWrapper
       id="menu"
@@ -457,6 +450,9 @@ const Menu = ({
       grid={grid}
       hidden={amp || !visible}
       amp={amp}
+      height={height}
+      tabIndex="-1"
+      aria-hidden="true"
     >
       {React.Children.map(children, child =>
         React.cloneElement(child, { inMenu: true }),

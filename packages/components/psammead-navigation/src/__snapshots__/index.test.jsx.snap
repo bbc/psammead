@@ -297,43 +297,37 @@ exports[`Navigation should render correctly 1`] = `
   left: 0;
   width: 100%;
   pointer-events: auto;
+  overflow: hidden;
   padding: 0;
-  max-height: 0;
-  display: none;
-  -webkit-transition: max-height 500ms ease-out;
-  transition: max-height 500ms ease-out;
+  height: 0;
+  -webkit-transition: height 500ms ease-out;
+  transition: height 500ms ease-out;
 }
 
 .c14.menu-animation-enter {
-  max-height: 0;
-  display: block;
+  height: 0;
 }
 
 .c14.menu-animation-enter-active {
-  max-height: 100vh;
-  display: block;
+  height: 100vh;
 }
 
 .c14.menu-animation-enter-done {
-  max-height: -webkit-fit-content;
-  max-height: -moz-fit-content;
-  max-height: fit-content;
-  display: block;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 
 .c14.menu-animation-exit {
-  max-height: 100vh;
-  display: block;
+  height: 100vh;
 }
 
 .c14.menu-animation-exit-active {
-  max-height: 0;
-  display: block;
+  height: 0;
 }
 
 .c14.menu-animation-exit-done {
-  max-height: 0;
-  display: none;
+  height: 0;
 }
 
 .c14::-webkit-scrollbar {
@@ -657,9 +651,11 @@ exports[`Navigation should render correctly 1`] = `
     </div>
   </nav>
   <menu
+    aria-hidden="true"
     class="c14"
     dir="ltr"
     id="menu"
+    tabindex="-1"
   >
     <ul
       class="c15"
@@ -668,6 +664,7 @@ exports[`Navigation should render correctly 1`] = `
       <li
         class="c7 c16"
         role="listitem"
+        tabindex="-1"
       >
         <a
           class="c17"
@@ -691,11 +688,13 @@ exports[`Navigation should render correctly 1`] = `
       <li
         class="c7 c16"
         role="listitem"
+        tabindex="-1"
       >
         <a
           class="c18"
           data-navigation="test_navigation"
           href="/igbo/egwuregwu"
+          tabindex="-1"
         >
           Egwuregwu
         </a>
@@ -703,11 +702,13 @@ exports[`Navigation should render correctly 1`] = `
       <li
         class="c7 c16"
         role="listitem"
+        tabindex="-1"
       >
         <a
           class="c18"
           data-navigation="test_navigation"
           href="/igbo/media/video"
+          tabindex="-1"
         >
           Ihe nkiri
         </a>
@@ -715,11 +716,13 @@ exports[`Navigation should render correctly 1`] = `
       <li
         class="c7 c16"
         role="listitem"
+        tabindex="-1"
       >
         <a
           class="c18"
           data-navigation="test_navigation"
           href="/igbo/popular/read"
+          tabindex="-1"
         >
           Nke ka ewuewu
         </a>
