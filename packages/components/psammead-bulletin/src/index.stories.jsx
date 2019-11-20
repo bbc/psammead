@@ -7,14 +7,7 @@ import notes from '../README.md';
 import Bulletin from '.';
 
 /* eslint-disable react/prop-types */
-const BulletinComponent = ({
-  script,
-  service,
-  type,
-  ctaText,
-  hasImage,
-  dir,
-}) => {
+const BulletinComponent = ({ script, service, type, ctaText, hasImage }) => {
   const summaryText = 'This is the summary text';
   const headlineText = 'This is the headline';
   const ctaLink = 'https://bbc.co.uk';
@@ -39,7 +32,6 @@ const BulletinComponent = ({
       summaryText={summaryText}
       ctaLink={ctaLink}
       ctaText={ctaText}
-      dir={dir}
     />
   );
 };
@@ -49,21 +41,20 @@ storiesOf('Components|Bulletin', module)
   .addDecorator(withServicesKnob())
   .add(
     'Tv Bulletin',
-    ({ script, service, dir }) => (
+    ({ script, service }) => (
       <BulletinComponent
         script={script}
         service={service}
         type="video"
         ctaText="Watch"
         hasImage
-        dir={dir}
       />
     ),
     { notes },
   )
   .add(
     'Radio Bulletin',
-    ({ script, service, dir }) => {
+    ({ script, service }) => {
       const hasImage = boolean('With Image', true);
 
       return (
@@ -73,7 +64,6 @@ storiesOf('Components|Bulletin', module)
           type="audio"
           ctaText="Listen"
           hasImage={hasImage}
-          dir={dir}
         />
       );
     },

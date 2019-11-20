@@ -1,5 +1,5 @@
 import React from 'react';
-import styled, { css } from 'styled-components';
+import styled from 'styled-components';
 import {
   GEL_GROUP_3_SCREEN_WIDTH_MIN,
   GEL_GROUP_4_SCREEN_WIDTH_MIN,
@@ -47,15 +47,12 @@ const imageWrapperStyles = `
   }
 `;
 
-const getPadding = (dir, value) =>
-  dir === 'ltr' ? `padding-left: ${value};` : `padding-right: ${value};`;
-
-const textWrapperStyles = css`
+const textWrapperStyles = `
   grid-column: 1 / span 6;
   display: inline-block;
   @supports (${grid}) {
     width: initial;
-    ${({ dir }) => getPadding(dir, 0)}
+    padding-left: 0;
   }
 `;
 
@@ -83,12 +80,12 @@ const TVTextWrapper = styled.div`
   @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
     grid-column: 4 / span 3;
     width: ${halfWidthColumnsMaxScaleable};
-    ${({ dir }) => getPadding(dir, GEL_SPACING_DBL)}
+    padding-left: ${GEL_SPACING_DBL};
   }
   @media (min-width: ${GEL_GROUP_4_SCREEN_WIDTH_MIN}) {
     grid-column: 5 / span 4;
     width: ${halfWidthColumnsMaxScaleable};
-    ${({ dir }) => getPadding(dir, GEL_SPACING_DBL)}
+    padding-left: ${GEL_SPACING_DBL};
   }
   ${textWrapperStyles};
 `;
@@ -126,12 +123,12 @@ const RadioTextWrapper = styled.div`
           `
         : `
           grid-column: 3 / span 4;
-          ${({ dir }) => getPadding(dir, GEL_SPACING_DBL)}
+          padding-left: ${GEL_SPACING_DBL};
         `}
   }
   @media (min-width: ${GEL_GROUP_4_SCREEN_WIDTH_MIN}) {
     display: block;
-    ${({ dir }) => getPadding(dir, 0)}
+    padding-left: 0;
     grid-column: 1 / span 8;
   }
   ${textWrapperStyles};
@@ -148,19 +145,9 @@ const IconWrapper = styled.span`
   @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
     display: inline-block;
     margin-left: 0;
-    ${({ dir }) => getPadding(dir, GEL_SPACING)}
+    padding-left: ${GEL_SPACING};
   }
 `;
-
-const getCTAPadding = dir => {
-  return dir === 'ltr'
-    ? `
-        padding: ${GEL_SPACING} ${GEL_SPACING_DBL} ${GEL_SPACING} 0;
-      `
-    : `
-        padding: ${GEL_SPACING} 0  ${GEL_SPACING} ${GEL_SPACING_DBL};
-      `;
-};
 
 const PlayCTA = styled.div.attrs({ 'aria-hidden': true })`
   background-color: ${({ isLive }) => (isLive ? C_POSTBOX : C_EBON)};
@@ -176,11 +163,11 @@ const PlayCTA = styled.div.attrs({ 'aria-hidden': true })`
       !fullWidth &&
       `
         display: inline-block;
-        ${({ dir }) => getCTAPadding(dir)}
+        padding: ${GEL_SPACING} ${GEL_SPACING_DBL} ${GEL_SPACING} 0;
       `}
   }
   @media (min-width: ${GEL_GROUP_4_SCREEN_WIDTH_MIN}) {
-    ${({ isAudio }) => isAudio && 'display: flex;'}
+    ${({ type }) => type === 'audio' && 'display: flex;'}
   }
 `;
 
@@ -189,16 +176,17 @@ const BulletinSummary = styled.p`
   ${({ service }) => service && getSansRegular(service)}
   color: ${C_SHADOW};
   margin: 0; /* Reset */
-  ${({ isAudio }) => isAudio && `padding: 0 ${GEL_SPACING};`}
+  ${({ type }) => type === 'audio' && `padding: 0 ${GEL_SPACING};`}
   @media(min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
     padding-left: 0;
     padding-right: 0;
-    ${({ applyPadding, dir }) => applyPadding && getPadding(dir, GEL_SPACING)}
+    ${({ applyLeftPadding }) =>
+      applyLeftPadding && `padding-left: ${GEL_SPACING}`}
 
   }
   padding-bottom: ${GEL_SPACING_DBL};
   @media(min-width: ${GEL_GROUP_4_SCREEN_WIDTH_MIN}) {
-    ${({ isAudio, dir }) => isAudio && getPadding(dir, GEL_SPACING)}
+    ${({ type }) => type === 'audio' && `padding-left: ${GEL_SPACING}`}
   }
 `;
 
@@ -221,7 +209,8 @@ const RadioHeading = styled.h3`
   padding: ${GEL_SPACING} ${GEL_SPACING};
   @media(min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
     padding: ${GEL_SPACING} 0;
-    ${({ applyPadding, dir }) => applyPadding && getPadding(dir, GEL_SPACING)}
+    ${({ applyLeftPadding }) =>
+      applyLeftPadding && `padding-left: ${GEL_SPACING}`}
   }
 
   @media(min-width: ${GEL_GROUP_4_SCREEN_WIDTH_MIN}) {
@@ -240,7 +229,6 @@ const Bulletin = ({
   ctaText,
   ctaLink,
   liveText,
-  dir,
 }) => {
   const isAudio = type === 'audio';
   const BulletinWrapper = isAudio ? RadioBulletinWrapper : TVBulletinWrapper;
@@ -254,12 +242,11 @@ const Bulletin = ({
   return (
     <BulletinWrapper hasImage={hasImage}>
       {image && <ImageWrapper>{image}</ImageWrapper>}
-      <TextWrapper fullWidth={fullWidth} dir={dir}>
+      <TextWrapper fullWidth={fullWidth}>
         <BulletinHeading
           script={script}
           service={service}
-          applyPadding={fullWidth}
-          dir={dir}
+          applyLeftPadding={fullWidth}
         >
           <VisuallyHiddenText>
             {isLive ? `${ctaText} ${liveText} ` : `${ctaText} `}
@@ -270,9 +257,8 @@ const Bulletin = ({
         <BulletinSummary
           script={script}
           service={service}
-          isAudio={isAudio}
-          applyPadding={fullWidth}
-          dir={dir}
+          type={type}
+          applyLeftPadding={fullWidth}
         >
           {summaryText}
         </BulletinSummary>
@@ -281,10 +267,9 @@ const Bulletin = ({
           service={service}
           script={script}
           fullWidth={fullWidth}
-          isAudio={isAudio}
-          dir={dir}
+          type={type}
         >
-          <IconWrapper dir={dir}>{mediaIcons[type]}</IconWrapper>
+          <IconWrapper>{mediaIcons[type]}</IconWrapper>
           {ctaText}
         </PlayCTA>
       </TextWrapper>
@@ -303,14 +288,12 @@ Bulletin.propTypes = {
   summaryText: string.isRequired,
   headlineText: string.isRequired,
   liveText: string,
-  dir: oneOf(['ltr', 'rtl']),
 };
 
 Bulletin.defaultProps = {
   isLive: false,
   image: null,
   liveText: 'LIVE',
-  dir: 'ltr',
 };
 
 export default Bulletin;

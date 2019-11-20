@@ -171,14 +171,7 @@ exports[`Bulletin should render audio correctly 1`] = `
 @media (min-width:37.5rem) {
   .c3 {
     grid-column: 3 / span 4;
-  }
-
-  .c3 function (_ref5) {
-    -webkit-var: dir = _ref5.dir;
-    -moz-var: dir = _ref5.dir;
-    -ms-var: dir = _ref5.dir;
-    var: dir = _ref5.dir;
-    return: getPadding(dir,_spacings.GEL_SPACING_DBL);
+    padding-left: 1rem;
   }
 }
 
@@ -222,14 +215,7 @@ exports[`Bulletin should render audio correctly 1`] = `
 @media (min-width:37.5rem) {
   .c8 {
     display: inline-block;
-  }
-
-  .c8 function (_ref12) {
-    -webkit-var: dir = _ref12.dir;
-    -moz-var: dir = _ref12.dir;
-    -ms-var: dir = _ref12.dir;
-    var: dir = _ref12.dir;
-    return: getCTAPadding(dir);
+    padding: 0.5rem 1rem 0.5rem 0;
   }
 }
 
@@ -309,11 +295,9 @@ exports[`Bulletin should render audio correctly 1`] = `
   </div>
   <div
     class="c3"
-    dir="ltr"
   >
     <h3
       class="c4"
-      dir="ltr"
     >
       <span
         class="c5"
@@ -329,18 +313,17 @@ exports[`Bulletin should render audio correctly 1`] = `
     </h3>
     <p
       class="c7"
-      dir="ltr"
+      type="audio"
     >
       This is the summary text
     </p>
     <div
       aria-hidden="true"
       class="c8"
-      dir="ltr"
+      type="audio"
     >
       <span
         class="c9"
-        dir="ltr"
       >
         <svg
           class="c10"
@@ -543,14 +526,7 @@ exports[`Bulletin should render live audio correctly 1`] = `
 @media (min-width:37.5rem) {
   .c3 {
     grid-column: 3 / span 4;
-  }
-
-  .c3 function (_ref5) {
-    -webkit-var: dir = _ref5.dir;
-    -moz-var: dir = _ref5.dir;
-    -ms-var: dir = _ref5.dir;
-    var: dir = _ref5.dir;
-    return: getPadding(dir,_spacings.GEL_SPACING_DBL);
+    padding-left: 1rem;
   }
 }
 
@@ -594,14 +570,7 @@ exports[`Bulletin should render live audio correctly 1`] = `
 @media (min-width:37.5rem) {
   .c9 {
     display: inline-block;
-  }
-
-  .c9 function (_ref12) {
-    -webkit-var: dir = _ref12.dir;
-    -moz-var: dir = _ref12.dir;
-    -ms-var: dir = _ref12.dir;
-    var: dir = _ref12.dir;
-    return: getCTAPadding(dir);
+    padding: 0.5rem 1rem 0.5rem 0;
   }
 }
 
@@ -681,11 +650,9 @@ exports[`Bulletin should render live audio correctly 1`] = `
   </div>
   <div
     class="c3"
-    dir="ltr"
   >
     <h3
       class="c4"
-      dir="ltr"
     >
       <span
         class="c5"
@@ -708,18 +675,17 @@ exports[`Bulletin should render live audio correctly 1`] = `
     </h3>
     <p
       class="c8"
-      dir="ltr"
+      type="audio"
     >
       This is the summary text
     </p>
     <div
       aria-hidden="true"
       class="c9"
-      dir="ltr"
+      type="audio"
     >
       <span
         class="c10"
-        dir="ltr"
       >
         <svg
           class="c11"
@@ -968,14 +934,7 @@ exports[`Bulletin should render live video correctly 1`] = `
 @media (min-width:37.5rem) {
   .c9 {
     display: inline-block;
-  }
-
-  .c9 function (_ref12) {
-    -webkit-var: dir = _ref12.dir;
-    -moz-var: dir = _ref12.dir;
-    -ms-var: dir = _ref12.dir;
-    var: dir = _ref12.dir;
-    return: getCTAPadding(dir);
+    padding: 0.5rem 1rem 0.5rem 0;
   }
 }
 
@@ -1034,11 +993,9 @@ exports[`Bulletin should render live video correctly 1`] = `
   </div>
   <div
     class="c3"
-    dir="ltr"
   >
     <h3
       class="c4"
-      dir="ltr"
     >
       <span
         class="c5"
@@ -1061,18 +1018,17 @@ exports[`Bulletin should render live video correctly 1`] = `
     </h3>
     <p
       class="c8"
-      dir="ltr"
+      type="video"
     >
       This is the summary text
     </p>
     <div
       aria-hidden="true"
       class="c9"
-      dir="ltr"
+      type="video"
     >
       <span
         class="c10"
-        dir="ltr"
       >
         <svg
           class="c11"
@@ -1309,14 +1265,7 @@ exports[`Bulletin should render video correctly 1`] = `
 @media (min-width:37.5rem) {
   .c8 {
     display: inline-block;
-  }
-
-  .c8 function (_ref12) {
-    -webkit-var: dir = _ref12.dir;
-    -moz-var: dir = _ref12.dir;
-    -ms-var: dir = _ref12.dir;
-    var: dir = _ref12.dir;
-    return: getCTAPadding(dir);
+    padding: 0.5rem 1rem 0.5rem 0;
   }
 }
 
@@ -1375,11 +1324,9 @@ exports[`Bulletin should render video correctly 1`] = `
   </div>
   <div
     class="c3"
-    dir="ltr"
   >
     <h3
       class="c4"
-      dir="ltr"
     >
       <span
         class="c5"
@@ -1395,18 +1342,17 @@ exports[`Bulletin should render video correctly 1`] = `
     </h3>
     <p
       class="c7"
-      dir="ltr"
+      type="video"
     >
       This is the summary text
     </p>
     <div
       aria-hidden="true"
       class="c8"
-      dir="ltr"
+      type="video"
     >
       <span
         class="c9"
-        dir="ltr"
       >
         <svg
           class="c10"

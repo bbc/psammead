@@ -31,7 +31,6 @@ npm install @bbc/psammead-bulletin --save
 | `headlineText` | string | yes | N/A  | `'Bulletin headline'` |
 | `isLive` | boolean | no | `false` | `true` |
 | `liveText` | string | no | `'Live'` | `'Localised Live'` |
-| `dir` | string | no | `'ltr'` | `One of ['ltr', 'rtl'] ` |
 
 ## Usage
 
