@@ -47,10 +47,7 @@ const initResizeObserver = ({ wrapperEl, setContentElRect }) => {
     };
     const RO = new ResizeObserver(callback);
 
-    RO.observe(
-      wrapperEl.current
-        .firstChild /* will break if using a fragment :thinking: */,
-    );
+    RO.observe(wrapperEl.current.firstChild);
 
     return RO;
   };

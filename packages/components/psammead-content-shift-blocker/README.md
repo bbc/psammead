@@ -26,6 +26,8 @@ Such content can be wrapped with `ContentShiftBlocker` to prevent the page from 
 | initialHeight | String/Number | false    | 'auto'  | 400             |
 | initialWidth  | String/Number | false    | 'auto'  | 400             |
 
+**Note** - `children` does not support passing in a React `Fragment` wrapping several children. Should be e.g. a div.
+
 ## Usage
 
 ```jsx
