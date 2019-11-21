@@ -20,6 +20,10 @@ import { grid } from '@bbc/psammead-styles/detection';
 
 const twoOfSixColumnsMaxWidthScaleable = `33.33%`;
 // (2 / 6) * 100 = 0.3333333333 = 33.33%
+
+const fourOfSixColumnsMaxWidthScaleable = `66.67%`;
+// (4 / 6) * 100 = 66.6666666667 = 66.67%
+
 const fullWidthColumnsMaxScaleable = `100%`;
 // (12 / 12) * 100 = 100 = 100%
 
@@ -47,7 +51,7 @@ const textWrapperStyles = `
   width: ${fullWidthColumnsMaxScaleable};
   @supports (${grid}) {
     width: initial;
-    padding-left: 0;
+    padding: 0;
   }
 `;
 
@@ -71,7 +75,10 @@ const TVTextWrapper = styled.div`
   @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
     grid-column: 4 / span 3;
     width: ${halfWidthColumnsMaxScaleable};
-    padding-left: ${GEL_SPACING_DBL};
+    ${({ direction }) =>
+      direction === 'ltr'
+        ? `padding-right: ${GEL_SPACING_DBL};`
+        : `padding-left: ${GEL_SPACING_DBL};`}}
   }
   ${textWrapperStyles};
 `;
@@ -95,6 +102,7 @@ const RadioTextWrapper = styled.div`
   @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
     grid-column: 3 / span 4;
     padding-left: ${GEL_SPACING_DBL};
+    width: ${fourOfSixColumnsMaxWidthScaleable};
   }
   ${textWrapperStyles};
 `;
@@ -194,7 +202,7 @@ const Bulletin = ({
   return (
     <BulletinWrapper>
       <ImageWrapper>{image}</ImageWrapper>
-      <TextWrapper>
+      <TextWrapper direction={dir}>
         <BulletinHeading script={script} service={service}>
           <VisuallyHiddenText>
             {isLive ? `${ctaText} ${liveText} ` : `${ctaText} `}

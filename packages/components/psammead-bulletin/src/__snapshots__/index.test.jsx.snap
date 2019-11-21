@@ -159,13 +159,14 @@ exports[`Bulletin should render audio correctly 1`] = `
   .c3 {
     grid-column: 3 / span 4;
     padding-left: 1rem;
+    width: 66.67%;
   }
 }
 
 @supports (grid-template-columns:fit-content(200px)) {
   .c3 {
     width: initial;
-    padding-left: 0;
+    padding: 0;
   }
 }
 
@@ -254,6 +255,7 @@ exports[`Bulletin should render audio correctly 1`] = `
   </div>
   <div
     class="c3"
+    direction="ltr"
   >
     <h3
       class="c4"
@@ -475,13 +477,14 @@ exports[`Bulletin should render live audio correctly 1`] = `
   .c3 {
     grid-column: 3 / span 4;
     padding-left: 1rem;
+    width: 66.67%;
   }
 }
 
 @supports (grid-template-columns:fit-content(200px)) {
   .c3 {
     width: initial;
-    padding-left: 0;
+    padding: 0;
   }
 }
 
@@ -570,6 +573,7 @@ exports[`Bulletin should render live audio correctly 1`] = `
   </div>
   <div
     class="c3"
+    direction="ltr"
   >
     <h3
       class="c4"
@@ -801,14 +805,14 @@ exports[`Bulletin should render live video correctly 1`] = `
   .c3 {
     grid-column: 4 / span 3;
     width: 50%;
-    padding-left: 1rem;
+    padding-right: 1rem;
   }
 }
 
 @supports (grid-template-columns:fit-content(200px)) {
   .c3 {
     width: initial;
-    padding-left: 0;
+    padding: 0;
   }
 }
 
@@ -897,6 +901,7 @@ exports[`Bulletin should render live video correctly 1`] = `
   </div>
   <div
     class="c3"
+    direction="ltr"
   >
     <h3
       class="c4"
@@ -1116,14 +1121,14 @@ exports[`Bulletin should render video correctly 1`] = `
   .c3 {
     grid-column: 4 / span 3;
     width: 50%;
-    padding-left: 1rem;
+    padding-right: 1rem;
   }
 }
 
 @supports (grid-template-columns:fit-content(200px)) {
   .c3 {
     width: initial;
-    padding-left: 0;
+    padding: 0;
   }
 }
 
@@ -1212,6 +1217,7 @@ exports[`Bulletin should render video correctly 1`] = `
   </div>
   <div
     class="c3"
+    direction="ltr"
   >
     <h3
       class="c4"
