@@ -21,7 +21,7 @@ The `MostRead` component is designed to display the most read articles given a d
 <!-- prettier-ignore -->
 | Argument | Type | Required | Default | Example |
 | -------- | ---- | -------- | ------- | ------- |
-| items | arrayOf(links) | yes | N/A | `[{ title: 'This is a headline', href: 'https://www.bbc.com' }]`
+| items | array | yes | N/A | `[{ title: 'This is a headline', href: 'https://www.bbc.com' }]`
 | service | string | yes | N/A | `'news'` |
 | script | object | yes | N/A | `{ canon: { groupA: { fontSize: '28', lineHeight: '32',}, groupB: { fontSize: '32', lineHeight: '36', }, groupD: { fontSize: '44', lineHeight: '48', }, }, trafalgar: { groupA: { fontSize: '20', lineHeight: '24', }, groupB: { fontSize: '24', lineHeight: '28', }, groupD: { fontSize: '32', lineHeight: '36', }, }, }` |
 | dir | oneOf(['rtl', 'ltr}) | yes | 'ltr' | `'ltr'`|
