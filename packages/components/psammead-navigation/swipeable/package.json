@@ -1,5 +1,5 @@
 {
-  "name": "@bbc/psammead-navigation/swipeable-navigation",
+  "name": "@bbc/psammead-navigation/swipeable",
   "private": true,
   "main": "../dist/SwipeableNavigation",
   "module": "../esm/SwipeableNavigation",
