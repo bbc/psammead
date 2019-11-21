@@ -144,6 +144,7 @@ const PlayCTA = styled.div.attrs({ 'aria-hidden': true })`
   @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
     display: inline-block;
     padding: ${GEL_SPACING} ${GEL_SPACING_DBL};
+    ${({ isAudio }) => isAudio && `margin-bottom: ${GEL_SPACING_DBL};`}
   }
 `;
 
@@ -167,7 +168,7 @@ const TVHeading = styled.h3`
   margin: 0; /* Reset */
   padding: ${GEL_SPACING} 0;
   @media(min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
-    padding:0 0 ${GEL_SPACING} 0;
+    padding: 0 0 ${GEL_SPACING} 0;
   }
 `;
 
@@ -223,7 +224,7 @@ const Bulletin = ({
           isLive={isLive}
           service={service}
           script={script}
-          type={type}
+          isAudio={isAudio}
           dir={dir}
         >
           <IconWrapper dir={dir}>{mediaIcons[type]}</IconWrapper>

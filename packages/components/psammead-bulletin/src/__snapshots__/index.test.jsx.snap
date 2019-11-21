@@ -195,6 +195,7 @@ exports[`Bulletin should render audio correctly 1`] = `
   .c8 {
     display: inline-block;
     padding: 0.5rem 1rem;
+    margin-bottom: 1rem;
   }
 }
 
@@ -281,7 +282,6 @@ exports[`Bulletin should render audio correctly 1`] = `
       aria-hidden="true"
       class="c8"
       dir="ltr"
-      type="audio"
     >
       <span
         class="c9"
@@ -512,6 +512,7 @@ exports[`Bulletin should render live audio correctly 1`] = `
   .c9 {
     display: inline-block;
     padding: 0.5rem 1rem;
+    margin-bottom: 1rem;
   }
 }
 
@@ -605,7 +606,6 @@ exports[`Bulletin should render live audio correctly 1`] = `
       aria-hidden="true"
       class="c9"
       dir="ltr"
-      type="audio"
     >
       <span
         class="c10"
@@ -932,7 +932,6 @@ exports[`Bulletin should render live video correctly 1`] = `
       aria-hidden="true"
       class="c9"
       dir="ltr"
-      type="video"
     >
       <span
         class="c10"
@@ -1240,7 +1239,6 @@ exports[`Bulletin should render video correctly 1`] = `
       aria-hidden="true"
       class="c8"
       dir="ltr"
-      type="video"
     >
       <span
         class="c9"
