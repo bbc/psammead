@@ -57,8 +57,7 @@ const DropdownUl = styled.ul`
 `;
 
 const DropdownLi = styled.li`
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
+  padding: 0.75rem 0;
   border-bottom: 0.0625rem solid ${C_SHADOW};
 
   &:last-child {

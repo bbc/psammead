@@ -45,7 +45,7 @@ The `@bbc/psammead-navigation` package is a set of two components, `NavigationUl
 <!-- prettier-ignore -->
 | Argument | Type | Required | Default | Example |
 | -------- | ---- | -------- | ------- | ------- |
-| children | node | Yes | N/A | `<DropdownNavigationLi script={latin} service='news' key='sport' url='/sport' active={false}> Sport </DropdownNavigationLi>` |
+| children | node | Yes | N/A | `<DropdownNavigationLi script={latin} service='news' key='sport' url='/sport' active="false"> Sport </DropdownNavigationLi>` |
 | announcedText | string | Yes | N/A | `'Menu'` |
 | onClose | function | Yes | N/A | `() => { console.log("Handle close action"); }` |
 
@@ -54,7 +54,7 @@ The `@bbc/psammead-navigation` package is a set of two components, `NavigationUl
 <!-- prettier-ignore -->
 | Argument | Type | Required | Default | Example |
 | -------- | ---- | -------- | ------- | ------- |
-| children | node | Yes | N/A | `<DropdownNavigationLi script={latin} service='news' key='sport' url='/sport' active={false}> Sport </DropdownNavigationLi>` |
+| children | node | Yes | N/A | `<DropdownNavigationLi script={latin} service='news' key='sport' url='/sport' active="false"> Sport </DropdownNavigationLi>` |
 | announcedText | string | Yes | N/A | `'Menu'` |
 | onClose | string | Yes | N/A | `"tap:menu.toggleVisibility"` |
 
@@ -102,7 +102,7 @@ import { latin } from '@bbc/gel-foundations/scripts';
     <NavigationLi
       url="/"
       script={latin}
-      active="true"
+      active
       currentPageText="Current Page"
       service="news"
     >
@@ -131,7 +131,7 @@ import { latin } from '@bbc/gel-foundations/scripts';
         service="news"
         key="Home"
         url="/"
-        active={true}
+        active
         currentPageText="Current page"
     >
       Home
@@ -155,7 +155,7 @@ import { latin } from '@bbc/gel-foundations/scripts';
         service="news"
         key="Home"
         url="/"
-        active={true}
+        active
         currentPageText="Current page"
     >
       Home
