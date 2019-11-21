@@ -86,21 +86,9 @@ const StyledListItem = styled.li`
   z-index: 2;
 
   @media (max-width: ${GEL_GROUP_2_SCREEN_WIDTH_MAX}) {
-    &:last-child > ${StyledLink} {
+    &:last-child {
       ${({ dir }) => css`
         margin-${dir === 'ltr' ? 'right' : 'left'}: ${GRADIENT_WIDTH}; 
-      `}
-    }
-
-    &:last-child > ${StyledLink}:hover::after {
-      ${({ dir }) => css`
-        ${dir === 'ltr' ? 'right' : 'left'}: ${GRADIENT_WIDTH};
-      `}
-    }
-
-    &:last-child > ${StyledLink}:focus::after {
-      ${({ dir }) => css`
-        ${dir === 'ltr' ? 'right' : 'left'}: ${GRADIENT_WIDTH};
       `}
     }
   }
