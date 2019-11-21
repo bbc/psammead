@@ -48,7 +48,7 @@ const CrossButton = styled.button`
   }
 `;
 
-const DropdownUl = styled.ul`
+export const DropdownUl = styled.ul`
   list-style-type: none;
   margin: 0;
   padding: 0 ${GEL_SPACING};
@@ -138,7 +138,7 @@ export const CanonicalDropdown = ({ announcedText, onClose, children }) => (
     >
       {navigationIcons.cross}
     </CrossButton>
-    <DropdownUl role="list">{children}</DropdownUl>
+    {children}
   </DropdownWrapper>
 );
 

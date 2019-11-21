@@ -17,6 +17,7 @@ import Navigation, { NavigationUl, NavigationLi } from './index';
 import {
   CanonicalHamburgerMenu,
   CanonicalDropdown,
+  DropdownUl,
   DropdownNavigationLi,
 } from './DropdownNavigation';
 import igboNavData from '../testHelpers/igbo';
@@ -161,24 +162,26 @@ const navigationStory = (
 
 const dropdownStory = () => ({ dir, script, service }) => (
   <CanonicalDropdown announcedText="Menu" onClose={() => {}}>
-    {pidginNavData.map((item, index) => {
-      const active = index === 3;
-      const { title, url } = item;
+    <DropdownUl role="list">
+      {pidginNavData.map((item, index) => {
+        const active = index === 3;
+        const { title, url } = item;
 
-      return (
-        <DropdownNavigationLi
-          script={script}
-          service={service}
-          key={title}
-          dir={dir}
-          url={url}
-          active={active}
-          currentPageText="Current page"
-        >
-          {title}
-        </DropdownNavigationLi>
-      );
-    })}
+        return (
+          <DropdownNavigationLi
+            script={script}
+            service={service}
+            key={title}
+            dir={dir}
+            url={url}
+            active={active}
+            currentPageText="Current page"
+          >
+            {title}
+          </DropdownNavigationLi>
+        );
+      })}
+    </DropdownUl>
   </CanonicalDropdown>
 );
 
