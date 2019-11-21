@@ -38,8 +38,7 @@ exports[`Canonical dropdown navigation should render correctly 1`] = `
 .c3 {
   list-style-type: none;
   margin: 0;
-  padding-right: 0.5rem;
-  padding-left: 0.5rem;
+  padding: 0 0.5rem;
   border-bottom: 0.125rem solid #3F3F42;
 }
 

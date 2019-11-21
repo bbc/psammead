@@ -51,8 +51,7 @@ const CrossButton = styled.button`
 const DropdownUl = styled.ul`
   list-style-type: none;
   margin: 0;
-  padding-right: ${GEL_SPACING};
-  padding-left: ${GEL_SPACING};
+  padding: 0 ${GEL_SPACING};
   border-bottom: 0.125rem solid ${C_SHADOW};
 `;
 
