@@ -20,6 +20,8 @@ import { grid } from '@bbc/psammead-styles/detection';
 
 const twoOfSixColumnsMaxWidthScaleable = `33.33%`;
 // (2 / 6) * 100 = 0.3333333333 = 33.33%
+const fullWidthColumnsMaxScaleable = `100%`;
+// (12 / 12) * 100 = 100 = 100%
 
 const halfWidthColumnsMaxScaleable = `50%`;
 
@@ -42,6 +44,7 @@ const imageWrapperStyles = `
 const textWrapperStyles = `
   grid-column: 1 / span 6;
   display: inline-block;
+  width: ${fullWidthColumnsMaxScaleable};
   @supports (${grid}) {
     width: initial;
     padding-left: 0;
