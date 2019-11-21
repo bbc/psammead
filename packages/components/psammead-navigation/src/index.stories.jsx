@@ -159,14 +159,6 @@ const navigationStory = (
   </>
 );
 
-const hamburgerStory = () => {
-  return (
-    <BackgroundContainer>
-      <CanonicalHamburgerMenu announcedText="Menu" onOpen={() => {}} />
-    </BackgroundContainer>
-  );
-};
-
 const dropdownStory = () => ({ dir, script, service }) => (
   <CanonicalDropdown announcedText="Menu" onClose={() => {}}>
     {pidginNavData.map((item, index) => {
@@ -208,9 +200,17 @@ navStoriesData.map(item => {
   );
 });
 
-storiesWithoutBrand.add('Hamburger menu', hamburgerStory, {
-  notes,
-});
+storiesWithoutBrand.add(
+  'Hamburger menu',
+  () => (
+    <BackgroundContainer>
+      <CanonicalHamburgerMenu announcedText="Menu" onOpen={() => {}} />
+    </BackgroundContainer>
+  ),
+  {
+    notes,
+  },
+);
 
 storiesWithoutBrand.add('Dropdown menu', dropdownStory(), {
   notes,
