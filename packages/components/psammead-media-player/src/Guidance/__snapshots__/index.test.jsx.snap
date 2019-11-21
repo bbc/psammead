@@ -10,16 +10,26 @@ exports[`Media Player: Guidance should render Guidance 1`] = `
   width: 100%;
   height: 100%;
   position: absolute;
-  background-color: rgba(34,34,34,0.75);
   border: 0.0625rem solid transparent;
   color: #FFFFFF;
+  background-color: rgba(34,34,34,0.75);
 }
 
 .c1 {
   display: block;
+  position: absolute;
   font-weight: normal;
   padding: 0.5rem;
   border-bottom: 0.0625rem solid transparent;
+}
+
+.c2 strong {
+  display: block;
+  position: absolute;
+  font-weight: normal;
+  padding: 0.5rem;
+  border-bottom: 0.0625rem solid transparent;
+  bottom: 0;
 }
 
 @media (min-width:37.5rem) {
@@ -46,14 +56,29 @@ exports[`Media Player: Guidance should render Guidance 1`] = `
   }
 }
 
+@media screen and (-ms-high-contrast:active) {
+  .c2 strong {
+    background-color: window;
+  }
+}
+
+@media (min-width:25rem) {
+  .c2 strong {
+    padding: 1rem;
+  }
+}
+
 <div
-  class="c0"
+  class="c0 guidance-wrapper"
 >
   <strong
     aria-hidden="true"
-    class="c1"
+    class="c1 guidance-message"
   >
     Guidance: Contains strong language with adult humor
   </strong>
+  <noscript
+    class="c2"
+  />
 </div>
 `;
