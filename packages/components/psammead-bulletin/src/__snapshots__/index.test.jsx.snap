@@ -58,6 +58,7 @@ exports[`Bulletin should render audio correctly 1`] = `
 }
 
 .c0 {
+  position: relative;
   background-color: #F2F2F2;
   display: grid;
   grid-template-columns: repeat(6,1fr);
@@ -374,6 +375,7 @@ exports[`Bulletin should render live audio correctly 1`] = `
 }
 
 .c0 {
+  position: relative;
   background-color: #F2F2F2;
   display: grid;
   grid-template-columns: repeat(6,1fr);
@@ -697,6 +699,7 @@ exports[`Bulletin should render live video correctly 1`] = `
 }
 
 .c0 {
+  position: relative;
   background-color: #F2F2F2;
   display: grid;
   grid-template-columns: repeat(6,1fr);
@@ -1011,6 +1014,7 @@ exports[`Bulletin should render video correctly 1`] = `
 }
 
 .c0 {
+  position: relative;
   background-color: #F2F2F2;
   display: grid;
   grid-template-columns: repeat(6,1fr);

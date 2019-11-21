@@ -34,6 +34,7 @@ const fullWidthColumnsMaxScaleable = `100%`;
 const halfWidthColumnsMaxScaleable = `50%`;
 
 const bulletinWrapperStyles = `
+  position: relative;
   background-color: ${C_LUNAR};
   display: grid;
   grid-template-columns: repeat(6, 1fr);
