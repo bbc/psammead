@@ -168,7 +168,7 @@ exports[`Navigation should render correctly 1`] = `
 
 @media (max-width:37.4375rem) {
   .c4:last-child > .c5 {
-    padding-right: 3rem;
+    margin-right: 3rem;
   }
 
   .c4:last-child > .c5:hover::after {
@@ -473,7 +473,7 @@ exports[`Swipeable Navigation should render AMP version correctly 1`] = `
 
 @media (max-width:37.4375rem) {
   .c5:last-child > .c6 {
-    padding-right: 3rem;
+    margin-right: 3rem;
   }
 
   .c5:last-child > .c6:hover::after {
@@ -784,7 +784,7 @@ exports[`Swipeable Navigation should render Canonical version correctly 1`] = `
 
 @media (max-width:37.4375rem) {
   .c5:last-child > .c6 {
-    padding-right: 3rem;
+    margin-right: 3rem;
   }
 
   .c5:last-child > .c6:hover::after {

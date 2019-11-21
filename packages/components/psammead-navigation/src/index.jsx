@@ -88,7 +88,7 @@ const StyledListItem = styled.li`
   @media (max-width: ${GEL_GROUP_2_SCREEN_WIDTH_MAX}) {
     &:last-child > ${StyledLink} {
       ${({ dir }) => css`
-        padding-${dir === 'ltr' ? 'right' : 'left'}: ${GRADIENT_WIDTH}; 
+        margin-${dir === 'ltr' ? 'right' : 'left'}: ${GRADIENT_WIDTH}; 
       `}
     }
 
