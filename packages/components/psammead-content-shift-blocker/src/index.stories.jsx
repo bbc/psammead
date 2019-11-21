@@ -22,49 +22,51 @@ const StyledImage = styled.img`
   display: block;
 `;
 
-const renderImage = src => <StyledImage src={src} alt="Lovely dogs :)" />;
+const getRandomInt = (min = 200, max = 400) =>
+  Math.floor(Math.random() * (max - min)) + min;
 
-const ImageTicker = () => {
-  const getRandomInt = (min = 200, max = 400) =>
-    Math.floor(Math.random() * (max - min)) + min;
+const ImageTicker = ({ delay }) => {
   const [sizes, setSizes] = useState('400/200');
 
   useEffect(() => {
-    const timer = setInterval(() => {
+    const interval = setInterval(() => {
       setSizes(`${getRandomInt()}/${getRandomInt()}`);
-    }, 6000);
-    return () => {
-      clearInterval(timer);
-    };
+    }, delay);
+
+    return () => clearInterval(interval);
   }, []);
 
-  return renderImage(`https://placekitten.com/${sizes}`);
-};
-
-const Gallery = ({ script, service }) => {
-  const StyledFigure = styled.figure`
-    border: solid #ccc 1px;
-    padding: 16px;
-    text-align: center;
-  `;
-  const StyledCaption = styled.figcaption`
-    padding-top: 12px;
-  `;
-
   return (
-    <StyledFigure>
-      <ContentShiftBlocker scrollable initialHeight={200} initialWidth={400}>
-        <ImageTicker />
-      </ContentShiftBlocker>
-      <StyledCaption>
-        <Paragraph script={script} service={service}>
-          A gallery of good dogs :)
-        </Paragraph>
-      </StyledCaption>
-    </StyledFigure>
+    <StyledImage
+      src={`https://placekitten.com/${sizes}`}
+      alt="Naughty cats >:("
+    />
   );
 };
 
+const StyledFigure = styled.figure`
+  border: solid #ccc 1px;
+  padding: 16px;
+  text-align: center;
+`;
+const StyledCaption = styled.figcaption`
+  padding-top: 12px;
+`;
+const Gallery = ({ script, service, delay = 6000 }) => (
+  <StyledFigure>
+    <ContentShiftBlocker scrollable initialHeight={200} initialWidth={400}>
+      <ImageTicker delay={delay} />
+    </ContentShiftBlocker>
+    <StyledCaption>
+      <Paragraph script={script} service={service}>
+        A gallery of naughty cats&nbsp;
+        <span role="img" aria-label="angry face">
+          😠
+        </span>
+      </Paragraph>
+    </StyledCaption>
+  </StyledFigure>
+);
 const paragraphs = [
   'Doggo ipsum sub woofer ruff long woofer, very taste wow. Doggorino very hand that feed shibe smol adorable doggo, floofs. Smol borking doggo with a long snoot for pats thicc blep wow very biscit thicc puggorino wrinkler ruff stop it fren wow very biscit, heckin good boys corgo heckin good boys lotsa pats heckin good boys heckin floofs. Sub woofer aqua doggo bork length boy long water shoob, ruff shibe. Pupperino the neighborhood pupper pats woofer you are doing me the shock big ol pupper porgo mlem, snoot sub woofer clouds floofs pupperino. You are doing me a frighten I am bekom fat long doggo, shooberino. Puggo clouds yapper, the neighborhood pupper. Thicc shibe pupper borking doggo, long water shoob shoober. Blop bork boof heckin angery woofer snoot puggo pats, porgo h*ck ruff heckin good boys and girls big ol pupper. Waggy wags pats bork shooberino heckin good boys and girls I am bekom fat stop it fren, I am bekom fat very jealous pupper maximum borkdrive shoober wow very biscit.',
   'Smol puggorino clouds puggo, waggy wags. Extremely cuuuuuute you are doing me the shock borkdrive yapper, you are doin me a concern. Lotsa pats extremely cuuuuuute pupper ruff very jealous pupper adorable doggo doggo, aqua doggo you are doing me the shock boofers wow such tempt borkf. Tungg lotsa pats heck big ol, wow such tempt. Floofs he made many woofs heckin good boys and girls porgo boof, fat boi big ol pupper. What a nice floof wow very biscit yapper, heckin. Noodle horse bork puggo doggo adorable doggo wrinkler heck, fat boi very jealous pupper shooberino porgo. Extremely cuuuuuute tungg borkdrive big ol pupper shibe waggy wags borkdrive heckin, wrinkler you are doing me a frighten pupper porgo blop length boy. Long doggo thicc long woofer, porgo. Boof long woofer super chub fluffer yapper, extremely cuuuuuute sub woofer. borkdrive yapper long water shoob. I am bekom fat you are doing me the shock ur givin me a spook, extremely cuuuuuute.',
@@ -90,6 +92,80 @@ storiesOf('Components|ContentShiftBlocker', module)
           <Gallery script={script} service={service} />
           {renderParagraphs({ script, service })}
           {renderParagraphs({ script, service })}
+        </Wrapper>
+      );
+    },
+    { notes },
+  )
+  .add(
+    'multiple',
+    ({ script, service }) => {
+      return (
+        <Wrapper>
+          <Headline>The Daily Doggo</Headline>
+          {renderParagraphs({ script, service })}
+          <Gallery script={script} service={service} />
+          {renderParagraphs({ script, service })}
+          <Gallery script={script} service={service} />
+          {renderParagraphs({ script, service })}
+          {renderParagraphs({ script, service })}
+          {renderParagraphs({ script, service })}
+          <Gallery script={script} service={service} />
+          <Gallery script={script} service={service} />
+          {renderParagraphs({ script, service })}
+          {renderParagraphs({ script, service })}
+          {renderParagraphs({ script, service })}
+          {renderParagraphs({ script, service })}
+        </Wrapper>
+      );
+    },
+    { notes },
+  )
+  .add(
+    'multiple staggered',
+    ({ script, service }) => {
+      return (
+        <Wrapper>
+          <Headline>The Daily Doggo</Headline>
+          {renderParagraphs({ script, service })}
+          <Gallery delay={4000} script={script} service={service} />
+          {renderParagraphs({ script, service })}
+          <Gallery delay={3000} script={script} service={service} />
+          {renderParagraphs({ script, service })}
+          {renderParagraphs({ script, service })}
+          {renderParagraphs({ script, service })}
+          <Gallery delay={2000} script={script} service={service} />
+          <Gallery delay={1000} script={script} service={service} />
+          {renderParagraphs({ script, service })}
+          {renderParagraphs({ script, service })}
+          {renderParagraphs({ script, service })}
+          {renderParagraphs({ script, service })}
+        </Wrapper>
+      );
+    },
+    { notes },
+  )
+  .add(
+    'nothing but cats',
+    ({ script, service }) => {
+      return (
+        <Wrapper>
+          <Gallery delay={1000} script={script} service={service} />
+          <Gallery delay={4000} script={script} service={service} />
+          <Gallery delay={9000} script={script} service={service} />
+          <Gallery delay={4000} script={script} service={service} />
+          <Gallery delay={7000} script={script} service={service} />
+          <Gallery delay={2000} script={script} service={service} />
+          <Gallery delay={3000} script={script} service={service} />
+          <Gallery delay={2000} script={script} service={service} />
+          <Gallery delay={5000} script={script} service={service} />
+          <Gallery delay={9000} script={script} service={service} />
+          <Gallery delay={8000} script={script} service={service} />
+          <Gallery delay={2000} script={script} service={service} />
+          <Gallery delay={6000} script={script} service={service} />
+          <Gallery delay={8000} script={script} service={service} />
+          <Gallery delay={3000} script={script} service={service} />
+          <Gallery delay={2000} script={script} service={service} />
         </Wrapper>
       );
     },
