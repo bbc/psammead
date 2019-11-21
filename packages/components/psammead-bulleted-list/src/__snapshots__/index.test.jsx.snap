@@ -13,11 +13,9 @@ exports[`PsammeadBulletedList should render correctly from ltr 1`] = `
 .c0 > li::before {
   content: ' ';
   display: inline-block;
-  width: 1.5rem;
-  background: url('data:image/svg+xml;base64,') no-repeat;
-  left: center;
-  margin-left: -1.5rem;
-  background-size: 30%;
+  width: 2rem;
+  background: url("data:image/svg+xml,%3Csvg height='10' width='10' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='5' cy='5' r='3'%3E%3C/circle%3E%3C/svg%3E") no-repeat center;
+  margin-left: -2rem;
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
@@ -63,11 +61,9 @@ exports[`PsammeadBulletedList should render correctly from rtl 1`] = `
 .c0 > li::before {
   content: ' ';
   display: inline-block;
-  width: 1.5rem;
-  background: url('data:image/svg+xml;base64,') no-repeat;
-  right: center;
-  margin-right: -1.5rem;
-  background-size: 30%;
+  width: 2rem;
+  background: url("data:image/svg+xml,%3Csvg height='10' width='10' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='5' cy='5' r='3'%3E%3C/circle%3E%3C/svg%3E") no-repeat center;
+  margin-right: -2rem;
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
