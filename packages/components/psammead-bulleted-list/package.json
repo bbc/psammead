@@ -1,13 +1,13 @@
 {
-  "name": "@bbc/psammead-bulletin",
-  "version": "0.1.0-alpha.6",
+  "name": "@bbc/psammead-bulleted-list",
+  "version": "0.1.0-alpha.1",
   "main": "dist/index.js",
   "module": "esm/index.js",
   "sideEffects": false,
-  "description": "A bulletin component for live and non-live radio and tv.",
+  "description": "React styled component for ordered and unordered lists",
   "repository": {
     "type": "git",
-    "url": "https://github.com/BBC-News/psammead/tree/latest/packages/components/psammead-bulletin"
+    "url": "https://github.com/BBC-News/psammead/tree/latest/packages/components/psammead-bulleted-list"
   },
   "author": {
     "name": "Psammead Maintainers",
@@ -17,16 +17,14 @@
   "bugs": {
     "url": "https://github.com/bbc/psammead/issues"
   },
-  "homepage": "https://github.com/BBC-News/psammead/blob/latest/packages/components/psammead-bulletin/README.md",
+  "homepage": "https://github.com/BBC-News/psammead/blob/latest/packages/components/psammead-bulleted-list/README.md",
   "dependencies": {
     "@bbc/gel-foundations": "^3.4.1",
-    "@bbc/psammead-styles": "^4.1.0",
-    "@bbc/psammead-assets": "^2.10.1"
+    "@bbc/psammead-styles": "^4.1.0"
   },
   "peerDependencies": {
-    "react": "^16.10.2",
     "styled-components": "^4.3.2",
-    "prop-types": "^15.7.2"
+    "react-dom": "^16.12.0"
   },
   "publishConfig": {
     "tag": "alpha"
