@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 2.0.10 | [PR#2666](https://github.com/bbc/psammead/pull/2666) Talos - Bump Dependencies - @bbc/psammead-image-placeholder, @bbc/psammead-media-indicator |
 | 2.0.9 | [PR#2657](https://github.com/bbc/psammead/pull/2657) Update codeowners |
 | 2.0.8 | [PR#2663](https://github.com/bbc/psammead/pull/2663) Talos - Bump Dependencies - @bbc/psammead-assets |
 | 2.0.7 | [PR#2656](https://github.com/bbc/psammead/pull/2656) Talos - Bump Dependencies - @bbc/psammead-image-placeholder, @bbc/psammead-media-indicator |
