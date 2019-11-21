@@ -12,37 +12,38 @@ import Grid from '../../psammead-grid';
 import { MostReadRank, MostReadLink } from './item';
 
 const MostReadItemProps = {
+  item: true,
   columns: {
-    group0: 18,
-    group1: 18,
-    group2: 9,
-    group3: 9,
-    group4: 12,
-    group5: 12,
+    group0: 6,
+    group1: 6,
+    group2: 3,
+    group3: 3,
+    group4: 4,
+    group5: 4,
   },
 };
 
 const MostReadRankProps = {
   item: true,
   columns: {
-    group0: 2,
-    group1: 2,
-    group2: 2,
-    group3: 2,
-    group4: 2,
-    group5: 2,
+    group0: 1,
+    group1: 1,
+    group2: 1,
+    group3: 1,
+    group4: 1,
+    group5: 1,
   },
 };
 
 const MostReadLinkProps = {
   item: true,
   columns: {
-    group0: 16,
-    group1: 16,
-    group2: 7,
-    group3: 7,
-    group4: 10,
-    group5: 10,
+    group0: 5,
+    group1: 5,
+    group2: 2,
+    group3: 2,
+    group4: 4,
+    group5: 3,
   },
 };
 
@@ -50,12 +51,12 @@ const MostReadListProps = {
   enableGelGutters: true,
   enableGelMargins: true,
   columns: {
-    group0: 18,
-    group1: 18,
-    group2: 18,
-    group3: 18,
-    group4: 24,
-    group5: 60,
+    group0: 6,
+    group1: 6,
+    group2: 6,
+    group3: 6,
+    group4: 8,
+    group5: 20,
   },
 };
 
@@ -81,16 +82,21 @@ const StyledOl = styled.ol.attrs({
   padding: 0;
 `;
 
+const StyledLi = styled.li.attrs({
+  role: 'listitem',
+})`
+  margin: 0;
+  padding: 0;
+`;
+
 const MostReadItem = ({ rank, link, service, script, dir }) => (
   <Grid {...MostReadItemProps} dir={dir} forwardedAs="li">
-    <Grid {...MostReadRankProps} dir={dir}>
+    <StyledLi>
       <MostReadRank service={service} script={script}>
         {rank}
       </MostReadRank>
-    </Grid>
-    <Grid {...MostReadLinkProps} dir={dir}>
       <MostReadLink service={service} link={link} script={script} dir={dir} />
-    </Grid>
+    </StyledLi>
   </Grid>
 );
 

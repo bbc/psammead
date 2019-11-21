@@ -33,11 +33,14 @@ const StyledLink = styled.a`
 
 const StyledItem = styled.div`
   padding-bottom: ${GEL_SPACING_TRPL};
-  ${paddingStart}: ${GEL_SPACING_DBL};
+  ${paddingStart}: 16px;
+  float: left;
+  width: 80%;
 
   @media (min-width: ${GEL_GROUP_5_SCREEN_WIDTH_MIN}) {
     padding-top: ${GEL_SPACING};
     ${paddingStart}: ${GEL_SPACING_QUAD};
+    width: 70%;
   }
 `;
 
@@ -47,8 +50,8 @@ export const MostReadRank = styled.span`
   color: ${C_POSTBOX};
   margin: 0; /* Reset */
   padding: 0;
-  display: inline-block;
-  width: 3rem;
+  float: left;
+  width: 20%;
 `;
 
 export const MostReadLink = ({
