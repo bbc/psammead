@@ -1,7 +1,6 @@
 {
   "name": "@bbc/psammead-navigation/swipeable-navigation",
   "private": true,
-  "main": "../dist/SwipeabeNavigation",
-  "module": "../esm/SwipeabeNavigation",
+  "main": "../dist/SwipeablleNavigation",
   "sideEffects": false
 }
