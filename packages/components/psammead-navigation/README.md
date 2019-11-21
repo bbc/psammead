@@ -130,7 +130,7 @@ import { CanonicalDropdown, DropdownUl, DropdownNavigationLi } from '@bbc/psamme
 import { latin } from '@bbc/gel-foundations/scripts';
 
 <CanonicalDropdown announcedText="Menu" onClose={() => {}}>
-  <DropdownUl role="list">
+  <DropdownUl>
     <DropdownNavigationLi
         script={latin}
         service="news"
@@ -156,7 +156,7 @@ import { AmpDropdown, DropdownUl, DropdownNavigationLi } from '@bbc/psammead-nav
 import { latin } from '@bbc/gel-foundations/scripts';
 
 <AmpDropdown announcedText="Menu" onClose="tap:menu.toggleVisibility">
-  <DropdownUl role="list">
+  <DropdownUl>
     <DropdownNavigationLi
         script={latin}
         service="news"

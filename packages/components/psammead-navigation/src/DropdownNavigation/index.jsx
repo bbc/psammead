@@ -48,7 +48,7 @@ const CrossButton = styled.button`
   }
 `;
 
-export const DropdownUl = styled.ul`
+export const DropdownUl = styled.ul.attrs({ role: 'list' })`
   list-style-type: none;
   margin: 0;
   padding: 0 ${GEL_SPACING};

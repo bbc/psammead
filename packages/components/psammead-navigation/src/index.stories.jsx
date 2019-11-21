@@ -162,7 +162,7 @@ const navigationStory = (
 
 const dropdownStory = () => ({ dir, script, service }) => (
   <CanonicalDropdown announcedText="Menu" onClose={() => {}}>
-    <DropdownUl role="list">
+    <DropdownUl>
       {pidginNavData.map((item, index) => {
         const active = index === 3;
         const { title, url } = item;

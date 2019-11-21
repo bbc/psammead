@@ -13,7 +13,7 @@ describe('Canonical dropdown navigation', () => {
   shouldMatchSnapshot(
     'should render correctly',
     <CanonicalDropdown announcedText="Menu" onClose={() => {}}>
-      <DropdownUl role="list">
+      <DropdownUl>
         {pidginNavData.map((item, index) => {
           const active = index === 3;
           const { title, url } = item;
