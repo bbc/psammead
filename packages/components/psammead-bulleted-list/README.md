@@ -48,7 +48,7 @@ const props = {
 
 ### When not to use this component
 
-It's not ideal for when you need a custom bullet. Use the standard <ul> instead if you need to style your bullets.
+It's not ideal for when you need a custom bullet. Use the standard `<ul>` instead if you need to style your bullets.
 
 ### Accessibility notes
 
