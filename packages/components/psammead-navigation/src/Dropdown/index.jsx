@@ -90,8 +90,8 @@ export const DropdownNavigationLi = ({
   dir,
 }) => (
   <DropdownLi role="listitem">
-    {active && currentPageText ? (
-      <StyledDropdownLink script={script} service={service} href={url}>
+    <StyledDropdownLink script={script} service={service} href={url}>
+      {active && currentPageText ? (
         <StyledCurrentLink
           dir={dir}
           // eslint-disable-next-line jsx-a11y/aria-role
@@ -100,12 +100,10 @@ export const DropdownNavigationLi = ({
           <VisuallyHiddenText>{currentPageText}</VisuallyHiddenText>
           {children}
         </StyledCurrentLink>
-      </StyledDropdownLink>
-    ) : (
-      <StyledDropdownLink script={script} service={service} href={url}>
-        {children}
-      </StyledDropdownLink>
-    )}
+      ) : (
+        children
+      )}
+    </StyledDropdownLink>
   </DropdownLi>
 );
 
