@@ -63,6 +63,7 @@ dir="ltr"
 | script | object | yes | N/A | `{ canon: { groupA: { fontSize: '28', lineHeight: '32',}, groupB: { fontSize: '32', lineHeight: '36', }, groupD: { fontSize: '44', lineHeight: '48', }, }, trafalgar: { groupA: { fontSize: '20', lineHeight: '24', }, groupB: { fontSize: '24', lineHeight: '28', }, groupD: { fontSize: '32', lineHeight: '36', }, }, }` |
 | service | string | yes | N/A | `'news'` |
 | lastUpdated | node | no | null | `<time>12 March 2019</time>` |
+| dir | oneOf(['rtl', 'ltr}) | yes | 'ltr' | `'ltr'`|
 
 ### Usage
 
@@ -167,8 +168,6 @@ This component is to be used on `article` pages.
 Currently this component is in alpha. This is because it has not yet been tested with various assistive technologies. After it has had an accessibility swarm, this will be published under a standard version.
 
 ## Roadmap
-
-The `MostRead` component is designed to display the most read articles given a designated period of time which is dependent on service. The component comprises of a `MostReadTitle`, a `MostReadList` which is a grid containing a `MostReadCount/Rank` (name subject to change) and a `MostReadLink`. Finally we will add a wrapper that will export a list of most read components using `@bbc/psammead-grid` to display the most read items on a grid.
 
 ## Contributing
 
