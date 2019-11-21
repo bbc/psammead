@@ -1,7 +1,11 @@
 import React from 'react';
 import styled from 'styled-components';
 import { GEL_GROUP_3_SCREEN_WIDTH_MIN } from '@bbc/gel-foundations/breakpoints';
-import { GEL_SPACING, GEL_SPACING_DBL } from '@bbc/gel-foundations/spacings';
+import {
+  GEL_SPACING,
+  GEL_SPACING_DBL,
+  GEL_SPACING_HLF,
+} from '@bbc/gel-foundations/spacings';
 import {
   C_WHITE,
   C_POSTBOX,
@@ -118,14 +122,12 @@ const IconWrapper = styled.span`
     color: ${C_WHITE};
     fill: currentColor;
   }
-  margin: 0 0.25rem;
   @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
     display: inline-block;
-    margin-left: 0;
     ${({ dir }) =>
       dir === 'ltr'
-        ? `pading-left: ${GEL_SPACING}; margin-left: 0;`
-        : `pading-left: ${GEL_SPACING}; margin-right: 0;`}
+        ? `padding-right: ${GEL_SPACING_HLF};`
+        : `padding-left: ${GEL_SPACING_HLF};`}
   }
 `;
 

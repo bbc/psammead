@@ -87,7 +87,6 @@ exports[`Bulletin should render audio correctly 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  margin: 0 0.25rem;
 }
 
 .c9 > svg {
@@ -173,9 +172,7 @@ exports[`Bulletin should render audio correctly 1`] = `
 @media (min-width:37.5rem) {
   .c9 {
     display: inline-block;
-    margin-left: 0;
-    pading-left: 0.5rem;
-    margin-left: 0;
+    padding-right: 0.25rem;
   }
 }
 
@@ -406,7 +403,6 @@ exports[`Bulletin should render live audio correctly 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  margin: 0 0.25rem;
 }
 
 .c10 > svg {
@@ -492,9 +488,7 @@ exports[`Bulletin should render live audio correctly 1`] = `
 @media (min-width:37.5rem) {
   .c10 {
     display: inline-block;
-    margin-left: 0;
-    pading-left: 0.5rem;
-    margin-left: 0;
+    padding-right: 0.25rem;
   }
 }
 
@@ -731,7 +725,6 @@ exports[`Bulletin should render live video correctly 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  margin: 0 0.25rem;
 }
 
 .c10 > svg {
@@ -821,9 +814,7 @@ exports[`Bulletin should render live video correctly 1`] = `
 @media (min-width:37.5rem) {
   .c10 {
     display: inline-block;
-    margin-left: 0;
-    pading-left: 0.5rem;
-    margin-left: 0;
+    padding-right: 0.25rem;
   }
 }
 
@@ -1048,7 +1039,6 @@ exports[`Bulletin should render video correctly 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  margin: 0 0.25rem;
 }
 
 .c9 > svg {
@@ -1138,9 +1128,7 @@ exports[`Bulletin should render video correctly 1`] = `
 @media (min-width:37.5rem) {
   .c9 {
     display: inline-block;
-    margin-left: 0;
-    pading-left: 0.5rem;
-    margin-left: 0;
+    padding-right: 0.25rem;
   }
 }
 
