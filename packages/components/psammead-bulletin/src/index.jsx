@@ -78,8 +78,9 @@ const TVTextWrapper = styled.div`
     ${({ dir }) =>
       dir === 'ltr'
         ? `padding-right: ${GEL_SPACING_DBL};`
-        : `padding-left: ${GEL_SPACING_DBL};`}}
+        : `padding-left: ${GEL_SPACING_DBL};`}
   }
+
   ${textWrapperStyles};
 `;
 
@@ -105,7 +106,7 @@ const RadioTextWrapper = styled.div`
     ${({ dir }) =>
       dir === 'ltr'
         ? `padding-left: ${GEL_SPACING_DBL};`
-        : `padding-right: ${GEL_SPACING_DBL};`}}
+        : `padding-right: ${GEL_SPACING_DBL};`}
   }
   ${textWrapperStyles};
 `;
