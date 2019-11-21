@@ -34,6 +34,7 @@ const StyledLink = styled.a`
 const StyledItem = styled.div`
   padding-bottom: ${GEL_SPACING_TRPL};
   ${paddingStart}: 16px;
+  padding-right: 16px;
   float: left;
   width: 80%;
 
@@ -51,7 +52,7 @@ export const MostReadRank = styled.span`
   margin: 0; /* Reset */
   padding: 0;
   float: left;
-  width: 20%;
+  width: 15%;
 `;
 
 export const MostReadLink = ({
