@@ -1,6 +1,6 @@
 import React from 'react';
 import { string } from 'prop-types';
-import styled, { css } from 'styled-components';
+import styled from 'styled-components';
 import { C_WHITE } from '@bbc/psammead-styles/colours';
 import { GEL_SPACING_DBL, GEL_SPACING } from '@bbc/gel-foundations/spacings';
 import { GEL_LONG_PRIMER } from '@bbc/gel-foundations/typography';
@@ -26,9 +26,8 @@ const GuidanceWrapper = styled.div`
   }
 `;
 
-const baseTextStyles = css`
+const GuidanceMessage = styled.strong`
   display: block;
-  position: absolute;
   font-weight: normal;
   padding: ${GEL_SPACING};
   border-bottom: 0.0625rem solid transparent;
@@ -38,15 +37,8 @@ const baseTextStyles = css`
   @media (min-width: ${GEL_GROUP_2_SCREEN_WIDTH_MIN}) {
     padding: ${GEL_SPACING_DBL};
   }
-`;
-
-const GuidanceMessage = styled.strong`
-  ${baseTextStyles}
-`;
-
-const StyledNoScript = styled.span`
-  strong {
-    ${baseTextStyles}
+  noscript {
+    position: absolute;
     bottom: 0;
   }
 `;
@@ -62,12 +54,12 @@ const Guidance = ({ guidanceMessage, service }) => (
         {guidanceMessage}
       </GuidanceMessage>
     )}
-    <StyledNoScript>
-      <strong>
+    <GuidanceMessage>
+      <noscript>
         This video cannot play in your browser. Please enable Javascript or try
         a different browser.
-      </strong>
-    </StyledNoScript>
+      </noscript>
+    </GuidanceMessage>
   </GuidanceWrapper>
 );
 
