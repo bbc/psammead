@@ -208,7 +208,11 @@ const Bulletin = ({
           <VisuallyHiddenText>
             {isLive ? `${ctaText} ${liveText} ` : `${ctaText} `}
           </VisuallyHiddenText>
-          {isLive && <LiveLabel service={service}>{liveText}</LiveLabel>}
+          {isLive && (
+            <LiveLabel service={service} dir={dir}>
+              {liveText}
+            </LiveLabel>
+          )}
           <Link href={ctaLink}>{headlineText}</Link>
         </BulletinHeading>
         <BulletinSummary script={script} service={service} type={type}>
