@@ -44,7 +44,7 @@ const GuidanceMessage = styled.strong`
   ${baseTextStyles}
 `;
 
-const StyledNoScript = styled.noscript`
+const StyledNoScript = styled.span`
   strong {
     ${baseTextStyles}
     bottom: 0;
