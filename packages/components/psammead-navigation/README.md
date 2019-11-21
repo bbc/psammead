@@ -196,7 +196,7 @@ It includes a ["skip link"](https://www.w3.org/TR/WCAG20-TECHS/G1.html) giving u
 
 We have added the role `list` and `listitem` to the `NavigationUl` and `NavigationList` respectively, due to a VoiceOver bug to reinstate the list semantics.
 
-We have also added visually hidden text to let the user know which item in both regular and dropdown Navigation is the current page. Note the use of visually hidden text here is due to lack of support at this time for the aria-current page attribute. Also note the use of `role="text"` to stop splitting in VoiceOver.
+We have also added visually hidden text to let the user know which item in both regular and dropdown Navigation is the current page. Note the use of visually hidden text here is due to lack of support at this time for the aria-current page attribute. Also note the use of `role="text"` to stop text splitting in VoiceOver.
 
 We have added an `aria-expanded` attribute to both Hamburger and Cross menu buttons to indicate whether the menu is collapsed or expanded.
 
