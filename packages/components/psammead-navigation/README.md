@@ -8,6 +8,10 @@ This component is currently tagged as alpha and is not suitable for production u
 
 The `@bbc/psammead-navigation` package is a set of two components, `NavigationUl` and `NavigationLi`. They use `ul` and `li` HTML elements respectively.
 
+## Exports
+
+`/swipeable-navigation` - Makes the navigation to be swipeable under 600px.
+
 ## Installation
 
 `npm install @bbc/psammead-navigation`
@@ -64,7 +68,7 @@ The `@bbc/psammead-navigation` package is a set of two components, `NavigationUl
 
 ```jsx
 import React from 'react';
-import { CanonicalSwipeableNavigation } from './SwipeableNavigation';
+import { CanonicalSwipeableNavigation } from '@bbc/psammead-navigation/swipeable-navigation';
 import Navigation, {
   NavigationUl,
   NavigationLi,
@@ -98,7 +102,7 @@ import { latin } from '@bbc/gel-foundations/scripts';
 
 The `Navigation` is designed to show a navigation bar on `index` pages, which will show all sections on a site. If there are too many items to fit on one line, the items will wrap to the next lines.
 
-On the other hand, under 600px, the list remains on one line, which is horizontally swipeable to allow access to further links.
+On the other hand, with `CanonicalSwipeableNavigation` or `AmpSwipeableNavigation` we can make the list to remain on one line and to be horizontally swipeable to allow access to further links, under 600px.
 
 ### Accessibility notes
 
