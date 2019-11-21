@@ -18,7 +18,7 @@ import {
   CanonicalHamburgerMenu,
   CanonicalDropdown,
   DropdownNavigationLi,
-} from './Dropdown';
+} from './DropdownNavigation';
 import igboNavData from '../testHelpers/igbo';
 import pidginNavData from '../testHelpers/pidgin';
 import yorubaNavData from '../testHelpers/yoruba';

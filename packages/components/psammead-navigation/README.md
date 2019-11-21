@@ -8,6 +8,10 @@ This component is currently tagged as alpha and is not suitable for production u
 
 The `@bbc/psammead-navigation` package is a set of two components, `NavigationUl` and `NavigationLi`. They use `ul` and `li` HTML elements respectively. The package also includes a Hamburger Menu and a Dropdown Navigation which are visible for breakpoints under 600px.
 
+## Exports
+
+`/dropdown-navigation` - adds a dropdown navigation with hamburger menu which is visible for breakpoints under 600px
+
 ## Installation
 
 `npm install @bbc/psammead-navigation`
@@ -122,7 +126,7 @@ import { latin } from '@bbc/gel-foundations/scripts';
 
 ```jsx
 import React from 'react';
-import { CanonicalDropdown, DropdownNavigationLi } from '@bbc/psammead-navigation';
+import { CanonicalDropdown, DropdownNavigationLi } from '@bbc/psammead-navigation/dropdown-navigation';
 import { latin } from '@bbc/gel-foundations/scripts';
 
 <CanonicalDropdown announcedText="Menu" onClose={() => {}}>
@@ -146,7 +150,7 @@ import { latin } from '@bbc/gel-foundations/scripts';
 
 ```jsx
 import React from 'react';
-import { AmpDropdown, DropdownNavigationLi } from '@bbc/psammead-navigation';
+import { AmpDropdown, DropdownNavigationLi } from '@bbc/psammead-navigation/dropdown-navigation';
 import { latin } from '@bbc/gel-foundations/scripts';
 
 <AmpDropdown announcedText="Menu" onClose="tap:menu.toggleVisibility">
@@ -170,7 +174,7 @@ import { latin } from '@bbc/gel-foundations/scripts';
 
 ```jsx
 import React from 'react';
-import { CanonicalHamburgerMenu } from '@bbc/psammead-navigation';
+import { CanonicalHamburgerMenu } from '@bbc/psammead-navigation/dropdown-navigation';
 
 <CanonicalHamburgerMenu announcedText="Menu" onOpen={() => { console.log("Handle open action"); }} />
 ```
@@ -179,7 +183,7 @@ import { CanonicalHamburgerMenu } from '@bbc/psammead-navigation';
 
 ```jsx
 import React from 'react';
-import { AmpHamburgerMenu } from '@bbc/psammead-navigation';
+import { AmpHamburgerMenu } from '@bbc/psammead-navigation/dropdown-navigation';
 
 <AmpHamburgerMenu announcedText="Menu" onOpen="tap:menu.toggleVisibility" />
 ```

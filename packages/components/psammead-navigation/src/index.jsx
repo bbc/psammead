@@ -15,13 +15,6 @@ import {
 import { getPica } from '@bbc/gel-foundations/typography';
 import { scriptPropType } from '@bbc/gel-foundations/prop-types';
 import { getSansRegular } from '@bbc/psammead-styles/font-styles';
-import {
-  DropdownNavigationLi,
-  CanonicalDropdown,
-  AmpDropdown,
-  CanonicalHamburgerMenu,
-  AmpHamburgerMenu,
-} from './Dropdown';
 
 const TOP_BOTTOM_SPACING = '0.75rem'; // 12px
 const CURRENT_ITEM_HOVER_BORDER = '0.3125rem'; // 5px
@@ -206,11 +199,4 @@ CurrentLink.defaultProps = {
   currentPageText: null,
 };
 
-export {
-  DropdownNavigationLi,
-  CanonicalDropdown,
-  AmpDropdown,
-  CanonicalHamburgerMenu,
-  AmpHamburgerMenu,
-};
 export default Navigation;
