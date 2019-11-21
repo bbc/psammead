@@ -9,10 +9,6 @@ const useMediaQuery = query => {
   const [matches, setMatches] = useState(mediaMatches);
 
   useEffect(() => {
-    if (!isClient) {
-      return null;
-    }
-
     const handler = e => setMatches(e.matches);
 
     mediaMatch.addListener(handler);
