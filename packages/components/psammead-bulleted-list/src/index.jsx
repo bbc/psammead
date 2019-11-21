@@ -16,7 +16,9 @@ const BulletedList = styled.ul`
     background: url("data:image/svg+xml,%3Csvg height='10' width='10' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='5' cy='5' r='3'%3E%3C/circle%3E%3C/svg%3E")
       no-repeat center;
     ${({ dir }) =>
-      dir === 'rtl' ? `margin-right:` : `margin-left:`} -${GEL_SPACING_QUAD};
+      dir === 'rtl'
+        ? `margin-right: -${GEL_SPACING_QUAD};`
+        : `margin-left: -${GEL_SPACING_QUAD};`}
   }
 `;
 
