@@ -125,6 +125,11 @@ DropdownNavigationLi.defaultProps = {
   dir: 'ltr',
 };
 
+const dropdownProps = {
+  announcedText: string.isRequired,
+  children: node.isRequired,
+};
+
 export const CanonicalDropdown = ({ announcedText, onClose, children }) => (
   <DropdownWrapper>
     <CrossButton
@@ -140,8 +145,7 @@ export const CanonicalDropdown = ({ announcedText, onClose, children }) => (
 );
 
 CanonicalDropdown.propTypes = {
-  announcedText: string.isRequired,
-  children: node.isRequired,
+  ...dropdownProps,
   onClose: func.isRequired,
 };
 
@@ -160,8 +164,7 @@ export const AmpDropdown = ({ announcedText, onClose, children }) => (
 );
 
 AmpDropdown.propTypes = {
-  announcedText: string.isRequired,
-  children: node.isRequired,
+  ...dropdownProps,
   onClose: string.isRequired,
 };
 
@@ -182,6 +185,10 @@ const HamburgerButton = styled.button`
   }
 `;
 
+const hamburgerProps = {
+  announcedText: string.isRequired,
+};
+
 export const CanonicalHamburgerMenu = ({ announcedText, onOpen }) => (
   <HamburgerButton
     aria-label={announcedText}
@@ -193,7 +200,7 @@ export const CanonicalHamburgerMenu = ({ announcedText, onOpen }) => (
 );
 
 CanonicalHamburgerMenu.propTypes = {
-  announcedText: string.isRequired,
+  ...hamburgerProps,
   onOpen: func.isRequired,
 };
 
@@ -204,6 +211,6 @@ export const AmpHamburgerMenu = ({ announcedText, onOpen }) => (
 );
 
 AmpHamburgerMenu.propTypes = {
-  announcedText: string.isRequired,
+  ...hamburgerProps,
   onOpen: string.isRequired,
 };
