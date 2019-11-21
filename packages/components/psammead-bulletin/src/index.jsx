@@ -75,8 +75,8 @@ const TVTextWrapper = styled.div`
   @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
     grid-column: 4 / span 3;
     width: ${halfWidthColumnsMaxScaleable};
-    ${({ direction }) =>
-      direction === 'ltr'
+    ${({ dir }) =>
+      dir === 'ltr'
         ? `padding-right: ${GEL_SPACING_DBL};`
         : `padding-left: ${GEL_SPACING_DBL};`}}
   }
@@ -101,8 +101,11 @@ const RadioImageWrapper = styled.div`
 const RadioTextWrapper = styled.div`
   @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
     grid-column: 3 / span 4;
-    padding-left: ${GEL_SPACING_DBL};
     width: ${fourOfSixColumnsMaxWidthScaleable};
+    ${({ dir }) =>
+      dir === 'ltr'
+        ? `padding-left: ${GEL_SPACING_DBL};`
+        : `padding-right: ${GEL_SPACING_DBL};`}}
   }
   ${textWrapperStyles};
 `;
@@ -149,9 +152,6 @@ const BulletinSummary = styled.p`
   @media(min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
     padding-left: 0;
     padding-right: 0;
-    ${({ applyLeftPadding }) =>
-      applyLeftPadding && `padding-left: ${GEL_SPACING}`}
-
   }
   padding-bottom: ${GEL_SPACING_DBL};
 `;
@@ -175,8 +175,6 @@ const RadioHeading = styled.h3`
   padding: ${GEL_SPACING} ${GEL_SPACING};
   @media(min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
     padding: ${GEL_SPACING} 0;
-    ${({ applyLeftPadding }) =>
-      applyLeftPadding && `padding-left: ${GEL_SPACING}`}
   }
 `;
 
@@ -202,8 +200,8 @@ const Bulletin = ({
   return (
     <BulletinWrapper>
       <ImageWrapper>{image}</ImageWrapper>
-      <TextWrapper direction={dir}>
-        <BulletinHeading script={script} service={service}>
+      <TextWrapper dir={dir}>
+        <BulletinHeading script={script} service={service} dir={dir}>
           <VisuallyHiddenText>
             {isLive ? `${ctaText} ${liveText} ` : `${ctaText} `}
           </VisuallyHiddenText>

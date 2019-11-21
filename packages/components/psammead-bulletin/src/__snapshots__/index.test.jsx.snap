@@ -158,8 +158,8 @@ exports[`Bulletin should render audio correctly 1`] = `
 @media (min-width:37.5rem) {
   .c3 {
     grid-column: 3 / span 4;
-    padding-left: 1rem;
     width: 66.67%;
+    padding-left: 1rem;
   }
 }
 
@@ -255,10 +255,11 @@ exports[`Bulletin should render audio correctly 1`] = `
   </div>
   <div
     class="c3"
-    direction="ltr"
+    dir="ltr"
   >
     <h3
       class="c4"
+      dir="ltr"
     >
       <span
         class="c5"
@@ -476,8 +477,8 @@ exports[`Bulletin should render live audio correctly 1`] = `
 @media (min-width:37.5rem) {
   .c3 {
     grid-column: 3 / span 4;
-    padding-left: 1rem;
     width: 66.67%;
+    padding-left: 1rem;
   }
 }
 
@@ -573,10 +574,11 @@ exports[`Bulletin should render live audio correctly 1`] = `
   </div>
   <div
     class="c3"
-    direction="ltr"
+    dir="ltr"
   >
     <h3
       class="c4"
+      dir="ltr"
     >
       <span
         class="c5"
@@ -901,10 +903,11 @@ exports[`Bulletin should render live video correctly 1`] = `
   </div>
   <div
     class="c3"
-    direction="ltr"
+    dir="ltr"
   >
     <h3
       class="c4"
+      dir="ltr"
     >
       <span
         class="c5"
@@ -1217,10 +1220,11 @@ exports[`Bulletin should render video correctly 1`] = `
   </div>
   <div
     class="c3"
-    direction="ltr"
+    dir="ltr"
   >
     <h3
       class="c4"
+      dir="ltr"
     >
       <span
         class="c5"
