@@ -55,14 +55,12 @@ const Guidance = ({ guidanceMessage, service, type }) => (
         {guidanceMessage}
       </GuidanceMessage>
     )}
-    <GuidanceMessage>
-      <StyledNoScript>
-        <GuidanceMessage>
-          This {type} cannot play in your browser. Please enable Javascript or
-          try a different browser.
-        </GuidanceMessage>
-      </StyledNoScript>
-    </GuidanceMessage>
+    <StyledNoScript>
+      <GuidanceMessage>
+        This {type} cannot play in your browser. Please enable Javascript or
+        different browser.
+      </GuidanceMessage>
+    </StyledNoScript>
   </GuidanceWrapper>
 );
 

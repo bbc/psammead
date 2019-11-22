@@ -211,12 +211,8 @@ exports[`Media Player: Canonical Entry renders a landscape container with a plac
   color: #FFFFFF;
 }
 
-.c4 strong {
-  display: block;
+.c4 {
   position: absolute;
-  font-weight: normal;
-  padding: 0.5rem;
-  border-bottom: 0.0625rem solid transparent;
   bottom: 0;
 }
 
@@ -248,18 +244,6 @@ exports[`Media Player: Canonical Entry renders a landscape container with a plac
 @media (min-width:37.5rem) {
   .c3 {
     font-size: 0.875rem;
-  }
-}
-
-@media screen and (-ms-high-contrast:active) {
-  .c4 strong {
-    background-color: window;
-  }
-}
-
-@media (min-width:25rem) {
-  .c4 strong {
-    padding: 1rem;
   }
 }
 
@@ -404,18 +388,13 @@ exports[`Media Player: Canonical Entry renders a placeholder image with guidance
 
 .c4 {
   display: block;
-  position: absolute;
   font-weight: normal;
   padding: 0.5rem;
   border-bottom: 0.0625rem solid transparent;
 }
 
-.c5 strong {
-  display: block;
+.c5 {
   position: absolute;
-  font-weight: normal;
-  padding: 0.5rem;
-  border-bottom: 0.0625rem solid transparent;
   bottom: 0;
 }
 
@@ -464,18 +443,6 @@ exports[`Media Player: Canonical Entry renders a placeholder image with guidance
 
 @media (min-width:25rem) {
   .c4 {
-    padding: 1rem;
-  }
-}
-
-@media screen and (-ms-high-contrast:active) {
-  .c5 strong {
-    background-color: window;
-  }
-}
-
-@media (min-width:25rem) {
-  .c5 strong {
     padding: 1rem;
   }
 }
@@ -624,12 +591,8 @@ exports[`Media Player: Canonical Entry renders a portrait container with a place
   color: #FFFFFF;
 }
 
-.c4 strong {
-  display: block;
+.c4 {
   position: absolute;
-  font-weight: normal;
-  padding: 0.5rem;
-  border-bottom: 0.0625rem solid transparent;
   bottom: 0;
 }
 
@@ -661,18 +624,6 @@ exports[`Media Player: Canonical Entry renders a portrait container with a place
 @media (min-width:37.5rem) {
   .c3 {
     font-size: 0.875rem;
-  }
-}
-
-@media screen and (-ms-high-contrast:active) {
-  .c4 strong {
-    background-color: window;
-  }
-}
-
-@media (min-width:25rem) {
-  .c4 strong {
-    padding: 1rem;
   }
 }
 

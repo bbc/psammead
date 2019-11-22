@@ -17,18 +17,13 @@ exports[`Media Player: Guidance should render Guidance 1`] = `
 
 .c1 {
   display: block;
-  position: absolute;
   font-weight: normal;
   padding: 0.5rem;
   border-bottom: 0.0625rem solid transparent;
 }
 
-.c2 strong {
-  display: block;
+.c2 {
   position: absolute;
-  font-weight: normal;
-  padding: 0.5rem;
-  border-bottom: 0.0625rem solid transparent;
   bottom: 0;
 }
 
@@ -52,18 +47,6 @@ exports[`Media Player: Guidance should render Guidance 1`] = `
 
 @media (min-width:25rem) {
   .c1 {
-    padding: 1rem;
-  }
-}
-
-@media screen and (-ms-high-contrast:active) {
-  .c2 strong {
-    background-color: window;
-  }
-}
-
-@media (min-width:25rem) {
-  .c2 strong {
     padding: 1rem;
   }
 }
