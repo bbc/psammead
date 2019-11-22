@@ -6,12 +6,12 @@ const getPackagesFromFolder = folder => {
   return fs
     .readdirSync(path)
     .filter(file => fs.statSync(`${path}/${file}`).isDirectory());
-}
+};
 
 const getExistingPackages = () => {
   return getPackageTypes()
-          .map(getPackagesFromFolder)
-          .reduce((arr, item) => arr.concat(item))
+    .map(getPackagesFromFolder)
+    .reduce((arr, item) => arr.concat(item));
 };
 
-module.exports  = getExistingPackages;
+module.exports = getExistingPackages;
