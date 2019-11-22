@@ -803,7 +803,7 @@ exports[`Bulletin should render live video correctly 1`] = `
   .c3 {
     grid-column: 4 / span 3;
     width: 50%;
-    padding-right: 1rem;
+    padding-left: 1rem;
   }
 }
 
@@ -1117,7 +1117,7 @@ exports[`Bulletin should render video correctly 1`] = `
   .c3 {
     grid-column: 4 / span 3;
     width: 50%;
-    padding-right: 1rem;
+    padding-left: 1rem;
   }
 }
 
