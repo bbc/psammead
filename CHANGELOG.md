@@ -3,7 +3,10 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
-| 2.0.8 | [PR#2611](https://github.com/bbc/psammead/pull/2611) Improve yeoman generator, to specify template types |
+| 2.0.11 | [PR#2611](https://github.com/bbc/psammead/pull/2611) Improve yeoman generator, to specify template types |
+| 2.0.10 | [PR#2666](https://github.com/bbc/psammead/pull/2666) Talos - Bump Dependencies - @bbc/psammead-image-placeholder, @bbc/psammead-media-indicator |
+| 2.0.9 | [PR#2657](https://github.com/bbc/psammead/pull/2657) Update codeowners |
+| 2.0.8 | [PR#2663](https://github.com/bbc/psammead/pull/2663) Talos - Bump Dependencies - @bbc/psammead-assets |
 | 2.0.7 | [PR#2656](https://github.com/bbc/psammead/pull/2656) Talos - Bump Dependencies - @bbc/psammead-image-placeholder, @bbc/psammead-media-indicator |
 | 2.0.6 | [PR#2644](https://github.com/bbc/psammead/pull/2644) Bump dependencies |
 | 2.0.5 | [PR#2635](https://github.com/bbc/psammead/pull/2635) generate withServiceKnob |
