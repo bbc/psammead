@@ -1,8 +1,8 @@
-# psammead-<%= name %> - [![Known Vulnerabilities](https://snyk.io/test/github/bbc/psammead/badge.svg?targetFile=packages%2Fcomponents%2Fpsammead-<%= name %>%2Fpackage.json)](https://snyk.io/test/github/bbc/psammead?targetFile=packages%2Fcomponents%2Fpsammead-<%= name %>%2Fpackage.json) [![Dependency Status](https://david-dm.org/bbc/psammead.svg?path=packages/components/psammead-<%= name %>)](https://david-dm.org/bbc/psammead?path=packages/components/psammead-<%= name %>) [![peerDependencies Status](https://david-dm.org/bbc/psammead/peer-status.svg?path=packages/components/psammead-<%= name %>)](https://david-dm.org/bbc/psammead?path=packages/components/psammead-<%= name %>&type=peer) [![Storybook](https://raw.githubusercontent.com/storybooks/brand/master/badge/badge-storybook.svg?sanitize=true)](https://bbc.github.io/psammead/?path=/story/<%= name %>--containing-image) [![GitHub license](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](https://github.com/bbc/psammead/blob/latest/LICENSE) [![npm version](https://img.shields.io/npm/v/@bbc/psammead-<%= name %>.svg)](https://www.npmjs.com/package/@bbc/psammead-<%= name %>) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/bbc/psammead/blob/latest/CONTRIBUTING.md)
+# psammead-<%= name %> - [![Known Vulnerabilities](https://snyk.io/test/github/bbc/psammead/badge.svg?targetFile=packages%2Fcontainers%2Fpsammead-<%= name %>%2Fpackage.json)](https://snyk.io/test/github/bbc/psammead?targetFile=packages%2Fcontainers%2Fpsammead-<%= name %>%2Fpackage.json) [![Dependency Status](https://david-dm.org/bbc/psammead.svg?path=packages/containers/psammead-<%= name %>)](https://david-dm.org/bbc/psammead?path=packages/containers/psammead-<%= name %>) [![peerDependencies Status](https://david-dm.org/bbc/psammead/peer-status.svg?path=packages/containers/psammead-<%= name %>)](https://david-dm.org/bbc/psammead?path=packages/containers/psammead-<%= name %>&type=peer) [![Storybook](https://raw.githubusercontent.com/storybooks/brand/master/badge/badge-storybook.svg?sanitize=true)](https://bbc.github.io/psammead/?path=/story/<%= name %>--containing-image) [![GitHub license](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](https://github.com/bbc/psammead/blob/latest/LICENSE) [![npm version](https://img.shields.io/npm/v/@bbc/psammead-<%= name %>.svg)](https://www.npmjs.com/package/@bbc/psammead-<%= name %>) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/bbc/psammead/blob/latest/CONTRIBUTING.md)
 
 ## Description
 
-The `<%= componentName %>` component does...
+The `<%= componentName %>` container does...
 
 ## Installation
 
@@ -18,31 +18,31 @@ npm install @bbc/psammead-<%= name %> --save
 
 ## Usage
 
-<!-- Description of the component usage -->
+<!-- Description of the container usage -->
 
 ```
 import <%= componentName %> from "@bbc/psammead-<%= name %>"
 ```
 
-### When to use this component
+### When to use this container
 
-<!-- Description of the where the component can be used -->
+<!-- Description of the where the container can be used -->
 
-### When not to use this component
+### When not to use this container
 
-<!-- Description of the where the component shouldn't can be used -->
+<!-- Description of the where the container shouldn't can be used -->
 
 ### Accessibility notes
 
-<!-- Information about accessibility for this component -->
+<!-- Information about accessibility for this container -->
 
 ### Roadmap
 
-<!-- Known future changes of the component -->
+<!-- Known future changes of the container -->
 
 ## Contributing
 
-Psammead is completely open source. We are grateful for any contributions, whether they be new components, bug fixes or general improvements. Please see our primary contributing guide which can be found at [the root of the Psammead repository](https://github.com/bbc/psammead/blob/latest/CONTRIBUTING.md).
+Psammead is completely open source. We are grateful for any contributions, whether they be new containers, bug fixes or general improvements. Please see our primary contributing guide which can be found at [the root of the Psammead repository](https://github.com/bbc/psammead/blob/latest/CONTRIBUTING.md).
 
 ### [Code of Conduct](https://github.com/bbc/psammead/blob/latest/CODE_OF_CONDUCT.md)
 
