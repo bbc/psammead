@@ -82,7 +82,7 @@ const TVTextWrapper = styled.div`
     width: ${halfWidthColumnsMaxScaleable};
     ${({ dir }) =>
       dir === 'ltr'
-        ? `padding-right: ${GEL_SPACING_DBL};`
+        ? `padding-left: ${GEL_SPACING_DBL};`
         : `padding-left: ${GEL_SPACING_DBL};`}
   }
 
