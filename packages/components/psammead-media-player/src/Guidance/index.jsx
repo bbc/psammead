@@ -39,7 +39,7 @@ const GuidanceMessage = styled.strong`
   }
 `;
 
-const StyledNoScript = styled.span`
+const StyledNoScript = styled.noscript`
   position: absolute;
   bottom: 0;
 `;
