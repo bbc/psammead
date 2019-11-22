@@ -239,16 +239,16 @@ const EXAMPLES = {
   zhongwenSimp: {
     service: 'zhongwen',
     variant: 'simp',
-    text: '该计划的批评者说，这个政策不能解决住房短缺的问题（Credit: Alamy）',
+    text: '郑文杰：中国警方公布“嫖娼证据” 引发中港网友论战',
     script: 'chinese',
-    locale: 'zh-cn',
+    locale: 'zh-hans',
   },
   zhongwenTrad: {
     service: 'zhongwen',
     variant: 'trad',
-    text: '該計劃的批評者說，這個政策不能解決住房短缺的問題（Credit: Alamy）',
+    text: '鄭文傑：中國警方公布「嫖娼證據」 引發中港網友論戰',
     script: 'chinese',
-    locale: 'zh-tw',
+    locale: 'zh-hant',
   },
 };
 
