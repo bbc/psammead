@@ -1,4 +1,4 @@
-const LANGUAGE_VARIANTS = {
+const EXAMPLES = {
   afaanoromoo: {
     text:
       "Gammadoo ta'uun akkanumaan hin dhufu, waan shaakalamuudha jetti saantoos.",
@@ -145,11 +145,15 @@ const LANGUAGE_VARIANTS = {
     locale: 'ru',
   },
   serbianCyr: {
+    service: 'serbian',
+    variant: 'cyr',
     text: 'Караџић се годинама крио пре него што је ухапшен 2008. године',
     script: 'cyrillic',
     locale: 'sr-cyrl',
   },
   serbianLat: {
+    service: 'serbian',
+    variant: 'cyr',
     text: 'Karadžić se godinama krio pre nego što je uhapšen 2008. godine',
     script: 'latin',
     locale: 'sr',
@@ -190,11 +194,15 @@ const LANGUAGE_VARIANTS = {
     locale: 'tr',
   },
   ukChinaSimp: {
+    service: 'ukchina',
+    variant: 'simp',
     text: '该计划的批评者说，这个政策不能解决住房短缺的问题（Credit: Alamy）',
     script: 'chinese',
     locale: 'zh-cn',
   },
   ukChinaTrad: {
+    service: 'ukchina',
+    variant: 'trad',
     text: '該計劃的批評者說，這個政策不能解決住房短缺的問題（Credit: Alamy）',
     script: 'chinese',
     locale: 'zh-tw',
@@ -228,6 +236,20 @@ const LANGUAGE_VARIANTS = {
     script: 'latin',
     locale: 'yo',
   },
+  zhongwenSimp: {
+    service: 'zhongwen',
+    variant: 'simp',
+    text: '该计划的批评者说，这个政策不能解决住房短缺的问题（Credit: Alamy）',
+    script: 'chinese',
+    locale: 'zh-cn',
+  },
+  zhongwenTrad: {
+    service: 'zhongwen',
+    variant: 'trad',
+    text: '該計劃的批評者說，這個政策不能解決住房短缺的問題（Credit: Alamy）',
+    script: 'chinese',
+    locale: 'zh-tw',
+  },
 };
 
-export default LANGUAGE_VARIANTS;
+export default EXAMPLES;
