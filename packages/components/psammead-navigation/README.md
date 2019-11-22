@@ -112,9 +112,9 @@ We have added the role `list` and `listitem` to the `NavigationUl` and `Navigati
 
 We have also added visually hidden text to let the user know which item in the Navigation is the current page. Note the use of visually hidden text here is due to lack of support at this time for the aria-current page attribute. Also note the use of `role="text"` to stop splitting in VoiceOver.
 
-In the screen reader UX only the menu button and its content should be available to assistive technology. The exposed swipeable navigation should be hidden. To achieve this we add `aria-hidden:true` to the exposed swipeable navigation so that this is not exposed to these users and also add `tabindex=-1` to the links contained within this to remove them from the tab order.
+In the screen reader UX only the menu button and its content should be available to assistive technology, for which reason the swipeable navigation should be hidden. To achieve this we add `aria-hidden:true` to the exposed swipeable navigation so that this is not visible to these users and also add `tabindex=-1` to the links contained within this to remove them from the tab order.
 
-When Javascript is disabled, the window object will not be defined and the `useMediaQuery` will return null so `isSwipeable` will be null too, therefore the swipeable navigation will be fully available to keyboard users via the tab key and to screen reader users.
+On the other hand, when Javascript is disabled, the window object will not be defined and the `useMediaQuery` will return null so `isSwipeable` will be null too, therefore the swipeable navigation will be fully available to keyboard users via the tab key and to screen reader users.
 
 ## Contributing
 
