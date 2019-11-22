@@ -1,5 +1,5 @@
 import React from 'react';
-import { string } from 'prop-types';
+import { string, oneOf } from 'prop-types';
 import styled from 'styled-components';
 import { C_WHITE } from '@bbc/psammead-styles/colours';
 import { GEL_SPACING_DBL, GEL_SPACING } from '@bbc/gel-foundations/spacings';
@@ -37,13 +37,14 @@ const GuidanceMessage = styled.strong`
   @media (min-width: ${GEL_GROUP_2_SCREEN_WIDTH_MIN}) {
     padding: ${GEL_SPACING_DBL};
   }
-  noscript {
-    position: absolute;
-    bottom: 0;
-  }
 `;
 
-const Guidance = ({ guidanceMessage, service }) => (
+const StyledNoScript = styled.span`
+  position: absolute;
+  bottom: 0;
+`;
+
+const Guidance = ({ guidanceMessage, service, type }) => (
   <GuidanceWrapper
     service={service}
     className="guidance-wrapper"
@@ -55,10 +56,12 @@ const Guidance = ({ guidanceMessage, service }) => (
       </GuidanceMessage>
     )}
     <GuidanceMessage>
-      <noscript>
-        This video cannot play in your browser. Please enable Javascript or try
-        a different browser.
-      </noscript>
+      <StyledNoScript>
+        <GuidanceMessage>
+          This {type} cannot play in your browser. Please enable Javascript or
+          try a different browser.
+        </GuidanceMessage>
+      </StyledNoScript>
     </GuidanceMessage>
   </GuidanceWrapper>
 );
@@ -66,6 +69,7 @@ const Guidance = ({ guidanceMessage, service }) => (
 Guidance.propTypes = {
   guidanceMessage: string,
   service: string.isRequired,
+  type: oneOf(['video', 'audio']).isRequired,
 };
 
 Guidance.defaultProps = {

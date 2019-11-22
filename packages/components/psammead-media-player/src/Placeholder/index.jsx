@@ -64,7 +64,11 @@ const Placeholder = ({ onClick, service, src, srcset, mediaInfo }) => {
   return (
     <StyledPlaceholder onClick={onClick}>
       {NoScriptHiddenStyle}
-      <Guidance service={service} guidanceMessage={guidanceMessage} />
+      <Guidance
+        service={service}
+        guidanceMessage={guidanceMessage}
+        type={type}
+      />
       <PlayButtonWrapper className="media-player-play-button">
         <StyledPlayButton
           title={title}
