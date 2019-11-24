@@ -161,7 +161,7 @@ export const NavigationLi = ({
   isSwipeable,
   ...props
 }) => {
-  const tabIndex = isSwipeable && -1;
+  const tabIndex = isSwipeable && { tabIndex: -1 };
 
   return (
     <StyledListItem dir={dir} role="listitem">
@@ -171,8 +171,8 @@ export const NavigationLi = ({
           script={script}
           service={service}
           currentLink
+          {...tabIndex}
           {...props}
-          tabIndex={tabIndex}
         >
           <CurrentLink script={script} currentPageText={currentPageText}>
             {link}
@@ -183,7 +183,7 @@ export const NavigationLi = ({
           href={url}
           script={script}
           service={service}
-          tabIndex={tabIndex}
+          {...tabIndex}
           {...props}
         >
           {link}
