@@ -3,10 +3,10 @@ import path from 'ramda/src/path';
 import { Helmet } from 'react-helmet';
 import { select } from '@storybook/addon-knobs';
 import * as scripts from '@bbc/gel-foundations/scripts';
-import EXAMPLES_TEXT from './text-variants';
+import TEXT_EXAMPLES from './text-variants';
 
 const DEFAULT_SERVICE = 'news';
-const SERVICES_LIST = Object.keys(EXAMPLES_TEXT);
+const SERVICES_LIST = Object.keys(TEXT_EXAMPLES);
 const getVariant = selectedItem => path([selectedItem, 'variant']);
 const getService = selectedItem => path([selectedItem, 'service']);
 const includesService = services => service => services.includes(service);
@@ -15,8 +15,7 @@ export default ({
   defaultService = DEFAULT_SERVICE,
   services = SERVICES_LIST,
 } = {}) => storyFn => {
-  const hasVariant = selectedItem =>
-    Boolean(EXAMPLES_TEXT[selectedItem].variant);
+  const hasVariant = selectedItem => path([selectedItem, 'variant']);
 
   const selectedItem = select(
     'Select a service',
@@ -24,13 +23,13 @@ export default ({
     defaultService,
   );
 
-  const variant = getVariant(selectedItem)(EXAMPLES_TEXT);
+  const variant = getVariant(selectedItem)(TEXT_EXAMPLES);
 
-  const service = hasVariant(selectedItem)
-    ? getService(selectedItem)(EXAMPLES_TEXT)
+  const service = hasVariant(selectedItem)(TEXT_EXAMPLES)
+    ? getService(selectedItem)(TEXT_EXAMPLES)
     : selectedItem;
 
-  const { text, script, locale, dir = 'ltr' } = EXAMPLES_TEXT[selectedItem];
+  const { text, script, locale, dir = 'ltr' } = TEXT_EXAMPLES[selectedItem];
 
   const storyProps = {
     text,
