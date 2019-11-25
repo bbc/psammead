@@ -1,62 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`AMP hamburger menu should render correctly 1`] = `
-.c1 {
-  color: #fff;
-  fill: currentColor;
-}
-
-.c0 {
-  width: 2.75rem;
-  height: 2.75rem;
-  background-color: #B80000;
-  padding: 0;
-  margin: 0;
-  border: 0;
-}
-
-.c0:focus {
-  box-shadow: inset 0 0 0 0.25rem #FFFFFF;
-}
-
-.c0:focus::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  top: 0;
-  height: 2.75rem;
-  width: 2.75rem;
-  border: 0.25rem solid #FFFFFF;
-}
-
-@media (min-width:37.5rem) {
-  .c0 {
-    display: none;
-  }
-}
-
-<button
-  aria-expanded="false"
-  aria-label="Menu"
-  class="c0"
-  on=""
->
-  <svg
-    class="c1"
-    height="2.75rem"
-    viewBox="0 0 44 44"
-    width="2.75rem"
-  >
-    <path
-      d="M12 29h21v-2.333H12V29zm0-5.833h21v-2.334H12v2.334zM12 15v2.333h21V15H12z"
-    />
-  </svg>
-</button>
-`;
-
-exports[`Amp dropdown navigation should render correctly 1`] = `
+exports[`Amp Dropdown navigation should render correctly 1`] = `
 .c7 {
   -webkit-clip-path: inset(100%);
   clip-path: inset(100%);
@@ -298,6 +242,62 @@ exports[`Amp dropdown navigation should render correctly 1`] = `
     </li>
   </ul>
 </div>
+`;
+
+exports[`Amp Hamburger menu should render correctly 1`] = `
+.c1 {
+  color: #fff;
+  fill: currentColor;
+}
+
+.c0 {
+  width: 2.75rem;
+  height: 2.75rem;
+  background-color: #B80000;
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+.c0:focus {
+  box-shadow: inset 0 0 0 0.25rem #FFFFFF;
+}
+
+.c0:focus::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  height: 2.75rem;
+  width: 2.75rem;
+  border: 0.25rem solid #FFFFFF;
+}
+
+@media (min-width:37.5rem) {
+  .c0 {
+    display: none;
+  }
+}
+
+<button
+  aria-expanded="false"
+  aria-label="Menu"
+  class="c0"
+  on=""
+>
+  <svg
+    class="c1"
+    height="2.75rem"
+    viewBox="0 0 44 44"
+    width="2.75rem"
+  >
+    <path
+      d="M12 29h21v-2.333H12V29zm0-5.833h21v-2.334H12v2.334zM12 15v2.333h21V15H12z"
+    />
+  </svg>
+</button>
 `;
 
 exports[`Canonical Dropdown navigation should render correctly 1`] = `

@@ -79,18 +79,20 @@ describe('Canonical', () => {
   });
 });
 
-describe('Amp dropdown navigation', () => {
-  shouldMatchSnapshot(
-    'should render correctly',
-    <AmpDropdown announcedText="Menu" onClose="">
-      {dropdownList}
-    </AmpDropdown>,
-  );
-});
+describe('Amp', () => {
+  describe('Dropdown navigation', () => {
+    shouldMatchSnapshot(
+      'should render correctly',
+      <AmpDropdown announcedText="Menu" onClose="">
+        {dropdownList}
+      </AmpDropdown>,
+    );
+  });
 
-describe('AMP hamburger menu', () => {
-  shouldMatchSnapshot(
-    'should render correctly',
-    <AmpHamburgerMenu announcedText="Menu" onOpen="" />,
-  );
+  describe('Hamburger menu', () => {
+    shouldMatchSnapshot(
+      'should render correctly',
+      <AmpHamburgerMenu announcedText="Menu" onOpen="" />,
+    );
+  });
 });
