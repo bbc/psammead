@@ -2,8 +2,15 @@ import React from 'react';
 import { shouldMatchSnapshot } from '@bbc/psammead-test-helpers';
 import * as svgs from './svgs';
 
+const svgExceptions = [
+  'BBC_BLOCKS',
+  'coreIcons',
+  'mediaIcons',
+  'navigationIcons',
+];
+
 Object.keys(svgs)
-  .filter(svgName => svgName !== 'BBC_BLOCKS' && svgName !== 'mediaIcons')
+  .filter(svgName => !svgExceptions.includes(svgName))
   .forEach(svgName => {
     describe(`${svgName} SVG`, () => {
       shouldMatchSnapshot(

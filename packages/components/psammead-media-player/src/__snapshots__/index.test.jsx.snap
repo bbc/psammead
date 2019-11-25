@@ -271,13 +271,13 @@ exports[`Media Player: Canonical Entry renders a landscape container with a plac
 `;
 
 exports[`Media Player: Canonical Entry renders a placeholder image with guidance 1`] = `
-.c15 {
+.c11 {
   display: block;
   width: 100%;
   visibility: visible;
 }
 
-.c13 {
+.c9 {
   vertical-align: middle;
   margin: 0 0.25rem;
   color: #222222;
@@ -287,15 +287,6 @@ exports[`Media Player: Canonical Entry renders a placeholder image with guidance
 }
 
 .c7 {
-  vertical-align: middle;
-  margin: 0 0.25rem;
-  color: #222222;
-  fill: currentColor;
-  width: 1rem;
-  height: 1rem;
-}
-
-.c11 {
   -webkit-clip-path: inset(100%);
   clip-path: inset(100%);
   -webkit-clip: rect(1px,1px,1px,1px);
@@ -307,7 +298,7 @@ exports[`Media Player: Canonical Entry renders a placeholder image with guidance
   margin: 0;
 }
 
-.c9 {
+.c5 {
   background-color: #222222;
   border: none;
   color: #FFFFFF;
@@ -325,14 +316,14 @@ exports[`Media Player: Canonical Entry renders a placeholder image with guidance
   width: 5rem;
 }
 
-.c9:hover,
-.c9:focus {
+.c5:hover,
+.c5:focus {
   background-color: #B80000;
   -webkit-transition: background-color 300ms;
   transition: background-color 300ms;
 }
 
-.c12 > svg {
+.c8 > svg {
   color: #FFFFFF;
   fill: currentColor;
   height: 1.5rem;
@@ -340,7 +331,7 @@ exports[`Media Player: Canonical Entry renders a placeholder image with guidance
   width: 1.5rem;
 }
 
-.c14 {
+.c10 {
   display: block;
   margin-top: 0.5rem;
 }
@@ -351,38 +342,19 @@ exports[`Media Player: Canonical Entry renders a placeholder image with guidance
   font-style: normal;
   font-size: 0.9375rem;
   line-height: 1.125rem;
-}
-
-.c4 {
   width: 100%;
   height: 100%;
   position: absolute;
   background-color: rgba(34,34,34,0.75);
+  border: 0.0625rem solid transparent;
   color: #FFFFFF;
 }
 
-.c5 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  padding: 1rem;
-}
-
-.c8 {
-  padding-left: 0.25rem;
+.c4 {
+  display: block;
   font-weight: normal;
-}
-
-.c6 > svg {
-  color: #FFFFFF;
-  fill: currentColor;
-  height: 1.5rem;
-  width: 1.5rem;
+  padding: 0.5rem;
+  border-bottom: 0.0625rem solid transparent;
 }
 
 .c2 {
@@ -394,13 +366,13 @@ exports[`Media Player: Canonical Entry renders a placeholder image with guidance
   height: 100%;
 }
 
-.c10 {
+.c6 {
   position: absolute;
   bottom: 0;
 }
 
-.c1:hover .c10,
-.c1:focus .c10 {
+.c1:hover .c6,
+.c1:focus .c6 {
   background-color: #B80000;
 }
 
@@ -416,6 +388,24 @@ exports[`Media Player: Canonical Entry renders a placeholder image with guidance
   }
 }
 
+@media screen and (-ms-high-contrast:active) {
+  .c3 {
+    background-color: transparent;
+  }
+}
+
+@media screen and (-ms-high-contrast:active) {
+  .c4 {
+    background-color: window;
+  }
+}
+
+@media (min-width:25rem) {
+  .c4 {
+    padding: 1rem;
+  }
+}
+
 <div
   class="c0"
 >
@@ -425,50 +415,27 @@ exports[`Media Player: Canonical Entry renders a placeholder image with guidance
     <div
       class="c3"
     >
-      <div
+      <strong
+        aria-hidden="true"
         class="c4"
       >
-        <div
-          class="c5"
-        >
-          <div
-            aria-hidden="true"
-            class="c6"
-          >
-            <svg
-              class="c7"
-              focusable="false"
-              height="32"
-              viewBox="0 0 32 32"
-              width="32"
-            >
-              <path
-                d="M32,16A16,16,0,1,1,16,0,16,16,0,0,1,32,16Zm-8.6-.8H16.6v3.1h2.9c-.2,1.5-1.6,2.4-3.7,2.4s-3.7-2.4-3.7-4.7,1-4.7,3.7-4.7,3,.8,3.2,2.2h4.2c-.4-4-3.9-5.8-7.2-5.8-4.8,0-8,3.7-8,8.3s3.1,8.3,8,8.3a5.4,5.4,0,0,0,4.5-2.1l.2,1.7h2.7Z"
-              />
-            </svg>
-          </div>
-          <strong
-            class="c8"
-          >
-            May contain strong language, sexual or violent content that may offend.
-          </strong>
-        </div>
-      </div>
+        May contain strong language, sexual or violent content that may offend.
+      </strong>
     </div>
     <button
-      class="c9 c10"
+      class="c5 c6"
     >
       <span
-        class="c11"
+        class="c7"
       >
-        Play video, "Dog chases cat.", 2 minutes 30 seconds
+        May contain strong language, sexual or violent content that may offend. Play video, "Dog chases cat.", 2 minutes 30 seconds
       </span>
       <div
         aria-hidden="true"
-        class="c12"
+        class="c8"
       >
         <svg
-          class="c13"
+          class="c9"
           focusable="false"
           height="12px"
           viewBox="0 0 32 32"
@@ -481,7 +448,7 @@ exports[`Media Player: Canonical Entry renders a placeholder image with guidance
       </div>
       <time
         aria-hidden="true"
-        class="c14"
+        class="c10"
         datetime="PT2M30S"
       >
         2:30
@@ -489,7 +456,7 @@ exports[`Media Player: Canonical Entry renders a placeholder image with guidance
     </button>
     <img
       alt=""
-      class="c15"
+      class="c11"
       src="http://foo.bar/placeholder.png"
     />
   </div>
@@ -635,6 +602,12 @@ exports[`Media Player: Canonical Entry renders a portrait container with a place
 `;
 
 exports[`Media Player: Canonical Entry renders an iframe when showPlaceholder is false 1`] = `
+.c0 {
+  padding-top: 56.25%;
+  position: relative;
+  overflow: hidden;
+}
+
 .c1 {
   position: absolute;
   top: 0;
@@ -642,12 +615,6 @@ exports[`Media Player: Canonical Entry renders an iframe when showPlaceholder is
   width: 100%;
   height: 100%;
   border: 0;
-  overflow: hidden;
-}
-
-.c0 {
-  padding-top: 56.25%;
-  position: relative;
   overflow: hidden;
 }
 
@@ -665,6 +632,12 @@ exports[`Media Player: Canonical Entry renders an iframe when showPlaceholder is
 `;
 
 exports[`Media Player: Canonical Entry renders the audio skin 1`] = `
+.c0 {
+  height: 165px;
+  position: relative;
+  overflow: hidden;
+}
+
 .c1 {
   position: absolute;
   top: 0;
@@ -672,12 +645,6 @@ exports[`Media Player: Canonical Entry renders the audio skin 1`] = `
   width: 100%;
   height: 100%;
   border: 0;
-  overflow: hidden;
-}
-
-.c0 {
-  height: 165px;
-  position: relative;
   overflow: hidden;
 }
 

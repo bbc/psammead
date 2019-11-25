@@ -1,8 +1,18 @@
 # Psammead Media Player Changelog
 
 <!-- prettier-ignore -->
-| Version | Description |
-| ------- | ----------- |
+| Version       | Description                                                                                                                  |
+| ------------- | ---------------------------------------------------------------------------------------------------------------------------- |
+| 2.3.2 | [PR#2666](https://github.com/bbc/psammead/pull/2666) Talos - Bump Dependencies - @bbc/psammead-play-button |
+| 2.3.1 | [PR#2663](https://github.com/bbc/psammead/pull/2663) Talos - Bump Dependencies - @bbc/psammead-assets |
+| 2.3.0 | [PR#2628](https://github.com/bbc/psammead/pull/2628) Add guidance message for assistive technology in Play Button and hide it in Guidance |
+| 2.2.7 | [PR#2652](https://github.com/bbc/psammead/pull/2652) Talos - Bump Dependencies - @bbc/psammead-play-button |
+| 2.2.6 | [PR#2647](https://github.com/bbc/psammead/pull/2647) Talos - Bump Dependencies - @bbc/psammead-assets, @bbc/psammead-play-button |
+| 2.2.5 | [PR#2645](https://github.com/bbc/psammead/pull/2645) Talos - Bump Dependencies - @bbc/psammead-assets |
+| 2.2.4 | [PR#2615](https://github.com/bbc/psammead/pull/2615) Talos - Bump Dependencies - @bbc/psammead-assets, @bbc/psammead-image |
+| 2.2.3 | [PR#2578](https://github.com/bbc/psammead/pull/2578) Fix HCM for guidance background colour on windows |
+| 2.2.2 | [PR#2493](https://github.com/bbc/psammead/pull/2493) Show media player placeholder while loading on canonical |
+| 2.2.1 | [PR#2576](https://github.com/bbc/psammead/pull/2576) Add support for 240px screen width & remove Guidance SVG |
 | 2.2.0 | [PR#2517](https://github.com/bbc/psammead/pull/2517) Add Guidance to media placeholder image |
 | 2.1.5 | [PR#2545](https://github.com/bbc/psammead/pull/2545) Update psammead-media-player prop documentation |
 | 2.1.4 | [PR#2516](https://github.com/bbc/psammead/pull/2516) Add notes to stories. Fix prop-type warnings |

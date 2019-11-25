@@ -1,5 +1,5 @@
-/scripts/*  @hindsc52 @jamesdonoh @benjaminhobbs @jroebu14
-/packages/ @dr3 @jblaut @sareh @benjaminhobbs @jroebu14
-Jenkinsfile @hindsc52 @jamesdonoh @benjaminhobbs
+/scripts/*  @hindsc52 @jamesdonoh @benjaminhobbs @jroebu14 @craigkj
+/packages/ @jblaut @sareh @benjaminhobbs @jroebu14 @craigkj @denishdz
+Jenkinsfile @hindsc52 @jamesdonoh @benjaminhobbs @craigkj
 
 **/*CODEOWNERS* @bbc/simorgh-admins
