@@ -15,9 +15,9 @@ import Brand from '@bbc/psammead-brand';
 import { ampDecorator } from '../../../../.storybook/config';
 import Navigation, { NavigationUl, NavigationLi } from './index';
 import {
-  CanonicalSwipeableNavigation,
-  AmpSwipeableNavigation,
-} from './SwipeableNavigation';
+  CanonicalScrollableNavigation,
+  AmpScrollableNavigation,
+} from './ScrollableNavigation';
 import igboNavData from '../testHelpers/igbo';
 import pidginNavData from '../testHelpers/pidgin';
 import yorubaNavData from '../testHelpers/yoruba';
@@ -122,9 +122,9 @@ const navigationStory = (
   brand,
   isAmp,
 ) => ({ script, service }) => {
-  const SwipeableNavigation = isAmp
-    ? AmpSwipeableNavigation
-    : CanonicalSwipeableNavigation;
+  const ScrollableNavigation = isAmp
+    ? AmpScrollableNavigation
+    : CanonicalScrollableNavigation;
 
   return (
     <>
@@ -136,7 +136,7 @@ const navigationStory = (
         service={service}
         dir={dir}
       >
-        <SwipeableNavigation dir={dir}>
+        <ScrollableNavigation dir={dir}>
           <NavigationUl>
             {navData.map((item, index) => {
               const { title, url } = item;
@@ -157,7 +157,7 @@ const navigationStory = (
               );
             })}
           </NavigationUl>
-        </SwipeableNavigation>
+        </ScrollableNavigation>
       </Navigation>
     </>
   );

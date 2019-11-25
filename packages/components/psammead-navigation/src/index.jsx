@@ -135,20 +135,20 @@ CurrentLink.defaultProps = {
   currentPageText: null,
 };
 
-export const NavigationUl = ({ children, isSwipeable, ...props }) => (
-  <StyledUnorderedList role="list" isSwipeable={isSwipeable} {...props}>
+export const NavigationUl = ({ children, isScrollable, ...props }) => (
+  <StyledUnorderedList role="list" isScrollable={isScrollable} {...props}>
     {React.Children.map(children, child =>
-      React.cloneElement(child, { isSwipeable }),
+      React.cloneElement(child, { isScrollable }),
     )}
   </StyledUnorderedList>
 );
 
 NavigationUl.propTypes = {
   children: node.isRequired,
-  isSwipeable: bool,
+  isScrollable: bool,
 };
 
-NavigationUl.defaultProps = { isSwipeable: false };
+NavigationUl.defaultProps = { isScrollable: false };
 
 export const NavigationLi = ({
   children: link,
@@ -158,10 +158,10 @@ export const NavigationLi = ({
   active,
   service,
   dir,
-  isSwipeable,
+  isScrollable,
   ...props
 }) => {
-  const tabIndex = isSwipeable && { tabIndex: -1 };
+  const tabIndex = isScrollable && { tabIndex: -1 };
 
   return (
     <StyledListItem dir={dir} role="listitem">
@@ -200,14 +200,14 @@ NavigationLi.propTypes = {
   active: bool,
   currentPageText: string,
   service: string.isRequired,
-  isSwipeable: bool,
+  isScrollable: bool,
   dir: oneOf(['ltr', 'rtl']),
 };
 
 NavigationLi.defaultProps = {
   active: false,
   currentPageText: null,
-  isSwipeable: false,
+  isScrollable: false,
   dir: 'ltr',
 };
 

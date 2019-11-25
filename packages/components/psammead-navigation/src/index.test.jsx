@@ -3,9 +3,9 @@ import { shouldMatchSnapshot } from '@bbc/psammead-test-helpers';
 import { render } from '@testing-library/react';
 import { latin } from '@bbc/gel-foundations/scripts';
 import {
-  CanonicalSwipeableNavigation,
-  AmpSwipeableNavigation,
-} from './SwipeableNavigation';
+  CanonicalScrollableNavigation,
+  AmpScrollableNavigation,
+} from './ScrollableNavigation';
 import Navigation, { NavigationUl, NavigationLi } from './index';
 import igboNavData from '../testHelpers/igbo';
 
@@ -38,7 +38,7 @@ describe('Navigation', () => {
   shouldMatchSnapshot('should render correctly', NavigationExample);
 });
 
-describe('Swipeable Navigation', () => {
+describe('Scrollable Navigation', () => {
   window.matchMedia = jest.fn().mockImplementation(query => {
     return {
       matches: true,
@@ -50,14 +50,14 @@ describe('Swipeable Navigation', () => {
 
   shouldMatchSnapshot(
     'should render Canonical version correctly',
-    <CanonicalSwipeableNavigation>
+    <CanonicalScrollableNavigation>
       {NavigationExample}
-    </CanonicalSwipeableNavigation>,
+    </CanonicalScrollableNavigation>,
   );
 
   shouldMatchSnapshot(
     'should render AMP version correctly',
-    <AmpSwipeableNavigation>{NavigationExample};</AmpSwipeableNavigation>,
+    <AmpScrollableNavigation>{NavigationExample};</AmpScrollableNavigation>,
   );
 });
 

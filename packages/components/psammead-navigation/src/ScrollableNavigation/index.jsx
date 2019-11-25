@@ -8,7 +8,7 @@ import useMediaQuery from '../../hooks/useMediaQuery';
 const C_POSTBOX_TRANSPARENT = `rgba(184, 0, 0, 0)`;
 const C_POSTBOX_OPAQUE = `rgba(184, 0, 0, 1)`;
 
-const StyledSwipeableNav = styled.div`
+const StyledScrollableNav = styled.div`
   @media (max-width: ${GEL_GROUP_2_SCREEN_WIDTH_MAX}) {
     white-space: nowrap;
     overflow-x: scroll;
@@ -43,33 +43,33 @@ const StyledSwipeableNav = styled.div`
   }
 `;
 
-export const CanonicalSwipeableNavigation = ({ children, dir }) => {
-  const isSwipeable = useMediaQuery('(max-width: 600px)');
-  const ariaHidden = isSwipeable && { 'aria-hidden': true };
+export const CanonicalScrollableNavigation = ({ children, dir }) => {
+  const isScrollable = useMediaQuery('(max-width: 600px)');
+  const ariaHidden = isScrollable && { 'aria-hidden': true };
 
   return (
-    <StyledSwipeableNav dir={dir} {...ariaHidden}>
+    <StyledScrollableNav dir={dir} {...ariaHidden}>
       {React.Children.map(children, child =>
-        React.cloneElement(child, { isSwipeable }),
+        React.cloneElement(child, { isScrollable }),
       )}
-    </StyledSwipeableNav>
+    </StyledScrollableNav>
   );
 };
 
-CanonicalSwipeableNavigation.propTypes = {
+CanonicalScrollableNavigation.propTypes = {
   children: node.isRequired,
   dir: oneOf(['ltr', 'rtl']),
 };
 
-CanonicalSwipeableNavigation.defaultProps = { dir: 'ltr' };
+CanonicalScrollableNavigation.defaultProps = { dir: 'ltr' };
 
-export const AmpSwipeableNavigation = ({ children, dir }) => (
-  <StyledSwipeableNav dir={dir}>{children}</StyledSwipeableNav>
+export const AmpScrollableNavigation = ({ children, dir }) => (
+  <StyledScrollableNav dir={dir}>{children}</StyledScrollableNav>
 );
 
-AmpSwipeableNavigation.propTypes = {
+AmpScrollableNavigation.propTypes = {
   children: node.isRequired,
   dir: oneOf(['ltr', 'rtl']),
 };
 
-AmpSwipeableNavigation.defaultProps = { dir: 'ltr' };
+AmpScrollableNavigation.defaultProps = { dir: 'ltr' };

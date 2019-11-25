@@ -263,7 +263,7 @@ exports[`Navigation should render correctly 1`] = `
 </nav>
 `;
 
-exports[`Swipeable Navigation should render AMP version correctly 1`] = `
+exports[`Scrollable Navigation should render AMP version correctly 1`] = `
 .c8 {
   -webkit-clip-path: inset(100%);
   clip-path: inset(100%);
@@ -566,7 +566,7 @@ exports[`Swipeable Navigation should render AMP version correctly 1`] = `
 </div>
 `;
 
-exports[`Swipeable Navigation should render Canonical version correctly 1`] = `
+exports[`Scrollable Navigation should render Canonical version correctly 1`] = `
 .c8 {
   -webkit-clip-path: inset(100%);
   clip-path: inset(100%);

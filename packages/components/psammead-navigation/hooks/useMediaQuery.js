@@ -13,7 +13,7 @@ const useMediaQuery = query => {
 
     mediaMatch.addListener(handler);
     return () => mediaMatch.removeListener(handler);
-  });
+  }, []);
 
   return matches;
 };
