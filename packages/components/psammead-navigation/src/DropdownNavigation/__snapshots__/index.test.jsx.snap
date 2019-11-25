@@ -35,6 +35,18 @@ exports[`Canonical dropdown navigation should render correctly 1`] = `
   box-shadow: inset 0 0 0 0.25rem #FFFFFF;
 }
 
+.c1:focus::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  height: 2.75rem;
+  width: 2.75rem;
+  border: 0.25rem solid #FFFFFF;
+}
+
 .c3 {
   list-style-type: none;
   margin: 0;

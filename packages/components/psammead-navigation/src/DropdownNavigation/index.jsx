@@ -1,5 +1,5 @@
 import React from 'react';
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 import { shape, string, node, bool, func, oneOf } from 'prop-types';
 import VisuallyHiddenText from '@bbc/psammead-visually-hidden-text';
 import { navigationIcons } from '@bbc/psammead-assets/svgs';
@@ -35,6 +35,18 @@ const DropdownWrapper = styled.div`
   }
 `;
 
+const iconBorder = css`
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  height: ${MENU_ICON_SIDE_LENGTH};
+  width: ${MENU_ICON_SIDE_LENGTH};
+  border: ${GEL_SPACING_HLF} solid ${C_WHITE};
+`;
+
 const CrossButton = styled.button`
   background-color: ${C_EBON};
   width: ${MENU_ICON_SIDE_LENGTH};
@@ -45,6 +57,9 @@ const CrossButton = styled.button`
 
   &:focus {
     box-shadow: inset 0 0 0 ${GEL_SPACING_HLF} ${C_WHITE};
+    ::after {
+      ${iconBorder};
+    }
   }
 `;
 
