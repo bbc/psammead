@@ -24,7 +24,7 @@ const MENU_ICON_SIDE_LENGTH = '2.75rem'; // 44px
 const getStyles = dir => {
   const direction = dir === 'ltr' ? 'left' : 'right';
   return `border-${direction}: ${GEL_SPACING_HLF} solid ${C_WHITE};
-          padding-${direction}: ${GEL_SPACING}`;
+          padding-${direction}: ${GEL_SPACING};`;
 };
 
 const DropdownWrapper = styled.div`

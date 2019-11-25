@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Canonical dropdown navigation should render correctly 1`] = `
+exports[`Canonical Dropdown navigation should render correctly 1`] = `
 .c7 {
   -webkit-clip-path: inset(100%);
   clip-path: inset(100%);
@@ -243,7 +243,7 @@ exports[`Canonical dropdown navigation should render correctly 1`] = `
 </div>
 `;
 
-exports[`Canonical hamburger menu should render correctly 1`] = `
+exports[`Canonical Hamburger menu should render correctly 1`] = `
 .c1 {
   color: #fff;
   fill: currentColor;
