@@ -11,4 +11,13 @@ describe('Media Player: Guidance', () => {
       type="video"
     />,
   );
+
+  shouldMatchSnapshot(
+    'should render no-js styles when noJsClassName prop is used',
+    <Guidance
+      guidanceMessage="Guidance: Contains strong language with adult humor"
+      service="news"
+      type="video"
+    />,
+  );
 });
