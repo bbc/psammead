@@ -106,13 +106,13 @@ exports[`Media Player: Placeholder should render a video placeholder 1`] = `
   bottom: 0;
 }
 
+.no-js .c5 {
+  display: none;
+}
+
 .c0:hover .c5,
 .c0:focus .c5 {
   background-color: #B80000;
-}
-
-.no-js .c5 {
-  display: none;
 }
 
 @media (min-width:37.5rem) {
@@ -291,13 +291,13 @@ exports[`Media Player: Placeholder should render a video placeholder with guidan
   bottom: 0;
 }
 
+.no-js .c6 {
+  display: none;
+}
+
 .c0:hover .c6,
 .c0:focus .c6 {
   background-color: #B80000;
-}
-
-.no-js .c6 {
-  display: none;
 }
 
 @media (min-width:37.5rem) {
@@ -486,13 +486,13 @@ exports[`Media Player: Placeholder should render a video placeholder without dur
   bottom: 0;
 }
 
+.no-js .c5 {
+  display: none;
+}
+
 .c0:hover .c5,
 .c0:focus .c5 {
   background-color: #B80000;
-}
-
-.no-js .c5 {
-  display: none;
 }
 
 @media (min-width:37.5rem) {
@@ -656,13 +656,13 @@ exports[`Media Player: Placeholder should render an audio placeholder 1`] = `
   bottom: 0;
 }
 
+.no-js .c5 {
+  display: none;
+}
+
 .c0:hover .c5,
 .c0:focus .c5 {
   background-color: #B80000;
-}
-
-.no-js .c5 {
-  display: none;
 }
 
 @media (min-width:37.5rem) {
@@ -830,13 +830,13 @@ exports[`Media Player: Placeholder should render an audio placeholder without du
   bottom: 0;
 }
 
+.no-js .c5 {
+  display: none;
+}
+
 .c0:hover .c5,
 .c0:focus .c5 {
   background-color: #B80000;
-}
-
-.no-js .c5 {
-  display: none;
 }
 
 @media (min-width:37.5rem) {

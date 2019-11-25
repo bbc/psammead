@@ -238,13 +238,13 @@ exports[`Media Player: Canonical Entry renders a landscape container with a plac
   bottom: 0;
 }
 
+.no-js .c6 {
+  display: none;
+}
+
 .c1:hover .c6,
 .c1:focus .c6 {
   background-color: #B80000;
-}
-
-.no-js .c6 {
-  display: none;
 }
 
 .c0 {
@@ -433,13 +433,13 @@ exports[`Media Player: Canonical Entry renders a placeholder image with guidance
   bottom: 0;
 }
 
+.no-js .c7 {
+  display: none;
+}
+
 .c1:hover .c7,
 .c1:focus .c7 {
   background-color: #B80000;
-}
-
-.no-js .c7 {
-  display: none;
 }
 
 .c0 {
@@ -644,13 +644,13 @@ exports[`Media Player: Canonical Entry renders a portrait container with a place
   bottom: 0;
 }
 
+.no-js .c6 {
+  display: none;
+}
+
 .c1:hover .c6,
 .c1:focus .c6 {
   background-color: #B80000;
-}
-
-.no-js .c6 {
-  display: none;
 }
 
 .c0 {
