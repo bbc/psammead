@@ -19,6 +19,10 @@ const StyledPlayButton = styled(PlayButton)`
   position: absolute;
   bottom: 0;
 
+  .no-js & {
+    display: none;
+  }
+
   /* stylelint-disable */
   /* https://www.styled-components.com/docs/advanced#referring-to-other-components */
   ${StyledPlaceholder}:hover &,
@@ -26,9 +30,6 @@ const StyledPlayButton = styled(PlayButton)`
     background-color: ${C_POSTBOX};
   }
   /* stylelint-enable */
-  .no-js & {
-    display: none;
-  }
 `;
 
 const Placeholder = ({ onClick, service, src, srcset, mediaInfo }) => {
