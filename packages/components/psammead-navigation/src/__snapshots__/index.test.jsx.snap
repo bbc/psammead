@@ -784,6 +784,7 @@ exports[`Swipeable Navigation should render Canonical version correctly 1`] = `
 }
 
 <div
+  aria-hidden="true"
   class="c0"
   dir="ltr"
 >

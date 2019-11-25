@@ -41,7 +41,7 @@ describe('Navigation', () => {
 describe('Swipeable Navigation', () => {
   window.matchMedia = jest.fn().mockImplementation(query => {
     return {
-      matches: false,
+      matches: true,
       media: query,
       addListener: jest.fn(),
       removeListener: jest.fn(),
