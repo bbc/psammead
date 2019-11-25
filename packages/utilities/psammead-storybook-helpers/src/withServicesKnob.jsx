@@ -15,8 +15,6 @@ export default ({
   defaultService = DEFAULT_SERVICE,
   services = SERVICES_LIST,
 } = {}) => storyFn => {
-  const hasVariant = selectedItem => path([selectedItem, 'variant']);
-
   const selectedItem = select(
     'Select a service',
     services.filter(includesService(services)),
@@ -25,7 +23,7 @@ export default ({
 
   const variant = getVariant(selectedItem)(TEXT_EXAMPLES);
 
-  const service = hasVariant(selectedItem)(TEXT_EXAMPLES)
+  const service = variant
     ? getService(selectedItem)(TEXT_EXAMPLES)
     : selectedItem;
 
