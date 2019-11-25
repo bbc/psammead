@@ -18,13 +18,13 @@ describe('MediaQuery hook', () => {
     mockRemoveListener.mockReset();
   });
 
-  it('it should test that the media query matches', async () => {
+  it('it should test that the media query matches', () => {
     const { result } = renderHook(() => useMediaQuery('(max-width: 600px)'));
     expect(result.current).toBe(true);
     expect(mockAddListener).toBeCalled();
   });
 
-  it('should add a listener that updates the state', async () => {
+  it('should add a listener that updates the state', () => {
     const { result } = renderHook(() => useMediaQuery('(max-width: 600px)'));
 
     act(() => mockAddListener.mock.calls[0][0]({ matches: false }));
