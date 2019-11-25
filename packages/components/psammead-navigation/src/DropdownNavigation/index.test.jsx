@@ -4,9 +4,11 @@ import { render, fireEvent, getByRole } from '@testing-library/react';
 import { latin } from '@bbc/gel-foundations/scripts';
 import {
   CanonicalDropdown,
+  AmpDropdown,
   DropdownUl,
   DropdownLi,
   CanonicalHamburgerMenu,
+  AmpHamburgerMenu,
 } from './index';
 import pidginNavData from '../../testHelpers/pidgin';
 
@@ -75,4 +77,20 @@ describe('Canonical', () => {
       expect(mockOnClick).toHaveBeenCalledTimes(1);
     });
   });
+});
+
+describe('Amp dropdown navigation', () => {
+  shouldMatchSnapshot(
+    'should render correctly',
+    <AmpDropdown announcedText="Menu" onClose="">
+      {dropdownList}
+    </AmpDropdown>,
+  );
+});
+
+describe('AMP hamburger menu', () => {
+  shouldMatchSnapshot(
+    'should render correctly',
+    <AmpHamburgerMenu announcedText="Menu" onOpen="" />,
+  );
 });
