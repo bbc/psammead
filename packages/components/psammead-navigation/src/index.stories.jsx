@@ -18,7 +18,7 @@ import {
   CanonicalHamburgerMenu,
   CanonicalDropdown,
   DropdownUl,
-  DropdownNavigationLi,
+  DropdownLi,
 } from './DropdownNavigation';
 import igboNavData from '../testHelpers/igbo';
 import pidginNavData from '../testHelpers/pidgin';
@@ -168,7 +168,7 @@ const dropdownStory = () => ({ dir, script, service }) => (
         const { title, url } = item;
 
         return (
-          <DropdownNavigationLi
+          <DropdownLi
             script={script}
             service={service}
             key={title}
@@ -178,7 +178,7 @@ const dropdownStory = () => ({ dir, script, service }) => (
             currentPageText="Current page"
           >
             {title}
-          </DropdownNavigationLi>
+          </DropdownLi>
         );
       })}
     </DropdownUl>

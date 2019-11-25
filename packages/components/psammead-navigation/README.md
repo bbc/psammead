@@ -10,7 +10,7 @@ The `@bbc/psammead-navigation` package is a set of two components, `NavigationUl
 
 ## Exports
 
-`/dropdown-navigation` - adds a dropdown navigation with hamburger menu which is visible for breakpoints under 600px
+`/dropdown` - adds a dropdown navigation with hamburger menu which is visible for breakpoints under 600px
 
 ## Installation
 
@@ -49,7 +49,7 @@ The `@bbc/psammead-navigation` package is a set of two components, `NavigationUl
 <!-- prettier-ignore -->
 | Argument | Type | Required | Default | Example |
 | -------- | ---- | -------- | ------- | ------- |
-| children | node | Yes | N/A | `<DropdownUl><DropdownNavigationLi script={latin} service='news' key='sport' url='/sport' active="false"> Sport </DropdownNavigationLi></DropdownUl>` |
+| children | node | Yes | N/A | `<DropdownUl><DropdownLi script={latin} service='news' key='sport' url='/sport' active="false"> Sport </DropdownLi></DropdownUl>` |
 | announcedText | string | Yes | N/A | `'Menu'` |
 | onClose | function | Yes | N/A | `() => { console.log("Handle close action"); }` |
 
@@ -58,11 +58,11 @@ The `@bbc/psammead-navigation` package is a set of two components, `NavigationUl
 <!-- prettier-ignore -->
 | Argument | Type | Required | Default | Example |
 | -------- | ---- | -------- | ------- | ------- |
-| children | node | Yes | N/A | `<DropdownUl><DropdownNavigationLi script={latin} service='news' key='sport' url='/sport' active="false"> Sport </DropdownNavigationLi></DropdownUl>` |
+| children | node | Yes | N/A | `<DropdownUl><DropdownLi script={latin} service='news' key='sport' url='/sport' active="false"> Sport </DropdownLi></DropdownUl>` |
 | announcedText | string | Yes | N/A | `'Menu'` |
 | onClose | string | Yes | N/A | `"tap:menu.toggleVisibility"` |
 
-### DropdownNavigationLi
+### DropdownLi
 
 <!-- prettier-ignore -->
 | Argument | Type    | Required | Default | Example  |
@@ -126,12 +126,12 @@ import { latin } from '@bbc/gel-foundations/scripts';
 
 ```jsx
 import React from 'react';
-import { CanonicalDropdown, DropdownUl, DropdownNavigationLi } from '@bbc/psammead-navigation/dropdown-navigation';
+import { CanonicalDropdown, DropdownUl, DropdownLi } from '@bbc/psammead-navigation/dropdown-navigation';
 import { latin } from '@bbc/gel-foundations/scripts';
 
 <CanonicalDropdown announcedText="Menu" onClose={() => {}}>
   <DropdownUl>
-    <DropdownNavigationLi
+    <DropdownLi
         script={latin}
         service="news"
         key="Home"
@@ -140,10 +140,10 @@ import { latin } from '@bbc/gel-foundations/scripts';
         currentPageText="Current page"
     >
       Home
-    </DropdownNavigationLi>
-    <DropdownNavigationLi script={latin} service="news" key="Sport" url="/sport">
+    </DropdownLi>
+    <DropdownLi script={latin} service="news" key="Sport" url="/sport">
       Sport
-    </DropdownNavigationLi>
+    </DropdownLi>
   </DropdownUl>
 </CanonicalDropdown>
 ```
@@ -152,12 +152,12 @@ import { latin } from '@bbc/gel-foundations/scripts';
 
 ```jsx
 import React from 'react';
-import { AmpDropdown, DropdownUl, DropdownNavigationLi } from '@bbc/psammead-navigation/dropdown-navigation';
+import { AmpDropdown, DropdownUl, DropdownLi } from '@bbc/psammead-navigation/dropdown-navigation';
 import { latin } from '@bbc/gel-foundations/scripts';
 
 <AmpDropdown announcedText="Menu" onClose="tap:menu.toggleVisibility">
   <DropdownUl>
-    <DropdownNavigationLi
+    <DropdownLi
         script={latin}
         service="news"
         key="Home"
@@ -166,10 +166,10 @@ import { latin } from '@bbc/gel-foundations/scripts';
         currentPageText="Current page"
     >
       Home
-    </DropdownNavigationLi>
-    <DropdownNavigationLi script={latin} service="news" key="Sport" url="/sport">
+    </DropdownLi>
+    <DropdownLi script={latin} service="news" key="Sport" url="/sport">
       Sport
-    </DropdownNavigationLi>
+    </DropdownLi>
   </DropdownUl>
 </AmpDropdown>
 ```

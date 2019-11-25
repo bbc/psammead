@@ -4,7 +4,7 @@ import { latin } from '@bbc/gel-foundations/scripts';
 import {
   CanonicalDropdown,
   DropdownUl,
-  DropdownNavigationLi,
+  DropdownLi,
   CanonicalHamburgerMenu,
 } from './index';
 import pidginNavData from '../../testHelpers/pidgin';
@@ -19,7 +19,7 @@ describe('Canonical dropdown navigation', () => {
           const { title, url } = item;
 
           return (
-            <DropdownNavigationLi
+            <DropdownLi
               script={latin}
               service="news"
               url={url}
@@ -28,7 +28,7 @@ describe('Canonical dropdown navigation', () => {
               currentPageText="Current page"
             >
               {title}
-            </DropdownNavigationLi>
+            </DropdownLi>
           );
         })}
       </DropdownUl>

@@ -70,7 +70,7 @@ export const DropdownUl = styled.ul.attrs({ role: 'list' })`
   border-bottom: 0.125rem solid ${C_SHADOW};
 `;
 
-const DropdownLi = styled.li`
+const StyledDropdownLi = styled.li`
   padding: 0.75rem 0;
   border-bottom: 0.0625rem solid ${C_SHADOW};
 
@@ -95,7 +95,7 @@ const StyledCurrentLink = styled.span`
   ${({ dir }) => getStyles(dir)}
 `;
 
-export const DropdownNavigationLi = ({
+export const DropdownLi = ({
   children,
   script,
   currentPageText,
@@ -104,7 +104,7 @@ export const DropdownNavigationLi = ({
   url,
   dir,
 }) => (
-  <DropdownLi role="listitem">
+  <StyledDropdownLi role="listitem">
     <StyledDropdownLink script={script} service={service} href={url}>
       {active && currentPageText ? (
         <StyledCurrentLink
@@ -119,10 +119,10 @@ export const DropdownNavigationLi = ({
         children
       )}
     </StyledDropdownLink>
-  </DropdownLi>
+  </StyledDropdownLi>
 );
 
-DropdownNavigationLi.propTypes = {
+DropdownLi.propTypes = {
   children: string.isRequired,
   url: string.isRequired,
   script: shape(scriptPropType).isRequired,
@@ -132,7 +132,7 @@ DropdownNavigationLi.propTypes = {
   dir: oneOf(['ltr', 'rtl']),
 };
 
-DropdownNavigationLi.defaultProps = {
+DropdownLi.defaultProps = {
   active: false,
   currentPageText: null,
   dir: 'ltr',
