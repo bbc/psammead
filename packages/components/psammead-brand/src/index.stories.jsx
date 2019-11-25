@@ -165,8 +165,18 @@ storiesOf(STORY_KIND, module)
     { notes },
   )
   .add(
-    'with skip to content link',
+    'with skip to content link and script link',
     ({ service, script }) => {
+      const scriptLink = (
+        <ScriptLink
+          script={script}
+          service={service}
+          href="https://www.bbc.com/serbian/lat"
+        >
+          Lat
+        </ScriptLink>
+      );
+
       const {
         productInput,
         serviceLocalisedNameInput,
@@ -200,6 +210,7 @@ storiesOf(STORY_KIND, module)
           backgroundColour={backgroundColour}
           logoColour={logoColour}
           skipLink={skipLink}
+          scriptLink={scriptLink}
         />
       );
     },
