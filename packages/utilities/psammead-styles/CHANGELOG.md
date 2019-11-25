@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 4.1.2 | [PR#????](https://github.com/bbc/psammead/pull/????) Add colour C_ARCHIVE_BLUE |
 | 4.1.1 | [PR#2661](https://github.com/bbc/psammead/pull/2661) Remove font 'Noto Sans Devanagari' from Hindi & Nepali font-family and add bold weight for Telugu service's fonts. |
 | 4.1.0 | [PR#2514](https://github.com/bbc/psammead/pull/2514) Add SerifLight and SansLight functions |
 | 4.0.4 | [PR#2471](https://github.com/bbc/psammead/pull/2471) Switch Russian service to use Reith fonts |
