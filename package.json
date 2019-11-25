@@ -1,6 +1,6 @@
 {
   "name": "@bbc/psammead",
-  "version": "2.0.10",
+  "version": "2.0.11",
   "description": "Core Components Library Developed & Maintained By The Articles and Reach & Languages Team",
   "main": "index.js",
   "private": true,
@@ -102,6 +102,7 @@
     "lint-staged": "^9.4.3",
     "prettier": "^1.19.1",
     "prop-types": "^15.7.2",
+    "ramda": "^0.26.1",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "react-helmet": "^5.2.0",
