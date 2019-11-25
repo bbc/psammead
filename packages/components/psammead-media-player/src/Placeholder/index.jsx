@@ -1,5 +1,5 @@
 import React from 'react';
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 import { string, func, shape, oneOf } from 'prop-types';
 import Image from '@bbc/psammead-image';
 import PlayButton from '@bbc/psammead-play-button';
@@ -23,6 +23,14 @@ const StyledPlayButton = styled(PlayButton)`
     display: none;
   }
 
+  ${({ noJsClassName }) =>
+    noJsClassName &&
+    css`
+      .${noJsClassName} & {
+        display: none;
+      }
+    `}
+
   /* stylelint-disable */
   /* https://www.styled-components.com/docs/advanced#referring-to-other-components */
   ${StyledPlaceholder}:hover &,
@@ -32,7 +40,14 @@ const StyledPlayButton = styled(PlayButton)`
   /* stylelint-enable */
 `;
 
-const Placeholder = ({ onClick, service, src, srcset, mediaInfo }) => {
+const Placeholder = ({
+  onClick,
+  service,
+  src,
+  srcset,
+  mediaInfo,
+  noJsClassName,
+}) => {
   const {
     title,
     datetime,
@@ -48,6 +63,7 @@ const Placeholder = ({ onClick, service, src, srcset, mediaInfo }) => {
         service={service}
         guidanceMessage={guidanceMessage}
         type={type}
+        noJsClassName={noJsClassName}
       />
       <StyledPlayButton
         title={title}
@@ -58,6 +74,7 @@ const Placeholder = ({ onClick, service, src, srcset, mediaInfo }) => {
         durationSpoken={durationSpoken}
         type={type}
         guidanceMessage={guidanceMessage}
+        noJsClassName={noJsClassName}
       />
 
       <Image alt="" src={src} srcset={srcset} />
@@ -70,6 +87,7 @@ Placeholder.propTypes = {
   service: string.isRequired,
   src: string.isRequired,
   srcset: string,
+  noJsClassName: string,
   mediaInfo: shape({
     title: string.isRequired,
     datetime: string,
@@ -81,6 +99,7 @@ Placeholder.propTypes = {
 };
 Placeholder.defaultProps = {
   srcset: null,
+  noJsClassName: null,
   mediaInfo: shape({
     datetime: null,
     duration: null,

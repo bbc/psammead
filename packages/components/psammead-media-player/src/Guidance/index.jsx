@@ -1,6 +1,6 @@
 import React from 'react';
 import { string, oneOf } from 'prop-types';
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 import { C_WHITE } from '@bbc/psammead-styles/colours';
 import { GEL_SPACING_DBL, GEL_SPACING } from '@bbc/gel-foundations/spacings';
 import { GEL_LONG_PRIMER } from '@bbc/gel-foundations/typography';
@@ -25,15 +25,19 @@ const GuidanceWrapper = styled.div`
       guidanceMessage && 'transparent'};
   }
 
-  .no-js & {
-    background-color: ${GUIDANCE_BACKGROUND};
-    @media screen and (-ms-high-contrast: active) {
-      background-color: transparent;
-    }
-    .guidance-message {
-      display: none;
-    }
-  }
+  ${({ noJsClassName }) =>
+    noJsClassName &&
+    css`
+      .${noJsClassName} & {
+        background-color: ${GUIDANCE_BACKGROUND};
+        @media screen and (-ms-high-contrast: active) {
+          background-color: transparent;
+        }
+        .guidance-message {
+          display: none;
+        }
+      }
+    `}
 `;
 
 const GuidanceMessage = styled.strong`
@@ -54,8 +58,12 @@ const StyledNoScript = styled.noscript`
   bottom: 0;
 `;
 
-const Guidance = ({ guidanceMessage, service, type }) => (
-  <GuidanceWrapper service={service} guidanceMessage={guidanceMessage}>
+const Guidance = ({ guidanceMessage, service, type, noJsClassName }) => (
+  <GuidanceWrapper
+    service={service}
+    guidanceMessage={guidanceMessage}
+    noJsClassName={noJsClassName}
+  >
     {guidanceMessage && (
       <GuidanceMessage className="guidance-message" aria-hidden="true">
         {guidanceMessage}
@@ -74,10 +82,12 @@ Guidance.propTypes = {
   guidanceMessage: string,
   service: string.isRequired,
   type: oneOf(['video', 'audio']).isRequired,
+  noJsClassName: string,
 };
 
 Guidance.defaultProps = {
   guidanceMessage: null,
+  noJsClassName: null,
 };
 
 export default Guidance;

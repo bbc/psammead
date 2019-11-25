@@ -79,14 +79,6 @@ exports[`Media Player: Placeholder should render a video placeholder 1`] = `
   color: #FFFFFF;
 }
 
-.no-js .c2 {
-  background-color: rgba(34,34,34,0.75);
-}
-
-.no-js .c2 .guidance-message {
-  display: none;
-}
-
 .c3 {
   position: absolute;
   bottom: 0;
@@ -118,12 +110,6 @@ exports[`Media Player: Placeholder should render a video placeholder 1`] = `
 @media (min-width:37.5rem) {
   .c2 {
     font-size: 0.875rem;
-  }
-}
-
-@media screen and (-ms-high-contrast:active) {
-  .no-js .c2 {
-    background-color: transparent;
   }
 }
 
@@ -257,14 +243,6 @@ exports[`Media Player: Placeholder should render a video placeholder with guidan
   background-color: rgba(34,34,34,0.75);
 }
 
-.no-js .c2 {
-  background-color: rgba(34,34,34,0.75);
-}
-
-.no-js .c2 .guidance-message {
-  display: none;
-}
-
 .c3 {
   display: block;
   font-weight: normal;
@@ -308,12 +286,6 @@ exports[`Media Player: Placeholder should render a video placeholder with guidan
 
 @media screen and (-ms-high-contrast:active) {
   .c2 {
-    background-color: transparent;
-  }
-}
-
-@media screen and (-ms-high-contrast:active) {
-  .no-js .c2 {
     background-color: transparent;
   }
 }
@@ -459,14 +431,6 @@ exports[`Media Player: Placeholder should render a video placeholder without dur
   color: #FFFFFF;
 }
 
-.no-js .c2 {
-  background-color: rgba(34,34,34,0.75);
-}
-
-.no-js .c2 .guidance-message {
-  display: none;
-}
-
 .c3 {
   position: absolute;
   bottom: 0;
@@ -498,12 +462,6 @@ exports[`Media Player: Placeholder should render a video placeholder without dur
 @media (min-width:37.5rem) {
   .c2 {
     font-size: 0.875rem;
-  }
-}
-
-@media screen and (-ms-high-contrast:active) {
-  .no-js .c2 {
-    background-color: transparent;
   }
 }
 
@@ -629,14 +587,6 @@ exports[`Media Player: Placeholder should render an audio placeholder 1`] = `
   color: #FFFFFF;
 }
 
-.no-js .c2 {
-  background-color: rgba(34,34,34,0.75);
-}
-
-.no-js .c2 .guidance-message {
-  display: none;
-}
-
 .c3 {
   position: absolute;
   bottom: 0;
@@ -668,12 +618,6 @@ exports[`Media Player: Placeholder should render an audio placeholder 1`] = `
 @media (min-width:37.5rem) {
   .c2 {
     font-size: 0.875rem;
-  }
-}
-
-@media screen and (-ms-high-contrast:active) {
-  .no-js .c2 {
-    background-color: transparent;
   }
 }
 
@@ -803,14 +747,6 @@ exports[`Media Player: Placeholder should render an audio placeholder without du
   color: #FFFFFF;
 }
 
-.no-js .c2 {
-  background-color: rgba(34,34,34,0.75);
-}
-
-.no-js .c2 .guidance-message {
-  display: none;
-}
-
 .c3 {
   position: absolute;
   bottom: 0;
@@ -842,12 +778,6 @@ exports[`Media Player: Placeholder should render an audio placeholder without du
 @media (min-width:37.5rem) {
   .c2 {
     font-size: 0.875rem;
-  }
-}
-
-@media screen and (-ms-high-contrast:active) {
-  .no-js .c2 {
-    background-color: transparent;
   }
 }
 

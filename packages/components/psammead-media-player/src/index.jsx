@@ -29,6 +29,7 @@ export const CanonicalMediaPlayer = ({
   skin,
   service,
   mediaInfo,
+  noJsClassName,
 }) => {
   const [placeholderActive, setPlaceholderActive] = useState(showPlaceholder);
   const handlePlaceholderClick = () => setPlaceholderActive(false);
@@ -45,6 +46,7 @@ export const CanonicalMediaPlayer = ({
           srcset={placeholderSrcset}
           service={service}
           mediaInfo={mediaInfo}
+          noJsClassName={noJsClassName}
         />
       ) : (
         <Canonical src={src} title={title} placeholderSrc={placeholderSrc} />
@@ -87,6 +89,7 @@ CanonicalMediaPlayer.propTypes = {
   title: string.isRequired,
   skin: oneOf(['classic', 'audio']),
   service: string.isRequired,
+  noJsClassName: string,
   mediaInfo: shape({
     title: string.isRequired,
     datetime: string,
@@ -103,6 +106,7 @@ CanonicalMediaPlayer.defaultProps = {
   skin: 'classic',
   placeholderSrc: null,
   placeholderSrcset: null,
+  noJsClassName: null,
 };
 
 AmpMediaPlayer.propTypes = {
