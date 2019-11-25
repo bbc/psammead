@@ -7,7 +7,7 @@ import {
   GEL_GROUP_3_SCREEN_WIDTH_MIN,
 } from '@bbc/gel-foundations/breakpoints';
 import { getSansRegular } from '@bbc/psammead-styles/font-styles';
-import { C_WHITE, C_EBON } from '@bbc/psammead-styles/colours';
+import { C_WHITE } from '@bbc/psammead-styles/colours';
 import { string, shape, node } from 'prop-types';
 import { scriptPropType } from '@bbc/gel-foundations/prop-types';
 
@@ -20,6 +20,7 @@ const StyledLink = styled.a`
   text-decoration: none;
   padding: 0 1rem;
   height: 3rem;
+
   &::after {
     content: '';
     position: absolute;
@@ -29,13 +30,12 @@ const StyledLink = styled.a`
     bottom: 0;
     border: 0.0625rem solid ${C_WHITE};
   }
-  &:hover::after {
+
+  &:hover::after,
+  &:focus::after {
     border: 0.25rem solid ${C_WHITE};
   }
-  &:focus {
-    background-color: ${C_WHITE};
-    color: ${C_EBON};
-  }
+
   @media (min-width: ${GEL_GROUP_2_SCREEN_WIDTH_MIN}) {
     line-height: 3rem;
   }
