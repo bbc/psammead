@@ -24,6 +24,16 @@ const GuidanceWrapper = styled.div`
     background-color: ${({ guidanceMessage }) =>
       guidanceMessage && 'transparent'};
   }
+
+  html.no-js & {
+    background-color: ${GUIDANCE_BACKGROUND};
+    @media screen and (-ms-high-contrast: active) {
+      background-color: transparent;
+    }
+    .guidance-message {
+      display: none;
+    }
+  }
 `;
 
 const GuidanceMessage = styled.strong`
@@ -45,11 +55,7 @@ const StyledNoScript = styled.noscript`
 `;
 
 const Guidance = ({ guidanceMessage, service, type }) => (
-  <GuidanceWrapper
-    service={service}
-    className="guidance-wrapper"
-    guidanceMessage={guidanceMessage}
-  >
+  <GuidanceWrapper service={service} guidanceMessage={guidanceMessage}>
     {guidanceMessage && (
       <GuidanceMessage className="guidance-message" aria-hidden="true">
         {guidanceMessage}

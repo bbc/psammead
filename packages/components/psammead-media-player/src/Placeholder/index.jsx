@@ -15,8 +15,6 @@ const StyledPlaceholder = styled.div`
   height: 100%;
 `;
 
-const PlayButtonWrapper = styled.span``;
-
 const StyledPlayButton = styled(PlayButton)`
   position: absolute;
   bottom: 0;
@@ -28,28 +26,10 @@ const StyledPlayButton = styled(PlayButton)`
     background-color: ${C_POSTBOX};
   }
   /* stylelint-enable */
+  html.no-js & {
+    display: none;
+  }
 `;
-
-const NoScriptHiddenStyle = (
-  // this would be rendered multiple times if we have more than one audio/video content on a page,
-  // and only the first one would be used leaving a lot oof unused styles.
-  // we have to consider moving it to the <head> in simorgh.
-  <noscript>
-    <style>
-      {`
-     .guidance-message, .media-player-play-button {
-       display: none;
-     }
-     .guidance-wrapper {
-      background-color: rgba(34, 34, 34, 0.75);
-      @media screen and (-ms-high-contrast: active) {
-        background-color: transparent;
-      }
-     }
-    `}
-    </style>
-  </noscript>
-);
 
 const Placeholder = ({ onClick, service, src, srcset, mediaInfo }) => {
   const {
@@ -63,24 +43,21 @@ const Placeholder = ({ onClick, service, src, srcset, mediaInfo }) => {
 
   return (
     <StyledPlaceholder onClick={onClick}>
-      {NoScriptHiddenStyle}
       <Guidance
         service={service}
         guidanceMessage={guidanceMessage}
         type={type}
       />
-      <PlayButtonWrapper className="media-player-play-button">
-        <StyledPlayButton
-          title={title}
-          service={service}
-          onClick={() => {}}
-          datetime={datetime}
-          duration={duration}
-          durationSpoken={durationSpoken}
-          type={type}
-          guidanceMessage={guidanceMessage}
-        />
-      </PlayButtonWrapper>
+      <StyledPlayButton
+        title={title}
+        service={service}
+        onClick={() => {}}
+        datetime={datetime}
+        duration={duration}
+        durationSpoken={durationSpoken}
+        type={type}
+        guidanceMessage={guidanceMessage}
+      />
 
       <Image alt="" src={src} srcset={srcset} />
     </StyledPlaceholder>
