@@ -79,6 +79,14 @@ exports[`Media Player: Placeholder should render a video placeholder 1`] = `
   color: #FFFFFF;
 }
 
+html.no-js .c2 {
+  background-color: rgba(34,34,34,0.75);
+}
+
+html.no-js .c2 .guidance-message {
+  display: none;
+}
+
 .c3 {
   position: absolute;
   bottom: 0;
@@ -103,59 +111,64 @@ exports[`Media Player: Placeholder should render a video placeholder 1`] = `
   background-color: #B80000;
 }
 
+html.no-js .c5 {
+  display: none;
+}
+
 @media (min-width:37.5rem) {
   .c2 {
     font-size: 0.875rem;
   }
 }
 
+@media screen and (-ms-high-contrast:active) {
+  html.no-js .c2 {
+    background-color: transparent;
+  }
+}
+
 <div
   class="c0 c1"
 >
-  <noscript />
   <div
-    class="c2 guidance-wrapper"
+    class="c2"
   >
     <noscript
       class="c3"
     />
   </div>
-  <span
-    class="media-player-play-button"
+  <button
+    class="c4 c5"
   >
-    <button
-      class="c4 c5"
+    <span
+      class="c6"
     >
-      <span
-        class="c6"
+      Play video, "Dog chases cat.", 2 minutes 30 seconds
+    </span>
+    <div
+      aria-hidden="true"
+      class="c7"
+    >
+      <svg
+        class="c8"
+        focusable="false"
+        height="12px"
+        viewBox="0 0 32 32"
+        width="12px"
       >
-        Play video, "Dog chases cat.", 2 minutes 30 seconds
-      </span>
-      <div
-        aria-hidden="true"
-        class="c7"
-      >
-        <svg
-          class="c8"
-          focusable="false"
-          height="12px"
-          viewBox="0 0 32 32"
-          width="12px"
-        >
-          <polygon
-            points="3,32 29,16 3,0"
-          />
-        </svg>
-      </div>
-      <time
-        aria-hidden="true"
-        class="c9"
-        datetime="PT2M30S"
-      >
-        2:30
-      </time>
-    </button>
-  </span>
+        <polygon
+          points="3,32 29,16 3,0"
+        />
+      </svg>
+    </div>
+    <time
+      aria-hidden="true"
+      class="c9"
+      datetime="PT2M30S"
+    >
+      2:30
+    </time>
+  </button>
   <img
     alt=""
     class="c10"
@@ -244,6 +257,14 @@ exports[`Media Player: Placeholder should render a video placeholder with guidan
   background-color: rgba(34,34,34,0.75);
 }
 
+html.no-js .c2 {
+  background-color: rgba(34,34,34,0.75);
+}
+
+html.no-js .c2 .guidance-message {
+  display: none;
+}
+
 .c3 {
   display: block;
   font-weight: normal;
@@ -275,6 +296,10 @@ exports[`Media Player: Placeholder should render a video placeholder with guidan
   background-color: #B80000;
 }
 
+html.no-js .c6 {
+  display: none;
+}
+
 @media (min-width:37.5rem) {
   .c2 {
     font-size: 0.875rem;
@@ -283,6 +308,12 @@ exports[`Media Player: Placeholder should render a video placeholder with guidan
 
 @media screen and (-ms-high-contrast:active) {
   .c2 {
+    background-color: transparent;
+  }
+}
+
+@media screen and (-ms-high-contrast:active) {
+  html.no-js .c2 {
     background-color: transparent;
   }
 }
@@ -302,9 +333,8 @@ exports[`Media Player: Placeholder should render a video placeholder with guidan
 <div
   class="c0 c1"
 >
-  <noscript />
   <div
-    class="c2 guidance-wrapper"
+    class="c2"
   >
     <strong
       aria-hidden="true"
@@ -316,42 +346,38 @@ exports[`Media Player: Placeholder should render a video placeholder with guidan
       class="c4"
     />
   </div>
-  <span
-    class="media-player-play-button"
+  <button
+    class="c5 c6"
   >
-    <button
-      class="c5 c6"
+    <span
+      class="c7"
     >
-      <span
-        class="c7"
+      Guidance: May contain strong language, sexual or violent content that may offend. Play video, "Dog chases cat.", 2 minutes 30 seconds
+    </span>
+    <div
+      aria-hidden="true"
+      class="c8"
+    >
+      <svg
+        class="c9"
+        focusable="false"
+        height="12px"
+        viewBox="0 0 32 32"
+        width="12px"
       >
-        Guidance: May contain strong language, sexual or violent content that may offend. Play video, "Dog chases cat.", 2 minutes 30 seconds
-      </span>
-      <div
-        aria-hidden="true"
-        class="c8"
-      >
-        <svg
-          class="c9"
-          focusable="false"
-          height="12px"
-          viewBox="0 0 32 32"
-          width="12px"
-        >
-          <polygon
-            points="3,32 29,16 3,0"
-          />
-        </svg>
-      </div>
-      <time
-        aria-hidden="true"
-        class="c10"
-        datetime="PT2M30S"
-      >
-        2:30
-      </time>
-    </button>
-  </span>
+        <polygon
+          points="3,32 29,16 3,0"
+        />
+      </svg>
+    </div>
+    <time
+      aria-hidden="true"
+      class="c10"
+      datetime="PT2M30S"
+    >
+      2:30
+    </time>
+  </button>
   <img
     alt=""
     class="c11"
@@ -433,6 +459,14 @@ exports[`Media Player: Placeholder should render a video placeholder without dur
   color: #FFFFFF;
 }
 
+html.no-js .c2 {
+  background-color: rgba(34,34,34,0.75);
+}
+
+html.no-js .c2 .guidance-message {
+  display: none;
+}
+
 .c3 {
   position: absolute;
   bottom: 0;
@@ -457,52 +491,57 @@ exports[`Media Player: Placeholder should render a video placeholder without dur
   background-color: #B80000;
 }
 
+html.no-js .c5 {
+  display: none;
+}
+
 @media (min-width:37.5rem) {
   .c2 {
     font-size: 0.875rem;
   }
 }
 
+@media screen and (-ms-high-contrast:active) {
+  html.no-js .c2 {
+    background-color: transparent;
+  }
+}
+
 <div
   class="c0 c1"
 >
-  <noscript />
   <div
-    class="c2 guidance-wrapper"
+    class="c2"
   >
     <noscript
       class="c3"
     />
   </div>
-  <span
-    class="media-player-play-button"
+  <button
+    class="c4 c5"
   >
-    <button
-      class="c4 c5"
+    <span
+      class="c6"
     >
-      <span
-        class="c6"
+      Play video, "Dog chases cat."
+    </span>
+    <div
+      aria-hidden="true"
+      class="c7"
+    >
+      <svg
+        class="c8"
+        focusable="false"
+        height="12px"
+        viewBox="0 0 32 32"
+        width="12px"
       >
-        Play video, "Dog chases cat."
-      </span>
-      <div
-        aria-hidden="true"
-        class="c7"
-      >
-        <svg
-          class="c8"
-          focusable="false"
-          height="12px"
-          viewBox="0 0 32 32"
-          width="12px"
-        >
-          <polygon
-            points="3,32 29,16 3,0"
-          />
-        </svg>
-      </div>
-    </button>
-  </span>
+        <polygon
+          points="3,32 29,16 3,0"
+        />
+      </svg>
+    </div>
+  </button>
   <img
     alt=""
     class="c9"
@@ -590,6 +629,14 @@ exports[`Media Player: Placeholder should render an audio placeholder 1`] = `
   color: #FFFFFF;
 }
 
+html.no-js .c2 {
+  background-color: rgba(34,34,34,0.75);
+}
+
+html.no-js .c2 .guidance-message {
+  display: none;
+}
+
 .c3 {
   position: absolute;
   bottom: 0;
@@ -614,62 +661,67 @@ exports[`Media Player: Placeholder should render an audio placeholder 1`] = `
   background-color: #B80000;
 }
 
+html.no-js .c5 {
+  display: none;
+}
+
 @media (min-width:37.5rem) {
   .c2 {
     font-size: 0.875rem;
   }
 }
 
+@media screen and (-ms-high-contrast:active) {
+  html.no-js .c2 {
+    background-color: transparent;
+  }
+}
+
 <div
   class="c0 c1"
 >
-  <noscript />
   <div
-    class="c2 guidance-wrapper"
+    class="c2"
   >
     <noscript
       class="c3"
     />
   </div>
-  <span
-    class="media-player-play-button"
+  <button
+    class="c4 c5"
   >
-    <button
-      class="c4 c5"
+    <span
+      class="c6"
     >
-      <span
-        class="c6"
+      Play audio, "Dog barks at cat.", 2 minutes 30 seconds
+    </span>
+    <div
+      aria-hidden="true"
+      class="c7"
+    >
+      <svg
+        class="c8"
+        focusable="false"
+        height="12px"
+        viewBox="0 0 13 12"
+        width="13px"
       >
-        Play audio, "Dog barks at cat.", 2 minutes 30 seconds
-      </span>
-      <div
-        aria-hidden="true"
-        class="c7"
-      >
-        <svg
-          class="c8"
-          focusable="false"
-          height="12px"
-          viewBox="0 0 13 12"
-          width="13px"
-        >
-          <path
-            d="M9.021 1.811l-.525.525c.938.938 1.5 2.25 1.5 3.675s-.563 2.738-1.5 3.675l.525.525c1.05-1.087 1.725-2.55 1.725-4.2s-.675-3.112-1.725-4.2z"
-          />
-          <path
-            d="M10.596.199l-.525.562c1.35 1.35 2.175 3.225 2.175 5.25s-.825 3.9-2.175 5.25l.525.525c1.5-1.462 2.4-3.525 2.4-5.775s-.9-4.312-2.4-5.812zM6.996 1.511l-2.25 2.25H.996v4.5h3.75l2.25 2.25z"
-          />
-        </svg>
-      </div>
-      <time
-        aria-hidden="true"
-        class="c9"
-        datetime="PT2M30S"
-      >
-        2:30
-      </time>
-    </button>
-  </span>
+        <path
+          d="M9.021 1.811l-.525.525c.938.938 1.5 2.25 1.5 3.675s-.563 2.738-1.5 3.675l.525.525c1.05-1.087 1.725-2.55 1.725-4.2s-.675-3.112-1.725-4.2z"
+        />
+        <path
+          d="M10.596.199l-.525.562c1.35 1.35 2.175 3.225 2.175 5.25s-.825 3.9-2.175 5.25l.525.525c1.5-1.462 2.4-3.525 2.4-5.775s-.9-4.312-2.4-5.812zM6.996 1.511l-2.25 2.25H.996v4.5h3.75l2.25 2.25z"
+        />
+      </svg>
+    </div>
+    <time
+      aria-hidden="true"
+      class="c9"
+      datetime="PT2M30S"
+    >
+      2:30
+    </time>
+  </button>
   <img
     alt=""
     class="c10"
@@ -751,6 +803,14 @@ exports[`Media Player: Placeholder should render an audio placeholder without du
   color: #FFFFFF;
 }
 
+html.no-js .c2 {
+  background-color: rgba(34,34,34,0.75);
+}
+
+html.no-js .c2 .guidance-message {
+  display: none;
+}
+
 .c3 {
   position: absolute;
   bottom: 0;
@@ -775,55 +835,60 @@ exports[`Media Player: Placeholder should render an audio placeholder without du
   background-color: #B80000;
 }
 
+html.no-js .c5 {
+  display: none;
+}
+
 @media (min-width:37.5rem) {
   .c2 {
     font-size: 0.875rem;
   }
 }
 
+@media screen and (-ms-high-contrast:active) {
+  html.no-js .c2 {
+    background-color: transparent;
+  }
+}
+
 <div
   class="c0 c1"
 >
-  <noscript />
   <div
-    class="c2 guidance-wrapper"
+    class="c2"
   >
     <noscript
       class="c3"
     />
   </div>
-  <span
-    class="media-player-play-button"
+  <button
+    class="c4 c5"
   >
-    <button
-      class="c4 c5"
+    <span
+      class="c6"
     >
-      <span
-        class="c6"
+      Play audio, "Dog barks at cat."
+    </span>
+    <div
+      aria-hidden="true"
+      class="c7"
+    >
+      <svg
+        class="c8"
+        focusable="false"
+        height="12px"
+        viewBox="0 0 13 12"
+        width="13px"
       >
-        Play audio, "Dog barks at cat."
-      </span>
-      <div
-        aria-hidden="true"
-        class="c7"
-      >
-        <svg
-          class="c8"
-          focusable="false"
-          height="12px"
-          viewBox="0 0 13 12"
-          width="13px"
-        >
-          <path
-            d="M9.021 1.811l-.525.525c.938.938 1.5 2.25 1.5 3.675s-.563 2.738-1.5 3.675l.525.525c1.05-1.087 1.725-2.55 1.725-4.2s-.675-3.112-1.725-4.2z"
-          />
-          <path
-            d="M10.596.199l-.525.562c1.35 1.35 2.175 3.225 2.175 5.25s-.825 3.9-2.175 5.25l.525.525c1.5-1.462 2.4-3.525 2.4-5.775s-.9-4.312-2.4-5.812zM6.996 1.511l-2.25 2.25H.996v4.5h3.75l2.25 2.25z"
-          />
-        </svg>
-      </div>
-    </button>
-  </span>
+        <path
+          d="M9.021 1.811l-.525.525c.938.938 1.5 2.25 1.5 3.675s-.563 2.738-1.5 3.675l.525.525c1.05-1.087 1.725-2.55 1.725-4.2s-.675-3.112-1.725-4.2z"
+        />
+        <path
+          d="M10.596.199l-.525.562c1.35 1.35 2.175 3.225 2.175 5.25s-.825 3.9-2.175 5.25l.525.525c1.5-1.462 2.4-3.525 2.4-5.775s-.9-4.312-2.4-5.812zM6.996 1.511l-2.25 2.25H.996v4.5h3.75l2.25 2.25z"
+        />
+      </svg>
+    </div>
+  </button>
   <img
     alt=""
     class="c9"

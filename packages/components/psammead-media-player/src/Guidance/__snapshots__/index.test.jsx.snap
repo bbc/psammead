@@ -15,6 +15,14 @@ exports[`Media Player: Guidance should render Guidance 1`] = `
   background-color: rgba(34,34,34,0.75);
 }
 
+html.no-js .c0 {
+  background-color: rgba(34,34,34,0.75);
+}
+
+html.no-js .c0 .guidance-message {
+  display: none;
+}
+
 .c1 {
   display: block;
   font-weight: normal;
@@ -40,6 +48,12 @@ exports[`Media Player: Guidance should render Guidance 1`] = `
 }
 
 @media screen and (-ms-high-contrast:active) {
+  html.no-js .c0 {
+    background-color: transparent;
+  }
+}
+
+@media screen and (-ms-high-contrast:active) {
   .c1 {
     background-color: window;
   }
@@ -52,7 +66,7 @@ exports[`Media Player: Guidance should render Guidance 1`] = `
 }
 
 <div
-  class="c0 guidance-wrapper"
+  class="c0"
 >
   <strong
     aria-hidden="true"

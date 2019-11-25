@@ -211,6 +211,14 @@ exports[`Media Player: Canonical Entry renders a landscape container with a plac
   color: #FFFFFF;
 }
 
+html.no-js .c3 {
+  background-color: rgba(34,34,34,0.75);
+}
+
+html.no-js .c3 .guidance-message {
+  display: none;
+}
+
 .c4 {
   position: absolute;
   bottom: 0;
@@ -235,6 +243,10 @@ exports[`Media Player: Canonical Entry renders a landscape container with a plac
   background-color: #B80000;
 }
 
+html.no-js .c6 {
+  display: none;
+}
+
 .c0 {
   padding-top: 56.25%;
   position: relative;
@@ -247,56 +259,57 @@ exports[`Media Player: Canonical Entry renders a landscape container with a plac
   }
 }
 
+@media screen and (-ms-high-contrast:active) {
+  html.no-js .c3 {
+    background-color: transparent;
+  }
+}
+
 <div
   class="c0"
 >
   <div
     class="c1 c2"
   >
-    <noscript />
     <div
-      class="c3 guidance-wrapper"
+      class="c3"
     >
       <noscript
         class="c4"
       />
     </div>
-    <span
-      class="media-player-play-button"
+    <button
+      class="c5 c6"
     >
-      <button
-        class="c5 c6"
+      <span
+        class="c7"
       >
-        <span
-          class="c7"
+        Play video, "Dog chases cat.", 2 minutes 30 seconds
+      </span>
+      <div
+        aria-hidden="true"
+        class="c8"
+      >
+        <svg
+          class="c9"
+          focusable="false"
+          height="12px"
+          viewBox="0 0 32 32"
+          width="12px"
         >
-          Play video, "Dog chases cat.", 2 minutes 30 seconds
-        </span>
-        <div
-          aria-hidden="true"
-          class="c8"
-        >
-          <svg
-            class="c9"
-            focusable="false"
-            height="12px"
-            viewBox="0 0 32 32"
-            width="12px"
-          >
-            <polygon
-              points="3,32 29,16 3,0"
-            />
-          </svg>
-        </div>
-        <time
-          aria-hidden="true"
-          class="c10"
-          datetime="PT2M30S"
-        >
-          2:30
-        </time>
-      </button>
-    </span>
+          <polygon
+            points="3,32 29,16 3,0"
+          />
+        </svg>
+      </div>
+      <time
+        aria-hidden="true"
+        class="c10"
+        datetime="PT2M30S"
+      >
+        2:30
+      </time>
+    </button>
     <img
       alt=""
       class="c11"
@@ -386,6 +399,14 @@ exports[`Media Player: Canonical Entry renders a placeholder image with guidance
   background-color: rgba(34,34,34,0.75);
 }
 
+html.no-js .c3 {
+  background-color: rgba(34,34,34,0.75);
+}
+
+html.no-js .c3 .guidance-message {
+  display: none;
+}
+
 .c4 {
   display: block;
   font-weight: normal;
@@ -417,6 +438,10 @@ exports[`Media Player: Canonical Entry renders a placeholder image with guidance
   background-color: #B80000;
 }
 
+html.no-js .c7 {
+  display: none;
+}
+
 .c0 {
   padding-top: 56.25%;
   position: relative;
@@ -431,6 +456,12 @@ exports[`Media Player: Canonical Entry renders a placeholder image with guidance
 
 @media screen and (-ms-high-contrast:active) {
   .c3 {
+    background-color: transparent;
+  }
+}
+
+@media screen and (-ms-high-contrast:active) {
+  html.no-js .c3 {
     background-color: transparent;
   }
 }
@@ -453,9 +484,8 @@ exports[`Media Player: Canonical Entry renders a placeholder image with guidance
   <div
     class="c1 c2"
   >
-    <noscript />
     <div
-      class="c3 guidance-wrapper"
+      class="c3"
     >
       <strong
         aria-hidden="true"
@@ -467,42 +497,38 @@ exports[`Media Player: Canonical Entry renders a placeholder image with guidance
         class="c5"
       />
     </div>
-    <span
-      class="media-player-play-button"
+    <button
+      class="c6 c7"
     >
-      <button
-        class="c6 c7"
+      <span
+        class="c8"
       >
-        <span
-          class="c8"
+        May contain strong language, sexual or violent content that may offend. Play video, "Dog chases cat.", 2 minutes 30 seconds
+      </span>
+      <div
+        aria-hidden="true"
+        class="c9"
+      >
+        <svg
+          class="c10"
+          focusable="false"
+          height="12px"
+          viewBox="0 0 32 32"
+          width="12px"
         >
-          May contain strong language, sexual or violent content that may offend. Play video, "Dog chases cat.", 2 minutes 30 seconds
-        </span>
-        <div
-          aria-hidden="true"
-          class="c9"
-        >
-          <svg
-            class="c10"
-            focusable="false"
-            height="12px"
-            viewBox="0 0 32 32"
-            width="12px"
-          >
-            <polygon
-              points="3,32 29,16 3,0"
-            />
-          </svg>
-        </div>
-        <time
-          aria-hidden="true"
-          class="c11"
-          datetime="PT2M30S"
-        >
-          2:30
-        </time>
-      </button>
-    </span>
+          <polygon
+            points="3,32 29,16 3,0"
+          />
+        </svg>
+      </div>
+      <time
+        aria-hidden="true"
+        class="c11"
+        datetime="PT2M30S"
+      >
+        2:30
+      </time>
+    </button>
     <img
       alt=""
       class="c12"
@@ -591,6 +617,14 @@ exports[`Media Player: Canonical Entry renders a portrait container with a place
   color: #FFFFFF;
 }
 
+html.no-js .c3 {
+  background-color: rgba(34,34,34,0.75);
+}
+
+html.no-js .c3 .guidance-message {
+  display: none;
+}
+
 .c4 {
   position: absolute;
   bottom: 0;
@@ -615,6 +649,10 @@ exports[`Media Player: Canonical Entry renders a portrait container with a place
   background-color: #B80000;
 }
 
+html.no-js .c6 {
+  display: none;
+}
+
 .c0 {
   padding-top: 177.78%;
   position: relative;
@@ -627,56 +665,57 @@ exports[`Media Player: Canonical Entry renders a portrait container with a place
   }
 }
 
+@media screen and (-ms-high-contrast:active) {
+  html.no-js .c3 {
+    background-color: transparent;
+  }
+}
+
 <div
   class="c0"
 >
   <div
     class="c1 c2"
   >
-    <noscript />
     <div
-      class="c3 guidance-wrapper"
+      class="c3"
     >
       <noscript
         class="c4"
       />
     </div>
-    <span
-      class="media-player-play-button"
+    <button
+      class="c5 c6"
     >
-      <button
-        class="c5 c6"
+      <span
+        class="c7"
       >
-        <span
-          class="c7"
+        Play video, "Dog chases cat.", 2 minutes 30 seconds
+      </span>
+      <div
+        aria-hidden="true"
+        class="c8"
+      >
+        <svg
+          class="c9"
+          focusable="false"
+          height="12px"
+          viewBox="0 0 32 32"
+          width="12px"
         >
-          Play video, "Dog chases cat.", 2 minutes 30 seconds
-        </span>
-        <div
-          aria-hidden="true"
-          class="c8"
-        >
-          <svg
-            class="c9"
-            focusable="false"
-            height="12px"
-            viewBox="0 0 32 32"
-            width="12px"
-          >
-            <polygon
-              points="3,32 29,16 3,0"
-            />
-          </svg>
-        </div>
-        <time
-          aria-hidden="true"
-          class="c10"
-          datetime="PT2M30S"
-        >
-          2:30
-        </time>
-      </button>
-    </span>
+          <polygon
+            points="3,32 29,16 3,0"
+          />
+        </svg>
+      </div>
+      <time
+        aria-hidden="true"
+        class="c10"
+        datetime="PT2M30S"
+      >
+        2:30
+      </time>
+    </button>
     <img
       alt=""
       class="c11"
