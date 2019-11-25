@@ -191,6 +191,9 @@ const HamburgerButton = styled.button`
 
   &:focus {
     box-shadow: inset 0 0 0 ${GEL_SPACING_HLF} ${C_WHITE};
+    ::after {
+      ${iconBorder};
+    }
   }
 
   @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {

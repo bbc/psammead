@@ -262,6 +262,18 @@ exports[`Canonical hamburger menu should render correctly 1`] = `
   box-shadow: inset 0 0 0 0.25rem #FFFFFF;
 }
 
+.c0:focus::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  height: 2.75rem;
+  width: 2.75rem;
+  border: 0.25rem solid #FFFFFF;
+}
+
 @media (min-width:37.5rem) {
   .c0 {
     display: none;
