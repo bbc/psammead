@@ -172,7 +172,7 @@ export const AmpDropdown = ({ announcedText, onClose, children }) => (
     >
       {navigationIcons.cross}
     </CrossButton>
-    <DropdownUl role="list">{children}</DropdownUl>
+    {children}
   </DropdownWrapper>
 );
 
