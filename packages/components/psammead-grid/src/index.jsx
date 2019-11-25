@@ -155,15 +155,29 @@ const childrenFallback = (
     gridStartOffset,
     gridStartOffsetGroup,
   );
+  const guttersWithinParent = parentColumnsGroup - 1;
+  const guttersWithinItem = columnsGroup - 1;
+  // console.log('   ----   ');
+  // console.log(
+  //   'width:',
+  //   `calc((100% - ${guttersWithinParent} * ${gutterSize}) * ${columnsGroup} / ${parentColumnsGroup} + ${guttersWithinItem} * ${gutterSize})`,
+  // );
 
+  // console.log('guttersWithinParent', guttersWithinParent);
+  // console.log('gutterSize', gutterSize);
+  // console.log('columnsGroup', columnsGroup);
+  // console.log('parentColumnsGroup', parentColumnsGroup);
+  // console.log('guttersWithinItem', guttersWithinItem);
+  // console.log('   ----   ');
+
+  // calc(columnsGroup/parentColumnsGroup*(100% - guttersWithinParent * gutterSize) + guttersWithinItem * gutterSize)
   return ` 
   ${marginsGroup ? `padding: 0 ${marginSize};` : ``}
   ${
     item && parentEnableGelGutters
       ? ` 
         margin: 0 ${parseFloat(gutterSize) / 2}rem;
-        width: calc(${(100 * columnsGroup) / parentColumnsGroup}%
-          - ${gutterSize}${negativeOffset});
+        width: calc(${columnsGroup}/${parentColumnsGroup}*(100% - ${guttersWithinParent} * ${gutterSize}) + ${guttersWithinItem} * ${gutterSize});
         `
       : `
         width: calc(${(100 * columnsGroup) /
@@ -219,7 +233,7 @@ const gridFallbacks = css`
 
     const selectedGroups = Object.keys(columns);
     return `
-      ${isOuterGrid ? 'position: relative;' : ''}
+      ${isOuterGrid ? 'display: inline;' : ''}
 
       ${selectedGroups
         .map(

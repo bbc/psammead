@@ -88,6 +88,8 @@ storiesOf(STORY_KIND, module)
           group1: true,
           group2: true,
           group3: true,
+          group4: true,
+          group5: true,
         }}
       >
         <Grid
@@ -242,6 +244,8 @@ storiesOf(STORY_KIND, module)
           group1: true,
           group2: true,
           group3: true,
+          group4: true,
+          group5: true,
         }}
       >
         <Grid
@@ -512,6 +516,8 @@ storiesOf(STORY_KIND, module)
           group1: true,
           group2: true,
           group3: true,
+          group4: true,
+          group5: true,
         }}
       >
         <Grid
@@ -630,6 +636,8 @@ storiesOf(STORY_KIND, module)
           group1: true,
           group2: true,
           group3: true,
+          group4: true,
+          group5: true,
         }}
       >
         <Grid
@@ -844,6 +852,8 @@ storiesOf(STORY_KIND, module)
           group1: true,
           group2: true,
           group3: true,
+          group4: true,
+          group5: true,
         }}
       >
         <Grid
@@ -1032,6 +1042,8 @@ storiesOf(STORY_KIND, module)
           group1: true,
           group2: true,
           group3: true,
+          group4: true,
+          group5: true,
         }}
       >
         <Grid
@@ -1221,6 +1233,8 @@ storiesOf(STORY_KIND, module)
             group1: true,
             group2: true,
             group3: true,
+            group4: true,
+            group5: true,
           }}
         >
           <Grid
@@ -1386,8 +1400,8 @@ storiesOf(STORY_KIND, module)
           group1: 6,
           group2: 6,
           group3: 6,
-          group4: 6,
-          group5: 6,
+          group4: 2,
+          group5: 2,
         }}
         margins={{
           group0: true,
@@ -1397,9 +1411,129 @@ storiesOf(STORY_KIND, module)
         }}
       >
         <p>
-          Image & Paragraph - groups 0-3 span 6/6 columns, groups 4+ span 6/8
-          columns. Grid item wrapping the Paragraph has padding.
+          Image & Paragraph - groups 0-3 Image is fullscreen (no margin) but
+          paragraph has GEL margins. For groups 4+, image & paragraph are
+          side-by-side & there are no margins.
         </p>
+      </Grid>
+    </Grid>
+  ))
+  .add('Example with gutters & only margins on the paragraph Grid item', () => (
+    <Grid
+      columns={{
+        group0: 6,
+        group1: 6,
+        group2: 6,
+        group3: 6,
+        group4: 8,
+        group5: 8,
+      }}
+      enableGelGutters
+    >
+      <Grid
+        item
+        columns={{
+          group0: 6,
+          group1: 6,
+          group2: 6,
+          group3: 6,
+          group4: 6,
+          group5: 6,
+        }}
+      >
+        <Image
+          alt="Robert Downey Junior in Iron Man"
+          src="https://ichef.bbci.co.uk/news/660/cpsprodpb/11897/production/_106613817_999_al_.jpg"
+          width="640"
+        />
+      </Grid>
+      <Grid
+        item
+        columns={{
+          group0: 6,
+          group1: 6,
+          group2: 6,
+          group3: 6,
+          group4: 2,
+          group5: 2,
+        }}
+        margins={{
+          group0: true,
+          group1: true,
+          group2: true,
+          group3: true,
+        }}
+      >
+        <p>
+          Image & Paragraph - groups 0-3 Image is fullscreen (no margin) but
+          paragraph has GEL margins. For groups 4+, image & paragraph are
+          side-by-side & there are no margins.
+        </p>
+      </Grid>
+    </Grid>
+  ))
+  .add('Example with gutters only', () => (
+    <Grid
+      columns={{
+        group0: 6,
+        group1: 6,
+        group2: 6,
+        group3: 6,
+        group4: 8,
+        group5: 8,
+      }}
+      enableGelGutters
+    >
+      <Grid
+        item
+        columns={{
+          group0: 6,
+          group1: 6,
+          group2: 6,
+          group3: 6,
+          group4: 6,
+          group5: 6,
+        }}
+      >
+        <Image
+          alt="Robert Downey Junior in Iron Man"
+          src="https://ichef.bbci.co.uk/news/660/cpsprodpb/11897/production/_106613817_999_al_.jpg"
+          width="640"
+        />
+      </Grid>
+      <Grid
+        item
+        columns={{
+          group0: 6,
+          group1: 6,
+          group2: 6,
+          group3: 6,
+          group4: 2,
+          group5: 2,
+        }}
+      >
+        <Image
+          alt="Robert Downey Junior in Iron Man"
+          src="https://ichef.bbci.co.uk/news/660/cpsprodpb/11897/production/_106613817_999_al_.jpg"
+          width="640"
+        />
+      </Grid>
+      <Grid
+        item
+        columns={{
+          group0: 6,
+          group1: 6,
+          group2: 6,
+          group3: 6,
+          group4: 2,
+          group5: 2,
+        }}
+      >
+        <Image
+          alt="Robert Downey Junior in Iron Man"
+          src="https://ichef.bbci.co.uk/news/660/cpsprodpb/11897/production/_106613817_999_al_.jpg"
+          width="640"
+        />
       </Grid>
     </Grid>
   ));
