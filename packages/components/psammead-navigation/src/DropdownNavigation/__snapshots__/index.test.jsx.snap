@@ -41,6 +41,7 @@ exports[`AMP hamburger menu should render correctly 1`] = `
   aria-expanded="false"
   aria-label="Menu"
   class="c0"
+  on=""
 >
   <svg
     class="c1"
@@ -167,6 +168,7 @@ exports[`Amp dropdown navigation should render correctly 1`] = `
     aria-expanded="true"
     aria-label="Menu"
     class="c1"
+    on=""
   >
     <svg
       class="c2"

@@ -45,7 +45,7 @@ describe('Canonical dropdown navigation', () => {
 describe('Amp dropdown navigation', () => {
   shouldMatchSnapshot(
     'should render correctly',
-    <AmpDropdown announcedText="Menu" on="">
+    <AmpDropdown announcedText="Menu" onClose="">
       {dropdownList}
     </AmpDropdown>,
   );
@@ -61,6 +61,6 @@ describe('Canonical hamburger menu', () => {
 describe('AMP hamburger menu', () => {
   shouldMatchSnapshot(
     'should render correctly',
-    <AmpHamburgerMenu announcedText="Menu" on="" />,
+    <AmpHamburgerMenu announcedText="Menu" onOpen="" />,
   );
 });
