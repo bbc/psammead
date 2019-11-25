@@ -35,13 +35,11 @@ const StyledItem = styled.div`
   padding-bottom: ${GEL_SPACING_TRPL};
   ${paddingStart}: 16px;
   padding-right: 16px;
-  float: left;
-  width: 80%;
+  flex-grow: 1;
 
   @media (min-width: ${GEL_GROUP_5_SCREEN_WIDTH_MIN}) {
     padding-top: ${GEL_SPACING};
     ${paddingStart}: ${GEL_SPACING_QUAD};
-    width: 70%;
   }
 `;
 
@@ -51,8 +49,6 @@ export const MostReadRank = styled.span`
   color: ${C_POSTBOX};
   margin: 0; /* Reset */
   padding: 0;
-  float: left;
-  width: 15%;
 `;
 
 export const MostReadLink = ({
