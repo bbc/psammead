@@ -181,7 +181,7 @@ const gujaratiStyles = {
 /*
  *  HINDI
  */
-const hindiFontFamily = `font-family: "Noto Sans Devanagari", Arial, Verdana, Geneva, Helvetica, sans-serif;`;
+const hindiFontFamily = `font-family: Arial, Verdana, Geneva, Helvetica, sans-serif;`;
 
 const hindiStyles = {
   sansRegular: `
@@ -245,7 +245,7 @@ const marathiStyles = {
 /*
  *  NEPALI
  */
-const nepaliFontFamily = `font-family: "Noto Sans Devanagari", Arial, Verdana, Geneva, Helvetica, sans-serif;`;
+const nepaliFontFamily = `font-family: Arial, Verdana, Geneva, Helvetica, sans-serif;`;
 
 const nepaliStyles = {
   sansRegular: `
@@ -316,6 +316,10 @@ const teluguStyles = {
   sansRegular: `
     ${teluguFontFamily}
     ${getFontStyleAndWeight('normal', 400)}
+  `,
+  sansBold: `
+    ${teluguFontFamily}
+    ${getFontStyleAndWeight('normal', 700)}
   `,
 };
 
