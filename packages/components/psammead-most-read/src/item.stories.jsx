@@ -3,22 +3,18 @@ import { storiesOf } from '@storybook/react';
 import { withKnobs } from '@storybook/addon-knobs';
 import { withServicesKnob } from '@bbc/psammead-storybook-helpers';
 import Timestamp from '@bbc/psammead-timestamp';
-import { MostReadItem, StyledCountSpan } from './item';
+import { MostReadLink, MostReadRank } from './item';
 
-const items = [
+const links = [
   {
-    item: {
-      title: 'John Lewis staff bonus cut again as profits fall',
-      href: 'https://www.bbc.com/vietnamese/institutional-49283563',
-    },
-    dir: 'ltr',
+    language: 'news',
+    title: 'John Lewis staff bonus cut again as profits fall',
+    href: 'https://www.bbc.com/vietnamese/institutional-49283563',
   },
   {
-    item: {
-      title: "ایران از لغو 'رزمایش قطع اینترنت' خبر داد",
-      href: 'https://www.bbc.com/vietnamese/institutional-49283563',
-    },
-    dir: 'rtl',
+    language: 'arabic',
+    title: "ایران از لغو 'رزمایش قطع اینترنت' خبر داد",
+    href: 'https://www.bbc.com/vietnamese/institutional-49283563',
   },
 ];
 
@@ -37,40 +33,39 @@ const stories = storiesOf('Components|MostRead/Item', module)
   .addDecorator(withKnobs)
   .addDecorator(withServicesKnob());
 
-items.forEach(({ item, dir }) => {
-  stories.add(`MostReadItem ${dir}`, ({ script, service }) => (
-    <MostReadItem dir={dir} item={item} service={service} script={script} />
+links.forEach(({ language, ...props }) => {
+  stories.add(`MostReadLink ${language}`, ({ script, service }) => (
+    <MostReadLink link={props} service={service} script={script} />
   ));
 });
 
-const item = {
+const link = {
   title: 'Stranded Indian ship put up for sale',
   href: 'https://www.bbc.com',
 };
 
-stories.add(`MostReadItem with last updated date`, ({ script, service }) => (
-  <MostReadItem
-    dir="ltr"
-    item={item}
+stories.add(`MostReadLink with last updated date`, ({ script, service }) => (
+  <MostReadLink
+    link={link}
+    lastUpdated={lastUpdated(script, service)}
     service={service}
     script={script}
-    lastUpdated={lastUpdated(script, service)}
   />
 ));
 
 stories
-  .add(`StyledCountSpan LTR`, ({ script, service }) => (
-    <StyledCountSpan dir="ltr" service={service} script={script}>
+  .add(`MostReadRank LTR`, ({ script, service }) => (
+    <MostReadRank service={service} script={script}>
       5
-    </StyledCountSpan>
+    </MostReadRank>
   ))
-  .add(`StyledCountSpan LTR double digits`, ({ script, service }) => (
-    <StyledCountSpan dir="ltr" service={service} script={script}>
+  .add(`MostReadRank LTR double digits`, ({ script, service }) => (
+    <MostReadRank service={service} script={script}>
       10
-    </StyledCountSpan>
+    </MostReadRank>
   ))
-  .add(`StyledCountSpan RTL`, ({ script, service }) => (
-    <StyledCountSpan dir="rtl" service={service} script={script}>
+  .add(`MostReadRank RTL`, ({ script, service }) => (
+    <MostReadRank service={service} script={script}>
       ۲
-    </StyledCountSpan>
+    </MostReadRank>
   ));
