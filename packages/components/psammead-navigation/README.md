@@ -126,7 +126,7 @@ import { latin } from '@bbc/gel-foundations/scripts';
 
 ```jsx
 import React from 'react';
-import { CanonicalDropdown, DropdownUl, DropdownLi } from '@bbc/psammead-navigation/dropdown-navigation';
+import { CanonicalDropdown, DropdownUl, DropdownLi } from '@bbc/psammead-navigation/dropdown';
 import { latin } from '@bbc/gel-foundations/scripts';
 
 <CanonicalDropdown announcedText="Menu" onClose={() => {}}>
@@ -152,7 +152,7 @@ import { latin } from '@bbc/gel-foundations/scripts';
 
 ```jsx
 import React from 'react';
-import { AmpDropdown, DropdownUl, DropdownLi } from '@bbc/psammead-navigation/dropdown-navigation';
+import { AmpDropdown, DropdownUl, DropdownLi } from '@bbc/psammead-navigation/dropdown';
 import { latin } from '@bbc/gel-foundations/scripts';
 
 <AmpDropdown announcedText="Menu" onClose="tap:menu.toggleVisibility">
@@ -178,7 +178,7 @@ import { latin } from '@bbc/gel-foundations/scripts';
 
 ```jsx
 import React from 'react';
-import { CanonicalHamburgerMenu } from '@bbc/psammead-navigation/dropdown-navigation';
+import { CanonicalHamburgerMenu } from '@bbc/psammead-navigation/dropdown';
 
 <CanonicalHamburgerMenu announcedText="Menu" onOpen={() => { console.log("Handle open action"); }} />
 ```
@@ -187,7 +187,7 @@ import { CanonicalHamburgerMenu } from '@bbc/psammead-navigation/dropdown-naviga
 
 ```jsx
 import React from 'react';
-import { AmpHamburgerMenu } from '@bbc/psammead-navigation/dropdown-navigation';
+import { AmpHamburgerMenu } from '@bbc/psammead-navigation/dropdown';
 
 <AmpHamburgerMenu announcedText="Menu" onOpen="tap:menu.toggleVisibility" />
 ```
