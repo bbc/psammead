@@ -187,7 +187,7 @@ const TEXT_EXAMPLES = {
     locale: 'th',
   },
   tigrinya: { text: 'ዓብዱራሕማን ኣቡሃሽም', script: 'ethiopic', locale: 'ti' },
-  turkish: {
+  turkce: {
     text:
       'Kassım Jomart Tokayev, parlamentoda yemin ederek devlet başkanlığı görevini resmen devraldı.',
     script: 'latin',
