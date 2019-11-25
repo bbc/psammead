@@ -82,6 +82,7 @@ exports[`Media Player: Placeholder should render a video placeholder 1`] = `
 .c3 {
   position: absolute;
   bottom: 0;
+  display: none;
 }
 
 .c1 {
@@ -96,10 +97,6 @@ exports[`Media Player: Placeholder should render a video placeholder 1`] = `
 .c5 {
   position: absolute;
   bottom: 0;
-}
-
-.no-js .c5 {
-  display: none;
 }
 
 .c0:hover .c5,
@@ -253,6 +250,7 @@ exports[`Media Player: Placeholder should render a video placeholder with guidan
 .c4 {
   position: absolute;
   bottom: 0;
+  display: none;
 }
 
 .c1 {
@@ -267,10 +265,6 @@ exports[`Media Player: Placeholder should render a video placeholder with guidan
 .c6 {
   position: absolute;
   bottom: 0;
-}
-
-.no-js .c6 {
-  display: none;
 }
 
 .c0:hover .c6,
@@ -434,6 +428,7 @@ exports[`Media Player: Placeholder should render a video placeholder without dur
 .c3 {
   position: absolute;
   bottom: 0;
+  display: none;
 }
 
 .c1 {
@@ -448,10 +443,6 @@ exports[`Media Player: Placeholder should render a video placeholder without dur
 .c5 {
   position: absolute;
   bottom: 0;
-}
-
-.no-js .c5 {
-  display: none;
 }
 
 .c0:hover .c5,
@@ -590,6 +581,7 @@ exports[`Media Player: Placeholder should render an audio placeholder 1`] = `
 .c3 {
   position: absolute;
   bottom: 0;
+  display: none;
 }
 
 .c1 {
@@ -604,10 +596,6 @@ exports[`Media Player: Placeholder should render an audio placeholder 1`] = `
 .c5 {
   position: absolute;
   bottom: 0;
-}
-
-.no-js .c5 {
-  display: none;
 }
 
 .c0:hover .c5,
@@ -750,6 +738,7 @@ exports[`Media Player: Placeholder should render an audio placeholder without du
 .c3 {
   position: absolute;
   bottom: 0;
+  display: none;
 }
 
 .c1 {
@@ -764,10 +753,6 @@ exports[`Media Player: Placeholder should render an audio placeholder without du
 .c5 {
   position: absolute;
   bottom: 0;
-}
-
-.no-js .c5 {
-  display: none;
 }
 
 .c0:hover .c5,

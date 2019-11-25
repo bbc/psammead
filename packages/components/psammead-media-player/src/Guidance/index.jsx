@@ -56,6 +56,11 @@ const GuidanceMessage = styled.strong`
 const StyledNoScript = styled.noscript`
   position: absolute;
   bottom: 0;
+  ${({ noJsClassName }) =>
+    !noJsClassName &&
+    css`
+      display: none;
+    `}
 `;
 
 const Guidance = ({ guidanceMessage, service, type, noJsClassName }) => (
@@ -69,7 +74,7 @@ const Guidance = ({ guidanceMessage, service, type, noJsClassName }) => (
         {guidanceMessage}
       </GuidanceMessage>
     )}
-    <StyledNoScript>
+    <StyledNoScript noJsClassName={noJsClassName}>
       <GuidanceMessage>
         This {type} cannot play in your browser. Please enable Javascript or
         different browser.

@@ -18,11 +18,6 @@ const StyledPlaceholder = styled.div`
 const StyledPlayButton = styled(PlayButton)`
   position: absolute;
   bottom: 0;
-
-  .no-js & {
-    display: none;
-  }
-
   ${({ noJsClassName }) =>
     noJsClassName &&
     css`
@@ -30,7 +25,6 @@ const StyledPlayButton = styled(PlayButton)`
         display: none;
       }
     `}
-
   /* stylelint-disable */
   /* https://www.styled-components.com/docs/advanced#referring-to-other-components */
   ${StyledPlaceholder}:hover &,

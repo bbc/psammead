@@ -214,6 +214,7 @@ exports[`Media Player: Canonical Entry renders a landscape container with a plac
 .c4 {
   position: absolute;
   bottom: 0;
+  display: none;
 }
 
 .c2 {
@@ -228,10 +229,6 @@ exports[`Media Player: Canonical Entry renders a landscape container with a plac
 .c6 {
   position: absolute;
   bottom: 0;
-}
-
-.no-js .c6 {
-  display: none;
 }
 
 .c1:hover .c6,
@@ -395,6 +392,7 @@ exports[`Media Player: Canonical Entry renders a placeholder image with guidance
 .c5 {
   position: absolute;
   bottom: 0;
+  display: none;
 }
 
 .c2 {
@@ -409,10 +407,6 @@ exports[`Media Player: Canonical Entry renders a placeholder image with guidance
 .c7 {
   position: absolute;
   bottom: 0;
-}
-
-.no-js .c7 {
-  display: none;
 }
 
 .c1:hover .c7,
@@ -592,6 +586,7 @@ exports[`Media Player: Canonical Entry renders a portrait container with a place
 .c4 {
   position: absolute;
   bottom: 0;
+  display: none;
 }
 
 .c2 {
@@ -606,10 +601,6 @@ exports[`Media Player: Canonical Entry renders a portrait container with a place
 .c6 {
   position: absolute;
   bottom: 0;
-}
-
-.no-js .c6 {
-  display: none;
 }
 
 .c1:hover .c6,

@@ -25,6 +25,7 @@ exports[`Media Player: Guidance should render Guidance 1`] = `
 .c2 {
   position: absolute;
   bottom: 0;
+  display: none;
 }
 
 @media (min-width:37.5rem) {
