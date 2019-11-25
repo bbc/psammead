@@ -1,4 +1,4 @@
-const EXAMPLES = {
+const TEXT_EXAMPLES = {
   afaanoromoo: {
     text:
       "Gammadoo ta'uun akkanumaan hin dhufu, waan shaakalamuudha jetti saantoos.",
@@ -252,4 +252,4 @@ const EXAMPLES = {
   },
 };
 
-export default EXAMPLES;
+export default TEXT_EXAMPLES;

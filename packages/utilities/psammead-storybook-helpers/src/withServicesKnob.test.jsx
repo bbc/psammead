@@ -65,7 +65,6 @@ it('should pass the correct props to the story function', () => {
     text: 'Could a computer ever create better art than a human?',
     dir: 'ltr',
     locale: 'en',
-    variant: null,
   };
 
   expect(mockStoryFn).toHaveBeenCalledWith(expected);
@@ -84,7 +83,6 @@ it('should pass the correct chosen service props to the story function', () => {
       'المحكمة العليا الأمريكية ذات الأغلبية المحافظة وافقت على احتجاز غير المواطنين لأجل غير مسمى حتى بعد سنوات من خروجهم من السجن',
     dir: 'rtl',
     locale: 'ar',
-    variant: null,
   };
 
   expect(mockStoryFn).toHaveBeenCalledWith(expected);
