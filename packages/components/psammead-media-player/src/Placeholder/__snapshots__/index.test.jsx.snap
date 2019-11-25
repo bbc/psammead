@@ -79,11 +79,11 @@ exports[`Media Player: Placeholder should render a video placeholder 1`] = `
   color: #FFFFFF;
 }
 
-html.no-js .c2 {
+.no-js .c2 {
   background-color: rgba(34,34,34,0.75);
 }
 
-html.no-js .c2 .guidance-message {
+.no-js .c2 .guidance-message {
   display: none;
 }
 
@@ -111,7 +111,7 @@ html.no-js .c2 .guidance-message {
   background-color: #B80000;
 }
 
-html.no-js .c5 {
+.no-js .c5 {
   display: none;
 }
 
@@ -122,7 +122,7 @@ html.no-js .c5 {
 }
 
 @media screen and (-ms-high-contrast:active) {
-  html.no-js .c2 {
+  .no-js .c2 {
     background-color: transparent;
   }
 }
@@ -257,11 +257,11 @@ exports[`Media Player: Placeholder should render a video placeholder with guidan
   background-color: rgba(34,34,34,0.75);
 }
 
-html.no-js .c2 {
+.no-js .c2 {
   background-color: rgba(34,34,34,0.75);
 }
 
-html.no-js .c2 .guidance-message {
+.no-js .c2 .guidance-message {
   display: none;
 }
 
@@ -296,7 +296,7 @@ html.no-js .c2 .guidance-message {
   background-color: #B80000;
 }
 
-html.no-js .c6 {
+.no-js .c6 {
   display: none;
 }
 
@@ -313,7 +313,7 @@ html.no-js .c6 {
 }
 
 @media screen and (-ms-high-contrast:active) {
-  html.no-js .c2 {
+  .no-js .c2 {
     background-color: transparent;
   }
 }
@@ -459,11 +459,11 @@ exports[`Media Player: Placeholder should render a video placeholder without dur
   color: #FFFFFF;
 }
 
-html.no-js .c2 {
+.no-js .c2 {
   background-color: rgba(34,34,34,0.75);
 }
 
-html.no-js .c2 .guidance-message {
+.no-js .c2 .guidance-message {
   display: none;
 }
 
@@ -491,7 +491,7 @@ html.no-js .c2 .guidance-message {
   background-color: #B80000;
 }
 
-html.no-js .c5 {
+.no-js .c5 {
   display: none;
 }
 
@@ -502,7 +502,7 @@ html.no-js .c5 {
 }
 
 @media screen and (-ms-high-contrast:active) {
-  html.no-js .c2 {
+  .no-js .c2 {
     background-color: transparent;
   }
 }
@@ -629,11 +629,11 @@ exports[`Media Player: Placeholder should render an audio placeholder 1`] = `
   color: #FFFFFF;
 }
 
-html.no-js .c2 {
+.no-js .c2 {
   background-color: rgba(34,34,34,0.75);
 }
 
-html.no-js .c2 .guidance-message {
+.no-js .c2 .guidance-message {
   display: none;
 }
 
@@ -661,7 +661,7 @@ html.no-js .c2 .guidance-message {
   background-color: #B80000;
 }
 
-html.no-js .c5 {
+.no-js .c5 {
   display: none;
 }
 
@@ -672,7 +672,7 @@ html.no-js .c5 {
 }
 
 @media screen and (-ms-high-contrast:active) {
-  html.no-js .c2 {
+  .no-js .c2 {
     background-color: transparent;
   }
 }
@@ -803,11 +803,11 @@ exports[`Media Player: Placeholder should render an audio placeholder without du
   color: #FFFFFF;
 }
 
-html.no-js .c2 {
+.no-js .c2 {
   background-color: rgba(34,34,34,0.75);
 }
 
-html.no-js .c2 .guidance-message {
+.no-js .c2 .guidance-message {
   display: none;
 }
 
@@ -835,7 +835,7 @@ html.no-js .c2 .guidance-message {
   background-color: #B80000;
 }
 
-html.no-js .c5 {
+.no-js .c5 {
   display: none;
 }
 
@@ -846,7 +846,7 @@ html.no-js .c5 {
 }
 
 @media screen and (-ms-high-contrast:active) {
-  html.no-js .c2 {
+  .no-js .c2 {
     background-color: transparent;
   }
 }

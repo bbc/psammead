@@ -211,11 +211,11 @@ exports[`Media Player: Canonical Entry renders a landscape container with a plac
   color: #FFFFFF;
 }
 
-html.no-js .c3 {
+.no-js .c3 {
   background-color: rgba(34,34,34,0.75);
 }
 
-html.no-js .c3 .guidance-message {
+.no-js .c3 .guidance-message {
   display: none;
 }
 
@@ -243,7 +243,7 @@ html.no-js .c3 .guidance-message {
   background-color: #B80000;
 }
 
-html.no-js .c6 {
+.no-js .c6 {
   display: none;
 }
 
@@ -260,7 +260,7 @@ html.no-js .c6 {
 }
 
 @media screen and (-ms-high-contrast:active) {
-  html.no-js .c3 {
+  .no-js .c3 {
     background-color: transparent;
   }
 }
@@ -399,11 +399,11 @@ exports[`Media Player: Canonical Entry renders a placeholder image with guidance
   background-color: rgba(34,34,34,0.75);
 }
 
-html.no-js .c3 {
+.no-js .c3 {
   background-color: rgba(34,34,34,0.75);
 }
 
-html.no-js .c3 .guidance-message {
+.no-js .c3 .guidance-message {
   display: none;
 }
 
@@ -438,7 +438,7 @@ html.no-js .c3 .guidance-message {
   background-color: #B80000;
 }
 
-html.no-js .c7 {
+.no-js .c7 {
   display: none;
 }
 
@@ -461,7 +461,7 @@ html.no-js .c7 {
 }
 
 @media screen and (-ms-high-contrast:active) {
-  html.no-js .c3 {
+  .no-js .c3 {
     background-color: transparent;
   }
 }
@@ -617,11 +617,11 @@ exports[`Media Player: Canonical Entry renders a portrait container with a place
   color: #FFFFFF;
 }
 
-html.no-js .c3 {
+.no-js .c3 {
   background-color: rgba(34,34,34,0.75);
 }
 
-html.no-js .c3 .guidance-message {
+.no-js .c3 .guidance-message {
   display: none;
 }
 
@@ -649,7 +649,7 @@ html.no-js .c3 .guidance-message {
   background-color: #B80000;
 }
 
-html.no-js .c6 {
+.no-js .c6 {
   display: none;
 }
 
@@ -666,7 +666,7 @@ html.no-js .c6 {
 }
 
 @media screen and (-ms-high-contrast:active) {
-  html.no-js .c3 {
+  .no-js .c3 {
     background-color: transparent;
   }
 }

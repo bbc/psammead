@@ -25,7 +25,7 @@ const GuidanceWrapper = styled.div`
       guidanceMessage && 'transparent'};
   }
 
-  html.no-js & {
+  .no-js & {
     background-color: ${GUIDANCE_BACKGROUND};
     @media screen and (-ms-high-contrast: active) {
       background-color: transparent;

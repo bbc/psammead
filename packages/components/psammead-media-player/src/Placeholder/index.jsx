@@ -26,7 +26,7 @@ const StyledPlayButton = styled(PlayButton)`
     background-color: ${C_POSTBOX};
   }
   /* stylelint-enable */
-  html.no-js & {
+  .no-js & {
     display: none;
   }
 `;
