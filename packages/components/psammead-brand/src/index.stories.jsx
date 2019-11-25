@@ -15,8 +15,9 @@ import {
   buildRTLSubstories,
 } from '@bbc/psammead-storybook-helpers';
 import ScriptLink from '@bbc/psammead-script-link';
+import Brand from './index';
+import SkipLink from './SkipLink';
 import notes from '../README.md';
-import Brand, { SkipLink } from './index';
 
 const STORY_KIND = 'Components|Brand';
 const inputs = (service = 'news') => {
@@ -188,10 +189,11 @@ storiesOf(STORY_KIND, module)
         borderTop,
         backgroundColour,
         logoColour,
+        dir,
       } = inputs();
 
       const skipLink = (
-        <SkipLink service={service} script={script} href="#content">
+        <SkipLink service={service} script={script} href="#content" dir={dir}>
           Skip to content
         </SkipLink>
       );

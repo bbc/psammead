@@ -5,7 +5,6 @@ import VisuallyHiddenText from '@bbc/psammead-visually-hidden-text';
 import {
   GEL_GROUP_0_SCREEN_WIDTH_MAX,
   GEL_GROUP_2_SCREEN_WIDTH_MIN,
-  GEL_GROUP_2_SCREEN_WIDTH_MAX,
   GEL_GROUP_3_SCREEN_WIDTH_MIN,
   GEL_GROUP_5_SCREEN_WIDTH_MIN,
 } from '@bbc/gel-foundations/breakpoints';
@@ -14,8 +13,6 @@ import {
   GEL_SPACING,
   GEL_SPACING_DBL,
 } from '@bbc/gel-foundations/spacings';
-import { getPica } from '@bbc/gel-foundations/typography';
-import { getSansRegular } from '@bbc/psammead-styles/font-styles';
 
 const SVG_TOP_OFFSET_BELOW_400PX = '0.625rem'; // 10px
 const SVG_BOTTOM_OFFSET_BELOW_400PX = '0.375rem'; // 6px
@@ -119,40 +116,6 @@ const BrandSvg = styled.svg`
     margin-bottom: -${GEL_SPACING_HLF};
   }
   /* stylelint-enable */
-`;
-
-/* Skip to content */
-const SKIP_LINK_COLOR = '#333';
-const SKIP_LINK_BORDER = '0.1875rem'; // 3px
-const TOP_BOTTOM_SPACING = '0.75rem'; // 12px
-
-export const SkipLink = styled.a`
-  position: absolute;
-  clip-path: inset(100%);
-  clip: rect(1px, 1px, 1px, 1px);
-  height: 1px;
-  width: 1px;
-  overflow: hidden;
-  padding: ${TOP_BOTTOM_SPACING} ${GEL_SPACING};
-  background-color: #ffffff;
-  border: ${SKIP_LINK_BORDER} solid #000;
-  color: ${SKIP_LINK_COLOR};
-  text-decoration: none;
-  ${({ script }) => script && getPica(script)};
-  ${({ service }) => service && getSansRegular(service)}
-
-  &:focus {
-    clip-path: none;
-    clip: auto;
-    height: auto;
-    width: auto;
-    top: ${GEL_SPACING};
-    left: 0;
-  }
-
-  @media (max-width: ${GEL_GROUP_2_SCREEN_WIDTH_MAX}) {
-    padding: ${GEL_SPACING};
-  }
 `;
 
 const LocalisedBrandName = ({ product, serviceLocalisedName }) =>
