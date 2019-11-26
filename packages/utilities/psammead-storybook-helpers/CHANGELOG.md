@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 8.1.1 | [PR#2668](https://github.com/bbc/psammead/pull/2668) Remove `chineseTrad` & `chineseSimp` example as Zhongwen example covers it.  |
 | 8.1.0 | [PR#2668](https://github.com/bbc/psammead/pull/2668) Add variant prop to `storyProps` and update text-variant examples |
 | 8.0.2 | [PR#2543](https://github.com/bbc/psammead/pull/2543) updates readme with better withServicesKnob example |
 | 8.0.1 | [PR#2488](https://github.com/bbc/psammead/pull/2488) Talos - Bump Dependencies - @bbc/gel-foundations |
