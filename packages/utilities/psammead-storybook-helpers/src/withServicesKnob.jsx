@@ -7,27 +7,27 @@ import TEXT_EXAMPLES from './text-variants';
 
 const DEFAULT_SERVICE = 'news';
 const SERVICES_LIST = Object.keys(TEXT_EXAMPLES);
-const getVariant = selectedItem => path([selectedItem, 'variant']);
-const getService = selectedItem => path([selectedItem, 'service']);
+const getVariant = selectedService => path([selectedService, 'variant']);
+const getService = selectedService => path([selectedService, 'service']);
 const includesService = services => service => services.includes(service);
 
 export default ({
   defaultService = DEFAULT_SERVICE,
   services = SERVICES_LIST,
 } = {}) => storyFn => {
-  const selectedItem = select(
+  const selectedService = select(
     'Select a service',
     services.filter(includesService(services)),
     defaultService,
   );
 
-  const variant = getVariant(selectedItem)(TEXT_EXAMPLES);
+  const variant = getVariant(selectedService)(TEXT_EXAMPLES);
 
   const service = variant
-    ? getService(selectedItem)(TEXT_EXAMPLES)
-    : selectedItem;
+    ? getService(selectedService)(TEXT_EXAMPLES)
+    : selectedService;
 
-  const { text, script, locale, dir = 'ltr' } = TEXT_EXAMPLES[selectedItem];
+  const { text, script, locale, dir = 'ltr' } = TEXT_EXAMPLES[selectedService];
 
   const storyProps = {
     text,
