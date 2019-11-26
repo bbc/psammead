@@ -4,6 +4,7 @@
 | Version       | Description                                                                                                                  |
 | ------------- | ---------------------------------------------------------------------------------------------------------------------------- |
 | 2.4.0 | [PR#2662](https://github.com/bbc/psammead/pull/2662) Add no JS fallback & `noJsClassName` prop to Canonical MediaPlayer |
+| 2.3.3 | [PR#2684](https://github.com/bbc/psammead/pull/2684) Added scrolling attribute to disable scrolling on canonical and amp iframe |
 | 2.3.2 | [PR#2666](https://github.com/bbc/psammead/pull/2666) Talos - Bump Dependencies - @bbc/psammead-play-button |
 | 2.3.1 | [PR#2663](https://github.com/bbc/psammead/pull/2663) Talos - Bump Dependencies - @bbc/psammead-assets |
 | 2.3.0 | [PR#2628](https://github.com/bbc/psammead/pull/2628) Add guidance message for assistive technology in Play Button and hide it in Guidance |
