@@ -143,7 +143,7 @@ const TEXT_EXAMPLES = {
   },
   serbianLat: {
     service: 'serbian',
-    variant: 'cyr',
+    variant: 'lat',
     text: 'Karadžić se godinama krio pre nego što je uhapšen 2008. godine',
     script: 'latin',
     locale: 'sr',
