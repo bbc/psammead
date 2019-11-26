@@ -42,8 +42,6 @@ const iconBorder = css`
   right: 0;
   bottom: 0;
   top: 0;
-  height: ${MENU_ICON_SIDE_LENGTH};
-  width: ${MENU_ICON_SIDE_LENGTH};
   border: ${GEL_SPACING_HLF} solid ${C_WHITE};
 `;
 
@@ -51,6 +49,7 @@ const CrossButton = styled.button`
   background-color: ${C_EBON};
   width: ${MENU_ICON_SIDE_LENGTH};
   height: ${MENU_ICON_SIDE_LENGTH};
+  position: relative;
   padding: 0;
   margin: 0;
   border: 0;
@@ -185,6 +184,7 @@ const HamburgerButton = styled.button`
   width: ${MENU_ICON_SIDE_LENGTH};
   height: ${MENU_ICON_SIDE_LENGTH};
   background-color: ${C_POSTBOX};
+  position: relative;
   padding: 0;
   margin: 0;
   border: 0;
