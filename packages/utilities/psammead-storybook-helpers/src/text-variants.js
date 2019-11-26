@@ -1,4 +1,4 @@
-const LANGUAGE_VARIANTS = {
+const TEXT_EXAMPLES = {
   afaanoromoo: {
     text:
       "Gammadoo ta'uun akkanumaan hin dhufu, waan shaakalamuudha jetti saantoos.",
@@ -145,11 +145,15 @@ const LANGUAGE_VARIANTS = {
     locale: 'ru',
   },
   serbianCyr: {
+    service: 'serbian',
+    variant: 'cyr',
     text: 'Караџић се годинама крио пре него што је ухапшен 2008. године',
     script: 'cyrillic',
     locale: 'sr-cyrl',
   },
   serbianLat: {
+    service: 'serbian',
+    variant: 'cyr',
     text: 'Karadžić se godinama krio pre nego što je uhapšen 2008. godine',
     script: 'latin',
     locale: 'sr',
@@ -183,18 +187,22 @@ const LANGUAGE_VARIANTS = {
     locale: 'th',
   },
   tigrinya: { text: 'ዓብዱራሕማን ኣቡሃሽም', script: 'ethiopic', locale: 'ti' },
-  turkish: {
+  turkce: {
     text:
       'Kassım Jomart Tokayev, parlamentoda yemin ederek devlet başkanlığı görevini resmen devraldı.',
     script: 'latin',
     locale: 'tr',
   },
   ukChinaSimp: {
+    service: 'ukchina',
+    variant: 'simp',
     text: '该计划的批评者说，这个政策不能解决住房短缺的问题（Credit: Alamy）',
     script: 'chinese',
     locale: 'zh-cn',
   },
   ukChinaTrad: {
+    service: 'ukchina',
+    variant: 'trad',
     text: '該計劃的批評者說，這個政策不能解決住房短缺的問題（Credit: Alamy）',
     script: 'chinese',
     locale: 'zh-tw',
@@ -228,6 +236,20 @@ const LANGUAGE_VARIANTS = {
     script: 'latin',
     locale: 'yo',
   },
+  zhongwenSimp: {
+    service: 'zhongwen',
+    variant: 'simp',
+    text: '郑文杰：中国警方公布“嫖娼证据” 引发中港网友论战',
+    script: 'chinese',
+    locale: 'zh-hans',
+  },
+  zhongwenTrad: {
+    service: 'zhongwen',
+    variant: 'trad',
+    text: '鄭文傑：中國警方公布「嫖娼證據」 引發中港網友論戰',
+    script: 'chinese',
+    locale: 'zh-hant',
+  },
 };
 
-export default LANGUAGE_VARIANTS;
+export default TEXT_EXAMPLES;

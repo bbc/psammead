@@ -2,7 +2,7 @@ import { render, waitForDomChange } from '@testing-library/react';
 import * as knobs from '@storybook/addon-knobs';
 import * as scripts from '@bbc/gel-foundations/scripts';
 import withServicesKnob from './withServicesKnob';
-import LANGUAGE_VARIANTS from './text-variants';
+import TEXT_EXAMPLES from './text-variants';
 
 it('should correctly configure the default story book dropdown', () => {
   const storyFn = () => {};
@@ -12,7 +12,7 @@ it('should correctly configure the default story book dropdown', () => {
 
   expect(knobs.select).toHaveBeenCalledWith(
     'Select a service',
-    Object.keys(LANGUAGE_VARIANTS),
+    Object.keys(TEXT_EXAMPLES),
     'news',
   );
 });
@@ -83,6 +83,24 @@ it('should pass the correct chosen service props to the story function', () => {
       'المحكمة العليا الأمريكية ذات الأغلبية المحافظة وافقت على احتجاز غير المواطنين لأجل غير مسمى حتى بعد سنوات من خروجهم من السجن',
     dir: 'rtl',
     locale: 'ar',
+  };
+
+  expect(mockStoryFn).toHaveBeenCalledWith(expected);
+});
+
+it('should pass the correct chosen service props to the story function', () => {
+  const mockStoryFn = jest.fn();
+  knobs.select = () => 'ukChinaSimp';
+
+  withServicesKnob()(mockStoryFn);
+
+  const expected = {
+    script: scripts.chinese,
+    service: 'ukchina',
+    text: '该计划的批评者说，这个政策不能解决住房短缺的问题（Credit: Alamy）',
+    dir: 'ltr',
+    locale: 'zh-cn',
+    variant: 'simp',
   };
 
   expect(mockStoryFn).toHaveBeenCalledWith(expected);

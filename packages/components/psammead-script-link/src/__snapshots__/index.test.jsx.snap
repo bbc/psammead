@@ -26,13 +26,9 @@ exports[`ScriptLink should render correctly 1`] = `
   border: 0.0625rem solid #FFFFFF;
 }
 
-.c0:hover::after {
+.c0:hover::after,
+.c0:focus::after {
   border: 0.25rem solid #FFFFFF;
-}
-
-.c0:focus {
-  background-color: #FFFFFF;
-  color: #222222;
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
@@ -60,6 +56,14 @@ exports[`ScriptLink should render correctly 1`] = `
     line-height: 2.5rem;
     height: 2.5rem;
     padding: 0 0.75rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .c0 {
+    height: 2.25rem;
+    line-height: 2.25rem;
+    padding: 0 0.625rem;
   }
 }
 

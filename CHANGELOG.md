@@ -3,7 +3,21 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
-| 1.10.0 | [PR#2244](https://github.com/bbc/psammead/pull/2244) Open PR in Simorgh when packages are published on psammead |
+| 2.1.0 | [PR#2244](https://github.com/bbc/psammead/pull/2244) Open PR in Simorgh when packages are published on psammead |
+| 2.0.12 | [PR#2666](https://github.com/bbc/psammead/pull/2666) Install Ramda as a dev dependencies at the root package.json |
+| 2.0.11 | [PR#2681](https://github.com/bbc/psammead/pull/2681) Talos - Bump Dependencies - @bbc/psammead-storybook-helpers |
+| 2.0.10 | [PR#2666](https://github.com/bbc/psammead/pull/2666) Talos - Bump Dependencies - @bbc/psammead-image-placeholder, @bbc/psammead-media-indicator |
+| 2.0.9 | [PR#2657](https://github.com/bbc/psammead/pull/2657) Update codeowners |
+| 2.0.8 | [PR#2663](https://github.com/bbc/psammead/pull/2663) Talos - Bump Dependencies - @bbc/psammead-assets |
+| 2.0.7 | [PR#2656](https://github.com/bbc/psammead/pull/2656) Talos - Bump Dependencies - @bbc/psammead-image-placeholder, @bbc/psammead-media-indicator |
+| 2.0.6 | [PR#2644](https://github.com/bbc/psammead/pull/2644) Bump dependencies |
+| 2.0.5 | [PR#2635](https://github.com/bbc/psammead/pull/2635) generate withServiceKnob |
+| 2.0.4 | [PR#2650](https://github.com/bbc/psammead/pull/2650) Update codeowners |
+| 2.0.3 | [PR#2647](https://github.com/bbc/psammead/pull/2647) Talos - Bump Dependencies - @bbc/psammead-assets, @bbc/psammead-image-placeholder, @bbc/psammead-media-indicator |
+| 2.0.2 | [PR#2645](https://github.com/bbc/psammead/pull/2645) Talos - Bump Dependencies - @bbc/psammead-assets |
+| 2.0.1 | [PR#2615](https://github.com/bbc/psammead/pull/2615) Talos - Bump Dependencies - @bbc/psammead-assets, @bbc/psammead-image, @bbc/psammead-timestamp |
+| 2.0.0 | [PR#2607](https://github.com/bbc/psammead/pull/2607) Bump dependencies |
+| 1.9.2 | [PR#2586](https://github.com/bbc/psammead/pull/2586) Fix a hyperlink in the readme |
 | 1.9.1 | [PR#2561](https://github.com/bbc/psammead/pull/2561) Talos - Bump Dependencies - @bbc/psammead-calendars |
 | 1.9.0  | [PR#2566](https://github.com/bbc/psammead/pull/2566) Use latest version of NPM and Node.js |
 | 1.8.49 | [PR#2491](https://github.com/bbc/psammead/pull/2491) Bump dependencies |

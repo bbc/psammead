@@ -89,18 +89,32 @@ storiesOf('Components|Paragraph', module)
     ),
 ```
 
-If you want to add this decorator to a single story rather than a series of stories as documented above then you could write a story like this:
+If you want to add this decorator to a single story rather than a series of stories as documented above, perhaps because you need each story to have a different default service, then you need to decorate each story directly instead of using the `addDecorator` method. An example of how you could write this is shown below:
 
 ```js
+const arabicServiceDecorator = withServicesKnob({
+  defaultService: 'arabic',
+});
+
+const pashtoServiceDecorator = withServicesKnob({
+  defaultService: 'pashto',
+});
+
 storiesOf('Components|Paragraph', module)
   .addDecorator(withKnobs)
   .add('A paragraph with Arabic text', () =>
-    withServicesKnob({
-      defaultService: 'arabic',
-      services: ['news', 'arabic', 'amharic'],
-    })(({ text, script, service }) => (
+    arabicServiceDecorator(({ text, script, service }) => (
       <Paragraph script={script} service={service}>
         {text}
+      </Paragraph>
+    )),
+  )
+  .add('A paragraph with Arabic text', () =>
+    pashtoServiceDecorator(({ text, script, service }) => (
+      <Paragraph script={script} service={service}>
+        {`${text} `}
+        <InlineLink href="https://www.bbc.com">{text}</InlineLink>
+        {` ${text}`}
       </Paragraph>
     )),
   );
