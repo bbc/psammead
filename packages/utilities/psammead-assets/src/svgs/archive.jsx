@@ -4,7 +4,7 @@ const archive = {
   group: (
     <g
       fillRule="evenodd"
-      stroke="#fff"
+      stroke="#000"
       strokeWidth=".335"
       style={{ stroke: '#fff' }}
     >
