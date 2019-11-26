@@ -12,7 +12,7 @@ it('should correctly configure the default story book dropdown', () => {
 
   expect(knobs.select).toHaveBeenCalledWith(
     'Select a service',
-    Object.keys(EXAMPLES),
+    Object.keys(TEXT_EXAMPLES),
     'news',
   );
 });
