@@ -123,7 +123,7 @@ exports[`archive SVG should render correctly 1`] = `
 >
   <g
     fill-rule="evenodd"
-    stroke="#fff"
+    stroke="#000"
     stroke-width=".335"
     style="stroke: #fff;"
   >
