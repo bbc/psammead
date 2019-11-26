@@ -1,11 +1,7 @@
 import React from 'react';
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 import { GEL_GROUP_3_SCREEN_WIDTH_MIN } from '@bbc/gel-foundations/breakpoints';
-import {
-  GEL_SPACING,
-  GEL_SPACING_DBL,
-  GEL_SPACING_HLF,
-} from '@bbc/gel-foundations/spacings';
+import { GEL_SPACING, GEL_SPACING_DBL } from '@bbc/gel-foundations/spacings';
 import {
   C_WHITE,
   C_POSTBOX,
@@ -14,7 +10,10 @@ import {
   C_LUNAR,
 } from '@bbc/psammead-styles/colours';
 import { string, oneOf, node, bool, shape } from 'prop-types';
-import { getSansRegular, getSansBold } from '@bbc/psammead-styles/font-styles';
+import {
+  getSansRegular,
+  getSerifMedium,
+} from '@bbc/psammead-styles/font-styles';
 import { scriptPropType } from '@bbc/gel-foundations/prop-types';
 import { getPica, getLongPrimer } from '@bbc/gel-foundations/typography';
 import { mediaIcons } from '@bbc/psammead-assets/svgs';
@@ -45,6 +44,7 @@ const imageWrapperStyles = `
   vertical-align: top;
   display: inline-block;
   grid-column: 1 / span 6;
+  padding: ${GEL_SPACING} ${GEL_SPACING} 0 ${GEL_SPACING};
   @supports (${grid}) {
     width: initial;
   }
@@ -62,7 +62,6 @@ const textWrapperStyles = `
 
 const TVBulletinWrapper = styled.div`
   ${bulletinWrapperStyles};
-  padding: ${GEL_SPACING};
   @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
     padding: ${GEL_SPACING_DBL};
   }
@@ -72,6 +71,7 @@ const TVImageWrapper = styled.div`
   @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
     grid-column: 1 / span 3;
     width: ${halfWidthColumnsMaxScaleable};
+    padding: 0;
   }
   ${imageWrapperStyles};
 `;
@@ -95,7 +95,6 @@ const RadioBulletinWrapper = styled.div`
 `;
 
 const RadioImageWrapper = styled.div`
-  padding: ${GEL_SPACING} ${GEL_SPACING} 0 ${GEL_SPACING};
   @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
     grid-column: 1 / span 2;
     width: ${twoOfSixColumnsMaxWidthScaleable};
@@ -123,12 +122,14 @@ const IconWrapper = styled.span`
     color: ${C_WHITE};
     fill: currentColor;
   }
+  
+  ${({ dir }) =>
+    dir === 'ltr'
+      ? `padding-right: ${GEL_SPACING};`
+      : `padding-left: ${GEL_SPACING};`}
+
   @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
     display: inline-block;
-    ${({ dir }) =>
-      dir === 'ltr'
-        ? `padding-right: ${GEL_SPACING_HLF};`
-        : `padding-left: ${GEL_SPACING_HLF};`}
   }
 `;
 
@@ -153,7 +154,7 @@ const BulletinSummary = styled.p`
   ${({ service }) => service && getSansRegular(service)}
   color: ${C_SHADOW};
   margin: 0; /* Reset */
-  ${({ type }) => type === 'audio' && `padding: 0 ${GEL_SPACING};`}
+  padding: 0 ${GEL_SPACING};
   @media(min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
     padding-left: 0;
     padding-right: 0;
@@ -161,23 +162,24 @@ const BulletinSummary = styled.p`
   padding-bottom: ${GEL_SPACING_DBL};
 `;
 
-const TVHeading = styled.h3`
+const headingStyles = css`
+  ${({ service }) => service && getSerifMedium(service)}
   ${({ script }) => script && getPica(script)}
-  ${({ service }) => getSansBold(service)}
   color: ${C_EBON};
   margin: 0; /* Reset */
-  padding: ${GEL_SPACING} 0;
-  @media(min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
+  padding: ${GEL_SPACING_DBL} ${GEL_SPACING} ${GEL_SPACING} ${GEL_SPACING};
+
+`;
+
+const TVHeading = styled.h3`
+  ${headingStyles}
+  @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
     padding: 0 0 ${GEL_SPACING} 0;
   }
 `;
 
 const RadioHeading = styled.h3`
-  ${({ script }) => script && getPica(script)}
-  ${({ service }) => getSansBold(service)}
-  color: ${C_EBON};
-  margin: 0; /* Reset */
-  padding: ${GEL_SPACING} ${GEL_SPACING};
+  ${headingStyles}
   @media(min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
     padding: ${GEL_SPACING} 0;
   }
