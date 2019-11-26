@@ -16,7 +16,9 @@ import { withServicesKnob } from '@bbc/psammead-storybook-helpers';
 import Navigation, { NavigationUl, NavigationLi } from './index';
 import {
   CanonicalHamburgerMenu,
+  AmpHamburgerMenu,
   CanonicalDropdown,
+  AmpDropdown,
   DropdownUl,
   DropdownLi,
 } from './DropdownNavigation';
@@ -160,13 +162,12 @@ const navigationStory = (
   </>
 );
 
-const dropdownStory = () => ({ dir, script, service }) => (
-  <CanonicalDropdown announcedText="Menu" onClose={() => {}}>
+const dropdownStory = type => ({ dir, script, service }) => {
+  const dropdownList = (
     <DropdownUl>
       {pidginNavData.map((item, index) => {
         const active = index === 3;
         const { title, url } = item;
-
         return (
           <DropdownLi
             script={script}
@@ -182,8 +183,18 @@ const dropdownStory = () => ({ dir, script, service }) => (
         );
       })}
     </DropdownUl>
-  </CanonicalDropdown>
-);
+  );
+
+  return type === 'canonical' ? (
+    <CanonicalDropdown announcedText="Menu" onClose={() => {}}>
+      {dropdownList}
+    </CanonicalDropdown>
+  ) : (
+    <AmpDropdown announcedText="Menu" onClose="">
+      {dropdownList}
+    </AmpDropdown>
+  );
+};
 
 const storiesWithoutBrand = storiesOf(
   'Components|Navigation/without brand',
@@ -204,7 +215,7 @@ navStoriesData.map(item => {
 });
 
 storiesWithoutBrand.add(
-  'Hamburger menu',
+  'Canonical Hamburger menu',
   () => (
     <BackgroundContainer>
       <CanonicalHamburgerMenu announcedText="Menu" onOpen={() => {}} />
@@ -215,7 +226,23 @@ storiesWithoutBrand.add(
   },
 );
 
-storiesWithoutBrand.add('Dropdown menu', dropdownStory(), {
+storiesWithoutBrand.add(
+  'AMP Hamburger menu',
+  () => (
+    <BackgroundContainer>
+      <AmpHamburgerMenu announcedText="Menu" onOpen="" />
+    </BackgroundContainer>
+  ),
+  {
+    notes,
+  },
+);
+
+storiesWithoutBrand.add('Canonical Dropdown menu', dropdownStory('canonical'), {
+  notes,
+});
+
+storiesWithoutBrand.add('AMP Dropdown menu', dropdownStory('amp'), {
   notes,
 });
 
