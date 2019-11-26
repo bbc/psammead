@@ -54,6 +54,7 @@ const CrossButton = styled.button`
   margin: 0;
   border: 0;
 
+  &:hover,
   &:focus {
     box-shadow: inset 0 0 0 ${GEL_SPACING_HLF} ${C_WHITE};
     ::after {
@@ -85,6 +86,7 @@ const StyledDropdownLink = styled.a`
   color: ${C_WHITE};
   text-decoration: none;
 
+  &:hover,
   &:focus {
     text-decoration: underline;
   }
@@ -189,6 +191,7 @@ const HamburgerButton = styled.button`
   margin: 0;
   border: 0;
 
+  &:hover,
   &:focus {
     box-shadow: inset 0 0 0 ${GEL_SPACING_HLF} ${C_WHITE};
     ::after {
