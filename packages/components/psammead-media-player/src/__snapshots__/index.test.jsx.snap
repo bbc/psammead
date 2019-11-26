@@ -25,6 +25,7 @@ exports[`Media Player: AMP Entry renders a landscape container with an amp-ifram
           frameborder="0"
           layout="fill"
           sandbox="allow-scripts allow-same-origin"
+          scrolling="no"
           src="http://foo.bar/iframe/amp"
           title="Media player"
         >
@@ -69,6 +70,7 @@ exports[`Media Player: AMP Entry renders a portrait container with amp-iframe an
           frameborder="0"
           layout="fill"
           sandbox="allow-scripts allow-same-origin"
+          scrolling="no"
           src="http://foo.bar/iframe/amp"
           title="Media player"
         >
@@ -113,6 +115,7 @@ exports[`Media Player: AMP Entry renders the audio skin 1`] = `
           frameborder="0"
           layout="fill"
           sandbox="allow-scripts allow-same-origin"
+          scrolling="no"
           src="https://www.test.bbc.com/ws/av-embeds/media/bbc_korean_radio/liveradio"
           title="Audio player"
         >
