@@ -2,7 +2,7 @@ import { render, waitForDomChange } from '@testing-library/react';
 import * as knobs from '@storybook/addon-knobs';
 import * as scripts from '@bbc/gel-foundations/scripts';
 import withServicesKnob from './withServicesKnob';
-import EXAMPLES from './text-variants';
+import TEXT_EXAMPLES from './text-variants';
 
 it('should correctly configure the default story book dropdown', () => {
   const storyFn = () => {};
