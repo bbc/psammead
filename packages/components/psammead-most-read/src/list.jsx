@@ -81,64 +81,47 @@ const StyledOl = styled.ol.attrs({
   padding: 0;
 `;
 
-const MostReadItem = ({ rank, link, service, script, dir }) => (
-  <Grid {...MostReadItemProps} dir={dir} forwardedAs="li">
-    <Grid {...MostReadRankProps} dir={dir}>
-      <MostReadRank service={service} script={script}>
-        {rank}
-      </MostReadRank>
-    </Grid>
-    <Grid {...MostReadLinkProps} dir={dir}>
-      <MostReadLink service={service} link={link} script={script} dir={dir} />
-    </Grid>
-  </Grid>
-);
-
-const MostReadList = ({ items, service, script, dir }) => {
+const renderMostReadRank = (service, script, index) => {
   const numerals = serviceNumerals(service);
+  const rank = numerals[index + 1];
   return (
-    <StyledOl>
-      <Grid {...MostReadListProps} dir={dir}>
-        {items.map((link, i) => {
-          const rank = numerals[i + 1];
-          return (
-            <MostReadItem
-              key={rank}
-              link={link}
-              service={service}
-              script={script}
-              rank={rank}
-              dir={dir}
-            />
-          );
-        })}
-      </Grid>
-    </StyledOl>
+    <MostReadRank service={service} script={script}>
+      {rank}
+    </MostReadRank>
   );
 };
+
+const renderMostReadLink = (link, service, script, dir) => (
+  <MostReadLink service={service} link={link} script={script} dir={dir} />
+);
+
+const MostReadList = ({ items, service, script, dir }) => (
+  <StyledOl>
+    <Grid {...MostReadListProps} dir={dir}>
+      {items.map((link, i) => (
+        <Grid {...MostReadItemProps} dir={dir} forwardedAs="li">
+          <Grid {...MostReadRankProps} dir={dir}>
+            {renderMostReadRank(service, script, i)}
+          </Grid>
+          <Grid {...MostReadLinkProps} dir={dir}>
+            {renderMostReadLink(link, service, script, dir)}
+          </Grid>
+        </Grid>
+      ))}
+    </Grid>
+  </StyledOl>
+);
 
 const linkPropTypes = shape({
   title: string.isRequired,
   href: string.isRequired,
 });
 
-MostReadItem.propTypes = {
-  rank: string.isRequired,
-  link: linkPropTypes.isRequired,
-  service: string.isRequired,
-  script: shape(scriptPropType).isRequired,
-  dir: oneOf(['rtl', 'ltr']),
-};
-
 MostReadList.propTypes = {
   items: arrayOf(linkPropTypes).isRequired,
   service: string.isRequired,
   script: shape(scriptPropType).isRequired,
   dir: oneOf(['rtl', 'ltr']),
-};
-
-MostReadItem.defaultProps = {
-  dir: 'ltr',
 };
 
 MostReadList.defaultProps = {
