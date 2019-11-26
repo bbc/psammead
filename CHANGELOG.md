@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 2.0.14 | [PR#2696](https://github.com/bbc/psammead/pull/2696) Talos - Bump Dependencies - @bbc/psammead-storybook-helpers |
 | 2.0.13 | [PR#2687](https://github.com/bbc/psammead/pull/2687) Talos - Bump Dependencies - @bbc/psammead-storybook-helpers |
 | 2.0.12 | [PR#2666](https://github.com/bbc/psammead/pull/2666) Install Ramda as a dev dependencies at the root package.json |
 | 2.0.11 | [PR#2681](https://github.com/bbc/psammead/pull/2681) Talos - Bump Dependencies - @bbc/psammead-storybook-helpers |
