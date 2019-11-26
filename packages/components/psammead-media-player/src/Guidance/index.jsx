@@ -17,12 +17,12 @@ const GuidanceWrapper = styled.div`
   position: absolute;
   border: 0.0625rem solid transparent;
   color: ${C_WHITE};
-  background-color: ${({ guidanceMessage }) =>
-    guidanceMessage && GUIDANCE_BACKGROUND};
+  ${({ guidanceMessage }) =>
+    guidanceMessage ? `background-color: ${GUIDANCE_BACKGROUND};` : ``}
 
   @media screen and (-ms-high-contrast: active) {
-    background-color: ${({ guidanceMessage }) =>
-      guidanceMessage && 'transparent'};
+    ${({ guidanceMessage }) =>
+      guidanceMessage ? `background-color: transparent;` : ``}
   }
 
   ${({ noJsClassName }) =>
