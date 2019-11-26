@@ -269,6 +269,7 @@ exports[`Bulletin should render audio correctly 1`] = `
         >
           <span
             class="c6"
+            lang="en-GB"
           >
             Listen,
           </span>
@@ -592,6 +593,7 @@ exports[`Bulletin should render live audio correctly 1`] = `
         >
           <span
             class="c6"
+            lang="en-GB"
           >
             Listen LIVE,
           </span>
@@ -924,6 +926,7 @@ exports[`Bulletin should render live video correctly 1`] = `
         >
           <span
             class="c6"
+            lang="en-GB"
           >
             Watch LIVE,
           </span>
@@ -1244,6 +1247,7 @@ exports[`Bulletin should render video correctly 1`] = `
         >
           <span
             class="c6"
+            lang="en-GB"
           >
             Watch,
           </span>

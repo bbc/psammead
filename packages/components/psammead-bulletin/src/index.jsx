@@ -195,6 +195,7 @@ const Bulletin = ({
   ctaLink,
   liveText,
   dir,
+  lang,
 }) => {
   const isAudio = type === 'audio';
   const BulletinWrapper = isAudio ? RadioBulletinWrapper : TVBulletinWrapper;
@@ -210,7 +211,7 @@ const Bulletin = ({
           <Link href={ctaLink}>
             {/* eslint-disable jsx-a11y/aria-role */}
             <span role="text">
-              <VisuallyHiddenText>
+              <VisuallyHiddenText lang={lang}>
                 {isLive ? `${ctaText} ${liveText},` : `${ctaText},`}
               </VisuallyHiddenText>
               {isLive && (
@@ -252,6 +253,7 @@ Bulletin.propTypes = {
   headlineText: string.isRequired,
   liveText: string,
   dir: oneOf(['ltr', 'rtl']),
+  lang: string,
 };
 
 Bulletin.defaultProps = {
@@ -259,6 +261,7 @@ Bulletin.defaultProps = {
   image: null,
   liveText: 'LIVE',
   dir: 'ltr',
+  lang: 'en-GB',
 };
 
 export default Bulletin;

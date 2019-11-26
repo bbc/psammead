@@ -32,6 +32,7 @@ npm install @bbc/psammead-bulletin --save
 | `isLive` | boolean | no | `false` | `true` |
 | `liveText` | string | no | `'Live'` | `'Localised Live'` |
 | `dir` | string | no | `'ltr'` | `One of ['rtl', 'ltr']` |
+| `lang` | string | no | `'en-GB'` | `'en-GB'` |
 
 ## Usage
 
