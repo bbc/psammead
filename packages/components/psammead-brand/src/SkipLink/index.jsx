@@ -1,5 +1,6 @@
 import styled, { css } from 'styled-components';
 import { oneOf } from 'prop-types';
+import { C_WHITE } from '@bbc/psammead-styles/colours';
 import { GEL_GROUP_2_SCREEN_WIDTH_MAX } from '@bbc/gel-foundations/breakpoints';
 import { GEL_SPACING } from '@bbc/gel-foundations/spacings';
 import { getPica } from '@bbc/gel-foundations/typography';
@@ -17,12 +18,12 @@ const SkipLink = styled.a`
   width: 1px;
   overflow: hidden;
   padding: ${TOP_BOTTOM_SPACING} ${GEL_SPACING};
-  background-color: #ffffff;
+  background-color: ${C_WHITE};
   border: ${SKIP_LINK_BORDER} solid #000;
   color: ${SKIP_LINK_COLOR};
   text-decoration: none;
   ${({ script }) => script && getPica(script)};
-  ${({ service }) => service && getSansRegular(service)}
+  ${({ service }) => service && getSansRegular(service)};
 
   &:focus {
     clip-path: none;
