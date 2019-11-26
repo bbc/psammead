@@ -167,7 +167,7 @@ storiesOf(STORY_KIND, module)
   )
   .add(
     'with skip to content link and script link',
-    ({ service, script }) => {
+    ({ service, script, dir }) => {
       const scriptLink = (
         <ScriptLink
           script={script}
@@ -189,7 +189,6 @@ storiesOf(STORY_KIND, module)
         borderTop,
         backgroundColour,
         logoColour,
-        dir,
       } = inputs();
 
       const skipLink = (

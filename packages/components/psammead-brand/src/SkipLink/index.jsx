@@ -31,9 +31,7 @@ const SkipLink = styled.a`
     width: auto;
     top: ${GEL_SPACING};
     ${({ dir }) => css`
-      &::after {
-        ${dir === 'ltr' ? 'left' : 'right'}: 0;
-      }
+      ${dir === 'ltr' ? 'left' : 'right'}: 0;
     `}
   }
 
