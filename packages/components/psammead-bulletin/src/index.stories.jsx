@@ -7,19 +7,13 @@ import notes from '../README.md';
 import Bulletin from '.';
 
 /* eslint-disable react/prop-types */
-const BulletinComponent = ({
-  script,
-  service,
-  type,
-  ctaText,
-  hasImage,
-  dir,
-  text,
-}) => {
+const BulletinComponent = ({ script, service, type, hasImage, dir, text }) => {
   const ctaLink = 'https://bbc.co.uk';
 
   const isLive = boolean('Live', false);
+  const ctaText = type === 'audio' ? 'Listen' : 'Watch';
 
+  const liveCtaText = isLive ? `${ctaText} Live` : ctaText;
   const image = (
     <Image
       src="https://ichef.bbci.co.uk/news/660/cpsprodpb/11897/production/_106613817_999_al_.jpg"
@@ -37,7 +31,7 @@ const BulletinComponent = ({
       headlineText={text}
       summaryText={text}
       ctaLink={ctaLink}
-      ctaText={ctaText}
+      ctaText={liveCtaText}
       dir={dir}
     />
   );
@@ -53,7 +47,6 @@ storiesOf('Components|Bulletin', module)
         script={script}
         service={service}
         type="video"
-        ctaText="Watch"
         hasImage
         dir={dir}
         text={textSnipet}
@@ -71,7 +64,6 @@ storiesOf('Components|Bulletin', module)
           script={script}
           service={service}
           type="audio"
-          ctaText="Listen"
           hasImage={hasImage}
           dir={dir}
           text={textSnipet}
