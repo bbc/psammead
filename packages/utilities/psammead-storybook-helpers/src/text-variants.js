@@ -45,16 +45,6 @@ const TEXT_EXAMPLES = {
     script: 'burmese',
     locale: 'my',
   },
-  chineseSimp: {
-    text: '家长们在学校门口维权。',
-    script: 'chinese',
-    locale: 'zh-cn',
-  },
-  chineseTrad: {
-    text: '家長們在學校門口維權。',
-    script: 'chinese',
-    locale: 'zh-tw',
-  },
   news: {
     text: 'Could a computer ever create better art than a human?',
     script: 'latin',
