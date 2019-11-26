@@ -16,7 +16,7 @@ exports[`Bulletin should render audio correctly 1`] = `
   height: 0.75rem;
 }
 
-.c5 {
+.c6 {
   -webkit-clip-path: inset(100%);
   clip-path: inset(100%);
   -webkit-clip: rect(1px,1px,1px,1px);
@@ -28,14 +28,14 @@ exports[`Bulletin should render audio correctly 1`] = `
   margin: 0;
 }
 
-.c6 {
+.c5 {
   position: static;
   color: #222222;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.c6:before {
+.c5:before {
   bottom: 0;
   content: '';
   left: 0;
@@ -47,13 +47,13 @@ exports[`Bulletin should render audio correctly 1`] = `
   z-index: 1;
 }
 
-.c6:hover,
-.c6:focus {
+.c5:hover,
+.c5:focus {
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
-.c6:visited {
+.c5:visited {
   color: #6E6E73;
 }
 
@@ -260,16 +260,22 @@ exports[`Bulletin should render audio correctly 1`] = `
       class="c4"
       dir="ltr"
     >
-      <span
-        class="c5"
-      >
-        Listen 
-      </span>
       <a
-        class="c6"
+        class="c5"
         href="https://bbc.co.uk"
       >
-        This is the headline
+        <span
+          role="text"
+        >
+          <span
+            class="c6"
+          >
+            Listen,
+          </span>
+          <span>
+            This is the headline
+          </span>
+        </span>
       </a>
     </h3>
     <p
@@ -324,7 +330,7 @@ exports[`Bulletin should render live audio correctly 1`] = `
   height: 0.75rem;
 }
 
-.c5 {
+.c6 {
   -webkit-clip-path: inset(100%);
   clip-path: inset(100%);
   -webkit-clip: rect(1px,1px,1px,1px);
@@ -336,14 +342,14 @@ exports[`Bulletin should render live audio correctly 1`] = `
   margin: 0;
 }
 
-.c7 {
+.c5 {
   position: static;
   color: #222222;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.c7:before {
+.c5:before {
   bottom: 0;
   content: '';
   left: 0;
@@ -355,17 +361,17 @@ exports[`Bulletin should render live audio correctly 1`] = `
   z-index: 1;
 }
 
-.c7:hover,
-.c7:focus {
+.c5:hover,
+.c5:focus {
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
-.c7:visited {
+.c5:visited {
   color: #6E6E73;
 }
 
-.c6 {
+.c7 {
   font-family: ReithSans,Helvetica,Arial,sans-serif;
   font-weight: 700;
   font-style: normal;
@@ -577,23 +583,29 @@ exports[`Bulletin should render live audio correctly 1`] = `
       class="c4"
       dir="ltr"
     >
-      <span
-        class="c5"
-      >
-        Listen LIVE 
-      </span>
-      <span
-        aria-hidden="true"
-        class="c6"
-        dir="ltr"
-      >
-        LIVE
-      </span>
       <a
-        class="c7"
+        class="c5"
         href="https://bbc.co.uk"
       >
-        This is the headline
+        <span
+          role="text"
+        >
+          <span
+            class="c6"
+          >
+            Listen LIVE,
+          </span>
+          <span
+            aria-hidden="true"
+            class="c7"
+            dir="ltr"
+          >
+            LIVE
+          </span>
+          <span>
+            This is the headline
+          </span>
+        </span>
       </a>
     </h3>
     <p
@@ -648,7 +660,7 @@ exports[`Bulletin should render live video correctly 1`] = `
   height: 0.75rem;
 }
 
-.c5 {
+.c6 {
   -webkit-clip-path: inset(100%);
   clip-path: inset(100%);
   -webkit-clip: rect(1px,1px,1px,1px);
@@ -660,14 +672,14 @@ exports[`Bulletin should render live video correctly 1`] = `
   margin: 0;
 }
 
-.c7 {
+.c5 {
   position: static;
   color: #222222;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.c7:before {
+.c5:before {
   bottom: 0;
   content: '';
   left: 0;
@@ -679,17 +691,17 @@ exports[`Bulletin should render live video correctly 1`] = `
   z-index: 1;
 }
 
-.c7:hover,
-.c7:focus {
+.c5:hover,
+.c5:focus {
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
-.c7:visited {
+.c5:visited {
   color: #6E6E73;
 }
 
-.c6 {
+.c7 {
   font-family: ReithSans,Helvetica,Arial,sans-serif;
   font-weight: 700;
   font-style: normal;
@@ -903,23 +915,29 @@ exports[`Bulletin should render live video correctly 1`] = `
       class="c4"
       dir="ltr"
     >
-      <span
-        class="c5"
-      >
-        Watch LIVE 
-      </span>
-      <span
-        aria-hidden="true"
-        class="c6"
-        dir="ltr"
-      >
-        LIVE
-      </span>
       <a
-        class="c7"
+        class="c5"
         href="https://bbc.co.uk"
       >
-        This is the headline
+        <span
+          role="text"
+        >
+          <span
+            class="c6"
+          >
+            Watch LIVE,
+          </span>
+          <span
+            aria-hidden="true"
+            class="c7"
+            dir="ltr"
+          >
+            LIVE
+          </span>
+          <span>
+            This is the headline
+          </span>
+        </span>
       </a>
     </h3>
     <p
@@ -971,7 +989,7 @@ exports[`Bulletin should render video correctly 1`] = `
   height: 0.75rem;
 }
 
-.c5 {
+.c6 {
   -webkit-clip-path: inset(100%);
   clip-path: inset(100%);
   -webkit-clip: rect(1px,1px,1px,1px);
@@ -983,14 +1001,14 @@ exports[`Bulletin should render video correctly 1`] = `
   margin: 0;
 }
 
-.c6 {
+.c5 {
   position: static;
   color: #222222;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.c6:before {
+.c5:before {
   bottom: 0;
   content: '';
   left: 0;
@@ -1002,13 +1020,13 @@ exports[`Bulletin should render video correctly 1`] = `
   z-index: 1;
 }
 
-.c6:hover,
-.c6:focus {
+.c5:hover,
+.c5:focus {
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
-.c6:visited {
+.c5:visited {
   color: #6E6E73;
 }
 
@@ -1217,16 +1235,22 @@ exports[`Bulletin should render video correctly 1`] = `
       class="c4"
       dir="ltr"
     >
-      <span
-        class="c5"
-      >
-        Watch 
-      </span>
       <a
-        class="c6"
+        class="c5"
         href="https://bbc.co.uk"
       >
-        This is the headline
+        <span
+          role="text"
+        >
+          <span
+            class="c6"
+          >
+            Watch,
+          </span>
+          <span>
+            This is the headline
+          </span>
+        </span>
       </a>
     </h3>
     <p

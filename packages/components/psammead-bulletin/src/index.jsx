@@ -207,15 +207,20 @@ const Bulletin = ({
       <ImageWrapper>{image}</ImageWrapper>
       <TextWrapper dir={dir}>
         <BulletinHeading script={script} service={service} dir={dir}>
-          <VisuallyHiddenText>
-            {isLive ? `${ctaText} ${liveText} ` : `${ctaText} `}
-          </VisuallyHiddenText>
-          {isLive && (
-            <LiveLabel service={service} dir={dir}>
-              {liveText}
-            </LiveLabel>
-          )}
-          <Link href={ctaLink}>{headlineText}</Link>
+          <Link href={ctaLink}>
+            {/* eslint-disable jsx-a11y/aria-role */}
+            <span role="text">
+              <VisuallyHiddenText>
+                {isLive ? `${ctaText} ${liveText},` : `${ctaText},`}
+              </VisuallyHiddenText>
+              {isLive && (
+                <LiveLabel service={service} dir={dir}>
+                  {liveText}
+                </LiveLabel>
+              )}
+              <span>{headlineText}</span>
+            </span>
+          </Link>
         </BulletinHeading>
         <BulletinSummary script={script} service={service} type={type}>
           {summaryText}
