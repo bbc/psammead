@@ -3,7 +3,7 @@ import { storiesOf } from '@storybook/react';
 import { withKnobs } from '@storybook/addon-knobs';
 import { withServicesKnob } from '@bbc/psammead-storybook-helpers';
 import Timestamp from '@bbc/psammead-timestamp';
-import { MostReadLink, MostReadRank } from './item';
+import { MostReadLink, MostReadRank } from '.';
 
 const links = [
   {
