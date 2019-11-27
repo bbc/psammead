@@ -22,6 +22,7 @@ const svgsExpectedExports = {
   afrique: 'object',
   amharic: 'object',
   arabic: 'object',
+  archive: 'object',
   azeri: 'object',
   bengali: 'object',
   burmese: 'object',
