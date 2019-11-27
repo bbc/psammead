@@ -1,6 +1,6 @@
 {
   "name": "@bbc/psammead",
-  "version": "2.0.15",
+  "version": "2.0.16",
   "description": "Core Components Library Developed & Maintained By The Articles and Reach & Languages Team",
   "main": "index.js",
   "private": true,
@@ -74,6 +74,7 @@
     "@storybook/react": "^5.2.6",
     "@storybook/theming": "^5.2.6",
     "@testing-library/react": "^9.3.2",
+    "@testing-library/react-hooks": "^3.2.1",
     "babel-core": "^7.0.0-bridge.0",
     "babel-eslint": "^10.0.3",
     "babel-loader": "^8.0.4",
@@ -106,6 +107,7 @@
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "react-helmet": "^5.2.0",
+    "react-test-renderer": "^16.12.0",
     "request": "^2.88.0",
     "semver": "^6.3.0",
     "shelljs": "^0.8.3",
