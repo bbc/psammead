@@ -1,8 +1,7 @@
 import React from 'react';
-import { storiesOf } from '@storybook/react';
-import { withKnobs } from '@storybook/addon-knobs';
-import { withServicesKnob } from '@bbc/psammead-storybook-helpers';
-import MostReadList from './list';
+import { shouldMatchSnapshot } from '@bbc/psammead-test-helpers';
+import { arabic, bengali, burmese, latin } from '@bbc/gel-foundations/scripts';
+import MostReadList from '.';
 
 const itemsLTR = [
   {
@@ -90,64 +89,36 @@ const itemsRTL = [
   },
 ];
 
-const arabicServiceDecorator = withServicesKnob({
-  defaultService: 'arabic',
-});
-
-const bengaliServiceDecorator = withServicesKnob({
-  defaultService: 'bengali',
-});
-
-const burmeseServiceDecorator = withServicesKnob({
-  defaultService: 'burmese',
-});
-
-const newsServiceDecorator = withServicesKnob({
-  defaultService: 'news',
-});
-
-storiesOf('Components|MostRead/List/LTR', module)
-  .addDecorator(withKnobs)
-  .add(`News LTR`, () =>
-    newsServiceDecorator(({ script, service }) => (
-      <MostReadList
-        items={itemsLTR}
-        service={service}
-        script={script}
-        dir="ltr"
-      />
-    )),
-  )
-  .add(`Bengali LTR`, () =>
-    bengaliServiceDecorator(({ script, service }) => (
-      <MostReadList
-        items={itemsLTR}
-        service={service}
-        script={script}
-        dir="ltr"
-      />
-    )),
-  )
-  .add(`Burmese LTR`, () =>
-    burmeseServiceDecorator(({ script, service }) => (
-      <MostReadList
-        items={itemsLTR}
-        service={service}
-        script={script}
-        dir="ltr"
-      />
-    )),
+describe('MostReadList', () => {
+  shouldMatchSnapshot(
+    'should render with ltr news items with correct dir',
+    <MostReadList items={itemsLTR} service="news" script={latin} dir="ltr" />,
   );
-
-storiesOf('Components|MostRead/List/RTL', module)
-  .addDecorator(withKnobs)
-  .add(`Arabic RTL`, () =>
-    arabicServiceDecorator(({ script, service }) => (
-      <MostReadList
-        items={itemsRTL}
-        service={service}
-        script={script}
-        dir="rtl"
-      />
-    )),
+  shouldMatchSnapshot(
+    'should render with rtl arabic items with correct dir',
+    <MostReadList
+      items={itemsRTL}
+      service="arabic"
+      script={arabic}
+      dir="ltr"
+    />,
   );
+  shouldMatchSnapshot(
+    'should render with ltr bengali items with correct dir',
+    <MostReadList
+      items={itemsLTR}
+      service="bengali"
+      script={bengali}
+      dir="ltr"
+    />,
+  );
+  shouldMatchSnapshot(
+    'should render with ltr burmese items with correct dir',
+    <MostReadList
+      items={itemsLTR}
+      service="burmese"
+      script={burmese}
+      dir="ltr"
+    />,
+  );
+});

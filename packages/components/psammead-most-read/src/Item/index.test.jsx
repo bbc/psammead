@@ -2,7 +2,7 @@ import React from 'react';
 import { shouldMatchSnapshot } from '@bbc/psammead-test-helpers';
 import Timestamp from '@bbc/psammead-timestamp';
 import { latin, arabic } from '@bbc/gel-foundations/scripts';
-import { MostReadLink, MostReadRank } from './item';
+import { MostReadLink, MostReadRank } from '.';
 
 const ltrLink = {
   title: 'John Lewis staff bonus cut again as profits fall',
