@@ -27,21 +27,37 @@ describe('Questions', () => {
 
     const descriptionWarning = 'Please enter a valid module description';
 
-    expect(questions[0].validate()).toBe(packageNameWarning);
-    expect(questions[0].validate('9999'.toString())).toBe(packageNameWarning);
-    expect(questions[0].validate('???&&')).toBe(packageNameWarning);
-    expect(questions[0].validate('foo bar')).toBe(packageNameWarning);
-    expect(questions[0].validate('psammead-foobar')).toBe(existingWarning);
-    expect(questions[1].validate()).toBe(descriptionWarning);
-    expect(questions[2].validate()).toBe(authorWarning);
-    expect(questions[3].validate('foobar@foobar')).toBe(emailWarning);
-    expect(questions[3].validate('@.')).toBe(emailWarning);
+    const [
+      ,
+      namePrompt,
+      descriptionPrompt,
+      authorNamePrompt,
+      authorEmailPrompt
+    ] =  questions;
+
+    expect(namePrompt.validate()).toBe(packageNameWarning);
+    expect(namePrompt.validate('9999'.toString())).toBe(packageNameWarning);
+    expect(namePrompt.validate('???&&')).toBe(packageNameWarning);
+    expect(namePrompt.validate('foo bar')).toBe(packageNameWarning);
+    expect(namePrompt.validate('psammead-foobar')).toBe(existingWarning);
+    expect(descriptionPrompt.validate()).toBe(descriptionWarning);
+    expect(authorNamePrompt.validate()).toBe(authorWarning);
+    expect(authorEmailPrompt.validate('foobar@foobar')).toBe(emailWarning);
+    expect(authorEmailPrompt.validate('@.')).toBe(emailWarning);
   });
 
   it('should pass the validation checks', () => {
-    expect(questions[0].validate('new-package')).toBe(true);
-    expect(questions[1].validate('a lovely description')).toBe(true);
-    expect(questions[2].validate('Test User')).toBe(true);
-    expect(questions[3].validate('testUser@bbc.co.uk')).toBe(true);
+    const [
+      ,
+      namePrompt,
+      descriptionPrompt,
+      authorNamePrompt,
+      authorEmailPrompt
+    ] =  questions;
+
+    expect(namePrompt.validate('new-package')).toBe(true);
+    expect(descriptionPrompt.validate('a lovely description')).toBe(true);
+    expect(authorNamePrompt.validate('Test User')).toBe(true);
+    expect(authorEmailPrompt.validate('testUser@bbc.co.uk')).toBe(true);
   });
 });
