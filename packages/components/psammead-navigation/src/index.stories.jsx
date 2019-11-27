@@ -14,9 +14,10 @@ import { C_POSTBOX, C_WHITE } from '@bbc/psammead-styles/colours';
 import Brand from '@bbc/psammead-brand';
 import { withServicesKnob } from '@bbc/psammead-storybook-helpers';
 import Navigation, { NavigationUl, NavigationLi } from './index';
+import { ampDecorator } from '../../../../.storybook/config';
 import {
-  CanonicalHamburgerMenu,
-  AmpHamburgerMenu,
+  CanonicalMenuButton,
+  AmpMenuButton,
   CanonicalDropdown,
   AmpDropdown,
   DropdownUl,
@@ -186,13 +187,9 @@ const dropdownStory = type => ({ dir, script, service }) => {
   );
 
   return type === 'canonical' ? (
-    <CanonicalDropdown announcedText="Menu" onClose={() => {}}>
-      {dropdownList}
-    </CanonicalDropdown>
+    <CanonicalDropdown>{dropdownList}</CanonicalDropdown>
   ) : (
-    <AmpDropdown announcedText="Menu" onClose="">
-      {dropdownList}
-    </AmpDropdown>
+    <AmpDropdown>{dropdownList}</AmpDropdown>
   );
 };
 
@@ -201,6 +198,7 @@ const storiesWithoutBrand = storiesOf(
   module,
 )
   .addDecorator(withKnobs)
+  .addDecorator(ampDecorator)
   .addDecorator(withServicesKnob());
 
 navStoriesData.map(item => {
@@ -215,10 +213,15 @@ navStoriesData.map(item => {
 });
 
 storiesWithoutBrand.add(
-  'Canonical Hamburger menu',
+  'Canonical Closed Menu',
   () => (
     <BackgroundContainer>
-      <CanonicalHamburgerMenu announcedText="Menu" onOpen={() => {}} />
+      <CanonicalMenuButton
+        announcedText="Menu"
+        onOpen={() => {}}
+        isOpen={false}
+        onClose={() => {}}
+      />
     </BackgroundContainer>
   ),
   {
@@ -227,10 +230,27 @@ storiesWithoutBrand.add(
 );
 
 storiesWithoutBrand.add(
-  'AMP Hamburger menu',
+  'Canonical Open Menu',
   () => (
     <BackgroundContainer>
-      <AmpHamburgerMenu announcedText="Menu" onOpen="" />
+      <CanonicalMenuButton
+        announcedText="Menu"
+        onOpen={() => {}}
+        isOpen
+        onClose={() => {}}
+      />
+    </BackgroundContainer>
+  ),
+  {
+    notes,
+  },
+);
+
+storiesWithoutBrand.add(
+  'AMP Menu Button',
+  () => (
+    <BackgroundContainer>
+      <AmpMenuButton announcedText="Menu" onToggle="" />
     </BackgroundContainer>
   ),
   {
