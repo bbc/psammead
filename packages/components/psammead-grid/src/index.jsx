@@ -208,7 +208,6 @@ const outerGridFallback = (
   gridStartOffsetGroup,
 ) => `
   ${marginsGroup ? `padding: 0 ${marginSize};` : ``}
-  ${enableGelGutters ? `margin: 0 -${parseFloat(gutterSize) / 2}rem;` : ``}
   ${
     gridStartOffset && gridStartOffsetGroup < columnsGroup
       ? `margin-${dir === 'ltr' ? 'left' : 'right'}: ${startOffsetPercentage(
