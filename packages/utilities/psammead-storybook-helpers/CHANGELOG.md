@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 8.1.4 | [PR#2704](https://github.com/bbc/psammead/pull/2704) Add longText to TEXT_EXAMPLES and add value to storyProp |
 | 8.1.3 | [PR#2704](https://github.com/bbc/psammead/pull/2704) Add default value to variant |
 | 8.1.2 | [PR#2695](https://github.com/bbc/psammead/pull/2695) Correct the variant value in the serbian TEXT_EXAMPLE  |
 | 8.1.1 | [PR#2691](https://github.com/bbc/psammead/pull/2691) Remove `chineseTrad` & `chineseSimp` example as Zhongwen example covers it.  |
