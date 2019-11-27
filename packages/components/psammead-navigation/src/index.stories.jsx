@@ -222,34 +222,20 @@ navStoriesData.map(item => {
 });
 
 storiesWithoutBrand.add(
-  'Canonical Closed Menu',
-  () => (
-    <BackgroundContainer>
-      <CanonicalMenuButton
-        announcedText="Menu"
-        onOpen={() => {}}
-        isOpen={false}
-        onClose={() => {}}
-      />
-    </BackgroundContainer>
-  ),
-  {
-    notes,
+  'Canonical Menu Button',
+  () => {
+    const isOpen = boolean('Open', true);
+    return (
+      <BackgroundContainer>
+        <CanonicalMenuButton
+          announcedText="Menu"
+          onOpen={() => {}}
+          isOpen={isOpen}
+          onClose={() => {}}
+        />
+      </BackgroundContainer>
+    );
   },
-);
-
-storiesWithoutBrand.add(
-  'Canonical Open Menu',
-  () => (
-    <BackgroundContainer>
-      <CanonicalMenuButton
-        announcedText="Menu"
-        onOpen={() => {}}
-        isOpen
-        onClose={() => {}}
-      />
-    </BackgroundContainer>
-  ),
   {
     notes,
   },
@@ -267,11 +253,7 @@ storiesWithoutBrand.add(
   },
 );
 
-storiesWithoutBrand.add('Canonical Dropdown menu', dropdownStory(), {
-  notes,
-});
-
-storiesWithoutBrand.add('AMP Dropdown menu', dropdownStory(), {
+storiesWithoutBrand.add('Dropdown menu', dropdownStory(), {
   notes,
 });
 
