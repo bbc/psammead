@@ -65,12 +65,8 @@ const Banner = styled.div`
         16}rem;`}
   }
 
-  border-top: ${({ borderTop }) => borderTop && TRANSPARENT_BORDER}; 
-  /* ${({ borderTop }) =>
-    borderTop ? `border-top: ${TRANSPARENT_BORDER};` : ``} */
-  border-bottom: ${({ borderTop }) => borderTop && TRANSPARENT_BORDER};
-  /* border-bottom: ${({ borderBottom }) =>
-    borderBottom && TRANSPARENT_BORDER}; */
+  border-top: ${({ borderTop }) => borderTop && TRANSPARENT_BORDER};
+  border-bottom: ${({ borderBottom }) => borderBottom && TRANSPARENT_BORDER};
 `;
 
 const brandWidth = (minWidth, maxWidth) => `
