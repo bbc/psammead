@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 3.0.7 | [PR#2699](https://github.com/bbc/psammead/pull/2699) Talos - Bump Dependencies - @bbc/psammead-styles |
 | 3.0.6 | [PR#2519](https://github.com/bbc/psammead/pull/2519) Talos - Bump Dependencies - @bbc/psammead-styles |
 | 3.0.5 | [PR#2466](https://github.com/bbc/psammead/pull/2466) create rtl substories |
 | 3.0.4 | [PR#2488](https://github.com/bbc/psammead/pull/2488) Talos - Bump Dependencies - @bbc/gel-foundations |
