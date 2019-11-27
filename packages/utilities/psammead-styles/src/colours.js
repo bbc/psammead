@@ -24,3 +24,4 @@ export const C_CONSENT_CONTENT = '#BEBEBE';
 export const C_ORBIT_GREY = '#4C4C4C';
 export const C_DARK_SALTIRE = '#23104C';
 export const C_WEATHER_BLUE = '#067EB3';
+export const C_ARCHIVE_BLUE = '#3A549C';
