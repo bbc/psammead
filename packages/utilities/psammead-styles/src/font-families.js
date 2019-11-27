@@ -359,6 +359,7 @@ export const afaanoromoo = helmetFontStyles;
 export const afrique = helmetFontStyles;
 export const amharic = amharicStyles;
 export const arabic = nassimFontStyles(nassimArabicFontFamily);
+export const archive = latinReithFontStyles;
 export const azeri = helmetFontStyles;
 export const bengali = bengaliStyles;
 export const burmese = burmeseStyles;

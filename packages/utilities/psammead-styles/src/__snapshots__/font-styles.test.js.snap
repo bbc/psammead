@@ -32,6 +32,14 @@ exports[`should render SansBold correctly for arabic 1`] = `
   "
 `;
 
+exports[`should render SansBold correctly for archive 1`] = `
+"
+   font-family: ReithSans, Helvetica, Arial, sans-serif;
+   font-weight: 700;
+   font-style: normal;
+  "
+`;
+
 exports[`should render SansBold correctly for azeri 1`] = `
 "
     font-family: Helmet, Freesans, Helvetica, Arial, sans-serif;
@@ -400,6 +408,14 @@ exports[`should render SansBoldItalic correctly for arabic 1`] = `
   "
 `;
 
+exports[`should render SansBoldItalic correctly for archive 1`] = `
+"
+   font-family: ReithSans, Helvetica, Arial, sans-serif;
+   font-weight: 700;
+   font-style: italic;
+  "
+`;
+
 exports[`should render SansBoldItalic correctly for azeri 1`] = `
 "
     font-family: Helmet, Freesans, Helvetica, Arial, sans-serif;
@@ -764,6 +780,14 @@ exports[`should render SansLight correctly for arabic 1`] = `
 "
     font-family: \\"BBC Nassim Arabic\\", Arial, Verdana, Geneva, Helvetica, sans-serif;
     font-weight: 400;
+   font-style: normal;
+  "
+`;
+
+exports[`should render SansLight correctly for archive 1`] = `
+"
+   font-family: ReithSans, Helvetica, Arial, sans-serif;
+   font-weight: 300;
    font-style: normal;
   "
 `;
@@ -1136,6 +1160,14 @@ exports[`should render SansRegular correctly for arabic 1`] = `
   "
 `;
 
+exports[`should render SansRegular correctly for archive 1`] = `
+"
+   font-family: ReithSans, Helvetica, Arial, sans-serif;
+   font-weight: 400;
+   font-style: normal; 
+  "
+`;
+
 exports[`should render SansRegular correctly for azeri 1`] = `
 "
     font-family: Helmet, Freesans, Helvetica, Arial, sans-serif;
@@ -1504,6 +1536,14 @@ exports[`should render SansRegularItalic correctly for arabic 1`] = `
   "
 `;
 
+exports[`should render SansRegularItalic correctly for archive 1`] = `
+"
+   font-family: ReithSans, Helvetica, Arial, sans-serif;
+   font-weight: 400;
+   font-style: italic; 
+  "
+`;
+
 exports[`should render SansRegularItalic correctly for azeri 1`] = `
 "
     font-family: Helmet, Freesans, Helvetica, Arial, sans-serif;
@@ -1867,6 +1907,14 @@ exports[`should render SerifBold correctly for amharic 1`] = `
 exports[`should render SerifBold correctly for arabic 1`] = `
 "
     font-family: \\"BBC Nassim Arabic\\", Arial, Verdana, Geneva, Helvetica, sans-serif;
+    font-weight: 700;
+   font-style: normal;
+  "
+`;
+
+exports[`should render SerifBold correctly for archive 1`] = `
+"
+    font-family: ReithSerif, Helvetica, Arial, sans-serif;
     font-weight: 700;
    font-style: normal;
   "
@@ -2240,6 +2288,14 @@ exports[`should render SerifLight correctly for arabic 1`] = `
   "
 `;
 
+exports[`should render SerifLight correctly for archive 1`] = `
+"
+   font-family: ReithSerif, Helvetica, Arial, sans-serif;
+   font-weight: 300;
+   font-style: normal;
+  "
+`;
+
 exports[`should render SerifLight correctly for azeri 1`] = `
 "
     font-family: Helmet, Freesans, Helvetica, Arial, sans-serif;
@@ -2605,6 +2661,14 @@ exports[`should render SerifMedium correctly for arabic 1`] = `
     font-family: \\"BBC Nassim Arabic\\", Arial, Verdana, Geneva, Helvetica, sans-serif;
     font-weight: 700;
    font-style: normal;
+  "
+`;
+
+exports[`should render SerifMedium correctly for archive 1`] = `
+"
+   font-family: ReithSerif, Helvetica, Arial, sans-serif;
+   font-weight: 500;
+   font-style: normal; 
   "
 `;
 
@@ -2976,6 +3040,14 @@ exports[`should render SerifMediumItalic correctly for arabic 1`] = `
   "
 `;
 
+exports[`should render SerifMediumItalic correctly for archive 1`] = `
+"
+   font-family: ReithSerif, Helvetica, Arial, sans-serif;
+   font-weight: 500;
+   font-style: italic;
+  "
+`;
+
 exports[`should render SerifMediumItalic correctly for azeri 1`] = `
 "
     font-family: Helmet, Freesans, Helvetica, Arial, sans-serif;
@@ -3340,6 +3412,14 @@ exports[`should render SerifRegular correctly for arabic 1`] = `
 "
     font-family: \\"BBC Nassim Arabic\\", Arial, Verdana, Geneva, Helvetica, sans-serif;
     font-weight: 400;
+   font-style: normal;
+  "
+`;
+
+exports[`should render SerifRegular correctly for archive 1`] = `
+"
+   font-family: ReithSerif, Helvetica, Arial, sans-serif;
+   font-weight: 400;
    font-style: normal;
   "
 `;
