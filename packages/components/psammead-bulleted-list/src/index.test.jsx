@@ -17,6 +17,14 @@ const rtlProps = {
 
 describe('PsammeadBulletedList', () => {
   shouldMatchSnapshot(
+    `should not use default bullet styling so that screen readers don't read out "bullet"'`,
+    <BulletedList {...ltrProps}>
+      <li>No bullets</li>
+      <li>Mentioned</li>
+    </BulletedList>,
+  );
+
+  shouldMatchSnapshot(
     'should render correctly from ltr',
     <BulletedList {...ltrProps}>
       <li>First item on the list</li>
