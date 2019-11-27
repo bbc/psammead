@@ -82,6 +82,14 @@ exports[`Media Player: Guidance should render no-js styles when noJsClassName pr
   background-color: rgba(34,34,34,0.75);
 }
 
+.no-js .c0 {
+  background-color: rgba(34,34,34,0.75);
+}
+
+.no-js .c0 .guidance-message {
+  display: none;
+}
+
 .c1 {
   display: block;
   font-weight: normal;
@@ -92,7 +100,6 @@ exports[`Media Player: Guidance should render no-js styles when noJsClassName pr
 .c2 {
   position: absolute;
   bottom: 0;
-  display: none;
 }
 
 @media (min-width:37.5rem) {
@@ -103,6 +110,12 @@ exports[`Media Player: Guidance should render no-js styles when noJsClassName pr
 
 @media screen and (-ms-high-contrast:active) {
   .c0 {
+    background-color: transparent;
+  }
+}
+
+@media screen and (-ms-high-contrast:active) {
+  .no-js .c0 {
     background-color: transparent;
   }
 }

@@ -41,6 +41,7 @@ const Placeholder = ({
   srcset,
   mediaInfo,
   noJsClassName,
+  noJsMessage,
 }) => {
   const {
     title,
@@ -56,8 +57,8 @@ const Placeholder = ({
       <Guidance
         service={service}
         guidanceMessage={guidanceMessage}
-        type={type}
         noJsClassName={noJsClassName}
+        noJsMessage={noJsMessage}
       />
       <StyledPlayButton
         title={title}
@@ -82,6 +83,7 @@ Placeholder.propTypes = {
   src: string.isRequired,
   srcset: string,
   noJsClassName: string,
+  noJsMessage: string.isRequired,
   mediaInfo: shape({
     title: string.isRequired,
     datetime: string,

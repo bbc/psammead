@@ -8,7 +8,6 @@ describe('Media Player: Guidance', () => {
     <Guidance
       guidanceMessage="Guidance: Contains strong language with adult humor"
       service="news"
-      type="video"
     />,
   );
 
@@ -17,7 +16,8 @@ describe('Media Player: Guidance', () => {
     <Guidance
       guidanceMessage="Guidance: Contains strong language with adult humor"
       service="news"
-      type="video"
+      noJsMessage="This media cannot play in your browser. Please enable Javascript or a different browser."
+      noJsClassName="no-js"
     />,
   );
 });

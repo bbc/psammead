@@ -123,6 +123,7 @@ describe('Media Player: Canonical Entry', () => {
       }}
       title="Media player"
       noJsClassName="no-js"
+      noJsMessage="This media cannot play in your browser. Please enable Javascript or a different browser."
     />,
   );
 });

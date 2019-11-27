@@ -1,5 +1,5 @@
 import React from 'react';
-import { string, oneOf } from 'prop-types';
+import { string } from 'prop-types';
 import styled, { css } from 'styled-components';
 import { C_WHITE } from '@bbc/psammead-styles/colours';
 import { GEL_SPACING_DBL, GEL_SPACING } from '@bbc/gel-foundations/spacings';
@@ -18,12 +18,13 @@ const GuidanceWrapper = styled.div`
   border: 0.0625rem solid transparent;
   color: ${C_WHITE};
   ${({ guidanceMessage }) =>
-    guidanceMessage ? `background-color: ${GUIDANCE_BACKGROUND};` : ``}
-
-  @media screen and (-ms-high-contrast: active) {
-    ${({ guidanceMessage }) =>
-      guidanceMessage ? `background-color: transparent;` : ``}
-  }
+    guidanceMessage
+      ? `
+    background-color: ${GUIDANCE_BACKGROUND};
+    @media screen and (-ms-high-contrast: active) {
+      background-color: transparent;
+    }`
+      : ``}
 
   ${({ noJsClassName }) =>
     noJsClassName &&
@@ -63,7 +64,7 @@ const StyledNoScript = styled.noscript`
     `}
 `;
 
-const Guidance = ({ guidanceMessage, service, type, noJsClassName }) => (
+const Guidance = ({ guidanceMessage, service, noJsMessage, noJsClassName }) => (
   <GuidanceWrapper
     service={service}
     guidanceMessage={guidanceMessage}
@@ -75,10 +76,7 @@ const Guidance = ({ guidanceMessage, service, type, noJsClassName }) => (
       </GuidanceMessage>
     )}
     <StyledNoScript noJsClassName={noJsClassName}>
-      <GuidanceMessage>
-        This {type} cannot play in your browser. Please enable Javascript or
-        different browser.
-      </GuidanceMessage>
+      <GuidanceMessage>{noJsMessage}</GuidanceMessage>
     </StyledNoScript>
   </GuidanceWrapper>
 );
@@ -86,7 +84,7 @@ const Guidance = ({ guidanceMessage, service, type, noJsClassName }) => (
 Guidance.propTypes = {
   guidanceMessage: string,
   service: string.isRequired,
-  type: oneOf(['video', 'audio']).isRequired,
+  noJsMessage: string.isRequired,
   noJsClassName: string,
 };
 
