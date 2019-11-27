@@ -3,6 +3,8 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 1.0.0-alpha.10 | [PR#2697](https://github.com/bbc/psammead/pull/2697) Talos - Bump Dependencies - @bbc/psammead-styles |
+| 1.0.0-alpha.9 | [PR#2685](https://github.com/bbc/psammead/pull/2685) Use border on hover and focus |
 | 1.0.0-alpha.8 | [PR#2569](https://github.com/bbc/psammead/pull/2569) Reduce height of Script link for 600px+ breakpoints |
 | 1.0.0-alpha.7 | [PR#2519](https://github.com/bbc/psammead/pull/2519) Talos - Bump Dependencies - @bbc/psammead-styles |
 | 1.0.0-alpha.6 | [PR#2488](https://github.com/bbc/psammead/pull/2488) Talos - Bump Dependencies - @bbc/gel-foundations |
