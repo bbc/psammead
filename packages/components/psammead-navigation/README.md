@@ -10,10 +10,7 @@ The `@bbc/psammead-navigation` package is a set of two components, `NavigationUl
 
 ## Exports
 
-`/dropdown` - adds a dropdown navigation with hamburger menu which is visible for breakpoints under 600px
-
-## Exports
-
+`/dropdown` - Adds a dropdown navigation with hamburger menu which is visible for breakpoints under 600px
 `/scrollable` - Makes the navigation to be scrollable under 600px.
 
 ## Installation
@@ -68,23 +65,12 @@ The `@bbc/psammead-navigation` package is a set of two components, `NavigationUl
 | children | node | Yes      | N/A     | `<NavigationUl><NavigationLi url="/" script={latin} active="true">Home</NavigationLi><NavigationLi url="/sport" script={latin}>{Sport}</NavigationLi></NavigationUl>` |
 | dir      | string  | No       | `'ltr'`   | `'rtl'` |
 
-### CanonicalDropdown
+### Dropdown
 
 <!-- prettier-ignore -->
 | Argument | Type | Required | Default | Example |
 | -------- | ---- | -------- | ------- | ------- |
 | children | node | Yes | N/A | `<DropdownUl><DropdownLi script={latin} service='news' key='sport' url='/sport' active="false"> Sport </DropdownLi></DropdownUl>` |
-| announcedText | string | Yes | N/A | `'Menu'` |
-| onClose | function | Yes | N/A | `() => { console.log("Handle close action"); }` |
-
-### AmpDropdown
-
-<!-- prettier-ignore -->
-| Argument | Type | Required | Default | Example |
-| -------- | ---- | -------- | ------- | ------- |
-| children | node | Yes | N/A | `<DropdownUl><DropdownLi script={latin} service='news' key='sport' url='/sport' active="false"> Sport </DropdownLi></DropdownUl>` |
-| announcedText | string | Yes | N/A | `'Menu'` |
-| onClose | string | Yes | N/A | `"tap:menu.toggleVisibility"` |
 
 ### DropdownLi
 
@@ -99,21 +85,23 @@ The `@bbc/psammead-navigation` package is a set of two components, `NavigationUl
 | currentPageText | string | No | `null` | `Current page` |
 | dir | string | No | `ltr` | `rtl` |
 
-### CanonicalHamburgerMenu
+### CanonicalMenuButton
 
 <!-- prettier-ignore -->
 | Argument | Type | Required | Default | Example |
 | -------- | ---- | -------- | ------- | ------- |
 | announcedText | string | Yes | N/A | `'Menu'` |
 | onOpen | function | Yes | N/A | `() => { console.log("Handle open action"); }` |
+| onClose | function | Yes | N/A | `() => { console.log("Handle close action"); }` |
+| isOpen | bool | Yes | N/A | `false` |
 
-### AmpHamburgerMenu
+### AmpMenuButton
 
 <!-- prettier-ignore -->
 | Argument | Type | Required | Default | Example |
 | -------- | ---- | -------- | ------- | ------- |
 | announcedText | string | Yes | N/A | `'Menu'` |
-| onOpen | string | Yes | N/A | `"tap:menu.toggleVisibility"` |
+| onToggle | string | Yes | N/A | `"tap:menu.toggleVisibility"` |
 
 ## Navigation Usage
 
@@ -149,14 +137,14 @@ import { latin } from '@bbc/gel-foundations/scripts';
 </Navigation>;
 ```
 
-## Canonical Dropdown Navigation Usage
+## Dropdown Navigation Usage
 
 ```jsx
 import React from 'react';
-import { CanonicalDropdown, DropdownUl, DropdownLi } from '@bbc/psammead-navigation/dropdown';
+import { Dropdown, DropdownUl, DropdownLi } from '@bbc/psammead-navigation/dropdown';
 import { latin } from '@bbc/gel-foundations/scripts';
 
-<CanonicalDropdown announcedText="Menu" onClose={() => {}}>
+<Dropdown>
   <DropdownUl>
     <DropdownLi
         script={latin}
@@ -172,51 +160,30 @@ import { latin } from '@bbc/gel-foundations/scripts';
       Sport
     </DropdownLi>
   </DropdownUl>
-</CanonicalDropdown>
+</Dropdown>
 ```
 
-## Amp Dropdown Navigation Usage
+## Canonical Menu Button Usage
 
 ```jsx
 import React from 'react';
-import { AmpDropdown, DropdownUl, DropdownLi } from '@bbc/psammead-navigation/dropdown';
-import { latin } from '@bbc/gel-foundations/scripts';
+import { CanonicalMenuButton } from '@bbc/psammead-navigation/dropdown';
 
-<AmpDropdown announcedText="Menu" onClose="tap:menu.toggleVisibility">
-  <DropdownUl>
-    <DropdownLi
-        script={latin}
-        service="news"
-        key="Home"
-        url="/"
-        active
-        currentPageText="Current page"
-    >
-      Home
-    </DropdownLi>
-    <DropdownLi script={latin} service="news" key="Sport" url="/sport">
-      Sport
-    </DropdownLi>
-  </DropdownUl>
-</AmpDropdown>
+<CanonicalMenuButton 
+    announcedText="Menu"
+    isOpen={true}
+    onOpen={() => { console.log("Handle open action"); }}
+    onClose={() => { console.log("Handle close action"); }} 
+/>
 ```
 
-## Canonical Hamburger Menu Usage
+## Amp Menu Button Usage
 
 ```jsx
 import React from 'react';
-import { CanonicalHamburgerMenu } from '@bbc/psammead-navigation/dropdown';
+import { AmpMenuButton } from '@bbc/psammead-navigation/dropdown';
 
-<CanonicalHamburgerMenu announcedText="Menu" onOpen={() => { console.log("Handle open action"); }} />
-```
-
-## Amp Hamburger Menu Usage
-
-```jsx
-import React from 'react';
-import { AmpHamburgerMenu } from '@bbc/psammead-navigation/dropdown';
-
-<AmpHamburgerMenu announcedText="Menu" onOpen="tap:menu.toggleVisibility" />
+<AmpMenuButton announcedText="Menu" onToggle="tap:menu.toggleVisibility" />
 ```
 
 ### When to use this component
@@ -233,7 +200,7 @@ We have added the role `list` and `listitem` to the `NavigationUl` and `Navigati
 
 We have also added visually hidden text to let the user know which item in both regular and dropdown Navigation is the current page. Note the use of visually hidden text here is due to lack of support at this time for the aria-current page attribute. Also note the use of `role="text"` to stop text splitting in VoiceOver.
 
-We have added an `aria-expanded` attribute to both Hamburger and Cross menu buttons to indicate whether the menu is collapsed or expanded.
+We have added an `aria-expanded` attribute to the menu button to indicate whether the menu is collapsed or expanded.
 
 In the screen reader UX only the menu button and its content should be available to assistive technology, meaning the scrollable navigation will be hidden. To achieve this we add `aria-hidden:true` to the exposed scrollable navigation so that this is not visible to these users and also add `tabindex=-1` to the links contained within this to remove them from the tab order.
 
