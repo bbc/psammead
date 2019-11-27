@@ -7,7 +7,7 @@
   "description": "<%= description %>",
   "repository": {
     "type": "git",
-    "url": "https://github.com/BBC-News/psammead/tree/latest/packages/components/psammead-<%= name %>"
+    "url": "https://github.com/BBC-News/psammead/tree/latest/packages/containers/psammead-<%= name %>"
   },
   "author": {
     "name": "<%= authorName %>",
@@ -17,7 +17,7 @@
   "bugs": {
     "url": "https://github.com/bbc/psammead/issues"
   },
-  "homepage": "https://github.com/BBC-News/psammead/blob/latest/packages/components/psammead-<%= name %>/README.md",
+  "homepage": "https://github.com/BBC-News/psammead/blob/latest/packages/containers/psammead-<%= name %>/README.md",
   "dependencies": {},
   "peerDependencies": {
     "react": "<%= dependencies.react %>"
