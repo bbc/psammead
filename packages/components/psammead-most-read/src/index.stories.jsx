@@ -14,6 +14,7 @@ import {
   burmeseServiceDecorator,
   newsServiceDecorator,
 } from './testHelpers/stories';
+import MostRead from './index';
 
 const renderLTRList = ({ service, script }) => (
   <MostReadList items={itemsLTR} service={service} script={script} dir="ltr" />
@@ -115,6 +116,31 @@ storiesOf('Components|MostRead/Title', module)
         script={script}
         service={service}
         dir="rtl"
+      />
+    )),
+  );
+
+storiesOf('Components|MostRead', module)
+  .addDecorator(withKnobs)
+  .add('default LTR', () =>
+    newsServiceDecorator(({ script, service }) => (
+      <MostRead
+        items={itemsLTR}
+        service={service}
+        script={script}
+        dir="ltr"
+        header="Most Read"
+      />
+    )),
+  )
+  .add('default RTL', () =>
+    arabicServiceDecorator(({ script, service }) => (
+      <MostRead
+        items={itemsRTL}
+        service={service}
+        script={script}
+        dir="rtl"
+        header="الأكثر قراءة"
       />
     )),
   );
