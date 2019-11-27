@@ -28,7 +28,7 @@ module.exports = class extends Generator {
   paths() {
     this.log(chalk.blue('Creating your package folder...'));
 
-    const destination = `./packages/components/psammead-${this.props.name}`;
+    const destination = `./packages/${this.props.kind}/psammead-${this.props.name}`;
     shell.mkdir('-p', destination);
     this.destinationRoot(destination);
     this.sourceRoot(`${__dirname}/templates`);
@@ -57,7 +57,7 @@ module.exports = class extends Generator {
   end() {
     this.log(
       chalk.green(
-        `Success! You can now start developing on your new Psammead component.\nYour new package can be found here: ./packages/components/psammead-${this.props.name}`,
+        `Success! You can now start developing on your new Psammead package.\nYour new package can be found here: ./packages/${this.props.kind}/psammead-${this.props.name}`,
       ),
     );
   }
