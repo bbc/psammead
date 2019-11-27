@@ -6,6 +6,7 @@ export afaanoromoo from './svgs/afaanoromoo';
 export afrique from './svgs/afrique';
 export amharic from './svgs/amharic';
 export arabic from './svgs/arabic';
+export archive from './svgs/archive';
 export azeri from './svgs/azeri';
 export bengali from './svgs/bengali';
 export burmese from './svgs/burmese';
