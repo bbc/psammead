@@ -3,6 +3,10 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 2.0.14 | [PR#2615](https://github.com/bbc/psammead/pull/2611) Improve yeoman generator, to specify template types |
+| 2.0.13 | [PR#2687](https://github.com/bbc/psammead/pull/2687) Talos - Bump Dependencies - @bbc/psammead-storybook-helpers |
+| 2.0.12 | [PR#2666](https://github.com/bbc/psammead/pull/2666) Install Ramda as a dev dependencies at the root package.json |
+| 2.0.11 | [PR#2681](https://github.com/bbc/psammead/pull/2681) Talos - Bump Dependencies - @bbc/psammead-storybook-helpers |
 | 2.0.10 | [PR#2666](https://github.com/bbc/psammead/pull/2666) Talos - Bump Dependencies - @bbc/psammead-image-placeholder, @bbc/psammead-media-indicator |
 | 2.0.9 | [PR#2657](https://github.com/bbc/psammead/pull/2657) Update codeowners |
 | 2.0.8 | [PR#2663](https://github.com/bbc/psammead/pull/2663) Talos - Bump Dependencies - @bbc/psammead-assets |
