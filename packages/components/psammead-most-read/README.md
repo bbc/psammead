@@ -15,6 +15,45 @@ The `MostRead` component is designed to display the most read articles given a d
 
 ## Components (WIP)
 
+## MostRead
+### Props
+
+<!-- prettier-ignore -->
+| Argument | Type | Required | Default | Example |
+| -------- | ---- | -------- | ------- | ------- |
+| items | array | yes | N/A | `[{ title: 'This is a headline', href: 'https://www.bbc.com' }]`
+| header | string | yes | N/A | `'Most Read'` |
+| service | string | yes | N/A | `'news'` |
+| script | object | yes | N/A | `{ canon: { groupA: { fontSize: '28', lineHeight: '32',}, groupB: { fontSize: '32', lineHeight: '36', }, groupD: { fontSize: '44', lineHeight: '48', }, }, trafalgar: { groupA: { fontSize: '20', lineHeight: '24', }, groupB: { fontSize: '24', lineHeight: '28', }, groupD: { fontSize: '32', lineHeight: '36', }, }, }` |
+| dir | string | yes | 'ltr' | `'ltr'`|
+
+### Usage
+
+```jsx
+import React from 'react';
+import MostRead from '@bbc/psammead-most-read;
+import { latin } from '@bbc/gel-foundations/scripts'
+
+const itemsLTR = [
+  {
+    title: 'John Lewis staff bonus cut again as profits fall',
+    href: 'https://www.bbc.com/vietnamese/institutional-49283563',
+  },
+  {
+    title: 'John Lewis staff bonus cut again as profits fall',
+    href: 'https://www.bbc.com/vietnamese/institutional-49283563',
+  },
+];
+
+<MostRead
+items={itemsLTR}
+service="news"
+header="Most Read"
+script={latin}
+dir="ltr"
+/>
+
+```
 ## MostReadList
 ### Props
 
@@ -30,7 +69,7 @@ The `MostRead` component is designed to display the most read articles given a d
 
 ```jsx
 import React from 'react';
-import MostReadList from './list';
+import MostReadList from '@bbc/psammead-most-read/List';
 import { latin } from '@bbc/gel-foundations/scripts'
 
 const itemsLTR = [
@@ -72,7 +111,7 @@ A typical use-case of this component is as displayed below. It contains an info 
 ```jsx
 import React from 'react';
 import { latin } from '@bbc/gel-foundations/scripts';
-import { MostReadLink } from '@bbc/psammead-most-read/esm/item';
+import { MostReadLink } from '@bbc/psammead-most-read/Item';
 
 const item = {
     title: 'Cranberries singer O'Riordan died by drowning,
@@ -89,7 +128,7 @@ const item = {
 import React from 'react';
 import { latin } from '@bbc/gel-foundations/scripts';
 import Timestamp from '@bbc/psammead-timestamp-container';
-import { MostReadLink } from '@bbc/psammead-most-read/esm/item';
+import { MostReadLink } from '@bbc/psammead-most-read/Item';
 
 const item = {
     title: 'Cranberries singer O'Riordan died by drowning,
@@ -131,7 +170,7 @@ const lastUpdated = (script, service) => (
 ```jsx
 import React from 'react';
 import { latin } from '@bbc/gel-foundations/scripts';
-import { MostReadRank } from '@bbc/psammead-most-read/esm/item';
+import { MostReadRank } from '@bbc/psammead-most-read/Item';
 
 <MostReadRank script={latin} service="news">10</MostReadRank>;
 
@@ -152,7 +191,7 @@ import { MostReadRank } from '@bbc/psammead-most-read/esm/item';
 ```jsx
 import React from 'react';
 import { latin } from '@bbc/gel-foundations/scripts';
-import { MostReadTitle } from '@bbc/psammead-most-read/esm/title';
+import { MostReadTitle } from '@bbc/psammead-most-read/Title';
 
 <MostReadTitle header="Most Read" script={latin} service="news" </MostReadTitle>;
 
