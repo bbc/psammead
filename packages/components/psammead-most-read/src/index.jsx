@@ -1,6 +1,6 @@
 import React from 'react';
 import { arrayOf, oneOf, shape, string } from 'prop-types';
-import { scriptPropType } from '@bbc/gel-foundations/esm/prop-types';
+import { scriptPropType } from '@bbc/gel-foundations/prop-types';
 import MostReadList, { itemPropTypes } from './List';
 import MostReadTitle from './Title';
 

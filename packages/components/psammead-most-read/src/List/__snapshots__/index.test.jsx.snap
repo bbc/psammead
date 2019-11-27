@@ -2019,7 +2019,7 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
 
 .c7 {
   padding-bottom: 1.5rem;
-  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .c5 {
@@ -2306,7 +2306,7 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
 @media (min-width:80rem) {
   .c7 {
     padding-top: 0.5rem;
-    padding-left: 2rem;
+    padding-right: 2rem;
   }
 }
 
@@ -2333,16 +2333,16 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
   >
     <div
       class="c2"
-      dir="ltr"
+      dir="rtl"
     >
       <div
         as="li"
         class="c3"
-        dir="ltr"
+        dir="rtl"
       >
         <div
           class="c4"
-          dir="ltr"
+          dir="rtl"
         >
           <span
             class="c5"
@@ -2352,11 +2352,11 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
         </div>
         <div
           class="c6"
-          dir="ltr"
+          dir="rtl"
         >
           <div
             class="c7"
-            dir="ltr"
+            dir="rtl"
           >
             <a
               class="c8"
@@ -2370,11 +2370,11 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
       <div
         as="li"
         class="c3"
-        dir="ltr"
+        dir="rtl"
       >
         <div
           class="c4"
-          dir="ltr"
+          dir="rtl"
         >
           <span
             class="c5"
@@ -2384,11 +2384,11 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
         </div>
         <div
           class="c6"
-          dir="ltr"
+          dir="rtl"
         >
           <div
             class="c7"
-            dir="ltr"
+            dir="rtl"
           >
             <a
               class="c8"
@@ -2402,11 +2402,11 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
       <div
         as="li"
         class="c3"
-        dir="ltr"
+        dir="rtl"
       >
         <div
           class="c4"
-          dir="ltr"
+          dir="rtl"
         >
           <span
             class="c5"
@@ -2416,11 +2416,11 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
         </div>
         <div
           class="c6"
-          dir="ltr"
+          dir="rtl"
         >
           <div
             class="c7"
-            dir="ltr"
+            dir="rtl"
           >
             <a
               class="c8"
@@ -2434,11 +2434,11 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
       <div
         as="li"
         class="c3"
-        dir="ltr"
+        dir="rtl"
       >
         <div
           class="c4"
-          dir="ltr"
+          dir="rtl"
         >
           <span
             class="c5"
@@ -2448,11 +2448,11 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
         </div>
         <div
           class="c6"
-          dir="ltr"
+          dir="rtl"
         >
           <div
             class="c7"
-            dir="ltr"
+            dir="rtl"
           >
             <a
               class="c8"
@@ -2466,11 +2466,11 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
       <div
         as="li"
         class="c3"
-        dir="ltr"
+        dir="rtl"
       >
         <div
           class="c4"
-          dir="ltr"
+          dir="rtl"
         >
           <span
             class="c5"
@@ -2480,11 +2480,11 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
         </div>
         <div
           class="c6"
-          dir="ltr"
+          dir="rtl"
         >
           <div
             class="c7"
-            dir="ltr"
+            dir="rtl"
           >
             <a
               class="c8"
@@ -2498,11 +2498,11 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
       <div
         as="li"
         class="c3"
-        dir="ltr"
+        dir="rtl"
       >
         <div
           class="c4"
-          dir="ltr"
+          dir="rtl"
         >
           <span
             class="c5"
@@ -2512,11 +2512,11 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
         </div>
         <div
           class="c6"
-          dir="ltr"
+          dir="rtl"
         >
           <div
             class="c7"
-            dir="ltr"
+            dir="rtl"
           >
             <a
               class="c8"
@@ -2530,11 +2530,11 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
       <div
         as="li"
         class="c3"
-        dir="ltr"
+        dir="rtl"
       >
         <div
           class="c4"
-          dir="ltr"
+          dir="rtl"
         >
           <span
             class="c5"
@@ -2544,11 +2544,11 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
         </div>
         <div
           class="c6"
-          dir="ltr"
+          dir="rtl"
         >
           <div
             class="c7"
-            dir="ltr"
+            dir="rtl"
           >
             <a
               class="c8"
@@ -2562,11 +2562,11 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
       <div
         as="li"
         class="c3"
-        dir="ltr"
+        dir="rtl"
       >
         <div
           class="c4"
-          dir="ltr"
+          dir="rtl"
         >
           <span
             class="c5"
@@ -2576,11 +2576,11 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
         </div>
         <div
           class="c6"
-          dir="ltr"
+          dir="rtl"
         >
           <div
             class="c7"
-            dir="ltr"
+            dir="rtl"
           >
             <a
               class="c8"
@@ -2594,11 +2594,11 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
       <div
         as="li"
         class="c3"
-        dir="ltr"
+        dir="rtl"
       >
         <div
           class="c4"
-          dir="ltr"
+          dir="rtl"
         >
           <span
             class="c5"
@@ -2608,11 +2608,11 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
         </div>
         <div
           class="c6"
-          dir="ltr"
+          dir="rtl"
         >
           <div
             class="c7"
-            dir="ltr"
+            dir="rtl"
           >
             <a
               class="c8"
@@ -2626,11 +2626,11 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
       <div
         as="li"
         class="c3"
-        dir="ltr"
+        dir="rtl"
       >
         <div
           class="c4"
-          dir="ltr"
+          dir="rtl"
         >
           <span
             class="c5"
@@ -2640,11 +2640,11 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
         </div>
         <div
           class="c6"
-          dir="ltr"
+          dir="rtl"
         >
           <div
             class="c7"
-            dir="ltr"
+            dir="rtl"
           >
             <a
               class="c8"
