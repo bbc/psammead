@@ -7,8 +7,8 @@ import {
   AmpDropdown,
   DropdownUl,
   DropdownLi,
-  CanonicalHamburgerMenu,
-  AmpHamburgerMenu,
+  CanonicalMenuButton,
+  AmpMenuButton,
 } from './index';
 import pidginNavData from '../../testHelpers/pidgin';
 
@@ -38,38 +38,19 @@ describe('Canonical', () => {
   describe('Dropdown navigation', () => {
     shouldMatchSnapshot(
       'should render correctly',
-      <CanonicalDropdown announcedText="Menu" onClose={() => {}}>
-        {dropdownList}
-      </CanonicalDropdown>,
+      <CanonicalDropdown>{dropdownList}</CanonicalDropdown>,
     );
-
-    describe('CrossButton', () => {
-      it('should call onClose handler when clicked', () => {
-        const mockOnClick = jest.fn();
-        const { container } = render(
-          <CanonicalDropdown announcedText="Menu" onClose={() => mockOnClick()}>
-            {dropdownList}
-          </CanonicalDropdown>,
-        );
-
-        fireEvent.click(getByRole(container, 'button'));
-        expect(mockOnClick).toHaveBeenCalledTimes(1);
-      });
-    });
   });
 
-  describe('Hamburger menu', () => {
-    shouldMatchSnapshot(
-      'should render correctly',
-      <CanonicalHamburgerMenu announcedText="Menu" onOpen={() => {}} />,
-    );
-
-    it('should call onOpen handler when clicked', () => {
+  describe('Open menu button', () => {
+    it('should call onClose handler when clicked', () => {
       const mockOnClick = jest.fn();
       const { container } = render(
-        <CanonicalHamburgerMenu
+        <CanonicalMenuButton
           announcedText="Menu"
-          onOpen={() => mockOnClick()}
+          onOpen={() => {}}
+          isOpen
+          onClose={() => mockOnClick()}
         />,
       );
 
@@ -77,22 +58,61 @@ describe('Canonical', () => {
       expect(mockOnClick).toHaveBeenCalledTimes(1);
     });
   });
+
+  describe('Closed menu button', () => {
+    it('should call onOpen handler when clicked', () => {
+      const mockOnClick = jest.fn();
+      const { container } = render(
+        <CanonicalMenuButton
+          announcedText="Menu"
+          onOpen={() => mockOnClick()}
+          isOpen={false}
+          onClose={() => {}}
+        />,
+      );
+
+      fireEvent.click(getByRole(container, 'button'));
+      expect(mockOnClick).toHaveBeenCalledTimes(1);
+    });
+  });
+
+  describe('Open menu button', () => {
+    shouldMatchSnapshot(
+      'should render correctly',
+      <CanonicalMenuButton
+        announcedText="Menu"
+        onOpen={() => {}}
+        isOpen
+        onClose={() => {}}
+      />,
+    );
+  });
+
+  describe('Closed menu button', () => {
+    shouldMatchSnapshot(
+      'should render correctly',
+      <CanonicalMenuButton
+        announcedText="Menu"
+        onOpen={() => {}}
+        isOpen={false}
+        onClose={() => {}}
+      />,
+    );
+  });
 });
 
 describe('Amp', () => {
   describe('Dropdown navigation', () => {
     shouldMatchSnapshot(
       'should render correctly',
-      <AmpDropdown announcedText="Menu" onClose="">
-        {dropdownList}
-      </AmpDropdown>,
+      <AmpDropdown>{dropdownList}</AmpDropdown>,
     );
   });
 
-  describe('Hamburger menu', () => {
+  describe('Menu Button', () => {
     shouldMatchSnapshot(
       'should render correctly',
-      <AmpHamburgerMenu announcedText="Menu" onOpen="" />,
+      <AmpMenuButton announcedText="Menu" onToggle="" />,
     );
   });
 });
