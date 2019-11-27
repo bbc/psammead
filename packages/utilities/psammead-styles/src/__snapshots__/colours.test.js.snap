@@ -4,6 +4,8 @@ exports[`Psammead Styles - Colours should match #067EB3 for C_WEATHER_BLUE 1`] =
 
 exports[`Psammead Styles - Colours should match #0F556C for C_BLUEJAY 1`] = `"C_BLUEJAY"`;
 
+exports[`Psammead Styles - Colours should match #3A549C for C_ARCHIVE_BLUE 1`] = `"C_ARCHIVE_BLUE"`;
+
 exports[`Psammead Styles - Colours should match #3F3F42 for C_SHADOW 1`] = `"C_SHADOW"`;
 
 exports[`Psammead Styles - Colours should match #4C4C4C for C_ORBIT_GREY 1`] = `"C_ORBIT_GREY"`;
