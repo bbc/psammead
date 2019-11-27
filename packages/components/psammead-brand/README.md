@@ -26,6 +26,10 @@ The `url` value is the link that points to the frontpage of the service associat
 
 The `scriptLink` can be used to render [ScriptLink](https://github.com/bbc/psammead/tree/latest/packages/components/psammead-script-link) component which is a link to the service variant.
 
+## Exports
+
+`/skip-link` - Use the skip link component to help keyboard-only users skip to the main content on the page.
+
 ## Installation
 
 `npm install @bbc/psammead-brand`
@@ -58,7 +62,8 @@ When using `Brand` in the header, you should ensure that `borderBottom` prop is 
 `ScriptLink` component should be passed to `scriptLink` only when linking to a service variant.
 
 ```jsx
-import Brand, { SkipLink } from '@bbc/psammead-brand';
+import Brand from '@bbc/psammead-brand';
+import SkipLink from '@bbc/psammead-brand/skip-link';
 import { igbo } from '@bbc/psammead-assets/svgs';
 import ScriptLink from '@bbc/psammead-script-link';
 import { C_POSTBOX, C_WHITE } from '@bbc/psammead-styles/colours';

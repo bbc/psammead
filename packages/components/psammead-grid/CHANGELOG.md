@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 1.0.0-alpha.14 | [PR#2697](https://github.com/bbc/psammead/pull/2697) Talos - Bump Dependencies - @bbc/psammead-styles |
 | 1.0.0-alpha.13 | [PR#2568](https://github.com/bbc/psammead/pull/2568) Add enableNegativeGelMargins prop, to enable fullbleed Grid within an outer Grid that has enableGelMargins |
 | 1.0.0-alpha.12 | [PR#2565](https://github.com/bbc/psammead/pull/2565) Fix case where child of Grid component is not defined |
 | 1.0.0-alpha.11 | [PR#2439](https://github.com/bbc/psammead/pull/2439) Start offset, gutters and margins fallbacks |

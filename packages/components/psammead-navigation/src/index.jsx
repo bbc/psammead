@@ -10,6 +10,8 @@ import {
 } from '@bbc/gel-foundations/spacings';
 import {
   GEL_GROUP_1_SCREEN_WIDTH_MAX,
+  GEL_GROUP_2_SCREEN_WIDTH_MAX,
+  GEL_GROUP_3_SCREEN_WIDTH_MIN,
   GEL_GROUP_5_SCREEN_WIDTH_MIN,
 } from '@bbc/gel-foundations/breakpoints';
 import { getPica } from '@bbc/gel-foundations/typography';
@@ -18,6 +20,7 @@ import { getSansRegular } from '@bbc/psammead-styles/font-styles';
 
 const TOP_BOTTOM_SPACING = '0.75rem'; // 12px
 const CURRENT_ITEM_HOVER_BORDER = '0.3125rem'; // 5px
+const GRADIENT_WIDTH = '3rem'; // 48px
 
 /* White with 30% transparency over #B80000 */
 const BORDER_COLOR = '#eab3b3';
@@ -33,22 +36,9 @@ const StyledUnorderedList = styled.ul`
   padding: 0;
   margin: 0;
   position: relative;
-  overflow: hidden;
-`;
 
-const StyledListItem = styled.li`
-  display: inline-block;
-  position: relative;
-  z-index: 2;
-
-  /* Trick to display a border between the list items when it breaks into multiple lines, which takes the full width */
-  &::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    width: ${GEL_GROUP_5_SCREEN_WIDTH_MIN};
-    border-bottom: 0.0625rem solid ${BORDER_COLOR};
-    z-index: -1;
+  @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
+    overflow: hidden;
   }
 `;
 
@@ -90,6 +80,32 @@ const StyledLink = styled.a`
   }
 `;
 
+const StyledListItem = styled.li`
+  display: inline-block;
+  position: relative;
+  z-index: 2;
+
+  @media (max-width: ${GEL_GROUP_2_SCREEN_WIDTH_MAX}) {
+    &:last-child {
+      ${({ dir }) => css`
+        margin-${dir === 'ltr' ? 'right' : 'left'}: ${GRADIENT_WIDTH}; 
+      `}
+    }
+  }
+
+  @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
+    /* Trick to display a border between the list items when it breaks into multiple lines, which takes the full width */
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      width: ${GEL_GROUP_5_SCREEN_WIDTH_MIN};
+      border-bottom: 0.0625rem solid ${BORDER_COLOR};
+      z-index: -1;
+    }
+  }
+`;
+
 const StyledSpan = styled.span`
   &::after {
     ${ListItemBorder}
@@ -109,11 +125,30 @@ const CurrentLink = ({ children: link, script, currentPageText }) => (
   </>
 );
 
-export const NavigationUl = ({ children, ...props }) => (
-  <StyledUnorderedList role="list" {...props}>
-    {children}
+CurrentLink.propTypes = {
+  children: string.isRequired,
+  script: shape(scriptPropType).isRequired,
+  currentPageText: string,
+};
+
+CurrentLink.defaultProps = {
+  currentPageText: null,
+};
+
+export const NavigationUl = ({ children, isScrollable, ...props }) => (
+  <StyledUnorderedList role="list" isScrollable={isScrollable} {...props}>
+    {React.Children.map(children, child =>
+      React.cloneElement(child, { isScrollable }),
+    )}
   </StyledUnorderedList>
 );
+
+NavigationUl.propTypes = {
+  children: node.isRequired,
+  isScrollable: bool,
+};
+
+NavigationUl.defaultProps = { isScrollable: false };
 
 export const NavigationLi = ({
   children: link,
@@ -122,30 +157,62 @@ export const NavigationLi = ({
   currentPageText,
   active,
   service,
+  dir,
+  isScrollable,
   ...props
-}) => (
-  <StyledListItem role="listitem">
-    {active && currentPageText ? (
-      <StyledLink
-        href={url}
-        script={script}
-        currentLink="true"
-        service={service}
-        {...props}
-      >
-        <CurrentLink script={script} currentPageText={currentPageText}>
+}) => {
+  const tabIndex = isScrollable && { tabIndex: -1 };
+
+  return (
+    <StyledListItem dir={dir} role="listitem">
+      {active && currentPageText ? (
+        <StyledLink
+          href={url}
+          script={script}
+          service={service}
+          currentLink
+          {...tabIndex}
+          {...props}
+        >
+          <CurrentLink script={script} currentPageText={currentPageText}>
+            {link}
+          </CurrentLink>
+        </StyledLink>
+      ) : (
+        <StyledLink
+          href={url}
+          script={script}
+          service={service}
+          {...tabIndex}
+          {...props}
+        >
           {link}
-        </CurrentLink>
-      </StyledLink>
-    ) : (
-      <StyledLink href={url} script={script} service={service} {...props}>
-        {link}
-      </StyledLink>
-    )}
-  </StyledListItem>
-);
+        </StyledLink>
+      )}
+    </StyledListItem>
+  );
+};
+
+NavigationLi.propTypes = {
+  children: node.isRequired,
+  url: string.isRequired,
+  script: shape(scriptPropType).isRequired,
+  active: bool,
+  currentPageText: string,
+  service: string.isRequired,
+  isScrollable: bool,
+  dir: oneOf(['ltr', 'rtl']),
+};
+
+NavigationLi.defaultProps = {
+  active: false,
+  currentPageText: null,
+  isScrollable: false,
+  dir: 'ltr',
+};
 
 const StyledNav = styled.nav`
+  position: relative;
   background-color: ${C_POSTBOX};
   border-top: 0.0625rem solid ${C_WHITE};
   ${StyledListItem} {
@@ -157,11 +224,13 @@ const StyledNav = styled.nav`
   }
 `;
 
-const Navigation = ({ children, dir }) => (
-  <StyledNav role="navigation" dir={dir}>
-    <NavWrapper>{children}</NavWrapper>
-  </StyledNav>
-);
+const Navigation = ({ children, dir }) => {
+  return (
+    <StyledNav role="navigation" dir={dir}>
+      <NavWrapper>{children}</NavWrapper>
+    </StyledNav>
+  );
+};
 
 Navigation.propTypes = {
   children: node.isRequired,
@@ -169,33 +238,5 @@ Navigation.propTypes = {
 };
 
 Navigation.defaultProps = { dir: 'ltr' };
-
-NavigationUl.propTypes = {
-  children: node.isRequired,
-};
-
-NavigationLi.propTypes = {
-  children: node.isRequired,
-  url: string.isRequired,
-  script: shape(scriptPropType).isRequired,
-  active: bool,
-  currentPageText: string,
-  service: string.isRequired,
-};
-
-NavigationLi.defaultProps = {
-  active: false,
-  currentPageText: null,
-};
-
-CurrentLink.propTypes = {
-  children: string.isRequired,
-  script: shape(scriptPropType).isRequired,
-  currentPageText: string,
-};
-
-CurrentLink.defaultProps = {
-  currentPageText: null,
-};
 
 export default Navigation;
