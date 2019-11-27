@@ -1,1 +1,1 @@
-export default function <%= componentName %>() {}
+export default function <%= packageName %>() {}

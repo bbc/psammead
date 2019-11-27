@@ -2,7 +2,7 @@
 
 ## Description
 
-The `<%= componentName %>` container does...
+The `<%= packageName %>` container does...
 
 ## Installation
 
@@ -21,7 +21,7 @@ npm install @bbc/psammead-<%= name %> --save
 <!-- Description of the container usage -->
 
 ```
-import <%= componentName %> from "@bbc/psammead-<%= name %>"
+import <%= packageName %> from "@bbc/psammead-<%= name %>"
 ```
 
 ### When to use this container

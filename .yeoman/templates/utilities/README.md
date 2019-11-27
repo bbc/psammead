@@ -2,7 +2,7 @@
 
 ## Description
 
-The `<%= componentName %>` utility does...
+The `<%= packageName %>` utility does...
 
 ## Installation
 
@@ -21,7 +21,7 @@ npm install @bbc/psammead-<%= name %> --save
 <!-- Description of the utility usage -->
 
 ```
-import <%= componentName %> from "@bbc/psammead-<%= name %>"
+import <%= packageName %> from "@bbc/psammead-<%= name %>"
 ```
 
 ### When to use this utility

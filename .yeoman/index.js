@@ -18,7 +18,7 @@ module.exports = class extends Generator {
     const props = await this.prompt(questions);
     this.props = props;
     this.props.prettyName = prettyName(this.props.name);
-    this.props.componentName = prettyName(this.props.name, '');
+    this.props.packageName = prettyName(this.props.name, '');
     this.props.dependencies = {
       ...basePackage.dependencies,
       ...basePackage.devDependencies,

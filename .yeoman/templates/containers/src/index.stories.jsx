@@ -1,11 +1,11 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import notes from '../README.md';
-import <%= componentName %> from './index';
+import <%= packageName %> from './index';
 
-storiesOf('<%= componentName %>', module)
+storiesOf('<%= packageName %>', module)
   .add(
     'default',
-    () => (<<%= componentName %> />),
+    () => (<<%= packageName %> />),
     { notes },
   );

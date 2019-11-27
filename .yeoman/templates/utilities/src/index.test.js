@@ -1,7 +1,7 @@
-import <%= componentName %> from './index';
+import <%= packageName %> from './index';
 
-describe('<%= componentName %>', () => {
+describe('<%= packageName %>', () => {
   it('should work', () => {
-    expect(<%= componentName %>()).toEqual(null);
+    expect(<%= packageName %>()).toEqual(null);
   });
 });
