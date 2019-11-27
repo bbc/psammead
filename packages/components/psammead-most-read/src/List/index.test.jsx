@@ -15,7 +15,7 @@ describe('MostReadList', () => {
       items={itemsRTL}
       service="arabic"
       script={arabic}
-      dir="ltr"
+      dir="rtl"
     />,
   );
   shouldMatchSnapshot(
