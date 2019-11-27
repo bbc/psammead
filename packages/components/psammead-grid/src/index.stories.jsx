@@ -1,4 +1,5 @@
 import React from 'react';
+import styled from 'styled-components';
 import { storiesOf } from '@storybook/react';
 import { withKnobs } from '@storybook/addon-knobs';
 import {
@@ -16,9 +17,44 @@ import notes from '../README.md';
 
 const STORY_KIND = 'Components|Grid';
 
+const StyledDivNegMargin = styled.div`
+  margin: 0 -0.25rem;
+`;
+const StyledDivMargin = styled.div`
+  margin: 0 0.25rem;
+`;
+
 storiesOf(STORY_KIND, module)
   .addDecorator(withKnobs)
   .addDecorator(withServicesKnob())
+  .add('Simple example with negative margins for paragraph layout', () => (
+    <StyledDivNegMargin>
+      <StyledDivMargin>
+        <ExampleParagraph identifier="1 " />
+      </StyledDivMargin>
+      <StyledDivMargin>
+        <ExampleParagraph identifier="2 " />
+      </StyledDivMargin>
+    </StyledDivNegMargin>
+  ))
+  .add('Simple example with negative margins to test layout', () => (
+    <StyledDivNegMargin>
+      <StyledDivMargin>
+        <Image
+          alt="Robert Downey Junior in Iron Man"
+          src="https://ichef.bbci.co.uk/news/660/cpsprodpb/11897/production/_106613817_999_al_.jpg"
+          width="100%"
+        />
+      </StyledDivMargin>
+      <StyledDivMargin>
+        <Image
+          alt="Robert Downey Junior in Iron Man"
+          src="https://ichef.bbci.co.uk/news/660/cpsprodpb/11897/production/_106613817_999_al_.jpg"
+          width="100%"
+        />
+      </StyledDivMargin>
+    </StyledDivNegMargin>
+  ))
   .add(
     'Example with layout change at group4+',
     () => (
