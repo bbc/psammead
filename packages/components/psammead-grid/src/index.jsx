@@ -157,20 +157,7 @@ const childrenFallback = (
   );
   const guttersWithinParent = parentColumnsGroup - 1;
   const guttersWithinItem = columnsGroup - 1;
-  // console.log('   ----   ');
-  // console.log(
-  //   'width:',
-  //   `calc((100% - ${guttersWithinParent} * ${gutterSize}) * ${columnsGroup} / ${parentColumnsGroup} + ${guttersWithinItem} * ${gutterSize})`,
-  // );
 
-  // console.log('guttersWithinParent', guttersWithinParent);
-  // console.log('gutterSize', gutterSize);
-  // console.log('columnsGroup', columnsGroup);
-  // console.log('parentColumnsGroup', parentColumnsGroup);
-  // console.log('guttersWithinItem', guttersWithinItem);
-  // console.log('   ----   ');
-
-  // calc(columnsGroup/parentColumnsGroup*(100% - guttersWithinParent * gutterSize) + guttersWithinItem * gutterSize)
   return ` 
   ${marginsGroup ? `padding: 0 ${marginSize};` : ``}
   ${
