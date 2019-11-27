@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 5.0.0-alpha.1 | [PR#2577](https://github.com/bbc/psammead/pull/2577) Add scrollable navigation |
 | 4.0.0-alpha.2 | [PR#2697](https://github.com/bbc/psammead/pull/2697) Talos - Bump Dependencies - @bbc/psammead-styles |
 | 4.0.0-alpha.1 | [PR#2563](https://github.com/bbc/psammead/pull/2563) Remove skip to content link |
 | 3.1.0-alpha.1 | [PR#2567](https://github.com/bbc/psammead/pull/2567) Add `C_WHITE` top border to `Navigation` |
