@@ -1,19 +1,15 @@
-import React from 'react';
+import React, { cloneElement } from 'react';
 import styled, { css } from 'styled-components';
 import { shape, string, node, bool, func, oneOf } from 'prop-types';
 import VisuallyHiddenText from '@bbc/psammead-visually-hidden-text';
 import { navigationIcons } from '@bbc/psammead-assets/svgs';
-import {
-  C_WHITE,
-  C_POSTBOX,
-  C_EBON,
-  C_SHADOW,
-} from '@bbc/psammead-styles/colours';
+import { C_WHITE, C_EBON, C_SHADOW } from '@bbc/psammead-styles/colours';
 import {
   GEL_SPACING_HLF,
   GEL_SPACING,
   GEL_SPACING_DBL,
 } from '@bbc/gel-foundations/spacings';
+import Helmet from 'react-helmet';
 import { GEL_GROUP_3_SCREEN_WIDTH_MIN } from '@bbc/gel-foundations/breakpoints';
 import { getPica } from '@bbc/gel-foundations/typography';
 import { scriptPropType } from '@bbc/gel-foundations/prop-types';
@@ -32,34 +28,6 @@ const DropdownWrapper = styled.div`
 
   @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
     display: none;
-  }
-`;
-
-const iconBorder = css`
-  content: '';
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  top: 0;
-  border: ${GEL_SPACING_HLF} solid ${C_WHITE};
-`;
-
-const CrossButton = styled.button`
-  background-color: ${C_EBON};
-  width: ${MENU_ICON_SIDE_LENGTH};
-  height: ${MENU_ICON_SIDE_LENGTH};
-  position: relative;
-  padding: 0;
-  margin: 0;
-  border: 0;
-
-  &:hover,
-  &:focus {
-    box-shadow: inset 0 0 0 ${GEL_SPACING_HLF} ${C_WHITE};
-    ::after {
-      ${iconBorder};
-    }
   }
 `;
 
@@ -139,57 +107,44 @@ DropdownLi.defaultProps = {
   dir: 'ltr',
 };
 
+export const CanonicalDropdown = ({ children }) => (
+  <DropdownWrapper>{children}</DropdownWrapper>
+);
+
 const dropdownProps = {
-  announcedText: string.isRequired,
   children: node.isRequired,
 };
 
-export const CanonicalDropdown = ({ announcedText, onClose, children }) => (
-  <DropdownWrapper>
-    <CrossButton
-      aria-label={announcedText}
-      onClick={onClose}
-      // eslint-disable-next-line react/jsx-boolean-value
-      aria-expanded="true"
-    >
-      {navigationIcons.cross}
-    </CrossButton>
-    {children}
-  </DropdownWrapper>
-);
-
 CanonicalDropdown.propTypes = {
   ...dropdownProps,
-  onClose: func.isRequired,
 };
 
-export const AmpDropdown = ({ announcedText, onClose, children }) => (
-  <DropdownWrapper>
-    <CrossButton
-      aria-label={announcedText}
-      on={onClose}
-      // eslint-disable-next-line react/jsx-boolean-value
-      aria-expanded="true"
-    >
-      {navigationIcons.cross}
-    </CrossButton>
-    {children}
-  </DropdownWrapper>
+export const AmpDropdown = ({ children }) => (
+  <DropdownWrapper>{children}</DropdownWrapper>
 );
 
 AmpDropdown.propTypes = {
   ...dropdownProps,
-  onClose: string.isRequired,
 };
 
-const HamburgerButton = styled.button`
+const iconBorder = css`
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  border: ${GEL_SPACING_HLF} solid ${C_WHITE};
+`;
+
+const MenuButton = styled.button`
   width: ${MENU_ICON_SIDE_LENGTH};
   height: ${MENU_ICON_SIDE_LENGTH};
-  background-color: ${C_POSTBOX};
   position: relative;
   padding: 0;
   margin: 0;
   border: 0;
+  background-color: transparent;
 
   &:hover,
   &:focus {
@@ -204,32 +159,72 @@ const HamburgerButton = styled.button`
   }
 `;
 
-const hamburgerProps = {
-  announcedText: string.isRequired,
-};
-
-export const CanonicalHamburgerMenu = ({ announcedText, onOpen }) => (
-  <HamburgerButton
+export const CanonicalMenuButton = ({
+  announcedText,
+  onOpen,
+  isOpen,
+  onClose,
+}) => (
+  <MenuButton
     aria-label={announcedText}
-    onClick={onOpen}
-    aria-expanded="false"
+    isOpen={isOpen}
+    onClick={isOpen ? onClose : onOpen}
+    aria-expanded={isOpen ? 'true' : 'false'}
   >
-    {navigationIcons.hamburger}
-  </HamburgerButton>
+    {isOpen ? navigationIcons.hamburger : navigationIcons.cross}
+  </MenuButton>
 );
 
-CanonicalHamburgerMenu.propTypes = {
-  ...hamburgerProps,
+CanonicalMenuButton.propTypes = {
+  announcedText: string.isRequired,
   onOpen: func.isRequired,
+  onClose: func.isRequired,
+  isOpen: bool.isRequired,
 };
 
-export const AmpHamburgerMenu = ({ announcedText, onOpen }) => (
-  <HamburgerButton aria-label={announcedText} on={onOpen} aria-expanded="false">
-    {navigationIcons.hamburger}
-  </HamburgerButton>
+const AmpHead = () => (
+  <Helmet>
+    <script
+      async
+      custom-element="amp-bind"
+      src="https://cdn.ampproject.org/v0/amp-bind-0.1.js"
+    />
+  </Helmet>
 );
 
-AmpHamburgerMenu.propTypes = {
-  ...hamburgerProps,
-  onOpen: string.isRequired,
+export const AmpMenuButton = ({ announcedText, onToggle }) => {
+  const expandedHandler =
+    'tap:AMP.setState({ menuState: { expanded: !menuState.expanded }})';
+
+  return (
+    <>
+      <AmpHead />
+      <amp-state id="menuState">
+        <script type="application/json">
+          {JSON.stringify({
+            expanded: false,
+          })}
+        </script>
+      </amp-state>
+      <MenuButton
+        aria-label={announcedText}
+        aria-expanded="false"
+        data-amp-bind-aria-expanded='menuState.expanded ? "true" : "false"'
+        on={`${expandedHandler};${onToggle}`}
+      >
+        {cloneElement(navigationIcons.hamburger, {
+          'data-amp-bind-hidden': 'menuState.expanded',
+        })}
+        {cloneElement(navigationIcons.cross, {
+          hidden: true,
+          'data-amp-bind-hidden': '!menuState.expanded',
+        })}
+      </MenuButton>
+    </>
+  );
+};
+
+AmpMenuButton.propTypes = {
+  announcedText: string.isRequired,
+  onToggle: string.isRequired,
 };
