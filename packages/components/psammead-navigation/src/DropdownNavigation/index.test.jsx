@@ -3,8 +3,7 @@ import { shouldMatchSnapshot } from '@bbc/psammead-test-helpers';
 import { render, fireEvent, getByRole } from '@testing-library/react';
 import { latin } from '@bbc/gel-foundations/scripts';
 import {
-  CanonicalDropdown,
-  AmpDropdown,
+  Dropdown,
   DropdownUl,
   DropdownLi,
   CanonicalMenuButton,
@@ -35,48 +34,24 @@ const dropdownList = (
 );
 
 describe('Canonical', () => {
-  describe('Dropdown navigation', () => {
-    shouldMatchSnapshot(
-      'should render correctly',
-      <CanonicalDropdown>{dropdownList}</CanonicalDropdown>,
-    );
-  });
-
   describe('Open menu button', () => {
     it('should call onClose handler when clicked', () => {
-      const mockOnClick = jest.fn();
+      const mockOnClose = jest.fn();
+      const mockOnOpen = jest.fn();
       const { container } = render(
         <CanonicalMenuButton
           announcedText="Menu"
-          onOpen={() => {}}
+          onOpen={mockOnOpen}
           isOpen
-          onClose={() => mockOnClick()}
+          onClose={mockOnClose}
         />,
       );
 
       fireEvent.click(getByRole(container, 'button'));
-      expect(mockOnClick).toHaveBeenCalledTimes(1);
+      expect(mockOnClose).toHaveBeenCalledTimes(1);
+      expect(mockOnOpen).not.toHaveBeenCalled();
     });
-  });
 
-  describe('Closed menu button', () => {
-    it('should call onOpen handler when clicked', () => {
-      const mockOnClick = jest.fn();
-      const { container } = render(
-        <CanonicalMenuButton
-          announcedText="Menu"
-          onOpen={() => mockOnClick()}
-          isOpen={false}
-          onClose={() => {}}
-        />,
-      );
-
-      fireEvent.click(getByRole(container, 'button'));
-      expect(mockOnClick).toHaveBeenCalledTimes(1);
-    });
-  });
-
-  describe('Open menu button', () => {
     shouldMatchSnapshot(
       'should render correctly',
       <CanonicalMenuButton
@@ -89,6 +64,23 @@ describe('Canonical', () => {
   });
 
   describe('Closed menu button', () => {
+    it('should call onOpen handler when clicked', () => {
+      const mockOnClose = jest.fn();
+      const mockOnOpen = jest.fn();
+      const { container } = render(
+        <CanonicalMenuButton
+          announcedText="Menu"
+          onOpen={mockOnOpen}
+          isOpen={false}
+          onClose={mockOnClose}
+        />,
+      );
+
+      fireEvent.click(getByRole(container, 'button'));
+      expect(mockOnOpen).toHaveBeenCalledTimes(1);
+      expect(mockOnClose).not.toHaveBeenCalled();
+    });
+
     shouldMatchSnapshot(
       'should render correctly',
       <CanonicalMenuButton
@@ -101,18 +93,16 @@ describe('Canonical', () => {
   });
 });
 
-describe('Amp', () => {
-  describe('Dropdown navigation', () => {
-    shouldMatchSnapshot(
-      'should render correctly',
-      <AmpDropdown>{dropdownList}</AmpDropdown>,
-    );
-  });
+describe('Dropdown navigation', () => {
+  shouldMatchSnapshot(
+    'should render correctly',
+    <Dropdown>{dropdownList}</Dropdown>,
+  );
+});
 
-  describe('Menu Button', () => {
-    shouldMatchSnapshot(
-      'should render correctly',
-      <AmpMenuButton announcedText="Menu" onToggle="" />,
-    );
-  });
+describe('AMP Menu Button', () => {
+  shouldMatchSnapshot(
+    'should render correctly',
+    <AmpMenuButton announcedText="Menu" onToggle="" />,
+  );
 });
