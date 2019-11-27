@@ -4,19 +4,7 @@ import { withKnobs } from '@storybook/addon-knobs';
 import { withServicesKnob } from '@bbc/psammead-storybook-helpers';
 import Timestamp from '@bbc/psammead-timestamp';
 import { MostReadLink, MostReadRank } from '.';
-
-const links = [
-  {
-    language: 'news',
-    title: 'John Lewis staff bonus cut again as profits fall',
-    href: 'https://www.bbc.com/vietnamese/institutional-49283563',
-  },
-  {
-    language: 'arabic',
-    title: "ایران از لغو 'رزمایش قطع اینترنت' خبر داد",
-    href: 'https://www.bbc.com/vietnamese/institutional-49283563',
-  },
-];
+import { links } from '../testHelpers/fixtureData';
 
 const lastUpdated = (script, service) => (
   <Timestamp
@@ -39,14 +27,9 @@ links.forEach(({ language, ...props }) => {
   ));
 });
 
-const link = {
-  title: 'Stranded Indian ship put up for sale',
-  href: 'https://www.bbc.com',
-};
-
 stories.add(`MostReadLink with last updated date`, ({ script, service }) => (
   <MostReadLink
-    link={link}
+    link={links[0]}
     lastUpdated={lastUpdated(script, service)}
     service={service}
     script={script}
