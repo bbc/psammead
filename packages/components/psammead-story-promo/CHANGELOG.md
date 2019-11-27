@@ -3,6 +3,8 @@
 <!-- prettier-ignore -->
 | Version | Description |
 | ------- | ----------- |
+| 3.0.0-alpha.10 | [PR#2701](https://github.com/bbc/psammead/pull/2701) Talos - Bump Dependencies - @bbc/psammead-styles |
+| 3.0.0-alpha.9 | [PR#2697](https://github.com/bbc/psammead/pull/2697) Talos - Bump Dependencies - @bbc/psammead-styles |
 | 3.0.0-alpha.8 | [PR#2648](https://github.com/bbc/psammead/pull/2648) Rename `displayImage` prop to `promoHasImage` to better indicate its use |
 | 3.0.0-alpha.7 | [PR#2626](https://github.com/bbc/psammead/pull/2626) Increase image and summary width of top story at 1008px+ for grid fallbacks |
 | 3.0.0-alpha.6 | [PR#2397](https://github.com/bbc/psammead/pull/2397) Add a `displayImage` prop to render story promo without an image |
