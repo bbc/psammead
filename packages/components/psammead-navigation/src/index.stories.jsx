@@ -15,7 +15,6 @@ import { C_POSTBOX, C_WHITE } from '@bbc/psammead-styles/colours';
 import Brand from '@bbc/psammead-brand';
 import { ampDecorator } from '../../../../.storybook/config';
 import Navigation, { NavigationUl, NavigationLi } from './index';
-import { ampDecorator } from '../../../../.storybook/config';
 import {
   CanonicalMenuButton,
   AmpMenuButton,
