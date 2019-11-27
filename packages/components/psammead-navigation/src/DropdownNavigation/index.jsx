@@ -1,6 +1,6 @@
 import React, { cloneElement } from 'react';
 import styled, { css } from 'styled-components';
-import { shape, string, node, bool, func, oneOf } from 'prop-types';
+import { shape, string, bool, func, oneOf } from 'prop-types';
 import VisuallyHiddenText from '@bbc/psammead-visually-hidden-text';
 import { navigationIcons } from '@bbc/psammead-assets/svgs';
 import { C_WHITE, C_EBON, C_SHADOW } from '@bbc/psammead-styles/colours';
@@ -23,7 +23,7 @@ const getStyles = dir => {
           padding-${direction}: ${GEL_SPACING};`;
 };
 
-const DropdownWrapper = styled.div`
+export const Dropdown = styled.div`
   background-color: ${C_EBON};
 
   @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
@@ -108,26 +108,6 @@ DropdownLi.defaultProps = {
   dir: 'ltr',
 };
 
-export const CanonicalDropdown = ({ children }) => (
-  <DropdownWrapper>{children}</DropdownWrapper>
-);
-
-const dropdownProps = {
-  children: node.isRequired,
-};
-
-CanonicalDropdown.propTypes = {
-  ...dropdownProps,
-};
-
-export const AmpDropdown = ({ children }) => (
-  <DropdownWrapper>{children}</DropdownWrapper>
-);
-
-AmpDropdown.propTypes = {
-  ...dropdownProps,
-};
-
 const iconBorder = css`
   content: '';
   position: absolute;
@@ -163,13 +143,12 @@ const MenuButton = styled.button`
 
 export const CanonicalMenuButton = ({
   announcedText,
-  onOpen,
   isOpen,
+  onOpen,
   onClose,
 }) => (
   <MenuButton
     aria-label={announcedText}
-    isOpen={isOpen}
     onClick={isOpen ? onClose : onOpen}
     aria-expanded={isOpen ? 'true' : 'false'}
   >

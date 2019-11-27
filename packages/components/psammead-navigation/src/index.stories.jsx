@@ -18,8 +18,7 @@ import Navigation, { NavigationUl, NavigationLi } from './index';
 import {
   CanonicalMenuButton,
   AmpMenuButton,
-  CanonicalDropdown,
-  AmpDropdown,
+  Dropdown,
   DropdownUl,
   DropdownLi,
 } from './DropdownNavigation';
@@ -177,8 +176,8 @@ const navigationStory = (
   );
 };
 
-const dropdownStory = type => ({ dir, script, service }) => {
-  const dropdownList = (
+const dropdownStory = () => ({ dir, script, service }) => (
+  <Dropdown>
     <DropdownUl>
       {pidginNavData.map((item, index) => {
         const active = index === 3;
@@ -198,14 +197,8 @@ const dropdownStory = type => ({ dir, script, service }) => {
         );
       })}
     </DropdownUl>
-  );
-
-  return type === 'canonical' ? (
-    <CanonicalDropdown>{dropdownList}</CanonicalDropdown>
-  ) : (
-    <AmpDropdown>{dropdownList}</AmpDropdown>
-  );
-};
+  </Dropdown>
+);
 
 const storiesWithoutBrand = storiesOf(
   'Components|Navigation/without brand',
@@ -274,11 +267,11 @@ storiesWithoutBrand.add(
   },
 );
 
-storiesWithoutBrand.add('Canonical Dropdown menu', dropdownStory('canonical'), {
+storiesWithoutBrand.add('Canonical Dropdown menu', dropdownStory(), {
   notes,
 });
 
-storiesWithoutBrand.add('AMP Dropdown menu', dropdownStory('amp'), {
+storiesWithoutBrand.add('AMP Dropdown menu', dropdownStory(), {
   notes,
 });
 
