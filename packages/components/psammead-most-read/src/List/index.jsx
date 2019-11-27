@@ -112,13 +112,13 @@ const MostReadList = ({ items, service, script, dir }) => (
   </StyledOl>
 );
 
-const linkPropTypes = shape({
+export const itemPropTypes = shape({
   title: string.isRequired,
   href: string.isRequired,
 });
 
 MostReadList.propTypes = {
-  items: arrayOf(linkPropTypes).isRequired,
+  items: arrayOf(itemPropTypes).isRequired,
   service: string.isRequired,
   script: shape(scriptPropType).isRequired,
   dir: oneOf(['rtl', 'ltr']),
