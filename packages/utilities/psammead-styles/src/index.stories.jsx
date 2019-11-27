@@ -8,7 +8,14 @@ import {
 } from '@bbc/gel-foundations/typography';
 import { latin } from '@bbc/gel-foundations/scripts';
 import { select, withKnobs } from '@storybook/addon-knobs';
+import { withServicesKnob } from '@bbc/psammead-storybook-helpers';
 import json5 from 'json5';
+import {
+  getSansRegular,
+  getSansBold,
+  getSansRegularItalic,
+  getSansBoldItalic,
+} from '@bbc/psammead-styles/font-styles';
 import notes from '../README.md';
 import * as colours from './colours';
 import { grid } from './detection';
@@ -76,8 +83,26 @@ const getFontStyles = fontName => {
 
 const detectionExamples = ['display: grid', grid];
 
+const RegularParagraph = styled.p`
+  ${({ script }) => script && getBodyCopy(script)};
+  ${({ service }) => getSansRegular(service)}
+`;
+const BoldParagraph = styled.p`
+  ${({ script }) => script && getBodyCopy(script)};
+  ${({ service }) => getSansBold(service)}
+`;
+const ItalicParagraph = styled.p`
+  ${({ script }) => script && getBodyCopy(script)};
+  ${({ service }) => getSansRegularItalic(service)}
+`;
+const BoldItalicParagraph = styled.p`
+  ${({ script }) => script && getBodyCopy(script)};
+  ${({ service }) => getSansBoldItalic(service)}
+`;
+
 storiesOf('Utilities|Psammead Styles', module)
   .addDecorator(withKnobs)
+  .addDecorator(withServicesKnob())
   .add(
     'font styles',
     () => {
@@ -90,6 +115,28 @@ storiesOf('Utilities|Psammead Styles', module)
             نص حكيم له سر قاطع وذو شأن عظيم مكتوب على ثوب أخضر ومغلف بجلد أزرق
           </span>
         </Paragraph>
+      );
+    },
+    { notes, knobs: { escapeHTML: false } },
+  )
+  .add(
+    'fonts per service - Regular, RegularItalic, Bold, BoldItalic',
+    ({ service, text, dir, script }) => {
+      return (
+        <div dir={dir}>
+          <RegularParagraph script={script} service={service}>
+            {text}
+          </RegularParagraph>
+          <ItalicParagraph script={script} service={service}>
+            {text}
+          </ItalicParagraph>
+          <BoldParagraph script={script} service={service}>
+            {text}
+          </BoldParagraph>
+          <BoldItalicParagraph script={script} service={service}>
+            {text}
+          </BoldItalicParagraph>
+        </div>
       );
     },
     { notes, knobs: { escapeHTML: false } },

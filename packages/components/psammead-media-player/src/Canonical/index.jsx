@@ -25,6 +25,7 @@ const Canonical = ({ src, title, placeholderSrc }) => {
       src={src}
       title={title}
       allow="autoplay; fullscreen"
+      scrolling="no"
       gesture="media"
       allowFullScreen
     />
