@@ -28,6 +28,7 @@ const DropdownWrapper = styled.div`
 
   @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
     display: none;
+    visibility: hidden;
   }
 `;
 
@@ -156,6 +157,7 @@ const MenuButton = styled.button`
 
   @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
     display: none;
+    visibility: hidden;
   }
 `;
 

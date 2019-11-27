@@ -59,6 +59,7 @@ exports[`Amp Dropdown navigation should render correctly 1`] = `
 @media (min-width:37.5rem) {
   .c0 {
     display: none;
+    visibility: hidden;
   }
 }
 
@@ -232,6 +233,7 @@ exports[`Amp Menu Button should render correctly 1`] = `
 @media (min-width:37.5rem) {
   .c0 {
     display: none;
+    visibility: hidden;
   }
 }
 
@@ -326,6 +328,7 @@ exports[`Canonical Closed menu button should render correctly 1`] = `
 @media (min-width:37.5rem) {
   .c0 {
     display: none;
+    visibility: hidden;
   }
 }
 
@@ -407,6 +410,7 @@ exports[`Canonical Dropdown navigation should render correctly 1`] = `
 @media (min-width:37.5rem) {
   .c0 {
     display: none;
+    visibility: hidden;
   }
 }
 
@@ -580,6 +584,7 @@ exports[`Canonical Open menu button should render correctly 1`] = `
 @media (min-width:37.5rem) {
   .c0 {
     display: none;
+    visibility: hidden;
   }
 }
 
