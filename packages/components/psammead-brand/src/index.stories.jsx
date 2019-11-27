@@ -15,8 +15,9 @@ import {
   buildRTLSubstories,
 } from '@bbc/psammead-storybook-helpers';
 import ScriptLink from '@bbc/psammead-script-link';
+import Brand from './index';
+import SkipLink from './SkipLink';
 import notes from '../README.md';
-import Brand, { SkipLink } from './index';
 
 const STORY_KIND = 'Components|Brand';
 const inputs = (service = 'news') => {
@@ -165,8 +166,18 @@ storiesOf(STORY_KIND, module)
     { notes },
   )
   .add(
-    'with skip to content link',
-    ({ service, script }) => {
+    'with skip to content link and script link',
+    ({ service, script, dir }) => {
+      const scriptLink = (
+        <ScriptLink
+          script={script}
+          service={service}
+          href="https://www.bbc.com/serbian/lat"
+        >
+          Lat
+        </ScriptLink>
+      );
+
       const {
         productInput,
         serviceLocalisedNameInput,
@@ -181,7 +192,7 @@ storiesOf(STORY_KIND, module)
       } = inputs();
 
       const skipLink = (
-        <SkipLink service={service} script={script} href="#content">
+        <SkipLink service={service} script={script} href="#content" dir={dir}>
           Skip to content
         </SkipLink>
       );
@@ -200,6 +211,7 @@ storiesOf(STORY_KIND, module)
           backgroundColour={backgroundColour}
           logoColour={logoColour}
           skipLink={skipLink}
+          scriptLink={scriptLink}
         />
       );
     },

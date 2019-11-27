@@ -1,6 +1,6 @@
 {
   "name": "@bbc/psammead-embed-error",
-  "version": "1.0.0-alpha.4",
+  "version": "1.0.0-alpha.6",
   "publishConfig": {
     "tag": "alpha"
   },
@@ -29,8 +29,8 @@
   ],
   "dependencies": {
     "@bbc/gel-foundations": "^3.4.1",
-    "@bbc/psammead-assets": "^2.10.1",
-    "@bbc/psammead-styles": "^4.1.1"
+    "@bbc/psammead-assets": "^2.10.3",
+    "@bbc/psammead-styles": "^4.1.2"
   },
   "peerDependencies": {
     "react": "^16.9.0",
