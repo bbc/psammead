@@ -10,10 +10,12 @@ This package provides a collection of common values that are used in storybook b
 
 1. Provides the decorated stories with the following properties that can be passed into components:
 
-- `text`: A string of text in the language of the chosen service.
+- `text`: A short string of text in the language of the chosen service.
+- `longText`: A long string of text in the language of the chosen service (we can use this to stress test components).
 - `dir`: The reading directionality of the chosen service e.g. `ltr` or `rtl`
 - `script`: The chosen service's script typography settings e.g. the font-size and line-heights.
 - `service`: The name of the chosen service e.g. `arabic`
+- `variant`: The variant value of a chosen service, e.g `serbianLat` will have variant `lat`. Non variant service will default to `default`
 
 2. Toggles the layout directionality of the chosen service.
 
