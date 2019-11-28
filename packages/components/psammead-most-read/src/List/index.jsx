@@ -23,7 +23,6 @@ const MostReadItemProps = {
 };
 
 const MostReadRankProps = {
-  item: true,
   columns: {
     group0: 2,
     group1: 2,
@@ -32,6 +31,7 @@ const MostReadRankProps = {
     group4: 2,
     group5: 2,
   },
+  item: true,
 };
 
 const MostReadLinkProps = {

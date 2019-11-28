@@ -19,10 +19,9 @@ import {
 const paddingStart = ({ dir }) => `padding-${dir === 'ltr' ? 'left' : 'right'}`;
 
 const StyledLink = styled.a`
-  ${({ service }) => getSerifMedium(service)}
-  ${({ script }) => script && getDoublePica(script)};
   color: ${C_EBON};
-
+  ${({ script }) => script && getDoublePica(script)};
+  ${({ service }) => getSerifMedium(service)}
   text-decoration: none;
 
   &:hover,

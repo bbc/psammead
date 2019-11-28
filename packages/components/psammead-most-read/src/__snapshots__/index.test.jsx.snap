@@ -6,12 +6,12 @@ exports[`MostRead should render with ltr most read with correct dir 1`] = `
 }
 
 .c9 {
+  color: #222222;
+  font-size: 1.125rem;
+  line-height: 1.375rem;
   font-family: ReithSerif,Helvetica,Arial,sans-serif;
   font-weight: 500;
   font-style: normal;
-  font-size: 1.125rem;
-  line-height: 1.375rem;
-  color: #222222;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
@@ -702,12 +702,12 @@ exports[`MostRead should render with rtl most read with correct dir 1`] = `
 }
 
 .c9 {
+  color: #222222;
+  font-size: 1.5rem;
+  line-height: 2rem;
   font-family: "BBC Nassim Arabic",Arial,Verdana,Geneva,Helvetica,sans-serif;
   font-weight: 700;
   font-style: normal;
-  font-size: 1.5rem;
-  line-height: 2rem;
-  color: #222222;
   -webkit-text-decoration: none;
   text-decoration: none;
 }

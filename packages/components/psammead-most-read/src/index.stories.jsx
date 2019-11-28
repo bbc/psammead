@@ -7,7 +7,7 @@ import Timestamp from '@bbc/psammead-timestamp';
 import MostReadList from './List';
 import MostReadTitle from './Title';
 import { MostReadLink, MostReadRank } from './Item';
-import { itemsLTR, itemsRTL, links } from './testHelpers/fixtureData';
+import { itemsLTR, itemsRTL } from './testHelpers/fixtureData';
 import {
   arabicServiceDecorator,
   bengaliServiceDecorator,
@@ -45,7 +45,7 @@ const stories = storiesOf('Components|MostRead/Item', module)
   .addDecorator(withKnobs)
   .addDecorator(withServicesKnob());
 
-links.forEach(({ language, ...props }) => {
+[itemsLTR[0], itemsRTL[0]].forEach(({ language, ...props }) => {
   stories.add(`MostReadLink ${language}`, ({ script, service }) => (
     <MostReadLink link={props} service={service} script={script} />
   ));
@@ -53,7 +53,7 @@ links.forEach(({ language, ...props }) => {
 
 stories.add(`MostReadLink with last updated date`, ({ script, service }) => (
   <MostReadLink
-    link={links[0]}
+    link={itemsLTR[0]}
     lastUpdated={lastUpdated(script, service)}
     service={service}
     script={script}
