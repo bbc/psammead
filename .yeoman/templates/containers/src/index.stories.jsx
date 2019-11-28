@@ -3,7 +3,7 @@ import { storiesOf } from '@storybook/react';
 import notes from '../README.md';
 import <%= packageName %> from './index';
 
-storiesOf('<%= packageName %>', module)
+storiesOf('Containers|<%= packageName %>', module)
   .add(
     'default',
     () => (<<%= packageName %> />),
