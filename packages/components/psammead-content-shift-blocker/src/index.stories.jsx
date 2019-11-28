@@ -100,7 +100,7 @@ storiesOf('Components|ContentShiftBlocker', module)
     { notes },
   )
   .add(
-    'article with mulitple dynamic resize components',
+    'article with multiple dynamic resize components',
     ({ text, script, service }) => {
       return (
         <Wrapper>
@@ -119,7 +119,7 @@ storiesOf('Components|ContentShiftBlocker', module)
     { notes },
   )
   .add(
-    'article with mulitple time-staggered dynamic resize components',
+    'article with multiple time-staggered dynamic resize components',
     ({ text, script, service }) => {
       return (
         <Wrapper>
@@ -138,7 +138,7 @@ storiesOf('Components|ContentShiftBlocker', module)
     { notes },
   )
   .add(
-    'mulitple time-staggered dynamic resize components',
+    'multiple time-staggered dynamic resize components',
     ({ script, service }) => {
       return (
         <Wrapper>
