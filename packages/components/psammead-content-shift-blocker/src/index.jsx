@@ -138,7 +138,7 @@ const ContentShiftBlocker = ({ children, initialHeight, initialWidth }) => {
     }
   }, [contentElRect]);
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     // wrapper did resize
     if (scrollAnchoringIsSupported.current || scrollHeight.current === null) {
       return;
