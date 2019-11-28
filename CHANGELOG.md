@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 2.0.23 | [PR#2714](https://github.com/bbc/psammead/pull/2714) Talos - Bump Dependencies - @bbc/psammead-storybook-helpers |
 | 2.0.22 | [PR#2611](https://github.com/bbc/psammead/pull/2611) Improve yeoman generator, internal refactor to introduce seperate package templates |
 | 2.0.21 | [PR#2708](https://github.com/bbc/psammead/pull/2708) Talos - Bump Dependencies - @bbc/psammead-image-placeholder, @bbc/psammead-media-indicator |
 | 2.0.20 | [PR#2705](https://github.com/bbc/psammead/pull/2705) Talos - Bump Dependencies - @bbc/psammead-assets |
