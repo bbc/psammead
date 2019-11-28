@@ -18,6 +18,19 @@ const getHeight = ({ wrapperHeight }) => getSize(wrapperHeight);
 
 const getWidth = ({ wrapperWidth }) => getSize(wrapperWidth);
 
+const calculateNewScrollY = ({
+  prevScrollHeight,
+  currentScrollHeight,
+  currentScrollY,
+}) => {
+  const scrollHeightDiff = prevScrollHeight - currentScrollHeight;
+
+  if (scrollHeightDiff !== 0) {
+    return currentScrollY - scrollHeightDiff;
+  }
+  return null;
+};
+
 const Wrapper = styled.div`
   overflow: auto;
   height: ${getHeight};
@@ -131,13 +144,18 @@ const ContentShiftBlocker = ({ children, initialHeight, initialWidth }) => {
       return;
     }
 
-    const { scrollHeight: newScrollHeight } = document.body;
+    const { scrollHeight: currentScrollHeight } = document.body;
     const { current: prevScrollHeight } = scrollHeight;
-    const scrollHeightDiff = prevScrollHeight - newScrollHeight;
+    const currentScrollY = window.pageYOffset;
+    const newScrollY = calculateNewScrollY({
+      prevScrollHeight,
+      currentScrollHeight,
+      currentScrollY,
+    });
 
-    if (scrollHeightDiff !== 0) {
+    if (newScrollY) {
       // adjust scrollY position to prevent visible jump
-      window.scrollTo(0, window.pageYOffset - scrollHeightDiff);
+      window.scrollTo(0, newScrollY);
     }
   }, [wrapperDimensions]);
 
