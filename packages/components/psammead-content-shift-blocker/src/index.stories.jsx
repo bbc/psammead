@@ -169,5 +169,5 @@ storiesOf('Components|ContentShiftBlocker', module)
         </Wrapper>
       );
     },
-    { notes },
+    { notes, chromatic: { disable: true } },
   );
