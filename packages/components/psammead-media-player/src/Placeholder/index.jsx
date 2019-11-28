@@ -1,5 +1,5 @@
 import React from 'react';
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 import { string, func, shape, oneOf } from 'prop-types';
 import Image from '@bbc/psammead-image';
 import PlayButton from '@bbc/psammead-play-button';
@@ -18,7 +18,13 @@ const StyledPlaceholder = styled.div`
 const StyledPlayButton = styled(PlayButton)`
   position: absolute;
   bottom: 0;
-
+  ${({ noJsClassName }) =>
+    noJsClassName &&
+    css`
+      .${noJsClassName} & {
+        display: none;
+      }
+    `}
   /* stylelint-disable */
   /* https://www.styled-components.com/docs/advanced#referring-to-other-components */
   ${StyledPlaceholder}:hover &,
@@ -28,7 +34,15 @@ const StyledPlayButton = styled(PlayButton)`
   /* stylelint-enable */
 `;
 
-const Placeholder = ({ onClick, service, src, srcset, mediaInfo }) => {
+const Placeholder = ({
+  onClick,
+  service,
+  src,
+  srcset,
+  mediaInfo,
+  noJsClassName,
+  noJsMessage,
+}) => {
   const {
     title,
     datetime,
@@ -40,9 +54,12 @@ const Placeholder = ({ onClick, service, src, srcset, mediaInfo }) => {
 
   return (
     <StyledPlaceholder onClick={onClick}>
-      {guidanceMessage && (
-        <Guidance service={service} guidanceMessage={guidanceMessage} />
-      )}
+      <Guidance
+        service={service}
+        guidanceMessage={guidanceMessage}
+        noJsClassName={noJsClassName}
+        noJsMessage={noJsMessage}
+      />
       <StyledPlayButton
         title={title}
         service={service}
@@ -52,7 +69,9 @@ const Placeholder = ({ onClick, service, src, srcset, mediaInfo }) => {
         durationSpoken={durationSpoken}
         type={type}
         guidanceMessage={guidanceMessage}
+        noJsClassName={noJsClassName}
       />
+
       <Image alt="" src={src} srcset={srcset} />
     </StyledPlaceholder>
   );
@@ -63,6 +82,8 @@ Placeholder.propTypes = {
   service: string.isRequired,
   src: string.isRequired,
   srcset: string,
+  noJsClassName: string,
+  noJsMessage: string.isRequired,
   mediaInfo: shape({
     title: string.isRequired,
     datetime: string,
@@ -74,6 +95,7 @@ Placeholder.propTypes = {
 };
 Placeholder.defaultProps = {
   srcset: null,
+  noJsClassName: null,
   mediaInfo: shape({
     datetime: null,
     duration: null,
