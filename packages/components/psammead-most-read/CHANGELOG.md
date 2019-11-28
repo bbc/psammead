@@ -3,6 +3,8 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 0.1.0-alpha.6 | [PR#2701](https://github.com/bbc/psammead/pull/2701) Talos - Bump Dependencies - @bbc/psammead-styles |
+| 0.1.0-alpha.5 | [PR#2697](https://github.com/bbc/psammead/pull/2697) Talos - Bump Dependencies - @bbc/psammead-styles |
 | 0.1.0-alpha.4 | [PR#2682](https://github.com/bbc/psammead/pull/2682) Fix `MostReadList` broken grid layout on IE |
 | 0.1.0-alpha.3 | [PR#2574](https://github.com/bbc/psammead/pull/2574) Create `MostReadList` component |
 | 0.1.0-alpha.2 | [PR#2491](https://github.com/bbc/psammead/pull/2491) Create and Export `MostReadItem` and `StyledCountSpan` |

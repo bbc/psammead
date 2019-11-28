@@ -63,8 +63,11 @@ it('should pass the correct props to the story function', () => {
     script: scripts.latin,
     service: 'news',
     text: 'Could a computer ever create better art than a human?',
+    longText:
+      'The critic, author, poet and TV host was known for his witty commentary on international television.',
     dir: 'ltr',
     locale: 'en',
+    variant: 'default',
   };
 
   expect(mockStoryFn).toHaveBeenCalledWith(expected);
@@ -79,10 +82,12 @@ it('should pass the correct chosen service props to the story function', () => {
   const expected = {
     script: scripts.arabic,
     service: 'arabic',
-    text:
-      'المحكمة العليا الأمريكية ذات الأغلبية المحافظة وافقت على احتجاز غير المواطنين لأجل غير مسمى حتى بعد سنوات من خروجهم من السجن',
+    text: 'لماذا يخجل البعض من اسم قريته في مصر؟',
+    longText:
+      'هناك وقائع عدة تتسم بالسخرية والجدل والتنمر، ضد أهل القرية الذين أصابهم الغضب والسخط مما دفعهم إلى تقديم طلب لتغيير اسم قريتهم.',
     dir: 'rtl',
     locale: 'ar',
+    variant: 'default',
   };
 
   expect(mockStoryFn).toHaveBeenCalledWith(expected);
@@ -97,7 +102,9 @@ it('should pass the correct chosen service props to the story function', () => {
   const expected = {
     script: scripts.chinese,
     service: 'ukchina',
-    text: '该计划的批评者说，这个政策不能解决住房短缺的问题（Credit: Alamy）',
+    text: '该计划的批评者说，这个政策不能解决住房短缺的问题',
+    longText:
+      '但在当今世界，尽管许多人已不再把步行作为一种主要的出行方式，但巴黎仍然是属于孤僻、哲学式观察者的理想城市。毕竟，法国人习惯于花时间以文学和哲学的方式观察和思考周围的环境',
     dir: 'ltr',
     locale: 'zh-cn',
     variant: 'simp',

@@ -1,13 +1,13 @@
 import React from 'react';
 import { shouldMatchSnapshot } from '@bbc/psammead-test-helpers';
 import { render } from '@testing-library/react';
-import <%= componentName %> from './index';
+import <%= packageName %> from './index';
 
-describe('<%= componentName %>', () => {
-  shouldMatchSnapshot('should render correctly', <<%= componentName %> />);
+describe('<%= packageName %>', () => {
+  shouldMatchSnapshot('should render correctly', <<%= packageName %> />);
 
   it('should test example template', () => {
-    const { container } = render(<<%= componentName %> />);
+    const { container } = render(<<%= packageName %> />);
     expect(container.querySelector('h1').textContent).toEqual('Hello World');
   });
 
