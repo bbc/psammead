@@ -200,19 +200,15 @@ const dropdownStory = () => ({ dir, script, service }) => (
   </Dropdown>
 );
 
-const storiesWithoutBrand = storiesOf(
-  'Components|Navigation/without brand',
-  module,
-)
+const canonicalStories = storiesOf('Components|Navigation/Canonical', module)
   .addDecorator(withKnobs)
-  .addDecorator(ampDecorator)
   .addDecorator(withServicesKnob());
 
 navStoriesData.map(item => {
   const { title, skipLinkText, currentPageText, data, dir } = item;
   const isAmp = false;
 
-  return storiesWithoutBrand.add(
+  return canonicalStories.add(
     title,
     navigationStory(skipLinkText, currentPageText, data, dir, false, isAmp),
     {
@@ -221,7 +217,7 @@ navStoriesData.map(item => {
   );
 });
 
-storiesWithoutBrand.add(
+canonicalStories.add(
   'Canonical Menu Button',
   () => {
     const isOpen = boolean('Open', false);
@@ -241,28 +237,12 @@ storiesWithoutBrand.add(
   },
 );
 
-storiesWithoutBrand.add(
-  'AMP Menu Button',
-  () => (
-    <BackgroundContainer>
-      <AmpMenuButton announcedText="Menu" onToggle="" />
-    </BackgroundContainer>
-  ),
-  {
-    notes,
-  },
-);
-
-storiesWithoutBrand.add('Dropdown menu', dropdownStory(), {
+canonicalStories.add('Dropdown menu', dropdownStory(), {
   notes,
 });
 
-const storiesWithBrand = storiesOf('Components|Navigation/with brand', module)
-  .addDecorator(withKnobs)
-  .addDecorator(withServicesKnob());
-
-storiesWithBrand.add(
-  navStoriesData[0].title,
+canonicalStories.add(
+  'Igbo with brand',
   navigationStory(
     navStoriesData[0].skipLinkText,
     navStoriesData[0].currentPageText,
@@ -279,6 +259,7 @@ storiesWithBrand.add(
 const ampStories = storiesOf('Components|Navigation/AMP', module)
   .addDecorator(ampDecorator)
   .addDecorator(withKnobs)
+  .addDecorator(ampDecorator)
   .addDecorator(withServicesKnob());
 
 navStoriesData.map(item => {
@@ -293,3 +274,15 @@ navStoriesData.map(item => {
     },
   );
 });
+
+ampStories.add(
+  'AMP Menu Button',
+  () => (
+    <BackgroundContainer>
+      <AmpMenuButton announcedText="Menu" onToggle="" />
+    </BackgroundContainer>
+  ),
+  {
+    notes,
+  },
+);
