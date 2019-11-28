@@ -35,7 +35,7 @@ export default ({
     locale,
     dir,
     service,
-    variant,
+    variant: variant || 'default',
   };
 
   return (
