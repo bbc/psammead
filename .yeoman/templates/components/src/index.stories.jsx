@@ -3,9 +3,9 @@ import { storiesOf } from '@storybook/react';
 import { withKnobs } from '@storybook/addon-knobs';
 import { withServicesKnob } from '@bbc/psammead-storybook-helpers';
 import notes from '../README.md';
-import <%= componentName %> from './index';
+import <%= packageName %> from './index';
 
-storiesOf('<%= componentName %>', module)
+storiesOf('Components|<%= packageName %>', module)
   .addDecorator(withKnobs)
   .addDecorator(withServicesKnob())
-  .add('default', () => <<%= componentName %> />, { notes });
+  .add('default', () => <<%= packageName %> />, { notes });
