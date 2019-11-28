@@ -1,4 +1,4 @@
-<h1 align="center">:sparkles: Psammead - BBC Package Library :sparkles:</h1>
+<h1 align="center">:sparkles: Psammea - BBC Package Library :sparkles:</h1>
 
 <div align="center">
 
@@ -21,7 +21,9 @@ Psammead packages are split into:
 - [Utilities](./packages/utilities) - Commonly shared Psammead dependencies, fundamentals to aid building additional GEL-compliant components, and aditional packages for use in building SPAs.
 
 ## Documentation index
+
 Please familiarise yourself with our:
+
 - [Code of conduct](https://github.com/bbc/psammead/blob/latest/CODE_OF_CONDUCT.md)
 - [Code Standards and Ways of Working](https://github.com/bbc/psammead/blob/latest/Code-Standards-and-Ways-of-Working.md)
 - [Contributing guidelines](https://github.com/bbc/psammead/blob/latest/CONTRIBUTING.md)
@@ -81,7 +83,9 @@ npm run build
 ```
 
 ### :computer: Developing with Psammead
+
 <!-- This is both how to develop in psammead and how to use psammead and why is this in the components not packages readme? -->
+
 [Learn how to use Psammead components in your own project.](https://github.com/bbc/psammead/blob/latest/packages/README.md)
 
 ## :bar_chart: Support levels
