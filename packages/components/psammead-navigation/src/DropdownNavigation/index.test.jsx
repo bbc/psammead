@@ -46,8 +46,9 @@ describe('Canonical', () => {
           onClose={mockOnClose}
         />,
       );
+      const menuButton = getByRole(container, 'button');
 
-      fireEvent.click(getByRole(container, 'button'));
+      fireEvent.click(menuButton);
       expect(mockOnClose).toHaveBeenCalledTimes(1);
       expect(mockOnOpen).not.toHaveBeenCalled();
     });
@@ -75,8 +76,9 @@ describe('Canonical', () => {
           onClose={mockOnClose}
         />,
       );
+      const menuButton = getByRole(container, 'button');
 
-      fireEvent.click(getByRole(container, 'button'));
+      fireEvent.click(menuButton);
       expect(mockOnOpen).toHaveBeenCalledTimes(1);
       expect(mockOnClose).not.toHaveBeenCalled();
     });

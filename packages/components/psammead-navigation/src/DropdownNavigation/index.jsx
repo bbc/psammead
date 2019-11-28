@@ -152,7 +152,7 @@ export const CanonicalMenuButton = ({
     onClick={isOpen ? onClose : onOpen}
     aria-expanded={isOpen ? 'true' : 'false'}
   >
-    {isOpen ? navigationIcons.hamburger : navigationIcons.cross}
+    {isOpen ? navigationIcons.cross : navigationIcons.hamburger}
   </MenuButton>
 );
 

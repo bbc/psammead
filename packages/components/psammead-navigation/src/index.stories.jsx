@@ -224,7 +224,7 @@ navStoriesData.map(item => {
 storiesWithoutBrand.add(
   'Canonical Menu Button',
   () => {
-    const isOpen = boolean('Open', true);
+    const isOpen = boolean('Open', false);
     return (
       <BackgroundContainer>
         <CanonicalMenuButton
