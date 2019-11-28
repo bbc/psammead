@@ -181,7 +181,7 @@ const gujaratiStyles = {
 /*
  *  HINDI
  */
-const hindiFontFamily = `font-family: "Noto Sans Devanagari", Arial, Verdana, Geneva, Helvetica, sans-serif;`;
+const hindiFontFamily = `font-family: Arial, Verdana, Geneva, Helvetica, sans-serif;`;
 
 const hindiStyles = {
   sansRegular: `
@@ -245,7 +245,7 @@ const marathiStyles = {
 /*
  *  NEPALI
  */
-const nepaliFontFamily = `font-family: "Noto Sans Devanagari", Arial, Verdana, Geneva, Helvetica, sans-serif;`;
+const nepaliFontFamily = `font-family: Arial, Verdana, Geneva, Helvetica, sans-serif;`;
 
 const nepaliStyles = {
   sansRegular: `
@@ -317,6 +317,10 @@ const teluguStyles = {
     ${teluguFontFamily}
     ${getFontStyleAndWeight('normal', 400)}
   `,
+  sansBold: `
+    ${teluguFontFamily}
+    ${getFontStyleAndWeight('normal', 700)}
+  `,
 };
 
 /*
@@ -355,6 +359,7 @@ export const afaanoromoo = helmetFontStyles;
 export const afrique = helmetFontStyles;
 export const amharic = amharicStyles;
 export const arabic = nassimFontStyles(nassimArabicFontFamily);
+export const archive = latinReithFontStyles;
 export const azeri = helmetFontStyles;
 export const bengali = bengaliStyles;
 export const burmese = burmeseStyles;

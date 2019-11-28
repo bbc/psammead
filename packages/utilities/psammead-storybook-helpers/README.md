@@ -10,10 +10,12 @@ This package provides a collection of common values that are used in storybook b
 
 1. Provides the decorated stories with the following properties that can be passed into components:
 
-- `text`: A string of text in the language of the chosen service.
+- `text`: A short string of text in the language of the chosen service.
+- `longText`: A long string of text in the language of the chosen service (we can use this to stress test components).
 - `dir`: The reading directionality of the chosen service e.g. `ltr` or `rtl`
 - `script`: The chosen service's script typography settings e.g. the font-size and line-heights.
 - `service`: The name of the chosen service e.g. `arabic`
+- `variant`: The variant value of a chosen service, e.g `serbianLat` will have variant `lat`. Non variant service will default to `default`
 
 2. Toggles the layout directionality of the chosen service.
 
@@ -89,18 +91,32 @@ storiesOf('Components|Paragraph', module)
     ),
 ```
 
-If you want to add this decorator to a single story rather than a series of stories as documented above then you could write a story like this:
+If you want to add this decorator to a single story rather than a series of stories as documented above, perhaps because you need each story to have a different default service, then you need to decorate each story directly instead of using the `addDecorator` method. An example of how you could write this is shown below:
 
 ```js
+const arabicServiceDecorator = withServicesKnob({
+  defaultService: 'arabic',
+});
+
+const pashtoServiceDecorator = withServicesKnob({
+  defaultService: 'pashto',
+});
+
 storiesOf('Components|Paragraph', module)
   .addDecorator(withKnobs)
   .add('A paragraph with Arabic text', () =>
-    withServicesKnob({
-      defaultService: 'arabic',
-      services: ['news', 'arabic', 'amharic'],
-    })(({ text, script, service }) => (
+    arabicServiceDecorator(({ text, script, service }) => (
       <Paragraph script={script} service={service}>
         {text}
+      </Paragraph>
+    )),
+  )
+  .add('A paragraph with Arabic text', () =>
+    pashtoServiceDecorator(({ text, script, service }) => (
+      <Paragraph script={script} service={service}>
+        {`${text} `}
+        <InlineLink href="https://www.bbc.com">{text}</InlineLink>
+        {` ${text}`}
       </Paragraph>
     )),
   );
