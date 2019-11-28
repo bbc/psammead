@@ -8,8 +8,6 @@ This component is currently tagged as alpha and is not suitable for production u
 
 The `Bulletin` component can be used to render `Radio` or `TVBulletin` by passing in the `type`.
 
-This component is hidden on breakpoints above 600px.
-
 ## Installation
 
 ```jsx
@@ -33,6 +31,8 @@ npm install @bbc/psammead-bulletin --save
 | `headlineText` | string | yes | N/A  | `'Bulletin headline'` |
 | `isLive` | boolean | no | `false` | `true` |
 | `liveText` | string | no | `'Live'` | `'Localised Live'` |
+| `dir` | string | no | `'ltr'` | `One of ['rtl', 'ltr']` |
+| `lang` | string | no | `'en-GB'` | `'en-GB'` |
 
 ## Usage
 

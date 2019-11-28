@@ -1,5 +1,5 @@
 import React from 'react';
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 import { GEL_GROUP_3_SCREEN_WIDTH_MIN } from '@bbc/gel-foundations/breakpoints';
 import { GEL_SPACING, GEL_SPACING_DBL } from '@bbc/gel-foundations/spacings';
 import {
@@ -10,20 +10,109 @@ import {
   C_LUNAR,
 } from '@bbc/psammead-styles/colours';
 import { string, oneOf, node, bool, shape } from 'prop-types';
-import { getSansRegular, getSansBold } from '@bbc/psammead-styles/font-styles';
+import {
+  getSansRegular,
+  getSerifMedium,
+} from '@bbc/psammead-styles/font-styles';
 import { scriptPropType } from '@bbc/gel-foundations/prop-types';
 import { getPica, getLongPrimer } from '@bbc/gel-foundations/typography';
 import { mediaIcons } from '@bbc/psammead-assets/svgs';
 import VisuallyHiddenText from '@bbc/psammead-visually-hidden-text';
 import { Link, LiveLabel } from '@bbc/psammead-story-promo';
+import { grid } from '@bbc/psammead-styles/detection';
 
-const BulletinWrapper = styled.div`
+const twoOfSixColumnsMaxWidthScaleable = `33.33%`;
+// (2 / 6) * 100 = 0.3333333333 = 33.33%
+
+const fourOfSixColumnsMaxWidthScaleable = `66.67%`;
+// (4 / 6) * 100 = 66.6666666667 = 66.67%
+
+const fullWidthColumnsMaxScaleable = `100%`;
+// (12 / 12) * 100 = 100 = 100%
+
+const halfWidthColumnsMaxScaleable = `50%`;
+
+const bulletinWrapperStyles = `
+  position: relative;
+  background-color: ${C_LUNAR};
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-column-gap: ${GEL_SPACING_DBL};
+`;
+
+const imageWrapperStyles = `
+  vertical-align: top;
+  display: inline-block;
+  grid-column: 1 / span 6;
+  padding: ${GEL_SPACING} ${GEL_SPACING} 0 ${GEL_SPACING};
+  @supports (${grid}) {
+    width: initial;
+  }
+`;
+
+const textWrapperStyles = `
+  grid-column: 1 / span 6;
+  display: inline-block;
+  width: ${fullWidthColumnsMaxScaleable};
+  @supports (${grid}) {
+    width: initial;
+    padding: 0;
+  }
+`;
+
+const TVBulletinWrapper = styled.div`
+  ${bulletinWrapperStyles};
   @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
-    display: none;
+    padding: ${GEL_SPACING_DBL};
+  }
+`;
+
+const TVImageWrapper = styled.div`
+  @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
+    grid-column: 1 / span 3;
+    width: ${halfWidthColumnsMaxScaleable};
+    padding: 0;
+  }
+  ${imageWrapperStyles};
+`;
+
+const TVTextWrapper = styled.div`
+  @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
+    grid-column: 4 / span 3;
+    width: ${halfWidthColumnsMaxScaleable};
+    ${({ dir }) =>
+      dir === 'ltr'
+        ? `padding-left: ${GEL_SPACING_DBL};`
+        : `padding-right: ${GEL_SPACING_DBL};`}
   }
 
-  ${({ type }) =>
-    type.toLowerCase() === 'audio' && `background-color: ${C_LUNAR};`}
+  ${textWrapperStyles};
+`;
+
+const RadioBulletinWrapper = styled.div`
+  ${bulletinWrapperStyles};
+  background-color: ${C_LUNAR};
+`;
+
+const RadioImageWrapper = styled.div`
+  @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
+    grid-column: 1 / span 2;
+    width: ${twoOfSixColumnsMaxWidthScaleable};
+    padding: 0;
+  }
+  ${imageWrapperStyles};
+`;
+
+const RadioTextWrapper = styled.div`
+  @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
+    grid-column: 3 / span 4;
+    width: ${fourOfSixColumnsMaxWidthScaleable};
+    ${({ dir }) =>
+      dir === 'ltr'
+        ? `padding-left: ${GEL_SPACING_DBL};`
+        : `padding-right: ${GEL_SPACING_DBL};`}
+  }
+  ${textWrapperStyles};
 `;
 
 const IconWrapper = styled.span`
@@ -33,7 +122,15 @@ const IconWrapper = styled.span`
     color: ${C_WHITE};
     fill: currentColor;
   }
-  margin: 0 0.25rem;
+  
+  ${({ dir }) =>
+    dir === 'ltr'
+      ? `padding-right: ${GEL_SPACING};`
+      : `padding-left: ${GEL_SPACING};`}
+
+  @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
+    display: inline-block;
+  }
 `;
 
 const PlayCTA = styled.div.attrs({ 'aria-hidden': true })`
@@ -41,10 +138,15 @@ const PlayCTA = styled.div.attrs({ 'aria-hidden': true })`
   ${({ service }) => service && getSansRegular(service)};
   ${({ script }) => script && getPica(script)};
   color: ${C_WHITE};
-  text-align: center;
+  align-items: center;
   padding: 0.75rem;
   display: flex;
   justify-content: center;
+  @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
+    display: inline-block;
+    padding: ${GEL_SPACING} ${GEL_SPACING_DBL};
+    ${({ isAudio }) => isAudio && `margin-bottom: ${GEL_SPACING_DBL};`}
+  }
 `;
 
 const BulletinSummary = styled.p`
@@ -52,20 +154,35 @@ const BulletinSummary = styled.p`
   ${({ service }) => service && getSansRegular(service)}
   color: ${C_SHADOW};
   margin: 0; /* Reset */
-  ${({ type }) =>
-    type.toLowerCase() === 'audio' && `padding: 0 ${GEL_SPACING};`}
+  padding: 0 ${GEL_SPACING};
+  @media(min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
+    padding-left: 0;
+    padding-right: 0;
+  }
   padding-bottom: ${GEL_SPACING_DBL};
 `;
 
-const BulletinHeading = styled.h3`
+const headingStyles = css`
+  ${({ service }) => service && getSerifMedium(service)}
   ${({ script }) => script && getPica(script)}
-  ${({ service }) => getSansBold(service)}
   color: ${C_EBON};
   margin: 0; /* Reset */
-  ${({ type }) =>
-    type.toLowerCase() === 'audio'
-      ? `padding: ${GEL_SPACING} ${GEL_SPACING};`
-      : `padding: ${GEL_SPACING} 0;`}
+  padding: ${GEL_SPACING_DBL} ${GEL_SPACING} ${GEL_SPACING} ${GEL_SPACING};
+
+`;
+
+const TVHeading = styled.h3`
+  ${headingStyles}
+  @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
+    padding: 0 0 ${GEL_SPACING} 0;
+  }
+`;
+
+const RadioHeading = styled.h3`
+  ${headingStyles}
+  @media(min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
+    padding: ${GEL_SPACING} 0;
+  }
 `;
 
 const Bulletin = ({
@@ -79,25 +196,52 @@ const Bulletin = ({
   ctaText,
   ctaLink,
   liveText,
-}) => (
-  <BulletinWrapper type={type}>
-    {image && type === 'video' && image}
-    <BulletinHeading script={script} service={service} type={type}>
-      <VisuallyHiddenText>
-        {isLive ? `${ctaText} ${liveText} ` : `${ctaText} `}
-      </VisuallyHiddenText>
-      {isLive && <LiveLabel service={service}>{liveText}</LiveLabel>}
-      <Link href={ctaLink}>{headlineText}</Link>
-    </BulletinHeading>
-    <BulletinSummary script={script} service={service} type={type}>
-      {summaryText}
-    </BulletinSummary>
-    <PlayCTA isLive={isLive} service={service} script={script}>
-      <IconWrapper>{mediaIcons[type.toLowerCase()]}</IconWrapper>
-      {ctaText}
-    </PlayCTA>
-  </BulletinWrapper>
-);
+  dir,
+  lang,
+}) => {
+  const isAudio = type === 'audio';
+  const BulletinWrapper = isAudio ? RadioBulletinWrapper : TVBulletinWrapper;
+  const ImageWrapper = isAudio ? RadioImageWrapper : TVImageWrapper;
+  const TextWrapper = isAudio ? RadioTextWrapper : TVTextWrapper;
+  const BulletinHeading = isAudio ? RadioHeading : TVHeading;
+
+  return (
+    <BulletinWrapper>
+      <ImageWrapper>{image}</ImageWrapper>
+      <TextWrapper dir={dir}>
+        <BulletinHeading script={script} service={service} dir={dir}>
+          <Link href={ctaLink}>
+            {/* eslint-disable jsx-a11y/aria-role */}
+            <span role="text">
+              <VisuallyHiddenText lang={lang}>
+                {isLive ? `${ctaText} ${liveText},` : `${ctaText},`}
+              </VisuallyHiddenText>
+              {isLive && (
+                <LiveLabel service={service} dir={dir}>
+                  {liveText}
+                </LiveLabel>
+              )}
+              <span>{headlineText}</span>
+            </span>
+          </Link>
+        </BulletinHeading>
+        <BulletinSummary script={script} service={service} type={type}>
+          {summaryText}
+        </BulletinSummary>
+        <PlayCTA
+          isLive={isLive}
+          service={service}
+          script={script}
+          isAudio={isAudio}
+          dir={dir}
+        >
+          <IconWrapper dir={dir}>{mediaIcons[type]}</IconWrapper>
+          {ctaText}
+        </PlayCTA>
+      </TextWrapper>
+    </BulletinWrapper>
+  );
+};
 
 Bulletin.propTypes = {
   type: oneOf(['video', 'audio']).isRequired,
@@ -110,12 +254,16 @@ Bulletin.propTypes = {
   summaryText: string.isRequired,
   headlineText: string.isRequired,
   liveText: string,
+  dir: oneOf(['ltr', 'rtl']),
+  lang: string,
 };
 
 Bulletin.defaultProps = {
   isLive: false,
   image: null,
   liveText: 'LIVE',
+  dir: 'ltr',
+  lang: 'en-GB',
 };
 
 export default Bulletin;
