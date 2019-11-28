@@ -6,12 +6,12 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
 }
 
 .c8 {
+  color: #222222;
+  font-size: 1.625rem;
+  line-height: 1.875rem;
   font-family: "Shonar Bangla",Helmet,Freesans,Helvetica,Arial,sans-serif;
   font-weight: 700;
   font-style: normal;
-  font-size: 1.625rem;
-  line-height: 1.875rem;
-  color: #222222;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
@@ -31,9 +31,9 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
   font-family: "Shonar Bangla",Helmet,Freesans,Helvetica,Arial,sans-serif;
   font-weight: 400;
   font-style: normal;
+  color: #B80000;
   font-size: 2rem;
   line-height: 2.25rem;
-  color: #B80000;
   margin: 0;
   padding: 0;
   display: inline-block;
@@ -365,7 +365,7 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
           >
             <a
               class="c8"
-              href="https://www.bbc.com/vietnamese/institutional-49283563"
+              href="https://www.bbc.co.uk/news/business-43328806"
             >
               John Lewis staff bonus cut again as profits fall
             </a>
@@ -397,7 +397,7 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
           >
             <a
               class="c8"
-              href="https://www.bbc.com/vietnamese/institutional-49283563"
+              href="https://www.bbc.co.uk/news/business-43328806"
             >
               John Lewis staff bonus cut again as profits fall
             </a>
@@ -429,7 +429,7 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
           >
             <a
               class="c8"
-              href="https://www.bbc.com/vietnamese/institutional-49283563"
+              href="https://www.bbc.co.uk/news/business-43328806"
             >
               John Lewis staff bonus cut again as profits fall
             </a>
@@ -461,7 +461,7 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
           >
             <a
               class="c8"
-              href="https://www.bbc.com/vietnamese/institutional-49283563"
+              href="https://www.bbc.co.uk/news/business-43328806"
             >
               John Lewis staff bonus cut again as profits fall
             </a>
@@ -493,7 +493,7 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
           >
             <a
               class="c8"
-              href="https://www.bbc.com/vietnamese/institutional-49283563"
+              href="https://www.bbc.co.uk/news/business-43328806"
             >
               John Lewis staff bonus cut again as profits fall
             </a>
@@ -525,7 +525,7 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
           >
             <a
               class="c8"
-              href="https://www.bbc.com/vietnamese/institutional-49283563"
+              href="https://www.bbc.co.uk/news/business-43328806"
             >
               John Lewis staff bonus cut again as profits fall
             </a>
@@ -557,7 +557,7 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
           >
             <a
               class="c8"
-              href="https://www.bbc.com/vietnamese/institutional-49283563"
+              href="https://www.bbc.co.uk/news/business-43328806"
             >
               John Lewis staff bonus cut again as profits fall
             </a>
@@ -589,7 +589,7 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
           >
             <a
               class="c8"
-              href="https://www.bbc.com/vietnamese/institutional-49283563"
+              href="https://www.bbc.co.uk/news/business-43328806"
             >
               John Lewis staff bonus cut again as profits fall
             </a>
@@ -621,7 +621,7 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
           >
             <a
               class="c8"
-              href="https://www.bbc.com/vietnamese/institutional-49283563"
+              href="https://www.bbc.co.uk/news/business-43328806"
             >
               John Lewis staff bonus cut again as profits fall
             </a>
@@ -653,7 +653,7 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
           >
             <a
               class="c8"
-              href="https://www.bbc.com/vietnamese/institutional-49283563"
+              href="https://www.bbc.co.uk/news/business-43328806"
             >
               John Lewis staff bonus cut again as profits fall
             </a>
@@ -671,12 +671,12 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
 }
 
 .c8 {
+  color: #222222;
+  font-size: 1.25rem;
+  line-height: 1.875rem;
   font-family: Padauk,Arial,Verdana,Geneva,Helvetica,sans-serif;
   font-weight: 700;
   font-style: normal;
-  font-size: 1.25rem;
-  line-height: 1.875rem;
-  color: #222222;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
@@ -696,9 +696,9 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
   font-family: Padauk,Arial,Verdana,Geneva,Helvetica,sans-serif;
   font-weight: 400;
   font-style: normal;
+  color: #B80000;
   font-size: 2rem;
   line-height: 2.25rem;
-  color: #B80000;
   margin: 0;
   padding: 0;
   display: inline-block;
@@ -1030,7 +1030,7 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
           >
             <a
               class="c8"
-              href="https://www.bbc.com/vietnamese/institutional-49283563"
+              href="https://www.bbc.co.uk/news/business-43328806"
             >
               John Lewis staff bonus cut again as profits fall
             </a>
@@ -1062,7 +1062,7 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
           >
             <a
               class="c8"
-              href="https://www.bbc.com/vietnamese/institutional-49283563"
+              href="https://www.bbc.co.uk/news/business-43328806"
             >
               John Lewis staff bonus cut again as profits fall
             </a>
@@ -1094,7 +1094,7 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
           >
             <a
               class="c8"
-              href="https://www.bbc.com/vietnamese/institutional-49283563"
+              href="https://www.bbc.co.uk/news/business-43328806"
             >
               John Lewis staff bonus cut again as profits fall
             </a>
@@ -1126,7 +1126,7 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
           >
             <a
               class="c8"
-              href="https://www.bbc.com/vietnamese/institutional-49283563"
+              href="https://www.bbc.co.uk/news/business-43328806"
             >
               John Lewis staff bonus cut again as profits fall
             </a>
@@ -1158,7 +1158,7 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
           >
             <a
               class="c8"
-              href="https://www.bbc.com/vietnamese/institutional-49283563"
+              href="https://www.bbc.co.uk/news/business-43328806"
             >
               John Lewis staff bonus cut again as profits fall
             </a>
@@ -1190,7 +1190,7 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
           >
             <a
               class="c8"
-              href="https://www.bbc.com/vietnamese/institutional-49283563"
+              href="https://www.bbc.co.uk/news/business-43328806"
             >
               John Lewis staff bonus cut again as profits fall
             </a>
@@ -1222,7 +1222,7 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
           >
             <a
               class="c8"
-              href="https://www.bbc.com/vietnamese/institutional-49283563"
+              href="https://www.bbc.co.uk/news/business-43328806"
             >
               John Lewis staff bonus cut again as profits fall
             </a>
@@ -1254,7 +1254,7 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
           >
             <a
               class="c8"
-              href="https://www.bbc.com/vietnamese/institutional-49283563"
+              href="https://www.bbc.co.uk/news/business-43328806"
             >
               John Lewis staff bonus cut again as profits fall
             </a>
@@ -1286,7 +1286,7 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
           >
             <a
               class="c8"
-              href="https://www.bbc.com/vietnamese/institutional-49283563"
+              href="https://www.bbc.co.uk/news/business-43328806"
             >
               John Lewis staff bonus cut again as profits fall
             </a>
@@ -1318,7 +1318,7 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
           >
             <a
               class="c8"
-              href="https://www.bbc.com/vietnamese/institutional-49283563"
+              href="https://www.bbc.co.uk/news/business-43328806"
             >
               John Lewis staff bonus cut again as profits fall
             </a>
@@ -1336,12 +1336,12 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
 }
 
 .c8 {
+  color: #222222;
+  font-size: 1.125rem;
+  line-height: 1.375rem;
   font-family: ReithSerif,Helvetica,Arial,sans-serif;
   font-weight: 500;
   font-style: normal;
-  font-size: 1.125rem;
-  line-height: 1.375rem;
-  color: #222222;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
@@ -1361,9 +1361,9 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
   font-family: ReithSerif,Helvetica,Arial,sans-serif;
   font-weight: 300;
   font-style: normal;
+  color: #B80000;
   font-size: 2rem;
   line-height: 2.25rem;
-  color: #B80000;
   margin: 0;
   padding: 0;
   display: inline-block;
@@ -1695,7 +1695,7 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
           >
             <a
               class="c8"
-              href="https://www.bbc.com/vietnamese/institutional-49283563"
+              href="https://www.bbc.co.uk/news/business-43328806"
             >
               John Lewis staff bonus cut again as profits fall
             </a>
@@ -1727,7 +1727,7 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
           >
             <a
               class="c8"
-              href="https://www.bbc.com/vietnamese/institutional-49283563"
+              href="https://www.bbc.co.uk/news/business-43328806"
             >
               John Lewis staff bonus cut again as profits fall
             </a>
@@ -1759,7 +1759,7 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
           >
             <a
               class="c8"
-              href="https://www.bbc.com/vietnamese/institutional-49283563"
+              href="https://www.bbc.co.uk/news/business-43328806"
             >
               John Lewis staff bonus cut again as profits fall
             </a>
@@ -1791,7 +1791,7 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
           >
             <a
               class="c8"
-              href="https://www.bbc.com/vietnamese/institutional-49283563"
+              href="https://www.bbc.co.uk/news/business-43328806"
             >
               John Lewis staff bonus cut again as profits fall
             </a>
@@ -1823,7 +1823,7 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
           >
             <a
               class="c8"
-              href="https://www.bbc.com/vietnamese/institutional-49283563"
+              href="https://www.bbc.co.uk/news/business-43328806"
             >
               John Lewis staff bonus cut again as profits fall
             </a>
@@ -1855,7 +1855,7 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
           >
             <a
               class="c8"
-              href="https://www.bbc.com/vietnamese/institutional-49283563"
+              href="https://www.bbc.co.uk/news/business-43328806"
             >
               John Lewis staff bonus cut again as profits fall
             </a>
@@ -1887,7 +1887,7 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
           >
             <a
               class="c8"
-              href="https://www.bbc.com/vietnamese/institutional-49283563"
+              href="https://www.bbc.co.uk/news/business-43328806"
             >
               John Lewis staff bonus cut again as profits fall
             </a>
@@ -1919,7 +1919,7 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
           >
             <a
               class="c8"
-              href="https://www.bbc.com/vietnamese/institutional-49283563"
+              href="https://www.bbc.co.uk/news/business-43328806"
             >
               John Lewis staff bonus cut again as profits fall
             </a>
@@ -1951,7 +1951,7 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
           >
             <a
               class="c8"
-              href="https://www.bbc.com/vietnamese/institutional-49283563"
+              href="https://www.bbc.co.uk/news/business-43328806"
             >
               John Lewis staff bonus cut again as profits fall
             </a>
@@ -1983,7 +1983,7 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
           >
             <a
               class="c8"
-              href="https://www.bbc.com/vietnamese/institutional-49283563"
+              href="https://www.bbc.co.uk/news/business-43328806"
             >
               John Lewis staff bonus cut again as profits fall
             </a>
@@ -2001,12 +2001,12 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
 }
 
 .c8 {
+  color: #222222;
+  font-size: 1.5rem;
+  line-height: 2rem;
   font-family: "BBC Nassim Arabic",Arial,Verdana,Geneva,Helvetica,sans-serif;
   font-weight: 700;
   font-style: normal;
-  font-size: 1.5rem;
-  line-height: 2rem;
-  color: #222222;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
@@ -2019,16 +2019,16 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
 
 .c7 {
   padding-bottom: 1.5rem;
-  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .c5 {
   font-family: "BBC Nassim Arabic",Arial,Verdana,Geneva,Helvetica,sans-serif;
   font-weight: 400;
   font-style: normal;
+  color: #B80000;
   font-size: 2rem;
   line-height: 2.25rem;
-  color: #B80000;
   margin: 0;
   padding: 0;
   display: inline-block;
@@ -2306,7 +2306,7 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
 @media (min-width:80rem) {
   .c7 {
     padding-top: 0.5rem;
-    padding-left: 2rem;
+    padding-right: 2rem;
   }
 }
 
@@ -2333,16 +2333,16 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
   >
     <div
       class="c2"
-      dir="ltr"
+      dir="rtl"
     >
       <div
         as="li"
         class="c3"
-        dir="ltr"
+        dir="rtl"
       >
         <div
           class="c4"
-          dir="ltr"
+          dir="rtl"
         >
           <span
             class="c5"
@@ -2352,15 +2352,15 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
         </div>
         <div
           class="c6"
-          dir="ltr"
+          dir="rtl"
         >
           <div
             class="c7"
-            dir="ltr"
+            dir="rtl"
           >
             <a
               class="c8"
-              href="https://www.bbc.com/vietnamese/institutional-49283563"
+              href="https://www.bbc.com/persian/iran-46965704"
             >
               ایران از لغو 'رزمایش قطع اینترنت' خبر داد
             </a>
@@ -2370,11 +2370,11 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
       <div
         as="li"
         class="c3"
-        dir="ltr"
+        dir="rtl"
       >
         <div
           class="c4"
-          dir="ltr"
+          dir="rtl"
         >
           <span
             class="c5"
@@ -2384,15 +2384,15 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
         </div>
         <div
           class="c6"
-          dir="ltr"
+          dir="rtl"
         >
           <div
             class="c7"
-            dir="ltr"
+            dir="rtl"
           >
             <a
               class="c8"
-              href="https://www.bbc.com/vietnamese/institutional-49283563"
+              href="https://www.bbc.com/persian/iran-46965704"
             >
               ایران از لغو 'رزمایش قطع اینترنت' خبر داد
             </a>
@@ -2402,11 +2402,11 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
       <div
         as="li"
         class="c3"
-        dir="ltr"
+        dir="rtl"
       >
         <div
           class="c4"
-          dir="ltr"
+          dir="rtl"
         >
           <span
             class="c5"
@@ -2416,15 +2416,15 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
         </div>
         <div
           class="c6"
-          dir="ltr"
+          dir="rtl"
         >
           <div
             class="c7"
-            dir="ltr"
+            dir="rtl"
           >
             <a
               class="c8"
-              href="https://www.bbc.com/vietnamese/institutional-49283563"
+              href="https://www.bbc.com/persian/iran-46965704"
             >
               ایران از لغو 'رزمایش قطع اینترنت' خبر داد
             </a>
@@ -2434,11 +2434,11 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
       <div
         as="li"
         class="c3"
-        dir="ltr"
+        dir="rtl"
       >
         <div
           class="c4"
-          dir="ltr"
+          dir="rtl"
         >
           <span
             class="c5"
@@ -2448,15 +2448,15 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
         </div>
         <div
           class="c6"
-          dir="ltr"
+          dir="rtl"
         >
           <div
             class="c7"
-            dir="ltr"
+            dir="rtl"
           >
             <a
               class="c8"
-              href="https://www.bbc.com/vietnamese/institutional-49283563"
+              href="https://www.bbc.com/persian/iran-46965704"
             >
               ایران از لغو 'رزمایش قطع اینترنت' خبر داد
             </a>
@@ -2466,11 +2466,11 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
       <div
         as="li"
         class="c3"
-        dir="ltr"
+        dir="rtl"
       >
         <div
           class="c4"
-          dir="ltr"
+          dir="rtl"
         >
           <span
             class="c5"
@@ -2480,15 +2480,15 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
         </div>
         <div
           class="c6"
-          dir="ltr"
+          dir="rtl"
         >
           <div
             class="c7"
-            dir="ltr"
+            dir="rtl"
           >
             <a
               class="c8"
-              href="https://www.bbc.com/vietnamese/institutional-49283563"
+              href="https://www.bbc.com/persian/iran-46965704"
             >
               ایران از لغو 'رزمایش قطع اینترنت' خبر داد
             </a>
@@ -2498,11 +2498,11 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
       <div
         as="li"
         class="c3"
-        dir="ltr"
+        dir="rtl"
       >
         <div
           class="c4"
-          dir="ltr"
+          dir="rtl"
         >
           <span
             class="c5"
@@ -2512,15 +2512,15 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
         </div>
         <div
           class="c6"
-          dir="ltr"
+          dir="rtl"
         >
           <div
             class="c7"
-            dir="ltr"
+            dir="rtl"
           >
             <a
               class="c8"
-              href="https://www.bbc.com/vietnamese/institutional-49283563"
+              href="https://www.bbc.com/persian/iran-46965704"
             >
               ایران از لغو 'رزمایش قطع اینترنت' خبر داد
             </a>
@@ -2530,11 +2530,11 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
       <div
         as="li"
         class="c3"
-        dir="ltr"
+        dir="rtl"
       >
         <div
           class="c4"
-          dir="ltr"
+          dir="rtl"
         >
           <span
             class="c5"
@@ -2544,15 +2544,15 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
         </div>
         <div
           class="c6"
-          dir="ltr"
+          dir="rtl"
         >
           <div
             class="c7"
-            dir="ltr"
+            dir="rtl"
           >
             <a
               class="c8"
-              href="https://www.bbc.com/vietnamese/institutional-49283563"
+              href="https://www.bbc.com/persian/iran-46965704"
             >
               ایران از لغو 'رزمایش قطع اینترنت' خبر داد
             </a>
@@ -2562,11 +2562,11 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
       <div
         as="li"
         class="c3"
-        dir="ltr"
+        dir="rtl"
       >
         <div
           class="c4"
-          dir="ltr"
+          dir="rtl"
         >
           <span
             class="c5"
@@ -2576,15 +2576,15 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
         </div>
         <div
           class="c6"
-          dir="ltr"
+          dir="rtl"
         >
           <div
             class="c7"
-            dir="ltr"
+            dir="rtl"
           >
             <a
               class="c8"
-              href="https://www.bbc.com/vietnamese/institutional-49283563"
+              href="https://www.bbc.com/persian/iran-46965704"
             >
               ایران از لغو 'رزمایش قطع اینترنت' خبر داد
             </a>
@@ -2594,11 +2594,11 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
       <div
         as="li"
         class="c3"
-        dir="ltr"
+        dir="rtl"
       >
         <div
           class="c4"
-          dir="ltr"
+          dir="rtl"
         >
           <span
             class="c5"
@@ -2608,15 +2608,15 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
         </div>
         <div
           class="c6"
-          dir="ltr"
+          dir="rtl"
         >
           <div
             class="c7"
-            dir="ltr"
+            dir="rtl"
           >
             <a
               class="c8"
-              href="https://www.bbc.com/vietnamese/institutional-49283563"
+              href="https://www.bbc.com/persian/iran-46965704"
             >
               ایران از لغو 'رزمایش قطع اینترنت' خبر داد
             </a>
@@ -2626,11 +2626,11 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
       <div
         as="li"
         class="c3"
-        dir="ltr"
+        dir="rtl"
       >
         <div
           class="c4"
-          dir="ltr"
+          dir="rtl"
         >
           <span
             class="c5"
@@ -2640,15 +2640,15 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
         </div>
         <div
           class="c6"
-          dir="ltr"
+          dir="rtl"
         >
           <div
             class="c7"
-            dir="ltr"
+            dir="rtl"
           >
             <a
               class="c8"
-              href="https://www.bbc.com/vietnamese/institutional-49283563"
+              href="https://www.bbc.com/persian/iran-46965704"
             >
               ایران از لغو 'رزمایش قطع اینترنت' خبر داد
             </a>
