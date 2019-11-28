@@ -82,7 +82,7 @@ export const DropdownLi = ({
           // eslint-disable-next-line jsx-a11y/aria-role
           role="text"
         >
-          <VisuallyHiddenText>{currentPageText}</VisuallyHiddenText>
+          <VisuallyHiddenText>{currentPageText}, </VisuallyHiddenText>
           {children}
         </StyledCurrentLink>
       ) : (

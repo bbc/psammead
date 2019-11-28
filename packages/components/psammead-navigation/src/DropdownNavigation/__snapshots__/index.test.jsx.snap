@@ -352,6 +352,7 @@ exports[`Dropdown navigation should render correctly 1`] = `
             class="c5"
           >
             Current page
+            , 
           </span>
           World
         </span>
