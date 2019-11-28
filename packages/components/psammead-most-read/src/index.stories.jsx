@@ -8,13 +8,23 @@ import MostReadList from './List';
 import MostReadTitle from './Title';
 import { MostReadLink, MostReadRank } from './Item';
 import { itemsLTR, itemsRTL } from './testHelpers/fixtureData';
-import {
-  arabicServiceDecorator,
-  bengaliServiceDecorator,
-  burmeseServiceDecorator,
-  newsServiceDecorator,
-} from './testHelpers/stories';
 import MostRead from './index';
+
+const arabicServiceDecorator = withServicesKnob({
+  defaultService: 'arabic',
+});
+
+const bengaliServiceDecorator = withServicesKnob({
+  defaultService: 'bengali',
+});
+
+const burmeseServiceDecorator = withServicesKnob({
+  defaultService: 'burmese',
+});
+
+const newsServiceDecorator = withServicesKnob({
+  defaultService: 'news',
+});
 
 const renderLTRList = ({ service, script }) => (
   <MostReadList items={itemsLTR} service={service} script={script} dir="ltr" />

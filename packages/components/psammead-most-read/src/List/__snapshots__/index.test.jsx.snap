@@ -31,9 +31,9 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
   font-family: "Shonar Bangla",Helmet,Freesans,Helvetica,Arial,sans-serif;
   font-weight: 400;
   font-style: normal;
+  color: #B80000;
   font-size: 2rem;
   line-height: 2.25rem;
-  color: #B80000;
   margin: 0;
   padding: 0;
   display: inline-block;
@@ -696,9 +696,9 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
   font-family: Padauk,Arial,Verdana,Geneva,Helvetica,sans-serif;
   font-weight: 400;
   font-style: normal;
+  color: #B80000;
   font-size: 2rem;
   line-height: 2.25rem;
-  color: #B80000;
   margin: 0;
   padding: 0;
   display: inline-block;
@@ -1361,9 +1361,9 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
   font-family: ReithSerif,Helvetica,Arial,sans-serif;
   font-weight: 300;
   font-style: normal;
+  color: #B80000;
   font-size: 2rem;
   line-height: 2.25rem;
-  color: #B80000;
   margin: 0;
   padding: 0;
   display: inline-block;
@@ -2026,9 +2026,9 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
   font-family: "BBC Nassim Arabic",Arial,Verdana,Geneva,Helvetica,sans-serif;
   font-weight: 400;
   font-style: normal;
+  color: #B80000;
   font-size: 2rem;
   line-height: 2.25rem;
-  color: #B80000;
   margin: 0;
   padding: 0;
   display: inline-block;

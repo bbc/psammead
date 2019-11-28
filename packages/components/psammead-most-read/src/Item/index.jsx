@@ -42,8 +42,8 @@ const StyledItem = styled.div`
 
 export const MostReadRank = styled.span`
   ${({ service }) => getSerifLight(service)}
-  ${({ script }) => script && getFoolscap(script)};
   color: ${C_POSTBOX};
+  ${({ script }) => script && getFoolscap(script)};
   margin: 0; /* Reset */
   padding: 0;
   display: inline-block;
