@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 0.2.0-alpha.1 | [PR#2702](https://github.com/bbc/psammead/pull/2702) Integrate `MostReadItem` and `MostReadTitle` into `MostRead` |
 | 0.1.0-alpha.6 | [PR#2701](https://github.com/bbc/psammead/pull/2701) Talos - Bump Dependencies - @bbc/psammead-styles |
 | 0.1.0-alpha.5 | [PR#2697](https://github.com/bbc/psammead/pull/2697) Talos - Bump Dependencies - @bbc/psammead-styles |
 | 0.1.0-alpha.4 | [PR#2682](https://github.com/bbc/psammead/pull/2682) Fix `MostReadList` broken grid layout on IE |
