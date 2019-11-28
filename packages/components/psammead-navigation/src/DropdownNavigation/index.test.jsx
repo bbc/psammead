@@ -53,6 +53,19 @@ describe('Canonical', () => {
       expect(mockOnOpen).not.toHaveBeenCalled();
     });
 
+    it('should have aria-expanded set as true', () => {
+      const { container } = render(
+        <CanonicalMenuButton
+          announcedText="Menu"
+          onOpen={() => {}}
+          isOpen
+          onClose={() => {}}
+        />,
+      );
+      const menuButton = getByRole(container, 'button');
+      expect(menuButton.getAttribute('aria-expanded')).toBe('true');
+    });
+
     shouldMatchSnapshot(
       'should render correctly',
       <CanonicalMenuButton
@@ -81,6 +94,19 @@ describe('Canonical', () => {
       fireEvent.click(menuButton);
       expect(mockOnOpen).toHaveBeenCalledTimes(1);
       expect(mockOnClose).not.toHaveBeenCalled();
+    });
+
+    it('should have aria-expanded set as false', () => {
+      const { container } = render(
+        <CanonicalMenuButton
+          announcedText="Menu"
+          onOpen={() => {}}
+          isOpen={false}
+          onClose={() => {}}
+        />,
+      );
+      const menuButton = getByRole(container, 'button');
+      expect(menuButton.getAttribute('aria-expanded')).toBe('false');
     });
 
     shouldMatchSnapshot(
