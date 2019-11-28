@@ -8,11 +8,16 @@ import {
   withKnobs,
   boolean,
 } from '@storybook/addon-knobs';
+import { withServicesKnob } from '@bbc/psammead-storybook-helpers';
 import * as svgs from '@bbc/psammead-assets/svgs';
 import { C_POSTBOX, C_WHITE } from '@bbc/psammead-styles/colours';
 import Brand from '@bbc/psammead-brand';
-import { withServicesKnob } from '@bbc/psammead-storybook-helpers';
+import { ampDecorator } from '../../../../.storybook/config';
 import Navigation, { NavigationUl, NavigationLi } from './index';
+import {
+  CanonicalScrollableNavigation,
+  AmpScrollableNavigation,
+} from './ScrollableNavigation';
 import igboNavData from '../testHelpers/igbo';
 import pidginNavData from '../testHelpers/pidgin';
 import yorubaNavData from '../testHelpers/yoruba';
@@ -115,38 +120,48 @@ const navigationStory = (
   navData,
   dir,
   brand,
-) => ({ script, service }) => (
-  <>
-    {brand && getBrand()}
+  isAmp,
+) => ({ script, service }) => {
+  const ScrollableNavigation = isAmp
+    ? AmpScrollableNavigation
+    : CanonicalScrollableNavigation;
 
-    <Navigation
-      script={script}
-      skipLinkText={skipLinkText}
-      service={service}
-      dir={dir}
-    >
-      <NavigationUl>
-        {navData.map((item, index) => {
-          const { title, url } = item;
-          const active = index === 0;
+  return (
+    <>
+      {brand && getBrand()}
 
-          return (
-            <NavigationLi
-              key={title}
-              url={url}
-              script={script}
-              active={active}
-              currentPageText={currentPageText}
-              service={service}
-            >
-              {title}
-            </NavigationLi>
-          );
-        })}
-      </NavigationUl>
-    </Navigation>
-  </>
-);
+      <Navigation
+        script={script}
+        skipLinkText={skipLinkText}
+        service={service}
+        dir={dir}
+      >
+        <ScrollableNavigation dir={dir}>
+          <NavigationUl>
+            {navData.map((item, index) => {
+              const { title, url } = item;
+              const active = index === 0;
+
+              return (
+                <NavigationLi
+                  key={title}
+                  url={url}
+                  script={script}
+                  active={active}
+                  currentPageText={currentPageText}
+                  service={service}
+                  dir={dir}
+                >
+                  {title}
+                </NavigationLi>
+              );
+            })}
+          </NavigationUl>
+        </ScrollableNavigation>
+      </Navigation>
+    </>
+  );
+};
 
 const storiesWithoutBrand = storiesOf(
   'Components|Navigation/without brand',
@@ -157,9 +172,11 @@ const storiesWithoutBrand = storiesOf(
 
 navStoriesData.map(item => {
   const { title, skipLinkText, currentPageText, data, dir } = item;
+  const isAmp = false;
+
   return storiesWithoutBrand.add(
     title,
-    navigationStory(skipLinkText, currentPageText, data, dir),
+    navigationStory(skipLinkText, currentPageText, data, dir, false, isAmp),
     {
       notes,
     },
@@ -178,8 +195,27 @@ storiesWithBrand.add(
     igboNavData,
     navStoriesData[0].dir,
     true,
+    false,
   ),
   {
     notes,
   },
 );
+
+const ampStories = storiesOf('Components|Navigation/AMP', module)
+  .addDecorator(ampDecorator)
+  .addDecorator(withKnobs)
+  .addDecorator(withServicesKnob());
+
+navStoriesData.map(item => {
+  const { title, skipLinkText, currentPageText, data, dir } = item;
+  const isAmp = true;
+
+  return ampStories.add(
+    title,
+    navigationStory(skipLinkText, currentPageText, data, dir, false, isAmp),
+    {
+      notes,
+    },
+  );
+});

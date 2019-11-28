@@ -27,6 +27,7 @@ const AmpMediaPlayer = ({
       <amp-iframe
         sandbox="allow-scripts allow-same-origin"
         layout="fill"
+        scrolling="no"
         frameborder="0"
         src={src}
         title={title}

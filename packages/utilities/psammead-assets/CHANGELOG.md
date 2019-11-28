@@ -3,6 +3,8 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 2.10.3 | [PR#2694](https://github.com/bbc/psammead/pull/2694) Add properties to hide Navigation Icons from screen readers |
+| 2.10.2 | [PR#2686](https://github.com/bbc/psammead/pull/2686) Add SVG for Archive brand logo |
 | 2.10.1 | [PR#2655](https://github.com/bbc/psammead/pull/2655) Update Navigation Icons to scale with browser font size |
 | 2.10.0 | [PR#2631](https://github.com/bbc/psammead/pull/2631) Add AMP_BIND, AMP_LIST, AMP_MUSTACHE scripts to amp-boilerplate exports |
 | 2.9.0 | [PR#2641](https://github.com/bbc/psammead/pull/2641) Add Core icons group with Alert and Info icons |

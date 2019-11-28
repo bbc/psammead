@@ -1,12 +1,20 @@
 const getExistingPackages = require('../get-existing/index.js');
+const getPackageTypes = require('../get-package-types');
 
 module.exports = [
+  {
+    type: 'list',
+    name: 'kind',
+    message:
+      'Please choose the template you want to create',
+    choices: getPackageTypes().map(name => ({ name, value: name })),
+  },
   {
     type: 'input',
     name: 'name',
     message:
       "What would you like to call your package? We'll automatically namespace it for you.",
-    default: 'my-component',
+    default: 'my-package',
     validate(answer) {
       const existingPackages = getExistingPackages();
       if (
