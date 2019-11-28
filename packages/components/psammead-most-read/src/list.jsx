@@ -71,7 +71,7 @@ const StyledLi = styled.li`
 
 const StyledGrid = styled(Grid)`
   grid-auto-flow: column;
-  grid-template-rows: repeat(10, [col-start] auto [col-end]);
+  grid-template-rows: repeat(5, [col-start] auto [col-end]);
   @media (max-width: ${GEL_GROUP_1_SCREEN_WIDTH_MAX}) {
     grid-template-rows: repeat(10, [col-start] auto [col-end]);
   }
