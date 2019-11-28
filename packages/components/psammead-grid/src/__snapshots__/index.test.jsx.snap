@@ -65,8 +65,8 @@ exports[`Grid component should render Grid with Grid items 1`] = `
 
 @media (max-width:14.9375rem) {
   .c1 {
+    width: calc(6/6*(100% - 6 * 0.5rem) + 5 * 0.5rem );
     margin: 0 0.25rem;
-    width: calc(6/6*(100% - 5 * 0.5rem) + 5 * 0.5rem);
     display: inline-block;
     vertical-align: top;
   }
@@ -74,8 +74,8 @@ exports[`Grid component should render Grid with Grid items 1`] = `
 
 @media (min-width:15rem) and (max-width:24.9375rem) {
   .c1 {
+    width: calc(6/6*(100% - 6 * 0.5rem) + 5 * 0.5rem );
     margin: 0 0.25rem;
-    width: calc(6/6*(100% - 5 * 0.5rem) + 5 * 0.5rem);
     display: inline-block;
     vertical-align: top;
   }
@@ -83,8 +83,8 @@ exports[`Grid component should render Grid with Grid items 1`] = `
 
 @media (min-width:25rem) and (max-width:37.4375rem) {
   .c1 {
+    width: calc(6/6*(100% - 6 * 0.5rem) + 5 * 0.5rem );
     margin: 0 0.25rem;
-    width: calc(6/6*(100% - 5 * 0.5rem) + 5 * 0.5rem);
     display: inline-block;
     vertical-align: top;
   }
@@ -92,8 +92,8 @@ exports[`Grid component should render Grid with Grid items 1`] = `
 
 @media (min-width:37.5rem) and (max-width:62.9375rem) {
   .c1 {
+    width: calc(6/6*(100% - 6 * 1rem) + 5 * 1rem );
     margin: 0 0.5rem;
-    width: calc(6/6*(100% - 5 * 1rem) + 5 * 1rem);
     display: inline-block;
     vertical-align: top;
   }
@@ -101,8 +101,8 @@ exports[`Grid component should render Grid with Grid items 1`] = `
 
 @media (min-width:63rem) and (max-width:80rem) {
   .c1 {
+    width: calc(6/8*(100% - 8 * 1rem) + 5 * 1rem );
     margin: 0 0.5rem;
-    width: calc(6/8*(100% - 7 * 1rem) + 5 * 1rem);
     display: inline-block;
     vertical-align: top;
   }
@@ -110,8 +110,8 @@ exports[`Grid component should render Grid with Grid items 1`] = `
 
 @media (min-width:80rem) {
   .c1 {
+    width: calc(12/20*(100% - 20 * 1rem) + 11 * 1rem );
     margin: 0 0.5rem;
-    width: calc(12/20*(100% - 19 * 1rem) + 11 * 1rem);
     display: inline-block;
     vertical-align: top;
   }
@@ -125,7 +125,7 @@ exports[`Grid component should render Grid with Grid items 1`] = `
 
 @media (max-width:14.9375rem) {
   .c3 {
-    width: calc(100%);
+    width: calc(6/6*(100% - 6 * 0.5rem) + 5 * 0.5rem );
     display: inline-block;
     vertical-align: top;
   }
@@ -133,7 +133,7 @@ exports[`Grid component should render Grid with Grid items 1`] = `
 
 @media (min-width:15rem) and (max-width:24.9375rem) {
   .c3 {
-    width: calc(100%);
+    width: calc(6/6*(100% - 6 * 0.5rem) + 5 * 0.5rem );
     display: inline-block;
     vertical-align: top;
   }
@@ -141,7 +141,7 @@ exports[`Grid component should render Grid with Grid items 1`] = `
 
 @media (min-width:25rem) and (max-width:37.4375rem) {
   .c3 {
-    width: calc(100%);
+    width: calc(6/6*(100% - 6 * 0.5rem) + 5 * 0.5rem );
     display: inline-block;
     vertical-align: top;
   }
@@ -149,7 +149,7 @@ exports[`Grid component should render Grid with Grid items 1`] = `
 
 @media (min-width:37.5rem) and (max-width:62.9375rem) {
   .c3 {
-    width: calc(100%);
+    width: calc(6/6*(100% - 6 * 1rem) + 5 * 1rem );
     display: inline-block;
     vertical-align: top;
   }
@@ -157,7 +157,7 @@ exports[`Grid component should render Grid with Grid items 1`] = `
 
 @media (min-width:63rem) and (max-width:80rem) {
   .c3 {
-    width: calc(75%);
+    width: calc(6/8*(100% - 8 * 1rem) + 5 * 1rem );
     display: inline-block;
     vertical-align: top;
   }
@@ -165,7 +165,7 @@ exports[`Grid component should render Grid with Grid items 1`] = `
 
 @media (min-width:80rem) {
   .c3 {
-    width: calc(60%);
+    width: calc(12/20*(100% - 20 * 1rem) + 11 * 1rem );
     display: inline-block;
     vertical-align: top;
   }
@@ -288,8 +288,8 @@ exports[`Grid component should render Grid with Grid items 1`] = `
 
 @media (max-width:14.9375rem) {
   .c6 {
+    width: calc(6/6*(100% - 6 * 0.5rem) + 5 * 0.5rem );
     margin: 0 0.25rem;
-    width: calc(6/6*(100% - 5 * 0.5rem) + 5 * 0.5rem);
     display: inline-block;
     vertical-align: top;
   }
@@ -297,8 +297,8 @@ exports[`Grid component should render Grid with Grid items 1`] = `
 
 @media (min-width:15rem) and (max-width:24.9375rem) {
   .c6 {
+    width: calc(6/6*(100% - 6 * 0.5rem) + 5 * 0.5rem );
     margin: 0 0.25rem;
-    width: calc(6/6*(100% - 5 * 0.5rem) + 5 * 0.5rem);
     display: inline-block;
     vertical-align: top;
   }
@@ -306,8 +306,8 @@ exports[`Grid component should render Grid with Grid items 1`] = `
 
 @media (min-width:25rem) and (max-width:37.4375rem) {
   .c6 {
+    width: calc(6/6*(100% - 6 * 0.5rem) + 5 * 0.5rem );
     margin: 0 0.25rem;
-    width: calc(6/6*(100% - 5 * 0.5rem) + 5 * 0.5rem);
     display: inline-block;
     vertical-align: top;
   }
@@ -315,8 +315,8 @@ exports[`Grid component should render Grid with Grid items 1`] = `
 
 @media (min-width:37.5rem) and (max-width:62.9375rem) {
   .c6 {
+    width: calc(5/6*(100% - 6 * 1rem) + 4 * 1rem );
     margin: 0 0.5rem;
-    width: calc(5/6*(100% - 5 * 1rem) + 4 * 1rem);
     display: inline-block;
     vertical-align: top;
   }
@@ -324,8 +324,8 @@ exports[`Grid component should render Grid with Grid items 1`] = `
 
 @media (min-width:63rem) and (max-width:80rem) {
   .c6 {
+    width: calc(5/8*(100% - 8 * 1rem) + 4 * 1rem );
     margin: 0 0.5rem;
-    width: calc(5/8*(100% - 7 * 1rem) + 4 * 1rem);
     display: inline-block;
     vertical-align: top;
   }
@@ -333,8 +333,8 @@ exports[`Grid component should render Grid with Grid items 1`] = `
 
 @media (min-width:80rem) {
   .c6 {
+    width: calc(10/20*(100% - 20 * 1rem) + 9 * 1rem );
     margin: 0 0.5rem;
-    width: calc(10/20*(100% - 19 * 1rem) + 9 * 1rem);
     display: inline-block;
     vertical-align: top;
   }

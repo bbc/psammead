@@ -157,20 +157,29 @@ const childrenFallback = (
   );
   const guttersWithinParent = parentColumnsGroup - 1;
   const guttersWithinItem = columnsGroup - 1;
+  const adjustedNumberOfGutters = guttersWithinParent + 1; // This is needed since this current implementation cannot handle a negative margin outside the items.
 
   return ` 
   ${marginsGroup ? `padding: 0 ${marginSize};` : ``}
   ${
-    item && parentEnableGelGutters
+    parentEnableGelGutters
       ? ` 
-        margin: 0 ${parseFloat(gutterSize) / 2}rem;
-        width: calc(${columnsGroup}/${parentColumnsGroup}*(100% - ${guttersWithinParent} * ${gutterSize}) + ${guttersWithinItem} * ${gutterSize});
+        width: calc(${columnsGroup}/${parentColumnsGroup}*(100% - ${adjustedNumberOfGutters} * ${gutterSize}) + ${guttersWithinItem} * ${gutterSize} ${negativeOffset});
         `
-      : `
-        width: calc(${(100 * columnsGroup) /
-          parentColumnsGroup}%${negativeOffset});
-        `
+      : ``
   }
+  ${
+    parentEnableGelGutters && item
+      ? `margin: 0 ${parseFloat(gutterSize) / 2}rem;`
+      : ``
+  }
+  ${
+    !parentEnableGelGutters
+      ? `width: calc(${(100 * columnsGroup) /
+          parentColumnsGroup}%${negativeOffset});`
+      : ``
+  }
+  
   ${
     gridStartOffsetGroup && gridStartOffsetGroup < parentColumnsGroup
       ? `margin-${dir === 'ltr' ? 'left' : 'right'}: ${startOffsetPercentage(

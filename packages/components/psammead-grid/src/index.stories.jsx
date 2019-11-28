@@ -1542,7 +1542,7 @@ storiesOf('Components|Grid/startOffset', module)
   .addDecorator(withKnobs)
   .addDecorator(withServicesKnob())
   .add(
-    'Example on the first nested Grid',
+    'Example on nested Grid',
     () => (
       <Grid
         columns={{
@@ -1607,6 +1607,30 @@ storiesOf('Components|Grid/startOffset', module)
             <ExampleParagraph identifier="1" />
           </Grid>
         </Grid>
+      </Grid>
+    ),
+    { notes },
+  )
+  .add(
+    'Example on the first nested Grid',
+    () => (
+      <Grid
+        columns={{
+          group0: 6,
+          group1: 6,
+          group2: 6,
+          group3: 6,
+          group4: 8,
+          group5: 8,
+        }}
+        enableGelGutters
+        margins={{
+          group0: true,
+          group1: true,
+          group2: true,
+          group3: true,
+        }}
+      >
         <Grid
           columns={{
             group0: 6,
