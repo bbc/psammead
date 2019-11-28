@@ -5,7 +5,7 @@ const LTRLink = {
 };
 
 const RTLLink = {
-  service: 'arabic',
+  service: 'persian',
   title: "ایران از لغو 'رزمایش قطع اینترنت' خبر داد",
   href: 'https://www.bbc.com/persian/iran-46965704',
 };
