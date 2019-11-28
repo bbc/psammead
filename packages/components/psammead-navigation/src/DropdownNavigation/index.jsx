@@ -61,7 +61,7 @@ const StyledDropdownLink = styled.a`
   }
 `;
 
-const StyledCurrentLink = styled.span`
+const StyledCurrentLink = styled.span.attrs({ role: 'text' })`
   ${({ dir }) => getStyles(dir)}
 `;
 
@@ -77,11 +77,7 @@ export const DropdownLi = ({
   <StyledDropdownLi role="listitem">
     <StyledDropdownLink script={script} service={service} href={url}>
       {active && currentPageText ? (
-        <StyledCurrentLink
-          dir={dir}
-          // eslint-disable-next-line jsx-a11y/aria-role
-          role="text"
-        >
+        <StyledCurrentLink dir={dir}>
           <VisuallyHiddenText>{currentPageText}, </VisuallyHiddenText>
           {children}
         </StyledCurrentLink>
