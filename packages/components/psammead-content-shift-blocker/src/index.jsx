@@ -2,7 +2,13 @@ import React, { useEffect, useLayoutEffect, useRef, useState } from 'react';
 import when from 'ramda/src/when';
 import is from 'ramda/src/is';
 import { number, string, node, oneOfType } from 'prop-types';
-import styled from 'styled-components';
+import styled, { createGlobalStyle } from 'styled-components';
+
+const GlobalStyle = createGlobalStyle`
+  body {
+    overflow-anchor: auto;
+  }
+`;
 
 const convertToPixels = num => `${num}px`;
 
@@ -136,13 +142,16 @@ const ContentShiftBlocker = ({ children, initialHeight, initialWidth }) => {
   }, [wrapperDimensions]);
 
   return (
-    <Wrapper
-      wrapperWidth={wrapperDimensions.width}
-      wrapperHeight={wrapperDimensions.height}
-      ref={wrapperEl}
-    >
-      {children}
-    </Wrapper>
+    <>
+      <GlobalStyle />
+      <Wrapper
+        wrapperWidth={wrapperDimensions.width}
+        wrapperHeight={wrapperDimensions.height}
+        ref={wrapperEl}
+      >
+        {children}
+      </Wrapper>
+    </>
   );
 };
 

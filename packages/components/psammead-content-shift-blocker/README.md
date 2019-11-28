@@ -8,7 +8,7 @@
 
 Such content can be wrapped with `ContentShiftBlocker` to prevent the page from jumping around.
 
-⚠️ For browsers that support [scroll-anchoring](https://drafts.csswg.org/css-scroll-anchoring/) with `overflow-anchor`, `ContentShiftBlocker` assumes you have not disabled it by explicitly setting `overflow-anchor: none` on any parent elements. If you have then the user may experience content shifting. I would even recommend you explicitly set `overflow-anchor: auto` on the body element in case browser vendors decide to make this feature opt-in rather than opt-out.
+⚠️ Side-effects: This component enables [scroll-anchoring](https://drafts.csswg.org/css-scroll-anchoring/) by adding `overflow-anchor: auto` style to the `body` tag. We recommend you don't override this style and that you also don't explicitly set `overflow-anchor: none` on any parent elements of `ContentShiftBlocker`. If you do then the user may experience content shifting.
 
 ## How it works
 
