@@ -22,26 +22,36 @@ const StyledImage = styled.img`
   display: block;
 `;
 
-const getRandomInt = (min = 200, max = 400) =>
+const images = [
+  'https://ichef.bbci.co.uk/onesport/cps/976/cpsprodpb/258B/production/_109811690_kipchoge_getty-2.jpg',
+  'https://ichef.bbci.co.uk/images/ic/976xn/p07qg05f.jpg',
+  'https://ichef.bbci.co.uk/images/ic/976xn/p07qwrp5.jpg',
+  'https://ichef.bbci.co.uk/images/ic/976xn/p07qp4wh.jpg',
+  'https://ichef.bbci.co.uk/images/ic/640x360/p07qyt0y.jpg',
+  'https://ichef.bbci.co.uk/images/ic/976xn/p06lbtff.jpg',
+  'https://ichef.bbci.co.uk/images/ic/640x360/p07qwn4h.jpg',
+];
+
+const getRandomInt = (min, max) =>
   Math.floor(Math.random() * (max - min)) + min;
 
 const ImageTicker = ({ delay }) => {
-  const [sizes, setSizes] = useState('400/200');
+  const [width, setWidth] = useState(400);
+  const [count, setCount] = useState(getRandomInt(0, 8));
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setSizes(`${getRandomInt()}/${getRandomInt()}`);
+      setWidth(getRandomInt(200, 400));
+      setCount(previousCount => {
+        const nextCount = previousCount + 1;
+        return nextCount < images.length ? nextCount : 0;
+      });
     }, delay);
 
     return () => clearInterval(interval);
   }, []);
 
-  return (
-    <StyledImage
-      src={`https://placekitten.com/${sizes}`}
-      alt="Naughty cats >:("
-    />
-  );
+  return <StyledImage width={width} src={images[count]} alt="Eliud Kipchoge" />;
 };
 
 const StyledFigure = styled.figure`
@@ -59,94 +69,76 @@ const Gallery = ({ script, service, delay = 6000 }) => (
     </ContentShiftBlocker>
     <StyledCaption>
       <Paragraph script={script} service={service}>
-        A gallery of naughty cats&nbsp;
-        <span role="img" aria-label="angry face">
-          😠
-        </span>
+        Eliud Kipchoge
       </Paragraph>
     </StyledCaption>
   </StyledFigure>
 );
-const paragraphs = [
-  'Doggo ipsum sub woofer ruff long woofer, very taste wow. Doggorino very hand that feed shibe smol adorable doggo, floofs. Smol borking doggo with a long snoot for pats thicc blep wow very biscit thicc puggorino wrinkler ruff stop it fren wow very biscit, heckin good boys corgo heckin good boys lotsa pats heckin good boys heckin floofs. Sub woofer aqua doggo bork length boy long water shoob, ruff shibe. Pupperino the neighborhood pupper pats woofer you are doing me the shock big ol pupper porgo mlem, snoot sub woofer clouds floofs pupperino. You are doing me a frighten I am bekom fat long doggo, shooberino. Puggo clouds yapper, the neighborhood pupper. Thicc shibe pupper borking doggo, long water shoob shoober. Blop bork boof heckin angery woofer snoot puggo pats, porgo h*ck ruff heckin good boys and girls big ol pupper. Waggy wags pats bork shooberino heckin good boys and girls I am bekom fat stop it fren, I am bekom fat very jealous pupper maximum borkdrive shoober wow very biscit.',
-  'Smol puggorino clouds puggo, waggy wags. Extremely cuuuuuute you are doing me the shock borkdrive yapper, you are doin me a concern. Lotsa pats extremely cuuuuuute pupper ruff very jealous pupper adorable doggo doggo, aqua doggo you are doing me the shock boofers wow such tempt borkf. Tungg lotsa pats heck big ol, wow such tempt. Floofs he made many woofs heckin good boys and girls porgo boof, fat boi big ol pupper. What a nice floof wow very biscit yapper, heckin. Noodle horse bork puggo doggo adorable doggo wrinkler heck, fat boi very jealous pupper shooberino porgo. Extremely cuuuuuute tungg borkdrive big ol pupper shibe waggy wags borkdrive heckin, wrinkler you are doing me a frighten pupper porgo blop length boy. Long doggo thicc long woofer, porgo. Boof long woofer super chub fluffer yapper, extremely cuuuuuute sub woofer. borkdrive yapper long water shoob. I am bekom fat you are doing me the shock ur givin me a spook, extremely cuuuuuute.',
-  'Fat boi heckin good boys and girls ruff puggorino big ol pupper thicc, many pats much ruin diet you are doing me a frighten sub woofer vvv, lotsa pats snoot much ruin diet puggo. fat boi shooberino long bois. Noodle horse thicc much ruin diet puggorino lotsa pats, noodle horse yapper very good spot. Doggorino shoob super chub such treat, pupper very good spot. Smol borking doggo with a long snoot for pats clouds pupper borkf maximum borkdrive, puggo snoot floofs. very good spot yapper you are doing me a frighten. Blep smol borking doggo with a long snoot for pats heck borkf, lotsa pats.',
-];
-const renderParagraphs = ({ script, service }) =>
-  paragraphs.map(paragraph => (
+
+const renderParagraphs = ({ text, script, service }) =>
+  Array(3).fill(
     <Paragraph script={script} service={service}>
-      {paragraph}
-    </Paragraph>
-  ));
+      {Array(5).fill(`${text} `)}
+    </Paragraph>,
+  );
 
 storiesOf('Components|ContentShiftBlocker', module)
   .addDecorator(withKnobs)
-  .addDecorator(withServicesKnob())
+  .addDecorator(withServicesKnob({ defaultService: 'swahili' }))
   .add(
-    'vertical content shift',
-    ({ script, service }) => {
+    'article with 1 wrapped dynamic resize component',
+    ({ text, script, service }) => {
       return (
         <Wrapper>
-          <Headline>The Daily Doggo</Headline>
-          {renderParagraphs({ script, service })}
+          <Headline>{text}</Headline>
+          {renderParagraphs({ text, script, service })}
           <Gallery script={script} service={service} />
-          {renderParagraphs({ script, service })}
-          {renderParagraphs({ script, service })}
+          {Array(2).fill(renderParagraphs({ text, script, service }))}
         </Wrapper>
       );
     },
     { notes },
   )
   .add(
-    'multiple',
-    ({ script, service }) => {
+    'article with mulitple dynamic resize components',
+    ({ text, script, service }) => {
       return (
         <Wrapper>
-          <Headline>The Daily Doggo</Headline>
-          {renderParagraphs({ script, service })}
+          <Headline>{text}</Headline>
+          {renderParagraphs({ text, script, service })}
           <Gallery script={script} service={service} />
-          {renderParagraphs({ script, service })}
+          {renderParagraphs({ text, script, service })}
           <Gallery script={script} service={service} />
-          {renderParagraphs({ script, service })}
-          {renderParagraphs({ script, service })}
-          {renderParagraphs({ script, service })}
+          {Array(3).fill(renderParagraphs({ text, script, service }))}
           <Gallery script={script} service={service} />
           <Gallery script={script} service={service} />
-          {renderParagraphs({ script, service })}
-          {renderParagraphs({ script, service })}
-          {renderParagraphs({ script, service })}
-          {renderParagraphs({ script, service })}
+          {Array(4).fill(renderParagraphs({ text, script, service }))}
         </Wrapper>
       );
     },
     { notes },
   )
   .add(
-    'multiple staggered',
-    ({ script, service }) => {
+    'article with mulitple time-staggered dynamic resize components',
+    ({ text, script, service }) => {
       return (
         <Wrapper>
-          <Headline>The Daily Doggo</Headline>
-          {renderParagraphs({ script, service })}
+          <Headline>{text}</Headline>
+          {renderParagraphs({ text, script, service })}
           <Gallery delay={4000} script={script} service={service} />
-          {renderParagraphs({ script, service })}
+          {renderParagraphs({ text, script, service })}
           <Gallery delay={3000} script={script} service={service} />
-          {renderParagraphs({ script, service })}
-          {renderParagraphs({ script, service })}
-          {renderParagraphs({ script, service })}
+          {Array(3).fill(renderParagraphs({ text, script, service }))}
           <Gallery delay={2000} script={script} service={service} />
           <Gallery delay={1000} script={script} service={service} />
-          {renderParagraphs({ script, service })}
-          {renderParagraphs({ script, service })}
-          {renderParagraphs({ script, service })}
-          {renderParagraphs({ script, service })}
+          {Array(4).fill(renderParagraphs({ text, script, service }))}
         </Wrapper>
       );
     },
     { notes },
   )
   .add(
-    'nothing but cats',
+    'mulitple time-staggered dynamic resize components',
     ({ script, service }) => {
       return (
         <Wrapper>
