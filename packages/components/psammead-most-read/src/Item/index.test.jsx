@@ -3,7 +3,7 @@ import { shouldMatchSnapshot } from '@bbc/psammead-test-helpers';
 import Timestamp from '@bbc/psammead-timestamp';
 import { latin, arabic } from '@bbc/gel-foundations/scripts';
 import { MostReadLink, MostReadRank } from '.';
-import { itemsLTR, itemsRTL } from '../testHelpers/fixtureData';
+import { items, itemsRTL } from '../testHelpers/fixtureData';
 
 const lastUpdated = (script, service) => (
   <Timestamp
@@ -19,7 +19,7 @@ const lastUpdated = (script, service) => (
 describe('MostReadLink', () => {
   shouldMatchSnapshot(
     'should render ltr correctly',
-    <MostReadLink link={itemsLTR[0]} service="news" script={latin} dir="ltr" />,
+    <MostReadLink link={items[0]} service="news" script={latin} dir="ltr" />,
   );
 
   shouldMatchSnapshot(
@@ -35,7 +35,7 @@ describe('MostReadLink', () => {
   shouldMatchSnapshot(
     'should render with last updated date correctly',
     <MostReadLink
-      link={itemsLTR[0]}
+      link={items[0]}
       lastUpdated={lastUpdated(latin, 'news')}
       service="news"
       script={latin}

@@ -7,7 +7,7 @@ import Timestamp from '@bbc/psammead-timestamp';
 import MostReadList from './List';
 import MostReadTitle from './Title';
 import { MostReadLink, MostReadRank } from './Item';
-import { itemsLTR, itemsRTL } from './testHelpers/fixtureData';
+import { items, itemsRTL } from './testHelpers/fixtureData';
 import MostRead from './index';
 
 const arabicServiceDecorator = withServicesKnob({
@@ -27,7 +27,7 @@ const newsServiceDecorator = withServicesKnob({
 });
 
 const renderLTRList = ({ service, script }) => (
-  <MostReadList items={itemsLTR} service={service} script={script} dir="ltr" />
+  <MostReadList items={items} service={service} script={script} dir="ltr" />
 );
 
 const renderTRLList = ({ service, script }) => (
@@ -55,15 +55,15 @@ const stories = storiesOf('Components|MostRead/Item', module)
   .addDecorator(withKnobs)
   .addDecorator(withServicesKnob());
 
-[itemsLTR[0], itemsRTL[0]].forEach(({ language, ...props }) => {
-  stories.add(`MostReadLink ${language}`, ({ script, service }) => (
+[items[0], itemsRTL[0]].forEach(({ service: itemService, ...props }) => {
+  stories.add(`MostReadLink ${itemService}`, ({ script, service }) => (
     <MostReadLink link={props} service={service} script={script} />
   ));
 });
 
 stories.add(`MostReadLink with last updated date`, ({ script, service }) => (
   <MostReadLink
-    link={itemsLTR[0]}
+    link={items[0]}
     lastUpdated={lastUpdated(script, service)}
     service={service}
     script={script}
@@ -135,7 +135,7 @@ storiesOf('Components|MostRead', module)
   .add('default LTR', () =>
     newsServiceDecorator(({ script, service }) => (
       <MostRead
-        items={itemsLTR}
+        items={items}
         service={service}
         script={script}
         dir="ltr"

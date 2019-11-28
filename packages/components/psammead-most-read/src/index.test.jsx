@@ -2,13 +2,13 @@ import React from 'react';
 import { shouldMatchSnapshot } from '@bbc/psammead-test-helpers';
 import { arabic, latin } from '@bbc/gel-foundations/scripts';
 import MostRead from '.';
-import { itemsLTR, itemsRTL } from './testHelpers/fixtureData';
+import { items, itemsRTL } from './testHelpers/fixtureData';
 
 describe('MostRead', () => {
   shouldMatchSnapshot(
     'should render with ltr most read with correct dir',
     <MostRead
-      items={itemsLTR}
+      items={items}
       service="news"
       script={latin}
       dir="ltr"

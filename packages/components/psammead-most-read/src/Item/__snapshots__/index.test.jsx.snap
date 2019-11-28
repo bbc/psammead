@@ -50,7 +50,7 @@ exports[`MostReadLink should render ltr correctly 1`] = `
 >
   <a
     class="c1"
-    href="https://www.bbc.com/vietnamese/institutional-49283563"
+    href="https://www.bbc.co.uk/news/business-43328806"
   >
     John Lewis staff bonus cut again as profits fall
   </a>
@@ -107,7 +107,7 @@ exports[`MostReadLink should render rtl correctly 1`] = `
 >
   <a
     class="c1"
-    href="https://www.bbc.com/vietnamese/institutional-49283563"
+    href="https://www.bbc.com/persian/iran-46965704"
   >
     ایران از لغو 'رزمایش قطع اینترنت' خبر داد
   </a>
@@ -188,7 +188,7 @@ exports[`MostReadLink should render with last updated date correctly 1`] = `
 >
   <a
     class="c1"
-    href="https://www.bbc.com/vietnamese/institutional-49283563"
+    href="https://www.bbc.co.uk/news/business-43328806"
   >
     John Lewis staff bonus cut again as profits fall
   </a>
