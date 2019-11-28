@@ -71,6 +71,24 @@ it('should render children', () => {
   expect(getByText('Test content')).toBeTruthy();
 });
 
+it('should set the initial size', () => {
+  const size = 500;
+
+  const { container } = render(
+    <ContentShiftBlocker initialWidth={size} initialHeight={size}>
+      <Content />
+    </ContentShiftBlocker>,
+  );
+
+  expect(
+    getComputedStyle(container.firstChild).getPropertyValue('width'),
+  ).toEqual(`${size}px`);
+
+  expect(
+    getComputedStyle(container.firstChild).getPropertyValue('height'),
+  ).toEqual(`${size}px`);
+});
+
 it('should accept string measurements', () => {
   const stringSize = '10em';
   const { container } = render(
@@ -96,15 +114,6 @@ it('should not resize when in view', () => {
       <Content />
     </ContentShiftBlocker>,
   );
-
-  // check initial size
-  expect(
-    getComputedStyle(container.firstChild).getPropertyValue('width'),
-  ).toEqual(`${initialSize}px`);
-
-  expect(
-    getComputedStyle(container.firstChild).getPropertyValue('height'),
-  ).toEqual(`${initialSize}px`);
 
   act(() => {
     IOInstance.fireIntersectEvent([
@@ -144,15 +153,6 @@ it('should resize when not in view', () => {
       <Content />
     </ContentShiftBlocker>,
   );
-
-  // check initial size
-  expect(
-    getComputedStyle(container.firstChild).getPropertyValue('width'),
-  ).toEqual(`${initialSize}px`);
-
-  expect(
-    getComputedStyle(container.firstChild).getPropertyValue('height'),
-  ).toEqual(`${initialSize}px`);
 
   act(() => {
     // simulate off screen and resize events
