@@ -62,9 +62,7 @@ const StyledOl = styled.ol.attrs({
   padding: 0;
 `;
 
-const StyledLi = styled.li.attrs({
-  role: 'listitem',
-})`
+const StyledLi = styled.li`
   display: flex;
   flex-direction: row;
   margin: 0;
