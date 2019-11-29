@@ -1,12 +1,37 @@
 import React from 'react';
+import styled from 'styled-components';
 import { storiesOf } from '@storybook/react';
 import { withKnobs } from '@storybook/addon-knobs';
 import { withServicesKnob } from '@bbc/psammead-storybook-helpers';
+import { getBodyCopy } from '@bbc/gel-foundations/typography';
+import {
+  getSansRegular,
+  getSansBold,
+  getSansRegularItalic,
+  getSansBoldItalic,
+} from '@bbc/psammead-styles/font-styles';
 import notes from '../README.md';
 import InlineLink from './index';
 
+const RegularParagraph = styled.p`
+  ${({ script }) => script && getBodyCopy(script)};
+  ${({ service }) => getSansRegular(service)}
+`;
+const BoldParagraph = styled.p`
+  ${({ script }) => script && getBodyCopy(script)};
+  ${({ service }) => getSansBold(service)}
+`;
+const ItalicParagraph = styled.p`
+  ${({ script }) => script && getBodyCopy(script)};
+  ${({ service }) => getSansRegularItalic(service)}
+`;
+const BoldItalicParagraph = styled.p`
+  ${({ script }) => script && getBodyCopy(script)};
+  ${({ service }) => getSansBoldItalic(service)}
+`;
+
 storiesOf('Components|InlineLink', module)
-  .addDecorator(withKnobs)
+  .addDecorator(withKnobs())
   .addDecorator(withServicesKnob())
   .add(
     'default',
@@ -21,6 +46,62 @@ storiesOf('Components|InlineLink', module)
         realistic storybook example of this component see the Paragraph and
         Caption stories - this should be removed in
         https://github.com/bbc/psammead/issues/733
+      </>
+    ),
+    { notes, knobs: { escapeHTML: false } },
+  )
+  .add(
+    'inline-link inside a regular paragraph',
+    ({ text, longText, script, service }) => (
+      <>
+        <RegularParagraph script={script} service={service}>
+          {longText}{' '}
+          <InlineLink href="https://www.bbc.com/news">{text}</InlineLink>{' '}
+          {longText}
+        </RegularParagraph>
+        <br />
+      </>
+    ),
+    { notes, knobs: { escapeHTML: false } },
+  )
+  .add(
+    'inline-link inside a bold paragraph',
+    ({ text, longText, script, service }) => (
+      <>
+        <BoldParagraph script={script} service={service}>
+          {longText}{' '}
+          <InlineLink href="https://www.bbc.com/news">{text}</InlineLink>{' '}
+          {longText}
+        </BoldParagraph>
+        <br />
+      </>
+    ),
+    { notes, knobs: { escapeHTML: false } },
+  )
+  .add(
+    'inline-link inside a italic paragraph',
+    ({ text, longText, script, service }) => (
+      <>
+        <ItalicParagraph script={script} service={service}>
+          {longText}{' '}
+          <InlineLink href="https://www.bbc.com/news">{text}</InlineLink>{' '}
+          {longText}
+        </ItalicParagraph>
+        <br />
+      </>
+    ),
+    { notes, knobs: { escapeHTML: false } },
+  )
+  .add(
+    'inline-link inside a bold and italic paragraph',
+    ({ text, longText, script, service }) => (
+      <>
+        <BoldItalicParagraph script={script} service={service}>
+          {longText}{' '}
+          <InlineLink href="https://www.bbc.com/news">{text}</InlineLink>{' '}
+          {longText}
+        </BoldItalicParagraph>
+        <br />
       </>
     ),
     { notes, knobs: { escapeHTML: false } },
