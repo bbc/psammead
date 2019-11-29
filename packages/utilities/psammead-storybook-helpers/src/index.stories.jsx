@@ -2,9 +2,15 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { withKnobs } from '@storybook/addon-knobs';
 import notes from '../README.md';
-import { withServicesKnob } from '.';
+import {
+  withServicesKnob,
+  RegularParagraph,
+  BoldParagraph,
+  ItalicParagraph,
+  BoldItalicParagraph,
+} from '.';
 
-storiesOf('Utilities|withServicesKnob', module)
+storiesOf('Utilities|Storybook-Helpers/withServicesKnob', module)
   .addDecorator(withKnobs)
   .add(
     'default',
@@ -70,5 +76,29 @@ storiesOf('Utilities|withServicesKnob', module)
           </>
         ),
       ),
+    { notes },
+  );
+
+storiesOf('Utilities|Storybook-Helpers/StyledParagraph', module)
+  .addDecorator(withKnobs)
+  .add(
+    'default',
+    () =>
+      withServicesKnob()(({ script, service }) => (
+        <>
+          <RegularParagraph script={script} service={service}>
+            This is text in a paragraph styled with SansRegular.
+          </RegularParagraph>
+          <BoldParagraph script={script} service={service}>
+            This is text in a paragraph styled with SansRegular.
+          </BoldParagraph>
+          <ItalicParagraph script={script} service={service}>
+            This is text in a paragraph styled with SansRegular.
+          </ItalicParagraph>
+          <BoldItalicParagraph script={script} service={service}>
+            This is text in a paragraph styled with SansRegular.
+          </BoldItalicParagraph>
+        </>
+      )),
     { notes },
   );
