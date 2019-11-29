@@ -108,10 +108,10 @@ storiesOf('Components|InlineLink', module)
     { notes, knobs: { escapeHTML: false } },
   )
   .add(
-    'experimental styled inline link',
+    'experimental styled inline link with text-decoration style',
     ({ text, longText, script, service }) => (
       <>
-        <BoldItalicParagraph script={script} service={service}>
+        <RegularParagraph script={script} service={service}>
           {longText}{' '}
           <InlineLink
             style={{
@@ -123,8 +123,13 @@ storiesOf('Components|InlineLink', module)
             {text}
           </InlineLink>{' '}
           {longText}
-        </BoldItalicParagraph>
+        </RegularParagraph>
         <br />
+        <br />
+        Please note this an experimental example of inline link styled with
+        text-decoration: underline instead of border-bottom: solid. This has
+        only been implemented for this storybook example. This experiment is a
+        part of this issue: https://github.com/bbc/psammead/issues/2706
       </>
     ),
     { notes, knobs: { escapeHTML: false } },
