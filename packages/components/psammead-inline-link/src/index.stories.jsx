@@ -10,6 +10,7 @@ import {
   getSansRegularItalic,
   getSansBoldItalic,
 } from '@bbc/psammead-styles/font-styles';
+import { C_POSTBOX } from '@bbc/psammead-styles/colours';
 import notes from '../README.md';
 import InlineLink from './index';
 
@@ -99,6 +100,28 @@ storiesOf('Components|InlineLink', module)
         <BoldItalicParagraph script={script} service={service}>
           {longText}{' '}
           <InlineLink href="https://www.bbc.com/news">{text}</InlineLink>{' '}
+          {longText}
+        </BoldItalicParagraph>
+        <br />
+      </>
+    ),
+    { notes, knobs: { escapeHTML: false } },
+  )
+  .add(
+    'experimental styled inline link',
+    ({ text, longText, script, service }) => (
+      <>
+        <BoldItalicParagraph script={script} service={service}>
+          {longText}{' '}
+          <InlineLink
+            style={{
+              borderBottom: 'none',
+              textDecoration: `underline ${C_POSTBOX}`,
+            }}
+            href="https://www.bbc.com/news"
+          >
+            {text}
+          </InlineLink>{' '}
           {longText}
         </BoldItalicParagraph>
         <br />
