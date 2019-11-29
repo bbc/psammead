@@ -1,5 +1,6 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
+import styled from 'styled-components';
 import {
   color,
   select,
@@ -14,6 +15,13 @@ import { C_POSTBOX, C_WHITE } from '@bbc/psammead-styles/colours';
 import Brand from '@bbc/psammead-brand';
 import { ampDecorator } from '../../../../.storybook/config';
 import Navigation, { NavigationUl, NavigationLi } from './index';
+import {
+  CanonicalMenuButton,
+  AmpMenuButton,
+  Dropdown,
+  DropdownUl,
+  DropdownLi,
+} from './DropdownNavigation';
 import {
   CanonicalScrollableNavigation,
   AmpScrollableNavigation,
@@ -48,6 +56,11 @@ const navStoriesData = [
     dir: 'rtl',
   },
 ];
+
+const BackgroundContainer = styled.div`
+  background-color: #000000;
+  height: 100vh;
+`;
 
 const inputs = () => {
   // capitalization is only for presentation purpose on the knob
@@ -163,10 +176,31 @@ const navigationStory = (
   );
 };
 
-const storiesWithoutBrand = storiesOf(
-  'Components|Navigation/without brand',
-  module,
-)
+const dropdownStory = () => ({ dir, script, service }) => (
+  <Dropdown>
+    <DropdownUl>
+      {pidginNavData.map((item, index) => {
+        const active = index === 3;
+        const { title, url } = item;
+        return (
+          <DropdownLi
+            script={script}
+            service={service}
+            key={title}
+            dir={dir}
+            url={url}
+            active={active}
+            currentPageText="Current page"
+          >
+            {title}
+          </DropdownLi>
+        );
+      })}
+    </DropdownUl>
+  </Dropdown>
+);
+
+const canonicalStories = storiesOf('Components|Navigation/Canonical', module)
   .addDecorator(withKnobs)
   .addDecorator(withServicesKnob());
 
@@ -174,7 +208,7 @@ navStoriesData.map(item => {
   const { title, skipLinkText, currentPageText, data, dir } = item;
   const isAmp = false;
 
-  return storiesWithoutBrand.add(
+  return canonicalStories.add(
     title,
     navigationStory(skipLinkText, currentPageText, data, dir, false, isAmp),
     {
@@ -183,12 +217,32 @@ navStoriesData.map(item => {
   );
 });
 
-const storiesWithBrand = storiesOf('Components|Navigation/with brand', module)
-  .addDecorator(withKnobs)
-  .addDecorator(withServicesKnob());
+canonicalStories.add(
+  'Canonical Menu Button',
+  () => {
+    const isOpen = boolean('Open', false);
+    return (
+      <BackgroundContainer>
+        <CanonicalMenuButton
+          announcedText="Menu"
+          onOpen={() => {}}
+          isOpen={isOpen}
+          onClose={() => {}}
+        />
+      </BackgroundContainer>
+    );
+  },
+  {
+    notes,
+  },
+);
 
-storiesWithBrand.add(
-  navStoriesData[0].title,
+canonicalStories.add('Dropdown menu', dropdownStory(), {
+  notes,
+});
+
+canonicalStories.add(
+  'Igbo with brand',
   navigationStory(
     navStoriesData[0].skipLinkText,
     navStoriesData[0].currentPageText,
@@ -205,6 +259,7 @@ storiesWithBrand.add(
 const ampStories = storiesOf('Components|Navigation/AMP', module)
   .addDecorator(ampDecorator)
   .addDecorator(withKnobs)
+  .addDecorator(ampDecorator)
   .addDecorator(withServicesKnob());
 
 navStoriesData.map(item => {
@@ -219,3 +274,15 @@ navStoriesData.map(item => {
     },
   );
 });
+
+ampStories.add(
+  'AMP Menu Button',
+  () => (
+    <BackgroundContainer>
+      <AmpMenuButton announcedText="Menu" onToggle="" />
+    </BackgroundContainer>
+  ),
+  {
+    notes,
+  },
+);
