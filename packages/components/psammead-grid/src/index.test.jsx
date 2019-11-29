@@ -7,7 +7,6 @@ describe('Grid component', () => {
   shouldMatchSnapshot(
     'should render Grid with Grid items',
     <Grid
-      enableGelMargins
       enableGelGutters
       columns={{
         group0: 6,
@@ -24,6 +23,12 @@ describe('Grid component', () => {
         group3: 1,
         group4: 1,
         group5: 5,
+      }}
+      margins={{
+        group0: true,
+        group1: true,
+        group2: true,
+        group3: true,
       }}
     >
       <Grid
@@ -252,7 +257,7 @@ describe('Grid component', () => {
     </Grid>,
   );
   shouldMatchSnapshot(
-    'should render Grid with enableGelGutters, enableGelMargins & a nested one with enableNegativeGelMargins',
+    'should render Grid with enableGelGutters & margins on only one of the Grid items',
     <Grid
       columns={{
         group0: 6,
@@ -262,7 +267,6 @@ describe('Grid component', () => {
         group4: 8,
         group5: 8,
       }}
-      enableGelMargins
     >
       <Grid
         item
@@ -274,7 +278,6 @@ describe('Grid component', () => {
           group4: 6,
           group5: 6,
         }}
-        enableNegativeGelMargins
       >
         <ExampleImage />
       </Grid>
@@ -288,11 +291,16 @@ describe('Grid component', () => {
           group4: 6,
           group5: 6,
         }}
+        margins={{
+          group0: true,
+          group1: true,
+          group2: true,
+          group3: true,
+        }}
       >
         <p>
           Image & Paragraph - groups 0-3 span 6/6 columns, groups 4+ span 6/8
-          columns. Outer Grid has enableGelMargins & Image Grid has
-          enableNegativeGelMargins
+          columns. Grid item surrounding Paragraph has margins defined.
         </p>
       </Grid>
     </Grid>,
