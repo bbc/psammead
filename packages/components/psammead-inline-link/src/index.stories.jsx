@@ -31,7 +31,7 @@ const BoldItalicParagraph = styled.p`
   ${({ service }) => getSansBoldItalic(service)}
 `;
 
-const Caption = styled.p`
+const Caption = styled.figcaption`
   ${({ script }) => script && getLongPrimer(script)};
   ${({ service }) => getSansRegularItalic(service)}
 `;
