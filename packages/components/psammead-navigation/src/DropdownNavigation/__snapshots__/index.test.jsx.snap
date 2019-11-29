@@ -1,0 +1,418 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AMP Menu Button should render correctly 1`] = `
+.c1 {
+  color: #fff;
+  fill: currentColor;
+}
+
+.c0 {
+  width: 2.75rem;
+  height: 2.75rem;
+  position: relative;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  background-color: transparent;
+}
+
+.c0:hover,
+.c0:focus {
+  box-shadow: inset 0 0 0 0.25rem #FFFFFF;
+}
+
+.c0:hover::after,
+.c0:focus::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  border: 0.25rem solid #FFFFFF;
+}
+
+@media (min-width:37.5rem) {
+  .c0 {
+    display: none;
+    visibility: hidden;
+  }
+}
+
+<html>
+  <head>
+    <script
+      async="true"
+      custom-element="amp-bind"
+      src="https://cdn.ampproject.org/v0/amp-bind-0.1.js"
+    />
+  </head>
+  <body>
+    <div>
+      <amp-state
+        id="menuState"
+      >
+        <script
+          type="application/json"
+        >
+          {"expanded":false}
+        </script>
+      </amp-state>
+      <button
+        aria-expanded="false"
+        aria-label="Menu"
+        class="c0"
+        data-amp-bind-aria-expanded="menuState.expanded ? \\"true\\" : \\"false\\""
+        on="tap:AMP.setState({ menuState: { expanded: !menuState.expanded }});"
+      >
+        <svg
+          aria-hidden="true"
+          class="c1"
+          data-amp-bind-hidden="menuState.expanded"
+          focusable="false"
+          height="2.75rem"
+          viewBox="0 0 44 44"
+          width="2.75rem"
+        >
+          <path
+            d="M12 29h21v-2.333H12V29zm0-5.833h21v-2.334H12v2.334zM12 15v2.333h21V15H12z"
+          />
+        </svg>
+        <svg
+          aria-hidden="true"
+          class="c1"
+          data-amp-bind-hidden="!menuState.expanded"
+          focusable="false"
+          height="2.75rem"
+          hidden=""
+          viewBox="0 0 44 44"
+          width="2.75rem"
+        >
+          <path
+            d="M26.741 15L21.6 20.142 16.458 15 15 16.458l5.142 5.142L15 26.742l1.458 1.458 5.142-5.141 5.141 5.141 1.459-1.458-5.142-5.142 5.142-5.142z"
+            fill-rule="evenodd"
+          />
+        </svg>
+      </button>
+    </div>
+  </body>
+</html>
+`;
+
+exports[`Canonical Closed menu button should render correctly 1`] = `
+.c1 {
+  color: #fff;
+  fill: currentColor;
+}
+
+.c0 {
+  width: 2.75rem;
+  height: 2.75rem;
+  position: relative;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  background-color: transparent;
+}
+
+.c0:hover,
+.c0:focus {
+  box-shadow: inset 0 0 0 0.25rem #FFFFFF;
+}
+
+.c0:hover::after,
+.c0:focus::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  border: 0.25rem solid #FFFFFF;
+}
+
+@media (min-width:37.5rem) {
+  .c0 {
+    display: none;
+    visibility: hidden;
+  }
+}
+
+<button
+  aria-expanded="false"
+  aria-label="Menu"
+  class="c0"
+>
+  <svg
+    aria-hidden="true"
+    class="c1"
+    focusable="false"
+    height="2.75rem"
+    viewBox="0 0 44 44"
+    width="2.75rem"
+  >
+    <path
+      d="M12 29h21v-2.333H12V29zm0-5.833h21v-2.334H12v2.334zM12 15v2.333h21V15H12z"
+    />
+  </svg>
+</button>
+`;
+
+exports[`Canonical Open menu button should render correctly 1`] = `
+.c1 {
+  color: #fff;
+  fill: currentColor;
+}
+
+.c0 {
+  width: 2.75rem;
+  height: 2.75rem;
+  position: relative;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  background-color: transparent;
+}
+
+.c0:hover,
+.c0:focus {
+  box-shadow: inset 0 0 0 0.25rem #FFFFFF;
+}
+
+.c0:hover::after,
+.c0:focus::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  border: 0.25rem solid #FFFFFF;
+}
+
+@media (min-width:37.5rem) {
+  .c0 {
+    display: none;
+    visibility: hidden;
+  }
+}
+
+<button
+  aria-expanded="true"
+  aria-label="Menu"
+  class="c0"
+>
+  <svg
+    aria-hidden="true"
+    class="c1"
+    focusable="false"
+    height="2.75rem"
+    viewBox="0 0 44 44"
+    width="2.75rem"
+  >
+    <path
+      d="M26.741 15L21.6 20.142 16.458 15 15 16.458l5.142 5.142L15 26.742l1.458 1.458 5.142-5.141 5.141 5.141 1.459-1.458-5.142-5.142 5.142-5.142z"
+      fill-rule="evenodd"
+    />
+  </svg>
+</button>
+`;
+
+exports[`Dropdown navigation should render correctly 1`] = `
+.c5 {
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  -webkit-clip: rect(1px,1px,1px,1px);
+  clip: rect(1px,1px,1px,1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  width: 1px;
+  margin: 0;
+}
+
+.c0 {
+  background-color: #222222;
+}
+
+.c1 {
+  list-style-type: none;
+  margin: 0;
+  padding: 0 0.5rem;
+  border-bottom: 0.125rem solid #3F3F42;
+}
+
+.c2 {
+  padding: 0.75rem 0;
+  border-bottom: 0.0625rem solid #3F3F42;
+}
+
+.c2:last-child {
+  padding-bottom: 1rem;
+  border: 0;
+}
+
+.c3 {
+  font-size: 0.9375rem;
+  line-height: 1.25rem;
+  font-family: ReithSans,Helvetica,Arial,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #FFFFFF;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c3:hover,
+.c3:focus {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.c4 {
+  border-left: 0.25rem solid #FFFFFF;
+  padding-left: 0.5rem;
+}
+
+@media (min-width:37.5rem) {
+  .c0 {
+    display: none;
+    visibility: hidden;
+  }
+}
+
+@media (min-width:20rem) and (max-width:37.4375rem) {
+  .c3 {
+    font-size: 1rem;
+    line-height: 1.25rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .c3 {
+    font-size: 1rem;
+    line-height: 1.25rem;
+  }
+}
+
+<div
+  class="c0"
+>
+  <ul
+    class="c1"
+    role="list"
+  >
+    <li
+      class="c2"
+      role="listitem"
+    >
+      <a
+        class="c3"
+        href="/pidgin"
+      >
+        Home
+      </a>
+    </li>
+    <li
+      class="c2"
+      role="listitem"
+    >
+      <a
+        class="c3"
+        href="/pidgin/topics/3d5d5e30-dd50-4041-96d5-c970b20005b9"
+      >
+        Nigeria
+      </a>
+    </li>
+    <li
+      class="c2"
+      role="listitem"
+    >
+      <a
+        class="c3"
+        href="/pidgin/topics/d2c2ba68-f9ad-4185-a6d1-7f6437256735"
+      >
+        Africa
+      </a>
+    </li>
+    <li
+      class="c2"
+      role="listitem"
+    >
+      <a
+        class="c3"
+        href="/pidgin/world"
+      >
+        <span
+          class="c4"
+          dir="ltr"
+          role="text"
+        >
+          <span
+            class="c5"
+          >
+            Current page
+            , 
+          </span>
+          World
+        </span>
+      </a>
+    </li>
+    <li
+      class="c2"
+      role="listitem"
+    >
+      <a
+        class="c3"
+        href="/pidgin/media/video"
+      >
+        Video
+      </a>
+    </li>
+    <li
+      class="c2"
+      role="listitem"
+    >
+      <a
+        class="c3"
+        href="/pidgin/media/audio"
+      >
+        Audio
+      </a>
+    </li>
+    <li
+      class="c2"
+      role="listitem"
+    >
+      <a
+        class="c3"
+        href="/pidgin/sport"
+      >
+        Sport
+      </a>
+    </li>
+    <li
+      class="c2"
+      role="listitem"
+    >
+      <a
+        class="c3"
+        href="/pidgin/topics/1c3b60a9-14eb-484b-a750-9f5b1aeaac31"
+      >
+        Entertainment
+      </a>
+    </li>
+    <li
+      class="c2"
+      role="listitem"
+    >
+      <a
+        class="c3"
+        href="/pidgin/popular/read"
+      >
+        Most popular
+      </a>
+    </li>
+  </ul>
+</div>
+`;
