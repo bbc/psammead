@@ -2,12 +2,12 @@
 
 exports[`MostReadLink should render ltr correctly 1`] = `
 .c1 {
+  color: #222222;
+  font-size: 1.125rem;
+  line-height: 1.375rem;
   font-family: ReithSerif,Helvetica,Arial,sans-serif;
   font-weight: 500;
   font-style: normal;
-  font-size: 1.125rem;
-  line-height: 1.375rem;
-  color: #222222;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
@@ -50,7 +50,7 @@ exports[`MostReadLink should render ltr correctly 1`] = `
 >
   <a
     class="c1"
-    href="https://www.bbc.com/vietnamese/institutional-49283563"
+    href="https://www.bbc.co.uk/news/business-43328806"
   >
     John Lewis staff bonus cut again as profits fall
   </a>
@@ -59,12 +59,12 @@ exports[`MostReadLink should render ltr correctly 1`] = `
 
 exports[`MostReadLink should render rtl correctly 1`] = `
 .c1 {
+  color: #222222;
+  font-size: 1.5rem;
+  line-height: 2rem;
   font-family: "BBC Nassim Persian",Arial,Verdana,Geneva,Helvetica,sans-serif;
   font-weight: 700;
   font-style: normal;
-  font-size: 1.5rem;
-  line-height: 2rem;
-  color: #222222;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
@@ -107,7 +107,7 @@ exports[`MostReadLink should render rtl correctly 1`] = `
 >
   <a
     class="c1"
-    href="https://www.bbc.com/vietnamese/institutional-49283563"
+    href="https://www.bbc.com/persian/iran-46965704"
   >
     ایران از لغو 'رزمایش قطع اینترنت' خبر داد
   </a>
@@ -126,12 +126,12 @@ exports[`MostReadLink should render with last updated date correctly 1`] = `
 }
 
 .c1 {
+  color: #222222;
+  font-size: 1.125rem;
+  line-height: 1.375rem;
   font-family: ReithSerif,Helvetica,Arial,sans-serif;
   font-weight: 500;
   font-style: normal;
-  font-size: 1.125rem;
-  line-height: 1.375rem;
-  color: #222222;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
@@ -188,7 +188,7 @@ exports[`MostReadLink should render with last updated date correctly 1`] = `
 >
   <a
     class="c1"
-    href="https://www.bbc.com/vietnamese/institutional-49283563"
+    href="https://www.bbc.co.uk/news/business-43328806"
   >
     John Lewis staff bonus cut again as profits fall
   </a>
@@ -206,9 +206,9 @@ exports[`MostReadRank should render ltr correctly 1`] = `
   font-family: ReithSerif,Helvetica,Arial,sans-serif;
   font-weight: 300;
   font-style: normal;
+  color: #B80000;
   font-size: 2rem;
   line-height: 2.25rem;
-  color: #B80000;
   margin: 0;
   padding: 0;
   display: inline-block;
@@ -241,9 +241,9 @@ exports[`MostReadRank should render ltr with double digits correctly 1`] = `
   font-family: ReithSerif,Helvetica,Arial,sans-serif;
   font-weight: 300;
   font-style: normal;
+  color: #B80000;
   font-size: 2rem;
   line-height: 2.25rem;
-  color: #B80000;
   margin: 0;
   padding: 0;
   display: inline-block;
@@ -276,9 +276,9 @@ exports[`MostReadRank should render rtl correctly 1`] = `
   font-family: "BBC Nassim Persian",Arial,Verdana,Geneva,Helvetica,sans-serif;
   font-weight: 400;
   font-style: normal;
+  color: #B80000;
   font-size: 2rem;
   line-height: 2.25rem;
-  color: #B80000;
   margin: 0;
   padding: 0;
   display: inline-block;
