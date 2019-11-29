@@ -6,19 +6,27 @@ import { getTrafalgar } from '@bbc/gel-foundations/typography';
 import { scriptPropType } from '@bbc/gel-foundations/prop-types';
 import { getSansRegular } from '@bbc/psammead-styles/font-styles';
 
+const MOST_READ_LABEL = 'most-read-title';
+
 const StyledHeading = styled.h2`
   ${({ service }) => getSansRegular(service)}
   ${({ script }) => script && getTrafalgar(script)};
   color: ${C_SHADOW};
 `;
 
-const StyledSection = styled.section``;
-
-const labelId = 'example-section-label';
+const StyledSection = styled.section.attrs({
+  'aria-labelledby': MOST_READ_LABEL,
+  role: 'region',
+})``;
 
 const MostReadTitle = ({ header, service, script, dir }) => (
-  <StyledSection role="region" aria-labelledby={labelId}>
-    <StyledHeading dir={dir} id={labelId} script={script} service={service}>
+  <StyledSection>
+    <StyledHeading
+      dir={dir}
+      id={MOST_READ_LABEL}
+      script={script}
+      service={service}
+    >
       {header}
     </StyledHeading>
   </StyledSection>
