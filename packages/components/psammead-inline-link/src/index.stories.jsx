@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import { storiesOf } from '@storybook/react';
 import { withKnobs } from '@storybook/addon-knobs';
 import { withServicesKnob } from '@bbc/psammead-storybook-helpers';
-import { getBodyCopy } from '@bbc/gel-foundations/typography';
+import { getBodyCopy, getLongPrimer } from '@bbc/gel-foundations/typography';
 import {
   getSansRegular,
   getSansBold,
@@ -29,6 +29,11 @@ const ItalicParagraph = styled.p`
 const BoldItalicParagraph = styled.p`
   ${({ script }) => script && getBodyCopy(script)};
   ${({ service }) => getSansBoldItalic(service)}
+`;
+
+const Caption = styled.p`
+  ${({ script }) => script && getLongPrimer(script)};
+  ${({ service }) => getSansRegularItalic(service)}
 `;
 
 storiesOf('Components|InlineLink', module)
@@ -124,12 +129,27 @@ storiesOf('Components|InlineLink', module)
           </InlineLink>{' '}
           {longText}
         </RegularParagraph>
+        <Caption script={script} service={service}>
+          {longText}{' '}
+          <InlineLink
+            style={{
+              borderBottom: 'none',
+              textDecoration: `underline ${C_POSTBOX}`,
+            }}
+            href="https://www.bbc.com/news"
+          >
+            {text}
+          </InlineLink>{' '}
+          {longText}
+        </Caption>
         <br />
         <br />
         Please note this an experimental example of inline link styled with
-        text-decoration: underline instead of border-bottom: solid. This has
-        only been implemented for this storybook example. This experiment is a
-        part of this issue: https://github.com/bbc/psammead/issues/2706
+        text-decoration: underline instead of border-bottom: solid. The 1st
+        paragraph is an example of inline link in a regular paragraph and the
+        2nd example is an example of inline link within a Caption. This has only
+        been implemented for this storybook example. This experiment is a part
+        of this issue: https://github.com/bbc/psammead/issues/2706
       </>
     ),
     { notes, knobs: { escapeHTML: false } },
