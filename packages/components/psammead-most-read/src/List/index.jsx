@@ -12,8 +12,8 @@ import {
   GEL_GROUP_1_SCREEN_WIDTH_MAX,
   GEL_GROUP_5_SCREEN_WIDTH_MIN,
 } from '@bbc/gel-foundations/breakpoints';
-import Grid from '../../psammead-grid';
-import { MostReadRank, MostReadLink } from './item';
+import Grid from '../../../psammead-grid';
+import { MostReadRank, MostReadLink } from '../Item';
 
 const MostReadItemProps = {
   item: true,

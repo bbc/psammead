@@ -75,7 +75,6 @@ storiesOf(STORY_KIND, module)
     () => (
       <Grid
         enableGelGutters
-        enableGelMargins
         columns={{
           group0: 8,
           group1: 8,
@@ -83,6 +82,14 @@ storiesOf(STORY_KIND, module)
           group3: 8,
           group4: 8,
           group5: 8,
+        }}
+        margins={{
+          group0: true,
+          group1: true,
+          group2: true,
+          group3: true,
+          group4: true,
+          group5: true,
         }}
       >
         <Grid
@@ -232,7 +239,14 @@ storiesOf(STORY_KIND, module)
           group5: 8,
         }}
         enableGelGutters
-        enableGelMargins
+        margins={{
+          group0: true,
+          group1: true,
+          group2: true,
+          group3: true,
+          group4: true,
+          group5: true,
+        }}
       >
         <Grid
           columns={{
@@ -497,7 +511,14 @@ storiesOf(STORY_KIND, module)
           group5: 8,
         }}
         enableGelGutters
-        enableGelMargins
+        margins={{
+          group0: true,
+          group1: true,
+          group2: true,
+          group3: true,
+          group4: true,
+          group5: true,
+        }}
       >
         <Grid
           columns={{
@@ -610,7 +631,14 @@ storiesOf(STORY_KIND, module)
           group5: 8,
         }}
         enableGelGutters
-        enableGelMargins
+        margins={{
+          group0: true,
+          group1: true,
+          group2: true,
+          group3: true,
+          group4: true,
+          group5: true,
+        }}
       >
         <Grid
           columns={{
@@ -819,7 +847,14 @@ storiesOf(STORY_KIND, module)
           group5: 8,
         }}
         enableGelGutters
-        enableGelMargins
+        margins={{
+          group0: true,
+          group1: true,
+          group2: true,
+          group3: true,
+          group4: true,
+          group5: true,
+        }}
       >
         <Grid
           columns={{
@@ -994,7 +1029,6 @@ storiesOf(STORY_KIND, module)
     () => (
       <Grid
         enableGelGutters
-        enableGelMargins
         columns={{
           group0: 8,
           group1: 8,
@@ -1002,6 +1036,14 @@ storiesOf(STORY_KIND, module)
           group3: 8,
           group4: 8,
           group5: 8,
+        }}
+        margins={{
+          group0: true,
+          group1: true,
+          group2: true,
+          group3: true,
+          group4: true,
+          group5: true,
         }}
       >
         <Grid
@@ -1186,7 +1228,14 @@ storiesOf(STORY_KIND, module)
             group5: 8,
           }}
           enableGelGutters
-          enableGelMargins
+          margins={{
+            group0: true,
+            group1: true,
+            group2: true,
+            group3: true,
+            group4: true,
+            group5: true,
+          }}
         >
           <Grid
             item
@@ -1316,7 +1365,7 @@ storiesOf(STORY_KIND, module)
     },
     { notes, knobs: { escapeHTML: false } },
   )
-  .add('Example with enableNegativeGelMargins on the image Grid', () => (
+  .add('Example with only margins on the paragraph Grid item', () => (
     <Grid
       columns={{
         group0: 6,
@@ -1326,7 +1375,6 @@ storiesOf(STORY_KIND, module)
         group4: 8,
         group5: 8,
       }}
-      enableGelMargins
     >
       <Grid
         item
@@ -1338,7 +1386,6 @@ storiesOf(STORY_KIND, module)
           group4: 6,
           group5: 6,
         }}
-        enableNegativeGelMargins
       >
         <Image
           alt="Robert Downey Junior in Iron Man"
@@ -1353,15 +1400,140 @@ storiesOf(STORY_KIND, module)
           group1: 6,
           group2: 6,
           group3: 6,
+          group4: 2,
+          group5: 2,
+        }}
+        margins={{
+          group0: true,
+          group1: true,
+          group2: true,
+          group3: true,
+        }}
+      >
+        <p>
+          Image & Paragraph - groups 0-3 Image is fullscreen (no margin) but
+          paragraph has GEL margins. For groups 4+, image & paragraph are
+          side-by-side & there are no margins.
+        </p>
+      </Grid>
+    </Grid>
+  ))
+  .add('Example with gutters & only margins on the paragraph Grid item', () => (
+    <Grid
+      columns={{
+        group0: 6,
+        group1: 6,
+        group2: 6,
+        group3: 6,
+        group4: 8,
+        group5: 8,
+      }}
+      enableGelGutters
+    >
+      <Grid
+        item
+        columns={{
+          group0: 6,
+          group1: 6,
+          group2: 6,
+          group3: 6,
           group4: 6,
           group5: 6,
         }}
       >
+        <Image
+          alt="Robert Downey Junior in Iron Man"
+          src="https://ichef.bbci.co.uk/news/660/cpsprodpb/11897/production/_106613817_999_al_.jpg"
+          width="640"
+        />
+      </Grid>
+      <Grid
+        item
+        columns={{
+          group0: 6,
+          group1: 6,
+          group2: 6,
+          group3: 6,
+          group4: 2,
+          group5: 2,
+        }}
+        margins={{
+          group0: true,
+          group1: true,
+          group2: true,
+          group3: true,
+        }}
+      >
         <p>
-          Image & Paragraph - groups 0-3 span 6/6 columns, groups 4+ span 6/8
-          columns. Outer Grid has enableGelMargins & Image Grid has
-          enableNegativeGelMargins
+          Image & Paragraph - groups 0-3 Image is fullscreen (no margin) but
+          paragraph has GEL margins. For groups 4+, image & paragraph are
+          side-by-side & there are no margins.
         </p>
+      </Grid>
+    </Grid>
+  ))
+  .add('Example with gutters only', () => (
+    <Grid
+      columns={{
+        group0: 6,
+        group1: 6,
+        group2: 6,
+        group3: 6,
+        group4: 8,
+        group5: 8,
+      }}
+      enableGelGutters
+    >
+      <Grid
+        item
+        columns={{
+          group0: 6,
+          group1: 6,
+          group2: 6,
+          group3: 6,
+          group4: 6,
+          group5: 6,
+        }}
+      >
+        <Image
+          alt="Robert Downey Junior in Iron Man"
+          src="https://ichef.bbci.co.uk/news/660/cpsprodpb/11897/production/_106613817_999_al_.jpg"
+          width="640"
+        />
+      </Grid>
+      <Grid
+        item
+        columns={{
+          group0: 6,
+          group1: 6,
+          group2: 6,
+          group3: 6,
+          group4: 2,
+          group5: 2,
+        }}
+      >
+        <Image
+          alt="Robert Downey Junior in Iron Man"
+          src="https://ichef.bbci.co.uk/news/660/cpsprodpb/11897/production/_106613817_999_al_.jpg"
+          width="640"
+        />
+      </Grid>
+      <Grid
+        item
+        columns={{
+          group0: 6,
+          group1: 6,
+          group2: 6,
+          group3: 6,
+          group4: 2,
+          group5: 2,
+        }}
+      >
+        <Image
+          alt="Robert Downey Junior in Iron Man"
+          src="https://ichef.bbci.co.uk/news/660/cpsprodpb/11897/production/_106613817_999_al_.jpg"
+          width="640"
+        />
       </Grid>
     </Grid>
   ));
@@ -1370,7 +1542,7 @@ storiesOf('Components|Grid/startOffset', module)
   .addDecorator(withKnobs)
   .addDecorator(withServicesKnob())
   .add(
-    'Example on the first nested Grid',
+    'Example on nested Grid',
     () => (
       <Grid
         columns={{
@@ -1382,7 +1554,12 @@ storiesOf('Components|Grid/startOffset', module)
           group5: 8,
         }}
         enableGelGutters
-        enableGelMargins
+        margins={{
+          group0: true,
+          group1: true,
+          group2: true,
+          group3: true,
+        }}
       >
         <Grid
           columns={{
@@ -1430,6 +1607,30 @@ storiesOf('Components|Grid/startOffset', module)
             <ExampleParagraph identifier="1" />
           </Grid>
         </Grid>
+      </Grid>
+    ),
+    { notes },
+  )
+  .add(
+    'Example on the first nested Grid',
+    () => (
+      <Grid
+        columns={{
+          group0: 6,
+          group1: 6,
+          group2: 6,
+          group3: 6,
+          group4: 8,
+          group5: 8,
+        }}
+        enableGelGutters
+        margins={{
+          group0: true,
+          group1: true,
+          group2: true,
+          group3: true,
+        }}
+      >
         <Grid
           columns={{
             group0: 6,
@@ -1599,7 +1800,12 @@ storiesOf('Components|Grid/startOffset', module)
           group5: 8,
         }}
         enableGelGutters
-        enableGelMargins
+        margins={{
+          group0: true,
+          group1: true,
+          group2: true,
+          group3: true,
+        }}
       >
         <Grid
           columns={{
@@ -1853,7 +2059,6 @@ storiesOf('Components|Grid/startOffset', module)
           group4: 8,
           group5: 20,
         }}
-        enableGelMargins
         enableGelGutters
       >
         <Grid
@@ -1896,7 +2101,6 @@ storiesOf('Components|Grid/startOffset', module)
               group4: 6,
               group5: 12,
             }}
-            enableNegativeGelMargins
           >
             <Grid
               item
@@ -1935,6 +2139,12 @@ storiesOf('Components|Grid/startOffset', module)
               group4: 5,
               group5: 10,
             }}
+            margins={{
+              group0: true,
+              group1: true,
+              group2: true,
+              group3: true,
+            }}
           >
             <ExampleParagraph identifier="Paragraph " />
           </Grid>
@@ -1950,6 +2160,12 @@ storiesOf('Components|Grid/startOffset', module)
                 group5: 10,
               }}
               key={`${num}item`}
+              margins={{
+                group0: true,
+                group1: true,
+                group2: true,
+                group3: true,
+              }}
             >
               <ExampleParagraph identifier={num} />
             </Grid>

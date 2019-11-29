@@ -3,6 +3,15 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 2.0.25 | [PR#2711](https://github.com/bbc/psammead/pull/2711) Bump Dev Dependencies |
+| 2.0.24 | [PR#2718](https://github.com/bbc/psammead/pull/2718) Bump `Yo` dev-dependency to fix vulnerability |
+| 2.0.23 | [PR#2714](https://github.com/bbc/psammead/pull/2714) Talos - Bump Dependencies - @bbc/psammead-storybook-helpers |
+| 2.0.22 | [PR#2611](https://github.com/bbc/psammead/pull/2611) Improve yeoman generator, internal refactor to introduce seperate package templates |
+| 2.0.21 | [PR#2708](https://github.com/bbc/psammead/pull/2708) Talos - Bump Dependencies - @bbc/psammead-image-placeholder, @bbc/psammead-media-indicator |
+| 2.0.20 | [PR#2705](https://github.com/bbc/psammead/pull/2705) Talos - Bump Dependencies - @bbc/psammead-assets |
+| 2.0.19 | [PR#2703](https://github.com/bbc/psammead/pull/2703) Talos - Bump Dependencies - @bbc/psammead-caption, @bbc/psammead-copyright, @bbc/psammead-image-placeholder, @bbc/psammead-inline-link, @bbc/psammead-media-indicator, @bbc/psammead-paragraph, @bbc/psammead-timestamp |
+| 2.0.18 | [PR#2701](https://github.com/bbc/psammead/pull/2701) Talos - Bump Dependencies - @bbc/psammead-assets, @bbc/psammead-styles |
+| 2.0.17 | [PR#2700](https://github.com/bbc/psammead/pull/2700) Talos - Bump Dependencies - @bbc/psammead-caption, @bbc/psammead-copyright, @bbc/psammead-image-placeholder, @bbc/psammead-inline-link, @bbc/psammead-media-indicator, @bbc/psammead-paragraph, @bbc/psammead-timestamp |
 | 2.0.16 | [PR#2577](https://github.com/bbc/psammead/pull/2577) Add `react-test-renderer` and `@testing-library/react-hooks` |
 | 2.0.15 | [PR#2697](https://github.com/bbc/psammead/pull/2697) Talos - Bump Dependencies - @bbc/psammead-storybook-helpers, @bbc/psammead-styles |
 | 2.0.14 | [PR#2615](https://github.com/bbc/psammead/pull/2611) Improve yeoman generator, to specify template types |

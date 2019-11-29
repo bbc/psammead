@@ -2,7 +2,7 @@
 
 ## Description
 
-The `<%= componentName %>` component does...
+The `<%= packageName %>` utility does...
 
 ## Installation
 
@@ -18,31 +18,31 @@ npm install @bbc/psammead-<%= name %> --save
 
 ## Usage
 
-<!-- Description of the component usage -->
+<!-- Description of the utility usage -->
 
 ```
-import <%= componentName %> from "@bbc/psammead-<%= name %>"
+import <%= packageName %> from "@bbc/psammead-<%= name %>"
 ```
 
-### When to use this component
+### When to use this utility
 
-<!-- Description of the where the component can be used -->
+<!-- Description of the where the utility can be used -->
 
-### When not to use this component
+### When not to use this utility
 
-<!-- Description of the where the component shouldn't can be used -->
+<!-- Description of the where the utility shouldn't can be used -->
 
 ### Accessibility notes
 
-<!-- Information about accessibility for this component -->
+<!-- Information about accessibility for this utility -->
 
 ### Roadmap
 
-<!-- Known future changes of the component -->
+<!-- Known future changes of the utility -->
 
 ## Contributing
 
-Psammead is completely open source. We are grateful for any contributions, whether they be new components, bug fixes or general improvements. Please see our primary contributing guide which can be found at [the root of the Psammead repository](https://github.com/bbc/psammead/blob/latest/CONTRIBUTING.md).
+Psammead is completely open source. We are grateful for any contributions, whether they be new utilities, bug fixes or general improvements. Please see our primary contributing guide which can be found at [the root of the Psammead repository](https://github.com/bbc/psammead/blob/latest/CONTRIBUTING.md).
 
 ### [Code of Conduct](https://github.com/bbc/psammead/blob/latest/CODE_OF_CONDUCT.md)
 
