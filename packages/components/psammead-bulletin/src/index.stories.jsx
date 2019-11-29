@@ -12,8 +12,9 @@ const BulletinComponent = ({ script, service, type, hasImage, dir, text }) => {
 
   const isLive = boolean('Live', false);
   const ctaText = type === 'audio' ? 'Listen' : 'Watch';
-
   const liveCtaText = isLive ? `${ctaText} Live` : ctaText;
+  const offScreenText = isLive ? `${ctaText} LIVE` : ctaText;
+
   const image = (
     <Image
       src="https://ichef.bbci.co.uk/news/660/cpsprodpb/11897/production/_106613817_999_al_.jpg"
@@ -33,6 +34,7 @@ const BulletinComponent = ({ script, service, type, hasImage, dir, text }) => {
       ctaLink={ctaLink}
       ctaText={liveCtaText}
       dir={dir}
+      offScreenText={offScreenText}
     />
   );
 };

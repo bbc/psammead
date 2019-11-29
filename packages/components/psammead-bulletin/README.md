@@ -33,6 +33,7 @@ npm install @bbc/psammead-bulletin --save
 | `liveText` | string | no | `'Live'` | `'Localised Live'` |
 | `dir` | string | no | `'ltr'` | `One of ['rtl', 'ltr']` |
 | `lang` | string | no | `'en-GB'` | `'en-GB'` |
+| `offScreenText` | string | yes | N/A | `'Watch Live'` |
 
 ## Usage
 
@@ -55,6 +56,7 @@ const WrappingComponent = () => {
       summary="This is the summary"
       headlineText="This is the headline"
       isLive
+      offScreenText="Watch Live"
     />
   );
 };
