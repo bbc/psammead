@@ -8,8 +8,8 @@ import {
   WesternArabic,
 } from '@bbc/psammead-locales/numerals';
 import { scriptPropType } from '@bbc/gel-foundations/prop-types';
-import Grid from '../../psammead-grid';
-import { MostReadRank, MostReadLink } from './item';
+import Grid from '../../../psammead-grid';
+import { MostReadRank, MostReadLink } from '../Item';
 
 const MostReadItemProps = {
   columns: {
@@ -23,7 +23,6 @@ const MostReadItemProps = {
 };
 
 const MostReadRankProps = {
-  item: true,
   columns: {
     group0: 2,
     group1: 2,
@@ -32,6 +31,7 @@ const MostReadRankProps = {
     group4: 2,
     group5: 2,
   },
+  item: true,
 };
 
 const MostReadLinkProps = {
@@ -112,13 +112,13 @@ const MostReadList = ({ items, service, script, dir }) => (
   </StyledOl>
 );
 
-const linkPropTypes = shape({
+export const itemPropTypes = shape({
   title: string.isRequired,
   href: string.isRequired,
 });
 
 MostReadList.propTypes = {
-  items: arrayOf(linkPropTypes).isRequired,
+  items: arrayOf(itemPropTypes).isRequired,
   service: string.isRequired,
   script: shape(scriptPropType).isRequired,
   dir: oneOf(['rtl', 'ltr']),

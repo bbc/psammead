@@ -6,10 +6,11 @@ This component is currently tagged as alpha and is not suitable for production u
 
 ## Description
 
-The `@bbc/psammead-navigation` package is a set of two components, `NavigationUl` and `NavigationLi`. They use `ul` and `li` HTML elements respectively.
+The `@bbc/psammead-navigation` package is a set of two components, `NavigationUl` and `NavigationLi`. They use `ul` and `li` HTML elements respectively. The package also includes a Hamburger Menu and a Dropdown Navigation which are visible for breakpoints under 600px.
 
 ## Exports
 
+`/dropdown` - Adds a dropdown navigation with hamburger menu which is visible for breakpoints under 600px
 `/scrollable` - Makes the navigation to be scrollable under 600px.
 
 ## Installation
@@ -64,7 +65,45 @@ The `@bbc/psammead-navigation` package is a set of two components, `NavigationUl
 | children | node | Yes      | N/A     | `<NavigationUl><NavigationLi url="/" script={latin} active="true">Home</NavigationLi><NavigationLi url="/sport" script={latin}>{Sport}</NavigationLi></NavigationUl>` |
 | dir      | string  | No       | `'ltr'`   | `'rtl'` |
 
-## Usage
+### Dropdown
+
+<!-- prettier-ignore -->
+| Argument | Type | Required | Default | Example |
+| -------- | ---- | -------- | ------- | ------- |
+| children | node | Yes | N/A | `<DropdownUl><DropdownLi script={latin} service='news' key='sport' url='/sport' active="false"> Sport </DropdownLi></DropdownUl>` |
+
+### DropdownLi
+
+<!-- prettier-ignore -->
+| Argument | Type    | Required | Default | Example  |
+| -------- | ------- | -------- | ------- | -------- |
+| children | string | Yes | N/A | `'Sport'` |
+| url | string | Yes | N/A | `/sport` |
+| script | object | Yes | N/A | `{ canon: { groupA: { fontSize: '28', lineHeight: '32',}, groupB: { fontSize: '32', lineHeight: '36', }, groupD: { fontSize: '44', lineHeight: '48', }, }, trafalgar: { groupA: { fontSize: '20', lineHeight: '24', }, groupB: { fontSize: '24', lineHeight: '28', }, groupD: { fontSize: '32', lineHeight: '36', }, }, }` |
+| service | string | Yes | N/A | `'news'` |
+| active | boolean | No | `false` | `true` |
+| currentPageText | string | No | `null` | `Current page` |
+| dir | string | No | `ltr` | `rtl` |
+
+### CanonicalMenuButton
+
+<!-- prettier-ignore -->
+| Argument | Type | Required | Default | Example |
+| -------- | ---- | -------- | ------- | ------- |
+| announcedText | string | Yes | N/A | `'Menu'` |
+| onOpen | function | Yes | N/A | `() => { console.log("Handle open action"); }` |
+| onClose | function | Yes | N/A | `() => { console.log("Handle close action"); }` |
+| isOpen | bool | Yes | N/A | `false` |
+
+### AmpMenuButton
+
+<!-- prettier-ignore -->
+| Argument | Type | Required | Default | Example |
+| -------- | ---- | -------- | ------- | ------- |
+| announcedText | string | Yes | N/A | `'Menu'` |
+| onToggle | string | Yes | N/A | `"tap:menu.toggleVisibility"` |
+
+## Navigation Usage
 
 ```jsx
 import React from 'react';
@@ -98,9 +137,58 @@ import { latin } from '@bbc/gel-foundations/scripts';
 </Navigation>;
 ```
 
+## Dropdown Navigation Usage
+
+```jsx
+import React from 'react';
+import { Dropdown, DropdownUl, DropdownLi } from '@bbc/psammead-navigation/dropdown';
+import { latin } from '@bbc/gel-foundations/scripts';
+
+<Dropdown>
+  <DropdownUl>
+    <DropdownLi
+        script={latin}
+        service="news"
+        key="Home"
+        url="/"
+        active
+        currentPageText="Current page"
+    >
+      Home
+    </DropdownLi>
+    <DropdownLi script={latin} service="news" key="Sport" url="/sport">
+      Sport
+    </DropdownLi>
+  </DropdownUl>
+</Dropdown>
+```
+
+## Canonical Menu Button Usage
+
+```jsx
+import React from 'react';
+import { CanonicalMenuButton } from '@bbc/psammead-navigation/dropdown';
+
+<CanonicalMenuButton 
+    announcedText="Menu"
+    isOpen={true}
+    onOpen={() => { console.log("Handle open action"); }}
+    onClose={() => { console.log("Handle close action"); }} 
+/>
+```
+
+## Amp Menu Button Usage
+
+```jsx
+import React from 'react';
+import { AmpMenuButton } from '@bbc/psammead-navigation/dropdown';
+
+<AmpMenuButton announcedText="Menu" onToggle="tap:menu.toggleVisibility" />
+```
+
 ### When to use this component
 
-The `Navigation` is designed to show a navigation bar on `index` pages, which will show all sections on a site. If there are too many items to fit on one line, the items will wrap to the next lines.
+The `Navigation` is designed to show a navigation bar on all pages, which will show all sections on a site. If there are too many items to fit on one line, the items will wrap to the next lines.
 
 On the other hand, with `CanonicalScrollableNavigation` or `AmpScrollableNavigation` we can make the list to remain on one line and to be horizontally scrollable to allow access to further links, under 600px.
 
@@ -110,7 +198,9 @@ The Navigation has a [`navigation` landmark](https://www.w3.org/TR/wai-aria-prac
 
 We have added the role `list` and `listitem` to the `NavigationUl` and `NavigationList` respectively, due to a VoiceOver bug to reinstate the list semantics.
 
-We have also added visually hidden text to let the user know which item in the Navigation is the current page. Note the use of visually hidden text here is due to lack of support at this time for the aria-current page attribute. Also note the use of `role="text"` to stop splitting in VoiceOver.
+We have also added visually hidden text to let the user know which item in both regular and dropdown Navigation is the current page. Note the use of visually hidden text here is due to lack of support at this time for the aria-current page attribute. Also note the use of `role="text"` to stop text splitting in VoiceOver.
+
+We have added an `aria-expanded` attribute to the menu button to indicate whether the menu is collapsed or expanded.
 
 In the screen reader UX only the menu button and its content should be available to assistive technology, meaning the scrollable navigation will be hidden. To achieve this we add `aria-hidden:true` to the exposed scrollable navigation so that this is not visible to these users and also add `tabindex=-1` to the links contained within this to remove them from the tab order.
 

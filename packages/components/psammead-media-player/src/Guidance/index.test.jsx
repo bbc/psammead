@@ -10,4 +10,14 @@ describe('Media Player: Guidance', () => {
       service="news"
     />,
   );
+
+  shouldMatchSnapshot(
+    'should render no-js styles when noJsClassName prop is used',
+    <Guidance
+      guidanceMessage="Guidance: Contains strong language with adult humor"
+      service="news"
+      noJsMessage="This media cannot play in your browser. Please enable Javascript or a different browser."
+      noJsClassName="no-js"
+    />,
+  );
 });

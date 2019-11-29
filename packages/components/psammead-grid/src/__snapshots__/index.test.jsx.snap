@@ -1,11 +1,11 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Grid component should render Grid with Grid items 1`] = `
-.c1 {
-  position: relative;
+.c0 {
+  display: inline;
 }
 
-.c3 {
+.c2 {
   font-size: 0.9375rem;
   line-height: 1.25rem;
   font-family: ReithSans,Helvetica,Arial,sans-serif;
@@ -17,170 +17,222 @@ exports[`Grid component should render Grid with Grid items 1`] = `
 }
 
 @media (max-width:14.9375rem) {
-  .c1 {
-    margin: 0 -0.25rem;
+  .c0 {
+    padding: 0 0.5rem;
     margin-left: 0%;
   }
 }
 
 @media (min-width:15rem) and (max-width:24.9375rem) {
-  .c1 {
-    margin: 0 -0.25rem;
+  .c0 {
+    padding: 0 0.5rem;
     margin-left: 0%;
   }
 }
 
 @media (min-width:25rem) and (max-width:37.4375rem) {
-  .c1 {
-    margin: 0 -0.25rem;
+  .c0 {
+    padding: 0 1rem;
     margin-left: 0%;
   }
 }
 
 @media (min-width:37.5rem) and (max-width:62.9375rem) {
-  .c1 {
-    margin: 0 -0.5rem;
+  .c0 {
+    padding: 0 1rem;
     margin-left: 0%;
   }
 }
 
 @media (min-width:63rem) and (max-width:80rem) {
-  .c1 {
-    margin: 0 -0.5rem;
+  .c0 {
     margin-left: 0%;
   }
 }
 
 @media (min-width:80rem) {
-  .c1 {
-    margin: 0 -0.5rem;
+  .c0 {
     margin-left: 20%;
   }
 }
 
 @supports (display:grid) {
+  .c0 {
+    display: grid;
+    position: initial;
+  }
+}
+
+@media (max-width:14.9375rem) {
   .c1 {
+    width: calc(6/6*(100% - 6 * 0.5rem) + 5 * 0.5rem );
+    margin: 0 0.25rem;
+    display: inline-block;
+    vertical-align: top;
+  }
+}
+
+@media (min-width:15rem) and (max-width:24.9375rem) {
+  .c1 {
+    width: calc(6/6*(100% - 6 * 0.5rem) + 5 * 0.5rem );
+    margin: 0 0.25rem;
+    display: inline-block;
+    vertical-align: top;
+  }
+}
+
+@media (min-width:25rem) and (max-width:37.4375rem) {
+  .c1 {
+    width: calc(6/6*(100% - 6 * 0.5rem) + 5 * 0.5rem );
+    margin: 0 0.25rem;
+    display: inline-block;
+    vertical-align: top;
+  }
+}
+
+@media (min-width:37.5rem) and (max-width:62.9375rem) {
+  .c1 {
+    width: calc(6/6*(100% - 6 * 1rem) + 5 * 1rem );
+    margin: 0 0.5rem;
+    display: inline-block;
+    vertical-align: top;
+  }
+}
+
+@media (min-width:63rem) and (max-width:80rem) {
+  .c1 {
+    width: calc(6/8*(100% - 8 * 1rem) + 5 * 1rem );
+    margin: 0 0.5rem;
+    display: inline-block;
+    vertical-align: top;
+  }
+}
+
+@media (min-width:80rem) {
+  .c1 {
+    width: calc(12/20*(100% - 20 * 1rem) + 11 * 1rem );
+    margin: 0 0.5rem;
+    display: inline-block;
+    vertical-align: top;
+  }
+}
+
+@supports (display:grid) {
+  .c1 {
+    display: block;
+  }
+}
+
+@media (max-width:14.9375rem) {
+  .c3 {
+    width: calc(6/6*(100% - 6 * 0.5rem) + 5 * 0.5rem );
+    display: inline-block;
+    vertical-align: top;
+  }
+}
+
+@media (min-width:15rem) and (max-width:24.9375rem) {
+  .c3 {
+    width: calc(6/6*(100% - 6 * 0.5rem) + 5 * 0.5rem );
+    display: inline-block;
+    vertical-align: top;
+  }
+}
+
+@media (min-width:25rem) and (max-width:37.4375rem) {
+  .c3 {
+    width: calc(6/6*(100% - 6 * 0.5rem) + 5 * 0.5rem );
+    display: inline-block;
+    vertical-align: top;
+  }
+}
+
+@media (min-width:37.5rem) and (max-width:62.9375rem) {
+  .c3 {
+    width: calc(6/6*(100% - 6 * 1rem) + 5 * 1rem );
+    display: inline-block;
+    vertical-align: top;
+  }
+}
+
+@media (min-width:63rem) and (max-width:80rem) {
+  .c3 {
+    width: calc(6/8*(100% - 8 * 1rem) + 5 * 1rem );
+    display: inline-block;
+    vertical-align: top;
+  }
+}
+
+@media (min-width:80rem) {
+  .c3 {
+    width: calc(12/20*(100% - 20 * 1rem) + 11 * 1rem );
+    display: inline-block;
+    vertical-align: top;
+  }
+}
+
+@supports (display:grid) {
+  .c3 {
     display: grid;
     position: initial;
   }
 }
 
 @media (max-width:14.9375rem) {
-  .c2 {
-    margin: 0 0.25rem;
-    width: calc(100% - 0.5rem);
+  .c4 {
+    width: calc(100%);
     display: inline-block;
     vertical-align: top;
   }
 }
 
 @media (min-width:15rem) and (max-width:24.9375rem) {
-  .c2 {
-    margin: 0 0.25rem;
-    width: calc(100% - 0.5rem);
+  .c4 {
+    width: calc(100%);
     display: inline-block;
     vertical-align: top;
   }
 }
 
 @media (min-width:25rem) and (max-width:37.4375rem) {
-  .c2 {
-    margin: 0 0.25rem;
-    width: calc(100% - 0.5rem);
+  .c4 {
+    width: calc(100%);
     display: inline-block;
     vertical-align: top;
   }
 }
 
 @media (min-width:37.5rem) and (max-width:62.9375rem) {
-  .c2 {
-    margin: 0 0.5rem;
-    width: calc(100% - 1rem);
+  .c4 {
+    width: calc(100%);
     display: inline-block;
     vertical-align: top;
   }
 }
 
 @media (min-width:63rem) and (max-width:80rem) {
-  .c2 {
-    margin: 0 0.5rem;
-    width: calc(75% - 1rem);
+  .c4 {
+    width: calc(100%);
     display: inline-block;
     vertical-align: top;
   }
 }
 
 @media (min-width:80rem) {
-  .c2 {
-    margin: 0 0.5rem;
-    width: calc(60% - 1rem);
+  .c4 {
+    width: calc(100%);
     display: inline-block;
     vertical-align: top;
   }
 }
 
 @supports (display:grid) {
-  .c2 {
+  .c4 {
     display: block;
   }
 }
 
 @media (max-width:14.9375rem) {
-  .c4 {
-    width: calc(100%);
-    display: inline-block;
-    vertical-align: top;
-  }
-}
-
-@media (min-width:15rem) and (max-width:24.9375rem) {
-  .c4 {
-    width: calc(100%);
-    display: inline-block;
-    vertical-align: top;
-  }
-}
-
-@media (min-width:25rem) and (max-width:37.4375rem) {
-  .c4 {
-    width: calc(100%);
-    display: inline-block;
-    vertical-align: top;
-  }
-}
-
-@media (min-width:37.5rem) and (max-width:62.9375rem) {
-  .c4 {
-    width: calc(100%);
-    display: inline-block;
-    vertical-align: top;
-  }
-}
-
-@media (min-width:63rem) and (max-width:80rem) {
-  .c4 {
-    width: calc(75%);
-    display: inline-block;
-    vertical-align: top;
-  }
-}
-
-@media (min-width:80rem) {
-  .c4 {
-    width: calc(60%);
-    display: inline-block;
-    vertical-align: top;
-  }
-}
-
-@supports (display:grid) {
-  .c4 {
-    display: grid;
-    position: initial;
-  }
-}
-
-@media (max-width:14.9375rem) {
   .c5 {
     width: calc(100%);
     display: inline-block;
@@ -206,60 +258,6 @@ exports[`Grid component should render Grid with Grid items 1`] = `
 
 @media (min-width:37.5rem) and (max-width:62.9375rem) {
   .c5 {
-    width: calc(100%);
-    display: inline-block;
-    vertical-align: top;
-  }
-}
-
-@media (min-width:63rem) and (max-width:80rem) {
-  .c5 {
-    width: calc(100%);
-    display: inline-block;
-    vertical-align: top;
-  }
-}
-
-@media (min-width:80rem) {
-  .c5 {
-    width: calc(100%);
-    display: inline-block;
-    vertical-align: top;
-  }
-}
-
-@supports (display:grid) {
-  .c5 {
-    display: block;
-  }
-}
-
-@media (max-width:14.9375rem) {
-  .c6 {
-    width: calc(100%);
-    display: inline-block;
-    vertical-align: top;
-  }
-}
-
-@media (min-width:15rem) and (max-width:24.9375rem) {
-  .c6 {
-    width: calc(100%);
-    display: inline-block;
-    vertical-align: top;
-  }
-}
-
-@media (min-width:25rem) and (max-width:37.4375rem) {
-  .c6 {
-    width: calc(100%);
-    display: inline-block;
-    vertical-align: top;
-  }
-}
-
-@media (min-width:37.5rem) and (max-width:62.9375rem) {
-  .c6 {
     width: calc(83.33333333333333%);
     display: inline-block;
     vertical-align: top;
@@ -267,7 +265,7 @@ exports[`Grid component should render Grid with Grid items 1`] = `
 }
 
 @media (min-width:63rem) and (max-width:80rem) {
-  .c6 {
+  .c5 {
     width: calc(83.33333333333333%);
     display: inline-block;
     vertical-align: top;
@@ -275,8 +273,68 @@ exports[`Grid component should render Grid with Grid items 1`] = `
 }
 
 @media (min-width:80rem) {
-  .c6 {
+  .c5 {
     width: calc(83.33333333333333%);
+    display: inline-block;
+    vertical-align: top;
+  }
+}
+
+@supports (display:grid) {
+  .c5 {
+    display: block;
+  }
+}
+
+@media (max-width:14.9375rem) {
+  .c6 {
+    width: calc(6/6*(100% - 6 * 0.5rem) + 5 * 0.5rem );
+    margin: 0 0.25rem;
+    display: inline-block;
+    vertical-align: top;
+  }
+}
+
+@media (min-width:15rem) and (max-width:24.9375rem) {
+  .c6 {
+    width: calc(6/6*(100% - 6 * 0.5rem) + 5 * 0.5rem );
+    margin: 0 0.25rem;
+    display: inline-block;
+    vertical-align: top;
+  }
+}
+
+@media (min-width:25rem) and (max-width:37.4375rem) {
+  .c6 {
+    width: calc(6/6*(100% - 6 * 0.5rem) + 5 * 0.5rem );
+    margin: 0 0.25rem;
+    display: inline-block;
+    vertical-align: top;
+  }
+}
+
+@media (min-width:37.5rem) and (max-width:62.9375rem) {
+  .c6 {
+    width: calc(5/6*(100% - 6 * 1rem) + 4 * 1rem );
+    margin: 0 0.5rem;
+    display: inline-block;
+    vertical-align: top;
+  }
+}
+
+@media (min-width:63rem) and (max-width:80rem) {
+  .c6 {
+    width: calc(5/8*(100% - 8 * 1rem) + 4 * 1rem );
+    margin: 0 0.5rem;
+    display: inline-block;
+    vertical-align: top;
+  }
+}
+
+@media (min-width:80rem) {
+  .c6 {
+    width: calc(10/20*(100% - 20 * 1rem) + 9 * 1rem );
+    margin: 0 0.5rem;
     display: inline-block;
     vertical-align: top;
   }
@@ -285,120 +343,18 @@ exports[`Grid component should render Grid with Grid items 1`] = `
 @supports (display:grid) {
   .c6 {
     display: block;
-  }
-}
-
-@media (max-width:14.9375rem) {
-  .c7 {
-    margin: 0 0.25rem;
-    width: calc(100% - 0.5rem);
-    display: inline-block;
-    vertical-align: top;
-  }
-}
-
-@media (min-width:15rem) and (max-width:24.9375rem) {
-  .c7 {
-    margin: 0 0.25rem;
-    width: calc(100% - 0.5rem);
-    display: inline-block;
-    vertical-align: top;
-  }
-}
-
-@media (min-width:25rem) and (max-width:37.4375rem) {
-  .c7 {
-    margin: 0 0.25rem;
-    width: calc(100% - 0.5rem);
-    display: inline-block;
-    vertical-align: top;
-  }
-}
-
-@media (min-width:37.5rem) and (max-width:62.9375rem) {
-  .c7 {
-    margin: 0 0.5rem;
-    width: calc(83.33333333333333% - 1rem);
-    display: inline-block;
-    vertical-align: top;
-  }
-}
-
-@media (min-width:63rem) and (max-width:80rem) {
-  .c7 {
-    margin: 0 0.5rem;
-    width: calc(62.5% - 1rem);
-    display: inline-block;
-    vertical-align: top;
-  }
-}
-
-@media (min-width:80rem) {
-  .c7 {
-    margin: 0 0.5rem;
-    width: calc(50% - 1rem);
-    display: inline-block;
-    vertical-align: top;
-  }
-}
-
-@supports (display:grid) {
-  .c7 {
-    display: block;
-  }
-}
-
-@media (max-width:14.9375rem) {
-  .c0 {
-    padding: 0 0.5rem;
-  }
-}
-
-@media (min-width:15rem) and (max-width:24.9375rem) {
-  .c0 {
-    padding: 0 0.5rem;
-  }
-}
-
-@media (min-width:25rem) and (max-width:37.4375rem) {
-  .c0 {
-    padding: 0 1rem;
-  }
-}
-
-@media (min-width:37.5rem) and (max-width:62.9375rem) {
-  .c0 {
-    padding: 0 1rem;
-  }
-}
-
-@media (min-width:63rem) and (max-width:80rem) {
-  .c0 {
-    padding: 0 1rem;
-  }
-}
-
-@media (min-width:80rem) {
-  .c0 {
-    padding: 0 1rem;
-  }
-}
-
-@supports (display:grid) {
-  .c0 {
-    padding: 0;
   }
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
-  .c3 {
+  .c2 {
     font-size: 1rem;
     line-height: 1.375rem;
   }
 }
 
 @media (min-width:37.5rem) {
-  .c3 {
+  .c2 {
     font-size: 1rem;
     line-height: 1.375rem;
   }
@@ -406,22 +362,506 @@ exports[`Grid component should render Grid with Grid items 1`] = `
 
 <div
   class="c0"
+  dir="ltr"
 >
   <div
     class="c1"
     dir="ltr"
   >
-    <div
+    <p
       class="c2"
+    >
+      1
+      This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines.
+    </p>
+  </div>
+  <div
+    class="c3"
+    dir="ltr"
+  >
+    <div
+      class="c4"
       dir="ltr"
     >
       <p
-        class="c3"
+        class="c2"
       >
-        1
+        Landscape image 
         This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines.
       </p>
     </div>
+    <div
+      class="c5"
+      dir="ltr"
+    >
+      <p
+        class="c2"
+      >
+        Landscape image's caption 
+        This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines.
+      </p>
+    </div>
+  </div>
+  <div
+    class="c6"
+    dir="ltr"
+  >
+    <p
+      class="c2"
+    >
+      Paragraph 
+      This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines.
+    </p>
+  </div>
+  <div
+    class="c6"
+    dir="ltr"
+  >
+    <p
+      class="c2"
+    >
+      2
+      This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines.
+    </p>
+  </div>
+  <div
+    class="c6"
+    dir="ltr"
+  >
+    <p
+      class="c2"
+    >
+      3
+      This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines.
+    </p>
+  </div>
+  <div
+    class="c6"
+    dir="ltr"
+  >
+    <p
+      class="c2"
+    >
+      4
+      This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines.
+    </p>
+  </div>
+  <div
+    class="c6"
+    dir="ltr"
+  >
+    <p
+      class="c2"
+    >
+      5
+      This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines.
+    </p>
+  </div>
+  <div
+    class="c6"
+    dir="ltr"
+  >
+    <p
+      class="c2"
+    >
+      6
+      This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines.
+    </p>
+  </div>
+  <div
+    class="c6"
+    dir="ltr"
+  >
+    <p
+      class="c2"
+    >
+      7
+      This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines.
+    </p>
+  </div>
+  <div
+    class="c6"
+    dir="ltr"
+  >
+    <p
+      class="c2"
+    >
+      8
+      This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines.
+    </p>
+  </div>
+  <div
+    class="c6"
+    dir="ltr"
+  >
+    <p
+      class="c2"
+    >
+      9
+      This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines.
+    </p>
+  </div>
+  <div
+    class="c6"
+    dir="ltr"
+  >
+    <p
+      class="c2"
+    >
+      10
+      This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines.
+    </p>
+  </div>
+</div>
+`;
+
+exports[`Grid component should render Grid with Grid items including nested non-Grid Figure element 1`] = `
+.c0 {
+  display: inline;
+}
+
+.c4 {
+  display: inline;
+}
+
+.c2 {
+  font-size: 0.9375rem;
+  line-height: 1.25rem;
+  font-family: ReithSans,Helvetica,Arial,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #3F3F42;
+  padding-bottom: 1.5rem;
+  margin: 0;
+}
+
+.c3 {
+  margin: 0;
+  padding: 0;
+}
+
+@supports (display:grid) {
+  .c0 {
+    display: grid;
+    position: initial;
+  }
+}
+
+@media (max-width:14.9375rem) {
+  .c1 {
+    width: calc(100% - 0%);
+    margin-left: 0%;
+    display: inline-block;
+    vertical-align: top;
+  }
+}
+
+@media (min-width:15rem) and (max-width:24.9375rem) {
+  .c1 {
+    width: calc(100% - 0%);
+    margin-left: 0%;
+    display: inline-block;
+    vertical-align: top;
+  }
+}
+
+@media (min-width:25rem) and (max-width:37.4375rem) {
+  .c1 {
+    width: calc(100% - 0%);
+    margin-left: 0%;
+    display: inline-block;
+    vertical-align: top;
+  }
+}
+
+@media (min-width:37.5rem) and (max-width:62.9375rem) {
+  .c1 {
+    width: calc(100% - 0%);
+    margin-left: 0%;
+    display: inline-block;
+    vertical-align: top;
+  }
+}
+
+@media (min-width:63rem) and (max-width:80rem) {
+  .c1 {
+    width: calc(75%);
+    margin-left: 0%;
+    display: inline-block;
+    vertical-align: top;
+  }
+}
+
+@media (min-width:80rem) {
+  .c1 {
+    width: calc(60%);
+    margin-left: 20%;
+    display: inline-block;
+    vertical-align: top;
+  }
+}
+
+@supports (display:grid) {
+  .c1 {
+    display: block;
+  }
+}
+
+@media (max-width:14.9375rem) {
+  .c4 {
+    margin-left: 0%;
+  }
+}
+
+@media (min-width:15rem) and (max-width:24.9375rem) {
+  .c4 {
+    margin-left: 0%;
+  }
+}
+
+@media (min-width:25rem) and (max-width:37.4375rem) {
+  .c4 {
+    margin-left: 0%;
+  }
+}
+
+@media (min-width:37.5rem) and (max-width:62.9375rem) {
+  .c4 {
+    margin-left: 0%;
+  }
+}
+
+@media (min-width:63rem) and (max-width:80rem) {
+  .c4 {
+    margin-left: 0%;
+  }
+}
+
+@media (min-width:80rem) {
+  .c4 {
+    margin-left: 33.333333333333336%;
+  }
+}
+
+@supports (display:grid) {
+  .c4 {
+    display: grid;
+    position: initial;
+  }
+}
+
+@media (max-width:14.9375rem) {
+  .c5 {
+    width: calc(100% - 0%);
+    margin-left: 0%;
+    display: inline-block;
+    vertical-align: top;
+  }
+}
+
+@media (min-width:15rem) and (max-width:24.9375rem) {
+  .c5 {
+    width: calc(100% - 0%);
+    margin-left: 0%;
+    display: inline-block;
+    vertical-align: top;
+  }
+}
+
+@media (min-width:25rem) and (max-width:37.4375rem) {
+  .c5 {
+    width: calc(100% - 0%);
+    margin-left: 0%;
+    display: inline-block;
+    vertical-align: top;
+  }
+}
+
+@media (min-width:37.5rem) and (max-width:62.9375rem) {
+  .c5 {
+    width: calc(100% - 0%);
+    margin-left: 0%;
+    display: inline-block;
+    vertical-align: top;
+  }
+}
+
+@media (min-width:63rem) and (max-width:80rem) {
+  .c5 {
+    width: calc(100% - 0%);
+    margin-left: 0%;
+    display: inline-block;
+    vertical-align: top;
+  }
+}
+
+@media (min-width:80rem) {
+  .c5 {
+    width: calc(100% - 33.333333333333336%);
+    margin-left: 33.333333333333336%;
+    display: inline-block;
+    vertical-align: top;
+  }
+}
+
+@supports (display:grid) {
+  .c5 {
+    display: block;
+  }
+}
+
+@media (max-width:14.9375rem) {
+  .c6 {
+    width: calc(100% - 0%);
+    margin-left: 0%;
+    display: inline-block;
+    vertical-align: top;
+  }
+}
+
+@media (min-width:15rem) and (max-width:24.9375rem) {
+  .c6 {
+    width: calc(100% - 0%);
+    margin-left: 0%;
+    display: inline-block;
+    vertical-align: top;
+  }
+}
+
+@media (min-width:25rem) and (max-width:37.4375rem) {
+  .c6 {
+    width: calc(100% - 0%);
+    margin-left: 0%;
+    display: inline-block;
+    vertical-align: top;
+  }
+}
+
+@media (min-width:37.5rem) and (max-width:62.9375rem) {
+  .c6 {
+    width: calc(83.33333333333333%);
+    margin-left: 0%;
+    display: inline-block;
+    vertical-align: top;
+  }
+}
+
+@media (min-width:63rem) and (max-width:80rem) {
+  .c6 {
+    width: calc(83.33333333333333%);
+    margin-left: 0%;
+    display: inline-block;
+    vertical-align: top;
+  }
+}
+
+@media (min-width:80rem) {
+  .c6 {
+    width: calc(83.33333333333333%);
+    margin-left: 33.333333333333336%;
+    display: inline-block;
+    vertical-align: top;
+  }
+}
+
+@supports (display:grid) {
+  .c6 {
+    display: block;
+  }
+}
+
+@media (max-width:14.9375rem) {
+  .c7 {
+    width: calc(100% - 0%);
+    margin-left: 0%;
+    display: inline-block;
+    vertical-align: top;
+  }
+}
+
+@media (min-width:15rem) and (max-width:24.9375rem) {
+  .c7 {
+    width: calc(100% - 0%);
+    margin-left: 0%;
+    display: inline-block;
+    vertical-align: top;
+  }
+}
+
+@media (min-width:25rem) and (max-width:37.4375rem) {
+  .c7 {
+    width: calc(100% - 0%);
+    margin-left: 0%;
+    display: inline-block;
+    vertical-align: top;
+  }
+}
+
+@media (min-width:37.5rem) and (max-width:62.9375rem) {
+  .c7 {
+    width: calc(83.33333333333333%);
+    margin-left: 0%;
+    display: inline-block;
+    vertical-align: top;
+  }
+}
+
+@media (min-width:63rem) and (max-width:80rem) {
+  .c7 {
+    width: calc(62.5%);
+    margin-left: 0%;
+    display: inline-block;
+    vertical-align: top;
+  }
+}
+
+@media (min-width:80rem) {
+  .c7 {
+    width: calc(50%);
+    margin-left: 20%;
+    display: inline-block;
+    vertical-align: top;
+  }
+}
+
+@supports (display:grid) {
+  .c7 {
+    display: block;
+  }
+}
+
+@media (min-width:20rem) and (max-width:37.4375rem) {
+  .c2 {
+    font-size: 1rem;
+    line-height: 1.375rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .c2 {
+    font-size: 1rem;
+    line-height: 1.375rem;
+  }
+}
+
+<div
+  class="c0"
+  dir="ltr"
+>
+  <div
+    class="c1"
+    dir="ltr"
+  >
+    <p
+      class="c2"
+    >
+      1
+      This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines.
+    </p>
+  </div>
+  <figure
+    class="c3"
+  >
     <div
       class="c4"
       dir="ltr"
@@ -431,7 +871,7 @@ exports[`Grid component should render Grid with Grid items 1`] = `
         dir="ltr"
       >
         <p
-          class="c3"
+          class="c2"
         >
           Landscape image 
           This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines.
@@ -442,686 +882,152 @@ exports[`Grid component should render Grid with Grid items 1`] = `
         dir="ltr"
       >
         <p
-          class="c3"
+          class="c2"
         >
           Landscape image's caption 
           This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines.
         </p>
       </div>
     </div>
-    <div
-      class="c7"
-      dir="ltr"
+  </figure>
+  <div
+    class="c7"
+    dir="ltr"
+  >
+    <p
+      class="c2"
     >
-      <p
-        class="c3"
-      >
-        Paragraph 
-        This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines.
-      </p>
-    </div>
-    <div
-      class="c7"
-      dir="ltr"
+      Paragraph 
+      This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines.
+    </p>
+  </div>
+  <div
+    class="c7"
+    dir="ltr"
+  >
+    <p
+      class="c2"
     >
-      <p
-        class="c3"
-      >
-        2
-        This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines.
-      </p>
-    </div>
-    <div
-      class="c7"
-      dir="ltr"
+      2
+      This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines.
+    </p>
+  </div>
+  <div
+    class="c7"
+    dir="ltr"
+  >
+    <p
+      class="c2"
     >
-      <p
-        class="c3"
-      >
-        3
-        This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines.
-      </p>
-    </div>
-    <div
-      class="c7"
-      dir="ltr"
+      3
+      This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines.
+    </p>
+  </div>
+  <div
+    class="c7"
+    dir="ltr"
+  >
+    <p
+      class="c2"
     >
-      <p
-        class="c3"
-      >
-        4
-        This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines.
-      </p>
-    </div>
-    <div
-      class="c7"
-      dir="ltr"
+      4
+      This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines.
+    </p>
+  </div>
+  <div
+    class="c7"
+    dir="ltr"
+  >
+    <p
+      class="c2"
     >
-      <p
-        class="c3"
-      >
-        5
-        This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines.
-      </p>
-    </div>
-    <div
-      class="c7"
-      dir="ltr"
+      5
+      This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines.
+    </p>
+  </div>
+  <div
+    class="c7"
+    dir="ltr"
+  >
+    <p
+      class="c2"
     >
-      <p
-        class="c3"
-      >
-        6
-        This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines.
-      </p>
-    </div>
-    <div
-      class="c7"
-      dir="ltr"
+      6
+      This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines.
+    </p>
+  </div>
+  <div
+    class="c7"
+    dir="ltr"
+  >
+    <p
+      class="c2"
     >
-      <p
-        class="c3"
-      >
-        7
-        This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines.
-      </p>
-    </div>
-    <div
-      class="c7"
-      dir="ltr"
+      7
+      This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines.
+    </p>
+  </div>
+  <div
+    class="c7"
+    dir="ltr"
+  >
+    <p
+      class="c2"
     >
-      <p
-        class="c3"
-      >
-        8
-        This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines.
-      </p>
-    </div>
-    <div
-      class="c7"
-      dir="ltr"
+      8
+      This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines.
+    </p>
+  </div>
+  <div
+    class="c7"
+    dir="ltr"
+  >
+    <p
+      class="c2"
     >
-      <p
-        class="c3"
-      >
-        9
-        This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines.
-      </p>
-    </div>
-    <div
-      class="c7"
-      dir="ltr"
+      9
+      This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines.
+    </p>
+  </div>
+  <div
+    class="c7"
+    dir="ltr"
+  >
+    <p
+      class="c2"
     >
-      <p
-        class="c3"
-      >
-        10
-        This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines.
-      </p>
-    </div>
+      10
+      This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines.
+    </p>
   </div>
 </div>
 `;
 
-exports[`Grid component should render Grid with Grid items including nested non-Grid Figure element 1`] = `
-.c1 {
-  position: relative;
-}
-
-.c5 {
-  position: relative;
+exports[`Grid component should render Grid with enableGelGutters & margins on only one of the Grid items 1`] = `
+.c0 {
+  display: inline;
 }
 
 .c3 {
-  font-size: 0.9375rem;
-  line-height: 1.25rem;
-  font-family: ReithSans,Helvetica,Arial,sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  color: #3F3F42;
-  padding-bottom: 1.5rem;
-  margin: 0;
-}
-
-.c4 {
-  margin: 0;
-  padding: 0;
-}
-
-@supports (display:grid) {
-  .c1 {
-    display: grid;
-    position: initial;
-  }
-}
-
-@media (max-width:14.9375rem) {
-  .c2 {
-    width: calc(100% - 0%);
-    margin-left: 0%;
-    display: inline-block;
-    vertical-align: top;
-  }
-}
-
-@media (min-width:15rem) and (max-width:24.9375rem) {
-  .c2 {
-    width: calc(100% - 0%);
-    margin-left: 0%;
-    display: inline-block;
-    vertical-align: top;
-  }
-}
-
-@media (min-width:25rem) and (max-width:37.4375rem) {
-  .c2 {
-    width: calc(100% - 0%);
-    margin-left: 0%;
-    display: inline-block;
-    vertical-align: top;
-  }
-}
-
-@media (min-width:37.5rem) and (max-width:62.9375rem) {
-  .c2 {
-    width: calc(100% - 0%);
-    margin-left: 0%;
-    display: inline-block;
-    vertical-align: top;
-  }
-}
-
-@media (min-width:63rem) and (max-width:80rem) {
-  .c2 {
-    width: calc(75%);
-    margin-left: 0%;
-    display: inline-block;
-    vertical-align: top;
-  }
-}
-
-@media (min-width:80rem) {
-  .c2 {
-    width: calc(60%);
-    margin-left: 20%;
-    display: inline-block;
-    vertical-align: top;
-  }
-}
-
-@supports (display:grid) {
-  .c2 {
-    display: block;
-  }
-}
-
-@media (max-width:14.9375rem) {
-  .c5 {
-    margin-left: 0%;
-  }
-}
-
-@media (min-width:15rem) and (max-width:24.9375rem) {
-  .c5 {
-    margin-left: 0%;
-  }
-}
-
-@media (min-width:25rem) and (max-width:37.4375rem) {
-  .c5 {
-    margin-left: 0%;
-  }
-}
-
-@media (min-width:37.5rem) and (max-width:62.9375rem) {
-  .c5 {
-    margin-left: 0%;
-  }
-}
-
-@media (min-width:63rem) and (max-width:80rem) {
-  .c5 {
-    margin-left: 0%;
-  }
-}
-
-@media (min-width:80rem) {
-  .c5 {
-    margin-left: 33.333333333333336%;
-  }
-}
-
-@supports (display:grid) {
-  .c5 {
-    display: grid;
-    position: initial;
-  }
-}
-
-@media (max-width:14.9375rem) {
-  .c6 {
-    width: calc(100% - 0%);
-    margin-left: 0%;
-    display: inline-block;
-    vertical-align: top;
-  }
-}
-
-@media (min-width:15rem) and (max-width:24.9375rem) {
-  .c6 {
-    width: calc(100% - 0%);
-    margin-left: 0%;
-    display: inline-block;
-    vertical-align: top;
-  }
-}
-
-@media (min-width:25rem) and (max-width:37.4375rem) {
-  .c6 {
-    width: calc(100% - 0%);
-    margin-left: 0%;
-    display: inline-block;
-    vertical-align: top;
-  }
-}
-
-@media (min-width:37.5rem) and (max-width:62.9375rem) {
-  .c6 {
-    width: calc(100% - 0%);
-    margin-left: 0%;
-    display: inline-block;
-    vertical-align: top;
-  }
-}
-
-@media (min-width:63rem) and (max-width:80rem) {
-  .c6 {
-    width: calc(100% - 0%);
-    margin-left: 0%;
-    display: inline-block;
-    vertical-align: top;
-  }
-}
-
-@media (min-width:80rem) {
-  .c6 {
-    width: calc(100% - 33.333333333333336%);
-    margin-left: 33.333333333333336%;
-    display: inline-block;
-    vertical-align: top;
-  }
-}
-
-@supports (display:grid) {
-  .c6 {
-    display: block;
-  }
-}
-
-@media (max-width:14.9375rem) {
-  .c7 {
-    width: calc(100% - 0%);
-    margin-left: 0%;
-    display: inline-block;
-    vertical-align: top;
-  }
-}
-
-@media (min-width:15rem) and (max-width:24.9375rem) {
-  .c7 {
-    width: calc(100% - 0%);
-    margin-left: 0%;
-    display: inline-block;
-    vertical-align: top;
-  }
-}
-
-@media (min-width:25rem) and (max-width:37.4375rem) {
-  .c7 {
-    width: calc(100% - 0%);
-    margin-left: 0%;
-    display: inline-block;
-    vertical-align: top;
-  }
-}
-
-@media (min-width:37.5rem) and (max-width:62.9375rem) {
-  .c7 {
-    width: calc(83.33333333333333%);
-    margin-left: 0%;
-    display: inline-block;
-    vertical-align: top;
-  }
-}
-
-@media (min-width:63rem) and (max-width:80rem) {
-  .c7 {
-    width: calc(83.33333333333333%);
-    margin-left: 0%;
-    display: inline-block;
-    vertical-align: top;
-  }
-}
-
-@media (min-width:80rem) {
-  .c7 {
-    width: calc(83.33333333333333%);
-    margin-left: 33.333333333333336%;
-    display: inline-block;
-    vertical-align: top;
-  }
-}
-
-@supports (display:grid) {
-  .c7 {
-    display: block;
-  }
-}
-
-@media (max-width:14.9375rem) {
-  .c8 {
-    width: calc(100% - 0%);
-    margin-left: 0%;
-    display: inline-block;
-    vertical-align: top;
-  }
-}
-
-@media (min-width:15rem) and (max-width:24.9375rem) {
-  .c8 {
-    width: calc(100% - 0%);
-    margin-left: 0%;
-    display: inline-block;
-    vertical-align: top;
-  }
-}
-
-@media (min-width:25rem) and (max-width:37.4375rem) {
-  .c8 {
-    width: calc(100% - 0%);
-    margin-left: 0%;
-    display: inline-block;
-    vertical-align: top;
-  }
-}
-
-@media (min-width:37.5rem) and (max-width:62.9375rem) {
-  .c8 {
-    width: calc(83.33333333333333%);
-    margin-left: 0%;
-    display: inline-block;
-    vertical-align: top;
-  }
-}
-
-@media (min-width:63rem) and (max-width:80rem) {
-  .c8 {
-    width: calc(62.5%);
-    margin-left: 0%;
-    display: inline-block;
-    vertical-align: top;
-  }
-}
-
-@media (min-width:80rem) {
-  .c8 {
-    width: calc(50%);
-    margin-left: 20%;
-    display: inline-block;
-    vertical-align: top;
-  }
-}
-
-@supports (display:grid) {
-  .c8 {
-    display: block;
-  }
-}
-
-@media (max-width:14.9375rem) {
-  .c0 {
-    padding: 0 0.5rem;
-  }
-}
-
-@media (min-width:15rem) and (max-width:24.9375rem) {
-  .c0 {
-    padding: 0 0.5rem;
-  }
-}
-
-@media (min-width:25rem) and (max-width:37.4375rem) {
-  .c0 {
-    padding: 0 1rem;
-  }
-}
-
-@media (min-width:37.5rem) and (max-width:62.9375rem) {
-  .c0 {
-    padding: 0 1rem;
-  }
-}
-
-@media (min-width:63rem) and (max-width:80rem) {
-  .c0 {
-    padding: 0 1rem;
-  }
-}
-
-@media (min-width:80rem) {
-  .c0 {
-    padding: 0 1rem;
-  }
-}
-
-@supports (display:grid) {
-  .c0 {
-    padding: 0;
-  }
-}
-
-@media (min-width:20rem) and (max-width:37.4375rem) {
-  .c3 {
-    font-size: 1rem;
-    line-height: 1.375rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c3 {
-    font-size: 1rem;
-    line-height: 1.375rem;
-  }
-}
-
-<div
-  class="c0"
->
-  <div
-    class="c1"
-    dir="ltr"
-  >
-    <div
-      class="c2"
-      dir="ltr"
-    >
-      <p
-        class="c3"
-      >
-        1
-        This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines.
-      </p>
-    </div>
-    <figure
-      class="c4"
-    >
-      <div
-        class="c5"
-        dir="ltr"
-      >
-        <div
-          class="c6"
-          dir="ltr"
-        >
-          <p
-            class="c3"
-          >
-            Landscape image 
-            This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines.
-          </p>
-        </div>
-        <div
-          class="c7"
-          dir="ltr"
-        >
-          <p
-            class="c3"
-          >
-            Landscape image's caption 
-            This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines.
-          </p>
-        </div>
-      </div>
-    </figure>
-    <div
-      class="c8"
-      dir="ltr"
-    >
-      <p
-        class="c3"
-      >
-        Paragraph 
-        This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines.
-      </p>
-    </div>
-    <div
-      class="c8"
-      dir="ltr"
-    >
-      <p
-        class="c3"
-      >
-        2
-        This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines.
-      </p>
-    </div>
-    <div
-      class="c8"
-      dir="ltr"
-    >
-      <p
-        class="c3"
-      >
-        3
-        This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines.
-      </p>
-    </div>
-    <div
-      class="c8"
-      dir="ltr"
-    >
-      <p
-        class="c3"
-      >
-        4
-        This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines.
-      </p>
-    </div>
-    <div
-      class="c8"
-      dir="ltr"
-    >
-      <p
-        class="c3"
-      >
-        5
-        This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines.
-      </p>
-    </div>
-    <div
-      class="c8"
-      dir="ltr"
-    >
-      <p
-        class="c3"
-      >
-        6
-        This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines.
-      </p>
-    </div>
-    <div
-      class="c8"
-      dir="ltr"
-    >
-      <p
-        class="c3"
-      >
-        7
-        This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines.
-      </p>
-    </div>
-    <div
-      class="c8"
-      dir="ltr"
-    >
-      <p
-        class="c3"
-      >
-        8
-        This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines.
-      </p>
-    </div>
-    <div
-      class="c8"
-      dir="ltr"
-    >
-      <p
-        class="c3"
-      >
-        9
-        This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines.
-      </p>
-    </div>
-    <div
-      class="c8"
-      dir="ltr"
-    >
-      <p
-        class="c3"
-      >
-        10
-        This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines. This is a long paragraph that will wrap for several lines.
-      </p>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Grid component should render Grid with enableGelGutters, enableGelMargins & a nested one with enableNegativeGelMargins 1`] = `
-.c1 {
-  position: relative;
-}
-
-.c4 {
   display: block;
   width: 100%;
   visibility: visible;
 }
 
-.c3 {
+.c2 {
   margin: 0;
   padding: 0 0 0.5rem 0;
 }
 
 @supports (display:grid) {
-  .c1 {
+  .c0 {
     display: grid;
     position: initial;
   }
 }
 
 @media (max-width:14.9375rem) {
-  .c2 {
+  .c1 {
     width: calc(100%);
     display: inline-block;
     vertical-align: top;
@@ -1129,7 +1035,7 @@ exports[`Grid component should render Grid with enableGelGutters, enableGelMargi
 }
 
 @media (min-width:15rem) and (max-width:24.9375rem) {
-  .c2 {
+  .c1 {
     width: calc(100%);
     display: inline-block;
     vertical-align: top;
@@ -1137,7 +1043,7 @@ exports[`Grid component should render Grid with enableGelGutters, enableGelMargi
 }
 
 @media (min-width:25rem) and (max-width:37.4375rem) {
-  .c2 {
+  .c1 {
     width: calc(100%);
     display: inline-block;
     vertical-align: top;
@@ -1145,7 +1051,7 @@ exports[`Grid component should render Grid with enableGelGutters, enableGelMargi
 }
 
 @media (min-width:37.5rem) and (max-width:62.9375rem) {
-  .c2 {
+  .c1 {
     width: calc(100%);
     display: inline-block;
     vertical-align: top;
@@ -1153,7 +1059,7 @@ exports[`Grid component should render Grid with enableGelGutters, enableGelMargi
 }
 
 @media (min-width:63rem) and (max-width:80rem) {
-  .c2 {
+  .c1 {
     width: calc(75%);
     display: inline-block;
     vertical-align: top;
@@ -1161,7 +1067,7 @@ exports[`Grid component should render Grid with enableGelGutters, enableGelMargi
 }
 
 @media (min-width:80rem) {
-  .c2 {
+  .c1 {
     width: calc(75%);
     display: inline-block;
     vertical-align: top;
@@ -1169,13 +1075,14 @@ exports[`Grid component should render Grid with enableGelGutters, enableGelMargi
 }
 
 @supports (display:grid) {
-  .c2 {
+  .c1 {
     display: block;
   }
 }
 
 @media (max-width:14.9375rem) {
-  .c5 {
+  .c4 {
+    padding: 0 0.5rem;
     width: calc(100%);
     display: inline-block;
     vertical-align: top;
@@ -1183,7 +1090,8 @@ exports[`Grid component should render Grid with enableGelGutters, enableGelMargi
 }
 
 @media (min-width:15rem) and (max-width:24.9375rem) {
-  .c5 {
+  .c4 {
+    padding: 0 0.5rem;
     width: calc(100%);
     display: inline-block;
     vertical-align: top;
@@ -1191,7 +1099,8 @@ exports[`Grid component should render Grid with enableGelGutters, enableGelMargi
 }
 
 @media (min-width:25rem) and (max-width:37.4375rem) {
-  .c5 {
+  .c4 {
+    padding: 0 1rem;
     width: calc(100%);
     display: inline-block;
     vertical-align: top;
@@ -1199,7 +1108,8 @@ exports[`Grid component should render Grid with enableGelGutters, enableGelMargi
 }
 
 @media (min-width:37.5rem) and (max-width:62.9375rem) {
-  .c5 {
+  .c4 {
+    padding: 0 1rem;
     width: calc(100%);
     display: inline-block;
     vertical-align: top;
@@ -1207,7 +1117,7 @@ exports[`Grid component should render Grid with enableGelGutters, enableGelMargi
 }
 
 @media (min-width:63rem) and (max-width:80rem) {
-  .c5 {
+  .c4 {
     width: calc(75%);
     display: inline-block;
     vertical-align: top;
@@ -1215,7 +1125,7 @@ exports[`Grid component should render Grid with enableGelGutters, enableGelMargi
 }
 
 @media (min-width:80rem) {
-  .c5 {
+  .c4 {
     width: calc(75%);
     display: inline-block;
     vertical-align: top;
@@ -1223,55 +1133,14 @@ exports[`Grid component should render Grid with enableGelGutters, enableGelMargi
 }
 
 @supports (display:grid) {
-  .c5 {
+  .c4 {
     display: block;
-  }
-}
-
-@media (max-width:14.9375rem) {
-  .c0 {
-    padding: 0 0.5rem;
-  }
-}
-
-@media (min-width:15rem) and (max-width:24.9375rem) {
-  .c0 {
-    padding: 0 0.5rem;
-  }
-}
-
-@media (min-width:25rem) and (max-width:37.4375rem) {
-  .c0 {
-    padding: 0 1rem;
-  }
-}
-
-@media (min-width:37.5rem) and (max-width:62.9375rem) {
-  .c0 {
-    padding: 0 1rem;
-  }
-}
-
-@media (min-width:63rem) and (max-width:80rem) {
-  .c0 {
-    padding: 0 1rem;
-  }
-}
-
-@media (min-width:80rem) {
-  .c0 {
-    padding: 0 1rem;
-  }
-}
-
-@supports (display:grid) {
-  .c0 {
-    padding: 0;
   }
 }
 
 <div
   class="c0"
+  dir="ltr"
 >
   <div
     class="c1"
@@ -1279,27 +1148,22 @@ exports[`Grid component should render Grid with enableGelGutters, enableGelMargi
   >
     <div
       class="c2"
-      dir="ltr"
     >
-      <div
+      <img
+        alt="Robert Downey Junior in Iron Man"
         class="c3"
-      >
-        <img
-          alt="Robert Downey Junior in Iron Man"
-          class="c4"
-          src="https://ichef.bbci.co.uk/news/660/cpsprodpb/11897/production/_106613817_999_al_.jpg"
-          width="640"
-        />
-      </div>
+        src="https://ichef.bbci.co.uk/news/660/cpsprodpb/11897/production/_106613817_999_al_.jpg"
+        width="640"
+      />
     </div>
-    <div
-      class="c5"
-      dir="ltr"
-    >
-      <p>
-        Image & Paragraph - groups 0-3 span 6/6 columns, groups 4+ span 6/8 columns. Outer Grid has enableGelMargins & Image Grid has enableNegativeGelMargins
-      </p>
-    </div>
+  </div>
+  <div
+    class="c4"
+    dir="ltr"
+  >
+    <p>
+      Image & Paragraph - groups 0-3 span 6/6 columns, groups 4+ span 6/8 columns. Grid item surrounding Paragraph has margins defined.
+    </p>
   </div>
 </div>
 `;

@@ -83,4 +83,20 @@ describe('Media Player: Placeholder', () => {
       }}
     />,
   );
+
+  shouldMatchSnapshot(
+    'should render no-js styles when noJsClassName prop is used',
+    <Placeholder
+      onClick={mockOnClick}
+      src="http://foo.bar/placeholder.png"
+      service="news"
+      mediaInfo={{
+        title: 'Dog chases cat.',
+        guidanceMessage:
+          'Guidance: May contain strong language, sexual or violent content that may offend.',
+        ...withDuration,
+      }}
+      noJsClassName="no-js"
+    />,
+  );
 });

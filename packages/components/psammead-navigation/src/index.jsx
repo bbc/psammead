@@ -215,6 +215,7 @@ const StyledNav = styled.nav`
   position: relative;
   background-color: ${C_POSTBOX};
   border-top: 0.0625rem solid ${C_WHITE};
+
   ${StyledListItem} {
     ${({ dir }) => css`
       &::after {

@@ -19,10 +19,9 @@ import {
 const paddingStart = ({ dir }) => `padding-${dir === 'ltr' ? 'left' : 'right'}`;
 
 const StyledLink = styled.a`
-  ${({ service }) => getSerifMedium(service)}
-  ${({ script }) => script && getDoublePica(script)};
   color: ${C_EBON};
-
+  ${({ script }) => script && getDoublePica(script)};
+  ${({ service }) => getSerifMedium(service)}
   text-decoration: none;
 
   &:hover,
@@ -43,8 +42,8 @@ const StyledItem = styled.div`
 
 export const MostReadRank = styled.span`
   ${({ service }) => getSerifLight(service)}
-  ${({ script }) => script && getFoolscap(script)};
   color: ${C_POSTBOX};
+  ${({ script }) => script && getFoolscap(script)};
   margin: 0; /* Reset */
   padding: 0;
   display: inline-block;
