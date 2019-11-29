@@ -14,13 +14,19 @@ const StyledHeading = styled.h2`
   color: ${C_SHADOW};
 `;
 
-const StyledSection = styled.section.attrs({
-  'aria-labelledby': MOST_READ_LABEL,
+const StyledSection = styled.section.attrs(props => ({
+  'aria-labelledby': props.labelId,
   role: 'region',
-})``;
+}))``;
 
-const MostReadTitle = ({ header, service, script, dir }) => (
-  <StyledSection>
+const MostReadTitle = ({
+  header,
+  service,
+  script,
+  dir,
+  labelId = MOST_READ_LABEL,
+}) => (
+  <StyledSection labelId={labelId}>
     <StyledHeading
       dir={dir}
       id={MOST_READ_LABEL}
@@ -37,10 +43,12 @@ MostReadTitle.propTypes = {
   service: string.isRequired,
   script: shape(scriptPropType).isRequired,
   dir: oneOf(['rtl', 'ltr']),
+  labelId: string,
 };
 
 MostReadTitle.defaultProps = {
   dir: 'ltr',
+  labelId: MOST_READ_LABEL,
 };
 
 export default MostReadTitle;
