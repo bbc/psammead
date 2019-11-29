@@ -64,7 +64,7 @@ const StyledCaption = styled.figcaption`
 `;
 const Gallery = ({ script, service, delay = 6000 }) => (
   <StyledFigure>
-    <ContentAnchor scrollable initialHeight={200} initialWidth={400}>
+    <ContentAnchor initialHeight={200} initialWidth={400}>
       <ImageTicker delay={delay} />
     </ContentAnchor>
     <StyledCaption>
