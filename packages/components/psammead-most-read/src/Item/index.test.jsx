@@ -2,16 +2,8 @@ import React from 'react';
 import { shouldMatchSnapshot } from '@bbc/psammead-test-helpers';
 import Timestamp from '@bbc/psammead-timestamp';
 import { latin, arabic } from '@bbc/gel-foundations/scripts';
-import { MostReadLink, MostReadRank } from './item';
-
-const ltrLink = {
-  title: 'John Lewis staff bonus cut again as profits fall',
-  href: 'https://www.bbc.com/vietnamese/institutional-49283563',
-};
-const rtlLink = {
-  title: "ایران از لغو 'رزمایش قطع اینترنت' خبر داد",
-  href: 'https://www.bbc.com/vietnamese/institutional-49283563',
-};
+import { MostReadLink, MostReadRank } from '.';
+import { items, itemsRTL } from '../testHelpers/fixtureData';
 
 const lastUpdated = (script, service) => (
   <Timestamp
@@ -27,18 +19,23 @@ const lastUpdated = (script, service) => (
 describe('MostReadLink', () => {
   shouldMatchSnapshot(
     'should render ltr correctly',
-    <MostReadLink link={ltrLink} service="news" script={latin} dir="ltr" />,
+    <MostReadLink link={items[0]} service="news" script={latin} dir="ltr" />,
   );
 
   shouldMatchSnapshot(
     'should render rtl correctly',
-    <MostReadLink link={rtlLink} service="persian" script={arabic} dir="rtl" />,
+    <MostReadLink
+      link={itemsRTL[0]}
+      service="persian"
+      script={arabic}
+      dir="rtl"
+    />,
   );
 
   shouldMatchSnapshot(
     'should render with last updated date correctly',
     <MostReadLink
-      link={ltrLink}
+      link={items[0]}
       lastUpdated={lastUpdated(latin, 'news')}
       service="news"
       script={latin}
