@@ -1,4 +1,5 @@
 import React from 'react';
+import { render } from '@testing-library/react';
 import { shouldMatchSnapshot } from '@bbc/psammead-test-helpers';
 import { arabic, latin } from '@bbc/gel-foundations/scripts';
 import BulletedList from './index';
@@ -16,13 +17,16 @@ const rtlProps = {
 };
 
 describe('PsammeadBulletedList', () => {
-  shouldMatchSnapshot(
-    `should not use default bullet styling so that screen readers don't read out "bullet"'`,
-    <BulletedList {...ltrProps}>
-      <li>No bullets</li>
-      <li>Mentioned</li>
-    </BulletedList>,
-  );
+  it('should confirm that the list-style is none', () => {
+    render(
+      <BulletedList {...ltrProps}>
+        <li>First item on the list</li>
+      </BulletedList>,
+    );
+    const listItem = document.querySelector('ul');
+    const style = window.getComputedStyle(listItem);
+    expect(style.listStyleType).toBe('none');
+  });
 
   shouldMatchSnapshot(
     'should render correctly from ltr',
