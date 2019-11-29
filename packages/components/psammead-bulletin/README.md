@@ -56,7 +56,7 @@ const WrappingComponent = () => {
       summary="This is the summary"
       headlineText="This is the headline"
       isLive
-      offScreenText="Watch Live"
+      offScreenText="Watch LIVE"
     />
   );
 };

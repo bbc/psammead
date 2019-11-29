@@ -10,7 +10,7 @@ const BulletinComponent = ({ script, service, isLive, type, ctaText }) => {
   const headlineText = 'This is the headline';
   const ctaLink = 'https://bbc.co.uk';
 
-  const liveCtaText = isLive ? `${ctaText} Live` : ctaText;
+  const playCtaText = isLive ? `${ctaText} Live` : ctaText;
   const offScreenText = isLive ? `${ctaText} LIVE` : ctaText;
 
   const image = (
@@ -29,7 +29,7 @@ const BulletinComponent = ({ script, service, isLive, type, ctaText }) => {
       headlineText={headlineText}
       summaryText={summaryText}
       ctaLink={ctaLink}
-      ctaText={liveCtaText}
+      ctaText={playCtaText}
       offScreenText={offScreenText}
     />
   );
