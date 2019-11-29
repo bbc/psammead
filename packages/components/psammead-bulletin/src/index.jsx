@@ -236,7 +236,10 @@ const Bulletin = ({
           dir={dir}
         >
           <IconWrapper dir={dir}>{mediaIcons[type]}</IconWrapper>
-          {ctaText}
+          {isLive
+            ? `${ctaText} ${liveText.charAt(0).toUpperCase() +
+                liveText.slice(1)},`
+            : `${ctaText},`}
         </PlayCTA>
       </TextWrapper>
     </BulletinWrapper>
