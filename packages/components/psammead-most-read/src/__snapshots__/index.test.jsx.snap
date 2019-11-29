@@ -27,7 +27,7 @@ exports[`MostRead should render with ltr most read with correct dir 1`] = `
   padding-left: 1rem;
 }
 
-.c5 {
+.c6 {
   font-family: ReithSerif,Helvetica,Arial,sans-serif;
   font-weight: 300;
   font-style: normal;
@@ -44,6 +44,23 @@ exports[`MostRead should render with ltr most read with correct dir 1`] = `
   list-style-type: none;
   margin: 0;
   padding: 0;
+}
+
+.c5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  margin: 0;
+  padding: 0;
+}
+
+.c3 {
+  grid-auto-flow: column;
+  grid-template-rows: repeat( 5,[col-start] auto [col-end] );
 }
 
 .c0 {
@@ -63,63 +80,9 @@ exports[`MostRead should render with ltr most read with correct dir 1`] = `
 }
 
 @media (max-width:14.9375rem) {
-  .c3 {
-    width: calc(18/18*(100% - 18 * 0.5rem) + 17 * 0.5rem );
-    display: inline-block;
-    vertical-align: top;
-  }
-}
-
-@media (min-width:15rem) and (max-width:24.9375rem) {
-  .c3 {
-    width: calc(18/18*(100% - 18 * 0.5rem) + 17 * 0.5rem );
-    display: inline-block;
-    vertical-align: top;
-  }
-}
-
-@media (min-width:25rem) and (max-width:37.4375rem) {
-  .c3 {
-    width: calc(9/18*(100% - 18 * 0.5rem) + 8 * 0.5rem );
-    display: inline-block;
-    vertical-align: top;
-  }
-}
-
-@media (min-width:37.5rem) and (max-width:62.9375rem) {
-  .c3 {
-    width: calc(9/18*(100% - 18 * 1rem) + 8 * 1rem );
-    display: inline-block;
-    vertical-align: top;
-  }
-}
-
-@media (min-width:63rem) and (max-width:80rem) {
-  .c3 {
-    width: calc(12/24*(100% - 24 * 1rem) + 11 * 1rem );
-    display: inline-block;
-    vertical-align: top;
-  }
-}
-
-@media (min-width:80rem) {
-  .c3 {
-    width: calc(12/60*(100% - 60 * 1rem) + 11 * 1rem );
-    display: inline-block;
-    vertical-align: top;
-  }
-}
-
-@supports (display:grid) {
-  .c3 {
-    display: grid;
-    position: initial;
-  }
-}
-
-@media (max-width:14.9375rem) {
   .c4 {
-    width: calc(11.11111111111111%);
+    width: calc(6/6*(100% - 6 * 0.5rem) + 5 * 0.5rem );
+    margin: 0 0.25rem;
     display: inline-block;
     vertical-align: top;
   }
@@ -127,7 +90,8 @@ exports[`MostRead should render with ltr most read with correct dir 1`] = `
 
 @media (min-width:15rem) and (max-width:24.9375rem) {
   .c4 {
-    width: calc(11.11111111111111%);
+    width: calc(6/6*(100% - 6 * 0.5rem) + 5 * 0.5rem );
+    margin: 0 0.25rem;
     display: inline-block;
     vertical-align: top;
   }
@@ -135,7 +99,8 @@ exports[`MostRead should render with ltr most read with correct dir 1`] = `
 
 @media (min-width:25rem) and (max-width:37.4375rem) {
   .c4 {
-    width: calc(22.22222222222222%);
+    width: calc(3/6*(100% - 6 * 0.5rem) + 2 * 0.5rem );
+    margin: 0 0.25rem;
     display: inline-block;
     vertical-align: top;
   }
@@ -143,7 +108,8 @@ exports[`MostRead should render with ltr most read with correct dir 1`] = `
 
 @media (min-width:37.5rem) and (max-width:62.9375rem) {
   .c4 {
-    width: calc(22.22222222222222%);
+    width: calc(3/6*(100% - 6 * 1rem) + 2 * 1rem );
+    margin: 0 0.5rem;
     display: inline-block;
     vertical-align: top;
   }
@@ -151,7 +117,8 @@ exports[`MostRead should render with ltr most read with correct dir 1`] = `
 
 @media (min-width:63rem) and (max-width:80rem) {
   .c4 {
-    width: calc(16.666666666666668%);
+    width: calc(4/8*(100% - 8 * 1rem) + 3 * 1rem );
+    margin: 0 0.5rem;
     display: inline-block;
     vertical-align: top;
   }
@@ -159,7 +126,8 @@ exports[`MostRead should render with ltr most read with correct dir 1`] = `
 
 @media (min-width:80rem) {
   .c4 {
-    width: calc(16.666666666666668%);
+    width: calc(4/20*(100% - 20 * 1rem) + 3 * 1rem );
+    margin: 0 0.5rem;
     display: inline-block;
     vertical-align: top;
   }
@@ -167,60 +135,6 @@ exports[`MostRead should render with ltr most read with correct dir 1`] = `
 
 @supports (display:grid) {
   .c4 {
-    display: block;
-  }
-}
-
-@media (max-width:14.9375rem) {
-  .c6 {
-    width: calc(88.88888888888889%);
-    display: inline-block;
-    vertical-align: top;
-  }
-}
-
-@media (min-width:15rem) and (max-width:24.9375rem) {
-  .c6 {
-    width: calc(88.88888888888889%);
-    display: inline-block;
-    vertical-align: top;
-  }
-}
-
-@media (min-width:25rem) and (max-width:37.4375rem) {
-  .c6 {
-    width: calc(77.77777777777777%);
-    display: inline-block;
-    vertical-align: top;
-  }
-}
-
-@media (min-width:37.5rem) and (max-width:62.9375rem) {
-  .c6 {
-    width: calc(77.77777777777777%);
-    display: inline-block;
-    vertical-align: top;
-  }
-}
-
-@media (min-width:63rem) and (max-width:80rem) {
-  .c6 {
-    width: calc(83.33333333333333%);
-    display: inline-block;
-    vertical-align: top;
-  }
-}
-
-@media (min-width:80rem) {
-  .c6 {
-    width: calc(83.33333333333333%);
-    display: inline-block;
-    vertical-align: top;
-  }
-}
-
-@supports (display:grid) {
-  .c6 {
     display: block;
   }
 }
@@ -247,16 +161,29 @@ exports[`MostRead should render with ltr most read with correct dir 1`] = `
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
-  .c5 {
+  .c6 {
     font-size: 2.5rem;
     line-height: 2.75rem;
   }
 }
 
 @media (min-width:37.5rem) {
-  .c5 {
+  .c6 {
     font-size: 3.5rem;
     line-height: 3.75rem;
+  }
+}
+
+@media (max-width:24.9375rem) {
+  .c3 {
+    grid-template-rows: repeat( 10,[col-start] auto [col-end] );
+  }
+}
+
+@media (min-width:80rem) {
+  .c3 {
+    grid-auto-flow: row;
+    grid-template-rows: repeat( 5,[col-start] auto [col-end] );
   }
 }
 
@@ -286,28 +213,22 @@ exports[`MostRead should render with ltr most read with correct dir 1`] = `
     role="list"
   >
     <div
-      class="c2"
+      class="c2 c3"
       dir="ltr"
     >
       <div
         as="li"
-        class="c3"
+        class="c4"
         dir="ltr"
       >
-        <div
-          class="c4"
-          dir="ltr"
+        <li
+          class="c5"
         >
           <span
-            class="c5"
+            class="c6"
           >
             1
           </span>
-        </div>
-        <div
-          class="c6"
-          dir="ltr"
-        >
           <div
             class="c7"
             dir="ltr"
@@ -319,27 +240,21 @@ exports[`MostRead should render with ltr most read with correct dir 1`] = `
               John Lewis staff bonus cut again as profits fall
             </a>
           </div>
-        </div>
+        </li>
       </div>
       <div
         as="li"
-        class="c3"
+        class="c4"
         dir="ltr"
       >
-        <div
-          class="c4"
-          dir="ltr"
+        <li
+          class="c5"
         >
           <span
-            class="c5"
+            class="c6"
           >
             2
           </span>
-        </div>
-        <div
-          class="c6"
-          dir="ltr"
-        >
           <div
             class="c7"
             dir="ltr"
@@ -351,27 +266,21 @@ exports[`MostRead should render with ltr most read with correct dir 1`] = `
               John Lewis staff bonus cut again as profits fall
             </a>
           </div>
-        </div>
+        </li>
       </div>
       <div
         as="li"
-        class="c3"
+        class="c4"
         dir="ltr"
       >
-        <div
-          class="c4"
-          dir="ltr"
+        <li
+          class="c5"
         >
           <span
-            class="c5"
+            class="c6"
           >
             3
           </span>
-        </div>
-        <div
-          class="c6"
-          dir="ltr"
-        >
           <div
             class="c7"
             dir="ltr"
@@ -383,27 +292,21 @@ exports[`MostRead should render with ltr most read with correct dir 1`] = `
               John Lewis staff bonus cut again as profits fall
             </a>
           </div>
-        </div>
+        </li>
       </div>
       <div
         as="li"
-        class="c3"
+        class="c4"
         dir="ltr"
       >
-        <div
-          class="c4"
-          dir="ltr"
+        <li
+          class="c5"
         >
           <span
-            class="c5"
+            class="c6"
           >
             4
           </span>
-        </div>
-        <div
-          class="c6"
-          dir="ltr"
-        >
           <div
             class="c7"
             dir="ltr"
@@ -415,27 +318,21 @@ exports[`MostRead should render with ltr most read with correct dir 1`] = `
               John Lewis staff bonus cut again as profits fall
             </a>
           </div>
-        </div>
+        </li>
       </div>
       <div
         as="li"
-        class="c3"
+        class="c4"
         dir="ltr"
       >
-        <div
-          class="c4"
-          dir="ltr"
+        <li
+          class="c5"
         >
           <span
-            class="c5"
+            class="c6"
           >
             5
           </span>
-        </div>
-        <div
-          class="c6"
-          dir="ltr"
-        >
           <div
             class="c7"
             dir="ltr"
@@ -447,27 +344,21 @@ exports[`MostRead should render with ltr most read with correct dir 1`] = `
               John Lewis staff bonus cut again as profits fall
             </a>
           </div>
-        </div>
+        </li>
       </div>
       <div
         as="li"
-        class="c3"
+        class="c4"
         dir="ltr"
       >
-        <div
-          class="c4"
-          dir="ltr"
+        <li
+          class="c5"
         >
           <span
-            class="c5"
+            class="c6"
           >
             6
           </span>
-        </div>
-        <div
-          class="c6"
-          dir="ltr"
-        >
           <div
             class="c7"
             dir="ltr"
@@ -479,27 +370,21 @@ exports[`MostRead should render with ltr most read with correct dir 1`] = `
               John Lewis staff bonus cut again as profits fall
             </a>
           </div>
-        </div>
+        </li>
       </div>
       <div
         as="li"
-        class="c3"
+        class="c4"
         dir="ltr"
       >
-        <div
-          class="c4"
-          dir="ltr"
+        <li
+          class="c5"
         >
           <span
-            class="c5"
+            class="c6"
           >
             7
           </span>
-        </div>
-        <div
-          class="c6"
-          dir="ltr"
-        >
           <div
             class="c7"
             dir="ltr"
@@ -511,27 +396,21 @@ exports[`MostRead should render with ltr most read with correct dir 1`] = `
               John Lewis staff bonus cut again as profits fall
             </a>
           </div>
-        </div>
+        </li>
       </div>
       <div
         as="li"
-        class="c3"
+        class="c4"
         dir="ltr"
       >
-        <div
-          class="c4"
-          dir="ltr"
+        <li
+          class="c5"
         >
           <span
-            class="c5"
+            class="c6"
           >
             8
           </span>
-        </div>
-        <div
-          class="c6"
-          dir="ltr"
-        >
           <div
             class="c7"
             dir="ltr"
@@ -543,27 +422,21 @@ exports[`MostRead should render with ltr most read with correct dir 1`] = `
               John Lewis staff bonus cut again as profits fall
             </a>
           </div>
-        </div>
+        </li>
       </div>
       <div
         as="li"
-        class="c3"
+        class="c4"
         dir="ltr"
       >
-        <div
-          class="c4"
-          dir="ltr"
+        <li
+          class="c5"
         >
           <span
-            class="c5"
+            class="c6"
           >
             9
           </span>
-        </div>
-        <div
-          class="c6"
-          dir="ltr"
-        >
           <div
             class="c7"
             dir="ltr"
@@ -575,27 +448,21 @@ exports[`MostRead should render with ltr most read with correct dir 1`] = `
               John Lewis staff bonus cut again as profits fall
             </a>
           </div>
-        </div>
+        </li>
       </div>
       <div
         as="li"
-        class="c3"
+        class="c4"
         dir="ltr"
       >
-        <div
-          class="c4"
-          dir="ltr"
+        <li
+          class="c5"
         >
           <span
-            class="c5"
+            class="c6"
           >
             10
           </span>
-        </div>
-        <div
-          class="c6"
-          dir="ltr"
-        >
           <div
             class="c7"
             dir="ltr"
@@ -607,7 +474,7 @@ exports[`MostRead should render with ltr most read with correct dir 1`] = `
               John Lewis staff bonus cut again as profits fall
             </a>
           </div>
-        </div>
+        </li>
       </div>
     </div>
   </ol>
@@ -641,7 +508,7 @@ exports[`MostRead should render with rtl most read with correct dir 1`] = `
   padding-right: 1rem;
 }
 
-.c5 {
+.c6 {
   font-family: "BBC Nassim Arabic",Arial,Verdana,Geneva,Helvetica,sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -658,6 +525,23 @@ exports[`MostRead should render with rtl most read with correct dir 1`] = `
   list-style-type: none;
   margin: 0;
   padding: 0;
+}
+
+.c5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  margin: 0;
+  padding: 0;
+}
+
+.c3 {
+  grid-auto-flow: column;
+  grid-template-rows: repeat( 5,[col-start] auto [col-end] );
 }
 
 .c0 {
@@ -677,63 +561,9 @@ exports[`MostRead should render with rtl most read with correct dir 1`] = `
 }
 
 @media (max-width:14.9375rem) {
-  .c3 {
-    width: calc(18/18*(100% - 18 * 0.5rem) + 17 * 0.5rem );
-    display: inline-block;
-    vertical-align: top;
-  }
-}
-
-@media (min-width:15rem) and (max-width:24.9375rem) {
-  .c3 {
-    width: calc(18/18*(100% - 18 * 0.5rem) + 17 * 0.5rem );
-    display: inline-block;
-    vertical-align: top;
-  }
-}
-
-@media (min-width:25rem) and (max-width:37.4375rem) {
-  .c3 {
-    width: calc(9/18*(100% - 18 * 0.5rem) + 8 * 0.5rem );
-    display: inline-block;
-    vertical-align: top;
-  }
-}
-
-@media (min-width:37.5rem) and (max-width:62.9375rem) {
-  .c3 {
-    width: calc(9/18*(100% - 18 * 1rem) + 8 * 1rem );
-    display: inline-block;
-    vertical-align: top;
-  }
-}
-
-@media (min-width:63rem) and (max-width:80rem) {
-  .c3 {
-    width: calc(12/24*(100% - 24 * 1rem) + 11 * 1rem );
-    display: inline-block;
-    vertical-align: top;
-  }
-}
-
-@media (min-width:80rem) {
-  .c3 {
-    width: calc(12/60*(100% - 60 * 1rem) + 11 * 1rem );
-    display: inline-block;
-    vertical-align: top;
-  }
-}
-
-@supports (display:grid) {
-  .c3 {
-    display: grid;
-    position: initial;
-  }
-}
-
-@media (max-width:14.9375rem) {
   .c4 {
-    width: calc(11.11111111111111%);
+    width: calc(6/6*(100% - 6 * 0.5rem) + 5 * 0.5rem );
+    margin: 0 0.25rem;
     display: inline-block;
     vertical-align: top;
   }
@@ -741,7 +571,8 @@ exports[`MostRead should render with rtl most read with correct dir 1`] = `
 
 @media (min-width:15rem) and (max-width:24.9375rem) {
   .c4 {
-    width: calc(11.11111111111111%);
+    width: calc(6/6*(100% - 6 * 0.5rem) + 5 * 0.5rem );
+    margin: 0 0.25rem;
     display: inline-block;
     vertical-align: top;
   }
@@ -749,7 +580,8 @@ exports[`MostRead should render with rtl most read with correct dir 1`] = `
 
 @media (min-width:25rem) and (max-width:37.4375rem) {
   .c4 {
-    width: calc(22.22222222222222%);
+    width: calc(3/6*(100% - 6 * 0.5rem) + 2 * 0.5rem );
+    margin: 0 0.25rem;
     display: inline-block;
     vertical-align: top;
   }
@@ -757,7 +589,8 @@ exports[`MostRead should render with rtl most read with correct dir 1`] = `
 
 @media (min-width:37.5rem) and (max-width:62.9375rem) {
   .c4 {
-    width: calc(22.22222222222222%);
+    width: calc(3/6*(100% - 6 * 1rem) + 2 * 1rem );
+    margin: 0 0.5rem;
     display: inline-block;
     vertical-align: top;
   }
@@ -765,7 +598,8 @@ exports[`MostRead should render with rtl most read with correct dir 1`] = `
 
 @media (min-width:63rem) and (max-width:80rem) {
   .c4 {
-    width: calc(16.666666666666668%);
+    width: calc(4/8*(100% - 8 * 1rem) + 3 * 1rem );
+    margin: 0 0.5rem;
     display: inline-block;
     vertical-align: top;
   }
@@ -773,7 +607,8 @@ exports[`MostRead should render with rtl most read with correct dir 1`] = `
 
 @media (min-width:80rem) {
   .c4 {
-    width: calc(16.666666666666668%);
+    width: calc(4/20*(100% - 20 * 1rem) + 3 * 1rem );
+    margin: 0 0.5rem;
     display: inline-block;
     vertical-align: top;
   }
@@ -781,60 +616,6 @@ exports[`MostRead should render with rtl most read with correct dir 1`] = `
 
 @supports (display:grid) {
   .c4 {
-    display: block;
-  }
-}
-
-@media (max-width:14.9375rem) {
-  .c6 {
-    width: calc(88.88888888888889%);
-    display: inline-block;
-    vertical-align: top;
-  }
-}
-
-@media (min-width:15rem) and (max-width:24.9375rem) {
-  .c6 {
-    width: calc(88.88888888888889%);
-    display: inline-block;
-    vertical-align: top;
-  }
-}
-
-@media (min-width:25rem) and (max-width:37.4375rem) {
-  .c6 {
-    width: calc(77.77777777777777%);
-    display: inline-block;
-    vertical-align: top;
-  }
-}
-
-@media (min-width:37.5rem) and (max-width:62.9375rem) {
-  .c6 {
-    width: calc(77.77777777777777%);
-    display: inline-block;
-    vertical-align: top;
-  }
-}
-
-@media (min-width:63rem) and (max-width:80rem) {
-  .c6 {
-    width: calc(83.33333333333333%);
-    display: inline-block;
-    vertical-align: top;
-  }
-}
-
-@media (min-width:80rem) {
-  .c6 {
-    width: calc(83.33333333333333%);
-    display: inline-block;
-    vertical-align: top;
-  }
-}
-
-@supports (display:grid) {
-  .c6 {
     display: block;
   }
 }
@@ -861,16 +642,29 @@ exports[`MostRead should render with rtl most read with correct dir 1`] = `
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
-  .c5 {
+  .c6 {
     font-size: 2.5rem;
     line-height: 2.75rem;
   }
 }
 
 @media (min-width:37.5rem) {
-  .c5 {
+  .c6 {
     font-size: 3.5rem;
     line-height: 3.75rem;
+  }
+}
+
+@media (max-width:24.9375rem) {
+  .c3 {
+    grid-template-rows: repeat( 10,[col-start] auto [col-end] );
+  }
+}
+
+@media (min-width:80rem) {
+  .c3 {
+    grid-auto-flow: row;
+    grid-template-rows: repeat( 5,[col-start] auto [col-end] );
   }
 }
 
@@ -900,28 +694,22 @@ exports[`MostRead should render with rtl most read with correct dir 1`] = `
     role="list"
   >
     <div
-      class="c2"
+      class="c2 c3"
       dir="rtl"
     >
       <div
         as="li"
-        class="c3"
+        class="c4"
         dir="rtl"
       >
-        <div
-          class="c4"
-          dir="rtl"
+        <li
+          class="c5"
         >
           <span
-            class="c5"
+            class="c6"
           >
             ۱
           </span>
-        </div>
-        <div
-          class="c6"
-          dir="rtl"
-        >
           <div
             class="c7"
             dir="rtl"
@@ -933,27 +721,21 @@ exports[`MostRead should render with rtl most read with correct dir 1`] = `
               ایران از لغو 'رزمایش قطع اینترنت' خبر داد
             </a>
           </div>
-        </div>
+        </li>
       </div>
       <div
         as="li"
-        class="c3"
+        class="c4"
         dir="rtl"
       >
-        <div
-          class="c4"
-          dir="rtl"
+        <li
+          class="c5"
         >
           <span
-            class="c5"
+            class="c6"
           >
             ۲
           </span>
-        </div>
-        <div
-          class="c6"
-          dir="rtl"
-        >
           <div
             class="c7"
             dir="rtl"
@@ -965,27 +747,21 @@ exports[`MostRead should render with rtl most read with correct dir 1`] = `
               ایران از لغو 'رزمایش قطع اینترنت' خبر داد
             </a>
           </div>
-        </div>
+        </li>
       </div>
       <div
         as="li"
-        class="c3"
+        class="c4"
         dir="rtl"
       >
-        <div
-          class="c4"
-          dir="rtl"
+        <li
+          class="c5"
         >
           <span
-            class="c5"
+            class="c6"
           >
             ۳
           </span>
-        </div>
-        <div
-          class="c6"
-          dir="rtl"
-        >
           <div
             class="c7"
             dir="rtl"
@@ -997,27 +773,21 @@ exports[`MostRead should render with rtl most read with correct dir 1`] = `
               ایران از لغو 'رزمایش قطع اینترنت' خبر داد
             </a>
           </div>
-        </div>
+        </li>
       </div>
       <div
         as="li"
-        class="c3"
+        class="c4"
         dir="rtl"
       >
-        <div
-          class="c4"
-          dir="rtl"
+        <li
+          class="c5"
         >
           <span
-            class="c5"
+            class="c6"
           >
             ۴
           </span>
-        </div>
-        <div
-          class="c6"
-          dir="rtl"
-        >
           <div
             class="c7"
             dir="rtl"
@@ -1029,27 +799,21 @@ exports[`MostRead should render with rtl most read with correct dir 1`] = `
               ایران از لغو 'رزمایش قطع اینترنت' خبر داد
             </a>
           </div>
-        </div>
+        </li>
       </div>
       <div
         as="li"
-        class="c3"
+        class="c4"
         dir="rtl"
       >
-        <div
-          class="c4"
-          dir="rtl"
+        <li
+          class="c5"
         >
           <span
-            class="c5"
+            class="c6"
           >
             ۵
           </span>
-        </div>
-        <div
-          class="c6"
-          dir="rtl"
-        >
           <div
             class="c7"
             dir="rtl"
@@ -1061,27 +825,21 @@ exports[`MostRead should render with rtl most read with correct dir 1`] = `
               ایران از لغو 'رزمایش قطع اینترنت' خبر داد
             </a>
           </div>
-        </div>
+        </li>
       </div>
       <div
         as="li"
-        class="c3"
+        class="c4"
         dir="rtl"
       >
-        <div
-          class="c4"
-          dir="rtl"
+        <li
+          class="c5"
         >
           <span
-            class="c5"
+            class="c6"
           >
             ۶
           </span>
-        </div>
-        <div
-          class="c6"
-          dir="rtl"
-        >
           <div
             class="c7"
             dir="rtl"
@@ -1093,27 +851,21 @@ exports[`MostRead should render with rtl most read with correct dir 1`] = `
               ایران از لغو 'رزمایش قطع اینترنت' خبر داد
             </a>
           </div>
-        </div>
+        </li>
       </div>
       <div
         as="li"
-        class="c3"
+        class="c4"
         dir="rtl"
       >
-        <div
-          class="c4"
-          dir="rtl"
+        <li
+          class="c5"
         >
           <span
-            class="c5"
+            class="c6"
           >
             ۷
           </span>
-        </div>
-        <div
-          class="c6"
-          dir="rtl"
-        >
           <div
             class="c7"
             dir="rtl"
@@ -1125,27 +877,21 @@ exports[`MostRead should render with rtl most read with correct dir 1`] = `
               ایران از لغو 'رزمایش قطع اینترنت' خبر داد
             </a>
           </div>
-        </div>
+        </li>
       </div>
       <div
         as="li"
-        class="c3"
+        class="c4"
         dir="rtl"
       >
-        <div
-          class="c4"
-          dir="rtl"
+        <li
+          class="c5"
         >
           <span
-            class="c5"
+            class="c6"
           >
             ۸
           </span>
-        </div>
-        <div
-          class="c6"
-          dir="rtl"
-        >
           <div
             class="c7"
             dir="rtl"
@@ -1157,27 +903,21 @@ exports[`MostRead should render with rtl most read with correct dir 1`] = `
               ایران از لغو 'رزمایش قطع اینترنت' خبر داد
             </a>
           </div>
-        </div>
+        </li>
       </div>
       <div
         as="li"
-        class="c3"
+        class="c4"
         dir="rtl"
       >
-        <div
-          class="c4"
-          dir="rtl"
+        <li
+          class="c5"
         >
           <span
-            class="c5"
+            class="c6"
           >
             ۹
           </span>
-        </div>
-        <div
-          class="c6"
-          dir="rtl"
-        >
           <div
             class="c7"
             dir="rtl"
@@ -1189,27 +929,21 @@ exports[`MostRead should render with rtl most read with correct dir 1`] = `
               ایران از لغو 'رزمایش قطع اینترنت' خبر داد
             </a>
           </div>
-        </div>
+        </li>
       </div>
       <div
         as="li"
-        class="c3"
+        class="c4"
         dir="rtl"
       >
-        <div
-          class="c4"
-          dir="rtl"
+        <li
+          class="c5"
         >
           <span
-            class="c5"
+            class="c6"
           >
             ۱۰
           </span>
-        </div>
-        <div
-          class="c6"
-          dir="rtl"
-        >
           <div
             class="c7"
             dir="rtl"
@@ -1221,7 +955,7 @@ exports[`MostRead should render with rtl most read with correct dir 1`] = `
               ایران از لغو 'رزمایش قطع اینترنت' خبر داد
             </a>
           </div>
-        </div>
+        </li>
       </div>
     </div>
   </ol>

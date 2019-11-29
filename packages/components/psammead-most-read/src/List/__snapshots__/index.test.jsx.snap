@@ -1,11 +1,11 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`MostReadList should render with ltr bengali items with correct dir 1`] = `
-.c2 {
-  position: relative;
+.c1 {
+  display: inline;
 }
 
-.c8 {
+.c7 {
   color: #222222;
   font-size: 1.625rem;
   line-height: 1.875rem;
@@ -16,18 +16,18 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
   text-decoration: none;
 }
 
-.c8:hover,
-.c8:focus {
+.c7:hover,
+.c7:focus {
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
-.c7 {
+.c6 {
   padding-bottom: 1.5rem;
   padding-left: 1rem;
 }
 
-.c6 {
+.c5 {
   font-family: "Shonar Bangla",Helmet,Freesans,Helvetica,Arial,sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -46,7 +46,7 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
   padding: 0;
 }
 
-.c5 {
+.c4 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -58,199 +58,121 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
   padding: 0;
 }
 
-.c3 {
+.c2 {
   grid-auto-flow: column;
   grid-template-rows: repeat( 5,[col-start] auto [col-end] );
 }
 
-@media (max-width:14.9375rem) {
-  .c2 {
-    margin: 0 -0.25rem;
-  }
-}
-
-@media (min-width:15rem) and (max-width:24.9375rem) {
-  .c2 {
-    margin: 0 -0.25rem;
-  }
-}
-
-@media (min-width:25rem) and (max-width:37.4375rem) {
-  .c2 {
-    margin: 0 -0.25rem;
-  }
-}
-
-@media (min-width:37.5rem) and (max-width:62.9375rem) {
-  .c2 {
-    margin: 0 -0.5rem;
-  }
-}
-
-@media (min-width:63rem) and (max-width:80rem) {
-  .c2 {
-    margin: 0 -0.5rem;
-  }
-}
-
-@media (min-width:80rem) {
-  .c2 {
-    margin: 0 -0.5rem;
-  }
-}
-
 @supports (display:grid) {
-  .c2 {
+  .c1 {
     display: grid;
     position: initial;
   }
 }
 
 @media (max-width:14.9375rem) {
-  .c4 {
+  .c3 {
+    width: calc(6/6*(100% - 6 * 0.5rem) + 5 * 0.5rem );
     margin: 0 0.25rem;
-    width: calc(100% - 0.5rem);
     display: inline-block;
     vertical-align: top;
   }
 }
 
 @media (min-width:15rem) and (max-width:24.9375rem) {
-  .c4 {
+  .c3 {
+    width: calc(6/6*(100% - 6 * 0.5rem) + 5 * 0.5rem );
     margin: 0 0.25rem;
-    width: calc(100% - 0.5rem);
     display: inline-block;
     vertical-align: top;
   }
 }
 
 @media (min-width:25rem) and (max-width:37.4375rem) {
-  .c4 {
+  .c3 {
+    width: calc(3/6*(100% - 6 * 0.5rem) + 2 * 0.5rem );
     margin: 0 0.25rem;
-    width: calc(50% - 0.5rem);
     display: inline-block;
     vertical-align: top;
   }
 }
 
 @media (min-width:37.5rem) and (max-width:62.9375rem) {
-  .c4 {
+  .c3 {
+    width: calc(3/6*(100% - 6 * 1rem) + 2 * 1rem );
     margin: 0 0.5rem;
-    width: calc(50% - 1rem);
     display: inline-block;
     vertical-align: top;
   }
 }
 
 @media (min-width:63rem) and (max-width:80rem) {
-  .c4 {
+  .c3 {
+    width: calc(4/8*(100% - 8 * 1rem) + 3 * 1rem );
     margin: 0 0.5rem;
-    width: calc(50% - 1rem);
     display: inline-block;
     vertical-align: top;
   }
 }
 
 @media (min-width:80rem) {
-  .c4 {
+  .c3 {
+    width: calc(4/20*(100% - 20 * 1rem) + 3 * 1rem );
     margin: 0 0.5rem;
-    width: calc(20% - 1rem);
     display: inline-block;
     vertical-align: top;
   }
 }
 
 @supports (display:grid) {
-  .c4 {
+  .c3 {
     display: block;
   }
 }
 
-@media (max-width:14.9375rem) {
-  .c1 {
-    padding: 0 0.5rem;
-  }
-}
-
-@media (min-width:15rem) and (max-width:24.9375rem) {
-  .c1 {
-    padding: 0 0.5rem;
-  }
-}
-
-@media (min-width:25rem) and (max-width:37.4375rem) {
-  .c1 {
-    padding: 0 1rem;
-  }
-}
-
-@media (min-width:37.5rem) and (max-width:62.9375rem) {
-  .c1 {
-    padding: 0 1rem;
-  }
-}
-
-@media (min-width:63rem) and (max-width:80rem) {
-  .c1 {
-    padding: 0 1rem;
-  }
-}
-
-@media (min-width:80rem) {
-  .c1 {
-    padding: 0 1rem;
-  }
-}
-
-@supports (display:grid) {
-  .c1 {
-    padding: 0;
-  }
-}
-
 @media (min-width:20rem) and (max-width:37.4375rem) {
-  .c8 {
+  .c7 {
     font-size: 1.625rem;
     line-height: 1.875rem;
   }
 }
 
 @media (min-width:37.5rem) {
-  .c8 {
+  .c7 {
     font-size: 1.75rem;
     line-height: 2rem;
   }
 }
 
 @media (min-width:80rem) {
-  .c7 {
+  .c6 {
     padding-top: 0.5rem;
     padding-left: 2rem;
   }
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
-  .c6 {
+  .c5 {
     font-size: 2.5rem;
     line-height: 2.75rem;
   }
 }
 
 @media (min-width:37.5rem) {
-  .c6 {
+  .c5 {
     font-size: 3.5rem;
     line-height: 3.75rem;
   }
 }
 
 @media (max-width:24.9375rem) {
-  .c3 {
+  .c2 {
     grid-template-rows: repeat( 10,[col-start] auto [col-end] );
   }
 }
 
 @media (min-width:80rem) {
-  .c3 {
+  .c2 {
     grid-auto-flow: row;
     grid-template-rows: repeat( 5,[col-start] auto [col-end] );
   }
@@ -261,283 +183,279 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
   role="list"
 >
   <div
-    class="c1"
+    class="c1 c2"
+    dir="ltr"
   >
     <div
-      class="c2 c3"
+      as="li"
+      class="c3"
       dir="ltr"
     >
-      <div
-        as="li"
+      <li
         class="c4"
-        dir="ltr"
       >
-        <li
+        <span
           class="c5"
         >
-          <span
-            class="c6"
-          >
-            ১
-          </span>
-          <div
+          ১
+        </span>
+        <div
+          class="c6"
+          dir="ltr"
+        >
+          <a
             class="c7"
-            dir="ltr"
+            href="https://www.bbc.co.uk/news/business-43328806"
           >
-            <a
-              class="c8"
-              href="https://www.bbc.co.uk/news/business-43328806"
-            >
-              John Lewis staff bonus cut again as profits fall
-            </a>
-          </div>
-        </li>
-      </div>
-      <div
-        as="li"
+            John Lewis staff bonus cut again as profits fall
+          </a>
+        </div>
+      </li>
+    </div>
+    <div
+      as="li"
+      class="c3"
+      dir="ltr"
+    >
+      <li
         class="c4"
-        dir="ltr"
       >
-        <li
+        <span
           class="c5"
         >
-          <span
-            class="c6"
-          >
-            ২
-          </span>
-          <div
+          ২
+        </span>
+        <div
+          class="c6"
+          dir="ltr"
+        >
+          <a
             class="c7"
-            dir="ltr"
+            href="https://www.bbc.co.uk/news/business-43328806"
           >
-            <a
-              class="c8"
-              href="https://www.bbc.co.uk/news/business-43328806"
-            >
-              John Lewis staff bonus cut again as profits fall
-            </a>
-          </div>
-        </li>
-      </div>
-      <div
-        as="li"
+            John Lewis staff bonus cut again as profits fall
+          </a>
+        </div>
+      </li>
+    </div>
+    <div
+      as="li"
+      class="c3"
+      dir="ltr"
+    >
+      <li
         class="c4"
-        dir="ltr"
       >
-        <li
+        <span
           class="c5"
         >
-          <span
-            class="c6"
-          >
-            ৩
-          </span>
-          <div
+          ৩
+        </span>
+        <div
+          class="c6"
+          dir="ltr"
+        >
+          <a
             class="c7"
-            dir="ltr"
+            href="https://www.bbc.co.uk/news/business-43328806"
           >
-            <a
-              class="c8"
-              href="https://www.bbc.co.uk/news/business-43328806"
-            >
-              John Lewis staff bonus cut again as profits fall
-            </a>
-          </div>
-        </li>
-      </div>
-      <div
-        as="li"
+            John Lewis staff bonus cut again as profits fall
+          </a>
+        </div>
+      </li>
+    </div>
+    <div
+      as="li"
+      class="c3"
+      dir="ltr"
+    >
+      <li
         class="c4"
-        dir="ltr"
       >
-        <li
+        <span
           class="c5"
         >
-          <span
-            class="c6"
-          >
-            ৪
-          </span>
-          <div
+          ৪
+        </span>
+        <div
+          class="c6"
+          dir="ltr"
+        >
+          <a
             class="c7"
-            dir="ltr"
+            href="https://www.bbc.co.uk/news/business-43328806"
           >
-            <a
-              class="c8"
-              href="https://www.bbc.co.uk/news/business-43328806"
-            >
-              John Lewis staff bonus cut again as profits fall
-            </a>
-          </div>
-        </li>
-      </div>
-      <div
-        as="li"
+            John Lewis staff bonus cut again as profits fall
+          </a>
+        </div>
+      </li>
+    </div>
+    <div
+      as="li"
+      class="c3"
+      dir="ltr"
+    >
+      <li
         class="c4"
-        dir="ltr"
       >
-        <li
+        <span
           class="c5"
         >
-          <span
-            class="c6"
-          >
-            ৫
-          </span>
-          <div
+          ৫
+        </span>
+        <div
+          class="c6"
+          dir="ltr"
+        >
+          <a
             class="c7"
-            dir="ltr"
+            href="https://www.bbc.co.uk/news/business-43328806"
           >
-            <a
-              class="c8"
-              href="https://www.bbc.co.uk/news/business-43328806"
-            >
-              John Lewis staff bonus cut again as profits fall
-            </a>
-          </div>
-        </li>
-      </div>
-      <div
-        as="li"
+            John Lewis staff bonus cut again as profits fall
+          </a>
+        </div>
+      </li>
+    </div>
+    <div
+      as="li"
+      class="c3"
+      dir="ltr"
+    >
+      <li
         class="c4"
-        dir="ltr"
       >
-        <li
+        <span
           class="c5"
         >
-          <span
-            class="c6"
-          >
-            ৬
-          </span>
-          <div
+          ৬
+        </span>
+        <div
+          class="c6"
+          dir="ltr"
+        >
+          <a
             class="c7"
-            dir="ltr"
+            href="https://www.bbc.co.uk/news/business-43328806"
           >
-            <a
-              class="c8"
-              href="https://www.bbc.co.uk/news/business-43328806"
-            >
-              John Lewis staff bonus cut again as profits fall
-            </a>
-          </div>
-        </li>
-      </div>
-      <div
-        as="li"
+            John Lewis staff bonus cut again as profits fall
+          </a>
+        </div>
+      </li>
+    </div>
+    <div
+      as="li"
+      class="c3"
+      dir="ltr"
+    >
+      <li
         class="c4"
-        dir="ltr"
       >
-        <li
+        <span
           class="c5"
         >
-          <span
-            class="c6"
-          >
-            ৭
-          </span>
-          <div
+          ৭
+        </span>
+        <div
+          class="c6"
+          dir="ltr"
+        >
+          <a
             class="c7"
-            dir="ltr"
+            href="https://www.bbc.co.uk/news/business-43328806"
           >
-            <a
-              class="c8"
-              href="https://www.bbc.co.uk/news/business-43328806"
-            >
-              John Lewis staff bonus cut again as profits fall
-            </a>
-          </div>
-        </li>
-      </div>
-      <div
-        as="li"
+            John Lewis staff bonus cut again as profits fall
+          </a>
+        </div>
+      </li>
+    </div>
+    <div
+      as="li"
+      class="c3"
+      dir="ltr"
+    >
+      <li
         class="c4"
-        dir="ltr"
       >
-        <li
+        <span
           class="c5"
         >
-          <span
-            class="c6"
-          >
-            ৮
-          </span>
-          <div
+          ৮
+        </span>
+        <div
+          class="c6"
+          dir="ltr"
+        >
+          <a
             class="c7"
-            dir="ltr"
+            href="https://www.bbc.co.uk/news/business-43328806"
           >
-            <a
-              class="c8"
-              href="https://www.bbc.co.uk/news/business-43328806"
-            >
-              John Lewis staff bonus cut again as profits fall
-            </a>
-          </div>
-        </li>
-      </div>
-      <div
-        as="li"
+            John Lewis staff bonus cut again as profits fall
+          </a>
+        </div>
+      </li>
+    </div>
+    <div
+      as="li"
+      class="c3"
+      dir="ltr"
+    >
+      <li
         class="c4"
-        dir="ltr"
       >
-        <li
+        <span
           class="c5"
         >
-          <span
-            class="c6"
-          >
-            ৯
-          </span>
-          <div
+          ৯
+        </span>
+        <div
+          class="c6"
+          dir="ltr"
+        >
+          <a
             class="c7"
-            dir="ltr"
+            href="https://www.bbc.co.uk/news/business-43328806"
           >
-            <a
-              class="c8"
-              href="https://www.bbc.co.uk/news/business-43328806"
-            >
-              John Lewis staff bonus cut again as profits fall
-            </a>
-          </div>
-        </li>
-      </div>
-      <div
-        as="li"
+            John Lewis staff bonus cut again as profits fall
+          </a>
+        </div>
+      </li>
+    </div>
+    <div
+      as="li"
+      class="c3"
+      dir="ltr"
+    >
+      <li
         class="c4"
-        dir="ltr"
       >
-        <li
+        <span
           class="c5"
         >
-          <span
-            class="c6"
-          >
-            ১০
-          </span>
-          <div
+          ১০
+        </span>
+        <div
+          class="c6"
+          dir="ltr"
+        >
+          <a
             class="c7"
-            dir="ltr"
+            href="https://www.bbc.co.uk/news/business-43328806"
           >
-            <a
-              class="c8"
-              href="https://www.bbc.co.uk/news/business-43328806"
-            >
-              John Lewis staff bonus cut again as profits fall
-            </a>
-          </div>
-        </li>
-      </div>
+            John Lewis staff bonus cut again as profits fall
+          </a>
+        </div>
+      </li>
     </div>
   </div>
 </ol>
 `;
 
 exports[`MostReadList should render with ltr burmese items with correct dir 1`] = `
-.c2 {
-  position: relative;
+.c1 {
+  display: inline;
 }
 
-.c8 {
+.c7 {
   color: #222222;
   font-size: 1.25rem;
   line-height: 1.875rem;
@@ -548,18 +466,18 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
   text-decoration: none;
 }
 
-.c8:hover,
-.c8:focus {
+.c7:hover,
+.c7:focus {
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
-.c7 {
+.c6 {
   padding-bottom: 1.5rem;
   padding-left: 1rem;
 }
 
-.c6 {
+.c5 {
   font-family: Padauk,Arial,Verdana,Geneva,Helvetica,sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -578,7 +496,7 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
   padding: 0;
 }
 
-.c5 {
+.c4 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -590,199 +508,121 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
   padding: 0;
 }
 
-.c3 {
+.c2 {
   grid-auto-flow: column;
   grid-template-rows: repeat( 5,[col-start] auto [col-end] );
 }
 
-@media (max-width:14.9375rem) {
-  .c2 {
-    margin: 0 -0.25rem;
-  }
-}
-
-@media (min-width:15rem) and (max-width:24.9375rem) {
-  .c2 {
-    margin: 0 -0.25rem;
-  }
-}
-
-@media (min-width:25rem) and (max-width:37.4375rem) {
-  .c2 {
-    margin: 0 -0.25rem;
-  }
-}
-
-@media (min-width:37.5rem) and (max-width:62.9375rem) {
-  .c2 {
-    margin: 0 -0.5rem;
-  }
-}
-
-@media (min-width:63rem) and (max-width:80rem) {
-  .c2 {
-    margin: 0 -0.5rem;
-  }
-}
-
-@media (min-width:80rem) {
-  .c2 {
-    margin: 0 -0.5rem;
-  }
-}
-
 @supports (display:grid) {
-  .c2 {
+  .c1 {
     display: grid;
     position: initial;
   }
 }
 
 @media (max-width:14.9375rem) {
-  .c4 {
+  .c3 {
+    width: calc(6/6*(100% - 6 * 0.5rem) + 5 * 0.5rem );
     margin: 0 0.25rem;
-    width: calc(100% - 0.5rem);
     display: inline-block;
     vertical-align: top;
   }
 }
 
 @media (min-width:15rem) and (max-width:24.9375rem) {
-  .c4 {
+  .c3 {
+    width: calc(6/6*(100% - 6 * 0.5rem) + 5 * 0.5rem );
     margin: 0 0.25rem;
-    width: calc(100% - 0.5rem);
     display: inline-block;
     vertical-align: top;
   }
 }
 
 @media (min-width:25rem) and (max-width:37.4375rem) {
-  .c4 {
+  .c3 {
+    width: calc(3/6*(100% - 6 * 0.5rem) + 2 * 0.5rem );
     margin: 0 0.25rem;
-    width: calc(50% - 0.5rem);
     display: inline-block;
     vertical-align: top;
   }
 }
 
 @media (min-width:37.5rem) and (max-width:62.9375rem) {
-  .c4 {
+  .c3 {
+    width: calc(3/6*(100% - 6 * 1rem) + 2 * 1rem );
     margin: 0 0.5rem;
-    width: calc(50% - 1rem);
     display: inline-block;
     vertical-align: top;
   }
 }
 
 @media (min-width:63rem) and (max-width:80rem) {
-  .c4 {
+  .c3 {
+    width: calc(4/8*(100% - 8 * 1rem) + 3 * 1rem );
     margin: 0 0.5rem;
-    width: calc(50% - 1rem);
     display: inline-block;
     vertical-align: top;
   }
 }
 
 @media (min-width:80rem) {
-  .c4 {
+  .c3 {
+    width: calc(4/20*(100% - 20 * 1rem) + 3 * 1rem );
     margin: 0 0.5rem;
-    width: calc(20% - 1rem);
     display: inline-block;
     vertical-align: top;
   }
 }
 
 @supports (display:grid) {
-  .c4 {
+  .c3 {
     display: block;
   }
 }
 
-@media (max-width:14.9375rem) {
-  .c1 {
-    padding: 0 0.5rem;
-  }
-}
-
-@media (min-width:15rem) and (max-width:24.9375rem) {
-  .c1 {
-    padding: 0 0.5rem;
-  }
-}
-
-@media (min-width:25rem) and (max-width:37.4375rem) {
-  .c1 {
-    padding: 0 1rem;
-  }
-}
-
-@media (min-width:37.5rem) and (max-width:62.9375rem) {
-  .c1 {
-    padding: 0 1rem;
-  }
-}
-
-@media (min-width:63rem) and (max-width:80rem) {
-  .c1 {
-    padding: 0 1rem;
-  }
-}
-
-@media (min-width:80rem) {
-  .c1 {
-    padding: 0 1rem;
-  }
-}
-
-@supports (display:grid) {
-  .c1 {
-    padding: 0;
-  }
-}
-
 @media (min-width:20rem) and (max-width:37.4375rem) {
-  .c8 {
+  .c7 {
     font-size: 1.25rem;
     line-height: 1.875rem;
   }
 }
 
 @media (min-width:37.5rem) {
-  .c8 {
+  .c7 {
     font-size: 1.625rem;
     line-height: 2.75rem;
   }
 }
 
 @media (min-width:80rem) {
-  .c7 {
+  .c6 {
     padding-top: 0.5rem;
     padding-left: 2rem;
   }
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
-  .c6 {
+  .c5 {
     font-size: 2.5rem;
     line-height: 4.125rem;
   }
 }
 
 @media (min-width:37.5rem) {
-  .c6 {
+  .c5 {
     font-size: 3.5rem;
     line-height: 5.375rem;
   }
 }
 
 @media (max-width:24.9375rem) {
-  .c3 {
+  .c2 {
     grid-template-rows: repeat( 10,[col-start] auto [col-end] );
   }
 }
 
 @media (min-width:80rem) {
-  .c3 {
+  .c2 {
     grid-auto-flow: row;
     grid-template-rows: repeat( 5,[col-start] auto [col-end] );
   }
@@ -793,283 +633,279 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
   role="list"
 >
   <div
-    class="c1"
+    class="c1 c2"
+    dir="ltr"
   >
     <div
-      class="c2 c3"
+      as="li"
+      class="c3"
       dir="ltr"
     >
-      <div
-        as="li"
+      <li
         class="c4"
-        dir="ltr"
       >
-        <li
+        <span
           class="c5"
         >
-          <span
-            class="c6"
-          >
-            ၁
-          </span>
-          <div
+          ၁
+        </span>
+        <div
+          class="c6"
+          dir="ltr"
+        >
+          <a
             class="c7"
-            dir="ltr"
+            href="https://www.bbc.co.uk/news/business-43328806"
           >
-            <a
-              class="c8"
-              href="https://www.bbc.co.uk/news/business-43328806"
-            >
-              John Lewis staff bonus cut again as profits fall
-            </a>
-          </div>
-        </li>
-      </div>
-      <div
-        as="li"
+            John Lewis staff bonus cut again as profits fall
+          </a>
+        </div>
+      </li>
+    </div>
+    <div
+      as="li"
+      class="c3"
+      dir="ltr"
+    >
+      <li
         class="c4"
-        dir="ltr"
       >
-        <li
+        <span
           class="c5"
         >
-          <span
-            class="c6"
-          >
-            ၂
-          </span>
-          <div
+          ၂
+        </span>
+        <div
+          class="c6"
+          dir="ltr"
+        >
+          <a
             class="c7"
-            dir="ltr"
+            href="https://www.bbc.co.uk/news/business-43328806"
           >
-            <a
-              class="c8"
-              href="https://www.bbc.co.uk/news/business-43328806"
-            >
-              John Lewis staff bonus cut again as profits fall
-            </a>
-          </div>
-        </li>
-      </div>
-      <div
-        as="li"
+            John Lewis staff bonus cut again as profits fall
+          </a>
+        </div>
+      </li>
+    </div>
+    <div
+      as="li"
+      class="c3"
+      dir="ltr"
+    >
+      <li
         class="c4"
-        dir="ltr"
       >
-        <li
+        <span
           class="c5"
         >
-          <span
-            class="c6"
-          >
-            ၃
-          </span>
-          <div
+          ၃
+        </span>
+        <div
+          class="c6"
+          dir="ltr"
+        >
+          <a
             class="c7"
-            dir="ltr"
+            href="https://www.bbc.co.uk/news/business-43328806"
           >
-            <a
-              class="c8"
-              href="https://www.bbc.co.uk/news/business-43328806"
-            >
-              John Lewis staff bonus cut again as profits fall
-            </a>
-          </div>
-        </li>
-      </div>
-      <div
-        as="li"
+            John Lewis staff bonus cut again as profits fall
+          </a>
+        </div>
+      </li>
+    </div>
+    <div
+      as="li"
+      class="c3"
+      dir="ltr"
+    >
+      <li
         class="c4"
-        dir="ltr"
       >
-        <li
+        <span
           class="c5"
         >
-          <span
-            class="c6"
-          >
-            ၄
-          </span>
-          <div
+          ၄
+        </span>
+        <div
+          class="c6"
+          dir="ltr"
+        >
+          <a
             class="c7"
-            dir="ltr"
+            href="https://www.bbc.co.uk/news/business-43328806"
           >
-            <a
-              class="c8"
-              href="https://www.bbc.co.uk/news/business-43328806"
-            >
-              John Lewis staff bonus cut again as profits fall
-            </a>
-          </div>
-        </li>
-      </div>
-      <div
-        as="li"
+            John Lewis staff bonus cut again as profits fall
+          </a>
+        </div>
+      </li>
+    </div>
+    <div
+      as="li"
+      class="c3"
+      dir="ltr"
+    >
+      <li
         class="c4"
-        dir="ltr"
       >
-        <li
+        <span
           class="c5"
         >
-          <span
-            class="c6"
-          >
-            ၅
-          </span>
-          <div
+          ၅
+        </span>
+        <div
+          class="c6"
+          dir="ltr"
+        >
+          <a
             class="c7"
-            dir="ltr"
+            href="https://www.bbc.co.uk/news/business-43328806"
           >
-            <a
-              class="c8"
-              href="https://www.bbc.co.uk/news/business-43328806"
-            >
-              John Lewis staff bonus cut again as profits fall
-            </a>
-          </div>
-        </li>
-      </div>
-      <div
-        as="li"
+            John Lewis staff bonus cut again as profits fall
+          </a>
+        </div>
+      </li>
+    </div>
+    <div
+      as="li"
+      class="c3"
+      dir="ltr"
+    >
+      <li
         class="c4"
-        dir="ltr"
       >
-        <li
+        <span
           class="c5"
         >
-          <span
-            class="c6"
-          >
-            ၆
-          </span>
-          <div
+          ၆
+        </span>
+        <div
+          class="c6"
+          dir="ltr"
+        >
+          <a
             class="c7"
-            dir="ltr"
+            href="https://www.bbc.co.uk/news/business-43328806"
           >
-            <a
-              class="c8"
-              href="https://www.bbc.co.uk/news/business-43328806"
-            >
-              John Lewis staff bonus cut again as profits fall
-            </a>
-          </div>
-        </li>
-      </div>
-      <div
-        as="li"
+            John Lewis staff bonus cut again as profits fall
+          </a>
+        </div>
+      </li>
+    </div>
+    <div
+      as="li"
+      class="c3"
+      dir="ltr"
+    >
+      <li
         class="c4"
-        dir="ltr"
       >
-        <li
+        <span
           class="c5"
         >
-          <span
-            class="c6"
-          >
-            ၇
-          </span>
-          <div
+          ၇
+        </span>
+        <div
+          class="c6"
+          dir="ltr"
+        >
+          <a
             class="c7"
-            dir="ltr"
+            href="https://www.bbc.co.uk/news/business-43328806"
           >
-            <a
-              class="c8"
-              href="https://www.bbc.co.uk/news/business-43328806"
-            >
-              John Lewis staff bonus cut again as profits fall
-            </a>
-          </div>
-        </li>
-      </div>
-      <div
-        as="li"
+            John Lewis staff bonus cut again as profits fall
+          </a>
+        </div>
+      </li>
+    </div>
+    <div
+      as="li"
+      class="c3"
+      dir="ltr"
+    >
+      <li
         class="c4"
-        dir="ltr"
       >
-        <li
+        <span
           class="c5"
         >
-          <span
-            class="c6"
-          >
-            ၈
-          </span>
-          <div
+          ၈
+        </span>
+        <div
+          class="c6"
+          dir="ltr"
+        >
+          <a
             class="c7"
-            dir="ltr"
+            href="https://www.bbc.co.uk/news/business-43328806"
           >
-            <a
-              class="c8"
-              href="https://www.bbc.co.uk/news/business-43328806"
-            >
-              John Lewis staff bonus cut again as profits fall
-            </a>
-          </div>
-        </li>
-      </div>
-      <div
-        as="li"
+            John Lewis staff bonus cut again as profits fall
+          </a>
+        </div>
+      </li>
+    </div>
+    <div
+      as="li"
+      class="c3"
+      dir="ltr"
+    >
+      <li
         class="c4"
-        dir="ltr"
       >
-        <li
+        <span
           class="c5"
         >
-          <span
-            class="c6"
-          >
-            ၉
-          </span>
-          <div
+          ၉
+        </span>
+        <div
+          class="c6"
+          dir="ltr"
+        >
+          <a
             class="c7"
-            dir="ltr"
+            href="https://www.bbc.co.uk/news/business-43328806"
           >
-            <a
-              class="c8"
-              href="https://www.bbc.co.uk/news/business-43328806"
-            >
-              John Lewis staff bonus cut again as profits fall
-            </a>
-          </div>
-        </li>
-      </div>
-      <div
-        as="li"
+            John Lewis staff bonus cut again as profits fall
+          </a>
+        </div>
+      </li>
+    </div>
+    <div
+      as="li"
+      class="c3"
+      dir="ltr"
+    >
+      <li
         class="c4"
-        dir="ltr"
       >
-        <li
+        <span
           class="c5"
         >
-          <span
-            class="c6"
-          >
-            ၁၀
-          </span>
-          <div
+          ၁၀
+        </span>
+        <div
+          class="c6"
+          dir="ltr"
+        >
+          <a
             class="c7"
-            dir="ltr"
+            href="https://www.bbc.co.uk/news/business-43328806"
           >
-            <a
-              class="c8"
-              href="https://www.bbc.co.uk/news/business-43328806"
-            >
-              John Lewis staff bonus cut again as profits fall
-            </a>
-          </div>
-        </li>
-      </div>
+            John Lewis staff bonus cut again as profits fall
+          </a>
+        </div>
+      </li>
     </div>
   </div>
 </ol>
 `;
 
 exports[`MostReadList should render with ltr news items with correct dir 1`] = `
-.c2 {
-  position: relative;
+.c1 {
+  display: inline;
 }
 
-.c8 {
+.c7 {
   color: #222222;
   font-size: 1.125rem;
   line-height: 1.375rem;
@@ -1080,18 +916,18 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
   text-decoration: none;
 }
 
-.c8:hover,
-.c8:focus {
+.c7:hover,
+.c7:focus {
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
-.c7 {
+.c6 {
   padding-bottom: 1.5rem;
   padding-left: 1rem;
 }
 
-.c6 {
+.c5 {
   font-family: ReithSerif,Helvetica,Arial,sans-serif;
   font-weight: 300;
   font-style: normal;
@@ -1110,7 +946,7 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
   padding: 0;
 }
 
-.c5 {
+.c4 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1122,199 +958,121 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
   padding: 0;
 }
 
-.c3 {
+.c2 {
   grid-auto-flow: column;
   grid-template-rows: repeat( 5,[col-start] auto [col-end] );
 }
 
-@media (max-width:14.9375rem) {
-  .c2 {
-    margin: 0 -0.25rem;
-  }
-}
-
-@media (min-width:15rem) and (max-width:24.9375rem) {
-  .c2 {
-    margin: 0 -0.25rem;
-  }
-}
-
-@media (min-width:25rem) and (max-width:37.4375rem) {
-  .c2 {
-    margin: 0 -0.25rem;
-  }
-}
-
-@media (min-width:37.5rem) and (max-width:62.9375rem) {
-  .c2 {
-    margin: 0 -0.5rem;
-  }
-}
-
-@media (min-width:63rem) and (max-width:80rem) {
-  .c2 {
-    margin: 0 -0.5rem;
-  }
-}
-
-@media (min-width:80rem) {
-  .c2 {
-    margin: 0 -0.5rem;
-  }
-}
-
 @supports (display:grid) {
-  .c2 {
+  .c1 {
     display: grid;
     position: initial;
   }
 }
 
 @media (max-width:14.9375rem) {
-  .c4 {
+  .c3 {
+    width: calc(6/6*(100% - 6 * 0.5rem) + 5 * 0.5rem );
     margin: 0 0.25rem;
-    width: calc(100% - 0.5rem);
     display: inline-block;
     vertical-align: top;
   }
 }
 
 @media (min-width:15rem) and (max-width:24.9375rem) {
-  .c4 {
+  .c3 {
+    width: calc(6/6*(100% - 6 * 0.5rem) + 5 * 0.5rem );
     margin: 0 0.25rem;
-    width: calc(100% - 0.5rem);
     display: inline-block;
     vertical-align: top;
   }
 }
 
 @media (min-width:25rem) and (max-width:37.4375rem) {
-  .c4 {
+  .c3 {
+    width: calc(3/6*(100% - 6 * 0.5rem) + 2 * 0.5rem );
     margin: 0 0.25rem;
-    width: calc(50% - 0.5rem);
     display: inline-block;
     vertical-align: top;
   }
 }
 
 @media (min-width:37.5rem) and (max-width:62.9375rem) {
-  .c4 {
+  .c3 {
+    width: calc(3/6*(100% - 6 * 1rem) + 2 * 1rem );
     margin: 0 0.5rem;
-    width: calc(50% - 1rem);
     display: inline-block;
     vertical-align: top;
   }
 }
 
 @media (min-width:63rem) and (max-width:80rem) {
-  .c4 {
+  .c3 {
+    width: calc(4/8*(100% - 8 * 1rem) + 3 * 1rem );
     margin: 0 0.5rem;
-    width: calc(50% - 1rem);
     display: inline-block;
     vertical-align: top;
   }
 }
 
 @media (min-width:80rem) {
-  .c4 {
+  .c3 {
+    width: calc(4/20*(100% - 20 * 1rem) + 3 * 1rem );
     margin: 0 0.5rem;
-    width: calc(20% - 1rem);
     display: inline-block;
     vertical-align: top;
   }
 }
 
 @supports (display:grid) {
-  .c4 {
+  .c3 {
     display: block;
   }
 }
 
-@media (max-width:14.9375rem) {
-  .c1 {
-    padding: 0 0.5rem;
-  }
-}
-
-@media (min-width:15rem) and (max-width:24.9375rem) {
-  .c1 {
-    padding: 0 0.5rem;
-  }
-}
-
-@media (min-width:25rem) and (max-width:37.4375rem) {
-  .c1 {
-    padding: 0 1rem;
-  }
-}
-
-@media (min-width:37.5rem) and (max-width:62.9375rem) {
-  .c1 {
-    padding: 0 1rem;
-  }
-}
-
-@media (min-width:63rem) and (max-width:80rem) {
-  .c1 {
-    padding: 0 1rem;
-  }
-}
-
-@media (min-width:80rem) {
-  .c1 {
-    padding: 0 1rem;
-  }
-}
-
-@supports (display:grid) {
-  .c1 {
-    padding: 0;
-  }
-}
-
 @media (min-width:20rem) and (max-width:37.4375rem) {
-  .c8 {
+  .c7 {
     font-size: 1.25rem;
     line-height: 1.5rem;
   }
 }
 
 @media (min-width:37.5rem) {
-  .c8 {
+  .c7 {
     font-size: 1.5rem;
     line-height: 1.75rem;
   }
 }
 
 @media (min-width:80rem) {
-  .c7 {
+  .c6 {
     padding-top: 0.5rem;
     padding-left: 2rem;
   }
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
-  .c6 {
+  .c5 {
     font-size: 2.5rem;
     line-height: 2.75rem;
   }
 }
 
 @media (min-width:37.5rem) {
-  .c6 {
+  .c5 {
     font-size: 3.5rem;
     line-height: 3.75rem;
   }
 }
 
 @media (max-width:24.9375rem) {
-  .c3 {
+  .c2 {
     grid-template-rows: repeat( 10,[col-start] auto [col-end] );
   }
 }
 
 @media (min-width:80rem) {
-  .c3 {
+  .c2 {
     grid-auto-flow: row;
     grid-template-rows: repeat( 5,[col-start] auto [col-end] );
   }
@@ -1325,283 +1083,279 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
   role="list"
 >
   <div
-    class="c1"
+    class="c1 c2"
+    dir="ltr"
   >
     <div
-      class="c2 c3"
+      as="li"
+      class="c3"
       dir="ltr"
     >
-      <div
-        as="li"
+      <li
         class="c4"
-        dir="ltr"
       >
-        <li
+        <span
           class="c5"
         >
-          <span
-            class="c6"
-          >
-            1
-          </span>
-          <div
+          1
+        </span>
+        <div
+          class="c6"
+          dir="ltr"
+        >
+          <a
             class="c7"
-            dir="ltr"
+            href="https://www.bbc.co.uk/news/business-43328806"
           >
-            <a
-              class="c8"
-              href="https://www.bbc.co.uk/news/business-43328806"
-            >
-              John Lewis staff bonus cut again as profits fall
-            </a>
-          </div>
-        </li>
-      </div>
-      <div
-        as="li"
+            John Lewis staff bonus cut again as profits fall
+          </a>
+        </div>
+      </li>
+    </div>
+    <div
+      as="li"
+      class="c3"
+      dir="ltr"
+    >
+      <li
         class="c4"
-        dir="ltr"
       >
-        <li
+        <span
           class="c5"
         >
-          <span
-            class="c6"
-          >
-            2
-          </span>
-          <div
+          2
+        </span>
+        <div
+          class="c6"
+          dir="ltr"
+        >
+          <a
             class="c7"
-            dir="ltr"
+            href="https://www.bbc.co.uk/news/business-43328806"
           >
-            <a
-              class="c8"
-              href="https://www.bbc.co.uk/news/business-43328806"
-            >
-              John Lewis staff bonus cut again as profits fall
-            </a>
-          </div>
-        </li>
-      </div>
-      <div
-        as="li"
+            John Lewis staff bonus cut again as profits fall
+          </a>
+        </div>
+      </li>
+    </div>
+    <div
+      as="li"
+      class="c3"
+      dir="ltr"
+    >
+      <li
         class="c4"
-        dir="ltr"
       >
-        <li
+        <span
           class="c5"
         >
-          <span
-            class="c6"
-          >
-            3
-          </span>
-          <div
+          3
+        </span>
+        <div
+          class="c6"
+          dir="ltr"
+        >
+          <a
             class="c7"
-            dir="ltr"
+            href="https://www.bbc.co.uk/news/business-43328806"
           >
-            <a
-              class="c8"
-              href="https://www.bbc.co.uk/news/business-43328806"
-            >
-              John Lewis staff bonus cut again as profits fall
-            </a>
-          </div>
-        </li>
-      </div>
-      <div
-        as="li"
+            John Lewis staff bonus cut again as profits fall
+          </a>
+        </div>
+      </li>
+    </div>
+    <div
+      as="li"
+      class="c3"
+      dir="ltr"
+    >
+      <li
         class="c4"
-        dir="ltr"
       >
-        <li
+        <span
           class="c5"
         >
-          <span
-            class="c6"
-          >
-            4
-          </span>
-          <div
+          4
+        </span>
+        <div
+          class="c6"
+          dir="ltr"
+        >
+          <a
             class="c7"
-            dir="ltr"
+            href="https://www.bbc.co.uk/news/business-43328806"
           >
-            <a
-              class="c8"
-              href="https://www.bbc.co.uk/news/business-43328806"
-            >
-              John Lewis staff bonus cut again as profits fall
-            </a>
-          </div>
-        </li>
-      </div>
-      <div
-        as="li"
+            John Lewis staff bonus cut again as profits fall
+          </a>
+        </div>
+      </li>
+    </div>
+    <div
+      as="li"
+      class="c3"
+      dir="ltr"
+    >
+      <li
         class="c4"
-        dir="ltr"
       >
-        <li
+        <span
           class="c5"
         >
-          <span
-            class="c6"
-          >
-            5
-          </span>
-          <div
+          5
+        </span>
+        <div
+          class="c6"
+          dir="ltr"
+        >
+          <a
             class="c7"
-            dir="ltr"
+            href="https://www.bbc.co.uk/news/business-43328806"
           >
-            <a
-              class="c8"
-              href="https://www.bbc.co.uk/news/business-43328806"
-            >
-              John Lewis staff bonus cut again as profits fall
-            </a>
-          </div>
-        </li>
-      </div>
-      <div
-        as="li"
+            John Lewis staff bonus cut again as profits fall
+          </a>
+        </div>
+      </li>
+    </div>
+    <div
+      as="li"
+      class="c3"
+      dir="ltr"
+    >
+      <li
         class="c4"
-        dir="ltr"
       >
-        <li
+        <span
           class="c5"
         >
-          <span
-            class="c6"
-          >
-            6
-          </span>
-          <div
+          6
+        </span>
+        <div
+          class="c6"
+          dir="ltr"
+        >
+          <a
             class="c7"
-            dir="ltr"
+            href="https://www.bbc.co.uk/news/business-43328806"
           >
-            <a
-              class="c8"
-              href="https://www.bbc.co.uk/news/business-43328806"
-            >
-              John Lewis staff bonus cut again as profits fall
-            </a>
-          </div>
-        </li>
-      </div>
-      <div
-        as="li"
+            John Lewis staff bonus cut again as profits fall
+          </a>
+        </div>
+      </li>
+    </div>
+    <div
+      as="li"
+      class="c3"
+      dir="ltr"
+    >
+      <li
         class="c4"
-        dir="ltr"
       >
-        <li
+        <span
           class="c5"
         >
-          <span
-            class="c6"
-          >
-            7
-          </span>
-          <div
+          7
+        </span>
+        <div
+          class="c6"
+          dir="ltr"
+        >
+          <a
             class="c7"
-            dir="ltr"
+            href="https://www.bbc.co.uk/news/business-43328806"
           >
-            <a
-              class="c8"
-              href="https://www.bbc.co.uk/news/business-43328806"
-            >
-              John Lewis staff bonus cut again as profits fall
-            </a>
-          </div>
-        </li>
-      </div>
-      <div
-        as="li"
+            John Lewis staff bonus cut again as profits fall
+          </a>
+        </div>
+      </li>
+    </div>
+    <div
+      as="li"
+      class="c3"
+      dir="ltr"
+    >
+      <li
         class="c4"
-        dir="ltr"
       >
-        <li
+        <span
           class="c5"
         >
-          <span
-            class="c6"
-          >
-            8
-          </span>
-          <div
+          8
+        </span>
+        <div
+          class="c6"
+          dir="ltr"
+        >
+          <a
             class="c7"
-            dir="ltr"
+            href="https://www.bbc.co.uk/news/business-43328806"
           >
-            <a
-              class="c8"
-              href="https://www.bbc.co.uk/news/business-43328806"
-            >
-              John Lewis staff bonus cut again as profits fall
-            </a>
-          </div>
-        </li>
-      </div>
-      <div
-        as="li"
+            John Lewis staff bonus cut again as profits fall
+          </a>
+        </div>
+      </li>
+    </div>
+    <div
+      as="li"
+      class="c3"
+      dir="ltr"
+    >
+      <li
         class="c4"
-        dir="ltr"
       >
-        <li
+        <span
           class="c5"
         >
-          <span
-            class="c6"
-          >
-            9
-          </span>
-          <div
+          9
+        </span>
+        <div
+          class="c6"
+          dir="ltr"
+        >
+          <a
             class="c7"
-            dir="ltr"
+            href="https://www.bbc.co.uk/news/business-43328806"
           >
-            <a
-              class="c8"
-              href="https://www.bbc.co.uk/news/business-43328806"
-            >
-              John Lewis staff bonus cut again as profits fall
-            </a>
-          </div>
-        </li>
-      </div>
-      <div
-        as="li"
+            John Lewis staff bonus cut again as profits fall
+          </a>
+        </div>
+      </li>
+    </div>
+    <div
+      as="li"
+      class="c3"
+      dir="ltr"
+    >
+      <li
         class="c4"
-        dir="ltr"
       >
-        <li
+        <span
           class="c5"
         >
-          <span
-            class="c6"
-          >
-            10
-          </span>
-          <div
+          10
+        </span>
+        <div
+          class="c6"
+          dir="ltr"
+        >
+          <a
             class="c7"
-            dir="ltr"
+            href="https://www.bbc.co.uk/news/business-43328806"
           >
-            <a
-              class="c8"
-              href="https://www.bbc.co.uk/news/business-43328806"
-            >
-              John Lewis staff bonus cut again as profits fall
-            </a>
-          </div>
-        </li>
-      </div>
+            John Lewis staff bonus cut again as profits fall
+          </a>
+        </div>
+      </li>
     </div>
   </div>
 </ol>
 `;
 
 exports[`MostReadList should render with rtl arabic items with correct dir 1`] = `
-.c2 {
-  position: relative;
+.c1 {
+  display: inline;
 }
 
-.c8 {
+.c7 {
   color: #222222;
   font-size: 1.5rem;
   line-height: 2rem;
@@ -1612,18 +1366,18 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
   text-decoration: none;
 }
 
-.c8:hover,
-.c8:focus {
+.c7:hover,
+.c7:focus {
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
-.c7 {
+.c6 {
   padding-bottom: 1.5rem;
   padding-right: 1rem;
 }
 
-.c6 {
+.c5 {
   font-family: "BBC Nassim Arabic",Arial,Verdana,Geneva,Helvetica,sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -1642,7 +1396,7 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
   padding: 0;
 }
 
-.c5 {
+.c4 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1654,199 +1408,121 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
   padding: 0;
 }
 
-.c3 {
+.c2 {
   grid-auto-flow: column;
   grid-template-rows: repeat( 5,[col-start] auto [col-end] );
 }
 
-@media (max-width:14.9375rem) {
-  .c2 {
-    margin: 0 -0.25rem;
-  }
-}
-
-@media (min-width:15rem) and (max-width:24.9375rem) {
-  .c2 {
-    margin: 0 -0.25rem;
-  }
-}
-
-@media (min-width:25rem) and (max-width:37.4375rem) {
-  .c2 {
-    margin: 0 -0.25rem;
-  }
-}
-
-@media (min-width:37.5rem) and (max-width:62.9375rem) {
-  .c2 {
-    margin: 0 -0.5rem;
-  }
-}
-
-@media (min-width:63rem) and (max-width:80rem) {
-  .c2 {
-    margin: 0 -0.5rem;
-  }
-}
-
-@media (min-width:80rem) {
-  .c2 {
-    margin: 0 -0.5rem;
-  }
-}
-
 @supports (display:grid) {
-  .c2 {
+  .c1 {
     display: grid;
     position: initial;
   }
 }
 
 @media (max-width:14.9375rem) {
-  .c4 {
+  .c3 {
+    width: calc(6/6*(100% - 6 * 0.5rem) + 5 * 0.5rem );
     margin: 0 0.25rem;
-    width: calc(100% - 0.5rem);
     display: inline-block;
     vertical-align: top;
   }
 }
 
 @media (min-width:15rem) and (max-width:24.9375rem) {
-  .c4 {
+  .c3 {
+    width: calc(6/6*(100% - 6 * 0.5rem) + 5 * 0.5rem );
     margin: 0 0.25rem;
-    width: calc(100% - 0.5rem);
     display: inline-block;
     vertical-align: top;
   }
 }
 
 @media (min-width:25rem) and (max-width:37.4375rem) {
-  .c4 {
+  .c3 {
+    width: calc(3/6*(100% - 6 * 0.5rem) + 2 * 0.5rem );
     margin: 0 0.25rem;
-    width: calc(50% - 0.5rem);
     display: inline-block;
     vertical-align: top;
   }
 }
 
 @media (min-width:37.5rem) and (max-width:62.9375rem) {
-  .c4 {
+  .c3 {
+    width: calc(3/6*(100% - 6 * 1rem) + 2 * 1rem );
     margin: 0 0.5rem;
-    width: calc(50% - 1rem);
     display: inline-block;
     vertical-align: top;
   }
 }
 
 @media (min-width:63rem) and (max-width:80rem) {
-  .c4 {
+  .c3 {
+    width: calc(4/8*(100% - 8 * 1rem) + 3 * 1rem );
     margin: 0 0.5rem;
-    width: calc(50% - 1rem);
     display: inline-block;
     vertical-align: top;
   }
 }
 
 @media (min-width:80rem) {
-  .c4 {
+  .c3 {
+    width: calc(4/20*(100% - 20 * 1rem) + 3 * 1rem );
     margin: 0 0.5rem;
-    width: calc(20% - 1rem);
     display: inline-block;
     vertical-align: top;
   }
 }
 
 @supports (display:grid) {
-  .c4 {
+  .c3 {
     display: block;
   }
 }
 
-@media (max-width:14.9375rem) {
-  .c1 {
-    padding: 0 0.5rem;
-  }
-}
-
-@media (min-width:15rem) and (max-width:24.9375rem) {
-  .c1 {
-    padding: 0 0.5rem;
-  }
-}
-
-@media (min-width:25rem) and (max-width:37.4375rem) {
-  .c1 {
-    padding: 0 1rem;
-  }
-}
-
-@media (min-width:37.5rem) and (max-width:62.9375rem) {
-  .c1 {
-    padding: 0 1rem;
-  }
-}
-
-@media (min-width:63rem) and (max-width:80rem) {
-  .c1 {
-    padding: 0 1rem;
-  }
-}
-
-@media (min-width:80rem) {
-  .c1 {
-    padding: 0 1rem;
-  }
-}
-
-@supports (display:grid) {
-  .c1 {
-    padding: 0;
-  }
-}
-
 @media (min-width:20rem) and (max-width:37.4375rem) {
-  .c8 {
+  .c7 {
     font-size: 1.625rem;
     line-height: 2.25rem;
   }
 }
 
 @media (min-width:37.5rem) {
-  .c8 {
+  .c7 {
     font-size: 1.75rem;
     line-height: 2.25rem;
   }
 }
 
 @media (min-width:80rem) {
-  .c7 {
+  .c6 {
     padding-top: 0.5rem;
     padding-right: 2rem;
   }
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
-  .c6 {
+  .c5 {
     font-size: 2.5rem;
     line-height: 2.75rem;
   }
 }
 
 @media (min-width:37.5rem) {
-  .c6 {
+  .c5 {
     font-size: 3.5rem;
     line-height: 3.75rem;
   }
 }
 
 @media (max-width:24.9375rem) {
-  .c3 {
+  .c2 {
     grid-template-rows: repeat( 10,[col-start] auto [col-end] );
   }
 }
 
 @media (min-width:80rem) {
-  .c3 {
+  .c2 {
     grid-auto-flow: row;
     grid-template-rows: repeat( 5,[col-start] auto [col-end] );
   }
@@ -1857,272 +1533,268 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
   role="list"
 >
   <div
-    class="c1"
+    class="c1 c2"
+    dir="rtl"
   >
     <div
-      class="c2 c3"
+      as="li"
+      class="c3"
       dir="rtl"
     >
-      <div
-        as="li"
+      <li
         class="c4"
-        dir="rtl"
       >
-        <li
+        <span
           class="c5"
         >
-          <span
-            class="c6"
-          >
-            ۱
-          </span>
-          <div
+          ۱
+        </span>
+        <div
+          class="c6"
+          dir="rtl"
+        >
+          <a
             class="c7"
-            dir="rtl"
+            href="https://www.bbc.com/persian/iran-46965704"
           >
-            <a
-              class="c8"
-              href="https://www.bbc.com/persian/iran-46965704"
-            >
-              ایران از لغو 'رزمایش قطع اینترنت' خبر داد
-            </a>
-          </div>
-        </li>
-      </div>
-      <div
-        as="li"
+            ایران از لغو 'رزمایش قطع اینترنت' خبر داد
+          </a>
+        </div>
+      </li>
+    </div>
+    <div
+      as="li"
+      class="c3"
+      dir="rtl"
+    >
+      <li
         class="c4"
-        dir="rtl"
       >
-        <li
+        <span
           class="c5"
         >
-          <span
-            class="c6"
-          >
-            ۲
-          </span>
-          <div
+          ۲
+        </span>
+        <div
+          class="c6"
+          dir="rtl"
+        >
+          <a
             class="c7"
-            dir="rtl"
+            href="https://www.bbc.com/persian/iran-46965704"
           >
-            <a
-              class="c8"
-              href="https://www.bbc.com/persian/iran-46965704"
-            >
-              ایران از لغو 'رزمایش قطع اینترنت' خبر داد
-            </a>
-          </div>
-        </li>
-      </div>
-      <div
-        as="li"
+            ایران از لغو 'رزمایش قطع اینترنت' خبر داد
+          </a>
+        </div>
+      </li>
+    </div>
+    <div
+      as="li"
+      class="c3"
+      dir="rtl"
+    >
+      <li
         class="c4"
-        dir="rtl"
       >
-        <li
+        <span
           class="c5"
         >
-          <span
-            class="c6"
-          >
-            ۳
-          </span>
-          <div
+          ۳
+        </span>
+        <div
+          class="c6"
+          dir="rtl"
+        >
+          <a
             class="c7"
-            dir="rtl"
+            href="https://www.bbc.com/persian/iran-46965704"
           >
-            <a
-              class="c8"
-              href="https://www.bbc.com/persian/iran-46965704"
-            >
-              ایران از لغو 'رزمایش قطع اینترنت' خبر داد
-            </a>
-          </div>
-        </li>
-      </div>
-      <div
-        as="li"
+            ایران از لغو 'رزمایش قطع اینترنت' خبر داد
+          </a>
+        </div>
+      </li>
+    </div>
+    <div
+      as="li"
+      class="c3"
+      dir="rtl"
+    >
+      <li
         class="c4"
-        dir="rtl"
       >
-        <li
+        <span
           class="c5"
         >
-          <span
-            class="c6"
-          >
-            ۴
-          </span>
-          <div
+          ۴
+        </span>
+        <div
+          class="c6"
+          dir="rtl"
+        >
+          <a
             class="c7"
-            dir="rtl"
+            href="https://www.bbc.com/persian/iran-46965704"
           >
-            <a
-              class="c8"
-              href="https://www.bbc.com/persian/iran-46965704"
-            >
-              ایران از لغو 'رزمایش قطع اینترنت' خبر داد
-            </a>
-          </div>
-        </li>
-      </div>
-      <div
-        as="li"
+            ایران از لغو 'رزمایش قطع اینترنت' خبر داد
+          </a>
+        </div>
+      </li>
+    </div>
+    <div
+      as="li"
+      class="c3"
+      dir="rtl"
+    >
+      <li
         class="c4"
-        dir="rtl"
       >
-        <li
+        <span
           class="c5"
         >
-          <span
-            class="c6"
-          >
-            ۵
-          </span>
-          <div
+          ۵
+        </span>
+        <div
+          class="c6"
+          dir="rtl"
+        >
+          <a
             class="c7"
-            dir="rtl"
+            href="https://www.bbc.com/persian/iran-46965704"
           >
-            <a
-              class="c8"
-              href="https://www.bbc.com/persian/iran-46965704"
-            >
-              ایران از لغو 'رزمایش قطع اینترنت' خبر داد
-            </a>
-          </div>
-        </li>
-      </div>
-      <div
-        as="li"
+            ایران از لغو 'رزمایش قطع اینترنت' خبر داد
+          </a>
+        </div>
+      </li>
+    </div>
+    <div
+      as="li"
+      class="c3"
+      dir="rtl"
+    >
+      <li
         class="c4"
-        dir="rtl"
       >
-        <li
+        <span
           class="c5"
         >
-          <span
-            class="c6"
-          >
-            ۶
-          </span>
-          <div
+          ۶
+        </span>
+        <div
+          class="c6"
+          dir="rtl"
+        >
+          <a
             class="c7"
-            dir="rtl"
+            href="https://www.bbc.com/persian/iran-46965704"
           >
-            <a
-              class="c8"
-              href="https://www.bbc.com/persian/iran-46965704"
-            >
-              ایران از لغو 'رزمایش قطع اینترنت' خبر داد
-            </a>
-          </div>
-        </li>
-      </div>
-      <div
-        as="li"
+            ایران از لغو 'رزمایش قطع اینترنت' خبر داد
+          </a>
+        </div>
+      </li>
+    </div>
+    <div
+      as="li"
+      class="c3"
+      dir="rtl"
+    >
+      <li
         class="c4"
-        dir="rtl"
       >
-        <li
+        <span
           class="c5"
         >
-          <span
-            class="c6"
-          >
-            ۷
-          </span>
-          <div
+          ۷
+        </span>
+        <div
+          class="c6"
+          dir="rtl"
+        >
+          <a
             class="c7"
-            dir="rtl"
+            href="https://www.bbc.com/persian/iran-46965704"
           >
-            <a
-              class="c8"
-              href="https://www.bbc.com/persian/iran-46965704"
-            >
-              ایران از لغو 'رزمایش قطع اینترنت' خبر داد
-            </a>
-          </div>
-        </li>
-      </div>
-      <div
-        as="li"
+            ایران از لغو 'رزمایش قطع اینترنت' خبر داد
+          </a>
+        </div>
+      </li>
+    </div>
+    <div
+      as="li"
+      class="c3"
+      dir="rtl"
+    >
+      <li
         class="c4"
-        dir="rtl"
       >
-        <li
+        <span
           class="c5"
         >
-          <span
-            class="c6"
-          >
-            ۸
-          </span>
-          <div
+          ۸
+        </span>
+        <div
+          class="c6"
+          dir="rtl"
+        >
+          <a
             class="c7"
-            dir="rtl"
+            href="https://www.bbc.com/persian/iran-46965704"
           >
-            <a
-              class="c8"
-              href="https://www.bbc.com/persian/iran-46965704"
-            >
-              ایران از لغو 'رزمایش قطع اینترنت' خبر داد
-            </a>
-          </div>
-        </li>
-      </div>
-      <div
-        as="li"
+            ایران از لغو 'رزمایش قطع اینترنت' خبر داد
+          </a>
+        </div>
+      </li>
+    </div>
+    <div
+      as="li"
+      class="c3"
+      dir="rtl"
+    >
+      <li
         class="c4"
-        dir="rtl"
       >
-        <li
+        <span
           class="c5"
         >
-          <span
-            class="c6"
-          >
-            ۹
-          </span>
-          <div
+          ۹
+        </span>
+        <div
+          class="c6"
+          dir="rtl"
+        >
+          <a
             class="c7"
-            dir="rtl"
+            href="https://www.bbc.com/persian/iran-46965704"
           >
-            <a
-              class="c8"
-              href="https://www.bbc.com/persian/iran-46965704"
-            >
-              ایران از لغو 'رزمایش قطع اینترنت' خبر داد
-            </a>
-          </div>
-        </li>
-      </div>
-      <div
-        as="li"
+            ایران از لغو 'رزمایش قطع اینترنت' خبر داد
+          </a>
+        </div>
+      </li>
+    </div>
+    <div
+      as="li"
+      class="c3"
+      dir="rtl"
+    >
+      <li
         class="c4"
-        dir="rtl"
       >
-        <li
+        <span
           class="c5"
         >
-          <span
-            class="c6"
-          >
-            ۱۰
-          </span>
-          <div
+          ۱۰
+        </span>
+        <div
+          class="c6"
+          dir="rtl"
+        >
+          <a
             class="c7"
-            dir="rtl"
+            href="https://www.bbc.com/persian/iran-46965704"
           >
-            <a
-              class="c8"
-              href="https://www.bbc.com/persian/iran-46965704"
-            >
-              ایران از لغو 'رزمایش قطع اینترنت' خبر داد
-            </a>
-          </div>
-        </li>
-      </div>
+            ایران از لغو 'رزمایش قطع اینترنت' خبر داد
+          </a>
+        </div>
+      </li>
     </div>
   </div>
 </ol>

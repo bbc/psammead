@@ -12,4 +12,6 @@ const RTLLink = {
 
 export const items = Array(10).fill(LTRLink);
 
+export const items5 = Array(5).fill(LTRLink);
+
 export const itemsRTL = Array(10).fill(RTLLink);
