@@ -3,7 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
-| 6.0.0-alpha.2 | [PR#xxxx](https://github.com/bbc/psammead/pull/xxxx) Move hooks directory into src |
+| 6.0.0-alpha.2 | [PR#2725](https://github.com/bbc/psammead/pull/2725) Move hooks directory into src |
 | 6.0.0-alpha.1 | [PR#2613](https://github.com/bbc/psammead/pull/2613) Add dropdown menu with a hamburger button |
 | 5.0.0-alpha.2 | [PR#2701](https://github.com/bbc/psammead/pull/2701) Talos - Bump Dependencies - @bbc/psammead-styles |
 | 5.0.0-alpha.1 | [PR#2577](https://github.com/bbc/psammead/pull/2577) Add scrollable navigation |
