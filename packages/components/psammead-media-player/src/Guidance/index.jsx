@@ -1,6 +1,6 @@
 import React from 'react';
 import { string } from 'prop-types';
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 import { C_WHITE } from '@bbc/psammead-styles/colours';
 import { GEL_SPACING_DBL, GEL_SPACING } from '@bbc/gel-foundations/spacings';
 import { GEL_LONG_PRIMER } from '@bbc/gel-foundations/typography';
@@ -12,16 +12,33 @@ const GUIDANCE_BACKGROUND = 'rgba(34, 34, 34, 0.75)';
 const GuidanceWrapper = styled.div`
   ${({ service }) => getSansRegular(service)}
   ${GEL_LONG_PRIMER};
-
   width: 100%;
   height: 100%;
   position: absolute;
-  background-color: ${GUIDANCE_BACKGROUND};
   border: 0.0625rem solid transparent;
   color: ${C_WHITE};
-  @media screen and (-ms-high-contrast: active) {
-    background-color: transparent;
-  }
+  ${({ guidanceMessage }) =>
+    guidanceMessage
+      ? `
+    background-color: ${GUIDANCE_BACKGROUND};
+    @media screen and (-ms-high-contrast: active) {
+      background-color: transparent;
+    }`
+      : ``}
+
+  ${({ noJsClassName }) =>
+    noJsClassName &&
+    css`
+      .${noJsClassName} & {
+        background-color: ${GUIDANCE_BACKGROUND};
+        @media screen and (-ms-high-contrast: active) {
+          background-color: transparent;
+        }
+        .guidance-message {
+          display: none;
+        }
+      }
+    `}
 `;
 
 const GuidanceMessage = styled.strong`
@@ -37,15 +54,43 @@ const GuidanceMessage = styled.strong`
   }
 `;
 
-const Guidance = ({ guidanceMessage, service }) => (
-  <GuidanceWrapper service={service}>
-    <GuidanceMessage aria-hidden="true">{guidanceMessage}</GuidanceMessage>
+const StyledNoScript = styled.noscript`
+  position: absolute;
+  bottom: 0;
+  ${({ noJsClassName }) =>
+    !noJsClassName &&
+    css`
+      display: none;
+    `}
+`;
+
+const Guidance = ({ guidanceMessage, service, noJsMessage, noJsClassName }) => (
+  <GuidanceWrapper
+    service={service}
+    guidanceMessage={guidanceMessage}
+    noJsClassName={noJsClassName}
+  >
+    {guidanceMessage && (
+      <GuidanceMessage className="guidance-message" aria-hidden="true">
+        {guidanceMessage}
+      </GuidanceMessage>
+    )}
+    <StyledNoScript noJsClassName={noJsClassName}>
+      <GuidanceMessage>{noJsMessage}</GuidanceMessage>
+    </StyledNoScript>
   </GuidanceWrapper>
 );
 
 Guidance.propTypes = {
-  guidanceMessage: string.isRequired,
+  guidanceMessage: string,
   service: string.isRequired,
+  noJsMessage: string.isRequired,
+  noJsClassName: string,
+};
+
+Guidance.defaultProps = {
+  guidanceMessage: null,
+  noJsClassName: null,
 };
 
 export default Guidance;

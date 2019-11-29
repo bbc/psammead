@@ -1,8 +1,9 @@
  <!-- prettier-ignore -->
- # ⛔️ This is an alpha component ⛔️
- 
- This component is currently tagged as alpha and is not suitable for production use. Following the passing of an accessibility review this component will be marked as ready for production and the alpha tag removed.
- 
+
+# ⛔️ This is an alpha component ⛔️
+
+This component is currently tagged as alpha and is not suitable for production use. Following the passing of an accessibility review this component will be marked as ready for production and the alpha tag removed.
+
 # psammead-most-read - [![Known Vulnerabilities](https://snyk.io/test/github/bbc/psammead/badge.svg?targetFile=packages%2Fcomponents%2Fpsammead-most-read%2Fpackage.json)](https://snyk.io/test/github/bbc/psammead?targetFile=packages%2Fcomponents%2Fpsammead-most-read%2Fpackage.json) [![Dependency Status](https://david-dm.org/bbc/psammead.svg?path=packages/components/psammead-most-read)](https://david-dm.org/bbc/psammead?path=packages/components/psammead-most-read) [![peerDependencies Status](https://david-dm.org/bbc/psammead/peer-status.svg?path=packages/components/psammead-most-read)](https://david-dm.org/bbc/psammead?path=packages/components/psammead-most-read&type=peer) [![Storybook](https://raw.githubusercontent.com/storybooks/brand/master/badge/badge-storybook.svg?sanitize=true)](https://bbc.github.io/psammead/?path=/story/most-read--default-ltr) [![GitHub license](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](https://github.com/bbc/psammead/blob/latest/LICENSE) [![npm version](https://img.shields.io/npm/v/@bbc/psammead-most-read.svg)](https://www.npmjs.com/package/@bbc/psammead-most-read) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/bbc/psammead/blob/latest/CONTRIBUTING.md)
 
 ## Description
@@ -15,7 +16,49 @@ The `MostRead` component is designed to display the most read articles given a d
 
 ## Components (WIP)
 
+## MostRead
+
+### Props
+
+<!-- prettier-ignore -->
+| Argument | Type | Required | Default | Example |
+| -------- | ---- | -------- | ------- | ------- |
+| items | array | yes | N/A | `[{ title: 'This is a headline', href: 'https://www.bbc.com' }]`
+| header | string | yes | N/A | `'Most Read'` |
+| service | string | yes | N/A | `'news'` |
+| script | object | yes | N/A | `{ canon: { groupA: { fontSize: '28', lineHeight: '32',}, groupB: { fontSize: '32', lineHeight: '36', }, groupD: { fontSize: '44', lineHeight: '48', }, }, trafalgar: { groupA: { fontSize: '20', lineHeight: '24', }, groupB: { fontSize: '24', lineHeight: '28', }, groupD: { fontSize: '32', lineHeight: '36', }, }, }` |
+| dir | string | yes | 'ltr' | `'ltr'`|
+
+### Usage
+
+```jsx
+import React from 'react';
+import MostRead from '@bbc/psammead-most-read;
+import { latin } from '@bbc/gel-foundations/scripts'
+
+const items = [
+  {
+    title: 'John Lewis staff bonus cut again as profits fall',
+    href: 'https://www.bbc.co.uk/news/business-43328806',
+  },
+  {
+    title: 'John Lewis staff bonus cut again as profits fall',
+    href: 'https://www.bbc.co.uk/news/business-43328806',
+  },
+];
+
+<MostRead
+items={items}
+service="news"
+header="Most Read"
+script={latin}
+dir="ltr"
+/>
+
+```
+
 ## MostReadList
+
 ### Props
 
 <!-- prettier-ignore -->
@@ -30,30 +73,25 @@ The `MostRead` component is designed to display the most read articles given a d
 
 ```jsx
 import React from 'react';
-import MostReadList from './list';
-import { latin } from '@bbc/gel-foundations/scripts'
+import MostReadList from '@bbc/psammead-most-read/List';
+import { latin } from '@bbc/gel-foundations/scripts';
 
-const itemsLTR = [
+const items = [
   {
     title: 'John Lewis staff bonus cut again as profits fall',
-    href: 'https://www.bbc.com/vietnamese/institutional-49283563',
+    href: 'https://www.bbc.co.uk/news/business-43328806',
   },
   {
     title: 'John Lewis staff bonus cut again as profits fall',
-    href: 'https://www.bbc.com/vietnamese/institutional-49283563',
+    href: 'https://www.bbc.co.uk/news/business-43328806',
   },
 ];
 
-<MostReadList
-items={itemsLTR}
-service="news"
-script={latin}
-dir="ltr"
-/>
-
+<MostReadList items={items} service="news" script={latin} dir="ltr" />;
 ```
 
 ## MostReadLink
+
 ### Props
 
 <!-- prettier-ignore -->
@@ -72,11 +110,11 @@ A typical use-case of this component is as displayed below. It contains an info 
 ```jsx
 import React from 'react';
 import { latin } from '@bbc/gel-foundations/scripts';
-import { MostReadLink } from '@bbc/psammead-most-read/esm/item';
+import { MostReadLink } from '@bbc/psammead-most-read/Item';
 
 const item = {
-    title: 'Cranberries singer O'Riordan died by drowning,
-    href: 'https://www.bbc.com'
+    title: 'John Lewis staff bonus cut again as profits fall',
+    href: 'https://www.bbc.co.uk/news/business-43328806',
 }
 
 <MostReadLink item={item} script={latin} service="news" dir="ltr" />;
@@ -89,11 +127,11 @@ const item = {
 import React from 'react';
 import { latin } from '@bbc/gel-foundations/scripts';
 import Timestamp from '@bbc/psammead-timestamp-container';
-import { MostReadLink } from '@bbc/psammead-most-read/esm/item';
+import { MostReadLink } from '@bbc/psammead-most-read/Item';
 
 const item = {
-    title: 'Cranberries singer O'Riordan died by drowning,
-    href: 'https://www.bbc.com'
+    title: 'John Lewis staff bonus cut again as profits fall',
+    href: 'https://www.bbc.co.uk/news/business-43328806',
 }
 
 const lastUpdated = (script, service) => (
@@ -117,7 +155,8 @@ const lastUpdated = (script, service) => (
 
 ```
 
-## MostReadRank 
+## MostReadRank
+
 ### Props
 
 <!-- prettier-ignore -->
@@ -131,13 +170,15 @@ const lastUpdated = (script, service) => (
 ```jsx
 import React from 'react';
 import { latin } from '@bbc/gel-foundations/scripts';
-import { MostReadRank } from '@bbc/psammead-most-read/esm/item';
+import { MostReadRank } from '@bbc/psammead-most-read/Item';
 
-<MostReadRank script={latin} service="news">10</MostReadRank>;
-
+<MostReadRank script={latin} service="news">
+  10
+</MostReadRank>;
 ```
 
-## MostReadTitle 
+## MostReadTitle
+
 ### Props
 
 <!-- prettier-ignore -->
@@ -152,12 +193,11 @@ import { MostReadRank } from '@bbc/psammead-most-read/esm/item';
 ```jsx
 import React from 'react';
 import { latin } from '@bbc/gel-foundations/scripts';
-import { MostReadTitle } from '@bbc/psammead-most-read/esm/title';
+import { MostReadTitle } from '@bbc/psammead-most-read/Title';
 
 <MostReadTitle header="Most Read" script={latin} service="news" </MostReadTitle>;
 
 ```
-
 
 ### When to use this component
 

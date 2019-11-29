@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 1.1.0-alpha.0 | [PR#2653](https://github.com/bbc/psammead/pull/2653) Remove enableGelMargins &enableNegativeGelMargins props & replace with margins. Update width calculations for fallbacks when using enableGelGutters. |
 | 1.0.0-alpha.15 | [PR#2701](https://github.com/bbc/psammead/pull/2701) Talos - Bump Dependencies - @bbc/psammead-styles |
 | 1.0.0-alpha.14 | [PR#2697](https://github.com/bbc/psammead/pull/2697) Talos - Bump Dependencies - @bbc/psammead-styles |
 | 1.0.0-alpha.13 | [PR#2568](https://github.com/bbc/psammead/pull/2568) Add enableNegativeGelMargins prop, to enable fullbleed Grid within an outer Grid that has enableGelMargins |
