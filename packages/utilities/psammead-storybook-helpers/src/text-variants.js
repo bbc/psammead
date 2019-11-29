@@ -49,13 +49,6 @@ const TEXT_EXAMPLES = {
     script: 'burmese',
     locale: 'my',
   },
-  news: {
-    text: 'Could a computer ever create better art than a human?',
-    longText:
-      'The critic, author, poet and TV host was known for his witty commentary on international television.',
-    script: 'latin',
-    locale: 'en',
-  },
   gahuza: {
     text: "Umukate n'isoda vyatumye amenya ko afise umugera wa SIDA",
     longText:
@@ -140,6 +133,13 @@ const TEXT_EXAMPLES = {
       'काठमाण्डूमा बुधवार भएको नेपाल र भारतका अधिकारीहरूको एउटा बैठकमा भारत नेपाललाई आफ्ना तीनवटा जलमार्गहरू प्रयोग गर्न दिन सहमत भएको उक्त बैठकमा सहभागी नेपाली अधिकारीले बताएका छन्।',
     script: 'nepali',
     locale: 'ne',
+  },
+  news: {
+    text: 'Could a computer ever create better art than a human?',
+    longText:
+      'The critic, author, poet and TV host was known for his witty commentary on international television.',
+    script: 'latin',
+    locale: 'en',
   },
   pashto: {
     text:
