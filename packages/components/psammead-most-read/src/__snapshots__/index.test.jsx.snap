@@ -1,11 +1,11 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`MostRead should render with ltr most read with correct dir 1`] = `
-.c3 {
-  position: relative;
+.c2 {
+  display: inline;
 }
 
-.c9 {
+.c8 {
   color: #222222;
   font-size: 1.125rem;
   line-height: 1.375rem;
@@ -16,18 +16,18 @@ exports[`MostRead should render with ltr most read with correct dir 1`] = `
   text-decoration: none;
 }
 
-.c9:hover,
-.c9:focus {
+.c8:hover,
+.c8:focus {
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
-.c8 {
+.c7 {
   padding-bottom: 1.5rem;
   padding-left: 1rem;
 }
 
-.c6 {
+.c5 {
   font-family: ReithSerif,Helvetica,Arial,sans-serif;
   font-weight: 300;
   font-style: normal;
@@ -55,39 +55,58 @@ exports[`MostRead should render with ltr most read with correct dir 1`] = `
   color: #3F3F42;
 }
 
+@supports (display:grid) {
+  .c2 {
+    display: grid;
+    position: initial;
+  }
+}
+
 @media (max-width:14.9375rem) {
   .c3 {
-    margin: 0 -0.25rem;
+    width: calc(18/18*(100% - 18 * 0.5rem) + 17 * 0.5rem );
+    display: inline-block;
+    vertical-align: top;
   }
 }
 
 @media (min-width:15rem) and (max-width:24.9375rem) {
   .c3 {
-    margin: 0 -0.25rem;
+    width: calc(18/18*(100% - 18 * 0.5rem) + 17 * 0.5rem );
+    display: inline-block;
+    vertical-align: top;
   }
 }
 
 @media (min-width:25rem) and (max-width:37.4375rem) {
   .c3 {
-    margin: 0 -0.25rem;
+    width: calc(9/18*(100% - 18 * 0.5rem) + 8 * 0.5rem );
+    display: inline-block;
+    vertical-align: top;
   }
 }
 
 @media (min-width:37.5rem) and (max-width:62.9375rem) {
   .c3 {
-    margin: 0 -0.5rem;
+    width: calc(9/18*(100% - 18 * 1rem) + 8 * 1rem );
+    display: inline-block;
+    vertical-align: top;
   }
 }
 
 @media (min-width:63rem) and (max-width:80rem) {
   .c3 {
-    margin: 0 -0.5rem;
+    width: calc(12/24*(100% - 24 * 1rem) + 11 * 1rem );
+    display: inline-block;
+    vertical-align: top;
   }
 }
 
 @media (min-width:80rem) {
   .c3 {
-    margin: 0 -0.5rem;
+    width: calc(12/60*(100% - 60 * 1rem) + 11 * 1rem );
+    display: inline-block;
+    vertical-align: top;
   }
 }
 
@@ -100,61 +119,6 @@ exports[`MostRead should render with ltr most read with correct dir 1`] = `
 
 @media (max-width:14.9375rem) {
   .c4 {
-    width: calc(100%);
-    display: inline-block;
-    vertical-align: top;
-  }
-}
-
-@media (min-width:15rem) and (max-width:24.9375rem) {
-  .c4 {
-    width: calc(100%);
-    display: inline-block;
-    vertical-align: top;
-  }
-}
-
-@media (min-width:25rem) and (max-width:37.4375rem) {
-  .c4 {
-    width: calc(50%);
-    display: inline-block;
-    vertical-align: top;
-  }
-}
-
-@media (min-width:37.5rem) and (max-width:62.9375rem) {
-  .c4 {
-    width: calc(50%);
-    display: inline-block;
-    vertical-align: top;
-  }
-}
-
-@media (min-width:63rem) and (max-width:80rem) {
-  .c4 {
-    width: calc(50%);
-    display: inline-block;
-    vertical-align: top;
-  }
-}
-
-@media (min-width:80rem) {
-  .c4 {
-    width: calc(20%);
-    display: inline-block;
-    vertical-align: top;
-  }
-}
-
-@supports (display:grid) {
-  .c4 {
-    display: grid;
-    position: initial;
-  }
-}
-
-@media (max-width:14.9375rem) {
-  .c5 {
     width: calc(11.11111111111111%);
     display: inline-block;
     vertical-align: top;
@@ -162,7 +126,7 @@ exports[`MostRead should render with ltr most read with correct dir 1`] = `
 }
 
 @media (min-width:15rem) and (max-width:24.9375rem) {
-  .c5 {
+  .c4 {
     width: calc(11.11111111111111%);
     display: inline-block;
     vertical-align: top;
@@ -170,7 +134,7 @@ exports[`MostRead should render with ltr most read with correct dir 1`] = `
 }
 
 @media (min-width:25rem) and (max-width:37.4375rem) {
-  .c5 {
+  .c4 {
     width: calc(22.22222222222222%);
     display: inline-block;
     vertical-align: top;
@@ -178,7 +142,7 @@ exports[`MostRead should render with ltr most read with correct dir 1`] = `
 }
 
 @media (min-width:37.5rem) and (max-width:62.9375rem) {
-  .c5 {
+  .c4 {
     width: calc(22.22222222222222%);
     display: inline-block;
     vertical-align: top;
@@ -186,7 +150,7 @@ exports[`MostRead should render with ltr most read with correct dir 1`] = `
 }
 
 @media (min-width:63rem) and (max-width:80rem) {
-  .c5 {
+  .c4 {
     width: calc(16.666666666666668%);
     display: inline-block;
     vertical-align: top;
@@ -194,7 +158,7 @@ exports[`MostRead should render with ltr most read with correct dir 1`] = `
 }
 
 @media (min-width:80rem) {
-  .c5 {
+  .c4 {
     width: calc(16.666666666666668%);
     display: inline-block;
     vertical-align: top;
@@ -202,13 +166,13 @@ exports[`MostRead should render with ltr most read with correct dir 1`] = `
 }
 
 @supports (display:grid) {
-  .c5 {
+  .c4 {
     display: block;
   }
 }
 
 @media (max-width:14.9375rem) {
-  .c7 {
+  .c6 {
     width: calc(88.88888888888889%);
     display: inline-block;
     vertical-align: top;
@@ -216,7 +180,7 @@ exports[`MostRead should render with ltr most read with correct dir 1`] = `
 }
 
 @media (min-width:15rem) and (max-width:24.9375rem) {
-  .c7 {
+  .c6 {
     width: calc(88.88888888888889%);
     display: inline-block;
     vertical-align: top;
@@ -224,7 +188,7 @@ exports[`MostRead should render with ltr most read with correct dir 1`] = `
 }
 
 @media (min-width:25rem) and (max-width:37.4375rem) {
-  .c7 {
+  .c6 {
     width: calc(77.77777777777777%);
     display: inline-block;
     vertical-align: top;
@@ -232,7 +196,7 @@ exports[`MostRead should render with ltr most read with correct dir 1`] = `
 }
 
 @media (min-width:37.5rem) and (max-width:62.9375rem) {
-  .c7 {
+  .c6 {
     width: calc(77.77777777777777%);
     display: inline-block;
     vertical-align: top;
@@ -240,7 +204,7 @@ exports[`MostRead should render with ltr most read with correct dir 1`] = `
 }
 
 @media (min-width:63rem) and (max-width:80rem) {
-  .c7 {
+  .c6 {
     width: calc(83.33333333333333%);
     display: inline-block;
     vertical-align: top;
@@ -248,7 +212,7 @@ exports[`MostRead should render with ltr most read with correct dir 1`] = `
 }
 
 @media (min-width:80rem) {
-  .c7 {
+  .c6 {
     width: calc(83.33333333333333%);
     display: inline-block;
     vertical-align: top;
@@ -256,83 +220,41 @@ exports[`MostRead should render with ltr most read with correct dir 1`] = `
 }
 
 @supports (display:grid) {
-  .c7 {
+  .c6 {
     display: block;
-  }
-}
-
-@media (max-width:14.9375rem) {
-  .c2 {
-    padding: 0 0.5rem;
-  }
-}
-
-@media (min-width:15rem) and (max-width:24.9375rem) {
-  .c2 {
-    padding: 0 0.5rem;
-  }
-}
-
-@media (min-width:25rem) and (max-width:37.4375rem) {
-  .c2 {
-    padding: 0 1rem;
-  }
-}
-
-@media (min-width:37.5rem) and (max-width:62.9375rem) {
-  .c2 {
-    padding: 0 1rem;
-  }
-}
-
-@media (min-width:63rem) and (max-width:80rem) {
-  .c2 {
-    padding: 0 1rem;
-  }
-}
-
-@media (min-width:80rem) {
-  .c2 {
-    padding: 0 1rem;
-  }
-}
-
-@supports (display:grid) {
-  .c2 {
-    padding: 0;
   }
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
-  .c9 {
+  .c8 {
     font-size: 1.25rem;
     line-height: 1.5rem;
   }
 }
 
 @media (min-width:37.5rem) {
-  .c9 {
+  .c8 {
     font-size: 1.5rem;
     line-height: 1.75rem;
   }
 }
 
 @media (min-width:80rem) {
-  .c8 {
+  .c7 {
     padding-top: 0.5rem;
     padding-left: 2rem;
   }
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
-  .c6 {
+  .c5 {
     font-size: 2.5rem;
     line-height: 2.75rem;
   }
 }
 
 @media (min-width:37.5rem) {
-  .c6 {
+  .c5 {
     font-size: 3.5rem;
     line-height: 3.75rem;
   }
@@ -372,329 +294,325 @@ exports[`MostRead should render with ltr most read with correct dir 1`] = `
   >
     <div
       class="c2"
+      dir="ltr"
     >
       <div
+        as="li"
         class="c3"
         dir="ltr"
       >
         <div
-          as="li"
           class="c4"
           dir="ltr"
         >
-          <div
+          <span
             class="c5"
-            dir="ltr"
           >
-            <span
-              class="c6"
-            >
-              1
-            </span>
-          </div>
-          <div
-            class="c7"
-            dir="ltr"
-          >
-            <div
-              class="c8"
-              dir="ltr"
-            >
-              <a
-                class="c9"
-                href="https://www.bbc.co.uk/news/business-43328806"
-              >
-                John Lewis staff bonus cut again as profits fall
-              </a>
-            </div>
-          </div>
+            1
+          </span>
         </div>
         <div
-          as="li"
-          class="c4"
+          class="c6"
           dir="ltr"
         >
-          <div
-            class="c5"
-            dir="ltr"
-          >
-            <span
-              class="c6"
-            >
-              2
-            </span>
-          </div>
           <div
             class="c7"
             dir="ltr"
           >
-            <div
+            <a
               class="c8"
-              dir="ltr"
+              href="https://www.bbc.co.uk/news/business-43328806"
             >
-              <a
-                class="c9"
-                href="https://www.bbc.co.uk/news/business-43328806"
-              >
-                John Lewis staff bonus cut again as profits fall
-              </a>
-            </div>
+              John Lewis staff bonus cut again as profits fall
+            </a>
           </div>
         </div>
+      </div>
+      <div
+        as="li"
+        class="c3"
+        dir="ltr"
+      >
         <div
-          as="li"
           class="c4"
           dir="ltr"
         >
-          <div
+          <span
             class="c5"
-            dir="ltr"
           >
-            <span
-              class="c6"
-            >
-              3
-            </span>
-          </div>
-          <div
-            class="c7"
-            dir="ltr"
-          >
-            <div
-              class="c8"
-              dir="ltr"
-            >
-              <a
-                class="c9"
-                href="https://www.bbc.co.uk/news/business-43328806"
-              >
-                John Lewis staff bonus cut again as profits fall
-              </a>
-            </div>
-          </div>
+            2
+          </span>
         </div>
         <div
-          as="li"
-          class="c4"
+          class="c6"
           dir="ltr"
         >
-          <div
-            class="c5"
-            dir="ltr"
-          >
-            <span
-              class="c6"
-            >
-              4
-            </span>
-          </div>
           <div
             class="c7"
             dir="ltr"
           >
-            <div
+            <a
               class="c8"
-              dir="ltr"
+              href="https://www.bbc.co.uk/news/business-43328806"
             >
-              <a
-                class="c9"
-                href="https://www.bbc.co.uk/news/business-43328806"
-              >
-                John Lewis staff bonus cut again as profits fall
-              </a>
-            </div>
+              John Lewis staff bonus cut again as profits fall
+            </a>
           </div>
         </div>
+      </div>
+      <div
+        as="li"
+        class="c3"
+        dir="ltr"
+      >
         <div
-          as="li"
           class="c4"
           dir="ltr"
         >
-          <div
+          <span
             class="c5"
-            dir="ltr"
           >
-            <span
-              class="c6"
-            >
-              5
-            </span>
-          </div>
-          <div
-            class="c7"
-            dir="ltr"
-          >
-            <div
-              class="c8"
-              dir="ltr"
-            >
-              <a
-                class="c9"
-                href="https://www.bbc.co.uk/news/business-43328806"
-              >
-                John Lewis staff bonus cut again as profits fall
-              </a>
-            </div>
-          </div>
+            3
+          </span>
         </div>
         <div
-          as="li"
-          class="c4"
+          class="c6"
           dir="ltr"
         >
-          <div
-            class="c5"
-            dir="ltr"
-          >
-            <span
-              class="c6"
-            >
-              6
-            </span>
-          </div>
           <div
             class="c7"
             dir="ltr"
           >
-            <div
+            <a
               class="c8"
-              dir="ltr"
+              href="https://www.bbc.co.uk/news/business-43328806"
             >
-              <a
-                class="c9"
-                href="https://www.bbc.co.uk/news/business-43328806"
-              >
-                John Lewis staff bonus cut again as profits fall
-              </a>
-            </div>
+              John Lewis staff bonus cut again as profits fall
+            </a>
           </div>
         </div>
+      </div>
+      <div
+        as="li"
+        class="c3"
+        dir="ltr"
+      >
         <div
-          as="li"
           class="c4"
           dir="ltr"
         >
-          <div
+          <span
             class="c5"
-            dir="ltr"
           >
-            <span
-              class="c6"
-            >
-              7
-            </span>
-          </div>
-          <div
-            class="c7"
-            dir="ltr"
-          >
-            <div
-              class="c8"
-              dir="ltr"
-            >
-              <a
-                class="c9"
-                href="https://www.bbc.co.uk/news/business-43328806"
-              >
-                John Lewis staff bonus cut again as profits fall
-              </a>
-            </div>
-          </div>
+            4
+          </span>
         </div>
         <div
-          as="li"
-          class="c4"
+          class="c6"
           dir="ltr"
         >
-          <div
-            class="c5"
-            dir="ltr"
-          >
-            <span
-              class="c6"
-            >
-              8
-            </span>
-          </div>
           <div
             class="c7"
             dir="ltr"
           >
-            <div
+            <a
               class="c8"
-              dir="ltr"
+              href="https://www.bbc.co.uk/news/business-43328806"
             >
-              <a
-                class="c9"
-                href="https://www.bbc.co.uk/news/business-43328806"
-              >
-                John Lewis staff bonus cut again as profits fall
-              </a>
-            </div>
+              John Lewis staff bonus cut again as profits fall
+            </a>
           </div>
         </div>
+      </div>
+      <div
+        as="li"
+        class="c3"
+        dir="ltr"
+      >
         <div
-          as="li"
           class="c4"
           dir="ltr"
         >
-          <div
+          <span
             class="c5"
-            dir="ltr"
           >
-            <span
-              class="c6"
-            >
-              9
-            </span>
-          </div>
-          <div
-            class="c7"
-            dir="ltr"
-          >
-            <div
-              class="c8"
-              dir="ltr"
-            >
-              <a
-                class="c9"
-                href="https://www.bbc.co.uk/news/business-43328806"
-              >
-                John Lewis staff bonus cut again as profits fall
-              </a>
-            </div>
-          </div>
+            5
+          </span>
         </div>
         <div
-          as="li"
-          class="c4"
+          class="c6"
           dir="ltr"
         >
-          <div
-            class="c5"
-            dir="ltr"
-          >
-            <span
-              class="c6"
-            >
-              10
-            </span>
-          </div>
           <div
             class="c7"
             dir="ltr"
           >
-            <div
+            <a
               class="c8"
-              dir="ltr"
+              href="https://www.bbc.co.uk/news/business-43328806"
             >
-              <a
-                class="c9"
-                href="https://www.bbc.co.uk/news/business-43328806"
-              >
-                John Lewis staff bonus cut again as profits fall
-              </a>
-            </div>
+              John Lewis staff bonus cut again as profits fall
+            </a>
+          </div>
+        </div>
+      </div>
+      <div
+        as="li"
+        class="c3"
+        dir="ltr"
+      >
+        <div
+          class="c4"
+          dir="ltr"
+        >
+          <span
+            class="c5"
+          >
+            6
+          </span>
+        </div>
+        <div
+          class="c6"
+          dir="ltr"
+        >
+          <div
+            class="c7"
+            dir="ltr"
+          >
+            <a
+              class="c8"
+              href="https://www.bbc.co.uk/news/business-43328806"
+            >
+              John Lewis staff bonus cut again as profits fall
+            </a>
+          </div>
+        </div>
+      </div>
+      <div
+        as="li"
+        class="c3"
+        dir="ltr"
+      >
+        <div
+          class="c4"
+          dir="ltr"
+        >
+          <span
+            class="c5"
+          >
+            7
+          </span>
+        </div>
+        <div
+          class="c6"
+          dir="ltr"
+        >
+          <div
+            class="c7"
+            dir="ltr"
+          >
+            <a
+              class="c8"
+              href="https://www.bbc.co.uk/news/business-43328806"
+            >
+              John Lewis staff bonus cut again as profits fall
+            </a>
+          </div>
+        </div>
+      </div>
+      <div
+        as="li"
+        class="c3"
+        dir="ltr"
+      >
+        <div
+          class="c4"
+          dir="ltr"
+        >
+          <span
+            class="c5"
+          >
+            8
+          </span>
+        </div>
+        <div
+          class="c6"
+          dir="ltr"
+        >
+          <div
+            class="c7"
+            dir="ltr"
+          >
+            <a
+              class="c8"
+              href="https://www.bbc.co.uk/news/business-43328806"
+            >
+              John Lewis staff bonus cut again as profits fall
+            </a>
+          </div>
+        </div>
+      </div>
+      <div
+        as="li"
+        class="c3"
+        dir="ltr"
+      >
+        <div
+          class="c4"
+          dir="ltr"
+        >
+          <span
+            class="c5"
+          >
+            9
+          </span>
+        </div>
+        <div
+          class="c6"
+          dir="ltr"
+        >
+          <div
+            class="c7"
+            dir="ltr"
+          >
+            <a
+              class="c8"
+              href="https://www.bbc.co.uk/news/business-43328806"
+            >
+              John Lewis staff bonus cut again as profits fall
+            </a>
+          </div>
+        </div>
+      </div>
+      <div
+        as="li"
+        class="c3"
+        dir="ltr"
+      >
+        <div
+          class="c4"
+          dir="ltr"
+        >
+          <span
+            class="c5"
+          >
+            10
+          </span>
+        </div>
+        <div
+          class="c6"
+          dir="ltr"
+        >
+          <div
+            class="c7"
+            dir="ltr"
+          >
+            <a
+              class="c8"
+              href="https://www.bbc.co.uk/news/business-43328806"
+            >
+              John Lewis staff bonus cut again as profits fall
+            </a>
           </div>
         </div>
       </div>
@@ -704,11 +622,11 @@ exports[`MostRead should render with ltr most read with correct dir 1`] = `
 `;
 
 exports[`MostRead should render with rtl most read with correct dir 1`] = `
-.c3 {
-  position: relative;
+.c2 {
+  display: inline;
 }
 
-.c9 {
+.c8 {
   color: #222222;
   font-size: 1.5rem;
   line-height: 2rem;
@@ -719,18 +637,18 @@ exports[`MostRead should render with rtl most read with correct dir 1`] = `
   text-decoration: none;
 }
 
-.c9:hover,
-.c9:focus {
+.c8:hover,
+.c8:focus {
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
-.c8 {
+.c7 {
   padding-bottom: 1.5rem;
   padding-right: 1rem;
 }
 
-.c6 {
+.c5 {
   font-family: "BBC Nassim Arabic",Arial,Verdana,Geneva,Helvetica,sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -758,39 +676,58 @@ exports[`MostRead should render with rtl most read with correct dir 1`] = `
   color: #3F3F42;
 }
 
+@supports (display:grid) {
+  .c2 {
+    display: grid;
+    position: initial;
+  }
+}
+
 @media (max-width:14.9375rem) {
   .c3 {
-    margin: 0 -0.25rem;
+    width: calc(18/18*(100% - 18 * 0.5rem) + 17 * 0.5rem );
+    display: inline-block;
+    vertical-align: top;
   }
 }
 
 @media (min-width:15rem) and (max-width:24.9375rem) {
   .c3 {
-    margin: 0 -0.25rem;
+    width: calc(18/18*(100% - 18 * 0.5rem) + 17 * 0.5rem );
+    display: inline-block;
+    vertical-align: top;
   }
 }
 
 @media (min-width:25rem) and (max-width:37.4375rem) {
   .c3 {
-    margin: 0 -0.25rem;
+    width: calc(9/18*(100% - 18 * 0.5rem) + 8 * 0.5rem );
+    display: inline-block;
+    vertical-align: top;
   }
 }
 
 @media (min-width:37.5rem) and (max-width:62.9375rem) {
   .c3 {
-    margin: 0 -0.5rem;
+    width: calc(9/18*(100% - 18 * 1rem) + 8 * 1rem );
+    display: inline-block;
+    vertical-align: top;
   }
 }
 
 @media (min-width:63rem) and (max-width:80rem) {
   .c3 {
-    margin: 0 -0.5rem;
+    width: calc(12/24*(100% - 24 * 1rem) + 11 * 1rem );
+    display: inline-block;
+    vertical-align: top;
   }
 }
 
 @media (min-width:80rem) {
   .c3 {
-    margin: 0 -0.5rem;
+    width: calc(12/60*(100% - 60 * 1rem) + 11 * 1rem );
+    display: inline-block;
+    vertical-align: top;
   }
 }
 
@@ -803,61 +740,6 @@ exports[`MostRead should render with rtl most read with correct dir 1`] = `
 
 @media (max-width:14.9375rem) {
   .c4 {
-    width: calc(100%);
-    display: inline-block;
-    vertical-align: top;
-  }
-}
-
-@media (min-width:15rem) and (max-width:24.9375rem) {
-  .c4 {
-    width: calc(100%);
-    display: inline-block;
-    vertical-align: top;
-  }
-}
-
-@media (min-width:25rem) and (max-width:37.4375rem) {
-  .c4 {
-    width: calc(50%);
-    display: inline-block;
-    vertical-align: top;
-  }
-}
-
-@media (min-width:37.5rem) and (max-width:62.9375rem) {
-  .c4 {
-    width: calc(50%);
-    display: inline-block;
-    vertical-align: top;
-  }
-}
-
-@media (min-width:63rem) and (max-width:80rem) {
-  .c4 {
-    width: calc(50%);
-    display: inline-block;
-    vertical-align: top;
-  }
-}
-
-@media (min-width:80rem) {
-  .c4 {
-    width: calc(20%);
-    display: inline-block;
-    vertical-align: top;
-  }
-}
-
-@supports (display:grid) {
-  .c4 {
-    display: grid;
-    position: initial;
-  }
-}
-
-@media (max-width:14.9375rem) {
-  .c5 {
     width: calc(11.11111111111111%);
     display: inline-block;
     vertical-align: top;
@@ -865,7 +747,7 @@ exports[`MostRead should render with rtl most read with correct dir 1`] = `
 }
 
 @media (min-width:15rem) and (max-width:24.9375rem) {
-  .c5 {
+  .c4 {
     width: calc(11.11111111111111%);
     display: inline-block;
     vertical-align: top;
@@ -873,7 +755,7 @@ exports[`MostRead should render with rtl most read with correct dir 1`] = `
 }
 
 @media (min-width:25rem) and (max-width:37.4375rem) {
-  .c5 {
+  .c4 {
     width: calc(22.22222222222222%);
     display: inline-block;
     vertical-align: top;
@@ -881,7 +763,7 @@ exports[`MostRead should render with rtl most read with correct dir 1`] = `
 }
 
 @media (min-width:37.5rem) and (max-width:62.9375rem) {
-  .c5 {
+  .c4 {
     width: calc(22.22222222222222%);
     display: inline-block;
     vertical-align: top;
@@ -889,7 +771,7 @@ exports[`MostRead should render with rtl most read with correct dir 1`] = `
 }
 
 @media (min-width:63rem) and (max-width:80rem) {
-  .c5 {
+  .c4 {
     width: calc(16.666666666666668%);
     display: inline-block;
     vertical-align: top;
@@ -897,7 +779,7 @@ exports[`MostRead should render with rtl most read with correct dir 1`] = `
 }
 
 @media (min-width:80rem) {
-  .c5 {
+  .c4 {
     width: calc(16.666666666666668%);
     display: inline-block;
     vertical-align: top;
@@ -905,13 +787,13 @@ exports[`MostRead should render with rtl most read with correct dir 1`] = `
 }
 
 @supports (display:grid) {
-  .c5 {
+  .c4 {
     display: block;
   }
 }
 
 @media (max-width:14.9375rem) {
-  .c7 {
+  .c6 {
     width: calc(88.88888888888889%);
     display: inline-block;
     vertical-align: top;
@@ -919,7 +801,7 @@ exports[`MostRead should render with rtl most read with correct dir 1`] = `
 }
 
 @media (min-width:15rem) and (max-width:24.9375rem) {
-  .c7 {
+  .c6 {
     width: calc(88.88888888888889%);
     display: inline-block;
     vertical-align: top;
@@ -927,7 +809,7 @@ exports[`MostRead should render with rtl most read with correct dir 1`] = `
 }
 
 @media (min-width:25rem) and (max-width:37.4375rem) {
-  .c7 {
+  .c6 {
     width: calc(77.77777777777777%);
     display: inline-block;
     vertical-align: top;
@@ -935,7 +817,7 @@ exports[`MostRead should render with rtl most read with correct dir 1`] = `
 }
 
 @media (min-width:37.5rem) and (max-width:62.9375rem) {
-  .c7 {
+  .c6 {
     width: calc(77.77777777777777%);
     display: inline-block;
     vertical-align: top;
@@ -943,7 +825,7 @@ exports[`MostRead should render with rtl most read with correct dir 1`] = `
 }
 
 @media (min-width:63rem) and (max-width:80rem) {
-  .c7 {
+  .c6 {
     width: calc(83.33333333333333%);
     display: inline-block;
     vertical-align: top;
@@ -951,7 +833,7 @@ exports[`MostRead should render with rtl most read with correct dir 1`] = `
 }
 
 @media (min-width:80rem) {
-  .c7 {
+  .c6 {
     width: calc(83.33333333333333%);
     display: inline-block;
     vertical-align: top;
@@ -959,83 +841,41 @@ exports[`MostRead should render with rtl most read with correct dir 1`] = `
 }
 
 @supports (display:grid) {
-  .c7 {
+  .c6 {
     display: block;
-  }
-}
-
-@media (max-width:14.9375rem) {
-  .c2 {
-    padding: 0 0.5rem;
-  }
-}
-
-@media (min-width:15rem) and (max-width:24.9375rem) {
-  .c2 {
-    padding: 0 0.5rem;
-  }
-}
-
-@media (min-width:25rem) and (max-width:37.4375rem) {
-  .c2 {
-    padding: 0 1rem;
-  }
-}
-
-@media (min-width:37.5rem) and (max-width:62.9375rem) {
-  .c2 {
-    padding: 0 1rem;
-  }
-}
-
-@media (min-width:63rem) and (max-width:80rem) {
-  .c2 {
-    padding: 0 1rem;
-  }
-}
-
-@media (min-width:80rem) {
-  .c2 {
-    padding: 0 1rem;
-  }
-}
-
-@supports (display:grid) {
-  .c2 {
-    padding: 0;
   }
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
-  .c9 {
+  .c8 {
     font-size: 1.625rem;
     line-height: 2.25rem;
   }
 }
 
 @media (min-width:37.5rem) {
-  .c9 {
+  .c8 {
     font-size: 1.75rem;
     line-height: 2.25rem;
   }
 }
 
 @media (min-width:80rem) {
-  .c8 {
+  .c7 {
     padding-top: 0.5rem;
     padding-right: 2rem;
   }
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
-  .c6 {
+  .c5 {
     font-size: 2.5rem;
     line-height: 2.75rem;
   }
 }
 
 @media (min-width:37.5rem) {
-  .c6 {
+  .c5 {
     font-size: 3.5rem;
     line-height: 3.75rem;
   }
@@ -1075,329 +915,325 @@ exports[`MostRead should render with rtl most read with correct dir 1`] = `
   >
     <div
       class="c2"
+      dir="rtl"
     >
       <div
+        as="li"
         class="c3"
         dir="rtl"
       >
         <div
-          as="li"
           class="c4"
           dir="rtl"
         >
-          <div
+          <span
             class="c5"
-            dir="rtl"
           >
-            <span
-              class="c6"
-            >
-              ۱
-            </span>
-          </div>
-          <div
-            class="c7"
-            dir="rtl"
-          >
-            <div
-              class="c8"
-              dir="rtl"
-            >
-              <a
-                class="c9"
-                href="https://www.bbc.com/persian/iran-46965704"
-              >
-                ایران از لغو 'رزمایش قطع اینترنت' خبر داد
-              </a>
-            </div>
-          </div>
+            ۱
+          </span>
         </div>
         <div
-          as="li"
-          class="c4"
+          class="c6"
           dir="rtl"
         >
-          <div
-            class="c5"
-            dir="rtl"
-          >
-            <span
-              class="c6"
-            >
-              ۲
-            </span>
-          </div>
           <div
             class="c7"
             dir="rtl"
           >
-            <div
+            <a
               class="c8"
-              dir="rtl"
+              href="https://www.bbc.com/persian/iran-46965704"
             >
-              <a
-                class="c9"
-                href="https://www.bbc.com/persian/iran-46965704"
-              >
-                ایران از لغو 'رزمایش قطع اینترنت' خبر داد
-              </a>
-            </div>
+              ایران از لغو 'رزمایش قطع اینترنت' خبر داد
+            </a>
           </div>
         </div>
+      </div>
+      <div
+        as="li"
+        class="c3"
+        dir="rtl"
+      >
         <div
-          as="li"
           class="c4"
           dir="rtl"
         >
-          <div
+          <span
             class="c5"
-            dir="rtl"
           >
-            <span
-              class="c6"
-            >
-              ۳
-            </span>
-          </div>
-          <div
-            class="c7"
-            dir="rtl"
-          >
-            <div
-              class="c8"
-              dir="rtl"
-            >
-              <a
-                class="c9"
-                href="https://www.bbc.com/persian/iran-46965704"
-              >
-                ایران از لغو 'رزمایش قطع اینترنت' خبر داد
-              </a>
-            </div>
-          </div>
+            ۲
+          </span>
         </div>
         <div
-          as="li"
-          class="c4"
+          class="c6"
           dir="rtl"
         >
-          <div
-            class="c5"
-            dir="rtl"
-          >
-            <span
-              class="c6"
-            >
-              ۴
-            </span>
-          </div>
           <div
             class="c7"
             dir="rtl"
           >
-            <div
+            <a
               class="c8"
-              dir="rtl"
+              href="https://www.bbc.com/persian/iran-46965704"
             >
-              <a
-                class="c9"
-                href="https://www.bbc.com/persian/iran-46965704"
-              >
-                ایران از لغو 'رزمایش قطع اینترنت' خبر داد
-              </a>
-            </div>
+              ایران از لغو 'رزمایش قطع اینترنت' خبر داد
+            </a>
           </div>
         </div>
+      </div>
+      <div
+        as="li"
+        class="c3"
+        dir="rtl"
+      >
         <div
-          as="li"
           class="c4"
           dir="rtl"
         >
-          <div
+          <span
             class="c5"
-            dir="rtl"
           >
-            <span
-              class="c6"
-            >
-              ۵
-            </span>
-          </div>
-          <div
-            class="c7"
-            dir="rtl"
-          >
-            <div
-              class="c8"
-              dir="rtl"
-            >
-              <a
-                class="c9"
-                href="https://www.bbc.com/persian/iran-46965704"
-              >
-                ایران از لغو 'رزمایش قطع اینترنت' خبر داد
-              </a>
-            </div>
-          </div>
+            ۳
+          </span>
         </div>
         <div
-          as="li"
-          class="c4"
+          class="c6"
           dir="rtl"
         >
-          <div
-            class="c5"
-            dir="rtl"
-          >
-            <span
-              class="c6"
-            >
-              ۶
-            </span>
-          </div>
           <div
             class="c7"
             dir="rtl"
           >
-            <div
+            <a
               class="c8"
-              dir="rtl"
+              href="https://www.bbc.com/persian/iran-46965704"
             >
-              <a
-                class="c9"
-                href="https://www.bbc.com/persian/iran-46965704"
-              >
-                ایران از لغو 'رزمایش قطع اینترنت' خبر داد
-              </a>
-            </div>
+              ایران از لغو 'رزمایش قطع اینترنت' خبر داد
+            </a>
           </div>
         </div>
+      </div>
+      <div
+        as="li"
+        class="c3"
+        dir="rtl"
+      >
         <div
-          as="li"
           class="c4"
           dir="rtl"
         >
-          <div
+          <span
             class="c5"
-            dir="rtl"
           >
-            <span
-              class="c6"
-            >
-              ۷
-            </span>
-          </div>
-          <div
-            class="c7"
-            dir="rtl"
-          >
-            <div
-              class="c8"
-              dir="rtl"
-            >
-              <a
-                class="c9"
-                href="https://www.bbc.com/persian/iran-46965704"
-              >
-                ایران از لغو 'رزمایش قطع اینترنت' خبر داد
-              </a>
-            </div>
-          </div>
+            ۴
+          </span>
         </div>
         <div
-          as="li"
-          class="c4"
+          class="c6"
           dir="rtl"
         >
-          <div
-            class="c5"
-            dir="rtl"
-          >
-            <span
-              class="c6"
-            >
-              ۸
-            </span>
-          </div>
           <div
             class="c7"
             dir="rtl"
           >
-            <div
+            <a
               class="c8"
-              dir="rtl"
+              href="https://www.bbc.com/persian/iran-46965704"
             >
-              <a
-                class="c9"
-                href="https://www.bbc.com/persian/iran-46965704"
-              >
-                ایران از لغو 'رزمایش قطع اینترنت' خبر داد
-              </a>
-            </div>
+              ایران از لغو 'رزمایش قطع اینترنت' خبر داد
+            </a>
           </div>
         </div>
+      </div>
+      <div
+        as="li"
+        class="c3"
+        dir="rtl"
+      >
         <div
-          as="li"
           class="c4"
           dir="rtl"
         >
-          <div
+          <span
             class="c5"
-            dir="rtl"
           >
-            <span
-              class="c6"
-            >
-              ۹
-            </span>
-          </div>
-          <div
-            class="c7"
-            dir="rtl"
-          >
-            <div
-              class="c8"
-              dir="rtl"
-            >
-              <a
-                class="c9"
-                href="https://www.bbc.com/persian/iran-46965704"
-              >
-                ایران از لغو 'رزمایش قطع اینترنت' خبر داد
-              </a>
-            </div>
-          </div>
+            ۵
+          </span>
         </div>
         <div
-          as="li"
-          class="c4"
+          class="c6"
           dir="rtl"
         >
-          <div
-            class="c5"
-            dir="rtl"
-          >
-            <span
-              class="c6"
-            >
-              ۱۰
-            </span>
-          </div>
           <div
             class="c7"
             dir="rtl"
           >
-            <div
+            <a
               class="c8"
-              dir="rtl"
+              href="https://www.bbc.com/persian/iran-46965704"
             >
-              <a
-                class="c9"
-                href="https://www.bbc.com/persian/iran-46965704"
-              >
-                ایران از لغو 'رزمایش قطع اینترنت' خبر داد
-              </a>
-            </div>
+              ایران از لغو 'رزمایش قطع اینترنت' خبر داد
+            </a>
+          </div>
+        </div>
+      </div>
+      <div
+        as="li"
+        class="c3"
+        dir="rtl"
+      >
+        <div
+          class="c4"
+          dir="rtl"
+        >
+          <span
+            class="c5"
+          >
+            ۶
+          </span>
+        </div>
+        <div
+          class="c6"
+          dir="rtl"
+        >
+          <div
+            class="c7"
+            dir="rtl"
+          >
+            <a
+              class="c8"
+              href="https://www.bbc.com/persian/iran-46965704"
+            >
+              ایران از لغو 'رزمایش قطع اینترنت' خبر داد
+            </a>
+          </div>
+        </div>
+      </div>
+      <div
+        as="li"
+        class="c3"
+        dir="rtl"
+      >
+        <div
+          class="c4"
+          dir="rtl"
+        >
+          <span
+            class="c5"
+          >
+            ۷
+          </span>
+        </div>
+        <div
+          class="c6"
+          dir="rtl"
+        >
+          <div
+            class="c7"
+            dir="rtl"
+          >
+            <a
+              class="c8"
+              href="https://www.bbc.com/persian/iran-46965704"
+            >
+              ایران از لغو 'رزمایش قطع اینترنت' خبر داد
+            </a>
+          </div>
+        </div>
+      </div>
+      <div
+        as="li"
+        class="c3"
+        dir="rtl"
+      >
+        <div
+          class="c4"
+          dir="rtl"
+        >
+          <span
+            class="c5"
+          >
+            ۸
+          </span>
+        </div>
+        <div
+          class="c6"
+          dir="rtl"
+        >
+          <div
+            class="c7"
+            dir="rtl"
+          >
+            <a
+              class="c8"
+              href="https://www.bbc.com/persian/iran-46965704"
+            >
+              ایران از لغو 'رزمایش قطع اینترنت' خبر داد
+            </a>
+          </div>
+        </div>
+      </div>
+      <div
+        as="li"
+        class="c3"
+        dir="rtl"
+      >
+        <div
+          class="c4"
+          dir="rtl"
+        >
+          <span
+            class="c5"
+          >
+            ۹
+          </span>
+        </div>
+        <div
+          class="c6"
+          dir="rtl"
+        >
+          <div
+            class="c7"
+            dir="rtl"
+          >
+            <a
+              class="c8"
+              href="https://www.bbc.com/persian/iran-46965704"
+            >
+              ایران از لغو 'رزمایش قطع اینترنت' خبر داد
+            </a>
+          </div>
+        </div>
+      </div>
+      <div
+        as="li"
+        class="c3"
+        dir="rtl"
+      >
+        <div
+          class="c4"
+          dir="rtl"
+        >
+          <span
+            class="c5"
+          >
+            ۱۰
+          </span>
+        </div>
+        <div
+          class="c6"
+          dir="rtl"
+        >
+          <div
+            class="c7"
+            dir="rtl"
+          >
+            <a
+              class="c8"
+              href="https://www.bbc.com/persian/iran-46965704"
+            >
+              ایران از لغو 'رزمایش قطع اینترنت' خبر داد
+            </a>
           </div>
         </div>
       </div>
