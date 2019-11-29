@@ -47,6 +47,29 @@ const itemsLTR = [
   },
 ];
 
+const itemsLTR5 = [
+  {
+    title: 'John Lewis staff bonus cut again as profits fall',
+    href: 'https://www.bbc.com/vietnamese/institutional-49283563',
+  },
+  {
+    title: 'John Lewis staff bonus cut again as profits fall',
+    href: 'https://www.bbc.com/vietnamese/institutional-49283563',
+  },
+  {
+    title: 'John Lewis staff bonus cut again as profits fall',
+    href: 'https://www.bbc.com/vietnamese/institutional-49283563',
+  },
+  {
+    title: 'John Lewis staff bonus cut again as profits fall',
+    href: 'https://www.bbc.com/vietnamese/institutional-49283563',
+  },
+  {
+    title: 'John Lewis staff bonus cut again as profits fall',
+    href: 'https://www.bbc.com/vietnamese/institutional-49283563',
+  },
+];
+
 const itemsRTL = [
   {
     title: "ایران از لغو 'رزمایش قطع اینترنت' خبر داد",
@@ -112,6 +135,16 @@ storiesOf('Components|MostRead/List/LTR', module)
     newsServiceDecorator(({ script, service }) => (
       <MostReadList
         items={itemsLTR}
+        service={service}
+        script={script}
+        dir="ltr"
+      />
+    )),
+  )
+  .add(`News LTR 5`, () =>
+    newsServiceDecorator(({ script, service }) => (
+      <MostReadList
+        items={itemsLTR5}
         service={service}
         script={script}
         dir="ltr"

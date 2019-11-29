@@ -71,12 +71,22 @@ const StyledLi = styled.li`
 
 const StyledGrid = styled(Grid)`
   grid-auto-flow: column;
-  grid-template-rows: repeat(5, [col-start] auto [col-end]);
+  grid-template-rows: repeat(
+    ${props => Math.ceil(props.items.length / 2)},
+    [col-start] auto [col-end]
+  );
   @media (max-width: ${GEL_GROUP_1_SCREEN_WIDTH_MAX}) {
-    grid-template-rows: repeat(10, [col-start] auto [col-end]);
+    grid-template-rows: repeat(
+      ${props => props.items.length},
+      [col-start] auto [col-end]
+    );
   }
   @media (min-width: ${GEL_GROUP_5_SCREEN_WIDTH_MIN}) {
-    grid-template-rows: repeat(2, [col-start] auto [col-end]);
+    grid-auto-flow: row;
+    grid-template-rows: repeat(
+      ${props => Math.floor(props.items.length / 2)},
+      [col-start] auto [col-end]
+    );
   }
 `;
 
