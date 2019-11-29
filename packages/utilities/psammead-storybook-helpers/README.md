@@ -4,7 +4,7 @@ This package provides a collection of common values that are used in storybook b
 
 ## Exports
 
-`LANGUAGE_VARIANTS` - A list of text samples in different languages, with the script and direction that should be used for that language.
+`TEXT_EXAMPLES` - A list of text samples in different languages, with the script and direction that should be used for that language.
 
 `withServicesKnob` - Is a function that returns a storybook decorator function that adds a `Select a service` dropdown to the knobs panel. When a service is selected from the dropdown it does 2 things:
 
