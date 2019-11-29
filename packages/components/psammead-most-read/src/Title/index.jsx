@@ -12,8 +12,16 @@ const StyledHeading = styled.h2`
   color: ${C_SHADOW};
 `;
 
-const MostReadTitle = ({ header, ...props }) => (
-  <StyledHeading {...props}>{header}</StyledHeading>
+const StyledSection = styled.section``;
+
+const labelId = 'example-section-label';
+
+const MostReadTitle = ({ header, service, script, dir }) => (
+  <StyledSection role="region" aria-labelledby={labelId}>
+    <StyledHeading dir={dir} id={labelId} script={script} service={service}>
+      {header}
+    </StyledHeading>
+  </StyledSection>
 );
 
 MostReadTitle.propTypes = {

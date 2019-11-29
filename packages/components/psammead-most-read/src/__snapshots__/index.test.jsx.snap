@@ -353,12 +353,19 @@ exports[`MostRead should render with ltr most read with correct dir 1`] = `
 }
 
 <div>
-  <h2
-    class="c0"
-    dir="ltr"
+  <section
+    aria-labelledby="example-section-label"
+    class=""
+    role="region"
   >
-    Most Read
-  </h2>
+    <h2
+      class="c0"
+      dir="ltr"
+      id="example-section-label"
+    >
+      Most Read
+    </h2>
+  </section>
   <ol
     class="c1"
     role="list"
@@ -1049,12 +1056,19 @@ exports[`MostRead should render with rtl most read with correct dir 1`] = `
 }
 
 <div>
-  <h2
-    class="c0"
-    dir="rtl"
+  <section
+    aria-labelledby="example-section-label"
+    class=""
+    role="region"
   >
-    الأكثر قراءة
-  </h2>
+    <h2
+      class="c0"
+      dir="rtl"
+      id="example-section-label"
+    >
+      الأكثر قراءة
+    </h2>
+  </section>
   <ol
     class="c1"
     role="list"
