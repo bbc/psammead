@@ -1,4 +1,4 @@
-# ContentShiftBlocker Changelog
+# ContentAnchor Changelog
 
 | Version | Description                                                                       |
 | ------- | --------------------------------------------------------------------------------- |

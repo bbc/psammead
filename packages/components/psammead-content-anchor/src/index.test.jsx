@@ -3,7 +3,7 @@
 import React from 'react';
 import { render, act } from '@testing-library/react';
 import styled from 'styled-components';
-import ContentShiftBlocker from '.';
+import ContentAnchor from '.';
 
 let IOInstance;
 let ROInstance;
@@ -63,9 +63,9 @@ const Content = styled.div`
 
 it('should render children', () => {
   const { getByText } = render(
-    <ContentShiftBlocker>
+    <ContentAnchor>
       <Content>Test content</Content>
-    </ContentShiftBlocker>,
+    </ContentAnchor>,
   );
 
   expect(getByText('Test content')).toBeTruthy();
@@ -75,9 +75,9 @@ it('should set the initial size', () => {
   const size = 500;
 
   const { container } = render(
-    <ContentShiftBlocker initialWidth={size} initialHeight={size}>
+    <ContentAnchor initialWidth={size} initialHeight={size}>
       <Content />
-    </ContentShiftBlocker>,
+    </ContentAnchor>,
   );
 
   expect(
@@ -92,9 +92,9 @@ it('should set the initial size', () => {
 it('should accept string measurements', () => {
   const stringSize = '10em';
   const { container } = render(
-    <ContentShiftBlocker initialWidth={stringSize} initialHeight={stringSize}>
+    <ContentAnchor initialWidth={stringSize} initialHeight={stringSize}>
       <Content />
-    </ContentShiftBlocker>,
+    </ContentAnchor>,
   );
 
   expect(
@@ -110,9 +110,9 @@ it('should not resize when in view', () => {
   const initialSize = 100;
   const sizeIncrease = 100;
   const { container } = render(
-    <ContentShiftBlocker initialWidth={initialSize} initialHeight={initialSize}>
+    <ContentAnchor initialWidth={initialSize} initialHeight={initialSize}>
       <Content />
-    </ContentShiftBlocker>,
+    </ContentAnchor>,
   );
 
   act(() => {
@@ -149,9 +149,9 @@ it('should resize when not in view', () => {
   const sizeIncrease = 100;
 
   const { container } = render(
-    <ContentShiftBlocker initialWidth={initialSize} initialHeight={initialSize}>
+    <ContentAnchor initialWidth={initialSize} initialHeight={initialSize}>
       <Content />
-    </ContentShiftBlocker>,
+    </ContentAnchor>,
   );
 
   act(() => {
@@ -208,9 +208,9 @@ it('should not adjust scroll position when content is below viewport', () => {
   });
 
   render(
-    <ContentShiftBlocker initialWidth={initialSize} initialHeight={initialSize}>
+    <ContentAnchor initialWidth={initialSize} initialHeight={initialSize}>
       <Content />
-    </ContentShiftBlocker>,
+    </ContentAnchor>,
   );
 
   act(() => {
@@ -264,9 +264,9 @@ it('should adjust Y scroll position when above viewport and child content become
   });
 
   document.body.scrollHeight = render(
-    <ContentShiftBlocker initialWidth={100} initialHeight={100}>
+    <ContentAnchor initialWidth={100} initialHeight={100}>
       <Content />
-    </ContentShiftBlocker>,
+    </ContentAnchor>,
   );
 
   act(() => {
@@ -322,9 +322,9 @@ it('should adjust Y scroll position when above viewport and child content become
   });
 
   render(
-    <ContentShiftBlocker initialWidth={100} initialHeight={100}>
+    <ContentAnchor initialWidth={100} initialHeight={100}>
       <Content />
-    </ContentShiftBlocker>,
+    </ContentAnchor>,
   );
 
   act(() => {
@@ -366,9 +366,9 @@ it('should not adjust scroll position (with js) if CSS scroll anchoring is suppo
   global.pageYOffset = initialScrollYPosition;
 
   render(
-    <ContentShiftBlocker>
+    <ContentAnchor>
       <Content />
-    </ContentShiftBlocker>,
+    </ContentAnchor>,
   );
 
   act(() => {

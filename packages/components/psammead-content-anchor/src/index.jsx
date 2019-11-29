@@ -92,7 +92,7 @@ const isScrollAnchoringSupported = () => {
   return false;
 };
 
-const ContentShiftBlocker = ({ children, initialHeight, initialWidth }) => {
+const ContentAnchor = ({ children, initialHeight, initialWidth }) => {
   const wrapperEl = useRef(null);
   const scrollHeight = useRef(null);
   const scrollAnchoringIsSupported = useRef(null);
@@ -173,15 +173,15 @@ const ContentShiftBlocker = ({ children, initialHeight, initialWidth }) => {
   );
 };
 
-ContentShiftBlocker.propTypes = {
+ContentAnchor.propTypes = {
   children: node.isRequired,
   initialHeight: oneOfType([number, string]),
   initialWidth: oneOfType([number, string]),
 };
 
-ContentShiftBlocker.defaultProps = {
+ContentAnchor.defaultProps = {
   initialHeight: 'auto',
   initialWidth: 'auto',
 };
 
-export default ContentShiftBlocker;
+export default ContentAnchor;

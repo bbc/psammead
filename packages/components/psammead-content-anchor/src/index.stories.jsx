@@ -8,7 +8,7 @@ import Paragraph from '@bbc/psammead-paragraph';
 import { Headline } from '@bbc/psammead-headings';
 import { withServicesKnob } from '@bbc/psammead-storybook-helpers';
 import notes from '../README.md';
-import ContentShiftBlocker from './index';
+import ContentAnchor from './index';
 
 const Wrapper = styled.div`
   width: 400px;
@@ -64,9 +64,9 @@ const StyledCaption = styled.figcaption`
 `;
 const Gallery = ({ script, service, delay = 6000 }) => (
   <StyledFigure>
-    <ContentShiftBlocker scrollable initialHeight={200} initialWidth={400}>
+    <ContentAnchor scrollable initialHeight={200} initialWidth={400}>
       <ImageTicker delay={delay} />
-    </ContentShiftBlocker>
+    </ContentAnchor>
     <StyledCaption>
       <Paragraph script={script} service={service}>
         Eliud Kipchoge
@@ -82,7 +82,7 @@ const renderParagraphs = ({ text, script, service }) =>
     </Paragraph>,
   );
 
-storiesOf('Components|ContentShiftBlocker', module)
+storiesOf('Components|ContentAnchor', module)
   .addDecorator(withKnobs)
   .addDecorator(withServicesKnob({ defaultService: 'swahili' }))
   .add(
