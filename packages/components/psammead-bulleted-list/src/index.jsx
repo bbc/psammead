@@ -13,7 +13,7 @@ const BulletedList = styled.ul`
     content: '\u00A0';
     display: inline-block;
     width: ${GEL_SPACING_QUAD};
-    background: url("data:image/svg+xml,%3Csvg height='10' width='10' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='5' cy='5' r='3'%3E%3C/circle%3E%3C/svg%3E")
+    background: url("data:image/svg+xml,%3Csvg height='10' width='10' xmlns='http://www.w3.org/2000/svg'%3E%3Cstyle%3E @media screen and (-ms-high-contrast: active){svg{fill: #fff}}%3C/style%3E%3Ccircle cx='5' cy='5' r='3'%3E%3C/circle%3E%3C/svg%3E")
       no-repeat center;
     ${({ dir }) =>
       dir === 'rtl'
