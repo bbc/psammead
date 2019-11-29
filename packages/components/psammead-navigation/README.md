@@ -188,7 +188,7 @@ import { AmpMenuButton } from '@bbc/psammead-navigation/dropdown';
 
 ### When to use this component
 
-The `Navigation` is designed to show a navigation bar on `index` pages, which will show all sections on a site. If there are too many items to fit on one line, the items will wrap to the next lines.
+The `Navigation` is designed to show a navigation bar on all pages, which will show all sections on a site. If there are too many items to fit on one line, the items will wrap to the next lines.
 
 On the other hand, with `CanonicalScrollableNavigation` or `AmpScrollableNavigation` we can make the list to remain on one line and to be horizontally scrollable to allow access to further links, under 600px.
 
