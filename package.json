@@ -47,7 +47,7 @@
     "@babel/plugin-transform-modules-commonjs": "^7.7.4",
     "@babel/plugin-transform-runtime": "^7.7.4",
     "@babel/preset-env": "^7.7.4",
-    "@babel/preset-react": "^7.7.0",
+    "@babel/preset-react": "^7.7.4",
     "@bbc/gel-foundations": "^3.4.1",
     "@bbc/psammead-assets": "^2.10.3",
     "@bbc/psammead-brand": "^5.0.11",
