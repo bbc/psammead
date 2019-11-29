@@ -2,7 +2,7 @@ import React from 'react';
 import styled, { css } from 'styled-components';
 import { node, oneOf } from 'prop-types';
 import { GEL_GROUP_2_SCREEN_WIDTH_MAX } from '@bbc/gel-foundations/breakpoints';
-import useMediaQuery from '../../hooks/useMediaQuery';
+import useMediaQuery from '../hooks/useMediaQuery';
 
 /* Convert C_POSTBOX to rgba as IE doesn't like 8 digit hex */
 const C_POSTBOX_TRANSPARENT = `rgba(184, 0, 0, 0)`;
