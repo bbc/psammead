@@ -198,6 +198,7 @@ const Bulletin = ({
   liveText,
   dir,
   lang,
+  offScreenText,
 }) => {
   const isAudio = type === 'audio';
   const BulletinWrapper = isAudio ? RadioBulletinWrapper : TVBulletinWrapper;
@@ -214,7 +215,7 @@ const Bulletin = ({
             {/* eslint-disable jsx-a11y/aria-role */}
             <span role="text">
               <VisuallyHiddenText lang={lang}>
-                {isLive ? `${ctaText} ${liveText},` : `${ctaText},`}
+                {`${offScreenText},`}
               </VisuallyHiddenText>
               {isLive && (
                 <LiveLabel service={service} dir={dir}>
@@ -256,6 +257,7 @@ Bulletin.propTypes = {
   liveText: string,
   dir: oneOf(['ltr', 'rtl']),
   lang: string,
+  offScreenText: string.isRequired,
 };
 
 Bulletin.defaultProps = {
