@@ -59,52 +59,44 @@ storiesOf('Components|InlineLink', module)
   .add(
     'inline-link inside a regular paragraph',
     ({ text, longText, script, service }) => (
-      <>
-        <RegularParagraph script={script} service={service}>
-          {longText}{' '}
-          <InlineLink href="https://www.bbc.com/news">{text}</InlineLink>{' '}
-          {longText}
-        </RegularParagraph>
-      </>
+      <RegularParagraph script={script} service={service}>
+        {longText}{' '}
+        <InlineLink href="https://www.bbc.com/news">{text}</InlineLink>{' '}
+        {longText}
+      </RegularParagraph>
     ),
     { notes, knobs: { escapeHTML: false } },
   )
   .add(
     'inline-link inside a bold paragraph',
     ({ text, longText, script, service }) => (
-      <>
-        <BoldParagraph script={script} service={service}>
-          {longText}{' '}
-          <InlineLink href="https://www.bbc.com/news">{text}</InlineLink>{' '}
-          {longText}
-        </BoldParagraph>
-      </>
+      <BoldParagraph script={script} service={service}>
+        {longText}{' '}
+        <InlineLink href="https://www.bbc.com/news">{text}</InlineLink>{' '}
+        {longText}
+      </BoldParagraph>
     ),
     { notes, knobs: { escapeHTML: false } },
   )
   .add(
     'inline-link inside a italic paragraph',
     ({ text, longText, script, service }) => (
-      <>
-        <ItalicParagraph script={script} service={service}>
-          {longText}{' '}
-          <InlineLink href="https://www.bbc.com/news">{text}</InlineLink>{' '}
-          {longText}
-        </ItalicParagraph>
-      </>
+      <ItalicParagraph script={script} service={service}>
+        {longText}{' '}
+        <InlineLink href="https://www.bbc.com/news">{text}</InlineLink>{' '}
+        {longText}
+      </ItalicParagraph>
     ),
     { notes, knobs: { escapeHTML: false } },
   )
   .add(
     'inline-link inside a bold and italic paragraph',
     ({ text, longText, script, service }) => (
-      <>
-        <BoldItalicParagraph script={script} service={service}>
-          {longText}{' '}
-          <InlineLink href="https://www.bbc.com/news">{text}</InlineLink>{' '}
-          {longText}
-        </BoldItalicParagraph>
-      </>
+      <BoldItalicParagraph script={script} service={service}>
+        {longText}{' '}
+        <InlineLink href="https://www.bbc.com/news">{text}</InlineLink>{' '}
+        {longText}
+      </BoldItalicParagraph>
     ),
     { notes, knobs: { escapeHTML: false } },
   )
