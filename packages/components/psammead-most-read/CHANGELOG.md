@@ -3,7 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
-| 0.2.0-alpha.3 | [PR#2719](https://github.com/bbc/psammead/pull/2719) Add section label with role and aria-labelledby |
+| 0.2.1-alpha.0 | [PR#2719](https://github.com/bbc/psammead/pull/2719) Add section label with role and aria-labelledby |
 | 0.2.0-alpha.2 | [PR#2710](https://github.com/bbc/psammead/pull/2710) Updating snapshots |
 | 0.2.0-alpha.1 | [PR#2702](https://github.com/bbc/psammead/pull/2702) Integrate `MostReadItem` and `MostReadTitle` into `MostRead` |
 | 0.1.0-alpha.6 | [PR#2701](https://github.com/bbc/psammead/pull/2701) Talos - Bump Dependencies - @bbc/psammead-styles |
