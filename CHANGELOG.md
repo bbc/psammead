@@ -3,7 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
-| 2.0.26 | [PR#2711](https://github.com/bbc/psammead/pull/2711) Bump Dev Dependencies |
+| 2.0.26 | [PR#2748](https://github.com/bbc/psammead/pull/2748) Bump Dev Dependencies |
 | 2.0.25 | [PR#2711](https://github.com/bbc/psammead/pull/2711) Bump Dev Dependencies |
 | 2.0.24 | [PR#2718](https://github.com/bbc/psammead/pull/2718) Bump `Yo` dev-dependency to fix vulnerability |
 | 2.0.23 | [PR#2714](https://github.com/bbc/psammead/pull/2714) Talos - Bump Dependencies - @bbc/psammead-storybook-helpers |
