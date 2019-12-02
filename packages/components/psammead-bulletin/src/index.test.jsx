@@ -10,6 +10,9 @@ const BulletinComponent = ({ script, service, isLive, type, ctaText }) => {
   const headlineText = 'This is the headline';
   const ctaLink = 'https://bbc.co.uk';
 
+  const playCtaText = isLive ? `${ctaText} Live` : ctaText;
+  const offScreenText = isLive ? `${ctaText} LIVE` : ctaText;
+
   const image = (
     <Image
       src="https://ichef.bbci.co.uk/news/660/cpsprodpb/11897/production/_106613817_999_al_.jpg"
@@ -26,7 +29,8 @@ const BulletinComponent = ({ script, service, isLive, type, ctaText }) => {
       headlineText={headlineText}
       summaryText={summaryText}
       ctaLink={ctaLink}
-      ctaText={ctaText}
+      ctaText={playCtaText}
+      offScreenText={offScreenText}
     />
   );
 };

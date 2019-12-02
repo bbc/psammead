@@ -14,11 +14,11 @@ Psammead Grid is a component that you can use to set out column-based layouts us
 <!-- prettier-ignore -->
 | Argument | Type | Required | Default | Example |
 | -------- | ---- | -------- | ------- | ------- |
-| columns | object | yes | N/A | { group0: 6, group1: 6, group2: 6, group3: 6, group4: 8, group5: 20 } |
-| startOffset | object | no | Sets all values as 1 for each of the groups defined in `columns` | { group0: 1, group1: 1, group2: 1, group3: 1, group4: 2, group5: 5 } |
+| columns | object | yes | N/A | `{ group0: 6, group1: 6, group2: 6, group3: 6, group4: 8, group5: 20 }` |
+| startOffset | object | no | Sets all values as 1 for each of the groups defined in `columns` | `{ group0: 1, group1: 1, group2: 1, group3: 1, group4: 2, group5: 5 }` |
 | item | boolean | no | false | `item` |
 | enableGelGutters | boolean | no | false | `enableGelGutter` |
-| enableGelMargins | boolean | no | false | `enableGelMargins` |
+| margins | object | no | false | `{ group0: true, group1: true, group2: true, group3: true }` |
 
 - When should I use the `columns` prop?
   - This should always be defined.
@@ -153,7 +153,8 @@ Image of this example when viewed at within `group4` (from 1008px to 1279px). Wh
 
 #### <a name="gutters-margins">Setting standard GEL gutters and GEL Margins</a>
 
-Using `enableGelGutters` and `enableGelMargins` on the `Grid` element. Note: these should _not_ be added to a `<Grid item>` element!
+Using `enableGelGutters` on the `Grid` element. Note: this should _not_ be added to a `<Grid item>` element!
+Usage of `margins` can be on either `<Grid>` or `<Grid item>`.
 
 ```jsx
 import Grid from "@bbc/psammead-grid";
@@ -161,7 +162,6 @@ import Grid from "@bbc/psammead-grid";
 const MyComponent = () => (
   <Grid
     enableGelGutters
-    enableGelMargins
     columns={{
       group0: 2,
       group1: 4,
@@ -169,6 +169,14 @@ const MyComponent = () => (
       group3: 6,
       group4: 8,
       group5: 12
+    }}
+    margins={{
+      group0: true,
+      group1: true,
+      group2: true,
+      group3: true,
+      group4: true,
+      group5: true,
     }}
   >
     <Grid
@@ -214,6 +222,8 @@ Screenshot of this example without GEL Gutters and GEL Margins
 #### <a name="nested-grid">Nested grid example</a>
 
 Note that here, any time you use `<Grid>` that generates a new grid. The total number of columns at each breakpoint is set via the `columns` prop. Then to define how many columns the child `<Grid item >` should span, you can use the `columns` prop on the `<Grid item>`.
+
+Here we have no margins on the Grid item around the Image, but there is on the Paragraph items.
 
 ```jsx
 import Grid from "@bbc/psammead-grid";
