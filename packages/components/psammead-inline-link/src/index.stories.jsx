@@ -15,24 +15,24 @@ import notes from '../README.md';
 import InlineLink from './index';
 
 const RegularParagraph = styled.p`
-  ${({ script }) => script && getBodyCopy(script)};
+  ${({ script }) => getBodyCopy(script)};
   ${({ service }) => getSansRegular(service)}
 `;
 const BoldParagraph = styled.p`
-  ${({ script }) => script && getBodyCopy(script)};
+  ${({ script }) => getBodyCopy(script)};
   ${({ service }) => getSansBold(service)}
 `;
 const ItalicParagraph = styled.p`
-  ${({ script }) => script && getBodyCopy(script)};
+  ${({ script }) => getBodyCopy(script)};
   ${({ service }) => getSansRegularItalic(service)}
 `;
 const BoldItalicParagraph = styled.p`
-  ${({ script }) => script && getBodyCopy(script)};
+  ${({ script }) => getBodyCopy(script)};
   ${({ service }) => getSansBoldItalic(service)}
 `;
 
 const Caption = styled.figcaption`
-  ${({ script }) => script && getLongPrimer(script)};
+  ${({ script }) => getLongPrimer(script)};
   ${({ service }) => getSansRegularItalic(service)}
 `;
 
@@ -47,7 +47,8 @@ const renderWrappedInlineLink = ({ longText, text, style }) => (
     {longText}&nbsp;
     <InlineLink style={style} href="https://www.bbc.com/news">
       {text}
-    </InlineLink>&nbsp;
+    </InlineLink>
+    &nbsp;
     {longText}
   </>
 );
