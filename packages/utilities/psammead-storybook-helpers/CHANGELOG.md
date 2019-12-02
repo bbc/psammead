@@ -3,7 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
-| 8.1.5 | [PR#2704](https://github.com/bbc/psammead/pull/2704) Add exported styled paragraph to be wrapped with un-styled components, i.e inline link. |
+| 9.0.0 | [PR#2704](https://github.com/bbc/psammead/pull/2704) Add exported styled paragraph to be wrapped with un-styled components, i.e inline-link. |
 | 8.1.4 | [PR#2704](https://github.com/bbc/psammead/pull/2704) Add longText to TEXT_EXAMPLES and add value to storyProp |
 | 8.1.3 | [PR#2704](https://github.com/bbc/psammead/pull/2704) Add default value to variant |
 | 8.1.2 | [PR#2695](https://github.com/bbc/psammead/pull/2695) Correct the variant value in the serbian TEXT_EXAMPLE  |
