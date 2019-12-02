@@ -36,6 +36,33 @@ const Caption = styled.figcaption`
   ${({ service }) => getSansRegularItalic(service)}
 `;
 
+const textDecorationStyle = {
+  borderBottom: 'none',
+  textDecoration: `underline ${C_POSTBOX}`,
+};
+
+/* eslint-disable react/prop-types */
+const renderRegularParagraph = ({ script, service, longText, text, style }) => (
+  <RegularParagraph script={script} service={service}>
+    {longText}{' '}
+    <InlineLink style={style} href="https://www.bbc.com/news">
+      {text}
+    </InlineLink>{' '}
+    {longText}
+  </RegularParagraph>
+);
+
+/* eslint-disable react/prop-types */
+const renderCaption = ({ script, service, longText, text, style }) => (
+  <Caption script={script} service={service}>
+    {longText}{' '}
+    <InlineLink style={style} href="https://www.bbc.com/news">
+      {text}
+    </InlineLink>{' '}
+    {longText}
+  </Caption>
+);
+
 storiesOf('Components|InlineLink', module)
   .addDecorator(withKnobs)
   .addDecorator(withServicesKnob())
@@ -58,18 +85,13 @@ storiesOf('Components|InlineLink', module)
   )
   .add(
     'inline-link inside a regular paragraph',
-    ({ text, longText, script, service }) => (
-      <RegularParagraph script={script} service={service}>
-        {longText}{' '}
-        <InlineLink href="https://www.bbc.com/news">{text}</InlineLink>{' '}
-        {longText}
-      </RegularParagraph>
-    ),
+    ({ longText, script, service, text }) =>
+      renderRegularParagraph({ longText, script, service, text }),
     { notes, knobs: { escapeHTML: false } },
   )
   .add(
     'inline-link inside a bold paragraph',
-    ({ text, longText, script, service }) => (
+    ({ longText, script, service, text }) => (
       <BoldParagraph script={script} service={service}>
         {longText}{' '}
         <InlineLink href="https://www.bbc.com/news">{text}</InlineLink>{' '}
@@ -80,7 +102,7 @@ storiesOf('Components|InlineLink', module)
   )
   .add(
     'inline-link inside a italic paragraph',
-    ({ text, longText, script, service }) => (
+    ({ longText, script, service, text }) => (
       <ItalicParagraph script={script} service={service}>
         {longText}{' '}
         <InlineLink href="https://www.bbc.com/news">{text}</InlineLink>{' '}
@@ -91,7 +113,7 @@ storiesOf('Components|InlineLink', module)
   )
   .add(
     'inline-link inside a bold and italic paragraph',
-    ({ text, longText, script, service }) => (
+    ({ longText, script, service, text }) => (
       <BoldItalicParagraph script={script} service={service}>
         {longText}{' '}
         <InlineLink href="https://www.bbc.com/news">{text}</InlineLink>{' '}
@@ -102,34 +124,22 @@ storiesOf('Components|InlineLink', module)
   )
   .add(
     'experimental styled inline link with text-decoration style',
-    ({ text, longText, script, service }) => (
+    ({ longText, script, service, text }) => (
       <>
-        <RegularParagraph script={script} service={service}>
-          {longText}{' '}
-          <InlineLink
-            style={{
-              borderBottom: 'none',
-              textDecoration: `underline ${C_POSTBOX}`,
-            }}
-            href="https://www.bbc.com/news"
-          >
-            {text}
-          </InlineLink>{' '}
-          {longText}
-        </RegularParagraph>
-        <Caption script={script} service={service}>
-          {longText}{' '}
-          <InlineLink
-            style={{
-              borderBottom: 'none',
-              textDecoration: `underline ${C_POSTBOX}`,
-            }}
-            href="https://www.bbc.com/news"
-          >
-            {text}
-          </InlineLink>{' '}
-          {longText}
-        </Caption>
+        {renderRegularParagraph({
+          longText,
+          script,
+          service,
+          text,
+          style: textDecorationStyle,
+        })}
+        {renderCaption({
+          longText,
+          script,
+          service,
+          text,
+          style: textDecorationStyle,
+        })}
         <br />
         <br />
         Please note this an experimental example of inline link styled with
