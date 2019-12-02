@@ -47,7 +47,7 @@ const renderWrappedInlineLink = ({ longText, text, style }) => (
     {longText}&nbsp;
     <InlineLink style={style} href="https://www.bbc.com/news">
       {text}
-    </InlineLink>{' '}
+    </InlineLink>&nbsp;
     {longText}
   </>
 );
