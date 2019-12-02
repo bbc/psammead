@@ -42,25 +42,14 @@ const textDecorationStyle = {
 };
 
 /* eslint-disable react/prop-types */
-const renderRegularParagraph = ({ script, service, longText, text, style }) => (
-  <RegularParagraph script={script} service={service}>
+const renderWrappedInlineLink = ({ longText, text, style }) => (
+  <>
     {longText}{' '}
     <InlineLink style={style} href="https://www.bbc.com/news">
       {text}
     </InlineLink>{' '}
     {longText}
-  </RegularParagraph>
-);
-
-/* eslint-disable react/prop-types */
-const renderCaption = ({ script, service, longText, text, style }) => (
-  <Caption script={script} service={service}>
-    {longText}{' '}
-    <InlineLink style={style} href="https://www.bbc.com/news">
-      {text}
-    </InlineLink>{' '}
-    {longText}
-  </Caption>
+  </>
 );
 
 storiesOf('Components|InlineLink', module)
@@ -85,17 +74,18 @@ storiesOf('Components|InlineLink', module)
   )
   .add(
     'inline-link inside a regular paragraph',
-    ({ longText, script, service, text }) =>
-      renderRegularParagraph({ longText, script, service, text }),
+    ({ longText, script, service, text }) => (
+      <RegularParagraph script={script} service={service}>
+        {renderWrappedInlineLink({ longText, text })}
+      </RegularParagraph>
+    ),
     { notes, knobs: { escapeHTML: false } },
   )
   .add(
     'inline-link inside a bold paragraph',
     ({ longText, script, service, text }) => (
       <BoldParagraph script={script} service={service}>
-        {longText}{' '}
-        <InlineLink href="https://www.bbc.com/news">{text}</InlineLink>{' '}
-        {longText}
+        {renderWrappedInlineLink({ longText, text })}
       </BoldParagraph>
     ),
     { notes, knobs: { escapeHTML: false } },
@@ -104,9 +94,7 @@ storiesOf('Components|InlineLink', module)
     'inline-link inside a italic paragraph',
     ({ longText, script, service, text }) => (
       <ItalicParagraph script={script} service={service}>
-        {longText}{' '}
-        <InlineLink href="https://www.bbc.com/news">{text}</InlineLink>{' '}
-        {longText}
+        {renderWrappedInlineLink({ longText, text })}
       </ItalicParagraph>
     ),
     { notes, knobs: { escapeHTML: false } },
@@ -115,9 +103,7 @@ storiesOf('Components|InlineLink', module)
     'inline-link inside a bold and italic paragraph',
     ({ longText, script, service, text }) => (
       <BoldItalicParagraph script={script} service={service}>
-        {longText}{' '}
-        <InlineLink href="https://www.bbc.com/news">{text}</InlineLink>{' '}
-        {longText}
+        {renderWrappedInlineLink({ longText, text })}
       </BoldItalicParagraph>
     ),
     { notes, knobs: { escapeHTML: false } },
@@ -126,20 +112,20 @@ storiesOf('Components|InlineLink', module)
     'experimental styled inline link with text-decoration style',
     ({ longText, script, service, text }) => (
       <>
-        {renderRegularParagraph({
-          longText,
-          script,
-          service,
-          text,
-          style: textDecorationStyle,
-        })}
-        {renderCaption({
-          longText,
-          script,
-          service,
-          text,
-          style: textDecorationStyle,
-        })}
+        <RegularParagraph script={script} service={service}>
+          {renderWrappedInlineLink({
+            longText,
+            text,
+            style: textDecorationStyle,
+          })}
+        </RegularParagraph>
+        <Caption script={script} service={service}>
+          {renderWrappedInlineLink({
+            longText,
+            text,
+            style: textDecorationStyle,
+          })}
+        </Caption>
         <br />
         <br />
         Please note this an experimental example of inline link styled with
