@@ -640,7 +640,7 @@ exports[`Bulletin should render live audio correctly 1`] = `
           />
         </svg>
       </span>
-      Listen
+      Listen Live
     </div>
   </div>
 </div>
@@ -972,7 +972,7 @@ exports[`Bulletin should render live video correctly 1`] = `
           />
         </svg>
       </span>
-      Watch
+      Watch Live
     </div>
   </div>
 </div>

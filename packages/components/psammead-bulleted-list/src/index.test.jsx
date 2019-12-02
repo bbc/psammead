@@ -1,4 +1,5 @@
 import React from 'react';
+import { render } from '@testing-library/react';
 import { shouldMatchSnapshot } from '@bbc/psammead-test-helpers';
 import { arabic, latin } from '@bbc/gel-foundations/scripts';
 import BulletedList from './index';
@@ -16,6 +17,17 @@ const rtlProps = {
 };
 
 describe('PsammeadBulletedList', () => {
+  it('should confirm that the list-style is none, so that screen-readers do not read out "bullet"', () => {
+    const { getByText } = render(
+      <BulletedList {...ltrProps}>
+        <li>First item on the list</li>
+      </BulletedList>,
+    );
+    const listEl = getByText('First item on the list').parentNode;
+    const style = window.getComputedStyle(listEl);
+    expect(style.listStyleType).toBe('none');
+  });
+
   shouldMatchSnapshot(
     'should render correctly from ltr',
     <BulletedList {...ltrProps}>
