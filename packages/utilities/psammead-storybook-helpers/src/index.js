@@ -6,7 +6,7 @@ import {
   BoldParagraph,
   ItalicParagraph,
   BoldItalicParagraph,
-} from './styledParagraph';
+} from './styledParagraphs';
 
 export {
   TEXT_EXAMPLES,
