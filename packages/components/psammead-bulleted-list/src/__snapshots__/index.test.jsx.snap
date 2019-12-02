@@ -34,14 +34,24 @@ exports[`PsammeadBulletedList should render correctly from ltr 1`] = `
 <ul
   class="c0"
   dir="ltr"
+  role="list"
 >
-  <li>
+  <li
+    class=""
+    role="listitem"
+  >
     First item on the list
   </li>
-  <li>
+  <li
+    class=""
+    role="listitem"
+  >
     Second item on the list
   </li>
-  <li>
+  <li
+    class=""
+    role="listitem"
+  >
     Final list item
   </li>
 </ul>
@@ -51,14 +61,24 @@ exports[`PsammeadBulletedList should render correctly from rtl 1`] = `
 <ul
   class=""
   dir="rtl"
+  role="list"
 >
-  <li>
+  <li
+    class=""
+    role="listitem"
+  >
     العنصر الأول في القائمة
   </li>
-  <li>
+  <li
+    class=""
+    role="listitem"
+  >
     البند الثاني في القائمة
   </li>
-  <li>
+  <li
+    class=""
+    role="listitem"
+  >
     عنصر القائمة النهائية
   </li>
 </ul>
