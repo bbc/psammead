@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 6.0.0-alpha.4 | [PR#](https://github.com/bbc/psammead/pull/) Fix MenuButton not acting as a block element |
 | 6.0.0-alpha.3 | [PR#2745](https://github.com/bbc/psammead/pull/2745) Add dir prop to Amp and Canonical MenuButton |
 | 6.0.0-alpha.2 | [PR#2725](https://github.com/bbc/psammead/pull/2725) Move hooks directory into src |
 | 6.0.0-alpha.1 | [PR#2613](https://github.com/bbc/psammead/pull/2613) Add dropdown menu with a hamburger button |
