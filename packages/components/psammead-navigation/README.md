@@ -103,7 +103,7 @@ The `@bbc/psammead-navigation` package is a set of two components, `NavigationUl
 | -------- | ---- | -------- | ------- | ------- |
 | announcedText | string | Yes | N/A | `'Menu'` |
 | onToggle | string | Yes | N/A | `"tap:menu.toggleVisibility"` |
-| dir | string | no | `'ltr'` | `'ltr'` |
+| dir | string | no | `'ltr'` | `'rtl'` |
 
 ## Navigation Usage
 
