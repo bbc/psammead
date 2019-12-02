@@ -44,7 +44,7 @@ const textDecorationStyle = {
 /* eslint-disable react/prop-types */
 const renderWrappedInlineLink = ({ longText, text, style }) => (
   <>
-    {longText}{' '}
+    {longText}&nbsp;
     <InlineLink style={style} href="https://www.bbc.com/news">
       {text}
     </InlineLink>{' '}
