@@ -91,7 +91,6 @@ storiesOf('Components|InlineLink', module)
           <InlineLink href="https://www.bbc.com/news">{text}</InlineLink>{' '}
           {longText}
         </ItalicParagraph>
-        <br />
       </>
     ),
     { notes, knobs: { escapeHTML: false } },
