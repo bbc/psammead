@@ -135,6 +135,7 @@ const IconWrapper = styled.span`
 
 const PlayCTA = styled.div.attrs({ 'aria-hidden': true })`
   background-color: ${({ isLive }) => (isLive ? C_POSTBOX : C_EBON)};
+  border: 0.0625rem solid transparent;
   ${({ service }) => service && getSansRegular(service)};
   ${({ script }) => script && getPica(script)};
   color: ${C_WHITE};
