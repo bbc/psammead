@@ -94,7 +94,7 @@ The `@bbc/psammead-navigation` package is a set of two components, `NavigationUl
 | onOpen | function | Yes | N/A | `() => { console.log("Handle open action"); }` |
 | onClose | function | Yes | N/A | `() => { console.log("Handle close action"); }` |
 | isOpen | bool | Yes | N/A | `false` |
-| dir | string | no | `'ltr'` | `'ltr'` |
+| dir | string | no | `'ltr'` | `'rtl'` |
 
 ### AmpMenuButton
 
