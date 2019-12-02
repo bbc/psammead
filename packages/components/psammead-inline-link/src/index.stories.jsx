@@ -37,7 +37,7 @@ const Caption = styled.figcaption`
 `;
 
 storiesOf('Components|InlineLink', module)
-  .addDecorator(withKnobs())
+  .addDecorator(withKnobs)
   .addDecorator(withServicesKnob())
   .add(
     'default',
@@ -65,7 +65,6 @@ storiesOf('Components|InlineLink', module)
           <InlineLink href="https://www.bbc.com/news">{text}</InlineLink>{' '}
           {longText}
         </RegularParagraph>
-        <br />
       </>
     ),
     { notes, knobs: { escapeHTML: false } },
@@ -79,7 +78,6 @@ storiesOf('Components|InlineLink', module)
           <InlineLink href="https://www.bbc.com/news">{text}</InlineLink>{' '}
           {longText}
         </BoldParagraph>
-        <br />
       </>
     ),
     { notes, knobs: { escapeHTML: false } },
@@ -107,7 +105,6 @@ storiesOf('Components|InlineLink', module)
           <InlineLink href="https://www.bbc.com/news">{text}</InlineLink>{' '}
           {longText}
         </BoldItalicParagraph>
-        <br />
       </>
     ),
     { notes, knobs: { escapeHTML: false } },
