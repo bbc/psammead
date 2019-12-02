@@ -17,14 +17,14 @@ const rtlProps = {
 };
 
 describe('PsammeadBulletedList', () => {
-  it('should confirm that the list-style is none', () => {
-    render(
+  it('should confirm that the list-style is none, so that screen-readers do not read out "bullet"', () => {
+    const { getByText } = render(
       <BulletedList {...ltrProps}>
         <li>First item on the list</li>
       </BulletedList>,
     );
-    const listItem = document.querySelector('ul');
-    const style = window.getComputedStyle(listItem);
+    const listEl = getByText('First item on the list').parentNode;
+    const style = window.getComputedStyle(listEl);
     expect(style.listStyleType).toBe('none');
   });
 
