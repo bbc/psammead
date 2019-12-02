@@ -27,12 +27,7 @@ const MostReadTitle = ({
   labelId = MOST_READ_LABEL,
 }) => (
   <StyledSection labelId={labelId}>
-    <StyledHeading
-      dir={dir}
-      id={MOST_READ_LABEL}
-      script={script}
-      service={service}
-    >
+    <StyledHeading dir={dir} id={labelId} script={script} service={service}>
       {header}
     </StyledHeading>
   </StyledSection>
