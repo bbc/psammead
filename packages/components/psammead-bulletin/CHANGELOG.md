@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 1.0.0 | [PR#???](https://github.com/bbc/psammead/pull/???) Add `padding-right` to summary above 600px and remove alpha tag |
 | 0.1.0-alpha.11 | [PR#2744](https://github.com/bbc/psammead/pull/2744) Add a transparent border around PlayCTA |
 | 0.1.0-alpha.10 | [PR#2723](https://github.com/bbc/psammead/pull/2723) Add `offScreenText` prop |
 | 0.1.0-alpha.9 | [PR#2634](https://github.com/bbc/psammead/pull/2634) Add styling for desktop and tablet |
