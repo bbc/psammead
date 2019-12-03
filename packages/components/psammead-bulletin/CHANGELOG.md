@@ -3,7 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
-| 1.0.0 | [PR#XXX](https://github.com/BBC/psammead/pull/XXX) Remove alpha tag |
+| 1.0.0 | [PR#2756](https://github.com/BBC/psammead/pull/2756) Remove alpha tag |
 | 0.1.0-alpha.12 | [PR#2755](https://github.com/bbc/psammead/pull/2755) Add `padding-right` to summary above 600px |
 | 0.1.0-alpha.11 | [PR#2744](https://github.com/bbc/psammead/pull/2744) Add a transparent border around PlayCTA |
 | 0.1.0-alpha.10 | [PR#2723](https://github.com/bbc/psammead/pull/2723) Add `offScreenText` prop |
