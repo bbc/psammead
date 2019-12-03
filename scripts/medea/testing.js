@@ -11,14 +11,14 @@ const commitChanges = require('../talos/commitChanges/index');
 const getPackagePath = require('../utilities/getPackagePath');
 const bumpChangelogs = require('../bumpChangelogs/index');
 
+getDependabotPRs().then(value => {
+  const dependabotPRData = JSON.stringify(value);
+  fs.writeFileSync('PRs.json', dependabotPRData);
+});
+
 const medea = () => {
   const packages = getPackageNames();
   const branchName = getBranchName();
-
-  getDependabotPRs().then(value => {
-    const dependabotPRData = JSON.stringify(value);
-    fs.writeFileSync('PRs.json', dependabotPRData);
-  });
 
   if (packages.length <= 0) {
     // eslint-disable-next-line no-console
@@ -76,5 +76,7 @@ const medea = () => {
       process.exit(1);
     });
 };
+
+console.log(medea());
 
 module.exports = medea;
