@@ -135,6 +135,7 @@ const IconWrapper = styled.span`
 
 const PlayCTA = styled.div.attrs({ 'aria-hidden': true })`
   background-color: ${({ isLive }) => (isLive ? C_POSTBOX : C_EBON)};
+  border: 0.0625rem solid transparent;
   ${({ service }) => service && getSansRegular(service)};
   ${({ script }) => script && getPica(script)};
   color: ${C_WHITE};
@@ -198,6 +199,7 @@ const Bulletin = ({
   liveText,
   dir,
   lang,
+  offScreenText,
 }) => {
   const isAudio = type === 'audio';
   const BulletinWrapper = isAudio ? RadioBulletinWrapper : TVBulletinWrapper;
@@ -214,7 +216,7 @@ const Bulletin = ({
             {/* eslint-disable jsx-a11y/aria-role */}
             <span role="text">
               <VisuallyHiddenText lang={lang}>
-                {isLive ? `${ctaText} ${liveText},` : `${ctaText},`}
+                {`${offScreenText},`}
               </VisuallyHiddenText>
               {isLive && (
                 <LiveLabel service={service} dir={dir}>
@@ -256,6 +258,7 @@ Bulletin.propTypes = {
   liveText: string,
   dir: oneOf(['ltr', 'rtl']),
   lang: string,
+  offScreenText: string.isRequired,
 };
 
 Bulletin.defaultProps = {

@@ -3,6 +3,8 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 0.1.0-alpha.11 | [PR#2744](https://github.com/bbc/psammead/pull/2744) Add a transparent border around PlayCTA |
+| 0.1.0-alpha.10 | [PR#2723](https://github.com/bbc/psammead/pull/2723) Add `offScreenText` prop |
 | 0.1.0-alpha.9 | [PR#2634](https://github.com/bbc/psammead/pull/2634) Add styling for desktop and tablet |
 | 0.1.0-alpha.8 | [PR#2705](https://github.com/bbc/psammead/pull/2705) Talos - Bump Dependencies - @bbc/psammead-assets |
 | 0.1.0-alpha.7 | [PR#2701](https://github.com/bbc/psammead/pull/2701) Talos - Bump Dependencies - @bbc/psammead-styles, @bbc/psammead-assets |
