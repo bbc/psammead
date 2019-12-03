@@ -35,23 +35,23 @@ const medea = () => {
         process.exit();
       }
 
-      const doNothing = bumpedPackages.map(dep => dep.replace('', ''));
-
       return bumpPackages({
-        packageNames: doNothing,
+        packageNames: bumpedPackages,
         version: 'patch',
       })
         .then(() =>
-          Promise.all(doNothing.map(dep => runNpmInstall(getPackagePath(dep)))),
+          Promise.all(
+            bumpedPackages.map(dep => runNpmInstall(getPackagePath(dep))),
+          ),
         )
-        .then(() => checkoutBranch(branchName))
-        .then(() => commitChanges('Medea - Bump Dependencies'))
+        .then(() => console.log(checkoutBranch(branchName)))
+        .then(() => console.log(commitChanges('Medea - Bump Dependencies')))
         .then(() =>
           createPullRequest({ packages, bumpedPackagesObj, branchName }),
         )
         .then(({ data }) =>
           Promise.all(
-            doNothing.map((packageName, index) => {
+            bumpedPackages.map((packageName, index) => {
               const description = 'Medea - Bump Dependencies';
               const descriptionDetail = bumpedPackagesObj[bumpedPackages[index]]
                 .map(text => text.split(' ')[0])
@@ -76,7 +76,5 @@ const medea = () => {
       process.exit(1);
     });
 };
-
-console.log(medea());
 
 module.exports = medea;
