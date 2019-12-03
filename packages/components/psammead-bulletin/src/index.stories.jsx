@@ -12,8 +12,7 @@ const BulletinComponent = ({ script, service, type, hasImage, dir, text }) => {
 
   const isLive = boolean('Live', false);
   const ctaText = type === 'audio' ? 'Listen' : 'Watch';
-  const playCtaText = isLive ? `${ctaText} Live` : ctaText;
-  const offScreenText = isLive ? `${ctaText} LIVE` : ctaText;
+  const offScreenText = isLive ? `${ctaText} Live` : ctaText;
 
   const image = (
     <Image
@@ -32,7 +31,7 @@ const BulletinComponent = ({ script, service, type, hasImage, dir, text }) => {
       headlineText={text}
       summaryText={text}
       ctaLink={ctaLink}
-      ctaText={playCtaText}
+      ctaText={ctaText}
       dir={dir}
       offScreenText={offScreenText}
     />
