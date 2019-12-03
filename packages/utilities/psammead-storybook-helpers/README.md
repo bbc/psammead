@@ -4,7 +4,7 @@ This package provides a collection of common values that are used in storybook b
 
 ## Exports
 
-`LANGUAGE_VARIANTS` - A list of text samples in different languages, with the script and direction that should be used for that language.
+`TEXT_EXAMPLES` - A list of text samples in different languages, with the script and direction that should be used for that language.
 
 `withServicesKnob` - Is a function that returns a storybook decorator function that adds a `Select a service` dropdown to the knobs panel. When a service is selected from the dropdown it does 2 things:
 
@@ -12,10 +12,11 @@ This package provides a collection of common values that are used in storybook b
 
 - `text`: A short string of text in the language of the chosen service.
 - `longText`: A long string of text in the language of the chosen service (we can use this to stress test components).
-- `dir`: The reading directionality of the chosen service e.g. `ltr` or `rtl`
+- `dir`: The reading directionality of the chosen service e.g. `ltr` or `rtl`.
 - `script`: The chosen service's script typography settings e.g. the font-size and line-heights.
-- `service`: The name of the chosen service e.g. `arabic`
-- `variant`: The variant value of a chosen service, e.g `serbianLat` will have variant `lat`. Non variant service will default to `default`
+- `service`: The name of the chosen service e.g. `arabic`.
+- `variant`: The variant value of a chosen service, e.g `serbianLat` will have variant `lat`. Non variant service will default to `default`.
+- `path`: A path to an article in the relevant service.
 
 2. Toggles the layout directionality of the chosen service.
 
@@ -68,7 +69,8 @@ storiesOf('Components|Paragraph', module)
       <Paragraph script={script} service={service}>
         {text}
       </Paragraph>
-    ),
+    )
+   );
 ```
 
 To set a default service:
@@ -88,7 +90,8 @@ storiesOf('Components|Paragraph', module)
       <Paragraph script={script} service={service}>
         {text}
       </Paragraph>
-    ),
+    )
+  );
 ```
 
 If you want to add this decorator to a single story rather than a series of stories as documented above, perhaps because you need each story to have a different default service, then you need to decorate each story directly instead of using the `addDecorator` method. An example of how you could write this is shown below:
