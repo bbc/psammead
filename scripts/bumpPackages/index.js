@@ -9,12 +9,9 @@ const isAlpha = packageDir =>
       {
         cwd: packageDir,
       },
-      (error, stdout) => {
+      error => {
         if (error) {
           reject(error);
-        } else {
-          const alphaRegex = new RegExp(/@bbc.*-alpha/);
-          resolve(alphaRegex.test(stdout));
         }
       },
     );
