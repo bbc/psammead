@@ -158,7 +158,7 @@ const BulletinSummary = styled.p`
   padding: 0 ${GEL_SPACING};
   @media(min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
     padding-left: 0;
-    padding-right: 0;
+    padding-right: ${GEL_SPACING};
   }
   padding-bottom: ${GEL_SPACING_DBL};
 `;
