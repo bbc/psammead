@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 2.0.27 | [PR#2752](https://github.com/bbc/psammead/pull/2752) Talos - Bump Dependencies - @bbc/psammead-inline-link |
 | 2.0.26 | [PR#2748](https://github.com/bbc/psammead/pull/2748) Bump Dev Dependencies |
 | 2.0.25 | [PR#2711](https://github.com/bbc/psammead/pull/2711) Bump Dev Dependencies |
 | 2.0.24 | [PR#2718](https://github.com/bbc/psammead/pull/2718) Bump `Yo` dev-dependency to fix vulnerability |
