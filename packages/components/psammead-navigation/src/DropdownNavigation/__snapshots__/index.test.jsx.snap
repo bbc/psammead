@@ -239,6 +239,7 @@ exports[`Dropdown navigation should render correctly 1`] = `
 
 .c0 {
   background-color: #222222;
+  clear: both;
 }
 
 .c1 {
