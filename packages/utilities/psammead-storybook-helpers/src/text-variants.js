@@ -56,14 +56,6 @@ const TEXT_EXAMPLES = {
     locale: 'my',
     path: '/burmese/articles/c3w1kwwmm5yo',
   },
-  news: {
-    text: 'Could a computer ever create better art than a human?',
-    longText:
-      'The critic, author, poet and TV host was known for his witty commentary on international television.',
-    script: 'latin',
-    locale: 'en',
-    path: '/news/articles/cn7k01xp8kxo',
-  },
   gahuza: {
     text: "Umukate n'isoda vyatumye amenya ko afise umugera wa SIDA",
     longText:
@@ -160,6 +152,14 @@ const TEXT_EXAMPLES = {
     script: 'nepali',
     locale: 'ne',
     path: '/nepali/articles/cl90j9m3mn6o',
+  },
+  news: {
+    text: 'Could a computer ever create better art than a human?',
+    longText:
+      'The critic, author, poet and TV host was known for his witty commentary on international television.',
+    script: 'latin',
+    locale: 'en',
+    path: '/news/articles/cn7k01xp8kxo',
   },
   pashto: {
     text:
