@@ -119,6 +119,11 @@ const iconBorder = css`
   border: ${GEL_SPACING_HLF} solid ${C_WHITE};
 `;
 
+// The sideLength of the button should be
+//  line height + top padding + bottom padding
+const calculateButtonSide = lineHeight =>
+  lineHeight / 16 + TOP_BOTTOM_SPACING * 2;
+
 const MenuButton = styled.button`
   position: relative;
   padding: 0;
@@ -127,10 +132,9 @@ const MenuButton = styled.button`
   background-color: transparent;
   ${({ dir }) => (dir === 'ltr' ? `float: left;` : `float: right;`)}
   ${({ script }) => {
-    // The sideLength of the button should be
-    //  line height + top padding + bottom padding
-    const sideLength = `${script.pica.groupA.lineHeight / 16 +
-      TOP_BOTTOM_SPACING * 2}rem;`;
+    const sideLength = `${calculateButtonSide(
+      script.pica.groupA.lineHeight,
+    )}rem;`;
     return (
       script &&
       `height: ${sideLength};
@@ -152,10 +156,9 @@ const MenuButton = styled.button`
   }
   @media (min-width: ${GEL_GROUP_B_MIN_WIDTH}rem) {
     ${({ script }) => {
-      // The sideLength of the button should be
-      //  line height + top padding + bottom padding
-      const sideLength = `${script.pica.groupA.lineHeight / 16 +
-        TOP_BOTTOM_SPACING * 2}rem;`;
+      const sideLength = `${calculateButtonSide(
+        script.pica.groupB.lineHeight,
+      )}rem;`;
       return (
         script &&
         `height: ${sideLength};
@@ -165,10 +168,9 @@ const MenuButton = styled.button`
   }
   @media (min-width: ${GEL_GROUP_CD_MIN_WIDTH}rem) {
     ${({ script }) => {
-      // The sideLength of the button should be
-      //  line height + top padding + bottom padding
-      const sideLength = `${script.pica.groupA.lineHeight / 16 +
-        TOP_BOTTOM_SPACING * 2}rem;`;
+      const sideLength = `${calculateButtonSide(
+        script.pica.groupD.lineHeight,
+      )}rem;`;
       return (
         script &&
         `height: ${sideLength};
