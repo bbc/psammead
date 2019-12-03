@@ -21,7 +21,7 @@ const StyledLink = styled.a`
   padding: 0 1rem;
   height: 3rem;
 
-  &::after {
+  &::before {
     content: '';
     position: absolute;
     top: 0;
@@ -31,8 +31,18 @@ const StyledLink = styled.a`
     border: 0.0625rem solid ${C_WHITE};
   }
 
-  &:hover::after,
-  &:focus::after {
+  &::after {
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 2.75rem;
+  }
+
+  &:hover::before,
+  &:focus::before {
     border: 0.25rem solid ${C_WHITE};
   }
 
