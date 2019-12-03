@@ -34,11 +34,13 @@ const StyledLink = styled.a`
   &::after {
     content: '';
     position: absolute;
-    top: -5px;
-    left: 0;
+    top: -0.25rem;
+    left: -0.25rem;
     right: 0;
     bottom: 0;
     height: 2.75rem;
+    width: 2.75rem;
+    margin: 0 0.25rem;
   }
 
   &:hover::before,
