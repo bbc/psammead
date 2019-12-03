@@ -13,7 +13,7 @@ import {
   GEL_GROUP_5_SCREEN_WIDTH_MIN,
 } from '@bbc/gel-foundations/breakpoints';
 import Grid from '../../../psammead-grid';
-import { MostReadRank, MostReadLink } from '../Item';
+import { MostReadRank, MostReadLink, MostReadNumber } from '../Item';
 
 const MostReadItemProps = {
   item: true,
@@ -90,18 +90,28 @@ const StyledGrid = styled(Grid)`
   }
 `;
 
-const renderMostReadRank = (service, script, index) => {
+const renderMostReadRank = (service, script, index, items) => {
   const numerals = serviceNumerals(service);
   const rank = numerals[index + 1];
   return (
-    <MostReadRank service={service} script={script} listindex={index}>
-      {rank}
-    </MostReadRank>
+    <MostReadNumber
+      service={service}
+      script={script}
+      listindex={index}
+      rank={rank}
+      items={items}
+    />
   );
 };
 
-const renderMostReadLink = (link, service, script, dir) => (
-  <MostReadLink service={service} link={link} script={script} dir={dir} />
+const renderMostReadLink = (link, service, script, dir, listindex) => (
+  <MostReadLink
+    service={service}
+    link={link}
+    script={script}
+    dir={dir}
+    listindex={listindex}
+  />
 );
 
 const MostReadList = ({ items, service, script, dir }) => (
@@ -110,8 +120,8 @@ const MostReadList = ({ items, service, script, dir }) => (
       {items.map((link, i) => (
         <Grid {...MostReadItemProps} dir={dir} forwardedAs="li">
           <StyledLi item={i}>
-            {renderMostReadRank(service, script, i)}
-            {renderMostReadLink(link, service, script, dir)}
+            {renderMostReadRank(service, script, i, items)}
+            {renderMostReadLink(link, service, script, dir, i)}
           </StyledLi>
         </Grid>
       ))}
