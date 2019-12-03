@@ -94,7 +94,7 @@ const renderMostReadRank = (service, script, index) => {
   const numerals = serviceNumerals(service);
   const rank = numerals[index + 1];
   return (
-    <MostReadRank service={service} script={script}>
+    <MostReadRank service={service} script={script} listindex={index}>
       {rank}
     </MostReadRank>
   );
@@ -109,7 +109,7 @@ const MostReadList = ({ items, service, script, dir }) => (
     <StyledGrid {...MostReadListProps} dir={dir} items={items}>
       {items.map((link, i) => (
         <Grid {...MostReadItemProps} dir={dir} forwardedAs="li">
-          <StyledLi>
+          <StyledLi item={i}>
             {renderMostReadRank(service, script, i)}
             {renderMostReadLink(link, service, script, dir)}
           </StyledLi>

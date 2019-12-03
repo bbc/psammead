@@ -32,22 +32,22 @@ const StyledLink = styled.a`
 
 const StyledItem = styled.div`
   padding-bottom: ${GEL_SPACING_TRPL};
-  ${paddingStart}: ${GEL_SPACING_DBL};
-
+  ${paddingStart}: 16px;
   @media (min-width: ${GEL_GROUP_5_SCREEN_WIDTH_MIN}) {
     padding-top: ${GEL_SPACING};
-    ${paddingStart}: ${GEL_SPACING_QUAD};
+    ${paddingStart}: 32px;
   }
 `;
 
 export const MostReadRank = styled.span`
   ${({ service }) => getSerifLight(service)}
-  color: ${C_POSTBOX};
   ${({ script }) => script && getFoolscap(script)};
+  color: ${C_POSTBOX};
   margin: 0; /* Reset */
   padding: 0;
   display: inline-block;
-  width: 3rem;
+  width: ${props =>
+    props.listindex >= 5 && props.listindex < 10 ? 'auto' * 2 : 'auto'};
 `;
 
 export const MostReadLink = ({
@@ -68,6 +68,7 @@ export const MostReadLink = ({
 MostReadRank.propTypes = {
   service: string.isRequired,
   script: shape(scriptPropType).isRequired,
+  listindex: string.isRequired,
 };
 
 MostReadLink.propTypes = {

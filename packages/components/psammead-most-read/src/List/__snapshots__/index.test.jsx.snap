@@ -24,20 +24,33 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
 
 .c6 {
   padding-bottom: 1.5rem;
-  padding-left: 1rem;
+  padding-left: 16px;
 }
 
 .c5 {
   font-family: "Shonar Bangla",Helmet,Freesans,Helvetica,Arial,sans-serif;
   font-weight: 400;
   font-style: normal;
-  color: #B80000;
   font-size: 2rem;
   line-height: 2.25rem;
+  color: #B80000;
   margin: 0;
   padding: 0;
   display: inline-block;
-  width: 3rem;
+  width: auto;
+}
+
+.c8 {
+  font-family: "Shonar Bangla",Helmet,Freesans,Helvetica,Arial,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2rem;
+  line-height: 2.25rem;
+  color: #B80000;
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  width: NaN;
 }
 
 .c0 {
@@ -147,7 +160,7 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
 @media (min-width:80rem) {
   .c6 {
     padding-top: 0.5rem;
-    padding-left: 2rem;
+    padding-left: 32px;
   }
 }
 
@@ -160,6 +173,20 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
 
 @media (min-width:37.5rem) {
   .c5 {
+    font-size: 3.5rem;
+    line-height: 3.75rem;
+  }
+}
+
+@media (min-width:20rem) and (max-width:37.4375rem) {
+  .c8 {
+    font-size: 2.5rem;
+    line-height: 2.75rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .c8 {
     font-size: 3.5rem;
     line-height: 3.75rem;
   }
@@ -325,7 +352,7 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
         class="c4"
       >
         <span
-          class="c5"
+          class="c8"
         >
           ৬
         </span>
@@ -351,7 +378,7 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
         class="c4"
       >
         <span
-          class="c5"
+          class="c8"
         >
           ৭
         </span>
@@ -377,7 +404,7 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
         class="c4"
       >
         <span
-          class="c5"
+          class="c8"
         >
           ৮
         </span>
@@ -403,7 +430,7 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
         class="c4"
       >
         <span
-          class="c5"
+          class="c8"
         >
           ৯
         </span>
@@ -429,7 +456,7 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
         class="c4"
       >
         <span
-          class="c5"
+          class="c8"
         >
           ১০
         </span>
@@ -474,20 +501,33 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
 
 .c6 {
   padding-bottom: 1.5rem;
-  padding-left: 1rem;
+  padding-left: 16px;
 }
 
 .c5 {
   font-family: Padauk,Arial,Verdana,Geneva,Helvetica,sans-serif;
   font-weight: 400;
   font-style: normal;
-  color: #B80000;
   font-size: 2rem;
   line-height: 2.25rem;
+  color: #B80000;
   margin: 0;
   padding: 0;
   display: inline-block;
-  width: 3rem;
+  width: auto;
+}
+
+.c8 {
+  font-family: Padauk,Arial,Verdana,Geneva,Helvetica,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2rem;
+  line-height: 2.25rem;
+  color: #B80000;
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  width: NaN;
 }
 
 .c0 {
@@ -597,7 +637,7 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
 @media (min-width:80rem) {
   .c6 {
     padding-top: 0.5rem;
-    padding-left: 2rem;
+    padding-left: 32px;
   }
 }
 
@@ -610,6 +650,20 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
 
 @media (min-width:37.5rem) {
   .c5 {
+    font-size: 3.5rem;
+    line-height: 5.375rem;
+  }
+}
+
+@media (min-width:20rem) and (max-width:37.4375rem) {
+  .c8 {
+    font-size: 2.5rem;
+    line-height: 4.125rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .c8 {
     font-size: 3.5rem;
     line-height: 5.375rem;
   }
@@ -775,7 +829,7 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
         class="c4"
       >
         <span
-          class="c5"
+          class="c8"
         >
           ၆
         </span>
@@ -801,7 +855,7 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
         class="c4"
       >
         <span
-          class="c5"
+          class="c8"
         >
           ၇
         </span>
@@ -827,7 +881,7 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
         class="c4"
       >
         <span
-          class="c5"
+          class="c8"
         >
           ၈
         </span>
@@ -853,7 +907,7 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
         class="c4"
       >
         <span
-          class="c5"
+          class="c8"
         >
           ၉
         </span>
@@ -879,7 +933,7 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
         class="c4"
       >
         <span
-          class="c5"
+          class="c8"
         >
           ၁၀
         </span>
@@ -924,20 +978,33 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
 
 .c6 {
   padding-bottom: 1.5rem;
-  padding-left: 1rem;
+  padding-left: 16px;
 }
 
 .c5 {
   font-family: ReithSerif,Helvetica,Arial,sans-serif;
   font-weight: 300;
   font-style: normal;
-  color: #B80000;
   font-size: 2rem;
   line-height: 2.25rem;
+  color: #B80000;
   margin: 0;
   padding: 0;
   display: inline-block;
-  width: 3rem;
+  width: auto;
+}
+
+.c8 {
+  font-family: ReithSerif,Helvetica,Arial,sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 2rem;
+  line-height: 2.25rem;
+  color: #B80000;
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  width: NaN;
 }
 
 .c0 {
@@ -1047,7 +1114,7 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
 @media (min-width:80rem) {
   .c6 {
     padding-top: 0.5rem;
-    padding-left: 2rem;
+    padding-left: 32px;
   }
 }
 
@@ -1060,6 +1127,20 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
 
 @media (min-width:37.5rem) {
   .c5 {
+    font-size: 3.5rem;
+    line-height: 3.75rem;
+  }
+}
+
+@media (min-width:20rem) and (max-width:37.4375rem) {
+  .c8 {
+    font-size: 2.5rem;
+    line-height: 2.75rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .c8 {
     font-size: 3.5rem;
     line-height: 3.75rem;
   }
@@ -1225,7 +1306,7 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
         class="c4"
       >
         <span
-          class="c5"
+          class="c8"
         >
           6
         </span>
@@ -1251,7 +1332,7 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
         class="c4"
       >
         <span
-          class="c5"
+          class="c8"
         >
           7
         </span>
@@ -1277,7 +1358,7 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
         class="c4"
       >
         <span
-          class="c5"
+          class="c8"
         >
           8
         </span>
@@ -1303,7 +1384,7 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
         class="c4"
       >
         <span
-          class="c5"
+          class="c8"
         >
           9
         </span>
@@ -1329,7 +1410,7 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
         class="c4"
       >
         <span
-          class="c5"
+          class="c8"
         >
           10
         </span>
@@ -1374,20 +1455,33 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
 
 .c6 {
   padding-bottom: 1.5rem;
-  padding-right: 1rem;
+  padding-right: 16px;
 }
 
 .c5 {
   font-family: "BBC Nassim Arabic",Arial,Verdana,Geneva,Helvetica,sans-serif;
   font-weight: 400;
   font-style: normal;
-  color: #B80000;
   font-size: 2rem;
   line-height: 2.25rem;
+  color: #B80000;
   margin: 0;
   padding: 0;
   display: inline-block;
-  width: 3rem;
+  width: auto;
+}
+
+.c8 {
+  font-family: "BBC Nassim Arabic",Arial,Verdana,Geneva,Helvetica,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2rem;
+  line-height: 2.25rem;
+  color: #B80000;
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  width: NaN;
 }
 
 .c0 {
@@ -1497,7 +1591,7 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
 @media (min-width:80rem) {
   .c6 {
     padding-top: 0.5rem;
-    padding-right: 2rem;
+    padding-right: 32px;
   }
 }
 
@@ -1510,6 +1604,20 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
 
 @media (min-width:37.5rem) {
   .c5 {
+    font-size: 3.5rem;
+    line-height: 3.75rem;
+  }
+}
+
+@media (min-width:20rem) and (max-width:37.4375rem) {
+  .c8 {
+    font-size: 2.5rem;
+    line-height: 2.75rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .c8 {
     font-size: 3.5rem;
     line-height: 3.75rem;
   }
@@ -1675,7 +1783,7 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
         class="c4"
       >
         <span
-          class="c5"
+          class="c8"
         >
           ۶
         </span>
@@ -1701,7 +1809,7 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
         class="c4"
       >
         <span
-          class="c5"
+          class="c8"
         >
           ۷
         </span>
@@ -1727,7 +1835,7 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
         class="c4"
       >
         <span
-          class="c5"
+          class="c8"
         >
           ۸
         </span>
@@ -1753,7 +1861,7 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
         class="c4"
       >
         <span
-          class="c5"
+          class="c8"
         >
           ۹
         </span>
@@ -1779,7 +1887,7 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
         class="c4"
       >
         <span
-          class="c5"
+          class="c8"
         >
           ۱۰
         </span>
