@@ -25,6 +25,7 @@ const getStyles = dir => {
 
 export const Dropdown = styled.div`
   background-color: ${C_EBON};
+  clear: both;
 
   @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
     display: none;
