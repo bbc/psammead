@@ -10,12 +10,16 @@ import {
   GEL_SPACING_DBL,
 } from '@bbc/gel-foundations/spacings';
 import Helmet from 'react-helmet';
-import { GEL_GROUP_3_SCREEN_WIDTH_MIN } from '@bbc/gel-foundations/breakpoints';
+import {
+  GEL_GROUP_3_SCREEN_WIDTH_MIN,
+  GEL_GROUP_B_MIN_WIDTH,
+  GEL_GROUP_CD_MIN_WIDTH,
+} from '@bbc/gel-foundations/breakpoints';
 import { getPica } from '@bbc/gel-foundations/typography';
 import { scriptPropType } from '@bbc/gel-foundations/prop-types';
 import { getSansRegular } from '@bbc/psammead-styles/font-styles';
 
-const MENU_ICON_SIDE_LENGTH = '2.75rem'; // 44px
+const TOP_BOTTOM_SPACING = 0.75; // 12px
 
 const getStyles = dir => {
   const direction = dir === 'ltr' ? 'left' : 'right';
@@ -116,14 +120,23 @@ const iconBorder = css`
 `;
 
 const MenuButton = styled.button`
-  width: ${MENU_ICON_SIDE_LENGTH};
-  height: ${MENU_ICON_SIDE_LENGTH};
   position: relative;
   padding: 0;
   margin: 0;
   border: 0;
   background-color: transparent;
   ${({ dir }) => (dir === 'ltr' ? `float: left;` : `float: right;`)}
+  ${({ script }) => {
+    // The sideLength of the button should be
+    //  line height + top padding + bottom padding
+    const sideLength = `${script.pica.groupA.lineHeight / 16 +
+      TOP_BOTTOM_SPACING * 2}rem;`;
+    return (
+      script &&
+      `height: ${sideLength};
+      width: ${sideLength};`
+    );
+  }}
 
   &:hover,
   &:focus {
@@ -137,6 +150,36 @@ const MenuButton = styled.button`
     display: none;
     visibility: hidden;
   }
+  @media (min-width: ${GEL_GROUP_B_MIN_WIDTH}rem) {
+    ${({ script }) => {
+      // The sideLength of the button should be
+      //  line height + top padding + bottom padding
+      const sideLength = `${script.pica.groupA.lineHeight / 16 +
+        TOP_BOTTOM_SPACING * 2}rem;`;
+      return (
+        script &&
+        `height: ${sideLength};
+        width: ${sideLength};`
+      );
+    }}
+  }
+  @media (min-width: ${GEL_GROUP_CD_MIN_WIDTH}rem) {
+    ${({ script }) => {
+      // The sideLength of the button should be
+      //  line height + top padding + bottom padding
+      const sideLength = `${script.pica.groupA.lineHeight / 16 +
+        TOP_BOTTOM_SPACING * 2}rem;`;
+      return (
+        script &&
+        `height: ${sideLength};
+        width: ${sideLength};`
+      );
+    }}
+  }
+
+  & svg {
+    vertical-align: middle;
+  }
 `;
 
 export const CanonicalMenuButton = ({
@@ -145,12 +188,14 @@ export const CanonicalMenuButton = ({
   onOpen,
   onClose,
   dir,
+  script,
 }) => (
   <MenuButton
     aria-label={announcedText}
     onClick={isOpen ? onClose : onOpen}
     aria-expanded={isOpen ? 'true' : 'false'}
     dir={dir}
+    script={script}
   >
     {isOpen ? navigationIcons.cross : navigationIcons.hamburger}
   </MenuButton>
@@ -162,6 +207,7 @@ CanonicalMenuButton.propTypes = {
   onClose: func.isRequired,
   isOpen: bool.isRequired,
   dir: oneOf(['ltr', 'rtl']),
+  script: shape(scriptPropType).isRequired,
 };
 
 CanonicalMenuButton.defaultProps = {
@@ -178,7 +224,7 @@ const AmpHead = () => (
   </Helmet>
 );
 
-export const AmpMenuButton = ({ announcedText, onToggle, dir }) => {
+export const AmpMenuButton = ({ announcedText, onToggle, dir, script }) => {
   const expandedHandler =
     'tap:AMP.setState({ menuState: { expanded: !menuState.expanded }})';
 
@@ -198,6 +244,7 @@ export const AmpMenuButton = ({ announcedText, onToggle, dir }) => {
         data-amp-bind-aria-expanded='menuState.expanded ? "true" : "false"'
         on={`${expandedHandler};${onToggle}`}
         dir={dir}
+        script={script}
       >
         {cloneElement(navigationIcons.hamburger, {
           'data-amp-bind-hidden': 'menuState.expanded',
@@ -215,6 +262,7 @@ AmpMenuButton.propTypes = {
   announcedText: string.isRequired,
   onToggle: string.isRequired,
   dir: oneOf(['ltr', 'rtl']),
+  script: shape(scriptPropType).isRequired,
 };
 
 AmpMenuButton.defaultProps = {

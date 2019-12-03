@@ -44,6 +44,7 @@ describe('Canonical', () => {
           onOpen={mockOnOpen}
           isOpen
           onClose={mockOnClose}
+          script={latin}
         />,
       );
       const menuButton = getByRole(container, 'button');
@@ -60,6 +61,7 @@ describe('Canonical', () => {
           onOpen={() => {}}
           isOpen
           onClose={() => {}}
+          script={latin}
         />,
       );
       const menuButton = getByRole(container, 'button');
@@ -73,6 +75,7 @@ describe('Canonical', () => {
         onOpen={() => {}}
         isOpen
         onClose={() => {}}
+        script={latin}
       />,
     );
   });
@@ -87,6 +90,7 @@ describe('Canonical', () => {
           onOpen={mockOnOpen}
           isOpen={false}
           onClose={mockOnClose}
+          script={latin}
         />,
       );
       const menuButton = getByRole(container, 'button');
@@ -103,6 +107,7 @@ describe('Canonical', () => {
           onOpen={() => {}}
           isOpen={false}
           onClose={() => {}}
+          script={latin}
         />,
       );
       const menuButton = getByRole(container, 'button');
@@ -116,6 +121,7 @@ describe('Canonical', () => {
         onOpen={() => {}}
         isOpen={false}
         onClose={() => {}}
+        script={latin}
       />,
     );
   });
@@ -131,6 +137,6 @@ describe('Dropdown navigation', () => {
 describe('AMP Menu Button', () => {
   shouldMatchSnapshot(
     'should render correctly',
-    <AmpMenuButton announcedText="Menu" onToggle="" />,
+    <AmpMenuButton announcedText="Menu" onToggle="" script={latin} />,
   );
 });

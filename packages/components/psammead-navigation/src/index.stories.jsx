@@ -219,7 +219,7 @@ navStoriesData.map(item => {
 
 canonicalStories.add(
   'Canonical Menu Button',
-  ({ dir }) => {
+  ({ dir, script }) => {
     const isOpen = boolean('Open', false);
     return (
       <BackgroundContainer>
@@ -229,6 +229,7 @@ canonicalStories.add(
           isOpen={isOpen}
           onClose={() => {}}
           dir={dir}
+          script={script}
         />
       </BackgroundContainer>
     );
@@ -278,9 +279,14 @@ navStoriesData.map(item => {
 
 ampStories.add(
   'AMP Menu Button',
-  ({ dir }) => (
+  ({ dir, script }) => (
     <BackgroundContainer>
-      <AmpMenuButton announcedText="Menu" onToggle="" dir={dir} />
+      <AmpMenuButton
+        announcedText="Menu"
+        onToggle=""
+        dir={dir}
+        script={script}
+      />
     </BackgroundContainer>
   ),
   {

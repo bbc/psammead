@@ -7,14 +7,14 @@ exports[`AMP Menu Button should render correctly 1`] = `
 }
 
 .c0 {
-  width: 2.75rem;
-  height: 2.75rem;
   position: relative;
   padding: 0;
   margin: 0;
   border: 0;
   background-color: transparent;
   float: left;
+  height: 2.75rem;
+  width: 2.75rem;
 }
 
 .c0:hover,
@@ -33,10 +33,28 @@ exports[`AMP Menu Button should render correctly 1`] = `
   border: 0.25rem solid #FFFFFF;
 }
 
+.c0 svg {
+  vertical-align: middle;
+}
+
 @media (min-width:37.5rem) {
   .c0 {
     display: none;
     visibility: hidden;
+  }
+}
+
+@media (min-width:20rem) {
+  .c0 {
+    height: 2.75rem;
+    width: 2.75rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .c0 {
+    height: 2.75rem;
+    width: 2.75rem;
   }
 }
 
@@ -108,14 +126,14 @@ exports[`Canonical Closed menu button should render correctly 1`] = `
 }
 
 .c0 {
-  width: 2.75rem;
-  height: 2.75rem;
   position: relative;
   padding: 0;
   margin: 0;
   border: 0;
   background-color: transparent;
   float: left;
+  height: 2.75rem;
+  width: 2.75rem;
 }
 
 .c0:hover,
@@ -134,10 +152,28 @@ exports[`Canonical Closed menu button should render correctly 1`] = `
   border: 0.25rem solid #FFFFFF;
 }
 
+.c0 svg {
+  vertical-align: middle;
+}
+
 @media (min-width:37.5rem) {
   .c0 {
     display: none;
     visibility: hidden;
+  }
+}
+
+@media (min-width:20rem) {
+  .c0 {
+    height: 2.75rem;
+    width: 2.75rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .c0 {
+    height: 2.75rem;
+    width: 2.75rem;
   }
 }
 
@@ -169,14 +205,14 @@ exports[`Canonical Open menu button should render correctly 1`] = `
 }
 
 .c0 {
-  width: 2.75rem;
-  height: 2.75rem;
   position: relative;
   padding: 0;
   margin: 0;
   border: 0;
   background-color: transparent;
   float: left;
+  height: 2.75rem;
+  width: 2.75rem;
 }
 
 .c0:hover,
@@ -195,10 +231,28 @@ exports[`Canonical Open menu button should render correctly 1`] = `
   border: 0.25rem solid #FFFFFF;
 }
 
+.c0 svg {
+  vertical-align: middle;
+}
+
 @media (min-width:37.5rem) {
   .c0 {
     display: none;
     visibility: hidden;
+  }
+}
+
+@media (min-width:20rem) {
+  .c0 {
+    height: 2.75rem;
+    width: 2.75rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .c0 {
+    height: 2.75rem;
+    width: 2.75rem;
   }
 }
 
