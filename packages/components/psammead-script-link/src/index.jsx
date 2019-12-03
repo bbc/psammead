@@ -11,6 +11,19 @@ import { C_WHITE } from '@bbc/psammead-styles/colours';
 import { string, shape, node } from 'prop-types';
 import { scriptPropType } from '@bbc/gel-foundations/prop-types';
 
+const touchAreaStyles = `
+&::after {
+  content: '';
+  position: absolute;
+  top: -0.25rem;
+  left: -0.25rem;
+  right: 0;
+  bottom: 0;
+  height: 2.75rem;
+  width: 2.75rem;
+  margin: 0 0.25rem;
+}`;
+
 const StyledLink = styled.a`
   ${({ script }) => script && getPica(script)}
   ${({ service }) => service && getSansRegular(service)}
@@ -31,35 +44,27 @@ const StyledLink = styled.a`
     border: 0.0625rem solid ${C_WHITE};
   }
 
-  &::after {
-    content: '';
-    position: absolute;
-    top: -0.25rem;
-    left: -0.25rem;
-    right: 0;
-    bottom: 0;
-    height: 2.75rem;
-    width: 2.75rem;
-    margin: 0 0.25rem;
-  }
-
   &:hover::before,
   &:focus::before {
     border: 0.25rem solid ${C_WHITE};
   }
 
-  @media (min-width: ${GEL_GROUP_2_SCREEN_WIDTH_MIN}) {
-    line-height: 3rem;
-  }
   @media (max-width: ${GEL_GROUP_1_SCREEN_WIDTH_MAX}) {
     line-height: 2.5rem;
     height: 2.5rem;
     padding: 0 0.75rem;
   }
+  @media (min-width: ${GEL_GROUP_2_SCREEN_WIDTH_MIN}) {
+    line-height: 3rem;
+
+    ${touchAreaStyles}
+  }
   @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
     height: 2.25rem;
     line-height: 2.25rem;
     padding: 0 0.625rem;
+
+    ${touchAreaStyles}
   }
 `;
 
