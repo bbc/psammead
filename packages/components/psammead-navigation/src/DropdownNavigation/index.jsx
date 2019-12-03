@@ -122,6 +122,7 @@ const MenuButton = styled.button`
   margin: 0;
   border: 0;
   background-color: transparent;
+  ${({ dir }) => (dir === 'ltr' ? `float: left;` : `float: right;`)}
 
   &:hover,
   &:focus {
@@ -142,11 +143,13 @@ export const CanonicalMenuButton = ({
   isOpen,
   onOpen,
   onClose,
+  dir,
 }) => (
   <MenuButton
     aria-label={announcedText}
     onClick={isOpen ? onClose : onOpen}
     aria-expanded={isOpen ? 'true' : 'false'}
+    dir={dir}
   >
     {isOpen ? navigationIcons.cross : navigationIcons.hamburger}
   </MenuButton>
@@ -157,6 +160,11 @@ CanonicalMenuButton.propTypes = {
   onOpen: func.isRequired,
   onClose: func.isRequired,
   isOpen: bool.isRequired,
+  dir: oneOf(['ltr', 'rtl']),
+};
+
+CanonicalMenuButton.defaultProps = {
+  dir: 'ltr',
 };
 
 const AmpHead = () => (
@@ -169,7 +177,7 @@ const AmpHead = () => (
   </Helmet>
 );
 
-export const AmpMenuButton = ({ announcedText, onToggle }) => {
+export const AmpMenuButton = ({ announcedText, onToggle, dir }) => {
   const expandedHandler =
     'tap:AMP.setState({ menuState: { expanded: !menuState.expanded }})';
 
@@ -188,6 +196,7 @@ export const AmpMenuButton = ({ announcedText, onToggle }) => {
         aria-expanded="false"
         data-amp-bind-aria-expanded='menuState.expanded ? "true" : "false"'
         on={`${expandedHandler};${onToggle}`}
+        dir={dir}
       >
         {cloneElement(navigationIcons.hamburger, {
           'data-amp-bind-hidden': 'menuState.expanded',
@@ -204,4 +213,9 @@ export const AmpMenuButton = ({ announcedText, onToggle }) => {
 AmpMenuButton.propTypes = {
   announcedText: string.isRequired,
   onToggle: string.isRequired,
+  dir: oneOf(['ltr', 'rtl']),
+};
+
+AmpMenuButton.defaultProps = {
+  dir: 'ltr',
 };
