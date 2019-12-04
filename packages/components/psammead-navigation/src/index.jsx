@@ -2,7 +2,12 @@ import React from 'react';
 import styled, { css } from 'styled-components';
 import { shape, string, node, bool, oneOf } from 'prop-types';
 import VisuallyHiddenText from '@bbc/psammead-visually-hidden-text';
-import { C_WHITE, C_POSTBOX, C_GHOST } from '@bbc/psammead-styles/colours';
+import {
+  C_WHITE,
+  C_POSTBOX,
+  C_EBON,
+  C_GHOST,
+} from '@bbc/psammead-styles/colours';
 import {
   GEL_SPACING_HLF,
   GEL_SPACING,
@@ -213,7 +218,10 @@ NavigationLi.defaultProps = {
 
 const StyledNav = styled.nav`
   position: relative;
-  background-color: ${C_POSTBOX};
+  ${({ changeBackground }) =>
+    changeBackground
+      ? `background-color: ${C_EBON};`
+      : `background-color: ${C_POSTBOX};`}
   border-top: 0.0625rem solid ${C_WHITE};
 
   ${StyledListItem} {
@@ -225,9 +233,9 @@ const StyledNav = styled.nav`
   }
 `;
 
-const Navigation = ({ children, dir }) => {
+const Navigation = ({ children, dir, changeBackground }) => {
   return (
-    <StyledNav role="navigation" dir={dir}>
+    <StyledNav role="navigation" dir={dir} changeBackground={changeBackground}>
       <NavWrapper>{children}</NavWrapper>
     </StyledNav>
   );
@@ -236,8 +244,12 @@ const Navigation = ({ children, dir }) => {
 Navigation.propTypes = {
   children: node.isRequired,
   dir: oneOf(['ltr', 'rtl']),
+  changeBackground: bool,
 };
 
-Navigation.defaultProps = { dir: 'ltr' };
+Navigation.defaultProps = {
+  dir: 'ltr',
+  changeBackground: false,
+};
 
 export default Navigation;
