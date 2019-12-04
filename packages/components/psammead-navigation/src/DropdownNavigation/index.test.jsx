@@ -1,7 +1,7 @@
 import React from 'react';
 import { shouldMatchSnapshot } from '@bbc/psammead-test-helpers';
 import { render, fireEvent, getByRole } from '@testing-library/react';
-import { latin } from '@bbc/gel-foundations/scripts';
+import { latin, arabic } from '@bbc/gel-foundations/scripts';
 import {
   Dropdown,
   DropdownUl,
@@ -44,6 +44,7 @@ describe('Canonical', () => {
           onOpen={mockOnOpen}
           isOpen
           onClose={mockOnClose}
+          script={latin}
         />,
       );
       const menuButton = getByRole(container, 'button');
@@ -60,6 +61,7 @@ describe('Canonical', () => {
           onOpen={() => {}}
           isOpen
           onClose={() => {}}
+          script={latin}
         />,
       );
       const menuButton = getByRole(container, 'button');
@@ -73,6 +75,20 @@ describe('Canonical', () => {
         onOpen={() => {}}
         isOpen
         onClose={() => {}}
+        script={latin}
+        dir="ltr"
+      />,
+    );
+
+    shouldMatchSnapshot(
+      'should render rtl correctly',
+      <CanonicalMenuButton
+        announcedText="Menu"
+        onOpen={() => {}}
+        isOpen
+        onClose={() => {}}
+        script={arabic}
+        dir="rtl"
       />,
     );
   });
@@ -87,6 +103,7 @@ describe('Canonical', () => {
           onOpen={mockOnOpen}
           isOpen={false}
           onClose={mockOnClose}
+          script={latin}
         />,
       );
       const menuButton = getByRole(container, 'button');
@@ -103,6 +120,7 @@ describe('Canonical', () => {
           onOpen={() => {}}
           isOpen={false}
           onClose={() => {}}
+          script={latin}
         />,
       );
       const menuButton = getByRole(container, 'button');
@@ -116,6 +134,20 @@ describe('Canonical', () => {
         onOpen={() => {}}
         isOpen={false}
         onClose={() => {}}
+        script={latin}
+        dir="ltr"
+      />,
+    );
+
+    shouldMatchSnapshot(
+      'should render rtl correctly',
+      <CanonicalMenuButton
+        announcedText="Menu"
+        onOpen={() => {}}
+        isOpen={false}
+        onClose={() => {}}
+        script={arabic}
+        dir="rtl"
       />,
     );
   });
@@ -131,6 +163,16 @@ describe('Dropdown navigation', () => {
 describe('AMP Menu Button', () => {
   shouldMatchSnapshot(
     'should render correctly',
-    <AmpMenuButton announcedText="Menu" onToggle="" />,
+    <AmpMenuButton announcedText="Menu" onToggle="" script={latin} dir="ltr" />,
+  );
+
+  shouldMatchSnapshot(
+    'should render rtl correctly',
+    <AmpMenuButton
+      announcedText="Menu"
+      onToggle=""
+      script={arabic}
+      dir="rtl"
+    />,
   );
 });
