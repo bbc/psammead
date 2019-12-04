@@ -11,7 +11,9 @@ const getPRNumber = () => {
       pullRequestNumber[index] = PRs[index].number;
     }
   }
-  return pullRequestNumber;
+  return pullRequestNumber.filter(function(one) {
+    return one != null;
+  });
 };
 
 module.exports = getPRNumber;

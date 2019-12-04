@@ -15,7 +15,9 @@ const getPackageNames = () => {
       );
     }
   }
-  return packageName;
+  return packageName.filter(function(one) {
+    return one != null;
+  });
 };
 
 module.exports = getPackageNames;

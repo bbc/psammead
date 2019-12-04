@@ -10,8 +10,9 @@ const getBranchName = () => {
       delete branchName[index];
     }
   }
-
-  return branchName;
+  return branchName.filter(function(one) {
+    return one != null;
+  });
 };
 
 module.exports = getBranchName;
