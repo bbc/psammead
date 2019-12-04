@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 0.1.0-alpha.15 | [PR#XXX](https://github.com/bbc/psammead/pull/XXX) Use `mediaType` to apply `padding-right` to summary above 600px for Radio Bulletin only |
 | 0.1.0-alpha.14 | [PR#2761](https://github.com/bbc/psammead/pull/2761) Rename `type` to `mediaType` |
 | 0.1.0-alpha.13 | [PR#2760](https://github.com/bbc/psammead/pull/2760) Add `padding-right` to summary above 600px for Radio Bulletin only |
 | 0.1.0-alpha.12 | [PR#2755](https://github.com/bbc/psammead/pull/2755) Add `padding-right` to summary above 600px |
