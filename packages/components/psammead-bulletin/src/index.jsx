@@ -158,7 +158,8 @@ const BulletinSummary = styled.p`
   padding: 0 ${GEL_SPACING};
   @media(min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
     padding-left: 0;
-    padding-right: ${({ type }) => (type === 'audio' ? `${GEL_SPACING}` : `0`)};
+    padding-right: ${({ mediaType }) =>
+      mediaType === 'audio' ? `${GEL_SPACING}` : `0`};
   }
   padding-bottom: ${GEL_SPACING_DBL};
 `;
