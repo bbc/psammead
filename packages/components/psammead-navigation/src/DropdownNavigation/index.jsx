@@ -115,7 +115,9 @@ const iconBorder = css`
   border: ${GEL_SPACING_HLF} solid ${C_WHITE};
 `;
 
-const MenuButton = styled.button`
+const Button = props => <button type="button" {...props} />;
+
+const MenuButton = styled(Button)`
   width: ${MENU_ICON_SIDE_LENGTH};
   height: ${MENU_ICON_SIDE_LENGTH};
   position: relative;
