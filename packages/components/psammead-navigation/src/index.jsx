@@ -219,8 +219,7 @@ NavigationLi.defaultProps = {
 
 const StyledNav = styled.nav`
   position: relative;
-  ${({ isOpen }) =>
-    isOpen ? `background-color: ${C_EBON};` : `background-color: ${C_POSTBOX};`}
+  ${({ isOpen }) => `background-color: ${isOpen ? C_EBON : C_POSTBOX};`}
   border-top: 0.0625rem solid ${C_WHITE};
 
   ${StyledListItem} {
