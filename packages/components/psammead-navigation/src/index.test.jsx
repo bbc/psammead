@@ -9,33 +9,48 @@ import {
 import Navigation, { NavigationUl, NavigationLi } from './index';
 import igboNavData from '../testHelpers/igbo';
 
+const NavigationData = (
+  <NavigationUl>
+    {igboNavData.map((item, index) => {
+      const { title, url } = item;
+      const active = index === 0;
+
+      return (
+        <NavigationLi
+          key={title}
+          url={url}
+          script={latin}
+          active={active}
+          currentPageText="Current page"
+          service="news"
+          data-navigation="test_navigation"
+        >
+          {title}
+        </NavigationLi>
+      );
+    })}
+  </NavigationUl>
+);
+
 const NavigationExample = (
   <Navigation script={latin} skipLinkText="Wụga n’ọdịnaya" service="news">
-    <NavigationUl>
-      {igboNavData.map((item, index) => {
-        const { title, url } = item;
-        const active = index === 0;
-
-        return (
-          <NavigationLi
-            key={title}
-            url={url}
-            script={latin}
-            active={active}
-            currentPageText="Current page"
-            service="news"
-            data-navigation="test_navigation"
-          >
-            {title}
-          </NavigationLi>
-        );
-      })}
-    </NavigationUl>
+    {NavigationData}
   </Navigation>
 );
 
 describe('Navigation', () => {
   shouldMatchSnapshot('should render correctly', NavigationExample);
+  shouldMatchSnapshot(
+    'should render correctly when isOpen is true',
+    <Navigation
+      script={latin}
+      skipLinkText="Wụga n’ọdịnaya"
+      service="news"
+      isOpen
+    >
+      {NavigationData}
+    </Navigation>,
+  );
 });
 
 describe('Scrollable Navigation', () => {
