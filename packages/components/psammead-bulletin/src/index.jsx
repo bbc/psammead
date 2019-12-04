@@ -193,7 +193,7 @@ const Bulletin = ({
   headlineText,
   summaryText,
   image,
-  type,
+  mediaType,
   ctaText,
   ctaLink,
   liveText,
@@ -201,7 +201,7 @@ const Bulletin = ({
   lang,
   offScreenText,
 }) => {
-  const isAudio = type === 'audio';
+  const isAudio = mediaType === 'audio';
   const BulletinWrapper = isAudio ? RadioBulletinWrapper : TVBulletinWrapper;
   const ImageWrapper = isAudio ? RadioImageWrapper : TVImageWrapper;
   const TextWrapper = isAudio ? RadioTextWrapper : TVTextWrapper;
@@ -227,7 +227,11 @@ const Bulletin = ({
             </span>
           </Link>
         </BulletinHeading>
-        <BulletinSummary script={script} service={service} type={type}>
+        <BulletinSummary
+          script={script}
+          service={service}
+          mediaType={mediaType}
+        >
           {summaryText}
         </BulletinSummary>
         <PlayCTA
@@ -237,7 +241,7 @@ const Bulletin = ({
           isAudio={isAudio}
           dir={dir}
         >
-          <IconWrapper dir={dir}>{mediaIcons[type]}</IconWrapper>
+          <IconWrapper dir={dir}>{mediaIcons[mediaType]}</IconWrapper>
           {ctaText}
         </PlayCTA>
       </TextWrapper>
@@ -246,7 +250,7 @@ const Bulletin = ({
 };
 
 Bulletin.propTypes = {
-  type: oneOf(['video', 'audio']).isRequired,
+  mediaType: oneOf(['video', 'audio']).isRequired,
   isLive: bool,
   service: string.isRequired,
   script: shape(scriptPropType).isRequired,
