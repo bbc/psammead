@@ -4,9 +4,7 @@ import styled from 'styled-components';
 import { getFoolscap, getDoublePica } from '@bbc/gel-foundations/typography';
 import {
   GEL_SPACING,
-  GEL_SPACING_DBL,
   GEL_SPACING_TRPL,
-  GEL_SPACING_QUAD,
 } from '@bbc/gel-foundations/spacings';
 import {
   GEL_GROUP_5_SCREEN_WIDTH_MIN,
@@ -27,6 +25,9 @@ const paddingStart = ({ dir }) => `padding-${dir === 'ltr' ? 'left' : 'right'}`;
 const widthService = (service, value) =>
   service === 'bengali' ? '3rem' : value;
 
+const widthTest = (service, bValue, elseValue) =>
+  service === 'bengali' ? bValue : elseValue;
+
 const StyledLink = styled.a`
   ${({ script }) => script && getDoublePica(script)};
   ${({ service }) => getSerifMedium(service)}
@@ -41,14 +42,17 @@ const StyledLink = styled.a`
 `;
 
 const StyledWrapper = styled.div`
-  min-width: ${props => (props.service === 'begali' ? '1rem' : '3rem')};
+  min-width: ${props => (props.service === 'bengali' ? '1rem' : '3rem')};
 
   @media (min-width: ${GEL_GROUP_0_SCREEN_WIDTH_MIN}) {
     min-width: ${props => (props.items.length >= 10 ? '2rem' : 'auto')};
   }
 
   @media (min-width: ${GEL_GROUP_1_SCREEN_WIDTH_MIN}) {
-    min-width: ${props => (props.items.length >= 10 ? '3rem' : 'auto')};
+    min-width: ${props =>
+      props.items.length >= 10
+        ? widthTest(props.service, '2rem', '3rem')
+        : 'auto'};
   }
 
   @media (min-width: ${GEL_GROUP_2_SCREEN_WIDTH_MIN}) {
@@ -72,12 +76,6 @@ const StyledWrapper = styled.div`
 const StyledItem = styled.div`
   padding-bottom: ${GEL_SPACING_TRPL};
   ${paddingStart}: 16px;
-
-  @media (min-width: ${GEL_GROUP_5_SCREEN_WIDTH_MIN}) {
-    padding-top: ${GEL_SPACING};
-    ${paddingStart}: 16px;
-    margin-left: 0;
-  }
 `;
 
 export const MostReadRank = styled.span`
