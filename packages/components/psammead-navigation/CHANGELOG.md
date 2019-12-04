@@ -3,6 +3,10 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 6.0.0-alpha.5 | [PR#2759](https://github.com/bbc/psammead/pull/2759) Change size of menu button depending on script |
+| 6.0.0-alpha.4 | [PR#2747](https://github.com/bbc/psammead/pull/2747) Fix MenuButton not acting as a block element |
+| 6.0.0-alpha.3 | [PR#2745](https://github.com/bbc/psammead/pull/2745) Add dir prop to Amp and Canonical MenuButton |
+| 6.0.0-alpha.2 | [PR#2725](https://github.com/bbc/psammead/pull/2725) Move hooks directory into src |
 | 6.0.0-alpha.1 | [PR#2613](https://github.com/bbc/psammead/pull/2613) Add dropdown menu with a hamburger button |
 | 5.0.0-alpha.2 | [PR#2701](https://github.com/bbc/psammead/pull/2701) Talos - Bump Dependencies - @bbc/psammead-styles |
 | 5.0.0-alpha.1 | [PR#2577](https://github.com/bbc/psammead/pull/2577) Add scrollable navigation |

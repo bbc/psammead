@@ -3,7 +3,7 @@ import { storiesOf } from '@storybook/react';
 import { withKnobs } from '@storybook/addon-knobs';
 import { withServicesKnob } from '@bbc/psammead-storybook-helpers';
 import notes from '../README.md';
-import BulletedList from './index';
+import BulletedList, { BulletedListItem } from './index';
 
 storiesOf('Components|BulletedList', module)
   .addDecorator(withKnobs)
@@ -12,14 +12,14 @@ storiesOf('Components|BulletedList', module)
     'default',
     ({ text, script, service, dir }) => (
       <BulletedList dir={dir} script={script} service={service}>
-        <li>{text}</li>
-        <li>
+        <BulletedListItem>{text}</BulletedListItem>
+        <BulletedListItem>
           {text} {text}
-        </li>
-        <li>{text.substring(0, 10)}</li>
-        <li>
+        </BulletedListItem>
+        <BulletedListItem>{text.substring(0, 10)}</BulletedListItem>
+        <BulletedListItem>
           {text} {text} {text} {text}
-        </li>
+        </BulletedListItem>
       </BulletedList>
     ),
     { notes },

@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 1.3.18 | [PR#2720](https://github.com/bbc/psammead/pull/2720) Update storybook component to have examples on inline link example inside a parahraph  |
 | 1.3.17 | [PR#2701](https://github.com/bbc/psammead/pull/2701) Talos - Bump Dependencies - @bbc/psammead-styles |
 | 1.3.16 | [PR#2697](https://github.com/bbc/psammead/pull/2697) Talos - Bump Dependencies - @bbc/psammead-styles |
 | 1.3.15 | [PR#2519](https://github.com/bbc/psammead/pull/2519) Talos - Bump Dependencies - @bbc/psammead-styles |
