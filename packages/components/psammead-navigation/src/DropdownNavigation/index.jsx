@@ -173,15 +173,19 @@ export const AmpMenuButton = ({ announcedText, onToggle }) => {
   const expandedHandler =
     'tap:AMP.setState({ menuState: { expanded: !menuState.expanded }})';
 
+  const initialState = {
+    expanded: false,
+  };
+
   return (
     <>
       <AmpHead />
       <amp-state id="menuState">
-        <script type="application/json">
-          {JSON.stringify({
-            expanded: false,
-          })}
-        </script>
+        <script
+          type="application/json"
+          /* eslint-disable-next-line react/no-danger */
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(initialState) }}
+        />
       </amp-state>
       <MenuButton
         aria-label={announcedText}
