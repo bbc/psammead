@@ -76,6 +76,7 @@ describe('Canonical', () => {
         isOpen
         onClose={() => {}}
         script={latin}
+        dir="ltr"
       />,
     );
 
@@ -87,6 +88,7 @@ describe('Canonical', () => {
         isOpen
         onClose={() => {}}
         script={arabic}
+        dir="rtl"
       />,
     );
   });
@@ -133,6 +135,7 @@ describe('Canonical', () => {
         isOpen={false}
         onClose={() => {}}
         script={latin}
+        dir="ltr"
       />,
     );
 
@@ -144,6 +147,7 @@ describe('Canonical', () => {
         isOpen={false}
         onClose={() => {}}
         script={arabic}
+        dir="rtl"
       />,
     );
   });
@@ -159,11 +163,16 @@ describe('Dropdown navigation', () => {
 describe('AMP Menu Button', () => {
   shouldMatchSnapshot(
     'should render correctly',
-    <AmpMenuButton announcedText="Menu" onToggle="" script={latin} />,
+    <AmpMenuButton announcedText="Menu" onToggle="" script={latin} dir="ltr" />,
   );
 
   shouldMatchSnapshot(
     'should render rtl correctly',
-    <AmpMenuButton announcedText="Menu" onToggle="" script={arabic} />,
+    <AmpMenuButton
+      announcedText="Menu"
+      onToggle=""
+      script={arabic}
+      dir="rtl"
+    />,
   );
 });
