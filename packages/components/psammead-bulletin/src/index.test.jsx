@@ -5,7 +5,7 @@ import Image from '@bbc/psammead-image';
 import Bulletin from '.';
 
 /* eslint-disable react/prop-types */
-const BulletinComponent = ({ script, service, isLive, type, ctaText }) => {
+const BulletinComponent = ({ script, service, isLive, mediaType, ctaText }) => {
   const summaryText = 'This is the summary text';
   const headlineText = 'This is the headline';
   const ctaLink = 'https://bbc.co.uk';
@@ -22,7 +22,7 @@ const BulletinComponent = ({ script, service, isLive, type, ctaText }) => {
   return (
     <Bulletin
       image={image}
-      type={type}
+      mediaType={mediaType}
       isLive={isLive}
       script={script}
       service={service}
@@ -42,7 +42,7 @@ describe('Bulletin', () => {
       script={latin}
       service="news"
       ctaText="Listen"
-      type="audio"
+      mediaType="audio"
     />,
   );
 
@@ -52,7 +52,7 @@ describe('Bulletin', () => {
       script={latin}
       service="news"
       ctaText="Watch"
-      type="video"
+      mediaType="video"
     />,
   );
 
@@ -62,7 +62,7 @@ describe('Bulletin', () => {
       script={latin}
       service="news"
       ctaText="Listen"
-      type="audio"
+      mediaType="audio"
       isLive
     />,
   );
@@ -73,7 +73,7 @@ describe('Bulletin', () => {
       script={latin}
       service="news"
       ctaText="Watch"
-      type="video"
+      mediaType="video"
       isLive
     />,
   );

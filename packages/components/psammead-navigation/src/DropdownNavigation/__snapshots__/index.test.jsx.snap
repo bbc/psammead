@@ -14,6 +14,7 @@ exports[`AMP Menu Button should render correctly 1`] = `
   margin: 0;
   border: 0;
   background-color: transparent;
+  float: left;
 }
 
 .c0:hover,
@@ -63,6 +64,7 @@ exports[`AMP Menu Button should render correctly 1`] = `
         aria-label="Menu"
         class="c0"
         data-amp-bind-aria-expanded="menuState.expanded ? \\"true\\" : \\"false\\""
+        dir="ltr"
         on="tap:AMP.setState({ menuState: { expanded: !menuState.expanded }});"
       >
         <svg
@@ -113,6 +115,7 @@ exports[`Canonical Closed menu button should render correctly 1`] = `
   margin: 0;
   border: 0;
   background-color: transparent;
+  float: left;
 }
 
 .c0:hover,
@@ -142,6 +145,7 @@ exports[`Canonical Closed menu button should render correctly 1`] = `
   aria-expanded="false"
   aria-label="Menu"
   class="c0"
+  dir="ltr"
 >
   <svg
     aria-hidden="true"
@@ -172,6 +176,7 @@ exports[`Canonical Open menu button should render correctly 1`] = `
   margin: 0;
   border: 0;
   background-color: transparent;
+  float: left;
 }
 
 .c0:hover,
@@ -201,6 +206,7 @@ exports[`Canonical Open menu button should render correctly 1`] = `
   aria-expanded="true"
   aria-label="Menu"
   class="c0"
+  dir="ltr"
 >
   <svg
     aria-hidden="true"
@@ -233,6 +239,7 @@ exports[`Dropdown navigation should render correctly 1`] = `
 
 .c0 {
   background-color: #222222;
+  clear: both;
 }
 
 .c1 {
