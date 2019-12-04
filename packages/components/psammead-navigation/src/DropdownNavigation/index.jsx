@@ -123,6 +123,10 @@ const iconBorder = css`
 const calculateButtonSide = lineHeight =>
   lineHeight / 16 + NAV_BAR_TOP_BOTTOM_SPACING * 2;
 
+const getButtonDimensions = lineHeight =>
+  `height: ${calculateButtonSide(lineHeight)}rem;
+  width: ${calculateButtonSide(lineHeight)}rem;`;
+
 const MenuButton = styled.button`
   position: relative;
   padding: 0;
@@ -130,16 +134,9 @@ const MenuButton = styled.button`
   border: 0;
   background-color: transparent;
   ${({ dir }) => (dir === 'ltr' ? `float: left;` : `float: right;`)}
-  ${({ script }) => {
-    const sideLength = `${calculateButtonSide(
-      script.pica.groupA.lineHeight,
-    )}rem;`;
-    return (
-      script &&
-      `height: ${sideLength};
-      width: ${sideLength};`
-    );
-  }}
+  ${({ script }) =>
+    script &&
+    getButtonDimensions(script.pica.groupA.lineHeight)}
 
   &:hover,
   &:focus {
@@ -154,16 +151,8 @@ const MenuButton = styled.button`
     visibility: hidden;
   }
   @media (min-width: ${GEL_GROUP_B_MIN_WIDTH}rem) {
-    ${({ script }) => {
-      const sideLength = `${calculateButtonSide(
-        script.pica.groupB.lineHeight,
-      )}rem;`;
-      return (
-        script &&
-        `height: ${sideLength};
-        width: ${sideLength};`
-      );
-    }}
+    ${({ script }) =>
+      script && getButtonDimensions(script.pica.groupB.lineHeight)}
   }
 
   & svg {
