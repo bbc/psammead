@@ -219,10 +219,8 @@ NavigationLi.defaultProps = {
 
 const StyledNav = styled.nav`
   position: relative;
-  ${({ changeBackground }) =>
-    changeBackground
-      ? `background-color: ${C_EBON};`
-      : `background-color: ${C_POSTBOX};`}
+  ${({ isOpen }) =>
+    isOpen ? `background-color: ${C_EBON};` : `background-color: ${C_POSTBOX};`}
   border-top: 0.0625rem solid ${C_WHITE};
 
   ${StyledListItem} {
@@ -234,9 +232,9 @@ const StyledNav = styled.nav`
   }
 `;
 
-const Navigation = ({ children, dir, changeBackground }) => {
+const Navigation = ({ children, dir, isOpen }) => {
   return (
-    <StyledNav role="navigation" dir={dir} changeBackground={changeBackground}>
+    <StyledNav role="navigation" dir={dir} isOpen={isOpen}>
       <NavWrapper>{children}</NavWrapper>
     </StyledNav>
   );
@@ -245,12 +243,12 @@ const Navigation = ({ children, dir, changeBackground }) => {
 Navigation.propTypes = {
   children: node.isRequired,
   dir: oneOf(['ltr', 'rtl']),
-  changeBackground: bool,
+  isOpen: bool,
 };
 
 Navigation.defaultProps = {
   dir: 'ltr',
-  changeBackground: false,
+  isOpen: false,
 };
 
 export default Navigation;
