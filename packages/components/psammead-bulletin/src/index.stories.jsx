@@ -19,8 +19,7 @@ const BulletinComponent = ({
 
   const isLive = boolean('Live', false);
   const ctaText = mediaType === 'audio' ? 'Listen' : 'Watch';
-  const playCtaText = isLive ? `${ctaText} Live` : ctaText;
-  const offScreenText = isLive ? `${ctaText} LIVE` : ctaText;
+  const offScreenText = isLive ? `${ctaText} Live` : ctaText;
 
   const image = (
     <Image
@@ -39,7 +38,7 @@ const BulletinComponent = ({
       headlineText={text}
       summaryText={text}
       ctaLink={ctaLink}
-      ctaText={playCtaText}
+      ctaText={ctaText}
       dir={dir}
       offScreenText={offScreenText}
     />

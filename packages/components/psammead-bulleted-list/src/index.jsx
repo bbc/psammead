@@ -2,10 +2,15 @@ import styled from 'styled-components';
 import { string, oneOf, shape } from 'prop-types';
 import { getBodyCopy } from '@bbc/gel-foundations/typography';
 import { getSansRegular } from '@bbc/psammead-styles/font-styles';
-import { GEL_SPACING_QUAD } from '@bbc/gel-foundations/spacings';
+import {
+  GEL_SPACING_QUAD,
+  GEL_SPACING_DBL,
+} from '@bbc/gel-foundations/spacings';
 import { scriptPropType } from '@bbc/gel-foundations/prop-types';
 
-const BulletedList = styled.ul`
+const BulletedList = styled.ul.attrs(() => ({
+  role: 'list',
+}))`
   ${({ script }) => script && getBodyCopy(script)};
   ${({ service }) => getSansRegular(service)}
   list-style-type: none;
@@ -20,6 +25,10 @@ const BulletedList = styled.ul`
         ? `margin-right: -${GEL_SPACING_QUAD};`
         : `margin-left: -${GEL_SPACING_QUAD};`}
   }
+`;
+
+export const BulletedListItem = styled.li.attrs(() => ({ role: 'listitem' }))`
+  margin-bottom: ${GEL_SPACING_DBL};
 `;
 
 BulletedList.propTypes = {
