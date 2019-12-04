@@ -12,6 +12,8 @@ import {
   GEL_GROUP_5_SCREEN_WIDTH_MIN,
   GEL_GROUP_3_SCREEN_WIDTH_MIN,
   GEL_GROUP_2_SCREEN_WIDTH_MIN,
+  GEL_GROUP_1_SCREEN_WIDTH_MIN,
+  GEL_GROUP_0_SCREEN_WIDTH_MIN,
 } from '@bbc/gel-foundations/breakpoints';
 import { C_EBON, C_POSTBOX } from '@bbc/psammead-styles/colours';
 import { scriptPropType } from '@bbc/gel-foundations/prop-types';
@@ -22,15 +24,14 @@ import {
 import { itemPropTypes } from '../List';
 
 const paddingStart = ({ dir }) => `padding-${dir === 'ltr' ? 'left' : 'right'}`;
-const widthService = ({ service }) =>
-  `${service === 'bengali' ? '3rem' : '70px'}`;
-const bengaliNumeralsSuck = ({ service }) =>
-  `${service === 'bengali' ? '3rem' : '4rem'}`;
+const widthService = (service, value) =>
+  service === 'bengali' ? '3rem' : value;
 
 const StyledLink = styled.a`
-  color: ${C_EBON};
   ${({ script }) => script && getDoublePica(script)};
   ${({ service }) => getSerifMedium(service)}
+
+  color: ${C_EBON};
   text-decoration: none;
 
   &:hover,
@@ -40,9 +41,15 @@ const StyledLink = styled.a`
 `;
 
 const StyledWrapper = styled.div`
-  display: inline-block;
-  float: left;
-  min-width: 2rem;
+  min-width: ${props => (props.service === 'begali' ? '1rem' : '3rem')};
+
+  @media (min-width: ${GEL_GROUP_0_SCREEN_WIDTH_MIN}) {
+    min-width: ${props => (props.items.length >= 10 ? '2rem' : 'auto')};
+  }
+
+  @media (min-width: ${GEL_GROUP_1_SCREEN_WIDTH_MIN}) {
+    min-width: ${props => (props.items.length >= 10 ? '3rem' : 'auto')};
+  }
 
   @media (min-width: ${GEL_GROUP_2_SCREEN_WIDTH_MIN}) {
     min-width: ${props =>
@@ -51,13 +58,13 @@ const StyledWrapper = styled.div`
 
   @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
     min-width: ${props =>
-      props.listindex >= 5 && props.listindex <= 10 ? widthService : 'auto'};
+      props.listindex >= 5 ? widthService(props.service, '4rem') : 'auto'};
   }
 
   @media (min-width: ${GEL_GROUP_5_SCREEN_WIDTH_MIN}) {
     min-width: ${props =>
       props.listindex === 4 && props.items.length >= 10
-        ? bengaliNumeralsSuck
+        ? widthService(props.service, '4.2rem')
         : 'auto'};
   }
 `;
@@ -81,12 +88,24 @@ export const MostReadRank = styled.span`
   padding: 0;
   display: inline-block;
   width: auto;
-  float: left;
+  float: ${props => (props.dir === 'rtl' ? 'right' : 'left')};
 `;
 
-export const MostReadNumber = ({ service, script, rank, listindex, items }) => (
-  <StyledWrapper listindex={listindex} service={service} items={items}>
-    <MostReadRank service={service} script={script}>
+export const MostReadNumber = ({
+  service,
+  script,
+  rank,
+  listindex,
+  items,
+  dir,
+}) => (
+  <StyledWrapper
+    listindex={listindex}
+    service={service}
+    items={items}
+    dir={dir}
+  >
+    <MostReadRank service={service} script={script} dir={dir}>
       {rank}
     </MostReadRank>
   </StyledWrapper>
@@ -110,6 +129,11 @@ export const MostReadLink = ({
 MostReadRank.propTypes = {
   service: string.isRequired,
   script: shape(scriptPropType).isRequired,
+  dir: oneOf(['rtl', 'ltr']),
+};
+
+MostReadRank.defaultProps = {
+  dir: 'ltr',
 };
 
 MostReadNumber.propTypes = {
@@ -118,10 +142,12 @@ MostReadNumber.propTypes = {
   rank: number,
   listindex: number.isRequired,
   items: arrayOf(itemPropTypes).isRequired,
+  dir: oneOf(['rtl', 'ltr']),
 };
 
 MostReadNumber.defaultProps = {
   rank: null,
+  dir: 'ltr',
 };
 
 MostReadLink.propTypes = {
@@ -133,7 +159,6 @@ MostReadLink.propTypes = {
   service: string.isRequired,
   script: shape(scriptPropType).isRequired,
   dir: oneOf(['rtl', 'ltr']),
-  listindex: string.isRequired,
 };
 
 MostReadLink.defaultProps = {
