@@ -52,7 +52,9 @@ It's not ideal for when you need a custom bullet. Use the standard `<ul>` instea
 
 ### Accessibility notes
 
-The bullets in `psammead-bulleted-lists` are not read by screen readers and are generated using pseudo-elements.
+- The bullets in `psammead-bulleted-lists` are not read by screen readers and are generated using pseudo-elements.
+
+- We have added role list and role listitem to the corresponding items due to a VoiceOver bug to reinstate the list semantics
 
 <!-- Roadmap -->
 
