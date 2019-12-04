@@ -172,12 +172,14 @@ import { latin } from '@bbc/gel-foundations/scripts';
 ```jsx
 import React from 'react';
 import { CanonicalMenuButton } from '@bbc/psammead-navigation/dropdown';
+import { latin } from '@bbc/gel-foundations/scripts';
 
 <CanonicalMenuButton 
     announcedText="Menu"
     isOpen={true}
     onOpen={() => { console.log("Handle open action"); }}
     onClose={() => { console.log("Handle close action"); }} 
+    script={latin}
 />
 ```
 
@@ -186,8 +188,13 @@ import { CanonicalMenuButton } from '@bbc/psammead-navigation/dropdown';
 ```jsx
 import React from 'react';
 import { AmpMenuButton } from '@bbc/psammead-navigation/dropdown';
+import { latin } from '@bbc/gel-foundations/scripts';
 
-<AmpMenuButton announcedText="Menu" onToggle="tap:menu.toggleVisibility" />
+<AmpMenuButton
+  announcedText="Menu"
+  onToggle="tap:menu.toggleVisibility"
+  script={latin}
+/>
 ```
 
 ### When to use this component
