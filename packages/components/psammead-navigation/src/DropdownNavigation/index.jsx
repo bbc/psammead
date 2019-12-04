@@ -10,12 +10,15 @@ import {
   GEL_SPACING_DBL,
 } from '@bbc/gel-foundations/spacings';
 import Helmet from 'react-helmet';
-import { GEL_GROUP_3_SCREEN_WIDTH_MIN } from '@bbc/gel-foundations/breakpoints';
+import {
+  GEL_GROUP_3_SCREEN_WIDTH_MIN,
+  GEL_GROUP_B_MIN_WIDTH,
+} from '@bbc/gel-foundations/breakpoints';
 import { getPica } from '@bbc/gel-foundations/typography';
 import { scriptPropType } from '@bbc/gel-foundations/prop-types';
 import { getSansRegular } from '@bbc/psammead-styles/font-styles';
 
-const MENU_ICON_SIDE_LENGTH = '2.75rem'; // 44px
+export const NAV_BAR_TOP_BOTTOM_SPACING = 0.75; // 12px
 
 const getStyles = dir => {
   const direction = dir === 'ltr' ? 'left' : 'right';
@@ -115,17 +118,28 @@ const iconBorder = css`
   border: ${GEL_SPACING_HLF} solid ${C_WHITE};
 `;
 
-const Button = props => <button type="button" {...props} />;
+// The sideLength of the button should be
+//  line height + top padding + bottom padding
+const calculateButtonSide = lineHeight =>
+  lineHeight / 16 + NAV_BAR_TOP_BOTTOM_SPACING * 2;
+
+const getButtonDimensions = lineHeight =>
+  `height: ${calculateButtonSide(lineHeight)}rem;
+  width: ${calculateButtonSide(lineHeight)}rem;`;
+
+// eslint-disable-next-line react/prop-types
+const Button = ({ script, ...props }) => <button type="button" {...props} />;
 
 const MenuButton = styled(Button)`
-  width: ${MENU_ICON_SIDE_LENGTH};
-  height: ${MENU_ICON_SIDE_LENGTH};
   position: relative;
   padding: 0;
   margin: 0;
   border: 0;
   background-color: transparent;
   ${({ dir }) => (dir === 'ltr' ? `float: left;` : `float: right;`)}
+  ${({ script }) =>
+    script &&
+    getButtonDimensions(script.pica.groupA.lineHeight)}
 
   &:hover,
   &:focus {
@@ -139,6 +153,14 @@ const MenuButton = styled(Button)`
     display: none;
     visibility: hidden;
   }
+  @media (min-width: ${GEL_GROUP_B_MIN_WIDTH}rem) {
+    ${({ script }) =>
+      script && getButtonDimensions(script.pica.groupB.lineHeight)}
+  }
+
+  & svg {
+    vertical-align: middle;
+  }
 `;
 
 export const CanonicalMenuButton = ({
@@ -147,12 +169,14 @@ export const CanonicalMenuButton = ({
   onOpen,
   onClose,
   dir,
+  script,
 }) => (
   <MenuButton
     aria-label={announcedText}
     onClick={isOpen ? onClose : onOpen}
     aria-expanded={isOpen ? 'true' : 'false'}
     dir={dir}
+    script={script}
   >
     {isOpen ? navigationIcons.cross : navigationIcons.hamburger}
   </MenuButton>
@@ -164,6 +188,7 @@ CanonicalMenuButton.propTypes = {
   onClose: func.isRequired,
   isOpen: bool.isRequired,
   dir: oneOf(['ltr', 'rtl']),
+  script: shape(scriptPropType).isRequired,
 };
 
 CanonicalMenuButton.defaultProps = {
@@ -180,7 +205,7 @@ const AmpHead = () => (
   </Helmet>
 );
 
-export const AmpMenuButton = ({ announcedText, onToggle, dir }) => {
+export const AmpMenuButton = ({ announcedText, onToggle, dir, script }) => {
   const expandedHandler =
     'tap:AMP.setState({ menuState: { expanded: !menuState.expanded }})';
 
@@ -200,6 +225,7 @@ export const AmpMenuButton = ({ announcedText, onToggle, dir }) => {
         data-amp-bind-aria-expanded='menuState.expanded ? "true" : "false"'
         on={`${expandedHandler};${onToggle}`}
         dir={dir}
+        script={script}
       >
         {cloneElement(navigationIcons.hamburger, {
           'data-amp-bind-hidden': 'menuState.expanded',
@@ -217,6 +243,7 @@ AmpMenuButton.propTypes = {
   announcedText: string.isRequired,
   onToggle: string.isRequired,
   dir: oneOf(['ltr', 'rtl']),
+  script: shape(scriptPropType).isRequired,
 };
 
 AmpMenuButton.defaultProps = {
