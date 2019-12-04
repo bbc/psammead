@@ -18,7 +18,7 @@ import { getPica } from '@bbc/gel-foundations/typography';
 import { scriptPropType } from '@bbc/gel-foundations/prop-types';
 import { getSansRegular } from '@bbc/psammead-styles/font-styles';
 
-const TOP_BOTTOM_SPACING = '0.75rem'; // 12px
+const TOP_BOTTOM_SPACING = '0.75rem'; // 12px - must be the same as MENU_TOP_BOTTOM_SPACING in DropdownNavigation/index.jsx
 const CURRENT_ITEM_HOVER_BORDER = '0.3125rem'; // 5px
 const GRADIENT_WIDTH = '3rem'; // 48px
 
