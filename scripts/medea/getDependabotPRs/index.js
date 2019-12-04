@@ -1,6 +1,6 @@
 const axios = require('axios');
 
-const authToken = process.env.GITHUB_TOKEN;
+const authToken = 'process.env.GITHUB_TOKEN';
 
 const getPullRequests = async () => {
   const response = await axios.get(
@@ -13,7 +13,9 @@ const getPullRequests = async () => {
     },
   );
   const pullRequestData = response.data;
-  return pullRequestData;
+  return pullRequestData.filter(function(one) {
+    return one != null;
+  });
 };
 
 module.exports = getPullRequests;

@@ -13,7 +13,9 @@ const getPRBody = () => {
       delete PRBody[index];
     }
   }
-  return PRBody;
+  return PRBody.filter(function(one) {
+    return one != null;
+  });
 };
 
 module.exports = getPRBody;

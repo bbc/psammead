@@ -13,7 +13,9 @@ const getPRTitle = () => {
       delete PRTitle[index];
     }
   }
-  return PRTitle;
+  return PRTitle.filter(function(one) {
+    return one != null;
+  });
 };
 
 module.exports = getPRTitle;
