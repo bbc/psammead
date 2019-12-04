@@ -1,7 +1,7 @@
 import React from 'react';
 import { shouldMatchSnapshot } from '@bbc/psammead-test-helpers';
 import { render, fireEvent, getByRole } from '@testing-library/react';
-import { latin } from '@bbc/gel-foundations/scripts';
+import { latin, arabic } from '@bbc/gel-foundations/scripts';
 import {
   Dropdown,
   DropdownUl,
@@ -78,6 +78,17 @@ describe('Canonical', () => {
         script={latin}
       />,
     );
+
+    shouldMatchSnapshot(
+      'should render rtl correctly',
+      <CanonicalMenuButton
+        announcedText="Menu"
+        onOpen={() => {}}
+        isOpen
+        onClose={() => {}}
+        script={arabic}
+      />,
+    );
   });
 
   describe('Closed menu button', () => {
@@ -124,6 +135,17 @@ describe('Canonical', () => {
         script={latin}
       />,
     );
+
+    shouldMatchSnapshot(
+      'should render rtl correctly',
+      <CanonicalMenuButton
+        announcedText="Menu"
+        onOpen={() => {}}
+        isOpen={false}
+        onClose={() => {}}
+        script={arabic}
+      />,
+    );
   });
 });
 
@@ -138,5 +160,10 @@ describe('AMP Menu Button', () => {
   shouldMatchSnapshot(
     'should render correctly',
     <AmpMenuButton announcedText="Menu" onToggle="" script={latin} />,
+  );
+
+  shouldMatchSnapshot(
+    'should render rtl correctly',
+    <AmpMenuButton announcedText="Menu" onToggle="" script={arabic} />,
   );
 });

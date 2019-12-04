@@ -119,6 +119,125 @@ exports[`AMP Menu Button should render correctly 1`] = `
 </html>
 `;
 
+exports[`AMP Menu Button should render rtl correctly 1`] = `
+<html>
+  <head>
+    <script
+      async="true"
+      custom-element="amp-bind"
+      src="https://cdn.ampproject.org/v0/amp-bind-0.1.js"
+    />
+  </head>
+  <body>
+    .c1 {
+  color: #fff;
+  fill: currentColor;
+}
+
+.c0 {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  background-color: transparent;
+  float: left;
+  height: 3.125rem;
+  width: 3.125rem;
+}
+
+.c0:hover,
+.c0:focus {
+  box-shadow: inset 0 0 0 0.25rem #FFFFFF;
+}
+
+.c0:hover::after,
+.c0:focus::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  border: 0.25rem solid #FFFFFF;
+}
+
+.c0 svg {
+  vertical-align: middle;
+}
+
+@media (min-width:37.5rem) {
+  .c0 {
+    display: none;
+    visibility: hidden;
+  }
+}
+
+@media (min-width:20rem) {
+  .c0 {
+    height: 3.125rem;
+    width: 3.125rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .c0 {
+    height: 3.125rem;
+    width: 3.125rem;
+  }
+}
+
+<div>
+      <amp-state
+        id="menuState"
+      >
+        <script
+          type="application/json"
+        >
+          {"expanded":false}
+        </script>
+      </amp-state>
+      <button
+        aria-expanded="false"
+        aria-label="Menu"
+        class="c0"
+        data-amp-bind-aria-expanded="menuState.expanded ? \\"true\\" : \\"false\\""
+        dir="ltr"
+        on="tap:AMP.setState({ menuState: { expanded: !menuState.expanded }});"
+      >
+        <svg
+          aria-hidden="true"
+          class="c1"
+          data-amp-bind-hidden="menuState.expanded"
+          focusable="false"
+          height="2.75rem"
+          viewBox="0 0 44 44"
+          width="2.75rem"
+        >
+          <path
+            d="M12 29h21v-2.333H12V29zm0-5.833h21v-2.334H12v2.334zM12 15v2.333h21V15H12z"
+          />
+        </svg>
+        <svg
+          aria-hidden="true"
+          class="c1"
+          data-amp-bind-hidden="!menuState.expanded"
+          focusable="false"
+          height="2.75rem"
+          hidden=""
+          viewBox="0 0 44 44"
+          width="2.75rem"
+        >
+          <path
+            d="M26.741 15L21.6 20.142 16.458 15 15 16.458l5.142 5.142L15 26.742l1.458 1.458 5.142-5.141 5.141 5.141 1.459-1.458-5.142-5.142 5.142-5.142z"
+            fill-rule="evenodd"
+          />
+        </svg>
+      </button>
+    </div>
+  </body>
+</html>
+`;
+
 exports[`Canonical Closed menu button should render correctly 1`] = `
 .c1 {
   color: #fff;
@@ -198,6 +317,85 @@ exports[`Canonical Closed menu button should render correctly 1`] = `
 </button>
 `;
 
+exports[`Canonical Closed menu button should render rtl correctly 1`] = `
+.c1 {
+  color: #fff;
+  fill: currentColor;
+}
+
+.c0 {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  background-color: transparent;
+  float: left;
+  height: 3.125rem;
+  width: 3.125rem;
+}
+
+.c0:hover,
+.c0:focus {
+  box-shadow: inset 0 0 0 0.25rem #FFFFFF;
+}
+
+.c0:hover::after,
+.c0:focus::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  border: 0.25rem solid #FFFFFF;
+}
+
+.c0 svg {
+  vertical-align: middle;
+}
+
+@media (min-width:37.5rem) {
+  .c0 {
+    display: none;
+    visibility: hidden;
+  }
+}
+
+@media (min-width:20rem) {
+  .c0 {
+    height: 3.125rem;
+    width: 3.125rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .c0 {
+    height: 3.125rem;
+    width: 3.125rem;
+  }
+}
+
+<button
+  aria-expanded="false"
+  aria-label="Menu"
+  class="c0"
+  dir="ltr"
+>
+  <svg
+    aria-hidden="true"
+    class="c1"
+    focusable="false"
+    height="2.75rem"
+    viewBox="0 0 44 44"
+    width="2.75rem"
+  >
+    <path
+      d="M12 29h21v-2.333H12V29zm0-5.833h21v-2.334H12v2.334zM12 15v2.333h21V15H12z"
+    />
+  </svg>
+</button>
+`;
+
 exports[`Canonical Open menu button should render correctly 1`] = `
 .c1 {
   color: #fff;
@@ -253,6 +451,86 @@ exports[`Canonical Open menu button should render correctly 1`] = `
   .c0 {
     height: 2.75rem;
     width: 2.75rem;
+  }
+}
+
+<button
+  aria-expanded="true"
+  aria-label="Menu"
+  class="c0"
+  dir="ltr"
+>
+  <svg
+    aria-hidden="true"
+    class="c1"
+    focusable="false"
+    height="2.75rem"
+    viewBox="0 0 44 44"
+    width="2.75rem"
+  >
+    <path
+      d="M26.741 15L21.6 20.142 16.458 15 15 16.458l5.142 5.142L15 26.742l1.458 1.458 5.142-5.141 5.141 5.141 1.459-1.458-5.142-5.142 5.142-5.142z"
+      fill-rule="evenodd"
+    />
+  </svg>
+</button>
+`;
+
+exports[`Canonical Open menu button should render rtl correctly 1`] = `
+.c1 {
+  color: #fff;
+  fill: currentColor;
+}
+
+.c0 {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  background-color: transparent;
+  float: left;
+  height: 3.125rem;
+  width: 3.125rem;
+}
+
+.c0:hover,
+.c0:focus {
+  box-shadow: inset 0 0 0 0.25rem #FFFFFF;
+}
+
+.c0:hover::after,
+.c0:focus::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  border: 0.25rem solid #FFFFFF;
+}
+
+.c0 svg {
+  vertical-align: middle;
+}
+
+@media (min-width:37.5rem) {
+  .c0 {
+    display: none;
+    visibility: hidden;
+  }
+}
+
+@media (min-width:20rem) {
+  .c0 {
+    height: 3.125rem;
+    width: 3.125rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .c0 {
+    height: 3.125rem;
+    width: 3.125rem;
   }
 }
 
