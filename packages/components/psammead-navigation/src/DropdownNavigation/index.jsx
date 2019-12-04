@@ -13,7 +13,6 @@ import Helmet from 'react-helmet';
 import {
   GEL_GROUP_3_SCREEN_WIDTH_MIN,
   GEL_GROUP_B_MIN_WIDTH,
-  GEL_GROUP_CD_MIN_WIDTH,
 } from '@bbc/gel-foundations/breakpoints';
 import { getPica } from '@bbc/gel-foundations/typography';
 import { scriptPropType } from '@bbc/gel-foundations/prop-types';
@@ -158,18 +157,6 @@ const MenuButton = styled.button`
     ${({ script }) => {
       const sideLength = `${calculateButtonSide(
         script.pica.groupB.lineHeight,
-      )}rem;`;
-      return (
-        script &&
-        `height: ${sideLength};
-        width: ${sideLength};`
-      );
-    }}
-  }
-  @media (min-width: ${GEL_GROUP_CD_MIN_WIDTH}rem) {
-    ${({ script }) => {
-      const sideLength = `${calculateButtonSide(
-        script.pica.groupD.lineHeight,
       )}rem;`;
       return (
         script &&

@@ -51,13 +51,6 @@ exports[`AMP Menu Button should render correctly 1`] = `
   }
 }
 
-@media (min-width:37.5rem) {
-  .c0 {
-    height: 2.75rem;
-    width: 2.75rem;
-  }
-}
-
 <html>
   <head>
     <script
@@ -179,13 +172,6 @@ exports[`AMP Menu Button should render rtl correctly 1`] = `
   }
 }
 
-@media (min-width:37.5rem) {
-  .c0 {
-    height: 3.125rem;
-    width: 3.125rem;
-  }
-}
-
 <div>
       <amp-state
         id="menuState"
@@ -289,13 +275,6 @@ exports[`Canonical Closed menu button should render correctly 1`] = `
   }
 }
 
-@media (min-width:37.5rem) {
-  .c0 {
-    height: 2.75rem;
-    width: 2.75rem;
-  }
-}
-
 <button
   aria-expanded="false"
   aria-label="Menu"
@@ -362,13 +341,6 @@ exports[`Canonical Closed menu button should render rtl correctly 1`] = `
 }
 
 @media (min-width:20rem) {
-  .c0 {
-    height: 3.125rem;
-    width: 3.125rem;
-  }
-}
-
-@media (min-width:37.5rem) {
   .c0 {
     height: 3.125rem;
     width: 3.125rem;
@@ -447,13 +419,6 @@ exports[`Canonical Open menu button should render correctly 1`] = `
   }
 }
 
-@media (min-width:37.5rem) {
-  .c0 {
-    height: 2.75rem;
-    width: 2.75rem;
-  }
-}
-
 <button
   aria-expanded="true"
   aria-label="Menu"
@@ -521,13 +486,6 @@ exports[`Canonical Open menu button should render rtl correctly 1`] = `
 }
 
 @media (min-width:20rem) {
-  .c0 {
-    height: 3.125rem;
-    width: 3.125rem;
-  }
-}
-
-@media (min-width:37.5rem) {
   .c0 {
     height: 3.125rem;
     width: 3.125rem;
