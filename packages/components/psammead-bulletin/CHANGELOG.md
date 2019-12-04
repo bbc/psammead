@@ -3,6 +3,13 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 1.0.0 | [PR#2756](https://github.com/BBC/psammead/pull/2756) Remove alpha tag |
+| 0.1.0-alpha.15 | [PR#2764](https://github.com/bbc/psammead/pull/2764) Use `mediaType` to apply `padding-right` to summary above 600px for Radio Bulletin only |
+| 0.1.0-alpha.14 | [PR#2761](https://github.com/bbc/psammead/pull/2761) Rename `type` to `mediaType` |
+| 0.1.0-alpha.13 | [PR#2760](https://github.com/bbc/psammead/pull/2760) Add `padding-right` to summary above 600px for Radio Bulletin only |
+| 0.1.0-alpha.12 | [PR#2755](https://github.com/bbc/psammead/pull/2755) Add `padding-right` to summary above 600px |
+| 0.1.0-alpha.11 | [PR#2744](https://github.com/bbc/psammead/pull/2744) Add a transparent border around PlayCTA |
+| 0.1.0-alpha.10 | [PR#2723](https://github.com/bbc/psammead/pull/2723) Add `offScreenText` prop |
 | 0.1.0-alpha.9 | [PR#2634](https://github.com/bbc/psammead/pull/2634) Add styling for desktop and tablet |
 | 0.1.0-alpha.8 | [PR#2705](https://github.com/bbc/psammead/pull/2705) Talos - Bump Dependencies - @bbc/psammead-assets |
 | 0.1.0-alpha.7 | [PR#2701](https://github.com/bbc/psammead/pull/2701) Talos - Bump Dependencies - @bbc/psammead-styles, @bbc/psammead-assets |

@@ -135,6 +135,7 @@ const IconWrapper = styled.span`
 
 const PlayCTA = styled.div.attrs({ 'aria-hidden': true })`
   background-color: ${({ isLive }) => (isLive ? C_POSTBOX : C_EBON)};
+  border: 0.0625rem solid transparent;
   ${({ service }) => service && getSansRegular(service)};
   ${({ script }) => script && getPica(script)};
   color: ${C_WHITE};
@@ -157,7 +158,8 @@ const BulletinSummary = styled.p`
   padding: 0 ${GEL_SPACING};
   @media(min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
     padding-left: 0;
-    padding-right: 0;
+    padding-right: ${({ mediaType }) =>
+      mediaType === 'audio' ? `${GEL_SPACING}` : `0`};
   }
   padding-bottom: ${GEL_SPACING_DBL};
 `;
@@ -192,14 +194,15 @@ const Bulletin = ({
   headlineText,
   summaryText,
   image,
-  type,
+  mediaType,
   ctaText,
   ctaLink,
   liveText,
   dir,
   lang,
+  offScreenText,
 }) => {
-  const isAudio = type === 'audio';
+  const isAudio = mediaType === 'audio';
   const BulletinWrapper = isAudio ? RadioBulletinWrapper : TVBulletinWrapper;
   const ImageWrapper = isAudio ? RadioImageWrapper : TVImageWrapper;
   const TextWrapper = isAudio ? RadioTextWrapper : TVTextWrapper;
@@ -214,7 +217,7 @@ const Bulletin = ({
             {/* eslint-disable jsx-a11y/aria-role */}
             <span role="text">
               <VisuallyHiddenText lang={lang}>
-                {isLive ? `${ctaText} ${liveText},` : `${ctaText},`}
+                {`${offScreenText},`}
               </VisuallyHiddenText>
               {isLive && (
                 <LiveLabel service={service} dir={dir}>
@@ -225,7 +228,11 @@ const Bulletin = ({
             </span>
           </Link>
         </BulletinHeading>
-        <BulletinSummary script={script} service={service} type={type}>
+        <BulletinSummary
+          script={script}
+          service={service}
+          mediaType={mediaType}
+        >
           {summaryText}
         </BulletinSummary>
         <PlayCTA
@@ -235,7 +242,7 @@ const Bulletin = ({
           isAudio={isAudio}
           dir={dir}
         >
-          <IconWrapper dir={dir}>{mediaIcons[type]}</IconWrapper>
+          <IconWrapper dir={dir}>{mediaIcons[mediaType]}</IconWrapper>
           {ctaText}
         </PlayCTA>
       </TextWrapper>
@@ -244,7 +251,7 @@ const Bulletin = ({
 };
 
 Bulletin.propTypes = {
-  type: oneOf(['video', 'audio']).isRequired,
+  mediaType: oneOf(['video', 'audio']).isRequired,
   isLive: bool,
   service: string.isRequired,
   script: shape(scriptPropType).isRequired,
@@ -256,6 +263,7 @@ Bulletin.propTypes = {
   liveText: string,
   dir: oneOf(['ltr', 'rtl']),
   lang: string,
+  offScreenText: string.isRequired,
 };
 
 Bulletin.defaultProps = {
