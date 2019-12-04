@@ -8,13 +8,11 @@ const getPackageNames = () => {
   for (let index = 0; index < PRs.length; index++) {
     branchName[index] = PRs[index].head.ref;
     if (branchName[index].includes('dependabot') === true) {
-      packageName[index] = PRs[index].title;
-      packageName[index] = packageName[index].substring(
-        packageName[index].lastIndexOf('p') + 1,
-        packageName[index].lastIndexOf('f'),
+      const PRTitle = PRs[index].title;
+      packageName[index] = PRTitle.substring(
+        PRTitle.lastIndexOf('p') + 1,
+        PRTitle.lastIndexOf('f'),
       );
-    } else {
-      delete packageName[index];
     }
   }
   return packageName;

@@ -1,6 +1,5 @@
 const axios = require('axios');
 
-const user = 'FK78';
 const authToken = process.env.GITHUB_TOKEN;
 
 const getPullRequests = async () => {
@@ -9,10 +8,7 @@ const getPullRequests = async () => {
     {
       headers: {
         'content-type': 'application/vnd.github.v3+json',
-      },
-      auth: {
-        username: user,
-        password: authToken,
+        Authorization: authToken,
       },
     },
   );
