@@ -7,11 +7,18 @@ import notes from '../README.md';
 import Bulletin from '.';
 
 /* eslint-disable react/prop-types */
-const BulletinComponent = ({ script, service, type, hasImage, dir, text }) => {
+const BulletinComponent = ({
+  script,
+  service,
+  mediaType,
+  hasImage,
+  dir,
+  text,
+}) => {
   const ctaLink = 'https://bbc.co.uk';
 
   const isLive = boolean('Live', false);
-  const ctaText = type === 'audio' ? 'Listen' : 'Watch';
+  const ctaText = mediaType === 'audio' ? 'Listen' : 'Watch';
   const offScreenText = isLive ? `${ctaText} Live` : ctaText;
 
   const image = (
@@ -24,7 +31,7 @@ const BulletinComponent = ({ script, service, type, hasImage, dir, text }) => {
   return (
     <Bulletin
       image={hasImage && image}
-      type={type}
+      mediaType={mediaType}
       isLive={isLive}
       script={script}
       service={service}
@@ -47,7 +54,7 @@ storiesOf('Components|Bulletin', module)
       <BulletinComponent
         script={script}
         service={service}
-        type="video"
+        mediaType="video"
         hasImage
         dir={dir}
         text={textSnipet}
@@ -64,7 +71,7 @@ storiesOf('Components|Bulletin', module)
         <BulletinComponent
           script={script}
           service={service}
-          type="audio"
+          mediaType="audio"
           hasImage={hasImage}
           dir={dir}
           text={textSnipet}
