@@ -5,7 +5,7 @@ const TEXT_EXAMPLES = {
       "MM Abiy Ahimed paartii isaanii ADWUI jedhamuun waggoota 28'f biyya bulchaa ture walitti baqsuun paartii Badhaadhinaa [PP] jedhamu hundeessaa jiru.",
     script: 'latin',
     locale: 'om',
-    path: '/afaanoromoo/articles/c4g19kgl85ko',
+    articlePath: '/afaanoromoo/articles/c4g19kgl85ko',
   },
   afrique: {
     text: "La femme qui s'est volatilisée après avoir arnaqué le monde",
@@ -13,7 +13,7 @@ const TEXT_EXAMPLES = {
       'Comment Ruja Ignatova a-t-elle gagné 4 milliards de dollars en vendant sa fausse monnaie numérique au monde - et où est-elle allée ?',
     script: 'latinDiacritics',
     locale: 'fr',
-    path: '/afrique/articles/cz216x22106o',
+    articlePath: '/afrique/articles/cz216x22106o',
   },
   amharic: {
     text: 'እንግሊዝ ከሩስያ ጦርነት ከገጠመች ከጦር መሣሪያ ውጭ ትሆናለች',
@@ -21,7 +21,7 @@ const TEXT_EXAMPLES = {
       'እንግሊዝ በምዕራብ አውሮጳ ከሩስያ ጋር የምትላተም ከሆነ የብሪታኒያ እግረኛ ወታደሮች ከጦር መሣሪያ ውጭ ይሆናሉ ይላል አንድ ቡድን።',
     script: 'ethiopic',
     locale: 'am',
-    path: '/amharic/articles/c3rykrrvy19o',
+    articlePath: '/amharic/articles/c3rykrrvy19o',
   },
   arabic: {
     text: 'لماذا يخجل البعض من اسم قريته في مصر؟',
@@ -30,7 +30,7 @@ const TEXT_EXAMPLES = {
     script: 'arabic',
     dir: 'rtl',
     locale: 'ar',
-    path: '/arabic/articles/c1er5mjnznzo',
+    articlePath: '/arabic/articles/c1er5mjnznzo',
   },
   azeri: {
     text: 'Azərbaycanın siyasi ailələrinin ikinci evi – İngiltərə',
@@ -38,7 +38,7 @@ const TEXT_EXAMPLES = {
       'Son aylarda müxtəlif səbəblərə görə Britaniya mətbuatında İngiltərədə yaşayan və ya burada biznesi olan azərbaycanlı məmurların ailə üzvlərinin adları qeyd olunub.',
     script: 'latinDiacritics',
     locale: 'az',
-    path: '/azeri/articles/c5k08pqnzexo',
+    articlePath: '/azeri/articles/c5k08pqnzexo',
   },
   bengali: {
     text: 'ভিসা ফুরিয়ে যাওয়ায় ক্রিকেটার সাইফের জরিমানা',
@@ -46,7 +46,7 @@ const TEXT_EXAMPLES = {
       'বিমানবন্দরে যাওয়ার আগে সাইফ দেখেন, তার ভিসার মেয়াদ দুদিন আগেই শেষ হয়ে গেছে। তখন জরিমানা দিয়ে তাকে আবার এক্সিট পারমিট নিতে হয়।',
     script: 'bengali',
     locale: 'bn',
-    path: '/bengali/articles/c6p3yp5zzmeo',
+    articlePath: '/bengali/articles/c6p3yp5zzmeo',
   },
   burmese: {
     text: 'အောက်စဖို့ဒ် ဆရာတော် ပါမောက္ခ ဒေါက်တာအရှင်ဓမ္မသာမိ',
@@ -54,7 +54,7 @@ const TEXT_EXAMPLES = {
       'တပ်မတော်နဲ့ ကရင်နယ်ခြားစောင့်တပ် BGF ပူးပေါင်းတပ်ဖွဲ့က MNLA ရဲ့ မြို့နယ်ခွဲရုံး ဖြစ်တဲ့ ဟင်္သာတိုင် ဂိတ်စခန်းနဲ့ ဂျပန်ရေတွင်းတို့ကို ထိန်းချုပ်ထားတယ်လို့ ဆိုပါတယ်။',
     script: 'burmese',
     locale: 'my',
-    path: '/burmese/articles/c3w1kwwmm5yo',
+    articlePath: '/burmese/articles/c3w1kwwmm5yo',
   },
   gahuza: {
     text: "Umukate n'isoda vyatumye amenya ko afise umugera wa SIDA",
@@ -62,7 +62,7 @@ const TEXT_EXAMPLES = {
       "Phenny Awiti ni umunyakenya agendana umugera wa SIDA, akaba yamenye ko awugendana mu mwaka wa 2008, ico gihe yiga mu mwaka w'icenda.",
     script: 'latin',
     locale: 'rw',
-    path: '/gahuza/articles/cey23zx8wx8o',
+    articlePath: '/gahuza/articles/cey23zx8wx8o',
   },
   gujarati: {
     text: 'જીતેન્દ્રસિંહ મૂળ ઉત્તર પ્રદેશના ફિરોઝાબાદના',
@@ -70,7 +70,7 @@ const TEXT_EXAMPLES = {
       'ભારતીય અભિનેત્રી ઐશ્વર્યા રાય સાથે અમિરીકી ફિલ્મ નિર્માતા હાર્વી વાઇનસ્ટીન, જેના પર અનેક અભિનેત્રીઓના યૌન શોષણના આરોપો મુકાઈ રહ્યા છે',
     script: 'hindi',
     locale: 'gu',
-    path: '/gujarati/articles/cr5el5kw591o',
+    articlePath: '/gujarati/articles/cr5el5kw591o',
   },
   hausa: {
     text: 'Bayanin Ganduje kan ayyukan Gama',
@@ -78,7 +78,7 @@ const TEXT_EXAMPLES = {
       'Zhara ta ce za ta yi amfani da kudaden ne wajen tafiyar da gidauniyarta mai tallafa wa marayu a fadin Najeriya.',
     script: 'latin',
     locale: 'ha',
-    path: '/hausa/articles/c2nr6xqmnewo',
+    articlePath: '/hausa/articles/c2nr6xqmnewo',
   },
   hindi: {
     text: 'भारतीय खाने पर दुनिया में क्यों छिड़ी बहस',
@@ -86,7 +86,7 @@ const TEXT_EXAMPLES = {
       'मई तक ये कहानियां या तो अनकही हो गई थीं या इनके बारे में दबी हुई आवाज़ में बात की जा रही थी. लेकिन अब मामला जोर पकड़ रहा है.',
     script: 'hindi',
     locale: 'hi',
-    path: '/hindi/articles/c0469479x9xo',
+    articlePath: '/hindi/articles/c0469479x9xo',
   },
   igbo: {
     text: 'Etu e si achụ nwaanyị taa na mgbe gboo',
@@ -94,7 +94,7 @@ const TEXT_EXAMPLES = {
       'Ọtụtụ mgbe ka ndị mmadụ na-emerụ ahụ maọbụ nwụọ ebe ha na-enyere mmadụ ibe ha aka mana lee ka ị ga-esi gbanarị ọdachị a.',
     script: 'latinDiacritics',
     locale: 'ig',
-    path: '/igbo/articles/cr1lw620ygjo',
+    articlePath: '/igbo/articles/cr1lw620ygjo',
   },
   indonesia: {
     text:
@@ -103,7 +103,7 @@ const TEXT_EXAMPLES = {
       'Seorang perempuan yang menyebut dirinya ratu kripto dan meraup US$4 miliar atau Rp56 triliun dengan menjual mata uang digital palsu dan kemudian menghilang.',
     script: 'latin',
     locale: 'id',
-    path: '/indonesia/articles/c0q2zq8pzvzo',
+    articlePath: '/indonesia/articles/c0q2zq8pzvzo',
   },
   japanese: {
     text: '度目の採決認めなかった理由は',
@@ -111,7 +111,7 @@ const TEXT_EXAMPLES = {
       'バラク・オバマ前米大統領など各国の著名人が訪れることで有名な東京のすし店が、レストランガイド「ミシュラン」の最新版から除外された。一般客からの予約を受け付けなくなったため。',
     script: 'chinese',
     locale: 'ja',
-    path: '/japanese/articles/c693w95w0mko',
+    articlePath: '/japanese/articles/c693w95w0mko',
   },
   korean: {
     text: '마이크 폼페이오 미국 국무장관',
@@ -119,7 +119,7 @@ const TEXT_EXAMPLES = {
       '유출된 문서를 통해 중국이 철통보안의 감옥에서 어떻게 수십만 명의 무슬림들을 조직적으로 세뇌하고 있는지가 상세하게 드러났다.',
     script: 'korean',
     locale: 'ko',
-    path: '/korean/articles/cpv9kv2yzk6o',
+    articlePath: '/korean/articles/cpv9kv2yzk6o',
   },
   kyrgyz: {
     text: 'Казакстан Назарбаевден башка президентти көрө',
@@ -127,7 +127,7 @@ const TEXT_EXAMPLES = {
       'Кыргыз Республикасынын Жогорку Кеңешинин депутаты Каныбек Иманалиевдин Чыңгыз Айтматовдун 90 жылдыгына арналган илимий-практикалык конференцияда сүйлөгөн сөзү.',
     script: 'cyrillic',
     locale: 'ky',
-    path: '/kyrgyz/articles/c3xd4xg3rm9o',
+    articlePath: '/kyrgyz/articles/c3xd4xg3rm9o',
   },
   marathi: {
     text: 'तो फोटो मुंबईकर आजही विसरू शकलेले नाहीत.',
@@ -135,7 +135,7 @@ const TEXT_EXAMPLES = {
       "तो फोटो मुंबईकर आजही विसरू शकलेले नाहीत. पण त्या फोटोनं मिळालेल्या प्रसिद्धीपासून डि'सुझा यांनी दूर राहणंच पसंत केलं. पण त्या फोटोनं मिळालेल्या प्रसिद्धीपासून डि'सुझा यांनी दूर राहणंच पसंत केलं.",
     script: 'hindi',
     locale: 'mr',
-    path: '/marathi/articles/cp47g4myxz7o',
+    articlePath: '/marathi/articles/cp47g4myxz7o',
   },
   mundo: {
     text: 'Lo que todos podemos aprender de esta foto de un hombre',
@@ -143,7 +143,7 @@ const TEXT_EXAMPLES = {
       'Colombia entra a su sexto día de protestas sin que se resuelvan dos preguntas clave: cuál es el problema y cuáles las soluciones. Uno de expertos en el país más famosos del mundo, el economista británico James Robinson, habló con BBC Mundo sobre esta complejidad histórica.',
     script: 'latinDiacritics',
     locale: 'es',
-    path: '/mundo/articles/ce42wzqr2mko',
+    articlePath: '/mundo/articles/ce42wzqr2mko',
   },
   nepali: {
     text: "नेपाललाई तीनवटा जलमार्ग प्रयोग गर्न दिन भारत 'सहमत",
@@ -151,7 +151,7 @@ const TEXT_EXAMPLES = {
       'काठमाण्डूमा बुधवार भएको नेपाल र भारतका अधिकारीहरूको एउटा बैठकमा भारत नेपाललाई आफ्ना तीनवटा जलमार्गहरू प्रयोग गर्न दिन सहमत भएको उक्त बैठकमा सहभागी नेपाली अधिकारीले बताएका छन्।',
     script: 'nepali',
     locale: 'ne',
-    path: '/nepali/articles/cl90j9m3mn6o',
+    articlePath: '/nepali/articles/cl90j9m3mn6o',
   },
   news: {
     text: 'Could a computer ever create better art than a human?',
@@ -159,7 +159,7 @@ const TEXT_EXAMPLES = {
       'The critic, author, poet and TV host was known for his witty commentary on international television.',
     script: 'latin',
     locale: 'en',
-    path: '/news/articles/cn7k01xp8kxo',
+    articlePath: '/news/articles/cn7k01xp8kxo',
   },
   pashto: {
     text:
@@ -169,7 +169,7 @@ const TEXT_EXAMPLES = {
     script: 'arabicPashto',
     dir: 'rtl',
     locale: 'ps',
-    path: '/pashto/articles/cyjmdl92z3ro',
+    articlePath: '/pashto/articles/cyjmdl92z3ro',
   },
   persian: {
     text:
@@ -179,7 +179,7 @@ const TEXT_EXAMPLES = {
     script: 'arabic',
     dir: 'rtl',
     locale: 'fa',
-    path: '/persian/articles/cej3lzd5e0go',
+    articlePath: '/persian/articles/cej3lzd5e0go',
   },
   pidgin: {
     text: 'Tins you need to know about Babcock University',
@@ -187,7 +187,7 @@ const TEXT_EXAMPLES = {
       'Before di agreement workers union bin dey demand 29 per cent increase for workers wey dey collect salary wey pass N30,000.',
     script: 'latin',
     locale: 'pcm',
-    path: '/pidgin/articles/cwl08rd38l6o',
+    articlePath: '/pidgin/articles/cwl08rd38l6o',
   },
   portuguese: {
     text: 'Como dormir melhor (e em menos tempo)',
@@ -195,7 +195,7 @@ const TEXT_EXAMPLES = {
       'Medidas anunciadas no encontro entre Bolsonaro e Trump celebram aproximação com o governo americano - mas elas agora precisam passar pelo teste da concretização',
     script: 'latinDiacritics',
     locale: 'pt-br',
-    path: '/portuguese/articles/cd61pm8gzmpo',
+    articlePath: '/portuguese/articles/cd61pm8gzmpo',
   },
   punjabi: {
     text: 'ਲਾਲ ਰਾਜਮਾਂਹ ਤੇ ਸੋਇਆਬੀਨ ਸਣੇ ਖਾਣ ਦੀਆਂ 5 ‘ਖ਼ਤਰਨਾਕ’ ਚੀਜ਼ਾਂ',
@@ -203,7 +203,7 @@ const TEXT_EXAMPLES = {
       'ਪਾਕਿਸਤਾਨੀ ਮਹਿਲਾ ਰਾਹਿਲਾ ਨੇ ਭਾਰਤੀ ਵਕੀਲ ਜ਼ਰੀਏ ਅਦਾਲਤ ਵਿੱਚ ਦਿੱਤੀ ਅਰਜ਼ੀ ਵਿੱਚ ਕਿਹਾ ਕਿ ਮਾਮਲੇ ਨਾਲ ਜੁੜੇ ਪਾਕਿਸਤਾਨੀ ਗਵਾਹਾਂ ਨੂੰ ਬੁਲਾਇਆ ਜਾਵੇ ਜੁੜੇ ਪਾਕਿਸਤਾਨੀ ਗਵਾਹਾਂ ਨੂੰ ਬੁਲਾਇਆ ਜਾਵੇ ਜੁੜੇ ਪਾਕਿਸਤਾਨੀ ਗਵਾਹਾਂ ਨੂੰ ਬੁਲਾਇਆ ਜਾਵੇ',
     script: 'hindi',
     locale: 'pa-in',
-    path: '/punjabi/articles/c0l79lr39qyo',
+    articlePath: '/punjabi/articles/c0l79lr39qyo',
   },
   russian: {
     text: 'Последняя воля: чем тронуло мир фото умирающего американца?',
@@ -211,7 +211,7 @@ const TEXT_EXAMPLES = {
       'Фотография умирающего пожилого человека, который решил в последний раз выпить пива в окружении своих родных, неожиданно нашла отклик у очень многих людей по всему миру. Почему?',
     script: 'cyrillic',
     locale: 'ru',
-    path: '/russian/articles/ck7pz7re3zgo',
+    articlePath: '/russian/articles/ck7pz7re3zgo',
   },
   serbianCyr: {
     service: 'serbian',
@@ -221,7 +221,7 @@ const TEXT_EXAMPLES = {
       'Захтеви за оставкама чланова владе Србије, из различитих разлога, одјекивали су у медијима више пута него што је оставки заиста било.',
     script: 'cyrillic',
     locale: 'sr-cyrl',
-    path: '/serbian/articles/c805k05kr73o/cyr',
+    articlePath: '/serbian/articles/c805k05kr73o/cyr',
   },
   serbianLat: {
     service: 'serbian',
@@ -231,7 +231,7 @@ const TEXT_EXAMPLES = {
       'Zahtevi za ostavkama članova vlade Srbije, iz različitih razloga, odjekivali su u medijima više puta nego što je ostavki zaista bilo.',
     script: 'latin',
     locale: 'sr',
-    path: '/serbian/articles/c805k05kr73o/lat',
+    articlePath: '/serbian/articles/c805k05kr73o/lat',
   },
   sinhala: {
     text: 'සිවිල් යුද ගැටුම් හමුවේ කොටු වී සිටි සිවිල් වැසියන්',
@@ -239,7 +239,7 @@ const TEXT_EXAMPLES = {
       'ජනාධිපතිවරණයට පෙර එම ගිවිසුමට අනිවාර්යයෙන්ම අත්සන් තබන බවට නව ප්‍රජාතන්ත්‍රවාදී පෙරමුණ අවධාරණය කළ අතර, ශ්‍රී ලංකා පොදුජන පෙරමුණ චෝදනා කළේ, එය "ඇමෙරිකානු මර උගුලක්" වන අතර ඒ හරහා ඇමෙරිකාවට ශ්‍රී ලංකාවේ ඉඩම් "කුණු කොල්ලයට" විකිණෙන බවටය.',
     script: 'sinhalese',
     locale: 'si',
-    path: '/sinhala/articles/c45w255zlexo',
+    articlePath: '/sinhala/articles/c45w255zlexo',
   },
   somali: {
     text:
@@ -248,7 +248,7 @@ const TEXT_EXAMPLES = {
       '"Sidey ugu suurtagashay Ruja Ignatova inay sameyso lacag dhan $4bilyan oo doolar iyadoo caalamka oo dhan ka iibineysa barnaamij been abuur ah oo ay ku sheegeysay in lacagta ay ku labajibbaareyso - xaggeyse aadday?"',
     script: 'latin',
     locale: 'so',
-    path: '/somali/articles/cgn6emk3jm8o',
+    articlePath: '/somali/articles/cgn6emk3jm8o',
   },
   swahili: {
     text: 'Tetesi za soka Ulaya Jumatano tarehe 27.11.2019',
@@ -256,7 +256,7 @@ const TEXT_EXAMPLES = {
       'Rais aliyechaguliwa na wengi atahitaji washirika wangi bungeni kuhakikisha kwamba kuna upitishwaji wa haraka wa miswada mbali na kuidhinisha maswala muhimu ya biashara za serikali iwapo mapendekezo ya BBI yatakubalika.',
     script: 'latin',
     locale: 'sw',
-    path: '/swahili/articles/czjqge2jwn2o',
+    articlePath: '/swahili/articles/czjqge2jwn2o',
   },
   tamil: {
     text:
@@ -265,7 +265,7 @@ const TEXT_EXAMPLES = {
       'மகாராஷ்டிராவில் சிவசேனை கட்சித் தலைமையில் அமையவுள்ள புதிய மாநில அரசாங்கத்தில் தேசியவாத காங்கிரஸ் கட்சிக்கு ஒரு துணை முதல்வர் பதவி வழங்கப்படும்; காங்கிரஸை சேர்ந்தவர் சபாநாயகராக தேர்வு செய்யப்படுவார்.',
     script: 'tamil',
     locale: 'ta',
-    path: '/tamil/articles/cwl08ll3me8o',
+    articlePath: '/tamil/articles/cwl08ll3me8o',
   },
   telugu: {
     text:
@@ -274,7 +274,7 @@ const TEXT_EXAMPLES = {
       'చైనా ప్రభుత్వం ఈ కాన్సంట్రేషన్ క్యాంపులను విద్య, శిక్షణ కేంద్రాలుగా చెబుతోంది. చైనా ప్రభుత్వం వీగర్ ముస్లింల విషయంలో వ్యవహరిస్తున్న తీరుపై ఫిరోజా ఆది, సోమవారాల్లో మూడు వీడియోలు పోస్ట్ చేశారు.',
     script: 'hindi',
     locale: 'te',
-    path: '/telugu/articles/cq0y4008d4vo',
+    articlePath: '/telugu/articles/cq0y4008d4vo',
   },
   thai: {
     text: 'ภาพวาดของตำรวจจากใบหน้าผู้เสียชีวิต',
@@ -282,7 +282,7 @@ const TEXT_EXAMPLES = {
       'คุณนึกภาพคนที่เรียนจบมหาวิทยาลัยด้วยวัยเพียง 9 ขวบออกไหม โลรองต์ ไซมอนส์ จากเบลเยี่ยมคือคนคนนั้น เดือน ธ.ค. นี้ เขาจะได้รับปริญญาตรีสาขาวิศวกรรมไฟฟ้า จากมหาวิทยาลัยเทคโนโลยีไอนด์โฮเวน (Eindhoven University of Technology) ครูและคนหลายคนเรียกเขาว่าอัจฉริยะ เขามีแผนการหลายอย่างในอนาคต รวมถึงการเรียนระดับปริญญาเอก',
     script: 'thai',
     locale: 'th',
-    path: '/thai/articles/c3qxeqm7ldjo',
+    articlePath: '/thai/articles/c3qxeqm7ldjo',
   },
   tigrinya: {
     text: 'ዓብዱራሕማን ኣቡሃሽም ሰሜናዊ ቀይሕ',
@@ -290,7 +290,7 @@ const TEXT_EXAMPLES = {
       'ኣብ ኤርትራ ዞባ ሰሜናዊ ቀይሕ ባሕሪ ከባቢ ጋሕቴላይ ዝተራእየ ወረር ኣንበጣ ምድረበዳ ምሉእ ብምሉእ ኣብ ትሕቲ ቁጽጽር ከም ዝኣተወ ሚኒስትሪ ሕርሻ ኣፍሊጡ።',
     script: 'ethiopic',
     locale: 'ti',
-    path: '/tigrinya/articles/c12g32eldk6o',
+    articlePath: '/tigrinya/articles/c12g32eldk6o',
   },
   turkce: {
     text: "Dünyanın ilk HIV-pozitif sperm bankası Yeni Zelanda'da açıldı",
@@ -298,7 +298,7 @@ const TEXT_EXAMPLES = {
       "HIV pozitif olan bağışçılar için dünyanın ilk sperm bankası, hastalıkla ilgili önyargılarla mücadele amacıyla Yeni Zelanda'da açıldı. Bulaşılık düzeyleri tespit edilemeyecek seviyede düşük olan üç HIV pozitif erkek, şimdiden sperm bankasına bağışta bulundu.",
     script: 'latin',
     locale: 'tr',
-    path: '/turkce/articles/c8q1ze59n25o',
+    articlePath: '/turkce/articles/c8q1ze59n25o',
   },
   ukChinaSimp: {
     service: 'ukchina',
@@ -308,7 +308,7 @@ const TEXT_EXAMPLES = {
       '但在当今世界，尽管许多人已不再把步行作为一种主要的出行方式，但巴黎仍然是属于孤僻、哲学式观察者的理想城市。毕竟，法国人习惯于花时间以文学和哲学的方式观察和思考周围的环境',
     script: 'chinese',
     locale: 'zh-cn',
-    path: '/ukchina/articles/c0e8weny66ko/simp',
+    articlePath: '/ukchina/articles/c0e8weny66ko/simp',
   },
   ukChinaTrad: {
     service: 'ukchina',
@@ -318,7 +318,7 @@ const TEXT_EXAMPLES = {
       '但在當今世界，儘管許多人已不再把步行作為一種主要的出行方式，但巴黎仍然是屬於孤僻、哲學式觀察者的理想城市。畢竟，法國人習慣於花時間以文學和哲學的方式觀察和思考周圍的環境',
     script: 'chinese',
     locale: 'zh-tw',
-    path: '/ukchina/articles/c0e8weny66ko/trad',
+    articlePath: '/ukchina/articles/c0e8weny66ko/trad',
   },
   ukrainian: {
     text:
@@ -327,7 +327,7 @@ const TEXT_EXAMPLES = {
       "Альфред Честнат, Ендр Стюарт і Ренсом Воткінс потрапили за ґрати ще у 1984 році. З'ясувалося, вони ні в чому не винні, ні в чому не винні",
     script: 'cyrillic',
     locale: 'uk',
-    path: '/ukrainian/articles/c0glz45kqz6o',
+    articlePath: '/ukrainian/articles/c0glz45kqz6o',
   },
   urdu: {
     text: 'وزیراعظم ریٹائرڈ جرنیل کو فوج کا سربراہ مقرر کر سکتے ہیں',
@@ -336,7 +336,7 @@ const TEXT_EXAMPLES = {
     script: 'arabic',
     dir: 'rtl',
     locale: 'ur',
-    path: '/urdu/articles/cwgq7rzv172o',
+    articlePath: '/urdu/articles/cwgq7rzv172o',
   },
   uzbek: {
     text:
@@ -345,7 +345,7 @@ const TEXT_EXAMPLES = {
       'Ўзбекистон: 12 йиллик муҳожиратдан кейин Ватанга қайтган фаол вафот этди - Толиб Ёқубов мустақил Ўзбекистондаги илк ва энг таниқли инсон ҳуқуқлари ҳимоячиларидан бири эди. У Каримов даврида Ўзбекистонни тарк этишга мажбур бўлган, муҳожиратда экан, фуқароликдан маҳрум этилганди.',
     script: 'cyrillic',
     locale: 'uz',
-    path: '/uzbek/articles/cxj3rjxm6r0o',
+    articlePath: '/uzbek/articles/cxj3rjxm6r0o',
   },
   vietnamese: {
     text: 'Ông Nazarbayev bất ngờ tuyên bố từ chức hôm 19/3/2019',
@@ -353,7 +353,7 @@ const TEXT_EXAMPLES = {
       'Lợi nhuận tại các công ty công nghiệp Trung Quốc tiếp tục trượt giảm trong tháng 10, thể hiện sự suy giảm mạnh nhất từ 2011.',
     script: 'latinDiacritics',
     locale: 'vi',
-    path: '/vietnamese/articles/c3y59g5zm19o',
+    articlePath: '/vietnamese/articles/c3y59g5zm19o',
   },
   yoruba: {
     text: 'Wo àwọn òrílẹ̀ èdè Mẹ́wàá tó láyọ̀ jùlọ Lágbàyé',
@@ -361,7 +361,7 @@ const TEXT_EXAMPLES = {
       'Ni ipinlẹ Zamfara, ailesan owo tabua tawọn Gomina n gba ni owo ifẹyinti, mu ki awọn aṣofin wọgile ofin to ya owo yii sọtọ fun wọn.',
     script: 'latin',
     locale: 'yo',
-    path: '/yoruba/articles/clw06m0nj8qo',
+    articlePath: '/yoruba/articles/clw06m0nj8qo',
   },
   zhongwenSimp: {
     service: 'zhongwen',
@@ -371,7 +371,7 @@ const TEXT_EXAMPLES = {
       '香港区议会选举以民主派大胜结束。中国官方在大陆的媒体只发出简讯，告知公众选举结束，并未交代哪方获胜及失败。不过，连续两日，官方将矛头对准美国。',
     script: 'chinese',
     locale: 'zh-hans',
-    path: '/zhongwen/articles/c3xd4x9prgyo/simp',
+    articlePath: '/zhongwen/articles/c3xd4x9prgyo/simp',
   },
   zhongwenTrad: {
     service: 'zhongwen',
@@ -381,7 +381,7 @@ const TEXT_EXAMPLES = {
       '香港區議會選舉以民主派大勝結束。中國官方在大陸的媒體只發出簡訊，告知公眾選舉結束，並未交代哪方獲勝及失敗。不過，連續兩日，官方將矛頭對凖美國。',
     script: 'chinese',
     locale: 'zh-hant',
-    path: '/zhongwen/articles/c3xd4x9prgyo/trad',
+    articlePath: '/zhongwen/articles/c3xd4x9prgyo/trad',
   },
 };
 

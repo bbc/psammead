@@ -27,12 +27,18 @@ export default ({
     ? getService(selectedService)(TEXT_EXAMPLES)
     : selectedService;
 
-  const { text, longText, script, locale, dir = 'ltr' } = TEXT_EXAMPLES[
-    selectedService
-  ];
+  const {
+    text,
+    articlePath,
+    longText,
+    script,
+    locale,
+    dir = 'ltr',
+  } = TEXT_EXAMPLES[selectedService];
 
   const storyProps = {
     text,
+    articlePath,
     longText,
     script: scripts[script],
     locale,

@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 8.1.6 | [PR#2753](https://github.com/bbc/psammead/pull/2753) Export articlePaths through service knobs |
 | 8.1.5 | [PR#2753](https://github.com/bbc/psammead/pull/2753) Add article paths to text-variants |
 | 8.1.4 | [PR#2704](https://github.com/bbc/psammead/pull/2704) Add longText to TEXT_EXAMPLES and add value to storyProp |
 | 8.1.3 | [PR#2704](https://github.com/bbc/psammead/pull/2704) Add default value to variant |
