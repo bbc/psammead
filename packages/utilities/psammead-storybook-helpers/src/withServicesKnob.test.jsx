@@ -2,7 +2,7 @@ import { render, waitForDomChange } from '@testing-library/react';
 import * as knobs from '@storybook/addon-knobs';
 import * as scripts from '@bbc/gel-foundations/scripts';
 import withServicesKnob from './withServicesKnob';
-import TEXT_EXAMPLES from './text-variants';
+import TEXT_VARIANTS from './text-variants';
 
 it('should correctly configure the default story book dropdown', () => {
   const storyFn = () => {};
@@ -12,7 +12,7 @@ it('should correctly configure the default story book dropdown', () => {
 
   expect(knobs.select).toHaveBeenCalledWith(
     'Select a service',
-    Object.keys(TEXT_EXAMPLES),
+    Object.keys(TEXT_VARIANTS),
     'news',
   );
 });

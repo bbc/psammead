@@ -4,7 +4,7 @@ This package provides a collection of common values that are used in storybook b
 
 ## Exports
 
-`TEXT_EXAMPLES` - A list of text samples in different languages, with the script and direction that should be used for that language.
+`TEXT_VARIANTS` - A list of text samples in different languages, with the script and direction that should be used for that language.
 
 `withServicesKnob` - Is a function that returns a storybook decorator function that adds a `Select a service` dropdown to the knobs panel. When a service is selected from the dropdown it does 2 things:
 
@@ -41,19 +41,19 @@ npm install @bbc/psammead-storybook-helpers --save-dev
 
 ## Usage
 
-### TEXT_EXAMPLES
+### TEXT_VARIANTS
 
 <!-- prettier-ignore -->
 ```jsx
 import { select } from '@storybook/addon-knobs';
-import { TEXT_EXAMPLES } from '@bbc/psammead-storybook-helpers';
+import { TEXT_VARIANTS } from '@bbc/psammead-storybook-helpers';
 
 const label = 'Languages';
 const defaultValue = 'This is a caption';
 const groupIdentifier = 'CAPTION VARIANTS';
 
 <Caption>
-  {select(label, TEXT_EXAMPLES, TEXT_EXAMPLES.news, groupIdentifier).text}
+  {select(label, TEXT_VARIANTS, TEXT_VARIANTS.news, groupIdentifier).text}
 </Caption>;
 ```
 
