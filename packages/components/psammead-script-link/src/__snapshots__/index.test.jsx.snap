@@ -16,7 +16,7 @@ exports[`ScriptLink should render correctly 1`] = `
   height: 3rem;
 }
 
-.c0::after {
+.c0::before {
   content: '';
   position: absolute;
   top: 0;
@@ -26,8 +26,8 @@ exports[`ScriptLink should render correctly 1`] = `
   border: 0.0625rem solid #FFFFFF;
 }
 
-.c0:hover::after,
-.c0:focus::after {
+.c0:hover::before,
+.c0:focus::before {
   border: 0.25rem solid #FFFFFF;
 }
 
@@ -45,12 +45,6 @@ exports[`ScriptLink should render correctly 1`] = `
   }
 }
 
-@media (min-width:25rem) {
-  .c0 {
-    line-height: 3rem;
-  }
-}
-
 @media (max-width:24.9375rem) {
   .c0 {
     line-height: 2.5rem;
@@ -59,11 +53,41 @@ exports[`ScriptLink should render correctly 1`] = `
   }
 }
 
+@media (min-width:25rem) {
+  .c0 {
+    line-height: 3rem;
+  }
+
+  .c0::after {
+    content: '';
+    position: absolute;
+    top: -0.25rem;
+    left: -0.25rem;
+    right: 0;
+    bottom: 0;
+    height: 2.75rem;
+    width: 2.75rem;
+    margin: 0 0.25rem;
+  }
+}
+
 @media (min-width:37.5rem) {
   .c0 {
     height: 2.25rem;
     line-height: 2.25rem;
     padding: 0 0.625rem;
+  }
+
+  .c0::after {
+    content: '';
+    position: absolute;
+    top: -0.25rem;
+    left: -0.25rem;
+    right: 0;
+    bottom: 0;
+    height: 2.75rem;
+    width: 2.75rem;
+    margin: 0 0.25rem;
   }
 }
 
