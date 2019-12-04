@@ -19,7 +19,7 @@ import { getPica } from '@bbc/gel-foundations/typography';
 import { scriptPropType } from '@bbc/gel-foundations/prop-types';
 import { getSansRegular } from '@bbc/psammead-styles/font-styles';
 
-const MENU_BUTTON_TOP_BOTTOM_SPACING = 0.75; // 12px - must be the same as TOP_BOTTOM_SPACING in ../index.jsx
+export const NAV_BAR_TOP_BOTTOM_SPACING = 0.75; // 12px
 
 const getStyles = dir => {
   const direction = dir === 'ltr' ? 'left' : 'right';
@@ -122,7 +122,7 @@ const iconBorder = css`
 // The sideLength of the button should be
 //  line height + top padding + bottom padding
 const calculateButtonSide = lineHeight =>
-  lineHeight / 16 + MENU_BUTTON_TOP_BOTTOM_SPACING * 2;
+  lineHeight / 16 + NAV_BAR_TOP_BOTTOM_SPACING * 2;
 
 const MenuButton = styled.button`
   position: relative;
