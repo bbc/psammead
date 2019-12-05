@@ -24,10 +24,10 @@ npm install @bbc/psammead-bulleted-list --save
 
 ## Usage
 
-Use `BulletedList` in place of a `ul` element with required props. It styles all its direct `li` children.
+Use `BulletedList` in place of a `ul` element with required props and a `BulletedListItem` in place of an `li`.
 
 ```jsx
-import BulletedList from "@bbc/psammead-bulleted-list";
+import BulletedList, { BulletedListItem } from "@bbc/psammead-bulleted-list";
 
 const props = {
   dir: 'ltr',
@@ -36,8 +36,8 @@ const props = {
 };
 
 <BulletedList {...props}>
-  <li>A list item</li>
-  <li>Another item</li>
+  <BulletedListItem>A list item</BulletedListItem>
+  <BulletedListItem>Another item</BulletedListItem>
 </BulletedList>
 
 ```
@@ -52,7 +52,9 @@ It's not ideal for when you need a custom bullet. Use the standard `<ul>` instea
 
 ### Accessibility notes
 
-The bullets in `psammead-bulleted-lists` are not read by screen readers and are generated using pseudo-elements.
+- The bullets in `psammead-bulleted-lists` are not read by screen readers and are generated using pseudo-elements.
+
+- We have added role list and role listitem to the corresponding items due to a VoiceOver bug to reinstate the list semantics
 
 <!-- Roadmap -->
 
