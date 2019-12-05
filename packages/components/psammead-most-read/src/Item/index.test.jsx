@@ -3,7 +3,7 @@ import { shouldMatchSnapshot } from '@bbc/psammead-test-helpers';
 import Timestamp from '@bbc/psammead-timestamp';
 import { latin, arabic } from '@bbc/gel-foundations/scripts';
 import { MostReadLink, MostReadRank } from '.';
-import { getItem } from '../testHelpers/fixtureData';
+import { getItem } from '../testHelpers/itemsHelper';
 
 const lastUpdated = (script, service) => (
   <Timestamp
