@@ -11,6 +11,7 @@ describe('Media Player: AMP Entry', () => {
       title="Media player"
       height={16}
       width={9}
+      noJsMessage="no js"
     />,
   );
 
@@ -23,6 +24,7 @@ describe('Media Player: AMP Entry', () => {
       title="Media player"
       height={9}
       width={16}
+      noJsMessage="no js"
     />,
   );
 
@@ -36,6 +38,7 @@ describe('Media Player: AMP Entry', () => {
       title="Audio player"
       height={9}
       width={16}
+      noJsMessage="no js"
     />,
   );
 });
@@ -55,6 +58,7 @@ describe('Media Player: Canonical Entry', () => {
       service="news"
       mediaInfo={{ title: 'Dog chases cat.', ...mediaInfo }}
       title="Media player"
+      noJsMessage="no js"
     />,
   );
 
@@ -67,6 +71,7 @@ describe('Media Player: Canonical Entry', () => {
       service="news"
       mediaInfo={{ title: 'Dog chases cat.', ...mediaInfo }}
       title="Media player"
+      noJsMessage="no js"
     />,
   );
 
@@ -78,6 +83,7 @@ describe('Media Player: Canonical Entry', () => {
       service="news"
       mediaInfo={{ title: 'Dog chases cat.', ...mediaInfo }}
       title="Media player"
+      noJsMessage="no js"
     />,
   );
 
@@ -90,6 +96,7 @@ describe('Media Player: Canonical Entry', () => {
       service="news"
       mediaInfo={{ type: 'audio', title: 'Dog barks at cat.', ...mediaInfo }}
       title="Audio player"
+      noJsMessage="no js"
     />,
   );
 
@@ -106,6 +113,7 @@ describe('Media Player: Canonical Entry', () => {
         ...mediaInfo,
       }}
       title="Media player"
+      noJsMessage="no js"
     />,
   );
 
