@@ -3,7 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
-| 6.0.0-alpha.8 | [PR#xxxx](https://github.com/bbc/psammead/pull/xxxx) Fix menu border in FireFox high contrast mode |
+| 6.0.0-alpha.8 | [PR#2778](https://github.com/bbc/psammead/pull/2778) Fix menu border in FireFox high contrast mode |
 | 6.0.0-alpha.7 | [PR#2771](https://github.com/bbc/psammead/pull/2771) Spread the `on` prop (and others) onto the button, and set AMP Nav menu button initial state |
 | 6.0.0-alpha.6 | [PR#2769](https://github.com/bbc/psammead/pull/2769) Add `isOpen` prop to `Navigation` |
 | 6.0.0-alpha.5 | [PR#2759](https://github.com/bbc/psammead/pull/2759) Change size of menu button depending on script |
