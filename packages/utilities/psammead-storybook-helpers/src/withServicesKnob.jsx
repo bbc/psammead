@@ -3,10 +3,10 @@ import path from 'ramda/src/path';
 import { Helmet } from 'react-helmet';
 import { select } from '@storybook/addon-knobs';
 import * as scripts from '@bbc/gel-foundations/scripts';
-import TEXT_EXAMPLES from './text-variants';
+import TEXT_VARIANTS from './text-variants';
 
 const DEFAULT_SERVICE = 'news';
-const SERVICES_LIST = Object.keys(TEXT_EXAMPLES);
+const SERVICES_LIST = Object.keys(TEXT_VARIANTS);
 const getVariant = selectedService => path([selectedService, 'variant']);
 const getService = selectedService => path([selectedService, 'service']);
 const includesService = services => service => services.includes(service);
@@ -21,18 +21,24 @@ export default ({
     defaultService,
   );
 
-  const variant = getVariant(selectedService)(TEXT_EXAMPLES);
+  const variant = getVariant(selectedService)(TEXT_VARIANTS);
 
   const service = variant
-    ? getService(selectedService)(TEXT_EXAMPLES)
+    ? getService(selectedService)(TEXT_VARIANTS)
     : selectedService;
 
-  const { text, longText, script, locale, dir = 'ltr' } = TEXT_EXAMPLES[
-    selectedService
-  ];
+  const {
+    text,
+    articlePath,
+    longText,
+    script,
+    locale,
+    dir = 'ltr',
+  } = TEXT_VARIANTS[selectedService];
 
   const storyProps = {
     text,
+    articlePath,
     longText,
     script: scripts[script],
     locale,
