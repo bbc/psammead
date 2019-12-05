@@ -77,5 +77,5 @@ AmpScrollableNavigation.propTypes = {
 
 AmpScrollableNavigation.defaultProps = {
   dir: 'ltr',
-  id: '',
+  id: null,
 };

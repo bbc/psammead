@@ -76,7 +76,7 @@ exports[`AMP Menu Button should render correctly 1`] = `
         class="c0"
         data-amp-bind-aria-expanded="menuState.expanded ? \\"true\\" : \\"false\\""
         dir="ltr"
-        on="tap:AMP.setState({ menuState: { expanded: !menuState.expanded }});"
+        on="tap:AMP.setState({ menuState: { expanded: !menuState.expanded }}),other-element.toggleVisibility"
         type="button"
       >
         <svg
@@ -189,7 +189,7 @@ exports[`AMP Menu Button should render rtl correctly 1`] = `
         class="c0"
         data-amp-bind-aria-expanded="menuState.expanded ? \\"true\\" : \\"false\\""
         dir="rtl"
-        on="tap:AMP.setState({ menuState: { expanded: !menuState.expanded }});"
+        on="tap:AMP.setState({ menuState: { expanded: !menuState.expanded }}),other-element.toggleVisibility"
         type="button"
       >
         <svg
