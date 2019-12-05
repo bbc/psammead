@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 6.0.0-alpha.6 | [PR#2769](https://github.com/bbc/psammead/pull/2769) Add `isOpen` prop to `Navigation` |
 | 6.0.0-alpha.5 | [PR#2759](https://github.com/bbc/psammead/pull/2759) Change size of menu button depending on script |
 | 6.0.0-alpha.4 | [PR#2747](https://github.com/bbc/psammead/pull/2747) Fix MenuButton not acting as a block element |
 | 6.0.0-alpha.3 | [PR#2745](https://github.com/bbc/psammead/pull/2745) Add dir prop to Amp and Canonical MenuButton |
