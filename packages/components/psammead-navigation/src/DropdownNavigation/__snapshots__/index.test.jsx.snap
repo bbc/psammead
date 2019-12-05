@@ -77,6 +77,7 @@ exports[`AMP Menu Button should render correctly 1`] = `
         data-amp-bind-aria-expanded="menuState.expanded ? \\"true\\" : \\"false\\""
         dir="ltr"
         on="tap:AMP.setState({ menuState: { expanded: !menuState.expanded }});"
+        type="button"
       >
         <svg
           aria-hidden="true"
@@ -189,6 +190,7 @@ exports[`AMP Menu Button should render rtl correctly 1`] = `
         data-amp-bind-aria-expanded="menuState.expanded ? \\"true\\" : \\"false\\""
         dir="rtl"
         on="tap:AMP.setState({ menuState: { expanded: !menuState.expanded }});"
+        type="button"
       >
         <svg
           aria-hidden="true"
@@ -280,6 +282,7 @@ exports[`Canonical Closed menu button should render correctly 1`] = `
   aria-label="Menu"
   class="c0"
   dir="ltr"
+  type="button"
 >
   <svg
     aria-hidden="true"
@@ -352,6 +355,7 @@ exports[`Canonical Closed menu button should render rtl correctly 1`] = `
   aria-label="Menu"
   class="c0"
   dir="rtl"
+  type="button"
 >
   <svg
     aria-hidden="true"
@@ -424,6 +428,7 @@ exports[`Canonical Open menu button should render correctly 1`] = `
   aria-label="Menu"
   class="c0"
   dir="ltr"
+  type="button"
 >
   <svg
     aria-hidden="true"
@@ -497,6 +502,7 @@ exports[`Canonical Open menu button should render rtl correctly 1`] = `
   aria-label="Menu"
   class="c0"
   dir="rtl"
+  type="button"
 >
   <svg
     aria-hidden="true"
