@@ -13,39 +13,34 @@ const arabicServiceDecorator = withServicesKnob({
   defaultService: 'arabic',
 });
 
-const bengaliServiceDecorator = withServicesKnob({
-  defaultService: 'bengali',
-});
-
-const burmeseServiceDecorator = withServicesKnob({
-  defaultService: 'burmese',
-});
-
 const newsServiceDecorator = withServicesKnob({
   defaultService: 'news',
 });
 
 const BASE_PATH = 'https://www.bbc.com';
+const getItem = (articlePath, text) => ({
+  title: text,
+  href: `${BASE_PATH}${articlePath}`,
+});
 
-const getItem = (path, text) => ({ title: text, href: `${BASE_PATH}${path}` });
+const getItems = (articlePath, text) =>
+  Array(10).fill(getItem(articlePath, text));
 
-const getItems = (path, text) => Array(10).fill(getItem(path, text));
-
-const renderLTRList = ({ service, script, path, text }) => (
+const renderLTRList = ({ service, script, articlePath, text, dir }) => (
   <MostReadList
-    items={getItems(path, text)}
+    items={getItems(articlePath, text)}
     service={service}
     script={script}
-    dir="ltr"
+    dir={dir}
   />
 );
 
-const renderRTLList = ({ service, script, path, text }) => (
+const renderRTLList = ({ service, script, articlePath, text, dir }) => (
   <MostReadList
-    items={getItems(path, text)}
+    items={getItems(articlePath, text)}
     service={service}
     script={script}
-    dir="rtl"
+    dir={dir}
   />
 );
 
@@ -66,27 +61,27 @@ const lastUpdated = (script, service) => (
   </Timestamp>
 );
 
-const stories = storiesOf('Components|MostRead/Item', module)
+storiesOf('Components|MostRead/Item', module)
   .addDecorator(withKnobs)
-  .addDecorator(withServicesKnob());
-
-stories.add(`MostReadLink`, ({ script, service, path, text }) => (
-  <MostReadLink link={getItem(path, text)} service={service} script={script} />
-));
-
-stories.add(
-  `MostReadLink with last updated date`,
-  ({ script, service, path, text }) => (
+  .addDecorator(withServicesKnob())
+  .add(`MostReadLink`, ({ script, service, articlePath, text }) => (
     <MostReadLink
-      link={getItem(path, text)}
-      lastUpdated={lastUpdated(script, service)}
+      link={getItem(articlePath, text)}
       service={service}
       script={script}
     />
-  ),
-);
-
-stories
+  ))
+  .add(
+    `MostReadLink with last updated date`,
+    ({ script, service, articlePath, text }) => (
+      <MostReadLink
+        link={getItem(articlePath, text)}
+        lastUpdated={lastUpdated(script, service)}
+        service={service}
+        script={script}
+      />
+    ),
+  )
   .add(`MostReadRank LTR`, ({ script, service }) =>
     renderMostReadRank({ service, script, rank: 5 }),
   )
@@ -97,51 +92,38 @@ stories
     renderMostReadRank({ service, script, rank: '۲' }),
   );
 
-storiesOf('Components|MostRead/List/LTR', module)
+storiesOf('Components|MostRead/List', module)
   .addDecorator(withKnobs)
-  .add(`News LTR`, () =>
-    newsServiceDecorator(({ script, service, path, text }) =>
-      renderLTRList({ service, script, path, text }),
+  .add(`LTR`, () =>
+    newsServiceDecorator(({ script, service, articlePath, text, dir }) =>
+      renderLTRList({ service, script, articlePath, text, dir }),
     ),
   )
-  .add(`Bengali LTR`, () =>
-    bengaliServiceDecorator(({ script, service, path, text }) =>
-      renderLTRList({ service, script, path, text }),
-    ),
-  )
-  .add(`Burmese LTR`, () =>
-    burmeseServiceDecorator(({ script, service, path, text }) =>
-      renderLTRList({ service, script, path, text }),
-    ),
-  );
-
-storiesOf('Components|MostRead/List/RTL', module)
-  .addDecorator(withKnobs)
-  .add(`Arabic RTL`, () =>
-    arabicServiceDecorator(({ script, service, path, text }) =>
-      renderRTLList({ service, script, path, text }),
+  .add(`RTL`, () =>
+    arabicServiceDecorator(({ script, service, articlePath, text, dir }) =>
+      renderRTLList({ service, script, articlePath, text, dir }),
     ),
   );
 
 storiesOf('Components|MostRead/Title', module)
   .addDecorator(withKnobs)
   .add('LTR', () =>
-    newsServiceDecorator(({ script, service }) => (
+    newsServiceDecorator(({ script, service, dir }) => (
       <MostReadTitle
         header="Most Read"
         script={script}
         service={service}
-        dir="ltr"
+        dir={dir}
       />
     )),
   )
   .add('RTL', () =>
-    arabicServiceDecorator(({ script, service }) => (
+    arabicServiceDecorator(({ script, service, dir }) => (
       <MostReadTitle
         header="الأكثر قراءة"
         script={script}
         service={service}
-        dir="rtl"
+        dir={dir}
       />
     )),
   );
@@ -149,23 +131,23 @@ storiesOf('Components|MostRead/Title', module)
 storiesOf('Components|MostRead', module)
   .addDecorator(withKnobs)
   .add('default LTR', () =>
-    newsServiceDecorator(({ script, service, path, text }) => (
+    newsServiceDecorator(({ script, service, articlePath, text, dir }) => (
       <MostRead
-        items={getItems(path, text)}
+        items={getItems(articlePath, text)}
         service={service}
         script={script}
-        dir="ltr"
+        dir={dir}
         header="Most Read"
       />
     )),
   )
   .add('default RTL', () =>
-    arabicServiceDecorator(({ script, service, path, text }) => (
+    arabicServiceDecorator(({ script, service, articlePath, text, dir }) => (
       <MostRead
-        items={getItems(path, text)}
+        items={getItems(articlePath, text)}
         service={service}
         script={script}
-        dir="rtl"
+        dir={dir}
         header="الأكثر قراءة"
       />
     )),
