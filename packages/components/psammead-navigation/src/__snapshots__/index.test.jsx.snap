@@ -833,7 +833,6 @@ exports[`Scrollable Navigation should render AMP version correctly 1`] = `
       </ul>
     </div>
   </nav>
-  ;
 </div>
 `;
 

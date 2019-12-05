@@ -9,7 +9,7 @@ import {
 import Navigation, { NavigationUl, NavigationLi } from './index';
 import igboNavData from '../testHelpers/igbo';
 
-const NavigationData = (
+const navigationUlComponent = (
   <NavigationUl>
     {igboNavData.map((item, index) => {
       const { title, url } = item;
@@ -34,7 +34,7 @@ const NavigationData = (
 
 const NavigationExample = (
   <Navigation script={latin} skipLinkText="Wụga n’ọdịnaya" service="news">
-    {NavigationData}
+    {navigationUlComponent}
   </Navigation>
 );
 
@@ -48,7 +48,7 @@ describe('Navigation', () => {
       service="news"
       isOpen
     >
-      {NavigationData}
+      {navigationUlComponent}
     </Navigation>,
   );
 });
@@ -72,7 +72,7 @@ describe('Scrollable Navigation', () => {
 
   shouldMatchSnapshot(
     'should render AMP version correctly',
-    <AmpScrollableNavigation>{NavigationExample};</AmpScrollableNavigation>,
+    <AmpScrollableNavigation>{NavigationExample}</AmpScrollableNavigation>,
   );
 });
 
