@@ -1,17 +1,16 @@
-const LTRLink = {
+const ltrLink = {
   service: 'news',
   title: 'John Lewis staff bonus cut again as profits fall',
   href: 'https://www.bbc.co.uk/news/business-43328806',
 };
 
-const RTLLink = {
+const rtlLink = {
   service: 'persian',
   title: "ایران از لغو 'رزمایش قطع اینترنت' خبر داد",
   href: 'https://www.bbc.com/persian/iran-46965704',
 };
 
-export const items = Array(10).fill(LTRLink);
+const loadItems = (number, type) =>
+  Array(number).fill(type === 'LTR' ? ltrLink : rtlLink);
 
-export const items5 = Array(5).fill(LTRLink);
-
-export const itemsRTL = Array(10).fill(RTLLink);
+export default loadItems;
