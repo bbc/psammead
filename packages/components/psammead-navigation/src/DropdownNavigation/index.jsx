@@ -131,7 +131,6 @@ const MenuButton = styled.button`
   position: relative;
   padding: 0;
   margin: 0;
-  border: 0;
   background-color: transparent;
   ${({ dir }) => (dir === 'ltr' ? `float: left;` : `float: right;`)}
   ${({ script }) =>
@@ -145,6 +144,7 @@ const MenuButton = styled.button`
       ${iconBorder};
     }
   }
+  border: 0;
 
   @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
     display: none;
