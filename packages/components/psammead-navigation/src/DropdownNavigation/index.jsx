@@ -202,43 +202,39 @@ const AmpHead = () => (
   </Helmet>
 );
 
-export const AmpMenuButton = ({ announcedText, onToggle, dir, script }) => {
-  const expandedHandler =
-    'tap:AMP.setState({ menuState: { expanded: !menuState.expanded }})';
+const expandedHandler =
+  'tap:AMP.setState({ menuState: { expanded: !menuState.expanded }})';
 
-  const initialState = {
-    expanded: false,
-  };
+const initialState = { expanded: false };
 
-  return (
-    <>
-      <AmpHead />
-      <amp-state id="menuState">
-        <script
-          type="application/json"
-          /* eslint-disable-next-line react/no-danger */
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(initialState) }}
-        />
-      </amp-state>
-      <MenuButton
-        aria-label={announcedText}
-        aria-expanded="false"
-        data-amp-bind-aria-expanded='menuState.expanded ? "true" : "false"'
-        on={`${expandedHandler};${onToggle}`}
-        dir={dir}
-        script={script}
-      >
-        {cloneElement(navigationIcons.hamburger, {
-          'data-amp-bind-hidden': 'menuState.expanded',
-        })}
-        {cloneElement(navigationIcons.cross, {
-          hidden: true,
-          'data-amp-bind-hidden': '!menuState.expanded',
-        })}
-      </MenuButton>
-    </>
-  );
-};
+export const AmpMenuButton = ({ announcedText, onToggle, dir, script }) => (
+  <>
+    <AmpHead />
+    <amp-state id="menuState">
+      <script
+        type="application/json"
+        /* eslint-disable-next-line react/no-danger */
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(initialState) }}
+      />
+    </amp-state>
+    <MenuButton
+      aria-label={announcedText}
+      aria-expanded="false"
+      data-amp-bind-aria-expanded='menuState.expanded ? "true" : "false"'
+      on={`${expandedHandler};${onToggle}`}
+      dir={dir}
+      script={script}
+    >
+      {cloneElement(navigationIcons.hamburger, {
+        'data-amp-bind-hidden': 'menuState.expanded',
+      })}
+      {cloneElement(navigationIcons.cross, {
+        hidden: true,
+        'data-amp-bind-hidden': '!menuState.expanded',
+      })}
+    </MenuButton>
+  </>
+);
 
 AmpMenuButton.propTypes = {
   announcedText: string.isRequired,
