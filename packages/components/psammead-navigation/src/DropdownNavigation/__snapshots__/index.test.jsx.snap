@@ -10,11 +10,11 @@ exports[`AMP Menu Button should render correctly 1`] = `
   position: relative;
   padding: 0;
   margin: 0;
-  border: 0;
   background-color: transparent;
   float: left;
   height: 2.75rem;
   width: 2.75rem;
+  border: 0;
 }
 
 .c0:hover,
@@ -132,11 +132,11 @@ exports[`AMP Menu Button should render rtl correctly 1`] = `
   position: relative;
   padding: 0;
   margin: 0;
-  border: 0;
   background-color: transparent;
   float: right;
   height: 3.125rem;
   width: 3.125rem;
+  border: 0;
 }
 
 .c0:hover,
@@ -236,11 +236,11 @@ exports[`Canonical Closed menu button should render correctly 1`] = `
   position: relative;
   padding: 0;
   margin: 0;
-  border: 0;
   background-color: transparent;
   float: left;
   height: 2.75rem;
   width: 2.75rem;
+  border: 0;
 }
 
 .c0:hover,
@@ -309,11 +309,11 @@ exports[`Canonical Closed menu button should render rtl correctly 1`] = `
   position: relative;
   padding: 0;
   margin: 0;
-  border: 0;
   background-color: transparent;
   float: right;
   height: 3.125rem;
   width: 3.125rem;
+  border: 0;
 }
 
 .c0:hover,
@@ -382,11 +382,11 @@ exports[`Canonical Open menu button should render correctly 1`] = `
   position: relative;
   padding: 0;
   margin: 0;
-  border: 0;
   background-color: transparent;
   float: left;
   height: 2.75rem;
   width: 2.75rem;
+  border: 0;
 }
 
 .c0:hover,
@@ -456,11 +456,11 @@ exports[`Canonical Open menu button should render rtl correctly 1`] = `
   position: relative;
   padding: 0;
   margin: 0;
-  border: 0;
   background-color: transparent;
   float: right;
   height: 3.125rem;
   width: 3.125rem;
+  border: 0;
 }
 
 .c0:hover,
