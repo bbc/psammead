@@ -213,39 +213,39 @@ const AmpHead = () => (
   </Helmet>
 );
 
-export const AmpMenuButton = ({ announcedText, onToggle, dir, script }) => {
-  const expandedHandler =
-    'tap:AMP.setState({ menuState: { expanded: !menuState.expanded }})';
+const expandedHandler =
+  'tap:AMP.setState({ menuState: { expanded: !menuState.expanded }})';
 
-  return (
-    <>
-      <AmpHead />
-      <amp-state id="menuState">
-        <script type="application/json">
-          {JSON.stringify({
-            expanded: false,
-          })}
-        </script>
-      </amp-state>
-      <MenuButton
-        aria-label={announcedText}
-        aria-expanded="false"
-        data-amp-bind-aria-expanded='menuState.expanded ? "true" : "false"'
-        on={`${expandedHandler};${onToggle}`}
-        dir={dir}
-        script={script}
-      >
-        {cloneElement(navigationIcons.hamburger, {
-          'data-amp-bind-hidden': 'menuState.expanded',
-        })}
-        {cloneElement(navigationIcons.cross, {
-          hidden: true,
-          'data-amp-bind-hidden': '!menuState.expanded',
-        })}
-      </MenuButton>
-    </>
-  );
-};
+const initialState = { expanded: false };
+
+export const AmpMenuButton = ({ announcedText, onToggle, dir, script }) => (
+  <>
+    <AmpHead />
+    <amp-state id="menuState">
+      <script
+        type="application/json"
+        /* eslint-disable-next-line react/no-danger */
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(initialState) }}
+      />
+    </amp-state>
+    <MenuButton
+      aria-label={announcedText}
+      aria-expanded="false"
+      data-amp-bind-aria-expanded='menuState.expanded ? "true" : "false"'
+      on={`${expandedHandler};${onToggle}`}
+      dir={dir}
+      script={script}
+    >
+      {cloneElement(navigationIcons.hamburger, {
+        'data-amp-bind-hidden': 'menuState.expanded',
+      })}
+      {cloneElement(navigationIcons.cross, {
+        hidden: true,
+        'data-amp-bind-hidden': '!menuState.expanded',
+      })}
+    </MenuButton>
+  </>
+);
 
 AmpMenuButton.propTypes = {
   announcedText: string.isRequired,
