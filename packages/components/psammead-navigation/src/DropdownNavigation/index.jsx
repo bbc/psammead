@@ -142,8 +142,9 @@ const MenuButton = styled(Button)`
   position: relative;
   padding: 0;
   margin: 0;
-  border: 0;
   background-color: transparent;
+  border: 0;
+
   ${({ dir }) => (dir === 'ltr' ? `float: left;` : `float: right;`)}
   ${({ script }) =>
     script &&
