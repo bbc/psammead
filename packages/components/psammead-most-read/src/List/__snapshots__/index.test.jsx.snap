@@ -5,29 +5,41 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
   display: inline;
 }
 
-.c7 {
-  color: #222222;
+.c8 {
   font-size: 1.625rem;
   line-height: 1.875rem;
   font-family: "Shonar Bangla",Helmet,Freesans,Helvetica,Arial,sans-serif;
   font-weight: 700;
   font-style: normal;
+  color: #222222;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.c7:hover,
-.c7:focus {
+.c8:hover,
+.c8:focus {
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
-.c6 {
+.c5 {
+  min-width: 1rem;
+}
+
+.c9 {
+  min-width: 1rem;
+}
+
+.c10 {
+  min-width: 1rem;
+}
+
+.c7 {
   padding-bottom: 1.5rem;
   padding-left: 16px;
 }
 
-.c5 {
+.c6 {
   font-family: "Shonar Bangla",Helmet,Freesans,Helvetica,Arial,sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -38,19 +50,7 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
   padding: 0;
   display: inline-block;
   width: auto;
-}
-
-.c8 {
-  font-family: "Shonar Bangla",Helmet,Freesans,Helvetica,Arial,sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 2rem;
-  line-height: 2.25rem;
-  color: #B80000;
-  margin: 0;
-  padding: 0;
-  display: inline-block;
-  width: NaN;
+  float: left;
 }
 
 .c0 {
@@ -144,49 +144,118 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
-  .c7 {
+  .c8 {
     font-size: 1.625rem;
     line-height: 1.875rem;
   }
 }
 
 @media (min-width:37.5rem) {
-  .c7 {
+  .c8 {
     font-size: 1.75rem;
     line-height: 2rem;
   }
 }
 
+@media (min-width:0rem) {
+  .c5 {
+    min-width: 2rem;
+  }
+}
+
+@media (min-width:15rem) {
+  .c5 {
+    min-width: 2rem;
+  }
+}
+
+@media (min-width:25rem) {
+  .c5 {
+    min-width: auto;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .c5 {
+    min-width: auto;
+  }
+}
+
 @media (min-width:80rem) {
+  .c5 {
+    min-width: auto;
+  }
+}
+
+@media (min-width:0rem) {
+  .c9 {
+    min-width: 2rem;
+  }
+}
+
+@media (min-width:15rem) {
+  .c9 {
+    min-width: 2rem;
+  }
+}
+
+@media (min-width:25rem) {
+  .c9 {
+    min-width: auto;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .c9 {
+    min-width: auto;
+  }
+}
+
+@media (min-width:80rem) {
+  .c9 {
+    min-width: 3rem;
+  }
+}
+
+@media (min-width:0rem) {
+  .c10 {
+    min-width: 2rem;
+  }
+}
+
+@media (min-width:15rem) {
+  .c10 {
+    min-width: 2rem;
+  }
+}
+
+@media (min-width:25rem) {
+  .c10 {
+    min-width: 3rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .c10 {
+    min-width: 3rem;
+  }
+}
+
+@media (min-width:80rem) {
+  .c10 {
+    min-width: auto;
+  }
+}
+
+@media (min-width:20rem) and (max-width:37.4375rem) {
   .c6 {
-    padding-top: 0.5rem;
-    padding-left: 32px;
-  }
-}
-
-@media (min-width:20rem) and (max-width:37.4375rem) {
-  .c5 {
     font-size: 2.5rem;
     line-height: 2.75rem;
   }
 }
 
 @media (min-width:37.5rem) {
-  .c5 {
-    font-size: 3.5rem;
-    line-height: 3.75rem;
-  }
-}
-
-@media (min-width:20rem) and (max-width:37.4375rem) {
-  .c8 {
-    font-size: 2.5rem;
-    line-height: 2.75rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c8 {
+  .c6 {
     font-size: 3.5rem;
     line-height: 3.75rem;
   }
@@ -221,17 +290,23 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
       <li
         class="c4"
       >
-        <span
+        <div
           class="c5"
+          dir="ltr"
         >
-          ১
-        </span>
+          <span
+            class="c6"
+            dir="ltr"
+          >
+            ১
+          </span>
+        </div>
         <div
-          class="c6"
+          class="c7"
           dir="ltr"
         >
           <a
-            class="c7"
+            class="c8"
             href="https://www.bbc.co.uk/news/business-43328806"
           >
             John Lewis staff bonus cut again as profits fall
@@ -247,17 +322,23 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
       <li
         class="c4"
       >
-        <span
+        <div
           class="c5"
+          dir="ltr"
         >
-          ২
-        </span>
+          <span
+            class="c6"
+            dir="ltr"
+          >
+            ২
+          </span>
+        </div>
         <div
-          class="c6"
+          class="c7"
           dir="ltr"
         >
           <a
-            class="c7"
+            class="c8"
             href="https://www.bbc.co.uk/news/business-43328806"
           >
             John Lewis staff bonus cut again as profits fall
@@ -273,17 +354,23 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
       <li
         class="c4"
       >
-        <span
+        <div
           class="c5"
+          dir="ltr"
         >
-          ৩
-        </span>
+          <span
+            class="c6"
+            dir="ltr"
+          >
+            ৩
+          </span>
+        </div>
         <div
-          class="c6"
+          class="c7"
           dir="ltr"
         >
           <a
-            class="c7"
+            class="c8"
             href="https://www.bbc.co.uk/news/business-43328806"
           >
             John Lewis staff bonus cut again as profits fall
@@ -299,17 +386,23 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
       <li
         class="c4"
       >
-        <span
+        <div
           class="c5"
+          dir="ltr"
         >
-          ৪
-        </span>
+          <span
+            class="c6"
+            dir="ltr"
+          >
+            ৪
+          </span>
+        </div>
         <div
-          class="c6"
+          class="c7"
           dir="ltr"
         >
           <a
-            class="c7"
+            class="c8"
             href="https://www.bbc.co.uk/news/business-43328806"
           >
             John Lewis staff bonus cut again as profits fall
@@ -325,17 +418,23 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
       <li
         class="c4"
       >
-        <span
-          class="c5"
-        >
-          ৫
-        </span>
         <div
-          class="c6"
+          class="c9"
+          dir="ltr"
+        >
+          <span
+            class="c6"
+            dir="ltr"
+          >
+            ৫
+          </span>
+        </div>
+        <div
+          class="c7"
           dir="ltr"
         >
           <a
-            class="c7"
+            class="c8"
             href="https://www.bbc.co.uk/news/business-43328806"
           >
             John Lewis staff bonus cut again as profits fall
@@ -351,17 +450,23 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
       <li
         class="c4"
       >
-        <span
-          class="c8"
-        >
-          ৬
-        </span>
         <div
-          class="c6"
+          class="c10"
+          dir="ltr"
+        >
+          <span
+            class="c6"
+            dir="ltr"
+          >
+            ৬
+          </span>
+        </div>
+        <div
+          class="c7"
           dir="ltr"
         >
           <a
-            class="c7"
+            class="c8"
             href="https://www.bbc.co.uk/news/business-43328806"
           >
             John Lewis staff bonus cut again as profits fall
@@ -377,17 +482,23 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
       <li
         class="c4"
       >
-        <span
-          class="c8"
-        >
-          ৭
-        </span>
         <div
-          class="c6"
+          class="c10"
+          dir="ltr"
+        >
+          <span
+            class="c6"
+            dir="ltr"
+          >
+            ৭
+          </span>
+        </div>
+        <div
+          class="c7"
           dir="ltr"
         >
           <a
-            class="c7"
+            class="c8"
             href="https://www.bbc.co.uk/news/business-43328806"
           >
             John Lewis staff bonus cut again as profits fall
@@ -403,17 +514,23 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
       <li
         class="c4"
       >
-        <span
-          class="c8"
-        >
-          ৮
-        </span>
         <div
-          class="c6"
+          class="c10"
+          dir="ltr"
+        >
+          <span
+            class="c6"
+            dir="ltr"
+          >
+            ৮
+          </span>
+        </div>
+        <div
+          class="c7"
           dir="ltr"
         >
           <a
-            class="c7"
+            class="c8"
             href="https://www.bbc.co.uk/news/business-43328806"
           >
             John Lewis staff bonus cut again as profits fall
@@ -429,17 +546,23 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
       <li
         class="c4"
       >
-        <span
-          class="c8"
-        >
-          ৯
-        </span>
         <div
-          class="c6"
+          class="c10"
+          dir="ltr"
+        >
+          <span
+            class="c6"
+            dir="ltr"
+          >
+            ৯
+          </span>
+        </div>
+        <div
+          class="c7"
           dir="ltr"
         >
           <a
-            class="c7"
+            class="c8"
             href="https://www.bbc.co.uk/news/business-43328806"
           >
             John Lewis staff bonus cut again as profits fall
@@ -455,17 +578,23 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
       <li
         class="c4"
       >
-        <span
-          class="c8"
-        >
-          ১০
-        </span>
         <div
-          class="c6"
+          class="c10"
+          dir="ltr"
+        >
+          <span
+            class="c6"
+            dir="ltr"
+          >
+            ১০
+          </span>
+        </div>
+        <div
+          class="c7"
           dir="ltr"
         >
           <a
-            class="c7"
+            class="c8"
             href="https://www.bbc.co.uk/news/business-43328806"
           >
             John Lewis staff bonus cut again as profits fall
@@ -482,29 +611,41 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
   display: inline;
 }
 
-.c7 {
-  color: #222222;
+.c8 {
   font-size: 1.25rem;
   line-height: 1.875rem;
   font-family: Padauk,Arial,Verdana,Geneva,Helvetica,sans-serif;
   font-weight: 700;
   font-style: normal;
+  color: #222222;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.c7:hover,
-.c7:focus {
+.c8:hover,
+.c8:focus {
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
-.c6 {
+.c5 {
+  min-width: 3rem;
+}
+
+.c9 {
+  min-width: 3rem;
+}
+
+.c10 {
+  min-width: 3rem;
+}
+
+.c7 {
   padding-bottom: 1.5rem;
   padding-left: 16px;
 }
 
-.c5 {
+.c6 {
   font-family: Padauk,Arial,Verdana,Geneva,Helvetica,sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -515,19 +656,7 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
   padding: 0;
   display: inline-block;
   width: auto;
-}
-
-.c8 {
-  font-family: Padauk,Arial,Verdana,Geneva,Helvetica,sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 2rem;
-  line-height: 2.25rem;
-  color: #B80000;
-  margin: 0;
-  padding: 0;
-  display: inline-block;
-  width: NaN;
+  float: left;
 }
 
 .c0 {
@@ -621,49 +750,118 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
-  .c7 {
+  .c8 {
     font-size: 1.25rem;
     line-height: 1.875rem;
   }
 }
 
 @media (min-width:37.5rem) {
-  .c7 {
+  .c8 {
     font-size: 1.625rem;
     line-height: 2.75rem;
   }
 }
 
+@media (min-width:0rem) {
+  .c5 {
+    min-width: 2rem;
+  }
+}
+
+@media (min-width:15rem) {
+  .c5 {
+    min-width: 3rem;
+  }
+}
+
+@media (min-width:25rem) {
+  .c5 {
+    min-width: auto;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .c5 {
+    min-width: auto;
+  }
+}
+
 @media (min-width:80rem) {
+  .c5 {
+    min-width: auto;
+  }
+}
+
+@media (min-width:0rem) {
+  .c9 {
+    min-width: 2rem;
+  }
+}
+
+@media (min-width:15rem) {
+  .c9 {
+    min-width: 3rem;
+  }
+}
+
+@media (min-width:25rem) {
+  .c9 {
+    min-width: auto;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .c9 {
+    min-width: auto;
+  }
+}
+
+@media (min-width:80rem) {
+  .c9 {
+    min-width: 4.2rem;
+  }
+}
+
+@media (min-width:0rem) {
+  .c10 {
+    min-width: 2rem;
+  }
+}
+
+@media (min-width:15rem) {
+  .c10 {
+    min-width: 3rem;
+  }
+}
+
+@media (min-width:25rem) {
+  .c10 {
+    min-width: 3rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .c10 {
+    min-width: 4rem;
+  }
+}
+
+@media (min-width:80rem) {
+  .c10 {
+    min-width: auto;
+  }
+}
+
+@media (min-width:20rem) and (max-width:37.4375rem) {
   .c6 {
-    padding-top: 0.5rem;
-    padding-left: 32px;
-  }
-}
-
-@media (min-width:20rem) and (max-width:37.4375rem) {
-  .c5 {
     font-size: 2.5rem;
     line-height: 4.125rem;
   }
 }
 
 @media (min-width:37.5rem) {
-  .c5 {
-    font-size: 3.5rem;
-    line-height: 5.375rem;
-  }
-}
-
-@media (min-width:20rem) and (max-width:37.4375rem) {
-  .c8 {
-    font-size: 2.5rem;
-    line-height: 4.125rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c8 {
+  .c6 {
     font-size: 3.5rem;
     line-height: 5.375rem;
   }
@@ -698,17 +896,23 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
       <li
         class="c4"
       >
-        <span
+        <div
           class="c5"
+          dir="ltr"
         >
-          ၁
-        </span>
+          <span
+            class="c6"
+            dir="ltr"
+          >
+            ၁
+          </span>
+        </div>
         <div
-          class="c6"
+          class="c7"
           dir="ltr"
         >
           <a
-            class="c7"
+            class="c8"
             href="https://www.bbc.co.uk/news/business-43328806"
           >
             John Lewis staff bonus cut again as profits fall
@@ -724,17 +928,23 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
       <li
         class="c4"
       >
-        <span
+        <div
           class="c5"
+          dir="ltr"
         >
-          ၂
-        </span>
+          <span
+            class="c6"
+            dir="ltr"
+          >
+            ၂
+          </span>
+        </div>
         <div
-          class="c6"
+          class="c7"
           dir="ltr"
         >
           <a
-            class="c7"
+            class="c8"
             href="https://www.bbc.co.uk/news/business-43328806"
           >
             John Lewis staff bonus cut again as profits fall
@@ -750,17 +960,23 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
       <li
         class="c4"
       >
-        <span
+        <div
           class="c5"
+          dir="ltr"
         >
-          ၃
-        </span>
+          <span
+            class="c6"
+            dir="ltr"
+          >
+            ၃
+          </span>
+        </div>
         <div
-          class="c6"
+          class="c7"
           dir="ltr"
         >
           <a
-            class="c7"
+            class="c8"
             href="https://www.bbc.co.uk/news/business-43328806"
           >
             John Lewis staff bonus cut again as profits fall
@@ -776,17 +992,23 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
       <li
         class="c4"
       >
-        <span
+        <div
           class="c5"
+          dir="ltr"
         >
-          ၄
-        </span>
+          <span
+            class="c6"
+            dir="ltr"
+          >
+            ၄
+          </span>
+        </div>
         <div
-          class="c6"
+          class="c7"
           dir="ltr"
         >
           <a
-            class="c7"
+            class="c8"
             href="https://www.bbc.co.uk/news/business-43328806"
           >
             John Lewis staff bonus cut again as profits fall
@@ -802,17 +1024,23 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
       <li
         class="c4"
       >
-        <span
-          class="c5"
-        >
-          ၅
-        </span>
         <div
-          class="c6"
+          class="c9"
+          dir="ltr"
+        >
+          <span
+            class="c6"
+            dir="ltr"
+          >
+            ၅
+          </span>
+        </div>
+        <div
+          class="c7"
           dir="ltr"
         >
           <a
-            class="c7"
+            class="c8"
             href="https://www.bbc.co.uk/news/business-43328806"
           >
             John Lewis staff bonus cut again as profits fall
@@ -828,17 +1056,23 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
       <li
         class="c4"
       >
-        <span
-          class="c8"
-        >
-          ၆
-        </span>
         <div
-          class="c6"
+          class="c10"
+          dir="ltr"
+        >
+          <span
+            class="c6"
+            dir="ltr"
+          >
+            ၆
+          </span>
+        </div>
+        <div
+          class="c7"
           dir="ltr"
         >
           <a
-            class="c7"
+            class="c8"
             href="https://www.bbc.co.uk/news/business-43328806"
           >
             John Lewis staff bonus cut again as profits fall
@@ -854,17 +1088,23 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
       <li
         class="c4"
       >
-        <span
-          class="c8"
-        >
-          ၇
-        </span>
         <div
-          class="c6"
+          class="c10"
+          dir="ltr"
+        >
+          <span
+            class="c6"
+            dir="ltr"
+          >
+            ၇
+          </span>
+        </div>
+        <div
+          class="c7"
           dir="ltr"
         >
           <a
-            class="c7"
+            class="c8"
             href="https://www.bbc.co.uk/news/business-43328806"
           >
             John Lewis staff bonus cut again as profits fall
@@ -880,17 +1120,23 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
       <li
         class="c4"
       >
-        <span
-          class="c8"
-        >
-          ၈
-        </span>
         <div
-          class="c6"
+          class="c10"
+          dir="ltr"
+        >
+          <span
+            class="c6"
+            dir="ltr"
+          >
+            ၈
+          </span>
+        </div>
+        <div
+          class="c7"
           dir="ltr"
         >
           <a
-            class="c7"
+            class="c8"
             href="https://www.bbc.co.uk/news/business-43328806"
           >
             John Lewis staff bonus cut again as profits fall
@@ -906,17 +1152,23 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
       <li
         class="c4"
       >
-        <span
-          class="c8"
-        >
-          ၉
-        </span>
         <div
-          class="c6"
+          class="c10"
+          dir="ltr"
+        >
+          <span
+            class="c6"
+            dir="ltr"
+          >
+            ၉
+          </span>
+        </div>
+        <div
+          class="c7"
           dir="ltr"
         >
           <a
-            class="c7"
+            class="c8"
             href="https://www.bbc.co.uk/news/business-43328806"
           >
             John Lewis staff bonus cut again as profits fall
@@ -932,17 +1184,23 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
       <li
         class="c4"
       >
-        <span
-          class="c8"
-        >
-          ၁၀
-        </span>
         <div
-          class="c6"
+          class="c10"
+          dir="ltr"
+        >
+          <span
+            class="c6"
+            dir="ltr"
+          >
+            ၁၀
+          </span>
+        </div>
+        <div
+          class="c7"
           dir="ltr"
         >
           <a
-            class="c7"
+            class="c8"
             href="https://www.bbc.co.uk/news/business-43328806"
           >
             John Lewis staff bonus cut again as profits fall
@@ -959,29 +1217,41 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
   display: inline;
 }
 
-.c7 {
-  color: #222222;
+.c8 {
   font-size: 1.125rem;
   line-height: 1.375rem;
   font-family: ReithSerif,Helvetica,Arial,sans-serif;
   font-weight: 500;
   font-style: normal;
+  color: #222222;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.c7:hover,
-.c7:focus {
+.c8:hover,
+.c8:focus {
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
-.c6 {
+.c5 {
+  min-width: 3rem;
+}
+
+.c9 {
+  min-width: 3rem;
+}
+
+.c10 {
+  min-width: 3rem;
+}
+
+.c7 {
   padding-bottom: 1.5rem;
   padding-left: 16px;
 }
 
-.c5 {
+.c6 {
   font-family: ReithSerif,Helvetica,Arial,sans-serif;
   font-weight: 300;
   font-style: normal;
@@ -992,19 +1262,7 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
   padding: 0;
   display: inline-block;
   width: auto;
-}
-
-.c8 {
-  font-family: ReithSerif,Helvetica,Arial,sans-serif;
-  font-weight: 300;
-  font-style: normal;
-  font-size: 2rem;
-  line-height: 2.25rem;
-  color: #B80000;
-  margin: 0;
-  padding: 0;
-  display: inline-block;
-  width: NaN;
+  float: left;
 }
 
 .c0 {
@@ -1098,49 +1356,118 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
-  .c7 {
+  .c8 {
     font-size: 1.25rem;
     line-height: 1.5rem;
   }
 }
 
 @media (min-width:37.5rem) {
-  .c7 {
+  .c8 {
     font-size: 1.5rem;
     line-height: 1.75rem;
   }
 }
 
+@media (min-width:0rem) {
+  .c5 {
+    min-width: 2rem;
+  }
+}
+
+@media (min-width:15rem) {
+  .c5 {
+    min-width: 3rem;
+  }
+}
+
+@media (min-width:25rem) {
+  .c5 {
+    min-width: auto;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .c5 {
+    min-width: auto;
+  }
+}
+
 @media (min-width:80rem) {
+  .c5 {
+    min-width: auto;
+  }
+}
+
+@media (min-width:0rem) {
+  .c9 {
+    min-width: 2rem;
+  }
+}
+
+@media (min-width:15rem) {
+  .c9 {
+    min-width: 3rem;
+  }
+}
+
+@media (min-width:25rem) {
+  .c9 {
+    min-width: auto;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .c9 {
+    min-width: auto;
+  }
+}
+
+@media (min-width:80rem) {
+  .c9 {
+    min-width: 4.2rem;
+  }
+}
+
+@media (min-width:0rem) {
+  .c10 {
+    min-width: 2rem;
+  }
+}
+
+@media (min-width:15rem) {
+  .c10 {
+    min-width: 3rem;
+  }
+}
+
+@media (min-width:25rem) {
+  .c10 {
+    min-width: 3rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .c10 {
+    min-width: 4rem;
+  }
+}
+
+@media (min-width:80rem) {
+  .c10 {
+    min-width: auto;
+  }
+}
+
+@media (min-width:20rem) and (max-width:37.4375rem) {
   .c6 {
-    padding-top: 0.5rem;
-    padding-left: 32px;
-  }
-}
-
-@media (min-width:20rem) and (max-width:37.4375rem) {
-  .c5 {
     font-size: 2.5rem;
     line-height: 2.75rem;
   }
 }
 
 @media (min-width:37.5rem) {
-  .c5 {
-    font-size: 3.5rem;
-    line-height: 3.75rem;
-  }
-}
-
-@media (min-width:20rem) and (max-width:37.4375rem) {
-  .c8 {
-    font-size: 2.5rem;
-    line-height: 2.75rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c8 {
+  .c6 {
     font-size: 3.5rem;
     line-height: 3.75rem;
   }
@@ -1175,17 +1502,23 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
       <li
         class="c4"
       >
-        <span
+        <div
           class="c5"
+          dir="ltr"
         >
-          1
-        </span>
+          <span
+            class="c6"
+            dir="ltr"
+          >
+            1
+          </span>
+        </div>
         <div
-          class="c6"
+          class="c7"
           dir="ltr"
         >
           <a
-            class="c7"
+            class="c8"
             href="https://www.bbc.co.uk/news/business-43328806"
           >
             John Lewis staff bonus cut again as profits fall
@@ -1201,17 +1534,23 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
       <li
         class="c4"
       >
-        <span
+        <div
           class="c5"
+          dir="ltr"
         >
-          2
-        </span>
+          <span
+            class="c6"
+            dir="ltr"
+          >
+            2
+          </span>
+        </div>
         <div
-          class="c6"
+          class="c7"
           dir="ltr"
         >
           <a
-            class="c7"
+            class="c8"
             href="https://www.bbc.co.uk/news/business-43328806"
           >
             John Lewis staff bonus cut again as profits fall
@@ -1227,17 +1566,23 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
       <li
         class="c4"
       >
-        <span
+        <div
           class="c5"
+          dir="ltr"
         >
-          3
-        </span>
+          <span
+            class="c6"
+            dir="ltr"
+          >
+            3
+          </span>
+        </div>
         <div
-          class="c6"
+          class="c7"
           dir="ltr"
         >
           <a
-            class="c7"
+            class="c8"
             href="https://www.bbc.co.uk/news/business-43328806"
           >
             John Lewis staff bonus cut again as profits fall
@@ -1253,17 +1598,23 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
       <li
         class="c4"
       >
-        <span
+        <div
           class="c5"
+          dir="ltr"
         >
-          4
-        </span>
+          <span
+            class="c6"
+            dir="ltr"
+          >
+            4
+          </span>
+        </div>
         <div
-          class="c6"
+          class="c7"
           dir="ltr"
         >
           <a
-            class="c7"
+            class="c8"
             href="https://www.bbc.co.uk/news/business-43328806"
           >
             John Lewis staff bonus cut again as profits fall
@@ -1279,17 +1630,23 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
       <li
         class="c4"
       >
-        <span
-          class="c5"
-        >
-          5
-        </span>
         <div
-          class="c6"
+          class="c9"
+          dir="ltr"
+        >
+          <span
+            class="c6"
+            dir="ltr"
+          >
+            5
+          </span>
+        </div>
+        <div
+          class="c7"
           dir="ltr"
         >
           <a
-            class="c7"
+            class="c8"
             href="https://www.bbc.co.uk/news/business-43328806"
           >
             John Lewis staff bonus cut again as profits fall
@@ -1305,17 +1662,23 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
       <li
         class="c4"
       >
-        <span
-          class="c8"
-        >
-          6
-        </span>
         <div
-          class="c6"
+          class="c10"
+          dir="ltr"
+        >
+          <span
+            class="c6"
+            dir="ltr"
+          >
+            6
+          </span>
+        </div>
+        <div
+          class="c7"
           dir="ltr"
         >
           <a
-            class="c7"
+            class="c8"
             href="https://www.bbc.co.uk/news/business-43328806"
           >
             John Lewis staff bonus cut again as profits fall
@@ -1331,17 +1694,23 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
       <li
         class="c4"
       >
-        <span
-          class="c8"
-        >
-          7
-        </span>
         <div
-          class="c6"
+          class="c10"
+          dir="ltr"
+        >
+          <span
+            class="c6"
+            dir="ltr"
+          >
+            7
+          </span>
+        </div>
+        <div
+          class="c7"
           dir="ltr"
         >
           <a
-            class="c7"
+            class="c8"
             href="https://www.bbc.co.uk/news/business-43328806"
           >
             John Lewis staff bonus cut again as profits fall
@@ -1357,17 +1726,23 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
       <li
         class="c4"
       >
-        <span
-          class="c8"
-        >
-          8
-        </span>
         <div
-          class="c6"
+          class="c10"
+          dir="ltr"
+        >
+          <span
+            class="c6"
+            dir="ltr"
+          >
+            8
+          </span>
+        </div>
+        <div
+          class="c7"
           dir="ltr"
         >
           <a
-            class="c7"
+            class="c8"
             href="https://www.bbc.co.uk/news/business-43328806"
           >
             John Lewis staff bonus cut again as profits fall
@@ -1383,17 +1758,23 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
       <li
         class="c4"
       >
-        <span
-          class="c8"
-        >
-          9
-        </span>
         <div
-          class="c6"
+          class="c10"
+          dir="ltr"
+        >
+          <span
+            class="c6"
+            dir="ltr"
+          >
+            9
+          </span>
+        </div>
+        <div
+          class="c7"
           dir="ltr"
         >
           <a
-            class="c7"
+            class="c8"
             href="https://www.bbc.co.uk/news/business-43328806"
           >
             John Lewis staff bonus cut again as profits fall
@@ -1409,17 +1790,23 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
       <li
         class="c4"
       >
-        <span
-          class="c8"
-        >
-          10
-        </span>
         <div
-          class="c6"
+          class="c10"
+          dir="ltr"
+        >
+          <span
+            class="c6"
+            dir="ltr"
+          >
+            10
+          </span>
+        </div>
+        <div
+          class="c7"
           dir="ltr"
         >
           <a
-            class="c7"
+            class="c8"
             href="https://www.bbc.co.uk/news/business-43328806"
           >
             John Lewis staff bonus cut again as profits fall
@@ -1436,29 +1823,41 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
   display: inline;
 }
 
-.c7 {
-  color: #222222;
+.c8 {
   font-size: 1.5rem;
   line-height: 2rem;
   font-family: "BBC Nassim Arabic",Arial,Verdana,Geneva,Helvetica,sans-serif;
   font-weight: 700;
   font-style: normal;
+  color: #222222;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.c7:hover,
-.c7:focus {
+.c8:hover,
+.c8:focus {
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
-.c6 {
+.c5 {
+  min-width: 3rem;
+}
+
+.c9 {
+  min-width: 3rem;
+}
+
+.c10 {
+  min-width: 3rem;
+}
+
+.c7 {
   padding-bottom: 1.5rem;
   padding-right: 16px;
 }
 
-.c5 {
+.c6 {
   font-family: "BBC Nassim Arabic",Arial,Verdana,Geneva,Helvetica,sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -1469,19 +1868,7 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
   padding: 0;
   display: inline-block;
   width: auto;
-}
-
-.c8 {
-  font-family: "BBC Nassim Arabic",Arial,Verdana,Geneva,Helvetica,sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 2rem;
-  line-height: 2.25rem;
-  color: #B80000;
-  margin: 0;
-  padding: 0;
-  display: inline-block;
-  width: NaN;
+  float: right;
 }
 
 .c0 {
@@ -1575,49 +1962,118 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
-  .c7 {
+  .c8 {
     font-size: 1.625rem;
     line-height: 2.25rem;
   }
 }
 
 @media (min-width:37.5rem) {
-  .c7 {
+  .c8 {
     font-size: 1.75rem;
     line-height: 2.25rem;
   }
 }
 
+@media (min-width:0rem) {
+  .c5 {
+    min-width: 2rem;
+  }
+}
+
+@media (min-width:15rem) {
+  .c5 {
+    min-width: 3rem;
+  }
+}
+
+@media (min-width:25rem) {
+  .c5 {
+    min-width: auto;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .c5 {
+    min-width: auto;
+  }
+}
+
 @media (min-width:80rem) {
+  .c5 {
+    min-width: auto;
+  }
+}
+
+@media (min-width:0rem) {
+  .c9 {
+    min-width: 2rem;
+  }
+}
+
+@media (min-width:15rem) {
+  .c9 {
+    min-width: 3rem;
+  }
+}
+
+@media (min-width:25rem) {
+  .c9 {
+    min-width: auto;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .c9 {
+    min-width: auto;
+  }
+}
+
+@media (min-width:80rem) {
+  .c9 {
+    min-width: 4.2rem;
+  }
+}
+
+@media (min-width:0rem) {
+  .c10 {
+    min-width: 2rem;
+  }
+}
+
+@media (min-width:15rem) {
+  .c10 {
+    min-width: 3rem;
+  }
+}
+
+@media (min-width:25rem) {
+  .c10 {
+    min-width: 3rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .c10 {
+    min-width: 4rem;
+  }
+}
+
+@media (min-width:80rem) {
+  .c10 {
+    min-width: auto;
+  }
+}
+
+@media (min-width:20rem) and (max-width:37.4375rem) {
   .c6 {
-    padding-top: 0.5rem;
-    padding-right: 32px;
-  }
-}
-
-@media (min-width:20rem) and (max-width:37.4375rem) {
-  .c5 {
     font-size: 2.5rem;
     line-height: 2.75rem;
   }
 }
 
 @media (min-width:37.5rem) {
-  .c5 {
-    font-size: 3.5rem;
-    line-height: 3.75rem;
-  }
-}
-
-@media (min-width:20rem) and (max-width:37.4375rem) {
-  .c8 {
-    font-size: 2.5rem;
-    line-height: 2.75rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c8 {
+  .c6 {
     font-size: 3.5rem;
     line-height: 3.75rem;
   }
@@ -1652,17 +2108,23 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
       <li
         class="c4"
       >
-        <span
+        <div
           class="c5"
+          dir="rtl"
         >
-          ۱
-        </span>
+          <span
+            class="c6"
+            dir="rtl"
+          >
+            ۱
+          </span>
+        </div>
         <div
-          class="c6"
+          class="c7"
           dir="rtl"
         >
           <a
-            class="c7"
+            class="c8"
             href="https://www.bbc.com/persian/iran-46965704"
           >
             ایران از لغو 'رزمایش قطع اینترنت' خبر داد
@@ -1678,17 +2140,23 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
       <li
         class="c4"
       >
-        <span
+        <div
           class="c5"
+          dir="rtl"
         >
-          ۲
-        </span>
+          <span
+            class="c6"
+            dir="rtl"
+          >
+            ۲
+          </span>
+        </div>
         <div
-          class="c6"
+          class="c7"
           dir="rtl"
         >
           <a
-            class="c7"
+            class="c8"
             href="https://www.bbc.com/persian/iran-46965704"
           >
             ایران از لغو 'رزمایش قطع اینترنت' خبر داد
@@ -1704,17 +2172,23 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
       <li
         class="c4"
       >
-        <span
+        <div
           class="c5"
+          dir="rtl"
         >
-          ۳
-        </span>
+          <span
+            class="c6"
+            dir="rtl"
+          >
+            ۳
+          </span>
+        </div>
         <div
-          class="c6"
+          class="c7"
           dir="rtl"
         >
           <a
-            class="c7"
+            class="c8"
             href="https://www.bbc.com/persian/iran-46965704"
           >
             ایران از لغو 'رزمایش قطع اینترنت' خبر داد
@@ -1730,17 +2204,23 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
       <li
         class="c4"
       >
-        <span
+        <div
           class="c5"
+          dir="rtl"
         >
-          ۴
-        </span>
+          <span
+            class="c6"
+            dir="rtl"
+          >
+            ۴
+          </span>
+        </div>
         <div
-          class="c6"
+          class="c7"
           dir="rtl"
         >
           <a
-            class="c7"
+            class="c8"
             href="https://www.bbc.com/persian/iran-46965704"
           >
             ایران از لغو 'رزمایش قطع اینترنت' خبر داد
@@ -1756,17 +2236,23 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
       <li
         class="c4"
       >
-        <span
-          class="c5"
-        >
-          ۵
-        </span>
         <div
-          class="c6"
+          class="c9"
+          dir="rtl"
+        >
+          <span
+            class="c6"
+            dir="rtl"
+          >
+            ۵
+          </span>
+        </div>
+        <div
+          class="c7"
           dir="rtl"
         >
           <a
-            class="c7"
+            class="c8"
             href="https://www.bbc.com/persian/iran-46965704"
           >
             ایران از لغو 'رزمایش قطع اینترنت' خبر داد
@@ -1782,17 +2268,23 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
       <li
         class="c4"
       >
-        <span
-          class="c8"
-        >
-          ۶
-        </span>
         <div
-          class="c6"
+          class="c10"
+          dir="rtl"
+        >
+          <span
+            class="c6"
+            dir="rtl"
+          >
+            ۶
+          </span>
+        </div>
+        <div
+          class="c7"
           dir="rtl"
         >
           <a
-            class="c7"
+            class="c8"
             href="https://www.bbc.com/persian/iran-46965704"
           >
             ایران از لغو 'رزمایش قطع اینترنت' خبر داد
@@ -1808,17 +2300,23 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
       <li
         class="c4"
       >
-        <span
-          class="c8"
-        >
-          ۷
-        </span>
         <div
-          class="c6"
+          class="c10"
+          dir="rtl"
+        >
+          <span
+            class="c6"
+            dir="rtl"
+          >
+            ۷
+          </span>
+        </div>
+        <div
+          class="c7"
           dir="rtl"
         >
           <a
-            class="c7"
+            class="c8"
             href="https://www.bbc.com/persian/iran-46965704"
           >
             ایران از لغو 'رزمایش قطع اینترنت' خبر داد
@@ -1834,17 +2332,23 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
       <li
         class="c4"
       >
-        <span
-          class="c8"
-        >
-          ۸
-        </span>
         <div
-          class="c6"
+          class="c10"
+          dir="rtl"
+        >
+          <span
+            class="c6"
+            dir="rtl"
+          >
+            ۸
+          </span>
+        </div>
+        <div
+          class="c7"
           dir="rtl"
         >
           <a
-            class="c7"
+            class="c8"
             href="https://www.bbc.com/persian/iran-46965704"
           >
             ایران از لغو 'رزمایش قطع اینترنت' خبر داد
@@ -1860,17 +2364,23 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
       <li
         class="c4"
       >
-        <span
-          class="c8"
-        >
-          ۹
-        </span>
         <div
-          class="c6"
+          class="c10"
+          dir="rtl"
+        >
+          <span
+            class="c6"
+            dir="rtl"
+          >
+            ۹
+          </span>
+        </div>
+        <div
+          class="c7"
           dir="rtl"
         >
           <a
-            class="c7"
+            class="c8"
             href="https://www.bbc.com/persian/iran-46965704"
           >
             ایران از لغو 'رزمایش قطع اینترنت' خبر داد
@@ -1886,17 +2396,23 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
       <li
         class="c4"
       >
-        <span
-          class="c8"
-        >
-          ۱۰
-        </span>
         <div
-          class="c6"
+          class="c10"
+          dir="rtl"
+        >
+          <span
+            class="c6"
+            dir="rtl"
+          >
+            ۱۰
+          </span>
+        </div>
+        <div
+          class="c7"
           dir="rtl"
         >
           <a
-            class="c7"
+            class="c8"
             href="https://www.bbc.com/persian/iran-46965704"
           >
             ایران از لغو 'رزمایش قطع اینترنت' خبر داد
