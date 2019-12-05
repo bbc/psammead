@@ -13,7 +13,7 @@ import {
   GEL_GROUP_5_SCREEN_WIDTH_MIN,
 } from '@bbc/gel-foundations/breakpoints';
 import Grid from '../../../psammead-grid';
-import { MostReadRank, MostReadLink, MostReadNumber } from '../Item';
+import { MostReadLink, MostReadRankWrapper, itemPropTypes } from '../Item';
 
 const MostReadItemProps = {
   item: true,
@@ -94,7 +94,7 @@ const renderMostReadRank = (service, script, index, items, dir) => {
   const numerals = serviceNumerals(service);
   const rank = numerals[index + 1];
   return (
-    <MostReadNumber
+    <MostReadRankWrapper
       service={service}
       script={script}
       listindex={index}
@@ -105,7 +105,7 @@ const renderMostReadRank = (service, script, index, items, dir) => {
   );
 };
 
-const renderMostReadLink = (link, service, script, dir, listindex) => (
+const renderMostReadLink = (service, script, listindex, link, dir) => (
   <MostReadLink
     service={service}
     link={link}
@@ -122,18 +122,13 @@ const MostReadList = ({ items, service, script, dir }) => (
         <Grid {...MostReadItemProps} dir={dir} forwardedAs="li">
           <StyledLi item={i}>
             {renderMostReadRank(service, script, i, items, dir)}
-            {renderMostReadLink(link, service, script, dir, i)}
+            {renderMostReadLink(service, script, i, link, dir)}
           </StyledLi>
         </Grid>
       ))}
     </StyledGrid>
   </StyledOl>
 );
-
-export const itemPropTypes = shape({
-  title: string.isRequired,
-  href: string.isRequired,
-});
 
 MostReadList.propTypes = {
   items: arrayOf(itemPropTypes).isRequired,

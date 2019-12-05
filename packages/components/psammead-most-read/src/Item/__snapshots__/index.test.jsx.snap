@@ -19,8 +19,8 @@ exports[`MostReadLink should render ltr correctly 1`] = `
 }
 
 .c0 {
-  padding-bottom: 1.5rem;
   padding-left: 16px;
+  padding-bottom: 1.5rem;
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
@@ -69,8 +69,8 @@ exports[`MostReadLink should render rtl correctly 1`] = `
 }
 
 .c0 {
-  padding-bottom: 1.5rem;
   padding-right: 16px;
+  padding-bottom: 1.5rem;
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
@@ -129,8 +129,8 @@ exports[`MostReadLink should render with last updated date correctly 1`] = `
 }
 
 .c0 {
-  padding-bottom: 1.5rem;
   padding-left: 16px;
+  padding-bottom: 1.5rem;
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
@@ -190,8 +190,6 @@ exports[`MostReadRank should render ltr correctly 1`] = `
   color: #B80000;
   margin: 0;
   padding: 0;
-  display: inline-block;
-  width: auto;
   float: left;
 }
 
@@ -227,8 +225,6 @@ exports[`MostReadRank should render ltr with double digits correctly 1`] = `
   color: #B80000;
   margin: 0;
   padding: 0;
-  display: inline-block;
-  width: auto;
   float: left;
 }
 
@@ -264,8 +260,6 @@ exports[`MostReadRank should render rtl correctly 1`] = `
   color: #B80000;
   margin: 0;
   padding: 0;
-  display: inline-block;
-  width: auto;
   float: left;
 }
 

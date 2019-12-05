@@ -1,7 +1,8 @@
 import React from 'react';
 import { arrayOf, oneOf, shape, string } from 'prop-types';
 import { scriptPropType } from '@bbc/gel-foundations/prop-types';
-import MostReadList, { itemPropTypes } from './List';
+import { itemPropTypes } from './Item';
+import MostReadList from './List';
 import MostReadTitle from './Title';
 
 const MostRead = ({ script, service, header, items, dir }) => (

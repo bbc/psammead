@@ -2,10 +2,7 @@ import React from 'react';
 import { node, oneOf, shape, string, number, arrayOf } from 'prop-types';
 import styled from 'styled-components';
 import { getFoolscap, getDoublePica } from '@bbc/gel-foundations/typography';
-import {
-  GEL_SPACING,
-  GEL_SPACING_TRPL,
-} from '@bbc/gel-foundations/spacings';
+import { GEL_SPACING_TRPL } from '@bbc/gel-foundations/spacings';
 import {
   GEL_GROUP_5_SCREEN_WIDTH_MIN,
   GEL_GROUP_3_SCREEN_WIDTH_MIN,
@@ -19,14 +16,10 @@ import {
   getSerifLight,
   getSerifMedium,
 } from '@bbc/psammead-styles/font-styles';
-import { itemPropTypes } from '../List';
 
 const paddingStart = ({ dir }) => `padding-${dir === 'ltr' ? 'left' : 'right'}`;
-const widthService = (service, value) =>
-  service === 'bengali' ? '3rem' : value;
 
-const widthTest = (service, bValue, elseValue) =>
-  service === 'bengali' ? bValue : elseValue;
+const isBengali = (service, yes, no) => (service === 'bengali' ? yes : no);
 
 const StyledLink = styled.a`
   ${({ script }) => script && getDoublePica(script)};
@@ -51,31 +44,61 @@ const StyledWrapper = styled.div`
   @media (min-width: ${GEL_GROUP_1_SCREEN_WIDTH_MIN}) {
     min-width: ${props =>
       props.items.length >= 10
-        ? widthTest(props.service, '2rem', '3rem')
+        ? isBengali(props.service, '2rem', '3rem')
         : 'auto'};
   }
 
   @media (min-width: ${GEL_GROUP_2_SCREEN_WIDTH_MIN}) {
     min-width: ${props =>
-      props.listindex >= 5 && props.items.length >= 10 ? '3rem' : 'auto'};
+      props.listindex >= 5 && props.items.length >= 10
+        ? isBengali(props.service, '2rem', '3rem')
+        : 'auto'};
   }
 
   @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
     min-width: ${props =>
-      props.listindex >= 5 ? widthService(props.service, '4rem') : 'auto'};
+      props.listindex >= 5 && props.items.length >= 10
+        ? isBengali(props.service, '3rem', '4rem')
+        : 'auto'};
   }
 
   @media (min-width: ${GEL_GROUP_5_SCREEN_WIDTH_MIN}) {
     min-width: ${props =>
       props.listindex === 4 && props.items.length >= 10
-        ? widthService(props.service, '4.2rem')
+        ? isBengali(props.service, '3rem', '4.2rem')
         : 'auto'};
   }
 `;
 
+// const StyledWrapper = styled.div`
+//   min-width: ${props => (props.service === 'bengali' ? '1rem' : '3rem')};
+//
+//   @media (min-width: ${GEL_GROUP_0_SCREEN_WIDTH_MIN}) {
+//     min-width: ${props => (props.items.length >= 10 ? '2rem' : 'auto')};
+//   }
+//
+//   @media (min-width: ${GEL_GROUP_1_SCREEN_WIDTH_MIN}) {
+//     min-width: ${props => (props.items.length >= 10 ? '3rem' : 'auto')};
+//   }
+//
+//   @media (min-width: ${GEL_GROUP_2_SCREEN_WIDTH_MIN}) {
+//     min-width: ${props =>
+//       props.listindex >= 5 && props.items.length >= 10 ? '3rem' : 'auto'};
+//   }
+//
+//   @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
+//     min-width: ${props => (props.listindex >= 5 ? '4rem' : 'auto')};
+//   }
+//
+//   @media (min-width: ${GEL_GROUP_5_SCREEN_WIDTH_MIN}) {
+//     min-width: ${props =>
+//       props.listindex === 4 && props.items.length >= 10 ? '4.2rem' : 'auto'};
+//   }
+// `;
+
 const StyledItem = styled.div`
-  padding-bottom: ${GEL_SPACING_TRPL};
   ${paddingStart}: 16px;
+  padding-bottom: ${GEL_SPACING_TRPL};
 `;
 
 export const MostReadRank = styled.span`
@@ -84,12 +107,10 @@ export const MostReadRank = styled.span`
   color: ${C_POSTBOX};
   margin: 0; /* Reset */
   padding: 0;
-  display: inline-block;
-  width: auto;
   float: ${props => (props.dir === 'rtl' ? 'right' : 'left')};
 `;
 
-export const MostReadNumber = ({
+export const MostReadRankWrapper = ({
   service,
   script,
   rank,
@@ -134,16 +155,21 @@ MostReadRank.defaultProps = {
   dir: 'ltr',
 };
 
-MostReadNumber.propTypes = {
+export const itemPropTypes = shape({
+  title: string.isRequired,
+  href: string.isRequired,
+});
+
+MostReadRankWrapper.propTypes = {
   service: string.isRequired,
   script: shape(scriptPropType).isRequired,
-  rank: number,
+  rank: string,
   listindex: number.isRequired,
   items: arrayOf(itemPropTypes).isRequired,
   dir: oneOf(['rtl', 'ltr']),
 };
 
-MostReadNumber.defaultProps = {
+MostReadRankWrapper.defaultProps = {
   rank: null,
   dir: 'ltr',
 };

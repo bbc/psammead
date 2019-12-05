@@ -31,7 +31,7 @@ const renderList = ({ service, script }, number, type) => (
     items={loadItems(number, type)}
     service={service}
     script={script}
-    dir="ltr"
+    dir={type === 'LTR' ? 'ltr' : 'rtl'}
   />
 );
 
