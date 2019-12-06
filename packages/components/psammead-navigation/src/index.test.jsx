@@ -40,6 +40,7 @@ const NavigationExample = (
 
 describe('Navigation', () => {
   shouldMatchSnapshot('should render correctly', NavigationExample);
+
   shouldMatchSnapshot(
     'should render correctly when isOpen is true',
     <Navigation
@@ -47,6 +48,18 @@ describe('Navigation', () => {
       skipLinkText="Wụga n’ọdịnaya"
       service="news"
       isOpen
+    >
+      {navigationUlComponent}
+    </Navigation>,
+  );
+
+  shouldMatchSnapshot(
+    'should render correctly when ampOpenClass is provided',
+    <Navigation
+      script={latin}
+      skipLinkText="Wụga n’ọdịnaya"
+      service="news"
+      ampOpenClass="is-open"
     >
       {navigationUlComponent}
     </Navigation>,
