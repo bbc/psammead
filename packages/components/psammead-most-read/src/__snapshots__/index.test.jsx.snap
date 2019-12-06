@@ -341,7 +341,11 @@ exports[`MostRead should render with ltr most read with correct dir 1`] = `
             dir="ltr"
           >
             <a
+<<<<<<< HEAD
               class="c9"
+=======
+              class="c8"
+>>>>>>> 010fa42cdfb1df2332e5e540fe050026fcab45f5
               href="https://www.bbc.com/news/articles/cn7k01xp8kxo"
             >
               Could a computer ever create better art than a human?
@@ -373,7 +377,11 @@ exports[`MostRead should render with ltr most read with correct dir 1`] = `
             dir="ltr"
           >
             <a
+<<<<<<< HEAD
               class="c9"
+=======
+              class="c8"
+>>>>>>> 010fa42cdfb1df2332e5e540fe050026fcab45f5
               href="https://www.bbc.com/news/articles/cn7k01xp8kxo"
             >
               Could a computer ever create better art than a human?
@@ -405,7 +413,11 @@ exports[`MostRead should render with ltr most read with correct dir 1`] = `
             dir="ltr"
           >
             <a
+<<<<<<< HEAD
               class="c9"
+=======
+              class="c8"
+>>>>>>> 010fa42cdfb1df2332e5e540fe050026fcab45f5
               href="https://www.bbc.com/news/articles/cn7k01xp8kxo"
             >
               Could a computer ever create better art than a human?
@@ -437,7 +449,11 @@ exports[`MostRead should render with ltr most read with correct dir 1`] = `
             dir="ltr"
           >
             <a
+<<<<<<< HEAD
               class="c9"
+=======
+              class="c8"
+>>>>>>> 010fa42cdfb1df2332e5e540fe050026fcab45f5
               href="https://www.bbc.com/news/articles/cn7k01xp8kxo"
             >
               Could a computer ever create better art than a human?
@@ -469,7 +485,11 @@ exports[`MostRead should render with ltr most read with correct dir 1`] = `
             dir="ltr"
           >
             <a
+<<<<<<< HEAD
               class="c9"
+=======
+              class="c8"
+>>>>>>> 010fa42cdfb1df2332e5e540fe050026fcab45f5
               href="https://www.bbc.com/news/articles/cn7k01xp8kxo"
             >
               Could a computer ever create better art than a human?
@@ -501,7 +521,11 @@ exports[`MostRead should render with ltr most read with correct dir 1`] = `
             dir="ltr"
           >
             <a
+<<<<<<< HEAD
               class="c9"
+=======
+              class="c8"
+>>>>>>> 010fa42cdfb1df2332e5e540fe050026fcab45f5
               href="https://www.bbc.com/news/articles/cn7k01xp8kxo"
             >
               Could a computer ever create better art than a human?
@@ -533,7 +557,11 @@ exports[`MostRead should render with ltr most read with correct dir 1`] = `
             dir="ltr"
           >
             <a
+<<<<<<< HEAD
               class="c9"
+=======
+              class="c8"
+>>>>>>> 010fa42cdfb1df2332e5e540fe050026fcab45f5
               href="https://www.bbc.com/news/articles/cn7k01xp8kxo"
             >
               Could a computer ever create better art than a human?
@@ -565,7 +593,11 @@ exports[`MostRead should render with ltr most read with correct dir 1`] = `
             dir="ltr"
           >
             <a
+<<<<<<< HEAD
               class="c9"
+=======
+              class="c8"
+>>>>>>> 010fa42cdfb1df2332e5e540fe050026fcab45f5
               href="https://www.bbc.com/news/articles/cn7k01xp8kxo"
             >
               Could a computer ever create better art than a human?
@@ -597,7 +629,11 @@ exports[`MostRead should render with ltr most read with correct dir 1`] = `
             dir="ltr"
           >
             <a
+<<<<<<< HEAD
               class="c9"
+=======
+              class="c8"
+>>>>>>> 010fa42cdfb1df2332e5e540fe050026fcab45f5
               href="https://www.bbc.com/news/articles/cn7k01xp8kxo"
             >
               Could a computer ever create better art than a human?
@@ -629,7 +665,11 @@ exports[`MostRead should render with ltr most read with correct dir 1`] = `
             dir="ltr"
           >
             <a
+<<<<<<< HEAD
               class="c9"
+=======
+              class="c8"
+>>>>>>> 010fa42cdfb1df2332e5e540fe050026fcab45f5
               href="https://www.bbc.com/news/articles/cn7k01xp8kxo"
             >
               Could a computer ever create better art than a human?
@@ -983,7 +1023,11 @@ exports[`MostRead should render with rtl most read with correct dir 1`] = `
             dir="rtl"
           >
             <a
+<<<<<<< HEAD
               class="c9"
+=======
+              class="c8"
+>>>>>>> 010fa42cdfb1df2332e5e540fe050026fcab45f5
               href="https://www.bbc.com/arabic/articles/c1er5mjnznzo"
             >
               لماذا يخجل البعض من اسم قريته في مصر؟
@@ -1015,7 +1059,11 @@ exports[`MostRead should render with rtl most read with correct dir 1`] = `
             dir="rtl"
           >
             <a
+<<<<<<< HEAD
               class="c9"
+=======
+              class="c8"
+>>>>>>> 010fa42cdfb1df2332e5e540fe050026fcab45f5
               href="https://www.bbc.com/arabic/articles/c1er5mjnznzo"
             >
               لماذا يخجل البعض من اسم قريته في مصر؟
@@ -1047,7 +1095,11 @@ exports[`MostRead should render with rtl most read with correct dir 1`] = `
             dir="rtl"
           >
             <a
+<<<<<<< HEAD
               class="c9"
+=======
+              class="c8"
+>>>>>>> 010fa42cdfb1df2332e5e540fe050026fcab45f5
               href="https://www.bbc.com/arabic/articles/c1er5mjnznzo"
             >
               لماذا يخجل البعض من اسم قريته في مصر؟
@@ -1079,7 +1131,11 @@ exports[`MostRead should render with rtl most read with correct dir 1`] = `
             dir="rtl"
           >
             <a
+<<<<<<< HEAD
               class="c9"
+=======
+              class="c8"
+>>>>>>> 010fa42cdfb1df2332e5e540fe050026fcab45f5
               href="https://www.bbc.com/arabic/articles/c1er5mjnznzo"
             >
               لماذا يخجل البعض من اسم قريته في مصر؟
@@ -1111,7 +1167,11 @@ exports[`MostRead should render with rtl most read with correct dir 1`] = `
             dir="rtl"
           >
             <a
+<<<<<<< HEAD
               class="c9"
+=======
+              class="c8"
+>>>>>>> 010fa42cdfb1df2332e5e540fe050026fcab45f5
               href="https://www.bbc.com/arabic/articles/c1er5mjnznzo"
             >
               لماذا يخجل البعض من اسم قريته في مصر؟
@@ -1143,7 +1203,11 @@ exports[`MostRead should render with rtl most read with correct dir 1`] = `
             dir="rtl"
           >
             <a
+<<<<<<< HEAD
               class="c9"
+=======
+              class="c8"
+>>>>>>> 010fa42cdfb1df2332e5e540fe050026fcab45f5
               href="https://www.bbc.com/arabic/articles/c1er5mjnznzo"
             >
               لماذا يخجل البعض من اسم قريته في مصر؟
@@ -1175,7 +1239,11 @@ exports[`MostRead should render with rtl most read with correct dir 1`] = `
             dir="rtl"
           >
             <a
+<<<<<<< HEAD
               class="c9"
+=======
+              class="c8"
+>>>>>>> 010fa42cdfb1df2332e5e540fe050026fcab45f5
               href="https://www.bbc.com/arabic/articles/c1er5mjnznzo"
             >
               لماذا يخجل البعض من اسم قريته في مصر؟
@@ -1207,7 +1275,11 @@ exports[`MostRead should render with rtl most read with correct dir 1`] = `
             dir="rtl"
           >
             <a
+<<<<<<< HEAD
               class="c9"
+=======
+              class="c8"
+>>>>>>> 010fa42cdfb1df2332e5e540fe050026fcab45f5
               href="https://www.bbc.com/arabic/articles/c1er5mjnznzo"
             >
               لماذا يخجل البعض من اسم قريته في مصر؟
@@ -1239,7 +1311,11 @@ exports[`MostRead should render with rtl most read with correct dir 1`] = `
             dir="rtl"
           >
             <a
+<<<<<<< HEAD
               class="c9"
+=======
+              class="c8"
+>>>>>>> 010fa42cdfb1df2332e5e540fe050026fcab45f5
               href="https://www.bbc.com/arabic/articles/c1er5mjnznzo"
             >
               لماذا يخجل البعض من اسم قريته في مصر؟
@@ -1271,7 +1347,11 @@ exports[`MostRead should render with rtl most read with correct dir 1`] = `
             dir="rtl"
           >
             <a
+<<<<<<< HEAD
               class="c9"
+=======
+              class="c8"
+>>>>>>> 010fa42cdfb1df2332e5e540fe050026fcab45f5
               href="https://www.bbc.com/arabic/articles/c1er5mjnznzo"
             >
               لماذا يخجل البعض من اسم قريته في مصر؟

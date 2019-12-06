@@ -65,6 +65,7 @@ The `@bbc/psammead-navigation` package is a set of two components, `NavigationUl
 | -------- | ---- | -------- | ------- | ------- |
 | children | node | Yes      | N/A     | `<NavigationUl><NavigationLi url="/" script={latin} active="true">Home</NavigationLi><NavigationLi url="/sport" script={latin}>{Sport}</NavigationLi></NavigationUl>` |
 | dir      | string  | No       | `'ltr'`   | `'rtl'` |
+| id      | string  | No       | `null`   | `'scrollable-nav'` |
 
 ### Dropdown
 
@@ -104,7 +105,7 @@ The `@bbc/psammead-navigation` package is a set of two components, `NavigationUl
 | Argument | Type | Required | Default | Example |
 | -------- | ---- | -------- | ------- | ------- |
 | announcedText | string | Yes | N/A | `'Menu'` |
-| onToggle | string | Yes | N/A | `"tap:menu.toggleVisibility"` |
+| onToggle | string | Yes | N/A | `"menu.toggleVisibility"` - must be an action on a valid AMP target|
 | dir | string | no | `'ltr'` | `'rtl'` |
 | script   | object  | Yes      | N/A     |  `{ canon: { groupA: { fontSize: '28', lineHeight: '32',}, groupB: { fontSize: '32', lineHeight: '36', }, groupD: { fontSize: '44', lineHeight: '48', }, }, trafalgar: { groupA: { fontSize: '20', lineHeight: '24', }, groupB: { fontSize: '24', lineHeight: '28', }, groupD: { fontSize: '32', lineHeight: '36', }, }, }` |
 
@@ -146,18 +147,22 @@ import { latin } from '@bbc/gel-foundations/scripts';
 
 ```jsx
 import React from 'react';
-import { Dropdown, DropdownUl, DropdownLi } from '@bbc/psammead-navigation/dropdown';
+import {
+  Dropdown,
+  DropdownUl,
+  DropdownLi,
+} from '@bbc/psammead-navigation/dropdown';
 import { latin } from '@bbc/gel-foundations/scripts';
 
 <Dropdown>
   <DropdownUl>
     <DropdownLi
-        script={latin}
-        service="news"
-        key="Home"
-        url="/"
-        active
-        currentPageText="Current page"
+      script={latin}
+      service="news"
+      key="Home"
+      url="/"
+      active
+      currentPageText="Current page"
     >
       Home
     </DropdownLi>
@@ -175,12 +180,16 @@ import React from 'react';
 import { CanonicalMenuButton } from '@bbc/psammead-navigation/dropdown';
 import { latin } from '@bbc/gel-foundations/scripts';
 
-<CanonicalMenuButton 
-    announcedText="Menu"
-    isOpen={true}
-    onOpen={() => { console.log("Handle open action"); }}
-    onClose={() => { console.log("Handle close action"); }} 
-    script={latin}
+<CanonicalMenuButton
+  announcedText="Menu"
+  isOpen={true}
+  onOpen={() => {
+    console.log('Handle open action');
+  }}
+  onClose={() => {
+    console.log('Handle close action');
+  }}
+  script={latin}
 />
 ```
 
@@ -193,7 +202,7 @@ import { latin } from '@bbc/gel-foundations/scripts';
 
 <AmpMenuButton
   announcedText="Menu"
-  onToggle="tap:menu.toggleVisibility"
+  onToggle="menu.toggleVisibility"
   script={latin}
 />
 ```

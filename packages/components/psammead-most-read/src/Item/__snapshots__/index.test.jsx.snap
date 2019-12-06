@@ -93,9 +93,15 @@ exports[`MostReadLink should render rtl correctly 1`] = `
 >
   <a
     class="c1"
+<<<<<<< HEAD
     href="https://www.bbc.com/arabic/articles/c1er5mjnznzo"
   >
     لماذا يخجل البعض من اسم قريته في مصر؟
+=======
+    href="https://www.bbc.com/persian/articles/cej3lzd5e0go"
+  >
+    در این جشنواره برای نخستین بار از کارگران افغانستان در شهر تهران تقدیر شد
+>>>>>>> 010fa42cdfb1df2332e5e540fe050026fcab45f5
   </a>
 </div>
 `;

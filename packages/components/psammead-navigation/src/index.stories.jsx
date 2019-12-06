@@ -62,6 +62,13 @@ const BackgroundContainer = styled.div`
   height: 100vh;
 `;
 
+const ToggledContainer = styled.div`
+  background-color: #ffffff;
+  float: left;
+  clear: both;
+  margin-top: 10px;
+`;
+
 const inputs = () => {
   // capitalization is only for presentation purpose on the knob
   const options = Object.keys(svgs)
@@ -283,10 +290,13 @@ ampStories.add(
     <BackgroundContainer>
       <AmpMenuButton
         announcedText="Menu"
-        onToggle=""
+        onToggle="other-element.toggleVisibility"
         dir={dir}
         script={script}
       />
+      <ToggledContainer id="other-element">
+        Toggled with AMP action
+      </ToggledContainer>
     </BackgroundContainer>
   ),
   {

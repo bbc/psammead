@@ -7,8 +7,8 @@ import Timestamp from '@bbc/psammead-timestamp';
 import MostReadList from './List';
 import MostReadTitle from './Title';
 import { MostReadLink, MostReadRank } from './Item';
-import { getItem, getItems } from './testHelpers/itemsHelper';
 import MostRead from './index';
+import { getItem, getItems } from './testHelpers/itemsHelper';
 
 const arabicServiceDecorator = withServicesKnob({
   defaultService: 'arabic',
@@ -66,7 +66,7 @@ const lastUpdated = (script, service) => (
   </Timestamp>
 );
 
-const stories = storiesOf('Components|MostRead/Item', module)
+storiesOf('Components|MostRead/Item', module)
   .addDecorator(withKnobs)
   .addDecorator(withServicesKnob())
   .add(`MostReadLink`, ({ script, service }) => (
@@ -81,7 +81,7 @@ const stories = storiesOf('Components|MostRead/Item', module)
     />
   ));
 
-stories
+storiesOf('Components|MostRead/Rank', module)
   .add(`MostReadRank LTR`, ({ script, service }) =>
     renderRank({ service, script, rank: 5 }),
   )
@@ -92,7 +92,7 @@ stories
     renderRank({ service, script, rank: '۲' }),
   );
 
-storiesOf('Components|MostRead/List/LTR', module)
+storiesOf('Components|MostRead/List', module)
   .addDecorator(withKnobs)
   .add(`News LTR`, () =>
     newsServiceDecorator(({ script, service }) =>

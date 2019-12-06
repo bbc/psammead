@@ -1,6 +1,6 @@
 import React from 'react';
 import styled, { css } from 'styled-components';
-import { node, oneOf } from 'prop-types';
+import { node, oneOf, string } from 'prop-types';
 import { GEL_GROUP_2_SCREEN_WIDTH_MAX } from '@bbc/gel-foundations/breakpoints';
 import useMediaQuery from '../hooks/useMediaQuery';
 
@@ -63,13 +63,19 @@ CanonicalScrollableNavigation.propTypes = {
 
 CanonicalScrollableNavigation.defaultProps = { dir: 'ltr' };
 
-export const AmpScrollableNavigation = ({ children, dir }) => (
-  <StyledScrollableNav dir={dir}>{children}</StyledScrollableNav>
+export const AmpScrollableNavigation = ({ children, dir, id }) => (
+  <StyledScrollableNav id={id} dir={dir}>
+    {children}
+  </StyledScrollableNav>
 );
 
 AmpScrollableNavigation.propTypes = {
   children: node.isRequired,
   dir: oneOf(['ltr', 'rtl']),
+  id: string,
 };
 
-AmpScrollableNavigation.defaultProps = { dir: 'ltr' };
+AmpScrollableNavigation.defaultProps = {
+  dir: 'ltr',
+  id: null,
+};
