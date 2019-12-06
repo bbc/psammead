@@ -163,14 +163,19 @@ describe('Dropdown navigation', () => {
 describe('AMP Menu Button', () => {
   shouldMatchSnapshot(
     'should render correctly',
-    <AmpMenuButton announcedText="Menu" onToggle="" script={latin} dir="ltr" />,
+    <AmpMenuButton
+      announcedText="Menu"
+      onToggle="other-element.toggleVisibility"
+      script={latin}
+      dir="ltr"
+    />,
   );
 
   shouldMatchSnapshot(
     'should render rtl correctly',
     <AmpMenuButton
       announcedText="Menu"
-      onToggle=""
+      onToggle="other-element.toggleVisibility"
       script={arabic}
       dir="rtl"
     />,

@@ -215,7 +215,7 @@ const AmpHead = () => (
 );
 
 const expandedHandler =
-  'tap:AMP.setState({ menuState: { expanded: !menuState.expanded }})';
+  'AMP.setState({ menuState: { expanded: !menuState.expanded }})';
 
 const initialState = { expanded: false };
 
@@ -233,7 +233,7 @@ export const AmpMenuButton = ({ announcedText, onToggle, dir, script }) => (
       aria-label={announcedText}
       aria-expanded="false"
       data-amp-bind-aria-expanded='menuState.expanded ? "true" : "false"'
-      on={`${expandedHandler};${onToggle}`}
+      on={`tap:${expandedHandler},${onToggle}`}
       dir={dir}
       script={script}
     >
