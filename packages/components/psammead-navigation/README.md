@@ -170,7 +170,7 @@ import { latin } from '@bbc/gel-foundations/scripts';
       Sport
     </DropdownLi>
   </DropdownUl>
-</Dropdown>;
+</Dropdown>
 ```
 
 ## Canonical Menu Button Usage
@@ -190,7 +190,7 @@ import { latin } from '@bbc/gel-foundations/scripts';
     console.log('Handle close action');
   }}
   script={latin}
-/>;
+/>
 ```
 
 ## Amp Menu Button Usage
@@ -204,7 +204,7 @@ import { latin } from '@bbc/gel-foundations/scripts';
   announcedText="Menu"
   onToggle="menu.toggleVisibility"
   script={latin}
-/>;
+/>
 ```
 
 ### When to use this component
