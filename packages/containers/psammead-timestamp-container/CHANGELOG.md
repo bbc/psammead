@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 2.6.13 | [PR#2782](https://github.com/bbc/psammead/pull/2782) Talos - Bump Dependencies - @bbc/psammead-locales |
 | 2.6.12 | [PR#2703](https://github.com/bbc/psammead/pull/2703) Talos - Bump Dependencies - @bbc/psammead-timestamp |
 | 2.6.11 | [PR#2700](https://github.com/bbc/psammead/pull/2700) Talos - Bump Dependencies - @bbc/psammead-timestamp |
 | 2.6.10 | [PR#2612](https://github.com/bbc/psammead/pull/2612) Fix failing unit test in psammead timestamp container |
