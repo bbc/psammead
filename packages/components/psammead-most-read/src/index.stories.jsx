@@ -7,7 +7,7 @@ import Timestamp from '@bbc/psammead-timestamp';
 import MostReadList from './List';
 import MostReadTitle from './Title';
 import { MostReadLink, MostReadRank } from './Item';
-import loadItems from './testHelpers/fixtureData';
+import { getItem, getItems } from './testHelpers/itemsHelper';
 import MostRead from './index';
 
 const arabicServiceDecorator = withServicesKnob({
@@ -28,7 +28,7 @@ const newsServiceDecorator = withServicesKnob({
 
 const renderList = ({ service, script }, number, type) => (
   <MostReadList
-    items={loadItems(number, type)}
+    items={getItems(service, number)}
     service={service}
     script={script}
     dir={type === 'LTR' ? 'ltr' : 'rtl'}
@@ -54,24 +54,18 @@ const lastUpdated = (script, service) => (
 
 const stories = storiesOf('Components|MostRead/Item', module)
   .addDecorator(withKnobs)
-  .addDecorator(withServicesKnob());
-
-[loadItems(1, 'LTR')[0], loadItems(1, 'RTL')[0]].forEach(
-  ({ service: itemService, ...props }) => {
-    stories.add(`MostReadLink ${itemService}`, ({ script, service }) => (
-      <MostReadLink link={props} service={service} script={script} />
-    ));
-  },
-);
-
-stories.add(`MostReadLink with last updated date`, ({ script, service }) => (
-  <MostReadLink
-    link={loadItems(1, 'LTR')[0]}
-    lastUpdated={lastUpdated(script, service)}
-    service={service}
-    script={script}
-  />
-));
+  .addDecorator(withServicesKnob())
+  .add(`MostReadLink`, ({ script, service }) => (
+    <MostReadLink link={getItem(service)} service={service} script={script} />
+  ))
+  .add(`MostReadLink with last updated date`, ({ script, service }) => (
+    <MostReadLink
+      link={getItem(service)}
+      lastUpdated={lastUpdated(script, service)}
+      service={service}
+      script={script}
+    />
+  ));
 
 stories
   .add(`MostReadRank LTR`, ({ script, service }) =>
@@ -158,7 +152,7 @@ storiesOf('Components|MostRead', module)
   .add('default LTR', () =>
     newsServiceDecorator(({ script, service }) => (
       <MostRead
-        items={loadItems(10, 'LTR')}
+        items={getItems(service, 10)}
         service={service}
         script={script}
         dir="ltr"
@@ -169,7 +163,7 @@ storiesOf('Components|MostRead', module)
   .add('default RTL', () =>
     arabicServiceDecorator(({ script, service }) => (
       <MostRead
-        items={loadItems(10, 'RTL')}
+        items={getItems(service, 10)}
         service={service}
         script={script}
         dir="rtl"
