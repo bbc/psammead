@@ -1,6 +1,6 @@
 import React from 'react';
 import { shouldMatchSnapshot } from '@bbc/psammead-test-helpers';
-import { render } from '@testing-library/react';
+import { render, fireEvent } from '@testing-library/react';
 import { latin } from '@bbc/gel-foundations/scripts';
 import ScriptLink from './index';
 
@@ -17,12 +17,16 @@ describe('ScriptLink', () => {
   );
 
   it('should render a link', () => {
+    const onClickMock = jest.fn();
+
     const { container } = render(
-      <ScriptLink {...props} variant="lat">
+      <ScriptLink {...props} variant="lat" onClick={onClickMock}>
         Lat
       </ScriptLink>,
     );
+
     const links = container.querySelectorAll('a');
+    fireEvent.click(links[0]);
 
     expect(links).toHaveLength(1);
     expect(links[0]).toHaveProperty('href');
@@ -30,5 +34,6 @@ describe('ScriptLink', () => {
     expect(links[0].textContent).toEqual('Lat');
     expect(links[0].dataset).toHaveProperty('variant');
     expect(links[0].dataset.variant).toEqual('lat');
+    expect(onClickMock).toHaveBeenCalled();
   });
 });
