@@ -26,6 +26,20 @@ const newsServiceDecorator = withServicesKnob({
   defaultService: 'news',
 });
 
+const renderMostReadTitle = ({ header, service, script, dir }) => (
+  <MostReadTitle header={header} script={script} service={service} dir={dir} />
+);
+
+const renderMostRead = ({ service, script, dir, header }) => (
+  <MostRead
+    items={getItems(service, 10)}
+    service={service}
+    script={script}
+    dir={dir}
+    header={header}
+  />
+);
+
 const renderList = ({ service, script }, number, type) => (
   <MostReadList
     items={getItems(service, number)}
@@ -127,47 +141,25 @@ storiesOf('Components|MostRead/List/RTL', module)
 storiesOf('Components|MostRead/Title', module)
   .addDecorator(withKnobs)
   .add('LTR', () =>
-    newsServiceDecorator(({ script, service }) => (
-      <MostReadTitle
-        header="Most Read"
-        script={script}
-        service={service}
-        dir="ltr"
-      />
-    )),
+    newsServiceDecorator(({ script, service, dir }) =>
+      renderMostReadTitle({ service, dir, script, header: 'Most Read' }),
+    ),
   )
   .add('RTL', () =>
-    arabicServiceDecorator(({ script, service }) => (
-      <MostReadTitle
-        header="الأكثر قراءة"
-        script={script}
-        service={service}
-        dir="rtl"
-      />
-    )),
+    arabicServiceDecorator(({ script, service, dir }) =>
+      renderMostReadTitle({ service, dir, script, header: 'الأكثر قراءة' }),
+    ),
   );
 
 storiesOf('Components|MostRead', module)
   .addDecorator(withKnobs)
   .add('default LTR', () =>
-    newsServiceDecorator(({ script, service }) => (
-      <MostRead
-        items={getItems(service, 10)}
-        service={service}
-        script={script}
-        dir="ltr"
-        header="Most Read"
-      />
-    )),
+    newsServiceDecorator(({ script, service, dir }) =>
+      renderMostRead({ script, service, dir, header: 'Most Read' }),
+    ),
   )
   .add('default RTL', () =>
-    arabicServiceDecorator(({ script, service }) => (
-      <MostRead
-        items={getItems(service, 10)}
-        service={service}
-        script={script}
-        dir="rtl"
-        header="الأكثر قراءة"
-      />
-    )),
+    arabicServiceDecorator(({ script, service, dir }) =>
+      renderMostRead({ script, service, dir, header: 'الأكثر قراءة' }),
+    ),
   );
