@@ -50,9 +50,9 @@ exports[`MostReadLink should render ltr correctly 1`] = `
 >
   <a
     class="c1"
-    href="https://www.bbc.co.uk/news/business-43328806"
+    href="https://www.bbc.com/news/articles/cn7k01xp8kxo"
   >
-    John Lewis staff bonus cut again as profits fall
+    Could a computer ever create better art than a human?
   </a>
 </div>
 `;
@@ -107,9 +107,9 @@ exports[`MostReadLink should render rtl correctly 1`] = `
 >
   <a
     class="c1"
-    href="https://www.bbc.com/persian/iran-46965704"
+    href="https://www.bbc.com/persian/articles/cej3lzd5e0go"
   >
-    ایران از لغو 'رزمایش قطع اینترنت' خبر داد
+    در این جشنواره برای نخستین بار از کارگران افغانستان در شهر تهران تقدیر شد
   </a>
 </div>
 `;
@@ -188,9 +188,9 @@ exports[`MostReadLink should render with last updated date correctly 1`] = `
 >
   <a
     class="c1"
-    href="https://www.bbc.co.uk/news/business-43328806"
+    href="https://www.bbc.com/news/articles/cn7k01xp8kxo"
   >
-    John Lewis staff bonus cut again as profits fall
+    Could a computer ever create better art than a human?
   </a>
   <time
     class="c2"
