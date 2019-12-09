@@ -17,10 +17,8 @@ describe('ScriptLink', () => {
   );
 
   it('should render a link', () => {
-    const onClickMock = jest.fn();
-
     const { container } = render(
-      <ScriptLink {...props} variant="lat" onClick={onClickMock}>
+      <ScriptLink {...props} variant="lat">
         Lat
       </ScriptLink>,
     );
@@ -34,6 +32,19 @@ describe('ScriptLink', () => {
     expect(links[0].textContent).toEqual('Lat');
     expect(links[0].dataset).toHaveProperty('variant');
     expect(links[0].dataset.variant).toEqual('lat');
+  });
+
+  it('should call the onClick handler when the link is clicked', () => {
+    const onClickMock = jest.fn();
+    const { container } = render(
+      <ScriptLink {...props} variant="lat" onClick={onClickMock}>
+        Lat
+      </ScriptLink>,
+    );
+
+    const link = container.querySelector('a');
+    fireEvent.click(link);
+
     expect(onClickMock).toHaveBeenCalled();
   });
 });
