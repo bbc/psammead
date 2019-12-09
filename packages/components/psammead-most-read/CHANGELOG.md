@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 0.2.1-alpha.3 | [PR#2797](https://github.com/bbc/psammead/pull/2797) Import grid from psammead-grid |
 | 0.2.1-alpha.2 | [PR#2763](https://github.com/bbc/psammead/pull/2763) Use article paths from psammead-storybook-helpers |
 | 0.2.1-alpha.1 | [PR#2719](https://github.com/bbc/psammead/pull/2719) Add section label with role and aria-labelledby |
 | 0.2.0-alpha.2 | [PR#2710](https://github.com/bbc/psammead/pull/2710) Updating snapshots |

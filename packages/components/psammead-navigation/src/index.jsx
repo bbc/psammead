@@ -226,7 +226,7 @@ const StyledNav = styled.nav`
   ${({ ampOpenClass }) =>
     ampOpenClass &&
     css`
-       {
+      &.${ampOpenClass} {
         background-color: ${C_EBON};
       }
     `}
