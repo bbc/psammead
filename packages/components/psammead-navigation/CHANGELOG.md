@@ -3,7 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
-| 6.0.0-alpha.11 | [PR#xxxx](https://github.com/bbc/psammead/pull/xxxx) Refactor Canonical MenuButton props |
+| 6.0.0-alpha.11 | [PR#2799](https://github.com/bbc/psammead/pull/2799) Refactor Canonical MenuButton props |
 | 6.0.0-alpha.10 | [PR#2785](https://github.com/bbc/psammead/pull/2785) Add `id`, `ampOpenClass` props to `Navigation` |
 | 6.0.0-alpha.9 | [PR#2779](https://github.com/bbc/psammead/pull/2779) Merge AMP tap handlers correctly |
 | 6.0.0-alpha.8 | [PR#2778](https://github.com/bbc/psammead/pull/2778) Fix menu border in FireFox high contrast mode |
