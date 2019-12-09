@@ -387,7 +387,7 @@ exports[`Navigation should render correctly when ampOpenClass prop is provided 1
   border-top: 0.0625rem solid #FFFFFF;
 }
 
-.c0 {
+.c0.is-open {
   background-color: #222222;
 }
 
