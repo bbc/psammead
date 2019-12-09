@@ -27,6 +27,8 @@ The `@bbc/psammead-navigation` package is a set of two components, `NavigationUl
 | children | node | Yes | N/A | `<ScrollableNavigation dir={dir}><NavigationUl><NavigationLi url="/" script={latin} active="true">Home</NavigationLi><NavigationLi url="/sport" script={latin}>{Sport}</NavigationLi></NavigationUl><ScrollableNavigation/>` |
 | dir | string | No | `'ltr'` | `'rtl'` |
 | isOpen | boolean | No | `false` | `true` |
+| id | string | No | `null` | `navigation-id` |
+| ampOpenClass | string | No | `null` | `'open'` |
 
 ### NavigationUl
 
