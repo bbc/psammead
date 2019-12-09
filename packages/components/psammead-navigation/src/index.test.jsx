@@ -54,7 +54,7 @@ describe('Navigation', () => {
   );
 
   shouldMatchSnapshot(
-    'should render correctly when ampOpenClass is provided',
+    'should render correctly when ampOpenClass prop is provided',
     <Navigation
       script={latin}
       skipLinkText="Wụga n’ọdịnaya"
