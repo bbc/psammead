@@ -95,8 +95,7 @@ The `@bbc/psammead-navigation` package is a set of two components, `NavigationUl
 | Argument | Type | Required | Default | Example |
 | -------- | ---- | -------- | ------- | ------- |
 | announcedText | string | Yes | N/A | `'Menu'` |
-| onOpen | function | Yes | N/A | `() => { console.log("Handle open action"); }` |
-| onClose | function | Yes | N/A | `() => { console.log("Handle close action"); }` |
+| onClick | function | Yes | N/A | `() => { console.log("Handle open action"); }` |
 | isOpen | bool | Yes | N/A | `false` |
 | dir | string | no | `'ltr'` | `'rtl'` |
 | script   | object  | Yes      | N/A     |  `{ canon: { groupA: { fontSize: '28', lineHeight: '32',}, groupB: { fontSize: '32', lineHeight: '36', }, groupD: { fontSize: '44', lineHeight: '48', }, }, trafalgar: { groupA: { fontSize: '20', lineHeight: '24', }, groupB: { fontSize: '24', lineHeight: '28', }, groupD: { fontSize: '32', lineHeight: '36', }, }, }` |
@@ -184,12 +183,10 @@ import { latin } from '@bbc/gel-foundations/scripts';
 
 <CanonicalMenuButton
   announcedText="Menu"
-  isOpen={true}
-  onOpen={() => {
+  isOpen
+  dir={dir}
+  onClick={() => {
     console.log('Handle open action');
-  }}
-  onClose={() => {
-    console.log('Handle close action');
   }}
   script={latin}
 />
@@ -206,6 +203,7 @@ import { latin } from '@bbc/gel-foundations/scripts';
   announcedText="Menu"
   onToggle="menu.toggleVisibility"
   script={latin}
+  dir={dir}
 />
 ```
 
