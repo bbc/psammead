@@ -24,7 +24,6 @@ describe('ScriptLink', () => {
     );
 
     const links = container.querySelectorAll('a');
-    fireEvent.click(links[0]);
 
     expect(links).toHaveLength(1);
     expect(links[0]).toHaveProperty('href');
