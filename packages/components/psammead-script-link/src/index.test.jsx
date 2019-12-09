@@ -46,5 +46,6 @@ describe('ScriptLink', () => {
     fireEvent.click(link);
 
     expect(onClickMock).toHaveBeenCalled();
+    expect(onClickMock).toHaveBeenCalledTimes(1);
   });
 });
