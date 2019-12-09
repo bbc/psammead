@@ -232,9 +232,8 @@ canonicalStories.add(
       <BackgroundContainer>
         <CanonicalMenuButton
           announcedText="Menu"
-          onOpen={() => {}}
+          onClick={() => {}}
           isOpen={isOpen}
-          onClose={() => {}}
           dir={dir}
           script={script}
         />
