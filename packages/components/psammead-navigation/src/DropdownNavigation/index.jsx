@@ -175,14 +175,13 @@ const MenuButton = styled(Button)`
 export const CanonicalMenuButton = ({
   announcedText,
   isOpen,
-  onOpen,
-  onClose,
+  onClick,
   dir,
   script,
 }) => (
   <MenuButton
     aria-label={announcedText}
-    onClick={isOpen ? onClose : onOpen}
+    onClick={onClick}
     aria-expanded={isOpen ? 'true' : 'false'}
     dir={dir}
     script={script}
@@ -193,8 +192,7 @@ export const CanonicalMenuButton = ({
 
 CanonicalMenuButton.propTypes = {
   announcedText: string.isRequired,
-  onOpen: func.isRequired,
-  onClose: func.isRequired,
+  onClick: func.isRequired,
   isOpen: bool.isRequired,
   dir: oneOf(['ltr', 'rtl']),
   script: shape(scriptPropType).isRequired,
