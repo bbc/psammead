@@ -217,9 +217,19 @@ NavigationLi.defaultProps = {
   dir: 'ltr',
 };
 
+// ampOpenClass is the class added to the Navigation, and is toggled on tap.
+// It indicates whether the menu is open or not. This overrides the background
+// color of the Navigation
 const StyledNav = styled.nav`
   position: relative;
   ${({ isOpen }) => `background-color: ${isOpen ? C_EBON : C_POSTBOX};`}
+  ${({ ampOpenClass }) =>
+    ampOpenClass &&
+    css`
+       {
+        background-color: ${C_EBON};
+      }
+    `}
   border-top: 0.0625rem solid ${C_WHITE};
 
   ${StyledListItem} {
@@ -231,9 +241,15 @@ const StyledNav = styled.nav`
   }
 `;
 
-const Navigation = ({ children, dir, isOpen }) => {
+const Navigation = ({ children, dir, isOpen, id, ampOpenClass }) => {
   return (
-    <StyledNav role="navigation" dir={dir} isOpen={isOpen}>
+    <StyledNav
+      role="navigation"
+      dir={dir}
+      isOpen={isOpen}
+      id={id}
+      ampOpenClass={ampOpenClass}
+    >
       <NavWrapper>{children}</NavWrapper>
     </StyledNav>
   );
@@ -243,11 +259,15 @@ Navigation.propTypes = {
   children: node.isRequired,
   dir: oneOf(['ltr', 'rtl']),
   isOpen: bool,
+  id: string,
+  ampOpenClass: string,
 };
 
 Navigation.defaultProps = {
   dir: 'ltr',
   isOpen: false,
+  id: null,
+  ampOpenClass: null,
 };
 
 export default Navigation;
