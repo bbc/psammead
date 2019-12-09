@@ -263,7 +263,7 @@ exports[`Navigation should render correctly 1`] = `
 </nav>
 `;
 
-exports[`Navigation should render correctly when ampOpenClass is provided 1`] = `
+exports[`Navigation should render correctly when ampOpenClass prop is provided 1`] = `
 .c7 {
   -webkit-clip-path: inset(100%);
   clip-path: inset(100%);
@@ -387,7 +387,7 @@ exports[`Navigation should render correctly when ampOpenClass is provided 1`] = 
   border-top: 0.0625rem solid #FFFFFF;
 }
 
-.c0.is-open {
+.c0 {
   background-color: #222222;
 }
 
