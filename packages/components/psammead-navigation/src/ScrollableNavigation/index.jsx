@@ -61,7 +61,11 @@ export const CanonicalScrollableNavigation = ({
 CanonicalScrollableNavigation.propTypes = {
   children: node.isRequired,
   dir: oneOf(['ltr', 'rtl']),
-  isScrollable: bool.isRequired,
+  isScrollable: bool,
+};
+
+CanonicalScrollableNavigation.defaultProps = {
+  isScrollable: false,
 };
 
 CanonicalScrollableNavigation.defaultProps = { dir: 'ltr' };
