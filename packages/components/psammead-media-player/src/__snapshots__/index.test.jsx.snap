@@ -848,6 +848,10 @@ exports[`Media Player: Canonical Entry renders with no-js styles when noJsClassN
   height: 100%;
 }
 
+.no-js .c2 {
+  cursor: default;
+}
+
 .c1:hover .c13,
 .c1:focus .c13 {
   background-color: #B80000;

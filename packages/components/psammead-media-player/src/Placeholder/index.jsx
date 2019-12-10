@@ -61,7 +61,7 @@ const Placeholder = ({
   } = mediaInfo;
 
   return (
-    <StyledPlaceholder onClick={onClick}>
+    <StyledPlaceholder onClick={onClick} noJsClassName={noJsClassName}>
       <Guidance
         service={service}
         guidanceMessage={guidanceMessage}

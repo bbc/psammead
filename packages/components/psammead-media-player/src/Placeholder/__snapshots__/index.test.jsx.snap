@@ -921,6 +921,10 @@ exports[`Media Player: Placeholder should render no-js styles when noJsClassName
   height: 100%;
 }
 
+.no-js .c1 {
+  cursor: default;
+}
+
 .c0:hover .c12,
 .c0:focus .c12 {
   background-color: #B80000;
