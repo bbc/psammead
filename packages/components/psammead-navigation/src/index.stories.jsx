@@ -152,9 +152,11 @@ const navigationStory = (
   useEffect(() => {
     const mediaQueryList = window.matchMedia('(max-width: 37.5rem)');
     setIsScrollable(mediaQueryList.matches);
-    mediaQueryList.addListener(event => {
-      setIsScrollable(event.matches);
-    });
+
+    const handler = event => setIsScrollable(event.matches);
+    mediaQueryList.addListener(handler);
+
+    return () => mediaQueryList.removeListener(handler);
   }, []);
 
   return (
