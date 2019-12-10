@@ -2,7 +2,7 @@
 
 exports[`Grid component should render Grid with Grid items 1`] = `
 .c0 {
-  display: inline;
+  display: inline-block;
 }
 
 .c2 {
@@ -517,11 +517,11 @@ exports[`Grid component should render Grid with Grid items 1`] = `
 
 exports[`Grid component should render Grid with Grid items including nested non-Grid Figure element 1`] = `
 .c0 {
-  display: inline;
+  display: inline-block;
 }
 
 .c4 {
-  display: inline;
+  display: inline-block;
 }
 
 .c2 {
@@ -1005,7 +1005,7 @@ exports[`Grid component should render Grid with Grid items including nested non-
 
 exports[`Grid component should render Grid with enableGelGutters & margins on only one of the Grid items 1`] = `
 .c0 {
-  display: inline;
+  display: inline-block;
 }
 
 .c3 {
