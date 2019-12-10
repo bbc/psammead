@@ -8,7 +8,7 @@ import {
 } from '@bbc/gel-foundations/breakpoints';
 import { getSansRegular } from '@bbc/psammead-styles/font-styles';
 import { C_WHITE } from '@bbc/psammead-styles/colours';
-import { string, shape, node } from 'prop-types';
+import { string, shape, node, func } from 'prop-types';
 import { scriptPropType } from '@bbc/gel-foundations/prop-types';
 
 const touchAreaStyles = `
@@ -68,19 +68,23 @@ const StyledLink = styled.a`
   }
 `;
 
-const ScriptLink = ({ children, script, service, href, variant }) => (
+const ScriptLink = ({ children, script, service, href, variant, onClick }) => (
   <StyledLink
     script={script}
     service={service}
     href={href}
     data-variant={variant}
+    onClick={onClick}
   >
     {children}
   </StyledLink>
 );
 
+const noopFunction = () => {};
+
 ScriptLink.defaultProps = {
   variant: null,
+  onClick: noopFunction,
 };
 
 ScriptLink.propTypes = {
@@ -89,6 +93,7 @@ ScriptLink.propTypes = {
   service: string.isRequired,
   href: string.isRequired,
   variant: string,
+  onClick: func,
 };
 
 export default ScriptLink;
