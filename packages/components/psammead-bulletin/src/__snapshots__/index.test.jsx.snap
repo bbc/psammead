@@ -94,6 +94,9 @@ exports[`Bulletin should render audio correctly 1`] = `
 .c9 > svg {
   color: #FFFFFF;
   fill: currentColor;
+  width: 1.0625rem;
+  height: 1rem;
+  margin-top: -0.0938rem;
 }
 
 .c8 {
@@ -140,7 +143,7 @@ exports[`Bulletin should render audio correctly 1`] = `
   line-height: 1.25rem;
   color: #222222;
   margin: 0;
-  padding: 1rem 0.5rem 0.5rem 0.5rem;
+  padding: 0.5rem;
 }
 
 @media (min-width:37.5rem) {
@@ -418,6 +421,9 @@ exports[`Bulletin should render live audio correctly 1`] = `
 .c10 > svg {
   color: #FFFFFF;
   fill: currentColor;
+  width: 1.0625rem;
+  height: 1rem;
+  margin-top: -0.0938rem;
 }
 
 .c9 {
@@ -464,7 +470,7 @@ exports[`Bulletin should render live audio correctly 1`] = `
   line-height: 1.25rem;
   color: #222222;
   margin: 0;
-  padding: 1rem 0.5rem 0.5rem 0.5rem;
+  padding: 0.5rem;
 }
 
 @media (min-width:37.5rem) {
@@ -748,6 +754,9 @@ exports[`Bulletin should render live video correctly 1`] = `
 .c10 > svg {
   color: #FFFFFF;
   fill: currentColor;
+  width: 1.0625rem;
+  height: 1rem;
+  margin-top: -0.0938rem;
 }
 
 .c9 {
@@ -794,7 +803,7 @@ exports[`Bulletin should render live video correctly 1`] = `
   line-height: 1.25rem;
   color: #222222;
   margin: 0;
-  padding: 1rem 0.5rem 0.5rem 0.5rem;
+  padding: 0.5rem;
 }
 
 @media (min-width:37.5rem) {
@@ -1071,6 +1080,9 @@ exports[`Bulletin should render video correctly 1`] = `
 .c9 > svg {
   color: #FFFFFF;
   fill: currentColor;
+  width: 1.0625rem;
+  height: 1rem;
+  margin-top: -0.0938rem;
 }
 
 .c8 {
@@ -1117,7 +1129,7 @@ exports[`Bulletin should render video correctly 1`] = `
   line-height: 1.25rem;
   color: #222222;
   margin: 0;
-  padding: 1rem 0.5rem 0.5rem 0.5rem;
+  padding: 0.5rem;
 }
 
 @media (min-width:37.5rem) {

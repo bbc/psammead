@@ -121,8 +121,10 @@ const IconWrapper = styled.span`
   > svg {
     color: ${C_WHITE};
     fill: currentColor;
+    width: 1.0625rem;
+    height: 1rem;
+    margin-top: -0.0938rem;  /* to center the icon on display inline-block */
   }
-  
   ${({ dir }) =>
     dir === 'ltr'
       ? `padding-right: ${GEL_SPACING};`
@@ -169,8 +171,7 @@ const headingStyles = css`
   ${({ script }) => script && getPica(script)}
   color: ${C_EBON};
   margin: 0; /* Reset */
-  padding: ${GEL_SPACING_DBL} ${GEL_SPACING} ${GEL_SPACING} ${GEL_SPACING};
-
+  padding: ${GEL_SPACING};
 `;
 
 const TVHeading = styled.h3`
