@@ -67,17 +67,15 @@ describe('Navigation', () => {
 });
 
 describe('Scrollable Navigation', () => {
-  window.matchMedia = jest.fn().mockImplementation(query => {
-    return {
-      matches: true,
-      media: query,
-      addListener: jest.fn(),
-      removeListener: jest.fn(),
-    };
-  });
+  shouldMatchSnapshot(
+    'should render scrollable Canonical version correctly',
+    <CanonicalScrollableNavigation isScrollable>
+      {NavigationExample}
+    </CanonicalScrollableNavigation>,
+  );
 
   shouldMatchSnapshot(
-    'should render Canonical version correctly',
+    'should render non-scrollable Canonical version correctly',
     <CanonicalScrollableNavigation>
       {NavigationExample}
     </CanonicalScrollableNavigation>,
