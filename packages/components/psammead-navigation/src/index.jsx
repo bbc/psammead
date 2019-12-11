@@ -227,7 +227,9 @@ const StyledNav = styled.nav`
     ampOpenClass &&
     css`
       &.${ampOpenClass} {
-        background-color: ${C_EBON};
+        @media (max-width: ${GEL_GROUP_2_SCREEN_WIDTH_MAX}) {
+          background-color: ${C_EBON};
+        }
       }
     `}
   border-top: 0.0625rem solid ${C_WHITE};
