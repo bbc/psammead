@@ -1,10 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Grid component should render Grid with Grid items 1`] = `
-.c0 {
-  display: inline-block;
-}
-
 .c2 {
   font-size: 0.9375rem;
   line-height: 1.25rem;
@@ -516,14 +512,6 @@ exports[`Grid component should render Grid with Grid items 1`] = `
 `;
 
 exports[`Grid component should render Grid with Grid items including nested non-Grid Figure element 1`] = `
-.c0 {
-  display: inline-block;
-}
-
-.c4 {
-  display: inline-block;
-}
-
 .c2 {
   font-size: 0.9375rem;
   line-height: 1.25rem;
@@ -1004,10 +992,6 @@ exports[`Grid component should render Grid with Grid items including nested non-
 `;
 
 exports[`Grid component should render Grid with enableGelGutters & margins on only one of the Grid items 1`] = `
-.c0 {
-  display: inline-block;
-}
-
 .c3 {
   display: block;
   width: 100%;
