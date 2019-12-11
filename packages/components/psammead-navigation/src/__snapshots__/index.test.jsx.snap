@@ -387,10 +387,6 @@ exports[`Navigation should render correctly when ampOpenClass prop is provided 1
   border-top: 0.0625rem solid #FFFFFF;
 }
 
-.c0.is-open {
-  background-color: #222222;
-}
-
 .c0 .c3::after {
   left: 0;
 }
@@ -455,6 +451,12 @@ exports[`Navigation should render correctly when ampOpenClass prop is provided 1
     width: 80rem;
     border-bottom: 0.0625rem solid #eab3b3;
     z-index: -1;
+  }
+}
+
+@media (max-width:37.5rem) {
+  .c0.is-open {
+    background-color: #222222;
   }
 }
 
