@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 6.0.0-alpha.15 | [PR#2802](https://github.com/bbc/psammead/pull/2802) Spread extra Navigation props |
 | 6.0.0-alpha.14 | [PR#2810](https://github.com/bbc/psammead/pull/2810) Put amp background colour for nav css into a media query for mobile |
 | 6.0.0-alpha.13 | [PR#2801](https://github.com/bbc/psammead/pull/2801) Remove media query hooks and use props |
 | 6.0.0-alpha.12 | [PR#2799](https://github.com/bbc/psammead/pull/2799) Refactor Canonical MenuButton props |
