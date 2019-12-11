@@ -186,8 +186,8 @@ const RadioHeading = styled.h3`
   @media(min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
     padding-top: ${GEL_SPACING};
     padding-bottom: ${GEL_SPACING};
+    ${({ dir }) => (dir === 'ltr' ? `padding-left: 0;` : `padding-right: 0;`)}
   }
-  ${({ dir }) => (dir === 'ltr' ? `padding-left: 0;` : `padding-right: 0;`)}
 `;
 
 const Bulletin = ({
