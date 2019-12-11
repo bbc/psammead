@@ -7,20 +7,13 @@ import { C_POSTBOX } from '@bbc/psammead-styles/colours';
 import Guidance from '../Guidance';
 
 const StyledPlaceholder = styled.div`
-  cursor: pointer;
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
 
-  ${({ noJsClassName }) =>
-    noJsClassName &&
-    css`
-      .${noJsClassName} & {
-        cursor: default;
-      }
-    `}
+  ${({ noJsClassName }) => `cursor: ${noJsClassName ? 'default' : 'pointer'};`}
 `;
 
 const StyledPlayButton = styled(PlayButton)`
@@ -29,7 +22,7 @@ const StyledPlayButton = styled(PlayButton)`
   ${({ noJsClassName }) =>
     noJsClassName &&
     css`
-      .${noJsClassName} & {
+       {
         display: none;
       }
     `}
