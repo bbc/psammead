@@ -204,7 +204,7 @@ import { latin } from '@bbc/gel-foundations/scripts';
   dir={dir}
 />
 ```
-Note that in order for the `AmpMenuButton` toggling to work correctly, an `id` should be added to the `Navigation` component. This `id` can be passed in as a prop to the component.
+Note that in order for the `AmpMenuButton` toggling to work correctly, an `id` should be added to the `Navigation` component. This `id` can be passed in as a prop to the component. Similarly, `AmpScrollableNavigation` also requires an `id` to be added to it.
 
 ### When to use this component
 
