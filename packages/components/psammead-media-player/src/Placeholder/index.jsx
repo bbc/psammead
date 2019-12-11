@@ -12,7 +12,6 @@ const StyledPlaceholder = styled.div`
   left: 0;
   width: 100%;
   height: 100%;
-
   ${({ noJsClassName }) => `cursor: ${noJsClassName ? 'default' : 'pointer'};`}
 `;
 
@@ -22,7 +21,7 @@ const StyledPlayButton = styled(PlayButton)`
   ${({ noJsClassName }) =>
     noJsClassName &&
     css`
-       {
+      .${noJsClassName} & {
         display: none;
       }
     `}
