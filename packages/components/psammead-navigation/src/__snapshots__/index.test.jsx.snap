@@ -1115,7 +1115,317 @@ exports[`Scrollable Navigation should render AMP version correctly 1`] = `
 </div>
 `;
 
-exports[`Scrollable Navigation should render Canonical version correctly 1`] = `
+exports[`Scrollable Navigation should render non-scrollable Canonical version correctly 1`] = `
+.c8 {
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  -webkit-clip: rect(1px,1px,1px,1px);
+  clip: rect(1px,1px,1px,1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  width: 1px;
+  margin: 0;
+}
+
+.c2 {
+  position: relative;
+  max-width: 80rem;
+  margin: 0 auto;
+}
+
+.c3 {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+
+.c6 {
+  font-size: 0.9375rem;
+  line-height: 1.25rem;
+  font-family: ReithSans,Helvetica,Arial,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #FDFDFD;
+  cursor: pointer;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  display: inline-block;
+  padding: 0.75rem 1rem;
+}
+
+.c6:hover::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-bottom: 0.25rem solid #FFFFFF;
+  border-bottom: 0.3125rem solid #FFFFFF;
+}
+
+.c6:focus::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-bottom: 0.25rem solid #FFFFFF;
+  top: 0;
+  border: 0.25rem solid #FFFFFF;
+}
+
+.c9 {
+  font-size: 0.9375rem;
+  line-height: 1.25rem;
+  font-family: ReithSans,Helvetica,Arial,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #FDFDFD;
+  cursor: pointer;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  display: inline-block;
+  padding: 0.75rem 1rem;
+}
+
+.c9:hover::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-bottom: 0.25rem solid #FFFFFF;
+}
+
+.c9:focus::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-bottom: 0.25rem solid #FFFFFF;
+  top: 0;
+  border: 0.25rem solid #FFFFFF;
+}
+
+.c5 {
+  display: inline-block;
+  position: relative;
+  z-index: 2;
+}
+
+.c7::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-bottom: 0.25rem solid #FFFFFF;
+}
+
+.c1 {
+  position: relative;
+  background-color: #B80000;
+  border-top: 0.0625rem solid #FFFFFF;
+}
+
+.c1 .c4::after {
+  left: 0;
+}
+
+.c10 .c4::after {
+  left: 0;
+}
+
+.c11 .c4::after {
+  left: 0;
+}
+
+@media (max-width:37.4375rem) {
+  .c0 {
+    white-space: nowrap;
+    overflow-x: scroll;
+    -webkit-scroll-behavior: smooth;
+    -moz-scroll-behavior: smooth;
+    -ms-scroll-behavior: smooth;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    -webkit-scrollbar-width: none;
+    -moz-scrollbar-width: none;
+    -ms-scrollbar-width: none;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+
+  .c0::-webkit-scrollbar {
+    display: none;
+  }
+
+  .c0:after {
+    content: ' ';
+    height: 100%;
+    width: 3rem;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 3;
+    overflow: hidden;
+    pointer-events: none;
+    background: linear-gradient( to right,rgba(184,0,0,0) 0%,rgba(184,0,0,1) 100% );
+  }
+}
+
+@media (min-width:37.5rem) {
+  .c3 {
+    overflow: hidden;
+  }
+}
+
+@media (min-width:20rem) and (max-width:37.4375rem) {
+  .c6 {
+    font-size: 1rem;
+    line-height: 1.25rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .c6 {
+    font-size: 1rem;
+    line-height: 1.25rem;
+  }
+}
+
+@media (max-width:24.9375rem) {
+  .c6 {
+    padding: 0.75rem 0.5rem;
+  }
+}
+
+@media (min-width:20rem) and (max-width:37.4375rem) {
+  .c9 {
+    font-size: 1rem;
+    line-height: 1.25rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .c9 {
+    font-size: 1rem;
+    line-height: 1.25rem;
+  }
+}
+
+@media (max-width:24.9375rem) {
+  .c9 {
+    padding: 0.75rem 0.5rem;
+  }
+}
+
+@media (max-width:37.4375rem) {
+  .c5:last-child {
+    margin-right: 3rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .c5::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 80rem;
+    border-bottom: 0.0625rem solid #eab3b3;
+    z-index: -1;
+  }
+}
+
+<div
+  class="c0"
+  dir="ltr"
+>
+  <nav
+    class="c1"
+    dir="ltr"
+    role="navigation"
+  >
+    <div
+      class="c2"
+    >
+      <ul
+        class="c3"
+        role="list"
+      >
+        <li
+          class="c4 c5"
+          dir="ltr"
+          role="listitem"
+        >
+          <a
+            class="c6"
+            data-navigation="test_navigation"
+            href="/igbo"
+          >
+            <span
+              class="c7"
+              role="text"
+            >
+              <span
+                class="c8"
+              >
+                Current page
+                , 
+              </span>
+              Akụkọ
+            </span>
+          </a>
+        </li>
+        <li
+          class="c4 c5"
+          dir="ltr"
+          role="listitem"
+        >
+          <a
+            class="c9"
+            data-navigation="test_navigation"
+            href="/igbo/egwuregwu"
+          >
+            Egwuregwu
+          </a>
+        </li>
+        <li
+          class="c4 c5"
+          dir="ltr"
+          role="listitem"
+        >
+          <a
+            class="c9"
+            data-navigation="test_navigation"
+            href="/igbo/media/video"
+          >
+            Ihe nkiri
+          </a>
+        </li>
+        <li
+          class="c4 c5"
+          dir="ltr"
+          role="listitem"
+        >
+          <a
+            class="c9"
+            data-navigation="test_navigation"
+            href="/igbo/popular/read"
+          >
+            Nke ka ewuewu
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</div>
+`;
+
+exports[`Scrollable Navigation should render scrollable Canonical version correctly 1`] = `
 .c8 {
   -webkit-clip-path: inset(100%);
   clip-path: inset(100%);
