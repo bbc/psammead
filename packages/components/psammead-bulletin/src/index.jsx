@@ -122,7 +122,7 @@ const IconWrapper = styled.span`
     color: ${C_WHITE};
     fill: currentColor;
     width: 1.0625rem;
-    height: 1rem;
+    height: ${GEL_SPACING_DBL};
     margin-top: -0.0938rem;  /* to center the icon on display inline-block */
   }
   ${({ dir }) =>
@@ -184,8 +184,10 @@ const TVHeading = styled.h3`
 const RadioHeading = styled.h3`
   ${headingStyles}
   @media(min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
-    padding: ${GEL_SPACING} 0;
+    padding-top: ${GEL_SPACING};
+    padding-bottom: ${GEL_SPACING};
   }
+  ${({ dir }) => (dir === 'ltr' ? `padding-left: 0;` : `padding-right: 0;`)}
 `;
 
 const Bulletin = ({

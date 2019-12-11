@@ -144,6 +144,7 @@ exports[`Bulletin should render audio correctly 1`] = `
   color: #222222;
   margin: 0;
   padding: 0.5rem;
+  padding-left: 0;
 }
 
 @media (min-width:37.5rem) {
@@ -240,7 +241,8 @@ exports[`Bulletin should render audio correctly 1`] = `
 
 @media (min-width:37.5rem) {
   .c4 {
-    padding: 0.5rem 0;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
   }
 }
 
@@ -471,6 +473,7 @@ exports[`Bulletin should render live audio correctly 1`] = `
   color: #222222;
   margin: 0;
   padding: 0.5rem;
+  padding-left: 0;
 }
 
 @media (min-width:37.5rem) {
@@ -567,7 +570,8 @@ exports[`Bulletin should render live audio correctly 1`] = `
 
 @media (min-width:37.5rem) {
   .c4 {
-    padding: 0.5rem 0;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
   }
 }
 
