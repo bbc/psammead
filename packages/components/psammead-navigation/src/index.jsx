@@ -227,7 +227,7 @@ const StyledNav = styled.nav`
     ampOpenClass &&
     css`
       &.${ampOpenClass} {
-        @media (max-width: 37.5rem) {
+        @media (max-width: ${GEL_GROUP_2_SCREEN_WIDTH_MAX}) {
           background-color: ${C_EBON};
         }
       }
