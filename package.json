@@ -82,7 +82,7 @@
     "browserslist": "^4.8.2",
     "chalk": "^3.0.0",
     "enquirer": "^2.3.2",
-    "eslint": "^6.7.2",
+    "eslint": "^6.7.4",
     "eslint-config-airbnb": "^18.0.1",
     "eslint-config-prettier": "^6.6.0",
     "eslint-plugin-es5": "^1.4.1",
