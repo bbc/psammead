@@ -24,6 +24,7 @@ npm install @bbc/psammead-script-link --save
 | href | string | yes | N/A | `'https://www.bbc.com/serbian/lat'` |
 | children | node | yes | N/A | `'Lat'` |
 | script | object | yes | N/A | { canon: { groupA: { fontSize: '28', lineHeight: '32',}, groupB: { fontSize: '32', lineHeight: '36', }, groupD: { fontSize: '44', lineHeight: '48', }, }, trafalgar: { groupA: { fontSize: '20', lineHeight: '24', }, groupB: { fontSize: '24', lineHeight: '28', }, groupD: { fontSize: '32', lineHeight: '36', }, }, } |
+| onClick | func | no | `() => {}` | `() => console.log('set preferred service variant cookie')` |
 
 ## Usage
 

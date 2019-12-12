@@ -127,12 +127,24 @@ const getButtonDimensions = lineHeight =>
   `height: ${calculateButtonSide(lineHeight)}rem;
   width: ${calculateButtonSide(lineHeight)}rem;`;
 
-const MenuButton = styled.button`
+// React allows us to put non-standard HTML attributes onto elements
+// whereas styled-components filters them out.
+// The `on` amp attribute is classed as non-standard, therefore we
+// make a react element which spreads the props as attributes
+// and style the React button.
+// For some reason the styled-components filtering only happens on SSR
+// so is not visible in tests or storybook, only once everything is
+// integrated into simorgh.
+// eslint-disable-next-line react/prop-types
+const Button = ({ script, ...props }) => <button type="button" {...props} />;
+
+const MenuButton = styled(Button)`
   position: relative;
   padding: 0;
   margin: 0;
-  border: 0;
   background-color: transparent;
+  border: 0;
+
   ${({ dir }) => (dir === 'ltr' ? `float: left;` : `float: right;`)}
   ${({ script }) =>
     script &&
@@ -163,14 +175,13 @@ const MenuButton = styled.button`
 export const CanonicalMenuButton = ({
   announcedText,
   isOpen,
-  onOpen,
-  onClose,
+  onClick,
   dir,
   script,
 }) => (
   <MenuButton
     aria-label={announcedText}
-    onClick={isOpen ? onClose : onOpen}
+    onClick={onClick}
     aria-expanded={isOpen ? 'true' : 'false'}
     dir={dir}
     script={script}
@@ -181,8 +192,7 @@ export const CanonicalMenuButton = ({
 
 CanonicalMenuButton.propTypes = {
   announcedText: string.isRequired,
-  onOpen: func.isRequired,
-  onClose: func.isRequired,
+  onClick: func.isRequired,
   isOpen: bool.isRequired,
   dir: oneOf(['ltr', 'rtl']),
   script: shape(scriptPropType).isRequired,
@@ -202,39 +212,39 @@ const AmpHead = () => (
   </Helmet>
 );
 
-export const AmpMenuButton = ({ announcedText, onToggle, dir, script }) => {
-  const expandedHandler =
-    'tap:AMP.setState({ menuState: { expanded: !menuState.expanded }})';
+const expandedHandler =
+  'AMP.setState({ menuState: { expanded: !menuState.expanded }})';
 
-  return (
-    <>
-      <AmpHead />
-      <amp-state id="menuState">
-        <script type="application/json">
-          {JSON.stringify({
-            expanded: false,
-          })}
-        </script>
-      </amp-state>
-      <MenuButton
-        aria-label={announcedText}
-        aria-expanded="false"
-        data-amp-bind-aria-expanded='menuState.expanded ? "true" : "false"'
-        on={`${expandedHandler};${onToggle}`}
-        dir={dir}
-        script={script}
-      >
-        {cloneElement(navigationIcons.hamburger, {
-          'data-amp-bind-hidden': 'menuState.expanded',
-        })}
-        {cloneElement(navigationIcons.cross, {
-          hidden: true,
-          'data-amp-bind-hidden': '!menuState.expanded',
-        })}
-      </MenuButton>
-    </>
-  );
-};
+const initialState = { expanded: false };
+
+export const AmpMenuButton = ({ announcedText, onToggle, dir, script }) => (
+  <>
+    <AmpHead />
+    <amp-state id="menuState">
+      <script
+        type="application/json"
+        /* eslint-disable-next-line react/no-danger */
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(initialState) }}
+      />
+    </amp-state>
+    <MenuButton
+      aria-label={announcedText}
+      aria-expanded="false"
+      data-amp-bind-aria-expanded='menuState.expanded ? "true" : "false"'
+      on={`tap:${expandedHandler},${onToggle}`}
+      dir={dir}
+      script={script}
+    >
+      {cloneElement(navigationIcons.hamburger, {
+        'data-amp-bind-hidden': 'menuState.expanded',
+      })}
+      {cloneElement(navigationIcons.cross, {
+        hidden: true,
+        'data-amp-bind-hidden': '!menuState.expanded',
+      })}
+    </MenuButton>
+  </>
+);
 
 AmpMenuButton.propTypes = {
   announcedText: string.isRequired,

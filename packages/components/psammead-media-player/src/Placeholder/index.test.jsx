@@ -22,6 +22,7 @@ describe('Media Player: Placeholder', () => {
       src="http://foo.bar/placeholder.png"
       service="news"
       mediaInfo={{ title: 'Dog chases cat.', ...withDuration }}
+      noJsMessage="no js"
     />,
   );
 
@@ -32,6 +33,7 @@ describe('Media Player: Placeholder', () => {
       src="http://foo.bar/placeholder.png"
       service="news"
       mediaInfo={{ title: 'Dog chases cat.' }}
+      noJsMessage="no js"
     />,
   );
 
@@ -42,6 +44,7 @@ describe('Media Player: Placeholder', () => {
       src="http://foo.bar/placeholder.png"
       service="news"
       mediaInfo={{ type: 'audio', title: 'Dog barks at cat.', ...withDuration }}
+      noJsMessage="no js"
     />,
   );
 
@@ -52,6 +55,7 @@ describe('Media Player: Placeholder', () => {
       src="http://foo.bar/placeholder.png"
       service="news"
       mediaInfo={{ type: 'audio', title: 'Dog barks at cat.' }}
+      noJsMessage="no js"
     />,
   );
 
@@ -62,6 +66,7 @@ describe('Media Player: Placeholder', () => {
         src="http://foo.bar/placeholder.png"
         service="news"
         mediaInfo={{ title: 'Dog chases cat.', ...withDuration }}
+        noJsMessage="no js"
       />,
     );
     fireEvent.click(container.firstChild);
@@ -81,6 +86,7 @@ describe('Media Player: Placeholder', () => {
           'Guidance: May contain strong language, sexual or violent content that may offend.',
         ...withDuration,
       }}
+      noJsMessage="no js"
     />,
   );
 
@@ -96,6 +102,7 @@ describe('Media Player: Placeholder', () => {
           'Guidance: May contain strong language, sexual or violent content that may offend.',
         ...withDuration,
       }}
+      noJsMessage="no js"
       noJsClassName="no-js"
     />,
   );
