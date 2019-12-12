@@ -1,3 +1,3 @@
-const medea = require('./testing');
+const medea = require('./index');
 
 medea();
