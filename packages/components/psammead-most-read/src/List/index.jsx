@@ -8,7 +8,7 @@ import {
   WesternArabic,
 } from '@bbc/psammead-locales/numerals';
 import { scriptPropType } from '@bbc/gel-foundations/prop-types';
-import Grid from '../../../psammead-grid';
+import Grid from '@bbc/psammead-grid';
 import { MostReadRank, MostReadLink } from '../Item';
 
 const MostReadItemProps = {

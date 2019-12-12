@@ -1,28 +1,39 @@
 const axios = require('axios');
 const getPullRequestBody = require('../getPullRequestBody/index');
+const getBranchName = require('../getBranchName');
+const mergePullRequests = require('../mergePullRequests');
 
-const authToken = 'process.env.GITHUB_TOKEN';
+const authToken = process.env.GITHUB_TOKEN;
 
-const createPullRequest = ({ bumpedPackagesObj, branchName }) => {
+const theBranches = getBranchName();
+
+const createPullRequest = branchNames => {
+  console.log('Making a pull request.');
   const axiosPR = async () => {
-    await axios.post(
-      'https://api.github.com/repos/bbc/psammead/pulls',
-      {
-        title: 'TEST',
-        body: getPullRequestBody(bumpedPackagesObj),
-        head: branchName,
-        base: 'latest',
-      },
-      {
-        headers: {
-          'content-type': 'application/vnd.github.v3+json',
-          Authorization: authToken,
+    const headBranch = await mergePullRequests();
+    await axios
+      .post(
+        'https://api.github.com/repos/bbc/psammead/pulls',
+        {
+          title: 'Medea - Bump dependencies',
+          head: `${headBranch}`,
+          base: 'latest',
+          body: `${getPullRequestBody(branchNames)}`,
         },
-      },
-    );
+        {
+          headers: {
+            'content-type': 'application/vnd.github.v3+json',
+            Authorization: authToken,
+          },
+        },
+      )
+      .catch(function(error) {
+        console.log(error.response.data.errors);
+      });
   };
-  console.log('Running CPR');
-  axiosPR();
+  axiosPR(theBranches);
 };
+
+createPullRequest();
 
 module.exports = createPullRequest;

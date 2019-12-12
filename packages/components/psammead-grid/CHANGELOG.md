@@ -3,6 +3,8 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 1.1.0-alpha.2 | [PR#2815](https://github.com/bbc/psammead/pull/2815) Remove display:inline on outer grids |
+| 1.1.0-alpha.1 | [PR#2796](https://github.com/bbc/psammead/pull/2796) Fix padding on outer grid  |
 | 1.1.0-alpha.0 | [PR#2653](https://github.com/bbc/psammead/pull/2653) Remove enableGelMargins &enableNegativeGelMargins props & replace with margins. Update width calculations for fallbacks when using enableGelGutters. |
 | 1.0.0-alpha.15 | [PR#2701](https://github.com/bbc/psammead/pull/2701) Talos - Bump Dependencies - @bbc/psammead-styles |
 | 1.0.0-alpha.14 | [PR#2697](https://github.com/bbc/psammead/pull/2697) Talos - Bump Dependencies - @bbc/psammead-styles |

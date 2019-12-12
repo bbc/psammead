@@ -1,6 +1,7 @@
 const PRs = require('../PRs.json');
 
 const getPRBody = () => {
+  console.log('Getting Pull Request Body');
   const branchName = [];
   const PRBody = [];
 

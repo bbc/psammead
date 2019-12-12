@@ -1,6 +1,7 @@
 const PRs = require('../PRs.json');
 
 const getPackageNames = () => {
+  console.log('Getting Package Names');
   const branchName = [];
   const packageName = [];
 

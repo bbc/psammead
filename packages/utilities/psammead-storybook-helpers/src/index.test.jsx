@@ -10,7 +10,7 @@ jest.mock('@bbc/gel-foundations/scripts', () => ({
 }));
 
 const textVariantsExpectedExports = {
-  LANGUAGE_VARIANTS: 'object',
+  TEXT_VARIANTS: 'object',
 };
 
 const expectedExports = {
@@ -18,7 +18,7 @@ const expectedExports = {
 };
 
 const actualExports = {
-  textVariants: { LANGUAGE_VARIANTS: underTest.LANGUAGE_VARIANTS },
+  textVariants: { TEXT_VARIANTS: underTest.TEXT_VARIANTS },
 };
 
 describe('Psammead storybook helpers', () => {

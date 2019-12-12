@@ -2,10 +2,10 @@ const axios = require('axios');
 const getPRNumber = require('../getPRNumber');
 const getPRTitle = require('../getPRTitle');
 
-const authToken =
-  'process.env.GITHUB_TOKEN';
+const authToken = process.env.GITHUB_TOKEN;
 
 const closePullRequest = async () => {
+  console.log('Closing Pull Requests');
   const pullRequestsToClose = getPRNumber();
   const pullRequestTitlesToClose = getPRTitle();
   const axiosRequest = index => {
@@ -23,6 +23,7 @@ const closePullRequest = async () => {
       },
     );
   };
+  // eslint-disable-next-line no-plusplus
   for (let index = 0; index < pullRequestsToClose.length; index++) {
     axiosRequest(index);
   }

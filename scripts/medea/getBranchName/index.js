@@ -1,8 +1,8 @@
 const PRs = require('../PRs.json');
 
 const getBranchName = () => {
+  console.log('Getting Branch Names');
   const branchName = [];
-
   // eslint-disable-next-line no-plusplus
   for (let index = 0; index < PRs.length; index++) {
     branchName[index] = PRs[index].head.ref;

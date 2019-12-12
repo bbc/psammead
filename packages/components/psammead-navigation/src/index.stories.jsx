@@ -1,6 +1,7 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import styled from 'styled-components';
+import { useEffect, useState } from '@storybook/addons';
 import {
   color,
   select,
@@ -60,6 +61,13 @@ const navStoriesData = [
 const BackgroundContainer = styled.div`
   background-color: #000000;
   height: 100vh;
+`;
+
+const ToggledContainer = styled.div`
+  background-color: #ffffff;
+  float: left;
+  clear: both;
+  margin-top: 10px;
 `;
 
 const inputs = () => {
@@ -139,6 +147,18 @@ const navigationStory = (
     ? AmpScrollableNavigation
     : CanonicalScrollableNavigation;
 
+  const [isScrollable, setIsScrollable] = useState(false);
+
+  useEffect(() => {
+    const mediaQueryList = window.matchMedia('(max-width: 37.5rem)');
+    setIsScrollable(mediaQueryList.matches);
+
+    const handler = event => setIsScrollable(event.matches);
+    mediaQueryList.addListener(handler);
+
+    return () => mediaQueryList.removeListener(handler);
+  }, []);
+
   return (
     <>
       {brand && getBrand()}
@@ -149,7 +169,7 @@ const navigationStory = (
         service={service}
         dir={dir}
       >
-        <ScrollableNavigation dir={dir}>
+        <ScrollableNavigation dir={dir} isScrollable={isScrollable}>
           <NavigationUl>
             {navData.map((item, index) => {
               const { title, url } = item;
@@ -219,16 +239,16 @@ navStoriesData.map(item => {
 
 canonicalStories.add(
   'Canonical Menu Button',
-  ({ dir }) => {
+  ({ dir, script }) => {
     const isOpen = boolean('Open', false);
     return (
       <BackgroundContainer>
         <CanonicalMenuButton
           announcedText="Menu"
-          onOpen={() => {}}
+          onClick={() => {}}
           isOpen={isOpen}
-          onClose={() => {}}
           dir={dir}
+          script={script}
         />
       </BackgroundContainer>
     );
@@ -278,9 +298,17 @@ navStoriesData.map(item => {
 
 ampStories.add(
   'AMP Menu Button',
-  ({ dir }) => (
+  ({ dir, script }) => (
     <BackgroundContainer>
-      <AmpMenuButton announcedText="Menu" onToggle="" dir={dir} />
+      <AmpMenuButton
+        announcedText="Menu"
+        onToggle="other-element.toggleVisibility"
+        dir={dir}
+        script={script}
+      />
+      <ToggledContainer id="other-element">
+        Toggled with AMP action
+      </ToggledContainer>
     </BackgroundContainer>
   ),
   {

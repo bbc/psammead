@@ -1,38 +1,21 @@
-const fs = require('fs');
 const axios = require('axios');
 const getBranchName = require('../getBranchName');
 const createNewBranch = require('../createNewBranch');
-const getDependabotPRs = require('../getDependabotPRs');
-const PRs = require('../PRs.json');
 
-let baseBranch;
+const authToken = process.env.GITHUB_TOKEN;
 
-const authToken = '';
+const branches = getBranchName();
 
-const mergePullRequests = () => {
-  const branchName = [];
-  createNewBranch();
-
-  getDependabotPRs().then(value => {
-    const dependabotPRData = JSON.stringify(value);
-    fs.writeFileSync('../PRs.json', dependabotPRData);
-  });
-
-  // eslint-disable-next-line no-plusplus
-  for (let index = 0; index < PRs.length; index++) {
-    branchName[index] = PRs[index].head.ref;
-    if (branchName[index].includes('medea-') === true) {
-      baseBranch = branchName[index];
-    }
-  }
-
-  const axiosPRCreate = async () => {
-    const axiosRequest = index => {
-      axios.post(
+const mergePullRequests = async () => {
+  const baseBranch = await createNewBranch();
+  console.log('Merging pull requests');
+  const axiosRequest = branches1 => {
+    axios
+      .post(
         'https://api.github.com/repos/bbc/psammead/merges',
         {
-          base: baseBranch,
-          head: `${getBranchName[index]}`,
+          base: `${baseBranch}`,
+          head: `${branches1}`,
           commit_message: 'Beep boop... merging stuff',
         },
         {
@@ -41,15 +24,16 @@ const mergePullRequests = () => {
             Authorization: authToken,
           },
         },
-      );
-    };
-    // eslint-disable-next-line no-plusplus
-    for (let index = 0; index < getBranchName.length; index++) {
-      axiosRequest(index);
-    }
+      )
+      .catch(function(error) {
+        console.log(error);
+      });
   };
-  console.log('Running CPR');
-  axiosPRCreate(baseBranch);
+  // eslint-disable-next-line no-plusplus
+  for (let index = 0; index <= branches.length - 1; index++) {
+    axiosRequest(branches[index]);
+  }
+  return baseBranch;
 };
 
 module.exports = mergePullRequests;

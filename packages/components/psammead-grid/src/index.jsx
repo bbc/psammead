@@ -228,8 +228,7 @@ const gridFallbacks = css`
 
     const selectedGroups = Object.keys(columns);
     return `
-      ${isOuterGrid ? 'display: inline;' : ''}
-
+    
       ${selectedGroups
         .map(
           group => `

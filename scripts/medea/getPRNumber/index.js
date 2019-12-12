@@ -1,6 +1,7 @@
 const PRs = require('../PRs.json');
 
 const getPRNumber = () => {
+  console.log('Getting Pull Request Numbers');
   const branchName = [];
   const pullRequestNumber = [];
 

@@ -1,6 +1,7 @@
 const PRs = require('../PRs.json');
 
 const getPRTitle = () => {
+  console.log('Getting Pull Request Titles');
   const branchName = [];
   const PRTitle = [];
 
