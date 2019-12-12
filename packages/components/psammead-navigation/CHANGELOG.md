@@ -3,6 +3,16 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 6.0.0-alpha.15 | [PR#2802](https://github.com/bbc/psammead/pull/2802) Spread extra Navigation props |
+| 6.0.0-alpha.14 | [PR#2810](https://github.com/bbc/psammead/pull/2810) Put amp background colour for nav css into a media query for mobile |
+| 6.0.0-alpha.13 | [PR#2801](https://github.com/bbc/psammead/pull/2801) Remove media query hooks and use props |
+| 6.0.0-alpha.12 | [PR#2799](https://github.com/bbc/psammead/pull/2799) Refactor Canonical MenuButton props |
+| 6.0.0-alpha.11 | [PR#2787](https://github.com/bbc/psammead/pull/2787) Update useMediaQuery hook to ensure server/client markup is consistent |
+| 6.0.0-alpha.10 | [PR#2785](https://github.com/bbc/psammead/pull/2785) Add `id`, `ampOpenClass` props to `Navigation` |
+| 6.0.0-alpha.9 | [PR#2779](https://github.com/bbc/psammead/pull/2779) Merge AMP tap handlers correctly |
+| 6.0.0-alpha.8 | [PR#2778](https://github.com/bbc/psammead/pull/2778) Fix menu border in FireFox high contrast mode |
+| 6.0.0-alpha.7 | [PR#2771](https://github.com/bbc/psammead/pull/2771) Spread the `on` prop (and others) onto the button, and set AMP Nav menu button initial state |
+| 6.0.0-alpha.6 | [PR#2769](https://github.com/bbc/psammead/pull/2769) Add `isOpen` prop to `Navigation` |
 | 6.0.0-alpha.5 | [PR#2759](https://github.com/bbc/psammead/pull/2759) Change size of menu button depending on script |
 | 6.0.0-alpha.4 | [PR#2747](https://github.com/bbc/psammead/pull/2747) Fix MenuButton not acting as a block element |
 | 6.0.0-alpha.3 | [PR#2745](https://github.com/bbc/psammead/pull/2745) Add dir prop to Amp and Canonical MenuButton |

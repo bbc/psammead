@@ -2,7 +2,12 @@ import React from 'react';
 import styled, { css } from 'styled-components';
 import { shape, string, node, bool, oneOf } from 'prop-types';
 import VisuallyHiddenText from '@bbc/psammead-visually-hidden-text';
-import { C_WHITE, C_POSTBOX, C_GHOST } from '@bbc/psammead-styles/colours';
+import {
+  C_WHITE,
+  C_POSTBOX,
+  C_EBON,
+  C_GHOST,
+} from '@bbc/psammead-styles/colours';
 import {
   GEL_SPACING_HLF,
   GEL_SPACING,
@@ -212,9 +217,21 @@ NavigationLi.defaultProps = {
   dir: 'ltr',
 };
 
+// ampOpenClass is the class added to the Navigation, and is toggled on tap.
+// It indicates whether the menu is open or not. This overrides the background
+// color of the Navigation
 const StyledNav = styled.nav`
   position: relative;
-  background-color: ${C_POSTBOX};
+  ${({ isOpen }) => `background-color: ${isOpen ? C_EBON : C_POSTBOX};`}
+  ${({ ampOpenClass }) =>
+    ampOpenClass &&
+    css`
+      &.${ampOpenClass} {
+        @media (max-width: ${GEL_GROUP_2_SCREEN_WIDTH_MAX}) {
+          background-color: ${C_EBON};
+        }
+      }
+    `}
   border-top: 0.0625rem solid ${C_WHITE};
 
   ${StyledListItem} {
@@ -226,9 +243,15 @@ const StyledNav = styled.nav`
   }
 `;
 
-const Navigation = ({ children, dir }) => {
+const Navigation = ({ children, dir, isOpen, ampOpenClass, ...props }) => {
   return (
-    <StyledNav role="navigation" dir={dir}>
+    <StyledNav
+      role="navigation"
+      dir={dir}
+      isOpen={isOpen}
+      ampOpenClass={ampOpenClass}
+      {...props}
+    >
       <NavWrapper>{children}</NavWrapper>
     </StyledNav>
   );
@@ -237,8 +260,14 @@ const Navigation = ({ children, dir }) => {
 Navigation.propTypes = {
   children: node.isRequired,
   dir: oneOf(['ltr', 'rtl']),
+  isOpen: bool,
+  ampOpenClass: string,
 };
 
-Navigation.defaultProps = { dir: 'ltr' };
+Navigation.defaultProps = {
+  dir: 'ltr',
+  isOpen: false,
+  ampOpenClass: null,
+};
 
 export default Navigation;
