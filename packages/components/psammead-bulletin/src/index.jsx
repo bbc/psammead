@@ -123,30 +123,26 @@ const IconWrapper = styled.span`
     fill: currentColor;
     width: 1.0625rem;
     height: ${GEL_SPACING_DBL};
-    margin-top: -0.0938rem;  /* to center the icon on display inline-block */
+    margin: 0;
   }
   ${({ dir }) =>
     dir === 'ltr'
       ? `padding-right: ${GEL_SPACING};`
       : `padding-left: ${GEL_SPACING};`}
-
-  @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
-    display: inline-block;
-  }
 `;
 
 const PlayCTA = styled.div.attrs({ 'aria-hidden': true })`
-  background-color: ${({ isLive }) => (isLive ? C_POSTBOX : C_EBON)};
-  border: 0.0625rem solid transparent;
   ${({ service }) => service && getSansRegular(service)};
   ${({ script }) => script && getPica(script)};
+  background-color: ${({ isLive }) => (isLive ? C_POSTBOX : C_EBON)};
+  border: 0.0625rem solid transparent;
   color: ${C_WHITE};
-  align-items: center;
   padding: 0.75rem;
   display: flex;
+  align-items: center;
   justify-content: center;
   @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
-    display: inline-block;
+    display: inline-flex;
     padding: ${GEL_SPACING} ${GEL_SPACING_DBL};
     ${({ isAudio }) => isAudio && `margin-bottom: ${GEL_SPACING_DBL};`}
   }
