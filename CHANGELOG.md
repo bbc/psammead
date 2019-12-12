@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 2.1.0 | [PR#2808](https://github.com/bbc/psammead/pull/2819) Dependabot pull request bot |
 | 2.0.31 | [PR#2808](https://github.com/bbc/psammead/pull/2808) Bump Dev Dependencies |
 | 2.0.30 | [PR#2804](https://github.com/bbc/psammead/pull/2804) Talos - Bump Dependencies - @bbc/psammead-calendars |
 | 2.0.29 | [PR#2782](https://github.com/bbc/psammead/pull/2782) Talos - Bump Dependencies - @bbc/psammead-locales |
