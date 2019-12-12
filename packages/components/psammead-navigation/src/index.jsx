@@ -227,7 +227,9 @@ const StyledNav = styled.nav`
     ampOpenClass &&
     css`
       &.${ampOpenClass} {
-        background-color: ${C_EBON};
+        @media (max-width: ${GEL_GROUP_2_SCREEN_WIDTH_MAX}) {
+          background-color: ${C_EBON};
+        }
       }
     `}
   border-top: 0.0625rem solid ${C_WHITE};
@@ -241,14 +243,14 @@ const StyledNav = styled.nav`
   }
 `;
 
-const Navigation = ({ children, dir, isOpen, id, ampOpenClass }) => {
+const Navigation = ({ children, dir, isOpen, ampOpenClass, ...props }) => {
   return (
     <StyledNav
       role="navigation"
       dir={dir}
       isOpen={isOpen}
-      id={id}
       ampOpenClass={ampOpenClass}
+      {...props}
     >
       <NavWrapper>{children}</NavWrapper>
     </StyledNav>
@@ -259,14 +261,12 @@ Navigation.propTypes = {
   children: node.isRequired,
   dir: oneOf(['ltr', 'rtl']),
   isOpen: bool,
-  id: string,
   ampOpenClass: string,
 };
 
 Navigation.defaultProps = {
   dir: 'ltr',
   isOpen: false,
-  id: null,
   ampOpenClass: null,
 };
 

@@ -18,7 +18,7 @@ Psammead Grid is a component that you can use to set out column-based layouts us
 | startOffset | object | no | Sets all values as 1 for each of the groups defined in `columns` | `{ group0: 1, group1: 1, group2: 1, group3: 1, group4: 2, group5: 5 }` |
 | item | boolean | no | false | `item` |
 | enableGelGutters | boolean | no | false | `enableGelGutter` |
-| margins | object | no | false | `{ group0: true, group1: true, group2: true, group3: true }` |
+| margins | object | no | `{ group0: false, group1: false, group2: false, group3: false, group4: false, group5: false }` | `{ group0: true, group1: true, group2: true, group3: true }` |
 
 - When should I use the `columns` prop?
   - This should always be defined.

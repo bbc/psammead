@@ -27,7 +27,6 @@ The `@bbc/psammead-navigation` package is a set of two components, `NavigationUl
 | children | node | Yes | N/A | `<ScrollableNavigation dir={dir}><NavigationUl><NavigationLi url="/" script={latin} active="true">Home</NavigationLi><NavigationLi url="/sport" script={latin}>{Sport}</NavigationLi></NavigationUl><ScrollableNavigation/>` |
 | dir | string | No | `'ltr'` | `'rtl'` |
 | isOpen | boolean | No | `false` | `true` |
-| id | string | No | `null` | `navigation-id` |
 | ampOpenClass | string | No | `null` | `'open'` |
 
 ### NavigationUl
@@ -67,7 +66,6 @@ The `@bbc/psammead-navigation` package is a set of two components, `NavigationUl
 | -------- | ---- | -------- | ------- | ------- |
 | children | node | Yes      | N/A     | `<NavigationUl><NavigationLi url="/" script={latin} active="true">Home</NavigationLi><NavigationLi url="/sport" script={latin}>{Sport}</NavigationLi></NavigationUl>` |
 | dir      | string  | No       | `'ltr'`   | `'rtl'` |
-| id      | string  | No       | `null`   | `'scrollable-nav'` |
 
 ### Dropdown
 
@@ -206,6 +204,7 @@ import { latin } from '@bbc/gel-foundations/scripts';
   dir={dir}
 />
 ```
+Note that in order for the `AmpMenuButton` toggling to work correctly, an `id` should be added to the `Navigation` component. This `id` can be passed in as a prop to the component. Similarly, `AmpScrollableNavigation` also requires an `id` to be added to it.
 
 ### When to use this component
 
