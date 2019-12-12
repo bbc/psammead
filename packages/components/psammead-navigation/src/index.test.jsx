@@ -40,6 +40,7 @@ const NavigationExample = (
 
 describe('Navigation', () => {
   shouldMatchSnapshot('should render correctly', NavigationExample);
+
   shouldMatchSnapshot(
     'should render correctly when isOpen is true',
     <Navigation
@@ -51,20 +52,30 @@ describe('Navigation', () => {
       {navigationUlComponent}
     </Navigation>,
   );
+
+  shouldMatchSnapshot(
+    'should render correctly when ampOpenClass prop is provided',
+    <Navigation
+      script={latin}
+      skipLinkText="Wụga n’ọdịnaya"
+      service="news"
+      ampOpenClass="is-open"
+    >
+      {navigationUlComponent}
+    </Navigation>,
+  );
 });
 
 describe('Scrollable Navigation', () => {
-  window.matchMedia = jest.fn().mockImplementation(query => {
-    return {
-      matches: true,
-      media: query,
-      addListener: jest.fn(),
-      removeListener: jest.fn(),
-    };
-  });
+  shouldMatchSnapshot(
+    'should render scrollable Canonical version correctly',
+    <CanonicalScrollableNavigation isScrollable>
+      {NavigationExample}
+    </CanonicalScrollableNavigation>,
+  );
 
   shouldMatchSnapshot(
-    'should render Canonical version correctly',
+    'should render non-scrollable Canonical version correctly',
     <CanonicalScrollableNavigation>
       {NavigationExample}
     </CanonicalScrollableNavigation>,

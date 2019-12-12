@@ -12,7 +12,7 @@ import {
   GEL_GROUP_1_SCREEN_WIDTH_MAX,
   GEL_GROUP_5_SCREEN_WIDTH_MIN,
 } from '@bbc/gel-foundations/breakpoints';
-import Grid from '../../../psammead-grid';
+import Grid from '@bbc/psammead-grid';
 import { MostReadLink, MostReadRankWrapper, itemPropTypes } from '../Item';
 
 const MostReadItemProps = {

@@ -27,6 +27,7 @@ The `@bbc/psammead-navigation` package is a set of two components, `NavigationUl
 | children | node | Yes | N/A | `<ScrollableNavigation dir={dir}><NavigationUl><NavigationLi url="/" script={latin} active="true">Home</NavigationLi><NavigationLi url="/sport" script={latin}>{Sport}</NavigationLi></NavigationUl><ScrollableNavigation/>` |
 | dir | string | No | `'ltr'` | `'rtl'` |
 | isOpen | boolean | No | `false` | `true` |
+| ampOpenClass | string | No | `null` | `'open'` |
 
 ### NavigationUl
 
@@ -65,7 +66,6 @@ The `@bbc/psammead-navigation` package is a set of two components, `NavigationUl
 | -------- | ---- | -------- | ------- | ------- |
 | children | node | Yes      | N/A     | `<NavigationUl><NavigationLi url="/" script={latin} active="true">Home</NavigationLi><NavigationLi url="/sport" script={latin}>{Sport}</NavigationLi></NavigationUl>` |
 | dir      | string  | No       | `'ltr'`   | `'rtl'` |
-| id      | string  | No       | `null`   | `'scrollable-nav'` |
 
 ### Dropdown
 
@@ -93,8 +93,7 @@ The `@bbc/psammead-navigation` package is a set of two components, `NavigationUl
 | Argument | Type | Required | Default | Example |
 | -------- | ---- | -------- | ------- | ------- |
 | announcedText | string | Yes | N/A | `'Menu'` |
-| onOpen | function | Yes | N/A | `() => { console.log("Handle open action"); }` |
-| onClose | function | Yes | N/A | `() => { console.log("Handle close action"); }` |
+| onClick | function | Yes | N/A | `() => { console.log("Handle onClick action"); }` |
 | isOpen | bool | Yes | N/A | `false` |
 | dir | string | no | `'ltr'` | `'rtl'` |
 | script   | object  | Yes      | N/A     |  `{ canon: { groupA: { fontSize: '28', lineHeight: '32',}, groupB: { fontSize: '32', lineHeight: '36', }, groupD: { fontSize: '44', lineHeight: '48', }, }, trafalgar: { groupA: { fontSize: '20', lineHeight: '24', }, groupB: { fontSize: '24', lineHeight: '28', }, groupD: { fontSize: '32', lineHeight: '36', }, }, }` |
@@ -182,12 +181,10 @@ import { latin } from '@bbc/gel-foundations/scripts';
 
 <CanonicalMenuButton
   announcedText="Menu"
-  isOpen={true}
-  onOpen={() => {
-    console.log('Handle open action');
-  }}
-  onClose={() => {
-    console.log('Handle close action');
+  isOpen
+  dir={dir}
+  onClick={() => {
+    console.log('Handle onClick action');
   }}
   script={latin}
 />
@@ -204,8 +201,10 @@ import { latin } from '@bbc/gel-foundations/scripts';
   announcedText="Menu"
   onToggle="menu.toggleVisibility"
   script={latin}
+  dir={dir}
 />
 ```
+Note that in order for the `AmpMenuButton` toggling to work correctly, an `id` should be added to the `Navigation` component. This `id` can be passed in as a prop to the component. Similarly, `AmpScrollableNavigation` also requires an `id` to be added to it.
 
 ### When to use this component
 

@@ -1,7 +1,20 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`MostRead should render with ltr most read with correct dir 1`] = `
+<<<<<<< HEAD
 .c9 {
+=======
+.c2 {
+  position: relative;
+}
+
+.c3 {
+  position: relative;
+}
+
+.c8 {
+  color: #222222;
+>>>>>>> 6886f7eb5615d8703f698c0bfca6af739e7adba2
   font-size: 1.125rem;
   line-height: 1.375rem;
   font-family: ReithSerif,Helvetica,Arial,sans-serif;
@@ -90,6 +103,7 @@ exports[`MostRead should render with ltr most read with correct dir 1`] = `
   }
 }
 
+<<<<<<< HEAD
 @media (min-width:37.5rem) {
   .c9 {
     font-size: 1.5rem;
@@ -178,10 +192,57 @@ exports[`MostRead should render with ltr most read with correct dir 1`] = `
 @media (min-width:37.5rem) {
   .c11 {
     min-width: 4rem;
+=======
+@supports (display:grid) {
+  .c3 {
+    display: grid;
+    position: initial;
+  }
+}
+
+@media (max-width:14.9375rem) {
+  .c4 {
+    display: inline-block;
+    width: 11.11111111111111%;
+    vertical-align: top;
+  }
+}
+
+@media (min-width:15rem) and (max-width:24.9375rem) {
+  .c4 {
+    display: inline-block;
+    width: 11.11111111111111%;
+    vertical-align: top;
+  }
+}
+
+@media (min-width:25rem) and (max-width:37.4375rem) {
+  .c4 {
+    display: inline-block;
+    width: 22.22222222222222%;
+    vertical-align: top;
+  }
+}
+
+@media (min-width:37.5rem) and (max-width:62.9375rem) {
+  .c4 {
+    display: inline-block;
+    width: 22.22222222222222%;
+    vertical-align: top;
+  }
+}
+
+@media (min-width:63rem) and (max-width:80rem) {
+  .c4 {
+    display: inline-block;
+    width: 16.666666666666668%;
+    vertical-align: top;
+>>>>>>> 6886f7eb5615d8703f698c0bfca6af739e7adba2
   }
 }
 
 @media (min-width:80rem) {
+<<<<<<< HEAD
   .c11 {
     min-width: auto;
   }
@@ -198,6 +259,12 @@ exports[`MostRead should render with ltr most read with correct dir 1`] = `
   .c7 {
     font-size: 3.5rem;
     line-height: 3.75rem;
+=======
+  .c4 {
+    display: inline-block;
+    width: 16.666666666666668%;
+    vertical-align: top;
+>>>>>>> 6886f7eb5615d8703f698c0bfca6af739e7adba2
   }
 }
 
@@ -209,55 +276,85 @@ exports[`MostRead should render with ltr most read with correct dir 1`] = `
 }
 
 @media (max-width:14.9375rem) {
+<<<<<<< HEAD
   .c4 {
     width: calc(6/6*(100% - 6 * 0.5rem) + 5 * 0.5rem );
     margin: 0 0.25rem;
+=======
+  .c6 {
+>>>>>>> 6886f7eb5615d8703f698c0bfca6af739e7adba2
     display: inline-block;
+    width: 88.88888888888889%;
     vertical-align: top;
   }
 }
 
 @media (min-width:15rem) and (max-width:24.9375rem) {
+<<<<<<< HEAD
   .c4 {
     width: calc(6/6*(100% - 6 * 0.5rem) + 5 * 0.5rem );
     margin: 0 0.25rem;
+=======
+  .c6 {
+>>>>>>> 6886f7eb5615d8703f698c0bfca6af739e7adba2
     display: inline-block;
+    width: 88.88888888888889%;
     vertical-align: top;
   }
 }
 
 @media (min-width:25rem) and (max-width:37.4375rem) {
+<<<<<<< HEAD
   .c4 {
     width: calc(3/6*(100% - 6 * 0.5rem) + 2 * 0.5rem );
     margin: 0 0.25rem;
+=======
+  .c6 {
+>>>>>>> 6886f7eb5615d8703f698c0bfca6af739e7adba2
     display: inline-block;
+    width: 77.77777777777777%;
     vertical-align: top;
   }
 }
 
 @media (min-width:37.5rem) and (max-width:62.9375rem) {
+<<<<<<< HEAD
   .c4 {
     width: calc(3/6*(100% - 6 * 1rem) + 2 * 1rem );
     margin: 0 0.5rem;
+=======
+  .c6 {
+>>>>>>> 6886f7eb5615d8703f698c0bfca6af739e7adba2
     display: inline-block;
+    width: 77.77777777777777%;
     vertical-align: top;
   }
 }
 
 @media (min-width:63rem) and (max-width:80rem) {
+<<<<<<< HEAD
   .c4 {
     width: calc(4/8*(100% - 8 * 1rem) + 3 * 1rem );
     margin: 0 0.5rem;
+=======
+  .c6 {
+>>>>>>> 6886f7eb5615d8703f698c0bfca6af739e7adba2
     display: inline-block;
+    width: 83.33333333333333%;
     vertical-align: top;
   }
 }
 
 @media (min-width:80rem) {
+<<<<<<< HEAD
   .c4 {
     width: calc(4/20*(100% - 20 * 1rem) + 3 * 1rem );
     margin: 0 0.5rem;
+=======
+  .c6 {
+>>>>>>> 6886f7eb5615d8703f698c0bfca6af739e7adba2
     display: inline-block;
+    width: 83.33333333333333%;
     vertical-align: top;
   }
 }
@@ -643,7 +740,20 @@ exports[`MostRead should render with ltr most read with correct dir 1`] = `
 `;
 
 exports[`MostRead should render with rtl most read with correct dir 1`] = `
+<<<<<<< HEAD
 .c9 {
+=======
+.c2 {
+  position: relative;
+}
+
+.c3 {
+  position: relative;
+}
+
+.c8 {
+  color: #222222;
+>>>>>>> 6886f7eb5615d8703f698c0bfca6af739e7adba2
   font-size: 1.5rem;
   line-height: 2rem;
   font-family: "BBC Nassim Arabic",Arial,Verdana,Geneva,Helvetica,sans-serif;
@@ -732,6 +842,7 @@ exports[`MostRead should render with rtl most read with correct dir 1`] = `
   }
 }
 
+<<<<<<< HEAD
 @media (min-width:37.5rem) {
   .c9 {
     font-size: 1.75rem;
@@ -820,10 +931,57 @@ exports[`MostRead should render with rtl most read with correct dir 1`] = `
 @media (min-width:37.5rem) {
   .c11 {
     min-width: 4rem;
+=======
+@supports (display:grid) {
+  .c3 {
+    display: grid;
+    position: initial;
+  }
+}
+
+@media (max-width:14.9375rem) {
+  .c4 {
+    display: inline-block;
+    width: 11.11111111111111%;
+    vertical-align: top;
+  }
+}
+
+@media (min-width:15rem) and (max-width:24.9375rem) {
+  .c4 {
+    display: inline-block;
+    width: 11.11111111111111%;
+    vertical-align: top;
+  }
+}
+
+@media (min-width:25rem) and (max-width:37.4375rem) {
+  .c4 {
+    display: inline-block;
+    width: 22.22222222222222%;
+    vertical-align: top;
+  }
+}
+
+@media (min-width:37.5rem) and (max-width:62.9375rem) {
+  .c4 {
+    display: inline-block;
+    width: 22.22222222222222%;
+    vertical-align: top;
+  }
+}
+
+@media (min-width:63rem) and (max-width:80rem) {
+  .c4 {
+    display: inline-block;
+    width: 16.666666666666668%;
+    vertical-align: top;
+>>>>>>> 6886f7eb5615d8703f698c0bfca6af739e7adba2
   }
 }
 
 @media (min-width:80rem) {
+<<<<<<< HEAD
   .c11 {
     min-width: auto;
   }
@@ -840,6 +998,12 @@ exports[`MostRead should render with rtl most read with correct dir 1`] = `
   .c7 {
     font-size: 3.5rem;
     line-height: 3.75rem;
+=======
+  .c4 {
+    display: inline-block;
+    width: 16.666666666666668%;
+    vertical-align: top;
+>>>>>>> 6886f7eb5615d8703f698c0bfca6af739e7adba2
   }
 }
 
@@ -851,55 +1015,85 @@ exports[`MostRead should render with rtl most read with correct dir 1`] = `
 }
 
 @media (max-width:14.9375rem) {
+<<<<<<< HEAD
   .c4 {
     width: calc(6/6*(100% - 6 * 0.5rem) + 5 * 0.5rem );
     margin: 0 0.25rem;
+=======
+  .c6 {
+>>>>>>> 6886f7eb5615d8703f698c0bfca6af739e7adba2
     display: inline-block;
+    width: 88.88888888888889%;
     vertical-align: top;
   }
 }
 
 @media (min-width:15rem) and (max-width:24.9375rem) {
+<<<<<<< HEAD
   .c4 {
     width: calc(6/6*(100% - 6 * 0.5rem) + 5 * 0.5rem );
     margin: 0 0.25rem;
+=======
+  .c6 {
+>>>>>>> 6886f7eb5615d8703f698c0bfca6af739e7adba2
     display: inline-block;
+    width: 88.88888888888889%;
     vertical-align: top;
   }
 }
 
 @media (min-width:25rem) and (max-width:37.4375rem) {
+<<<<<<< HEAD
   .c4 {
     width: calc(3/6*(100% - 6 * 0.5rem) + 2 * 0.5rem );
     margin: 0 0.25rem;
+=======
+  .c6 {
+>>>>>>> 6886f7eb5615d8703f698c0bfca6af739e7adba2
     display: inline-block;
+    width: 77.77777777777777%;
     vertical-align: top;
   }
 }
 
 @media (min-width:37.5rem) and (max-width:62.9375rem) {
+<<<<<<< HEAD
   .c4 {
     width: calc(3/6*(100% - 6 * 1rem) + 2 * 1rem );
     margin: 0 0.5rem;
+=======
+  .c6 {
+>>>>>>> 6886f7eb5615d8703f698c0bfca6af739e7adba2
     display: inline-block;
+    width: 77.77777777777777%;
     vertical-align: top;
   }
 }
 
 @media (min-width:63rem) and (max-width:80rem) {
+<<<<<<< HEAD
   .c4 {
     width: calc(4/8*(100% - 8 * 1rem) + 3 * 1rem );
     margin: 0 0.5rem;
+=======
+  .c6 {
+>>>>>>> 6886f7eb5615d8703f698c0bfca6af739e7adba2
     display: inline-block;
+    width: 83.33333333333333%;
     vertical-align: top;
   }
 }
 
 @media (min-width:80rem) {
+<<<<<<< HEAD
   .c4 {
     width: calc(4/20*(100% - 20 * 1rem) + 3 * 1rem );
     margin: 0 0.5rem;
+=======
+  .c6 {
+>>>>>>> 6886f7eb5615d8703f698c0bfca6af739e7adba2
     display: inline-block;
+    width: 83.33333333333333%;
     vertical-align: top;
   }
 }

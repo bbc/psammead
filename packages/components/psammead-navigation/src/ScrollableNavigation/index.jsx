@@ -1,8 +1,7 @@
 import React from 'react';
 import styled, { css } from 'styled-components';
-import { node, oneOf, string } from 'prop-types';
+import { node, oneOf, bool } from 'prop-types';
 import { GEL_GROUP_2_SCREEN_WIDTH_MAX } from '@bbc/gel-foundations/breakpoints';
-import useMediaQuery from '../hooks/useMediaQuery';
 
 /* Convert C_POSTBOX to rgba as IE doesn't like 8 digit hex */
 const C_POSTBOX_TRANSPARENT = `rgba(184, 0, 0, 0)`;
@@ -43,8 +42,11 @@ const StyledScrollableNav = styled.div`
   }
 `;
 
-export const CanonicalScrollableNavigation = ({ children, dir }) => {
-  const isScrollable = useMediaQuery('(max-width: 600px)');
+export const CanonicalScrollableNavigation = ({
+  children,
+  dir,
+  isScrollable,
+}) => {
   const ariaHidden = isScrollable && { 'aria-hidden': true };
 
   return (
@@ -59,12 +61,17 @@ export const CanonicalScrollableNavigation = ({ children, dir }) => {
 CanonicalScrollableNavigation.propTypes = {
   children: node.isRequired,
   dir: oneOf(['ltr', 'rtl']),
+  isScrollable: bool,
+};
+
+CanonicalScrollableNavigation.defaultProps = {
+  isScrollable: false,
 };
 
 CanonicalScrollableNavigation.defaultProps = { dir: 'ltr' };
 
-export const AmpScrollableNavigation = ({ children, dir, id }) => (
-  <StyledScrollableNav id={id} dir={dir}>
+export const AmpScrollableNavigation = ({ children, dir, ...props }) => (
+  <StyledScrollableNav dir={dir} {...props}>
     {children}
   </StyledScrollableNav>
 );
@@ -72,10 +79,8 @@ export const AmpScrollableNavigation = ({ children, dir, id }) => (
 AmpScrollableNavigation.propTypes = {
   children: node.isRequired,
   dir: oneOf(['ltr', 'rtl']),
-  id: string,
 };
 
 AmpScrollableNavigation.defaultProps = {
   dir: 'ltr',
-  id: null,
 };

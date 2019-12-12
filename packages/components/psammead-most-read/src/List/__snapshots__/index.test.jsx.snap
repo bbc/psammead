@@ -2,7 +2,11 @@
 
 exports[`MostReadList should render with ltr bengali items with correct dir 1`] = `
 .c1 {
-  display: inline;
+  position: relative;
+}
+
+.c2 {
+  position: relative;
 }
 
 .c8 {
@@ -81,6 +85,7 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
   }
 }
 
+<<<<<<< HEAD
 @media (max-width:14.9375rem) {
   .c3 {
     width: calc(6/6*(100% - 6 * 0.5rem) + 5 * 0.5rem );
@@ -135,8 +140,11 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
   }
 }
 
+=======
+>>>>>>> 6886f7eb5615d8703f698c0bfca6af739e7adba2
 @supports (display:grid) {
   .c3 {
+<<<<<<< HEAD
     display: block;
   }
 }
@@ -170,6 +178,51 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
 @media (min-width:25rem) {
   .c5 {
     min-width: auto;
+=======
+    display: inline-block;
+    width: 11.11111111111111%;
+    vertical-align: top;
+  }
+}
+
+@media (min-width:15rem) and (max-width:24.9375rem) {
+  .c3 {
+    display: inline-block;
+    width: 11.11111111111111%;
+    vertical-align: top;
+  }
+}
+
+@media (min-width:25rem) and (max-width:37.4375rem) {
+  .c3 {
+    display: inline-block;
+    width: 22.22222222222222%;
+    vertical-align: top;
+  }
+}
+
+@media (min-width:37.5rem) and (max-width:62.9375rem) {
+  .c3 {
+    display: inline-block;
+    width: 22.22222222222222%;
+    vertical-align: top;
+  }
+}
+
+@media (min-width:63rem) and (max-width:80rem) {
+  .c3 {
+    display: inline-block;
+    width: 16.666666666666668%;
+    vertical-align: top;
+  }
+}
+
+@media (min-width:80rem) {
+  .c3 {
+    display: inline-block;
+    width: 16.666666666666668%;
+    vertical-align: top;
+>>>>>>> 6886f7eb5615d8703f698c0bfca6af739e7adba2
   }
 }
 
@@ -181,6 +234,7 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
 
 @media (min-width:80rem) {
   .c5 {
+<<<<<<< HEAD
     min-width: auto;
   }
 }
@@ -206,12 +260,56 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
 @media (min-width:37.5rem) {
   .c9 {
     min-width: auto;
+=======
+    display: inline-block;
+    width: 88.88888888888889%;
+    vertical-align: top;
+  }
+}
+
+@media (min-width:15rem) and (max-width:24.9375rem) {
+  .c5 {
+    display: inline-block;
+    width: 88.88888888888889%;
+    vertical-align: top;
+  }
+}
+
+@media (min-width:25rem) and (max-width:37.4375rem) {
+  .c5 {
+    display: inline-block;
+    width: 77.77777777777777%;
+    vertical-align: top;
+  }
+}
+
+@media (min-width:37.5rem) and (max-width:62.9375rem) {
+  .c5 {
+    display: inline-block;
+    width: 77.77777777777777%;
+    vertical-align: top;
+  }
+}
+
+@media (min-width:63rem) and (max-width:80rem) {
+  .c5 {
+    display: inline-block;
+    width: 83.33333333333333%;
+    vertical-align: top;
+>>>>>>> 6886f7eb5615d8703f698c0bfca6af739e7adba2
   }
 }
 
 @media (min-width:80rem) {
+<<<<<<< HEAD
   .c9 {
     min-width: 3rem;
+=======
+  .c5 {
+    display: inline-block;
+    width: 83.33333333333333%;
+    vertical-align: top;
+>>>>>>> 6886f7eb5615d8703f698c0bfca6af739e7adba2
   }
 }
 
@@ -606,7 +704,11 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
 
 exports[`MostReadList should render with ltr burmese items with correct dir 1`] = `
 .c1 {
-  display: inline;
+  position: relative;
+}
+
+.c2 {
+  position: relative;
 }
 
 .c8 {
@@ -685,6 +787,7 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
   }
 }
 
+<<<<<<< HEAD
 @media (max-width:14.9375rem) {
   .c3 {
     width: calc(6/6*(100% - 6 * 0.5rem) + 5 * 0.5rem );
@@ -739,8 +842,11 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
   }
 }
 
+=======
+>>>>>>> 6886f7eb5615d8703f698c0bfca6af739e7adba2
 @supports (display:grid) {
   .c3 {
+<<<<<<< HEAD
     display: block;
   }
 }
@@ -774,6 +880,51 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
 @media (min-width:25rem) {
   .c5 {
     min-width: auto;
+=======
+    display: inline-block;
+    width: 11.11111111111111%;
+    vertical-align: top;
+  }
+}
+
+@media (min-width:15rem) and (max-width:24.9375rem) {
+  .c3 {
+    display: inline-block;
+    width: 11.11111111111111%;
+    vertical-align: top;
+  }
+}
+
+@media (min-width:25rem) and (max-width:37.4375rem) {
+  .c3 {
+    display: inline-block;
+    width: 22.22222222222222%;
+    vertical-align: top;
+  }
+}
+
+@media (min-width:37.5rem) and (max-width:62.9375rem) {
+  .c3 {
+    display: inline-block;
+    width: 22.22222222222222%;
+    vertical-align: top;
+  }
+}
+
+@media (min-width:63rem) and (max-width:80rem) {
+  .c3 {
+    display: inline-block;
+    width: 16.666666666666668%;
+    vertical-align: top;
+  }
+}
+
+@media (min-width:80rem) {
+  .c3 {
+    display: inline-block;
+    width: 16.666666666666668%;
+    vertical-align: top;
+>>>>>>> 6886f7eb5615d8703f698c0bfca6af739e7adba2
   }
 }
 
@@ -785,6 +936,7 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
 
 @media (min-width:80rem) {
   .c5 {
+<<<<<<< HEAD
     min-width: auto;
   }
 }
@@ -810,12 +962,56 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
 @media (min-width:37.5rem) {
   .c9 {
     min-width: auto;
+=======
+    display: inline-block;
+    width: 88.88888888888889%;
+    vertical-align: top;
+  }
+}
+
+@media (min-width:15rem) and (max-width:24.9375rem) {
+  .c5 {
+    display: inline-block;
+    width: 88.88888888888889%;
+    vertical-align: top;
+  }
+}
+
+@media (min-width:25rem) and (max-width:37.4375rem) {
+  .c5 {
+    display: inline-block;
+    width: 77.77777777777777%;
+    vertical-align: top;
+  }
+}
+
+@media (min-width:37.5rem) and (max-width:62.9375rem) {
+  .c5 {
+    display: inline-block;
+    width: 77.77777777777777%;
+    vertical-align: top;
+  }
+}
+
+@media (min-width:63rem) and (max-width:80rem) {
+  .c5 {
+    display: inline-block;
+    width: 83.33333333333333%;
+    vertical-align: top;
+>>>>>>> 6886f7eb5615d8703f698c0bfca6af739e7adba2
   }
 }
 
 @media (min-width:80rem) {
+<<<<<<< HEAD
   .c9 {
     min-width: 4.2rem;
+=======
+  .c5 {
+    display: inline-block;
+    width: 83.33333333333333%;
+    vertical-align: top;
+>>>>>>> 6886f7eb5615d8703f698c0bfca6af739e7adba2
   }
 }
 
@@ -1210,7 +1406,11 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
 
 exports[`MostReadList should render with ltr news items with correct dir 1`] = `
 .c1 {
-  display: inline;
+  position: relative;
+}
+
+.c2 {
+  position: relative;
 }
 
 .c8 {
@@ -1289,6 +1489,7 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
   }
 }
 
+<<<<<<< HEAD
 @media (max-width:14.9375rem) {
   .c3 {
     width: calc(6/6*(100% - 6 * 0.5rem) + 5 * 0.5rem );
@@ -1343,8 +1544,11 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
   }
 }
 
+=======
+>>>>>>> 6886f7eb5615d8703f698c0bfca6af739e7adba2
 @supports (display:grid) {
   .c3 {
+<<<<<<< HEAD
     display: block;
   }
 }
@@ -1378,6 +1582,51 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
 @media (min-width:25rem) {
   .c5 {
     min-width: auto;
+=======
+    display: inline-block;
+    width: 11.11111111111111%;
+    vertical-align: top;
+  }
+}
+
+@media (min-width:15rem) and (max-width:24.9375rem) {
+  .c3 {
+    display: inline-block;
+    width: 11.11111111111111%;
+    vertical-align: top;
+  }
+}
+
+@media (min-width:25rem) and (max-width:37.4375rem) {
+  .c3 {
+    display: inline-block;
+    width: 22.22222222222222%;
+    vertical-align: top;
+  }
+}
+
+@media (min-width:37.5rem) and (max-width:62.9375rem) {
+  .c3 {
+    display: inline-block;
+    width: 22.22222222222222%;
+    vertical-align: top;
+  }
+}
+
+@media (min-width:63rem) and (max-width:80rem) {
+  .c3 {
+    display: inline-block;
+    width: 16.666666666666668%;
+    vertical-align: top;
+  }
+}
+
+@media (min-width:80rem) {
+  .c3 {
+    display: inline-block;
+    width: 16.666666666666668%;
+    vertical-align: top;
+>>>>>>> 6886f7eb5615d8703f698c0bfca6af739e7adba2
   }
 }
 
@@ -1389,6 +1638,7 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
 
 @media (min-width:80rem) {
   .c5 {
+<<<<<<< HEAD
     min-width: auto;
   }
 }
@@ -1414,12 +1664,56 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
 @media (min-width:37.5rem) {
   .c9 {
     min-width: auto;
+=======
+    display: inline-block;
+    width: 88.88888888888889%;
+    vertical-align: top;
+  }
+}
+
+@media (min-width:15rem) and (max-width:24.9375rem) {
+  .c5 {
+    display: inline-block;
+    width: 88.88888888888889%;
+    vertical-align: top;
+  }
+}
+
+@media (min-width:25rem) and (max-width:37.4375rem) {
+  .c5 {
+    display: inline-block;
+    width: 77.77777777777777%;
+    vertical-align: top;
+  }
+}
+
+@media (min-width:37.5rem) and (max-width:62.9375rem) {
+  .c5 {
+    display: inline-block;
+    width: 77.77777777777777%;
+    vertical-align: top;
+  }
+}
+
+@media (min-width:63rem) and (max-width:80rem) {
+  .c5 {
+    display: inline-block;
+    width: 83.33333333333333%;
+    vertical-align: top;
+>>>>>>> 6886f7eb5615d8703f698c0bfca6af739e7adba2
   }
 }
 
 @media (min-width:80rem) {
+<<<<<<< HEAD
   .c9 {
     min-width: 4.2rem;
+=======
+  .c5 {
+    display: inline-block;
+    width: 83.33333333333333%;
+    vertical-align: top;
+>>>>>>> 6886f7eb5615d8703f698c0bfca6af739e7adba2
   }
 }
 
@@ -1814,7 +2108,11 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
 
 exports[`MostReadList should render with rtl arabic items with correct dir 1`] = `
 .c1 {
-  display: inline;
+  position: relative;
+}
+
+.c2 {
+  position: relative;
 }
 
 .c8 {
@@ -1893,6 +2191,7 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
   }
 }
 
+<<<<<<< HEAD
 @media (max-width:14.9375rem) {
   .c3 {
     width: calc(6/6*(100% - 6 * 0.5rem) + 5 * 0.5rem );
@@ -1947,8 +2246,11 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
   }
 }
 
+=======
+>>>>>>> 6886f7eb5615d8703f698c0bfca6af739e7adba2
 @supports (display:grid) {
   .c3 {
+<<<<<<< HEAD
     display: block;
   }
 }
@@ -1982,6 +2284,51 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
 @media (min-width:25rem) {
   .c5 {
     min-width: auto;
+=======
+    display: inline-block;
+    width: 11.11111111111111%;
+    vertical-align: top;
+  }
+}
+
+@media (min-width:15rem) and (max-width:24.9375rem) {
+  .c3 {
+    display: inline-block;
+    width: 11.11111111111111%;
+    vertical-align: top;
+  }
+}
+
+@media (min-width:25rem) and (max-width:37.4375rem) {
+  .c3 {
+    display: inline-block;
+    width: 22.22222222222222%;
+    vertical-align: top;
+  }
+}
+
+@media (min-width:37.5rem) and (max-width:62.9375rem) {
+  .c3 {
+    display: inline-block;
+    width: 22.22222222222222%;
+    vertical-align: top;
+  }
+}
+
+@media (min-width:63rem) and (max-width:80rem) {
+  .c3 {
+    display: inline-block;
+    width: 16.666666666666668%;
+    vertical-align: top;
+  }
+}
+
+@media (min-width:80rem) {
+  .c3 {
+    display: inline-block;
+    width: 16.666666666666668%;
+    vertical-align: top;
+>>>>>>> 6886f7eb5615d8703f698c0bfca6af739e7adba2
   }
 }
 
@@ -1993,6 +2340,7 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
 
 @media (min-width:80rem) {
   .c5 {
+<<<<<<< HEAD
     min-width: auto;
   }
 }
@@ -2018,12 +2366,56 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
 @media (min-width:37.5rem) {
   .c9 {
     min-width: auto;
+=======
+    display: inline-block;
+    width: 88.88888888888889%;
+    vertical-align: top;
+  }
+}
+
+@media (min-width:15rem) and (max-width:24.9375rem) {
+  .c5 {
+    display: inline-block;
+    width: 88.88888888888889%;
+    vertical-align: top;
+  }
+}
+
+@media (min-width:25rem) and (max-width:37.4375rem) {
+  .c5 {
+    display: inline-block;
+    width: 77.77777777777777%;
+    vertical-align: top;
+  }
+}
+
+@media (min-width:37.5rem) and (max-width:62.9375rem) {
+  .c5 {
+    display: inline-block;
+    width: 77.77777777777777%;
+    vertical-align: top;
+  }
+}
+
+@media (min-width:63rem) and (max-width:80rem) {
+  .c5 {
+    display: inline-block;
+    width: 83.33333333333333%;
+    vertical-align: top;
+>>>>>>> 6886f7eb5615d8703f698c0bfca6af739e7adba2
   }
 }
 
 @media (min-width:80rem) {
+<<<<<<< HEAD
   .c9 {
     min-width: 4.2rem;
+=======
+  .c5 {
+    display: inline-block;
+    width: 83.33333333333333%;
+    vertical-align: top;
+>>>>>>> 6886f7eb5615d8703f698c0bfca6af739e7adba2
   }
 }
 
