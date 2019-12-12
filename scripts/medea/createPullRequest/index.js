@@ -7,11 +7,12 @@ const authToken = process.env.GITHUB_TOKEN;
 
 const theBranches = getBranchName();
 
-const createPullRequest = branchNames => {
+const createPullRequest = async () => {
+  const headBranch = await mergePullRequests();
+  console.log(headBranch);
   console.log('Making a pull request.');
-  const axiosPR = async () => {
-    const headBranch = await mergePullRequests();
-    await axios
+  const axiosPR = branchNames => {
+    axios
       .post(
         'https://api.github.com/repos/bbc/psammead/pulls',
         {

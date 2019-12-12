@@ -7,7 +7,7 @@ getDependabotPRs().then(value => {
 });
 
 const closePullRequest = require('./closePullRequest');
-const mergePullRequests = require('./mergePullRequests');
+const createPullRequest = require('./createPullRequest');
 
-console.log(mergePullRequests());
+console.log(createPullRequest());
 console.log(closePullRequest());

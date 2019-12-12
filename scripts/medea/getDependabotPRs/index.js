@@ -1,6 +1,6 @@
 const axios = require('axios');
 
-const authToken = 'process.env.GITHUB_TOKEN';
+const authToken = process.env.GITHUB_TOKEN;
 
 const getPullRequests = async () => {
   console.log('Getting Dependabot Pull Requests');
