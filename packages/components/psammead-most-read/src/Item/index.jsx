@@ -70,32 +70,6 @@ const StyledWrapper = styled.div`
   }
 `;
 
-// const StyledWrapper = styled.div`
-//   min-width: ${props => (props.service === 'bengali' ? '1rem' : '3rem')};
-//
-//   @media (min-width: ${GEL_GROUP_0_SCREEN_WIDTH_MIN}) {
-//     min-width: ${props => (props.items.length >= 10 ? '2rem' : 'auto')};
-//   }
-//
-//   @media (min-width: ${GEL_GROUP_1_SCREEN_WIDTH_MIN}) {
-//     min-width: ${props => (props.items.length >= 10 ? '3rem' : 'auto')};
-//   }
-//
-//   @media (min-width: ${GEL_GROUP_2_SCREEN_WIDTH_MIN}) {
-//     min-width: ${props =>
-//       props.listindex >= 5 && props.items.length >= 10 ? '3rem' : 'auto'};
-//   }
-//
-//   @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
-//     min-width: ${props => (props.listindex >= 5 ? '4rem' : 'auto')};
-//   }
-//
-//   @media (min-width: ${GEL_GROUP_5_SCREEN_WIDTH_MIN}) {
-//     min-width: ${props =>
-//       props.listindex === 4 && props.items.length >= 10 ? '4.2rem' : 'auto'};
-//   }
-// `;
-
 const StyledItem = styled.div`
   ${paddingStart}: 16px;
   padding-bottom: ${GEL_SPACING_TRPL};
