@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import {shape, string, oneOf, arrayOf, number, node} from 'prop-types';
+import { shape, string, oneOf, arrayOf } from 'prop-types';
 import {
   Burmese,
   Bengali,
