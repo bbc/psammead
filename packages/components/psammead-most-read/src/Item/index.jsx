@@ -27,18 +27,6 @@ const paddingEnd = ({ dir }) => `padding-${dir === 'ltr' ? 'right' : 'left'}`;
 // hence Bengali has its own special spacings.
 const isBengali = (service, yes, no) => (service === 'bengali' ? yes : no);
 
-const StyledLink = styled.a`
-  ${({ script }) => script && getDoublePica(script)};
-  ${({ service }) => getSerifMedium(service)}
-
-  color: ${C_EBON};
-  text-decoration: none;
-
-  &:hover,
-  &:focus {
-    text-decoration: underline;
-  }
-`;
 // For additional spacing for numerals in the right column because of '10' being double digits
 const isOnRightColumn = ({ listIndex, items }, supportsGrid) =>
   supportsGrid
@@ -52,6 +40,19 @@ const isOnLeftColumn = ({ listIndex, items }, supportsGrid) =>
     : (listIndex + 1) % 2 === 1;
 
 const rightColumnHasDoubleDigits = ({ items }) => items.length >= 9;
+
+const StyledLink = styled.a`
+  ${({ script }) => script && getDoublePica(script)};
+  ${({ service }) => getSerifMedium(service)}
+
+  color: ${C_EBON};
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    text-decoration: underline;
+  }
+`;
 
 const StyledWrapper = styled.div`
   min-width: ${props => (props.service === 'bengali' ? '1rem' : '3rem')};
