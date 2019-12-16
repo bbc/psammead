@@ -4,11 +4,11 @@ import styled from 'styled-components';
 import { getFoolscap, getDoublePica } from '@bbc/gel-foundations/typography';
 import { GEL_SPACING_TRPL } from '@bbc/gel-foundations/spacings';
 import {
-  GEL_GROUP_0_SCREEN_WIDTH_MIN,
-  GEL_GROUP_1_SCREEN_WIDTH_MIN,
-  GEL_GROUP_2_SCREEN_WIDTH_MIN,
-  GEL_GROUP_3_SCREEN_WIDTH_MIN,
   GEL_GROUP_5_SCREEN_WIDTH_MIN,
+  GEL_GROUP_3_SCREEN_WIDTH_MIN,
+  GEL_GROUP_2_SCREEN_WIDTH_MIN,
+  GEL_GROUP_1_SCREEN_WIDTH_MIN,
+  GEL_GROUP_0_SCREEN_WIDTH_MIN,
 } from '@bbc/gel-foundations/breakpoints';
 import { C_EBON, C_POSTBOX } from '@bbc/psammead-styles/colours';
 import { scriptPropType } from '@bbc/gel-foundations/prop-types';
@@ -17,8 +17,11 @@ import {
   getSerifMedium,
 } from '@bbc/psammead-styles/font-styles';
 
+// This is to handle the padding between the rank and the link for both ltr and rtl stories.
 const paddingStart = ({ dir }) => `padding-${dir === 'ltr' ? 'left' : 'right'}`;
 
+// Bengali uses the Shonar Bangalar font which has smaller glyphs than every other font,
+// hence Bengali has its own special spacings.
 const isBengali = (service, yes, no) => (service === 'bengali' ? yes : no);
 
 const StyledLink = styled.a`
@@ -33,46 +36,90 @@ const StyledLink = styled.a`
     text-decoration: underline;
   }
 `;
+// For additional spacing for numerals in the right column because of '10' being double digits
+const isOnRightColumn = ({ listIndex, items }, supportsGrid) =>
+  supportsGrid
+    ? listIndex + 1 > Math.ceil(items.length / 2)
+    : (listIndex + 1) % 2 === 0;
+
+// To add padding to the right of the link in order to make it consistent with the links in the right column
+const isOnLeftColumn = ({ listIndex, items }, supportsGrid) =>
+  supportsGrid
+    ? listIndex + 1 <= Math.ceil(items.length / 2)
+    : (listIndex + 1) % 2 === 1;
+
+const rightColumnHasDoubleDigits = ({ items }) => items.length >= 9;
 
 const StyledWrapper = styled.div`
   min-width: ${props => (props.service === 'bengali' ? '1rem' : '3rem')};
 
-  @media (min-width: ${GEL_GROUP_0_SCREEN_WIDTH_MIN}) {
-    min-width: ${props => (props.items.length >= 10 ? '2rem' : 'auto')};
-  }
-
-  @media (min-width: ${GEL_GROUP_1_SCREEN_WIDTH_MIN}) {
+  @supports not (display: grid) {
     min-width: ${props =>
-      props.items.length >= 10
+      (props.listIndex + 1) % 2 === 0 && rightColumnHasDoubleDigits(props)
         ? isBengali(props.service, '2rem', '3rem')
         : 'auto'};
   }
 
-  @media (min-width: ${GEL_GROUP_2_SCREEN_WIDTH_MIN}) {
-    min-width: ${props =>
-      props.listindex >= 5 && props.items.length >= 10
-        ? isBengali(props.service, '2rem', '3rem')
-        : 'auto'};
-  }
+  @supports (display: grid) {
+    @media (min-width: ${GEL_GROUP_0_SCREEN_WIDTH_MIN}) {
+      min-width: ${props =>
+        rightColumnHasDoubleDigits(props) ? '2rem' : 'auto'};
+    }
 
-  @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
-    min-width: ${props =>
-      props.listindex >= 5 && props.items.length >= 10
-        ? isBengali(props.service, '3rem', '4rem')
-        : 'auto'};
-  }
+    @media (min-width: ${GEL_GROUP_1_SCREEN_WIDTH_MIN}) {
+      min-width: ${props =>
+        rightColumnHasDoubleDigits(props)
+          ? isBengali(props.service, '2rem', '3rem')
+          : 'auto'};
+    }
 
-  @media (min-width: ${GEL_GROUP_5_SCREEN_WIDTH_MIN}) {
-    min-width: ${props =>
-      props.listindex === 4 && props.items.length >= 10
-        ? isBengali(props.service, '3rem', '4.2rem')
-        : 'auto'};
+    @media (min-width: ${GEL_GROUP_2_SCREEN_WIDTH_MIN}) {
+      min-width: ${props =>
+        isOnRightColumn(props, true) && rightColumnHasDoubleDigits(props)
+          ? isBengali(props.service, '2rem', '3rem')
+          : 'auto'};
+    }
+
+    @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
+      min-width: ${props =>
+        isOnRightColumn(props, true) && rightColumnHasDoubleDigits(props)
+          ? isBengali(props.service, '3rem', '4rem')
+          : 'auto'};
+    }
+
+    @media (min-width: ${GEL_GROUP_5_SCREEN_WIDTH_MIN}) {
+      min-width: ${props =>
+        props.listIndex === 4 && rightColumnHasDoubleDigits(props)
+          ? isBengali(props.service, '3rem', '4.2rem')
+          : 'auto'};
+    }
   }
 `;
 
 const StyledItem = styled.div`
   ${paddingStart}: 16px;
   padding-bottom: ${GEL_SPACING_TRPL};
+  padding-right: ${props =>
+    isOnLeftColumn(props, true) && rightColumnHasDoubleDigits(props)
+      ? '2rem'
+      : '0rem'};
+
+  @supports (display: grid) {
+    @media (min-width: ${GEL_GROUP_0_SCREEN_WIDTH_MIN}) {
+      padding-right: 0rem;
+    }
+
+    @media (min-width: ${GEL_GROUP_2_SCREEN_WIDTH_MIN}) {
+      padding-right: ${props =>
+        isOnLeftColumn(props, true) && rightColumnHasDoubleDigits(props)
+          ? '1.5rem'
+          : '0rem'};
+    }
+
+    @media (min-width: ${GEL_GROUP_5_SCREEN_WIDTH_MIN}) {
+      padding-right: 0rem;
+    }
+  }
 `;
 
 export const MostReadRank = styled.span`
@@ -88,12 +135,12 @@ export const MostReadRankWrapper = ({
   service,
   script,
   rank,
-  listindex,
+  listIndex,
   items,
   dir,
 }) => (
   <StyledWrapper
-    listindex={listindex}
+    listIndex={listIndex}
     service={service}
     items={items}
     dir={dir}
@@ -105,13 +152,15 @@ export const MostReadRankWrapper = ({
 );
 
 export const MostReadLink = ({
-  link: { title, href },
-  lastUpdated,
   service,
   script,
+  lastUpdated,
+  listIndex,
+  items,
+  link: { title, href },
   dir,
 }) => (
-  <StyledItem dir={dir}>
+  <StyledItem dir={dir} listIndex={listIndex} items={items}>
     <StyledLink href={href} script={script} service={service}>
       {title}
     </StyledLink>
@@ -138,7 +187,7 @@ MostReadRankWrapper.propTypes = {
   service: string.isRequired,
   script: shape(scriptPropType).isRequired,
   rank: string,
-  listindex: number.isRequired,
+  listIndex: number.isRequired,
   items: arrayOf(itemPropTypes).isRequired,
   dir: oneOf(['rtl', 'ltr']),
 };
@@ -149,13 +198,15 @@ MostReadRankWrapper.defaultProps = {
 };
 
 MostReadLink.propTypes = {
+  service: string.isRequired,
+  script: shape(scriptPropType).isRequired,
+  lastUpdated: node,
+  listIndex: number.isRequired,
+  items: arrayOf(itemPropTypes).isRequired,
   link: shape({
     title: string.isRequired,
     href: string.isRequired,
   }).isRequired,
-  lastUpdated: node,
-  service: string.isRequired,
-  script: shape(scriptPropType).isRequired,
   dir: oneOf(['rtl', 'ltr']),
 };
 

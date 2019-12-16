@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { shape, string, oneOf, arrayOf } from 'prop-types';
+import {shape, string, oneOf, arrayOf, number, node} from 'prop-types';
 import {
   Burmese,
   Bengali,
@@ -97,21 +97,22 @@ const renderMostReadRank = (service, script, index, items, dir) => {
     <MostReadRankWrapper
       service={service}
       script={script}
-      listindex={index}
       rank={rank}
+      listIndex={index}
       items={items}
       dir={dir}
     />
   );
 };
 
-const renderMostReadLink = (service, script, listindex, link, dir) => (
+const renderMostReadLink = (service, script, listIndex, items, link, dir) => (
   <MostReadLink
     service={service}
-    link={link}
     script={script}
+    listIndex={listIndex}
+    items={items}
+    link={link}
     dir={dir}
-    listindex={listindex}
   />
 );
 
@@ -122,7 +123,7 @@ const MostReadList = ({ items, service, script, dir }) => (
         <Grid {...MostReadItemProps} dir={dir} forwardedAs="li">
           <StyledLi item={i}>
             {renderMostReadRank(service, script, i, items, dir)}
-            {renderMostReadLink(service, script, i, link, dir)}
+            {renderMostReadLink(service, script, i, items, link, dir)}
           </StyledLi>
         </Grid>
       ))}

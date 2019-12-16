@@ -34,9 +34,24 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
   min-width: 1rem;
 }
 
+.c11 {
+  min-width: 1rem;
+}
+
+.c13 {
+  min-width: 1rem;
+}
+
 .c7 {
   padding-left: 16px;
   padding-bottom: 1.5rem;
+  padding-right: 2rem;
+}
+
+.c12 {
+  padding-left: 16px;
+  padding-bottom: 1.5rem;
+  padding-right: 0rem;
 }
 
 .c6 {
@@ -149,92 +164,32 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
   }
 }
 
-@media (min-width:0rem) {
-  .c5 {
-    min-width: 2rem;
-  }
-}
-
-@media (min-width:15rem) {
-  .c5 {
-    min-width: 2rem;
-  }
-}
-
-@media (min-width:25rem) {
+@supports not (display:grid) {
   .c5 {
     min-width: auto;
   }
 }
 
-@media (min-width:37.5rem) {
-  .c5 {
+@supports not (display:grid) {
+  .c9 {
+    min-width: 2rem;
+  }
+}
+
+@supports not (display:grid) {
+  .c10 {
     min-width: auto;
   }
 }
 
-@media (min-width:80rem) {
-  .c5 {
-    min-width: auto;
-  }
-}
-
-@media (min-width:0rem) {
-  .c9 {
+@supports not (display:grid) {
+  .c11 {
     min-width: 2rem;
   }
 }
 
-@media (min-width:15rem) {
-  .c9 {
-    min-width: 2rem;
-  }
-}
-
-@media (min-width:25rem) {
-  .c9 {
-    min-width: auto;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c9 {
-    min-width: auto;
-  }
-}
-
-@media (min-width:80rem) {
-  .c9 {
-    min-width: 3rem;
-  }
-}
-
-@media (min-width:0rem) {
-  .c10 {
-    min-width: 2rem;
-  }
-}
-
-@media (min-width:15rem) {
-  .c10 {
-    min-width: 2rem;
-  }
-}
-
-@media (min-width:25rem) {
-  .c10 {
-    min-width: 2rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c10 {
-    min-width: 3rem;
-  }
-}
-
-@media (min-width:80rem) {
-  .c10 {
+@supports not (display:grid) {
+  .c13 {
     min-width: auto;
   }
 }
@@ -315,7 +270,7 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
         class="c4"
       >
         <div
-          class="c5"
+          class="c9"
           dir="ltr"
         >
           <span
@@ -379,7 +334,7 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
         class="c4"
       >
         <div
-          class="c5"
+          class="c9"
           dir="ltr"
         >
           <span
@@ -411,7 +366,7 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
         class="c4"
       >
         <div
-          class="c9"
+          class="c10"
           dir="ltr"
         >
           <span
@@ -443,7 +398,7 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
         class="c4"
       >
         <div
-          class="c10"
+          class="c11"
           dir="ltr"
         >
           <span
@@ -454,7 +409,7 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
           </span>
         </div>
         <div
-          class="c7"
+          class="c12"
           dir="ltr"
         >
           <a
@@ -475,7 +430,7 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
         class="c4"
       >
         <div
-          class="c10"
+          class="c13"
           dir="ltr"
         >
           <span
@@ -486,7 +441,7 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
           </span>
         </div>
         <div
-          class="c7"
+          class="c12"
           dir="ltr"
         >
           <a
@@ -507,7 +462,7 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
         class="c4"
       >
         <div
-          class="c10"
+          class="c11"
           dir="ltr"
         >
           <span
@@ -518,7 +473,7 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
           </span>
         </div>
         <div
-          class="c7"
+          class="c12"
           dir="ltr"
         >
           <a
@@ -539,7 +494,7 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
         class="c4"
       >
         <div
-          class="c10"
+          class="c13"
           dir="ltr"
         >
           <span
@@ -550,7 +505,7 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
           </span>
         </div>
         <div
-          class="c7"
+          class="c12"
           dir="ltr"
         >
           <a
@@ -571,7 +526,7 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
         class="c4"
       >
         <div
-          class="c10"
+          class="c11"
           dir="ltr"
         >
           <span
@@ -582,7 +537,7 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
           </span>
         </div>
         <div
-          class="c7"
+          class="c12"
           dir="ltr"
         >
           <a
@@ -632,9 +587,24 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
   min-width: 3rem;
 }
 
+.c11 {
+  min-width: 3rem;
+}
+
+.c13 {
+  min-width: 3rem;
+}
+
 .c7 {
   padding-left: 16px;
   padding-bottom: 1.5rem;
+  padding-right: 2rem;
+}
+
+.c12 {
+  padding-left: 16px;
+  padding-bottom: 1.5rem;
+  padding-right: 0rem;
 }
 
 .c6 {
@@ -747,92 +717,32 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
   }
 }
 
-@media (min-width:0rem) {
-  .c5 {
-    min-width: 2rem;
-  }
-}
-
-@media (min-width:15rem) {
-  .c5 {
-    min-width: 3rem;
-  }
-}
-
-@media (min-width:25rem) {
+@supports not (display:grid) {
   .c5 {
     min-width: auto;
   }
 }
 
-@media (min-width:37.5rem) {
-  .c5 {
-    min-width: auto;
-  }
-}
-
-@media (min-width:80rem) {
-  .c5 {
-    min-width: auto;
-  }
-}
-
-@media (min-width:0rem) {
-  .c9 {
-    min-width: 2rem;
-  }
-}
-
-@media (min-width:15rem) {
+@supports not (display:grid) {
   .c9 {
     min-width: 3rem;
   }
 }
 
-@media (min-width:25rem) {
-  .c9 {
+@supports not (display:grid) {
+  .c10 {
     min-width: auto;
   }
 }
 
-@media (min-width:37.5rem) {
-  .c9 {
-    min-width: auto;
-  }
-}
-
-@media (min-width:80rem) {
-  .c9 {
-    min-width: 4.2rem;
-  }
-}
-
-@media (min-width:0rem) {
-  .c10 {
-    min-width: 2rem;
-  }
-}
-
-@media (min-width:15rem) {
-  .c10 {
+@supports not (display:grid) {
+  .c11 {
     min-width: 3rem;
   }
 }
 
-@media (min-width:25rem) {
-  .c10 {
-    min-width: 3rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c10 {
-    min-width: 4rem;
-  }
-}
-
-@media (min-width:80rem) {
-  .c10 {
+@supports not (display:grid) {
+  .c13 {
     min-width: auto;
   }
 }
@@ -913,7 +823,7 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
         class="c4"
       >
         <div
-          class="c5"
+          class="c9"
           dir="ltr"
         >
           <span
@@ -977,7 +887,7 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
         class="c4"
       >
         <div
-          class="c5"
+          class="c9"
           dir="ltr"
         >
           <span
@@ -1009,7 +919,7 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
         class="c4"
       >
         <div
-          class="c9"
+          class="c10"
           dir="ltr"
         >
           <span
@@ -1041,7 +951,7 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
         class="c4"
       >
         <div
-          class="c10"
+          class="c11"
           dir="ltr"
         >
           <span
@@ -1052,7 +962,7 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
           </span>
         </div>
         <div
-          class="c7"
+          class="c12"
           dir="ltr"
         >
           <a
@@ -1073,7 +983,7 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
         class="c4"
       >
         <div
-          class="c10"
+          class="c13"
           dir="ltr"
         >
           <span
@@ -1084,7 +994,7 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
           </span>
         </div>
         <div
-          class="c7"
+          class="c12"
           dir="ltr"
         >
           <a
@@ -1105,7 +1015,7 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
         class="c4"
       >
         <div
-          class="c10"
+          class="c11"
           dir="ltr"
         >
           <span
@@ -1116,7 +1026,7 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
           </span>
         </div>
         <div
-          class="c7"
+          class="c12"
           dir="ltr"
         >
           <a
@@ -1137,7 +1047,7 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
         class="c4"
       >
         <div
-          class="c10"
+          class="c13"
           dir="ltr"
         >
           <span
@@ -1148,7 +1058,7 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
           </span>
         </div>
         <div
-          class="c7"
+          class="c12"
           dir="ltr"
         >
           <a
@@ -1169,7 +1079,7 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
         class="c4"
       >
         <div
-          class="c10"
+          class="c11"
           dir="ltr"
         >
           <span
@@ -1180,7 +1090,7 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
           </span>
         </div>
         <div
-          class="c7"
+          class="c12"
           dir="ltr"
         >
           <a
@@ -1230,9 +1140,24 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
   min-width: 3rem;
 }
 
+.c11 {
+  min-width: 3rem;
+}
+
+.c13 {
+  min-width: 3rem;
+}
+
 .c7 {
   padding-left: 16px;
   padding-bottom: 1.5rem;
+  padding-right: 2rem;
+}
+
+.c12 {
+  padding-left: 16px;
+  padding-bottom: 1.5rem;
+  padding-right: 0rem;
 }
 
 .c6 {
@@ -1345,92 +1270,32 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
   }
 }
 
-@media (min-width:0rem) {
-  .c5 {
-    min-width: 2rem;
-  }
-}
-
-@media (min-width:15rem) {
-  .c5 {
-    min-width: 3rem;
-  }
-}
-
-@media (min-width:25rem) {
+@supports not (display:grid) {
   .c5 {
     min-width: auto;
   }
 }
 
-@media (min-width:37.5rem) {
-  .c5 {
-    min-width: auto;
-  }
-}
-
-@media (min-width:80rem) {
-  .c5 {
-    min-width: auto;
-  }
-}
-
-@media (min-width:0rem) {
-  .c9 {
-    min-width: 2rem;
-  }
-}
-
-@media (min-width:15rem) {
+@supports not (display:grid) {
   .c9 {
     min-width: 3rem;
   }
 }
 
-@media (min-width:25rem) {
-  .c9 {
+@supports not (display:grid) {
+  .c10 {
     min-width: auto;
   }
 }
 
-@media (min-width:37.5rem) {
-  .c9 {
-    min-width: auto;
-  }
-}
-
-@media (min-width:80rem) {
-  .c9 {
-    min-width: 4.2rem;
-  }
-}
-
-@media (min-width:0rem) {
-  .c10 {
-    min-width: 2rem;
-  }
-}
-
-@media (min-width:15rem) {
-  .c10 {
+@supports not (display:grid) {
+  .c11 {
     min-width: 3rem;
   }
 }
 
-@media (min-width:25rem) {
-  .c10 {
-    min-width: 3rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c10 {
-    min-width: 4rem;
-  }
-}
-
-@media (min-width:80rem) {
-  .c10 {
+@supports not (display:grid) {
+  .c13 {
     min-width: auto;
   }
 }
@@ -1511,7 +1376,7 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
         class="c4"
       >
         <div
-          class="c5"
+          class="c9"
           dir="ltr"
         >
           <span
@@ -1575,7 +1440,7 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
         class="c4"
       >
         <div
-          class="c5"
+          class="c9"
           dir="ltr"
         >
           <span
@@ -1607,7 +1472,7 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
         class="c4"
       >
         <div
-          class="c9"
+          class="c10"
           dir="ltr"
         >
           <span
@@ -1639,7 +1504,7 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
         class="c4"
       >
         <div
-          class="c10"
+          class="c11"
           dir="ltr"
         >
           <span
@@ -1650,7 +1515,7 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
           </span>
         </div>
         <div
-          class="c7"
+          class="c12"
           dir="ltr"
         >
           <a
@@ -1671,7 +1536,7 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
         class="c4"
       >
         <div
-          class="c10"
+          class="c13"
           dir="ltr"
         >
           <span
@@ -1682,7 +1547,7 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
           </span>
         </div>
         <div
-          class="c7"
+          class="c12"
           dir="ltr"
         >
           <a
@@ -1703,7 +1568,7 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
         class="c4"
       >
         <div
-          class="c10"
+          class="c11"
           dir="ltr"
         >
           <span
@@ -1714,7 +1579,7 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
           </span>
         </div>
         <div
-          class="c7"
+          class="c12"
           dir="ltr"
         >
           <a
@@ -1735,7 +1600,7 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
         class="c4"
       >
         <div
-          class="c10"
+          class="c13"
           dir="ltr"
         >
           <span
@@ -1746,7 +1611,7 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
           </span>
         </div>
         <div
-          class="c7"
+          class="c12"
           dir="ltr"
         >
           <a
@@ -1767,7 +1632,7 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
         class="c4"
       >
         <div
-          class="c10"
+          class="c11"
           dir="ltr"
         >
           <span
@@ -1778,7 +1643,7 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
           </span>
         </div>
         <div
-          class="c7"
+          class="c12"
           dir="ltr"
         >
           <a
@@ -1828,9 +1693,24 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
   min-width: 3rem;
 }
 
+.c11 {
+  min-width: 3rem;
+}
+
+.c13 {
+  min-width: 3rem;
+}
+
 .c7 {
   padding-right: 16px;
   padding-bottom: 1.5rem;
+  padding-right: 2rem;
+}
+
+.c12 {
+  padding-right: 16px;
+  padding-bottom: 1.5rem;
+  padding-right: 0rem;
 }
 
 .c6 {
@@ -1943,92 +1823,32 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
   }
 }
 
-@media (min-width:0rem) {
-  .c5 {
-    min-width: 2rem;
-  }
-}
-
-@media (min-width:15rem) {
-  .c5 {
-    min-width: 3rem;
-  }
-}
-
-@media (min-width:25rem) {
+@supports not (display:grid) {
   .c5 {
     min-width: auto;
   }
 }
 
-@media (min-width:37.5rem) {
-  .c5 {
-    min-width: auto;
-  }
-}
-
-@media (min-width:80rem) {
-  .c5 {
-    min-width: auto;
-  }
-}
-
-@media (min-width:0rem) {
-  .c9 {
-    min-width: 2rem;
-  }
-}
-
-@media (min-width:15rem) {
+@supports not (display:grid) {
   .c9 {
     min-width: 3rem;
   }
 }
 
-@media (min-width:25rem) {
-  .c9 {
+@supports not (display:grid) {
+  .c10 {
     min-width: auto;
   }
 }
 
-@media (min-width:37.5rem) {
-  .c9 {
-    min-width: auto;
-  }
-}
-
-@media (min-width:80rem) {
-  .c9 {
-    min-width: 4.2rem;
-  }
-}
-
-@media (min-width:0rem) {
-  .c10 {
-    min-width: 2rem;
-  }
-}
-
-@media (min-width:15rem) {
-  .c10 {
+@supports not (display:grid) {
+  .c11 {
     min-width: 3rem;
   }
 }
 
-@media (min-width:25rem) {
-  .c10 {
-    min-width: 3rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c10 {
-    min-width: 4rem;
-  }
-}
-
-@media (min-width:80rem) {
-  .c10 {
+@supports not (display:grid) {
+  .c13 {
     min-width: auto;
   }
 }
@@ -2109,7 +1929,7 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
         class="c4"
       >
         <div
-          class="c5"
+          class="c9"
           dir="rtl"
         >
           <span
@@ -2173,7 +1993,7 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
         class="c4"
       >
         <div
-          class="c5"
+          class="c9"
           dir="rtl"
         >
           <span
@@ -2205,7 +2025,7 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
         class="c4"
       >
         <div
-          class="c9"
+          class="c10"
           dir="rtl"
         >
           <span
@@ -2237,7 +2057,7 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
         class="c4"
       >
         <div
-          class="c10"
+          class="c11"
           dir="rtl"
         >
           <span
@@ -2248,7 +2068,7 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
           </span>
         </div>
         <div
-          class="c7"
+          class="c12"
           dir="rtl"
         >
           <a
@@ -2269,7 +2089,7 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
         class="c4"
       >
         <div
-          class="c10"
+          class="c13"
           dir="rtl"
         >
           <span
@@ -2280,7 +2100,7 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
           </span>
         </div>
         <div
-          class="c7"
+          class="c12"
           dir="rtl"
         >
           <a
@@ -2301,7 +2121,7 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
         class="c4"
       >
         <div
-          class="c10"
+          class="c11"
           dir="rtl"
         >
           <span
@@ -2312,7 +2132,7 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
           </span>
         </div>
         <div
-          class="c7"
+          class="c12"
           dir="rtl"
         >
           <a
@@ -2333,7 +2153,7 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
         class="c4"
       >
         <div
-          class="c10"
+          class="c13"
           dir="rtl"
         >
           <span
@@ -2344,7 +2164,7 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
           </span>
         </div>
         <div
-          class="c7"
+          class="c12"
           dir="rtl"
         >
           <a
@@ -2365,7 +2185,7 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
         class="c4"
       >
         <div
-          class="c10"
+          class="c11"
           dir="rtl"
         >
           <span
@@ -2376,7 +2196,7 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
           </span>
         </div>
         <div
-          class="c7"
+          class="c12"
           dir="rtl"
         >
           <a
