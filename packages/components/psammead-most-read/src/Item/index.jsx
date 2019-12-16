@@ -20,6 +20,9 @@ import {
 // This is to handle the padding between the rank and the link for both ltr and rtl stories.
 const paddingStart = ({ dir }) => `padding-${dir === 'ltr' ? 'left' : 'right'}`;
 
+// This is to make where the link ends consistent for both columns
+const paddingEnd = ({ dir }) => `padding-${dir === 'ltr' ? 'right' : 'left'}`;
+
 // Bengali uses the Shonar Bangalar font which has smaller glyphs than every other font,
 // hence Bengali has its own special spacings.
 const isBengali = (service, yes, no) => (service === 'bengali' ? yes : no);
@@ -99,25 +102,25 @@ const StyledWrapper = styled.div`
 const StyledItem = styled.div`
   ${paddingStart}: 16px;
   padding-bottom: ${GEL_SPACING_TRPL};
-  padding-right: ${props =>
+  ${paddingEnd}: ${props =>
     isOnLeftColumn(props, true) && rightColumnHasDoubleDigits(props)
       ? '2rem'
       : '0rem'};
 
   @supports (display: grid) {
     @media (min-width: ${GEL_GROUP_0_SCREEN_WIDTH_MIN}) {
-      padding-right: 0rem;
+      ${paddingEnd}: 0rem;
     }
 
     @media (min-width: ${GEL_GROUP_2_SCREEN_WIDTH_MIN}) {
-      padding-right: ${props =>
+      ${paddingEnd}: ${props =>
         isOnLeftColumn(props, true) && rightColumnHasDoubleDigits(props)
           ? '1.5rem'
           : '0rem'};
     }
 
     @media (min-width: ${GEL_GROUP_5_SCREEN_WIDTH_MIN}) {
-      padding-right: 0rem;
+      ${paddingEnd}: 0rem;
     }
   }
 `;
@@ -201,8 +204,8 @@ MostReadLink.propTypes = {
   service: string.isRequired,
   script: shape(scriptPropType).isRequired,
   lastUpdated: node,
-  listIndex: number.isRequired,
-  items: arrayOf(itemPropTypes).isRequired,
+  listIndex: number,
+  items: arrayOf(itemPropTypes),
   link: shape({
     title: string.isRequired,
     href: string.isRequired,
@@ -212,5 +215,7 @@ MostReadLink.propTypes = {
 
 MostReadLink.defaultProps = {
   lastUpdated: null,
+  listIndex: 0,
+  items: null,
   dir: 'ltr',
 };
