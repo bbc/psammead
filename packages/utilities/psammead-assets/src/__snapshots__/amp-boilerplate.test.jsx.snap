@@ -63,6 +63,14 @@ exports[`AMP Boilerplate JavaScript should render AMP Mustache JS 1`] = `
 />
 `;
 
+exports[`AMP Boilerplate JavaScript should render AMP ads JS 1`] = `
+<script
+  async=""
+  custom-element="amp-ad"
+  src="https://cdn.ampproject.org/v0/amp-ad-0.1.js"
+/>
+`;
+
 exports[`AMP Boilerplate styles should render AMP NoScript 1`] = `
 <div>
   body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}
