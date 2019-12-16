@@ -1,5 +1,5 @@
 import React from 'react';
-import { node, oneOf, shape, string, number, arrayOf } from 'prop-types';
+import { shape, string, oneOf, arrayOf, number, node } from 'prop-types';
 import styled from 'styled-components';
 import { getFoolscap, getDoublePica } from '@bbc/gel-foundations/typography';
 import { GEL_SPACING_TRPL } from '@bbc/gel-foundations/spacings';
