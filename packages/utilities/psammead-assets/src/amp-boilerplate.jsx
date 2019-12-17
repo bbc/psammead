@@ -57,3 +57,10 @@ export const AMP_MUSTACHE_JS = (
     src="https://cdn.ampproject.org/v0/amp-mustache-0.2.js"
   />
 );
+export const AMP_ADS_JS = (
+  <script
+    async
+    custom-element="amp-ad"
+    src="https://cdn.ampproject.org/v0/amp-ad-0.1.js"
+  />
+);
