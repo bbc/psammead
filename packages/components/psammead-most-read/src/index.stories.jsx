@@ -70,7 +70,12 @@ storiesOf('Components|MostRead/Item', module)
   .addDecorator(withKnobs)
   .addDecorator(withServicesKnob())
   .add(`MostReadLink`, ({ script, service }) => (
-    <MostReadLink link={getItem(service)} service={service} script={script} />
+    <MostReadLink
+      link={getItem(service)}
+      service={service}
+      script={script}
+      items={getItems(service, 2)}
+    />
   ))
   .add(`MostReadLink with last updated date`, ({ script, service }) => (
     <MostReadLink
@@ -78,6 +83,7 @@ storiesOf('Components|MostRead/Item', module)
       lastUpdated={lastUpdated(script, service)}
       service={service}
       script={script}
+      items={getItems(service, 2)}
     />
   ));
 
