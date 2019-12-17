@@ -82,14 +82,21 @@ storiesOf('Components|MostRead/Item', module)
   ));
 
 storiesOf('Components|MostRead/Rank', module)
-  .add(`MostReadRank LTR`, ({ script, service }) =>
-    renderRank({ service, script, rank: 5 }),
+  .addDecorator(withKnobs)
+  .add(`MostReadRank LTR`, () =>
+    newsServiceDecorator(({ script, service }) =>
+      renderRank({ service, script, rank: 5 }),
+    ),
   )
-  .add(`MostReadRank LTR double digits`, ({ script, service }) =>
-    renderRank({ service, script, rank: 10 }),
+  .add(`MostReadRank LTR double digits`, () =>
+    newsServiceDecorator(({ script, service }) =>
+      renderRank({ service, script, rank: 10 }),
+    ),
   )
-  .add(`MostReadRank RTL`, ({ script, service }) =>
-    renderRank({ service, script, rank: '۲' }),
+  .add(`MostReadRank RTL`, () =>
+    arabicServiceDecorator(({ script, service }) =>
+      renderRank({ service, script, rank: '۲' }),
+    ),
   );
 
 storiesOf('Components|MostRead/List', module)

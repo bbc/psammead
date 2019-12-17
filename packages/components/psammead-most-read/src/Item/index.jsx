@@ -106,7 +106,7 @@ const StyledItem = styled.div`
   ${paddingEnd}: ${props =>
     isOnLeftColumn(props, true) && rightColumnHasDoubleDigits(props)
       ? '2rem'
-      : '0rem'}
+      : '0rem'};
 
   @supports (display: grid) {
     @media (min-width: ${GEL_GROUP_0_SCREEN_WIDTH_MIN}) {
@@ -117,7 +117,7 @@ const StyledItem = styled.div`
       ${paddingEnd}: ${props =>
         isOnLeftColumn(props, true) && rightColumnHasDoubleDigits(props)
           ? '1.5rem'
-          : '0rem'}
+          : '0rem'};
     }
 
     @media (min-width: ${GEL_GROUP_5_SCREEN_WIDTH_MIN}) {
