@@ -128,7 +128,6 @@ exports[`Brand should render correctly with link not provided 1`] = `
       , 
       Service
     </span>
-    <div />
   </div>
 </div>
 `;
@@ -279,7 +278,6 @@ exports[`Brand should render correctly with link provided 1`] = `
         Service
       </span>
     </a>
-    <div />
   </div>
 </div>
 `;
@@ -405,7 +403,6 @@ exports[`Brand should render correctly with no service Localised Name 1`] = `
     >
       BBC News
     </span>
-    <div />
   </div>
 </div>
 `;
@@ -533,7 +530,6 @@ exports[`Brand should render correctly with transparent borders 1`] = `
     >
       BBC News
     </span>
-    <div />
   </div>
 </div>
 `;
