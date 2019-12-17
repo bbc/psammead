@@ -12,13 +12,14 @@
   - How can this component be built in a way that supports AMP? There are many cases where AMP will need a different implementation to the canonical site, including client-side user interaction, data fetching and images.
   - If you need to pass in extra props from Simorgh into a Psammead component, but don’t use those props in the components itself, you can spread extra props on the component rather than adding them explicitly. Examples of when we do this are for event tracking and adding ids to elements to be targeted when working with AMP events and state. See an example here: https://github.com/bbc/psammead/blob/latest/packages/components/psammead-brand/src/index.jsx#L200
   - How will this component behave if JavaScript is disabled? Core content needs to be accessible with JavaScript disabled - ensure that this component allows for this.
-  - As a group, break down the work required into small subtasks, and add these to a checklist in the GitHub issue\*. If a subtask requires more effort, members of the swarm can either all work together, or pair on the task. Smaller tasks can be picked up individually. Each of these subtasks can go into code review on their own, rather than waiting for all of the work to be done. You may think of new tasks once you’ve started developing, so feel free to keep adding to this list once you’ve started.
+  - As a group, break down the work required into small subtasks, and add these to a checklist in the GitHub issue. If a subtask requires more effort, members of the swarm can either all work together, or pair on the task. Smaller tasks can be picked up individually. Each of these subtasks can go into code review on their own, rather than waiting for all of the work to be done. You may think of new tasks once you’ve started developing, so feel free to keep adding to this list once you’ve started.
   - Make sure that accessibility requirements are considered throughout this process, not just at the end during the accessibility swarm.
   - Some things to consider that are often missed until code review/testing are high contrast mode in firefox, support for right-to-left languages, and IE support.
 
 | Thing to remember                                                             | Stage to do the thing at eg start/end, before design etc |
 | ----------------------------------------------------------------------------- | -------------------------------------------------------- |
-| Write e2e tests (Think about e2es)                                            | end? (start)                                             |
+| Think about e2e tests                                                         | start                                                    |
+| Write e2e tests                                                               | end                                                      |
 | Think about AMP                                                               | start                                                    |
 | Think about non-JS                                                            | start                                                    |
 | Involve testers in early discussions of component                             | start                                                    |
