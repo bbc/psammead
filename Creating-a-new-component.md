@@ -26,7 +26,7 @@
 | Requirements                                                                  | start                                                    |
 | Acceptance criteria                                                           | start                                                    |
 | Be clear about where requirements and ACs live - Jira/Zeplin/Docs/Dropbox etc | all the way through                                      |
-| Translations requirements short/long term                                     | start/end                                                |
+| Translations requirements short/long term                                     | start                                                    |
 | Split high level requirements into subtasks                                   | During dev swarm                                         |
 | Confirm that the designs are up to date                                       | start                                                    |
 | Does component require event tracking?                                        | start (once event tracking is complete)                  |
