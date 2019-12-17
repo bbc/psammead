@@ -3,7 +3,8 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
-| 2.0.35 | [PR#2826](https://github.com/bbc/psammead/pull/2828) Add quide on creating new components |
+| 2.0.36 | [PR#2826](https://github.com/bbc/psammead/pull/2828) Add quide on creating new components |
+| 2.0.35 | [PR#2831](https://github.com/bbc/psammead/pull/2831) Bump Dev Dependencies |
 | 2.0.34 | [PR#2830](https://github.com/bbc/psammead/pull/2830) Talos - Bump Dependencies - @bbc/psammead-image-placeholder, @bbc/psammead-media-indicator |
 | 2.0.33 | [PR#2827](https://github.com/bbc/psammead/pull/2827) Talos - Bump Dependencies - @bbc/psammead-assets |
 | 2.0.32 | [PR#2826](https://github.com/bbc/psammead/pull/2826) Add amp ads boilerplate to psammead-assets |
