@@ -33,7 +33,7 @@ const navigationUlComponent = (
 );
 
 const NavigationExample = (
-  <Navigation script={latin} skipLinkText="Wụga n’ọdịnaya" service="news">
+  <Navigation script={latin} service="news">
     {navigationUlComponent}
   </Navigation>
 );
@@ -43,12 +43,7 @@ describe('Navigation', () => {
 
   shouldMatchSnapshot(
     'should render correctly when isOpen is true',
-    <Navigation
-      script={latin}
-      skipLinkText="Wụga n’ọdịnaya"
-      service="news"
-      isOpen
-    >
+    <Navigation script={latin} service="news" isOpen>
       {navigationUlComponent}
     </Navigation>,
   );
