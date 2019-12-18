@@ -59,7 +59,7 @@ const StyledWrapper = styled.div`
 
   @supports not (display: grid) {
     min-width: ${props =>
-      (props.listIndex + 1) % 2 === 0 && rightColumnHasDoubleDigits(props)
+      isOnRightColumn(props, false) && rightColumnHasDoubleDigits(props)
         ? isBengali(props.service, '2rem', '3rem')
         : 'auto'};
   }
@@ -105,8 +105,8 @@ const StyledItem = styled.div`
   padding-bottom: ${GEL_SPACING_TRPL};
   ${paddingEnd}: ${props =>
     isOnLeftColumn(props, true) && rightColumnHasDoubleDigits(props)
-      ? '2rem'
-      : '0rem'};
+      ? '2rem;'
+      : '0rem;'}
 
   @supports (display: grid) {
     @media (min-width: ${GEL_GROUP_0_SCREEN_WIDTH_MIN}) {
@@ -116,8 +116,8 @@ const StyledItem = styled.div`
     @media (min-width: ${GEL_GROUP_2_SCREEN_WIDTH_MIN}) {
       ${paddingEnd}: ${props =>
         isOnLeftColumn(props, true) && rightColumnHasDoubleDigits(props)
-          ? '1.5rem'
-          : '0rem'};
+          ? '1.5rem;'
+          : '0rem;'}
     }
 
     @media (min-width: ${GEL_GROUP_5_SCREEN_WIDTH_MIN}) {
