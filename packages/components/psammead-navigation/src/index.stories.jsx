@@ -135,14 +135,10 @@ const getBrand = () => {
   );
 };
 
-const navigationStory = (
-  skipLinkText,
-  currentPageText,
-  navData,
-  dir,
-  brand,
-  isAmp,
-) => ({ script, service }) => {
+const navigationStory = (currentPageText, navData, dir, brand, isAmp) => ({
+  script,
+  service,
+}) => {
   const ScrollableNavigation = isAmp
     ? AmpScrollableNavigation
     : CanonicalScrollableNavigation;
@@ -163,12 +159,7 @@ const navigationStory = (
     <>
       {brand && getBrand()}
 
-      <Navigation
-        script={script}
-        skipLinkText={skipLinkText}
-        service={service}
-        dir={dir}
-      >
+      <Navigation script={script} service={service} dir={dir}>
         <ScrollableNavigation dir={dir} isScrollable={isScrollable}>
           <NavigationUl>
             {navData.map((item, index) => {
@@ -225,12 +216,12 @@ const canonicalStories = storiesOf('Components|Navigation/Canonical', module)
   .addDecorator(withServicesKnob());
 
 navStoriesData.map(item => {
-  const { title, skipLinkText, currentPageText, data, dir } = item;
+  const { title, currentPageText, data, dir } = item;
   const isAmp = false;
 
   return canonicalStories.add(
     title,
-    navigationStory(skipLinkText, currentPageText, data, dir, false, isAmp),
+    navigationStory(currentPageText, data, dir, false, isAmp),
     {
       notes,
     },
@@ -265,7 +256,6 @@ canonicalStories.add('Dropdown menu', dropdownStory(), {
 canonicalStories.add(
   'Igbo with brand',
   navigationStory(
-    navStoriesData[0].skipLinkText,
     navStoriesData[0].currentPageText,
     igboNavData,
     navStoriesData[0].dir,
@@ -284,12 +274,12 @@ const ampStories = storiesOf('Components|Navigation/AMP', module)
   .addDecorator(withServicesKnob());
 
 navStoriesData.map(item => {
-  const { title, skipLinkText, currentPageText, data, dir } = item;
+  const { title, currentPageText, data, dir } = item;
   const isAmp = true;
 
   return ampStories.add(
     title,
-    navigationStory(skipLinkText, currentPageText, data, dir, false, isAmp),
+    navigationStory(currentPageText, data, dir, false, isAmp),
     {
       notes,
     },

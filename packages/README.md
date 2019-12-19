@@ -3,7 +3,9 @@
 NB all Development Dependencies are in the top level package.json, none are in the packages.
 
 ## Documentation index
+
 Please familiarise yourself with our:
+
 - [Code of conduct](https://github.com/bbc/psammead/blob/latest/CODE_OF_CONDUCT.md)
 - [Code Standards and Ways of Working](https://github.com/bbc/psammead/blob/latest/Code-Standards-and-Ways-of-Working.md)
 - [Contributing guidelines](https://github.com/bbc/psammead/blob/latest/CONTRIBUTING.md)
@@ -11,11 +13,14 @@ Please familiarise yourself with our:
 - [Primary README](https://github.com/bbc/psammead/blob/latest/README.md)
 - [Talos (package bumping bot)](https://github.com/bbc/psammead/blob/latest/scripts/talos/README.md)
 - [Use/consumption of Psammead packages guidelines and package list](https://github.com/bbc/psammead/blob/latest/packages/README.md) (you are here)
+- [Things to do when creating a new component](https://github.com/bbc/psammead/blob/latest/Creating-a-new-component.md)
 
 NB there is further documentation colocated with relevant packages and code. The above list is an index of the top-level documentation of our repo (and our sibling repo [Simorgh](https://github.com/bbc/simorgh)).
 
 ## Using/consuming Psammead components
+
 NB the main example of use is this repo's sibling repo [Simorgh](https://github.com/bbc/simorgh).
+
 ### Pre-requisite for use
 
 These components have been tested in an environment which uses [normalize](https://github.com/necolas/normalize.css) and [`box-sizing: border-box`](https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/) for consistent behaviour across browsers. Additionally, many components depend on the BBC Reith font having been defined.
@@ -67,6 +72,7 @@ Or if you're using [styled-components](https://styled-components.com), you can u
 **NOTE**: if you run into issues with CSS not being applied to your components, it is likely that there is a duplicate `styled-components` dependency somewhere in your packages. You can try running [`npm dedupe`](https://www.styled-components.com/docs/faqs#duplicated-module-in-node_modules) in most cases, or [`lerna bootstrap --hoist`](https://www.styled-components.com/docs/faqs#usage-with-lerna) in monorepo setups such as Psammead's. Failing that, make sure your application's `styled-components` dependency is the same version as that in Psammead.
 
 ## List of all packages
+
 ### [Components](./components)
 
 <!-- prettier-ignore -->
@@ -104,8 +110,9 @@ Or if you're using [styled-components](https://styled-components.com), you can u
 ### [Utilities](./utilities)
 
 In order to be added to Psammead, utility packages should:
-* be common requirements of many of the repo's components, or many of the repo's users.
-* contain realistic usage examples.
+
+- be common requirements of many of the repo's components, or many of the repo's users.
+- contain realistic usage examples.
 
 <!-- prettier-ignore -->
 | Package | Version | Dependencies | Peer Dependencies
