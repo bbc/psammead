@@ -11,20 +11,22 @@ exports[`ScriptLink should render correctly 1`] = `
   color: #FFFFFF;
   -webkit-text-decoration: none;
   text-decoration: none;
-  height: 3rem;
-  border: 1px solid #FFFFFF;
+  height: 2.25rem;
+  border: 0.0625rem solid #FFFFFF;
+  margin: 0.25rem;
 }
 
 .c0 > span {
-  margin: 3px;
+  margin: 0.1875rem;
   display: inline-block;
   height: calc(100%);
   padding: 0 1rem;
 }
 
-.c0:hover span {
+.c0:hover span,
+.c0:focus span {
   margin: 0;
-  border: 3px solid white;
+  border: 0.1875rem solid #FFFFFF;
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
@@ -43,7 +45,18 @@ exports[`ScriptLink should render correctly 1`] = `
 
 @media (min-width:25rem) {
   .c0 {
-    line-height: calc(3rem - 8px);
+    line-height: calc(2.25rem - 0.5rem);
+  }
+}
+
+@media (max-width:37.4375rem) {
+  .c0 {
+    height: 2.5rem;
+  }
+
+  .c0 > span {
+    padding: 0 0.75rem;
+    line-height: calc(2.5rem - 0.5rem);
   }
 }
 
