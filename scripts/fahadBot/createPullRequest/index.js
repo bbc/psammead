@@ -16,7 +16,7 @@ const createPullRequest = async () => {
       .post(
         'https://api.github.com/repos/bbc/psammead/pulls',
         {
-          title: 'Medea - Bump dependencies',
+          title: 'fahadBot - Bump dependencies',
           head: `${headBranch}`,
           base: 'latest',
           body: `${getPullRequestBody(branchNames)}`,

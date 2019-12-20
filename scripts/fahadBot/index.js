@@ -3,7 +3,7 @@ const getDependabotPRs = require('./getDependabotPRs');
 
 getDependabotPRs().then(value => {
   const dependabotPRData = JSON.stringify(value);
-  fs.writeFileSync('scripts/medea/PRs.json', dependabotPRData);
+  fs.writeFileSync('scripts/fahadBot/PRs.json', dependabotPRData);
 });
 
 const closePullRequest = require('./closePullRequest');
