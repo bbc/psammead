@@ -4,6 +4,11 @@
 | Version | Description |
 |---------|-------------|
 | 2.1.0 | [PR#2808](https://github.com/bbc/psammead/pull/2819) Dependabot pull request bot |
+| 2.0.36 | [PR#2828](https://github.com/bbc/psammead/pull/2828) Add guide on creating new components |
+| 2.0.35 | [PR#2831](https://github.com/bbc/psammead/pull/2831) Bump Dev Dependencies |
+| 2.0.34 | [PR#2830](https://github.com/bbc/psammead/pull/2830) Talos - Bump Dependencies - @bbc/psammead-image-placeholder, @bbc/psammead-media-indicator |
+| 2.0.33 | [PR#2827](https://github.com/bbc/psammead/pull/2827) Talos - Bump Dependencies - @bbc/psammead-assets |
+| 2.0.32 | [PR#2826](https://github.com/bbc/psammead/pull/2826) Add amp ads boilerplate to psammead-assets |
 | 2.0.31 | [PR#2808](https://github.com/bbc/psammead/pull/2808) Bump Dev Dependencies |
 | 2.0.30 | [PR#2804](https://github.com/bbc/psammead/pull/2804) Talos - Bump Dependencies - @bbc/psammead-calendars |
 | 2.0.29 | [PR#2782](https://github.com/bbc/psammead/pull/2782) Talos - Bump Dependencies - @bbc/psammead-locales |
