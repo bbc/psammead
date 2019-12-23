@@ -231,7 +231,7 @@ const Brand = props => {
           <StyledBrand {...props} />
         )}
         {skipLink}
-        {scriptLink}
+        {scriptLink && <div>{scriptLink}</div>}
       </SvgWrapper>
     </Banner>
   );
