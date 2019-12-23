@@ -1,6 +1,6 @@
 import React, { cloneElement } from 'react';
 import styled, { css } from 'styled-components';
-import { shape, string, bool, func, oneOf } from 'prop-types';
+import { shape, string, bool, func, oneOf, node } from 'prop-types';
 import VisuallyHiddenText from '@bbc/psammead-visually-hidden-text';
 import { navigationIcons } from '@bbc/psammead-assets/svgs';
 import { C_WHITE, C_EBON, C_SHADOW } from '@bbc/psammead-styles/colours';
@@ -26,7 +26,7 @@ const getStyles = dir => {
           padding-${direction}: ${GEL_SPACING};`;
 };
 
-export const Dropdown = styled.div`
+const StyledDropdown = styled.div`
   background-color: ${C_EBON};
   clear: both;
 
@@ -34,7 +34,31 @@ export const Dropdown = styled.div`
     display: none;
     visibility: hidden;
   }
+
+  height: 0;
+  transition: all 0.2s ease-out;
+  transition-timing-function: cubic-bezier(0, 0, 0.58, 1);
+
+  ${({ height, isOpen }) =>
+    isOpen
+      ? `visibility: visible; height: ${height}px;`
+      : `visibility: hidden;`}
 `;
+
+export const Dropdown = ({ isOpen, children }) => {
+  const menuElement = document.getElementById('dropdown-menu');
+  const height = menuElement && menuElement.scrollHeight;
+  return (
+    <StyledDropdown id="dropdown-menu" height={height} isOpen={isOpen}>
+      {children}
+    </StyledDropdown>
+  );
+};
+
+Dropdown.propTypes = {
+  isOpen: bool.isRequired,
+  children: node.isRequired,
+};
 
 export const DropdownUl = styled.ul.attrs({ role: 'list' })`
   list-style-type: none;
