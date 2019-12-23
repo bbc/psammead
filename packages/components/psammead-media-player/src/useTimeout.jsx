@@ -16,7 +16,7 @@ const useTimeout = (callback, iframe, timeout) => {
     return () => {
       clearTimeout(timer.current);
     };
-  }, [iframe]);
+  }, []);
 };
 
 export default useTimeout;
