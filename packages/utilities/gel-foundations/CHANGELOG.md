@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 3.4.2 | [PR#x](https://github.com/bbc/psammead/pull/x) Update line heights for Tamil and Devanagari & Gurmukhi scripts (Long Primer and Body Copy types). |
 | 3.4.1 | [PR#2462](https://github.com/bbc/psammead/pull/2462) Update line heights for Latin with Diacritics. |
 | 3.4.0 | [PR#2169](https://github.com/bbc/psammead/pull/2169) Add generic script exports - cyrillicAndLatin, devanagariAndGurmukhi & noAscendersOrDescenders |
 | 3.3.3 | [PR#1847](https://github.com/bbc/psammead/pull/1847) Fixed Telugu typos |
