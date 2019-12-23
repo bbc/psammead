@@ -38,6 +38,24 @@ exports[`MostReadLink should render ltr correctly 1`] = `
   }
 }
 
+@media (min-width:0rem) {
+  .c0 {
+    padding-right: 0rem;
+  }
+}
+
+@media (min-width:25rem) {
+  .c0 {
+    padding-right: 0rem;
+  }
+}
+
+@media (min-width:80rem) {
+  .c0 {
+    padding-right: 1rem;
+  }
+}
+
 <div
   class="c0"
   dir="ltr"
@@ -86,6 +104,24 @@ exports[`MostReadLink should render rtl correctly 1`] = `
   .c1 {
     font-size: 1.75rem;
     line-height: 2.25rem;
+  }
+}
+
+@media (min-width:0rem) {
+  .c0 {
+    padding-left: 0rem;
+  }
+}
+
+@media (min-width:25rem) {
+  .c0 {
+    padding-left: 0rem;
+  }
+}
+
+@media (min-width:80rem) {
+  .c0 {
+    padding-left: 1rem;
   }
 }
 
@@ -161,6 +197,24 @@ exports[`MostReadLink should render with last updated date correctly 1`] = `
   .c1 {
     font-size: 1.5rem;
     line-height: 1.75rem;
+  }
+}
+
+@media (min-width:0rem) {
+  .c0 {
+    padding-right: 0rem;
+  }
+}
+
+@media (min-width:25rem) {
+  .c0 {
+    padding-right: 0rem;
+  }
+}
+
+@media (min-width:80rem) {
+  .c0 {
+    padding-right: 1rem;
   }
 }
 
