@@ -3,6 +3,10 @@
 <!-- prettier-ignore -->
 | Version       | Description                                                                                                                  |
 | ------------- | ---------------------------------------------------------------------------------------------------------------------------- |
+| 2.4.4 | [PR#2830](https://github.com/bbc/psammead/pull/2830) Talos - Bump Dependencies - @bbc/psammead-play-button |
+| 2.4.3 | [PR#2827](https://github.com/bbc/psammead/pull/2827) Talos - Bump Dependencies - @bbc/psammead-assets |
+| 2.4.2 | [PR#2806](https://github.com/bbc/psammead/pull/2806) Fix StyledPlaceholder cursor when Javascript is disabled |
+| 2.4.1 | [PR#2773](https://github.com/bbc/psammead/pull/2773) Resolve warnings while running unit test |
 | 2.4.0 | [PR#2662](https://github.com/bbc/psammead/pull/2662) Add no JS fallback & `noJsClassName` prop to Canonical MediaPlayer |
 | 2.3.8 | [PR#2708](https://github.com/bbc/psammead/pull/2708) Talos - Bump Dependencies - @bbc/psammead-play-button |
 | 2.3.7 | [PR#2705](https://github.com/bbc/psammead/pull/2705) Talos - Bump Dependencies - @bbc/psammead-assets |

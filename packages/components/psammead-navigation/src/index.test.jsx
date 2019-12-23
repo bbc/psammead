@@ -9,47 +9,68 @@ import {
 import Navigation, { NavigationUl, NavigationLi } from './index';
 import igboNavData from '../testHelpers/igbo';
 
-const NavigationExample = (
-  <Navigation script={latin} skipLinkText="Wụga n’ọdịnaya" service="news">
-    <NavigationUl>
-      {igboNavData.map((item, index) => {
-        const { title, url } = item;
-        const active = index === 0;
+const navigationUlComponent = (
+  <NavigationUl>
+    {igboNavData.map((item, index) => {
+      const { title, url } = item;
+      const active = index === 0;
 
-        return (
-          <NavigationLi
-            key={title}
-            url={url}
-            script={latin}
-            active={active}
-            currentPageText="Current page"
-            service="news"
-            data-navigation="test_navigation"
-          >
-            {title}
-          </NavigationLi>
-        );
-      })}
-    </NavigationUl>
+      return (
+        <NavigationLi
+          key={title}
+          url={url}
+          script={latin}
+          active={active}
+          currentPageText="Current page"
+          service="news"
+          data-navigation="test_navigation"
+        >
+          {title}
+        </NavigationLi>
+      );
+    })}
+  </NavigationUl>
+);
+
+const NavigationExample = (
+  <Navigation script={latin} service="news">
+    {navigationUlComponent}
   </Navigation>
 );
 
 describe('Navigation', () => {
   shouldMatchSnapshot('should render correctly', NavigationExample);
+
+  shouldMatchSnapshot(
+    'should render correctly when isOpen is true',
+    <Navigation script={latin} service="news" isOpen>
+      {navigationUlComponent}
+    </Navigation>,
+  );
+
+  shouldMatchSnapshot(
+    'should render correctly when ampOpenClass prop is provided',
+    <Navigation
+      script={latin}
+      skipLinkText="Wụga n’ọdịnaya"
+      service="news"
+      ampOpenClass="is-open"
+    >
+      {navigationUlComponent}
+    </Navigation>,
+  );
 });
 
 describe('Scrollable Navigation', () => {
-  window.matchMedia = jest.fn().mockImplementation(query => {
-    return {
-      matches: true,
-      media: query,
-      addListener: jest.fn(),
-      removeListener: jest.fn(),
-    };
-  });
+  shouldMatchSnapshot(
+    'should render scrollable Canonical version correctly',
+    <CanonicalScrollableNavigation isScrollable>
+      {NavigationExample}
+    </CanonicalScrollableNavigation>,
+  );
 
   shouldMatchSnapshot(
-    'should render Canonical version correctly',
+    'should render non-scrollable Canonical version correctly',
     <CanonicalScrollableNavigation>
       {NavigationExample}
     </CanonicalScrollableNavigation>,
@@ -57,7 +78,7 @@ describe('Scrollable Navigation', () => {
 
   shouldMatchSnapshot(
     'should render AMP version correctly',
-    <AmpScrollableNavigation>{NavigationExample};</AmpScrollableNavigation>,
+    <AmpScrollableNavigation>{NavigationExample}</AmpScrollableNavigation>,
   );
 });
 

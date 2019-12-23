@@ -11,6 +11,7 @@ const ampBoilerplateExpectedExports = {
   AMP_JS: 'object',
   AMP_LIST_JS: 'object',
   AMP_MUSTACHE_JS: 'object',
+  AMP_ADS_JS: 'object',
 };
 
 const svgsExpectedExports = {

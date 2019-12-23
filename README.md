@@ -21,7 +21,9 @@ Psammead packages are split into:
 - [Utilities](./packages/utilities) - Commonly shared Psammead dependencies, fundamentals to aid building additional GEL-compliant components, and aditional packages for use in building SPAs.
 
 ## Documentation index
+
 Please familiarise yourself with our:
+
 - [Code of conduct](https://github.com/bbc/psammead/blob/latest/CODE_OF_CONDUCT.md)
 - [Code Standards and Ways of Working](https://github.com/bbc/psammead/blob/latest/Code-Standards-and-Ways-of-Working.md)
 - [Contributing guidelines](https://github.com/bbc/psammead/blob/latest/CONTRIBUTING.md)
@@ -29,6 +31,7 @@ Please familiarise yourself with our:
 - [Primary README](https://github.com/bbc/psammead/blob/latest/README.md) (you are here)
 - [Talos (package bumping bot)](https://github.com/bbc/psammead/blob/latest/scripts/talos/README.md)
 - [Use/consumption of Psammead packages guidelines and package list](https://github.com/bbc/psammead/blob/latest/packages/README.md)
+- [Things to do when creating a new component](https://github.com/bbc/psammead/blob/latest/Creating-a-new-component.md)
 
 NB there is further documentation colocated with relevant packages and code. The above list is an index of the top-level documentation of our repo (and our sibling repo [Simorgh](https://github.com/bbc/simorgh)).
 
@@ -81,7 +84,9 @@ npm run build
 ```
 
 ### :computer: Developing with Psammead
+
 <!-- This is both how to develop in psammead and how to use psammead and why is this in the components not packages readme? -->
+
 [Learn how to use Psammead components in your own project.](https://github.com/bbc/psammead/blob/latest/packages/README.md)
 
 ## :bar_chart: Support levels

@@ -18,7 +18,7 @@ const BulletedList = styled.ul.attrs(() => ({
     content: '\u00A0';
     display: inline-block;
     width: ${GEL_SPACING_QUAD};
-    background: url("data:image/svg+xml,%3Csvg height='10' width='10' xmlns='http://www.w3.org/2000/svg'%3E%3Cstyle%3E @media screen and (-ms-high-contrast: active){svg{fill: #fff}}%3C/style%3E%3Ccircle cx='5' cy='5' r='3'%3E%3C/circle%3E%3C/svg%3E")
+    background: url('data:image/svg+xml,%3Csvg%20height%3D%2710%27%20width%3D%2710%27%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%3E%3Cstyle%3E%40media%20screen%20and%20%28-ms-high-contrast%3A%20active%29%7Bsvg%7Bfill%3A%20%23fff%7D%7D%3C%2Fstyle%3E%3Ccircle%20cx%3D%275%27%20cy%3D%275%27%20r%3D%273%27%3E%3C%2Fcircle%3E%3C%2Fsvg%3E')
       no-repeat center;
     ${({ dir }) =>
       dir === 'rtl'
