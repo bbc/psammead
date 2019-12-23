@@ -6,10 +6,10 @@ import { GEL_SPACING_TRPL } from '@bbc/gel-foundations/spacings';
 import {
   GEL_GROUP_5_SCREEN_WIDTH_MIN,
   GEL_GROUP_3_SCREEN_WIDTH_MIN,
-  GEL_GROUP_3_SCREEN_WIDTH_MAX,
   GEL_GROUP_2_SCREEN_WIDTH_MIN,
   GEL_GROUP_2_SCREEN_WIDTH_MAX,
   GEL_GROUP_1_SCREEN_WIDTH_MIN,
+  GEL_GROUP_1_SCREEN_WIDTH_MAX,
   GEL_GROUP_0_SCREEN_WIDTH_MIN,
   GEL_GROUP_0_SCREEN_WIDTH_MAX,
 } from '@bbc/gel-foundations/breakpoints';
@@ -43,7 +43,7 @@ const isOnLeftColumn = ({ listIndex, items }, supportsGrid) =>
     ? listIndex + 1 <= Math.ceil(items.length / 2)
     : (listIndex + 1) % 2 === 1;
 
-const rightColumnHasDoubleDigits = ({ items }) => items.length >= 9;
+const listHasDoubleDigits = ({ items }) => items.length >= 9;
 
 const StyledLink = styled.a`
   ${({ script }) => script && getDoublePica(script)};
@@ -59,45 +59,44 @@ const StyledLink = styled.a`
 `;
 
 const StyledWrapper = styled.div`
-  min-width: ${props => (props.service === 'bengali' ? '1rem' : '3rem')};
+  min-width: ${props => (props.service === 'bengali' ? '1rem' : '2rem')};
 
   @media (min-width: ${GEL_GROUP_0_SCREEN_WIDTH_MIN}) {
-    min-width: ${props =>
-      rightColumnHasDoubleDigits(props) ? '2rem' : 'auto'};
+    min-width: ${props => (listHasDoubleDigits(props) ? '3rem' : 'auto')};
   }
 
   @media (min-width: ${GEL_GROUP_1_SCREEN_WIDTH_MIN}) {
     min-width: ${props =>
-      rightColumnHasDoubleDigits(props)
+      listHasDoubleDigits(props)
         ? isBengali(props.service, '2rem', '3rem')
         : 'auto'};
   }
 
-  @media (min-width: ${GEL_GROUP_2_SCREEN_WIDTH_MIN} and max-width: ${GEL_GROUP_2_SCREEN_WIDTH_MAX}) {
+  @media (min-width: ${GEL_GROUP_2_SCREEN_WIDTH_MIN}) {
     min-width: ${props =>
-      isOnRightColumn(props, false) && rightColumnHasDoubleDigits(props)
+      isOnRightColumn(props, false) && listHasDoubleDigits(props)
         ? isBengali(props.service, '2rem', '3rem')
         : 'auto'};
   }
 
-  @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN} and max-width: ${GEL_GROUP_3_SCREEN_WIDTH_MAX}) {
+  @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
     min-width: ${props =>
-      isOnRightColumn(props, false) && rightColumnHasDoubleDigits(props)
+      isOnRightColumn(props, false) && listHasDoubleDigits(props)
         ? isBengali(props.service, '3rem', '4rem')
         : 'auto'};
   }
 
   @supports (${grid}) {
-    @media (min-width: ${GEL_GROUP_2_SCREEN_WIDTH_MIN} and max-width: ${GEL_GROUP_2_SCREEN_WIDTH_MAX}) {
+    @media (min-width: ${GEL_GROUP_2_SCREEN_WIDTH_MIN}) {
       min-width: ${props =>
-        isOnRightColumn(props, true) && rightColumnHasDoubleDigits(props)
+        isOnRightColumn(props, true) && listHasDoubleDigits(props)
           ? isBengali(props.service, '2rem', '3rem')
           : 'auto'};
     }
 
     @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
       min-width: ${props =>
-        isOnRightColumn(props, true) && rightColumnHasDoubleDigits(props)
+        isOnRightColumn(props, true) && listHasDoubleDigits(props)
           ? isBengali(props.service, '3rem', '4rem')
           : 'auto'};
     }
@@ -105,7 +104,7 @@ const StyledWrapper = styled.div`
 
   @media (min-width: ${GEL_GROUP_5_SCREEN_WIDTH_MIN}) {
     min-width: ${props =>
-      props.listIndex === 4 && rightColumnHasDoubleDigits(props)
+      props.listIndex === 4 && listHasDoubleDigits(props)
         ? isBengali(props.service, '3rem', '4.2rem')
         : 'auto'};
   }
@@ -117,9 +116,7 @@ const StyledItem = styled.div`
 
   /* apply 2rem for left, 0rem for right */
   ${paddingEnd}: ${props =>
-  isOnLeftColumn(props, true) && rightColumnHasDoubleDigits(props)
-    ? '1rem;'
-    : '0rem;'}
+  isOnLeftColumn(props, true) && listHasDoubleDigits(props) ? '1rem;' : '0rem;'}
 
   @media (min-width: ${GEL_GROUP_0_SCREEN_WIDTH_MIN} and max-wdith: ${GEL_GROUP_0_SCREEN_WIDTH_MAX}) {
     ${paddingEnd}: 0rem;
@@ -127,7 +124,7 @@ const StyledItem = styled.div`
 
   @media (min-width: ${GEL_GROUP_2_SCREEN_WIDTH_MIN} and max-width: ${GEL_GROUP_2_SCREEN_WIDTH_MAX}) {
     ${paddingEnd}: ${props =>
-  isOnLeftColumn(props, false) && rightColumnHasDoubleDigits(props)
+  isOnLeftColumn(props, false) && listHasDoubleDigits(props)
     ? '1.5rem;'
     : '0rem;'}
   }
