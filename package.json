@@ -96,7 +96,7 @@
     "glob-loader": "^0.3.0",
     "husky": "^3.1.0",
     "jest": "^24.9.0",
-    "jest-fetch-mock": "^2.1.2",
+    "jest-fetch-mock": "^3.0.0",
     "jest-styled-components": "^6.3.4",
     "json5": "^2.1.1",
     "lerna": "^3.19.0",
