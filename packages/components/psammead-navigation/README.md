@@ -73,6 +73,7 @@ The `@bbc/psammead-navigation` package is a set of two components, `NavigationUl
 | Argument | Type | Required | Default | Example |
 | -------- | ---- | -------- | ------- | ------- |
 | children | node | Yes | N/A | `<DropdownUl><DropdownLi script={latin} service='news' key='sport' url='/sport' active="false"> Sport </DropdownLi></DropdownUl>` |
+| isOpen | bool | Yes | N/A | `false` |
 
 ### DropdownLi
 
@@ -153,7 +154,7 @@ import {
 } from '@bbc/psammead-navigation/dropdown';
 import { latin } from '@bbc/gel-foundations/scripts';
 
-<Dropdown>
+<Dropdown isOpen={isOpen}>
   <DropdownUl>
     <DropdownLi
       script={latin}
