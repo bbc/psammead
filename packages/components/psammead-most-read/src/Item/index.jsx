@@ -6,12 +6,16 @@ import { GEL_SPACING_TRPL } from '@bbc/gel-foundations/spacings';
 import {
   GEL_GROUP_5_SCREEN_WIDTH_MIN,
   GEL_GROUP_3_SCREEN_WIDTH_MIN,
+  GEL_GROUP_3_SCREEN_WIDTH_MAX,
   GEL_GROUP_2_SCREEN_WIDTH_MIN,
+  GEL_GROUP_2_SCREEN_WIDTH_MAX,
   GEL_GROUP_1_SCREEN_WIDTH_MIN,
   GEL_GROUP_0_SCREEN_WIDTH_MIN,
+  GEL_GROUP_0_SCREEN_WIDTH_MAX,
 } from '@bbc/gel-foundations/breakpoints';
 import { C_EBON, C_POSTBOX } from '@bbc/psammead-styles/colours';
 import { scriptPropType } from '@bbc/gel-foundations/prop-types';
+import { grid } from '@bbc/psammead-styles/detection';
 import {
   getSerifLight,
   getSerifMedium,
@@ -55,6 +59,8 @@ const StyledLink = styled.a`
 `;
 
 const StyledWrapper = styled.div`
+  min-width: ${props => (props.service === 'bengali' ? '1rem' : '3rem')};
+
   @media (min-width: ${GEL_GROUP_0_SCREEN_WIDTH_MIN}) {
     min-width: ${props =>
       rightColumnHasDoubleDigits(props) ? '2rem' : 'auto'};
@@ -67,41 +73,22 @@ const StyledWrapper = styled.div`
         : 'auto'};
   }
 
-  @media (min-width: ${GEL_GROUP_2_SCREEN_WIDTH_MIN}) {
+  @media (min-width: ${GEL_GROUP_2_SCREEN_WIDTH_MIN} and max-width: ${GEL_GROUP_2_SCREEN_WIDTH_MAX}) {
     min-width: ${props =>
       isOnRightColumn(props, false) && rightColumnHasDoubleDigits(props)
         ? isBengali(props.service, '2rem', '3rem')
         : 'auto'};
   }
 
-  @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
+  @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN} and max-width: ${GEL_GROUP_3_SCREEN_WIDTH_MAX}) {
     min-width: ${props =>
       isOnRightColumn(props, false) && rightColumnHasDoubleDigits(props)
         ? isBengali(props.service, '3rem', '4rem')
         : 'auto'};
   }
 
-  @media (min-width: ${GEL_GROUP_5_SCREEN_WIDTH_MIN}) {
-    min-width: ${props =>
-      props.listIndex === 4 && rightColumnHasDoubleDigits(props)
-        ? isBengali(props.service, '3rem', '4.2rem')
-        : 'auto'};
-  }
-
-  @supports (display: grid) {
-    @media (min-width: ${GEL_GROUP_0_SCREEN_WIDTH_MIN}) {
-      min-width: ${props =>
-        rightColumnHasDoubleDigits(props) ? '2rem' : 'auto'};
-    }
-
-    @media (min-width: ${GEL_GROUP_1_SCREEN_WIDTH_MIN}) {
-      min-width: ${props =>
-        rightColumnHasDoubleDigits(props)
-          ? isBengali(props.service, '2rem', '3rem')
-          : 'auto'};
-    }
-
-    @media (min-width: ${GEL_GROUP_2_SCREEN_WIDTH_MIN}) {
+  @supports (${grid}) {
+    @media (min-width: ${GEL_GROUP_2_SCREEN_WIDTH_MIN} and max-width: ${GEL_GROUP_2_SCREEN_WIDTH_MAX}) {
       min-width: ${props =>
         isOnRightColumn(props, true) && rightColumnHasDoubleDigits(props)
           ? isBengali(props.service, '2rem', '3rem')
@@ -114,29 +101,31 @@ const StyledWrapper = styled.div`
           ? isBengali(props.service, '3rem', '4rem')
           : 'auto'};
     }
+  }
 
-    @media (min-width: ${GEL_GROUP_5_SCREEN_WIDTH_MIN}) {
-      min-width: ${props =>
-        props.listIndex === 4 && rightColumnHasDoubleDigits(props)
-          ? isBengali(props.service, '3rem', '4.2rem')
-          : 'auto'};
-    }
+  @media (min-width: ${GEL_GROUP_5_SCREEN_WIDTH_MIN}) {
+    min-width: ${props =>
+      props.listIndex === 4 && rightColumnHasDoubleDigits(props)
+        ? isBengali(props.service, '3rem', '4.2rem')
+        : 'auto'};
   }
 `;
 
 const StyledItem = styled.div`
-  ${paddingStart}: 16px;
+  ${paddingStart}: 1rem;
   padding-bottom: ${GEL_SPACING_TRPL};
+
+  /* apply 2rem for left, 0rem for right */
   ${paddingEnd}: ${props =>
   isOnLeftColumn(props, true) && rightColumnHasDoubleDigits(props)
-    ? '2rem;'
+    ? '1rem;'
     : '0rem;'}
 
-  @media (min-width: ${GEL_GROUP_0_SCREEN_WIDTH_MIN}) {
+  @media (min-width: ${GEL_GROUP_0_SCREEN_WIDTH_MIN} and max-wdith: ${GEL_GROUP_0_SCREEN_WIDTH_MAX}) {
     ${paddingEnd}: 0rem;
   }
 
-  @media (min-width: ${GEL_GROUP_2_SCREEN_WIDTH_MIN}) {
+  @media (min-width: ${GEL_GROUP_2_SCREEN_WIDTH_MIN} and max-width: ${GEL_GROUP_2_SCREEN_WIDTH_MAX}) {
     ${paddingEnd}: ${props =>
   isOnLeftColumn(props, false) && rightColumnHasDoubleDigits(props)
     ? '1.5rem;'
@@ -145,24 +134,6 @@ const StyledItem = styled.div`
 
   @media (min-width: ${GEL_GROUP_5_SCREEN_WIDTH_MIN}) {
     ${paddingEnd}: 1rem;
-  }
-
-
-  @supports (display: grid) {
-    @media (min-width: ${GEL_GROUP_0_SCREEN_WIDTH_MIN}) {
-      ${paddingEnd}: 0rem;
-    }
-
-    @media (min-width: ${GEL_GROUP_2_SCREEN_WIDTH_MIN}) {
-      ${paddingEnd}: ${props =>
-  isOnLeftColumn(props, true) && rightColumnHasDoubleDigits(props)
-    ? '1.5rem;'
-    : '0rem;'}
-    }
-
-    @media (min-width: ${GEL_GROUP_5_SCREEN_WIDTH_MIN}) {
-      ${paddingEnd}: 0rem;
-    }
   }
 `;
 
