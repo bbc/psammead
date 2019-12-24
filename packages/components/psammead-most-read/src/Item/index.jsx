@@ -38,9 +38,11 @@ const isOnSecondColumn = ({ listIndex, items }, supportsGrid) =>
 
 const listHasDoubleDigits = ({ items }) => items.length >= 9;
 
+// This checks whether the 2nd column contains a double digit value
 const columnIncludesDoubleDigits = (props, supportsGrid) =>
   isOnSecondColumn(props, supportsGrid) && listHasDoubleDigits(props);
 
+// These default measurements are to be used for 2nd column minimum width.
 const doubleDigitDefault = {
   group0: '2.5rem',
   group1: '2.5rem',
@@ -49,6 +51,7 @@ const doubleDigitDefault = {
   group5: '4.25rem',
 };
 
+// These override measurements are for services with smaller characters and used for 2nd column minimum width.
 const doubleDigitOverride = {
   group0: '2.5rem',
   group1: '2rem',
