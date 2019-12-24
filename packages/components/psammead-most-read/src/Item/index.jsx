@@ -14,7 +14,6 @@ import {
   GEL_GROUP_2_SCREEN_WIDTH_MAX,
   GEL_GROUP_1_SCREEN_WIDTH_MIN,
   GEL_GROUP_1_SCREEN_WIDTH_MAX,
-  GEL_GROUP_0_SCREEN_WIDTH_MIN,
   GEL_GROUP_0_SCREEN_WIDTH_MAX,
 } from '@bbc/gel-foundations/breakpoints';
 import { C_EBON, C_POSTBOX } from '@bbc/psammead-styles/colours';
@@ -31,26 +30,39 @@ const paddingStart = ({ dir }) => `padding-${dir === 'ltr' ? 'left' : 'right'}`;
 // This is to make where the link ends consistent for both columns
 const paddingEnd = ({ dir }) => `padding-${dir === 'ltr' ? 'right' : 'left'}`;
 
-// Bengali uses the Shonar Bangalar font which has smaller glyphs than every other font,
-// hence Bengali has its own special spacings.
-const isBengali = (service, yes, no) => (service === 'bengali' ? yes : no);
-
 // For additional spacing for numerals in the right column because of '10' being double digits
 const isOnSecondColumn = ({ listIndex, items }, supportsGrid) =>
   supportsGrid
     ? listIndex + 1 > Math.ceil(items.length / 2)
     : (listIndex + 1) % 2 === 0;
 
-// To add padding to the right of the link in order to make it consistent with the links in the right column
-const isOnFirstColumn = ({ listIndex, items }, supportsGrid) =>
-  supportsGrid
-    ? listIndex + 1 <= Math.ceil(items.length / 2)
-    : (listIndex + 1) % 2 === 1;
-
 const listHasDoubleDigits = ({ items }) => items.length >= 9;
 
 const columnIncludesDoubleDigits = (props, supportsGrid) =>
   isOnSecondColumn(props, supportsGrid) && listHasDoubleDigits(props);
+
+const doubleDigitDefault = {
+  group0: '2.5rem',
+  group1: '2.5rem',
+  group2: '2.5rem',
+  group3: '4rem',
+  group5: '4.25rem',
+};
+
+const doubleDigitOverride = {
+  group0: '2.5rem',
+  group1: '2rem',
+  group2: '2rem',
+  group3: '3rem',
+  group5: '3rem',
+};
+
+const doubleDigitWidth = ({ service }) => {
+  const overrideService = ['bengali'];
+  return overrideService.includes(service)
+    ? doubleDigitOverride
+    : doubleDigitDefault;
+};
 
 const StyledLink = styled.a`
   ${({ script }) => script && getDoublePica(script)};
@@ -66,46 +78,43 @@ const StyledLink = styled.a`
 `;
 
 const StyledWrapper = styled.div`
-  /* min-width: ${props => (props.service === 'bengali' ? '1rem' : '2rem')}; */
-
-  @media (min-width: ${GEL_GROUP_0_SCREEN_WIDTH_MIN}) and (max-width: ${GEL_GROUP_0_SCREEN_WIDTH_MAX}) {
-    min-width: ${props => (listHasDoubleDigits(props) ? '2rem' : 'auto')};
+  @media (max-width: ${GEL_GROUP_0_SCREEN_WIDTH_MAX}) {
+    min-width: ${props =>
+      listHasDoubleDigits(props) ? doubleDigitWidth(props).group0 : 'auto'};
   }
 
   @media (min-width: ${GEL_GROUP_1_SCREEN_WIDTH_MIN}) and (max-width: ${GEL_GROUP_1_SCREEN_WIDTH_MAX}) {
     min-width: ${props =>
-      listHasDoubleDigits(props)
-        ? isBengali(props.service, '2rem', '3rem')
-        : 'auto'};
+      listHasDoubleDigits(props) ? doubleDigitWidth(props).group1 : 'auto'};
   }
 
+  /* different number order for when css grid is not supported  */
   @media (min-width: ${GEL_GROUP_2_SCREEN_WIDTH_MIN}) and (max-width: ${GEL_GROUP_2_SCREEN_WIDTH_MAX}) {
     min-width: ${props =>
       columnIncludesDoubleDigits(props, false)
-        ? isBengali(props.service, '2rem', '3rem')
+        ? doubleDigitWidth(props).group2
         : 'auto'};
   }
 
   @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) and (max-width: ${GEL_GROUP_4_SCREEN_WIDTH_MAX}) {
     min-width: ${props =>
       columnIncludesDoubleDigits(props, false)
-        ? isBengali(props.service, '3rem', '4rem')
+        ? doubleDigitWidth(props).group3
         : 'auto'};
   }
 
-  /* different number order for when css grid is not supported  */
   @supports (${grid}) {
     @media (min-width: ${GEL_GROUP_2_SCREEN_WIDTH_MIN}) and (max-width: ${GEL_GROUP_2_SCREEN_WIDTH_MAX}) {
       min-width: ${props =>
         columnIncludesDoubleDigits(props, true)
-          ? isBengali(props.service, '2rem', '3rem')
+          ? doubleDigitWidth(props).group2
           : 'auto'};
     }
 
     @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) and (max-width: ${GEL_GROUP_4_SCREEN_WIDTH_MAX}) {
       min-width: ${props =>
         columnIncludesDoubleDigits(props, true)
-          ? isBengali(props.service, '3rem', '4rem')
+          ? doubleDigitWidth(props).group3
           : 'auto'};
     }
   }
@@ -113,7 +122,7 @@ const StyledWrapper = styled.div`
   @media (min-width: ${GEL_GROUP_5_SCREEN_WIDTH_MIN}) {
     min-width: ${props =>
       props.listIndex === 4 && listHasDoubleDigits(props)
-        ? isBengali(props.service, '3rem', '4.2rem')
+        ? doubleDigitWidth(props).group5
         : 'auto'};
   }
 `;
