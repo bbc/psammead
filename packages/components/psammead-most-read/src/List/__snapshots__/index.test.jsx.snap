@@ -23,27 +23,9 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
 }
 
 .c7 {
-  padding-left: 16px;
   padding-bottom: 1.5rem;
-  padding-right: 2rem;
-}
-
-.c10 {
-  padding-left: 16px;
-  padding-bottom: 1.5rem;
-  padding-right: 2rem;
-}
-
-.c13 {
-  padding-left: 16px;
-  padding-bottom: 1.5rem;
-  padding-right: 0rem;
-}
-
-.c15 {
-  padding-left: 16px;
-  padding-bottom: 1.5rem;
-  padding-right: 0rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .c6 {
@@ -156,25 +138,25 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
   }
 }
 
-@media (min-width:0rem) {
+@media (max-width:14.9375rem) {
+  .c5 {
+    min-width: 2.5rem;
+  }
+}
+
+@media (min-width:15rem) and (max-width:24.9375rem) {
   .c5 {
     min-width: 2rem;
   }
 }
 
-@media (min-width:15rem) {
-  .c5 {
-    min-width: 2rem;
-  }
-}
-
-@media (min-width:25rem) {
+@media (min-width:25rem) and (max-width:37.4375rem) {
   .c5 {
     min-width: auto;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width:37.5rem) and (max-width:80rem) {
   .c5 {
     min-width: auto;
   }
@@ -186,25 +168,25 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
   }
 }
 
-@media (min-width:0rem) {
+@media (max-width:14.9375rem) {
+  .c9 {
+    min-width: 2.5rem;
+  }
+}
+
+@media (min-width:15rem) and (max-width:24.9375rem) {
   .c9 {
     min-width: 2rem;
   }
 }
 
-@media (min-width:15rem) {
+@media (min-width:25rem) and (max-width:37.4375rem) {
   .c9 {
     min-width: 2rem;
   }
 }
 
-@media (min-width:25rem) {
-  .c9 {
-    min-width: 2rem;
-  }
-}
-
-@media (min-width:37.5rem) {
+@media (min-width:37.5rem) and (max-width:80rem) {
   .c9 {
     min-width: 3rem;
   }
@@ -216,57 +198,87 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
   }
 }
 
-@media (min-width:0rem) {
-  .c11 {
+@media (max-width:14.9375rem) {
+  .c10 {
+    min-width: 2.5rem;
+  }
+}
+
+@media (min-width:15rem) and (max-width:24.9375rem) {
+  .c10 {
     min-width: 2rem;
   }
 }
 
-@media (min-width:15rem) {
-  .c11 {
-    min-width: 2rem;
-  }
-}
-
-@media (min-width:25rem) {
-  .c11 {
+@media (min-width:25rem) and (max-width:37.4375rem) {
+  .c10 {
     min-width: auto;
   }
 }
 
-@media (min-width:37.5rem) {
-  .c11 {
+@media (min-width:37.5rem) and (max-width:80rem) {
+  .c10 {
     min-width: auto;
   }
 }
 
 @media (min-width:80rem) {
+  .c10 {
+    min-width: 3rem;
+  }
+}
+
+@media (max-width:14.9375rem) {
+  .c11 {
+    min-width: 2.5rem;
+  }
+}
+
+@media (min-width:15rem) and (max-width:24.9375rem) {
+  .c11 {
+    min-width: 2rem;
+  }
+}
+
+@media (min-width:25rem) and (max-width:37.4375rem) {
+  .c11 {
+    min-width: 2rem;
+  }
+}
+
+@media (min-width:37.5rem) and (max-width:80rem) {
   .c11 {
     min-width: 3rem;
   }
 }
 
-@media (min-width:0rem) {
+@media (min-width:80rem) {
+  .c11 {
+    min-width: auto;
+  }
+}
+
+@media (max-width:14.9375rem) {
+  .c12 {
+    min-width: 2.5rem;
+  }
+}
+
+@media (min-width:15rem) and (max-width:24.9375rem) {
   .c12 {
     min-width: 2rem;
   }
 }
 
-@media (min-width:15rem) {
+@media (min-width:25rem) and (max-width:37.4375rem) {
   .c12 {
-    min-width: 2rem;
+    min-width: auto;
   }
 }
 
-@media (min-width:25rem) {
+@media (min-width:37.5rem) and (max-width:80rem) {
   .c12 {
-    min-width: 2rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c12 {
-    min-width: 3rem;
+    min-width: auto;
   }
 }
 
@@ -276,105 +288,9 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
   }
 }
 
-@media (min-width:0rem) {
-  .c14 {
-    min-width: 2rem;
-  }
-}
-
-@media (min-width:15rem) {
-  .c14 {
-    min-width: 2rem;
-  }
-}
-
-@media (min-width:25rem) {
-  .c14 {
-    min-width: auto;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c14 {
-    min-width: auto;
-  }
-}
-
-@media (min-width:80rem) {
-  .c14 {
-    min-width: auto;
-  }
-}
-
-@media (min-width:0rem) {
+@supports (grid-template-columns:fit-content(200px)) {
   .c7 {
-    padding-right: 0rem;
-  }
-}
-
-@media (min-width:25rem) {
-  .c7 {
-    padding-right: 1.5rem;
-  }
-}
-
-@media (min-width:80rem) {
-  .c7 {
-    padding-right: 1rem;
-  }
-}
-
-@media (min-width:0rem) {
-  .c10 {
-    padding-right: 0rem;
-  }
-}
-
-@media (min-width:25rem) {
-  .c10 {
-    padding-right: 0rem;
-  }
-}
-
-@media (min-width:80rem) {
-  .c10 {
-    padding-right: 1rem;
-  }
-}
-
-@media (min-width:0rem) {
-  .c13 {
-    padding-right: 0rem;
-  }
-}
-
-@media (min-width:25rem) {
-  .c13 {
-    padding-right: 0rem;
-  }
-}
-
-@media (min-width:80rem) {
-  .c13 {
-    padding-right: 1rem;
-  }
-}
-
-@media (min-width:0rem) {
-  .c15 {
-    padding-right: 0rem;
-  }
-}
-
-@media (min-width:25rem) {
-  .c15 {
-    padding-right: 1.5rem;
-  }
-}
-
-@media (min-width:80rem) {
-  .c15 {
-    padding-right: 1rem;
+    padding-right: 0;
   }
 }
 
@@ -465,7 +381,7 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
           </span>
         </div>
         <div
-          class="c10"
+          class="c7"
           dir="ltr"
         >
           <a
@@ -529,7 +445,7 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
           </span>
         </div>
         <div
-          class="c10"
+          class="c7"
           dir="ltr"
         >
           <a
@@ -550,7 +466,7 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
         class="c4"
       >
         <div
-          class="c11"
+          class="c10"
           dir="ltr"
         >
           <span
@@ -582,7 +498,7 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
         class="c4"
       >
         <div
-          class="c12"
+          class="c11"
           dir="ltr"
         >
           <span
@@ -593,7 +509,7 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
           </span>
         </div>
         <div
-          class="c13"
+          class="c7"
           dir="ltr"
         >
           <a
@@ -614,7 +530,7 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
         class="c4"
       >
         <div
-          class="c14"
+          class="c12"
           dir="ltr"
         >
           <span
@@ -625,7 +541,7 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
           </span>
         </div>
         <div
-          class="c15"
+          class="c7"
           dir="ltr"
         >
           <a
@@ -646,7 +562,7 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
         class="c4"
       >
         <div
-          class="c12"
+          class="c11"
           dir="ltr"
         >
           <span
@@ -657,39 +573,7 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
           </span>
         </div>
         <div
-          class="c13"
-          dir="ltr"
-        >
-          <a
-            class="c8"
-            href="https://www.bbc.com/bengali/articles/c6p3yp5zzmeo"
-          >
-            ভিসা ফুরিয়ে যাওয়ায় ক্রিকেটার সাইফের জরিমানা
-          </a>
-        </div>
-      </li>
-    </div>
-    <div
-      as="li"
-      class="c3"
-      dir="ltr"
-    >
-      <li
-        class="c4"
-      >
-        <div
-          class="c14"
-          dir="ltr"
-        >
-          <span
-            class="c6"
-            dir="ltr"
-          >
-            ৯
-          </span>
-        </div>
-        <div
-          class="c15"
+          class="c7"
           dir="ltr"
         >
           <a
@@ -717,11 +601,43 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
             class="c6"
             dir="ltr"
           >
+            ৯
+          </span>
+        </div>
+        <div
+          class="c7"
+          dir="ltr"
+        >
+          <a
+            class="c8"
+            href="https://www.bbc.com/bengali/articles/c6p3yp5zzmeo"
+          >
+            ভিসা ফুরিয়ে যাওয়ায় ক্রিকেটার সাইফের জরিমানা
+          </a>
+        </div>
+      </li>
+    </div>
+    <div
+      as="li"
+      class="c3"
+      dir="ltr"
+    >
+      <li
+        class="c4"
+      >
+        <div
+          class="c11"
+          dir="ltr"
+        >
+          <span
+            class="c6"
+            dir="ltr"
+          >
             ১০
           </span>
         </div>
         <div
-          class="c13"
+          class="c7"
           dir="ltr"
         >
           <a
@@ -760,27 +676,9 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
 }
 
 .c7 {
-  padding-left: 16px;
   padding-bottom: 1.5rem;
-  padding-right: 2rem;
-}
-
-.c10 {
-  padding-left: 16px;
-  padding-bottom: 1.5rem;
-  padding-right: 2rem;
-}
-
-.c13 {
-  padding-left: 16px;
-  padding-bottom: 1.5rem;
-  padding-right: 0rem;
-}
-
-.c15 {
-  padding-left: 16px;
-  padding-bottom: 1.5rem;
-  padding-right: 0rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .c6 {
@@ -893,25 +791,25 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
   }
 }
 
-@media (min-width:0rem) {
+@media (max-width:14.9375rem) {
   .c5 {
-    min-width: 2rem;
+    min-width: 2.5rem;
   }
 }
 
-@media (min-width:15rem) {
+@media (min-width:15rem) and (max-width:24.9375rem) {
   .c5 {
-    min-width: 3rem;
+    min-width: 2.5rem;
   }
 }
 
-@media (min-width:25rem) {
+@media (min-width:25rem) and (max-width:37.4375rem) {
   .c5 {
     min-width: auto;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width:37.5rem) and (max-width:80rem) {
   .c5 {
     min-width: auto;
   }
@@ -923,25 +821,25 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
   }
 }
 
-@media (min-width:0rem) {
+@media (max-width:14.9375rem) {
   .c9 {
-    min-width: 2rem;
+    min-width: 2.5rem;
   }
 }
 
-@media (min-width:15rem) {
+@media (min-width:15rem) and (max-width:24.9375rem) {
   .c9 {
-    min-width: 3rem;
+    min-width: 2.5rem;
   }
 }
 
-@media (min-width:25rem) {
+@media (min-width:25rem) and (max-width:37.4375rem) {
   .c9 {
-    min-width: 3rem;
+    min-width: 2.5rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width:37.5rem) and (max-width:80rem) {
   .c9 {
     min-width: 4rem;
   }
@@ -953,165 +851,99 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
   }
 }
 
-@media (min-width:0rem) {
-  .c11 {
-    min-width: 2rem;
+@media (max-width:14.9375rem) {
+  .c10 {
+    min-width: 2.5rem;
   }
 }
 
-@media (min-width:15rem) {
-  .c11 {
-    min-width: 3rem;
+@media (min-width:15rem) and (max-width:24.9375rem) {
+  .c10 {
+    min-width: 2.5rem;
   }
 }
 
-@media (min-width:25rem) {
-  .c11 {
+@media (min-width:25rem) and (max-width:37.4375rem) {
+  .c10 {
     min-width: auto;
   }
 }
 
-@media (min-width:37.5rem) {
-  .c11 {
+@media (min-width:37.5rem) and (max-width:80rem) {
+  .c10 {
     min-width: auto;
   }
 }
 
 @media (min-width:80rem) {
+  .c10 {
+    min-width: 4.25rem;
+  }
+}
+
+@media (max-width:14.9375rem) {
   .c11 {
-    min-width: 4.2rem;
+    min-width: 2.5rem;
   }
 }
 
-@media (min-width:0rem) {
-  .c12 {
-    min-width: 2rem;
+@media (min-width:15rem) and (max-width:24.9375rem) {
+  .c11 {
+    min-width: 2.5rem;
   }
 }
 
-@media (min-width:15rem) {
-  .c12 {
-    min-width: 3rem;
+@media (min-width:25rem) and (max-width:37.4375rem) {
+  .c11 {
+    min-width: 2.5rem;
   }
 }
 
-@media (min-width:25rem) {
-  .c12 {
-    min-width: 3rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c12 {
+@media (min-width:37.5rem) and (max-width:80rem) {
+  .c11 {
     min-width: 4rem;
   }
 }
 
 @media (min-width:80rem) {
+  .c11 {
+    min-width: auto;
+  }
+}
+
+@media (max-width:14.9375rem) {
+  .c12 {
+    min-width: 2.5rem;
+  }
+}
+
+@media (min-width:15rem) and (max-width:24.9375rem) {
+  .c12 {
+    min-width: 2.5rem;
+  }
+}
+
+@media (min-width:25rem) and (max-width:37.4375rem) {
   .c12 {
     min-width: auto;
   }
 }
 
-@media (min-width:0rem) {
-  .c14 {
-    min-width: 2rem;
-  }
-}
-
-@media (min-width:15rem) {
-  .c14 {
-    min-width: 3rem;
-  }
-}
-
-@media (min-width:25rem) {
-  .c14 {
-    min-width: auto;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c14 {
+@media (min-width:37.5rem) and (max-width:80rem) {
+  .c12 {
     min-width: auto;
   }
 }
 
 @media (min-width:80rem) {
-  .c14 {
+  .c12 {
     min-width: auto;
   }
 }
 
-@media (min-width:0rem) {
+@supports (grid-template-columns:fit-content(200px)) {
   .c7 {
-    padding-right: 0rem;
-  }
-}
-
-@media (min-width:25rem) {
-  .c7 {
-    padding-right: 1.5rem;
-  }
-}
-
-@media (min-width:80rem) {
-  .c7 {
-    padding-right: 1rem;
-  }
-}
-
-@media (min-width:0rem) {
-  .c10 {
-    padding-right: 0rem;
-  }
-}
-
-@media (min-width:25rem) {
-  .c10 {
-    padding-right: 0rem;
-  }
-}
-
-@media (min-width:80rem) {
-  .c10 {
-    padding-right: 1rem;
-  }
-}
-
-@media (min-width:0rem) {
-  .c13 {
-    padding-right: 0rem;
-  }
-}
-
-@media (min-width:25rem) {
-  .c13 {
-    padding-right: 0rem;
-  }
-}
-
-@media (min-width:80rem) {
-  .c13 {
-    padding-right: 1rem;
-  }
-}
-
-@media (min-width:0rem) {
-  .c15 {
-    padding-right: 0rem;
-  }
-}
-
-@media (min-width:25rem) {
-  .c15 {
-    padding-right: 1.5rem;
-  }
-}
-
-@media (min-width:80rem) {
-  .c15 {
-    padding-right: 1rem;
+    padding-right: 0;
   }
 }
 
@@ -1202,7 +1034,7 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
           </span>
         </div>
         <div
-          class="c10"
+          class="c7"
           dir="ltr"
         >
           <a
@@ -1266,7 +1098,7 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
           </span>
         </div>
         <div
-          class="c10"
+          class="c7"
           dir="ltr"
         >
           <a
@@ -1287,7 +1119,7 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
         class="c4"
       >
         <div
-          class="c11"
+          class="c10"
           dir="ltr"
         >
           <span
@@ -1319,7 +1151,7 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
         class="c4"
       >
         <div
-          class="c12"
+          class="c11"
           dir="ltr"
         >
           <span
@@ -1330,7 +1162,7 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
           </span>
         </div>
         <div
-          class="c13"
+          class="c7"
           dir="ltr"
         >
           <a
@@ -1351,7 +1183,7 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
         class="c4"
       >
         <div
-          class="c14"
+          class="c12"
           dir="ltr"
         >
           <span
@@ -1362,7 +1194,7 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
           </span>
         </div>
         <div
-          class="c15"
+          class="c7"
           dir="ltr"
         >
           <a
@@ -1383,7 +1215,7 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
         class="c4"
       >
         <div
-          class="c12"
+          class="c11"
           dir="ltr"
         >
           <span
@@ -1394,39 +1226,7 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
           </span>
         </div>
         <div
-          class="c13"
-          dir="ltr"
-        >
-          <a
-            class="c8"
-            href="https://www.bbc.com/burmese/articles/c3w1kwwmm5yo"
-          >
-            အောက်စဖို့ဒ် ဆရာတော် ပါမောက္ခ ဒေါက်တာအရှင်ဓမ္မသာမိ
-          </a>
-        </div>
-      </li>
-    </div>
-    <div
-      as="li"
-      class="c3"
-      dir="ltr"
-    >
-      <li
-        class="c4"
-      >
-        <div
-          class="c14"
-          dir="ltr"
-        >
-          <span
-            class="c6"
-            dir="ltr"
-          >
-            ၉
-          </span>
-        </div>
-        <div
-          class="c15"
+          class="c7"
           dir="ltr"
         >
           <a
@@ -1454,11 +1254,43 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
             class="c6"
             dir="ltr"
           >
+            ၉
+          </span>
+        </div>
+        <div
+          class="c7"
+          dir="ltr"
+        >
+          <a
+            class="c8"
+            href="https://www.bbc.com/burmese/articles/c3w1kwwmm5yo"
+          >
+            အောက်စဖို့ဒ် ဆရာတော် ပါမောက္ခ ဒေါက်တာအရှင်ဓမ္မသာမိ
+          </a>
+        </div>
+      </li>
+    </div>
+    <div
+      as="li"
+      class="c3"
+      dir="ltr"
+    >
+      <li
+        class="c4"
+      >
+        <div
+          class="c11"
+          dir="ltr"
+        >
+          <span
+            class="c6"
+            dir="ltr"
+          >
             ၁၀
           </span>
         </div>
         <div
-          class="c13"
+          class="c7"
           dir="ltr"
         >
           <a
@@ -1497,27 +1329,9 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
 }
 
 .c7 {
-  padding-left: 16px;
   padding-bottom: 1.5rem;
-  padding-right: 2rem;
-}
-
-.c10 {
-  padding-left: 16px;
-  padding-bottom: 1.5rem;
-  padding-right: 2rem;
-}
-
-.c13 {
-  padding-left: 16px;
-  padding-bottom: 1.5rem;
-  padding-right: 0rem;
-}
-
-.c15 {
-  padding-left: 16px;
-  padding-bottom: 1.5rem;
-  padding-right: 0rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .c6 {
@@ -1630,25 +1444,25 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
   }
 }
 
-@media (min-width:0rem) {
+@media (max-width:14.9375rem) {
   .c5 {
-    min-width: 2rem;
+    min-width: 2.5rem;
   }
 }
 
-@media (min-width:15rem) {
+@media (min-width:15rem) and (max-width:24.9375rem) {
   .c5 {
-    min-width: 3rem;
+    min-width: 2.5rem;
   }
 }
 
-@media (min-width:25rem) {
+@media (min-width:25rem) and (max-width:37.4375rem) {
   .c5 {
     min-width: auto;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width:37.5rem) and (max-width:80rem) {
   .c5 {
     min-width: auto;
   }
@@ -1660,25 +1474,25 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
   }
 }
 
-@media (min-width:0rem) {
+@media (max-width:14.9375rem) {
   .c9 {
-    min-width: 2rem;
+    min-width: 2.5rem;
   }
 }
 
-@media (min-width:15rem) {
+@media (min-width:15rem) and (max-width:24.9375rem) {
   .c9 {
-    min-width: 3rem;
+    min-width: 2.5rem;
   }
 }
 
-@media (min-width:25rem) {
+@media (min-width:25rem) and (max-width:37.4375rem) {
   .c9 {
-    min-width: 3rem;
+    min-width: 2.5rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width:37.5rem) and (max-width:80rem) {
   .c9 {
     min-width: 4rem;
   }
@@ -1690,165 +1504,99 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
   }
 }
 
-@media (min-width:0rem) {
-  .c11 {
-    min-width: 2rem;
+@media (max-width:14.9375rem) {
+  .c10 {
+    min-width: 2.5rem;
   }
 }
 
-@media (min-width:15rem) {
-  .c11 {
-    min-width: 3rem;
+@media (min-width:15rem) and (max-width:24.9375rem) {
+  .c10 {
+    min-width: 2.5rem;
   }
 }
 
-@media (min-width:25rem) {
-  .c11 {
+@media (min-width:25rem) and (max-width:37.4375rem) {
+  .c10 {
     min-width: auto;
   }
 }
 
-@media (min-width:37.5rem) {
-  .c11 {
+@media (min-width:37.5rem) and (max-width:80rem) {
+  .c10 {
     min-width: auto;
   }
 }
 
 @media (min-width:80rem) {
+  .c10 {
+    min-width: 4.25rem;
+  }
+}
+
+@media (max-width:14.9375rem) {
   .c11 {
-    min-width: 4.2rem;
+    min-width: 2.5rem;
   }
 }
 
-@media (min-width:0rem) {
-  .c12 {
-    min-width: 2rem;
+@media (min-width:15rem) and (max-width:24.9375rem) {
+  .c11 {
+    min-width: 2.5rem;
   }
 }
 
-@media (min-width:15rem) {
-  .c12 {
-    min-width: 3rem;
+@media (min-width:25rem) and (max-width:37.4375rem) {
+  .c11 {
+    min-width: 2.5rem;
   }
 }
 
-@media (min-width:25rem) {
-  .c12 {
-    min-width: 3rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c12 {
+@media (min-width:37.5rem) and (max-width:80rem) {
+  .c11 {
     min-width: 4rem;
   }
 }
 
 @media (min-width:80rem) {
+  .c11 {
+    min-width: auto;
+  }
+}
+
+@media (max-width:14.9375rem) {
+  .c12 {
+    min-width: 2.5rem;
+  }
+}
+
+@media (min-width:15rem) and (max-width:24.9375rem) {
+  .c12 {
+    min-width: 2.5rem;
+  }
+}
+
+@media (min-width:25rem) and (max-width:37.4375rem) {
   .c12 {
     min-width: auto;
   }
 }
 
-@media (min-width:0rem) {
-  .c14 {
-    min-width: 2rem;
-  }
-}
-
-@media (min-width:15rem) {
-  .c14 {
-    min-width: 3rem;
-  }
-}
-
-@media (min-width:25rem) {
-  .c14 {
-    min-width: auto;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c14 {
+@media (min-width:37.5rem) and (max-width:80rem) {
+  .c12 {
     min-width: auto;
   }
 }
 
 @media (min-width:80rem) {
-  .c14 {
+  .c12 {
     min-width: auto;
   }
 }
 
-@media (min-width:0rem) {
+@supports (grid-template-columns:fit-content(200px)) {
   .c7 {
-    padding-right: 0rem;
-  }
-}
-
-@media (min-width:25rem) {
-  .c7 {
-    padding-right: 1.5rem;
-  }
-}
-
-@media (min-width:80rem) {
-  .c7 {
-    padding-right: 1rem;
-  }
-}
-
-@media (min-width:0rem) {
-  .c10 {
-    padding-right: 0rem;
-  }
-}
-
-@media (min-width:25rem) {
-  .c10 {
-    padding-right: 0rem;
-  }
-}
-
-@media (min-width:80rem) {
-  .c10 {
-    padding-right: 1rem;
-  }
-}
-
-@media (min-width:0rem) {
-  .c13 {
-    padding-right: 0rem;
-  }
-}
-
-@media (min-width:25rem) {
-  .c13 {
-    padding-right: 0rem;
-  }
-}
-
-@media (min-width:80rem) {
-  .c13 {
-    padding-right: 1rem;
-  }
-}
-
-@media (min-width:0rem) {
-  .c15 {
-    padding-right: 0rem;
-  }
-}
-
-@media (min-width:25rem) {
-  .c15 {
-    padding-right: 1.5rem;
-  }
-}
-
-@media (min-width:80rem) {
-  .c15 {
-    padding-right: 1rem;
+    padding-right: 0;
   }
 }
 
@@ -1939,7 +1687,7 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
           </span>
         </div>
         <div
-          class="c10"
+          class="c7"
           dir="ltr"
         >
           <a
@@ -2003,7 +1751,7 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
           </span>
         </div>
         <div
-          class="c10"
+          class="c7"
           dir="ltr"
         >
           <a
@@ -2024,7 +1772,7 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
         class="c4"
       >
         <div
-          class="c11"
+          class="c10"
           dir="ltr"
         >
           <span
@@ -2056,7 +1804,7 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
         class="c4"
       >
         <div
-          class="c12"
+          class="c11"
           dir="ltr"
         >
           <span
@@ -2067,7 +1815,7 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
           </span>
         </div>
         <div
-          class="c13"
+          class="c7"
           dir="ltr"
         >
           <a
@@ -2088,7 +1836,7 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
         class="c4"
       >
         <div
-          class="c14"
+          class="c12"
           dir="ltr"
         >
           <span
@@ -2099,7 +1847,7 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
           </span>
         </div>
         <div
-          class="c15"
+          class="c7"
           dir="ltr"
         >
           <a
@@ -2120,7 +1868,7 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
         class="c4"
       >
         <div
-          class="c12"
+          class="c11"
           dir="ltr"
         >
           <span
@@ -2131,39 +1879,7 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
           </span>
         </div>
         <div
-          class="c13"
-          dir="ltr"
-        >
-          <a
-            class="c8"
-            href="https://www.bbc.com/news/articles/cn7k01xp8kxo"
-          >
-            Could a computer ever create better art than a human?
-          </a>
-        </div>
-      </li>
-    </div>
-    <div
-      as="li"
-      class="c3"
-      dir="ltr"
-    >
-      <li
-        class="c4"
-      >
-        <div
-          class="c14"
-          dir="ltr"
-        >
-          <span
-            class="c6"
-            dir="ltr"
-          >
-            9
-          </span>
-        </div>
-        <div
-          class="c15"
+          class="c7"
           dir="ltr"
         >
           <a
@@ -2191,11 +1907,43 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
             class="c6"
             dir="ltr"
           >
+            9
+          </span>
+        </div>
+        <div
+          class="c7"
+          dir="ltr"
+        >
+          <a
+            class="c8"
+            href="https://www.bbc.com/news/articles/cn7k01xp8kxo"
+          >
+            Could a computer ever create better art than a human?
+          </a>
+        </div>
+      </li>
+    </div>
+    <div
+      as="li"
+      class="c3"
+      dir="ltr"
+    >
+      <li
+        class="c4"
+      >
+        <div
+          class="c11"
+          dir="ltr"
+        >
+          <span
+            class="c6"
+            dir="ltr"
+          >
             10
           </span>
         </div>
         <div
-          class="c13"
+          class="c7"
           dir="ltr"
         >
           <a
@@ -2234,27 +1982,9 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
 }
 
 .c7 {
-  padding-right: 16px;
   padding-bottom: 1.5rem;
-  padding-left: 2rem;
-}
-
-.c10 {
-  padding-right: 16px;
-  padding-bottom: 1.5rem;
-  padding-left: 2rem;
-}
-
-.c13 {
-  padding-right: 16px;
-  padding-bottom: 1.5rem;
-  padding-left: 0rem;
-}
-
-.c15 {
-  padding-right: 16px;
-  padding-bottom: 1.5rem;
-  padding-left: 0rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
 }
 
 .c6 {
@@ -2367,25 +2097,25 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
   }
 }
 
-@media (min-width:0rem) {
+@media (max-width:14.9375rem) {
   .c5 {
-    min-width: 2rem;
+    min-width: 2.5rem;
   }
 }
 
-@media (min-width:15rem) {
+@media (min-width:15rem) and (max-width:24.9375rem) {
   .c5 {
-    min-width: 3rem;
+    min-width: 2.5rem;
   }
 }
 
-@media (min-width:25rem) {
+@media (min-width:25rem) and (max-width:37.4375rem) {
   .c5 {
     min-width: auto;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width:37.5rem) and (max-width:80rem) {
   .c5 {
     min-width: auto;
   }
@@ -2397,25 +2127,25 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
   }
 }
 
-@media (min-width:0rem) {
+@media (max-width:14.9375rem) {
   .c9 {
-    min-width: 2rem;
+    min-width: 2.5rem;
   }
 }
 
-@media (min-width:15rem) {
+@media (min-width:15rem) and (max-width:24.9375rem) {
   .c9 {
-    min-width: 3rem;
+    min-width: 2.5rem;
   }
 }
 
-@media (min-width:25rem) {
+@media (min-width:25rem) and (max-width:37.4375rem) {
   .c9 {
-    min-width: 3rem;
+    min-width: 2.5rem;
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width:37.5rem) and (max-width:80rem) {
   .c9 {
     min-width: 4rem;
   }
@@ -2427,165 +2157,99 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
   }
 }
 
-@media (min-width:0rem) {
-  .c11 {
-    min-width: 2rem;
+@media (max-width:14.9375rem) {
+  .c10 {
+    min-width: 2.5rem;
   }
 }
 
-@media (min-width:15rem) {
-  .c11 {
-    min-width: 3rem;
+@media (min-width:15rem) and (max-width:24.9375rem) {
+  .c10 {
+    min-width: 2.5rem;
   }
 }
 
-@media (min-width:25rem) {
-  .c11 {
+@media (min-width:25rem) and (max-width:37.4375rem) {
+  .c10 {
     min-width: auto;
   }
 }
 
-@media (min-width:37.5rem) {
-  .c11 {
+@media (min-width:37.5rem) and (max-width:80rem) {
+  .c10 {
     min-width: auto;
   }
 }
 
 @media (min-width:80rem) {
+  .c10 {
+    min-width: 4.25rem;
+  }
+}
+
+@media (max-width:14.9375rem) {
   .c11 {
-    min-width: 4.2rem;
+    min-width: 2.5rem;
   }
 }
 
-@media (min-width:0rem) {
-  .c12 {
-    min-width: 2rem;
+@media (min-width:15rem) and (max-width:24.9375rem) {
+  .c11 {
+    min-width: 2.5rem;
   }
 }
 
-@media (min-width:15rem) {
-  .c12 {
-    min-width: 3rem;
+@media (min-width:25rem) and (max-width:37.4375rem) {
+  .c11 {
+    min-width: 2.5rem;
   }
 }
 
-@media (min-width:25rem) {
-  .c12 {
-    min-width: 3rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c12 {
+@media (min-width:37.5rem) and (max-width:80rem) {
+  .c11 {
     min-width: 4rem;
   }
 }
 
 @media (min-width:80rem) {
+  .c11 {
+    min-width: auto;
+  }
+}
+
+@media (max-width:14.9375rem) {
+  .c12 {
+    min-width: 2.5rem;
+  }
+}
+
+@media (min-width:15rem) and (max-width:24.9375rem) {
+  .c12 {
+    min-width: 2.5rem;
+  }
+}
+
+@media (min-width:25rem) and (max-width:37.4375rem) {
   .c12 {
     min-width: auto;
   }
 }
 
-@media (min-width:0rem) {
-  .c14 {
-    min-width: 2rem;
-  }
-}
-
-@media (min-width:15rem) {
-  .c14 {
-    min-width: 3rem;
-  }
-}
-
-@media (min-width:25rem) {
-  .c14 {
-    min-width: auto;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c14 {
+@media (min-width:37.5rem) and (max-width:80rem) {
+  .c12 {
     min-width: auto;
   }
 }
 
 @media (min-width:80rem) {
-  .c14 {
+  .c12 {
     min-width: auto;
   }
 }
 
-@media (min-width:0rem) {
+@supports (grid-template-columns:fit-content(200px)) {
   .c7 {
-    padding-left: 0rem;
-  }
-}
-
-@media (min-width:25rem) {
-  .c7 {
-    padding-left: 1.5rem;
-  }
-}
-
-@media (min-width:80rem) {
-  .c7 {
-    padding-left: 1rem;
-  }
-}
-
-@media (min-width:0rem) {
-  .c10 {
-    padding-left: 0rem;
-  }
-}
-
-@media (min-width:25rem) {
-  .c10 {
-    padding-left: 0rem;
-  }
-}
-
-@media (min-width:80rem) {
-  .c10 {
-    padding-left: 1rem;
-  }
-}
-
-@media (min-width:0rem) {
-  .c13 {
-    padding-left: 0rem;
-  }
-}
-
-@media (min-width:25rem) {
-  .c13 {
-    padding-left: 0rem;
-  }
-}
-
-@media (min-width:80rem) {
-  .c13 {
-    padding-left: 1rem;
-  }
-}
-
-@media (min-width:0rem) {
-  .c15 {
-    padding-left: 0rem;
-  }
-}
-
-@media (min-width:25rem) {
-  .c15 {
-    padding-left: 1.5rem;
-  }
-}
-
-@media (min-width:80rem) {
-  .c15 {
-    padding-left: 1rem;
+    padding-left: 0;
   }
 }
 
@@ -2676,7 +2340,7 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
           </span>
         </div>
         <div
-          class="c10"
+          class="c7"
           dir="rtl"
         >
           <a
@@ -2740,7 +2404,7 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
           </span>
         </div>
         <div
-          class="c10"
+          class="c7"
           dir="rtl"
         >
           <a
@@ -2761,7 +2425,7 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
         class="c4"
       >
         <div
-          class="c11"
+          class="c10"
           dir="rtl"
         >
           <span
@@ -2793,7 +2457,7 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
         class="c4"
       >
         <div
-          class="c12"
+          class="c11"
           dir="rtl"
         >
           <span
@@ -2804,7 +2468,7 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
           </span>
         </div>
         <div
-          class="c13"
+          class="c7"
           dir="rtl"
         >
           <a
@@ -2825,7 +2489,7 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
         class="c4"
       >
         <div
-          class="c14"
+          class="c12"
           dir="rtl"
         >
           <span
@@ -2836,7 +2500,7 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
           </span>
         </div>
         <div
-          class="c15"
+          class="c7"
           dir="rtl"
         >
           <a
@@ -2857,7 +2521,7 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
         class="c4"
       >
         <div
-          class="c12"
+          class="c11"
           dir="rtl"
         >
           <span
@@ -2868,39 +2532,7 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
           </span>
         </div>
         <div
-          class="c13"
-          dir="rtl"
-        >
-          <a
-            class="c8"
-            href="https://www.bbc.com/arabic/articles/c1er5mjnznzo"
-          >
-            لماذا يخجل البعض من اسم قريته في مصر؟
-          </a>
-        </div>
-      </li>
-    </div>
-    <div
-      as="li"
-      class="c3"
-      dir="rtl"
-    >
-      <li
-        class="c4"
-      >
-        <div
-          class="c14"
-          dir="rtl"
-        >
-          <span
-            class="c6"
-            dir="rtl"
-          >
-            ۹
-          </span>
-        </div>
-        <div
-          class="c15"
+          class="c7"
           dir="rtl"
         >
           <a
@@ -2928,11 +2560,43 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
             class="c6"
             dir="rtl"
           >
+            ۹
+          </span>
+        </div>
+        <div
+          class="c7"
+          dir="rtl"
+        >
+          <a
+            class="c8"
+            href="https://www.bbc.com/arabic/articles/c1er5mjnznzo"
+          >
+            لماذا يخجل البعض من اسم قريته في مصر؟
+          </a>
+        </div>
+      </li>
+    </div>
+    <div
+      as="li"
+      class="c3"
+      dir="rtl"
+    >
+      <li
+        class="c4"
+      >
+        <div
+          class="c11"
+          dir="rtl"
+        >
+          <span
+            class="c6"
+            dir="rtl"
+          >
             ۱۰
           </span>
         </div>
         <div
-          class="c13"
+          class="c7"
           dir="rtl"
         >
           <a
