@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { shape, string, oneOf, arrayOf } from 'prop-types';
+import { shape, string, oneOf } from 'prop-types';
 import {
   Burmese,
   Bengali,
@@ -14,7 +14,7 @@ import {
 } from '@bbc/gel-foundations/breakpoints';
 import Grid from '@bbc/psammead-grid';
 import { MostReadLink, MostReadRankWrapper } from '../Item';
-import { itemPropTypes } from '../testHelpers/itemsHelper';
+import { itemsPropTypes } from '../testHelpers/itemsHelper';
 
 const MostReadItemProps = {
   item: true,
@@ -110,19 +110,14 @@ const MostReadList = ({ items, service, script, dir }) => (
   <StyledOl>
     <StyledGrid {...MostReadListProps} dir={dir} items={items}>
       {items.map((item, i) => (
-        <Grid
-          key={Math.random()}
-          {...MostReadItemProps}
-          dir={dir}
-          forwardedAs="li"
-        >
+        <Grid key={item.id} {...MostReadItemProps} dir={dir} forwardedAs="li">
           <StyledLi>
             {renderMostReadRank(service, script, i, items, dir)}
             <MostReadLink
+              dir={dir}
+              item={item}
               service={service}
               script={script}
-              item={item}
-              dir={dir}
             />
           </StyledLi>
         </Grid>
@@ -132,7 +127,7 @@ const MostReadList = ({ items, service, script, dir }) => (
 );
 
 MostReadList.propTypes = {
-  items: arrayOf(itemPropTypes).isRequired,
+  items: itemsPropTypes.isRequired,
   service: string.isRequired,
   script: shape(scriptPropType).isRequired,
   dir: oneOf(['rtl', 'ltr']),

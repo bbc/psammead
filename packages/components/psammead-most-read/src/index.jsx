@@ -1,9 +1,9 @@
 import React from 'react';
-import { arrayOf, oneOf, shape, string } from 'prop-types';
+import { oneOf, shape, string } from 'prop-types';
 import { scriptPropType } from '@bbc/gel-foundations/prop-types';
 import MostReadList from './List';
 import MostReadTitle from './Title';
-import { itemPropTypes } from './testHelpers/itemsHelper';
+import { itemsPropTypes } from './testHelpers/itemsHelper';
 
 const MostRead = ({ script, service, header, items, dir }) => (
   <>
@@ -18,7 +18,7 @@ const MostRead = ({ script, service, header, items, dir }) => (
 );
 
 MostRead.propTypes = {
-  items: arrayOf(itemPropTypes).isRequired,
+  items: itemsPropTypes.isRequired,
   header: string.isRequired,
   service: string.isRequired,
   script: shape(scriptPropType).isRequired,
