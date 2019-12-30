@@ -45,7 +45,7 @@ const StyledDropdown = styled.div`
       : `visibility: hidden;`}
 `;
 
-export const Dropdown = ({ isOpen, children }) => {
+export const CanonicalDropdown = ({ isOpen, children }) => {
   const menuElement = document.getElementById('dropdown-menu');
   const height = menuElement && menuElement.scrollHeight;
   return (
@@ -55,10 +55,20 @@ export const Dropdown = ({ isOpen, children }) => {
   );
 };
 
-Dropdown.propTypes = {
+CanonicalDropdown.propTypes = {
   isOpen: bool.isRequired,
   children: node.isRequired,
 };
+
+export const AmpDropdown = styled.div`
+  background-color: ${C_EBON};
+  clear: both;
+
+  @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
+    display: none;
+    visibility: hidden;
+  }
+`;
 
 export const DropdownUl = styled.ul.attrs({ role: 'list' })`
   list-style-type: none;
