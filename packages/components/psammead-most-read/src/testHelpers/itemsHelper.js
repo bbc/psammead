@@ -9,4 +9,5 @@ export const getItem = service => {
   };
 };
 
-export const getItems = (service = 'news') => Array(10).fill(getItem(service));
+export const getItems = (service = 'news', number) =>
+  Array(number).fill(getItem(service));
