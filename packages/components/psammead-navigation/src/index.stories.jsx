@@ -19,7 +19,7 @@ import Navigation, { NavigationUl, NavigationLi } from './index';
 import {
   CanonicalMenuButton,
   AmpMenuButton,
-  Dropdown,
+  CanonicalDropdown,
   DropdownUl,
   DropdownLi,
 } from './DropdownNavigation';
@@ -187,66 +187,39 @@ const navigationStory = (currentPageText, navData, dir, brand, isAmp) => ({
   );
 };
 
-const dropdownStory = () => ({ dir, script, service }) => (
-  <Dropdown isOpen>
-    <DropdownUl>
-      {pidginNavData.map((item, index) => {
-        const active = index === 3;
-        const { title, url } = item;
-        return (
-          <DropdownLi
-            script={script}
-            service={service}
-            key={title}
-            dir={dir}
-            url={url}
-            active={active}
-            currentPageText="Current page"
-          >
-            {title}
-          </DropdownLi>
-        );
-      })}
-    </DropdownUl>
-  </Dropdown>
-);
-
 const animationStory = () => ({ dir, script, service }) => {
   const isOpen = boolean('Open', false);
   return (
-    <>
-      <Navigation script={script} service={service} dir={dir}>
-        <CanonicalMenuButton
-          announcedText="Menu"
-          isOpen={isOpen}
-          onClick={() => {}}
-          dir={dir}
-          script={script}
-        />
-        <Dropdown isOpen={isOpen}>
-          <DropdownUl>
-            {pidginNavData.map((item, index) => {
-              const active = index === 3;
-              const { title, url } = item;
-              return (
-                <DropdownLi
-                  script={script}
-                  service={service}
-                  key={title}
-                  dir={dir}
-                  url={url}
-                  active={active}
-                  currentPageText="Current page"
-                >
-                  {title}
-                </DropdownLi>
-              );
-            })}
-          </DropdownUl>
-        </Dropdown>
-      </Navigation>
-      <p>Top Story that should be pushed down</p>
-    </>
+    <Navigation script={script} service={service} dir={dir}>
+      <CanonicalMenuButton
+        announcedText="Menu"
+        isOpen={isOpen}
+        onClick={() => {}}
+        dir={dir}
+        script={script}
+      />
+      <CanonicalDropdown isOpen={isOpen}>
+        <DropdownUl>
+          {pidginNavData.map((item, index) => {
+            const active = index === 3;
+            const { title, url } = item;
+            return (
+              <DropdownLi
+                script={script}
+                service={service}
+                key={title}
+                dir={dir}
+                url={url}
+                active={active}
+                currentPageText="Current page"
+              >
+                {title}
+              </DropdownLi>
+            );
+          })}
+        </DropdownUl>
+      </CanonicalDropdown>
+    </Navigation>
   );
 };
 
@@ -288,11 +261,7 @@ canonicalStories.add(
   },
 );
 
-canonicalStories.add('Dropdown menu', dropdownStory(), {
-  notes,
-});
-
-canonicalStories.add('Animation story', animationStory(), {
+canonicalStories.add('Dropdown animation', animationStory(), {
   notes,
 });
 
