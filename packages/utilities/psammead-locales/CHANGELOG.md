@@ -3,7 +3,8 @@
 <!-- prettier-ignore -->
 | Version | Description |
 | ------- | ----------- |
-| 4.0.0 | [PR#2749](https://github.com/bbc/psammead/pull/2749) Use nepali numerals instead of western arabic numerals |
+| 4.1.0 | [PR#x](https://github.com/bbc/psammead/pull/x) Export Nepali numerals. |
+| 4.0.0 | [PR#2749](https://github.com/bbc/psammead/pull/2749) Use nepali numerals instead of western arabic numerals for moment datetime. |
 | 3.0.1 | [PR#2525](https://github.com/bbc/psammead/pull/2525) Disable Chromatic QA running on psammead-locales/moment stories. |
 | 3.0.0 | [PR#2375](https://github.com/bbc/psammead/pull/2375) Removed `fa` locale override and jalaali calendar helper  |
 | 2.23.0 | [PR#2300](https://github.com/bbc/psammead/pull/2300) Add `makeNumeralTranslator` helper |
