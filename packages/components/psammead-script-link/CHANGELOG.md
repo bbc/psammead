@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 1.0.0 | [PR#2853](https://github.com/bbc/psammead/pull/2853) Remove alpha tag after a successful accessibility swarm |
 | 1.0.0-alpha.13 | [PR#2786](https://github.com/bbc/psammead/pull/2786) Add `onClick` prop |
 | 1.0.0-alpha.12 | [PR#2750](https://github.com/bbc/psammead/pull/2750) Add ScriptLink touch area styles |
 | 1.0.0-alpha.11 | [PR#2701](https://github.com/bbc/psammead/pull/2701) Talos - Bump Dependencies - @bbc/psammead-styles |
