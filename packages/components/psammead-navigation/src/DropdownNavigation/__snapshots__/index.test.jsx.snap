@@ -536,6 +536,12 @@ exports[`Dropdown navigation should render correctly 1`] = `
 .c0 {
   background-color: #222222;
   clear: both;
+  height: 0;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+  -webkit-transition-timing-function: cubic-bezier(0,0,0.58,1);
+  transition-timing-function: cubic-bezier(0,0,0.58,1);
+  visibility: hidden;
 }
 
 .c1 {
@@ -600,6 +606,7 @@ exports[`Dropdown navigation should render correctly 1`] = `
 
 <div
   class="c0"
+  id="dropdown-menu"
 >
   <ul
     class="c1"
