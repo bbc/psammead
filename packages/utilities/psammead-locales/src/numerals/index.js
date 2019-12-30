@@ -13,6 +13,7 @@ export const EasternArabic = [
   '۹',
   '۱۰',
 ];
+export const Nepali = ['०', '१', '२', '३', '४', '५', '६', '७', '८', '९', '१०'];
 export const WesternArabic = [
   '0',
   '1',
