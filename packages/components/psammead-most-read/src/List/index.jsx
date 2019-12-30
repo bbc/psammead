@@ -8,41 +8,22 @@ import {
   WesternArabic,
 } from '@bbc/psammead-locales/numerals';
 import { scriptPropType } from '@bbc/gel-foundations/prop-types';
+import {
+  GEL_GROUP_1_SCREEN_WIDTH_MAX,
+  GEL_GROUP_5_SCREEN_WIDTH_MIN,
+} from '@bbc/gel-foundations/breakpoints';
 import Grid from '@bbc/psammead-grid';
-import { MostReadRank, MostReadLink } from '../Item';
+import { MostReadLink, MostReadRankWrapper, itemPropTypes } from '../Item';
 
 const MostReadItemProps = {
-  columns: {
-    group0: 18,
-    group1: 18,
-    group2: 9,
-    group3: 9,
-    group4: 12,
-    group5: 12,
-  },
-};
-
-const MostReadRankProps = {
-  columns: {
-    group0: 2,
-    group1: 2,
-    group2: 2,
-    group3: 2,
-    group4: 2,
-    group5: 2,
-  },
-  item: true,
-};
-
-const MostReadLinkProps = {
   item: true,
   columns: {
-    group0: 16,
-    group1: 16,
-    group2: 7,
-    group3: 7,
-    group4: 10,
-    group5: 10,
+    group0: 6,
+    group1: 6,
+    group2: 3,
+    group3: 3,
+    group4: 4,
+    group5: 4,
   },
 };
 
@@ -50,12 +31,12 @@ const MostReadListProps = {
   enableGelGutters: true,
   enableGelMargins: true,
   columns: {
-    group0: 18,
-    group1: 18,
-    group2: 18,
-    group3: 18,
-    group4: 24,
-    group5: 60,
+    group0: 6,
+    group1: 6,
+    group2: 6,
+    group3: 6,
+    group4: 8,
+    group5: 20,
   },
 };
 
@@ -81,41 +62,74 @@ const StyledOl = styled.ol.attrs({
   padding: 0;
 `;
 
-const renderMostReadRank = (service, script, index) => {
+const StyledLi = styled.li`
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  padding: 0;
+`;
+
+const StyledGrid = styled(Grid)`
+  grid-auto-flow: column;
+  grid-template-rows: repeat(
+    ${props => Math.ceil(props.items.length / 2)},
+    [col-start] auto [col-end]
+  );
+  @media (max-width: ${GEL_GROUP_1_SCREEN_WIDTH_MAX}) {
+    grid-template-rows: repeat(
+      ${props => props.items.length},
+      [col-start] auto [col-end]
+    );
+  }
+  @media (min-width: ${GEL_GROUP_5_SCREEN_WIDTH_MIN}) {
+    grid-auto-flow: row;
+    grid-template-rows: repeat(
+      ${props => Math.floor(props.items.length / 2)},
+      [col-start] auto [col-end]
+    );
+  }
+`;
+
+const renderMostReadRank = (service, script, index, items, dir) => {
   const numerals = serviceNumerals(service);
   const rank = numerals[index + 1];
   return (
-    <MostReadRank service={service} script={script}>
-      {rank}
-    </MostReadRank>
+    <MostReadRankWrapper
+      service={service}
+      script={script}
+      rank={rank}
+      listIndex={index}
+      items={items}
+      dir={dir}
+    />
   );
 };
 
-const renderMostReadLink = (link, service, script, dir) => (
-  <MostReadLink service={service} link={link} script={script} dir={dir} />
+const renderMostReadLink = (service, script, listIndex, items, link, dir) => (
+  <MostReadLink
+    service={service}
+    script={script}
+    listIndex={listIndex}
+    items={items}
+    link={link}
+    dir={dir}
+  />
 );
 
 const MostReadList = ({ items, service, script, dir }) => (
   <StyledOl>
-    <Grid {...MostReadListProps} dir={dir}>
+    <StyledGrid {...MostReadListProps} dir={dir} items={items}>
       {items.map((link, i) => (
         <Grid {...MostReadItemProps} dir={dir} forwardedAs="li">
-          <Grid {...MostReadRankProps} dir={dir}>
-            {renderMostReadRank(service, script, i)}
-          </Grid>
-          <Grid {...MostReadLinkProps} dir={dir}>
-            {renderMostReadLink(link, service, script, dir)}
-          </Grid>
+          <StyledLi item={i}>
+            {renderMostReadRank(service, script, i, items, dir)}
+            {renderMostReadLink(service, script, i, items, link, dir)}
+          </StyledLi>
         </Grid>
       ))}
-    </Grid>
+    </StyledGrid>
   </StyledOl>
 );
-
-export const itemPropTypes = shape({
-  title: string.isRequired,
-  href: string.isRequired,
-});
 
 MostReadList.propTypes = {
   items: arrayOf(itemPropTypes).isRequired,
