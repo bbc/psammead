@@ -48,6 +48,22 @@ Array [
 ]
 `;
 
+exports[`Numeral systems should return Nepali numerals 1`] = `
+Array [
+  "०",
+  "१",
+  "२",
+  "३",
+  "४",
+  "५",
+  "६",
+  "७",
+  "८",
+  "९",
+  "१०",
+]
+`;
+
 exports[`Numeral systems should return WesternArabic numerals 1`] = `
 Array [
   "0",
