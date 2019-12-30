@@ -10,8 +10,8 @@ exports[`AMP Menu Button should render correctly 1`] = `
   position: relative;
   padding: 0;
   margin: 0;
-  border: 0;
   background-color: transparent;
+  border: 0;
   float: left;
   height: 2.75rem;
   width: 2.75rem;
@@ -76,7 +76,7 @@ exports[`AMP Menu Button should render correctly 1`] = `
         class="c0"
         data-amp-bind-aria-expanded="menuState.expanded ? \\"true\\" : \\"false\\""
         dir="ltr"
-        on="tap:AMP.setState({ menuState: { expanded: !menuState.expanded }});"
+        on="tap:AMP.setState({ menuState: { expanded: !menuState.expanded }}),other-element.toggleVisibility"
         type="button"
       >
         <svg
@@ -132,8 +132,8 @@ exports[`AMP Menu Button should render rtl correctly 1`] = `
   position: relative;
   padding: 0;
   margin: 0;
-  border: 0;
   background-color: transparent;
+  border: 0;
   float: right;
   height: 3.125rem;
   width: 3.125rem;
@@ -189,7 +189,7 @@ exports[`AMP Menu Button should render rtl correctly 1`] = `
         class="c0"
         data-amp-bind-aria-expanded="menuState.expanded ? \\"true\\" : \\"false\\""
         dir="rtl"
-        on="tap:AMP.setState({ menuState: { expanded: !menuState.expanded }});"
+        on="tap:AMP.setState({ menuState: { expanded: !menuState.expanded }}),other-element.toggleVisibility"
         type="button"
       >
         <svg
@@ -236,8 +236,8 @@ exports[`Canonical Closed menu button should render correctly 1`] = `
   position: relative;
   padding: 0;
   margin: 0;
-  border: 0;
   background-color: transparent;
+  border: 0;
   float: left;
   height: 2.75rem;
   width: 2.75rem;
@@ -309,8 +309,8 @@ exports[`Canonical Closed menu button should render rtl correctly 1`] = `
   position: relative;
   padding: 0;
   margin: 0;
-  border: 0;
   background-color: transparent;
+  border: 0;
   float: right;
   height: 3.125rem;
   width: 3.125rem;
@@ -382,8 +382,8 @@ exports[`Canonical Open menu button should render correctly 1`] = `
   position: relative;
   padding: 0;
   margin: 0;
-  border: 0;
   background-color: transparent;
+  border: 0;
   float: left;
   height: 2.75rem;
   width: 2.75rem;
@@ -456,8 +456,8 @@ exports[`Canonical Open menu button should render rtl correctly 1`] = `
   position: relative;
   padding: 0;
   margin: 0;
-  border: 0;
   background-color: transparent;
+  border: 0;
   float: right;
   height: 3.125rem;
   width: 3.125rem;

@@ -35,32 +35,28 @@ const dropdownList = (
 
 describe('Canonical', () => {
   describe('Open menu button', () => {
-    it('should call onClose handler when clicked', () => {
-      const mockOnClose = jest.fn();
-      const mockOnOpen = jest.fn();
+    it('should call onClick handler when clicked', () => {
+      const mockOnClick = jest.fn();
       const { container } = render(
         <CanonicalMenuButton
           announcedText="Menu"
-          onOpen={mockOnOpen}
+          onClick={mockOnClick}
           isOpen
-          onClose={mockOnClose}
           script={latin}
         />,
       );
       const menuButton = getByRole(container, 'button');
 
       fireEvent.click(menuButton);
-      expect(mockOnClose).toHaveBeenCalledTimes(1);
-      expect(mockOnOpen).not.toHaveBeenCalled();
+      expect(mockOnClick).toHaveBeenCalledTimes(1);
     });
 
     it('should have aria-expanded set as true', () => {
       const { container } = render(
         <CanonicalMenuButton
           announcedText="Menu"
-          onOpen={() => {}}
+          onClick={() => {}}
           isOpen
-          onClose={() => {}}
           script={latin}
         />,
       );
@@ -72,9 +68,8 @@ describe('Canonical', () => {
       'should render correctly',
       <CanonicalMenuButton
         announcedText="Menu"
-        onOpen={() => {}}
+        onClick={() => {}}
         isOpen
-        onClose={() => {}}
         script={latin}
         dir="ltr"
       />,
@@ -84,9 +79,8 @@ describe('Canonical', () => {
       'should render rtl correctly',
       <CanonicalMenuButton
         announcedText="Menu"
-        onOpen={() => {}}
+        onClick={() => {}}
         isOpen
-        onClose={() => {}}
         script={arabic}
         dir="rtl"
       />,
@@ -94,32 +88,28 @@ describe('Canonical', () => {
   });
 
   describe('Closed menu button', () => {
-    it('should call onOpen handler when clicked', () => {
-      const mockOnClose = jest.fn();
-      const mockOnOpen = jest.fn();
+    it('should call onClick handler when clicked', () => {
+      const mockOnClick = jest.fn();
       const { container } = render(
         <CanonicalMenuButton
           announcedText="Menu"
-          onOpen={mockOnOpen}
+          onClick={mockOnClick}
           isOpen={false}
-          onClose={mockOnClose}
           script={latin}
         />,
       );
       const menuButton = getByRole(container, 'button');
 
       fireEvent.click(menuButton);
-      expect(mockOnOpen).toHaveBeenCalledTimes(1);
-      expect(mockOnClose).not.toHaveBeenCalled();
+      expect(mockOnClick).toHaveBeenCalledTimes(1);
     });
 
     it('should have aria-expanded set as false', () => {
       const { container } = render(
         <CanonicalMenuButton
           announcedText="Menu"
-          onOpen={() => {}}
+          onClick={() => {}}
           isOpen={false}
-          onClose={() => {}}
           script={latin}
         />,
       );
@@ -131,9 +121,8 @@ describe('Canonical', () => {
       'should render correctly',
       <CanonicalMenuButton
         announcedText="Menu"
-        onOpen={() => {}}
+        onClick={() => {}}
         isOpen={false}
-        onClose={() => {}}
         script={latin}
         dir="ltr"
       />,
@@ -143,9 +132,8 @@ describe('Canonical', () => {
       'should render rtl correctly',
       <CanonicalMenuButton
         announcedText="Menu"
-        onOpen={() => {}}
+        onClick={() => {}}
         isOpen={false}
-        onClose={() => {}}
         script={arabic}
         dir="rtl"
       />,
@@ -163,14 +151,19 @@ describe('Dropdown navigation', () => {
 describe('AMP Menu Button', () => {
   shouldMatchSnapshot(
     'should render correctly',
-    <AmpMenuButton announcedText="Menu" onToggle="" script={latin} dir="ltr" />,
+    <AmpMenuButton
+      announcedText="Menu"
+      onToggle="other-element.toggleVisibility"
+      script={latin}
+      dir="ltr"
+    />,
   );
 
   shouldMatchSnapshot(
     'should render rtl correctly',
     <AmpMenuButton
       announcedText="Menu"
-      onToggle=""
+      onToggle="other-element.toggleVisibility"
       script={arabic}
       dir="rtl"
     />,

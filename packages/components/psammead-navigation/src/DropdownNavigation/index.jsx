@@ -142,8 +142,9 @@ const MenuButton = styled(Button)`
   position: relative;
   padding: 0;
   margin: 0;
-  border: 0;
   background-color: transparent;
+  border: 0;
+
   ${({ dir }) => (dir === 'ltr' ? `float: left;` : `float: right;`)}
   ${({ script }) =>
     script &&
@@ -174,14 +175,13 @@ const MenuButton = styled(Button)`
 export const CanonicalMenuButton = ({
   announcedText,
   isOpen,
-  onOpen,
-  onClose,
+  onClick,
   dir,
   script,
 }) => (
   <MenuButton
     aria-label={announcedText}
-    onClick={isOpen ? onClose : onOpen}
+    onClick={onClick}
     aria-expanded={isOpen ? 'true' : 'false'}
     dir={dir}
     script={script}
@@ -192,8 +192,7 @@ export const CanonicalMenuButton = ({
 
 CanonicalMenuButton.propTypes = {
   announcedText: string.isRequired,
-  onOpen: func.isRequired,
-  onClose: func.isRequired,
+  onClick: func.isRequired,
   isOpen: bool.isRequired,
   dir: oneOf(['ltr', 'rtl']),
   script: shape(scriptPropType).isRequired,
@@ -214,7 +213,7 @@ const AmpHead = () => (
 );
 
 const expandedHandler =
-  'tap:AMP.setState({ menuState: { expanded: !menuState.expanded }})';
+  'AMP.setState({ menuState: { expanded: !menuState.expanded }})';
 
 const initialState = { expanded: false };
 
@@ -232,7 +231,7 @@ export const AmpMenuButton = ({ announcedText, onToggle, dir, script }) => (
       aria-label={announcedText}
       aria-expanded="false"
       data-amp-bind-aria-expanded='menuState.expanded ? "true" : "false"'
-      on={`${expandedHandler};${onToggle}`}
+      on={`tap:${expandedHandler},${onToggle}`}
       dir={dir}
       script={script}
     >

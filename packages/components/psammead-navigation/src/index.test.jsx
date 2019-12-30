@@ -33,20 +33,28 @@ const navigationUlComponent = (
 );
 
 const NavigationExample = (
-  <Navigation script={latin} skipLinkText="Wụga n’ọdịnaya" service="news">
+  <Navigation script={latin} service="news">
     {navigationUlComponent}
   </Navigation>
 );
 
 describe('Navigation', () => {
   shouldMatchSnapshot('should render correctly', NavigationExample);
+
   shouldMatchSnapshot(
     'should render correctly when isOpen is true',
+    <Navigation script={latin} service="news" isOpen>
+      {navigationUlComponent}
+    </Navigation>,
+  );
+
+  shouldMatchSnapshot(
+    'should render correctly when ampOpenClass prop is provided',
     <Navigation
       script={latin}
       skipLinkText="Wụga n’ọdịnaya"
       service="news"
-      isOpen
+      ampOpenClass="is-open"
     >
       {navigationUlComponent}
     </Navigation>,
@@ -54,17 +62,15 @@ describe('Navigation', () => {
 });
 
 describe('Scrollable Navigation', () => {
-  window.matchMedia = jest.fn().mockImplementation(query => {
-    return {
-      matches: true,
-      media: query,
-      addListener: jest.fn(),
-      removeListener: jest.fn(),
-    };
-  });
+  shouldMatchSnapshot(
+    'should render scrollable Canonical version correctly',
+    <CanonicalScrollableNavigation isScrollable>
+      {NavigationExample}
+    </CanonicalScrollableNavigation>,
+  );
 
   shouldMatchSnapshot(
-    'should render Canonical version correctly',
+    'should render non-scrollable Canonical version correctly',
     <CanonicalScrollableNavigation>
       {NavigationExample}
     </CanonicalScrollableNavigation>,

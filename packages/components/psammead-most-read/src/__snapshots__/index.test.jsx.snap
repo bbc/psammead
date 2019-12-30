@@ -2,7 +2,11 @@
 
 exports[`MostRead should render with ltr most read with correct dir 1`] = `
 .c2 {
-  display: inline;
+  position: relative;
+}
+
+.c3 {
+  position: relative;
 }
 
 .c8 {
@@ -62,54 +66,6 @@ exports[`MostRead should render with ltr most read with correct dir 1`] = `
   }
 }
 
-@media (max-width:14.9375rem) {
-  .c3 {
-    width: calc(18/18*(100% - 18 * 0.5rem) + 17 * 0.5rem );
-    display: inline-block;
-    vertical-align: top;
-  }
-}
-
-@media (min-width:15rem) and (max-width:24.9375rem) {
-  .c3 {
-    width: calc(18/18*(100% - 18 * 0.5rem) + 17 * 0.5rem );
-    display: inline-block;
-    vertical-align: top;
-  }
-}
-
-@media (min-width:25rem) and (max-width:37.4375rem) {
-  .c3 {
-    width: calc(9/18*(100% - 18 * 0.5rem) + 8 * 0.5rem );
-    display: inline-block;
-    vertical-align: top;
-  }
-}
-
-@media (min-width:37.5rem) and (max-width:62.9375rem) {
-  .c3 {
-    width: calc(9/18*(100% - 18 * 1rem) + 8 * 1rem );
-    display: inline-block;
-    vertical-align: top;
-  }
-}
-
-@media (min-width:63rem) and (max-width:80rem) {
-  .c3 {
-    width: calc(12/24*(100% - 24 * 1rem) + 11 * 1rem );
-    display: inline-block;
-    vertical-align: top;
-  }
-}
-
-@media (min-width:80rem) {
-  .c3 {
-    width: calc(12/60*(100% - 60 * 1rem) + 11 * 1rem );
-    display: inline-block;
-    vertical-align: top;
-  }
-}
-
 @supports (display:grid) {
   .c3 {
     display: grid;
@@ -119,48 +75,48 @@ exports[`MostRead should render with ltr most read with correct dir 1`] = `
 
 @media (max-width:14.9375rem) {
   .c4 {
-    width: calc(11.11111111111111%);
     display: inline-block;
+    width: 11.11111111111111%;
     vertical-align: top;
   }
 }
 
 @media (min-width:15rem) and (max-width:24.9375rem) {
   .c4 {
-    width: calc(11.11111111111111%);
     display: inline-block;
+    width: 11.11111111111111%;
     vertical-align: top;
   }
 }
 
 @media (min-width:25rem) and (max-width:37.4375rem) {
   .c4 {
-    width: calc(22.22222222222222%);
     display: inline-block;
+    width: 22.22222222222222%;
     vertical-align: top;
   }
 }
 
 @media (min-width:37.5rem) and (max-width:62.9375rem) {
   .c4 {
-    width: calc(22.22222222222222%);
     display: inline-block;
+    width: 22.22222222222222%;
     vertical-align: top;
   }
 }
 
 @media (min-width:63rem) and (max-width:80rem) {
   .c4 {
-    width: calc(16.666666666666668%);
     display: inline-block;
+    width: 16.666666666666668%;
     vertical-align: top;
   }
 }
 
 @media (min-width:80rem) {
   .c4 {
-    width: calc(16.666666666666668%);
     display: inline-block;
+    width: 16.666666666666668%;
     vertical-align: top;
   }
 }
@@ -173,48 +129,48 @@ exports[`MostRead should render with ltr most read with correct dir 1`] = `
 
 @media (max-width:14.9375rem) {
   .c6 {
-    width: calc(88.88888888888889%);
     display: inline-block;
+    width: 88.88888888888889%;
     vertical-align: top;
   }
 }
 
 @media (min-width:15rem) and (max-width:24.9375rem) {
   .c6 {
-    width: calc(88.88888888888889%);
     display: inline-block;
+    width: 88.88888888888889%;
     vertical-align: top;
   }
 }
 
 @media (min-width:25rem) and (max-width:37.4375rem) {
   .c6 {
-    width: calc(77.77777777777777%);
     display: inline-block;
+    width: 77.77777777777777%;
     vertical-align: top;
   }
 }
 
 @media (min-width:37.5rem) and (max-width:62.9375rem) {
   .c6 {
-    width: calc(77.77777777777777%);
     display: inline-block;
+    width: 77.77777777777777%;
     vertical-align: top;
   }
 }
 
 @media (min-width:63rem) and (max-width:80rem) {
   .c6 {
-    width: calc(83.33333333333333%);
     display: inline-block;
+    width: 83.33333333333333%;
     vertical-align: top;
   }
 }
 
 @media (min-width:80rem) {
   .c6 {
-    width: calc(83.33333333333333%);
     display: inline-block;
+    width: 83.33333333333333%;
     vertical-align: top;
   }
 }
@@ -321,9 +277,9 @@ exports[`MostRead should render with ltr most read with correct dir 1`] = `
           >
             <a
               class="c8"
-              href="https://www.bbc.co.uk/news/business-43328806"
+              href="https://www.bbc.com/news/articles/cn7k01xp8kxo"
             >
-              John Lewis staff bonus cut again as profits fall
+              Could a computer ever create better art than a human?
             </a>
           </div>
         </div>
@@ -353,9 +309,9 @@ exports[`MostRead should render with ltr most read with correct dir 1`] = `
           >
             <a
               class="c8"
-              href="https://www.bbc.co.uk/news/business-43328806"
+              href="https://www.bbc.com/news/articles/cn7k01xp8kxo"
             >
-              John Lewis staff bonus cut again as profits fall
+              Could a computer ever create better art than a human?
             </a>
           </div>
         </div>
@@ -385,9 +341,9 @@ exports[`MostRead should render with ltr most read with correct dir 1`] = `
           >
             <a
               class="c8"
-              href="https://www.bbc.co.uk/news/business-43328806"
+              href="https://www.bbc.com/news/articles/cn7k01xp8kxo"
             >
-              John Lewis staff bonus cut again as profits fall
+              Could a computer ever create better art than a human?
             </a>
           </div>
         </div>
@@ -417,9 +373,9 @@ exports[`MostRead should render with ltr most read with correct dir 1`] = `
           >
             <a
               class="c8"
-              href="https://www.bbc.co.uk/news/business-43328806"
+              href="https://www.bbc.com/news/articles/cn7k01xp8kxo"
             >
-              John Lewis staff bonus cut again as profits fall
+              Could a computer ever create better art than a human?
             </a>
           </div>
         </div>
@@ -449,9 +405,9 @@ exports[`MostRead should render with ltr most read with correct dir 1`] = `
           >
             <a
               class="c8"
-              href="https://www.bbc.co.uk/news/business-43328806"
+              href="https://www.bbc.com/news/articles/cn7k01xp8kxo"
             >
-              John Lewis staff bonus cut again as profits fall
+              Could a computer ever create better art than a human?
             </a>
           </div>
         </div>
@@ -481,9 +437,9 @@ exports[`MostRead should render with ltr most read with correct dir 1`] = `
           >
             <a
               class="c8"
-              href="https://www.bbc.co.uk/news/business-43328806"
+              href="https://www.bbc.com/news/articles/cn7k01xp8kxo"
             >
-              John Lewis staff bonus cut again as profits fall
+              Could a computer ever create better art than a human?
             </a>
           </div>
         </div>
@@ -513,9 +469,9 @@ exports[`MostRead should render with ltr most read with correct dir 1`] = `
           >
             <a
               class="c8"
-              href="https://www.bbc.co.uk/news/business-43328806"
+              href="https://www.bbc.com/news/articles/cn7k01xp8kxo"
             >
-              John Lewis staff bonus cut again as profits fall
+              Could a computer ever create better art than a human?
             </a>
           </div>
         </div>
@@ -545,9 +501,9 @@ exports[`MostRead should render with ltr most read with correct dir 1`] = `
           >
             <a
               class="c8"
-              href="https://www.bbc.co.uk/news/business-43328806"
+              href="https://www.bbc.com/news/articles/cn7k01xp8kxo"
             >
-              John Lewis staff bonus cut again as profits fall
+              Could a computer ever create better art than a human?
             </a>
           </div>
         </div>
@@ -577,9 +533,9 @@ exports[`MostRead should render with ltr most read with correct dir 1`] = `
           >
             <a
               class="c8"
-              href="https://www.bbc.co.uk/news/business-43328806"
+              href="https://www.bbc.com/news/articles/cn7k01xp8kxo"
             >
-              John Lewis staff bonus cut again as profits fall
+              Could a computer ever create better art than a human?
             </a>
           </div>
         </div>
@@ -609,9 +565,9 @@ exports[`MostRead should render with ltr most read with correct dir 1`] = `
           >
             <a
               class="c8"
-              href="https://www.bbc.co.uk/news/business-43328806"
+              href="https://www.bbc.com/news/articles/cn7k01xp8kxo"
             >
-              John Lewis staff bonus cut again as profits fall
+              Could a computer ever create better art than a human?
             </a>
           </div>
         </div>
@@ -623,7 +579,11 @@ exports[`MostRead should render with ltr most read with correct dir 1`] = `
 
 exports[`MostRead should render with rtl most read with correct dir 1`] = `
 .c2 {
-  display: inline;
+  position: relative;
+}
+
+.c3 {
+  position: relative;
 }
 
 .c8 {
@@ -683,54 +643,6 @@ exports[`MostRead should render with rtl most read with correct dir 1`] = `
   }
 }
 
-@media (max-width:14.9375rem) {
-  .c3 {
-    width: calc(18/18*(100% - 18 * 0.5rem) + 17 * 0.5rem );
-    display: inline-block;
-    vertical-align: top;
-  }
-}
-
-@media (min-width:15rem) and (max-width:24.9375rem) {
-  .c3 {
-    width: calc(18/18*(100% - 18 * 0.5rem) + 17 * 0.5rem );
-    display: inline-block;
-    vertical-align: top;
-  }
-}
-
-@media (min-width:25rem) and (max-width:37.4375rem) {
-  .c3 {
-    width: calc(9/18*(100% - 18 * 0.5rem) + 8 * 0.5rem );
-    display: inline-block;
-    vertical-align: top;
-  }
-}
-
-@media (min-width:37.5rem) and (max-width:62.9375rem) {
-  .c3 {
-    width: calc(9/18*(100% - 18 * 1rem) + 8 * 1rem );
-    display: inline-block;
-    vertical-align: top;
-  }
-}
-
-@media (min-width:63rem) and (max-width:80rem) {
-  .c3 {
-    width: calc(12/24*(100% - 24 * 1rem) + 11 * 1rem );
-    display: inline-block;
-    vertical-align: top;
-  }
-}
-
-@media (min-width:80rem) {
-  .c3 {
-    width: calc(12/60*(100% - 60 * 1rem) + 11 * 1rem );
-    display: inline-block;
-    vertical-align: top;
-  }
-}
-
 @supports (display:grid) {
   .c3 {
     display: grid;
@@ -740,48 +652,48 @@ exports[`MostRead should render with rtl most read with correct dir 1`] = `
 
 @media (max-width:14.9375rem) {
   .c4 {
-    width: calc(11.11111111111111%);
     display: inline-block;
+    width: 11.11111111111111%;
     vertical-align: top;
   }
 }
 
 @media (min-width:15rem) and (max-width:24.9375rem) {
   .c4 {
-    width: calc(11.11111111111111%);
     display: inline-block;
+    width: 11.11111111111111%;
     vertical-align: top;
   }
 }
 
 @media (min-width:25rem) and (max-width:37.4375rem) {
   .c4 {
-    width: calc(22.22222222222222%);
     display: inline-block;
+    width: 22.22222222222222%;
     vertical-align: top;
   }
 }
 
 @media (min-width:37.5rem) and (max-width:62.9375rem) {
   .c4 {
-    width: calc(22.22222222222222%);
     display: inline-block;
+    width: 22.22222222222222%;
     vertical-align: top;
   }
 }
 
 @media (min-width:63rem) and (max-width:80rem) {
   .c4 {
-    width: calc(16.666666666666668%);
     display: inline-block;
+    width: 16.666666666666668%;
     vertical-align: top;
   }
 }
 
 @media (min-width:80rem) {
   .c4 {
-    width: calc(16.666666666666668%);
     display: inline-block;
+    width: 16.666666666666668%;
     vertical-align: top;
   }
 }
@@ -794,48 +706,48 @@ exports[`MostRead should render with rtl most read with correct dir 1`] = `
 
 @media (max-width:14.9375rem) {
   .c6 {
-    width: calc(88.88888888888889%);
     display: inline-block;
+    width: 88.88888888888889%;
     vertical-align: top;
   }
 }
 
 @media (min-width:15rem) and (max-width:24.9375rem) {
   .c6 {
-    width: calc(88.88888888888889%);
     display: inline-block;
+    width: 88.88888888888889%;
     vertical-align: top;
   }
 }
 
 @media (min-width:25rem) and (max-width:37.4375rem) {
   .c6 {
-    width: calc(77.77777777777777%);
     display: inline-block;
+    width: 77.77777777777777%;
     vertical-align: top;
   }
 }
 
 @media (min-width:37.5rem) and (max-width:62.9375rem) {
   .c6 {
-    width: calc(77.77777777777777%);
     display: inline-block;
+    width: 77.77777777777777%;
     vertical-align: top;
   }
 }
 
 @media (min-width:63rem) and (max-width:80rem) {
   .c6 {
-    width: calc(83.33333333333333%);
     display: inline-block;
+    width: 83.33333333333333%;
     vertical-align: top;
   }
 }
 
 @media (min-width:80rem) {
   .c6 {
-    width: calc(83.33333333333333%);
     display: inline-block;
+    width: 83.33333333333333%;
     vertical-align: top;
   }
 }
@@ -942,9 +854,9 @@ exports[`MostRead should render with rtl most read with correct dir 1`] = `
           >
             <a
               class="c8"
-              href="https://www.bbc.com/persian/iran-46965704"
+              href="https://www.bbc.com/arabic/articles/c1er5mjnznzo"
             >
-              ایران از لغو 'رزمایش قطع اینترنت' خبر داد
+              لماذا يخجل البعض من اسم قريته في مصر؟
             </a>
           </div>
         </div>
@@ -974,9 +886,9 @@ exports[`MostRead should render with rtl most read with correct dir 1`] = `
           >
             <a
               class="c8"
-              href="https://www.bbc.com/persian/iran-46965704"
+              href="https://www.bbc.com/arabic/articles/c1er5mjnznzo"
             >
-              ایران از لغو 'رزمایش قطع اینترنت' خبر داد
+              لماذا يخجل البعض من اسم قريته في مصر؟
             </a>
           </div>
         </div>
@@ -1006,9 +918,9 @@ exports[`MostRead should render with rtl most read with correct dir 1`] = `
           >
             <a
               class="c8"
-              href="https://www.bbc.com/persian/iran-46965704"
+              href="https://www.bbc.com/arabic/articles/c1er5mjnznzo"
             >
-              ایران از لغو 'رزمایش قطع اینترنت' خبر داد
+              لماذا يخجل البعض من اسم قريته في مصر؟
             </a>
           </div>
         </div>
@@ -1038,9 +950,9 @@ exports[`MostRead should render with rtl most read with correct dir 1`] = `
           >
             <a
               class="c8"
-              href="https://www.bbc.com/persian/iran-46965704"
+              href="https://www.bbc.com/arabic/articles/c1er5mjnznzo"
             >
-              ایران از لغو 'رزمایش قطع اینترنت' خبر داد
+              لماذا يخجل البعض من اسم قريته في مصر؟
             </a>
           </div>
         </div>
@@ -1070,9 +982,9 @@ exports[`MostRead should render with rtl most read with correct dir 1`] = `
           >
             <a
               class="c8"
-              href="https://www.bbc.com/persian/iran-46965704"
+              href="https://www.bbc.com/arabic/articles/c1er5mjnznzo"
             >
-              ایران از لغو 'رزمایش قطع اینترنت' خبر داد
+              لماذا يخجل البعض من اسم قريته في مصر؟
             </a>
           </div>
         </div>
@@ -1102,9 +1014,9 @@ exports[`MostRead should render with rtl most read with correct dir 1`] = `
           >
             <a
               class="c8"
-              href="https://www.bbc.com/persian/iran-46965704"
+              href="https://www.bbc.com/arabic/articles/c1er5mjnznzo"
             >
-              ایران از لغو 'رزمایش قطع اینترنت' خبر داد
+              لماذا يخجل البعض من اسم قريته في مصر؟
             </a>
           </div>
         </div>
@@ -1134,9 +1046,9 @@ exports[`MostRead should render with rtl most read with correct dir 1`] = `
           >
             <a
               class="c8"
-              href="https://www.bbc.com/persian/iran-46965704"
+              href="https://www.bbc.com/arabic/articles/c1er5mjnznzo"
             >
-              ایران از لغو 'رزمایش قطع اینترنت' خبر داد
+              لماذا يخجل البعض من اسم قريته في مصر؟
             </a>
           </div>
         </div>
@@ -1166,9 +1078,9 @@ exports[`MostRead should render with rtl most read with correct dir 1`] = `
           >
             <a
               class="c8"
-              href="https://www.bbc.com/persian/iran-46965704"
+              href="https://www.bbc.com/arabic/articles/c1er5mjnznzo"
             >
-              ایران از لغو 'رزمایش قطع اینترنت' خبر داد
+              لماذا يخجل البعض من اسم قريته في مصر؟
             </a>
           </div>
         </div>
@@ -1198,9 +1110,9 @@ exports[`MostRead should render with rtl most read with correct dir 1`] = `
           >
             <a
               class="c8"
-              href="https://www.bbc.com/persian/iran-46965704"
+              href="https://www.bbc.com/arabic/articles/c1er5mjnznzo"
             >
-              ایران از لغو 'رزمایش قطع اینترنت' خبر داد
+              لماذا يخجل البعض من اسم قريته في مصر؟
             </a>
           </div>
         </div>
@@ -1230,9 +1142,9 @@ exports[`MostRead should render with rtl most read with correct dir 1`] = `
           >
             <a
               class="c8"
-              href="https://www.bbc.com/persian/iran-46965704"
+              href="https://www.bbc.com/arabic/articles/c1er5mjnznzo"
             >
-              ایران از لغو 'رزمایش قطع اینترنت' خبر داد
+              لماذا يخجل البعض من اسم قريته في مصر؟
             </a>
           </div>
         </div>
