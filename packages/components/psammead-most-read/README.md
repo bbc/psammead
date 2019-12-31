@@ -38,7 +38,7 @@ timestamp: node.isRequired,
 <!-- prettier-ignore -->
 | Argument | Type | Required | Default | Example |
 | -------- | ---- | -------- | ------- | ------- |
-| items | array | yes | N/A | `[{ id: 1, title: 'This is a headline', href: 'https://www.bbc.com', timestamp: <TimestampContainer timestamp={1570031976502} dateTimeFormat="YYYY-MM-DD" prefix="Last updated: " format="LL" script={latin} service='news'/> }]` |
+| items | array | yes | N/A | `[{ id: "89b01387-4f40-8846-a11f-65aeed534da3", title: 'This is a headline', href: 'https://www.bbc.com', timestamp: <TimestampContainer timestamp={1570031976502} dateTimeFormat="YYYY-MM-DD" prefix="Last updated: " format="LL" script={latin} service='news'/> }]` |
 | header | string | yes | N/A | `'Most Read'` |
 | service | string | yes | N/A | `'news'` |
 | script | object | yes | N/A | `{ canon: { groupA: { fontSize: '28', lineHeight: '32',}, groupB: { fontSize: '32', lineHeight: '36', }, groupD: { fontSize: '44', lineHeight: '48', }, }, trafalgar: { groupA: { fontSize: '20', lineHeight: '24', }, groupB: { fontSize: '24', lineHeight: '28', }, groupD: { fontSize: '32', lineHeight: '36', }, }, }` |
@@ -65,13 +65,13 @@ const lastUpdated = (script, service) => (
 
 const items = [
   {
-    id: 1,
+    id: '89b01387-4f40-8846-a11f-65aeed534da3',
     title: 'John Lewis staff bonus cut again as profits fall',
     href: 'https://www.bbc.co.uk/news/business-43328806',
     timestamp: lastUpdated(latin, 'news'),
   },
   {
-    id: 2,
+    id: '89b01387-4f40-8846-a11f-65aeed534da4',
     title: 'John Lewis staff bonus cut again as profits fall',
     href: 'https://www.bbc.co.uk/news/business-43328806',
     timestamp: null,
@@ -94,7 +94,7 @@ const items = [
 <!-- prettier-ignore -->
 | Argument | Type | Required | Default | Example |
 | -------- | ---- | -------- | ------- | ------- |
-| items | array | yes | N/A | `[{ id: 1, title: 'This is a headline', href: 'https://www.bbc.com', timestamp: null }]` |
+| items | array | yes | N/A | `[{ id: '89b01387-4f40-8846-a11f-65aeed534da3', title: 'This is a headline', href: 'https://www.bbc.com', timestamp: null }]` |
 | service | string | yes | N/A | `'news'` |
 | script | object | yes | N/A | `{ canon: { groupA: { fontSize: '28', lineHeight: '32',}, groupB: { fontSize: '32', lineHeight: '36', }, groupD: { fontSize: '44', lineHeight: '48', }, }, trafalgar: { groupA: { fontSize: '20', lineHeight: '24', }, groupB: { fontSize: '24', lineHeight: '28', }, groupD: { fontSize: '32', lineHeight: '36', }, }, }` |
 | dir | string | yes | 'ltr' | `'ltr'`|
@@ -108,13 +108,13 @@ import { latin } from '@bbc/gel-foundations/scripts';
 
 const items = [
   {
-    id: 1,
+    id: '89b01387-4f40-8846-a11f-65aeed534da5',
     title: 'John Lewis staff bonus cut again as profits fall',
     href: 'https://www.bbc.co.uk/news/business-43328806',
     timestamp: null,
   },
   {
-    id: 2,
+    id: '89b01387-4f40-8846-a11f-65aeed534da3',
     title: 'John Lewis staff bonus cut again as profits fall',
     href: 'https://www.bbc.co.uk/news/business-43328806',
     timestamp: null,
@@ -131,7 +131,7 @@ const items = [
 <!-- prettier-ignore -->
 | Argument | Type | Required | Default | Example |
 | -------- | ---- | -------- | ------- | ------- |
-| item | array | yes | N/A | `{ id: 1, title: 'This is a headline', href: 'https://www.bbc.com', timestamp: null }` |
+| item | array | yes | N/A | `{ id: '89b01387-4f40-8846-a11f-65aeed534da3', title: 'This is a headline', href: 'https://www.bbc.com', timestamp: null }` |
 | script | object | yes | N/A | `{ canon: { groupA: { fontSize: '28', lineHeight: '32',}, groupB: { fontSize: '32', lineHeight: '36', }, groupD: { fontSize: '44', lineHeight: '48', }, }, trafalgar: { groupA: { fontSize: '20', lineHeight: '24', }, groupB: { fontSize: '24', lineHeight: '28', }, groupD: { fontSize: '32', lineHeight: '36', }, }, }` |
 | service | string | yes | N/A | `'news'` |
 | dir | oneOf(['rtl', 'ltr}) | yes | 'ltr' | `'ltr'`|
@@ -146,7 +146,7 @@ import { latin } from '@bbc/gel-foundations/scripts';
 import { MostReadLink } from '@bbc/psammead-most-read/Item';
 
 const item = {
-    id: 1,
+    id: '89b01387-4f40-8846-a11f-65aeed534da3',
     title: 'John Lewis staff bonus cut again as profits fall',
     href: 'https://www.bbc.co.uk/news/business-43328806',
     timestamp: null,
@@ -176,7 +176,7 @@ const lastUpdated = (script, service) => (
 );
 
 const item = {
-  id: 1,
+  id: '89b01387-4f40-8846-a11f-65aeed534da3',
   title: 'John Lewis staff bonus cut again as profits fall',
   href: 'https://www.bbc.co.uk/news/business-43328806',
   timestamp: lastUpdated(latin, 'news'),
