@@ -18,6 +18,21 @@ The `MostRead` component is designed to display the most read articles given a d
 
 ## MostRead
 
+id: string.isRequired,
+title: string.isRequired,
+href: string.isRequired,
+timestamp: node.isRequired,
+
+### Item Prop Values
+
+<!-- prettier-ignore -->
+| Argument  | Type   | Required | Default | Example                                |
+| --------- | ------ | -------- | ------- | -------------------------------------- |
+| id        | string | yes      | N/A     | "89b01387-4f40-8846-a11f-65aeed534da3" |
+| title     | string | yes      | N/A     | "People are warned against attending a display in London without a ticket as areas prepare to usher in 2020." |
+| href      | string | yes      | N/A     | "/news/uk-50952973" |
+| timestamp | string | yes      | N/A     | `<TimestampContainer timestamp={1570031976502} dateTimeFormat="YYYY-MM-DD" prefix="Last updated: " format="LL" script={latin} service='news'/>` |
+
 ### Props
 
 <!-- prettier-ignore -->
