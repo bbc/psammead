@@ -23,7 +23,7 @@ The `MostRead` component is designed to display the most read articles given a d
 <!-- prettier-ignore -->
 | Argument | Type | Required | Default | Example |
 | -------- | ---- | -------- | ------- | ------- |
-| items | array | yes | N/A | `[{ id: 1, title: 'This is a headline', href: 'https://www.bbc.com', timestamp: null }]` |
+| items | array | yes | N/A | `[{ id: 1, title: 'This is a headline', href: 'https://www.bbc.com', timestamp: <TimestampContainer timestamp={1570031976502} dateTimeFormat="YYYY-MM-DD" prefix="Last updated: " format="LL" script={latin} service='news'/> }]` |
 | header | string | yes | N/A | `'Most Read'` |
 | service | string | yes | N/A | `'news'` |
 | script | object | yes | N/A | `{ canon: { groupA: { fontSize: '28', lineHeight: '32',}, groupB: { fontSize: '32', lineHeight: '36', }, groupD: { fontSize: '44', lineHeight: '48', }, }, trafalgar: { groupA: { fontSize: '20', lineHeight: '24', }, groupB: { fontSize: '24', lineHeight: '28', }, groupD: { fontSize: '32', lineHeight: '36', }, }, }` |
@@ -34,14 +34,26 @@ The `MostRead` component is designed to display the most read articles given a d
 ```jsx
 import React from 'react';
 import MostRead from '@bbc/psammead-most-read';
+import Timestamp from '@bbc/psammead-timestamp-container';
 import { latin } from '@bbc/gel-foundations/scripts';
+
+const lastUpdated = (script, service) => (
+  <Timestamp
+    timestamp={1570031976502}
+    dateTimeFormat="YYYY-MM-DD"
+    prefix="Last updated: "
+    format="LL"
+    script={script}
+    service={service}
+  />
+);
 
 const items = [
   {
     id: 1,
     title: 'John Lewis staff bonus cut again as profits fall',
     href: 'https://www.bbc.co.uk/news/business-43328806',
-    timestamp: null,
+    timestamp: lastUpdated(latin, 'news'),
   },
   {
     id: 2,
