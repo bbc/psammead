@@ -3,7 +3,7 @@ import { shouldMatchSnapshot } from '@bbc/psammead-test-helpers';
 import Timestamp from '@bbc/psammead-timestamp';
 import { latin, arabic } from '@bbc/gel-foundations/scripts';
 import { MostReadLink, MostReadRank } from '.';
-import { getItem } from '../testHelpers/itemsHelper';
+import { getItem, getItems } from '../testHelpers/itemsHelper';
 
 const lastUpdated = (script, service) => (
   <Timestamp
@@ -24,16 +24,18 @@ describe('MostReadLink', () => {
       service="news"
       script={latin}
       dir="ltr"
+      items={getItems('news', 2)}
     />,
   );
 
   shouldMatchSnapshot(
     'should render rtl correctly',
     <MostReadLink
-      link={getItem('persian')}
-      service="persian"
+      link={getItem('arabic')}
+      service="arabic"
       script={arabic}
       dir="rtl"
+      items={getItems('news', 2)}
     />,
   );
 
@@ -45,6 +47,7 @@ describe('MostReadLink', () => {
       service="news"
       script={latin}
       dir="ltr"
+      items={getItems('news', 2)}
     />,
   );
 });
