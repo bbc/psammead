@@ -1,7 +1,7 @@
 import React from 'react';
 import { TEXT_VARIANTS } from '@bbc/psammead-storybook-helpers';
 import { latin } from '@bbc/gel-foundations/scripts';
-import { shape, string, number, node } from 'prop-types';
+import { shape, string, node } from 'prop-types';
 import Timestamp from '@bbc/psammead-timestamp';
 
 const lastUpdated = (script, service) => (
@@ -31,8 +31,8 @@ export const getItems = (service = 'news', arraySize) =>
   Array.from({ length: arraySize }, () => getItem(service));
 
 export const itemPropTypes = shape({
-  id: number.isRequired,
+  id: string.isRequired,
   title: string.isRequired,
   href: string.isRequired,
-  timestamp: node,
+  timestamp: node.isRequired,
 });
