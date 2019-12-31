@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { shape, string, oneOf } from 'prop-types';
+import { shape, string, oneOf, arrayOf } from 'prop-types';
 import {
   Burmese,
   Bengali,
@@ -14,7 +14,7 @@ import {
 } from '@bbc/gel-foundations/breakpoints';
 import Grid from '@bbc/psammead-grid';
 import { MostReadLink, MostReadRankWrapper } from '../Item';
-import { itemsPropTypes } from '../testHelpers/itemsHelper';
+import { itemPropTypes } from '../testHelpers/itemsHelper';
 
 const MostReadItemProps = {
   item: true,
@@ -127,7 +127,7 @@ const MostReadList = ({ items, service, script, dir }) => (
 );
 
 MostReadList.propTypes = {
-  items: itemsPropTypes.isRequired,
+  items: arrayOf(itemPropTypes).isRequired,
   service: string.isRequired,
   script: shape(scriptPropType).isRequired,
   dir: oneOf(['rtl', 'ltr']),

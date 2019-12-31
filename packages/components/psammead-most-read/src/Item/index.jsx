@@ -1,5 +1,5 @@
 import React from 'react';
-import { shape, string, oneOf, number } from 'prop-types';
+import { shape, string, oneOf, number, arrayOf } from 'prop-types';
 import styled from 'styled-components';
 import { getFoolscap, getDoublePica } from '@bbc/gel-foundations/typography';
 import {
@@ -23,7 +23,7 @@ import {
   getSerifLight,
   getSerifMedium,
 } from '@bbc/psammead-styles/font-styles';
-import { itemPropTypes, itemsPropTypes } from '../testHelpers/itemsHelper';
+import { itemPropTypes } from '../testHelpers/itemsHelper';
 
 // This is to handle the padding between the rank and the link for both ltr and rtl stories.
 const paddingStart = ({ dir }) => `padding-${dir === 'ltr' ? 'left' : 'right'}`;
@@ -185,7 +185,7 @@ MostReadRankWrapper.propTypes = {
   script: shape(scriptPropType).isRequired,
   rank: string,
   listIndex: number.isRequired,
-  items: itemsPropTypes.isRequired,
+  items: arrayOf(itemPropTypes).isRequired,
   dir: oneOf(['rtl', 'ltr']),
 };
 
