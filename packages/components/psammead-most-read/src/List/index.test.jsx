@@ -8,7 +8,7 @@ describe('MostReadList', () => {
   shouldMatchSnapshot(
     'should render with ltr news items with correct dir',
     <MostReadList
-      items={getItems('news')}
+      items={getItems('news', 10)}
       service="news"
       script={latin}
       dir="ltr"
@@ -17,7 +17,7 @@ describe('MostReadList', () => {
   shouldMatchSnapshot(
     'should render with rtl arabic items with correct dir',
     <MostReadList
-      items={getItems('arabic')}
+      items={getItems('arabic', 10)}
       service="arabic"
       script={arabic}
       dir="rtl"
@@ -26,7 +26,7 @@ describe('MostReadList', () => {
   shouldMatchSnapshot(
     'should render with ltr bengali items with correct dir',
     <MostReadList
-      items={getItems('bengali')}
+      items={getItems('bengali', 10)}
       service="bengali"
       script={bengali}
       dir="ltr"
@@ -35,7 +35,7 @@ describe('MostReadList', () => {
   shouldMatchSnapshot(
     'should render with ltr burmese items with correct dir',
     <MostReadList
-      items={getItems('burmese')}
+      items={getItems('burmese', 10)}
       service="burmese"
       script={burmese}
       dir="ltr"
