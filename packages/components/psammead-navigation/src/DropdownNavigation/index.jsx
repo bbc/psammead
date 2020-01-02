@@ -29,6 +29,7 @@ const getStyles = dir => {
 const StyledDropdown = styled.div`
   background-color: ${C_EBON};
   clear: both;
+  overflow: hidden;
 
   @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
     display: none;
