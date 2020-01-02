@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 2.0.41 | [PR#2865](https://github.com/bbc/psammead/pull/2865) Bumping dependencies |
 | 2.0.40 | [PR#2863](https://github.com/bbc/psammead/pull/2863) Talos - Bump Dependencies - @bbc/psammead-calendars |
 | 2.0.39 | [PR#2857](https://github.com/bbc/psammead/pull/2857) Talos - Bump Dependencies - @bbc/psammead-locales |
 | 2.0.38 | [PR#2846](https://github.com/bbc/psammead/pull/2846) Remove package jest-fetch-mock |
