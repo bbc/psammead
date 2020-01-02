@@ -1,53 +1,37 @@
 import React from 'react';
 import { shouldMatchSnapshot } from '@bbc/psammead-test-helpers';
-import Timestamp from '@bbc/psammead-timestamp';
 import { latin, arabic } from '@bbc/gel-foundations/scripts';
 import { MostReadLink, MostReadRank } from '.';
-import { getItem, getItems } from '../testHelpers/itemsHelper';
-
-const lastUpdated = (script, service) => (
-  <Timestamp
-    datetime="2019-03-01T14:00+00:00"
-    script={script}
-    padding={false}
-    service={service}
-  >
-    Last updated: 5th November 2016
-  </Timestamp>
-);
+import { getItem } from '../testHelpers/itemsHelper';
 
 describe('MostReadLink', () => {
   shouldMatchSnapshot(
     'should render ltr correctly',
     <MostReadLink
-      link={getItem('news')}
+      item={getItem('news')}
       service="news"
       script={latin}
       dir="ltr"
-      items={getItems('news', 2)}
     />,
   );
 
   shouldMatchSnapshot(
     'should render rtl correctly',
     <MostReadLink
-      link={getItem('arabic')}
+      item={getItem('arabic')}
       service="arabic"
       script={arabic}
       dir="rtl"
-      items={getItems('news', 2)}
     />,
   );
 
   shouldMatchSnapshot(
     'should render with last updated date correctly',
     <MostReadLink
-      link={getItem('news')}
-      lastUpdated={lastUpdated(latin, 'news')}
+      item={getItem('news', true)}
       service="news"
       script={latin}
       dir="ltr"
-      items={getItems('news', 2)}
     />,
   );
 });
