@@ -13,7 +13,8 @@ import {
   GEL_GROUP_5_SCREEN_WIDTH_MIN,
 } from '@bbc/gel-foundations/breakpoints';
 import Grid from '@bbc/psammead-grid';
-import { MostReadLink, MostReadRankWrapper, itemPropTypes } from '../Item';
+import { MostReadLink, MostReadRankWrapper } from '../Item';
+import { itemPropTypes } from '../testHelpers/itemsHelper';
 
 const MostReadItemProps = {
   item: true,
@@ -105,25 +106,19 @@ const renderMostReadRank = (service, script, index, items, dir) => {
   );
 };
 
-const renderMostReadLink = (service, script, listIndex, items, link, dir) => (
-  <MostReadLink
-    service={service}
-    script={script}
-    listIndex={listIndex}
-    items={items}
-    link={link}
-    dir={dir}
-  />
-);
-
 const MostReadList = ({ items, service, script, dir }) => (
   <StyledOl>
     <StyledGrid {...MostReadListProps} dir={dir} items={items}>
-      {items.map((link, i) => (
-        <Grid {...MostReadItemProps} dir={dir} forwardedAs="li">
-          <StyledLi item={i}>
+      {items.map((item, i) => (
+        <Grid key={item.id} {...MostReadItemProps} dir={dir} forwardedAs="li">
+          <StyledLi>
             {renderMostReadRank(service, script, i, items, dir)}
-            {renderMostReadLink(service, script, i, items, link, dir)}
+            <MostReadLink
+              dir={dir}
+              item={item}
+              service={service}
+              script={script}
+            />
           </StyledLi>
         </Grid>
       ))}

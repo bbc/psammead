@@ -3,7 +3,6 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { withKnobs } from '@storybook/addon-knobs';
 import { withServicesKnob } from '@bbc/psammead-storybook-helpers';
-import Timestamp from '@bbc/psammead-timestamp';
 import MostReadList from './List';
 import MostReadTitle from './Title';
 import { MostReadLink, MostReadRank } from './Item';
@@ -55,35 +54,17 @@ const renderRank = ({ service, script, rank }) => (
   </MostReadRank>
 );
 
-const lastUpdated = (script, service) => (
-  <Timestamp
-    datetime="2019-03-01T14:00+00:00"
-    script={script}
-    padding={false}
-    service={service}
-  >
-    Last updated: 5th November 2016
-  </Timestamp>
-);
-
 storiesOf('Components|MostRead/Item', module)
   .addDecorator(withKnobs)
   .addDecorator(withServicesKnob())
   .add(`MostReadLink`, ({ script, service }) => (
-    <MostReadLink
-      link={getItem(service)}
-      service={service}
-      script={script}
-      items={getItems(service, 2)}
-    />
+    <MostReadLink item={getItem(service)} service={service} script={script} />
   ))
   .add(`MostReadLink with last updated date`, ({ script, service }) => (
     <MostReadLink
-      link={getItem(service)}
-      lastUpdated={lastUpdated(script, service)}
+      item={getItem(service, true)}
       service={service}
       script={script}
-      items={getItems(service, 2)}
     />
   ));
 

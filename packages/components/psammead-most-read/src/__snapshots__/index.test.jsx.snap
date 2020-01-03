@@ -1,6 +1,10 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`MostRead should render with ltr most read with correct dir 1`] = `
+.c2 {
+  position: relative;
+}
+
 .c9 {
   font-size: 1.125rem;
   line-height: 1.375rem;
@@ -36,10 +40,6 @@ exports[`MostRead should render with ltr most read with correct dir 1`] = `
   float: left;
 }
 
-.c2 {
-  position: relative;
-}
-
 .c1 {
   list-style-type: none;
   margin: 0;
@@ -70,6 +70,67 @@ exports[`MostRead should render with ltr most read with correct dir 1`] = `
   font-size: 1.25rem;
   line-height: 1.5rem;
   color: #3F3F42;
+}
+
+@supports (display:grid) {
+  .c2 {
+    display: grid;
+    position: initial;
+  }
+}
+
+@media (max-width:14.9375rem) {
+  .c4 {
+    display: inline-block;
+    width: 100%;
+    vertical-align: top;
+  }
+}
+
+@media (min-width:15rem) and (max-width:24.9375rem) {
+  .c4 {
+    display: inline-block;
+    width: 100%;
+    vertical-align: top;
+  }
+}
+
+@media (min-width:25rem) and (max-width:37.4375rem) {
+  .c4 {
+    display: inline-block;
+    width: 50%;
+    vertical-align: top;
+  }
+}
+
+@media (min-width:37.5rem) and (max-width:62.9375rem) {
+  .c4 {
+    display: inline-block;
+    width: 50%;
+    vertical-align: top;
+  }
+}
+
+@media (min-width:63rem) and (max-width:80rem) {
+  .c4 {
+    display: inline-block;
+    width: 50%;
+    vertical-align: top;
+  }
+}
+
+@media (min-width:80rem) {
+  .c4 {
+    display: inline-block;
+    width: 20%;
+    vertical-align: top;
+  }
+}
+
+@supports (display:grid) {
+  .c4 {
+    display: block;
+  }
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
@@ -253,67 +314,6 @@ exports[`MostRead should render with ltr most read with correct dir 1`] = `
   .c7 {
     font-size: 3.5rem;
     line-height: 3.75rem;
-  }
-}
-
-@supports (display:grid) {
-  .c2 {
-    display: grid;
-    position: initial;
-  }
-}
-
-@media (max-width:14.9375rem) {
-  .c4 {
-    display: inline-block;
-    width: 100%;
-    vertical-align: top;
-  }
-}
-
-@media (min-width:15rem) and (max-width:24.9375rem) {
-  .c4 {
-    display: inline-block;
-    width: 100%;
-    vertical-align: top;
-  }
-}
-
-@media (min-width:25rem) and (max-width:37.4375rem) {
-  .c4 {
-    display: inline-block;
-    width: 50%;
-    vertical-align: top;
-  }
-}
-
-@media (min-width:37.5rem) and (max-width:62.9375rem) {
-  .c4 {
-    display: inline-block;
-    width: 50%;
-    vertical-align: top;
-  }
-}
-
-@media (min-width:63rem) and (max-width:80rem) {
-  .c4 {
-    display: inline-block;
-    width: 50%;
-    vertical-align: top;
-  }
-}
-
-@media (min-width:80rem) {
-  .c4 {
-    display: inline-block;
-    width: 20%;
-    vertical-align: top;
-  }
-}
-
-@supports (display:grid) {
-  .c4 {
-    display: block;
   }
 }
 
@@ -692,6 +692,10 @@ exports[`MostRead should render with ltr most read with correct dir 1`] = `
 `;
 
 exports[`MostRead should render with rtl most read with correct dir 1`] = `
+.c2 {
+  position: relative;
+}
+
 .c9 {
   font-size: 1.5rem;
   line-height: 2rem;
@@ -727,10 +731,6 @@ exports[`MostRead should render with rtl most read with correct dir 1`] = `
   float: right;
 }
 
-.c2 {
-  position: relative;
-}
-
 .c1 {
   list-style-type: none;
   margin: 0;
@@ -761,6 +761,67 @@ exports[`MostRead should render with rtl most read with correct dir 1`] = `
   font-size: 1.5rem;
   line-height: 2.125rem;
   color: #3F3F42;
+}
+
+@supports (display:grid) {
+  .c2 {
+    display: grid;
+    position: initial;
+  }
+}
+
+@media (max-width:14.9375rem) {
+  .c4 {
+    display: inline-block;
+    width: 100%;
+    vertical-align: top;
+  }
+}
+
+@media (min-width:15rem) and (max-width:24.9375rem) {
+  .c4 {
+    display: inline-block;
+    width: 100%;
+    vertical-align: top;
+  }
+}
+
+@media (min-width:25rem) and (max-width:37.4375rem) {
+  .c4 {
+    display: inline-block;
+    width: 50%;
+    vertical-align: top;
+  }
+}
+
+@media (min-width:37.5rem) and (max-width:62.9375rem) {
+  .c4 {
+    display: inline-block;
+    width: 50%;
+    vertical-align: top;
+  }
+}
+
+@media (min-width:63rem) and (max-width:80rem) {
+  .c4 {
+    display: inline-block;
+    width: 50%;
+    vertical-align: top;
+  }
+}
+
+@media (min-width:80rem) {
+  .c4 {
+    display: inline-block;
+    width: 20%;
+    vertical-align: top;
+  }
+}
+
+@supports (display:grid) {
+  .c4 {
+    display: block;
+  }
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
@@ -944,67 +1005,6 @@ exports[`MostRead should render with rtl most read with correct dir 1`] = `
   .c7 {
     font-size: 3.5rem;
     line-height: 3.75rem;
-  }
-}
-
-@supports (display:grid) {
-  .c2 {
-    display: grid;
-    position: initial;
-  }
-}
-
-@media (max-width:14.9375rem) {
-  .c4 {
-    display: inline-block;
-    width: 100%;
-    vertical-align: top;
-  }
-}
-
-@media (min-width:15rem) and (max-width:24.9375rem) {
-  .c4 {
-    display: inline-block;
-    width: 100%;
-    vertical-align: top;
-  }
-}
-
-@media (min-width:25rem) and (max-width:37.4375rem) {
-  .c4 {
-    display: inline-block;
-    width: 50%;
-    vertical-align: top;
-  }
-}
-
-@media (min-width:37.5rem) and (max-width:62.9375rem) {
-  .c4 {
-    display: inline-block;
-    width: 50%;
-    vertical-align: top;
-  }
-}
-
-@media (min-width:63rem) and (max-width:80rem) {
-  .c4 {
-    display: inline-block;
-    width: 50%;
-    vertical-align: top;
-  }
-}
-
-@media (min-width:80rem) {
-  .c4 {
-    display: inline-block;
-    width: 20%;
-    vertical-align: top;
-  }
-}
-
-@supports (display:grid) {
-  .c4 {
-    display: block;
   }
 }
 
