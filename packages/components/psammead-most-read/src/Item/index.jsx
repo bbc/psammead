@@ -1,5 +1,5 @@
 import React from 'react';
-import { shape, string, oneOf, arrayOf, number, node } from 'prop-types';
+import { shape, string, oneOf, number, arrayOf } from 'prop-types';
 import styled from 'styled-components';
 import { getFoolscap, getDoublePica } from '@bbc/gel-foundations/typography';
 import {
@@ -23,6 +23,7 @@ import {
   getSerifLight,
   getSerifMedium,
 } from '@bbc/psammead-styles/font-styles';
+import { itemPropTypes } from '../testHelpers/itemsHelper';
 
 // This is to handle the padding between the rank and the link for both ltr and rtl stories.
 const paddingStart = ({ dir }) => `padding-${dir === 'ltr' ? 'left' : 'right'}`;
@@ -149,6 +150,16 @@ export const MostReadRank = styled.span`
   float: ${props => (props.dir === 'rtl' ? 'right' : 'left')};
 `;
 
+MostReadRank.propTypes = {
+  service: string.isRequired,
+  script: shape(scriptPropType).isRequired,
+  dir: oneOf(['rtl', 'ltr']),
+};
+
+MostReadRank.defaultProps = {
+  dir: 'ltr',
+};
+
 export const MostReadRankWrapper = ({
   service,
   script,
@@ -169,38 +180,6 @@ export const MostReadRankWrapper = ({
   </StyledWrapper>
 );
 
-export const MostReadLink = ({
-  service,
-  script,
-  lastUpdated,
-  listIndex,
-  items,
-  link: { title, href },
-  dir,
-}) => (
-  <StyledItem dir={dir} listIndex={listIndex} items={items}>
-    <StyledLink href={href} script={script} service={service}>
-      {title}
-    </StyledLink>
-    {lastUpdated}
-  </StyledItem>
-);
-
-MostReadRank.propTypes = {
-  service: string.isRequired,
-  script: shape(scriptPropType).isRequired,
-  dir: oneOf(['rtl', 'ltr']),
-};
-
-MostReadRank.defaultProps = {
-  dir: 'ltr',
-};
-
-export const itemPropTypes = shape({
-  title: string.isRequired,
-  href: string.isRequired,
-});
-
 MostReadRankWrapper.propTypes = {
   service: string.isRequired,
   script: shape(scriptPropType).isRequired,
@@ -215,22 +194,22 @@ MostReadRankWrapper.defaultProps = {
   dir: 'ltr',
 };
 
+export const MostReadLink = ({ item, dir, service, script }) => (
+  <StyledItem dir={dir}>
+    <StyledLink href={item.href} script={script} service={service}>
+      {item.title}
+    </StyledLink>
+    {item.timestamp}
+  </StyledItem>
+);
+
 MostReadLink.propTypes = {
+  dir: oneOf(['rtl', 'ltr']),
+  item: itemPropTypes.isRequired,
   service: string.isRequired,
   script: shape(scriptPropType).isRequired,
-  lastUpdated: node,
-  listIndex: number,
-  items: arrayOf(itemPropTypes),
-  link: shape({
-    title: string.isRequired,
-    href: string.isRequired,
-  }).isRequired,
-  dir: oneOf(['rtl', 'ltr']),
 };
 
 MostReadLink.defaultProps = {
-  lastUpdated: null,
-  listIndex: 0,
-  items: null,
   dir: 'ltr',
 };

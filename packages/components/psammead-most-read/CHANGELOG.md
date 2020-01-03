@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 0.4.0-alpha.1 | [PR#2860](https://github.com/bbc/psammead/pull/2717) Update props for MostReadItem and update Readme |
 | 0.3.0-alpha.1 | [PR#2717](https://github.com/bbc/psammead/pull/2717) Update MostReadList with UX changes and various fixes |
 | 0.2.1-alpha.3 | [PR#2797](https://github.com/bbc/psammead/pull/2797) Import grid from psammead-grid |
 | 0.2.1-alpha.2 | [PR#2763](https://github.com/bbc/psammead/pull/2763) Use article paths from psammead-storybook-helpers |
