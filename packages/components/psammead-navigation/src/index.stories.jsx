@@ -191,13 +191,6 @@ const animationStory = () => ({ dir, script, service }) => {
   const isOpen = boolean('Open', false);
   return (
     <Navigation script={script} service={service} dir={dir}>
-      <CanonicalMenuButton
-        announcedText="Menu"
-        isOpen={isOpen}
-        onClick={() => {}}
-        dir={dir}
-        script={script}
-      />
       <CanonicalDropdown isOpen={isOpen}>
         <DropdownUl>
           {pidginNavData.map((item, index) => {

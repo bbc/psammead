@@ -520,7 +520,7 @@ exports[`Canonical Open menu button should render rtl correctly 1`] = `
 </button>
 `;
 
-exports[`Dropdown navigation should render correctly 1`] = `
+exports[`Dropdown navigation should render correctly when closed 1`] = `
 .c5 {
   -webkit-clip-path: inset(100%);
   clip-path: inset(100%);
@@ -536,6 +536,7 @@ exports[`Dropdown navigation should render correctly 1`] = `
 .c0 {
   background-color: #222222;
   clear: both;
+  overflow: hidden;
   height: 0;
   -webkit-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
@@ -590,6 +591,13 @@ exports[`Dropdown navigation should render correctly 1`] = `
   }
 }
 
+@media (prefers-reduced-motion:reduce) {
+  .c0 {
+    -webkit-transition: none;
+    transition: none;
+  }
+}
+
 @media (min-width:20rem) and (max-width:37.4375rem) {
   .c3 {
     font-size: 1rem;
@@ -606,7 +614,223 @@ exports[`Dropdown navigation should render correctly 1`] = `
 
 <div
   class="c0"
-  id="dropdown-menu"
+  height="0"
+>
+  <ul
+    class="c1"
+    role="list"
+  >
+    <li
+      class="c2"
+      role="listitem"
+    >
+      <a
+        class="c3"
+        href="/pidgin"
+      >
+        Home
+      </a>
+    </li>
+    <li
+      class="c2"
+      role="listitem"
+    >
+      <a
+        class="c3"
+        href="/pidgin/topics/3d5d5e30-dd50-4041-96d5-c970b20005b9"
+      >
+        Nigeria
+      </a>
+    </li>
+    <li
+      class="c2"
+      role="listitem"
+    >
+      <a
+        class="c3"
+        href="/pidgin/topics/d2c2ba68-f9ad-4185-a6d1-7f6437256735"
+      >
+        Africa
+      </a>
+    </li>
+    <li
+      class="c2"
+      role="listitem"
+    >
+      <a
+        class="c3"
+        href="/pidgin/world"
+      >
+        <span
+          class="c4"
+          dir="ltr"
+          role="text"
+        >
+          <span
+            class="c5"
+          >
+            Current page
+            , 
+          </span>
+          World
+        </span>
+      </a>
+    </li>
+    <li
+      class="c2"
+      role="listitem"
+    >
+      <a
+        class="c3"
+        href="/pidgin/media/video"
+      >
+        Video
+      </a>
+    </li>
+    <li
+      class="c2"
+      role="listitem"
+    >
+      <a
+        class="c3"
+        href="/pidgin/media/audio"
+      >
+        Audio
+      </a>
+    </li>
+    <li
+      class="c2"
+      role="listitem"
+    >
+      <a
+        class="c3"
+        href="/pidgin/sport"
+      >
+        Sport
+      </a>
+    </li>
+    <li
+      class="c2"
+      role="listitem"
+    >
+      <a
+        class="c3"
+        href="/pidgin/topics/1c3b60a9-14eb-484b-a750-9f5b1aeaac31"
+      >
+        Entertainment
+      </a>
+    </li>
+    <li
+      class="c2"
+      role="listitem"
+    >
+      <a
+        class="c3"
+        href="/pidgin/popular/read"
+      >
+        Most popular
+      </a>
+    </li>
+  </ul>
+</div>
+`;
+
+exports[`Dropdown navigation should render correctly when open 1`] = `
+.c5 {
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  -webkit-clip: rect(1px,1px,1px,1px);
+  clip: rect(1px,1px,1px,1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  width: 1px;
+  margin: 0;
+}
+
+.c0 {
+  background-color: #222222;
+  clear: both;
+  overflow: hidden;
+  height: 0;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+  -webkit-transition-timing-function: cubic-bezier(0,0,0.58,1);
+  transition-timing-function: cubic-bezier(0,0,0.58,1);
+  visibility: visible;
+  height: 0px;
+}
+
+.c1 {
+  list-style-type: none;
+  margin: 0;
+  padding: 0 0.5rem;
+  border-bottom: 0.125rem solid #3F3F42;
+}
+
+.c2 {
+  padding: 0.75rem 0;
+  border-bottom: 0.0625rem solid #3F3F42;
+}
+
+.c2:last-child {
+  padding-bottom: 1rem;
+  border: 0;
+}
+
+.c3 {
+  font-size: 0.9375rem;
+  line-height: 1.25rem;
+  font-family: ReithSans,Helvetica,Arial,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #FFFFFF;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c3:hover,
+.c3:focus {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.c4 {
+  border-left: 0.25rem solid #FFFFFF;
+  padding-left: 0.5rem;
+}
+
+@media (min-width:37.5rem) {
+  .c0 {
+    display: none;
+    visibility: hidden;
+  }
+}
+
+@media (prefers-reduced-motion:reduce) {
+  .c0 {
+    -webkit-transition: none;
+    transition: none;
+  }
+}
+
+@media (min-width:20rem) and (max-width:37.4375rem) {
+  .c3 {
+    font-size: 1rem;
+    line-height: 1.25rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .c3 {
+    font-size: 1rem;
+    line-height: 1.25rem;
+  }
+}
+
+<div
+  class="c0"
+  height="0"
 >
   <ul
     class="c1"

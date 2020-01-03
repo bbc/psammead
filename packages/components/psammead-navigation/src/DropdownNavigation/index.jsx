@@ -1,4 +1,4 @@
-import React, { cloneElement } from 'react';
+import React, { cloneElement, useRef } from 'react';
 import styled, { css } from 'styled-components';
 import { shape, string, bool, func, oneOf, node } from 'prop-types';
 import VisuallyHiddenText from '@bbc/psammead-visually-hidden-text';
@@ -31,11 +31,6 @@ const StyledDropdown = styled.div`
   clear: both;
   overflow: hidden;
 
-  @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
-    display: none;
-    visibility: hidden;
-  }
-
   height: 0;
   transition: all 0.2s ease-out;
   transition-timing-function: cubic-bezier(0, 0, 0.58, 1);
@@ -44,13 +39,26 @@ const StyledDropdown = styled.div`
     isOpen
       ? `visibility: visible; height: ${height}px;`
       : `visibility: hidden;`}
+
+  @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
+    display: none;
+    visibility: hidden;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    transition: none;
+  }
 `;
 
 export const CanonicalDropdown = ({ isOpen, children }) => {
-  const menuElement = document.getElementById('dropdown-menu');
-  const height = menuElement && menuElement.scrollHeight;
+  const heightRef = useRef(null);
+
   return (
-    <StyledDropdown id="dropdown-menu" height={height} isOpen={isOpen}>
+    <StyledDropdown
+      ref={heightRef}
+      height={heightRef.current ? heightRef.current.scrollHeight : 0}
+      isOpen={isOpen}
+    >
       {children}
     </StyledDropdown>
   );

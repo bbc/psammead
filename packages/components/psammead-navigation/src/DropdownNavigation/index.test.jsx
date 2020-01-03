@@ -143,8 +143,13 @@ describe('Canonical', () => {
 
 describe('Dropdown navigation', () => {
   shouldMatchSnapshot(
-    'should render correctly',
+    'should render correctly when closed',
     <CanonicalDropdown>{dropdownList}</CanonicalDropdown>,
+  );
+
+  shouldMatchSnapshot(
+    'should render correctly when open',
+    <CanonicalDropdown isOpen>{dropdownList}</CanonicalDropdown>,
   );
 });
 
