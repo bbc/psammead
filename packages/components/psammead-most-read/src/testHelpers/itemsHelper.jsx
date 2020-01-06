@@ -20,7 +20,7 @@ export const getItem = (service, withTimestamp = false) => {
   const { text, articlePath } = TEXT_VARIANTS[service];
   const timestamp = withTimestamp ? lastUpdated(latin, service) : null;
   return {
-    id: Math.floor(Math.random() * 100000) + 1,
+    id: `${Math.floor(Math.random() * 100000) + 1}`,
     title: text,
     href: `${baseUrl}${articlePath}`,
     timestamp,
