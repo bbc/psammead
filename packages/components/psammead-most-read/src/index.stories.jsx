@@ -30,8 +30,8 @@ const newsServiceDecorator = withServicesKnob({
   defaultService: 'news',
 });
 
-const renderMostReadTitle = ({ header, service, script, dir }) => (
-  <MostReadTitle header={header} script={script} service={service} dir={dir} />
+const renderMostReadTitle = ({ header, service, script }) => (
+  <MostReadTitle header={header} script={script} service={service} />
 );
 
 const renderList = ({ numberOfItems, dir, service, script }) => (
@@ -149,13 +149,13 @@ storiesOf('Components|MostRead/List/RTL', module)
 storiesOf('Components|MostRead/Title', module)
   .addDecorator(withKnobs)
   .add('LTR', () =>
-    newsServiceDecorator(({ script, service, dir }) =>
-      renderMostReadTitle({ header: 'Most Read', script, service, dir }),
+    newsServiceDecorator(({ script, service }) =>
+      renderMostReadTitle({ header: 'Most Read', script, service }),
     ),
   )
   .add('RTL', () =>
-    arabicServiceDecorator(({ script, service, dir }) =>
-      renderMostReadTitle({ header: 'الأكثر قراءة', script, service, dir }),
+    arabicServiceDecorator(({ script, service }) =>
+      renderMostReadTitle({ header: 'الأكثر قراءة', script, service }),
     ),
   );
 

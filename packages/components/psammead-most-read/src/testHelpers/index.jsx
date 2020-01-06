@@ -75,12 +75,7 @@ export const renderMostRead = ({
   numberOfItems,
 }) => (
   <>
-    <MostReadTitle
-      header={header}
-      service={service}
-      script={script}
-      dir={dir}
-    />
+    <MostReadTitle header={header} service={service} script={script} />
     <MostReadList numberOfItems={numberOfItems} dir={dir}>
       {getItemWrapperArray({
         numberOfItems,
