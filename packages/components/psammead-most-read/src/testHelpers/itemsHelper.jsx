@@ -34,5 +34,5 @@ export const itemPropTypes = shape({
   id: string.isRequired,
   title: string.isRequired,
   href: string.isRequired,
-  timestamp: node.isRequired,
+  timestamp: node,
 });
