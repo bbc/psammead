@@ -2,7 +2,7 @@ import React, { useState, useRef } from 'react';
 import { string } from 'prop-types';
 import styled, { css } from 'styled-components';
 import Guidance from '../Guidance';
-import useTimeout from '../useTimeout';
+import useTimeout from './useTimeout';
 
 const TIMEOUT_MS = 3000;
 
