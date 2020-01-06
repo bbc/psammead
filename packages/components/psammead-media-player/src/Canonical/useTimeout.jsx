@@ -13,10 +13,8 @@ const useTimeout = (callback, iframeRef, timeout) => {
     timer.current = setTimeout(() => {
       callback(true);
     }, timeout);
-    return () => {
-      clearTimeout(timer.current);
-    };
-  }, []);
+    return () => clearTimeout(timer.current);
+  }, [timeout]);
 };
 
 export default useTimeout;
