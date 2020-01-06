@@ -3,12 +3,13 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { withKnobs } from '@storybook/addon-knobs';
 import { withServicesKnob } from '@bbc/psammead-storybook-helpers';
-import MostReadList from './List';
-import MostReadTitle from './Title';
-import { MostReadLink } from './Item';
-import MostReadRank from './Rank';
-import MostRead from './index';
-import { getItem, getItemWrapperArray } from './testHelpers/itemsHelper';
+import { getItem, getItemWrapperArray, renderMostRead } from './testHelpers';
+import {
+  MostReadRank,
+  MostReadLink,
+  MostReadTitle,
+  MostReadList,
+} from './index';
 
 const arabicServiceDecorator = withServicesKnob({
   defaultService: 'arabic',
@@ -31,23 +32,6 @@ const newsServiceDecorator = withServicesKnob({
 
 const renderMostReadTitle = ({ header, service, script, dir }) => (
   <MostReadTitle header={header} script={script} service={service} dir={dir} />
-);
-
-const renderMostRead = ({ service, script, dir, header, numberOfItems }) => (
-  <MostRead
-    service={service}
-    script={script}
-    dir={dir}
-    header={header}
-    numberOfItems={numberOfItems}
-  >
-    {getItemWrapperArray({
-      numberOfItems,
-      service,
-      script,
-      dir,
-    }).map(item => item)}
-  </MostRead>
 );
 
 const renderList = ({ numberOfItems, dir, service, script }) => (

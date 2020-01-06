@@ -1,9 +1,16 @@
 import React from 'react';
+import { shape, string, oneOf, number } from 'prop-types';
 import { TEXT_VARIANTS } from '@bbc/psammead-storybook-helpers';
 import { latin } from '@bbc/gel-foundations/scripts';
+import { scriptPropType } from '@bbc/gel-foundations/prop-types';
 import Timestamp from '@bbc/psammead-timestamp';
-import { MostReadItemWrapper, MostReadLink } from '../Item';
-import MostReadRank from '../Rank';
+import {
+  MostReadTitle,
+  MostReadList,
+  MostReadItemWrapper,
+  MostReadLink,
+  MostReadRank,
+} from '..';
 
 const lastUpdated = (script, service) => (
   // This will return the provided english translations
@@ -28,9 +35,6 @@ export const getItem = (service, withTimestamp = false) => {
     timestamp,
   };
 };
-
-export const getItems = (service = 'news', arraySize) =>
-  Array.from({ length: arraySize }, () => getItem(service));
 
 export const getItemWrapperArray = ({
   numberOfItems,
@@ -61,4 +65,41 @@ export const getItemWrapperArray = ({
     );
   }
   return itemWrapperArray;
+};
+
+export const renderMostRead = ({
+  service,
+  script,
+  dir,
+  header,
+  numberOfItems,
+}) => (
+  <>
+    <MostReadTitle
+      header={header}
+      service={service}
+      script={script}
+      dir={dir}
+    />
+    <MostReadList numberOfItems={numberOfItems} dir={dir}>
+      {getItemWrapperArray({
+        numberOfItems,
+        service,
+        script,
+        dir,
+      }).map(item => item)}
+    </MostReadList>
+  </>
+);
+
+renderMostRead.propTypes = {
+  service: string.isRequired,
+  script: shape(scriptPropType).isRequired,
+  dir: oneOf(['rtl', 'ltr']),
+  header: string.isRequired,
+  numberOfItems: number.isRequired,
+};
+
+renderMostRead.defaultProps = {
+  dir: 'ltr',
 };

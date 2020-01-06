@@ -38,53 +38,33 @@ timestamp: node.isRequired,
 <!-- prettier-ignore -->
 | Argument | Type | Required | Default | Example |
 | -------- | ---- | -------- | ------- | ------- |
-| items | array | yes | N/A | `[{ id: "89b01387-4f40-8846-a11f-65aeed534da3", title: 'This is a headline', href: 'https://www.bbc.com', timestamp: <TimestampContainer timestamp={1570031976502} dateTimeFormat="YYYY-MM-DD" prefix="Last updated: " format="LL" script={latin} service='news'/> }]` |
+| numberOfItems | number | no | 10 | 5 |
 | header | string | yes | N/A | `'Most Read'` |
 | service | string | yes | N/A | `'news'` |
 | script | object | yes | N/A | `{ canon: { groupA: { fontSize: '28', lineHeight: '32',}, groupB: { fontSize: '32', lineHeight: '36', }, groupD: { fontSize: '44', lineHeight: '48', }, }, trafalgar: { groupA: { fontSize: '20', lineHeight: '24', }, groupB: { fontSize: '24', lineHeight: '28', }, groupD: { fontSize: '32', lineHeight: '36', }, }, }` |
 | dir | string | yes | 'ltr' | `'ltr'`|
+| children | node | yes | N/A | `<MostReadItemWrapper dir={ltr} key={1}> <MostReadRank service='news' script=latin listIndex={1} numberOfItems={10} dir='ltr' /> <MostReadLink dir='ltr' href='/news/articles/27051997' service='news' script=latin title='This is a article headline'/> </MostReadItemWrapper>` |
 
 ### Usage
 
 ```jsx
 import React from 'react';
 import MostRead from '@bbc/psammead-most-read';
-import Timestamp from '@bbc/psammead-timestamp-container';
 import { latin } from '@bbc/gel-foundations/scripts';
 
-const lastUpdated = (script, service) => (
-  <Timestamp
-    timestamp={1570031976502}
-    dateTimeFormat="YYYY-MM-DD"
-    prefix="Last updated: "
-    format="LL"
-    script={script}
-    service={service}
-  />
-);
-
-const items = [
-  {
-    id: '89b01387-4f40-8846-a11f-65aeed534da3',
-    title: 'John Lewis staff bonus cut again as profits fall',
-    href: 'https://www.bbc.co.uk/news/business-43328806',
-    timestamp: lastUpdated(latin, 'news'),
-  },
-  {
-    id: '89b01387-4f40-8846-a11f-65aeed534da4',
-    title: 'John Lewis staff bonus cut again as profits fall',
-    href: 'https://www.bbc.co.uk/news/business-43328806',
-    timestamp: null,
-  },
-];
 
 <MostRead
-  items={items}
+  numberOfItems={5}
   service="news"
   header="Most Read"
   script={latin}
   dir="ltr"
-/>;
+>
+  <MostReadItemWrapper dir={ltr} key={1}> 
+    <MostReadRank service='news' script=latin listIndex={1} numberOfItems={10} dir='ltr' /> 
+    <MostReadLink dir='ltr' href='/news/articles/27051997' service='news' script=latin title='This is a article headline'/> 
+  </MostReadItemWrapper>
+</MostRead>;
 ```
 
 ## MostReadList
