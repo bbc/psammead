@@ -16,57 +16,6 @@ The `MostRead` component is designed to display the most read articles given a d
 
 ## Components (WIP)
 
-## MostRead
-
-id: string.isRequired,
-title: string.isRequired,
-href: string.isRequired,
-timestamp: node.isRequired,
-
-### Item Prop Values
-
-<!-- prettier-ignore -->
-| Argument  | Type   | Required | Default | Example                                |
-| --------- | ------ | -------- | ------- | -------------------------------------- |
-| id        | string | yes      | N/A     | "89b01387-4f40-8846-a11f-65aeed534da3" |
-| title     | string | yes      | N/A     | "People are warned against attending a display in London without a ticket as areas prepare to usher in 2020." |
-| href      | string | yes      | N/A     | "/news/uk-50952973" |
-| timestamp | string | yes      | N/A     | `<TimestampContainer timestamp={1570031976502} dateTimeFormat="YYYY-MM-DD" prefix="Last updated: " format="LL" script={latin} service='news'/>` |
-
-### Props
-
-<!-- prettier-ignore -->
-| Argument | Type | Required | Default | Example |
-| -------- | ---- | -------- | ------- | ------- |
-| numberOfItems | number | no | 10 | 5 |
-| header | string | yes | N/A | `'Most Read'` |
-| service | string | yes | N/A | `'news'` |
-| script | object | yes | N/A | `{ canon: { groupA: { fontSize: '28', lineHeight: '32',}, groupB: { fontSize: '32', lineHeight: '36', }, groupD: { fontSize: '44', lineHeight: '48', }, }, trafalgar: { groupA: { fontSize: '20', lineHeight: '24', }, groupB: { fontSize: '24', lineHeight: '28', }, groupD: { fontSize: '32', lineHeight: '36', }, }, }` |
-| dir | string | yes | 'ltr' | `'ltr'`|
-| children | node | yes | N/A | `<MostReadItemWrapper dir={ltr} key={1}> <MostReadRank service='news' script=latin listIndex={1} numberOfItems={10} dir='ltr' /> <MostReadLink dir='ltr' href='/news/articles/27051997' service='news' script=latin title='This is a article headline'/> </MostReadItemWrapper>` |
-
-### Usage
-
-```jsx
-import React from 'react';
-import MostRead from '@bbc/psammead-most-read';
-import { latin } from '@bbc/gel-foundations/scripts';
-
-
-<MostRead
-  numberOfItems={5}
-  service="news"
-  header="Most Read"
-  script={latin}
-  dir="ltr"
->
-  <MostReadItemWrapper dir={ltr} key={1}> 
-    <MostReadRank service='news' script=latin listIndex={1} numberOfItems={10} dir='ltr' /> 
-    <MostReadLink dir='ltr' href='/news/articles/27051997' service='news' script=latin title='This is a article headline'/> 
-  </MostReadItemWrapper>
-</MostRead>;
-```
-
 ## MostReadList
 
 ### Props
@@ -74,34 +23,36 @@ import { latin } from '@bbc/gel-foundations/scripts';
 <!-- prettier-ignore -->
 | Argument | Type | Required | Default | Example |
 | -------- | ---- | -------- | ------- | ------- |
-| items | array | yes | N/A | `[{ id: '89b01387-4f40-8846-a11f-65aeed534da3', title: 'This is a headline', href: 'https://www.bbc.com', timestamp: null }]` |
-| service | string | yes | N/A | `'news'` |
-| script | object | yes | N/A | `{ canon: { groupA: { fontSize: '28', lineHeight: '32',}, groupB: { fontSize: '32', lineHeight: '36', }, groupD: { fontSize: '44', lineHeight: '48', }, }, trafalgar: { groupA: { fontSize: '20', lineHeight: '24', }, groupB: { fontSize: '24', lineHeight: '28', }, groupD: { fontSize: '32', lineHeight: '36', }, }, }` |
+| numberOfItems | number | yes | N/A | `10` |
+| children | node | yes | N/A | `<MostReadItemWrapper dir='ltr' key={1}><MostReadRank service='news' script=latin listIndex={1} numberOfItems={10} dir='ltr'/> <MostReadLink dir='ltr href='/bbc.co.uk/news/articles/27051997' service='news' script={latin} title='This is a news article headline'/></MostReadItemWrapper>,` |
 | dir | string | yes | 'ltr' | `'ltr'`|
 
 ### Usage
 
+This component is to be used in conjunction with the other MostRead components, example can be seen below.
+
 ```jsx
 import React from 'react';
-import MostReadList from '@bbc/psammead-most-read/List';
+import {
+  MostReadList,
+  MostReadLink,
+  MostReadRank,
+  MostReadItemWrapper,
+} from '@bbc/psammead-most-read';
 import { latin } from '@bbc/gel-foundations/scripts';
 
-const items = [
-  {
-    id: '89b01387-4f40-8846-a11f-65aeed534da5',
-    title: 'John Lewis staff bonus cut again as profits fall',
-    href: 'https://www.bbc.co.uk/news/business-43328806',
-    timestamp: null,
-  },
-  {
-    id: '89b01387-4f40-8846-a11f-65aeed534da3',
-    title: 'John Lewis staff bonus cut again as profits fall',
-    href: 'https://www.bbc.co.uk/news/business-43328806',
-    timestamp: null,
-  },
-];
-
-<MostReadList items={items} service="news" script={latin} dir="ltr" />;
+<MostReadList
+  items={items}
+  service="news"
+  script={latin}
+  dir="ltr"
+>
+  // FYI there can be multiple MostReadItemWrapper here
+  <MostReadItemWrapper dir='ltr' key={1}>
+    <MostReadRank service='news' script=latin listIndex={1} numberOfItems={10} dir='ltr'/>
+    <MostReadLink dir='ltr href='/bbc.co.uk/news/articles/27051997' service='news' script={latin} title='This is a news article headline'/>
+  </MostReadItemWrapper>
+</MostReadList>;
 ```
 
 ## MostReadLink
@@ -111,10 +62,12 @@ const items = [
 <!-- prettier-ignore -->
 | Argument | Type | Required | Default | Example |
 | -------- | ---- | -------- | ------- | ------- |
-| item | array | yes | N/A | `{ id: '89b01387-4f40-8846-a11f-65aeed534da3', title: 'This is a headline', href: 'https://www.bbc.com', timestamp: null }` |
-| script | object | yes | N/A | `{ canon: { groupA: { fontSize: '28', lineHeight: '32',}, groupB: { fontSize: '32', lineHeight: '36', }, groupD: { fontSize: '44', lineHeight: '48', }, }, trafalgar: { groupA: { fontSize: '20', lineHeight: '24', }, groupB: { fontSize: '24', lineHeight: '28', }, groupD: { fontSize: '32', lineHeight: '36', }, }, }` |
-| service | string | yes | N/A | `'news'` |
 | dir | oneOf(['rtl', 'ltr}) | yes | 'ltr' | `'ltr'`|
+| service | string | yes | N/A | `'news'` |
+| script | object | yes | N/A | `{ canon: { groupA: { fontSize: '28', lineHeight: '32',}, groupB: { fontSize: '32', lineHeight: '36', }, groupD: { fontSize: '44', lineHeight: '48', }, }, trafalgar: { groupA: { fontSize: '20', lineHeight: '24', }, groupB: { fontSize: '24', lineHeight: '28', }, groupD: { fontSize: '32', lineHeight: '36', }, }, }` |
+| title | string | yes | N/A | `"This is a article headline"` |
+| href | string | yes | N/A | `"/bbc.co.uk/news/00000027051997"` |
+| children | node | no | null | `<Timestamp datetime="2019-03-01T14:00+00:00" script={script} padding={false} service={service}>Last updated: 5th November 2016</Timestamp>` |
 
 ### Usage
 
@@ -123,52 +76,59 @@ A typical use-case of this component is as displayed below. It contains an info 
 ```jsx
 import React from 'react';
 import { latin } from '@bbc/gel-foundations/scripts';
-import { MostReadLink } from '@bbc/psammead-most-read/Item';
+import { MostReadLink } from '@bbc/psammead-most-read';
+import Timestamp from '@bbc/psammead-timestamp';
 
-const item = {
-    id: '89b01387-4f40-8846-a11f-65aeed534da3',
-    title: 'John Lewis staff bonus cut again as profits fall',
-    href: 'https://www.bbc.co.uk/news/business-43328806',
-    timestamp: null,
-}
-
-<MostReadLink item={item} script={latin} service="news" dir="ltr" />;
-
+<MostReadLink
+  dir="ltr"
+  script={latin}
+  service="news"
+  title="This is a article headline"
+  href="/bbc.co.uk/news/00000027051997"
+>
+  <Timestamp
+    datetime="2019-03-01T14:00+00:00"
+    script={script}
+    padding={false}
+    service={service}
+  >
+    Last updated: 5th November 2016
+  </Timestamp>
+</MostReadLink>;
 ```
 
-#### <a name="example with last updated date">Example with last updated date</a>
+## MostReadItemWrapper
+
+### Props
+
+<!-- prettier-ignore -->
+| Argument | Type | Required | Default | Example |
+| -------- | ---- | -------- | ------- | ------- |
+| dir | oneOf(['rtl', 'ltr}) | yes | 'ltr' | `'ltr'`|
+| children | node | yes | N/A | `<MostReadRank service='news' script=latin listIndex={1} numberOfItems={10} dir='ltr'/> <MostReadLink dir='ltr href='/bbc.co.uk/news/articles/27051997' service='news' script={latin} title='This is a news article headline'/>` |
+
+### Usage
+
+This component is used to wrap `MostReadLink` and `MostReadRank` together, as seen below.
 
 ```jsx
 import React from 'react';
 import { latin } from '@bbc/gel-foundations/scripts';
-import Timestamp from '@bbc/psammead-timestamp-container';
-import { MostReadLink } from '@bbc/psammead-most-read/Item';
-
-const lastUpdated = (script, service) => (
-  <Timestamp
-    timestamp={1570031976502}
-    dateTimeFormat="YYYY-MM-DD"
-    prefix="Last updated: "
-    format="LL"
-    script={script}
-    service={service}
+import {
+  MostReadLink,
+  MostReadRank,
+  MostReadItemWrapper,
+} from '@bbc/psammead-most-read';
+<MostReadItemWrapper>
+  <MostReadRank service='news' script=latin listIndex={1} numberOfItems={10} dir='ltr'/>
+  <MostReadLink
+    dir="ltr"
+    script={latin}
+    service="news"
+    title="This is a article headline"
+    href="/bbc.co.uk/news/00000027051997"
   />
-);
-
-const item = {
-  id: '89b01387-4f40-8846-a11f-65aeed534da3',
-  title: 'John Lewis staff bonus cut again as profits fall',
-  href: 'https://www.bbc.co.uk/news/business-43328806',
-  timestamp: lastUpdated(latin, 'news'),
-};
-
-<MostReadLink
-  lastUpdated={lastUpdated}
-  item={item}
-  script={latin}
-  service="news"
-  dir="ltr"
-/>;
+</MostReadItemWrapper>;
 ```
 
 ## MostReadRank
@@ -178,19 +138,26 @@ const item = {
 <!-- prettier-ignore -->
 | Argument | Type | Required | Default | Example |
 | -------- | ---- | -------- | ------- | ------- |
-| script | object | yes | N/A | `{ canon: { groupA: { fontSize: '28', lineHeight: '32',}, groupB: { fontSize: '32', lineHeight: '36', }, groupD: { fontSize: '44', lineHeight: '48', }, }, trafalgar: { groupA: { fontSize: '20', lineHeight: '24', }, groupB: { fontSize: '24', lineHeight: '28', }, groupD: { fontSize: '32', lineHeight: '36', }, }, }` |
 | service | string | yes | N/A | `'news'` |
+| script | object | yes | N/A | `{ canon: { groupA: { fontSize: '28', lineHeight: '32',}, groupB: { fontSize: '32', lineHeight: '36', }, groupD: { fontSize: '44', lineHeight: '48', }, }, trafalgar: { groupA: { fontSize: '20', lineHeight: '24', }, groupB: { fontSize: '24', lineHeight: '28', }, groupD: { fontSize: '32', lineHeight: '36', }, }, }` |
+| listIndex | number | yes | N/A | `1` |
+| numberOfItems | number | yes | N/A | `10` |
+| dir | string | no | `"ltr"` | `"ltr"` |
 
 ### Usage
 
 ```jsx
 import React from 'react';
 import { latin } from '@bbc/gel-foundations/scripts';
-import { MostReadRank } from '@bbc/psammead-most-read/Item';
+import { MostReadRank } from '@bbc/psammead-most-read';
 
-<MostReadRank script={latin} service="news">
-  10
-</MostReadRank>;
+<MostReadRank
+  service="news"
+  script={latin}
+  listIndex={1}
+  numberOfItems={5}
+  dir="ltr"
+/>;
 ```
 
 ## MostReadTitle
@@ -203,6 +170,7 @@ import { MostReadRank } from '@bbc/psammead-most-read/Item';
 | script | object | yes | N/A | `{ canon: { groupA: { fontSize: '28', lineHeight: '32',}, groupB: { fontSize: '32', lineHeight: '36', }, groupD: { fontSize: '44', lineHeight: '48', }, }, trafalgar: { groupA: { fontSize: '20', lineHeight: '24', }, groupB: { fontSize: '24', lineHeight: '28', }, groupD: { fontSize: '32', lineHeight: '36', }, }, }` |
 | service | string | yes | N/A | `'news'` |
 | header | string | yes | N/A | `'Most Read'`  |
+| labelId | string | no | `'most-read-title'` | `'most-read-title'`  |
 
 ### Usage
 
