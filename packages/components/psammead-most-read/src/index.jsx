@@ -1,11 +1,17 @@
 import React from 'react';
-import { oneOf, shape, string, arrayOf } from 'prop-types';
+import { oneOf, shape, string, number, node } from 'prop-types';
 import { scriptPropType } from '@bbc/gel-foundations/prop-types';
 import MostReadList from './List';
 import MostReadTitle from './Title';
-import { itemPropTypes } from './testHelpers/itemsHelper';
 
-const MostRead = ({ script, service, header, items, dir }) => (
+const MostRead = ({
+  script,
+  service,
+  header,
+  dir,
+  children,
+  numberOfItems,
+}) => (
   <>
     <MostReadTitle
       dir={dir}
@@ -13,20 +19,25 @@ const MostRead = ({ script, service, header, items, dir }) => (
       service={service}
       header={header}
     />
-    <MostReadList dir={dir} items={items} service={service} script={script} />
+
+    <MostReadList numberOfItems={numberOfItems} dir={dir}>
+      {children}
+    </MostReadList>
   </>
 );
 
 MostRead.propTypes = {
-  items: arrayOf(itemPropTypes).isRequired,
+  numberOfItems: number,
   header: string.isRequired,
   service: string.isRequired,
   script: shape(scriptPropType).isRequired,
   dir: oneOf(['rtl', 'ltr']),
+  children: node.isRequired,
 };
 
 MostRead.defaultProps = {
   dir: 'ltr',
+  numberOfItems: 10,
 };
 
 export default MostRead;
