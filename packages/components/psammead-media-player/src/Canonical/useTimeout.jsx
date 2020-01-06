@@ -1,5 +1,11 @@
 import { useRef, useEffect } from 'react';
 
+/**
+ * useTimeout Hook.
+ * @param {function} callback A callback function that returns `true` or `false`.
+ * @param {object} iframeRef A React DOM reference to an iframe.
+ * @param {number} timeout The number of milliseconds until the timeout returns `true`.
+ */
 const useTimeout = (callback, iframeRef, timeout) => {
   const timer = useRef(null);
 
