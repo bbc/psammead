@@ -308,7 +308,6 @@ exports[`MostRead should render with ltr most read with correct dir 1`] = `
   >
     <h2
       class="c0"
-      dir="ltr"
       id="most-read-title"
     >
       Most Read
@@ -955,7 +954,6 @@ exports[`MostRead should render with rtl most read with correct dir 1`] = `
   >
     <h2
       class="c0"
-      dir="rtl"
       id="most-read-title"
     >
       الأكثر قراءة
