@@ -4,7 +4,7 @@ import styled, { css } from 'styled-components';
 import Guidance from '../Guidance';
 import useTimeout from './useTimeout';
 
-const TIMEOUT_MS = 3000;
+const TIMEOUT_MS = 5000;
 
 const Canonical = ({ service, src, title, placeholderSrc }) => {
   const [hasTimedOut, setHasTimedOut] = useState(null);
