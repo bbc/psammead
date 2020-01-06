@@ -3,6 +3,11 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 2.0.41 | [PR#2865](https://github.com/bbc/psammead/pull/2865) Bumping dependencies |
+| 2.0.40 | [PR#2863](https://github.com/bbc/psammead/pull/2863) Talos - Bump Dependencies - @bbc/psammead-calendars |
+| 2.0.39 | [PR#2857](https://github.com/bbc/psammead/pull/2857) Talos - Bump Dependencies - @bbc/psammead-locales |
+| 2.0.38 | [PR#2846](https://github.com/bbc/psammead/pull/2846) Remove package jest-fetch-mock |
+| 2.0.37 | [PR#2843](https://github.com/bbc/psammead/pull/2843) Bumping dependencies |
 | 2.0.36 | [PR#2828](https://github.com/bbc/psammead/pull/2828) Add guide on creating new components |
 | 2.0.35 | [PR#2831](https://github.com/bbc/psammead/pull/2831) Bump Dev Dependencies |
 | 2.0.34 | [PR#2830](https://github.com/bbc/psammead/pull/2830) Talos - Bump Dependencies - @bbc/psammead-image-placeholder, @bbc/psammead-media-indicator |
