@@ -61,6 +61,13 @@ const doubleDigitOverride = {
   group5: '3rem',
 };
 
+// These measurements are to be used for making the width of the links in each column consistent
+const firstColumnLinkWidths = {
+  group2: '1.3rem',
+  group3: '1.8rem',
+  group5: '1rem',
+};
+
 const doubleDigitWidth = ({ service }) => {
   const overrideService = ['bengali'];
   return overrideService.includes(service)
@@ -138,6 +145,19 @@ const StyledItem = styled.div`
 
   @supports (${grid}) {
     ${paddingEnd}: 0;
+
+  @media (min-width: ${GEL_GROUP_2_SCREEN_WIDTH_MIN}) {
+    ${paddingEnd}: ${props =>
+  isOnSecondColumn(props, true) ? '0rem' : firstColumnLinkWidths.group2};
+  }
+  
+  @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
+    ${paddingEnd}: ${props =>
+  isOnSecondColumn(props, true) ? '0rem' : firstColumnLinkWidths.group3};
+  }
+  
+    @media (min-width: ${GEL_GROUP_5_SCREEN_WIDTH_MIN}) {
+    ${paddingEnd}: 0;
   }
 `;
 
@@ -194,8 +214,15 @@ MostReadRankWrapper.defaultProps = {
   dir: 'ltr',
 };
 
-export const MostReadLink = ({ item, dir, service, script }) => (
-  <StyledItem dir={dir}>
+export const MostReadLink = ({
+  item,
+  dir,
+  service,
+  script,
+  itemList,
+  index,
+}) => (
+  <StyledItem dir={dir} items={itemList} listIndex={index}>
     <StyledLink href={item.href} script={script} service={service}>
       {item.title}
     </StyledLink>
@@ -206,6 +233,8 @@ export const MostReadLink = ({ item, dir, service, script }) => (
 MostReadLink.propTypes = {
   dir: oneOf(['rtl', 'ltr']),
   item: itemPropTypes.isRequired,
+  itemList: arrayOf(itemPropTypes).isRequired,
+  index: number.isRequired,
   service: string.isRequired,
   script: shape(scriptPropType).isRequired,
 };

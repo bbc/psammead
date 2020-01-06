@@ -116,6 +116,8 @@ const MostReadList = ({ items, service, script, dir }) => (
             <MostReadLink
               dir={dir}
               item={item}
+              itemList={items}
+              index={i}
               service={service}
               script={script}
             />
