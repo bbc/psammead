@@ -1,6 +1,6 @@
 import { useRef, useEffect } from 'react';
 
-const useTimeout = (callback, iframe, timeout) => {
+const useTimeout = (callback, iframeRef, timeout) => {
   const timer = useRef(null);
 
   const handleLoad = () => {
@@ -9,7 +9,7 @@ const useTimeout = (callback, iframe, timeout) => {
   };
 
   useEffect(() => {
-    iframe.current.addEventListener('load', handleLoad);
+    iframeRef.current.addEventListener('load', handleLoad, { once: true });
     timer.current = setTimeout(() => {
       callback(true);
     }, timeout);
