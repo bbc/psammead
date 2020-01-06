@@ -51,7 +51,12 @@ export const CanonicalMediaPlayer = ({
           noJsMessage={noJsMessage}
         />
       ) : (
-        <Canonical src={src} title={title} placeholderSrc={placeholderSrc} />
+        <Canonical
+          service={service}
+          src={src}
+          title={title}
+          placeholderSrc={placeholderSrc}
+        />
       )}
     </StyledContainer>
   );
