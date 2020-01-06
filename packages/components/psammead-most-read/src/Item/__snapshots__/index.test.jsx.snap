@@ -2,12 +2,12 @@
 
 exports[`MostReadLink should render ltr correctly 1`] = `
 .c1 {
-  color: #222222;
   font-size: 1.125rem;
   line-height: 1.375rem;
   font-family: ReithSerif,Helvetica,Arial,sans-serif;
   font-weight: 500;
   font-style: normal;
+  color: #222222;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
@@ -21,6 +21,7 @@ exports[`MostReadLink should render ltr correctly 1`] = `
 .c0 {
   padding-bottom: 1.5rem;
   padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
@@ -37,10 +38,9 @@ exports[`MostReadLink should render ltr correctly 1`] = `
   }
 }
 
-@media (min-width:80rem) {
+@supports (grid-template-columns:fit-content(200px)) {
   .c0 {
-    padding-top: 0.5rem;
-    padding-left: 2rem;
+    padding-right: 0;
   }
 }
 
@@ -59,12 +59,12 @@ exports[`MostReadLink should render ltr correctly 1`] = `
 
 exports[`MostReadLink should render rtl correctly 1`] = `
 .c1 {
-  color: #222222;
   font-size: 1.5rem;
   line-height: 2rem;
-  font-family: "BBC Nassim Persian",Arial,Verdana,Geneva,Helvetica,sans-serif;
+  font-family: "BBC Nassim Arabic",Arial,Verdana,Geneva,Helvetica,sans-serif;
   font-weight: 700;
   font-style: normal;
+  color: #222222;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
@@ -78,6 +78,7 @@ exports[`MostReadLink should render rtl correctly 1`] = `
 .c0 {
   padding-bottom: 1.5rem;
   padding-right: 1rem;
+  padding-left: 1rem;
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
@@ -94,10 +95,9 @@ exports[`MostReadLink should render rtl correctly 1`] = `
   }
 }
 
-@media (min-width:80rem) {
+@supports (grid-template-columns:fit-content(200px)) {
   .c0 {
-    padding-top: 0.5rem;
-    padding-right: 2rem;
+    padding-left: 0;
   }
 }
 
@@ -107,9 +107,9 @@ exports[`MostReadLink should render rtl correctly 1`] = `
 >
   <a
     class="c1"
-    href="https://www.bbc.com/persian/articles/cej3lzd5e0go"
+    href="https://www.bbc.com/arabic/articles/c1er5mjnznzo"
   >
-    در این جشنواره برای نخستین بار از کارگران افغانستان در شهر تهران تقدیر شد
+    لماذا يخجل البعض من اسم قريته في مصر؟
   </a>
 </div>
 `;
@@ -126,12 +126,12 @@ exports[`MostReadLink should render with last updated date correctly 1`] = `
 }
 
 .c1 {
-  color: #222222;
   font-size: 1.125rem;
   line-height: 1.375rem;
   font-family: ReithSerif,Helvetica,Arial,sans-serif;
   font-weight: 500;
   font-style: normal;
+  color: #222222;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
@@ -145,6 +145,7 @@ exports[`MostReadLink should render with last updated date correctly 1`] = `
 .c0 {
   padding-bottom: 1.5rem;
   padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
@@ -175,10 +176,9 @@ exports[`MostReadLink should render with last updated date correctly 1`] = `
   }
 }
 
-@media (min-width:80rem) {
+@supports (grid-template-columns:fit-content(200px)) {
   .c0 {
-    padding-top: 0.5rem;
-    padding-left: 2rem;
+    padding-right: 0;
   }
 }
 
@@ -206,13 +206,12 @@ exports[`MostReadRank should render ltr correctly 1`] = `
   font-family: ReithSerif,Helvetica,Arial,sans-serif;
   font-weight: 300;
   font-style: normal;
-  color: #B80000;
   font-size: 2rem;
   line-height: 2.25rem;
+  color: #B80000;
   margin: 0;
   padding: 0;
-  display: inline-block;
-  width: 3rem;
+  float: left;
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
@@ -231,6 +230,7 @@ exports[`MostReadRank should render ltr correctly 1`] = `
 
 <span
   class="c0"
+  dir="ltr"
 >
   5
 </span>
@@ -241,13 +241,12 @@ exports[`MostReadRank should render ltr with double digits correctly 1`] = `
   font-family: ReithSerif,Helvetica,Arial,sans-serif;
   font-weight: 300;
   font-style: normal;
-  color: #B80000;
   font-size: 2rem;
   line-height: 2.25rem;
+  color: #B80000;
   margin: 0;
   padding: 0;
-  display: inline-block;
-  width: 3rem;
+  float: left;
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
@@ -266,6 +265,7 @@ exports[`MostReadRank should render ltr with double digits correctly 1`] = `
 
 <span
   class="c0"
+  dir="ltr"
 >
   10
 </span>
@@ -276,13 +276,12 @@ exports[`MostReadRank should render rtl correctly 1`] = `
   font-family: "BBC Nassim Persian",Arial,Verdana,Geneva,Helvetica,sans-serif;
   font-weight: 400;
   font-style: normal;
-  color: #B80000;
   font-size: 2rem;
   line-height: 2.25rem;
+  color: #B80000;
   margin: 0;
   padding: 0;
-  display: inline-block;
-  width: 3rem;
+  float: left;
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
@@ -301,6 +300,7 @@ exports[`MostReadRank should render rtl correctly 1`] = `
 
 <span
   class="c0"
+  dir="ltr"
 >
   ۲
 </span>
