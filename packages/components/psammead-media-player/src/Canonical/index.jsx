@@ -2,15 +2,15 @@ import React, { useState, useRef } from 'react';
 import { string } from 'prop-types';
 import styled, { css } from 'styled-components';
 import Guidance from '../Guidance';
-import useTimeout from '../useTimeout';
+import useTimeout from './useTimeout';
 
-const TIMEOUT_MS = 3000;
+const TIMEOUT_MS = 5000;
 
 const Canonical = ({ service, src, title, placeholderSrc }) => {
   const [hasTimedOut, setHasTimedOut] = useState(null);
-  const iframe = useRef(null);
+  const iframeRef = useRef(null);
 
-  useTimeout(setHasTimedOut, iframe, TIMEOUT_MS);
+  useTimeout(setHasTimedOut, iframeRef, TIMEOUT_MS);
 
   const CanonicalWrapper = styled.div`
     left: 0;
@@ -43,7 +43,7 @@ const Canonical = ({ service, src, title, placeholderSrc }) => {
         />
       ) : (
         <StyledIframe
-          ref={iframe}
+          ref={iframeRef}
           src={src}
           title={title}
           allow="autoplay; fullscreen"
