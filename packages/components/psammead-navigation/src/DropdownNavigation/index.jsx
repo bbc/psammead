@@ -1,6 +1,6 @@
-import React, { cloneElement } from 'react';
+import React, { cloneElement, useRef } from 'react';
 import styled, { css } from 'styled-components';
-import { shape, string, bool, func, oneOf } from 'prop-types';
+import { shape, string, bool, func, oneOf, node } from 'prop-types';
 import VisuallyHiddenText from '@bbc/psammead-visually-hidden-text';
 import { navigationIcons } from '@bbc/psammead-assets/svgs';
 import { C_WHITE, C_EBON, C_SHADOW } from '@bbc/psammead-styles/colours';
@@ -26,7 +26,50 @@ const getStyles = dir => {
           padding-${direction}: ${GEL_SPACING};`;
 };
 
-export const Dropdown = styled.div`
+const StyledDropdown = styled.div`
+  background-color: ${C_EBON};
+  clear: both;
+  overflow: hidden;
+
+  height: 0;
+  transition: all 0.2s ease-out;
+  transition-timing-function: cubic-bezier(0, 0, 0.58, 1);
+
+  ${({ height, isOpen }) =>
+    isOpen
+      ? `visibility: visible; height: ${height}px;`
+      : `visibility: hidden;`}
+
+  @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
+    display: none;
+    visibility: hidden;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    transition: none;
+  }
+`;
+
+export const CanonicalDropdown = ({ isOpen, children }) => {
+  const heightRef = useRef(null);
+
+  return (
+    <StyledDropdown
+      ref={heightRef}
+      height={heightRef.current ? heightRef.current.scrollHeight : 0}
+      isOpen={isOpen}
+    >
+      {children}
+    </StyledDropdown>
+  );
+};
+
+CanonicalDropdown.propTypes = {
+  isOpen: bool.isRequired,
+  children: node.isRequired,
+};
+
+export const AmpDropdown = styled.div`
   background-color: ${C_EBON};
   clear: both;
 
