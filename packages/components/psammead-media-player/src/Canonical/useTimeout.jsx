@@ -20,7 +20,7 @@ const useTimeout = (callback, iframeRef, timeout) => {
       callback(true);
     }, timeout);
     return () => clearTimeout(timer.current);
-  }, [timeout]);
+  }, []);
 };
 
 export default useTimeout;
