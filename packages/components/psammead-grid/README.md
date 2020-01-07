@@ -329,7 +329,7 @@ This `Grid` component can be used for page-level layouts as well as for layouts 
 
 ### Accessibility notes
 
-The `<Grid>` component is semantically a `div` element with relevant styles according to the layout.
+The `<Grid>` component is semantically a `div` element.
 
 <!-- ## Roadmap -->
 
