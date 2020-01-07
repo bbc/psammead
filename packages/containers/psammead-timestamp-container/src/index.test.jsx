@@ -95,8 +95,9 @@ describe('Timestamp', () => {
           />,
         );
 
-        const time = container.querySelector('time');
-        expect(time.textContent).toEqual('27 مهر 1397 - ۱۹ اکتبر ۲۰۱۸');
+        const time = container.querySelector('time') || {};
+        const span = time.parentElement || {};
+        expect(span.textContent).toEqual('27 مهر 1397 - ۱۹ اکتبر ۲۰۱۸');
       });
 
       it('should not add alternative calendar if timestamp is relative', () => {
@@ -113,8 +114,9 @@ describe('Timestamp', () => {
           />,
         );
 
-        const time = container.querySelector('time');
-        expect(time.textContent).toEqual('۱۱ ماه پیش');
+        const time = container.querySelector('time') || {};
+        const span = time.parentElement || {};
+        expect(span.textContent).toEqual('۱۱ ماه پیش');
       });
     });
 
@@ -131,8 +133,9 @@ describe('Timestamp', () => {
         />,
       );
 
-      const time = container.querySelector('time');
-      expect(time.textContent).toEqual('19 Oktoba 2018');
+      const time = container.querySelector('time') || {};
+      const span = time.parentElement || {};
+      expect(span.textContent).toEqual('19 Oktoba 2018');
     });
 
     it('should render a hausa relative timestamp', () => {
@@ -148,8 +151,9 @@ describe('Timestamp', () => {
         />,
       );
 
-      const time = container.querySelector('time');
-      expect(time.textContent).toEqual('11 months wuce');
+      const time = container.querySelector('time') || {};
+      const span = time.parentElement || {};
+      expect(span.textContent).toEqual('11 months wuce');
     });
   });
 });

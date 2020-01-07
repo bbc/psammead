@@ -34,15 +34,19 @@ const Timestamp = ({
   padding,
   service,
 }) => (
-  <StyledTimestamp
-    dateTime={datetime}
-    typographyFunc={typographyFunc}
-    script={script}
-    padding={padding}
-    service={service}
-  >
+  // https://github.com/bbc/simorgh/issues/1449#issuecomment-571564795
+  // https://github.com/dequelabs/axe-core/issues/1597
+  // eslint-disable-next-line jsx-a11y/aria-role
+  <span role="text">
+    <StyledTimestamp
+      dateTime={datetime}
+      typographyFunc={typographyFunc}
+      script={script}
+      padding={padding}
+      service={service}
+    />
     {children}
-  </StyledTimestamp>
+  </span>
 );
 
 Timestamp.defaultProps = {

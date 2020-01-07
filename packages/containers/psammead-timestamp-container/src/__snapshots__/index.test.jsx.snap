@@ -30,14 +30,17 @@ exports[`Timestamp should add prefix and suffix 1`] = `
   }
 }
 
-<time
-  class="c0"
-  datetime="2018-10-19"
+<span
+  role="text"
 >
+  <time
+    class="c0"
+    datetime="2018-10-19"
+  />
   Prefix here  
   19 October 2018
     suffix here
-</time>
+</span>
 `;
 
 exports[`Timestamp should render correctly 1`] = `
@@ -70,12 +73,15 @@ exports[`Timestamp should render correctly 1`] = `
   }
 }
 
-<time
-  class="c0"
-  datetime="2018-10-19"
+<span
+  role="text"
 >
+  <time
+    class="c0"
+    datetime="2018-10-19"
+  />
   19 October 2018
-</time>
+</span>
 `;
 
 exports[`Timestamp should render without a leading zero on the day 1`] = `
@@ -108,10 +114,13 @@ exports[`Timestamp should render without a leading zero on the day 1`] = `
   }
 }
 
-<time
-  class="c0"
-  datetime="2018-07-07"
+<span
+  role="text"
 >
+  <time
+    class="c0"
+    datetime="2018-07-07"
+  />
   ۷ ژوئیه ۲۰۱۸
-</time>
+</span>
 `;

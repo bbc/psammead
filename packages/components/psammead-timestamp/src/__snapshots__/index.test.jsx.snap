@@ -30,12 +30,15 @@ exports[`Timestamp should render Timestamp correctly 1`] = `
   }
 }
 
-<time
-  class="c0"
-  datetime="1530947227000"
+<span
+  role="text"
 >
+  <time
+    class="c0"
+    datetime="1530947227000"
+  />
   7 July 2018
-</time>
+</span>
 `;
 
 exports[`Timestamp should render Timestamp with a prefix 1`] = `
@@ -68,12 +71,15 @@ exports[`Timestamp should render Timestamp with a prefix 1`] = `
   }
 }
 
-<time
-  class="c0"
-  datetime="1530947227000"
+<span
+  role="text"
 >
+  <time
+    class="c0"
+    datetime="1530947227000"
+  />
   Updated 7 July 2018
-</time>
+</span>
 `;
 
 exports[`Timestamp should render Timestamp without padding 1`] = `
@@ -101,12 +107,15 @@ exports[`Timestamp should render Timestamp without padding 1`] = `
   }
 }
 
-<time
-  class="c0"
-  datetime="1530947227000"
+<span
+  role="text"
 >
+  <time
+    class="c0"
+    datetime="1530947227000"
+  />
   Updated 7 July 2018
-</time>
+</span>
 `;
 
 exports[`Timestamp should render with the correct typography style applied 1`] = `
@@ -139,10 +148,13 @@ exports[`Timestamp should render with the correct typography style applied 1`] =
   }
 }
 
-<time
-  class="c0"
-  datetime="1530947227000"
+<span
+  role="text"
 >
+  <time
+    class="c0"
+    datetime="1530947227000"
+  />
   7 July 2018
-</time>
+</span>
 `;
