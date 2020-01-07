@@ -47,7 +47,6 @@ import { latin } from '@bbc/gel-foundations/scripts';
   script={latin}
   dir="ltr"
 >
-  // FYI there can be multiple MostReadItemWrapper here
   <MostReadItemWrapper dir='ltr' key={1}>
     <MostReadRank service='news' script=latin listIndex={1} numberOfItems={10} dir='ltr'/>
     <MostReadLink dir='ltr href='/bbc.co.uk/news/articles/27051997' service='news' script={latin} title='This is a news article headline'/>
