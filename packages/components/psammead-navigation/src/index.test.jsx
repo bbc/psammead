@@ -64,7 +64,7 @@ describe('Navigation', () => {
 describe('Scrollable Navigation', () => {
   shouldMatchSnapshot(
     'should render scrollable Canonical version correctly',
-    <CanonicalScrollableNavigation isScrollable>
+    <CanonicalScrollableNavigation>
       {NavigationExample}
     </CanonicalScrollableNavigation>,
   );

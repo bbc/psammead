@@ -1,6 +1,6 @@
 import React from 'react';
 import styled, { css } from 'styled-components';
-import { node, oneOf, bool } from 'prop-types';
+import { node, oneOf } from 'prop-types';
 import { GEL_GROUP_2_SCREEN_WIDTH_MAX } from '@bbc/gel-foundations/breakpoints';
 
 /* Convert C_POSTBOX to rgba as IE doesn't like 8 digit hex */
@@ -42,30 +42,13 @@ const StyledScrollableNav = styled.div`
   }
 `;
 
-export const CanonicalScrollableNavigation = ({
-  children,
-  dir,
-  isScrollable,
-}) => {
-  const ariaHidden = isScrollable && { 'aria-hidden': true };
-
-  return (
-    <StyledScrollableNav dir={dir} {...ariaHidden}>
-      {React.Children.map(children, child =>
-        React.cloneElement(child, { isScrollable }),
-      )}
-    </StyledScrollableNav>
-  );
-};
+export const CanonicalScrollableNavigation = ({ children, dir }) => (
+  <StyledScrollableNav dir={dir}>{children}</StyledScrollableNav>
+);
 
 CanonicalScrollableNavigation.propTypes = {
   children: node.isRequired,
   dir: oneOf(['ltr', 'rtl']),
-  isScrollable: bool,
-};
-
-CanonicalScrollableNavigation.defaultProps = {
-  isScrollable: false,
 };
 
 CanonicalScrollableNavigation.defaultProps = { dir: 'ltr' };

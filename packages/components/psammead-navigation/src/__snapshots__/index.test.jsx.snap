@@ -1653,7 +1653,6 @@ exports[`Scrollable Navigation should render scrollable Canonical version correc
 }
 
 <div
-  aria-hidden="true"
   class="c0"
   dir="ltr"
 >

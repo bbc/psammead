@@ -1,7 +1,6 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import styled from 'styled-components';
-import { useEffect, useState } from '@storybook/addons';
 import {
   color,
   select,
@@ -143,24 +142,12 @@ const navigationStory = (currentPageText, navData, dir, brand, isAmp) => ({
     ? AmpScrollableNavigation
     : CanonicalScrollableNavigation;
 
-  const [isScrollable, setIsScrollable] = useState(false);
-
-  useEffect(() => {
-    const mediaQueryList = window.matchMedia('(max-width: 37.5rem)');
-    setIsScrollable(mediaQueryList.matches);
-
-    const handler = event => setIsScrollable(event.matches);
-    mediaQueryList.addListener(handler);
-
-    return () => mediaQueryList.removeListener(handler);
-  }, []);
-
   return (
     <>
       {brand && getBrand()}
 
       <Navigation script={script} service={service} dir={dir}>
-        <ScrollableNavigation dir={dir} isScrollable={isScrollable}>
+        <ScrollableNavigation dir={dir}>
           <NavigationUl>
             {navData.map((item, index) => {
               const { title, url } = item;
