@@ -109,7 +109,7 @@ The `@bbc/psammead-navigation` package is a set of two components, `NavigationUl
 
 ```jsx
 import React from 'react';
-import { CanonicalScrollableNavigation } from '@bbc/psammead-navigation/scrollable';
+import { ScrollableNavigation } from '@bbc/psammead-navigation/scrollable';
 import Navigation, {
   NavigationUl,
   NavigationLi,
@@ -117,7 +117,7 @@ import Navigation, {
 import { latin } from '@bbc/gel-foundations/scripts';
 
 <Navigation>
-  <CanonicalScrollableNavigation>
+  <ScrollableNavigation>
     <NavigationUl>
       <NavigationLi
         url="/"
@@ -135,7 +135,7 @@ import { latin } from '@bbc/gel-foundations/scripts';
         {Weather}
       </NavigationLi>
     </NavigationUl>
-  </CanonicalScrollableNavigation>
+  </ScrollableNavigation>
 </Navigation>;
 ```
 
@@ -202,13 +202,13 @@ import { latin } from '@bbc/gel-foundations/scripts';
 />
 ```
 
-Note that in order for the `AmpMenuButton` toggling to work correctly, an `id` should be added to the `Navigation` component. This `id` can be passed in as a prop to the component. Similarly, `AmpScrollableNavigation` also requires an `id` to be added to it.
+Note that in order for the `AmpMenuButton` toggling to work correctly, an `id` should be added to the `Navigation` component. This `id` can be passed in as a prop to the component. Similarly, `ScrollableNavigation` also requires an `id` to be added to it.
 
 ### When to use this component
 
 The `Navigation` is designed to show a navigation bar on all pages, which will show all sections on a site. If there are too many items to fit on one line, the items will wrap to the next lines.
 
-On the other hand, with `CanonicalScrollableNavigation` or `AmpScrollableNavigation` we can make the list to remain on one line and to be horizontally scrollable to allow access to further links, under 600px.
+On the other hand, with `ScrollableNavigation` we can make the list to remain on one line and to be horizontally scrollable to allow access to further links, under 600px.
 
 ### Accessibility notes
 
