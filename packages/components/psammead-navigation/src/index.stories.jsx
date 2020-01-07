@@ -22,10 +22,7 @@ import {
   DropdownUl,
   DropdownLi,
 } from './DropdownNavigation';
-import {
-  CanonicalScrollableNavigation,
-  AmpScrollableNavigation,
-} from './ScrollableNavigation';
+import { ScrollableNavigation } from './ScrollableNavigation';
 import igboNavData from '../testHelpers/igbo';
 import pidginNavData from '../testHelpers/pidgin';
 import yorubaNavData from '../testHelpers/yoruba';
@@ -134,14 +131,10 @@ const getBrand = () => {
   );
 };
 
-const navigationStory = (currentPageText, navData, dir, brand, isAmp) => ({
+const navigationStory = (currentPageText, navData, dir, brand) => ({
   script,
   service,
 }) => {
-  const ScrollableNavigation = isAmp
-    ? AmpScrollableNavigation
-    : CanonicalScrollableNavigation;
-
   return (
     <>
       {brand && getBrand()}

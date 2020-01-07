@@ -42,28 +42,19 @@ const StyledScrollableNav = styled.div`
   }
 `;
 
-export const CanonicalScrollableNavigation = ({ children, dir }) => (
-  <StyledScrollableNav dir={dir}>{children}</StyledScrollableNav>
-);
-
-CanonicalScrollableNavigation.propTypes = {
-  children: node.isRequired,
-  dir: oneOf(['ltr', 'rtl']),
-};
-
-CanonicalScrollableNavigation.defaultProps = { dir: 'ltr' };
-
-export const AmpScrollableNavigation = ({ children, dir, ...props }) => (
+export const ScrollableNavigation = ({ children, dir, ...props }) => (
   <StyledScrollableNav dir={dir} {...props}>
     {children}
   </StyledScrollableNav>
 );
 
-AmpScrollableNavigation.propTypes = {
+ScrollableNavigation.propTypes = {
   children: node.isRequired,
   dir: oneOf(['ltr', 'rtl']),
 };
 
-AmpScrollableNavigation.defaultProps = {
+ScrollableNavigation.defaultProps = {
   dir: 'ltr',
 };
+
+export default ScrollableNavigation;
