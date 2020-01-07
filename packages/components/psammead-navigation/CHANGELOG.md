@@ -3,7 +3,8 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
-| 6.0.0-alpha.18 | [PR#2875](https://github.com/bbc/psammead/pull/2875) Remove aria-hidden from the scrollable navigation |
+| 6.0.0-alpha.19 | [PR#2875](https://github.com/bbc/psammead/pull/2875) Remove aria-hidden from the scrollable navigation |
+| 6.0.0-alpha.18 | [PR#2847](https://github.com/bbc/psammead/pull/2847) Add animation to Dropdown Navigation |
 | 6.0.0-alpha.17 | [PR#2829](https://github.com/bbc/psammead/pull/2829) Remove references to SkipLink |
 | 6.0.0-alpha.16 | [PR#2827](https://github.com/bbc/psammead/pull/2827) Talos - Bump Dependencies - @bbc/psammead-assets |
 | 6.0.0-alpha.15 | [PR#2802](https://github.com/bbc/psammead/pull/2802) Spread extra Navigation props |

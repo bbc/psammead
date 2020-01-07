@@ -101,4 +101,22 @@ describe('Assertions', () => {
       container.querySelector('a').getAttribute('data-navigation'),
     ).toEqual('test_navigation');
   });
+
+  it('should set tab index on links to -1 if isScrollable is true on NavigationLi', () => {
+    const { container } = render(
+      <NavigationLi
+        key="test-key"
+        url="http://test.url"
+        script={latin}
+        currentPageText="Current page"
+        service="news"
+        isScrollable
+        active
+        data-navigation="test_navigation"
+      >
+        Testing isScrollable
+      </NavigationLi>,
+    );
+    expect(container.querySelector('a').getAttribute('tabindex')).toEqual('-1');
+  });
 });

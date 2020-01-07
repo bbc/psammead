@@ -64,7 +64,15 @@ The `@bbc/psammead-navigation` package is a set of two components, `NavigationUl
 | children | node | Yes      | N/A     | `<NavigationUl><NavigationLi url="/" script={latin} active="true">Home</NavigationLi><NavigationLi url="/sport" script={latin}>{Sport}</NavigationLi></NavigationUl>` |
 | dir      | string  | No       | `'ltr'`   | `'rtl'` |
 
-### Dropdown
+### CanonicalDropdown
+
+<!-- prettier-ignore -->
+| Argument | Type | Required | Default | Example |
+| -------- | ---- | -------- | ------- | ------- |
+| children | node | Yes | N/A | `<DropdownUl><DropdownLi script={latin} service='news' key='sport' url='/sport' active="false"> Sport </DropdownLi></DropdownUl>` |
+| isOpen | bool | Yes | N/A | `false` |
+
+### AmpDropdown
 
 <!-- prettier-ignore -->
 | Argument | Type | Required | Default | Example |
@@ -150,7 +158,7 @@ import {
 } from '@bbc/psammead-navigation/dropdown';
 import { latin } from '@bbc/gel-foundations/scripts';
 
-<Dropdown>
+<CanonicalDropdown isOpen={isOpen}>
   <DropdownUl>
     <DropdownLi
       script={latin}
@@ -166,7 +174,7 @@ import { latin } from '@bbc/gel-foundations/scripts';
       Sport
     </DropdownLi>
   </DropdownUl>
-</Dropdown>
+</CanonicalDropdown>
 ```
 
 ## Canonical Menu Button Usage
