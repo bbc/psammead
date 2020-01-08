@@ -162,12 +162,29 @@ const BulletinSummary = styled.p`
   padding-bottom: ${GEL_SPACING_DBL};
 `;
 
+// This is needed to get around the issue of IE11 not supporting
+// nested media queries
+const getHeadlineFontStyle = script => {
+  const fontSize = script.greatPrimer.groupD.fontSize / 16;
+  const lineHeight = script.greatPrimer.groupD.lineHeight / 16;
+
+  return css`
+    font-size: ${fontSize}rem;
+    line-height: ${lineHeight}rem;
+  `;
+};
+
 const headingStyles = css`
   ${({ service }) => service && getSerifMedium(service)}
   ${({ script }) => script && getPica(script)}
+
   color: ${C_EBON};
   margin: 0; /* Reset */
   padding: ${GEL_SPACING};
+
+  @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
+    ${({ script }) => script && getHeadlineFontStyle(script)}
+  }
 `;
 
 const TVHeading = styled.h3`
