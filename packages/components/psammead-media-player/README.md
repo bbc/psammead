@@ -29,7 +29,7 @@ This component to be used at any point on the page, specifically when a media pl
 | [`mediaInfo`](#mediaInfo) | object | Yes   | - | `{ title: 'A vertical video pretending to be a cat title', duration: '2:30', durationSpoken: '2 minutes 11 seconds', datetime: 'PT2M30S' }`|
 | `noJsClassName` | string | No | `null` | `'no-js'` |
 | `noJsMessage` | string | Yes | - | `'This media cannot play in your browser. Please enable Javascript or use a different browser.'` |
-
+| `timeoutMs` | number | No | `5000` | `9001` |
 
 The `src` prop is required, as it tells the component what page it needs to embed.
 The `placeholderSrcset` prop is not required, as it allows image responsiveness and optimization depending on the size of the screen.
@@ -40,6 +40,7 @@ Assuming `showPlaceholder` is `true`, the `placeholderSrc` will be what image to
 The `noJsClassName` is an optional prop that defaults to `null` and is used to add styling support to certain elements when javascript is disabled in the browser.
 The `noJsMessage` is a required prop used display a fallback text when javascript is disabled in the browser. 
 The `mediaInfo` prop is required, and has the following properties.
+The `timeoutMs` prop allows you to override the default timeout value. If media fails to load in this time, users are shown a timeout message.
 
 #### mediaInfo
 
@@ -81,6 +82,7 @@ const Container = ({
   mediaInfo,
   noJsClassName,
   noJsMessage,
+  timeoutMs,
 }) => (
   <CanonicalMediaPlayer
     src={src}
@@ -94,6 +96,7 @@ const Container = ({
     mediaInfo={mediaInfo}
     noJsClassName={noJsClassName}
     noJsMessage={noJsMessage}
+    timeoutMs={timeoutMs}
   />
 )
 ```
