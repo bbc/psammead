@@ -16,15 +16,17 @@ const useTimeout = (callback, iframeRef, timeout) => {
     callback(false);
   };
 
-  // This particular effect will run on mount and (the returned function) on unmount.
+  // The function we pass to useEffect will run on mount, and the one we return will
+  // run on unmount. We don't do anything if the value of `timeout` can't be used.
+  // eslint-disable-next-line consistent-return
   useEffect(() => {
-    // The `current` property of a React DOM reference refers to the element we're
-    // attaching a `load` event handler to. This event will be removed after firing.
-    iframeRef.current.addEventListener('load', handleLoad, { once: true });
-    timer.current = setTimeout(() => {
-      callback(true);
-    }, timeout);
-    return () => clearTimeout(timer.current);
+    if (timeout > 0) {
+      iframeRef.current.addEventListener('load', handleLoad, { once: true });
+      timer.current = setTimeout(() => {
+        callback(true);
+      }, timeout);
+      return () => clearTimeout(timer.current);
+    }
   }, []);
 };
 
