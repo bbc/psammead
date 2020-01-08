@@ -12,7 +12,8 @@ const BulletedList = styled.ul.attrs(() => ({
   role: 'list',
 }))`
   ${({ script }) => script && getBodyCopy(script)};
-  ${({ service }) => getSansRegular(service)}
+  ${({ service }) => getSansRegular(service)};
+  margin-block-start: 0;
   list-style-type: none;
   & > li::before {
     content: '\u00A0';
