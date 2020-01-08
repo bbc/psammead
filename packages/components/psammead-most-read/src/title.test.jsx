@@ -1,7 +1,7 @@
 import React from 'react';
 import { shouldMatchSnapshot } from '@bbc/psammead-test-helpers';
 import { latin, arabic } from '@bbc/gel-foundations/scripts';
-import MostReadTitle from '.';
+import MostReadTitle from './title';
 
 describe('Most read title', () => {
   shouldMatchSnapshot(

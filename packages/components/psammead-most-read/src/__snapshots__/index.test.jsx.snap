@@ -5,10 +5,6 @@ exports[`MostRead should render with ltr most read with correct dir 1`] = `
   position: relative;
 }
 
-.c4 {
-  position: relative;
-}
-
 .c1 {
   list-style-type: none;
   margin: 0;
@@ -18,6 +14,18 @@ exports[`MostRead should render with ltr most read with correct dir 1`] = `
 .c3 {
   grid-auto-flow: column;
   grid-template-rows: repeat( 5,[col-start] auto [col-end] );
+}
+
+.c5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  margin: 0;
+  padding: 0;
 }
 
 .c0 {
@@ -64,22 +72,58 @@ exports[`MostRead should render with ltr most read with correct dir 1`] = `
   padding-right: 1rem;
 }
 
-.c5 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  margin: 0;
-  padding: 0;
-}
-
 @supports (display:grid) {
   .c2 {
     display: grid;
     position: initial;
+  }
+}
+
+@media (max-width:14.9375rem) {
+  .c4 {
+    display: inline-block;
+    width: 100%;
+    vertical-align: top;
+  }
+}
+
+@media (min-width:15rem) and (max-width:24.9375rem) {
+  .c4 {
+    display: inline-block;
+    width: 100%;
+    vertical-align: top;
+  }
+}
+
+@media (min-width:25rem) and (max-width:37.4375rem) {
+  .c4 {
+    display: inline-block;
+    width: 50%;
+    vertical-align: top;
+  }
+}
+
+@media (min-width:37.5rem) and (max-width:62.9375rem) {
+  .c4 {
+    display: inline-block;
+    width: 50%;
+    vertical-align: top;
+  }
+}
+
+@media (min-width:63rem) and (max-width:80rem) {
+  .c4 {
+    display: inline-block;
+    width: 50%;
+    vertical-align: top;
+  }
+}
+
+@media (min-width:80rem) {
+  .c4 {
+    display: inline-block;
+    width: 20%;
+    vertical-align: top;
   }
 }
 
@@ -308,6 +352,7 @@ exports[`MostRead should render with ltr most read with correct dir 1`] = `
   >
     <h2
       class="c0"
+      dir="ltr"
       id="most-read-title"
     >
       Most Read
@@ -651,10 +696,6 @@ exports[`MostRead should render with rtl most read with correct dir 1`] = `
   position: relative;
 }
 
-.c4 {
-  position: relative;
-}
-
 .c1 {
   list-style-type: none;
   margin: 0;
@@ -666,8 +707,20 @@ exports[`MostRead should render with rtl most read with correct dir 1`] = `
   grid-template-rows: repeat( 5,[col-start] auto [col-end] );
 }
 
+.c5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  margin: 0;
+  padding: 0;
+}
+
 .c0 {
-  font-family: "BBC Nassim Persian",Arial,Verdana,Geneva,Helvetica,sans-serif;
+  font-family: "BBC Nassim Arabic",Arial,Verdana,Geneva,Helvetica,sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: 1.5rem;
@@ -676,7 +729,7 @@ exports[`MostRead should render with rtl most read with correct dir 1`] = `
 }
 
 .c7 {
-  font-family: "BBC Nassim Persian",Arial,Verdana,Geneva,Helvetica,sans-serif;
+  font-family: "BBC Nassim Arabic",Arial,Verdana,Geneva,Helvetica,sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: 2rem;
@@ -690,7 +743,7 @@ exports[`MostRead should render with rtl most read with correct dir 1`] = `
 .c9 {
   font-size: 1.5rem;
   line-height: 2rem;
-  font-family: "BBC Nassim Persian",Arial,Verdana,Geneva,Helvetica,sans-serif;
+  font-family: "BBC Nassim Arabic",Arial,Verdana,Geneva,Helvetica,sans-serif;
   font-weight: 700;
   font-style: normal;
   color: #222222;
@@ -710,22 +763,58 @@ exports[`MostRead should render with rtl most read with correct dir 1`] = `
   padding-left: 1rem;
 }
 
-.c5 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  margin: 0;
-  padding: 0;
-}
-
 @supports (display:grid) {
   .c2 {
     display: grid;
     position: initial;
+  }
+}
+
+@media (max-width:14.9375rem) {
+  .c4 {
+    display: inline-block;
+    width: 100%;
+    vertical-align: top;
+  }
+}
+
+@media (min-width:15rem) and (max-width:24.9375rem) {
+  .c4 {
+    display: inline-block;
+    width: 100%;
+    vertical-align: top;
+  }
+}
+
+@media (min-width:25rem) and (max-width:37.4375rem) {
+  .c4 {
+    display: inline-block;
+    width: 50%;
+    vertical-align: top;
+  }
+}
+
+@media (min-width:37.5rem) and (max-width:62.9375rem) {
+  .c4 {
+    display: inline-block;
+    width: 50%;
+    vertical-align: top;
+  }
+}
+
+@media (min-width:63rem) and (max-width:80rem) {
+  .c4 {
+    display: inline-block;
+    width: 50%;
+    vertical-align: top;
+  }
+}
+
+@media (min-width:80rem) {
+  .c4 {
+    display: inline-block;
+    width: 20%;
+    vertical-align: top;
   }
 }
 
@@ -823,36 +912,6 @@ exports[`MostRead should render with rtl most read with correct dir 1`] = `
 }
 
 @media (max-width:14.9375rem) {
-  .c11 {
-    min-width: 2.5rem;
-  }
-}
-
-@media (min-width:15rem) and (max-width:24.9375rem) {
-  .c11 {
-    min-width: 2.5rem;
-  }
-}
-
-@media (min-width:25rem) and (max-width:37.4375rem) {
-  .c11 {
-    min-width: auto;
-  }
-}
-
-@media (min-width:37.5rem) and (max-width:80rem) {
-  .c11 {
-    min-width: auto;
-  }
-}
-
-@media (min-width:80rem) {
-  .c11 {
-    min-width: 4.25rem;
-  }
-}
-
-@media (max-width:14.9375rem) {
   .c12 {
     min-width: 2.5rem;
   }
@@ -912,6 +971,36 @@ exports[`MostRead should render with rtl most read with correct dir 1`] = `
   }
 }
 
+@media (max-width:14.9375rem) {
+  .c11 {
+    min-width: 2.5rem;
+  }
+}
+
+@media (min-width:15rem) and (max-width:24.9375rem) {
+  .c11 {
+    min-width: 2.5rem;
+  }
+}
+
+@media (min-width:25rem) and (max-width:37.4375rem) {
+  .c11 {
+    min-width: auto;
+  }
+}
+
+@media (min-width:37.5rem) and (max-width:80rem) {
+  .c11 {
+    min-width: auto;
+  }
+}
+
+@media (min-width:80rem) {
+  .c11 {
+    min-width: 3.75rem;
+  }
+}
+
 @media (min-width:20rem) and (max-width:37.4375rem) {
   .c7 {
     font-size: 2.5rem;
@@ -954,6 +1043,7 @@ exports[`MostRead should render with rtl most read with correct dir 1`] = `
   >
     <h2
       class="c0"
+      dir="rtl"
       id="most-read-title"
     >
       الأكثر قراءة
@@ -992,9 +1082,9 @@ exports[`MostRead should render with rtl most read with correct dir 1`] = `
           >
             <a
               class="c9"
-              href="https://www.bbc.com/persian/articles/cej3lzd5e0go"
+              href="https://www.bbc.com/arabic/articles/c1er5mjnznzo"
             >
-              در این جشنواره برای نخستین بار از کارگران افغانستان در شهر تهران تقدیر شد
+              لماذا يخجل البعض من اسم قريته في مصر؟
             </a>
           </div>
         </li>
@@ -1024,9 +1114,9 @@ exports[`MostRead should render with rtl most read with correct dir 1`] = `
           >
             <a
               class="c9"
-              href="https://www.bbc.com/persian/articles/cej3lzd5e0go"
+              href="https://www.bbc.com/arabic/articles/c1er5mjnznzo"
             >
-              در این جشنواره برای نخستین بار از کارگران افغانستان در شهر تهران تقدیر شد
+              لماذا يخجل البعض من اسم قريته في مصر؟
             </a>
           </div>
         </li>
@@ -1056,9 +1146,9 @@ exports[`MostRead should render with rtl most read with correct dir 1`] = `
           >
             <a
               class="c9"
-              href="https://www.bbc.com/persian/articles/cej3lzd5e0go"
+              href="https://www.bbc.com/arabic/articles/c1er5mjnznzo"
             >
-              در این جشنواره برای نخستین بار از کارگران افغانستان در شهر تهران تقدیر شد
+              لماذا يخجل البعض من اسم قريته في مصر؟
             </a>
           </div>
         </li>
@@ -1088,9 +1178,9 @@ exports[`MostRead should render with rtl most read with correct dir 1`] = `
           >
             <a
               class="c9"
-              href="https://www.bbc.com/persian/articles/cej3lzd5e0go"
+              href="https://www.bbc.com/arabic/articles/c1er5mjnznzo"
             >
-              در این جشنواره برای نخستین بار از کارگران افغانستان در شهر تهران تقدیر شد
+              لماذا يخجل البعض من اسم قريته في مصر؟
             </a>
           </div>
         </li>
@@ -1120,9 +1210,9 @@ exports[`MostRead should render with rtl most read with correct dir 1`] = `
           >
             <a
               class="c9"
-              href="https://www.bbc.com/persian/articles/cej3lzd5e0go"
+              href="https://www.bbc.com/arabic/articles/c1er5mjnznzo"
             >
-              در این جشنواره برای نخستین بار از کارگران افغانستان در شهر تهران تقدیر شد
+              لماذا يخجل البعض من اسم قريته في مصر؟
             </a>
           </div>
         </li>
@@ -1152,9 +1242,9 @@ exports[`MostRead should render with rtl most read with correct dir 1`] = `
           >
             <a
               class="c9"
-              href="https://www.bbc.com/persian/articles/cej3lzd5e0go"
+              href="https://www.bbc.com/arabic/articles/c1er5mjnznzo"
             >
-              در این جشنواره برای نخستین بار از کارگران افغانستان در شهر تهران تقدیر شد
+              لماذا يخجل البعض من اسم قريته في مصر؟
             </a>
           </div>
         </li>
@@ -1184,9 +1274,9 @@ exports[`MostRead should render with rtl most read with correct dir 1`] = `
           >
             <a
               class="c9"
-              href="https://www.bbc.com/persian/articles/cej3lzd5e0go"
+              href="https://www.bbc.com/arabic/articles/c1er5mjnznzo"
             >
-              در این جشنواره برای نخستین بار از کارگران افغانستان در شهر تهران تقدیر شد
+              لماذا يخجل البعض من اسم قريته في مصر؟
             </a>
           </div>
         </li>
@@ -1216,9 +1306,9 @@ exports[`MostRead should render with rtl most read with correct dir 1`] = `
           >
             <a
               class="c9"
-              href="https://www.bbc.com/persian/articles/cej3lzd5e0go"
+              href="https://www.bbc.com/arabic/articles/c1er5mjnznzo"
             >
-              در این جشنواره برای نخستین بار از کارگران افغانستان در شهر تهران تقدیر شد
+              لماذا يخجل البعض من اسم قريته في مصر؟
             </a>
           </div>
         </li>
@@ -1248,9 +1338,9 @@ exports[`MostRead should render with rtl most read with correct dir 1`] = `
           >
             <a
               class="c9"
-              href="https://www.bbc.com/persian/articles/cej3lzd5e0go"
+              href="https://www.bbc.com/arabic/articles/c1er5mjnznzo"
             >
-              در این جشنواره برای نخستین بار از کارگران افغانستان در شهر تهران تقدیر شد
+              لماذا يخجل البعض من اسم قريته في مصر؟
             </a>
           </div>
         </li>
@@ -1280,9 +1370,9 @@ exports[`MostRead should render with rtl most read with correct dir 1`] = `
           >
             <a
               class="c9"
-              href="https://www.bbc.com/persian/articles/cej3lzd5e0go"
+              href="https://www.bbc.com/arabic/articles/c1er5mjnznzo"
             >
-              در این جشنواره برای نخستین بار از کارگران افغانستان در شهر تهران تقدیر شد
+              لماذا يخجل البعض من اسم قريته في مصر؟
             </a>
           </div>
         </li>

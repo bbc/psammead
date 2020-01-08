@@ -3,12 +3,13 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { withKnobs } from '@storybook/addon-knobs';
 import { withServicesKnob } from '@bbc/psammead-storybook-helpers';
-import { getItem, getItemWrapperArray, renderMostRead } from './testHelpers';
+import { getItem, getItemWrapperArray, getItems } from './testHelpers';
 import {
   MostReadRank,
   MostReadLink,
   MostReadTitle,
   MostReadList,
+  MostRead,
 } from './index';
 
 const arabicServiceDecorator = withServicesKnob({
@@ -162,24 +163,24 @@ storiesOf('Components|MostRead/Title', module)
 storiesOf('Components|MostRead', module)
   .addDecorator(withKnobs)
   .add('default LTR', () =>
-    newsServiceDecorator(({ script, service, dir }) =>
-      renderMostRead({
-        script,
-        service,
-        dir,
-        header: 'Most Read',
-        numberOfItems: 10,
-      }),
-    ),
+    newsServiceDecorator(({ script, service, dir }) => (
+      <MostRead
+        items={getItems('news', 10)}
+        script={script}
+        service={service}
+        header="Most Read"
+        dir={dir}
+      />
+    )),
   )
   .add('default RTL', () =>
-    arabicServiceDecorator(({ script, service, dir }) =>
-      renderMostRead({
-        script,
-        service,
-        dir,
-        header: 'الأكثر قراءة',
-        numberOfItems: 10,
-      }),
-    ),
+    arabicServiceDecorator(({ script, service, dir }) => (
+      <MostRead
+        items={getItems('arabic', 10)}
+        script={script}
+        service={service}
+        header="الأكثر قراءة"
+        dir={dir}
+      />
+    )),
   );

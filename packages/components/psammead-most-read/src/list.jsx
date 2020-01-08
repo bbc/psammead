@@ -68,3 +68,42 @@ MostReadList.defaultProps = {
 };
 
 export default MostReadList;
+
+const StyledLi = styled.li`
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  padding: 0;
+`;
+
+const MostReadItemProps = {
+  item: true,
+  columns: {
+    group0: 6,
+    group1: 6,
+    group2: 3,
+    group3: 3,
+    group4: 4,
+    group5: 4,
+  },
+};
+
+export const MostReadItemWrapper = ({ dir, children }) => (
+  <Grid
+    {...MostReadItemProps}
+    parentColumns={MostReadListProps.columns}
+    dir={dir}
+    forwardedAs="li"
+  >
+    <StyledLi>{children}</StyledLi>
+  </Grid>
+);
+
+MostReadItemWrapper.propTypes = {
+  dir: oneOf(['rtl', 'ltr']),
+  children: node.isRequired,
+};
+
+MostReadItemWrapper.defaultProps = {
+  dir: 'ltr',
+};

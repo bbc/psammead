@@ -2,7 +2,6 @@ import React from 'react';
 import { shape, string, oneOf, node } from 'prop-types';
 import styled from 'styled-components';
 import { getDoublePica } from '@bbc/gel-foundations/typography';
-import Grid from '@bbc/psammead-grid';
 import { C_EBON } from '@bbc/psammead-styles/colours';
 import { scriptPropType } from '@bbc/gel-foundations/prop-types';
 import { grid } from '@bbc/psammead-styles/detection';
@@ -71,36 +70,4 @@ MostReadLink.defaultProps = {
   children: null,
 };
 
-const MostReadItemProps = {
-  item: true,
-  columns: {
-    group0: 6,
-    group1: 6,
-    group2: 3,
-    group3: 3,
-    group4: 4,
-    group5: 4,
-  },
-};
-
-const StyledLi = styled.li`
-  display: flex;
-  flex-direction: row;
-  margin: 0;
-  padding: 0;
-`;
-
-export const MostReadItemWrapper = ({ dir, children }) => (
-  <Grid {...MostReadItemProps} dir={dir} forwardedAs="li">
-    <StyledLi>{children}</StyledLi>
-  </Grid>
-);
-
-MostReadItemWrapper.propTypes = {
-  dir: oneOf(['rtl', 'ltr']),
-  children: node.isRequired,
-};
-
-MostReadItemWrapper.defaultProps = {
-  dir: 'ltr',
-};
+export default MostReadLink;

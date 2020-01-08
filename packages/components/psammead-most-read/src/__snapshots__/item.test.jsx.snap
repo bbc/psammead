@@ -1,8 +1,28 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`MostReadItemWrapper should render ltr correctly with 10 items 1`] = `
-.c0 {
-  position: relative;
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  margin: 0;
+  padding: 0;
+}
+
+.c3 {
+  font-family: ReithSerif,Helvetica,Arial,sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 2rem;
+  line-height: 2.25rem;
+  color: #B80000;
+  margin: 0;
+  padding: 0;
+  float: left;
 }
 
 .c5 {
@@ -28,53 +48,57 @@ exports[`MostReadItemWrapper should render ltr correctly with 10 items 1`] = `
   padding-right: 1rem;
 }
 
-.c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  margin: 0;
-  padding: 0;
+@media (max-width:14.9375rem) {
+  .c0 {
+    display: inline-block;
+    width: 100%;
+    vertical-align: top;
+  }
 }
 
-.c3 {
-  font-family: ReithSerif,Helvetica,Arial,sans-serif;
-  font-weight: 300;
-  font-style: normal;
-  font-size: 2rem;
-  line-height: 2.25rem;
-  color: #B80000;
-  margin: 0;
-  padding: 0;
-  float: left;
+@media (min-width:15rem) and (max-width:24.9375rem) {
+  .c0 {
+    display: inline-block;
+    width: 100%;
+    vertical-align: top;
+  }
+}
+
+@media (min-width:25rem) and (max-width:37.4375rem) {
+  .c0 {
+    display: inline-block;
+    width: 50%;
+    vertical-align: top;
+  }
+}
+
+@media (min-width:37.5rem) and (max-width:62.9375rem) {
+  .c0 {
+    display: inline-block;
+    width: 50%;
+    vertical-align: top;
+  }
+}
+
+@media (min-width:63rem) and (max-width:80rem) {
+  .c0 {
+    display: inline-block;
+    width: 50%;
+    vertical-align: top;
+  }
+}
+
+@media (min-width:80rem) {
+  .c0 {
+    display: inline-block;
+    width: 20%;
+    vertical-align: top;
+  }
 }
 
 @supports (display:grid) {
   .c0 {
     display: block;
-  }
-}
-
-@media (min-width:20rem) and (max-width:37.4375rem) {
-  .c5 {
-    font-size: 1.25rem;
-    line-height: 1.5rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c5 {
-    font-size: 1.5rem;
-    line-height: 1.75rem;
-  }
-}
-
-@supports (grid-template-columns:fit-content(200px)) {
-  .c4 {
-    padding-right: 0;
   }
 }
 
@@ -239,6 +263,26 @@ exports[`MostReadItemWrapper should render ltr correctly with 10 items 1`] = `
   .c3 {
     font-size: 3.5rem;
     line-height: 3.75rem;
+  }
+}
+
+@media (min-width:20rem) and (max-width:37.4375rem) {
+  .c5 {
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .c5 {
+    font-size: 1.5rem;
+    line-height: 1.75rem;
+  }
+}
+
+@supports (grid-template-columns:fit-content(200px)) {
+  .c4 {
+    padding-right: 0;
   }
 }
 
@@ -567,8 +611,28 @@ exports[`MostReadItemWrapper should render ltr correctly with 10 items 1`] = `
 `;
 
 exports[`MostReadItemWrapper should render rtl correctly with 10 items 1`] = `
-.c0 {
-  position: relative;
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  margin: 0;
+  padding: 0;
+}
+
+.c3 {
+  font-family: "BBC Nassim Persian",Arial,Verdana,Geneva,Helvetica,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2rem;
+  line-height: 2.25rem;
+  color: #B80000;
+  margin: 0;
+  padding: 0;
+  float: right;
 }
 
 .c5 {
@@ -594,53 +658,57 @@ exports[`MostReadItemWrapper should render rtl correctly with 10 items 1`] = `
   padding-left: 1rem;
 }
 
-.c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  margin: 0;
-  padding: 0;
+@media (max-width:14.9375rem) {
+  .c0 {
+    display: inline-block;
+    width: 100%;
+    vertical-align: top;
+  }
 }
 
-.c3 {
-  font-family: "BBC Nassim Persian",Arial,Verdana,Geneva,Helvetica,sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 2rem;
-  line-height: 2.25rem;
-  color: #B80000;
-  margin: 0;
-  padding: 0;
-  float: right;
+@media (min-width:15rem) and (max-width:24.9375rem) {
+  .c0 {
+    display: inline-block;
+    width: 100%;
+    vertical-align: top;
+  }
+}
+
+@media (min-width:25rem) and (max-width:37.4375rem) {
+  .c0 {
+    display: inline-block;
+    width: 50%;
+    vertical-align: top;
+  }
+}
+
+@media (min-width:37.5rem) and (max-width:62.9375rem) {
+  .c0 {
+    display: inline-block;
+    width: 50%;
+    vertical-align: top;
+  }
+}
+
+@media (min-width:63rem) and (max-width:80rem) {
+  .c0 {
+    display: inline-block;
+    width: 50%;
+    vertical-align: top;
+  }
+}
+
+@media (min-width:80rem) {
+  .c0 {
+    display: inline-block;
+    width: 20%;
+    vertical-align: top;
+  }
 }
 
 @supports (display:grid) {
   .c0 {
     display: block;
-  }
-}
-
-@media (min-width:20rem) and (max-width:37.4375rem) {
-  .c5 {
-    font-size: 1.625rem;
-    line-height: 2.25rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c5 {
-    font-size: 1.75rem;
-    line-height: 2.25rem;
-  }
-}
-
-@supports (grid-template-columns:fit-content(200px)) {
-  .c4 {
-    padding-left: 0;
   }
 }
 
@@ -805,6 +873,26 @@ exports[`MostReadItemWrapper should render rtl correctly with 10 items 1`] = `
   .c3 {
     font-size: 3.5rem;
     line-height: 3.75rem;
+  }
+}
+
+@media (min-width:20rem) and (max-width:37.4375rem) {
+  .c5 {
+    font-size: 1.625rem;
+    line-height: 2.25rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .c5 {
+    font-size: 1.75rem;
+    line-height: 2.25rem;
+  }
+}
+
+@supports (grid-template-columns:fit-content(200px)) {
+  .c4 {
+    padding-left: 0;
   }
 }
 
