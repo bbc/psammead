@@ -47,7 +47,6 @@ import { latin } from '@bbc/gel-foundations/scripts';
   script={latin}
   dir="ltr"
 >
-  // FYI there can be multiple MostReadItemWrapper here
   <MostReadItemWrapper dir='ltr' key={1}>
     <MostReadRank service='news' script=latin listIndex={1} numberOfItems={10} dir='ltr'/>
     <MostReadLink dir='ltr href='/bbc.co.uk/news/articles/27051997' service='news' script={latin} title='This is a news article headline'/>
@@ -62,7 +61,7 @@ import { latin } from '@bbc/gel-foundations/scripts';
 <!-- prettier-ignore -->
 | Argument | Type | Required | Default | Example |
 | -------- | ---- | -------- | ------- | ------- |
-| dir | oneOf(['rtl', 'ltr}) | yes | 'ltr' | `'ltr'`|
+| dir | string | yes | 'ltr' | `'ltr'`|
 | service | string | yes | N/A | `'news'` |
 | script | object | yes | N/A | `{ canon: { groupA: { fontSize: '28', lineHeight: '32',}, groupB: { fontSize: '32', lineHeight: '36', }, groupD: { fontSize: '44', lineHeight: '48', }, }, trafalgar: { groupA: { fontSize: '20', lineHeight: '24', }, groupB: { fontSize: '24', lineHeight: '28', }, groupD: { fontSize: '32', lineHeight: '36', }, }, }` |
 | title | string | yes | N/A | `"This is a article headline"` |
