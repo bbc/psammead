@@ -24,7 +24,7 @@ import { grid } from '@bbc/psammead-styles/detection';
 import { getSerifLight } from '@bbc/psammead-styles/font-styles';
 
 // For additional spacing for numerals in the right column because of '10' being double digits
-const isOnSecondColumn = ({ listIndex, numberOfItems }, supportsGrid) =>
+export const isOnSecondColumn = ({ listIndex, numberOfItems }, supportsGrid) =>
   supportsGrid ? listIndex > Math.ceil(numberOfItems / 2) : listIndex % 2 === 0;
 
 const listHasDoubleDigits = ({ numberOfItems }) => numberOfItems >= 9;

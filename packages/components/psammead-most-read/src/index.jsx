@@ -26,11 +26,13 @@ const MostRead = ({ items, script, service, header, dir }) => (
             dir={dir}
           />
           <MostReadLink
-            dir={dir}
-            service={service}
-            script={script}
             title={item.title}
             href={item.href}
+            service={service}
+            script={script}
+            listIndex={i}
+            numberOfItems={items.length}
+            dir={dir}
           />
         </MostReadItemWrapper>
       ))}
