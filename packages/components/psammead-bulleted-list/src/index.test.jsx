@@ -40,7 +40,7 @@ describe('PsammeadBulletedList', () => {
     expect(listItemEl.getAttribute('role')).toBe('listitem');
   });
 
-  it('should confirm that the margin-block-start property is zero', () => {
+  it('should confirm that the margin-top property is zero', () => {
     const { getByText } = render(
       <BulletedList {...ltrProps}>
         <BulletedListItem>First item on the list</BulletedListItem>
@@ -49,7 +49,7 @@ describe('PsammeadBulletedList', () => {
     const listItemEl = getByText('First item on the list');
     const listEl = listItemEl.parentNode;
     const style = window.getComputedStyle(listEl);
-    expect(style.marginBlockStart).toBe('0');
+    expect(style.marginTop).toBe('0px');
   });
 
   shouldMatchSnapshot(
