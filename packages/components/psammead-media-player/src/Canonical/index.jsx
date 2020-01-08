@@ -39,7 +39,7 @@ const Canonical = ({ service, src, title, placeholderSrc }) => {
         <Guidance
           service={service}
           guidanceMessage="The server did not respond. Please check your connection and try again."
-          noJsClassName="no-js"
+          noJsMessage=""
         />
       ) : (
         <StyledIframe
