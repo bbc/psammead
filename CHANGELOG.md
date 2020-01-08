@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 2.0.43 | [PR#2886](https://github.com/bbc/psammead/pull/2886) Talos - Bump Dependencies - @bbc/gel-foundations |
 | 2.0.42 | [PR#2879](https://github.com/bbc/psammead/pull/2879) Bump browserslist and lerna |
 | 2.0.41 | [PR#2865](https://github.com/bbc/psammead/pull/2865) Bumping dependencies |
 | 2.0.40 | [PR#2863](https://github.com/bbc/psammead/pull/2863) Talos - Bump Dependencies - @bbc/psammead-calendars |

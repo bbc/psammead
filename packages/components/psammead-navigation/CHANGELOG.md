@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 6.0.0-alpha.19 | [PR#2886](https://github.com/bbc/psammead/pull/2886) Talos - Bump Dependencies - @bbc/gel-foundations |
 | 6.0.0-alpha.18 | [PR#2847](https://github.com/bbc/psammead/pull/2847) Add animation to Dropdown Navigation |
 | 6.0.0-alpha.17 | [PR#2829](https://github.com/bbc/psammead/pull/2829) Remove references to SkipLink |
 | 6.0.0-alpha.16 | [PR#2827](https://github.com/bbc/psammead/pull/2827) Talos - Bump Dependencies - @bbc/psammead-assets |

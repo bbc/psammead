@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 | ------- | ----------- |
+| 5.1.0-alpha.11 | [PR#2886](https://github.com/bbc/psammead/pull/2886) Talos - Bump Dependencies - @bbc/gel-foundations |
 | 5.1.0-alpha.10 | [PR#2863](https://github.com/bbc/psammead/pull/2863) Talos - Bump Dependencies - @bbc/psammead-script-link |
 | 5.1.0-alpha.9 | [PR#2833](https://github.com/bbc/psammead/pull/2833) Wrap `scriptLink` in a div to fix Read&Write issue in chrome |
 | 5.1.0-alpha.8 | [PR#2701](https://github.com/bbc/psammead/pull/2701) Talos - Bump Dependencies - @bbc/psammead-styles |
