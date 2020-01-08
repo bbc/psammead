@@ -3,7 +3,7 @@ import { shouldMatchSnapshot } from '@bbc/psammead-test-helpers';
 import { render, fireEvent, getByRole } from '@testing-library/react';
 import { latin, arabic } from '@bbc/gel-foundations/scripts';
 import {
-  Dropdown,
+  CanonicalDropdown,
   DropdownUl,
   DropdownLi,
   CanonicalMenuButton,
@@ -143,8 +143,13 @@ describe('Canonical', () => {
 
 describe('Dropdown navigation', () => {
   shouldMatchSnapshot(
-    'should render correctly',
-    <Dropdown>{dropdownList}</Dropdown>,
+    'should render correctly when closed',
+    <CanonicalDropdown>{dropdownList}</CanonicalDropdown>,
+  );
+
+  shouldMatchSnapshot(
+    'should render correctly when open',
+    <CanonicalDropdown isOpen>{dropdownList}</CanonicalDropdown>,
   );
 });
 
