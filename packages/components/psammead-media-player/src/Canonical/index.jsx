@@ -1,16 +1,14 @@
 import React, { useState, useRef } from 'react';
-import { string } from 'prop-types';
+import { string, number } from 'prop-types';
 import styled, { css } from 'styled-components';
 import Guidance from '../Guidance';
 import useTimeout from './useTimeout';
 
-const TIMEOUT_MS = 5000;
-
-const Canonical = ({ service, src, title, placeholderSrc }) => {
+const Canonical = ({ service, src, title, placeholderSrc, timeoutMs }) => {
   const [hasTimedOut, setHasTimedOut] = useState(null);
   const iframeRef = useRef(null);
 
-  useTimeout(setHasTimedOut, iframeRef, TIMEOUT_MS);
+  useTimeout(setHasTimedOut, iframeRef, timeoutMs);
 
   const CanonicalWrapper = styled.div`
     left: 0;
@@ -61,10 +59,12 @@ Canonical.propTypes = {
   src: string.isRequired,
   title: string.isRequired,
   placeholderSrc: string,
+  timeoutMs: number,
 };
 
 Canonical.defaultProps = {
   placeholderSrc: null,
+  timeoutMs: 5000,
 };
 
 export default Canonical;
