@@ -13,7 +13,7 @@ const BulletedList = styled.ul.attrs(() => ({
 }))`
   ${({ script }) => script && getBodyCopy(script)};
   ${({ service }) => getSansRegular(service)};
-  margin-block-start: 0;
+  margin-top: 0;
   list-style-type: none;
   & > li::before {
     content: '\u00A0';
