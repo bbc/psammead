@@ -2,10 +2,7 @@ import React from 'react';
 import { shouldMatchSnapshot } from '@bbc/psammead-test-helpers';
 import { render } from '@testing-library/react';
 import { latin } from '@bbc/gel-foundations/scripts';
-import {
-  CanonicalScrollableNavigation,
-  AmpScrollableNavigation,
-} from './ScrollableNavigation';
+import { ScrollableNavigation } from './ScrollableNavigation';
 import Navigation, { NavigationUl, NavigationLi } from './index';
 import igboNavData from '../testHelpers/igbo';
 
@@ -63,22 +60,8 @@ describe('Navigation', () => {
 
 describe('Scrollable Navigation', () => {
   shouldMatchSnapshot(
-    'should render scrollable Canonical version correctly',
-    <CanonicalScrollableNavigation isScrollable>
-      {NavigationExample}
-    </CanonicalScrollableNavigation>,
-  );
-
-  shouldMatchSnapshot(
-    'should render non-scrollable Canonical version correctly',
-    <CanonicalScrollableNavigation>
-      {NavigationExample}
-    </CanonicalScrollableNavigation>,
-  );
-
-  shouldMatchSnapshot(
-    'should render AMP version correctly',
-    <AmpScrollableNavigation>{NavigationExample}</AmpScrollableNavigation>,
+    'should render correctly',
+    <ScrollableNavigation>{NavigationExample}</ScrollableNavigation>,
   );
 });
 

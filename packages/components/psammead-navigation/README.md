@@ -35,7 +35,6 @@ The `@bbc/psammead-navigation` package is a set of two components, `NavigationUl
 | Argument | Type | Required | Default | Example |
 | -------- | ---- | -------- | ------- | ------- |
 | children | node | Yes      | N/A     | `<NavigationLi url="/" script={latin} active="true">Home</NavigationLi><NavigationLi url="/sport" script={latin}>{Sport}</NavigationLi>` |
-| isScrollable | boolean | No | `false` | `true` |
 
 ### NavigationLi
 
@@ -48,18 +47,8 @@ The `@bbc/psammead-navigation` package is a set of two components, `NavigationUl
 | currentPageText | string | No | `null`  | `Current page` |
 | service | string | Yes | N/A | `'news'` |
 | dir      | string  | No       | `'ltr'`   | `'rtl'` |
-| isScrollable | boolean | No | `false` | `true` |
 
-### CanonicalScrollableNavigation
-
-<!-- prettier-ignore -->
-| Argument | Type | Required | Default | Example |
-| -------- | ---- | -------- | ------- | ------- |
-| children | node | Yes      | N/A     | `<NavigationUl><NavigationLi url="/" script={latin} active="true">Home</NavigationLi><NavigationLi url="/sport" script={latin}>{Sport}</NavigationLi></NavigationUl>` |
-| dir      | string  | No       | `'ltr'`   | `'rtl'` |
-| isScrollable | boolean | No | `false` | `true` |
-
-### AmpScrollableNavigation
+### ScrollableNavigation
 
 <!-- prettier-ignore -->
 | Argument | Type | Required | Default | Example |
@@ -67,7 +56,15 @@ The `@bbc/psammead-navigation` package is a set of two components, `NavigationUl
 | children | node | Yes      | N/A     | `<NavigationUl><NavigationLi url="/" script={latin} active="true">Home</NavigationLi><NavigationLi url="/sport" script={latin}>{Sport}</NavigationLi></NavigationUl>` |
 | dir      | string  | No       | `'ltr'`   | `'rtl'` |
 
-### Dropdown
+### CanonicalDropdown
+
+<!-- prettier-ignore -->
+| Argument | Type | Required | Default | Example |
+| -------- | ---- | -------- | ------- | ------- |
+| children | node | Yes | N/A | `<DropdownUl><DropdownLi script={latin} service='news' key='sport' url='/sport' active="false"> Sport </DropdownLi></DropdownUl>` |
+| isOpen | bool | Yes | N/A | `false` |
+
+### AmpDropdown
 
 <!-- prettier-ignore -->
 | Argument | Type | Required | Default | Example |
@@ -112,7 +109,7 @@ The `@bbc/psammead-navigation` package is a set of two components, `NavigationUl
 
 ```jsx
 import React from 'react';
-import { CanonicalScrollableNavigation } from '@bbc/psammead-navigation/scrollable';
+import { ScrollableNavigation } from '@bbc/psammead-navigation/scrollable';
 import Navigation, {
   NavigationUl,
   NavigationLi,
@@ -120,7 +117,7 @@ import Navigation, {
 import { latin } from '@bbc/gel-foundations/scripts';
 
 <Navigation>
-  <CanonicalScrollableNavigation>
+  <ScrollableNavigation>
     <NavigationUl>
       <NavigationLi
         url="/"
@@ -138,7 +135,7 @@ import { latin } from '@bbc/gel-foundations/scripts';
         {Weather}
       </NavigationLi>
     </NavigationUl>
-  </CanonicalScrollableNavigation>
+  </ScrollableNavigation>
 </Navigation>;
 ```
 
@@ -153,7 +150,7 @@ import {
 } from '@bbc/psammead-navigation/dropdown';
 import { latin } from '@bbc/gel-foundations/scripts';
 
-<Dropdown>
+<CanonicalDropdown isOpen={isOpen}>
   <DropdownUl>
     <DropdownLi
       script={latin}
@@ -169,7 +166,7 @@ import { latin } from '@bbc/gel-foundations/scripts';
       Sport
     </DropdownLi>
   </DropdownUl>
-</Dropdown>
+</CanonicalDropdown>
 ```
 
 ## Canonical Menu Button Usage
@@ -204,13 +201,14 @@ import { latin } from '@bbc/gel-foundations/scripts';
   dir={dir}
 />
 ```
-Note that in order for the `AmpMenuButton` toggling to work correctly, an `id` should be added to the `Navigation` component. This `id` can be passed in as a prop to the component. Similarly, `AmpScrollableNavigation` also requires an `id` to be added to it.
+
+Note that in order for the `AmpMenuButton` toggling to work correctly, an `id` should be added to the `Navigation` component. This `id` can be passed in as a prop to the component. Similarly, `ScrollableNavigation` also requires an `id` to be added to it.
 
 ### When to use this component
 
 The `Navigation` is designed to show a navigation bar on all pages, which will show all sections on a site. If there are too many items to fit on one line, the items will wrap to the next lines.
 
-On the other hand, with `CanonicalScrollableNavigation` or `AmpScrollableNavigation` we can make the list to remain on one line and to be horizontally scrollable to allow access to further links, under 600px.
+On the other hand, with `ScrollableNavigation` we can make the list to remain on one line and to be horizontally scrollable to allow access to further links, under 600px.
 
 ### Accessibility notes
 
@@ -221,10 +219,6 @@ We have added the role `list` and `listitem` to the `NavigationUl` and `Navigati
 We have also added visually hidden text to let the user know which item in both regular and dropdown Navigation is the current page. Note the use of visually hidden text here is due to lack of support at this time for the aria-current page attribute. Also note the use of `role="text"` to stop text splitting in VoiceOver.
 
 We have added an `aria-expanded` attribute to the menu button to indicate whether the menu is collapsed or expanded.
-
-In the screen reader UX only the menu button and its content should be available to assistive technology, meaning the scrollable navigation will be hidden. To achieve this we add `aria-hidden:true` to the exposed scrollable navigation so that this is not visible to these users and also add `tabindex=-1` to the links contained within this to remove them from the tab order.
-
-On the other hand, when Javascript is disabled, the window object will not be defined and the `useMediaQuery` will return null so `isScrollable` will be null too, therefore the scrollable navigation will be fully available to keyboard users via the tab key and to screen reader users.
 
 ## Contributing
 

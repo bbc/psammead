@@ -3,6 +3,11 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 2.0.43 | [PR#2878](https://github.com/bbc/psammead/pull/2878) Adding Psammead Grid as a dependency |
+| 2.0.42 | [PR#2879](https://github.com/bbc/psammead/pull/2879) Bump browserslist and lerna |
+| 2.0.41 | [PR#2865](https://github.com/bbc/psammead/pull/2865) Bumping dependencies |
+| 2.0.40 | [PR#2863](https://github.com/bbc/psammead/pull/2863) Talos - Bump Dependencies - @bbc/psammead-calendars |
+| 2.0.39 | [PR#2857](https://github.com/bbc/psammead/pull/2857) Talos - Bump Dependencies - @bbc/psammead-locales |
 | 2.0.38 | [PR#2846](https://github.com/bbc/psammead/pull/2846) Remove package jest-fetch-mock |
 | 2.0.37 | [PR#2843](https://github.com/bbc/psammead/pull/2843) Bumping dependencies |
 | 2.0.36 | [PR#2828](https://github.com/bbc/psammead/pull/2828) Add guide on creating new components |

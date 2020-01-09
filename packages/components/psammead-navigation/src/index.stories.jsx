@@ -1,7 +1,6 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import styled from 'styled-components';
-import { useEffect, useState } from '@storybook/addons';
 import {
   color,
   select,
@@ -19,14 +18,11 @@ import Navigation, { NavigationUl, NavigationLi } from './index';
 import {
   CanonicalMenuButton,
   AmpMenuButton,
-  Dropdown,
+  CanonicalDropdown,
   DropdownUl,
   DropdownLi,
 } from './DropdownNavigation';
-import {
-  CanonicalScrollableNavigation,
-  AmpScrollableNavigation,
-} from './ScrollableNavigation';
+import { ScrollableNavigation } from './ScrollableNavigation';
 import igboNavData from '../testHelpers/igbo';
 import pidginNavData from '../testHelpers/pidgin';
 import yorubaNavData from '../testHelpers/yoruba';
@@ -135,32 +131,16 @@ const getBrand = () => {
   );
 };
 
-const navigationStory = (currentPageText, navData, dir, brand, isAmp) => ({
+const navigationStory = (currentPageText, navData, dir, brand) => ({
   script,
   service,
 }) => {
-  const ScrollableNavigation = isAmp
-    ? AmpScrollableNavigation
-    : CanonicalScrollableNavigation;
-
-  const [isScrollable, setIsScrollable] = useState(false);
-
-  useEffect(() => {
-    const mediaQueryList = window.matchMedia('(max-width: 37.5rem)');
-    setIsScrollable(mediaQueryList.matches);
-
-    const handler = event => setIsScrollable(event.matches);
-    mediaQueryList.addListener(handler);
-
-    return () => mediaQueryList.removeListener(handler);
-  }, []);
-
   return (
     <>
       {brand && getBrand()}
 
       <Navigation script={script} service={service} dir={dir}>
-        <ScrollableNavigation dir={dir} isScrollable={isScrollable}>
+        <ScrollableNavigation dir={dir}>
           <NavigationUl>
             {navData.map((item, index) => {
               const { title, url } = item;
@@ -187,29 +167,34 @@ const navigationStory = (currentPageText, navData, dir, brand, isAmp) => ({
   );
 };
 
-const dropdownStory = () => ({ dir, script, service }) => (
-  <Dropdown>
-    <DropdownUl>
-      {pidginNavData.map((item, index) => {
-        const active = index === 3;
-        const { title, url } = item;
-        return (
-          <DropdownLi
-            script={script}
-            service={service}
-            key={title}
-            dir={dir}
-            url={url}
-            active={active}
-            currentPageText="Current page"
-          >
-            {title}
-          </DropdownLi>
-        );
-      })}
-    </DropdownUl>
-  </Dropdown>
-);
+const animationStory = () => ({ dir, script, service }) => {
+  const isOpen = boolean('Open', false);
+  return (
+    <Navigation script={script} service={service} dir={dir}>
+      <CanonicalDropdown isOpen={isOpen}>
+        <DropdownUl>
+          {pidginNavData.map((item, index) => {
+            const active = index === 3;
+            const { title, url } = item;
+            return (
+              <DropdownLi
+                script={script}
+                service={service}
+                key={title}
+                dir={dir}
+                url={url}
+                active={active}
+                currentPageText="Current page"
+              >
+                {title}
+              </DropdownLi>
+            );
+          })}
+        </DropdownUl>
+      </CanonicalDropdown>
+    </Navigation>
+  );
+};
 
 const canonicalStories = storiesOf('Components|Navigation/Canonical', module)
   .addDecorator(withKnobs)
@@ -249,7 +234,7 @@ canonicalStories.add(
   },
 );
 
-canonicalStories.add('Dropdown menu', dropdownStory(), {
+canonicalStories.add('Dropdown animation', animationStory(), {
   notes,
 });
 

@@ -18,7 +18,7 @@ const StyledLink = styled.a`
   text-decoration: none;
   height: 2.25rem;
   border: 0.0625rem solid ${C_WHITE};
-  margin: 0.25rem;
+  margin: 0.5rem 0 0.5rem 0.5rem;
 
   > span {
     margin: 0.1875rem;
