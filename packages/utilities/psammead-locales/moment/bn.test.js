@@ -7,7 +7,7 @@ moment.locale('bn');
 const assert = { equal: (val1, val2) => expect(val1).toEqual(val2) };
 
 test('parse', function () {
-  var tests = 'ানুয়ারী জানু_ফেব্রুয়ারি ফেব_মার্চ মার্চ_এপ্রিল এপ্র_মে মে_জুন জুন_জুলাই জুল_অগাস্ট আগ_সেপ্টেম্বর সেপ্ট_অক্টোবর অক্টো_নভেম্বর নভে_ডিসেম্বর ডিসে'.split('_'), i;
+  var tests = 'জানুয়ারি জানু_ফেব্রুয়ারি ফেব_মার্চ মার্চ_এপ্রিল এপ্র_মে মে_জুন জুন_জুলাই জুল_অগাস্ট আগ_সেপ্টেম্বর সেপ্ট_অক্টোবর অক্টো_নভেম্বর নভে_ডিসেম্বর ডিসে'.split('_'), i;
   function equalTest(input, mmm, i) {
     assert.equal(moment(input, mmm).month(), i, input + ' should be month ' + (i + 1));
   }
@@ -95,7 +95,7 @@ test('format ordinal', function () {
 });
 
 test('format month', function () {
-  var expected = 'ানুয়ারী জানু_ফেব্রুয়ারি ফেব_মার্চ মার্চ_এপ্রিল এপ্র_মে মে_জুন জুন_জুলাই জুল_অগাস্ট আগ_সেপ্টেম্বর সেপ্ট_অক্টোবর অক্টো_নভেম্বর নভে_ডিসেম্বর ডিসে'.split('_'), i;
+  var expected = 'জানুয়ারি জানু_ফেব্রুয়ারি ফেব_মার্চ মার্চ_এপ্রিল এপ্র_মে মে_জুন জুন_জুলাই জুল_অগাস্ট আগ_সেপ্টেম্বর সেপ্ট_অক্টোবর অক্টো_নভেম্বর নভে_ডিসেম্বর ডিসে'.split('_'), i;
   for (i = 0; i < expected.length; i++) {
     assert.equal(moment([2011, i, 1]).format('MMMM MMM'), expected[i], expected[i]);
   }
