@@ -118,7 +118,7 @@ CanonicalMediaPlayer.defaultProps = {
   placeholderSrc: null,
   placeholderSrcset: null,
   noJsClassName: null,
-  timeoutMs: null,
+  timeoutMs: 5000,
 };
 
 AmpMediaPlayer.propTypes = {
