@@ -54,34 +54,35 @@ const StyledItem = styled.div`
 
   @media (min-width: ${GEL_GROUP_2_SCREEN_WIDTH_MIN}) {
     ${paddingEnd}: ${props =>
-  isOnFirstColumn(props, false) ? '0rem' : firstColumnLinkWidths.group2};
+      isOnFirstColumn(props, false) ? '0rem' : firstColumnLinkWidths.group2};
   }
 
   @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
     ${paddingEnd}: ${props =>
-  isOnFirstColumn(props, false) ? '0rem' : firstColumnLinkWidths.group3};
+      isOnFirstColumn(props, false) ? '0rem' : firstColumnLinkWidths.group3};
   }
 
   @media (min-width: ${GEL_GROUP_5_SCREEN_WIDTH_MIN}) {
     ${paddingEnd}: ${props =>
-  props.listIndex !== 4 && props.listIndex !== 9
-    ? firstColumnLinkWidths.group5
-    : '0rem'};
+      props.listIndex !== 4 && props.listIndex !== 9
+        ? firstColumnLinkWidths.group5
+        : '0rem'};
   }
 
   @supports (${grid}) {
     @media (min-width: ${GEL_GROUP_2_SCREEN_WIDTH_MIN}) {
       ${paddingEnd}: ${props =>
-  isOnFirstColumn(props, true) ? '0rem' : firstColumnLinkWidths.group2};
+        isOnFirstColumn(props, true) ? '0rem' : firstColumnLinkWidths.group2};
     }
 
     @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
       ${paddingEnd}: ${props =>
-  isOnFirstColumn(props, true) ? '0rem' : firstColumnLinkWidths.group3};
+        isOnFirstColumn(props, true) ? '0rem' : firstColumnLinkWidths.group3};
     }
 
     @media (min-width: ${GEL_GROUP_5_SCREEN_WIDTH_MIN}) {
       ${paddingEnd}: 0rem;
+    }
   }
 `;
 
