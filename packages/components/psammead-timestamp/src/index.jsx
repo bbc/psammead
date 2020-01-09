@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import { node, string, func, shape, bool } from 'prop-types';
 import {
   GEL_SPACING_HLF,
-  GEL_SPACING_DBL,
+  GEL_SPACING_QUAD,
 } from '@bbc/gel-foundations/spacings';
 import { getBrevier } from '@bbc/gel-foundations/typography';
 import { scriptPropType } from '@bbc/gel-foundations/prop-types';
@@ -13,7 +13,7 @@ import { getSansRegular } from '@bbc/psammead-styles/font-styles';
 const PADDING = `
   padding-bottom: ${GEL_SPACING_HLF};
   &:last-child {
-    padding-bottom: ${GEL_SPACING_DBL};
+    padding-bottom: ${GEL_SPACING_QUAD};
   }
 `;
 
