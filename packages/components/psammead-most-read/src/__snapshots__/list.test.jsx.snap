@@ -12,18 +12,6 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
   grid-template-rows: repeat( 5,[col-start] auto [col-end] );
 }
 
-.c4 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  margin: 0;
-  padding: 0;
-}
-
 .c6 {
   font-family: "Shonar Bangla",Helmet,Freesans,Helvetica,Arial,sans-serif;
   font-weight: 400;
@@ -57,6 +45,19 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
   padding-bottom: 1.5rem;
   padding-left: 1rem;
   padding-right: 1rem;
+}
+
+.c4 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  margin: 0;
+  padding: 0;
 }
 
 @supports (display:grid) {
@@ -661,18 +662,6 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
   grid-template-rows: repeat( 5,[col-start] auto [col-end] );
 }
 
-.c4 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  margin: 0;
-  padding: 0;
-}
-
 .c6 {
   font-family: Padauk,Arial,Verdana,Geneva,Helvetica,sans-serif;
   font-weight: 400;
@@ -706,6 +695,19 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
   padding-bottom: 1.5rem;
   padding-left: 1rem;
   padding-right: 1rem;
+}
+
+.c4 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  margin: 0;
+  padding: 0;
 }
 
 @supports (display:grid) {
@@ -1310,18 +1312,6 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
   grid-template-rows: repeat( 5,[col-start] auto [col-end] );
 }
 
-.c4 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  margin: 0;
-  padding: 0;
-}
-
 .c6 {
   font-family: ReithSerif,Helvetica,Arial,sans-serif;
   font-weight: 300;
@@ -1355,6 +1345,19 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
   padding-bottom: 1.5rem;
   padding-left: 1rem;
   padding-right: 1rem;
+}
+
+.c4 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  margin: 0;
+  padding: 0;
 }
 
 @supports (display:grid) {
@@ -1959,18 +1962,6 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
   grid-template-rows: repeat( 5,[col-start] auto [col-end] );
 }
 
-.c4 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  margin: 0;
-  padding: 0;
-}
-
 .c6 {
   font-family: "BBC Nassim Persian",Arial,Verdana,Geneva,Helvetica,sans-serif;
   font-weight: 400;
@@ -2004,6 +1995,19 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
   padding-bottom: 1.5rem;
   padding-right: 1rem;
   padding-left: 1rem;
+}
+
+.c4 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  margin: 0;
+  padding: 0;
 }
 
 @supports (display:grid) {

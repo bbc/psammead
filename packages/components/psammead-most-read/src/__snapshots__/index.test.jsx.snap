@@ -12,18 +12,6 @@ exports[`MostRead should render with ltr most read with correct dir 1`] = `
   grid-template-rows: repeat( 5,[col-start] auto [col-end] );
 }
 
-.c5 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  margin: 0;
-  padding: 0;
-}
-
 .c0 {
   font-family: ReithSans,Helvetica,Arial,sans-serif;
   font-weight: 400;
@@ -66,6 +54,19 @@ exports[`MostRead should render with ltr most read with correct dir 1`] = `
   padding-bottom: 1.5rem;
   padding-left: 1rem;
   padding-right: 1rem;
+}
+
+.c5 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  margin: 0;
+  padding: 0;
 }
 
 @supports (display:grid) {
@@ -699,18 +700,6 @@ exports[`MostRead should render with rtl most read with correct dir 1`] = `
   grid-template-rows: repeat( 5,[col-start] auto [col-end] );
 }
 
-.c5 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  margin: 0;
-  padding: 0;
-}
-
 .c0 {
   font-family: "BBC Nassim Arabic",Arial,Verdana,Geneva,Helvetica,sans-serif;
   font-weight: 400;
@@ -753,6 +742,19 @@ exports[`MostRead should render with rtl most read with correct dir 1`] = `
   padding-bottom: 1.5rem;
   padding-right: 1rem;
   padding-left: 1rem;
+}
+
+.c5 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  margin: 0;
+  padding: 0;
 }
 
 @supports (display:grid) {
