@@ -50,48 +50,48 @@ exports[`MostReadItemWrapper should render ltr correctly with 10 items 1`] = `
 
 @media (max-width:14.9375rem) {
   .c0 {
+    width: calc(100%);
     display: inline-block;
-    width: 100%;
     vertical-align: top;
   }
 }
 
 @media (min-width:15rem) and (max-width:24.9375rem) {
   .c0 {
+    width: calc(100%);
     display: inline-block;
-    width: 100%;
     vertical-align: top;
   }
 }
 
 @media (min-width:25rem) and (max-width:37.4375rem) {
   .c0 {
+    width: calc(50%);
     display: inline-block;
-    width: 50%;
     vertical-align: top;
   }
 }
 
 @media (min-width:37.5rem) and (max-width:62.9375rem) {
   .c0 {
+    width: calc(50%);
     display: inline-block;
-    width: 50%;
     vertical-align: top;
   }
 }
 
 @media (min-width:63rem) and (max-width:80rem) {
   .c0 {
+    width: calc(50%);
     display: inline-block;
-    width: 50%;
     vertical-align: top;
   }
 }
 
 @media (min-width:80rem) {
   .c0 {
+    width: calc(20%);
     display: inline-block;
-    width: 20%;
     vertical-align: top;
   }
 }
@@ -660,48 +660,48 @@ exports[`MostReadItemWrapper should render rtl correctly with 10 items 1`] = `
 
 @media (max-width:14.9375rem) {
   .c0 {
+    width: calc(100%);
     display: inline-block;
-    width: 100%;
     vertical-align: top;
   }
 }
 
 @media (min-width:15rem) and (max-width:24.9375rem) {
   .c0 {
+    width: calc(100%);
     display: inline-block;
-    width: 100%;
     vertical-align: top;
   }
 }
 
 @media (min-width:25rem) and (max-width:37.4375rem) {
   .c0 {
+    width: calc(50%);
     display: inline-block;
-    width: 50%;
     vertical-align: top;
   }
 }
 
 @media (min-width:37.5rem) and (max-width:62.9375rem) {
   .c0 {
+    width: calc(50%);
     display: inline-block;
-    width: 50%;
     vertical-align: top;
   }
 }
 
 @media (min-width:63rem) and (max-width:80rem) {
   .c0 {
+    width: calc(50%);
     display: inline-block;
-    width: 50%;
     vertical-align: top;
   }
 }
 
 @media (min-width:80rem) {
   .c0 {
+    width: calc(20%);
     display: inline-block;
-    width: 20%;
     vertical-align: top;
   }
 }
