@@ -1,7 +1,6 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import styled from 'styled-components';
-import { useEffect, useState } from '@storybook/addons';
 import {
   color,
   select,
@@ -23,10 +22,7 @@ import {
   DropdownUl,
   DropdownLi,
 } from './DropdownNavigation';
-import {
-  CanonicalScrollableNavigation,
-  AmpScrollableNavigation,
-} from './ScrollableNavigation';
+import { ScrollableNavigation } from './ScrollableNavigation';
 import igboNavData from '../testHelpers/igbo';
 import pidginNavData from '../testHelpers/pidgin';
 import yorubaNavData from '../testHelpers/yoruba';
@@ -135,32 +131,16 @@ const getBrand = () => {
   );
 };
 
-const navigationStory = (currentPageText, navData, dir, brand, isAmp) => ({
+const navigationStory = (currentPageText, navData, dir, brand) => ({
   script,
   service,
 }) => {
-  const ScrollableNavigation = isAmp
-    ? AmpScrollableNavigation
-    : CanonicalScrollableNavigation;
-
-  const [isScrollable, setIsScrollable] = useState(false);
-
-  useEffect(() => {
-    const mediaQueryList = window.matchMedia('(max-width: 37.5rem)');
-    setIsScrollable(mediaQueryList.matches);
-
-    const handler = event => setIsScrollable(event.matches);
-    mediaQueryList.addListener(handler);
-
-    return () => mediaQueryList.removeListener(handler);
-  }, []);
-
   return (
     <>
       {brand && getBrand()}
 
       <Navigation script={script} service={service} dir={dir}>
-        <ScrollableNavigation dir={dir} isScrollable={isScrollable}>
+        <ScrollableNavigation dir={dir}>
           <NavigationUl>
             {navData.map((item, index) => {
               const { title, url } = item;
