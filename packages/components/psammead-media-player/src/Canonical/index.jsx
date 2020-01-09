@@ -36,7 +36,7 @@ const Canonical = ({ service, src, title, placeholderSrc, timeoutMs }) => {
       {hasTimedOut ? (
         <Guidance
           service={service}
-          guidanceMessage="The server did not respond. Please check your connection and try again."
+          guidanceMessage="There was a problem loading this content. Please check your internet connection and try again."
           noJsMessage=""
         />
       ) : (

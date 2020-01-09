@@ -30,7 +30,7 @@ describe('Media Player: Canonical', () => {
 
     expect(
       getByText(
-        'The server did not respond. Please check your connection and try again.',
+        'There was a problem loading this content. Please check your internet connection and try again.',
       ),
     );
     unmount();
