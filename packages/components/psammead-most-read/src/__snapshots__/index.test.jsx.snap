@@ -69,42 +69,36 @@ exports[`MostRead should render with ltr most read with correct dir 1`] = `
 .c8 {
   padding-bottom: 1.5rem;
   padding-left: 1rem;
-  padding-right: 1rem;
   padding-right: 0;
 }
 
 .c11 {
   padding-bottom: 1.5rem;
   padding-left: 1rem;
-  padding-right: 1rem;
   padding-right: 0;
 }
 
 .c13 {
   padding-bottom: 1.5rem;
   padding-left: 1rem;
-  padding-right: 1rem;
   padding-right: 0;
 }
 
 .c16 {
   padding-bottom: 1.5rem;
   padding-left: 1rem;
-  padding-right: 1rem;
   padding-right: 0;
 }
 
 .c17 {
   padding-bottom: 1.5rem;
   padding-left: 1rem;
-  padding-right: 1rem;
   padding-right: 0;
 }
 
 .c18 {
   padding-bottom: 1.5rem;
   padding-left: 1rem;
-  padding-right: 1rem;
   padding-right: 0;
 }
 
@@ -898,42 +892,36 @@ exports[`MostRead should render with rtl most read with correct dir 1`] = `
 .c8 {
   padding-bottom: 1.5rem;
   padding-right: 1rem;
-  padding-left: 1rem;
   padding-left: 0;
 }
 
 .c11 {
   padding-bottom: 1.5rem;
   padding-right: 1rem;
-  padding-left: 1rem;
   padding-left: 0;
 }
 
 .c13 {
   padding-bottom: 1.5rem;
   padding-right: 1rem;
-  padding-left: 1rem;
   padding-left: 0;
 }
 
 .c16 {
   padding-bottom: 1.5rem;
   padding-right: 1rem;
-  padding-left: 1rem;
   padding-left: 0;
 }
 
 .c17 {
   padding-bottom: 1.5rem;
   padding-right: 1rem;
-  padding-left: 1rem;
   padding-left: 0;
 }
 
 .c18 {
   padding-bottom: 1.5rem;
   padding-right: 1rem;
-  padding-left: 1rem;
   padding-left: 0;
 }
 
