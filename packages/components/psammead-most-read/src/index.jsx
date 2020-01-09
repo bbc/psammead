@@ -1,10 +1,10 @@
 import React from 'react';
 import { shape, string, oneOf, arrayOf, node } from 'prop-types';
 import { scriptPropType } from '@bbc/gel-foundations/prop-types';
-import MostReadList, { MostReadItemWrapper } from './list';
+import MostReadList from './list';
 import MostReadTitle from './title';
 import MostReadRank from './rank';
-import { MostReadLink } from './item';
+import { MostReadLink, MostReadItemWrapper } from './item';
 
 const MostRead = ({ items, script, service, header, dir }) => (
   <>
