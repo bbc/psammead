@@ -146,11 +146,11 @@ const tamilTypography = {
     },
     groupB: {
       fontSize: '14',
-      lineHeight: '24',
+      lineHeight: '28',
     },
     groupD: {
       fontSize: '14',
-      lineHeight: '24',
+      lineHeight: '28',
     },
   },
   pica: {
@@ -174,11 +174,11 @@ const tamilTypography = {
     },
     groupB: {
       fontSize: '11',
-      lineHeight: '18',
+      lineHeight: '22',
     },
     groupD: {
       fontSize: '12',
-      lineHeight: '18',
+      lineHeight: '24',
     },
   },
   brevier: {
