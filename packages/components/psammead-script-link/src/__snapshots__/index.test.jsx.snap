@@ -13,8 +13,7 @@ exports[`ScriptLink should render correctly 1`] = `
   text-decoration: none;
   height: 2.25rem;
   border: 0.0625rem solid #FFFFFF;
-  margin: 0.5rem;
-  margin-right: 0rem;
+  margin: 0.5rem 0 0.5rem 0.5rem;
 }
 
 .c0 > span {
