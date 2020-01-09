@@ -2,6 +2,7 @@
 
 | Version | Description |
 |---------|-------------|
+| 1.0.1 | [PR#2884](https://github.com/bbc/psammead/pull/2884) Remove `ul` top spacing. |
 | 1.0.0 | [PR#2809](https://github.com/bbc/psammead/pull/2809) Move bulleted-list out of alpha. |
 | 0.2.0-alpha.2 | [PR#2798](https://github.com/bbc/psammead/pull/2798) Convert psammead-bulleted-list bullet svg completely to base64. |
 | 0.2.0-alpha.1 | [PR#2746](https://github.com/bbc/psammead/pull/2746) Add a11y role to list and spacing to list item. |
