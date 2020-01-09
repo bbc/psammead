@@ -150,11 +150,11 @@ const devanagariAndGurmukhiTypography = {
     },
     groupB: {
       fontSize: '16',
-      lineHeight: '24',
+      lineHeight: '28',
     },
     groupD: {
       fontSize: '18',
-      lineHeight: '26',
+      lineHeight: '30',
     },
   },
   pica: {
@@ -178,11 +178,11 @@ const devanagariAndGurmukhiTypography = {
     },
     groupB: {
       fontSize: '15',
-      lineHeight: '21',
+      lineHeight: '26',
     },
     groupD: {
       fontSize: '16',
-      lineHeight: '22',
+      lineHeight: '26',
     },
   },
   brevier: {
