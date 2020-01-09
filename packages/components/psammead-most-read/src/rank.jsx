@@ -69,8 +69,6 @@ const doubleDigitWidth = ({ service }) => {
 };
 
 const StyledWrapper = styled.div`
-  position: relative;
-
   @media (max-width: ${GEL_GROUP_0_SCREEN_WIDTH_MAX}) {
     min-width: ${props =>
       listHasDoubleDigits(props) ? doubleDigitWidth(props).group0 : 'auto'};
@@ -123,6 +121,7 @@ const StyledWrapper = styled.div`
 const StyledSpan = styled.span`
   ${({ service }) => getSerifLight(service)}
   ${({ script }) => script && getFoolscap(script)};
+  position: relative;
   color: ${C_POSTBOX};
   margin: 0; /* Reset */
   padding: 0;
