@@ -2,6 +2,7 @@
 
 exports[`MostReadItemWrapper should render ltr correctly with 10 items 1`] = `
 .c1 {
+  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -19,6 +20,7 @@ exports[`MostReadItemWrapper should render ltr correctly with 10 items 1`] = `
   font-style: normal;
   font-size: 2rem;
   line-height: 2.25rem;
+  position: relative;
   color: #B80000;
   margin: 0;
   padding: 0;
@@ -31,6 +33,7 @@ exports[`MostReadItemWrapper should render ltr correctly with 10 items 1`] = `
   font-family: ReithSerif,Helvetica,Arial,sans-serif;
   font-weight: 500;
   font-style: normal;
+  position: static;
   color: #222222;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -40,6 +43,18 @@ exports[`MostReadItemWrapper should render ltr correctly with 10 items 1`] = `
 .c5:focus {
   -webkit-text-decoration: underline;
   text-decoration: underline;
+}
+
+.c5:before {
+  bottom: 0;
+  content: '';
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  right: 0;
+  top: 0;
+  white-space: nowrap;
+  z-index: 1;
 }
 
 .c4 {
@@ -612,6 +627,7 @@ exports[`MostReadItemWrapper should render ltr correctly with 10 items 1`] = `
 
 exports[`MostReadItemWrapper should render rtl correctly with 10 items 1`] = `
 .c1 {
+  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -629,6 +645,7 @@ exports[`MostReadItemWrapper should render rtl correctly with 10 items 1`] = `
   font-style: normal;
   font-size: 2rem;
   line-height: 2.25rem;
+  position: relative;
   color: #B80000;
   margin: 0;
   padding: 0;
@@ -641,6 +658,7 @@ exports[`MostReadItemWrapper should render rtl correctly with 10 items 1`] = `
   font-family: "BBC Nassim Persian",Arial,Verdana,Geneva,Helvetica,sans-serif;
   font-weight: 700;
   font-style: normal;
+  position: static;
   color: #222222;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -650,6 +668,18 @@ exports[`MostReadItemWrapper should render rtl correctly with 10 items 1`] = `
 .c5:focus {
   -webkit-text-decoration: underline;
   text-decoration: underline;
+}
+
+.c5:before {
+  bottom: 0;
+  content: '';
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  right: 0;
+  top: 0;
+  white-space: nowrap;
+  z-index: 1;
 }
 
 .c4 {
@@ -1227,6 +1257,7 @@ exports[`MostReadLink should render ltr correctly 1`] = `
   font-family: ReithSerif,Helvetica,Arial,sans-serif;
   font-weight: 500;
   font-style: normal;
+  position: static;
   color: #222222;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -1236,6 +1267,18 @@ exports[`MostReadLink should render ltr correctly 1`] = `
 .c1:focus {
   -webkit-text-decoration: underline;
   text-decoration: underline;
+}
+
+.c1:before {
+  bottom: 0;
+  content: '';
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  right: 0;
+  top: 0;
+  white-space: nowrap;
+  z-index: 1;
 }
 
 .c0 {
@@ -1284,6 +1327,7 @@ exports[`MostReadLink should render rtl correctly 1`] = `
   font-family: "BBC Nassim Persian",Arial,Verdana,Geneva,Helvetica,sans-serif;
   font-weight: 700;
   font-style: normal;
+  position: static;
   color: #222222;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -1293,6 +1337,18 @@ exports[`MostReadLink should render rtl correctly 1`] = `
 .c1:focus {
   -webkit-text-decoration: underline;
   text-decoration: underline;
+}
+
+.c1:before {
+  bottom: 0;
+  content: '';
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  right: 0;
+  top: 0;
+  white-space: nowrap;
+  z-index: 1;
 }
 
 .c0 {
@@ -1341,6 +1397,7 @@ exports[`MostReadLink should render with last updated date correctly 1`] = `
   font-family: ReithSerif,Helvetica,Arial,sans-serif;
   font-weight: 500;
   font-style: normal;
+  position: static;
   color: #222222;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -1350,6 +1407,18 @@ exports[`MostReadLink should render with last updated date correctly 1`] = `
 .c1:focus {
   -webkit-text-decoration: underline;
   text-decoration: underline;
+}
+
+.c1:before {
+  bottom: 0;
+  content: '';
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  right: 0;
+  top: 0;
+  white-space: nowrap;
+  z-index: 1;
 }
 
 .c0 {

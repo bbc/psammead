@@ -13,6 +13,7 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
 }
 
 .c4 {
+  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -30,6 +31,7 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
   font-style: normal;
   font-size: 2rem;
   line-height: 2.25rem;
+  position: relative;
   color: #B80000;
   margin: 0;
   padding: 0;
@@ -42,6 +44,7 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
   font-family: "Shonar Bangla",Helmet,Freesans,Helvetica,Arial,sans-serif;
   font-weight: 700;
   font-style: normal;
+  position: static;
   color: #222222;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -51,6 +54,18 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
 .c8:focus {
   -webkit-text-decoration: underline;
   text-decoration: underline;
+}
+
+.c8:before {
+  bottom: 0;
+  content: '';
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  right: 0;
+  top: 0;
+  white-space: nowrap;
+  z-index: 1;
 }
 
 .c7 {
@@ -662,6 +677,7 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
 }
 
 .c4 {
+  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -679,6 +695,7 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
   font-style: normal;
   font-size: 2rem;
   line-height: 2.25rem;
+  position: relative;
   color: #B80000;
   margin: 0;
   padding: 0;
@@ -691,6 +708,7 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
   font-family: Padauk,Arial,Verdana,Geneva,Helvetica,sans-serif;
   font-weight: 700;
   font-style: normal;
+  position: static;
   color: #222222;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -700,6 +718,18 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
 .c8:focus {
   -webkit-text-decoration: underline;
   text-decoration: underline;
+}
+
+.c8:before {
+  bottom: 0;
+  content: '';
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  right: 0;
+  top: 0;
+  white-space: nowrap;
+  z-index: 1;
 }
 
 .c7 {
@@ -1311,6 +1341,7 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
 }
 
 .c4 {
+  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1328,6 +1359,7 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
   font-style: normal;
   font-size: 2rem;
   line-height: 2.25rem;
+  position: relative;
   color: #B80000;
   margin: 0;
   padding: 0;
@@ -1340,6 +1372,7 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
   font-family: ReithSerif,Helvetica,Arial,sans-serif;
   font-weight: 500;
   font-style: normal;
+  position: static;
   color: #222222;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -1349,6 +1382,18 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
 .c8:focus {
   -webkit-text-decoration: underline;
   text-decoration: underline;
+}
+
+.c8:before {
+  bottom: 0;
+  content: '';
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  right: 0;
+  top: 0;
+  white-space: nowrap;
+  z-index: 1;
 }
 
 .c7 {
@@ -1960,6 +2005,7 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
 }
 
 .c4 {
+  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1977,6 +2023,7 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
   font-style: normal;
   font-size: 2rem;
   line-height: 2.25rem;
+  position: relative;
   color: #B80000;
   margin: 0;
   padding: 0;
@@ -1989,6 +2036,7 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
   font-family: "BBC Nassim Persian",Arial,Verdana,Geneva,Helvetica,sans-serif;
   font-weight: 700;
   font-style: normal;
+  position: static;
   color: #222222;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -1998,6 +2046,18 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
 .c8:focus {
   -webkit-text-decoration: underline;
   text-decoration: underline;
+}
+
+.c8:before {
+  bottom: 0;
+  content: '';
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  right: 0;
+  top: 0;
+  white-space: nowrap;
+  z-index: 1;
 }
 
 .c7 {

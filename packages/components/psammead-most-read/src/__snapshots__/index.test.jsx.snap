@@ -13,6 +13,7 @@ exports[`MostRead should render with ltr most read with correct dir 1`] = `
 }
 
 .c5 {
+  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -39,6 +40,7 @@ exports[`MostRead should render with ltr most read with correct dir 1`] = `
   font-style: normal;
   font-size: 2rem;
   line-height: 2.25rem;
+  position: relative;
   color: #B80000;
   margin: 0;
   padding: 0;
@@ -51,6 +53,7 @@ exports[`MostRead should render with ltr most read with correct dir 1`] = `
   font-family: ReithSerif,Helvetica,Arial,sans-serif;
   font-weight: 500;
   font-style: normal;
+  position: static;
   color: #222222;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -60,6 +63,18 @@ exports[`MostRead should render with ltr most read with correct dir 1`] = `
 .c9:focus {
   -webkit-text-decoration: underline;
   text-decoration: underline;
+}
+
+.c9:before {
+  bottom: 0;
+  content: '';
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  right: 0;
+  top: 0;
+  white-space: nowrap;
+  z-index: 1;
 }
 
 .c8 {
@@ -340,20 +355,19 @@ exports[`MostRead should render with ltr most read with correct dir 1`] = `
   }
 }
 
-<div>
-  <section
-    aria-labelledby="most-read-title"
-    class=""
-    role="region"
+<section
+  aria-labelledby="most-read-title"
+  class=""
+  role="region"
+>
+   
+  <h2
+    class="c0"
+    dir="ltr"
+    id="most-read-title"
   >
-    <h2
-      class="c0"
-      dir="ltr"
-      id="most-read-title"
-    >
-      Most Read
-    </h2>
-  </section>
+    Most Read
+  </h2>
   <ol
     class="c1"
     role="list"
@@ -684,7 +698,8 @@ exports[`MostRead should render with ltr most read with correct dir 1`] = `
       </div>
     </div>
   </ol>
-</div>
+   
+</section>
 `;
 
 exports[`MostRead should render with rtl most read with correct dir 1`] = `
@@ -700,6 +715,7 @@ exports[`MostRead should render with rtl most read with correct dir 1`] = `
 }
 
 .c5 {
+  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -726,6 +742,7 @@ exports[`MostRead should render with rtl most read with correct dir 1`] = `
   font-style: normal;
   font-size: 2rem;
   line-height: 2.25rem;
+  position: relative;
   color: #B80000;
   margin: 0;
   padding: 0;
@@ -738,6 +755,7 @@ exports[`MostRead should render with rtl most read with correct dir 1`] = `
   font-family: "BBC Nassim Arabic",Arial,Verdana,Geneva,Helvetica,sans-serif;
   font-weight: 700;
   font-style: normal;
+  position: static;
   color: #222222;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -747,6 +765,18 @@ exports[`MostRead should render with rtl most read with correct dir 1`] = `
 .c9:focus {
   -webkit-text-decoration: underline;
   text-decoration: underline;
+}
+
+.c9:before {
+  bottom: 0;
+  content: '';
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  right: 0;
+  top: 0;
+  white-space: nowrap;
+  z-index: 1;
 }
 
 .c8 {
@@ -1027,20 +1057,19 @@ exports[`MostRead should render with rtl most read with correct dir 1`] = `
   }
 }
 
-<div>
-  <section
-    aria-labelledby="most-read-title"
-    class=""
-    role="region"
+<section
+  aria-labelledby="most-read-title"
+  class=""
+  role="region"
+>
+   
+  <h2
+    class="c0"
+    dir="rtl"
+    id="most-read-title"
   >
-    <h2
-      class="c0"
-      dir="rtl"
-      id="most-read-title"
-    >
-      الأكثر قراءة
-    </h2>
-  </section>
+    الأكثر قراءة
+  </h2>
   <ol
     class="c1"
     role="list"
@@ -1371,5 +1400,6 @@ exports[`MostRead should render with rtl most read with correct dir 1`] = `
       </div>
     </div>
   </ol>
-</div>
+   
+</section>
 `;
