@@ -3,7 +3,7 @@
 ## Description
 The `psammead-media-player` component exports two versions of our media player: an AMP version, and an Canonical version.
 
-At it's core, this component returns an `iframe` that is designed to frame a media asset.
+At its core, this component returns an `iframe` that is designed to frame a media asset.
 The AMP variant will render an `amp-iframe` with a nested `amp-img` to use as a placeholder.
 The Canonical variant will render a placeholder, that when clicked will load the `iframe` into view.
 
