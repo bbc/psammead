@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 1.0.1 | [PR#2887](https://github.com/bbc/psammead/pull/2887) Update margins to be 0.5rem on top, bottom and left and 0rem on the right |
 | 1.0.0 | [PR#2853](https://github.com/bbc/psammead/pull/2853) Remove alpha tag after a successful accessibility swarm |
 | 1.0.0-alpha.14 | [PR#2833](https://github.com/bbc/psammead/pull/2833) Refactor to fix read&write issue on IE11 |
 | 1.0.0-alpha.13 | [PR#2786](https://github.com/bbc/psammead/pull/2786) Add `onClick` prop |
