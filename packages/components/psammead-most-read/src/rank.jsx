@@ -69,6 +69,8 @@ const doubleDigitWidth = ({ service }) => {
 };
 
 const StyledWrapper = styled.div`
+  position: relative;
+
   @media (max-width: ${GEL_GROUP_0_SCREEN_WIDTH_MAX}) {
     min-width: ${props =>
       listHasDoubleDigits(props) ? doubleDigitWidth(props).group0 : 'auto'};

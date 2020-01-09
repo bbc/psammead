@@ -70,6 +70,7 @@ MostReadList.defaultProps = {
 export default MostReadList;
 
 const StyledLi = styled.li`
+  position: relative;
   display: flex;
   flex-direction: row;
   margin: 0;

@@ -21,12 +21,25 @@ const StyledLink = styled.a`
   ${({ script }) => script && getDoublePica(script)};
   ${({ service }) => getSerifMedium(service)}
 
+  position: static;
   color: ${C_EBON};
   text-decoration: none;
 
   &:hover,
   &:focus {
     text-decoration: underline;
+  }
+
+  &:before {
+    bottom: 0;
+    content: '';
+    left: 0;
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+    top: 0;
+    white-space: nowrap;
+    z-index: 1;
   }
 `;
 
