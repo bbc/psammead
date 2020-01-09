@@ -15,19 +15,22 @@ import {
   GEL_GROUP_3_SCREEN_WIDTH_MIN,
   GEL_GROUP_2_SCREEN_WIDTH_MIN,
 } from '@bbc/gel-foundations/breakpoints';
-import { isOnSecondColumn } from './rank';
 
 // This is to handle the padding between the rank and the link for both ltr and rtl stories.
 const paddingStart = ({ dir }) => `padding-${dir === 'ltr' ? 'left' : 'right'}`;
 
-// This is to make where the link ends consistent for both columns
+// This is to make where the link ends consistent for both columns.
 const paddingEnd = ({ dir }) => `padding-${dir === 'ltr' ? 'right' : 'left'}`;
 
-// These measurements are to be used for making the width of the links in each column consistent
+// This checks if the item is in the first column to make links the same width as in the second column.
+const isOnFirstColumn = ({ listIndex, numberOfItems }, supportsGrid) =>
+  supportsGrid ? listIndex > Math.ceil(numberOfItems / 2) : listIndex % 2 === 1;
+
+// These measurements are to be used for making the width of the links in each column consistent.
 const firstColumnLinkWidths = {
   group2: '1.3rem',
   group3: '1.8rem',
-  group5: '1rem',
+  group5: '1.5rem',
 };
 
 const StyledLink = styled.a`
@@ -48,19 +51,38 @@ const StyledItem = styled.div`
   ${paddingStart}: ${GEL_SPACING_DBL};
   ${paddingEnd}: ${GEL_SPACING_DBL};
   ${paddingEnd}: 0;
-    
+
   @media (min-width: ${GEL_GROUP_2_SCREEN_WIDTH_MIN}) {
     ${paddingEnd}: ${props =>
-  isOnSecondColumn(props, true) ? '0rem' : firstColumnLinkWidths.group2};
+  isOnFirstColumn(props, false) ? '0rem' : firstColumnLinkWidths.group2};
   }
-  
+
   @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
     ${paddingEnd}: ${props =>
-  isOnSecondColumn(props, true) ? '0rem' : firstColumnLinkWidths.group3};
+  isOnFirstColumn(props, false) ? '0rem' : firstColumnLinkWidths.group3};
   }
-  
+
   @media (min-width: ${GEL_GROUP_5_SCREEN_WIDTH_MIN}) {
-    ${paddingEnd}: 0;
+    ${paddingEnd}: ${props =>
+  props.listIndex !== 4 && props.listIndex !== 9
+    ? firstColumnLinkWidths.group5
+    : '0rem'};
+  }
+
+  @supports (${grid}) {
+    @media (min-width: ${GEL_GROUP_2_SCREEN_WIDTH_MIN}) {
+      ${paddingEnd}: ${props =>
+  isOnFirstColumn(props, true) ? '0rem' : firstColumnLinkWidths.group2};
+    }
+
+    @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
+      ${paddingEnd}: ${props =>
+  isOnFirstColumn(props, true) ? '0rem' : firstColumnLinkWidths.group3};
+    }
+
+    @media (min-width: ${GEL_GROUP_5_SCREEN_WIDTH_MIN}) {
+      ${paddingEnd}: 0rem;
+  }
 `;
 
 export const MostReadLink = ({

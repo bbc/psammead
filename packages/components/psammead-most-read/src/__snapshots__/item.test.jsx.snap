@@ -42,10 +42,46 @@ exports[`MostReadItemWrapper should render ltr correctly with 10 items 1`] = `
   text-decoration: underline;
 }
 
+.c7 {
+  padding-bottom: 1.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-right: 0;
+}
+
 .c4 {
   padding-bottom: 1.5rem;
   padding-left: 1rem;
   padding-right: 1rem;
+  padding-right: 0;
+}
+
+.c8 {
+  padding-bottom: 1.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-right: 0;
+}
+
+.c11 {
+  padding-bottom: 1.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-right: 0;
+}
+
+.c13 {
+  padding-bottom: 1.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-right: 0;
+}
+
+.c14 {
+  padding-bottom: 1.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-right: 0;
 }
 
 @media (max-width:14.9375rem) {
@@ -163,91 +199,91 @@ exports[`MostReadItemWrapper should render ltr correctly with 10 items 1`] = `
 }
 
 @media (max-width:14.9375rem) {
-  .c7 {
+  .c9 {
     min-width: 2.5rem;
   }
 }
 
 @media (min-width:15rem) and (max-width:24.9375rem) {
-  .c7 {
+  .c9 {
     min-width: 2.5rem;
   }
 }
 
 @media (min-width:25rem) and (max-width:37.4375rem) {
-  .c7 {
+  .c9 {
     min-width: auto;
   }
 }
 
 @media (min-width:37.5rem) and (max-width:80rem) {
-  .c7 {
+  .c9 {
     min-width: auto;
   }
 }
 
 @media (min-width:80rem) {
-  .c7 {
+  .c9 {
     min-width: 4.25rem;
   }
 }
 
 @media (max-width:14.9375rem) {
-  .c8 {
+  .c10 {
     min-width: 2.5rem;
   }
 }
 
 @media (min-width:15rem) and (max-width:24.9375rem) {
-  .c8 {
+  .c10 {
     min-width: 2.5rem;
   }
 }
 
 @media (min-width:25rem) and (max-width:37.4375rem) {
-  .c8 {
+  .c10 {
     min-width: 2.5rem;
   }
 }
 
 @media (min-width:37.5rem) and (max-width:80rem) {
-  .c8 {
+  .c10 {
     min-width: 4rem;
   }
 }
 
 @media (min-width:80rem) {
-  .c8 {
+  .c10 {
     min-width: auto;
   }
 }
 
 @media (max-width:14.9375rem) {
-  .c9 {
+  .c12 {
     min-width: 2.5rem;
   }
 }
 
 @media (min-width:15rem) and (max-width:24.9375rem) {
-  .c9 {
+  .c12 {
     min-width: 2.5rem;
   }
 }
 
 @media (min-width:25rem) and (max-width:37.4375rem) {
-  .c9 {
+  .c12 {
     min-width: auto;
   }
 }
 
 @media (min-width:37.5rem) and (max-width:80rem) {
-  .c9 {
+  .c12 {
     min-width: auto;
   }
 }
 
 @media (min-width:80rem) {
-  .c9 {
+  .c12 {
     min-width: auto;
   }
 }
@@ -280,9 +316,111 @@ exports[`MostReadItemWrapper should render ltr correctly with 10 items 1`] = `
   }
 }
 
-@supports (grid-template-columns:fit-content(200px)) {
+@media (min-width:25rem) {
+  .c7 {
+    padding-right: 1.3rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .c7 {
+    padding-right: 1.8rem;
+  }
+}
+
+@media (min-width:80rem) {
+  .c7 {
+    padding-right: 1.5rem;
+  }
+}
+
+@media (min-width:25rem) {
   .c4 {
-    padding-right: 0;
+    padding-right: 0rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .c4 {
+    padding-right: 0rem;
+  }
+}
+
+@media (min-width:80rem) {
+  .c4 {
+    padding-right: 1.5rem;
+  }
+}
+
+@media (min-width:25rem) {
+  .c8 {
+    padding-right: 1.3rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .c8 {
+    padding-right: 1.8rem;
+  }
+}
+
+@media (min-width:80rem) {
+  .c8 {
+    padding-right: 0rem;
+  }
+}
+
+@media (min-width:25rem) {
+  .c11 {
+    padding-right: 1.3rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .c11 {
+    padding-right: 1.8rem;
+  }
+}
+
+@media (min-width:80rem) {
+  .c11 {
+    padding-right: 1.5rem;
+  }
+}
+
+@media (min-width:25rem) {
+  .c13 {
+    padding-right: 0rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .c13 {
+    padding-right: 0rem;
+  }
+}
+
+@media (min-width:80rem) {
+  .c13 {
+    padding-right: 1.5rem;
+  }
+}
+
+@media (min-width:25rem) {
+  .c14 {
+    padding-right: 0rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .c14 {
+    padding-right: 0rem;
+  }
+}
+
+@media (min-width:80rem) {
+  .c14 {
+    padding-right: 0rem;
   }
 }
 
@@ -339,7 +477,7 @@ exports[`MostReadItemWrapper should render ltr correctly with 10 items 1`] = `
         </span>
       </div>
       <div
-        class="c4"
+        class="c7"
         dir="ltr"
       >
         <a
@@ -403,7 +541,7 @@ exports[`MostReadItemWrapper should render ltr correctly with 10 items 1`] = `
         </span>
       </div>
       <div
-        class="c4"
+        class="c8"
         dir="ltr"
       >
         <a
@@ -424,7 +562,7 @@ exports[`MostReadItemWrapper should render ltr correctly with 10 items 1`] = `
       class="c1"
     >
       <div
-        class="c7"
+        class="c9"
         dir="ltr"
       >
         <span
@@ -456,7 +594,7 @@ exports[`MostReadItemWrapper should render ltr correctly with 10 items 1`] = `
       class="c1"
     >
       <div
-        class="c8"
+        class="c10"
         dir="ltr"
       >
         <span
@@ -467,7 +605,7 @@ exports[`MostReadItemWrapper should render ltr correctly with 10 items 1`] = `
         </span>
       </div>
       <div
-        class="c4"
+        class="c11"
         dir="ltr"
       >
         <a
@@ -488,7 +626,7 @@ exports[`MostReadItemWrapper should render ltr correctly with 10 items 1`] = `
       class="c1"
     >
       <div
-        class="c9"
+        class="c12"
         dir="ltr"
       >
         <span
@@ -499,7 +637,7 @@ exports[`MostReadItemWrapper should render ltr correctly with 10 items 1`] = `
         </span>
       </div>
       <div
-        class="c4"
+        class="c13"
         dir="ltr"
       >
         <a
@@ -520,7 +658,7 @@ exports[`MostReadItemWrapper should render ltr correctly with 10 items 1`] = `
       class="c1"
     >
       <div
-        class="c8"
+        class="c10"
         dir="ltr"
       >
         <span
@@ -531,7 +669,7 @@ exports[`MostReadItemWrapper should render ltr correctly with 10 items 1`] = `
         </span>
       </div>
       <div
-        class="c4"
+        class="c11"
         dir="ltr"
       >
         <a
@@ -552,7 +690,7 @@ exports[`MostReadItemWrapper should render ltr correctly with 10 items 1`] = `
       class="c1"
     >
       <div
-        class="c9"
+        class="c12"
         dir="ltr"
       >
         <span
@@ -563,7 +701,7 @@ exports[`MostReadItemWrapper should render ltr correctly with 10 items 1`] = `
         </span>
       </div>
       <div
-        class="c4"
+        class="c14"
         dir="ltr"
       >
         <a
@@ -584,7 +722,7 @@ exports[`MostReadItemWrapper should render ltr correctly with 10 items 1`] = `
       class="c1"
     >
       <div
-        class="c8"
+        class="c10"
         dir="ltr"
       >
         <span
@@ -595,7 +733,7 @@ exports[`MostReadItemWrapper should render ltr correctly with 10 items 1`] = `
         </span>
       </div>
       <div
-        class="c4"
+        class="c11"
         dir="ltr"
       >
         <a
@@ -652,10 +790,46 @@ exports[`MostReadItemWrapper should render rtl correctly with 10 items 1`] = `
   text-decoration: underline;
 }
 
+.c7 {
+  padding-bottom: 1.5rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  padding-left: 0;
+}
+
 .c4 {
   padding-bottom: 1.5rem;
   padding-right: 1rem;
   padding-left: 1rem;
+  padding-left: 0;
+}
+
+.c8 {
+  padding-bottom: 1.5rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  padding-left: 0;
+}
+
+.c11 {
+  padding-bottom: 1.5rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  padding-left: 0;
+}
+
+.c13 {
+  padding-bottom: 1.5rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  padding-left: 0;
+}
+
+.c14 {
+  padding-bottom: 1.5rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  padding-left: 0;
 }
 
 @media (max-width:14.9375rem) {
@@ -773,91 +947,91 @@ exports[`MostReadItemWrapper should render rtl correctly with 10 items 1`] = `
 }
 
 @media (max-width:14.9375rem) {
-  .c7 {
+  .c9 {
     min-width: 2.5rem;
   }
 }
 
 @media (min-width:15rem) and (max-width:24.9375rem) {
-  .c7 {
+  .c9 {
     min-width: 2.5rem;
   }
 }
 
 @media (min-width:25rem) and (max-width:37.4375rem) {
-  .c7 {
+  .c9 {
     min-width: auto;
   }
 }
 
 @media (min-width:37.5rem) and (max-width:80rem) {
-  .c7 {
+  .c9 {
     min-width: auto;
   }
 }
 
 @media (min-width:80rem) {
-  .c7 {
+  .c9 {
     min-width: 4.25rem;
   }
 }
 
 @media (max-width:14.9375rem) {
-  .c8 {
+  .c10 {
     min-width: 2.5rem;
   }
 }
 
 @media (min-width:15rem) and (max-width:24.9375rem) {
-  .c8 {
+  .c10 {
     min-width: 2.5rem;
   }
 }
 
 @media (min-width:25rem) and (max-width:37.4375rem) {
-  .c8 {
+  .c10 {
     min-width: 2.5rem;
   }
 }
 
 @media (min-width:37.5rem) and (max-width:80rem) {
-  .c8 {
+  .c10 {
     min-width: 4rem;
   }
 }
 
 @media (min-width:80rem) {
-  .c8 {
+  .c10 {
     min-width: auto;
   }
 }
 
 @media (max-width:14.9375rem) {
-  .c9 {
+  .c12 {
     min-width: 2.5rem;
   }
 }
 
 @media (min-width:15rem) and (max-width:24.9375rem) {
-  .c9 {
+  .c12 {
     min-width: 2.5rem;
   }
 }
 
 @media (min-width:25rem) and (max-width:37.4375rem) {
-  .c9 {
+  .c12 {
     min-width: auto;
   }
 }
 
 @media (min-width:37.5rem) and (max-width:80rem) {
-  .c9 {
+  .c12 {
     min-width: auto;
   }
 }
 
 @media (min-width:80rem) {
-  .c9 {
+  .c12 {
     min-width: auto;
   }
 }
@@ -890,9 +1064,111 @@ exports[`MostReadItemWrapper should render rtl correctly with 10 items 1`] = `
   }
 }
 
-@supports (grid-template-columns:fit-content(200px)) {
+@media (min-width:25rem) {
+  .c7 {
+    padding-left: 1.3rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .c7 {
+    padding-left: 1.8rem;
+  }
+}
+
+@media (min-width:80rem) {
+  .c7 {
+    padding-left: 1.5rem;
+  }
+}
+
+@media (min-width:25rem) {
   .c4 {
-    padding-left: 0;
+    padding-left: 0rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .c4 {
+    padding-left: 0rem;
+  }
+}
+
+@media (min-width:80rem) {
+  .c4 {
+    padding-left: 1.5rem;
+  }
+}
+
+@media (min-width:25rem) {
+  .c8 {
+    padding-left: 1.3rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .c8 {
+    padding-left: 1.8rem;
+  }
+}
+
+@media (min-width:80rem) {
+  .c8 {
+    padding-left: 0rem;
+  }
+}
+
+@media (min-width:25rem) {
+  .c11 {
+    padding-left: 1.3rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .c11 {
+    padding-left: 1.8rem;
+  }
+}
+
+@media (min-width:80rem) {
+  .c11 {
+    padding-left: 1.5rem;
+  }
+}
+
+@media (min-width:25rem) {
+  .c13 {
+    padding-left: 0rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .c13 {
+    padding-left: 0rem;
+  }
+}
+
+@media (min-width:80rem) {
+  .c13 {
+    padding-left: 1.5rem;
+  }
+}
+
+@media (min-width:25rem) {
+  .c14 {
+    padding-left: 0rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .c14 {
+    padding-left: 0rem;
+  }
+}
+
+@media (min-width:80rem) {
+  .c14 {
+    padding-left: 0rem;
   }
 }
 
@@ -949,7 +1225,7 @@ exports[`MostReadItemWrapper should render rtl correctly with 10 items 1`] = `
         </span>
       </div>
       <div
-        class="c4"
+        class="c7"
         dir="rtl"
       >
         <a
@@ -1013,7 +1289,7 @@ exports[`MostReadItemWrapper should render rtl correctly with 10 items 1`] = `
         </span>
       </div>
       <div
-        class="c4"
+        class="c8"
         dir="rtl"
       >
         <a
@@ -1034,7 +1310,7 @@ exports[`MostReadItemWrapper should render rtl correctly with 10 items 1`] = `
       class="c1"
     >
       <div
-        class="c7"
+        class="c9"
         dir="rtl"
       >
         <span
@@ -1066,7 +1342,7 @@ exports[`MostReadItemWrapper should render rtl correctly with 10 items 1`] = `
       class="c1"
     >
       <div
-        class="c8"
+        class="c10"
         dir="rtl"
       >
         <span
@@ -1077,7 +1353,7 @@ exports[`MostReadItemWrapper should render rtl correctly with 10 items 1`] = `
         </span>
       </div>
       <div
-        class="c4"
+        class="c11"
         dir="rtl"
       >
         <a
@@ -1098,7 +1374,7 @@ exports[`MostReadItemWrapper should render rtl correctly with 10 items 1`] = `
       class="c1"
     >
       <div
-        class="c9"
+        class="c12"
         dir="rtl"
       >
         <span
@@ -1109,7 +1385,7 @@ exports[`MostReadItemWrapper should render rtl correctly with 10 items 1`] = `
         </span>
       </div>
       <div
-        class="c4"
+        class="c13"
         dir="rtl"
       >
         <a
@@ -1130,7 +1406,7 @@ exports[`MostReadItemWrapper should render rtl correctly with 10 items 1`] = `
       class="c1"
     >
       <div
-        class="c8"
+        class="c10"
         dir="rtl"
       >
         <span
@@ -1141,7 +1417,7 @@ exports[`MostReadItemWrapper should render rtl correctly with 10 items 1`] = `
         </span>
       </div>
       <div
-        class="c4"
+        class="c11"
         dir="rtl"
       >
         <a
@@ -1162,7 +1438,7 @@ exports[`MostReadItemWrapper should render rtl correctly with 10 items 1`] = `
       class="c1"
     >
       <div
-        class="c9"
+        class="c12"
         dir="rtl"
       >
         <span
@@ -1173,7 +1449,7 @@ exports[`MostReadItemWrapper should render rtl correctly with 10 items 1`] = `
         </span>
       </div>
       <div
-        class="c4"
+        class="c14"
         dir="rtl"
       >
         <a
@@ -1194,7 +1470,7 @@ exports[`MostReadItemWrapper should render rtl correctly with 10 items 1`] = `
       class="c1"
     >
       <div
-        class="c8"
+        class="c10"
         dir="rtl"
       >
         <span
@@ -1205,7 +1481,7 @@ exports[`MostReadItemWrapper should render rtl correctly with 10 items 1`] = `
         </span>
       </div>
       <div
-        class="c4"
+        class="c11"
         dir="rtl"
       >
         <a
@@ -1242,6 +1518,7 @@ exports[`MostReadLink should render ltr correctly 1`] = `
   padding-bottom: 1.5rem;
   padding-left: 1rem;
   padding-right: 1rem;
+  padding-right: 0;
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
@@ -1258,9 +1535,21 @@ exports[`MostReadLink should render ltr correctly 1`] = `
   }
 }
 
-@supports (grid-template-columns:fit-content(200px)) {
+@media (min-width:25rem) {
   .c0 {
-    padding-right: 0;
+    padding-right: 1.3rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .c0 {
+    padding-right: 1.8rem;
+  }
+}
+
+@media (min-width:80rem) {
+  .c0 {
+    padding-right: 1.5rem;
   }
 }
 
@@ -1299,6 +1588,7 @@ exports[`MostReadLink should render rtl correctly 1`] = `
   padding-bottom: 1.5rem;
   padding-right: 1rem;
   padding-left: 1rem;
+  padding-left: 0;
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
@@ -1315,9 +1605,21 @@ exports[`MostReadLink should render rtl correctly 1`] = `
   }
 }
 
-@supports (grid-template-columns:fit-content(200px)) {
+@media (min-width:25rem) {
   .c0 {
-    padding-left: 0;
+    padding-left: 1.3rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .c0 {
+    padding-left: 1.8rem;
+  }
+}
+
+@media (min-width:80rem) {
+  .c0 {
+    padding-left: 1.5rem;
   }
 }
 
@@ -1356,6 +1658,7 @@ exports[`MostReadLink should render with last updated date correctly 1`] = `
   padding-bottom: 1.5rem;
   padding-left: 1rem;
   padding-right: 1rem;
+  padding-right: 0;
 }
 
 .c2 {
@@ -1382,9 +1685,21 @@ exports[`MostReadLink should render with last updated date correctly 1`] = `
   }
 }
 
-@supports (grid-template-columns:fit-content(200px)) {
+@media (min-width:25rem) {
   .c0 {
-    padding-right: 0;
+    padding-right: 1.3rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .c0 {
+    padding-right: 1.8rem;
+  }
+}
+
+@media (min-width:80rem) {
+  .c0 {
+    padding-right: 1.5rem;
   }
 }
 

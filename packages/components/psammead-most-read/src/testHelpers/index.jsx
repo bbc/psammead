@@ -55,6 +55,8 @@ export const getItemWrapperArray = ({
           service={service}
           script={script}
           title={getItem(service).title}
+          numberOfItems={numberOfItems}
+          listIndex={i}
         />
       </MostReadItemWrapper>,
     );

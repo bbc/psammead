@@ -13,6 +13,8 @@ describe('MostReadLink', () => {
       service="news"
       script={latin}
       title={getItem('news').title}
+      numberOfItems={10}
+      listIndex={0}
     />,
   );
 
@@ -24,6 +26,8 @@ describe('MostReadLink', () => {
       service="persian"
       script={arabic}
       title={getItem('persian').title}
+      numberOfItems={10}
+      listIndex={0}
     />,
   );
 
@@ -35,6 +39,8 @@ describe('MostReadLink', () => {
       service="news"
       script={latin}
       title={getItem('news').title}
+      numberOfItems={10}
+      listIndex={0}
     >
       {getItem('news', true).timestamp}
     </MostReadLink>,
