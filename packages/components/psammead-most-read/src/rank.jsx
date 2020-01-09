@@ -1,37 +1,44 @@
 import React from 'react';
-import { shape, string, oneOf, number } from 'prop-types';
+import { number, oneOf, shape, string } from 'prop-types';
 import styled from 'styled-components';
 import { getFoolscap } from '@bbc/gel-foundations/typography';
 import {
-  Burmese,
   Bengali,
+  Burmese,
   EasternArabic,
   WesternArabic,
 } from '@bbc/psammead-locales/numerals';
 import {
-  GEL_GROUP_5_SCREEN_WIDTH_MIN,
-  GEL_GROUP_4_SCREEN_WIDTH_MAX,
-  GEL_GROUP_3_SCREEN_WIDTH_MIN,
-  GEL_GROUP_2_SCREEN_WIDTH_MIN,
-  GEL_GROUP_2_SCREEN_WIDTH_MAX,
-  GEL_GROUP_1_SCREEN_WIDTH_MIN,
-  GEL_GROUP_1_SCREEN_WIDTH_MAX,
   GEL_GROUP_0_SCREEN_WIDTH_MAX,
+  GEL_GROUP_1_SCREEN_WIDTH_MAX,
+  GEL_GROUP_1_SCREEN_WIDTH_MIN,
+  GEL_GROUP_2_SCREEN_WIDTH_MAX,
+  GEL_GROUP_2_SCREEN_WIDTH_MIN,
+  GEL_GROUP_3_SCREEN_WIDTH_MIN,
+  GEL_GROUP_4_SCREEN_WIDTH_MAX,
+  GEL_GROUP_5_SCREEN_WIDTH_MIN,
 } from '@bbc/gel-foundations/breakpoints';
 import { C_POSTBOX } from '@bbc/psammead-styles/colours';
 import { scriptPropType } from '@bbc/gel-foundations/prop-types';
 import { grid } from '@bbc/psammead-styles/detection';
 import { getSerifLight } from '@bbc/psammead-styles/font-styles';
 
-// For additional spacing for numerals in the right column because of '10' being double digits.
-const isOnSecondColumn = ({ listIndex, numberOfItems }, supportsGrid) =>
-  supportsGrid ? listIndex > Math.ceil(numberOfItems / 2) : listIndex % 2 === 0;
-
 const listHasDoubleDigits = ({ numberOfItems }) => numberOfItems >= 9;
+
+// For additional spacing for numerals in the right column because of '10' being double digits.
+// Also used in ./item to make link widths in the first column consistent with links in the second column.
+export const isInSpecificColumn = (
+  { listIndex, numberOfItems },
+  supportsGrid,
+  column,
+) =>
+  supportsGrid
+    ? listIndex > Math.ceil(numberOfItems / 2)
+    : listIndex % 2 === column;
 
 // This checks whether the 2nd column contains a double digit value.
 const columnIncludesDoubleDigits = (props, supportsGrid) =>
-  isOnSecondColumn(props, supportsGrid) && listHasDoubleDigits(props);
+  isInSpecificColumn(props, supportsGrid, 0) && listHasDoubleDigits(props);
 
 // These default measurements are to be used for 2nd column minimum width.
 const doubleDigitDefault = {

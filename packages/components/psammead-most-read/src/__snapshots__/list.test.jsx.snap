@@ -60,42 +60,36 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
 .c7 {
   padding-bottom: 1.5rem;
   padding-left: 1rem;
-  padding-right: 1rem;
   padding-right: 0;
 }
 
 .c10 {
   padding-bottom: 1.5rem;
   padding-left: 1rem;
-  padding-right: 1rem;
   padding-right: 0;
 }
 
 .c11 {
   padding-bottom: 1.5rem;
   padding-left: 1rem;
-  padding-right: 1rem;
   padding-right: 0;
 }
 
 .c14 {
   padding-bottom: 1.5rem;
   padding-left: 1rem;
-  padding-right: 1rem;
   padding-right: 0;
 }
 
 .c16 {
   padding-bottom: 1.5rem;
   padding-left: 1rem;
-  padding-right: 1rem;
   padding-right: 0;
 }
 
 .c17 {
   padding-bottom: 1.5rem;
   padding-left: 1rem;
-  padding-right: 1rem;
   padding-right: 0;
 }
 
@@ -851,42 +845,36 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
 .c7 {
   padding-bottom: 1.5rem;
   padding-left: 1rem;
-  padding-right: 1rem;
   padding-right: 0;
 }
 
 .c10 {
   padding-bottom: 1.5rem;
   padding-left: 1rem;
-  padding-right: 1rem;
   padding-right: 0;
 }
 
 .c11 {
   padding-bottom: 1.5rem;
   padding-left: 1rem;
-  padding-right: 1rem;
   padding-right: 0;
 }
 
 .c14 {
   padding-bottom: 1.5rem;
   padding-left: 1rem;
-  padding-right: 1rem;
   padding-right: 0;
 }
 
 .c16 {
   padding-bottom: 1.5rem;
   padding-left: 1rem;
-  padding-right: 1rem;
   padding-right: 0;
 }
 
 .c17 {
   padding-bottom: 1.5rem;
   padding-left: 1rem;
-  padding-right: 1rem;
   padding-right: 0;
 }
 
@@ -1642,42 +1630,36 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
 .c7 {
   padding-bottom: 1.5rem;
   padding-left: 1rem;
-  padding-right: 1rem;
   padding-right: 0;
 }
 
 .c10 {
   padding-bottom: 1.5rem;
   padding-left: 1rem;
-  padding-right: 1rem;
   padding-right: 0;
 }
 
 .c11 {
   padding-bottom: 1.5rem;
   padding-left: 1rem;
-  padding-right: 1rem;
   padding-right: 0;
 }
 
 .c14 {
   padding-bottom: 1.5rem;
   padding-left: 1rem;
-  padding-right: 1rem;
   padding-right: 0;
 }
 
 .c16 {
   padding-bottom: 1.5rem;
   padding-left: 1rem;
-  padding-right: 1rem;
   padding-right: 0;
 }
 
 .c17 {
   padding-bottom: 1.5rem;
   padding-left: 1rem;
-  padding-right: 1rem;
   padding-right: 0;
 }
 
@@ -2433,42 +2415,36 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
 .c7 {
   padding-bottom: 1.5rem;
   padding-right: 1rem;
-  padding-left: 1rem;
   padding-left: 0;
 }
 
 .c10 {
   padding-bottom: 1.5rem;
   padding-right: 1rem;
-  padding-left: 1rem;
   padding-left: 0;
 }
 
 .c11 {
   padding-bottom: 1.5rem;
   padding-right: 1rem;
-  padding-left: 1rem;
   padding-left: 0;
 }
 
 .c14 {
   padding-bottom: 1.5rem;
   padding-right: 1rem;
-  padding-left: 1rem;
   padding-left: 0;
 }
 
 .c16 {
   padding-bottom: 1.5rem;
   padding-right: 1rem;
-  padding-left: 1rem;
   padding-left: 0;
 }
 
 .c17 {
   padding-bottom: 1.5rem;
   padding-right: 1rem;
-  padding-left: 1rem;
   padding-left: 0;
 }
 

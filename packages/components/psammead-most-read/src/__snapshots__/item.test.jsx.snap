@@ -45,42 +45,36 @@ exports[`MostReadItemWrapper should render ltr correctly with 10 items 1`] = `
 .c7 {
   padding-bottom: 1.5rem;
   padding-left: 1rem;
-  padding-right: 1rem;
   padding-right: 0;
 }
 
 .c4 {
   padding-bottom: 1.5rem;
   padding-left: 1rem;
-  padding-right: 1rem;
   padding-right: 0;
 }
 
 .c8 {
   padding-bottom: 1.5rem;
   padding-left: 1rem;
-  padding-right: 1rem;
   padding-right: 0;
 }
 
 .c11 {
   padding-bottom: 1.5rem;
   padding-left: 1rem;
-  padding-right: 1rem;
   padding-right: 0;
 }
 
 .c13 {
   padding-bottom: 1.5rem;
   padding-left: 1rem;
-  padding-right: 1rem;
   padding-right: 0;
 }
 
 .c14 {
   padding-bottom: 1.5rem;
   padding-left: 1rem;
-  padding-right: 1rem;
   padding-right: 0;
 }
 
@@ -793,42 +787,36 @@ exports[`MostReadItemWrapper should render rtl correctly with 10 items 1`] = `
 .c7 {
   padding-bottom: 1.5rem;
   padding-right: 1rem;
-  padding-left: 1rem;
   padding-left: 0;
 }
 
 .c4 {
   padding-bottom: 1.5rem;
   padding-right: 1rem;
-  padding-left: 1rem;
   padding-left: 0;
 }
 
 .c8 {
   padding-bottom: 1.5rem;
   padding-right: 1rem;
-  padding-left: 1rem;
   padding-left: 0;
 }
 
 .c11 {
   padding-bottom: 1.5rem;
   padding-right: 1rem;
-  padding-left: 1rem;
   padding-left: 0;
 }
 
 .c13 {
   padding-bottom: 1.5rem;
   padding-right: 1rem;
-  padding-left: 1rem;
   padding-left: 0;
 }
 
 .c14 {
   padding-bottom: 1.5rem;
   padding-right: 1rem;
-  padding-left: 1rem;
   padding-left: 0;
 }
 
@@ -1517,7 +1505,6 @@ exports[`MostReadLink should render ltr correctly 1`] = `
 .c0 {
   padding-bottom: 1.5rem;
   padding-left: 1rem;
-  padding-right: 1rem;
   padding-right: 0;
 }
 
@@ -1587,7 +1574,6 @@ exports[`MostReadLink should render rtl correctly 1`] = `
 .c0 {
   padding-bottom: 1.5rem;
   padding-right: 1rem;
-  padding-left: 1rem;
   padding-left: 0;
 }
 
@@ -1657,7 +1643,6 @@ exports[`MostReadLink should render with last updated date correctly 1`] = `
 .c0 {
   padding-bottom: 1.5rem;
   padding-left: 1rem;
-  padding-right: 1rem;
   padding-right: 0;
 }
 
