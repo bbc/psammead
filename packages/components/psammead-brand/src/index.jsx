@@ -72,6 +72,7 @@ const brandWidth = (minWidth, maxWidth) => `
   max-width: ${maxWidth / 16}rem;
   min-width: ${minWidth / 16}rem;
   flex: 1 1 ${minWidth / 16}rem;
+  -ms-flex-preferred-size: ${maxWidth / 16}rem;
 `;
 
 const StyledLink = styled.a`

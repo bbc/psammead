@@ -54,6 +54,7 @@ exports[`Brand should render correctly with link not provided 1`] = `
   -webkit-flex: 1 1 11.25rem;
   -ms-flex: 1 1 11.25rem;
   flex: 1 1 11.25rem;
+  -ms-flex-preferred-size: 17.5rem;
 }
 
 .c4:hover .c2,
@@ -184,6 +185,7 @@ exports[`Brand should render correctly with link provided 1`] = `
   -webkit-flex: 1 1 11.25rem;
   -ms-flex: 1 1 11.25rem;
   flex: 1 1 11.25rem;
+  -ms-flex-preferred-size: 17.5rem;
 }
 
 .c4 {
@@ -199,6 +201,7 @@ exports[`Brand should render correctly with link provided 1`] = `
   -webkit-flex: 1 1 11.25rem;
   -ms-flex: 1 1 11.25rem;
   flex: 1 1 11.25rem;
+  -ms-flex-preferred-size: 17.5rem;
 }
 
 .c2:hover .c4,
@@ -345,6 +348,7 @@ exports[`Brand should render correctly with no service Localised Name 1`] = `
   -webkit-flex: 1 1 11.25rem;
   -ms-flex: 1 1 11.25rem;
   flex: 1 1 11.25rem;
+  -ms-flex-preferred-size: 17.5rem;
 }
 
 .c4:hover .c2,
@@ -475,6 +479,7 @@ exports[`Brand should render correctly with transparent borders 1`] = `
   -webkit-flex: 1 1 11.25rem;
   -ms-flex: 1 1 11.25rem;
   flex: 1 1 11.25rem;
+  -ms-flex-preferred-size: 17.5rem;
 }
 
 .c4:hover .c2,
