@@ -3,7 +3,8 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
-| 2.6.15 | [PR#2877](https://github.com/bbc/psammead/pull/2877) prevent timestamp from being read out twice on iOS |
+| 2.6.16 | [PR#2877](https://github.com/bbc/psammead/pull/2877) prevent timestamp from being read out twice on iOS |
+| 2.6.15 | [PR#2894](https://github.com/bbc/psammead/pull/2894) Talos - Bump Dependencies - @bbc/psammead-locales |
 | 2.6.14 | [PR#2857](https://github.com/bbc/psammead/pull/2857) Talos - Bump Dependencies - @bbc/psammead-locales |
 | 2.6.13 | [PR#2782](https://github.com/bbc/psammead/pull/2782) Talos - Bump Dependencies - @bbc/psammead-locales |
 | 2.6.12 | [PR#2703](https://github.com/bbc/psammead/pull/2703) Talos - Bump Dependencies - @bbc/psammead-timestamp |

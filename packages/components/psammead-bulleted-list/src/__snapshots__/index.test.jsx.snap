@@ -7,6 +7,7 @@ exports[`PsammeadBulletedList should render correctly from ltr 1`] = `
   font-family: ReithSans,Helvetica,Arial,sans-serif;
   font-weight: 400;
   font-style: normal;
+  margin-top: 0;
   list-style-type: none;
 }
 
@@ -69,6 +70,7 @@ exports[`PsammeadBulletedList should render correctly from rtl 1`] = `
   font-family: "BBC Nassim Arabic",Arial,Verdana,Geneva,Helvetica,sans-serif;
   font-weight: 400;
   font-style: normal;
+  margin-top: 0;
   list-style-type: none;
 }
 

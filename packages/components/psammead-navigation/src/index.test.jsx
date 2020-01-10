@@ -2,10 +2,7 @@ import React from 'react';
 import { shouldMatchSnapshot } from '@bbc/psammead-test-helpers';
 import { render } from '@testing-library/react';
 import { latin } from '@bbc/gel-foundations/scripts';
-import {
-  CanonicalScrollableNavigation,
-  AmpScrollableNavigation,
-} from './ScrollableNavigation';
+import { ScrollableNavigation } from './ScrollableNavigation';
 import Navigation, { NavigationUl, NavigationLi } from './index';
 import igboNavData from '../testHelpers/igbo';
 
@@ -63,22 +60,8 @@ describe('Navigation', () => {
 
 describe('Scrollable Navigation', () => {
   shouldMatchSnapshot(
-    'should render scrollable Canonical version correctly',
-    <CanonicalScrollableNavigation isScrollable>
-      {NavigationExample}
-    </CanonicalScrollableNavigation>,
-  );
-
-  shouldMatchSnapshot(
-    'should render non-scrollable Canonical version correctly',
-    <CanonicalScrollableNavigation>
-      {NavigationExample}
-    </CanonicalScrollableNavigation>,
-  );
-
-  shouldMatchSnapshot(
-    'should render AMP version correctly',
-    <AmpScrollableNavigation>{NavigationExample}</AmpScrollableNavigation>,
+    'should render correctly',
+    <ScrollableNavigation>{NavigationExample}</ScrollableNavigation>,
   );
 });
 
@@ -100,23 +83,5 @@ describe('Assertions', () => {
     expect(
       container.querySelector('a').getAttribute('data-navigation'),
     ).toEqual('test_navigation');
-  });
-
-  it('should set tab index on links to -1 if isScrollable is true on NavigationLi', () => {
-    const { container } = render(
-      <NavigationLi
-        key="test-key"
-        url="http://test.url"
-        script={latin}
-        currentPageText="Current page"
-        service="news"
-        isScrollable
-        active
-        data-navigation="test_navigation"
-      >
-        Testing isScrollable
-      </NavigationLi>,
-    );
-    expect(container.querySelector('a').getAttribute('tabindex')).toEqual('-1');
   });
 });

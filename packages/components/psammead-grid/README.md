@@ -19,6 +19,7 @@ Psammead Grid is a component that you can use to set out column-based layouts us
 | item | boolean | no | false | `item` |
 | enableGelGutters | boolean | no | false | `enableGelGutter` |
 | margins | object | no | `{ group0: false, group1: false, group2: false, group3: false, group4: false, group5: false }` | `{ group0: true, group1: true, group2: true, group3: true }` |
+| parentColumns | object | no | null | `columns: { group0: 6, group1: 6, group2: 3, group3: 3, group4: 4, group5: 4}` |
 
 - When should I use the `columns` prop?
   - This should always be defined.
@@ -41,7 +42,7 @@ Psammead Grid is a component that you can use to set out column-based layouts us
       group2: 1,
       group3: 1,
       group4: 1,
-      group5: 1
+      group5: 1,
     }}
   >
     This spans 1 out of 6 columns for all widths
@@ -54,7 +55,7 @@ Psammead Grid is a component that you can use to set out column-based layouts us
       group2: 5,
       group3: 5,
       group4: 5,
-      group5: 5
+      group5: 5,
     }}
   >
     This spans 5 out of 6 columns for all widths
@@ -67,6 +68,8 @@ Psammead Grid is a component that you can use to set out column-based layouts us
   - If you don't pass it in, the offset value defaults to 1, the start of the grid.
 - Why is there no vertical spacing on the grid?
   - The Grid implementation only has gutters/margins for columns, [according to the GEL specification](https://www.bbc.co.uk/gel/guidelines/grid#grid-sizes). This is to allow flexibility for a variety of spacing. To add vertical spacing, you should add padding/margin/top/bottom to the contents.
+- When should I use the `parentColumns` prop?
+  - `parentColumns` is an object structured just like the `columns` prop. This prop explicitly passes the parent grid's columns configuration into a child `<Grid>` element. [See example.](https://github.com/bbc/psammead/tree/latest/packages/components/psammead-grid#parentcolumns-prop)
 
 ## Usage
 
@@ -74,12 +77,14 @@ We use the GEL Grid for our breakpoints, as well as for our standard gutters and
 
 When we refer to `group3` in this component, we're referring to the breakpoint with a minimum width `GEL_GROUP_3_SCREEN_WIDTH_MIN` & a maximum width `GEL_GROUP_3_SCREEN_WIDTH_MAX`. These values are defined within [`@bbc/gel-foundations/breakpoints`](https://github.com/bbc/psammead/blob/latest/packages/utilities/gel-foundations/src/breakpoints.js).
 
+When using one of the extended Grid components, if you wish to extend it using the `as` prop, you'll need to use `forwardedAs`. This prop enables you to pass down the element down further than one level.
+
 #### <a name="simple-example">Simple example</a>
 
 Here is an example of a `<Grid>` that has 8 columns for `group4` (from 1008px to 1279px). It has four child `<Grid item>` elements, one which spans 6/8 columns and three others which spans 2/8 columns within this breakpoint.
 
 ```jsx
-import Grid from "@bbc/psammead-grid";
+import Grid from '@bbc/psammead-grid';
 
 const MyComponent = () => (
   <Grid
@@ -89,7 +94,7 @@ const MyComponent = () => (
       group2: 8,
       group3: 8,
       group4: 8,
-      group5: 8
+      group5: 8,
     }}
   >
     <Grid
@@ -100,7 +105,7 @@ const MyComponent = () => (
         group2: 6,
         group3: 6,
         group4: 6,
-        group5: 6
+        group5: 6,
       }}
     >
       <p>Item 1 - Paragraph that spans 6 out of 8 columns through group4</p>
@@ -113,7 +118,7 @@ const MyComponent = () => (
         group2: 2,
         group3: 2,
         group4: 2,
-        group5: 2
+        group5: 2,
       }}
     >
       <p>Item 2 - Paragraph that spans 2 out of 8 columns through group4</p>
@@ -126,7 +131,7 @@ const MyComponent = () => (
         group2: 2,
         group3: 2,
         group4: 2,
-        group5: 2
+        group5: 2,
       }}
     >
       <p>Item 3 - Paragraph that spans 2 out of 8 columns through group4</p>
@@ -139,7 +144,7 @@ const MyComponent = () => (
         group2: 2,
         group3: 2,
         group4: 2,
-        group5: 2
+        group5: 2,
       }}
     >
       <p>Item 4 - Paragraph that spans 2 out of 8 columns through group4</p>
@@ -157,7 +162,7 @@ Using `enableGelGutters` on the `Grid` element. Note: this should _not_ be added
 Usage of `margins` can be on either `<Grid>` or `<Grid item>`.
 
 ```jsx
-import Grid from "@bbc/psammead-grid";
+import Grid from '@bbc/psammead-grid';
 
 const MyComponent = () => (
   <Grid
@@ -168,7 +173,7 @@ const MyComponent = () => (
       group2: 4,
       group3: 6,
       group4: 8,
-      group5: 12
+      group5: 12,
     }}
     margins={{
       group0: true,
@@ -187,7 +192,7 @@ const MyComponent = () => (
         group2: 4,
         group3: 6,
         group4: 6,
-        group5: 12
+        group5: 12,
       }}
     >
       <p>
@@ -202,7 +207,7 @@ const MyComponent = () => (
         group2: 4,
         group3: 6,
         group4: 2,
-        group5: 12
+        group5: 12,
       }}
     >
       <p>
@@ -226,7 +231,7 @@ Note that here, any time you use `<Grid>` that generates a new grid. The total n
 Here we have no margins on the Grid item around the Image, but there is on the Paragraph items.
 
 ```jsx
-import Grid from "@bbc/psammead-grid";
+import Grid from '@bbc/psammead-grid';
 
 const MyComponent = () => (
   <Grid
@@ -236,7 +241,7 @@ const MyComponent = () => (
       group2: 6,
       group3: 6,
       group4: 6,
-      group5: 6
+      group5: 6,
     }}
   >
     <Grid
@@ -246,7 +251,7 @@ const MyComponent = () => (
         group2: 6,
         group3: 6,
         group4: 6,
-        group5: 6
+        group5: 6,
       }}
     >
       <Grid
@@ -257,7 +262,7 @@ const MyComponent = () => (
           group2: 6,
           group3: 3,
           group4: 3,
-          group5: 3
+          group5: 3,
         }}
       >
         <ExampleImage />
@@ -270,7 +275,7 @@ const MyComponent = () => (
           group2: 6,
           group3: 3,
           group4: 3,
-          group5: 3
+          group5: 3,
         }}
       >
         <ExampleParagraph />
@@ -284,7 +289,7 @@ const MyComponent = () => (
         group2: 2,
         group3: 2,
         group4: 2,
-        group5: 2
+        group5: 2,
       }}
     >
       <ExampleImage />
@@ -297,11 +302,53 @@ const MyComponent = () => (
         group2: 4,
         group3: 4,
         group4: 4,
-        group5: 4
+        group5: 4,
       }}
     >
       <ExampleParagraph />
     </Grid>
+  </Grid>
+);
+```
+
+#### <a name="parentcolumns-prop">Child grid using parentColumns prop</a>
+
+Note that, any time you render a child `<Grid>` outside of the parent grid, the parent's columns configuration is not automagically passed to the child. This causes the layout to break in browsers that do not support css grid. To ensure the configuration is passed correctly, you need to explicitly pass in the parentColumns prop.
+
+```jsx
+import Grid from '@bbc/psammead-grid';
+
+const parentProps = {
+  columns: {
+    group0: 6,
+    group1: 6,
+    group2: 6,
+    group3: 6,
+    group4: 6,
+    group5: 6,
+  },
+};
+
+const childProps = {
+  columns: {
+    group0: 6,
+    group1: 6,
+    group2: 6,
+    group3: 6,
+    group4: 6,
+    group5: 6,
+  },
+};
+
+const renderChildGrid = () => (
+  <Grid parentColumns={parentProps.columns} {...childProps}>
+    <ExampleParagraph />
+  </Grid>
+);
+
+const MyComponent = () => (
+  <Grid {...parentProps}>
+    {renderChildGrid()}
   </Grid>
 );
 ```
@@ -329,7 +376,7 @@ This `Grid` component can be used for page-level layouts as well as for layouts 
 
 ### Accessibility notes
 
-Currently this component is in alpha. This is because it has not yet been tested with various assistive technologies. After it has had an accessibility swarm, this will be published under a standard version.
+The `<Grid>` component is semantically a `div` element.
 
 <!-- ## Roadmap -->
 
