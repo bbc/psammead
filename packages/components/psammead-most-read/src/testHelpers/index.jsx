@@ -2,7 +2,8 @@ import React from 'react';
 import { TEXT_VARIANTS } from '@bbc/psammead-storybook-helpers';
 import { latin } from '@bbc/gel-foundations/scripts';
 import Timestamp from '@bbc/psammead-timestamp';
-import { MostReadItemWrapper, MostReadLink, MostReadRank } from '..';
+import { MostReadItemWrapper, MostReadLink } from '../Item';
+import MostReadRank from '../Rank';
 
 const lastUpdated = (script, service) => (
   // This will return the provided english translations
@@ -38,7 +39,7 @@ export const getItemWrapperArray = ({
   dir,
 }) => {
   const itemWrapperArray = [];
-
+  const item = getItem(service);
   for (let i = 1; i <= numberOfItems; i += 1) {
     itemWrapperArray.push(
       <MostReadItemWrapper dir={dir} key={i}>
@@ -50,13 +51,13 @@ export const getItemWrapperArray = ({
           dir={dir}
         />
         <MostReadLink
-          dir={dir}
-          href={getItem(service).href}
+          title={item.title}
+          href={item.href}
           service={service}
           script={script}
-          title={getItem(service).title}
-          numberOfItems={numberOfItems}
           listIndex={i}
+          numberOfItems={numberOfItems}
+          dir={dir}
         />
       </MostReadItemWrapper>,
     );

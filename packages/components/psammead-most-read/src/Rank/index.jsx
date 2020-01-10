@@ -6,6 +6,7 @@ import {
   Bengali,
   Burmese,
   EasternArabic,
+  Nepali,
   WesternArabic,
 } from '@bbc/psammead-locales/numerals';
 import {
@@ -68,7 +69,7 @@ const doubleDigitOverride = {
 };
 
 const doubleDigitWidth = ({ service }) => {
-  const overrideService = ['bengali', 'arabic'];
+  const overrideService = Object.keys(doubleDigitOverride);
 
   return overrideService.includes(service)
     ? doubleDigitOverride[service]
@@ -131,7 +132,6 @@ const StyledSpan = styled.span`
   color: ${C_POSTBOX};
   margin: 0; /* Reset */
   padding: 0;
-  float: ${props => (props.dir === 'rtl' ? 'right' : 'left')};
 `;
 
 const serviceNumerals = service => {
@@ -139,6 +139,7 @@ const serviceNumerals = service => {
     arabic: EasternArabic,
     bengali: Bengali,
     burmese: Burmese,
+    nepali: Nepali,
     pashto: EasternArabic,
     persian: EasternArabic,
     urdu: EasternArabic,
@@ -158,7 +159,7 @@ const MostReadRank = ({ service, script, listIndex, numberOfItems, dir }) => {
       numberOfItems={numberOfItems}
       dir={dir}
     >
-      <StyledSpan service={service} script={script} dir={dir}>
+      <StyledSpan service={service} script={script}>
         {rank}
       </StyledSpan>
     </StyledWrapper>

@@ -2,7 +2,7 @@ import React from 'react';
 import { shouldMatchSnapshot } from '@bbc/psammead-test-helpers';
 import { arabic, latin } from '@bbc/gel-foundations/scripts';
 import { getItems } from './testHelpers';
-import { MostRead } from './index';
+import { MostRead } from '.';
 
 describe('MostRead', () => {
   shouldMatchSnapshot(
@@ -12,7 +12,6 @@ describe('MostRead', () => {
       script={latin}
       service="news"
       header="Most Read"
-      dir="ltr"
     />,
   );
   shouldMatchSnapshot(

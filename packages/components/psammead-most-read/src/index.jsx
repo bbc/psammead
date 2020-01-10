@@ -1,10 +1,10 @@
 import React from 'react';
 import { shape, string, oneOf, arrayOf, node } from 'prop-types';
 import { scriptPropType } from '@bbc/gel-foundations/prop-types';
-import MostReadList, { MostReadItemWrapper } from './list';
-import MostReadTitle from './title';
-import MostReadRank from './rank';
-import { MostReadLink } from './item';
+import MostReadList from './List/index';
+import MostReadTitle from './Title/index';
+import MostReadRank from './Rank/index';
+import { MostReadLink, MostReadItemWrapper } from './Item/index';
 
 const MostRead = ({ items, script, service, header, dir }) => (
   <>
@@ -30,7 +30,7 @@ const MostRead = ({ items, script, service, header, dir }) => (
             href={item.href}
             service={service}
             script={script}
-            listIndex={i}
+            listIndex={i + 1}
             numberOfItems={items.length}
             dir={dir}
           />

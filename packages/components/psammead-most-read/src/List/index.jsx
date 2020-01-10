@@ -6,19 +6,7 @@ import {
   GEL_GROUP_5_SCREEN_WIDTH_MIN,
 } from '@bbc/gel-foundations/breakpoints';
 import Grid from '@bbc/psammead-grid';
-
-const MostReadListProps = {
-  enableGelGutters: true,
-  enableGelMargins: true,
-  columns: {
-    group0: 6,
-    group1: 6,
-    group2: 6,
-    group3: 6,
-    group4: 8,
-    group5: 20,
-  },
-};
+import { mostReadListGridProps } from '../testHelpers/gridProps';
 
 const StyledOl = styled.ol.attrs({
   role: 'list',
@@ -51,7 +39,11 @@ const StyledGrid = styled(Grid)`
 
 const MostReadList = ({ numberOfItems, dir, children }) => (
   <StyledOl>
-    <StyledGrid {...MostReadListProps} dir={dir} numberOfItems={numberOfItems}>
+    <StyledGrid
+      {...mostReadListGridProps}
+      dir={dir}
+      numberOfItems={numberOfItems}
+    >
       {children}
     </StyledGrid>
   </StyledOl>
@@ -68,42 +60,3 @@ MostReadList.defaultProps = {
 };
 
 export default MostReadList;
-
-const StyledLi = styled.li`
-  display: flex;
-  flex-direction: row;
-  margin: 0;
-  padding: 0;
-`;
-
-const MostReadItemProps = {
-  item: true,
-  columns: {
-    group0: 6,
-    group1: 6,
-    group2: 3,
-    group3: 3,
-    group4: 4,
-    group5: 4,
-  },
-};
-
-export const MostReadItemWrapper = ({ dir, children }) => (
-  <Grid
-    {...MostReadItemProps}
-    parentColumns={MostReadListProps.columns}
-    dir={dir}
-    forwardedAs="li"
-  >
-    <StyledLi>{children}</StyledLi>
-  </Grid>
-);
-
-MostReadItemWrapper.propTypes = {
-  dir: oneOf(['rtl', 'ltr']),
-  children: node.isRequired,
-};
-
-MostReadItemWrapper.defaultProps = {
-  dir: 'ltr',
-};

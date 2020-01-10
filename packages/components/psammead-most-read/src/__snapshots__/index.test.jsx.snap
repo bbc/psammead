@@ -1,38 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`MostRead should render with ltr most read with correct dir 1`] = `
-.c1 {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-.c3 {
-  grid-auto-flow: column;
-  grid-template-rows: repeat( 5,[col-start] auto [col-end] );
-}
-
-.c5 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  margin: 0;
-  padding: 0;
-}
-
-.c0 {
-  font-family: ReithSans,Helvetica,Arial,sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 1.25rem;
-  line-height: 1.5rem;
-  color: #3F3F42;
-}
-
 .c7 {
   font-family: ReithSerif,Helvetica,Arial,sans-serif;
   font-weight: 300;
@@ -42,7 +10,6 @@ exports[`MostRead should render with ltr most read with correct dir 1`] = `
   color: #B80000;
   margin: 0;
   padding: 0;
-  float: left;
 }
 
 .c9 {
@@ -74,13 +41,13 @@ exports[`MostRead should render with ltr most read with correct dir 1`] = `
   padding-right: 0;
 }
 
-.c13 {
+.c12 {
   padding-bottom: 1.5rem;
   padding-left: 1rem;
   padding-right: 0;
 }
 
-.c16 {
+.c15 {
   padding-bottom: 1.5rem;
   padding-left: 1rem;
   padding-right: 0;
@@ -96,6 +63,39 @@ exports[`MostRead should render with ltr most read with correct dir 1`] = `
   padding-bottom: 1.5rem;
   padding-left: 1rem;
   padding-right: 0;
+}
+
+.c5 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  margin: 0;
+  padding: 0;
+}
+
+.c1 {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.c3 {
+  grid-auto-flow: column;
+  grid-template-rows: repeat( 5,[col-start] auto [col-end] );
+}
+
+.c0 {
+  font-family: ReithSans,Helvetica,Arial,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+  color: #3F3F42;
 }
 
 @supports (display:grid) {
@@ -159,33 +159,6 @@ exports[`MostRead should render with ltr most read with correct dir 1`] = `
   }
 }
 
-@media (max-width:24.9375rem) {
-  .c3 {
-    grid-template-rows: repeat( 10,[col-start] auto [col-end] );
-  }
-}
-
-@media (min-width:80rem) {
-  .c3 {
-    grid-auto-flow: row;
-    grid-template-rows: repeat( 5,[col-start] auto [col-end] );
-  }
-}
-
-@media (min-width:20rem) and (max-width:37.4375rem) {
-  .c0 {
-    font-size: 1.5rem;
-    line-height: 1.75rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c0 {
-    font-size: 2rem;
-    line-height: 2.25rem;
-  }
-}
-
 @media (max-width:14.9375rem) {
   .c6 {
     min-width: 2.5rem;
@@ -247,31 +220,31 @@ exports[`MostRead should render with ltr most read with correct dir 1`] = `
 }
 
 @media (max-width:14.9375rem) {
-  .c12 {
+  .c13 {
     min-width: 2.5rem;
   }
 }
 
 @media (min-width:15rem) and (max-width:24.9375rem) {
-  .c12 {
+  .c13 {
     min-width: 2.5rem;
   }
 }
 
 @media (min-width:25rem) and (max-width:37.4375rem) {
-  .c12 {
+  .c13 {
     min-width: auto;
   }
 }
 
 @media (min-width:37.5rem) and (max-width:80rem) {
-  .c12 {
+  .c13 {
     min-width: auto;
   }
 }
 
 @media (min-width:80rem) {
-  .c12 {
+  .c13 {
     min-width: 4.25rem;
   }
 }
@@ -307,31 +280,31 @@ exports[`MostRead should render with ltr most read with correct dir 1`] = `
 }
 
 @media (max-width:14.9375rem) {
-  .c15 {
+  .c16 {
     min-width: 2.5rem;
   }
 }
 
 @media (min-width:15rem) and (max-width:24.9375rem) {
-  .c15 {
+  .c16 {
     min-width: 2.5rem;
   }
 }
 
 @media (min-width:25rem) and (max-width:37.4375rem) {
-  .c15 {
+  .c16 {
     min-width: auto;
   }
 }
 
 @media (min-width:37.5rem) and (max-width:80rem) {
-  .c15 {
+  .c16 {
     min-width: auto;
   }
 }
 
 @media (min-width:80rem) {
-  .c15 {
+  .c16 {
     min-width: auto;
   }
 }
@@ -366,13 +339,13 @@ exports[`MostRead should render with ltr most read with correct dir 1`] = `
 
 @media (min-width:25rem) {
   .c8 {
-    padding-right: 1.3rem;
+    padding-right: 0rem;
   }
 }
 
 @media (min-width:37.5rem) {
   .c8 {
-    padding-right: 1.8rem;
+    padding-right: 0rem;
   }
 }
 
@@ -384,13 +357,13 @@ exports[`MostRead should render with ltr most read with correct dir 1`] = `
 
 @media (min-width:25rem) {
   .c11 {
-    padding-right: 0rem;
+    padding-right: 1.15rem;
   }
 }
 
 @media (min-width:37.5rem) {
   .c11 {
-    padding-right: 0rem;
+    padding-right: 1.8rem;
   }
 }
 
@@ -401,37 +374,37 @@ exports[`MostRead should render with ltr most read with correct dir 1`] = `
 }
 
 @media (min-width:25rem) {
-  .c13 {
-    padding-right: 1.3rem;
+  .c12 {
+    padding-right: 1.15rem;
   }
 }
 
 @media (min-width:37.5rem) {
-  .c13 {
+  .c12 {
     padding-right: 1.8rem;
   }
 }
 
 @media (min-width:80rem) {
-  .c13 {
+  .c12 {
     padding-right: 0rem;
   }
 }
 
 @media (min-width:25rem) {
-  .c16 {
-    padding-right: 1.3rem;
+  .c15 {
+    padding-right: 1.15rem;
   }
 }
 
 @media (min-width:37.5rem) {
-  .c16 {
+  .c15 {
     padding-right: 1.8rem;
   }
 }
 
 @media (min-width:80rem) {
-  .c16 {
+  .c15 {
     padding-right: 1.5rem;
   }
 }
@@ -469,6 +442,33 @@ exports[`MostRead should render with ltr most read with correct dir 1`] = `
 @media (min-width:80rem) {
   .c18 {
     padding-right: 0rem;
+  }
+}
+
+@media (max-width:24.9375rem) {
+  .c3 {
+    grid-template-rows: repeat( 10,[col-start] auto [col-end] );
+  }
+}
+
+@media (min-width:80rem) {
+  .c3 {
+    grid-auto-flow: row;
+    grid-template-rows: repeat( 5,[col-start] auto [col-end] );
+  }
+}
+
+@media (min-width:20rem) and (max-width:37.4375rem) {
+  .c0 {
+    font-size: 1.5rem;
+    line-height: 1.75rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .c0 {
+    font-size: 2rem;
+    line-height: 2.25rem;
   }
 }
 
@@ -508,7 +508,6 @@ exports[`MostRead should render with ltr most read with correct dir 1`] = `
           >
             <span
               class="c7"
-              dir="ltr"
             >
               1
             </span>
@@ -540,7 +539,6 @@ exports[`MostRead should render with ltr most read with correct dir 1`] = `
           >
             <span
               class="c7"
-              dir="ltr"
             >
               2
             </span>
@@ -572,7 +570,6 @@ exports[`MostRead should render with ltr most read with correct dir 1`] = `
           >
             <span
               class="c7"
-              dir="ltr"
             >
               3
             </span>
@@ -604,13 +601,12 @@ exports[`MostRead should render with ltr most read with correct dir 1`] = `
           >
             <span
               class="c7"
-              dir="ltr"
             >
               4
             </span>
           </div>
           <div
-            class="c11"
+            class="c12"
             dir="ltr"
           >
             <a
@@ -631,18 +627,17 @@ exports[`MostRead should render with ltr most read with correct dir 1`] = `
           class="c5"
         >
           <div
-            class="c12"
+            class="c13"
             dir="ltr"
           >
             <span
               class="c7"
-              dir="ltr"
             >
               5
             </span>
           </div>
           <div
-            class="c13"
+            class="c8"
             dir="ltr"
           >
             <a
@@ -668,13 +663,12 @@ exports[`MostRead should render with ltr most read with correct dir 1`] = `
           >
             <span
               class="c7"
-              dir="ltr"
             >
               6
             </span>
           </div>
           <div
-            class="c11"
+            class="c15"
             dir="ltr"
           >
             <a
@@ -694,47 +688,14 @@ exports[`MostRead should render with ltr most read with correct dir 1`] = `
         <li
           class="c5"
         >
-          <div
-            class="c15"
-            dir="ltr"
-          >
-            <span
-              class="c7"
-              dir="ltr"
-            >
-              7
-            </span>
-          </div>
           <div
             class="c16"
             dir="ltr"
           >
-            <a
-              class="c9"
-              href="https://www.bbc.com/news/articles/cn7k01xp8kxo"
-            >
-              Could a computer ever create better art than a human?
-            </a>
-          </div>
-        </li>
-      </div>
-      <div
-        as="li"
-        class="c4"
-        dir="ltr"
-      >
-        <li
-          class="c5"
-        >
-          <div
-            class="c14"
-            dir="ltr"
-          >
             <span
               class="c7"
-              dir="ltr"
             >
-              8
+              7
             </span>
           </div>
           <div
@@ -759,18 +720,48 @@ exports[`MostRead should render with ltr most read with correct dir 1`] = `
           class="c5"
         >
           <div
-            class="c15"
+            class="c14"
             dir="ltr"
           >
             <span
               class="c7"
-              dir="ltr"
+            >
+              8
+            </span>
+          </div>
+          <div
+            class="c15"
+            dir="ltr"
+          >
+            <a
+              class="c9"
+              href="https://www.bbc.com/news/articles/cn7k01xp8kxo"
+            >
+              Could a computer ever create better art than a human?
+            </a>
+          </div>
+        </li>
+      </div>
+      <div
+        as="li"
+        class="c4"
+        dir="ltr"
+      >
+        <li
+          class="c5"
+        >
+          <div
+            class="c16"
+            dir="ltr"
+          >
+            <span
+              class="c7"
             >
               9
             </span>
           </div>
           <div
-            class="c16"
+            class="c18"
             dir="ltr"
           >
             <a
@@ -796,13 +787,12 @@ exports[`MostRead should render with ltr most read with correct dir 1`] = `
           >
             <span
               class="c7"
-              dir="ltr"
             >
               10
             </span>
           </div>
           <div
-            class="c18"
+            class="c15"
             dir="ltr"
           >
             <a
@@ -820,38 +810,6 @@ exports[`MostRead should render with ltr most read with correct dir 1`] = `
 `;
 
 exports[`MostRead should render with rtl most read with correct dir 1`] = `
-.c1 {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-.c3 {
-  grid-auto-flow: column;
-  grid-template-rows: repeat( 5,[col-start] auto [col-end] );
-}
-
-.c5 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  margin: 0;
-  padding: 0;
-}
-
-.c0 {
-  font-family: "BBC Nassim Arabic",Arial,Verdana,Geneva,Helvetica,sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 1.5rem;
-  line-height: 2.125rem;
-  color: #3F3F42;
-}
-
 .c7 {
   font-family: "BBC Nassim Arabic",Arial,Verdana,Geneva,Helvetica,sans-serif;
   font-weight: 400;
@@ -861,7 +819,6 @@ exports[`MostRead should render with rtl most read with correct dir 1`] = `
   color: #B80000;
   margin: 0;
   padding: 0;
-  float: right;
 }
 
 .c9 {
@@ -893,13 +850,13 @@ exports[`MostRead should render with rtl most read with correct dir 1`] = `
   padding-left: 0;
 }
 
-.c13 {
+.c12 {
   padding-bottom: 1.5rem;
   padding-right: 1rem;
   padding-left: 0;
 }
 
-.c16 {
+.c15 {
   padding-bottom: 1.5rem;
   padding-right: 1rem;
   padding-left: 0;
@@ -915,6 +872,39 @@ exports[`MostRead should render with rtl most read with correct dir 1`] = `
   padding-bottom: 1.5rem;
   padding-right: 1rem;
   padding-left: 0;
+}
+
+.c5 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  margin: 0;
+  padding: 0;
+}
+
+.c1 {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.c3 {
+  grid-auto-flow: column;
+  grid-template-rows: repeat( 5,[col-start] auto [col-end] );
+}
+
+.c0 {
+  font-family: "BBC Nassim Arabic",Arial,Verdana,Geneva,Helvetica,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.5rem;
+  line-height: 2.125rem;
+  color: #3F3F42;
 }
 
 @supports (display:grid) {
@@ -978,33 +968,6 @@ exports[`MostRead should render with rtl most read with correct dir 1`] = `
   }
 }
 
-@media (max-width:24.9375rem) {
-  .c3 {
-    grid-template-rows: repeat( 10,[col-start] auto [col-end] );
-  }
-}
-
-@media (min-width:80rem) {
-  .c3 {
-    grid-auto-flow: row;
-    grid-template-rows: repeat( 5,[col-start] auto [col-end] );
-  }
-}
-
-@media (min-width:20rem) and (max-width:37.4375rem) {
-  .c0 {
-    font-size: 2rem;
-    line-height: 2.375rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c0 {
-    font-size: 2.25rem;
-    line-height: 3.125rem;
-  }
-}
-
 @media (max-width:14.9375rem) {
   .c6 {
     min-width: 2.5rem;
@@ -1096,61 +1059,61 @@ exports[`MostRead should render with rtl most read with correct dir 1`] = `
 }
 
 @media (max-width:14.9375rem) {
-  .c15 {
+  .c16 {
     min-width: 2.5rem;
   }
 }
 
 @media (min-width:15rem) and (max-width:24.9375rem) {
-  .c15 {
+  .c16 {
     min-width: 2.5rem;
   }
 }
 
 @media (min-width:25rem) and (max-width:37.4375rem) {
-  .c15 {
+  .c16 {
     min-width: auto;
   }
 }
 
 @media (min-width:37.5rem) and (max-width:80rem) {
-  .c15 {
+  .c16 {
     min-width: auto;
   }
 }
 
 @media (min-width:80rem) {
-  .c15 {
+  .c16 {
     min-width: auto;
   }
 }
 
 @media (max-width:14.9375rem) {
-  .c12 {
+  .c13 {
     min-width: 2.5rem;
   }
 }
 
 @media (min-width:15rem) and (max-width:24.9375rem) {
-  .c12 {
+  .c13 {
     min-width: 2.5rem;
   }
 }
 
 @media (min-width:25rem) and (max-width:37.4375rem) {
-  .c12 {
+  .c13 {
     min-width: auto;
   }
 }
 
 @media (min-width:37.5rem) and (max-width:80rem) {
-  .c12 {
+  .c13 {
     min-width: auto;
   }
 }
 
 @media (min-width:80rem) {
-  .c12 {
+  .c13 {
     min-width: 3.75rem;
   }
 }
@@ -1185,13 +1148,13 @@ exports[`MostRead should render with rtl most read with correct dir 1`] = `
 
 @media (min-width:25rem) {
   .c8 {
-    padding-left: 1.3rem;
+    padding-left: 0rem;
   }
 }
 
 @media (min-width:37.5rem) {
   .c8 {
-    padding-left: 1.8rem;
+    padding-left: 0rem;
   }
 }
 
@@ -1203,13 +1166,13 @@ exports[`MostRead should render with rtl most read with correct dir 1`] = `
 
 @media (min-width:25rem) {
   .c11 {
-    padding-left: 0rem;
+    padding-left: 1.15rem;
   }
 }
 
 @media (min-width:37.5rem) {
   .c11 {
-    padding-left: 0rem;
+    padding-left: 1.8rem;
   }
 }
 
@@ -1220,37 +1183,37 @@ exports[`MostRead should render with rtl most read with correct dir 1`] = `
 }
 
 @media (min-width:25rem) {
-  .c13 {
-    padding-left: 1.3rem;
+  .c12 {
+    padding-left: 1.15rem;
   }
 }
 
 @media (min-width:37.5rem) {
-  .c13 {
+  .c12 {
     padding-left: 1.8rem;
   }
 }
 
 @media (min-width:80rem) {
-  .c13 {
+  .c12 {
     padding-left: 0rem;
   }
 }
 
 @media (min-width:25rem) {
-  .c16 {
-    padding-left: 1.3rem;
+  .c15 {
+    padding-left: 1.15rem;
   }
 }
 
 @media (min-width:37.5rem) {
-  .c16 {
+  .c15 {
     padding-left: 1.8rem;
   }
 }
 
 @media (min-width:80rem) {
-  .c16 {
+  .c15 {
     padding-left: 1.5rem;
   }
 }
@@ -1288,6 +1251,33 @@ exports[`MostRead should render with rtl most read with correct dir 1`] = `
 @media (min-width:80rem) {
   .c18 {
     padding-left: 0rem;
+  }
+}
+
+@media (max-width:24.9375rem) {
+  .c3 {
+    grid-template-rows: repeat( 10,[col-start] auto [col-end] );
+  }
+}
+
+@media (min-width:80rem) {
+  .c3 {
+    grid-auto-flow: row;
+    grid-template-rows: repeat( 5,[col-start] auto [col-end] );
+  }
+}
+
+@media (min-width:20rem) and (max-width:37.4375rem) {
+  .c0 {
+    font-size: 2rem;
+    line-height: 2.375rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .c0 {
+    font-size: 2.25rem;
+    line-height: 3.125rem;
   }
 }
 
@@ -1327,7 +1317,6 @@ exports[`MostRead should render with rtl most read with correct dir 1`] = `
           >
             <span
               class="c7"
-              dir="rtl"
             >
               ۱
             </span>
@@ -1359,7 +1348,6 @@ exports[`MostRead should render with rtl most read with correct dir 1`] = `
           >
             <span
               class="c7"
-              dir="rtl"
             >
               ۲
             </span>
@@ -1391,7 +1379,6 @@ exports[`MostRead should render with rtl most read with correct dir 1`] = `
           >
             <span
               class="c7"
-              dir="rtl"
             >
               ۳
             </span>
@@ -1423,13 +1410,12 @@ exports[`MostRead should render with rtl most read with correct dir 1`] = `
           >
             <span
               class="c7"
-              dir="rtl"
             >
               ۴
             </span>
           </div>
           <div
-            class="c11"
+            class="c12"
             dir="rtl"
           >
             <a
@@ -1450,18 +1436,17 @@ exports[`MostRead should render with rtl most read with correct dir 1`] = `
           class="c5"
         >
           <div
-            class="c12"
+            class="c13"
             dir="rtl"
           >
             <span
               class="c7"
-              dir="rtl"
             >
               ۵
             </span>
           </div>
           <div
-            class="c13"
+            class="c8"
             dir="rtl"
           >
             <a
@@ -1487,13 +1472,12 @@ exports[`MostRead should render with rtl most read with correct dir 1`] = `
           >
             <span
               class="c7"
-              dir="rtl"
             >
               ۶
             </span>
           </div>
           <div
-            class="c11"
+            class="c15"
             dir="rtl"
           >
             <a
@@ -1513,47 +1497,14 @@ exports[`MostRead should render with rtl most read with correct dir 1`] = `
         <li
           class="c5"
         >
-          <div
-            class="c15"
-            dir="rtl"
-          >
-            <span
-              class="c7"
-              dir="rtl"
-            >
-              ۷
-            </span>
-          </div>
           <div
             class="c16"
             dir="rtl"
           >
-            <a
-              class="c9"
-              href="https://www.bbc.com/arabic/articles/c1er5mjnznzo"
-            >
-              لماذا يخجل البعض من اسم قريته في مصر؟
-            </a>
-          </div>
-        </li>
-      </div>
-      <div
-        as="li"
-        class="c4"
-        dir="rtl"
-      >
-        <li
-          class="c5"
-        >
-          <div
-            class="c14"
-            dir="rtl"
-          >
             <span
               class="c7"
-              dir="rtl"
             >
-              ۸
+              ۷
             </span>
           </div>
           <div
@@ -1578,18 +1529,48 @@ exports[`MostRead should render with rtl most read with correct dir 1`] = `
           class="c5"
         >
           <div
-            class="c15"
+            class="c14"
             dir="rtl"
           >
             <span
               class="c7"
-              dir="rtl"
+            >
+              ۸
+            </span>
+          </div>
+          <div
+            class="c15"
+            dir="rtl"
+          >
+            <a
+              class="c9"
+              href="https://www.bbc.com/arabic/articles/c1er5mjnznzo"
+            >
+              لماذا يخجل البعض من اسم قريته في مصر؟
+            </a>
+          </div>
+        </li>
+      </div>
+      <div
+        as="li"
+        class="c4"
+        dir="rtl"
+      >
+        <li
+          class="c5"
+        >
+          <div
+            class="c16"
+            dir="rtl"
+          >
+            <span
+              class="c7"
             >
               ۹
             </span>
           </div>
           <div
-            class="c16"
+            class="c18"
             dir="rtl"
           >
             <a
@@ -1615,13 +1596,12 @@ exports[`MostRead should render with rtl most read with correct dir 1`] = `
           >
             <span
               class="c7"
-              dir="rtl"
             >
               ۱۰
             </span>
           </div>
           <div
-            class="c18"
+            class="c15"
             dir="rtl"
           >
             <a

@@ -1,17 +1,12 @@
 import React from 'react';
 import { shouldMatchSnapshot } from '@bbc/psammead-test-helpers';
 import { latin, arabic } from '@bbc/gel-foundations/scripts';
-import MostReadTitle from './title';
+import MostReadTitle from '.';
 
 describe('Most read title', () => {
   shouldMatchSnapshot(
     'should render with ReithSans',
-    <MostReadTitle
-      header="Most Read"
-      script={latin}
-      service="news"
-      dir="ltr"
-    />,
+    <MostReadTitle header="Most Read" script={latin} service="news" />,
   );
 
   shouldMatchSnapshot(

@@ -16,6 +16,67 @@ The `MostRead` component is designed to display the most read articles given a d
 
 ## Components (WIP)
 
+## MostRead
+
+### Props
+
+<!-- prettier-ignore -->
+| Argument | Type | Required | Default | Example |
+| -------- | ---- | -------- | ------- | ------- |
+| items | array | yes | N/A | `[{ id: "89b01387-4f40-8846-a11f-65aeed534da3", title: 'This is a headline', href: 'https://www.bbc.com', timestamp: <TimestampContainer timestamp={1570031976502} dateTimeFormat="YYYY-MM-DD" prefix="Last updated: " format="LL" script={latin} service='news'/> }]` |
+| header | string | yes | N/A | `'Most Read'`  |
+| service | string | yes | N/A | `'news'` |
+| script | object | yes | N/A | `{ canon: { groupA: { fontSize: '28', lineHeight: '32',}, groupB: { fontSize: '32', lineHeight: '36', }, groupD: { fontSize: '44', lineHeight: '48', }, }, trafalgar: { groupA: { fontSize: '20', lineHeight: '24', }, groupB: { fontSize: '24', lineHeight: '28', }, groupD: { fontSize: '32', lineHeight: '36', }, }, }` |
+| dir | string | no | `"ltr"` | `"rtl"` |
+
+| children | node | yes | N/A | `<MostReadItemWrapper dir='ltr' key={1}><MostReadRank service='news' script=latin listIndex={1} numberOfItems={10} dir='ltr'/> <MostReadLink dir='ltr href='/bbc.co.uk/news/articles/27051997' service='news' script={latin} title='This is a news article headline'/></MostReadItemWrapper>,` |
+| dir | string | yes | 'ltr' | `'ltr'`|
+
+### Usage
+
+This component combines all the MostRead Components (MostReadList, MostReadTitle, MostReadItemWrapper, MostReadLink, MostReadRank) and renders the full component.
+
+```jsx
+import React from 'react';
+import { MostRead } from '@bbc/psammead-most-read';
+import Timestamp from '@bbc/psammead-timestamp-container';
+import { arabic } from '@bbc/gel-foundations/scripts';
+
+const lastUpdated = (script, service) => (
+  <Timestamp
+    timestamp={1570031976502}
+    dateTimeFormat="YYYY-MM-DD"
+    prefix="Last updated: "
+    format="LL"
+    script={script}
+    service={service}
+  />
+);
+
+const items = [
+  {
+    id: '89b01387-4f40-8846-a11f-65aeed534da3',
+    title: 'John Lewis staff bonus cut again as profits fall',
+    href: 'https://www.bbc.co.uk/news/business-43328806',
+    timestamp: lastUpdated(arabic, 'arabic'),
+  },
+  {
+    id: '89b01387-4f40-8846-a11f-65aeed534da4',
+    title: 'John Lewis staff bonus cut again as profits fall',
+    href: 'https://www.bbc.co.uk/news/business-43328806',
+    timestamp: null,
+  },
+];
+
+<MostRead
+  items={items}
+  script={script}
+  service="arabic"
+  header="الأكثر قراءة"
+  dir="rtl"
+/>;
+```
+
 ## MostReadList
 
 ### Props
@@ -103,7 +164,7 @@ import Timestamp from '@bbc/psammead-timestamp';
 <!-- prettier-ignore -->
 | Argument | Type | Required | Default | Example |
 | -------- | ---- | -------- | ------- | ------- |
-| dir | oneOf(['rtl', 'ltr}) | yes | 'ltr' | `'ltr'`|
+| dir | string | yes | 'ltr' | `'ltr'`|
 | children | node | yes | N/A | `<MostReadRank service='news' script=latin listIndex={1} numberOfItems={10} dir='ltr'/> <MostReadLink dir='ltr href='/bbc.co.uk/news/articles/27051997' service='news' script={latin} title='This is a news article headline'/>` |
 
 ### Usage
