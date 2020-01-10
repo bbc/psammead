@@ -77,6 +77,8 @@ We use the GEL Grid for our breakpoints, as well as for our standard gutters and
 
 When we refer to `group3` in this component, we're referring to the breakpoint with a minimum width `GEL_GROUP_3_SCREEN_WIDTH_MIN` & a maximum width `GEL_GROUP_3_SCREEN_WIDTH_MAX`. These values are defined within [`@bbc/gel-foundations/breakpoints`](https://github.com/bbc/psammead/blob/latest/packages/utilities/gel-foundations/src/breakpoints.js).
 
+When using one of the extended Grid components, if you wish to extend it using the `as` prop, you'll need to use `forwardedAs`. This prop enables you to pass down the element down further than one level.
+
 #### <a name="simple-example">Simple example</a>
 
 Here is an example of a `<Grid>` that has 8 columns for `group4` (from 1008px to 1279px). It has four child `<Grid item>` elements, one which spans 6/8 columns and three others which spans 2/8 columns within this breakpoint.
@@ -305,6 +307,48 @@ const MyComponent = () => (
     >
       <ExampleParagraph />
     </Grid>
+  </Grid>
+);
+```
+
+#### <a name="parentcolumns-prop">Child grid using parentColumns prop</a>
+
+Note that, any time you render a child `<Grid>` outside of the parent grid, the parent's columns configuration is not automagically passed to the child. This causes the layout to break in browsers that do not support css grid. To ensure the configuration is passed correctly, you need to explicitly pass in the parentColumns prop.
+
+```jsx
+import Grid from '@bbc/psammead-grid';
+
+const parentProps = {
+  columns: {
+    group0: 6,
+    group1: 6,
+    group2: 6,
+    group3: 6,
+    group4: 6,
+    group5: 6,
+  },
+};
+
+const childProps = {
+  columns: {
+    group0: 6,
+    group1: 6,
+    group2: 6,
+    group3: 6,
+    group4: 6,
+    group5: 6,
+  },
+};
+
+const renderChildGrid = () => (
+  <Grid parentColumns={parentProps.columns} {...childProps}>
+    <ExampleParagraph />
+  </Grid>
+);
+
+const MyComponent = () => (
+  <Grid {...parentProps}>
+    {renderChildGrid()}
   </Grid>
 );
 ```
