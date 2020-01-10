@@ -10,6 +10,11 @@ import {
   GEL_SPACING_DBL,
   GEL_SPACING_TRPL,
 } from '@bbc/gel-foundations/spacings';
+import Grid from '@bbc/psammead-grid';
+import {
+  mostReadListGridProps,
+  mostReadItemGridProps,
+} from '../testHelpers/gridProps';
 
 // This is to handle the padding between the rank and the link for both ltr and rtl stories.
 const paddingStart = ({ dir }) => `padding-${dir === 'ltr' ? 'left' : 'right'}`;
@@ -83,4 +88,30 @@ MostReadLink.defaultProps = {
   children: null,
 };
 
-export default MostReadLink;
+const StyledLi = styled.li`
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  padding: 0;
+`;
+
+export const MostReadItemWrapper = ({ dir, children }) => (
+  <Grid
+    {...mostReadItemGridProps}
+    parentColumns={mostReadListGridProps.columns} // parentColumns is required here because on IE, this component would be rendered before it's parent therefore not receiving the parent's grid columns values so we have to explicitly pass it as a prop here so it works on IE
+    dir={dir}
+    forwardedAs="li"
+  >
+    <StyledLi>{children}</StyledLi>
+  </Grid>
+);
+
+MostReadItemWrapper.propTypes = {
+  dir: oneOf(['rtl', 'ltr']),
+  children: node.isRequired,
+};
+
+MostReadItemWrapper.defaultProps = {
+  dir: 'ltr',
+};

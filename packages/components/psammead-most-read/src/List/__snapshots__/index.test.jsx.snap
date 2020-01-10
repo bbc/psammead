@@ -12,32 +12,6 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
   grid-template-rows: repeat( 5,[col-start] auto [col-end] );
 }
 
-.c4 {
-  position: relative;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  margin: 0;
-  padding: 0;
-}
-
-.c6 {
-  font-family: "Shonar Bangla",Helmet,Freesans,Helvetica,Arial,sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 2rem;
-  line-height: 2.25rem;
-  position: relative;
-  color: #B80000;
-  margin: 0;
-  padding: 0;
-  float: left;
-}
-
 .c8 {
   font-size: 1.625rem;
   line-height: 1.875rem;
@@ -72,6 +46,31 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
   padding-bottom: 1.5rem;
   padding-left: 1rem;
   padding-right: 1rem;
+}
+
+.c4 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  margin: 0;
+  padding: 0;
+}
+
+.c6 {
+  font-family: "Shonar Bangla",Helmet,Freesans,Helvetica,Arial,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2rem;
+  line-height: 2.25rem;
+  position: relative;
+  color: #B80000;
+  margin: 0;
+  padding: 0;
 }
 
 @supports (display:grid) {
@@ -145,6 +144,26 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
   .c2 {
     grid-auto-flow: row;
     grid-template-rows: repeat( 5,[col-start] auto [col-end] );
+  }
+}
+
+@media (min-width:20rem) and (max-width:37.4375rem) {
+  .c8 {
+    font-size: 1.625rem;
+    line-height: 1.875rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .c8 {
+    font-size: 1.75rem;
+    line-height: 2rem;
+  }
+}
+
+@supports (grid-template-columns:fit-content(200px)) {
+  .c7 {
+    padding-right: 0;
   }
 }
 
@@ -312,26 +331,6 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
   }
 }
 
-@media (min-width:20rem) and (max-width:37.4375rem) {
-  .c8 {
-    font-size: 1.625rem;
-    line-height: 1.875rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c8 {
-    font-size: 1.75rem;
-    line-height: 2rem;
-  }
-}
-
-@supports (grid-template-columns:fit-content(200px)) {
-  .c7 {
-    padding-right: 0;
-  }
-}
-
 <ol
   class="c0"
   role="list"
@@ -354,7 +353,6 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
         >
           <span
             class="c6"
-            dir="ltr"
           >
             ১
           </span>
@@ -386,7 +384,6 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
         >
           <span
             class="c6"
-            dir="ltr"
           >
             ২
           </span>
@@ -418,7 +415,6 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
         >
           <span
             class="c6"
-            dir="ltr"
           >
             ৩
           </span>
@@ -450,7 +446,6 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
         >
           <span
             class="c6"
-            dir="ltr"
           >
             ৪
           </span>
@@ -482,7 +477,6 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
         >
           <span
             class="c6"
-            dir="ltr"
           >
             ৫
           </span>
@@ -514,7 +508,6 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
         >
           <span
             class="c6"
-            dir="ltr"
           >
             ৬
           </span>
@@ -546,7 +539,6 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
         >
           <span
             class="c6"
-            dir="ltr"
           >
             ৭
           </span>
@@ -578,7 +570,6 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
         >
           <span
             class="c6"
-            dir="ltr"
           >
             ৮
           </span>
@@ -610,7 +601,6 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
         >
           <span
             class="c6"
-            dir="ltr"
           >
             ৯
           </span>
@@ -642,7 +632,6 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
         >
           <span
             class="c6"
-            dir="ltr"
           >
             ১০
           </span>
@@ -674,32 +663,6 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
 .c2 {
   grid-auto-flow: column;
   grid-template-rows: repeat( 5,[col-start] auto [col-end] );
-}
-
-.c4 {
-  position: relative;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  margin: 0;
-  padding: 0;
-}
-
-.c6 {
-  font-family: Padauk,Arial,Verdana,Geneva,Helvetica,sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 2rem;
-  line-height: 2.25rem;
-  position: relative;
-  color: #B80000;
-  margin: 0;
-  padding: 0;
-  float: left;
 }
 
 .c8 {
@@ -736,6 +699,31 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
   padding-bottom: 1.5rem;
   padding-left: 1rem;
   padding-right: 1rem;
+}
+
+.c4 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  margin: 0;
+  padding: 0;
+}
+
+.c6 {
+  font-family: Padauk,Arial,Verdana,Geneva,Helvetica,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2rem;
+  line-height: 2.25rem;
+  position: relative;
+  color: #B80000;
+  margin: 0;
+  padding: 0;
 }
 
 @supports (display:grid) {
@@ -809,6 +797,26 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
   .c2 {
     grid-auto-flow: row;
     grid-template-rows: repeat( 5,[col-start] auto [col-end] );
+  }
+}
+
+@media (min-width:20rem) and (max-width:37.4375rem) {
+  .c8 {
+    font-size: 1.25rem;
+    line-height: 1.875rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .c8 {
+    font-size: 1.625rem;
+    line-height: 2.75rem;
+  }
+}
+
+@supports (grid-template-columns:fit-content(200px)) {
+  .c7 {
+    padding-right: 0;
   }
 }
 
@@ -976,26 +984,6 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
   }
 }
 
-@media (min-width:20rem) and (max-width:37.4375rem) {
-  .c8 {
-    font-size: 1.25rem;
-    line-height: 1.875rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c8 {
-    font-size: 1.625rem;
-    line-height: 2.75rem;
-  }
-}
-
-@supports (grid-template-columns:fit-content(200px)) {
-  .c7 {
-    padding-right: 0;
-  }
-}
-
 <ol
   class="c0"
   role="list"
@@ -1018,7 +1006,6 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
         >
           <span
             class="c6"
-            dir="ltr"
           >
             ၁
           </span>
@@ -1050,7 +1037,6 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
         >
           <span
             class="c6"
-            dir="ltr"
           >
             ၂
           </span>
@@ -1082,7 +1068,6 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
         >
           <span
             class="c6"
-            dir="ltr"
           >
             ၃
           </span>
@@ -1114,7 +1099,6 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
         >
           <span
             class="c6"
-            dir="ltr"
           >
             ၄
           </span>
@@ -1146,7 +1130,6 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
         >
           <span
             class="c6"
-            dir="ltr"
           >
             ၅
           </span>
@@ -1178,7 +1161,6 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
         >
           <span
             class="c6"
-            dir="ltr"
           >
             ၆
           </span>
@@ -1210,7 +1192,6 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
         >
           <span
             class="c6"
-            dir="ltr"
           >
             ၇
           </span>
@@ -1242,7 +1223,6 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
         >
           <span
             class="c6"
-            dir="ltr"
           >
             ၈
           </span>
@@ -1274,7 +1254,6 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
         >
           <span
             class="c6"
-            dir="ltr"
           >
             ၉
           </span>
@@ -1306,7 +1285,6 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
         >
           <span
             class="c6"
-            dir="ltr"
           >
             ၁၀
           </span>
@@ -1338,32 +1316,6 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
 .c2 {
   grid-auto-flow: column;
   grid-template-rows: repeat( 5,[col-start] auto [col-end] );
-}
-
-.c4 {
-  position: relative;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  margin: 0;
-  padding: 0;
-}
-
-.c6 {
-  font-family: ReithSerif,Helvetica,Arial,sans-serif;
-  font-weight: 300;
-  font-style: normal;
-  font-size: 2rem;
-  line-height: 2.25rem;
-  position: relative;
-  color: #B80000;
-  margin: 0;
-  padding: 0;
-  float: left;
 }
 
 .c8 {
@@ -1402,6 +1354,31 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
   padding-right: 1rem;
 }
 
+.c4 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  margin: 0;
+  padding: 0;
+}
+
+.c6 {
+  font-family: ReithSerif,Helvetica,Arial,sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 2rem;
+  line-height: 2.25rem;
+  position: relative;
+  color: #B80000;
+  margin: 0;
+  padding: 0;
+}
+
 @supports (display:grid) {
   .c1 {
     display: grid;
@@ -1473,6 +1450,26 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
   .c2 {
     grid-auto-flow: row;
     grid-template-rows: repeat( 5,[col-start] auto [col-end] );
+  }
+}
+
+@media (min-width:20rem) and (max-width:37.4375rem) {
+  .c8 {
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .c8 {
+    font-size: 1.5rem;
+    line-height: 1.75rem;
+  }
+}
+
+@supports (grid-template-columns:fit-content(200px)) {
+  .c7 {
+    padding-right: 0;
   }
 }
 
@@ -1640,26 +1637,6 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
   }
 }
 
-@media (min-width:20rem) and (max-width:37.4375rem) {
-  .c8 {
-    font-size: 1.25rem;
-    line-height: 1.5rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c8 {
-    font-size: 1.5rem;
-    line-height: 1.75rem;
-  }
-}
-
-@supports (grid-template-columns:fit-content(200px)) {
-  .c7 {
-    padding-right: 0;
-  }
-}
-
 <ol
   class="c0"
   role="list"
@@ -1682,7 +1659,6 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
         >
           <span
             class="c6"
-            dir="ltr"
           >
             1
           </span>
@@ -1714,7 +1690,6 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
         >
           <span
             class="c6"
-            dir="ltr"
           >
             2
           </span>
@@ -1746,7 +1721,6 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
         >
           <span
             class="c6"
-            dir="ltr"
           >
             3
           </span>
@@ -1778,7 +1752,6 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
         >
           <span
             class="c6"
-            dir="ltr"
           >
             4
           </span>
@@ -1810,7 +1783,6 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
         >
           <span
             class="c6"
-            dir="ltr"
           >
             5
           </span>
@@ -1842,7 +1814,6 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
         >
           <span
             class="c6"
-            dir="ltr"
           >
             6
           </span>
@@ -1874,7 +1845,6 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
         >
           <span
             class="c6"
-            dir="ltr"
           >
             7
           </span>
@@ -1906,7 +1876,6 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
         >
           <span
             class="c6"
-            dir="ltr"
           >
             8
           </span>
@@ -1938,7 +1907,6 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
         >
           <span
             class="c6"
-            dir="ltr"
           >
             9
           </span>
@@ -1970,7 +1938,6 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
         >
           <span
             class="c6"
-            dir="ltr"
           >
             10
           </span>
@@ -2002,32 +1969,6 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
 .c2 {
   grid-auto-flow: column;
   grid-template-rows: repeat( 5,[col-start] auto [col-end] );
-}
-
-.c4 {
-  position: relative;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  margin: 0;
-  padding: 0;
-}
-
-.c6 {
-  font-family: "BBC Nassim Persian",Arial,Verdana,Geneva,Helvetica,sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 2rem;
-  line-height: 2.25rem;
-  position: relative;
-  color: #B80000;
-  margin: 0;
-  padding: 0;
-  float: right;
 }
 
 .c8 {
@@ -2066,6 +2007,31 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
   padding-left: 1rem;
 }
 
+.c4 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  margin: 0;
+  padding: 0;
+}
+
+.c6 {
+  font-family: "BBC Nassim Persian",Arial,Verdana,Geneva,Helvetica,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2rem;
+  line-height: 2.25rem;
+  position: relative;
+  color: #B80000;
+  margin: 0;
+  padding: 0;
+}
+
 @supports (display:grid) {
   .c1 {
     display: grid;
@@ -2137,6 +2103,26 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
   .c2 {
     grid-auto-flow: row;
     grid-template-rows: repeat( 5,[col-start] auto [col-end] );
+  }
+}
+
+@media (min-width:20rem) and (max-width:37.4375rem) {
+  .c8 {
+    font-size: 1.625rem;
+    line-height: 2.25rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .c8 {
+    font-size: 1.75rem;
+    line-height: 2.25rem;
+  }
+}
+
+@supports (grid-template-columns:fit-content(200px)) {
+  .c7 {
+    padding-left: 0;
   }
 }
 
@@ -2304,26 +2290,6 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
   }
 }
 
-@media (min-width:20rem) and (max-width:37.4375rem) {
-  .c8 {
-    font-size: 1.625rem;
-    line-height: 2.25rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c8 {
-    font-size: 1.75rem;
-    line-height: 2.25rem;
-  }
-}
-
-@supports (grid-template-columns:fit-content(200px)) {
-  .c7 {
-    padding-left: 0;
-  }
-}
-
 <ol
   class="c0"
   role="list"
@@ -2346,7 +2312,6 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
         >
           <span
             class="c6"
-            dir="rtl"
           >
             ۱
           </span>
@@ -2378,7 +2343,6 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
         >
           <span
             class="c6"
-            dir="rtl"
           >
             ۲
           </span>
@@ -2410,7 +2374,6 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
         >
           <span
             class="c6"
-            dir="rtl"
           >
             ۳
           </span>
@@ -2442,7 +2405,6 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
         >
           <span
             class="c6"
-            dir="rtl"
           >
             ۴
           </span>
@@ -2474,7 +2436,6 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
         >
           <span
             class="c6"
-            dir="rtl"
           >
             ۵
           </span>
@@ -2506,7 +2467,6 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
         >
           <span
             class="c6"
-            dir="rtl"
           >
             ۶
           </span>
@@ -2538,7 +2498,6 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
         >
           <span
             class="c6"
-            dir="rtl"
           >
             ۷
           </span>
@@ -2570,7 +2529,6 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
         >
           <span
             class="c6"
-            dir="rtl"
           >
             ۸
           </span>
@@ -2602,7 +2560,6 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
         >
           <span
             class="c6"
-            dir="rtl"
           >
             ۹
           </span>
@@ -2634,7 +2591,6 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
         >
           <span
             class="c6"
-            dir="rtl"
           >
             ۱۰
           </span>

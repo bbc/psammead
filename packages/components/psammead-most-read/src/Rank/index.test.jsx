@@ -1,7 +1,7 @@
 import React from 'react';
 import { shouldMatchSnapshot } from '@bbc/psammead-test-helpers';
 import { latin, arabic } from '@bbc/gel-foundations/scripts';
-import MostReadRank from './rank';
+import MostReadRank from '.';
 
 describe('MostReadRank', () => {
   shouldMatchSnapshot(
@@ -20,8 +20,8 @@ describe('MostReadRank', () => {
     <MostReadRank
       service="news"
       script={latin}
-      listIndex={1}
-      numberOfItems={5}
+      listIndex={10}
+      numberOfItems={10}
       dir="ltr"
     />,
   );

@@ -1,32 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`MostReadItemWrapper should render ltr correctly with 10 items 1`] = `
-.c1 {
-  position: relative;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  margin: 0;
-  padding: 0;
-}
-
-.c3 {
-  font-family: ReithSerif,Helvetica,Arial,sans-serif;
-  font-weight: 300;
-  font-style: normal;
-  font-size: 2rem;
-  line-height: 2.25rem;
-  position: relative;
-  color: #B80000;
-  margin: 0;
-  padding: 0;
-  float: left;
-}
-
 .c5 {
   font-size: 1.125rem;
   line-height: 1.375rem;
@@ -63,6 +37,31 @@ exports[`MostReadItemWrapper should render ltr correctly with 10 items 1`] = `
   padding-right: 1rem;
 }
 
+.c1 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  margin: 0;
+  padding: 0;
+}
+
+.c3 {
+  font-family: ReithSerif,Helvetica,Arial,sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 2rem;
+  line-height: 2.25rem;
+  position: relative;
+  color: #B80000;
+  margin: 0;
+  padding: 0;
+}
+
 @media (max-width:14.9375rem) {
   .c0 {
     width: calc(100%);
@@ -114,6 +113,26 @@ exports[`MostReadItemWrapper should render ltr correctly with 10 items 1`] = `
 @supports (display:grid) {
   .c0 {
     display: block;
+  }
+}
+
+@media (min-width:20rem) and (max-width:37.4375rem) {
+  .c5 {
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .c5 {
+    font-size: 1.5rem;
+    line-height: 1.75rem;
+  }
+}
+
+@supports (grid-template-columns:fit-content(200px)) {
+  .c4 {
+    padding-right: 0;
   }
 }
 
@@ -281,26 +300,6 @@ exports[`MostReadItemWrapper should render ltr correctly with 10 items 1`] = `
   }
 }
 
-@media (min-width:20rem) and (max-width:37.4375rem) {
-  .c5 {
-    font-size: 1.25rem;
-    line-height: 1.5rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c5 {
-    font-size: 1.5rem;
-    line-height: 1.75rem;
-  }
-}
-
-@supports (grid-template-columns:fit-content(200px)) {
-  .c4 {
-    padding-right: 0;
-  }
-}
-
 <div>
   <div
     as="li"
@@ -316,7 +315,6 @@ exports[`MostReadItemWrapper should render ltr correctly with 10 items 1`] = `
       >
         <span
           class="c3"
-          dir="ltr"
         >
           1
         </span>
@@ -348,7 +346,6 @@ exports[`MostReadItemWrapper should render ltr correctly with 10 items 1`] = `
       >
         <span
           class="c3"
-          dir="ltr"
         >
           2
         </span>
@@ -380,7 +377,6 @@ exports[`MostReadItemWrapper should render ltr correctly with 10 items 1`] = `
       >
         <span
           class="c3"
-          dir="ltr"
         >
           3
         </span>
@@ -412,7 +408,6 @@ exports[`MostReadItemWrapper should render ltr correctly with 10 items 1`] = `
       >
         <span
           class="c3"
-          dir="ltr"
         >
           4
         </span>
@@ -444,7 +439,6 @@ exports[`MostReadItemWrapper should render ltr correctly with 10 items 1`] = `
       >
         <span
           class="c3"
-          dir="ltr"
         >
           5
         </span>
@@ -476,7 +470,6 @@ exports[`MostReadItemWrapper should render ltr correctly with 10 items 1`] = `
       >
         <span
           class="c3"
-          dir="ltr"
         >
           6
         </span>
@@ -508,7 +501,6 @@ exports[`MostReadItemWrapper should render ltr correctly with 10 items 1`] = `
       >
         <span
           class="c3"
-          dir="ltr"
         >
           7
         </span>
@@ -540,7 +532,6 @@ exports[`MostReadItemWrapper should render ltr correctly with 10 items 1`] = `
       >
         <span
           class="c3"
-          dir="ltr"
         >
           8
         </span>
@@ -572,7 +563,6 @@ exports[`MostReadItemWrapper should render ltr correctly with 10 items 1`] = `
       >
         <span
           class="c3"
-          dir="ltr"
         >
           9
         </span>
@@ -604,7 +594,6 @@ exports[`MostReadItemWrapper should render ltr correctly with 10 items 1`] = `
       >
         <span
           class="c3"
-          dir="ltr"
         >
           10
         </span>
@@ -626,32 +615,6 @@ exports[`MostReadItemWrapper should render ltr correctly with 10 items 1`] = `
 `;
 
 exports[`MostReadItemWrapper should render rtl correctly with 10 items 1`] = `
-.c1 {
-  position: relative;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  margin: 0;
-  padding: 0;
-}
-
-.c3 {
-  font-family: "BBC Nassim Persian",Arial,Verdana,Geneva,Helvetica,sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 2rem;
-  line-height: 2.25rem;
-  position: relative;
-  color: #B80000;
-  margin: 0;
-  padding: 0;
-  float: right;
-}
-
 .c5 {
   font-size: 1.5rem;
   line-height: 2rem;
@@ -688,6 +651,31 @@ exports[`MostReadItemWrapper should render rtl correctly with 10 items 1`] = `
   padding-left: 1rem;
 }
 
+.c1 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  margin: 0;
+  padding: 0;
+}
+
+.c3 {
+  font-family: "BBC Nassim Persian",Arial,Verdana,Geneva,Helvetica,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2rem;
+  line-height: 2.25rem;
+  position: relative;
+  color: #B80000;
+  margin: 0;
+  padding: 0;
+}
+
 @media (max-width:14.9375rem) {
   .c0 {
     width: calc(100%);
@@ -739,6 +727,26 @@ exports[`MostReadItemWrapper should render rtl correctly with 10 items 1`] = `
 @supports (display:grid) {
   .c0 {
     display: block;
+  }
+}
+
+@media (min-width:20rem) and (max-width:37.4375rem) {
+  .c5 {
+    font-size: 1.625rem;
+    line-height: 2.25rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .c5 {
+    font-size: 1.75rem;
+    line-height: 2.25rem;
+  }
+}
+
+@supports (grid-template-columns:fit-content(200px)) {
+  .c4 {
+    padding-left: 0;
   }
 }
 
@@ -906,26 +914,6 @@ exports[`MostReadItemWrapper should render rtl correctly with 10 items 1`] = `
   }
 }
 
-@media (min-width:20rem) and (max-width:37.4375rem) {
-  .c5 {
-    font-size: 1.625rem;
-    line-height: 2.25rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c5 {
-    font-size: 1.75rem;
-    line-height: 2.25rem;
-  }
-}
-
-@supports (grid-template-columns:fit-content(200px)) {
-  .c4 {
-    padding-left: 0;
-  }
-}
-
 <div>
   <div
     as="li"
@@ -941,7 +929,6 @@ exports[`MostReadItemWrapper should render rtl correctly with 10 items 1`] = `
       >
         <span
           class="c3"
-          dir="rtl"
         >
           ۱
         </span>
@@ -973,7 +960,6 @@ exports[`MostReadItemWrapper should render rtl correctly with 10 items 1`] = `
       >
         <span
           class="c3"
-          dir="rtl"
         >
           ۲
         </span>
@@ -1005,7 +991,6 @@ exports[`MostReadItemWrapper should render rtl correctly with 10 items 1`] = `
       >
         <span
           class="c3"
-          dir="rtl"
         >
           ۳
         </span>
@@ -1037,7 +1022,6 @@ exports[`MostReadItemWrapper should render rtl correctly with 10 items 1`] = `
       >
         <span
           class="c3"
-          dir="rtl"
         >
           ۴
         </span>
@@ -1069,7 +1053,6 @@ exports[`MostReadItemWrapper should render rtl correctly with 10 items 1`] = `
       >
         <span
           class="c3"
-          dir="rtl"
         >
           ۵
         </span>
@@ -1101,7 +1084,6 @@ exports[`MostReadItemWrapper should render rtl correctly with 10 items 1`] = `
       >
         <span
           class="c3"
-          dir="rtl"
         >
           ۶
         </span>
@@ -1133,7 +1115,6 @@ exports[`MostReadItemWrapper should render rtl correctly with 10 items 1`] = `
       >
         <span
           class="c3"
-          dir="rtl"
         >
           ۷
         </span>
@@ -1165,7 +1146,6 @@ exports[`MostReadItemWrapper should render rtl correctly with 10 items 1`] = `
       >
         <span
           class="c3"
-          dir="rtl"
         >
           ۸
         </span>
@@ -1197,7 +1177,6 @@ exports[`MostReadItemWrapper should render rtl correctly with 10 items 1`] = `
       >
         <span
           class="c3"
-          dir="rtl"
         >
           ۹
         </span>
@@ -1229,7 +1208,6 @@ exports[`MostReadItemWrapper should render rtl correctly with 10 items 1`] = `
       >
         <span
           class="c3"
-          dir="rtl"
         >
           ۱۰
         </span>

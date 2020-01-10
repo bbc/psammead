@@ -2,10 +2,10 @@ import React from 'react';
 import styled from 'styled-components';
 import { shape, string, oneOf, arrayOf, node } from 'prop-types';
 import { scriptPropType } from '@bbc/gel-foundations/prop-types';
-import MostReadList, { MostReadItemWrapper } from './list';
-import MostReadTitle from './title';
-import MostReadRank from './rank';
-import { MostReadLink } from './item';
+import MostReadList from './List/index';
+import MostReadTitle from './Title/index';
+import MostReadRank from './Rank/index';
+import { MostReadLink, MostReadItemWrapper } from './Item/index';
 
 const StyledSection = styled.section.attrs(props => ({
   'aria-labelledby': props.labelId,
