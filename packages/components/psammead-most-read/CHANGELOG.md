@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 0.4.0-alpha.3 | [PR#2899](https://github.com/bbc/psammead/pull/2899) Talos - Bump Dependencies - @bbc/psammead-grid |
 | 0.4.0-alpha.2 | [PR#2880](https://github.com/bbc/psammead/pull/2880) Talos - Bump Dependencies - @bbc/psammead-grid |
 | 0.4.0-alpha.1 | [PR#2860](https://github.com/bbc/psammead/pull/2717) Update props for MostReadItem and update Readme |
 | 0.3.0-alpha.1 | [PR#2717](https://github.com/bbc/psammead/pull/2717) Update MostReadList with UX changes and various fixes |
