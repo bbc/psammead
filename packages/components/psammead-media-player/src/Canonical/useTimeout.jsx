@@ -4,11 +4,11 @@ import { useRef, useEffect } from 'react';
  * useTimeout Hook.
  * @param {function} callback A callback function that's passed `true` if the timer
  *                            completes, and `false` if it's interrupted.
- * @param {object} iframeRef A React Ref. providing access to an iframe DOM node.
+ * @param {object} iframeRef A React DOM Ref providing access to an iframe node.
  * @param {number} timeout The number of milliseconds until the timer completes.
  */
 const useTimeout = (callback, iframeRef, timeout) => {
-  // Persist a reference to the timer across renders. This is used to clearTimeout.
+  // Persist a reference to the timer across renders. This is used to clearTimeout().
   const timer = useRef(null);
 
   const handleLoad = () => {
