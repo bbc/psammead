@@ -128,6 +128,8 @@ import { latin } from '@bbc/gel-foundations/scripts';
 | title | string | yes | N/A | `"This is a article headline"` |
 | href | string | yes | N/A | `"/bbc.co.uk/news/00000027051997"` |
 | children | node | no | null | `<Timestamp datetime="2019-03-01T14:00+00:00" script={script} padding={false} service={service}>Last updated: 5th November 2016</Timestamp>` |
+| listIndex | number | yes | N/A | `1` |
+| numberOfItems | number | yes | N/A | `10` |
 
 ### Usage
 
@@ -145,6 +147,8 @@ import Timestamp from '@bbc/psammead-timestamp';
   service="news"
   title="This is a article headline"
   href="/bbc.co.uk/news/00000027051997"
+  listIndex={1}
+  numberOfItems={10}
 >
   <Timestamp
     datetime="2019-03-01T14:00+00:00"
