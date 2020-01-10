@@ -61,7 +61,7 @@ const doubleDigitOverride = {
 };
 
 const doubleDigitWidth = ({ service }) => {
-  const overrideService = ['bengali', 'arabic'];
+  const overrideService = Object.keys(doubleDigitOverride);
 
   return overrideService.includes(service)
     ? doubleDigitOverride[service]
