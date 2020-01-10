@@ -1,5 +1,13 @@
 import { useRef, useEffect } from 'react';
 
+const isValidIframeRef = iframeRef => {
+  return (
+    iframeRef &&
+    iframeRef.current &&
+    typeof iframeRef.current.addEventListener === 'function'
+  );
+};
+
 /**
  * useTimeout Hook.
  * @param {function} callback A callback function that's passed `true` if the timer
@@ -20,6 +28,11 @@ const useTimeout = (callback, iframeRef, timeout) => {
   // run on unmount. We don't do anything if the value of `timeout` can't be used.
   // eslint-disable-next-line consistent-return
   useEffect(() => {
+    if (!isValidIframeRef(iframeRef))
+      throw Error(
+        `useTimeout expected 'iframeRef' to be a valid React DOM Ref.`,
+      );
+
     if (timeout > 0) {
       iframeRef.current.addEventListener('load', handleLoad, { once: true });
       timer.current = setTimeout(() => {
