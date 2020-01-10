@@ -12,8 +12,11 @@ import {
 } from '@bbc/gel-foundations/spacings';
 import {
   GEL_GROUP_5_SCREEN_WIDTH_MIN,
+  GEL_GROUP_5_SCREEN_WIDTH_MAX,
+  GEL_GROUP_3_SCREEN_WIDTH_MAX,
   GEL_GROUP_3_SCREEN_WIDTH_MIN,
   GEL_GROUP_2_SCREEN_WIDTH_MIN,
+  GEL_GROUP_2_SCREEN_WIDTH_MAX,
 } from '@bbc/gel-foundations/breakpoints';
 import Grid from '@bbc/psammead-grid';
 import { isInSpecificColumn } from '../Rank';
@@ -53,21 +56,21 @@ const StyledItem = styled.div`
   ${paddingStart}: ${GEL_SPACING_DBL};
   ${paddingEnd}: 0;
 
-  @media (min-width: ${GEL_GROUP_2_SCREEN_WIDTH_MIN}) {
+  @media (min-width: ${GEL_GROUP_2_SCREEN_WIDTH_MIN}) and (max-width: ${GEL_GROUP_2_SCREEN_WIDTH_MAX}) {
     ${paddingEnd}: ${props =>
       isInSpecificColumn(props, false, 1)
         ? '0rem'
         : firstColumnLinkWidths.group2}
   }
 
-  @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
+  @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) and (max-width: ${GEL_GROUP_3_SCREEN_WIDTH_MAX}) {
     ${paddingEnd}: ${props =>
       isInSpecificColumn(props, false, 1)
         ? '0rem'
         : firstColumnLinkWidths.group3}
   }
 
-  @media (min-width: ${GEL_GROUP_5_SCREEN_WIDTH_MIN}) {
+  @media (min-width: ${GEL_GROUP_5_SCREEN_WIDTH_MIN}) and (max-width: ${GEL_GROUP_5_SCREEN_WIDTH_MAX}) {
     ${paddingEnd}: ${props =>
       props.listIndex !== 4 && props.listIndex !== 9
         ? firstColumnLinkWidths.group5
