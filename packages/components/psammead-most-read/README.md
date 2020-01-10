@@ -164,7 +164,7 @@ import Timestamp from '@bbc/psammead-timestamp';
 <!-- prettier-ignore -->
 | Argument | Type | Required | Default | Example |
 | -------- | ---- | -------- | ------- | ------- |
-| dir | oneOf(['rtl', 'ltr}) | yes | 'ltr' | `'ltr'`|
+| dir | string | yes | 'ltr' | `'ltr'`|
 | children | node | yes | N/A | `<MostReadRank service='news' script=latin listIndex={1} numberOfItems={10} dir='ltr'/> <MostReadLink dir='ltr href='/bbc.co.uk/news/articles/27051997' service='news' script={latin} title='This is a news article headline'/>` |
 
 ### Usage
