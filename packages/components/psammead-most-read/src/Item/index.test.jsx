@@ -8,7 +8,6 @@ describe('MostReadLink', () => {
   shouldMatchSnapshot(
     'should render ltr correctly',
     <MostReadLink
-      dir="ltr"
       href={getItem('news').href}
       service="news"
       script={latin}
@@ -30,7 +29,6 @@ describe('MostReadLink', () => {
   shouldMatchSnapshot(
     'should render with last updated date correctly',
     <MostReadLink
-      dir="ltr"
       href={getItem('news').href}
       service="news"
       script={latin}
@@ -48,7 +46,6 @@ describe('MostReadItemWrapper', () => {
       numberOfItems: 10,
       service: 'news',
       script: latin,
-      dir: 'ltr',
     }).map(item => item),
   );
 
