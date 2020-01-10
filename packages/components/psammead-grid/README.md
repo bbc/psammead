@@ -69,7 +69,7 @@ Psammead Grid is a component that you can use to set out column-based layouts us
 - Why is there no vertical spacing on the grid?
   - The Grid implementation only has gutters/margins for columns, [according to the GEL specification](https://www.bbc.co.uk/gel/guidelines/grid#grid-sizes). This is to allow flexibility for a variety of spacing. To add vertical spacing, you should add padding/margin/top/bottom to the contents.
 - When should I use the `parentColumns` prop?
-  - `parentColumns` is an object structured just like the `columns` prop. It is intended to be passed into a child `<Grid>` element because if your code is rendering the child grid before the parent grid, the child grid will not recieve the parent's grid column props therefore you will have to explicitly pass in the parent's columns into the child grid.
+  - `parentColumns` is an object structured just like the `columns` prop. This prop explicitly passes the parent grid's columns configuration into a child `<Grid>` element. [See example.](https://github.com/bbc/psammead/tree/latest/packages/components/psammead-grid#parentcolumns-prop)
 
 ## Usage
 
