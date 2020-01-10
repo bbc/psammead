@@ -6,7 +6,7 @@ import {
   GEL_GROUP_5_SCREEN_WIDTH_MIN,
 } from '@bbc/gel-foundations/breakpoints';
 import Grid from '@bbc/psammead-grid';
-import { mostReadListGridProps } from './testHelpers/gridProps';
+import { mostReadListGridProps } from '../testHelpers/gridProps';
 
 const StyledOl = styled.ol.attrs({
   role: 'list',

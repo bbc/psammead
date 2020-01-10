@@ -2,7 +2,8 @@ import React from 'react';
 import { TEXT_VARIANTS } from '@bbc/psammead-storybook-helpers';
 import { latin } from '@bbc/gel-foundations/scripts';
 import Timestamp from '@bbc/psammead-timestamp';
-import { MostReadItemWrapper, MostReadLink, MostReadRank } from '..';
+import { MostReadItemWrapper, MostReadLink } from '../Item';
+import MostReadRank from '../Rank';
 
 const lastUpdated = (script, service) => (
   // This will return the provided english translations

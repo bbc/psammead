@@ -2,7 +2,7 @@ import React from 'react';
 import { shouldMatchSnapshot } from '@bbc/psammead-test-helpers';
 import { latin, arabic } from '@bbc/gel-foundations/scripts';
 import { MostReadLink } from '.';
-import { getItem, getItemWrapperArray } from './testHelpers';
+import { getItem, getItemWrapperArray } from '../testHelpers';
 
 describe('MostReadLink', () => {
   shouldMatchSnapshot(

@@ -1,8 +1,8 @@
 import React from 'react';
 import { shouldMatchSnapshot } from '@bbc/psammead-test-helpers';
 import { arabic, bengali, burmese, latin } from '@bbc/gel-foundations/scripts';
-import MostReadList from './list';
-import { getItemWrapperArray } from './testHelpers';
+import MostReadList from '.';
+import { getItemWrapperArray } from '../testHelpers';
 
 describe('MostReadList', () => {
   shouldMatchSnapshot(
