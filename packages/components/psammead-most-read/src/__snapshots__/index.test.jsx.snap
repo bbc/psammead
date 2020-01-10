@@ -46,7 +46,6 @@ exports[`MostRead should render with ltr most read with correct dir 1`] = `
   color: #B80000;
   margin: 0;
   padding: 0;
-  float: left;
 }
 
 .c1 {
@@ -377,7 +376,6 @@ exports[`MostRead should render with ltr most read with correct dir 1`] = `
           >
             <span
               class="c7"
-              dir="ltr"
             >
               1
             </span>
@@ -409,7 +407,6 @@ exports[`MostRead should render with ltr most read with correct dir 1`] = `
           >
             <span
               class="c7"
-              dir="ltr"
             >
               2
             </span>
@@ -441,7 +438,6 @@ exports[`MostRead should render with ltr most read with correct dir 1`] = `
           >
             <span
               class="c7"
-              dir="ltr"
             >
               3
             </span>
@@ -473,7 +469,6 @@ exports[`MostRead should render with ltr most read with correct dir 1`] = `
           >
             <span
               class="c7"
-              dir="ltr"
             >
               4
             </span>
@@ -505,7 +500,6 @@ exports[`MostRead should render with ltr most read with correct dir 1`] = `
           >
             <span
               class="c7"
-              dir="ltr"
             >
               5
             </span>
@@ -537,7 +531,6 @@ exports[`MostRead should render with ltr most read with correct dir 1`] = `
           >
             <span
               class="c7"
-              dir="ltr"
             >
               6
             </span>
@@ -569,7 +562,6 @@ exports[`MostRead should render with ltr most read with correct dir 1`] = `
           >
             <span
               class="c7"
-              dir="ltr"
             >
               7
             </span>
@@ -601,7 +593,6 @@ exports[`MostRead should render with ltr most read with correct dir 1`] = `
           >
             <span
               class="c7"
-              dir="ltr"
             >
               8
             </span>
@@ -633,7 +624,6 @@ exports[`MostRead should render with ltr most read with correct dir 1`] = `
           >
             <span
               class="c7"
-              dir="ltr"
             >
               9
             </span>
@@ -665,7 +655,6 @@ exports[`MostRead should render with ltr most read with correct dir 1`] = `
           >
             <span
               class="c7"
-              dir="ltr"
             >
               10
             </span>
@@ -734,7 +723,6 @@ exports[`MostRead should render with rtl most read with correct dir 1`] = `
   color: #B80000;
   margin: 0;
   padding: 0;
-  float: right;
 }
 
 .c1 {
@@ -1065,7 +1053,6 @@ exports[`MostRead should render with rtl most read with correct dir 1`] = `
           >
             <span
               class="c7"
-              dir="rtl"
             >
               ۱
             </span>
@@ -1097,7 +1084,6 @@ exports[`MostRead should render with rtl most read with correct dir 1`] = `
           >
             <span
               class="c7"
-              dir="rtl"
             >
               ۲
             </span>
@@ -1129,7 +1115,6 @@ exports[`MostRead should render with rtl most read with correct dir 1`] = `
           >
             <span
               class="c7"
-              dir="rtl"
             >
               ۳
             </span>
@@ -1161,7 +1146,6 @@ exports[`MostRead should render with rtl most read with correct dir 1`] = `
           >
             <span
               class="c7"
-              dir="rtl"
             >
               ۴
             </span>
@@ -1193,7 +1177,6 @@ exports[`MostRead should render with rtl most read with correct dir 1`] = `
           >
             <span
               class="c7"
-              dir="rtl"
             >
               ۵
             </span>
@@ -1225,7 +1208,6 @@ exports[`MostRead should render with rtl most read with correct dir 1`] = `
           >
             <span
               class="c7"
-              dir="rtl"
             >
               ۶
             </span>
@@ -1257,7 +1239,6 @@ exports[`MostRead should render with rtl most read with correct dir 1`] = `
           >
             <span
               class="c7"
-              dir="rtl"
             >
               ۷
             </span>
@@ -1289,7 +1270,6 @@ exports[`MostRead should render with rtl most read with correct dir 1`] = `
           >
             <span
               class="c7"
-              dir="rtl"
             >
               ۸
             </span>
@@ -1321,7 +1301,6 @@ exports[`MostRead should render with rtl most read with correct dir 1`] = `
           >
             <span
               class="c7"
-              dir="rtl"
             >
               ۹
             </span>
@@ -1353,7 +1332,6 @@ exports[`MostRead should render with rtl most read with correct dir 1`] = `
           >
             <span
               class="c7"
-              dir="rtl"
             >
               ۱۰
             </span>

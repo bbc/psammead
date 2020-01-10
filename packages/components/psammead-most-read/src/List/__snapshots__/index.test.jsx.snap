@@ -57,7 +57,6 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
   color: #B80000;
   margin: 0;
   padding: 0;
-  float: left;
 }
 
 @supports (display:grid) {
@@ -340,7 +339,6 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
         >
           <span
             class="c6"
-            dir="ltr"
           >
             ১
           </span>
@@ -372,7 +370,6 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
         >
           <span
             class="c6"
-            dir="ltr"
           >
             ২
           </span>
@@ -404,7 +401,6 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
         >
           <span
             class="c6"
-            dir="ltr"
           >
             ৩
           </span>
@@ -436,7 +432,6 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
         >
           <span
             class="c6"
-            dir="ltr"
           >
             ৪
           </span>
@@ -468,7 +463,6 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
         >
           <span
             class="c6"
-            dir="ltr"
           >
             ৫
           </span>
@@ -500,7 +494,6 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
         >
           <span
             class="c6"
-            dir="ltr"
           >
             ৬
           </span>
@@ -532,7 +525,6 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
         >
           <span
             class="c6"
-            dir="ltr"
           >
             ৭
           </span>
@@ -564,7 +556,6 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
         >
           <span
             class="c6"
-            dir="ltr"
           >
             ৮
           </span>
@@ -596,7 +587,6 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
         >
           <span
             class="c6"
-            dir="ltr"
           >
             ৯
           </span>
@@ -628,7 +618,6 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
         >
           <span
             class="c6"
-            dir="ltr"
           >
             ১০
           </span>
@@ -707,7 +696,6 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
   color: #B80000;
   margin: 0;
   padding: 0;
-  float: left;
 }
 
 @supports (display:grid) {
@@ -990,7 +978,6 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
         >
           <span
             class="c6"
-            dir="ltr"
           >
             ၁
           </span>
@@ -1022,7 +1009,6 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
         >
           <span
             class="c6"
-            dir="ltr"
           >
             ၂
           </span>
@@ -1054,7 +1040,6 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
         >
           <span
             class="c6"
-            dir="ltr"
           >
             ၃
           </span>
@@ -1086,7 +1071,6 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
         >
           <span
             class="c6"
-            dir="ltr"
           >
             ၄
           </span>
@@ -1118,7 +1102,6 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
         >
           <span
             class="c6"
-            dir="ltr"
           >
             ၅
           </span>
@@ -1150,7 +1133,6 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
         >
           <span
             class="c6"
-            dir="ltr"
           >
             ၆
           </span>
@@ -1182,7 +1164,6 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
         >
           <span
             class="c6"
-            dir="ltr"
           >
             ၇
           </span>
@@ -1214,7 +1195,6 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
         >
           <span
             class="c6"
-            dir="ltr"
           >
             ၈
           </span>
@@ -1246,7 +1226,6 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
         >
           <span
             class="c6"
-            dir="ltr"
           >
             ၉
           </span>
@@ -1278,7 +1257,6 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
         >
           <span
             class="c6"
-            dir="ltr"
           >
             ၁၀
           </span>
@@ -1357,7 +1335,6 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
   color: #B80000;
   margin: 0;
   padding: 0;
-  float: left;
 }
 
 @supports (display:grid) {
@@ -1640,7 +1617,6 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
         >
           <span
             class="c6"
-            dir="ltr"
           >
             1
           </span>
@@ -1672,7 +1648,6 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
         >
           <span
             class="c6"
-            dir="ltr"
           >
             2
           </span>
@@ -1704,7 +1679,6 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
         >
           <span
             class="c6"
-            dir="ltr"
           >
             3
           </span>
@@ -1736,7 +1710,6 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
         >
           <span
             class="c6"
-            dir="ltr"
           >
             4
           </span>
@@ -1768,7 +1741,6 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
         >
           <span
             class="c6"
-            dir="ltr"
           >
             5
           </span>
@@ -1800,7 +1772,6 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
         >
           <span
             class="c6"
-            dir="ltr"
           >
             6
           </span>
@@ -1832,7 +1803,6 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
         >
           <span
             class="c6"
-            dir="ltr"
           >
             7
           </span>
@@ -1864,7 +1834,6 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
         >
           <span
             class="c6"
-            dir="ltr"
           >
             8
           </span>
@@ -1896,7 +1865,6 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
         >
           <span
             class="c6"
-            dir="ltr"
           >
             9
           </span>
@@ -1928,7 +1896,6 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
         >
           <span
             class="c6"
-            dir="ltr"
           >
             10
           </span>
@@ -2007,7 +1974,6 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
   color: #B80000;
   margin: 0;
   padding: 0;
-  float: right;
 }
 
 @supports (display:grid) {
@@ -2290,7 +2256,6 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
         >
           <span
             class="c6"
-            dir="rtl"
           >
             ۱
           </span>
@@ -2322,7 +2287,6 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
         >
           <span
             class="c6"
-            dir="rtl"
           >
             ۲
           </span>
@@ -2354,7 +2318,6 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
         >
           <span
             class="c6"
-            dir="rtl"
           >
             ۳
           </span>
@@ -2386,7 +2349,6 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
         >
           <span
             class="c6"
-            dir="rtl"
           >
             ۴
           </span>
@@ -2418,7 +2380,6 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
         >
           <span
             class="c6"
-            dir="rtl"
           >
             ۵
           </span>
@@ -2450,7 +2411,6 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
         >
           <span
             class="c6"
-            dir="rtl"
           >
             ۶
           </span>
@@ -2482,7 +2442,6 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
         >
           <span
             class="c6"
-            dir="rtl"
           >
             ۷
           </span>
@@ -2514,7 +2473,6 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
         >
           <span
             class="c6"
-            dir="rtl"
           >
             ۸
           </span>
@@ -2546,7 +2504,6 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
         >
           <span
             class="c6"
-            dir="rtl"
           >
             ۹
           </span>
@@ -2578,7 +2535,6 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
         >
           <span
             class="c6"
-            dir="rtl"
           >
             ۱۰
           </span>

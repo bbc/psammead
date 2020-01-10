@@ -46,7 +46,6 @@ exports[`MostReadItemWrapper should render ltr correctly with 10 items 1`] = `
   color: #B80000;
   margin: 0;
   padding: 0;
-  float: left;
 }
 
 @media (max-width:14.9375rem) {
@@ -302,7 +301,6 @@ exports[`MostReadItemWrapper should render ltr correctly with 10 items 1`] = `
       >
         <span
           class="c3"
-          dir="ltr"
         >
           1
         </span>
@@ -334,7 +332,6 @@ exports[`MostReadItemWrapper should render ltr correctly with 10 items 1`] = `
       >
         <span
           class="c3"
-          dir="ltr"
         >
           2
         </span>
@@ -366,7 +363,6 @@ exports[`MostReadItemWrapper should render ltr correctly with 10 items 1`] = `
       >
         <span
           class="c3"
-          dir="ltr"
         >
           3
         </span>
@@ -398,7 +394,6 @@ exports[`MostReadItemWrapper should render ltr correctly with 10 items 1`] = `
       >
         <span
           class="c3"
-          dir="ltr"
         >
           4
         </span>
@@ -430,7 +425,6 @@ exports[`MostReadItemWrapper should render ltr correctly with 10 items 1`] = `
       >
         <span
           class="c3"
-          dir="ltr"
         >
           5
         </span>
@@ -462,7 +456,6 @@ exports[`MostReadItemWrapper should render ltr correctly with 10 items 1`] = `
       >
         <span
           class="c3"
-          dir="ltr"
         >
           6
         </span>
@@ -494,7 +487,6 @@ exports[`MostReadItemWrapper should render ltr correctly with 10 items 1`] = `
       >
         <span
           class="c3"
-          dir="ltr"
         >
           7
         </span>
@@ -526,7 +518,6 @@ exports[`MostReadItemWrapper should render ltr correctly with 10 items 1`] = `
       >
         <span
           class="c3"
-          dir="ltr"
         >
           8
         </span>
@@ -558,7 +549,6 @@ exports[`MostReadItemWrapper should render ltr correctly with 10 items 1`] = `
       >
         <span
           class="c3"
-          dir="ltr"
         >
           9
         </span>
@@ -590,7 +580,6 @@ exports[`MostReadItemWrapper should render ltr correctly with 10 items 1`] = `
       >
         <span
           class="c3"
-          dir="ltr"
         >
           10
         </span>
@@ -657,7 +646,6 @@ exports[`MostReadItemWrapper should render rtl correctly with 10 items 1`] = `
   color: #B80000;
   margin: 0;
   padding: 0;
-  float: right;
 }
 
 @media (max-width:14.9375rem) {
@@ -913,7 +901,6 @@ exports[`MostReadItemWrapper should render rtl correctly with 10 items 1`] = `
       >
         <span
           class="c3"
-          dir="rtl"
         >
           ۱
         </span>
@@ -945,7 +932,6 @@ exports[`MostReadItemWrapper should render rtl correctly with 10 items 1`] = `
       >
         <span
           class="c3"
-          dir="rtl"
         >
           ۲
         </span>
@@ -977,7 +963,6 @@ exports[`MostReadItemWrapper should render rtl correctly with 10 items 1`] = `
       >
         <span
           class="c3"
-          dir="rtl"
         >
           ۳
         </span>
@@ -1009,7 +994,6 @@ exports[`MostReadItemWrapper should render rtl correctly with 10 items 1`] = `
       >
         <span
           class="c3"
-          dir="rtl"
         >
           ۴
         </span>
@@ -1041,7 +1025,6 @@ exports[`MostReadItemWrapper should render rtl correctly with 10 items 1`] = `
       >
         <span
           class="c3"
-          dir="rtl"
         >
           ۵
         </span>
@@ -1073,7 +1056,6 @@ exports[`MostReadItemWrapper should render rtl correctly with 10 items 1`] = `
       >
         <span
           class="c3"
-          dir="rtl"
         >
           ۶
         </span>
@@ -1105,7 +1087,6 @@ exports[`MostReadItemWrapper should render rtl correctly with 10 items 1`] = `
       >
         <span
           class="c3"
-          dir="rtl"
         >
           ۷
         </span>
@@ -1137,7 +1118,6 @@ exports[`MostReadItemWrapper should render rtl correctly with 10 items 1`] = `
       >
         <span
           class="c3"
-          dir="rtl"
         >
           ۸
         </span>
@@ -1169,7 +1149,6 @@ exports[`MostReadItemWrapper should render rtl correctly with 10 items 1`] = `
       >
         <span
           class="c3"
-          dir="rtl"
         >
           ۹
         </span>
@@ -1201,7 +1180,6 @@ exports[`MostReadItemWrapper should render rtl correctly with 10 items 1`] = `
       >
         <span
           class="c3"
-          dir="rtl"
         >
           ۱۰
         </span>

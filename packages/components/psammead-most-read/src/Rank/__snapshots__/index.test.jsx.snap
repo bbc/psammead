@@ -10,7 +10,6 @@ exports[`MostReadRank should render ltr correctly 1`] = `
   color: #B80000;
   margin: 0;
   padding: 0;
-  float: left;
 }
 
 @media (max-width:14.9375rem) {
@@ -63,7 +62,6 @@ exports[`MostReadRank should render ltr correctly 1`] = `
 >
   <span
     class="c1"
-    dir="ltr"
   >
     1
   </span>
@@ -80,7 +78,6 @@ exports[`MostReadRank should render ltr with double digits correctly 1`] = `
   color: #B80000;
   margin: 0;
   padding: 0;
-  float: left;
 }
 
 @media (max-width:14.9375rem) {
@@ -133,7 +130,6 @@ exports[`MostReadRank should render ltr with double digits correctly 1`] = `
 >
   <span
     class="c1"
-    dir="ltr"
   >
     1
   </span>
@@ -150,7 +146,6 @@ exports[`MostReadRank should render rtl correctly 1`] = `
   color: #B80000;
   margin: 0;
   padding: 0;
-  float: right;
 }
 
 @media (max-width:14.9375rem) {
@@ -203,7 +198,6 @@ exports[`MostReadRank should render rtl correctly 1`] = `
 >
   <span
     class="c1"
-    dir="rtl"
   >
     ۱
   </span>
@@ -220,7 +214,6 @@ exports[`MostReadRank should render rtl with double digits correctly 1`] = `
   color: #B80000;
   margin: 0;
   padding: 0;
-  float: right;
 }
 
 @media (max-width:14.9375rem) {
@@ -273,7 +266,6 @@ exports[`MostReadRank should render rtl with double digits correctly 1`] = `
 >
   <span
     class="c1"
-    dir="rtl"
   >
     ۱۰
   </span>
