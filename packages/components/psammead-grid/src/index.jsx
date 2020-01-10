@@ -334,6 +334,13 @@ Grid.propTypes = {
     group5: number,
   }),
   item: bool,
+  parentColumns: shape({
+    group1: number,
+    group2: number,
+    group3: number,
+    group4: number,
+    group5: number,
+  }),
 };
 
 Grid.defaultProps = {
@@ -348,6 +355,7 @@ Grid.defaultProps = {
   },
   startOffset: {},
   item: false,
+  parentColumns: null,
 };
 
 export default Grid;

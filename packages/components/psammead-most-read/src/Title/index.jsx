@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { oneOf, shape, string } from 'prop-types';
+import { shape, string, oneOf } from 'prop-types';
 import { C_SHADOW } from '@bbc/psammead-styles/colours';
 import { getTrafalgar } from '@bbc/gel-foundations/typography';
 import { scriptPropType } from '@bbc/gel-foundations/prop-types';
@@ -23,8 +23,8 @@ const MostReadTitle = ({
   header,
   service,
   script,
-  dir,
   labelId = MOST_READ_LABEL,
+  dir,
 }) => (
   <StyledSection labelId={labelId}>
     <StyledHeading dir={dir} id={labelId} script={script} service={service}>
@@ -37,13 +37,13 @@ MostReadTitle.propTypes = {
   header: string.isRequired,
   service: string.isRequired,
   script: shape(scriptPropType).isRequired,
-  dir: oneOf(['rtl', 'ltr']),
   labelId: string,
+  dir: oneOf(['rtl', 'ltr']),
 };
 
 MostReadTitle.defaultProps = {
-  dir: 'ltr',
   labelId: MOST_READ_LABEL,
+  dir: 'ltr',
 };
 
 export default MostReadTitle;
