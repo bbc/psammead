@@ -86,7 +86,7 @@ const StyledLi = styled.li`
 export const MostReadItemWrapper = ({ dir, children }) => (
   <Grid
     {...mostReadItemGridProps}
-    parentColumns={mostReadListGridProps.columns} // parentColumns is required here because on IE, this component would be rendered before it's parent therefore not recieving the parent's grid columns values so we have to explicitly pass it as a prop here so it works on IE
+    parentColumns={mostReadListGridProps.columns} // parentColumns is required here because on IE, this component would be rendered before it's parent therefore not receiving the parent's grid columns values so we have to explicitly pass it as a prop here so it works on IE
     dir={dir}
     forwardedAs="li"
   >
