@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 2.0.45 | [PR#2897](https://github.com/bbc/psammead/pull/2897) Talos - Bump Dependencies - @bbc/psammead-calendars |
 | 2.0.44 | [PR#2894](https://github.com/bbc/psammead/pull/2894) Talos - Bump Dependencies - @bbc/psammead-locales |
 | 2.0.43 | [PR#2878](https://github.com/bbc/psammead/pull/2878) Adding Psammead Grid as a dependency |
 | 2.0.42 | [PR#2879](https://github.com/bbc/psammead/pull/2879) Bump browserslist and lerna |
