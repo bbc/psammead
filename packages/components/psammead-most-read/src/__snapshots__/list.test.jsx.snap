@@ -102,54 +102,48 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
 
 @media (max-width:14.9375rem) {
   .c3 {
-    width: calc(6/6*(100% - 6 * 0.5rem) + 5 * 0.5rem );
-    margin: 0 0.25rem;
     display: inline-block;
+    width: 100%;
     vertical-align: top;
   }
 }
 
 @media (min-width:15rem) and (max-width:24.9375rem) {
   .c3 {
-    width: calc(6/6*(100% - 6 * 0.5rem) + 5 * 0.5rem );
-    margin: 0 0.25rem;
     display: inline-block;
+    width: 100%;
     vertical-align: top;
   }
 }
 
 @media (min-width:25rem) and (max-width:37.4375rem) {
   .c3 {
-    width: calc(3/6*(100% - 6 * 0.5rem) + 2 * 0.5rem );
-    margin: 0 0.25rem;
     display: inline-block;
+    width: 50%;
     vertical-align: top;
   }
 }
 
 @media (min-width:37.5rem) and (max-width:62.9375rem) {
   .c3 {
-    width: calc(3/6*(100% - 6 * 1rem) + 2 * 1rem );
-    margin: 0 0.5rem;
     display: inline-block;
+    width: 50%;
     vertical-align: top;
   }
 }
 
 @media (min-width:63rem) and (max-width:80rem) {
   .c3 {
-    width: calc(4/8*(100% - 8 * 1rem) + 3 * 1rem );
-    margin: 0 0.5rem;
     display: inline-block;
+    width: 50%;
     vertical-align: top;
   }
 }
 
 @media (min-width:80rem) {
   .c3 {
-    width: calc(4/20*(100% - 20 * 1rem) + 3 * 1rem );
-    margin: 0 0.5rem;
     display: inline-block;
+    width: 20%;
     vertical-align: top;
   }
 }
@@ -792,7 +786,6 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
 `;
 
 exports[`MostReadList should render with ltr burmese items with correct dir 1`] = `
-<<<<<<< HEAD:packages/components/psammead-most-read/src/__snapshots__/list.test.jsx.snap
 .c1 {
   position: relative;
 }
@@ -832,8 +825,6 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
   float: left;
 }
 
-=======
->>>>>>> 66cd964a4a3d8fb18035e96579b92b9717caea07:packages/components/psammead-most-read/src/List/__snapshots__/index.test.jsx.snap
 .c8 {
   font-size: 1.25rem;
   line-height: 1.875rem;
@@ -896,54 +887,48 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
 
 @media (max-width:14.9375rem) {
   .c3 {
-    width: calc(6/6*(100% - 6 * 0.5rem) + 5 * 0.5rem );
-    margin: 0 0.25rem;
     display: inline-block;
+    width: 100%;
     vertical-align: top;
   }
 }
 
 @media (min-width:15rem) and (max-width:24.9375rem) {
   .c3 {
-    width: calc(6/6*(100% - 6 * 0.5rem) + 5 * 0.5rem );
-    margin: 0 0.25rem;
     display: inline-block;
+    width: 100%;
     vertical-align: top;
   }
 }
 
 @media (min-width:25rem) and (max-width:37.4375rem) {
   .c3 {
-    width: calc(3/6*(100% - 6 * 0.5rem) + 2 * 0.5rem );
-    margin: 0 0.25rem;
     display: inline-block;
+    width: 50%;
     vertical-align: top;
   }
 }
 
 @media (min-width:37.5rem) and (max-width:62.9375rem) {
   .c3 {
-    width: calc(3/6*(100% - 6 * 1rem) + 2 * 1rem );
-    margin: 0 0.5rem;
     display: inline-block;
+    width: 50%;
     vertical-align: top;
   }
 }
 
 @media (min-width:63rem) and (max-width:80rem) {
   .c3 {
-    width: calc(4/8*(100% - 8 * 1rem) + 3 * 1rem );
-    margin: 0 0.5rem;
     display: inline-block;
+    width: 50%;
     vertical-align: top;
   }
 }
 
 @media (min-width:80rem) {
   .c3 {
-    width: calc(4/20*(100% - 20 * 1rem) + 3 * 1rem );
-    margin: 0 0.5rem;
     display: inline-block;
+    width: 20%;
     vertical-align: top;
   }
 }
@@ -1586,7 +1571,6 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
 `;
 
 exports[`MostReadList should render with ltr news items with correct dir 1`] = `
-<<<<<<< HEAD:packages/components/psammead-most-read/src/__snapshots__/list.test.jsx.snap
 .c1 {
   position: relative;
 }
@@ -1626,8 +1610,6 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
   float: left;
 }
 
-=======
->>>>>>> 66cd964a4a3d8fb18035e96579b92b9717caea07:packages/components/psammead-most-read/src/List/__snapshots__/index.test.jsx.snap
 .c8 {
   font-size: 1.125rem;
   line-height: 1.375rem;
@@ -1690,54 +1672,48 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
 
 @media (max-width:14.9375rem) {
   .c3 {
-    width: calc(6/6*(100% - 6 * 0.5rem) + 5 * 0.5rem );
-    margin: 0 0.25rem;
     display: inline-block;
+    width: 100%;
     vertical-align: top;
   }
 }
 
 @media (min-width:15rem) and (max-width:24.9375rem) {
   .c3 {
-    width: calc(6/6*(100% - 6 * 0.5rem) + 5 * 0.5rem );
-    margin: 0 0.25rem;
     display: inline-block;
+    width: 100%;
     vertical-align: top;
   }
 }
 
 @media (min-width:25rem) and (max-width:37.4375rem) {
   .c3 {
-    width: calc(3/6*(100% - 6 * 0.5rem) + 2 * 0.5rem );
-    margin: 0 0.25rem;
     display: inline-block;
+    width: 50%;
     vertical-align: top;
   }
 }
 
 @media (min-width:37.5rem) and (max-width:62.9375rem) {
   .c3 {
-    width: calc(3/6*(100% - 6 * 1rem) + 2 * 1rem );
-    margin: 0 0.5rem;
     display: inline-block;
+    width: 50%;
     vertical-align: top;
   }
 }
 
 @media (min-width:63rem) and (max-width:80rem) {
   .c3 {
-    width: calc(4/8*(100% - 8 * 1rem) + 3 * 1rem );
-    margin: 0 0.5rem;
     display: inline-block;
+    width: 50%;
     vertical-align: top;
   }
 }
 
 @media (min-width:80rem) {
   .c3 {
-    width: calc(4/20*(100% - 20 * 1rem) + 3 * 1rem );
-    margin: 0 0.5rem;
     display: inline-block;
+    width: 20%;
     vertical-align: top;
   }
 }
@@ -2380,7 +2356,6 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
 `;
 
 exports[`MostReadList should render with rtl arabic items with correct dir 1`] = `
-<<<<<<< HEAD:packages/components/psammead-most-read/src/__snapshots__/list.test.jsx.snap
 .c1 {
   position: relative;
 }
@@ -2420,8 +2395,6 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
   float: right;
 }
 
-=======
->>>>>>> 66cd964a4a3d8fb18035e96579b92b9717caea07:packages/components/psammead-most-read/src/List/__snapshots__/index.test.jsx.snap
 .c8 {
   font-size: 1.5rem;
   line-height: 2rem;
@@ -2484,54 +2457,48 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
 
 @media (max-width:14.9375rem) {
   .c3 {
-    width: calc(6/6*(100% - 6 * 0.5rem) + 5 * 0.5rem );
-    margin: 0 0.25rem;
     display: inline-block;
+    width: 100%;
     vertical-align: top;
   }
 }
 
 @media (min-width:15rem) and (max-width:24.9375rem) {
   .c3 {
-    width: calc(6/6*(100% - 6 * 0.5rem) + 5 * 0.5rem );
-    margin: 0 0.25rem;
     display: inline-block;
+    width: 100%;
     vertical-align: top;
   }
 }
 
 @media (min-width:25rem) and (max-width:37.4375rem) {
   .c3 {
-    width: calc(3/6*(100% - 6 * 0.5rem) + 2 * 0.5rem );
-    margin: 0 0.25rem;
     display: inline-block;
+    width: 50%;
     vertical-align: top;
   }
 }
 
 @media (min-width:37.5rem) and (max-width:62.9375rem) {
   .c3 {
-    width: calc(3/6*(100% - 6 * 1rem) + 2 * 1rem );
-    margin: 0 0.5rem;
     display: inline-block;
+    width: 50%;
     vertical-align: top;
   }
 }
 
 @media (min-width:63rem) and (max-width:80rem) {
   .c3 {
-    width: calc(4/8*(100% - 8 * 1rem) + 3 * 1rem );
-    margin: 0 0.5rem;
     display: inline-block;
+    width: 50%;
     vertical-align: top;
   }
 }
 
 @media (min-width:80rem) {
   .c3 {
-    width: calc(4/20*(100% - 20 * 1rem) + 3 * 1rem );
-    margin: 0 0.5rem;
     display: inline-block;
+    width: 20%;
     vertical-align: top;
   }
 }

@@ -111,54 +111,48 @@ exports[`MostRead should render with ltr most read with correct dir 1`] = `
 
 @media (max-width:14.9375rem) {
   .c4 {
-    width: calc(6/6*(100% - 6 * 0.5rem) + 5 * 0.5rem );
-    margin: 0 0.25rem;
     display: inline-block;
+    width: 100%;
     vertical-align: top;
   }
 }
 
 @media (min-width:15rem) and (max-width:24.9375rem) {
   .c4 {
-    width: calc(6/6*(100% - 6 * 0.5rem) + 5 * 0.5rem );
-    margin: 0 0.25rem;
     display: inline-block;
+    width: 100%;
     vertical-align: top;
   }
 }
 
 @media (min-width:25rem) and (max-width:37.4375rem) {
   .c4 {
-    width: calc(3/6*(100% - 6 * 0.5rem) + 2 * 0.5rem );
-    margin: 0 0.25rem;
     display: inline-block;
+    width: 50%;
     vertical-align: top;
   }
 }
 
 @media (min-width:37.5rem) and (max-width:62.9375rem) {
   .c4 {
-    width: calc(3/6*(100% - 6 * 1rem) + 2 * 1rem );
-    margin: 0 0.5rem;
     display: inline-block;
+    width: 50%;
     vertical-align: top;
   }
 }
 
 @media (min-width:63rem) and (max-width:80rem) {
   .c4 {
-    width: calc(4/8*(100% - 8 * 1rem) + 3 * 1rem );
-    margin: 0 0.5rem;
     display: inline-block;
+    width: 50%;
     vertical-align: top;
   }
 }
 
 @media (min-width:80rem) {
   .c4 {
-    width: calc(4/20*(100% - 20 * 1rem) + 3 * 1rem );
-    margin: 0 0.5rem;
     display: inline-block;
+    width: 20%;
     vertical-align: top;
   }
 }
@@ -830,7 +824,6 @@ exports[`MostRead should render with ltr most read with correct dir 1`] = `
 `;
 
 exports[`MostRead should render with rtl most read with correct dir 1`] = `
-<<<<<<< HEAD
 .c2 {
   position: relative;
 }
@@ -879,8 +872,6 @@ exports[`MostRead should render with rtl most read with correct dir 1`] = `
   float: right;
 }
 
-=======
->>>>>>> 66cd964a4a3d8fb18035e96579b92b9717caea07
 .c9 {
   font-size: 1.5rem;
   line-height: 2rem;
@@ -943,54 +934,48 @@ exports[`MostRead should render with rtl most read with correct dir 1`] = `
 
 @media (max-width:14.9375rem) {
   .c4 {
-    width: calc(6/6*(100% - 6 * 0.5rem) + 5 * 0.5rem );
-    margin: 0 0.25rem;
     display: inline-block;
+    width: 100%;
     vertical-align: top;
   }
 }
 
 @media (min-width:15rem) and (max-width:24.9375rem) {
   .c4 {
-    width: calc(6/6*(100% - 6 * 0.5rem) + 5 * 0.5rem );
-    margin: 0 0.25rem;
     display: inline-block;
+    width: 100%;
     vertical-align: top;
   }
 }
 
 @media (min-width:25rem) and (max-width:37.4375rem) {
   .c4 {
-    width: calc(3/6*(100% - 6 * 0.5rem) + 2 * 0.5rem );
-    margin: 0 0.25rem;
     display: inline-block;
+    width: 50%;
     vertical-align: top;
   }
 }
 
 @media (min-width:37.5rem) and (max-width:62.9375rem) {
   .c4 {
-    width: calc(3/6*(100% - 6 * 1rem) + 2 * 1rem );
-    margin: 0 0.5rem;
     display: inline-block;
+    width: 50%;
     vertical-align: top;
   }
 }
 
 @media (min-width:63rem) and (max-width:80rem) {
   .c4 {
-    width: calc(4/8*(100% - 8 * 1rem) + 3 * 1rem );
-    margin: 0 0.5rem;
     display: inline-block;
+    width: 50%;
     vertical-align: top;
   }
 }
 
 @media (min-width:80rem) {
   .c4 {
-    width: calc(4/20*(100% - 20 * 1rem) + 3 * 1rem );
-    margin: 0 0.5rem;
     display: inline-block;
+    width: 20%;
     vertical-align: top;
   }
 }
