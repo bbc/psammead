@@ -39,7 +39,7 @@ export const getItemWrapperArray = ({
   dir,
 }) => {
   const itemWrapperArray = [];
-
+  const item = getItem(service);
   for (let i = 1; i <= numberOfItems; i += 1) {
     itemWrapperArray.push(
       <MostReadItemWrapper dir={dir} key={i}>
@@ -52,10 +52,10 @@ export const getItemWrapperArray = ({
         />
         <MostReadLink
           dir={dir}
-          href={getItem(service).href}
+          href={item.href}
           service={service}
           script={script}
-          title={getItem(service).title}
+          title={item.title}
         />
       </MostReadItemWrapper>,
     );
