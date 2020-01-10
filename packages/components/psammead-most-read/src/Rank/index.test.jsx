@@ -21,7 +21,7 @@ describe('MostReadRank', () => {
       service="news"
       script={latin}
       listIndex={1}
-      numberOfItems={5}
+      numberOfItems={10}
       dir="ltr"
     />,
   );
