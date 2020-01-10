@@ -12,7 +12,6 @@ describe('MostRead', () => {
       script={latin}
       service="news"
       header="Most Read"
-      dir="ltr"
     />,
   );
   shouldMatchSnapshot(
