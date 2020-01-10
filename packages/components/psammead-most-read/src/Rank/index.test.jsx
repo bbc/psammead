@@ -20,7 +20,7 @@ describe('MostReadRank', () => {
     <MostReadRank
       service="news"
       script={latin}
-      listIndex={1}
+      listIndex={10}
       numberOfItems={10}
       dir="ltr"
     />,
