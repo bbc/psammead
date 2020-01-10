@@ -64,7 +64,7 @@
     "@bbc/psammead-storybook-helpers": "^8.2.0",
     "@bbc/psammead-styles": "^4.1.2",
     "@bbc/psammead-test-helpers": "^3.1.2",
-    "@bbc/psammead-timestamp": "^2.2.20",
+    "@bbc/psammead-timestamp": "^2.2.21",
     "@bbc/psammead-visually-hidden-text": "^1.2.3",
     "@storybook/addon-a11y": "^5.2.8",
     "@storybook/addon-actions": "^5.2.8",
