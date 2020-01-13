@@ -3,7 +3,8 @@
 <!-- prettier-ignore -->
 | Version | Description |
 | ------- | ----------- |
-| 5.1.0-alpha.11 | [PR#2889](https://github.com/bbc/psammead/pull/2889) Shrink brand svg before wrapping the script link |
+| 5.1.1 | [PR#2889](https://github.com/bbc/psammead/pull/2889) Shrink brand svg before wrapping the script link |
+| 5.1.0 | [PR#2917](https://github.com/bbc/psammead/pull/2917) Remove alpha tag from Brand component |
 | 5.1.0-alpha.10 | [PR#2863](https://github.com/bbc/psammead/pull/2863) Talos - Bump Dependencies - @bbc/psammead-script-link |
 | 5.1.0-alpha.9 | [PR#2833](https://github.com/bbc/psammead/pull/2833) Wrap `scriptLink` in a div to fix Read&Write issue in chrome |
 | 5.1.0-alpha.8 | [PR#2701](https://github.com/bbc/psammead/pull/2701) Talos - Bump Dependencies - @bbc/psammead-styles |

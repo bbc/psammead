@@ -29,7 +29,7 @@ storiesOf('Components|ScriptLink', module)
             href="https://www.bbc.com/serbian/lat"
             variant={variant}
           >
-            {label}
+            <span>{label}</span>
           </ScriptLink>
         </Container>
       );
