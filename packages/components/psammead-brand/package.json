@@ -34,8 +34,5 @@
     "bbc",
     "brand",
     "logo"
-  ],
-  "publishConfig": {
-    "tag": "alpha"
-  }
+  ]
 }
