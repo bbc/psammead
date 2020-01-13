@@ -1307,9 +1307,9 @@ exports[`MostReadLink should render rtl correctly 1`] = `
 >
   <a
     class="c1"
-    href="https://www.bbc.com/persian/articles/cej3lzd5e0go"
+    href="https://www.bbc.com/arabic/articles/c1er5mjnznzo"
   >
-    در این جشنواره برای نخستین بار از کارگران افغانستان در شهر تهران تقدیر شد
+    لماذا يخجل البعض من اسم قريته في مصر؟
   </a>
 </div>
 `;
