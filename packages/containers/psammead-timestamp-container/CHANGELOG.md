@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 2.6.16 | [PR#2894](https://github.com/bbc/psammead/pull/2894) Add notes to storybook stories |
 | 2.6.15 | [PR#2894](https://github.com/bbc/psammead/pull/2894) Talos - Bump Dependencies - @bbc/psammead-locales |
 | 2.6.14 | [PR#2857](https://github.com/bbc/psammead/pull/2857) Talos - Bump Dependencies - @bbc/psammead-locales |
 | 2.6.13 | [PR#2782](https://github.com/bbc/psammead/pull/2782) Talos - Bump Dependencies - @bbc/psammead-locales |
