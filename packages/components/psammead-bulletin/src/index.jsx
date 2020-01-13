@@ -121,30 +121,28 @@ const IconWrapper = styled.span`
   > svg {
     color: ${C_WHITE};
     fill: currentColor;
+    width: 1.0625rem;
+    height: ${GEL_SPACING_DBL};
+    margin: 0;
   }
-  
   ${({ dir }) =>
     dir === 'ltr'
       ? `padding-right: ${GEL_SPACING};`
       : `padding-left: ${GEL_SPACING};`}
-
-  @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
-    display: inline-block;
-  }
 `;
 
 const PlayCTA = styled.div.attrs({ 'aria-hidden': true })`
-  background-color: ${({ isLive }) => (isLive ? C_POSTBOX : C_EBON)};
-  border: 0.0625rem solid transparent;
   ${({ service }) => service && getSansRegular(service)};
   ${({ script }) => script && getPica(script)};
+  background-color: ${({ isLive }) => (isLive ? C_POSTBOX : C_EBON)};
+  border: 0.0625rem solid transparent;
   color: ${C_WHITE};
-  align-items: center;
   padding: 0.75rem;
   display: flex;
+  align-items: center;
   justify-content: center;
   @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
-    display: inline-block;
+    display: inline-flex;
     padding: ${GEL_SPACING} ${GEL_SPACING_DBL};
     ${({ isAudio }) => isAudio && `margin-bottom: ${GEL_SPACING_DBL};`}
   }
@@ -164,13 +162,29 @@ const BulletinSummary = styled.p`
   padding-bottom: ${GEL_SPACING_DBL};
 `;
 
+// This is needed to get around the issue of IE11 not supporting
+// nested media queries
+const getHeadlineFontStyle = script => {
+  const fontSize = script.greatPrimer.groupD.fontSize / 16;
+  const lineHeight = script.greatPrimer.groupD.lineHeight / 16;
+
+  return css`
+    font-size: ${fontSize}rem;
+    line-height: ${lineHeight}rem;
+  `;
+};
+
 const headingStyles = css`
   ${({ service }) => service && getSerifMedium(service)}
   ${({ script }) => script && getPica(script)}
+
   color: ${C_EBON};
   margin: 0; /* Reset */
-  padding: ${GEL_SPACING_DBL} ${GEL_SPACING} ${GEL_SPACING} ${GEL_SPACING};
+  padding: ${GEL_SPACING};
 
+  @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
+    ${({ script }) => script && getHeadlineFontStyle(script)}
+  }
 `;
 
 const TVHeading = styled.h3`
@@ -183,7 +197,9 @@ const TVHeading = styled.h3`
 const RadioHeading = styled.h3`
   ${headingStyles}
   @media(min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
-    padding: ${GEL_SPACING} 0;
+    padding-top: ${GEL_SPACING};
+    padding-bottom: ${GEL_SPACING};
+    ${({ dir }) => (dir === 'ltr' ? `padding-left: 0;` : `padding-right: 0;`)}
   }
 `;
 
