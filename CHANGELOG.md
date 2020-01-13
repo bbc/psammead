@@ -3,7 +3,10 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
-| 2.0.43 | [PR#2886](https://github.com/bbc/psammead/pull/2886) Talos - Bump Dependencies - @bbc/gel-foundations |
+| 2.0.46 | [PR#2886](https://github.com/bbc/psammead/pull/2886) Talos - Bump Dependencies - @bbc/gel-foundations |
+| 2.0.45 | [PR#2917](https://github.com/bbc/psammead/pull/2917) Remove alpha tag from Brand component |
+| 2.0.44 | [PR#2894](https://github.com/bbc/psammead/pull/2894) Talos - Bump Dependencies - @bbc/psammead-locales |
+| 2.0.43 | [PR#2878](https://github.com/bbc/psammead/pull/2878) Adding Psammead Grid as a dependency |
 | 2.0.42 | [PR#2879](https://github.com/bbc/psammead/pull/2879) Bump browserslist and lerna |
 | 2.0.41 | [PR#2865](https://github.com/bbc/psammead/pull/2865) Bumping dependencies |
 | 2.0.40 | [PR#2863](https://github.com/bbc/psammead/pull/2863) Talos - Bump Dependencies - @bbc/psammead-calendars |

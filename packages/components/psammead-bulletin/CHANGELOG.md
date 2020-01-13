@@ -3,7 +3,8 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
-| 1.0.2 | [PR#2886](https://github.com/bbc/psammead/pull/2886) Talos - Bump Dependencies - @bbc/gel-foundations |
+| 1.0.3 | [PR#2886](https://github.com/bbc/psammead/pull/2886) Talos - Bump Dependencies - @bbc/gel-foundations |
+| 1.0.2 | [PR#2807](https://github.com/bbc/psammead/pull/2807) Fix heading padding, center PlayCTA icon and update dimensions to `16px` height and `17px` width |
 | 1.0.1 | [PR#2827](https://github.com/bbc/psammead/pull/2827) Talos - Bump Dependencies - @bbc/psammead-assets |
 | 1.0.0 | [PR#2756](https://github.com/BBC/psammead/pull/2756) Remove alpha tag |
 | 0.1.0-alpha.15 | [PR#2764](https://github.com/bbc/psammead/pull/2764) Use `mediaType` to apply `padding-right` to summary above 600px for Radio Bulletin only |
