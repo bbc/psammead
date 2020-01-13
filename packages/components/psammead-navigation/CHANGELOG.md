@@ -3,7 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
-| 6.0.0-alpha.20 | [PR#xxxx](https://github.com/bbc/psammead/pull/xxxx) Update padding between navigation items |
+| 6.0.0-alpha.20 | [PR#2923](https://github.com/bbc/psammead/pull/2923) Update padding between navigation items |
 | 6.0.0-alpha.19 | [PR#2875](https://github.com/bbc/psammead/pull/2875) Remove aria-hidden from the scrollable navigation |
 | 6.0.0-alpha.18 | [PR#2847](https://github.com/bbc/psammead/pull/2847) Add animation to Dropdown Navigation |
 | 6.0.0-alpha.17 | [PR#2829](https://github.com/bbc/psammead/pull/2829) Remove references to SkipLink |
