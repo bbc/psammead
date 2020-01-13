@@ -88,10 +88,10 @@ MostReadLink.defaultProps = {
   children: null,
 };
 
-const StyledLi = styled.li`
-  position: relative;
+const StyledDiv = styled.div`
   display: flex;
   flex-direction: row;
+  position: relative;
   margin: 0;
   padding: 0;
 `;
@@ -103,7 +103,7 @@ export const MostReadItemWrapper = ({ dir, children }) => (
     dir={dir}
     forwardedAs="li"
   >
-    <StyledLi>{children}</StyledLi>
+    <StyledDiv>{children}</StyledDiv>
   </Grid>
 );
 
