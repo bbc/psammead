@@ -10,14 +10,6 @@ import {
   GEL_SPACING_DBL,
   GEL_SPACING_TRPL,
 } from '@bbc/gel-foundations/spacings';
-import {
-  GEL_GROUP_5_SCREEN_WIDTH_MIN,
-  GEL_GROUP_5_SCREEN_WIDTH_MAX,
-  GEL_GROUP_3_SCREEN_WIDTH_MAX,
-  GEL_GROUP_3_SCREEN_WIDTH_MIN,
-  GEL_GROUP_2_SCREEN_WIDTH_MIN,
-  GEL_GROUP_2_SCREEN_WIDTH_MAX,
-} from '@bbc/gel-foundations/breakpoints';
 import Grid from '@bbc/psammead-grid';
 import { isInSpecificColumn } from '../Rank';
 import {
@@ -30,13 +22,6 @@ const paddingStart = ({ dir }) => `padding-${dir === 'ltr' ? 'left' : 'right'}`;
 
 // This is to make where the link ends consistent for both columns.
 const paddingEnd = ({ dir }) => `padding-${dir === 'ltr' ? 'right' : 'left'}`;
-
-// These measurements are to be used for making the width of the links in each column consistent.
-const firstColumnLinkWidths = {
-  group2: '1.15rem',
-  group3: '1.8rem',
-  group5: '1.5rem',
-};
 
 const StyledLink = styled.a`
   ${({ script }) => script && getDoublePica(script)};
@@ -54,48 +39,13 @@ const StyledLink = styled.a`
 const StyledItem = styled.div`
   padding-bottom: ${GEL_SPACING_TRPL};
   ${paddingStart}: ${GEL_SPACING_DBL};
-  ${paddingEnd}: 0;
-
-  @media (min-width: ${GEL_GROUP_2_SCREEN_WIDTH_MIN}) and (max-width: ${GEL_GROUP_2_SCREEN_WIDTH_MAX}) {
-    ${paddingEnd}: ${props =>
-      isInSpecificColumn(props, false, 1)
-        ? '0rem'
-        : firstColumnLinkWidths.group2}
-  }
-
-  @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) and (max-width: ${GEL_GROUP_3_SCREEN_WIDTH_MAX}) {
-    ${paddingEnd}: ${props =>
-      isInSpecificColumn(props, false, 1)
-        ? '0rem'
-        : firstColumnLinkWidths.group3}
-  }
-
-  @media (min-width: ${GEL_GROUP_5_SCREEN_WIDTH_MIN}) and (max-width: ${GEL_GROUP_5_SCREEN_WIDTH_MAX}) {
-    ${paddingEnd}: ${props =>
-      props.listIndex !== 4 && props.listIndex !== 9
-        ? firstColumnLinkWidths.group5
-        : '0rem'}
-  }
 
   @supports (${grid}) {
-    @media (min-width: ${GEL_GROUP_2_SCREEN_WIDTH_MIN}) {
-      ${paddingEnd}: ${props =>
-        isInSpecificColumn(props, true, 1)
-          ? '0rem'
-          : firstColumnLinkWidths.group2}
-    }
-
-    @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
-      ${paddingEnd}: ${props =>
-        isInSpecificColumn(props, true, 1)
-          ? '0rem'
-          : firstColumnLinkWidths.group3}
-    }
-
-    @media (min-width: ${GEL_GROUP_5_SCREEN_WIDTH_MIN}) {
-      ${paddingEnd}: 0rem
-    }
+    ${paddingEnd}: ${props =>
+      isInSpecificColumn(props, true, 1) ? '0rem' : '2rem'}
   }
+  ${paddingEnd}: ${props =>
+    isInSpecificColumn(props, false, 1) ? '0rem' : '2rem'}
 `;
 
 export const MostReadLink = ({
