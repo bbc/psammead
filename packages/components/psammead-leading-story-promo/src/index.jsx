@@ -4,7 +4,6 @@ import { node } from 'prop-types';
 import { C_EBON } from '@bbc/psammead-styles/colours';
 import { getSerifMedium } from '@bbc/psammead-styles/font-styles';
 import { grid } from '@bbc/psammead-styles/detection';
-import { GEL_GROUP_4_SCREEN_WIDTH_MIN } from '@bbc/gel-foundations/breakpoints';
 import { GEL_SPACING_DBL, GEL_SPACING } from '@bbc/gel-foundations/spacings';
 import { getDoublePica } from '@bbc/gel-foundations/dist/typography';
 
@@ -15,6 +14,8 @@ const twoOfSixColumnsMaxWidthScaleable = `33.33%`;
 // (2 / 6) * 100 = 0.3333333333 = 33.33%
 
 const LeadingPromoWrapper = styled.div`
+  position: relative;
+
   @supports (${grid}) {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
@@ -38,10 +39,7 @@ const ImageGridItem = styled.div`
 
   @supports (${grid}) {
     width: initial;
-
-    @media (min-width: ${GEL_GROUP_4_SCREEN_WIDTH_MIN}) {
-      ${ImageGridColumns}
-    }
+    ${ImageGridColumns}
   }
 `;
 
@@ -62,10 +60,7 @@ const TextGridItem = styled.div`
 
   @supports (${grid}) {
     width: 100%;
-
-    @media (min-width: ${GEL_GROUP_4_SCREEN_WIDTH_MIN}) {
-      ${TextGridColumns}
-    }
+    ${TextGridColumns}
   }
 `;
 

@@ -41,6 +41,10 @@ exports[`LeadingStoryPromo should render RTL leading story promo correctly 1`] =
   color: #6E6E73;
 }
 
+.c0 {
+  position: relative;
+}
+
 .c5 {
   display: inline-block;
   width: 66.67%;
@@ -102,12 +106,16 @@ exports[`LeadingStoryPromo should render RTL leading story promo correctly 1`] =
 @supports (grid-template-columns:fit-content(200px)) {
   .c5 {
     width: initial;
+    grid-template-columns: repeat(4,1fr);
+    grid-column-end: span 4;
   }
 }
 
 @supports (grid-template-columns:fit-content(200px)) {
   .c1 {
     width: 100%;
+    grid-template-columns: repeat(2,1fr);
+    grid-column-end: span 2;
   }
 }
 
@@ -199,6 +207,10 @@ exports[`LeadingStoryPromo should render default leading story promo correctly 1
   color: #6E6E73;
 }
 
+.c0 {
+  position: relative;
+}
+
 .c5 {
   display: inline-block;
   width: 66.67%;
@@ -260,12 +272,16 @@ exports[`LeadingStoryPromo should render default leading story promo correctly 1
 @supports (grid-template-columns:fit-content(200px)) {
   .c5 {
     width: initial;
+    grid-template-columns: repeat(4,1fr);
+    grid-column-end: span 4;
   }
 }
 
 @supports (grid-template-columns:fit-content(200px)) {
   .c1 {
     width: 100%;
+    grid-template-columns: repeat(2,1fr);
+    grid-column-end: span 2;
   }
 }
 
