@@ -3,6 +3,8 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 1.0.3 | [PR#2920](https://github.com/bbc/psammead/pull/2920) Talos - Bump Dependencies - @bbc/gel-foundations |
+| 1.0.2 | [PR#2896](https://github.com/bbc/psammead/pull/2896) Only add border to the script link span rather than all child spans |
 | 1.0.1 | [PR#2887](https://github.com/bbc/psammead/pull/2887) Update margins to be 0.5rem on top, bottom and left and 0rem on the right |
 | 1.0.0 | [PR#2853](https://github.com/bbc/psammead/pull/2853) Remove alpha tag after a successful accessibility swarm |
 | 1.0.0-alpha.14 | [PR#2833](https://github.com/bbc/psammead/pull/2833) Refactor to fix read&write issue on IE11 |

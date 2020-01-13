@@ -23,8 +23,8 @@ exports[`ScriptLink should render correctly 1`] = `
   padding: 0 1rem;
 }
 
-.c0:hover span,
-.c0:focus span {
+.c0:hover > span,
+.c0:focus > span {
   margin: 0;
   border: 0.1875rem solid #FFFFFF;
 }
