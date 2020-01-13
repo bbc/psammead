@@ -38,7 +38,6 @@ exports[`MostReadItemWrapper should render ltr correctly with 10 items 1`] = `
 }
 
 .c1 {
-  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -46,6 +45,7 @@ exports[`MostReadItemWrapper should render ltr correctly with 10 items 1`] = `
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
+  position: relative;
   margin: 0;
   padding: 0;
 }
@@ -306,7 +306,7 @@ exports[`MostReadItemWrapper should render ltr correctly with 10 items 1`] = `
     class="c0"
     dir="ltr"
   >
-    <li
+    <div
       class="c1"
     >
       <div
@@ -330,14 +330,14 @@ exports[`MostReadItemWrapper should render ltr correctly with 10 items 1`] = `
           Could a computer ever create better art than a human?
         </a>
       </div>
-    </li>
+    </div>
   </div>
   <div
     as="li"
     class="c0"
     dir="ltr"
   >
-    <li
+    <div
       class="c1"
     >
       <div
@@ -361,14 +361,14 @@ exports[`MostReadItemWrapper should render ltr correctly with 10 items 1`] = `
           Could a computer ever create better art than a human?
         </a>
       </div>
-    </li>
+    </div>
   </div>
   <div
     as="li"
     class="c0"
     dir="ltr"
   >
-    <li
+    <div
       class="c1"
     >
       <div
@@ -392,14 +392,14 @@ exports[`MostReadItemWrapper should render ltr correctly with 10 items 1`] = `
           Could a computer ever create better art than a human?
         </a>
       </div>
-    </li>
+    </div>
   </div>
   <div
     as="li"
     class="c0"
     dir="ltr"
   >
-    <li
+    <div
       class="c1"
     >
       <div
@@ -423,14 +423,14 @@ exports[`MostReadItemWrapper should render ltr correctly with 10 items 1`] = `
           Could a computer ever create better art than a human?
         </a>
       </div>
-    </li>
+    </div>
   </div>
   <div
     as="li"
     class="c0"
     dir="ltr"
   >
-    <li
+    <div
       class="c1"
     >
       <div
@@ -454,14 +454,14 @@ exports[`MostReadItemWrapper should render ltr correctly with 10 items 1`] = `
           Could a computer ever create better art than a human?
         </a>
       </div>
-    </li>
+    </div>
   </div>
   <div
     as="li"
     class="c0"
     dir="ltr"
   >
-    <li
+    <div
       class="c1"
     >
       <div
@@ -485,14 +485,14 @@ exports[`MostReadItemWrapper should render ltr correctly with 10 items 1`] = `
           Could a computer ever create better art than a human?
         </a>
       </div>
-    </li>
+    </div>
   </div>
   <div
     as="li"
     class="c0"
     dir="ltr"
   >
-    <li
+    <div
       class="c1"
     >
       <div
@@ -516,14 +516,14 @@ exports[`MostReadItemWrapper should render ltr correctly with 10 items 1`] = `
           Could a computer ever create better art than a human?
         </a>
       </div>
-    </li>
+    </div>
   </div>
   <div
     as="li"
     class="c0"
     dir="ltr"
   >
-    <li
+    <div
       class="c1"
     >
       <div
@@ -547,14 +547,14 @@ exports[`MostReadItemWrapper should render ltr correctly with 10 items 1`] = `
           Could a computer ever create better art than a human?
         </a>
       </div>
-    </li>
+    </div>
   </div>
   <div
     as="li"
     class="c0"
     dir="ltr"
   >
-    <li
+    <div
       class="c1"
     >
       <div
@@ -578,14 +578,14 @@ exports[`MostReadItemWrapper should render ltr correctly with 10 items 1`] = `
           Could a computer ever create better art than a human?
         </a>
       </div>
-    </li>
+    </div>
   </div>
   <div
     as="li"
     class="c0"
     dir="ltr"
   >
-    <li
+    <div
       class="c1"
     >
       <div
@@ -609,7 +609,7 @@ exports[`MostReadItemWrapper should render ltr correctly with 10 items 1`] = `
           Could a computer ever create better art than a human?
         </a>
       </div>
-    </li>
+    </div>
   </div>
 </div>
 `;
@@ -652,7 +652,6 @@ exports[`MostReadItemWrapper should render rtl correctly with 10 items 1`] = `
 }
 
 .c1 {
-  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -660,6 +659,7 @@ exports[`MostReadItemWrapper should render rtl correctly with 10 items 1`] = `
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
+  position: relative;
   margin: 0;
   padding: 0;
 }
@@ -920,7 +920,7 @@ exports[`MostReadItemWrapper should render rtl correctly with 10 items 1`] = `
     class="c0"
     dir="rtl"
   >
-    <li
+    <div
       class="c1"
     >
       <div
@@ -944,14 +944,14 @@ exports[`MostReadItemWrapper should render rtl correctly with 10 items 1`] = `
           در این جشنواره برای نخستین بار از کارگران افغانستان در شهر تهران تقدیر شد
         </a>
       </div>
-    </li>
+    </div>
   </div>
   <div
     as="li"
     class="c0"
     dir="rtl"
   >
-    <li
+    <div
       class="c1"
     >
       <div
@@ -975,14 +975,14 @@ exports[`MostReadItemWrapper should render rtl correctly with 10 items 1`] = `
           در این جشنواره برای نخستین بار از کارگران افغانستان در شهر تهران تقدیر شد
         </a>
       </div>
-    </li>
+    </div>
   </div>
   <div
     as="li"
     class="c0"
     dir="rtl"
   >
-    <li
+    <div
       class="c1"
     >
       <div
@@ -1006,14 +1006,14 @@ exports[`MostReadItemWrapper should render rtl correctly with 10 items 1`] = `
           در این جشنواره برای نخستین بار از کارگران افغانستان در شهر تهران تقدیر شد
         </a>
       </div>
-    </li>
+    </div>
   </div>
   <div
     as="li"
     class="c0"
     dir="rtl"
   >
-    <li
+    <div
       class="c1"
     >
       <div
@@ -1037,14 +1037,14 @@ exports[`MostReadItemWrapper should render rtl correctly with 10 items 1`] = `
           در این جشنواره برای نخستین بار از کارگران افغانستان در شهر تهران تقدیر شد
         </a>
       </div>
-    </li>
+    </div>
   </div>
   <div
     as="li"
     class="c0"
     dir="rtl"
   >
-    <li
+    <div
       class="c1"
     >
       <div
@@ -1068,14 +1068,14 @@ exports[`MostReadItemWrapper should render rtl correctly with 10 items 1`] = `
           در این جشنواره برای نخستین بار از کارگران افغانستان در شهر تهران تقدیر شد
         </a>
       </div>
-    </li>
+    </div>
   </div>
   <div
     as="li"
     class="c0"
     dir="rtl"
   >
-    <li
+    <div
       class="c1"
     >
       <div
@@ -1099,14 +1099,14 @@ exports[`MostReadItemWrapper should render rtl correctly with 10 items 1`] = `
           در این جشنواره برای نخستین بار از کارگران افغانستان در شهر تهران تقدیر شد
         </a>
       </div>
-    </li>
+    </div>
   </div>
   <div
     as="li"
     class="c0"
     dir="rtl"
   >
-    <li
+    <div
       class="c1"
     >
       <div
@@ -1130,14 +1130,14 @@ exports[`MostReadItemWrapper should render rtl correctly with 10 items 1`] = `
           در این جشنواره برای نخستین بار از کارگران افغانستان در شهر تهران تقدیر شد
         </a>
       </div>
-    </li>
+    </div>
   </div>
   <div
     as="li"
     class="c0"
     dir="rtl"
   >
-    <li
+    <div
       class="c1"
     >
       <div
@@ -1161,14 +1161,14 @@ exports[`MostReadItemWrapper should render rtl correctly with 10 items 1`] = `
           در این جشنواره برای نخستین بار از کارگران افغانستان در شهر تهران تقدیر شد
         </a>
       </div>
-    </li>
+    </div>
   </div>
   <div
     as="li"
     class="c0"
     dir="rtl"
   >
-    <li
+    <div
       class="c1"
     >
       <div
@@ -1192,14 +1192,14 @@ exports[`MostReadItemWrapper should render rtl correctly with 10 items 1`] = `
           در این جشنواره برای نخستین بار از کارگران افغانستان در شهر تهران تقدیر شد
         </a>
       </div>
-    </li>
+    </div>
   </div>
   <div
     as="li"
     class="c0"
     dir="rtl"
   >
-    <li
+    <div
       class="c1"
     >
       <div
@@ -1223,7 +1223,7 @@ exports[`MostReadItemWrapper should render rtl correctly with 10 items 1`] = `
           در این جشنواره برای نخستین بار از کارگران افغانستان در شهر تهران تقدیر شد
         </a>
       </div>
-    </li>
+    </div>
   </div>
 </div>
 `;

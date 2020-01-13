@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`MostRead should render with ltr most read with correct dir 1`] = `
-.c9 {
+.c8 {
   font-size: 1.125rem;
   line-height: 1.375rem;
   font-family: ReithSerif,Helvetica,Arial,sans-serif;
@@ -13,13 +13,13 @@ exports[`MostRead should render with ltr most read with correct dir 1`] = `
   text-decoration: none;
 }
 
-.c9:hover,
-.c9:focus {
+.c8:hover,
+.c8:focus {
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
-.c9:before {
+.c8:before {
   bottom: 0;
   content: '';
   left: 0;
@@ -31,14 +31,13 @@ exports[`MostRead should render with ltr most read with correct dir 1`] = `
   z-index: 1;
 }
 
-.c8 {
+.c7 {
   padding-bottom: 1.5rem;
   padding-left: 1rem;
   padding-right: 1rem;
 }
 
-.c5 {
-  position: relative;
+.c4 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -46,11 +45,12 @@ exports[`MostRead should render with ltr most read with correct dir 1`] = `
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
+  position: relative;
   margin: 0;
   padding: 0;
 }
 
-.c7 {
+.c6 {
   font-family: ReithSerif,Helvetica,Arial,sans-serif;
   font-weight: 300;
   font-style: normal;
@@ -62,13 +62,10 @@ exports[`MostRead should render with ltr most read with correct dir 1`] = `
   padding: 0;
 }
 
-.c1 {
+.c2 {
   list-style-type: none;
   margin: 0;
   padding: 0;
-}
-
-.c3 {
   grid-auto-flow: column;
   grid-template-rows: repeat( 5,[col-start] auto [col-end] );
 }
@@ -83,14 +80,14 @@ exports[`MostRead should render with ltr most read with correct dir 1`] = `
 }
 
 @supports (display:grid) {
-  .c2 {
+  .c1 {
     display: grid;
     position: initial;
   }
 }
 
 @media (max-width:14.9375rem) {
-  .c4 {
+  .c3 {
     width: calc(100%);
     display: inline-block;
     vertical-align: top;
@@ -98,7 +95,7 @@ exports[`MostRead should render with ltr most read with correct dir 1`] = `
 }
 
 @media (min-width:15rem) and (max-width:24.9375rem) {
-  .c4 {
+  .c3 {
     width: calc(100%);
     display: inline-block;
     vertical-align: top;
@@ -106,7 +103,7 @@ exports[`MostRead should render with ltr most read with correct dir 1`] = `
 }
 
 @media (min-width:25rem) and (max-width:37.4375rem) {
-  .c4 {
+  .c3 {
     width: calc(50%);
     display: inline-block;
     vertical-align: top;
@@ -114,7 +111,7 @@ exports[`MostRead should render with ltr most read with correct dir 1`] = `
 }
 
 @media (min-width:37.5rem) and (max-width:62.9375rem) {
-  .c4 {
+  .c3 {
     width: calc(50%);
     display: inline-block;
     vertical-align: top;
@@ -122,7 +119,7 @@ exports[`MostRead should render with ltr most read with correct dir 1`] = `
 }
 
 @media (min-width:63rem) and (max-width:80rem) {
-  .c4 {
+  .c3 {
     width: calc(50%);
     display: inline-block;
     vertical-align: top;
@@ -130,7 +127,7 @@ exports[`MostRead should render with ltr most read with correct dir 1`] = `
 }
 
 @media (min-width:80rem) {
-  .c4 {
+  .c3 {
     width: calc(20%);
     display: inline-block;
     vertical-align: top;
@@ -138,203 +135,203 @@ exports[`MostRead should render with ltr most read with correct dir 1`] = `
 }
 
 @supports (display:grid) {
-  .c4 {
+  .c3 {
     display: block;
   }
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
-  .c9 {
+  .c8 {
     font-size: 1.25rem;
     line-height: 1.5rem;
   }
 }
 
 @media (min-width:37.5rem) {
-  .c9 {
+  .c8 {
     font-size: 1.5rem;
     line-height: 1.75rem;
   }
 }
 
 @supports (grid-template-columns:fit-content(200px)) {
-  .c8 {
+  .c7 {
     padding-right: 0;
   }
 }
 
 @media (max-width:14.9375rem) {
-  .c6 {
+  .c5 {
     min-width: 2.5rem;
   }
 }
 
 @media (min-width:15rem) and (max-width:24.9375rem) {
-  .c6 {
+  .c5 {
     min-width: 2.5rem;
   }
 }
 
 @media (min-width:25rem) and (max-width:37.4375rem) {
-  .c6 {
+  .c5 {
     min-width: auto;
   }
 }
 
 @media (min-width:37.5rem) and (max-width:80rem) {
-  .c6 {
+  .c5 {
     min-width: auto;
   }
 }
 
 @media (min-width:80rem) {
-  .c6 {
+  .c5 {
     min-width: auto;
   }
 }
 
 @media (max-width:14.9375rem) {
-  .c10 {
+  .c9 {
     min-width: 2.5rem;
   }
 }
 
 @media (min-width:15rem) and (max-width:24.9375rem) {
-  .c10 {
+  .c9 {
     min-width: 2.5rem;
   }
 }
 
 @media (min-width:25rem) and (max-width:37.4375rem) {
-  .c10 {
+  .c9 {
     min-width: 2.5rem;
   }
 }
 
 @media (min-width:37.5rem) and (max-width:80rem) {
-  .c10 {
+  .c9 {
     min-width: 4rem;
   }
 }
 
 @media (min-width:80rem) {
-  .c10 {
+  .c9 {
     min-width: auto;
   }
 }
 
 @media (max-width:14.9375rem) {
-  .c11 {
+  .c10 {
     min-width: 2.5rem;
   }
 }
 
 @media (min-width:15rem) and (max-width:24.9375rem) {
-  .c11 {
+  .c10 {
     min-width: 2.5rem;
   }
 }
 
 @media (min-width:25rem) and (max-width:37.4375rem) {
-  .c11 {
+  .c10 {
     min-width: auto;
   }
 }
 
 @media (min-width:37.5rem) and (max-width:80rem) {
-  .c11 {
+  .c10 {
     min-width: auto;
   }
 }
 
 @media (min-width:80rem) {
-  .c11 {
+  .c10 {
     min-width: 4.25rem;
   }
 }
 
 @media (max-width:14.9375rem) {
-  .c12 {
+  .c11 {
     min-width: 2.5rem;
   }
 }
 
 @media (min-width:15rem) and (max-width:24.9375rem) {
-  .c12 {
+  .c11 {
     min-width: 2.5rem;
   }
 }
 
 @media (min-width:25rem) and (max-width:37.4375rem) {
-  .c12 {
+  .c11 {
     min-width: 2.5rem;
   }
 }
 
 @media (min-width:37.5rem) and (max-width:80rem) {
-  .c12 {
+  .c11 {
     min-width: 4rem;
   }
 }
 
 @media (min-width:80rem) {
-  .c12 {
+  .c11 {
     min-width: auto;
   }
 }
 
 @media (max-width:14.9375rem) {
-  .c13 {
+  .c12 {
     min-width: 2.5rem;
   }
 }
 
 @media (min-width:15rem) and (max-width:24.9375rem) {
-  .c13 {
+  .c12 {
     min-width: 2.5rem;
   }
 }
 
 @media (min-width:25rem) and (max-width:37.4375rem) {
-  .c13 {
+  .c12 {
     min-width: auto;
   }
 }
 
 @media (min-width:37.5rem) and (max-width:80rem) {
-  .c13 {
+  .c12 {
     min-width: auto;
   }
 }
 
 @media (min-width:80rem) {
-  .c13 {
+  .c12 {
     min-width: auto;
   }
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
-  .c7 {
+  .c6 {
     font-size: 2.5rem;
     line-height: 2.75rem;
   }
 }
 
 @media (min-width:37.5rem) {
-  .c7 {
+  .c6 {
     font-size: 3.5rem;
     line-height: 3.75rem;
   }
 }
 
 @media (max-width:24.9375rem) {
-  .c3 {
+  .c2 {
     grid-template-rows: repeat( 10,[col-start] auto [col-end] );
   }
 }
 
 @media (min-width:80rem) {
-  .c3 {
+  .c2 {
     grid-auto-flow: row;
     grid-template-rows: repeat( 5,[col-start] auto [col-end] );
   }
@@ -368,322 +365,318 @@ exports[`MostRead should render with ltr most read with correct dir 1`] = `
     Most Read
   </h2>
   <ol
-    class="c1"
+    class="c1 c2"
+    dir="ltr"
     role="list"
   >
     <div
-      class="c2 c3"
+      as="li"
+      class="c3"
       dir="ltr"
     >
       <div
-        as="li"
         class="c4"
-        dir="ltr"
       >
-        <li
+        <div
           class="c5"
+          dir="ltr"
         >
-          <div
+          <span
             class="c6"
-            dir="ltr"
           >
-            <span
-              class="c7"
-            >
-              1
-            </span>
-          </div>
-          <div
-            class="c8"
-            dir="ltr"
-          >
-            <a
-              class="c9"
-              href="https://www.bbc.com/news/articles/cn7k01xp8kxo"
-            >
-              Could a computer ever create better art than a human?
-            </a>
-          </div>
-        </li>
-      </div>
-      <div
-        as="li"
-        class="c4"
-        dir="ltr"
-      >
-        <li
-          class="c5"
+            1
+          </span>
+        </div>
+        <div
+          class="c7"
+          dir="ltr"
         >
-          <div
-            class="c10"
-            dir="ltr"
-          >
-            <span
-              class="c7"
-            >
-              2
-            </span>
-          </div>
-          <div
+          <a
             class="c8"
-            dir="ltr"
+            href="https://www.bbc.com/news/articles/cn7k01xp8kxo"
           >
-            <a
-              class="c9"
-              href="https://www.bbc.com/news/articles/cn7k01xp8kxo"
-            >
-              Could a computer ever create better art than a human?
-            </a>
-          </div>
-        </li>
+            Could a computer ever create better art than a human?
+          </a>
+        </div>
       </div>
+    </div>
+    <div
+      as="li"
+      class="c3"
+      dir="ltr"
+    >
       <div
-        as="li"
         class="c4"
-        dir="ltr"
       >
-        <li
-          class="c5"
+        <div
+          class="c9"
+          dir="ltr"
         >
-          <div
+          <span
             class="c6"
-            dir="ltr"
           >
-            <span
-              class="c7"
-            >
-              3
-            </span>
-          </div>
-          <div
-            class="c8"
-            dir="ltr"
-          >
-            <a
-              class="c9"
-              href="https://www.bbc.com/news/articles/cn7k01xp8kxo"
-            >
-              Could a computer ever create better art than a human?
-            </a>
-          </div>
-        </li>
-      </div>
-      <div
-        as="li"
-        class="c4"
-        dir="ltr"
-      >
-        <li
-          class="c5"
+            2
+          </span>
+        </div>
+        <div
+          class="c7"
+          dir="ltr"
         >
-          <div
-            class="c10"
-            dir="ltr"
-          >
-            <span
-              class="c7"
-            >
-              4
-            </span>
-          </div>
-          <div
+          <a
             class="c8"
-            dir="ltr"
+            href="https://www.bbc.com/news/articles/cn7k01xp8kxo"
           >
-            <a
-              class="c9"
-              href="https://www.bbc.com/news/articles/cn7k01xp8kxo"
-            >
-              Could a computer ever create better art than a human?
-            </a>
-          </div>
-        </li>
+            Could a computer ever create better art than a human?
+          </a>
+        </div>
       </div>
+    </div>
+    <div
+      as="li"
+      class="c3"
+      dir="ltr"
+    >
       <div
-        as="li"
         class="c4"
-        dir="ltr"
       >
-        <li
+        <div
           class="c5"
+          dir="ltr"
         >
-          <div
-            class="c11"
-            dir="ltr"
+          <span
+            class="c6"
           >
-            <span
-              class="c7"
-            >
-              5
-            </span>
-          </div>
-          <div
+            3
+          </span>
+        </div>
+        <div
+          class="c7"
+          dir="ltr"
+        >
+          <a
             class="c8"
-            dir="ltr"
+            href="https://www.bbc.com/news/articles/cn7k01xp8kxo"
           >
-            <a
-              class="c9"
-              href="https://www.bbc.com/news/articles/cn7k01xp8kxo"
-            >
-              Could a computer ever create better art than a human?
-            </a>
-          </div>
-        </li>
+            Could a computer ever create better art than a human?
+          </a>
+        </div>
       </div>
+    </div>
+    <div
+      as="li"
+      class="c3"
+      dir="ltr"
+    >
       <div
-        as="li"
         class="c4"
-        dir="ltr"
       >
-        <li
-          class="c5"
+        <div
+          class="c9"
+          dir="ltr"
         >
-          <div
-            class="c12"
-            dir="ltr"
+          <span
+            class="c6"
           >
-            <span
-              class="c7"
-            >
-              6
-            </span>
-          </div>
-          <div
+            4
+          </span>
+        </div>
+        <div
+          class="c7"
+          dir="ltr"
+        >
+          <a
             class="c8"
-            dir="ltr"
+            href="https://www.bbc.com/news/articles/cn7k01xp8kxo"
           >
-            <a
-              class="c9"
-              href="https://www.bbc.com/news/articles/cn7k01xp8kxo"
-            >
-              Could a computer ever create better art than a human?
-            </a>
-          </div>
-        </li>
+            Could a computer ever create better art than a human?
+          </a>
+        </div>
       </div>
+    </div>
+    <div
+      as="li"
+      class="c3"
+      dir="ltr"
+    >
       <div
-        as="li"
         class="c4"
-        dir="ltr"
       >
-        <li
-          class="c5"
+        <div
+          class="c10"
+          dir="ltr"
         >
-          <div
-            class="c13"
-            dir="ltr"
+          <span
+            class="c6"
           >
-            <span
-              class="c7"
-            >
-              7
-            </span>
-          </div>
-          <div
+            5
+          </span>
+        </div>
+        <div
+          class="c7"
+          dir="ltr"
+        >
+          <a
             class="c8"
-            dir="ltr"
+            href="https://www.bbc.com/news/articles/cn7k01xp8kxo"
           >
-            <a
-              class="c9"
-              href="https://www.bbc.com/news/articles/cn7k01xp8kxo"
-            >
-              Could a computer ever create better art than a human?
-            </a>
-          </div>
-        </li>
+            Could a computer ever create better art than a human?
+          </a>
+        </div>
       </div>
+    </div>
+    <div
+      as="li"
+      class="c3"
+      dir="ltr"
+    >
       <div
-        as="li"
         class="c4"
-        dir="ltr"
       >
-        <li
-          class="c5"
+        <div
+          class="c11"
+          dir="ltr"
         >
-          <div
-            class="c12"
-            dir="ltr"
+          <span
+            class="c6"
           >
-            <span
-              class="c7"
-            >
-              8
-            </span>
-          </div>
-          <div
+            6
+          </span>
+        </div>
+        <div
+          class="c7"
+          dir="ltr"
+        >
+          <a
             class="c8"
-            dir="ltr"
+            href="https://www.bbc.com/news/articles/cn7k01xp8kxo"
           >
-            <a
-              class="c9"
-              href="https://www.bbc.com/news/articles/cn7k01xp8kxo"
-            >
-              Could a computer ever create better art than a human?
-            </a>
-          </div>
-        </li>
+            Could a computer ever create better art than a human?
+          </a>
+        </div>
       </div>
+    </div>
+    <div
+      as="li"
+      class="c3"
+      dir="ltr"
+    >
       <div
-        as="li"
         class="c4"
-        dir="ltr"
       >
-        <li
-          class="c5"
+        <div
+          class="c12"
+          dir="ltr"
         >
-          <div
-            class="c13"
-            dir="ltr"
+          <span
+            class="c6"
           >
-            <span
-              class="c7"
-            >
-              9
-            </span>
-          </div>
-          <div
+            7
+          </span>
+        </div>
+        <div
+          class="c7"
+          dir="ltr"
+        >
+          <a
             class="c8"
-            dir="ltr"
+            href="https://www.bbc.com/news/articles/cn7k01xp8kxo"
           >
-            <a
-              class="c9"
-              href="https://www.bbc.com/news/articles/cn7k01xp8kxo"
-            >
-              Could a computer ever create better art than a human?
-            </a>
-          </div>
-        </li>
+            Could a computer ever create better art than a human?
+          </a>
+        </div>
       </div>
+    </div>
+    <div
+      as="li"
+      class="c3"
+      dir="ltr"
+    >
       <div
-        as="li"
         class="c4"
-        dir="ltr"
       >
-        <li
-          class="c5"
+        <div
+          class="c11"
+          dir="ltr"
         >
-          <div
-            class="c12"
-            dir="ltr"
+          <span
+            class="c6"
           >
-            <span
-              class="c7"
-            >
-              10
-            </span>
-          </div>
-          <div
+            8
+          </span>
+        </div>
+        <div
+          class="c7"
+          dir="ltr"
+        >
+          <a
             class="c8"
-            dir="ltr"
+            href="https://www.bbc.com/news/articles/cn7k01xp8kxo"
           >
-            <a
-              class="c9"
-              href="https://www.bbc.com/news/articles/cn7k01xp8kxo"
-            >
-              Could a computer ever create better art than a human?
-            </a>
-          </div>
-        </li>
+            Could a computer ever create better art than a human?
+          </a>
+        </div>
+      </div>
+    </div>
+    <div
+      as="li"
+      class="c3"
+      dir="ltr"
+    >
+      <div
+        class="c4"
+      >
+        <div
+          class="c12"
+          dir="ltr"
+        >
+          <span
+            class="c6"
+          >
+            9
+          </span>
+        </div>
+        <div
+          class="c7"
+          dir="ltr"
+        >
+          <a
+            class="c8"
+            href="https://www.bbc.com/news/articles/cn7k01xp8kxo"
+          >
+            Could a computer ever create better art than a human?
+          </a>
+        </div>
+      </div>
+    </div>
+    <div
+      as="li"
+      class="c3"
+      dir="ltr"
+    >
+      <div
+        class="c4"
+      >
+        <div
+          class="c11"
+          dir="ltr"
+        >
+          <span
+            class="c6"
+          >
+            10
+          </span>
+        </div>
+        <div
+          class="c7"
+          dir="ltr"
+        >
+          <a
+            class="c8"
+            href="https://www.bbc.com/news/articles/cn7k01xp8kxo"
+          >
+            Could a computer ever create better art than a human?
+          </a>
+        </div>
       </div>
     </div>
   </ol>
@@ -692,7 +685,7 @@ exports[`MostRead should render with ltr most read with correct dir 1`] = `
 `;
 
 exports[`MostRead should render with rtl most read with correct dir 1`] = `
-.c9 {
+.c8 {
   font-size: 1.5rem;
   line-height: 2rem;
   font-family: "BBC Nassim Arabic",Arial,Verdana,Geneva,Helvetica,sans-serif;
@@ -704,13 +697,13 @@ exports[`MostRead should render with rtl most read with correct dir 1`] = `
   text-decoration: none;
 }
 
-.c9:hover,
-.c9:focus {
+.c8:hover,
+.c8:focus {
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
-.c9:before {
+.c8:before {
   bottom: 0;
   content: '';
   left: 0;
@@ -722,14 +715,13 @@ exports[`MostRead should render with rtl most read with correct dir 1`] = `
   z-index: 1;
 }
 
-.c8 {
+.c7 {
   padding-bottom: 1.5rem;
   padding-right: 1rem;
   padding-left: 1rem;
 }
 
-.c5 {
-  position: relative;
+.c4 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -737,11 +729,12 @@ exports[`MostRead should render with rtl most read with correct dir 1`] = `
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
+  position: relative;
   margin: 0;
   padding: 0;
 }
 
-.c7 {
+.c6 {
   font-family: "BBC Nassim Arabic",Arial,Verdana,Geneva,Helvetica,sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -753,13 +746,10 @@ exports[`MostRead should render with rtl most read with correct dir 1`] = `
   padding: 0;
 }
 
-.c1 {
+.c2 {
   list-style-type: none;
   margin: 0;
   padding: 0;
-}
-
-.c3 {
   grid-auto-flow: column;
   grid-template-rows: repeat( 5,[col-start] auto [col-end] );
 }
@@ -774,14 +764,14 @@ exports[`MostRead should render with rtl most read with correct dir 1`] = `
 }
 
 @supports (display:grid) {
-  .c2 {
+  .c1 {
     display: grid;
     position: initial;
   }
 }
 
 @media (max-width:14.9375rem) {
-  .c4 {
+  .c3 {
     width: calc(100%);
     display: inline-block;
     vertical-align: top;
@@ -789,7 +779,7 @@ exports[`MostRead should render with rtl most read with correct dir 1`] = `
 }
 
 @media (min-width:15rem) and (max-width:24.9375rem) {
-  .c4 {
+  .c3 {
     width: calc(100%);
     display: inline-block;
     vertical-align: top;
@@ -797,7 +787,7 @@ exports[`MostRead should render with rtl most read with correct dir 1`] = `
 }
 
 @media (min-width:25rem) and (max-width:37.4375rem) {
-  .c4 {
+  .c3 {
     width: calc(50%);
     display: inline-block;
     vertical-align: top;
@@ -805,7 +795,7 @@ exports[`MostRead should render with rtl most read with correct dir 1`] = `
 }
 
 @media (min-width:37.5rem) and (max-width:62.9375rem) {
-  .c4 {
+  .c3 {
     width: calc(50%);
     display: inline-block;
     vertical-align: top;
@@ -813,7 +803,7 @@ exports[`MostRead should render with rtl most read with correct dir 1`] = `
 }
 
 @media (min-width:63rem) and (max-width:80rem) {
-  .c4 {
+  .c3 {
     width: calc(50%);
     display: inline-block;
     vertical-align: top;
@@ -821,7 +811,7 @@ exports[`MostRead should render with rtl most read with correct dir 1`] = `
 }
 
 @media (min-width:80rem) {
-  .c4 {
+  .c3 {
     width: calc(20%);
     display: inline-block;
     vertical-align: top;
@@ -829,203 +819,203 @@ exports[`MostRead should render with rtl most read with correct dir 1`] = `
 }
 
 @supports (display:grid) {
-  .c4 {
+  .c3 {
     display: block;
   }
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
-  .c9 {
+  .c8 {
     font-size: 1.625rem;
     line-height: 2.25rem;
   }
 }
 
 @media (min-width:37.5rem) {
-  .c9 {
+  .c8 {
     font-size: 1.75rem;
     line-height: 2.25rem;
   }
 }
 
 @supports (grid-template-columns:fit-content(200px)) {
-  .c8 {
+  .c7 {
     padding-left: 0;
   }
 }
 
 @media (max-width:14.9375rem) {
-  .c6 {
+  .c5 {
     min-width: 2.5rem;
   }
 }
 
 @media (min-width:15rem) and (max-width:24.9375rem) {
-  .c6 {
+  .c5 {
     min-width: 2.5rem;
   }
 }
 
 @media (min-width:25rem) and (max-width:37.4375rem) {
-  .c6 {
+  .c5 {
     min-width: auto;
   }
 }
 
 @media (min-width:37.5rem) and (max-width:80rem) {
-  .c6 {
+  .c5 {
     min-width: auto;
   }
 }
 
 @media (min-width:80rem) {
-  .c6 {
+  .c5 {
     min-width: auto;
   }
 }
 
 @media (max-width:14.9375rem) {
-  .c10 {
+  .c9 {
     min-width: 2.5rem;
   }
 }
 
 @media (min-width:15rem) and (max-width:24.9375rem) {
-  .c10 {
+  .c9 {
     min-width: 2.5rem;
   }
 }
 
 @media (min-width:25rem) and (max-width:37.4375rem) {
-  .c10 {
+  .c9 {
     min-width: 2.5rem;
   }
 }
 
 @media (min-width:37.5rem) and (max-width:80rem) {
-  .c10 {
+  .c9 {
     min-width: 4rem;
   }
 }
 
 @media (min-width:80rem) {
-  .c10 {
+  .c9 {
     min-width: auto;
   }
 }
 
 @media (max-width:14.9375rem) {
-  .c12 {
+  .c11 {
     min-width: 2.5rem;
   }
 }
 
 @media (min-width:15rem) and (max-width:24.9375rem) {
-  .c12 {
+  .c11 {
     min-width: 2.5rem;
   }
 }
 
 @media (min-width:25rem) and (max-width:37.4375rem) {
-  .c12 {
+  .c11 {
     min-width: 2.5rem;
   }
 }
 
 @media (min-width:37.5rem) and (max-width:80rem) {
-  .c12 {
+  .c11 {
     min-width: 4rem;
   }
 }
 
 @media (min-width:80rem) {
+  .c11 {
+    min-width: auto;
+  }
+}
+
+@media (max-width:14.9375rem) {
+  .c12 {
+    min-width: 2.5rem;
+  }
+}
+
+@media (min-width:15rem) and (max-width:24.9375rem) {
+  .c12 {
+    min-width: 2.5rem;
+  }
+}
+
+@media (min-width:25rem) and (max-width:37.4375rem) {
+  .c12 {
+    min-width: auto;
+  }
+}
+
+@media (min-width:37.5rem) and (max-width:80rem) {
+  .c12 {
+    min-width: auto;
+  }
+}
+
+@media (min-width:80rem) {
   .c12 {
     min-width: auto;
   }
 }
 
 @media (max-width:14.9375rem) {
-  .c13 {
+  .c10 {
     min-width: 2.5rem;
   }
 }
 
 @media (min-width:15rem) and (max-width:24.9375rem) {
-  .c13 {
+  .c10 {
     min-width: 2.5rem;
   }
 }
 
 @media (min-width:25rem) and (max-width:37.4375rem) {
-  .c13 {
+  .c10 {
     min-width: auto;
   }
 }
 
 @media (min-width:37.5rem) and (max-width:80rem) {
-  .c13 {
+  .c10 {
     min-width: auto;
   }
 }
 
 @media (min-width:80rem) {
-  .c13 {
-    min-width: auto;
-  }
-}
-
-@media (max-width:14.9375rem) {
-  .c11 {
-    min-width: 2.5rem;
-  }
-}
-
-@media (min-width:15rem) and (max-width:24.9375rem) {
-  .c11 {
-    min-width: 2.5rem;
-  }
-}
-
-@media (min-width:25rem) and (max-width:37.4375rem) {
-  .c11 {
-    min-width: auto;
-  }
-}
-
-@media (min-width:37.5rem) and (max-width:80rem) {
-  .c11 {
-    min-width: auto;
-  }
-}
-
-@media (min-width:80rem) {
-  .c11 {
+  .c10 {
     min-width: 3.75rem;
   }
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
-  .c7 {
+  .c6 {
     font-size: 2.5rem;
     line-height: 2.75rem;
   }
 }
 
 @media (min-width:37.5rem) {
-  .c7 {
+  .c6 {
     font-size: 3.5rem;
     line-height: 3.75rem;
   }
 }
 
 @media (max-width:24.9375rem) {
-  .c3 {
+  .c2 {
     grid-template-rows: repeat( 10,[col-start] auto [col-end] );
   }
 }
 
 @media (min-width:80rem) {
-  .c3 {
+  .c2 {
     grid-auto-flow: row;
     grid-template-rows: repeat( 5,[col-start] auto [col-end] );
   }
@@ -1059,322 +1049,318 @@ exports[`MostRead should render with rtl most read with correct dir 1`] = `
     الأكثر قراءة
   </h2>
   <ol
-    class="c1"
+    class="c1 c2"
+    dir="rtl"
     role="list"
   >
     <div
-      class="c2 c3"
+      as="li"
+      class="c3"
       dir="rtl"
     >
       <div
-        as="li"
         class="c4"
-        dir="rtl"
       >
-        <li
+        <div
           class="c5"
+          dir="rtl"
         >
-          <div
+          <span
             class="c6"
-            dir="rtl"
           >
-            <span
-              class="c7"
-            >
-              ۱
-            </span>
-          </div>
-          <div
-            class="c8"
-            dir="rtl"
-          >
-            <a
-              class="c9"
-              href="https://www.bbc.com/arabic/articles/c1er5mjnznzo"
-            >
-              لماذا يخجل البعض من اسم قريته في مصر؟
-            </a>
-          </div>
-        </li>
-      </div>
-      <div
-        as="li"
-        class="c4"
-        dir="rtl"
-      >
-        <li
-          class="c5"
+            ۱
+          </span>
+        </div>
+        <div
+          class="c7"
+          dir="rtl"
         >
-          <div
-            class="c10"
-            dir="rtl"
-          >
-            <span
-              class="c7"
-            >
-              ۲
-            </span>
-          </div>
-          <div
+          <a
             class="c8"
-            dir="rtl"
+            href="https://www.bbc.com/arabic/articles/c1er5mjnznzo"
           >
-            <a
-              class="c9"
-              href="https://www.bbc.com/arabic/articles/c1er5mjnznzo"
-            >
-              لماذا يخجل البعض من اسم قريته في مصر؟
-            </a>
-          </div>
-        </li>
+            لماذا يخجل البعض من اسم قريته في مصر؟
+          </a>
+        </div>
       </div>
+    </div>
+    <div
+      as="li"
+      class="c3"
+      dir="rtl"
+    >
       <div
-        as="li"
         class="c4"
-        dir="rtl"
       >
-        <li
-          class="c5"
+        <div
+          class="c9"
+          dir="rtl"
         >
-          <div
+          <span
             class="c6"
-            dir="rtl"
           >
-            <span
-              class="c7"
-            >
-              ۳
-            </span>
-          </div>
-          <div
-            class="c8"
-            dir="rtl"
-          >
-            <a
-              class="c9"
-              href="https://www.bbc.com/arabic/articles/c1er5mjnznzo"
-            >
-              لماذا يخجل البعض من اسم قريته في مصر؟
-            </a>
-          </div>
-        </li>
-      </div>
-      <div
-        as="li"
-        class="c4"
-        dir="rtl"
-      >
-        <li
-          class="c5"
+            ۲
+          </span>
+        </div>
+        <div
+          class="c7"
+          dir="rtl"
         >
-          <div
-            class="c10"
-            dir="rtl"
-          >
-            <span
-              class="c7"
-            >
-              ۴
-            </span>
-          </div>
-          <div
+          <a
             class="c8"
-            dir="rtl"
+            href="https://www.bbc.com/arabic/articles/c1er5mjnznzo"
           >
-            <a
-              class="c9"
-              href="https://www.bbc.com/arabic/articles/c1er5mjnznzo"
-            >
-              لماذا يخجل البعض من اسم قريته في مصر؟
-            </a>
-          </div>
-        </li>
+            لماذا يخجل البعض من اسم قريته في مصر؟
+          </a>
+        </div>
       </div>
+    </div>
+    <div
+      as="li"
+      class="c3"
+      dir="rtl"
+    >
       <div
-        as="li"
         class="c4"
-        dir="rtl"
       >
-        <li
+        <div
           class="c5"
+          dir="rtl"
         >
-          <div
-            class="c11"
-            dir="rtl"
+          <span
+            class="c6"
           >
-            <span
-              class="c7"
-            >
-              ۵
-            </span>
-          </div>
-          <div
+            ۳
+          </span>
+        </div>
+        <div
+          class="c7"
+          dir="rtl"
+        >
+          <a
             class="c8"
-            dir="rtl"
+            href="https://www.bbc.com/arabic/articles/c1er5mjnznzo"
           >
-            <a
-              class="c9"
-              href="https://www.bbc.com/arabic/articles/c1er5mjnznzo"
-            >
-              لماذا يخجل البعض من اسم قريته في مصر؟
-            </a>
-          </div>
-        </li>
+            لماذا يخجل البعض من اسم قريته في مصر؟
+          </a>
+        </div>
       </div>
+    </div>
+    <div
+      as="li"
+      class="c3"
+      dir="rtl"
+    >
       <div
-        as="li"
         class="c4"
-        dir="rtl"
       >
-        <li
-          class="c5"
+        <div
+          class="c9"
+          dir="rtl"
         >
-          <div
-            class="c12"
-            dir="rtl"
+          <span
+            class="c6"
           >
-            <span
-              class="c7"
-            >
-              ۶
-            </span>
-          </div>
-          <div
+            ۴
+          </span>
+        </div>
+        <div
+          class="c7"
+          dir="rtl"
+        >
+          <a
             class="c8"
-            dir="rtl"
+            href="https://www.bbc.com/arabic/articles/c1er5mjnznzo"
           >
-            <a
-              class="c9"
-              href="https://www.bbc.com/arabic/articles/c1er5mjnznzo"
-            >
-              لماذا يخجل البعض من اسم قريته في مصر؟
-            </a>
-          </div>
-        </li>
+            لماذا يخجل البعض من اسم قريته في مصر؟
+          </a>
+        </div>
       </div>
+    </div>
+    <div
+      as="li"
+      class="c3"
+      dir="rtl"
+    >
       <div
-        as="li"
         class="c4"
-        dir="rtl"
       >
-        <li
-          class="c5"
+        <div
+          class="c10"
+          dir="rtl"
         >
-          <div
-            class="c13"
-            dir="rtl"
+          <span
+            class="c6"
           >
-            <span
-              class="c7"
-            >
-              ۷
-            </span>
-          </div>
-          <div
+            ۵
+          </span>
+        </div>
+        <div
+          class="c7"
+          dir="rtl"
+        >
+          <a
             class="c8"
-            dir="rtl"
+            href="https://www.bbc.com/arabic/articles/c1er5mjnznzo"
           >
-            <a
-              class="c9"
-              href="https://www.bbc.com/arabic/articles/c1er5mjnznzo"
-            >
-              لماذا يخجل البعض من اسم قريته في مصر؟
-            </a>
-          </div>
-        </li>
+            لماذا يخجل البعض من اسم قريته في مصر؟
+          </a>
+        </div>
       </div>
+    </div>
+    <div
+      as="li"
+      class="c3"
+      dir="rtl"
+    >
       <div
-        as="li"
         class="c4"
-        dir="rtl"
       >
-        <li
-          class="c5"
+        <div
+          class="c11"
+          dir="rtl"
         >
-          <div
-            class="c12"
-            dir="rtl"
+          <span
+            class="c6"
           >
-            <span
-              class="c7"
-            >
-              ۸
-            </span>
-          </div>
-          <div
+            ۶
+          </span>
+        </div>
+        <div
+          class="c7"
+          dir="rtl"
+        >
+          <a
             class="c8"
-            dir="rtl"
+            href="https://www.bbc.com/arabic/articles/c1er5mjnznzo"
           >
-            <a
-              class="c9"
-              href="https://www.bbc.com/arabic/articles/c1er5mjnznzo"
-            >
-              لماذا يخجل البعض من اسم قريته في مصر؟
-            </a>
-          </div>
-        </li>
+            لماذا يخجل البعض من اسم قريته في مصر؟
+          </a>
+        </div>
       </div>
+    </div>
+    <div
+      as="li"
+      class="c3"
+      dir="rtl"
+    >
       <div
-        as="li"
         class="c4"
-        dir="rtl"
       >
-        <li
-          class="c5"
+        <div
+          class="c12"
+          dir="rtl"
         >
-          <div
-            class="c13"
-            dir="rtl"
+          <span
+            class="c6"
           >
-            <span
-              class="c7"
-            >
-              ۹
-            </span>
-          </div>
-          <div
+            ۷
+          </span>
+        </div>
+        <div
+          class="c7"
+          dir="rtl"
+        >
+          <a
             class="c8"
-            dir="rtl"
+            href="https://www.bbc.com/arabic/articles/c1er5mjnznzo"
           >
-            <a
-              class="c9"
-              href="https://www.bbc.com/arabic/articles/c1er5mjnznzo"
-            >
-              لماذا يخجل البعض من اسم قريته في مصر؟
-            </a>
-          </div>
-        </li>
+            لماذا يخجل البعض من اسم قريته في مصر؟
+          </a>
+        </div>
       </div>
+    </div>
+    <div
+      as="li"
+      class="c3"
+      dir="rtl"
+    >
       <div
-        as="li"
         class="c4"
-        dir="rtl"
       >
-        <li
-          class="c5"
+        <div
+          class="c11"
+          dir="rtl"
         >
-          <div
-            class="c12"
-            dir="rtl"
+          <span
+            class="c6"
           >
-            <span
-              class="c7"
-            >
-              ۱۰
-            </span>
-          </div>
-          <div
+            ۸
+          </span>
+        </div>
+        <div
+          class="c7"
+          dir="rtl"
+        >
+          <a
             class="c8"
-            dir="rtl"
+            href="https://www.bbc.com/arabic/articles/c1er5mjnznzo"
           >
-            <a
-              class="c9"
-              href="https://www.bbc.com/arabic/articles/c1er5mjnznzo"
-            >
-              لماذا يخجل البعض من اسم قريته في مصر؟
-            </a>
-          </div>
-        </li>
+            لماذا يخجل البعض من اسم قريته في مصر؟
+          </a>
+        </div>
+      </div>
+    </div>
+    <div
+      as="li"
+      class="c3"
+      dir="rtl"
+    >
+      <div
+        class="c4"
+      >
+        <div
+          class="c12"
+          dir="rtl"
+        >
+          <span
+            class="c6"
+          >
+            ۹
+          </span>
+        </div>
+        <div
+          class="c7"
+          dir="rtl"
+        >
+          <a
+            class="c8"
+            href="https://www.bbc.com/arabic/articles/c1er5mjnznzo"
+          >
+            لماذا يخجل البعض من اسم قريته في مصر؟
+          </a>
+        </div>
+      </div>
+    </div>
+    <div
+      as="li"
+      class="c3"
+      dir="rtl"
+    >
+      <div
+        class="c4"
+      >
+        <div
+          class="c11"
+          dir="rtl"
+        >
+          <span
+            class="c6"
+          >
+            ۱۰
+          </span>
+        </div>
+        <div
+          class="c7"
+          dir="rtl"
+        >
+          <a
+            class="c8"
+            href="https://www.bbc.com/arabic/articles/c1er5mjnznzo"
+          >
+            لماذا يخجل البعض من اسم قريته في مصر؟
+          </a>
+        </div>
       </div>
     </div>
   </ol>

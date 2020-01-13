@@ -1,18 +1,15 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`MostReadList should render with ltr bengali items with correct dir 1`] = `
-.c0 {
+.c1 {
   list-style-type: none;
   margin: 0;
   padding: 0;
-}
-
-.c2 {
   grid-auto-flow: column;
   grid-template-rows: repeat( 5,[col-start] auto [col-end] );
 }
 
-.c8 {
+.c7 {
   font-size: 1.625rem;
   line-height: 1.875rem;
   font-family: "Shonar Bangla",Helmet,Freesans,Helvetica,Arial,sans-serif;
@@ -24,13 +21,13 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
   text-decoration: none;
 }
 
-.c8:hover,
-.c8:focus {
+.c7:hover,
+.c7:focus {
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
-.c8:before {
+.c7:before {
   bottom: 0;
   content: '';
   left: 0;
@@ -42,14 +39,13 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
   z-index: 1;
 }
 
-.c7 {
+.c6 {
   padding-bottom: 1.5rem;
   padding-left: 1rem;
   padding-right: 1rem;
 }
 
-.c4 {
-  position: relative;
+.c3 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -57,11 +53,12 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
+  position: relative;
   margin: 0;
   padding: 0;
 }
 
-.c6 {
+.c5 {
   font-family: "Shonar Bangla",Helmet,Freesans,Helvetica,Arial,sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -74,14 +71,14 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
 }
 
 @supports (display:grid) {
-  .c1 {
+  .c0 {
     display: grid;
     position: initial;
   }
 }
 
 @media (max-width:14.9375rem) {
-  .c3 {
+  .c2 {
     width: calc(100%);
     display: inline-block;
     vertical-align: top;
@@ -89,7 +86,7 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
 }
 
 @media (min-width:15rem) and (max-width:24.9375rem) {
-  .c3 {
+  .c2 {
     width: calc(100%);
     display: inline-block;
     vertical-align: top;
@@ -97,7 +94,7 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
 }
 
 @media (min-width:25rem) and (max-width:37.4375rem) {
-  .c3 {
+  .c2 {
     width: calc(50%);
     display: inline-block;
     vertical-align: top;
@@ -105,7 +102,7 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
 }
 
 @media (min-width:37.5rem) and (max-width:62.9375rem) {
-  .c3 {
+  .c2 {
     width: calc(50%);
     display: inline-block;
     vertical-align: top;
@@ -113,7 +110,7 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
 }
 
 @media (min-width:63rem) and (max-width:80rem) {
-  .c3 {
+  .c2 {
     width: calc(50%);
     display: inline-block;
     vertical-align: top;
@@ -121,7 +118,7 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
 }
 
 @media (min-width:80rem) {
-  .c3 {
+  .c2 {
     width: calc(20%);
     display: inline-block;
     vertical-align: top;
@@ -129,543 +126,536 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
 }
 
 @supports (display:grid) {
-  .c3 {
+  .c2 {
     display: block;
   }
 }
 
 @media (max-width:24.9375rem) {
-  .c2 {
+  .c1 {
     grid-template-rows: repeat( 10,[col-start] auto [col-end] );
   }
 }
 
 @media (min-width:80rem) {
-  .c2 {
+  .c1 {
     grid-auto-flow: row;
     grid-template-rows: repeat( 5,[col-start] auto [col-end] );
   }
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
-  .c8 {
+  .c7 {
     font-size: 1.625rem;
     line-height: 1.875rem;
   }
 }
 
 @media (min-width:37.5rem) {
-  .c8 {
+  .c7 {
     font-size: 1.75rem;
     line-height: 2rem;
   }
 }
 
 @supports (grid-template-columns:fit-content(200px)) {
-  .c7 {
+  .c6 {
     padding-right: 0;
   }
 }
 
 @media (max-width:14.9375rem) {
-  .c5 {
+  .c4 {
     min-width: 2.5rem;
   }
 }
 
 @media (min-width:15rem) and (max-width:24.9375rem) {
-  .c5 {
+  .c4 {
     min-width: 2rem;
   }
 }
 
 @media (min-width:25rem) and (max-width:37.4375rem) {
-  .c5 {
+  .c4 {
     min-width: auto;
   }
 }
 
 @media (min-width:37.5rem) and (max-width:80rem) {
-  .c5 {
+  .c4 {
     min-width: auto;
   }
 }
 
 @media (min-width:80rem) {
-  .c5 {
+  .c4 {
     min-width: auto;
   }
 }
 
 @media (max-width:14.9375rem) {
-  .c9 {
+  .c8 {
     min-width: 2.5rem;
   }
 }
 
 @media (min-width:15rem) and (max-width:24.9375rem) {
-  .c9 {
+  .c8 {
     min-width: 2rem;
   }
 }
 
 @media (min-width:25rem) and (max-width:37.4375rem) {
-  .c9 {
+  .c8 {
     min-width: 2rem;
   }
 }
 
 @media (min-width:37.5rem) and (max-width:80rem) {
-  .c9 {
+  .c8 {
     min-width: 3rem;
   }
 }
 
 @media (min-width:80rem) {
+  .c8 {
+    min-width: auto;
+  }
+}
+
+@media (max-width:14.9375rem) {
+  .c9 {
+    min-width: 2.5rem;
+  }
+}
+
+@media (min-width:15rem) and (max-width:24.9375rem) {
+  .c9 {
+    min-width: 2rem;
+  }
+}
+
+@media (min-width:25rem) and (max-width:37.4375rem) {
   .c9 {
     min-width: auto;
   }
 }
 
-@media (max-width:14.9375rem) {
-  .c10 {
-    min-width: 2.5rem;
-  }
-}
-
-@media (min-width:15rem) and (max-width:24.9375rem) {
-  .c10 {
-    min-width: 2rem;
-  }
-}
-
-@media (min-width:25rem) and (max-width:37.4375rem) {
-  .c10 {
-    min-width: auto;
-  }
-}
-
 @media (min-width:37.5rem) and (max-width:80rem) {
-  .c10 {
+  .c9 {
     min-width: auto;
   }
 }
 
 @media (min-width:80rem) {
-  .c10 {
+  .c9 {
     min-width: 3rem;
   }
 }
 
 @media (max-width:14.9375rem) {
-  .c11 {
+  .c10 {
     min-width: 2.5rem;
   }
 }
 
 @media (min-width:15rem) and (max-width:24.9375rem) {
-  .c11 {
+  .c10 {
     min-width: 2rem;
   }
 }
 
 @media (min-width:25rem) and (max-width:37.4375rem) {
-  .c11 {
+  .c10 {
     min-width: 2rem;
   }
 }
 
 @media (min-width:37.5rem) and (max-width:80rem) {
-  .c11 {
+  .c10 {
     min-width: 3rem;
   }
 }
 
 @media (min-width:80rem) {
-  .c11 {
+  .c10 {
     min-width: auto;
   }
 }
 
 @media (max-width:14.9375rem) {
-  .c12 {
+  .c11 {
     min-width: 2.5rem;
   }
 }
 
 @media (min-width:15rem) and (max-width:24.9375rem) {
-  .c12 {
+  .c11 {
     min-width: 2rem;
   }
 }
 
 @media (min-width:25rem) and (max-width:37.4375rem) {
-  .c12 {
+  .c11 {
     min-width: auto;
   }
 }
 
 @media (min-width:37.5rem) and (max-width:80rem) {
-  .c12 {
+  .c11 {
     min-width: auto;
   }
 }
 
 @media (min-width:80rem) {
-  .c12 {
+  .c11 {
     min-width: auto;
   }
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
-  .c6 {
+  .c5 {
     font-size: 2.5rem;
     line-height: 2.75rem;
   }
 }
 
 @media (min-width:37.5rem) {
-  .c6 {
+  .c5 {
     font-size: 3.5rem;
     line-height: 3.75rem;
   }
 }
 
 <ol
-  class="c0"
+  class="c0 c1"
+  dir="ltr"
   role="list"
 >
   <div
-    class="c1 c2"
+    as="li"
+    class="c2"
     dir="ltr"
   >
     <div
-      as="li"
       class="c3"
-      dir="ltr"
     >
-      <li
+      <div
         class="c4"
+        dir="ltr"
       >
-        <div
+        <span
           class="c5"
-          dir="ltr"
         >
-          <span
-            class="c6"
-          >
-            ১
-          </span>
-        </div>
-        <div
-          class="c7"
-          dir="ltr"
-        >
-          <a
-            class="c8"
-            href="https://www.bbc.com/bengali/articles/c6p3yp5zzmeo"
-          >
-            ভিসা ফুরিয়ে যাওয়ায় ক্রিকেটার সাইফের জরিমানা
-          </a>
-        </div>
-      </li>
-    </div>
-    <div
-      as="li"
-      class="c3"
-      dir="ltr"
-    >
-      <li
-        class="c4"
+          ১
+        </span>
+      </div>
+      <div
+        class="c6"
+        dir="ltr"
       >
-        <div
-          class="c9"
-          dir="ltr"
-        >
-          <span
-            class="c6"
-          >
-            ২
-          </span>
-        </div>
-        <div
+        <a
           class="c7"
-          dir="ltr"
+          href="https://www.bbc.com/bengali/articles/c6p3yp5zzmeo"
         >
-          <a
-            class="c8"
-            href="https://www.bbc.com/bengali/articles/c6p3yp5zzmeo"
-          >
-            ভিসা ফুরিয়ে যাওয়ায় ক্রিকেটার সাইফের জরিমানা
-          </a>
-        </div>
-      </li>
+          ভিসা ফুরিয়ে যাওয়ায় ক্রিকেটার সাইফের জরিমানা
+        </a>
+      </div>
     </div>
+  </div>
+  <div
+    as="li"
+    class="c2"
+    dir="ltr"
+  >
     <div
-      as="li"
       class="c3"
-      dir="ltr"
     >
-      <li
-        class="c4"
+      <div
+        class="c8"
+        dir="ltr"
       >
-        <div
+        <span
           class="c5"
-          dir="ltr"
         >
-          <span
-            class="c6"
-          >
-            ৩
-          </span>
-        </div>
-        <div
-          class="c7"
-          dir="ltr"
-        >
-          <a
-            class="c8"
-            href="https://www.bbc.com/bengali/articles/c6p3yp5zzmeo"
-          >
-            ভিসা ফুরিয়ে যাওয়ায় ক্রিকেটার সাইফের জরিমানা
-          </a>
-        </div>
-      </li>
-    </div>
-    <div
-      as="li"
-      class="c3"
-      dir="ltr"
-    >
-      <li
-        class="c4"
+          ২
+        </span>
+      </div>
+      <div
+        class="c6"
+        dir="ltr"
       >
-        <div
-          class="c9"
-          dir="ltr"
-        >
-          <span
-            class="c6"
-          >
-            ৪
-          </span>
-        </div>
-        <div
+        <a
           class="c7"
-          dir="ltr"
+          href="https://www.bbc.com/bengali/articles/c6p3yp5zzmeo"
         >
-          <a
-            class="c8"
-            href="https://www.bbc.com/bengali/articles/c6p3yp5zzmeo"
-          >
-            ভিসা ফুরিয়ে যাওয়ায় ক্রিকেটার সাইফের জরিমানা
-          </a>
-        </div>
-      </li>
+          ভিসা ফুরিয়ে যাওয়ায় ক্রিকেটার সাইফের জরিমানা
+        </a>
+      </div>
     </div>
+  </div>
+  <div
+    as="li"
+    class="c2"
+    dir="ltr"
+  >
     <div
-      as="li"
       class="c3"
-      dir="ltr"
     >
-      <li
+      <div
         class="c4"
+        dir="ltr"
       >
-        <div
-          class="c10"
-          dir="ltr"
+        <span
+          class="c5"
         >
-          <span
-            class="c6"
-          >
-            ৫
-          </span>
-        </div>
-        <div
+          ৩
+        </span>
+      </div>
+      <div
+        class="c6"
+        dir="ltr"
+      >
+        <a
           class="c7"
-          dir="ltr"
+          href="https://www.bbc.com/bengali/articles/c6p3yp5zzmeo"
         >
-          <a
-            class="c8"
-            href="https://www.bbc.com/bengali/articles/c6p3yp5zzmeo"
-          >
-            ভিসা ফুরিয়ে যাওয়ায় ক্রিকেটার সাইফের জরিমানা
-          </a>
-        </div>
-      </li>
+          ভিসা ফুরিয়ে যাওয়ায় ক্রিকেটার সাইফের জরিমানা
+        </a>
+      </div>
     </div>
+  </div>
+  <div
+    as="li"
+    class="c2"
+    dir="ltr"
+  >
     <div
-      as="li"
       class="c3"
-      dir="ltr"
     >
-      <li
-        class="c4"
+      <div
+        class="c8"
+        dir="ltr"
       >
-        <div
-          class="c11"
-          dir="ltr"
+        <span
+          class="c5"
         >
-          <span
-            class="c6"
-          >
-            ৬
-          </span>
-        </div>
-        <div
+          ৪
+        </span>
+      </div>
+      <div
+        class="c6"
+        dir="ltr"
+      >
+        <a
           class="c7"
-          dir="ltr"
+          href="https://www.bbc.com/bengali/articles/c6p3yp5zzmeo"
         >
-          <a
-            class="c8"
-            href="https://www.bbc.com/bengali/articles/c6p3yp5zzmeo"
-          >
-            ভিসা ফুরিয়ে যাওয়ায় ক্রিকেটার সাইফের জরিমানা
-          </a>
-        </div>
-      </li>
+          ভিসা ফুরিয়ে যাওয়ায় ক্রিকেটার সাইফের জরিমানা
+        </a>
+      </div>
     </div>
+  </div>
+  <div
+    as="li"
+    class="c2"
+    dir="ltr"
+  >
     <div
-      as="li"
       class="c3"
-      dir="ltr"
     >
-      <li
-        class="c4"
+      <div
+        class="c9"
+        dir="ltr"
       >
-        <div
-          class="c12"
-          dir="ltr"
+        <span
+          class="c5"
         >
-          <span
-            class="c6"
-          >
-            ৭
-          </span>
-        </div>
-        <div
+          ৫
+        </span>
+      </div>
+      <div
+        class="c6"
+        dir="ltr"
+      >
+        <a
           class="c7"
-          dir="ltr"
+          href="https://www.bbc.com/bengali/articles/c6p3yp5zzmeo"
         >
-          <a
-            class="c8"
-            href="https://www.bbc.com/bengali/articles/c6p3yp5zzmeo"
-          >
-            ভিসা ফুরিয়ে যাওয়ায় ক্রিকেটার সাইফের জরিমানা
-          </a>
-        </div>
-      </li>
+          ভিসা ফুরিয়ে যাওয়ায় ক্রিকেটার সাইফের জরিমানা
+        </a>
+      </div>
     </div>
+  </div>
+  <div
+    as="li"
+    class="c2"
+    dir="ltr"
+  >
     <div
-      as="li"
       class="c3"
-      dir="ltr"
     >
-      <li
-        class="c4"
+      <div
+        class="c10"
+        dir="ltr"
       >
-        <div
-          class="c11"
-          dir="ltr"
+        <span
+          class="c5"
         >
-          <span
-            class="c6"
-          >
-            ৮
-          </span>
-        </div>
-        <div
+          ৬
+        </span>
+      </div>
+      <div
+        class="c6"
+        dir="ltr"
+      >
+        <a
           class="c7"
-          dir="ltr"
+          href="https://www.bbc.com/bengali/articles/c6p3yp5zzmeo"
         >
-          <a
-            class="c8"
-            href="https://www.bbc.com/bengali/articles/c6p3yp5zzmeo"
-          >
-            ভিসা ফুরিয়ে যাওয়ায় ক্রিকেটার সাইফের জরিমানা
-          </a>
-        </div>
-      </li>
+          ভিসা ফুরিয়ে যাওয়ায় ক্রিকেটার সাইফের জরিমানা
+        </a>
+      </div>
     </div>
+  </div>
+  <div
+    as="li"
+    class="c2"
+    dir="ltr"
+  >
     <div
-      as="li"
       class="c3"
-      dir="ltr"
     >
-      <li
-        class="c4"
+      <div
+        class="c11"
+        dir="ltr"
       >
-        <div
-          class="c12"
-          dir="ltr"
+        <span
+          class="c5"
         >
-          <span
-            class="c6"
-          >
-            ৯
-          </span>
-        </div>
-        <div
+          ৭
+        </span>
+      </div>
+      <div
+        class="c6"
+        dir="ltr"
+      >
+        <a
           class="c7"
-          dir="ltr"
+          href="https://www.bbc.com/bengali/articles/c6p3yp5zzmeo"
         >
-          <a
-            class="c8"
-            href="https://www.bbc.com/bengali/articles/c6p3yp5zzmeo"
-          >
-            ভিসা ফুরিয়ে যাওয়ায় ক্রিকেটার সাইফের জরিমানা
-          </a>
-        </div>
-      </li>
+          ভিসা ফুরিয়ে যাওয়ায় ক্রিকেটার সাইফের জরিমানা
+        </a>
+      </div>
     </div>
+  </div>
+  <div
+    as="li"
+    class="c2"
+    dir="ltr"
+  >
     <div
-      as="li"
       class="c3"
-      dir="ltr"
     >
-      <li
-        class="c4"
+      <div
+        class="c10"
+        dir="ltr"
       >
-        <div
-          class="c11"
-          dir="ltr"
+        <span
+          class="c5"
         >
-          <span
-            class="c6"
-          >
-            ১০
-          </span>
-        </div>
-        <div
+          ৮
+        </span>
+      </div>
+      <div
+        class="c6"
+        dir="ltr"
+      >
+        <a
           class="c7"
-          dir="ltr"
+          href="https://www.bbc.com/bengali/articles/c6p3yp5zzmeo"
         >
-          <a
-            class="c8"
-            href="https://www.bbc.com/bengali/articles/c6p3yp5zzmeo"
-          >
-            ভিসা ফুরিয়ে যাওয়ায় ক্রিকেটার সাইফের জরিমানা
-          </a>
-        </div>
-      </li>
+          ভিসা ফুরিয়ে যাওয়ায় ক্রিকেটার সাইফের জরিমানা
+        </a>
+      </div>
+    </div>
+  </div>
+  <div
+    as="li"
+    class="c2"
+    dir="ltr"
+  >
+    <div
+      class="c3"
+    >
+      <div
+        class="c11"
+        dir="ltr"
+      >
+        <span
+          class="c5"
+        >
+          ৯
+        </span>
+      </div>
+      <div
+        class="c6"
+        dir="ltr"
+      >
+        <a
+          class="c7"
+          href="https://www.bbc.com/bengali/articles/c6p3yp5zzmeo"
+        >
+          ভিসা ফুরিয়ে যাওয়ায় ক্রিকেটার সাইফের জরিমানা
+        </a>
+      </div>
+    </div>
+  </div>
+  <div
+    as="li"
+    class="c2"
+    dir="ltr"
+  >
+    <div
+      class="c3"
+    >
+      <div
+        class="c10"
+        dir="ltr"
+      >
+        <span
+          class="c5"
+        >
+          ১০
+        </span>
+      </div>
+      <div
+        class="c6"
+        dir="ltr"
+      >
+        <a
+          class="c7"
+          href="https://www.bbc.com/bengali/articles/c6p3yp5zzmeo"
+        >
+          ভিসা ফুরিয়ে যাওয়ায় ক্রিকেটার সাইফের জরিমানা
+        </a>
+      </div>
     </div>
   </div>
 </ol>
 `;
 
 exports[`MostReadList should render with ltr burmese items with correct dir 1`] = `
-.c0 {
+.c1 {
   list-style-type: none;
   margin: 0;
   padding: 0;
-}
-
-.c2 {
   grid-auto-flow: column;
   grid-template-rows: repeat( 5,[col-start] auto [col-end] );
 }
 
-.c8 {
+.c7 {
   font-size: 1.25rem;
   line-height: 1.875rem;
   font-family: Padauk,Arial,Verdana,Geneva,Helvetica,sans-serif;
@@ -677,13 +667,13 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
   text-decoration: none;
 }
 
-.c8:hover,
-.c8:focus {
+.c7:hover,
+.c7:focus {
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
-.c8:before {
+.c7:before {
   bottom: 0;
   content: '';
   left: 0;
@@ -695,14 +685,13 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
   z-index: 1;
 }
 
-.c7 {
+.c6 {
   padding-bottom: 1.5rem;
   padding-left: 1rem;
   padding-right: 1rem;
 }
 
-.c4 {
-  position: relative;
+.c3 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -710,11 +699,12 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
+  position: relative;
   margin: 0;
   padding: 0;
 }
 
-.c6 {
+.c5 {
   font-family: Padauk,Arial,Verdana,Geneva,Helvetica,sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -727,14 +717,14 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
 }
 
 @supports (display:grid) {
-  .c1 {
+  .c0 {
     display: grid;
     position: initial;
   }
 }
 
 @media (max-width:14.9375rem) {
-  .c3 {
+  .c2 {
     width: calc(100%);
     display: inline-block;
     vertical-align: top;
@@ -742,7 +732,7 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
 }
 
 @media (min-width:15rem) and (max-width:24.9375rem) {
-  .c3 {
+  .c2 {
     width: calc(100%);
     display: inline-block;
     vertical-align: top;
@@ -750,7 +740,7 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
 }
 
 @media (min-width:25rem) and (max-width:37.4375rem) {
-  .c3 {
+  .c2 {
     width: calc(50%);
     display: inline-block;
     vertical-align: top;
@@ -758,7 +748,7 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
 }
 
 @media (min-width:37.5rem) and (max-width:62.9375rem) {
-  .c3 {
+  .c2 {
     width: calc(50%);
     display: inline-block;
     vertical-align: top;
@@ -766,7 +756,7 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
 }
 
 @media (min-width:63rem) and (max-width:80rem) {
-  .c3 {
+  .c2 {
     width: calc(50%);
     display: inline-block;
     vertical-align: top;
@@ -774,7 +764,7 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
 }
 
 @media (min-width:80rem) {
-  .c3 {
+  .c2 {
     width: calc(20%);
     display: inline-block;
     vertical-align: top;
@@ -782,543 +772,536 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
 }
 
 @supports (display:grid) {
-  .c3 {
+  .c2 {
     display: block;
   }
 }
 
 @media (max-width:24.9375rem) {
-  .c2 {
+  .c1 {
     grid-template-rows: repeat( 10,[col-start] auto [col-end] );
   }
 }
 
 @media (min-width:80rem) {
-  .c2 {
+  .c1 {
     grid-auto-flow: row;
     grid-template-rows: repeat( 5,[col-start] auto [col-end] );
   }
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
-  .c8 {
+  .c7 {
     font-size: 1.25rem;
     line-height: 1.875rem;
   }
 }
 
 @media (min-width:37.5rem) {
-  .c8 {
+  .c7 {
     font-size: 1.625rem;
     line-height: 2.75rem;
   }
 }
 
 @supports (grid-template-columns:fit-content(200px)) {
-  .c7 {
+  .c6 {
     padding-right: 0;
   }
 }
 
 @media (max-width:14.9375rem) {
-  .c5 {
+  .c4 {
     min-width: 2.5rem;
   }
 }
 
 @media (min-width:15rem) and (max-width:24.9375rem) {
-  .c5 {
+  .c4 {
     min-width: 2.5rem;
   }
 }
 
 @media (min-width:25rem) and (max-width:37.4375rem) {
-  .c5 {
+  .c4 {
     min-width: auto;
   }
 }
 
 @media (min-width:37.5rem) and (max-width:80rem) {
-  .c5 {
+  .c4 {
     min-width: auto;
   }
 }
 
 @media (min-width:80rem) {
-  .c5 {
+  .c4 {
     min-width: auto;
   }
 }
 
 @media (max-width:14.9375rem) {
-  .c9 {
+  .c8 {
     min-width: 2.5rem;
   }
 }
 
 @media (min-width:15rem) and (max-width:24.9375rem) {
-  .c9 {
+  .c8 {
     min-width: 2.5rem;
   }
 }
 
 @media (min-width:25rem) and (max-width:37.4375rem) {
-  .c9 {
+  .c8 {
     min-width: 2.5rem;
   }
 }
 
 @media (min-width:37.5rem) and (max-width:80rem) {
-  .c9 {
+  .c8 {
     min-width: 4rem;
   }
 }
 
 @media (min-width:80rem) {
-  .c9 {
+  .c8 {
     min-width: auto;
   }
 }
 
 @media (max-width:14.9375rem) {
-  .c10 {
+  .c9 {
     min-width: 2.5rem;
   }
 }
 
 @media (min-width:15rem) and (max-width:24.9375rem) {
-  .c10 {
+  .c9 {
     min-width: 2.5rem;
   }
 }
 
 @media (min-width:25rem) and (max-width:37.4375rem) {
-  .c10 {
+  .c9 {
     min-width: auto;
   }
 }
 
 @media (min-width:37.5rem) and (max-width:80rem) {
-  .c10 {
+  .c9 {
     min-width: auto;
   }
 }
 
 @media (min-width:80rem) {
-  .c10 {
+  .c9 {
     min-width: 4.25rem;
   }
 }
 
 @media (max-width:14.9375rem) {
-  .c11 {
+  .c10 {
     min-width: 2.5rem;
   }
 }
 
 @media (min-width:15rem) and (max-width:24.9375rem) {
-  .c11 {
+  .c10 {
     min-width: 2.5rem;
   }
 }
 
 @media (min-width:25rem) and (max-width:37.4375rem) {
-  .c11 {
+  .c10 {
     min-width: 2.5rem;
   }
 }
 
 @media (min-width:37.5rem) and (max-width:80rem) {
-  .c11 {
+  .c10 {
     min-width: 4rem;
   }
 }
 
 @media (min-width:80rem) {
-  .c11 {
+  .c10 {
     min-width: auto;
   }
 }
 
 @media (max-width:14.9375rem) {
-  .c12 {
+  .c11 {
     min-width: 2.5rem;
   }
 }
 
 @media (min-width:15rem) and (max-width:24.9375rem) {
-  .c12 {
+  .c11 {
     min-width: 2.5rem;
   }
 }
 
 @media (min-width:25rem) and (max-width:37.4375rem) {
-  .c12 {
+  .c11 {
     min-width: auto;
   }
 }
 
 @media (min-width:37.5rem) and (max-width:80rem) {
-  .c12 {
+  .c11 {
     min-width: auto;
   }
 }
 
 @media (min-width:80rem) {
-  .c12 {
+  .c11 {
     min-width: auto;
   }
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
-  .c6 {
+  .c5 {
     font-size: 2.5rem;
     line-height: 4.125rem;
   }
 }
 
 @media (min-width:37.5rem) {
-  .c6 {
+  .c5 {
     font-size: 3.5rem;
     line-height: 5.375rem;
   }
 }
 
 <ol
-  class="c0"
+  class="c0 c1"
+  dir="ltr"
   role="list"
 >
   <div
-    class="c1 c2"
+    as="li"
+    class="c2"
     dir="ltr"
   >
     <div
-      as="li"
       class="c3"
-      dir="ltr"
     >
-      <li
+      <div
         class="c4"
+        dir="ltr"
       >
-        <div
+        <span
           class="c5"
-          dir="ltr"
         >
-          <span
-            class="c6"
-          >
-            ၁
-          </span>
-        </div>
-        <div
-          class="c7"
-          dir="ltr"
-        >
-          <a
-            class="c8"
-            href="https://www.bbc.com/burmese/articles/c3w1kwwmm5yo"
-          >
-            အောက်စဖို့ဒ် ဆရာတော် ပါမောက္ခ ဒေါက်တာအရှင်ဓမ္မသာမိ
-          </a>
-        </div>
-      </li>
-    </div>
-    <div
-      as="li"
-      class="c3"
-      dir="ltr"
-    >
-      <li
-        class="c4"
+          ၁
+        </span>
+      </div>
+      <div
+        class="c6"
+        dir="ltr"
       >
-        <div
-          class="c9"
-          dir="ltr"
-        >
-          <span
-            class="c6"
-          >
-            ၂
-          </span>
-        </div>
-        <div
+        <a
           class="c7"
-          dir="ltr"
+          href="https://www.bbc.com/burmese/articles/c3w1kwwmm5yo"
         >
-          <a
-            class="c8"
-            href="https://www.bbc.com/burmese/articles/c3w1kwwmm5yo"
-          >
-            အောက်စဖို့ဒ် ဆရာတော် ပါမောက္ခ ဒေါက်တာအရှင်ဓမ္မသာမိ
-          </a>
-        </div>
-      </li>
+          အောက်စဖို့ဒ် ဆရာတော် ပါမောက္ခ ဒေါက်တာအရှင်ဓမ္မသာမိ
+        </a>
+      </div>
     </div>
+  </div>
+  <div
+    as="li"
+    class="c2"
+    dir="ltr"
+  >
     <div
-      as="li"
       class="c3"
-      dir="ltr"
     >
-      <li
-        class="c4"
+      <div
+        class="c8"
+        dir="ltr"
       >
-        <div
+        <span
           class="c5"
-          dir="ltr"
         >
-          <span
-            class="c6"
-          >
-            ၃
-          </span>
-        </div>
-        <div
-          class="c7"
-          dir="ltr"
-        >
-          <a
-            class="c8"
-            href="https://www.bbc.com/burmese/articles/c3w1kwwmm5yo"
-          >
-            အောက်စဖို့ဒ် ဆရာတော် ပါမောက္ခ ဒေါက်တာအရှင်ဓမ္မသာမိ
-          </a>
-        </div>
-      </li>
-    </div>
-    <div
-      as="li"
-      class="c3"
-      dir="ltr"
-    >
-      <li
-        class="c4"
+          ၂
+        </span>
+      </div>
+      <div
+        class="c6"
+        dir="ltr"
       >
-        <div
-          class="c9"
-          dir="ltr"
-        >
-          <span
-            class="c6"
-          >
-            ၄
-          </span>
-        </div>
-        <div
+        <a
           class="c7"
-          dir="ltr"
+          href="https://www.bbc.com/burmese/articles/c3w1kwwmm5yo"
         >
-          <a
-            class="c8"
-            href="https://www.bbc.com/burmese/articles/c3w1kwwmm5yo"
-          >
-            အောက်စဖို့ဒ် ဆရာတော် ပါမောက္ခ ဒေါက်တာအရှင်ဓမ္မသာမိ
-          </a>
-        </div>
-      </li>
+          အောက်စဖို့ဒ် ဆရာတော် ပါမောက္ခ ဒေါက်တာအရှင်ဓမ္မသာမိ
+        </a>
+      </div>
     </div>
+  </div>
+  <div
+    as="li"
+    class="c2"
+    dir="ltr"
+  >
     <div
-      as="li"
       class="c3"
-      dir="ltr"
     >
-      <li
+      <div
         class="c4"
+        dir="ltr"
       >
-        <div
-          class="c10"
-          dir="ltr"
+        <span
+          class="c5"
         >
-          <span
-            class="c6"
-          >
-            ၅
-          </span>
-        </div>
-        <div
+          ၃
+        </span>
+      </div>
+      <div
+        class="c6"
+        dir="ltr"
+      >
+        <a
           class="c7"
-          dir="ltr"
+          href="https://www.bbc.com/burmese/articles/c3w1kwwmm5yo"
         >
-          <a
-            class="c8"
-            href="https://www.bbc.com/burmese/articles/c3w1kwwmm5yo"
-          >
-            အောက်စဖို့ဒ် ဆရာတော် ပါမောက္ခ ဒေါက်တာအရှင်ဓမ္မသာမိ
-          </a>
-        </div>
-      </li>
+          အောက်စဖို့ဒ် ဆရာတော် ပါမောက္ခ ဒေါက်တာအရှင်ဓမ္မသာမိ
+        </a>
+      </div>
     </div>
+  </div>
+  <div
+    as="li"
+    class="c2"
+    dir="ltr"
+  >
     <div
-      as="li"
       class="c3"
-      dir="ltr"
     >
-      <li
-        class="c4"
+      <div
+        class="c8"
+        dir="ltr"
       >
-        <div
-          class="c11"
-          dir="ltr"
+        <span
+          class="c5"
         >
-          <span
-            class="c6"
-          >
-            ၆
-          </span>
-        </div>
-        <div
+          ၄
+        </span>
+      </div>
+      <div
+        class="c6"
+        dir="ltr"
+      >
+        <a
           class="c7"
-          dir="ltr"
+          href="https://www.bbc.com/burmese/articles/c3w1kwwmm5yo"
         >
-          <a
-            class="c8"
-            href="https://www.bbc.com/burmese/articles/c3w1kwwmm5yo"
-          >
-            အောက်စဖို့ဒ် ဆရာတော် ပါမောက္ခ ဒေါက်တာအရှင်ဓမ္မသာမိ
-          </a>
-        </div>
-      </li>
+          အောက်စဖို့ဒ် ဆရာတော် ပါမောက္ခ ဒေါက်တာအရှင်ဓမ္မသာမိ
+        </a>
+      </div>
     </div>
+  </div>
+  <div
+    as="li"
+    class="c2"
+    dir="ltr"
+  >
     <div
-      as="li"
       class="c3"
-      dir="ltr"
     >
-      <li
-        class="c4"
+      <div
+        class="c9"
+        dir="ltr"
       >
-        <div
-          class="c12"
-          dir="ltr"
+        <span
+          class="c5"
         >
-          <span
-            class="c6"
-          >
-            ၇
-          </span>
-        </div>
-        <div
+          ၅
+        </span>
+      </div>
+      <div
+        class="c6"
+        dir="ltr"
+      >
+        <a
           class="c7"
-          dir="ltr"
+          href="https://www.bbc.com/burmese/articles/c3w1kwwmm5yo"
         >
-          <a
-            class="c8"
-            href="https://www.bbc.com/burmese/articles/c3w1kwwmm5yo"
-          >
-            အောက်စဖို့ဒ် ဆရာတော် ပါမောက္ခ ဒေါက်တာအရှင်ဓမ္မသာမိ
-          </a>
-        </div>
-      </li>
+          အောက်စဖို့ဒ် ဆရာတော် ပါမောက္ခ ဒေါက်တာအရှင်ဓမ္မသာမိ
+        </a>
+      </div>
     </div>
+  </div>
+  <div
+    as="li"
+    class="c2"
+    dir="ltr"
+  >
     <div
-      as="li"
       class="c3"
-      dir="ltr"
     >
-      <li
-        class="c4"
+      <div
+        class="c10"
+        dir="ltr"
       >
-        <div
-          class="c11"
-          dir="ltr"
+        <span
+          class="c5"
         >
-          <span
-            class="c6"
-          >
-            ၈
-          </span>
-        </div>
-        <div
+          ၆
+        </span>
+      </div>
+      <div
+        class="c6"
+        dir="ltr"
+      >
+        <a
           class="c7"
-          dir="ltr"
+          href="https://www.bbc.com/burmese/articles/c3w1kwwmm5yo"
         >
-          <a
-            class="c8"
-            href="https://www.bbc.com/burmese/articles/c3w1kwwmm5yo"
-          >
-            အောက်စဖို့ဒ် ဆရာတော် ပါမောက္ခ ဒေါက်တာအရှင်ဓမ္မသာမိ
-          </a>
-        </div>
-      </li>
+          အောက်စဖို့ဒ် ဆရာတော် ပါမောက္ခ ဒေါက်တာအရှင်ဓမ္မသာမိ
+        </a>
+      </div>
     </div>
+  </div>
+  <div
+    as="li"
+    class="c2"
+    dir="ltr"
+  >
     <div
-      as="li"
       class="c3"
-      dir="ltr"
     >
-      <li
-        class="c4"
+      <div
+        class="c11"
+        dir="ltr"
       >
-        <div
-          class="c12"
-          dir="ltr"
+        <span
+          class="c5"
         >
-          <span
-            class="c6"
-          >
-            ၉
-          </span>
-        </div>
-        <div
+          ၇
+        </span>
+      </div>
+      <div
+        class="c6"
+        dir="ltr"
+      >
+        <a
           class="c7"
-          dir="ltr"
+          href="https://www.bbc.com/burmese/articles/c3w1kwwmm5yo"
         >
-          <a
-            class="c8"
-            href="https://www.bbc.com/burmese/articles/c3w1kwwmm5yo"
-          >
-            အောက်စဖို့ဒ် ဆရာတော် ပါမောက္ခ ဒေါက်တာအရှင်ဓမ္မသာမိ
-          </a>
-        </div>
-      </li>
+          အောက်စဖို့ဒ် ဆရာတော် ပါမောက္ခ ဒေါက်တာအရှင်ဓမ္မသာမိ
+        </a>
+      </div>
     </div>
+  </div>
+  <div
+    as="li"
+    class="c2"
+    dir="ltr"
+  >
     <div
-      as="li"
       class="c3"
-      dir="ltr"
     >
-      <li
-        class="c4"
+      <div
+        class="c10"
+        dir="ltr"
       >
-        <div
-          class="c11"
-          dir="ltr"
+        <span
+          class="c5"
         >
-          <span
-            class="c6"
-          >
-            ၁၀
-          </span>
-        </div>
-        <div
+          ၈
+        </span>
+      </div>
+      <div
+        class="c6"
+        dir="ltr"
+      >
+        <a
           class="c7"
-          dir="ltr"
+          href="https://www.bbc.com/burmese/articles/c3w1kwwmm5yo"
         >
-          <a
-            class="c8"
-            href="https://www.bbc.com/burmese/articles/c3w1kwwmm5yo"
-          >
-            အောက်စဖို့ဒ် ဆရာတော် ပါမောက္ခ ဒေါက်တာအရှင်ဓမ္မသာမိ
-          </a>
-        </div>
-      </li>
+          အောက်စဖို့ဒ် ဆရာတော် ပါမောက္ခ ဒေါက်တာအရှင်ဓမ္မသာမိ
+        </a>
+      </div>
+    </div>
+  </div>
+  <div
+    as="li"
+    class="c2"
+    dir="ltr"
+  >
+    <div
+      class="c3"
+    >
+      <div
+        class="c11"
+        dir="ltr"
+      >
+        <span
+          class="c5"
+        >
+          ၉
+        </span>
+      </div>
+      <div
+        class="c6"
+        dir="ltr"
+      >
+        <a
+          class="c7"
+          href="https://www.bbc.com/burmese/articles/c3w1kwwmm5yo"
+        >
+          အောက်စဖို့ဒ် ဆရာတော် ပါမောက္ခ ဒေါက်တာအရှင်ဓမ္မသာမိ
+        </a>
+      </div>
+    </div>
+  </div>
+  <div
+    as="li"
+    class="c2"
+    dir="ltr"
+  >
+    <div
+      class="c3"
+    >
+      <div
+        class="c10"
+        dir="ltr"
+      >
+        <span
+          class="c5"
+        >
+          ၁၀
+        </span>
+      </div>
+      <div
+        class="c6"
+        dir="ltr"
+      >
+        <a
+          class="c7"
+          href="https://www.bbc.com/burmese/articles/c3w1kwwmm5yo"
+        >
+          အောက်စဖို့ဒ် ဆရာတော် ပါမောက္ခ ဒေါက်တာအရှင်ဓမ္မသာမိ
+        </a>
+      </div>
     </div>
   </div>
 </ol>
 `;
 
 exports[`MostReadList should render with ltr news items with correct dir 1`] = `
-.c0 {
+.c1 {
   list-style-type: none;
   margin: 0;
   padding: 0;
-}
-
-.c2 {
   grid-auto-flow: column;
   grid-template-rows: repeat( 5,[col-start] auto [col-end] );
 }
 
-.c8 {
+.c7 {
   font-size: 1.125rem;
   line-height: 1.375rem;
   font-family: ReithSerif,Helvetica,Arial,sans-serif;
@@ -1330,13 +1313,13 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
   text-decoration: none;
 }
 
-.c8:hover,
-.c8:focus {
+.c7:hover,
+.c7:focus {
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
-.c8:before {
+.c7:before {
   bottom: 0;
   content: '';
   left: 0;
@@ -1348,14 +1331,13 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
   z-index: 1;
 }
 
-.c7 {
+.c6 {
   padding-bottom: 1.5rem;
   padding-left: 1rem;
   padding-right: 1rem;
 }
 
-.c4 {
-  position: relative;
+.c3 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1363,11 +1345,12 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
+  position: relative;
   margin: 0;
   padding: 0;
 }
 
-.c6 {
+.c5 {
   font-family: ReithSerif,Helvetica,Arial,sans-serif;
   font-weight: 300;
   font-style: normal;
@@ -1380,14 +1363,14 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
 }
 
 @supports (display:grid) {
-  .c1 {
+  .c0 {
     display: grid;
     position: initial;
   }
 }
 
 @media (max-width:14.9375rem) {
-  .c3 {
+  .c2 {
     width: calc(100%);
     display: inline-block;
     vertical-align: top;
@@ -1395,7 +1378,7 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
 }
 
 @media (min-width:15rem) and (max-width:24.9375rem) {
-  .c3 {
+  .c2 {
     width: calc(100%);
     display: inline-block;
     vertical-align: top;
@@ -1403,7 +1386,7 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
 }
 
 @media (min-width:25rem) and (max-width:37.4375rem) {
-  .c3 {
+  .c2 {
     width: calc(50%);
     display: inline-block;
     vertical-align: top;
@@ -1411,7 +1394,7 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
 }
 
 @media (min-width:37.5rem) and (max-width:62.9375rem) {
-  .c3 {
+  .c2 {
     width: calc(50%);
     display: inline-block;
     vertical-align: top;
@@ -1419,7 +1402,7 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
 }
 
 @media (min-width:63rem) and (max-width:80rem) {
-  .c3 {
+  .c2 {
     width: calc(50%);
     display: inline-block;
     vertical-align: top;
@@ -1427,7 +1410,7 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
 }
 
 @media (min-width:80rem) {
-  .c3 {
+  .c2 {
     width: calc(20%);
     display: inline-block;
     vertical-align: top;
@@ -1435,543 +1418,536 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
 }
 
 @supports (display:grid) {
-  .c3 {
+  .c2 {
     display: block;
   }
 }
 
 @media (max-width:24.9375rem) {
-  .c2 {
+  .c1 {
     grid-template-rows: repeat( 10,[col-start] auto [col-end] );
   }
 }
 
 @media (min-width:80rem) {
-  .c2 {
+  .c1 {
     grid-auto-flow: row;
     grid-template-rows: repeat( 5,[col-start] auto [col-end] );
   }
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
-  .c8 {
+  .c7 {
     font-size: 1.25rem;
     line-height: 1.5rem;
   }
 }
 
 @media (min-width:37.5rem) {
-  .c8 {
+  .c7 {
     font-size: 1.5rem;
     line-height: 1.75rem;
   }
 }
 
 @supports (grid-template-columns:fit-content(200px)) {
-  .c7 {
+  .c6 {
     padding-right: 0;
   }
 }
 
 @media (max-width:14.9375rem) {
-  .c5 {
+  .c4 {
     min-width: 2.5rem;
   }
 }
 
 @media (min-width:15rem) and (max-width:24.9375rem) {
-  .c5 {
+  .c4 {
     min-width: 2.5rem;
   }
 }
 
 @media (min-width:25rem) and (max-width:37.4375rem) {
-  .c5 {
+  .c4 {
     min-width: auto;
   }
 }
 
 @media (min-width:37.5rem) and (max-width:80rem) {
-  .c5 {
+  .c4 {
     min-width: auto;
   }
 }
 
 @media (min-width:80rem) {
-  .c5 {
+  .c4 {
     min-width: auto;
   }
 }
 
 @media (max-width:14.9375rem) {
-  .c9 {
+  .c8 {
     min-width: 2.5rem;
   }
 }
 
 @media (min-width:15rem) and (max-width:24.9375rem) {
-  .c9 {
+  .c8 {
     min-width: 2.5rem;
   }
 }
 
 @media (min-width:25rem) and (max-width:37.4375rem) {
-  .c9 {
+  .c8 {
     min-width: 2.5rem;
   }
 }
 
 @media (min-width:37.5rem) and (max-width:80rem) {
-  .c9 {
+  .c8 {
     min-width: 4rem;
   }
 }
 
 @media (min-width:80rem) {
-  .c9 {
+  .c8 {
     min-width: auto;
   }
 }
 
 @media (max-width:14.9375rem) {
-  .c10 {
+  .c9 {
     min-width: 2.5rem;
   }
 }
 
 @media (min-width:15rem) and (max-width:24.9375rem) {
-  .c10 {
+  .c9 {
     min-width: 2.5rem;
   }
 }
 
 @media (min-width:25rem) and (max-width:37.4375rem) {
-  .c10 {
+  .c9 {
     min-width: auto;
   }
 }
 
 @media (min-width:37.5rem) and (max-width:80rem) {
-  .c10 {
+  .c9 {
     min-width: auto;
   }
 }
 
 @media (min-width:80rem) {
-  .c10 {
+  .c9 {
     min-width: 4.25rem;
   }
 }
 
 @media (max-width:14.9375rem) {
-  .c11 {
+  .c10 {
     min-width: 2.5rem;
   }
 }
 
 @media (min-width:15rem) and (max-width:24.9375rem) {
-  .c11 {
+  .c10 {
     min-width: 2.5rem;
   }
 }
 
 @media (min-width:25rem) and (max-width:37.4375rem) {
-  .c11 {
+  .c10 {
     min-width: 2.5rem;
   }
 }
 
 @media (min-width:37.5rem) and (max-width:80rem) {
-  .c11 {
+  .c10 {
     min-width: 4rem;
   }
 }
 
 @media (min-width:80rem) {
-  .c11 {
+  .c10 {
     min-width: auto;
   }
 }
 
 @media (max-width:14.9375rem) {
-  .c12 {
+  .c11 {
     min-width: 2.5rem;
   }
 }
 
 @media (min-width:15rem) and (max-width:24.9375rem) {
-  .c12 {
+  .c11 {
     min-width: 2.5rem;
   }
 }
 
 @media (min-width:25rem) and (max-width:37.4375rem) {
-  .c12 {
+  .c11 {
     min-width: auto;
   }
 }
 
 @media (min-width:37.5rem) and (max-width:80rem) {
-  .c12 {
+  .c11 {
     min-width: auto;
   }
 }
 
 @media (min-width:80rem) {
-  .c12 {
+  .c11 {
     min-width: auto;
   }
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
-  .c6 {
+  .c5 {
     font-size: 2.5rem;
     line-height: 2.75rem;
   }
 }
 
 @media (min-width:37.5rem) {
-  .c6 {
+  .c5 {
     font-size: 3.5rem;
     line-height: 3.75rem;
   }
 }
 
 <ol
-  class="c0"
+  class="c0 c1"
+  dir="ltr"
   role="list"
 >
   <div
-    class="c1 c2"
+    as="li"
+    class="c2"
     dir="ltr"
   >
     <div
-      as="li"
       class="c3"
-      dir="ltr"
     >
-      <li
+      <div
         class="c4"
+        dir="ltr"
       >
-        <div
+        <span
           class="c5"
-          dir="ltr"
         >
-          <span
-            class="c6"
-          >
-            1
-          </span>
-        </div>
-        <div
-          class="c7"
-          dir="ltr"
-        >
-          <a
-            class="c8"
-            href="https://www.bbc.com/news/articles/cn7k01xp8kxo"
-          >
-            Could a computer ever create better art than a human?
-          </a>
-        </div>
-      </li>
-    </div>
-    <div
-      as="li"
-      class="c3"
-      dir="ltr"
-    >
-      <li
-        class="c4"
+          1
+        </span>
+      </div>
+      <div
+        class="c6"
+        dir="ltr"
       >
-        <div
-          class="c9"
-          dir="ltr"
-        >
-          <span
-            class="c6"
-          >
-            2
-          </span>
-        </div>
-        <div
+        <a
           class="c7"
-          dir="ltr"
+          href="https://www.bbc.com/news/articles/cn7k01xp8kxo"
         >
-          <a
-            class="c8"
-            href="https://www.bbc.com/news/articles/cn7k01xp8kxo"
-          >
-            Could a computer ever create better art than a human?
-          </a>
-        </div>
-      </li>
+          Could a computer ever create better art than a human?
+        </a>
+      </div>
     </div>
+  </div>
+  <div
+    as="li"
+    class="c2"
+    dir="ltr"
+  >
     <div
-      as="li"
       class="c3"
-      dir="ltr"
     >
-      <li
-        class="c4"
+      <div
+        class="c8"
+        dir="ltr"
       >
-        <div
+        <span
           class="c5"
-          dir="ltr"
         >
-          <span
-            class="c6"
-          >
-            3
-          </span>
-        </div>
-        <div
-          class="c7"
-          dir="ltr"
-        >
-          <a
-            class="c8"
-            href="https://www.bbc.com/news/articles/cn7k01xp8kxo"
-          >
-            Could a computer ever create better art than a human?
-          </a>
-        </div>
-      </li>
-    </div>
-    <div
-      as="li"
-      class="c3"
-      dir="ltr"
-    >
-      <li
-        class="c4"
+          2
+        </span>
+      </div>
+      <div
+        class="c6"
+        dir="ltr"
       >
-        <div
-          class="c9"
-          dir="ltr"
-        >
-          <span
-            class="c6"
-          >
-            4
-          </span>
-        </div>
-        <div
+        <a
           class="c7"
-          dir="ltr"
+          href="https://www.bbc.com/news/articles/cn7k01xp8kxo"
         >
-          <a
-            class="c8"
-            href="https://www.bbc.com/news/articles/cn7k01xp8kxo"
-          >
-            Could a computer ever create better art than a human?
-          </a>
-        </div>
-      </li>
+          Could a computer ever create better art than a human?
+        </a>
+      </div>
     </div>
+  </div>
+  <div
+    as="li"
+    class="c2"
+    dir="ltr"
+  >
     <div
-      as="li"
       class="c3"
-      dir="ltr"
     >
-      <li
+      <div
         class="c4"
+        dir="ltr"
       >
-        <div
-          class="c10"
-          dir="ltr"
+        <span
+          class="c5"
         >
-          <span
-            class="c6"
-          >
-            5
-          </span>
-        </div>
-        <div
+          3
+        </span>
+      </div>
+      <div
+        class="c6"
+        dir="ltr"
+      >
+        <a
           class="c7"
-          dir="ltr"
+          href="https://www.bbc.com/news/articles/cn7k01xp8kxo"
         >
-          <a
-            class="c8"
-            href="https://www.bbc.com/news/articles/cn7k01xp8kxo"
-          >
-            Could a computer ever create better art than a human?
-          </a>
-        </div>
-      </li>
+          Could a computer ever create better art than a human?
+        </a>
+      </div>
     </div>
+  </div>
+  <div
+    as="li"
+    class="c2"
+    dir="ltr"
+  >
     <div
-      as="li"
       class="c3"
-      dir="ltr"
     >
-      <li
-        class="c4"
+      <div
+        class="c8"
+        dir="ltr"
       >
-        <div
-          class="c11"
-          dir="ltr"
+        <span
+          class="c5"
         >
-          <span
-            class="c6"
-          >
-            6
-          </span>
-        </div>
-        <div
+          4
+        </span>
+      </div>
+      <div
+        class="c6"
+        dir="ltr"
+      >
+        <a
           class="c7"
-          dir="ltr"
+          href="https://www.bbc.com/news/articles/cn7k01xp8kxo"
         >
-          <a
-            class="c8"
-            href="https://www.bbc.com/news/articles/cn7k01xp8kxo"
-          >
-            Could a computer ever create better art than a human?
-          </a>
-        </div>
-      </li>
+          Could a computer ever create better art than a human?
+        </a>
+      </div>
     </div>
+  </div>
+  <div
+    as="li"
+    class="c2"
+    dir="ltr"
+  >
     <div
-      as="li"
       class="c3"
-      dir="ltr"
     >
-      <li
-        class="c4"
+      <div
+        class="c9"
+        dir="ltr"
       >
-        <div
-          class="c12"
-          dir="ltr"
+        <span
+          class="c5"
         >
-          <span
-            class="c6"
-          >
-            7
-          </span>
-        </div>
-        <div
+          5
+        </span>
+      </div>
+      <div
+        class="c6"
+        dir="ltr"
+      >
+        <a
           class="c7"
-          dir="ltr"
+          href="https://www.bbc.com/news/articles/cn7k01xp8kxo"
         >
-          <a
-            class="c8"
-            href="https://www.bbc.com/news/articles/cn7k01xp8kxo"
-          >
-            Could a computer ever create better art than a human?
-          </a>
-        </div>
-      </li>
+          Could a computer ever create better art than a human?
+        </a>
+      </div>
     </div>
+  </div>
+  <div
+    as="li"
+    class="c2"
+    dir="ltr"
+  >
     <div
-      as="li"
       class="c3"
-      dir="ltr"
     >
-      <li
-        class="c4"
+      <div
+        class="c10"
+        dir="ltr"
       >
-        <div
-          class="c11"
-          dir="ltr"
+        <span
+          class="c5"
         >
-          <span
-            class="c6"
-          >
-            8
-          </span>
-        </div>
-        <div
+          6
+        </span>
+      </div>
+      <div
+        class="c6"
+        dir="ltr"
+      >
+        <a
           class="c7"
-          dir="ltr"
+          href="https://www.bbc.com/news/articles/cn7k01xp8kxo"
         >
-          <a
-            class="c8"
-            href="https://www.bbc.com/news/articles/cn7k01xp8kxo"
-          >
-            Could a computer ever create better art than a human?
-          </a>
-        </div>
-      </li>
+          Could a computer ever create better art than a human?
+        </a>
+      </div>
     </div>
+  </div>
+  <div
+    as="li"
+    class="c2"
+    dir="ltr"
+  >
     <div
-      as="li"
       class="c3"
-      dir="ltr"
     >
-      <li
-        class="c4"
+      <div
+        class="c11"
+        dir="ltr"
       >
-        <div
-          class="c12"
-          dir="ltr"
+        <span
+          class="c5"
         >
-          <span
-            class="c6"
-          >
-            9
-          </span>
-        </div>
-        <div
+          7
+        </span>
+      </div>
+      <div
+        class="c6"
+        dir="ltr"
+      >
+        <a
           class="c7"
-          dir="ltr"
+          href="https://www.bbc.com/news/articles/cn7k01xp8kxo"
         >
-          <a
-            class="c8"
-            href="https://www.bbc.com/news/articles/cn7k01xp8kxo"
-          >
-            Could a computer ever create better art than a human?
-          </a>
-        </div>
-      </li>
+          Could a computer ever create better art than a human?
+        </a>
+      </div>
     </div>
+  </div>
+  <div
+    as="li"
+    class="c2"
+    dir="ltr"
+  >
     <div
-      as="li"
       class="c3"
-      dir="ltr"
     >
-      <li
-        class="c4"
+      <div
+        class="c10"
+        dir="ltr"
       >
-        <div
-          class="c11"
-          dir="ltr"
+        <span
+          class="c5"
         >
-          <span
-            class="c6"
-          >
-            10
-          </span>
-        </div>
-        <div
+          8
+        </span>
+      </div>
+      <div
+        class="c6"
+        dir="ltr"
+      >
+        <a
           class="c7"
-          dir="ltr"
+          href="https://www.bbc.com/news/articles/cn7k01xp8kxo"
         >
-          <a
-            class="c8"
-            href="https://www.bbc.com/news/articles/cn7k01xp8kxo"
-          >
-            Could a computer ever create better art than a human?
-          </a>
-        </div>
-      </li>
+          Could a computer ever create better art than a human?
+        </a>
+      </div>
+    </div>
+  </div>
+  <div
+    as="li"
+    class="c2"
+    dir="ltr"
+  >
+    <div
+      class="c3"
+    >
+      <div
+        class="c11"
+        dir="ltr"
+      >
+        <span
+          class="c5"
+        >
+          9
+        </span>
+      </div>
+      <div
+        class="c6"
+        dir="ltr"
+      >
+        <a
+          class="c7"
+          href="https://www.bbc.com/news/articles/cn7k01xp8kxo"
+        >
+          Could a computer ever create better art than a human?
+        </a>
+      </div>
+    </div>
+  </div>
+  <div
+    as="li"
+    class="c2"
+    dir="ltr"
+  >
+    <div
+      class="c3"
+    >
+      <div
+        class="c10"
+        dir="ltr"
+      >
+        <span
+          class="c5"
+        >
+          10
+        </span>
+      </div>
+      <div
+        class="c6"
+        dir="ltr"
+      >
+        <a
+          class="c7"
+          href="https://www.bbc.com/news/articles/cn7k01xp8kxo"
+        >
+          Could a computer ever create better art than a human?
+        </a>
+      </div>
     </div>
   </div>
 </ol>
 `;
 
 exports[`MostReadList should render with rtl arabic items with correct dir 1`] = `
-.c0 {
+.c1 {
   list-style-type: none;
   margin: 0;
   padding: 0;
-}
-
-.c2 {
   grid-auto-flow: column;
   grid-template-rows: repeat( 5,[col-start] auto [col-end] );
 }
 
-.c8 {
+.c7 {
   font-size: 1.5rem;
   line-height: 2rem;
   font-family: "BBC Nassim Persian",Arial,Verdana,Geneva,Helvetica,sans-serif;
@@ -1983,13 +1959,13 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
   text-decoration: none;
 }
 
-.c8:hover,
-.c8:focus {
+.c7:hover,
+.c7:focus {
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
-.c8:before {
+.c7:before {
   bottom: 0;
   content: '';
   left: 0;
@@ -2001,14 +1977,13 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
   z-index: 1;
 }
 
-.c7 {
+.c6 {
   padding-bottom: 1.5rem;
   padding-right: 1rem;
   padding-left: 1rem;
 }
 
-.c4 {
-  position: relative;
+.c3 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2016,11 +1991,12 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
+  position: relative;
   margin: 0;
   padding: 0;
 }
 
-.c6 {
+.c5 {
   font-family: "BBC Nassim Persian",Arial,Verdana,Geneva,Helvetica,sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -2033,14 +2009,14 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
 }
 
 @supports (display:grid) {
-  .c1 {
+  .c0 {
     display: grid;
     position: initial;
   }
 }
 
 @media (max-width:14.9375rem) {
-  .c3 {
+  .c2 {
     width: calc(100%);
     display: inline-block;
     vertical-align: top;
@@ -2048,7 +2024,7 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
 }
 
 @media (min-width:15rem) and (max-width:24.9375rem) {
-  .c3 {
+  .c2 {
     width: calc(100%);
     display: inline-block;
     vertical-align: top;
@@ -2056,7 +2032,7 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
 }
 
 @media (min-width:25rem) and (max-width:37.4375rem) {
-  .c3 {
+  .c2 {
     width: calc(50%);
     display: inline-block;
     vertical-align: top;
@@ -2064,7 +2040,7 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
 }
 
 @media (min-width:37.5rem) and (max-width:62.9375rem) {
-  .c3 {
+  .c2 {
     width: calc(50%);
     display: inline-block;
     vertical-align: top;
@@ -2072,7 +2048,7 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
 }
 
 @media (min-width:63rem) and (max-width:80rem) {
-  .c3 {
+  .c2 {
     width: calc(50%);
     display: inline-block;
     vertical-align: top;
@@ -2080,7 +2056,7 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
 }
 
 @media (min-width:80rem) {
-  .c3 {
+  .c2 {
     width: calc(20%);
     display: inline-block;
     vertical-align: top;
@@ -2088,525 +2064,521 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
 }
 
 @supports (display:grid) {
-  .c3 {
+  .c2 {
     display: block;
   }
 }
 
 @media (max-width:24.9375rem) {
-  .c2 {
+  .c1 {
     grid-template-rows: repeat( 10,[col-start] auto [col-end] );
   }
 }
 
 @media (min-width:80rem) {
-  .c2 {
+  .c1 {
     grid-auto-flow: row;
     grid-template-rows: repeat( 5,[col-start] auto [col-end] );
   }
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
-  .c8 {
+  .c7 {
     font-size: 1.625rem;
     line-height: 2.25rem;
   }
 }
 
 @media (min-width:37.5rem) {
-  .c8 {
+  .c7 {
     font-size: 1.75rem;
     line-height: 2.25rem;
   }
 }
 
 @supports (grid-template-columns:fit-content(200px)) {
-  .c7 {
+  .c6 {
     padding-left: 0;
   }
 }
 
 @media (max-width:14.9375rem) {
-  .c5 {
+  .c4 {
     min-width: 2.5rem;
   }
 }
 
 @media (min-width:15rem) and (max-width:24.9375rem) {
-  .c5 {
+  .c4 {
     min-width: 2.5rem;
   }
 }
 
 @media (min-width:25rem) and (max-width:37.4375rem) {
-  .c5 {
+  .c4 {
     min-width: auto;
   }
 }
 
 @media (min-width:37.5rem) and (max-width:80rem) {
-  .c5 {
+  .c4 {
     min-width: auto;
   }
 }
 
 @media (min-width:80rem) {
-  .c5 {
+  .c4 {
     min-width: auto;
   }
 }
 
 @media (max-width:14.9375rem) {
-  .c9 {
+  .c8 {
     min-width: 2.5rem;
   }
 }
 
 @media (min-width:15rem) and (max-width:24.9375rem) {
-  .c9 {
+  .c8 {
     min-width: 2.5rem;
   }
 }
 
 @media (min-width:25rem) and (max-width:37.4375rem) {
-  .c9 {
+  .c8 {
     min-width: 2.5rem;
   }
 }
 
 @media (min-width:37.5rem) and (max-width:80rem) {
-  .c9 {
+  .c8 {
     min-width: 4rem;
   }
 }
 
 @media (min-width:80rem) {
-  .c9 {
+  .c8 {
     min-width: auto;
   }
 }
 
 @media (max-width:14.9375rem) {
-  .c10 {
+  .c9 {
     min-width: 2.5rem;
   }
 }
 
 @media (min-width:15rem) and (max-width:24.9375rem) {
-  .c10 {
+  .c9 {
     min-width: 2.5rem;
   }
 }
 
 @media (min-width:25rem) and (max-width:37.4375rem) {
-  .c10 {
+  .c9 {
     min-width: auto;
   }
 }
 
 @media (min-width:37.5rem) and (max-width:80rem) {
-  .c10 {
+  .c9 {
     min-width: auto;
   }
 }
 
 @media (min-width:80rem) {
-  .c10 {
+  .c9 {
     min-width: 4.25rem;
   }
 }
 
 @media (max-width:14.9375rem) {
-  .c11 {
+  .c10 {
     min-width: 2.5rem;
   }
 }
 
 @media (min-width:15rem) and (max-width:24.9375rem) {
-  .c11 {
+  .c10 {
     min-width: 2.5rem;
   }
 }
 
 @media (min-width:25rem) and (max-width:37.4375rem) {
-  .c11 {
+  .c10 {
     min-width: 2.5rem;
   }
 }
 
 @media (min-width:37.5rem) and (max-width:80rem) {
-  .c11 {
+  .c10 {
     min-width: 4rem;
   }
 }
 
 @media (min-width:80rem) {
-  .c11 {
+  .c10 {
     min-width: auto;
   }
 }
 
 @media (max-width:14.9375rem) {
-  .c12 {
+  .c11 {
     min-width: 2.5rem;
   }
 }
 
 @media (min-width:15rem) and (max-width:24.9375rem) {
-  .c12 {
+  .c11 {
     min-width: 2.5rem;
   }
 }
 
 @media (min-width:25rem) and (max-width:37.4375rem) {
-  .c12 {
+  .c11 {
     min-width: auto;
   }
 }
 
 @media (min-width:37.5rem) and (max-width:80rem) {
-  .c12 {
+  .c11 {
     min-width: auto;
   }
 }
 
 @media (min-width:80rem) {
-  .c12 {
+  .c11 {
     min-width: auto;
   }
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
-  .c6 {
+  .c5 {
     font-size: 2.5rem;
     line-height: 2.75rem;
   }
 }
 
 @media (min-width:37.5rem) {
-  .c6 {
+  .c5 {
     font-size: 3.5rem;
     line-height: 3.75rem;
   }
 }
 
 <ol
-  class="c0"
+  class="c0 c1"
+  dir="rtl"
   role="list"
 >
   <div
-    class="c1 c2"
+    as="li"
+    class="c2"
     dir="rtl"
   >
     <div
-      as="li"
       class="c3"
-      dir="rtl"
     >
-      <li
+      <div
         class="c4"
+        dir="rtl"
       >
-        <div
+        <span
           class="c5"
-          dir="rtl"
         >
-          <span
-            class="c6"
-          >
-            ۱
-          </span>
-        </div>
-        <div
-          class="c7"
-          dir="rtl"
-        >
-          <a
-            class="c8"
-            href="https://www.bbc.com/persian/articles/cej3lzd5e0go"
-          >
-            در این جشنواره برای نخستین بار از کارگران افغانستان در شهر تهران تقدیر شد
-          </a>
-        </div>
-      </li>
-    </div>
-    <div
-      as="li"
-      class="c3"
-      dir="rtl"
-    >
-      <li
-        class="c4"
+          ۱
+        </span>
+      </div>
+      <div
+        class="c6"
+        dir="rtl"
       >
-        <div
-          class="c9"
-          dir="rtl"
-        >
-          <span
-            class="c6"
-          >
-            ۲
-          </span>
-        </div>
-        <div
+        <a
           class="c7"
-          dir="rtl"
+          href="https://www.bbc.com/persian/articles/cej3lzd5e0go"
         >
-          <a
-            class="c8"
-            href="https://www.bbc.com/persian/articles/cej3lzd5e0go"
-          >
-            در این جشنواره برای نخستین بار از کارگران افغانستان در شهر تهران تقدیر شد
-          </a>
-        </div>
-      </li>
+          در این جشنواره برای نخستین بار از کارگران افغانستان در شهر تهران تقدیر شد
+        </a>
+      </div>
     </div>
+  </div>
+  <div
+    as="li"
+    class="c2"
+    dir="rtl"
+  >
     <div
-      as="li"
       class="c3"
-      dir="rtl"
     >
-      <li
-        class="c4"
+      <div
+        class="c8"
+        dir="rtl"
       >
-        <div
+        <span
           class="c5"
-          dir="rtl"
         >
-          <span
-            class="c6"
-          >
-            ۳
-          </span>
-        </div>
-        <div
-          class="c7"
-          dir="rtl"
-        >
-          <a
-            class="c8"
-            href="https://www.bbc.com/persian/articles/cej3lzd5e0go"
-          >
-            در این جشنواره برای نخستین بار از کارگران افغانستان در شهر تهران تقدیر شد
-          </a>
-        </div>
-      </li>
-    </div>
-    <div
-      as="li"
-      class="c3"
-      dir="rtl"
-    >
-      <li
-        class="c4"
+          ۲
+        </span>
+      </div>
+      <div
+        class="c6"
+        dir="rtl"
       >
-        <div
-          class="c9"
-          dir="rtl"
-        >
-          <span
-            class="c6"
-          >
-            ۴
-          </span>
-        </div>
-        <div
+        <a
           class="c7"
-          dir="rtl"
+          href="https://www.bbc.com/persian/articles/cej3lzd5e0go"
         >
-          <a
-            class="c8"
-            href="https://www.bbc.com/persian/articles/cej3lzd5e0go"
-          >
-            در این جشنواره برای نخستین بار از کارگران افغانستان در شهر تهران تقدیر شد
-          </a>
-        </div>
-      </li>
+          در این جشنواره برای نخستین بار از کارگران افغانستان در شهر تهران تقدیر شد
+        </a>
+      </div>
     </div>
+  </div>
+  <div
+    as="li"
+    class="c2"
+    dir="rtl"
+  >
     <div
-      as="li"
       class="c3"
-      dir="rtl"
     >
-      <li
+      <div
         class="c4"
+        dir="rtl"
       >
-        <div
-          class="c10"
-          dir="rtl"
+        <span
+          class="c5"
         >
-          <span
-            class="c6"
-          >
-            ۵
-          </span>
-        </div>
-        <div
+          ۳
+        </span>
+      </div>
+      <div
+        class="c6"
+        dir="rtl"
+      >
+        <a
           class="c7"
-          dir="rtl"
+          href="https://www.bbc.com/persian/articles/cej3lzd5e0go"
         >
-          <a
-            class="c8"
-            href="https://www.bbc.com/persian/articles/cej3lzd5e0go"
-          >
-            در این جشنواره برای نخستین بار از کارگران افغانستان در شهر تهران تقدیر شد
-          </a>
-        </div>
-      </li>
+          در این جشنواره برای نخستین بار از کارگران افغانستان در شهر تهران تقدیر شد
+        </a>
+      </div>
     </div>
+  </div>
+  <div
+    as="li"
+    class="c2"
+    dir="rtl"
+  >
     <div
-      as="li"
       class="c3"
-      dir="rtl"
     >
-      <li
-        class="c4"
+      <div
+        class="c8"
+        dir="rtl"
       >
-        <div
-          class="c11"
-          dir="rtl"
+        <span
+          class="c5"
         >
-          <span
-            class="c6"
-          >
-            ۶
-          </span>
-        </div>
-        <div
+          ۴
+        </span>
+      </div>
+      <div
+        class="c6"
+        dir="rtl"
+      >
+        <a
           class="c7"
-          dir="rtl"
+          href="https://www.bbc.com/persian/articles/cej3lzd5e0go"
         >
-          <a
-            class="c8"
-            href="https://www.bbc.com/persian/articles/cej3lzd5e0go"
-          >
-            در این جشنواره برای نخستین بار از کارگران افغانستان در شهر تهران تقدیر شد
-          </a>
-        </div>
-      </li>
+          در این جشنواره برای نخستین بار از کارگران افغانستان در شهر تهران تقدیر شد
+        </a>
+      </div>
     </div>
+  </div>
+  <div
+    as="li"
+    class="c2"
+    dir="rtl"
+  >
     <div
-      as="li"
       class="c3"
-      dir="rtl"
     >
-      <li
-        class="c4"
+      <div
+        class="c9"
+        dir="rtl"
       >
-        <div
-          class="c12"
-          dir="rtl"
+        <span
+          class="c5"
         >
-          <span
-            class="c6"
-          >
-            ۷
-          </span>
-        </div>
-        <div
+          ۵
+        </span>
+      </div>
+      <div
+        class="c6"
+        dir="rtl"
+      >
+        <a
           class="c7"
-          dir="rtl"
+          href="https://www.bbc.com/persian/articles/cej3lzd5e0go"
         >
-          <a
-            class="c8"
-            href="https://www.bbc.com/persian/articles/cej3lzd5e0go"
-          >
-            در این جشنواره برای نخستین بار از کارگران افغانستان در شهر تهران تقدیر شد
-          </a>
-        </div>
-      </li>
+          در این جشنواره برای نخستین بار از کارگران افغانستان در شهر تهران تقدیر شد
+        </a>
+      </div>
     </div>
+  </div>
+  <div
+    as="li"
+    class="c2"
+    dir="rtl"
+  >
     <div
-      as="li"
       class="c3"
-      dir="rtl"
     >
-      <li
-        class="c4"
+      <div
+        class="c10"
+        dir="rtl"
       >
-        <div
-          class="c11"
-          dir="rtl"
+        <span
+          class="c5"
         >
-          <span
-            class="c6"
-          >
-            ۸
-          </span>
-        </div>
-        <div
+          ۶
+        </span>
+      </div>
+      <div
+        class="c6"
+        dir="rtl"
+      >
+        <a
           class="c7"
-          dir="rtl"
+          href="https://www.bbc.com/persian/articles/cej3lzd5e0go"
         >
-          <a
-            class="c8"
-            href="https://www.bbc.com/persian/articles/cej3lzd5e0go"
-          >
-            در این جشنواره برای نخستین بار از کارگران افغانستان در شهر تهران تقدیر شد
-          </a>
-        </div>
-      </li>
+          در این جشنواره برای نخستین بار از کارگران افغانستان در شهر تهران تقدیر شد
+        </a>
+      </div>
     </div>
+  </div>
+  <div
+    as="li"
+    class="c2"
+    dir="rtl"
+  >
     <div
-      as="li"
       class="c3"
-      dir="rtl"
     >
-      <li
-        class="c4"
+      <div
+        class="c11"
+        dir="rtl"
       >
-        <div
-          class="c12"
-          dir="rtl"
+        <span
+          class="c5"
         >
-          <span
-            class="c6"
-          >
-            ۹
-          </span>
-        </div>
-        <div
+          ۷
+        </span>
+      </div>
+      <div
+        class="c6"
+        dir="rtl"
+      >
+        <a
           class="c7"
-          dir="rtl"
+          href="https://www.bbc.com/persian/articles/cej3lzd5e0go"
         >
-          <a
-            class="c8"
-            href="https://www.bbc.com/persian/articles/cej3lzd5e0go"
-          >
-            در این جشنواره برای نخستین بار از کارگران افغانستان در شهر تهران تقدیر شد
-          </a>
-        </div>
-      </li>
+          در این جشنواره برای نخستین بار از کارگران افغانستان در شهر تهران تقدیر شد
+        </a>
+      </div>
     </div>
+  </div>
+  <div
+    as="li"
+    class="c2"
+    dir="rtl"
+  >
     <div
-      as="li"
       class="c3"
-      dir="rtl"
     >
-      <li
-        class="c4"
+      <div
+        class="c10"
+        dir="rtl"
       >
-        <div
-          class="c11"
-          dir="rtl"
+        <span
+          class="c5"
         >
-          <span
-            class="c6"
-          >
-            ۱۰
-          </span>
-        </div>
-        <div
+          ۸
+        </span>
+      </div>
+      <div
+        class="c6"
+        dir="rtl"
+      >
+        <a
           class="c7"
-          dir="rtl"
+          href="https://www.bbc.com/persian/articles/cej3lzd5e0go"
         >
-          <a
-            class="c8"
-            href="https://www.bbc.com/persian/articles/cej3lzd5e0go"
-          >
-            در این جشنواره برای نخستین بار از کارگران افغانستان در شهر تهران تقدیر شد
-          </a>
-        </div>
-      </li>
+          در این جشنواره برای نخستین بار از کارگران افغانستان در شهر تهران تقدیر شد
+        </a>
+      </div>
+    </div>
+  </div>
+  <div
+    as="li"
+    class="c2"
+    dir="rtl"
+  >
+    <div
+      class="c3"
+    >
+      <div
+        class="c11"
+        dir="rtl"
+      >
+        <span
+          class="c5"
+        >
+          ۹
+        </span>
+      </div>
+      <div
+        class="c6"
+        dir="rtl"
+      >
+        <a
+          class="c7"
+          href="https://www.bbc.com/persian/articles/cej3lzd5e0go"
+        >
+          در این جشنواره برای نخستین بار از کارگران افغانستان در شهر تهران تقدیر شد
+        </a>
+      </div>
+    </div>
+  </div>
+  <div
+    as="li"
+    class="c2"
+    dir="rtl"
+  >
+    <div
+      class="c3"
+    >
+      <div
+        class="c10"
+        dir="rtl"
+      >
+        <span
+          class="c5"
+        >
+          ۱۰
+        </span>
+      </div>
+      <div
+        class="c6"
+        dir="rtl"
+      >
+        <a
+          class="c7"
+          href="https://www.bbc.com/persian/articles/cej3lzd5e0go"
+        >
+          در این جشنواره برای نخستین بار از کارگران افغانستان در شهر تهران تقدیر شد
+        </a>
+      </div>
     </div>
   </div>
 </ol>
