@@ -60,7 +60,7 @@ const generateInfo = (text, script, service, dir, isLeadingPromo) => (
 );
 
 /* eslint-disable-next-line no-shadow */
-const generate2FeatureStory = (text, script, service, dir, Img) => {
+const generate2FeatureStory = (text, script, service, dir) => {
   return (
     <Grid
       columns={{
@@ -85,7 +85,7 @@ const generate2FeatureStory = (text, script, service, dir, Img) => {
         }}
       >
         <LeadingStoryPromo
-          image={Img}
+          image={buildImg()}
           info={generateInfo(text, script, service, dir, true)}
         />
       </Grid>
@@ -112,7 +112,7 @@ const generate2FeatureStory = (text, script, service, dir, Img) => {
           }}
         >
           <StoryPromo
-            image={Img}
+            image={buildImg()}
             info={generateInfo(text, script, service, dir, false)}
           />
         </Grid>
@@ -120,8 +120,6 @@ const generate2FeatureStory = (text, script, service, dir, Img) => {
     </Grid>
   );
 };
-
-const Img = buildImg();
 
 storiesOf('Components|StoryPromo/LeadingStoryPromo', module)
   .addDecorator(withKnobs)
@@ -131,7 +129,7 @@ storiesOf('Components|StoryPromo/LeadingStoryPromo', module)
     /* eslint-disable-next-line no-shadow */
     ({ text, script, service, dir }) => (
       <LeadingStoryPromo
-        image={Img}
+        image={buildImg()}
         info={generateInfo(text, script, service, dir, true)}
       />
     ),
@@ -141,6 +139,6 @@ storiesOf('Components|StoryPromo/LeadingStoryPromo', module)
     'leading promo + secondary story promo',
     /* eslint-disable-next-line no-shadow */
     ({ text, script, service, dir }) =>
-      generate2FeatureStory(text, script, service, dir, Img),
+      generate2FeatureStory(text, script, service, dir),
     { notes, knobs: { escapeHTML: false } },
   );
