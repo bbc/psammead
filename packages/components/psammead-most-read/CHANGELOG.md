@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 0.5.0-alpha.3 | [PR#2928](https://github.com/bbc/psammead/pull/2928) Talos - Bump Dependencies - @bbc/psammead-grid |
 | 0.5.0-alpha.2 | [PR#2920](https://github.com/bbc/psammead/pull/2920) Talos - Bump Dependencies - @bbc/gel-foundations, @bbc/psammead-grid |
 | 0.5.0-alpha.1 | [PR#2869](https://github.com/bbc/psammead/pull/2869) Export most-read components separately. |
 | 0.4.0-alpha.2 | [PR#2880](https://github.com/bbc/psammead/pull/2880) Talos - Bump Dependencies - @bbc/psammead-grid |
