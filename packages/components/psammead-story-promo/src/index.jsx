@@ -78,7 +78,7 @@ const StoryPromoWrapper = styled.div`
       grid-column-gap: ${GEL_GUTTER_ABOVE_600PX};
     }
 
-    ${({ promoType }) => wrapperStyles(promoType)}
+    ${({ promoType }) => wrapperStyles[promoType]}
 `;
 
 const ImageGridColumnsTopStory = css`
@@ -230,12 +230,12 @@ const ImageGridItem = styled.div`
   display: inline-block;
   vertical-align: top;
   position: relative;
-  ${({ promoType }) => imageGridFallbackStyles(promoType)}
+  ${({ promoType }) => imageGridFallbackStyles[promoType]}
 
   @supports (${grid}) {
     display: block;
     width: initial;
-    ${({ promoType }) => imageGridStyles(promoType)}
+    ${({ promoType }) => imageGridStyles[promoType]}
   }
 `;
 
@@ -244,20 +244,20 @@ const ImageContentsWrapper = styled.div`
 `;
 
 const InlineMediaIndicator = styled.div`
-  ${({ promoType }) => mediaIndicatorStyles(promoType)}
+  ${({ promoType }) => mediaIndicatorStyles[promoType]}
 `;
 
 const TextGridItem = styled.div`
   display: inline-block;
   vertical-align: top;
 
-  ${({ promoType }) => textGridFallbackStyles(promoType)}
+  ${({ promoType }) => textGridFallbackStyles[promoType]}
 
   @supports (${grid}) {
     display: block;
     width: initial;
     padding: initial;
-    ${({ promoType }) => textGridStyles(promoType)}
+    ${({ promoType }) => textGridStyles[promoType]}
   }
 
   ${({ displayImage }) =>
@@ -323,14 +323,14 @@ export const Summary = styled.p`
 
   ${({ promoHasImage }) => !promoHasImage && `padding-top: ${GEL_SPACING};`}
 
-  ${({ promoType }) => summaryStyles(promoType)}
+  ${({ promoType }) => summaryStyles[promoType]}
 `;
 
 Summary.propTypes = {
   script: shape(scriptPropType).isRequired,
   service: string.isRequired,
   promoHasImage: bool,
-  promoType: bool,
+  promoType: string,
 };
 
 Summary.defaultProps = {
