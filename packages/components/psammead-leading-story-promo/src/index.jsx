@@ -1,6 +1,6 @@
 import React from 'react';
 import styled, { css } from 'styled-components';
-import { node } from 'prop-types';
+import { node, oneOf } from 'prop-types';
 import { C_EBON } from '@bbc/psammead-styles/colours';
 import { getSerifMedium } from '@bbc/psammead-styles/font-styles';
 import { grid } from '@bbc/psammead-styles/detection';
@@ -30,6 +30,7 @@ const ImageGridColumns = css`
 
 const ImageGridColumnsFallback = css`
   width: ${fourOfSixColumnsMaxWidthScaleable};
+  padding-${({ dir }) => (dir === 'ltr' ? 'left' : 'right')}: 0.5rem;
 `;
 
 const ImageGridItem = styled.div`
@@ -50,6 +51,7 @@ const TextGridColumns = css`
 
 const TextGridColumnsFallBack = css`
   width: ${twoOfSixColumnsMaxWidthScaleable};
+  padding-${({ dir }) => (dir === 'ltr' ? 'right' : 'left')}: 0.5rem;
 `;
 
 const TextGridItem = styled.div`
@@ -72,16 +74,21 @@ export const LeadingPromoHeadline = styled.h3`
   padding-bottom: ${GEL_SPACING};
 `;
 
-const LeadingStoryPromo = ({ image, info }) => (
-  <LeadingPromoWrapper>
-    <TextGridItem>{info}</TextGridItem>
-    <ImageGridItem>{image}</ImageGridItem>
+const LeadingStoryPromo = ({ image, info, dir }) => (
+  <LeadingPromoWrapper dir={dir}>
+    <TextGridItem dir={dir}>{info}</TextGridItem>
+    <ImageGridItem dir={dir}>{image}</ImageGridItem>
   </LeadingPromoWrapper>
 );
 
 LeadingStoryPromo.propTypes = {
   image: node.isRequired,
   info: node.isRequired,
+  dir: oneOf(['ltr', 'rtl']),
+};
+
+LeadingStoryPromo.defaultProps = {
+  dir: 'ltr',
 };
 
 export default LeadingStoryPromo;

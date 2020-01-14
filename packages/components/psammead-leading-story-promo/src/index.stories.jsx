@@ -87,6 +87,7 @@ const generate2FeatureStory = (text, script, service, dir) => {
         <LeadingStoryPromo
           image={buildImg()}
           info={generateInfo(text, script, service, dir, true)}
+          dir={dir}
         />
       </Grid>
       <Grid
