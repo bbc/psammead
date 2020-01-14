@@ -91,21 +91,25 @@ MostReadLink.defaultProps = {
 const StyledDiv = styled.div`
   display: flex;
   flex-direction: row;
-  position: relative;
   margin: 0;
   padding: 0;
 `;
 
+const StyledGrid = styled(Grid).attrs({
+  role: 'listitem',
+})`
+  position: relative;
+`;
+
 export const MostReadItemWrapper = ({ dir, children }) => (
-  <Grid
+  <StyledGrid
     {...mostReadItemGridProps}
     parentColumns={mostReadListGridProps.columns} // parentColumns is required here because on IE, this component would be rendered before it's parent therefore not receiving the parent's grid columns values so we have to explicitly pass it as a prop here so it works on IE
     dir={dir}
     forwardedAs="li"
-    role="listitem"
   >
     <StyledDiv>{children}</StyledDiv>
-  </Grid>
+  </StyledGrid>
 );
 
 MostReadItemWrapper.propTypes = {
