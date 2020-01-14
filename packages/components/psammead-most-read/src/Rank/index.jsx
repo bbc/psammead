@@ -13,10 +13,8 @@ import {
   GEL_GROUP_5_SCREEN_WIDTH_MIN,
   GEL_GROUP_4_SCREEN_WIDTH_MAX,
   GEL_GROUP_3_SCREEN_WIDTH_MIN,
-  GEL_GROUP_2_SCREEN_WIDTH_MIN,
   GEL_GROUP_2_SCREEN_WIDTH_MAX,
   GEL_GROUP_1_SCREEN_WIDTH_MIN,
-  GEL_GROUP_1_SCREEN_WIDTH_MAX,
   GEL_GROUP_0_SCREEN_WIDTH_MAX,
 } from '@bbc/gel-foundations/breakpoints';
 import { C_POSTBOX } from '@bbc/psammead-styles/colours';
@@ -75,17 +73,9 @@ const StyledWrapper = styled.div`
       listHasDoubleDigits(props) ? doubleDigitWidth(props).group0 : 'auto'};
   }
 
-  @media (min-width: ${GEL_GROUP_1_SCREEN_WIDTH_MIN}) and (max-width: ${GEL_GROUP_1_SCREEN_WIDTH_MAX}) {
+  @media (min-width: ${GEL_GROUP_1_SCREEN_WIDTH_MIN}) and (max-width: ${GEL_GROUP_2_SCREEN_WIDTH_MAX}) {
     min-width: ${props =>
       listHasDoubleDigits(props) ? doubleDigitWidth(props).group1 : 'auto'};
-  }
-
-  /* different number order for when css grid is not supported  */
-  @media (min-width: ${GEL_GROUP_2_SCREEN_WIDTH_MIN}) and (max-width: ${GEL_GROUP_2_SCREEN_WIDTH_MAX}) {
-    min-width: ${props =>
-      columnIncludesDoubleDigits(props, false)
-        ? doubleDigitWidth(props).group2
-        : 'auto'};
   }
 
   @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) and (max-width: ${GEL_GROUP_4_SCREEN_WIDTH_MAX}) {
@@ -95,14 +85,8 @@ const StyledWrapper = styled.div`
         : 'auto'};
   }
 
+  /* different number order for when css grid is supported  */
   @supports (${grid}) {
-    @media (min-width: ${GEL_GROUP_2_SCREEN_WIDTH_MIN}) and (max-width: ${GEL_GROUP_2_SCREEN_WIDTH_MAX}) {
-      min-width: ${props =>
-        columnIncludesDoubleDigits(props, true)
-          ? doubleDigitWidth(props).group2
-          : 'auto'};
-    }
-
     @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) and (max-width: ${GEL_GROUP_4_SCREEN_WIDTH_MAX}) {
       min-width: ${props =>
         columnIncludesDoubleDigits(props, true)
