@@ -18,6 +18,7 @@ The `LeadingStoryPromo` component is designed to be used on 'index' pages, which
 | --------- | ---- | -------- | ------- | ------- |
 | image     | node | Yes      | N/A     | `<img />` |
 | info      | node | Yes      | N/A     | `<h2>Title</h2>` |
+| dir      | string | No      | `'ltr'` | `'rtl'` |
 
 ## Usage
 
