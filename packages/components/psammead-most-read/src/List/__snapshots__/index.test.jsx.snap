@@ -21,6 +21,7 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
   color: #222222;
   -webkit-text-decoration: none;
   text-decoration: none;
+  margin-bottom: 0.5rem;
 }
 
 .c8:hover,
@@ -33,6 +34,10 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
   padding-bottom: 1.5rem;
   padding-left: 1rem;
   padding-right: 1rem;
+}
+
+.c9 {
+  padding-top: 0.5rem;
 }
 
 .c4 {
@@ -84,7 +89,7 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
 
 @media (min-width:25rem) and (max-width:37.4375rem) {
   .c3 {
-    width: calc(50%);
+    width: calc(100%);
     display: inline-block;
     vertical-align: top;
   }
@@ -120,7 +125,7 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
   }
 }
 
-@media (max-width:24.9375rem) {
+@media (max-width:37.4375rem) {
   .c2 {
     grid-template-rows: repeat( 10,[col-start] auto [col-end] );
   }
@@ -159,15 +164,9 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
   }
 }
 
-@media (min-width:15rem) and (max-width:24.9375rem) {
+@media (min-width:15rem) and (max-width:37.4375rem) {
   .c5 {
     min-width: 2rem;
-  }
-}
-
-@media (min-width:25rem) and (max-width:37.4375rem) {
-  .c5 {
-    min-width: auto;
   }
 }
 
@@ -184,121 +183,97 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
 }
 
 @media (max-width:14.9375rem) {
-  .c9 {
+  .c10 {
     min-width: 2.5rem;
   }
 }
 
-@media (min-width:15rem) and (max-width:24.9375rem) {
-  .c9 {
-    min-width: 2rem;
-  }
-}
-
-@media (min-width:25rem) and (max-width:37.4375rem) {
-  .c9 {
+@media (min-width:15rem) and (max-width:37.4375rem) {
+  .c10 {
     min-width: 2rem;
   }
 }
 
 @media (min-width:37.5rem) and (max-width:80rem) {
-  .c9 {
+  .c10 {
     min-width: 3rem;
   }
 }
 
 @media (min-width:80rem) {
-  .c9 {
+  .c10 {
     min-width: auto;
   }
 }
 
 @media (max-width:14.9375rem) {
-  .c10 {
+  .c11 {
     min-width: 2.5rem;
   }
 }
 
-@media (min-width:15rem) and (max-width:24.9375rem) {
-  .c10 {
+@media (min-width:15rem) and (max-width:37.4375rem) {
+  .c11 {
     min-width: 2rem;
   }
 }
 
-@media (min-width:25rem) and (max-width:37.4375rem) {
-  .c10 {
-    min-width: auto;
-  }
-}
-
 @media (min-width:37.5rem) and (max-width:80rem) {
-  .c10 {
+  .c11 {
     min-width: auto;
   }
 }
 
 @media (min-width:80rem) {
-  .c10 {
+  .c11 {
     min-width: 3rem;
   }
 }
 
 @media (max-width:14.9375rem) {
-  .c11 {
+  .c12 {
     min-width: 2.5rem;
   }
 }
 
-@media (min-width:15rem) and (max-width:24.9375rem) {
-  .c11 {
-    min-width: 2rem;
-  }
-}
-
-@media (min-width:25rem) and (max-width:37.4375rem) {
-  .c11 {
+@media (min-width:15rem) and (max-width:37.4375rem) {
+  .c12 {
     min-width: 2rem;
   }
 }
 
 @media (min-width:37.5rem) and (max-width:80rem) {
-  .c11 {
+  .c12 {
     min-width: 3rem;
   }
 }
 
 @media (min-width:80rem) {
-  .c11 {
+  .c12 {
     min-width: auto;
   }
 }
 
 @media (max-width:14.9375rem) {
-  .c12 {
+  .c13 {
     min-width: 2.5rem;
   }
 }
 
-@media (min-width:15rem) and (max-width:24.9375rem) {
-  .c12 {
+@media (min-width:15rem) and (max-width:37.4375rem) {
+  .c13 {
     min-width: 2rem;
   }
 }
 
-@media (min-width:25rem) and (max-width:37.4375rem) {
-  .c12 {
-    min-width: auto;
-  }
-}
-
 @media (min-width:37.5rem) and (max-width:80rem) {
-  .c12 {
+  .c13 {
     min-width: auto;
   }
 }
 
 @media (min-width:80rem) {
-  .c12 {
+  .c13 {
     min-width: auto;
   }
 }
@@ -353,6 +328,9 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
           >
             ভিসা ফুরিয়ে যাওয়ায় ক্রিকেটার সাইফের জরিমানা
           </a>
+          <div
+            class="c9"
+          />
         </div>
       </li>
     </div>
@@ -365,7 +343,7 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
         class="c4"
       >
         <div
-          class="c9"
+          class="c10"
           dir="ltr"
         >
           <span
@@ -384,6 +362,9 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
           >
             ভিসা ফুরিয়ে যাওয়ায় ক্রিকেটার সাইফের জরিমানা
           </a>
+          <div
+            class="c9"
+          />
         </div>
       </li>
     </div>
@@ -415,37 +396,9 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
           >
             ভিসা ফুরিয়ে যাওয়ায় ক্রিকেটার সাইফের জরিমানা
           </a>
-        </div>
-      </li>
-    </div>
-    <div
-      as="li"
-      class="c3"
-      dir="ltr"
-    >
-      <li
-        class="c4"
-      >
-        <div
-          class="c9"
-          dir="ltr"
-        >
-          <span
-            class="c6"
-          >
-            ৪
-          </span>
-        </div>
-        <div
-          class="c7"
-          dir="ltr"
-        >
-          <a
-            class="c8"
-            href="https://www.bbc.com/bengali/articles/c6p3yp5zzmeo"
-          >
-            ভিসা ফুরিয়ে যাওয়ায় ক্রিকেটার সাইফের জরিমানা
-          </a>
+          <div
+            class="c9"
+          />
         </div>
       </li>
     </div>
@@ -464,7 +417,7 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
           <span
             class="c6"
           >
-            ৫
+            ৪
           </span>
         </div>
         <div
@@ -477,6 +430,9 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
           >
             ভিসা ফুরিয়ে যাওয়ায় ক্রিকেটার সাইফের জরিমানা
           </a>
+          <div
+            class="c9"
+          />
         </div>
       </li>
     </div>
@@ -490,6 +446,40 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
       >
         <div
           class="c11"
+          dir="ltr"
+        >
+          <span
+            class="c6"
+          >
+            ৫
+          </span>
+        </div>
+        <div
+          class="c7"
+          dir="ltr"
+        >
+          <a
+            class="c8"
+            href="https://www.bbc.com/bengali/articles/c6p3yp5zzmeo"
+          >
+            ভিসা ফুরিয়ে যাওয়ায় ক্রিকেটার সাইফের জরিমানা
+          </a>
+          <div
+            class="c9"
+          />
+        </div>
+      </li>
+    </div>
+    <div
+      as="li"
+      class="c3"
+      dir="ltr"
+    >
+      <li
+        class="c4"
+      >
+        <div
+          class="c12"
           dir="ltr"
         >
           <span
@@ -508,6 +498,9 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
           >
             ভিসা ফুরিয়ে যাওয়ায় ক্রিকেটার সাইফের জরিমানা
           </a>
+          <div
+            class="c9"
+          />
         </div>
       </li>
     </div>
@@ -520,7 +513,7 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
         class="c4"
       >
         <div
-          class="c12"
+          class="c13"
           dir="ltr"
         >
           <span
@@ -539,37 +532,9 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
           >
             ভিসা ফুরিয়ে যাওয়ায় ক্রিকেটার সাইফের জরিমানা
           </a>
-        </div>
-      </li>
-    </div>
-    <div
-      as="li"
-      class="c3"
-      dir="ltr"
-    >
-      <li
-        class="c4"
-      >
-        <div
-          class="c11"
-          dir="ltr"
-        >
-          <span
-            class="c6"
-          >
-            ৮
-          </span>
-        </div>
-        <div
-          class="c7"
-          dir="ltr"
-        >
-          <a
-            class="c8"
-            href="https://www.bbc.com/bengali/articles/c6p3yp5zzmeo"
-          >
-            ভিসা ফুরিয়ে যাওয়ায় ক্রিকেটার সাইফের জরিমানা
-          </a>
+          <div
+            class="c9"
+          />
         </div>
       </li>
     </div>
@@ -588,6 +553,40 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
           <span
             class="c6"
           >
+            ৮
+          </span>
+        </div>
+        <div
+          class="c7"
+          dir="ltr"
+        >
+          <a
+            class="c8"
+            href="https://www.bbc.com/bengali/articles/c6p3yp5zzmeo"
+          >
+            ভিসা ফুরিয়ে যাওয়ায় ক্রিকেটার সাইফের জরিমানা
+          </a>
+          <div
+            class="c9"
+          />
+        </div>
+      </li>
+    </div>
+    <div
+      as="li"
+      class="c3"
+      dir="ltr"
+    >
+      <li
+        class="c4"
+      >
+        <div
+          class="c13"
+          dir="ltr"
+        >
+          <span
+            class="c6"
+          >
             ৯
           </span>
         </div>
@@ -601,6 +600,9 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
           >
             ভিসা ফুরিয়ে যাওয়ায় ক্রিকেটার সাইফের জরিমানা
           </a>
+          <div
+            class="c9"
+          />
         </div>
       </li>
     </div>
@@ -613,7 +615,7 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
         class="c4"
       >
         <div
-          class="c11"
+          class="c12"
           dir="ltr"
         >
           <span
@@ -632,6 +634,9 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
           >
             ভিসা ফুরিয়ে যাওয়ায় ক্রিকেটার সাইফের জরিমানা
           </a>
+          <div
+            class="c9"
+          />
         </div>
       </li>
     </div>
@@ -660,6 +665,7 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
   color: #222222;
   -webkit-text-decoration: none;
   text-decoration: none;
+  margin-bottom: 0.5rem;
 }
 
 .c8:hover,
@@ -672,6 +678,10 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
   padding-bottom: 1.5rem;
   padding-left: 1rem;
   padding-right: 1rem;
+}
+
+.c9 {
+  padding-top: 0.5rem;
 }
 
 .c4 {
@@ -723,7 +733,7 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
 
 @media (min-width:25rem) and (max-width:37.4375rem) {
   .c3 {
-    width: calc(50%);
+    width: calc(100%);
     display: inline-block;
     vertical-align: top;
   }
@@ -759,7 +769,7 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
   }
 }
 
-@media (max-width:24.9375rem) {
+@media (max-width:37.4375rem) {
   .c2 {
     grid-template-rows: repeat( 10,[col-start] auto [col-end] );
   }
@@ -798,15 +808,9 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
   }
 }
 
-@media (min-width:15rem) and (max-width:24.9375rem) {
+@media (min-width:15rem) and (max-width:37.4375rem) {
   .c5 {
     min-width: 2.5rem;
-  }
-}
-
-@media (min-width:25rem) and (max-width:37.4375rem) {
-  .c5 {
-    min-width: auto;
   }
 }
 
@@ -823,121 +827,97 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
 }
 
 @media (max-width:14.9375rem) {
-  .c9 {
+  .c10 {
     min-width: 2.5rem;
   }
 }
 
-@media (min-width:15rem) and (max-width:24.9375rem) {
-  .c9 {
-    min-width: 2.5rem;
-  }
-}
-
-@media (min-width:25rem) and (max-width:37.4375rem) {
-  .c9 {
+@media (min-width:15rem) and (max-width:37.4375rem) {
+  .c10 {
     min-width: 2.5rem;
   }
 }
 
 @media (min-width:37.5rem) and (max-width:80rem) {
-  .c9 {
+  .c10 {
     min-width: 4rem;
   }
 }
 
 @media (min-width:80rem) {
-  .c9 {
+  .c10 {
     min-width: auto;
   }
 }
 
 @media (max-width:14.9375rem) {
-  .c10 {
+  .c11 {
     min-width: 2.5rem;
   }
 }
 
-@media (min-width:15rem) and (max-width:24.9375rem) {
-  .c10 {
+@media (min-width:15rem) and (max-width:37.4375rem) {
+  .c11 {
     min-width: 2.5rem;
-  }
-}
-
-@media (min-width:25rem) and (max-width:37.4375rem) {
-  .c10 {
-    min-width: auto;
   }
 }
 
 @media (min-width:37.5rem) and (max-width:80rem) {
-  .c10 {
+  .c11 {
     min-width: auto;
   }
 }
 
 @media (min-width:80rem) {
-  .c10 {
+  .c11 {
     min-width: 4.25rem;
   }
 }
 
 @media (max-width:14.9375rem) {
-  .c11 {
+  .c12 {
     min-width: 2.5rem;
   }
 }
 
-@media (min-width:15rem) and (max-width:24.9375rem) {
-  .c11 {
-    min-width: 2.5rem;
-  }
-}
-
-@media (min-width:25rem) and (max-width:37.4375rem) {
-  .c11 {
+@media (min-width:15rem) and (max-width:37.4375rem) {
+  .c12 {
     min-width: 2.5rem;
   }
 }
 
 @media (min-width:37.5rem) and (max-width:80rem) {
-  .c11 {
+  .c12 {
     min-width: 4rem;
   }
 }
 
 @media (min-width:80rem) {
-  .c11 {
+  .c12 {
     min-width: auto;
   }
 }
 
 @media (max-width:14.9375rem) {
-  .c12 {
+  .c13 {
     min-width: 2.5rem;
   }
 }
 
-@media (min-width:15rem) and (max-width:24.9375rem) {
-  .c12 {
+@media (min-width:15rem) and (max-width:37.4375rem) {
+  .c13 {
     min-width: 2.5rem;
-  }
-}
-
-@media (min-width:25rem) and (max-width:37.4375rem) {
-  .c12 {
-    min-width: auto;
   }
 }
 
 @media (min-width:37.5rem) and (max-width:80rem) {
-  .c12 {
+  .c13 {
     min-width: auto;
   }
 }
 
 @media (min-width:80rem) {
-  .c12 {
+  .c13 {
     min-width: auto;
   }
 }
@@ -992,6 +972,9 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
           >
             အောက်စဖို့ဒ် ဆရာတော် ပါမောက္ခ ဒေါက်တာအရှင်ဓမ္မသာမိ
           </a>
+          <div
+            class="c9"
+          />
         </div>
       </li>
     </div>
@@ -1004,7 +987,7 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
         class="c4"
       >
         <div
-          class="c9"
+          class="c10"
           dir="ltr"
         >
           <span
@@ -1023,6 +1006,9 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
           >
             အောက်စဖို့ဒ် ဆရာတော် ပါမောက္ခ ဒေါက်တာအရှင်ဓမ္မသာမိ
           </a>
+          <div
+            class="c9"
+          />
         </div>
       </li>
     </div>
@@ -1054,37 +1040,9 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
           >
             အောက်စဖို့ဒ် ဆရာတော် ပါမောက္ခ ဒေါက်တာအရှင်ဓမ္မသာမိ
           </a>
-        </div>
-      </li>
-    </div>
-    <div
-      as="li"
-      class="c3"
-      dir="ltr"
-    >
-      <li
-        class="c4"
-      >
-        <div
-          class="c9"
-          dir="ltr"
-        >
-          <span
-            class="c6"
-          >
-            ၄
-          </span>
-        </div>
-        <div
-          class="c7"
-          dir="ltr"
-        >
-          <a
-            class="c8"
-            href="https://www.bbc.com/burmese/articles/c3w1kwwmm5yo"
-          >
-            အောက်စဖို့ဒ် ဆရာတော် ပါမောက္ခ ဒေါက်တာအရှင်ဓမ္မသာမိ
-          </a>
+          <div
+            class="c9"
+          />
         </div>
       </li>
     </div>
@@ -1103,7 +1061,7 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
           <span
             class="c6"
           >
-            ၅
+            ၄
           </span>
         </div>
         <div
@@ -1116,6 +1074,9 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
           >
             အောက်စဖို့ဒ် ဆရာတော် ပါမောက္ခ ဒေါက်တာအရှင်ဓမ္မသာမိ
           </a>
+          <div
+            class="c9"
+          />
         </div>
       </li>
     </div>
@@ -1129,6 +1090,40 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
       >
         <div
           class="c11"
+          dir="ltr"
+        >
+          <span
+            class="c6"
+          >
+            ၅
+          </span>
+        </div>
+        <div
+          class="c7"
+          dir="ltr"
+        >
+          <a
+            class="c8"
+            href="https://www.bbc.com/burmese/articles/c3w1kwwmm5yo"
+          >
+            အောက်စဖို့ဒ် ဆရာတော် ပါမောက္ခ ဒေါက်တာအရှင်ဓမ္မသာမိ
+          </a>
+          <div
+            class="c9"
+          />
+        </div>
+      </li>
+    </div>
+    <div
+      as="li"
+      class="c3"
+      dir="ltr"
+    >
+      <li
+        class="c4"
+      >
+        <div
+          class="c12"
           dir="ltr"
         >
           <span
@@ -1147,6 +1142,9 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
           >
             အောက်စဖို့ဒ် ဆရာတော် ပါမောက္ခ ဒေါက်တာအရှင်ဓမ္မသာမိ
           </a>
+          <div
+            class="c9"
+          />
         </div>
       </li>
     </div>
@@ -1159,7 +1157,7 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
         class="c4"
       >
         <div
-          class="c12"
+          class="c13"
           dir="ltr"
         >
           <span
@@ -1178,37 +1176,9 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
           >
             အောက်စဖို့ဒ် ဆရာတော် ပါမောက္ခ ဒေါက်တာအရှင်ဓမ္မသာမိ
           </a>
-        </div>
-      </li>
-    </div>
-    <div
-      as="li"
-      class="c3"
-      dir="ltr"
-    >
-      <li
-        class="c4"
-      >
-        <div
-          class="c11"
-          dir="ltr"
-        >
-          <span
-            class="c6"
-          >
-            ၈
-          </span>
-        </div>
-        <div
-          class="c7"
-          dir="ltr"
-        >
-          <a
-            class="c8"
-            href="https://www.bbc.com/burmese/articles/c3w1kwwmm5yo"
-          >
-            အောက်စဖို့ဒ် ဆရာတော် ပါမောက္ခ ဒေါက်တာအရှင်ဓမ္မသာမိ
-          </a>
+          <div
+            class="c9"
+          />
         </div>
       </li>
     </div>
@@ -1227,6 +1197,40 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
           <span
             class="c6"
           >
+            ၈
+          </span>
+        </div>
+        <div
+          class="c7"
+          dir="ltr"
+        >
+          <a
+            class="c8"
+            href="https://www.bbc.com/burmese/articles/c3w1kwwmm5yo"
+          >
+            အောက်စဖို့ဒ် ဆရာတော် ပါမောက္ခ ဒေါက်တာအရှင်ဓမ္မသာမိ
+          </a>
+          <div
+            class="c9"
+          />
+        </div>
+      </li>
+    </div>
+    <div
+      as="li"
+      class="c3"
+      dir="ltr"
+    >
+      <li
+        class="c4"
+      >
+        <div
+          class="c13"
+          dir="ltr"
+        >
+          <span
+            class="c6"
+          >
             ၉
           </span>
         </div>
@@ -1240,6 +1244,9 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
           >
             အောက်စဖို့ဒ် ဆရာတော် ပါမောက္ခ ဒေါက်တာအရှင်ဓမ္မသာမိ
           </a>
+          <div
+            class="c9"
+          />
         </div>
       </li>
     </div>
@@ -1252,7 +1259,7 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
         class="c4"
       >
         <div
-          class="c11"
+          class="c12"
           dir="ltr"
         >
           <span
@@ -1271,6 +1278,9 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
           >
             အောက်စဖို့ဒ် ဆရာတော် ပါမောက္ခ ဒေါက်တာအရှင်ဓမ္မသာမိ
           </a>
+          <div
+            class="c9"
+          />
         </div>
       </li>
     </div>
@@ -1299,6 +1309,7 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
   color: #222222;
   -webkit-text-decoration: none;
   text-decoration: none;
+  margin-bottom: 0.5rem;
 }
 
 .c8:hover,
@@ -1311,6 +1322,10 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
   padding-bottom: 1.5rem;
   padding-left: 1rem;
   padding-right: 1rem;
+}
+
+.c9 {
+  padding-top: 0.5rem;
 }
 
 .c4 {
@@ -1362,7 +1377,7 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
 
 @media (min-width:25rem) and (max-width:37.4375rem) {
   .c3 {
-    width: calc(50%);
+    width: calc(100%);
     display: inline-block;
     vertical-align: top;
   }
@@ -1398,7 +1413,7 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
   }
 }
 
-@media (max-width:24.9375rem) {
+@media (max-width:37.4375rem) {
   .c2 {
     grid-template-rows: repeat( 10,[col-start] auto [col-end] );
   }
@@ -1437,15 +1452,9 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
   }
 }
 
-@media (min-width:15rem) and (max-width:24.9375rem) {
+@media (min-width:15rem) and (max-width:37.4375rem) {
   .c5 {
     min-width: 2.5rem;
-  }
-}
-
-@media (min-width:25rem) and (max-width:37.4375rem) {
-  .c5 {
-    min-width: auto;
   }
 }
 
@@ -1462,121 +1471,97 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
 }
 
 @media (max-width:14.9375rem) {
-  .c9 {
+  .c10 {
     min-width: 2.5rem;
   }
 }
 
-@media (min-width:15rem) and (max-width:24.9375rem) {
-  .c9 {
-    min-width: 2.5rem;
-  }
-}
-
-@media (min-width:25rem) and (max-width:37.4375rem) {
-  .c9 {
+@media (min-width:15rem) and (max-width:37.4375rem) {
+  .c10 {
     min-width: 2.5rem;
   }
 }
 
 @media (min-width:37.5rem) and (max-width:80rem) {
-  .c9 {
+  .c10 {
     min-width: 4rem;
   }
 }
 
 @media (min-width:80rem) {
-  .c9 {
+  .c10 {
     min-width: auto;
   }
 }
 
 @media (max-width:14.9375rem) {
-  .c10 {
+  .c11 {
     min-width: 2.5rem;
   }
 }
 
-@media (min-width:15rem) and (max-width:24.9375rem) {
-  .c10 {
+@media (min-width:15rem) and (max-width:37.4375rem) {
+  .c11 {
     min-width: 2.5rem;
-  }
-}
-
-@media (min-width:25rem) and (max-width:37.4375rem) {
-  .c10 {
-    min-width: auto;
   }
 }
 
 @media (min-width:37.5rem) and (max-width:80rem) {
-  .c10 {
+  .c11 {
     min-width: auto;
   }
 }
 
 @media (min-width:80rem) {
-  .c10 {
+  .c11 {
     min-width: 4.25rem;
   }
 }
 
 @media (max-width:14.9375rem) {
-  .c11 {
+  .c12 {
     min-width: 2.5rem;
   }
 }
 
-@media (min-width:15rem) and (max-width:24.9375rem) {
-  .c11 {
-    min-width: 2.5rem;
-  }
-}
-
-@media (min-width:25rem) and (max-width:37.4375rem) {
-  .c11 {
+@media (min-width:15rem) and (max-width:37.4375rem) {
+  .c12 {
     min-width: 2.5rem;
   }
 }
 
 @media (min-width:37.5rem) and (max-width:80rem) {
-  .c11 {
+  .c12 {
     min-width: 4rem;
   }
 }
 
 @media (min-width:80rem) {
-  .c11 {
+  .c12 {
     min-width: auto;
   }
 }
 
 @media (max-width:14.9375rem) {
-  .c12 {
+  .c13 {
     min-width: 2.5rem;
   }
 }
 
-@media (min-width:15rem) and (max-width:24.9375rem) {
-  .c12 {
+@media (min-width:15rem) and (max-width:37.4375rem) {
+  .c13 {
     min-width: 2.5rem;
-  }
-}
-
-@media (min-width:25rem) and (max-width:37.4375rem) {
-  .c12 {
-    min-width: auto;
   }
 }
 
 @media (min-width:37.5rem) and (max-width:80rem) {
-  .c12 {
+  .c13 {
     min-width: auto;
   }
 }
 
 @media (min-width:80rem) {
-  .c12 {
+  .c13 {
     min-width: auto;
   }
 }
@@ -1631,6 +1616,9 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
           >
             Could a computer ever create better art than a human?
           </a>
+          <div
+            class="c9"
+          />
         </div>
       </li>
     </div>
@@ -1643,7 +1631,7 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
         class="c4"
       >
         <div
-          class="c9"
+          class="c10"
           dir="ltr"
         >
           <span
@@ -1662,6 +1650,9 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
           >
             Could a computer ever create better art than a human?
           </a>
+          <div
+            class="c9"
+          />
         </div>
       </li>
     </div>
@@ -1693,37 +1684,9 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
           >
             Could a computer ever create better art than a human?
           </a>
-        </div>
-      </li>
-    </div>
-    <div
-      as="li"
-      class="c3"
-      dir="ltr"
-    >
-      <li
-        class="c4"
-      >
-        <div
-          class="c9"
-          dir="ltr"
-        >
-          <span
-            class="c6"
-          >
-            4
-          </span>
-        </div>
-        <div
-          class="c7"
-          dir="ltr"
-        >
-          <a
-            class="c8"
-            href="https://www.bbc.com/news/articles/cn7k01xp8kxo"
-          >
-            Could a computer ever create better art than a human?
-          </a>
+          <div
+            class="c9"
+          />
         </div>
       </li>
     </div>
@@ -1742,7 +1705,7 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
           <span
             class="c6"
           >
-            5
+            4
           </span>
         </div>
         <div
@@ -1755,6 +1718,9 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
           >
             Could a computer ever create better art than a human?
           </a>
+          <div
+            class="c9"
+          />
         </div>
       </li>
     </div>
@@ -1768,6 +1734,40 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
       >
         <div
           class="c11"
+          dir="ltr"
+        >
+          <span
+            class="c6"
+          >
+            5
+          </span>
+        </div>
+        <div
+          class="c7"
+          dir="ltr"
+        >
+          <a
+            class="c8"
+            href="https://www.bbc.com/news/articles/cn7k01xp8kxo"
+          >
+            Could a computer ever create better art than a human?
+          </a>
+          <div
+            class="c9"
+          />
+        </div>
+      </li>
+    </div>
+    <div
+      as="li"
+      class="c3"
+      dir="ltr"
+    >
+      <li
+        class="c4"
+      >
+        <div
+          class="c12"
           dir="ltr"
         >
           <span
@@ -1786,6 +1786,9 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
           >
             Could a computer ever create better art than a human?
           </a>
+          <div
+            class="c9"
+          />
         </div>
       </li>
     </div>
@@ -1798,7 +1801,7 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
         class="c4"
       >
         <div
-          class="c12"
+          class="c13"
           dir="ltr"
         >
           <span
@@ -1817,37 +1820,9 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
           >
             Could a computer ever create better art than a human?
           </a>
-        </div>
-      </li>
-    </div>
-    <div
-      as="li"
-      class="c3"
-      dir="ltr"
-    >
-      <li
-        class="c4"
-      >
-        <div
-          class="c11"
-          dir="ltr"
-        >
-          <span
-            class="c6"
-          >
-            8
-          </span>
-        </div>
-        <div
-          class="c7"
-          dir="ltr"
-        >
-          <a
-            class="c8"
-            href="https://www.bbc.com/news/articles/cn7k01xp8kxo"
-          >
-            Could a computer ever create better art than a human?
-          </a>
+          <div
+            class="c9"
+          />
         </div>
       </li>
     </div>
@@ -1866,6 +1841,40 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
           <span
             class="c6"
           >
+            8
+          </span>
+        </div>
+        <div
+          class="c7"
+          dir="ltr"
+        >
+          <a
+            class="c8"
+            href="https://www.bbc.com/news/articles/cn7k01xp8kxo"
+          >
+            Could a computer ever create better art than a human?
+          </a>
+          <div
+            class="c9"
+          />
+        </div>
+      </li>
+    </div>
+    <div
+      as="li"
+      class="c3"
+      dir="ltr"
+    >
+      <li
+        class="c4"
+      >
+        <div
+          class="c13"
+          dir="ltr"
+        >
+          <span
+            class="c6"
+          >
             9
           </span>
         </div>
@@ -1879,6 +1888,9 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
           >
             Could a computer ever create better art than a human?
           </a>
+          <div
+            class="c9"
+          />
         </div>
       </li>
     </div>
@@ -1891,7 +1903,7 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
         class="c4"
       >
         <div
-          class="c11"
+          class="c12"
           dir="ltr"
         >
           <span
@@ -1910,6 +1922,9 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
           >
             Could a computer ever create better art than a human?
           </a>
+          <div
+            class="c9"
+          />
         </div>
       </li>
     </div>
@@ -1938,6 +1953,7 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
   color: #222222;
   -webkit-text-decoration: none;
   text-decoration: none;
+  margin-bottom: 0.5rem;
 }
 
 .c8:hover,
@@ -1950,6 +1966,10 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
   padding-bottom: 1.5rem;
   padding-right: 1rem;
   padding-left: 1rem;
+}
+
+.c9 {
+  padding-top: 0.5rem;
 }
 
 .c4 {
@@ -2001,7 +2021,7 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
 
 @media (min-width:25rem) and (max-width:37.4375rem) {
   .c3 {
-    width: calc(50%);
+    width: calc(100%);
     display: inline-block;
     vertical-align: top;
   }
@@ -2037,7 +2057,7 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
   }
 }
 
-@media (max-width:24.9375rem) {
+@media (max-width:37.4375rem) {
   .c2 {
     grid-template-rows: repeat( 10,[col-start] auto [col-end] );
   }
@@ -2076,15 +2096,9 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
   }
 }
 
-@media (min-width:15rem) and (max-width:24.9375rem) {
+@media (min-width:15rem) and (max-width:37.4375rem) {
   .c5 {
     min-width: 2.5rem;
-  }
-}
-
-@media (min-width:25rem) and (max-width:37.4375rem) {
-  .c5 {
-    min-width: auto;
   }
 }
 
@@ -2101,121 +2115,97 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
 }
 
 @media (max-width:14.9375rem) {
-  .c9 {
+  .c10 {
     min-width: 2.5rem;
   }
 }
 
-@media (min-width:15rem) and (max-width:24.9375rem) {
-  .c9 {
-    min-width: 2.5rem;
-  }
-}
-
-@media (min-width:25rem) and (max-width:37.4375rem) {
-  .c9 {
+@media (min-width:15rem) and (max-width:37.4375rem) {
+  .c10 {
     min-width: 2.5rem;
   }
 }
 
 @media (min-width:37.5rem) and (max-width:80rem) {
-  .c9 {
+  .c10 {
     min-width: 4rem;
   }
 }
 
 @media (min-width:80rem) {
-  .c9 {
+  .c10 {
     min-width: auto;
   }
 }
 
 @media (max-width:14.9375rem) {
-  .c10 {
+  .c11 {
     min-width: 2.5rem;
   }
 }
 
-@media (min-width:15rem) and (max-width:24.9375rem) {
-  .c10 {
+@media (min-width:15rem) and (max-width:37.4375rem) {
+  .c11 {
     min-width: 2.5rem;
-  }
-}
-
-@media (min-width:25rem) and (max-width:37.4375rem) {
-  .c10 {
-    min-width: auto;
   }
 }
 
 @media (min-width:37.5rem) and (max-width:80rem) {
-  .c10 {
+  .c11 {
     min-width: auto;
   }
 }
 
 @media (min-width:80rem) {
-  .c10 {
+  .c11 {
     min-width: 4.25rem;
   }
 }
 
 @media (max-width:14.9375rem) {
-  .c11 {
+  .c12 {
     min-width: 2.5rem;
   }
 }
 
-@media (min-width:15rem) and (max-width:24.9375rem) {
-  .c11 {
-    min-width: 2.5rem;
-  }
-}
-
-@media (min-width:25rem) and (max-width:37.4375rem) {
-  .c11 {
+@media (min-width:15rem) and (max-width:37.4375rem) {
+  .c12 {
     min-width: 2.5rem;
   }
 }
 
 @media (min-width:37.5rem) and (max-width:80rem) {
-  .c11 {
+  .c12 {
     min-width: 4rem;
   }
 }
 
 @media (min-width:80rem) {
-  .c11 {
+  .c12 {
     min-width: auto;
   }
 }
 
 @media (max-width:14.9375rem) {
-  .c12 {
+  .c13 {
     min-width: 2.5rem;
   }
 }
 
-@media (min-width:15rem) and (max-width:24.9375rem) {
-  .c12 {
+@media (min-width:15rem) and (max-width:37.4375rem) {
+  .c13 {
     min-width: 2.5rem;
-  }
-}
-
-@media (min-width:25rem) and (max-width:37.4375rem) {
-  .c12 {
-    min-width: auto;
   }
 }
 
 @media (min-width:37.5rem) and (max-width:80rem) {
-  .c12 {
+  .c13 {
     min-width: auto;
   }
 }
 
 @media (min-width:80rem) {
-  .c12 {
+  .c13 {
     min-width: auto;
   }
 }
@@ -2270,6 +2260,9 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
           >
             در این جشنواره برای نخستین بار از کارگران افغانستان در شهر تهران تقدیر شد
           </a>
+          <div
+            class="c9"
+          />
         </div>
       </li>
     </div>
@@ -2282,7 +2275,7 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
         class="c4"
       >
         <div
-          class="c9"
+          class="c10"
           dir="rtl"
         >
           <span
@@ -2301,6 +2294,9 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
           >
             در این جشنواره برای نخستین بار از کارگران افغانستان در شهر تهران تقدیر شد
           </a>
+          <div
+            class="c9"
+          />
         </div>
       </li>
     </div>
@@ -2332,37 +2328,9 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
           >
             در این جشنواره برای نخستین بار از کارگران افغانستان در شهر تهران تقدیر شد
           </a>
-        </div>
-      </li>
-    </div>
-    <div
-      as="li"
-      class="c3"
-      dir="rtl"
-    >
-      <li
-        class="c4"
-      >
-        <div
-          class="c9"
-          dir="rtl"
-        >
-          <span
-            class="c6"
-          >
-            ۴
-          </span>
-        </div>
-        <div
-          class="c7"
-          dir="rtl"
-        >
-          <a
-            class="c8"
-            href="https://www.bbc.com/persian/articles/cej3lzd5e0go"
-          >
-            در این جشنواره برای نخستین بار از کارگران افغانستان در شهر تهران تقدیر شد
-          </a>
+          <div
+            class="c9"
+          />
         </div>
       </li>
     </div>
@@ -2381,7 +2349,7 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
           <span
             class="c6"
           >
-            ۵
+            ۴
           </span>
         </div>
         <div
@@ -2394,6 +2362,9 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
           >
             در این جشنواره برای نخستین بار از کارگران افغانستان در شهر تهران تقدیر شد
           </a>
+          <div
+            class="c9"
+          />
         </div>
       </li>
     </div>
@@ -2407,6 +2378,40 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
       >
         <div
           class="c11"
+          dir="rtl"
+        >
+          <span
+            class="c6"
+          >
+            ۵
+          </span>
+        </div>
+        <div
+          class="c7"
+          dir="rtl"
+        >
+          <a
+            class="c8"
+            href="https://www.bbc.com/persian/articles/cej3lzd5e0go"
+          >
+            در این جشنواره برای نخستین بار از کارگران افغانستان در شهر تهران تقدیر شد
+          </a>
+          <div
+            class="c9"
+          />
+        </div>
+      </li>
+    </div>
+    <div
+      as="li"
+      class="c3"
+      dir="rtl"
+    >
+      <li
+        class="c4"
+      >
+        <div
+          class="c12"
           dir="rtl"
         >
           <span
@@ -2425,6 +2430,9 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
           >
             در این جشنواره برای نخستین بار از کارگران افغانستان در شهر تهران تقدیر شد
           </a>
+          <div
+            class="c9"
+          />
         </div>
       </li>
     </div>
@@ -2437,7 +2445,7 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
         class="c4"
       >
         <div
-          class="c12"
+          class="c13"
           dir="rtl"
         >
           <span
@@ -2456,37 +2464,9 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
           >
             در این جشنواره برای نخستین بار از کارگران افغانستان در شهر تهران تقدیر شد
           </a>
-        </div>
-      </li>
-    </div>
-    <div
-      as="li"
-      class="c3"
-      dir="rtl"
-    >
-      <li
-        class="c4"
-      >
-        <div
-          class="c11"
-          dir="rtl"
-        >
-          <span
-            class="c6"
-          >
-            ۸
-          </span>
-        </div>
-        <div
-          class="c7"
-          dir="rtl"
-        >
-          <a
-            class="c8"
-            href="https://www.bbc.com/persian/articles/cej3lzd5e0go"
-          >
-            در این جشنواره برای نخستین بار از کارگران افغانستان در شهر تهران تقدیر شد
-          </a>
+          <div
+            class="c9"
+          />
         </div>
       </li>
     </div>
@@ -2505,6 +2485,40 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
           <span
             class="c6"
           >
+            ۸
+          </span>
+        </div>
+        <div
+          class="c7"
+          dir="rtl"
+        >
+          <a
+            class="c8"
+            href="https://www.bbc.com/persian/articles/cej3lzd5e0go"
+          >
+            در این جشنواره برای نخستین بار از کارگران افغانستان در شهر تهران تقدیر شد
+          </a>
+          <div
+            class="c9"
+          />
+        </div>
+      </li>
+    </div>
+    <div
+      as="li"
+      class="c3"
+      dir="rtl"
+    >
+      <li
+        class="c4"
+      >
+        <div
+          class="c13"
+          dir="rtl"
+        >
+          <span
+            class="c6"
+          >
             ۹
           </span>
         </div>
@@ -2518,6 +2532,9 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
           >
             در این جشنواره برای نخستین بار از کارگران افغانستان در شهر تهران تقدیر شد
           </a>
+          <div
+            class="c9"
+          />
         </div>
       </li>
     </div>
@@ -2530,7 +2547,7 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
         class="c4"
       >
         <div
-          class="c11"
+          class="c12"
           dir="rtl"
         >
           <span
@@ -2549,6 +2566,9 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
           >
             در این جشنواره برای نخستین بار از کارگران افغانستان در شهر تهران تقدیر شد
           </a>
+          <div
+            class="c9"
+          />
         </div>
       </li>
     </div>

@@ -10,6 +10,7 @@ exports[`MostReadItemWrapper should render ltr correctly with 10 items 1`] = `
   color: #222222;
   -webkit-text-decoration: none;
   text-decoration: none;
+  margin-bottom: 0.5rem;
 }
 
 .c5:hover,
@@ -22,6 +23,10 @@ exports[`MostReadItemWrapper should render ltr correctly with 10 items 1`] = `
   padding-bottom: 1.5rem;
   padding-left: 1rem;
   padding-right: 1rem;
+}
+
+.c6 {
+  padding-top: 0.5rem;
 }
 
 .c1 {
@@ -66,7 +71,7 @@ exports[`MostReadItemWrapper should render ltr correctly with 10 items 1`] = `
 
 @media (min-width:25rem) and (max-width:37.4375rem) {
   .c0 {
-    width: calc(50%);
+    width: calc(100%);
     display: inline-block;
     vertical-align: top;
   }
@@ -128,15 +133,9 @@ exports[`MostReadItemWrapper should render ltr correctly with 10 items 1`] = `
   }
 }
 
-@media (min-width:15rem) and (max-width:24.9375rem) {
+@media (min-width:15rem) and (max-width:37.4375rem) {
   .c2 {
     min-width: 2.5rem;
-  }
-}
-
-@media (min-width:25rem) and (max-width:37.4375rem) {
-  .c2 {
-    min-width: auto;
   }
 }
 
@@ -153,121 +152,97 @@ exports[`MostReadItemWrapper should render ltr correctly with 10 items 1`] = `
 }
 
 @media (max-width:14.9375rem) {
-  .c6 {
+  .c7 {
     min-width: 2.5rem;
   }
 }
 
-@media (min-width:15rem) and (max-width:24.9375rem) {
-  .c6 {
-    min-width: 2.5rem;
-  }
-}
-
-@media (min-width:25rem) and (max-width:37.4375rem) {
-  .c6 {
+@media (min-width:15rem) and (max-width:37.4375rem) {
+  .c7 {
     min-width: 2.5rem;
   }
 }
 
 @media (min-width:37.5rem) and (max-width:80rem) {
-  .c6 {
+  .c7 {
     min-width: 4rem;
   }
 }
 
 @media (min-width:80rem) {
-  .c6 {
+  .c7 {
     min-width: auto;
   }
 }
 
 @media (max-width:14.9375rem) {
-  .c7 {
+  .c8 {
     min-width: 2.5rem;
   }
 }
 
-@media (min-width:15rem) and (max-width:24.9375rem) {
-  .c7 {
+@media (min-width:15rem) and (max-width:37.4375rem) {
+  .c8 {
     min-width: 2.5rem;
-  }
-}
-
-@media (min-width:25rem) and (max-width:37.4375rem) {
-  .c7 {
-    min-width: auto;
   }
 }
 
 @media (min-width:37.5rem) and (max-width:80rem) {
-  .c7 {
+  .c8 {
     min-width: auto;
   }
 }
 
 @media (min-width:80rem) {
-  .c7 {
+  .c8 {
     min-width: 4.25rem;
   }
 }
 
 @media (max-width:14.9375rem) {
-  .c8 {
+  .c9 {
     min-width: 2.5rem;
   }
 }
 
-@media (min-width:15rem) and (max-width:24.9375rem) {
-  .c8 {
-    min-width: 2.5rem;
-  }
-}
-
-@media (min-width:25rem) and (max-width:37.4375rem) {
-  .c8 {
+@media (min-width:15rem) and (max-width:37.4375rem) {
+  .c9 {
     min-width: 2.5rem;
   }
 }
 
 @media (min-width:37.5rem) and (max-width:80rem) {
-  .c8 {
+  .c9 {
     min-width: 4rem;
   }
 }
 
 @media (min-width:80rem) {
-  .c8 {
+  .c9 {
     min-width: auto;
   }
 }
 
 @media (max-width:14.9375rem) {
-  .c9 {
+  .c10 {
     min-width: 2.5rem;
   }
 }
 
-@media (min-width:15rem) and (max-width:24.9375rem) {
-  .c9 {
+@media (min-width:15rem) and (max-width:37.4375rem) {
+  .c10 {
     min-width: 2.5rem;
-  }
-}
-
-@media (min-width:25rem) and (max-width:37.4375rem) {
-  .c9 {
-    min-width: auto;
   }
 }
 
 @media (min-width:37.5rem) and (max-width:80rem) {
-  .c9 {
+  .c10 {
     min-width: auto;
   }
 }
 
 @media (min-width:80rem) {
-  .c9 {
+  .c10 {
     min-width: auto;
   }
 }
@@ -315,6 +290,9 @@ exports[`MostReadItemWrapper should render ltr correctly with 10 items 1`] = `
         >
           Could a computer ever create better art than a human?
         </a>
+        <div
+          class="c6"
+        />
       </div>
     </li>
   </div>
@@ -327,7 +305,7 @@ exports[`MostReadItemWrapper should render ltr correctly with 10 items 1`] = `
       class="c1"
     >
       <div
-        class="c6"
+        class="c7"
         dir="ltr"
       >
         <span
@@ -346,6 +324,9 @@ exports[`MostReadItemWrapper should render ltr correctly with 10 items 1`] = `
         >
           Could a computer ever create better art than a human?
         </a>
+        <div
+          class="c6"
+        />
       </div>
     </li>
   </div>
@@ -377,37 +358,9 @@ exports[`MostReadItemWrapper should render ltr correctly with 10 items 1`] = `
         >
           Could a computer ever create better art than a human?
         </a>
-      </div>
-    </li>
-  </div>
-  <div
-    as="li"
-    class="c0"
-    dir="ltr"
-  >
-    <li
-      class="c1"
-    >
-      <div
-        class="c6"
-        dir="ltr"
-      >
-        <span
-          class="c3"
-        >
-          4
-        </span>
-      </div>
-      <div
-        class="c4"
-        dir="ltr"
-      >
-        <a
-          class="c5"
-          href="https://www.bbc.com/news/articles/cn7k01xp8kxo"
-        >
-          Could a computer ever create better art than a human?
-        </a>
+        <div
+          class="c6"
+        />
       </div>
     </li>
   </div>
@@ -426,7 +379,7 @@ exports[`MostReadItemWrapper should render ltr correctly with 10 items 1`] = `
         <span
           class="c3"
         >
-          5
+          4
         </span>
       </div>
       <div
@@ -439,6 +392,9 @@ exports[`MostReadItemWrapper should render ltr correctly with 10 items 1`] = `
         >
           Could a computer ever create better art than a human?
         </a>
+        <div
+          class="c6"
+        />
       </div>
     </li>
   </div>
@@ -452,6 +408,40 @@ exports[`MostReadItemWrapper should render ltr correctly with 10 items 1`] = `
     >
       <div
         class="c8"
+        dir="ltr"
+      >
+        <span
+          class="c3"
+        >
+          5
+        </span>
+      </div>
+      <div
+        class="c4"
+        dir="ltr"
+      >
+        <a
+          class="c5"
+          href="https://www.bbc.com/news/articles/cn7k01xp8kxo"
+        >
+          Could a computer ever create better art than a human?
+        </a>
+        <div
+          class="c6"
+        />
+      </div>
+    </li>
+  </div>
+  <div
+    as="li"
+    class="c0"
+    dir="ltr"
+  >
+    <li
+      class="c1"
+    >
+      <div
+        class="c9"
         dir="ltr"
       >
         <span
@@ -470,6 +460,9 @@ exports[`MostReadItemWrapper should render ltr correctly with 10 items 1`] = `
         >
           Could a computer ever create better art than a human?
         </a>
+        <div
+          class="c6"
+        />
       </div>
     </li>
   </div>
@@ -482,7 +475,7 @@ exports[`MostReadItemWrapper should render ltr correctly with 10 items 1`] = `
       class="c1"
     >
       <div
-        class="c9"
+        class="c10"
         dir="ltr"
       >
         <span
@@ -501,37 +494,9 @@ exports[`MostReadItemWrapper should render ltr correctly with 10 items 1`] = `
         >
           Could a computer ever create better art than a human?
         </a>
-      </div>
-    </li>
-  </div>
-  <div
-    as="li"
-    class="c0"
-    dir="ltr"
-  >
-    <li
-      class="c1"
-    >
-      <div
-        class="c8"
-        dir="ltr"
-      >
-        <span
-          class="c3"
-        >
-          8
-        </span>
-      </div>
-      <div
-        class="c4"
-        dir="ltr"
-      >
-        <a
-          class="c5"
-          href="https://www.bbc.com/news/articles/cn7k01xp8kxo"
-        >
-          Could a computer ever create better art than a human?
-        </a>
+        <div
+          class="c6"
+        />
       </div>
     </li>
   </div>
@@ -550,6 +515,40 @@ exports[`MostReadItemWrapper should render ltr correctly with 10 items 1`] = `
         <span
           class="c3"
         >
+          8
+        </span>
+      </div>
+      <div
+        class="c4"
+        dir="ltr"
+      >
+        <a
+          class="c5"
+          href="https://www.bbc.com/news/articles/cn7k01xp8kxo"
+        >
+          Could a computer ever create better art than a human?
+        </a>
+        <div
+          class="c6"
+        />
+      </div>
+    </li>
+  </div>
+  <div
+    as="li"
+    class="c0"
+    dir="ltr"
+  >
+    <li
+      class="c1"
+    >
+      <div
+        class="c10"
+        dir="ltr"
+      >
+        <span
+          class="c3"
+        >
           9
         </span>
       </div>
@@ -563,6 +562,9 @@ exports[`MostReadItemWrapper should render ltr correctly with 10 items 1`] = `
         >
           Could a computer ever create better art than a human?
         </a>
+        <div
+          class="c6"
+        />
       </div>
     </li>
   </div>
@@ -575,7 +577,7 @@ exports[`MostReadItemWrapper should render ltr correctly with 10 items 1`] = `
       class="c1"
     >
       <div
-        class="c8"
+        class="c9"
         dir="ltr"
       >
         <span
@@ -594,6 +596,9 @@ exports[`MostReadItemWrapper should render ltr correctly with 10 items 1`] = `
         >
           Could a computer ever create better art than a human?
         </a>
+        <div
+          class="c6"
+        />
       </div>
     </li>
   </div>
@@ -610,6 +615,7 @@ exports[`MostReadItemWrapper should render rtl correctly with 10 items 1`] = `
   color: #222222;
   -webkit-text-decoration: none;
   text-decoration: none;
+  margin-bottom: 0.5rem;
 }
 
 .c5:hover,
@@ -622,6 +628,10 @@ exports[`MostReadItemWrapper should render rtl correctly with 10 items 1`] = `
   padding-bottom: 1.5rem;
   padding-right: 1rem;
   padding-left: 1rem;
+}
+
+.c6 {
+  padding-top: 0.5rem;
 }
 
 .c1 {
@@ -666,7 +676,7 @@ exports[`MostReadItemWrapper should render rtl correctly with 10 items 1`] = `
 
 @media (min-width:25rem) and (max-width:37.4375rem) {
   .c0 {
-    width: calc(50%);
+    width: calc(100%);
     display: inline-block;
     vertical-align: top;
   }
@@ -728,15 +738,9 @@ exports[`MostReadItemWrapper should render rtl correctly with 10 items 1`] = `
   }
 }
 
-@media (min-width:15rem) and (max-width:24.9375rem) {
+@media (min-width:15rem) and (max-width:37.4375rem) {
   .c2 {
     min-width: 2.5rem;
-  }
-}
-
-@media (min-width:25rem) and (max-width:37.4375rem) {
-  .c2 {
-    min-width: auto;
   }
 }
 
@@ -753,121 +757,97 @@ exports[`MostReadItemWrapper should render rtl correctly with 10 items 1`] = `
 }
 
 @media (max-width:14.9375rem) {
-  .c6 {
+  .c7 {
     min-width: 2.5rem;
   }
 }
 
-@media (min-width:15rem) and (max-width:24.9375rem) {
-  .c6 {
-    min-width: 2.5rem;
-  }
-}
-
-@media (min-width:25rem) and (max-width:37.4375rem) {
-  .c6 {
+@media (min-width:15rem) and (max-width:37.4375rem) {
+  .c7 {
     min-width: 2.5rem;
   }
 }
 
 @media (min-width:37.5rem) and (max-width:80rem) {
-  .c6 {
+  .c7 {
     min-width: 4rem;
   }
 }
 
 @media (min-width:80rem) {
-  .c6 {
+  .c7 {
     min-width: auto;
   }
 }
 
 @media (max-width:14.9375rem) {
-  .c7 {
+  .c8 {
     min-width: 2.5rem;
   }
 }
 
-@media (min-width:15rem) and (max-width:24.9375rem) {
-  .c7 {
+@media (min-width:15rem) and (max-width:37.4375rem) {
+  .c8 {
     min-width: 2.5rem;
-  }
-}
-
-@media (min-width:25rem) and (max-width:37.4375rem) {
-  .c7 {
-    min-width: auto;
   }
 }
 
 @media (min-width:37.5rem) and (max-width:80rem) {
-  .c7 {
+  .c8 {
     min-width: auto;
   }
 }
 
 @media (min-width:80rem) {
-  .c7 {
+  .c8 {
     min-width: 4.25rem;
   }
 }
 
 @media (max-width:14.9375rem) {
-  .c8 {
+  .c9 {
     min-width: 2.5rem;
   }
 }
 
-@media (min-width:15rem) and (max-width:24.9375rem) {
-  .c8 {
-    min-width: 2.5rem;
-  }
-}
-
-@media (min-width:25rem) and (max-width:37.4375rem) {
-  .c8 {
+@media (min-width:15rem) and (max-width:37.4375rem) {
+  .c9 {
     min-width: 2.5rem;
   }
 }
 
 @media (min-width:37.5rem) and (max-width:80rem) {
-  .c8 {
+  .c9 {
     min-width: 4rem;
   }
 }
 
 @media (min-width:80rem) {
-  .c8 {
+  .c9 {
     min-width: auto;
   }
 }
 
 @media (max-width:14.9375rem) {
-  .c9 {
+  .c10 {
     min-width: 2.5rem;
   }
 }
 
-@media (min-width:15rem) and (max-width:24.9375rem) {
-  .c9 {
+@media (min-width:15rem) and (max-width:37.4375rem) {
+  .c10 {
     min-width: 2.5rem;
-  }
-}
-
-@media (min-width:25rem) and (max-width:37.4375rem) {
-  .c9 {
-    min-width: auto;
   }
 }
 
 @media (min-width:37.5rem) and (max-width:80rem) {
-  .c9 {
+  .c10 {
     min-width: auto;
   }
 }
 
 @media (min-width:80rem) {
-  .c9 {
+  .c10 {
     min-width: auto;
   }
 }
@@ -915,6 +895,9 @@ exports[`MostReadItemWrapper should render rtl correctly with 10 items 1`] = `
         >
           در این جشنواره برای نخستین بار از کارگران افغانستان در شهر تهران تقدیر شد
         </a>
+        <div
+          class="c6"
+        />
       </div>
     </li>
   </div>
@@ -927,7 +910,7 @@ exports[`MostReadItemWrapper should render rtl correctly with 10 items 1`] = `
       class="c1"
     >
       <div
-        class="c6"
+        class="c7"
         dir="rtl"
       >
         <span
@@ -946,6 +929,9 @@ exports[`MostReadItemWrapper should render rtl correctly with 10 items 1`] = `
         >
           در این جشنواره برای نخستین بار از کارگران افغانستان در شهر تهران تقدیر شد
         </a>
+        <div
+          class="c6"
+        />
       </div>
     </li>
   </div>
@@ -977,37 +963,9 @@ exports[`MostReadItemWrapper should render rtl correctly with 10 items 1`] = `
         >
           در این جشنواره برای نخستین بار از کارگران افغانستان در شهر تهران تقدیر شد
         </a>
-      </div>
-    </li>
-  </div>
-  <div
-    as="li"
-    class="c0"
-    dir="rtl"
-  >
-    <li
-      class="c1"
-    >
-      <div
-        class="c6"
-        dir="rtl"
-      >
-        <span
-          class="c3"
-        >
-          ۴
-        </span>
-      </div>
-      <div
-        class="c4"
-        dir="rtl"
-      >
-        <a
-          class="c5"
-          href="https://www.bbc.com/persian/articles/cej3lzd5e0go"
-        >
-          در این جشنواره برای نخستین بار از کارگران افغانستان در شهر تهران تقدیر شد
-        </a>
+        <div
+          class="c6"
+        />
       </div>
     </li>
   </div>
@@ -1026,7 +984,7 @@ exports[`MostReadItemWrapper should render rtl correctly with 10 items 1`] = `
         <span
           class="c3"
         >
-          ۵
+          ۴
         </span>
       </div>
       <div
@@ -1039,6 +997,9 @@ exports[`MostReadItemWrapper should render rtl correctly with 10 items 1`] = `
         >
           در این جشنواره برای نخستین بار از کارگران افغانستان در شهر تهران تقدیر شد
         </a>
+        <div
+          class="c6"
+        />
       </div>
     </li>
   </div>
@@ -1052,6 +1013,40 @@ exports[`MostReadItemWrapper should render rtl correctly with 10 items 1`] = `
     >
       <div
         class="c8"
+        dir="rtl"
+      >
+        <span
+          class="c3"
+        >
+          ۵
+        </span>
+      </div>
+      <div
+        class="c4"
+        dir="rtl"
+      >
+        <a
+          class="c5"
+          href="https://www.bbc.com/persian/articles/cej3lzd5e0go"
+        >
+          در این جشنواره برای نخستین بار از کارگران افغانستان در شهر تهران تقدیر شد
+        </a>
+        <div
+          class="c6"
+        />
+      </div>
+    </li>
+  </div>
+  <div
+    as="li"
+    class="c0"
+    dir="rtl"
+  >
+    <li
+      class="c1"
+    >
+      <div
+        class="c9"
         dir="rtl"
       >
         <span
@@ -1070,6 +1065,9 @@ exports[`MostReadItemWrapper should render rtl correctly with 10 items 1`] = `
         >
           در این جشنواره برای نخستین بار از کارگران افغانستان در شهر تهران تقدیر شد
         </a>
+        <div
+          class="c6"
+        />
       </div>
     </li>
   </div>
@@ -1082,7 +1080,7 @@ exports[`MostReadItemWrapper should render rtl correctly with 10 items 1`] = `
       class="c1"
     >
       <div
-        class="c9"
+        class="c10"
         dir="rtl"
       >
         <span
@@ -1101,37 +1099,9 @@ exports[`MostReadItemWrapper should render rtl correctly with 10 items 1`] = `
         >
           در این جشنواره برای نخستین بار از کارگران افغانستان در شهر تهران تقدیر شد
         </a>
-      </div>
-    </li>
-  </div>
-  <div
-    as="li"
-    class="c0"
-    dir="rtl"
-  >
-    <li
-      class="c1"
-    >
-      <div
-        class="c8"
-        dir="rtl"
-      >
-        <span
-          class="c3"
-        >
-          ۸
-        </span>
-      </div>
-      <div
-        class="c4"
-        dir="rtl"
-      >
-        <a
-          class="c5"
-          href="https://www.bbc.com/persian/articles/cej3lzd5e0go"
-        >
-          در این جشنواره برای نخستین بار از کارگران افغانستان در شهر تهران تقدیر شد
-        </a>
+        <div
+          class="c6"
+        />
       </div>
     </li>
   </div>
@@ -1150,6 +1120,40 @@ exports[`MostReadItemWrapper should render rtl correctly with 10 items 1`] = `
         <span
           class="c3"
         >
+          ۸
+        </span>
+      </div>
+      <div
+        class="c4"
+        dir="rtl"
+      >
+        <a
+          class="c5"
+          href="https://www.bbc.com/persian/articles/cej3lzd5e0go"
+        >
+          در این جشنواره برای نخستین بار از کارگران افغانستان در شهر تهران تقدیر شد
+        </a>
+        <div
+          class="c6"
+        />
+      </div>
+    </li>
+  </div>
+  <div
+    as="li"
+    class="c0"
+    dir="rtl"
+  >
+    <li
+      class="c1"
+    >
+      <div
+        class="c10"
+        dir="rtl"
+      >
+        <span
+          class="c3"
+        >
           ۹
         </span>
       </div>
@@ -1163,6 +1167,9 @@ exports[`MostReadItemWrapper should render rtl correctly with 10 items 1`] = `
         >
           در این جشنواره برای نخستین بار از کارگران افغانستان در شهر تهران تقدیر شد
         </a>
+        <div
+          class="c6"
+        />
       </div>
     </li>
   </div>
@@ -1175,7 +1182,7 @@ exports[`MostReadItemWrapper should render rtl correctly with 10 items 1`] = `
       class="c1"
     >
       <div
-        class="c8"
+        class="c9"
         dir="rtl"
       >
         <span
@@ -1194,6 +1201,9 @@ exports[`MostReadItemWrapper should render rtl correctly with 10 items 1`] = `
         >
           در این جشنواره برای نخستین بار از کارگران افغانستان در شهر تهران تقدیر شد
         </a>
+        <div
+          class="c6"
+        />
       </div>
     </li>
   </div>
@@ -1210,6 +1220,7 @@ exports[`MostReadLink should render ltr correctly 1`] = `
   color: #222222;
   -webkit-text-decoration: none;
   text-decoration: none;
+  margin-bottom: 0.5rem;
 }
 
 .c1:hover,
@@ -1222,6 +1233,10 @@ exports[`MostReadLink should render ltr correctly 1`] = `
   padding-bottom: 1.5rem;
   padding-left: 1rem;
   padding-right: 1rem;
+}
+
+.c2 {
+  padding-top: 0.5rem;
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
@@ -1254,6 +1269,9 @@ exports[`MostReadLink should render ltr correctly 1`] = `
   >
     Could a computer ever create better art than a human?
   </a>
+  <div
+    class="c2"
+  />
 </div>
 `;
 
@@ -1267,6 +1285,7 @@ exports[`MostReadLink should render rtl correctly 1`] = `
   color: #222222;
   -webkit-text-decoration: none;
   text-decoration: none;
+  margin-bottom: 0.5rem;
 }
 
 .c1:hover,
@@ -1279,6 +1298,10 @@ exports[`MostReadLink should render rtl correctly 1`] = `
   padding-bottom: 1.5rem;
   padding-right: 1rem;
   padding-left: 1rem;
+}
+
+.c2 {
+  padding-top: 0.5rem;
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
@@ -1311,6 +1334,9 @@ exports[`MostReadLink should render rtl correctly 1`] = `
   >
     لماذا يخجل البعض من اسم قريته في مصر؟
   </a>
+  <div
+    class="c2"
+  />
 </div>
 `;
 
@@ -1324,6 +1350,7 @@ exports[`MostReadLink should render with last updated date correctly 1`] = `
   color: #222222;
   -webkit-text-decoration: none;
   text-decoration: none;
+  margin-bottom: 0.5rem;
 }
 
 .c1:hover,
@@ -1339,6 +1366,10 @@ exports[`MostReadLink should render with last updated date correctly 1`] = `
 }
 
 .c2 {
+  padding-top: 0.5rem;
+}
+
+.c3 {
   font-size: 0.875rem;
   line-height: 1.125rem;
   color: #6E6E73;
@@ -1369,14 +1400,14 @@ exports[`MostReadLink should render with last updated date correctly 1`] = `
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
-  .c2 {
+  .c3 {
     font-size: 0.875rem;
     line-height: 1.125rem;
   }
 }
 
 @media (min-width:37.5rem) {
-  .c2 {
+  .c3 {
     font-size: 0.8125rem;
     line-height: 1rem;
   }
@@ -1392,11 +1423,15 @@ exports[`MostReadLink should render with last updated date correctly 1`] = `
   >
     Could a computer ever create better art than a human?
   </a>
-  <time
+  <div
     class="c2"
-    datetime="2019-03-01T14:00+00:00"
   >
-    Last updated: 5th November 2016
-  </time>
+    <time
+      class="c3"
+      datetime="2019-03-01T14:00+00:00"
+    >
+      Last updated: 5th November 2016
+    </time>
+  </div>
 </div>
 `;
