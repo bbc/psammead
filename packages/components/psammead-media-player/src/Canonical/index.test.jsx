@@ -15,7 +15,7 @@ describe('Media Player: Canonical', () => {
     />,
   );
 
-  it('should render a timeout message if timeout timer expires', () => {
+  it('should render a timeout message if the timeout expires', () => {
     jest.useFakeTimers();
     const { getByText } = render(
       <Canonical
