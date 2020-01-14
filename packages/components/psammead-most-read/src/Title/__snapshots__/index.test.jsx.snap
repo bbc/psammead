@@ -24,19 +24,13 @@ exports[`Most read title should render with BBCNassimArabic 1`] = `
   }
 }
 
-<section
-  aria-labelledby="most-read-title"
-  class=""
-  role="region"
+<h2
+  class="c0"
+  dir="rtl"
+  id="most-read-title"
 >
-  <h2
-    class="c0"
-    dir="rtl"
-    id="most-read-title"
-  >
-    Most Read
-  </h2>
-</section>
+  Most Read
+</h2>
 `;
 
 exports[`Most read title should render with ReithSans 1`] = `
@@ -63,17 +57,11 @@ exports[`Most read title should render with ReithSans 1`] = `
   }
 }
 
-<section
-  aria-labelledby="most-read-title"
-  class=""
-  role="region"
+<h2
+  class="c0"
+  dir="ltr"
+  id="most-read-title"
 >
-  <h2
-    class="c0"
-    dir="ltr"
-    id="most-read-title"
-  >
-    Most Read
-  </h2>
-</section>
+  Most Read
+</h2>
 `;
