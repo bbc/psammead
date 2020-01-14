@@ -27,8 +27,8 @@ const StyledLink = styled.a`
     padding: 0 1rem;
   }
 
-  &:hover span,
-  &:focus span {
+  &:hover > span,
+  &:focus > span {
     margin: 0;
     border: 0.1875rem solid ${C_WHITE};
   }

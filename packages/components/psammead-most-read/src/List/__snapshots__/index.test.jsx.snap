@@ -1,6 +1,17 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`MostReadList should render with ltr bengali items with correct dir 1`] = `
+.c0 {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.c2 {
+  grid-auto-flow: column;
+  grid-template-rows: repeat( 5,[col-start] auto [col-end] );
+}
+
 .c8 {
   font-size: 1.625rem;
   line-height: 1.875rem;
@@ -24,25 +35,8 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
   padding-right: 1rem;
 }
 
-.c6 {
-  font-family: "Shonar Bangla",Helmet,Freesans,Helvetica,Arial,sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 2rem;
-  line-height: 2.25rem;
-  color: #B80000;
-  margin: 0;
-  padding: 0;
-  float: left;
-}
-
-.c0 {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
 .c4 {
+  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -54,9 +48,15 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
   padding: 0;
 }
 
-.c2 {
-  grid-auto-flow: column;
-  grid-template-rows: repeat( 5,[col-start] auto [col-end] );
+.c6 {
+  font-family: "Shonar Bangla",Helmet,Freesans,Helvetica,Arial,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2rem;
+  line-height: 2.25rem;
+  color: #B80000;
+  margin: 0;
+  padding: 0;
 }
 
 @supports (display:grid) {
@@ -68,8 +68,7 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
 
 @media (max-width:14.9375rem) {
   .c3 {
-    width: calc(6/6*(100% - 6 * 0.5rem) + 5 * 0.5rem );
-    margin: 0 0.25rem;
+    width: calc(100%);
     display: inline-block;
     vertical-align: top;
   }
@@ -77,8 +76,7 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
 
 @media (min-width:15rem) and (max-width:24.9375rem) {
   .c3 {
-    width: calc(6/6*(100% - 6 * 0.5rem) + 5 * 0.5rem );
-    margin: 0 0.25rem;
+    width: calc(100%);
     display: inline-block;
     vertical-align: top;
   }
@@ -86,8 +84,7 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
 
 @media (min-width:25rem) and (max-width:37.4375rem) {
   .c3 {
-    width: calc(3/6*(100% - 6 * 0.5rem) + 2 * 0.5rem );
-    margin: 0 0.25rem;
+    width: calc(50%);
     display: inline-block;
     vertical-align: top;
   }
@@ -95,8 +92,7 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
 
 @media (min-width:37.5rem) and (max-width:62.9375rem) {
   .c3 {
-    width: calc(3/6*(100% - 6 * 1rem) + 2 * 1rem );
-    margin: 0 0.5rem;
+    width: calc(50%);
     display: inline-block;
     vertical-align: top;
   }
@@ -104,8 +100,7 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
 
 @media (min-width:63rem) and (max-width:80rem) {
   .c3 {
-    width: calc(4/8*(100% - 8 * 1rem) + 3 * 1rem );
-    margin: 0 0.5rem;
+    width: calc(50%);
     display: inline-block;
     vertical-align: top;
   }
@@ -113,8 +108,7 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
 
 @media (min-width:80rem) {
   .c3 {
-    width: calc(4/20*(100% - 20 * 1rem) + 3 * 1rem );
-    margin: 0 0.5rem;
+    width: calc(20%);
     display: inline-block;
     vertical-align: top;
   }
@@ -123,6 +117,19 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
 @supports (display:grid) {
   .c3 {
     display: block;
+  }
+}
+
+@media (max-width:24.9375rem) {
+  .c2 {
+    grid-template-rows: repeat( 10,[col-start] auto [col-end] );
+  }
+}
+
+@media (min-width:80rem) {
+  .c2 {
+    grid-auto-flow: row;
+    grid-template-rows: repeat( 5,[col-start] auto [col-end] );
   }
 }
 
@@ -140,159 +147,159 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
   }
 }
 
-@media (max-width:14.9375rem) {
-  .c5 {
-    min-width: 2.5rem;
-  }
-}
-
-@media (min-width:15rem) and (max-width:24.9375rem) {
-  .c5 {
-    min-width: 2rem;
-  }
-}
-
-@media (min-width:25rem) and (max-width:37.4375rem) {
-  .c5 {
-    min-width: auto;
-  }
-}
-
-@media (min-width:37.5rem) and (max-width:80rem) {
-  .c5 {
-    min-width: auto;
-  }
-}
-
-@media (min-width:80rem) {
-  .c5 {
-    min-width: auto;
-  }
-}
-
-@media (max-width:14.9375rem) {
-  .c9 {
-    min-width: 2.5rem;
-  }
-}
-
-@media (min-width:15rem) and (max-width:24.9375rem) {
-  .c9 {
-    min-width: 2rem;
-  }
-}
-
-@media (min-width:25rem) and (max-width:37.4375rem) {
-  .c9 {
-    min-width: 2rem;
-  }
-}
-
-@media (min-width:37.5rem) and (max-width:80rem) {
-  .c9 {
-    min-width: 3rem;
-  }
-}
-
-@media (min-width:80rem) {
-  .c9 {
-    min-width: auto;
-  }
-}
-
-@media (max-width:14.9375rem) {
-  .c10 {
-    min-width: 2.5rem;
-  }
-}
-
-@media (min-width:15rem) and (max-width:24.9375rem) {
-  .c10 {
-    min-width: 2rem;
-  }
-}
-
-@media (min-width:25rem) and (max-width:37.4375rem) {
-  .c10 {
-    min-width: auto;
-  }
-}
-
-@media (min-width:37.5rem) and (max-width:80rem) {
-  .c10 {
-    min-width: auto;
-  }
-}
-
-@media (min-width:80rem) {
-  .c10 {
-    min-width: 3rem;
-  }
-}
-
-@media (max-width:14.9375rem) {
-  .c11 {
-    min-width: 2.5rem;
-  }
-}
-
-@media (min-width:15rem) and (max-width:24.9375rem) {
-  .c11 {
-    min-width: 2rem;
-  }
-}
-
-@media (min-width:25rem) and (max-width:37.4375rem) {
-  .c11 {
-    min-width: 2rem;
-  }
-}
-
-@media (min-width:37.5rem) and (max-width:80rem) {
-  .c11 {
-    min-width: 3rem;
-  }
-}
-
-@media (min-width:80rem) {
-  .c11 {
-    min-width: auto;
-  }
-}
-
-@media (max-width:14.9375rem) {
-  .c12 {
-    min-width: 2.5rem;
-  }
-}
-
-@media (min-width:15rem) and (max-width:24.9375rem) {
-  .c12 {
-    min-width: 2rem;
-  }
-}
-
-@media (min-width:25rem) and (max-width:37.4375rem) {
-  .c12 {
-    min-width: auto;
-  }
-}
-
-@media (min-width:37.5rem) and (max-width:80rem) {
-  .c12 {
-    min-width: auto;
-  }
-}
-
-@media (min-width:80rem) {
-  .c12 {
-    min-width: auto;
-  }
-}
-
 @supports (grid-template-columns:fit-content(200px)) {
   .c7 {
     padding-right: 0;
+  }
+}
+
+@media (max-width:14.9375rem) {
+  .c5 {
+    min-width: 2.5rem;
+  }
+}
+
+@media (min-width:15rem) and (max-width:24.9375rem) {
+  .c5 {
+    min-width: 2rem;
+  }
+}
+
+@media (min-width:25rem) and (max-width:37.4375rem) {
+  .c5 {
+    min-width: auto;
+  }
+}
+
+@media (min-width:37.5rem) and (max-width:80rem) {
+  .c5 {
+    min-width: auto;
+  }
+}
+
+@media (min-width:80rem) {
+  .c5 {
+    min-width: auto;
+  }
+}
+
+@media (max-width:14.9375rem) {
+  .c9 {
+    min-width: 2.5rem;
+  }
+}
+
+@media (min-width:15rem) and (max-width:24.9375rem) {
+  .c9 {
+    min-width: 2rem;
+  }
+}
+
+@media (min-width:25rem) and (max-width:37.4375rem) {
+  .c9 {
+    min-width: 2rem;
+  }
+}
+
+@media (min-width:37.5rem) and (max-width:80rem) {
+  .c9 {
+    min-width: 3rem;
+  }
+}
+
+@media (min-width:80rem) {
+  .c9 {
+    min-width: auto;
+  }
+}
+
+@media (max-width:14.9375rem) {
+  .c10 {
+    min-width: 2.5rem;
+  }
+}
+
+@media (min-width:15rem) and (max-width:24.9375rem) {
+  .c10 {
+    min-width: 2rem;
+  }
+}
+
+@media (min-width:25rem) and (max-width:37.4375rem) {
+  .c10 {
+    min-width: auto;
+  }
+}
+
+@media (min-width:37.5rem) and (max-width:80rem) {
+  .c10 {
+    min-width: auto;
+  }
+}
+
+@media (min-width:80rem) {
+  .c10 {
+    min-width: 3rem;
+  }
+}
+
+@media (max-width:14.9375rem) {
+  .c11 {
+    min-width: 2.5rem;
+  }
+}
+
+@media (min-width:15rem) and (max-width:24.9375rem) {
+  .c11 {
+    min-width: 2rem;
+  }
+}
+
+@media (min-width:25rem) and (max-width:37.4375rem) {
+  .c11 {
+    min-width: 2rem;
+  }
+}
+
+@media (min-width:37.5rem) and (max-width:80rem) {
+  .c11 {
+    min-width: 3rem;
+  }
+}
+
+@media (min-width:80rem) {
+  .c11 {
+    min-width: auto;
+  }
+}
+
+@media (max-width:14.9375rem) {
+  .c12 {
+    min-width: 2.5rem;
+  }
+}
+
+@media (min-width:15rem) and (max-width:24.9375rem) {
+  .c12 {
+    min-width: 2rem;
+  }
+}
+
+@media (min-width:25rem) and (max-width:37.4375rem) {
+  .c12 {
+    min-width: auto;
+  }
+}
+
+@media (min-width:37.5rem) and (max-width:80rem) {
+  .c12 {
+    min-width: auto;
+  }
+}
+
+@media (min-width:80rem) {
+  .c12 {
+    min-width: auto;
   }
 }
 
@@ -307,19 +314,6 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
   .c6 {
     font-size: 3.5rem;
     line-height: 3.75rem;
-  }
-}
-
-@media (max-width:24.9375rem) {
-  .c2 {
-    grid-template-rows: repeat( 10,[col-start] auto [col-end] );
-  }
-}
-
-@media (min-width:80rem) {
-  .c2 {
-    grid-auto-flow: row;
-    grid-template-rows: repeat( 5,[col-start] auto [col-end] );
   }
 }
 
@@ -345,7 +339,6 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
         >
           <span
             class="c6"
-            dir="ltr"
           >
             ১
           </span>
@@ -377,7 +370,6 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
         >
           <span
             class="c6"
-            dir="ltr"
           >
             ২
           </span>
@@ -409,7 +401,6 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
         >
           <span
             class="c6"
-            dir="ltr"
           >
             ৩
           </span>
@@ -441,7 +432,6 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
         >
           <span
             class="c6"
-            dir="ltr"
           >
             ৪
           </span>
@@ -473,7 +463,6 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
         >
           <span
             class="c6"
-            dir="ltr"
           >
             ৫
           </span>
@@ -505,7 +494,6 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
         >
           <span
             class="c6"
-            dir="ltr"
           >
             ৬
           </span>
@@ -537,7 +525,6 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
         >
           <span
             class="c6"
-            dir="ltr"
           >
             ৭
           </span>
@@ -569,7 +556,6 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
         >
           <span
             class="c6"
-            dir="ltr"
           >
             ৮
           </span>
@@ -601,7 +587,6 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
         >
           <span
             class="c6"
-            dir="ltr"
           >
             ৯
           </span>
@@ -633,7 +618,6 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
         >
           <span
             class="c6"
-            dir="ltr"
           >
             ১০
           </span>
@@ -656,6 +640,17 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
 `;
 
 exports[`MostReadList should render with ltr burmese items with correct dir 1`] = `
+.c0 {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.c2 {
+  grid-auto-flow: column;
+  grid-template-rows: repeat( 5,[col-start] auto [col-end] );
+}
+
 .c8 {
   font-size: 1.25rem;
   line-height: 1.875rem;
@@ -679,25 +674,8 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
   padding-right: 1rem;
 }
 
-.c6 {
-  font-family: Padauk,Arial,Verdana,Geneva,Helvetica,sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 2rem;
-  line-height: 2.25rem;
-  color: #B80000;
-  margin: 0;
-  padding: 0;
-  float: left;
-}
-
-.c0 {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
 .c4 {
+  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -709,9 +687,15 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
   padding: 0;
 }
 
-.c2 {
-  grid-auto-flow: column;
-  grid-template-rows: repeat( 5,[col-start] auto [col-end] );
+.c6 {
+  font-family: Padauk,Arial,Verdana,Geneva,Helvetica,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2rem;
+  line-height: 2.25rem;
+  color: #B80000;
+  margin: 0;
+  padding: 0;
 }
 
 @supports (display:grid) {
@@ -723,8 +707,7 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
 
 @media (max-width:14.9375rem) {
   .c3 {
-    width: calc(6/6*(100% - 6 * 0.5rem) + 5 * 0.5rem );
-    margin: 0 0.25rem;
+    width: calc(100%);
     display: inline-block;
     vertical-align: top;
   }
@@ -732,8 +715,7 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
 
 @media (min-width:15rem) and (max-width:24.9375rem) {
   .c3 {
-    width: calc(6/6*(100% - 6 * 0.5rem) + 5 * 0.5rem );
-    margin: 0 0.25rem;
+    width: calc(100%);
     display: inline-block;
     vertical-align: top;
   }
@@ -741,8 +723,7 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
 
 @media (min-width:25rem) and (max-width:37.4375rem) {
   .c3 {
-    width: calc(3/6*(100% - 6 * 0.5rem) + 2 * 0.5rem );
-    margin: 0 0.25rem;
+    width: calc(50%);
     display: inline-block;
     vertical-align: top;
   }
@@ -750,8 +731,7 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
 
 @media (min-width:37.5rem) and (max-width:62.9375rem) {
   .c3 {
-    width: calc(3/6*(100% - 6 * 1rem) + 2 * 1rem );
-    margin: 0 0.5rem;
+    width: calc(50%);
     display: inline-block;
     vertical-align: top;
   }
@@ -759,8 +739,7 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
 
 @media (min-width:63rem) and (max-width:80rem) {
   .c3 {
-    width: calc(4/8*(100% - 8 * 1rem) + 3 * 1rem );
-    margin: 0 0.5rem;
+    width: calc(50%);
     display: inline-block;
     vertical-align: top;
   }
@@ -768,8 +747,7 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
 
 @media (min-width:80rem) {
   .c3 {
-    width: calc(4/20*(100% - 20 * 1rem) + 3 * 1rem );
-    margin: 0 0.5rem;
+    width: calc(20%);
     display: inline-block;
     vertical-align: top;
   }
@@ -778,6 +756,19 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
 @supports (display:grid) {
   .c3 {
     display: block;
+  }
+}
+
+@media (max-width:24.9375rem) {
+  .c2 {
+    grid-template-rows: repeat( 10,[col-start] auto [col-end] );
+  }
+}
+
+@media (min-width:80rem) {
+  .c2 {
+    grid-auto-flow: row;
+    grid-template-rows: repeat( 5,[col-start] auto [col-end] );
   }
 }
 
@@ -792,6 +783,12 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
   .c8 {
     font-size: 1.625rem;
     line-height: 2.75rem;
+  }
+}
+
+@supports (grid-template-columns:fit-content(200px)) {
+  .c7 {
+    padding-right: 0;
   }
 }
 
@@ -945,12 +942,6 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
   }
 }
 
-@supports (grid-template-columns:fit-content(200px)) {
-  .c7 {
-    padding-right: 0;
-  }
-}
-
 @media (min-width:20rem) and (max-width:37.4375rem) {
   .c6 {
     font-size: 2.5rem;
@@ -962,19 +953,6 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
   .c6 {
     font-size: 3.5rem;
     line-height: 5.375rem;
-  }
-}
-
-@media (max-width:24.9375rem) {
-  .c2 {
-    grid-template-rows: repeat( 10,[col-start] auto [col-end] );
-  }
-}
-
-@media (min-width:80rem) {
-  .c2 {
-    grid-auto-flow: row;
-    grid-template-rows: repeat( 5,[col-start] auto [col-end] );
   }
 }
 
@@ -1000,7 +978,6 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
         >
           <span
             class="c6"
-            dir="ltr"
           >
             ၁
           </span>
@@ -1032,7 +1009,6 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
         >
           <span
             class="c6"
-            dir="ltr"
           >
             ၂
           </span>
@@ -1064,7 +1040,6 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
         >
           <span
             class="c6"
-            dir="ltr"
           >
             ၃
           </span>
@@ -1096,7 +1071,6 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
         >
           <span
             class="c6"
-            dir="ltr"
           >
             ၄
           </span>
@@ -1128,7 +1102,6 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
         >
           <span
             class="c6"
-            dir="ltr"
           >
             ၅
           </span>
@@ -1160,7 +1133,6 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
         >
           <span
             class="c6"
-            dir="ltr"
           >
             ၆
           </span>
@@ -1192,7 +1164,6 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
         >
           <span
             class="c6"
-            dir="ltr"
           >
             ၇
           </span>
@@ -1224,7 +1195,6 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
         >
           <span
             class="c6"
-            dir="ltr"
           >
             ၈
           </span>
@@ -1256,7 +1226,6 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
         >
           <span
             class="c6"
-            dir="ltr"
           >
             ၉
           </span>
@@ -1288,7 +1257,6 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
         >
           <span
             class="c6"
-            dir="ltr"
           >
             ၁၀
           </span>
@@ -1311,6 +1279,17 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
 `;
 
 exports[`MostReadList should render with ltr news items with correct dir 1`] = `
+.c0 {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.c2 {
+  grid-auto-flow: column;
+  grid-template-rows: repeat( 5,[col-start] auto [col-end] );
+}
+
 .c8 {
   font-size: 1.125rem;
   line-height: 1.375rem;
@@ -1334,25 +1313,8 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
   padding-right: 1rem;
 }
 
-.c6 {
-  font-family: ReithSerif,Helvetica,Arial,sans-serif;
-  font-weight: 300;
-  font-style: normal;
-  font-size: 2rem;
-  line-height: 2.25rem;
-  color: #B80000;
-  margin: 0;
-  padding: 0;
-  float: left;
-}
-
-.c0 {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
 .c4 {
+  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1364,9 +1326,15 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
   padding: 0;
 }
 
-.c2 {
-  grid-auto-flow: column;
-  grid-template-rows: repeat( 5,[col-start] auto [col-end] );
+.c6 {
+  font-family: ReithSerif,Helvetica,Arial,sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 2rem;
+  line-height: 2.25rem;
+  color: #B80000;
+  margin: 0;
+  padding: 0;
 }
 
 @supports (display:grid) {
@@ -1378,8 +1346,7 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
 
 @media (max-width:14.9375rem) {
   .c3 {
-    width: calc(6/6*(100% - 6 * 0.5rem) + 5 * 0.5rem );
-    margin: 0 0.25rem;
+    width: calc(100%);
     display: inline-block;
     vertical-align: top;
   }
@@ -1387,8 +1354,7 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
 
 @media (min-width:15rem) and (max-width:24.9375rem) {
   .c3 {
-    width: calc(6/6*(100% - 6 * 0.5rem) + 5 * 0.5rem );
-    margin: 0 0.25rem;
+    width: calc(100%);
     display: inline-block;
     vertical-align: top;
   }
@@ -1396,8 +1362,7 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
 
 @media (min-width:25rem) and (max-width:37.4375rem) {
   .c3 {
-    width: calc(3/6*(100% - 6 * 0.5rem) + 2 * 0.5rem );
-    margin: 0 0.25rem;
+    width: calc(50%);
     display: inline-block;
     vertical-align: top;
   }
@@ -1405,8 +1370,7 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
 
 @media (min-width:37.5rem) and (max-width:62.9375rem) {
   .c3 {
-    width: calc(3/6*(100% - 6 * 1rem) + 2 * 1rem );
-    margin: 0 0.5rem;
+    width: calc(50%);
     display: inline-block;
     vertical-align: top;
   }
@@ -1414,8 +1378,7 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
 
 @media (min-width:63rem) and (max-width:80rem) {
   .c3 {
-    width: calc(4/8*(100% - 8 * 1rem) + 3 * 1rem );
-    margin: 0 0.5rem;
+    width: calc(50%);
     display: inline-block;
     vertical-align: top;
   }
@@ -1423,8 +1386,7 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
 
 @media (min-width:80rem) {
   .c3 {
-    width: calc(4/20*(100% - 20 * 1rem) + 3 * 1rem );
-    margin: 0 0.5rem;
+    width: calc(20%);
     display: inline-block;
     vertical-align: top;
   }
@@ -1433,6 +1395,19 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
 @supports (display:grid) {
   .c3 {
     display: block;
+  }
+}
+
+@media (max-width:24.9375rem) {
+  .c2 {
+    grid-template-rows: repeat( 10,[col-start] auto [col-end] );
+  }
+}
+
+@media (min-width:80rem) {
+  .c2 {
+    grid-auto-flow: row;
+    grid-template-rows: repeat( 5,[col-start] auto [col-end] );
   }
 }
 
@@ -1447,6 +1422,12 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
   .c8 {
     font-size: 1.5rem;
     line-height: 1.75rem;
+  }
+}
+
+@supports (grid-template-columns:fit-content(200px)) {
+  .c7 {
+    padding-right: 0;
   }
 }
 
@@ -1600,12 +1581,6 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
   }
 }
 
-@supports (grid-template-columns:fit-content(200px)) {
-  .c7 {
-    padding-right: 0;
-  }
-}
-
 @media (min-width:20rem) and (max-width:37.4375rem) {
   .c6 {
     font-size: 2.5rem;
@@ -1617,19 +1592,6 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
   .c6 {
     font-size: 3.5rem;
     line-height: 3.75rem;
-  }
-}
-
-@media (max-width:24.9375rem) {
-  .c2 {
-    grid-template-rows: repeat( 10,[col-start] auto [col-end] );
-  }
-}
-
-@media (min-width:80rem) {
-  .c2 {
-    grid-auto-flow: row;
-    grid-template-rows: repeat( 5,[col-start] auto [col-end] );
   }
 }
 
@@ -1655,7 +1617,6 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
         >
           <span
             class="c6"
-            dir="ltr"
           >
             1
           </span>
@@ -1687,7 +1648,6 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
         >
           <span
             class="c6"
-            dir="ltr"
           >
             2
           </span>
@@ -1719,7 +1679,6 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
         >
           <span
             class="c6"
-            dir="ltr"
           >
             3
           </span>
@@ -1751,7 +1710,6 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
         >
           <span
             class="c6"
-            dir="ltr"
           >
             4
           </span>
@@ -1783,7 +1741,6 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
         >
           <span
             class="c6"
-            dir="ltr"
           >
             5
           </span>
@@ -1815,7 +1772,6 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
         >
           <span
             class="c6"
-            dir="ltr"
           >
             6
           </span>
@@ -1847,7 +1803,6 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
         >
           <span
             class="c6"
-            dir="ltr"
           >
             7
           </span>
@@ -1879,7 +1834,6 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
         >
           <span
             class="c6"
-            dir="ltr"
           >
             8
           </span>
@@ -1911,7 +1865,6 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
         >
           <span
             class="c6"
-            dir="ltr"
           >
             9
           </span>
@@ -1943,7 +1896,6 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
         >
           <span
             class="c6"
-            dir="ltr"
           >
             10
           </span>
@@ -1966,10 +1918,21 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
 `;
 
 exports[`MostReadList should render with rtl arabic items with correct dir 1`] = `
+.c0 {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.c2 {
+  grid-auto-flow: column;
+  grid-template-rows: repeat( 5,[col-start] auto [col-end] );
+}
+
 .c8 {
   font-size: 1.5rem;
   line-height: 2rem;
-  font-family: "BBC Nassim Arabic",Arial,Verdana,Geneva,Helvetica,sans-serif;
+  font-family: "BBC Nassim Persian",Arial,Verdana,Geneva,Helvetica,sans-serif;
   font-weight: 700;
   font-style: normal;
   color: #222222;
@@ -1989,25 +1952,8 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
   padding-left: 1rem;
 }
 
-.c6 {
-  font-family: "BBC Nassim Arabic",Arial,Verdana,Geneva,Helvetica,sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 2rem;
-  line-height: 2.25rem;
-  color: #B80000;
-  margin: 0;
-  padding: 0;
-  float: right;
-}
-
-.c0 {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
 .c4 {
+  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2019,9 +1965,15 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
   padding: 0;
 }
 
-.c2 {
-  grid-auto-flow: column;
-  grid-template-rows: repeat( 5,[col-start] auto [col-end] );
+.c6 {
+  font-family: "BBC Nassim Persian",Arial,Verdana,Geneva,Helvetica,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2rem;
+  line-height: 2.25rem;
+  color: #B80000;
+  margin: 0;
+  padding: 0;
 }
 
 @supports (display:grid) {
@@ -2033,8 +1985,7 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
 
 @media (max-width:14.9375rem) {
   .c3 {
-    width: calc(6/6*(100% - 6 * 0.5rem) + 5 * 0.5rem );
-    margin: 0 0.25rem;
+    width: calc(100%);
     display: inline-block;
     vertical-align: top;
   }
@@ -2042,8 +1993,7 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
 
 @media (min-width:15rem) and (max-width:24.9375rem) {
   .c3 {
-    width: calc(6/6*(100% - 6 * 0.5rem) + 5 * 0.5rem );
-    margin: 0 0.25rem;
+    width: calc(100%);
     display: inline-block;
     vertical-align: top;
   }
@@ -2051,8 +2001,7 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
 
 @media (min-width:25rem) and (max-width:37.4375rem) {
   .c3 {
-    width: calc(3/6*(100% - 6 * 0.5rem) + 2 * 0.5rem );
-    margin: 0 0.25rem;
+    width: calc(50%);
     display: inline-block;
     vertical-align: top;
   }
@@ -2060,8 +2009,7 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
 
 @media (min-width:37.5rem) and (max-width:62.9375rem) {
   .c3 {
-    width: calc(3/6*(100% - 6 * 1rem) + 2 * 1rem );
-    margin: 0 0.5rem;
+    width: calc(50%);
     display: inline-block;
     vertical-align: top;
   }
@@ -2069,8 +2017,7 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
 
 @media (min-width:63rem) and (max-width:80rem) {
   .c3 {
-    width: calc(4/8*(100% - 8 * 1rem) + 3 * 1rem );
-    margin: 0 0.5rem;
+    width: calc(50%);
     display: inline-block;
     vertical-align: top;
   }
@@ -2078,8 +2025,7 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
 
 @media (min-width:80rem) {
   .c3 {
-    width: calc(4/20*(100% - 20 * 1rem) + 3 * 1rem );
-    margin: 0 0.5rem;
+    width: calc(20%);
     display: inline-block;
     vertical-align: top;
   }
@@ -2088,6 +2034,19 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
 @supports (display:grid) {
   .c3 {
     display: block;
+  }
+}
+
+@media (max-width:24.9375rem) {
+  .c2 {
+    grid-template-rows: repeat( 10,[col-start] auto [col-end] );
+  }
+}
+
+@media (min-width:80rem) {
+  .c2 {
+    grid-auto-flow: row;
+    grid-template-rows: repeat( 5,[col-start] auto [col-end] );
   }
 }
 
@@ -2102,6 +2061,12 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
   .c8 {
     font-size: 1.75rem;
     line-height: 2.25rem;
+  }
+}
+
+@supports (grid-template-columns:fit-content(200px)) {
+  .c7 {
+    padding-left: 0;
   }
 }
 
@@ -2255,12 +2220,6 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
   }
 }
 
-@supports (grid-template-columns:fit-content(200px)) {
-  .c7 {
-    padding-left: 0;
-  }
-}
-
 @media (min-width:20rem) and (max-width:37.4375rem) {
   .c6 {
     font-size: 2.5rem;
@@ -2272,19 +2231,6 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
   .c6 {
     font-size: 3.5rem;
     line-height: 3.75rem;
-  }
-}
-
-@media (max-width:24.9375rem) {
-  .c2 {
-    grid-template-rows: repeat( 10,[col-start] auto [col-end] );
-  }
-}
-
-@media (min-width:80rem) {
-  .c2 {
-    grid-auto-flow: row;
-    grid-template-rows: repeat( 5,[col-start] auto [col-end] );
   }
 }
 
@@ -2310,7 +2256,6 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
         >
           <span
             class="c6"
-            dir="rtl"
           >
             ۱
           </span>
@@ -2321,9 +2266,9 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
         >
           <a
             class="c8"
-            href="https://www.bbc.com/arabic/articles/c1er5mjnznzo"
+            href="https://www.bbc.com/persian/articles/cej3lzd5e0go"
           >
-            لماذا يخجل البعض من اسم قريته في مصر؟
+            در این جشنواره برای نخستین بار از کارگران افغانستان در شهر تهران تقدیر شد
           </a>
         </div>
       </li>
@@ -2342,7 +2287,6 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
         >
           <span
             class="c6"
-            dir="rtl"
           >
             ۲
           </span>
@@ -2353,9 +2297,9 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
         >
           <a
             class="c8"
-            href="https://www.bbc.com/arabic/articles/c1er5mjnznzo"
+            href="https://www.bbc.com/persian/articles/cej3lzd5e0go"
           >
-            لماذا يخجل البعض من اسم قريته في مصر؟
+            در این جشنواره برای نخستین بار از کارگران افغانستان در شهر تهران تقدیر شد
           </a>
         </div>
       </li>
@@ -2374,7 +2318,6 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
         >
           <span
             class="c6"
-            dir="rtl"
           >
             ۳
           </span>
@@ -2385,9 +2328,9 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
         >
           <a
             class="c8"
-            href="https://www.bbc.com/arabic/articles/c1er5mjnznzo"
+            href="https://www.bbc.com/persian/articles/cej3lzd5e0go"
           >
-            لماذا يخجل البعض من اسم قريته في مصر؟
+            در این جشنواره برای نخستین بار از کارگران افغانستان در شهر تهران تقدیر شد
           </a>
         </div>
       </li>
@@ -2406,7 +2349,6 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
         >
           <span
             class="c6"
-            dir="rtl"
           >
             ۴
           </span>
@@ -2417,9 +2359,9 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
         >
           <a
             class="c8"
-            href="https://www.bbc.com/arabic/articles/c1er5mjnznzo"
+            href="https://www.bbc.com/persian/articles/cej3lzd5e0go"
           >
-            لماذا يخجل البعض من اسم قريته في مصر؟
+            در این جشنواره برای نخستین بار از کارگران افغانستان در شهر تهران تقدیر شد
           </a>
         </div>
       </li>
@@ -2438,7 +2380,6 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
         >
           <span
             class="c6"
-            dir="rtl"
           >
             ۵
           </span>
@@ -2449,9 +2390,9 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
         >
           <a
             class="c8"
-            href="https://www.bbc.com/arabic/articles/c1er5mjnznzo"
+            href="https://www.bbc.com/persian/articles/cej3lzd5e0go"
           >
-            لماذا يخجل البعض من اسم قريته في مصر؟
+            در این جشنواره برای نخستین بار از کارگران افغانستان در شهر تهران تقدیر شد
           </a>
         </div>
       </li>
@@ -2470,7 +2411,6 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
         >
           <span
             class="c6"
-            dir="rtl"
           >
             ۶
           </span>
@@ -2481,9 +2421,9 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
         >
           <a
             class="c8"
-            href="https://www.bbc.com/arabic/articles/c1er5mjnznzo"
+            href="https://www.bbc.com/persian/articles/cej3lzd5e0go"
           >
-            لماذا يخجل البعض من اسم قريته في مصر؟
+            در این جشنواره برای نخستین بار از کارگران افغانستان در شهر تهران تقدیر شد
           </a>
         </div>
       </li>
@@ -2502,7 +2442,6 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
         >
           <span
             class="c6"
-            dir="rtl"
           >
             ۷
           </span>
@@ -2513,9 +2452,9 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
         >
           <a
             class="c8"
-            href="https://www.bbc.com/arabic/articles/c1er5mjnznzo"
+            href="https://www.bbc.com/persian/articles/cej3lzd5e0go"
           >
-            لماذا يخجل البعض من اسم قريته في مصر؟
+            در این جشنواره برای نخستین بار از کارگران افغانستان در شهر تهران تقدیر شد
           </a>
         </div>
       </li>
@@ -2534,7 +2473,6 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
         >
           <span
             class="c6"
-            dir="rtl"
           >
             ۸
           </span>
@@ -2545,9 +2483,9 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
         >
           <a
             class="c8"
-            href="https://www.bbc.com/arabic/articles/c1er5mjnznzo"
+            href="https://www.bbc.com/persian/articles/cej3lzd5e0go"
           >
-            لماذا يخجل البعض من اسم قريته في مصر؟
+            در این جشنواره برای نخستین بار از کارگران افغانستان در شهر تهران تقدیر شد
           </a>
         </div>
       </li>
@@ -2566,7 +2504,6 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
         >
           <span
             class="c6"
-            dir="rtl"
           >
             ۹
           </span>
@@ -2577,9 +2514,9 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
         >
           <a
             class="c8"
-            href="https://www.bbc.com/arabic/articles/c1er5mjnznzo"
+            href="https://www.bbc.com/persian/articles/cej3lzd5e0go"
           >
-            لماذا يخجل البعض من اسم قريته في مصر؟
+            در این جشنواره برای نخستین بار از کارگران افغانستان در شهر تهران تقدیر شد
           </a>
         </div>
       </li>
@@ -2598,7 +2535,6 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
         >
           <span
             class="c6"
-            dir="rtl"
           >
             ۱۰
           </span>
@@ -2609,9 +2545,9 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
         >
           <a
             class="c8"
-            href="https://www.bbc.com/arabic/articles/c1er5mjnznzo"
+            href="https://www.bbc.com/persian/articles/cej3lzd5e0go"
           >
-            لماذا يخجل البعض من اسم قريته في مصر؟
+            در این جشنواره برای نخستین بار از کارگران افغانستان در شهر تهران تقدیر شد
           </a>
         </div>
       </li>
