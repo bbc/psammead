@@ -1,7 +1,9 @@
 import React from 'react';
-import { render, act } from '@testing-library/react';
+import { render, act, cleanup } from '@testing-library/react';
 import { shouldMatchSnapshot } from '@bbc/psammead-test-helpers';
 import Canonical from '.';
+
+afterEach(cleanup);
 
 describe('Media Player: Canonical', () => {
   shouldMatchSnapshot(
@@ -15,7 +17,7 @@ describe('Media Player: Canonical', () => {
 
   it('should render a timeout message if timeout timer expires', () => {
     jest.useFakeTimers();
-    const { getByText, unmount } = render(
+    const { getByText } = render(
       <Canonical
         src="https://foo.bar/iframe"
         title="Media player"
@@ -33,6 +35,5 @@ describe('Media Player: Canonical', () => {
         'There was a problem loading this content. Please check your internet connection and try again.',
       ),
     );
-    unmount();
   });
 });
