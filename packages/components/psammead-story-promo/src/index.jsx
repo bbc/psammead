@@ -120,7 +120,7 @@ const positionBottomOfParent = `
  position: absolute;
  bottom: 0;
 `;
-const positionBottomOfParentGroup2 =`
+const positionBottomOfParentGroup2 = `
   @media (min-width: ${GEL_GROUP_2_SCREEN_WIDTH_MIN}) {
   ${positionBottomOfParent}
 }`;
@@ -141,58 +141,6 @@ const summaryRegularStyles = `
     display: none;
     visibility: hidden;
   }
-`;
-const imageGridFallbackStyles = {
-  top: ImageGridFallbackTopStory,
-  regular: ImageGridFallback,
-  leading: ImageGridFallback,
-};
-const imageGridStyles = {
-  top: ImageGridColumnsTopStory,
-  regular: ImageGridColumns,
-  leading: ImageGridColumns,
-};
-const textGridFallbackStyles = {
-  top: TextGridFallbackTopStory,
-  regular: TextGridFallback,
-  leading: TextGridFallback,
-};
-const textGridStyles = {
-  top: TextGridColumnsTopStory,
-  regular: TextGridColumns,
-  leading: TextGridColumns,
-};
-const mediaIndicatorStyles = {
-  top: positionBottomOfParent,
-  regular: positionBottomOfParentGroup2,
-  leading: positionBottomOfParentGroup2,
-};
-const summaryStyles = {
-  top: summaryTopStoryStyles,
-  regular: summaryRegularStyles,
-  leading: summaryRegularStyles,
-};
-
-const ImageGridItem = styled.div`
-  display: inline-block;
-  vertical-align: top;
-  position: relative;
-  ${({ promoType }) => imageGridFallbackStyles(promoType)}
-
-  @supports (${grid}) {
-    display: block;
-    width: initial;
-    ${({ promoType }) => imageGridStyles(promoType)}
-  }
-`;
-
-const ImageContentsWrapper = styled.div`
-  position: relative;
-`;
-
-
-const InlineMediaIndicator = styled.div`
-  ${({ promoType }) => mediaIndicatorStyles(promoType)}
 `;
 
 const TextGridColumnsTopStory = css`
@@ -247,6 +195,58 @@ const TextGridFallback = css`
     `width: ${fullWidthColumnsMaxScaleable}; >div{ vertical-align: middle; }`}
 `;
 
+const imageGridFallbackStyles = {
+  top: ImageGridFallbackTopStory,
+  regular: ImageGridFallback,
+  leading: ImageGridFallback,
+};
+const imageGridStyles = {
+  top: ImageGridColumnsTopStory,
+  regular: ImageGridColumns,
+  leading: ImageGridColumns,
+};
+const textGridFallbackStyles = {
+  top: TextGridFallbackTopStory,
+  regular: TextGridFallback,
+  leading: TextGridFallback,
+};
+const textGridStyles = {
+  top: TextGridColumnsTopStory,
+  regular: TextGridColumns,
+  leading: TextGridColumns,
+};
+const mediaIndicatorStyles = {
+  top: positionBottomOfParent,
+  regular: positionBottomOfParentGroup2,
+  leading: positionBottomOfParentGroup2,
+};
+const summaryStyles = {
+  top: summaryTopStoryStyles,
+  regular: summaryRegularStyles,
+  leading: summaryRegularStyles,
+};
+
+const ImageGridItem = styled.div`
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+  ${({ promoType }) => imageGridFallbackStyles(promoType)}
+
+  @supports (${grid}) {
+    display: block;
+    width: initial;
+    ${({ promoType }) => imageGridStyles(promoType)}
+  }
+`;
+
+const ImageContentsWrapper = styled.div`
+  position: relative;
+`;
+
+const InlineMediaIndicator = styled.div`
+  ${({ promoType }) => mediaIndicatorStyles(promoType)}
+`;
+
 const TextGridItem = styled.div`
   display: inline-block;
   vertical-align: top;
@@ -265,53 +265,54 @@ const TextGridItem = styled.div`
     `>div{ display:inline-block; padding: 0; vertical-align:initial; } `}
 `;
 
+const headlineTopStoryTypography = `
+  ${({ script }) => getParagon(script)}
+`;
+
 // This is needed to get around the issue of IE11 not supporting
 // nested media queries (which would be returned by getParagon() and
 // getGreatPrimer())
-const getHeadlineFontStyle = (script, topStory) => {
-  const type = topStory ? 'paragon' : 'greatPrimer';
-
-  const fontSize = script[type].groupD.fontSize / 16;
-  const lineHeight = script[type].groupD.lineHeight / 16;
-
+const headlineRegularTypography = script => {
+  const fontSize = script.greatPrimer.groupD.fontSize / 16;
+  const lineHeight = script.greatPrimer.groupD.lineHeight / 16;
   return css`
-    font-size: ${fontSize}rem;
-    line-height: ${lineHeight}rem;
+    ${getPica(script)}
+    @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
+      font-size: ${fontSize}rem;
+      line-height: ${lineHeight}rem;
+    }
+    @media (min-width: ${GEL_GROUP_4_SCREEN_WIDTH_MIN}) {
+      ${({ promoHasImage }) => !promoHasImage && getPica(script)}
+    }
   `;
 };
 
+const headlineTypography = script => ({
+  top: headlineTopStoryTypography,
+  regular: headlineRegularTypography(script),
+  leading: headlineTopStoryTypography,
+});
+
 export const Headline = styled.h3`
-  ${({ script, topStory }) =>
-    script && (topStory ? getParagon(script) : getPica(script))}
+  ${({ script, promoType }) => script && headlineTypography(script)[promoType]}
   ${({ service }) => getSerifMedium(service)}
   color: ${C_EBON};
   margin: 0; /* Reset */
   padding-bottom: ${GEL_SPACING};
   ${({ promoHasImage }) => !promoHasImage && `display: inline;`}
-
-  @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
-    ${({ script, topStory }) =>
-      script && getHeadlineFontStyle(script, topStory)}
-  }
-
-  @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MAX}) {
-    ${({ script, promoHasImage }) =>
-      !promoHasImage && script && getPica(script)}
-  }
 `;
 
 Headline.propTypes = {
   script: shape(scriptPropType).isRequired,
   service: string.isRequired,
   promoHasImage: bool,
-  topStory: bool,
+  promoType: string,
 };
 
 Headline.defaultProps = {
   promoHasImage: true,
-  topStory: false,
+  promoType: 'regular',
 };
-
 
 export const Summary = styled.p`
   ${({ script }) => script && getLongPrimer(script)};

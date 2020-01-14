@@ -70,7 +70,7 @@ const InfoComponent = ({
   <>
     <Headline
       script={script}
-      topStory={promoType === 'top'}
+      promoType={promoType}
       service={service}
       promoHasImage={promoHasImage}
     >
@@ -170,7 +170,11 @@ storiesOf('Components|StoryPromo/StoryPromo', module)
       knobs: { escapeHTML: false },
     },
   )
-  .add('No image', generateStory({ promoType: 'regular', displayImage: false }), {
-    notes,
-    knobs: { escapeHTML: false },
-  });
+  .add(
+    'No image',
+    generateStory({ promoType: 'regular', displayImage: false }),
+    {
+      notes,
+      knobs: { escapeHTML: false },
+    },
+  );
