@@ -30,7 +30,7 @@ const ImageGridColumns = css`
 
 const ImageGridColumnsFallback = css`
   width: ${fourOfSixColumnsMaxWidthScaleable};
-  padding-${({ dir }) => (dir === 'ltr' ? 'left' : 'right')}: 0.5rem;
+  ${({ dir }) => (dir === 'ltr' ? 'padding-left' : 'padding-right')}: 0.5rem;
 `;
 
 const ImageGridItem = styled.div`
@@ -40,7 +40,7 @@ const ImageGridItem = styled.div`
 
   @supports (${grid}) {
     width: initial;
-    padding-${({ dir }) => (dir === 'ltr' ? 'left' : 'right')}: 0rem;
+    ${({ dir }) => (dir === 'ltr' ? 'padding-left' : 'padding-right')}: 0rem;
     ${ImageGridColumns}
   }
 `;
@@ -52,7 +52,7 @@ const TextGridColumns = css`
 
 const TextGridColumnsFallBack = css`
   width: ${twoOfSixColumnsMaxWidthScaleable};
-  padding-${({ dir }) => (dir === 'ltr' ? 'right' : 'left')}: 0.5rem;
+  ${({ dir }) => (dir === 'ltr' ? 'padding-right' : 'padding-left')}: 0.5rem;
 `;
 
 const TextGridItem = styled.div`
@@ -63,7 +63,7 @@ const TextGridItem = styled.div`
 
   @supports (${grid}) {
     width: 100%;
-    padding-${({ dir }) => (dir === 'ltr' ? 'right' : 'left')}: 0rem;
+    ${({ dir }) => (dir === 'ltr' ? 'padding-right' : 'padding-left')}: 0rem;
     ${TextGridColumns}
   }
 `;
