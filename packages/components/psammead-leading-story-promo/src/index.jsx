@@ -30,7 +30,8 @@ const ImageGridColumns = css`
 
 const ImageGridColumnsFallback = css`
   width: ${fourOfSixColumnsMaxWidthScaleable};
-  ${({ dir }) => (dir === 'ltr' ? 'padding-left' : 'padding-right')}: 0.5rem;
+  ${({ dir }) =>
+    dir === 'ltr' ? 'padding-left' : 'padding-right'}: ${GEL_SPACING};
 `;
 
 const ImageGridItem = styled.div`
@@ -52,7 +53,8 @@ const TextGridColumns = css`
 
 const TextGridColumnsFallBack = css`
   width: ${twoOfSixColumnsMaxWidthScaleable};
-  ${({ dir }) => (dir === 'ltr' ? 'padding-right' : 'padding-left')}: 0.5rem;
+  ${({ dir }) =>
+    dir === 'ltr' ? 'padding-right' : 'padding-left'}: ${GEL_SPACING};
 `;
 
 const TextGridItem = styled.div`
