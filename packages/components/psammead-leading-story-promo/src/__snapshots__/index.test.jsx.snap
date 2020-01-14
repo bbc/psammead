@@ -48,12 +48,14 @@ exports[`LeadingStoryPromo should render RTL leading story promo correctly 1`] =
 .c5 {
   display: inline-block;
   width: 66.67%;
+  padding-left: 0.5rem;
 }
 
 .c1 {
   display: inline-block;
   vertical-align: top;
   width: 33.33%;
+  padding-right: 0.5rem;
 }
 
 .c2 {
@@ -135,9 +137,11 @@ exports[`LeadingStoryPromo should render RTL leading story promo correctly 1`] =
 
 <div
   class="c0"
+  dir="ltr"
 >
   <div
     class="c1"
+    dir="ltr"
   >
     <h3
       class="c2"
@@ -157,6 +161,7 @@ exports[`LeadingStoryPromo should render RTL leading story promo correctly 1`] =
   </div>
   <div
     class="c5"
+    dir="ltr"
   >
     <img
       alt="Alt text"
@@ -214,12 +219,14 @@ exports[`LeadingStoryPromo should render default leading story promo correctly 1
 .c5 {
   display: inline-block;
   width: 66.67%;
+  padding-left: 0.5rem;
 }
 
 .c1 {
   display: inline-block;
   vertical-align: top;
   width: 33.33%;
+  padding-right: 0.5rem;
 }
 
 .c2 {
@@ -301,9 +308,11 @@ exports[`LeadingStoryPromo should render default leading story promo correctly 1
 
 <div
   class="c0"
+  dir="ltr"
 >
   <div
     class="c1"
+    dir="ltr"
   >
     <h3
       class="c2"
@@ -323,6 +332,7 @@ exports[`LeadingStoryPromo should render default leading story promo correctly 1
   </div>
   <div
     class="c5"
+    dir="ltr"
   >
     <img
       alt="Alt text"
