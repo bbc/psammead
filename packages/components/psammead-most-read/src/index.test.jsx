@@ -8,7 +8,7 @@ describe('MostRead', () => {
   shouldMatchSnapshot(
     'should render with ltr most read with correct dir',
     <MostRead
-      items={getItems('news', 10)}
+      items={getItems({ service: 'news', arraySize: 10 })}
       script={latin}
       service="news"
       header="Most Read"
@@ -17,7 +17,7 @@ describe('MostRead', () => {
   shouldMatchSnapshot(
     'should render with rtl most read with correct dir',
     <MostRead
-      items={getItems('arabic', 10)}
+      items={getItems({ service: 'arabic', arraySize: 10 })}
       script={arabic}
       service="arabic"
       header="الأكثر قراءة"
