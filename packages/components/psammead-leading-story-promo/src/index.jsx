@@ -40,6 +40,7 @@ const ImageGridItem = styled.div`
 
   @supports (${grid}) {
     width: initial;
+    padding-${({ dir }) => (dir === 'ltr' ? 'left' : 'right')}: 0rem;
     ${ImageGridColumns}
   }
 `;
@@ -62,6 +63,7 @@ const TextGridItem = styled.div`
 
   @supports (${grid}) {
     width: 100%;
+    padding-${({ dir }) => (dir === 'ltr' ? 'right' : 'left')}: 0rem;
     ${TextGridColumns}
   }
 `;

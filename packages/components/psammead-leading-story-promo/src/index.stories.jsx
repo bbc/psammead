@@ -104,10 +104,10 @@ const generate2FeatureStory = (text, script, service, dir) => {
         <Grid
           item
           columns={{
-            group0: 2,
-            group1: 2,
-            group2: 2,
-            group3: 2,
+            group0: 8,
+            group1: 8,
+            group2: 8,
+            group3: 8,
             group4: 2,
             group5: 2,
           }}
