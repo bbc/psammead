@@ -4,6 +4,7 @@
 | Version       | Description                                                                                                                  |
 | ------------- | ---------------------------------------------------------------------------------------------------------------------------- |
 | 2.5.0 | [PR#2836](https://github.com/bbc/psammead/pull/2836) Add AV embed timeout handling. |
+| 2.4.5 | [PR#2928](https://github.com/bbc/psammead/pull/2928) Talos - Bump Dependencies - @bbc/psammead-play-button |
 | 2.4.4 | [PR#2830](https://github.com/bbc/psammead/pull/2830) Talos - Bump Dependencies - @bbc/psammead-play-button |
 | 2.4.3 | [PR#2827](https://github.com/bbc/psammead/pull/2827) Talos - Bump Dependencies - @bbc/psammead-assets |
 | 2.4.2 | [PR#2806](https://github.com/bbc/psammead/pull/2806) Fix StyledPlaceholder cursor when Javascript is disabled |

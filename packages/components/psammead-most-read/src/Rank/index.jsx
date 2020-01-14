@@ -122,6 +122,7 @@ const StyledWrapper = styled.div`
 const StyledSpan = styled.span`
   ${({ service }) => getSerifLight(service)}
   ${({ script }) => script && getFoolscap(script)};
+  position: relative;
   color: ${C_POSTBOX};
   margin: 0; /* Reset */
   padding: 0;
