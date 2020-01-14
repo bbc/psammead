@@ -16,11 +16,7 @@ import {
   GEL_GROUP_4_SCREEN_WIDTH_MAX,
   GEL_GROUP_5_SCREEN_WIDTH_MIN,
 } from '@bbc/gel-foundations/breakpoints';
-import {
-  getPica,
-  getParagon,
-  getLongPrimer,
-} from '@bbc/gel-foundations/typography';
+import { getParagon, getLongPrimer } from '@bbc/gel-foundations/typography';
 import {
   C_EBON,
   C_METAL,
@@ -270,20 +266,24 @@ const headlineTopStoryTypography = `
 `;
 
 // This is needed to get around the issue of IE11 not supporting
-// nested media queries (which would be returned by getParagon() and
-// getGreatPrimer())
+// nested media queries (so not using getGreatPrimer() & getPica())
 const headlineRegularTypography = script => {
-  const fontSize = script.greatPrimer.groupD.fontSize / 16;
-  const lineHeight = script.greatPrimer.groupD.lineHeight / 16;
+  const fontSize = (type, group) => script[type][group].fontSize / 16;
+  const lineHeight = (type, group) => script[type][group].lineHeight / 16;
   return css`
-    ${getPica(script)}
+    font-size: ${fontSize('pica', 'groupA')}rem;
+    line-height: ${lineHeight('pica', 'groupA')}rem;
     @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
-      font-size: ${fontSize}rem;
-      line-height: ${lineHeight}rem;
+      font-size: ${fontSize('greatPrimer', 'groupB')}rem;
+      line-height: ${lineHeight('greatPrimer', 'groupB')}rem;
     }
+    ${({ promoHasImage }) =>
+      !promoHasImage &&
+      `
     @media (min-width: ${GEL_GROUP_4_SCREEN_WIDTH_MIN}) {
-      ${({ promoHasImage }) => !promoHasImage && getPica(script)}
-    }
+      font-size: ${fontSize('pica', 'groupD')}rem;
+      line-height: ${lineHeight('pica', 'groupD')}rem;
+    `}
   `;
 };
 
