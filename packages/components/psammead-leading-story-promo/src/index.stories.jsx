@@ -72,6 +72,7 @@ const generate2FeatureStory = (text, script, service, dir) => {
         group5: 8,
       }}
       enableGelGutters
+      dir={dir}
     >
       <Grid
         item
@@ -132,6 +133,7 @@ storiesOf('Components|StoryPromo/LeadingStoryPromo', module)
       <LeadingStoryPromo
         image={buildImg()}
         info={generateInfo(text, script, service, dir, true)}
+        dir={dir}
       />
     ),
     { notes, knobs: { escapeHTML: false } },
