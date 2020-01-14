@@ -253,7 +253,7 @@ storiesOf('Components|MostRead', module)
       newsServiceDecorator(({ script, service, dir }) => (
         <MostRead
           items={getItems({
-            service: 'news',
+            service,
             arraySize: 10,
           })}
           script={script}
@@ -272,7 +272,7 @@ storiesOf('Components|MostRead', module)
       newsServiceDecorator(({ script, service, dir }) => (
         <MostRead
           items={getItems({
-            service: 'news',
+            service,
             arraySize: 10,
             withTimestamp: true,
           })}
@@ -292,7 +292,7 @@ storiesOf('Components|MostRead', module)
       arabicServiceDecorator(({ script, service, dir }) => (
         <MostRead
           items={getItems({
-            service: 'arabic',
+            service,
             arraySize: 10,
           })}
           script={script}
