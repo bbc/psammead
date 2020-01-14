@@ -146,16 +146,24 @@ const generateStory = ({
 storiesOf('Components|StoryPromo/StoryPromo', module)
   .addDecorator(withKnobs)
   .addDecorator(withServicesKnob())
-  .add('default', generateStory({ promoType: 'regular' }), {
-    notes,
-    knobs: { escapeHTML: false },
-  })
-  .add('Top story', generateStory({ promoType: 'top' }), {
+  .add('Regular promo', generateStory({ promoType: 'regular' }), {
     notes,
     knobs: { escapeHTML: false },
   })
   .add(
-    'Index Alsos - multiple',
+    'Regular promo - No image',
+    generateStory({ promoType: 'regular', displayImage: false }),
+    {
+      notes,
+      knobs: { escapeHTML: false },
+    },
+  )
+  .add('Top story promo', generateStory({ promoType: 'top' }), {
+    notes,
+    knobs: { escapeHTML: false },
+  })
+  .add(
+    'Top story promo - Index Alsos - multiple',
     generateStory({ promoType: 'top', alsoItems: relatedItems }),
     {
       notes,
@@ -163,18 +171,18 @@ storiesOf('Components|StoryPromo/StoryPromo', module)
     },
   )
   .add(
-    'Index Alsos - one',
+    'Top story promo - Index Alsos - one',
     generateStory({ promoType: 'top', alsoItems: [relatedItems[0]] }),
     {
       notes,
       knobs: { escapeHTML: false },
     },
-  )
-  .add(
-    'No image',
-    generateStory({ promoType: 'regular', displayImage: false }),
-    {
-      notes,
-      knobs: { escapeHTML: false },
-    },
   );
+// .add('Leading promo', generateStory({ promoType: 'leading' }), {
+//   notes,
+//   knobs: { escapeHTML: false },
+// })
+// .add('Leading promo and regular promo', generateStory({ promoType: 'leading' }), {
+//   notes,
+//   knobs: { escapeHTML: false },
+// });
