@@ -31,7 +31,9 @@ const MostRead = ({ items, script, service, header, dir }) => (
             script={script}
             title={item.title}
             href={item.href}
-          />
+          >
+            {item.timestamp}
+          </MostReadLink>
         </MostReadItemWrapper>
       ))}
     </MostReadList>
