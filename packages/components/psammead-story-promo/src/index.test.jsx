@@ -125,16 +125,6 @@ describe('StoryPromo - Top Story', () => {
       promoType="top"
     />,
   );
-
-  shouldMatchSnapshot(
-    'should render story promo without an image',
-    <StoryPromo
-      image={Image}
-      displayImage={false}
-      info={Info({ promoHasImage: false })}
-      mediaIndicator={mediaInfo}
-    />,
-  );
 });
 
 describe('assertions', () => {
