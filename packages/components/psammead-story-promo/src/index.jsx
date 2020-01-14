@@ -50,6 +50,22 @@ const gridFallbackImageWidth = css`
   width: calc(${halfWidthColumnsMaxScaleable} - ${GEL_SPACING});
 `;
 
+const wrapperTopStoryStyles = `
+  @media (min-width: ${GEL_GROUP_5_SCREEN_WIDTH_MIN}) {
+    grid-template-columns: repeat(12, 1fr);
+  }
+`;
+const wrapperRegularStyles = `
+  @media (min-width: ${GEL_GROUP_4_SCREEN_WIDTH_MIN}) {
+    display: block;
+  }
+`;
+const wrapperStyles = {
+  top: wrapperTopStoryStyles,
+  regular: wrapperRegularStyles,
+  leading: wrapperRegularStyles,
+};
+
 const StoryPromoWrapper = styled.div`
   position: relative;
 
@@ -62,19 +78,7 @@ const StoryPromoWrapper = styled.div`
       grid-column-gap: ${GEL_GUTTER_ABOVE_600PX};
     }
 
-    ${({ topStory }) =>
-      topStory
-        ? `
-          @media (min-width: ${GEL_GROUP_5_SCREEN_WIDTH_MIN}) {
-            grid-template-columns: repeat(12, 1fr);
-          }
-        `
-        : `
-          @media (min-width: ${GEL_GROUP_4_SCREEN_WIDTH_MIN}) {
-            display: block;
-          }
-        `}
-  }
+    ${({ promoType }) => wrapperStyles(promoType)}
 `;
 
 const ImageGridColumnsTopStory = css`
@@ -112,20 +116,73 @@ const ImageGridFallback = css`
   }
 `;
 
+const positionBottomOfParent = `
+ position: absolute;
+ bottom: 0;
+`;
+const positionBottomOfParentGroup2 =`
+  @media (min-width: ${GEL_GROUP_2_SCREEN_WIDTH_MIN}) {
+  ${positionBottomOfParent}
+}`;
+
+const summaryTopStoryStyles = `
+  @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) and (max-width: ${GEL_GROUP_3_SCREEN_WIDTH_MAX}) {
+    display: none;
+    visibility: hidden;
+  }
+`;
+const summaryRegularStyles = `
+  @media (max-width: ${GEL_GROUP_2_SCREEN_WIDTH_MAX}) {
+    display: none;
+    visibility: hidden;
+  }
+
+  @media (min-width: ${GEL_GROUP_4_SCREEN_WIDTH_MIN}) {
+    display: none;
+    visibility: hidden;
+  }
+`;
+const imageGridFallbackStyles = {
+  top: ImageGridFallbackTopStory,
+  regular: ImageGridFallback,
+  leading: ImageGridFallback,
+};
+const imageGridStyles = {
+  top: ImageGridColumnsTopStory,
+  regular: ImageGridColumns,
+  leading: ImageGridColumns,
+};
+const textGridFallbackStyles = {
+  top: TextGridFallbackTopStory,
+  regular: TextGridFallback,
+  leading: TextGridFallback,
+};
+const textGridStyles = {
+  top: TextGridColumnsTopStory,
+  regular: TextGridColumns,
+  leading: TextGridColumns,
+};
+const mediaIndicatorStyles = {
+  top: positionBottomOfParent,
+  regular: positionBottomOfParentGroup2,
+  leading: positionBottomOfParentGroup2,
+};
+const summaryStyles = {
+  top: summaryTopStoryStyles,
+  regular: summaryRegularStyles,
+  leading: summaryRegularStyles,
+};
+
 const ImageGridItem = styled.div`
   display: inline-block;
   vertical-align: top;
   position: relative;
-
-  ${({ topStory }) =>
-    topStory ? ImageGridFallbackTopStory : ImageGridFallback}
+  ${({ promoType }) => imageGridFallbackStyles(promoType)}
 
   @supports (${grid}) {
     display: block;
     width: initial;
-
-    ${({ topStory }) =>
-      topStory ? ImageGridColumnsTopStory : ImageGridColumns}
+    ${({ promoType }) => imageGridStyles(promoType)}
   }
 `;
 
@@ -133,19 +190,9 @@ const ImageContentsWrapper = styled.div`
   position: relative;
 `;
 
+
 const InlineMediaIndicator = styled.div`
-  ${({ topStory }) =>
-    topStory
-      ? `
-      position: absolute;
-      bottom: 0;
-      `
-      : `
-      @media (min-width: ${GEL_GROUP_2_SCREEN_WIDTH_MIN}) {
-        position: absolute;
-        bottom: 0;
-      }
-      `}
+  ${({ promoType }) => mediaIndicatorStyles(promoType)}
 `;
 
 const TextGridColumnsTopStory = css`
@@ -204,14 +251,13 @@ const TextGridItem = styled.div`
   display: inline-block;
   vertical-align: top;
 
-  ${({ topStory }) => (topStory ? TextGridFallbackTopStory : TextGridFallback)}
+  ${({ promoType }) => textGridFallbackStyles(promoType)}
 
   @supports (${grid}) {
     display: block;
     width: initial;
     padding: initial;
-
-    ${({ topStory }) => (topStory ? TextGridColumnsTopStory : TextGridColumns)}
+    ${({ promoType }) => textGridStyles(promoType)}
   }
 
   ${({ displayImage }) =>
@@ -266,6 +312,7 @@ Headline.defaultProps = {
   topStory: false,
 };
 
+
 export const Summary = styled.p`
   ${({ script }) => script && getLongPrimer(script)};
   ${({ service }) => getSansRegular(service)}
@@ -275,37 +322,19 @@ export const Summary = styled.p`
 
   ${({ promoHasImage }) => !promoHasImage && `padding-top: ${GEL_SPACING};`}
 
-  ${({ topStory }) =>
-    topStory
-      ? `
-        @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) and (max-width: ${GEL_GROUP_3_SCREEN_WIDTH_MAX}) {
-          display: none;
-          visibility: hidden;
-        }
-      `
-      : `
-        @media (max-width: ${GEL_GROUP_2_SCREEN_WIDTH_MAX}) {
-          display: none;
-          visibility: hidden;
-        }
-
-        @media (min-width: ${GEL_GROUP_4_SCREEN_WIDTH_MIN}) {
-          display: none;
-          visibility: hidden;
-        }
-      `}
+  ${({ promoType }) => summaryStyles(promoType)}
 `;
 
 Summary.propTypes = {
   script: shape(scriptPropType).isRequired,
   service: string.isRequired,
   promoHasImage: bool,
-  topStory: bool,
+  promoType: bool,
 };
 
 Summary.defaultProps = {
   promoHasImage: true,
-  topStory: false,
+  promoType: 'regular',
 };
 
 export const Link = styled.a`
@@ -356,16 +385,16 @@ const StoryPromo = ({
   image,
   info,
   mediaIndicator,
-  topStory,
+  promoType,
   displayImage,
   ...props
 }) => {
   const renderImage = displayImage && (
-    <ImageGridItem topStory={topStory}>
+    <ImageGridItem promoType={promoType}>
       <ImageContentsWrapper>
         {image}
         {mediaIndicator && (
-          <InlineMediaIndicator topStory={topStory}>
+          <InlineMediaIndicator promoType={promoType}>
             {mediaIndicator}
           </InlineMediaIndicator>
         )}
@@ -374,9 +403,9 @@ const StoryPromo = ({
   );
 
   return (
-    <StoryPromoWrapper topStory={topStory} {...props}>
+    <StoryPromoWrapper promoType={promoType} {...props}>
       {renderImage}
-      <TextGridItem topStory={topStory} displayImage={displayImage}>
+      <TextGridItem promoType={promoType} displayImage={displayImage}>
         {!displayImage && mediaIndicator}
         {info}
       </TextGridItem>
@@ -388,13 +417,13 @@ StoryPromo.propTypes = {
   image: node.isRequired,
   info: node.isRequired,
   mediaIndicator: node,
-  topStory: bool,
+  promoType: string,
   displayImage: bool,
 };
 
 StoryPromo.defaultProps = {
   mediaIndicator: null,
-  topStory: false,
+  promoType: 'regular',
   displayImage: true,
 };
 

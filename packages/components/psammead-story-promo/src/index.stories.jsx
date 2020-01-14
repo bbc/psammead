@@ -59,7 +59,7 @@ const InfoComponent = ({
   headlineText,
   summaryText,
   script,
-  topStory,
+  promoType,
   service,
   isLive,
   dir,
@@ -70,7 +70,7 @@ const InfoComponent = ({
   <>
     <Headline
       script={script}
-      topStory={topStory}
+      topStory={promoType === 'top'}
       service={service}
       promoHasImage={promoHasImage}
     >
@@ -84,13 +84,13 @@ const InfoComponent = ({
     </Headline>
     <Summary
       script={script}
-      topStory={topStory}
+      promoType={promoType}
       service={service}
       promoHasImage={promoHasImage}
     >
       {summaryText}
     </Summary>
-    {topStory && alsoItems && (
+    {promoType === 'top' && alsoItems && (
       <IndexAlsosContainer
         alsoItems={alsoItems}
         script={script}
@@ -102,7 +102,7 @@ const InfoComponent = ({
 );
 
 const generateStory = ({
-  topStory,
+  promoType,
   alsoItems = null,
   displayImage = true,
 }) => ({ text: textSnippet, script, service, dir }) => {
@@ -117,7 +117,7 @@ const generateStory = ({
       headlineText={textSnippet}
       summaryText={textSnippet}
       script={script}
-      topStory={topStory}
+      promoType={promoType}
       service={service}
       isLive={boolean('isLive', false)}
       dir={dir}
@@ -138,7 +138,7 @@ const generateStory = ({
         mediaType !== 'No media' &&
         MediaIndicatorComponent(mediaType, service, displayImage)
       }
-      topStory={topStory}
+      promoType={promoType}
     />
   );
 };
@@ -146,17 +146,17 @@ const generateStory = ({
 storiesOf('Components|StoryPromo/StoryPromo', module)
   .addDecorator(withKnobs)
   .addDecorator(withServicesKnob())
-  .add('default', generateStory({ topStory: false }), {
+  .add('default', generateStory({ promoType: 'regular' }), {
     notes,
     knobs: { escapeHTML: false },
   })
-  .add('Top story', generateStory({ topStory: true }), {
+  .add('Top story', generateStory({ promoType: 'top' }), {
     notes,
     knobs: { escapeHTML: false },
   })
   .add(
     'Index Alsos - multiple',
-    generateStory({ topStory: true, alsoItems: relatedItems }),
+    generateStory({ promoType: 'top', alsoItems: relatedItems }),
     {
       notes,
       knobs: { escapeHTML: false },
@@ -164,13 +164,13 @@ storiesOf('Components|StoryPromo/StoryPromo', module)
   )
   .add(
     'Index Alsos - one',
-    generateStory({ topStory: true, alsoItems: [relatedItems[0]] }),
+    generateStory({ promoType: 'top', alsoItems: [relatedItems[0]] }),
     {
       notes,
       knobs: { escapeHTML: false },
     },
   )
-  .add('No image', generateStory({ topStory: false, displayImage: false }), {
+  .add('No image', generateStory({ promoType: 'regular', displayImage: false }), {
     notes,
     knobs: { escapeHTML: false },
   });
