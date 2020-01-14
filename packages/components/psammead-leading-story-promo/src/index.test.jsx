@@ -36,6 +36,7 @@ describe('LeadingStoryPromo', () => {
     <LeadingStoryPromo
       image={Image}
       info={Info(arabic, 'هذا هو العنوان الخاص بي', 'هذا عنوان فرعي')}
+      dir="rtl"
     />,
   );
 });
