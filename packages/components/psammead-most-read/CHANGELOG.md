@@ -3,6 +3,10 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 0.5.1-alpha.2 | [PR#2933](https://github.com/bbc/psammead/pull/2933) Add most read storybook example with timestamp |
+| 0.5.1-alpha.1 | [PR#2895](https://github.com/bbc/psammead/pull/2895) Export MostReadSection separetly, add faux box for MostReadRank |
+| 0.5.0-alpha.3 | [PR#2928](https://github.com/bbc/psammead/pull/2928) Talos - Bump Dependencies - @bbc/psammead-grid |
+| 0.5.0-alpha.2 | [PR#2920](https://github.com/bbc/psammead/pull/2920) Talos - Bump Dependencies - @bbc/gel-foundations, @bbc/psammead-grid |
 | 0.5.0-alpha.1 | [PR#2869](https://github.com/bbc/psammead/pull/2869) Export most-read components separately. |
 | 0.4.0-alpha.2 | [PR#2880](https://github.com/bbc/psammead/pull/2880) Talos - Bump Dependencies - @bbc/psammead-grid |
 | 0.4.0-alpha.1 | [PR#2860](https://github.com/bbc/psammead/pull/2717) Update props for MostReadItem and update Readme |

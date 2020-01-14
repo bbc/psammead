@@ -7,6 +7,7 @@ exports[`MostReadRank should render ltr correctly 1`] = `
   font-style: normal;
   font-size: 2rem;
   line-height: 2.25rem;
+  position: relative;
   color: #B80000;
   margin: 0;
   padding: 0;
@@ -75,6 +76,7 @@ exports[`MostReadRank should render ltr with double digits correctly 1`] = `
   font-style: normal;
   font-size: 2rem;
   line-height: 2.25rem;
+  position: relative;
   color: #B80000;
   margin: 0;
   padding: 0;
@@ -143,6 +145,7 @@ exports[`MostReadRank should render rtl correctly 1`] = `
   font-style: normal;
   font-size: 2rem;
   line-height: 2.25rem;
+  position: relative;
   color: #B80000;
   margin: 0;
   padding: 0;
@@ -211,6 +214,7 @@ exports[`MostReadRank should render rtl with double digits correctly 1`] = `
   font-style: normal;
   font-size: 2rem;
   line-height: 2.25rem;
+  position: relative;
   color: #B80000;
   margin: 0;
   padding: 0;
