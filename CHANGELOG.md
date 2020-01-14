@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 2.0.49 | [PR#2904](https://github.com/bbc/psammead/pull/2904) Bumping @babel/cli to 7.8.0 |
 | 2.0.48 | [PR#2928](https://github.com/bbc/psammead/pull/2928) Talos - Bump Dependencies - @bbc/psammead-brand, @bbc/psammead-caption, @bbc/psammead-copyright, @bbc/psammead-grid, @bbc/psammead-media-indicator, @bbc/psammead-paragraph, @bbc/psammead-storybook-helpers, @bbc/psammead-timestamp |
 | 2.0.47 | [PR#2920](https://github.com/bbc/psammead/pull/2920) Talos - Bump Dependencies - @bbc/gel-foundations, @bbc/psammead-brand, @bbc/psammead-calendars, @bbc/psammead-grid |
 | 2.0.46 | [PR#2918](https://github.com/bbc/psammead/pull/2918) Bumping developer dependencies |
