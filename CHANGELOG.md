@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 2.0.48 | [PR#2928](https://github.com/bbc/psammead/pull/2928) Talos - Bump Dependencies - @bbc/psammead-brand, @bbc/psammead-caption, @bbc/psammead-copyright, @bbc/psammead-grid, @bbc/psammead-media-indicator, @bbc/psammead-paragraph, @bbc/psammead-storybook-helpers, @bbc/psammead-timestamp |
 | 2.0.47 | [PR#2920](https://github.com/bbc/psammead/pull/2920) Talos - Bump Dependencies - @bbc/gel-foundations, @bbc/psammead-brand, @bbc/psammead-calendars, @bbc/psammead-grid |
 | 2.0.46 | [PR#2918](https://github.com/bbc/psammead/pull/2918) Bumping developer dependencies |
 | 2.0.45 | [PR#2917](https://github.com/bbc/psammead/pull/2917) Remove alpha tag from Brand component |
