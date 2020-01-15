@@ -56,7 +56,7 @@ import { coreIcons } from '@bbc/psammead-assets/svgs';
 
 ## Media Icons SVGs
 
-Media icons is an object containing styled SVG icons for video, audio, photogallery, guidance and clock. Media icons are sized to work well alongside specific text with typography group `GEL Minion`. They are used in `psammead-media-indicator` component.
+Media icons is an object containing styled SVG icons for video, audio, photogallery, guidance and clock. Media icons are sized to work well alongside specific text with typography group `GEL Minion`. They are used in `psammead-media-indicator`, `psammead-media-player` and radio schedules components.
 
 ### Usage
 
