@@ -51,11 +51,13 @@ const wrapperTopStoryStyles = `
     grid-template-columns: repeat(12, 1fr);
   }
 `;
+
 const wrapperRegularStyles = `
   @media (min-width: ${GEL_GROUP_4_SCREEN_WIDTH_MIN}) {
     display: block;
   }
 `;
+
 const wrapperStyles = {
   top: wrapperTopStoryStyles,
   regular: wrapperRegularStyles,
@@ -113,13 +115,15 @@ const ImageGridFallback = css`
 `;
 
 const positionBottomOfParent = `
- position: absolute;
- bottom: 0;
+  position: absolute;
+  bottom: 0;
 `;
+
 const positionBottomOfParentGroup2 = `
   @media (min-width: ${GEL_GROUP_2_SCREEN_WIDTH_MIN}) {
-  ${positionBottomOfParent}
-}`;
+    ${positionBottomOfParent}
+  }
+`;
 
 const summaryTopStoryStyles = `
   @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) and (max-width: ${GEL_GROUP_3_SCREEN_WIDTH_MAX}) {
@@ -127,6 +131,7 @@ const summaryTopStoryStyles = `
     visibility: hidden;
   }
 `;
+
 const summaryRegularStyles = `
   @media (max-width: ${GEL_GROUP_2_SCREEN_WIDTH_MAX}) {
     display: none;
@@ -196,26 +201,31 @@ const imageGridFallbackStyles = {
   regular: ImageGridFallback,
   leading: ImageGridFallback,
 };
+
 const imageGridStyles = {
   top: ImageGridColumnsTopStory,
   regular: ImageGridColumns,
   leading: ImageGridColumns,
 };
+
 const textGridFallbackStyles = {
   top: TextGridFallbackTopStory,
   regular: TextGridFallback,
   leading: TextGridFallback,
 };
+
 const textGridStyles = {
   top: TextGridColumnsTopStory,
   regular: TextGridColumns,
   leading: TextGridColumns,
 };
+
 const mediaIndicatorStyles = {
   top: positionBottomOfParent,
   regular: positionBottomOfParentGroup2,
   leading: positionBottomOfParentGroup2,
 };
+
 const summaryStyles = {
   top: summaryTopStoryStyles,
   regular: summaryRegularStyles,
@@ -261,9 +271,7 @@ const TextGridItem = styled.div`
     `>div{ display:inline-block; padding: 0; vertical-align:initial; } `}
 `;
 
-const headlineTopStoryTypography = `
-  ${({ script }) => getParagon(script)}
-`;
+const headlineTopStoryTypography = script => getParagon(script);
 
 // This is needed to get around the issue of IE11 not supporting
 // nested media queries (so not using getGreatPrimer() & getPica())
@@ -288,9 +296,9 @@ const headlineRegularTypography = script => {
 };
 
 const headlineTypography = script => ({
-  top: headlineTopStoryTypography,
+  top: headlineTopStoryTypography(script),
   regular: headlineRegularTypography(script),
-  leading: headlineTopStoryTypography,
+  leading: headlineTopStoryTypography(script),
 });
 
 export const Headline = styled.h3`
@@ -382,7 +390,7 @@ LiveLabel.defaultProps = {
   dir: 'ltr',
 };
 
-const StoryPromo = ({
+export const StoryPromo = ({
   image,
   info,
   mediaIndicator,
@@ -428,4 +436,4 @@ StoryPromo.defaultProps = {
   displayImage: true,
 };
 
-export default StoryPromo;
+export const LeadingStoryPromo = () => {};

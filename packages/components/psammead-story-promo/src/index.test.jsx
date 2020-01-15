@@ -5,7 +5,7 @@ import { latin } from '@bbc/gel-foundations/scripts';
 import MediaIndicator from '@bbc/psammead-media-indicator';
 import { render } from '@testing-library/react';
 import VisuallyHiddenText from '@bbc/psammead-visually-hidden-text';
-import StoryPromo, { Headline, Summary, Link, LiveLabel } from './index';
+import { StoryPromo, Headline, Summary, Link, LiveLabel } from './index';
 import relatedItems from '../testHelpers/relatedItems';
 import IndexAlsosContainer from '../testHelpers/IndexAlsosContainer';
 
