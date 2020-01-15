@@ -300,7 +300,7 @@ const TEXT_VARIANTS = {
     locale: 'tr',
     articlePath: '/turkce/articles/c8q1ze59n25o',
   },
-  ukChinaSimp: {
+  ukchinaSimp: {
     service: 'ukchina',
     variant: 'simp',
     text: '该计划的批评者说，这个政策不能解决住房短缺的问题',
@@ -310,7 +310,7 @@ const TEXT_VARIANTS = {
     locale: 'zh-cn',
     articlePath: '/ukchina/articles/c0e8weny66ko/simp',
   },
-  ukChinaTrad: {
+  ukchinaTrad: {
     service: 'ukchina',
     variant: 'trad',
     text: '該計劃的批評者說，這個政策不能解決住房短缺的問題',
