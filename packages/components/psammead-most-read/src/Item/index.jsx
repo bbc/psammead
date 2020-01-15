@@ -51,6 +51,7 @@ const StyledLink = styled.a`
 `;
 
 const StyledItem = styled.div`
+  padding-top: 6px;
   padding-bottom: ${GEL_SPACING_TRPL};
   ${paddingStart}: ${GEL_SPACING_DBL};
   ${paddingEnd}: ${GEL_SPACING_DBL};
