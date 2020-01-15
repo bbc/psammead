@@ -18,6 +18,18 @@ const lastUpdated = ({ script, service }) => (
   </Timestamp>
 );
 
+export const getServiceVariant = ({ service, variant = '' }) => {
+  // non variant services have a default value
+  const variantOverride =
+    variant === 'default'
+      ? ''
+      : variant.charAt(0).toUpperCase() + variant.substring(1);
+  // ukchina is camel cased in TEXT_VARIANTS
+  const serviceOverride = service === 'ukchina' ? 'ukChina' : service;
+
+  return serviceOverride + variantOverride;
+};
+
 export const getItem = ({ service, withTimestamp = false }) => {
   const baseUrl = 'https://www.bbc.com';
   const { text, articlePath } = TEXT_VARIANTS[service];
