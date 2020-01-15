@@ -1,9 +1,9 @@
-# psammead-media-player &middot; [![Known Vulnerabilities](https://snyk.io/test/github/bbc/psammead/badge.svg?targetFile=packages%2Fcomponents%2Fpsammead-brand%2Fpackage.json)](https://snyk.io/test/github/bbc/psammead?targetFile=packages%2Fcomponents%2Fpsammead-brand%2Fpackage.json) [![Dependency Status](https://david-dm.org/bbc/psammead.svg?path=packages/components/psammead-media-player)](https://david-dm.org/bbc/psammead?path=packages/components/psammead-media-player) [![peerDependencies Status](https://david-dm.org/bbc/psammead/peer-status.svg?path=packages/components/psammead-media-player)](https://david-dm.org/bbc/psammead?path=packages/components/psammead-media-player&type=peer) [![Storybook](https://raw.githubusercontent.com/storybooks/brand/master/badge/badge-storybook.svg?sanitize=true)](https://bbc.github.io/psammead/?path=/story/brand--default) [![GitHub license](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](https://github.com/bbc/psammead/blob/latest/LICENSE) [![npm version](https://img.shields.io/npm/v/@bbc/psammead-media-player.svg)](https://www.npmjs.com/package/@bbc/psammead-media-player) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/bbc/psammead/blob/latest/CONTRIBUTING.md) 
+# psammead-media-player &middot; [![Known Vulnerabilities](https://snyk.io/test/github/bbc/psammead/badge.svg?targetFile=packages%2Fcomponents%2Fpsammead-brand%2Fpackage.json)](https://snyk.io/test/github/bbc/psammead?targetFile=packages%2Fcomponents%2Fpsammead-brand%2Fpackage.json) [![Dependency Status](https://david-dm.org/bbc/psammead.svg?path=packages/components/psammead-media-player)](https://david-dm.org/bbc/psammead?path=packages/components/psammead-media-player) [![peerDependencies Status](https://david-dm.org/bbc/psammead/peer-status.svg?path=packages/components/psammead-media-player)](https://david-dm.org/bbc/psammead?path=packages/components/psammead-media-player&type=peer) [![Storybook](https://raw.githubusercontent.com/storybooks/brand/master/badge/badge-storybook.svg?sanitize=true)](https://bbc.github.io/psammead/?path=/story/brand--default) [![GitHub license](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](https://github.com/bbc/psammead/blob/latest/LICENSE) [![npm version](https://img.shields.io/npm/v/@bbc/psammead-media-player.svg)](https://www.npmjs.com/package/@bbc/psammead-media-player) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/bbc/psammead/blob/latest/CONTRIBUTING.md)
 
 ## Description
 The `psammead-media-player` component exports two versions of our media player: an AMP version, and an Canonical version.
 
-At it's core, this component returns an `iframe` that is designed to frame a media asset. 
+At its core, this component returns an `iframe` that is designed to frame a media asset.
 The AMP variant will render an `amp-iframe` with a nested `amp-img` to use as a placeholder.
 The Canonical variant will render a placeholder, that when clicked will load the `iframe` into view.
 
@@ -29,7 +29,7 @@ This component to be used at any point on the page, specifically when a media pl
 | [`mediaInfo`](#mediaInfo) | object | Yes   | - | `{ title: 'A vertical video pretending to be a cat title', duration: '2:30', durationSpoken: '2 minutes 11 seconds', datetime: 'PT2M30S' }`|
 | `noJsClassName` | string | No | `null` | `'no-js'` |
 | `noJsMessage` | string | Yes | - | `'This media cannot play in your browser. Please enable Javascript or use a different browser.'` |
-
+| `timeoutMs` | number | No | `5000` | `9001` |
 
 The `src` prop is required, as it tells the component what page it needs to embed.
 The `placeholderSrcset` prop is not required, as it allows image responsiveness and optimization depending on the size of the screen.
@@ -38,8 +38,9 @@ The `portrait` prop is not required, and defaults to `false`. This is to support
 The `showPlaceholder` boolean prop is also not required, and defaults to `true`.
 Assuming `showPlaceholder` is `true`, the `placeholderSrc` will be what image to display as the placeholder.
 The `noJsClassName` is an optional prop that defaults to `null` and is used to add styling support to certain elements when javascript is disabled in the browser.
-The `noJsMessage` is a required prop used display a fallback text when javascript is disabled in the browser. 
+The `noJsMessage` is a required prop used display a fallback text when javascript is disabled in the browser.
 The `mediaInfo` prop is required, and has the following properties.
+The `timeoutMs` prop allows you to override the default timeout value. If media fails to load in this time, users are shown a timeout message.
 
 #### mediaInfo
 
@@ -69,18 +70,19 @@ The `placeholderSrc` prop is required for AMP, as in order to have the component
 ```js
 import { CanonicalMediaPlayer } from '@bbc/psammead-media-player';
 
-const Container = ({ 
-  src, 
+const Container = ({
+  src,
   skin,
-  title, 
+  title,
   service,
-  portrait, 
-  showPlaceholder, 
-  placeholderSrc, 
-  placeholderSrcset, 
+  portrait,
+  showPlaceholder,
+  placeholderSrc,
+  placeholderSrcset,
   mediaInfo,
   noJsClassName,
   noJsMessage,
+  timeoutMs,
 }) => (
   <CanonicalMediaPlayer
     src={src}
@@ -94,6 +96,7 @@ const Container = ({
     mediaInfo={mediaInfo}
     noJsClassName={noJsClassName}
     noJsMessage={noJsMessage}
+    timeoutMs={timeoutMs}
   />
 )
 ```
