@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 0.5.1-alpha.3 | [PR#2933](https://github.com/bbc/psammead/pull/2933) Increase 1 column viewport to MAX_GEL_GROUP_2, add spacing between timestamp and link and add padding-top to link |
 | 0.5.1-alpha.2 | [PR#2933](https://github.com/bbc/psammead/pull/2933) Add most read storybook example with timestamp |
 | 0.5.1-alpha.1 | [PR#2895](https://github.com/bbc/psammead/pull/2895) Export MostReadSection separetly, add faux box for MostReadRank |
 | 0.5.0-alpha.3 | [PR#2928](https://github.com/bbc/psammead/pull/2928) Talos - Bump Dependencies - @bbc/psammead-grid |
