@@ -13,14 +13,20 @@ import {
   GEL_GROUP_5_SCREEN_WIDTH_MIN,
   GEL_GROUP_4_SCREEN_WIDTH_MAX,
   GEL_GROUP_3_SCREEN_WIDTH_MIN,
+  GEL_GROUP_2_SCREEN_WIDTH_MIN,
   GEL_GROUP_2_SCREEN_WIDTH_MAX,
   GEL_GROUP_1_SCREEN_WIDTH_MIN,
+  GEL_GROUP_1_SCREEN_WIDTH_MAX,
   GEL_GROUP_0_SCREEN_WIDTH_MAX,
 } from '@bbc/gel-foundations/breakpoints';
 import { C_POSTBOX } from '@bbc/psammead-styles/colours';
 import { scriptPropType } from '@bbc/gel-foundations/prop-types';
 import { grid } from '@bbc/psammead-styles/detection';
 import { getSerifLight } from '@bbc/psammead-styles/font-styles';
+import {
+  doubleDigitDefault,
+  doubleDigitOverride,
+} from '../testHelpers/doubleDigitOverride';
 
 // For additional spacing for numerals in the right column because of '10' being double digits
 const isOnSecondColumn = ({ listIndex, numberOfItems }, supportsGrid) =>
@@ -32,36 +38,8 @@ const listHasDoubleDigits = ({ numberOfItems }) => numberOfItems >= 9;
 const columnIncludesDoubleDigits = (props, supportsGrid) =>
   isOnSecondColumn(props, supportsGrid) && listHasDoubleDigits(props);
 
-// These default measurements are to be used for 2nd column minimum width.
-const doubleDigitDefault = {
-  group0: '2.5rem',
-  group1: '2.5rem',
-  group2: '2.5rem',
-  group3: '4rem',
-  group5: '4.25rem',
-};
-
-// These override measurements are for services with smaller characters and used for 2nd column minimum width.
-const doubleDigitOverride = {
-  bengali: {
-    group0: '2.5rem',
-    group1: '2rem',
-    group2: '2rem',
-    group3: '3rem',
-    group5: '3rem',
-  },
-  arabic: {
-    group0: '2.5rem',
-    group1: '2.5rem',
-    group2: '2.5rem',
-    group3: '4rem',
-    group5: '3.75rem',
-  },
-};
-
 const doubleDigitWidth = ({ service }) => {
   const overrideService = Object.keys(doubleDigitOverride);
-
   return overrideService.includes(service)
     ? doubleDigitOverride[service]
     : doubleDigitDefault;
@@ -73,9 +51,14 @@ const StyledWrapper = styled.div`
       listHasDoubleDigits(props) ? doubleDigitWidth(props).group0 : 'auto'};
   }
 
-  @media (min-width: ${GEL_GROUP_1_SCREEN_WIDTH_MIN}) and (max-width: ${GEL_GROUP_2_SCREEN_WIDTH_MAX}) {
+  @media (min-width: ${GEL_GROUP_1_SCREEN_WIDTH_MIN}) and (max-width: ${GEL_GROUP_1_SCREEN_WIDTH_MAX}) {
     min-width: ${props =>
       listHasDoubleDigits(props) ? doubleDigitWidth(props).group1 : 'auto'};
+  }
+
+  @media (min-width: ${GEL_GROUP_2_SCREEN_WIDTH_MIN}) and (max-width: ${GEL_GROUP_2_SCREEN_WIDTH_MAX}) {
+    min-width: ${props =>
+      listHasDoubleDigits(props) ? doubleDigitWidth(props).group2 : 'auto'};
   }
 
   @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) and (max-width: ${GEL_GROUP_4_SCREEN_WIDTH_MAX}) {
