@@ -26,12 +26,25 @@ const StyledLink = styled.a`
   ${({ script }) => script && getDoublePica(script)};
   ${({ service }) => getSerifMedium(service)}
 
+  position: static;
   color: ${C_EBON};
   text-decoration: none;
 
   &:hover,
   &:focus {
     text-decoration: underline;
+  }
+
+  &:before {
+    bottom: 0;
+    content: '';
+    left: 0;
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+    top: 0;
+    white-space: nowrap;
+    z-index: 1;
   }
 `;
 
@@ -75,23 +88,28 @@ MostReadLink.defaultProps = {
   children: null,
 };
 
-const StyledLi = styled.li`
-  position: relative;
+const StyledDiv = styled.div`
   display: flex;
   flex-direction: row;
   margin: 0;
   padding: 0;
 `;
 
+const StyledGrid = styled(Grid).attrs({
+  role: 'listitem',
+})`
+  position: relative;
+`;
+
 export const MostReadItemWrapper = ({ dir, children }) => (
-  <Grid
+  <StyledGrid
     {...mostReadItemGridProps}
     parentColumns={mostReadListGridProps.columns} // parentColumns is required here because on IE, this component would be rendered before it's parent therefore not receiving the parent's grid columns values so we have to explicitly pass it as a prop here so it works on IE
     dir={dir}
     forwardedAs="li"
   >
-    <StyledLi>{children}</StyledLi>
-  </Grid>
+    <StyledDiv>{children}</StyledDiv>
+  </StyledGrid>
 );
 
 MostReadItemWrapper.propTypes = {

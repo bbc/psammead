@@ -5,13 +5,16 @@ import { MostReadLink } from '.';
 import { getItem, getItemWrapperArray } from '../testHelpers';
 
 describe('MostReadLink', () => {
+  const newsItem = getItem({ service: 'news', withTimestamp: true });
+  const arabicItem = getItem({ service: 'arabic' });
+
   shouldMatchSnapshot(
     'should render ltr correctly',
     <MostReadLink
-      href={getItem('news').href}
+      href={newsItem.href}
       service="news"
       script={latin}
-      title={getItem('news').title}
+      title={newsItem.title}
     />,
   );
 
@@ -19,22 +22,22 @@ describe('MostReadLink', () => {
     'should render rtl correctly',
     <MostReadLink
       dir="rtl"
-      href={getItem('persian').href}
+      href={arabicItem.href}
       service="persian"
       script={arabic}
-      title={getItem('persian').title}
+      title={arabicItem.title}
     />,
   );
 
   shouldMatchSnapshot(
     'should render with last updated date correctly',
     <MostReadLink
-      href={getItem('news').href}
+      href={newsItem.href}
       service="news"
       script={latin}
-      title={getItem('news').title}
+      title={newsItem.title}
     >
-      {getItem('news', true).timestamp}
+      {newsItem.timestamp}
     </MostReadLink>,
   );
 });
