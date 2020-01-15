@@ -10,5 +10,4 @@ describe('RadioSchedule', () => {
     const { container } = render(<RadioSchedule />);
     expect(container.querySelector('h1').textContent).toEqual('Hello World');
   });
-
 });

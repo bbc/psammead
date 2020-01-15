@@ -8,4 +8,17 @@ import RadioSchedule from './index';
 storiesOf('Components|RadioSchedule', module)
   .addDecorator(withKnobs)
   .addDecorator(withServicesKnob())
-  .add('default', () => <RadioSchedule />, { notes });
+  .add(
+    'default',
+    props => (
+      <RadioSchedule
+        {...props}
+        heading={props.text}
+        summary={props.text}
+        date="29/01/1990"
+      />
+    ),
+    {
+      notes,
+    },
+  );
