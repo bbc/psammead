@@ -18,7 +18,7 @@ import {
   getPica,
 } from '@bbc/gel-foundations/typography';
 
-const RadioWrapper = styled.div`
+const CardWrapper = styled.div`
   background-color: ${C_WHITE};
   width: 14.5rem;
 `;
@@ -30,10 +30,11 @@ const TextWrapper = styled.div`
       : `padding-right: ${GEL_SPACING};`}
 `;
 
-const HeadingWrapper = styled.div`
+const HeadingWrapper = styled.h3`
   ${({ service }) => service && getSerifRegular(service)};
   ${({ script }) => script && getPica(script)};
   color: ${C_EBON};
+  margin: 0; /* Reset */
 `;
 
 const DateWrapper = styled.div`
@@ -79,7 +80,7 @@ const DurationWrapper = styled.span`
       : `padding-right: ${GEL_SPACING};`}
 `;
 
-const RadioSchedule = ({
+const ProgramCard = ({
   dir,
   service,
   script,
@@ -88,7 +89,7 @@ const RadioSchedule = ({
   date,
   duration,
 }) => (
-  <RadioWrapper>
+  <CardWrapper>
     <TextWrapper dir={dir}>
       <HeadingWrapper service={service} script={script}>
         {heading}
@@ -104,7 +105,7 @@ const RadioSchedule = ({
       <IconWrapper dir={dir}>{mediaIcons.audio}</IconWrapper>
       <DurationWrapper dir={dir}>{duration}</DurationWrapper>
     </ButtonWrapper>
-  </RadioWrapper>
+  </CardWrapper>
 );
 
-export default RadioSchedule;
+export default ProgramCard;

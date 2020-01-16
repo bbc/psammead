@@ -1,13 +1,13 @@
 import React from 'react';
 import { shouldMatchSnapshot } from '@bbc/psammead-test-helpers';
 import { render } from '@testing-library/react';
-import RadioSchedule from './index';
+import ProgramCard from './index';
 
-describe('RadioSchedule', () => {
-  shouldMatchSnapshot('should render correctly', <RadioSchedule />);
+describe('ProgramCard', () => {
+  shouldMatchSnapshot('should render correctly', <ProgramCard />);
 
   it('should test example template', () => {
-    const { container } = render(<RadioSchedule />);
+    const { container } = render(<ProgramCard />);
     expect(container.querySelector('h1').textContent).toEqual('Hello World');
   });
 });

@@ -3,15 +3,15 @@ import { storiesOf } from '@storybook/react';
 import { withKnobs } from '@storybook/addon-knobs';
 import { withServicesKnob } from '@bbc/psammead-storybook-helpers';
 import notes from '../README.md';
-import RadioSchedule from './index';
+import ProgramCard from './index';
 
-storiesOf('Components|RadioSchedule', module)
+storiesOf('Components|ProgramCard', module)
   .addDecorator(withKnobs)
   .addDecorator(withServicesKnob())
   .add(
     'default',
     props => (
-      <RadioSchedule
+      <ProgramCard
         {...props}
         heading={props.text}
         summary={props.text}

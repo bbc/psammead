@@ -1,13 +1,13 @@
 {
-  "name": "@bbc/psammead-radio-schedule",
+  "name": "@bbc/psammead-program-card",
   "version": "0.1.0-alpha.1",
   "main": "dist/index.js",
   "module": "esm/index.js",
   "sideEffects": false,
-  "description": "radio schedule",
+  "description": "Program card",
   "repository": {
     "type": "git",
-    "url": "https://github.com/BBC-News/psammead/tree/latest/packages/components/psammead-radio-schedule"
+    "url": "https://github.com/BBC-News/psammead/tree/latest/packages/components/psammead-program-card"
   },
   "author": {
     "name": "Psammead Maintainers",
@@ -17,7 +17,7 @@
   "bugs": {
     "url": "https://github.com/bbc/psammead/issues"
   },
-  "homepage": "https://github.com/BBC-News/psammead/blob/latest/packages/components/psammead-radio-schedule/README.md",
+  "homepage": "https://github.com/BBC-News/psammead/blob/latest/packages/components/psammead-program-card/README.md",
   "dependencies": {},
   "peerDependencies": {
     "react": "^16.12.0"

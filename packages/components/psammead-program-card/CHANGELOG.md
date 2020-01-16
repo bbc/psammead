@@ -1,4 +1,4 @@
-# Radio Schedule Changelog
+# Program Card Changelog
 
 | Version | Description |
 |---------|-------------|
