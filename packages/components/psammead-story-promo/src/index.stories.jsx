@@ -177,12 +177,16 @@ storiesOf('Components|StoryPromo/StoryPromo', module)
       notes,
       knobs: { escapeHTML: false },
     },
+  )
+  .add('Leading promo', generateStory({ promoType: 'leading' }), {
+    notes,
+    knobs: { escapeHTML: false },
+  })
+  .add(
+    'Leading promo and regular promo',
+    generateStory({ promoType: 'leading' }),
+    {
+      notes,
+      knobs: { escapeHTML: false },
+    },
   );
-// .add('Leading promo', generateStory({ promoType: 'leading' }), {
-//   notes,
-//   knobs: { escapeHTML: false },
-// })
-// .add('Leading promo and regular promo', generateStory({ promoType: 'leading' }), {
-//   notes,
-//   knobs: { escapeHTML: false },
-// });

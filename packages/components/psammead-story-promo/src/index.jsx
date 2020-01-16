@@ -16,7 +16,11 @@ import {
   GEL_GROUP_4_SCREEN_WIDTH_MAX,
   GEL_GROUP_5_SCREEN_WIDTH_MIN,
 } from '@bbc/gel-foundations/breakpoints';
-import { getParagon, getLongPrimer } from '@bbc/gel-foundations/typography';
+import {
+  getParagon,
+  getLongPrimer,
+  getDoublePica,
+} from '@bbc/gel-foundations/typography';
 import {
   C_EBON,
   C_METAL,
@@ -61,7 +65,7 @@ const wrapperRegularStyles = `
 const wrapperStyles = {
   top: wrapperTopStoryStyles,
   regular: wrapperRegularStyles,
-  leading: wrapperRegularStyles,
+  leading: '',
 };
 
 const StoryPromoWrapper = styled.div`
@@ -91,6 +95,11 @@ const ImageGridColumns = css`
   grid-column: 1 / span 2;
 `;
 
+const ImageGridColumnsLeadingStory = css`
+  grid-template-columns: repeat(4, 1fr);
+  grid-column-end: span 4;
+`;
+
 const ImageGridFallbackTopStory = css`
   margin-bottom: ${GEL_GUTTER_BELOW_600PX};
   width: ${fullWidthColumnsMaxScaleable};
@@ -112,6 +121,10 @@ const ImageGridFallback = css`
     display: block;
     width: 100%;
   }
+`;
+
+const ImageGridFallbackLeadingStory = css`
+  width: ${fourOfSixColumnsMaxWidthScaleable};
 `;
 
 const positionBottomOfParent = `
@@ -166,6 +179,11 @@ const TextGridColumns = css`
   }
 `;
 
+const TextGridColumnsLeadingStory = css`
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-end: span 2;
+`;
+
 const TextGridFallbackTopStory = css`
   @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
     width: ${halfWidthColumnsMaxScaleable};
@@ -196,28 +214,32 @@ const TextGridFallback = css`
     `width: ${fullWidthColumnsMaxScaleable}; >div{ vertical-align: middle; }`}
 `;
 
+const TextGridFallBackLeadingStory = css`
+  width: ${twoOfSixColumnsMaxWidthScaleable};
+`;
+
 const imageGridFallbackStyles = {
   top: ImageGridFallbackTopStory,
   regular: ImageGridFallback,
-  leading: ImageGridFallback,
+  leading: ImageGridFallbackLeadingStory,
 };
 
 const imageGridStyles = {
   top: ImageGridColumnsTopStory,
   regular: ImageGridColumns,
-  leading: ImageGridColumns,
+  leading: ImageGridColumnsLeadingStory,
 };
 
 const textGridFallbackStyles = {
   top: TextGridFallbackTopStory,
   regular: TextGridFallback,
-  leading: TextGridFallback,
+  leading: TextGridFallBackLeadingStory,
 };
 
 const textGridStyles = {
   top: TextGridColumnsTopStory,
   regular: TextGridColumns,
-  leading: TextGridColumns,
+  leading: TextGridColumnsLeadingStory,
 };
 
 const mediaIndicatorStyles = {
@@ -272,6 +294,7 @@ const TextGridItem = styled.div`
 `;
 
 const headlineTopStoryTypography = script => getParagon(script);
+const headlineLeadingStoryTypography = script => getDoublePica(script);
 
 // This is needed to get around the issue of IE11 not supporting
 // nested media queries (so not using getGreatPrimer() & getPica())
@@ -298,7 +321,7 @@ const headlineRegularTypography = script => {
 const headlineTypography = script => ({
   top: headlineTopStoryTypography(script),
   regular: headlineRegularTypography(script),
-  leading: headlineTopStoryTypography(script),
+  leading: headlineLeadingStoryTypography(script),
 });
 
 export const Headline = styled.h3`
