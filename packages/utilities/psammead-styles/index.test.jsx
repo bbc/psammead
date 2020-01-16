@@ -73,6 +73,7 @@ const coloursExpectedExports = {
   C_DARK_SALTIRE: 'string',
   C_WEATHER_BLUE: 'string',
   C_ARCHIVE_BLUE: 'string',
+  C_KINGFISHER: 'string',
 };
 
 const expectedExports = {
