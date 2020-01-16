@@ -5,7 +5,8 @@ import Image from '@bbc/psammead-image';
 import MediaIndicator from '@bbc/psammead-media-indicator';
 import VisuallyHiddenText from '@bbc/psammead-visually-hidden-text';
 import { withServicesKnob } from '@bbc/psammead-storybook-helpers';
-import { StoryPromo, Headline, Summary, Link, LiveLabel } from './index';
+import Grid from '@bbc/psammead-grid';
+import StoryPromo, { Headline, Summary, Link, LiveLabel } from './index';
 import relatedItems from '../testHelpers/relatedItems';
 import IndexAlsosContainer from '../testHelpers/IndexAlsosContainer';
 import notes from '../README.md';
@@ -143,6 +144,60 @@ const generateStory = ({
   );
 };
 
+/* eslint-disable-next-line no-shadow */
+const generate2FeatureStory = () => args => (
+  <Grid
+    columns={{
+      group0: 8,
+      group1: 8,
+      group2: 8,
+      group3: 8,
+      group4: 8,
+      group5: 8,
+    }}
+    enableGelGutters
+  >
+    <Grid
+      item
+      columns={{
+        group0: 8,
+        group1: 8,
+        group2: 8,
+        group3: 8,
+        group4: 6,
+        group5: 6,
+      }}
+    >
+      {generateStory({ promoType: 'leading' })(args)}
+    </Grid>
+    <Grid
+      columns={{
+        group0: 8,
+        group1: 8,
+        group2: 8,
+        group3: 8,
+        group4: 2,
+        group5: 2,
+      }}
+      enableGelGutters
+    >
+      <Grid
+        item
+        columns={{
+          group0: 8,
+          group1: 8,
+          group2: 8,
+          group3: 8,
+          group4: 2,
+          group5: 2,
+        }}
+      >
+        {generateStory({ promoType: 'regular' })(args)}
+      </Grid>
+    </Grid>
+  </Grid>
+);
+
 storiesOf('Components|StoryPromo/StoryPromo', module)
   .addDecorator(withKnobs)
   .addDecorator(withServicesKnob())
@@ -182,11 +237,7 @@ storiesOf('Components|StoryPromo/StoryPromo', module)
     notes,
     knobs: { escapeHTML: false },
   })
-  .add(
-    'Leading promo and regular promo',
-    generateStory({ promoType: 'leading' }),
-    {
-      notes,
-      knobs: { escapeHTML: false },
-    },
-  );
+  .add('Leading promo and regular promo', generate2FeatureStory(), {
+    notes,
+    knobs: { escapeHTML: false },
+  });

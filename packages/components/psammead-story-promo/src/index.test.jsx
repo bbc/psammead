@@ -1,27 +1,29 @@
 import React from 'react';
-import { arrayOf, bool, shape, string } from 'prop-types';
+import { arrayOf, bool, shape, string, oneOf } from 'prop-types';
 import { shouldMatchSnapshot } from '@bbc/psammead-test-helpers';
 import { latin } from '@bbc/gel-foundations/scripts';
 import MediaIndicator from '@bbc/psammead-media-indicator';
 import { render } from '@testing-library/react';
 import VisuallyHiddenText from '@bbc/psammead-visually-hidden-text';
-import { StoryPromo, Headline, Summary, Link, LiveLabel } from './index';
+import StoryPromo, { Headline, Summary, Link, LiveLabel } from './index';
 import relatedItems from '../testHelpers/relatedItems';
 import IndexAlsosContainer from '../testHelpers/IndexAlsosContainer';
 
 const Image = <img src="https://foobar.com/image.png" alt="Alt text" />;
 
 /* eslint-disable-next-line react/prop-types */
-const LiveComponent = ({ headline, service }) => (
+const LiveComponent = ({ headline, dir, service }) => (
   /* eslint-disable-next-line jsx-a11y/aria-role */
   <span role="text">
-    <LiveLabel service={service}>LIVE</LiveLabel>
+    <LiveLabel dir={dir} service={service}>
+      LIVE
+    </LiveLabel>
     <VisuallyHiddenText lang="en-GB">Live, </VisuallyHiddenText>
     {headline}
   </span>
 );
 
-const Info = ({ promoType, isLive, alsoItems, promoHasImage }) => (
+const Info = ({ promoType, isLive, dir, alsoItems, promoHasImage }) => (
   <>
     <Headline
       script={latin}
@@ -31,7 +33,11 @@ const Info = ({ promoType, isLive, alsoItems, promoHasImage }) => (
     >
       <Link href="https://www.bbc.co.uk/news">
         {isLive ? (
-          <LiveComponent headline="The live promo headline" service="news" />
+          <LiveComponent
+            service="news"
+            dir={dir}
+            headline="The live promo headline"
+          />
         ) : (
           'The headline of the promo'
         )}
@@ -55,14 +61,18 @@ const Info = ({ promoType, isLive, alsoItems, promoHasImage }) => (
     )}
   </>
 );
+
 Info.propTypes = {
   promoType: string,
   isLive: bool.isRequired,
+  dir: oneOf(['rtl', 'ltr']),
   alsoItems: arrayOf(shape()).isRequired,
   promoHasImage: bool,
 };
+
 Info.defaultProps = {
   promoType: 'regular',
+  dir: 'ltr',
   promoHasImage: true,
 };
 
@@ -78,6 +88,11 @@ describe('StoryPromo', () => {
   shouldMatchSnapshot(
     'should render Live promo correctly',
     <StoryPromo image={Image} info={Info({ isLive: true })} />,
+  );
+
+  shouldMatchSnapshot(
+    'should render a RTL Live promo correctly',
+    <StoryPromo image={Image} info={Info({ isLive: true, dir: 'rtl' })} />,
   );
 });
 
@@ -143,24 +158,6 @@ describe('StoryPromo - Leading Story', () => {
       image={Image}
       info={Info({ promoType: 'leading' })}
       mediaIndicator={mediaInfo}
-      promoType="leading"
-    />,
-  );
-
-  shouldMatchSnapshot(
-    'should render with multiple Index Alsos correctly',
-    <StoryPromo
-      image={Image}
-      info={Info({ promoType: 'leading', alsoItems: relatedItems })}
-      promoType="leading"
-    />,
-  );
-
-  shouldMatchSnapshot(
-    'should render with one Index Also correctly',
-    <StoryPromo
-      image={Image}
-      info={Info({ promoType: 'leading', alsoItems: [relatedItems[0]] })}
       promoType="leading"
     />,
   );

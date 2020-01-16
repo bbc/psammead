@@ -1,12 +1,7 @@
 import React from 'react';
 import styled, { css } from 'styled-components';
 import { node, bool, string, oneOf, shape } from 'prop-types';
-import {
-  GEL_SPACING,
-  GEL_SPACING_DBL,
-  GEL_GUTTER_BELOW_600PX,
-  GEL_GUTTER_ABOVE_600PX,
-} from '@bbc/gel-foundations/spacings';
+import { GEL_SPACING, GEL_SPACING_DBL } from '@bbc/gel-foundations/spacings';
 import {
   GEL_GROUP_2_SCREEN_WIDTH_MIN,
   GEL_GROUP_2_SCREEN_WIDTH_MAX,
@@ -34,6 +29,8 @@ import {
 } from '@bbc/psammead-styles/font-styles';
 import { scriptPropType } from '@bbc/gel-foundations/prop-types';
 import { grid } from '@bbc/psammead-styles/detection';
+
+const PROMO_TYPES = oneOf(['top', 'regular', 'leading']);
 
 const twoOfSixColumnsMaxWidthScaleable = `33.33%`;
 // (2 / 6) * 100 = 0.3333333333 = 33.33%
@@ -73,10 +70,10 @@ const StoryPromoWrapper = styled.div`
   @supports (${grid}) {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    grid-column-gap: ${GEL_GUTTER_BELOW_600PX};
+    grid-column-gap: ${GEL_SPACING};
 
     @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
-      grid-column-gap: ${GEL_GUTTER_ABOVE_600PX};
+      grid-column-gap: ${GEL_SPACING_DBL};
     }
 
     ${({ promoType }) => wrapperStyles[promoType]}
@@ -101,7 +98,7 @@ const ImageGridColumnsLeadingStory = css`
 `;
 
 const ImageGridFallbackTopStory = css`
-  margin-bottom: ${GEL_GUTTER_BELOW_600PX};
+  margin-bottom: ${GEL_SPACING};
   width: ${fullWidthColumnsMaxScaleable};
 
   @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
@@ -180,6 +177,7 @@ const TextGridColumns = css`
 `;
 
 const TextGridColumnsLeadingStory = css`
+  width: 100%;
   grid-template-columns: repeat(2, 1fr);
   grid-column-end: span 2;
 `;
@@ -218,17 +216,43 @@ const TextGridFallBackLeadingStory = css`
   width: ${twoOfSixColumnsMaxWidthScaleable};
 `;
 
-const imageGridFallbackStyles = {
-  top: ImageGridFallbackTopStory,
-  regular: ImageGridFallback,
-  leading: ImageGridFallbackLeadingStory,
-};
+const ImageContentsWrapper = styled.div`
+  position: relative;
+`;
 
 const imageGridStyles = {
   top: ImageGridColumnsTopStory,
   regular: ImageGridColumns,
   leading: ImageGridColumnsLeadingStory,
 };
+
+const imageGridFallbackStyles = {
+  top: ImageGridFallbackTopStory,
+  regular: ImageGridFallback,
+  leading: ImageGridFallbackLeadingStory,
+};
+
+const ImageGridItem = styled.div`
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+  ${({ promoType }) => imageGridFallbackStyles[promoType]}
+
+  @supports (${grid}) {
+    width: initial;
+    ${({ promoType }) => imageGridStyles[promoType]}
+  }
+`;
+
+const mediaIndicatorStyles = {
+  top: positionBottomOfParent,
+  regular: positionBottomOfParentGroup2,
+  leading: positionBottomOfParentGroup2,
+};
+
+const InlineMediaIndicator = styled.div`
+  ${({ promoType }) => mediaIndicatorStyles[promoType]}
+`;
 
 const textGridFallbackStyles = {
   top: TextGridFallbackTopStory,
@@ -241,39 +265,6 @@ const textGridStyles = {
   regular: TextGridColumns,
   leading: TextGridColumnsLeadingStory,
 };
-
-const mediaIndicatorStyles = {
-  top: positionBottomOfParent,
-  regular: positionBottomOfParentGroup2,
-  leading: positionBottomOfParentGroup2,
-};
-
-const summaryStyles = {
-  top: summaryTopStoryStyles,
-  regular: summaryRegularStyles,
-  leading: summaryRegularStyles,
-};
-
-const ImageGridItem = styled.div`
-  display: inline-block;
-  vertical-align: top;
-  position: relative;
-  ${({ promoType }) => imageGridFallbackStyles[promoType]}
-
-  @supports (${grid}) {
-    display: block;
-    width: initial;
-    ${({ promoType }) => imageGridStyles[promoType]}
-  }
-`;
-
-const ImageContentsWrapper = styled.div`
-  position: relative;
-`;
-
-const InlineMediaIndicator = styled.div`
-  ${({ promoType }) => mediaIndicatorStyles[promoType]}
-`;
 
 const TextGridItem = styled.div`
   display: inline-block;
@@ -337,12 +328,18 @@ Headline.propTypes = {
   script: shape(scriptPropType).isRequired,
   service: string.isRequired,
   promoHasImage: bool,
-  promoType: string,
+  promoType: PROMO_TYPES,
 };
 
 Headline.defaultProps = {
   promoHasImage: true,
   promoType: 'regular',
+};
+
+const summaryStyles = {
+  top: summaryTopStoryStyles,
+  regular: summaryRegularStyles,
+  leading: summaryRegularStyles,
 };
 
 export const Summary = styled.p`
@@ -361,7 +358,7 @@ Summary.propTypes = {
   script: shape(scriptPropType).isRequired,
   service: string.isRequired,
   promoHasImage: bool,
-  promoType: string,
+  promoType: PROMO_TYPES,
 };
 
 Summary.defaultProps = {
@@ -413,7 +410,7 @@ LiveLabel.defaultProps = {
   dir: 'ltr',
 };
 
-export const StoryPromo = ({
+const StoryPromo = ({
   image,
   info,
   mediaIndicator,
@@ -434,13 +431,26 @@ export const StoryPromo = ({
     </ImageGridItem>
   );
 
+  const renderText = (
+    <TextGridItem promoType={promoType} displayImage={displayImage}>
+      {!displayImage && mediaIndicator}
+      {info}
+    </TextGridItem>
+  );
+
   return (
     <StoryPromoWrapper promoType={promoType} {...props}>
-      {renderImage}
-      <TextGridItem promoType={promoType} displayImage={displayImage}>
-        {!displayImage && mediaIndicator}
-        {info}
-      </TextGridItem>
+      {promoType === 'leading' ? (
+        <>
+          {renderText}
+          {renderImage}
+        </>
+      ) : (
+        <>
+          {renderImage}
+          {renderText}
+        </>
+      )}
     </StoryPromoWrapper>
   );
 };
@@ -449,7 +459,7 @@ StoryPromo.propTypes = {
   image: node.isRequired,
   info: node.isRequired,
   mediaIndicator: node,
-  promoType: string,
+  promoType: PROMO_TYPES,
   displayImage: bool,
 };
 
@@ -459,4 +469,4 @@ StoryPromo.defaultProps = {
   displayImage: true,
 };
 
-export const LeadingStoryPromo = () => {};
+export default StoryPromo;
