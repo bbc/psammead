@@ -1,14 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`StoryPromo - Leading Story should render correctly 1`] = `
-.c0 {
-  position: relative;
-}
-
-.c6 {
-  position: relative;
-}
-
 .c5 {
   display: inline-block;
   vertical-align: top;
@@ -20,6 +12,14 @@ exports[`StoryPromo - Leading Story should render correctly 1`] = `
   display: inline-block;
   vertical-align: top;
   width: 33.33%;
+}
+
+.c0 {
+  position: relative;
+}
+
+.c6 {
+  position: relative;
 }
 
 .c2 {
@@ -74,14 +74,6 @@ exports[`StoryPromo - Leading Story should render correctly 1`] = `
 }
 
 @supports (grid-template-columns:fit-content(200px)) {
-  .c0 {
-    display: grid;
-    grid-template-columns: repeat(6,1fr);
-    grid-column-gap: 0.5rem;
-  }
-}
-
-@supports (grid-template-columns:fit-content(200px)) {
   .c5 {
     width: initial;
     grid-template-columns: repeat(4,1fr);
@@ -97,6 +89,14 @@ exports[`StoryPromo - Leading Story should render correctly 1`] = `
     width: 100%;
     grid-template-columns: repeat(2,1fr);
     grid-column-end: span 2;
+  }
+}
+
+@supports (grid-template-columns:fit-content(200px)) {
+  .c0 {
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-column-gap: 0.5rem;
   }
 }
 
@@ -222,14 +222,6 @@ exports[`StoryPromo - Leading Story should render with Media Indicator correctly
   margin: 0 0.25rem;
 }
 
-.c0 {
-  position: relative;
-}
-
-.c6 {
-  position: relative;
-}
-
 .c5 {
   display: inline-block;
   vertical-align: top;
@@ -241,6 +233,14 @@ exports[`StoryPromo - Leading Story should render with Media Indicator correctly
   display: inline-block;
   vertical-align: top;
   width: 33.33%;
+}
+
+.c0 {
+  position: relative;
+}
+
+.c6 {
+  position: relative;
 }
 
 .c2 {
@@ -302,25 +302,10 @@ exports[`StoryPromo - Leading Story should render with Media Indicator correctly
 }
 
 @supports (grid-template-columns:fit-content(200px)) {
-  .c0 {
-    display: grid;
-    grid-template-columns: repeat(6,1fr);
-    grid-column-gap: 0.5rem;
-  }
-}
-
-@supports (grid-template-columns:fit-content(200px)) {
   .c5 {
     width: initial;
     grid-template-columns: repeat(4,1fr);
     grid-column-end: span 4;
-  }
-}
-
-@media (min-width:25rem) {
-  .c7 {
-    position: absolute;
-    bottom: 0;
   }
 }
 
@@ -332,6 +317,21 @@ exports[`StoryPromo - Leading Story should render with Media Indicator correctly
     width: 100%;
     grid-template-columns: repeat(2,1fr);
     grid-column-end: span 2;
+  }
+}
+
+@supports (grid-template-columns:fit-content(200px)) {
+  .c0 {
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-column-gap: 0.5rem;
+  }
+}
+
+@media (min-width:25rem) {
+  .c7 {
+    position: absolute;
+    bottom: 0;
   }
 }
 
@@ -448,14 +448,6 @@ exports[`StoryPromo - Leading Story should render with Media Indicator correctly
 `;
 
 exports[`StoryPromo - Top Story should render correctly 1`] = `
-.c0 {
-  position: relative;
-}
-
-.c2 {
-  position: relative;
-}
-
 .c1 {
   display: inline-block;
   vertical-align: top;
@@ -467,6 +459,14 @@ exports[`StoryPromo - Top Story should render correctly 1`] = `
 .c3 {
   display: inline-block;
   vertical-align: top;
+}
+
+.c0 {
+  position: relative;
+}
+
+.c2 {
+  position: relative;
 }
 
 .c4 {
@@ -520,14 +520,6 @@ exports[`StoryPromo - Top Story should render correctly 1`] = `
   color: #6E6E73;
 }
 
-@supports (grid-template-columns:fit-content(200px)) {
-  .c0 {
-    display: grid;
-    grid-template-columns: repeat(6,1fr);
-    grid-column-gap: 0.5rem;
-  }
-}
-
 @media (min-width:37.5rem) {
   .c1 {
     width: calc(50% - 0.5rem);
@@ -567,6 +559,14 @@ exports[`StoryPromo - Top Story should render correctly 1`] = `
     width: initial;
     padding: initial;
     grid-column: 1 / span 6;
+  }
+}
+
+@supports (grid-template-columns:fit-content(200px)) {
+  .c0 {
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-column-gap: 0.5rem;
   }
 }
 
@@ -685,14 +685,6 @@ exports[`StoryPromo - Top Story should render with Media Indicator correctly 1`]
   margin: 0 0.25rem;
 }
 
-.c0 {
-  position: relative;
-}
-
-.c2 {
-  position: relative;
-}
-
 .c1 {
   display: inline-block;
   vertical-align: top;
@@ -701,14 +693,22 @@ exports[`StoryPromo - Top Story should render with Media Indicator correctly 1`]
   width: 100%;
 }
 
-.c3 {
-  position: absolute;
-  bottom: 0;
-}
-
 .c8 {
   display: inline-block;
   vertical-align: top;
+}
+
+.c0 {
+  position: relative;
+}
+
+.c2 {
+  position: relative;
+}
+
+.c3 {
+  position: absolute;
+  bottom: 0;
 }
 
 .c9 {
@@ -769,14 +769,6 @@ exports[`StoryPromo - Top Story should render with Media Indicator correctly 1`]
   }
 }
 
-@supports (grid-template-columns:fit-content(200px)) {
-  .c0 {
-    display: grid;
-    grid-template-columns: repeat(6,1fr);
-    grid-column-gap: 0.5rem;
-  }
-}
-
 @media (min-width:37.5rem) {
   .c1 {
     width: calc(50% - 0.5rem);
@@ -816,6 +808,14 @@ exports[`StoryPromo - Top Story should render with Media Indicator correctly 1`]
     width: initial;
     padding: initial;
     grid-column: 1 / span 6;
+  }
+}
+
+@supports (grid-template-columns:fit-content(200px)) {
+  .c0 {
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-column-gap: 0.5rem;
   }
 }
 
@@ -950,14 +950,6 @@ exports[`StoryPromo - Top Story should render with multiple Index Alsos correctl
   margin: 0;
 }
 
-.c0 {
-  position: relative;
-}
-
-.c2 {
-  position: relative;
-}
-
 .c1 {
   display: inline-block;
   vertical-align: top;
@@ -969,6 +961,14 @@ exports[`StoryPromo - Top Story should render with multiple Index Alsos correctl
 .c3 {
   display: inline-block;
   vertical-align: top;
+}
+
+.c0 {
+  position: relative;
+}
+
+.c2 {
+  position: relative;
 }
 
 .c4 {
@@ -1069,14 +1069,6 @@ exports[`StoryPromo - Top Story should render with multiple Index Alsos correctl
   color: #6E6E73;
 }
 
-@supports (grid-template-columns:fit-content(200px)) {
-  .c0 {
-    display: grid;
-    grid-template-columns: repeat(6,1fr);
-    grid-column-gap: 0.5rem;
-  }
-}
-
 @media (min-width:37.5rem) {
   .c1 {
     width: calc(50% - 0.5rem);
@@ -1116,6 +1108,14 @@ exports[`StoryPromo - Top Story should render with multiple Index Alsos correctl
     width: initial;
     padding: initial;
     grid-column: 1 / span 6;
+  }
+}
+
+@supports (grid-template-columns:fit-content(200px)) {
+  .c0 {
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-column-gap: 0.5rem;
   }
 }
 
@@ -1311,14 +1311,6 @@ exports[`StoryPromo - Top Story should render with one Index Also correctly 1`] 
   margin: 0;
 }
 
-.c0 {
-  position: relative;
-}
-
-.c2 {
-  position: relative;
-}
-
 .c1 {
   display: inline-block;
   vertical-align: top;
@@ -1330,6 +1322,14 @@ exports[`StoryPromo - Top Story should render with one Index Also correctly 1`] 
 .c3 {
   display: inline-block;
   vertical-align: top;
+}
+
+.c0 {
+  position: relative;
+}
+
+.c2 {
+  position: relative;
 }
 
 .c4 {
@@ -1424,14 +1424,6 @@ exports[`StoryPromo - Top Story should render with one Index Also correctly 1`] 
   color: #6E6E73;
 }
 
-@supports (grid-template-columns:fit-content(200px)) {
-  .c0 {
-    display: grid;
-    grid-template-columns: repeat(6,1fr);
-    grid-column-gap: 0.5rem;
-  }
-}
-
 @media (min-width:37.5rem) {
   .c1 {
     width: calc(50% - 0.5rem);
@@ -1471,6 +1463,14 @@ exports[`StoryPromo - Top Story should render with one Index Also correctly 1`] 
     width: initial;
     padding: initial;
     grid-column: 1 / span 6;
+  }
+}
+
+@supports (grid-template-columns:fit-content(200px)) {
+  .c0 {
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-column-gap: 0.5rem;
   }
 }
 
@@ -1632,14 +1632,6 @@ exports[`StoryPromo should render Live promo correctly 1`] = `
   margin: 0;
 }
 
-.c0 {
-  position: relative;
-}
-
-.c2 {
-  position: relative;
-}
-
 .c1 {
   display: inline-block;
   vertical-align: top;
@@ -1652,6 +1644,14 @@ exports[`StoryPromo should render Live promo correctly 1`] = `
   vertical-align: top;
   width: 66.67%;
   padding: 0 0.5rem;
+}
+
+.c0 {
+  position: relative;
+}
+
+.c2 {
+  position: relative;
 }
 
 .c4 {
@@ -1714,14 +1714,6 @@ exports[`StoryPromo should render Live promo correctly 1`] = `
   margin-right: 0.5rem;
 }
 
-@supports (grid-template-columns:fit-content(200px)) {
-  .c0 {
-    display: grid;
-    grid-template-columns: repeat(6,1fr);
-    grid-column-gap: 0.5rem;
-  }
-}
-
 @media (min-width:63rem) {
   .c1 {
     display: block;
@@ -1756,6 +1748,14 @@ exports[`StoryPromo should render Live promo correctly 1`] = `
     width: initial;
     padding: initial;
     grid-column: 3 / span 4;
+  }
+}
+
+@supports (grid-template-columns:fit-content(200px)) {
+  .c0 {
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-column-gap: 0.5rem;
   }
 }
 
@@ -1864,14 +1864,6 @@ exports[`StoryPromo should render a RTL Live promo correctly 1`] = `
   margin: 0;
 }
 
-.c0 {
-  position: relative;
-}
-
-.c2 {
-  position: relative;
-}
-
 .c1 {
   display: inline-block;
   vertical-align: top;
@@ -1884,6 +1876,14 @@ exports[`StoryPromo should render a RTL Live promo correctly 1`] = `
   vertical-align: top;
   width: 66.67%;
   padding: 0 0.5rem;
+}
+
+.c0 {
+  position: relative;
+}
+
+.c2 {
+  position: relative;
 }
 
 .c4 {
@@ -1946,14 +1946,6 @@ exports[`StoryPromo should render a RTL Live promo correctly 1`] = `
   margin-left: 0.5rem;
 }
 
-@supports (grid-template-columns:fit-content(200px)) {
-  .c0 {
-    display: grid;
-    grid-template-columns: repeat(6,1fr);
-    grid-column-gap: 0.5rem;
-  }
-}
-
 @media (min-width:63rem) {
   .c1 {
     display: block;
@@ -1988,6 +1980,14 @@ exports[`StoryPromo should render a RTL Live promo correctly 1`] = `
     width: initial;
     padding: initial;
     grid-column: 3 / span 4;
+  }
+}
+
+@supports (grid-template-columns:fit-content(200px)) {
+  .c0 {
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-column-gap: 0.5rem;
   }
 }
 
@@ -2084,14 +2084,6 @@ exports[`StoryPromo should render a RTL Live promo correctly 1`] = `
 `;
 
 exports[`StoryPromo should render correctly 1`] = `
-.c0 {
-  position: relative;
-}
-
-.c2 {
-  position: relative;
-}
-
 .c1 {
   display: inline-block;
   vertical-align: top;
@@ -2104,6 +2096,14 @@ exports[`StoryPromo should render correctly 1`] = `
   vertical-align: top;
   width: 66.67%;
   padding: 0 0.5rem;
+}
+
+.c0 {
+  position: relative;
+}
+
+.c2 {
+  position: relative;
 }
 
 .c4 {
@@ -2157,14 +2157,6 @@ exports[`StoryPromo should render correctly 1`] = `
   color: #6E6E73;
 }
 
-@supports (grid-template-columns:fit-content(200px)) {
-  .c0 {
-    display: grid;
-    grid-template-columns: repeat(6,1fr);
-    grid-column-gap: 0.5rem;
-  }
-}
-
 @media (min-width:63rem) {
   .c1 {
     display: block;
@@ -2199,6 +2191,14 @@ exports[`StoryPromo should render correctly 1`] = `
     width: initial;
     padding: initial;
     grid-column: 3 / span 4;
+  }
+}
+
+@supports (grid-template-columns:fit-content(200px)) {
+  .c0 {
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-column-gap: 0.5rem;
   }
 }
 
@@ -2317,14 +2317,6 @@ exports[`StoryPromo with Media Indicator should render correctly 1`] = `
   margin: 0 0.25rem;
 }
 
-.c0 {
-  position: relative;
-}
-
-.c2 {
-  position: relative;
-}
-
 .c1 {
   display: inline-block;
   vertical-align: top;
@@ -2337,6 +2329,14 @@ exports[`StoryPromo with Media Indicator should render correctly 1`] = `
   vertical-align: top;
   width: 66.67%;
   padding: 0 0.5rem;
+}
+
+.c0 {
+  position: relative;
+}
+
+.c2 {
+  position: relative;
 }
 
 .c9 {
@@ -2397,14 +2397,6 @@ exports[`StoryPromo with Media Indicator should render correctly 1`] = `
   }
 }
 
-@supports (grid-template-columns:fit-content(200px)) {
-  .c0 {
-    display: grid;
-    grid-template-columns: repeat(6,1fr);
-    grid-column-gap: 0.5rem;
-  }
-}
-
 @media (min-width:63rem) {
   .c1 {
     display: block;
@@ -2416,13 +2408,6 @@ exports[`StoryPromo with Media Indicator should render correctly 1`] = `
   .c1 {
     width: initial;
     grid-column: 1 / span 2;
-  }
-}
-
-@media (min-width:25rem) {
-  .c3 {
-    position: absolute;
-    bottom: 0;
   }
 }
 
@@ -2446,6 +2431,21 @@ exports[`StoryPromo with Media Indicator should render correctly 1`] = `
     width: initial;
     padding: initial;
     grid-column: 3 / span 4;
+  }
+}
+
+@supports (grid-template-columns:fit-content(200px)) {
+  .c0 {
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-column-gap: 0.5rem;
+  }
+}
+
+@media (min-width:25rem) {
+  .c3 {
+    position: absolute;
+    bottom: 0;
   }
 }
 
