@@ -48,8 +48,8 @@ export const doubleDigitOverride = {
     group0: '2rem',
     group1: '2.5rem',
     group2: '3rem',
-    group3: '4rem',
-    group5: '4rem',
+    group3: '5rem',
+    group5: '4.75rem',
   },
   hausa: {
     group0: '2rem',
