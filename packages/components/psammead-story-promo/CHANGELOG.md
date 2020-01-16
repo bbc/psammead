@@ -3,7 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 | ------- | ----------- |
-| 4.0.0-alpha.1 | [PR#x](https://github.com/bbc/psammead/pull/x) Add promoType prop. Remove topStory prop. |
+| 4.0.0-alpha.1 | [PR#2937](https://github.com/bbc/psammead/pull/2937) Add promoType prop. Remove topStory prop. |
 | 3.0.0-alpha.11 | [PR#2920](https://github.com/bbc/psammead/pull/2920) Talos - Bump Dependencies - @bbc/gel-foundations |
 | 3.0.0-alpha.10 | [PR#2701](https://github.com/bbc/psammead/pull/2701) Talos - Bump Dependencies - @bbc/psammead-styles |
 | 3.0.0-alpha.9 | [PR#2697](https://github.com/bbc/psammead/pull/2697) Talos - Bump Dependencies - @bbc/psammead-styles |
