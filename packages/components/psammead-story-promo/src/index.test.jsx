@@ -127,6 +127,45 @@ describe('StoryPromo - Top Story', () => {
   );
 });
 
+describe('StoryPromo - Leading Story', () => {
+  shouldMatchSnapshot(
+    'should render correctly',
+    <StoryPromo
+      image={Image}
+      info={Info({ promoType: 'leading' })}
+      promoType="leading"
+    />,
+  );
+
+  shouldMatchSnapshot(
+    'should render with Media Indicator correctly',
+    <StoryPromo
+      image={Image}
+      info={Info({ promoType: 'leading' })}
+      mediaIndicator={mediaInfo}
+      promoType="leading"
+    />,
+  );
+
+  shouldMatchSnapshot(
+    'should render with multiple Index Alsos correctly',
+    <StoryPromo
+      image={Image}
+      info={Info({ promoType: 'leading', alsoItems: relatedItems })}
+      promoType="leading"
+    />,
+  );
+
+  shouldMatchSnapshot(
+    'should render with one Index Also correctly',
+    <StoryPromo
+      image={Image}
+      info={Info({ promoType: 'leading', alsoItems: [relatedItems[0]] })}
+      promoType="leading"
+    />,
+  );
+});
+
 describe('assertions', () => {
   it('should render h3, a, p, time', () => {
     const { container } = render(
