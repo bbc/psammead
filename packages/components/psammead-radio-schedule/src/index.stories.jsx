@@ -16,6 +16,7 @@ storiesOf('Components|RadioSchedule', module)
         heading={props.text}
         summary={props.text}
         date="29/01/1990"
+        duration="30:00"
       />
     ),
     {

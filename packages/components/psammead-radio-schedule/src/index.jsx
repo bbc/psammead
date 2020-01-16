@@ -19,8 +19,8 @@ import {
 } from '@bbc/gel-foundations/typography';
 
 const RadioWrapper = styled.div`
-  padding-top: ${GEL_SPACING};
   background-color: ${C_WHITE};
+  width: 14.5rem;
 `;
 
 const TextWrapper = styled.div`
@@ -72,7 +72,22 @@ const IconWrapper = styled.span`
   }
 `;
 
-const RadioSchedule = ({ dir, service, script, heading, summary, date }) => (
+const DurationWrapper = styled.span`
+  ${({ dir }) =>
+    dir === 'ltr'
+      ? `padding-left: ${GEL_SPACING};`
+      : `padding-right: ${GEL_SPACING};`}
+`;
+
+const RadioSchedule = ({
+  dir,
+  service,
+  script,
+  heading,
+  summary,
+  date,
+  duration,
+}) => (
   <RadioWrapper>
     <TextWrapper dir={dir}>
       <HeadingWrapper service={service} script={script}>
@@ -87,6 +102,7 @@ const RadioSchedule = ({ dir, service, script, heading, summary, date }) => (
     </TextWrapper>
     <ButtonWrapper dir={dir} service={service} script={script}>
       <IconWrapper dir={dir}>{mediaIcons.audio}</IconWrapper>
+      <DurationWrapper dir={dir}>{duration}</DurationWrapper>
     </ButtonWrapper>
   </RadioWrapper>
 );
