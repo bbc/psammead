@@ -8,7 +8,6 @@ import {
   GEL_GROUP_3_SCREEN_WIDTH_MIN,
   GEL_GROUP_3_SCREEN_WIDTH_MAX,
   GEL_GROUP_4_SCREEN_WIDTH_MIN,
-  GEL_GROUP_4_SCREEN_WIDTH_MAX,
   GEL_GROUP_5_SCREEN_WIDTH_MIN,
 } from '@bbc/gel-foundations/breakpoints';
 import {
@@ -29,23 +28,10 @@ import {
 } from '@bbc/psammead-styles/font-styles';
 import { scriptPropType } from '@bbc/gel-foundations/prop-types';
 import { grid } from '@bbc/psammead-styles/detection';
+import ImageGridItem from './ImageStyles';
+import TextGridItem from './TextStyles';
 
 const PROMO_TYPES = oneOf(['top', 'regular', 'leading']);
-
-const twoOfSixColumnsMaxWidthScaleable = `33.33%`;
-// (2 / 6) * 100 = 0.3333333333 = 33.33%
-
-const fourOfSixColumnsMaxWidthScaleable = `66.67%`;
-// (4 / 6) * 100 = 66.6666666667 = 66.67%
-
-const fullWidthColumnsMaxScaleable = `100%`;
-// (12 / 12) * 100 = 100 = 100%
-
-const halfWidthColumnsMaxScaleable = `50%`;
-
-const gridFallbackImageWidth = css`
-  width: calc(${halfWidthColumnsMaxScaleable} - ${GEL_SPACING});
-`;
 
 const wrapperTopStoryStyles = `
   @media (min-width: ${GEL_GROUP_5_SCREEN_WIDTH_MIN}) {
@@ -80,48 +66,8 @@ const StoryPromoWrapper = styled.div`
   }
 `;
 
-const ImageGridColumnsTopStory = css`
-  grid-column: 1 / span 6;
-
-  @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) and (max-width: ${GEL_GROUP_4_SCREEN_WIDTH_MAX}) {
-    grid-column: 1 / span 3;
-  }
-`;
-
-const ImageGridColumns = css`
-  grid-column: 1 / span 2;
-`;
-
-const ImageGridColumnsLeadingStory = css`
-  grid-template-columns: repeat(4, 1fr);
-  grid-column-end: span 4;
-`;
-
-const ImageGridFallbackTopStory = css`
-  margin-bottom: ${GEL_SPACING};
-  width: ${fullWidthColumnsMaxScaleable};
-
-  @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
-    ${gridFallbackImageWidth};
-    margin-bottom: 0;
-  }
-
-  @media (min-width: ${GEL_GROUP_4_SCREEN_WIDTH_MIN}) {
-    ${gridFallbackImageWidth};
-  }
-`;
-
-const ImageGridFallback = css`
-  width: ${twoOfSixColumnsMaxWidthScaleable};
-
-  @media (min-width: ${GEL_GROUP_4_SCREEN_WIDTH_MIN}) {
-    display: block;
-    width: 100%;
-  }
-`;
-
-const ImageGridFallbackLeadingStory = css`
-  width: ${fourOfSixColumnsMaxWidthScaleable};
+const ImageContentsWrapper = styled.div`
+  position: relative;
 `;
 
 const positionBottomOfParent = `
@@ -135,115 +81,6 @@ const positionBottomOfParentGroup2 = `
   }
 `;
 
-const summaryTopStoryStyles = `
-  @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) and (max-width: ${GEL_GROUP_3_SCREEN_WIDTH_MAX}) {
-    display: none;
-    visibility: hidden;
-  }
-`;
-
-const summaryRegularStyles = `
-  @media (max-width: ${GEL_GROUP_2_SCREEN_WIDTH_MAX}) {
-    display: none;
-    visibility: hidden;
-  }
-
-  @media (min-width: ${GEL_GROUP_4_SCREEN_WIDTH_MIN}) {
-    display: none;
-    visibility: hidden;
-  }
-`;
-
-const TextGridColumnsTopStory = css`
-  grid-column: 1 / span 6;
-
-  @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
-    grid-column: 4 / span 3;
-  }
-
-  @media (min-width: ${GEL_GROUP_5_SCREEN_WIDTH_MIN}) {
-    grid-column: 7 / span 6;
-  }
-`;
-
-const TextGridColumns = css`
-  grid-column: 3 / span 4;
-
-  ${({ displayImage }) => !displayImage && `grid-column: 1 / span 6;`}
-
-  @media (min-width: ${GEL_GROUP_4_SCREEN_WIDTH_MIN}) {
-    padding-top: ${GEL_SPACING};
-  }
-`;
-
-const TextGridColumnsLeadingStory = css`
-  width: 100%;
-  grid-template-columns: repeat(2, 1fr);
-  grid-column-end: span 2;
-`;
-
-const TextGridFallbackTopStory = css`
-  @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
-    width: ${halfWidthColumnsMaxScaleable};
-    padding: 0 ${GEL_SPACING_DBL};
-  }
-
-  @media (min-width: ${GEL_GROUP_4_SCREEN_WIDTH_MIN}) {
-    width: ${halfWidthColumnsMaxScaleable};
-  }
-`;
-
-const TextGridFallback = css`
-  width: ${fourOfSixColumnsMaxWidthScaleable};
-  padding: 0 ${GEL_SPACING};
-
-  @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
-    padding: 0 ${GEL_SPACING_DBL};
-  }
-
-  @media (min-width: ${GEL_GROUP_4_SCREEN_WIDTH_MIN}) {
-    display: block;
-    width: 100%;
-    padding: ${GEL_SPACING} 0;
-  }
-
-  ${({ displayImage }) =>
-    !displayImage &&
-    `width: ${fullWidthColumnsMaxScaleable}; >div{ vertical-align: middle; }`}
-`;
-
-const TextGridFallBackLeadingStory = css`
-  width: ${twoOfSixColumnsMaxWidthScaleable};
-`;
-
-const ImageContentsWrapper = styled.div`
-  position: relative;
-`;
-
-const imageGridStyles = {
-  top: ImageGridColumnsTopStory,
-  regular: ImageGridColumns,
-  leading: ImageGridColumnsLeadingStory,
-};
-
-const imageGridFallbackStyles = {
-  top: ImageGridFallbackTopStory,
-  regular: ImageGridFallback,
-  leading: ImageGridFallbackLeadingStory,
-};
-
-const ImageGridItem = styled.div`
-  display: inline-block;
-  vertical-align: top;
-  position: relative;
-  ${({ promoType }) => imageGridFallbackStyles[promoType]}
-
-  @supports (${grid}) {
-    width: initial;
-    ${({ promoType }) => imageGridStyles[promoType]}
-  }
-`;
-
 const mediaIndicatorStyles = {
   top: positionBottomOfParent,
   regular: positionBottomOfParentGroup2,
@@ -252,36 +89,6 @@ const mediaIndicatorStyles = {
 
 const InlineMediaIndicator = styled.div`
   ${({ promoType }) => mediaIndicatorStyles[promoType]}
-`;
-
-const textGridFallbackStyles = {
-  top: TextGridFallbackTopStory,
-  regular: TextGridFallback,
-  leading: TextGridFallBackLeadingStory,
-};
-
-const textGridStyles = {
-  top: TextGridColumnsTopStory,
-  regular: TextGridColumns,
-  leading: TextGridColumnsLeadingStory,
-};
-
-const TextGridItem = styled.div`
-  display: inline-block;
-  vertical-align: top;
-
-  ${({ promoType }) => textGridFallbackStyles[promoType]}
-
-  @supports (${grid}) {
-    display: block;
-    width: initial;
-    padding: initial;
-    ${({ promoType }) => textGridStyles[promoType]}
-  }
-
-  ${({ displayImage }) =>
-    !displayImage &&
-    `>div{ display:inline-block; padding: 0; vertical-align:initial; } `}
 `;
 
 const headlineTopStoryTypography = script => getParagon(script);
@@ -302,10 +109,10 @@ const headlineRegularTypography = script => {
     ${({ promoHasImage }) =>
       !promoHasImage &&
       `
-    @media (min-width: ${GEL_GROUP_4_SCREEN_WIDTH_MIN}) {
-      font-size: ${fontSize('pica', 'groupD')}rem;
-      line-height: ${lineHeight('pica', 'groupD')}rem;
-    `}
+      @media (min-width: ${GEL_GROUP_4_SCREEN_WIDTH_MIN}) {
+        font-size: ${fontSize('pica', 'groupD')}rem;
+        line-height: ${lineHeight('pica', 'groupD')}rem;
+      `}
   `;
 };
 
@@ -335,6 +142,25 @@ Headline.defaultProps = {
   promoHasImage: true,
   promoType: 'regular',
 };
+
+const summaryTopStoryStyles = `
+  @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) and (max-width: ${GEL_GROUP_3_SCREEN_WIDTH_MAX}) {
+    display: none;
+    visibility: hidden;
+  }
+`;
+
+const summaryRegularStyles = `
+  @media (max-width: ${GEL_GROUP_2_SCREEN_WIDTH_MAX}) {
+    display: none;
+    visibility: hidden;
+  }
+
+  @media (min-width: ${GEL_GROUP_4_SCREEN_WIDTH_MIN}) {
+    display: none;
+    visibility: hidden;
+  }
+`;
 
 const summaryStyles = {
   top: summaryTopStoryStyles,
