@@ -1,7 +1,10 @@
 import styled, { css } from 'styled-components';
 import { oneOf } from 'prop-types';
 import { C_WHITE } from '@bbc/psammead-styles/colours';
-import { GEL_GROUP_2_SCREEN_WIDTH_MAX } from '@bbc/gel-foundations/breakpoints';
+import {
+  GEL_GROUP_2_SCREEN_WIDTH_MIN,
+  GEL_GROUP_2_SCREEN_WIDTH_MAX,
+} from '@bbc/gel-foundations/breakpoints';
 import { GEL_SPACING } from '@bbc/gel-foundations/spacings';
 import { getPica } from '@bbc/gel-foundations/typography';
 import { getSansRegular } from '@bbc/psammead-styles/font-styles';
@@ -30,10 +33,14 @@ const SkipLink = styled.a`
     clip: auto;
     height: auto;
     width: auto;
-    top: ${GEL_SPACING};
+    top: 0;
     ${({ dir }) => css`
       ${dir === 'ltr' ? 'left' : 'right'}: 0;
     `}
+
+    @media (min-width: ${GEL_GROUP_2_SCREEN_WIDTH_MIN}) {
+      top: ${GEL_SPACING};
+    }
   }
 
   @media (max-width: ${GEL_GROUP_2_SCREEN_WIDTH_MAX}) {
