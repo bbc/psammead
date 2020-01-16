@@ -5,7 +5,8 @@ import Timestamp from '@bbc/psammead-timestamp';
 import { MostReadItemWrapper, MostReadLink } from '../Item';
 import MostReadRank from '../Rank';
 
-const lastUpdated = (script, service) => (
+/* eslint-disable react/prop-types */
+const lastUpdated = ({ script, service }) => (
   // This will return the provided english translations
   <Timestamp
     datetime="2019-03-01T14:00+00:00"
@@ -17,10 +18,23 @@ const lastUpdated = (script, service) => (
   </Timestamp>
 );
 
-export const getItem = (service, withTimestamp = false) => {
+export const getServiceVariant = ({ service, variant = '' }) => {
+  if (variant !== 'default') {
+    const variantOverride =
+      variant.charAt(0).toUpperCase() + variant.substring(1);
+    return service + variantOverride;
+  }
+
+  return service;
+};
+
+export const getItem = ({ service, withTimestamp = false }) => {
   const baseUrl = 'https://www.bbc.com';
   const { text, articlePath } = TEXT_VARIANTS[service];
-  const timestamp = withTimestamp ? lastUpdated(latin, service) : null;
+  const timestamp = withTimestamp
+    ? lastUpdated({ script: latin, service })
+    : null;
+
   return {
     id: `${Math.floor(Math.random() * 100000) + 1}`,
     title: text,
@@ -29,8 +43,8 @@ export const getItem = (service, withTimestamp = false) => {
   };
 };
 
-export const getItems = (service = 'news', arraySize) =>
-  Array.from({ length: arraySize }, () => getItem(service));
+export const getItems = ({ service = 'news', arraySize, withTimestamp }) =>
+  Array.from({ length: arraySize }, () => getItem({ service, withTimestamp }));
 
 export const getItemWrapperArray = ({
   numberOfItems,
@@ -39,7 +53,7 @@ export const getItemWrapperArray = ({
   dir,
 }) => {
   const itemWrapperArray = [];
-  const item = getItem(service);
+  const item = getItem({ service });
   for (let i = 1; i <= numberOfItems; i += 1) {
     itemWrapperArray.push(
       <MostReadItemWrapper dir={dir} key={i}>
