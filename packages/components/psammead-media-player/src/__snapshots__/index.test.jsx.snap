@@ -685,26 +685,35 @@ exports[`Media Player: Canonical Entry renders an iframe when showPlaceholder is
 }
 
 .c1 {
+  left: 0;
+  overflow: hidden;
   position: absolute;
   top: 0;
-  left: 0;
   width: 100%;
   height: 100%;
+}
+
+.c2 {
   border: 0;
-  overflow: hidden;
+  height: 100%;
+  width: 100%;
 }
 
 <div
   class="c0"
 >
-  <iframe
-    allow="autoplay; fullscreen"
-    allowfullscreen=""
+  <div
     class="c1"
-    scrolling="no"
-    src="http://foo.bar/iframe"
-    title="Media player"
-  />
+  >
+    <iframe
+      allow="autoplay; fullscreen"
+      allowfullscreen=""
+      class="c2"
+      scrolling="no"
+      src="http://foo.bar/iframe"
+      title="Media player"
+    />
+  </div>
 </div>
 `;
 
@@ -716,26 +725,35 @@ exports[`Media Player: Canonical Entry renders the audio skin 1`] = `
 }
 
 .c1 {
+  left: 0;
+  overflow: hidden;
   position: absolute;
   top: 0;
-  left: 0;
   width: 100%;
   height: 100%;
+}
+
+.c2 {
   border: 0;
-  overflow: hidden;
+  height: 100%;
+  width: 100%;
 }
 
 <div
   class="c0"
 >
-  <iframe
-    allow="autoplay; fullscreen"
-    allowfullscreen=""
+  <div
     class="c1"
-    scrolling="no"
-    src="https://www.test.bbc.com/ws/av-embeds/media/bbc_korean_radio/liveradio"
-    title="Audio player"
-  />
+  >
+    <iframe
+      allow="autoplay; fullscreen"
+      allowfullscreen=""
+      class="c2"
+      scrolling="no"
+      src="https://www.test.bbc.com/ws/av-embeds/media/bbc_korean_radio/liveradio"
+      title="Audio player"
+    />
+  </div>
 </div>
 `;
 
