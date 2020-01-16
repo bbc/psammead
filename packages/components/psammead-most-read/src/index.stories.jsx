@@ -3,7 +3,12 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { withKnobs } from '@storybook/addon-knobs';
 import { withServicesKnob } from '@bbc/psammead-storybook-helpers';
-import { getItem, getItemWrapperArray, getItems } from './testHelpers';
+import {
+  getItem,
+  getItemWrapperArray,
+  getItems,
+  getServiceVariant,
+} from './testHelpers';
 import {
   MostReadRank,
   MostReadLink,
@@ -121,16 +126,26 @@ storiesOf('Components|MostRead/Item', module)
   .addDecorator(withServicesKnob())
   .add(
     `MostReadLink`,
-    ({ dir, script, service }) =>
-      renderLink({ dir, script, service, withTimestamp: false }),
+    ({ dir, script, service, variant }) =>
+      renderLink({
+        dir,
+        script,
+        service: getServiceVariant({ service, variant }),
+        withTimestamp: false,
+      }),
     {
       notes,
     },
   )
   .add(
     `MostReadLink with last updated date`,
-    ({ dir, script, service }) =>
-      renderLink({ dir, script, service, withTimestamp: true }),
+    ({ dir, script, service, variant }) =>
+      renderLink({
+        dir,
+        script,
+        service: getServiceVariant({ service, variant }),
+        withTimestamp: true,
+      }),
     {
       notes,
     },
@@ -141,8 +156,13 @@ storiesOf('Components|MostRead/List', module)
   .add(
     `News LTR`,
     () =>
-      newsServiceDecorator(({ dir, script, service }) =>
-        renderList({ numberOfItems: 10, dir, service, script }),
+      newsServiceDecorator(({ dir, script, service, variant }) =>
+        renderList({
+          numberOfItems: 10,
+          dir,
+          service: getServiceVariant({ service, variant }),
+          script,
+        }),
       ),
     {
       notes,
@@ -151,8 +171,13 @@ storiesOf('Components|MostRead/List', module)
   .add(
     `News LTR 5 items`,
     () =>
-      newsServiceDecorator(({ dir, script, service }) =>
-        renderList({ numberOfItems: 5, dir, service, script }),
+      newsServiceDecorator(({ dir, script, service, variant }) =>
+        renderList({
+          numberOfItems: 5,
+          dir,
+          service: getServiceVariant({ service, variant }),
+          script,
+        }),
       ),
     {
       notes,
@@ -161,8 +186,13 @@ storiesOf('Components|MostRead/List', module)
   .add(
     `Bengali LTR`,
     () =>
-      bengaliServiceDecorator(({ dir, script, service }) =>
-        renderList({ numberOfItems: 10, dir, service, script }),
+      bengaliServiceDecorator(({ dir, script, service, variant }) =>
+        renderList({
+          numberOfItems: 10,
+          dir,
+          service: getServiceVariant({ service, variant }),
+          script,
+        }),
       ),
     {
       notes,
@@ -171,8 +201,13 @@ storiesOf('Components|MostRead/List', module)
   .add(
     `Bengali LTR 5 items`,
     () =>
-      bengaliServiceDecorator(({ dir, script, service }) =>
-        renderList({ numberOfItems: 5, dir, service, script }),
+      bengaliServiceDecorator(({ dir, script, service, variant }) =>
+        renderList({
+          numberOfItems: 5,
+          dir,
+          service: getServiceVariant({ service, variant }),
+          script,
+        }),
       ),
     {
       notes,
@@ -181,8 +216,13 @@ storiesOf('Components|MostRead/List', module)
   .add(
     `Burmese LTR`,
     () =>
-      burmeseServiceDecorator(({ dir, script, service }) =>
-        renderList({ numberOfItems: 10, dir, service, script }),
+      burmeseServiceDecorator(({ dir, script, service, variant }) =>
+        renderList({
+          numberOfItems: 10,
+          dir,
+          service: getServiceVariant({ service, variant }),
+          script,
+        }),
       ),
     {
       notes,
@@ -191,8 +231,13 @@ storiesOf('Components|MostRead/List', module)
   .add(
     `Burmese LTR 5 items`,
     () =>
-      burmeseServiceDecorator(({ dir, script, service }) =>
-        renderList({ numberOfItems: 5, dir, service, script }),
+      burmeseServiceDecorator(({ dir, script, service, variant }) =>
+        renderList({
+          numberOfItems: 5,
+          dir,
+          service: getServiceVariant({ service, variant }),
+          script,
+        }),
       ),
     {
       notes,
@@ -204,8 +249,13 @@ storiesOf('Components|MostRead/List/RTL', module)
   .add(
     `Arabic RTL`,
     () =>
-      arabicServiceDecorator(({ dir, script, service }) =>
-        renderList({ numberOfItems: 10, dir, service, script }),
+      arabicServiceDecorator(({ dir, script, service, variant }) =>
+        renderList({
+          numberOfItems: 10,
+          dir,
+          service: getServiceVariant({ service, variant }),
+          script,
+        }),
       ),
     {
       notes,
@@ -214,8 +264,13 @@ storiesOf('Components|MostRead/List/RTL', module)
   .add(
     `Arabic RTL 5 items`,
     () =>
-      arabicServiceDecorator(({ dir, script, service }) =>
-        renderList({ numberOfItems: 5, dir, service, script }),
+      arabicServiceDecorator(({ dir, script, service, variant }) =>
+        renderList({
+          numberOfItems: 5,
+          dir,
+          service: getServiceVariant({ service, variant }),
+          script,
+        }),
       ),
     {
       notes,
@@ -250,10 +305,10 @@ storiesOf('Components|MostRead', module)
   .add(
     'default LTR',
     () =>
-      newsServiceDecorator(({ script, service, dir }) => (
+      newsServiceDecorator(({ script, service, dir, variant }) => (
         <MostRead
           items={getItems({
-            service: 'news',
+            service: getServiceVariant({ service, variant }),
             arraySize: 10,
           })}
           script={script}
@@ -269,10 +324,10 @@ storiesOf('Components|MostRead', module)
   .add(
     'default LTR with timestamp',
     () =>
-      newsServiceDecorator(({ script, service, dir }) => (
+      newsServiceDecorator(({ script, service, dir, variant }) => (
         <MostRead
           items={getItems({
-            service: 'news',
+            service: getServiceVariant({ service, variant }),
             arraySize: 10,
             withTimestamp: true,
           })}
@@ -289,10 +344,10 @@ storiesOf('Components|MostRead', module)
   .add(
     'default RTL',
     () =>
-      arabicServiceDecorator(({ script, service, dir }) => (
+      arabicServiceDecorator(({ script, service, dir, variant }) => (
         <MostRead
           items={getItems({
-            service: 'arabic',
+            service: getServiceVariant({ service, variant }),
             arraySize: 10,
           })}
           script={script}
