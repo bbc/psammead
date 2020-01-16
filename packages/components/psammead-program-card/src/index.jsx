@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { mediaIcons } from '@bbc/psammead-assets/svgs';
+import Paragraph from '@bbc/psammead-paragraph';
 import { GEL_SPACING, GEL_SPACING_DBL } from '@bbc/gel-foundations/spacings';
 import {
   C_EBON,
@@ -19,8 +20,8 @@ import {
 } from '@bbc/gel-foundations/typography';
 
 const CardWrapper = styled.div`
+  padding-top: ${GEL_SPACING};
   background-color: ${C_WHITE};
-  width: 14.5rem;
 `;
 
 const TextWrapper = styled.div`
@@ -44,7 +45,7 @@ const DateWrapper = styled.div`
   ${({ script }) => script && getPica(script)};
 `;
 
-const SummaryWrapper = styled.div`
+const SummaryWrapper = styled(Paragraph)`
   ${({ service }) => service && getSansRegular(service)};
   ${({ script }) => script && getLongPrimer(script)};
   color: ${C_METAL};
