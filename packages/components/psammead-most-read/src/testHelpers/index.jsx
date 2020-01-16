@@ -19,13 +19,13 @@ const lastUpdated = ({ script, service }) => (
 );
 
 export const getServiceVariant = ({ service, variant = '' }) => {
-  // non variant services have a default value
-  const variantOverride =
-    variant === 'default'
-      ? ''
-      : variant.charAt(0).toUpperCase() + variant.substring(1);
+  if (variant !== 'default') {
+    const variantOverride =
+      variant.charAt(0).toUpperCase() + variant.substring(1);
+    return service + variantOverride;
+  }
 
-  return service + variantOverride;
+  return service;
 };
 
 export const getItem = ({ service, withTimestamp = false }) => {
