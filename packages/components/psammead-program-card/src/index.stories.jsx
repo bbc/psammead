@@ -5,11 +5,15 @@ import { withServicesKnob } from '@bbc/psammead-storybook-helpers';
 import notes from '../README.md';
 import ProgramCard from './index';
 
-storiesOf('Components|ProgramCard', module)
+const states = ['live', 'onDemand', 'next'];
+
+const stories = storiesOf('Components|ProgramCard', module)
   .addDecorator(withKnobs)
-  .addDecorator(withServicesKnob())
-  .add(
-    'default',
+  .addDecorator(withServicesKnob());
+
+states.forEach(state => {
+  stories.add(
+    `${state}`,
     props => (
       <ProgramCard
         {...props}
@@ -17,9 +21,10 @@ storiesOf('Components|ProgramCard', module)
         summary={props.text}
         date="29/01/1990"
         duration="30:00"
+        state={state}
+        ctaLink="#"
       />
     ),
-    {
-      notes,
-    },
+    { notes },
   );
+});

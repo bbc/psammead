@@ -8,16 +8,41 @@ import {
   C_METAL,
   C_SHADOW,
   C_WHITE,
+  C_POSTBOX,
+  C_KINGFISHER,
 } from '@bbc/psammead-styles/colours';
 import {
   getSansRegular,
   getSerifRegular,
+  getSansBold,
 } from '@bbc/psammead-styles/font-styles';
 import {
   getLongPrimer,
   getMinion,
   getPica,
 } from '@bbc/gel-foundations/typography';
+import { Link } from '@bbc/psammead-story-promo';
+
+const programStateColors = {
+  live: {
+    backgroundColor: C_POSTBOX,
+    headerLabelColor: C_POSTBOX,
+    headerTextColor: C_EBON,
+    durationColor: C_WHITE,
+  },
+  next: {
+    backgroundColor: C_WHITE,
+    headerLabelColor: C_KINGFISHER,
+    headerTextColor: C_METAL,
+    durationColor: C_KINGFISHER,
+  },
+  onDemand: {
+    backgroundColor: C_EBON,
+    headerLabelColor: '',
+    headerTextColor: C_EBON,
+    durationColor: C_WHITE,
+  },
+};
 
 const CardWrapper = styled.div`
   padding-top: ${GEL_SPACING};
@@ -34,8 +59,15 @@ const TextWrapper = styled.div`
 const HeadingWrapper = styled.h3`
   ${({ service }) => service && getSerifRegular(service)};
   ${({ script }) => script && getPica(script)};
-  color: ${C_EBON};
+  color: ${({ headerTextColor }) => headerTextColor};
   margin: 0; /* Reset */
+`;
+
+const LabelWrapper = styled.span`
+  ${({ service }) => service && getSansBold(service)};
+  ${({ script }) => script && getPica(script)};
+  text-transform: uppercase;
+  color: ${({ headerLabelColor }) => headerLabelColor};
 `;
 
 const DateWrapper = styled.div`
@@ -55,9 +87,9 @@ const SummaryWrapper = styled(Paragraph)`
 const ButtonWrapper = styled.div`
   ${({ service }) => service && getSansRegular(service)};
   ${({ script }) => script && getMinion(script)};
-  background-color: ${C_EBON};
   padding: ${GEL_SPACING} 0;
-  color: ${C_WHITE};
+  background-color: ${({ backgroundColor }) => backgroundColor};
+  color: ${({ durationColor }) => durationColor};
   ${({ dir }) =>
     dir === 'ltr'
       ? `padding-left: ${GEL_SPACING};`
@@ -66,7 +98,7 @@ const ButtonWrapper = styled.div`
 
 const IconWrapper = styled.span`
   > svg {
-    color: ${C_WHITE};
+    color: ${({ durationColor }) => durationColor};
     fill: currentColor;
     width: 1.0625rem;
     height: ${GEL_SPACING_DBL};
@@ -89,21 +121,45 @@ const ProgramCard = ({
   summary,
   date,
   duration,
+  state,
+  ctaLink,
 }) => (
   <CardWrapper>
     <TextWrapper dir={dir}>
-      <HeadingWrapper service={service} script={script}>
-        {heading}
-      </HeadingWrapper>
-      <DateWrapper service={service} script={script}>
-        {date}
-      </DateWrapper>
-      <SummaryWrapper service={service} script={script}>
-        {summary}
-      </SummaryWrapper>
+      <Link href={ctaLink}>
+        <HeadingWrapper
+          service={service}
+          script={script}
+          {...programStateColors[state]}
+        >
+          {state !== 'onDemand' && (
+            <LabelWrapper
+              service={service}
+              script={script}
+              {...programStateColors[state]}
+            >
+              {`${state} `}
+            </LabelWrapper>
+          )}
+          {heading}
+        </HeadingWrapper>
+        <DateWrapper service={service} script={script}>
+          {date}
+        </DateWrapper>
+        <SummaryWrapper service={service} script={script}>
+          {summary}
+        </SummaryWrapper>
+      </Link>
     </TextWrapper>
-    <ButtonWrapper dir={dir} service={service} script={script}>
-      <IconWrapper dir={dir}>{mediaIcons.audio}</IconWrapper>
+    <ButtonWrapper
+      dir={dir}
+      service={service}
+      script={script}
+      {...programStateColors[state]}
+    >
+      <IconWrapper dir={dir} {...programStateColors[state]}>
+        {mediaIcons.audio}
+      </IconWrapper>
       <DurationWrapper dir={dir}>{duration}</DurationWrapper>
     </ButtonWrapper>
   </CardWrapper>
