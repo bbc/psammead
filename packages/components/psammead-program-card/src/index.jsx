@@ -47,6 +47,7 @@ const programStateColors = {
 const CardWrapper = styled.div`
   padding-top: ${GEL_SPACING};
   background-color: ${C_WHITE};
+  position: relative;
 `;
 
 const TextWrapper = styled.div`
@@ -125,8 +126,8 @@ const ProgramCard = ({
   ctaLink,
 }) => (
   <CardWrapper>
-    <TextWrapper dir={dir}>
-      <Link href={ctaLink}>
+    <Link href={ctaLink}>
+      <TextWrapper dir={dir}>
         <HeadingWrapper
           service={service}
           script={script}
@@ -149,19 +150,19 @@ const ProgramCard = ({
         <SummaryWrapper service={service} script={script}>
           {summary}
         </SummaryWrapper>
-      </Link>
-    </TextWrapper>
-    <ButtonWrapper
-      dir={dir}
-      service={service}
-      script={script}
-      {...programStateColors[state]}
-    >
-      <IconWrapper dir={dir} {...programStateColors[state]}>
-        {mediaIcons.audio}
-      </IconWrapper>
-      <DurationWrapper dir={dir}>{duration}</DurationWrapper>
-    </ButtonWrapper>
+      </TextWrapper>
+      <ButtonWrapper
+        dir={dir}
+        service={service}
+        script={script}
+        {...programStateColors[state]}
+      >
+        <IconWrapper dir={dir} {...programStateColors[state]}>
+          {mediaIcons.audio}
+        </IconWrapper>
+        <DurationWrapper dir={dir}>{duration}</DurationWrapper>
+      </ButtonWrapper>
+    </Link>
   </CardWrapper>
 );
 
