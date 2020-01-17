@@ -2,19 +2,15 @@ import React from 'react';
 import styled from 'styled-components';
 import { shape, string, oneOf, arrayOf, node } from 'prop-types';
 import { scriptPropType } from '@bbc/gel-foundations/prop-types';
+import SectionLabel from '@bbc/psammead-section-label';
 import MostReadList from './List/index';
-import MostReadTitle from './Title/index';
 import MostReadRank from './Rank/index';
 import { MostReadLink, MostReadItemWrapper } from './Item/index';
 
-const StyledSection = styled.section.attrs(props => ({
-  'aria-labelledby': props.labelId,
+const MostReadSection = styled.section.attrs(props => ({
   role: 'region',
+  'aria-labelledby': props.labelId,
 }))``;
-
-const MostReadSection = ({ labelId, children }) => (
-  <StyledSection labelId={labelId}> {children} </StyledSection>
-);
 
 MostReadSection.propTypes = {
   labelId: string,
@@ -22,19 +18,20 @@ MostReadSection.propTypes = {
 };
 
 MostReadSection.defaultProps = {
-  labelId: 'most-read-title',
+  labelId: 'Most-Read',
 };
 
 const MostRead = ({ items, script, service, header, dir, labelId }) => (
   <MostReadSection labelId={labelId}>
-    <MostReadTitle
-      dir={dir}
+    <SectionLabel
       script={script}
-      service={service}
-      header={header}
+      dir={dir}
       labelId={labelId}
-    />
-
+      service={service}
+      bar={false}
+    >
+      {header}
+    </SectionLabel>
     <MostReadList numberOfItems={items.length} dir={dir}>
       {items.map((item, i) => (
         <MostReadItemWrapper dir={dir} key={item.id}>
@@ -78,7 +75,7 @@ MostRead.propTypes = {
 
 MostRead.defaultProps = {
   dir: 'ltr',
-  labelId: 'most-read-title',
+  labelId: 'Most-Read',
 };
 
 export {
@@ -86,7 +83,6 @@ export {
   MostReadLink,
   MostReadItemWrapper,
   MostReadRank,
-  MostReadTitle,
   MostReadSection,
   MostRead,
 };
