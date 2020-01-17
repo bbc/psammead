@@ -4,13 +4,7 @@ import { storiesOf } from '@storybook/react';
 import { withKnobs } from '@storybook/addon-knobs';
 import { withServicesKnob } from '@bbc/psammead-storybook-helpers';
 import { getItem, getItemWrapperArray, getItems } from './testHelpers';
-import {
-  MostReadRank,
-  MostReadLink,
-  MostReadTitle,
-  MostReadList,
-  MostRead,
-} from './index';
+import { MostReadRank, MostReadLink, MostReadList, MostRead } from './index';
 import notes from '../README.md';
 
 const arabicServiceDecorator = withServicesKnob({
@@ -31,15 +25,6 @@ const burmeseServiceDecorator = withServicesKnob({
 const newsServiceDecorator = withServicesKnob({
   defaultService: 'news',
 });
-
-const renderMostReadTitle = ({ header, service, script, dir }) => (
-  <MostReadTitle
-    header={header}
-    script={script}
-    service={service}
-    dir={{ dir }}
-  />
-);
 
 const renderList = ({ numberOfItems, dir, service, script }) => (
   <MostReadList numberOfItems={numberOfItems} dir={dir}>
@@ -222,29 +207,6 @@ storiesOf('Components|MostRead/List/RTL', module)
     },
   );
 
-storiesOf('Components|MostRead/Title', module)
-  .addDecorator(withKnobs)
-  .add(
-    'LTR',
-    () =>
-      newsServiceDecorator(({ dir, script, service }) =>
-        renderMostReadTitle({ header: 'Most Read', dir, service, script }),
-      ),
-    {
-      notes,
-    },
-  )
-  .add(
-    'RTL',
-    () =>
-      arabicServiceDecorator(({ dir, script, service }) =>
-        renderMostReadTitle({ header: 'الأكثر قراءة', dir, service, script }),
-      ),
-    {
-      notes,
-    },
-  );
-
 storiesOf('Components|MostRead', module)
   .addDecorator(withKnobs)
   .add(
@@ -253,7 +215,7 @@ storiesOf('Components|MostRead', module)
       newsServiceDecorator(({ script, service, dir }) => (
         <MostRead
           items={getItems({
-            service: 'news',
+            service,
             arraySize: 10,
           })}
           script={script}
@@ -272,7 +234,7 @@ storiesOf('Components|MostRead', module)
       newsServiceDecorator(({ script, service, dir }) => (
         <MostRead
           items={getItems({
-            service: 'news',
+            service,
             arraySize: 10,
             withTimestamp: true,
           })}
@@ -292,7 +254,7 @@ storiesOf('Components|MostRead', module)
       arabicServiceDecorator(({ script, service, dir }) => (
         <MostRead
           items={getItems({
-            service: 'arabic',
+            service,
             arraySize: 10,
           })}
           script={script}
