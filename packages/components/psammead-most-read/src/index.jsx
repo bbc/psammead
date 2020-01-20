@@ -7,22 +7,20 @@ import MostReadList from './List/index';
 import MostReadRank from './Rank/index';
 import { MostReadLink, MostReadItemWrapper } from './Item/index';
 
-const MostReadSection = styled.section.attrs(props => ({
+const StyledSection = styled.section.attrs(props => ({
   role: 'region',
   'aria-labelledby': props.labelId,
 }))``;
 
-MostReadSection.propTypes = {
-  labelId: string,
-  children: node.isRequired,
-};
-
-MostReadSection.defaultProps = {
-  labelId: 'Most-Read',
-};
-
-const MostRead = ({ items, script, service, header, dir, labelId }) => (
-  <MostReadSection labelId={labelId}>
+const MostReadSection = ({
+  labelId,
+  script,
+  dir,
+  service,
+  header,
+  children,
+}) => (
+  <StyledSection labelId={labelId}>
     <SectionLabel
       script={script}
       dir={dir}
@@ -32,6 +30,32 @@ const MostRead = ({ items, script, service, header, dir, labelId }) => (
     >
       {header}
     </SectionLabel>
+    {children}
+  </StyledSection>
+);
+
+MostReadSection.propTypes = {
+  labelId: string,
+  children: node.isRequired,
+  script: shape(scriptPropType).isRequired,
+  dir: oneOf(['rtl', 'ltr']),
+  service: string.isRequired,
+  header: string.isRequired,
+};
+
+MostReadSection.defaultProps = {
+  labelId: 'Most-Read',
+  dir: 'ltr',
+};
+
+const MostRead = ({ items, script, service, header, dir, labelId }) => (
+  <MostReadSection
+    labelId={labelId}
+    script={script}
+    service={service}
+    header={header}
+    dir={dir}
+  >
     <MostReadList numberOfItems={items.length} dir={dir}>
       {items.map((item, i) => (
         <MostReadItemWrapper dir={dir} key={item.id}>
