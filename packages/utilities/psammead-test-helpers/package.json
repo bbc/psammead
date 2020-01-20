@@ -33,6 +33,6 @@
     "react-helmet": "^5.2.1"
   },
   "peerDependencies": {
-    "styled-components": "^5.0."
+    "styled-components": "^5.0.0"
   }
 }
