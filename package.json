@@ -37,7 +37,7 @@
   },
   "homepage": "https://github.com/bbc/psammead#readme",
   "dependencies": {
-    "styled-components": "^4.4.1",
+    "styled-components": "^5.0.0",
     "styled-normalize": "^8.0.4"
   },
   "devDependencies": {
@@ -97,7 +97,7 @@
     "glob-loader": "^0.3.0",
     "husky": "^4.0.6",
     "jest": "^24.9.0",
-    "jest-styled-components": "^6.3.4",
+    "jest-styled-components": "^7.0.0",
     "json5": "^2.1.1",
     "lerna": "^3.20.2",
     "lint-staged": "^9.5.0",
