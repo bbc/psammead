@@ -71,7 +71,7 @@ const LabelWrapper = styled.span`
   color: ${({ headerLabelColor }) => headerLabelColor};
 `;
 
-const DateWrapper = styled.div`
+const TitleWrapper = styled.div`
   color: ${C_SHADOW};
   padding: ${GEL_SPACING} 0;
   ${({ service }) => service && getSansRegular(service)};
@@ -145,9 +145,9 @@ const ProgramCard = ({
           {heading}
         </HeadingWrapper>
       </Link>
-      <DateWrapper service={service} script={script}>
+      <TitleWrapper service={service} script={script}>
         {date}
-      </DateWrapper>
+      </TitleWrapper>
       <SummaryWrapper service={service} script={script}>
         {summary}
       </SummaryWrapper>
