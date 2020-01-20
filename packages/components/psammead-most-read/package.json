@@ -29,7 +29,7 @@
     "@bbc/gel-foundations": "^3.4.2",
     "@bbc/psammead-grid": "^1.1.2",
     "@bbc/psammead-section-label": "^3.0.9",
-    "@bbc/psammead-styles": "^4.1.2"
+    "@bbc/psammead-styles": "^4.2.0"
   },
   "peerDependencies": {
     "styled-components": "^4.3.2"

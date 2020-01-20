@@ -7,6 +7,7 @@ import { scriptPropType } from '@bbc/gel-foundations/prop-types';
 import { grid } from '@bbc/psammead-styles/detection';
 import { getSerifMedium } from '@bbc/psammead-styles/font-styles';
 import {
+  GEL_SPACING,
   GEL_SPACING_DBL,
   GEL_SPACING_TRPL,
 } from '@bbc/gel-foundations/spacings';
@@ -25,11 +26,12 @@ const paddingEnd = ({ dir }) => `padding-${dir === 'ltr' ? 'right' : 'left'}`;
 
 const StyledLink = styled.a`
   ${({ script }) => script && getDoublePica(script)};
-  ${({ service }) => getSerifMedium(service)}
+  ${({ service }) => getSerifMedium(service)};
 
   position: static;
   color: ${C_EBON};
   text-decoration: none;
+  margin-bottom: ${GEL_SPACING};
 
   &:hover,
   &:focus {
@@ -49,7 +51,10 @@ const StyledLink = styled.a`
   }
 `;
 
+const ALIGN_RANK_TO_LINK_SPACING = '0.375rem';
+
 const StyledItem = styled.div`
+  padding-top: ${ALIGN_RANK_TO_LINK_SPACING};
   padding-bottom: ${GEL_SPACING_TRPL};
   ${paddingStart}: ${GEL_SPACING_DBL};
   ${paddingEnd}: ${GEL_SPACING_DBL};
@@ -57,6 +62,10 @@ const StyledItem = styled.div`
   @supports (${grid}) {
     ${paddingEnd}: 0;
   }
+`;
+
+const TimestampWrapper = styled.div`
+  padding-top: ${GEL_SPACING};
 `;
 
 export const MostReadLink = ({
@@ -71,7 +80,7 @@ export const MostReadLink = ({
     <StyledLink href={href} script={script} service={service}>
       {title}
     </StyledLink>
-    {children}
+    <TimestampWrapper>{children}</TimestampWrapper>
   </StyledItem>
 );
 
@@ -89,7 +98,7 @@ MostReadLink.defaultProps = {
   children: null,
 };
 
-const StyledDiv = styled.div`
+const ItemWrapper = styled.div`
   display: flex;
   flex-direction: row;
   margin: 0;
@@ -121,7 +130,7 @@ export const MostReadItemWrapper = ({
       forwardedAs="li"
       labelId={labelId}
     >
-      <StyledDiv>{children}</StyledDiv>
+      <ItemWrapper>{children}</ItemWrapper>
     </StyledGrid>
   );
 };
