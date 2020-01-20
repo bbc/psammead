@@ -27,7 +27,7 @@ npm install @bbc/psammead-radio-schedule --save
 | summary | string | yes | N/A | `'This is a summary'` |
 | episodeTitle | string | yes | N/A | `'29/01/1990'` |
 | duration | string | yes | N/A | `'30:00'` |
-| state | string | yes | N/A | `'live'` |
+| state | object | yes | N/A | `{ type: 'live', translation: 'مباشر'}` |
 | link | string | yes | N/A | `'https://bbc.com/arabic/articles/c1er5mjnznzo'` |
 | service | string | yes | N/A | `'news'` |
 | script | object | yes | N/A | `{ canon: { groupA: { fontSize: '28', lineHeight: '32',}, groupB: { fontSize: '32', lineHeight: '36', }, groupD: { fontSize: '44', lineHeight: '48', }, }, trafalgar: { groupA: { fontSize: '20', lineHeight: '24', }, groupB: { fontSize: '24', lineHeight: '28', }, groupD: { fontSize: '32', lineHeight: '36', }, }, }` |

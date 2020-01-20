@@ -51,7 +51,7 @@ exports[`ProgramCard should render correctly for live 1`] = `
 
 .c3 {
   font-family: ReithSerif,Helvetica,Arial,sans-serif;
-  font-weight: 400;
+  font-weight: 500;
   font-style: normal;
   font-size: 0.9375rem;
   line-height: 1.25rem;
@@ -96,10 +96,9 @@ exports[`ProgramCard should render correctly for live 1`] = `
   font-style: normal;
   font-size: 0.75rem;
   line-height: 1rem;
-  padding: 0.5rem 0;
+  padding: 0.5rem;
   background-color: #B80000;
   color: #FFFFFF;
-  padding-left: 0.5rem;
 }
 
 .c8 > svg {
@@ -301,7 +300,7 @@ exports[`ProgramCard should render correctly for next 1`] = `
 
 .c3 {
   font-family: ReithSerif,Helvetica,Arial,sans-serif;
-  font-weight: 400;
+  font-weight: 500;
   font-style: normal;
   font-size: 0.9375rem;
   line-height: 1.25rem;
@@ -320,7 +319,7 @@ exports[`ProgramCard should render correctly for next 1`] = `
 }
 
 .c5 {
-  color: #3F3F42;
+  color: #6E6E73;
   padding: 0.5rem 0;
   font-family: ReithSans,Helvetica,Arial,sans-serif;
   font-weight: 400;
@@ -346,10 +345,9 @@ exports[`ProgramCard should render correctly for next 1`] = `
   font-style: normal;
   font-size: 0.75rem;
   line-height: 1rem;
-  padding: 0.5rem 0;
+  padding: 0.5rem;
   background-color: #FFFFFF;
   color: #11708C;
-  padding-left: 0.5rem;
 }
 
 .c8 > svg {
@@ -551,7 +549,7 @@ exports[`ProgramCard should render correctly for onDemand 1`] = `
 
 .c3 {
   font-family: ReithSerif,Helvetica,Arial,sans-serif;
-  font-weight: 400;
+  font-weight: 500;
   font-style: normal;
   font-size: 0.9375rem;
   line-height: 1.25rem;
@@ -586,10 +584,9 @@ exports[`ProgramCard should render correctly for onDemand 1`] = `
   font-style: normal;
   font-size: 0.75rem;
   line-height: 1rem;
-  padding: 0.5rem 0;
+  padding: 0.5rem;
   background-color: #222222;
   color: #FFFFFF;
-  padding-left: 0.5rem;
 }
 
 .c7 > svg {
@@ -772,7 +769,7 @@ exports[`ProgramCard should render correctly in RTL 1`] = `
 
 .c3 {
   font-family: "BBC Nassim Arabic",Arial,Verdana,Geneva,Helvetica,sans-serif;
-  font-weight: 400;
+  font-weight: 700;
   font-style: normal;
   font-size: 1rem;
   line-height: 1.625rem;
@@ -817,10 +814,9 @@ exports[`ProgramCard should render correctly in RTL 1`] = `
   font-style: normal;
   font-size: 0.75rem;
   line-height: 1rem;
-  padding: 0.5rem 0;
+  padding: 0.5rem;
   background-color: #B80000;
   color: #FFFFFF;
-  padding-right: 0.5rem;
 }
 
 .c8 > svg {
@@ -922,7 +918,7 @@ exports[`ProgramCard should render correctly in RTL 1`] = `
         <span
           class="c4"
         >
-          live 
+          مباشر 
         </span>
         لماذا يخجل البعض من اسم قريته في مصر؟
       </h3>

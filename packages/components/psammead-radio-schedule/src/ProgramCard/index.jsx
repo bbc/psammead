@@ -13,7 +13,7 @@ import {
 import {
   getSansBold,
   getSansRegular,
-  getSerifRegular,
+  getSerifMedium,
 } from '@bbc/psammead-styles/font-styles';
 import {
   getLongPrimer,
@@ -35,7 +35,7 @@ const TextWrapper = styled.div`
 `;
 
 const HeadingWrapper = styled.h3`
-  ${({ service }) => service && getSerifRegular(service)};
+  ${({ service }) => service && getSerifMedium(service)};
   ${({ script }) => script && getPica(script)};
   color: ${({ headerTextColor }) => headerTextColor};
   margin: 0; /* Reset */
@@ -49,7 +49,7 @@ const LabelWrapper = styled.span`
 `;
 
 const TitleWrapper = styled.div`
-  color: ${C_SHADOW};
+  color: ${({ titleColor }) => titleColor};
   padding: ${GEL_SPACING} 0;
   ${({ service }) => service && getSansRegular(service)};
   ${({ script }) => script && getPica(script)};
@@ -66,13 +66,9 @@ const SummaryWrapper = styled.p`
 const ButtonWrapper = styled.div`
   ${({ service }) => service && getSansRegular(service)};
   ${({ script }) => script && getMinion(script)};
-  padding: ${GEL_SPACING} 0;
+  padding: ${GEL_SPACING};
   background-color: ${({ backgroundColor }) => backgroundColor};
   color: ${({ durationColor }) => durationColor};
-  ${({ dir }) =>
-    dir === 'ltr'
-      ? `padding-left: ${GEL_SPACING};`
-      : `padding-right: ${GEL_SPACING};`}
 `;
 
 const IconWrapper = styled.span`
@@ -103,17 +99,20 @@ const programStateConfig = {
     backgroundColor: C_POSTBOX,
     headerLabelColor: C_POSTBOX,
     headerTextColor: C_EBON,
+    titleColor: C_SHADOW,
     durationColor: C_WHITE,
   },
   next: {
     backgroundColor: C_WHITE,
     headerLabelColor: C_KINGFISHER,
     headerTextColor: C_METAL,
+    titleColor: C_METAL,
     durationColor: C_KINGFISHER,
   },
   onDemand: {
     backgroundColor: C_EBON,
     headerTextColor: C_EBON,
+    titleColor: C_SHADOW,
     durationColor: C_WHITE,
   },
 };
@@ -126,7 +125,7 @@ const ProgramCard = ({
   summary,
   episodeTitle,
   duration,
-  state,
+  state: { type, translation },
   link,
 }) => (
   <CardWrapper>
@@ -135,21 +134,25 @@ const ProgramCard = ({
         <HeadingWrapper
           service={service}
           script={script}
-          {...programStateConfig[state]}
+          {...programStateConfig[type]}
         >
-          {state !== 'onDemand' && (
+          {type !== 'onDemand' && (
             <LabelWrapper
               service={service}
               script={script}
-              {...programStateConfig[state]}
+              {...programStateConfig[type]}
             >
-              {`${state} `}
+              {`${translation} `}
             </LabelWrapper>
           )}
           {brandTitle}
         </HeadingWrapper>
       </Link>
-      <TitleWrapper service={service} script={script}>
+      <TitleWrapper
+        service={service}
+        script={script}
+        {...programStateConfig[type]}
+      >
         {episodeTitle}
       </TitleWrapper>
       <SummaryWrapper service={service} script={script}>
@@ -160,15 +163,20 @@ const ProgramCard = ({
       dir={dir}
       service={service}
       script={script}
-      {...programStateConfig[state]}
+      {...programStateConfig[type]}
     >
-      <IconWrapper dir={dir} {...programStateConfig[state]}>
+      <IconWrapper dir={dir} {...programStateConfig[type]}>
         {mediaIcons.audio}
       </IconWrapper>
       <DurationWrapper dir={dir}>{duration}</DurationWrapper>
     </ButtonWrapper>
   </CardWrapper>
 );
+
+const statePropTypes = shape({
+  type: string.isRequired,
+  translation: string.isRequired,
+});
 
 ProgramCard.propTypes = {
   dir: oneOf(['rtl', 'ltr']),
@@ -178,7 +186,7 @@ ProgramCard.propTypes = {
   summary: string.isRequired,
   episodeTitle: string.isRequired,
   duration: string.isRequired,
-  state: string.isRequired,
+  state: shape(statePropTypes).isRequired,
   link: string.isRequired,
 };
 
