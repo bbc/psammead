@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 2.0.52 | [PR#2955](https://github.com/bbc/psammead/pull/2955) Talos - Bump Dependencies - @bbc/psammead-storybook-helpers |
 | 2.0.51 | [PR#2954](https://github.com/bbc/psammead/pull/2954) Fix storybook build step |
 | 2.0.50 | [PR#2941](https://github.com/bbc/psammead/pull/2941) Serve fonts locally |
 | 2.0.49 | [PR#2930](https://github.com/bbc/psammead/pull/2930) Talos - Bump Dependencies - @bbc/psammead-brand |
