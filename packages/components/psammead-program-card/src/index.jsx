@@ -126,8 +126,8 @@ const ProgramCard = ({
   ctaLink,
 }) => (
   <CardWrapper>
-    <Link href={ctaLink}>
-      <TextWrapper dir={dir}>
+    <TextWrapper dir={dir}>
+      <Link href={ctaLink}>
         <HeadingWrapper
           service={service}
           script={script}
@@ -144,25 +144,25 @@ const ProgramCard = ({
           )}
           {heading}
         </HeadingWrapper>
-        <DateWrapper service={service} script={script}>
-          {date}
-        </DateWrapper>
-        <SummaryWrapper service={service} script={script}>
-          {summary}
-        </SummaryWrapper>
-      </TextWrapper>
-      <ButtonWrapper
-        dir={dir}
-        service={service}
-        script={script}
-        {...programStateColors[state]}
-      >
-        <IconWrapper dir={dir} {...programStateColors[state]}>
-          {mediaIcons.audio}
-        </IconWrapper>
-        <DurationWrapper dir={dir}>{duration}</DurationWrapper>
-      </ButtonWrapper>
-    </Link>
+      </Link>
+      <DateWrapper service={service} script={script}>
+        {date}
+      </DateWrapper>
+      <SummaryWrapper service={service} script={script}>
+        {summary}
+      </SummaryWrapper>
+    </TextWrapper>
+    <ButtonWrapper
+      dir={dir}
+      service={service}
+      script={script}
+      {...programStateColors[state]}
+    >
+      <IconWrapper dir={dir} {...programStateColors[state]}>
+        {mediaIcons.audio}
+      </IconWrapper>
+      <DurationWrapper dir={dir}>{duration}</DurationWrapper>
+    </ButtonWrapper>
   </CardWrapper>
 );
 
