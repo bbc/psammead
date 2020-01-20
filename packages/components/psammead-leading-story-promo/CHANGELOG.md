@@ -2,6 +2,7 @@
 
 | Version | Description |
 |---------|-------------|
+| 0.1.0-alpha.9 | [PR#2973](https://github.com/bbc/psammead/pull/2973) Talos - Bump Dependencies - @bbc/psammead-styles |
 | 0.1.0-alpha.8 | [PR#2928](https://github.com/bbc/psammead/pull/2928) Talos - Bump Dependencies - @bbc/psammead-grid |
 | 0.1.0-alpha.7 | [PR#2920](https://github.com/bbc/psammead/pull/2920) Talos - Bump Dependencies - @bbc/gel-foundations, @bbc/psammead-grid |
 | 0.1.0-alpha.6 | [PR#2880](https://github.com/bbc/psammead/pull/2921) Fix image knobs from appearing on first load in storybook |
