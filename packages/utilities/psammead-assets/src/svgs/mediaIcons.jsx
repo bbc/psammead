@@ -39,11 +39,6 @@ const GuidanceIcon = styled(MediaIcon)`
   height: ${GEL_SPACING_DBL};
 `;
 
-const ClockIcon = styled(MediaIcon)`
-  width: 0.725rem;
-  height: 0.725rem;
-`;
-
 const mediaIcons = {
   video: (
     <VideoMediaIcon
@@ -81,12 +76,6 @@ const mediaIcons = {
     <GuidanceIcon viewBox="0 0 32 32" width="32" height="32" {...defaultAttrs}>
       <path d="M32,16A16,16,0,1,1,16,0,16,16,0,0,1,32,16Zm-8.6-.8H16.6v3.1h2.9c-.2,1.5-1.6,2.4-3.7,2.4s-3.7-2.4-3.7-4.7,1-4.7,3.7-4.7,3,.8,3.2,2.2h4.2c-.4-4-3.9-5.8-7.2-5.8-4.8,0-8,3.7-8,8.3s3.1,8.3,8,8.3a5.4,5.4,0,0,0,4.5-2.1l.2,1.7h2.7Z" />
     </GuidanceIcon>
-  ),
-  clock: (
-    <ClockIcon viewBox="0 0 13 13" width="13" height="13" {...defaultAttrs}>
-      <path d="M6.5 0A6.5 6.5 0 1013 6.5 6.5 6.5 0 006.5 0zm0 11.5a5 5 0 115-5 5 5 0 01-5 5z" />
-      <path d="M7.34 2.9h-1v3.8L9.4 8.57l.41-.56-2.47-1.89V2.9z" />
-    </ClockIcon>
   ),
 };
 
