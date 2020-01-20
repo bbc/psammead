@@ -50,10 +50,10 @@ const StyledLink = styled.a`
   }
 `;
 
-const alignRankToLinkSpacing = '0.375rem';
+const ALIGN_RANK_TO_LINK_SPACING = '0.375rem';
 
 const StyledItem = styled.div`
-  padding-top: ${alignRankToLinkSpacing};
+  padding-top: ${ALIGN_RANK_TO_LINK_SPACING};
   padding-bottom: ${GEL_SPACING_TRPL};
   ${paddingStart}: ${GEL_SPACING_DBL};
   ${paddingEnd}: ${GEL_SPACING_DBL};
