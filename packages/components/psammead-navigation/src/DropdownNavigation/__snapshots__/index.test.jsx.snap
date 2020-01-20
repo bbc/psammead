@@ -1,6 +1,18 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`AMP Menu Button should render correctly 1`] = `
+.c2 {
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  -webkit-clip: rect(1px,1px,1px,1px);
+  clip: rect(1px,1px,1px,1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  width: 1px;
+  margin: 0;
+}
+
 .c1 {
   color: #fff;
   fill: currentColor;
@@ -72,7 +84,6 @@ exports[`AMP Menu Button should render correctly 1`] = `
       </amp-state>
       <button
         aria-expanded="false"
-        aria-label="Menu"
         class="c0"
         data-amp-bind-aria-expanded="menuState.expanded ? \\"true\\" : \\"false\\""
         dir="ltr"
@@ -107,6 +118,11 @@ exports[`AMP Menu Button should render correctly 1`] = `
             fill-rule="evenodd"
           />
         </svg>
+        <span
+          class="c2"
+        >
+          Menu
+        </span>
       </button>
     </div>
   </body>
@@ -123,7 +139,19 @@ exports[`AMP Menu Button should render rtl correctly 1`] = `
     />
   </head>
   <body>
-    .c1 {
+    .c2 {
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  -webkit-clip: rect(1px,1px,1px,1px);
+  clip: rect(1px,1px,1px,1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  width: 1px;
+  margin: 0;
+}
+
+.c1 {
   color: #fff;
   fill: currentColor;
 }
@@ -185,7 +213,6 @@ exports[`AMP Menu Button should render rtl correctly 1`] = `
       </amp-state>
       <button
         aria-expanded="false"
-        aria-label="Menu"
         class="c0"
         data-amp-bind-aria-expanded="menuState.expanded ? \\"true\\" : \\"false\\""
         dir="rtl"
@@ -220,6 +247,11 @@ exports[`AMP Menu Button should render rtl correctly 1`] = `
             fill-rule="evenodd"
           />
         </svg>
+        <span
+          class="c2"
+        >
+          Menu
+        </span>
       </button>
     </div>
   </body>
@@ -227,6 +259,18 @@ exports[`AMP Menu Button should render rtl correctly 1`] = `
 `;
 
 exports[`Canonical Closed menu button should render correctly 1`] = `
+.c2 {
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  -webkit-clip: rect(1px,1px,1px,1px);
+  clip: rect(1px,1px,1px,1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  width: 1px;
+  margin: 0;
+}
+
 .c1 {
   color: #fff;
   fill: currentColor;
@@ -279,7 +323,6 @@ exports[`Canonical Closed menu button should render correctly 1`] = `
 
 <button
   aria-expanded="false"
-  aria-label="Menu"
   class="c0"
   dir="ltr"
   type="button"
@@ -296,10 +339,27 @@ exports[`Canonical Closed menu button should render correctly 1`] = `
       d="M12 29h21v-2.333H12V29zm0-5.833h21v-2.334H12v2.334zM12 15v2.333h21V15H12z"
     />
   </svg>
+  <span
+    class="c2"
+  >
+    Menu
+  </span>
 </button>
 `;
 
 exports[`Canonical Closed menu button should render rtl correctly 1`] = `
+.c2 {
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  -webkit-clip: rect(1px,1px,1px,1px);
+  clip: rect(1px,1px,1px,1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  width: 1px;
+  margin: 0;
+}
+
 .c1 {
   color: #fff;
   fill: currentColor;
@@ -352,7 +412,6 @@ exports[`Canonical Closed menu button should render rtl correctly 1`] = `
 
 <button
   aria-expanded="false"
-  aria-label="Menu"
   class="c0"
   dir="rtl"
   type="button"
@@ -369,10 +428,27 @@ exports[`Canonical Closed menu button should render rtl correctly 1`] = `
       d="M12 29h21v-2.333H12V29zm0-5.833h21v-2.334H12v2.334zM12 15v2.333h21V15H12z"
     />
   </svg>
+  <span
+    class="c2"
+  >
+    Menu
+  </span>
 </button>
 `;
 
 exports[`Canonical Open menu button should render correctly 1`] = `
+.c2 {
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  -webkit-clip: rect(1px,1px,1px,1px);
+  clip: rect(1px,1px,1px,1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  width: 1px;
+  margin: 0;
+}
+
 .c1 {
   color: #fff;
   fill: currentColor;
@@ -425,7 +501,6 @@ exports[`Canonical Open menu button should render correctly 1`] = `
 
 <button
   aria-expanded="true"
-  aria-label="Menu"
   class="c0"
   dir="ltr"
   type="button"
@@ -443,10 +518,27 @@ exports[`Canonical Open menu button should render correctly 1`] = `
       fill-rule="evenodd"
     />
   </svg>
+  <span
+    class="c2"
+  >
+    Menu
+  </span>
 </button>
 `;
 
 exports[`Canonical Open menu button should render rtl correctly 1`] = `
+.c2 {
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  -webkit-clip: rect(1px,1px,1px,1px);
+  clip: rect(1px,1px,1px,1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  width: 1px;
+  margin: 0;
+}
+
 .c1 {
   color: #fff;
   fill: currentColor;
@@ -499,7 +591,6 @@ exports[`Canonical Open menu button should render rtl correctly 1`] = `
 
 <button
   aria-expanded="true"
-  aria-label="Menu"
   class="c0"
   dir="rtl"
   type="button"
@@ -517,6 +608,11 @@ exports[`Canonical Open menu button should render rtl correctly 1`] = `
       fill-rule="evenodd"
     />
   </svg>
+  <span
+    class="c2"
+  >
+    Menu
+  </span>
 </button>
 `;
 
