@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 6.0.0-alpha.22 | [PR#2951](https://github.com/bbc/psammead/pull/2951) Use visually hidden text instead of aria label in nav button |
 | 6.0.0-alpha.21 | [PR#2923](https://github.com/bbc/psammead/pull/2923) Update padding between navigation items |
 | 6.0.0-alpha.20 | [PR#2920](https://github.com/bbc/psammead/pull/2920) Talos - Bump Dependencies - @bbc/gel-foundations |
 | 6.0.0-alpha.19 | [PR#2875](https://github.com/bbc/psammead/pull/2875) Remove aria-hidden from the scrollable navigation |
