@@ -1,6 +1,6 @@
 {
   "name": "@bbc/psammead",
-  "version": "2.0.49",
+  "version": "2.0.51",
   "description": "Core Components Library Developed & Maintained By The Articles and Reach & Languages Team",
   "main": "index.js",
   "private": true,
@@ -8,7 +8,7 @@
     "build": "npm run build:cjs && npm run build:esm",
     "build:cjs": "lerna exec --parallel -- babel src -d dist --ignore $npm_package_config_babel_ignore --root-mode upward",
     "build:esm": "BABEL_TYPE=esm lerna exec --parallel -- babel src -d esm --configFile babel.config.js --ignore $npm_package_config_babel_ignore --root-mode upward",
-    "build:storybook": "build-storybook -o storybook_dist",
+    "build:storybook": "build-storybook -o storybook_dist -s .storybook/static",
     "bumpChangelogs": "node scripts/bumpChangelogs/cli",
     "bumpPackages": "node scripts/bumpPackages/cli",
     "changeScanner": "node scripts/changeScanner",
@@ -21,7 +21,7 @@
     "postinstall": "npm run build",
     "publish": "npm run build && node scripts/publish",
     "regeneratePackageLocks": "node scripts/regeneratePackageLocks",
-    "storybook": "NODE_ENV=development start-storybook -p 8180 -c .storybook",
+    "storybook": "NODE_ENV=development start-storybook -p 8180 -s .storybook/static -c .storybook",
     "test": "npm run test:lint && npm run test:unit && lerna run test",
     "test:lint": "eslint --ext .js,jsx,json ./packages ./scripts && stylelint 'packages/**/*.js' 'packages/**/*.jsx' 'scripts/**/*.js'",
     "test:unit": "npm run build && jest --verbose --coverage"
