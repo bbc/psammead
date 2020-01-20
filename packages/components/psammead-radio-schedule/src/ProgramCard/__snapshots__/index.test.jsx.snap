@@ -250,256 +250,6 @@ exports[`ProgramCard should render correctly for live 1`] = `
 </div>
 `;
 
-exports[`ProgramCard should render correctly for live in RTL 1`] = `
-.c9 {
-  vertical-align: middle;
-  margin: 0 0.25rem;
-  color: #222222;
-  fill: currentColor;
-  width: 0.8125rem;
-  height: 0.75rem;
-}
-
-.c2 {
-  position: static;
-  color: #222222;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-}
-
-.c2:before {
-  bottom: 0;
-  content: '';
-  left: 0;
-  overflow: hidden;
-  position: absolute;
-  right: 0;
-  top: 0;
-  white-space: nowrap;
-  z-index: 1;
-}
-
-.c2:hover,
-.c2:focus {
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-}
-
-.c2:visited {
-  color: #6E6E73;
-}
-
-.c0 {
-  padding-top: 0.5rem;
-  background-color: #FFFFFF;
-  position: relative;
-}
-
-.c1 {
-  padding: 0 0.5rem;
-}
-
-.c3 {
-  font-family: "BBC Nassim Arabic",Arial,Verdana,Geneva,Helvetica,sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 1rem;
-  line-height: 1.625rem;
-  color: #222222;
-  margin: 0;
-}
-
-.c4 {
-  font-family: "BBC Nassim Arabic",Arial,Verdana,Geneva,Helvetica,sans-serif;
-  font-weight: 700;
-  font-style: normal;
-  font-size: 1rem;
-  line-height: 1.625rem;
-  text-transform: uppercase;
-  color: #B80000;
-}
-
-.c5 {
-  color: #3F3F42;
-  padding: 0.5rem 0;
-  font-family: "BBC Nassim Arabic",Arial,Verdana,Geneva,Helvetica,sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 1rem;
-  line-height: 1.625rem;
-}
-
-.c6 {
-  font-family: "BBC Nassim Arabic",Arial,Verdana,Geneva,Helvetica,sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 1.0625rem;
-  line-height: 1.5rem;
-  color: #6E6E73;
-  padding-bottom: 1rem;
-  margin: 0;
-}
-
-.c7 {
-  font-family: "BBC Nassim Arabic",Arial,Verdana,Geneva,Helvetica,sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 0.75rem;
-  line-height: 1rem;
-  padding: 0.5rem 0;
-  background-color: #B80000;
-  color: #FFFFFF;
-  padding-right: 0.5rem;
-}
-
-.c8 > svg {
-  color: #FFFFFF;
-  fill: currentColor;
-  width: 1.0625rem;
-  height: 1rem;
-  margin: 0;
-}
-
-.c10 {
-  padding-right: 0.5rem;
-}
-
-@media (min-width:20rem) and (max-width:37.4375rem) {
-  .c3 {
-    font-size: 1.25rem;
-    line-height: 1.625rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c3 {
-    font-size: 1.25rem;
-    line-height: 1.625rem;
-  }
-}
-
-@media (min-width:20rem) and (max-width:37.4375rem) {
-  .c4 {
-    font-size: 1.25rem;
-    line-height: 1.625rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c4 {
-    font-size: 1.25rem;
-    line-height: 1.625rem;
-  }
-}
-
-@media (min-width:20rem) and (max-width:37.4375rem) {
-  .c5 {
-    font-size: 1.25rem;
-    line-height: 1.625rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c5 {
-    font-size: 1.25rem;
-    line-height: 1.625rem;
-  }
-}
-
-@media (min-width:20rem) and (max-width:37.4375rem) {
-  .c6 {
-    font-size: 1.125rem;
-    line-height: 1.5rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c6 {
-    font-size: 1.125rem;
-    line-height: 1.5rem;
-  }
-}
-
-@media (min-width:20rem) and (max-width:37.4375rem) {
-  .c7 {
-    font-size: 0.75rem;
-    line-height: 1rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c7 {
-    font-size: 0.75rem;
-    line-height: 1rem;
-  }
-}
-
-<div
-  class="c0"
->
-  <div
-    class="c1"
-    dir="rtl"
-  >
-    <a
-      class="c2"
-      href="/arabic/articles/c1er5mjnznzo"
-    >
-      <h3
-        class="c3"
-      >
-        <span
-          class="c4"
-        >
-          live 
-        </span>
-        لماذا يخجل البعض من اسم قريته في مصر؟
-      </h3>
-    </a>
-    <div
-      class="c5"
-    >
-      29/01/1990
-    </div>
-    <p
-      class="c6"
-    >
-      هناك وقائع عدة تتسم بالسخرية والجدل والتنمر، ضد أهل القرية الذين أصابهم الغضب والسخط مما دفعهم إلى تقديم طلب لتغيير اسم قريتهم.
-    </p>
-  </div>
-  <div
-    class="c7"
-    dir="rtl"
-  >
-    <span
-      class="c8"
-      dir="rtl"
-    >
-      <svg
-        class="c9"
-        focusable="false"
-        height="12px"
-        viewBox="0 0 13 12"
-        width="13px"
-      >
-        <path
-          d="M9.021 1.811l-.525.525c.938.938 1.5 2.25 1.5 3.675s-.563 2.738-1.5 3.675l.525.525c1.05-1.087 1.725-2.55 1.725-4.2s-.675-3.112-1.725-4.2z"
-        />
-        <path
-          d="M10.596.199l-.525.562c1.35 1.35 2.175 3.225 2.175 5.25s-.825 3.9-2.175 5.25l.525.525c1.5-1.462 2.4-3.525 2.4-5.775s-.9-4.312-2.4-5.812zM6.996 1.511l-2.25 2.25H.996v4.5h3.75l2.25 2.25z"
-        />
-      </svg>
-    </span>
-    <span
-      class="c10"
-      dir="rtl"
-    >
-      30:00
-    </span>
-  </div>
-</div>
-`;
-
 exports[`ProgramCard should render correctly for next 1`] = `
 .c9 {
   vertical-align: middle;
@@ -750,256 +500,6 @@ exports[`ProgramCard should render correctly for next 1`] = `
 </div>
 `;
 
-exports[`ProgramCard should render correctly for next in RTL 1`] = `
-.c9 {
-  vertical-align: middle;
-  margin: 0 0.25rem;
-  color: #222222;
-  fill: currentColor;
-  width: 0.8125rem;
-  height: 0.75rem;
-}
-
-.c2 {
-  position: static;
-  color: #222222;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-}
-
-.c2:before {
-  bottom: 0;
-  content: '';
-  left: 0;
-  overflow: hidden;
-  position: absolute;
-  right: 0;
-  top: 0;
-  white-space: nowrap;
-  z-index: 1;
-}
-
-.c2:hover,
-.c2:focus {
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-}
-
-.c2:visited {
-  color: #6E6E73;
-}
-
-.c0 {
-  padding-top: 0.5rem;
-  background-color: #FFFFFF;
-  position: relative;
-}
-
-.c1 {
-  padding: 0 0.5rem;
-}
-
-.c3 {
-  font-family: "BBC Nassim Arabic",Arial,Verdana,Geneva,Helvetica,sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 1rem;
-  line-height: 1.625rem;
-  color: #6E6E73;
-  margin: 0;
-}
-
-.c4 {
-  font-family: "BBC Nassim Arabic",Arial,Verdana,Geneva,Helvetica,sans-serif;
-  font-weight: 700;
-  font-style: normal;
-  font-size: 1rem;
-  line-height: 1.625rem;
-  text-transform: uppercase;
-  color: #11708C;
-}
-
-.c5 {
-  color: #3F3F42;
-  padding: 0.5rem 0;
-  font-family: "BBC Nassim Arabic",Arial,Verdana,Geneva,Helvetica,sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 1rem;
-  line-height: 1.625rem;
-}
-
-.c6 {
-  font-family: "BBC Nassim Arabic",Arial,Verdana,Geneva,Helvetica,sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 1.0625rem;
-  line-height: 1.5rem;
-  color: #6E6E73;
-  padding-bottom: 1rem;
-  margin: 0;
-}
-
-.c7 {
-  font-family: "BBC Nassim Arabic",Arial,Verdana,Geneva,Helvetica,sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 0.75rem;
-  line-height: 1rem;
-  padding: 0.5rem 0;
-  background-color: #FFFFFF;
-  color: #11708C;
-  padding-right: 0.5rem;
-}
-
-.c8 > svg {
-  color: #11708C;
-  fill: currentColor;
-  width: 1.0625rem;
-  height: 1rem;
-  margin: 0;
-}
-
-.c10 {
-  padding-right: 0.5rem;
-}
-
-@media (min-width:20rem) and (max-width:37.4375rem) {
-  .c3 {
-    font-size: 1.25rem;
-    line-height: 1.625rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c3 {
-    font-size: 1.25rem;
-    line-height: 1.625rem;
-  }
-}
-
-@media (min-width:20rem) and (max-width:37.4375rem) {
-  .c4 {
-    font-size: 1.25rem;
-    line-height: 1.625rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c4 {
-    font-size: 1.25rem;
-    line-height: 1.625rem;
-  }
-}
-
-@media (min-width:20rem) and (max-width:37.4375rem) {
-  .c5 {
-    font-size: 1.25rem;
-    line-height: 1.625rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c5 {
-    font-size: 1.25rem;
-    line-height: 1.625rem;
-  }
-}
-
-@media (min-width:20rem) and (max-width:37.4375rem) {
-  .c6 {
-    font-size: 1.125rem;
-    line-height: 1.5rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c6 {
-    font-size: 1.125rem;
-    line-height: 1.5rem;
-  }
-}
-
-@media (min-width:20rem) and (max-width:37.4375rem) {
-  .c7 {
-    font-size: 0.75rem;
-    line-height: 1rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c7 {
-    font-size: 0.75rem;
-    line-height: 1rem;
-  }
-}
-
-<div
-  class="c0"
->
-  <div
-    class="c1"
-    dir="rtl"
-  >
-    <a
-      class="c2"
-      href="/arabic/articles/c1er5mjnznzo"
-    >
-      <h3
-        class="c3"
-      >
-        <span
-          class="c4"
-        >
-          next 
-        </span>
-        لماذا يخجل البعض من اسم قريته في مصر؟
-      </h3>
-    </a>
-    <div
-      class="c5"
-    >
-      29/01/1990
-    </div>
-    <p
-      class="c6"
-    >
-      هناك وقائع عدة تتسم بالسخرية والجدل والتنمر، ضد أهل القرية الذين أصابهم الغضب والسخط مما دفعهم إلى تقديم طلب لتغيير اسم قريتهم.
-    </p>
-  </div>
-  <div
-    class="c7"
-    dir="rtl"
-  >
-    <span
-      class="c8"
-      dir="rtl"
-    >
-      <svg
-        class="c9"
-        focusable="false"
-        height="12px"
-        viewBox="0 0 13 12"
-        width="13px"
-      >
-        <path
-          d="M9.021 1.811l-.525.525c.938.938 1.5 2.25 1.5 3.675s-.563 2.738-1.5 3.675l.525.525c1.05-1.087 1.725-2.55 1.725-4.2s-.675-3.112-1.725-4.2z"
-        />
-        <path
-          d="M10.596.199l-.525.562c1.35 1.35 2.175 3.225 2.175 5.25s-.825 3.9-2.175 5.25l.525.525c1.5-1.462 2.4-3.525 2.4-5.775s-.9-4.312-2.4-5.812zM6.996 1.511l-2.25 2.25H.996v4.5h3.75l2.25 2.25z"
-        />
-      </svg>
-    </span>
-    <span
-      class="c10"
-      dir="rtl"
-    >
-      30:00
-    </span>
-  </div>
-</div>
-`;
-
 exports[`ProgramCard should render correctly for onDemand 1`] = `
 .c8 {
   vertical-align: middle;
@@ -1221,8 +721,8 @@ exports[`ProgramCard should render correctly for onDemand 1`] = `
 </div>
 `;
 
-exports[`ProgramCard should render correctly for onDemand in RTL 1`] = `
-.c8 {
+exports[`ProgramCard should render correctly in RTL 1`] = `
+.c9 {
   vertical-align: middle;
   margin: 0 0.25rem;
   color: #222222;
@@ -1281,6 +781,16 @@ exports[`ProgramCard should render correctly for onDemand in RTL 1`] = `
 }
 
 .c4 {
+  font-family: "BBC Nassim Arabic",Arial,Verdana,Geneva,Helvetica,sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1rem;
+  line-height: 1.625rem;
+  text-transform: uppercase;
+  color: #B80000;
+}
+
+.c5 {
   color: #3F3F42;
   padding: 0.5rem 0;
   font-family: "BBC Nassim Arabic",Arial,Verdana,Geneva,Helvetica,sans-serif;
@@ -1290,7 +800,7 @@ exports[`ProgramCard should render correctly for onDemand in RTL 1`] = `
   line-height: 1.625rem;
 }
 
-.c5 {
+.c6 {
   font-family: "BBC Nassim Arabic",Arial,Verdana,Geneva,Helvetica,sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -1301,19 +811,19 @@ exports[`ProgramCard should render correctly for onDemand in RTL 1`] = `
   margin: 0;
 }
 
-.c6 {
+.c7 {
   font-family: "BBC Nassim Arabic",Arial,Verdana,Geneva,Helvetica,sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: 0.75rem;
   line-height: 1rem;
   padding: 0.5rem 0;
-  background-color: #222222;
+  background-color: #B80000;
   color: #FFFFFF;
   padding-right: 0.5rem;
 }
 
-.c7 > svg {
+.c8 > svg {
   color: #FFFFFF;
   fill: currentColor;
   width: 1.0625rem;
@@ -1321,7 +831,7 @@ exports[`ProgramCard should render correctly for onDemand in RTL 1`] = `
   margin: 0;
 }
 
-.c9 {
+.c10 {
   padding-right: 0.5rem;
 }
 
@@ -1355,27 +865,41 @@ exports[`ProgramCard should render correctly for onDemand in RTL 1`] = `
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
   .c5 {
+    font-size: 1.25rem;
+    line-height: 1.625rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .c5 {
+    font-size: 1.25rem;
+    line-height: 1.625rem;
+  }
+}
+
+@media (min-width:20rem) and (max-width:37.4375rem) {
+  .c6 {
     font-size: 1.125rem;
     line-height: 1.5rem;
   }
 }
 
 @media (min-width:37.5rem) {
-  .c5 {
+  .c6 {
     font-size: 1.125rem;
     line-height: 1.5rem;
   }
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
-  .c6 {
+  .c7 {
     font-size: 0.75rem;
     line-height: 1rem;
   }
 }
 
 @media (min-width:37.5rem) {
-  .c6 {
+  .c7 {
     font-size: 0.75rem;
     line-height: 1rem;
   }
@@ -1395,30 +919,35 @@ exports[`ProgramCard should render correctly for onDemand in RTL 1`] = `
       <h3
         class="c3"
       >
+        <span
+          class="c4"
+        >
+          live 
+        </span>
         لماذا يخجل البعض من اسم قريته في مصر؟
       </h3>
     </a>
     <div
-      class="c4"
+      class="c5"
     >
       29/01/1990
     </div>
     <p
-      class="c5"
+      class="c6"
     >
       هناك وقائع عدة تتسم بالسخرية والجدل والتنمر، ضد أهل القرية الذين أصابهم الغضب والسخط مما دفعهم إلى تقديم طلب لتغيير اسم قريتهم.
     </p>
   </div>
   <div
-    class="c6"
+    class="c7"
     dir="rtl"
   >
     <span
-      class="c7"
+      class="c8"
       dir="rtl"
     >
       <svg
-        class="c8"
+        class="c9"
         focusable="false"
         height="12px"
         viewBox="0 0 13 12"
@@ -1433,7 +962,7 @@ exports[`ProgramCard should render correctly for onDemand in RTL 1`] = `
       </svg>
     </span>
     <span
-      class="c9"
+      class="c10"
       dir="rtl"
     >
       30:00

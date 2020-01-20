@@ -127,11 +127,11 @@ const ProgramCard = ({
   episodeTitle,
   duration,
   state,
-  ctaLink,
+  link,
 }) => (
   <CardWrapper>
     <TextWrapper dir={dir}>
-      <Link href={ctaLink}>
+      <Link href={link}>
         <HeadingWrapper
           service={service}
           script={script}
@@ -179,7 +179,7 @@ ProgramCard.propTypes = {
   episodeTitle: string.isRequired,
   duration: string.isRequired,
   state: string.isRequired,
-  ctaLink: string.isRequired,
+  link: string.isRequired,
 };
 
 ProgramCard.defaultProps = {

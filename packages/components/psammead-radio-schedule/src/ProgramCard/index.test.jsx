@@ -17,21 +17,23 @@ const renderProgramCard = ({ state, service = 'news' }) => {
       episodeTitle="29/01/1990"
       duration="30:00"
       state={state}
-      ctaLink={articlePath}
+      link={articlePath}
     />
   );
 };
 
+const states = Object.keys(programStates);
+
 describe('ProgramCard', () => {
-  Object.keys(programStates).forEach(state => {
+  states.forEach(state => {
     shouldMatchSnapshot(
       `should render correctly for ${state}`,
       renderProgramCard({ state }),
     );
-
-    shouldMatchSnapshot(
-      `should render correctly for ${state} in RTL`,
-      renderProgramCard({ state, service: 'arabic' }),
-    );
   });
+
+  shouldMatchSnapshot(
+    `should render correctly in RTL`,
+    renderProgramCard({ state: states[0], service: 'arabic' }),
+  );
 });
