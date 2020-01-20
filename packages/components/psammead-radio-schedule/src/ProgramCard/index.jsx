@@ -22,7 +22,7 @@ import {
 } from '@bbc/gel-foundations/typography';
 import { Link } from '@bbc/psammead-story-promo';
 import { oneOf, shape, string } from 'prop-types';
-import { scriptPropType } from '@bbc/gel-foundations/esm/prop-types';
+import { scriptPropType } from '@bbc/gel-foundations/prop-types';
 
 const CardWrapper = styled.div`
   padding-top: ${GEL_SPACING};
@@ -31,10 +31,7 @@ const CardWrapper = styled.div`
 `;
 
 const TextWrapper = styled.div`
-  ${({ dir }) =>
-    dir === 'ltr'
-      ? `padding-left: ${GEL_SPACING};`
-      : `padding-right: ${GEL_SPACING};`}
+  padding: 0 ${GEL_SPACING};
 `;
 
 const HeadingWrapper = styled.h3`
@@ -63,6 +60,7 @@ const SummaryWrapper = styled.p`
   ${({ script }) => script && getLongPrimer(script)};
   color: ${C_METAL};
   padding-bottom: ${GEL_SPACING_DBL};
+  margin: 0; /* Reset */
 `;
 
 const ButtonWrapper = styled.div`
