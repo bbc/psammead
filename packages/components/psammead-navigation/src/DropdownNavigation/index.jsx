@@ -223,13 +223,13 @@ export const CanonicalMenuButton = ({
   script,
 }) => (
   <MenuButton
-    aria-label={announcedText}
     onClick={onClick}
     aria-expanded={isOpen ? 'true' : 'false'}
     dir={dir}
     script={script}
   >
     {isOpen ? navigationIcons.cross : navigationIcons.hamburger}
+    <VisuallyHiddenText>{announcedText}</VisuallyHiddenText>
   </MenuButton>
 );
 
@@ -271,7 +271,6 @@ export const AmpMenuButton = ({ announcedText, onToggle, dir, script }) => (
       />
     </amp-state>
     <MenuButton
-      aria-label={announcedText}
       aria-expanded="false"
       data-amp-bind-aria-expanded='menuState.expanded ? "true" : "false"'
       on={`tap:${expandedHandler},${onToggle}`}
@@ -285,6 +284,7 @@ export const AmpMenuButton = ({ announcedText, onToggle, dir, script }) => (
         hidden: true,
         'data-amp-bind-hidden': '!menuState.expanded',
       })}
+      <VisuallyHiddenText>{announcedText}</VisuallyHiddenText>
     </MenuButton>
   </>
 );

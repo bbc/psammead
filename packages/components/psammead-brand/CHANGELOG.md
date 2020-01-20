@@ -3,6 +3,8 @@
 <!-- prettier-ignore -->
 | Version | Description |
 | ------- | ----------- |
+| 5.1.4 | [PR#2973](https://github.com/bbc/psammead/pull/2973) Talos - Bump Dependencies - @bbc/psammead-styles |
+| 5.1.3 | [PR#2889](https://github.com/bbc/psammead/pull/2889) Shrink brand svg before wrapping the script link |
 | 5.1.2 | [PR#2928](https://github.com/bbc/psammead/pull/2928) Talos - Bump Dependencies - @bbc/psammead-script-link |
 | 5.1.1 | [PR#2920](https://github.com/bbc/psammead/pull/2920) Talos - Bump Dependencies - @bbc/gel-foundations, @bbc/psammead-script-link |
 | 5.1.0 | [PR#2917](https://github.com/bbc/psammead/pull/2917) Remove alpha tag from Brand component |
