@@ -1,6 +1,6 @@
 {
   "name": "@bbc/psammead-copyright",
-  "version": "1.2.19",
+  "version": "1.2.20",
   "main": "dist/index.js",
   "module": "esm/index.js",
   "sideEffects": false,
@@ -19,7 +19,7 @@
   },
   "homepage": "https://github.com/bbc/psammead/blob/latest/packages/components/psammead-copyright/README.md",
   "dependencies": {
-    "@bbc/gel-foundations": "^3.4.2",
+    "@bbc/gel-foundations": "^3.4.3",
     "@bbc/psammead-styles": "^4.1.2"
   },
   "peerDependencies": {
