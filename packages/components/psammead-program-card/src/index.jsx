@@ -1,20 +1,19 @@
 import React from 'react';
 import styled from 'styled-components';
 import { mediaIcons } from '@bbc/psammead-assets/svgs';
-import Paragraph from '@bbc/psammead-paragraph';
 import { GEL_SPACING, GEL_SPACING_DBL } from '@bbc/gel-foundations/spacings';
 import {
   C_EBON,
+  C_KINGFISHER,
   C_METAL,
+  C_POSTBOX,
   C_SHADOW,
   C_WHITE,
-  C_POSTBOX,
-  C_KINGFISHER,
 } from '@bbc/psammead-styles/colours';
 import {
+  getSansBold,
   getSansRegular,
   getSerifRegular,
-  getSansBold,
 } from '@bbc/psammead-styles/font-styles';
 import {
   getLongPrimer,
@@ -22,27 +21,8 @@ import {
   getPica,
 } from '@bbc/gel-foundations/typography';
 import { Link } from '@bbc/psammead-story-promo';
-
-const programStateColors = {
-  live: {
-    backgroundColor: C_POSTBOX,
-    headerLabelColor: C_POSTBOX,
-    headerTextColor: C_EBON,
-    durationColor: C_WHITE,
-  },
-  next: {
-    backgroundColor: C_WHITE,
-    headerLabelColor: C_KINGFISHER,
-    headerTextColor: C_METAL,
-    durationColor: C_KINGFISHER,
-  },
-  onDemand: {
-    backgroundColor: C_EBON,
-    headerLabelColor: '',
-    headerTextColor: C_EBON,
-    durationColor: C_WHITE,
-  },
-};
+import { oneOf, shape, string } from 'prop-types';
+import { scriptPropType } from '@bbc/gel-foundations/esm/prop-types';
 
 const CardWrapper = styled.div`
   padding-top: ${GEL_SPACING};
@@ -78,7 +58,7 @@ const TitleWrapper = styled.div`
   ${({ script }) => script && getPica(script)};
 `;
 
-const SummaryWrapper = styled(Paragraph)`
+const SummaryWrapper = styled.p`
   ${({ service }) => service && getSansRegular(service)};
   ${({ script }) => script && getLongPrimer(script)};
   color: ${C_METAL};
@@ -114,13 +94,39 @@ const DurationWrapper = styled.span`
       : `padding-right: ${GEL_SPACING};`}
 `;
 
+export const programStates = {
+  live: 'live',
+  next: 'next',
+  onDemand: 'onDemand',
+};
+
+const programStateConfig = {
+  live: {
+    backgroundColor: C_POSTBOX,
+    headerLabelColor: C_POSTBOX,
+    headerTextColor: C_EBON,
+    durationColor: C_WHITE,
+  },
+  next: {
+    backgroundColor: C_WHITE,
+    headerLabelColor: C_KINGFISHER,
+    headerTextColor: C_METAL,
+    durationColor: C_KINGFISHER,
+  },
+  onDemand: {
+    backgroundColor: C_EBON,
+    headerTextColor: C_EBON,
+    durationColor: C_WHITE,
+  },
+};
+
 const ProgramCard = ({
   dir,
   service,
   script,
-  heading,
+  brandTitle,
   summary,
-  date,
+  episodeTitle,
   duration,
   state,
   ctaLink,
@@ -131,22 +137,22 @@ const ProgramCard = ({
         <HeadingWrapper
           service={service}
           script={script}
-          {...programStateColors[state]}
+          {...programStateConfig[state]}
         >
           {state !== 'onDemand' && (
             <LabelWrapper
               service={service}
               script={script}
-              {...programStateColors[state]}
+              {...programStateConfig[state]}
             >
               {`${state} `}
             </LabelWrapper>
           )}
-          {heading}
+          {brandTitle}
         </HeadingWrapper>
       </Link>
       <TitleWrapper service={service} script={script}>
-        {date}
+        {episodeTitle}
       </TitleWrapper>
       <SummaryWrapper service={service} script={script}>
         {summary}
@@ -156,14 +162,30 @@ const ProgramCard = ({
       dir={dir}
       service={service}
       script={script}
-      {...programStateColors[state]}
+      {...programStateConfig[state]}
     >
-      <IconWrapper dir={dir} {...programStateColors[state]}>
+      <IconWrapper dir={dir} {...programStateConfig[state]}>
         {mediaIcons.audio}
       </IconWrapper>
       <DurationWrapper dir={dir}>{duration}</DurationWrapper>
     </ButtonWrapper>
   </CardWrapper>
 );
+
+ProgramCard.propTypes = {
+  dir: oneOf(['rtl', 'ltr']),
+  service: string.isRequired,
+  script: shape(scriptPropType).isRequired,
+  brandTitle: string.isRequired,
+  summary: string.isRequired,
+  episodeTitle: string.isRequired,
+  duration: string.isRequired,
+  state: string.isRequired,
+  ctaLink: string.isRequired,
+};
+
+ProgramCard.defaultProps = {
+  dir: 'ltr',
+};
 
 export default ProgramCard;
