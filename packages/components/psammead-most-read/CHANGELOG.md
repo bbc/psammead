@@ -3,7 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
-| 0.5.2-alpha.1 | [PR#2939](https://github.com/bbc/psammead/pull/2939) Import psammead-section-label, and remove titles |
+| 0.5.2-alpha.1 | [PR#2952](https://github.com/bbc/psammead/pull/2952) Import psammead-section-label, and remove titles |
 | 0.5.1-alpha.3 | [PR#2939](https://github.com/bbc/psammead/pull/2939) Fix storybook example for service with variants |
 | 0.5.1-alpha.2 | [PR#2933](https://github.com/bbc/psammead/pull/2933) Add most read storybook example with timestamp |
 | 0.5.1-alpha.1 | [PR#2895](https://github.com/bbc/psammead/pull/2895) Export MostReadSection separetly, add faux box for MostReadRank |
