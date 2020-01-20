@@ -31,5 +31,8 @@
   },
   "devDependencies": {
     "react-helmet": "^5.2.1"
+  },
+  "peerDependencies": {
+    "styled-components": "^5.0.0"
   }
 }
