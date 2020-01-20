@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 0.5.1-alpha.5 | [PR#2977](https://github.com/bbc/psammead/pull/2977) Talos - Bump Dependencies - @bbc/psammead-grid |
 | 0.5.1-alpha.4 | [PR#2973](https://github.com/bbc/psammead/pull/2973) Talos - Bump Dependencies - @bbc/psammead-styles |
 | 0.5.1-alpha.3 | [PR#2939](https://github.com/bbc/psammead/pull/2939) Fix storybook example for service with variants |
 | 0.5.1-alpha.2 | [PR#2933](https://github.com/bbc/psammead/pull/2933) Add most read storybook example with timestamp |
