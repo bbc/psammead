@@ -16,7 +16,7 @@ const mostReadItemGridProps = {
   columns: {
     group0: 6,
     group1: 6,
-    group2: 3,
+    group2: 6,
     group3: 3,
     group4: 4,
     group5: 4,
