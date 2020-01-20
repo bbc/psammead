@@ -4,6 +4,10 @@
 
 The `RadioSchedule` component does...
 
+## Exports
+
+`/startTime` - Adds a timestamp with a starting time of the program.
+
 ## Installation
 
 ```jsx
@@ -11,6 +15,12 @@ npm install @bbc/psammead-radio-schedule --save
 ```
 
 ## Props
+
+| Argument  | Type | Required | Default | Example |
+| --------- | ---- | -------- | ------- | ------- |
+| No props. |      |          |         |         |
+
+### StartTime
 
 | Argument  | Type | Required | Default | Example |
 | --------- | ---- | -------- | ------- | ------- |
