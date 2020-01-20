@@ -337,6 +337,7 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
   role="list"
 >
   <li
+    aria-labelledby="১ ভিসা ফুরিয়ে যাওয়ায় ক্রিকেটার সাইফের জরিমানা"
     class="c2 c3"
     dir="ltr"
     role="listitem"
@@ -368,6 +369,7 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
     </div>
   </li>
   <li
+    aria-labelledby="২ ভিসা ফুরিয়ে যাওয়ায় ক্রিকেটার সাইফের জরিমানা"
     class="c2 c3"
     dir="ltr"
     role="listitem"
@@ -399,6 +401,7 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
     </div>
   </li>
   <li
+    aria-labelledby="৩ ভিসা ফুরিয়ে যাওয়ায় ক্রিকেটার সাইফের জরিমানা"
     class="c2 c3"
     dir="ltr"
     role="listitem"
@@ -430,6 +433,7 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
     </div>
   </li>
   <li
+    aria-labelledby="৪ ভিসা ফুরিয়ে যাওয়ায় ক্রিকেটার সাইফের জরিমানা"
     class="c2 c3"
     dir="ltr"
     role="listitem"
@@ -461,6 +465,7 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
     </div>
   </li>
   <li
+    aria-labelledby="৫ ভিসা ফুরিয়ে যাওয়ায় ক্রিকেটার সাইফের জরিমানা"
     class="c2 c3"
     dir="ltr"
     role="listitem"
@@ -492,6 +497,7 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
     </div>
   </li>
   <li
+    aria-labelledby="৬ ভিসা ফুরিয়ে যাওয়ায় ক্রিকেটার সাইফের জরিমানা"
     class="c2 c3"
     dir="ltr"
     role="listitem"
@@ -523,6 +529,7 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
     </div>
   </li>
   <li
+    aria-labelledby="৭ ভিসা ফুরিয়ে যাওয়ায় ক্রিকেটার সাইফের জরিমানা"
     class="c2 c3"
     dir="ltr"
     role="listitem"
@@ -554,6 +561,7 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
     </div>
   </li>
   <li
+    aria-labelledby="৮ ভিসা ফুরিয়ে যাওয়ায় ক্রিকেটার সাইফের জরিমানা"
     class="c2 c3"
     dir="ltr"
     role="listitem"
@@ -585,6 +593,7 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
     </div>
   </li>
   <li
+    aria-labelledby="৯ ভিসা ফুরিয়ে যাওয়ায় ক্রিকেটার সাইফের জরিমানা"
     class="c2 c3"
     dir="ltr"
     role="listitem"
@@ -616,6 +625,7 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
     </div>
   </li>
   <li
+    aria-labelledby="১০ ভিসা ফুরিয়ে যাওয়ায় ক্রিকেটার সাইফের জরিমানা"
     class="c2 c3"
     dir="ltr"
     role="listitem"
@@ -986,6 +996,7 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
   role="list"
 >
   <li
+    aria-labelledby="၁ အောက်စဖို့ဒ် ဆရာတော် ပါမောက္ခ ဒေါက်တာအရှင်ဓမ္မသာမိ"
     class="c2 c3"
     dir="ltr"
     role="listitem"
@@ -1017,6 +1028,7 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
     </div>
   </li>
   <li
+    aria-labelledby="၂ အောက်စဖို့ဒ် ဆရာတော် ပါမောက္ခ ဒေါက်တာအရှင်ဓမ္မသာမိ"
     class="c2 c3"
     dir="ltr"
     role="listitem"
@@ -1048,6 +1060,7 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
     </div>
   </li>
   <li
+    aria-labelledby="၃ အောက်စဖို့ဒ် ဆရာတော် ပါမောက္ခ ဒေါက်တာအရှင်ဓမ္မသာမိ"
     class="c2 c3"
     dir="ltr"
     role="listitem"
@@ -1079,6 +1092,7 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
     </div>
   </li>
   <li
+    aria-labelledby="၄ အောက်စဖို့ဒ် ဆရာတော် ပါမောက္ခ ဒေါက်တာအရှင်ဓမ္မသာမိ"
     class="c2 c3"
     dir="ltr"
     role="listitem"
@@ -1110,6 +1124,7 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
     </div>
   </li>
   <li
+    aria-labelledby="၅ အောက်စဖို့ဒ် ဆရာတော် ပါမောက္ခ ဒေါက်တာအရှင်ဓမ္မသာမိ"
     class="c2 c3"
     dir="ltr"
     role="listitem"
@@ -1141,6 +1156,7 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
     </div>
   </li>
   <li
+    aria-labelledby="၆ အောက်စဖို့ဒ် ဆရာတော် ပါမောက္ခ ဒေါက်တာအရှင်ဓမ္မသာမိ"
     class="c2 c3"
     dir="ltr"
     role="listitem"
@@ -1172,6 +1188,7 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
     </div>
   </li>
   <li
+    aria-labelledby="၇ အောက်စဖို့ဒ် ဆရာတော် ပါမောက္ခ ဒေါက်တာအရှင်ဓမ္မသာမိ"
     class="c2 c3"
     dir="ltr"
     role="listitem"
@@ -1203,6 +1220,7 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
     </div>
   </li>
   <li
+    aria-labelledby="၈ အောက်စဖို့ဒ် ဆရာတော် ပါမောက္ခ ဒေါက်တာအရှင်ဓမ္မသာမိ"
     class="c2 c3"
     dir="ltr"
     role="listitem"
@@ -1234,6 +1252,7 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
     </div>
   </li>
   <li
+    aria-labelledby="၉ အောက်စဖို့ဒ် ဆရာတော် ပါမောက္ခ ဒေါက်တာအရှင်ဓမ္မသာမိ"
     class="c2 c3"
     dir="ltr"
     role="listitem"
@@ -1265,6 +1284,7 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
     </div>
   </li>
   <li
+    aria-labelledby="၁၀ အောက်စဖို့ဒ် ဆရာတော် ပါမောက္ခ ဒေါက်တာအရှင်ဓမ္မသာမိ"
     class="c2 c3"
     dir="ltr"
     role="listitem"
@@ -1635,6 +1655,7 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
   role="list"
 >
   <li
+    aria-labelledby="1 Could a computer ever create better art than a human?"
     class="c2 c3"
     dir="ltr"
     role="listitem"
@@ -1666,6 +1687,7 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
     </div>
   </li>
   <li
+    aria-labelledby="2 Could a computer ever create better art than a human?"
     class="c2 c3"
     dir="ltr"
     role="listitem"
@@ -1697,6 +1719,7 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
     </div>
   </li>
   <li
+    aria-labelledby="3 Could a computer ever create better art than a human?"
     class="c2 c3"
     dir="ltr"
     role="listitem"
@@ -1728,6 +1751,7 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
     </div>
   </li>
   <li
+    aria-labelledby="4 Could a computer ever create better art than a human?"
     class="c2 c3"
     dir="ltr"
     role="listitem"
@@ -1759,6 +1783,7 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
     </div>
   </li>
   <li
+    aria-labelledby="5 Could a computer ever create better art than a human?"
     class="c2 c3"
     dir="ltr"
     role="listitem"
@@ -1790,6 +1815,7 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
     </div>
   </li>
   <li
+    aria-labelledby="6 Could a computer ever create better art than a human?"
     class="c2 c3"
     dir="ltr"
     role="listitem"
@@ -1821,6 +1847,7 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
     </div>
   </li>
   <li
+    aria-labelledby="7 Could a computer ever create better art than a human?"
     class="c2 c3"
     dir="ltr"
     role="listitem"
@@ -1852,6 +1879,7 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
     </div>
   </li>
   <li
+    aria-labelledby="8 Could a computer ever create better art than a human?"
     class="c2 c3"
     dir="ltr"
     role="listitem"
@@ -1883,6 +1911,7 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
     </div>
   </li>
   <li
+    aria-labelledby="9 Could a computer ever create better art than a human?"
     class="c2 c3"
     dir="ltr"
     role="listitem"
@@ -1914,6 +1943,7 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
     </div>
   </li>
   <li
+    aria-labelledby="10 Could a computer ever create better art than a human?"
     class="c2 c3"
     dir="ltr"
     role="listitem"
@@ -2284,6 +2314,7 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
   role="list"
 >
   <li
+    aria-labelledby="۱ در این جشنواره برای نخستین بار از کارگران افغانستان در شهر تهران تقدیر شد"
     class="c2 c3"
     dir="rtl"
     role="listitem"
@@ -2315,6 +2346,7 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
     </div>
   </li>
   <li
+    aria-labelledby="۲ در این جشنواره برای نخستین بار از کارگران افغانستان در شهر تهران تقدیر شد"
     class="c2 c3"
     dir="rtl"
     role="listitem"
@@ -2346,6 +2378,7 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
     </div>
   </li>
   <li
+    aria-labelledby="۳ در این جشنواره برای نخستین بار از کارگران افغانستان در شهر تهران تقدیر شد"
     class="c2 c3"
     dir="rtl"
     role="listitem"
@@ -2377,6 +2410,7 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
     </div>
   </li>
   <li
+    aria-labelledby="۴ در این جشنواره برای نخستین بار از کارگران افغانستان در شهر تهران تقدیر شد"
     class="c2 c3"
     dir="rtl"
     role="listitem"
@@ -2408,6 +2442,7 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
     </div>
   </li>
   <li
+    aria-labelledby="۵ در این جشنواره برای نخستین بار از کارگران افغانستان در شهر تهران تقدیر شد"
     class="c2 c3"
     dir="rtl"
     role="listitem"
@@ -2439,6 +2474,7 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
     </div>
   </li>
   <li
+    aria-labelledby="۶ در این جشنواره برای نخستین بار از کارگران افغانستان در شهر تهران تقدیر شد"
     class="c2 c3"
     dir="rtl"
     role="listitem"
@@ -2470,6 +2506,7 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
     </div>
   </li>
   <li
+    aria-labelledby="۷ در این جشنواره برای نخستین بار از کارگران افغانستان در شهر تهران تقدیر شد"
     class="c2 c3"
     dir="rtl"
     role="listitem"
@@ -2501,6 +2538,7 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
     </div>
   </li>
   <li
+    aria-labelledby="۸ در این جشنواره برای نخستین بار از کارگران افغانستان در شهر تهران تقدیر شد"
     class="c2 c3"
     dir="rtl"
     role="listitem"
@@ -2532,6 +2570,7 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
     </div>
   </li>
   <li
+    aria-labelledby="۹ در این جشنواره برای نخستین بار از کارگران افغانستان در شهر تهران تقدیر شد"
     class="c2 c3"
     dir="rtl"
     role="listitem"
@@ -2563,6 +2602,7 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
     </div>
   </li>
   <li
+    aria-labelledby="۱۰ در این جشنواره برای نخستین بار از کارگران افغانستان در شهر تهران تقدیر شد"
     class="c2 c3"
     dir="rtl"
     role="listitem"

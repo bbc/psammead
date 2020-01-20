@@ -56,7 +56,13 @@ export const getItemWrapperArray = ({
   const item = getItem({ service });
   for (let i = 1; i <= numberOfItems; i += 1) {
     itemWrapperArray.push(
-      <MostReadItemWrapper dir={dir} key={i}>
+      <MostReadItemWrapper
+        dir={dir}
+        key={i}
+        listIndex={i}
+        title={item.title}
+        service={service}
+      >
         <MostReadRank
           service={service}
           script={script}

@@ -3,13 +3,6 @@ import { shape, string, oneOf, number } from 'prop-types';
 import styled from 'styled-components';
 import { getFoolscap } from '@bbc/gel-foundations/typography';
 import {
-  Burmese,
-  Bengali,
-  EasternArabic,
-  Nepali,
-  WesternArabic,
-} from '@bbc/psammead-locales/numerals';
-import {
   GEL_GROUP_5_SCREEN_WIDTH_MIN,
   GEL_GROUP_4_SCREEN_WIDTH_MAX,
   GEL_GROUP_3_SCREEN_WIDTH_MIN,
@@ -23,6 +16,7 @@ import { C_POSTBOX } from '@bbc/psammead-styles/colours';
 import { scriptPropType } from '@bbc/gel-foundations/prop-types';
 import { grid } from '@bbc/psammead-styles/detection';
 import { getSerifLight } from '@bbc/psammead-styles/font-styles';
+import serviceNumerals from '../testHelpers/serviceNumerals';
 
 // For additional spacing for numerals in the right column because of '10' being double digits
 const isOnSecondColumn = ({ listIndex, numberOfItems }, supportsGrid) =>
@@ -127,21 +121,6 @@ const StyledSpan = styled.span`
   margin: 0; /* Reset */
   padding: 0;
 `;
-
-const serviceNumerals = service => {
-  const servicesNonWesternNumerals = {
-    arabic: EasternArabic,
-    bengali: Bengali,
-    burmese: Burmese,
-    nepali: Nepali,
-    pashto: EasternArabic,
-    persian: EasternArabic,
-    urdu: EasternArabic,
-  };
-  return servicesNonWesternNumerals[service]
-    ? servicesNonWesternNumerals[service]
-    : WesternArabic;
-};
 
 const MostReadRank = ({ service, script, listIndex, numberOfItems, dir }) => {
   const numerals = serviceNumerals(service);

@@ -1,5 +1,5 @@
 import React from 'react';
-import { shape, string, oneOf, node } from 'prop-types';
+import { shape, string, oneOf, node, number } from 'prop-types';
 import styled from 'styled-components';
 import { getDoublePica } from '@bbc/gel-foundations/typography';
 import { C_EBON } from '@bbc/psammead-styles/colours';
@@ -15,6 +15,7 @@ import {
   mostReadListGridProps,
   mostReadItemGridProps,
 } from '../testHelpers/gridProps';
+import serviceNumerals from '../testHelpers/serviceNumerals';
 
 // This is to handle the padding between the rank and the link for both ltr and rtl stories.
 const paddingStart = ({ dir }) => `padding-${dir === 'ltr' ? 'left' : 'right'}`;
@@ -95,26 +96,42 @@ const StyledDiv = styled.div`
   padding: 0;
 `;
 
-const StyledGrid = styled(Grid).attrs({
+const StyledGrid = styled(Grid).attrs(props => ({
   role: 'listitem',
-})`
+  'aria-labelledby': props.labelId,
+}))`
   position: relative;
 `;
 
-export const MostReadItemWrapper = ({ dir, children }) => (
-  <StyledGrid
-    {...mostReadItemGridProps}
-    parentColumns={mostReadListGridProps.columns} // parentColumns is required here because on IE, this component would be rendered before it's parent therefore not receiving the parent's grid columns values so we have to explicitly pass it as a prop here so it works on IE
-    dir={dir}
-    forwardedAs="li"
-  >
-    <StyledDiv>{children}</StyledDiv>
-  </StyledGrid>
-);
+export const MostReadItemWrapper = ({
+  dir,
+  children,
+  listIndex,
+  title,
+  service,
+}) => {
+  const numerals = serviceNumerals(service);
+  const rank = numerals[listIndex];
+  const labelId = `${rank} ${title}`;
+  return (
+    <StyledGrid
+      {...mostReadItemGridProps}
+      parentColumns={mostReadListGridProps.columns} // parentColumns is required here because on IE, this component would be rendered before it's parent therefore not receiving the parent's grid columns values so we have to explicitly pass it as a prop here so it works on IE
+      dir={dir}
+      forwardedAs="li"
+      labelId={labelId}
+    >
+      <StyledDiv>{children}</StyledDiv>
+    </StyledGrid>
+  );
+};
 
 MostReadItemWrapper.propTypes = {
   dir: oneOf(['rtl', 'ltr']),
   children: node.isRequired,
+  service: string.isRequired,
+  listIndex: number.isRequired,
+  title: string.isRequired,
 };
 
 MostReadItemWrapper.defaultProps = {

@@ -58,7 +58,13 @@ const MostRead = ({ items, script, service, header, dir, labelId }) => (
   >
     <MostReadList numberOfItems={items.length} dir={dir}>
       {items.map((item, i) => (
-        <MostReadItemWrapper dir={dir} key={item.id}>
+        <MostReadItemWrapper
+          dir={dir}
+          key={item.id}
+          listIndex={i + 1}
+          title={item.title}
+          service={service}
+        >
           <MostReadRank
             service={service}
             script={script}
