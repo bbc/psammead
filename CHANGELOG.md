@@ -3,7 +3,10 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
-| 2.0.54 | [PR#](https://github.com/bbc/psammead/pull/) Bumping babel/cli and removing configFile option from build script |
+| 2.0.57 | [PR#2980](https://github.com/bbc/psammead/pull/2980) Bumping babel/cli and removing configFile option from build script |
+| 2.0.56 | [PR#2984](https://github.com/bbc/psammead/pull/2984) Talos - Bump Dependencies - @bbc/psammead-brand |
+| 2.0.55 | [PR#2982](https://github.com/bbc/psammead/pull/2982) Talos - Bump Dependencies - @bbc/psammead-brand, @bbc/psammead-caption, @bbc/psammead-copyright, @bbc/psammead-grid, @bbc/psammead-media-indicator, @bbc/psammead-paragraph, @bbc/psammead-storybook-helpers, @bbc/psammead-timestamp |
+| 2.0.54 | [PR#2978](https://github.com/bbc/psammead/pull/2978) Talos - Bump Dependencies - @bbc/gel-foundations, @bbc/psammead-brand, @bbc/psammead-caption, @bbc/psammead-copyright, @bbc/psammead-grid, @bbc/psammead-image-placeholder, @bbc/psammead-inline-link, @bbc/psammead-media-indicator, @bbc/psammead-paragraph, @bbc/psammead-timestamp |
 | 2.0.53 | [PR#2973](https://github.com/bbc/psammead/pull/2973) Talos - Bump Dependencies - @bbc/psammead-brand, @bbc/psammead-styles |
 | 2.0.52 | [PR#2955](https://github.com/bbc/psammead/pull/2955) Talos - Bump Dependencies - @bbc/psammead-storybook-helpers |
 | 2.0.51 | [PR#2954](https://github.com/bbc/psammead/pull/2954) Fix storybook build step |
