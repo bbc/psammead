@@ -1,8 +1,7 @@
 import { shouldMatchSnapshot } from '@bbc/psammead-test-helpers';
-import { programStates } from './index';
 import { renderProgramCard } from '../testHelpers/helper';
 
-const stateTypes = Object.keys(programStates);
+const stateTypes = ['live', 'next', 'onDemand'];
 
 describe('ProgramCard', () => {
   stateTypes.forEach(type => {

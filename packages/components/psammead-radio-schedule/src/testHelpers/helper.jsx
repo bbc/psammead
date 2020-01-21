@@ -4,7 +4,11 @@ import { arabic, latin } from '@bbc/gel-foundations/scripts';
 import React from 'react';
 import ProgramCard from '../ProgramCard';
 
-export const renderProgramCard = ({ state, service = 'news' }) => {
+export const renderProgramCard = ({
+  state,
+  service = 'news',
+  episodeTitle = '29/01/1990',
+}) => {
   const { text, articlePath, longText, dir } = TEXT_VARIANTS[service];
   return (
     <ProgramCard
@@ -13,7 +17,7 @@ export const renderProgramCard = ({ state, service = 'news' }) => {
       dir={dir}
       brandTitle={text}
       summary={longText}
-      episodeTitle="29/01/1990"
+      episodeTitle={episodeTitle}
       duration="30:00"
       state={state}
       link={articlePath}

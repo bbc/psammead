@@ -88,12 +88,6 @@ const DurationWrapper = styled.span`
       : `padding-right: ${GEL_SPACING};`}
 `;
 
-export const programStates = {
-  live: 'live',
-  next: 'next',
-  onDemand: 'onDemand',
-};
-
 const programStateConfig = {
   live: {
     backgroundColor: C_POSTBOX,
@@ -174,7 +168,7 @@ const ProgramCard = ({
 );
 
 const statePropTypes = shape({
-  type: string.isRequired,
+  type: oneOf(['live', 'next', 'onDemand']).isRequired,
   translation: string.isRequired,
 });
 
