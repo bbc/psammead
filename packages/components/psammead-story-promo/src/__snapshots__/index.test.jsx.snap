@@ -430,6 +430,7 @@ exports[`StoryPromo - Top Story should render story promo without an image 1`] =
         class="c3"
       >
         <svg
+          aria-hidden="true"
           class="c4"
           focusable="false"
           height="12px"
@@ -711,6 +712,7 @@ exports[`StoryPromo - Top Story should render with Media Indicator correctly 1`]
             class="c5"
           >
             <svg
+              aria-hidden="true"
               class="c6"
               focusable="false"
               height="12px"
@@ -1075,6 +1077,7 @@ exports[`StoryPromo - Top Story should render with multiple Index Alsos correctl
                 class="c13"
               >
                 <svg
+                  aria-hidden="true"
                   class="c14"
                   focusable="false"
                   height="12px"
@@ -1433,6 +1436,7 @@ exports[`StoryPromo - Top Story should render with one Index Also correctly 1`] 
               class="c12"
             >
               <svg
+                aria-hidden="true"
                 class="c13"
                 focusable="false"
                 height="12px"
@@ -2170,6 +2174,7 @@ exports[`StoryPromo with Media Indicator should render correctly 1`] = `
             class="c5"
           >
             <svg
+              aria-hidden="true"
               class="c6"
               focusable="false"
               height="12px"
