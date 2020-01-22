@@ -41,7 +41,7 @@ const HeadingWrapper = styled.h3`
   margin: 0; /* Reset */
 `;
 
-const LabelWrapper = styled.span`
+const LabelWrapper = styled.span.attrs({ 'aria-hidden': 'true' })`
   ${({ service }) => service && getSansBold(service)};
   ${({ script }) => script && getPica(script)};
   text-transform: uppercase;
@@ -124,12 +124,12 @@ const ProgramCard = ({
 }) => (
   <CardWrapper>
     <TextWrapper>
-      <Link href={link}>
-        <HeadingWrapper
-          service={service}
-          script={script}
-          {...programStateConfig[type]}
-        >
+      <HeadingWrapper
+        service={service}
+        script={script}
+        {...programStateConfig[type]}
+      >
+        <Link href={link}>
           {type !== 'onDemand' && (
             <LabelWrapper
               service={service}
@@ -140,8 +140,8 @@ const ProgramCard = ({
             </LabelWrapper>
           )}
           {brandTitle}
-        </HeadingWrapper>
-      </Link>
+        </Link>
+      </HeadingWrapper>
       <TitleWrapper
         service={service}
         script={script}
