@@ -37,7 +37,7 @@ export const UsefulLinksUl = styled.ul.attrs({ role: 'list' })`
 
   @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
     column-count: 2;
-    column-gap: {GEL_SPACING_DBL};
+    column-gap: ${GEL_SPACING_DBL};
 
     @supports (${grid}) {
       display: grid;
