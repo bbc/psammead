@@ -1,4 +1,5 @@
 import React from 'react';
+import { arrayOf, bool, shape, string, oneOf } from 'prop-types';
 import { shouldMatchSnapshot } from '@bbc/psammead-test-helpers';
 import { latin } from '@bbc/gel-foundations/scripts';
 import MediaIndicator from '@bbc/psammead-media-indicator';
@@ -11,27 +12,32 @@ import IndexAlsosContainer from '../testHelpers/IndexAlsosContainer';
 const Image = <img src="https://foobar.com/image.png" alt="Alt text" />;
 
 /* eslint-disable-next-line react/prop-types */
-const LiveComponent = ({ headline, service }) => (
+const LiveComponent = ({ headline, dir, service }) => (
   /* eslint-disable-next-line jsx-a11y/aria-role */
   <span role="text">
-    <LiveLabel service={service}>LIVE</LiveLabel>
+    <LiveLabel dir={dir} service={service}>
+      LIVE
+    </LiveLabel>
     <VisuallyHiddenText lang="en-GB">Live, </VisuallyHiddenText>
     {headline}
   </span>
 );
 
-// eslint-disable-next-line react/prop-types
-const Info = ({ topStory, isLive, alsoItems, promoHasImage = true }) => (
+const Info = ({ promoType, isLive, dir, alsoItems, promoHasImage }) => (
   <>
     <Headline
       script={latin}
-      topStory={topStory}
+      promoType={promoType}
       service="news"
       promoHasImage={promoHasImage}
     >
       <Link href="https://www.bbc.co.uk/news">
         {isLive ? (
-          <LiveComponent headline="The live promo headline" service="news" />
+          <LiveComponent
+            service="news"
+            dir={dir}
+            headline="The live promo headline"
+          />
         ) : (
           'The headline of the promo'
         )}
@@ -39,14 +45,14 @@ const Info = ({ topStory, isLive, alsoItems, promoHasImage = true }) => (
     </Headline>
     <Summary
       script={latin}
-      topStory={topStory}
+      promoType={promoType}
       service="news"
       promoHasImage={promoHasImage}
     >
       The summary of the promo
     </Summary>
     <time>12 March 2019</time>
-    {topStory && alsoItems && (
+    {promoType === 'top' && alsoItems && (
       <IndexAlsosContainer
         alsoItems={alsoItems}
         script={latin}
@@ -56,6 +62,20 @@ const Info = ({ topStory, isLive, alsoItems, promoHasImage = true }) => (
   </>
 );
 
+Info.propTypes = {
+  promoType: string,
+  isLive: bool.isRequired,
+  dir: oneOf(['rtl', 'ltr']),
+  alsoItems: arrayOf(shape()).isRequired,
+  promoHasImage: bool,
+};
+
+Info.defaultProps = {
+  promoType: 'regular',
+  dir: 'ltr',
+  promoHasImage: true,
+};
+
 const mediaInfo = (
   <MediaIndicator duration="2:15" datetime="PT2M15S" service="news" />
 );
@@ -63,38 +83,43 @@ const mediaInfo = (
 describe('StoryPromo', () => {
   shouldMatchSnapshot(
     'should render correctly',
-    <StoryPromo image={Image} info={Info({ topStory: false })} />,
+    <StoryPromo image={Image} info={Info({})} />,
   );
   shouldMatchSnapshot(
     'should render Live promo correctly',
-    <StoryPromo image={Image} info={Info({ topStory: false, isLive: true })} />,
+    <StoryPromo image={Image} info={Info({ isLive: true })} />,
+  );
+
+  shouldMatchSnapshot(
+    'should render a RTL Live promo correctly',
+    <StoryPromo image={Image} info={Info({ isLive: true, dir: 'rtl' })} />,
   );
 });
 
 describe('StoryPromo with Media Indicator', () => {
   shouldMatchSnapshot(
     'should render correctly',
-    <StoryPromo
-      image={Image}
-      info={Info({ topStory: false })}
-      mediaIndicator={mediaInfo}
-    />,
+    <StoryPromo image={Image} info={Info({})} mediaIndicator={mediaInfo} />,
   );
 });
 
 describe('StoryPromo - Top Story', () => {
   shouldMatchSnapshot(
     'should render correctly',
-    <StoryPromo image={Image} info={Info({ topStory: true })} topStory />,
+    <StoryPromo
+      image={Image}
+      info={Info({ promoType: 'top' })}
+      promoType="top"
+    />,
   );
 
   shouldMatchSnapshot(
     'should render with Media Indicator correctly',
     <StoryPromo
       image={Image}
-      info={Info({ topStory: true })}
+      info={Info({ promoType: 'top' })}
       mediaIndicator={mediaInfo}
-      topStory
+      promoType="top"
     />,
   );
 
@@ -102,8 +127,8 @@ describe('StoryPromo - Top Story', () => {
     'should render with multiple Index Alsos correctly',
     <StoryPromo
       image={Image}
-      info={Info({ topStory: true, alsoItems: relatedItems })}
-      topStory
+      info={Info({ promoType: 'top', alsoItems: relatedItems })}
+      promoType="top"
     />,
   );
 
@@ -111,18 +136,29 @@ describe('StoryPromo - Top Story', () => {
     'should render with one Index Also correctly',
     <StoryPromo
       image={Image}
-      info={Info({ topStory: true, alsoItems: [relatedItems[0]] })}
-      topStory
+      info={Info({ promoType: 'top', alsoItems: [relatedItems[0]] })}
+      promoType="top"
+    />,
+  );
+});
+
+describe('StoryPromo - Leading Story', () => {
+  shouldMatchSnapshot(
+    'should render correctly',
+    <StoryPromo
+      image={Image}
+      info={Info({ promoType: 'leading' })}
+      promoType="leading"
     />,
   );
 
   shouldMatchSnapshot(
-    'should render story promo without an image',
+    'should render with Media Indicator correctly',
     <StoryPromo
       image={Image}
-      displayImage={false}
-      info={Info({ topStory: false, promoHasImage: false })}
+      info={Info({ promoType: 'leading' })}
       mediaIndicator={mediaInfo}
+      promoType="leading"
     />,
   );
 });
@@ -132,8 +168,9 @@ describe('assertions', () => {
     const { container } = render(
       <StoryPromo
         image={Image}
-        info={Info({ topStory: true })}
+        info={Info({ promoType: 'top' })}
         mediaIndicator={mediaInfo}
+        promoType="top"
       />,
     );
 
@@ -157,8 +194,9 @@ describe('assertions', () => {
     const { container } = render(
       <StoryPromo
         image={Image}
-        info={Info({ topStory: true })}
+        info={Info({ promoType: 'top' })}
         mediaIndicator={mediaInfo}
+        promoType="top"
         data-story-promo="story_promo"
       />,
     );
