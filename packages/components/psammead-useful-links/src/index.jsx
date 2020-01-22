@@ -4,9 +4,7 @@ import { getSerifMedium } from '@bbc/psammead-styles/font-styles';
 import { C_EBON, C_METAL } from '@bbc/psammead-styles/colours';
 import { grid } from '@bbc/psammead-styles/detection';
 import { getPica } from '@bbc/gel-foundations/typography';
-import {
-  GEL_SPACING, // 8 px
-} from '@bbc/gel-foundations/spacings';
+import { GEL_SPACING, GEL_SPACING_DBL } from '@bbc/gel-foundations/spacings';
 import {
   GEL_GROUP_3_SCREEN_WIDTH_MIN,
   GEL_GROUP_2_SCREEN_WIDTH_MAX,
@@ -39,7 +37,7 @@ export const UsefulLinksUl = styled.ul.attrs({ role: 'list' })`
 
   @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
     column-count: 2;
-    column-gap: 1rem;
+    column-gap: {GEL_SPACING_DBL};
 
     @supports (${grid}) {
       display: grid;
@@ -49,7 +47,7 @@ export const UsefulLinksUl = styled.ul.attrs({ role: 'list' })`
         ${({ children }) => getRowCount(children, 2)},
         auto
       );
-      grid-column-gap: 1rem;
+      grid-column-gap: ${GEL_SPACING_DBL};
     }
   }
 `;

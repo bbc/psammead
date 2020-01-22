@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 2.11.1 | [PR#XXX](https://github.com/bbc/psammead/pull/XXX) Use `GEL_SPACING_DBL` constant in `PhotoMediaIcon`|
 | 2.11.0 | [PR#2826](https://github.com/bbc/psammead/pull/2826) Add amp ads js script boilerplate |
 | 2.10.3 | [PR#2694](https://github.com/bbc/psammead/pull/2694) Add properties to hide Navigation Icons from screen readers |
 | 2.10.2 | [PR#2686](https://github.com/bbc/psammead/pull/2686) Add SVG for Archive brand logo |
