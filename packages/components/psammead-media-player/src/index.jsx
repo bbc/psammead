@@ -32,6 +32,7 @@ export const CanonicalMediaPlayer = ({
   noJsClassName,
   noJsMessage,
   timeoutMs,
+  className,
 }) => {
   const [placeholderActive, setPlaceholderActive] = useState(showPlaceholder);
   const handlePlaceholderClick = () => setPlaceholderActive(false);
@@ -40,7 +41,7 @@ export const CanonicalMediaPlayer = ({
     skin === 'audio' ? StyledAudioContainer : StyledVideoContainer;
 
   return (
-    <StyledContainer portrait={portrait}>
+    <StyledContainer portrait={portrait} className={className}>
       {placeholderActive ? (
         <Placeholder
           onClick={handlePlaceholderClick}

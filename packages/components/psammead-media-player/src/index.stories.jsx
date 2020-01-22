@@ -4,6 +4,9 @@ import { CanonicalMediaPlayer, AmpMediaPlayer } from '.';
 import { ampDecorator } from '../../../../.storybook/config';
 import notes from '../README.md';
 
+import styled, { css } from 'styled-components';
+import Guidance from './Guidance';
+
 const withDuration = {
   duration: '2:30',
   durationSpoken: '2 minutes 30 seconds',
@@ -73,6 +76,38 @@ storiesOf('Components|Media Player', module)
         title="Audio player"
       />
     ),
+    { notes, knobs: { escapeHTML: false } },
+  )
+  .add(
+    'No-js',
+    () => {
+      const MediaPlayerThatHidesWhenJSIsDisabled = styled(CanonicalMediaPlayer)`
+        .no-js & {
+              display: none;
+            }
+          }
+      `;
+
+      return (
+        <>
+          <MediaPlayerThatHidesWhenJSIsDisabled
+            src="https://www.test.bbc.com/ws/av-embeds/media/bbc_korean_radio/liveradio/ko"
+            showPlaceholder={false}
+            placeholderSrc="https://news.files.bbci.co.uk/include/articles/public/images/amp_audio_placeholder.png"
+            skin="audio"
+            service="news"
+            mediaInfo={{ type: 'audio', title: 'Live show intro.' }}
+            title="Audio player"
+            noJsClassName="no-js"
+          />
+          <Guidance
+            service="news"
+            noJsClassName="no-js"
+            noJsMessage="USE JS PLEASE"
+          />
+        </>
+      );
+    },
     { notes, knobs: { escapeHTML: false } },
   );
 

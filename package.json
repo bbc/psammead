@@ -95,7 +95,6 @@
     "gh-pages": "2.2.0",
     "github-api": "^3.3.0",
     "glob-loader": "^0.3.0",
-    "husky": "^4.0.10",
     "jest": "^24.9.0",
     "jest-styled-components": "^6.3.4",
     "json5": "^2.1.1",
@@ -125,12 +124,6 @@
   },
   "config": {
     "babel_ignore": "'**/*.test.js,**/*.test.jsx,**/*.stories.js,**/*.stories.jsx'"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged",
-      "pre-push": "sh scripts/enforceVersions.sh && npm run test:unit -- --changedSince=latest"
-    }
   },
   "jest": {
     "collectCoverageFrom": [
