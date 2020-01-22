@@ -1,8 +1,12 @@
+# ⛔️ This is an alpha component ⛔️
+
+This component is currently tagged as alpha and is not suitable for production use. Following the passing of an accessibility review this component will be marked as ready for production and the alpha tag removed.
+
 # psammead-radio-schedule - [![Known Vulnerabilities](https://snyk.io/test/github/bbc/psammead/badge.svg?targetFile=packages%2Fcomponents%2Fpsammead-radio-schedule%2Fpackage.json)](https://snyk.io/test/github/bbc/psammead?targetFile=packages%2Fcomponents%2Fpsammead-radio-schedule%2Fpackage.json) [![Dependency Status](https://david-dm.org/bbc/psammead.svg?path=packages/components/psammead-radio-schedule)](https://david-dm.org/bbc/psammead?path=packages/components/psammead-radio-schedule) [![peerDependencies Status](https://david-dm.org/bbc/psammead/peer-status.svg?path=packages/components/psammead-radio-schedule)](https://david-dm.org/bbc/psammead?path=packages/components/psammead-radio-schedule&type=peer) [![Storybook](https://raw.githubusercontent.com/storybooks/brand/master/badge/badge-storybook.svg?sanitize=true)](https://bbc.github.io/psammead/?path=/story/radio-schedule--containing-image) [![GitHub license](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](https://github.com/bbc/psammead/blob/latest/LICENSE) [![npm version](https://img.shields.io/npm/v/@bbc/psammead-radio-schedule.svg)](https://www.npmjs.com/package/@bbc/psammead-radio-schedule) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/bbc/psammead/blob/latest/CONTRIBUTING.md)
 
 ## Description
 
-The `RadioSchedule` component does...
+The `RadioSchedule` component is designed to display radio schedule programs in their different states. Currently, the component comprises of a `ProgramCard` which is comprised of a link to the radio-schedule, a state label, brand and episode titles, a summary, and a duration.
 
 ## Exports
 
@@ -14,14 +18,54 @@ The `RadioSchedule` component does...
 npm install @bbc/psammead-radio-schedule --save
 ```
 
-## Props
+## Components (WIP)
 
-| Argument  | Type | Required | Default | Example |
-| --------- | ---- | -------- | ------- | ------- |
-| No props. |      |          |         |         |
+## ProgramCard
 
-### StartTime
+<!-- Description of the component usage -->
+### Props
 
+<!-- prettier-ignore -->
+| Argument | Type | Required | Default | Example |
+| -------- | ---- | -------- | ------- | ------- |
+| brandTitle | string | yes | N/A | `'This is a brand title'` |
+| summary | string | yes | N/A | `'This is a summary'` |
+| episodeTitle | string | yes | N/A | `'29/01/1990'` |
+| duration | string | yes | N/A | `'30:00'` |
+| state | object | yes | N/A | `{ type: 'live', translation: 'مباشر'}` |
+| link | string | yes | N/A | `'https://bbc.com/arabic/articles/c1er5mjnznzo'` |
+| service | string | yes | N/A | `'news'` |
+| script | object | yes | N/A | `{ canon: { groupA: { fontSize: '28', lineHeight: '32',}, groupB: { fontSize: '32', lineHeight: '36', }, groupD: { fontSize: '44', lineHeight: '48', }, }, trafalgar: { groupA: { fontSize: '20', lineHeight: '24', }, groupB: { fontSize: '24', lineHeight: '28', }, groupD: { fontSize: '32', lineHeight: '36', }, }, }` |
+| dir | string | no | `"ltr"` | `"rtl"` |
+
+### Usage
+
+This component displays a single link as program card with a brand title, an episode title, a summary and a duration.
+
+```jsx
+import React from 'react';
+import { latin } from '@bbc/gel-foundations/scripts';
+import ProgramCard from '@bbc/psammead-radio-schedule/ProgramCard';
+
+<ProgramCard
+  service="news"
+  script={latin}
+  dir="ltr"
+  brandTitle="This is a brand title"
+  summary="Could a computer ever create better art than a human?"
+  episodeTitle="29/01/1990"
+  duration="30:00"
+  state="live"
+  link="https://bbc.com/arabic/articles/c1er5mjnznzo"
+/>;
+```
+
+
+## StartTime
+
+### Props
+
+<!-- prettier-ignore -->
 | Argument  | Type | Required | Default | Example |
 | --------- | ---- | -------- | ------- | ------- |
 | timestamp | number | yes   | N/A | `1530947227000` |
@@ -30,9 +74,7 @@ npm install @bbc/psammead-radio-schedule --save
 | script | object | yes | N/A | `{ canon: { groupA: { fontSize: '28', lineHeight: '32',}, groupB: { fontSize: '32', lineHeight: '36', }, groupD: { fontSize: '44', lineHeight: '48', }, }, trafalgar: { groupA: { fontSize: '20', lineHeight: '24', }, groupB: { fontSize: '24', lineHeight: '28', }, groupD: { fontSize: '32', lineHeight: '36', }, }, }` |
 | service | string | yes | N/A | `news` |
 
-## Usage
-
-### StartTime
+### Usage
 
 ```jsx
 import React from 'react';
@@ -48,15 +90,9 @@ import { latin } from '@bbc/gel-foundations/scripts';
     />
 ```
 
-<!-- Description of the component usage -->
-
-```
-import RadioSchedule from "@bbc/psammead-radio-schedule"
-```
-
 ### When to use this component
 
-<!-- Description of the where the component can be used -->
+This component is to be used on the `radio` pages.
 
 ### When not to use this component
 
@@ -64,11 +100,9 @@ import RadioSchedule from "@bbc/psammead-radio-schedule"
 
 ### Accessibility notes
 
-<!-- Information about accessibility for this component -->
+Currently this component is in alpha. This is because it has not yet been tested with various assistive technologies. After it has had an accessibility swarm, this will be published under a standard version.
 
 ### Roadmap
-
-<!-- Known future changes of the component -->
 
 ## Contributing
 

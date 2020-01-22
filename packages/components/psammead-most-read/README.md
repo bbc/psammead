@@ -28,9 +28,7 @@ The `MostRead` component is designed to display the most read articles given a d
 | service | string | yes | N/A | `'news'` |
 | script | object | yes | N/A | `{ canon: { groupA: { fontSize: '28', lineHeight: '32',}, groupB: { fontSize: '32', lineHeight: '36', }, groupD: { fontSize: '44', lineHeight: '48', }, }, trafalgar: { groupA: { fontSize: '20', lineHeight: '24', }, groupB: { fontSize: '24', lineHeight: '28', }, groupD: { fontSize: '32', lineHeight: '36', }, }, }` |
 | dir | string | no | `"ltr"` | `"rtl"` |
-
-| children | node | yes | N/A | `<MostReadItemWrapper dir='ltr' key={1}><MostReadRank service='news' script=latin listIndex={1} numberOfItems={10} dir='ltr'/> <MostReadLink dir='ltr href='/bbc.co.uk/news/articles/27051997' service='news' script={latin} title='This is a news article headline'/></MostReadItemWrapper>,` |
-| dir | string | yes | 'ltr' | `'ltr'`|
+| labelId | string | no | `'Most-Read'` | `'Most-Read'`|
 
 ### Usage
 

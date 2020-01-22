@@ -9,13 +9,7 @@ import {
   getItems,
   getServiceVariant,
 } from './testHelpers';
-import {
-  MostReadRank,
-  MostReadLink,
-  MostReadTitle,
-  MostReadList,
-  MostRead,
-} from './index';
+import { MostReadRank, MostReadLink, MostReadList, MostRead } from './index';
 import notes from '../README.md';
 
 const arabicServiceDecorator = withServicesKnob({
@@ -36,15 +30,6 @@ const burmeseServiceDecorator = withServicesKnob({
 const newsServiceDecorator = withServicesKnob({
   defaultService: 'news',
 });
-
-const renderMostReadTitle = ({ header, service, script, dir }) => (
-  <MostReadTitle
-    header={header}
-    script={script}
-    service={service}
-    dir={{ dir }}
-  />
-);
 
 const renderList = ({ numberOfItems, dir, service, script }) => (
   <MostReadList numberOfItems={numberOfItems} dir={dir}>
@@ -271,29 +256,6 @@ storiesOf('Components|MostRead/List/RTL', module)
           service: getServiceVariant({ service, variant }),
           script,
         }),
-      ),
-    {
-      notes,
-    },
-  );
-
-storiesOf('Components|MostRead/Title', module)
-  .addDecorator(withKnobs)
-  .add(
-    'LTR',
-    () =>
-      newsServiceDecorator(({ dir, script, service }) =>
-        renderMostReadTitle({ header: 'Most Read', dir, service, script }),
-      ),
-    {
-      notes,
-    },
-  )
-  .add(
-    'RTL',
-    () =>
-      arabicServiceDecorator(({ dir, script, service }) =>
-        renderMostReadTitle({ header: 'الأكثر قراءة', dir, service, script }),
       ),
     {
       notes,
