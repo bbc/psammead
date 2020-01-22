@@ -133,6 +133,7 @@ exports[`Media Player: Placeholder should render a video placeholder 1`] = `
       class="c7"
     >
       <svg
+        aria-hidden="true"
         class="c8"
         focusable="false"
         height="12px"
@@ -325,6 +326,7 @@ exports[`Media Player: Placeholder should render a video placeholder with guidan
       class="c8"
     >
       <svg
+        aria-hidden="true"
         class="c9"
         focusable="false"
         height="12px"
@@ -479,6 +481,7 @@ exports[`Media Player: Placeholder should render a video placeholder without dur
       class="c7"
     >
       <svg
+        aria-hidden="true"
         class="c8"
         focusable="false"
         height="12px"
@@ -632,6 +635,7 @@ exports[`Media Player: Placeholder should render an audio placeholder 1`] = `
       class="c7"
     >
       <svg
+        aria-hidden="true"
         class="c8"
         focusable="false"
         height="12px"
@@ -789,6 +793,7 @@ exports[`Media Player: Placeholder should render an audio placeholder without du
       class="c7"
     >
       <svg
+        aria-hidden="true"
         class="c8"
         focusable="false"
         height="12px"
@@ -999,6 +1004,7 @@ exports[`Media Player: Placeholder should render no-js styles when noJsClassName
       class="c8"
     >
       <svg
+        aria-hidden="true"
         class="c9"
         focusable="false"
         height="12px"
