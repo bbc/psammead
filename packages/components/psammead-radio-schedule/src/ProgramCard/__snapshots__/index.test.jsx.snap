@@ -188,7 +188,6 @@ exports[`ProgramCard should render correctly for live 1`] = `
 >
   <div
     class="c1"
-    dir="ltr"
   >
     <a
       class="c2"
@@ -218,11 +217,9 @@ exports[`ProgramCard should render correctly for live 1`] = `
   </div>
   <div
     class="c7"
-    dir="ltr"
   >
     <span
       class="c8"
-      dir="ltr"
     >
       <svg
         class="c9"
@@ -437,7 +434,6 @@ exports[`ProgramCard should render correctly for next 1`] = `
 >
   <div
     class="c1"
-    dir="ltr"
   >
     <a
       class="c2"
@@ -467,11 +463,9 @@ exports[`ProgramCard should render correctly for next 1`] = `
   </div>
   <div
     class="c7"
-    dir="ltr"
   >
     <span
       class="c8"
-      dir="ltr"
     >
       <svg
         class="c9"
@@ -662,7 +656,6 @@ exports[`ProgramCard should render correctly for onDemand 1`] = `
 >
   <div
     class="c1"
-    dir="ltr"
   >
     <a
       class="c2"
@@ -687,11 +680,9 @@ exports[`ProgramCard should render correctly for onDemand 1`] = `
   </div>
   <div
     class="c6"
-    dir="ltr"
   >
     <span
       class="c7"
-      dir="ltr"
     >
       <svg
         class="c8"
@@ -906,7 +897,6 @@ exports[`ProgramCard should render correctly in RTL 1`] = `
 >
   <div
     class="c1"
-    dir="rtl"
   >
     <a
       class="c2"
@@ -936,11 +926,9 @@ exports[`ProgramCard should render correctly in RTL 1`] = `
   </div>
   <div
     class="c7"
-    dir="rtl"
   >
     <span
       class="c8"
-      dir="rtl"
     >
       <svg
         class="c9"

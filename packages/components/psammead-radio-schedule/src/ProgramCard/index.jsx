@@ -123,7 +123,7 @@ const ProgramCard = ({
   link,
 }) => (
   <CardWrapper>
-    <TextWrapper dir={dir}>
+    <TextWrapper>
       <Link href={link}>
         <HeadingWrapper
           service={service}
@@ -154,12 +154,11 @@ const ProgramCard = ({
       </SummaryWrapper>
     </TextWrapper>
     <ButtonWrapper
-      dir={dir}
       service={service}
       script={script}
       {...programStateConfig[type]}
     >
-      <IconWrapper dir={dir} {...programStateConfig[type]}>
+      <IconWrapper {...programStateConfig[type]}>
         {mediaIcons.audio}
       </IconWrapper>
       <DurationWrapper dir={dir}>{duration}</DurationWrapper>
@@ -167,10 +166,10 @@ const ProgramCard = ({
   </CardWrapper>
 );
 
-const statePropTypes = shape({
+const statePropTypes = {
   type: oneOf(['live', 'next', 'onDemand']).isRequired,
   translation: string.isRequired,
-});
+};
 
 ProgramCard.propTypes = {
   dir: oneOf(['rtl', 'ltr']),
