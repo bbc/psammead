@@ -1,9 +1,10 @@
+import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { withKnobs } from '@storybook/addon-knobs';
 import { withServicesKnob } from '@bbc/psammead-storybook-helpers';
 import { renderProgramCard } from './testHelpers/helper';
 import notes from '../README.md';
-import StartTime from './StartTime';
+import StartTime, { StartTimestamp } from './StartTime';
 
 const newsServiceDecorator = withServicesKnob({
   defaultService: 'news',
@@ -67,13 +68,28 @@ storiesOf('Components|RadioSchedule/StartTime', module)
     'Timestamp',
     ({ locale, script, service }) => {
       return (
-        // eslint-disable-next-line react/react-in-jsx-scope
+        <StartTimestamp
+          timestamp={1566914061212}
+          timezone="Europe/London"
+          locale={locale}
+          script={script}
+          service={service}
+        />
+      );
+    },
+    { notes },
+  )
+  .add(
+    'Start time',
+    ({ locale, script, service, dir }) => {
+      return (
         <StartTime
           timestamp={1566914061212}
           timezone="Europe/London"
           locale={locale}
           script={script}
           service={service}
+          dir={dir}
         />
       );
     },
