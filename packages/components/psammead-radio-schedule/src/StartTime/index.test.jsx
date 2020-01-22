@@ -1,6 +1,6 @@
 import React from 'react';
 import { shouldMatchSnapshot } from '@bbc/psammead-test-helpers';
-import { latin } from '@bbc/gel-foundations/scripts';
+import { latin, arabic } from '@bbc/gel-foundations/scripts';
 import StartTime from './index';
 
 describe('StartTime', () => {
@@ -12,6 +12,17 @@ describe('StartTime', () => {
       timestamp={1566914061212}
       timezone="Europe/London"
       locale="en-gb"
+    />,
+  );
+
+  shouldMatchSnapshot(
+    'should render RTL correctly',
+    <StartTime
+      script={arabic}
+      service="persian"
+      timestamp={1566914061212}
+      timezone="Europe/London"
+      locale="fa"
     />,
   );
 });
