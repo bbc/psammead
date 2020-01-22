@@ -10,14 +10,14 @@ exports[`ProgramCard should render correctly for live 1`] = `
   height: 0.75rem;
 }
 
-.c2 {
+.c3 {
   position: static;
   color: #222222;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.c2:before {
+.c3:before {
   bottom: 0;
   content: '';
   left: 0;
@@ -29,13 +29,13 @@ exports[`ProgramCard should render correctly for live 1`] = `
   z-index: 1;
 }
 
-.c2:hover,
-.c2:focus {
+.c3:hover,
+.c3:focus {
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
-.c2:visited {
+.c3:visited {
   color: #6E6E73;
 }
 
@@ -49,7 +49,7 @@ exports[`ProgramCard should render correctly for live 1`] = `
   padding: 0 0.5rem;
 }
 
-.c3 {
+.c2 {
   font-family: ReithSerif,Helvetica,Arial,sans-serif;
   font-weight: 500;
   font-style: normal;
@@ -114,14 +114,14 @@ exports[`ProgramCard should render correctly for live 1`] = `
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
-  .c3 {
+  .c2 {
     font-size: 1rem;
     line-height: 1.25rem;
   }
 }
 
 @media (min-width:37.5rem) {
-  .c3 {
+  .c2 {
     font-size: 1rem;
     line-height: 1.25rem;
   }
@@ -189,12 +189,12 @@ exports[`ProgramCard should render correctly for live 1`] = `
   <div
     class="c1"
   >
-    <a
+    <h3
       class="c2"
-      href="/news/articles/cn7k01xp8kxo"
     >
-      <h3
+      <a
         class="c3"
+        href="/news/articles/cn7k01xp8kxo"
       >
         <span
           class="c4"
@@ -202,8 +202,8 @@ exports[`ProgramCard should render correctly for live 1`] = `
           live 
         </span>
         Could a computer ever create better art than a human?
-      </h3>
-    </a>
+      </a>
+    </h3>
     <div
       class="c5"
     >
@@ -256,14 +256,14 @@ exports[`ProgramCard should render correctly for next 1`] = `
   height: 0.75rem;
 }
 
-.c2 {
+.c3 {
   position: static;
   color: #222222;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.c2:before {
+.c3:before {
   bottom: 0;
   content: '';
   left: 0;
@@ -275,13 +275,13 @@ exports[`ProgramCard should render correctly for next 1`] = `
   z-index: 1;
 }
 
-.c2:hover,
-.c2:focus {
+.c3:hover,
+.c3:focus {
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
-.c2:visited {
+.c3:visited {
   color: #6E6E73;
 }
 
@@ -295,7 +295,7 @@ exports[`ProgramCard should render correctly for next 1`] = `
   padding: 0 0.5rem;
 }
 
-.c3 {
+.c2 {
   font-family: ReithSerif,Helvetica,Arial,sans-serif;
   font-weight: 500;
   font-style: normal;
@@ -360,14 +360,14 @@ exports[`ProgramCard should render correctly for next 1`] = `
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
-  .c3 {
+  .c2 {
     font-size: 1rem;
     line-height: 1.25rem;
   }
 }
 
 @media (min-width:37.5rem) {
-  .c3 {
+  .c2 {
     font-size: 1rem;
     line-height: 1.25rem;
   }
@@ -435,12 +435,12 @@ exports[`ProgramCard should render correctly for next 1`] = `
   <div
     class="c1"
   >
-    <a
+    <h3
       class="c2"
-      href="/news/articles/cn7k01xp8kxo"
     >
-      <h3
+      <a
         class="c3"
+        href="/news/articles/cn7k01xp8kxo"
       >
         <span
           class="c4"
@@ -448,8 +448,8 @@ exports[`ProgramCard should render correctly for next 1`] = `
           next 
         </span>
         Could a computer ever create better art than a human?
-      </h3>
-    </a>
+      </a>
+    </h3>
     <div
       class="c5"
     >
@@ -502,14 +502,14 @@ exports[`ProgramCard should render correctly for onDemand 1`] = `
   height: 0.75rem;
 }
 
-.c2 {
+.c3 {
   position: static;
   color: #222222;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.c2:before {
+.c3:before {
   bottom: 0;
   content: '';
   left: 0;
@@ -521,13 +521,13 @@ exports[`ProgramCard should render correctly for onDemand 1`] = `
   z-index: 1;
 }
 
-.c2:hover,
-.c2:focus {
+.c3:hover,
+.c3:focus {
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
-.c2:visited {
+.c3:visited {
   color: #6E6E73;
 }
 
@@ -541,7 +541,7 @@ exports[`ProgramCard should render correctly for onDemand 1`] = `
   padding: 0 0.5rem;
 }
 
-.c3 {
+.c2 {
   font-family: ReithSerif,Helvetica,Arial,sans-serif;
   font-weight: 500;
   font-style: normal;
@@ -596,14 +596,14 @@ exports[`ProgramCard should render correctly for onDemand 1`] = `
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
-  .c3 {
+  .c2 {
     font-size: 1rem;
     line-height: 1.25rem;
   }
 }
 
 @media (min-width:37.5rem) {
-  .c3 {
+  .c2 {
     font-size: 1rem;
     line-height: 1.25rem;
   }
@@ -657,16 +657,16 @@ exports[`ProgramCard should render correctly for onDemand 1`] = `
   <div
     class="c1"
   >
-    <a
+    <h3
       class="c2"
-      href="/news/articles/cn7k01xp8kxo"
     >
-      <h3
+      <a
         class="c3"
+        href="/news/articles/cn7k01xp8kxo"
       >
         Could a computer ever create better art than a human?
-      </h3>
-    </a>
+      </a>
+    </h3>
     <div
       class="c4"
     >
@@ -719,14 +719,14 @@ exports[`ProgramCard should render correctly in RTL 1`] = `
   height: 0.75rem;
 }
 
-.c2 {
+.c3 {
   position: static;
   color: #222222;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.c2:before {
+.c3:before {
   bottom: 0;
   content: '';
   left: 0;
@@ -738,13 +738,13 @@ exports[`ProgramCard should render correctly in RTL 1`] = `
   z-index: 1;
 }
 
-.c2:hover,
-.c2:focus {
+.c3:hover,
+.c3:focus {
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
 
-.c2:visited {
+.c3:visited {
   color: #6E6E73;
 }
 
@@ -758,7 +758,7 @@ exports[`ProgramCard should render correctly in RTL 1`] = `
   padding: 0 0.5rem;
 }
 
-.c3 {
+.c2 {
   font-family: "BBC Nassim Arabic",Arial,Verdana,Geneva,Helvetica,sans-serif;
   font-weight: 700;
   font-style: normal;
@@ -823,14 +823,14 @@ exports[`ProgramCard should render correctly in RTL 1`] = `
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
-  .c3 {
+  .c2 {
     font-size: 1.25rem;
     line-height: 1.625rem;
   }
 }
 
 @media (min-width:37.5rem) {
-  .c3 {
+  .c2 {
     font-size: 1.25rem;
     line-height: 1.625rem;
   }
@@ -898,12 +898,12 @@ exports[`ProgramCard should render correctly in RTL 1`] = `
   <div
     class="c1"
   >
-    <a
+    <h3
       class="c2"
-      href="/arabic/articles/c1er5mjnznzo"
     >
-      <h3
+      <a
         class="c3"
+        href="/arabic/articles/c1er5mjnznzo"
       >
         <span
           class="c4"
@@ -911,8 +911,8 @@ exports[`ProgramCard should render correctly in RTL 1`] = `
           مباشر 
         </span>
         لماذا يخجل البعض من اسم قريته في مصر؟
-      </h3>
-    </a>
+      </a>
+    </h3>
     <div
       class="c5"
     >
