@@ -3,6 +3,8 @@
 <!-- prettier-ignore -->
 | Version | Description |
 | ------- | ----------- |
+| 4.0.0-alpha.2 | [PR#2989](https://github.com/bbc/psammead/pull/2989) Update snapshot |
+| 4.0.0-alpha.1 | [PR#2937](https://github.com/bbc/psammead/pull/2937) Add promoType prop, remove topStory prop, integrate Leading promo and move Image and Text styles into a separate file |
 | 3.0.0-alpha.13 | [PR#2978](https://github.com/bbc/psammead/pull/2978) Talos - Bump Dependencies - @bbc/gel-foundations |
 | 3.0.0-alpha.12 | [PR#2973](https://github.com/bbc/psammead/pull/2973) Talos - Bump Dependencies - @bbc/psammead-styles |
 | 3.0.0-alpha.11 | [PR#2920](https://github.com/bbc/psammead/pull/2920) Talos - Bump Dependencies - @bbc/gel-foundations |

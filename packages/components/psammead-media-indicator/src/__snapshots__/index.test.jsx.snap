@@ -48,6 +48,7 @@ exports[`MediaIndicator - Top Story should render a top story audio promo render
     class="c1"
   >
     <svg
+      aria-hidden="true"
       class="c2"
       focusable="false"
       height="12px"
@@ -90,6 +91,7 @@ exports[`MediaIndicator should render Index Also video indicator correctly 1`] =
   class="c0"
 >
   <svg
+    aria-hidden="true"
     class="c1"
     focusable="false"
     height="12px"
@@ -153,6 +155,7 @@ exports[`MediaIndicator should render audio correctly without duration details 1
     class="c1"
   >
     <svg
+      aria-hidden="true"
       class="c2"
       focusable="false"
       height="12px"
@@ -225,6 +228,7 @@ exports[`MediaIndicator should render audio indicator correctly 1`] = `
     class="c1"
   >
     <svg
+      aria-hidden="true"
       class="c2"
       focusable="false"
       height="12px"
@@ -298,6 +302,7 @@ exports[`MediaIndicator should render photogallery correctly 1`] = `
     class="c1"
   >
     <svg
+      aria-hidden="true"
       class="c2"
       focusable="false"
       height="13px"
@@ -367,6 +372,7 @@ exports[`MediaIndicator should render video by default 1`] = `
     class="c1"
   >
     <svg
+      aria-hidden="true"
       class="c2"
       focusable="false"
       height="12px"
@@ -431,6 +437,7 @@ exports[`MediaIndicator should render video correctly without duration details 1
     class="c1"
   >
     <svg
+      aria-hidden="true"
       class="c2"
       focusable="false"
       height="12px"
@@ -500,6 +507,7 @@ exports[`MediaIndicator should render video indicator correctly 1`] = `
     class="c1"
   >
     <svg
+      aria-hidden="true"
       class="c2"
       focusable="false"
       height="12px"

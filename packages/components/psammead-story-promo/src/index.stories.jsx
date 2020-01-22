@@ -5,6 +5,7 @@ import Image from '@bbc/psammead-image';
 import MediaIndicator from '@bbc/psammead-media-indicator';
 import VisuallyHiddenText from '@bbc/psammead-visually-hidden-text';
 import { withServicesKnob } from '@bbc/psammead-storybook-helpers';
+import Grid from '@bbc/psammead-grid';
 import StoryPromo, { Headline, Summary, Link, LiveLabel } from './index';
 import relatedItems from '../testHelpers/relatedItems';
 import IndexAlsosContainer from '../testHelpers/IndexAlsosContainer';
@@ -59,7 +60,7 @@ const InfoComponent = ({
   headlineText,
   summaryText,
   script,
-  topStory,
+  promoType,
   service,
   isLive,
   dir,
@@ -70,7 +71,7 @@ const InfoComponent = ({
   <>
     <Headline
       script={script}
-      topStory={topStory}
+      promoType={promoType}
       service={service}
       promoHasImage={promoHasImage}
     >
@@ -84,13 +85,13 @@ const InfoComponent = ({
     </Headline>
     <Summary
       script={script}
-      topStory={topStory}
+      promoType={promoType}
       service={service}
       promoHasImage={promoHasImage}
     >
       {summaryText}
     </Summary>
-    {topStory && alsoItems && (
+    {promoType === 'top' && alsoItems && (
       <IndexAlsosContainer
         alsoItems={alsoItems}
         script={script}
@@ -102,7 +103,7 @@ const InfoComponent = ({
 );
 
 const generateStory = ({
-  topStory,
+  promoType,
   alsoItems = null,
   displayImage = true,
 }) => ({ text: textSnippet, script, service, dir }) => {
@@ -117,7 +118,7 @@ const generateStory = ({
       headlineText={textSnippet}
       summaryText={textSnippet}
       script={script}
-      topStory={topStory}
+      promoType={promoType}
       service={service}
       isLive={boolean('isLive', false)}
       dir={dir}
@@ -138,39 +139,105 @@ const generateStory = ({
         mediaType !== 'No media' &&
         MediaIndicatorComponent(mediaType, service, displayImage)
       }
-      topStory={topStory}
+      promoType={promoType}
     />
   );
 };
 
+/* eslint-disable-next-line no-shadow */
+const generate2FeatureStory = () => args => (
+  <Grid
+    columns={{
+      group0: 8,
+      group1: 8,
+      group2: 8,
+      group3: 8,
+      group4: 8,
+      group5: 8,
+    }}
+    enableGelGutters
+  >
+    <Grid
+      item
+      columns={{
+        group0: 8,
+        group1: 8,
+        group2: 8,
+        group3: 8,
+        group4: 6,
+        group5: 6,
+      }}
+    >
+      {generateStory({ promoType: 'leading' })(args)}
+    </Grid>
+    <Grid
+      columns={{
+        group0: 8,
+        group1: 8,
+        group2: 8,
+        group3: 8,
+        group4: 2,
+        group5: 2,
+      }}
+      enableGelGutters
+    >
+      <Grid
+        item
+        columns={{
+          group0: 8,
+          group1: 8,
+          group2: 8,
+          group3: 8,
+          group4: 2,
+          group5: 2,
+        }}
+      >
+        {generateStory({ promoType: 'regular' })(args)}
+      </Grid>
+    </Grid>
+  </Grid>
+);
+
 storiesOf('Components|StoryPromo/StoryPromo', module)
   .addDecorator(withKnobs)
   .addDecorator(withServicesKnob())
-  .add('default', generateStory({ topStory: false }), {
-    notes,
-    knobs: { escapeHTML: false },
-  })
-  .add('Top story', generateStory({ topStory: true }), {
+  .add('Regular promo', generateStory({ promoType: 'regular' }), {
     notes,
     knobs: { escapeHTML: false },
   })
   .add(
-    'Index Alsos - multiple',
-    generateStory({ topStory: true, alsoItems: relatedItems }),
+    'Regular promo - No image',
+    generateStory({ promoType: 'regular', displayImage: false }),
+    {
+      notes,
+      knobs: { escapeHTML: false },
+    },
+  )
+  .add('Top story promo', generateStory({ promoType: 'top' }), {
+    notes,
+    knobs: { escapeHTML: false },
+  })
+  .add(
+    'Top story promo - Index Alsos - multiple',
+    generateStory({ promoType: 'top', alsoItems: relatedItems }),
     {
       notes,
       knobs: { escapeHTML: false },
     },
   )
   .add(
-    'Index Alsos - one',
-    generateStory({ topStory: true, alsoItems: [relatedItems[0]] }),
+    'Top story promo - Index Alsos - one',
+    generateStory({ promoType: 'top', alsoItems: [relatedItems[0]] }),
     {
       notes,
       knobs: { escapeHTML: false },
     },
   )
-  .add('No image', generateStory({ topStory: false, displayImage: false }), {
+  .add('Leading promo', generateStory({ promoType: 'leading' }), {
+    notes,
+    knobs: { escapeHTML: false },
+  })
+  .add('Leading promo and regular promo', generate2FeatureStory(), {
     notes,
     knobs: { escapeHTML: false },
   });
