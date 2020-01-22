@@ -3,7 +3,8 @@
 <!-- prettier-ignore -->
 | Version | Description |
 | ------- | ----------- |
-| 2.6.24 | [PR#2990](https://github.com/bbc/psammead/pull/2990) Use `GEL_SPACING_QUAD` in `MediaIndicatorWrapper` |
+| 2.6.25 | [PR#2990](https://github.com/bbc/psammead/pull/2990) Use `GEL_SPACING_QUAD` in `MediaIndicatorWrapper` |
+| 2.6.24 | [PR#2989](https://github.com/bbc/psammead/pull/2989) Talos - Bump Dependencies - @bbc/psammead-assets |
 | 2.6.23 | [PR#2978](https://github.com/bbc/psammead/pull/2978) Talos - Bump Dependencies - @bbc/gel-foundations |
 | 2.6.22 | [PR#2973](https://github.com/bbc/psammead/pull/2973) Talos - Bump Dependencies - @bbc/psammead-styles |
 | 2.6.21 | [PR#2920](https://github.com/bbc/psammead/pull/2920) Talos - Bump Dependencies - @bbc/gel-foundations |
