@@ -1,21 +1,34 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Timestamp } from '@bbc/psammead-timestamp';
+import { number, string, shape } from 'prop-types';
+import { scriptPropType } from '@bbc/gel-foundations/prop-types';
+import TimestampContainer from '../../../../containers/psammead-timestamp-container';
 
 const StyledTimestamp = styled.div``;
 
-export const StartTime = ({ locale, script, service }) => {
-  <StyledTimestamp>
-    <TimestampContainer
-      timestamp={getTimestampValue(storyTimestamp)}
-      dateTimeFormat="YYYY-MM-DD"
-      format={text('Format', 'HH:mm')}
-      isRelative={boolean('isRelative', false)}
-      script={script}
-      locale={locale}
-      service={service}
-    />
-  </StyledTimestamp>;
+const StartTime = ({ timestamp, timezone, locale, script, service }) => {
+  return (
+    <StyledTimestamp>
+      <TimestampContainer
+        timestamp={timestamp}
+        dateTimeFormat="YYYY-MM-DD"
+        format="HH:mm"
+        isRelative={false}
+        timezone={timezone}
+        script={script}
+        locale={locale}
+        service={service}
+      />
+    </StyledTimestamp>
+  );
 };
 
-StartTime.propTypes = {};
+StartTime.propTypes = {
+  timestamp: number.isRequired,
+  timezone: string.isRequired,
+  locale: string.isRequired,
+  script: shape(scriptPropType).isRequired,
+  service: string.isRequired,
+};
+
+export default StartTime;
