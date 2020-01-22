@@ -383,33 +383,6 @@ exports[`StoryPromo - Leading Story should render with Media Indicator correctly
   <div
     class="c1"
   >
-    <div
-      aria-hidden="true"
-      class="c2"
-    >
-      <div
-        class="c3"
-      >
-        <svg
-          aria-hidden="true"
-          class="c4"
-          focusable="false"
-          height="12px"
-          viewBox="0 0 32 32"
-          width="12px"
-        >
-          <polygon
-            points="3,32 29,16 3,0"
-          />
-        </svg>
-        <time
-          class="c5"
-          datetime="PT2M15S"
-        >
-          2:15
-        </time>
-      </div>
-    </div>
     <h3
       class="c2"
     >
@@ -450,6 +423,7 @@ exports[`StoryPromo - Leading Story should render with Media Indicator correctly
             class="c9"
           >
             <svg
+              aria-hidden="true"
               class="c10"
               focusable="false"
               height="12px"
@@ -905,6 +879,7 @@ exports[`StoryPromo - Top Story should render with Media Indicator correctly 1`]
             class="c5"
           >
             <svg
+              aria-hidden="true"
               class="c6"
               focusable="false"
               height="12px"
@@ -1208,37 +1183,6 @@ exports[`StoryPromo - Top Story should render with multiple Index Alsos correctl
         alt="Alt text"
         src="https://foobar.com/image.png"
       />
-      <div
-        class="c3"
-      >
-        <div
-          aria-hidden="true"
-          class="c4"
-        >
-          <div
-            class="c5"
-          >
-            <svg
-              aria-hidden="true"
-              class="c6"
-              focusable="false"
-              height="12px"
-              viewBox="0 0 32 32"
-              width="12px"
-            >
-              <polygon
-                points="3,32 29,16 3,0"
-              />
-            </svg>
-            <time
-              class="c7"
-              datetime="PT2M15S"
-            >
-              2:15
-            </time>
-          </div>
-        </div>
-      </div>
     </div>
   </div>
   <div
@@ -1292,6 +1236,7 @@ exports[`StoryPromo - Top Story should render with multiple Index Alsos correctl
                 class="c13"
               >
                 <svg
+                  aria-hidden="true"
                   class="c14"
                   focusable="false"
                   height="12px"
@@ -1642,25 +1587,17 @@ exports[`StoryPromo - Top Story should render with one Index Also correctly 1`] 
               class="c12"
             >
               <svg
+                aria-hidden="true"
                 class="c13"
                 focusable="false"
                 height="12px"
                 viewBox="0 0 32 32"
                 width="12px"
               >
-                <svg
-                  aria-hidden="true"
-                  class="c14"
-                  focusable="false"
-                  height="12px"
-                  viewBox="0 0 32 32"
-                  width="12px"
-                >
-                  <polygon
-                    points="3,32 29,16 3,0"
-                  />
-                </svg>
-              </span>
+                <polygon
+                  points="3,32 29,16 3,0"
+                />
+              </svg>
             </span>
           </span>
           <span
@@ -1914,63 +1851,6 @@ exports[`StoryPromo should render Live promo correctly 1`] = `
     <time>
       12 March 2019
     </time>
-    <div
-      class="c7"
-      data-e2e="index-alsos"
-    >
-      <h4
-        class="c8"
-      >
-        Related content
-      </h4>
-      <div
-        class="c9"
-      >
-        <a
-          class="c10"
-          href="/hausa/labarai-48916590"
-        >
-          <span
-            class="c11"
-            dir="ltr"
-          >
-            <span
-              aria-hidden="true"
-              class="c12"
-            >
-              <svg
-                aria-hidden="true"
-                class="c13"
-                focusable="false"
-                height="12px"
-                viewBox="0 0 32 32"
-                width="12px"
-              >
-                <polygon
-                  points="3,32 29,16 3,0"
-                />
-              </svg>
-            </span>
-          </span>
-          <span
-            class=""
-            role="text"
-          >
-            <span
-              class="c8"
-            >
-              video
-              , 
-            </span>
-            <span
-              class="c14"
-            >
-              APC ba ta isa ta kore ni ba – Buba Galadima
-            </span>
-          </span>
-        </a>
-      </div>
-    </div>
   </div>
 </div>
 `;
