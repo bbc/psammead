@@ -3,14 +3,15 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 2.12.0 | [PR#2935](https://github.com/bbc/psammead/pull/2935) Add a Clock icon to core icons |
 | 2.11.0 | [PR#2826](https://github.com/bbc/psammead/pull/2826) Add amp ads js script boilerplate |
 | 2.10.3 | [PR#2694](https://github.com/bbc/psammead/pull/2694) Add properties to hide Navigation Icons from screen readers |
 | 2.10.2 | [PR#2686](https://github.com/bbc/psammead/pull/2686) Add SVG for Archive brand logo |
 | 2.10.1 | [PR#2655](https://github.com/bbc/psammead/pull/2655) Update Navigation Icons to scale with browser font size |
 | 2.10.0 | [PR#2631](https://github.com/bbc/psammead/pull/2631) Add AMP_BIND, AMP_LIST, AMP_MUSTACHE scripts to amp-boilerplate exports |
 | 2.9.0 | [PR#2641](https://github.com/bbc/psammead/pull/2641) Add Core icons group with Alert and Info icons |
-| 2.8.0 | [PR#2581](https://github.com/bbc/psammead/pull/2581) Added hamburger and cross icons for Navigation |
-| 2.7.0 | [PR#2531](https://github.com/bbc/psammead/pull/2531) Added Guidance icon |
+| 2.8.0 | [PR#2581](https://github.com/bbc/psammead/pull/2581) Add hamburger and cross icons for Navigation |
+| 2.7.0 | [PR#2531](https://github.com/bbc/psammead/pull/2531) Add Guidance icon |
 | 2.6.0 | [PR#2433](https://github.com/bbc/psammead/pull/2433) Add AMP js script boilerplate to psammead-assets. |
 | 2.5.0 | [PR#2309](https://github.com/bbc/psammead/pull/2309) Add SVGs for Weather, Cymru Fyw and Naidheachdan |
 | 2.4.1 | [PR#2189](https://github.com/bbc/psammead/pull/2189) Add storybook stories for media icons in psammead-assets |
