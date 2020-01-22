@@ -79,7 +79,7 @@ export const MostReadLink = ({
     <StyledLink href={href} script={script} service={service}>
       {title}
     </StyledLink>
-    <TimestampWrapper>{children}</TimestampWrapper>
+    {children && <TimestampWrapper>{children}</TimestampWrapper>}
   </StyledItem>
 );
 
