@@ -197,6 +197,7 @@ exports[`ProgramCard should render correctly for live 1`] = `
         href="/news/articles/cn7k01xp8kxo"
       >
         <span
+          aria-hidden="true"
           class="c4"
         >
           live 
@@ -443,6 +444,7 @@ exports[`ProgramCard should render correctly for next 1`] = `
         href="/news/articles/cn7k01xp8kxo"
       >
         <span
+          aria-hidden="true"
           class="c4"
         >
           next 
@@ -906,6 +908,7 @@ exports[`ProgramCard should render correctly in RTL 1`] = `
         href="/arabic/articles/c1er5mjnznzo"
       >
         <span
+          aria-hidden="true"
           class="c4"
         >
           مباشر 
