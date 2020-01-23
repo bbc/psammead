@@ -124,12 +124,17 @@ const renderHeaderContent = ({
   startTime,
 }) => {
   const isOnDemand = type === 'onDemand';
-  const hiddenTextProps = translation === 'live' ? { lang: 'en-GB' } : {};
+  const hiddenTextProps =
+    translation.toLowerCase() === 'live' ? { lang: 'en-GB' } : {};
 
   const content = (
     <>
-      <VisuallyHiddenText {...hiddenTextProps}>
-        {!isOnDemand && `${translation}, `}
+      {!isOnDemand && (
+        <VisuallyHiddenText {...hiddenTextProps}>
+          {`${translation}, `}
+        </VisuallyHiddenText>
+      )}
+      <VisuallyHiddenText>
         {`${brandTitle}, ${startTime}, ${episodeTitle}`}
       </VisuallyHiddenText>
       {!isOnDemand && (

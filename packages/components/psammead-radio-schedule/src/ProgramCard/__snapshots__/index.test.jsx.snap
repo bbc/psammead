@@ -214,6 +214,10 @@ exports[`ProgramCard should render correctly for live 1`] = `
           lang="en-GB"
         >
           live, 
+        </span>
+        <span
+          class="c4"
+        >
           Could a computer ever create better art than a human?, 13:00, 29/01/1990
         </span>
         <span
@@ -454,6 +458,10 @@ exports[`ProgramCard should render correctly for next 1`] = `
         class="c3"
       >
         next, 
+      </span>
+      <span
+        class="c3"
+      >
         Could a computer ever create better art than a human?, 13:00, 29/01/1990
       </span>
       <span
@@ -969,6 +977,10 @@ exports[`ProgramCard should render correctly in RTL 1`] = `
           class="c4"
         >
           مباشر, 
+        </span>
+        <span
+          class="c4"
+        >
           لماذا يخجل البعض من اسم قريته في مصر؟, 13:00, 29/01/1990
         </span>
         <span
