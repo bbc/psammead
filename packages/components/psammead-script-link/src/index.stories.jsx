@@ -3,6 +3,7 @@ import { storiesOf } from '@storybook/react';
 import { withKnobs, text } from '@storybook/addon-knobs';
 import styled from 'styled-components';
 import { withServicesKnob } from '@bbc/psammead-storybook-helpers';
+import VisuallyHiddenText from '@bbc/psammead-visually-hidden-text';
 import notes from '../README.md';
 import ScriptLink from './index';
 
@@ -30,6 +31,7 @@ storiesOf('Components|ScriptLink', module)
             variant={variant}
           >
             <span>{label}</span>
+            <VisuallyHiddenText>{variant}</VisuallyHiddenText>
           </ScriptLink>
         </Container>
       );
