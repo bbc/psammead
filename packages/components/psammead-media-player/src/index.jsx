@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
-import { string, bool, oneOf, shape, number } from 'prop-types';
+import { string, bool, oneOf, shape } from 'prop-types';
 import Placeholder from './Placeholder';
 import Amp from './Amp';
 import Canonical from './Canonical';
@@ -31,7 +31,6 @@ export const CanonicalMediaPlayer = ({
   mediaInfo,
   noJsClassName,
   noJsMessage,
-  timeoutMs,
 }) => {
   const [placeholderActive, setPlaceholderActive] = useState(showPlaceholder);
   const handlePlaceholderClick = () => setPlaceholderActive(false);
@@ -52,13 +51,7 @@ export const CanonicalMediaPlayer = ({
           noJsMessage={noJsMessage}
         />
       ) : (
-        <Canonical
-          service={service}
-          src={src}
-          title={title}
-          placeholderSrc={placeholderSrc}
-          timeoutMs={timeoutMs}
-        />
+        <Canonical src={src} title={title} placeholderSrc={placeholderSrc} />
       )}
     </StyledContainer>
   );
@@ -108,7 +101,6 @@ CanonicalMediaPlayer.propTypes = {
     type: oneOf(['video', 'audio']),
     guidanceMessage: string,
   }).isRequired,
-  timeoutMs: number,
 };
 
 CanonicalMediaPlayer.defaultProps = {
@@ -118,7 +110,6 @@ CanonicalMediaPlayer.defaultProps = {
   placeholderSrc: null,
   placeholderSrcset: null,
   noJsClassName: null,
-  timeoutMs: 5000,
 };
 
 AmpMediaPlayer.propTypes = {

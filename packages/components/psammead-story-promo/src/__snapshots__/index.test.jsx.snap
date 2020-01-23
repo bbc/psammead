@@ -1,10 +1,454 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`StoryPromo - Top Story should render correctly 1`] = `
+exports[`StoryPromo - Leading Story should render correctly 1`] = `
+.c5 {
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+  width: 66.67%;
+}
+
+.c1 {
+  display: inline-block;
+  vertical-align: top;
+  width: 33.33%;
+}
+
 .c0 {
   position: relative;
 }
 
+.c6 {
+  position: relative;
+}
+
+.c2 {
+  font-size: 1.125rem;
+  line-height: 1.375rem;
+  font-family: ReithSerif,Helvetica,Arial,sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  color: #222222;
+  margin: 0;
+  padding-bottom: 0.5rem;
+}
+
+.c4 {
+  font-size: 0.9375rem;
+  line-height: 1.125rem;
+  font-family: ReithSans,Helvetica,Arial,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #3F3F42;
+  margin: 0;
+  padding-bottom: 0.5rem;
+}
+
+.c3 {
+  position: static;
+  color: #222222;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c3:before {
+  bottom: 0;
+  content: '';
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  right: 0;
+  top: 0;
+  white-space: nowrap;
+  z-index: 1;
+}
+
+.c3:hover,
+.c3:focus {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.c3:visited {
+  color: #6E6E73;
+}
+
+@supports (grid-template-columns:fit-content(200px)) {
+  .c5 {
+    width: initial;
+    grid-template-columns: repeat(4,1fr);
+    grid-column-end: span 4;
+  }
+}
+
+@supports (grid-template-columns:fit-content(200px)) {
+  .c1 {
+    display: block;
+    width: initial;
+    padding: initial;
+    width: 100%;
+    grid-template-columns: repeat(2,1fr);
+    grid-column-end: span 2;
+  }
+}
+
+@supports (grid-template-columns:fit-content(200px)) {
+  .c0 {
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-column-gap: 0.5rem;
+  }
+}
+
+@media (min-width:20rem) and (max-width:37.4375rem) {
+  .c2 {
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .c2 {
+    font-size: 1.5rem;
+    line-height: 1.75rem;
+  }
+}
+
+@media (min-width:20rem) and (max-width:37.4375rem) {
+  .c4 {
+    font-size: 0.9375rem;
+    line-height: 1.125rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .c4 {
+    font-size: 0.875rem;
+    line-height: 1.125rem;
+  }
+}
+
+@media (max-width:37.4375rem) {
+  .c4 {
+    display: none;
+    visibility: hidden;
+  }
+}
+
+@media (min-width:63rem) {
+  .c4 {
+    display: none;
+    visibility: hidden;
+  }
+}
+
+<div
+  class="c0"
+>
+  <div
+    class="c1"
+  >
+    <h3
+      class="c2"
+    >
+      <a
+        class="c3"
+        href="https://www.bbc.co.uk/news"
+      >
+        The headline of the promo
+      </a>
+    </h3>
+    <p
+      class="c4"
+    >
+      The summary of the promo
+    </p>
+    <time>
+      12 March 2019
+    </time>
+  </div>
+  <div
+    class="c5"
+  >
+    <div
+      class="c6"
+    >
+      <img
+        alt="Alt text"
+        src="https://foobar.com/image.png"
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`StoryPromo - Leading Story should render with Media Indicator correctly 1`] = `
+.c10 {
+  vertical-align: middle;
+  margin: 0 0.25rem;
+  color: #222222;
+  fill: currentColor;
+  width: 0.75rem;
+  height: 0.75rem;
+}
+
+.c8 {
+  padding: 0.5rem 0.25rem;
+  background-color: #FFFFFF;
+  display: block;
+  font-family: ReithSans,Helvetica,Arial,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  color: #222222;
+  height: 2rem;
+}
+
+.c9 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 100%;
+}
+
+.c11 {
+  vertical-align: middle;
+  margin: 0 0.25rem;
+}
+
+.c5 {
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+  width: 66.67%;
+}
+
+.c1 {
+  display: inline-block;
+  vertical-align: top;
+  width: 33.33%;
+}
+
+.c0 {
+  position: relative;
+}
+
+.c6 {
+  position: relative;
+}
+
+.c2 {
+  font-size: 1.125rem;
+  line-height: 1.375rem;
+  font-family: ReithSerif,Helvetica,Arial,sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  color: #222222;
+  margin: 0;
+  padding-bottom: 0.5rem;
+}
+
+.c4 {
+  font-size: 0.9375rem;
+  line-height: 1.125rem;
+  font-family: ReithSans,Helvetica,Arial,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #3F3F42;
+  margin: 0;
+  padding-bottom: 0.5rem;
+}
+
+.c3 {
+  position: static;
+  color: #222222;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c3:before {
+  bottom: 0;
+  content: '';
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  right: 0;
+  top: 0;
+  white-space: nowrap;
+  z-index: 1;
+}
+
+.c3:hover,
+.c3:focus {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.c3:visited {
+  color: #6E6E73;
+}
+
+@media (max-width:24.9375rem) {
+  .c8 {
+    height: 1.25rem;
+    padding: 0.25rem 0.25rem 0;
+  }
+}
+
+@supports (grid-template-columns:fit-content(200px)) {
+  .c5 {
+    width: initial;
+    grid-template-columns: repeat(4,1fr);
+    grid-column-end: span 4;
+  }
+}
+
+@supports (grid-template-columns:fit-content(200px)) {
+  .c1 {
+    display: block;
+    width: initial;
+    padding: initial;
+    width: 100%;
+    grid-template-columns: repeat(2,1fr);
+    grid-column-end: span 2;
+  }
+}
+
+@supports (grid-template-columns:fit-content(200px)) {
+  .c0 {
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-column-gap: 0.5rem;
+  }
+}
+
+@media (min-width:25rem) {
+  .c7 {
+    position: absolute;
+    bottom: 0;
+  }
+}
+
+@media (min-width:20rem) and (max-width:37.4375rem) {
+  .c2 {
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .c2 {
+    font-size: 1.5rem;
+    line-height: 1.75rem;
+  }
+}
+
+@media (min-width:20rem) and (max-width:37.4375rem) {
+  .c4 {
+    font-size: 0.9375rem;
+    line-height: 1.125rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .c4 {
+    font-size: 0.875rem;
+    line-height: 1.125rem;
+  }
+}
+
+@media (max-width:37.4375rem) {
+  .c4 {
+    display: none;
+    visibility: hidden;
+  }
+}
+
+@media (min-width:63rem) {
+  .c4 {
+    display: none;
+    visibility: hidden;
+  }
+}
+
+<div
+  class="c0"
+>
+  <div
+    class="c1"
+  >
+    <h3
+      class="c2"
+    >
+      <a
+        class="c3"
+        href="https://www.bbc.co.uk/news"
+      >
+        The headline of the promo
+      </a>
+    </h3>
+    <p
+      class="c4"
+    >
+      The summary of the promo
+    </p>
+    <time>
+      12 March 2019
+    </time>
+  </div>
+  <div
+    class="c5"
+  >
+    <div
+      class="c6"
+    >
+      <img
+        alt="Alt text"
+        src="https://foobar.com/image.png"
+      />
+      <div
+        class="c7"
+      >
+        <div
+          aria-hidden="true"
+          class="c8"
+        >
+          <div
+            class="c9"
+          >
+            <svg
+              aria-hidden="true"
+              class="c10"
+              focusable="false"
+              height="12px"
+              viewBox="0 0 32 32"
+              width="12px"
+            >
+              <polygon
+                points="3,32 29,16 3,0"
+              />
+            </svg>
+            <time
+              class="c11"
+              datetime="PT2M15S"
+            >
+              2:15
+            </time>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`StoryPromo - Top Story should render correctly 1`] = `
 .c1 {
   display: inline-block;
   vertical-align: top;
@@ -13,13 +457,17 @@ exports[`StoryPromo - Top Story should render correctly 1`] = `
   width: 100%;
 }
 
-.c2 {
-  position: relative;
-}
-
 .c3 {
   display: inline-block;
   vertical-align: top;
+}
+
+.c0 {
+  position: relative;
+}
+
+.c2 {
+  position: relative;
 }
 
 .c4 {
@@ -73,14 +521,6 @@ exports[`StoryPromo - Top Story should render correctly 1`] = `
   color: #6E6E73;
 }
 
-@supports (grid-template-columns:fit-content(200px)) {
-  .c0 {
-    display: grid;
-    grid-template-columns: repeat(6,1fr);
-    grid-column-gap: 0.5rem;
-  }
-}
-
 @media (min-width:37.5rem) {
   .c1 {
     width: calc(50% - 0.5rem);
@@ -96,7 +536,6 @@ exports[`StoryPromo - Top Story should render correctly 1`] = `
 
 @supports (grid-template-columns:fit-content(200px)) {
   .c1 {
-    display: block;
     width: initial;
     grid-column: 1 / span 6;
   }
@@ -124,17 +563,18 @@ exports[`StoryPromo - Top Story should render correctly 1`] = `
   }
 }
 
+@supports (grid-template-columns:fit-content(200px)) {
+  .c0 {
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-column-gap: 0.5rem;
+  }
+}
+
 @media (min-width:20rem) and (max-width:37.4375rem) {
   .c4 {
     font-size: 1.375rem;
     line-height: 1.625rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c4 {
-    font-size: 1.75rem;
-    line-height: 2rem;
   }
 }
 
@@ -206,270 +646,6 @@ exports[`StoryPromo - Top Story should render correctly 1`] = `
 </div>
 `;
 
-exports[`StoryPromo - Top Story should render story promo without an image 1`] = `
-.c4 {
-  vertical-align: middle;
-  margin: 0 0.25rem;
-  color: #222222;
-  fill: currentColor;
-  width: 0.75rem;
-  height: 0.75rem;
-}
-
-.c2 {
-  padding: 0.5rem 0.25rem;
-  background-color: #FFFFFF;
-  display: block;
-  font-family: ReithSans,Helvetica,Arial,sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 0.75rem;
-  line-height: 1rem;
-  color: #222222;
-  height: 2rem;
-}
-
-.c3 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  height: 100%;
-}
-
-.c5 {
-  vertical-align: middle;
-  margin: 0 0.25rem;
-}
-
-.c0 {
-  position: relative;
-}
-
-.c1 {
-  display: inline-block;
-  vertical-align: top;
-  width: 66.67%;
-  padding: 0 0.5rem;
-  width: 100%;
-}
-
-.c1 >div {
-  vertical-align: middle;
-}
-
-.c1 >div {
-  display: inline-block;
-  padding: 0;
-  vertical-align: initial;
-}
-
-.c6 {
-  font-size: 0.9375rem;
-  line-height: 1.25rem;
-  font-family: ReithSerif,Helvetica,Arial,sans-serif;
-  font-weight: 500;
-  font-style: normal;
-  color: #222222;
-  margin: 0;
-  padding-bottom: 0.5rem;
-  display: inline;
-}
-
-.c8 {
-  font-size: 0.9375rem;
-  line-height: 1.125rem;
-  font-family: ReithSans,Helvetica,Arial,sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  color: #3F3F42;
-  margin: 0;
-  padding-bottom: 0.5rem;
-  padding-top: 0.5rem;
-}
-
-.c7 {
-  position: static;
-  color: #222222;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-}
-
-.c7:before {
-  bottom: 0;
-  content: '';
-  left: 0;
-  overflow: hidden;
-  position: absolute;
-  right: 0;
-  top: 0;
-  white-space: nowrap;
-  z-index: 1;
-}
-
-.c7:hover,
-.c7:focus {
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-}
-
-.c7:visited {
-  color: #6E6E73;
-}
-
-@media (max-width:24.9375rem) {
-  .c2 {
-    height: 1.25rem;
-    padding: 0.25rem 0.25rem 0;
-  }
-}
-
-@supports (grid-template-columns:fit-content(200px)) {
-  .c0 {
-    display: grid;
-    grid-template-columns: repeat(6,1fr);
-    grid-column-gap: 0.5rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c1 {
-    padding: 0 1rem;
-  }
-}
-
-@media (min-width:63rem) {
-  .c1 {
-    display: block;
-    width: 100%;
-    padding: 0.5rem 0;
-  }
-}
-
-@supports (grid-template-columns:fit-content(200px)) {
-  .c1 {
-    display: block;
-    width: initial;
-    padding: initial;
-    grid-column: 3 / span 4;
-    grid-column: 1 / span 6;
-  }
-}
-
-@media (min-width:20rem) and (max-width:37.4375rem) {
-  .c6 {
-    font-size: 1rem;
-    line-height: 1.25rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c6 {
-    font-size: 1rem;
-    line-height: 1.25rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c6 {
-    font-size: 1.25rem;
-    line-height: 1.5rem;
-  }
-}
-
-@media (min-width:62.9375rem) {
-  .c6 {
-    font-size: 0.9375rem;
-    line-height: 1.25rem;
-  }
-}
-
-@media (min-width:20rem) and (max-width:37.4375rem) {
-  .c8 {
-    font-size: 0.9375rem;
-    line-height: 1.125rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c8 {
-    font-size: 0.875rem;
-    line-height: 1.125rem;
-  }
-}
-
-@media (max-width:37.4375rem) {
-  .c8 {
-    display: none;
-    visibility: hidden;
-  }
-}
-
-@media (min-width:63rem) {
-  .c8 {
-    display: none;
-    visibility: hidden;
-  }
-}
-
-<div
-  class="c0"
->
-  <div
-    class="c1"
-  >
-    <div
-      aria-hidden="true"
-      class="c2"
-    >
-      <div
-        class="c3"
-      >
-        <svg
-          class="c4"
-          focusable="false"
-          height="12px"
-          viewBox="0 0 32 32"
-          width="12px"
-        >
-          <polygon
-            points="3,32 29,16 3,0"
-          />
-        </svg>
-        <time
-          class="c5"
-          datetime="PT2M15S"
-        >
-          2:15
-        </time>
-      </div>
-    </div>
-    <h3
-      class="c6"
-    >
-      <a
-        class="c7"
-        href="https://www.bbc.co.uk/news"
-      >
-        The headline of the promo
-      </a>
-    </h3>
-    <p
-      class="c8"
-    >
-      The summary of the promo
-    </p>
-    <time>
-      12 March 2019
-    </time>
-  </div>
-</div>
-`;
-
 exports[`StoryPromo - Top Story should render with Media Indicator correctly 1`] = `
 .c6 {
   vertical-align: middle;
@@ -510,16 +686,21 @@ exports[`StoryPromo - Top Story should render with Media Indicator correctly 1`]
   margin: 0 0.25rem;
 }
 
-.c0 {
-  position: relative;
-}
-
 .c1 {
   display: inline-block;
   vertical-align: top;
   position: relative;
   margin-bottom: 0.5rem;
   width: 100%;
+}
+
+.c8 {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.c0 {
+  position: relative;
 }
 
 .c2 {
@@ -529,11 +710,6 @@ exports[`StoryPromo - Top Story should render with Media Indicator correctly 1`]
 .c3 {
   position: absolute;
   bottom: 0;
-}
-
-.c8 {
-  display: inline-block;
-  vertical-align: top;
 }
 
 .c9 {
@@ -594,14 +770,6 @@ exports[`StoryPromo - Top Story should render with Media Indicator correctly 1`]
   }
 }
 
-@supports (grid-template-columns:fit-content(200px)) {
-  .c0 {
-    display: grid;
-    grid-template-columns: repeat(6,1fr);
-    grid-column-gap: 0.5rem;
-  }
-}
-
 @media (min-width:37.5rem) {
   .c1 {
     width: calc(50% - 0.5rem);
@@ -617,7 +785,6 @@ exports[`StoryPromo - Top Story should render with Media Indicator correctly 1`]
 
 @supports (grid-template-columns:fit-content(200px)) {
   .c1 {
-    display: block;
     width: initial;
     grid-column: 1 / span 6;
   }
@@ -645,17 +812,18 @@ exports[`StoryPromo - Top Story should render with Media Indicator correctly 1`]
   }
 }
 
+@supports (grid-template-columns:fit-content(200px)) {
+  .c0 {
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-column-gap: 0.5rem;
+  }
+}
+
 @media (min-width:20rem) and (max-width:37.4375rem) {
   .c9 {
     font-size: 1.375rem;
     line-height: 1.625rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c9 {
-    font-size: 1.75rem;
-    line-height: 2rem;
   }
 }
 
@@ -711,6 +879,7 @@ exports[`StoryPromo - Top Story should render with Media Indicator correctly 1`]
             class="c5"
           >
             <svg
+              aria-hidden="true"
               class="c6"
               focusable="false"
               height="12px"
@@ -783,10 +952,6 @@ exports[`StoryPromo - Top Story should render with multiple Index Alsos correctl
   margin: 0;
 }
 
-.c0 {
-  position: relative;
-}
-
 .c1 {
   display: inline-block;
   vertical-align: top;
@@ -795,13 +960,17 @@ exports[`StoryPromo - Top Story should render with multiple Index Alsos correctl
   width: 100%;
 }
 
-.c2 {
-  position: relative;
-}
-
 .c3 {
   display: inline-block;
   vertical-align: top;
+}
+
+.c0 {
+  position: relative;
+}
+
+.c2 {
+  position: relative;
 }
 
 .c4 {
@@ -902,14 +1071,6 @@ exports[`StoryPromo - Top Story should render with multiple Index Alsos correctl
   color: #6E6E73;
 }
 
-@supports (grid-template-columns:fit-content(200px)) {
-  .c0 {
-    display: grid;
-    grid-template-columns: repeat(6,1fr);
-    grid-column-gap: 0.5rem;
-  }
-}
-
 @media (min-width:37.5rem) {
   .c1 {
     width: calc(50% - 0.5rem);
@@ -925,7 +1086,6 @@ exports[`StoryPromo - Top Story should render with multiple Index Alsos correctl
 
 @supports (grid-template-columns:fit-content(200px)) {
   .c1 {
-    display: block;
     width: initial;
     grid-column: 1 / span 6;
   }
@@ -953,17 +1113,18 @@ exports[`StoryPromo - Top Story should render with multiple Index Alsos correctl
   }
 }
 
+@supports (grid-template-columns:fit-content(200px)) {
+  .c0 {
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-column-gap: 0.5rem;
+  }
+}
+
 @media (min-width:20rem) and (max-width:37.4375rem) {
   .c4 {
     font-size: 1.375rem;
     line-height: 1.625rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c4 {
-    font-size: 1.75rem;
-    line-height: 2rem;
   }
 }
 
@@ -1075,6 +1236,7 @@ exports[`StoryPromo - Top Story should render with multiple Index Alsos correctl
                 class="c13"
               >
                 <svg
+                  aria-hidden="true"
                   class="c14"
                   focusable="false"
                   height="12px"
@@ -1152,10 +1314,6 @@ exports[`StoryPromo - Top Story should render with one Index Also correctly 1`] 
   margin: 0;
 }
 
-.c0 {
-  position: relative;
-}
-
 .c1 {
   display: inline-block;
   vertical-align: top;
@@ -1164,13 +1322,17 @@ exports[`StoryPromo - Top Story should render with one Index Also correctly 1`] 
   width: 100%;
 }
 
-.c2 {
-  position: relative;
-}
-
 .c3 {
   display: inline-block;
   vertical-align: top;
+}
+
+.c0 {
+  position: relative;
+}
+
+.c2 {
+  position: relative;
 }
 
 .c4 {
@@ -1265,14 +1427,6 @@ exports[`StoryPromo - Top Story should render with one Index Also correctly 1`] 
   color: #6E6E73;
 }
 
-@supports (grid-template-columns:fit-content(200px)) {
-  .c0 {
-    display: grid;
-    grid-template-columns: repeat(6,1fr);
-    grid-column-gap: 0.5rem;
-  }
-}
-
 @media (min-width:37.5rem) {
   .c1 {
     width: calc(50% - 0.5rem);
@@ -1288,7 +1442,6 @@ exports[`StoryPromo - Top Story should render with one Index Also correctly 1`] 
 
 @supports (grid-template-columns:fit-content(200px)) {
   .c1 {
-    display: block;
     width: initial;
     grid-column: 1 / span 6;
   }
@@ -1316,17 +1469,18 @@ exports[`StoryPromo - Top Story should render with one Index Also correctly 1`] 
   }
 }
 
+@supports (grid-template-columns:fit-content(200px)) {
+  .c0 {
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-column-gap: 0.5rem;
+  }
+}
+
 @media (min-width:20rem) and (max-width:37.4375rem) {
   .c4 {
     font-size: 1.375rem;
     line-height: 1.625rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c4 {
-    font-size: 1.75rem;
-    line-height: 2rem;
   }
 }
 
@@ -1433,6 +1587,7 @@ exports[`StoryPromo - Top Story should render with one Index Also correctly 1`] 
               class="c12"
             >
               <svg
+                aria-hidden="true"
                 class="c13"
                 focusable="false"
                 height="12px"
@@ -1481,10 +1636,6 @@ exports[`StoryPromo should render Live promo correctly 1`] = `
   margin: 0;
 }
 
-.c0 {
-  position: relative;
-}
-
 .c1 {
   display: inline-block;
   vertical-align: top;
@@ -1492,15 +1643,19 @@ exports[`StoryPromo should render Live promo correctly 1`] = `
   width: 33.33%;
 }
 
-.c2 {
-  position: relative;
-}
-
 .c3 {
   display: inline-block;
   vertical-align: top;
   width: 66.67%;
   padding: 0 0.5rem;
+}
+
+.c0 {
+  position: relative;
+}
+
+.c2 {
+  position: relative;
 }
 
 .c4 {
@@ -1563,14 +1718,6 @@ exports[`StoryPromo should render Live promo correctly 1`] = `
   margin-right: 0.5rem;
 }
 
-@supports (grid-template-columns:fit-content(200px)) {
-  .c0 {
-    display: grid;
-    grid-template-columns: repeat(6,1fr);
-    grid-column-gap: 0.5rem;
-  }
-}
-
 @media (min-width:63rem) {
   .c1 {
     display: block;
@@ -1580,7 +1727,6 @@ exports[`StoryPromo should render Live promo correctly 1`] = `
 
 @supports (grid-template-columns:fit-content(200px)) {
   .c1 {
-    display: block;
     width: initial;
     grid-column: 1 / span 2;
   }
@@ -1609,24 +1755,18 @@ exports[`StoryPromo should render Live promo correctly 1`] = `
   }
 }
 
-@media (min-width:20rem) and (max-width:37.4375rem) {
-  .c4 {
-    font-size: 1rem;
-    line-height: 1.25rem;
+@supports (grid-template-columns:fit-content(200px)) {
+  .c0 {
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-column-gap: 0.5rem;
   }
 }
 
 @media (min-width:37.5rem) {
   .c4 {
-    font-size: 1rem;
-    line-height: 1.25rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c4 {
-    font-size: 1.25rem;
-    line-height: 1.5rem;
+    font-size: 1.125rem;
+    line-height: 1.375rem;
   }
 }
 
@@ -1715,9 +1855,17 @@ exports[`StoryPromo should render Live promo correctly 1`] = `
 </div>
 `;
 
-exports[`StoryPromo should render correctly 1`] = `
-.c0 {
-  position: relative;
+exports[`StoryPromo should render a RTL Live promo correctly 1`] = `
+.c7 {
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  -webkit-clip: rect(1px,1px,1px,1px);
+  clip: rect(1px,1px,1px,1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  width: 1px;
+  margin: 0;
 }
 
 .c1 {
@@ -1727,8 +1875,224 @@ exports[`StoryPromo should render correctly 1`] = `
   width: 33.33%;
 }
 
+.c3 {
+  display: inline-block;
+  vertical-align: top;
+  width: 66.67%;
+  padding: 0 0.5rem;
+}
+
+.c0 {
+  position: relative;
+}
+
 .c2 {
   position: relative;
+}
+
+.c4 {
+  font-size: 0.9375rem;
+  line-height: 1.25rem;
+  font-family: ReithSerif,Helvetica,Arial,sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  color: #222222;
+  margin: 0;
+  padding-bottom: 0.5rem;
+}
+
+.c8 {
+  font-size: 0.9375rem;
+  line-height: 1.125rem;
+  font-family: ReithSans,Helvetica,Arial,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #3F3F42;
+  margin: 0;
+  padding-bottom: 0.5rem;
+}
+
+.c5 {
+  position: static;
+  color: #222222;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c5:before {
+  bottom: 0;
+  content: '';
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  right: 0;
+  top: 0;
+  white-space: nowrap;
+  z-index: 1;
+}
+
+.c5:hover,
+.c5:focus {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.c5:visited {
+  color: #6E6E73;
+}
+
+.c6 {
+  font-family: ReithSans,Helvetica,Arial,sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: #B80000;
+  display: inline-block;
+  margin-left: 0.5rem;
+}
+
+@media (min-width:63rem) {
+  .c1 {
+    display: block;
+    width: 100%;
+  }
+}
+
+@supports (grid-template-columns:fit-content(200px)) {
+  .c1 {
+    width: initial;
+    grid-column: 1 / span 2;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .c3 {
+    padding: 0 1rem;
+  }
+}
+
+@media (min-width:63rem) {
+  .c3 {
+    display: block;
+    width: 100%;
+    padding: 0.5rem 0;
+  }
+}
+
+@supports (grid-template-columns:fit-content(200px)) {
+  .c3 {
+    display: block;
+    width: initial;
+    padding: initial;
+    grid-column: 3 / span 4;
+  }
+}
+
+@supports (grid-template-columns:fit-content(200px)) {
+  .c0 {
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-column-gap: 0.5rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .c4 {
+    font-size: 1.125rem;
+    line-height: 1.375rem;
+  }
+}
+
+@media (min-width:20rem) and (max-width:37.4375rem) {
+  .c8 {
+    font-size: 0.9375rem;
+    line-height: 1.125rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .c8 {
+    font-size: 0.875rem;
+    line-height: 1.125rem;
+  }
+}
+
+@media (max-width:37.4375rem) {
+  .c8 {
+    display: none;
+    visibility: hidden;
+  }
+}
+
+@media (min-width:63rem) {
+  .c8 {
+    display: none;
+    visibility: hidden;
+  }
+}
+
+<div
+  class="c0"
+>
+  <div
+    class="c1"
+  >
+    <div
+      class="c2"
+    >
+      <img
+        alt="Alt text"
+        src="https://foobar.com/image.png"
+      />
+    </div>
+  </div>
+  <div
+    class="c3"
+  >
+    <h3
+      class="c4"
+    >
+      <a
+        class="c5"
+        href="https://www.bbc.co.uk/news"
+      >
+        <span
+          role="text"
+        >
+          <span
+            aria-hidden="true"
+            class="c6"
+            dir="rtl"
+          >
+            LIVE
+          </span>
+          <span
+            class="c7"
+            lang="en-GB"
+          >
+            Live, 
+          </span>
+          The live promo headline
+        </span>
+      </a>
+    </h3>
+    <p
+      class="c8"
+    >
+      The summary of the promo
+    </p>
+    <time>
+      12 March 2019
+    </time>
+  </div>
+</div>
+`;
+
+exports[`StoryPromo should render correctly 1`] = `
+.c1 {
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+  width: 33.33%;
 }
 
 .c3 {
@@ -1736,6 +2100,14 @@ exports[`StoryPromo should render correctly 1`] = `
   vertical-align: top;
   width: 66.67%;
   padding: 0 0.5rem;
+}
+
+.c0 {
+  position: relative;
+}
+
+.c2 {
+  position: relative;
 }
 
 .c4 {
@@ -1789,14 +2161,6 @@ exports[`StoryPromo should render correctly 1`] = `
   color: #6E6E73;
 }
 
-@supports (grid-template-columns:fit-content(200px)) {
-  .c0 {
-    display: grid;
-    grid-template-columns: repeat(6,1fr);
-    grid-column-gap: 0.5rem;
-  }
-}
-
 @media (min-width:63rem) {
   .c1 {
     display: block;
@@ -1806,7 +2170,6 @@ exports[`StoryPromo should render correctly 1`] = `
 
 @supports (grid-template-columns:fit-content(200px)) {
   .c1 {
-    display: block;
     width: initial;
     grid-column: 1 / span 2;
   }
@@ -1835,24 +2198,18 @@ exports[`StoryPromo should render correctly 1`] = `
   }
 }
 
-@media (min-width:20rem) and (max-width:37.4375rem) {
-  .c4 {
-    font-size: 1rem;
-    line-height: 1.25rem;
+@supports (grid-template-columns:fit-content(200px)) {
+  .c0 {
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-column-gap: 0.5rem;
   }
 }
 
 @media (min-width:37.5rem) {
   .c4 {
-    font-size: 1rem;
-    line-height: 1.25rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c4 {
-    font-size: 1.25rem;
-    line-height: 1.5rem;
+    font-size: 1.125rem;
+    line-height: 1.375rem;
   }
 }
 
@@ -1964,10 +2321,6 @@ exports[`StoryPromo with Media Indicator should render correctly 1`] = `
   margin: 0 0.25rem;
 }
 
-.c0 {
-  position: relative;
-}
-
 .c1 {
   display: inline-block;
   vertical-align: top;
@@ -1975,15 +2328,19 @@ exports[`StoryPromo with Media Indicator should render correctly 1`] = `
   width: 33.33%;
 }
 
-.c2 {
-  position: relative;
-}
-
 .c8 {
   display: inline-block;
   vertical-align: top;
   width: 66.67%;
   padding: 0 0.5rem;
+}
+
+.c0 {
+  position: relative;
+}
+
+.c2 {
+  position: relative;
 }
 
 .c9 {
@@ -2044,14 +2401,6 @@ exports[`StoryPromo with Media Indicator should render correctly 1`] = `
   }
 }
 
-@supports (grid-template-columns:fit-content(200px)) {
-  .c0 {
-    display: grid;
-    grid-template-columns: repeat(6,1fr);
-    grid-column-gap: 0.5rem;
-  }
-}
-
 @media (min-width:63rem) {
   .c1 {
     display: block;
@@ -2061,16 +2410,8 @@ exports[`StoryPromo with Media Indicator should render correctly 1`] = `
 
 @supports (grid-template-columns:fit-content(200px)) {
   .c1 {
-    display: block;
     width: initial;
     grid-column: 1 / span 2;
-  }
-}
-
-@media (min-width:25rem) {
-  .c3 {
-    position: absolute;
-    bottom: 0;
   }
 }
 
@@ -2097,24 +2438,25 @@ exports[`StoryPromo with Media Indicator should render correctly 1`] = `
   }
 }
 
-@media (min-width:20rem) and (max-width:37.4375rem) {
-  .c9 {
-    font-size: 1rem;
-    line-height: 1.25rem;
+@supports (grid-template-columns:fit-content(200px)) {
+  .c0 {
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-column-gap: 0.5rem;
+  }
+}
+
+@media (min-width:25rem) {
+  .c3 {
+    position: absolute;
+    bottom: 0;
   }
 }
 
 @media (min-width:37.5rem) {
   .c9 {
-    font-size: 1rem;
-    line-height: 1.25rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c9 {
-    font-size: 1.25rem;
-    line-height: 1.5rem;
+    font-size: 1.125rem;
+    line-height: 1.375rem;
   }
 }
 
@@ -2170,6 +2512,7 @@ exports[`StoryPromo with Media Indicator should render correctly 1`] = `
             class="c5"
           >
             <svg
+              aria-hidden="true"
               class="c6"
               focusable="false"
               height="12px"
