@@ -15,6 +15,7 @@ describe('ProgramCard', () => {
     `should render correctly in RTL`,
     renderProgramCard({
       state: { type: stateTypes[0], translation: 'مباشر' },
+      duration: { durationValue: '30:00', durationText: 'المدة الزمنية' },
       service: 'arabic',
     }),
   );

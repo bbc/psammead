@@ -265,7 +265,6 @@ exports[`ProgramCard should render correctly for live 1`] = `
     >
       <span
         class="c4"
-        lang="en-GB"
       >
         duration 30,00
       </span>
@@ -453,7 +452,6 @@ exports[`ProgramCard should render correctly for next 1`] = `
     >
       <span
         class="c3"
-        lang="en-GB"
       >
         next, 
         Could a computer ever create better art than a human?, 13:00, 29/01/1990
@@ -506,7 +504,6 @@ exports[`ProgramCard should render correctly for next 1`] = `
     >
       <span
         class="c3"
-        lang="en-GB"
       >
         duration 30,00
       </span>
@@ -704,7 +701,6 @@ exports[`ProgramCard should render correctly for onDemand 1`] = `
       >
         <span
           class="c4"
-          lang="en-GB"
         >
           Could a computer ever create better art than a human?, 13:00, 29/01/1990
         </span>
@@ -751,7 +747,6 @@ exports[`ProgramCard should render correctly for onDemand 1`] = `
     >
       <span
         class="c4"
-        lang="en-GB"
       >
         duration 30,00
       </span>
@@ -972,7 +967,6 @@ exports[`ProgramCard should render correctly in RTL 1`] = `
       >
         <span
           class="c4"
-          lang="en-GB"
         >
           مباشر, 
           لماذا يخجل البعض من اسم قريته في مصر؟, 13:00, 29/01/1990
@@ -1026,9 +1020,8 @@ exports[`ProgramCard should render correctly in RTL 1`] = `
     >
       <span
         class="c4"
-        lang="en-GB"
       >
-        duration 30,00
+        المدة الزمنية 30,00
       </span>
       30:00
     </span>

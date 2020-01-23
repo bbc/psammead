@@ -116,7 +116,6 @@ const programStateConfig = {
 const renderHeaderContent = ({
   type,
   link,
-  lang,
   translation,
   brandTitle,
   episodeTitle,
@@ -125,10 +124,11 @@ const renderHeaderContent = ({
   startTime,
 }) => {
   const isOnDemand = type === 'onDemand';
+  const hiddenTextProps = translation === 'live' ? { lang: 'en-GB' } : {};
 
   const content = (
     <>
-      <VisuallyHiddenText lang={type === translation ? 'en-GB' : lang}>
+      <VisuallyHiddenText {...hiddenTextProps}>
         {!isOnDemand && `${translation}, `}
         {`${brandTitle}, ${startTime}, ${episodeTitle}`}
       </VisuallyHiddenText>
@@ -166,51 +166,46 @@ const ProgramCard = ({
   startTime,
   state: { type, translation },
   link,
-  lang,
-}) => {
-  const translationIsLive = translation === 'live';
-  return (
-    <CardWrapper>
-      <TextWrapper>
-        <HeadingWrapper
-          service={service}
-          script={script}
-          {...programStateConfig[type]}
-        >
-          {renderHeaderContent({
-            type,
-            link,
-            lang,
-            translation,
-            brandTitle,
-            episodeTitle,
-            service,
-            script,
-            startTime,
-          })}
-        </HeadingWrapper>
-        <SummaryWrapper service={service} script={script}>
-          {summary}
-        </SummaryWrapper>
-      </TextWrapper>
-      <ButtonWrapper
+}) => (
+  <CardWrapper>
+    <TextWrapper>
+      <HeadingWrapper
         service={service}
         script={script}
         {...programStateConfig[type]}
       >
-        <IconWrapper {...programStateConfig[type]}>
-          {mediaIcons.audio}
-        </IconWrapper>
-        <DurationWrapper dir={dir}>
-          <VisuallyHiddenText lang={translationIsLive ? 'en-GB' : lang}>
-            {`${durationText} ${durationValue.replace(/:/g, ',')}`}
-          </VisuallyHiddenText>
-          {durationValue}
-        </DurationWrapper>
-      </ButtonWrapper>
-    </CardWrapper>
-  );
-};
+        {renderHeaderContent({
+          type,
+          link,
+          translation,
+          brandTitle,
+          episodeTitle,
+          service,
+          script,
+          startTime,
+        })}
+      </HeadingWrapper>
+      <SummaryWrapper service={service} script={script}>
+        {summary}
+      </SummaryWrapper>
+    </TextWrapper>
+    <ButtonWrapper
+      service={service}
+      script={script}
+      {...programStateConfig[type]}
+    >
+      <IconWrapper {...programStateConfig[type]}>
+        {mediaIcons.audio}
+      </IconWrapper>
+      <DurationWrapper dir={dir}>
+        <VisuallyHiddenText>
+          {`${durationText} ${durationValue.replace(/:/g, ',')}`}
+        </VisuallyHiddenText>
+        {durationValue}
+      </DurationWrapper>
+    </ButtonWrapper>
+  </CardWrapper>
+);
 
 const statePropTypes = {
   type: oneOf(['live', 'next', 'onDemand']).isRequired,
@@ -230,7 +225,6 @@ const programCardPropTypes = {
   episodeTitle: string.isRequired,
   state: shape(statePropTypes).isRequired,
   link: string.isRequired,
-  lang: string,
   startTime: string.isRequired,
 };
 
@@ -241,13 +235,11 @@ renderHeaderContent.propTypes = {
 ProgramCard.propTypes = {
   dir: oneOf(['rtl', 'ltr']),
   duration: shape(durationPropTypes).isRequired,
-  lang: string,
   ...programCardPropTypes,
 };
 
 ProgramCard.defaultProps = {
   dir: 'ltr',
-  lang: 'en-GB',
 };
 
 export default ProgramCard;

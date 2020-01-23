@@ -53,6 +53,7 @@ stories.add(
     arabicServiceDecorator(({ service }) =>
       renderProgramCard({
         state: { type: stateTypes[0], translation: 'مباشر' },
+        duration: { durationValue: '30:00', durationText: 'المدة الزمنية' },
         service,
       }),
     ),
