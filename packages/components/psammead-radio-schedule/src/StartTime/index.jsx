@@ -13,12 +13,6 @@ const StyledStartTime = styled.div`
   align-items: center;
 `;
 
-const StyledTimestamp = styled.span`
-  ${({ script }) => script && getMinion(script)}
-  ${({ service }) => service && getSansRegular(service)}
-  color: ${C_RHINO};
-`;
-
 const StyledClock = styled.span`
   display: flex;
   align-items: center;
@@ -26,6 +20,10 @@ const StyledClock = styled.span`
     color: ${C_RHINO};
   }
 `;
+
+const ClockIcon = () => {
+  return <StyledClock>{coreIcons.clock}</StyledClock>;
+};
 
 const HorizontalLine = styled.hr`
   color: ${C_PEBBLE};
@@ -36,6 +34,12 @@ const HorizontalLine = styled.hr`
   ${({ dir }) => (dir === 'ltr' ? `margin-left: 10px;` : `margin-right: 10px;`)}
   margin-top: 0;
   margin-bottom: 0;
+`;
+
+const StyledTimestamp = styled.span`
+  ${({ script }) => script && getMinion(script)}
+  ${({ service }) => service && getSansRegular(service)}
+  color: ${C_RHINO};
 `;
 
 export const StartTimestamp = ({
@@ -64,14 +68,15 @@ export const StartTimestamp = ({
 
 StartTimestamp.propTypes = {
   timestamp: number.isRequired,
-  timezone: string.isRequired,
-  locale: string.isRequired,
+  timezone: string,
+  locale: string,
   script: shape(scriptPropType).isRequired,
   service: string.isRequired,
 };
 
-const ClockIcon = () => {
-  return <StyledClock>{coreIcons.clock}</StyledClock>;
+StartTimestamp.defaultProps = {
+  timezone: 'Europe/London',
+  locale: 'en-gb',
 };
 
 const StartTime = ({ timestamp, timezone, locale, script, service, dir }) => {
@@ -92,14 +97,16 @@ const StartTime = ({ timestamp, timezone, locale, script, service, dir }) => {
 
 StartTime.propTypes = {
   timestamp: number.isRequired,
-  timezone: string.isRequired,
-  locale: string.isRequired,
+  timezone: string,
+  locale: string,
   script: shape(scriptPropType).isRequired,
   service: string.isRequired,
   dir: oneOf(['ltr', 'rtl']),
 };
 
 StartTime.defaultProps = {
+  timezone: 'Europe/London',
+  locale: 'en-gb',
   dir: 'ltr',
 };
 
