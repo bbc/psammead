@@ -18,7 +18,11 @@
     "url": "https://github.com/bbc/psammead/issues"
   },
   "homepage": "https://github.com/BBC-News/psammead/blob/latest/packages/components/psammead-radio-schedule/README.md",
-  "dependencies": {},
+  "dependencies": {
+    "@bbc/gel-foundations": "^3.4.3",
+    "@bbc/psammead-styles": "^4.2.0",
+    "@bbc/psammead-assets": "^2.12.0"
+  },
   "peerDependencies": {
     "react": "^16.12.0"
   }

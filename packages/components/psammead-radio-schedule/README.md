@@ -22,7 +22,6 @@ npm install @bbc/psammead-radio-schedule --save
 
 ## ProgramCard
 
-<!-- Description of the component usage -->
 ### Props
 
 <!-- prettier-ignore -->
@@ -60,7 +59,6 @@ import ProgramCard from '@bbc/psammead-radio-schedule/ProgramCard';
 />;
 ```
 
-
 ## StartTime
 
 ### Props
@@ -69,16 +67,17 @@ import ProgramCard from '@bbc/psammead-radio-schedule/ProgramCard';
 | Argument  | Type | Required | Default | Example |
 | --------- | ---- | -------- | ------- | ------- |
 | timestamp | number | yes   | N/A | `1530947227000` |
-| timezone | string | yes | N/A | `'Europe/London'` |
-| locale | string | yes | N/A | `en-gb` |
+| timezone | string | no | `'Europe/London'` | `'Europe/Vienna'` |
+| locale | string | no | `'en-gb'` | `'fa'` |
 | script | object | yes | N/A | `{ canon: { groupA: { fontSize: '28', lineHeight: '32',}, groupB: { fontSize: '32', lineHeight: '36', }, groupD: { fontSize: '44', lineHeight: '48', }, }, trafalgar: { groupA: { fontSize: '20', lineHeight: '24', }, groupB: { fontSize: '24', lineHeight: '28', }, groupD: { fontSize: '32', lineHeight: '36', }, }, }` |
 | service | string | yes | N/A | `news` |
+| dir | string | no | `'ltr'` | `'rtl'` |
 
 ### Usage
 
 ```jsx
 import React from 'react';
-import { StartTime } from '@bbc/psammead-radio-schedule/startTime';
+import StartTime from '@bbc/psammead-radio-schedule/startTime';
 import { latin } from '@bbc/gel-foundations/scripts';
 
 <StartTime
@@ -87,6 +86,7 @@ import { latin } from '@bbc/gel-foundations/scripts';
       timestamp={1566914061212}
       timezone="Europe/London"
       locale="en-gb"
+      dir="ltr"
     />
 ```
 
