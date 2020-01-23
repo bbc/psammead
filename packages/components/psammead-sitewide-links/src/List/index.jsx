@@ -95,7 +95,7 @@ const StyledList = styled.ul`
 
 const StyledListItem = styled.li`
   min-width: 50%;
-  column-gap: 1rem;
+  column-gap: ${GEL_SPACING_DBL};
   break-inside: avoid-column;
 `;
 
