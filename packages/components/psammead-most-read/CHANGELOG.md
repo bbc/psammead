@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 0.5.2-alpha.5 | [PR#2982](https://github.com/bbc/psammead/pull/2982) Update readme |
 | 0.5.2-alpha.4 | [PR#2982](https://github.com/bbc/psammead/pull/2982) Talos - Bump Dependencies - @bbc/psammead-grid, @bbc/psammead-section-label |
 | 0.5.2-alpha.3 | [PR#2983](https://github.com/bbc/psammead/pull/2983) Conditionally render timestamp wrapper |
 | 0.5.2-alpha.2 | [PR#2978](https://github.com/bbc/psammead/pull/2978) Talos - Bump Dependencies - @bbc/gel-foundations, @bbc/psammead-grid |
