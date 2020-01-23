@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 2.12.1 | [PR#2990](https://github.com/bbc/psammead/pull/2990) Use `GEL_SPACING_DBL` constant in `PhotoMediaIcon` and stories container |
 | 2.12.0 | [PR#2935](https://github.com/bbc/psammead/pull/2935) Add a Clock icon to core icons |
 | 2.11.0 | [PR#2826](https://github.com/bbc/psammead/pull/2826) Add amp ads js script boilerplate |
 | 2.10.3 | [PR#2694](https://github.com/bbc/psammead/pull/2694) Add properties to hide Navigation Icons from screen readers |
