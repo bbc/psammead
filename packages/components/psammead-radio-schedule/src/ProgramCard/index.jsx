@@ -29,6 +29,7 @@ const CardWrapper = styled.div`
   padding-top: ${GEL_SPACING};
   background-color: ${C_WHITE};
   position: relative;
+  border: 1px solid transparent;
 `;
 
 const TextWrapper = styled.div`
@@ -69,6 +70,7 @@ const ButtonWrapper = styled.div`
   padding: ${GEL_SPACING};
   background-color: ${({ backgroundColor }) => backgroundColor};
   color: ${({ durationColor }) => durationColor};
+  border-top: 1px solid transparent;
 `;
 
 const IconWrapper = styled.span.attrs({ 'aria-hidden': 'true' })`
