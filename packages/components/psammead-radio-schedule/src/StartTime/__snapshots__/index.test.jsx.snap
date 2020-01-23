@@ -31,10 +31,6 @@ exports[`StartTime should render LTR correctly 1`] = `
   align-items: center;
 }
 
-.c3 {
-  color: #5A5A5A;
-}
-
 .c1 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -59,6 +55,10 @@ exports[`StartTime should render LTR correctly 1`] = `
   margin-left: 10px;
   margin-top: 0;
   margin-bottom: 0;
+}
+
+.c3 {
+  color: #5A5A5A;
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
@@ -145,10 +145,6 @@ exports[`StartTime should render RTL correctly 1`] = `
   align-items: center;
 }
 
-.c3 {
-  color: #5A5A5A;
-}
-
 .c1 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -170,9 +166,13 @@ exports[`StartTime should render RTL correctly 1`] = `
   border: none;
   height: 1px;
   width: 100vw;
-  margin-left: 10px;
+  margin-right: 10px;
   margin-top: 0;
   margin-bottom: 0;
+}
+
+.c3 {
+  color: #5A5A5A;
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
@@ -223,7 +223,7 @@ exports[`StartTime should render RTL correctly 1`] = `
   </span>
   <hr
     class="c5"
-    dir="ltr"
+    dir="rtl"
   />
 </div>
 `;
