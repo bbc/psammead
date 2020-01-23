@@ -124,12 +124,15 @@ const renderHeaderContent = ({
   script,
   startTime,
 }) => {
+  const isOnDemand = type === 'onDemand';
+
   const content = (
     <>
       <VisuallyHiddenText lang={type === translation ? 'en-GB' : lang}>
-        {`${translation}, ${brandTitle}, ${startTime}, ${episodeTitle}`}
+        {!isOnDemand && `${translation}, `}
+        {`${brandTitle}, ${startTime}, ${episodeTitle}`}
       </VisuallyHiddenText>
-      {type !== 'onDemand' && (
+      {!isOnDemand && (
         <LabelWrapper
           service={service}
           script={script}
@@ -159,50 +162,55 @@ const ProgramCard = ({
   brandTitle,
   summary,
   episodeTitle,
-  duration,
+  duration: { durationValue, durationText },
   startTime,
   state: { type, translation },
   link,
   lang,
-}) => (
-  <CardWrapper>
-    <TextWrapper>
-      <HeadingWrapper
+}) => {
+  const translationIsLive = translation === 'live';
+  return (
+    <CardWrapper>
+      <TextWrapper>
+        <HeadingWrapper
+          service={service}
+          script={script}
+          {...programStateConfig[type]}
+        >
+          {renderHeaderContent({
+            type,
+            link,
+            lang,
+            translation,
+            brandTitle,
+            episodeTitle,
+            service,
+            script,
+            startTime,
+          })}
+        </HeadingWrapper>
+        <SummaryWrapper service={service} script={script}>
+          {summary}
+        </SummaryWrapper>
+      </TextWrapper>
+      <ButtonWrapper
         service={service}
         script={script}
         {...programStateConfig[type]}
       >
-        {renderHeaderContent({
-          type,
-          link,
-          lang,
-          translation,
-          brandTitle,
-          episodeTitle,
-          service,
-          script,
-          startTime,
-        })}
-      </HeadingWrapper>
-      <SummaryWrapper service={service} script={script}>
-        {summary}
-      </SummaryWrapper>
-    </TextWrapper>
-    <ButtonWrapper
-      service={service}
-      script={script}
-      {...programStateConfig[type]}
-    >
-      <VisuallyHiddenText lang={type === translation ? 'en-GB' : lang}>
-        {`${duration.value.replace(/:/g, ',')}, ${duration.translation}`}
-      </VisuallyHiddenText>
-      <IconWrapper {...programStateConfig[type]}>
-        {mediaIcons.audio}
-      </IconWrapper>
-      <DurationWrapper dir={dir}>{duration.value}</DurationWrapper>
-    </ButtonWrapper>
-  </CardWrapper>
-);
+        <IconWrapper {...programStateConfig[type]}>
+          {mediaIcons.audio}
+        </IconWrapper>
+        <DurationWrapper dir={dir}>
+          <VisuallyHiddenText lang={translationIsLive ? 'en-GB' : lang}>
+            {`${durationText} ${durationValue.replace(/:/g, ',')}`}
+          </VisuallyHiddenText>
+          {durationValue}
+        </DurationWrapper>
+      </ButtonWrapper>
+    </CardWrapper>
+  );
+};
 
 const statePropTypes = {
   type: oneOf(['live', 'next', 'onDemand']).isRequired,
@@ -210,8 +218,8 @@ const statePropTypes = {
 };
 
 const durationPropTypes = {
-  value: string.isRequired,
-  translation: string,
+  durationValue: string.isRequired,
+  durationText: string,
 };
 
 const programCardPropTypes = {

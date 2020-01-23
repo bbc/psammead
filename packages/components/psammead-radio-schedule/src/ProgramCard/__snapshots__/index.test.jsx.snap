@@ -213,7 +213,8 @@ exports[`ProgramCard should render correctly for live 1`] = `
           class="c4"
           lang="en-GB"
         >
-          live, Could a computer ever create better art than a human?, 13:00, 29/01/1990
+          live, 
+          Could a computer ever create better art than a human?, 13:00, 29/01/1990
         </span>
         <span
           aria-hidden="true"
@@ -239,12 +240,6 @@ exports[`ProgramCard should render correctly for live 1`] = `
     class="c8"
   >
     <span
-      class="c4"
-      lang="en-GB"
-    >
-      30,00, duration
-    </span>
-    <span
       aria-hidden="true"
       class="c9"
     >
@@ -267,6 +262,12 @@ exports[`ProgramCard should render correctly for live 1`] = `
       class="c11"
       dir="ltr"
     >
+      <span
+        class="c4"
+        lang="en-GB"
+      >
+        duration 30,00
+      </span>
       30:00
     </span>
   </div>
@@ -453,7 +454,8 @@ exports[`ProgramCard should render correctly for next 1`] = `
         class="c3"
         lang="en-GB"
       >
-        next, Could a computer ever create better art than a human?, 13:00, 29/01/1990
+        next, 
+        Could a computer ever create better art than a human?, 13:00, 29/01/1990
       </span>
       <span
         aria-hidden="true"
@@ -478,12 +480,6 @@ exports[`ProgramCard should render correctly for next 1`] = `
     class="c7"
   >
     <span
-      class="c3"
-      lang="en-GB"
-    >
-      30,00, duration
-    </span>
-    <span
       aria-hidden="true"
       class="c8"
     >
@@ -506,6 +502,12 @@ exports[`ProgramCard should render correctly for next 1`] = `
       class="c10"
       dir="ltr"
     >
+      <span
+        class="c3"
+        lang="en-GB"
+      >
+        duration 30,00
+      </span>
       30:00
     </span>
   </div>
@@ -702,7 +704,7 @@ exports[`ProgramCard should render correctly for onDemand 1`] = `
           class="c4"
           lang="en-GB"
         >
-          onDemand, Could a computer ever create better art than a human?, 13:00, 29/01/1990
+          Could a computer ever create better art than a human?, 13:00, 29/01/1990
         </span>
         Could a computer ever create better art than a human?
         <div
@@ -721,12 +723,6 @@ exports[`ProgramCard should render correctly for onDemand 1`] = `
   <div
     class="c7"
   >
-    <span
-      class="c4"
-      lang="en-GB"
-    >
-      30,00, duration
-    </span>
     <span
       aria-hidden="true"
       class="c8"
@@ -750,6 +746,12 @@ exports[`ProgramCard should render correctly for onDemand 1`] = `
       class="c10"
       dir="ltr"
     >
+      <span
+        class="c4"
+        lang="en-GB"
+      >
+        duration 30,00
+      </span>
       30:00
     </span>
   </div>
@@ -969,7 +971,8 @@ exports[`ProgramCard should render correctly in RTL 1`] = `
           class="c4"
           lang="en-GB"
         >
-          مباشر, لماذا يخجل البعض من اسم قريته في مصر؟, 13:00, 29/01/1990
+          مباشر, 
+          لماذا يخجل البعض من اسم قريته في مصر؟, 13:00, 29/01/1990
         </span>
         <span
           aria-hidden="true"
@@ -995,12 +998,6 @@ exports[`ProgramCard should render correctly in RTL 1`] = `
     class="c8"
   >
     <span
-      class="c4"
-      lang="en-GB"
-    >
-      30,00, duration
-    </span>
-    <span
       aria-hidden="true"
       class="c9"
     >
@@ -1023,6 +1020,12 @@ exports[`ProgramCard should render correctly in RTL 1`] = `
       class="c11"
       dir="rtl"
     >
+      <span
+        class="c4"
+        lang="en-GB"
+      >
+        duration 30,00
+      </span>
       30:00
     </span>
   </div>
