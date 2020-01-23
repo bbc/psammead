@@ -23,6 +23,7 @@ import {
 import { Link } from '@bbc/psammead-story-promo';
 import { oneOf, shape, string } from 'prop-types';
 import { scriptPropType } from '@bbc/gel-foundations/prop-types';
+import VisuallyHiddenText from '@bbc/psammead-visually-hidden-text';
 
 const CardWrapper = styled.div`
   padding-top: ${GEL_SPACING};
@@ -44,7 +45,6 @@ const HeadingWrapper = styled.h3`
 const LabelWrapper = styled.span.attrs({ 'aria-hidden': 'true' })`
   ${({ service }) => service && getSansBold(service)};
   ${({ script }) => script && getPica(script)};
-  text-transform: uppercase;
   color: ${({ headerLabelColor }) => headerLabelColor};
 `;
 
@@ -71,7 +71,7 @@ const ButtonWrapper = styled.div`
   color: ${({ durationColor }) => durationColor};
 `;
 
-const IconWrapper = styled.span`
+const IconWrapper = styled.span.attrs({ 'aria-hidden': 'true' })`
   > svg {
     color: ${({ durationColor }) => durationColor};
     fill: currentColor;
@@ -111,6 +111,45 @@ const programStateConfig = {
   },
 };
 
+const renderHeaderContent = ({
+  type,
+  link,
+  lang,
+  translation,
+  brandTitle,
+  episodeTitle,
+  service,
+  script,
+  startTime,
+}) => {
+  const content = (
+    <>
+      <VisuallyHiddenText lang={type === translation ? 'en-GB' : lang}>
+        {`${translation}, ${brandTitle}, ${startTime}, ${episodeTitle}`}
+      </VisuallyHiddenText>
+      {type !== 'onDemand' && (
+        <LabelWrapper
+          service={service}
+          script={script}
+          {...programStateConfig[type]}
+        >
+          {`${translation.toUpperCase()} `}
+        </LabelWrapper>
+      )}
+      {brandTitle}
+      <TitleWrapper
+        service={service}
+        script={script}
+        {...programStateConfig[type]}
+      >
+        {episodeTitle}
+      </TitleWrapper>
+    </>
+  );
+
+  return type === 'next' ? content : <Link href={link}>{content}</Link>;
+};
+
 const ProgramCard = ({
   dir,
   service,
@@ -119,8 +158,10 @@ const ProgramCard = ({
   summary,
   episodeTitle,
   duration,
+  startTime,
   state: { type, translation },
   link,
+  lang,
 }) => (
   <CardWrapper>
     <TextWrapper>
@@ -129,26 +170,18 @@ const ProgramCard = ({
         script={script}
         {...programStateConfig[type]}
       >
-        <Link href={link}>
-          {type !== 'onDemand' && (
-            <LabelWrapper
-              service={service}
-              script={script}
-              {...programStateConfig[type]}
-            >
-              {`${translation} `}
-            </LabelWrapper>
-          )}
-          {brandTitle}
-        </Link>
+        {renderHeaderContent({
+          type,
+          link,
+          lang,
+          translation,
+          brandTitle,
+          episodeTitle,
+          service,
+          script,
+          startTime,
+        })}
       </HeadingWrapper>
-      <TitleWrapper
-        service={service}
-        script={script}
-        {...programStateConfig[type]}
-      >
-        {episodeTitle}
-      </TitleWrapper>
       <SummaryWrapper service={service} script={script}>
         {summary}
       </SummaryWrapper>
@@ -158,10 +191,13 @@ const ProgramCard = ({
       script={script}
       {...programStateConfig[type]}
     >
+      <VisuallyHiddenText lang={type === translation ? 'en-GB' : lang}>
+        {`${duration.value.replace(/:/g, ',')}, ${duration.translation}`}
+      </VisuallyHiddenText>
       <IconWrapper {...programStateConfig[type]}>
         {mediaIcons.audio}
       </IconWrapper>
-      <DurationWrapper dir={dir}>{duration}</DurationWrapper>
+      <DurationWrapper dir={dir}>{duration.value}</DurationWrapper>
     </ButtonWrapper>
   </CardWrapper>
 );
@@ -171,20 +207,37 @@ const statePropTypes = {
   translation: string.isRequired,
 };
 
-ProgramCard.propTypes = {
-  dir: oneOf(['rtl', 'ltr']),
+const durationPropTypes = {
+  value: string.isRequired,
+  translation: string,
+};
+
+const programCardPropTypes = {
   service: string.isRequired,
   script: shape(scriptPropType).isRequired,
   brandTitle: string.isRequired,
   summary: string.isRequired,
   episodeTitle: string.isRequired,
-  duration: string.isRequired,
   state: shape(statePropTypes).isRequired,
   link: string.isRequired,
+  lang: string,
+  startTime: string.isRequired,
+};
+
+renderHeaderContent.propTypes = {
+  ...programCardPropTypes,
+};
+
+ProgramCard.propTypes = {
+  dir: oneOf(['rtl', 'ltr']),
+  duration: shape(durationPropTypes).isRequired,
+  lang: string,
+  ...programCardPropTypes,
 };
 
 ProgramCard.defaultProps = {
   dir: 'ltr',
+  lang: 'en-GB',
 };
 
 export default ProgramCard;

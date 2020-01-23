@@ -18,7 +18,9 @@ export const renderProgramCard = ({
       brandTitle={text}
       summary={longText}
       episodeTitle={episodeTitle}
-      duration="30:00"
+      duration={{ value: '30:00', translation: 'duration' }}
+      startTime="13:00"
+      lang="en-GB"
       state={state}
       link={articlePath}
     />
