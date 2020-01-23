@@ -6,6 +6,8 @@ import { renderProgramCard } from './testHelpers/helper';
 import notes from '../README.md';
 import StartTime, { StartTimestamp } from './StartTime';
 
+const storiesUnixTimestamp = 1566914061212;
+
 const newsServiceDecorator = withServicesKnob({
   defaultService: 'news',
 });
@@ -69,7 +71,7 @@ storiesOf('Components|RadioSchedule/StartTime', module)
     ({ locale, script, service }) => {
       return (
         <StartTimestamp
-          timestamp={1566914061212}
+          timestamp={storiesUnixTimestamp}
           timezone="Europe/London"
           locale={locale}
           script={script}
@@ -84,7 +86,7 @@ storiesOf('Components|RadioSchedule/StartTime', module)
     ({ locale, script, service, dir }) => {
       return (
         <StartTime
-          timestamp={1566914061212}
+          timestamp={storiesUnixTimestamp}
           timezone="Europe/London"
           locale={locale}
           script={script}

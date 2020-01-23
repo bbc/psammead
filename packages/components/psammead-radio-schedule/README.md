@@ -10,7 +10,7 @@ The `RadioSchedule` component is designed to display radio schedule programs in 
 
 ## Exports
 
-`/startTime` - Adds a timestamp with a starting time of the program.
+`/startTime` - Adds a starting time of the program with a clock icon, timestamp and horizontal line.
 
 ## Installation
 
