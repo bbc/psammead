@@ -3,7 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
-| 2.0.62 | [PR#2998](https://github.com/bbc/psammead/pull/2998) Remove unused package and update `psammead-test-helpers` to use the latest `jest-styled-components |
+| 2.0.62 | [PR#2998](https://github.com/bbc/psammead/pull/2998) Remove duplicate `jest-styled-components` package from root. |
 | 2.0.61 | [PR#2996](https://github.com/bbc/psammead/pull/2996) Talos - Bump Dependencies - @bbc/psammead-assets, @bbc/psammead-media-indicator |
 | 2.0.60 | [PR#2992](https://github.com/bbc/psammead/pull/2992) Talos - Bump Dependencies - @bbc/psammead-image-placeholder, @bbc/psammead-media-indicator |
 | 2.0.59 | [PR#2989](https://github.com/bbc/psammead/pull/2989) Talos - Bump Dependencies - @bbc/psammead-assets |
