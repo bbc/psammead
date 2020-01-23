@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version       | Description                                                                                                                  |
 | ------------- | ---------------------------------------------------------------------------------------------------------------------------- |
+| 2.6.0 | [PR#2982](https://github.com/bbc/psammead/pull/2991) Revert [#2836](https://github.com/bbc/psammead/pull/2836) - Add AV embed timeout handling. |
 | 2.5.4 | [PR#2992](https://github.com/bbc/psammead/pull/2992) Talos - Bump Dependencies - @bbc/psammead-play-button |
 | 2.5.3 | [PR#2989](https://github.com/bbc/psammead/pull/2989) Talos - Bump Dependencies - @bbc/psammead-assets |
 | 2.5.2 | [PR#2982](https://github.com/bbc/psammead/pull/2982) Talos - Bump Dependencies - @bbc/psammead-play-button |
