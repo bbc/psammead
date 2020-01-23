@@ -224,7 +224,9 @@ export const LiveLabel = styled.span.attrs({ 'aria-hidden': 'true' })`
   color: ${C_POSTBOX};
   display: inline-block;
   ${({ dir }) =>
-    dir === 'rtl' ? 'margin-left: 0.5rem;' : 'margin-right: 0.5rem;'}
+    dir === 'rtl'
+      ? `margin-left: ${GEL_SPACING};`
+      : `margin-right: ${GEL_SPACING};`}
 `;
 
 LiveLabel.propTypes = {

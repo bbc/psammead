@@ -64,7 +64,7 @@ const FlexTextRow = styled(FlexRow).attrs({
 })``;
 
 const titleMargins = `
-  margin: 1rem 0;
+  margin: ${GEL_SPACING_DBL} 0;
 
   ${MEDIA_QUERY_TYPOGRAPHY.LAPTOP_AND_LARGER} {
     margin: 0;
