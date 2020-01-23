@@ -244,6 +244,7 @@ exports[`ProgramCard should render correctly for live 1`] = `
       class="c9"
     >
       <svg
+        aria-hidden="true"
         class="c10"
         focusable="false"
         height="12px"
@@ -484,6 +485,7 @@ exports[`ProgramCard should render correctly for next 1`] = `
       class="c8"
     >
       <svg
+        aria-hidden="true"
         class="c9"
         focusable="false"
         height="12px"
@@ -728,6 +730,7 @@ exports[`ProgramCard should render correctly for onDemand 1`] = `
       class="c8"
     >
       <svg
+        aria-hidden="true"
         class="c9"
         focusable="false"
         height="12px"
@@ -1002,6 +1005,7 @@ exports[`ProgramCard should render correctly in RTL 1`] = `
       class="c9"
     >
       <svg
+        aria-hidden="true"
         class="c10"
         focusable="false"
         height="12px"

@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import { node, number, shape } from 'prop-types';
 import { storiesOf } from '@storybook/react';
 import { number as numberKnob, withKnobs } from '@storybook/addon-knobs';
+import { GEL_SPACING_DBL } from '@bbc/gel-foundations/spacings';
 import notes from '../README.md';
 import * as allSvgs from './svgs';
 
@@ -17,7 +18,7 @@ const Svg = styled.svg`
 
 const Container = styled.div`
   background-color: black;
-  padding: 1rem;
+  padding: ${GEL_SPACING_DBL};
   height: 100vh;
 `;
 

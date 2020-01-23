@@ -1,6 +1,7 @@
 import React from 'react';
 import styled, { css } from 'styled-components';
 import { node, oneOf } from 'prop-types';
+import { GEL_SPACING_SEXT } from '@bbc/gel-foundations/spacings';
 import { GEL_GROUP_2_SCREEN_WIDTH_MAX } from '@bbc/gel-foundations/breakpoints';
 
 /* Convert C_POSTBOX to rgba as IE doesn't like 8 digit hex */
@@ -24,7 +25,7 @@ const StyledScrollableNav = styled.div`
     &:after {
       content: ' ';
       height: 100%;
-      width: 3rem;
+      width: ${GEL_SPACING_SEXT};
       position: absolute;
       ${({ dir }) => css`
         ${dir === 'ltr' ? 'right' : 'left'}: 0;
