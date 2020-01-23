@@ -30,7 +30,7 @@ const AudioMediaIcon = styled(MediaIcon)`
 `;
 
 const PhotoMediaIcon = styled(MediaIcon)`
-  width: 1rem;
+  width: ${GEL_SPACING_DBL};
   height: 0.8125rem;
 `;
 

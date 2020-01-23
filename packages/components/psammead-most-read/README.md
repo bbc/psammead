@@ -218,7 +218,7 @@ import { MostReadRank } from '@bbc/psammead-most-read';
 />;
 ```
 
-## MostReadTitle
+## MostReadSection
 
 ### Props
 
@@ -228,17 +228,26 @@ import { MostReadRank } from '@bbc/psammead-most-read';
 | script | object | yes | N/A | `{ canon: { groupA: { fontSize: '28', lineHeight: '32',}, groupB: { fontSize: '32', lineHeight: '36', }, groupD: { fontSize: '44', lineHeight: '48', }, }, trafalgar: { groupA: { fontSize: '20', lineHeight: '24', }, groupB: { fontSize: '24', lineHeight: '28', }, groupD: { fontSize: '32', lineHeight: '36', }, }, }` |
 | service | string | yes | N/A | `'news'` |
 | header | string | yes | N/A | `'Most Read'`  |
-| labelId | string | no | `'most-read-title'` | `'most-read-title'`  |
+| labelId | string | no | `'most-read'` | `'most-read'`  |
+| children | node | yes | N/A | `<MostReadList numberOfItems={10} dir='ltr'><MostReadItemWrapper dir='ltr'><MostReadRank service='news' script={script} listIndex={1} numberOfItems={10} dir='ltr'/><MostReadLink dir='ltr' service='news' script={script} title='article headline' href='/bbc.co.uk/articles/000027051997'>{timestamp}</MostReadLink></MostReadItemWrapper></MostReadList>`  |
+| dir | string | no | `"ltr"` | `"ltr"` |
 
 ### Usage
 
 ```jsx
 import React from 'react';
 import { latin } from '@bbc/gel-foundations/scripts';
-import { MostReadTitle } from '@bbc/psammead-most-read/Title';
+import { MostReadSection } from '@bbc/psammead-most-read';
 
-<MostReadTitle header="Most Read" script={latin} service="news" </MostReadTitle>;
-
+<MostReadSection
+  labelId={labelId}
+  script={script}
+  service={service}
+  header={header}
+  dir={dir}
+>
+  <p>Most Read content</p>
+</MostReadSection>;
 ```
 
 ### When to use this component

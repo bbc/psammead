@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 2.0.60 | [PR#2992](https://github.com/bbc/psammead/pull/2992) Talos - Bump Dependencies - @bbc/psammead-image-placeholder, @bbc/psammead-media-indicator |
 | 2.0.59 | [PR#2989](https://github.com/bbc/psammead/pull/2989) Talos - Bump Dependencies - @bbc/psammead-assets |
 | 2.0.58 | [PR#2987](https://github.com/bbc/psammead/pull/2987) Bumping dependencies |
 | 2.0.57 | [PR#2980](https://github.com/bbc/psammead/pull/2980) Bumping babel/cli and removing configFile option from build script |

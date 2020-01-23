@@ -8,6 +8,7 @@ export const renderProgramCard = ({
   state,
   service = 'news',
   episodeTitle = '29/01/1990',
+  duration = { durationValue: '30:00', durationText: 'duration' },
 }) => {
   const { text, articlePath, longText, dir } = TEXT_VARIANTS[service];
   return (
@@ -18,7 +19,8 @@ export const renderProgramCard = ({
       brandTitle={text}
       summary={longText}
       episodeTitle={episodeTitle}
-      duration="30:00"
+      duration={duration}
+      startTime="13:00"
       state={state}
       link={articlePath}
     />
