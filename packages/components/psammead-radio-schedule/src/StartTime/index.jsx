@@ -25,21 +25,22 @@ const ClockIcon = () => {
   return <StyledClock>{coreIcons.clock}</StyledClock>;
 };
 
-const HorizontalLine = styled.hr`
-  color: ${C_PEBBLE};
-  background-color: ${C_PEBBLE};
-  border: none;
-  height: 1px;
+const HorizontalLine = styled.div`
+  border-top: 0.0625rem solid ${C_PEBBLE};
   width: 100vw;
-  ${({ dir }) => (dir === 'ltr' ? `margin-left: 10px;` : `margin-right: 10px;`)}
-  margin-top: 0;
-  margin-bottom: 0;
+
+  ${({ dir }) =>
+    dir === 'ltr' ? `margin-left: 0.625rem;` : `margin-right: 0.625rem;`}
+    
+  top: ${({ script }) => 0.5 + script.minion.groupA.lineHeight / 2 / 16}rem;
 `;
 
 const StyledTimestamp = styled.span`
-  ${({ script }) => script && getMinion(script)}
-  ${({ service }) => service && getSansRegular(service)}
-  color: ${C_RHINO};
+  > time {
+    color: ${C_RHINO};
+    ${({ script }) => script && getMinion(script)}
+    ${({ service }) => service && getSansRegular(service)}
+  }
 `;
 
 export const StartTimestamp = ({
@@ -50,7 +51,7 @@ export const StartTimestamp = ({
   service,
 }) => {
   return (
-    <StyledTimestamp>
+    <StyledTimestamp script={script} service={service}>
       <TimestampContainer
         timestamp={timestamp}
         dateTimeFormat="YYYY-MM-DD"
@@ -90,7 +91,7 @@ const StartTime = ({ timestamp, timezone, locale, script, service, dir }) => {
         script={script}
         service={service}
       />
-      <HorizontalLine dir={dir} />
+      <HorizontalLine dir={dir} script={script} />
     </StyledStartTime>
   );
 };
