@@ -249,11 +249,7 @@ exports[`ProgramCard should render correctly for live 1`] = `
     >
       <svg
         aria-hidden="true"
-<<<<<<< HEAD
-        class="c9"
-=======
         class="c10"
->>>>>>> 6fe43b9a183ca4fba1d787879b958daf0043b85e
         focusable="false"
         height="12px"
         viewBox="0 0 13 12"
@@ -739,11 +735,7 @@ exports[`ProgramCard should render correctly for onDemand 1`] = `
     >
       <svg
         aria-hidden="true"
-<<<<<<< HEAD
-        class="c8"
-=======
         class="c9"
->>>>>>> 6fe43b9a183ca4fba1d787879b958daf0043b85e
         focusable="false"
         height="12px"
         viewBox="0 0 13 12"
@@ -1020,11 +1012,7 @@ exports[`ProgramCard should render correctly in RTL 1`] = `
     >
       <svg
         aria-hidden="true"
-<<<<<<< HEAD
-        class="c9"
-=======
         class="c10"
->>>>>>> 6fe43b9a183ca4fba1d787879b958daf0043b85e
         focusable="false"
         height="12px"
         viewBox="0 0 13 12"
