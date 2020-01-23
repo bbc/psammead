@@ -51,7 +51,7 @@ export const StartTimestamp = ({
   service,
 }) => {
   return (
-    <StyledTimestamp script={script} service={service}>
+    <StyledTimestamp script={script} service={service} aria-hidden="true">
       <TimestampContainer
         timestamp={timestamp}
         dateTimeFormat="YYYY-MM-DD"

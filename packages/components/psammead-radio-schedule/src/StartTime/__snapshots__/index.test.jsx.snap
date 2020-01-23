@@ -113,6 +113,7 @@ exports[`StartTime should render LTR correctly 1`] = `
     </svg>
   </span>
   <span
+    aria-hidden="true"
     class="c3"
   >
     <time
@@ -242,6 +243,7 @@ exports[`StartTime should render RTL correctly 1`] = `
     </svg>
   </span>
   <span
+    aria-hidden="true"
     class="c3"
   >
     <time
