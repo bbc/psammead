@@ -1,25 +1,19 @@
 import React from 'react';
 import styled, { css } from 'styled-components';
 import { node, bool, string, oneOf, shape } from 'prop-types';
-import {
-  GEL_SPACING,
-  GEL_SPACING_DBL,
-  GEL_GUTTER_BELOW_600PX,
-  GEL_GUTTER_ABOVE_600PX,
-} from '@bbc/gel-foundations/spacings';
+import { GEL_SPACING, GEL_SPACING_DBL } from '@bbc/gel-foundations/spacings';
 import {
   GEL_GROUP_2_SCREEN_WIDTH_MIN,
   GEL_GROUP_2_SCREEN_WIDTH_MAX,
   GEL_GROUP_3_SCREEN_WIDTH_MIN,
   GEL_GROUP_3_SCREEN_WIDTH_MAX,
   GEL_GROUP_4_SCREEN_WIDTH_MIN,
-  GEL_GROUP_4_SCREEN_WIDTH_MAX,
   GEL_GROUP_5_SCREEN_WIDTH_MIN,
 } from '@bbc/gel-foundations/breakpoints';
 import {
-  getPica,
   getParagon,
   getLongPrimer,
+  getDoublePica,
 } from '@bbc/gel-foundations/typography';
 import {
   C_EBON,
@@ -34,98 +28,41 @@ import {
 } from '@bbc/psammead-styles/font-styles';
 import { scriptPropType } from '@bbc/gel-foundations/prop-types';
 import { grid } from '@bbc/psammead-styles/detection';
+import ImageGridItem from './ImageStyles';
+import TextGridItem from './TextStyles';
 
-const twoOfSixColumnsMaxWidthScaleable = `33.33%`;
-// (2 / 6) * 100 = 0.3333333333 = 33.33%
+const PROMO_TYPES = oneOf(['top', 'regular', 'leading']);
 
-const fourOfSixColumnsMaxWidthScaleable = `66.67%`;
-// (4 / 6) * 100 = 66.6666666667 = 66.67%
-
-const fullWidthColumnsMaxScaleable = `100%`;
-// (12 / 12) * 100 = 100 = 100%
-
-const halfWidthColumnsMaxScaleable = `50%`;
-
-const gridFallbackImageWidth = css`
-  width: calc(${halfWidthColumnsMaxScaleable} - ${GEL_SPACING});
+const wrapperTopStoryStyles = `
+  @media (min-width: ${GEL_GROUP_5_SCREEN_WIDTH_MIN}) {
+    grid-template-columns: repeat(12, 1fr);
+  }
 `;
+
+const wrapperRegularStyles = `
+  @media (min-width: ${GEL_GROUP_4_SCREEN_WIDTH_MIN}) {
+    display: block;
+  }
+`;
+
+const wrapperStyles = {
+  top: wrapperTopStoryStyles,
+  regular: wrapperRegularStyles,
+  leading: '',
+};
 
 const StoryPromoWrapper = styled.div`
   position: relative;
-
   @supports (${grid}) {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    grid-column-gap: ${GEL_GUTTER_BELOW_600PX};
+    grid-column-gap: ${GEL_SPACING};
 
     @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
-      grid-column-gap: ${GEL_GUTTER_ABOVE_600PX};
+      grid-column-gap: ${GEL_SPACING_DBL};
     }
 
-    ${({ topStory }) =>
-      topStory
-        ? `
-          @media (min-width: ${GEL_GROUP_5_SCREEN_WIDTH_MIN}) {
-            grid-template-columns: repeat(12, 1fr);
-          }
-        `
-        : `
-          @media (min-width: ${GEL_GROUP_4_SCREEN_WIDTH_MIN}) {
-            display: block;
-          }
-        `}
-  }
-`;
-
-const ImageGridColumnsTopStory = css`
-  grid-column: 1 / span 6;
-
-  @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) and (max-width: ${GEL_GROUP_4_SCREEN_WIDTH_MAX}) {
-    grid-column: 1 / span 3;
-  }
-`;
-
-const ImageGridColumns = css`
-  grid-column: 1 / span 2;
-`;
-
-const ImageGridFallbackTopStory = css`
-  margin-bottom: ${GEL_GUTTER_BELOW_600PX};
-  width: ${fullWidthColumnsMaxScaleable};
-
-  @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
-    ${gridFallbackImageWidth};
-    margin-bottom: 0;
-  }
-
-  @media (min-width: ${GEL_GROUP_4_SCREEN_WIDTH_MIN}) {
-    ${gridFallbackImageWidth};
-  }
-`;
-
-const ImageGridFallback = css`
-  width: ${twoOfSixColumnsMaxWidthScaleable};
-
-  @media (min-width: ${GEL_GROUP_4_SCREEN_WIDTH_MIN}) {
-    display: block;
-    width: 100%;
-  }
-`;
-
-const ImageGridItem = styled.div`
-  display: inline-block;
-  vertical-align: top;
-  position: relative;
-
-  ${({ topStory }) =>
-    topStory ? ImageGridFallbackTopStory : ImageGridFallback}
-
-  @supports (${grid}) {
-    display: block;
-    width: initial;
-
-    ${({ topStory }) =>
-      topStory ? ImageGridColumnsTopStory : ImageGridColumns}
+    ${({ promoType }) => wrapperStyles[promoType]}
   }
 `;
 
@@ -133,137 +70,102 @@ const ImageContentsWrapper = styled.div`
   position: relative;
 `;
 
+const positionBottomOfParent = `
+  position: absolute;
+  bottom: 0;
+`;
+
+const positionBottomOfParentGroup2 = `
+  @media (min-width: ${GEL_GROUP_2_SCREEN_WIDTH_MIN}) {
+    ${positionBottomOfParent}
+  }
+`;
+
+const mediaIndicatorStyles = {
+  top: positionBottomOfParent,
+  regular: positionBottomOfParentGroup2,
+  leading: positionBottomOfParentGroup2,
+};
+
 const InlineMediaIndicator = styled.div`
-  ${({ topStory }) =>
-    topStory
-      ? `
-      position: absolute;
-      bottom: 0;
-      `
-      : `
-      @media (min-width: ${GEL_GROUP_2_SCREEN_WIDTH_MIN}) {
-        position: absolute;
-        bottom: 0;
-      }
-      `}
+  ${({ promoType }) => mediaIndicatorStyles[promoType]}
 `;
 
-const TextGridColumnsTopStory = css`
-  grid-column: 1 / span 6;
-
-  @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
-    grid-column: 4 / span 3;
-  }
-
-  @media (min-width: ${GEL_GROUP_5_SCREEN_WIDTH_MIN}) {
-    grid-column: 7 / span 6;
-  }
-`;
-
-const TextGridColumns = css`
-  grid-column: 3 / span 4;
-
-  ${({ displayImage }) => !displayImage && `grid-column: 1 / span 6;`}
-
-  @media (min-width: ${GEL_GROUP_4_SCREEN_WIDTH_MIN}) {
-    padding-top: ${GEL_SPACING};
-  }
-`;
-
-const TextGridFallbackTopStory = css`
-  @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
-    width: ${halfWidthColumnsMaxScaleable};
-    padding: 0 ${GEL_SPACING_DBL};
-  }
-
-  @media (min-width: ${GEL_GROUP_4_SCREEN_WIDTH_MIN}) {
-    width: ${halfWidthColumnsMaxScaleable};
-  }
-`;
-
-const TextGridFallback = css`
-  width: ${fourOfSixColumnsMaxWidthScaleable};
-  padding: 0 ${GEL_SPACING};
-
-  @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
-    padding: 0 ${GEL_SPACING_DBL};
-  }
-
-  @media (min-width: ${GEL_GROUP_4_SCREEN_WIDTH_MIN}) {
-    display: block;
-    width: 100%;
-    padding: ${GEL_SPACING} 0;
-  }
-
-  ${({ displayImage }) =>
-    !displayImage &&
-    `width: ${fullWidthColumnsMaxScaleable}; >div{ vertical-align: middle; }`}
-`;
-
-const TextGridItem = styled.div`
-  display: inline-block;
-  vertical-align: top;
-
-  ${({ topStory }) => (topStory ? TextGridFallbackTopStory : TextGridFallback)}
-
-  @supports (${grid}) {
-    display: block;
-    width: initial;
-    padding: initial;
-
-    ${({ topStory }) => (topStory ? TextGridColumnsTopStory : TextGridColumns)}
-  }
-
-  ${({ displayImage }) =>
-    !displayImage &&
-    `>div{ display:inline-block; padding: 0; vertical-align:initial; } `}
-`;
+const headlineTopStoryTypography = script => getParagon(script);
+const headlineLeadingStoryTypography = script => getDoublePica(script);
 
 // This is needed to get around the issue of IE11 not supporting
-// nested media queries (which would be returned by getParagon() and
-// getGreatPrimer())
-const getHeadlineFontStyle = (script, topStory) => {
-  const type = topStory ? 'paragon' : 'greatPrimer';
-
-  const fontSize = script[type].groupD.fontSize / 16;
-  const lineHeight = script[type].groupD.lineHeight / 16;
-
+// nested media queries (so not using getGreatPrimer() & getPica())
+const headlineRegularTypography = script => {
+  const fontSize = (type, group) => script[type][group].fontSize / 16;
+  const lineHeight = (type, group) => script[type][group].lineHeight / 16;
   return css`
-    font-size: ${fontSize}rem;
-    line-height: ${lineHeight}rem;
+    font-size: ${fontSize('pica', 'groupA')}rem;
+    line-height: ${lineHeight('pica', 'groupA')}rem;
+    @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
+      font-size: ${fontSize('greatPrimer', 'groupB')}rem;
+      line-height: ${lineHeight('greatPrimer', 'groupB')}rem;
+    }
+    ${({ promoHasImage }) =>
+      !promoHasImage &&
+      `
+      @media (min-width: ${GEL_GROUP_4_SCREEN_WIDTH_MIN}) {
+        font-size: ${fontSize('pica', 'groupD')}rem;
+        line-height: ${lineHeight('pica', 'groupD')}rem;
+      `}
   `;
 };
 
+const headlineTypography = script => ({
+  top: headlineTopStoryTypography(script),
+  regular: headlineRegularTypography(script),
+  leading: headlineLeadingStoryTypography(script),
+});
+
 export const Headline = styled.h3`
-  ${({ script, topStory }) =>
-    script && (topStory ? getParagon(script) : getPica(script))}
+  ${({ script, promoType }) => script && headlineTypography(script)[promoType]}
   ${({ service }) => getSerifMedium(service)}
   color: ${C_EBON};
   margin: 0; /* Reset */
   padding-bottom: ${GEL_SPACING};
   ${({ promoHasImage }) => !promoHasImage && `display: inline;`}
-
-  @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
-    ${({ script, topStory }) =>
-      script && getHeadlineFontStyle(script, topStory)}
-  }
-
-  @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MAX}) {
-    ${({ script, promoHasImage }) =>
-      !promoHasImage && script && getPica(script)}
-  }
 `;
 
 Headline.propTypes = {
   script: shape(scriptPropType).isRequired,
   service: string.isRequired,
   promoHasImage: bool,
-  topStory: bool,
+  promoType: PROMO_TYPES,
 };
 
 Headline.defaultProps = {
   promoHasImage: true,
-  topStory: false,
+  promoType: 'regular',
+};
+
+const summaryTopStoryStyles = `
+  @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) and (max-width: ${GEL_GROUP_3_SCREEN_WIDTH_MAX}) {
+    display: none;
+    visibility: hidden;
+  }
+`;
+
+const summaryRegularStyles = `
+  @media (max-width: ${GEL_GROUP_2_SCREEN_WIDTH_MAX}) {
+    display: none;
+    visibility: hidden;
+  }
+
+  @media (min-width: ${GEL_GROUP_4_SCREEN_WIDTH_MIN}) {
+    display: none;
+    visibility: hidden;
+  }
+`;
+
+const summaryStyles = {
+  top: summaryTopStoryStyles,
+  regular: summaryRegularStyles,
+  leading: summaryRegularStyles,
 };
 
 export const Summary = styled.p`
@@ -275,37 +177,19 @@ export const Summary = styled.p`
 
   ${({ promoHasImage }) => !promoHasImage && `padding-top: ${GEL_SPACING};`}
 
-  ${({ topStory }) =>
-    topStory
-      ? `
-        @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) and (max-width: ${GEL_GROUP_3_SCREEN_WIDTH_MAX}) {
-          display: none;
-          visibility: hidden;
-        }
-      `
-      : `
-        @media (max-width: ${GEL_GROUP_2_SCREEN_WIDTH_MAX}) {
-          display: none;
-          visibility: hidden;
-        }
-
-        @media (min-width: ${GEL_GROUP_4_SCREEN_WIDTH_MIN}) {
-          display: none;
-          visibility: hidden;
-        }
-      `}
+  ${({ promoType }) => summaryStyles[promoType]}
 `;
 
 Summary.propTypes = {
   script: shape(scriptPropType).isRequired,
   service: string.isRequired,
   promoHasImage: bool,
-  topStory: bool,
+  promoType: PROMO_TYPES,
 };
 
 Summary.defaultProps = {
   promoHasImage: true,
-  topStory: false,
+  promoType: 'regular',
 };
 
 export const Link = styled.a`
@@ -340,7 +224,9 @@ export const LiveLabel = styled.span.attrs({ 'aria-hidden': 'true' })`
   color: ${C_POSTBOX};
   display: inline-block;
   ${({ dir }) =>
-    dir === 'rtl' ? 'margin-left: 0.5rem;' : 'margin-right: 0.5rem;'}
+    dir === 'rtl'
+      ? `margin-left: ${GEL_SPACING};`
+      : `margin-right: ${GEL_SPACING};`}
 `;
 
 LiveLabel.propTypes = {
@@ -356,16 +242,16 @@ const StoryPromo = ({
   image,
   info,
   mediaIndicator,
-  topStory,
+  promoType,
   displayImage,
   ...props
 }) => {
   const renderImage = displayImage && (
-    <ImageGridItem topStory={topStory}>
+    <ImageGridItem promoType={promoType}>
       <ImageContentsWrapper>
         {image}
         {mediaIndicator && (
-          <InlineMediaIndicator topStory={topStory}>
+          <InlineMediaIndicator promoType={promoType}>
             {mediaIndicator}
           </InlineMediaIndicator>
         )}
@@ -373,13 +259,26 @@ const StoryPromo = ({
     </ImageGridItem>
   );
 
+  const renderText = (
+    <TextGridItem promoType={promoType} displayImage={displayImage}>
+      {!displayImage && mediaIndicator}
+      {info}
+    </TextGridItem>
+  );
+
   return (
-    <StoryPromoWrapper topStory={topStory} {...props}>
-      {renderImage}
-      <TextGridItem topStory={topStory} displayImage={displayImage}>
-        {!displayImage && mediaIndicator}
-        {info}
-      </TextGridItem>
+    <StoryPromoWrapper promoType={promoType} {...props}>
+      {promoType === 'leading' ? (
+        <>
+          {renderText}
+          {renderImage}
+        </>
+      ) : (
+        <>
+          {renderImage}
+          {renderText}
+        </>
+      )}
     </StoryPromoWrapper>
   );
 };
@@ -388,13 +287,13 @@ StoryPromo.propTypes = {
   image: node.isRequired,
   info: node.isRequired,
   mediaIndicator: node,
-  topStory: bool,
+  promoType: PROMO_TYPES,
   displayImage: bool,
 };
 
 StoryPromo.defaultProps = {
   mediaIndicator: null,
-  topStory: false,
+  promoType: 'regular',
   displayImage: true,
 };
 

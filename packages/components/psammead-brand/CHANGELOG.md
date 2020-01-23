@@ -3,6 +3,9 @@
 <!-- prettier-ignore -->
 | Version | Description |
 | ------- | ----------- |
+| 5.1.8 | [PR#2996](https://github.com/bbc/psammead/pull/2996) Talos - Bump Dependencies - @bbc/psammead-script-link |
+| 5.1.7 | [PR#2946](https://github.com/bbc/psammead/pull/2946) Move skip to content link top to stay within brand banner height |
+| 5.1.6 | [PR#2982](https://github.com/bbc/psammead/pull/2982) Talos - Bump Dependencies - @bbc/psammead-script-link |
 | 5.1.5 | [PR#2978](https://github.com/bbc/psammead/pull/2978) Talos - Bump Dependencies - @bbc/gel-foundations, @bbc/psammead-script-link |
 | 5.1.4 | [PR#2973](https://github.com/bbc/psammead/pull/2973) Talos - Bump Dependencies - @bbc/psammead-styles |
 | 5.1.3 | [PR#2889](https://github.com/bbc/psammead/pull/2889) Shrink brand svg before wrapping the script link |

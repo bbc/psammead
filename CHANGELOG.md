@@ -3,7 +3,14 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
-| 2.0.55 | [PR#2976](https://github.com/bbc/psammead/pull/2976) Upgrade to Styled Components v5 |
+| 2.0.62 | [PR#2976](https://github.com/bbc/psammead/pull/2976) Upgrade to Styled Components v5 |
+| 2.0.61 | [PR#2996](https://github.com/bbc/psammead/pull/2996) Talos - Bump Dependencies - @bbc/psammead-assets, @bbc/psammead-media-indicator |
+| 2.0.60 | [PR#2992](https://github.com/bbc/psammead/pull/2992) Talos - Bump Dependencies - @bbc/psammead-image-placeholder, @bbc/psammead-media-indicator |
+| 2.0.59 | [PR#2989](https://github.com/bbc/psammead/pull/2989) Talos - Bump Dependencies - @bbc/psammead-assets |
+| 2.0.58 | [PR#2987](https://github.com/bbc/psammead/pull/2987) Bumping dependencies |
+| 2.0.57 | [PR#2980](https://github.com/bbc/psammead/pull/2980) Bumping babel/cli and removing configFile option from build script |
+| 2.0.56 | [PR#2984](https://github.com/bbc/psammead/pull/2984) Talos - Bump Dependencies - @bbc/psammead-brand |
+| 2.0.55 | [PR#2982](https://github.com/bbc/psammead/pull/2982) Talos - Bump Dependencies - @bbc/psammead-brand, @bbc/psammead-caption, @bbc/psammead-copyright, @bbc/psammead-grid, @bbc/psammead-media-indicator, @bbc/psammead-paragraph, @bbc/psammead-storybook-helpers, @bbc/psammead-timestamp |
 | 2.0.54 | [PR#2978](https://github.com/bbc/psammead/pull/2978) Talos - Bump Dependencies - @bbc/gel-foundations, @bbc/psammead-brand, @bbc/psammead-caption, @bbc/psammead-copyright, @bbc/psammead-grid, @bbc/psammead-image-placeholder, @bbc/psammead-inline-link, @bbc/psammead-media-indicator, @bbc/psammead-paragraph, @bbc/psammead-timestamp |
 | 2.0.53 | [PR#2973](https://github.com/bbc/psammead/pull/2973) Talos - Bump Dependencies - @bbc/psammead-brand, @bbc/psammead-styles |
 | 2.0.52 | [PR#2955](https://github.com/bbc/psammead/pull/2955) Talos - Bump Dependencies - @bbc/psammead-storybook-helpers |

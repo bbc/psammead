@@ -39,10 +39,6 @@ exports[`MostRead should render with ltr most read with correct dir 1`] = `
   padding-right: 1rem;
 }
 
-.c14 {
-  padding-top: 0.5rem;
-}
-
 .c9 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -250,121 +246,121 @@ exports[`MostRead should render with ltr most read with correct dir 1`] = `
 }
 
 @media (max-width:14.9375rem) {
-  .c15 {
+  .c14 {
     min-width: 2rem;
   }
 }
 
 @media (min-width:15rem) and (max-width:24.9375rem) {
-  .c15 {
+  .c14 {
     min-width: 2.5rem;
   }
 }
 
 @media (min-width:25rem) and (max-width:37.4375rem) {
-  .c15 {
+  .c14 {
     min-width: 3rem;
   }
 }
 
 @media (min-width:37.5rem) and (max-width:80rem) {
-  .c15 {
+  .c14 {
     min-width: 4rem;
   }
 }
 
 @media (min-width:80rem) {
-  .c15 {
+  .c14 {
     min-width: auto;
   }
 }
 
 @media (max-width:14.9375rem) {
-  .c16 {
+  .c15 {
     min-width: 2rem;
   }
 }
 
 @media (min-width:15rem) and (max-width:24.9375rem) {
-  .c16 {
+  .c15 {
     min-width: 2.5rem;
   }
 }
 
 @media (min-width:25rem) and (max-width:37.4375rem) {
-  .c16 {
+  .c15 {
     min-width: 3rem;
   }
 }
 
 @media (min-width:37.5rem) and (max-width:80rem) {
-  .c16 {
+  .c15 {
     min-width: auto;
   }
 }
 
 @media (min-width:80rem) {
-  .c16 {
+  .c15 {
     min-width: 4.25rem;
   }
 }
 
 @media (max-width:14.9375rem) {
-  .c17 {
+  .c16 {
     min-width: 2rem;
   }
 }
 
 @media (min-width:15rem) and (max-width:24.9375rem) {
-  .c17 {
+  .c16 {
     min-width: 2.5rem;
   }
 }
 
 @media (min-width:25rem) and (max-width:37.4375rem) {
-  .c17 {
+  .c16 {
     min-width: 3rem;
   }
 }
 
 @media (min-width:37.5rem) and (max-width:80rem) {
-  .c17 {
+  .c16 {
     min-width: 4rem;
   }
 }
 
 @media (min-width:80rem) {
-  .c17 {
+  .c16 {
     min-width: auto;
   }
 }
 
 @media (max-width:14.9375rem) {
-  .c18 {
+  .c17 {
     min-width: 2rem;
   }
 }
 
 @media (min-width:15rem) and (max-width:24.9375rem) {
-  .c18 {
+  .c17 {
     min-width: 2.5rem;
   }
 }
 
 @media (min-width:25rem) and (max-width:37.4375rem) {
-  .c18 {
+  .c17 {
     min-width: 3rem;
   }
 }
 
 @media (min-width:37.5rem) and (max-width:80rem) {
-  .c18 {
+  .c17 {
     min-width: auto;
   }
 }
 
 @media (min-width:80rem) {
-  .c18 {
+  .c17 {
     min-width: auto;
   }
 }
@@ -498,9 +494,6 @@ exports[`MostRead should render with ltr most read with correct dir 1`] = `
           >
             Could a computer ever create better art than a human?
           </a>
-          <div
-            class="c14"
-          />
         </div>
       </div>
     </li>
@@ -513,7 +506,7 @@ exports[`MostRead should render with ltr most read with correct dir 1`] = `
         class="c9"
       >
         <div
-          class="c15"
+          class="c14"
           dir="ltr"
         >
           <span
@@ -532,9 +525,6 @@ exports[`MostRead should render with ltr most read with correct dir 1`] = `
           >
             Could a computer ever create better art than a human?
           </a>
-          <div
-            class="c14"
-          />
         </div>
       </div>
     </li>
@@ -566,9 +556,6 @@ exports[`MostRead should render with ltr most read with correct dir 1`] = `
           >
             Could a computer ever create better art than a human?
           </a>
-          <div
-            class="c14"
-          />
         </div>
       </div>
     </li>
@@ -581,7 +568,7 @@ exports[`MostRead should render with ltr most read with correct dir 1`] = `
         class="c9"
       >
         <div
-          class="c15"
+          class="c14"
           dir="ltr"
         >
           <span
@@ -600,9 +587,6 @@ exports[`MostRead should render with ltr most read with correct dir 1`] = `
           >
             Could a computer ever create better art than a human?
           </a>
-          <div
-            class="c14"
-          />
         </div>
       </div>
     </li>
@@ -615,7 +599,7 @@ exports[`MostRead should render with ltr most read with correct dir 1`] = `
         class="c9"
       >
         <div
-          class="c16"
+          class="c15"
           dir="ltr"
         >
           <span
@@ -634,9 +618,6 @@ exports[`MostRead should render with ltr most read with correct dir 1`] = `
           >
             Could a computer ever create better art than a human?
           </a>
-          <div
-            class="c14"
-          />
         </div>
       </div>
     </li>
@@ -649,7 +630,7 @@ exports[`MostRead should render with ltr most read with correct dir 1`] = `
         class="c9"
       >
         <div
-          class="c17"
+          class="c16"
           dir="ltr"
         >
           <span
@@ -668,9 +649,6 @@ exports[`MostRead should render with ltr most read with correct dir 1`] = `
           >
             Could a computer ever create better art than a human?
           </a>
-          <div
-            class="c14"
-          />
         </div>
       </div>
     </li>
@@ -683,7 +661,7 @@ exports[`MostRead should render with ltr most read with correct dir 1`] = `
         class="c9"
       >
         <div
-          class="c18"
+          class="c17"
           dir="ltr"
         >
           <span
@@ -702,9 +680,6 @@ exports[`MostRead should render with ltr most read with correct dir 1`] = `
           >
             Could a computer ever create better art than a human?
           </a>
-          <div
-            class="c14"
-          />
         </div>
       </div>
     </li>
@@ -717,7 +692,7 @@ exports[`MostRead should render with ltr most read with correct dir 1`] = `
         class="c9"
       >
         <div
-          class="c17"
+          class="c16"
           dir="ltr"
         >
           <span
@@ -736,43 +711,6 @@ exports[`MostRead should render with ltr most read with correct dir 1`] = `
           >
             Could a computer ever create better art than a human?
           </a>
-          <div
-            class="c14"
-          />
-        </div>
-      </div>
-    </li>
-    <li
-      class="c7 c8"
-      dir="ltr"
-      role="listitem"
-    >
-      <div
-        class="c9"
-      >
-        <div
-          class="c18"
-          dir="ltr"
-        >
-          <span
-            class="c11"
-          >
-            9
-          </span>
-        </div>
-        <div
-          class="c12"
-          dir="ltr"
-        >
-          <a
-            class="c13"
-            href="https://www.bbc.com/news/articles/cn7k01xp8kxo"
-          >
-            Could a computer ever create better art than a human?
-          </a>
-          <div
-            class="c14"
-          />
         </div>
       </div>
     </li>
@@ -791,6 +729,37 @@ exports[`MostRead should render with ltr most read with correct dir 1`] = `
           <span
             class="c11"
           >
+            9
+          </span>
+        </div>
+        <div
+          class="c12"
+          dir="ltr"
+        >
+          <a
+            class="c13"
+            href="https://www.bbc.com/news/articles/cn7k01xp8kxo"
+          >
+            Could a computer ever create better art than a human?
+          </a>
+        </div>
+      </div>
+    </li>
+    <li
+      class="c7 c8"
+      dir="ltr"
+      role="listitem"
+    >
+      <div
+        class="c9"
+      >
+        <div
+          class="c16"
+          dir="ltr"
+        >
+          <span
+            class="c11"
+          >
             10
           </span>
         </div>
@@ -804,9 +773,6 @@ exports[`MostRead should render with ltr most read with correct dir 1`] = `
           >
             Could a computer ever create better art than a human?
           </a>
-          <div
-            class="c14"
-          />
         </div>
       </div>
     </li>
@@ -851,10 +817,6 @@ exports[`MostRead should render with rtl most read with correct dir 1`] = `
   padding-bottom: 1.5rem;
   padding-right: 1rem;
   padding-left: 1rem;
-}
-
-.c14 {
-  padding-top: 0.5rem;
 }
 
 .c9 {
@@ -1064,121 +1026,121 @@ exports[`MostRead should render with rtl most read with correct dir 1`] = `
 }
 
 @media (max-width:14.9375rem) {
-  .c15 {
+  .c14 {
     min-width: 2.5rem;
   }
 }
 
 @media (min-width:15rem) and (max-width:24.9375rem) {
-  .c15 {
+  .c14 {
     min-width: 2.5rem;
   }
 }
 
 @media (min-width:25rem) and (max-width:37.4375rem) {
-  .c15 {
+  .c14 {
     min-width: 2.5rem;
   }
 }
 
 @media (min-width:37.5rem) and (max-width:80rem) {
-  .c15 {
+  .c14 {
     min-width: 4rem;
   }
 }
 
 @media (min-width:80rem) {
-  .c15 {
+  .c14 {
     min-width: auto;
   }
 }
 
 @media (max-width:14.9375rem) {
-  .c16 {
+  .c15 {
     min-width: 2.5rem;
   }
 }
 
 @media (min-width:15rem) and (max-width:24.9375rem) {
-  .c16 {
+  .c15 {
     min-width: 2.5rem;
   }
 }
 
 @media (min-width:25rem) and (max-width:37.4375rem) {
-  .c16 {
+  .c15 {
     min-width: 2.5rem;
   }
 }
 
 @media (min-width:37.5rem) and (max-width:80rem) {
-  .c16 {
+  .c15 {
     min-width: auto;
   }
 }
 
 @media (min-width:80rem) {
-  .c16 {
+  .c15 {
     min-width: 3.75rem;
   }
 }
 
 @media (max-width:14.9375rem) {
-  .c17 {
+  .c16 {
     min-width: 2.5rem;
   }
 }
 
 @media (min-width:15rem) and (max-width:24.9375rem) {
-  .c17 {
+  .c16 {
     min-width: 2.5rem;
   }
 }
 
 @media (min-width:25rem) and (max-width:37.4375rem) {
-  .c17 {
+  .c16 {
     min-width: 2.5rem;
   }
 }
 
 @media (min-width:37.5rem) and (max-width:80rem) {
-  .c17 {
+  .c16 {
     min-width: 4rem;
   }
 }
 
 @media (min-width:80rem) {
-  .c17 {
+  .c16 {
     min-width: auto;
   }
 }
 
 @media (max-width:14.9375rem) {
-  .c18 {
+  .c17 {
     min-width: 2.5rem;
   }
 }
 
 @media (min-width:15rem) and (max-width:24.9375rem) {
-  .c18 {
+  .c17 {
     min-width: 2.5rem;
   }
 }
 
 @media (min-width:25rem) and (max-width:37.4375rem) {
-  .c18 {
+  .c17 {
     min-width: 2.5rem;
   }
 }
 
 @media (min-width:37.5rem) and (max-width:80rem) {
-  .c18 {
+  .c17 {
     min-width: auto;
   }
 }
 
 @media (min-width:80rem) {
-  .c18 {
+  .c17 {
     min-width: auto;
   }
 }
@@ -1312,9 +1274,6 @@ exports[`MostRead should render with rtl most read with correct dir 1`] = `
           >
             لماذا يخجل البعض من اسم قريته في مصر؟
           </a>
-          <div
-            class="c14"
-          />
         </div>
       </div>
     </li>
@@ -1327,7 +1286,7 @@ exports[`MostRead should render with rtl most read with correct dir 1`] = `
         class="c9"
       >
         <div
-          class="c15"
+          class="c14"
           dir="rtl"
         >
           <span
@@ -1346,9 +1305,6 @@ exports[`MostRead should render with rtl most read with correct dir 1`] = `
           >
             لماذا يخجل البعض من اسم قريته في مصر؟
           </a>
-          <div
-            class="c14"
-          />
         </div>
       </div>
     </li>
@@ -1380,9 +1336,6 @@ exports[`MostRead should render with rtl most read with correct dir 1`] = `
           >
             لماذا يخجل البعض من اسم قريته في مصر؟
           </a>
-          <div
-            class="c14"
-          />
         </div>
       </div>
     </li>
@@ -1395,7 +1348,7 @@ exports[`MostRead should render with rtl most read with correct dir 1`] = `
         class="c9"
       >
         <div
-          class="c15"
+          class="c14"
           dir="rtl"
         >
           <span
@@ -1414,9 +1367,6 @@ exports[`MostRead should render with rtl most read with correct dir 1`] = `
           >
             لماذا يخجل البعض من اسم قريته في مصر؟
           </a>
-          <div
-            class="c14"
-          />
         </div>
       </div>
     </li>
@@ -1429,7 +1379,7 @@ exports[`MostRead should render with rtl most read with correct dir 1`] = `
         class="c9"
       >
         <div
-          class="c16"
+          class="c15"
           dir="rtl"
         >
           <span
@@ -1448,9 +1398,6 @@ exports[`MostRead should render with rtl most read with correct dir 1`] = `
           >
             لماذا يخجل البعض من اسم قريته في مصر؟
           </a>
-          <div
-            class="c14"
-          />
         </div>
       </div>
     </li>
@@ -1463,7 +1410,7 @@ exports[`MostRead should render with rtl most read with correct dir 1`] = `
         class="c9"
       >
         <div
-          class="c17"
+          class="c16"
           dir="rtl"
         >
           <span
@@ -1482,9 +1429,6 @@ exports[`MostRead should render with rtl most read with correct dir 1`] = `
           >
             لماذا يخجل البعض من اسم قريته في مصر؟
           </a>
-          <div
-            class="c14"
-          />
         </div>
       </div>
     </li>
@@ -1497,7 +1441,7 @@ exports[`MostRead should render with rtl most read with correct dir 1`] = `
         class="c9"
       >
         <div
-          class="c18"
+          class="c17"
           dir="rtl"
         >
           <span
@@ -1516,9 +1460,6 @@ exports[`MostRead should render with rtl most read with correct dir 1`] = `
           >
             لماذا يخجل البعض من اسم قريته في مصر؟
           </a>
-          <div
-            class="c14"
-          />
         </div>
       </div>
     </li>
@@ -1531,7 +1472,7 @@ exports[`MostRead should render with rtl most read with correct dir 1`] = `
         class="c9"
       >
         <div
-          class="c17"
+          class="c16"
           dir="rtl"
         >
           <span
@@ -1550,43 +1491,6 @@ exports[`MostRead should render with rtl most read with correct dir 1`] = `
           >
             لماذا يخجل البعض من اسم قريته في مصر؟
           </a>
-          <div
-            class="c14"
-          />
-        </div>
-      </div>
-    </li>
-    <li
-      class="c7 c8"
-      dir="rtl"
-      role="listitem"
-    >
-      <div
-        class="c9"
-      >
-        <div
-          class="c18"
-          dir="rtl"
-        >
-          <span
-            class="c11"
-          >
-            ۹
-          </span>
-        </div>
-        <div
-          class="c12"
-          dir="rtl"
-        >
-          <a
-            class="c13"
-            href="https://www.bbc.com/arabic/articles/c1er5mjnznzo"
-          >
-            لماذا يخجل البعض من اسم قريته في مصر؟
-          </a>
-          <div
-            class="c14"
-          />
         </div>
       </div>
     </li>
@@ -1605,6 +1509,37 @@ exports[`MostRead should render with rtl most read with correct dir 1`] = `
           <span
             class="c11"
           >
+            ۹
+          </span>
+        </div>
+        <div
+          class="c12"
+          dir="rtl"
+        >
+          <a
+            class="c13"
+            href="https://www.bbc.com/arabic/articles/c1er5mjnznzo"
+          >
+            لماذا يخجل البعض من اسم قريته في مصر؟
+          </a>
+        </div>
+      </div>
+    </li>
+    <li
+      class="c7 c8"
+      dir="rtl"
+      role="listitem"
+    >
+      <div
+        class="c9"
+      >
+        <div
+          class="c16"
+          dir="rtl"
+        >
+          <span
+            class="c11"
+          >
             ۱۰
           </span>
         </div>
@@ -1618,9 +1553,6 @@ exports[`MostRead should render with rtl most read with correct dir 1`] = `
           >
             لماذا يخجل البعض من اسم قريته في مصر؟
           </a>
-          <div
-            class="c14"
-          />
         </div>
       </div>
     </li>

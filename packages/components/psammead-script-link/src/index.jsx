@@ -1,6 +1,11 @@
 import React from 'react';
 import styled from 'styled-components';
 import {
+  GEL_SPACING,
+  GEL_SPACING_DBL,
+  GEL_SPACING_QUIN,
+} from '@bbc/gel-foundations/spacings';
+import {
   GEL_GROUP_2_SCREEN_WIDTH_MIN,
   GEL_GROUP_2_SCREEN_WIDTH_MAX,
 } from '@bbc/gel-foundations/breakpoints';
@@ -18,13 +23,13 @@ const StyledLink = styled.a`
   text-decoration: none;
   height: 2.25rem;
   border: 0.0625rem solid ${C_WHITE};
-  margin: 0.5rem 0 0.5rem 0.5rem;
+  margin: ${GEL_SPACING} 0 ${GEL_SPACING} ${GEL_SPACING};
 
   > span {
     margin: 0.1875rem;
     display: inline-block;
     height: calc(100%);
-    padding: 0 1rem;
+    padding: 0 ${GEL_SPACING_DBL};
   }
 
   &:hover > span,
@@ -34,15 +39,15 @@ const StyledLink = styled.a`
   }
 
   @media (min-width: ${GEL_GROUP_2_SCREEN_WIDTH_MIN}) {
-    line-height: calc(2.25rem - 0.5rem);
+    line-height: calc(2.25rem - ${GEL_SPACING});
   }
 
   @media (max-width: ${GEL_GROUP_2_SCREEN_WIDTH_MAX}) {
-    height: 2.5rem;
+    height: ${GEL_SPACING_QUIN};
 
     > span {
       padding: 0 0.75rem;
-      line-height: calc(2.5rem - 0.5rem);
+      line-height: calc(${GEL_SPACING_QUIN} - ${GEL_SPACING});
     }
   }
 `;

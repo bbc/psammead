@@ -1,6 +1,6 @@
 {
   "name": "@bbc/psammead-media-indicator",
-  "version": "2.6.23",
+  "version": "2.6.26",
   "main": "dist/index.js",
   "module": "esm/index.js",
   "sideEffects": false,
@@ -21,7 +21,7 @@
   "dependencies": {
     "@bbc/gel-foundations": "^3.4.3",
     "@bbc/psammead-styles": "^4.2.0",
-    "@bbc/psammead-assets": "^2.11.0"
+    "@bbc/psammead-assets": "^2.12.1"
   },
   "peerDependencies": {
     "react": "^16.9.0",
