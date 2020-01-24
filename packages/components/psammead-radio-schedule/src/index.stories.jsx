@@ -20,12 +20,12 @@ const stories = storiesOf(
   module,
 ).addDecorator(withKnobs);
 
-stateTypes.forEach(type => {
+stateTypes.forEach(state => {
   stories.add(
-    `${type}`,
+    `${state}`,
     () =>
       newsServiceDecorator(({ service }) =>
-        renderProgramCard({ service, state: { type, translation: type } }),
+        renderProgramCard({ service, state, localisedState: state }),
       ),
     { notes },
   );
@@ -36,10 +36,8 @@ stories.add(
   () =>
     newsServiceDecorator(({ service }) =>
       renderProgramCard({
-        state: {
-          type: stateTypes[0],
-          translation: 'live',
-        },
+        state: 'live',
+        localisedState: 'live',
         service,
         episodeTitle: 'This is a long episode title that spans multiple lines',
       }),
@@ -52,8 +50,10 @@ stories.add(
   () =>
     arabicServiceDecorator(({ service }) =>
       renderProgramCard({
-        state: { type: stateTypes[0], translation: 'مباشر' },
-        duration: { durationValue: '30:00', durationText: 'المدة الزمنية' },
+        state: stateTypes[0],
+        localisedState: 'مباشر',
+        duration: '30:00',
+        localisedDuration: 'المدة الزمنية',
         service,
       }),
     ),

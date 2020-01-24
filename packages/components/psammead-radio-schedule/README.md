@@ -27,8 +27,11 @@ npm install @bbc/psammead-radio-schedule --save
 | summary | string | yes | N/A | `'This is a summary'` |
 | episodeTitle | string | yes | N/A | `'29/01/1990'` |
 | duration | string | yes | N/A | `'30:00'` |
-| state | object | yes | N/A | `{ type: 'live', translation: 'مباشر'}` |
+| localisedDuration | string | yes | N/A | `'duration'` |
+| state | string | yes | N/A | `'live'` |
+| localisedState | string | yes | N/A | `'مباشر'` |
 | link | string | yes | N/A | `'https://bbc.com/arabic/articles/c1er5mjnznzo'` |
+| startTime | string | yes | N/A | `13:00` |
 | service | string | yes | N/A | `'news'` |
 | script | object | yes | N/A | `{ canon: { groupA: { fontSize: '28', lineHeight: '32',}, groupB: { fontSize: '32', lineHeight: '36', }, groupD: { fontSize: '44', lineHeight: '48', }, }, trafalgar: { groupA: { fontSize: '20', lineHeight: '24', }, groupB: { fontSize: '24', lineHeight: '28', }, groupD: { fontSize: '32', lineHeight: '36', }, }, }` |
 | dir | string | no | `"ltr"` | `"rtl"` |
@@ -46,11 +49,14 @@ import ProgramCard from '@bbc/psammead-radio-schedule/ProgramCard';
   service="news"
   script={latin}
   dir="ltr"
+  startTime="13:00"
   brandTitle="This is a brand title"
   summary="Could a computer ever create better art than a human?"
   episodeTitle="29/01/1990"
   duration="30:00"
+  localisedDuration="duration"
   state="live"
+  localisedState="Live"
   link="https://bbc.com/arabic/articles/c1er5mjnznzo"
 />;
 ```
