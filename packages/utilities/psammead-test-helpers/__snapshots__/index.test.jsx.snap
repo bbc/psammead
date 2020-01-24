@@ -72,10 +72,6 @@ exports[`Psammead test helpers should match the snapshot for the test component 
     <script
       src="test.js"
     />
-    <style
-      data-styled="active"
-      data-styled-version="5.0.0"
-    />
   </head>
   <body>
     <div />
