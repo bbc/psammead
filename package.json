@@ -97,7 +97,6 @@
     "glob-loader": "^0.3.0",
     "husky": "^4.0.10",
     "jest": "^24.9.0",
-    "jest-styled-components": "^7.0.0",
     "json5": "^2.1.1",
     "lerna": "^3.20.2",
     "lint-staged": "^9.5.0",
