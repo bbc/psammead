@@ -41,7 +41,7 @@ exports[`StartTime should render LTR correctly 1`] = `
   -ms-flex-align: center;
   align-items: center;
   padding-right: 0.25rem;
-  padding-left: 0.51875rem;
+  padding-left: 0.5rem;
 }
 
 .c1 > svg {
@@ -175,7 +175,7 @@ exports[`StartTime should render RTL correctly 1`] = `
   -ms-flex-align: center;
   align-items: center;
   padding-left: 0.25rem;
-  padding-right: 0.51875rem;
+  padding-right: 0.5rem;
 }
 
 .c1 > svg {
