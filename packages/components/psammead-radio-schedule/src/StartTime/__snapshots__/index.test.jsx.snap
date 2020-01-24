@@ -40,10 +40,13 @@ exports[`StartTime should render LTR correctly 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding-right: 0.25rem;
+  padding-left: 0.51875rem;
 }
 
 .c1 > svg {
   color: #5A5A5A;
+  margin: 0;
 }
 
 .c5 {
@@ -95,6 +98,7 @@ exports[`StartTime should render LTR correctly 1`] = `
 >
   <span
     class="c1"
+    dir="ltr"
   >
     <svg
       aria-hidden="true"
@@ -170,10 +174,13 @@ exports[`StartTime should render RTL correctly 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding-left: 0.25rem;
+  padding-right: 0.51875rem;
 }
 
 .c1 > svg {
   color: #5A5A5A;
+  margin: 0;
 }
 
 .c5 {
@@ -225,6 +232,7 @@ exports[`StartTime should render RTL correctly 1`] = `
 >
   <span
     class="c1"
+    dir="rtl"
   >
     <svg
       aria-hidden="true"
