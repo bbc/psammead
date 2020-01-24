@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { number, string, shape, oneOf } from 'prop-types';
+import { GEL_SPACING_HLF } from '@bbc/gel-foundations/spacings';
 import { scriptPropType } from '@bbc/gel-foundations/prop-types';
 import { C_RHINO, C_PEBBLE } from '@bbc/psammead-styles/colours';
 import { getMinion } from '@bbc/gel-foundations/typography';
@@ -8,7 +9,9 @@ import { getSansRegular } from '@bbc/psammead-styles/font-styles';
 import { coreIcons } from '@bbc/psammead-assets/svgs';
 import TimestampContainer from '@bbc/psammead-timestamp-container';
 
-const StyledStartTime = styled.div`
+const CLOCK_SIDE_PADDING = '0.51875rem';
+
+const StyledWrapper = styled.div`
   display: flex;
   align-items: center;
 `;
@@ -16,13 +19,26 @@ const StyledStartTime = styled.div`
 const StyledClock = styled.span`
   display: flex;
   align-items: center;
+  ${({ dir }) =>
+    dir === 'ltr'
+      ? `padding-right: ${GEL_SPACING_HLF}; padding-left: ${CLOCK_SIDE_PADDING};`
+      : `padding-left: ${GEL_SPACING_HLF}; padding-right: ${CLOCK_SIDE_PADDING};`}
   > svg {
     color: ${C_RHINO};
+    margin: 0;
   }
 `;
 
-const ClockIcon = () => {
-  return <StyledClock>{coreIcons.clock}</StyledClock>;
+const ClockIcon = ({ dir }) => {
+  return <StyledClock dir={dir}>{coreIcons.clock}</StyledClock>;
+};
+
+ClockIcon.propTypes = {
+  dir: oneOf(['ltr', 'rtl']),
+};
+
+ClockIcon.defaultProps = {
+  dir: 'ltr',
 };
 
 const HorizontalLine = styled.div`
@@ -82,8 +98,8 @@ StartTimestamp.defaultProps = {
 
 const StartTime = ({ timestamp, timezone, locale, script, service, dir }) => {
   return (
-    <StyledStartTime>
-      <ClockIcon />
+    <StyledWrapper>
+      <ClockIcon dir={dir} />
       <StartTimestamp
         timestamp={timestamp}
         timezone={timezone}
@@ -92,7 +108,7 @@ const StartTime = ({ timestamp, timezone, locale, script, service, dir }) => {
         service={service}
       />
       <HorizontalLine dir={dir} script={script} />
-    </StyledStartTime>
+    </StyledWrapper>
   );
 };
 
