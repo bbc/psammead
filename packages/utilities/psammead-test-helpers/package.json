@@ -27,10 +27,10 @@
     "snapshot"
   ],
   "dependencies": {
-    "styled-components": "^5.0.0"
+    "jest-styled-components": "^7.0.0"
   },
   "devDependencies": {
     "react-helmet": "^5.2.1",
-    "jest-styled-components": "^7.0.0"
+    "styled-components": "^5.0.0"
   }
 }
