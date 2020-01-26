@@ -79,7 +79,7 @@
     "babel-core": "^7.0.0-bridge.0",
     "babel-eslint": "^10.0.3",
     "babel-loader": "^8.0.4",
-    "babel-plugin-styled-components": "1.10.6",
+    "babel-plugin-styled-components": "1.10.7",
     "browserslist": "^4.8.3",
     "chalk": "^3.0.0",
     "enquirer": "^2.3.4",
