@@ -4,7 +4,7 @@ import { withKnobs } from '@storybook/addon-knobs';
 import { withServicesKnob } from '@bbc/psammead-storybook-helpers';
 import { renderProgramCard } from './testHelpers/helper';
 import notes from '../README.md';
-import StartTime, { StartTimestamp } from './StartTime';
+import StartTime from './StartTime';
 
 const storiesUnixTimestamp = 1566914061212;
 
@@ -68,22 +68,7 @@ storiesOf('Components|RadioSchedule/StartTime', module)
   .addDecorator(withKnobs)
   .addDecorator(withServicesKnob())
   .add(
-    'Timestamp',
-    ({ locale, script, service }) => {
-      return (
-        <StartTimestamp
-          timestamp={storiesUnixTimestamp}
-          timezone="Europe/London"
-          locale={locale}
-          script={script}
-          service={service}
-        />
-      );
-    },
-    { notes },
-  )
-  .add(
-    'Start time',
+    'default',
     ({ locale, script, service, dir }) => {
       return (
         <StartTime
