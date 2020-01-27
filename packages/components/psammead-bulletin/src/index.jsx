@@ -22,18 +22,8 @@ import { getPica, getLongPrimer } from '@bbc/gel-foundations/typography';
 import { mediaIcons } from '@bbc/psammead-assets/svgs';
 import VisuallyHiddenText from '@bbc/psammead-visually-hidden-text';
 import { Link, LiveLabel } from '@bbc/psammead-story-promo';
-import { grid } from '@bbc/psammead-styles/detection';
-
-const twoOfSixColumnsMaxWidthScaleable = `33.33%`;
-// (2 / 6) * 100 = 0.3333333333 = 33.33%
-
-const fourOfSixColumnsMaxWidthScaleable = `66.67%`;
-// (4 / 6) * 100 = 66.6666666667 = 66.67%
-
-const fullWidthColumnsMaxScaleable = `100%`;
-// (12 / 12) * 100 = 100 = 100%
-
-const halfWidthColumnsMaxScaleable = `50%`;
+import ImageGridItem from './ImageStyles';
+import TextGridItem from './TextStyles';
 
 const bulletinWrapperStyles = `
   position: relative;
@@ -53,69 +43,6 @@ const TVBulletinWrapper = styled.div`
   @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
     padding: ${GEL_SPACING_DBL};
   }
-`;
-
-const imageWrapperStyles = `
-  vertical-align: top;
-  display: inline-block;
-  grid-column: 1 / span 6;
-  padding: ${GEL_SPACING} ${GEL_SPACING} 0 ${GEL_SPACING};
-  @supports (${grid}) {
-    width: initial;
-  }
-`;
-
-const RadioImageGridItem = styled.div`
-  @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) and (max-width: ${GEL_GROUP_3_SCREEN_WIDTH_MAX}) {
-    grid-column: 1 / span 2;
-    width: ${twoOfSixColumnsMaxWidthScaleable};
-    padding: 0;
-  }
-  ${imageWrapperStyles};
-`;
-
-const TvImageGridItem = styled.div`
-  @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) and (max-width: ${GEL_GROUP_3_SCREEN_WIDTH_MAX}) {
-    grid-column: 1 / span 3;
-    width: ${halfWidthColumnsMaxScaleable};
-    padding: 0;
-  }
-  ${imageWrapperStyles};
-`;
-
-const textWrapperStyles = `
-  grid-column: 1 / span 6;
-  display: inline-block;
-  width: ${fullWidthColumnsMaxScaleable};
-  @supports (${grid}) {
-    width: initial;
-    padding: 0;
-  }
-`;
-
-const RadioTextGridItem = styled.div`
-  @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) and (max-width: ${GEL_GROUP_3_SCREEN_WIDTH_MAX}) {
-    grid-column: 3 / span 4;
-    width: ${fourOfSixColumnsMaxWidthScaleable};
-    ${({ dir }) =>
-      dir === 'ltr'
-        ? `padding-left: ${GEL_SPACING_DBL};`
-        : `padding-right: ${GEL_SPACING_DBL};`}
-  }
-  ${textWrapperStyles};
-`;
-
-const TvTextGridItem = styled.div`
-  @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) and (max-width: ${GEL_GROUP_3_SCREEN_WIDTH_MAX}) {
-    grid-column: 4 / span 3;
-    width: ${halfWidthColumnsMaxScaleable};
-    ${({ dir }) =>
-      dir === 'ltr'
-        ? `padding-left: ${GEL_SPACING_DBL};`
-        : `padding-right: ${GEL_SPACING_DBL};`}
-  }
-
-  ${textWrapperStyles};
 `;
 
 const BulletinSummary = styled.p`
@@ -222,15 +149,14 @@ const Bulletin = ({
   offScreenText,
 }) => {
   const isAudio = mediaType === 'audio';
+  const bulletinType = isAudio ? 'radio' : 'tv';
   const BulletinWrapper = isAudio ? RadioBulletinWrapper : TVBulletinWrapper;
-  const ImageWrapper = isAudio ? RadioImageGridItem : TvImageGridItem;
-  const TextWrapper = isAudio ? RadioTextGridItem : TvTextGridItem;
   const BulletinHeading = isAudio ? RadioHeading : TVHeading;
 
   return (
     <BulletinWrapper>
-      <ImageWrapper>{image}</ImageWrapper>
-      <TextWrapper dir={dir}>
+      <ImageGridItem bulletinType={bulletinType}>{image}</ImageGridItem>
+      <TextGridItem bulletinType={bulletinType} dir={dir}>
         <BulletinHeading script={script} service={service} dir={dir}>
           <Link href={ctaLink}>
             {/* eslint-disable jsx-a11y/aria-role */}
@@ -264,7 +190,7 @@ const Bulletin = ({
           <IconWrapper dir={dir}>{mediaIcons[mediaType]}</IconWrapper>
           {ctaText}
         </PlayCTA>
-      </TextWrapper>
+      </TextGridItem>
     </BulletinWrapper>
   );
 };
