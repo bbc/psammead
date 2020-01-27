@@ -29,7 +29,7 @@ const CardWrapper = styled.div`
   padding-top: ${GEL_SPACING};
   background-color: ${C_WHITE};
   position: relative;
-  border: 1px solid transparent;
+  border: 0.0625rem solid transparent;
 `;
 
 const TextWrapper = styled.div`
@@ -73,7 +73,7 @@ const ButtonWrapper = styled.div`
   border-top: 1px solid transparent;
 `;
 
-const IconWrapper = styled.span.attrs({ 'aria-hidden': 'true' })`
+const IconWrapper = styled.span`
   > svg {
     color: ${({ durationColor }) => durationColor};
     fill: currentColor;
@@ -114,24 +114,24 @@ const programStateConfig = {
 };
 
 const renderHeaderContent = ({
-  type,
+  state,
   link,
-  translation,
+  stateLabel,
   brandTitle,
   episodeTitle,
   service,
   script,
   startTime,
 }) => {
-  const isOnDemand = type === 'onDemand';
+  const isOnDemand = state === 'onDemand';
   const hiddenTextProps =
-    translation.toLowerCase() === 'live' ? { lang: 'en-GB' } : {};
+    stateLabel.toLowerCase() === 'live' ? { lang: 'en-GB' } : {};
 
   const content = (
     <>
       {!isOnDemand && (
         <VisuallyHiddenText {...hiddenTextProps}>
-          {`${translation}, `}
+          {`${stateLabel}, `}
         </VisuallyHiddenText>
       )}
       <VisuallyHiddenText>
@@ -141,23 +141,23 @@ const renderHeaderContent = ({
         <LabelWrapper
           service={service}
           script={script}
-          {...programStateConfig[type]}
+          {...programStateConfig[state]}
         >
-          {`${translation.toUpperCase()} `}
+          {`${stateLabel.toUpperCase()} `}
         </LabelWrapper>
       )}
       {brandTitle}
       <TitleWrapper
         service={service}
         script={script}
-        {...programStateConfig[type]}
+        {...programStateConfig[state]}
       >
         {episodeTitle}
       </TitleWrapper>
     </>
   );
 
-  return type === 'next' ? content : <Link href={link}>{content}</Link>;
+  return state === 'next' ? content : <Link href={link}>{content}</Link>;
 };
 
 const ProgramCard = ({
@@ -167,9 +167,11 @@ const ProgramCard = ({
   brandTitle,
   summary,
   episodeTitle,
-  duration: { durationValue, durationText },
+  duration,
+  durationLabel,
   startTime,
-  state: { type, translation },
+  state,
+  stateLabel,
   link,
 }) => (
   <CardWrapper>
@@ -177,12 +179,12 @@ const ProgramCard = ({
       <HeadingWrapper
         service={service}
         script={script}
-        {...programStateConfig[type]}
+        {...programStateConfig[state]}
       >
         {renderHeaderContent({
-          type,
+          state,
           link,
-          translation,
+          stateLabel,
           brandTitle,
           episodeTitle,
           service,
@@ -197,39 +199,29 @@ const ProgramCard = ({
     <ButtonWrapper
       service={service}
       script={script}
-      {...programStateConfig[type]}
+      {...programStateConfig[state]}
     >
-      <IconWrapper {...programStateConfig[type]}>
+      <IconWrapper {...programStateConfig[state]}>
         {mediaIcons.audio}
       </IconWrapper>
       <DurationWrapper dir={dir}>
         <VisuallyHiddenText>
-          {`${durationText} ${durationValue.replace(/:/g, ',')}`}
+          {`${durationLabel} ${duration.replace(/:/g, ',')}`}
         </VisuallyHiddenText>
-        {durationValue}
+        {duration}
       </DurationWrapper>
     </ButtonWrapper>
   </CardWrapper>
 );
 
-const statePropTypes = {
-  type: oneOf(['live', 'next', 'onDemand']).isRequired,
-  translation: string.isRequired,
-};
-
-const durationPropTypes = {
-  durationValue: string.isRequired,
-  durationText: string,
-};
-
 const programCardPropTypes = {
   service: string.isRequired,
   script: shape(scriptPropType).isRequired,
   brandTitle: string.isRequired,
-  summary: string.isRequired,
   episodeTitle: string.isRequired,
-  state: shape(statePropTypes).isRequired,
   link: string.isRequired,
+  state: string.isRequired,
+  stateLabel: string.isRequired,
   startTime: string.isRequired,
 };
 
@@ -239,7 +231,9 @@ renderHeaderContent.propTypes = {
 
 ProgramCard.propTypes = {
   dir: oneOf(['rtl', 'ltr']),
-  duration: shape(durationPropTypes).isRequired,
+  durationLabel: string.isRequired,
+  duration: string.isRequired,
+  summary: string.isRequired,
   ...programCardPropTypes,
 };
 

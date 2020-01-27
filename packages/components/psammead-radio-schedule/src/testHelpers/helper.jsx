@@ -6,9 +6,11 @@ import ProgramCard from '../ProgramCard';
 
 export const renderProgramCard = ({
   state,
+  stateLabel,
   service = 'news',
   episodeTitle = '29/01/1990',
-  duration = { durationValue: '30:00', durationText: 'duration' },
+  duration = '30:00',
+  durationLabel = 'duration',
 }) => {
   const { text, articlePath, longText, dir } = TEXT_VARIANTS[service];
   return (
@@ -23,6 +25,8 @@ export const renderProgramCard = ({
       startTime="13:00"
       state={state}
       link={articlePath}
+      durationLabel={durationLabel}
+      stateLabel={stateLabel}
     />
   );
 };

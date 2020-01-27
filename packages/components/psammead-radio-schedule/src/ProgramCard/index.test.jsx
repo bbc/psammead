@@ -4,18 +4,20 @@ import { renderProgramCard } from '../testHelpers/helper';
 const stateTypes = ['live', 'next', 'onDemand'];
 
 describe('ProgramCard', () => {
-  stateTypes.forEach(type => {
+  stateTypes.forEach(state => {
     shouldMatchSnapshot(
-      `should render correctly for ${type}`,
-      renderProgramCard({ state: { type, translation: type } }),
+      `should render correctly for ${state}`,
+      renderProgramCard({ state, stateLabel: state }),
     );
   });
 
   shouldMatchSnapshot(
     `should render correctly in RTL`,
     renderProgramCard({
-      state: { type: stateTypes[0], translation: 'مباشر' },
-      duration: { durationValue: '30:00', durationText: 'المدة الزمنية' },
+      state: stateTypes[0],
+      stateLabel: 'مباشر',
+      duration: '30:00',
+      durationLabel: 'المدة الزمنية',
       service: 'arabic',
     }),
   );

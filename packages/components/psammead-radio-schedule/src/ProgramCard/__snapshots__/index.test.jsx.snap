@@ -55,7 +55,7 @@ exports[`ProgramCard should render correctly for live 1`] = `
   padding-top: 0.5rem;
   background-color: #FFFFFF;
   position: relative;
-  border: 1px solid transparent;
+  border: 0.0625rem solid transparent;
 }
 
 .c1 {
@@ -244,7 +244,6 @@ exports[`ProgramCard should render correctly for live 1`] = `
     class="c8"
   >
     <span
-      aria-hidden="true"
       class="c9"
     >
       <svg
@@ -304,7 +303,7 @@ exports[`ProgramCard should render correctly for next 1`] = `
   padding-top: 0.5rem;
   background-color: #FFFFFF;
   position: relative;
-  border: 1px solid transparent;
+  border: 0.0625rem solid transparent;
 }
 
 .c1 {
@@ -487,7 +486,6 @@ exports[`ProgramCard should render correctly for next 1`] = `
     class="c7"
   >
     <span
-      aria-hidden="true"
       class="c8"
     >
       <svg
@@ -576,7 +574,7 @@ exports[`ProgramCard should render correctly for onDemand 1`] = `
   padding-top: 0.5rem;
   background-color: #FFFFFF;
   position: relative;
-  border: 1px solid transparent;
+  border: 0.0625rem solid transparent;
 }
 
 .c1 {
@@ -730,7 +728,6 @@ exports[`ProgramCard should render correctly for onDemand 1`] = `
     class="c7"
   >
     <span
-      aria-hidden="true"
       class="c8"
     >
       <svg
@@ -819,7 +816,7 @@ exports[`ProgramCard should render correctly in RTL 1`] = `
   padding-top: 0.5rem;
   background-color: #FFFFFF;
   position: relative;
-  border: 1px solid transparent;
+  border: 0.0625rem solid transparent;
 }
 
 .c1 {
@@ -1007,7 +1004,6 @@ exports[`ProgramCard should render correctly in RTL 1`] = `
     class="c8"
   >
     <span
-      aria-hidden="true"
       class="c9"
     >
       <svg
