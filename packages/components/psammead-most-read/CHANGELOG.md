@@ -3,7 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
-| 0.5.2-alpha.6 | [PR#2996](https://github.com/bbc/psammead/pull/3016) Update typography on headline links in MostRead |
+| 0.5.2-alpha.7 | [PR#3016](https://github.com/bbc/psammead/pull/3016) Update typography on headline links in MostRead |
 | 0.5.2-alpha.6 | [PR#2996](https://github.com/bbc/psammead/pull/2996) Talos - Bump Dependencies - @bbc/psammead-section-label |
 | 0.5.2-alpha.5 | [PR#2982](https://github.com/bbc/psammead/pull/2982) Update readme |
 | 0.5.2-alpha.4 | [PR#2982](https://github.com/bbc/psammead/pull/2982) Talos - Bump Dependencies - @bbc/psammead-grid, @bbc/psammead-section-label |
