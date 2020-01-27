@@ -29,7 +29,7 @@ const CardWrapper = styled.div`
   padding-top: ${GEL_SPACING};
   background-color: ${C_WHITE};
   position: relative;
-  border: 1px solid transparent;
+  border: 0.0625rem solid transparent;
 `;
 
 const TextWrapper = styled.div`
