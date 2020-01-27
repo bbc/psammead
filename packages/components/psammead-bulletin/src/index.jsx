@@ -1,6 +1,9 @@
 import React from 'react';
 import styled, { css } from 'styled-components';
-import { GEL_GROUP_3_SCREEN_WIDTH_MIN } from '@bbc/gel-foundations/breakpoints';
+import {
+  GEL_GROUP_3_SCREEN_WIDTH_MIN,
+  GEL_GROUP_3_SCREEN_WIDTH_MAX,
+} from '@bbc/gel-foundations/breakpoints';
 import { GEL_SPACING, GEL_SPACING_DBL } from '@bbc/gel-foundations/spacings';
 import {
   C_WHITE,
@@ -40,6 +43,18 @@ const bulletinWrapperStyles = `
   grid-column-gap: ${GEL_SPACING_DBL};
 `;
 
+const RadioBulletinWrapper = styled.div`
+  ${bulletinWrapperStyles};
+  background-color: ${C_LUNAR};
+`;
+
+const TVBulletinWrapper = styled.div`
+  ${bulletinWrapperStyles};
+  @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
+    padding: ${GEL_SPACING_DBL};
+  }
+`;
+
 const imageWrapperStyles = `
   vertical-align: top;
   display: inline-block;
@@ -48,6 +63,24 @@ const imageWrapperStyles = `
   @supports (${grid}) {
     width: initial;
   }
+`;
+
+const RadioImageGridItem = styled.div`
+  @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) and (max-width: ${GEL_GROUP_3_SCREEN_WIDTH_MAX}) {
+    grid-column: 1 / span 2;
+    width: ${twoOfSixColumnsMaxWidthScaleable};
+    padding: 0;
+  }
+  ${imageWrapperStyles};
+`;
+
+const TvImageGridItem = styled.div`
+  @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) and (max-width: ${GEL_GROUP_3_SCREEN_WIDTH_MAX}) {
+    grid-column: 1 / span 3;
+    width: ${halfWidthColumnsMaxScaleable};
+    padding: 0;
+  }
+  ${imageWrapperStyles};
 `;
 
 const textWrapperStyles = `
@@ -60,24 +93,20 @@ const textWrapperStyles = `
   }
 `;
 
-const TVBulletinWrapper = styled.div`
-  ${bulletinWrapperStyles};
-  @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
-    padding: ${GEL_SPACING_DBL};
+const RadioTextGridItem = styled.div`
+  @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) and (max-width: ${GEL_GROUP_3_SCREEN_WIDTH_MAX}) {
+    grid-column: 3 / span 4;
+    width: ${fourOfSixColumnsMaxWidthScaleable};
+    ${({ dir }) =>
+      dir === 'ltr'
+        ? `padding-left: ${GEL_SPACING_DBL};`
+        : `padding-right: ${GEL_SPACING_DBL};`}
   }
+  ${textWrapperStyles};
 `;
 
-const TVImageWrapper = styled.div`
-  @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
-    grid-column: 1 / span 3;
-    width: ${halfWidthColumnsMaxScaleable};
-    padding: 0;
-  }
-  ${imageWrapperStyles};
-`;
-
-const TVTextWrapper = styled.div`
-  @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
+const TvTextGridItem = styled.div`
+  @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) and (max-width: ${GEL_GROUP_3_SCREEN_WIDTH_MAX}) {
     grid-column: 4 / span 3;
     width: ${halfWidthColumnsMaxScaleable};
     ${({ dir }) =>
@@ -89,72 +118,13 @@ const TVTextWrapper = styled.div`
   ${textWrapperStyles};
 `;
 
-const RadioBulletinWrapper = styled.div`
-  ${bulletinWrapperStyles};
-  background-color: ${C_LUNAR};
-`;
-
-const RadioImageWrapper = styled.div`
-  @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
-    grid-column: 1 / span 2;
-    width: ${twoOfSixColumnsMaxWidthScaleable};
-    padding: 0;
-  }
-  ${imageWrapperStyles};
-`;
-
-const RadioTextWrapper = styled.div`
-  @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
-    grid-column: 3 / span 4;
-    width: ${fourOfSixColumnsMaxWidthScaleable};
-    ${({ dir }) =>
-      dir === 'ltr'
-        ? `padding-left: ${GEL_SPACING_DBL};`
-        : `padding-right: ${GEL_SPACING_DBL};`}
-  }
-  ${textWrapperStyles};
-`;
-
-const IconWrapper = styled.span`
-  display: flex;
-  align-items: center;
-  > svg {
-    color: ${C_WHITE};
-    fill: currentColor;
-    width: 1.0625rem;
-    height: ${GEL_SPACING_DBL};
-    margin: 0;
-  }
-  ${({ dir }) =>
-    dir === 'ltr'
-      ? `padding-right: ${GEL_SPACING};`
-      : `padding-left: ${GEL_SPACING};`}
-`;
-
-const PlayCTA = styled.div.attrs({ 'aria-hidden': true })`
-  ${({ service }) => service && getSansRegular(service)};
-  ${({ script }) => script && getPica(script)};
-  background-color: ${({ isLive }) => (isLive ? C_POSTBOX : C_EBON)};
-  border: 0.0625rem solid transparent;
-  color: ${C_WHITE};
-  padding: 0.75rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
-    display: inline-flex;
-    padding: ${GEL_SPACING} ${GEL_SPACING_DBL};
-    ${({ isAudio }) => isAudio && `margin-bottom: ${GEL_SPACING_DBL};`}
-  }
-`;
-
 const BulletinSummary = styled.p`
   ${({ script }) => script && getLongPrimer(script)}
   ${({ service }) => service && getSansRegular(service)}
   color: ${C_SHADOW};
   margin: 0; /* Reset */
   padding: 0 ${GEL_SPACING};
-  @media(min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
+  @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) and (max-width: ${GEL_GROUP_3_SCREEN_WIDTH_MAX}) {
     padding-left: 0;
     padding-right: ${({ mediaType }) =>
       mediaType === 'audio' ? `${GEL_SPACING}` : `0`};
@@ -187,19 +157,52 @@ const headingStyles = css`
   }
 `;
 
+export const RadioHeading = styled.h3`
+  ${headingStyles}
+  @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) and (max-width: ${GEL_GROUP_3_SCREEN_WIDTH_MAX}) {
+    padding-top: ${GEL_SPACING};
+    padding-bottom: ${GEL_SPACING};
+    ${({ dir }) => (dir === 'ltr' ? `padding-left: 0;` : `padding-right: 0;`)}
+  }
+`;
+
 const TVHeading = styled.h3`
   ${headingStyles}
-  @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
+  @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) and (max-width: ${GEL_GROUP_3_SCREEN_WIDTH_MAX}) {
     padding: 0 0 ${GEL_SPACING} 0;
   }
 `;
 
-const RadioHeading = styled.h3`
-  ${headingStyles}
-  @media(min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
-    padding-top: ${GEL_SPACING};
-    padding-bottom: ${GEL_SPACING};
-    ${({ dir }) => (dir === 'ltr' ? `padding-left: 0;` : `padding-right: 0;`)}
+const IconWrapper = styled.span`
+  display: flex;
+  align-items: center;
+  > svg {
+    color: ${C_WHITE};
+    fill: currentColor;
+    width: 1.0625rem;
+    height: ${GEL_SPACING_DBL};
+    margin: 0;
+  }
+  ${({ dir }) =>
+    dir === 'ltr'
+      ? `padding-right: ${GEL_SPACING};`
+      : `padding-left: ${GEL_SPACING};`}
+`;
+
+const PlayCTA = styled.div.attrs({ 'aria-hidden': true })`
+  ${({ service }) => service && getSansRegular(service)};
+  ${({ script }) => script && getPica(script)};
+  background-color: ${({ isLive }) => (isLive ? C_POSTBOX : C_EBON)};
+  border: 0.0625rem solid transparent;
+  color: ${C_WHITE};
+  padding: 0.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) and (max-width: ${GEL_GROUP_3_SCREEN_WIDTH_MAX}) {
+    display: inline-flex;
+    padding: ${GEL_SPACING} ${GEL_SPACING_DBL};
+    ${({ isAudio }) => isAudio && `margin-bottom: ${GEL_SPACING_DBL};`}
   }
 `;
 
@@ -220,8 +223,8 @@ const Bulletin = ({
 }) => {
   const isAudio = mediaType === 'audio';
   const BulletinWrapper = isAudio ? RadioBulletinWrapper : TVBulletinWrapper;
-  const ImageWrapper = isAudio ? RadioImageWrapper : TVImageWrapper;
-  const TextWrapper = isAudio ? RadioTextWrapper : TVTextWrapper;
+  const ImageWrapper = isAudio ? RadioImageGridItem : TvImageGridItem;
+  const TextWrapper = isAudio ? RadioTextGridItem : TvTextGridItem;
   const BulletinHeading = isAudio ? RadioHeading : TVHeading;
 
   return (
