@@ -73,7 +73,7 @@ const ButtonWrapper = styled.div`
   border-top: 1px solid transparent;
 `;
 
-const IconWrapper = styled.span.attrs({ 'aria-hidden': 'true' })`
+const IconWrapper = styled.span`
   > svg {
     color: ${({ durationColor }) => durationColor};
     fill: currentColor;
@@ -116,7 +116,7 @@ const programStateConfig = {
 const renderHeaderContent = ({
   state,
   link,
-  localisedState,
+  stateLabel,
   brandTitle,
   episodeTitle,
   service,
@@ -125,13 +125,13 @@ const renderHeaderContent = ({
 }) => {
   const isOnDemand = state === 'onDemand';
   const hiddenTextProps =
-    localisedState.toLowerCase() === 'live' ? { lang: 'en-GB' } : {};
+    stateLabel.toLowerCase() === 'live' ? { lang: 'en-GB' } : {};
 
   const content = (
     <>
       {!isOnDemand && (
         <VisuallyHiddenText {...hiddenTextProps}>
-          {`${localisedState}, `}
+          {`${stateLabel}, `}
         </VisuallyHiddenText>
       )}
       <VisuallyHiddenText>
@@ -143,7 +143,7 @@ const renderHeaderContent = ({
           script={script}
           {...programStateConfig[state]}
         >
-          {`${localisedState.toUpperCase()} `}
+          {`${stateLabel.toUpperCase()} `}
         </LabelWrapper>
       )}
       {brandTitle}
@@ -168,10 +168,10 @@ const ProgramCard = ({
   summary,
   episodeTitle,
   duration,
-  localisedDuration,
+  durationLabel,
   startTime,
   state,
-  localisedState,
+  stateLabel,
   link,
 }) => (
   <CardWrapper>
@@ -184,7 +184,7 @@ const ProgramCard = ({
         {renderHeaderContent({
           state,
           link,
-          localisedState,
+          stateLabel,
           brandTitle,
           episodeTitle,
           service,
@@ -206,7 +206,7 @@ const ProgramCard = ({
       </IconWrapper>
       <DurationWrapper dir={dir}>
         <VisuallyHiddenText>
-          {`${localisedDuration} ${duration.replace(/:/g, ',')}`}
+          {`${durationLabel} ${duration.replace(/:/g, ',')}`}
         </VisuallyHiddenText>
         {duration}
       </DurationWrapper>
@@ -218,11 +218,10 @@ const programCardPropTypes = {
   service: string.isRequired,
   script: shape(scriptPropType).isRequired,
   brandTitle: string.isRequired,
-  summary: string.isRequired,
   episodeTitle: string.isRequired,
   link: string.isRequired,
   state: string.isRequired,
-  localisedState: string.isRequired,
+  stateLabel: string.isRequired,
   startTime: string.isRequired,
 };
 
@@ -232,8 +231,9 @@ renderHeaderContent.propTypes = {
 
 ProgramCard.propTypes = {
   dir: oneOf(['rtl', 'ltr']),
-  localisedDuration: string.isRequired,
+  durationLabel: string.isRequired,
   duration: string.isRequired,
+  summary: string.isRequired,
   ...programCardPropTypes,
 };
 

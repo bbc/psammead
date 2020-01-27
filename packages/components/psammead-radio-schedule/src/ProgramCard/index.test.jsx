@@ -7,7 +7,7 @@ describe('ProgramCard', () => {
   stateTypes.forEach(state => {
     shouldMatchSnapshot(
       `should render correctly for ${state}`,
-      renderProgramCard({ state, localisedState: state }),
+      renderProgramCard({ state, stateLabel: state }),
     );
   });
 
@@ -15,9 +15,9 @@ describe('ProgramCard', () => {
     `should render correctly in RTL`,
     renderProgramCard({
       state: stateTypes[0],
-      localisedState: 'مباشر',
+      stateLabel: 'مباشر',
       duration: '30:00',
-      localisedDuration: 'المدة الزمنية',
+      durationLabel: 'المدة الزمنية',
       service: 'arabic',
     }),
   );

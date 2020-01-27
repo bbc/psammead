@@ -25,7 +25,7 @@ stateTypes.forEach(state => {
     `${state}`,
     () =>
       newsServiceDecorator(({ service }) =>
-        renderProgramCard({ service, state, localisedState: state }),
+        renderProgramCard({ service, state, stateLabel: state }),
       ),
     { notes },
   );
@@ -37,7 +37,7 @@ stories.add(
     newsServiceDecorator(({ service }) =>
       renderProgramCard({
         state: 'live',
-        localisedState: 'live',
+        stateLabel: 'live',
         service,
         episodeTitle: 'This is a long episode title that spans multiple lines',
       }),
@@ -51,9 +51,9 @@ stories.add(
     arabicServiceDecorator(({ service }) =>
       renderProgramCard({
         state: stateTypes[0],
-        localisedState: 'مباشر',
+        stateLabel: 'مباشر',
         duration: '30:00',
-        localisedDuration: 'المدة الزمنية',
+        durationLabel: 'المدة الزمنية',
         service,
       }),
     ),
