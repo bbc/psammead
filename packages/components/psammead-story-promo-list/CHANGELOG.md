@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 | ------- | ----------- |
+| 2.1.27 | [PR#x](https://github.com/bbc/psammead/pull/x) Ensure border-bottom on list items is only applied for groups 0-3. |
 | 2.1.26 | [PR#2990](https://github.com/bbc/psammead/pull/2990) Use `GEL_SPACING_DBL` and `GEL_SPACING_TRPL` constants |
 | 2.1.25 | [PR#2978](https://github.com/bbc/psammead/pull/2978) Talos - Bump Dependencies - @bbc/gel-foundations |
 | 2.1.24 | [PR#2973](https://github.com/bbc/psammead/pull/2973) Talos - Bump Dependencies - @bbc/psammead-styles |
