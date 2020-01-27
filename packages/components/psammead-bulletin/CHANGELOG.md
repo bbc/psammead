@@ -3,7 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
-| 2.0.0 | [PR#XXX](https://github.com/bbc/psammead/pull/XXX) Update Bulletin styles to match 1008+px layout design |
+| 2.0.0 | [PR#3018](https://github.com/bbc/psammead/pull/3018) Update Bulletin styles to match 1008+px layout design |
 | 1.0.7 | [PR#2996](https://github.com/bbc/psammead/pull/2996) Talos - Bump Dependencies - @bbc/psammead-assets |
 | 1.0.6 | [PR#2989](https://github.com/bbc/psammead/pull/2989) Talos - Bump Dependencies - @bbc/psammead-assets |
 | 1.0.5 | [PR#2978](https://github.com/bbc/psammead/pull/2978) Talos - Bump Dependencies - @bbc/gel-foundations |
