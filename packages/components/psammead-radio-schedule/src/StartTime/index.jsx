@@ -9,7 +9,7 @@ import { getSansRegular } from '@bbc/psammead-styles/font-styles';
 import { coreIcons } from '@bbc/psammead-assets/svgs';
 import TimestampContainer from '@bbc/psammead-timestamp-container';
 
-const StyledWrapper = styled.div`
+const Wrapper = styled.div`
   display: flex;
   align-items: center;
 `;
@@ -96,7 +96,7 @@ StartTimestamp.defaultProps = {
 
 const StartTime = ({ timestamp, timezone, locale, script, service, dir }) => {
   return (
-    <StyledWrapper>
+    <Wrapper>
       <ClockIcon dir={dir} />
       <StartTimestamp
         timestamp={timestamp}
@@ -106,7 +106,7 @@ const StartTime = ({ timestamp, timezone, locale, script, service, dir }) => {
         service={service}
       />
       <HorizontalLine dir={dir} script={script} />
-    </StyledWrapper>
+    </Wrapper>
   );
 };
 
