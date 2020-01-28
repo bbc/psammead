@@ -147,6 +147,11 @@ exports[`Bulletin should render audio correctly 1`] = `
 @media (min-width:37.5rem) and (max-width:62.9375rem) {
   .c1 {
     width: 33.33%;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .c1 {
     padding: 0;
   }
 }
@@ -479,6 +484,11 @@ exports[`Bulletin should render live audio correctly 1`] = `
 @media (min-width:37.5rem) and (max-width:62.9375rem) {
   .c1 {
     width: 33.33%;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .c1 {
     padding: 0;
   }
 }
@@ -817,6 +827,11 @@ exports[`Bulletin should render live video correctly 1`] = `
 @media (min-width:37.5rem) {
   .c1 {
     width: 50%;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .c1 {
     padding: 0;
   }
 }
@@ -1147,6 +1162,11 @@ exports[`Bulletin should render video correctly 1`] = `
 @media (min-width:37.5rem) {
   .c1 {
     width: 50%;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .c1 {
     padding: 0;
   }
 }

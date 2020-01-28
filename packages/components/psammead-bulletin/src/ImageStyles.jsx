@@ -29,14 +29,12 @@ const imageGridTv = css`
 const imageGridFallbackRadio = css`
   @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) and (max-width: ${GEL_GROUP_3_SCREEN_WIDTH_MAX}) {
     width: ${twoOfSixColumnsMaxWidthScaleable};
-    padding: 0;
   }
 `;
 
 const imageGridFallbackTv = css`
   @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
     width: ${halfWidthColumnsMaxScaleable};
-    padding: 0;
   }
 `;
 
@@ -56,6 +54,10 @@ const ImageGridItem = styled.div`
   width: ${fullWidthColumnsMaxScaleable};
   padding: ${GEL_SPACING} ${GEL_SPACING} 0 ${GEL_SPACING};
   ${({ bulletinType }) => imageGridFallbackStyles[bulletinType]}
+
+  @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
+    padding: 0;
+  }
 
   @supports (${grid}) {
     width: initial;
