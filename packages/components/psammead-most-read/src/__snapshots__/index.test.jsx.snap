@@ -2,8 +2,8 @@
 
 exports[`MostRead should render with ltr most read with correct dir 1`] = `
 .c13 {
-  font-size: 1.125rem;
-  line-height: 1.375rem;
+  font-size: 0.9375rem;
+  line-height: 1.25rem;
   font-family: ReithSerif,Helvetica,Arial,sans-serif;
   font-weight: 500;
   font-style: normal;
@@ -197,15 +197,22 @@ exports[`MostRead should render with ltr most read with correct dir 1`] = `
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
   .c13 {
-    font-size: 1.25rem;
-    line-height: 1.5rem;
+    font-size: 1rem;
+    line-height: 1.25rem;
   }
 }
 
 @media (min-width:37.5rem) {
   .c13 {
-    font-size: 1.5rem;
-    line-height: 1.75rem;
+    font-size: 1rem;
+    line-height: 1.25rem;
+  }
+}
+
+@media (min-width:25rem) {
+  .c13 {
+    font-size: 1.125rem;
+    line-height: 1.375rem;
   }
 }
 
@@ -782,8 +789,8 @@ exports[`MostRead should render with ltr most read with correct dir 1`] = `
 
 exports[`MostRead should render with rtl most read with correct dir 1`] = `
 .c13 {
-  font-size: 1.5rem;
-  line-height: 2rem;
+  font-size: 1rem;
+  line-height: 1.625rem;
   font-family: "BBC Nassim Arabic",Arial,Verdana,Geneva,Helvetica,sans-serif;
   font-weight: 700;
   font-style: normal;
@@ -977,15 +984,22 @@ exports[`MostRead should render with rtl most read with correct dir 1`] = `
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
   .c13 {
-    font-size: 1.625rem;
-    line-height: 2.25rem;
+    font-size: 1.25rem;
+    line-height: 1.625rem;
   }
 }
 
 @media (min-width:37.5rem) {
   .c13 {
-    font-size: 1.75rem;
-    line-height: 2.25rem;
+    font-size: 1.25rem;
+    line-height: 1.625rem;
+  }
+}
+
+@media (min-width:25rem) {
+  .c13 {
+    font-size: 1.375rem;
+    line-height: 1.75rem;
   }
 }
 
