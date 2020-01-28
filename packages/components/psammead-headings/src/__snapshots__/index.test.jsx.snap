@@ -29,7 +29,7 @@ exports[`Headline component should render correctly 1`] = `
 
 @media (min-width:37.5rem) {
   .c0 {
-    padding: 0;
+    padding: 2.5rem 0;
   }
 }
 
@@ -69,7 +69,7 @@ exports[`Headline component should render correctly with arabic script typograph
 
 @media (min-width:37.5rem) {
   .c0 {
-    padding: 0;
+    padding: 2.5rem 0;
   }
 }
 

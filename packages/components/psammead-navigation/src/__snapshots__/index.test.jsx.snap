@@ -166,6 +166,12 @@ exports[`Navigation should render correctly 1`] = `
   }
 }
 
+@media (max-width:37.4375rem) {
+  .c4:last-child {
+    margin-right: 3rem;
+  }
+}
+
 @media (min-width:37.5rem) {
   .c4::after {
     content: '';
@@ -428,6 +434,12 @@ exports[`Navigation should render correctly when ampOpenClass prop is provided 1
 @media (max-width:37.4375rem) {
   .c8 {
     padding: 0.75rem 0.5rem;
+  }
+}
+
+@media (max-width:37.4375rem) {
+  .c4:last-child {
+    margin-right: 3rem;
   }
 }
 
@@ -698,6 +710,12 @@ exports[`Navigation should render correctly when isOpen is true 1`] = `
   }
 }
 
+@media (max-width:37.4375rem) {
+  .c4:last-child {
+    margin-right: 3rem;
+  }
+}
+
 @media (min-width:37.5rem) {
   .c4::after {
     content: '';
@@ -940,6 +958,7 @@ exports[`Scrollable Navigation should render correctly 1`] = `
   .c0:after {
     content: ' ';
     height: 100%;
+    width: 3rem;
     position: absolute;
     right: 0;
     bottom: 0;
@@ -993,6 +1012,12 @@ exports[`Scrollable Navigation should render correctly 1`] = `
 @media (max-width:37.4375rem) {
   .c9 {
     padding: 0.75rem 0.5rem;
+  }
+}
+
+@media (max-width:37.4375rem) {
+  .c5:last-child {
+    margin-right: 3rem;
   }
 }
 
