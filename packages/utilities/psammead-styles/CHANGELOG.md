@@ -3,7 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
-| 4.2.1 | [PR#3020](https://github.com/bbc/psammead/pull/3020) Add colour C_LEARNINGENGLISH and set font families to Latin Reith for Learning English |
+| 4.3.0 | [PR#3020](https://github.com/bbc/psammead/pull/3020) Add colour C_LEARNINGENGLISH and set font families to Latin Reith for Learning English |
 | 4.2.0 | [PR#2943](https://github.com/bbc/psammead/pull/2943) Add colour C_KINGFISHER |
 | 4.1.2 | [PR#2686](https://github.com/bbc/psammead/pull/2686) Add colour C_ARCHIVE_BLUE and set font families to Latin Reith for Archive |
 | 4.1.1 | [PR#2661](https://github.com/bbc/psammead/pull/2661) Remove font 'Noto Sans Devanagari' from Hindi & Nepali font-family and add bold weight for Telugu service's fonts. |
