@@ -88,8 +88,7 @@ exports[`Bulletin should render audio correctly 1`] = `
   font-style: normal;
   color: #3F3F42;
   margin: 0;
-  padding: 0 0.5rem;
-  padding-bottom: 1rem;
+  padding: 0 0.5rem 1rem;
 }
 
 .c4 {
@@ -193,7 +192,6 @@ exports[`Bulletin should render audio correctly 1`] = `
 @media (min-width:37.5rem) and (max-width:62.9375rem) {
   .c7 {
     padding-left: 0;
-    padding-right: 0.5rem;
   }
 }
 
@@ -292,6 +290,7 @@ exports[`Bulletin should render audio correctly 1`] = `
     </h3>
     <p
       class="c7"
+      dir="ltr"
     >
       This is the summary text
     </p>
@@ -423,8 +422,7 @@ exports[`Bulletin should render live audio correctly 1`] = `
   font-style: normal;
   color: #3F3F42;
   margin: 0;
-  padding: 0 0.5rem;
-  padding-bottom: 1rem;
+  padding: 0 0.5rem 1rem;
 }
 
 .c4 {
@@ -528,7 +526,6 @@ exports[`Bulletin should render live audio correctly 1`] = `
 @media (min-width:37.5rem) and (max-width:62.9375rem) {
   .c8 {
     padding-left: 0;
-    padding-right: 0.5rem;
   }
 }
 
@@ -634,6 +631,7 @@ exports[`Bulletin should render live audio correctly 1`] = `
     </h3>
     <p
       class="c8"
+      dir="ltr"
     >
       This is the summary text
     </p>
@@ -764,8 +762,7 @@ exports[`Bulletin should render live video correctly 1`] = `
   font-style: normal;
   color: #3F3F42;
   margin: 0;
-  padding: 0 0.5rem;
-  padding-bottom: 1rem;
+  padding: 0 0.5rem 1rem;
 }
 
 .c4 {
@@ -978,6 +975,7 @@ exports[`Bulletin should render live video correctly 1`] = `
     </h3>
     <p
       class="c8"
+      dir="ltr"
     >
       This is the summary text
     </p>
@@ -1096,8 +1094,7 @@ exports[`Bulletin should render video correctly 1`] = `
   font-style: normal;
   color: #3F3F42;
   margin: 0;
-  padding: 0 0.5rem;
-  padding-bottom: 1rem;
+  padding: 0 0.5rem 1rem;
 }
 
 .c4 {
@@ -1303,6 +1300,7 @@ exports[`Bulletin should render video correctly 1`] = `
     </h3>
     <p
       class="c7"
+      dir="ltr"
     >
       This is the summary text
     </p>

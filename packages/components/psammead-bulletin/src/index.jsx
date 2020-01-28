@@ -50,13 +50,20 @@ const BulletinSummary = styled.p`
   ${({ service }) => service && getSansRegular(service)}
   color: ${C_SHADOW};
   margin: 0; /* Reset */
-  padding: 0 ${GEL_SPACING};
-  @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) and (max-width: ${GEL_GROUP_3_SCREEN_WIDTH_MAX}) {
-    padding-left: 0;
-    padding-right: ${({ mediaType }) =>
-      mediaType === 'audio' ? `${GEL_SPACING}` : `0`};
+  padding: 0 ${GEL_SPACING} ${GEL_SPACING_DBL};
+  @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) and (max-width: ${GEL_GROUP_3_SCREEN_WIDTH_MAX}) {    
+    ${({ dir, bulletinType }) =>
+      dir === 'ltr'
+        ? css`
+            padding-left: 0;
+            ${bulletinType === 'tv' && 'padding-right: 0;'}
+          `
+        : css`
+            padding-right: 0;
+            ${bulletinType === 'tv' && 'padding-left: 0;'}
+          `}
+
   }
-  padding-bottom: ${GEL_SPACING_DBL};
 `;
 
 // This is needed to get around the issue of IE11 not supporting
@@ -176,7 +183,8 @@ const Bulletin = ({
         <BulletinSummary
           script={script}
           service={service}
-          mediaType={mediaType}
+          bulletinType={bulletinType}
+          dir={dir}
         >
           {summaryText}
         </BulletinSummary>
