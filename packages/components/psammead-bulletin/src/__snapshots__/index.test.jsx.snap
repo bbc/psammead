@@ -60,7 +60,6 @@ exports[`Bulletin should render audio correctly 1`] = `
 .c1 {
   vertical-align: top;
   display: inline-block;
-  grid-column: 1 / span 6;
   width: 100%;
   padding: 0.5rem 0.5rem 0 0.5rem;
 }
@@ -92,14 +91,14 @@ exports[`Bulletin should render audio correctly 1`] = `
 }
 
 .c7 {
+  color: #3F3F42;
+  margin: 0;
+  padding: 0 0.5rem 1rem;
   font-size: 0.9375rem;
   line-height: 1.125rem;
   font-family: ReithSans,Helvetica,Arial,sans-serif;
   font-weight: 400;
   font-style: normal;
-  color: #3F3F42;
-  margin: 0;
-  padding: 0 0.5rem 1rem;
 }
 
 .c9 {
@@ -123,11 +122,6 @@ exports[`Bulletin should render audio correctly 1`] = `
 }
 
 .c8 {
-  font-family: ReithSans,Helvetica,Arial,sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 0.9375rem;
-  line-height: 1.25rem;
   background-color: #222222;
   border: 0.0625rem solid transparent;
   color: #FFFFFF;
@@ -144,11 +138,15 @@ exports[`Bulletin should render audio correctly 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
+  font-family: ReithSans,Helvetica,Arial,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 0.9375rem;
+  line-height: 1.25rem;
 }
 
 @media (min-width:37.5rem) and (max-width:62.9375rem) {
   .c1 {
-    grid-column: 1 / span 2;
     width: 33.33%;
     padding: 0;
   }
@@ -157,6 +155,7 @@ exports[`Bulletin should render audio correctly 1`] = `
 @supports (grid-template-columns:fit-content(200px)) {
   .c1 {
     width: initial;
+    grid-column: 1 / span 6;
   }
 }
 
@@ -394,7 +393,6 @@ exports[`Bulletin should render live audio correctly 1`] = `
 .c1 {
   vertical-align: top;
   display: inline-block;
-  grid-column: 1 / span 6;
   width: 100%;
   padding: 0.5rem 0.5rem 0 0.5rem;
 }
@@ -426,14 +424,14 @@ exports[`Bulletin should render live audio correctly 1`] = `
 }
 
 .c8 {
+  color: #3F3F42;
+  margin: 0;
+  padding: 0 0.5rem 1rem;
   font-size: 0.9375rem;
   line-height: 1.125rem;
   font-family: ReithSans,Helvetica,Arial,sans-serif;
   font-weight: 400;
   font-style: normal;
-  color: #3F3F42;
-  margin: 0;
-  padding: 0 0.5rem 1rem;
 }
 
 .c10 {
@@ -457,11 +455,6 @@ exports[`Bulletin should render live audio correctly 1`] = `
 }
 
 .c9 {
-  font-family: ReithSans,Helvetica,Arial,sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 0.9375rem;
-  line-height: 1.25rem;
   background-color: #B80000;
   border: 0.0625rem solid transparent;
   color: #FFFFFF;
@@ -478,11 +471,15 @@ exports[`Bulletin should render live audio correctly 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
+  font-family: ReithSans,Helvetica,Arial,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 0.9375rem;
+  line-height: 1.25rem;
 }
 
 @media (min-width:37.5rem) and (max-width:62.9375rem) {
   .c1 {
-    grid-column: 1 / span 2;
     width: 33.33%;
     padding: 0;
   }
@@ -491,6 +488,7 @@ exports[`Bulletin should render live audio correctly 1`] = `
 @supports (grid-template-columns:fit-content(200px)) {
   .c1 {
     width: initial;
+    grid-column: 1 / span 6;
   }
 }
 
@@ -735,7 +733,6 @@ exports[`Bulletin should render live video correctly 1`] = `
 .c1 {
   vertical-align: top;
   display: inline-block;
-  grid-column: 1 / span 6;
   width: 100%;
   padding: 0.5rem 0.5rem 0 0.5rem;
 }
@@ -766,14 +763,14 @@ exports[`Bulletin should render live video correctly 1`] = `
 }
 
 .c8 {
+  color: #3F3F42;
+  margin: 0;
+  padding: 0 0.5rem 1rem;
   font-size: 0.9375rem;
   line-height: 1.125rem;
   font-family: ReithSans,Helvetica,Arial,sans-serif;
   font-weight: 400;
   font-style: normal;
-  color: #3F3F42;
-  margin: 0;
-  padding: 0 0.5rem 1rem;
 }
 
 .c10 {
@@ -797,11 +794,6 @@ exports[`Bulletin should render live video correctly 1`] = `
 }
 
 .c9 {
-  font-family: ReithSans,Helvetica,Arial,sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 0.9375rem;
-  line-height: 1.25rem;
   background-color: #B80000;
   border: 0.0625rem solid transparent;
   color: #FFFFFF;
@@ -818,11 +810,15 @@ exports[`Bulletin should render live video correctly 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
+  font-family: ReithSans,Helvetica,Arial,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 0.9375rem;
+  line-height: 1.25rem;
 }
 
 @media (min-width:37.5rem) {
   .c1 {
-    grid-column: 1 / span 3;
     width: 50%;
     padding: 0;
   }
@@ -831,6 +827,7 @@ exports[`Bulletin should render live video correctly 1`] = `
 @supports (grid-template-columns:fit-content(200px)) {
   .c1 {
     width: initial;
+    grid-column: 1 / span 6;
   }
 }
 
@@ -1067,7 +1064,6 @@ exports[`Bulletin should render video correctly 1`] = `
 .c1 {
   vertical-align: top;
   display: inline-block;
-  grid-column: 1 / span 6;
   width: 100%;
   padding: 0.5rem 0.5rem 0 0.5rem;
 }
@@ -1098,14 +1094,14 @@ exports[`Bulletin should render video correctly 1`] = `
 }
 
 .c7 {
+  color: #3F3F42;
+  margin: 0;
+  padding: 0 0.5rem 1rem;
   font-size: 0.9375rem;
   line-height: 1.125rem;
   font-family: ReithSans,Helvetica,Arial,sans-serif;
   font-weight: 400;
   font-style: normal;
-  color: #3F3F42;
-  margin: 0;
-  padding: 0 0.5rem 1rem;
 }
 
 .c9 {
@@ -1129,11 +1125,6 @@ exports[`Bulletin should render video correctly 1`] = `
 }
 
 .c8 {
-  font-family: ReithSans,Helvetica,Arial,sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 0.9375rem;
-  line-height: 1.25rem;
   background-color: #222222;
   border: 0.0625rem solid transparent;
   color: #FFFFFF;
@@ -1150,11 +1141,15 @@ exports[`Bulletin should render video correctly 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
+  font-family: ReithSans,Helvetica,Arial,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 0.9375rem;
+  line-height: 1.25rem;
 }
 
 @media (min-width:37.5rem) {
   .c1 {
-    grid-column: 1 / span 3;
     width: 50%;
     padding: 0;
   }
@@ -1163,6 +1158,7 @@ exports[`Bulletin should render video correctly 1`] = `
 @supports (grid-template-columns:fit-content(200px)) {
   .c1 {
     width: initial;
+    grid-column: 1 / span 6;
   }
 }
 

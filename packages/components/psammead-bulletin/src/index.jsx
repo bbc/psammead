@@ -119,11 +119,11 @@ const bulletinSummaryStyles = {
 };
 
 const BulletinSummary = styled.p`
-  ${({ script }) => script && getLongPrimer(script)}
-  ${({ service }) => service && getSansRegular(service)}
   color: ${C_SHADOW};
   margin: 0; /* Reset */
   padding: 0 ${GEL_SPACING} ${GEL_SPACING_DBL};
+  ${({ script }) => script && getLongPrimer(script)}
+  ${({ service }) => service && getSansRegular(service)} 
   ${({ bulletinType }) => bulletinSummaryStyles[bulletinType]}
 `;
 
@@ -164,8 +164,6 @@ const playCtaStyles = {
 };
 
 const PlayCTA = styled.div.attrs({ 'aria-hidden': true })`
-  ${({ service }) => service && getSansRegular(service)};
-  ${({ script }) => script && getPica(script)};
   background-color: ${({ isLive }) => (isLive ? C_POSTBOX : C_EBON)};
   border: 0.0625rem solid transparent;
   color: ${C_WHITE};
@@ -173,6 +171,8 @@ const PlayCTA = styled.div.attrs({ 'aria-hidden': true })`
   display: flex;
   align-items: center;
   justify-content: center;
+  ${({ service }) => service && getSansRegular(service)};
+  ${({ script }) => script && getPica(script)};
   ${({ bulletinType }) => playCtaStyles[bulletinType]}
 `;
 

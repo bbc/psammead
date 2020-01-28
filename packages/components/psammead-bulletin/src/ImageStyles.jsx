@@ -14,28 +14,27 @@ const fullWidthColumnsMaxScaleable = `100%`;
 
 const halfWidthColumnsMaxScaleable = `50%`;
 
-const imageWrapperStyles = `
-  vertical-align: top;
-  display: inline-block;
-  grid-column: 1 / span 6;
-  width: ${fullWidthColumnsMaxScaleable};
-  padding: ${GEL_SPACING} ${GEL_SPACING} 0 ${GEL_SPACING};
-  @supports (${grid}) {
-    width: initial;
-  }
-`;
-
 const imageGridRadio = css`
   @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) and (max-width: ${GEL_GROUP_3_SCREEN_WIDTH_MAX}) {
     grid-column: 1 / span 2;
-    width: ${twoOfSixColumnsMaxWidthScaleable};
-    padding: 0;
   }
 `;
 
 const imageGridTv = css`
   @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
     grid-column: 1 / span 3;
+  }
+`;
+
+const imageGridFallbackRadio = css`
+  @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) and (max-width: ${GEL_GROUP_3_SCREEN_WIDTH_MAX}) {
+    width: ${twoOfSixColumnsMaxWidthScaleable};
+    padding: 0;
+  }
+`;
+
+const imageGridFallbackTv = css`
+  @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
     width: ${halfWidthColumnsMaxScaleable};
     padding: 0;
   }
@@ -46,9 +45,23 @@ const imageGridStyles = {
   tv: imageGridTv,
 };
 
+const imageGridFallbackStyles = {
+  radio: imageGridFallbackRadio,
+  tv: imageGridFallbackTv,
+};
+
 const ImageGridItem = styled.div`
-  ${({ bulletinType }) => imageGridStyles[bulletinType]}
-  ${imageWrapperStyles};
+  vertical-align: top;
+  display: inline-block;  
+  width: ${fullWidthColumnsMaxScaleable};
+  padding: ${GEL_SPACING} ${GEL_SPACING} 0 ${GEL_SPACING};
+  ${({ bulletinType }) => imageGridFallbackStyles[bulletinType]}
+
+  @supports (${grid}) {
+    width: initial;
+    grid-column: 1 / span 6;
+    ${({ bulletinType }) => imageGridStyles[bulletinType]}
+  }
 `;
 
 export default ImageGridItem;
