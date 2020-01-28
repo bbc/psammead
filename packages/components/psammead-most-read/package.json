@@ -1,6 +1,6 @@
 {
   "name": "@bbc/psammead-most-read",
-  "version": "0.5.2-alpha.6",
+  "version": "0.5.2-alpha.7",
   "publishConfig": {
     "tag": "alpha"
   },
