@@ -45,7 +45,7 @@ const HeadingWrapper = styled.h3`
 
 const HeadingContentWrapper = styled.span.attrs({ role: 'text' })``;
 
-const LabelWrapper = styled.span.attrs({ 'aria-hidden': 'true' })`
+const LabelWrapper = styled.span`
   ${({ service }) => service && getSansBold(service)};
   ${({ script }) => script && getPica(script)};
   color: ${({ headerLabelColor }) => headerLabelColor};
@@ -139,6 +139,8 @@ const renderHeaderContent = ({
   const hiddenTextProps =
     stateLabel.toLowerCase() === 'live' ? { lang: 'en-GB' } : {};
 
+  const labelWrapperProps = isLive ? { 'aria-hidden': 'true' } : {};
+
   const content = (
     <HeadingContentWrapper>
       {!isOnDemand && (
@@ -146,13 +148,14 @@ const renderHeaderContent = ({
           <LabelWrapper
             service={service}
             script={script}
+            {...labelWrapperProps}
             {...programStateConfig[state]}
           >
             {`${stateLabel.toUpperCase()}`}
           </LabelWrapper>
           <VisuallyHiddenText {...hiddenTextProps}>
             {isLive && ` ${sentenceCase(stateLabel)}`}
-            {','}
+            {`,`}
           </VisuallyHiddenText>
         </>
       )}
