@@ -10,8 +10,8 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
 }
 
 .c8 {
-  font-size: 1.625rem;
-  line-height: 1.875rem;
+  font-size: 1.0625rem;
+  line-height: 1.4375rem;
   font-family: "Shonar Bangla",Helmet,Freesans,Helvetica,Arial,sans-serif;
   font-weight: 700;
   font-style: normal;
@@ -151,15 +151,22 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
   .c8 {
-    font-size: 1.625rem;
-    line-height: 1.875rem;
+    font-size: 1.0625rem;
+    line-height: 1.4375rem;
   }
 }
 
 @media (min-width:37.5rem) {
   .c8 {
-    font-size: 1.75rem;
-    line-height: 2rem;
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+  }
+}
+
+@media (min-width:25rem) {
+  .c8 {
+    font-size: 1.375rem;
+    line-height: 1.75rem;
   }
 }
 
@@ -661,8 +668,8 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
 }
 
 .c8 {
-  font-size: 1.25rem;
-  line-height: 1.875rem;
+  font-size: 0.9375rem;
+  line-height: 1.5625rem;
   font-family: Padauk,Arial,Verdana,Geneva,Helvetica,sans-serif;
   font-weight: 700;
   font-style: normal;
@@ -802,15 +809,22 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
   .c8 {
-    font-size: 1.25rem;
-    line-height: 1.875rem;
+    font-size: 1rem;
+    line-height: 1.75rem;
   }
 }
 
 @media (min-width:37.5rem) {
   .c8 {
-    font-size: 1.625rem;
-    line-height: 2.75rem;
+    font-size: 1rem;
+    line-height: 1.875rem;
+  }
+}
+
+@media (min-width:25rem) {
+  .c8 {
+    font-size: 1rem;
+    line-height: 1.625rem;
   }
 }
 
@@ -1312,8 +1326,8 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
 }
 
 .c8 {
-  font-size: 1.125rem;
-  line-height: 1.375rem;
+  font-size: 0.9375rem;
+  line-height: 1.25rem;
   font-family: ReithSerif,Helvetica,Arial,sans-serif;
   font-weight: 500;
   font-style: normal;
@@ -1453,15 +1467,22 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
   .c8 {
-    font-size: 1.25rem;
-    line-height: 1.5rem;
+    font-size: 1rem;
+    line-height: 1.25rem;
   }
 }
 
 @media (min-width:37.5rem) {
   .c8 {
-    font-size: 1.5rem;
-    line-height: 1.75rem;
+    font-size: 1rem;
+    line-height: 1.25rem;
+  }
+}
+
+@media (min-width:25rem) {
+  .c8 {
+    font-size: 1.125rem;
+    line-height: 1.375rem;
   }
 }
 
@@ -1963,8 +1984,8 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
 }
 
 .c8 {
-  font-size: 1.5rem;
-  line-height: 2rem;
+  font-size: 1rem;
+  line-height: 1.625rem;
   font-family: "BBC Nassim Persian",Arial,Verdana,Geneva,Helvetica,sans-serif;
   font-weight: 700;
   font-style: normal;
@@ -2104,15 +2125,22 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
   .c8 {
-    font-size: 1.625rem;
-    line-height: 2.25rem;
+    font-size: 1.25rem;
+    line-height: 1.625rem;
   }
 }
 
 @media (min-width:37.5rem) {
   .c8 {
-    font-size: 1.75rem;
-    line-height: 2.25rem;
+    font-size: 1.25rem;
+    line-height: 1.625rem;
+  }
+}
+
+@media (min-width:25rem) {
+  .c8 {
+    font-size: 1.375rem;
+    line-height: 1.75rem;
   }
 }
 
