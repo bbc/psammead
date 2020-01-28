@@ -1,60 +1,64 @@
 import React from 'react';
 import { shouldMatchSnapshot } from '@bbc/psammead-test-helpers';
 import { latin, arabic } from '@bbc/gel-foundations/scripts';
-import { MostReadLink, MostReadRank } from '.';
-import { getItem } from '../testHelpers/itemsHelper';
+import { MostReadLink } from '.';
+import { getItem, getItemWrapperArray } from '../testHelpers';
 
 describe('MostReadLink', () => {
+  const newsItem = getItem({ service: 'news', withTimestamp: true });
+  const arabicItem = getItem({ service: 'arabic' });
+
   shouldMatchSnapshot(
     'should render ltr correctly',
     <MostReadLink
-      item={getItem('news')}
+      href={newsItem.href}
       service="news"
       script={latin}
-      dir="ltr"
+      title={newsItem.title}
     />,
   );
 
   shouldMatchSnapshot(
     'should render rtl correctly',
     <MostReadLink
-      item={getItem('arabic')}
-      service="arabic"
-      script={arabic}
       dir="rtl"
+      href={arabicItem.href}
+      service="persian"
+      script={arabic}
+      title={arabicItem.title}
     />,
   );
 
   shouldMatchSnapshot(
     'should render with last updated date correctly',
     <MostReadLink
-      item={getItem('news', true)}
+      href={newsItem.href}
       service="news"
       script={latin}
-      dir="ltr"
-    />,
+      title={newsItem.title}
+    >
+      {newsItem.timestamp}
+    </MostReadLink>,
   );
 });
 
-describe('MostReadRank', () => {
+describe('MostReadItemWrapper', () => {
   shouldMatchSnapshot(
-    'should render ltr correctly',
-    <MostReadRank service="news" script={latin}>
-      5
-    </MostReadRank>,
+    'should render ltr correctly with 10 items',
+    getItemWrapperArray({
+      numberOfItems: 10,
+      service: 'news',
+      script: latin,
+    }).map(item => item),
   );
 
   shouldMatchSnapshot(
-    'should render ltr with double digits correctly',
-    <MostReadRank service="news" script={latin}>
-      10
-    </MostReadRank>,
-  );
-
-  shouldMatchSnapshot(
-    'should render rtl correctly',
-    <MostReadRank service="persian" script={arabic}>
-      ۲
-    </MostReadRank>,
+    'should render rtl correctly with 10 items',
+    getItemWrapperArray({
+      numberOfItems: 10,
+      service: 'persian',
+      script: arabic,
+      dir: 'rtl',
+    }).map(item => item),
   );
 });

@@ -277,6 +277,7 @@ exports[`Media Player: Canonical Entry renders a landscape container with a plac
         class="c8"
       >
         <svg
+          aria-hidden="true"
           class="c9"
           focusable="false"
           height="12px"
@@ -479,6 +480,7 @@ exports[`Media Player: Canonical Entry renders a placeholder image with guidance
         class="c9"
       >
         <svg
+          aria-hidden="true"
           class="c10"
           focusable="false"
           height="12px"
@@ -649,6 +651,7 @@ exports[`Media Player: Canonical Entry renders a portrait container with a place
         class="c8"
       >
         <svg
+          aria-hidden="true"
           class="c9"
           focusable="false"
           height="12px"
@@ -685,13 +688,13 @@ exports[`Media Player: Canonical Entry renders an iframe when showPlaceholder is
 }
 
 .c1 {
+  border: 0;
+  left: 0;
+  overflow: hidden;
   position: absolute;
   top: 0;
-  left: 0;
   width: 100%;
   height: 100%;
-  border: 0;
-  overflow: hidden;
 }
 
 <div
@@ -716,13 +719,13 @@ exports[`Media Player: Canonical Entry renders the audio skin 1`] = `
 }
 
 .c1 {
+  border: 0;
+  left: 0;
+  overflow: hidden;
   position: absolute;
   top: 0;
-  left: 0;
   width: 100%;
   height: 100%;
-  border: 0;
-  overflow: hidden;
 }
 
 <div
@@ -935,6 +938,7 @@ exports[`Media Player: Canonical Entry renders with no-js styles when noJsClassN
         class="c9"
       >
         <svg
+          aria-hidden="true"
           class="c10"
           focusable="false"
           height="12px"

@@ -3,6 +3,20 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 0.5.2-alpha.6 | [PR#2996](https://github.com/bbc/psammead/pull/2996) Talos - Bump Dependencies - @bbc/psammead-section-label |
+| 0.5.2-alpha.5 | [PR#2982](https://github.com/bbc/psammead/pull/2982) Update readme |
+| 0.5.2-alpha.4 | [PR#2982](https://github.com/bbc/psammead/pull/2982) Talos - Bump Dependencies - @bbc/psammead-grid, @bbc/psammead-section-label |
+| 0.5.2-alpha.3 | [PR#2983](https://github.com/bbc/psammead/pull/2983) Conditionally render timestamp wrapper |
+| 0.5.2-alpha.2 | [PR#2978](https://github.com/bbc/psammead/pull/2978) Talos - Bump Dependencies - @bbc/gel-foundations, @bbc/psammead-grid |
+| 0.5.2-alpha.1 | [PR#2952](https://github.com/bbc/psammead/pull/2952) Import psammead-section-label, and remove titles |
+| 0.5.1-alpha.5 | [PR#2936](https://github.com/bbc/psammead/pull/2936) Increase 1 column viewport to MAX_GEL_GROUP_2, add spacing between timestamp and link and add padding-top to link |
+| 0.5.1-alpha.4 | [PR#2973](https://github.com/bbc/psammead/pull/2973) Talos - Bump Dependencies - @bbc/psammead-styles |
+| 0.5.1-alpha.3 | [PR#2939](https://github.com/bbc/psammead/pull/2939) Fix storybook example for service with variants |
+| 0.5.1-alpha.2 | [PR#2933](https://github.com/bbc/psammead/pull/2933) Add most read storybook example with timestamp |
+| 0.5.1-alpha.1 | [PR#2895](https://github.com/bbc/psammead/pull/2895) Export MostReadSection separetly, add faux box for MostReadRank |
+| 0.5.0-alpha.3 | [PR#2928](https://github.com/bbc/psammead/pull/2928) Talos - Bump Dependencies - @bbc/psammead-grid |
+| 0.5.0-alpha.2 | [PR#2920](https://github.com/bbc/psammead/pull/2920) Talos - Bump Dependencies - @bbc/gel-foundations, @bbc/psammead-grid |
+| 0.5.0-alpha.1 | [PR#2869](https://github.com/bbc/psammead/pull/2869) Export most-read components separately. |
 | 0.4.0-alpha.2 | [PR#2880](https://github.com/bbc/psammead/pull/2880) Talos - Bump Dependencies - @bbc/psammead-grid |
 | 0.4.0-alpha.1 | [PR#2860](https://github.com/bbc/psammead/pull/2717) Update props for MostReadItem and update Readme |
 | 0.3.0-alpha.1 | [PR#2717](https://github.com/bbc/psammead/pull/2717) Update MostReadList with UX changes and various fixes |

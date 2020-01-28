@@ -1,5 +1,1243 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`MostReadItemWrapper should render ltr correctly with 10 items 1`] = `
+.c6 {
+  font-size: 1.125rem;
+  line-height: 1.375rem;
+  font-family: ReithSerif,Helvetica,Arial,sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  position: static;
+  color: #222222;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  margin-bottom: 0.5rem;
+}
+
+.c6:hover,
+.c6:focus {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.c6:before {
+  bottom: 0;
+  content: '';
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  right: 0;
+  top: 0;
+  white-space: nowrap;
+  z-index: 1;
+}
+
+.c5 {
+  padding-top: 0.375rem;
+  padding-bottom: 1.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  margin: 0;
+  padding: 0;
+}
+
+.c1 {
+  position: relative;
+}
+
+.c4 {
+  font-family: ReithSerif,Helvetica,Arial,sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 2rem;
+  line-height: 2.25rem;
+  position: relative;
+  color: #B80000;
+  margin: 0;
+  padding: 0;
+}
+
+@media (max-width:14.9375rem) {
+  .c0 {
+    width: calc(100%);
+    display: inline-block;
+    vertical-align: top;
+  }
+}
+
+@media (min-width:15rem) and (max-width:24.9375rem) {
+  .c0 {
+    width: calc(100%);
+    display: inline-block;
+    vertical-align: top;
+  }
+}
+
+@media (min-width:25rem) and (max-width:37.4375rem) {
+  .c0 {
+    width: calc(100%);
+    display: inline-block;
+    vertical-align: top;
+  }
+}
+
+@media (min-width:37.5rem) and (max-width:62.9375rem) {
+  .c0 {
+    width: calc(50%);
+    display: inline-block;
+    vertical-align: top;
+  }
+}
+
+@media (min-width:63rem) and (max-width:80rem) {
+  .c0 {
+    width: calc(50%);
+    display: inline-block;
+    vertical-align: top;
+  }
+}
+
+@media (min-width:80rem) {
+  .c0 {
+    width: calc(20%);
+    display: inline-block;
+    vertical-align: top;
+  }
+}
+
+@supports (display:grid) {
+  .c0 {
+    display: block;
+  }
+}
+
+@media (min-width:20rem) and (max-width:37.4375rem) {
+  .c6 {
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .c6 {
+    font-size: 1.5rem;
+    line-height: 1.75rem;
+  }
+}
+
+@supports (grid-template-columns:fit-content(200px)) {
+  .c5 {
+    padding-right: 0;
+  }
+}
+
+@media (max-width:14.9375rem) {
+  .c3 {
+    min-width: 2rem;
+  }
+}
+
+@media (min-width:15rem) and (max-width:24.9375rem) {
+  .c3 {
+    min-width: 2.5rem;
+  }
+}
+
+@media (min-width:25rem) and (max-width:37.4375rem) {
+  .c3 {
+    min-width: 3rem;
+  }
+}
+
+@media (min-width:37.5rem) and (max-width:80rem) {
+  .c3 {
+    min-width: auto;
+  }
+}
+
+@media (min-width:80rem) {
+  .c3 {
+    min-width: auto;
+  }
+}
+
+@media (max-width:14.9375rem) {
+  .c7 {
+    min-width: 2rem;
+  }
+}
+
+@media (min-width:15rem) and (max-width:24.9375rem) {
+  .c7 {
+    min-width: 2.5rem;
+  }
+}
+
+@media (min-width:25rem) and (max-width:37.4375rem) {
+  .c7 {
+    min-width: 3rem;
+  }
+}
+
+@media (min-width:37.5rem) and (max-width:80rem) {
+  .c7 {
+    min-width: 4rem;
+  }
+}
+
+@media (min-width:80rem) {
+  .c7 {
+    min-width: auto;
+  }
+}
+
+@media (max-width:14.9375rem) {
+  .c8 {
+    min-width: 2rem;
+  }
+}
+
+@media (min-width:15rem) and (max-width:24.9375rem) {
+  .c8 {
+    min-width: 2.5rem;
+  }
+}
+
+@media (min-width:25rem) and (max-width:37.4375rem) {
+  .c8 {
+    min-width: 3rem;
+  }
+}
+
+@media (min-width:37.5rem) and (max-width:80rem) {
+  .c8 {
+    min-width: auto;
+  }
+}
+
+@media (min-width:80rem) {
+  .c8 {
+    min-width: 4.25rem;
+  }
+}
+
+@media (max-width:14.9375rem) {
+  .c9 {
+    min-width: 2rem;
+  }
+}
+
+@media (min-width:15rem) and (max-width:24.9375rem) {
+  .c9 {
+    min-width: 2.5rem;
+  }
+}
+
+@media (min-width:25rem) and (max-width:37.4375rem) {
+  .c9 {
+    min-width: 3rem;
+  }
+}
+
+@media (min-width:37.5rem) and (max-width:80rem) {
+  .c9 {
+    min-width: 4rem;
+  }
+}
+
+@media (min-width:80rem) {
+  .c9 {
+    min-width: auto;
+  }
+}
+
+@media (max-width:14.9375rem) {
+  .c10 {
+    min-width: 2rem;
+  }
+}
+
+@media (min-width:15rem) and (max-width:24.9375rem) {
+  .c10 {
+    min-width: 2.5rem;
+  }
+}
+
+@media (min-width:25rem) and (max-width:37.4375rem) {
+  .c10 {
+    min-width: 3rem;
+  }
+}
+
+@media (min-width:37.5rem) and (max-width:80rem) {
+  .c10 {
+    min-width: auto;
+  }
+}
+
+@media (min-width:80rem) {
+  .c10 {
+    min-width: auto;
+  }
+}
+
+@media (min-width:20rem) and (max-width:37.4375rem) {
+  .c4 {
+    font-size: 2.5rem;
+    line-height: 2.75rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .c4 {
+    font-size: 3.5rem;
+    line-height: 3.75rem;
+  }
+}
+
+<div>
+  <li
+    class="c0 c1"
+    dir="ltr"
+    role="listitem"
+  >
+    <div
+      class="c2"
+    >
+      <div
+        class="c3"
+        dir="ltr"
+      >
+        <span
+          class="c4"
+        >
+          1
+        </span>
+      </div>
+      <div
+        class="c5"
+        dir="ltr"
+      >
+        <a
+          class="c6"
+          href="https://www.bbc.com/news/articles/cn7k01xp8kxo"
+        >
+          Could a computer ever create better art than a human?
+        </a>
+      </div>
+    </div>
+  </li>
+  <li
+    class="c0 c1"
+    dir="ltr"
+    role="listitem"
+  >
+    <div
+      class="c2"
+    >
+      <div
+        class="c7"
+        dir="ltr"
+      >
+        <span
+          class="c4"
+        >
+          2
+        </span>
+      </div>
+      <div
+        class="c5"
+        dir="ltr"
+      >
+        <a
+          class="c6"
+          href="https://www.bbc.com/news/articles/cn7k01xp8kxo"
+        >
+          Could a computer ever create better art than a human?
+        </a>
+      </div>
+    </div>
+  </li>
+  <li
+    class="c0 c1"
+    dir="ltr"
+    role="listitem"
+  >
+    <div
+      class="c2"
+    >
+      <div
+        class="c3"
+        dir="ltr"
+      >
+        <span
+          class="c4"
+        >
+          3
+        </span>
+      </div>
+      <div
+        class="c5"
+        dir="ltr"
+      >
+        <a
+          class="c6"
+          href="https://www.bbc.com/news/articles/cn7k01xp8kxo"
+        >
+          Could a computer ever create better art than a human?
+        </a>
+      </div>
+    </div>
+  </li>
+  <li
+    class="c0 c1"
+    dir="ltr"
+    role="listitem"
+  >
+    <div
+      class="c2"
+    >
+      <div
+        class="c7"
+        dir="ltr"
+      >
+        <span
+          class="c4"
+        >
+          4
+        </span>
+      </div>
+      <div
+        class="c5"
+        dir="ltr"
+      >
+        <a
+          class="c6"
+          href="https://www.bbc.com/news/articles/cn7k01xp8kxo"
+        >
+          Could a computer ever create better art than a human?
+        </a>
+      </div>
+    </div>
+  </li>
+  <li
+    class="c0 c1"
+    dir="ltr"
+    role="listitem"
+  >
+    <div
+      class="c2"
+    >
+      <div
+        class="c8"
+        dir="ltr"
+      >
+        <span
+          class="c4"
+        >
+          5
+        </span>
+      </div>
+      <div
+        class="c5"
+        dir="ltr"
+      >
+        <a
+          class="c6"
+          href="https://www.bbc.com/news/articles/cn7k01xp8kxo"
+        >
+          Could a computer ever create better art than a human?
+        </a>
+      </div>
+    </div>
+  </li>
+  <li
+    class="c0 c1"
+    dir="ltr"
+    role="listitem"
+  >
+    <div
+      class="c2"
+    >
+      <div
+        class="c9"
+        dir="ltr"
+      >
+        <span
+          class="c4"
+        >
+          6
+        </span>
+      </div>
+      <div
+        class="c5"
+        dir="ltr"
+      >
+        <a
+          class="c6"
+          href="https://www.bbc.com/news/articles/cn7k01xp8kxo"
+        >
+          Could a computer ever create better art than a human?
+        </a>
+      </div>
+    </div>
+  </li>
+  <li
+    class="c0 c1"
+    dir="ltr"
+    role="listitem"
+  >
+    <div
+      class="c2"
+    >
+      <div
+        class="c10"
+        dir="ltr"
+      >
+        <span
+          class="c4"
+        >
+          7
+        </span>
+      </div>
+      <div
+        class="c5"
+        dir="ltr"
+      >
+        <a
+          class="c6"
+          href="https://www.bbc.com/news/articles/cn7k01xp8kxo"
+        >
+          Could a computer ever create better art than a human?
+        </a>
+      </div>
+    </div>
+  </li>
+  <li
+    class="c0 c1"
+    dir="ltr"
+    role="listitem"
+  >
+    <div
+      class="c2"
+    >
+      <div
+        class="c9"
+        dir="ltr"
+      >
+        <span
+          class="c4"
+        >
+          8
+        </span>
+      </div>
+      <div
+        class="c5"
+        dir="ltr"
+      >
+        <a
+          class="c6"
+          href="https://www.bbc.com/news/articles/cn7k01xp8kxo"
+        >
+          Could a computer ever create better art than a human?
+        </a>
+      </div>
+    </div>
+  </li>
+  <li
+    class="c0 c1"
+    dir="ltr"
+    role="listitem"
+  >
+    <div
+      class="c2"
+    >
+      <div
+        class="c10"
+        dir="ltr"
+      >
+        <span
+          class="c4"
+        >
+          9
+        </span>
+      </div>
+      <div
+        class="c5"
+        dir="ltr"
+      >
+        <a
+          class="c6"
+          href="https://www.bbc.com/news/articles/cn7k01xp8kxo"
+        >
+          Could a computer ever create better art than a human?
+        </a>
+      </div>
+    </div>
+  </li>
+  <li
+    class="c0 c1"
+    dir="ltr"
+    role="listitem"
+  >
+    <div
+      class="c2"
+    >
+      <div
+        class="c9"
+        dir="ltr"
+      >
+        <span
+          class="c4"
+        >
+          10
+        </span>
+      </div>
+      <div
+        class="c5"
+        dir="ltr"
+      >
+        <a
+          class="c6"
+          href="https://www.bbc.com/news/articles/cn7k01xp8kxo"
+        >
+          Could a computer ever create better art than a human?
+        </a>
+      </div>
+    </div>
+  </li>
+</div>
+`;
+
+exports[`MostReadItemWrapper should render rtl correctly with 10 items 1`] = `
+.c6 {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-family: "BBC Nassim Persian",Arial,Verdana,Geneva,Helvetica,sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  position: static;
+  color: #222222;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  margin-bottom: 0.5rem;
+}
+
+.c6:hover,
+.c6:focus {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.c6:before {
+  bottom: 0;
+  content: '';
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  right: 0;
+  top: 0;
+  white-space: nowrap;
+  z-index: 1;
+}
+
+.c5 {
+  padding-top: 0.375rem;
+  padding-bottom: 1.5rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  margin: 0;
+  padding: 0;
+}
+
+.c1 {
+  position: relative;
+}
+
+.c4 {
+  font-family: "BBC Nassim Persian",Arial,Verdana,Geneva,Helvetica,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2rem;
+  line-height: 2.25rem;
+  position: relative;
+  color: #B80000;
+  margin: 0;
+  padding: 0;
+}
+
+@media (max-width:14.9375rem) {
+  .c0 {
+    width: calc(100%);
+    display: inline-block;
+    vertical-align: top;
+  }
+}
+
+@media (min-width:15rem) and (max-width:24.9375rem) {
+  .c0 {
+    width: calc(100%);
+    display: inline-block;
+    vertical-align: top;
+  }
+}
+
+@media (min-width:25rem) and (max-width:37.4375rem) {
+  .c0 {
+    width: calc(100%);
+    display: inline-block;
+    vertical-align: top;
+  }
+}
+
+@media (min-width:37.5rem) and (max-width:62.9375rem) {
+  .c0 {
+    width: calc(50%);
+    display: inline-block;
+    vertical-align: top;
+  }
+}
+
+@media (min-width:63rem) and (max-width:80rem) {
+  .c0 {
+    width: calc(50%);
+    display: inline-block;
+    vertical-align: top;
+  }
+}
+
+@media (min-width:80rem) {
+  .c0 {
+    width: calc(20%);
+    display: inline-block;
+    vertical-align: top;
+  }
+}
+
+@supports (display:grid) {
+  .c0 {
+    display: block;
+  }
+}
+
+@media (min-width:20rem) and (max-width:37.4375rem) {
+  .c6 {
+    font-size: 1.625rem;
+    line-height: 2.25rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .c6 {
+    font-size: 1.75rem;
+    line-height: 2.25rem;
+  }
+}
+
+@supports (grid-template-columns:fit-content(200px)) {
+  .c5 {
+    padding-left: 0;
+  }
+}
+
+@media (max-width:14.9375rem) {
+  .c3 {
+    min-width: 1.25rem;
+  }
+}
+
+@media (min-width:15rem) and (max-width:24.9375rem) {
+  .c3 {
+    min-width: 1.25rem;
+  }
+}
+
+@media (min-width:25rem) and (max-width:37.4375rem) {
+  .c3 {
+    min-width: 1.25rem;
+  }
+}
+
+@media (min-width:37.5rem) and (max-width:80rem) {
+  .c3 {
+    min-width: auto;
+  }
+}
+
+@media (min-width:80rem) {
+  .c3 {
+    min-width: auto;
+  }
+}
+
+@media (max-width:14.9375rem) {
+  .c7 {
+    min-width: 1.25rem;
+  }
+}
+
+@media (min-width:15rem) and (max-width:24.9375rem) {
+  .c7 {
+    min-width: 1.25rem;
+  }
+}
+
+@media (min-width:25rem) and (max-width:37.4375rem) {
+  .c7 {
+    min-width: 1.25rem;
+  }
+}
+
+@media (min-width:37.5rem) and (max-width:80rem) {
+  .c7 {
+    min-width: 1.75rem;
+  }
+}
+
+@media (min-width:80rem) {
+  .c7 {
+    min-width: auto;
+  }
+}
+
+@media (max-width:14.9375rem) {
+  .c8 {
+    min-width: 1.25rem;
+  }
+}
+
+@media (min-width:15rem) and (max-width:24.9375rem) {
+  .c8 {
+    min-width: 1.25rem;
+  }
+}
+
+@media (min-width:25rem) and (max-width:37.4375rem) {
+  .c8 {
+    min-width: 1.25rem;
+  }
+}
+
+@media (min-width:37.5rem) and (max-width:80rem) {
+  .c8 {
+    min-width: auto;
+  }
+}
+
+@media (min-width:80rem) {
+  .c8 {
+    min-width: 2rem;
+  }
+}
+
+@media (max-width:14.9375rem) {
+  .c9 {
+    min-width: 1.25rem;
+  }
+}
+
+@media (min-width:15rem) and (max-width:24.9375rem) {
+  .c9 {
+    min-width: 1.25rem;
+  }
+}
+
+@media (min-width:25rem) and (max-width:37.4375rem) {
+  .c9 {
+    min-width: 1.25rem;
+  }
+}
+
+@media (min-width:37.5rem) and (max-width:80rem) {
+  .c9 {
+    min-width: 1.75rem;
+  }
+}
+
+@media (min-width:80rem) {
+  .c9 {
+    min-width: auto;
+  }
+}
+
+@media (max-width:14.9375rem) {
+  .c10 {
+    min-width: 1.25rem;
+  }
+}
+
+@media (min-width:15rem) and (max-width:24.9375rem) {
+  .c10 {
+    min-width: 1.25rem;
+  }
+}
+
+@media (min-width:25rem) and (max-width:37.4375rem) {
+  .c10 {
+    min-width: 1.25rem;
+  }
+}
+
+@media (min-width:37.5rem) and (max-width:80rem) {
+  .c10 {
+    min-width: auto;
+  }
+}
+
+@media (min-width:80rem) {
+  .c10 {
+    min-width: auto;
+  }
+}
+
+@media (min-width:20rem) and (max-width:37.4375rem) {
+  .c4 {
+    font-size: 2.5rem;
+    line-height: 2.75rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .c4 {
+    font-size: 3.5rem;
+    line-height: 3.75rem;
+  }
+}
+
+<div>
+  <li
+    class="c0 c1"
+    dir="rtl"
+    role="listitem"
+  >
+    <div
+      class="c2"
+    >
+      <div
+        class="c3"
+        dir="rtl"
+      >
+        <span
+          class="c4"
+        >
+          ۱
+        </span>
+      </div>
+      <div
+        class="c5"
+        dir="rtl"
+      >
+        <a
+          class="c6"
+          href="https://www.bbc.com/persian/articles/cej3lzd5e0go"
+        >
+          در این جشنواره برای نخستین بار از کارگران افغانستان در شهر تهران تقدیر شد
+        </a>
+      </div>
+    </div>
+  </li>
+  <li
+    class="c0 c1"
+    dir="rtl"
+    role="listitem"
+  >
+    <div
+      class="c2"
+    >
+      <div
+        class="c7"
+        dir="rtl"
+      >
+        <span
+          class="c4"
+        >
+          ۲
+        </span>
+      </div>
+      <div
+        class="c5"
+        dir="rtl"
+      >
+        <a
+          class="c6"
+          href="https://www.bbc.com/persian/articles/cej3lzd5e0go"
+        >
+          در این جشنواره برای نخستین بار از کارگران افغانستان در شهر تهران تقدیر شد
+        </a>
+      </div>
+    </div>
+  </li>
+  <li
+    class="c0 c1"
+    dir="rtl"
+    role="listitem"
+  >
+    <div
+      class="c2"
+    >
+      <div
+        class="c3"
+        dir="rtl"
+      >
+        <span
+          class="c4"
+        >
+          ۳
+        </span>
+      </div>
+      <div
+        class="c5"
+        dir="rtl"
+      >
+        <a
+          class="c6"
+          href="https://www.bbc.com/persian/articles/cej3lzd5e0go"
+        >
+          در این جشنواره برای نخستین بار از کارگران افغانستان در شهر تهران تقدیر شد
+        </a>
+      </div>
+    </div>
+  </li>
+  <li
+    class="c0 c1"
+    dir="rtl"
+    role="listitem"
+  >
+    <div
+      class="c2"
+    >
+      <div
+        class="c7"
+        dir="rtl"
+      >
+        <span
+          class="c4"
+        >
+          ۴
+        </span>
+      </div>
+      <div
+        class="c5"
+        dir="rtl"
+      >
+        <a
+          class="c6"
+          href="https://www.bbc.com/persian/articles/cej3lzd5e0go"
+        >
+          در این جشنواره برای نخستین بار از کارگران افغانستان در شهر تهران تقدیر شد
+        </a>
+      </div>
+    </div>
+  </li>
+  <li
+    class="c0 c1"
+    dir="rtl"
+    role="listitem"
+  >
+    <div
+      class="c2"
+    >
+      <div
+        class="c8"
+        dir="rtl"
+      >
+        <span
+          class="c4"
+        >
+          ۵
+        </span>
+      </div>
+      <div
+        class="c5"
+        dir="rtl"
+      >
+        <a
+          class="c6"
+          href="https://www.bbc.com/persian/articles/cej3lzd5e0go"
+        >
+          در این جشنواره برای نخستین بار از کارگران افغانستان در شهر تهران تقدیر شد
+        </a>
+      </div>
+    </div>
+  </li>
+  <li
+    class="c0 c1"
+    dir="rtl"
+    role="listitem"
+  >
+    <div
+      class="c2"
+    >
+      <div
+        class="c9"
+        dir="rtl"
+      >
+        <span
+          class="c4"
+        >
+          ۶
+        </span>
+      </div>
+      <div
+        class="c5"
+        dir="rtl"
+      >
+        <a
+          class="c6"
+          href="https://www.bbc.com/persian/articles/cej3lzd5e0go"
+        >
+          در این جشنواره برای نخستین بار از کارگران افغانستان در شهر تهران تقدیر شد
+        </a>
+      </div>
+    </div>
+  </li>
+  <li
+    class="c0 c1"
+    dir="rtl"
+    role="listitem"
+  >
+    <div
+      class="c2"
+    >
+      <div
+        class="c10"
+        dir="rtl"
+      >
+        <span
+          class="c4"
+        >
+          ۷
+        </span>
+      </div>
+      <div
+        class="c5"
+        dir="rtl"
+      >
+        <a
+          class="c6"
+          href="https://www.bbc.com/persian/articles/cej3lzd5e0go"
+        >
+          در این جشنواره برای نخستین بار از کارگران افغانستان در شهر تهران تقدیر شد
+        </a>
+      </div>
+    </div>
+  </li>
+  <li
+    class="c0 c1"
+    dir="rtl"
+    role="listitem"
+  >
+    <div
+      class="c2"
+    >
+      <div
+        class="c9"
+        dir="rtl"
+      >
+        <span
+          class="c4"
+        >
+          ۸
+        </span>
+      </div>
+      <div
+        class="c5"
+        dir="rtl"
+      >
+        <a
+          class="c6"
+          href="https://www.bbc.com/persian/articles/cej3lzd5e0go"
+        >
+          در این جشنواره برای نخستین بار از کارگران افغانستان در شهر تهران تقدیر شد
+        </a>
+      </div>
+    </div>
+  </li>
+  <li
+    class="c0 c1"
+    dir="rtl"
+    role="listitem"
+  >
+    <div
+      class="c2"
+    >
+      <div
+        class="c10"
+        dir="rtl"
+      >
+        <span
+          class="c4"
+        >
+          ۹
+        </span>
+      </div>
+      <div
+        class="c5"
+        dir="rtl"
+      >
+        <a
+          class="c6"
+          href="https://www.bbc.com/persian/articles/cej3lzd5e0go"
+        >
+          در این جشنواره برای نخستین بار از کارگران افغانستان در شهر تهران تقدیر شد
+        </a>
+      </div>
+    </div>
+  </li>
+  <li
+    class="c0 c1"
+    dir="rtl"
+    role="listitem"
+  >
+    <div
+      class="c2"
+    >
+      <div
+        class="c9"
+        dir="rtl"
+      >
+        <span
+          class="c4"
+        >
+          ۱۰
+        </span>
+      </div>
+      <div
+        class="c5"
+        dir="rtl"
+      >
+        <a
+          class="c6"
+          href="https://www.bbc.com/persian/articles/cej3lzd5e0go"
+        >
+          در این جشنواره برای نخستین بار از کارگران افغانستان در شهر تهران تقدیر شد
+        </a>
+      </div>
+    </div>
+  </li>
+</div>
+`;
+
 exports[`MostReadLink should render ltr correctly 1`] = `
 .c1 {
   font-size: 1.125rem;
@@ -7,9 +1245,11 @@ exports[`MostReadLink should render ltr correctly 1`] = `
   font-family: ReithSerif,Helvetica,Arial,sans-serif;
   font-weight: 500;
   font-style: normal;
+  position: static;
   color: #222222;
   -webkit-text-decoration: none;
   text-decoration: none;
+  margin-bottom: 0.5rem;
 }
 
 .c1:hover,
@@ -18,7 +1258,20 @@ exports[`MostReadLink should render ltr correctly 1`] = `
   text-decoration: underline;
 }
 
+.c1:before {
+  bottom: 0;
+  content: '';
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  right: 0;
+  top: 0;
+  white-space: nowrap;
+  z-index: 1;
+}
+
 .c0 {
+  padding-top: 0.375rem;
   padding-bottom: 1.5rem;
   padding-left: 1rem;
   padding-right: 1rem;
@@ -61,12 +1314,14 @@ exports[`MostReadLink should render rtl correctly 1`] = `
 .c1 {
   font-size: 1.5rem;
   line-height: 2rem;
-  font-family: "BBC Nassim Arabic",Arial,Verdana,Geneva,Helvetica,sans-serif;
+  font-family: "BBC Nassim Persian",Arial,Verdana,Geneva,Helvetica,sans-serif;
   font-weight: 700;
   font-style: normal;
+  position: static;
   color: #222222;
   -webkit-text-decoration: none;
   text-decoration: none;
+  margin-bottom: 0.5rem;
 }
 
 .c1:hover,
@@ -75,7 +1330,20 @@ exports[`MostReadLink should render rtl correctly 1`] = `
   text-decoration: underline;
 }
 
+.c1:before {
+  bottom: 0;
+  content: '';
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  right: 0;
+  top: 0;
+  white-space: nowrap;
+  z-index: 1;
+}
+
 .c0 {
+  padding-top: 0.375rem;
   padding-bottom: 1.5rem;
   padding-right: 1rem;
   padding-left: 1rem;
@@ -115,25 +1383,17 @@ exports[`MostReadLink should render rtl correctly 1`] = `
 `;
 
 exports[`MostReadLink should render with last updated date correctly 1`] = `
-.c2 {
-  font-size: 0.875rem;
-  line-height: 1.125rem;
-  color: #6E6E73;
-  display: block;
-  font-family: ReithSans,Helvetica,Arial,sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
 .c1 {
   font-size: 1.125rem;
   line-height: 1.375rem;
   font-family: ReithSerif,Helvetica,Arial,sans-serif;
   font-weight: 500;
   font-style: normal;
+  position: static;
   color: #222222;
   -webkit-text-decoration: none;
   text-decoration: none;
+  margin-bottom: 0.5rem;
 }
 
 .c1:hover,
@@ -142,24 +1402,37 @@ exports[`MostReadLink should render with last updated date correctly 1`] = `
   text-decoration: underline;
 }
 
+.c1:before {
+  bottom: 0;
+  content: '';
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  right: 0;
+  top: 0;
+  white-space: nowrap;
+  z-index: 1;
+}
+
 .c0 {
+  padding-top: 0.375rem;
   padding-bottom: 1.5rem;
   padding-left: 1rem;
   padding-right: 1rem;
 }
 
-@media (min-width:20rem) and (max-width:37.4375rem) {
-  .c2 {
-    font-size: 0.875rem;
-    line-height: 1.125rem;
-  }
+.c2 {
+  padding-top: 0.5rem;
 }
 
-@media (min-width:37.5rem) {
-  .c2 {
-    font-size: 0.8125rem;
-    line-height: 1rem;
-  }
+.c3 {
+  font-size: 0.875rem;
+  line-height: 1.125rem;
+  color: #6E6E73;
+  display: block;
+  font-family: ReithSans,Helvetica,Arial,sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
@@ -182,6 +1455,20 @@ exports[`MostReadLink should render with last updated date correctly 1`] = `
   }
 }
 
+@media (min-width:20rem) and (max-width:37.4375rem) {
+  .c3 {
+    font-size: 0.875rem;
+    line-height: 1.125rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .c3 {
+    font-size: 0.8125rem;
+    line-height: 1rem;
+  }
+}
+
 <div
   class="c0"
   dir="ltr"
@@ -192,116 +1479,15 @@ exports[`MostReadLink should render with last updated date correctly 1`] = `
   >
     Could a computer ever create better art than a human?
   </a>
-  <time
+  <div
     class="c2"
-    datetime="2019-03-01T14:00+00:00"
   >
-    Last updated: 5th November 2016
-  </time>
+    <time
+      class="c3"
+      datetime="2019-03-01T14:00+00:00"
+    >
+      Last updated: 5th November 2016
+    </time>
+  </div>
 </div>
-`;
-
-exports[`MostReadRank should render ltr correctly 1`] = `
-.c0 {
-  font-family: ReithSerif,Helvetica,Arial,sans-serif;
-  font-weight: 300;
-  font-style: normal;
-  font-size: 2rem;
-  line-height: 2.25rem;
-  color: #B80000;
-  margin: 0;
-  padding: 0;
-  float: left;
-}
-
-@media (min-width:20rem) and (max-width:37.4375rem) {
-  .c0 {
-    font-size: 2.5rem;
-    line-height: 2.75rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c0 {
-    font-size: 3.5rem;
-    line-height: 3.75rem;
-  }
-}
-
-<span
-  class="c0"
-  dir="ltr"
->
-  5
-</span>
-`;
-
-exports[`MostReadRank should render ltr with double digits correctly 1`] = `
-.c0 {
-  font-family: ReithSerif,Helvetica,Arial,sans-serif;
-  font-weight: 300;
-  font-style: normal;
-  font-size: 2rem;
-  line-height: 2.25rem;
-  color: #B80000;
-  margin: 0;
-  padding: 0;
-  float: left;
-}
-
-@media (min-width:20rem) and (max-width:37.4375rem) {
-  .c0 {
-    font-size: 2.5rem;
-    line-height: 2.75rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c0 {
-    font-size: 3.5rem;
-    line-height: 3.75rem;
-  }
-}
-
-<span
-  class="c0"
-  dir="ltr"
->
-  10
-</span>
-`;
-
-exports[`MostReadRank should render rtl correctly 1`] = `
-.c0 {
-  font-family: "BBC Nassim Persian",Arial,Verdana,Geneva,Helvetica,sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 2rem;
-  line-height: 2.25rem;
-  color: #B80000;
-  margin: 0;
-  padding: 0;
-  float: left;
-}
-
-@media (min-width:20rem) and (max-width:37.4375rem) {
-  .c0 {
-    font-size: 2.5rem;
-    line-height: 2.75rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c0 {
-    font-size: 3.5rem;
-    line-height: 3.75rem;
-  }
-}
-
-<span
-  class="c0"
-  dir="ltr"
->
-  ۲
-</span>
 `;

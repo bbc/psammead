@@ -4,6 +4,7 @@ import { C_SHADOW } from '@bbc/psammead-styles/colours';
 import {
   GEL_SPACING_TRPL,
   GEL_SPACING_QUAD,
+  GEL_SPACING_QUIN,
 } from '@bbc/gel-foundations/spacings';
 import { getCanon, getTrafalgar } from '@bbc/gel-foundations/typography';
 import { MEDIA_QUERY_TYPOGRAPHY } from '@bbc/gel-foundations/breakpoints';
@@ -18,7 +19,7 @@ export const Headline = styled.h1`
   margin: 0; /* Reset */
   padding: ${GEL_SPACING_QUAD} 0;
   ${MEDIA_QUERY_TYPOGRAPHY.LAPTOP_AND_LARGER} {
-    padding: 2.5rem 0;
+    padding: ${GEL_SPACING_QUIN} 0;
   }
 `;
 

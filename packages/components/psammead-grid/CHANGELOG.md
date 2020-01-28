@@ -3,6 +3,10 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 1.1.4 | [PR#2978](https://github.com/bbc/psammead/pull/2978) Talos - Bump Dependencies - @bbc/gel-foundations |
+| 1.1.3 | [PR#2973](https://github.com/bbc/psammead/pull/2973) Talos - Bump Dependencies - @bbc/psammead-styles |
+| 1.1.2 | [PR#2920](https://github.com/bbc/psammead/pull/2920) Talos - Bump Dependencies - @bbc/gel-foundations |
+| 1.1.1 | [PR#2893](https://github.com/bbc/psammead/pull/2893) Add `parentColumns` to prop list in README |
 | 1.1.0 | [PR#2876](https://github.com/bbc/psammead/pull/2876) Remove alpha tag |
 | 1.1.0-alpha.2 | [PR#2815](https://github.com/bbc/psammead/pull/2815) Remove display:inline on outer grids |
 | 1.1.0-alpha.1 | [PR#2796](https://github.com/bbc/psammead/pull/2796) Fix padding on outer grid  |

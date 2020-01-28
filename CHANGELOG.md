@@ -3,6 +3,27 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 2.0.64 | [PR#3000](https://github.com/bbc/psammead/pull/3000) Talos - Bump Dependencies - @bbc/psammead-brand |
+| 2.0.63 | [PR#2997](https://github.com/bbc/psammead/pull/2997) Talos - Bump Dependencies - @bbc/psammead-brand, @bbc/psammead-image-placeholder, @bbc/psammead-media-indicator |
+| 2.0.62 | [PR#2998](https://github.com/bbc/psammead/pull/2998) Remove unused package `jest-styled-components` |
+| 2.0.61 | [PR#2996](https://github.com/bbc/psammead/pull/2996) Talos - Bump Dependencies - @bbc/psammead-assets, @bbc/psammead-media-indicator |
+| 2.0.60 | [PR#2992](https://github.com/bbc/psammead/pull/2992) Talos - Bump Dependencies - @bbc/psammead-image-placeholder, @bbc/psammead-media-indicator |
+| 2.0.59 | [PR#2989](https://github.com/bbc/psammead/pull/2989) Talos - Bump Dependencies - @bbc/psammead-assets |
+| 2.0.58 | [PR#2987](https://github.com/bbc/psammead/pull/2987) Bumping dependencies |
+| 2.0.57 | [PR#2980](https://github.com/bbc/psammead/pull/2980) Bumping babel/cli and removing configFile option from build script |
+| 2.0.56 | [PR#2984](https://github.com/bbc/psammead/pull/2984) Talos - Bump Dependencies - @bbc/psammead-brand |
+| 2.0.55 | [PR#2982](https://github.com/bbc/psammead/pull/2982) Talos - Bump Dependencies - @bbc/psammead-brand, @bbc/psammead-caption, @bbc/psammead-copyright, @bbc/psammead-grid, @bbc/psammead-media-indicator, @bbc/psammead-paragraph, @bbc/psammead-storybook-helpers, @bbc/psammead-timestamp |
+| 2.0.54 | [PR#2978](https://github.com/bbc/psammead/pull/2978) Talos - Bump Dependencies - @bbc/gel-foundations, @bbc/psammead-brand, @bbc/psammead-caption, @bbc/psammead-copyright, @bbc/psammead-grid, @bbc/psammead-image-placeholder, @bbc/psammead-inline-link, @bbc/psammead-media-indicator, @bbc/psammead-paragraph, @bbc/psammead-timestamp |
+| 2.0.53 | [PR#2973](https://github.com/bbc/psammead/pull/2973) Talos - Bump Dependencies - @bbc/psammead-brand, @bbc/psammead-styles |
+| 2.0.52 | [PR#2955](https://github.com/bbc/psammead/pull/2955) Talos - Bump Dependencies - @bbc/psammead-storybook-helpers |
+| 2.0.51 | [PR#2954](https://github.com/bbc/psammead/pull/2954) Fix storybook build step |
+| 2.0.50 | [PR#2941](https://github.com/bbc/psammead/pull/2941) Serve fonts locally |
+| 2.0.49 | [PR#2930](https://github.com/bbc/psammead/pull/2930) Talos - Bump Dependencies - @bbc/psammead-brand |
+| 2.0.48 | [PR#2928](https://github.com/bbc/psammead/pull/2928) Talos - Bump Dependencies - @bbc/psammead-brand, @bbc/psammead-caption, @bbc/psammead-copyright, @bbc/psammead-grid, @bbc/psammead-media-indicator, @bbc/psammead-paragraph, @bbc/psammead-storybook-helpers, @bbc/psammead-timestamp |
+| 2.0.47 | [PR#2920](https://github.com/bbc/psammead/pull/2920) Talos - Bump Dependencies - @bbc/gel-foundations, @bbc/psammead-brand, @bbc/psammead-calendars, @bbc/psammead-grid |
+| 2.0.46 | [PR#2918](https://github.com/bbc/psammead/pull/2918) Bumping developer dependencies |
+| 2.0.45 | [PR#2917](https://github.com/bbc/psammead/pull/2917) Remove alpha tag from Brand component |
+| 2.0.44 | [PR#2894](https://github.com/bbc/psammead/pull/2894) Talos - Bump Dependencies - @bbc/psammead-locales |
 | 2.0.43 | [PR#2878](https://github.com/bbc/psammead/pull/2878) Adding Psammead Grid as a dependency |
 | 2.0.42 | [PR#2879](https://github.com/bbc/psammead/pull/2879) Bump browserslist and lerna |
 | 2.0.41 | [PR#2865](https://github.com/bbc/psammead/pull/2865) Bumping dependencies |

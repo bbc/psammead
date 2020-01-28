@@ -3,6 +3,9 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 8.2.3 | [PR#2978](https://github.com/bbc/psammead/pull/2978) Talos - Bump Dependencies - @bbc/gel-foundations |
+| 8.2.2 | [PR#2920](https://github.com/bbc/psammead/pull/2920) Remove camel casing from ukChina key value in TEXT-VARIANTS |
+| 8.2.1 | [PR#2920](https://github.com/bbc/psammead/pull/2920) Talos - Bump Dependencies - @bbc/gel-foundations |
 | 8.2.0 | [PR#2765](https://github.com/bbc/psammead/pull/2765) Export articlePaths through service knobs |
 | 8.1.5 | [PR#2753](https://github.com/bbc/psammead/pull/2753) Add article paths to text-variants |
 | 8.1.4 | [PR#2704](https://github.com/bbc/psammead/pull/2704) Add longText to TEXT_EXAMPLES and add value to storyProp |

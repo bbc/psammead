@@ -3,6 +3,12 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 1.0.7 | [PR#2995](https://github.com/bbc/psammead/pull/2995) Add `VisuallyHiddenText` to Script Link story |
+| 1.0.6 | [PR#2990](https://github.com/bbc/psammead/pull/2990) Use `GEL_SPACING`, `GEL_SPACING_DBL` and `GEL_SPACING_QUIN` constants |
+| 1.0.5 | [PR#2978](https://github.com/bbc/psammead/pull/2978) Talos - Bump Dependencies - @bbc/gel-foundations |
+| 1.0.4 | [PR#2973](https://github.com/bbc/psammead/pull/2973) Talos - Bump Dependencies - @bbc/psammead-styles |
+| 1.0.3 | [PR#2920](https://github.com/bbc/psammead/pull/2920) Talos - Bump Dependencies - @bbc/gel-foundations |
+| 1.0.2 | [PR#2896](https://github.com/bbc/psammead/pull/2896) Only add border to the script link span rather than all child spans |
 | 1.0.1 | [PR#2887](https://github.com/bbc/psammead/pull/2887) Update margins to be 0.5rem on top, bottom and left and 0rem on the right |
 | 1.0.0 | [PR#2853](https://github.com/bbc/psammead/pull/2853) Remove alpha tag after a successful accessibility swarm |
 | 1.0.0-alpha.14 | [PR#2833](https://github.com/bbc/psammead/pull/2833) Refactor to fix read&write issue on IE11 |

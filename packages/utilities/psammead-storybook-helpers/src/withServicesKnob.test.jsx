@@ -97,7 +97,7 @@ it('should pass the correct chosen service props to the story function', () => {
 
 it('should pass the correct chosen service props to the story function', () => {
   const mockStoryFn = jest.fn();
-  knobs.select = () => 'ukChinaSimp';
+  knobs.select = () => 'ukchinaSimp';
 
   withServicesKnob()(mockStoryFn);
 

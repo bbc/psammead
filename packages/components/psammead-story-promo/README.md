@@ -6,7 +6,7 @@ This component is currently tagged as alpha and is not suitable for production u
 
 ## Description
 
-The `StoryPromo` component is designed to be used on 'index' pages, which are pages that link to other articles/stories. It supports having an image on the left of the promo with info on the right. This info can be any collection of nodes, however typically these would be a headline, text summary and timestamp.
+The `StoryPromo` component is designed to be used on 'index' pages, which are pages that link to other articles/stories. This info can be any collection of nodes, however typically these would be a headline, text summary and timestamp.
 
 ## Exports
 
@@ -21,11 +21,11 @@ The `StoryPromo` component is designed to be used on 'index' pages, which are pa
 <!-- prettier-ignore -->
 | Argument | Type   | Required | Default | Example        |
 | -------- | ------ | -------- | ------- | -------------- |
-| image    | node   | No       | Null    | `<img>`          |
-| info     | node   | Yes      | N/A     | `<h2>Title</h2>` |
-| mediaIndicator     | node   | No      | null     | `<MediaIndicator duration="2:15" datetime="PT2M15S" offscreenText="Video 2 minutes 15 seconds" />` |
-| topStory | boolean | No      | false   | true          |
-| displayImage | boolean | No      | true   | false      |
+| image    | node   | no       | Null    | `<img>`          |
+| info     | node   | yes      | N/A     | `<h2>Title</h2>` |
+| mediaIndicator     | node   | no      | null     | `<MediaIndicator duration="2:15" datetime="PT2M15S" offscreenText="Video 2 minutes 15 seconds" />` |
+| displayImage | boolean | no | true | false |
+| promoType | string | no | `regular` | `top` |
 
 ## Headline Props
 
@@ -35,7 +35,7 @@ The `StoryPromo` component is designed to be used on 'index' pages, which are pa
 | Script    | object | yes | latin | `{ canon: { groupA: { fontSize: '28', lineHeight: '32',}, groupB: { fontSize: '32', lineHeight: '36', }, groupD: { fontSize: '44', lineHeight: '48', }, }, trafalgar: { groupA: { fontSize: '20', lineHeight: '24', }, groupB: { fontSize: '24', lineHeight: '28', }, groupD: { fontSize: '32', lineHeight: '36', }, }, }` |
 | service | string | yes | N/A | `'news'` |
 | promoHasImage | bool | no | true | `false` |
-| topStory | bool | no | false | `true` |
+| promoType | string | no | `regular` | `top` |
 
 ## Summary Props
 
@@ -45,7 +45,7 @@ The `StoryPromo` component is designed to be used on 'index' pages, which are pa
 | Script    | object | yes | latin | `{ canon: { groupA: { fontSize: '28', lineHeight: '32',}, groupB: { fontSize: '32', lineHeight: '36', }, groupD: { fontSize: '44', lineHeight: '48', }, }, trafalgar: { groupA: { fontSize: '20', lineHeight: '24', }, groupB: { fontSize: '24', lineHeight: '28', }, groupD: { fontSize: '32', lineHeight: '36', }, }, }` |
 | service | string | yes | N/A | `'news'` |
 | promoHasImage | bool | no | true | `false` |
-| topStory | bool | no | false | `true` |
+| promoType | string | no | `regular` | `top` |
 
 ## LiveLabel
 
@@ -116,11 +116,15 @@ Data attributes, such as `data-e2e` can be passed in for testing as well.
 
 ## Usage
 
-The typical use-case of this component is as displayed below. A Image sits on the left side of the promo with info elements on the right. These info elements are typically a headline, text summary paragraph and timestamp. The `Headline` and `Summary` components are provided by this package and can be imported as seen below.
+The typical use-case of this component is as displayed below. A Image sits on the left side of the promo with info elements on the right, except in Leading stories which are reversed. These info elements are typically a headline, text summary paragraph and timestamp. The `Headline` and `Summary` components are provided by this package and can be imported as seen below.
 
 This component also has an option to display a media indicator, which consists of a play icon and duration of the media, if that data is provided.
 
-The `topStory` prop can be passed to adopt a vertical card layout under 600px. At breakpoints above 600px a horizontal layout is maintained with the image and text summary each occupying 1/2 of the parent container. This is designed to be used only on the first (top) story on an index. This prop must be passed to the StoryPromo, Headline and Summary components.
+The `promoType` prop of `top` can be passed to adopt a vertical card layout under 600px. At breakpoints above 600px a horizontal layout is maintained with the image and text summary each occupying 1/2 of the parent container.
+
+On the other hand, a `promoType` prop of `leading` can be passed to place the Info on the left side and the Image or the right side of the component. The image occupies 2/3 of the parent container and the text summary occupies 1/3.
+
+This prop must be passed to the StoryPromo, Headline and Summary components.
 
 ```jsx
 import React, { Fragment } from 'react';
@@ -207,7 +211,7 @@ const Info = ({ isLive, alsoItems }) => (
   </Fragment>
 );
 
-<StoryPromo image={Image} info={Info({ isLive: false })} topStory={true} />;
+<StoryPromo image={Image} info={Info({ isLive: false })} promoType="top" />;
 ```
 
 ### When to use this component

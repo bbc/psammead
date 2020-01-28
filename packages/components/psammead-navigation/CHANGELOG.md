@@ -3,6 +3,14 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 6.0.0-alpha.27 | [PR#2996](https://github.com/bbc/psammead/pull/2996) Talos - Bump Dependencies - @bbc/psammead-assets |
+| 6.0.0-alpha.26 | [PR#2990](https://github.com/bbc/psammead/pull/2990) Use `GEL_SPACING_HLF` and `GEL_SPACING_SEXT` constants |
+| 6.0.0-alpha.25 | [PR#2989](https://github.com/bbc/psammead/pull/2989) Talos - Bump Dependencies - @bbc/psammead-assets |
+| 6.0.0-alpha.24 | [PR#2978](https://github.com/bbc/psammead/pull/2978) Talos - Bump Dependencies - @bbc/gel-foundations |
+| 6.0.0-alpha.23 | [PR#2973](https://github.com/bbc/psammead/pull/2973) Talos - Bump Dependencies - @bbc/psammead-styles |
+| 6.0.0-alpha.22 | [PR#2951](https://github.com/bbc/psammead/pull/2951) Use visually hidden text instead of aria label in nav button |
+| 6.0.0-alpha.21 | [PR#2923](https://github.com/bbc/psammead/pull/2923) Update padding between navigation items |
+| 6.0.0-alpha.20 | [PR#2920](https://github.com/bbc/psammead/pull/2920) Talos - Bump Dependencies - @bbc/gel-foundations |
 | 6.0.0-alpha.19 | [PR#2875](https://github.com/bbc/psammead/pull/2875) Remove aria-hidden from the scrollable navigation |
 | 6.0.0-alpha.18 | [PR#2847](https://github.com/bbc/psammead/pull/2847) Add animation to Dropdown Navigation |
 | 6.0.0-alpha.17 | [PR#2829](https://github.com/bbc/psammead/pull/2829) Remove references to SkipLink |

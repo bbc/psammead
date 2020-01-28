@@ -1,28 +1,27 @@
 import React from 'react';
 import { shouldMatchSnapshot } from '@bbc/psammead-test-helpers';
 import { arabic, latin } from '@bbc/gel-foundations/scripts';
-import MostRead from '.';
-import { getItems } from './testHelpers/itemsHelper';
+import { getItems } from './testHelpers';
+import { MostRead } from '.';
 
 describe('MostRead', () => {
   shouldMatchSnapshot(
     'should render with ltr most read with correct dir',
     <MostRead
-      items={getItems('news', 10)}
-      service="news"
+      items={getItems({ service: 'news', arraySize: 10 })}
       script={latin}
-      dir="ltr"
+      service="news"
       header="Most Read"
     />,
   );
   shouldMatchSnapshot(
     'should render with rtl most read with correct dir',
     <MostRead
-      items={getItems('arabic', 10)}
-      service="arabic"
+      items={getItems({ service: 'arabic', arraySize: 10 })}
       script={arabic}
-      dir="rtl"
+      service="arabic"
       header="الأكثر قراءة"
+      dir="rtl"
     />,
   );
 });

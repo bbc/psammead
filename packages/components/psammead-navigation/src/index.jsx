@@ -11,10 +11,9 @@ import {
 import {
   GEL_SPACING_HLF,
   GEL_SPACING,
-  GEL_SPACING_DBL,
+  GEL_SPACING_SEXT,
 } from '@bbc/gel-foundations/spacings';
 import {
-  GEL_GROUP_1_SCREEN_WIDTH_MAX,
   GEL_GROUP_2_SCREEN_WIDTH_MAX,
   GEL_GROUP_3_SCREEN_WIDTH_MIN,
   GEL_GROUP_5_SCREEN_WIDTH_MIN,
@@ -24,9 +23,8 @@ import { scriptPropType } from '@bbc/gel-foundations/prop-types';
 import { getSansRegular } from '@bbc/psammead-styles/font-styles';
 import { NAV_BAR_TOP_BOTTOM_SPACING } from './DropdownNavigation';
 
-const TOP_BOTTOM_SPACING = `${NAV_BAR_TOP_BOTTOM_SPACING}rem`; // 12px
+const SPACING_AROUND_NAV_ITEMS = `${NAV_BAR_TOP_BOTTOM_SPACING}rem`; // 12px
 const CURRENT_ITEM_HOVER_BORDER = '0.3125rem'; // 5px
-const GRADIENT_WIDTH = '3rem'; // 48px
 
 /* White with 30% transparency over #B80000 */
 const BORDER_COLOR = '#eab3b3';
@@ -64,10 +62,10 @@ const StyledLink = styled.a`
   cursor: pointer;
   text-decoration: none;
   display: inline-block;
-  padding: ${TOP_BOTTOM_SPACING} ${GEL_SPACING_DBL};
+  padding: ${SPACING_AROUND_NAV_ITEMS};
 
-  @media (max-width: ${GEL_GROUP_1_SCREEN_WIDTH_MAX}) {
-    padding: ${TOP_BOTTOM_SPACING} ${GEL_SPACING};
+  @media (max-width: ${GEL_GROUP_2_SCREEN_WIDTH_MAX}) {
+    padding: ${SPACING_AROUND_NAV_ITEMS} ${GEL_SPACING};
   }
 
   &:hover::after {
@@ -82,7 +80,7 @@ const StyledLink = styled.a`
   &:focus::after {
     ${ListItemBorder}
     top: 0;
-    border: 0.25rem solid ${C_WHITE};
+    border: ${GEL_SPACING_HLF} solid ${C_WHITE};
   }
 `;
 
@@ -94,7 +92,7 @@ const StyledListItem = styled.li`
   @media (max-width: ${GEL_GROUP_2_SCREEN_WIDTH_MAX}) {
     &:last-child {
       ${({ dir }) => css`
-        margin-${dir === 'ltr' ? 'right' : 'left'}: ${GRADIENT_WIDTH}; 
+        margin-${dir === 'ltr' ? 'right' : 'left'}: ${GEL_SPACING_SEXT}; 
       `}
     }
   }
