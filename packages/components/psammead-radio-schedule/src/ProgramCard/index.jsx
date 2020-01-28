@@ -43,15 +43,20 @@ const HeadingWrapper = styled.h3`
   margin: 0; /* Reset */
 `;
 
+const HeadingContentWrapper = styled.span.attrs({ role: 'text' })``;
+
+const StyledSpan = styled.span``;
+
 const LabelWrapper = styled.span.attrs({ 'aria-hidden': 'true' })`
   ${({ service }) => service && getSansBold(service)};
   ${({ script }) => script && getPica(script)};
   color: ${({ headerLabelColor }) => headerLabelColor};
 `;
 
-const TitleWrapper = styled.div`
+const TitleWrapper = styled.span`
   color: ${({ titleColor }) => titleColor};
   padding: ${GEL_SPACING} 0;
+  display: block;
   ${({ service }) => service && getSansRegular(service)};
   ${({ script }) => script && getPica(script)};
 `;
@@ -83,7 +88,7 @@ const IconWrapper = styled.span`
   }
 `;
 
-const DurationWrapper = styled.span`
+const DurationWrapper = styled.time.attrs({ 'aria-hidden': 'true' })`
   ${({ dir }) =>
     dir === 'ltr'
       ? `padding-left: ${GEL_SPACING};`
@@ -113,6 +118,12 @@ const programStateConfig = {
   },
 };
 
+const sentenceCase = text =>
+  text
+    .toLowerCase()
+    .charAt(0)
+    .toUpperCase() + text.substring(1);
+
 const renderHeaderContent = ({
   state,
   link,
@@ -128,15 +139,7 @@ const renderHeaderContent = ({
     stateLabel.toLowerCase() === 'live' ? { lang: 'en-GB' } : {};
 
   const content = (
-    <>
-      {!isOnDemand && (
-        <VisuallyHiddenText {...hiddenTextProps}>
-          {`${stateLabel}, `}
-        </VisuallyHiddenText>
-      )}
-      <VisuallyHiddenText>
-        {`${brandTitle}, ${startTime}, ${episodeTitle}`}
-      </VisuallyHiddenText>
+    <HeadingContentWrapper>
       {!isOnDemand && (
         <LabelWrapper
           service={service}
@@ -146,7 +149,13 @@ const renderHeaderContent = ({
           {`${stateLabel.toUpperCase()} `}
         </LabelWrapper>
       )}
-      {brandTitle}
+      {!isOnDemand && (
+        <VisuallyHiddenText {...hiddenTextProps}>
+          {`${sentenceCase(stateLabel)}, `}
+        </VisuallyHiddenText>
+      )}
+      <StyledSpan>{brandTitle}</StyledSpan>
+      <VisuallyHiddenText>, {startTime}, </VisuallyHiddenText>
       <TitleWrapper
         service={service}
         script={script}
@@ -154,7 +163,7 @@ const renderHeaderContent = ({
       >
         {episodeTitle}
       </TitleWrapper>
-    </>
+    </HeadingContentWrapper>
   );
 
   return state === 'next' ? content : <Link href={link}>{content}</Link>;
@@ -206,9 +215,9 @@ const ProgramCard = ({
       </IconWrapper>
       <DurationWrapper dir={dir}>
         <VisuallyHiddenText>
-          {`${durationLabel} ${duration.replace(/:/g, ',')}`}
+          {` ${sentenceCase(durationLabel)} ${duration.replace(/:/g, ',')} `}
         </VisuallyHiddenText>
-        {duration}
+        <StyledSpan>{duration}</StyledSpan>
       </DurationWrapper>
     </ButtonWrapper>
   </CardWrapper>
