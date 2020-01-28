@@ -144,18 +144,19 @@ const renderHeaderContent = ({
   const content = (
     <HeadingContentWrapper>
       {!isOnDemand && (
-        <LabelWrapper
-          service={service}
-          script={script}
-          {...programStateConfig[state]}
-        >
-          {`${stateLabel.toUpperCase()} `}
-        </LabelWrapper>
-      )}
-      {isLive && (
-        <VisuallyHiddenText {...hiddenTextProps}>
-          {`${sentenceCase(stateLabel)}, `}
-        </VisuallyHiddenText>
+        <>
+          <LabelWrapper
+            service={service}
+            script={script}
+            {...programStateConfig[state]}
+          >
+            {`${stateLabel.toUpperCase()}`}
+          </LabelWrapper>
+          <VisuallyHiddenText {...hiddenTextProps}>
+            {isLive && ` ${sentenceCase(stateLabel)}`}
+            {', '}
+          </VisuallyHiddenText>
+        </>
       )}
       <StyledSpan>{brandTitle}</StyledSpan>
       <VisuallyHiddenText>, {startTime}, </VisuallyHiddenText>

@@ -218,13 +218,14 @@ exports[`ProgramCard should render correctly for live 1`] = `
             aria-hidden="true"
             class="c4"
           >
-            LIVE 
+            LIVE
           </span>
           <span
             class="c5"
             lang="en-GB"
           >
-            Live, 
+             Live
+            , 
           </span>
           <span
             class=""
@@ -479,7 +480,12 @@ exports[`ProgramCard should render correctly for next 1`] = `
           aria-hidden="true"
           class="c3"
         >
-          NEXT 
+          NEXT
+        </span>
+        <span
+          class="c4"
+        >
+          , 
         </span>
         <span
           class=""
@@ -1025,12 +1031,13 @@ exports[`ProgramCard should render correctly in RTL 1`] = `
             aria-hidden="true"
             class="c4"
           >
-            مباشر 
+            مباشر
           </span>
           <span
             class="c5"
           >
-            مباشر, 
+             مباشر
+            , 
           </span>
           <span
             class=""
