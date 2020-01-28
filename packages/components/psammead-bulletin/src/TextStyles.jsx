@@ -25,13 +25,25 @@ const textWrapperStyles = `
 `;
 
 const TextGridRadio = css`
-  grid-column: 3 / span 4;
-  width: ${fourOfSixColumnsMaxWidthScaleable};
+  @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) and (max-width: ${GEL_GROUP_3_SCREEN_WIDTH_MAX}) {
+    grid-column: 3 / span 4;
+    width: ${fourOfSixColumnsMaxWidthScaleable};
+    ${({ dir }) =>
+      dir === 'ltr'
+        ? `padding-left: ${GEL_SPACING_DBL};`
+        : `padding-right: ${GEL_SPACING_DBL};`}
+  }
 `;
 
 const TextGridTv = css`
-  grid-column: 4 / span 3;
-  width: ${halfWidthColumnsMaxScaleable};
+  @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
+    grid-column: 4 / span 3;
+    width: ${halfWidthColumnsMaxScaleable};
+    ${({ dir }) =>
+      dir === 'ltr'
+        ? `padding-left: ${GEL_SPACING_DBL};`
+        : `padding-right: ${GEL_SPACING_DBL};`}
+  }
 `;
 
 const textGridStyles = {
@@ -40,13 +52,7 @@ const textGridStyles = {
 };
 
 const TextGridItem = styled.div`
-  @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) and (max-width: ${GEL_GROUP_3_SCREEN_WIDTH_MAX}) {
-    ${({ bulletinType }) => textGridStyles[bulletinType]}
-    ${({ dir }) =>
-      dir === 'ltr'
-        ? `padding-left: ${GEL_SPACING_DBL};`
-        : `padding-right: ${GEL_SPACING_DBL};`}
-  }
+  ${({ bulletinType }) => textGridStyles[bulletinType]}
   ${textWrapperStyles};
 `;
 

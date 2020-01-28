@@ -45,30 +45,9 @@ const TVBulletinWrapper = styled.div`
   }
 `;
 
-const BulletinSummary = styled.p`
-  ${({ script }) => script && getLongPrimer(script)}
-  ${({ service }) => service && getSansRegular(service)}
-  color: ${C_SHADOW};
-  margin: 0; /* Reset */
-  padding: 0 ${GEL_SPACING} ${GEL_SPACING_DBL};
-  @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) and (max-width: ${GEL_GROUP_3_SCREEN_WIDTH_MAX}) {    
-    ${({ dir, bulletinType }) =>
-      dir === 'ltr'
-        ? css`
-            padding-left: 0;
-            ${bulletinType === 'tv' && 'padding-right: 0;'}
-          `
-        : css`
-            padding-right: 0;
-            ${bulletinType === 'tv' && 'padding-left: 0;'}
-          `}
-
-  }
-`;
-
 // This is needed to get around the issue of IE11 not supporting
 // nested media queries
-const getHeadlineFontStyle = script => {
+const headlineTypography = script => {
   const fontSize = script.greatPrimer.groupD.fontSize / 16;
   const lineHeight = script.greatPrimer.groupD.lineHeight / 16;
 
@@ -81,18 +60,15 @@ const getHeadlineFontStyle = script => {
 const headingStyles = css`
   ${({ service }) => service && getSerifMedium(service)}
   ${({ script }) => script && getPica(script)}
-
   color: ${C_EBON};
   margin: 0; /* Reset */
   padding: ${GEL_SPACING};
-
   @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
-    ${({ script }) => script && getHeadlineFontStyle(script)}
+    ${({ script }) => script && headlineTypography(script)}
   }
 `;
 
-export const RadioHeading = styled.h3`
-  ${headingStyles}
+const radioHeading = css`
   @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) and (max-width: ${GEL_GROUP_3_SCREEN_WIDTH_MAX}) {
     padding-top: ${GEL_SPACING};
     padding-bottom: ${GEL_SPACING};
@@ -100,11 +76,55 @@ export const RadioHeading = styled.h3`
   }
 `;
 
-const TVHeading = styled.h3`
-  ${headingStyles}
-  @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) and (max-width: ${GEL_GROUP_3_SCREEN_WIDTH_MAX}) {
+const tvHeading = css`
+  @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
     padding: 0 0 ${GEL_SPACING} 0;
   }
+`;
+
+const bulletinHeadinStyles = {
+  radio: radioHeading,
+  tv: tvHeading,
+};
+
+const BulletinHeading = styled.h3`
+  ${headingStyles}
+  ${({ bulletinType }) => bulletinHeadinStyles[bulletinType]}
+`;
+
+const radioSummary = css`
+  @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) and (max-width: ${GEL_GROUP_3_SCREEN_WIDTH_MAX}) {
+    ${({ dir }) => (dir === 'ltr' ? 'padding-left: 0;' : 'padding-right: 0;')}
+  }
+`;
+
+const tvSummary = css`
+  @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
+    ${({ dir, bulletinType }) =>
+      dir === 'ltr'
+        ? css`
+            padding-left: 0;
+            ${bulletinType === 'tv' && 'padding-right: 0;'}
+          `
+        : css`
+            padding-right: 0;
+            ${bulletinType === 'tv' && 'padding-left: 0;'}
+          `}
+  }
+`;
+
+const bulletinSummaryStyles = {
+  radio: radioSummary,
+  tv: tvSummary,
+};
+
+const BulletinSummary = styled.p`
+  ${({ script }) => script && getLongPrimer(script)}
+  ${({ service }) => service && getSansRegular(service)}
+  color: ${C_SHADOW};
+  margin: 0; /* Reset */
+  padding: 0 ${GEL_SPACING} ${GEL_SPACING_DBL};
+  ${({ bulletinType }) => bulletinSummaryStyles[bulletinType]}
 `;
 
 const IconWrapper = styled.span`
@@ -123,6 +143,26 @@ const IconWrapper = styled.span`
       : `padding-left: ${GEL_SPACING};`}
 `;
 
+const radioPlayCta = css`
+  @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) and (max-width: ${GEL_GROUP_3_SCREEN_WIDTH_MAX}) {
+    display: inline-flex;
+    padding: ${GEL_SPACING} ${GEL_SPACING_DBL};
+    margin-bottom: ${GEL_SPACING_DBL};
+  }
+`;
+
+const tvPlayCta = css`
+  @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
+    display: inline-flex;
+    padding: ${GEL_SPACING} ${GEL_SPACING_DBL};
+  }
+`;
+
+const playCtaStyles = {
+  radio: radioPlayCta,
+  tv: tvPlayCta,
+};
+
 const PlayCTA = styled.div.attrs({ 'aria-hidden': true })`
   ${({ service }) => service && getSansRegular(service)};
   ${({ script }) => script && getPica(script)};
@@ -133,11 +173,7 @@ const PlayCTA = styled.div.attrs({ 'aria-hidden': true })`
   display: flex;
   align-items: center;
   justify-content: center;
-  @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) and (max-width: ${GEL_GROUP_3_SCREEN_WIDTH_MAX}) {
-    display: inline-flex;
-    padding: ${GEL_SPACING} ${GEL_SPACING_DBL};
-    ${({ isAudio }) => isAudio && `margin-bottom: ${GEL_SPACING_DBL};`}
-  }
+  ${({ bulletinType }) => playCtaStyles[bulletinType]}
 `;
 
 const Bulletin = ({
@@ -158,13 +194,17 @@ const Bulletin = ({
   const isAudio = mediaType === 'audio';
   const bulletinType = isAudio ? 'radio' : 'tv';
   const BulletinWrapper = isAudio ? RadioBulletinWrapper : TVBulletinWrapper;
-  const BulletinHeading = isAudio ? RadioHeading : TVHeading;
 
   return (
     <BulletinWrapper>
       <ImageGridItem bulletinType={bulletinType}>{image}</ImageGridItem>
       <TextGridItem bulletinType={bulletinType} dir={dir}>
-        <BulletinHeading script={script} service={service} dir={dir}>
+        <BulletinHeading
+          script={script}
+          service={service}
+          bulletinType={bulletinType}
+          dir={dir}
+        >
           <Link href={ctaLink}>
             {/* eslint-disable jsx-a11y/aria-role */}
             <span role="text">
@@ -192,7 +232,7 @@ const Bulletin = ({
           isLive={isLive}
           service={service}
           script={script}
-          isAudio={isAudio}
+          bulletinType={bulletinType}
           dir={dir}
         >
           <IconWrapper dir={dir}>{mediaIcons[mediaType]}</IconWrapper>

@@ -25,26 +25,29 @@ const imageWrapperStyles = `
   }
 `;
 
-const ImageGridRadio = css`
-  grid-column: 1 / span 2;
-  width: ${twoOfSixColumnsMaxWidthScaleable};
+const imageGridRadio = css`
+  @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) and (max-width: ${GEL_GROUP_3_SCREEN_WIDTH_MAX}) {
+    grid-column: 1 / span 2;
+    width: ${twoOfSixColumnsMaxWidthScaleable};
+    padding: 0;
+  }
 `;
 
-const ImageGridTv = css`
-  grid-column: 1 / span 3;
-  width: ${halfWidthColumnsMaxScaleable};
+const imageGridTv = css`
+  @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
+    grid-column: 1 / span 3;
+    width: ${halfWidthColumnsMaxScaleable};
+    padding: 0;
+  }
 `;
 
 const imageGridStyles = {
-  radio: ImageGridRadio,
-  tv: ImageGridTv,
+  radio: imageGridRadio,
+  tv: imageGridTv,
 };
 
 const ImageGridItem = styled.div`
-  @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) and (max-width: ${GEL_GROUP_3_SCREEN_WIDTH_MAX}) {
-    ${({ bulletinType }) => imageGridStyles[bulletinType]}
-    padding: 0;
-  }
+  ${({ bulletinType }) => imageGridStyles[bulletinType]}
   ${imageWrapperStyles};
 `;
 
