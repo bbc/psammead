@@ -225,11 +225,10 @@ exports[`ProgramCard should render correctly for live 1`] = `
             lang="en-GB"
           >
              Live
-            , 
+            ,
           </span>
-          <span
-            class=""
-          >
+          <span>
+             
             Could a computer ever create better art than a human?
           </span>
           <span
@@ -286,7 +285,7 @@ exports[`ProgramCard should render correctly for live 1`] = `
       </span>
       <span
         aria-hidden="true"
-        class="Duration1 "
+        class="Duration0 "
       >
         30:00
       </span>
@@ -485,11 +484,10 @@ exports[`ProgramCard should render correctly for next 1`] = `
         <span
           class="c4"
         >
-          , 
+          ,
         </span>
-        <span
-          class=""
-        >
+        <span>
+           
           Could a computer ever create better art than a human?
         </span>
         <span
@@ -545,7 +543,7 @@ exports[`ProgramCard should render correctly for next 1`] = `
       </span>
       <span
         aria-hidden="true"
-        class="Duration1 "
+        class="Duration0 "
       >
         30:00
       </span>
@@ -745,9 +743,7 @@ exports[`ProgramCard should render correctly for onDemand 1`] = `
           class=""
           role="text"
         >
-          <span
-            class=""
-          >
+          <span>
             Could a computer ever create better art than a human?
           </span>
           <span
@@ -804,7 +800,7 @@ exports[`ProgramCard should render correctly for onDemand 1`] = `
       </span>
       <span
         aria-hidden="true"
-        class="Duration1 "
+        class="Duration0 "
       >
         30:00
       </span>
@@ -1037,11 +1033,10 @@ exports[`ProgramCard should render correctly in RTL 1`] = `
             class="c5"
           >
              مباشر
-            , 
+            ,
           </span>
-          <span
-            class=""
-          >
+          <span>
+             
             لماذا يخجل البعض من اسم قريته في مصر؟
           </span>
           <span
@@ -1098,7 +1093,7 @@ exports[`ProgramCard should render correctly in RTL 1`] = `
       </span>
       <span
         aria-hidden="true"
-        class="Duration1 "
+        class="Duration0 "
       >
         30:00
       </span>

@@ -45,8 +45,6 @@ const HeadingWrapper = styled.h3`
 
 const HeadingContentWrapper = styled.span.attrs({ role: 'text' })``;
 
-const StyledSpan = styled.span``;
-
 const LabelWrapper = styled.span.attrs({ 'aria-hidden': 'true' })`
   ${({ service }) => service && getSansBold(service)};
   ${({ script }) => script && getPica(script)};
@@ -154,11 +152,14 @@ const renderHeaderContent = ({
           </LabelWrapper>
           <VisuallyHiddenText {...hiddenTextProps}>
             {isLive && ` ${sentenceCase(stateLabel)}`}
-            {', '}
+            {','}
           </VisuallyHiddenText>
         </>
       )}
-      <StyledSpan>{brandTitle}</StyledSpan>
+      <span>
+        {!isOnDemand && ` `}
+        {brandTitle}
+      </span>
       <VisuallyHiddenText>, {startTime}, </VisuallyHiddenText>
       <TitleWrapper
         service={service}
