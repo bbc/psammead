@@ -137,6 +137,7 @@ const renderHeaderContent = ({
   startTime,
 }) => {
   const isOnDemand = state === 'onDemand';
+  const isLive = state === 'live';
   const hiddenTextProps =
     stateLabel.toLowerCase() === 'live' ? { lang: 'en-GB' } : {};
 
@@ -151,7 +152,7 @@ const renderHeaderContent = ({
           {`${stateLabel.toUpperCase()} `}
         </LabelWrapper>
       )}
-      {!isOnDemand && (
+      {isLive && (
         <VisuallyHiddenText {...hiddenTextProps}>
           {`${sentenceCase(stateLabel)}, `}
         </VisuallyHiddenText>
