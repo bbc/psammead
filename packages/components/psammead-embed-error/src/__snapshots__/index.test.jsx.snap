@@ -76,7 +76,6 @@ exports[`EmbedError renders a default embed error 1`] = `
       class="c2"
     >
       <svg
-        aria-hidden="true"
         class="c3"
         focusable="false"
         height="1rem"
@@ -171,7 +170,6 @@ exports[`EmbedError renders an embed error that fills the viewport 1`] = `
       class="c2"
     >
       <svg
-        aria-hidden="true"
         class="c3"
         focusable="false"
         height="1rem"

@@ -74,7 +74,7 @@ const coloursExpectedExports = {
   C_WEATHER_BLUE: 'string',
   C_ARCHIVE_BLUE: 'string',
   C_KINGFISHER: 'string',
-  C_LEARNINGENGLISH: 'string',
+  C_LE_TEAL: 'string',
 };
 
 const expectedExports = {
