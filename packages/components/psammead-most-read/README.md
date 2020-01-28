@@ -252,7 +252,7 @@ This component is to be used on `article` pages.
 
 ### Accessibility notes
 
-Currently this component is in alpha. This is because it has not yet been tested with various assistive technologies. After it has had an accessibility swarm, this will be published under a standard version.
+To be updated at a later date.
 
 ## Roadmap
 
