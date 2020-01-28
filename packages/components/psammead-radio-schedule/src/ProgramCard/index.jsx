@@ -88,12 +88,14 @@ const IconWrapper = styled.span`
   }
 `;
 
-const DurationWrapper = styled.time.attrs({ 'aria-hidden': 'true' })`
+const DurationWrapper = styled.time`
   ${({ dir }) =>
     dir === 'ltr'
       ? `padding-left: ${GEL_SPACING};`
       : `padding-right: ${GEL_SPACING};`}
 `;
+
+const DurationTextWrapper = styled.span.attrs({ 'aria-hidden': 'true' })``;
 
 const programStateConfig = {
   live: {
@@ -217,7 +219,7 @@ const ProgramCard = ({
         <VisuallyHiddenText>
           {` ${sentenceCase(durationLabel)} ${duration.replace(/:/g, ',')} `}
         </VisuallyHiddenText>
-        <StyledSpan>{duration}</StyledSpan>
+        <DurationTextWrapper>{duration}</DurationTextWrapper>
       </DurationWrapper>
     </ButtonWrapper>
   </CardWrapper>

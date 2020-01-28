@@ -275,7 +275,6 @@ exports[`ProgramCard should render correctly for live 1`] = `
       </svg>
     </span>
     <time
-      aria-hidden="true"
       class="c11"
       dir="ltr"
     >
@@ -285,7 +284,8 @@ exports[`ProgramCard should render correctly for live 1`] = `
          Duration 30,00 
       </span>
       <span
-        class=""
+        aria-hidden="true"
+        class="Duration1 "
       >
         30:00
       </span>
@@ -534,7 +534,6 @@ exports[`ProgramCard should render correctly for next 1`] = `
       </svg>
     </span>
     <time
-      aria-hidden="true"
       class="c10"
       dir="ltr"
     >
@@ -544,7 +543,8 @@ exports[`ProgramCard should render correctly for next 1`] = `
          Duration 30,00 
       </span>
       <span
-        class=""
+        aria-hidden="true"
+        class="Duration1 "
       >
         30:00
       </span>
@@ -793,7 +793,6 @@ exports[`ProgramCard should render correctly for onDemand 1`] = `
       </svg>
     </span>
     <time
-      aria-hidden="true"
       class="c10"
       dir="ltr"
     >
@@ -803,7 +802,8 @@ exports[`ProgramCard should render correctly for onDemand 1`] = `
          Duration 30,00 
       </span>
       <span
-        class=""
+        aria-hidden="true"
+        class="Duration1 "
       >
         30:00
       </span>
@@ -1086,7 +1086,6 @@ exports[`ProgramCard should render correctly in RTL 1`] = `
       </svg>
     </span>
     <time
-      aria-hidden="true"
       class="c11"
       dir="rtl"
     >
@@ -1096,7 +1095,8 @@ exports[`ProgramCard should render correctly in RTL 1`] = `
          المدة الزمنية 30,00 
       </span>
       <span
-        class=""
+        aria-hidden="true"
+        class="Duration1 "
       >
         30:00
       </span>
