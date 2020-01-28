@@ -66,7 +66,6 @@ exports[`Bulletin should render audio correctly 1`] = `
 
 .c3 {
   display: inline-block;
-  grid-column: 1 / span 6;
   width: 100%;
 }
 
@@ -161,7 +160,6 @@ exports[`Bulletin should render audio correctly 1`] = `
 
 @media (min-width:37.5rem) and (max-width:62.9375rem) {
   .c3 {
-    grid-column: 3 / span 4;
     width: 66.67%;
     padding-left: 1rem;
   }
@@ -170,6 +168,7 @@ exports[`Bulletin should render audio correctly 1`] = `
 @supports (grid-template-columns:fit-content(200px)) {
   .c3 {
     width: initial;
+    grid-column: 1 / span 6;
     padding: 0;
   }
 }
@@ -399,7 +398,6 @@ exports[`Bulletin should render live audio correctly 1`] = `
 
 .c3 {
   display: inline-block;
-  grid-column: 1 / span 6;
   width: 100%;
 }
 
@@ -494,7 +492,6 @@ exports[`Bulletin should render live audio correctly 1`] = `
 
 @media (min-width:37.5rem) and (max-width:62.9375rem) {
   .c3 {
-    grid-column: 3 / span 4;
     width: 66.67%;
     padding-left: 1rem;
   }
@@ -503,6 +500,7 @@ exports[`Bulletin should render live audio correctly 1`] = `
 @supports (grid-template-columns:fit-content(200px)) {
   .c3 {
     width: initial;
+    grid-column: 1 / span 6;
     padding: 0;
   }
 }
@@ -739,7 +737,6 @@ exports[`Bulletin should render live video correctly 1`] = `
 
 .c3 {
   display: inline-block;
-  grid-column: 1 / span 6;
   width: 100%;
 }
 
@@ -833,7 +830,6 @@ exports[`Bulletin should render live video correctly 1`] = `
 
 @media (min-width:37.5rem) {
   .c3 {
-    grid-column: 4 / span 3;
     width: 50%;
     padding-left: 1rem;
   }
@@ -842,6 +838,7 @@ exports[`Bulletin should render live video correctly 1`] = `
 @supports (grid-template-columns:fit-content(200px)) {
   .c3 {
     width: initial;
+    grid-column: 1 / span 6;
     padding: 0;
   }
 }
@@ -1070,7 +1067,6 @@ exports[`Bulletin should render video correctly 1`] = `
 
 .c3 {
   display: inline-block;
-  grid-column: 1 / span 6;
   width: 100%;
 }
 
@@ -1164,7 +1160,6 @@ exports[`Bulletin should render video correctly 1`] = `
 
 @media (min-width:37.5rem) {
   .c3 {
-    grid-column: 4 / span 3;
     width: 50%;
     padding-left: 1rem;
   }
@@ -1173,6 +1168,7 @@ exports[`Bulletin should render video correctly 1`] = `
 @supports (grid-template-columns:fit-content(200px)) {
   .c3 {
     width: initial;
+    grid-column: 1 / span 6;
     padding: 0;
   }
 }

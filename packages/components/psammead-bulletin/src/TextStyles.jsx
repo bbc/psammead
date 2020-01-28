@@ -14,46 +14,60 @@ const fullWidthColumnsMaxScaleable = `100%`;
 
 const halfWidthColumnsMaxScaleable = `50%`;
 
-const textWrapperStyles = `
-  display: inline-block;
-  grid-column: 1 / span 6;
-  width: ${fullWidthColumnsMaxScaleable};
-  @supports (${grid}) {
-    width: initial;
-    padding: 0;
-  }
+const paddingStyles = css`
+  ${({ dir }) =>
+    dir === 'ltr'
+      ? `padding-left: ${GEL_SPACING_DBL};`
+      : `padding-right: ${GEL_SPACING_DBL};`}
 `;
 
-const TextGridRadio = css`
+const textGridRadio = css`
   @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) and (max-width: ${GEL_GROUP_3_SCREEN_WIDTH_MAX}) {
     grid-column: 3 / span 4;
-    width: ${fourOfSixColumnsMaxWidthScaleable};
-    ${({ dir }) =>
-      dir === 'ltr'
-        ? `padding-left: ${GEL_SPACING_DBL};`
-        : `padding-right: ${GEL_SPACING_DBL};`}
   }
 `;
 
-const TextGridTv = css`
+const textGridTv = css`
   @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
     grid-column: 4 / span 3;
+  }
+`;
+
+const textGridFallbackRadio = css`
+  @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) and (max-width: ${GEL_GROUP_3_SCREEN_WIDTH_MAX}) {
+    width: ${fourOfSixColumnsMaxWidthScaleable};
+    ${paddingStyles}
+  }
+`;
+
+const textGridFallbackTv = css`
+  @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
     width: ${halfWidthColumnsMaxScaleable};
-    ${({ dir }) =>
-      dir === 'ltr'
-        ? `padding-left: ${GEL_SPACING_DBL};`
-        : `padding-right: ${GEL_SPACING_DBL};`}
+    ${paddingStyles}
   }
 `;
 
 const textGridStyles = {
-  radio: TextGridRadio,
-  tv: TextGridTv,
+  radio: textGridRadio,
+  tv: textGridTv,
+};
+
+const textGridFallbackStyles = {
+  radio: textGridFallbackRadio,
+  tv: textGridFallbackTv,
 };
 
 const TextGridItem = styled.div`
-  ${({ bulletinType }) => textGridStyles[bulletinType]}
-  ${textWrapperStyles};
+  display: inline-block;
+  width: ${fullWidthColumnsMaxScaleable};
+  ${({ bulletinType }) => textGridFallbackStyles[bulletinType]}
+
+  @supports (${grid}) {
+    width: initial;
+    grid-column: 1 / span 6;
+    padding: 0;
+    ${({ bulletinType }) => textGridStyles[bulletinType]}
+  }
 `;
 
 export default TextGridItem;
