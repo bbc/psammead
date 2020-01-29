@@ -57,7 +57,7 @@ const HiddenText = ({ type, headline }) => (
 );
 
 // eslint-disable-next-line react/prop-types
-const StoryTimestamp = ({ script, service }) => (
+const StoryTimestamp = ({ script, service, locale }) => (
   <Timestamp
     timestamp={122222222}
     dateTimeFormat="YYYY-MM-DD"
@@ -66,6 +66,7 @@ const StoryTimestamp = ({ script, service }) => (
     padding={false}
     service={service}
     isRelative={false}
+    locale={locale}
   />
 );
 
@@ -82,6 +83,7 @@ const InfoComponent = ({
   alsoItems,
   promoHasImage,
   timestamp,
+  locale,
 }) => (
   <>
     <Headline
@@ -106,7 +108,9 @@ const InfoComponent = ({
     >
       {summaryText}
     </Summary>
-    {timestamp && <StoryTimestamp />}
+    {timestamp && (
+      <StoryTimestamp locale={locale} script={script} service={service} />
+    )}
     {promoType === 'top' && alsoItems && (
       <IndexAlsosContainer
         alsoItems={alsoItems}
@@ -122,7 +126,7 @@ const generateStory = ({
   promoType,
   alsoItems = null,
   displayImage = true,
-}) => ({ text: textSnippet, script, service, dir }) => {
+}) => ({ text: textSnippet, script, service, dir, locale }) => {
   const mediaType = select(
     'Media Type',
     ['No media', 'video', 'audio', 'photogallery'],
@@ -143,6 +147,7 @@ const generateStory = ({
       alsoItems={alsoItems}
       promoHasImage={displayImage}
       timestamp={timestamp}
+      locale={locale}
     />
   );
 
