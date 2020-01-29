@@ -162,7 +162,7 @@ import { latin } from '@bbc/gel-foundations/scripts';
       Sport
     </DropdownLi>
   </DropdownUl>
-</CanonicalDropdown>;
+</CanonicalDropdown>
 ```
 
 ## Canonical Menu Button Usage
@@ -180,7 +180,7 @@ import { latin } from '@bbc/gel-foundations/scripts';
     console.log('Handle onClick action');
   }}
   script={latin}
-/>;
+/>
 ```
 
 ## Amp Menu Button Usage
@@ -195,7 +195,7 @@ import { latin } from '@bbc/gel-foundations/scripts';
   onToggle="menu.toggleVisibility"
   script={latin}
   dir={dir}
-/>;
+/>
 ```
 
 Note that in order for the `AmpMenuButton` toggling to work correctly, an `id` should be added to the `Navigation` component. This `id` can be passed in as a prop to the component. Similarly, `ScrollableNavigation` also requires an `id` to be added to it.
