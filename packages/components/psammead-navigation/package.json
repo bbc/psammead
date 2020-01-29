@@ -32,8 +32,5 @@
   "keywords": [
     "bbc",
     "navigation"
-  ],
-  "publishConfig": {
-    "tag": "alpha"
-  }
+  ]
 }
