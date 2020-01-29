@@ -9,6 +9,8 @@ import {
   GEL_GROUP_3_SCREEN_WIDTH_MAX,
   GEL_GROUP_4_SCREEN_WIDTH_MIN,
   GEL_GROUP_5_SCREEN_WIDTH_MIN,
+  GEL_GROUP_B_MIN_WIDTH,
+  GEL_GROUP_B_MAX_WIDTH,
 } from '@bbc/gel-foundations/breakpoints';
 import {
   getParagon,
@@ -102,10 +104,17 @@ const headlineRegularTypography = script => {
   return css`
     font-size: ${fontSize('pica', 'groupA')}rem;
     line-height: ${lineHeight('pica', 'groupA')}rem;
+
+    @media (min-width: ${GEL_GROUP_B_MIN_WIDTH}rem) and (max-width: ${GEL_GROUP_B_MAX_WIDTH}rem) {
+      font-size: ${fontSize('pica', 'groupB')}rem;
+      line-height: ${lineHeight('pica', 'groupB')}rem;
+    }
+
     @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
       font-size: ${fontSize('greatPrimer', 'groupB')}rem;
       line-height: ${lineHeight('greatPrimer', 'groupB')}rem;
     }
+
     ${({ promoHasImage }) =>
       !promoHasImage &&
       `
@@ -123,12 +132,12 @@ const headlineTypography = script => ({
 });
 
 export const Headline = styled.h3`
-  ${({ script, promoType }) => script && headlineTypography(script)[promoType]}
-  ${({ service }) => getSerifMedium(service)}
   color: ${C_EBON};
   margin: 0; /* Reset */
   padding-bottom: ${GEL_SPACING};
   ${({ promoHasImage }) => !promoHasImage && `display: inline;`}
+  ${({ service }) => getSerifMedium(service)}
+  ${({ script, promoType }) => script && headlineTypography(script)[promoType]}
 `;
 
 Headline.propTypes = {
