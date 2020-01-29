@@ -43,6 +43,7 @@ const StyledTimestamp = styled.span`
   display: flex;
   align-items: center;
   flex-direction: row;
+  width: 100%;
 
   > time {
     color: ${C_RHINO};
@@ -56,7 +57,7 @@ const StyledTimestamp = styled.span`
     top: ${({ script }) => 0.5 + script.minion.groupA.lineHeight / 2 / 16}rem;
     ${({ dir }) =>
       dir === 'ltr' ? `margin-left: 0.625rem;` : `margin-right: 0.625rem;`}
-    width: 100vw;
+    width: 100%;
   }
 `;
 

@@ -61,6 +61,7 @@ exports[`StartTime should render LTR correctly 1`] = `
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
+  width: 100%;
 }
 
 .c3 > time {
@@ -77,7 +78,7 @@ exports[`StartTime should render LTR correctly 1`] = `
   border-top: 0.0625rem solid #AEAEB5;
   top: 1rem;
   margin-left: 0.625rem;
-  width: 100vw;
+  width: 100%;
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
@@ -207,6 +208,7 @@ exports[`StartTime should render RTL correctly 1`] = `
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
+  width: 100%;
 }
 
 .c3 > time {
@@ -223,7 +225,7 @@ exports[`StartTime should render RTL correctly 1`] = `
   border-top: 0.0625rem solid #AEAEB5;
   top: 1rem;
   margin-right: 0.625rem;
-  width: 100vw;
+  width: 100%;
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
