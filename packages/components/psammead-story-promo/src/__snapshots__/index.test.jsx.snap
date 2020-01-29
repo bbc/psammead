@@ -23,14 +23,14 @@ exports[`StoryPromo - Leading Story should render correctly 1`] = `
 }
 
 .c2 {
+  color: #222222;
+  margin: 0;
+  padding-bottom: 0.5rem;
   font-size: 1.125rem;
   line-height: 1.375rem;
   font-family: ReithSerif,Helvetica,Arial,sans-serif;
   font-weight: 500;
   font-style: normal;
-  color: #222222;
-  margin: 0;
-  padding-bottom: 0.5rem;
 }
 
 .c4 {
@@ -244,14 +244,14 @@ exports[`StoryPromo - Leading Story should render with Media Indicator correctly
 }
 
 .c2 {
+  color: #222222;
+  margin: 0;
+  padding-bottom: 0.5rem;
   font-size: 1.125rem;
   line-height: 1.375rem;
   font-family: ReithSerif,Helvetica,Arial,sans-serif;
   font-weight: 500;
   font-style: normal;
-  color: #222222;
-  margin: 0;
-  padding-bottom: 0.5rem;
 }
 
 .c4 {
@@ -471,14 +471,14 @@ exports[`StoryPromo - Top Story should render correctly 1`] = `
 }
 
 .c4 {
+  color: #222222;
+  margin: 0;
+  padding-bottom: 0.5rem;
   font-size: 1.25rem;
   line-height: 1.5rem;
   font-family: ReithSerif,Helvetica,Arial,sans-serif;
   font-weight: 500;
   font-style: normal;
-  color: #222222;
-  margin: 0;
-  padding-bottom: 0.5rem;
 }
 
 .c6 {
@@ -713,14 +713,14 @@ exports[`StoryPromo - Top Story should render with Media Indicator correctly 1`]
 }
 
 .c9 {
+  color: #222222;
+  margin: 0;
+  padding-bottom: 0.5rem;
   font-size: 1.25rem;
   line-height: 1.5rem;
   font-family: ReithSerif,Helvetica,Arial,sans-serif;
   font-weight: 500;
   font-style: normal;
-  color: #222222;
-  margin: 0;
-  padding-bottom: 0.5rem;
 }
 
 .c11 {
@@ -974,14 +974,14 @@ exports[`StoryPromo - Top Story should render with multiple Index Alsos correctl
 }
 
 .c4 {
+  color: #222222;
+  margin: 0;
+  padding-bottom: 0.5rem;
   font-size: 1.25rem;
   line-height: 1.5rem;
   font-family: ReithSerif,Helvetica,Arial,sans-serif;
   font-weight: 500;
   font-style: normal;
-  color: #222222;
-  margin: 0;
-  padding-bottom: 0.5rem;
 }
 
 .c6 {
@@ -1336,14 +1336,14 @@ exports[`StoryPromo - Top Story should render with one Index Also correctly 1`] 
 }
 
 .c4 {
+  color: #222222;
+  margin: 0;
+  padding-bottom: 0.5rem;
   font-size: 1.25rem;
   line-height: 1.5rem;
   font-family: ReithSerif,Helvetica,Arial,sans-serif;
   font-weight: 500;
   font-style: normal;
-  color: #222222;
-  margin: 0;
-  padding-bottom: 0.5rem;
 }
 
 .c6 {
@@ -1659,14 +1659,14 @@ exports[`StoryPromo should render Live promo correctly 1`] = `
 }
 
 .c4 {
+  color: #222222;
+  margin: 0;
+  padding-bottom: 0.5rem;
   font-size: 0.9375rem;
   line-height: 1.25rem;
   font-family: ReithSerif,Helvetica,Arial,sans-serif;
   font-weight: 500;
   font-style: normal;
-  color: #222222;
-  margin: 0;
-  padding-bottom: 0.5rem;
 }
 
 .c8 {
@@ -1891,14 +1891,14 @@ exports[`StoryPromo should render a RTL Live promo correctly 1`] = `
 }
 
 .c4 {
+  color: #222222;
+  margin: 0;
+  padding-bottom: 0.5rem;
   font-size: 0.9375rem;
   line-height: 1.25rem;
   font-family: ReithSerif,Helvetica,Arial,sans-serif;
   font-weight: 500;
   font-style: normal;
-  color: #222222;
-  margin: 0;
-  padding-bottom: 0.5rem;
 }
 
 .c8 {
@@ -2111,14 +2111,14 @@ exports[`StoryPromo should render correctly 1`] = `
 }
 
 .c4 {
+  color: #222222;
+  margin: 0;
+  padding-bottom: 0.5rem;
   font-size: 0.9375rem;
   line-height: 1.25rem;
   font-family: ReithSerif,Helvetica,Arial,sans-serif;
   font-weight: 500;
   font-style: normal;
-  color: #222222;
-  margin: 0;
-  padding-bottom: 0.5rem;
 }
 
 .c6 {
@@ -2344,14 +2344,14 @@ exports[`StoryPromo with Media Indicator should render correctly 1`] = `
 }
 
 .c9 {
+  color: #222222;
+  margin: 0;
+  padding-bottom: 0.5rem;
   font-size: 0.9375rem;
   line-height: 1.25rem;
   font-family: ReithSerif,Helvetica,Arial,sans-serif;
   font-weight: 500;
   font-style: normal;
-  color: #222222;
-  margin: 0;
-  padding-bottom: 0.5rem;
 }
 
 .c11 {
