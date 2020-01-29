@@ -116,6 +116,12 @@ exports[`StoryPromo - Leading Story should render correctly 1`] = `
   }
 }
 
+@media (max-width:62.9375rem) {
+  .c1 >time {
+    padding-bottom: 0.5rem;
+  }
+}
+
 @supports (grid-template-columns:fit-content(200px)) {
   .c0 {
     display: grid;
@@ -365,6 +371,12 @@ exports[`StoryPromo - Leading Story should render with Media Indicator correctly
     width: 100%;
     grid-template-columns: repeat(6,1fr);
     grid-column-end: span 6;
+  }
+}
+
+@media (max-width:62.9375rem) {
+  .c1 >time {
+    padding-bottom: 0.5rem;
   }
 }
 

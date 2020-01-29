@@ -4,6 +4,7 @@ import {
   GEL_GROUP_3_SCREEN_WIDTH_MIN,
   GEL_GROUP_4_SCREEN_WIDTH_MIN,
   GEL_GROUP_5_SCREEN_WIDTH_MIN,
+  GEL_GROUP_3_SCREEN_WIDTH_MAX,
 } from '@bbc/gel-foundations/breakpoints';
 import { grid } from '@bbc/psammead-styles/detection';
 
@@ -44,10 +45,12 @@ const TextGridColumnsLeadingStory = css`
   width: 100%;
   grid-template-columns: repeat(6, 1fr);
   grid-column-end: span 6;
+
   @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
     grid-template-columns: repeat(3, 1fr);
     grid-column-end: span 3;
   }
+
   @media (min-width: ${GEL_GROUP_4_SCREEN_WIDTH_MIN}) {
     grid-template-columns: repeat(2, 1fr);
     grid-column-end: span 2;
@@ -106,6 +109,14 @@ const textGridStyles = {
   leading: TextGridColumnsLeadingStory,
 };
 
+const leadingPromoTimestampPadding = `
+  >time {
+    @media (max-width: ${GEL_GROUP_3_SCREEN_WIDTH_MAX}) {
+      padding-bottom: ${GEL_SPACING};
+    }
+  }
+`;
+
 const TextGridItem = styled.div`
     display: inline-block;
     vertical-align: top;
@@ -118,6 +129,9 @@ const TextGridItem = styled.div`
       padding: initial;
       ${({ promoType }) => textGridStyles[promoType]}
     }
+
+    ${({ promoType }) =>
+      promoType === 'leading' && leadingPromoTimestampPadding}
   
     ${({ displayImage }) =>
       !displayImage &&

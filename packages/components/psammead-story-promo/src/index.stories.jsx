@@ -6,6 +6,7 @@ import MediaIndicator from '@bbc/psammead-media-indicator';
 import VisuallyHiddenText from '@bbc/psammead-visually-hidden-text';
 import { withServicesKnob } from '@bbc/psammead-storybook-helpers';
 import Grid from '@bbc/psammead-grid';
+import Timestamp from '@bbc/psammead-timestamp-container';
 import StoryPromo, { Headline, Summary, Link, LiveLabel } from './index';
 import relatedItems from '../testHelpers/relatedItems';
 import IndexAlsosContainer from '../testHelpers/IndexAlsosContainer';
@@ -55,6 +56,19 @@ const HiddenText = ({ type, headline }) => (
   </span>
 );
 
+// eslint-disable-next-line react/prop-types
+const StoryTimestamp = ({ script, service }) => (
+  <Timestamp
+    timestamp={122222222}
+    dateTimeFormat="YYYY-MM-DD"
+    format="LL"
+    script={script}
+    padding={false}
+    service={service}
+    isRelative={false}
+  />
+);
+
 /* eslint-disable react/prop-types */
 const InfoComponent = ({
   headlineText,
@@ -67,6 +81,7 @@ const InfoComponent = ({
   type,
   alsoItems,
   promoHasImage,
+  timestamp,
 }) => (
   <>
     <Headline
@@ -91,6 +106,7 @@ const InfoComponent = ({
     >
       {summaryText}
     </Summary>
+    {timestamp && <StoryTimestamp />}
     {promoType === 'top' && alsoItems && (
       <IndexAlsosContainer
         alsoItems={alsoItems}
@@ -112,6 +128,7 @@ const generateStory = ({
     ['No media', 'video', 'audio', 'photogallery'],
     'No media',
   );
+  const timestamp = boolean('Display timestamp');
 
   const Info = (
     <InfoComponent
@@ -125,6 +142,7 @@ const generateStory = ({
       type={mediaType}
       alsoItems={alsoItems}
       promoHasImage={displayImage}
+      timestamp={timestamp}
     />
   );
 
@@ -140,6 +158,7 @@ const generateStory = ({
         MediaIndicatorComponent(mediaType, service, displayImage)
       }
       promoType={promoType}
+      timestamp={timestamp}
     />
   );
 };
