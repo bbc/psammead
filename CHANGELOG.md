@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 2.0.65 | [PR#2582](https://github.com/bbc/psammead/pull/2582) Creating a new Content Anchor component and adding a dev dependency |
 | 2.0.64 | [PR#3000](https://github.com/bbc/psammead/pull/3000) Talos - Bump Dependencies - @bbc/psammead-brand |
 | 2.0.63 | [PR#2997](https://github.com/bbc/psammead/pull/2997) Talos - Bump Dependencies - @bbc/psammead-brand, @bbc/psammead-image-placeholder, @bbc/psammead-media-indicator |
 | 2.0.62 | [PR#2998](https://github.com/bbc/psammead/pull/2998) Remove unused package `jest-styled-components` |
