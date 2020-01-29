@@ -14,18 +14,6 @@ const fullWidthColumnsMaxScaleable = `100%`;
 
 const halfWidthColumnsMaxScaleable = `50%`;
 
-const imageGridRadio = css`
-  @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) and (max-width: ${GEL_GROUP_3_SCREEN_WIDTH_MAX}) {
-    grid-column: 1 / span 2;
-  }
-`;
-
-const imageGridTv = css`
-  @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
-    grid-column: 1 / span 3;
-  }
-`;
-
 const imageGridFallbackRadio = css`
   @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) and (max-width: ${GEL_GROUP_3_SCREEN_WIDTH_MAX}) {
     width: ${twoOfSixColumnsMaxWidthScaleable};
@@ -38,14 +26,26 @@ const imageGridFallbackTv = css`
   }
 `;
 
-const imageGridStyles = {
-  radio: imageGridRadio,
-  tv: imageGridTv,
-};
+const imageGridRadio = css`
+  @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) and (max-width: ${GEL_GROUP_3_SCREEN_WIDTH_MAX}) {
+    grid-column: 1 / span 2;
+  }
+`;
+
+const imageGridTv = css`
+  @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
+    grid-column: 1 / span 3;
+  }
+`;
 
 const imageGridFallbackStyles = {
   radio: imageGridFallbackRadio,
   tv: imageGridFallbackTv,
+};
+
+const imageGridStyles = {
+  radio: imageGridRadio,
+  tv: imageGridTv,
 };
 
 const ImageGridItem = styled.div`
