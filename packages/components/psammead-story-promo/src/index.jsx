@@ -1,5 +1,5 @@
 import React from 'react';
-import styled, { css } from 'styled-components';
+import styled from 'styled-components';
 import { node, bool, string, oneOf, shape } from 'prop-types';
 import { GEL_SPACING, GEL_SPACING_DBL } from '@bbc/gel-foundations/spacings';
 import {
@@ -9,12 +9,11 @@ import {
   GEL_GROUP_3_SCREEN_WIDTH_MAX,
   GEL_GROUP_4_SCREEN_WIDTH_MIN,
   GEL_GROUP_5_SCREEN_WIDTH_MIN,
-  GEL_GROUP_B_MIN_WIDTH,
-  GEL_GROUP_B_MAX_WIDTH,
 } from '@bbc/gel-foundations/breakpoints';
 import {
   getParagon,
   getLongPrimer,
+  getPica,
   getDoublePica,
 } from '@bbc/gel-foundations/typography';
 import {
@@ -94,36 +93,10 @@ const InlineMediaIndicator = styled.div`
 `;
 
 const headlineTopStoryTypography = script => getParagon(script);
+
+const headlineRegularTypography = script => getPica(script);
+
 const headlineLeadingStoryTypography = script => getDoublePica(script);
-
-// This is needed to get around the issue of IE11 not supporting
-// nested media queries (so not using getGreatPrimer() & getPica())
-const headlineRegularTypography = script => {
-  const fontSize = (type, group) => script[type][group].fontSize / 16;
-  const lineHeight = (type, group) => script[type][group].lineHeight / 16;
-
-  const noImageFontStyling = `
-    @media (min-width: ${GEL_GROUP_4_SCREEN_WIDTH_MIN}) {
-      font-size: ${fontSize('pica', 'groupD')}rem;
-      line-height: ${lineHeight('pica', 'groupD')}rem;
-    }`;
-
-  return css`
-    font-size: ${fontSize('pica', 'groupA')}rem;
-    line-height: ${lineHeight('pica', 'groupA')}rem;
-
-    @media (min-width: ${GEL_GROUP_B_MIN_WIDTH}rem) and (max-width: ${GEL_GROUP_B_MAX_WIDTH}rem) {
-      font-size: ${fontSize('pica', 'groupB')}rem;
-      line-height: ${lineHeight('pica', 'groupB')}rem;
-    }
-
-    @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
-      font-size: ${fontSize('greatPrimer', 'groupB')}rem;
-      line-height: ${lineHeight('greatPrimer', 'groupB')}rem;
-    }
-    ${({ promoHasImage }) => !promoHasImage && noImageFontStyling}
-  `;
-};
 
 const headlineTypography = script => ({
   top: headlineTopStoryTypography(script),
