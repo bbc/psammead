@@ -187,8 +187,10 @@ const Bulletin = ({
 
   return (
     <BulletinWrapper>
-      <ImageGridItem bulletinType={bulletinType}>{image}</ImageGridItem>
-      <TextGridItem bulletinType={bulletinType} dir={dir}>
+      {image && (
+        <ImageGridItem bulletinType={bulletinType}>{image}</ImageGridItem>
+      )}
+      <TextGridItem bulletinType={bulletinType} fullWidth={!image} dir={dir}>
         <BulletinHeading
           script={script}
           service={service}

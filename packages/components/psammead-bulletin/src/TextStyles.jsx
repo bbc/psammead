@@ -24,25 +24,29 @@ const paddingStyles = css`
 const textGridRadio = css`
   @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) and (max-width: ${GEL_GROUP_3_SCREEN_WIDTH_MAX}) {
     grid-column: 3 / span 4;
+    padding: 0;
   }
 `;
 
 const textGridTv = css`
   @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
     grid-column: 4 / span 3;
+    padding: 0;
   }
 `;
 
 const textGridFallbackRadio = css`
   @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) and (max-width: ${GEL_GROUP_3_SCREEN_WIDTH_MAX}) {
-    width: ${fourOfSixColumnsMaxWidthScaleable};
+    ${({ fullWidth }) =>
+      !fullWidth && `width: ${fourOfSixColumnsMaxWidthScaleable};`}
     ${paddingStyles}
   }
 `;
 
 const textGridFallbackTv = css`
   @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
-    width: ${halfWidthColumnsMaxScaleable};
+    ${({ fullWidth }) =>
+      !fullWidth && `width: ${halfWidthColumnsMaxScaleable}`};
     ${paddingStyles}
   }
 `;
@@ -65,8 +69,8 @@ const TextGridItem = styled.div`
   @supports (${grid}) {
     width: initial;
     grid-column: 1 / span 6;
-    padding: 0;
-    ${({ bulletinType }) => textGridStyles[bulletinType]}
+    ${({ bulletinType, fullWidth }) =>
+      !fullWidth && textGridStyles[bulletinType]}
   }
 `;
 

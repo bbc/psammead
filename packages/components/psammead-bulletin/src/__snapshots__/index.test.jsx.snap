@@ -174,7 +174,6 @@ exports[`Bulletin should render audio correctly 1`] = `
   .c3 {
     width: initial;
     grid-column: 1 / span 6;
-    padding: 0;
   }
 }
 
@@ -504,7 +503,6 @@ exports[`Bulletin should render live audio correctly 1`] = `
   .c3 {
     width: initial;
     grid-column: 1 / span 6;
-    padding: 0;
   }
 }
 
@@ -840,7 +838,6 @@ exports[`Bulletin should render live video correctly 1`] = `
   .c3 {
     width: initial;
     grid-column: 1 / span 6;
-    padding: 0;
   }
 }
 
@@ -1168,7 +1165,6 @@ exports[`Bulletin should render video correctly 1`] = `
   .c3 {
     width: initial;
     grid-column: 1 / span 6;
-    padding: 0;
   }
 }
 
