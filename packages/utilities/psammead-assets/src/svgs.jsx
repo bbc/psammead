@@ -20,6 +20,7 @@ export indonesia from './svgs/indonesia';
 export japanese from './svgs/japanese';
 export korean from './svgs/korean';
 export kyrgyz from './svgs/kyrgyz';
+export learningenglish from './svgs/learningenglish';
 export marathi from './svgs/marathi';
 export mundo from './svgs/mundo';
 export naidheachdan from './svgs/naidheachdan';
