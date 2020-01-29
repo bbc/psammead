@@ -27,5 +27,8 @@
   },
   "devDependencies": {
     "@bbc/psammead-headings": "^3.1.18"
+  },
+  "publishConfig": {
+    "tag": "alpha"
   }
 }
