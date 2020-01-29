@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 6.0.0 | [PR#3028](https://github.com/bbc/psammead/pull/3028) Bring Navigation out of alpha |
 | 6.0.0-alpha.27 | [PR#2996](https://github.com/bbc/psammead/pull/2996) Talos - Bump Dependencies - @bbc/psammead-assets |
 | 6.0.0-alpha.26 | [PR#2990](https://github.com/bbc/psammead/pull/2990) Use `GEL_SPACING_HLF` and `GEL_SPACING_SEXT` constants |
 | 6.0.0-alpha.25 | [PR#2989](https://github.com/bbc/psammead/pull/2989) Talos - Bump Dependencies - @bbc/psammead-assets |
