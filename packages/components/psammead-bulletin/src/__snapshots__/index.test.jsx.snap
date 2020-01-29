@@ -82,11 +82,11 @@ exports[`Bulletin should render audio correctly 1`] = `
   color: #222222;
   margin: 0;
   padding: 0.5rem;
-  font-size: 0.9375rem;
-  line-height: 1.25rem;
   font-family: ReithSerif,Helvetica,Arial,sans-serif;
   font-weight: 500;
   font-style: normal;
+  font-size: 0.9375rem;
+  line-height: 1.25rem;
 }
 
 .c7 {
@@ -189,13 +189,6 @@ exports[`Bulletin should render audio correctly 1`] = `
   .c4 {
     font-size: 1rem;
     line-height: 1.25rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c4 {
-    font-size: 1.25rem;
-    line-height: 1.5rem;
   }
 }
 
@@ -419,11 +412,11 @@ exports[`Bulletin should render live audio correctly 1`] = `
   color: #222222;
   margin: 0;
   padding: 0.5rem;
-  font-size: 0.9375rem;
-  line-height: 1.25rem;
   font-family: ReithSerif,Helvetica,Arial,sans-serif;
   font-weight: 500;
   font-style: normal;
+  font-size: 0.9375rem;
+  line-height: 1.25rem;
 }
 
 .c8 {
@@ -526,13 +519,6 @@ exports[`Bulletin should render live audio correctly 1`] = `
   .c4 {
     font-size: 1rem;
     line-height: 1.25rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c4 {
-    font-size: 1.25rem;
-    line-height: 1.5rem;
   }
 }
 
@@ -762,11 +748,11 @@ exports[`Bulletin should render live video correctly 1`] = `
   color: #222222;
   margin: 0;
   padding: 0.5rem;
-  font-size: 0.9375rem;
-  line-height: 1.25rem;
   font-family: ReithSerif,Helvetica,Arial,sans-serif;
   font-weight: 500;
   font-style: normal;
+  font-size: 1.125rem;
+  line-height: 1.375rem;
 }
 
 .c8 {
@@ -866,15 +852,8 @@ exports[`Bulletin should render live video correctly 1`] = `
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
   .c4 {
-    font-size: 1rem;
-    line-height: 1.25rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c4 {
-    font-size: 1rem;
-    line-height: 1.25rem;
+    font-size: 1.125rem;
+    line-height: 1.375rem;
   }
 }
 
@@ -1097,11 +1076,11 @@ exports[`Bulletin should render video correctly 1`] = `
   color: #222222;
   margin: 0;
   padding: 0.5rem;
-  font-size: 0.9375rem;
-  line-height: 1.25rem;
   font-family: ReithSerif,Helvetica,Arial,sans-serif;
   font-weight: 500;
   font-style: normal;
+  font-size: 1.125rem;
+  line-height: 1.375rem;
 }
 
 .c7 {
@@ -1201,15 +1180,8 @@ exports[`Bulletin should render video correctly 1`] = `
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
   .c4 {
-    font-size: 1rem;
-    line-height: 1.25rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c4 {
-    font-size: 1rem;
-    line-height: 1.25rem;
+    font-size: 1.125rem;
+    line-height: 1.375rem;
   }
 }
 

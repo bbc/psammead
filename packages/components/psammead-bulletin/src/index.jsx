@@ -18,7 +18,11 @@ import {
   getSerifMedium,
 } from '@bbc/psammead-styles/font-styles';
 import { scriptPropType } from '@bbc/gel-foundations/prop-types';
-import { getPica, getLongPrimer } from '@bbc/gel-foundations/typography';
+import {
+  getPica,
+  getGreatPrimer,
+  getLongPrimer,
+} from '@bbc/gel-foundations/typography';
 import { mediaIcons } from '@bbc/psammead-assets/svgs';
 import VisuallyHiddenText from '@bbc/psammead-visually-hidden-text';
 import { Link, LiveLabel } from '@bbc/psammead-story-promo';
@@ -45,30 +49,15 @@ const TVBulletinWrapper = styled.div`
   }
 `;
 
-// This is needed to get around the issue of IE11 not supporting
-// nested media queries
-const headlineTypography = script => {
-  const fontSize = script.greatPrimer.groupD.fontSize / 16;
-  const lineHeight = script.greatPrimer.groupD.lineHeight / 16;
-
-  return css`
-    font-size: ${fontSize}rem;
-    line-height: ${lineHeight}rem;
-  `;
-};
-
 const headingStyles = css`
   color: ${C_EBON};
   margin: 0; /* Reset */
   padding: ${GEL_SPACING};
-  ${({ script }) => script && getPica(script)}
   ${({ service }) => service && getSerifMedium(service)}
-  @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
-    ${({ script }) => script && headlineTypography(script)}
-  }
 `;
 
 const radioHeading = css`
+  ${({ script }) => script && getPica(script)}
   @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) and (max-width: ${GEL_GROUP_3_SCREEN_WIDTH_MAX}) {
     padding-top: ${GEL_SPACING};
     padding-bottom: ${GEL_SPACING};
@@ -77,6 +66,7 @@ const radioHeading = css`
 `;
 
 const tvHeading = css`
+  ${({ script }) => script && getGreatPrimer(script)}
   @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
     padding: 0 0 ${GEL_SPACING} 0;
   }
