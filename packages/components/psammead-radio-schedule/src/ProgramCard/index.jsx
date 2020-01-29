@@ -43,15 +43,18 @@ const HeadingWrapper = styled.h3`
   margin: 0; /* Reset */
 `;
 
-const LabelWrapper = styled.span.attrs({ 'aria-hidden': 'true' })`
+const HeadingContentWrapper = styled.span.attrs({ role: 'text' })``;
+
+const LabelWrapper = styled.span`
   ${({ service }) => service && getSansBold(service)};
   ${({ script }) => script && getPica(script)};
   color: ${({ headerLabelColor }) => headerLabelColor};
 `;
 
-const TitleWrapper = styled.div`
+const TitleWrapper = styled.span`
   color: ${({ titleColor }) => titleColor};
   padding: ${GEL_SPACING} 0;
+  display: block;
   ${({ service }) => service && getSansRegular(service)};
   ${({ script }) => script && getPica(script)};
 `;
@@ -83,12 +86,14 @@ const IconWrapper = styled.span`
   }
 `;
 
-const DurationWrapper = styled.span`
+const DurationWrapper = styled.time`
   ${({ dir }) =>
     dir === 'ltr'
       ? `padding-left: ${GEL_SPACING};`
       : `padding-right: ${GEL_SPACING};`}
 `;
+
+const DurationTextWrapper = styled.span.attrs({ 'aria-hidden': 'true' })``;
 
 const programStateConfig = {
   live: {
@@ -113,6 +118,12 @@ const programStateConfig = {
   },
 };
 
+const sentenceCase = text =>
+  text
+    .toLowerCase()
+    .charAt(0)
+    .toUpperCase() + text.substring(1);
+
 const renderHeaderContent = ({
   state,
   link,
@@ -124,29 +135,35 @@ const renderHeaderContent = ({
   startTime,
 }) => {
   const isOnDemand = state === 'onDemand';
+  const isLive = state === 'live';
   const hiddenTextProps =
     stateLabel.toLowerCase() === 'live' ? { lang: 'en-GB' } : {};
 
+  const labelWrapperProps = isLive ? { 'aria-hidden': 'true' } : {};
+
   const content = (
-    <>
+    <HeadingContentWrapper>
       {!isOnDemand && (
-        <VisuallyHiddenText {...hiddenTextProps}>
-          {`${stateLabel}, `}
-        </VisuallyHiddenText>
+        <>
+          <LabelWrapper
+            service={service}
+            script={script}
+            {...labelWrapperProps}
+            {...programStateConfig[state]}
+          >
+            {`${stateLabel.toUpperCase()}`}
+          </LabelWrapper>
+          <VisuallyHiddenText {...hiddenTextProps}>
+            {isLive && ` ${sentenceCase(stateLabel)}`}
+            {`,`}
+          </VisuallyHiddenText>
+        </>
       )}
-      <VisuallyHiddenText>
-        {`${brandTitle}, ${startTime}, ${episodeTitle}`}
-      </VisuallyHiddenText>
-      {!isOnDemand && (
-        <LabelWrapper
-          service={service}
-          script={script}
-          {...programStateConfig[state]}
-        >
-          {`${stateLabel.toUpperCase()} `}
-        </LabelWrapper>
-      )}
-      {brandTitle}
+      <span>
+        {!isOnDemand && ` `}
+        {brandTitle}
+      </span>
+      <VisuallyHiddenText>, {startTime}, </VisuallyHiddenText>
       <TitleWrapper
         service={service}
         script={script}
@@ -154,7 +171,7 @@ const renderHeaderContent = ({
       >
         {episodeTitle}
       </TitleWrapper>
-    </>
+    </HeadingContentWrapper>
   );
 
   return state === 'next' ? content : <Link href={link}>{content}</Link>;
@@ -206,9 +223,9 @@ const ProgramCard = ({
       </IconWrapper>
       <DurationWrapper dir={dir}>
         <VisuallyHiddenText>
-          {`${durationLabel} ${duration.replace(/:/g, ',')}`}
+          {` ${sentenceCase(durationLabel)} ${duration.replace(/:/g, ',')} `}
         </VisuallyHiddenText>
-        {duration}
+        <DurationTextWrapper>{duration}</DurationTextWrapper>
       </DurationWrapper>
     </ButtonWrapper>
   </CardWrapper>

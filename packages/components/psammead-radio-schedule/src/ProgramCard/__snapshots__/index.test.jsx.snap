@@ -39,7 +39,7 @@ exports[`ProgramCard should render correctly for live 1`] = `
   color: #6E6E73;
 }
 
-.c4 {
+.c5 {
   -webkit-clip-path: inset(100%);
   clip-path: inset(100%);
   -webkit-clip: rect(1px,1px,1px,1px);
@@ -72,7 +72,7 @@ exports[`ProgramCard should render correctly for live 1`] = `
   margin: 0;
 }
 
-.c5 {
+.c4 {
   font-family: ReithSans,Helvetica,Arial,sans-serif;
   font-weight: 700;
   font-style: normal;
@@ -84,6 +84,7 @@ exports[`ProgramCard should render correctly for live 1`] = `
 .c6 {
   color: #3F3F42;
   padding: 0.5rem 0;
+  display: block;
   font-family: ReithSans,Helvetica,Arial,sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -141,14 +142,14 @@ exports[`ProgramCard should render correctly for live 1`] = `
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
-  .c5 {
+  .c4 {
     font-size: 1rem;
     line-height: 1.25rem;
   }
 }
 
 @media (min-width:37.5rem) {
-  .c5 {
+  .c4 {
     font-size: 1rem;
     line-height: 1.25rem;
   }
@@ -210,28 +211,39 @@ exports[`ProgramCard should render correctly for live 1`] = `
         href="/news/articles/cn7k01xp8kxo"
       >
         <span
-          class="c4"
-          lang="en-GB"
+          class=""
+          role="text"
         >
-          live, 
+          <span
+            aria-hidden="true"
+            class="c4"
+          >
+            LIVE
+          </span>
+          <span
+            class="c5"
+            lang="en-GB"
+          >
+             Live
+            ,
+          </span>
+          <span>
+             
+            Could a computer ever create better art than a human?
+          </span>
+          <span
+            class="c5"
+          >
+            , 
+            13:00
+            , 
+          </span>
+          <span
+            class="c6"
+          >
+            29/01/1990
+          </span>
         </span>
-        <span
-          class="c4"
-        >
-          Could a computer ever create better art than a human?, 13:00, 29/01/1990
-        </span>
-        <span
-          aria-hidden="true"
-          class="c5"
-        >
-          LIVE 
-        </span>
-        Could a computer ever create better art than a human?
-        <div
-          class="c6"
-        >
-          29/01/1990
-        </div>
       </a>
     </h3>
     <p
@@ -262,17 +274,22 @@ exports[`ProgramCard should render correctly for live 1`] = `
         />
       </svg>
     </span>
-    <span
+    <time
       class="c11"
       dir="ltr"
     >
       <span
-        class="c4"
+        class="c5"
       >
-        duration 30,00
+         Duration 30,00 
       </span>
-      30:00
-    </span>
+      <span
+        aria-hidden="true"
+        class="Duration0 "
+      >
+        30:00
+      </span>
+    </time>
   </div>
 </div>
 `;
@@ -287,7 +304,7 @@ exports[`ProgramCard should render correctly for next 1`] = `
   height: 0.75rem;
 }
 
-.c3 {
+.c4 {
   -webkit-clip-path: inset(100%);
   clip-path: inset(100%);
   -webkit-clip: rect(1px,1px,1px,1px);
@@ -320,7 +337,7 @@ exports[`ProgramCard should render correctly for next 1`] = `
   margin: 0;
 }
 
-.c4 {
+.c3 {
   font-family: ReithSans,Helvetica,Arial,sans-serif;
   font-weight: 700;
   font-style: normal;
@@ -332,6 +349,7 @@ exports[`ProgramCard should render correctly for next 1`] = `
 .c5 {
   color: #6E6E73;
   padding: 0.5rem 0;
+  display: block;
   font-family: ReithSans,Helvetica,Arial,sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -389,14 +407,14 @@ exports[`ProgramCard should render correctly for next 1`] = `
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
-  .c4 {
+  .c3 {
     font-size: 1rem;
     line-height: 1.25rem;
   }
 }
 
 @media (min-width:37.5rem) {
-  .c4 {
+  .c3 {
     font-size: 1rem;
     line-height: 1.25rem;
   }
@@ -454,27 +472,36 @@ exports[`ProgramCard should render correctly for next 1`] = `
       class="c2"
     >
       <span
-        class="c3"
+        class=""
+        role="text"
       >
-        next, 
+        <span
+          class="c3"
+        >
+          NEXT
+        </span>
+        <span
+          class="c4"
+        >
+          ,
+        </span>
+        <span>
+           
+          Could a computer ever create better art than a human?
+        </span>
+        <span
+          class="c4"
+        >
+          , 
+          13:00
+          , 
+        </span>
+        <span
+          class="c5"
+        >
+          29/01/1990
+        </span>
       </span>
-      <span
-        class="c3"
-      >
-        Could a computer ever create better art than a human?, 13:00, 29/01/1990
-      </span>
-      <span
-        aria-hidden="true"
-        class="c4"
-      >
-        NEXT 
-      </span>
-      Could a computer ever create better art than a human?
-      <div
-        class="c5"
-      >
-        29/01/1990
-      </div>
     </h3>
     <p
       class="c6"
@@ -504,17 +531,22 @@ exports[`ProgramCard should render correctly for next 1`] = `
         />
       </svg>
     </span>
-    <span
+    <time
       class="c10"
       dir="ltr"
     >
       <span
-        class="c3"
+        class="c4"
       >
-        duration 30,00
+         Duration 30,00 
       </span>
-      30:00
-    </span>
+      <span
+        aria-hidden="true"
+        class="Duration0 "
+      >
+        30:00
+      </span>
+    </time>
   </div>
 </div>
 `;
@@ -594,6 +626,7 @@ exports[`ProgramCard should render correctly for onDemand 1`] = `
 .c5 {
   color: #3F3F42;
   padding: 0.5rem 0;
+  display: block;
   font-family: ReithSans,Helvetica,Arial,sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -706,16 +739,25 @@ exports[`ProgramCard should render correctly for onDemand 1`] = `
         href="/news/articles/cn7k01xp8kxo"
       >
         <span
-          class="c4"
+          class=""
+          role="text"
         >
-          Could a computer ever create better art than a human?, 13:00, 29/01/1990
+          <span>
+            Could a computer ever create better art than a human?
+          </span>
+          <span
+            class="c4"
+          >
+            , 
+            13:00
+            , 
+          </span>
+          <span
+            class="c5"
+          >
+            29/01/1990
+          </span>
         </span>
-        Could a computer ever create better art than a human?
-        <div
-          class="c5"
-        >
-          29/01/1990
-        </div>
       </a>
     </h3>
     <p
@@ -746,17 +788,22 @@ exports[`ProgramCard should render correctly for onDemand 1`] = `
         />
       </svg>
     </span>
-    <span
+    <time
       class="c10"
       dir="ltr"
     >
       <span
         class="c4"
       >
-        duration 30,00
+         Duration 30,00 
       </span>
-      30:00
-    </span>
+      <span
+        aria-hidden="true"
+        class="Duration0 "
+      >
+        30:00
+      </span>
+    </time>
   </div>
 </div>
 `;
@@ -800,7 +847,7 @@ exports[`ProgramCard should render correctly in RTL 1`] = `
   color: #6E6E73;
 }
 
-.c4 {
+.c5 {
   -webkit-clip-path: inset(100%);
   clip-path: inset(100%);
   -webkit-clip: rect(1px,1px,1px,1px);
@@ -833,7 +880,7 @@ exports[`ProgramCard should render correctly in RTL 1`] = `
   margin: 0;
 }
 
-.c5 {
+.c4 {
   font-family: "BBC Nassim Arabic",Arial,Verdana,Geneva,Helvetica,sans-serif;
   font-weight: 700;
   font-style: normal;
@@ -845,6 +892,7 @@ exports[`ProgramCard should render correctly in RTL 1`] = `
 .c6 {
   color: #3F3F42;
   padding: 0.5rem 0;
+  display: block;
   font-family: "BBC Nassim Arabic",Arial,Verdana,Geneva,Helvetica,sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -902,14 +950,14 @@ exports[`ProgramCard should render correctly in RTL 1`] = `
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
-  .c5 {
+  .c4 {
     font-size: 1.25rem;
     line-height: 1.625rem;
   }
 }
 
 @media (min-width:37.5rem) {
-  .c5 {
+  .c4 {
     font-size: 1.25rem;
     line-height: 1.625rem;
   }
@@ -971,27 +1019,38 @@ exports[`ProgramCard should render correctly in RTL 1`] = `
         href="/arabic/articles/c1er5mjnznzo"
       >
         <span
-          class="c4"
+          class=""
+          role="text"
         >
-          مباشر, 
+          <span
+            aria-hidden="true"
+            class="c4"
+          >
+            مباشر
+          </span>
+          <span
+            class="c5"
+          >
+             مباشر
+            ,
+          </span>
+          <span>
+             
+            لماذا يخجل البعض من اسم قريته في مصر؟
+          </span>
+          <span
+            class="c5"
+          >
+            , 
+            13:00
+            , 
+          </span>
+          <span
+            class="c6"
+          >
+            29/01/1990
+          </span>
         </span>
-        <span
-          class="c4"
-        >
-          لماذا يخجل البعض من اسم قريته في مصر؟, 13:00, 29/01/1990
-        </span>
-        <span
-          aria-hidden="true"
-          class="c5"
-        >
-          مباشر 
-        </span>
-        لماذا يخجل البعض من اسم قريته في مصر؟
-        <div
-          class="c6"
-        >
-          29/01/1990
-        </div>
       </a>
     </h3>
     <p
@@ -1022,17 +1081,22 @@ exports[`ProgramCard should render correctly in RTL 1`] = `
         />
       </svg>
     </span>
-    <span
+    <time
       class="c11"
       dir="rtl"
     >
       <span
-        class="c4"
+        class="c5"
       >
-        المدة الزمنية 30,00
+         المدة الزمنية 30,00 
       </span>
-      30:00
-    </span>
+      <span
+        aria-hidden="true"
+        class="Duration0 "
+      >
+        30:00
+      </span>
+    </time>
   </div>
 </div>
 `;
