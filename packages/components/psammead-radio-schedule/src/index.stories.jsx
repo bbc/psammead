@@ -1,7 +1,7 @@
 import { storiesOf } from '@storybook/react';
 import { withKnobs } from '@storybook/addon-knobs';
 import { withServicesKnob } from '@bbc/psammead-storybook-helpers';
-import { renderProgramCard } from './testHelpers/helper';
+import { renderProgramCard, sentenceCase } from './testHelpers/helper';
 import notes from '../README.md';
 
 const newsServiceDecorator = withServicesKnob({
@@ -25,7 +25,7 @@ stateTypes.forEach(state => {
     `${state}`,
     () =>
       newsServiceDecorator(({ service }) =>
-        renderProgramCard({ service, state, stateLabel: state }),
+        renderProgramCard({ service, state, stateLabel: sentenceCase(state) }),
       ),
     { notes },
   );
@@ -37,7 +37,7 @@ stories.add(
     newsServiceDecorator(({ service }) =>
       renderProgramCard({
         state: 'live',
-        stateLabel: 'live',
+        stateLabel: 'Live',
         service,
         episodeTitle: 'This is a long episode title that spans multiple lines',
       }),

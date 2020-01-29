@@ -118,12 +118,6 @@ const programStateConfig = {
   },
 };
 
-const sentenceCase = text =>
-  text
-    .toLowerCase()
-    .charAt(0)
-    .toUpperCase() + text.substring(1);
-
 const renderHeaderContent = ({
   state,
   link,
@@ -136,8 +130,7 @@ const renderHeaderContent = ({
 }) => {
   const isOnDemand = state === 'onDemand';
   const isLive = state === 'live';
-  const hiddenTextProps =
-    stateLabel.toLowerCase() === 'live' ? { lang: 'en-GB' } : {};
+  const hiddenTextProps = stateLabel === 'Live' ? { lang: 'en-GB' } : {};
 
   const labelWrapperProps = isLive ? { 'aria-hidden': 'true' } : {};
 
@@ -154,7 +147,7 @@ const renderHeaderContent = ({
             {`${stateLabel.toUpperCase()}`}
           </LabelWrapper>
           <VisuallyHiddenText {...hiddenTextProps}>
-            {isLive && ` ${sentenceCase(stateLabel)}`}
+            {isLive && ` ${stateLabel}`}
             {`,`}
           </VisuallyHiddenText>
         </>
@@ -223,7 +216,7 @@ const ProgramCard = ({
       </IconWrapper>
       <DurationWrapper dir={dir}>
         <VisuallyHiddenText>
-          {` ${sentenceCase(durationLabel)} ${duration.replace(/:/g, ',')} `}
+          {` ${durationLabel} ${duration.replace(/:/g, ',')} `}
         </VisuallyHiddenText>
         <DurationTextWrapper>{duration}</DurationTextWrapper>
       </DurationWrapper>
