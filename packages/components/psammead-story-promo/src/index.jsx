@@ -101,6 +101,13 @@ const headlineLeadingStoryTypography = script => getDoublePica(script);
 const headlineRegularTypography = script => {
   const fontSize = (type, group) => script[type][group].fontSize / 16;
   const lineHeight = (type, group) => script[type][group].lineHeight / 16;
+
+  const noImageFontStyling = `
+    @media (min-width: ${GEL_GROUP_4_SCREEN_WIDTH_MIN}) {
+      font-size: ${fontSize('pica', 'groupD')}rem;
+      line-height: ${lineHeight('pica', 'groupD')}rem;
+    }`;
+
   return css`
     font-size: ${fontSize('pica', 'groupA')}rem;
     line-height: ${lineHeight('pica', 'groupA')}rem;
@@ -114,14 +121,7 @@ const headlineRegularTypography = script => {
       font-size: ${fontSize('greatPrimer', 'groupB')}rem;
       line-height: ${lineHeight('greatPrimer', 'groupB')}rem;
     }
-
-    ${({ promoHasImage }) =>
-      !promoHasImage &&
-      `
-      @media (min-width: ${GEL_GROUP_4_SCREEN_WIDTH_MIN}) {
-        font-size: ${fontSize('pica', 'groupD')}rem;
-        line-height: ${lineHeight('pica', 'groupD')}rem;
-      `}
+    ${({ promoHasImage }) => !promoHasImage && noImageFontStyling}
   `;
 };
 
@@ -135,7 +135,6 @@ export const Headline = styled.h3`
   color: ${C_EBON};
   margin: 0; /* Reset */
   padding-bottom: ${GEL_SPACING};
-  ${({ promoHasImage }) => !promoHasImage && `display: inline;`}
   ${({ service }) => getSerifMedium(service)}
   ${({ script, promoType }) => script && headlineTypography(script)[promoType]}
 `;
