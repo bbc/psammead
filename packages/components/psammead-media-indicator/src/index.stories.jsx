@@ -110,6 +110,23 @@ storiesOf('Components|MediaIndicator/Audio', module)
       />
     ),
     { notes },
+  )
+  .add(
+    'inline media indicator',
+    ({ service }) => (
+      <>
+        <MediaIndicator
+          duration={text('duration', '2:15')}
+          datetime={text('datetime', 'PT2M15S')}
+          type="audio"
+          topStory
+          service={service}
+          isInline={boolean('inline?', true)}
+        />
+        {text('extra text', 'example text')}
+      </>
+    ),
+    { notes },
   );
 
 storiesOf('Components|MediaIndicator/Photo', module)
@@ -131,6 +148,20 @@ storiesOf('Components|MediaIndicator/Photo', module)
     'top story photogallery',
     ({ service }) => (
       <MediaIndicator type="photogallery" service={service} topStory />
+    ),
+    { notes },
+  )
+  .add(
+    'inline media indicator',
+    ({ service }) => (
+      <>
+        <MediaIndicator
+          type="photogallery"
+          service={service}
+          isInline={boolean('inline?', true)}
+        />
+        {text('extra text', 'example text')}
+      </>
     ),
     { notes },
   );
