@@ -1,0 +1,7 @@
+{
+  "name": "@bbc/psammead-media-indicator/inline-media-indicator",
+  "private": true,
+  "main": "../dist/InlineMediaIndicator",
+  "module": "../esm/InlineMediaIndicator",
+  "sideEffects": false
+}

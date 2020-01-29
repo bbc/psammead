@@ -5,6 +5,7 @@ import { withKnobs, text, boolean } from '@storybook/addon-knobs';
 import { withServicesKnob } from '@bbc/psammead-storybook-helpers';
 import notes from '../README.md';
 import MediaIndicator from './index';
+import InlineMediaIndicator from './InlineMediaIndicator';
 
 // To ensure the white box in the media indicator is visible.
 const Page = styled.div`
@@ -44,6 +45,19 @@ storiesOf('Components|MediaIndicator/Video', module)
     'top story video with duration',
     ({ service }) => (
       <MediaIndicator
+        duration={text('duration', '2:15')}
+        datetime={text('datetime', 'PT2M15S')}
+        type="video"
+        topStory
+        service={service}
+      />
+    ),
+    { notes },
+  )
+  .add(
+    'top story video with duration',
+    ({ service }) => (
+      <InlineMediaIndicator
         duration={text('duration', '2:15')}
         datetime={text('datetime', 'PT2M15S')}
         type="video"
