@@ -79,14 +79,14 @@ exports[`Bulletin should render audio correctly 1`] = `
 }
 
 .c4 {
-  font-family: ReithSerif,Helvetica,Arial,sans-serif;
-  font-weight: 500;
-  font-style: normal;
-  font-size: 0.9375rem;
-  line-height: 1.25rem;
   color: #222222;
   margin: 0;
   padding: 0.5rem;
+  font-size: 0.9375rem;
+  line-height: 1.25rem;
+  font-family: ReithSerif,Helvetica,Arial,sans-serif;
+  font-weight: 500;
+  font-style: normal;
 }
 
 .c7 {
@@ -137,11 +137,11 @@ exports[`Bulletin should render audio correctly 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
+  font-size: 0.9375rem;
+  line-height: 1.25rem;
   font-family: ReithSans,Helvetica,Arial,sans-serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 0.9375rem;
-  line-height: 1.25rem;
 }
 
 @media (min-width:37.5rem) and (max-width:62.9375rem) {
@@ -416,14 +416,14 @@ exports[`Bulletin should render live audio correctly 1`] = `
 }
 
 .c4 {
-  font-family: ReithSerif,Helvetica,Arial,sans-serif;
-  font-weight: 500;
-  font-style: normal;
-  font-size: 0.9375rem;
-  line-height: 1.25rem;
   color: #222222;
   margin: 0;
   padding: 0.5rem;
+  font-size: 0.9375rem;
+  line-height: 1.25rem;
+  font-family: ReithSerif,Helvetica,Arial,sans-serif;
+  font-weight: 500;
+  font-style: normal;
 }
 
 .c8 {
@@ -474,11 +474,11 @@ exports[`Bulletin should render live audio correctly 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
+  font-size: 0.9375rem;
+  line-height: 1.25rem;
   font-family: ReithSans,Helvetica,Arial,sans-serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 0.9375rem;
-  line-height: 1.25rem;
 }
 
 @media (min-width:37.5rem) and (max-width:62.9375rem) {
@@ -759,14 +759,14 @@ exports[`Bulletin should render live video correctly 1`] = `
 }
 
 .c4 {
-  font-family: ReithSerif,Helvetica,Arial,sans-serif;
-  font-weight: 500;
-  font-style: normal;
-  font-size: 0.9375rem;
-  line-height: 1.25rem;
   color: #222222;
   margin: 0;
   padding: 0.5rem;
+  font-size: 0.9375rem;
+  line-height: 1.25rem;
+  font-family: ReithSerif,Helvetica,Arial,sans-serif;
+  font-weight: 500;
+  font-style: normal;
 }
 
 .c8 {
@@ -817,11 +817,11 @@ exports[`Bulletin should render live video correctly 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
+  font-size: 0.9375rem;
+  line-height: 1.25rem;
   font-family: ReithSans,Helvetica,Arial,sans-serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 0.9375rem;
-  line-height: 1.25rem;
 }
 
 @media (min-width:37.5rem) {
@@ -1094,14 +1094,14 @@ exports[`Bulletin should render video correctly 1`] = `
 }
 
 .c4 {
-  font-family: ReithSerif,Helvetica,Arial,sans-serif;
-  font-weight: 500;
-  font-style: normal;
-  font-size: 0.9375rem;
-  line-height: 1.25rem;
   color: #222222;
   margin: 0;
   padding: 0.5rem;
+  font-size: 0.9375rem;
+  line-height: 1.25rem;
+  font-family: ReithSerif,Helvetica,Arial,sans-serif;
+  font-weight: 500;
+  font-style: normal;
 }
 
 .c7 {
@@ -1152,11 +1152,11 @@ exports[`Bulletin should render video correctly 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
+  font-size: 0.9375rem;
+  line-height: 1.25rem;
   font-family: ReithSans,Helvetica,Arial,sans-serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 0.9375rem;
-  line-height: 1.25rem;
 }
 
 @media (min-width:37.5rem) {

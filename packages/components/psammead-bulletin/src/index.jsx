@@ -58,11 +58,11 @@ const headlineTypography = script => {
 };
 
 const headingStyles = css`
-  ${({ service }) => service && getSerifMedium(service)}
-  ${({ script }) => script && getPica(script)}
   color: ${C_EBON};
   margin: 0; /* Reset */
   padding: ${GEL_SPACING};
+  ${({ script }) => script && getPica(script)}
+  ${({ service }) => service && getSerifMedium(service)}
   @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
     ${({ script }) => script && headlineTypography(script)}
   }
@@ -171,8 +171,8 @@ const PlayCTA = styled.div.attrs({ 'aria-hidden': true })`
   display: flex;
   align-items: center;
   justify-content: center;
-  ${({ service }) => service && getSansRegular(service)};
   ${({ script }) => script && getPica(script)};
+  ${({ service }) => service && getSansRegular(service)};
   ${({ bulletinType }) => playCtaStyles[bulletinType]}
 `;
 
