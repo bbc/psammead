@@ -42,8 +42,16 @@ ${({ displayImage }) => !displayImage && `grid-column: 1 / span 6;`}
 
 const TextGridColumnsLeadingStory = css`
   width: 100%;
-  grid-template-columns: repeat(2, 1fr);
-  grid-column-end: span 2;
+  grid-template-columns: repeat(6, 1fr);
+  grid-column-end: span 6;
+  @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-end: span 3;
+  }
+  @media (min-width: ${GEL_GROUP_4_SCREEN_WIDTH_MIN}) {
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-end: span 2;
+  }
 `;
 
 const TextGridFallbackTopStory = css`
@@ -77,7 +85,13 @@ const TextGridFallback = css`
 `;
 
 const TextGridFallBackLeadingStory = css`
-  width: ${twoOfSixColumnsMaxWidthScaleable};
+  width: ${fullWidthColumnsMaxScaleable};
+  @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
+    width: ${halfWidthColumnsMaxScaleable};
+  }
+  @media (min-width: ${GEL_GROUP_4_SCREEN_WIDTH_MIN}) {
+    width: ${twoOfSixColumnsMaxWidthScaleable};
+  }
 `;
 
 const textGridFallbackStyles = {
