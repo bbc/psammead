@@ -44,26 +44,33 @@ storiesOf('Components|MediaIndicator/Video', module)
   .add(
     'top story video with duration',
     ({ service }) => (
-      <MediaIndicator
-        duration={text('duration', '2:15')}
-        datetime={text('datetime', 'PT2M15S')}
-        type="video"
-        topStory
-        service={service}
-      />
+      <>
+        <MediaIndicator
+          duration={text('duration', '2:15')}
+          datetime={text('datetime', 'PT2M15S')}
+          type="video"
+          topStory
+          service={service}
+        />
+        asdsadsadasd
+      </>
     ),
     { notes },
   )
   .add(
-    'top story video with duration',
-    ({ service }) => (
-      <InlineMediaIndicator
-        duration={text('duration', '2:15')}
-        datetime={text('datetime', 'PT2M15S')}
-        type="video"
-        topStory
-        service={service}
-      />
+    'inline media indicator',
+    ({ service, dir }) => (
+      <>
+        <InlineMediaIndicator
+          duration={text('duration', '2:15')}
+          datetime={text('datetime', 'PT2M15S')}
+          type="video"
+          topStory
+          service={service}
+          dir={dir}
+        />
+        dasdasdasdasdasdas
+      </>
     ),
     { notes },
   );
