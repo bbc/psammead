@@ -39,21 +39,24 @@ ClockIcon.defaultProps = {
   dir: 'ltr',
 };
 
-const HorizontalLine = styled.div`
-  border-top: 0.0625rem solid ${C_PEBBLE};
-  width: 100vw;
-
-  ${({ dir }) =>
-    dir === 'ltr' ? `margin-left: 0.625rem;` : `margin-right: 0.625rem;`}
-    
-  top: ${({ script }) => 0.5 + script.minion.groupA.lineHeight / 2 / 16}rem;
-`;
-
 const StyledTimestamp = styled.span`
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+
   > time {
     color: ${C_RHINO};
     ${({ script }) => script && getMinion(script)}
     ${({ service }) => service && getSansRegular(service)}
+  }
+
+  &::after {
+    content: '';
+    border-top: 0.0625rem solid ${C_PEBBLE};
+    top: ${({ script }) => 0.5 + script.minion.groupA.lineHeight / 2 / 16}rem;
+    ${({ dir }) =>
+      dir === 'ltr' ? `margin-left: 0.625rem;` : `margin-right: 0.625rem;`}
+    width: 100vw;
   }
 `;
 
@@ -63,9 +66,15 @@ export const StartTimestamp = ({
   locale,
   script,
   service,
+  dir,
 }) => {
   return (
-    <StyledTimestamp script={script} service={service} aria-hidden="true">
+    <StyledTimestamp
+      script={script}
+      service={service}
+      dir={dir}
+      aria-hidden="true"
+    >
       <TimestampContainer
         timestamp={timestamp}
         dateTimeFormat="YYYY-MM-DD"
@@ -87,11 +96,13 @@ StartTimestamp.propTypes = {
   locale: string,
   script: shape(scriptPropType).isRequired,
   service: string.isRequired,
+  dir: oneOf(['ltr', 'rtl']),
 };
 
 StartTimestamp.defaultProps = {
   timezone: 'Europe/London',
   locale: 'en-gb',
+  dir: 'ltr',
 };
 
 const StartTime = ({ timestamp, timezone, locale, script, service, dir }) => {
@@ -104,8 +115,8 @@ const StartTime = ({ timestamp, timezone, locale, script, service, dir }) => {
         locale={locale}
         script={script}
         service={service}
+        dir={dir}
       />
-      <HorizontalLine dir={dir} script={script} />
     </Wrapper>
   );
 };
