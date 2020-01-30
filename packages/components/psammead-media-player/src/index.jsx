@@ -51,7 +51,15 @@ export const CanonicalMediaPlayer = ({
           noJsMessage={noJsMessage}
         />
       ) : (
-        <Canonical src={src} title={title} placeholderSrc={placeholderSrc} />
+        <Canonical
+          src={src}
+          placeholderSrcset={placeholderSrcset}
+          showPlaceholder={showPlaceholder}
+          title={title}
+          placeholderSrc={placeholderSrc}
+          service={service}
+          noJsMessage={noJsMessage}
+        />
       )}
     </StyledContainer>
   );
@@ -64,6 +72,8 @@ export const AmpMediaPlayer = ({
   src,
   title,
   skin,
+  noJsMessage,
+  service,
 }) => {
   const StyledContainer =
     skin === 'audio' ? StyledAudioContainer : StyledVideoContainer;
@@ -77,6 +87,8 @@ export const AmpMediaPlayer = ({
         title={title}
         height={portrait ? 9 : 16}
         width={portrait ? 16 : 9}
+        noJsMessage={noJsMessage}
+        service={service}
       />
     </StyledContainer>
   );
@@ -119,6 +131,8 @@ AmpMediaPlayer.propTypes = {
   src: string.isRequired,
   title: string.isRequired,
   skin: oneOf(['classic', 'audio']),
+  noJsMessage: string.isRequired,
+  service: string.isRequired,
 };
 
 AmpMediaPlayer.defaultProps = {
