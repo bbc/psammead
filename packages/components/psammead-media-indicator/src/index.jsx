@@ -25,7 +25,7 @@ const MediaIndicatorWrapper = styled.div`
     isInline &&
     css`
       display: inline-block;
-    `};
+    `}
 
   ${({ topStory }) =>
     !topStory &&
