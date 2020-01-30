@@ -32,7 +32,7 @@ const textGridFallbackRadio = css`
 const textGridFallbackTv = css`
   @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
     ${({ fullWidth }) =>
-      !fullWidth && `width: ${halfWidthColumnsMaxScaleable}`};
+      !fullWidth && `width: ${halfWidthColumnsMaxScaleable};`}
     ${paddingStyles}
   }
 `;
