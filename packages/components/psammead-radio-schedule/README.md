@@ -63,7 +63,7 @@ import ProgramCard from '@bbc/psammead-radio-schedule/ProgramCard';
 
 ### When to use this component
 
-This component is to be used on the `radio` pages.
+This component is to be used initially on the `front pages`, and media pages.
 
 ### When not to use this component
 
