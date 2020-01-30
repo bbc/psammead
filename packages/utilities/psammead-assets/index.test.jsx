@@ -37,6 +37,7 @@ const svgsExpectedExports = {
   japanese: 'object',
   korean: 'object',
   kyrgyz: 'object',
+  learningenglish: 'object',
   marathi: 'object',
   mundo: 'object',
   naidheachdan: 'object',

@@ -1,7 +1,7 @@
 import React from 'react';
 import { shape, string, oneOf, node } from 'prop-types';
 import styled from 'styled-components';
-import { getDoublePica } from '@bbc/gel-foundations/typography';
+import { getPica, getGreatPrimer } from '@bbc/gel-foundations/typography';
 import { C_EBON } from '@bbc/psammead-styles/colours';
 import { scriptPropType } from '@bbc/gel-foundations/prop-types';
 import { grid } from '@bbc/psammead-styles/detection';
@@ -11,6 +11,7 @@ import {
   GEL_SPACING_DBL,
   GEL_SPACING_TRPL,
 } from '@bbc/gel-foundations/spacings';
+import { GEL_GROUP_2_SCREEN_WIDTH_MIN } from '@bbc/gel-foundations/breakpoints';
 import Grid from '@bbc/psammead-grid';
 import {
   mostReadListGridProps,
@@ -24,7 +25,7 @@ const paddingStart = ({ dir }) => `padding-${dir === 'ltr' ? 'left' : 'right'}`;
 const paddingEnd = ({ dir }) => `padding-${dir === 'ltr' ? 'right' : 'left'}`;
 
 const StyledLink = styled.a`
-  ${({ script }) => script && getDoublePica(script)};
+  ${({ script }) => script && getPica(script)};
   ${({ service }) => getSerifMedium(service)};
 
   position: static;
@@ -47,6 +48,10 @@ const StyledLink = styled.a`
     top: 0;
     white-space: nowrap;
     z-index: 1;
+  }
+
+  @media (min-width: ${GEL_GROUP_2_SCREEN_WIDTH_MIN}) {
+    ${({ script }) => script && getGreatPrimer(script)};
   }
 `;
 

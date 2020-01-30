@@ -46,7 +46,6 @@ exports[`StoryPromo list should render correctly 1`] = `
 }
 
 .c1 {
-  border-bottom: 0.0625rem solid #F2F2F2;
   padding: 0.5rem 0 1rem;
 }
 
@@ -157,6 +156,12 @@ exports[`StoryPromo list should render correctly 1`] = `
   .c7 {
     display: none;
     visibility: hidden;
+  }
+}
+
+@media (max-width:62.9375rem) {
+  .c1 {
+    border-bottom: 0.0625rem solid #F2F2F2;
   }
 }
 
