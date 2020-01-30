@@ -3,7 +3,8 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
-| 2.0.66 | [PR#2582](https://github.com/bbc/psammead/pull/2582) Creating a new Content Anchor component and adding a dev dependency |
+| 2.0.67 | [PR#2582](https://github.com/bbc/psammead/pull/2582) Creating a new Content Anchor component and adding a dev dependency |
+| 2.0.66 | [PR#3025](https://github.com/bbc/psammead/pull/3025) Dependency updates |
 | 2.0.65 | [PR#3030](https://github.com/bbc/psammead/pull/3030) Talos - Bump Dependencies - @bbc/psammead-assets, @bbc/psammead-styles |
 | 2.0.64 | [PR#3000](https://github.com/bbc/psammead/pull/3000) Talos - Bump Dependencies - @bbc/psammead-brand |
 | 2.0.63 | [PR#2997](https://github.com/bbc/psammead/pull/2997) Talos - Bump Dependencies - @bbc/psammead-brand, @bbc/psammead-image-placeholder, @bbc/psammead-media-indicator |
