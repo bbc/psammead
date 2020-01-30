@@ -559,3 +559,159 @@ exports[`MediaIndicator should render video indicator correctly 1`] = `
   </div>
 </div>
 `;
+
+exports[`MediaIndicator should render video indicator correctly when inline 1`] = `
+.c2 {
+  vertical-align: middle;
+  margin: 0 0.25rem;
+  color: #222222;
+  fill: currentColor;
+  width: 0.75rem;
+  height: 0.75rem;
+}
+
+.c0 {
+  padding: 0.5rem 0.25rem;
+  background-color: #FFFFFF;
+  display: block;
+  font-family: ReithSans,Helvetica,Arial,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  color: #222222;
+  height: 2rem;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 100%;
+}
+
+.c3 {
+  vertical-align: middle;
+  margin: 0 0.25rem;
+}
+
+@media (max-width:24.9375rem) {
+  .c0 {
+    height: 1.25rem;
+    padding: 0.25rem 0.25rem 0;
+  }
+}
+
+<div
+  aria-hidden="true"
+  class="c0"
+>
+  <div
+    class="c1"
+  >
+    <svg
+      aria-hidden="true"
+      class="c2"
+      focusable="false"
+      height="12px"
+      viewBox="0 0 32 32"
+      width="12px"
+    >
+      <polygon
+        points="3,32 29,16 3,0"
+      />
+    </svg>
+    <time
+      class="c3"
+      datetime="PT2M15S"
+    >
+      2:15
+    </time>
+  </div>
+</div>
+`;
+
+exports[`MediaIndicator should render video indicator correctly when inline on RTL 1`] = `
+.c2 {
+  vertical-align: middle;
+  margin: 0 0.25rem;
+  color: #222222;
+  fill: currentColor;
+  width: 0.75rem;
+  height: 0.75rem;
+}
+
+.c0 {
+  padding: 0.5rem 0.25rem;
+  background-color: #FFFFFF;
+  display: block;
+  font-family: "BBC Nassim Persian",Arial,Verdana,Geneva,Helvetica,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  color: #222222;
+  height: 2rem;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 100%;
+}
+
+.c3 {
+  vertical-align: middle;
+  margin: 0 0.25rem;
+}
+
+@media (max-width:24.9375rem) {
+  .c0 {
+    height: 1.25rem;
+    padding: 0.25rem 0.25rem 0;
+  }
+}
+
+<div
+  aria-hidden="true"
+  class="c0"
+>
+  <div
+    class="c1"
+  >
+    <svg
+      aria-hidden="true"
+      class="c2"
+      focusable="false"
+      height="12px"
+      viewBox="0 0 32 32"
+      width="12px"
+    >
+      <polygon
+        points="3,32 29,16 3,0"
+      />
+    </svg>
+    <time
+      class="c3"
+      datetime="PT2M15S"
+    >
+      2:15
+    </time>
+  </div>
+</div>
+`;

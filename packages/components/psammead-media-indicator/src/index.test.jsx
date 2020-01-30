@@ -24,6 +24,28 @@ describe('MediaIndicator', () => {
   );
 
   shouldMatchSnapshot(
+    'should render video indicator correctly when inline',
+    <MediaIndicator
+      duration="2:15"
+      datetime="PT2M15S"
+      type="video"
+      service="news"
+      isInline
+    />,
+  );
+
+  shouldMatchSnapshot(
+    'should render video indicator correctly when inline on RTL',
+    <MediaIndicator
+      duration="2:15"
+      datetime="PT2M15S"
+      type="video"
+      service="persian"
+      isInline
+    />,
+  );
+
+  shouldMatchSnapshot(
     'should render video correctly without duration details',
     <MediaIndicator type="video" service="news" />,
   );
