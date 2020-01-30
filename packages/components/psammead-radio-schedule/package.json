@@ -21,5 +21,13 @@
   "dependencies": {},
   "peerDependencies": {
     "react": "^16.12.0"
+  },
+  "keywords": [
+    "bbc",
+    "radio",
+    "schedule"
+  ],
+  "publishConfig": {
+    "tag": "alpha"
   }
 }
