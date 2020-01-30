@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 1.0.2 | [PR#3033](https://github.com/bbc/psammead/pull/3033) Talos - Bump Dependencies - @bbc/psammead-grid, @bbc/psammead-section-label |
 | 1.0.1 | [PR#3030](https://github.com/bbc/psammead/pull/3030) Talos - Bump Dependencies - @bbc/psammead-styles |
 | 1.0.0 | [PR#3021](https://github.com/bbc/psammead/pull/3021) Bring MostRead out of alpha |
 | 0.5.2-alpha.7 | [PR#3016](https://github.com/bbc/psammead/pull/3016) Update typography on headline links in MostRead |
