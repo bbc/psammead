@@ -109,6 +109,9 @@ const textGridStyles = {
   leading: TextGridColumnsLeadingStory,
 };
 
+// This applies 8px padding only to the timestamp.
+// The headline already has padding so targeting the timestamp prevents double padding
+// from being applied.
 const leadingPromoTimestampPadding = `
   >time {
     @media (max-width: ${GEL_GROUP_3_SCREEN_WIDTH_MAX}) {
