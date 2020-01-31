@@ -8,6 +8,10 @@ This component is currently tagged as alpha and is not suitable for production u
 
 The `RadioSchedule` component is designed to display radio schedule programs in their different states. Currently, the component comprises of a `ProgramCard` which is comprised of a link to the radio-schedule, a state label, brand and episode titles, a summary, and a duration.
 
+## Exports
+
+`/startTime` - Adds a starting time of the program with a clock icon, timestamp and horizontal line.
+
 ## Installation
 
 ```jsx
@@ -59,6 +63,37 @@ import ProgramCard from '@bbc/psammead-radio-schedule/ProgramCard';
   stateLabel="Live"
   link="https://bbc.com/arabic/articles/c1er5mjnznzo"
 />;
+```
+
+## StartTime
+
+### Props
+
+<!-- prettier-ignore -->
+| Argument  | Type | Required | Default | Example |
+| --------- | ---- | -------- | ------- | ------- |
+| timestamp | number | yes   | N/A | `1530947227000` |
+| timezone | string | no | `'Europe/London'` | `'Europe/Vienna'` |
+| locale | string | no | `'en-gb'` | `'fa'` |
+| script | object | yes | N/A | `{ canon: { groupA: { fontSize: '28', lineHeight: '32',}, groupB: { fontSize: '32', lineHeight: '36', }, groupD: { fontSize: '44', lineHeight: '48', }, }, trafalgar: { groupA: { fontSize: '20', lineHeight: '24', }, groupB: { fontSize: '24', lineHeight: '28', }, groupD: { fontSize: '32', lineHeight: '36', }, }, }` |
+| service | string | yes | N/A | `news` |
+| dir | string | no | `'ltr'` | `'rtl'` |
+
+### Usage
+
+```jsx
+import React from 'react';
+import StartTime from '@bbc/psammead-radio-schedule/startTime';
+import { latin } from '@bbc/gel-foundations/scripts';
+
+<StartTime
+      script={latin}
+      service="news"
+      timestamp={1566914061212}
+      timezone="Europe/London"
+      locale="en-gb"
+      dir="ltr"
+    />
 ```
 
 ### When to use this component

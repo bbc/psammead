@@ -1,8 +1,12 @@
+import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { withKnobs } from '@storybook/addon-knobs';
 import { withServicesKnob } from '@bbc/psammead-storybook-helpers';
 import { renderProgramCard, sentenceCase } from './testHelpers/helper';
 import notes from '../README.md';
+import StartTime from './StartTime';
+
+const storiesUnixTimestamp = 1566914061212;
 
 const newsServiceDecorator = withServicesKnob({
   defaultService: 'news',
@@ -59,3 +63,23 @@ stories.add(
     ),
   { notes },
 );
+
+storiesOf('Components|RadioSchedule/StartTime', module)
+  .addDecorator(withKnobs)
+  .addDecorator(withServicesKnob())
+  .add(
+    'default',
+    ({ locale, script, service, dir }) => {
+      return (
+        <StartTime
+          timestamp={storiesUnixTimestamp}
+          timezone="Europe/London"
+          locale={locale}
+          script={script}
+          service={service}
+          dir={dir}
+        />
+      );
+    },
+    { notes },
+  );
