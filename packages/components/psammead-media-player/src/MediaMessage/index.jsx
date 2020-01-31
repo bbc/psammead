@@ -34,7 +34,7 @@ const MessageWrapper = styled.div`
   }
 `;
 
-const NoJSMessage = styled.strong`
+const Message = styled.strong`
   display: block;
   font-weight: normal;
   bottom: 0;
@@ -49,34 +49,32 @@ const NoJSMessage = styled.strong`
   }
 `;
 
-const NoJSMediaMessage = ({
+const MediaMessage = ({
   service,
   noJsMessage,
   placeholderSrc,
   placeholderSrcset,
 }) => (
-  <noscript>
-    <StyledWrapper>
-      {placeholderSrc && (
-        <Image alt="" src={placeholderSrc} srcset={placeholderSrcset} />
-      )}
-      <MessageWrapper service={service}>
-        <NoJSMessage>{noJsMessage}</NoJSMessage>
-      </MessageWrapper>
-    </StyledWrapper>
-  </noscript>
+  <StyledWrapper>
+    {placeholderSrc && (
+      <Image alt="" src={placeholderSrc} srcset={placeholderSrcset} />
+    )}
+    <MessageWrapper service={service}>
+      <Message>{noJsMessage}</Message>
+    </MessageWrapper>
+  </StyledWrapper>
 );
 
-NoJSMediaMessage.propTypes = {
+MediaMessage.propTypes = {
   service: string.isRequired,
   noJsMessage: string.isRequired,
   placeholderSrcset: string,
   placeholderSrc: string,
 };
 
-NoJSMediaMessage.defaultProps = {
+MediaMessage.defaultProps = {
   placeholderSrcset: '',
   placeholderSrc: '',
 };
 
-export default NoJSMediaMessage;
+export default MediaMessage;

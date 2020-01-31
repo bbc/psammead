@@ -2,7 +2,7 @@ import React from 'react';
 import { string, number } from 'prop-types';
 import Helmet from 'react-helmet';
 import { AmpImg } from '@bbc/psammead-image';
-import NoJSMediaMessage from '../NoJSMediaMessage';
+import MediaMessage from '../MediaMessage';
 
 const AmpHead = () => (
   <Helmet>
@@ -45,12 +45,14 @@ const AmpMediaPlayer = ({
           height={height}
           width={width}
         />
-        <NoJSMediaMessage
-          service={service}
-          noJsMessage={noJsMessage}
-          placeholderSrc={placeholderSrc}
-          placeholderSrcset={placeholderSrcset}
-        />
+        <noscript>
+          <MediaMessage
+            service={service}
+            noJsMessage={noJsMessage}
+            placeholderSrc={placeholderSrc}
+            placeholderSrcset={placeholderSrcset}
+          />
+        </noscript>
       </amp-iframe>
     </>
   );

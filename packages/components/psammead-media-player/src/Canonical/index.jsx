@@ -1,7 +1,7 @@
 import React from 'react';
 import { string, bool } from 'prop-types';
 import styled from 'styled-components';
-import NoJSMediaMessage from '../NoJSMediaMessage';
+import MediaMessage from '../MediaMessage';
 
 const Canonical = ({
   src,
@@ -39,12 +39,14 @@ const Canonical = ({
         gesture="media"
         allowFullScreen
       />
-      <NoJSMediaMessage
-        service={service}
-        noJsMessage={noJsMessage}
-        placeholderSrc={placeholderSrc}
-        placeholderSrcset={placeholderSrcset}
-      />
+      <noscript>
+        <MediaMessage
+          service={service}
+          noJsMessage={noJsMessage}
+          placeholderSrc={placeholderSrc}
+          placeholderSrcset={placeholderSrcset}
+        />
+      </noscript>
     </>
   );
 };
