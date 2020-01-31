@@ -57,7 +57,12 @@ const MediaMessage = ({
 }) => (
   <StyledWrapper>
     {placeholderSrc && (
-      <Image alt="" src={placeholderSrc} srcset={placeholderSrcset} />
+      <Image
+        alt=""
+        src={placeholderSrc}
+        srcset={placeholderSrcset}
+        aria-hidden="true"
+      />
     )}
     <MessageWrapper service={service}>
       <Message>{noJsMessage}</Message>
