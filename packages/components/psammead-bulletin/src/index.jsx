@@ -1,6 +1,9 @@
 import React from 'react';
 import styled, { css } from 'styled-components';
-import { GEL_GROUP_3_SCREEN_WIDTH_MIN } from '@bbc/gel-foundations/breakpoints';
+import {
+  GEL_GROUP_3_SCREEN_WIDTH_MIN,
+  GEL_GROUP_3_SCREEN_WIDTH_MAX,
+} from '@bbc/gel-foundations/breakpoints';
 import { GEL_SPACING, GEL_SPACING_DBL } from '@bbc/gel-foundations/spacings';
 import {
   C_WHITE,
@@ -15,22 +18,16 @@ import {
   getSerifMedium,
 } from '@bbc/psammead-styles/font-styles';
 import { scriptPropType } from '@bbc/gel-foundations/prop-types';
-import { getPica, getLongPrimer } from '@bbc/gel-foundations/typography';
+import {
+  getPica,
+  getGreatPrimer,
+  getLongPrimer,
+} from '@bbc/gel-foundations/typography';
 import { mediaIcons } from '@bbc/psammead-assets/svgs';
 import VisuallyHiddenText from '@bbc/psammead-visually-hidden-text';
 import { Link, LiveLabel } from '@bbc/psammead-story-promo';
-import { grid } from '@bbc/psammead-styles/detection';
-
-const twoOfSixColumnsMaxWidthScaleable = `33.33%`;
-// (2 / 6) * 100 = 0.3333333333 = 33.33%
-
-const fourOfSixColumnsMaxWidthScaleable = `66.67%`;
-// (4 / 6) * 100 = 66.6666666667 = 66.67%
-
-const fullWidthColumnsMaxScaleable = `100%`;
-// (12 / 12) * 100 = 100 = 100%
-
-const halfWidthColumnsMaxScaleable = `50%`;
+import ImageGridItem from './ImageStyles';
+import TextGridItem from './TextStyles';
 
 const bulletinWrapperStyles = `
   position: relative;
@@ -40,24 +37,9 @@ const bulletinWrapperStyles = `
   grid-column-gap: ${GEL_SPACING_DBL};
 `;
 
-const imageWrapperStyles = `
-  vertical-align: top;
-  display: inline-block;
-  grid-column: 1 / span 6;
-  padding: ${GEL_SPACING} ${GEL_SPACING} 0 ${GEL_SPACING};
-  @supports (${grid}) {
-    width: initial;
-  }
-`;
-
-const textWrapperStyles = `
-  grid-column: 1 / span 6;
-  display: inline-block;
-  width: ${fullWidthColumnsMaxScaleable};
-  @supports (${grid}) {
-    width: initial;
-    padding: 0;
-  }
+const RadioBulletinWrapper = styled.div`
+  ${bulletinWrapperStyles};
+  background-color: ${C_LUNAR};
 `;
 
 const TVBulletinWrapper = styled.div`
@@ -67,52 +49,72 @@ const TVBulletinWrapper = styled.div`
   }
 `;
 
-const TVImageWrapper = styled.div`
-  @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
-    grid-column: 1 / span 3;
-    width: ${halfWidthColumnsMaxScaleable};
-    padding: 0;
-  }
-  ${imageWrapperStyles};
+const headingStyles = css`
+  color: ${C_EBON};
+  margin: 0; /* Reset */
+  padding: ${GEL_SPACING};
+  ${({ service }) => service && getSerifMedium(service)}
 `;
 
-const TVTextWrapper = styled.div`
+const radioHeading = css`
+  ${({ script }) => script && getPica(script)}
+  @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) and (max-width: ${GEL_GROUP_3_SCREEN_WIDTH_MAX}) {
+    padding-top: ${GEL_SPACING};
+    padding-bottom: ${GEL_SPACING};
+    ${({ dir }) => (dir === 'ltr' ? `padding-left: 0;` : `padding-right: 0;`)}
+  }
+`;
+
+const tvHeading = css`
+  ${({ script }) => script && getGreatPrimer(script)}
   @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
-    grid-column: 4 / span 3;
-    width: ${halfWidthColumnsMaxScaleable};
-    ${({ dir }) =>
+    padding: 0 0 ${GEL_SPACING} 0;
+  }
+`;
+
+const bulletinHeadinStyles = {
+  radio: radioHeading,
+  tv: tvHeading,
+};
+
+const BulletinHeading = styled.h3`
+  ${headingStyles}
+  ${({ bulletinType }) => bulletinHeadinStyles[bulletinType]}
+`;
+
+const radioSummary = css`
+  @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) and (max-width: ${GEL_GROUP_3_SCREEN_WIDTH_MAX}) {
+    ${({ dir }) => (dir === 'ltr' ? 'padding-left: 0;' : 'padding-right: 0;')}
+  }
+`;
+
+const tvSummary = css`
+  @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
+    ${({ dir, bulletinType }) =>
       dir === 'ltr'
-        ? `padding-left: ${GEL_SPACING_DBL};`
-        : `padding-right: ${GEL_SPACING_DBL};`}
+        ? css`
+            padding-left: 0;
+            ${bulletinType === 'tv' && 'padding-right: 0;'}
+          `
+        : css`
+            padding-right: 0;
+            ${bulletinType === 'tv' && 'padding-left: 0;'}
+          `}
   }
-
-  ${textWrapperStyles};
 `;
 
-const RadioBulletinWrapper = styled.div`
-  ${bulletinWrapperStyles};
-  background-color: ${C_LUNAR};
-`;
+const bulletinSummaryStyles = {
+  radio: radioSummary,
+  tv: tvSummary,
+};
 
-const RadioImageWrapper = styled.div`
-  @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
-    grid-column: 1 / span 2;
-    width: ${twoOfSixColumnsMaxWidthScaleable};
-    padding: 0;
-  }
-  ${imageWrapperStyles};
-`;
-
-const RadioTextWrapper = styled.div`
-  @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
-    grid-column: 3 / span 4;
-    width: ${fourOfSixColumnsMaxWidthScaleable};
-    ${({ dir }) =>
-      dir === 'ltr'
-        ? `padding-left: ${GEL_SPACING_DBL};`
-        : `padding-right: ${GEL_SPACING_DBL};`}
-  }
-  ${textWrapperStyles};
+const BulletinSummary = styled.p`
+  color: ${C_SHADOW};
+  margin: 0; /* Reset */
+  padding: 0 ${GEL_SPACING} ${GEL_SPACING_DBL};
+  ${({ script }) => script && getLongPrimer(script)}
+  ${({ service }) => service && getSansRegular(service)} 
+  ${({ bulletinType }) => bulletinSummaryStyles[bulletinType]}
 `;
 
 const IconWrapper = styled.span`
@@ -131,9 +133,27 @@ const IconWrapper = styled.span`
       : `padding-left: ${GEL_SPACING};`}
 `;
 
+const radioPlayCta = css`
+  @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) and (max-width: ${GEL_GROUP_3_SCREEN_WIDTH_MAX}) {
+    display: inline-flex;
+    padding: ${GEL_SPACING} ${GEL_SPACING_DBL};
+    margin-bottom: ${GEL_SPACING_DBL};
+  }
+`;
+
+const tvPlayCta = css`
+  @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
+    display: inline-flex;
+    padding: ${GEL_SPACING} ${GEL_SPACING_DBL};
+  }
+`;
+
+const playCtaStyles = {
+  radio: radioPlayCta,
+  tv: tvPlayCta,
+};
+
 const PlayCTA = styled.div.attrs({ 'aria-hidden': true })`
-  ${({ service }) => service && getSansRegular(service)};
-  ${({ script }) => script && getPica(script)};
   background-color: ${({ isLive }) => (isLive ? C_POSTBOX : C_EBON)};
   border: 0.0625rem solid transparent;
   color: ${C_WHITE};
@@ -141,66 +161,9 @@ const PlayCTA = styled.div.attrs({ 'aria-hidden': true })`
   display: flex;
   align-items: center;
   justify-content: center;
-  @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
-    display: inline-flex;
-    padding: ${GEL_SPACING} ${GEL_SPACING_DBL};
-    ${({ isAudio }) => isAudio && `margin-bottom: ${GEL_SPACING_DBL};`}
-  }
-`;
-
-const BulletinSummary = styled.p`
-  ${({ script }) => script && getLongPrimer(script)}
-  ${({ service }) => service && getSansRegular(service)}
-  color: ${C_SHADOW};
-  margin: 0; /* Reset */
-  padding: 0 ${GEL_SPACING};
-  @media(min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
-    padding-left: 0;
-    padding-right: ${({ mediaType }) =>
-      mediaType === 'audio' ? `${GEL_SPACING}` : `0`};
-  }
-  padding-bottom: ${GEL_SPACING_DBL};
-`;
-
-// This is needed to get around the issue of IE11 not supporting
-// nested media queries
-const getHeadlineFontStyle = script => {
-  const fontSize = script.greatPrimer.groupD.fontSize / 16;
-  const lineHeight = script.greatPrimer.groupD.lineHeight / 16;
-
-  return css`
-    font-size: ${fontSize}rem;
-    line-height: ${lineHeight}rem;
-  `;
-};
-
-const headingStyles = css`
-  ${({ service }) => service && getSerifMedium(service)}
-  ${({ script }) => script && getPica(script)}
-
-  color: ${C_EBON};
-  margin: 0; /* Reset */
-  padding: ${GEL_SPACING};
-
-  @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
-    ${({ script }) => script && getHeadlineFontStyle(script)}
-  }
-`;
-
-const TVHeading = styled.h3`
-  ${headingStyles}
-  @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
-    padding: 0 0 ${GEL_SPACING} 0;
-  }
-`;
-
-const RadioHeading = styled.h3`
-  ${headingStyles}
-  @media(min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
-    padding-top: ${GEL_SPACING};
-    padding-bottom: ${GEL_SPACING};
-    ${({ dir }) => (dir === 'ltr' ? `padding-left: 0;` : `padding-right: 0;`)}
-  }
+  ${({ script }) => script && getPica(script)};
+  ${({ service }) => service && getSansRegular(service)};
+  ${({ bulletinType }) => playCtaStyles[bulletinType]}
 `;
 
 const Bulletin = ({
@@ -219,16 +182,21 @@ const Bulletin = ({
   offScreenText,
 }) => {
   const isAudio = mediaType === 'audio';
+  const bulletinType = isAudio ? 'radio' : 'tv';
   const BulletinWrapper = isAudio ? RadioBulletinWrapper : TVBulletinWrapper;
-  const ImageWrapper = isAudio ? RadioImageWrapper : TVImageWrapper;
-  const TextWrapper = isAudio ? RadioTextWrapper : TVTextWrapper;
-  const BulletinHeading = isAudio ? RadioHeading : TVHeading;
 
   return (
     <BulletinWrapper>
-      <ImageWrapper>{image}</ImageWrapper>
-      <TextWrapper dir={dir}>
-        <BulletinHeading script={script} service={service} dir={dir}>
+      {image && (
+        <ImageGridItem bulletinType={bulletinType}>{image}</ImageGridItem>
+      )}
+      <TextGridItem bulletinType={bulletinType} fullWidth={!image} dir={dir}>
+        <BulletinHeading
+          script={script}
+          service={service}
+          bulletinType={bulletinType}
+          dir={dir}
+        >
           <Link href={ctaLink}>
             {/* eslint-disable jsx-a11y/aria-role */}
             <span role="text">
@@ -247,7 +215,8 @@ const Bulletin = ({
         <BulletinSummary
           script={script}
           service={service}
-          mediaType={mediaType}
+          bulletinType={bulletinType}
+          dir={dir}
         >
           {summaryText}
         </BulletinSummary>
@@ -255,13 +224,13 @@ const Bulletin = ({
           isLive={isLive}
           service={service}
           script={script}
-          isAudio={isAudio}
+          bulletinType={bulletinType}
           dir={dir}
         >
           <IconWrapper dir={dir}>{mediaIcons[mediaType]}</IconWrapper>
           {ctaText}
         </PlayCTA>
-      </TextWrapper>
+      </TextGridItem>
     </BulletinWrapper>
   );
 };
