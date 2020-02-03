@@ -1,0 +1,38 @@
+{
+  "name": "@bbc/psammead-radio-schedule",
+  "version": "0.1.0-alpha.3",
+  "main": "dist/index.js",
+  "module": "esm/index.js",
+  "sideEffects": false,
+  "description": "Component package for radio schedule components",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/BBC-News/psammead/tree/latest/packages/components/psammead-radio-schedule"
+  },
+  "author": {
+    "name": "Psammead Maintainers",
+    "email": "PsammeadMaintainers@bbc.co.uk"
+  },
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/bbc/psammead/issues"
+  },
+  "homepage": "https://github.com/BBC-News/psammead/blob/latest/packages/components/psammead-radio-schedule/README.md",
+  "dependencies": {
+    "@bbc/gel-foundations": "^3.4.3",
+    "@bbc/psammead-styles": "^4.2.0",
+    "@bbc/psammead-assets": "^2.12.0",
+    "@bbc/psammead-timestamp-container": "^2.6.20"
+  },
+  "peerDependencies": {
+    "react": "^16.12.0"
+  },
+  "keywords": [
+    "bbc",
+    "radio",
+    "schedule"
+  ],
+  "publishConfig": {
+    "tag": "alpha"
+  }
+}
