@@ -3,7 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 | ------- | ----------- |
-| 3.0.0 | [PR#3029](https://github.com/bbc/psammead/pull/3029) Add prop for displaying media indicator inline |
+| 3.0.0 | [PR#3029](https://github.com/bbc/psammead/pull/3029) Add prop `isInline` for displaying media indicator inline. Remove boolean prop `indexAlsos` since it should be replaced with `isInline` |
 | 2.6.27 | [PR#3030](https://github.com/bbc/psammead/pull/3030) Talos - Bump Dependencies - @bbc/psammead-styles, @bbc/psammead-assets |
 | 2.6.26 | [PR#2996](https://github.com/bbc/psammead/pull/2996) Talos - Bump Dependencies - @bbc/psammead-assets |
 | 2.6.25 | [PR#2990](https://github.com/bbc/psammead/pull/2990) Use `GEL_SPACING_QUAD` in `MediaIndicatorWrapper` |
