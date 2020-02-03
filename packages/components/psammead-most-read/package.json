@@ -1,9 +1,6 @@
 {
   "name": "@bbc/psammead-most-read",
-  "version": "0.5.2-alpha.6",
-  "publishConfig": {
-    "tag": "alpha"
-  },
+  "version": "1.0.2",
   "description": "A component for the most read item",
   "main": "dist/index.js",
   "module": "esm/index.js",
@@ -27,9 +24,9 @@
   ],
   "dependencies": {
     "@bbc/gel-foundations": "^3.4.3",
-    "@bbc/psammead-grid": "^1.1.4",
-    "@bbc/psammead-section-label": "^3.0.12",
-    "@bbc/psammead-styles": "^4.2.0"
+    "@bbc/psammead-grid": "^1.1.5",
+    "@bbc/psammead-section-label": "^3.0.13",
+    "@bbc/psammead-styles": "^4.3.0"
   },
   "peerDependencies": {
     "styled-components": "^4.3.2"

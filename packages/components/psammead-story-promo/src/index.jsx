@@ -1,5 +1,5 @@
 import React from 'react';
-import styled, { css } from 'styled-components';
+import styled from 'styled-components';
 import { node, bool, string, oneOf, shape } from 'prop-types';
 import { GEL_SPACING, GEL_SPACING_DBL } from '@bbc/gel-foundations/spacings';
 import {
@@ -13,6 +13,7 @@ import {
 import {
   getParagon,
   getLongPrimer,
+  getPica,
   getDoublePica,
 } from '@bbc/gel-foundations/typography';
 import {
@@ -92,29 +93,10 @@ const InlineMediaIndicator = styled.div`
 `;
 
 const headlineTopStoryTypography = script => getParagon(script);
-const headlineLeadingStoryTypography = script => getDoublePica(script);
 
-// This is needed to get around the issue of IE11 not supporting
-// nested media queries (so not using getGreatPrimer() & getPica())
-const headlineRegularTypography = script => {
-  const fontSize = (type, group) => script[type][group].fontSize / 16;
-  const lineHeight = (type, group) => script[type][group].lineHeight / 16;
-  return css`
-    font-size: ${fontSize('pica', 'groupA')}rem;
-    line-height: ${lineHeight('pica', 'groupA')}rem;
-    @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
-      font-size: ${fontSize('greatPrimer', 'groupB')}rem;
-      line-height: ${lineHeight('greatPrimer', 'groupB')}rem;
-    }
-    ${({ promoHasImage }) =>
-      !promoHasImage &&
-      `
-      @media (min-width: ${GEL_GROUP_4_SCREEN_WIDTH_MIN}) {
-        font-size: ${fontSize('pica', 'groupD')}rem;
-        line-height: ${lineHeight('pica', 'groupD')}rem;
-      `}
-  `;
-};
+const headlineRegularTypography = script => getPica(script);
+
+const headlineLeadingStoryTypography = script => getDoublePica(script);
 
 const headlineTypography = script => ({
   top: headlineTopStoryTypography(script),
@@ -123,12 +105,11 @@ const headlineTypography = script => ({
 });
 
 export const Headline = styled.h3`
-  ${({ script, promoType }) => script && headlineTypography(script)[promoType]}
-  ${({ service }) => getSerifMedium(service)}
   color: ${C_EBON};
   margin: 0; /* Reset */
   padding-bottom: ${GEL_SPACING};
-  ${({ promoHasImage }) => !promoHasImage && `display: inline;`}
+  ${({ service }) => getSerifMedium(service)}
+  ${({ script, promoType }) => script && headlineTypography(script)[promoType]}
 `;
 
 Headline.propTypes = {

@@ -3,6 +3,9 @@
 <!-- prettier-ignore -->
 | Version | Description |
 | ------- | ----------- |
+| 5.1.11 | [PR#3033](https://github.com/bbc/psammead/pull/3033) Talos - Bump Dependencies - @bbc/psammead-script-link |
+| 5.1.10 | [PR#3030](https://github.com/bbc/psammead/pull/3030) Talos - Bump Dependencies - @bbc/psammead-styles |
+| 5.1.9 | [PR#2997](https://github.com/bbc/psammead/pull/2997) Talos - Bump Dependencies - @bbc/psammead-script-link |
 | 5.1.8 | [PR#2996](https://github.com/bbc/psammead/pull/2996) Talos - Bump Dependencies - @bbc/psammead-script-link |
 | 5.1.7 | [PR#2946](https://github.com/bbc/psammead/pull/2946) Move skip to content link top to stay within brand banner height |
 | 5.1.6 | [PR#2982](https://github.com/bbc/psammead/pull/2982) Talos - Bump Dependencies - @bbc/psammead-script-link |

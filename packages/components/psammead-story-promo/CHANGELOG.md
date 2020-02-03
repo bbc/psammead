@@ -3,6 +3,9 @@
 <!-- prettier-ignore -->
 | Version | Description |
 | ------- | ----------- |
+| 4.0.0-alpha.6 | [PR#3030](https://github.com/bbc/psammead/pull/3030) Talos - Bump Dependencies - @bbc/psammead-styles |
+| 4.0.0-alpha.5 | [PR#3026](https://github.com/bbc/psammead/pull/3026) Apply Pica to the regular story promo headline across all breakpoints |
+| 4.0.0-alpha.4 | [PR#3023](https://github.com/bbc/psammead/pull/3023) Refactor no image headline stylings |
 | 4.0.0-alpha.3 | [PR#2990](https://github.com/bbc/psammead/pull/2990) Use `GEL_SPACING` constant in the `LiveLabel` component |
 | 4.0.0-alpha.2 | [PR#2989](https://github.com/bbc/psammead/pull/2989) Update snapshot |
 | 4.0.0-alpha.1 | [PR#2937](https://github.com/bbc/psammead/pull/2937) Add promoType prop, remove topStory prop, integrate Leading promo and move Image and Text styles into a separate file |
