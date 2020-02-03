@@ -110,7 +110,7 @@
     "react-helmet": "^5.2.0",
     "react-test-renderer": "^16.12.0",
     "request": "^2.88.0",
-    "semver": "^7.1.1",
+    "semver": "^7.1.2",
     "shelljs": "^0.8.3",
     "storybook-chromatic": "^3.5.0",
     "storybook-readme": "^5.0.8",
