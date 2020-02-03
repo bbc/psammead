@@ -25,6 +25,6 @@
   ],
   "peerDependencies": {
     "react": "^16.9.0",
-    "styled-components": "^4.3.2"
+    "styled-components": "^5.0.0"
   }
 }

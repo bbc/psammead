@@ -26,7 +26,7 @@
   ],
   "peerDependencies": {
     "react": "^16.9.0",
-    "styled-components": "^4.3.2"
+    "styled-components": "^5.0.0"
   },
   "dependencies": {
     "@bbc/psammead-assets": "^2.13.0",
