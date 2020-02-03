@@ -10,7 +10,7 @@ describe('Media Player: Canonical', () => {
     <Canonical src="https://foo.bar/iframe" title="Media player" />,
   );
 
-  it('should contain the noscript tag for use in non-JS scenarios ', () => {
+  it('should contain the noscript tag for no-JS scenarios ', () => {
     render(
       <Canonical
         src="http://foo.bar/iframe/amp"
