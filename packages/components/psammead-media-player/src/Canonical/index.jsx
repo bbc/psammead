@@ -1,8 +1,17 @@
 import React from 'react';
-import { string } from 'prop-types';
+import { string, bool } from 'prop-types';
 import styled from 'styled-components';
+import MediaMessage from '../MediaMessage';
 
-const Canonical = ({ src, title, placeholderSrc }) => {
+const Canonical = ({
+  src,
+  placeholderSrcset,
+  title,
+  placeholderSrc,
+  service,
+  noJsMessage,
+  showPlaceholder,
+}) => {
   const backgroundStyle = `
     background-image: url(${placeholderSrc});
     background-repeat: no-repeat;
@@ -17,29 +26,44 @@ const Canonical = ({ src, title, placeholderSrc }) => {
     top: 0;
     width: 100%;
     height: 100%;
-    ${placeholderSrc ? backgroundStyle : null}
+    ${showPlaceholder ? backgroundStyle : null}
   `;
 
   return (
-    <StyledIframe
-      src={src}
-      title={title}
-      allow="autoplay; fullscreen"
-      scrolling="no"
-      gesture="media"
-      allowFullScreen
-    />
+    <>
+      <StyledIframe
+        src={src}
+        title={title}
+        allow="autoplay; fullscreen"
+        scrolling="no"
+        gesture="media"
+        allowFullScreen
+      />
+      <noscript>
+        <MediaMessage
+          service={service}
+          noJsMessage={noJsMessage}
+          placeholderSrc={placeholderSrc}
+          placeholderSrcset={placeholderSrcset}
+        />
+      </noscript>
+    </>
   );
 };
 
 Canonical.propTypes = {
   src: string.isRequired,
+  placeholderSrcset: string,
   title: string.isRequired,
   placeholderSrc: string,
+  service: string.isRequired,
+  noJsMessage: string.isRequired,
+  showPlaceholder: bool.isRequired,
 };
 
 Canonical.defaultProps = {
   placeholderSrc: null,
+  placeholderSrcset: '',
 };
 
 export default Canonical;

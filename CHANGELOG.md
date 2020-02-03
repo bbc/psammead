@@ -3,7 +3,8 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
-| 2.0.72 | [PR#2976](https://github.com/bbc/psammead/pull/2976) Upgrade to Styled Components v5 |
+| 2.0.73 | [PR#2976](https://github.com/bbc/psammead/pull/2976) Upgrade to Styled Components v5 |
+| 2.0.72 | [PR#3038](https://github.com/bbc/psammead/pull/3038) Refactor no-JS scenarios for @bbc/psammead-media-player, adding jest-dom |
 | 2.0.71 | [PR#3051](https://github.com/bbc/psammead/pull/3051) Bumping dependencies |
 | 2.0.70 | [PR#2988](https://github.com/bbc/psammead/pull/2988) Add @bbc/psammead-timestamp-container to dependencies |
 | 2.0.69 | [PR#3034](https://github.com/bbc/psammead/pull/3034) Talos - Bump Dependencies - @bbc/psammead-brand |
