@@ -30,7 +30,6 @@
     "jest-styled-components": "^7.0.0"
   },
   "devDependencies": {
-    "react-helmet": "^5.2.1",
-    "styled-components": "^5.0.0"
+    "react-helmet": "^5.2.1"
   }
 }
