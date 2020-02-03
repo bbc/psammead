@@ -11,14 +11,15 @@ The `MediaIndicator` component provides a 'play', 'audio' or 'camera' icon as we
 ## Props
 
 <!-- prettier-ignore -->
-| Argument   | Type    | Required | Default | Example   |
-| ---------- | ------- | -------- | ------- | --------- |
-| duration   | string  | No       | Null    | '2:15'    |
-| datetime   | string  | No       | Null    | 'PT2M15S' |
-| type       | string  | No       | 'video' | 'audio'   |
-| topStory   | boolean | No       | false   | true      |
-| service    | string  | Yes      | N/A     | `'news'`  |
-| isInline   | boolean | No       | false   | true      |
+| Argument   | Type    | Required | Default | Example      |
+| ---------- | ------- | -------- | ------- | ------------ |
+| duration   | string  | No       | Null    | '2:15'       |
+| datetime   | string  | No       | Null    | 'PT2M15S'    |
+| type       | string  | No       | 'video' | 'audio'      |
+| topStory   | boolean | No       | false   | true         |
+| service    | string  | Yes      | N/A     | `'news'`     |
+| isInline   | boolean | No       | false   | true         |
+| children   | node    | No       | null    | <IndexAlsos> |
 
 ### Supported `type`s
 

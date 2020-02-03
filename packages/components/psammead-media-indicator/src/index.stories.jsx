@@ -58,10 +58,7 @@ storiesOf('Components|MediaIndicator/Video', module)
     ({ service }) => (
       <>
         <MediaIndicator
-          duration={text('duration', '2:15')}
-          datetime={text('datetime', 'PT2M15S')}
           type="video"
-          topStory
           service={service}
           isInline={boolean('inline?', true)}
         />

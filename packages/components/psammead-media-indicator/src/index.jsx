@@ -1,6 +1,6 @@
 import React from 'react';
 import styled, { css } from 'styled-components';
-import { string, oneOf, bool } from 'prop-types';
+import { string, oneOf, bool, node } from 'prop-types';
 import { C_WHITE, C_EBON } from '@bbc/psammead-styles/colours';
 import {
   GEL_SPACING_HLF,
@@ -56,6 +56,7 @@ const MediaIndicator = ({
   topStory,
   service,
   isInline,
+  children,
 }) => (
   <MediaIndicatorWrapper
     aria-hidden="true"
@@ -65,9 +66,10 @@ const MediaIndicator = ({
   >
     <FlexWrapper>
       {mediaIcons[type]}
-      {duration && datetime && (
+      {duration && datetime && !isInline && (
         <TimeDuration dateTime={datetime}>{duration}</TimeDuration>
       )}
+      {children}
     </FlexWrapper>
   </MediaIndicatorWrapper>
 );
@@ -79,6 +81,7 @@ MediaIndicator.propTypes = {
   topStory: bool,
   service: string.isRequired,
   isInline: bool,
+  children: node,
 };
 
 MediaIndicator.defaultProps = {
@@ -87,6 +90,7 @@ MediaIndicator.defaultProps = {
   type: 'video',
   topStory: false,
   isInline: false,
+  children: null,
 };
 
 export default MediaIndicator;
