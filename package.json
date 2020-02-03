@@ -38,7 +38,7 @@
   "homepage": "https://github.com/bbc/psammead#readme",
   "dependencies": {
     "styled-components": "^4.4.1",
-    "styled-normalize": "^8.0.4"
+    "styled-normalize": "^8.0.7"
   },
   "devDependencies": {
     "@babel/cli": "^7.8.4",
