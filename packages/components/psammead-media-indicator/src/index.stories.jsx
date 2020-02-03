@@ -49,7 +49,7 @@ storiesOf('Components|MediaIndicator/Video', module)
     { notes },
   )
   .add(
-    'inline media indicator',
+    'inline video media indicator',
     ({ service }) => (
       <>
         <MediaIndicator
@@ -99,7 +99,7 @@ storiesOf('Components|MediaIndicator/Audio', module)
     { notes },
   )
   .add(
-    'inline media indicator',
+    'inline audio media indicator',
     ({ service }) => (
       <>
         <MediaIndicator
@@ -109,8 +109,9 @@ storiesOf('Components|MediaIndicator/Audio', module)
           topStory
           service={service}
           isInline={boolean('inline?', true)}
-        />
-        {text('extra text', 'example text')}
+        >
+          {text('extra text', 'example text')}
+        </MediaIndicator>
       </>
     ),
     { notes },
@@ -133,15 +134,16 @@ storiesOf('Components|MediaIndicator/Photo', module)
     { notes },
   )
   .add(
-    'inline media indicator',
+    'inline photogallery media indicator',
     ({ service }) => (
       <>
         <MediaIndicator
           type="photogallery"
           service={service}
           isInline={boolean('inline?', true)}
-        />
-        {text('extra text', 'example text')}
+        >
+          {text('extra text', 'example text')}
+        </MediaIndicator>
       </>
     ),
     { notes },
