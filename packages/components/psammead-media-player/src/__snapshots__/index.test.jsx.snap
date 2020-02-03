@@ -38,6 +38,7 @@ exports[`Media Player: AMP Entry renders a landscape container with an amp-ifram
             src="http://foo.bar/placeholder.png"
             width="9"
           />
+          <noscript />
         </amp-iframe>
       </div>
     </div>
@@ -83,6 +84,7 @@ exports[`Media Player: AMP Entry renders a portrait container with amp-iframe an
             src="http://foo.bar/placeholder.png"
             width="16"
           />
+          <noscript />
         </amp-iframe>
       </div>
     </div>
@@ -128,6 +130,7 @@ exports[`Media Player: AMP Entry renders the audio skin 1`] = `
             src="http://foo.bar/placeholder.png"
             width="9"
           />
+          <noscript />
         </amp-iframe>
       </div>
     </div>
@@ -708,6 +711,7 @@ exports[`Media Player: Canonical Entry renders an iframe when showPlaceholder is
     src="http://foo.bar/iframe"
     title="Media player"
   />
+  <noscript />
 </div>
 `;
 
@@ -739,6 +743,7 @@ exports[`Media Player: Canonical Entry renders the audio skin 1`] = `
     src="https://www.test.bbc.com/ws/av-embeds/media/bbc_korean_radio/liveradio"
     title="Audio player"
   />
+  <noscript />
 </div>
 `;
 
