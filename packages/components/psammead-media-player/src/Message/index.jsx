@@ -34,7 +34,7 @@ const MessageWrapper = styled.div`
   }
 `;
 
-const Message = styled.strong`
+const StyledMessage = styled.strong`
   display: block;
   font-weight: normal;
   bottom: 0;
@@ -49,12 +49,7 @@ const Message = styled.strong`
   }
 `;
 
-const MediaMessage = ({
-  service,
-  noJsMessage,
-  placeholderSrc,
-  placeholderSrcset,
-}) => (
+const Message = ({ service, message, placeholderSrc, placeholderSrcset }) => (
   <StyledWrapper>
     {placeholderSrc && (
       <Image
@@ -65,21 +60,21 @@ const MediaMessage = ({
       />
     )}
     <MessageWrapper service={service}>
-      <Message>{noJsMessage}</Message>
+      <StyledMessage>{message}</StyledMessage>
     </MessageWrapper>
   </StyledWrapper>
 );
 
-MediaMessage.propTypes = {
+Message.propTypes = {
   service: string.isRequired,
-  noJsMessage: string.isRequired,
+  message: string.isRequired,
   placeholderSrcset: string,
   placeholderSrc: string,
 };
 
-MediaMessage.defaultProps = {
+Message.defaultProps = {
   placeholderSrcset: '',
   placeholderSrc: '',
 };
 
-export default MediaMessage;
+export default Message;
