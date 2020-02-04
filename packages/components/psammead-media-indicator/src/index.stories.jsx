@@ -20,12 +20,7 @@ storiesOf('Components|MediaIndicator/Video', module)
   .addDecorator(withServicesKnob())
   .add(
     'video without duration',
-    ({ service }) => (
-      <MediaIndicator
-        service={service}
-        indexAlsos={boolean('Index Also', false)}
-      />
-    ),
+    ({ service }) => <MediaIndicator type="video" service={service} />,
     { notes },
   )
   .add(
@@ -52,6 +47,21 @@ storiesOf('Components|MediaIndicator/Video', module)
       />
     ),
     { notes },
+  )
+  .add(
+    'inline video media indicator',
+    ({ service }) => (
+      <>
+        <MediaIndicator
+          type="video"
+          service={service}
+          isInline={boolean('inline?', true)}
+        >
+          {text('extra text', 'example text')}
+        </MediaIndicator>
+      </>
+    ),
+    { notes },
   );
 
 storiesOf('Components|MediaIndicator/Audio', module)
@@ -60,13 +70,7 @@ storiesOf('Components|MediaIndicator/Audio', module)
   .addDecorator(withServicesKnob())
   .add(
     'audio without duration',
-    ({ service }) => (
-      <MediaIndicator
-        type="audio"
-        service={service}
-        indexAlsos={boolean('Index Also', false)}
-      />
-    ),
+    ({ service }) => <MediaIndicator type="audio" service={service} />,
     { notes },
   )
   .add(
@@ -93,6 +97,21 @@ storiesOf('Components|MediaIndicator/Audio', module)
       />
     ),
     { notes },
+  )
+  .add(
+    'inline audio media indicator',
+    ({ service }) => (
+      <>
+        <MediaIndicator
+          type="audio"
+          service={service}
+          isInline={boolean('inline?', true)}
+        >
+          {text('extra text', 'example text')}
+        </MediaIndicator>
+      </>
+    ),
+    { notes },
   );
 
 storiesOf('Components|MediaIndicator/Photo', module)
@@ -101,19 +120,28 @@ storiesOf('Components|MediaIndicator/Photo', module)
   .addDecorator(withServicesKnob())
   .add(
     'photogallery',
-    ({ service }) => (
-      <MediaIndicator
-        type="photogallery"
-        service={service}
-        indexAlsos={boolean('Index Also', false)}
-      />
-    ),
+    ({ service }) => <MediaIndicator type="photogallery" service={service} />,
     { notes },
   )
   .add(
     'top story photogallery',
     ({ service }) => (
       <MediaIndicator type="photogallery" service={service} topStory />
+    ),
+    { notes },
+  )
+  .add(
+    'inline photogallery media indicator',
+    ({ service }) => (
+      <>
+        <MediaIndicator
+          type="photogallery"
+          service={service}
+          isInline={boolean('inline?', true)}
+        >
+          {text('extra text', 'example text')}
+        </MediaIndicator>
+      </>
     ),
     { notes },
   );
