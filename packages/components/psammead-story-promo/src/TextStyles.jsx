@@ -2,6 +2,7 @@ import styled, { css } from 'styled-components';
 import { GEL_SPACING, GEL_SPACING_DBL } from '@bbc/gel-foundations/spacings';
 import {
   GEL_GROUP_3_SCREEN_WIDTH_MIN,
+  GEL_GROUP_3_SCREEN_WIDTH_MAX,
   GEL_GROUP_4_SCREEN_WIDTH_MIN,
   GEL_GROUP_5_SCREEN_WIDTH_MIN,
 } from '@bbc/gel-foundations/breakpoints';
@@ -42,8 +43,18 @@ ${({ displayImage }) => !displayImage && `grid-column: 1 / span 6;`}
 
 const TextGridColumnsLeadingStory = css`
   width: 100%;
-  grid-template-columns: repeat(2, 1fr);
-  grid-column-end: span 2;
+  grid-template-columns: repeat(6, 1fr);
+  grid-column-end: span 6;
+
+  @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-end: span 3;
+  }
+
+  @media (min-width: ${GEL_GROUP_4_SCREEN_WIDTH_MIN}) {
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-end: span 2;
+  }
 `;
 
 const TextGridFallbackTopStory = css`
@@ -77,7 +88,13 @@ const TextGridFallback = css`
 `;
 
 const TextGridFallBackLeadingStory = css`
-  width: ${twoOfSixColumnsMaxWidthScaleable};
+  width: ${fullWidthColumnsMaxScaleable};
+  @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
+    width: ${halfWidthColumnsMaxScaleable};
+  }
+  @media (min-width: ${GEL_GROUP_4_SCREEN_WIDTH_MIN}) {
+    width: ${twoOfSixColumnsMaxWidthScaleable};
+  }
 `;
 
 const textGridFallbackStyles = {
@@ -92,6 +109,17 @@ const textGridStyles = {
   leading: TextGridColumnsLeadingStory,
 };
 
+// This applies 8px padding only to the timestamp.
+// The headline already has padding so targeting the timestamp prevents double padding
+// from being applied.
+const leadingPromoTimestampPadding = `
+  >time {
+    @media (max-width: ${GEL_GROUP_3_SCREEN_WIDTH_MAX}) {
+      padding-bottom: ${GEL_SPACING};
+    }
+  }
+`;
+
 const TextGridItem = styled.div`
     display: inline-block;
     vertical-align: top;
@@ -104,6 +132,9 @@ const TextGridItem = styled.div`
       padding: initial;
       ${({ promoType }) => textGridStyles[promoType]}
     }
+
+    ${({ promoType }) =>
+      promoType === 'leading' && leadingPromoTimestampPadding}
   
     ${({ displayImage }) =>
       !displayImage &&

@@ -35,8 +35,18 @@ const ImageGridColumns = css`
 `;
 
 const ImageGridColumnsLeadingStory = css`
-  grid-template-columns: repeat(4, 1fr);
-  grid-column-end: span 4;
+  grid-template-columns: repeat(6, 1fr);
+  grid-column-end: span 6;
+
+  @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-end: span 3;
+  }
+
+  @media (min-width: ${GEL_GROUP_4_SCREEN_WIDTH_MIN}) {
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-end: span 4;
+  }
 `;
 
 const ImageGridFallbackTopStory = css`
@@ -63,7 +73,15 @@ const ImageGridFallback = css`
 `;
 
 const ImageGridFallbackLeadingStory = css`
-  width: ${fourOfSixColumnsMaxWidthScaleable};
+  width: ${fullWidthColumnsMaxScaleable};
+
+  @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
+    width: ${halfWidthColumnsMaxScaleable};
+  }
+
+  @media (min-width: ${GEL_GROUP_4_SCREEN_WIDTH_MIN}) {
+    width: ${fourOfSixColumnsMaxWidthScaleable};
+  }
 `;
 
 const imageGridStyles = {
