@@ -25,7 +25,7 @@ export const StoryPromoLi = styled.li.attrs({
   }
 
   @media (min-width: ${GEL_GROUP_4_SCREEN_WIDTH_MIN}) {
-    padding: ${GEL_SPACING_TRPL} 0 ${GEL_SPACING_TRPL};
+    padding: 0 0 ${GEL_SPACING_TRPL};
   }
 
   &:first-child {

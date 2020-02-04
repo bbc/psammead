@@ -2,7 +2,10 @@ import React from 'react';
 import styled, { css } from 'styled-components';
 import { bool, oneOf, shape, string } from 'prop-types';
 import { scriptPropType } from '@bbc/gel-foundations/prop-types';
-import { MEDIA_QUERY_TYPOGRAPHY } from '@bbc/gel-foundations/breakpoints';
+import {
+  GEL_GROUP_3_SCREEN_WIDTH_MIN,
+  GEL_GROUP_4_SCREEN_WIDTH_MIN,
+} from '@bbc/gel-foundations/breakpoints';
 import {
   GEL_SPACING_TRPL,
   GEL_SPACING_QUAD,
@@ -18,7 +21,7 @@ const Bar = styled.div`
     border-color: windowText;
   }
 
-  ${MEDIA_QUERY_TYPOGRAPHY.LAPTOP_AND_LARGER} {
+  @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
     position: absolute;
     left: 0;
     right: 0;
@@ -34,8 +37,12 @@ const SectionLabelWrapper = styled.div`
 
   margin-top: ${GEL_SPACING_QUAD};
 
-  ${MEDIA_QUERY_TYPOGRAPHY.LAPTOP_AND_LARGER} {
+  @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
     margin-top: ${GEL_SPACING_TRPL};
+  }
+
+  @media (min-width: ${GEL_GROUP_4_SCREEN_WIDTH_MIN}) {
+    margin-bottom: ${GEL_SPACING_TRPL};
   }
 
   ${({ visuallyHidden }) =>

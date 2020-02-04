@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 3.0.14 | [PR#XXX](https://github.com/bbc/psammead/pull/XXX) Add margin bottom to the Section Label above 1008px  |
 | 3.0.13 | [PR#3030](https://github.com/bbc/psammead/pull/3030) Talos - Bump Dependencies - @bbc/psammead-styles |
 | 3.0.12 | [PR#2990](https://github.com/bbc/psammead/pull/2990) Use `GEL_SPACING_DBL` constant |
 | 3.0.11 | [PR#2978](https://github.com/bbc/psammead/pull/2978) Talos - Bump Dependencies - @bbc/gel-foundations |
