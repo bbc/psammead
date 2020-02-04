@@ -2,7 +2,12 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { withKnobs } from '@storybook/addon-knobs';
 import { withServicesKnob } from '@bbc/psammead-storybook-helpers';
-import { renderProgramCard, sentenceCase } from './testHelpers/helper';
+import {
+  renderProgramCard,
+  renderRadioSchedule,
+  sentenceCase,
+  stateTypes,
+} from './testHelpers/helper';
 import notes from '../README.md';
 import StartTime from './StartTime';
 
@@ -17,15 +22,40 @@ const arabicServiceDecorator = withServicesKnob({
   services: ['arabic', 'pashto', 'persian', 'urdu'],
 });
 
-const stateTypes = ['live', 'next', 'onDemand'];
+const radioScheduleStories = storiesOf(
+  'Components|RadioSchedule',
+  module,
+).addDecorator(withKnobs);
 
-const stories = storiesOf(
+radioScheduleStories.add(
+  'default',
+  () =>
+    newsServiceDecorator(props => (
+      <div style={{ backgroundColor: '#f2f2f2', padding: 20 }}>
+        {renderRadioSchedule(props)}
+      </div>
+    )),
+  { notes },
+);
+
+radioScheduleStories.add(
+  'default RTL',
+  () =>
+    arabicServiceDecorator(props => (
+      <div style={{ backgroundColor: '#f2f2f2', padding: 20 }}>
+        {renderRadioSchedule(props)}
+      </div>
+    )),
+  { notes },
+);
+
+const programCardStories = storiesOf(
   'Components|RadioSchedule/ProgramCard',
   module,
 ).addDecorator(withKnobs);
 
 stateTypes.forEach(state => {
-  stories.add(
+  programCardStories.add(
     `${state}`,
     () =>
       newsServiceDecorator(({ service }) =>
@@ -35,7 +65,7 @@ stateTypes.forEach(state => {
   );
 });
 
-stories.add(
+programCardStories.add(
   `Multiline episode title`,
   () =>
     newsServiceDecorator(({ service }) =>
@@ -49,7 +79,7 @@ stories.add(
   { notes },
 );
 
-stories.add(
+programCardStories.add(
   `Live RTL`,
   () =>
     arabicServiceDecorator(({ service }) =>
