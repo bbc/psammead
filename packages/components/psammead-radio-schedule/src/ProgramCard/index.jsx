@@ -29,11 +29,14 @@ const CardWrapper = styled.div`
   padding-top: ${GEL_SPACING};
   background-color: ${C_WHITE};
   position: relative;
+  display: flex;
+  flex-direction: column;
   border: 0.0625rem solid transparent;
 `;
 
 const TextWrapper = styled.div`
   padding: 0 ${GEL_SPACING};
+  flex-grow: 1;
 `;
 
 const HeadingWrapper = styled.h3`

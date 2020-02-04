@@ -13,7 +13,7 @@ export const sentenceCase = text =>
 
 export const stateTypes = ['onDemand', 'live', 'next'];
 
-const getSchedule = service => {
+const getSchedule = (service, withLongSummary) => {
   const { text, articlePath, longText, locale } = TEXT_VARIANTS[service];
 
   return stateTypes.map(state => ({
@@ -25,7 +25,10 @@ const getSchedule = service => {
     link: articlePath,
     brandTitle: text,
     episodeTitle: '29/01/1990',
-    summary: longText,
+    summary:
+      withLongSummary && state === 'live'
+        ? `${longText} ${longText}`
+        : longText,
     duration: '45:00',
     durationLabel: 'Duration',
   }));
@@ -63,9 +66,10 @@ export const renderRadioSchedule = ({
   locale = 'en-gb',
   script = latin,
   dir = 'ltr',
+  withLongSummary = false,
 }) => (
   <RadioSchedule
-    schedules={getSchedule(service)}
+    schedules={getSchedule(service, withLongSummary)}
     locale={locale}
     script={script}
     service={service}

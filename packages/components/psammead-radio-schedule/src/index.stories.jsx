@@ -31,7 +31,7 @@ radioScheduleStories.add(
   'default',
   () =>
     newsServiceDecorator(props => (
-      <div style={{ backgroundColor: '#f2f2f2', padding: 20 }}>
+      <div style={{ backgroundColor: '#f2f2f2' }}>
         {renderRadioSchedule(props)}
       </div>
     )),
@@ -42,8 +42,19 @@ radioScheduleStories.add(
   'default RTL',
   () =>
     arabicServiceDecorator(props => (
-      <div style={{ backgroundColor: '#f2f2f2', padding: 20 }}>
+      <div style={{ backgroundColor: '#f2f2f2' }}>
         {renderRadioSchedule(props)}
+      </div>
+    )),
+  { notes },
+);
+
+radioScheduleStories.add(
+  'Schedule with unequal lengths',
+  () =>
+    newsServiceDecorator(props => (
+      <div style={{ backgroundColor: '#f2f2f2' }}>
+        {renderRadioSchedule({ ...props, withLongSummary: true })}
       </div>
     )),
   { notes },
