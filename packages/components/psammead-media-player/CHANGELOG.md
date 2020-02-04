@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version       | Description                                                                                                                  |
 | ------------- | ---------------------------------------------------------------------------------------------------------------------------- |
+| 2.7.0 | [PR#3033](https://github.com/bbc/psammead/pull/3033) Refactor for No JS Canonical and AMP Media Player |
 | 2.6.4 | [PR#3033](https://github.com/bbc/psammead/pull/3033) Talos - Bump Dependencies - @bbc/psammead-play-button |
 | 2.6.3 | [PR#3030](https://github.com/bbc/psammead/pull/3030) Talos - Bump Dependencies - @bbc/psammead-assets |
 | 2.6.2 | [PR#2997](https://github.com/bbc/psammead/pull/2997) Talos - Bump Dependencies - @bbc/psammead-play-button |

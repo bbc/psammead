@@ -3,6 +3,8 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 2.0.72 | [PR#3038](https://github.com/bbc/psammead/pull/3038) Refactor no-JS scenarios for @bbc/psammead-media-player, adding jest-dom |
+| 2.0.71 | [PR#3051](https://github.com/bbc/psammead/pull/3051) Bumping dependencies |
 | 2.0.70 | [PR#2988](https://github.com/bbc/psammead/pull/2988) Add @bbc/psammead-timestamp-container to dependencies |
 | 2.0.69 | [PR#3034](https://github.com/bbc/psammead/pull/3034) Talos - Bump Dependencies - @bbc/psammead-brand |
 | 2.0.68 | [PR#3033](https://github.com/bbc/psammead/pull/3033) Talos - Bump Dependencies - @bbc/psammead-brand, @bbc/psammead-caption, @bbc/psammead-copyright, @bbc/psammead-grid, @bbc/psammead-image-placeholder, @bbc/psammead-inline-link, @bbc/psammead-media-indicator, @bbc/psammead-paragraph, @bbc/psammead-timestamp |
