@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 6.0.2 | [PR#3059](https://github.com/bbc/psammead/pull/3059) Update gradient width on scrollable navigation |
 | 6.0.1 | [PR#3030](https://github.com/bbc/psammead/pull/3030) Talos - Bump Dependencies - @bbc/psammead-styles, @bbc/psammead-assets |
 | 6.0.0 | [PR#3028](https://github.com/bbc/psammead/pull/3028) Bring Navigation out of alpha |
 | 6.0.0-alpha.27 | [PR#2996](https://github.com/bbc/psammead/pull/2996) Talos - Bump Dependencies - @bbc/psammead-assets |
