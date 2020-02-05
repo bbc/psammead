@@ -19,8 +19,9 @@ const MostReadSection = ({
   service,
   header,
   children,
+  className,
 }) => (
-  <StyledSection labelId={labelId}>
+  <StyledSection labelId={labelId} className={className}>
     <SectionLabel
       script={script}
       dir={dir}
@@ -41,20 +42,31 @@ MostReadSection.propTypes = {
   dir: oneOf(['rtl', 'ltr']),
   service: string.isRequired,
   header: string.isRequired,
+  className: string,
 };
 
 MostReadSection.defaultProps = {
   labelId: 'Most-Read',
   dir: 'ltr',
+  className: null,
 };
 
-const MostRead = ({ items, script, service, header, dir, labelId }) => (
+const MostRead = ({
+  items,
+  script,
+  service,
+  header,
+  dir,
+  labelId,
+  className,
+}) => (
   <MostReadSection
     labelId={labelId}
     script={script}
     service={service}
     header={header}
     dir={dir}
+    className={className}
   >
     <MostReadList numberOfItems={items.length} dir={dir}>
       {items.map((item, i) => (
@@ -95,11 +107,13 @@ MostRead.propTypes = {
   script: shape(scriptPropType).isRequired,
   dir: oneOf(['rtl', 'ltr']),
   labelId: string,
+  className: string,
 };
 
 MostRead.defaultProps = {
   dir: 'ltr',
   labelId: 'Most-Read',
+  className: null,
 };
 
 export {
