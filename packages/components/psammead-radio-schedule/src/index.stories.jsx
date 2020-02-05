@@ -21,23 +21,13 @@ const radioScheduleStories = storiesOf(RADIO_SCHEDULE_STORIES, module)
   .addDecorator(withKnobs)
   .addDecorator(withServicesKnob());
 
-radioScheduleStories.add(
-  'default',
-  props => (
-    <div style={{ backgroundColor: '#f2f2f2' }}>
-      {renderRadioSchedule(props)}
-    </div>
-  ),
-  { notes },
-);
+radioScheduleStories.add('default', props => renderRadioSchedule(props), {
+  notes,
+});
 
 radioScheduleStories.add(
   'Schedule with different heights',
-  props => (
-    <div style={{ backgroundColor: '#f2f2f2' }}>
-      {renderRadioSchedule({ ...props, withLongSummary: true })}
-    </div>
-  ),
+  props => renderRadioSchedule({ ...props, withLongSummary: true }),
   { notes },
 );
 
