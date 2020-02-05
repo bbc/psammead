@@ -13,8 +13,6 @@ The `MediaIndicator` component provides a 'play', 'audio' or 'camera' icon as we
 <!-- prettier-ignore -->
 | Argument   | Type    | Required | Default | Example      |
 | ---------- | ------- | -------- | ------- | ------------ |
-| duration   | string  | No       | Null    | '2:15'       |
-| datetime   | string  | No       | Null    | 'PT2M15S'    |
 | type       | string  | No       | 'video' | 'audio'      |
 | service    | string  | Yes      | N/A     | `'news'`     |
 | isInline   | boolean | No       | false   | true         |
@@ -38,12 +36,7 @@ We expect users to add their own spacing around this component where relevant.
 ```jsx
 import MediaIndicator from '@bbc/psammead-media-indicator';
 
-<MediaIndicator
-  duration="2:15"
-  datetime="PT2M15S"
-  type="audio"
-  service="news"
-/>;
+<MediaIndicator type="audio" service="news" />;
 ```
 
 ### When to use this component

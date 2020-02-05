@@ -88,11 +88,6 @@ exports[`MediaIndicator should render audio indicator correctly 1`] = `
   height: 100%;
 }
 
-.c3 {
-  vertical-align: middle;
-  margin: 0 0.25rem;
-}
-
 <div
   aria-hidden="true"
   class="c0"
@@ -115,12 +110,6 @@ exports[`MediaIndicator should render audio indicator correctly 1`] = `
         d="M10.596.199l-.525.562c1.35 1.35 2.175 3.225 2.175 5.25s-.825 3.9-2.175 5.25l.525.525c1.5-1.462 2.4-3.525 2.4-5.775s-.9-4.312-2.4-5.812zM6.996 1.511l-2.25 2.25H.996v4.5h3.75l2.25 2.25z"
       />
     </svg>
-    <time
-      class="c3"
-      datetime="PT2M15S"
-    >
-      2:15
-    </time>
   </div>
 </div>
 `;
@@ -323,11 +312,6 @@ exports[`MediaIndicator should render video indicator correctly 1`] = `
   height: 100%;
 }
 
-.c3 {
-  vertical-align: middle;
-  margin: 0 0.25rem;
-}
-
 <div
   aria-hidden="true"
   class="c0"
@@ -347,12 +331,6 @@ exports[`MediaIndicator should render video indicator correctly 1`] = `
         points="3,32 29,16 3,0"
       />
     </svg>
-    <time
-      class="c3"
-      datetime="PT2M15S"
-    >
-      2:15
-    </time>
   </div>
 </div>
 `;

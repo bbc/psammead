@@ -2,7 +2,6 @@ import React from 'react';
 import styled, { css } from 'styled-components';
 import { string, oneOf, bool, node } from 'prop-types';
 import { C_WHITE, C_EBON } from '@bbc/psammead-styles/colours';
-import { GEL_SPACING_HLF } from '@bbc/gel-foundations/spacings';
 import { getMinion } from '@bbc/gel-foundations/typography';
 import { getSansRegular } from '@bbc/psammead-styles/font-styles';
 import { mediaIcons } from '@bbc/psammead-assets/svgs';
@@ -28,19 +27,7 @@ const FlexWrapper = styled.div`
   height: 100%;
 `;
 
-const TimeDuration = styled.time`
-  vertical-align: middle;
-  margin: 0 ${GEL_SPACING_HLF};
-`;
-
-const MediaIndicator = ({
-  datetime,
-  duration,
-  type,
-  service,
-  isInline,
-  children,
-}) => (
+const MediaIndicator = ({ type, service, isInline, children }) => (
   <MediaIndicatorWrapper
     aria-hidden="true"
     service={service}
@@ -48,17 +35,12 @@ const MediaIndicator = ({
   >
     <FlexWrapper>
       {mediaIcons[type]}
-      {duration && datetime && !isInline && (
-        <TimeDuration dateTime={datetime}>{duration}</TimeDuration>
-      )}
       {children}
     </FlexWrapper>
   </MediaIndicatorWrapper>
 );
 
 MediaIndicator.propTypes = {
-  datetime: string,
-  duration: string,
   type: oneOf(['video', 'audio', 'photogallery']),
   service: string.isRequired,
   isInline: bool,
@@ -66,8 +48,6 @@ MediaIndicator.propTypes = {
 };
 
 MediaIndicator.defaultProps = {
-  datetime: null,
-  duration: null,
   type: 'video',
   isInline: false,
   children: null,
