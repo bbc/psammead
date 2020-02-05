@@ -32,6 +32,7 @@ const CardWrapper = styled.div`
   display: flex;
   flex-direction: column;
   border: 0.0625rem solid transparent;
+  height: 100%;
 `;
 
 const TextWrapper = styled.div`

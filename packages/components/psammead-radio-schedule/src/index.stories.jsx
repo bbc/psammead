@@ -50,7 +50,7 @@ radioScheduleStories.add(
 );
 
 radioScheduleStories.add(
-  'Schedule with unequal lengths',
+  'Schedule with different heights',
   () =>
     newsServiceDecorator(props => (
       <div style={{ backgroundColor: '#f2f2f2' }}>

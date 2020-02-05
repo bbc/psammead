@@ -5,7 +5,7 @@ import { renderRadioSchedule } from './testHelpers/helper';
 describe('RadioSchedule', () => {
   shouldMatchSnapshot(
     'should render ltr radio schedules correctly',
-    renderRadioSchedule(),
+    renderRadioSchedule({}),
   );
   shouldMatchSnapshot(
     'should render rtl radio schedules correctly',

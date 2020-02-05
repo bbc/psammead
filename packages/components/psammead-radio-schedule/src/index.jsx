@@ -3,12 +3,17 @@ import styled from 'styled-components';
 import { GEL_SPACING, GEL_SPACING_DBL } from '@bbc/gel-foundations/spacings';
 import Grid from '@bbc/psammead-grid';
 import { arrayOf, number, oneOf, shape, string } from 'prop-types';
-import { scriptPropType } from '@bbc/gel-foundations/esm/prop-types';
+import { scriptPropType } from '@bbc/gel-foundations/prop-types';
 import ProgramCard from './ProgramCard';
 import StartTime from './StartTime';
 
 const StartTimeWrapper = styled.div`
   padding: ${GEL_SPACING_DBL} 0 ${GEL_SPACING};
+`;
+
+const StyledGrid = styled(Grid)`
+  display: flex;
+  flex-direction: column;
 `;
 
 const renderSchedule = ({ service, script, dir, locale, program }) => {
@@ -88,7 +93,9 @@ const programGridProps = {
 const RadioSchedule = ({ schedules, ...props }) => (
   <Grid {...schedulesGridProps}>
     {schedules.map(program => (
-      <Grid {...programGridProps}>{renderSchedule({ ...props, program })}</Grid>
+      <StyledGrid {...programGridProps} key={program.brandTitle}>
+        {renderSchedule({ ...props, program })}
+      </StyledGrid>
     ))}
   </Grid>
 );

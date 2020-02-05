@@ -55,11 +55,23 @@ exports[`ProgramCard should render correctly for live 1`] = `
   padding-top: 0.5rem;
   background-color: #FFFFFF;
   position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   border: 0.0625rem solid transparent;
+  height: 100%;
 }
 
 .c1 {
   padding: 0 0.5rem;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
 }
 
 .c2 {
@@ -320,11 +332,23 @@ exports[`ProgramCard should render correctly for next 1`] = `
   padding-top: 0.5rem;
   background-color: #FFFFFF;
   position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   border: 0.0625rem solid transparent;
+  height: 100%;
 }
 
 .c1 {
   padding: 0 0.5rem;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
 }
 
 .c2 {
@@ -606,11 +630,23 @@ exports[`ProgramCard should render correctly for onDemand 1`] = `
   padding-top: 0.5rem;
   background-color: #FFFFFF;
   position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   border: 0.0625rem solid transparent;
+  height: 100%;
 }
 
 .c1 {
   padding: 0 0.5rem;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
 }
 
 .c2 {
@@ -863,11 +899,23 @@ exports[`ProgramCard should render correctly in RTL 1`] = `
   padding-top: 0.5rem;
   background-color: #FFFFFF;
   position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   border: 0.0625rem solid transparent;
+  height: 100%;
 }
 
 .c1 {
   padding: 0 0.5rem;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
 }
 
 .c2 {
