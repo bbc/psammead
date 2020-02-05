@@ -11,9 +11,12 @@ const StartTimeWrapper = styled.div`
   padding: ${GEL_SPACING_DBL} 0 ${GEL_SPACING};
 `;
 
+// Using flex-box on browsers that don not support grid will break grid fallback defined in psammead-grid
 const StyledGrid = styled(Grid)`
-  display: flex;
-  flex-direction: column;
+  @supports (display: grid) {
+    display: flex;
+    flex-direction: column;
+  }
 `;
 
 const renderSchedule = ({ service, script, dir, locale, program }) => {
@@ -92,8 +95,13 @@ const programGridProps = {
 
 const RadioSchedule = ({ schedules, ...props }) => (
   <Grid {...schedulesGridProps}>
-    {schedules.map(program => (
-      <StyledGrid {...programGridProps} key={program.brandTitle}>
+    {schedules.map(({ id, ...program }) => (
+      <StyledGrid
+        parentColumns={schedulesGridProps.columns}
+        parentEnableGelGutters
+        {...programGridProps}
+        key={id}
+      >
         {renderSchedule({ ...props, program })}
       </StyledGrid>
     ))}
@@ -132,7 +140,8 @@ RadioSchedule.propTypes = {
 };
 
 RadioSchedule.defaultProps = {
-  dir: 'ltr', // eslint-disable-line react/default-props-match-prop-types
+  // eslint-disable-next-line react/default-props-match-prop-types
+  dir: 'ltr',
 };
 
 export default RadioSchedule;

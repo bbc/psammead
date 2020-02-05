@@ -284,16 +284,6 @@ exports[`RadioSchedule should render ltr radio schedules correctly 1`] = `
   padding: 1rem 0 0.5rem;
 }
 
-.c2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-}
-
 @media (min-width:20rem) and (max-width:37.4375rem) {
   .c11 {
     font-size: 1rem;
@@ -459,6 +449,60 @@ exports[`RadioSchedule should render ltr radio schedules correctly 1`] = `
   }
 }
 
+@media (max-width:14.9375rem) {
+  .c1 {
+    width: calc(4/4*(100% - 4 * 0.5rem) + 3 * 0.5rem );
+    margin: 0 0.25rem;
+    display: inline-block;
+    vertical-align: top;
+  }
+}
+
+@media (min-width:15rem) and (max-width:24.9375rem) {
+  .c1 {
+    width: calc(4/4*(100% - 4 * 0.5rem) + 3 * 0.5rem );
+    margin: 0 0.25rem;
+    display: inline-block;
+    vertical-align: top;
+  }
+}
+
+@media (min-width:25rem) and (max-width:37.4375rem) {
+  .c1 {
+    width: calc(6/6*(100% - 6 * 0.5rem) + 5 * 0.5rem );
+    margin: 0 0.25rem;
+    display: inline-block;
+    vertical-align: top;
+  }
+}
+
+@media (min-width:37.5rem) and (max-width:62.9375rem) {
+  .c1 {
+    width: calc(2/6*(100% - 6 * 1rem) + 1 * 1rem );
+    margin: 0 0.5rem;
+    display: inline-block;
+    vertical-align: top;
+  }
+}
+
+@media (min-width:63rem) and (max-width:80rem) {
+  .c1 {
+    width: calc(2/8*(100% - 8 * 1rem) + 1 * 1rem );
+    margin: 0 0.5rem;
+    display: inline-block;
+    vertical-align: top;
+  }
+}
+
+@media (min-width:80rem) {
+  .c1 {
+    width: calc(2/8*(100% - 8 * 1rem) + 1 * 1rem );
+    margin: 0 0.5rem;
+    display: inline-block;
+    vertical-align: top;
+  }
+}
+
 @supports (display:grid) {
   .c1 {
     display: block;
@@ -490,6 +534,18 @@ exports[`RadioSchedule should render ltr radio schedules correctly 1`] = `
   .c7 > time {
     font-size: 0.75rem;
     line-height: 1rem;
+  }
+}
+
+@supports (display:grid) {
+  .c2 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
   }
 }
 
@@ -1182,16 +1238,6 @@ exports[`RadioSchedule should render rtl radio schedules correctly 1`] = `
   padding: 1rem 0 0.5rem;
 }
 
-.c2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-}
-
 @media (min-width:20rem) and (max-width:37.4375rem) {
   .c11 {
     font-size: 1.25rem;
@@ -1357,6 +1403,60 @@ exports[`RadioSchedule should render rtl radio schedules correctly 1`] = `
   }
 }
 
+@media (max-width:14.9375rem) {
+  .c1 {
+    width: calc(4/4*(100% - 4 * 0.5rem) + 3 * 0.5rem );
+    margin: 0 0.25rem;
+    display: inline-block;
+    vertical-align: top;
+  }
+}
+
+@media (min-width:15rem) and (max-width:24.9375rem) {
+  .c1 {
+    width: calc(4/4*(100% - 4 * 0.5rem) + 3 * 0.5rem );
+    margin: 0 0.25rem;
+    display: inline-block;
+    vertical-align: top;
+  }
+}
+
+@media (min-width:25rem) and (max-width:37.4375rem) {
+  .c1 {
+    width: calc(6/6*(100% - 6 * 0.5rem) + 5 * 0.5rem );
+    margin: 0 0.25rem;
+    display: inline-block;
+    vertical-align: top;
+  }
+}
+
+@media (min-width:37.5rem) and (max-width:62.9375rem) {
+  .c1 {
+    width: calc(2/6*(100% - 6 * 1rem) + 1 * 1rem );
+    margin: 0 0.5rem;
+    display: inline-block;
+    vertical-align: top;
+  }
+}
+
+@media (min-width:63rem) and (max-width:80rem) {
+  .c1 {
+    width: calc(2/8*(100% - 8 * 1rem) + 1 * 1rem );
+    margin: 0 0.5rem;
+    display: inline-block;
+    vertical-align: top;
+  }
+}
+
+@media (min-width:80rem) {
+  .c1 {
+    width: calc(2/8*(100% - 8 * 1rem) + 1 * 1rem );
+    margin: 0 0.5rem;
+    display: inline-block;
+    vertical-align: top;
+  }
+}
+
 @supports (display:grid) {
   .c1 {
     display: block;
@@ -1388,6 +1488,18 @@ exports[`RadioSchedule should render rtl radio schedules correctly 1`] = `
   .c7 > time {
     font-size: 0.75rem;
     line-height: 1rem;
+  }
+}
+
+@supports (display:grid) {
+  .c2 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
   }
 }
 

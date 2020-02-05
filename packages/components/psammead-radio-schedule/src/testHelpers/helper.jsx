@@ -16,7 +16,8 @@ export const stateTypes = ['onDemand', 'live', 'next'];
 const getSchedule = (service, withLongSummary) => {
   const { text, articlePath, longText, locale } = TEXT_VARIANTS[service];
 
-  return stateTypes.map(state => ({
+  return stateTypes.map((state, index) => ({
+    id: index,
     state,
     stateLabel: sentenceCase(state),
     startTime: 1566914061212,
