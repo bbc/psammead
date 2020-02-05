@@ -144,7 +144,7 @@ describe('Canonical', () => {
 describe('Dropdown navigation', () => {
   shouldMatchSnapshot(
     'should render correctly when closed',
-    <CanonicalDropdown>{dropdownList}</CanonicalDropdown>,
+    <CanonicalDropdown isOpen={false}>{dropdownList}</CanonicalDropdown>,
   );
 
   shouldMatchSnapshot(
