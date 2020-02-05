@@ -1,7 +1,10 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { withKnobs } from '@storybook/addon-knobs';
-import { withServicesKnob } from '@bbc/psammead-storybook-helpers';
+import {
+  withServicesKnob,
+  buildRTLSubstories,
+} from '@bbc/psammead-storybook-helpers';
 import {
   renderProgramCard,
   renderRadioSchedule,
@@ -13,97 +16,64 @@ import StartTime from './StartTime';
 
 const storiesUnixTimestamp = 1566914061212;
 
-const newsServiceDecorator = withServicesKnob({
-  defaultService: 'news',
-});
-
-const arabicServiceDecorator = withServicesKnob({
-  defaultService: 'arabic',
-  services: ['arabic', 'pashto', 'persian', 'urdu'],
-});
-
-const radioScheduleStories = storiesOf(
-  'Components|RadioSchedule',
-  module,
-).addDecorator(withKnobs);
+const RADIO_SCHEDULE_STORIES = 'Components|RadioSchedule';
+const radioScheduleStories = storiesOf(RADIO_SCHEDULE_STORIES, module)
+  .addDecorator(withKnobs)
+  .addDecorator(withServicesKnob());
 
 radioScheduleStories.add(
   'default',
-  () =>
-    newsServiceDecorator(props => (
-      <div style={{ backgroundColor: '#f2f2f2' }}>
-        {renderRadioSchedule(props)}
-      </div>
-    )),
-  { notes },
-);
-
-radioScheduleStories.add(
-  'default RTL',
-  () =>
-    arabicServiceDecorator(props => (
-      <div style={{ backgroundColor: '#f2f2f2' }}>
-        {renderRadioSchedule(props)}
-      </div>
-    )),
+  props => (
+    <div style={{ backgroundColor: '#f2f2f2' }}>
+      {renderRadioSchedule(props)}
+    </div>
+  ),
   { notes },
 );
 
 radioScheduleStories.add(
   'Schedule with different heights',
-  () =>
-    newsServiceDecorator(props => (
-      <div style={{ backgroundColor: '#f2f2f2' }}>
-        {renderRadioSchedule({ ...props, withLongSummary: true })}
-      </div>
-    )),
+  props => (
+    <div style={{ backgroundColor: '#f2f2f2' }}>
+      {renderRadioSchedule({ ...props, withLongSummary: true })}
+    </div>
+  ),
   { notes },
 );
 
-const programCardStories = storiesOf(
-  'Components|RadioSchedule/ProgramCard',
-  module,
-).addDecorator(withKnobs);
+buildRTLSubstories(RADIO_SCHEDULE_STORIES, {
+  include: ['default'],
+});
+
+const PROGRAM_CARD_STORIES = 'Components|RadioSchedule/ProgramCard';
+const programCardStories = storiesOf(PROGRAM_CARD_STORIES, module).addDecorator(
+  withKnobs,
+);
 
 stateTypes.forEach(state => {
   programCardStories.add(
     `${state}`,
-    () =>
-      newsServiceDecorator(({ service }) =>
-        renderProgramCard({ service, state, stateLabel: sentenceCase(state) }),
-      ),
+    ({ service }) =>
+      renderProgramCard({ service, state, stateLabel: sentenceCase(state) }),
     { notes },
   );
 });
 
 programCardStories.add(
   `Multiline episode title`,
-  () =>
-    newsServiceDecorator(({ service }) =>
-      renderProgramCard({
-        state: 'live',
-        stateLabel: 'Live',
-        service,
-        episodeTitle: 'This is a long episode title that spans multiple lines',
-      }),
-    ),
+  ({ service }) =>
+    renderProgramCard({
+      state: 'live',
+      stateLabel: 'Live',
+      service,
+      episodeTitle: 'This is a long episode title that spans multiple lines',
+    }),
   { notes },
 );
 
-programCardStories.add(
-  `Live RTL`,
-  () =>
-    arabicServiceDecorator(({ service }) =>
-      renderProgramCard({
-        state: stateTypes[0],
-        stateLabel: 'مباشر',
-        duration: '30:00',
-        durationLabel: 'المدة الزمنية',
-        service,
-      }),
-    ),
-  { notes },
-);
+buildRTLSubstories(PROGRAM_CARD_STORIES, {
+  include: [...stateTypes],
+});
 
 storiesOf('Components|RadioSchedule/StartTime', module)
   .addDecorator(withKnobs)

@@ -93,16 +93,17 @@ const programGridProps = {
   },
 };
 
-const RadioSchedule = ({ schedules, ...props }) => (
-  <Grid {...schedulesGridProps}>
+const RadioSchedule = ({ schedules, dir, ...props }) => (
+  <Grid dir={dir} {...schedulesGridProps}>
     {schedules.map(({ id, ...program }) => (
       <StyledGrid
+        dir={dir}
         parentColumns={schedulesGridProps.columns}
         parentEnableGelGutters
         {...programGridProps}
         key={id}
       >
-        {renderSchedule({ ...props, program })}
+        {renderSchedule({ ...props, dir, program })}
       </StyledGrid>
     ))}
   </Grid>

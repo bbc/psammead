@@ -1505,11 +1505,11 @@ exports[`RadioSchedule should render rtl radio schedules correctly 1`] = `
 
 <div
   class="c0"
-  dir="ltr"
+  dir="rtl"
 >
   <div
     class="c1 c2"
-    dir="ltr"
+    dir="rtl"
   >
     <div
       class="c3"
@@ -1635,7 +1635,7 @@ exports[`RadioSchedule should render rtl radio schedules correctly 1`] = `
   </div>
   <div
     class="c1 c2"
-    dir="ltr"
+    dir="rtl"
   >
     <div
       class="c3"
@@ -1775,7 +1775,7 @@ exports[`RadioSchedule should render rtl radio schedules correctly 1`] = `
   </div>
   <div
     class="c1 c2"
-    dir="ltr"
+    dir="rtl"
   >
     <div
       class="c3"
