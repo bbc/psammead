@@ -4,6 +4,7 @@ import { string, bool, oneOf, shape } from 'prop-types';
 import Placeholder from './Placeholder';
 import Amp from './Amp';
 import Canonical from './Canonical';
+import Message from './Message';
 
 const landscapeRatio = '56.25%'; // (9/16)*100 = 16:9
 const portraitRatio = '177.78%'; // (16/9)*100 = 9:16
@@ -94,6 +95,8 @@ export const AmpMediaPlayer = ({
   );
 };
 
+export const MediaMessage = Message;
+
 CanonicalMediaPlayer.propTypes = {
   placeholderSrc: string,
   placeholderSrcset: string,
@@ -122,6 +125,18 @@ CanonicalMediaPlayer.defaultProps = {
   placeholderSrc: null,
   placeholderSrcset: null,
   noJsClassName: null,
+};
+
+MediaMessage.propTypes = {
+  service: string.isRequired,
+  message: string.isRequired,
+  placeholderSrc: string,
+  placeholderSrcset: string,
+};
+
+MediaMessage.defaultProps = {
+  placeholderSrc: null,
+  placeholderSrcset: null,
 };
 
 AmpMediaPlayer.propTypes = {

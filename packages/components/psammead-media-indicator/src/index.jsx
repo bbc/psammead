@@ -1,6 +1,6 @@
 import React from 'react';
 import styled, { css } from 'styled-components';
-import { string, oneOf, bool } from 'prop-types';
+import { string, oneOf, bool, node } from 'prop-types';
 import { C_WHITE, C_EBON } from '@bbc/psammead-styles/colours';
 import {
   GEL_SPACING_HLF,
@@ -20,6 +20,13 @@ const MediaIndicatorWrapper = styled.div`
   ${GEL_MINION};
   color: ${C_EBON};
   height: ${GEL_SPACING_QUAD};
+
+  ${({ isInline }) =>
+    isInline &&
+    css`
+      display: inline-block;
+      vertical-align: middle;
+    `}
 
   ${({ topStory }) =>
     !topStory &&
@@ -42,38 +49,30 @@ const TimeDuration = styled.time`
   margin: 0 ${GEL_SPACING_HLF};
 `;
 
-const IndexAlsosMediaIndicator = styled.span`
-  & > svg {
-    margin: 0;
-  }
-`;
-
 const MediaIndicator = ({
   datetime,
   duration,
   type,
   topStory,
   service,
-  indexAlsos,
-}) =>
-  indexAlsos ? (
-    <IndexAlsosMediaIndicator aria-hidden="true">
+  isInline,
+  children,
+}) => (
+  <MediaIndicatorWrapper
+    aria-hidden="true"
+    topStory={topStory}
+    service={service}
+    isInline={isInline}
+  >
+    <FlexWrapper>
       {mediaIcons[type]}
-    </IndexAlsosMediaIndicator>
-  ) : (
-    <MediaIndicatorWrapper
-      aria-hidden="true"
-      topStory={topStory}
-      service={service}
-    >
-      <FlexWrapper>
-        {mediaIcons[type]}
-        {duration && datetime && (
-          <TimeDuration dateTime={datetime}>{duration}</TimeDuration>
-        )}
-      </FlexWrapper>
-    </MediaIndicatorWrapper>
-  );
+      {duration && datetime && !isInline && (
+        <TimeDuration dateTime={datetime}>{duration}</TimeDuration>
+      )}
+      {children}
+    </FlexWrapper>
+  </MediaIndicatorWrapper>
+);
 
 MediaIndicator.propTypes = {
   datetime: string,
@@ -81,7 +80,8 @@ MediaIndicator.propTypes = {
   type: oneOf(['video', 'audio', 'photogallery']),
   topStory: bool,
   service: string.isRequired,
-  indexAlsos: bool,
+  isInline: bool,
+  children: node,
 };
 
 MediaIndicator.defaultProps = {
@@ -89,7 +89,8 @@ MediaIndicator.defaultProps = {
   duration: null,
   type: 'video',
   topStory: false,
-  indexAlsos: false,
+  isInline: false,
+  children: null,
 };
 
 export default MediaIndicator;
