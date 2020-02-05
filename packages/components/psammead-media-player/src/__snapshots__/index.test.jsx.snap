@@ -280,7 +280,6 @@ exports[`Media Player: Canonical Entry renders a landscape container with a plac
         class="c8"
       >
         <svg
-          aria-hidden="true"
           class="c9"
           focusable="false"
           height="12px"
@@ -476,14 +475,13 @@ exports[`Media Player: Canonical Entry renders a placeholder image with guidance
       <span
         class="c8"
       >
-        May contain strong language, sexual or violent content that may offend. Play video, "Dog chases cat.", 2 minutes 30 seconds
+        Play video, "Dog chases cat.", 2 minutes 30 seconds
       </span>
       <div
         aria-hidden="true"
         class="c9"
       >
         <svg
-          aria-hidden="true"
           class="c10"
           focusable="false"
           height="12px"
@@ -654,7 +652,6 @@ exports[`Media Player: Canonical Entry renders a portrait container with a place
         class="c8"
       >
         <svg
-          aria-hidden="true"
           class="c9"
           focusable="false"
           height="12px"
@@ -936,14 +933,13 @@ exports[`Media Player: Canonical Entry renders with no-js styles when noJsClassN
       <span
         class="c8"
       >
-        May contain strong language, sexual or violent content that may offend. Play video, "Dog chases cat.", 2 minutes 30 seconds
+        Play video, "Dog chases cat.", 2 minutes 30 seconds
       </span>
       <div
         aria-hidden="true"
         class="c9"
       >
         <svg
-          aria-hidden="true"
           class="c10"
           focusable="false"
           height="12px"

@@ -27,7 +27,10 @@
     "snapshot"
   ],
   "dependencies": {
-    "jest-styled-components": "^6.3.3"
+    "jest-styled-components": "^7.0.0"
+  },
+  "peerDependencies": {
+    "styled-components": "^5.0.0"
   },
   "devDependencies": {
     "react-helmet": "^5.2.1"

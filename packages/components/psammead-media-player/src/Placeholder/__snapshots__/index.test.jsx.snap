@@ -133,7 +133,6 @@ exports[`Media Player: Placeholder should render a video placeholder 1`] = `
       class="c7"
     >
       <svg
-        aria-hidden="true"
         class="c8"
         focusable="false"
         height="12px"
@@ -319,14 +318,13 @@ exports[`Media Player: Placeholder should render a video placeholder with guidan
     <span
       class="c7"
     >
-      Guidance: May contain strong language, sexual or violent content that may offend. Play video, "Dog chases cat.", 2 minutes 30 seconds
+      Play video, "Dog chases cat.", 2 minutes 30 seconds
     </span>
     <div
       aria-hidden="true"
       class="c8"
     >
       <svg
-        aria-hidden="true"
         class="c9"
         focusable="false"
         height="12px"
@@ -481,7 +479,6 @@ exports[`Media Player: Placeholder should render a video placeholder without dur
       class="c7"
     >
       <svg
-        aria-hidden="true"
         class="c8"
         focusable="false"
         height="12px"
@@ -635,7 +632,6 @@ exports[`Media Player: Placeholder should render an audio placeholder 1`] = `
       class="c7"
     >
       <svg
-        aria-hidden="true"
         class="c8"
         focusable="false"
         height="12px"
@@ -793,7 +789,6 @@ exports[`Media Player: Placeholder should render an audio placeholder without du
       class="c7"
     >
       <svg
-        aria-hidden="true"
         class="c8"
         focusable="false"
         height="12px"
@@ -997,14 +992,13 @@ exports[`Media Player: Placeholder should render no-js styles when noJsClassName
     <span
       class="c7"
     >
-      Guidance: May contain strong language, sexual or violent content that may offend. Play video, "Dog chases cat.", 2 minutes 30 seconds
+      Play video, "Dog chases cat.", 2 minutes 30 seconds
     </span>
     <div
       aria-hidden="true"
       class="c8"
     >
       <svg
-        aria-hidden="true"
         class="c9"
         focusable="false"
         height="12px"

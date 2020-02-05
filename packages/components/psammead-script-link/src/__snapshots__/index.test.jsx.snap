@@ -50,13 +50,9 @@ exports[`ScriptLink should render correctly 1`] = `
 }
 
 @media (max-width:37.4375rem) {
-  .c0 {
-    height: 2.5rem;
-  }
-
   .c0 > span {
     padding: 0 0.75rem;
-    line-height: calc(2.5rem - 0.5rem);
+    line-height: calc( - 0.5rem);
   }
 }
 
