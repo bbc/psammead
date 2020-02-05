@@ -2,7 +2,10 @@ import React from 'react';
 import styled, { css } from 'styled-components';
 import { node, oneOf } from 'prop-types';
 import { GEL_SPACING_SEXT } from '@bbc/gel-foundations/spacings';
-import { GEL_GROUP_2_SCREEN_WIDTH_MAX } from '@bbc/gel-foundations/breakpoints';
+import {
+  GEL_GROUP_2_SCREEN_WIDTH_MIN,
+  GEL_GROUP_2_SCREEN_WIDTH_MAX,
+} from '@bbc/gel-foundations/breakpoints';
 
 /* Convert C_POSTBOX to rgba as IE doesn't like 8 digit hex */
 const C_POSTBOX_TRANSPARENT = `rgba(184, 0, 0, 0)`;
@@ -26,6 +29,9 @@ const StyledScrollableNav = styled.div`
       content: ' ';
       height: 100%;
       width: ${GEL_SPACING_SEXT};
+      @media (min-width: ${GEL_GROUP_2_SCREEN_WIDTH_MIN}) {
+        width: 6rem;
+      }
       position: absolute;
       ${({ dir }) => css`
         ${dir === 'ltr' ? 'right' : 'left'}: 0;
