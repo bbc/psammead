@@ -20,6 +20,54 @@ npm install @bbc/psammead-radio-schedule --save
 
 ## Components (WIP)
 
+## RadioSchedule
+
+### Props
+
+<!-- prettier-ignore -->
+| Argument | Type | Required | Default | Example |
+| -------- | ---- | -------- | ------- | ------- |
+| locale | string | yes | N/A | `'en-gb'` |
+| schedules | array | yes | N/A | `[{ id: '1', state: 'live', stateLabel: 'Live', startTime: '1566914061212', locale: 'en-gb', timezone: 'Europe/London', link: 'www.bbc.co.uk', brandTitle: 'This is a brand title', episodeTitle: 'This is an episode title', summary: 'This is a summary', duration: '45:00', durationLabel: 'Duration'}]` |
+| service | string | yes | N/A | `'news'` |
+| script | object | yes | N/A | `{ canon: { groupA: { fontSize: '28', lineHeight: '32',}, groupB: { fontSize: '32', lineHeight: '36', }, groupD: { fontSize: '44', lineHeight: '48', }, }, trafalgar: { groupA: { fontSize: '20', lineHeight: '24', }, groupB: { fontSize: '24', lineHeight: '28', }, groupD: { fontSize: '32', lineHeight: '36', }, }, }` |
+| dir | string | no | `"ltr"` | `"rtl"` |
+
+### Usage
+
+This component displays radio schedule program cards and their start times
+
+```jsx
+import React from 'react';
+import { latin } from '@bbc/gel-foundations/scripts';
+import RadioSchedule from '@bbc/psammead-radio-schedule';
+
+const schedules = [
+  {
+    id: 1,
+    state: 'live',
+    stateLabel: 'Live',
+    startTime: 1566914061212,
+    locale: 'en-gb',
+    timezone: 'Europe/London',
+    link: 'www.bbc.co.uk',
+    brandTitle: 'This is a brand title',
+    episodeTitle: 'This is an episode title',
+    summary: 'This is a summary',
+    duration: '45:00',
+    durationLabel: 'Duration',
+  },
+];
+
+<RadioSchedule
+  schedules={schedules}
+  locale="en-gb"
+  script={latin}
+  service="news"
+  dir="ltr"
+/>;
+```
+
 ## ProgramCard
 
 ### Props
@@ -87,13 +135,13 @@ import StartTime from '@bbc/psammead-radio-schedule/startTime';
 import { latin } from '@bbc/gel-foundations/scripts';
 
 <StartTime
-      script={latin}
-      service="news"
-      timestamp={1566914061212}
-      timezone="Europe/London"
-      locale="en-gb"
-      dir="ltr"
-    />
+  script={latin}
+  service="news"
+  timestamp={1566914061212}
+  timezone="Europe/London"
+  locale="en-gb"
+  dir="ltr"
+/>;
 ```
 
 ### When to use this component
