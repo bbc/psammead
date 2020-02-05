@@ -96,13 +96,6 @@ storiesOf('Components|MediaIndicator/Photo', module)
     { notes },
   )
   .add(
-    'top story photogallery',
-    ({ service }) => (
-      <MediaIndicator type="photogallery" service={service} topStory />
-    ),
-    { notes },
-  )
-  .add(
     'inline photogallery media indicator',
     ({ service }) => (
       <>
