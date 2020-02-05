@@ -2,39 +2,23 @@ import React from 'react';
 import styled, { css } from 'styled-components';
 import { string, oneOf, bool, node } from 'prop-types';
 import { C_WHITE, C_EBON } from '@bbc/psammead-styles/colours';
-import {
-  GEL_SPACING_HLF,
-  GEL_SPACING,
-  GEL_SPACING_QUAD,
-} from '@bbc/gel-foundations/spacings';
-import { GEL_GROUP_1_SCREEN_WIDTH_MAX } from '@bbc/gel-foundations/breakpoints';
-import { GEL_MINION } from '@bbc/gel-foundations/typography';
+import { GEL_SPACING_HLF } from '@bbc/gel-foundations/spacings';
+import { getMinion } from '@bbc/gel-foundations/typography';
 import { getSansRegular } from '@bbc/psammead-styles/font-styles';
 import { mediaIcons } from '@bbc/psammead-assets/svgs';
 
 const MediaIndicatorWrapper = styled.div`
-  padding: ${GEL_SPACING} ${GEL_SPACING_HLF};
+  color: ${C_EBON};
   background-color: ${C_WHITE};
   display: block;
   ${({ service }) => getSansRegular(service)}
-  ${GEL_MINION};
-  color: ${C_EBON};
-  height: ${GEL_SPACING_QUAD};
+  ${({ script }) => script && getMinion(script)};
 
   ${({ isInline }) =>
     isInline &&
     css`
       display: inline-block;
       vertical-align: middle;
-    `}
-
-  ${({ topStory }) =>
-    !topStory &&
-    css`
-      @media (max-width: ${GEL_GROUP_1_SCREEN_WIDTH_MAX}) {
-        height: 1.25rem;
-        padding: ${GEL_SPACING_HLF} ${GEL_SPACING_HLF} 0;
-      }
     `}
 `;
 
