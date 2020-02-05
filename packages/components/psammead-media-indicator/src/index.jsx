@@ -37,14 +37,12 @@ const MediaIndicator = ({
   datetime,
   duration,
   type,
-  topStory,
   service,
   isInline,
   children,
 }) => (
   <MediaIndicatorWrapper
     aria-hidden="true"
-    topStory={topStory}
     service={service}
     isInline={isInline}
   >
@@ -62,7 +60,6 @@ MediaIndicator.propTypes = {
   datetime: string,
   duration: string,
   type: oneOf(['video', 'audio', 'photogallery']),
-  topStory: bool,
   service: string.isRequired,
   isInline: bool,
   children: node,
@@ -72,7 +69,6 @@ MediaIndicator.defaultProps = {
   datetime: null,
   duration: null,
   type: 'video',
-  topStory: false,
   isInline: false,
   children: null,
 };
