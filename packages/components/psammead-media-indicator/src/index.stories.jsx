@@ -26,25 +26,11 @@ storiesOf('Components|MediaIndicator/Video', module)
   .add(
     'video with duration',
     ({ service }) => (
-      <MediaIndicator
-        duration={text('duration', '2:15')}
-        datetime={text('datetime', 'PT2M15S')}
-        type="video"
-        service={service}
-      />
-    ),
-    { notes },
-  )
-  .add(
-    'top story video with duration',
-    ({ service }) => (
-      <MediaIndicator
-        duration={text('duration', '2:15')}
-        datetime={text('datetime', 'PT2M15S')}
-        type="video"
-        topStory
-        service={service}
-      />
+      <MediaIndicator type="video" service={service}>
+        <time dateTime={text('datetime', 'PT2M15S')}>
+          {text('duration', '2:15')}
+        </time>
+      </MediaIndicator>
     ),
     { notes },
   )
@@ -76,25 +62,11 @@ storiesOf('Components|MediaIndicator/Audio', module)
   .add(
     'audio with duration',
     ({ service }) => (
-      <MediaIndicator
-        duration={text('duration', '2:15')}
-        datetime={text('datetime', 'PT2M15S')}
-        type="audio"
-        service={service}
-      />
-    ),
-    { notes },
-  )
-  .add(
-    'top story audio with duration',
-    ({ service }) => (
-      <MediaIndicator
-        duration={text('duration', '2:15')}
-        datetime={text('datetime', 'PT2M15S')}
-        type="audio"
-        topStory
-        service={service}
-      />
+      <MediaIndicator type="audio" service={service}>
+        <time dateTime={text('datetime', 'PT2M15S')}>
+          {text('duration', '2:15')}
+        </time>
+      </MediaIndicator>
     ),
     { notes },
   )
