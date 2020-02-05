@@ -3,7 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 | ------- | ----------- |
-| 3.0.2 | [PR#3058](https://github.com/bbc/psammead/pull/3058) Update `StoryPromoLi` padding top above 1008px |
+| 4.0.0 | [PR#3058](https://github.com/bbc/psammead/pull/3058) Update `StoryPromoLi` padding top above 1008px |
 | 3.0.1 | [PR#3030](https://github.com/bbc/psammead/pull/3030) Talos - Bump Dependencies - @bbc/psammead-styles |
 | 3.0.0 | [PR#3014](https://github.com/bbc/psammead/pull/3014) Ensure border-bottom on list items is only applied for groups 0-3. |
 | 2.1.26 | [PR#2990](https://github.com/bbc/psammead/pull/2990) Use `GEL_SPACING_DBL` and `GEL_SPACING_TRPL` constants |
