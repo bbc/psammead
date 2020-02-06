@@ -6,6 +6,8 @@ import MediaIndicator from '@bbc/psammead-media-indicator';
 import VisuallyHiddenText from '@bbc/psammead-visually-hidden-text';
 import { withServicesKnob } from '@bbc/psammead-storybook-helpers';
 import Grid from '@bbc/psammead-grid';
+import styled from 'styled-components';
+import { GEL_SPACING_HLF } from '@bbc/gel-foundations/spacings';
 import StoryPromo, { Headline, Summary, Link, LiveLabel } from './index';
 import relatedItems from '../testHelpers/relatedItems';
 import IndexAlsosContainer from '../testHelpers/IndexAlsosContainer';
@@ -22,6 +24,10 @@ const buildImg = () => (
   />
 );
 
+const StyledTime = styled.time`
+  padding: 0 ${GEL_SPACING_HLF}
+`;
+
 /* eslint-disable-next-line react/prop-types */
 const MediaIndicatorComponent = ({ type, script, service, mediaIndicatorIsInline }) => {
   return (
@@ -31,7 +37,7 @@ const MediaIndicatorComponent = ({ type, script, service, mediaIndicatorIsInline
       type={type}
       isInline={mediaIndicatorIsInline}
     >
-      {!mediaIndicatorIsInline && <time dateTime="PT2M15S">2:15</time>}
+      {!mediaIndicatorIsInline && <StyledTime dateTime="PT2M15S">2:15</StyledTime>}
     </MediaIndicator>
   );
 };
