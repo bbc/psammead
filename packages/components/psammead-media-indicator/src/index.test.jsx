@@ -65,16 +65,3 @@ describe('MediaIndicator', () => {
     <MediaIndicator type="photogallery" service="news" />,
   );
 });
-
-describe('MediaIndicator - Top Story', () => {
-  shouldMatchSnapshot(
-    'should render a top story audio promo render correctly',
-    <MediaIndicator
-      duration="2:15"
-      datetime="PT2M15S"
-      type="audio"
-      topStory
-      service="news"
-    />,
-  );
-});
