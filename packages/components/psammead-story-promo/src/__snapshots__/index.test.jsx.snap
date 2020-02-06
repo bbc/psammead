@@ -986,6 +986,8 @@ exports[`StoryPromo - Top Story should render with multiple Index Alsos correctl
   font-family: ReithSans,Helvetica,Arial,sans-serif;
   font-weight: 400;
   font-style: normal;
+  font-size: 0.75rem;
+  line-height: 1rem;
   display: inline-block;
   vertical-align: middle;
   padding-right: 0.5rem;
@@ -1132,6 +1134,20 @@ exports[`StoryPromo - Top Story should render with multiple Index Alsos correctl
 
 .c11:visited {
   color: #6E6E73;
+}
+
+@media (min-width:20rem) and (max-width:37.4375rem) {
+  .c13 {
+    font-size: 0.75rem;
+    line-height: 1rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .c13 {
+    font-size: 0.75rem;
+    line-height: 1rem;
+  }
 }
 
 @media (min-width:37.5rem) {
@@ -1371,6 +1387,8 @@ exports[`StoryPromo - Top Story should render with one Index Also correctly 1`] 
   font-family: ReithSans,Helvetica,Arial,sans-serif;
   font-weight: 400;
   font-style: normal;
+  font-size: 0.75rem;
+  line-height: 1rem;
   display: inline-block;
   vertical-align: middle;
   padding-right: 0.5rem;
@@ -1511,6 +1529,20 @@ exports[`StoryPromo - Top Story should render with one Index Also correctly 1`] 
 
 .c10:visited {
   color: #6E6E73;
+}
+
+@media (min-width:20rem) and (max-width:37.4375rem) {
+  .c12 {
+    font-size: 0.75rem;
+    line-height: 1rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .c12 {
+    font-size: 0.75rem;
+    line-height: 1rem;
+  }
 }
 
 @media (min-width:37.5rem) {

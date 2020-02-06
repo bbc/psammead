@@ -1171,7 +1171,7 @@ storiesOf(STORY_KIND, module)
       // eslint-disable-next-line react/prop-types
       const generateStory = ({ topStory, alsoItems = null, mediaType }) => {
         const MediaIndicatorComponent = type => (
-          <ExampleMediaIndicatorWithSpacing service={service} type={type}>
+          <ExampleMediaIndicatorWithSpacing script={script} service={service} type={type}>
             {type !== 'photogallery' && <time dateTime="PT2M15S">2:15</time>}
           </ExampleMediaIndicatorWithSpacing>
         );
