@@ -173,7 +173,7 @@ exports[`StoryPromo list should render correctly 1`] = `
 
 @media (min-width:63rem) {
   .c1 {
-    padding: 1.5rem 0 1.5rem;
+    padding: 0 0 1.5rem;
   }
 }
 
