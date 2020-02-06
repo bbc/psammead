@@ -53,6 +53,10 @@ export const ExampleMediaIndicatorWithSpacing = styled(MediaIndicator)`
   }
 `;
 
+export const ExampleTime = styled.time`
+  padding: 0 ${GEL_SPACING_HLF};
+`;
+
 ExampleParagraph.propTypes = {
   identifier: string,
 };

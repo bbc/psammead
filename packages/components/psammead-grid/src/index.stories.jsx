@@ -14,6 +14,7 @@ import {
   ExampleImage,
   ExampleParagraph,
   ExampleMediaIndicatorWithSpacing,
+  ExampleTime,
 } from './testHelpers';
 import notes from '../README.md';
 
@@ -1172,7 +1173,7 @@ storiesOf(STORY_KIND, module)
       const generateStory = ({ topStory, alsoItems = null, mediaType }) => {
         const MediaIndicatorComponent = type => (
           <ExampleMediaIndicatorWithSpacing script={script} service={service} type={type}>
-            {type !== 'photogallery' && <time dateTime="PT2M15S">2:15</time>}
+            {type !== 'photogallery' && <ExampleTime dateTime="PT2M15S">2:15</ExampleTime>}
           </ExampleMediaIndicatorWithSpacing>
         );
 
