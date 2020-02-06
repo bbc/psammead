@@ -23,9 +23,10 @@ const buildImg = () => (
 );
 
 /* eslint-disable-next-line react/prop-types */
-const MediaIndicatorComponent = ({ type, service, mediaIndicatorIsInline }) => {
+const MediaIndicatorComponent = ({ type, script, service, mediaIndicatorIsInline }) => {
   return (
     <MediaIndicator
+      script={script}
       service={service}
       type={type}
       isInline={mediaIndicatorIsInline}
@@ -145,6 +146,7 @@ const generateStory = ({
         mediaType !== 'No media' &&
         MediaIndicatorComponent({
           type: mediaType,
+          script,
           service,
           mediaIndicatorIsInline: mediaType && !displayImage,
         })
