@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 2.0.73 | [PR#3073](https://github.com/bbc/psammead/pull/3073) Update `@bbc/psammead-media-indicator` to major version 4 & update relvant usage in packages. |
 | 2.0.72 | [PR#3038](https://github.com/bbc/psammead/pull/3038) Refactor no-JS scenarios for @bbc/psammead-media-player, adding jest-dom |
 | 2.0.71 | [PR#3051](https://github.com/bbc/psammead/pull/3051) Bumping dependencies |
 | 2.0.70 | [PR#2988](https://github.com/bbc/psammead/pull/2988) Add @bbc/psammead-timestamp-container to dependencies |
