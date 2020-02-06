@@ -1,8 +1,14 @@
 import React from 'react';
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 import { node, bool, string, oneOf, shape } from 'prop-types';
-import { GEL_SPACING, GEL_SPACING_DBL } from '@bbc/gel-foundations/spacings';
 import {
+  GEL_SPACING_HLF,
+  GEL_SPACING,
+  GEL_SPACING_DBL,
+  GEL_SPACING_QUAD,
+} from '@bbc/gel-foundations/spacings';
+import {
+  GEL_GROUP_1_SCREEN_WIDTH_MAX,
   GEL_GROUP_2_SCREEN_WIDTH_MIN,
   GEL_GROUP_2_SCREEN_WIDTH_MAX,
   GEL_GROUP_3_SCREEN_WIDTH_MIN,
@@ -71,24 +77,51 @@ const ImageContentsWrapper = styled.div`
   position: relative;
 `;
 
-const positionBottomOfParent = `
-  position: absolute;
-  bottom: 0;
+// These styles are to ensure we have the correct positioning
+// & spacing of the Media Indicator over the Image
+// here in the Story Promo
+
+/* A bug with the case when mediaIndicatorIsInline is true */
+const conditionalStyles = css`
+  ${({ mediaIndicatorIsInline }) => {
+    return mediaIndicatorIsInline
+      ? `& svg { margin: 0; }`
+      : `
+  > * {
+    height: ${GEL_SPACING_QUAD};
+    padding: ${GEL_SPACING} ${GEL_SPACING_HLF};
+  }
+  `;
+  }}
 `;
 
-const positionBottomOfParentGroup2 = `
+const mediaIndicatorStylesTopLeading = css`
+  position: absolute;
+  bottom: 0;
+  ${conditionalStyles}
+`;
+
+const mediaIndicatorStylesRegular = css`
   @media (min-width: ${GEL_GROUP_2_SCREEN_WIDTH_MIN}) {
-    ${positionBottomOfParent}
+    position: absolute;
+    bottom: 0;
   }
+  > * {
+    @media (max-width: ${GEL_GROUP_1_SCREEN_WIDTH_MAX}) {
+      height: 1.25rem;
+      padding: ${GEL_SPACING_HLF} ${GEL_SPACING_HLF} 0;
+    }
+  }
+  ${conditionalStyles}
 `;
 
 const mediaIndicatorStyles = {
-  top: positionBottomOfParent,
-  regular: positionBottomOfParentGroup2,
-  leading: positionBottomOfParentGroup2,
+  top: mediaIndicatorStylesTopLeading,
+  regular: mediaIndicatorStylesRegular,
+  leading: mediaIndicatorStylesTopLeading,
 };
 
-const InlineMediaIndicator = styled.div`
+const ImageOverlayWrapper = styled.div`
   ${({ promoType }) => mediaIndicatorStyles[promoType]}
 `;
 
@@ -110,6 +143,9 @@ export const Headline = styled.h3`
   padding-bottom: ${GEL_SPACING};
   ${({ service }) => getSerifMedium(service)}
   ${({ script, promoType }) => script && headlineTypography(script)[promoType]}
+  ${({ promoHasImage }) =>
+    !promoHasImage &&
+    `display: inline;`} /* Needed for aligning Media Indicator with Headline */
 `;
 
 Headline.propTypes = {
@@ -225,6 +261,7 @@ const StoryPromo = ({
   mediaIndicator,
   promoType,
   displayImage,
+  mediaIndicatorIsInline,
   ...props
 }) => {
   const renderImage = displayImage && (
@@ -232,9 +269,12 @@ const StoryPromo = ({
       <ImageContentsWrapper>
         {image}
         {mediaIndicator && (
-          <InlineMediaIndicator promoType={promoType}>
+          <ImageOverlayWrapper
+            mediaIndicatorIsInline={mediaIndicatorIsInline}
+            promoType={promoType}
+          >
             {mediaIndicator}
-          </InlineMediaIndicator>
+          </ImageOverlayWrapper>
         )}
       </ImageContentsWrapper>
     </ImageGridItem>
@@ -270,12 +310,14 @@ StoryPromo.propTypes = {
   mediaIndicator: node,
   promoType: PROMO_TYPES,
   displayImage: bool,
+  mediaIndicatorIsInline: bool,
 };
 
 StoryPromo.defaultProps = {
   mediaIndicator: null,
   promoType: 'regular',
   displayImage: true,
+  mediaIndicatorIsInline: false,
 };
 
 export default StoryPromo;

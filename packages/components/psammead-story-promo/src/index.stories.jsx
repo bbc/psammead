@@ -22,14 +22,16 @@ const buildImg = () => (
   />
 );
 
-const MediaIndicatorComponent = (type, service, displayImage) => {
+/* eslint-disable-next-line react/prop-types */
+const MediaIndicatorComponent = ({ type, service, mediaIndicatorIsInline }) => {
   return (
     <MediaIndicator
-      duration={displayImage && type !== 'photogallery' && '2:15'}
-      datetime="PT2M15S"
       service={service}
       type={type}
-    />
+      isInline={mediaIndicatorIsInline}
+    >
+      {!mediaIndicatorIsInline && <time dateTime="PT2M15S">2:15</time>}
+    </MediaIndicator>
   );
 };
 
@@ -67,6 +69,7 @@ const InfoComponent = ({
   type,
   alsoItems,
   promoHasImage,
+  mediaIndicatorIsInline,
 }) => (
   <>
     <Headline
@@ -74,6 +77,7 @@ const InfoComponent = ({
       promoType={promoType}
       service={service}
       promoHasImage={promoHasImage}
+      mediaIndicatorIsInline={mediaIndicatorIsInline}
     >
       <Link href="https://www.bbc.co.uk/news">
         {isLive ? (
@@ -125,6 +129,7 @@ const generateStory = ({
       type={mediaType}
       alsoItems={alsoItems}
       promoHasImage={displayImage}
+      mediaIndicatorIsInline={mediaType && !displayImage}
     />
   );
 
@@ -135,9 +140,14 @@ const generateStory = ({
       image={Img}
       info={Info}
       displayImage={displayImage}
+      mediaIndicatorIsInline={!displayImage}
       mediaIndicator={
         mediaType !== 'No media' &&
-        MediaIndicatorComponent(mediaType, service, displayImage)
+        MediaIndicatorComponent({
+          type: mediaType,
+          service,
+          mediaIndicatorIsInline: mediaType && !displayImage,
+        })
       }
       promoType={promoType}
     />
