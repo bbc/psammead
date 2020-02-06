@@ -111,7 +111,7 @@ const generateStory = ({
   promoType,
   alsoItems = null,
   displayImage = true,
-}) => ({ text: textSnippet, script, service, dir }) => {
+}) => ({ longText: textSnippet, script, service, dir }) => {
   const mediaType = select(
     'Media Type',
     ['No media', 'video', 'audio', 'photogallery'],
