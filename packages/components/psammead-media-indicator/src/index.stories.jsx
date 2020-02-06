@@ -37,7 +37,7 @@ storiesOf('Components|MediaIndicator/Video', module)
   .add(
     'video with duration',
     ({ service }) => (
-      <MediaIndicator type="video" service={service} isInline>
+      <MediaIndicator type="video" service={service}>
         <TimeDuration dateTime={text('datetime', 'PT2M15S')}>
           {text('duration', '2:15')}
         </TimeDuration>
