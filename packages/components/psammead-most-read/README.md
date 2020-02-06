@@ -72,24 +72,6 @@ const items = [
 />;
 ```
 
-The `className` prop allows additional styles to be applied to the components `MostReadSection` wrapper. This is intended to be passed by `styled-components`.
-
-```jsx
-import styled from 'styled-components';
-
-const StyledMostRead = styled(MostRead)`
-  margin: 0 auto;
-`;
-
-<StyledMostRead
-  items={items}
-  script={script}
-  service="arabic"
-  header="الأكثر قراءة"
-  dir="rtl"
-/>;
-```
-
 ## MostReadList
 
 ### Props
