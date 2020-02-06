@@ -13,10 +13,7 @@ The `MediaIndicator` component provides a 'play', 'audio' or 'camera' icon as we
 <!-- prettier-ignore -->
 | Argument   | Type    | Required | Default | Example      |
 | ---------- | ------- | -------- | ------- | ------------ |
-| duration   | string  | No       | Null    | '2:15'       |
-| datetime   | string  | No       | Null    | 'PT2M15S'    |
 | type       | string  | No       | 'video' | 'audio'      |
-| topStory   | boolean | No       | false   | true         |
 | service    | string  | Yes      | N/A     | `'news'`     |
 | isInline   | boolean | No       | false   | true         |
 | children   | node    | No       | null    | <IndexAlsos> |
@@ -32,19 +29,14 @@ The `MediaIndicator` component provides a 'play', 'audio' or 'camera' icon as we
 
 The typical use-case of this component is on top of images within promos for articles that contains a video asset at the top of the page. It indicates to the user that the link is to a video and how long the video is in duration.
 
-For top story promos, we should pass the `topStory` prop to the `Media Indicator` to keep the same padding, otherwise this will be modified under 400px.
-
 Top story promos can also have related stories links called `Index Alsos`. When an Index Also item is a video, audio or photogallery, an icon should be displayed with the content using the `MediaIndicator` component passing the `isInline` prop.
+
+When using this component ensure you add the relevant spacing.
 
 ```jsx
 import MediaIndicator from '@bbc/psammead-media-indicator';
 
-<MediaIndicator
-  duration="2:15"
-  datetime="PT2M15S"
-  type="audio"
-  service="news"
-/>;
+<MediaIndicator type="audio" service="news" />;
 ```
 
 ### When to use this component
