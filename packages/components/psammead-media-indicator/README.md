@@ -36,8 +36,9 @@ When using this component ensure you add the relevant spacing.
 
 ```jsx
 import MediaIndicator from '@bbc/psammead-media-indicator';
+import { latin } from '@bbc/gel-foundations/scripts';
 
-<MediaIndicator type="audio" service="news" />;
+<MediaIndicator type="audio" script={latin} service="news" />;
 ```
 
 ### When to use this component
