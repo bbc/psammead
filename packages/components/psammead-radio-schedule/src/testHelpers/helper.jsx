@@ -15,7 +15,7 @@ export const renderProgramCard = ({
   stateLabel,
   service = 'news',
   episodeTitle = '29/01/1990',
-  duration = '30:00',
+  duration = 'PT30M',
   durationLabel = 'Duration',
 }) => {
   const { text, articlePath, longText, dir } = TEXT_VARIANTS[service];

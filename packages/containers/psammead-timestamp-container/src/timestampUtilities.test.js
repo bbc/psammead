@@ -16,7 +16,7 @@ describe('Timestamp utility functions', () => {
     it('should return duration in expected format', () => {
       const durationInISO8601Format = 'PT30M'; // 30:00
 
-      expect(formatDuration(durationInISO8601Format, 'mm:ss')).toEqual('30:00');
+      expect(formatDuration(durationInISO8601Format)).toEqual('30:00');
     });
   });
 
