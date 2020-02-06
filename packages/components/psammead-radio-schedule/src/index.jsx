@@ -19,7 +19,14 @@ const StyledGrid = styled(Grid)`
   }
 `;
 
-const renderSchedule = ({ service, script, dir, locale, program }) => {
+const renderSchedule = ({
+  service,
+  script,
+  dir,
+  timezone,
+  locale,
+  program,
+}) => {
   const {
     state,
     stateLabel,
@@ -43,6 +50,7 @@ const renderSchedule = ({ service, script, dir, locale, program }) => {
           service={service}
           script={script}
           locale={locale}
+          timezone={timezone}
           dir={dir}
         />
       </StartTimeWrapper>
@@ -113,8 +121,6 @@ const programPropTypes = shape({
   state: string.isRequired,
   stateLabel: string.isRequired,
   startTime: number.isRequired,
-  locale: string.isRequired,
-  timezone: string.isRequired,
   link: string.isRequired,
   brandTitle: string.isRequired,
   episodeTitle: string.isRequired,
@@ -124,7 +130,8 @@ const programPropTypes = shape({
 });
 
 const sharedProps = {
-  locale: string.isRequired,
+  timezone: string,
+  locale: string,
   service: string.isRequired,
   script: shape(scriptPropType).isRequired,
   dir: oneOf(['rtl', 'ltr']),
@@ -140,9 +147,11 @@ RadioSchedule.propTypes = {
   ...sharedProps,
 };
 
+/* eslint-disable react/default-props-match-prop-types */
 RadioSchedule.defaultProps = {
-  // eslint-disable-next-line react/default-props-match-prop-types
   dir: 'ltr',
+  timezone: 'Europe/London',
+  locale: 'en-gb',
 };
 
 export default RadioSchedule;
