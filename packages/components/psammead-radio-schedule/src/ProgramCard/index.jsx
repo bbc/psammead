@@ -21,7 +21,7 @@ import {
   getPica,
 } from '@bbc/gel-foundations/typography';
 import { Link } from '@bbc/psammead-story-promo';
-import { oneOf, shape, string } from 'prop-types';
+import { oneOf, shape, string, number } from 'prop-types';
 import { scriptPropType } from '@bbc/gel-foundations/prop-types';
 import VisuallyHiddenText from '@bbc/psammead-visually-hidden-text';
 import { formatUnixTimestamp } from '../../../../containers/psammead-timestamp-container/src/timestampUtilities';
@@ -247,13 +247,22 @@ const programCardPropTypes = {
   link: string.isRequired,
   state: string.isRequired,
   stateLabel: string.isRequired,
-  startTime: string.isRequired,
+  startTime: number.isRequired,
+};
+
+const programCardDefaultPropTypes = {
+  timezone: 'Europe/London',
+  locale: 'en-gb',
 };
 
 renderHeaderContent.propTypes = {
   ...programCardPropTypes,
   timezone: string,
   locale: string,
+};
+
+renderHeaderContent.defaultProps = {
+  ...programCardDefaultPropTypes,
 };
 
 ProgramCard.propTypes = {
@@ -268,13 +277,7 @@ ProgramCard.propTypes = {
 
 ProgramCard.defaultProps = {
   dir: 'ltr',
-  timezone: 'Europe/London',
-  locale: 'en-gb',
-};
-
-renderHeaderContent.defaultProps = {
-  timezone: 'Europe/London',
-  locale: 'en-gb',
+  ...programCardDefaultPropTypes,
 };
 
 export default ProgramCard;
