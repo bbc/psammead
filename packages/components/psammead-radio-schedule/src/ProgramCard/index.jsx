@@ -24,6 +24,7 @@ import { Link } from '@bbc/psammead-story-promo';
 import { oneOf, shape, string } from 'prop-types';
 import { scriptPropType } from '@bbc/gel-foundations/prop-types';
 import VisuallyHiddenText from '@bbc/psammead-visually-hidden-text';
+import { formatUnixTimestamp } from '../../../../containers/psammead-timestamp-container/src/timestampUtilities';
 
 const CardWrapper = styled.div`
   padding-top: ${GEL_SPACING};
@@ -127,12 +128,22 @@ const renderHeaderContent = ({
   service,
   script,
   startTime,
+  timezone,
+  locale,
 }) => {
   const isOnDemand = state === 'onDemand';
   const isLive = state === 'live';
   const hiddenTextProps = stateLabel === 'Live' ? { lang: 'en-GB' } : {};
 
   const labelWrapperProps = isLive ? { 'aria-hidden': 'true' } : {};
+
+  const formattedStartTime = formatUnixTimestamp(
+    startTime,
+    'HH:mm',
+    timezone,
+    locale,
+    false,
+  );
 
   const content = (
     <HeadingContentWrapper>
@@ -156,7 +167,7 @@ const renderHeaderContent = ({
         {!isOnDemand && ` `}
         {brandTitle}
       </span>
-      <VisuallyHiddenText>, {startTime}, </VisuallyHiddenText>
+      <VisuallyHiddenText>, {formattedStartTime}, </VisuallyHiddenText>
       <TitleWrapper
         service={service}
         script={script}
@@ -183,6 +194,8 @@ const ProgramCard = ({
   state,
   stateLabel,
   link,
+  timezone,
+  locale,
 }) => (
   <CardWrapper>
     <TextWrapper>
@@ -200,6 +213,8 @@ const ProgramCard = ({
           service,
           script,
           startTime,
+          timezone,
+          locale,
         })}
       </HeadingWrapper>
       <SummaryWrapper service={service} script={script}>
@@ -237,6 +252,8 @@ const programCardPropTypes = {
 
 renderHeaderContent.propTypes = {
   ...programCardPropTypes,
+  timezone: string,
+  locale: string,
 };
 
 ProgramCard.propTypes = {
@@ -245,10 +262,19 @@ ProgramCard.propTypes = {
   duration: string.isRequired,
   summary: string.isRequired,
   ...programCardPropTypes,
+  timezone: string,
+  locale: string,
 };
 
 ProgramCard.defaultProps = {
   dir: 'ltr',
+  timezone: 'Europe/London',
+  locale: 'en-gb',
+};
+
+renderHeaderContent.defaultProps = {
+  timezone: 'Europe/London',
+  locale: 'en-gb',
 };
 
 export default ProgramCard;
