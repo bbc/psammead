@@ -29,11 +29,7 @@ stateTypes.forEach(state => {
     `${state}`,
     () =>
       newsServiceDecorator(({ service }) =>
-        renderProgramCard({
-          service,
-          state,
-          stateLabel: sentenceCase(state),
-        }),
+        renderProgramCard({ service, state, stateLabel: sentenceCase(state) }),
       ),
     { notes },
   );

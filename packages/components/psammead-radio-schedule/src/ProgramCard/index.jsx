@@ -248,6 +248,8 @@ const programCardPropTypes = {
   state: string.isRequired,
   stateLabel: string.isRequired,
   startTime: number.isRequired,
+  timezone: string,
+  locale: string,
 };
 
 const programCardDefaultPropTypes = {
@@ -257,8 +259,6 @@ const programCardDefaultPropTypes = {
 
 renderHeaderContent.propTypes = {
   ...programCardPropTypes,
-  timezone: string,
-  locale: string,
 };
 
 renderHeaderContent.defaultProps = {
@@ -271,8 +271,6 @@ ProgramCard.propTypes = {
   duration: string.isRequired,
   summary: string.isRequired,
   ...programCardPropTypes,
-  timezone: string,
-  locale: string,
 };
 
 ProgramCard.defaultProps = {
