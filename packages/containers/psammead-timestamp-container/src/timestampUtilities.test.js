@@ -3,6 +3,7 @@ import {
   unixTimestampToMoment,
   formatUnixTimestamp,
   isValidDateTime,
+  formatDuration,
 } from './timestampUtilities';
 import timestampGenerator from './helpers/testHelpers';
 
@@ -11,6 +12,14 @@ const timestamp = 1539969006000; // 19 October 2018
 const locale = 'en-gb';
 
 describe('Timestamp utility functions', () => {
+  describe('formatDuration', () => {
+    it('should return duration in expected format', () => {
+      const durationInISO8601Format = 'PT30M'; // 30:00
+
+      expect(formatDuration(durationInISO8601Format, 'mm:ss')).toEqual('30:00');
+    });
+  });
+
   describe('isValidDateTime', () => {
     it('should return true if timestamp is valid', () => {
       expect(isValidDateTime(timestamp)).toEqual(true);
