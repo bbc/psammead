@@ -16,10 +16,12 @@ Psammead Grid is a component that you can use to set out column-based layouts us
 | -------- | ---- | -------- | ------- | ------- |
 | columns | object | yes | N/A | `{ group0: 6, group1: 6, group2: 6, group3: 6, group4: 8, group5: 20 }` |
 | startOffset | object | no | Sets all values as 1 for each of the groups defined in `columns` | `{ group0: 1, group1: 1, group2: 1, group3: 1, group4: 2, group5: 5 }` |
-| item | boolean | no | false | `item` |
+| item | boolean | no | false | true |
 | enableGelGutters | boolean | no | false | `enableGelGutter` |
 | margins | object | no | `{ group0: false, group1: false, group2: false, group3: false, group4: false, group5: false }` | `{ group0: true, group1: true, group2: true, group3: true }` |
 | parentColumns | object | no | null | `columns: { group0: 6, group1: 6, group2: 3, group3: 3, group4: 4, group5: 4}` |
+| parentEnableGelGutters | boolean | no | false | true |
+| dir | string | no | `'ltr'` | `'rtl'` |
 
 - When should I use the `columns` prop?
   - This should always be defined.
@@ -70,6 +72,9 @@ Psammead Grid is a component that you can use to set out column-based layouts us
   - The Grid implementation only has gutters/margins for columns, [according to the GEL specification](https://www.bbc.co.uk/gel/guidelines/grid#grid-sizes). This is to allow flexibility for a variety of spacing. To add vertical spacing, you should add padding/margin/top/bottom to the contents.
 - When should I use the `parentColumns` prop?
   - `parentColumns` is an object structured just like the `columns` prop. This prop explicitly passes the parent grid's columns configuration into a child `<Grid>` element. [See example.](https://github.com/bbc/psammead/tree/latest/packages/components/psammead-grid#parentcolumns-prop)
+- When should I use the `parentEnableGelGutters` prop?
+  - `parentEnableGelGutters` is a boolean value that defines whether gutters have been enabled on the parent grid. [See example.](https://github.com/bbc/psammead/tree/latest/packages/components/psammead-grid#parentcolumns-prop)
+  - This props should only be passed to child grid that are not rendered direct inside of the parent grid.
 
 ## Usage
 
@@ -311,14 +316,15 @@ const MyComponent = () => (
 );
 ```
 
-#### <a name="parentcolumns-prop">Child grid using parentColumns prop</a>
+#### <a name="parentcolumns-prop">Child grid using parentColumns and parentEnableGelGutters props</a>
 
-Note that, any time you render a child `<Grid>` outside of the parent grid, the parent's columns configuration is not automagically passed to the child. This causes the layout to break in browsers that do not support css grid. To ensure the configuration is passed correctly, you need to explicitly pass in the parentColumns prop.
+Note that, any time you render a child `<Grid>` outside of the parent grid, the parent's columns and gutters configuration is not automagically passed to the child. This causes the layout to break in browsers that do not support css grid. To ensure the configuration is passed correctly, you need to explicitly pass in these props.
 
 ```jsx
 import Grid from '@bbc/psammead-grid';
 
 const parentProps = {
+  enableGelGutters: true,
   columns: {
     group0: 6,
     group1: 6,
@@ -341,7 +347,11 @@ const childProps = {
 };
 
 const renderChildGrid = () => (
-  <Grid parentColumns={parentProps.columns} {...childProps}>
+  <Grid
+    parentEnableGelGutters={parentProps.enableGelGutters}
+    parentColumns={parentProps.columns}
+    {...childProps}
+  >
     <ExampleParagraph />
   </Grid>
 );
