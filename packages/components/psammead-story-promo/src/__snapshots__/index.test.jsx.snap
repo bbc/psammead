@@ -223,16 +223,12 @@ exports[`StoryPromo - Leading Story should render with Media Indicator correctly
 }
 
 .c8 {
-  padding: 0.5rem 0.25rem;
+  color: #222222;
   background-color: #FFFFFF;
-  display: block;
   font-family: ReithSans,Helvetica,Arial,sans-serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 0.75rem;
-  line-height: 1rem;
-  color: #222222;
-  height: 2rem;
+  display: block;
 }
 
 .c9 {
@@ -245,11 +241,6 @@ exports[`StoryPromo - Leading Story should render with Media Indicator correctly
   -ms-flex-align: center;
   align-items: center;
   height: 100%;
-}
-
-.c11 {
-  vertical-align: middle;
-  margin: 0 0.25rem;
 }
 
 .c5 {
@@ -271,6 +262,16 @@ exports[`StoryPromo - Leading Story should render with Media Indicator correctly
 
 .c6 {
   position: relative;
+}
+
+.c7 {
+  position: absolute;
+  bottom: 0;
+}
+
+.c7 > * {
+  height: 2rem;
+  padding: 0.5rem 0.25rem;
 }
 
 .c2 {
@@ -324,11 +325,9 @@ exports[`StoryPromo - Leading Story should render with Media Indicator correctly
   color: #6E6E73;
 }
 
-@media (max-width:24.9375rem) {
-  .c8 {
-    height: 1.25rem;
-    padding: 0.25rem 0.25rem 0;
-  }
+.c11 {
+  vertical-align: middle;
+  margin: 0 0.25rem;
 }
 
 @media (min-width:37.5rem) {
@@ -385,13 +384,6 @@ exports[`StoryPromo - Leading Story should render with Media Indicator correctly
     display: grid;
     grid-template-columns: repeat(6,1fr);
     grid-column-gap: 0.5rem;
-  }
-}
-
-@media (min-width:25rem) {
-  .c7 {
-    position: absolute;
-    bottom: 0;
   }
 }
 
@@ -496,7 +488,6 @@ exports[`StoryPromo - Leading Story should render with Media Indicator correctly
             </svg>
             <time
               class="c11"
-              datetime="PT2M15S"
             >
               2:15
             </time>
@@ -717,16 +708,12 @@ exports[`StoryPromo - Top Story should render with Media Indicator correctly 1`]
 }
 
 .c4 {
-  padding: 0.5rem 0.25rem;
+  color: #222222;
   background-color: #FFFFFF;
-  display: block;
   font-family: ReithSans,Helvetica,Arial,sans-serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 0.75rem;
-  line-height: 1rem;
-  color: #222222;
-  height: 2rem;
+  display: block;
 }
 
 .c5 {
@@ -739,11 +726,6 @@ exports[`StoryPromo - Top Story should render with Media Indicator correctly 1`]
   -ms-flex-align: center;
   align-items: center;
   height: 100%;
-}
-
-.c7 {
-  vertical-align: middle;
-  margin: 0 0.25rem;
 }
 
 .c1 {
@@ -770,6 +752,11 @@ exports[`StoryPromo - Top Story should render with Media Indicator correctly 1`]
 .c3 {
   position: absolute;
   bottom: 0;
+}
+
+.c3 > * {
+  height: 2rem;
+  padding: 0.5rem 0.25rem;
 }
 
 .c9 {
@@ -823,11 +810,9 @@ exports[`StoryPromo - Top Story should render with Media Indicator correctly 1`]
   color: #6E6E73;
 }
 
-@media (max-width:24.9375rem) {
-  .c4 {
-    height: 1.25rem;
-    padding: 0.25rem 0.25rem 0;
-  }
+.c7 {
+  vertical-align: middle;
+  margin: 0 0.25rem;
 }
 
 @media (min-width:37.5rem) {
@@ -952,7 +937,6 @@ exports[`StoryPromo - Top Story should render with Media Indicator correctly 1`]
             </svg>
             <time
               class="c7"
-              datetime="PT2M15S"
             >
               2:15
             </time>
@@ -987,7 +971,7 @@ exports[`StoryPromo - Top Story should render with Media Indicator correctly 1`]
 `;
 
 exports[`StoryPromo - Top Story should render with multiple Index Alsos correctly 1`] = `
-.c14 {
+.c15 {
   vertical-align: middle;
   margin: 0 0.25rem;
   color: #222222;
@@ -996,8 +980,27 @@ exports[`StoryPromo - Top Story should render with multiple Index Alsos correctl
   height: 0.75rem;
 }
 
-.c13 > svg {
-  margin: 0;
+.c13 {
+  color: #222222;
+  background-color: #FFFFFF;
+  font-family: ReithSans,Helvetica,Arial,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  display: inline-block;
+  vertical-align: middle;
+  padding-right: 0.5rem;
+}
+
+.c14 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 100%;
 }
 
 .c8 {
@@ -1105,7 +1108,7 @@ exports[`StoryPromo - Top Story should render with multiple Index Alsos correctl
   padding-right: 0.5rem;
 }
 
-.c15 {
+.c16 {
   display: inline;
   vertical-align: middle;
 }
@@ -1291,23 +1294,27 @@ exports[`StoryPromo - Top Story should render with multiple Index Alsos correctl
               class="c12"
               dir="ltr"
             >
-              <span
+              <div
                 aria-hidden="true"
                 class="c13"
               >
-                <svg
-                  aria-hidden="true"
+                <div
                   class="c14"
-                  focusable="false"
-                  height="12px"
-                  viewBox="0 0 32 32"
-                  width="12px"
                 >
-                  <polygon
-                    points="3,32 29,16 3,0"
-                  />
-                </svg>
-              </span>
+                  <svg
+                    aria-hidden="true"
+                    class="c15"
+                    focusable="false"
+                    height="12px"
+                    viewBox="0 0 32 32"
+                    width="12px"
+                  >
+                    <polygon
+                      points="3,32 29,16 3,0"
+                    />
+                  </svg>
+                </div>
+              </div>
             </span>
             <span
               class=""
@@ -1320,7 +1327,7 @@ exports[`StoryPromo - Top Story should render with multiple Index Alsos correctl
                 , 
               </span>
               <span
-                class="c15"
+                class="c16"
               >
                 APC ba ta isa ta kore ni ba – Buba Galadima
               </span>
@@ -1336,7 +1343,7 @@ exports[`StoryPromo - Top Story should render with multiple Index Alsos correctl
             href="/hausa/labarai-42837051"
           >
             <span
-              class="c15"
+              class="c16"
             >
               Yaushe Obasanjo ya fara yi wa shugabannin kasa baki?
             </span>
@@ -1349,7 +1356,7 @@ exports[`StoryPromo - Top Story should render with multiple Index Alsos correctl
 `;
 
 exports[`StoryPromo - Top Story should render with one Index Also correctly 1`] = `
-.c13 {
+.c14 {
   vertical-align: middle;
   margin: 0 0.25rem;
   color: #222222;
@@ -1358,8 +1365,27 @@ exports[`StoryPromo - Top Story should render with one Index Also correctly 1`] 
   height: 0.75rem;
 }
 
-.c12 > svg {
-  margin: 0;
+.c12 {
+  color: #222222;
+  background-color: #FFFFFF;
+  font-family: ReithSans,Helvetica,Arial,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  display: inline-block;
+  vertical-align: middle;
+  padding-right: 0.5rem;
+}
+
+.c13 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 100%;
 }
 
 .c8 {
@@ -1461,7 +1487,7 @@ exports[`StoryPromo - Top Story should render with one Index Also correctly 1`] 
   padding-right: 0.5rem;
 }
 
-.c14 {
+.c15 {
   display: inline;
   vertical-align: middle;
 }
@@ -1642,23 +1668,27 @@ exports[`StoryPromo - Top Story should render with one Index Also correctly 1`] 
             class="c11"
             dir="ltr"
           >
-            <span
+            <div
               aria-hidden="true"
               class="c12"
             >
-              <svg
-                aria-hidden="true"
+              <div
                 class="c13"
-                focusable="false"
-                height="12px"
-                viewBox="0 0 32 32"
-                width="12px"
               >
-                <polygon
-                  points="3,32 29,16 3,0"
-                />
-              </svg>
-            </span>
+                <svg
+                  aria-hidden="true"
+                  class="c14"
+                  focusable="false"
+                  height="12px"
+                  viewBox="0 0 32 32"
+                  width="12px"
+                >
+                  <polygon
+                    points="3,32 29,16 3,0"
+                  />
+                </svg>
+              </div>
+            </div>
           </span>
           <span
             class=""
@@ -1671,7 +1701,7 @@ exports[`StoryPromo - Top Story should render with one Index Also correctly 1`] 
               , 
             </span>
             <span
-              class="c14"
+              class="c15"
             >
               APC ba ta isa ta kore ni ba – Buba Galadima
             </span>
@@ -2373,16 +2403,12 @@ exports[`StoryPromo with Media Indicator should render correctly 1`] = `
 }
 
 .c4 {
-  padding: 0.5rem 0.25rem;
+  color: #222222;
   background-color: #FFFFFF;
-  display: block;
   font-family: ReithSans,Helvetica,Arial,sans-serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 0.75rem;
-  line-height: 1rem;
-  color: #222222;
-  height: 2rem;
+  display: block;
 }
 
 .c5 {
@@ -2395,11 +2421,6 @@ exports[`StoryPromo with Media Indicator should render correctly 1`] = `
   -ms-flex-align: center;
   align-items: center;
   height: 100%;
-}
-
-.c7 {
-  vertical-align: middle;
-  margin: 0 0.25rem;
 }
 
 .c1 {
@@ -2422,6 +2443,11 @@ exports[`StoryPromo with Media Indicator should render correctly 1`] = `
 
 .c2 {
   position: relative;
+}
+
+.c3 > * {
+  height: 2rem;
+  padding: 0.5rem 0.25rem;
 }
 
 .c9 {
@@ -2475,11 +2501,9 @@ exports[`StoryPromo with Media Indicator should render correctly 1`] = `
   color: #6E6E73;
 }
 
-@media (max-width:24.9375rem) {
-  .c4 {
-    height: 1.25rem;
-    padding: 0.25rem 0.25rem 0;
-  }
+.c7 {
+  vertical-align: middle;
+  margin: 0 0.25rem;
 }
 
 @media (min-width:63rem) {
@@ -2531,6 +2555,13 @@ exports[`StoryPromo with Media Indicator should render correctly 1`] = `
   .c3 {
     position: absolute;
     bottom: 0;
+  }
+}
+
+@media (max-width:24.9375rem) {
+  .c3 > * {
+    height: 1.25rem;
+    padding: 0.25rem 0.25rem 0;
   }
 }
 
@@ -2613,7 +2644,6 @@ exports[`StoryPromo with Media Indicator should render correctly 1`] = `
             </svg>
             <time
               class="c7"
-              datetime="PT2M15S"
             >
               2:15
             </time>
