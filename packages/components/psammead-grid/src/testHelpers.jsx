@@ -4,7 +4,13 @@ import styled from 'styled-components';
 import Paragraph from '@bbc/psammead-paragraph';
 import { cyrillicAndLatin } from '@bbc/gel-foundations/scripts';
 import Image from '@bbc/psammead-image';
-import { GEL_SPACING } from '@bbc/gel-foundations/dist/spacings';
+import {
+  GEL_SPACING_HLF,
+  GEL_SPACING,
+  GEL_SPACING_QUAD,
+} from '@bbc/gel-foundations/spacings';
+import { GEL_GROUP_1_SCREEN_WIDTH_MAX } from '@bbc/gel-foundations/breakpoints';
+import MediaIndicator from '@bbc/psammead-media-indicator';
 
 export const ExampleParagraph = ({ identifier }) => (
   <Paragraph script={cyrillicAndLatin} service="news">
@@ -37,6 +43,15 @@ export const ExampleImage = () => (
     />
   </ImageSpacing>
 );
+
+export const ExampleMediaIndicatorWithSpacing = styled(MediaIndicator)`
+  height: ${GEL_SPACING_QUAD};
+  padding: ${GEL_SPACING} ${GEL_SPACING_HLF};
+  @media (max-width: ${GEL_GROUP_1_SCREEN_WIDTH_MAX}) {
+    height: 1.25rem;
+    padding: ${GEL_SPACING_HLF} ${GEL_SPACING_HLF} 0;
+  }
+`;
 
 ExampleParagraph.propTypes = {
   identifier: string,

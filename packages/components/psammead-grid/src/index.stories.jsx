@@ -6,12 +6,15 @@ import {
   buildRTLSubstories,
 } from '@bbc/psammead-storybook-helpers';
 import Image from '@bbc/psammead-image';
-import MediaIndicator from '@bbc/psammead-media-indicator';
 import StoryPromo, { Headline, Summary, Link } from '@bbc/psammead-story-promo';
 import IndexAlsosContainer from '../../psammead-story-promo/testHelpers/IndexAlsosContainer';
 import relatedItems from '../../psammead-story-promo/testHelpers/relatedItems';
 import Grid from '.';
-import { ExampleImage, ExampleParagraph } from './testHelpers';
+import {
+  ExampleImage,
+  ExampleParagraph,
+  ExampleMediaIndicatorWithSpacing,
+} from './testHelpers';
 import notes from '../README.md';
 
 const STORY_KIND = 'Components|Grid';
@@ -1168,9 +1171,9 @@ storiesOf(STORY_KIND, module)
       // eslint-disable-next-line react/prop-types
       const generateStory = ({ topStory, alsoItems = null, mediaType }) => {
         const MediaIndicatorComponent = type => (
-          <MediaIndicator service={service} type={type}>
+          <ExampleMediaIndicatorWithSpacing service={service} type={type}>
             {type !== 'photogallery' && <time dateTime="PT2M15S">2:15</time>}
-          </MediaIndicator>
+          </ExampleMediaIndicatorWithSpacing>
         );
 
         const Info = (
