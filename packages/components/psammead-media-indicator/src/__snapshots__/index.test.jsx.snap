@@ -13,10 +13,10 @@ exports[`MediaIndicator should render audio correctly without duration details 1
 .c0 {
   color: #222222;
   background-color: #FFFFFF;
-  display: block;
   font-family: ReithSans,Helvetica,Arial,sans-serif;
   font-weight: 400;
   font-style: normal;
+  display: block;
 }
 
 .c1 {
@@ -70,10 +70,10 @@ exports[`MediaIndicator should render audio indicator correctly 1`] = `
 .c0 {
   color: #222222;
   background-color: #FFFFFF;
-  display: block;
   font-family: ReithSans,Helvetica,Arial,sans-serif;
   font-weight: 400;
   font-style: normal;
+  display: block;
 }
 
 .c1 {
@@ -127,10 +127,10 @@ exports[`MediaIndicator should render photogallery correctly 1`] = `
 .c0 {
   color: #222222;
   background-color: #FFFFFF;
-  display: block;
   font-family: ReithSans,Helvetica,Arial,sans-serif;
   font-weight: 400;
   font-style: normal;
+  display: block;
 }
 
 .c1 {
@@ -186,10 +186,10 @@ exports[`MediaIndicator should render video by default 1`] = `
 .c0 {
   color: #222222;
   background-color: #FFFFFF;
-  display: block;
   font-family: ReithSans,Helvetica,Arial,sans-serif;
   font-weight: 400;
   font-style: normal;
+  display: block;
 }
 
 .c1 {
@@ -240,10 +240,10 @@ exports[`MediaIndicator should render video correctly without duration details 1
 .c0 {
   color: #222222;
   background-color: #FFFFFF;
-  display: block;
   font-family: ReithSans,Helvetica,Arial,sans-serif;
   font-weight: 400;
   font-style: normal;
+  display: block;
 }
 
 .c1 {
@@ -294,10 +294,10 @@ exports[`MediaIndicator should render video indicator correctly 1`] = `
 .c0 {
   color: #222222;
   background-color: #FFFFFF;
-  display: block;
   font-family: ReithSans,Helvetica,Arial,sans-serif;
   font-weight: 400;
   font-style: normal;
+  display: block;
 }
 
 .c1 {
@@ -348,12 +348,12 @@ exports[`MediaIndicator should render video indicator correctly when inline 1`] 
 .c0 {
   color: #222222;
   background-color: #FFFFFF;
-  display: block;
   font-family: ReithSans,Helvetica,Arial,sans-serif;
   font-weight: 400;
   font-style: normal;
   display: inline-block;
   vertical-align: middle;
+  padding-right: 0.5rem;
 }
 
 .c1 {
@@ -404,12 +404,12 @@ exports[`MediaIndicator should render video indicator correctly when inline on R
 .c0 {
   color: #222222;
   background-color: #FFFFFF;
-  display: block;
   font-family: "BBC Nassim Persian",Arial,Verdana,Geneva,Helvetica,sans-serif;
   font-weight: 400;
   font-style: normal;
   display: inline-block;
   vertical-align: middle;
+  padding-right: 0.5rem;
 }
 
 .c1 {

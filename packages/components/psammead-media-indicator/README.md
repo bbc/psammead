@@ -31,7 +31,7 @@ The typical use-case of this component is on top of images within promos for art
 
 Top story promos can also have related stories links called `Index Alsos`. When an Index Also item is a video, audio or photogallery, an icon should be displayed with the content using the `MediaIndicator` component passing the `isInline` prop.
 
-We expect users to add their own spacing around this component where relevant.
+When using this component ensure you add the relevant spacing.
 
 ```jsx
 import MediaIndicator from '@bbc/psammead-media-indicator';
