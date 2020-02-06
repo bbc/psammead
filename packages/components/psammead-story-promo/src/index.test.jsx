@@ -82,7 +82,7 @@ const TimeDuration = styled.time`
   margin: 0 ${GEL_SPACING_HLF};
 `;
 const mediaInfo = (
-  <MediaIndicator service="news">
+  <MediaIndicator script={latin} service="news">
     <TimeDuration datetime="PT2M15S">2:15</TimeDuration>
   </MediaIndicator>
 );

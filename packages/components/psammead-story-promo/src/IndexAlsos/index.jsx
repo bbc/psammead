@@ -27,10 +27,6 @@ const StyledIndexAlsosUl = styled.ul`
   margin: 0;
 `;
 
-const IndexAlsosMediaIndicator = styled.span`
-  ${paddingDir}: ${GEL_SPACING};
-`;
-
 const RoleText = styled.span.attrs({
   role: 'text',
 })``;
@@ -69,9 +65,7 @@ const IndexAlsosLink = ({
     <StyledIndexAlsosLink href={url} script={script} service={service}>
       {mediaIndicator ? (
         <>
-          <IndexAlsosMediaIndicator dir={dir}>
-            {mediaIndicator}
-          </IndexAlsosMediaIndicator>
+          {mediaIndicator}
           <RoleText>
             <VisuallyHiddenText>{mediaType}, </VisuallyHiddenText>
             <IndexAlsosText>{children}</IndexAlsosText>
