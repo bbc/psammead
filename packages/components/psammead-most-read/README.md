@@ -10,7 +10,7 @@ The `MostRead` component is designed to display the most read articles given a d
 
 `npm install @bbc/psammead-most-read`
 
-## Components (WIP)
+## Components
 
 ## MostRead
 
@@ -25,6 +25,7 @@ The `MostRead` component is designed to display the most read articles given a d
 | script | object | yes | N/A | `{ canon: { groupA: { fontSize: '28', lineHeight: '32',}, groupB: { fontSize: '32', lineHeight: '36', }, groupD: { fontSize: '44', lineHeight: '48', }, }, trafalgar: { groupA: { fontSize: '20', lineHeight: '24', }, groupB: { fontSize: '24', lineHeight: '28', }, groupD: { fontSize: '32', lineHeight: '36', }, }, }` |
 | dir | string | no | `"ltr"` | `"rtl"` |
 | labelId | string | no | `'Most-Read'` | `'Most-Read'`|
+| className | string | no | `null` | `'additional-class'` |
 
 ### Usage
 
@@ -227,6 +228,7 @@ import { MostReadRank } from '@bbc/psammead-most-read';
 | labelId | string | no | `'most-read'` | `'most-read'`  |
 | children | node | yes | N/A | `<MostReadList numberOfItems={10} dir='ltr'><MostReadItemWrapper dir='ltr'><MostReadRank service='news' script={script} listIndex={1} numberOfItems={10} dir='ltr'/><MostReadLink dir='ltr' service='news' script={script} title='article headline' href='/bbc.co.uk/articles/000027051997'>{timestamp}</MostReadLink></MostReadItemWrapper></MostReadList>`  |
 | dir | string | no | `"ltr"` | `"ltr"` |
+| className | string | no | `null` | `'additional-class'` |
 
 ### Usage
 
