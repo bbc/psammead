@@ -217,7 +217,7 @@ const ProgramCard = ({
       </IconWrapper>
       <DurationWrapper dir={dir} dateTime={duration}>
         <VisuallyHiddenText>
-          {` ${durationLabel} ${duration.replace(/:/g, ',')} `}
+          {` ${durationLabel} ${formatDuration(duration, 'mm,ss')} `}
         </VisuallyHiddenText>
         <DurationTextWrapper>{formatDuration(duration)}</DurationTextWrapper>
       </DurationWrapper>
