@@ -25,11 +25,16 @@ const buildImg = () => (
 );
 
 const StyledTime = styled.time`
-  padding: 0 ${GEL_SPACING_HLF}
+  padding: 0 ${GEL_SPACING_HLF};
 `;
 
-/* eslint-disable-next-line react/prop-types */
-const MediaIndicatorComponent = ({ type, script, service, mediaIndicatorIsInline }) => {
+/* eslint-disable react/prop-types */
+const MediaIndicatorComponent = ({
+  type,
+  script,
+  service,
+  mediaIndicatorIsInline,
+}) => {
   return (
     <MediaIndicator
       script={script}
@@ -37,10 +42,12 @@ const MediaIndicatorComponent = ({ type, script, service, mediaIndicatorIsInline
       type={type}
       isInline={mediaIndicatorIsInline}
     >
-      {!mediaIndicatorIsInline && <StyledTime dateTime="PT2M15S">2:15</StyledTime>}
+      !mediaIndicatorIsInline &&
+      <StyledTime dateTime="PT2M15S">2:15</StyledTime>
     </MediaIndicator>
   );
 };
+/* eslint-enable react/prop-types */
 
 /* eslint-disable-next-line react/prop-types */
 const LiveComponent = ({ headline, service, dir }) => (

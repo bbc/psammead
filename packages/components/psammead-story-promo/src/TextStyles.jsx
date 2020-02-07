@@ -123,9 +123,9 @@ const leadingPromoTimestampPadding = `
 const TextGridItem = styled.div`
     display: inline-block;
     vertical-align: top;
-  
+
     ${({ promoType }) => textGridFallbackStyles[promoType]}
-  
+
     @supports (${grid}) {
       display: block;
       width: initial;
@@ -137,8 +137,7 @@ const TextGridItem = styled.div`
       promoType === 'leading' && leadingPromoTimestampPadding}
 
     ${({ displayImage }) =>
-      !displayImage &&
-      `>div{ display:inline-block; vertical-align:initial; } `}
+      !displayImage && `>div{ display:inline-block; vertical-align:initial; } `}
 `;
 
 export default TextGridItem;
