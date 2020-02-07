@@ -1164,6 +1164,10 @@ exports[`StoryPromo - Top Story should render with multiple Index Alsos correctl
   color: #6E6E73;
 }
 
+.c11 svg {
+  margin: 0;
+}
+
 @media (min-width:20rem) and (max-width:37.4375rem) {
   .c12 {
     font-size: 0.75rem;
@@ -1548,6 +1552,10 @@ exports[`StoryPromo - Top Story should render with one Index Also correctly 1`] 
 
 .c10:visited {
   color: #6E6E73;
+}
+
+.c10 svg {
+  margin: 0;
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {

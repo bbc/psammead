@@ -83,16 +83,15 @@ const ImageContentsWrapper = styled.div`
 
 /* A bug with the case when mediaIndicatorIsInline is true */
 const conditionalStyles = css`
-  ${({ mediaIndicatorIsInline }) => {
-    return mediaIndicatorIsInline
+  ${({ mediaIndicatorIsInline }) =>
+    mediaIndicatorIsInline
       ? `& svg { margin: 0; }`
       : `
-  > * {
-    height: ${GEL_SPACING_QUAD};
-    padding: ${GEL_SPACING} ${GEL_SPACING_HLF};
-  }
-  `;
-  }}
+      > * {
+        height: ${GEL_SPACING_QUAD};
+        padding: ${GEL_SPACING} ${GEL_SPACING_HLF};
+      }
+      `}
 `;
 
 const mediaIndicatorStylesTopLeading = css`
