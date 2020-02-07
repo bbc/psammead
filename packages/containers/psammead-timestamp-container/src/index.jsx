@@ -6,7 +6,7 @@ import {
   isValidDateTime,
   unixTimestampToMoment,
   formatUnixTimestamp,
-} from './timestampUtilities';
+} from './Utilities/timestampUtilities';
 
 const TimestampContainer = ({
   timestamp,
