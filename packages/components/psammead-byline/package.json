@@ -7,7 +7,7 @@
   "main": "dist/index.js",
   "module": "esm/index.js",
   "sideEffects": false,
-  "description": "A component that displays an author's name, role, and optional avatar.",
+  "description": "A component that displays an author's name, title, and optional avatar.",
   "repository": {
     "type": "git",
     "url": "https://github.com/BBC-News/psammead/tree/latest/packages/components/psammead-byline"

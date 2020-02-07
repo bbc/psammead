@@ -6,7 +6,7 @@ This component is currently tagged as alpha and is not suitable for production u
 
 ## Description
 
-The `Byline` component is designed to display an author's full name, role, and optional avatar.
+The `Byline` component is designed to display an author's full name, title, and optional avatar.
 
 ## Installation
 
