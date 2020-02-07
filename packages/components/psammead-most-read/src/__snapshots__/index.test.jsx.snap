@@ -308,7 +308,7 @@ exports[`MostRead should render with ltr most read with correct dir 1`] = `
 
 @media (min-width:80rem) {
   .c15 {
-    min-width: 4.25rem;
+    min-width: 4.18rem;
   }
 }
 
@@ -1095,7 +1095,7 @@ exports[`MostRead should render with rtl most read with correct dir 1`] = `
 
 @media (min-width:80rem) {
   .c15 {
-    min-width: 3.75rem;
+    min-width: 3.7rem;
   }
 }
 
