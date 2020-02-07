@@ -44,7 +44,7 @@ export const ExampleImage = () => (
   </ImageSpacing>
 );
 
-export const ExampleMediaIndicatorWithSpacing = styled(MediaIndicator)`
+export const ExampleMediaIndicator = styled(MediaIndicator)`
   height: ${GEL_SPACING_QUAD};
   padding: ${GEL_SPACING} ${GEL_SPACING_HLF};
   @media (max-width: ${GEL_GROUP_1_SCREEN_WIDTH_MAX}) {

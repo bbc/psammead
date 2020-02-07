@@ -42,8 +42,10 @@ const MediaIndicatorComponent = ({
       type={type}
       isInline={mediaIndicatorIsInline}
     >
-      !mediaIndicatorIsInline &&
-      <StyledTime dateTime="PT2M15S">2:15</StyledTime>
+      {
+        !mediaIndicatorIsInline &&
+        <StyledTime dateTime="PT2M15S">2:15</StyledTime>
+      }
     </MediaIndicator>
   );
 };

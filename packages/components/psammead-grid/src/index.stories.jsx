@@ -13,7 +13,7 @@ import Grid from '.';
 import {
   ExampleImage,
   ExampleParagraph,
-  ExampleMediaIndicatorWithSpacing,
+  ExampleMediaIndicator,
   ExampleTime,
 } from './testHelpers';
 import notes from '../README.md';
@@ -1172,7 +1172,7 @@ storiesOf(STORY_KIND, module)
       // eslint-disable-next-line react/prop-types
       const generateStory = ({ topStory, alsoItems = null, mediaType }) => {
         const MediaIndicatorComponent = type => (
-          <ExampleMediaIndicatorWithSpacing
+          <ExampleMediaIndicator
             script={script}
             service={service}
             type={type}
@@ -1180,7 +1180,7 @@ storiesOf(STORY_KIND, module)
             {type !== 'photogallery' && (
               <ExampleTime dateTime="PT2M15S">2:15</ExampleTime>
             )}
-          </ExampleMediaIndicatorWithSpacing>
+          </ExampleMediaIndicator>
         );
 
         const Info = (
