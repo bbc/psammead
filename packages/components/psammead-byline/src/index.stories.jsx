@@ -23,7 +23,7 @@ storiesOf('Components|Byline', module)
   .add(
     'without avatar',
     ({ service }) => (
-      <Byline service={service} name="John Smith" title="Art editor" />
+      <Byline service={service} name="By John Smith" title="Art editor" />
     ),
     { notes },
   );

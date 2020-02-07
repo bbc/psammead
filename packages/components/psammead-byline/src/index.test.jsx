@@ -14,6 +14,6 @@ describe('Byline', () => {
   );
   shouldMatchSnapshot(
     'should render correctly without an avatar',
-    <Byline service="news" name="John Smith" title="Art editor" />,
+    <Byline service="news" name="By John Smith" title="Art editor" />,
   );
 });
