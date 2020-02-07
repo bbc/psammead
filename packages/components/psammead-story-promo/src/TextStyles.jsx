@@ -137,7 +137,9 @@ const TextGridItem = styled.div`
       promoType === 'leading' && leadingPromoTimestampPadding}
 
     ${({ displayImage }) =>
-      !displayImage && `>div{ display:inline-block; vertical-align:initial; } `}
+      !displayImage &&
+      `>div{ display:inline-block; vertical-align:initial; }
+       & svg{ margin: 0; }`}
 `;
 
 export default TextGridItem;
