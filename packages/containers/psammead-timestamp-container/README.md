@@ -4,6 +4,10 @@
 
 `psammead-timestamp-container` is a React container that offers relative and absolute times, with timezone support - using moment-timezone. Relative times are currently hard-coded to English (e.g. 3 minutes ago). `psammead-timestamp-container` returns a single time element.
 
+## Exports
+
+`/utilities` - exports functions for dealing with timestamps.
+
 ## When to use this component
 
 `psammead-timestamp-container` is intended to be used when a single time DOM element that has the possibility of having varying time formats and timezones is required.
