@@ -34,25 +34,32 @@ npm install @bbc/psammead-byline --save
 
 <!-- Description of the component usage -->
 
-```
+```jsx
 import Byline from "@bbc/psammead-byline"
+
+<Byline
+  service='news'
+  avatar={{ src: 'https://i.pravatar.cc/128?img=69' }}
+  name="John Smith"
+  title="Art editor"
+/>
 ```
 
 ### When to use this component
 
-<!-- Description of the where the component can be used -->
+This component should be used when crediting the author of a piece of content, such as an article.
 
 ### When not to use this component
 
-<!-- Description of the where the component shouldn't can be used -->
+N/A.
 
 ### Accessibility notes
 
-<!-- Information about accessibility for this component -->
+By default the avatar `img` is rendered with an empty `alt` attribute as it is expected to be of the person, which the adjacent name describes.
 
 ### Roadmap
 
-<!-- Known future changes of the component -->
+There are no known future changes to this component.
 
 ## Contributing
 
