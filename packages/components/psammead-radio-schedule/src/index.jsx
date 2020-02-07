@@ -101,6 +101,11 @@ const programGridProps = {
   },
 };
 
+/*
+Currently, we are passing a list of schedules to this component and mapping
+through the list to render a star-time and program-card, inside a gird.
+We intend to move the map functionality out of psammead in a future iteration.
+*/
 const RadioSchedule = ({ schedules, dir, ...props }) => (
   <Grid dir={dir} {...schedulesGridProps}>
     {schedules.map(({ id, ...program }) => (
