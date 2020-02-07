@@ -48,6 +48,8 @@ const StyledIndexAlsosLink = styled.a`
   &:visited {
     color: ${C_METAL};
   }
+
+  & svg { margin: 0; } /* Reset Media Indicator SVG margin */ 
 `;
 
 const IndexAlsosLink = ({

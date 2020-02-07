@@ -90,6 +90,10 @@ exports[`Index Alsos should render multiple correctly 1`] = `
   color: #6E6E73;
 }
 
+.c4 svg {
+  margin: 0;
+}
+
 @media (min-width:20rem) and (max-width:37.4375rem) {
   .c5 {
     font-size: 0.75rem;
@@ -279,6 +283,10 @@ exports[`Index Alsos should render one correctly 1`] = `
 
 .c3:visited {
   color: #6E6E73;
+}
+
+.c3 svg {
+  margin: 0;
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
