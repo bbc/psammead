@@ -9,7 +9,10 @@ import {
   GEL_SPACING,
   GEL_SPACING_QUAD,
 } from '@bbc/gel-foundations/spacings';
-import { GEL_GROUP_1_SCREEN_WIDTH_MAX } from '@bbc/gel-foundations/breakpoints';
+import {
+  GEL_GROUP_1_SCREEN_WIDTH_MAX,
+  GEL_GROUP_2_SCREEN_WIDTH_MIN,
+} from '@bbc/gel-foundations/breakpoints';
 import MediaIndicator from '@bbc/psammead-media-indicator';
 
 export const ExampleParagraph = ({ identifier }) => (
@@ -45,11 +48,17 @@ export const ExampleImage = () => (
 );
 
 export const ExampleMediaIndicator = styled(MediaIndicator)`
-  height: ${GEL_SPACING_QUAD};
-  padding: ${GEL_SPACING} ${GEL_SPACING_HLF};
-  @media (max-width: ${GEL_GROUP_1_SCREEN_WIDTH_MAX}) {
-    height: 1.25rem;
-    padding: ${GEL_SPACING_HLF} ${GEL_SPACING_HLF} 0;
+  @media (min-width: ${GEL_GROUP_2_SCREEN_WIDTH_MIN}) {
+    position: absolute;
+    bottom: 0;
+  }
+  > * {
+    @media (max-width: ${GEL_GROUP_1_SCREEN_WIDTH_MAX}) {
+      height: 1.25rem;
+      padding: ${GEL_SPACING_HLF} ${GEL_SPACING_HLF} 0;
+    }
+    height: ${GEL_SPACING_QUAD};
+    padding: ${GEL_SPACING} ${GEL_SPACING_HLF};
   }
 `;
 
