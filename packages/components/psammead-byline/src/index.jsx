@@ -2,8 +2,8 @@ import React from 'react';
 import { string, shape } from 'prop-types';
 import styled, { css } from 'styled-components';
 import { getSansRegular } from '@bbc/psammead-styles/font-styles';
-import { GEL_SPACING, GEL_SPACING_HLF } from '@bbc/gel-foundations/spacings';
-import { C_STORM, C_RHINO } from '@bbc/psammead-styles/colours';
+import { GEL_SPACING } from '@bbc/gel-foundations/spacings';
+import { C_STORM, C_RHINO, C_POSTBOX } from '@bbc/psammead-styles/colours';
 import { GEL_LONG_PRIMER } from '@bbc/gel-foundations/typography';
 
 const AVATAR_DIAMETER = '4rem';
@@ -37,8 +37,7 @@ const Person = styled.div`
 `;
 
 const Name = styled.span`
-  color: ${C_STORM};
-  margin-bottom: ${({ avatar }) => avatar && GEL_SPACING_HLF};
+  color: ${({ avatar }) => (avatar ? C_POSTBOX : C_STORM)};
 `;
 const Title = styled.span`
   color: ${C_RHINO};
