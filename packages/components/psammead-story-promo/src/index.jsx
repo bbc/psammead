@@ -77,27 +77,13 @@ const ImageContentsWrapper = styled.div`
   position: relative;
 `;
 
-// These styles are to ensure we have the correct positioning
-// & spacing of the Media Indicator over the Image
-// here in the Story Promo
-
-/* A bug with the case when mediaIndicatorIsInline is true */
-const conditionalStyles = css`
-  ${({ mediaIndicatorIsInline }) =>
-    mediaIndicatorIsInline
-      ? `& svg { margin: 0; }`
-      : `
-      > * {
-        height: ${GEL_SPACING_QUAD};
-        padding: ${GEL_SPACING} ${GEL_SPACING_HLF};
-      }
-      `}
-`;
-
 const mediaIndicatorStylesTopLeading = css`
   position: absolute;
   bottom: 0;
-  ${conditionalStyles}
+  > * {
+    height: ${GEL_SPACING_QUAD};
+    padding: ${GEL_SPACING} ${GEL_SPACING_HLF};
+  }
 `;
 
 const mediaIndicatorStylesRegular = css`
@@ -111,9 +97,16 @@ const mediaIndicatorStylesRegular = css`
       padding: ${GEL_SPACING_HLF} ${GEL_SPACING_HLF} 0;
     }
   }
-  ${conditionalStyles}
+  > * {
+    height: ${GEL_SPACING_QUAD};
+    padding: ${GEL_SPACING} ${GEL_SPACING_HLF};
+  }
 `;
 
+/*
+ These styles are to ensure we have the correct positioning
+ & spacing of the Media Indicator over the Image in the Story Promo 
+ */
 const mediaIndicatorStyles = {
   top: mediaIndicatorStylesTopLeading,
   regular: mediaIndicatorStylesRegular,
