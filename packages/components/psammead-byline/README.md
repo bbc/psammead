@@ -39,7 +39,7 @@ import Byline from "@bbc/psammead-byline"
 
 <Byline
   service='news'
-  avatar={{ src: 'https://i.pravatar.cc/128?img=69' }}
+  avatar={{ src: 'http://www.bbc.co.uk/john-smith.jpg' }}
   name="John Smith"
   title="Art editor"
 />
