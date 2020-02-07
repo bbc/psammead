@@ -11,7 +11,7 @@ const StartTimeWrapper = styled.div`
   padding: ${GEL_SPACING_DBL} 0 ${GEL_SPACING};
 `;
 
-// Using flex-box on browsers that don not support grid will break grid fallback defined in psammead-grid
+// Using flex-box on browsers that do not support grid will break grid fallback defined in psammead-grid
 const StyledGrid = styled(Grid)`
   @supports (display: grid) {
     display: flex;
