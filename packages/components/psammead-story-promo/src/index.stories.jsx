@@ -154,8 +154,8 @@ const generateStory = ({
     <StoryPromo
       image={Img}
       info={Info}
+      promoType={promoType}
       displayImage={displayImage}
-      mediaIndicatorIsInline={!displayImage}
       mediaIndicator={
         mediaType !== 'No media' &&
         MediaIndicatorComponent({
@@ -165,7 +165,7 @@ const generateStory = ({
           mediaIndicatorIsInline: mediaType && !displayImage,
         })
       }
-      promoType={promoType}
+      mediaIndicatorIsInline={!displayImage}
     />
   );
 };

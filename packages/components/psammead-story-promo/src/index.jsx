@@ -257,9 +257,9 @@ LiveLabel.defaultProps = {
 const StoryPromo = ({
   image,
   info,
-  mediaIndicator,
   promoType,
   displayImage,
+  mediaIndicator,
   mediaIndicatorIsInline,
   ...props
 }) => {
@@ -306,16 +306,16 @@ const StoryPromo = ({
 StoryPromo.propTypes = {
   image: node.isRequired,
   info: node.isRequired,
-  mediaIndicator: node,
   promoType: PROMO_TYPES,
   displayImage: bool,
+  mediaIndicator: node,
   mediaIndicatorIsInline: bool,
 };
 
 StoryPromo.defaultProps = {
-  mediaIndicator: null,
   promoType: 'regular',
   displayImage: true,
+  mediaIndicator: null,
   mediaIndicatorIsInline: false,
 };
 
