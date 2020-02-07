@@ -1,10 +1,11 @@
 import React from 'react';
 import styled, { css } from 'styled-components';
-import { string, oneOf, bool, node } from 'prop-types';
+import { node, bool, string, oneOf, shape } from 'prop-types';
 import { C_WHITE, C_EBON } from '@bbc/psammead-styles/colours';
+import { GEL_SPACING } from '@bbc/gel-foundations/spacings';
 import { getMinion } from '@bbc/gel-foundations/typography';
 import { getSansRegular } from '@bbc/psammead-styles/font-styles';
-import { GEL_SPACING } from '@bbc/gel-foundations/spacings';
+import { scriptPropType } from '@bbc/gel-foundations/prop-types';
 import { mediaIcons } from '@bbc/psammead-assets/svgs';
 
 const paddingDir = ({ dir }) => `padding-${dir === 'rtl' ? 'left' : 'right'}`;
@@ -34,9 +35,10 @@ const FlexWrapper = styled.div`
   height: 100%;
 `;
 
-const MediaIndicator = ({ type, service, isInline, children }) => (
+const MediaIndicator = ({ type, script, service, isInline, children }) => (
   <StyledMediaIndicator
     aria-hidden="true"
+    script={script}
     service={service}
     isInline={isInline}
   >
@@ -49,6 +51,7 @@ const MediaIndicator = ({ type, service, isInline, children }) => (
 
 MediaIndicator.propTypes = {
   type: oneOf(['video', 'audio', 'photogallery']),
+  script: shape(scriptPropType).isRequired,
   service: string.isRequired,
   isInline: bool,
   children: node,
