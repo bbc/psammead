@@ -38,8 +38,7 @@ exports[`Byline should render correctly 1`] = `
 }
 
 .c3 {
-  color: #404040;
-  margin-bottom: 0.25rem;
+  color: #B80000;
 }
 
 .c4 {
@@ -57,7 +56,7 @@ exports[`Byline should render correctly 1`] = `
 >
   <img
     class="c1"
-    src="https://i.pravatar.cc/128?img=69"
+    src="http://www.bbc.co.uk/john-smith.jpg"
   />
   <div
     class="c2"
