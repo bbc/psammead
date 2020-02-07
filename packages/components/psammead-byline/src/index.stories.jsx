@@ -1,6 +1,6 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import { withKnobs } from '@storybook/addon-knobs';
+import { withKnobs, text } from '@storybook/addon-knobs';
 import { withServicesKnob } from '@bbc/psammead-storybook-helpers';
 import notes from '../README.md';
 import Byline from './index';
@@ -14,8 +14,8 @@ storiesOf('Components|Byline', module)
       <Byline
         service={service}
         avatar={{ src: 'https://i.pravatar.cc/128?img=69' }}
-        name="John Smith"
-        title="Art editor"
+        name={text('name', 'John Smith')}
+        title={text('title', 'Art editor')}
       />
     ),
     { notes },
@@ -23,7 +23,11 @@ storiesOf('Components|Byline', module)
   .add(
     'without avatar',
     ({ service }) => (
-      <Byline service={service} name="By John Smith" title="Art editor" />
+      <Byline
+        service={service}
+        name={text('name', 'By John Smith')}
+        title={text('title', 'Art editor')}
+      />
     ),
     { notes },
   );
