@@ -6,7 +6,7 @@
 
 ## Exports
 
-`/utilities` - exports various functions for dealing with timestamps.
+`/utilities` - exports functions for dealing with timestamps.
 
 ## When to use this component
 
