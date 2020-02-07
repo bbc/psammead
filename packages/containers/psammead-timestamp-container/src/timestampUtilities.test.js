@@ -18,6 +18,12 @@ describe('Timestamp utility functions', () => {
 
       expect(formatDuration(durationInISO8601Format)).toEqual('30:00');
     });
+
+    it('should return duration in expected format when a format is passed in', () => {
+      const durationInISO8601Format = 'PT30M'; // 30:00
+
+      expect(formatDuration(durationInISO8601Format, 'mm,ss')).toEqual('30,00');
+    });
   });
 
   describe('isValidDateTime', () => {
