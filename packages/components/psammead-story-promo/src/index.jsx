@@ -96,8 +96,7 @@ const mediaIndicatorStylesRegular = css`
       height: 1.25rem;
       padding: ${GEL_SPACING_HLF} ${GEL_SPACING_HLF} 0;
     }
-  }
-  > * {
+
     height: ${GEL_SPACING_QUAD};
     padding: ${GEL_SPACING} ${GEL_SPACING_HLF};
   }
