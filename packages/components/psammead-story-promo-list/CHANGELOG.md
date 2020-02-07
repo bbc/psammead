@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 | ------- | ----------- |
+| 4.0.1 | [PR#3070](https://github.com/bbc/psammead/pull/3070) Padding fix - update padding-top to not be applied on first li at 1008px+. |
 | 4.0.0 | [PR#3058](https://github.com/bbc/psammead/pull/3058) Update `StoryPromoLi` padding top above 1008px |
 | 3.0.1 | [PR#3030](https://github.com/bbc/psammead/pull/3030) Talos - Bump Dependencies - @bbc/psammead-styles |
 | 3.0.0 | [PR#3014](https://github.com/bbc/psammead/pull/3014) Ensure border-bottom on list items is only applied for groups 0-3. |
