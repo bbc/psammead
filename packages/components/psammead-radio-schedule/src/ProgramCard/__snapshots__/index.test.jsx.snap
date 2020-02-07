@@ -282,7 +282,7 @@ exports[`ProgramCard should render correctly for live 1`] = `
       <span
         class="c5"
       >
-         Duration PT30M 
+         Duration 30,00 
       </span>
       <span
         aria-hidden="true"
@@ -540,7 +540,7 @@ exports[`ProgramCard should render correctly for next 1`] = `
       <span
         class="c4"
       >
-         Duration PT30M 
+         Duration 30,00 
       </span>
       <span
         aria-hidden="true"
@@ -798,7 +798,7 @@ exports[`ProgramCard should render correctly for onDemand 1`] = `
       <span
         class="c4"
       >
-         Duration PT30M 
+         Duration 30,00 
       </span>
       <span
         aria-hidden="true"
@@ -1092,7 +1092,7 @@ exports[`ProgramCard should render correctly in RTL 1`] = `
       <span
         class="c5"
       >
-         المدة الزمنية 30,00 
+         المدة الزمنية 00,00 
       </span>
       <span
         aria-hidden="true"
