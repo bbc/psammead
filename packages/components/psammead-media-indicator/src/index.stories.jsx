@@ -31,13 +31,15 @@ storiesOf('Components|MediaIndicator/Video', module)
   .addDecorator(withServicesKnob())
   .add(
     'video without duration',
-    ({ service }) => <MediaIndicator type="video" service={service} />,
+    ({ script, service }) => (
+      <MediaIndicator type="video" script={script} service={service} />
+    ),
     { notes },
   )
   .add(
     'video with duration',
-    ({ service }) => (
-      <MediaIndicator type="video" service={service}>
+    ({ script, service }) => (
+      <MediaIndicator type="video" script={script} service={service}>
         <TimeDuration dateTime={text('datetime', 'PT2M15S')}>
           {text('duration', '2:15')}
         </TimeDuration>
@@ -47,10 +49,11 @@ storiesOf('Components|MediaIndicator/Video', module)
   )
   .add(
     'inline video media indicator with headline',
-    ({ service, script }) => (
+    ({ script, service }) => (
       <>
         <MediaIndicator
           type="video"
+          script={script}
           service={service}
           isInline={boolean('inline?', true)}
         />
@@ -70,13 +73,15 @@ storiesOf('Components|MediaIndicator/Audio', module)
   .addDecorator(withServicesKnob())
   .add(
     'audio without duration',
-    ({ service }) => <MediaIndicator type="audio" service={service} />,
+    ({ script, service }) => (
+      <MediaIndicator type="audio" script={script} service={service} />
+    ),
     { notes },
   )
   .add(
     'audio with duration',
-    ({ service }) => (
-      <MediaIndicator type="audio" service={service}>
+    ({ script, service }) => (
+      <MediaIndicator type="audio" script={script} service={service}>
         <time dateTime={text('datetime', 'PT2M15S')}>
           {text('duration', '2:15')}
         </time>
@@ -86,10 +91,11 @@ storiesOf('Components|MediaIndicator/Audio', module)
   )
   .add(
     'inline audio media indicator with headline',
-    ({ service, script }) => (
+    ({ script, service }) => (
       <>
         <MediaIndicator
           type="audio"
+          script={script}
           service={service}
           isInline={boolean('inline?', true)}
         />
@@ -109,15 +115,18 @@ storiesOf('Components|MediaIndicator/Photo', module)
   .addDecorator(withServicesKnob())
   .add(
     'photogallery',
-    ({ service }) => <MediaIndicator type="photogallery" service={service} />,
+    ({ script, service }) => (
+      <MediaIndicator type="photogallery" script={script} service={service} />
+    ),
     { notes },
   )
   .add(
     'inline photogallery with headline',
-    ({ service, script }) => (
+    ({ script, service }) => (
       <>
         <MediaIndicator
           type="photogallery"
+          script={script}
           service={service}
           isInline={boolean('inline?', true)}
         />
