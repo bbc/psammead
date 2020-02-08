@@ -30,7 +30,7 @@ npm install @bbc/psammead-radio-schedule --save
 | brandTitle | string | yes | N/A | `'This is a brand title'` |
 | summary | string | yes | N/A | `'This is a summary'` |
 | episodeTitle | string | yes | N/A | `'29/01/1990'` |
-| duration | string | yes | N/A | `'30:00'` |
+| duration | string | yes | N/A | `'PT30M'` |
 | durationLabel | string | yes | N/A | `'duration'` |
 | state | string | yes | N/A | `'live'` |
 | stateLabel | string | yes | N/A | `'مباشر'` |
@@ -57,7 +57,7 @@ import ProgramCard from '@bbc/psammead-radio-schedule/ProgramCard';
   brandTitle="This is a brand title"
   summary="Could a computer ever create better art than a human?"
   episodeTitle="29/01/1990"
-  duration="30:00"
+  duration="PT30M"
   durationLabel="duration"
   state="live"
   stateLabel="Live"
@@ -87,13 +87,13 @@ import StartTime from '@bbc/psammead-radio-schedule/startTime';
 import { latin } from '@bbc/gel-foundations/scripts';
 
 <StartTime
-      script={latin}
-      service="news"
-      timestamp={1566914061212}
-      timezone="Europe/London"
-      locale="en-gb"
-      dir="ltr"
-    />
+  script={latin}
+  service="news"
+  timestamp={1566914061212}
+  timezone="Europe/London"
+  locale="en-gb"
+  dir="ltr"
+/>
 ```
 
 ### When to use this component
