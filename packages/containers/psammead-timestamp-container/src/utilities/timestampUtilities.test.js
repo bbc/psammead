@@ -5,7 +5,7 @@ import {
   isValidDateTime,
   formatDuration,
 } from './timestampUtilities';
-import timestampGenerator from './helpers/testHelpers';
+import timestampGenerator from '../helpers/testHelpers';
 
 const timezone = 'Europe/London';
 const timestamp = 1539969006000; // 19 October 2018
