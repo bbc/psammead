@@ -24,7 +24,7 @@ import { Link } from '@bbc/psammead-story-promo';
 import { oneOf, shape, string } from 'prop-types';
 import { scriptPropType } from '@bbc/gel-foundations/prop-types';
 import VisuallyHiddenText from '@bbc/psammead-visually-hidden-text';
-import { formatDuration } from '@bbc/psammead-timestamp-container/src/utilities/timestampUtilities';
+import { formatDuration } from '@bbc/psammead-timestamp-container/utilities';
 
 const CardWrapper = styled.div`
   padding-top: ${GEL_SPACING};
