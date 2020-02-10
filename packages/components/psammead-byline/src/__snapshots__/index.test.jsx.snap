@@ -23,13 +23,11 @@ exports[`Byline should render correctly 1`] = `
 }
 
 .c2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
+  list-style: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-right: 0;
+  padding-left: 0;
   font-family: ReithSans,Helvetica,Arial,sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -59,20 +57,23 @@ exports[`Byline should render correctly 1`] = `
     class="c1"
     src="http://www.bbc.co.uk/john-smith.jpg"
   />
-  <div
+  <ul
     class="c2"
+    role="list"
   >
-    <span
+    <li
       class="c3"
+      role="listitem"
     >
       John Smith
-    </span>
-    <span
+    </li>
+    <li
       class="c4"
+      role="listitem"
     >
       Art editor
-    </span>
-  </div>
+    </li>
+  </ul>
 </div>
 `;
 
@@ -89,13 +90,11 @@ exports[`Byline should render correctly without an avatar 1`] = `
 }
 
 .c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
+  list-style: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-right: 0;
+  padding-left: 0;
   font-family: ReithSans,Helvetica,Arial,sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -120,19 +119,22 @@ exports[`Byline should render correctly without an avatar 1`] = `
 <div
   class="c0"
 >
-  <div
+  <ul
     class="c1"
+    role="list"
   >
-    <span
+    <li
       class="c2"
+      role="listitem"
     >
       By John Smith
-    </span>
-    <span
+    </li>
+    <li
       class="c3"
+      role="listitem"
     >
       Art editor
-    </span>
-  </div>
+    </li>
+  </ul>
 </div>
 `;
