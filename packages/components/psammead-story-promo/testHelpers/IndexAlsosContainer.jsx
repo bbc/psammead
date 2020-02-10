@@ -25,12 +25,29 @@ const getMediaType = (cpsType, mediaType) => {
   return type;
 };
 
-const buildIndexAlsosMediaIndicator = (cpsType, mediaType, service) => {
+const buildIndexAlsosMediaIndicator = ({
+  cpsType,
+  mediaType,
+  script,
+  service,
+}) => {
   const indexAlsosMediaType = getMediaType(cpsType, mediaType);
 
   return indexAlsosMediaType ? (
-    <MediaIndicator service={service} type={indexAlsosMediaType} indexAlsos />
+    <MediaIndicator
+      script={script}
+      service={service}
+      type={indexAlsosMediaType}
+      isInline
+    />
   ) : null;
+};
+
+buildIndexAlsosMediaIndicator.propTypes = {
+  cpsType: string.isRequired,
+  mediaType: string.isRequired,
+  script: shape({}).isRequired,
+  service: string.isRequired,
 };
 
 /*
@@ -48,11 +65,12 @@ const IndexAlsosContainer = ({ alsoItems, script, service, dir }) => {
           const { id, cpsType, mediaType } = item;
           const { headline } = item.headlines;
           const url = item.locators.assetUri;
-          const indexAlsoMediaIndicator = buildIndexAlsosMediaIndicator(
+          const indexAlsoMediaIndicator = buildIndexAlsosMediaIndicator({
             cpsType,
             mediaType,
+            script,
             service,
-          );
+          });
           const indexAlsoMediaType = getMediaType(cpsType, mediaType);
 
           return (
