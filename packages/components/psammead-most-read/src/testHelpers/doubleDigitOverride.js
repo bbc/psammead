@@ -1,4 +1,6 @@
 // These default measurements are to be used for 2nd column minimum width.
+// Services which use this default: afaanoromoo, afrique, amharic, gahuza, hausa, hindi,
+// igbo, indonesia, kyrgyz, serbian, somali, swahili, ukchina, zhongwen, s
 export const doubleDigitDefault = {
   group0: '2rem',
   group1: '2.5rem',
@@ -9,27 +11,6 @@ export const doubleDigitDefault = {
 
 // These override measurements are for services with smaller characters and used for 2nd column minimum width.
 export const doubleDigitOverride = {
-  afaanoromoo: {
-    group0: '2rem',
-    group1: '2.5rem',
-    group2: '3rem',
-    group3: '4rem',
-    group5: '3.9rem',
-  },
-  afrique: {
-    group0: '2rem',
-    group1: '2.5rem',
-    group2: '3rem',
-    group3: '4rem',
-    group5: '3.9rem',
-  },
-  amharic: {
-    group0: '2rem',
-    group1: '2.5rem',
-    group2: '3rem',
-    group3: '4rem',
-    group5: '3.9rem',
-  },
   arabic: {
     group0: '2.5rem',
     group1: '2.5rem',
@@ -58,47 +39,12 @@ export const doubleDigitOverride = {
     group3: '4rem',
     group5: '3.95rem',
   },
-  gahuza: {
-    group0: '2rem',
-    group1: '2.5rem',
-    group2: '3rem',
-    group3: '4rem',
-    group5: '3.9rem',
-  },
   gujarati: {
     group0: '2rem',
     group1: '2.5rem',
     group2: '3rem',
     group3: '5rem',
     group5: '4.75rem',
-  },
-  hausa: {
-    group0: '2rem',
-    group1: '2.5rem',
-    group2: '3rem',
-    group3: '4rem',
-    group5: '3.9rem',
-  },
-  hindi: {
-    group0: '2rem',
-    group1: '2.5rem',
-    group2: '3rem',
-    group3: '4rem',
-    group5: '3.9rem',
-  },
-  igbo: {
-    group0: '2rem',
-    group1: '2.5rem',
-    group2: '3rem',
-    group3: '4rem',
-    group5: '3.9rem',
-  },
-  indonesia: {
-    group0: '2rem',
-    group1: '2.5rem',
-    group2: '3rem',
-    group3: '4rem',
-    group5: '3.9rem',
   },
   japanese: {
     group0: '2.5rem',
@@ -113,13 +59,6 @@ export const doubleDigitOverride = {
     group2: '3rem',
     group3: '4rem',
     group5: '3.45rem',
-  },
-  kyrgyz: {
-    group0: '2rem',
-    group1: '2.5rem',
-    group2: '3rem',
-    group3: '4rem',
-    group5: '3.9rem',
   },
   marathi: {
     group0: '2rem',
@@ -191,33 +130,12 @@ export const doubleDigitOverride = {
     group3: '3.75rem',
     group5: '4.16rem',
   },
-  serbian: {
-    group0: '2rem',
-    group1: '2.5rem',
-    group2: '3rem',
-    group3: '4rem',
-    group5: '3.9rem',
-  },
   sinhala: {
     group0: '2rem',
     group1: '2rem',
     group2: '2.5rem',
     group3: '3.75rem',
     group5: '3.5rem',
-  },
-  somali: {
-    group0: '2rem',
-    group1: '2.5rem',
-    group2: '3rem',
-    group3: '4rem',
-    group5: '3.9rem',
-  },
-  swahili: {
-    group0: '2rem',
-    group1: '2.5rem',
-    group2: '3rem',
-    group3: '4rem',
-    group5: '3.9rem',
   },
   tamil: {
     group0: '1.25rem',
@@ -253,13 +171,6 @@ export const doubleDigitOverride = {
     group2: '2.75rem',
     group3: '3.75rem',
     group5: '4.17rem',
-  },
-  ukchina: {
-    group0: '2rem',
-    group1: '2.5rem',
-    group2: '3rem',
-    group3: '4rem',
-    group5: '3.9rem',
   },
   ukrainian: {
     group0: '2rem',
