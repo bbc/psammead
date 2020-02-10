@@ -73,7 +73,7 @@
     "@storybook/addon-knobs": "^5.3.9",
     "@storybook/addon-notes": "^5.3.9",
     "@storybook/addon-viewport": "^5.3.12",
-    "@storybook/react": "^5.3.9",
+    "@storybook/react": "^5.3.12",
     "@storybook/theming": "^5.3.12",
     "@testing-library/jest-dom": "^5.1.1",
     "@testing-library/react": "^9.4.0",
