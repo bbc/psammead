@@ -4,7 +4,7 @@ import {
   formatUnixTimestamp,
   isValidDateTime,
   formatDuration,
-} from './timestampUtilities';
+} from '.';
 import timestampGenerator from '../helpers/testHelpers';
 
 const timezone = 'Europe/London';
