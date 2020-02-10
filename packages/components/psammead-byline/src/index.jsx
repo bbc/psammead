@@ -29,26 +29,31 @@ const Avatar = styled.img`
   width: ${AVATAR_DIAMETER};
 `;
 
-const Person = styled.div`
-  display: flex;
-  flex-direction: column;
+const Person = styled.ul`
+  list-style: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-right: 0;
+  padding-left: 0;
   ${({ service }) => getSansRegular(service)}
   ${GEL_LONG_PRIMER}
 `;
 
-const Name = styled.span`
+const Name = styled.li`
   color: ${({ avatar }) => (avatar ? C_POSTBOX : C_STORM)};
 `;
-const Title = styled.span`
+const Title = styled.li`
   color: ${C_RHINO};
 `;
 
 const Byline = ({ service, name, title, avatar }) => (
   <Container avatar={avatar}>
     {avatar && <Avatar src={avatar.src} alt={avatar.alt || ''} />}
-    <Person service={service}>
-      <Name avatar={avatar}>{name}</Name>
-      <Title>{title}</Title>
+    <Person role="list" service={service}>
+      <Name role="listitem" avatar={avatar}>
+        {name}
+      </Name>
+      <Title role="listitem">{title}</Title>
     </Person>
   </Container>
 );
