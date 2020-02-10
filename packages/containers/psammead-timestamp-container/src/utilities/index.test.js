@@ -1,9 +1,5 @@
 import moment from 'moment-timezone';
-import {
-  unixTimestampToMoment,
-  formatUnixTimestamp,
-  isValidDateTime,
-} from './timestampUtilities';
+import { unixTimestampToMoment, formatUnixTimestamp, isValidDateTime } from '.';
 import timestampGenerator from '../helpers/testHelpers';
 
 const timezone = 'Europe/London';
