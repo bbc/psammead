@@ -1,0 +1,32 @@
+{
+  "name": "@bbc/psammead-byline",
+  "version": "0.1.0-alpha.1",
+  "publishConfig": {
+    "tag": "alpha"
+  },
+  "main": "dist/index.js",
+  "module": "esm/index.js",
+  "sideEffects": false,
+  "description": "A component that displays an author's name, title, and optional avatar.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/BBC-News/psammead/tree/latest/packages/components/psammead-byline"
+  },
+  "author": {
+    "name": "Psammead Maintainers",
+    "email": "PsammeadMaintainers@bbc.co.uk"
+  },
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/bbc/psammead/issues"
+  },
+  "homepage": "https://github.com/BBC-News/psammead/blob/latest/packages/components/psammead-byline/README.md",
+  "dependencies": {
+    "@bbc/gel-foundations": "^3.4.3",
+    "@bbc/psammead-styles": "^4.3.0"
+  },
+  "peerDependencies": {
+    "react": "^16.12.0",
+    "styled-components": "^4.3.2"
+  }
+}
