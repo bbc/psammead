@@ -45,7 +45,7 @@ const Title = styled.span`
 
 const Byline = ({ service, name, title, avatar }) => (
   <Container avatar={avatar}>
-    {avatar && <Avatar src={avatar.src} alt={avatar.alt} />}
+    {avatar && <Avatar src={avatar.src} alt={avatar.alt || ''} />}
     <Person service={service}>
       <Name avatar={avatar}>{name}</Name>
       <Title>{title}</Title>
