@@ -74,7 +74,7 @@
     "@storybook/addon-notes": "^5.3.9",
     "@storybook/addon-viewport": "^5.3.9",
     "@storybook/react": "^5.3.9",
-    "@storybook/theming": "^5.3.9",
+    "@storybook/theming": "^5.3.12",
     "@testing-library/jest-dom": "^5.0.2",
     "@testing-library/react": "^9.4.0",
     "@testing-library/react-hooks": "^3.2.1",
