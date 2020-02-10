@@ -116,7 +116,7 @@
     "storybook-chromatic": "^3.5.1",
     "storybook-readme": "^5.0.8",
     "strip-ansi": "^6.0.0",
-    "stylelint": "^13.0.0",
+    "stylelint": "^13.1.0",
     "stylelint-config-recommended": "^3.0.0",
     "stylelint-config-styled-components": "^0.1.1",
     "stylelint-csstree-validator": "^1.8.0",
