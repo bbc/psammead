@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 2.7.1 | [PR#3082](https://github.com/bbc/psammead/pull/3082) Talos - Bump Dependencies - @bbc/psammead-locales |
 | 2.7.0 | [PR#3078](https://github.com/bbc/psammead/pull/3078) Export timestamp utilities |
 | 2.6.21 | [PR#3033](https://github.com/bbc/psammead/pull/3033) Talos - Bump Dependencies - @bbc/psammead-timestamp |
 | 2.6.20 | [PR#2982](https://github.com/bbc/psammead/pull/2982) Talos - Bump Dependencies - @bbc/psammead-timestamp |
