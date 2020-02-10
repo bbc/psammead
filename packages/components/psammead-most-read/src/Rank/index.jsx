@@ -45,7 +45,7 @@ const doubleDigitWidth = service => {
     : doubleDigitDefault;
 };
 
-const Butts = ({ service, listIndex }) => {
+const isFiveOrTen = ({ service, listIndex }) => {
   return listIndex === 5 ? doubleDigitWidth(service).group5 : 'auto';
 };
 
@@ -94,7 +94,7 @@ const StyledWrapper = styled.div`
       props.listIndex !== 5 &&
       listHasDoubleDigits(props)
         ? '2rem'
-        : Butts(props)};
+        : isFiveOrTen(props)};
   }
 `;
 
