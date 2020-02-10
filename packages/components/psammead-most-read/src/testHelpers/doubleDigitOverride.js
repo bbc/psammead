@@ -31,11 +31,11 @@ export const doubleDigitOverride = {
     group5: '3.9rem',
   },
   bengali: {
-    group0: '2.5rem',
-    group1: '2rem',
-    group2: '2rem',
+    group0: '3rem',
+    group1: '2.1rem',
+    group2: '2.1rem',
     group3: '3rem',
-    group5: '3rem',
+    group5: '2.95rem',
   },
   burmese: {
     group0: '2rem',
@@ -104,7 +104,7 @@ export const doubleDigitOverride = {
     group0: '1.25rem',
     group1: '1.25rem',
     group2: '1.25rem',
-    group3: '1.75rem',
+    group3: '1.9rem',
     group5: '2rem',
   },
   pidgin: {
@@ -188,7 +188,7 @@ export const doubleDigitOverride = {
     group0: '1.25rem',
     group1: '1.5rem',
     group2: '1.5rem',
-    group3: '2.5rem',
+    group3: '2rem',
     group5: '2.07rem',
   },
   uzbek: {
