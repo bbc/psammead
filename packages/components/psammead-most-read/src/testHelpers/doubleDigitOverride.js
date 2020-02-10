@@ -1,6 +1,7 @@
 // These default measurements are to be used for 2nd column minimum width.
-// Services which use this default: afaanoromoo, afrique, amharic, gahuza, hausa, hindi,
-// igbo, indonesia, kyrgyz, serbian, somali, swahili, ukchina, zhongwen, s
+// Services which use this default:
+// afaanoromoo, afrique, amharic, gahuza, hausa, hindi, igbo, indonesia,
+// kyrgyz, serbian, somali, swahili, ukchina, zhongwen (14)
 export const doubleDigitDefault = {
   group0: '2rem',
   group1: '2.5rem',
@@ -10,6 +11,10 @@ export const doubleDigitDefault = {
 };
 
 // These override measurements are for services with smaller characters and used for 2nd column minimum width.
+// Services which have unique overrides:
+// arabic, azeri, bengali, burmese, gahuza, gujarati, japanese, korean, marathi, mundo,
+// nepali, news, pashto, persian, pidgin, portugeuese, punjabi, russian, sinhala, tamil,
+// telegu, thai, tigrinya, turkce, ukranian, urdu, uzbek, vietnamese, yoruba (29)
 export const doubleDigitOverride = {
   arabic: {
     group0: '2.5rem',
