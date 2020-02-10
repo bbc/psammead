@@ -55,6 +55,7 @@ exports[`Byline should render correctly 1`] = `
   class="c0"
 >
   <img
+    alt=""
     class="c1"
     src="http://www.bbc.co.uk/john-smith.jpg"
   />
