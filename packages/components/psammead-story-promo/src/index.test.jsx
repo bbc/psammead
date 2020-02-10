@@ -77,13 +77,12 @@ Info.defaultProps = {
   dir: 'ltr',
   promoHasImage: true,
 };
-const TimeDuration = styled.time`
-  vertical-align: middle;
-  margin: 0 ${GEL_SPACING_HLF};
+const StyledTime = styled.time`
+  padding: 0 ${GEL_SPACING_HLF};
 `;
 const mediaInfo = (
   <MediaIndicator script={latin} service="news">
-    <TimeDuration datetime="PT2M15S">2:15</TimeDuration>
+    <StyledTime datetime="PT2M15S">2:15</StyledTime>
   </MediaIndicator>
 );
 
