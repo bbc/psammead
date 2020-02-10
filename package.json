@@ -70,7 +70,7 @@
     "@bbc/psammead-visually-hidden-text": "^1.2.3",
     "@storybook/addon-a11y": "^5.3.12",
     "@storybook/addon-actions": "^5.3.12",
-    "@storybook/addon-knobs": "^5.3.9",
+    "@storybook/addon-knobs": "^5.3.12",
     "@storybook/addon-notes": "^5.3.12",
     "@storybook/addon-viewport": "^5.3.12",
     "@storybook/react": "^5.3.12",
