@@ -4,15 +4,7 @@ import styled from 'styled-components';
 import Paragraph from '@bbc/psammead-paragraph';
 import { cyrillicAndLatin } from '@bbc/gel-foundations/scripts';
 import Image from '@bbc/psammead-image';
-import {
-  GEL_SPACING_HLF,
-  GEL_SPACING,
-  GEL_SPACING_QUAD,
-} from '@bbc/gel-foundations/spacings';
-import {
-  GEL_GROUP_1_SCREEN_WIDTH_MAX,
-  GEL_GROUP_2_SCREEN_WIDTH_MIN,
-} from '@bbc/gel-foundations/breakpoints';
+import { GEL_SPACING_HLF, GEL_SPACING } from '@bbc/gel-foundations/spacings';
 import MediaIndicator from '@bbc/psammead-media-indicator';
 
 export const ExampleParagraph = ({ identifier }) => (
@@ -47,20 +39,7 @@ export const ExampleImage = () => (
   </ImageSpacing>
 );
 
-export const ExampleMediaIndicator = styled(MediaIndicator)`
-  @media (min-width: ${GEL_GROUP_2_SCREEN_WIDTH_MIN}) {
-    position: absolute;
-    bottom: 0;
-  }
-  > * {
-    @media (max-width: ${GEL_GROUP_1_SCREEN_WIDTH_MAX}) {
-      height: 1.25rem;
-      padding: ${GEL_SPACING_HLF} ${GEL_SPACING_HLF} 0;
-    }
-    height: ${GEL_SPACING_QUAD};
-    padding: ${GEL_SPACING} ${GEL_SPACING_HLF};
-  }
-`;
+export const ExampleMediaIndicator = styled(MediaIndicator)``;
 
 export const ExampleTime = styled.time`
   padding: 0 ${GEL_SPACING_HLF};
