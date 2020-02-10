@@ -6,12 +6,16 @@ import {
   buildRTLSubstories,
 } from '@bbc/psammead-storybook-helpers';
 import Image from '@bbc/psammead-image';
-import MediaIndicator from '@bbc/psammead-media-indicator';
 import StoryPromo, { Headline, Summary, Link } from '@bbc/psammead-story-promo';
 import IndexAlsosContainer from '../../psammead-story-promo/testHelpers/IndexAlsosContainer';
 import relatedItems from '../../psammead-story-promo/testHelpers/relatedItems';
 import Grid from '.';
-import { ExampleImage, ExampleParagraph } from './testHelpers';
+import {
+  ExampleImage,
+  ExampleParagraph,
+  ExampleMediaIndicator,
+  ExampleTime,
+} from './testHelpers';
 import notes from '../README.md';
 
 const STORY_KIND = 'Components|Grid';
@@ -1167,13 +1171,16 @@ storiesOf(STORY_KIND, module)
     ({ service, script, dir, text }) => {
       // eslint-disable-next-line react/prop-types
       const generateStory = ({ topStory, alsoItems = null, mediaType }) => {
-        const MediaIndicatorComponent = type => (
-          <MediaIndicator
-            duration={type !== 'photogallery' && '2:15'}
-            datetime="PT2M15S"
+        const MediaIndicatorComponent = () => (
+          <ExampleMediaIndicator
+            script={script}
             service={service}
-            type={type}
-          />
+            type={mediaType}
+          >
+            {mediaType !== 'photogallery' && (
+              <ExampleTime dateTime="PT2M15S">2:15</ExampleTime>
+            )}
+          </ExampleMediaIndicator>
         );
 
         const Info = (
@@ -1210,7 +1217,8 @@ storiesOf(STORY_KIND, module)
             image={Img}
             info={Info}
             mediaIndicator={
-              mediaType && MediaIndicatorComponent(mediaType, service)
+              mediaType &&
+              MediaIndicatorComponent({ script, service, mediaType })
             }
             topStory={topStory}
           />
