@@ -13,11 +13,12 @@ The `MediaIndicator` component provides a 'play', 'audio' or 'camera' icon as we
 <!-- prettier-ignore -->
 | Argument   | Type    | Required | Default | Example      |
 | ---------- | ------- | -------- | ------- | ------------ |
-| type       | string  | No       | 'video' | 'audio'      |
+| type       | string  | no       | 'video' | 'audio'      |
 | script | object | yes | N/A | `{ canon: { groupA: { fontSize: '28', lineHeight: '32',}, groupB: { fontSize: '32', lineHeight: '36', }, groupD: { fontSize: '44', lineHeight: '48', }, }, trafalgar: { groupA: { fontSize: '20', lineHeight: '24', }, groupB: { fontSize: '24', lineHeight: '28', }, groupD: { fontSize: '32', lineHeight: '36', }, }, }` |
-| service    | string  | Yes      | N/A     | `'news'`     |
-| isInline   | boolean | No       | false   | true         |
-| children   | node    | No       | null    | <IndexAlsos> |
+| service    | string  | yes      | N/A     | `'news'`     |
+| dir        | string  | no       | `'ltr'` | `'rtl'`  |
+| isInline   | boolean | no       | false   | true         |
+| children   | node    | no       | null    | <IndexAlsos> |
 
 ### Supported `type`s
 
@@ -39,7 +40,7 @@ import { latin } from '@bbc/gel-foundations/scripts';
 <MediaIndicator type="audio" script={latin} service="news" />;
 ```
 
-When using this component ensure you add the relevant spacing. 
+When using this component ensure you add the relevant spacing.
 
 E.g.
 
@@ -53,7 +54,7 @@ const TimeDuration = styled.time`
 `;
 
 <MediaIndicator type="audio" script={latin} service="news">
-    <TimeDuration datetime="PT2M15S">2:15</TimeDuration> 
+  <TimeDuration datetime="PT2M15S">2:15</TimeDuration>
 </MediaIndicator>;
 ```
 
