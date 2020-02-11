@@ -70,7 +70,7 @@ const MostRead = ({
   >
     <MostReadList numberOfItems={items.length} dir={dir}>
       {items.map((item, i) => (
-        <MostReadItemWrapper dir={dir} key={item.id}>
+        <MostReadItemWrapper dir={dir} key={item.id} maxTwoColumns={true}>
           <MostReadRank
             service={service}
             script={script}

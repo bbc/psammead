@@ -11,7 +11,7 @@ const mostReadListGridProps = {
   },
 };
 
-const mostReadItemGridProps = {
+const mostReadItemGridProps = (maxTwoColumns) => ({
   item: true,
   columns: {
     group0: 6,
@@ -19,8 +19,8 @@ const mostReadItemGridProps = {
     group2: 6,
     group3: 3,
     group4: 4,
-    group5: 4,
+    group5: maxTwoColumns ? 10 : 4,
   },
-};
+});
 
 export { mostReadListGridProps, mostReadItemGridProps };

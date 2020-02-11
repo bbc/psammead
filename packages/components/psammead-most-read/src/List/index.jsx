@@ -8,7 +8,7 @@ import {
 import Grid from '@bbc/psammead-grid';
 import { mostReadListGridProps } from '../testHelpers/gridProps';
 
-const StyledGrid = styled(Grid).attrs({
+const StyledGridBase = styled(Grid).attrs({
   role: 'list',
 })`
   list-style-type: none;
@@ -25,6 +25,8 @@ const StyledGrid = styled(Grid).attrs({
       [col-start] auto [col-end]
     );
   }
+`;
+const StyledGridFull = styled(StyledGridBase)`
   @media (min-width: ${GEL_GROUP_5_SCREEN_WIDTH_MIN}) {
     grid-auto-flow: row;
     grid-template-rows: repeat(
@@ -35,14 +37,14 @@ const StyledGrid = styled(Grid).attrs({
 `;
 
 const MostReadList = ({ numberOfItems, dir, children }) => (
-  <StyledGrid
+  <StyledGridBase
     {...mostReadListGridProps}
     dir={dir}
     numberOfItems={numberOfItems}
     forwardedAs="ol"
   >
     {children}
-  </StyledGrid>
+  </StyledGridBase>
 );
 
 MostReadList.propTypes = {

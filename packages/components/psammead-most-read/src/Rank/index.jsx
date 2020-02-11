@@ -50,7 +50,7 @@ const isFiveOrTen = ({ service, listIndex }) => {
   return listIndex === 5 ? doubleDigitWidth(service).group5 : 'auto';
 };
 
-const StyledWrapper = styled.div`
+const StyledWrapperBase = styled.div`
   @media (max-width: ${GEL_GROUP_0_SCREEN_WIDTH_MAX}) {
     min-width: ${props =>
       listHasDoubleDigits(props)
@@ -81,14 +81,16 @@ const StyledWrapper = styled.div`
 
   /* different number order for when css grid is supported  */
   @supports (${grid}) {
-    @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) and (max-width: ${GEL_GROUP_4_SCREEN_WIDTH_MAX}) {
+    @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
       min-width: ${props =>
         columnIncludesDoubleDigits(props, true)
-          ? doubleDigitWidth(props.service).group3
+          ? doubleDigitWidth(props.service).group5
           : GEL_SPACING_QUAD};
     }
   }
+`;
 
+const StyledWrapperFull = styled(StyledWrapperBase)`
   @media (min-width: ${GEL_GROUP_5_SCREEN_WIDTH_MIN}) {
     min-width: ${props =>
       props.listIndex !== 10 &&
@@ -127,7 +129,7 @@ const MostReadRank = ({ service, script, listIndex, numberOfItems, dir }) => {
   const numerals = serviceNumerals(service);
   const rank = numerals[listIndex];
   return (
-    <StyledWrapper
+    <StyledWrapperBase
       listIndex={listIndex}
       service={service}
       numberOfItems={numberOfItems}
@@ -136,7 +138,7 @@ const MostReadRank = ({ service, script, listIndex, numberOfItems, dir }) => {
       <StyledSpan service={service} script={script}>
         {rank}
       </StyledSpan>
-    </StyledWrapper>
+    </StyledWrapperBase>
   );
 };
 
