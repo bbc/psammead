@@ -35,11 +35,12 @@ const FlexWrapper = styled.div`
   height: 100%;
 `;
 
-const MediaIndicator = ({ type, script, service, isInline, children }) => (
+const MediaIndicator = ({ type, script, service, dir, isInline, children }) => (
   <StyledMediaIndicator
     aria-hidden="true"
     script={script}
     service={service}
+    dir={dir}
     isInline={isInline}
   >
     <FlexWrapper>
@@ -53,12 +54,14 @@ MediaIndicator.propTypes = {
   type: oneOf(['video', 'audio', 'photogallery']),
   script: shape(scriptPropType).isRequired,
   service: string.isRequired,
+  dir: oneOf(['ltr', 'rtl']),
   isInline: bool,
   children: node,
 };
 
 MediaIndicator.defaultProps = {
   type: 'video',
+  dir: 'ltr',
   isInline: false,
   children: null,
 };

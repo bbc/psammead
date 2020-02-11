@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 1.1.7 | [PR#3073](https://github.com/bbc/psammead/pull/3073) Update Grid Stories to include new major version of MediaIndicator |
 | 1.1.6 | [PR#3076](https://github.com/bbc/psammead/pull/3076) Add `parentEnableGelGutters` to documentation |
 | 1.1.5 | [PR#3030](https://github.com/bbc/psammead/pull/3030) Talos - Bump Dependencies - @bbc/psammead-styles |
 | 1.1.4 | [PR#2978](https://github.com/bbc/psammead/pull/2978) Talos - Bump Dependencies - @bbc/gel-foundations |

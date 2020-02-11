@@ -21,7 +21,13 @@ describe('MediaIndicator', () => {
 
   shouldMatchSnapshot(
     'should render video indicator correctly when inline on RTL',
-    <MediaIndicator type="video" script={arabic} service="persian" isInline />,
+    <MediaIndicator
+      type="video"
+      script={arabic}
+      service="persian"
+      dir="rtl"
+      isInline
+    />,
   );
 
   shouldMatchSnapshot(
