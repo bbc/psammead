@@ -82,18 +82,20 @@ const StyledTime = styled.time`
   padding: 0 ${GEL_SPACING_HLF};
 `;
 
-const MediaInfo = ({ dir }) => (
-  <MediaIndicator script={latin} service="news" dir={dir}>
+const MediaInfo = ({ dir, service }) => (
+  <MediaIndicator script={latin} service={service} dir={dir}>
     <StyledTime datetime="PT2M15S">2:15</StyledTime>
   </MediaIndicator>
 );
 
 MediaInfo.propTypes = {
   dir: oneOf(['rtl', 'ltr']),
+  service: string,
 };
 
 MediaInfo.defaultProps = {
   dir: 'ltr',
+  service: 'news',
 };
 
 describe('StoryPromo', () => {
@@ -123,7 +125,7 @@ describe('StoryPromo with Media Indicator', () => {
     <StoryPromo
       image={Image}
       info={Info({})}
-      mediaIndicator={<MediaInfo dir="rtl" />}
+      mediaIndicator={<MediaInfo service="persian" dir="rtl" />}
     />,
   );
 });
