@@ -31,15 +31,20 @@ storiesOf('Components|MediaIndicator/Video', module)
   .addDecorator(withServicesKnob())
   .add(
     'video without duration',
-    ({ script, service }) => (
-      <MediaIndicator type="video" script={script} service={service} />
+    ({ script, service, dir }) => (
+      <MediaIndicator
+        type="video"
+        script={script}
+        dir={dir}
+        service={service}
+      />
     ),
     { notes },
   )
   .add(
     'video with duration',
-    ({ script, service }) => (
-      <MediaIndicator type="video" script={script} service={service}>
+    ({ script, service, dir }) => (
+      <MediaIndicator type="video" script={script} service={service} dir={dir}>
         <TimeDuration dateTime={text('datetime', 'PT2M15S')}>
           {text('duration', '2:15')}
         </TimeDuration>
@@ -49,12 +54,13 @@ storiesOf('Components|MediaIndicator/Video', module)
   )
   .add(
     'inline video media indicator with headline',
-    ({ script, service }) => (
+    ({ script, service, dir }) => (
       <>
         <MediaIndicator
           type="video"
           script={script}
           service={service}
+          dir={dir}
           isInline={boolean('inline?', true)}
         />
         <StyledHeadline script={script} service={service} promoHasImage={false}>
@@ -73,15 +79,20 @@ storiesOf('Components|MediaIndicator/Audio', module)
   .addDecorator(withServicesKnob())
   .add(
     'audio without duration',
-    ({ script, service }) => (
-      <MediaIndicator type="audio" script={script} service={service} />
+    ({ script, service, dir }) => (
+      <MediaIndicator
+        type="audio"
+        script={script}
+        service={service}
+        dir={dir}
+      />
     ),
     { notes },
   )
   .add(
     'audio with duration',
-    ({ script, service }) => (
-      <MediaIndicator type="audio" script={script} service={service}>
+    ({ script, service, dir }) => (
+      <MediaIndicator type="audio" script={script} service={service} dir={dir}>
         <time dateTime={text('datetime', 'PT2M15S')}>
           {text('duration', '2:15')}
         </time>
@@ -91,12 +102,13 @@ storiesOf('Components|MediaIndicator/Audio', module)
   )
   .add(
     'inline audio media indicator with headline',
-    ({ script, service }) => (
+    ({ script, service, dir }) => (
       <>
         <MediaIndicator
           type="audio"
           script={script}
           service={service}
+          dir={dir}
           isInline={boolean('inline?', true)}
         />
         <StyledHeadline script={script} service={service} promoHasImage={false}>
@@ -115,19 +127,25 @@ storiesOf('Components|MediaIndicator/Photo', module)
   .addDecorator(withServicesKnob())
   .add(
     'photogallery',
-    ({ script, service }) => (
-      <MediaIndicator type="photogallery" script={script} service={service} />
+    ({ script, service, dir }) => (
+      <MediaIndicator
+        type="photogallery"
+        script={script}
+        service={service}
+        dir={dir}
+      />
     ),
     { notes },
   )
   .add(
     'inline photogallery with headline',
-    ({ script, service }) => (
+    ({ script, service, dir }) => (
       <>
         <MediaIndicator
           type="photogallery"
           script={script}
           service={service}
+          dir={dir}
           isInline={boolean('inline?', true)}
         />
         <StyledHeadline script={script} service={service} promoHasImage={false}>
