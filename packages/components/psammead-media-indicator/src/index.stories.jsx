@@ -54,7 +54,7 @@ storiesOf('Components|MediaIndicator/Video', module)
   )
   .add(
     'inline video media indicator with headline',
-    ({ script, service, dir }) => (
+    ({ longText: textSnippet, script, service, dir }) => (
       <>
         <MediaIndicator
           type="video"
@@ -64,9 +64,7 @@ storiesOf('Components|MediaIndicator/Video', module)
           isInline={boolean('inline?', true)}
         />
         <StyledHeadline script={script} service={service} promoHasImage={false}>
-          <Link href="https://www.bbc.co.uk/news">
-            {text('extra text', 'example text')}
-          </Link>
+          <Link href="https://www.bbc.co.uk/news">{textSnippet}</Link>
         </StyledHeadline>
       </>
     ),
@@ -102,7 +100,7 @@ storiesOf('Components|MediaIndicator/Audio', module)
   )
   .add(
     'inline audio media indicator with headline',
-    ({ script, service, dir }) => (
+    ({ longText: textSnippet, script, service, dir }) => (
       <>
         <MediaIndicator
           type="audio"
@@ -112,9 +110,7 @@ storiesOf('Components|MediaIndicator/Audio', module)
           isInline={boolean('inline?', true)}
         />
         <StyledHeadline script={script} service={service} promoHasImage={false}>
-          <Link href="https://www.bbc.co.uk/news">
-            {text('extra text', 'example text')}
-          </Link>
+          <Link href="https://www.bbc.co.uk/news">{textSnippet}</Link>
         </StyledHeadline>
       </>
     ),
@@ -139,7 +135,7 @@ storiesOf('Components|MediaIndicator/Photo', module)
   )
   .add(
     'inline photogallery with headline',
-    ({ script, service, dir }) => (
+    ({ longText: textSnippet, script, service, dir }) => (
       <>
         <MediaIndicator
           type="photogallery"
@@ -149,9 +145,7 @@ storiesOf('Components|MediaIndicator/Photo', module)
           isInline={boolean('inline?', true)}
         />
         <StyledHeadline script={script} service={service} promoHasImage={false}>
-          <Link href="https://www.bbc.co.uk/news">
-            {text('extra text', 'example text')}
-          </Link>
+          <Link href="https://www.bbc.co.uk/news">{textSnippet}</Link>
         </StyledHeadline>
       </>
     ),
