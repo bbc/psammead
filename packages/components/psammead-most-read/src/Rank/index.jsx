@@ -19,6 +19,7 @@ import {
   GEL_GROUP_1_SCREEN_WIDTH_MAX,
   GEL_GROUP_0_SCREEN_WIDTH_MAX,
 } from '@bbc/gel-foundations/breakpoints';
+import { GEL_SPACING_QUAD } from '@bbc/gel-foundations/spacings';
 import { C_POSTBOX } from '@bbc/psammead-styles/colours';
 import { scriptPropType } from '@bbc/gel-foundations/prop-types';
 import { grid } from '@bbc/psammead-styles/detection';
@@ -84,7 +85,7 @@ const StyledWrapper = styled.div`
       min-width: ${props =>
         columnIncludesDoubleDigits(props, true)
           ? doubleDigitWidth(props.service).group3
-          : '2rem'};
+          : GEL_SPACING_QUAD};
     }
   }
 
@@ -93,7 +94,7 @@ const StyledWrapper = styled.div`
       props.listIndex !== 10 &&
       props.listIndex !== 5 &&
       listHasDoubleDigits(props)
-        ? '2rem'
+        ? GEL_SPACING_QUAD
         : isFiveOrTen(props)};
   }
 `;
