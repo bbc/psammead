@@ -50,53 +50,18 @@ const isFiveOrTen = ({ service, listIndex }) => {
   return listIndex === 5 ? doubleDigitWidth(service).group5 : 'auto';
 };
 
+const bullshit = ({ listIndex }) => {
+  return listIndex === 10 ? '2rem' : '4rem';
+};
+const isTen = ({ listIndex }) => {
+  return listIndex === 10 ? '1rem' : '2rem';
+};
+
 const StyledWrapper = styled.div`
-  @media (max-width: ${GEL_GROUP_0_SCREEN_WIDTH_MAX}) {
-    min-width: ${props =>
-      listHasDoubleDigits(props)
-        ? doubleDigitWidth(props.service).group0
-        : 'auto'};
-  }
+  min-width: ${props => (listHasDoubleDigits(props) ? isTen(props) : '2rem')};
 
-  @media (min-width: ${GEL_GROUP_1_SCREEN_WIDTH_MIN}) and (max-width: ${GEL_GROUP_1_SCREEN_WIDTH_MAX}) {
-    min-width: ${props =>
-      listHasDoubleDigits(props)
-        ? doubleDigitWidth(props.service).group1
-        : 'auto'};
-  }
-
-  @media (min-width: ${GEL_GROUP_2_SCREEN_WIDTH_MIN}) and (max-width: ${GEL_GROUP_2_SCREEN_WIDTH_MAX}) {
-    min-width: ${props =>
-      listHasDoubleDigits(props)
-        ? doubleDigitWidth(props.service).group2
-        : 'auto'};
-  }
-
-  @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) and (max-width: ${GEL_GROUP_4_SCREEN_WIDTH_MAX}) {
-    min-width: ${props =>
-      columnIncludesDoubleDigits(props, false)
-        ? doubleDigitWidth(props.service).group3
-        : 'auto'};
-  }
-
-  /* different number order for when css grid is supported  */
-  @supports (${grid}) {
-    @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) and (max-width: ${GEL_GROUP_4_SCREEN_WIDTH_MAX}) {
-      min-width: ${props =>
-        columnIncludesDoubleDigits(props, true)
-          ? doubleDigitWidth(props.service).group3
-          : GEL_SPACING_QUAD};
-    }
-  }
-
-  @media (min-width: ${GEL_GROUP_5_SCREEN_WIDTH_MIN}) {
-    min-width: ${props =>
-      props.listIndex !== 10 &&
-      props.listIndex !== 5 &&
-      listHasDoubleDigits(props)
-        ? GEL_SPACING_QUAD
-        : isFiveOrTen(props)};
-  }
+  max-width: ${props =>
+    listHasDoubleDigits(props) ? bullshit(props) : '4rem'};
 `;
 
 const StyledSpan = styled.span`
