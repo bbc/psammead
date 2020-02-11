@@ -1170,7 +1170,7 @@ storiesOf(STORY_KIND, module)
     'Example with Top story and regular promos',
     ({ service, script, dir, text }) => {
       // eslint-disable-next-line react/prop-types
-      const generateStory = ({ topStory, alsoItems = null, mediaType }) => {
+      const generateStory = ({ promoType, alsoItems = null, mediaType }) => {
         const MediaIndicatorComponent = () => (
           <ExampleMediaIndicator
             script={script}
@@ -1185,15 +1185,15 @@ storiesOf(STORY_KIND, module)
 
         const Info = (
           <>
-            <Headline script={script} topStory={topStory} service={service}>
+            <Headline script={script} promoType={promoType} service={service}>
               <Link href="https://www.bbc.co.uk/news">{text}</Link>
             </Headline>
-            <Summary script={script} topStory={topStory} service={service}>
+            <Summary script={script} promoType={promoType} service={service}>
               {service === 'news'
                 ? 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.'
                 : text}
             </Summary>
-            {topStory && alsoItems && (
+            {promoType === 'top' && alsoItems && (
               <IndexAlsosContainer
                 alsoItems={alsoItems}
                 script={script}
@@ -1216,11 +1216,11 @@ storiesOf(STORY_KIND, module)
           <StoryPromo
             image={Img}
             info={Info}
+            promoType={promoType}
             mediaIndicator={
               mediaType &&
               MediaIndicatorComponent({ script, service, mediaType })
             }
-            topStory={topStory}
           />
         );
       };
@@ -1257,7 +1257,7 @@ storiesOf(STORY_KIND, module)
             }}
           >
             {generateStory({
-              topStory: true,
+              promoType: 'top',
               alsoItems: relatedItems.map(item => ({
                 ...item,
                 headlines: { headline: text },
@@ -1275,7 +1275,7 @@ storiesOf(STORY_KIND, module)
               group5: 2,
             }}
           >
-            {generateStory({ topStory: false, mediaType: 'audio' })}
+            {generateStory({ promoType: 'regular', mediaType: 'audio' })}
           </Grid>
           <Grid
             item
@@ -1288,7 +1288,7 @@ storiesOf(STORY_KIND, module)
               group5: 2,
             }}
           >
-            {generateStory({ topStory: false, mediaType: 'video' })}
+            {generateStory({ promoType: 'regular', mediaType: 'video' })}
           </Grid>
           <Grid
             item
@@ -1301,7 +1301,7 @@ storiesOf(STORY_KIND, module)
               group5: 2,
             }}
           >
-            {generateStory({ topStory: false, mediaType: 'photogallery' })}
+            {generateStory({ promoType: 'regular', mediaType: 'photogallery' })}
           </Grid>
           <Grid
             item
@@ -1314,7 +1314,7 @@ storiesOf(STORY_KIND, module)
               group5: 2,
             }}
           >
-            {generateStory({ topStory: false })}
+            {generateStory({ promoType: 'regular' })}
           </Grid>
           <Grid
             item
@@ -1327,7 +1327,7 @@ storiesOf(STORY_KIND, module)
               group5: 2,
             }}
           >
-            {generateStory({ topStory: false })}
+            {generateStory({ promoType: 'regular' })}
           </Grid>
           <Grid
             item
@@ -1340,7 +1340,7 @@ storiesOf(STORY_KIND, module)
               group5: 2,
             }}
           >
-            {generateStory({ topStory: false })}
+            {generateStory({ promoType: 'regular' })}
           </Grid>
           <Grid
             item
@@ -1353,7 +1353,7 @@ storiesOf(STORY_KIND, module)
               group5: 2,
             }}
           >
-            {generateStory({ topStory: false })}
+            {generateStory({ promoType: 'regular' })}
           </Grid>
           <Grid
             item
@@ -1366,7 +1366,7 @@ storiesOf(STORY_KIND, module)
               group5: 2,
             }}
           >
-            {generateStory({ topStory: false })}
+            {generateStory({ promoType: 'regular' })}
           </Grid>
         </Grid>
       );
