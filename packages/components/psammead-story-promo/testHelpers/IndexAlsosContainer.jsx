@@ -73,6 +73,7 @@ const IndexAlsosContainer = ({ alsoItems, script, service, dir }) => {
             mediaType,
             script,
             service,
+            dir,
           });
           const indexAlsoMediaType = getMediaType(cpsType, mediaType);
 
