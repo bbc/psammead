@@ -27,6 +27,7 @@ const getMediaType = (cpsType, mediaType) => {
 
 const buildIndexAlsosMediaIndicator = ({
   cpsType,
+  dir,
   mediaType,
   script,
   service,
@@ -35,6 +36,7 @@ const buildIndexAlsosMediaIndicator = ({
 
   return indexAlsosMediaType ? (
     <MediaIndicator
+      dir={dir}
       script={script}
       service={service}
       type={indexAlsosMediaType}
@@ -48,6 +50,7 @@ buildIndexAlsosMediaIndicator.propTypes = {
   mediaType: string.isRequired,
   script: shape({}).isRequired,
   service: string.isRequired,
+  dir: oneOf(['ltr', 'rtl']).isRequired,
 };
 
 /*
