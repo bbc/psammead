@@ -17,8 +17,11 @@ export const renderProgramCard = ({
   episodeTitle = '29/01/1990',
   duration = '30:00',
   durationLabel = 'Duration',
+  startTime = 1566914061212,
 }) => {
-  const { text, articlePath, longText, dir } = TEXT_VARIANTS[service];
+  const { text, articlePath, longText, dir, locale, timezone } = TEXT_VARIANTS[
+    service
+  ];
   return (
     <ProgramCard
       service={service}
@@ -28,11 +31,13 @@ export const renderProgramCard = ({
       summary={longText}
       episodeTitle={episodeTitle}
       duration={duration}
-      startTime="13:00"
+      startTime={startTime}
       state={state}
       link={articlePath}
       durationLabel={durationLabel}
       stateLabel={stateLabel}
+      timezone={timezone}
+      locale={locale}
     />
   );
 };
