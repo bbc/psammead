@@ -4,7 +4,8 @@ import styled from 'styled-components';
 import Paragraph from '@bbc/psammead-paragraph';
 import { cyrillicAndLatin } from '@bbc/gel-foundations/scripts';
 import Image from '@bbc/psammead-image';
-import { GEL_SPACING } from '@bbc/gel-foundations/dist/spacings';
+import { GEL_SPACING_HLF, GEL_SPACING } from '@bbc/gel-foundations/spacings';
+import MediaIndicator from '@bbc/psammead-media-indicator';
 
 export const ExampleParagraph = ({ identifier }) => (
   <Paragraph script={cyrillicAndLatin} service="news">
@@ -37,6 +38,12 @@ export const ExampleImage = () => (
     />
   </ImageSpacing>
 );
+
+export const ExampleMediaIndicator = styled(MediaIndicator)``;
+
+export const ExampleTime = styled.time`
+  padding: 0 ${GEL_SPACING_HLF};
+`;
 
 ExampleParagraph.propTypes = {
   identifier: string,

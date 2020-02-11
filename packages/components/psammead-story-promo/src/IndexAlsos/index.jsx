@@ -1,14 +1,12 @@
 import React from 'react';
 import styled from 'styled-components';
-import { node, oneOf, string, shape } from 'prop-types';
+import { node, string, shape } from 'prop-types';
 import { scriptPropType } from '@bbc/gel-foundations/prop-types';
 import { GEL_SPACING, GEL_SPACING_DBL } from '@bbc/gel-foundations/spacings';
 import { C_EBON, C_METAL, C_LUNAR } from '@bbc/psammead-styles/colours';
 import { getBrevier } from '@bbc/gel-foundations/typography';
 import { getSerifMedium } from '@bbc/psammead-styles/font-styles';
 import VisuallyHiddenText from '@bbc/psammead-visually-hidden-text';
-
-const paddingDir = ({ dir }) => `padding-${dir === 'rtl' ? 'left' : 'right'}`;
 
 const StyledIndexAlsos = styled.div`
   position: relative;
@@ -25,10 +23,6 @@ const StyledIndexAlsosUl = styled.ul`
   list-style-type: none;
   padding: 0;
   margin: 0;
-`;
-
-const IndexAlsosMediaIndicator = styled.span`
-  ${paddingDir}: ${GEL_SPACING};
 `;
 
 const RoleText = styled.span.attrs({
@@ -54,6 +48,8 @@ const StyledIndexAlsosLink = styled.a`
   &:visited {
     color: ${C_METAL};
   }
+
+  & svg { margin: 0; } /* Reset Media Indicator SVG margin */ 
 `;
 
 const IndexAlsosLink = ({
@@ -61,7 +57,6 @@ const IndexAlsosLink = ({
   script,
   service,
   url,
-  dir,
   mediaIndicator,
   mediaType,
 }) => {
@@ -69,9 +64,7 @@ const IndexAlsosLink = ({
     <StyledIndexAlsosLink href={url} script={script} service={service}>
       {mediaIndicator ? (
         <>
-          <IndexAlsosMediaIndicator dir={dir}>
-            {mediaIndicator}
-          </IndexAlsosMediaIndicator>
+          {mediaIndicator}
           <RoleText>
             <VisuallyHiddenText>{mediaType}, </VisuallyHiddenText>
             <IndexAlsosText>{children}</IndexAlsosText>
@@ -89,13 +82,11 @@ IndexAlsosLink.propTypes = {
   script: shape(scriptPropType).isRequired,
   service: string.isRequired,
   url: string.isRequired,
-  dir: oneOf(['ltr', 'rtl']),
   mediaIndicator: node,
   mediaType: string,
 };
 
 IndexAlsosLink.defaultProps = {
-  dir: 'ltr',
   mediaIndicator: null,
   mediaType: null,
 };
