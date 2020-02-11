@@ -27,19 +27,19 @@ const getMediaType = (cpsType, mediaType) => {
 
 const buildIndexAlsosMediaIndicator = ({
   cpsType,
-  dir,
   mediaType,
   script,
   service,
+  dir,
 }) => {
   const indexAlsosMediaType = getMediaType(cpsType, mediaType);
 
   return indexAlsosMediaType ? (
     <MediaIndicator
-      dir={dir}
+      type={indexAlsosMediaType}
       script={script}
       service={service}
-      type={indexAlsosMediaType}
+      dir={dir}
       isInline
     />
   ) : null;
