@@ -485,6 +485,7 @@ exports[`StoryPromo - Leading Story should render with Media Indicator correctly
         <div
           aria-hidden="true"
           class="c8"
+          dir="ltr"
         >
           <div
             class="c9"
@@ -949,6 +950,7 @@ exports[`StoryPromo - Top Story should render with Media Indicator correctly 1`]
         <div
           aria-hidden="true"
           class="c4"
+          dir="ltr"
         >
           <div
             class="c5"
@@ -1339,6 +1341,7 @@ exports[`StoryPromo - Top Story should render with multiple Index Alsos correctl
             <div
               aria-hidden="true"
               class="c12"
+              dir="ltr"
             >
               <div
                 class="c13"
@@ -1724,6 +1727,7 @@ exports[`StoryPromo - Top Story should render with one Index Also correctly 1`] 
           <div
             aria-hidden="true"
             class="c11"
+            dir="ltr"
           >
             <div
               class="c12"
@@ -2693,6 +2697,7 @@ exports[`StoryPromo with Media Indicator should render a RTL promo with media in
         <div
           aria-hidden="true"
           class="c4"
+          dir="rtl"
         >
           <div
             class="c5"
@@ -2993,6 +2998,7 @@ exports[`StoryPromo with Media Indicator should render correctly 1`] = `
         <div
           aria-hidden="true"
           class="c4"
+          dir="ltr"
         >
           <div
             class="c5"
