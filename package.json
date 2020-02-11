@@ -66,7 +66,7 @@
     "@bbc/psammead-styles": "^4.3.0",
     "@bbc/psammead-test-helpers": "^3.1.2",
     "@bbc/psammead-timestamp": "^2.2.24",
-    "@bbc/psammead-timestamp-container": "^2.6.21",
+    "@bbc/psammead-timestamp-container": "^2.7.2",
     "@bbc/psammead-visually-hidden-text": "^1.2.3",
     "@storybook/addon-a11y": "^5.3.12",
     "@storybook/addon-actions": "^5.3.12",
