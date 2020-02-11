@@ -1173,6 +1173,7 @@ storiesOf(STORY_KIND, module)
       const generateStory = ({ promoType, alsoItems = null, mediaType }) => {
         const MediaIndicatorComponent = () => (
           <ExampleMediaIndicator
+            dir={dir}
             script={script}
             service={service}
             type={mediaType}

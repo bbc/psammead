@@ -37,6 +37,7 @@ const MediaIndicatorComponent = ({
 }) => {
   return (
     <MediaIndicator
+      dir={dir}
       script={script}
       service={service}
       type={type}
