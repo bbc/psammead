@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 2.0.77 | [PR#3110](https://github.com/bbc/psammead/pull/3110) Talos - Bump Dependencies - @bbc/psammead-media-indicator |
 | 2.0.76 | [PR#3073](https://github.com/bbc/psammead/pull/3073) Update `@bbc/psammead-media-indicator` to major version 4 & update relevant usage in packages. |
 | 2.0.75 | [PR#3105](https://github.com/bbc/psammead/pull/3105) Use Node Image with version v12.15.0 & npm version 6.13.7 |
 | 2.0.74 | [PR#3104](https://github.com/bbc/psammead/pull/3104) Bumping dependencies |
