@@ -43,9 +43,6 @@ export const getItem = ({ service, withTimestamp = false }) => {
   };
 };
 
-export const getItems = ({ service = 'news', arraySize, withTimestamp }) =>
-  Array.from({ length: arraySize }, () => getItem({ service, withTimestamp }));
-
 export const getItemWrapperArray = ({
   numberOfItems,
   service,
