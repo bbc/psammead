@@ -2,7 +2,7 @@
 
 | Version | Description |
 |---------|-------------|
-| 0.1.0-alpha.6 | [PR#3079](https://github.com/bbc/psammead/pull/3079) Format duration time for the ProgramCard. |
+| 0.1.0-alpha.6 | [PR#3079](https://github.com/bbc/psammead/pull/3079) Format duration time for the ProgramCard |
 | 0.1.0-alpha.5 | [PR#3074](https://github.com/BBC-News/psammead/pull/3074) Format hidden start time in program card component. |
 | 0.1.0-alpha.4 | [PR#3082](https://github.com/bbc/psammead/pull/3082) Talos - Bump Dependencies - @bbc/psammead-styles, @bbc/psammead-assets, @bbc/psammead-timestamp-container |
 | 0.1.0-alpha.3 | [PR#2988](https://github.com/BBC-News/psammead/pull/2988) Add start time of the radio program. |
