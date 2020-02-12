@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 2.0.78 | [PR#3118](https://github.com/bbc/psammead/pull/3118) Talos - Bump Dependencies - @bbc/psammead-timestamp-container |
 | 2.0.77 | [PR#3074](https://github.com/bbc/psammead/pull/3074) Bump @bbc/psammead-timestamp-container version |
 | 2.0.76 | [PR#3073](https://github.com/bbc/psammead/pull/3073) Update `@bbc/psammead-media-indicator` to major version 4 & update relevant usage in packages. |
 | 2.0.75 | [PR#3105](https://github.com/bbc/psammead/pull/3105) Use Node Image with version v12.15.0 & npm version 6.13.7 |
