@@ -247,7 +247,7 @@ exports[`ProgramCard should render correctly for live 1`] = `
             class="c5"
           >
             , 
-            13:00
+            14:54
             , 
           </span>
           <span
@@ -517,7 +517,7 @@ exports[`ProgramCard should render correctly for next 1`] = `
           class="c4"
         >
           , 
-          13:00
+          14:54
           , 
         </span>
         <span
@@ -785,7 +785,7 @@ exports[`ProgramCard should render correctly for onDemand 1`] = `
             class="c4"
           >
             , 
-            13:00
+            14:54
             , 
           </span>
           <span
@@ -1054,7 +1054,7 @@ exports[`ProgramCard should render correctly in RTL 1`] = `
             class="c4"
           >
             , 
-            13:00
+            ١٤:٥٤
             , 
           </span>
           <span

@@ -83,10 +83,12 @@ const schedules = [
 | state | string | yes | N/A | `'live'` |
 | stateLabel | string | yes | N/A | `'مباشر'` |
 | link | string | yes | N/A | `'https://bbc.com/arabic/articles/c1er5mjnznzo'` |
-| startTime | string | yes | N/A | `13:00` |
+| startTime | number | yes | N/A | `1566914061212` |
 | service | string | yes | N/A | `'news'` |
 | script | object | yes | N/A | `{ canon: { groupA: { fontSize: '28', lineHeight: '32',}, groupB: { fontSize: '32', lineHeight: '36', }, groupD: { fontSize: '44', lineHeight: '48', }, }, trafalgar: { groupA: { fontSize: '20', lineHeight: '24', }, groupB: { fontSize: '24', lineHeight: '28', }, groupD: { fontSize: '32', lineHeight: '36', }, }, }` |
 | dir | string | no | `"ltr"` | `"rtl"` |
+| timezone | string | no | `'Europe/London'` | `'Europe/Vienna'` |
+| locale | string | no | `'en-gb'` | `'fa'` |
 
 ### Usage
 
