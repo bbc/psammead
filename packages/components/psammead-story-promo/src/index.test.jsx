@@ -29,8 +29,8 @@ const Info = ({ promoType, isLive, dir, alsoItems, promoHasImage }) => (
   <>
     <Headline
       script={latin}
-      promoType={promoType}
       service="news"
+      promoType={promoType}
       promoHasImage={promoHasImage}
     >
       <Link href="https://www.bbc.co.uk/news">
@@ -47,8 +47,8 @@ const Info = ({ promoType, isLive, dir, alsoItems, promoHasImage }) => (
     </Headline>
     <Summary
       script={latin}
-      promoType={promoType}
       service="news"
+      promoType={promoType}
       promoHasImage={promoHasImage}
     >
       The summary of the promo
@@ -77,14 +77,26 @@ Info.defaultProps = {
   dir: 'ltr',
   promoHasImage: true,
 };
+
 const StyledTime = styled.time`
   padding: 0 ${GEL_SPACING_HLF};
 `;
-const mediaInfo = (
-  <MediaIndicator script={latin} service="news">
+
+const MediaInfo = ({ dir, service }) => (
+  <MediaIndicator script={latin} service={service} dir={dir}>
     <StyledTime datetime="PT2M15S">2:15</StyledTime>
   </MediaIndicator>
 );
+
+MediaInfo.propTypes = {
+  dir: oneOf(['rtl', 'ltr']),
+  service: string,
+};
+
+MediaInfo.defaultProps = {
+  dir: 'ltr',
+  service: 'news',
+};
 
 describe('StoryPromo', () => {
   shouldMatchSnapshot(
@@ -105,7 +117,16 @@ describe('StoryPromo', () => {
 describe('StoryPromo with Media Indicator', () => {
   shouldMatchSnapshot(
     'should render correctly',
-    <StoryPromo image={Image} info={Info({})} mediaIndicator={mediaInfo} />,
+    <StoryPromo image={Image} info={Info({})} mediaIndicator={<MediaInfo />} />,
+  );
+
+  shouldMatchSnapshot(
+    'should render a RTL promo with media indicator correctly',
+    <StoryPromo
+      image={Image}
+      info={Info({})}
+      mediaIndicator={<MediaInfo service="persian" dir="rtl" />}
+    />,
   );
 });
 
@@ -124,7 +145,7 @@ describe('StoryPromo - Top Story', () => {
     <StoryPromo
       image={Image}
       info={Info({ promoType: 'top' })}
-      mediaIndicator={mediaInfo}
+      mediaIndicator={<MediaInfo />}
       promoType="top"
     />,
   );
@@ -163,7 +184,7 @@ describe('StoryPromo - Leading Story', () => {
     <StoryPromo
       image={Image}
       info={Info({ promoType: 'leading' })}
-      mediaIndicator={mediaInfo}
+      mediaIndicator={<MediaInfo />}
       promoType="leading"
     />,
   );
@@ -175,7 +196,7 @@ describe('assertions', () => {
       <StoryPromo
         image={Image}
         info={Info({ promoType: 'top' })}
-        mediaIndicator={mediaInfo}
+        mediaIndicator={<MediaInfo />}
         promoType="top"
       />,
     );
@@ -201,7 +222,7 @@ describe('assertions', () => {
       <StoryPromo
         image={Image}
         info={Info({ promoType: 'top' })}
-        mediaIndicator={mediaInfo}
+        mediaIndicator={<MediaInfo />}
         promoType="top"
         data-story-promo="story_promo"
       />,

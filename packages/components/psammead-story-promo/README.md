@@ -185,7 +185,7 @@ const IndexAlsosComponent = ({ alsoItems, script, service }) => (
 
 const Info = ({ isLive, alsoItems }) => (
   <Fragment>
-    <Headline script={latin} topStory={true} service="news">
+    <Headline script={latin} service="news" promoType="top">
       <Link href="https://www.bbc.co.uk/news">
         {isLive ? (
           <LiveComponent
@@ -197,7 +197,7 @@ const Info = ({ isLive, alsoItems }) => (
         )}
       </Link>
     </Headline>
-    <Summary script={latin} topStory={true} service="news">
+    <Summary script={latin} service="news" promoType="top">
       The summary of the promo
     </Summary>
     <time>12 March 2019</time>
