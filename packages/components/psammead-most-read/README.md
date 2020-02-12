@@ -20,7 +20,7 @@ The `MostRead` component is designed to display the most read articles given a d
 | items | array | yes | N/A | `[{ id: "89b01387-4f40-8846-a11f-65aeed534da3", title: 'This is a headline', href: 'https://www.bbc.com', timestamp: <TimestampContainer timestamp={1570031976502} dateTimeFormat="YYYY-MM-DD" prefix="Last updated: " format="LL" script={latin} service='news'/> }]` |
 | header | string | yes | N/A | `'Most Read'`  |
 | service | string | yes | N/A | `'news'` |
-| script | object | yes | N/A | `{ canon: { groupA: { fontSize: '28', lineHeight: '32',}, groupB: { fontSize: '32', lineHeight: '36', }, groupD: { fontSize: '44', lineHeight: '48', }, }, trafalgar: { groupA: { fontSize: '20', lineHeight: '24', }, groupB: { fontSize: '24', lineHeight: '28', }, groupD: { fontSize: '32', lineHeight: '36', }, }, }` |
+| script | object | yes | N/A | `{ canon: { groupA: { fontSize: '28', lineHeight: '32' }, groupB: { fontSize: '32', lineHeight: '36' }, groupD: { fontSize: '44', lineHeight: '48' }, }, trafalgar: { groupA: { fontSize: '20', lineHeight: '24' }, groupB: { fontSize: '24', lineHeight: '28' }, groupD: { fontSize: '32', lineHeight: '36' } } }` |
 | dir | string | no | `"ltr"` | `"rtl"` |
 | labelId | string | no | `'Most-Read'` | `'Most-Read'`|
 | className | string | no | `null` | `'additional-class'` |
@@ -78,7 +78,7 @@ const items = [
 | Argument | Type | Required | Default | Example |
 | -------- | ---- | -------- | ------- | ------- |
 | numberOfItems | number | yes | N/A | `10` |
-| children | node | yes | N/A | `<MostReadItemWrapper dir='ltr' key={1}><MostReadRank service='news' script=latin listIndex={1} numberOfItems={10} dir='ltr'/> <MostReadLink dir='ltr href='/bbc.co.uk/news/articles/27051997' service='news' script={latin} title='This is a news article headline'/></MostReadItemWrapper>,` |
+| children | node | yes | N/A | `<MostReadItemWrapper dir="ltr" key={1}><MostReadRank service="news" script={latin} listIndex={1} numberOfItems={10} dir="ltr" /> <MostReadLink dir="ltr" href="/bbc.co.uk/news/articles/27051997" service="news" script={latin} title="This is a news article headline" /></MostReadItemWrapper>,` |
 | dir | string | yes | 'ltr' | `'ltr'`|
 | maxTwoColumns | bool | no | `false` | `true`|
 
@@ -101,11 +101,24 @@ import { latin } from '@bbc/gel-foundations/scripts';
   service="news"
   script={latin}
   dir="ltr"
-  maxTwoColumns={true}
+  maxTwoColumns
 >
-  <MostReadItemWrapper dir='ltr' key={1}   maxTwoColumns={true}>
-    <MostReadRank service='news' script=latin listIndex={1} numberOfItems={10} dir='ltr' maxTwoColumns={true}/>
-    <MostReadLink dir='ltr href='/bbc.co.uk/news/articles/27051997' service='news' script={latin} title='This is a news article headline'/>
+  <MostReadItemWrapper dir="ltr" key={1} maxTwoColumns>
+    <MostReadRank
+      service="news"
+      script={latin}
+      listIndex={1}
+      numberOfItems={10}
+      dir="ltr"
+      maxTwoColumns
+    />
+    <MostReadLink
+      dir="ltr"
+      href="/bbc.co.uk/news/articles/27051997"
+      service="news"
+      script={latin}
+      title="This is a news article headline"
+    />
   </MostReadItemWrapper>
 </MostReadList>;
 ```
@@ -119,7 +132,7 @@ import { latin } from '@bbc/gel-foundations/scripts';
 | -------- | ---- | -------- | ------- | ------- |
 | dir | string | yes | 'ltr' | `'ltr'`|
 | service | string | yes | N/A | `'news'` |
-| script | object | yes | N/A | `{ canon: { groupA: { fontSize: '28', lineHeight: '32',}, groupB: { fontSize: '32', lineHeight: '36', }, groupD: { fontSize: '44', lineHeight: '48', }, }, trafalgar: { groupA: { fontSize: '20', lineHeight: '24', }, groupB: { fontSize: '24', lineHeight: '28', }, groupD: { fontSize: '32', lineHeight: '36', }, }, }` |
+| script | object | yes | N/A | `{ canon: { groupA: { fontSize: '28', lineHeight: '32' }, groupB: { fontSize: '32', lineHeight: '36' }, groupD: { fontSize: '44', lineHeight: '48' }, }, trafalgar: { groupA: { fontSize: '20', lineHeight: '24' }, groupB: { fontSize: '24', lineHeight: '28' }, groupD: { fontSize: '32', lineHeight: '36' } } }` |
 | title | string | yes | N/A | `"This is a article headline"` |
 | href | string | yes | N/A | `"/bbc.co.uk/news/00000027051997"` |
 | children | node | no | null | `<Timestamp datetime="2019-03-01T14:00+00:00" script={script} padding={false} service={service}>Last updated: 5th November 2016</Timestamp>` |
@@ -160,7 +173,7 @@ import Timestamp from '@bbc/psammead-timestamp';
 | Argument | Type | Required | Default | Example |
 | -------- | ---- | -------- | ------- | ------- |
 | dir | string | yes | 'ltr' | `'ltr'`|
-| children | node | yes | N/A | `<MostReadRank service='news' script=latin listIndex={1} numberOfItems={10} dir='ltr'/> <MostReadLink dir='ltr href='/bbc.co.uk/news/articles/27051997' service='news' script={latin} title='This is a news article headline'/>` |
+| children | node | yes | N/A | `<MostReadRank service="news" script={latin} listIndex={1} numberOfItems={10} dir="ltr" /> <MostReadLink dir="ltr" href="/bbc.co.uk/news/articles/27051997" service="news" script={latin} title="This is a news article headline" />` |
 | maxTwoColumns | bool | no | `false` | `true`|
 
 ### Usage
@@ -175,8 +188,15 @@ import {
   MostReadRank,
   MostReadItemWrapper,
 } from '@bbc/psammead-most-read';
-<MostReadItemWrapper dir='ltr' maxTwoColumns={true}>
-  <MostReadRank service='news' script=latin listIndex={1} numberOfItems={10} dir='ltr' maxTwoColumns={true}/>
+<MostReadItemWrapper dir="ltr" maxTwoColumns>
+  <MostReadRank
+    service="news"
+    script={latin}
+    listIndex={1}
+    numberOfItems={10}
+    dir="ltr"
+    maxTwoColumns
+  />
   <MostReadLink
     dir="ltr"
     script={latin}
@@ -195,7 +215,7 @@ import {
 | Argument | Type | Required | Default | Example |
 | -------- | ---- | -------- | ------- | ------- |
 | service | string | yes | N/A | `'news'` |
-| script | object | yes | N/A | `{ canon: { groupA: { fontSize: '28', lineHeight: '32',}, groupB: { fontSize: '32', lineHeight: '36', }, groupD: { fontSize: '44', lineHeight: '48', }, }, trafalgar: { groupA: { fontSize: '20', lineHeight: '24', }, groupB: { fontSize: '24', lineHeight: '28', }, groupD: { fontSize: '32', lineHeight: '36', }, }, }` |
+| script | object | yes | N/A | `{ canon: { groupA: { fontSize: '28', lineHeight: '32' }, groupB: { fontSize: '32', lineHeight: '36' }, groupD: { fontSize: '44', lineHeight: '48' }, }, trafalgar: { groupA: { fontSize: '20', lineHeight: '24' }, groupB: { fontSize: '24', lineHeight: '28' }, groupD: { fontSize: '32', lineHeight: '36' } } }` |
 | listIndex | number | yes | N/A | `1` |
 | numberOfItems | number | yes | N/A | `10` |
 | dir | string | no | `"ltr"` | `"ltr"` |
@@ -214,7 +234,7 @@ import { MostReadRank } from '@bbc/psammead-most-read';
   listIndex={1}
   numberOfItems={5}
   dir="ltr"
-  maxTwoColumns={true}
+  maxTwoColumns
 />;
 ```
 
@@ -225,11 +245,11 @@ import { MostReadRank } from '@bbc/psammead-most-read';
 <!-- prettier-ignore -->
 | Argument | Type | Required | Default | Example |
 | -------- | ---- | -------- | ------- | ------- |
-| script | object | yes | N/A | `{ canon: { groupA: { fontSize: '28', lineHeight: '32',}, groupB: { fontSize: '32', lineHeight: '36', }, groupD: { fontSize: '44', lineHeight: '48', }, }, trafalgar: { groupA: { fontSize: '20', lineHeight: '24', }, groupB: { fontSize: '24', lineHeight: '28', }, groupD: { fontSize: '32', lineHeight: '36', }, }, }` |
+| script | object | yes | N/A | `{ canon: { groupA: { fontSize: '28', lineHeight: '32' }, groupB: { fontSize: '32', lineHeight: '36' }, groupD: { fontSize: '44', lineHeight: '48' }, }, trafalgar: { groupA: { fontSize: '20', lineHeight: '24' }, groupB: { fontSize: '24', lineHeight: '28' }, groupD: { fontSize: '32', lineHeight: '36' } } }` |
 | service | string | yes | N/A | `'news'` |
 | header | string | yes | N/A | `'Most Read'`  |
 | labelId | string | no | `'most-read'` | `'most-read'`  |
-| children | node | yes | N/A | `<MostReadList numberOfItems={10} dir='ltr'><MostReadItemWrapper dir='ltr'><MostReadRank service='news' script={script} listIndex={1} numberOfItems={10} dir='ltr'/><MostReadLink dir='ltr' service='news' script={script} title='article headline' href='/bbc.co.uk/articles/000027051997'>{timestamp}</MostReadLink></MostReadItemWrapper></MostReadList>`  |
+| children | node | yes | N/A | `<MostReadList numberOfItems={10} dir="ltr"><MostReadItemWrapper dir="ltr"><MostReadRank service="news" script={script} listIndex={1} numberOfItems={10} dir="ltr" /><MostReadLink dir="ltr" service="news" script={script} title="article headline" href="/bbc.co.uk/articles/000027051997">{timestamp}</MostReadLink></MostReadItemWrapper></MostReadList>`  |
 | dir | string | no | `"ltr"` | `"ltr"` |
 | className | string | no | `null` | `'additional-class'` |
 
