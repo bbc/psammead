@@ -102,7 +102,7 @@ exports[`MostReadRank should render ltr with double digits correctly 1`] = `
 
 @media (min-width:37.5rem) {
   .c0 {
-    min-width: 4rem;
+    min-width: 4.25rem;
   }
 }
 
