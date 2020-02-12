@@ -19,6 +19,7 @@ import {
   GEL_GROUP_1_SCREEN_WIDTH_MAX,
   GEL_GROUP_0_SCREEN_WIDTH_MAX,
 } from '@bbc/gel-foundations/breakpoints';
+import { GEL_SPACING_QUAD } from '@bbc/gel-foundations/spacings';
 import { C_POSTBOX } from '@bbc/psammead-styles/colours';
 import { scriptPropType } from '@bbc/gel-foundations/prop-types';
 import { grid } from '@bbc/psammead-styles/detection';
@@ -38,33 +39,43 @@ const listHasDoubleDigits = ({ numberOfItems }) => numberOfItems >= 9;
 const columnIncludesDoubleDigits = (props, supportsGrid) =>
   isOnSecondColumn(props, supportsGrid) && listHasDoubleDigits(props);
 
-const doubleDigitWidth = ({ service }) => {
+const doubleDigitWidth = service => {
   const overrideService = Object.keys(doubleDigitOverride);
   return overrideService.includes(service)
     ? doubleDigitOverride[service]
     : doubleDigitDefault;
 };
 
+const isFiveOrTen = ({ service, listIndex }) => {
+  return listIndex === 5 ? doubleDigitWidth(service).group5 : 'auto';
+};
+
 const StyledWrapper = styled.div`
   @media (max-width: ${GEL_GROUP_0_SCREEN_WIDTH_MAX}) {
     min-width: ${props =>
-      listHasDoubleDigits(props) ? doubleDigitWidth(props).group0 : 'auto'};
+      listHasDoubleDigits(props)
+        ? doubleDigitWidth(props.service).group0
+        : 'auto'};
   }
 
   @media (min-width: ${GEL_GROUP_1_SCREEN_WIDTH_MIN}) and (max-width: ${GEL_GROUP_1_SCREEN_WIDTH_MAX}) {
     min-width: ${props =>
-      listHasDoubleDigits(props) ? doubleDigitWidth(props).group1 : 'auto'};
+      listHasDoubleDigits(props)
+        ? doubleDigitWidth(props.service).group1
+        : 'auto'};
   }
 
   @media (min-width: ${GEL_GROUP_2_SCREEN_WIDTH_MIN}) and (max-width: ${GEL_GROUP_2_SCREEN_WIDTH_MAX}) {
     min-width: ${props =>
-      listHasDoubleDigits(props) ? doubleDigitWidth(props).group2 : 'auto'};
+      listHasDoubleDigits(props)
+        ? doubleDigitWidth(props.service).group2
+        : 'auto'};
   }
 
   @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) and (max-width: ${GEL_GROUP_4_SCREEN_WIDTH_MAX}) {
     min-width: ${props =>
       columnIncludesDoubleDigits(props, false)
-        ? doubleDigitWidth(props).group3
+        ? doubleDigitWidth(props.service).group3
         : 'auto'};
   }
 
@@ -73,16 +84,18 @@ const StyledWrapper = styled.div`
     @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) and (max-width: ${GEL_GROUP_4_SCREEN_WIDTH_MAX}) {
       min-width: ${props =>
         columnIncludesDoubleDigits(props, true)
-          ? doubleDigitWidth(props).group3
-          : 'auto'};
+          ? doubleDigitWidth(props.service).group3
+          : GEL_SPACING_QUAD};
     }
   }
 
   @media (min-width: ${GEL_GROUP_5_SCREEN_WIDTH_MIN}) {
     min-width: ${props =>
-      props.listIndex === 5 && listHasDoubleDigits(props)
-        ? doubleDigitWidth(props).group5
-        : 'auto'};
+      props.listIndex !== 10 &&
+      props.listIndex !== 5 &&
+      listHasDoubleDigits(props)
+        ? GEL_SPACING_QUAD
+        : isFiveOrTen(props)};
   }
 `;
 
