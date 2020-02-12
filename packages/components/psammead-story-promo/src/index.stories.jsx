@@ -6,6 +6,8 @@ import MediaIndicator from '@bbc/psammead-media-indicator';
 import VisuallyHiddenText from '@bbc/psammead-visually-hidden-text';
 import { withServicesKnob } from '@bbc/psammead-storybook-helpers';
 import Grid from '@bbc/psammead-grid';
+import styled from 'styled-components';
+import { GEL_SPACING_HLF } from '@bbc/gel-foundations/spacings';
 import StoryPromo, { Headline, Summary, Link, LiveLabel } from './index';
 import relatedItems from '../testHelpers/relatedItems';
 import IndexAlsosContainer from '../testHelpers/IndexAlsosContainer';
@@ -22,16 +24,31 @@ const buildImg = () => (
   />
 );
 
-const MediaIndicatorComponent = (type, service, displayImage) => {
+const StyledTime = styled.time`
+  padding: 0 ${GEL_SPACING_HLF};
+`;
+
+/* eslint-disable react/prop-types */
+const MediaIndicatorComponent = ({
+  type,
+  script,
+  service,
+  mediaIndicatorIsInline,
+}) => {
   return (
     <MediaIndicator
-      duration={displayImage && type !== 'photogallery' && '2:15'}
-      datetime="PT2M15S"
+      script={script}
       service={service}
       type={type}
-    />
+      isInline={mediaIndicatorIsInline}
+    >
+      {!mediaIndicatorIsInline && (
+        <StyledTime dateTime="PT2M15S">2:15</StyledTime>
+      )}
+    </MediaIndicator>
   );
 };
+/* eslint-enable react/prop-types */
 
 /* eslint-disable-next-line react/prop-types */
 const LiveComponent = ({ headline, service, dir }) => (
@@ -67,6 +84,7 @@ const InfoComponent = ({
   type,
   alsoItems,
   promoHasImage,
+  mediaIndicatorIsInline,
 }) => (
   <>
     <Headline
@@ -74,6 +92,7 @@ const InfoComponent = ({
       promoType={promoType}
       service={service}
       promoHasImage={promoHasImage}
+      mediaIndicatorIsInline={mediaIndicatorIsInline}
     >
       <Link href="https://www.bbc.co.uk/news">
         {isLive ? (
@@ -106,7 +125,7 @@ const generateStory = ({
   promoType,
   alsoItems = null,
   displayImage = true,
-}) => ({ text: textSnippet, script, service, dir }) => {
+}) => ({ longText: textSnippet, script, service, dir }) => {
   const mediaType = select(
     'Media Type',
     ['No media', 'video', 'audio', 'photogallery'],
@@ -125,6 +144,7 @@ const generateStory = ({
       type={mediaType}
       alsoItems={alsoItems}
       promoHasImage={displayImage}
+      mediaIndicatorIsInline={mediaType && !displayImage}
     />
   );
 
@@ -134,12 +154,18 @@ const generateStory = ({
     <StoryPromo
       image={Img}
       info={Info}
+      promoType={promoType}
       displayImage={displayImage}
       mediaIndicator={
         mediaType !== 'No media' &&
-        MediaIndicatorComponent(mediaType, service, displayImage)
+        MediaIndicatorComponent({
+          type: mediaType,
+          script,
+          service,
+          mediaIndicatorIsInline: mediaType && !displayImage,
+        })
       }
-      promoType={promoType}
+      mediaIndicatorIsInline={!displayImage}
     />
   );
 };

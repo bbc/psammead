@@ -1,5 +1,10 @@
 import moment from 'moment-timezone';
-import { unixTimestampToMoment, formatUnixTimestamp, isValidDateTime } from '.';
+import {
+  unixTimestampToMoment,
+  formatUnixTimestamp,
+  isValidDateTime,
+  formatDuration,
+} from '.';
 import timestampGenerator from '../helpers/testHelpers';
 
 const timezone = 'Europe/London';
@@ -7,6 +12,17 @@ const timestamp = 1539969006000; // 19 October 2018
 const locale = 'en-gb';
 
 describe('Timestamp utility functions', () => {
+  describe('formatDuration', () => {
+    it('should return duration in expected format', () => {
+      const durationInISO8601Format = 'PT30M'; // 30:00
+      expect(formatDuration(durationInISO8601Format)).toEqual('30:00');
+    });
+    it('should return duration in expected format when a format is passed in', () => {
+      const durationInISO8601Format = 'PT30M'; // 30:00
+      expect(formatDuration(durationInISO8601Format, 'mm,ss')).toEqual('30,00');
+    });
+  });
+
   describe('isValidDateTime', () => {
     it('should return true if timestamp is valid', () => {
       expect(isValidDateTime(timestamp)).toEqual(true);

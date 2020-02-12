@@ -5,6 +5,8 @@ import { latin } from '@bbc/gel-foundations/scripts';
 import MediaIndicator from '@bbc/psammead-media-indicator';
 import { render } from '@testing-library/react';
 import VisuallyHiddenText from '@bbc/psammead-visually-hidden-text';
+import styled from 'styled-components';
+import { GEL_SPACING_HLF } from '@bbc/gel-foundations/spacings';
 import StoryPromo, { Headline, Summary, Link, LiveLabel } from './index';
 import relatedItems from '../testHelpers/relatedItems';
 import IndexAlsosContainer from '../testHelpers/IndexAlsosContainer';
@@ -75,9 +77,13 @@ Info.defaultProps = {
   dir: 'ltr',
   promoHasImage: true,
 };
-
+const StyledTime = styled.time`
+  padding: 0 ${GEL_SPACING_HLF};
+`;
 const mediaInfo = (
-  <MediaIndicator duration="2:15" datetime="PT2M15S" service="news" />
+  <MediaIndicator script={latin} service="news">
+    <StyledTime datetime="PT2M15S">2:15</StyledTime>
+  </MediaIndicator>
 );
 
 describe('StoryPromo', () => {
