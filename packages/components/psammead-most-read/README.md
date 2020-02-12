@@ -101,11 +101,24 @@ import { latin } from '@bbc/gel-foundations/scripts';
   service="news"
   script={latin}
   dir="ltr"
-  maxTwoColumns={true}
+  maxTwoColumns
 >
-  <MostReadItemWrapper dir='ltr' key={1}   maxTwoColumns={true}>
-    <MostReadRank service='news' script=latin listIndex={1} numberOfItems={10} dir='ltr' maxTwoColumns={true}/>
-    <MostReadLink dir='ltr href='/bbc.co.uk/news/articles/27051997' service='news' script={latin} title='This is a news article headline'/>
+  <MostReadItemWrapper dir="ltr" key={1} maxTwoColumns>
+    <MostReadRank
+      service="news"
+      script={latin}
+      listIndex={1}
+      numberOfItems={10}
+      dir="ltr"
+      maxTwoColumns
+    />
+    <MostReadLink
+      dir="ltr"
+      href="/bbc.co.uk/news/articles/27051997"
+      service="news"
+      script={latin}
+      title="This is a news article headline"
+    />
   </MostReadItemWrapper>
 </MostReadList>;
 ```
@@ -175,8 +188,15 @@ import {
   MostReadRank,
   MostReadItemWrapper,
 } from '@bbc/psammead-most-read';
-<MostReadItemWrapper dir='ltr' maxTwoColumns={true}>
-  <MostReadRank service='news' script=latin listIndex={1} numberOfItems={10} dir='ltr' maxTwoColumns={true}/>
+<MostReadItemWrapper dir="ltr" maxTwoColumns>
+  <MostReadRank
+    service="news"
+    script={latin}
+    listIndex={1}
+    numberOfItems={10}
+    dir="ltr"
+    maxTwoColumns
+  />
   <MostReadLink
     dir="ltr"
     script={latin}
@@ -214,7 +234,7 @@ import { MostReadRank } from '@bbc/psammead-most-read';
   listIndex={1}
   numberOfItems={5}
   dir="ltr"
-  maxTwoColumns={true}
+  maxTwoColumns
 />;
 ```
 
@@ -229,7 +249,7 @@ import { MostReadRank } from '@bbc/psammead-most-read';
 | service | string | yes | N/A | `'news'` |
 | header | string | yes | N/A | `'Most Read'`  |
 | labelId | string | no | `'most-read'` | `'most-read'`  |
-| children | node | yes | N/A | `<MostReadList numberOfItems={10} dir='ltr'><MostReadItemWrapper dir='ltr'><MostReadRank service='news' script={script} listIndex={1} numberOfItems={10} dir='ltr'/><MostReadLink dir='ltr' service='news' script={script} title='article headline' href='/bbc.co.uk/articles/000027051997'>{timestamp}</MostReadLink></MostReadItemWrapper></MostReadList>`  |
+| children | node | yes | N/A | `<MostReadList numberOfItems={10} dir="ltr"><MostReadItemWrapper dir="ltr"><MostReadRank service="news" script={script} listIndex={1} numberOfItems={10} dir="ltr" /><MostReadLink dir="ltr" service="news" script={script} title="article headline" href="/bbc.co.uk/articles/000027051997">{timestamp}</MostReadLink></MostReadItemWrapper></MostReadList>`  |
 | dir | string | no | `"ltr"` | `"ltr"` |
 | className | string | no | `null` | `'additional-class'` |
 
