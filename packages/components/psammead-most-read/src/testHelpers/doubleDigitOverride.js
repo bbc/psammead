@@ -1,5 +1,16 @@
 // These default measurements are to be used for 2nd column minimum width.
 // Services which use this default:
+export const thinFontServices = [
+  'thamil',
+  'pashto',
+  'persian',
+  'telegu',
+  'turkce',
+  'urdu',
+];
+
+// These default measurements are to be used for 2nd column minimum width.
+// Services which use this default:
 // afaanoromoo, afrique, amharic, gahuza, hausa, hindi, igbo, indonesia,
 // kyrgyz, serbian, somali, swahili, ukchina, zhongwen (14)
 export const doubleDigitDefault = {
@@ -10,6 +21,29 @@ export const doubleDigitDefault = {
   group5: '3.9rem',
 };
 
+export const singleDigitDefault = {
+  group0: '1rem',
+  group1: '1.5rem',
+  group2: '2rem',
+  group3: '5rem',
+  group5: '200rem',
+};
+
+export const singleDigitThin = {
+  group0: '1rem',
+  group1: '1.5rem',
+  group2: '20rem',
+  group3: '5rem',
+  group5: '2rem',
+};
+
+export const doubleDigitThin = {
+  group0: '20rem',
+  group1: '20rem',
+  group2: '30rem',
+  group3: '40rem',
+  group5: '30rem',
+};
 // These override measurements are for services with smaller characters and used for 2nd column minimum width.
 // Services which have unique overrides:
 // arabic, azeri, bengali, burmese, gahuza, gujarati, japanese, korean, marathi, mundo,

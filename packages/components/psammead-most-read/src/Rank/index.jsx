@@ -19,7 +19,12 @@ import {
   GEL_GROUP_1_SCREEN_WIDTH_MAX,
   GEL_GROUP_0_SCREEN_WIDTH_MAX,
 } from '@bbc/gel-foundations/breakpoints';
-import { GEL_SPACING_QUAD } from '@bbc/gel-foundations/spacings';
+import {
+  GEL_SPACING_DBL,
+  GEL_SPACING_TRPL,
+  GEL_SPACING_QUAD,
+  GEL_SPACING_QUIN,
+} from '@bbc/gel-foundations/spacings';
 import { C_POSTBOX } from '@bbc/psammead-styles/colours';
 import { scriptPropType } from '@bbc/gel-foundations/prop-types';
 import { grid } from '@bbc/psammead-styles/detection';
@@ -27,6 +32,10 @@ import { getSerifLight } from '@bbc/psammead-styles/font-styles';
 import {
   doubleDigitDefault,
   doubleDigitOverride,
+  doubleDigitThin,
+  singleDigitDefault,
+  singleDigitThin,
+  thinFontServices,
 } from '../testHelpers/doubleDigitOverride';
 
 // For additional spacing for numerals in the right column because of '10' being double digits
@@ -46,22 +55,83 @@ const doubleDigitWidth = service => {
     : doubleDigitDefault;
 };
 
-const isFiveOrTen = ({ service, listIndex }) => {
-  return listIndex === 5 ? doubleDigitWidth(service).group5 : 'auto';
+const doubleDigitTest = service => {
+  return thinFontServices.includes(service)
+    ? doubleDigitThin
+    : doubleDigitDefault;
 };
 
-const bullshit = ({ listIndex }) => {
-  return listIndex === 10 ? '2rem' : '4rem';
+const doubleDigitCheck = numberOfItems => {
+  const singleDigitFunctions = {
+    default: singleDigitDefault,
+    thin: singleDigitThin,
+    name: 'single',
+  };
+  const doubleDigitFunctions = {
+    default: doubleDigitDefault,
+    thin: doubleDigitThin,
+    name: 'double',
+  };
+  return numberOfItems >= 9 ? doubleDigitFunctions : singleDigitFunctions;
 };
-const isTen = ({ listIndex }) => {
-  return listIndex === 10 ? '1rem' : '2rem';
+
+const fontWeight = ({ service, numberOfItems }) => {
+  // eslint-disable-next-line no-console
+  console.log(thinFontServices.includes(service));
+  // eslint-disable-next-line no-console
+  console.log(numberOfItems);
+  // eslint-disable-next-line no-console
+  console.log(doubleDigitCheck(numberOfItems));
+  return thinFontServices.includes(service)
+    ? doubleDigitCheck(numberOfItems).thin
+    : doubleDigitCheck(numberOfItems).default;
+};
+
+const isTen = (listIndex, yes, no) => {
+  return listIndex === 10 ? yes : no;
 };
 
 const StyledWrapper = styled.div`
-  min-width: ${props => (listHasDoubleDigits(props) ? isTen(props) : '2rem')};
+  @media (max-width: ${GEL_GROUP_0_SCREEN_WIDTH_MAX}) {
+    min-width: ${props =>
+      listHasDoubleDigits(props)
+        ? isTen(props.listIndex, '2rem', '2rem')
+        : fontWeight(props).group0};
+  }
+  @media (min-width: ${GEL_GROUP_1_SCREEN_WIDTH_MIN}) and (max-width: ${GEL_GROUP_1_SCREEN_WIDTH_MAX}) {
+    min-width: ${props =>
+      listHasDoubleDigits(props)
+        ? isTen(props.listIndex, '3rem', '3rem')
+        : GEL_SPACING_TRPL};
+  }
+  @media (min-width: ${GEL_GROUP_2_SCREEN_WIDTH_MIN}) and (max-width: ${GEL_GROUP_2_SCREEN_WIDTH_MAX}) {
+    min-width: ${props =>
+      listHasDoubleDigits(props)
+        ? isTen(props.listIndex, '3rem', '3rem')
+        : GEL_SPACING_QUAD};
+  }
+  @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) and (max-width: ${GEL_GROUP_4_SCREEN_WIDTH_MAX}) {
+    min-width: ${props =>
+      columnIncludesDoubleDigits(props, false)
+        ? isTen(props.listIndex, '4.5rem', '4.5rem')
+        : '5rem'};
+  }
 
-  max-width: ${props =>
-    listHasDoubleDigits(props) ? bullshit(props) : '4rem'};
+  @supports (${grid}) {
+    @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) and (max-width: ${GEL_GROUP_4_SCREEN_WIDTH_MAX}) {
+      min-width: ${props =>
+        columnIncludesDoubleDigits(props, true)
+          ? isTen(props.listIndex, '4rem', '4rem')
+          : GEL_SPACING_QUIN};
+    }
+  }
+
+  @media (min-width: ${GEL_GROUP_5_SCREEN_WIDTH_MIN}) {
+    min-width: ${props =>
+      listHasDoubleDigits(props)
+        ? isTen(props.listIndex, '4rem', '4rem')
+        : '5rem'};
+  }
 `;
 
 const StyledSpan = styled.span`
@@ -91,6 +161,8 @@ const serviceNumerals = service => {
 const MostReadRank = ({ service, script, listIndex, numberOfItems, dir }) => {
   const numerals = serviceNumerals(service);
   const rank = numerals[listIndex];
+  // eslint-disable-next-line no-console
+  console.log(fontWeight({ service, numberOfItems }));
   return (
     <StyledWrapper
       listIndex={listIndex}
