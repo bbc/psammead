@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 | ------- | ----------- |
+| 4.0.0-alpha.9 | [PR#3107](https://github.com/bbc/psammead/pull/3107) Pass in dir prop to MediaIndicator in IndexAlsosContainer. |
 | 4.0.0-alpha.8 | [PR#3073](https://github.com/bbc/psammead/pull/3073) Use new major version of MediaIndicator. StoryPromo has updated styling around the MediaIndicator. Index Alsos test helper now using prop `isInline` for the MediaIndicator. |
 | 4.0.0-alpha.7 | [PR#3027](https://github.com/bbc/psammead/pull/3027) Use mobile and tablet stylings |
 | 4.0.0-alpha.6 | [PR#3030](https://github.com/bbc/psammead/pull/3030) Talos - Bump Dependencies - @bbc/psammead-styles |
