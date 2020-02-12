@@ -37,26 +37,19 @@ const StyledGridExtended = styled(StyledGridBase)`
   }
 `;
 
-const MostReadList = ({ numberOfItems, dir, maxTwoColumns, children }) =>
-  maxTwoColumns ? (
-    <StyledGridBase
+const MostReadList = ({ numberOfItems, dir, maxTwoColumns, children }) => {
+  const MostReadListGrid = maxTwoColumns ? StyledGridBase : StyledGridExtended;
+  return (
+    <MostReadListGrid
       {...mostReadListGridProps(maxTwoColumns)}
       dir={dir}
       numberOfItems={numberOfItems}
       forwardedAs="ol"
     >
       {children}
-    </StyledGridBase>
-  ) : (
-    <StyledGridExtended
-      {...mostReadListGridProps(maxTwoColumns)}
-      dir={dir}
-      numberOfItems={numberOfItems}
-      forwardedAs="ol"
-    >
-      {children}
-    </StyledGridExtended>
+    </MostReadListGrid>
   );
+};
 
 MostReadList.propTypes = {
   children: node.isRequired,

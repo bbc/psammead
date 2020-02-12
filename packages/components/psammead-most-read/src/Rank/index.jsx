@@ -121,8 +121,10 @@ const MostReadRank = ({
 }) => {
   const numerals = serviceNumerals(service);
   const rank = numerals[listIndex];
-  return maxTwoColumns ? (
-    <StyledWrapperBase
+  const RankWrapper = maxTwoColumns ? StyledWrapperBase : StyledWrapperExtended;
+
+  return (
+    <RankWrapper
       listIndex={listIndex}
       service={service}
       numberOfItems={numberOfItems}
@@ -131,18 +133,7 @@ const MostReadRank = ({
       <StyledSpan service={service} script={script}>
         {rank}
       </StyledSpan>
-    </StyledWrapperBase>
-  ) : (
-    <StyledWrapperExtended
-      listIndex={listIndex}
-      service={service}
-      numberOfItems={numberOfItems}
-      dir={dir}
-    >
-      <StyledSpan service={service} script={script}>
-        {rank}
-      </StyledSpan>
-    </StyledWrapperExtended>
+    </RankWrapper>
   );
 };
 
