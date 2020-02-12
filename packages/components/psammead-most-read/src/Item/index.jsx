@@ -16,7 +16,7 @@ import Grid from '@bbc/psammead-grid';
 import {
   mostReadListGridProps,
   mostReadItemGridProps,
-} from '../testHelpers/gridProps';
+} from '../utilities/gridProps';
 
 // This is to handle the padding between the rank and the link for both ltr and rtl stories.
 const paddingStart = ({ dir }) => `padding-${dir === 'ltr' ? 'left' : 'right'}`;

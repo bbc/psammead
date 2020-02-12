@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 1.2.0 | [PR#3120](https://github.com/bbc/psammead/pull/3120) Remove `MostRead` and `MostReadSection` as well as other cleanup |
 | 1.1.0 | [PR#3116](https://github.com/bbc/psammead/pull/3116) Added `maxTwoColumns` prop to conditionally render GEL_GROUP_5_SCREEN_WIDTH_MIN media queries |
 | 1.0.6 | [PR#3102](https://github.com/bbc/psammead/pull/3102) Fix double digit column spacing in MostRead |
 | 1.0.5 | [PR#3082](https://github.com/bbc/psammead/pull/3082) Talos - Bump Dependencies - @bbc/psammead-grid |

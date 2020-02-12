@@ -1,5 +1,5 @@
-import MostReadList from './List/index';
-import MostReadRank from './Rank/index';
-import { MostReadLink, MostReadItemWrapper } from './Item/index';
+import MostReadList from './List';
+import MostReadRank from './Rank';
+import { MostReadLink, MostReadItemWrapper } from './Item';
 
 export { MostReadList, MostReadLink, MostReadItemWrapper, MostReadRank };
