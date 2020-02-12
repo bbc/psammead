@@ -183,7 +183,7 @@ exports[`MostRead should render with ltr most read with correct dir 1`] = `
 
 @media (min-width:80rem) {
   .c7 {
-    width: calc(50%);
+    width: calc(20%);
     display: inline-block;
     vertical-align: top;
   }
@@ -970,7 +970,7 @@ exports[`MostRead should render with rtl most read with correct dir 1`] = `
 
 @media (min-width:80rem) {
   .c7 {
-    width: calc(50%);
+    width: calc(20%);
     display: inline-block;
     vertical-align: top;
   }
