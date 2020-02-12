@@ -21,13 +21,6 @@ moment.relativeTimeThreshold('M', 12);
 
 const defaultFormat = 'LL, LT z';
 
-export const formatDuration = (durationValue, format = 'mm:ss') => {
-  const durationInMilliseconds = moment
-    .duration(durationValue)
-    .asMilliseconds();
-  return moment.utc(durationInMilliseconds).format(format);
-};
-
 // if the date is invalid return false - https://stackoverflow.com/questions/1353684/detecting-an-invalid-date-date-instance-in-javascript#answer-1353711
 export const isValidDateTime = dateTime => {
   // eslint-disable-next-line no-restricted-globals

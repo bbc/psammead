@@ -3,7 +3,6 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
-| 2.7.3 | [PR#3079](https://github.com/bbc/psammead/pull/3079) Add formatDuration utility function. |
 | 2.7.2 | [PR#3085](https://github.com/bbc/psammead/pull/3085) Rename timestampUtilities with index |
 | 2.7.1 | [PR#3082](https://github.com/bbc/psammead/pull/3082) Talos - Bump Dependencies - @bbc/psammead-locales |
 | 2.7.0 | [PR#3078](https://github.com/bbc/psammead/pull/3078) Export timestamp utilities |
