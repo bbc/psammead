@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { shape, string, oneOf, arrayOf, node } from 'prop-types';
+import { shape, string, oneOf, arrayOf, node, bool } from 'prop-types';
 import { scriptPropType } from '@bbc/gel-foundations/prop-types';
 import SectionLabel from '@bbc/psammead-section-label';
 import MostReadList from './List/index';
@@ -59,6 +59,7 @@ const MostRead = ({
   dir,
   labelId,
   className,
+  maxTwoColumns,
 }) => (
   <MostReadSection
     labelId={labelId}
@@ -68,15 +69,24 @@ const MostRead = ({
     dir={dir}
     className={className}
   >
-    <MostReadList numberOfItems={items.length} dir={dir}>
+    <MostReadList
+      numberOfItems={items.length}
+      dir={dir}
+      maxTwoColumns={maxTwoColumns}
+    >
       {items.map((item, i) => (
-        <MostReadItemWrapper dir={dir} key={item.id} maxTwoColumns={true}>
+        <MostReadItemWrapper
+          dir={dir}
+          key={item.id}
+          maxTwoColumns={maxTwoColumns}
+        >
           <MostReadRank
             service={service}
             script={script}
             listIndex={i + 1}
             numberOfItems={items.length}
             dir={dir}
+            maxTwoColumns={maxTwoColumns}
           />
           <MostReadLink
             dir={dir}
@@ -108,12 +118,14 @@ MostRead.propTypes = {
   dir: oneOf(['rtl', 'ltr']),
   labelId: string,
   className: string,
+  maxTwoColumns: bool,
 };
 
 MostRead.defaultProps = {
   dir: 'ltr',
   labelId: 'Most-Read',
   className: null,
+  maxTwoColumns: false,
 };
 
 export {
