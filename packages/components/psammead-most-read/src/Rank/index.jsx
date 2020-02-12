@@ -1,5 +1,5 @@
 import React from 'react';
-import { shape, string, oneOf, number } from 'prop-types';
+import { shape, string, oneOf, number, bool } from 'prop-types';
 import styled from 'styled-components';
 import { getFoolscap } from '@bbc/gel-foundations/typography';
 import {
@@ -11,7 +11,6 @@ import {
 } from '@bbc/psammead-locales/numerals';
 import {
   GEL_GROUP_5_SCREEN_WIDTH_MIN,
-  GEL_GROUP_4_SCREEN_WIDTH_MAX,
   GEL_GROUP_3_SCREEN_WIDTH_MIN,
   GEL_GROUP_2_SCREEN_WIDTH_MIN,
   GEL_GROUP_2_SCREEN_WIDTH_MAX,
@@ -19,7 +18,6 @@ import {
   GEL_GROUP_1_SCREEN_WIDTH_MAX,
   GEL_GROUP_0_SCREEN_WIDTH_MAX,
 } from '@bbc/gel-foundations/breakpoints';
-import { GEL_SPACING_QUAD } from '@bbc/gel-foundations/spacings';
 import { C_POSTBOX } from '@bbc/psammead-styles/colours';
 import { scriptPropType } from '@bbc/gel-foundations/prop-types';
 import { grid } from '@bbc/psammead-styles/detection';
@@ -39,43 +37,33 @@ const listHasDoubleDigits = ({ numberOfItems }) => numberOfItems >= 9;
 const columnIncludesDoubleDigits = (props, supportsGrid) =>
   isOnSecondColumn(props, supportsGrid) && listHasDoubleDigits(props);
 
-const doubleDigitWidth = service => {
+const doubleDigitWidth = ({ service }) => {
   const overrideService = Object.keys(doubleDigitOverride);
   return overrideService.includes(service)
     ? doubleDigitOverride[service]
     : doubleDigitDefault;
 };
 
-const isFiveOrTen = ({ service, listIndex }) => {
-  return listIndex === 5 ? doubleDigitWidth(service).group5 : 'auto';
-};
-
 const StyledWrapperBase = styled.div`
   @media (max-width: ${GEL_GROUP_0_SCREEN_WIDTH_MAX}) {
     min-width: ${props =>
-      listHasDoubleDigits(props)
-        ? doubleDigitWidth(props.service).group0
-        : 'auto'};
+      listHasDoubleDigits(props) ? doubleDigitWidth(props).group0 : 'auto'};
   }
 
   @media (min-width: ${GEL_GROUP_1_SCREEN_WIDTH_MIN}) and (max-width: ${GEL_GROUP_1_SCREEN_WIDTH_MAX}) {
     min-width: ${props =>
-      listHasDoubleDigits(props)
-        ? doubleDigitWidth(props.service).group1
-        : 'auto'};
+      listHasDoubleDigits(props) ? doubleDigitWidth(props).group1 : 'auto'};
   }
 
   @media (min-width: ${GEL_GROUP_2_SCREEN_WIDTH_MIN}) and (max-width: ${GEL_GROUP_2_SCREEN_WIDTH_MAX}) {
     min-width: ${props =>
-      listHasDoubleDigits(props)
-        ? doubleDigitWidth(props.service).group2
-        : 'auto'};
+      listHasDoubleDigits(props) ? doubleDigitWidth(props).group2 : 'auto'};
   }
 
-  @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) and (max-width: ${GEL_GROUP_4_SCREEN_WIDTH_MAX}) {
+  @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
     min-width: ${props =>
       columnIncludesDoubleDigits(props, false)
-        ? doubleDigitWidth(props.service).group3
+        ? doubleDigitWidth(props).group3
         : 'auto'};
   }
 
@@ -84,20 +72,18 @@ const StyledWrapperBase = styled.div`
     @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
       min-width: ${props =>
         columnIncludesDoubleDigits(props, true)
-          ? doubleDigitWidth(props.service).group5
-          : GEL_SPACING_QUAD};
+          ? doubleDigitWidth(props).group3
+          : 'auto'};
     }
   }
 `;
 
-const StyledWrapperFull = styled(StyledWrapperBase)`
+const StyledWrapperExtended = styled(StyledWrapperBase)`
   @media (min-width: ${GEL_GROUP_5_SCREEN_WIDTH_MIN}) {
     min-width: ${props =>
-      props.listIndex !== 10 &&
-      props.listIndex !== 5 &&
-      listHasDoubleDigits(props)
-        ? GEL_SPACING_QUAD
-        : isFiveOrTen(props)};
+      props.listIndex === 5 && listHasDoubleDigits(props)
+        ? doubleDigitWidth(props).group5
+        : 'auto'};
   }
 `;
 
@@ -125,10 +111,17 @@ const serviceNumerals = service => {
     : WesternArabic;
 };
 
-const MostReadRank = ({ service, script, listIndex, numberOfItems, dir }) => {
+const MostReadRank = ({
+  service,
+  script,
+  listIndex,
+  numberOfItems,
+  dir,
+  maxTwoColumns,
+}) => {
   const numerals = serviceNumerals(service);
   const rank = numerals[listIndex];
-  return (
+  return maxTwoColumns ? (
     <StyledWrapperBase
       listIndex={listIndex}
       service={service}
@@ -139,6 +132,17 @@ const MostReadRank = ({ service, script, listIndex, numberOfItems, dir }) => {
         {rank}
       </StyledSpan>
     </StyledWrapperBase>
+  ) : (
+    <StyledWrapperExtended
+      listIndex={listIndex}
+      service={service}
+      numberOfItems={numberOfItems}
+      dir={dir}
+    >
+      <StyledSpan service={service} script={script}>
+        {rank}
+      </StyledSpan>
+    </StyledWrapperExtended>
   );
 };
 
@@ -148,10 +152,12 @@ MostReadRank.propTypes = {
   listIndex: number.isRequired,
   numberOfItems: number.isRequired,
   dir: oneOf(['rtl', 'ltr']),
+  maxTwoColumns: bool,
 };
 
 MostReadRank.defaultProps = {
   dir: 'ltr',
+  maxTwoColumns: false,
 };
 
 export default MostReadRank;

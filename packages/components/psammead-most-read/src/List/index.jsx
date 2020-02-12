@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { oneOf, number, node } from 'prop-types';
+import { oneOf, number, node, bool } from 'prop-types';
 import {
   GEL_GROUP_2_SCREEN_WIDTH_MAX,
   GEL_GROUP_5_SCREEN_WIDTH_MIN,
@@ -26,7 +26,8 @@ const StyledGridBase = styled(Grid).attrs({
     );
   }
 `;
-const StyledGridFull = styled(StyledGridBase)`
+
+const StyledGridExtended = styled(StyledGridBase)`
   @media (min-width: ${GEL_GROUP_5_SCREEN_WIDTH_MIN}) {
     grid-auto-flow: row;
     grid-template-rows: repeat(
@@ -36,25 +37,37 @@ const StyledGridFull = styled(StyledGridBase)`
   }
 `;
 
-const MostReadList = ({ numberOfItems, dir, children }) => (
-  <StyledGridBase
-    {...mostReadListGridProps}
-    dir={dir}
-    numberOfItems={numberOfItems}
-    forwardedAs="ol"
-  >
-    {children}
-  </StyledGridBase>
-);
+const MostReadList = ({ numberOfItems, dir, maxTwoColumns, children }) =>
+  maxTwoColumns ? (
+    <StyledGridBase
+      {...mostReadListGridProps(maxTwoColumns)}
+      dir={dir}
+      numberOfItems={numberOfItems}
+      forwardedAs="ol"
+    >
+      {children}
+    </StyledGridBase>
+  ) : (
+    <StyledGridExtended
+      {...mostReadListGridProps(maxTwoColumns)}
+      dir={dir}
+      numberOfItems={numberOfItems}
+      forwardedAs="ol"
+    >
+      {children}
+    </StyledGridExtended>
+  );
 
 MostReadList.propTypes = {
-  numberOfItems: number.isRequired,
   children: node.isRequired,
   dir: oneOf(['rtl', 'ltr']),
+  maxTwoColumns: bool,
+  numberOfItems: number.isRequired,
 };
 
 MostReadList.defaultProps = {
   dir: 'ltr',
+  maxTwoColumns: false,
 };
 
 export default MostReadList;

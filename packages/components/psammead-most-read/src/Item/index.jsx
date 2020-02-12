@@ -117,8 +117,8 @@ const StyledGrid = styled(Grid).attrs({
 
 export const MostReadItemWrapper = ({ dir, children, maxTwoColumns }) => (
   <StyledGrid
-    {...mostReadItemGridProps(maxTwoColumns)}
-    parentColumns={mostReadListGridProps.columns} // parentColumns is required here because on IE, this component would be rendered before it's parent therefore not receiving the parent's grid columns values so we have to explicitly pass it as a prop here so it works on IE
+    {...mostReadItemGridProps}
+    parentColumns={mostReadListGridProps(maxTwoColumns).columns} // parentColumns is required here because on IE, this component would be rendered before it's parent therefore not receiving the parent's grid columns values so we have to explicitly pass it as a prop here so it works on IE
     dir={dir}
     forwardedAs="li"
   >
@@ -127,8 +127,8 @@ export const MostReadItemWrapper = ({ dir, children, maxTwoColumns }) => (
 );
 
 MostReadItemWrapper.propTypes = {
-  dir: oneOf(['rtl', 'ltr']),
   children: node.isRequired,
+  dir: oneOf(['rtl', 'ltr']),
   maxTwoColumns: bool,
 };
 
