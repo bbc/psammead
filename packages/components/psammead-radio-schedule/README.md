@@ -95,7 +95,7 @@ import { latin } from '@bbc/gel-foundations/scripts';
   timezone="Europe/London"
   locale="en-gb"
   dir="ltr"
-/>
+/>;
 ```
 
 ### When to use this component
