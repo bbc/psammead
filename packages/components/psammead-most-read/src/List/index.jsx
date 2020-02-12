@@ -8,7 +8,7 @@ import {
 import Grid from '@bbc/psammead-grid';
 import { mostReadListGridProps } from '../testHelpers/gridProps';
 
-const StyledGridBase = styled(Grid).attrs({
+const TwoColumnGrid = styled(Grid).attrs({
   role: 'list',
 })`
   list-style-type: none;
@@ -27,7 +27,7 @@ const StyledGridBase = styled(Grid).attrs({
   }
 `;
 
-const StyledGridExtended = styled(StyledGridBase)`
+const MultiColumnGrid = styled(TwoColumnGrid)`
   @media (min-width: ${GEL_GROUP_5_SCREEN_WIDTH_MIN}) {
     grid-auto-flow: row;
     grid-template-rows: repeat(
@@ -38,7 +38,7 @@ const StyledGridExtended = styled(StyledGridBase)`
 `;
 
 const MostReadList = ({ numberOfItems, dir, maxTwoColumns, children }) => {
-  const MostReadListGrid = maxTwoColumns ? StyledGridBase : StyledGridExtended;
+  const MostReadListGrid = maxTwoColumns ? TwoColumnGrid : MultiColumnGrid;
   return (
     <MostReadListGrid
       {...mostReadListGridProps(maxTwoColumns)}
