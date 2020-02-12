@@ -30,14 +30,16 @@ const buildIndexAlsosMediaIndicator = ({
   mediaType,
   script,
   service,
+  dir,
 }) => {
   const indexAlsosMediaType = getMediaType(cpsType, mediaType);
 
   return indexAlsosMediaType ? (
     <MediaIndicator
+      type={indexAlsosMediaType}
       script={script}
       service={service}
-      type={indexAlsosMediaType}
+      dir={dir}
       isInline
     />
   ) : null;
@@ -48,6 +50,7 @@ buildIndexAlsosMediaIndicator.propTypes = {
   mediaType: string.isRequired,
   script: shape({}).isRequired,
   service: string.isRequired,
+  dir: oneOf(['ltr', 'rtl']).isRequired,
 };
 
 /*
@@ -70,6 +73,7 @@ const IndexAlsosContainer = ({ alsoItems, script, service, dir }) => {
             mediaType,
             script,
             service,
+            dir,
           });
           const indexAlsoMediaType = getMediaType(cpsType, mediaType);
 

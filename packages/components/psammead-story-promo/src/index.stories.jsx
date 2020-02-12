@@ -33,13 +33,15 @@ const MediaIndicatorComponent = ({
   type,
   script,
   service,
+  dir,
   mediaIndicatorIsInline,
 }) => {
   return (
     <MediaIndicator
+      type={type}
       script={script}
       service={service}
-      type={type}
+      dir={dir}
       isInline={mediaIndicatorIsInline}
     >
       {!mediaIndicatorIsInline && (
@@ -162,6 +164,7 @@ const generateStory = ({
           type: mediaType,
           script,
           service,
+          dir,
           mediaIndicatorIsInline: mediaType && !displayImage,
         })
       }
