@@ -1,6 +1,11 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
 import { string, bool, oneOf, shape } from 'prop-types';
+import {
+  GEL_SPACING_DBL,
+  GEL_SPACING_QUAD,
+} from '@bbc/gel-foundations/spacings';
+import { GEL_GROUP_4_SCREEN_WIDTH_MIN } from '@bbc/gel-foundations/breakpoints';
 import Placeholder from './Placeholder';
 import Amp from './Amp';
 import Canonical from './Canonical';
@@ -18,6 +23,11 @@ const StyledAudioContainer = styled.div`
   height: 165px;
   position: relative;
   overflow: hidden;
+  margin-bottom: ${GEL_SPACING_DBL};
+
+  @media (min-width: ${GEL_GROUP_4_SCREEN_WIDTH_MIN}) {
+    margin-bottom: ${GEL_SPACING_QUAD};
+  }
 `;
 
 export const CanonicalMediaPlayer = ({
