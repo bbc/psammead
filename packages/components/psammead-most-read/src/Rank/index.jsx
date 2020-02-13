@@ -20,6 +20,7 @@ import {
   GEL_GROUP_0_SCREEN_WIDTH_MAX,
 } from '@bbc/gel-foundations/breakpoints';
 import {
+  GEL_SPACING,
   GEL_SPACING_DBL,
   GEL_SPACING_TRPL,
   GEL_SPACING_QUAD,
@@ -48,19 +49,6 @@ const listHasDoubleDigits = ({ numberOfItems }) => numberOfItems >= 9;
 const columnIncludesDoubleDigits = (props, supportsGrid) =>
   isOnSecondColumn(props, supportsGrid) && listHasDoubleDigits(props);
 
-const doubleDigitWidth = service => {
-  const overrideService = Object.keys(doubleDigitOverride);
-  return overrideService.includes(service)
-    ? doubleDigitOverride[service]
-    : doubleDigitDefault;
-};
-
-const doubleDigitTest = service => {
-  return thinFontServices.includes(service)
-    ? doubleDigitThin
-    : doubleDigitDefault;
-};
-
 const doubleDigitCheck = numberOfItems => {
   const singleDigitFunctions = {
     default: singleDigitDefault,
@@ -72,65 +60,66 @@ const doubleDigitCheck = numberOfItems => {
     thin: doubleDigitThin,
     name: 'double',
   };
-  return numberOfItems >= 9 ? doubleDigitFunctions : singleDigitFunctions;
+
+  return listHasDoubleDigits({ numberOfItems })
+    ? doubleDigitFunctions
+    : singleDigitFunctions;
 };
 
 const fontWeight = ({ service, numberOfItems }) => {
-  // eslint-disable-next-line no-console
-  console.log(thinFontServices.includes(service));
-  // eslint-disable-next-line no-console
-  console.log(numberOfItems);
-  // eslint-disable-next-line no-console
-  console.log(doubleDigitCheck(numberOfItems));
   return thinFontServices.includes(service)
     ? doubleDigitCheck(numberOfItems).thin
     : doubleDigitCheck(numberOfItems).default;
 };
 
-const isTen = (listIndex, yes, no) => {
+const lastDigitCheck = (listIndex, yes, no) => {
   return listIndex === 10 ? yes : no;
+};
+
+const isFiveOrTen = (listIndex, yes, no) => {
+  return listIndex === 10 || listIndex === 5 ? yes : no;
 };
 
 const StyledWrapper = styled.div`
   @media (max-width: ${GEL_GROUP_0_SCREEN_WIDTH_MAX}) {
     min-width: ${props =>
       listHasDoubleDigits(props)
-        ? isTen(props.listIndex, '2rem', '2rem')
+        ? fontWeight(props).group0_column
         : fontWeight(props).group0};
   }
   @media (min-width: ${GEL_GROUP_1_SCREEN_WIDTH_MIN}) and (max-width: ${GEL_GROUP_1_SCREEN_WIDTH_MAX}) {
     min-width: ${props =>
       listHasDoubleDigits(props)
-        ? isTen(props.listIndex, '3rem', '3rem')
-        : GEL_SPACING_TRPL};
+        ? fontWeight(props).group1_2_column
+        : fontWeight(props).group1};
   }
   @media (min-width: ${GEL_GROUP_2_SCREEN_WIDTH_MIN}) and (max-width: ${GEL_GROUP_2_SCREEN_WIDTH_MAX}) {
     min-width: ${props =>
       listHasDoubleDigits(props)
-        ? isTen(props.listIndex, '3rem', '3rem')
-        : GEL_SPACING_QUAD};
+        ? fontWeight(props).group1_2_column
+        : fontWeight(props).group2};
   }
   @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) and (max-width: ${GEL_GROUP_4_SCREEN_WIDTH_MAX}) {
     min-width: ${props =>
       columnIncludesDoubleDigits(props, false)
-        ? isTen(props.listIndex, '4.5rem', '4.5rem')
-        : '5rem'};
+        ? fontWeight(props).group3_5_column
+        : fontWeight(props).group3};
   }
 
   @supports (${grid}) {
     @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) and (max-width: ${GEL_GROUP_4_SCREEN_WIDTH_MAX}) {
       min-width: ${props =>
         columnIncludesDoubleDigits(props, true)
-          ? isTen(props.listIndex, '4rem', '4rem')
-          : GEL_SPACING_QUIN};
+          ? fontWeight(props).group3_5_column
+          : fontWeight(props).group3};
     }
   }
 
   @media (min-width: ${GEL_GROUP_5_SCREEN_WIDTH_MIN}) {
     min-width: ${props =>
       listHasDoubleDigits(props)
-        ? isTen(props.listIndex, '4rem', '4rem')
-        : '5rem'};
+        ? isFiveOrTen(props.listIndex, '4rem', '4rem')
+        : fontWeight(props).group5};
   }
 `;
 
@@ -162,7 +151,7 @@ const MostReadRank = ({ service, script, listIndex, numberOfItems, dir }) => {
   const numerals = serviceNumerals(service);
   const rank = numerals[listIndex];
   // eslint-disable-next-line no-console
-  console.log(fontWeight({ service, numberOfItems }));
+  console.log(fontWeight({ service, numberOfItems }).group0);
   return (
     <StyledWrapper
       listIndex={listIndex}
