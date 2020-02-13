@@ -1,6 +1,4 @@
 /*
-    Breakpoints documentation: https://confluence.dev.bbc.co.uk/display/WSFrontPGS/Screen+sizes+and+Breakpoints
-
     The following are breakpoints from GEL Grid
     Link to relevant GEL docs: https://www.bbc.co.uk/gel/guidelines/grid#grid-sizes
     The only exception is that we have split out group 1 into 0 and 1
