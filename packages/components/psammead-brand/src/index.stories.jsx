@@ -24,7 +24,7 @@ const inputs = (service = 'news') => {
   const options = Object.keys(svgs).filter(key => key !== 'BBC_BLOCKS');
   const svgChoice = select('Service SVG', options, service).toLowerCase();
   const productInput = text('Product', 'BBC News');
-  const serviceLocalisedNameInput = text('Localised service name', 'Yoruba');
+  const serviceLocalisedNameInput = text('Localised service name', null);
   const svgRatio = svgs[svgChoice].ratio;
   const svgMaxHeight = 24;
   const svgMinHeight = 16;
