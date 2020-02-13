@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { number, string, shape, oneOf } from 'prop-types';
-import { GEL_SPACING_HLF, GEL_SPACING } from '@bbc/gel-foundations/spacings';
+import { GEL_SPACING_HLF } from '@bbc/gel-foundations/spacings';
 import { scriptPropType } from '@bbc/gel-foundations/prop-types';
 import { C_RHINO, C_PEBBLE } from '@bbc/psammead-styles/colours';
 import { getMinion } from '@bbc/gel-foundations/typography';
@@ -19,8 +19,8 @@ const StyledClock = styled.span`
   align-items: center;
   ${({ dir }) =>
     dir === 'ltr'
-      ? `padding-right: ${GEL_SPACING_HLF}; padding-left: ${GEL_SPACING};`
-      : `padding-left: ${GEL_SPACING_HLF}; padding-right: ${GEL_SPACING};`}
+      ? `padding-right: ${GEL_SPACING_HLF};`
+      : `padding-left: ${GEL_SPACING_HLF};`}
   > svg {
     color: ${C_RHINO};
     margin: 0;
