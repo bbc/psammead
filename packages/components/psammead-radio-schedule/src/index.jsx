@@ -40,7 +40,7 @@ const renderSchedule = ({
   } = program;
 
   // we should format the start-time here and pass the formatted start-time to the  program card
-  const formattedStartTime = '13:00';
+  const formattedStartTime = 1566914061212;
 
   return (
     <>
