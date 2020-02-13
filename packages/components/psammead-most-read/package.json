@@ -23,8 +23,8 @@
     "read"
   ],
   "dependencies": {
-    "@bbc/gel-foundations": "^3.4.3",
-    "@bbc/psammead-grid": "^1.1.6",
+    "@bbc/gel-foundations": "^4.0.0",
+    "@bbc/psammead-grid": "^1.1.8",
     "@bbc/psammead-section-label": "^3.0.13",
     "@bbc/psammead-styles": "^4.3.0"
   },
