@@ -166,7 +166,7 @@ exports[`MostReadItemWrapper should render ltr correctly with 10 items 1`] = `
   }
 }
 
-@media (min-width:37.5rem) and (max-width:80rem) {
+@media (min-width:37.5rem) and (max-width:79.9375rem) {
   .c3 {
     min-width: auto;
   }
@@ -196,7 +196,7 @@ exports[`MostReadItemWrapper should render ltr correctly with 10 items 1`] = `
   }
 }
 
-@media (min-width:37.5rem) and (max-width:80rem) {
+@media (min-width:37.5rem) and (max-width:79.9375rem) {
   .c7 {
     min-width: 4rem;
   }
@@ -226,7 +226,7 @@ exports[`MostReadItemWrapper should render ltr correctly with 10 items 1`] = `
   }
 }
 
-@media (min-width:37.5rem) and (max-width:80rem) {
+@media (min-width:37.5rem) and (max-width:79.9375rem) {
   .c8 {
     min-width: auto;
   }
@@ -256,7 +256,7 @@ exports[`MostReadItemWrapper should render ltr correctly with 10 items 1`] = `
   }
 }
 
-@media (min-width:37.5rem) and (max-width:80rem) {
+@media (min-width:37.5rem) and (max-width:79.9375rem) {
   .c9 {
     min-width: 4rem;
   }
@@ -286,7 +286,7 @@ exports[`MostReadItemWrapper should render ltr correctly with 10 items 1`] = `
   }
 }
 
-@media (min-width:37.5rem) and (max-width:80rem) {
+@media (min-width:37.5rem) and (max-width:79.9375rem) {
   .c10 {
     min-width: auto;
   }
@@ -316,7 +316,7 @@ exports[`MostReadItemWrapper should render ltr correctly with 10 items 1`] = `
   }
 }
 
-@media (min-width:37.5rem) and (max-width:80rem) {
+@media (min-width:37.5rem) and (max-width:79.9375rem) {
   .c11 {
     min-width: 4rem;
   }
@@ -822,7 +822,7 @@ exports[`MostReadItemWrapper should render rtl correctly with 10 items 1`] = `
   }
 }
 
-@media (min-width:37.5rem) and (max-width:80rem) {
+@media (min-width:37.5rem) and (max-width:79.9375rem) {
   .c3 {
     min-width: auto;
   }
@@ -852,7 +852,7 @@ exports[`MostReadItemWrapper should render rtl correctly with 10 items 1`] = `
   }
 }
 
-@media (min-width:37.5rem) and (max-width:80rem) {
+@media (min-width:37.5rem) and (max-width:79.9375rem) {
   .c7 {
     min-width: 1.9rem;
   }
@@ -882,7 +882,7 @@ exports[`MostReadItemWrapper should render rtl correctly with 10 items 1`] = `
   }
 }
 
-@media (min-width:37.5rem) and (max-width:80rem) {
+@media (min-width:37.5rem) and (max-width:79.9375rem) {
   .c8 {
     min-width: 1.9rem;
   }
@@ -912,7 +912,7 @@ exports[`MostReadItemWrapper should render rtl correctly with 10 items 1`] = `
   }
 }
 
-@media (min-width:37.5rem) and (max-width:80rem) {
+@media (min-width:37.5rem) and (max-width:79.9375rem) {
   .c9 {
     min-width: auto;
   }
@@ -942,7 +942,7 @@ exports[`MostReadItemWrapper should render rtl correctly with 10 items 1`] = `
   }
 }
 
-@media (min-width:37.5rem) and (max-width:80rem) {
+@media (min-width:37.5rem) and (max-width:79.9375rem) {
   .c10 {
     min-width: 1.9rem;
   }
