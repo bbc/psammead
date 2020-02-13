@@ -37,7 +37,7 @@ exports[`SectionLabel When hideSectionHeader is true should add styling to hide 
   font-weight: 400;
   font-style: normal;
   color: #222222;
-  background-color: #FFFFFF;
+  background-color: #FDFDFD;
   margin: 1rem 0;
   padding-right: 0.5rem;
   display: -webkit-box;
@@ -189,7 +189,7 @@ exports[`SectionLabel With bar With linking title should render correctly 1`] = 
   font-weight: 400;
   font-style: normal;
   color: #222222;
-  background-color: #FFFFFF;
+  background-color: #FDFDFD;
   margin: 1rem 0;
   padding-right: 0.5rem;
   display: -webkit-box;
@@ -411,7 +411,7 @@ exports[`SectionLabel With bar With linking title should render correctly with a
   font-weight: 400;
   font-style: normal;
   color: #222222;
-  background-color: #FFFFFF;
+  background-color: #FDFDFD;
   margin: 1rem 0;
   padding-left: 0.5rem;
   display: -webkit-box;
@@ -633,7 +633,7 @@ exports[`SectionLabel With bar With linking title should render correctly with e
   font-weight: 400;
   font-style: normal;
   color: #222222;
-  background-color: #FFFFFF;
+  background-color: #FDFDFD;
   margin: 1rem 0;
   padding-right: 0.5rem;
   display: -webkit-box;
@@ -855,7 +855,7 @@ exports[`SectionLabel With bar With linking title should render correctly with e
   font-weight: 400;
   font-style: normal;
   color: #222222;
-  background-color: #FFFFFF;
+  background-color: #FDFDFD;
   margin: 1rem 0;
   padding-right: 0.5rem;
   display: -webkit-box;
@@ -1065,7 +1065,7 @@ exports[`SectionLabel With bar With plain title should render correctly 1`] = `
   font-weight: 400;
   font-style: normal;
   color: #222222;
-  background-color: #FFFFFF;
+  background-color: #FDFDFD;
   margin: 1rem 0;
   padding-right: 0.5rem;
   display: -webkit-box;
@@ -1220,7 +1220,7 @@ exports[`SectionLabel With bar With plain title should render correctly with ara
   font-weight: 400;
   font-style: normal;
   color: #222222;
-  background-color: #FFFFFF;
+  background-color: #FDFDFD;
   margin: 1rem 0;
   padding-left: 0.5rem;
   display: -webkit-box;
@@ -1375,7 +1375,7 @@ exports[`SectionLabel With bar With plain title should render correctly with exp
   font-weight: 400;
   font-style: normal;
   color: #222222;
-  background-color: #FFFFFF;
+  background-color: #FDFDFD;
   margin: 1rem 0;
   padding-right: 0.5rem;
   display: -webkit-box;
@@ -1530,7 +1530,7 @@ exports[`SectionLabel With bar With plain title should render correctly with exp
   font-weight: 400;
   font-style: normal;
   color: #222222;
-  background-color: #FFFFFF;
+  background-color: #FDFDFD;
   margin: 1rem 0;
   padding-right: 0.5rem;
   display: -webkit-box;
@@ -1697,7 +1697,7 @@ exports[`SectionLabel Without bar With linking title should render correctly 1`]
   font-weight: 400;
   font-style: normal;
   color: #222222;
-  background-color: #FFFFFF;
+  background-color: #FDFDFD;
   margin: 1rem 0;
   padding-right: 0.5rem;
   display: -webkit-box;
@@ -1896,7 +1896,7 @@ exports[`SectionLabel Without bar With linking title should render correctly wit
   font-weight: 400;
   font-style: normal;
   color: #222222;
-  background-color: #FFFFFF;
+  background-color: #FDFDFD;
   margin: 1rem 0;
   padding-left: 0.5rem;
   display: -webkit-box;
@@ -2095,7 +2095,7 @@ exports[`SectionLabel Without bar With linking title should render correctly wit
   font-weight: 400;
   font-style: normal;
   color: #222222;
-  background-color: #FFFFFF;
+  background-color: #FDFDFD;
   margin: 1rem 0;
   padding-right: 0.5rem;
   display: -webkit-box;
@@ -2282,7 +2282,7 @@ exports[`SectionLabel Without bar With plain title should render correctly 1`] =
   font-weight: 400;
   font-style: normal;
   color: #222222;
-  background-color: #FFFFFF;
+  background-color: #FDFDFD;
   margin: 1rem 0;
   padding-right: 0.5rem;
   display: -webkit-box;
@@ -2414,7 +2414,7 @@ exports[`SectionLabel Without bar With plain title should render correctly with 
   font-weight: 400;
   font-style: normal;
   color: #222222;
-  background-color: #FFFFFF;
+  background-color: #FDFDFD;
   margin: 1rem 0;
   padding-left: 0.5rem;
   display: -webkit-box;
@@ -2546,7 +2546,7 @@ exports[`SectionLabel Without bar With plain title should render correctly with 
   font-weight: 400;
   font-style: normal;
   color: #222222;
-  background-color: #FFFFFF;
+  background-color: #FDFDFD;
   margin: 1rem 0;
   padding-right: 0.5rem;
   display: -webkit-box;
