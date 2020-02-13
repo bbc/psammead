@@ -1,5 +1,6 @@
 import React from 'react';
 import { shouldMatchSnapshot } from '@bbc/psammead-test-helpers';
+import { latin, arabic } from '@bbc/gel-foundations/scripts';
 import MediaIndicator from './index';
 
 describe('MediaIndicator', () => {
@@ -9,55 +10,33 @@ describe('MediaIndicator', () => {
   );
 
   shouldMatchSnapshot(
-    'should render Index Also video indicator correctly',
-    <MediaIndicator type="video" service="news" indexAlsos />,
-  );
-
-  shouldMatchSnapshot(
     'should render video indicator correctly',
-    <MediaIndicator
-      duration="2:15"
-      datetime="PT2M15S"
-      type="video"
-      service="news"
-    />,
+    <MediaIndicator type="video" script={latin} service="news" />,
   );
 
   shouldMatchSnapshot(
-    'should render video correctly without duration details',
-    <MediaIndicator type="video" service="news" />,
+    'should render video indicator correctly when inline',
+    <MediaIndicator type="video" script={latin} service="news" isInline />,
+  );
+
+  shouldMatchSnapshot(
+    'should render video indicator correctly when inline on RTL',
+    <MediaIndicator
+      type="video"
+      script={arabic}
+      service="persian"
+      dir="rtl"
+      isInline
+    />,
   );
 
   shouldMatchSnapshot(
     'should render audio indicator correctly',
-    <MediaIndicator
-      duration="2:15"
-      datetime="PT2M15S"
-      type="audio"
-      service="news"
-    />,
-  );
-
-  shouldMatchSnapshot(
-    'should render audio correctly without duration details',
-    <MediaIndicator type="audio" service="news" />,
+    <MediaIndicator type="audio" script={latin} service="news" />,
   );
 
   shouldMatchSnapshot(
     'should render photogallery correctly',
-    <MediaIndicator type="photogallery" service="news" />,
-  );
-});
-
-describe('MediaIndicator - Top Story', () => {
-  shouldMatchSnapshot(
-    'should render a top story audio promo render correctly',
-    <MediaIndicator
-      duration="2:15"
-      datetime="PT2M15S"
-      type="audio"
-      topStory
-      service="news"
-    />,
+    <MediaIndicator type="photogallery" script={latin} service="news" />,
   );
 });

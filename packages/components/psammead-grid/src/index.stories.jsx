@@ -6,12 +6,16 @@ import {
   buildRTLSubstories,
 } from '@bbc/psammead-storybook-helpers';
 import Image from '@bbc/psammead-image';
-import MediaIndicator from '@bbc/psammead-media-indicator';
 import StoryPromo, { Headline, Summary, Link } from '@bbc/psammead-story-promo';
 import IndexAlsosContainer from '../../psammead-story-promo/testHelpers/IndexAlsosContainer';
 import relatedItems from '../../psammead-story-promo/testHelpers/relatedItems';
 import Grid from '.';
-import { ExampleImage, ExampleParagraph } from './testHelpers';
+import {
+  ExampleImage,
+  ExampleParagraph,
+  ExampleMediaIndicator,
+  ExampleTime,
+} from './testHelpers';
 import notes from '../README.md';
 
 const STORY_KIND = 'Components|Grid';
@@ -21,8 +25,9 @@ storiesOf(STORY_KIND, module)
   .addDecorator(withServicesKnob())
   .add(
     'Example with layout change at group4+',
-    () => (
+    ({ dir }) => (
       <Grid
+        dir={dir}
         columns={{
           group0: 6,
           group1: 6,
@@ -33,6 +38,7 @@ storiesOf(STORY_KIND, module)
         }}
       >
         <Grid
+          dir={dir}
           item
           columns={{
             group0: 6,
@@ -50,6 +56,7 @@ storiesOf(STORY_KIND, module)
           </p>
         </Grid>
         <Grid
+          dir={dir}
           item
           columns={{
             group0: 6,
@@ -72,8 +79,9 @@ storiesOf(STORY_KIND, module)
   )
   .add(
     'Slice layout for 6 or 10 items',
-    () => (
+    ({ dir }) => (
       <Grid
+        dir={dir}
         enableGelGutters
         columns={{
           group0: 8,
@@ -93,6 +101,7 @@ storiesOf(STORY_KIND, module)
         }}
       >
         <Grid
+          dir={dir}
           item
           columns={{
             group0: 6,
@@ -106,6 +115,7 @@ storiesOf(STORY_KIND, module)
           <ExampleParagraph identifier="1" />
         </Grid>
         <Grid
+          dir={dir}
           item
           columns={{
             group0: 2,
@@ -119,6 +129,7 @@ storiesOf(STORY_KIND, module)
           <ExampleParagraph identifier="2" />
         </Grid>
         <Grid
+          dir={dir}
           item
           columns={{
             group0: 2,
@@ -132,6 +143,7 @@ storiesOf(STORY_KIND, module)
           <ExampleParagraph identifier="3" />
         </Grid>
         <Grid
+          dir={dir}
           item
           columns={{
             group0: 2,
@@ -145,6 +157,7 @@ storiesOf(STORY_KIND, module)
           <ExampleParagraph identifier="4" />
         </Grid>
         <Grid
+          dir={dir}
           item
           columns={{
             group0: 2,
@@ -158,6 +171,7 @@ storiesOf(STORY_KIND, module)
           <ExampleParagraph identifier="5" />
         </Grid>
         <Grid
+          dir={dir}
           item
           columns={{
             group0: 2,
@@ -171,6 +185,7 @@ storiesOf(STORY_KIND, module)
           <ExampleParagraph identifier="6" />
         </Grid>
         <Grid
+          dir={dir}
           item
           columns={{
             group0: 2,
@@ -184,6 +199,7 @@ storiesOf(STORY_KIND, module)
           <ExampleParagraph identifier="7" />
         </Grid>
         <Grid
+          dir={dir}
           item
           columns={{
             group0: 2,
@@ -197,6 +213,7 @@ storiesOf(STORY_KIND, module)
           <ExampleParagraph identifier="8" />
         </Grid>
         <Grid
+          dir={dir}
           item
           columns={{
             group0: 2,
@@ -210,6 +227,7 @@ storiesOf(STORY_KIND, module)
           <ExampleParagraph identifier="9" />
         </Grid>
         <Grid
+          dir={dir}
           item
           columns={{
             group0: 2,
@@ -228,8 +246,9 @@ storiesOf(STORY_KIND, module)
   )
   .add(
     'Top story slice layout',
-    () => (
+    ({ dir }) => (
       <Grid
+        dir={dir}
         columns={{
           group0: 6,
           group1: 6,
@@ -249,6 +268,7 @@ storiesOf(STORY_KIND, module)
         }}
       >
         <Grid
+          dir={dir}
           columns={{
             group0: 6,
             group1: 6,
@@ -260,6 +280,7 @@ storiesOf(STORY_KIND, module)
           enableGelGutters
         >
           <Grid
+            dir={dir}
             item
             columns={{
               group0: 6,
@@ -273,6 +294,7 @@ storiesOf(STORY_KIND, module)
             <ExampleImage />
           </Grid>
           <Grid
+            dir={dir}
             item
             columns={{
               group0: 6,
@@ -287,6 +309,7 @@ storiesOf(STORY_KIND, module)
           </Grid>
         </Grid>
         <Grid
+          dir={dir}
           item
           columns={{
             group0: 2,
@@ -300,6 +323,7 @@ storiesOf(STORY_KIND, module)
           <ExampleImage />
         </Grid>
         <Grid
+          dir={dir}
           item
           columns={{
             group0: 4,
@@ -313,6 +337,7 @@ storiesOf(STORY_KIND, module)
           <ExampleParagraph identifier="2" />
         </Grid>
         <Grid
+          dir={dir}
           item
           columns={{
             group0: 2,
@@ -326,6 +351,7 @@ storiesOf(STORY_KIND, module)
           <ExampleImage />
         </Grid>
         <Grid
+          dir={dir}
           item
           columns={{
             group0: 4,
@@ -339,6 +365,7 @@ storiesOf(STORY_KIND, module)
           <ExampleParagraph identifier="3" />
         </Grid>
         <Grid
+          dir={dir}
           item
           columns={{
             group0: 2,
@@ -352,6 +379,7 @@ storiesOf(STORY_KIND, module)
           <ExampleImage />
         </Grid>
         <Grid
+          dir={dir}
           item
           columns={{
             group0: 4,
@@ -365,6 +393,7 @@ storiesOf(STORY_KIND, module)
           <ExampleParagraph identifier="4" />
         </Grid>
         <Grid
+          dir={dir}
           item
           columns={{
             group0: 2,
@@ -378,6 +407,7 @@ storiesOf(STORY_KIND, module)
           <ExampleImage />
         </Grid>
         <Grid
+          dir={dir}
           item
           columns={{
             group0: 4,
@@ -391,6 +421,7 @@ storiesOf(STORY_KIND, module)
           <ExampleParagraph identifier="5" />
         </Grid>
         <Grid
+          dir={dir}
           item
           columns={{
             group0: 2,
@@ -404,6 +435,7 @@ storiesOf(STORY_KIND, module)
           <ExampleImage />
         </Grid>
         <Grid
+          dir={dir}
           item
           columns={{
             group0: 4,
@@ -417,6 +449,7 @@ storiesOf(STORY_KIND, module)
           <ExampleParagraph identifier="6" />
         </Grid>
         <Grid
+          dir={dir}
           item
           columns={{
             group0: 2,
@@ -430,6 +463,7 @@ storiesOf(STORY_KIND, module)
           <ExampleImage />
         </Grid>
         <Grid
+          dir={dir}
           item
           columns={{
             group0: 4,
@@ -443,6 +477,7 @@ storiesOf(STORY_KIND, module)
           <ExampleParagraph identifier="7" />
         </Grid>
         <Grid
+          dir={dir}
           item
           columns={{
             group0: 2,
@@ -456,6 +491,7 @@ storiesOf(STORY_KIND, module)
           <ExampleImage />
         </Grid>
         <Grid
+          dir={dir}
           item
           columns={{
             group0: 4,
@@ -469,6 +505,7 @@ storiesOf(STORY_KIND, module)
           <ExampleParagraph identifier="8" />
         </Grid>
         <Grid
+          dir={dir}
           item
           columns={{
             group0: 2,
@@ -482,6 +519,7 @@ storiesOf(STORY_KIND, module)
           <ExampleImage />
         </Grid>
         <Grid
+          dir={dir}
           item
           columns={{
             group0: 4,
@@ -500,8 +538,9 @@ storiesOf(STORY_KIND, module)
   )
   .add(
     'Normal slice layout for 1 or 5 items',
-    () => (
+    ({ dir }) => (
       <Grid
+        dir={dir}
         columns={{
           group0: 6,
           group1: 6,
@@ -521,6 +560,7 @@ storiesOf(STORY_KIND, module)
         }}
       >
         <Grid
+          dir={dir}
           columns={{
             group0: 6,
             group1: 6,
@@ -532,6 +572,7 @@ storiesOf(STORY_KIND, module)
           enableGelGutters
         >
           <Grid
+            dir={dir}
             item
             columns={{
               group0: 6,
@@ -545,6 +586,7 @@ storiesOf(STORY_KIND, module)
             <ExampleImage />
           </Grid>
           <Grid
+            dir={dir}
             item
             columns={{
               group0: 6,
@@ -559,6 +601,7 @@ storiesOf(STORY_KIND, module)
           </Grid>
         </Grid>
         <Grid
+          dir={dir}
           item
           columns={{
             group0: 2,
@@ -573,6 +616,7 @@ storiesOf(STORY_KIND, module)
           <ExampleParagraph identifier="3" />
         </Grid>
         <Grid
+          dir={dir}
           item
           columns={{
             group0: 2,
@@ -587,6 +631,7 @@ storiesOf(STORY_KIND, module)
           <ExampleParagraph identifier="4" />
         </Grid>
         <Grid
+          dir={dir}
           item
           columns={{
             group0: 2,
@@ -601,6 +646,7 @@ storiesOf(STORY_KIND, module)
           <ExampleParagraph identifier="5" />
         </Grid>
         <Grid
+          dir={dir}
           item
           columns={{
             group0: 2,
@@ -620,8 +666,9 @@ storiesOf(STORY_KIND, module)
   )
   .add(
     'Normal slice layout for 1 or 5 items - Nested parent grids',
-    () => (
+    ({ dir }) => (
       <Grid
+        dir={dir}
         columns={{
           group0: 6,
           group1: 6,
@@ -641,6 +688,7 @@ storiesOf(STORY_KIND, module)
         }}
       >
         <Grid
+          dir={dir}
           columns={{
             group0: 6,
             group1: 6,
@@ -652,6 +700,7 @@ storiesOf(STORY_KIND, module)
           enableGelGutters
         >
           <Grid
+            dir={dir}
             item
             columns={{
               group0: 6,
@@ -665,6 +714,7 @@ storiesOf(STORY_KIND, module)
             <ExampleImage />
           </Grid>
           <Grid
+            dir={dir}
             item
             columns={{
               group0: 6,
@@ -679,6 +729,7 @@ storiesOf(STORY_KIND, module)
           </Grid>
         </Grid>
         <Grid
+          dir={dir}
           columns={{
             group0: 6,
             group1: 6,
@@ -690,6 +741,7 @@ storiesOf(STORY_KIND, module)
           enableGelGutters
         >
           <Grid
+            dir={dir}
             item
             columns={{
               group0: 2,
@@ -703,6 +755,7 @@ storiesOf(STORY_KIND, module)
             <ExampleImage />
           </Grid>
           <Grid
+            dir={dir}
             item
             columns={{
               group0: 4,
@@ -717,6 +770,7 @@ storiesOf(STORY_KIND, module)
           </Grid>
         </Grid>
         <Grid
+          dir={dir}
           columns={{
             group0: 6,
             group1: 6,
@@ -728,6 +782,7 @@ storiesOf(STORY_KIND, module)
           enableGelGutters
         >
           <Grid
+            dir={dir}
             item
             columns={{
               group0: 2,
@@ -741,6 +796,7 @@ storiesOf(STORY_KIND, module)
             <ExampleImage />
           </Grid>
           <Grid
+            dir={dir}
             item
             columns={{
               group0: 4,
@@ -755,6 +811,7 @@ storiesOf(STORY_KIND, module)
           </Grid>
         </Grid>
         <Grid
+          dir={dir}
           columns={{
             group0: 6,
             group1: 6,
@@ -766,6 +823,7 @@ storiesOf(STORY_KIND, module)
           enableGelGutters
         >
           <Grid
+            dir={dir}
             item
             columns={{
               group0: 2,
@@ -779,6 +837,7 @@ storiesOf(STORY_KIND, module)
             <ExampleImage />
           </Grid>
           <Grid
+            dir={dir}
             item
             columns={{
               group0: 4,
@@ -793,6 +852,7 @@ storiesOf(STORY_KIND, module)
           </Grid>
         </Grid>
         <Grid
+          dir={dir}
           columns={{
             group0: 6,
             group1: 6,
@@ -804,6 +864,7 @@ storiesOf(STORY_KIND, module)
           enableGelGutters
         >
           <Grid
+            dir={dir}
             item
             columns={{
               group0: 2,
@@ -817,6 +878,7 @@ storiesOf(STORY_KIND, module)
             <ExampleImage />
           </Grid>
           <Grid
+            dir={dir}
             item
             columns={{
               group0: 4,
@@ -836,8 +898,9 @@ storiesOf(STORY_KIND, module)
   )
   .add(
     'Normal slice layout for 2, 6 or 10 items',
-    () => (
+    ({ dir }) => (
       <Grid
+        dir={dir}
         columns={{
           group0: 6,
           group1: 6,
@@ -857,6 +920,7 @@ storiesOf(STORY_KIND, module)
         }}
       >
         <Grid
+          dir={dir}
           columns={{
             group0: 6,
             group1: 6,
@@ -868,6 +932,7 @@ storiesOf(STORY_KIND, module)
           enableGelGutters
         >
           <Grid
+            dir={dir}
             item
             columns={{
               group0: 2,
@@ -881,6 +946,7 @@ storiesOf(STORY_KIND, module)
             <ExampleParagraph identifier="1" />
           </Grid>
           <Grid
+            dir={dir}
             item
             columns={{
               group0: 4,
@@ -895,6 +961,7 @@ storiesOf(STORY_KIND, module)
           </Grid>
         </Grid>
         <Grid
+          dir={dir}
           item
           columns={{
             group0: 2,
@@ -909,6 +976,7 @@ storiesOf(STORY_KIND, module)
           <ExampleParagraph identifier="2" />
         </Grid>
         <Grid
+          dir={dir}
           item
           columns={{
             group0: 2,
@@ -923,6 +991,7 @@ storiesOf(STORY_KIND, module)
           <ExampleParagraph identifier="3" />
         </Grid>
         <Grid
+          dir={dir}
           item
           columns={{
             group0: 2,
@@ -937,6 +1006,7 @@ storiesOf(STORY_KIND, module)
           <ExampleParagraph identifier="4" />
         </Grid>
         <Grid
+          dir={dir}
           item
           columns={{
             group0: 2,
@@ -951,6 +1021,7 @@ storiesOf(STORY_KIND, module)
           <ExampleParagraph identifier="5" />
         </Grid>
         <Grid
+          dir={dir}
           item
           columns={{
             group0: 2,
@@ -965,6 +1036,7 @@ storiesOf(STORY_KIND, module)
           <ExampleParagraph identifier="6" />
         </Grid>
         <Grid
+          dir={dir}
           item
           columns={{
             group0: 2,
@@ -979,6 +1051,7 @@ storiesOf(STORY_KIND, module)
           <ExampleParagraph identifier="7" />
         </Grid>
         <Grid
+          dir={dir}
           item
           columns={{
             group0: 2,
@@ -993,6 +1066,7 @@ storiesOf(STORY_KIND, module)
           <ExampleParagraph identifier="8" />
         </Grid>
         <Grid
+          dir={dir}
           item
           columns={{
             group0: 2,
@@ -1007,6 +1081,7 @@ storiesOf(STORY_KIND, module)
           <ExampleParagraph identifier="9" />
         </Grid>
         <Grid
+          dir={dir}
           item
           columns={{
             group0: 2,
@@ -1026,8 +1101,9 @@ storiesOf(STORY_KIND, module)
   )
   .add(
     'Normal slice layout for 4 or 8 items',
-    () => (
+    ({ dir }) => (
       <Grid
+        dir={dir}
         enableGelGutters
         columns={{
           group0: 8,
@@ -1047,6 +1123,7 @@ storiesOf(STORY_KIND, module)
         }}
       >
         <Grid
+          dir={dir}
           item
           columns={{
             group0: 2,
@@ -1061,6 +1138,7 @@ storiesOf(STORY_KIND, module)
           <ExampleParagraph identifier="1" />
         </Grid>
         <Grid
+          dir={dir}
           item
           columns={{
             group0: 2,
@@ -1075,6 +1153,7 @@ storiesOf(STORY_KIND, module)
           <ExampleParagraph identifier="2" />
         </Grid>
         <Grid
+          dir={dir}
           item
           columns={{
             group0: 2,
@@ -1089,6 +1168,7 @@ storiesOf(STORY_KIND, module)
           <ExampleParagraph identifier="3" />
         </Grid>
         <Grid
+          dir={dir}
           item
           columns={{
             group0: 2,
@@ -1103,6 +1183,7 @@ storiesOf(STORY_KIND, module)
           <ExampleParagraph identifier="4" />
         </Grid>
         <Grid
+          dir={dir}
           item
           columns={{
             group0: 2,
@@ -1117,6 +1198,7 @@ storiesOf(STORY_KIND, module)
           <ExampleParagraph identifier="5" />
         </Grid>
         <Grid
+          dir={dir}
           item
           columns={{
             group0: 2,
@@ -1131,6 +1213,7 @@ storiesOf(STORY_KIND, module)
           <ExampleParagraph identifier="6" />
         </Grid>
         <Grid
+          dir={dir}
           item
           columns={{
             group0: 2,
@@ -1145,6 +1228,7 @@ storiesOf(STORY_KIND, module)
           <ExampleParagraph identifier="7" />
         </Grid>
         <Grid
+          dir={dir}
           item
           columns={{
             group0: 2,
@@ -1166,27 +1250,31 @@ storiesOf(STORY_KIND, module)
     'Example with Top story and regular promos',
     ({ service, script, dir, text }) => {
       // eslint-disable-next-line react/prop-types
-      const generateStory = ({ topStory, alsoItems = null, mediaType }) => {
-        const MediaIndicatorComponent = type => (
-          <MediaIndicator
-            duration={type !== 'photogallery' && '2:15'}
-            datetime="PT2M15S"
+      const generateStory = ({ promoType, alsoItems = null, mediaType }) => {
+        const MediaIndicatorComponent = () => (
+          <ExampleMediaIndicator
+            dir={dir}
+            script={script}
             service={service}
-            type={type}
-          />
+            type={mediaType}
+          >
+            {mediaType !== 'photogallery' && (
+              <ExampleTime dateTime="PT2M15S">2:15</ExampleTime>
+            )}
+          </ExampleMediaIndicator>
         );
 
         const Info = (
           <>
-            <Headline script={script} topStory={topStory} service={service}>
+            <Headline script={script} promoType={promoType} service={service}>
               <Link href="https://www.bbc.co.uk/news">{text}</Link>
             </Headline>
-            <Summary script={script} topStory={topStory} service={service}>
+            <Summary script={script} promoType={promoType} service={service}>
               {service === 'news'
                 ? 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.'
                 : text}
             </Summary>
-            {topStory && alsoItems && (
+            {promoType === 'top' && alsoItems && (
               <IndexAlsosContainer
                 alsoItems={alsoItems}
                 script={script}
@@ -1209,16 +1297,18 @@ storiesOf(STORY_KIND, module)
           <StoryPromo
             image={Img}
             info={Info}
+            promoType={promoType}
             mediaIndicator={
-              mediaType && MediaIndicatorComponent(mediaType, service)
+              mediaType &&
+              MediaIndicatorComponent({ script, service, mediaType })
             }
-            topStory={topStory}
           />
         );
       };
 
       return (
         <Grid
+          dir={dir}
           columns={{
             group0: 6,
             group1: 6,
@@ -1238,6 +1328,7 @@ storiesOf(STORY_KIND, module)
           }}
         >
           <Grid
+            dir={dir}
             item
             columns={{
               group0: 6,
@@ -1249,7 +1340,7 @@ storiesOf(STORY_KIND, module)
             }}
           >
             {generateStory({
-              topStory: true,
+              promoType: 'top',
               alsoItems: relatedItems.map(item => ({
                 ...item,
                 headlines: { headline: text },
@@ -1257,6 +1348,7 @@ storiesOf(STORY_KIND, module)
             })}
           </Grid>
           <Grid
+            dir={dir}
             item
             columns={{
               group0: 6,
@@ -1267,9 +1359,10 @@ storiesOf(STORY_KIND, module)
               group5: 2,
             }}
           >
-            {generateStory({ topStory: false, mediaType: 'audio' })}
+            {generateStory({ promoType: 'regular', mediaType: 'audio' })}
           </Grid>
           <Grid
+            dir={dir}
             item
             columns={{
               group0: 6,
@@ -1280,9 +1373,10 @@ storiesOf(STORY_KIND, module)
               group5: 2,
             }}
           >
-            {generateStory({ topStory: false, mediaType: 'video' })}
+            {generateStory({ promoType: 'regular', mediaType: 'video' })}
           </Grid>
           <Grid
+            dir={dir}
             item
             columns={{
               group0: 6,
@@ -1293,9 +1387,10 @@ storiesOf(STORY_KIND, module)
               group5: 2,
             }}
           >
-            {generateStory({ topStory: false, mediaType: 'photogallery' })}
+            {generateStory({ promoType: 'regular', mediaType: 'photogallery' })}
           </Grid>
           <Grid
+            dir={dir}
             item
             columns={{
               group0: 6,
@@ -1306,9 +1401,10 @@ storiesOf(STORY_KIND, module)
               group5: 2,
             }}
           >
-            {generateStory({ topStory: false })}
+            {generateStory({ promoType: 'regular' })}
           </Grid>
           <Grid
+            dir={dir}
             item
             columns={{
               group0: 6,
@@ -1319,9 +1415,10 @@ storiesOf(STORY_KIND, module)
               group5: 2,
             }}
           >
-            {generateStory({ topStory: false })}
+            {generateStory({ promoType: 'regular' })}
           </Grid>
           <Grid
+            dir={dir}
             item
             columns={{
               group0: 6,
@@ -1332,9 +1429,10 @@ storiesOf(STORY_KIND, module)
               group5: 2,
             }}
           >
-            {generateStory({ topStory: false })}
+            {generateStory({ promoType: 'regular' })}
           </Grid>
           <Grid
+            dir={dir}
             item
             columns={{
               group0: 6,
@@ -1345,9 +1443,10 @@ storiesOf(STORY_KIND, module)
               group5: 2,
             }}
           >
-            {generateStory({ topStory: false })}
+            {generateStory({ promoType: 'regular' })}
           </Grid>
           <Grid
+            dir={dir}
             item
             columns={{
               group0: 6,
@@ -1358,15 +1457,16 @@ storiesOf(STORY_KIND, module)
               group5: 2,
             }}
           >
-            {generateStory({ topStory: false })}
+            {generateStory({ promoType: 'regular' })}
           </Grid>
         </Grid>
       );
     },
     { notes, knobs: { escapeHTML: false } },
   )
-  .add('Example with only margins on the paragraph Grid item', () => (
+  .add('Example with only margins on the paragraph Grid item', ({ dir }) => (
     <Grid
+      dir={dir}
       columns={{
         group0: 6,
         group1: 6,
@@ -1377,6 +1477,7 @@ storiesOf(STORY_KIND, module)
       }}
     >
       <Grid
+        dir={dir}
         item
         columns={{
           group0: 6,
@@ -1394,6 +1495,7 @@ storiesOf(STORY_KIND, module)
         />
       </Grid>
       <Grid
+        dir={dir}
         item
         columns={{
           group0: 6,
@@ -1418,8 +1520,69 @@ storiesOf(STORY_KIND, module)
       </Grid>
     </Grid>
   ))
-  .add('Example with gutters & only margins on the paragraph Grid item', () => (
+  .add(
+    'Example with gutters & only margins on the paragraph Grid item',
+    ({ dir }) => (
+      <Grid
+        dir={dir}
+        columns={{
+          group0: 6,
+          group1: 6,
+          group2: 6,
+          group3: 6,
+          group4: 8,
+          group5: 8,
+        }}
+        enableGelGutters
+      >
+        <Grid
+          dir={dir}
+          item
+          columns={{
+            group0: 6,
+            group1: 6,
+            group2: 6,
+            group3: 6,
+            group4: 6,
+            group5: 6,
+          }}
+        >
+          <Image
+            alt="Robert Downey Junior in Iron Man"
+            src="https://ichef.bbci.co.uk/news/660/cpsprodpb/11897/production/_106613817_999_al_.jpg"
+            width="640"
+          />
+        </Grid>
+        <Grid
+          dir={dir}
+          item
+          columns={{
+            group0: 6,
+            group1: 6,
+            group2: 6,
+            group3: 6,
+            group4: 2,
+            group5: 2,
+          }}
+          margins={{
+            group0: true,
+            group1: true,
+            group2: true,
+            group3: true,
+          }}
+        >
+          <p>
+            Image & Paragraph - groups 0-3 Image is fullscreen (no margin) but
+            paragraph has GEL margins. For groups 4+, image & paragraph are
+            side-by-side & there are no margins.
+          </p>
+        </Grid>
+      </Grid>
+    ),
+  )
+  .add('Example with gutters only', ({ dir }) => (
     <Grid
+      dir={dir}
       columns={{
         group0: 6,
         group1: 6,
@@ -1431,6 +1594,7 @@ storiesOf(STORY_KIND, module)
       enableGelGutters
     >
       <Grid
+        dir={dir}
         item
         columns={{
           group0: 6,
@@ -1448,60 +1612,7 @@ storiesOf(STORY_KIND, module)
         />
       </Grid>
       <Grid
-        item
-        columns={{
-          group0: 6,
-          group1: 6,
-          group2: 6,
-          group3: 6,
-          group4: 2,
-          group5: 2,
-        }}
-        margins={{
-          group0: true,
-          group1: true,
-          group2: true,
-          group3: true,
-        }}
-      >
-        <p>
-          Image & Paragraph - groups 0-3 Image is fullscreen (no margin) but
-          paragraph has GEL margins. For groups 4+, image & paragraph are
-          side-by-side & there are no margins.
-        </p>
-      </Grid>
-    </Grid>
-  ))
-  .add('Example with gutters only', () => (
-    <Grid
-      columns={{
-        group0: 6,
-        group1: 6,
-        group2: 6,
-        group3: 6,
-        group4: 8,
-        group5: 8,
-      }}
-      enableGelGutters
-    >
-      <Grid
-        item
-        columns={{
-          group0: 6,
-          group1: 6,
-          group2: 6,
-          group3: 6,
-          group4: 6,
-          group5: 6,
-        }}
-      >
-        <Image
-          alt="Robert Downey Junior in Iron Man"
-          src="https://ichef.bbci.co.uk/news/660/cpsprodpb/11897/production/_106613817_999_al_.jpg"
-          width="640"
-        />
-      </Grid>
-      <Grid
+        dir={dir}
         item
         columns={{
           group0: 6,
@@ -1519,6 +1630,7 @@ storiesOf(STORY_KIND, module)
         />
       </Grid>
       <Grid
+        dir={dir}
         item
         columns={{
           group0: 6,
@@ -1543,8 +1655,9 @@ storiesOf('Components|Grid/startOffset', module)
   .addDecorator(withServicesKnob())
   .add(
     'Example on nested Grid',
-    () => (
+    ({ dir }) => (
       <Grid
+        dir={dir}
         columns={{
           group0: 6,
           group1: 6,
@@ -1562,6 +1675,7 @@ storiesOf('Components|Grid/startOffset', module)
         }}
       >
         <Grid
+          dir={dir}
           columns={{
             group0: 6,
             group1: 6,
@@ -1581,6 +1695,7 @@ storiesOf('Components|Grid/startOffset', module)
           }}
         >
           <Grid
+            dir={dir}
             item
             columns={{
               group0: 6,
@@ -1594,6 +1709,7 @@ storiesOf('Components|Grid/startOffset', module)
             <ExampleImage />
           </Grid>
           <Grid
+            dir={dir}
             item
             columns={{
               group0: 6,
@@ -1613,8 +1729,9 @@ storiesOf('Components|Grid/startOffset', module)
   )
   .add(
     'Example on the first nested Grid',
-    () => (
+    ({ dir }) => (
       <Grid
+        dir={dir}
         columns={{
           group0: 6,
           group1: 6,
@@ -1632,6 +1749,7 @@ storiesOf('Components|Grid/startOffset', module)
         }}
       >
         <Grid
+          dir={dir}
           columns={{
             group0: 6,
             group1: 6,
@@ -1643,6 +1761,7 @@ storiesOf('Components|Grid/startOffset', module)
           enableGelGutters
         >
           <Grid
+            dir={dir}
             item
             columns={{
               group0: 2,
@@ -1656,6 +1775,7 @@ storiesOf('Components|Grid/startOffset', module)
             <ExampleImage />
           </Grid>
           <Grid
+            dir={dir}
             item
             columns={{
               group0: 4,
@@ -1670,6 +1790,7 @@ storiesOf('Components|Grid/startOffset', module)
           </Grid>
         </Grid>
         <Grid
+          dir={dir}
           columns={{
             group0: 6,
             group1: 6,
@@ -1681,6 +1802,7 @@ storiesOf('Components|Grid/startOffset', module)
           enableGelGutters
         >
           <Grid
+            dir={dir}
             item
             columns={{
               group0: 2,
@@ -1694,6 +1816,7 @@ storiesOf('Components|Grid/startOffset', module)
             <ExampleImage />
           </Grid>
           <Grid
+            dir={dir}
             item
             columns={{
               group0: 4,
@@ -1708,6 +1831,7 @@ storiesOf('Components|Grid/startOffset', module)
           </Grid>
         </Grid>
         <Grid
+          dir={dir}
           columns={{
             group0: 6,
             group1: 6,
@@ -1719,6 +1843,7 @@ storiesOf('Components|Grid/startOffset', module)
           enableGelGutters
         >
           <Grid
+            dir={dir}
             item
             columns={{
               group0: 2,
@@ -1732,6 +1857,7 @@ storiesOf('Components|Grid/startOffset', module)
             <ExampleImage />
           </Grid>
           <Grid
+            dir={dir}
             item
             columns={{
               group0: 4,
@@ -1746,6 +1872,7 @@ storiesOf('Components|Grid/startOffset', module)
           </Grid>
         </Grid>
         <Grid
+          dir={dir}
           columns={{
             group0: 6,
             group1: 6,
@@ -1757,6 +1884,7 @@ storiesOf('Components|Grid/startOffset', module)
           enableGelGutters
         >
           <Grid
+            dir={dir}
             item
             columns={{
               group0: 2,
@@ -1770,6 +1898,7 @@ storiesOf('Components|Grid/startOffset', module)
             <ExampleImage />
           </Grid>
           <Grid
+            dir={dir}
             item
             columns={{
               group0: 4,
@@ -1789,8 +1918,9 @@ storiesOf('Components|Grid/startOffset', module)
   )
   .add(
     'Example on the second nested Grid',
-    () => (
+    ({ dir }) => (
       <Grid
+        dir={dir}
         columns={{
           group0: 6,
           group1: 6,
@@ -1808,6 +1938,7 @@ storiesOf('Components|Grid/startOffset', module)
         }}
       >
         <Grid
+          dir={dir}
           columns={{
             group0: 6,
             group1: 6,
@@ -1819,6 +1950,7 @@ storiesOf('Components|Grid/startOffset', module)
           enableGelGutters
         >
           <Grid
+            dir={dir}
             item
             columns={{
               group0: 6,
@@ -1832,6 +1964,7 @@ storiesOf('Components|Grid/startOffset', module)
             <ExampleImage />
           </Grid>
           <Grid
+            dir={dir}
             item
             columns={{
               group0: 6,
@@ -1846,6 +1979,7 @@ storiesOf('Components|Grid/startOffset', module)
           </Grid>
         </Grid>
         <Grid
+          dir={dir}
           columns={{
             group0: 6,
             group1: 6,
@@ -1865,6 +1999,7 @@ storiesOf('Components|Grid/startOffset', module)
           }}
         >
           <Grid
+            dir={dir}
             item
             columns={{
               group0: 2,
@@ -1878,6 +2013,7 @@ storiesOf('Components|Grid/startOffset', module)
             <ExampleImage />
           </Grid>
           <Grid
+            dir={dir}
             item
             columns={{
               group0: 4,
@@ -1892,6 +2028,7 @@ storiesOf('Components|Grid/startOffset', module)
           </Grid>
         </Grid>
         <Grid
+          dir={dir}
           columns={{
             group0: 6,
             group1: 6,
@@ -1903,6 +2040,7 @@ storiesOf('Components|Grid/startOffset', module)
           enableGelGutters
         >
           <Grid
+            dir={dir}
             item
             columns={{
               group0: 2,
@@ -1916,6 +2054,7 @@ storiesOf('Components|Grid/startOffset', module)
             <ExampleImage />
           </Grid>
           <Grid
+            dir={dir}
             item
             columns={{
               group0: 4,
@@ -1930,6 +2069,7 @@ storiesOf('Components|Grid/startOffset', module)
           </Grid>
         </Grid>
         <Grid
+          dir={dir}
           columns={{
             group0: 6,
             group1: 6,
@@ -1941,6 +2081,7 @@ storiesOf('Components|Grid/startOffset', module)
           enableGelGutters
         >
           <Grid
+            dir={dir}
             item
             columns={{
               group0: 2,
@@ -1954,6 +2095,7 @@ storiesOf('Components|Grid/startOffset', module)
             <ExampleImage />
           </Grid>
           <Grid
+            dir={dir}
             item
             columns={{
               group0: 4,
@@ -1968,6 +2110,7 @@ storiesOf('Components|Grid/startOffset', module)
           </Grid>
         </Grid>
         <Grid
+          dir={dir}
           columns={{
             group0: 6,
             group1: 6,
@@ -1979,6 +2122,7 @@ storiesOf('Components|Grid/startOffset', module)
           enableGelGutters
         >
           <Grid
+            dir={dir}
             item
             columns={{
               group0: 2,
@@ -1992,6 +2136,7 @@ storiesOf('Components|Grid/startOffset', module)
             <ExampleImage />
           </Grid>
           <Grid
+            dir={dir}
             item
             columns={{
               group0: 4,
@@ -2011,8 +2156,9 @@ storiesOf('Components|Grid/startOffset', module)
   )
   .add(
     'Example on the Grid Item',
-    () => (
+    ({ dir }) => (
       <Grid
+        dir={dir}
         columns={{
           group0: 6,
           group1: 6,
@@ -2023,6 +2169,7 @@ storiesOf('Components|Grid/startOffset', module)
         }}
       >
         <Grid
+          dir={dir}
           item
           columns={{
             group0: 2,
@@ -2049,8 +2196,9 @@ storiesOf('Components|Grid/startOffset', module)
   )
   .add(
     'Article example',
-    () => (
+    ({ dir }) => (
       <Grid
+        dir={dir}
         columns={{
           group0: 6,
           group1: 6,
@@ -2062,6 +2210,7 @@ storiesOf('Components|Grid/startOffset', module)
         enableGelGutters
       >
         <Grid
+          dir={dir}
           columns={{
             group0: 6,
             group1: 6,
@@ -2080,6 +2229,7 @@ storiesOf('Components|Grid/startOffset', module)
           }}
         >
           <Grid
+            dir={dir}
             item
             columns={{
               group0: 6,
@@ -2093,6 +2243,7 @@ storiesOf('Components|Grid/startOffset', module)
             <ExampleParagraph identifier="1" />
           </Grid>
           <Grid
+            dir={dir}
             columns={{
               group0: 6,
               group1: 6,
@@ -2103,6 +2254,7 @@ storiesOf('Components|Grid/startOffset', module)
             }}
           >
             <Grid
+              dir={dir}
               item
               columns={{
                 group0: 6,
@@ -2116,6 +2268,7 @@ storiesOf('Components|Grid/startOffset', module)
               <ExampleParagraph identifier="Landscape image " />
             </Grid>
             <Grid
+              dir={dir}
               item
               columns={{
                 group0: 6,
@@ -2130,6 +2283,7 @@ storiesOf('Components|Grid/startOffset', module)
             </Grid>
           </Grid>
           <Grid
+            dir={dir}
             item
             columns={{
               group0: 6,
@@ -2150,6 +2304,7 @@ storiesOf('Components|Grid/startOffset', module)
           </Grid>
           {['2', '3', '4', '5', '6', '7', '8', '9', '10'].map(num => (
             <Grid
+              dir={dir}
               item
               columns={{
                 group0: 6,

@@ -1,34 +1,32 @@
 import React from 'react';
 import styled, { css } from 'styled-components';
-import { string, oneOf, bool } from 'prop-types';
+import { node, bool, string, oneOf, shape } from 'prop-types';
 import { C_WHITE, C_EBON } from '@bbc/psammead-styles/colours';
-import {
-  GEL_SPACING_HLF,
-  GEL_SPACING,
-  GEL_SPACING_QUAD,
-} from '@bbc/gel-foundations/spacings';
-import { GEL_GROUP_1_SCREEN_WIDTH_MAX } from '@bbc/gel-foundations/breakpoints';
-import { GEL_MINION } from '@bbc/gel-foundations/typography';
+import { GEL_SPACING } from '@bbc/gel-foundations/spacings';
+import { getMinion } from '@bbc/gel-foundations/typography';
 import { getSansRegular } from '@bbc/psammead-styles/font-styles';
+import { scriptPropType } from '@bbc/gel-foundations/prop-types';
 import { mediaIcons } from '@bbc/psammead-assets/svgs';
 
-const MediaIndicatorWrapper = styled.div`
-  padding: ${GEL_SPACING} ${GEL_SPACING_HLF};
-  background-color: ${C_WHITE};
-  display: block;
-  ${({ service }) => getSansRegular(service)}
-  ${GEL_MINION};
-  color: ${C_EBON};
-  height: ${GEL_SPACING_QUAD};
+const paddingDir = ({ dir }) => `padding-${dir === 'rtl' ? 'left' : 'right'}`;
 
-  ${({ topStory }) =>
-    !topStory &&
-    css`
-      @media (max-width: ${GEL_GROUP_1_SCREEN_WIDTH_MAX}) {
-        height: 1.25rem;
-        padding: ${GEL_SPACING_HLF} ${GEL_SPACING_HLF} 0;
-      }
-    `}
+const StyledMediaIndicator = styled.div`
+  color: ${C_EBON};
+  background-color: ${C_WHITE};
+  ${({ service }) => getSansRegular(service)}
+  ${({ script }) => script && getMinion(script)};
+
+  ${({ isInline }) =>
+    isInline
+      ? css`
+          display: inline-block;
+          vertical-align: middle;
+          ${paddingDir}: ${GEL_SPACING};
+          /* This is to add spacing between the media indicator and the element sitting next to it*/
+        `
+      : css`
+          display: block;
+        `}
 `;
 
 const FlexWrapper = styled.div`
@@ -37,59 +35,35 @@ const FlexWrapper = styled.div`
   height: 100%;
 `;
 
-const TimeDuration = styled.time`
-  vertical-align: middle;
-  margin: 0 ${GEL_SPACING_HLF};
-`;
-
-const IndexAlsosMediaIndicator = styled.span`
-  & > svg {
-    margin: 0;
-  }
-`;
-
-const MediaIndicator = ({
-  datetime,
-  duration,
-  type,
-  topStory,
-  service,
-  indexAlsos,
-}) =>
-  indexAlsos ? (
-    <IndexAlsosMediaIndicator aria-hidden="true">
+const MediaIndicator = ({ type, script, service, dir, isInline, children }) => (
+  <StyledMediaIndicator
+    aria-hidden="true"
+    script={script}
+    service={service}
+    dir={dir}
+    isInline={isInline}
+  >
+    <FlexWrapper>
       {mediaIcons[type]}
-    </IndexAlsosMediaIndicator>
-  ) : (
-    <MediaIndicatorWrapper
-      aria-hidden="true"
-      topStory={topStory}
-      service={service}
-    >
-      <FlexWrapper>
-        {mediaIcons[type]}
-        {duration && datetime && (
-          <TimeDuration dateTime={datetime}>{duration}</TimeDuration>
-        )}
-      </FlexWrapper>
-    </MediaIndicatorWrapper>
-  );
+      {children}
+    </FlexWrapper>
+  </StyledMediaIndicator>
+);
 
 MediaIndicator.propTypes = {
-  datetime: string,
-  duration: string,
   type: oneOf(['video', 'audio', 'photogallery']),
-  topStory: bool,
+  script: shape(scriptPropType).isRequired,
   service: string.isRequired,
-  indexAlsos: bool,
+  dir: oneOf(['ltr', 'rtl']),
+  isInline: bool,
+  children: node,
 };
 
 MediaIndicator.defaultProps = {
-  datetime: null,
-  duration: null,
   type: 'video',
-  topStory: false,
-  indexAlsos: false,
+  dir: 'ltr',
+  isInline: false,
+  children: null,
 };
 
 export default MediaIndicator;

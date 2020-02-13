@@ -21,19 +21,24 @@ import {
   getPica,
 } from '@bbc/gel-foundations/typography';
 import { Link } from '@bbc/psammead-story-promo';
-import { oneOf, shape, string } from 'prop-types';
+import { oneOf, shape, string, number } from 'prop-types';
 import { scriptPropType } from '@bbc/gel-foundations/prop-types';
 import VisuallyHiddenText from '@bbc/psammead-visually-hidden-text';
+import { formatUnixTimestamp } from '@bbc/psammead-timestamp-container/utilities';
 
 const CardWrapper = styled.div`
   padding-top: ${GEL_SPACING};
   background-color: ${C_WHITE};
   position: relative;
+  display: flex;
+  flex-direction: column;
   border: 0.0625rem solid transparent;
+  height: 100%;
 `;
 
 const TextWrapper = styled.div`
   padding: 0 ${GEL_SPACING};
+  flex-grow: 1;
 `;
 
 const HeadingWrapper = styled.h3`
@@ -127,12 +132,22 @@ const renderHeaderContent = ({
   service,
   script,
   startTime,
+  timezone,
+  locale,
 }) => {
   const isOnDemand = state === 'onDemand';
   const isLive = state === 'live';
   const hiddenTextProps = stateLabel === 'Live' ? { lang: 'en-GB' } : {};
 
   const labelWrapperProps = isLive ? { 'aria-hidden': 'true' } : {};
+
+  const formattedStartTime = formatUnixTimestamp(
+    startTime,
+    'HH:mm',
+    timezone,
+    locale,
+    false,
+  );
 
   const content = (
     <HeadingContentWrapper>
@@ -156,7 +171,7 @@ const renderHeaderContent = ({
         {!isOnDemand && ` `}
         {brandTitle}
       </span>
-      <VisuallyHiddenText>, {startTime}, </VisuallyHiddenText>
+      <VisuallyHiddenText>, {formattedStartTime}, </VisuallyHiddenText>
       <TitleWrapper
         service={service}
         script={script}
@@ -183,6 +198,8 @@ const ProgramCard = ({
   state,
   stateLabel,
   link,
+  timezone,
+  locale,
 }) => (
   <CardWrapper>
     <TextWrapper>
@@ -200,6 +217,8 @@ const ProgramCard = ({
           service,
           script,
           startTime,
+          timezone,
+          locale,
         })}
       </HeadingWrapper>
       <SummaryWrapper service={service} script={script}>
@@ -232,11 +251,22 @@ const programCardPropTypes = {
   link: string.isRequired,
   state: string.isRequired,
   stateLabel: string.isRequired,
-  startTime: string.isRequired,
+  startTime: number.isRequired,
+  timezone: string,
+  locale: string,
+};
+
+const programCardDefaultPropTypes = {
+  timezone: 'Europe/London',
+  locale: 'en-gb',
 };
 
 renderHeaderContent.propTypes = {
   ...programCardPropTypes,
+};
+
+renderHeaderContent.defaultProps = {
+  ...programCardDefaultPropTypes,
 };
 
 ProgramCard.propTypes = {
@@ -249,6 +279,7 @@ ProgramCard.propTypes = {
 
 ProgramCard.defaultProps = {
   dir: 'ltr',
+  ...programCardDefaultPropTypes,
 };
 
 export default ProgramCard;

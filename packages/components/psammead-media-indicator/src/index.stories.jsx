@@ -3,13 +3,24 @@ import { storiesOf } from '@storybook/react';
 import styled from 'styled-components';
 import { withKnobs, text, boolean } from '@storybook/addon-knobs';
 import { withServicesKnob } from '@bbc/psammead-storybook-helpers';
+import { C_CLOUD_LIGHT } from '@bbc/psammead-styles/colours';
+import { GEL_SPACING_HLF } from '@bbc/gel-foundations/spacings';
+import { Headline, Link } from '@bbc/psammead-story-promo';
 import notes from '../README.md';
 import MediaIndicator from './index';
 
 // To ensure the white box in the media indicator is visible.
 const Page = styled.div`
-  background: grey;
+  background: ${C_CLOUD_LIGHT};
   height: 100vh;
+`;
+
+const TimeDuration = styled.time`
+  margin: 0 ${GEL_SPACING_HLF};
+`;
+
+const StyledHeadline = styled(Headline)`
+  display: inline;
 `;
 
 const PageDecorator = storyFn => <Page>{storyFn()}</Page>;
@@ -20,36 +31,42 @@ storiesOf('Components|MediaIndicator/Video', module)
   .addDecorator(withServicesKnob())
   .add(
     'video without duration',
-    ({ service }) => (
+    ({ script, service, dir }) => (
       <MediaIndicator
+        type="video"
+        script={script}
+        dir={dir}
         service={service}
-        indexAlsos={boolean('Index Also', false)}
       />
     ),
     { notes },
   )
   .add(
     'video with duration',
-    ({ service }) => (
-      <MediaIndicator
-        duration={text('duration', '2:15')}
-        datetime={text('datetime', 'PT2M15S')}
-        type="video"
-        service={service}
-      />
+    ({ script, service, dir }) => (
+      <MediaIndicator type="video" script={script} service={service} dir={dir}>
+        <TimeDuration dateTime={text('datetime', 'PT2M15S')}>
+          {text('duration', '2:15')}
+        </TimeDuration>
+      </MediaIndicator>
     ),
     { notes },
   )
   .add(
-    'top story video with duration',
-    ({ service }) => (
-      <MediaIndicator
-        duration={text('duration', '2:15')}
-        datetime={text('datetime', 'PT2M15S')}
-        type="video"
-        topStory
-        service={service}
-      />
+    'inline video media indicator with headline',
+    ({ longText: textSnippet, script, service, dir }) => (
+      <>
+        <MediaIndicator
+          type="video"
+          script={script}
+          service={service}
+          dir={dir}
+          isInline={boolean('inline?', true)}
+        />
+        <StyledHeadline script={script} service={service} promoHasImage={false}>
+          <Link href="https://www.bbc.co.uk/news">{textSnippet}</Link>
+        </StyledHeadline>
+      </>
     ),
     { notes },
   );
@@ -60,37 +77,42 @@ storiesOf('Components|MediaIndicator/Audio', module)
   .addDecorator(withServicesKnob())
   .add(
     'audio without duration',
-    ({ service }) => (
+    ({ script, service, dir }) => (
       <MediaIndicator
         type="audio"
+        script={script}
         service={service}
-        indexAlsos={boolean('Index Also', false)}
+        dir={dir}
       />
     ),
     { notes },
   )
   .add(
     'audio with duration',
-    ({ service }) => (
-      <MediaIndicator
-        duration={text('duration', '2:15')}
-        datetime={text('datetime', 'PT2M15S')}
-        type="audio"
-        service={service}
-      />
+    ({ script, service, dir }) => (
+      <MediaIndicator type="audio" script={script} service={service} dir={dir}>
+        <time dateTime={text('datetime', 'PT2M15S')}>
+          {text('duration', '2:15')}
+        </time>
+      </MediaIndicator>
     ),
     { notes },
   )
   .add(
-    'top story audio with duration',
-    ({ service }) => (
-      <MediaIndicator
-        duration={text('duration', '2:15')}
-        datetime={text('datetime', 'PT2M15S')}
-        type="audio"
-        topStory
-        service={service}
-      />
+    'inline audio media indicator with headline',
+    ({ longText: textSnippet, script, service, dir }) => (
+      <>
+        <MediaIndicator
+          type="audio"
+          script={script}
+          service={service}
+          dir={dir}
+          isInline={boolean('inline?', true)}
+        />
+        <StyledHeadline script={script} service={service} promoHasImage={false}>
+          <Link href="https://www.bbc.co.uk/news">{textSnippet}</Link>
+        </StyledHeadline>
+      </>
     ),
     { notes },
   );
@@ -101,19 +123,31 @@ storiesOf('Components|MediaIndicator/Photo', module)
   .addDecorator(withServicesKnob())
   .add(
     'photogallery',
-    ({ service }) => (
+    ({ script, service, dir }) => (
       <MediaIndicator
         type="photogallery"
+        script={script}
         service={service}
-        indexAlsos={boolean('Index Also', false)}
+        dir={dir}
       />
     ),
     { notes },
   )
   .add(
-    'top story photogallery',
-    ({ service }) => (
-      <MediaIndicator type="photogallery" service={service} topStory />
+    'inline photogallery with headline',
+    ({ longText: textSnippet, script, service, dir }) => (
+      <>
+        <MediaIndicator
+          type="photogallery"
+          script={script}
+          service={service}
+          dir={dir}
+          isInline={boolean('inline?', true)}
+        />
+        <StyledHeadline script={script} service={service} promoHasImage={false}>
+          <Link href="https://www.bbc.co.uk/news">{textSnippet}</Link>
+        </StyledHeadline>
+      </>
     ),
     { notes },
   );
