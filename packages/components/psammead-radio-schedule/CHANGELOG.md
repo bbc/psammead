@@ -2,7 +2,7 @@
 
 | Version | Description |
 |---------|-------------|
-| 0.1.0-alpha.9 | [PR#3132](https://github.com/bbc/psammead/pull/3132) Pass locale and timezone to RadioSchedule component |
+| 0.1.0-alpha.9 | [PR#3132](https://github.com/bbc/psammead/pull/3132) Render correct hidden `startTime` in RadioSchedule component |
 | 0.1.0-alpha.8 | [PR#3130](https://github.com/bbc/psammead/pull/3130) Apply program-card's link to start-time component |
 | 0.1.0-alpha.7 | [PR#3129](https://github.com/bbc/psammead/pull/3129) Talos - Bump Dependencies - @bbc/gel-foundations |
 | 0.1.0-alpha.6 | [PR#3050](https://github.com/BBC-News/psammead/pull/3050) Create a wrapper around start-time and program-card. |
