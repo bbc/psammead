@@ -2,6 +2,7 @@
 
 | Version | Description |
 |---------|-------------|
+| 0.1.0-alpha.7 | [PR#3129](https://github.com/bbc/psammead/pull/3129) Talos - Bump Dependencies - @bbc/gel-foundations |
 | 0.1.0-alpha.6 | [PR#3050](https://github.com/BBC-News/psammead/pull/3050) Create a wrapper around start-time and program-card. |
 | 0.1.0-alpha.5 | [PR#3074](https://github.com/BBC-News/psammead/pull/3074) Format hidden start time in program card component. |
 | 0.1.0-alpha.4 | [PR#3082](https://github.com/bbc/psammead/pull/3082) Talos - Bump Dependencies - @bbc/psammead-styles, @bbc/psammead-assets, @bbc/psammead-timestamp-container |
