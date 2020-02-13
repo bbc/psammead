@@ -120,25 +120,6 @@ const BrandSvg = styled.svg`
   /* stylelint-enable */
 `;
 
-const LocalisedBrandName = ({ product, serviceLocalisedName }) =>
-  serviceLocalisedName ? (
-    // eslint-disable-next-line jsx-a11y/aria-role
-    <VisuallyHiddenText role="text">
-      <span lang="en-GB">{product}</span>, {serviceLocalisedName}
-    </VisuallyHiddenText>
-  ) : (
-    <VisuallyHiddenText>{product}</VisuallyHiddenText>
-  );
-
-LocalisedBrandName.propTypes = {
-  product: string.isRequired,
-  serviceLocalisedName: string,
-};
-
-LocalisedBrandName.defaultProps = {
-  serviceLocalisedName: null,
-};
-
 const StyledBrand = ({
   product,
   serviceLocalisedName,
@@ -166,10 +147,11 @@ const StyledBrand = ({
         >
           {svg.group}
         </BrandSvg>
-        <LocalisedBrandName
-          product={product}
-          serviceLocalisedName={serviceLocalisedName}
-        />
+        <VisuallyHiddenText>
+          {serviceLocalisedName
+            ? `${product} ${serviceLocalisedName}`
+            : product}
+        </VisuallyHiddenText>
       </>
     )}
   </>
