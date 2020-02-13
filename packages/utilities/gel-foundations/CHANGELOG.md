@@ -3,7 +3,8 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
-| 3.4.4 | [PR#3127](https://github.com/bbc/psammead/pull/3127) Restructured breakpoints.js to pair the consts which use one another. |
+| 4.0.1 | [PR#3127](https://github.com/bbc/psammead/pull/3127) Restructured breakpoints.js to pair the consts which use one another. |
+| 4.0.0 | [PR#3128](https://github.com/bbc/psammead/pull/3128) Update `GEL_GROUP_4_SCREEN_WIDTH_MAX` value |
 | 3.4.3 | [PR#2947](https://github.com/bbc/psammead/pull/2947) Added additional rem sizing for 40px - 58px spacing according to new MAP and OD Radio designs. |
 | 3.4.2 | [PR#2858](https://github.com/bbc/psammead/pull/2858) Update line heights for Tamil and Devanagari & Gurmukhi scripts (Long Primer and Body Copy types). |
 | 3.4.1 | [PR#2462](https://github.com/bbc/psammead/pull/2462) Update line heights for Latin with Diacritics. |

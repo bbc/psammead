@@ -18,7 +18,7 @@ export const GEL_GROUP_3_SCREEN_WIDTH_MIN = `37.5rem`; // 600px
 export const GEL_GROUP_3_SCREEN_WIDTH_MAX = `62.9375rem`; // 1007px
 
 export const GEL_GROUP_4_SCREEN_WIDTH_MIN = `63rem`; // 1008px
-export const GEL_GROUP_4_SCREEN_WIDTH_MAX = `80rem`; // 1279px
+export const GEL_GROUP_4_SCREEN_WIDTH_MAX = `79.9375rem`; // 1279px
 
 export const GEL_GROUP_5_SCREEN_WIDTH_MIN = `80rem`; // 1280px
 
