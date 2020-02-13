@@ -17,6 +17,7 @@ const StyledGrid = styled(Grid)`
     display: flex;
     flex-direction: column;
   }
+  position: relative;
 `;
 
 const renderSchedule = ({
