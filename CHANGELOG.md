@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 2.0.79 | [PR#3121](https://github.com/bbc/psammead/pull/3121) Talos - Bump Dependencies - @bbc/psammead-grid |
 | 2.0.78 | [PR#3107](https://github.com/bbc/psammead/pull/3107) Update packages. |
 | 2.0.77 | [PR#3074](https://github.com/bbc/psammead/pull/3074) Bump @bbc/psammead-timestamp-container version |
 | 2.0.76 | [PR#3073](https://github.com/bbc/psammead/pull/3073) Update `@bbc/psammead-media-indicator` to major version 4 & update relevant usage in packages. |
