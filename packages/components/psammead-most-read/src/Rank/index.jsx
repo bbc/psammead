@@ -44,7 +44,7 @@ const doubleDigitWidth = ({ service }) => {
     : doubleDigitDefault;
 };
 
-const StyledWrapperBase = styled.div`
+const TwoColumnWrapper = styled.div`
   @media (max-width: ${GEL_GROUP_0_SCREEN_WIDTH_MAX}) {
     min-width: ${props =>
       listHasDoubleDigits(props) ? doubleDigitWidth(props).group0 : 'auto'};
@@ -78,7 +78,7 @@ const StyledWrapperBase = styled.div`
   }
 `;
 
-const StyledWrapperExtended = styled(StyledWrapperBase)`
+const MultiColumnWrapper = styled(TwoColumnWrapper)`
   @media (min-width: ${GEL_GROUP_5_SCREEN_WIDTH_MIN}) {
     min-width: ${props =>
       props.listIndex === 5 && listHasDoubleDigits(props)
@@ -121,7 +121,7 @@ const MostReadRank = ({
 }) => {
   const numerals = serviceNumerals(service);
   const rank = numerals[listIndex];
-  const RankWrapper = maxTwoColumns ? StyledWrapperBase : StyledWrapperExtended;
+  const RankWrapper = maxTwoColumns ? TwoColumnWrapper : MultiColumnWrapper;
 
   return (
     <RankWrapper
