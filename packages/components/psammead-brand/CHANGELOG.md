@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 | ------- | ----------- |
+| 5.1.13 | [PR#3131](https://github.com/bbc/psammead/pull/3131) Fix P2 a11y bug limiting iOS Voice Control |
 | 5.1.12 | [PR#3129](https://github.com/bbc/psammead/pull/3129) Talos - Bump Dependencies - @bbc/gel-foundations |
 | 5.1.11 | [PR#3033](https://github.com/bbc/psammead/pull/3033) Talos - Bump Dependencies - @bbc/psammead-script-link |
 | 5.1.10 | [PR#3030](https://github.com/bbc/psammead/pull/3030) Talos - Bump Dependencies - @bbc/psammead-styles |
