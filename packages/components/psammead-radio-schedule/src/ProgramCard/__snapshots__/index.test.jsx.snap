@@ -54,7 +54,6 @@ exports[`ProgramCard should render correctly for live 1`] = `
 .c0 {
   padding-top: 0.5rem;
   background-color: #FFFFFF;
-  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -331,7 +330,6 @@ exports[`ProgramCard should render correctly for next 1`] = `
 .c0 {
   padding-top: 0.5rem;
   background-color: #FFFFFF;
-  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -629,7 +627,6 @@ exports[`ProgramCard should render correctly for onDemand 1`] = `
 .c0 {
   padding-top: 0.5rem;
   background-color: #FFFFFF;
-  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -898,7 +895,6 @@ exports[`ProgramCard should render correctly in RTL 1`] = `
 .c0 {
   padding-top: 0.5rem;
   background-color: #FFFFFF;
-  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
