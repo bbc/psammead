@@ -122,15 +122,8 @@ exports[`Brand should render correctly with link not provided 1`] = `
     </svg>
     <span
       class="c3"
-      role="text"
     >
-      <span
-        lang="en-GB"
-      >
-        Default Brand Name
-      </span>
-      , 
-      Service
+      Default Brand Name Service
     </span>
   </div>
 </div>
@@ -279,15 +272,8 @@ exports[`Brand should render correctly with link provided 1`] = `
       </svg>
       <span
         class="c5"
-        role="text"
       >
-        <span
-          lang="en-GB"
-        >
-          Default Brand Name
-        </span>
-        , 
-        Service
+        Default Brand Name Service
       </span>
     </a>
   </div>
