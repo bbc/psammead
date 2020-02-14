@@ -36,10 +36,14 @@ const TimestampContainer = ({
   );
 
   if (altCalendar && !isRelative) {
-    altDateTime = altCalendar.formatDate(
+    altDateTime = `${altCalendar.formatDate(
       unixTimestampToMoment(timestamp).locale(locale),
-    );
+    )} -`;
   }
+
+  const timestampText = [prefix, altDateTime, mainDateTime, suffix]
+    .filter(segment => segment) // Filters falsy segments.
+    .join(' ');
 
   return (
     <Timestamp
@@ -53,10 +57,7 @@ const TimestampContainer = ({
       script={script}
       service={service}
     >
-      {prefix ? `${prefix} ` : null}
-      {altDateTime ? `${altDateTime} - ` : null}
-      {mainDateTime}
-      {suffix ? ` ${suffix}` : null}
+      {timestampText}
     </Timestamp>
   );
 };
