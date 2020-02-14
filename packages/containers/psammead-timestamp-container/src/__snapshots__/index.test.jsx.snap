@@ -34,7 +34,7 @@ exports[`Timestamp should add prefix and suffix 1`] = `
   class="c0"
   datetime="2018-10-19"
 >
-  Prefix here  19 October 2018  suffix here
+  Prefix here 19 October 2018 suffix here
 </time>
 `;
 
