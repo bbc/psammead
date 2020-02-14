@@ -63,7 +63,6 @@ exports[`RadioSchedule should render ltr radio schedules correctly 1`] = `
 .c9 {
   padding-top: 0.5rem;
   background-color: #FFFFFF;
-  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -282,6 +281,10 @@ exports[`RadioSchedule should render ltr radio schedules correctly 1`] = `
 
 .c3 {
   padding: 1rem 0 0.5rem;
+}
+
+.c2 {
+  position: relative;
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
@@ -1020,7 +1023,6 @@ exports[`RadioSchedule should render rtl radio schedules correctly 1`] = `
 .c9 {
   padding-top: 0.5rem;
   background-color: #FFFFFF;
-  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1239,6 +1241,10 @@ exports[`RadioSchedule should render rtl radio schedules correctly 1`] = `
 
 .c3 {
   padding: 1rem 0 0.5rem;
+}
+
+.c2 {
+  position: relative;
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
