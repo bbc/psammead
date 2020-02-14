@@ -42,7 +42,7 @@ const TimestampContainer = ({
   }
 
   const timestampText = [prefix, altDateTime, mainDateTime, suffix]
-    .filter(segment => segment) // Filters falsy segments.
+    .filter(segment => segment) // Filter falsy segments.
     .join(' ');
 
   return (
