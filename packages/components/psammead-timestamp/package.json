@@ -19,7 +19,7 @@
   },
   "homepage": "https://github.com/bbc/psammead/blob/latest/packages/components/psammead-timestamp/README.md",
   "dependencies": {
-    "@bbc/gel-foundations": "^4.0.0",
+    "@bbc/gel-foundations": "^4.0.1",
     "@bbc/psammead-styles": "^4.3.0"
   },
   "peerDependencies": {
