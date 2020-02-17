@@ -3,7 +3,8 @@
 <!-- prettier-ignore -->
 | Version | Description |
 | ------- | ----------- |
-| 4.0.0-alpha.11 | [PR#3135](https://github.com/bbc/psammead/pull/3135) Talos - Bump Dependencies - @bbc/gel-foundations |
+| 4.0.0-alpha.12 | [PR#3135](https://github.com/bbc/psammead/pull/3135) Talos - Bump Dependencies - @bbc/gel-foundations |
+| 4.0.0-alpha.11 | [PR#3136](https://github.com/bbc/psammead/pull/3136) Fix visually hidden text so it isn't split across multiple strings. |
 | 4.0.0-alpha.10 | [PR#3129](https://github.com/bbc/psammead/pull/3129) Talos - Bump Dependencies - @bbc/gel-foundations |
 | 4.0.0-alpha.9 | [PR#3107](https://github.com/bbc/psammead/pull/3107) Pass in dir prop to MediaIndicator in IndexAlsosContainer. |
 | 4.0.0-alpha.8 | [PR#3073](https://github.com/bbc/psammead/pull/3073) Use new major version of MediaIndicator. StoryPromo has updated styling around the MediaIndicator. Index Alsos test helper now using prop `isInline` for the MediaIndicator. |
