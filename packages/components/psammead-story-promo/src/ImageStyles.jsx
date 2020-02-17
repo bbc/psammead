@@ -18,8 +18,11 @@ const fullWidthColumnsMaxScaleable = `100%`;
 
 const halfWidthColumnsMaxScaleable = `50%`;
 
-const gridFallbackImageWidth = css`
+const gridFallbackImageWidthHalf = css`
   width: calc(${halfWidthColumnsMaxScaleable} - ${GEL_SPACING});
+`;
+const gridFallbackImageWidthTwoThirds = css`
+  width: calc(${fourOfSixColumnsMaxWidthScaleable} - ${GEL_SPACING});
 `;
 
 const ImageGridColumnsTopStory = css`
@@ -54,12 +57,12 @@ const ImageGridFallbackTopStory = css`
   width: ${fullWidthColumnsMaxScaleable};
 
   @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
-    ${gridFallbackImageWidth};
+    ${gridFallbackImageWidthHalf};
     margin-bottom: 0;
   }
 
   @media (min-width: ${GEL_GROUP_4_SCREEN_WIDTH_MIN}) {
-    ${gridFallbackImageWidth};
+    ${gridFallbackImageWidthHalf};
   }
 `;
 
@@ -76,11 +79,11 @@ const ImageGridFallbackLeadingStory = css`
   width: ${fullWidthColumnsMaxScaleable};
 
   @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
-    width: ${halfWidthColumnsMaxScaleable};
+    width: ${gridFallbackImageWidthHalf};
   }
 
   @media (min-width: ${GEL_GROUP_4_SCREEN_WIDTH_MIN}) {
-    width: ${fourOfSixColumnsMaxWidthScaleable};
+    width: ${gridFallbackImageWidthTwoThirds};
   }
 `;
 
