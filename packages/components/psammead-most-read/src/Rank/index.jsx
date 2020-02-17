@@ -19,20 +19,12 @@ import {
   GEL_GROUP_1_SCREEN_WIDTH_MAX,
   GEL_GROUP_0_SCREEN_WIDTH_MAX,
 } from '@bbc/gel-foundations/breakpoints';
-import {
-  GEL_SPACING,
-  GEL_SPACING_DBL,
-  GEL_SPACING_TRPL,
-  GEL_SPACING_QUAD,
-  GEL_SPACING_QUIN,
-} from '@bbc/gel-foundations/spacings';
 import { C_POSTBOX } from '@bbc/psammead-styles/colours';
 import { scriptPropType } from '@bbc/gel-foundations/prop-types';
 import { grid } from '@bbc/psammead-styles/detection';
 import { getSerifLight } from '@bbc/psammead-styles/font-styles';
 import {
   doubleDigitDefault,
-  doubleDigitOverride,
   doubleDigitThin,
   singleDigitDefault,
   singleDigitThin,
@@ -72,12 +64,10 @@ const fontWeight = ({ service, numberOfItems }) => {
     : doubleDigitCheck(numberOfItems).default;
 };
 
-const lastDigitCheck = (listIndex, yes, no) => {
-  return listIndex === 10 ? yes : no;
-};
-
-const isFiveOrTen = (listIndex, yes, no) => {
-  return listIndex === 10 || listIndex === 5 ? yes : no;
+const isFiveOrTen = ({ listIndex, service, numberOfItems }) => {
+  return listIndex === 5 || listIndex === 10
+    ? fontWeight({ service, numberOfItems }).group3_5_column
+    : doubleDigitThin.group5;
 };
 
 const StyledWrapper = styled.div`
@@ -90,13 +80,13 @@ const StyledWrapper = styled.div`
   @media (min-width: ${GEL_GROUP_1_SCREEN_WIDTH_MIN}) and (max-width: ${GEL_GROUP_1_SCREEN_WIDTH_MAX}) {
     min-width: ${props =>
       listHasDoubleDigits(props)
-        ? fontWeight(props).group1_2_column
+        ? fontWeight(props).group1_column
         : fontWeight(props).group1};
   }
   @media (min-width: ${GEL_GROUP_2_SCREEN_WIDTH_MIN}) and (max-width: ${GEL_GROUP_2_SCREEN_WIDTH_MAX}) {
     min-width: ${props =>
       listHasDoubleDigits(props)
-        ? fontWeight(props).group1_2_column
+        ? fontWeight(props).group2_column
         : fontWeight(props).group2};
   }
   @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) and (max-width: ${GEL_GROUP_4_SCREEN_WIDTH_MAX}) {
@@ -118,7 +108,7 @@ const StyledWrapper = styled.div`
   @media (min-width: ${GEL_GROUP_5_SCREEN_WIDTH_MIN}) {
     min-width: ${props =>
       listHasDoubleDigits(props)
-        ? isFiveOrTen(props.listIndex, '4rem', '4rem')
+        ? isFiveOrTen(props)
         : fontWeight(props).group5};
   }
 `;
