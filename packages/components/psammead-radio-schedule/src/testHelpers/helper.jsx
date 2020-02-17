@@ -41,6 +41,7 @@ export const renderProgramCard = ({
   duration = '30:00',
   durationLabel = 'Duration',
   startTime = 1566914061212,
+  offScreenText = 'Live',
 }) => {
   const { text, articlePath, longText, dir, locale, timezone } = TEXT_VARIANTS[
     service
@@ -61,6 +62,7 @@ export const renderProgramCard = ({
       stateLabel={stateLabel}
       timezone={timezone}
       locale={locale}
+      offScreenText={offScreenText}
     />
   );
 };
