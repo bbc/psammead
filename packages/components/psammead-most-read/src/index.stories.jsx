@@ -321,4 +321,25 @@ storiesOf('Components|MostRead', module)
     {
       notes,
     },
+  )
+  .add(
+    'Max two columns at largest viewport',
+    () =>
+      newsServiceDecorator(({ script, service, dir, variant }) => (
+        <MostRead
+          items={getItems({
+            service: getServiceVariant({ service, variant }),
+            arraySize: 10,
+            withTimestamp: true,
+          })}
+          script={script}
+          service={service}
+          header="Most Read"
+          dir={dir}
+          maxTwoColumns
+        />
+      )),
+    {
+      notes,
+    },
   );
