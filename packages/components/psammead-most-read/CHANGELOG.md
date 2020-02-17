@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 1.1.1 | [PR#3151](https://github.com/bbc/psammead/pull/3151) Talos - Bump Dependencies - @bbc/psammead-grid, @bbc/psammead-section-label |
 | 1.1.0 | [PR#3116](https://github.com/bbc/psammead/pull/3116) Added `maxTwoColumns` prop to conditionally render GEL_GROUP_5_SCREEN_WIDTH_MIN media queries |
 | 1.0.9 | [PR#3135](https://github.com/bbc/psammead/pull/3135) Talos - Bump Dependencies - @bbc/gel-foundations |
 | 1.0.8 | [PR#3129](https://github.com/bbc/psammead/pull/3129) Talos - Bump Dependencies - @bbc/gel-foundations |

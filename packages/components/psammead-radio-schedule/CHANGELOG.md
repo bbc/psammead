@@ -2,6 +2,7 @@
 
 | Version | Description |
 |---------|-------------|
+| 0.1.0-alpha.10 | [PR#3151](https://github.com/bbc/psammead/pull/3151) Talos - Bump Dependencies - @bbc/psammead-timestamp-container |
 | 0.1.0-alpha.9 | [PR#3135](https://github.com/bbc/psammead/pull/3135) Talos - Bump Dependencies - @bbc/gel-foundations |
 | 0.1.0-alpha.8 | [PR#3130](https://github.com/bbc/psammead/pull/3130) Apply program-card's link to start-time component |
 | 0.1.0-alpha.7 | [PR#3129](https://github.com/bbc/psammead/pull/3129) Talos - Bump Dependencies - @bbc/gel-foundations |
