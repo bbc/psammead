@@ -3,6 +3,8 @@
 <!-- prettier-ignore -->
 | Version | Description |
 | ------- | ----------- |
+| 4.0.4 | [PR#3135](https://github.com/bbc/psammead/pull/3135) Talos - Bump Dependencies - @bbc/gel-foundations |
+| 4.0.3 | [PR#3129](https://github.com/bbc/psammead/pull/3129) Talos - Bump Dependencies - @bbc/gel-foundations |
 | 4.0.2 | [PR#3107](https://github.com/bbc/psammead/pull/3107) Update snapshots using new version of story-promo at top level. |
 | 4.0.1 | [PR#3070](https://github.com/bbc/psammead/pull/3070) Padding fix - update padding-top to not be applied on first li at 1008px+. |
 | 4.0.0 | [PR#3058](https://github.com/bbc/psammead/pull/3058) Update `StoryPromoLi` padding top above 1008px |

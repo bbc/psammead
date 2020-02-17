@@ -32,7 +32,6 @@ import {
 const CardWrapper = styled.div`
   padding-top: ${GEL_SPACING};
   background-color: ${C_WHITE};
-  position: relative;
   display: flex;
   flex-direction: column;
   border: 0.0625rem solid transparent;
