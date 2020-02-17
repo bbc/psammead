@@ -78,7 +78,7 @@ const items = [
 | Argument | Type | Required | Default | Example |
 | -------- | ---- | -------- | ------- | ------- |
 | numberOfItems | number | yes | N/A | `10` |
-| children | node | yes | N/A | `<MostReadItemWrapper dir="ltr" key={1}><MostReadRank service="news" script={latin} listIndex={1} numberOfItems={10} dir="ltr" /> <MostReadLink dir="ltr" href="/bbc.co.uk/news/articles/27051997" service="news" script={latin} title="This is a news article headline" /></MostReadItemWrapper>,` |
+| children | node | yes | N/A | `<MostReadItemWrapper dir="ltr"><MostReadRank service="news" script={latin} listIndex={1} numberOfItems={10} dir="ltr" /> <MostReadLink dir="ltr" href="/bbc.co.uk/news/articles/27051997" service="news" script={latin} title="This is a news article headline" /></MostReadItemWrapper>,` |
 | dir | string | yes | 'ltr' | `'ltr'`|
 | maxTwoColumns | bool | no | `false` | `true`|
 
@@ -103,7 +103,7 @@ import { latin } from '@bbc/gel-foundations/scripts';
   dir="ltr"
   maxTwoColumns
 >
-  <MostReadItemWrapper dir="ltr" key={1} maxTwoColumns>
+  <MostReadItemWrapper dir="ltr" maxTwoColumns>
     <MostReadRank
       service="news"
       script={latin}

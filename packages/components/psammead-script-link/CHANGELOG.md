@@ -3,6 +3,8 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 1.0.10 | [PR#3135](https://github.com/bbc/psammead/pull/3135) Talos - Bump Dependencies - @bbc/gel-foundations |
+| 1.0.9 | [PR#3129](https://github.com/bbc/psammead/pull/3129) Talos - Bump Dependencies - @bbc/gel-foundations |
 | 1.0.8 | [PR#3030](https://github.com/bbc/psammead/pull/3030) Talos - Bump Dependencies - @bbc/psammead-styles |
 | 1.0.7 | [PR#2995](https://github.com/bbc/psammead/pull/2995) Add `VisuallyHiddenText` to Script Link story |
 | 1.0.6 | [PR#2990](https://github.com/bbc/psammead/pull/2990) Use `GEL_SPACING`, `GEL_SPACING_DBL` and `GEL_SPACING_QUIN` constants |

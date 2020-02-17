@@ -198,7 +198,7 @@ exports[`MostReadItemWrapper should render ltr correctly with 10 items 1`] = `
 
 @media (min-width:37.5rem) {
   .c7 {
-    min-width: 4rem;
+    min-width: 4.25rem;
   }
 }
 
@@ -258,7 +258,7 @@ exports[`MostReadItemWrapper should render ltr correctly with 10 items 1`] = `
 
 @media (min-width:37.5rem) {
   .c9 {
-    min-width: 4rem;
+    min-width: 4.25rem;
   }
 }
 

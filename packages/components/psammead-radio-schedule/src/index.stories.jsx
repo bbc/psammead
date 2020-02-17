@@ -1,68 +1,69 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { withKnobs } from '@storybook/addon-knobs';
-import { withServicesKnob } from '@bbc/psammead-storybook-helpers';
-import { renderProgramCard, sentenceCase } from './testHelpers/helper';
+import {
+  withServicesKnob,
+  buildRTLSubstories,
+} from '@bbc/psammead-storybook-helpers';
+import {
+  renderProgramCard,
+  renderRadioSchedule,
+  sentenceCase,
+  stateTypes,
+} from './testHelpers/helper';
 import notes from '../README.md';
 import StartTime from './StartTime';
 
 const storiesUnixTimestamp = 1566914061212;
 
-const newsServiceDecorator = withServicesKnob({
-  defaultService: 'news',
+const RADIO_SCHEDULE_STORIES = 'Components|RadioSchedule';
+const radioScheduleStories = storiesOf(RADIO_SCHEDULE_STORIES, module)
+  .addDecorator(withKnobs)
+  .addDecorator(withServicesKnob());
+
+radioScheduleStories.add('default', props => renderRadioSchedule(props), {
+  notes,
 });
 
-const arabicServiceDecorator = withServicesKnob({
-  defaultService: 'arabic',
-  services: ['arabic', 'pashto', 'persian', 'urdu'],
+radioScheduleStories.add(
+  'Schedule with different heights',
+  props => renderRadioSchedule({ ...props, withLongSummary: true }),
+  { notes },
+);
+
+buildRTLSubstories(RADIO_SCHEDULE_STORIES, {
+  include: ['default'],
 });
 
-const stateTypes = ['live', 'next', 'onDemand'];
-
-const stories = storiesOf(
-  'Components|RadioSchedule/ProgramCard',
-  module,
-).addDecorator(withKnobs);
+const PROGRAM_CARD_STORIES = 'Components|RadioSchedule/ProgramCard';
+const programCardStories = storiesOf(PROGRAM_CARD_STORIES, module).addDecorator(
+  withKnobs,
+);
 
 stateTypes.forEach(state => {
-  stories.add(
+  programCardStories.add(
     `${state}`,
-    () =>
-      newsServiceDecorator(({ service }) =>
-        renderProgramCard({ service, state, stateLabel: sentenceCase(state) }),
-      ),
+    ({ service }) =>
+      renderProgramCard({ service, state, stateLabel: sentenceCase(state) }),
     { notes },
   );
 });
 
-stories.add(
+programCardStories.add(
   `Multiline episode title`,
-  () =>
-    newsServiceDecorator(({ service }) =>
-      renderProgramCard({
-        state: 'live',
-        stateLabel: 'Live',
-        service,
-        episodeTitle: 'This is a long episode title that spans multiple lines',
-      }),
-    ),
+  ({ service }) =>
+    renderProgramCard({
+      state: 'live',
+      stateLabel: 'Live',
+      service,
+      episodeTitle: 'This is a long episode title that spans multiple lines',
+    }),
   { notes },
 );
 
-stories.add(
-  `Live RTL`,
-  () =>
-    arabicServiceDecorator(({ service }) =>
-      renderProgramCard({
-        state: stateTypes[0],
-        stateLabel: 'مباشر',
-        duration: '30:00',
-        durationLabel: 'المدة الزمنية',
-        service,
-      }),
-    ),
-  { notes },
-);
+buildRTLSubstories(PROGRAM_CARD_STORIES, {
+  include: [...stateTypes],
+});
 
 storiesOf('Components|RadioSchedule/StartTime', module)
   .addDecorator(withKnobs)

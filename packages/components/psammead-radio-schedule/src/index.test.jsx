@@ -1,15 +1,19 @@
-import React from 'react';
 import { shouldMatchSnapshot } from '@bbc/psammead-test-helpers';
-import { render } from '@testing-library/react';
-import RadioSchedule from './index';
+import { arabic } from '@bbc/gel-foundations/scripts';
+import { renderRadioSchedule } from './testHelpers/helper';
 
 describe('RadioSchedule', () => {
-  shouldMatchSnapshot('should render correctly', <RadioSchedule />);
-
-  it('should test example template', () => {
-    const { container } = render(<RadioSchedule />);
-    expect(container.querySelector('div').textContent).toEqual(
-      'Radio Schedule Package',
-    );
-  });
+  shouldMatchSnapshot(
+    'should render ltr radio schedules correctly',
+    renderRadioSchedule({}),
+  );
+  shouldMatchSnapshot(
+    'should render rtl radio schedules correctly',
+    renderRadioSchedule({
+      service: 'arabic',
+      script: arabic,
+      dir: 'rtl',
+      locale: 'fa',
+    }),
+  );
 });

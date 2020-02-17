@@ -3,6 +3,8 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 3.1.28 | [PR#3135](https://github.com/bbc/psammead/pull/3135) Talos - Bump Dependencies - @bbc/gel-foundations |
+| 3.1.27 | [PR#3129](https://github.com/bbc/psammead/pull/3129) Talos - Bump Dependencies - @bbc/gel-foundations |
 | 3.1.26 | [PR#3030](https://github.com/bbc/psammead/pull/3030) Talos - Bump Dependencies - @bbc/psammead-styles |
 | 3.1.25 | [PR#2990](https://github.com/bbc/psammead/pull/2990) Use `GEL_SPACING_QUIN` constant in the `Headline` |
 | 3.1.24 | [PR#2978](https://github.com/bbc/psammead/pull/2978) Talos - Bump Dependencies - @bbc/gel-foundations |

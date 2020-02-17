@@ -66,7 +66,7 @@ const IndexAlsosLink = ({
         <>
           {mediaIndicator}
           <RoleText>
-            <VisuallyHiddenText>{mediaType}, </VisuallyHiddenText>
+            <VisuallyHiddenText>{`${mediaType}, `}</VisuallyHiddenText>
             <IndexAlsosText>{children}</IndexAlsosText>
           </RoleText>
         </>
