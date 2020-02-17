@@ -1367,8 +1367,7 @@ exports[`StoryPromo - Top Story should render with multiple Index Alsos correctl
               <span
                 class="c8"
               >
-                video
-                , 
+                video, 
               </span>
               <span
                 class="c15"
@@ -1753,8 +1752,7 @@ exports[`StoryPromo - Top Story should render with one Index Also correctly 1`] 
             <span
               class="c8"
             >
-              video
-              , 
+              video, 
             </span>
             <span
               class="c14"
