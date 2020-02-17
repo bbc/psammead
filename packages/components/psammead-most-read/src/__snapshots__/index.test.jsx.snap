@@ -242,13 +242,13 @@ exports[`MostRead should render with ltr most read with correct dir 1`] = `
 
 @media (min-width:37.5rem) and (max-width:80rem) {
   .c10 {
-    min-width: auto;
+    min-width: 2.5rem;
   }
 }
 
 @media (min-width:80rem) {
   .c10 {
-    min-width: 2rem;
+    min-width: 2.5rem;
   }
 }
 
@@ -278,7 +278,7 @@ exports[`MostRead should render with ltr most read with correct dir 1`] = `
 
 @media (min-width:80rem) {
   .c14 {
-    min-width: 2rem;
+    min-width: 2.5rem;
   }
 }
 
@@ -302,13 +302,13 @@ exports[`MostRead should render with ltr most read with correct dir 1`] = `
 
 @media (min-width:37.5rem) and (max-width:80rem) {
   .c15 {
-    min-width: auto;
+    min-width: 2.5rem;
   }
 }
 
 @media (min-width:80rem) {
   .c15 {
-    min-width: 4.18rem;
+    min-width: 4rem;
   }
 }
 
@@ -338,7 +338,7 @@ exports[`MostRead should render with ltr most read with correct dir 1`] = `
 
 @media (min-width:80rem) {
   .c16 {
-    min-width: 2rem;
+    min-width: 2.5rem;
   }
 }
 
@@ -362,13 +362,13 @@ exports[`MostRead should render with ltr most read with correct dir 1`] = `
 
 @media (min-width:37.5rem) and (max-width:80rem) {
   .c17 {
-    min-width: auto;
+    min-width: 2.5rem;
   }
 }
 
 @media (min-width:80rem) {
   .c17 {
-    min-width: 2rem;
+    min-width: 2.5rem;
   }
 }
 
@@ -398,7 +398,7 @@ exports[`MostRead should render with ltr most read with correct dir 1`] = `
 
 @media (min-width:80rem) {
   .c18 {
-    min-width: auto;
+    min-width: 4rem;
   }
 }
 
@@ -1041,7 +1041,7 @@ exports[`MostRead should render with rtl most read with correct dir 1`] = `
 
 @media (max-width:14.9375rem) {
   .c10 {
-    min-width: 2.5rem;
+    min-width: 2rem;
   }
 }
 
@@ -1053,25 +1053,25 @@ exports[`MostRead should render with rtl most read with correct dir 1`] = `
 
 @media (min-width:25rem) and (max-width:37.4375rem) {
   .c10 {
-    min-width: 2.5rem;
+    min-width: 3rem;
   }
 }
 
 @media (min-width:37.5rem) and (max-width:80rem) {
   .c10 {
-    min-width: auto;
+    min-width: 2.5rem;
   }
 }
 
 @media (min-width:80rem) {
   .c10 {
-    min-width: 2rem;
+    min-width: 2.5rem;
   }
 }
 
 @media (max-width:14.9375rem) {
   .c14 {
-    min-width: 2.5rem;
+    min-width: 2rem;
   }
 }
 
@@ -1083,7 +1083,7 @@ exports[`MostRead should render with rtl most read with correct dir 1`] = `
 
 @media (min-width:25rem) and (max-width:37.4375rem) {
   .c14 {
-    min-width: 2.5rem;
+    min-width: 3rem;
   }
 }
 
@@ -1095,13 +1095,13 @@ exports[`MostRead should render with rtl most read with correct dir 1`] = `
 
 @media (min-width:80rem) {
   .c14 {
-    min-width: 2rem;
+    min-width: 2.5rem;
   }
 }
 
 @media (max-width:14.9375rem) {
   .c15 {
-    min-width: 2.5rem;
+    min-width: 2rem;
   }
 }
 
@@ -1113,25 +1113,25 @@ exports[`MostRead should render with rtl most read with correct dir 1`] = `
 
 @media (min-width:25rem) and (max-width:37.4375rem) {
   .c15 {
-    min-width: 2.5rem;
+    min-width: 3rem;
   }
 }
 
 @media (min-width:37.5rem) and (max-width:80rem) {
   .c15 {
-    min-width: auto;
+    min-width: 2.5rem;
   }
 }
 
 @media (min-width:80rem) {
   .c15 {
-    min-width: 3.7rem;
+    min-width: 4rem;
   }
 }
 
 @media (max-width:14.9375rem) {
   .c16 {
-    min-width: 2.5rem;
+    min-width: 2rem;
   }
 }
 
@@ -1143,7 +1143,7 @@ exports[`MostRead should render with rtl most read with correct dir 1`] = `
 
 @media (min-width:25rem) and (max-width:37.4375rem) {
   .c16 {
-    min-width: 2.5rem;
+    min-width: 3rem;
   }
 }
 
@@ -1155,13 +1155,13 @@ exports[`MostRead should render with rtl most read with correct dir 1`] = `
 
 @media (min-width:80rem) {
   .c16 {
-    min-width: 2rem;
+    min-width: 2.5rem;
   }
 }
 
 @media (max-width:14.9375rem) {
   .c17 {
-    min-width: 2.5rem;
+    min-width: 2rem;
   }
 }
 
@@ -1173,25 +1173,25 @@ exports[`MostRead should render with rtl most read with correct dir 1`] = `
 
 @media (min-width:25rem) and (max-width:37.4375rem) {
   .c17 {
-    min-width: 2.5rem;
+    min-width: 3rem;
   }
 }
 
 @media (min-width:37.5rem) and (max-width:80rem) {
   .c17 {
-    min-width: auto;
+    min-width: 2.5rem;
   }
 }
 
 @media (min-width:80rem) {
   .c17 {
-    min-width: 2rem;
+    min-width: 2.5rem;
   }
 }
 
 @media (max-width:14.9375rem) {
   .c18 {
-    min-width: 2.5rem;
+    min-width: 2rem;
   }
 }
 
@@ -1203,7 +1203,7 @@ exports[`MostRead should render with rtl most read with correct dir 1`] = `
 
 @media (min-width:25rem) and (max-width:37.4375rem) {
   .c18 {
-    min-width: 2.5rem;
+    min-width: 3rem;
   }
 }
 
@@ -1215,7 +1215,7 @@ exports[`MostRead should render with rtl most read with correct dir 1`] = `
 
 @media (min-width:80rem) {
   .c18 {
-    min-width: auto;
+    min-width: 4rem;
   }
 }
 
