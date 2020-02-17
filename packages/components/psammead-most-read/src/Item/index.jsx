@@ -1,5 +1,5 @@
 import React from 'react';
-import { shape, string, oneOf, node } from 'prop-types';
+import { shape, string, oneOf, node, bool } from 'prop-types';
 import styled from 'styled-components';
 import { getPica, getGreatPrimer } from '@bbc/gel-foundations/typography';
 import { C_EBON } from '@bbc/psammead-styles/colours';
@@ -115,10 +115,10 @@ const StyledGrid = styled(Grid).attrs({
   position: relative;
 `;
 
-export const MostReadItemWrapper = ({ dir, children }) => (
+export const MostReadItemWrapper = ({ dir, children, maxTwoColumns }) => (
   <StyledGrid
     {...mostReadItemGridProps}
-    parentColumns={mostReadListGridProps.columns} // parentColumns is required here because on IE, this component would be rendered before it's parent therefore not receiving the parent's grid columns values so we have to explicitly pass it as a prop here so it works on IE
+    parentColumns={mostReadListGridProps(maxTwoColumns).columns} // parentColumns is required here because on IE, this component would be rendered before it's parent therefore not receiving the parent's grid columns values so we have to explicitly pass it as a prop here so it works on IE
     dir={dir}
     forwardedAs="li"
   >
@@ -127,10 +127,12 @@ export const MostReadItemWrapper = ({ dir, children }) => (
 );
 
 MostReadItemWrapper.propTypes = {
-  dir: oneOf(['rtl', 'ltr']),
   children: node.isRequired,
+  dir: oneOf(['rtl', 'ltr']),
+  maxTwoColumns: bool,
 };
 
 MostReadItemWrapper.defaultProps = {
   dir: 'ltr',
+  maxTwoColumns: false,
 };

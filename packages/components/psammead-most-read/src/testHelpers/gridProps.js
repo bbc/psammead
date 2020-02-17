@@ -1,4 +1,4 @@
-const mostReadListGridProps = {
+const mostReadListGridProps = maxTwoColumns => ({
   enableGelGutters: true,
   enableGelMargins: true,
   columns: {
@@ -7,9 +7,9 @@ const mostReadListGridProps = {
     group2: 6,
     group3: 6,
     group4: 8,
-    group5: 20,
+    group5: maxTwoColumns ? 8 : 20,
   },
-};
+});
 
 const mostReadItemGridProps = {
   item: true,
