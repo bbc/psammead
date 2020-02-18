@@ -18,7 +18,7 @@ describe('ProgramCard', () => {
     renderProgramCard({
       state: stateTypes[0],
       stateLabel: 'مباشر',
-      duration: '30:00',
+      duration: 'PT30M',
       durationLabel: 'المدة الزمنية',
       service: 'arabic',
     }),

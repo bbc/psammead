@@ -28,7 +28,7 @@ const getSchedule = (service, withLongSummary) => {
       withLongSummary && state === 'live'
         ? `${longText} ${longText}`
         : longText,
-    duration: '45:00',
+    duration: 'PT45M',
     durationLabel: 'Duration',
   }));
 };
@@ -38,7 +38,7 @@ export const renderProgramCard = ({
   stateLabel,
   service = 'news',
   episodeTitle = '29/01/1990',
-  duration = '30:00',
+  duration = 'PT30M',
   durationLabel = 'Duration',
   startTime = 1566914061212,
 }) => {
