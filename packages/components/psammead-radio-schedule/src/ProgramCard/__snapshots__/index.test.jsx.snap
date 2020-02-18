@@ -287,6 +287,7 @@ exports[`ProgramCard should render correctly for live 1`] = `
     </span>
     <time
       class="c11"
+      datetime="PT30M"
       dir="ltr"
     >
       <span
@@ -555,6 +556,7 @@ exports[`ProgramCard should render correctly for next 1`] = `
     </span>
     <time
       class="c10"
+      datetime="PT30M"
       dir="ltr"
     >
       <span
@@ -823,6 +825,7 @@ exports[`ProgramCard should render correctly for onDemand 1`] = `
     </span>
     <time
       class="c10"
+      datetime="PT30M"
       dir="ltr"
     >
       <span
@@ -1091,6 +1094,7 @@ exports[`ProgramCard should render correctly in RTL 1`] = `
     </span>
     <time
       class="c10"
+      datetime="PT30M"
       dir="rtl"
     >
       <span
