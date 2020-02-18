@@ -665,6 +665,7 @@ exports[`RadioSchedule should render ltr radio schedules correctly 1`] = `
         </span>
         <time
           class="c19"
+          datetime="PT45M"
           dir="ltr"
         >
           <span
@@ -805,6 +806,7 @@ exports[`RadioSchedule should render ltr radio schedules correctly 1`] = `
         </span>
         <time
           class="c19"
+          datetime="PT45M"
           dir="ltr"
         >
           <span
@@ -937,6 +939,7 @@ exports[`RadioSchedule should render ltr radio schedules correctly 1`] = `
         </span>
         <time
           class="c19"
+          datetime="PT45M"
           dir="ltr"
         >
           <span
@@ -1622,6 +1625,7 @@ exports[`RadioSchedule should render rtl radio schedules correctly 1`] = `
         </span>
         <time
           class="c19"
+          datetime="PT45M"
           dir="rtl"
         >
           <span
@@ -1762,6 +1766,7 @@ exports[`RadioSchedule should render rtl radio schedules correctly 1`] = `
         </span>
         <time
           class="c19"
+          datetime="PT45M"
           dir="rtl"
         >
           <span
@@ -1894,6 +1899,7 @@ exports[`RadioSchedule should render rtl radio schedules correctly 1`] = `
         </span>
         <time
           class="c19"
+          datetime="PT45M"
           dir="rtl"
         >
           <span
