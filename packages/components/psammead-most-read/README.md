@@ -10,66 +10,6 @@ The `MostRead` component is designed to display the most read articles given a d
 
 ## Components
 
-## MostRead
-
-### Props
-
-<!-- prettier-ignore -->
-| Argument | Type | Required | Default | Example |
-| -------- | ---- | -------- | ------- | ------- |
-| items | array | yes | N/A | `[{ id: "89b01387-4f40-8846-a11f-65aeed534da3", title: 'This is a headline', href: 'https://www.bbc.com', timestamp: <TimestampContainer timestamp={1570031976502} dateTimeFormat="YYYY-MM-DD" prefix="Last updated: " format="LL" script={latin} service='news'/> }]` |
-| header | string | yes | N/A | `'Most Read'`  |
-| service | string | yes | N/A | `'news'` |
-| script | object | yes | N/A | `{ canon: { groupA: { fontSize: '28', lineHeight: '32' }, groupB: { fontSize: '32', lineHeight: '36' }, groupD: { fontSize: '44', lineHeight: '48' }, }, trafalgar: { groupA: { fontSize: '20', lineHeight: '24' }, groupB: { fontSize: '24', lineHeight: '28' }, groupD: { fontSize: '32', lineHeight: '36' } } }` |
-| dir | string | no | `"ltr"` | `"rtl"` |
-| labelId | string | no | `'Most-Read'` | `'Most-Read'`|
-| className | string | no | `null` | `'additional-class'` |
-
-### Usage
-
-This component combines all the MostRead Components (MostReadList, MostReadTitle, MostReadItemWrapper, MostReadLink, MostReadRank) and renders the full component.
-
-```jsx
-import React from 'react';
-import { MostRead } from '@bbc/psammead-most-read';
-import Timestamp from '@bbc/psammead-timestamp-container';
-import { arabic } from '@bbc/gel-foundations/scripts';
-
-const lastUpdated = (script, service) => (
-  <Timestamp
-    timestamp={1570031976502}
-    dateTimeFormat="YYYY-MM-DD"
-    prefix="Last updated: "
-    format="LL"
-    script={script}
-    service={service}
-  />
-);
-
-const items = [
-  {
-    id: '89b01387-4f40-8846-a11f-65aeed534da3',
-    title: 'John Lewis staff bonus cut again as profits fall',
-    href: 'https://www.bbc.co.uk/news/business-43328806',
-    timestamp: lastUpdated(arabic, 'arabic'),
-  },
-  {
-    id: '89b01387-4f40-8846-a11f-65aeed534da4',
-    title: 'John Lewis staff bonus cut again as profits fall',
-    href: 'https://www.bbc.co.uk/news/business-43328806',
-    timestamp: null,
-  },
-];
-
-<MostRead
-  items={items}
-  script={script}
-  service="arabic"
-  header="الأكثر قراءة"
-  dir="rtl"
-/>;
-```
-
 ## MostReadList
 
 ### Props
@@ -237,50 +177,6 @@ import { MostReadRank } from '@bbc/psammead-most-read';
   maxTwoColumns
 />;
 ```
-
-## MostReadSection
-
-### Props
-
-<!-- prettier-ignore -->
-| Argument | Type | Required | Default | Example |
-| -------- | ---- | -------- | ------- | ------- |
-| script | object | yes | N/A | `{ canon: { groupA: { fontSize: '28', lineHeight: '32' }, groupB: { fontSize: '32', lineHeight: '36' }, groupD: { fontSize: '44', lineHeight: '48' }, }, trafalgar: { groupA: { fontSize: '20', lineHeight: '24' }, groupB: { fontSize: '24', lineHeight: '28' }, groupD: { fontSize: '32', lineHeight: '36' } } }` |
-| service | string | yes | N/A | `'news'` |
-| header | string | yes | N/A | `'Most Read'`  |
-| labelId | string | no | `'most-read'` | `'most-read'`  |
-| children | node | yes | N/A | `<MostReadList numberOfItems={10} dir="ltr"><MostReadItemWrapper dir="ltr"><MostReadRank service="news" script={script} listIndex={1} numberOfItems={10} dir="ltr" /><MostReadLink dir="ltr" service="news" script={script} title="article headline" href="/bbc.co.uk/articles/000027051997">{timestamp}</MostReadLink></MostReadItemWrapper></MostReadList>`  |
-| dir | string | no | `"ltr"` | `"ltr"` |
-| className | string | no | `null` | `'additional-class'` |
-
-### Usage
-
-```jsx
-import React from 'react';
-import { latin } from '@bbc/gel-foundations/scripts';
-import { MostReadSection } from '@bbc/psammead-most-read';
-
-<MostReadSection
-  labelId={labelId}
-  script={script}
-  service={service}
-  header={header}
-  dir={dir}
->
-  <p>Most Read content</p>
-</MostReadSection>;
-```
-
-### When to use this component
-
-This component is to be used on `article` pages.
-
-### Accessibility notes
-
-This component is expected to provide information about the Most Read articles in an ordered list when using a screenreader by announcing the region landmark, reading out the title 'Most Read', and read out each headline link in the correct order.
-Due to the faux block link code, it is not expected to read out the rank as well.
-
-## Roadmap
 
 ## Contributing
 
