@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 0.1.0-alpha.12 | [PR#3132](https://github.com/bbc/psammead/pull/3132) Render correct hidden `startTime` in RadioSchedule component |
 | 0.1.0-alpha.11 | [PR#3151](https://github.com/bbc/psammead/pull/3151) Talos - Bump Dependencies - @bbc/psammead-timestamp-container |
 | 0.1.0-alpha.10 | [PR#3079](https://github.com/bbc/psammead/pull/3079) Format duration time for the ProgramCard |
 | 0.1.0-alpha.9 | [PR#3135](https://github.com/bbc/psammead/pull/3135) Talos - Bump Dependencies - @bbc/gel-foundations |
