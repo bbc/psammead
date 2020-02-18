@@ -78,7 +78,7 @@ const schedules = [
 | brandTitle | string | yes | N/A | `'This is a brand title'` |
 | summary | string | yes | N/A | `'This is a summary'` |
 | episodeTitle | string | yes | N/A | `'29/01/1990'` |
-| duration | string | yes | N/A | `'30:00'` |
+| duration | string | yes | N/A | `'PT30M'` |
 | durationLabel | string | yes | N/A | `'duration'` |
 | state | string | yes | N/A | `'live'` |
 | stateLabel | string | yes | N/A | `'مباشر'` |
@@ -107,7 +107,7 @@ import ProgramCard from '@bbc/psammead-radio-schedule/ProgramCard';
   brandTitle="This is a brand title"
   summary="Could a computer ever create better art than a human?"
   episodeTitle="29/01/1990"
-  duration="30:00"
+  duration="PT30M"
   durationLabel="duration"
   state="live"
   stateLabel="Live"

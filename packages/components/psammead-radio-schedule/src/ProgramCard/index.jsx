@@ -24,7 +24,10 @@ import { Link } from '@bbc/psammead-story-promo';
 import { oneOf, shape, string, number } from 'prop-types';
 import { scriptPropType } from '@bbc/gel-foundations/prop-types';
 import VisuallyHiddenText from '@bbc/psammead-visually-hidden-text';
-import { formatUnixTimestamp } from '@bbc/psammead-timestamp-container/utilities';
+import {
+  formatUnixTimestamp,
+  formatDuration,
+} from '@bbc/psammead-timestamp-container/utilities';
 
 const CardWrapper = styled.div`
   padding-top: ${GEL_SPACING};
@@ -232,11 +235,11 @@ const ProgramCard = ({
       <IconWrapper {...programStateConfig[state]}>
         {mediaIcons.audio}
       </IconWrapper>
-      <DurationWrapper dir={dir}>
+      <DurationWrapper dir={dir} dateTime={duration}>
         <VisuallyHiddenText>
-          {` ${durationLabel} ${duration.replace(/:/g, ',')} `}
+          {` ${durationLabel} ${formatDuration(duration, 'mm,ss')} `}
         </VisuallyHiddenText>
-        <DurationTextWrapper>{duration}</DurationTextWrapper>
+        <DurationTextWrapper>{formatDuration(duration)}</DurationTextWrapper>
       </DurationWrapper>
     </ButtonWrapper>
   </CardWrapper>
