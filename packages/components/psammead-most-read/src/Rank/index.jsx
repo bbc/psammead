@@ -25,7 +25,7 @@ import { getSerifLight } from '@bbc/psammead-styles/font-styles';
 import {
   doubleDigitDefault,
   doubleDigitOverride,
-} from '../testHelpers/doubleDigitOverride';
+} from '../utilities/doubleDigitOverride';
 
 // For additional spacing for numerals in the right column because of '10' being double digits
 const isOnSecondColumn = ({ listIndex, numberOfItems }, supportsGrid) =>
