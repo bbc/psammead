@@ -173,7 +173,7 @@ exports[`MostRead should render with ltr most read with correct dir 1`] = `
   }
 }
 
-@media (min-width:63rem) and (max-width:80rem) {
+@media (min-width:63rem) and (max-width:79.9375rem) {
   .c7 {
     width: calc(50%);
     display: inline-block;
@@ -424,6 +424,12 @@ exports[`MostRead should render with ltr most read with correct dir 1`] = `
 @media (min-width:37.5rem) {
   .c0 {
     margin-top: 1.5rem;
+  }
+}
+
+@media (min-width:63rem) {
+  .c0 {
+    margin-bottom: 1.5rem;
   }
 }
 
@@ -960,7 +966,7 @@ exports[`MostRead should render with rtl most read with correct dir 1`] = `
   }
 }
 
-@media (min-width:63rem) and (max-width:80rem) {
+@media (min-width:63rem) and (max-width:79.9375rem) {
   .c7 {
     width: calc(50%);
     display: inline-block;
@@ -1211,6 +1217,12 @@ exports[`MostRead should render with rtl most read with correct dir 1`] = `
 @media (min-width:37.5rem) {
   .c0 {
     margin-top: 1.5rem;
+  }
+}
+
+@media (min-width:63rem) {
+  .c0 {
+    margin-bottom: 1.5rem;
   }
 }
 
