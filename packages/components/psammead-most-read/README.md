@@ -178,6 +178,14 @@ import Timestamp from '@bbc/psammead-timestamp';
 </MostReadLink>;
 ```
 
+### When to use these components
+
+These components are intended to be used on `article` and `front` pages.
+
+### Accessibility notes
+
+- These components are expected to provide information about the Most Read articles in an ordered list when using a screenreader by announcing the region landmark, reading out the title 'Most Read', and read out each headline link in the correct order.
+- Due to the faux block link code, it is not expected to read out the rank as well.
 
 ## Contributing
 
