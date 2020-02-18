@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import { withKnobs } from '@storybook/addon-knobs';
+import { withKnobs, boolean } from '@storybook/addon-knobs';
 import { withServicesKnob } from '@bbc/psammead-storybook-helpers';
 import { getItem, getItemWrapperArray, getServiceVariant } from './utilities';
 import { MostReadRank, MostReadLink, MostReadList } from './index';
@@ -26,13 +26,26 @@ const newsServiceDecorator = withServicesKnob({
   defaultService: 'news',
 });
 
-const renderList = ({ numberOfItems, dir, service, script }) => (
-  <MostReadList numberOfItems={numberOfItems} dir={dir}>
+const renderList = ({
+  numberOfItems,
+  dir,
+  service,
+  script,
+  withTimestamp,
+  maxTwoColumns,
+}) => (
+  <MostReadList
+    numberOfItems={numberOfItems}
+    dir={dir}
+    maxTwoColumns={maxTwoColumns}
+  >
     {getItemWrapperArray({
       numberOfItems,
       service,
       script,
       dir,
+      withTimestamp,
+      maxTwoColumns,
     }).map(item => item)}
   </MostReadList>
 );
@@ -142,6 +155,38 @@ storiesOf('Components|MostRead/List', module)
           dir,
           service: getServiceVariant({ service, variant }),
           script,
+        }),
+      ),
+    {
+      notes,
+    },
+  )
+  .add(
+    `News LTR with timestamp`,
+    () =>
+      newsServiceDecorator(({ dir, script, service, variant }) =>
+        renderList({
+          numberOfItems: 10,
+          dir,
+          service: getServiceVariant({ service, variant }),
+          script,
+          withTimestamp: true,
+        }),
+      ),
+    {
+      notes,
+    },
+  )
+  .add(
+    `News LTR with maxTwoColumns`,
+    () =>
+      newsServiceDecorator(({ dir, script, service, variant }) =>
+        renderList({
+          numberOfItems: 10,
+          dir,
+          service: getServiceVariant({ service, variant }),
+          script,
+          maxTwoColumns: boolean('Max Two Columns', true),
         }),
       ),
     {

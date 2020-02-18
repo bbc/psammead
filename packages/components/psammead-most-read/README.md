@@ -2,7 +2,7 @@
 
 ## Description
 
-The `MostRead` component is designed to display the most read articles given a designated period of time which is dependent on service. The component comprises of a `MostReadTitle`, a `MostReadList` containing an ordered list of `MostReadItems`. A `MostReadItem` is a list item comprised of and a `MostReadLink`, a link to the article, and a `MostReadRank` which is a numerical counter representing the article's ranking.
+The `MostRead` component is designed to display the most read articles given a designated period of time which is dependent on service. The component comprises of a `MostReadList` containing an ordered list of `MostReadItemWrapper`. A `MostReadItemWrapper` is a list item comprised of and a `MostReadLink`, a link to the article, and a `MostReadRank` which is a numerical counter representing the article's ranking.
 
 ## Installation
 
@@ -61,48 +61,6 @@ import { latin } from '@bbc/gel-foundations/scripts';
     />
   </MostReadItemWrapper>
 </MostReadList>;
-```
-
-## MostReadLink
-
-### Props
-
-<!-- prettier-ignore -->
-| Argument | Type | Required | Default | Example |
-| -------- | ---- | -------- | ------- | ------- |
-| dir | string | yes | 'ltr' | `'ltr'`|
-| service | string | yes | N/A | `'news'` |
-| script | object | yes | N/A | `{ canon: { groupA: { fontSize: '28', lineHeight: '32' }, groupB: { fontSize: '32', lineHeight: '36' }, groupD: { fontSize: '44', lineHeight: '48' }, }, trafalgar: { groupA: { fontSize: '20', lineHeight: '24' }, groupB: { fontSize: '24', lineHeight: '28' }, groupD: { fontSize: '32', lineHeight: '36' } } }` |
-| title | string | yes | N/A | `"This is a article headline"` |
-| href | string | yes | N/A | `"/bbc.co.uk/news/00000027051997"` |
-| children | node | no | null | `<Timestamp datetime="2019-03-01T14:00+00:00" script={script} padding={false} service={service}>Last updated: 5th November 2016</Timestamp>` |
-
-### Usage
-
-A typical use-case of this component is as displayed below. It contains an info element. The info element is a link which points to the corresponding article.
-
-```jsx
-import React from 'react';
-import { latin } from '@bbc/gel-foundations/scripts';
-import { MostReadLink } from '@bbc/psammead-most-read';
-import Timestamp from '@bbc/psammead-timestamp';
-
-<MostReadLink
-  dir="ltr"
-  script={latin}
-  service="news"
-  title="This is a article headline"
-  href="/bbc.co.uk/news/00000027051997"
->
-  <Timestamp
-    datetime="2019-03-01T14:00+00:00"
-    script={script}
-    padding={false}
-    service={service}
-  >
-    Last updated: 5th November 2016
-  </Timestamp>
-</MostReadLink>;
 ```
 
 ## MostReadItemWrapper
@@ -177,6 +135,49 @@ import { MostReadRank } from '@bbc/psammead-most-read';
   maxTwoColumns
 />;
 ```
+
+## MostReadLink
+
+### Props
+
+<!-- prettier-ignore -->
+| Argument | Type | Required | Default | Example |
+| -------- | ---- | -------- | ------- | ------- |
+| dir | string | yes | 'ltr' | `'ltr'`|
+| service | string | yes | N/A | `'news'` |
+| script | object | yes | N/A | `{ canon: { groupA: { fontSize: '28', lineHeight: '32' }, groupB: { fontSize: '32', lineHeight: '36' }, groupD: { fontSize: '44', lineHeight: '48' }, }, trafalgar: { groupA: { fontSize: '20', lineHeight: '24' }, groupB: { fontSize: '24', lineHeight: '28' }, groupD: { fontSize: '32', lineHeight: '36' } } }` |
+| title | string | yes | N/A | `"This is a article headline"` |
+| href | string | yes | N/A | `"/bbc.co.uk/news/00000027051997"` |
+| children | node | no | null | `<Timestamp datetime="2019-03-01T14:00+00:00" script={script} padding={false} service={service}>Last updated: 5th November 2016</Timestamp>` |
+
+### Usage
+
+A typical use-case of this component is as displayed below. It contains an info element. The info element is a link which points to the corresponding article.
+
+```jsx
+import React from 'react';
+import { latin } from '@bbc/gel-foundations/scripts';
+import { MostReadLink } from '@bbc/psammead-most-read';
+import Timestamp from '@bbc/psammead-timestamp';
+
+<MostReadLink
+  dir="ltr"
+  script={latin}
+  service="news"
+  title="This is a article headline"
+  href="/bbc.co.uk/news/00000027051997"
+>
+  <Timestamp
+    datetime="2019-03-01T14:00+00:00"
+    script={script}
+    padding={false}
+    service={service}
+  >
+    Last updated: 5th November 2016
+  </Timestamp>
+</MostReadLink>;
+```
+
 
 ## Contributing
 
