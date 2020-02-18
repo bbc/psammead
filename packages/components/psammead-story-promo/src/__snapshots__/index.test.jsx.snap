@@ -588,7 +588,7 @@ exports[`StoryPromo - Top Story should render correctly 1`] = `
   color: #6E6E73;
 }
 
-@media (min-width:37.5rem) {
+@media (min-width:37.5rem) and (max-width:62.9375rem) {
   .c1 {
     width: calc(50% - 0.5rem);
     margin-bottom: 0;
@@ -608,7 +608,7 @@ exports[`StoryPromo - Top Story should render correctly 1`] = `
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width:37.5rem) and (max-width:62.9375rem) {
   .c3 {
     width: 50%;
     padding: 0 1rem;
@@ -846,7 +846,7 @@ exports[`StoryPromo - Top Story should render with Media Indicator correctly 1`]
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width:37.5rem) and (max-width:62.9375rem) {
   .c1 {
     width: calc(50% - 0.5rem);
     margin-bottom: 0;
@@ -866,7 +866,7 @@ exports[`StoryPromo - Top Story should render with Media Indicator correctly 1`]
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width:37.5rem) and (max-width:62.9375rem) {
   .c8 {
     width: 50%;
     padding: 0 1rem;
@@ -1182,7 +1182,7 @@ exports[`StoryPromo - Top Story should render with multiple Index Alsos correctl
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width:37.5rem) and (max-width:62.9375rem) {
   .c1 {
     width: calc(50% - 0.5rem);
     margin-bottom: 0;
@@ -1202,7 +1202,7 @@ exports[`StoryPromo - Top Story should render with multiple Index Alsos correctl
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width:37.5rem) and (max-width:62.9375rem) {
   .c3 {
     width: 50%;
     padding: 0 1rem;
@@ -1572,7 +1572,7 @@ exports[`StoryPromo - Top Story should render with one Index Also correctly 1`] 
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width:37.5rem) and (max-width:62.9375rem) {
   .c1 {
     width: calc(50% - 0.5rem);
     margin-bottom: 0;
@@ -1592,7 +1592,7 @@ exports[`StoryPromo - Top Story should render with one Index Also correctly 1`] 
   }
 }
 
-@media (min-width:37.5rem) {
+@media (min-width:37.5rem) and (max-width:62.9375rem) {
   .c3 {
     width: 50%;
     padding: 0 1rem;

@@ -66,7 +66,7 @@ const TextGridColumnsLeadingStory = css`
 `;
 
 const TextGridFallbackTopStory = css`
-  @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
+  @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) and (max-width: ${GEL_GROUP_3_SCREEN_WIDTH_MAX}) {
     width: ${halfWidthColumnsMaxScaleable};
     padding: 0 ${GEL_SPACING_DBL};
   }
