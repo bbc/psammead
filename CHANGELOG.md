@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 2.0.82 | [PR#3079](https://github.com/bbc/psammead/pull/3079) Format duration time for the ProgramCard in RadioSchedule Package |
 | 2.0.81 | [PR#3135](https://github.com/bbc/psammead/pull/3135) Talos - Bump Dependencies - @bbc/gel-foundations |
 | 2.0.80 | [PR#3129](https://github.com/bbc/psammead/pull/3129) Talos - Bump Dependencies - @bbc/gel-foundations |
 | 2.0.79 | [PR#3121](https://github.com/bbc/psammead/pull/3121) Talos - Bump Dependencies - @bbc/psammead-grid |
