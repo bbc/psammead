@@ -1,6 +1,6 @@
 {
   "name": "@bbc/psammead-most-read",
-  "version": "1.1.1",
+  "version": "2.0.0",
   "description": "A component for the most read item",
   "main": "dist/index.js",
   "module": "esm/index.js",
@@ -25,7 +25,6 @@
   "dependencies": {
     "@bbc/gel-foundations": "^4.0.1",
     "@bbc/psammead-grid": "^1.1.10",
-    "@bbc/psammead-section-label": "^4.0.2",
     "@bbc/psammead-styles": "^4.3.0"
   },
   "peerDependencies": {
