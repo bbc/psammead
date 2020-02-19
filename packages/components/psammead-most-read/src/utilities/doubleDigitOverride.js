@@ -90,7 +90,7 @@ export const doubleDigitOverride = {
     group0: '2rem',
     group1: '2.5rem',
     group2: '3rem',
-    group3: '4rem',
+    group3: '4.25rem',
     group5: '4.18rem',
   },
   pashto: {

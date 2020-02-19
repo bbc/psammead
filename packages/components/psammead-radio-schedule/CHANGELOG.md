@@ -1,7 +1,12 @@
 # Radio Schedule Changelog
 
+<!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 0.1.0-alpha.13 | [PR#3153](https://github.com/bbc/psammead/pull/3153) Talos - Bump Dependencies - @bbc/psammead-timestamp-container |
+| 0.1.0-alpha.12 | [PR#3132](https://github.com/bbc/psammead/pull/3132) Render correct hidden `startTime` in RadioSchedule component |
+| 0.1.0-alpha.11 | [PR#3151](https://github.com/bbc/psammead/pull/3151) Talos - Bump Dependencies - @bbc/psammead-timestamp-container |
+| 0.1.0-alpha.10 | [PR#3079](https://github.com/bbc/psammead/pull/3079) Format duration time for the ProgramCard |
 | 0.1.0-alpha.9 | [PR#3135](https://github.com/bbc/psammead/pull/3135) Talos - Bump Dependencies - @bbc/gel-foundations |
 | 0.1.0-alpha.8 | [PR#3130](https://github.com/bbc/psammead/pull/3130) Apply program-card's link to start-time component |
 | 0.1.0-alpha.7 | [PR#3129](https://github.com/bbc/psammead/pull/3129) Talos - Bump Dependencies - @bbc/gel-foundations |
@@ -11,4 +16,3 @@
 | 0.1.0-alpha.3 | [PR#2988](https://github.com/BBC-News/psammead/pull/2988) Add start time of the radio program. |
 | 0.1.0-alpha.2 | [PR#2938](https://github.com/BBC-News/psammead/pull/2938) Add radio program card component. |
 | 0.1.0-alpha.1 | [PR#2979](https://github.com/BBC-News/psammead/pull/2979) Initial creation of package. |
-
