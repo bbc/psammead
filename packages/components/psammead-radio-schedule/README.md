@@ -33,6 +33,7 @@ npm install @bbc/psammead-radio-schedule --save
 | locale | string | no | N/A | `'en-gb'` |
 | timezone | string | no | N/A | `'Europe/London'` |
 | dir | string | no | `"ltr"` | `"rtl"` |
+| offscreenLiveText | string | no | `null` | `'Live'` |
 
 ### Usage
 
@@ -89,6 +90,7 @@ const schedules = [
 | dir | string | no | `"ltr"` | `"rtl"` |
 | timezone | string | no | `'Europe/London'` | `'Europe/Vienna'` |
 | locale | string | no | `'en-gb'` | `'fa'` |
+| offscreenLiveText | string | no | `null` | `'Live'` |
 
 ### Usage
 
