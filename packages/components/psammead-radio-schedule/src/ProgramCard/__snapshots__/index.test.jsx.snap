@@ -503,11 +503,6 @@ exports[`ProgramCard should render correctly for next 1`] = `
         >
           NEXT
         </span>
-        <span
-          class="c4"
-        >
-          ,
-        </span>
         <span>
            
           Could a computer ever create better art than a human?
