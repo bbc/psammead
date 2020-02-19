@@ -123,7 +123,7 @@ exports[`Brand should render correctly with link not provided 1`] = `
     <span
       class="c3"
     >
-      Default Brand Name Service
+      Default Brand Name, Service
     </span>
   </div>
 </div>
@@ -273,7 +273,7 @@ exports[`Brand should render correctly with link provided 1`] = `
       <span
         class="c5"
       >
-        Default Brand Name Service
+        Default Brand Name, Service
       </span>
     </a>
   </div>

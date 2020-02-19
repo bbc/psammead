@@ -149,7 +149,7 @@ const StyledBrand = ({
         </BrandSvg>
         <VisuallyHiddenText>
           {serviceLocalisedName
-            ? `${product} ${serviceLocalisedName}`
+            ? `${product}, ${serviceLocalisedName}`
             : product}
         </VisuallyHiddenText>
       </>
