@@ -235,8 +235,7 @@ exports[`ProgramCard should render correctly for live 1`] = `
             class="c5"
             lang="en-GB"
           >
-             Live
-            ,
+             Live, 
           </span>
           <span>
              

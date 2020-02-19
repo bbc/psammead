@@ -166,8 +166,7 @@ const renderHeaderContent = ({
           </LabelWrapper>
           {offscreenLiveText && (
             <VisuallyHiddenText {...hiddenTextProps}>
-              {isLive && ` ${offscreenLiveText}`}
-              {`,`}
+              {isLive && ` ${offscreenLiveText}, `}
             </VisuallyHiddenText>
           )}
         </>
