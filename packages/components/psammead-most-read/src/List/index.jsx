@@ -1,14 +1,14 @@
 import React from 'react';
 import styled from 'styled-components';
-import { oneOf, number, node } from 'prop-types';
+import { oneOf, number, node, bool } from 'prop-types';
 import {
   GEL_GROUP_2_SCREEN_WIDTH_MAX,
   GEL_GROUP_5_SCREEN_WIDTH_MIN,
 } from '@bbc/gel-foundations/breakpoints';
 import Grid from '@bbc/psammead-grid';
-import { mostReadListGridProps } from '../testHelpers/gridProps';
+import { mostReadListGridProps } from '../utilities/gridProps';
 
-const StyledGrid = styled(Grid).attrs({
+const TwoColumnGrid = styled(Grid).attrs({
   role: 'list',
 })`
   list-style-type: none;
@@ -25,6 +25,9 @@ const StyledGrid = styled(Grid).attrs({
       [col-start] auto [col-end]
     );
   }
+`;
+
+const MultiColumnGrid = styled(TwoColumnGrid)`
   @media (min-width: ${GEL_GROUP_5_SCREEN_WIDTH_MIN}) {
     grid-auto-flow: row;
     grid-template-rows: repeat(
@@ -34,25 +37,30 @@ const StyledGrid = styled(Grid).attrs({
   }
 `;
 
-const MostReadList = ({ numberOfItems, dir, children }) => (
-  <StyledGrid
-    {...mostReadListGridProps}
-    dir={dir}
-    numberOfItems={numberOfItems}
-    forwardedAs="ol"
-  >
-    {children}
-  </StyledGrid>
-);
+const MostReadList = ({ numberOfItems, dir, maxTwoColumns, children }) => {
+  const MostReadListGrid = maxTwoColumns ? TwoColumnGrid : MultiColumnGrid;
+  return (
+    <MostReadListGrid
+      {...mostReadListGridProps(maxTwoColumns)}
+      dir={dir}
+      numberOfItems={numberOfItems}
+      forwardedAs="ol"
+    >
+      {children}
+    </MostReadListGrid>
+  );
+};
 
 MostReadList.propTypes = {
-  numberOfItems: number.isRequired,
   children: node.isRequired,
   dir: oneOf(['rtl', 'ltr']),
+  maxTwoColumns: bool,
+  numberOfItems: number.isRequired,
 };
 
 MostReadList.defaultProps = {
   dir: 'ltr',
+  maxTwoColumns: false,
 };
 
 export default MostReadList;

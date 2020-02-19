@@ -40,9 +40,6 @@ const renderSchedule = ({
     durationLabel,
   } = program;
 
-  // we should format the start-time here and pass the formatted start-time to the  program card
-  const formattedStartTime = 1566914061212;
-
   return (
     <>
       <StartTimeWrapper>
@@ -64,10 +61,12 @@ const renderSchedule = ({
         dir={dir}
         brandTitle={brandTitle}
         episodeTitle={episodeTitle}
-        startTime={formattedStartTime}
+        startTime={startTime}
         state={state}
         link={link}
         stateLabel={stateLabel}
+        timezone={timezone}
+        locale={locale}
       />
     </>
   );
