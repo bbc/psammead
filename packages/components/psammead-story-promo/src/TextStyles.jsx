@@ -66,7 +66,7 @@ const TextGridColumnsLeadingStory = css`
 `;
 
 const TextGridFallbackTopStory = css`
-  @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) and (max-width: ${GEL_GROUP_3_SCREEN_WIDTH_MAX}) {
+  @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
     width: ${halfWidthColumnsMaxScaleable};
     padding: 0 ${GEL_SPACING_DBL};
   }
@@ -96,12 +96,13 @@ const TextGridFallback = css`
 `;
 
 const TextGridFallBackLeadingStory = css`
-  width: ${fullWidthColumnsMaxScaleable};
+  ${fullWidthColumnsMaxScaleable};
   @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
-    width: ${gridFallbackImageWidthHalf};
+    display: inline-block;
+    ${gridFallbackImageWidthHalf};
   }
   @media (min-width: ${GEL_GROUP_4_SCREEN_WIDTH_MIN}) {
-    width: ${gridFallbackImageWidthOneThird};
+    ${gridFallbackImageWidthOneThird};
   }
 `;
 

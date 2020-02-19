@@ -2,7 +2,6 @@ import styled, { css } from 'styled-components';
 import { GEL_SPACING } from '@bbc/gel-foundations/spacings';
 import {
   GEL_GROUP_3_SCREEN_WIDTH_MIN,
-  GEL_GROUP_3_SCREEN_WIDTH_MAX,
   GEL_GROUP_4_SCREEN_WIDTH_MIN,
   GEL_GROUP_4_SCREEN_WIDTH_MAX,
 } from '@bbc/gel-foundations/breakpoints';
@@ -57,7 +56,7 @@ const ImageGridFallbackTopStory = css`
   margin-bottom: ${GEL_SPACING};
   width: ${fullWidthColumnsMaxScaleable};
 
-  @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) and (max-width: ${GEL_GROUP_3_SCREEN_WIDTH_MAX}) {
+  @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
     ${gridFallbackImageWidthHalf};
     margin-bottom: 0;
   }
@@ -80,11 +79,12 @@ const ImageGridFallbackLeadingStory = css`
   width: ${fullWidthColumnsMaxScaleable};
 
   @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
-    width: ${gridFallbackImageWidthHalf};
+    display: inline-block;
+    ${gridFallbackImageWidthHalf};
   }
 
   @media (min-width: ${GEL_GROUP_4_SCREEN_WIDTH_MIN}) {
-    width: ${gridFallbackImageWidthTwoThirds};
+    ${gridFallbackImageWidthTwoThirds};
   }
 `;
 
