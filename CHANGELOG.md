@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 2.0.87 | [PR#](https://github.com/bbc/psammead/pull/) Bumping yargs-parser to 17.0.0 |
 | 2.0.86 | [PR#3158](https://github.com/bbc/psammead/pull/3158) Talos - Bump Dependencies - @bbc/psammead-calendars |
 | 2.0.85 | [PR#3157](https://github.com/bbc/psammead/pull/3157) Bumping dependencies |
 | 2.0.84 | [PR#3153](https://github.com/bbc/psammead/pull/3153) Talos - Bump Dependencies - @bbc/psammead-brand, @bbc/psammead-timestamp-container |
