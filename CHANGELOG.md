@@ -3,7 +3,8 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
-| 2.0.86 | [PR#3159](https://github.com/bbc/psammead/pull/3159) Talos - Bump Dependencies - @bbc/psammead-test-helpers |
+| 2.0.87 | [PR#3159](https://github.com/bbc/psammead/pull/3159) Talos - Bump Dependencies - @bbc/psammead-test-helpers |
+| 2.0.86 | [PR#3158](https://github.com/bbc/psammead/pull/3158) Talos - Bump Dependencies - @bbc/psammead-calendars |
 | 2.0.85 | [PR#3157](https://github.com/bbc/psammead/pull/3157) Bumping dependencies |
 | 2.0.84 | [PR#3153](https://github.com/bbc/psammead/pull/3153) Talos - Bump Dependencies - @bbc/psammead-brand, @bbc/psammead-timestamp-container |
 | 2.0.83 | [PR#3151](https://github.com/bbc/psammead/pull/3151) Talos - Bump Dependencies - @bbc/psammead-brand, @bbc/psammead-caption, @bbc/psammead-copyright, @bbc/psammead-grid, @bbc/psammead-media-indicator, @bbc/psammead-paragraph, @bbc/psammead-storybook-helpers, @bbc/psammead-timestamp, @bbc/psammead-timestamp-container |
