@@ -154,6 +154,7 @@ const generateStory = ({
 
   return (
     <StoryPromo
+      dir={dir}
       image={Img}
       info={Info}
       promoType={promoType}

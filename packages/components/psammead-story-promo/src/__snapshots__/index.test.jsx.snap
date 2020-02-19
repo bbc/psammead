@@ -75,19 +75,21 @@ exports[`StoryPromo - Leading Story should render correctly 1`] = `
 
 @media (min-width:37.5rem) {
   .c5 {
-    width: width:calc(50% - 0.5rem);
+    width: calc(50% - 0.5rem);
+    padding-left: 0.5rem;
   }
 }
 
 @media (min-width:63rem) {
   .c5 {
-    width: width:calc(66.67% - 0.5rem);
+    width: calc(66.67% - 0.5rem);
   }
 }
 
 @supports (grid-template-columns:fit-content(200px)) {
   .c5 {
     width: initial;
+    padding: 0;
     grid-template-columns: repeat(6,1fr);
     grid-column-end: span 6;
   }
@@ -95,13 +97,14 @@ exports[`StoryPromo - Leading Story should render correctly 1`] = `
 
 @media (min-width:37.5rem) {
   .c1 {
-    width: width:calc(50% - 0.5rem);
+    padding-right: 0.5rem;
+    width: calc(50% - 0.5rem);
   }
 }
 
 @media (min-width:63rem) {
   .c1 {
-    width: width:calc(33.33% - 0.5rem);
+    width: calc(33.33% - 0.5rem);
   }
 }
 
@@ -110,6 +113,7 @@ exports[`StoryPromo - Leading Story should render correctly 1`] = `
     display: block;
     width: initial;
     padding: initial;
+    padding: 0;
     width: 100%;
     grid-template-columns: repeat(6,1fr);
     grid-column-end: span 6;
@@ -177,6 +181,7 @@ exports[`StoryPromo - Leading Story should render correctly 1`] = `
 >
   <div
     class="c1"
+    dir="ltr"
   >
     <h3
       class="c2"
@@ -199,6 +204,7 @@ exports[`StoryPromo - Leading Story should render correctly 1`] = `
   </div>
   <div
     class="c5"
+    dir="ltr"
   >
     <div
       class="c6"
@@ -347,19 +353,21 @@ exports[`StoryPromo - Leading Story should render with Media Indicator correctly
 
 @media (min-width:37.5rem) {
   .c5 {
-    width: width:calc(50% - 0.5rem);
+    width: calc(50% - 0.5rem);
+    padding-left: 0.5rem;
   }
 }
 
 @media (min-width:63rem) {
   .c5 {
-    width: width:calc(66.67% - 0.5rem);
+    width: calc(66.67% - 0.5rem);
   }
 }
 
 @supports (grid-template-columns:fit-content(200px)) {
   .c5 {
     width: initial;
+    padding: 0;
     grid-template-columns: repeat(6,1fr);
     grid-column-end: span 6;
   }
@@ -367,13 +375,14 @@ exports[`StoryPromo - Leading Story should render with Media Indicator correctly
 
 @media (min-width:37.5rem) {
   .c1 {
-    width: width:calc(50% - 0.5rem);
+    padding-right: 0.5rem;
+    width: calc(50% - 0.5rem);
   }
 }
 
 @media (min-width:63rem) {
   .c1 {
-    width: width:calc(33.33% - 0.5rem);
+    width: calc(33.33% - 0.5rem);
   }
 }
 
@@ -382,6 +391,7 @@ exports[`StoryPromo - Leading Story should render with Media Indicator correctly
     display: block;
     width: initial;
     padding: initial;
+    padding: 0;
     width: 100%;
     grid-template-columns: repeat(6,1fr);
     grid-column-end: span 6;
@@ -449,6 +459,7 @@ exports[`StoryPromo - Leading Story should render with Media Indicator correctly
 >
   <div
     class="c1"
+    dir="ltr"
   >
     <h3
       class="c2"
@@ -471,6 +482,7 @@ exports[`StoryPromo - Leading Story should render with Media Indicator correctly
   </div>
   <div
     class="c5"
+    dir="ltr"
   >
     <div
       class="c6"
@@ -588,7 +600,7 @@ exports[`StoryPromo - Top Story should render correctly 1`] = `
   color: #6E6E73;
 }
 
-@media (min-width:37.5rem) and (max-width:62.9375rem) {
+@media (min-width:37.5rem) {
   .c1 {
     width: calc(50% - 0.5rem);
     margin-bottom: 0;
@@ -608,7 +620,7 @@ exports[`StoryPromo - Top Story should render correctly 1`] = `
   }
 }
 
-@media (min-width:37.5rem) and (max-width:62.9375rem) {
+@media (min-width:37.5rem) {
   .c3 {
     width: 50%;
     padding: 0 1rem;
@@ -678,6 +690,7 @@ exports[`StoryPromo - Top Story should render correctly 1`] = `
 >
   <div
     class="c1"
+    dir="ltr"
   >
     <div
       class="c2"
@@ -690,6 +703,7 @@ exports[`StoryPromo - Top Story should render correctly 1`] = `
   </div>
   <div
     class="c3"
+    dir="ltr"
   >
     <h3
       class="c4"
@@ -846,7 +860,7 @@ exports[`StoryPromo - Top Story should render with Media Indicator correctly 1`]
   }
 }
 
-@media (min-width:37.5rem) and (max-width:62.9375rem) {
+@media (min-width:37.5rem) {
   .c1 {
     width: calc(50% - 0.5rem);
     margin-bottom: 0;
@@ -866,7 +880,7 @@ exports[`StoryPromo - Top Story should render with Media Indicator correctly 1`]
   }
 }
 
-@media (min-width:37.5rem) and (max-width:62.9375rem) {
+@media (min-width:37.5rem) {
   .c8 {
     width: 50%;
     padding: 0 1rem;
@@ -936,6 +950,7 @@ exports[`StoryPromo - Top Story should render with Media Indicator correctly 1`]
 >
   <div
     class="c1"
+    dir="ltr"
   >
     <div
       class="c2"
@@ -979,6 +994,7 @@ exports[`StoryPromo - Top Story should render with Media Indicator correctly 1`]
   </div>
   <div
     class="c8"
+    dir="ltr"
   >
     <h3
       class="c9"
@@ -1182,7 +1198,7 @@ exports[`StoryPromo - Top Story should render with multiple Index Alsos correctl
   }
 }
 
-@media (min-width:37.5rem) and (max-width:62.9375rem) {
+@media (min-width:37.5rem) {
   .c1 {
     width: calc(50% - 0.5rem);
     margin-bottom: 0;
@@ -1202,7 +1218,7 @@ exports[`StoryPromo - Top Story should render with multiple Index Alsos correctl
   }
 }
 
-@media (min-width:37.5rem) and (max-width:62.9375rem) {
+@media (min-width:37.5rem) {
   .c3 {
     width: 50%;
     padding: 0 1rem;
@@ -1286,6 +1302,7 @@ exports[`StoryPromo - Top Story should render with multiple Index Alsos correctl
 >
   <div
     class="c1"
+    dir="ltr"
   >
     <div
       class="c2"
@@ -1298,6 +1315,7 @@ exports[`StoryPromo - Top Story should render with multiple Index Alsos correctl
   </div>
   <div
     class="c3"
+    dir="ltr"
   >
     <h3
       class="c4"
@@ -1572,7 +1590,7 @@ exports[`StoryPromo - Top Story should render with one Index Also correctly 1`] 
   }
 }
 
-@media (min-width:37.5rem) and (max-width:62.9375rem) {
+@media (min-width:37.5rem) {
   .c1 {
     width: calc(50% - 0.5rem);
     margin-bottom: 0;
@@ -1592,7 +1610,7 @@ exports[`StoryPromo - Top Story should render with one Index Also correctly 1`] 
   }
 }
 
-@media (min-width:37.5rem) and (max-width:62.9375rem) {
+@media (min-width:37.5rem) {
   .c3 {
     width: 50%;
     padding: 0 1rem;
@@ -1676,6 +1694,7 @@ exports[`StoryPromo - Top Story should render with one Index Also correctly 1`] 
 >
   <div
     class="c1"
+    dir="ltr"
   >
     <div
       class="c2"
@@ -1688,6 +1707,7 @@ exports[`StoryPromo - Top Story should render with one Index Also correctly 1`] 
   </div>
   <div
     class="c3"
+    dir="ltr"
   >
     <h3
       class="c4"
@@ -1954,6 +1974,7 @@ exports[`StoryPromo should render Live promo correctly 1`] = `
 >
   <div
     class="c1"
+    dir="ltr"
   >
     <div
       class="c2"
@@ -1966,6 +1987,7 @@ exports[`StoryPromo should render Live promo correctly 1`] = `
   </div>
   <div
     class="c3"
+    dir="ltr"
   >
     <h3
       class="c4"
@@ -2193,6 +2215,7 @@ exports[`StoryPromo should render a RTL Live promo correctly 1`] = `
 >
   <div
     class="c1"
+    dir="ltr"
   >
     <div
       class="c2"
@@ -2205,6 +2228,7 @@ exports[`StoryPromo should render a RTL Live promo correctly 1`] = `
   </div>
   <div
     class="c3"
+    dir="ltr"
   >
     <h3
       class="c4"
@@ -2411,6 +2435,7 @@ exports[`StoryPromo should render correctly 1`] = `
 >
   <div
     class="c1"
+    dir="ltr"
   >
     <div
       class="c2"
@@ -2423,6 +2448,7 @@ exports[`StoryPromo should render correctly 1`] = `
   </div>
   <div
     class="c3"
+    dir="ltr"
   >
     <h3
       class="c4"
@@ -2681,6 +2707,7 @@ exports[`StoryPromo with Media Indicator should render a RTL promo with media in
 >
   <div
     class="c1"
+    dir="ltr"
   >
     <div
       class="c2"
@@ -2724,6 +2751,7 @@ exports[`StoryPromo with Media Indicator should render a RTL promo with media in
   </div>
   <div
     class="c8"
+    dir="ltr"
   >
     <h3
       class="c9"
@@ -2982,6 +3010,7 @@ exports[`StoryPromo with Media Indicator should render correctly 1`] = `
 >
   <div
     class="c1"
+    dir="ltr"
   >
     <div
       class="c2"
@@ -3025,6 +3054,7 @@ exports[`StoryPromo with Media Indicator should render correctly 1`] = `
   </div>
   <div
     class="c8"
+    dir="ltr"
   >
     <h3
       class="c9"
