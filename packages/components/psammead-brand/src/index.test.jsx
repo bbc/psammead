@@ -109,7 +109,7 @@ describe('Brand', () => {
       </ScriptLink>
     );
 
-    const skipLink = (
+    const skipLinkComponent = (
       <SkipLink service="news" script={latin} href="#content">
         Skip to content
       </SkipLink>
@@ -125,7 +125,7 @@ describe('Brand', () => {
         url="https://www.bbc.co.uk/news"
         backgroundColour={C_POSTBOX}
         logoColour={C_WHITE}
-        skipLink={skipLink}
+        skipLink={skipLinkComponent}
         data-brand="header"
         scriptLink={scriptLinkComponent}
       />,
