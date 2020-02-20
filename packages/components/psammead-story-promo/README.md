@@ -20,6 +20,7 @@ The `StoryPromo` component is designed to be used on 'index' pages, which are pa
 | image    | node   | no       | Null    | `<img>`          |
 | info     | node   | yes      | N/A     | `<h2>Title</h2>` |
 | mediaIndicator     | node   | no      | null     | `<MediaIndicator duration="2:15" datetime="PT2M15S" offscreenText="Video 2 minutes 15 seconds" />` |
+| dir      | string | no | `ltr` | `rtl` |
 | displayImage | boolean | no | true | false |
 | promoType | string | no | `regular` | `top` |
 

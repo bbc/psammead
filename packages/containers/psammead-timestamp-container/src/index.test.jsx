@@ -72,8 +72,8 @@ describe('Timestamp', () => {
       dateTimeFormat="YYYY-MM-DD"
       format="D MMMM YYYY"
       isRelative={false}
-      prefix="Prefix here "
-      suffix=" suffix here"
+      prefix="Prefix here"
+      suffix="suffix here"
       script={latin}
       service="news"
     />,

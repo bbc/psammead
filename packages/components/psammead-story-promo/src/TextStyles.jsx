@@ -19,6 +19,8 @@ const fullWidthColumnsMaxScaleable = `100%`;
 
 const halfWidthColumnsMaxScaleable = `50%`;
 
+const paddingDir = ({ dir }) => `padding-${dir === 'rtl' ? 'left' : 'right'}`;
+
 const TextGridColumnsTopStory = css`
   grid-column: 1 / span 6;
 
@@ -42,6 +44,7 @@ ${({ displayImage }) => !displayImage && `grid-column: 1 / span 6;`}
 `;
 
 const TextGridColumnsLeadingStory = css`
+  padding: 0;
   width: 100%;
   grid-template-columns: repeat(6, 1fr);
   grid-column-end: span 6;
@@ -90,6 +93,7 @@ const TextGridFallback = css`
 const TextGridFallBackLeadingStory = css`
   width: ${fullWidthColumnsMaxScaleable};
   @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
+    ${paddingDir}: ${GEL_SPACING};
     width: ${halfWidthColumnsMaxScaleable};
   }
   @media (min-width: ${GEL_GROUP_4_SCREEN_WIDTH_MIN}) {
