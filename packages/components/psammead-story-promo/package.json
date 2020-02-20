@@ -1,6 +1,6 @@
 {
   "name": "@bbc/psammead-story-promo",
-  "version": "4.0.0-alpha.13",
+  "version": "4.0.0",
   "main": "dist/index.js",
   "module": "esm/index.js",
   "sideEffects": false,
@@ -31,8 +31,5 @@
     "bbc",
     "story",
     "promo"
-  ],
-  "publishConfig": {
-    "tag": "alpha"
-  }
+  ]
 }
