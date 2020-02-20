@@ -1,6 +1,6 @@
 {
   "name": "@bbc/psammead-content-anchor",
-  "version": "1.0.0-alpha.2",
+  "version": "1.0.0-alpha.3",
   "main": "dist/index.js",
   "module": "esm/index.js",
   "sideEffects": false,
@@ -26,7 +26,7 @@
     "react": "^16.11.0"
   },
   "devDependencies": {
-    "@bbc/psammead-headings": "^3.1.26"
+    "@bbc/psammead-headings": "^3.1.28"
   },
   "publishConfig": {
     "tag": "alpha"
