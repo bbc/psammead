@@ -18,6 +18,10 @@ const fullWidthColumnsMaxScaleable = `100%`;
 
 const halfWidthColumnsMaxScaleable = `50%`;
 
+const gridFallbackImageWidth = css`
+  width: calc(${halfWidthColumnsMaxScaleable} - ${GEL_SPACING});
+`;
+
 const ImageGridColumnsTopStory = css`
   grid-column: 1 / span 6;
 
@@ -51,12 +55,12 @@ const ImageGridFallbackTopStory = css`
   width: ${fullWidthColumnsMaxScaleable};
 
   @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
-    width: ${halfWidthColumnsMaxScaleable};
+    ${gridFallbackImageWidth};
     margin-bottom: 0;
   }
 
   @media (min-width: ${GEL_GROUP_4_SCREEN_WIDTH_MIN}) {
-    width: ${halfWidthColumnsMaxScaleable};
+    ${gridFallbackImageWidth};
   }
 `;
 
@@ -75,8 +79,8 @@ const ImageGridFallbackLeadingStory = css`
   width: ${fullWidthColumnsMaxScaleable};
 
   @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
-    width: ${halfWidthColumnsMaxScaleable};
     ${paddingDir}: ${GEL_SPACING};
+    width: ${halfWidthColumnsMaxScaleable};
   }
 
   @media (min-width: ${GEL_GROUP_4_SCREEN_WIDTH_MIN}) {
