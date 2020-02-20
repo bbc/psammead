@@ -59,6 +59,7 @@ const wrapperStyles = {
 };
 
 const StoryPromoWrapper = styled.div`
+  position: relative; /* This is needed to contain the faux-block-link to the Story Promo */
   @supports (${grid}) {
     display: grid;
     grid-template-columns: repeat(6, 1fr);

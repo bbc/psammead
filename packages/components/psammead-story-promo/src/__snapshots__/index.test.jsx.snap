@@ -14,6 +14,10 @@ exports[`StoryPromo - Leading Story should render correctly 1`] = `
   width: 100%;
 }
 
+.c0 {
+  position: relative;
+}
+
 .c6 {
   position: relative;
 }
@@ -258,6 +262,10 @@ exports[`StoryPromo - Leading Story should render with Media Indicator correctly
   display: inline-block;
   vertical-align: top;
   width: 100%;
+}
+
+.c0 {
+  position: relative;
 }
 
 .c6 {
@@ -533,6 +541,10 @@ exports[`StoryPromo - Top Story should render correctly 1`] = `
   vertical-align: top;
 }
 
+.c0 {
+  position: relative;
+}
+
 .c2 {
   position: relative;
 }
@@ -759,6 +771,10 @@ exports[`StoryPromo - Top Story should render with Media Indicator correctly 1`]
 .c8 {
   display: inline-block;
   vertical-align: top;
+}
+
+.c0 {
+  position: relative;
 }
 
 .c2 {
@@ -1060,6 +1076,10 @@ exports[`StoryPromo - Top Story should render with multiple Index Alsos correctl
 .c3 {
   display: inline-block;
   vertical-align: top;
+}
+
+.c0 {
+  position: relative;
 }
 
 .c2 {
@@ -1456,6 +1476,10 @@ exports[`StoryPromo - Top Story should render with one Index Also correctly 1`] 
   vertical-align: top;
 }
 
+.c0 {
+  position: relative;
+}
+
 .c2 {
   position: relative;
 }
@@ -1790,6 +1814,10 @@ exports[`StoryPromo should render Live promo correctly 1`] = `
   padding: 0 0.5rem;
 }
 
+.c0 {
+  position: relative;
+}
+
 .c2 {
   position: relative;
 }
@@ -2027,6 +2055,10 @@ exports[`StoryPromo should render a RTL Live promo correctly 1`] = `
   padding: 0 0.5rem;
 }
 
+.c0 {
+  position: relative;
+}
+
 .c2 {
   position: relative;
 }
@@ -2250,6 +2282,10 @@ exports[`StoryPromo should render correctly 1`] = `
   vertical-align: top;
   width: 66.67%;
   padding: 0 0.5rem;
+}
+
+.c0 {
+  position: relative;
 }
 
 .c2 {
@@ -2481,6 +2517,10 @@ exports[`StoryPromo with Media Indicator should render a RTL promo with media in
   vertical-align: top;
   width: 66.67%;
   padding: 0 0.5rem;
+}
+
+.c0 {
+  position: relative;
 }
 
 .c2 {
@@ -2780,6 +2820,10 @@ exports[`StoryPromo with Media Indicator should render correctly 1`] = `
   vertical-align: top;
   width: 66.67%;
   padding: 0 0.5rem;
+}
+
+.c0 {
+  position: relative;
 }
 
 .c2 {
