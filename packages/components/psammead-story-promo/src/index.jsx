@@ -59,7 +59,6 @@ const wrapperStyles = {
 };
 
 const StoryPromoWrapper = styled.div`
-  position: relative;
   @supports (${grid}) {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
