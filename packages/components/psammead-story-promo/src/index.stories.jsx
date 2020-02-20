@@ -177,6 +177,7 @@ const generateStory = ({
 /* eslint-disable-next-line no-shadow */
 const generate2FeatureStory = () => args => (
   <Grid
+    dir={args.dir}
     columns={{
       group0: 8,
       group1: 8,
@@ -188,6 +189,7 @@ const generate2FeatureStory = () => args => (
     enableGelGutters
   >
     <Grid
+      dir={args.dir}
       item
       columns={{
         group0: 8,
@@ -201,6 +203,7 @@ const generate2FeatureStory = () => args => (
       {generateStory({ promoType: 'leading' })(args)}
     </Grid>
     <Grid
+      dir={args.dir}
       columns={{
         group0: 8,
         group1: 8,
@@ -212,6 +215,7 @@ const generate2FeatureStory = () => args => (
       enableGelGutters
     >
       <Grid
+        dir={args.dir}
         item
         columns={{
           group0: 8,
