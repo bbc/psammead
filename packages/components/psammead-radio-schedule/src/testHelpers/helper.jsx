@@ -19,7 +19,7 @@ const getSchedule = (service, withLongSummary) => {
   return stateTypes.map((state, index) => ({
     id: index,
     state,
-    stateLabel: sentenceCase(state),
+    stateLabel: service === 'arabic' ? 'مباشر' : sentenceCase(state),
     startTime: 1566914061212,
     link: articlePath,
     brandTitle: text,
@@ -29,7 +29,7 @@ const getSchedule = (service, withLongSummary) => {
         ? `${longText} ${longText}`
         : longText,
     duration: 'PT45M',
-    durationLabel: 'Duration',
+    durationLabel: service === 'arabic' ? 'المدة الزمنية' : 'Duration',
   }));
 };
 
@@ -45,7 +45,6 @@ export const renderProgramCard = ({
   const { text, articlePath, longText, dir, locale, timezone } = TEXT_VARIANTS[
     service
   ];
-  const liveStateLabel = service === 'arabic' ? 'مباشر' : stateLabel;
 
   return (
     <ProgramCard
@@ -59,8 +58,8 @@ export const renderProgramCard = ({
       startTime={startTime}
       state={state}
       link={articlePath}
-      durationLabel={durationLabel}
-      stateLabel={liveStateLabel}
+      durationLabel={dir === 'rtl' ? 'المدة الزمنية' : durationLabel}
+      stateLabel={dir === 'rtl' ? 'مباشر' : stateLabel}
       timezone={timezone}
       locale={locale}
     />
