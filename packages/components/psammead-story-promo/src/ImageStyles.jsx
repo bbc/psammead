@@ -35,6 +35,7 @@ const ImageGridColumns = css`
 `;
 
 const ImageGridColumnsLeadingStory = css`
+  padding: 0;
   grid-template-columns: repeat(6, 1fr);
   grid-column-end: span 6;
 
@@ -72,10 +73,13 @@ const ImageGridFallback = css`
   }
 `;
 
+const paddingDir = ({ dir }) => `padding-${dir === 'rtl' ? 'right' : 'left'}`;
+
 const ImageGridFallbackLeadingStory = css`
   width: ${fullWidthColumnsMaxScaleable};
 
   @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
+    ${paddingDir}: ${GEL_SPACING};
     width: ${halfWidthColumnsMaxScaleable};
   }
 

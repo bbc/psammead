@@ -3,7 +3,8 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
-| 0.1.0-alpha.14 | [PR#3160](https://github.com/bbc/psammead/pull/3160) Uniformise visually-hidden state label |
+| 0.1.0-alpha.15 | [PR#3160](https://github.com/bbc/psammead/pull/3160) Uniformise visually-hidden state label |
+| 0.1.0-alpha.14 | [PR#3164](https://github.com/bbc/psammead/pull/3164) Talos - Bump Dependencies - @bbc/psammead-timestamp-container |
 | 0.1.0-alpha.13 | [PR#3153](https://github.com/bbc/psammead/pull/3153) Talos - Bump Dependencies - @bbc/psammead-timestamp-container |
 | 0.1.0-alpha.12 | [PR#3132](https://github.com/bbc/psammead/pull/3132) Render correct hidden `startTime` in RadioSchedule component |
 | 0.1.0-alpha.11 | [PR#3151](https://github.com/bbc/psammead/pull/3151) Talos - Bump Dependencies - @bbc/psammead-timestamp-container |

@@ -59,7 +59,7 @@ const wrapperStyles = {
 };
 
 const StoryPromoWrapper = styled.div`
-  position: relative;
+  position: relative; /* This is needed to contain the faux-block-link to the Story Promo */
   @supports (${grid}) {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
@@ -250,13 +250,14 @@ const StoryPromo = ({
   image,
   info,
   promoType,
+  dir,
   displayImage,
   mediaIndicator,
   mediaIndicatorIsInline,
   ...props
 }) => {
   const renderImage = displayImage && (
-    <ImageGridItem promoType={promoType}>
+    <ImageGridItem dir={dir} promoType={promoType}>
       <ImageContentsWrapper>
         {image}
         {mediaIndicator && (
@@ -272,7 +273,7 @@ const StoryPromo = ({
   );
 
   const renderText = (
-    <TextGridItem promoType={promoType} displayImage={displayImage}>
+    <TextGridItem promoType={promoType} dir={dir} displayImage={displayImage}>
       {!displayImage && mediaIndicator}
       {info}
     </TextGridItem>
@@ -296,6 +297,7 @@ const StoryPromo = ({
 };
 
 StoryPromo.propTypes = {
+  dir: oneOf(['ltr', 'rtl']),
   image: node.isRequired,
   info: node.isRequired,
   promoType: PROMO_TYPES,
@@ -305,6 +307,7 @@ StoryPromo.propTypes = {
 };
 
 StoryPromo.defaultProps = {
+  dir: 'ltr',
   promoType: 'regular',
   displayImage: true,
   mediaIndicator: null,
