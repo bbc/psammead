@@ -236,9 +236,8 @@ exports[`ProgramCard should render correctly for live 1`] = `
             lang="en-GB"
           >
              Live
-            , 
+            ,
           </span>
-          )
           <span>
              
             Could a computer ever create better art than a human?
@@ -507,9 +506,8 @@ exports[`ProgramCard should render correctly for next 1`] = `
         <span
           class="c4"
         >
-          , 
+          ,
         </span>
-        )
         <span>
            
           Could a computer ever create better art than a human?

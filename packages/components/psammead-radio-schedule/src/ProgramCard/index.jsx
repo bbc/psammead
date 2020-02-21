@@ -165,9 +165,8 @@ const renderHeaderContent = ({
           </LabelWrapper>
           <VisuallyHiddenText {...hiddenTextProps}>
             {stateLabel === 'Live' && ` ${stateLabel}`}
-            {`, `}
+            {`,`}
           </VisuallyHiddenText>
-          )
         </>
       )}
       <span>
