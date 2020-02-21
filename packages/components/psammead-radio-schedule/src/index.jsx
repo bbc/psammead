@@ -27,7 +27,6 @@ const renderSchedule = ({
   timezone,
   locale,
   program,
-  offscreenLiveText,
 }) => {
   const {
     state,
@@ -66,7 +65,6 @@ const renderSchedule = ({
         state={state}
         link={link}
         stateLabel={stateLabel}
-        offscreenLiveText={offscreenLiveText}
         timezone={timezone}
         locale={locale}
       />
@@ -134,7 +132,6 @@ const programPropTypes = shape({
   summary: string.isRequired,
   duration: string.isRequired,
   durationLabel: string.isRequired,
-  offscreenLiveText: string,
 });
 
 const sharedProps = {
