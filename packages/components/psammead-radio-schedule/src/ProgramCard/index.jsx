@@ -136,7 +136,6 @@ const renderHeaderContent = ({
   startTime,
   timezone,
   locale,
-  offscreenLiveText,
 }) => {
   const isOnDemand = state === 'onDemand';
   const isLive = state === 'live';
@@ -164,11 +163,11 @@ const renderHeaderContent = ({
           >
             {`${stateLabel.toUpperCase()}`}
           </LabelWrapper>
-          {offscreenLiveText && (
-            <VisuallyHiddenText {...hiddenTextProps}>
-              {isLive && ` ${offscreenLiveText}, `}
-            </VisuallyHiddenText>
-          )}
+          <VisuallyHiddenText {...hiddenTextProps}>
+            {stateLabel === 'Live' && ` ${stateLabel}`}
+            {`, `}
+          </VisuallyHiddenText>
+          )
         </>
       )}
       <span>
@@ -204,7 +203,6 @@ const ProgramCard = ({
   link,
   timezone,
   locale,
-  offscreenLiveText,
 }) => (
   <CardWrapper>
     <TextWrapper>
@@ -224,7 +222,6 @@ const ProgramCard = ({
           startTime,
           timezone,
           locale,
-          offscreenLiveText,
         })}
       </HeadingWrapper>
       <SummaryWrapper service={service} script={script}>
@@ -260,13 +257,11 @@ const programCardPropTypes = {
   startTime: number.isRequired,
   timezone: string,
   locale: string,
-  offscreenLiveText: string,
 };
 
 const programCardDefaultPropTypes = {
   timezone: 'Europe/London',
   locale: 'en-gb',
-  offscreenLiveText: null,
 };
 
 renderHeaderContent.propTypes = {

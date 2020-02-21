@@ -45,7 +45,8 @@ export const renderProgramCard = ({
   const { text, articlePath, longText, dir, locale, timezone } = TEXT_VARIANTS[
     service
   ];
-  const offscreenLiveText = state === 'live' ? 'Live' : null;
+  const liveStateLabel = service === 'arabic' ? 'مباشر' : stateLabel;
+
   return (
     <ProgramCard
       service={service}
@@ -59,10 +60,9 @@ export const renderProgramCard = ({
       state={state}
       link={articlePath}
       durationLabel={durationLabel}
-      stateLabel={stateLabel}
+      stateLabel={liveStateLabel}
       timezone={timezone}
       locale={locale}
-      offscreenLiveText={offscreenLiveText}
     />
   );
 };
