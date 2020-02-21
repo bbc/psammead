@@ -202,12 +202,12 @@ const Bulletin = ({
             <span role="text">
               {offScreenText && (
                 <VisuallyHiddenText lang={lang}>
-                  {`${offScreenText},`}
+                  {`${offScreenText}, `}
                 </VisuallyHiddenText>
               )}
               {isLive && (
                 <LiveLabel service={service} dir={dir}>
-                  {liveText}
+                  {`${liveText} `}
                 </LiveLabel>
               )}
               <span>{headlineText}</span>
