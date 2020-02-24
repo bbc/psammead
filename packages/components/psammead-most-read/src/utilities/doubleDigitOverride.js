@@ -109,7 +109,7 @@ export const doubleDigitOverride = {
   },
   pidgin: {
     group0: '2rem',
-    group1: '2rem',
+    group1: '2.6rem',
     group2: '2.75rem',
     group3: '3.75rem',
     group5: '3.9rem',
