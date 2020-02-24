@@ -3,7 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
-| 6.0.5 | Add `cursor: pointer` to Menu button |
+| 6.0.5 | [PR#3177](https://github.com/bbc/psammead/pull/3177) Add `cursor: pointer` to Menu button |
 | 6.0.4 | [PR#3135](https://github.com/bbc/psammead/pull/3135) Talos - Bump Dependencies - @bbc/gel-foundations |
 | 6.0.3 | [PR#3129](https://github.com/bbc/psammead/pull/3129) Talos - Bump Dependencies - @bbc/gel-foundations |
 | 6.0.2 | [PR#3059](https://github.com/bbc/psammead/pull/3059) Update gradient width on scrollable navigation |
