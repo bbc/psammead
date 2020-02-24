@@ -45,6 +45,8 @@ export const renderProgramCard = ({
   const { text, articlePath, longText, dir, locale, timezone } = TEXT_VARIANTS[
     service
   ];
+  const programDurationLabel = dir === 'rtl' ? 'المدة الزمنية' : durationLabel;
+  const programStateLabel = dir === 'rtl' ? 'مباشر' : stateLabel;
 
   return (
     <ProgramCard
@@ -58,8 +60,8 @@ export const renderProgramCard = ({
       startTime={startTime}
       state={state}
       link={articlePath}
-      durationLabel={dir === 'rtl' ? 'المدة الزمنية' : durationLabel}
-      stateLabel={dir === 'rtl' ? 'مباشر' : stateLabel}
+      durationLabel={programDurationLabel}
+      stateLabel={programStateLabel}
       timezone={timezone}
       locale={locale}
     />
