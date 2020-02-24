@@ -59,7 +59,7 @@ const LiveComponent = ({ headline, service, dir }) => (
     <LiveLabel service={service} dir={dir}>
       LIVE
     </LiveLabel>
-    <VisuallyHiddenText lang="en-GB">Live, </VisuallyHiddenText>
+    <VisuallyHiddenText lang="en-GB">{` Live, `}</VisuallyHiddenText>
     {headline}
   </span>
 );
@@ -68,7 +68,7 @@ const LiveComponent = ({ headline, service, dir }) => (
 const HiddenText = ({ type, headline }) => (
   /* eslint-disable-next-line jsx-a11y/aria-role */
   <span role="text">
-    <VisuallyHiddenText>{type}, </VisuallyHiddenText>
+    <VisuallyHiddenText>{`${type}, `}</VisuallyHiddenText>
     <span>{headline}</span>
     <VisuallyHiddenText>, 2,15</VisuallyHiddenText>
   </span>
@@ -154,6 +154,7 @@ const generateStory = ({
 
   return (
     <StoryPromo
+      dir={dir}
       image={Img}
       info={Info}
       promoType={promoType}
@@ -176,6 +177,7 @@ const generateStory = ({
 /* eslint-disable-next-line no-shadow */
 const generate2FeatureStory = () => args => (
   <Grid
+    dir={args.dir}
     columns={{
       group0: 8,
       group1: 8,
@@ -187,6 +189,7 @@ const generate2FeatureStory = () => args => (
     enableGelGutters
   >
     <Grid
+      dir={args.dir}
       item
       columns={{
         group0: 8,
@@ -200,6 +203,7 @@ const generate2FeatureStory = () => args => (
       {generateStory({ promoType: 'leading' })(args)}
     </Grid>
     <Grid
+      dir={args.dir}
       columns={{
         group0: 8,
         group1: 8,
@@ -211,6 +215,7 @@ const generate2FeatureStory = () => args => (
       enableGelGutters
     >
       <Grid
+        dir={args.dir}
         item
         columns={{
           group0: 8,

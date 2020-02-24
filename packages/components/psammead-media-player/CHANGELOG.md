@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version       | Description                                                                                                                  |
 | ------------- | ---------------------------------------------------------------------------------------------------------------------------- |
+| 2.7.3 | [PR#3151](https://github.com/bbc/psammead/pull/3151) Talos - Bump Dependencies - @bbc/psammead-play-button |
 | 2.7.2 | [PR#3113](https://github.com/bbc/psammead/pull/3113) Added bottom margin padding for live radio audio player  |
 | 2.7.1 | [PR#3060](https://github.com/bbc/psammead/pull/3060) Refactored Message component to display message for Expired AV Stream  |
 | 2.7.0 | [PR#3033](https://github.com/bbc/psammead/pull/3033) Refactor for No JS Canonical and AMP Media Player |

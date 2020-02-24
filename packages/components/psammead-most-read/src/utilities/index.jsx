@@ -43,26 +43,26 @@ export const getItem = ({ service, withTimestamp = false }) => {
   };
 };
 
-export const getItems = ({ service = 'news', arraySize, withTimestamp }) =>
-  Array.from({ length: arraySize }, () => getItem({ service, withTimestamp }));
-
 export const getItemWrapperArray = ({
   numberOfItems,
   service,
   script,
   dir,
+  withTimestamp = false,
+  maxTwoColumns = false,
 }) => {
   const itemWrapperArray = [];
-  const item = getItem({ service });
+  const item = getItem({ service, withTimestamp });
   for (let i = 1; i <= numberOfItems; i += 1) {
     itemWrapperArray.push(
-      <MostReadItemWrapper dir={dir} key={i}>
+      <MostReadItemWrapper dir={dir} key={i} maxTwoColumns={maxTwoColumns}>
         <MostReadRank
           service={service}
           script={script}
           listIndex={i}
           numberOfItems={numberOfItems}
           dir={dir}
+          maxTwoColumns={maxTwoColumns}
         />
         <MostReadLink
           dir={dir}
@@ -70,7 +70,9 @@ export const getItemWrapperArray = ({
           service={service}
           script={script}
           title={item.title}
-        />
+        >
+          {item.timestamp}
+        </MostReadLink>
       </MostReadItemWrapper>,
     );
   }

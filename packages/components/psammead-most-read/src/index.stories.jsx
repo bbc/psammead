@@ -1,15 +1,10 @@
 /* eslint-disable react/prop-types */
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import { withKnobs } from '@storybook/addon-knobs';
+import { withKnobs, boolean } from '@storybook/addon-knobs';
 import { withServicesKnob } from '@bbc/psammead-storybook-helpers';
-import {
-  getItem,
-  getItemWrapperArray,
-  getItems,
-  getServiceVariant,
-} from './testHelpers';
-import { MostReadRank, MostReadLink, MostReadList, MostRead } from './index';
+import { getItem, getItemWrapperArray, getServiceVariant } from './utilities';
+import { MostReadRank, MostReadLink, MostReadList } from './index';
 import notes from '../README.md';
 
 const arabicServiceDecorator = withServicesKnob({
@@ -31,13 +26,26 @@ const newsServiceDecorator = withServicesKnob({
   defaultService: 'news',
 });
 
-const renderList = ({ numberOfItems, dir, service, script }) => (
-  <MostReadList numberOfItems={numberOfItems} dir={dir}>
+const renderList = ({
+  numberOfItems,
+  dir,
+  service,
+  script,
+  withTimestamp,
+  maxTwoColumns,
+}) => (
+  <MostReadList
+    numberOfItems={numberOfItems}
+    dir={dir}
+    maxTwoColumns={maxTwoColumns}
+  >
     {getItemWrapperArray({
       numberOfItems,
       service,
       script,
       dir,
+      withTimestamp,
+      maxTwoColumns,
     }).map(item => item)}
   </MostReadList>
 );
@@ -154,6 +162,38 @@ storiesOf('Components|MostRead/List', module)
     },
   )
   .add(
+    `News LTR with timestamp`,
+    () =>
+      newsServiceDecorator(({ dir, script, service, variant }) =>
+        renderList({
+          numberOfItems: 10,
+          dir,
+          service: getServiceVariant({ service, variant }),
+          script,
+          withTimestamp: true,
+        }),
+      ),
+    {
+      notes,
+    },
+  )
+  .add(
+    `News LTR with maxTwoColumns`,
+    () =>
+      newsServiceDecorator(({ dir, script, service, variant }) =>
+        renderList({
+          numberOfItems: 10,
+          dir,
+          service: getServiceVariant({ service, variant }),
+          script,
+          maxTwoColumns: boolean('Max Two Columns', true),
+        }),
+      ),
+    {
+      notes,
+    },
+  )
+  .add(
     `News LTR 5 items`,
     () =>
       newsServiceDecorator(({ dir, script, service, variant }) =>
@@ -257,67 +297,6 @@ storiesOf('Components|MostRead/List/RTL', module)
           script,
         }),
       ),
-    {
-      notes,
-    },
-  );
-
-storiesOf('Components|MostRead', module)
-  .addDecorator(withKnobs)
-  .add(
-    'default LTR',
-    () =>
-      newsServiceDecorator(({ script, service, dir, variant }) => (
-        <MostRead
-          items={getItems({
-            service: getServiceVariant({ service, variant }),
-            arraySize: 10,
-          })}
-          script={script}
-          service={service}
-          header="Most Read"
-          dir={dir}
-        />
-      )),
-    {
-      notes,
-    },
-  )
-  .add(
-    'default LTR with timestamp',
-    () =>
-      newsServiceDecorator(({ script, service, dir, variant }) => (
-        <MostRead
-          items={getItems({
-            service: getServiceVariant({ service, variant }),
-            arraySize: 10,
-            withTimestamp: true,
-          })}
-          script={script}
-          service={service}
-          header="Most Read"
-          dir={dir}
-        />
-      )),
-    {
-      notes,
-    },
-  )
-  .add(
-    'default RTL',
-    () =>
-      arabicServiceDecorator(({ script, service, dir, variant }) => (
-        <MostRead
-          items={getItems({
-            service: getServiceVariant({ service, variant }),
-            arraySize: 10,
-          })}
-          script={script}
-          service={service}
-          header="الأكثر قراءة"
-          dir={dir}
-        />
-      )),
     {
       notes,
     },
