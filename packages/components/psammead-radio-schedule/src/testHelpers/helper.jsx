@@ -15,6 +15,8 @@ export const stateTypes = ['onDemand', 'live', 'next'];
 
 const getSchedule = (service, withLongSummary) => {
   const { text, articlePath, longText } = TEXT_VARIANTS[service];
+  const programDurationLabel =
+    service === 'arabic' ? 'المدة الزمنية' : 'Duration';
 
   return stateTypes.map((state, index) => ({
     id: index,
@@ -29,7 +31,7 @@ const getSchedule = (service, withLongSummary) => {
         ? `${longText} ${longText}`
         : longText,
     duration: 'PT45M',
-    durationLabel: service === 'arabic' ? 'المدة الزمنية' : 'Duration',
+    durationLabel: programDurationLabel,
   }));
 };
 
