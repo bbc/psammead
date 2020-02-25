@@ -41,6 +41,7 @@ export const renderProgramCard = ({
   duration = 'PT30M',
   durationLabel = 'Duration',
   startTime = 1566914061212,
+  displaySummary = true,
 }) => {
   const { text, articlePath, longText, dir, locale, timezone } = TEXT_VARIANTS[
     service
@@ -51,7 +52,7 @@ export const renderProgramCard = ({
       script={dir === 'rtl' ? arabic : latin}
       dir={dir}
       brandTitle={text}
-      summary={longText}
+      summary={displaySummary ? longText : null}
       episodeTitle={episodeTitle}
       duration={duration}
       startTime={startTime}
