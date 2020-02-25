@@ -2,6 +2,7 @@
 import { TEXT_VARIANTS } from '@bbc/psammead-storybook-helpers';
 import { arabic, latin } from '@bbc/gel-foundations/scripts';
 import React from 'react';
+import { boolean } from '@storybook/addon-knobs';
 import ProgramCard from '../ProgramCard';
 import RadioSchedule from '../index';
 
@@ -45,13 +46,16 @@ export const renderProgramCard = ({
   const { text, articlePath, longText, dir, locale, timezone } = TEXT_VARIANTS[
     service
   ];
+
+  const hasSummary = boolean('Add summary', true);
+
   return (
     <ProgramCard
       service={service}
       script={dir === 'rtl' ? arabic : latin}
       dir={dir}
       brandTitle={text}
-      summary={longText}
+      summary={hasSummary ? longText : null}
       episodeTitle={episodeTitle}
       duration={duration}
       startTime={startTime}
@@ -61,6 +65,7 @@ export const renderProgramCard = ({
       stateLabel={stateLabel}
       timezone={timezone}
       locale={locale}
+      hasSummary={hasSummary}
     />
   );
 };
