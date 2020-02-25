@@ -107,7 +107,7 @@ through the list to render a star-time and program-card, inside a gird.
 We intend to move the map functionality out of psammead in a future iteration.
 */
 const RadioSchedule = ({ schedules, dir, ...props }) => (
-  <Grid dir={dir} {...schedulesGridProps}>
+  <Grid as="ul" dir={dir} {...schedulesGridProps}>
     {schedules.map(({ id, ...program }) => (
       <StyledGrid
         dir={dir}
@@ -115,6 +115,7 @@ const RadioSchedule = ({ schedules, dir, ...props }) => (
         parentEnableGelGutters
         {...programGridProps}
         key={id}
+        forwardedAs="li"
       >
         {renderSchedule({ ...props, dir, program })}
       </StyledGrid>
