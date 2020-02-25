@@ -129,7 +129,7 @@ const programPropTypes = shape({
   link: string.isRequired,
   brandTitle: string.isRequired,
   episodeTitle: string.isRequired,
-  summary: string.isRequired,
+  summary: string,
   duration: string.isRequired,
   durationLabel: string.isRequired,
 });
