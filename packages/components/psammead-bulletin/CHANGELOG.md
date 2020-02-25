@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 2.0.3 | [PR#3180](https://github.com/bbc/psammead/pull/3180) bump styled-components, jest-styled-components |
 | 2.0.2 | [PR#3135](https://github.com/bbc/psammead/pull/3135) Talos - Bump Dependencies - @bbc/gel-foundations |
 | 2.0.1 | [PR#3129](https://github.com/bbc/psammead/pull/3129) Talos - Bump Dependencies - @bbc/gel-foundations |
 | 2.0.0 | [PR#3018](https://github.com/bbc/psammead/pull/3018) Update Bulletin styles to match 1008+px layout design |

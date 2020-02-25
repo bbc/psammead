@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 | ------------- | ----------- |
+| 1.1.14 | [PR#3180](https://github.com/bbc/psammead/pull/3180) bump styled-components, jest-styled-components |
 | 1.1.13 | [PR#3135](https://github.com/bbc/psammead/pull/3135) Talos - Bump Dependencies - @bbc/gel-foundations |
 | 1.1.12 | [PR#3129](https://github.com/bbc/psammead/pull/3129) Talos - Bump Dependencies - @bbc/gel-foundations |
 | 1.1.11 | [PR#3030](https://github.com/bbc/psammead/pull/3030) Talos - Bump Dependencies - @bbc/psammead-styles, @bbc/psammead-assets |

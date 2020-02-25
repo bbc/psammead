@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version       | Description                                                                                                                  |
 | ------------- | ---------------------------------------------------------------------------------------------------------------------------- |
+| 2.7.4 | [PR#3180](https://github.com/bbc/psammead/pull/3180) bump styled-components, jest-styled-components |
 | 2.7.3 | [PR#3151](https://github.com/bbc/psammead/pull/3151) Talos - Bump Dependencies - @bbc/psammead-play-button |
 | 2.7.2 | [PR#3113](https://github.com/bbc/psammead/pull/3113) Added bottom margin padding for live radio audio player  |
 | 2.7.1 | [PR#3060](https://github.com/bbc/psammead/pull/3060) Refactored Message component to display message for Expired AV Stream  |

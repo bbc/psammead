@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 2.0.2 | [PR#3180](https://github.com/bbc/psammead/pull/3180) bump styled-components, jest-styled-components |
 | 2.0.1 | [PR#3175](https://github.com/bbc/psammead/pull/3175) Fix spacing for pidgin on group2 breakpoint for MostRead |
 | 2.0.0 | [PR#3120](https://github.com/bbc/psammead/pull/3120) Remove `MostRead` and `MostReadSection` as well as other cleanup |
 | 1.1.1 | [PR#3151](https://github.com/bbc/psammead/pull/3151) Talos - Bump Dependencies - @bbc/psammead-grid, @bbc/psammead-section-label |

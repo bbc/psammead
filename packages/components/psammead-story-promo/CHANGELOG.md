@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 | ------- | ----------- |
+| 4.0.1 | [PR#3180](https://github.com/bbc/psammead/pull/3180) bump styled-components, jest-styled-components |
 | 4.0.0 | [PR#3154](https://github.com/bbc/psammead/pull/3154) Remove alpha tag |
 | 4.0.0-alpha.13 | [PR#3150](https://github.com/bbc/psammead/pull/3150) Fix fallback width for Leading promo |
 | 4.0.0-alpha.12 | [PR#3135](https://github.com/bbc/psammead/pull/3135) Talos - Bump Dependencies - @bbc/gel-foundations |
