@@ -57,7 +57,7 @@ exports[`MediaIndicator should render audio indicator correctly 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="c2"
+      class="MediaIcon-sc-10lpekz-0 c2"
       focusable="false"
       height="12px"
       viewBox="0 0 13 12"
@@ -131,7 +131,7 @@ exports[`MediaIndicator should render photogallery correctly 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="c2"
+      class="MediaIcon-sc-10lpekz-0 c2"
       focusable="false"
       height="13px"
       viewBox="0 0 32 26"
@@ -191,7 +191,7 @@ exports[`MediaIndicator should render video by default 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="c2"
+      class="MediaIcon-sc-10lpekz-0 c2"
       focusable="false"
       height="12px"
       viewBox="0 0 32 32"
@@ -262,7 +262,7 @@ exports[`MediaIndicator should render video indicator correctly 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="c2"
+      class="MediaIcon-sc-10lpekz-0 c2"
       focusable="false"
       height="12px"
       viewBox="0 0 32 32"
@@ -335,7 +335,7 @@ exports[`MediaIndicator should render video indicator correctly when inline 1`] 
   >
     <svg
       aria-hidden="true"
-      class="c2"
+      class="MediaIcon-sc-10lpekz-0 c2"
       focusable="false"
       height="12px"
       viewBox="0 0 32 32"
@@ -408,7 +408,7 @@ exports[`MediaIndicator should render video indicator correctly when inline on R
   >
     <svg
       aria-hidden="true"
-      class="c2"
+      class="MediaIcon-sc-10lpekz-0 c2"
       focusable="false"
       height="12px"
       viewBox="0 0 32 32"

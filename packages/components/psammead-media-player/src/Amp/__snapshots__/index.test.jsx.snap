@@ -8,6 +8,10 @@ exports[`Media Player: Amp should render an amp-iframe with an amp-img nested in
       custom-element="amp-iframe"
       src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"
     />
+    <style
+      data-styled="active"
+      data-styled-version="5.0.1"
+    />
   </head>
   <body>
     <div>

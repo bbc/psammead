@@ -211,8 +211,8 @@ exports[`Image - with Fade-in effect' should render image correctly without widt
   display: block;
   width: 100%;
   visibility: visible;
-  -webkit-animation: eMLfYp 0.2s linear;
-  animation: eMLfYp 0.2s linear;
+  -webkit-animation: jBcSpD 0.2s linear;
+  animation: jBcSpD 0.2s linear;
   -webkit-transition: visibility 0.2s linear;
   transition: visibility 0.2s linear;
 }

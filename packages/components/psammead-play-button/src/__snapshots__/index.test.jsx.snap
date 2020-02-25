@@ -68,7 +68,7 @@ exports[`PlayButton should render audio correctly without duration details 1`] =
   >
     <svg
       aria-hidden="true"
-      class="c3"
+      class="MediaIcon-sc-10lpekz-0 c3"
       focusable="false"
       height="12px"
       viewBox="0 0 13 12"
@@ -159,7 +159,7 @@ exports[`PlayButton should render audio indicator correctly 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="c3"
+      class="MediaIcon-sc-10lpekz-0 c3"
       focusable="false"
       height="12px"
       viewBox="0 0 13 12"
@@ -251,7 +251,7 @@ exports[`PlayButton should render video by default 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="c3"
+      class="MediaIcon-sc-10lpekz-0 c3"
       focusable="false"
       height="12px"
       viewBox="0 0 32 32"
@@ -339,7 +339,7 @@ exports[`PlayButton should render video correctly with duration and guidance mes
   >
     <svg
       aria-hidden="true"
-      class="c3"
+      class="MediaIcon-sc-10lpekz-0 c3"
       focusable="false"
       height="12px"
       viewBox="0 0 32 32"
@@ -428,7 +428,7 @@ exports[`PlayButton should render video correctly without duration details 1`] =
   >
     <svg
       aria-hidden="true"
-      class="c3"
+      class="MediaIcon-sc-10lpekz-0 c3"
       focusable="false"
       height="12px"
       viewBox="0 0 32 32"
@@ -516,7 +516,7 @@ exports[`PlayButton should render video indicator correctly 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="c3"
+      class="MediaIcon-sc-10lpekz-0 c3"
       focusable="false"
       height="12px"
       viewBox="0 0 32 32"

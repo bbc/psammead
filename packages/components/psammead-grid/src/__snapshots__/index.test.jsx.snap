@@ -528,6 +528,30 @@ exports[`Grid component should render Grid with Grid items including nested non-
   padding: 0;
 }
 
+@media (max-width:14.9375rem) {
+
+}
+
+@media (min-width:15rem) and (max-width:24.9375rem) {
+
+}
+
+@media (min-width:25rem) and (max-width:37.4375rem) {
+
+}
+
+@media (min-width:37.5rem) and (max-width:62.9375rem) {
+
+}
+
+@media (min-width:63rem) and (max-width:79.9375rem) {
+
+}
+
+@media (min-width:80rem) {
+
+}
+
 @supports (display:grid) {
   .c0 {
     display: grid;
@@ -538,8 +562,7 @@ exports[`Grid component should render Grid with Grid items including nested non-
 @media (max-width:14.9375rem) {
   .c1 {
     width: calc(100% - 0%);
-    margin-left: 0%;
-    display: inline-block;
+    margin-left: 0% display:inline-block;
     vertical-align: top;
   }
 }
@@ -547,8 +570,7 @@ exports[`Grid component should render Grid with Grid items including nested non-
 @media (min-width:15rem) and (max-width:24.9375rem) {
   .c1 {
     width: calc(100% - 0%);
-    margin-left: 0%;
-    display: inline-block;
+    margin-left: 0% display:inline-block;
     vertical-align: top;
   }
 }
@@ -556,8 +578,7 @@ exports[`Grid component should render Grid with Grid items including nested non-
 @media (min-width:25rem) and (max-width:37.4375rem) {
   .c1 {
     width: calc(100% - 0%);
-    margin-left: 0%;
-    display: inline-block;
+    margin-left: 0% display:inline-block;
     vertical-align: top;
   }
 }
@@ -565,8 +586,7 @@ exports[`Grid component should render Grid with Grid items including nested non-
 @media (min-width:37.5rem) and (max-width:62.9375rem) {
   .c1 {
     width: calc(100% - 0%);
-    margin-left: 0%;
-    display: inline-block;
+    margin-left: 0% display:inline-block;
     vertical-align: top;
   }
 }
@@ -574,8 +594,7 @@ exports[`Grid component should render Grid with Grid items including nested non-
 @media (min-width:63rem) and (max-width:79.9375rem) {
   .c1 {
     width: calc(75%);
-    margin-left: 0%;
-    display: inline-block;
+    margin-left: 0% display:inline-block;
     vertical-align: top;
   }
 }
@@ -583,8 +602,7 @@ exports[`Grid component should render Grid with Grid items including nested non-
 @media (min-width:80rem) {
   .c1 {
     width: calc(60%);
-    margin-left: 20%;
-    display: inline-block;
+    margin-left: 20% display:inline-block;
     vertical-align: top;
   }
 }
@@ -641,8 +659,7 @@ exports[`Grid component should render Grid with Grid items including nested non-
 @media (max-width:14.9375rem) {
   .c5 {
     width: calc(100% - 0%);
-    margin-left: 0%;
-    display: inline-block;
+    margin-left: 0% display:inline-block;
     vertical-align: top;
   }
 }
@@ -650,8 +667,7 @@ exports[`Grid component should render Grid with Grid items including nested non-
 @media (min-width:15rem) and (max-width:24.9375rem) {
   .c5 {
     width: calc(100% - 0%);
-    margin-left: 0%;
-    display: inline-block;
+    margin-left: 0% display:inline-block;
     vertical-align: top;
   }
 }
@@ -659,8 +675,7 @@ exports[`Grid component should render Grid with Grid items including nested non-
 @media (min-width:25rem) and (max-width:37.4375rem) {
   .c5 {
     width: calc(100% - 0%);
-    margin-left: 0%;
-    display: inline-block;
+    margin-left: 0% display:inline-block;
     vertical-align: top;
   }
 }
@@ -668,8 +683,7 @@ exports[`Grid component should render Grid with Grid items including nested non-
 @media (min-width:37.5rem) and (max-width:62.9375rem) {
   .c5 {
     width: calc(100% - 0%);
-    margin-left: 0%;
-    display: inline-block;
+    margin-left: 0% display:inline-block;
     vertical-align: top;
   }
 }
@@ -677,8 +691,7 @@ exports[`Grid component should render Grid with Grid items including nested non-
 @media (min-width:63rem) and (max-width:79.9375rem) {
   .c5 {
     width: calc(100% - 0%);
-    margin-left: 0%;
-    display: inline-block;
+    margin-left: 0% display:inline-block;
     vertical-align: top;
   }
 }
@@ -686,8 +699,7 @@ exports[`Grid component should render Grid with Grid items including nested non-
 @media (min-width:80rem) {
   .c5 {
     width: calc(100% - 33.333333333333336%);
-    margin-left: 33.333333333333336%;
-    display: inline-block;
+    margin-left: 33.333333333333336% display:inline-block;
     vertical-align: top;
   }
 }
@@ -701,8 +713,7 @@ exports[`Grid component should render Grid with Grid items including nested non-
 @media (max-width:14.9375rem) {
   .c6 {
     width: calc(100% - 0%);
-    margin-left: 0%;
-    display: inline-block;
+    margin-left: 0% display:inline-block;
     vertical-align: top;
   }
 }
@@ -710,8 +721,7 @@ exports[`Grid component should render Grid with Grid items including nested non-
 @media (min-width:15rem) and (max-width:24.9375rem) {
   .c6 {
     width: calc(100% - 0%);
-    margin-left: 0%;
-    display: inline-block;
+    margin-left: 0% display:inline-block;
     vertical-align: top;
   }
 }
@@ -719,8 +729,7 @@ exports[`Grid component should render Grid with Grid items including nested non-
 @media (min-width:25rem) and (max-width:37.4375rem) {
   .c6 {
     width: calc(100% - 0%);
-    margin-left: 0%;
-    display: inline-block;
+    margin-left: 0% display:inline-block;
     vertical-align: top;
   }
 }
@@ -728,8 +737,7 @@ exports[`Grid component should render Grid with Grid items including nested non-
 @media (min-width:37.5rem) and (max-width:62.9375rem) {
   .c6 {
     width: calc(83.33333333333333%);
-    margin-left: 0%;
-    display: inline-block;
+    margin-left: 0% display:inline-block;
     vertical-align: top;
   }
 }
@@ -737,8 +745,7 @@ exports[`Grid component should render Grid with Grid items including nested non-
 @media (min-width:63rem) and (max-width:79.9375rem) {
   .c6 {
     width: calc(83.33333333333333%);
-    margin-left: 0%;
-    display: inline-block;
+    margin-left: 0% display:inline-block;
     vertical-align: top;
   }
 }
@@ -746,8 +753,7 @@ exports[`Grid component should render Grid with Grid items including nested non-
 @media (min-width:80rem) {
   .c6 {
     width: calc(83.33333333333333%);
-    margin-left: 33.333333333333336%;
-    display: inline-block;
+    margin-left: 33.333333333333336% display:inline-block;
     vertical-align: top;
   }
 }
@@ -761,8 +767,7 @@ exports[`Grid component should render Grid with Grid items including nested non-
 @media (max-width:14.9375rem) {
   .c7 {
     width: calc(100% - 0%);
-    margin-left: 0%;
-    display: inline-block;
+    margin-left: 0% display:inline-block;
     vertical-align: top;
   }
 }
@@ -770,8 +775,7 @@ exports[`Grid component should render Grid with Grid items including nested non-
 @media (min-width:15rem) and (max-width:24.9375rem) {
   .c7 {
     width: calc(100% - 0%);
-    margin-left: 0%;
-    display: inline-block;
+    margin-left: 0% display:inline-block;
     vertical-align: top;
   }
 }
@@ -779,8 +783,7 @@ exports[`Grid component should render Grid with Grid items including nested non-
 @media (min-width:25rem) and (max-width:37.4375rem) {
   .c7 {
     width: calc(100% - 0%);
-    margin-left: 0%;
-    display: inline-block;
+    margin-left: 0% display:inline-block;
     vertical-align: top;
   }
 }
@@ -788,8 +791,7 @@ exports[`Grid component should render Grid with Grid items including nested non-
 @media (min-width:37.5rem) and (max-width:62.9375rem) {
   .c7 {
     width: calc(83.33333333333333%);
-    margin-left: 0%;
-    display: inline-block;
+    margin-left: 0% display:inline-block;
     vertical-align: top;
   }
 }
@@ -797,8 +799,7 @@ exports[`Grid component should render Grid with Grid items including nested non-
 @media (min-width:63rem) and (max-width:79.9375rem) {
   .c7 {
     width: calc(62.5%);
-    margin-left: 0%;
-    display: inline-block;
+    margin-left: 0% display:inline-block;
     vertical-align: top;
   }
 }
@@ -806,8 +807,7 @@ exports[`Grid component should render Grid with Grid items including nested non-
 @media (min-width:80rem) {
   .c7 {
     width: calc(50%);
-    margin-left: 20%;
-    display: inline-block;
+    margin-left: 20% display:inline-block;
     vertical-align: top;
   }
 }
@@ -1001,6 +1001,30 @@ exports[`Grid component should render Grid with enableGelGutters & margins on on
 .c2 {
   margin: 0;
   padding: 0 0 0.5rem 0;
+}
+
+@media (max-width:14.9375rem) {
+
+}
+
+@media (min-width:15rem) and (max-width:24.9375rem) {
+
+}
+
+@media (min-width:25rem) and (max-width:37.4375rem) {
+
+}
+
+@media (min-width:37.5rem) and (max-width:62.9375rem) {
+
+}
+
+@media (min-width:63rem) and (max-width:79.9375rem) {
+
+}
+
+@media (min-width:80rem) {
+
 }
 
 @supports (display:grid) {

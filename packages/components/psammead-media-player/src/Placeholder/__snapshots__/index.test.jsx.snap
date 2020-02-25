@@ -134,7 +134,7 @@ exports[`Media Player: Placeholder should render a video placeholder 1`] = `
     >
       <svg
         aria-hidden="true"
-        class="c8"
+        class="MediaIcon-sc-10lpekz-0 c8"
         focusable="false"
         height="12px"
         viewBox="0 0 32 32"
@@ -327,7 +327,7 @@ exports[`Media Player: Placeholder should render a video placeholder with guidan
     >
       <svg
         aria-hidden="true"
-        class="c9"
+        class="MediaIcon-sc-10lpekz-0 c9"
         focusable="false"
         height="12px"
         viewBox="0 0 32 32"
@@ -482,7 +482,7 @@ exports[`Media Player: Placeholder should render a video placeholder without dur
     >
       <svg
         aria-hidden="true"
-        class="c8"
+        class="MediaIcon-sc-10lpekz-0 c8"
         focusable="false"
         height="12px"
         viewBox="0 0 32 32"
@@ -636,7 +636,7 @@ exports[`Media Player: Placeholder should render an audio placeholder 1`] = `
     >
       <svg
         aria-hidden="true"
-        class="c8"
+        class="MediaIcon-sc-10lpekz-0 c8"
         focusable="false"
         height="12px"
         viewBox="0 0 13 12"
@@ -794,7 +794,7 @@ exports[`Media Player: Placeholder should render an audio placeholder without du
     >
       <svg
         aria-hidden="true"
-        class="c8"
+        class="MediaIcon-sc-10lpekz-0 c8"
         focusable="false"
         height="12px"
         viewBox="0 0 13 12"
@@ -926,11 +926,6 @@ exports[`Media Player: Placeholder should render no-js styles when noJsClassName
   cursor: default;
 }
 
-.c0:hover .c12,
-.c0:focus .c12 {
-  background-color: #B80000;
-}
-
 .c6 {
   position: absolute;
   bottom: 0;
@@ -1005,7 +1000,7 @@ exports[`Media Player: Placeholder should render no-js styles when noJsClassName
     >
       <svg
         aria-hidden="true"
-        class="c9"
+        class="MediaIcon-sc-10lpekz-0 c9"
         focusable="false"
         height="12px"
         viewBox="0 0 32 32"

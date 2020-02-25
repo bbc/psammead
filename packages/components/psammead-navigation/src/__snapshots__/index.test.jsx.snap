@@ -373,14 +373,6 @@ exports[`Navigation should render correctly when ampOpenClass prop is provided 1
   border-bottom: 0.25rem solid #FFFFFF;
 }
 
-.c9 .c3::after {
-  left: 0;
-}
-
-.c10 .c3::after {
-  left: 0;
-}
-
 .c0 {
   position: relative;
   background-color: #B80000;
@@ -648,10 +640,6 @@ exports[`Navigation should render correctly when isOpen is true 1`] = `
   right: 0;
   bottom: 0;
   border-bottom: 0.25rem solid #FFFFFF;
-}
-
-.c9 .c3::after {
-  left: 0;
 }
 
 .c0 {
@@ -924,14 +912,6 @@ exports[`Scrollable Navigation should render correctly 1`] = `
 }
 
 .c1 .c4::after {
-  left: 0;
-}
-
-.c10 .c4::after {
-  left: 0;
-}
-
-.c11 .c4::after {
   left: 0;
 }
 

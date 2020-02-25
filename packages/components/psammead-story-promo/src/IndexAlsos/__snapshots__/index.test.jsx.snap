@@ -153,7 +153,7 @@ exports[`Index Alsos should render multiple correctly 1`] = `
           >
             <svg
               aria-hidden="true"
-              class="c7"
+              class="MediaIcon-sc-10lpekz-0 c7"
               focusable="false"
               height="12px"
               viewBox="0 0 32 32"
@@ -343,7 +343,7 @@ exports[`Index Alsos should render one correctly 1`] = `
         >
           <svg
             aria-hidden="true"
-            class="c6"
+            class="MediaIcon-sc-10lpekz-0 c6"
             focusable="false"
             height="12px"
             viewBox="0 0 32 32"

@@ -300,7 +300,7 @@ exports[`Bulletin should render audio correctly 1`] = `
       >
         <svg
           aria-hidden="true"
-          class="c10"
+          class="MediaIcon-sc-10lpekz-0 c10"
           focusable="false"
           height="12px"
           viewBox="0 0 13 12"
@@ -636,7 +636,7 @@ exports[`Bulletin should render live audio correctly 1`] = `
       >
         <svg
           aria-hidden="true"
-          class="c11"
+          class="MediaIcon-sc-10lpekz-0 c11"
           focusable="false"
           height="12px"
           viewBox="0 0 13 12"
@@ -975,7 +975,7 @@ exports[`Bulletin should render live video correctly 1`] = `
       >
         <svg
           aria-hidden="true"
-          class="c11"
+          class="MediaIcon-sc-10lpekz-0 c11"
           focusable="false"
           height="12px"
           viewBox="0 0 32 32"
@@ -1295,7 +1295,7 @@ exports[`Bulletin should render video correctly 1`] = `
       >
         <svg
           aria-hidden="true"
-          class="c10"
+          class="MediaIcon-sc-10lpekz-0 c10"
           focusable="false"
           height="12px"
           viewBox="0 0 32 32"

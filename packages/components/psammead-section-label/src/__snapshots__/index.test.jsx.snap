@@ -338,7 +338,7 @@ exports[`SectionLabel With bar With linking title should render correctly 1`] = 
         class="c4"
       >
         <span
-          class="c5"
+          class="FlexRow-wx5kdp-2 c5"
           role="text"
         >
           <span
@@ -560,7 +560,7 @@ exports[`SectionLabel With bar With linking title should render correctly with a
         class="c4"
       >
         <span
-          class="c5"
+          class="FlexRow-wx5kdp-2 c5"
           role="text"
         >
           <span
@@ -782,7 +782,7 @@ exports[`SectionLabel With bar With linking title should render correctly with e
         class="c4"
       >
         <span
-          class="c5"
+          class="FlexRow-wx5kdp-2 c5"
           role="text"
         >
           <span
@@ -1004,7 +1004,7 @@ exports[`SectionLabel With bar With linking title should render correctly with e
         class="c4"
       >
         <span
-          class="c5"
+          class="FlexRow-wx5kdp-2 c5"
           role="text"
         >
           <span
@@ -1823,7 +1823,7 @@ exports[`SectionLabel Without bar With linking title should render correctly 1`]
         class="c3"
       >
         <span
-          class="c4"
+          class="FlexRow-wx5kdp-2 c4"
           role="text"
         >
           <span
@@ -2022,7 +2022,7 @@ exports[`SectionLabel Without bar With linking title should render correctly wit
         class="c3"
       >
         <span
-          class="c4"
+          class="FlexRow-wx5kdp-2 c4"
           role="text"
         >
           <span
@@ -2221,7 +2221,7 @@ exports[`SectionLabel Without bar With linking title should render correctly wit
         class="c3"
       >
         <span
-          class="c4"
+          class="FlexRow-wx5kdp-2 c4"
           role="text"
         >
           <span

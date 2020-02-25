@@ -172,6 +172,10 @@ exports[`MostReadItemWrapper should render ltr correctly with 10 items 1`] = `
   }
 }
 
+@supports (grid-template-columns:fit-content(200px)) {
+
+}
+
 @media (min-width:80rem) {
   .c3 {
     min-width: auto;
@@ -202,6 +206,10 @@ exports[`MostReadItemWrapper should render ltr correctly with 10 items 1`] = `
   }
 }
 
+@supports (grid-template-columns:fit-content(200px)) {
+
+}
+
 @media (min-width:80rem) {
   .c7 {
     min-width: auto;
@@ -230,6 +238,10 @@ exports[`MostReadItemWrapper should render ltr correctly with 10 items 1`] = `
   .c8 {
     min-width: auto;
   }
+}
+
+@supports (grid-template-columns:fit-content(200px)) {
+
 }
 
 @media (min-width:80rem) {
@@ -262,6 +274,10 @@ exports[`MostReadItemWrapper should render ltr correctly with 10 items 1`] = `
   }
 }
 
+@supports (grid-template-columns:fit-content(200px)) {
+
+}
+
 @media (min-width:80rem) {
   .c9 {
     min-width: auto;
@@ -290,6 +306,10 @@ exports[`MostReadItemWrapper should render ltr correctly with 10 items 1`] = `
   .c10 {
     min-width: auto;
   }
+}
+
+@supports (grid-template-columns:fit-content(200px)) {
+
 }
 
 @media (min-width:80rem) {
@@ -322,7 +342,7 @@ exports[`MostReadItemWrapper should render ltr correctly with 10 items 1`] = `
       class="c2"
     >
       <div
-        class="c3"
+        class="TwoColumnWrapper-fs4y6m-0 c3"
         dir="ltr"
       >
         <span
@@ -353,7 +373,7 @@ exports[`MostReadItemWrapper should render ltr correctly with 10 items 1`] = `
       class="c2"
     >
       <div
-        class="c7"
+        class="TwoColumnWrapper-fs4y6m-0 c7"
         dir="ltr"
       >
         <span
@@ -384,7 +404,7 @@ exports[`MostReadItemWrapper should render ltr correctly with 10 items 1`] = `
       class="c2"
     >
       <div
-        class="c3"
+        class="TwoColumnWrapper-fs4y6m-0 c3"
         dir="ltr"
       >
         <span
@@ -415,7 +435,7 @@ exports[`MostReadItemWrapper should render ltr correctly with 10 items 1`] = `
       class="c2"
     >
       <div
-        class="c7"
+        class="TwoColumnWrapper-fs4y6m-0 c7"
         dir="ltr"
       >
         <span
@@ -446,7 +466,7 @@ exports[`MostReadItemWrapper should render ltr correctly with 10 items 1`] = `
       class="c2"
     >
       <div
-        class="c8"
+        class="TwoColumnWrapper-fs4y6m-0 c8"
         dir="ltr"
       >
         <span
@@ -477,7 +497,7 @@ exports[`MostReadItemWrapper should render ltr correctly with 10 items 1`] = `
       class="c2"
     >
       <div
-        class="c9"
+        class="TwoColumnWrapper-fs4y6m-0 c9"
         dir="ltr"
       >
         <span
@@ -508,7 +528,7 @@ exports[`MostReadItemWrapper should render ltr correctly with 10 items 1`] = `
       class="c2"
     >
       <div
-        class="c10"
+        class="TwoColumnWrapper-fs4y6m-0 c10"
         dir="ltr"
       >
         <span
@@ -539,7 +559,7 @@ exports[`MostReadItemWrapper should render ltr correctly with 10 items 1`] = `
       class="c2"
     >
       <div
-        class="c9"
+        class="TwoColumnWrapper-fs4y6m-0 c9"
         dir="ltr"
       >
         <span
@@ -570,7 +590,7 @@ exports[`MostReadItemWrapper should render ltr correctly with 10 items 1`] = `
       class="c2"
     >
       <div
-        class="c10"
+        class="TwoColumnWrapper-fs4y6m-0 c10"
         dir="ltr"
       >
         <span
@@ -601,7 +621,7 @@ exports[`MostReadItemWrapper should render ltr correctly with 10 items 1`] = `
       class="c2"
     >
       <div
-        class="c9"
+        class="TwoColumnWrapper-fs4y6m-0 c9"
         dir="ltr"
       >
         <span
@@ -798,6 +818,10 @@ exports[`MostReadItemWrapper should render rtl correctly with 10 items 1`] = `
   }
 }
 
+@supports (grid-template-columns:fit-content(200px)) {
+
+}
+
 @media (min-width:80rem) {
   .c3 {
     min-width: auto;
@@ -828,6 +852,10 @@ exports[`MostReadItemWrapper should render rtl correctly with 10 items 1`] = `
   }
 }
 
+@supports (grid-template-columns:fit-content(200px)) {
+
+}
+
 @media (min-width:80rem) {
   .c7 {
     min-width: auto;
@@ -856,6 +884,10 @@ exports[`MostReadItemWrapper should render rtl correctly with 10 items 1`] = `
   .c8 {
     min-width: auto;
   }
+}
+
+@supports (grid-template-columns:fit-content(200px)) {
+
 }
 
 @media (min-width:80rem) {
@@ -888,6 +920,10 @@ exports[`MostReadItemWrapper should render rtl correctly with 10 items 1`] = `
   }
 }
 
+@supports (grid-template-columns:fit-content(200px)) {
+
+}
+
 @media (min-width:80rem) {
   .c9 {
     min-width: auto;
@@ -916,6 +952,10 @@ exports[`MostReadItemWrapper should render rtl correctly with 10 items 1`] = `
   .c10 {
     min-width: auto;
   }
+}
+
+@supports (grid-template-columns:fit-content(200px)) {
+
 }
 
 @media (min-width:80rem) {
@@ -948,7 +988,7 @@ exports[`MostReadItemWrapper should render rtl correctly with 10 items 1`] = `
       class="c2"
     >
       <div
-        class="c3"
+        class="TwoColumnWrapper-fs4y6m-0 c3"
         dir="rtl"
       >
         <span
@@ -979,7 +1019,7 @@ exports[`MostReadItemWrapper should render rtl correctly with 10 items 1`] = `
       class="c2"
     >
       <div
-        class="c7"
+        class="TwoColumnWrapper-fs4y6m-0 c7"
         dir="rtl"
       >
         <span
@@ -1010,7 +1050,7 @@ exports[`MostReadItemWrapper should render rtl correctly with 10 items 1`] = `
       class="c2"
     >
       <div
-        class="c3"
+        class="TwoColumnWrapper-fs4y6m-0 c3"
         dir="rtl"
       >
         <span
@@ -1041,7 +1081,7 @@ exports[`MostReadItemWrapper should render rtl correctly with 10 items 1`] = `
       class="c2"
     >
       <div
-        class="c7"
+        class="TwoColumnWrapper-fs4y6m-0 c7"
         dir="rtl"
       >
         <span
@@ -1072,7 +1112,7 @@ exports[`MostReadItemWrapper should render rtl correctly with 10 items 1`] = `
       class="c2"
     >
       <div
-        class="c8"
+        class="TwoColumnWrapper-fs4y6m-0 c8"
         dir="rtl"
       >
         <span
@@ -1103,7 +1143,7 @@ exports[`MostReadItemWrapper should render rtl correctly with 10 items 1`] = `
       class="c2"
     >
       <div
-        class="c9"
+        class="TwoColumnWrapper-fs4y6m-0 c9"
         dir="rtl"
       >
         <span
@@ -1134,7 +1174,7 @@ exports[`MostReadItemWrapper should render rtl correctly with 10 items 1`] = `
       class="c2"
     >
       <div
-        class="c10"
+        class="TwoColumnWrapper-fs4y6m-0 c10"
         dir="rtl"
       >
         <span
@@ -1165,7 +1205,7 @@ exports[`MostReadItemWrapper should render rtl correctly with 10 items 1`] = `
       class="c2"
     >
       <div
-        class="c9"
+        class="TwoColumnWrapper-fs4y6m-0 c9"
         dir="rtl"
       >
         <span
@@ -1196,7 +1236,7 @@ exports[`MostReadItemWrapper should render rtl correctly with 10 items 1`] = `
       class="c2"
     >
       <div
-        class="c10"
+        class="TwoColumnWrapper-fs4y6m-0 c10"
         dir="rtl"
       >
         <span
@@ -1227,7 +1267,7 @@ exports[`MostReadItemWrapper should render rtl correctly with 10 items 1`] = `
       class="c2"
     >
       <div
-        class="c9"
+        class="TwoColumnWrapper-fs4y6m-0 c9"
         dir="rtl"
       >
         <span

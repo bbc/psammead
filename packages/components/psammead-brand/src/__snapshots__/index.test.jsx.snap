@@ -57,8 +57,8 @@ exports[`Brand should render correctly with link not provided 1`] = `
   -ms-flex-preferred-size: 17.5rem;
 }
 
-.c4:hover .c2,
-.c4:focus .c2 {
+.StyledLink-m3awbo-2:hover .c2,
+.StyledLink-m3awbo-2:focus .c2 {
   -webkit-text-decoration: none;
   text-decoration: none;
   border-bottom: 0.25rem solid #FFFFFF;
@@ -76,6 +76,10 @@ exports[`Brand should render correctly with link not provided 1`] = `
     min-height: 3.25rem;
     padding: 0 1rem;
   }
+}
+
+@media (max-width:14.9375rem) {
+
 }
 
 @media (min-width:25rem) {
@@ -226,6 +230,10 @@ exports[`Brand should render correctly with link provided 1`] = `
 }
 
 @media (max-width:14.9375rem) {
+
+}
+
+@media (max-width:14.9375rem) {
   .c3 {
     display: block;
   }
@@ -351,8 +359,8 @@ exports[`Brand should render correctly with no service Localised Name 1`] = `
   -ms-flex-preferred-size: 17.5rem;
 }
 
-.c4:hover .c2,
-.c4:focus .c2 {
+.StyledLink-m3awbo-2:hover .c2,
+.StyledLink-m3awbo-2:focus .c2 {
   -webkit-text-decoration: none;
   text-decoration: none;
   border-bottom: 0.25rem solid #FFFFFF;
@@ -370,6 +378,10 @@ exports[`Brand should render correctly with no service Localised Name 1`] = `
     min-height: 3.25rem;
     padding: 0 1rem;
   }
+}
+
+@media (max-width:14.9375rem) {
+
 }
 
 @media (min-width:25rem) {
@@ -482,8 +494,8 @@ exports[`Brand should render correctly with transparent borders 1`] = `
   -ms-flex-preferred-size: 17.5rem;
 }
 
-.c4:hover .c2,
-.c4:focus .c2 {
+.StyledLink-m3awbo-2:hover .c2,
+.StyledLink-m3awbo-2:focus .c2 {
   -webkit-text-decoration: none;
   text-decoration: none;
   border-bottom: 0.25rem solid #FFFFFF;
@@ -501,6 +513,10 @@ exports[`Brand should render correctly with transparent borders 1`] = `
     min-height: 3.25rem;
     padding: 0 1rem;
   }
+}
+
+@media (max-width:14.9375rem) {
+
 }
 
 @media (min-width:25rem) {

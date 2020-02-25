@@ -37,6 +37,10 @@ exports[`MostReadRank should render ltr correctly 1`] = `
   }
 }
 
+@supports (grid-template-columns:fit-content(200px)) {
+
+}
+
 @media (min-width:80rem) {
   .c0 {
     min-width: auto;
@@ -58,7 +62,7 @@ exports[`MostReadRank should render ltr correctly 1`] = `
 }
 
 <div
-  class="c0"
+  class="TwoColumnWrapper-fs4y6m-0 c0"
   dir="ltr"
 >
   <span
@@ -106,6 +110,10 @@ exports[`MostReadRank should render ltr with double digits correctly 1`] = `
   }
 }
 
+@supports (grid-template-columns:fit-content(200px)) {
+
+}
+
 @media (min-width:80rem) {
   .c0 {
     min-width: auto;
@@ -127,7 +135,7 @@ exports[`MostReadRank should render ltr with double digits correctly 1`] = `
 }
 
 <div
-  class="c0"
+  class="TwoColumnWrapper-fs4y6m-0 c0"
   dir="ltr"
 >
   <span
@@ -175,6 +183,10 @@ exports[`MostReadRank should render rtl correctly 1`] = `
   }
 }
 
+@supports (grid-template-columns:fit-content(200px)) {
+
+}
+
 @media (min-width:80rem) {
   .c0 {
     min-width: auto;
@@ -196,7 +208,7 @@ exports[`MostReadRank should render rtl correctly 1`] = `
 }
 
 <div
-  class="c0"
+  class="TwoColumnWrapper-fs4y6m-0 c0"
   dir="rtl"
 >
   <span
@@ -244,6 +256,10 @@ exports[`MostReadRank should render rtl with double digits correctly 1`] = `
   }
 }
 
+@supports (grid-template-columns:fit-content(200px)) {
+
+}
+
 @media (min-width:80rem) {
   .c0 {
     min-width: auto;
@@ -265,7 +281,7 @@ exports[`MostReadRank should render rtl with double digits correctly 1`] = `
 }
 
 <div
-  class="c0"
+  class="TwoColumnWrapper-fs4y6m-0 c0"
   dir="rtl"
 >
   <span

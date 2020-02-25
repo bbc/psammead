@@ -132,7 +132,15 @@ exports[`AMP Menu Button should render correctly 1`] = `
 exports[`AMP Menu Button should render rtl correctly 1`] = `
 <html>
   <head>
-    <script
+    @media (min-width:37.5rem) {
+
+}
+
+@media (min-width:20rem) {
+
+}
+
+<script
       async="true"
       custom-element="amp-bind"
       src="https://cdn.ampproject.org/v0/amp-bind-0.1.js"

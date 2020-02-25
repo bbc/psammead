@@ -271,7 +271,7 @@ exports[`ProgramCard should render correctly for live 1`] = `
     >
       <svg
         aria-hidden="true"
-        class="c10"
+        class="MediaIcon-sc-10lpekz-0 c10"
         focusable="false"
         height="12px"
         viewBox="0 0 13 12"
@@ -540,7 +540,7 @@ exports[`ProgramCard should render correctly for next 1`] = `
     >
       <svg
         aria-hidden="true"
-        class="c9"
+        class="MediaIcon-sc-10lpekz-0 c9"
         focusable="false"
         height="12px"
         viewBox="0 0 13 12"
@@ -809,7 +809,7 @@ exports[`ProgramCard should render correctly for onDemand 1`] = `
     >
       <svg
         aria-hidden="true"
-        class="c9"
+        class="MediaIcon-sc-10lpekz-0 c9"
         focusable="false"
         height="12px"
         viewBox="0 0 13 12"
@@ -1078,7 +1078,7 @@ exports[`ProgramCard should render correctly in RTL 1`] = `
     >
       <svg
         aria-hidden="true"
-        class="c9"
+        class="MediaIcon-sc-10lpekz-0 c9"
         focusable="false"
         height="12px"
         viewBox="0 0 13 12"

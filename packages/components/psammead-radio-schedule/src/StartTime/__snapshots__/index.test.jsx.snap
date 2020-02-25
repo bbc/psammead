@@ -117,7 +117,7 @@ exports[`StartTime should render LTR correctly 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="c2"
+      class="CoreIcon-sc-1eqhzay-0 c2"
       focusable="false"
       height="13"
       viewBox="0 0 13 13"
@@ -263,7 +263,7 @@ exports[`StartTime should render RTL correctly 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="c2"
+      class="CoreIcon-sc-1eqhzay-0 c2"
       focusable="false"
       height="13"
       viewBox="0 0 13 13"

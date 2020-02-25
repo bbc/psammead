@@ -75,6 +75,30 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
   padding: 0;
 }
 
+@media (max-width:14.9375rem) {
+
+}
+
+@media (min-width:15rem) and (max-width:24.9375rem) {
+
+}
+
+@media (min-width:25rem) and (max-width:37.4375rem) {
+
+}
+
+@media (min-width:37.5rem) and (max-width:62.9375rem) {
+
+}
+
+@media (min-width:63rem) and (max-width:79.9375rem) {
+
+}
+
+@media (min-width:80rem) {
+
+}
+
 @supports (display:grid) {
   .c0 {
     display: grid;
@@ -200,6 +224,10 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
   }
 }
 
+@supports (grid-template-columns:fit-content(200px)) {
+
+}
+
 @media (min-width:80rem) {
   .c5 {
     min-width: auto;
@@ -230,6 +258,10 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
   }
 }
 
+@supports (grid-template-columns:fit-content(200px)) {
+
+}
+
 @media (min-width:80rem) {
   .c9 {
     min-width: auto;
@@ -258,6 +290,10 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
   .c10 {
     min-width: auto;
   }
+}
+
+@supports (grid-template-columns:fit-content(200px)) {
+
 }
 
 @media (min-width:80rem) {
@@ -290,6 +326,10 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
   }
 }
 
+@supports (grid-template-columns:fit-content(200px)) {
+
+}
+
 @media (min-width:80rem) {
   .c11 {
     min-width: auto;
@@ -320,6 +360,10 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
   }
 }
 
+@supports (grid-template-columns:fit-content(200px)) {
+
+}
+
 @media (min-width:80rem) {
   .c12 {
     min-width: auto;
@@ -341,7 +385,7 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
 }
 
 <ol
-  class="c0 c1"
+  class="c0 TwoColumnGrid-sc-1ofyujo-0 c1"
   dir="ltr"
   role="list"
 >
@@ -354,7 +398,7 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
       class="c4"
     >
       <div
-        class="c5"
+        class="TwoColumnWrapper-fs4y6m-0 c5"
         dir="ltr"
       >
         <span
@@ -385,7 +429,7 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
       class="c4"
     >
       <div
-        class="c9"
+        class="TwoColumnWrapper-fs4y6m-0 c9"
         dir="ltr"
       >
         <span
@@ -416,7 +460,7 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
       class="c4"
     >
       <div
-        class="c5"
+        class="TwoColumnWrapper-fs4y6m-0 c5"
         dir="ltr"
       >
         <span
@@ -447,7 +491,7 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
       class="c4"
     >
       <div
-        class="c9"
+        class="TwoColumnWrapper-fs4y6m-0 c9"
         dir="ltr"
       >
         <span
@@ -478,7 +522,7 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
       class="c4"
     >
       <div
-        class="c10"
+        class="TwoColumnWrapper-fs4y6m-0 c10"
         dir="ltr"
       >
         <span
@@ -509,7 +553,7 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
       class="c4"
     >
       <div
-        class="c11"
+        class="TwoColumnWrapper-fs4y6m-0 c11"
         dir="ltr"
       >
         <span
@@ -540,7 +584,7 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
       class="c4"
     >
       <div
-        class="c12"
+        class="TwoColumnWrapper-fs4y6m-0 c12"
         dir="ltr"
       >
         <span
@@ -571,7 +615,7 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
       class="c4"
     >
       <div
-        class="c11"
+        class="TwoColumnWrapper-fs4y6m-0 c11"
         dir="ltr"
       >
         <span
@@ -602,7 +646,7 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
       class="c4"
     >
       <div
-        class="c12"
+        class="TwoColumnWrapper-fs4y6m-0 c12"
         dir="ltr"
       >
         <span
@@ -633,7 +677,7 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
       class="c4"
     >
       <div
-        class="c11"
+        class="TwoColumnWrapper-fs4y6m-0 c11"
         dir="ltr"
       >
         <span
@@ -731,6 +775,30 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
   color: #B80000;
   margin: 0;
   padding: 0;
+}
+
+@media (max-width:14.9375rem) {
+
+}
+
+@media (min-width:15rem) and (max-width:24.9375rem) {
+
+}
+
+@media (min-width:25rem) and (max-width:37.4375rem) {
+
+}
+
+@media (min-width:37.5rem) and (max-width:62.9375rem) {
+
+}
+
+@media (min-width:63rem) and (max-width:79.9375rem) {
+
+}
+
+@media (min-width:80rem) {
+
 }
 
 @supports (display:grid) {
@@ -858,6 +926,10 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
   }
 }
 
+@supports (grid-template-columns:fit-content(200px)) {
+
+}
+
 @media (min-width:80rem) {
   .c5 {
     min-width: auto;
@@ -888,6 +960,10 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
   }
 }
 
+@supports (grid-template-columns:fit-content(200px)) {
+
+}
+
 @media (min-width:80rem) {
   .c9 {
     min-width: auto;
@@ -916,6 +992,10 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
   .c10 {
     min-width: auto;
   }
+}
+
+@supports (grid-template-columns:fit-content(200px)) {
+
 }
 
 @media (min-width:80rem) {
@@ -948,6 +1028,10 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
   }
 }
 
+@supports (grid-template-columns:fit-content(200px)) {
+
+}
+
 @media (min-width:80rem) {
   .c11 {
     min-width: auto;
@@ -978,6 +1062,10 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
   }
 }
 
+@supports (grid-template-columns:fit-content(200px)) {
+
+}
+
 @media (min-width:80rem) {
   .c12 {
     min-width: auto;
@@ -999,7 +1087,7 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
 }
 
 <ol
-  class="c0 c1"
+  class="c0 TwoColumnGrid-sc-1ofyujo-0 c1"
   dir="ltr"
   role="list"
 >
@@ -1012,7 +1100,7 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
       class="c4"
     >
       <div
-        class="c5"
+        class="TwoColumnWrapper-fs4y6m-0 c5"
         dir="ltr"
       >
         <span
@@ -1043,7 +1131,7 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
       class="c4"
     >
       <div
-        class="c9"
+        class="TwoColumnWrapper-fs4y6m-0 c9"
         dir="ltr"
       >
         <span
@@ -1074,7 +1162,7 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
       class="c4"
     >
       <div
-        class="c5"
+        class="TwoColumnWrapper-fs4y6m-0 c5"
         dir="ltr"
       >
         <span
@@ -1105,7 +1193,7 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
       class="c4"
     >
       <div
-        class="c9"
+        class="TwoColumnWrapper-fs4y6m-0 c9"
         dir="ltr"
       >
         <span
@@ -1136,7 +1224,7 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
       class="c4"
     >
       <div
-        class="c10"
+        class="TwoColumnWrapper-fs4y6m-0 c10"
         dir="ltr"
       >
         <span
@@ -1167,7 +1255,7 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
       class="c4"
     >
       <div
-        class="c11"
+        class="TwoColumnWrapper-fs4y6m-0 c11"
         dir="ltr"
       >
         <span
@@ -1198,7 +1286,7 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
       class="c4"
     >
       <div
-        class="c12"
+        class="TwoColumnWrapper-fs4y6m-0 c12"
         dir="ltr"
       >
         <span
@@ -1229,7 +1317,7 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
       class="c4"
     >
       <div
-        class="c11"
+        class="TwoColumnWrapper-fs4y6m-0 c11"
         dir="ltr"
       >
         <span
@@ -1260,7 +1348,7 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
       class="c4"
     >
       <div
-        class="c12"
+        class="TwoColumnWrapper-fs4y6m-0 c12"
         dir="ltr"
       >
         <span
@@ -1291,7 +1379,7 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
       class="c4"
     >
       <div
-        class="c11"
+        class="TwoColumnWrapper-fs4y6m-0 c11"
         dir="ltr"
       >
         <span
@@ -1391,6 +1479,30 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
   padding: 0;
 }
 
+@media (max-width:14.9375rem) {
+
+}
+
+@media (min-width:15rem) and (max-width:24.9375rem) {
+
+}
+
+@media (min-width:25rem) and (max-width:37.4375rem) {
+
+}
+
+@media (min-width:37.5rem) and (max-width:62.9375rem) {
+
+}
+
+@media (min-width:63rem) and (max-width:79.9375rem) {
+
+}
+
+@media (min-width:80rem) {
+
+}
+
 @supports (display:grid) {
   .c0 {
     display: grid;
@@ -1516,6 +1628,10 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
   }
 }
 
+@supports (grid-template-columns:fit-content(200px)) {
+
+}
+
 @media (min-width:80rem) {
   .c5 {
     min-width: auto;
@@ -1546,6 +1662,10 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
   }
 }
 
+@supports (grid-template-columns:fit-content(200px)) {
+
+}
+
 @media (min-width:80rem) {
   .c9 {
     min-width: auto;
@@ -1574,6 +1694,10 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
   .c10 {
     min-width: auto;
   }
+}
+
+@supports (grid-template-columns:fit-content(200px)) {
+
 }
 
 @media (min-width:80rem) {
@@ -1606,6 +1730,10 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
   }
 }
 
+@supports (grid-template-columns:fit-content(200px)) {
+
+}
+
 @media (min-width:80rem) {
   .c11 {
     min-width: auto;
@@ -1636,6 +1764,10 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
   }
 }
 
+@supports (grid-template-columns:fit-content(200px)) {
+
+}
+
 @media (min-width:80rem) {
   .c12 {
     min-width: auto;
@@ -1657,7 +1789,7 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
 }
 
 <ol
-  class="c0 c1"
+  class="c0 TwoColumnGrid-sc-1ofyujo-0 c1"
   dir="ltr"
   role="list"
 >
@@ -1670,7 +1802,7 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
       class="c4"
     >
       <div
-        class="c5"
+        class="TwoColumnWrapper-fs4y6m-0 c5"
         dir="ltr"
       >
         <span
@@ -1701,7 +1833,7 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
       class="c4"
     >
       <div
-        class="c9"
+        class="TwoColumnWrapper-fs4y6m-0 c9"
         dir="ltr"
       >
         <span
@@ -1732,7 +1864,7 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
       class="c4"
     >
       <div
-        class="c5"
+        class="TwoColumnWrapper-fs4y6m-0 c5"
         dir="ltr"
       >
         <span
@@ -1763,7 +1895,7 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
       class="c4"
     >
       <div
-        class="c9"
+        class="TwoColumnWrapper-fs4y6m-0 c9"
         dir="ltr"
       >
         <span
@@ -1794,7 +1926,7 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
       class="c4"
     >
       <div
-        class="c10"
+        class="TwoColumnWrapper-fs4y6m-0 c10"
         dir="ltr"
       >
         <span
@@ -1825,7 +1957,7 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
       class="c4"
     >
       <div
-        class="c11"
+        class="TwoColumnWrapper-fs4y6m-0 c11"
         dir="ltr"
       >
         <span
@@ -1856,7 +1988,7 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
       class="c4"
     >
       <div
-        class="c12"
+        class="TwoColumnWrapper-fs4y6m-0 c12"
         dir="ltr"
       >
         <span
@@ -1887,7 +2019,7 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
       class="c4"
     >
       <div
-        class="c11"
+        class="TwoColumnWrapper-fs4y6m-0 c11"
         dir="ltr"
       >
         <span
@@ -1918,7 +2050,7 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
       class="c4"
     >
       <div
-        class="c12"
+        class="TwoColumnWrapper-fs4y6m-0 c12"
         dir="ltr"
       >
         <span
@@ -1949,7 +2081,7 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
       class="c4"
     >
       <div
-        class="c11"
+        class="TwoColumnWrapper-fs4y6m-0 c11"
         dir="ltr"
       >
         <span
@@ -2049,6 +2181,30 @@ exports[`MostReadList should render with ltr news items with max two columns 1`]
   padding: 0;
 }
 
+@media (max-width:14.9375rem) {
+
+}
+
+@media (min-width:15rem) and (max-width:24.9375rem) {
+
+}
+
+@media (min-width:25rem) and (max-width:37.4375rem) {
+
+}
+
+@media (min-width:37.5rem) and (max-width:62.9375rem) {
+
+}
+
+@media (min-width:63rem) and (max-width:79.9375rem) {
+
+}
+
+@media (min-width:80rem) {
+
+}
+
 @supports (display:grid) {
   .c0 {
     display: grid;
@@ -2174,6 +2330,10 @@ exports[`MostReadList should render with ltr news items with max two columns 1`]
   }
 }
 
+@supports (grid-template-columns:fit-content(200px)) {
+
+}
+
 @media (min-width:80rem) {
   .c5 {
     min-width: auto;
@@ -2204,6 +2364,10 @@ exports[`MostReadList should render with ltr news items with max two columns 1`]
   }
 }
 
+@supports (grid-template-columns:fit-content(200px)) {
+
+}
+
 @media (min-width:80rem) {
   .c9 {
     min-width: auto;
@@ -2232,6 +2396,10 @@ exports[`MostReadList should render with ltr news items with max two columns 1`]
   .c10 {
     min-width: auto;
   }
+}
+
+@supports (grid-template-columns:fit-content(200px)) {
+
 }
 
 @media (min-width:80rem) {
@@ -2264,6 +2432,10 @@ exports[`MostReadList should render with ltr news items with max two columns 1`]
   }
 }
 
+@supports (grid-template-columns:fit-content(200px)) {
+
+}
+
 @media (min-width:80rem) {
   .c11 {
     min-width: auto;
@@ -2294,6 +2466,10 @@ exports[`MostReadList should render with ltr news items with max two columns 1`]
   }
 }
 
+@supports (grid-template-columns:fit-content(200px)) {
+
+}
+
 @media (min-width:80rem) {
   .c12 {
     min-width: auto;
@@ -2315,7 +2491,7 @@ exports[`MostReadList should render with ltr news items with max two columns 1`]
 }
 
 <ol
-  class="c0 c1"
+  class="c0 TwoColumnGrid-sc-1ofyujo-0 c1"
   dir="ltr"
   role="list"
 >
@@ -2328,7 +2504,7 @@ exports[`MostReadList should render with ltr news items with max two columns 1`]
       class="c4"
     >
       <div
-        class="c5"
+        class="TwoColumnWrapper-fs4y6m-0 c5"
         dir="ltr"
       >
         <span
@@ -2359,7 +2535,7 @@ exports[`MostReadList should render with ltr news items with max two columns 1`]
       class="c4"
     >
       <div
-        class="c9"
+        class="TwoColumnWrapper-fs4y6m-0 c9"
         dir="ltr"
       >
         <span
@@ -2390,7 +2566,7 @@ exports[`MostReadList should render with ltr news items with max two columns 1`]
       class="c4"
     >
       <div
-        class="c5"
+        class="TwoColumnWrapper-fs4y6m-0 c5"
         dir="ltr"
       >
         <span
@@ -2421,7 +2597,7 @@ exports[`MostReadList should render with ltr news items with max two columns 1`]
       class="c4"
     >
       <div
-        class="c9"
+        class="TwoColumnWrapper-fs4y6m-0 c9"
         dir="ltr"
       >
         <span
@@ -2452,7 +2628,7 @@ exports[`MostReadList should render with ltr news items with max two columns 1`]
       class="c4"
     >
       <div
-        class="c10"
+        class="TwoColumnWrapper-fs4y6m-0 c10"
         dir="ltr"
       >
         <span
@@ -2483,7 +2659,7 @@ exports[`MostReadList should render with ltr news items with max two columns 1`]
       class="c4"
     >
       <div
-        class="c11"
+        class="TwoColumnWrapper-fs4y6m-0 c11"
         dir="ltr"
       >
         <span
@@ -2514,7 +2690,7 @@ exports[`MostReadList should render with ltr news items with max two columns 1`]
       class="c4"
     >
       <div
-        class="c12"
+        class="TwoColumnWrapper-fs4y6m-0 c12"
         dir="ltr"
       >
         <span
@@ -2545,7 +2721,7 @@ exports[`MostReadList should render with ltr news items with max two columns 1`]
       class="c4"
     >
       <div
-        class="c11"
+        class="TwoColumnWrapper-fs4y6m-0 c11"
         dir="ltr"
       >
         <span
@@ -2576,7 +2752,7 @@ exports[`MostReadList should render with ltr news items with max two columns 1`]
       class="c4"
     >
       <div
-        class="c12"
+        class="TwoColumnWrapper-fs4y6m-0 c12"
         dir="ltr"
       >
         <span
@@ -2607,7 +2783,7 @@ exports[`MostReadList should render with ltr news items with max two columns 1`]
       class="c4"
     >
       <div
-        class="c11"
+        class="TwoColumnWrapper-fs4y6m-0 c11"
         dir="ltr"
       >
         <span
@@ -2705,6 +2881,30 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
   color: #B80000;
   margin: 0;
   padding: 0;
+}
+
+@media (max-width:14.9375rem) {
+
+}
+
+@media (min-width:15rem) and (max-width:24.9375rem) {
+
+}
+
+@media (min-width:25rem) and (max-width:37.4375rem) {
+
+}
+
+@media (min-width:37.5rem) and (max-width:62.9375rem) {
+
+}
+
+@media (min-width:63rem) and (max-width:79.9375rem) {
+
+}
+
+@media (min-width:80rem) {
+
 }
 
 @supports (display:grid) {
@@ -2832,6 +3032,10 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
   }
 }
 
+@supports (grid-template-columns:fit-content(200px)) {
+
+}
+
 @media (min-width:80rem) {
   .c5 {
     min-width: auto;
@@ -2862,6 +3066,10 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
   }
 }
 
+@supports (grid-template-columns:fit-content(200px)) {
+
+}
+
 @media (min-width:80rem) {
   .c9 {
     min-width: auto;
@@ -2890,6 +3098,10 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
   .c10 {
     min-width: auto;
   }
+}
+
+@supports (grid-template-columns:fit-content(200px)) {
+
 }
 
 @media (min-width:80rem) {
@@ -2922,6 +3134,10 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
   }
 }
 
+@supports (grid-template-columns:fit-content(200px)) {
+
+}
+
 @media (min-width:80rem) {
   .c11 {
     min-width: auto;
@@ -2952,6 +3168,10 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
   }
 }
 
+@supports (grid-template-columns:fit-content(200px)) {
+
+}
+
 @media (min-width:80rem) {
   .c12 {
     min-width: auto;
@@ -2973,7 +3193,7 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
 }
 
 <ol
-  class="c0 c1"
+  class="c0 TwoColumnGrid-sc-1ofyujo-0 c1"
   dir="rtl"
   role="list"
 >
@@ -2986,7 +3206,7 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
       class="c4"
     >
       <div
-        class="c5"
+        class="TwoColumnWrapper-fs4y6m-0 c5"
         dir="rtl"
       >
         <span
@@ -3017,7 +3237,7 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
       class="c4"
     >
       <div
-        class="c9"
+        class="TwoColumnWrapper-fs4y6m-0 c9"
         dir="rtl"
       >
         <span
@@ -3048,7 +3268,7 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
       class="c4"
     >
       <div
-        class="c5"
+        class="TwoColumnWrapper-fs4y6m-0 c5"
         dir="rtl"
       >
         <span
@@ -3079,7 +3299,7 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
       class="c4"
     >
       <div
-        class="c9"
+        class="TwoColumnWrapper-fs4y6m-0 c9"
         dir="rtl"
       >
         <span
@@ -3110,7 +3330,7 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
       class="c4"
     >
       <div
-        class="c10"
+        class="TwoColumnWrapper-fs4y6m-0 c10"
         dir="rtl"
       >
         <span
@@ -3141,7 +3361,7 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
       class="c4"
     >
       <div
-        class="c11"
+        class="TwoColumnWrapper-fs4y6m-0 c11"
         dir="rtl"
       >
         <span
@@ -3172,7 +3392,7 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
       class="c4"
     >
       <div
-        class="c12"
+        class="TwoColumnWrapper-fs4y6m-0 c12"
         dir="rtl"
       >
         <span
@@ -3203,7 +3423,7 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
       class="c4"
     >
       <div
-        class="c11"
+        class="TwoColumnWrapper-fs4y6m-0 c11"
         dir="rtl"
       >
         <span
@@ -3234,7 +3454,7 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
       class="c4"
     >
       <div
-        class="c12"
+        class="TwoColumnWrapper-fs4y6m-0 c12"
         dir="rtl"
       >
         <span
@@ -3265,7 +3485,7 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
       class="c4"
     >
       <div
-        class="c11"
+        class="TwoColumnWrapper-fs4y6m-0 c11"
         dir="rtl"
       >
         <span

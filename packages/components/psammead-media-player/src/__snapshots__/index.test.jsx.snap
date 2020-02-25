@@ -95,7 +95,11 @@ exports[`Media Player: AMP Entry renders a portrait container with amp-iframe an
 exports[`Media Player: AMP Entry renders the audio skin 1`] = `
 <html>
   <head>
-    <script
+    @media (min-width:63rem) {
+
+}
+
+<script
       async="true"
       custom-element="amp-iframe"
       src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"
@@ -288,7 +292,7 @@ exports[`Media Player: Canonical Entry renders a landscape container with a plac
       >
         <svg
           aria-hidden="true"
-          class="c9"
+          class="MediaIcon-sc-10lpekz-0 c9"
           focusable="false"
           height="12px"
           viewBox="0 0 32 32"
@@ -491,7 +495,7 @@ exports[`Media Player: Canonical Entry renders a placeholder image with guidance
       >
         <svg
           aria-hidden="true"
-          class="c10"
+          class="MediaIcon-sc-10lpekz-0 c10"
           focusable="false"
           height="12px"
           viewBox="0 0 32 32"
@@ -662,7 +666,7 @@ exports[`Media Player: Canonical Entry renders a portrait container with a place
       >
         <svg
           aria-hidden="true"
-          class="c9"
+          class="MediaIcon-sc-10lpekz-0 c9"
           focusable="false"
           height="12px"
           viewBox="0 0 32 32"
@@ -870,11 +874,6 @@ exports[`Media Player: Canonical Entry renders with no-js styles when noJsClassN
   cursor: default;
 }
 
-.c1:hover .c13,
-.c1:focus .c13 {
-  background-color: #B80000;
-}
-
 .c7 {
   position: absolute;
   bottom: 0;
@@ -958,7 +957,7 @@ exports[`Media Player: Canonical Entry renders with no-js styles when noJsClassN
       >
         <svg
           aria-hidden="true"
-          class="c10"
+          class="MediaIcon-sc-10lpekz-0 c10"
           focusable="false"
           height="12px"
           viewBox="0 0 32 32"
