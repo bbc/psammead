@@ -23,4 +23,13 @@ describe('ProgramCard', () => {
       service: 'arabic',
     }),
   );
+
+  shouldMatchSnapshot(
+    `should render correctly without summary`,
+    renderProgramCard({
+      state: stateTypes[1],
+      stateLabel: 'Live',
+      displaySummary: false,
+    }),
+  );
 });
