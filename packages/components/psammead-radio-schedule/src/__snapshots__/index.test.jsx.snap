@@ -552,11 +552,11 @@ exports[`RadioSchedule should render ltr radio schedules correctly 1`] = `
   }
 }
 
-<div
+<ul
   class="c0"
   dir="ltr"
 >
-  <div
+  <li
     class="c1 c2"
     dir="ltr"
   >
@@ -682,8 +682,8 @@ exports[`RadioSchedule should render ltr radio schedules correctly 1`] = `
         </time>
       </div>
     </div>
-  </div>
-  <div
+  </li>
+  <li
     class="c1 c2"
     dir="ltr"
   >
@@ -823,8 +823,8 @@ exports[`RadioSchedule should render ltr radio schedules correctly 1`] = `
         </time>
       </div>
     </div>
-  </div>
-  <div
+  </li>
+  <li
     class="c1 c2"
     dir="ltr"
   >
@@ -956,8 +956,8 @@ exports[`RadioSchedule should render ltr radio schedules correctly 1`] = `
         </time>
       </div>
     </div>
-  </div>
-</div>
+  </li>
+</ul>
 `;
 
 exports[`RadioSchedule should render rtl radio schedules correctly 1`] = `
@@ -1512,11 +1512,11 @@ exports[`RadioSchedule should render rtl radio schedules correctly 1`] = `
   }
 }
 
-<div
+<ul
   class="c0"
   dir="rtl"
 >
-  <div
+  <li
     class="c1 c2"
     dir="rtl"
   >
@@ -1642,8 +1642,8 @@ exports[`RadioSchedule should render rtl radio schedules correctly 1`] = `
         </time>
       </div>
     </div>
-  </div>
-  <div
+  </li>
+  <li
     class="c1 c2"
     dir="rtl"
   >
@@ -1783,8 +1783,8 @@ exports[`RadioSchedule should render rtl radio schedules correctly 1`] = `
         </time>
       </div>
     </div>
-  </div>
-  <div
+  </li>
+  <li
     class="c1 c2"
     dir="rtl"
   >
@@ -1916,6 +1916,6 @@ exports[`RadioSchedule should render rtl radio schedules correctly 1`] = `
         </time>
       </div>
     </div>
-  </div>
-</div>
+  </li>
+</ul>
 `;
