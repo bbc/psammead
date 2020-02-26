@@ -11,7 +11,7 @@ export const sentenceCase = text =>
     .charAt(0)
     .toUpperCase() + text.substring(1);
 
-export const stateTypes = ['onDemand', 'live', 'next'];
+export const stateTypes = ['live', 'onDemand', 'onDemand', 'next'];
 
 const getSchedule = (service, withLongSummary) => {
   const { text, articlePath, longText } = TEXT_VARIANTS[service];
@@ -80,5 +80,6 @@ export const renderRadioSchedule = ({
     script={script}
     service={service}
     dir={dir}
+    numberOfSchedules={getSchedule(service, withLongSummary).length}
   />
 );
