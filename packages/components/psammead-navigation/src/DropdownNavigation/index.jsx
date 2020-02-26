@@ -195,6 +195,7 @@ const MenuButton = styled(Button)`
 
   &:hover,
   &:focus {
+    cursor: pointer;
     box-shadow: inset 0 0 0 ${GEL_SPACING_HLF} ${C_WHITE};
     ::after {
       ${iconBorder};
