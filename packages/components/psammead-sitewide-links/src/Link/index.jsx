@@ -19,19 +19,21 @@ const StyleLinkText = styled.span`
   }
 `;
 
-const Link = ({ text, href, inline }) => (
-  <StyledLink inline={inline} href={href}>
+const Link = ({ text, href, inline, lang }) => (
+  <StyledLink lang={lang} inline={inline} href={href}>
     <StyleLinkText>{text}</StyleLinkText>
   </StyledLink>
 );
 
 Link.defaultProps = {
   inline: false,
+  lang: '',
 };
 
 Link.propTypes = {
   href: string.isRequired,
   text: string.isRequired,
+  lang: string,
   inline: bool,
 };
 

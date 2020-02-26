@@ -99,9 +99,9 @@ const StyledListItem = styled.li`
   break-inside: avoid-column;
 `;
 
-const listItem = (key, text, href) => (
+const listItem = (key, text, href, lang) => (
   <StyledListItem key={key} role="listitem">
-    <Link text={text} href={href} />
+    <Link text={text} href={href} lang={lang} />
   </StyledListItem>
 );
 
@@ -113,7 +113,7 @@ const List = ({ links, trustProjectLink }) => (
         trustProjectLink.text,
         trustProjectLink.href,
       )}
-    {links.map(link => listItem(link.text, link.text, link.href))}
+    {links.map(link => listItem(link.text, link.text, link.href, link.lang))}
   </StyledList>
 );
 
