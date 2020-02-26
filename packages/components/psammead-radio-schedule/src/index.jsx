@@ -11,8 +11,14 @@ const StartTimeWrapper = styled.div`
   padding: ${GEL_SPACING_DBL} 0 ${GEL_SPACING};
 `;
 
-// Using flex-box on browsers that do not support grid will break grid fallback defined in psammead-grid
+// Reset default of <ul> style
 const StyledGrid = styled(Grid)`
+  padding: 0;
+  margin: 0;
+`;
+
+// Using flex-box on browsers that do not support grid will break grid fallback defined in psammead-grid
+const StyledFlexGrid = styled(Grid)`
   @supports (display: grid) {
     display: flex;
     flex-direction: column;
@@ -107,9 +113,9 @@ through the list to render a star-time and program-card, inside a gird.
 We intend to move the map functionality out of psammead in a future iteration.
 */
 const RadioSchedule = ({ schedules, dir, ...props }) => (
-  <Grid as="ul" dir={dir} {...schedulesGridProps}>
+  <StyledGrid forwardedAs="ul" dir={dir} {...schedulesGridProps}>
     {schedules.map(({ id, ...program }) => (
-      <StyledGrid
+      <StyledFlexGrid
         dir={dir}
         parentColumns={schedulesGridProps.columns}
         parentEnableGelGutters
@@ -118,9 +124,9 @@ const RadioSchedule = ({ schedules, dir, ...props }) => (
         forwardedAs="li"
       >
         {renderSchedule({ ...props, dir, program })}
-      </StyledGrid>
+      </StyledFlexGrid>
     ))}
-  </Grid>
+  </StyledGrid>
 );
 
 const programPropTypes = shape({
