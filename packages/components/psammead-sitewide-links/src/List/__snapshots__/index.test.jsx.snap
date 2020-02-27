@@ -99,7 +99,6 @@ exports[`List should render correctly with 7 items 1`] = `
     <a
       class="c2 c3"
       href="https://www.bbc.co.uk/news"
-      lang=""
     >
       <span
         class="c4"
@@ -115,7 +114,6 @@ exports[`List should render correctly with 7 items 1`] = `
     <a
       class="c2 c3"
       href="https://www.bbc.co.uk/news"
-      lang=""
     >
       <span
         class="c4"
@@ -131,7 +129,6 @@ exports[`List should render correctly with 7 items 1`] = `
     <a
       class="c2 c3"
       href="https://www.bbc.co.uk/news"
-      lang=""
     >
       <span
         class="c4"
@@ -147,7 +144,6 @@ exports[`List should render correctly with 7 items 1`] = `
     <a
       class="c2 c3"
       href="https://www.bbc.co.uk/news"
-      lang=""
     >
       <span
         class="c4"
@@ -163,7 +159,6 @@ exports[`List should render correctly with 7 items 1`] = `
     <a
       class="c2 c3"
       href="https://www.bbc.co.uk/news"
-      lang=""
     >
       <span
         class="c4"
@@ -179,7 +174,6 @@ exports[`List should render correctly with 7 items 1`] = `
     <a
       class="c2 c3"
       href="https://www.bbc.co.uk/news"
-      lang=""
     >
       <span
         class="c4"
@@ -195,7 +189,6 @@ exports[`List should render correctly with 7 items 1`] = `
     <a
       class="c2 c3"
       href="https://www.bbc.co.uk/news"
-      lang=""
     >
       <span
         class="c4"
@@ -306,7 +299,6 @@ exports[`List should render correctly with 8 items 1`] = `
     <a
       class="c2 c3"
       href="https://www.bbc.co.uk/news"
-      lang=""
     >
       <span
         class="c4"
@@ -322,7 +314,6 @@ exports[`List should render correctly with 8 items 1`] = `
     <a
       class="c2 c3"
       href="https://www.bbc.co.uk/news"
-      lang=""
     >
       <span
         class="c4"
@@ -338,7 +329,6 @@ exports[`List should render correctly with 8 items 1`] = `
     <a
       class="c2 c3"
       href="https://www.bbc.co.uk/news"
-      lang=""
     >
       <span
         class="c4"
@@ -354,7 +344,6 @@ exports[`List should render correctly with 8 items 1`] = `
     <a
       class="c2 c3"
       href="https://www.bbc.co.uk/news"
-      lang=""
     >
       <span
         class="c4"
@@ -370,7 +359,6 @@ exports[`List should render correctly with 8 items 1`] = `
     <a
       class="c2 c3"
       href="https://www.bbc.co.uk/news"
-      lang=""
     >
       <span
         class="c4"
@@ -386,7 +374,6 @@ exports[`List should render correctly with 8 items 1`] = `
     <a
       class="c2 c3"
       href="https://www.bbc.co.uk/news"
-      lang=""
     >
       <span
         class="c4"
@@ -402,7 +389,6 @@ exports[`List should render correctly with 8 items 1`] = `
     <a
       class="c2 c3"
       href="https://www.bbc.co.uk/news"
-      lang=""
     >
       <span
         class="c4"
@@ -418,7 +404,6 @@ exports[`List should render correctly with 8 items 1`] = `
     <a
       class="c2 c3"
       href="https://www.bbc.co.uk/news"
-      lang=""
     >
       <span
         class="c4"
