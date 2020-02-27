@@ -80,5 +80,6 @@ export const renderRadioSchedule = ({
     script={script}
     service={service}
     dir={dir}
+    numberOfSchedules={getSchedule(service, withLongSummary).length}
   />
 );

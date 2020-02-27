@@ -1,5 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
+import {
+  GEL_GROUP_3_SCREEN_WIDTH_MIN,
+  GEL_GROUP_3_SCREEN_WIDTH_MAX,
+} from '@bbc/gel-foundations/breakpoints';
 import { GEL_SPACING, GEL_SPACING_DBL } from '@bbc/gel-foundations/spacings';
 import Grid from '@bbc/psammead-grid';
 import { arrayOf, number, oneOf, shape, string } from 'prop-types';
@@ -11,8 +15,12 @@ const StartTimeWrapper = styled.div`
   padding: ${GEL_SPACING_DBL} 0 ${GEL_SPACING};
 `;
 
+// const isLastOnDemand = ({schedules, })
 // Using flex-box on browsers that do not support grid will break grid fallback defined in psammead-grid
 const StyledGrid = styled(Grid)`
+  @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) and (max-width: ${GEL_GROUP_3_SCREEN_WIDTH_MAX}) {
+    visibility: visible;
+  }
   @supports (display: grid) {
     display: flex;
     flex-direction: column;
@@ -149,6 +157,7 @@ renderSchedule.propTypes = {
 
 RadioSchedule.propTypes = {
   schedules: arrayOf(programPropTypes).isRequired,
+  numberOfSchedules: number.isRequired,
   ...sharedProps,
 };
 
