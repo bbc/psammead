@@ -545,7 +545,7 @@ exports[`RadioSchedule should render ltr radio schedules correctly 1`] = `
   }
 }
 
-@supports (display:grid) {
+@supports (grid-template-columns:fit-content(200px)) {
   .c3 {
     display: -webkit-box;
     display: -webkit-flex;
@@ -1510,7 +1510,7 @@ exports[`RadioSchedule should render rtl radio schedules correctly 1`] = `
   }
 }
 
-@supports (display:grid) {
+@supports (grid-template-columns:fit-content(200px)) {
   .c3 {
     display: -webkit-box;
     display: -webkit-flex;
