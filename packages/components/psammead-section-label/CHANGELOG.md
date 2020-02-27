@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 5.0.0 | [PR#3133](https://github.com/bbc/psammead/pull/3133) Change background colour from white to ghost |
 | 4.0.2 | [PR#3135](https://github.com/bbc/psammead/pull/3135) Talos - Bump Dependencies - @bbc/gel-foundations |
 | 4.0.1 | [PR#3129](https://github.com/bbc/psammead/pull/3129) Talos - Bump Dependencies - @bbc/gel-foundations |
 | 4.0.0 | [PR#3058](https://github.com/bbc/psammead/pull/3058) Add margin bottom to the Section Label above 1008px  |
