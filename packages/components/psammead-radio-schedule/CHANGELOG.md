@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 0.1.0-alpha.15 | [PR#3184](https://github.com/bbc/psammead/pull/3184) Change display of program cards in group3 & update stories to include 4 cards |
 | 0.1.0-alpha.14 | [PR#3164](https://github.com/bbc/psammead/pull/3164) Talos - Bump Dependencies - @bbc/psammead-timestamp-container |
 | 0.1.0-alpha.13 | [PR#3153](https://github.com/bbc/psammead/pull/3153) Talos - Bump Dependencies - @bbc/psammead-timestamp-container |
 | 0.1.0-alpha.12 | [PR#3132](https://github.com/bbc/psammead/pull/3132) Render correct hidden `startTime` in RadioSchedule component |

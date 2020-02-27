@@ -540,12 +540,6 @@ exports[`RadioSchedule should render ltr radio schedules correctly 1`] = `
   }
 }
 
-@media (min-width:37.5rem) and (max-width:62.9375rem) {
-  .c2 {
-    visibility: visible;
-  }
-}
-
 @supports (display:grid) {
   .c2 {
     display: -webkit-box;
@@ -1630,12 +1624,6 @@ exports[`RadioSchedule should render rtl radio schedules correctly 1`] = `
   .c7 > time {
     font-size: 0.75rem;
     line-height: 1rem;
-  }
-}
-
-@media (min-width:37.5rem) and (max-width:62.9375rem) {
-  .c2 {
-    visibility: visible;
   }
 }
 
