@@ -19,6 +19,7 @@ exports[`Link should render a standard block link 1`] = `
 <a
   class="c0 c1"
   href="https://www.bbc.com/"
+  lang=""
 >
   <span
     class="c2"
@@ -47,6 +48,7 @@ exports[`Link should render an inline link after passing an inline prop 1`] = `
 <a
   class="c0 c1"
   href="https://www.bbc.com/"
+  lang=""
 >
   <span
     class="c2"
