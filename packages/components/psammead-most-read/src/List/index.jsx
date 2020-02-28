@@ -1,12 +1,26 @@
 import React from 'react';
 import styled from 'styled-components';
-import { oneOf, number, node, bool } from 'prop-types';
+import { oneOf, number, node } from 'prop-types';
 import {
   GEL_GROUP_2_SCREEN_WIDTH_MAX,
   GEL_GROUP_5_SCREEN_WIDTH_MIN,
 } from '@bbc/gel-foundations/breakpoints';
 import Grid from '@bbc/psammead-grid';
 import { mostReadListGridProps } from '../utilities/gridProps';
+
+const OneColumnGrid = styled(Grid).attrs({
+  role: 'list',
+})`
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  grid-auto-flow: column;
+  grid-template-rows: repeat(
+    ${props => Math.ceil(props.numberOfItems / 2)},
+    [col-start] auto [col-end]
+  );
+  }
+`;
 
 const TwoColumnGrid = styled(Grid).attrs({
   role: 'list',
@@ -37,11 +51,11 @@ const MultiColumnGrid = styled(TwoColumnGrid)`
   }
 `;
 
-const MostReadList = ({ numberOfItems, dir, maxTwoColumns, children }) => {
-  const MostReadListGrid = maxTwoColumns ? TwoColumnGrid : MultiColumnGrid;
+const MostReadList = ({ numberOfItems, dir, gridType, children }) => {
+  const MostReadListGrid = gridType;
   return (
     <MostReadListGrid
-      {...mostReadListGridProps(maxTwoColumns)}
+      {...mostReadListGridProps(gridType)}
       dir={dir}
       numberOfItems={numberOfItems}
       forwardedAs="ol"
@@ -54,13 +68,13 @@ const MostReadList = ({ numberOfItems, dir, maxTwoColumns, children }) => {
 MostReadList.propTypes = {
   children: node.isRequired,
   dir: oneOf(['rtl', 'ltr']),
-  maxTwoColumns: bool,
+  gridType: oneOf([OneColumnGrid, TwoColumnGrid, MultiColumnGrid]),
   numberOfItems: number.isRequired,
 };
 
 MostReadList.defaultProps = {
   dir: 'ltr',
-  maxTwoColumns: false,
+  gridType: MultiColumnGrid,
 };
 
 export default MostReadList;
