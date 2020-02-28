@@ -120,6 +120,7 @@ const List = ({ links, trustProjectLink }) => (
 const linkPropTypes = shape({
   href: string.isRequired,
   text: string.isRequired,
+  lang: string,
 });
 
 List.propTypes = {
