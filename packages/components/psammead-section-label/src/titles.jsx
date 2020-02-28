@@ -9,7 +9,7 @@ import {
 } from '@bbc/gel-foundations/breakpoints';
 import { GEL_SPACING, GEL_SPACING_DBL } from '@bbc/gel-foundations/spacings';
 import { getLongPrimer, getDoublePica } from '@bbc/gel-foundations/typography';
-import { C_EBON, C_WHITE } from '@bbc/psammead-styles/colours';
+import { C_EBON, C_WHITE, C_GHOST } from '@bbc/psammead-styles/colours';
 import { getSansBold, getSansRegular } from '@bbc/psammead-styles/font-styles';
 
 const minClickableHeightPx = 44;
@@ -75,7 +75,7 @@ const Title = styled.span`
   ${({ script }) => script && getDoublePica(script)};
   ${({ service }) => getSansRegular(service)}
   color: ${C_EBON};
-  background-color: ${C_WHITE};
+  background-color: ${C_GHOST};
 
   ${titleMargins};
 
