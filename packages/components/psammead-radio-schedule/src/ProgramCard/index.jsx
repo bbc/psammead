@@ -223,9 +223,11 @@ const ProgramCard = ({
           locale,
         })}
       </HeadingWrapper>
-      <SummaryWrapper service={service} script={script}>
-        {summary}
-      </SummaryWrapper>
+      {summary && (
+        <SummaryWrapper service={service} script={script}>
+          {summary}
+        </SummaryWrapper>
+      )}
     </TextWrapper>
     <ButtonWrapper
       service={service}
@@ -275,12 +277,13 @@ ProgramCard.propTypes = {
   dir: oneOf(['rtl', 'ltr']),
   durationLabel: string.isRequired,
   duration: string.isRequired,
-  summary: string.isRequired,
+  summary: string,
   ...programCardPropTypes,
 };
 
 ProgramCard.defaultProps = {
   dir: 'ltr',
+  summary: null,
   ...programCardDefaultPropTypes,
 };
 
