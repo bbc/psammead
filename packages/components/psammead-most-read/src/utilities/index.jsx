@@ -49,20 +49,20 @@ export const getItemWrapperArray = ({
   script,
   dir,
   withTimestamp = false,
-  maxTwoColumns = false,
+  columnLayout,
 }) => {
   const itemWrapperArray = [];
   const item = getItem({ service, withTimestamp });
   for (let i = 1; i <= numberOfItems; i += 1) {
     itemWrapperArray.push(
-      <MostReadItemWrapper dir={dir} key={i} maxTwoColumns={maxTwoColumns}>
+      <MostReadItemWrapper dir={dir} key={i} columnLayout={columnLayout}>
         <MostReadRank
           service={service}
           script={script}
           listIndex={i}
           numberOfItems={numberOfItems}
           dir={dir}
-          maxTwoColumns={maxTwoColumns}
+          columnLayout={columnLayout}
         />
         <MostReadLink
           dir={dir}

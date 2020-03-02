@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { oneOf, number, node } from 'prop-types';
+import { oneOf, number, node, string } from 'prop-types';
 import {
   GEL_GROUP_2_SCREEN_WIDTH_MAX,
   GEL_GROUP_5_SCREEN_WIDTH_MIN,
@@ -16,7 +16,7 @@ const OneColumnGrid = styled(Grid).attrs({
   padding: 0;
   grid-auto-flow: column;
   grid-template-rows: repeat(
-    ${props => Math.ceil(props.numberOfItems / 2)},
+    ${props => props.numberOfItems},
     [col-start] auto [col-end]
   );
   }
@@ -51,11 +51,18 @@ const MultiColumnGrid = styled(TwoColumnGrid)`
   }
 `;
 
-const MostReadList = ({ numberOfItems, dir, gridType, children }) => {
-  const MostReadListGrid = gridType;
+const getColumnLayout = columnLayout =>
+  ({
+    oneColumn: OneColumnGrid,
+    twoColumn: TwoColumnGrid,
+    multiColumn: MultiColumnGrid,
+  }[columnLayout]);
+
+const MostReadList = ({ numberOfItems, dir, columnLayout, children }) => {
+  const MostReadListGrid = getColumnLayout(columnLayout);
   return (
     <MostReadListGrid
-      {...mostReadListGridProps(gridType)}
+      {...mostReadListGridProps(columnLayout)}
       dir={dir}
       numberOfItems={numberOfItems}
       forwardedAs="ol"
@@ -68,13 +75,13 @@ const MostReadList = ({ numberOfItems, dir, gridType, children }) => {
 MostReadList.propTypes = {
   children: node.isRequired,
   dir: oneOf(['rtl', 'ltr']),
-  gridType: oneOf([OneColumnGrid, TwoColumnGrid, MultiColumnGrid]),
+  columnLayout: string,
   numberOfItems: number.isRequired,
 };
 
 MostReadList.defaultProps = {
   dir: 'ltr',
-  gridType: MultiColumnGrid,
+  columnLayout: 'multiColumn',
 };
 
 export default MostReadList;

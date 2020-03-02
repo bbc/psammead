@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import { withKnobs, boolean } from '@storybook/addon-knobs';
+import { withKnobs } from '@storybook/addon-knobs';
 import { withServicesKnob } from '@bbc/psammead-storybook-helpers';
 import { getItem, getItemWrapperArray, getServiceVariant } from './utilities';
 import { MostReadRank, MostReadLink, MostReadList } from './index';
@@ -33,11 +33,12 @@ const renderList = ({
   script,
   withTimestamp,
   maxTwoColumns,
+  columnLayout,
 }) => (
   <MostReadList
     numberOfItems={numberOfItems}
     dir={dir}
-    maxTwoColumns={maxTwoColumns}
+    columnLayout={columnLayout}
   >
     {getItemWrapperArray({
       numberOfItems,
@@ -186,7 +187,7 @@ storiesOf('Components|MostRead/List', module)
           dir,
           service: getServiceVariant({ service, variant }),
           script,
-          maxTwoColumns: boolean('Max Two Columns', true),
+          columnLayout: 'oneColumn',
         }),
       ),
     {

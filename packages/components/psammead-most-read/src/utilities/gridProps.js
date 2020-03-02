@@ -1,4 +1,4 @@
-const mostReadListGridProps = maxTwoColumns => ({
+const mostReadListGridProps = columnLayout => ({
   enableGelGutters: true,
   enableGelMargins: true,
   columns: {
@@ -7,7 +7,11 @@ const mostReadListGridProps = maxTwoColumns => ({
     group2: 6,
     group3: 6,
     group4: 8,
-    group5: maxTwoColumns ? 8 : 20,
+    group5: {
+      oneColumn: 6,
+      twoColumn: 8,
+      multiColumn: 20,
+    }[columnLayout],
   },
 });
 

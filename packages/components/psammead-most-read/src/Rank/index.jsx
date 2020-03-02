@@ -1,5 +1,5 @@
 import React from 'react';
-import { shape, string, oneOf, number, bool } from 'prop-types';
+import { shape, string, oneOf, number } from 'prop-types';
 import styled from 'styled-components';
 import { getFoolscap } from '@bbc/gel-foundations/typography';
 import {
@@ -62,18 +62,14 @@ const TwoColumnWrapper = styled.div`
 
   @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
     min-width: ${props =>
-      columnIncludesDoubleDigits(props, false)
-        ? doubleDigitWidth(props).group3
-        : 'auto'};
+      listHasDoubleDigits(props) ? doubleDigitWidth(props).group3 : 'auto'};
   }
 
   /* different number order for when css grid is supported  */
   @supports (${grid}) {
     @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
       min-width: ${props =>
-        columnIncludesDoubleDigits(props, true)
-          ? doubleDigitWidth(props).group3
-          : 'auto'};
+        listHasDoubleDigits(props) ? doubleDigitWidth(props).group3 : 'auto'};
     }
   }
 `;
@@ -117,11 +113,16 @@ const MostReadRank = ({
   listIndex,
   numberOfItems,
   dir,
-  maxTwoColumns,
+  columnLayout,
 }) => {
   const numerals = serviceNumerals(service);
   const rank = numerals[listIndex];
-  const RankWrapper = maxTwoColumns ? TwoColumnWrapper : MultiColumnWrapper;
+  const RankWrapper = TwoColumnWrapper;
+
+  // const RankWrapper =
+  //   columnLayout === ('oneColumn' || 'twoColumn')
+  //     ? TwoColumnWrapper
+  //     : MultiColumnWrapper;
 
   return (
     <RankWrapper
@@ -143,12 +144,12 @@ MostReadRank.propTypes = {
   listIndex: number.isRequired,
   numberOfItems: number.isRequired,
   dir: oneOf(['rtl', 'ltr']),
-  maxTwoColumns: bool,
+  columnLayout: string,
 };
 
 MostReadRank.defaultProps = {
   dir: 'ltr',
-  maxTwoColumns: false,
+  columnLayout: 'multiColumn',
 };
 
 export default MostReadRank;
