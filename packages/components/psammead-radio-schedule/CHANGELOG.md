@@ -3,7 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
-| 0.1.0-alpha.19 | [PR#31xx](https://github.com/bbc/psammead/pull/31xx) Fix service variants breaking stories |
+| 0.1.0-alpha.19 | [PR#3196](https://github.com/bbc/psammead/pull/3196) Fix service variants breaking stories |
 | 0.1.0-alpha.18 | [PR#3184](https://github.com/bbc/psammead/pull/3184) Change display of program cards in group3 & update stories to include 4 cards |
 | 0.1.0-alpha.17 | [PR#3160](https://github.com/bbc/psammead/pull/3160) Uniformise visually-hidden state label 
 | 0.1.0-alpha.16 | [PR#3179](https://github.com/bbc/psammead/pull/3179) Make summary not required for Program Card |
