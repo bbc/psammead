@@ -34,6 +34,7 @@ const Bar = styled.div`
 
 const SectionLabelWrapper = styled.div`
   position: relative;
+  z-index: 0;
 
   margin-top: ${GEL_SPACING_QUAD};
 
