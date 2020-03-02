@@ -13,13 +13,17 @@ const StartTimeWrapper = styled.div`
 `;
 
 // Reset default of <ul> style
-const StyledGrid = styled(Grid)`
+const StyledGrid = styled(Grid).attrs({
+  role: 'list',
+})`
   padding: 0;
   margin: 0;
 `;
 
 // Using flex-box on browsers that do not support grid will break grid fallback defined in psammead-grid
-const StyledFlexGrid = styled(Grid)`
+const StyledFlexGrid = styled(Grid).attrs({
+  role: 'listitem',
+})`
   @supports (${grid}) {
     display: flex;
     flex-direction: column;
@@ -102,7 +106,7 @@ const programGridProps = {
     group0: 4,
     group1: 4,
     group2: 6,
-    group3: 2,
+    group3: 3,
     group4: 2,
     group5: 2,
   },
