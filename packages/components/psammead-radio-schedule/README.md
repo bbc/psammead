@@ -76,7 +76,7 @@ const schedules = [
 | Argument | Type | Required | Default | Example |
 | -------- | ---- | -------- | ------- | ------- |
 | brandTitle | string | yes | N/A | `'This is a brand title'` |
-| summary | string | yes | N/A | `'This is a summary'` |
+| summary | string | no | null | `'This is a summary'` |
 | episodeTitle | string | yes | N/A | `'29/01/1990'` |
 | duration | string | yes | N/A | `'PT30M'` |
 | durationLabel | string | yes | N/A | `'duration'` |

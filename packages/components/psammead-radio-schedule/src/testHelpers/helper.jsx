@@ -1,6 +1,7 @@
 /* eslint-disable react/prop-types */
 import { TEXT_VARIANTS } from '@bbc/psammead-storybook-helpers';
 import { arabic, latin } from '@bbc/gel-foundations/scripts';
+import { boolean } from '@storybook/addon-knobs';
 import React from 'react';
 import ProgramCard from '../ProgramCard';
 import RadioSchedule from '../index';
@@ -41,17 +42,19 @@ export const renderProgramCard = ({
   duration = 'PT30M',
   durationLabel = 'Duration',
   startTime = 1566914061212,
+  displaySummary = boolean('show summary', true),
 }) => {
   const { text, articlePath, longText, dir, locale, timezone } = TEXT_VARIANTS[
     service
   ];
+
   return (
     <ProgramCard
       service={service}
       script={dir === 'rtl' ? arabic : latin}
       dir={dir}
       brandTitle={text}
-      summary={longText}
+      summary={displaySummary ? longText : null}
       episodeTitle={episodeTitle}
       duration={duration}
       startTime={startTime}
