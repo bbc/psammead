@@ -1,7 +1,9 @@
 import { shouldMatchSnapshot } from '@bbc/psammead-test-helpers';
-import { renderProgramCard, sentenceCase } from '../testHelpers/helper';
-
-const uniqueStates = ['live', 'onDemand', 'next'];
+import {
+  renderProgramCard,
+  sentenceCase,
+  uniqueStates,
+} from '../testHelpers/helper';
 
 describe('ProgramCard', () => {
   uniqueStates.forEach(state => {

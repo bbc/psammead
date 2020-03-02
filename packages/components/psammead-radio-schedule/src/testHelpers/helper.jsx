@@ -12,7 +12,9 @@ export const sentenceCase = text =>
     .charAt(0)
     .toUpperCase() + text.substring(1);
 
+// Will remove and clean up in future PRs
 export const stateTypes = ['live', 'onDemand', 'onDemand', 'next'];
+export const uniqueStates = ['live', 'onDemand', 'next'];
 
 const getSchedule = (service, withLongSummary) => {
   const { text, articlePath, longText } = TEXT_VARIANTS[service];
