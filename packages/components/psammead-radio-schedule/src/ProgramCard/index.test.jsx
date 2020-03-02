@@ -1,12 +1,10 @@
 import { shouldMatchSnapshot } from '@bbc/psammead-test-helpers';
-import {
-  renderProgramCard,
-  sentenceCase,
-  stateTypes,
-} from '../testHelpers/helper';
+import { renderProgramCard, sentenceCase } from '../testHelpers/helper';
+
+const uniqueStates = ['live', 'onDemand', 'next'];
 
 describe('ProgramCard', () => {
-  stateTypes.forEach(state => {
+  uniqueStates.forEach(state => {
     shouldMatchSnapshot(
       `should render correctly for ${state}`,
       renderProgramCard({ state, stateLabel: sentenceCase(state) }),
@@ -16,11 +14,20 @@ describe('ProgramCard', () => {
   shouldMatchSnapshot(
     `should render correctly in RTL`,
     renderProgramCard({
-      state: stateTypes[0],
+      state: uniqueStates[1],
       stateLabel: 'مباشر',
       duration: 'PT30M',
       durationLabel: 'المدة الزمنية',
       service: 'arabic',
+    }),
+  );
+
+  shouldMatchSnapshot(
+    `should render correctly without summary`,
+    renderProgramCard({
+      state: uniqueStates[0],
+      stateLabel: 'Live',
+      displaySummary: false,
     }),
   );
 });
