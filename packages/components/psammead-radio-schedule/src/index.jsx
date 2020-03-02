@@ -21,9 +21,10 @@ const StyledGrid = styled(Grid).attrs({
 `;
 
 // Using flex-box on browsers that do not support grid will break grid fallback defined in psammead-grid
-const StyledFlexGrid = styled(Grid).attrs({
+const StyledFlexGrid = styled(Grid).attrs(({ state }) => ({
   role: 'listitem',
-})`
+  'data-e2e': state,
+}))`
   @supports (${grid}) {
     display: flex;
     flex-direction: column;
@@ -127,6 +128,7 @@ const RadioSchedule = ({ schedules, dir, ...props }) => (
         {...programGridProps}
         key={id}
         forwardedAs="li"
+        state={program.state}
       >
         {renderSchedule({ ...props, dir, program })}
       </StyledFlexGrid>
