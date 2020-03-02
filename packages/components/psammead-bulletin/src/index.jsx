@@ -200,12 +200,14 @@ const Bulletin = ({
           <Link href={ctaLink}>
             {/* eslint-disable jsx-a11y/aria-role */}
             <span role="text">
-              <VisuallyHiddenText lang={lang}>
-                {`${offScreenText},`}
-              </VisuallyHiddenText>
+              {offScreenText && (
+                <VisuallyHiddenText lang={lang}>
+                  {`${offScreenText}, `}
+                </VisuallyHiddenText>
+              )}
               {isLive && (
                 <LiveLabel service={service} dir={dir}>
-                  {liveText}
+                  {`${liveText} `}
                 </LiveLabel>
               )}
               <span>{headlineText}</span>
