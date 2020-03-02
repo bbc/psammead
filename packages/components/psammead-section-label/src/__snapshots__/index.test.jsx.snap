@@ -52,6 +52,7 @@ exports[`SectionLabel When hideSectionHeader is true should add styling to hide 
 
 .c0 {
   position: relative;
+  z-index: 0;
   margin-top: 2rem;
   -webkit-clip-path: inset(100%);
   clip-path: inset(100%);
@@ -230,6 +231,7 @@ exports[`SectionLabel With bar With linking title should render correctly 1`] = 
 
 .c0 {
   position: relative;
+  z-index: 0;
   margin-top: 2rem;
 }
 
@@ -452,6 +454,7 @@ exports[`SectionLabel With bar With linking title should render correctly with a
 
 .c0 {
   position: relative;
+  z-index: 0;
   margin-top: 2rem;
 }
 
@@ -674,6 +677,7 @@ exports[`SectionLabel With bar With linking title should render correctly with e
 
 .c0 {
   position: relative;
+  z-index: 0;
   margin-top: 2rem;
 }
 
@@ -896,6 +900,7 @@ exports[`SectionLabel With bar With linking title should render correctly with e
 
 .c0 {
   position: relative;
+  z-index: 0;
   margin-top: 2rem;
 }
 
@@ -1085,6 +1090,7 @@ exports[`SectionLabel With bar With plain title should render correctly 1`] = `
 
 .c0 {
   position: relative;
+  z-index: 0;
   margin-top: 2rem;
 }
 
@@ -1240,6 +1246,7 @@ exports[`SectionLabel With bar With plain title should render correctly with ara
 
 .c0 {
   position: relative;
+  z-index: 0;
   margin-top: 2rem;
 }
 
@@ -1395,6 +1402,7 @@ exports[`SectionLabel With bar With plain title should render correctly with exp
 
 .c0 {
   position: relative;
+  z-index: 0;
   margin-top: 2rem;
 }
 
@@ -1550,6 +1558,7 @@ exports[`SectionLabel With bar With plain title should render correctly with exp
 
 .c0 {
   position: relative;
+  z-index: 0;
   margin-top: 2rem;
 }
 
@@ -1733,6 +1742,7 @@ exports[`SectionLabel Without bar With linking title should render correctly 1`]
 
 .c0 {
   position: relative;
+  z-index: 0;
   margin-top: 2rem;
 }
 
@@ -1932,6 +1942,7 @@ exports[`SectionLabel Without bar With linking title should render correctly wit
 
 .c0 {
   position: relative;
+  z-index: 0;
   margin-top: 2rem;
 }
 
@@ -2131,6 +2142,7 @@ exports[`SectionLabel Without bar With linking title should render correctly wit
 
 .c0 {
   position: relative;
+  z-index: 0;
   margin-top: 2rem;
 }
 
@@ -2297,6 +2309,7 @@ exports[`SectionLabel Without bar With plain title should render correctly 1`] =
 
 .c0 {
   position: relative;
+  z-index: 0;
   margin-top: 2rem;
 }
 
@@ -2429,6 +2442,7 @@ exports[`SectionLabel Without bar With plain title should render correctly with 
 
 .c0 {
   position: relative;
+  z-index: 0;
   margin-top: 2rem;
 }
 
@@ -2561,6 +2575,7 @@ exports[`SectionLabel Without bar With plain title should render correctly with 
 
 .c0 {
   position: relative;
+  z-index: 0;
   margin-top: 2rem;
 }
 
