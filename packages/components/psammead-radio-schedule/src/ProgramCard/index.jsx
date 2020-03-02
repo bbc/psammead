@@ -164,7 +164,7 @@ const renderHeaderContent = ({
             {`${stateLabel.toUpperCase()}`}
           </LabelWrapper>
           <VisuallyHiddenText {...hiddenTextProps}>
-            {isLive && ` ${stateLabel}`}
+            {stateLabel === 'Live' && ` ${stateLabel}`}
             {`,`}
           </VisuallyHiddenText>
         </>
