@@ -560,10 +560,12 @@ exports[`RadioSchedule should render ltr radio schedules correctly 1`] = `
 <ul
   class="c0 c1"
   dir="ltr"
+  role="list"
 >
   <li
     class="c2 c3"
     dir="ltr"
+    role="listitem"
   >
     <div
       class="c4"
@@ -705,6 +707,7 @@ exports[`RadioSchedule should render ltr radio schedules correctly 1`] = `
   <li
     class="c2 c3"
     dir="ltr"
+    role="listitem"
   >
     <div
       class="c4"
@@ -832,6 +835,7 @@ exports[`RadioSchedule should render ltr radio schedules correctly 1`] = `
   <li
     class="c2 c3"
     dir="ltr"
+    role="listitem"
   >
     <div
       class="c4"
@@ -959,6 +963,7 @@ exports[`RadioSchedule should render ltr radio schedules correctly 1`] = `
   <li
     class="c2 c3"
     dir="ltr"
+    role="listitem"
   >
     <div
       class="c4"
@@ -1652,10 +1657,12 @@ exports[`RadioSchedule should render rtl radio schedules correctly 1`] = `
 <ul
   class="c0 c1"
   dir="rtl"
+  role="list"
 >
   <li
     class="c2 c3"
     dir="rtl"
+    role="listitem"
   >
     <div
       class="c4"
@@ -1797,6 +1804,7 @@ exports[`RadioSchedule should render rtl radio schedules correctly 1`] = `
   <li
     class="c2 c3"
     dir="rtl"
+    role="listitem"
   >
     <div
       class="c4"
@@ -1924,6 +1932,7 @@ exports[`RadioSchedule should render rtl radio schedules correctly 1`] = `
   <li
     class="c2 c3"
     dir="rtl"
+    role="listitem"
   >
     <div
       class="c4"
@@ -2051,6 +2060,7 @@ exports[`RadioSchedule should render rtl radio schedules correctly 1`] = `
   <li
     class="c2 c3"
     dir="rtl"
+    role="listitem"
   >
     <div
       class="c4"
