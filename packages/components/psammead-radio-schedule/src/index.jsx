@@ -13,13 +13,18 @@ const StartTimeWrapper = styled.div`
 `;
 
 // Reset default of <ul> style
-const StyledGrid = styled(Grid)`
+const StyledGrid = styled(Grid).attrs({
+  role: 'list',
+})`
   padding: 0;
   margin: 0;
 `;
 
 // Using flex-box on browsers that do not support grid will break grid fallback defined in psammead-grid
-const StyledFlexGrid = styled(Grid)`
+const StyledFlexGrid = styled(Grid).attrs(({ state }) => ({
+  role: 'listitem',
+  'data-e2e': state,
+}))`
   @supports (${grid}) {
     display: flex;
     flex-direction: column;
@@ -102,7 +107,7 @@ const programGridProps = {
     group0: 4,
     group1: 4,
     group2: 6,
-    group3: 2,
+    group3: 3,
     group4: 2,
     group5: 2,
   },
@@ -123,6 +128,7 @@ const RadioSchedule = ({ schedules, dir, ...props }) => (
         {...programGridProps}
         key={id}
         forwardedAs="li"
+        state={program.state}
       >
         {renderSchedule({ ...props, dir, program })}
       </StyledFlexGrid>
@@ -137,7 +143,7 @@ const programPropTypes = shape({
   link: string.isRequired,
   brandTitle: string.isRequired,
   episodeTitle: string.isRequired,
-  summary: string.isRequired,
+  summary: string,
   duration: string.isRequired,
   durationLabel: string.isRequired,
 });
