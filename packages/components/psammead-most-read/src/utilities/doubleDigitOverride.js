@@ -17,11 +17,11 @@ export const doubleDigitDefault = {
 // telegu, thai, tigrinya, turkce, ukranian, urdu, uzbek, vietnamese, yoruba (29)
 export const doubleDigitOverride = {
   arabic: {
-    group0: '2.5rem',
-    group1: '2.5rem',
-    group2: '2.5rem',
-    group3: '4rem',
-    group5: '3.7rem',
+    group0: '1.8rem',
+    group1: '1.8rem',
+    group2: '2.1rem',
+    group3: '3rem',
+    group5: '3rem',
   },
   azeri: {
     group0: '2.5rem',
@@ -185,11 +185,11 @@ export const doubleDigitOverride = {
     group5: '3.9rem',
   },
   urdu: {
-    group0: '1.25rem',
-    group1: '1.5rem',
-    group2: '1.5rem',
-    group3: '2rem',
-    group5: '2.07rem',
+    group0: '1.8rem',
+    group1: '1.8rem',
+    group2: '2.1rem',
+    group3: '3rem',
+    group5: '3rem',
   },
   uzbek: {
     group0: '2rem',
