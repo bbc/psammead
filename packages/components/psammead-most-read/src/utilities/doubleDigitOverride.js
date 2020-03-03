@@ -1,215 +1,60 @@
-// These default measurements are to be used for 2nd column minimum width.
-// Services which use this default:
-// afaanoromoo, afrique, amharic, gahuza, hausa, hindi, igbo, indonesia,
-// kyrgyz, serbian, somali, swahili, ukchina, zhongwen (14)
-export const doubleDigitDefault = {
-  group0: '2rem',
-  group1: '2.5rem',
-  group2: '3rem',
-  group3: '4rem',
-  group5: '3.9rem',
+import {
+  GEL_SPACING_DBL,
+  GEL_SPACING_TRPL,
+  GEL_SPACING_QUAD,
+  GEL_SPACING_QUIN,
+  GEL_SPACING_SEXT,
+  GEL_SPACING_SEPT,
+} from '@bbc/gel-foundations/spacings';
+
+// Services with fonts that have glyphs thinner than the majority of other fonts.
+// This was mainly based on the old overrides (ie. Any group0 value < 2rem).
+export const thinFontServices = [
+  'pashto',
+  'persian',
+  'tamil',
+  'telegu',
+  'turkce',
+  'urdu',
+];
+
+// If numberOfItems < 10, no extra spacing needs to be accounted for.
+export const singleDigitDefault = {
+  group0: GEL_SPACING_TRPL,
+  group1: GEL_SPACING_TRPL,
+  group2: GEL_SPACING_QUAD,
+  group3: GEL_SPACING_QUIN,
+  group5: GEL_SPACING_QUAD,
 };
 
-// These override measurements are for services with smaller characters and used for 2nd column minimum width.
-// Services which have unique overrides:
-// arabic, azeri, bengali, burmese, gahuza, gujarati, japanese, korean, marathi, mundo,
-// nepali, news, pashto, persian, pidgin, portugeuese, punjabi, russian, sinhala, tamil,
-// telegu, thai, tigrinya, turkce, ukranian, urdu, uzbek, vietnamese, yoruba (29)
-export const doubleDigitOverride = {
-  arabic: {
-    group0: '2.5rem',
-    group1: '2.5rem',
-    group2: '2.5rem',
-    group3: '4rem',
-    group5: '3.7rem',
-  },
-  azeri: {
-    group0: '2.5rem',
-    group1: '2.5rem',
-    group2: '2.5rem',
-    group3: '4rem',
-    group5: '3.9rem',
-  },
-  bengali: {
-    group0: '3rem',
-    group1: '2.1rem',
-    group2: '2.1rem',
-    group3: '3rem',
-    group5: '2.95rem',
-  },
-  burmese: {
-    group0: '2rem',
-    group1: '2.5rem',
-    group2: '3rem',
-    group3: '4rem',
-    group5: '3.95rem',
-  },
-  gujarati: {
-    group0: '2rem',
-    group1: '2.5rem',
-    group2: '3rem',
-    group3: '5rem',
-    group5: '4.75rem',
-  },
-  japanese: {
-    group0: '2.5rem',
-    group1: '3.5rem',
-    group2: '3.5rem',
-    group3: '4.6rem',
-    group5: '4.6rem',
-  },
-  korean: {
-    group0: '2rem',
-    group1: '2rem',
-    group2: '3rem',
-    group3: '4rem',
-    group5: '3.45rem',
-  },
-  marathi: {
-    group0: '2rem',
-    group1: '2rem',
-    group2: '2.5rem',
-    group3: '3.5rem',
-    group5: '3.5rem',
-  },
-  mundo: {
-    group0: '2rem',
-    group1: '2.5rem',
-    group2: '3rem',
-    group3: '4rem',
-    group5: '4.18rem',
-  },
-  nepali: {
-    group0: '2rem',
-    group1: '2rem',
-    group2: '2.5rem',
-    group3: '3.5rem',
-    group5: '3.3rem',
-  },
-  news: {
-    group0: '2rem',
-    group1: '2.5rem',
-    group2: '3rem',
-    group3: '4.25rem',
-    group5: '4.18rem',
-  },
-  pashto: {
-    group0: '1.25rem',
-    group1: '1.5rem',
-    group2: '1.5rem',
-    group3: '2rem',
-    group5: '2.05rem',
-  },
-  persian: {
-    group0: '1.25rem',
-    group1: '1.25rem',
-    group2: '1.25rem',
-    group3: '1.9rem',
-    group5: '2rem',
-  },
-  pidgin: {
-    group0: '2rem',
-    group1: '2.6rem',
-    group2: '2.75rem',
-    group3: '3.75rem',
-    group5: '3.9rem',
-  },
-  portuguese: {
-    group0: '2rem',
-    group1: '2.5rem',
-    group2: '3rem',
-    group3: '4.18rem',
-    group5: '4.18rem',
-  },
-  punjabi: {
-    group0: '2rem',
-    group1: '2rem',
-    group2: '2.75rem',
-    group3: '3.9rem',
-    group5: '3.9rem',
-  },
-  russian: {
-    group0: '2rem',
-    group1: '2rem',
-    group2: '2.75rem',
-    group3: '3.75rem',
-    group5: '4.16rem',
-  },
-  sinhala: {
-    group0: '2rem',
-    group1: '2rem',
-    group2: '2.5rem',
-    group3: '3.75rem',
-    group5: '3.5rem',
-  },
-  tamil: {
-    group0: '1.25rem',
-    group1: '1.5rem',
-    group2: '1.5rem',
-    group3: '2.5rem',
-    group5: '2.88rem',
-  },
-  telugu: {
-    group0: '1.5rem',
-    group1: '2rem',
-    group2: '2rem',
-    group3: '3.5rem',
-    group5: '3.58rem',
-  },
-  thai: {
-    group0: '2rem',
-    group1: '2.5rem',
-    group2: '2.5rem',
-    group3: '3.5rem',
-    group5: '3.4rem',
-  },
-  tigrinya: {
-    group0: '2rem',
-    group1: '2.5rem',
-    group2: '2.75rem',
-    group3: '4rem',
-    group5: '3.9rem',
-  },
-  turkce: {
-    group0: '1.5rem',
-    group1: '2.5rem',
-    group2: '2.75rem',
-    group3: '3.75rem',
-    group5: '4.17rem',
-  },
-  ukrainian: {
-    group0: '2rem',
-    group1: '2rem',
-    group2: '2.5rem',
-    group3: '4rem',
-    group5: '3.9rem',
-  },
-  urdu: {
-    group0: '1.25rem',
-    group1: '1.5rem',
-    group2: '1.5rem',
-    group3: '2rem',
-    group5: '2.07rem',
-  },
-  uzbek: {
-    group0: '2rem',
-    group1: '2.5rem',
-    group2: '2.5rem',
-    group3: '4rem',
-    group5: '3.9rem',
-  },
-  vietnamese: {
-    group0: '2rem',
-    group1: '2.5rem',
-    group2: '2.5rem',
-    group3: '4rem',
-    group5: '3.89rem',
-  },
-  yoruba: {
-    group0: '2rem',
-    group1: '2.5rem',
-    group2: '3rem',
-    group3: '4rem',
-    group5: '3.9rem',
-  },
+export const doubleDigitDefault = {
+  group0: GEL_SPACING_QUIN,
+  group1: GEL_SPACING_QUIN,
+  group2: GEL_SPACING_SEXT,
+  group3: GEL_SPACING_QUIN,
+  group5: '3.9rem',
+  group0_column: GEL_SPACING_QUAD,
+  group1_column: GEL_SPACING_QUIN,
+  group2_column: GEL_SPACING_SEXT,
+  group3_5_column: '4rem',
+};
+
+export const singleDigitThin = {
+  group0: GEL_SPACING_DBL,
+  group1: GEL_SPACING_TRPL,
+  group2: GEL_SPACING_TRPL,
+  group3: GEL_SPACING_QUAD,
+  group5: GEL_SPACING_QUAD,
+};
+
+export const doubleDigitThin = {
+  group0: GEL_SPACING_DBL,
+  group1: GEL_SPACING_TRPL,
+  group2: GEL_SPACING_TRPL,
+  group3: GEL_SPACING_TRPL,
+  group5: GEL_SPACING_QUIN,
+  group0_column: GEL_SPACING_QUAD,
+  group1_column: GEL_SPACING_QUIN,
+  group2_column: GEL_SPACING_SEXT,
+  group3_5_column: GEL_SPACING_SEPT,
 };
