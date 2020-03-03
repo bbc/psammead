@@ -143,7 +143,7 @@ const Image = <img src="https://foobar.com/image.jpg" />;
 
 const LiveComponent = ({ headline, service, dir }) => (
   <span role="text">
-    <LiveLabel service={service} dir={dir}>
+    <LiveLabel service={service} dir={dir} aria-hidden="true">
       LIVE
     </LiveLabel>
     <VisuallyHiddenText lang="en-GB">Live, </VisuallyHiddenText>
@@ -222,6 +222,8 @@ The `StoryPromo` component is designed to be used within a link element to allow
 This component uses full semantic markup for the `Headline`, `Summary`, and `Link`, using `h3`, `p` and `a` respectively. Other accessibility factors such as image alt text and time elements are passed in as props and aren't explicitly set in this component.
 
 The link is nested inside the `h3` for better support with VoiceOver Mac and Safari. We use the `faux block link` pattern which makes the entire block clickable, whilst also enabling links nested within in that block to also be clickable.
+
+The `LiveLabel` example above shows this component being hidden to screen readers, and has visually hidden text rendered alongside it. This is to ensure the screen reader announces the word 'Live' correctly. This does not need to be accounted for in other languages.
 
 ## Roadmap
 
