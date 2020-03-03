@@ -11,11 +11,7 @@ const newsServiceDecorator = withServicesKnob({
   defaultService: 'news',
 });
 
-const pageTypes = {
-  frontPages: 'twoColumn', // Product requirement to never show multi column layout for front pages
-  articlePages: 'multiColumn', // Default layout for Most Read
-  styPages: 'oneColumn', // STY pages only want the component to render in one column for all breakpoints
-};
+const pageTypes = ['oneColumn', 'twoColumn', 'multiColumn'];
 
 const renderList = ({
   numberOfItems,
