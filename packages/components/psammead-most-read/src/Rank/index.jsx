@@ -144,11 +144,6 @@ const MostReadRank = ({
   const rank = numerals[listIndex];
   const RankWrapper = getColumnWrapper(columnLayout);
 
-  // const RankWrapper =
-  //   columnLayout === ('oneColumn' || 'twoColumn')
-  //     ? TwoColumnWrapper
-  //     : MultiColumnWrapper;
-
   return (
     <RankWrapper
       listIndex={listIndex}
