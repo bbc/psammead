@@ -19,8 +19,8 @@ const mostReadItemGridProps = columnLayout => ({
     group2: 6,
     group3: {
       oneColumn: 6,
-      twoColumn: 4,
-      multiColumn: 4,
+      twoColumn: 3,
+      multiColumn: 3,
     }[columnLayout],
     group4: {
       oneColumn: 8,
@@ -29,7 +29,7 @@ const mostReadItemGridProps = columnLayout => ({
     }[columnLayout],
     group5: {
       oneColumn: 20,
-      twoColumn: 4,
+      twoColumn: 10,
       multiColumn: 4,
     }[columnLayout],
   },

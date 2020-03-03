@@ -196,7 +196,7 @@ storiesOf('Components|MostRead/List', module)
           dir,
           service: getServiceVariant({ service, variant }),
           script,
-          columnLayout: 'oneColumn',
+          columnLayout: 'twoColumn',
           withTimestamp: true,
         }),
       ),
