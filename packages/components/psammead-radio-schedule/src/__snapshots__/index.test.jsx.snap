@@ -564,6 +564,7 @@ exports[`RadioSchedule should render ltr radio schedules correctly 1`] = `
 >
   <li
     class="c2 c3"
+    data-e2e="live"
     dir="ltr"
     role="listitem"
   >
@@ -706,6 +707,7 @@ exports[`RadioSchedule should render ltr radio schedules correctly 1`] = `
   </li>
   <li
     class="c2 c3"
+    data-e2e="onDemand"
     dir="ltr"
     role="listitem"
   >
@@ -834,6 +836,7 @@ exports[`RadioSchedule should render ltr radio schedules correctly 1`] = `
   </li>
   <li
     class="c2 c3"
+    data-e2e="onDemand"
     dir="ltr"
     role="listitem"
   >
@@ -962,6 +965,7 @@ exports[`RadioSchedule should render ltr radio schedules correctly 1`] = `
   </li>
   <li
     class="c2 c3"
+    data-e2e="next"
     dir="ltr"
     role="listitem"
   >
@@ -1661,6 +1665,7 @@ exports[`RadioSchedule should render rtl radio schedules correctly 1`] = `
 >
   <li
     class="c2 c3"
+    data-e2e="live"
     dir="rtl"
     role="listitem"
   >
@@ -1801,6 +1806,7 @@ exports[`RadioSchedule should render rtl radio schedules correctly 1`] = `
   </li>
   <li
     class="c2 c3"
+    data-e2e="onDemand"
     dir="rtl"
     role="listitem"
   >
@@ -1929,6 +1935,7 @@ exports[`RadioSchedule should render rtl radio schedules correctly 1`] = `
   </li>
   <li
     class="c2 c3"
+    data-e2e="onDemand"
     dir="rtl"
     role="listitem"
   >
@@ -2057,6 +2064,7 @@ exports[`RadioSchedule should render rtl radio schedules correctly 1`] = `
   </li>
   <li
     class="c2 c3"
+    data-e2e="next"
     dir="rtl"
     role="listitem"
   >
