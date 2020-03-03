@@ -3,6 +3,10 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 0.1.0-alpha.19 | [PR#3197](https://github.com/bbc/psammead/pull/3197) Add data-e2e attribute to program card element to contain the state of the program |
+| 0.1.0-alpha.18 | [PR#3184](https://github.com/bbc/psammead/pull/3184) Change display of program cards in group3 & update stories to include 4 cards |
+| 0.1.0-alpha.17 | [PR#3160](https://github.com/bbc/psammead/pull/3160) Uniformise visually-hidden state label |
+| 0.1.0-alpha.16 | [PR#3179](https://github.com/bbc/psammead/pull/3179) Make summary not required for Program Card |
 | 0.1.0-alpha.15 | [PR#3181](https://github.com/bbc/psammead/pull/3181) Alias radio schedule parent grid to be a `ul` with grid items aliased as `li` |
 | 0.1.0-alpha.14 | [PR#3164](https://github.com/bbc/psammead/pull/3164) Talos - Bump Dependencies - @bbc/psammead-timestamp-container |
 | 0.1.0-alpha.13 | [PR#3153](https://github.com/bbc/psammead/pull/3153) Talos - Bump Dependencies - @bbc/psammead-timestamp-container |

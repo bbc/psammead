@@ -37,7 +37,7 @@ exports[`SectionLabel When hideSectionHeader is true should add styling to hide 
   font-weight: 400;
   font-style: normal;
   color: #222222;
-  background-color: #FFFFFF;
+  background-color: #FDFDFD;
   margin: 1rem 0;
   padding-right: 0.5rem;
   display: -webkit-box;
@@ -52,6 +52,7 @@ exports[`SectionLabel When hideSectionHeader is true should add styling to hide 
 
 .c0 {
   position: relative;
+  z-index: 0;
   margin-top: 2rem;
   -webkit-clip-path: inset(100%);
   clip-path: inset(100%);
@@ -189,7 +190,7 @@ exports[`SectionLabel With bar With linking title should render correctly 1`] = 
   font-weight: 400;
   font-style: normal;
   color: #222222;
-  background-color: #FFFFFF;
+  background-color: #FDFDFD;
   margin: 1rem 0;
   padding-right: 0.5rem;
   display: -webkit-box;
@@ -230,6 +231,7 @@ exports[`SectionLabel With bar With linking title should render correctly 1`] = 
 
 .c0 {
   position: relative;
+  z-index: 0;
   margin-top: 2rem;
 }
 
@@ -411,7 +413,7 @@ exports[`SectionLabel With bar With linking title should render correctly with a
   font-weight: 400;
   font-style: normal;
   color: #222222;
-  background-color: #FFFFFF;
+  background-color: #FDFDFD;
   margin: 1rem 0;
   padding-left: 0.5rem;
   display: -webkit-box;
@@ -452,6 +454,7 @@ exports[`SectionLabel With bar With linking title should render correctly with a
 
 .c0 {
   position: relative;
+  z-index: 0;
   margin-top: 2rem;
 }
 
@@ -633,7 +636,7 @@ exports[`SectionLabel With bar With linking title should render correctly with e
   font-weight: 400;
   font-style: normal;
   color: #222222;
-  background-color: #FFFFFF;
+  background-color: #FDFDFD;
   margin: 1rem 0;
   padding-right: 0.5rem;
   display: -webkit-box;
@@ -674,6 +677,7 @@ exports[`SectionLabel With bar With linking title should render correctly with e
 
 .c0 {
   position: relative;
+  z-index: 0;
   margin-top: 2rem;
 }
 
@@ -855,7 +859,7 @@ exports[`SectionLabel With bar With linking title should render correctly with e
   font-weight: 400;
   font-style: normal;
   color: #222222;
-  background-color: #FFFFFF;
+  background-color: #FDFDFD;
   margin: 1rem 0;
   padding-right: 0.5rem;
   display: -webkit-box;
@@ -896,6 +900,7 @@ exports[`SectionLabel With bar With linking title should render correctly with e
 
 .c0 {
   position: relative;
+  z-index: 0;
   margin-top: 2rem;
 }
 
@@ -1065,7 +1070,7 @@ exports[`SectionLabel With bar With plain title should render correctly 1`] = `
   font-weight: 400;
   font-style: normal;
   color: #222222;
-  background-color: #FFFFFF;
+  background-color: #FDFDFD;
   margin: 1rem 0;
   padding-right: 0.5rem;
   display: -webkit-box;
@@ -1085,6 +1090,7 @@ exports[`SectionLabel With bar With plain title should render correctly 1`] = `
 
 .c0 {
   position: relative;
+  z-index: 0;
   margin-top: 2rem;
 }
 
@@ -1220,7 +1226,7 @@ exports[`SectionLabel With bar With plain title should render correctly with ara
   font-weight: 400;
   font-style: normal;
   color: #222222;
-  background-color: #FFFFFF;
+  background-color: #FDFDFD;
   margin: 1rem 0;
   padding-left: 0.5rem;
   display: -webkit-box;
@@ -1240,6 +1246,7 @@ exports[`SectionLabel With bar With plain title should render correctly with ara
 
 .c0 {
   position: relative;
+  z-index: 0;
   margin-top: 2rem;
 }
 
@@ -1375,7 +1382,7 @@ exports[`SectionLabel With bar With plain title should render correctly with exp
   font-weight: 400;
   font-style: normal;
   color: #222222;
-  background-color: #FFFFFF;
+  background-color: #FDFDFD;
   margin: 1rem 0;
   padding-right: 0.5rem;
   display: -webkit-box;
@@ -1395,6 +1402,7 @@ exports[`SectionLabel With bar With plain title should render correctly with exp
 
 .c0 {
   position: relative;
+  z-index: 0;
   margin-top: 2rem;
 }
 
@@ -1530,7 +1538,7 @@ exports[`SectionLabel With bar With plain title should render correctly with exp
   font-weight: 400;
   font-style: normal;
   color: #222222;
-  background-color: #FFFFFF;
+  background-color: #FDFDFD;
   margin: 1rem 0;
   padding-right: 0.5rem;
   display: -webkit-box;
@@ -1550,6 +1558,7 @@ exports[`SectionLabel With bar With plain title should render correctly with exp
 
 .c0 {
   position: relative;
+  z-index: 0;
   margin-top: 2rem;
 }
 
@@ -1697,7 +1706,7 @@ exports[`SectionLabel Without bar With linking title should render correctly 1`]
   font-weight: 400;
   font-style: normal;
   color: #222222;
-  background-color: #FFFFFF;
+  background-color: #FDFDFD;
   margin: 1rem 0;
   padding-right: 0.5rem;
   display: -webkit-box;
@@ -1733,6 +1742,7 @@ exports[`SectionLabel Without bar With linking title should render correctly 1`]
 
 .c0 {
   position: relative;
+  z-index: 0;
   margin-top: 2rem;
 }
 
@@ -1896,7 +1906,7 @@ exports[`SectionLabel Without bar With linking title should render correctly wit
   font-weight: 400;
   font-style: normal;
   color: #222222;
-  background-color: #FFFFFF;
+  background-color: #FDFDFD;
   margin: 1rem 0;
   padding-left: 0.5rem;
   display: -webkit-box;
@@ -1932,6 +1942,7 @@ exports[`SectionLabel Without bar With linking title should render correctly wit
 
 .c0 {
   position: relative;
+  z-index: 0;
   margin-top: 2rem;
 }
 
@@ -2095,7 +2106,7 @@ exports[`SectionLabel Without bar With linking title should render correctly wit
   font-weight: 400;
   font-style: normal;
   color: #222222;
-  background-color: #FFFFFF;
+  background-color: #FDFDFD;
   margin: 1rem 0;
   padding-right: 0.5rem;
   display: -webkit-box;
@@ -2131,6 +2142,7 @@ exports[`SectionLabel Without bar With linking title should render correctly wit
 
 .c0 {
   position: relative;
+  z-index: 0;
   margin-top: 2rem;
 }
 
@@ -2282,7 +2294,7 @@ exports[`SectionLabel Without bar With plain title should render correctly 1`] =
   font-weight: 400;
   font-style: normal;
   color: #222222;
-  background-color: #FFFFFF;
+  background-color: #FDFDFD;
   margin: 1rem 0;
   padding-right: 0.5rem;
   display: -webkit-box;
@@ -2297,6 +2309,7 @@ exports[`SectionLabel Without bar With plain title should render correctly 1`] =
 
 .c0 {
   position: relative;
+  z-index: 0;
   margin-top: 2rem;
 }
 
@@ -2414,7 +2427,7 @@ exports[`SectionLabel Without bar With plain title should render correctly with 
   font-weight: 400;
   font-style: normal;
   color: #222222;
-  background-color: #FFFFFF;
+  background-color: #FDFDFD;
   margin: 1rem 0;
   padding-left: 0.5rem;
   display: -webkit-box;
@@ -2429,6 +2442,7 @@ exports[`SectionLabel Without bar With plain title should render correctly with 
 
 .c0 {
   position: relative;
+  z-index: 0;
   margin-top: 2rem;
 }
 
@@ -2546,7 +2560,7 @@ exports[`SectionLabel Without bar With plain title should render correctly with 
   font-weight: 400;
   font-style: normal;
   color: #222222;
-  background-color: #FFFFFF;
+  background-color: #FDFDFD;
   margin: 1rem 0;
   padding-right: 0.5rem;
   display: -webkit-box;
@@ -2561,6 +2575,7 @@ exports[`SectionLabel Without bar With plain title should render correctly with 
 
 .c0 {
   position: relative;
+  z-index: 0;
   margin-top: 2rem;
 }
 
