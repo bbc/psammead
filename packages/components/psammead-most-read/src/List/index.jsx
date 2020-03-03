@@ -19,7 +19,6 @@ const OneColumnGrid = styled(Grid).attrs({
     ${props => props.numberOfItems},
     [col-start] auto [col-end]
   );
-  }
 `;
 
 const TwoColumnGrid = styled(Grid).attrs({
