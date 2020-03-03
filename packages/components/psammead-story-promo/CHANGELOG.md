@@ -3,7 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 | ------- | ----------- |
-| 5.0.0 | [PR#xxxx](https://github.com/bbc/psammead/pull/xxxx) Live Label is no longer aria hidden |
+| 5.0.0 | [PR#3202](https://github.com/bbc/psammead/pull/3202) Live Label is no longer aria hidden |
 | 4.0.0 | [PR#3154](https://github.com/bbc/psammead/pull/3154) Remove alpha tag |
 | 4.0.0-alpha.13 | [PR#3150](https://github.com/bbc/psammead/pull/3150) Fix fallback width for Leading promo |
 | 4.0.0-alpha.12 | [PR#3135](https://github.com/bbc/psammead/pull/3135) Talos - Bump Dependencies - @bbc/gel-foundations |
