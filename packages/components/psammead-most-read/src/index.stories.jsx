@@ -47,6 +47,7 @@ const renderList = ({
       dir,
       withTimestamp,
       maxTwoColumns,
+      columnLayout,
     }).map(item => item)}
   </MostReadList>
 );
@@ -66,13 +67,21 @@ const renderLink = ({ dir, service, script, withTimestamp }) => {
   );
 };
 
-const renderRank = ({ dir, service, script, listIndex, numberOfItems }) => (
+const renderRank = ({
+  dir,
+  service,
+  script,
+  listIndex,
+  numberOfItems,
+  columnLayout,
+}) => (
   <MostReadRank
     service={service}
     script={script}
     listIndex={listIndex}
     numberOfItems={numberOfItems}
     dir={dir}
+    columnlayout={columnLayout}
   />
 );
 
@@ -188,6 +197,7 @@ storiesOf('Components|MostRead/List', module)
           service: getServiceVariant({ service, variant }),
           script,
           columnLayout: 'oneColumn',
+          withTimestamp: true,
         }),
       ),
     {

@@ -44,7 +44,7 @@ const doubleDigitWidth = ({ service }) => {
     : doubleDigitDefault;
 };
 
-const TwoColumnWrapper = styled.div`
+const OneColumnWrapper = styled.div`
   @media (max-width: ${GEL_GROUP_0_SCREEN_WIDTH_MAX}) {
     min-width: ${props =>
       listHasDoubleDigits(props) ? doubleDigitWidth(props).group0 : 'auto'};
@@ -70,6 +70,24 @@ const TwoColumnWrapper = styled.div`
     @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
       min-width: ${props =>
         listHasDoubleDigits(props) ? doubleDigitWidth(props).group3 : 'auto'};
+    }
+  }
+`;
+
+const TwoColumnWrapper = styled(OneColumnWrapper)`
+  @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
+    min-width: ${props =>
+      columnIncludesDoubleDigits(props, false)
+        ? doubleDigitWidth(props).group3
+        : 'auto'};
+  }
+  /* different number order for when css grid is supported  */
+  @supports (${grid}) {
+    @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
+      min-width: ${props =>
+        columnIncludesDoubleDigits(props, true)
+          ? doubleDigitWidth(props).group3
+          : 'auto'};
     }
   }
 `;
@@ -107,6 +125,13 @@ const serviceNumerals = service => {
     : WesternArabic;
 };
 
+const getColumnWrapper = columnWrapper =>
+  ({
+    oneColumn: OneColumnWrapper,
+    twoColumn: TwoColumnWrapper,
+    multiColumn: MultiColumnWrapper,
+  }[columnWrapper]);
+
 const MostReadRank = ({
   service,
   script,
@@ -117,7 +142,7 @@ const MostReadRank = ({
 }) => {
   const numerals = serviceNumerals(service);
   const rank = numerals[listIndex];
-  const RankWrapper = TwoColumnWrapper;
+  const RankWrapper = getColumnWrapper(columnLayout);
 
   // const RankWrapper =
   //   columnLayout === ('oneColumn' || 'twoColumn')
