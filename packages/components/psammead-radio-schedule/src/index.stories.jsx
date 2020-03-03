@@ -9,7 +9,7 @@ import {
   renderProgramCard,
   renderRadioSchedule,
   sentenceCase,
-  stateTypes,
+  uniqueStates,
 } from './testHelpers/helper';
 import notes from '../README.md';
 import StartTime from './StartTime';
@@ -40,7 +40,7 @@ const programCardStories = storiesOf(PROGRAM_CARD_STORIES, module).addDecorator(
   withKnobs,
 );
 
-stateTypes.forEach(state => {
+uniqueStates.forEach(state => {
   programCardStories.add(
     `${state}`,
     ({ service }) =>
@@ -62,7 +62,7 @@ programCardStories.add(
 );
 
 buildRTLSubstories(PROGRAM_CARD_STORIES, {
-  include: [...stateTypes],
+  include: [...uniqueStates],
 });
 
 storiesOf('Components|RadioSchedule/StartTime', module)

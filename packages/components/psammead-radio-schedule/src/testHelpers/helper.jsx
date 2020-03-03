@@ -12,15 +12,19 @@ export const sentenceCase = text =>
     .charAt(0)
     .toUpperCase() + text.substring(1);
 
-export const stateTypes = ['onDemand', 'live', 'next'];
+// Will remove and clean up in future PRs
+export const stateTypes = ['live', 'onDemand', 'onDemand', 'next'];
+export const uniqueStates = ['live', 'onDemand', 'next'];
 
 const getSchedule = (service, withLongSummary) => {
   const { text, articlePath, longText } = TEXT_VARIANTS[service];
+  const programDurationLabel =
+    service === 'arabic' ? 'المدة الزمنية' : 'Duration';
 
   return stateTypes.map((state, index) => ({
     id: index,
     state,
-    stateLabel: sentenceCase(state),
+    stateLabel: service === 'arabic' ? 'مباشر' : sentenceCase(state),
     startTime: 1566914061212,
     link: articlePath,
     brandTitle: text,
@@ -30,7 +34,7 @@ const getSchedule = (service, withLongSummary) => {
         ? `${longText} ${longText}`
         : longText,
     duration: 'PT45M',
-    durationLabel: 'Duration',
+    durationLabel: programDurationLabel,
   }));
 };
 
@@ -47,6 +51,8 @@ export const renderProgramCard = ({
   const { text, articlePath, longText, dir, locale, timezone } = TEXT_VARIANTS[
     service
   ];
+  const programDurationLabel = dir === 'rtl' ? 'المدة الزمنية' : durationLabel;
+  const programStateLabel = dir === 'rtl' ? 'مباشر' : stateLabel;
 
   return (
     <ProgramCard
@@ -60,8 +66,8 @@ export const renderProgramCard = ({
       startTime={startTime}
       state={state}
       link={articlePath}
-      durationLabel={durationLabel}
-      stateLabel={stateLabel}
+      durationLabel={programDurationLabel}
+      stateLabel={programStateLabel}
       timezone={timezone}
       locale={locale}
     />
