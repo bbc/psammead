@@ -119,13 +119,13 @@ CanonicalMediaPlayer.propTypes = {
   noJsClassName: string,
   noJsMessage: string.isRequired,
   mediaInfo: shape({
-    title: string.isRequired,
+    title: string,
     datetime: string,
     duration: string,
     durationSpoken: string,
     type: oneOf(['video', 'audio']),
     guidanceMessage: string,
-  }).isRequired,
+  }),
 };
 
 CanonicalMediaPlayer.defaultProps = {
@@ -135,6 +135,7 @@ CanonicalMediaPlayer.defaultProps = {
   placeholderSrc: null,
   placeholderSrcset: null,
   noJsClassName: null,
+  mediaInfo: {},
 };
 
 MediaMessage.propTypes = {
