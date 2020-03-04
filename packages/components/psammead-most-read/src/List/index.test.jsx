@@ -52,7 +52,7 @@ describe('MostReadList', () => {
 
   shouldMatchSnapshot(
     'should render with ltr news items with max two columns',
-    <MostReadList numberOfItems={10}>
+    <MostReadList numberOfItems={10} columnLayout="twoColumn">
       {getItemWrapperArray({
         numberOfItems: 10,
         service: 'news',
