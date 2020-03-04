@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 1.1.11 | [PR#3208](https://github.com/bbc/psammead/pull/3208) Update direction in RTL story |
 | 1.1.10 | [PR#3135](https://github.com/bbc/psammead/pull/3135) Talos - Bump Dependencies - @bbc/gel-foundations |
 | 1.1.9 | [PR#3129](https://github.com/bbc/psammead/pull/3129) Talos - Bump Dependencies - @bbc/gel-foundations |
 | 1.1.8 | [PR#3107](https://github.com/bbc/psammead/pull/3107) Pass direction to Grid stories |
