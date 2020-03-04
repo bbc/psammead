@@ -1,15 +1,27 @@
-const mostReadListGridProps = {
+const mostReadListGridProps = columnLayout => ({
   enableGelGutters: true,
   enableGelMargins: true,
   columns: {
     group0: 6,
     group1: 6,
     group2: 6,
-    group3: 6,
-    group4: 8,
-    group5: 20,
+    group3: {
+      oneColumn: 1,
+      twoColumn: 6,
+      multiColumn: 6,
+    }[columnLayout],
+    group4: {
+      oneColumn: 1,
+      twoColumn: 6,
+      multiColumn: 6,
+    }[columnLayout],
+    group5: {
+      oneColumn: 1,
+      twoColumn: 8,
+      multiColumn: 20,
+    }[columnLayout],
   },
-};
+});
 
 const mostReadItemGridProps = columnLayout => ({
   item: true,

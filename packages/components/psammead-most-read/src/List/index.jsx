@@ -61,7 +61,7 @@ const MostReadList = ({ numberOfItems, dir, columnLayout, children }) => {
   const MostReadListGrid = getColumnLayout(columnLayout);
   return (
     <MostReadListGrid
-      {...mostReadListGridProps}
+      {...mostReadListGridProps(columnLayout)}
       dir={dir}
       numberOfItems={numberOfItems}
       forwardedAs="ol"
