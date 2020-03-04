@@ -11,7 +11,6 @@ import {
 export const thinFontServices = [
   'arabic',
   'bengali',
-  'korean',
   'pashto',
   'persian',
   'marathi',
@@ -57,8 +56,8 @@ export const doubleDigitThin = {
   group5: GEL_SPACING_TRPL,
   // These values are used to align the rank when a double digit exists in the column
   group0_1_column: GEL_SPACING_QUAD,
-  group1_1_column: GEL_SPACING_QUIN,
-  group2_1_column: GEL_SPACING_QUIN,
+  group1_1_column: GEL_SPACING_QUAD,
+  group2_1_column: GEL_SPACING_QUAD,
   group3_2_column: GEL_SPACING_SEXT,
   group5_5_column: GEL_SPACING_SEXT,
 };
