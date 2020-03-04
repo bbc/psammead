@@ -97,7 +97,6 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
 @media (min-width:80rem) {
   .c1 {
     grid-auto-flow: row;
-    grid-template-rows: repeat( 5,[col-start] auto [col-end] );
   }
 }
 
@@ -737,7 +736,6 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
 @media (min-width:80rem) {
   .c1 {
     grid-auto-flow: row;
-    grid-template-rows: repeat( 5,[col-start] auto [col-end] );
   }
 }
 
@@ -1377,7 +1375,6 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
 @media (min-width:80rem) {
   .c1 {
     grid-auto-flow: row;
-    grid-template-rows: repeat( 5,[col-start] auto [col-end] );
   }
 }
 
@@ -2650,7 +2647,6 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
 @media (min-width:80rem) {
   .c1 {
     grid-auto-flow: row;
-    grid-template-rows: repeat( 5,[col-start] auto [col-end] );
   }
 }
 

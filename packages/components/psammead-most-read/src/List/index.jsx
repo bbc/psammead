@@ -33,10 +33,6 @@ const TwoColumnGrid = styled(OneColumnGrid)`
 const MultiColumnGrid = styled(TwoColumnGrid)`
   @media (min-width: ${GEL_GROUP_5_SCREEN_WIDTH_MIN}) {
     grid-auto-flow: row;
-    grid-template-rows: repeat(
-      ${props => Math.floor(props.numberOfItems / 2)},
-      [col-start] auto [col-end]
-    );
   }
 `;
 
