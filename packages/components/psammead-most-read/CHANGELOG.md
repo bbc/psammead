@@ -3,7 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
-| 3.0.0 | [PR#3201](https://github.com/bbc/psammead/pull/3201) Refactor ItemWrapper in MostRead |
+| 3.0.0 | [PR#3201](https://github.com/bbc/psammead/pull/3201) Refactor RankWrapper in MostRead |
 | 2.0.2 | [PR#3199](https://github.com/bbc/psammead/pull/3199) Use Latin numerals for Arabic and Urdu rank |
 | 2.0.1 | [PR#3175](https://github.com/bbc/psammead/pull/3175) Fix spacing for pidgin on group2 breakpoint for MostRead |
 | 2.0.0 | [PR#3120](https://github.com/bbc/psammead/pull/3120) Remove `MostRead` and `MostReadSection` as well as other cleanup |
