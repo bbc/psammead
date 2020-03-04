@@ -21,7 +21,13 @@ const OneColumnGrid = styled(Grid).attrs({
   );
 `;
 
-const TwoColumnGrid = styled(OneColumnGrid)`
+const TwoColumnGrid = styled(Grid).attrs({
+  role: 'list',
+})`
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  grid-auto-flow: column;
   grid-template-rows: repeat(
     ${props => Math.ceil(props.numberOfItems / 2)},
     [col-start] auto [col-end]
