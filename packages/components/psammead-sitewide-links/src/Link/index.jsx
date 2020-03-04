@@ -20,7 +20,7 @@ const StyleLinkText = styled.span`
 `;
 
 const Link = ({ text, href, inline, lang }) => (
-  <StyledLink {...(lang && { lang })} inline={inline} href={href}>
+  <StyledLink lang={lang} inline={inline} href={href}>
     <StyleLinkText>{text}</StyleLinkText>
   </StyledLink>
 );
