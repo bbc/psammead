@@ -129,7 +129,7 @@ export const MostReadItemWrapper = ({ dir, children, columnLayout }) => (
 MostReadItemWrapper.propTypes = {
   children: node.isRequired,
   dir: oneOf(['rtl', 'ltr']),
-  columnLayout: string,
+  columnLayout: oneOf(['oneColumn', 'twoColumn', 'multiColumn']),
 };
 
 MostReadItemWrapper.defaultProps = {

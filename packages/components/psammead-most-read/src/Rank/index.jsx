@@ -162,7 +162,7 @@ MostReadRank.propTypes = {
   listIndex: number.isRequired,
   numberOfItems: number.isRequired,
   dir: oneOf(['rtl', 'ltr']),
-  columnLayout: string,
+  columnLayout: oneOf(['oneColumn', 'twoColumn', 'multiColumn']),
 };
 
 MostReadRank.defaultProps = {
