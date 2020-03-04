@@ -206,7 +206,7 @@ const Bulletin = ({
                 </VisuallyHiddenText>
               )}
               {isLive && (
-                <LiveLabel service={service} dir={dir}>
+                <LiveLabel service={service} dir={dir} ariaHidden>
                   {`${liveText} `}
                 </LiveLabel>
               )}
