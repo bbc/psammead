@@ -11,7 +11,6 @@ import {
 } from '@bbc/psammead-locales/numerals';
 import {
   GEL_GROUP_5_SCREEN_WIDTH_MIN,
-  GEL_GROUP_4_SCREEN_WIDTH_MAX,
   GEL_GROUP_3_SCREEN_WIDTH_MIN,
   GEL_GROUP_2_SCREEN_WIDTH_MIN,
   GEL_GROUP_2_SCREEN_WIDTH_MAX,
@@ -29,99 +28,7 @@ import {
   singleDigitDefault,
   singleDigitThin,
   thinFontServices,
-} from '../utilities/doubleDigitOverride';
-
-// For additional spacing for numerals in the right column because of '10' being double digits
-const isOnSecondColumn = ({ listIndex, numberOfItems }, supportsGrid) =>
-  supportsGrid ? listIndex > Math.ceil(numberOfItems / 2) : listIndex % 2 === 0;
-
-const listHasDoubleDigits = ({ numberOfItems }) => numberOfItems >= 9;
-
-// This checks whether the 2nd column contains a double digit value
-const columnIncludesDoubleDigits = (props, supportsGrid) =>
-  isOnSecondColumn(props, supportsGrid) && listHasDoubleDigits(props);
-
-const doubleDigitCheck = numberOfItems => {
-  const singleDigitFunctions = {
-    default: singleDigitDefault,
-    thin: singleDigitThin,
-    name: 'single',
-  };
-  const doubleDigitFunctions = {
-    default: doubleDigitDefault,
-    thin: doubleDigitThin,
-    name: 'double',
-  };
-
-  return listHasDoubleDigits({ numberOfItems })
-    ? doubleDigitFunctions
-    : singleDigitFunctions;
-};
-
-const fontWeight = ({ service, numberOfItems }) => {
-  return thinFontServices.includes(service)
-    ? doubleDigitCheck(numberOfItems).thin
-    : doubleDigitCheck(numberOfItems).default;
-};
-
-const isFiveOrTen = ({ listIndex, service, numberOfItems }) => {
-  return listIndex === 5 || listIndex === 10
-    ? fontWeight({ service, numberOfItems }).group3_5_column
-    : doubleDigitThin.group5;
-};
-
-const TwoColumnWrapper = styled.div`
-  @media (max-width: ${GEL_GROUP_0_SCREEN_WIDTH_MAX}) {
-    min-width: ${props =>
-      listHasDoubleDigits(props)
-        ? fontWeight(props).group0_column
-        : fontWeight(props).group0};
-  }
-  @media (min-width: ${GEL_GROUP_1_SCREEN_WIDTH_MIN}) and (max-width: ${GEL_GROUP_1_SCREEN_WIDTH_MAX}) {
-    min-width: ${props =>
-      listHasDoubleDigits(props)
-        ? fontWeight(props).group1_column
-        : fontWeight(props).group1};
-  }
-  @media (min-width: ${GEL_GROUP_2_SCREEN_WIDTH_MIN}) and (max-width: ${GEL_GROUP_2_SCREEN_WIDTH_MAX}) {
-    min-width: ${props =>
-      listHasDoubleDigits(props)
-        ? fontWeight(props).group2_column
-        : fontWeight(props).group2};
-  }
-  @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) and (max-width: ${GEL_GROUP_4_SCREEN_WIDTH_MAX}) {
-    min-width: ${props =>
-      columnIncludesDoubleDigits(props, false)
-        ? fontWeight(props).group3_5_column
-        : fontWeight(props).group3};
-  }
-  @supports (${grid}) {
-    @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) and (max-width: ${GEL_GROUP_4_SCREEN_WIDTH_MAX}) {
-      min-width: ${props =>
-        columnIncludesDoubleDigits(props, true)
-          ? fontWeight(props).group3_5_column
-          : fontWeight(props).group3};
-    }
-  }
-`;
-
-const MultiColumnWrapper = styled(TwoColumnWrapper)`
-  @media (min-width: ${GEL_GROUP_5_SCREEN_WIDTH_MIN}) {
-    min-width: ${props =>
-      listHasDoubleDigits(props)
-        ? isFiveOrTen(props)
-        : fontWeight(props).group5};
-  }
-`;
-
-const StyledSpan = styled.span`
-  ${({ service }) => getSerifLight(service)}
-  ${({ script }) => script && getFoolscap(script)};
-  position: relative;
-  color: ${C_POSTBOX};
-  margin: 0; /* Reset */
-  padding: 0;
-`;
+} from '../utilities/rankMinWidth';
 
 const serviceNumerals = service => {
   const servicesNonWesternNumerals = {
@@ -135,6 +42,102 @@ const serviceNumerals = service => {
     ? servicesNonWesternNumerals[service]
     : WesternArabic;
 };
+
+// For additional spacing for numerals in the right column because of '10' being double digits
+const isOnSecondColumn = ({ listIndex, numberOfItems }, supportsGrid) =>
+  supportsGrid ? listIndex > Math.ceil(numberOfItems / 2) : listIndex % 2 === 0;
+
+const listHasDoubleDigits = ({ numberOfItems }) => numberOfItems >= 9;
+
+// This checks whether the 2nd column contains a double digit value
+const columnIncludesDoubleDigits = (props, supportsGrid) =>
+  isOnSecondColumn(props, supportsGrid) && listHasDoubleDigits(props);
+
+// Returns a min width for the rank wrapper depending on if the list contains 10 items
+// and if the numeral is considered thin.
+const getRankMinWidth = ({ service, numberOfItems }) => {
+  const singleDigitMinWidth = {
+    default: singleDigitDefault,
+    thin: singleDigitThin,
+  };
+
+  const doubleDigitMinWidth = {
+    default: doubleDigitDefault,
+    thin: doubleDigitThin,
+  };
+
+  const rankMinWidth = listHasDoubleDigits({ numberOfItems })
+    ? doubleDigitMinWidth
+    : singleDigitMinWidth;
+
+  return thinFontServices.includes(service)
+    ? rankMinWidth.thin
+    : rankMinWidth.default;
+};
+
+// Ensures the 5th and 10th rank aligns with each other
+const isFiveOrTen = ({ listIndex, service, numberOfItems }) => {
+  return listIndex === 5 || listIndex === 10
+    ? getRankMinWidth({ service, numberOfItems }).group5_5_column
+    : getRankMinWidth({ service, numberOfItems }).group5;
+};
+
+const TwoColumnWrapper = styled.div`
+  /* 1 column of items at viewport 0px and above */
+  @media (max-width: ${GEL_GROUP_0_SCREEN_WIDTH_MAX}) {
+    min-width: ${props =>
+      listHasDoubleDigits(props)
+        ? getRankMinWidth(props).group0_1_column
+        : getRankMinWidth(props).group0};
+  }
+  @media (min-width: ${GEL_GROUP_1_SCREEN_WIDTH_MIN}) and (max-width: ${GEL_GROUP_1_SCREEN_WIDTH_MAX}) {
+    min-width: ${props =>
+      listHasDoubleDigits(props)
+        ? getRankMinWidth(props).group1_1_column
+        : getRankMinWidth(props).group1};
+  }
+  @media (min-width: ${GEL_GROUP_2_SCREEN_WIDTH_MIN}) and (max-width: ${GEL_GROUP_2_SCREEN_WIDTH_MAX}) {
+    min-width: ${props =>
+      listHasDoubleDigits(props)
+        ? getRankMinWidth(props).group2_1_column
+        : getRankMinWidth(props).group2};
+  }
+
+  /* 2 columns of items at viewport 1007px and above */
+  @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
+    min-width: ${props =>
+      columnIncludesDoubleDigits(props, false)
+        ? getRankMinWidth(props).group3_2_column
+        : getRankMinWidth(props).group3};
+  }
+  @supports (${grid}) {
+    @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
+      min-width: ${props =>
+        columnIncludesDoubleDigits(props, true)
+          ? getRankMinWidth(props).group3_2_column
+          : getRankMinWidth(props).group3};
+    }
+  }
+`;
+
+const MultiColumnWrapper = styled(TwoColumnWrapper)`
+  /* 5 columns of items at viewport 1280px and above */
+  @media (min-width: ${GEL_GROUP_5_SCREEN_WIDTH_MIN}) {
+    min-width: ${props =>
+      listHasDoubleDigits(props)
+        ? isFiveOrTen(props)
+        : getRankMinWidth(props).group5};
+  }
+`;
+
+const StyledSpan = styled.span`
+  ${({ service }) => getSerifLight(service)}
+  ${({ script }) => script && getFoolscap(script)};
+  position: relative;
+  color: ${C_POSTBOX};
+  margin: 0; /* Reset */
+  padding: 0;
+`;
 
 const MostReadRank = ({
   service,
