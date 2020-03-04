@@ -227,7 +227,9 @@ export const Link = styled.a`
   }
 `;
 
-export const LiveLabel = styled.span`
+export const LiveLabel = styled.span.attrs(
+  ({ ariaHidden }) => ariaHidden && { 'aria-hidden': 'true' },
+)`
   ${({ service }) => getSansBold(service)}
   color: ${C_POSTBOX};
   display: inline-block;
@@ -240,10 +242,12 @@ export const LiveLabel = styled.span`
 LiveLabel.propTypes = {
   service: string.isRequired,
   dir: oneOf(['rtl', 'ltr']),
+  ariaHidden: bool,
 };
 
 LiveLabel.defaultProps = {
   dir: 'ltr',
+  ariaHidden: false,
 };
 
 const StoryPromo = ({
