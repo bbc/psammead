@@ -56,7 +56,7 @@ const MediaIndicatorComponent = ({
 const LiveComponent = ({ headline, service, dir }) => (
   /* eslint-disable-next-line jsx-a11y/aria-role */
   <span role="text">
-    <LiveLabel service={service} dir={dir}>
+    <LiveLabel service={service} dir={dir} ariaHidden>
       LIVE
     </LiveLabel>
     <VisuallyHiddenText lang="en-GB">{` Live, `}</VisuallyHiddenText>
