@@ -13,13 +13,9 @@ export const thinFontServices = [
   'bengali',
   'pashto',
   'persian',
-  'marathi',
   'tamil',
   'telegu',
-  'thai',
-  'ukchina',
   'urdu',
-  'zhongwen',
 ];
 
 // If numberOfItems < 10, no extra spacing needs to be accounted for.
