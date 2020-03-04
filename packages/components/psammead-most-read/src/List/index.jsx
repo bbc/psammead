@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { oneOf, number, node, string } from 'prop-types';
+import { oneOf, number, node } from 'prop-types';
 import {
   GEL_GROUP_2_SCREEN_WIDTH_MAX,
   GEL_GROUP_5_SCREEN_WIDTH_MIN,
@@ -74,7 +74,7 @@ const MostReadList = ({ numberOfItems, dir, columnLayout, children }) => {
 MostReadList.propTypes = {
   children: node.isRequired,
   dir: oneOf(['rtl', 'ltr']),
-  columnLayout: string,
+  columnLayout: oneOf(['oneColumn', 'twoColumn', 'multiColumn']),
   numberOfItems: number.isRequired,
 };
 
