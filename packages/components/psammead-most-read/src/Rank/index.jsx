@@ -9,6 +9,7 @@ import {
   Nepali,
   WesternArabic,
 } from '@bbc/psammead-locales/numerals';
+import { GEL_SPACING_HLF } from '@bbc/gel-foundations/spacings';
 import {
   GEL_GROUP_5_SCREEN_WIDTH_MIN,
   GEL_GROUP_3_SCREEN_WIDTH_MIN,
@@ -137,6 +138,9 @@ const StyledSpan = styled.span`
   color: ${C_POSTBOX};
   margin: 0; /* Reset */
   padding: 0;
+  /* reduce the letter spacing of Japanese numerals */
+  letter-spacing: ${({ service }) =>
+    service === 'japanese' && `-${GEL_SPACING_HLF}`};
 `;
 
 const MostReadRank = ({
