@@ -46,7 +46,7 @@ The `StoryPromo` component is designed to be used on 'index' pages, which are pa
 
 ## LiveLabel
 
-The `LiveLabel` component is to be used inside a `Link` in index pages to show a promo for a Live page.
+The `LiveLabel` component is to be used inside a `Link` in index pages to show a promo for a Live page. The ariaHidden prop is needed as styled components strips out aria tags on a server render.
 
 ### Props
 
@@ -55,6 +55,7 @@ The `LiveLabel` component is to be used inside a `Link` in index pages to show a
 | -------- | ------ | -------- | ------- | -------- |
 | service  | string | yes      | N/A     | `'news'` |
 | dir      | string | no       | `'ltr'` | `'rtl'`  |
+| ariaHidden | bool | no       | `false` | `true`  |
 
 ## IndexAlsos
 
@@ -143,7 +144,7 @@ const Image = <img src="https://foobar.com/image.jpg" />;
 
 const LiveComponent = ({ headline, service, dir }) => (
   <span role="text">
-    <LiveLabel service={service} dir={dir} aria-hidden="true">
+    <LiveLabel service={service} dir={dir} ariaHidden>
       LIVE
     </LiveLabel>
     <VisuallyHiddenText lang="en-GB">Live, </VisuallyHiddenText>

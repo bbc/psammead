@@ -17,7 +17,7 @@ const Image = <img src="https://foobar.com/image.png" alt="Alt text" />;
 const LiveComponent = ({ headline, dir, service }) => (
   /* eslint-disable-next-line jsx-a11y/aria-role */
   <span role="text">
-    <LiveLabel dir={dir} service={service}>
+    <LiveLabel dir={dir} service={service} ariaHidden>
       LIVE
     </LiveLabel>
     <VisuallyHiddenText lang="en-GB">Live, </VisuallyHiddenText>
