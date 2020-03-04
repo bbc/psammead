@@ -27,13 +27,13 @@ exports[`MostReadRank should render ltr correctly 1`] = `
 
 @media (min-width:25rem) and (max-width:37.4375rem) {
   .c0 {
-    min-width: 2rem;
+    min-width: 1.5rem;
   }
 }
 
-@media (min-width:37.5rem) and (max-width:79.9375rem) {
+@media (min-width:37.5rem) {
   .c0 {
-    min-width: 2.5rem;
+    min-width: 2rem;
   }
 }
 
@@ -84,7 +84,7 @@ exports[`MostReadRank should render ltr with double digits correctly 1`] = `
 
 @media (max-width:14.9375rem) {
   .c0 {
-    min-width: 2rem;
+    min-width: 2.5rem;
   }
 }
 
@@ -100,7 +100,7 @@ exports[`MostReadRank should render ltr with double digits correctly 1`] = `
   }
 }
 
-@media (min-width:37.5rem) and (max-width:79.9375rem) {
+@media (min-width:37.5rem) {
   .c0 {
     min-width: 4rem;
   }
@@ -159,25 +159,25 @@ exports[`MostReadRank should render rtl correctly 1`] = `
 
 @media (min-width:15rem) and (max-width:24.9375rem) {
   .c0 {
-    min-width: 1.5rem;
+    min-width: 1rem;
   }
 }
 
 @media (min-width:25rem) and (max-width:37.4375rem) {
   .c0 {
-    min-width: 1.5rem;
+    min-width: 1rem;
   }
 }
 
-@media (min-width:37.5rem) and (max-width:79.9375rem) {
+@media (min-width:37.5rem) {
   .c0 {
-    min-width: 2rem;
+    min-width: 1.5rem;
   }
 }
 
 @media (min-width:80rem) {
   .c0 {
-    min-width: 2rem;
+    min-width: 1.5rem;
   }
 }
 
@@ -234,19 +234,19 @@ exports[`MostReadRank should render rtl with double digits correctly 1`] = `
 
 @media (min-width:25rem) and (max-width:37.4375rem) {
   .c0 {
-    min-width: 3rem;
+    min-width: 2.5rem;
   }
 }
 
-@media (min-width:37.5rem) and (max-width:79.9375rem) {
+@media (min-width:37.5rem) {
   .c0 {
-    min-width: 3.5rem;
+    min-width: 3rem;
   }
 }
 
 @media (min-width:80rem) {
   .c0 {
-    min-width: 3.5rem;
+    min-width: 3rem;
   }
 }
 
