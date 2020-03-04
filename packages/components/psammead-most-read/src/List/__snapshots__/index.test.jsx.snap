@@ -6,7 +6,6 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
   margin: 0;
   padding: 0;
   grid-auto-flow: column;
-  grid-template-rows: repeat( 10,[col-start] auto [col-end] );
   grid-template-rows: repeat( 5,[col-start] auto [col-end] );
 }
 
@@ -647,7 +646,6 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
   margin: 0;
   padding: 0;
   grid-auto-flow: column;
-  grid-template-rows: repeat( 10,[col-start] auto [col-end] );
   grid-template-rows: repeat( 5,[col-start] auto [col-end] );
 }
 
@@ -1288,7 +1286,6 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
   margin: 0;
   padding: 0;
   grid-auto-flow: column;
-  grid-template-rows: repeat( 10,[col-start] auto [col-end] );
   grid-template-rows: repeat( 5,[col-start] auto [col-end] );
 }
 
@@ -1929,7 +1926,6 @@ exports[`MostReadList should render with ltr news items with max two columns 1`]
   margin: 0;
   padding: 0;
   grid-auto-flow: column;
-  grid-template-rows: repeat( 10,[col-start] auto [col-end] );
   grid-template-rows: repeat( 5,[col-start] auto [col-end] );
 }
 
@@ -2563,7 +2559,6 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
   margin: 0;
   padding: 0;
   grid-auto-flow: column;
-  grid-template-rows: repeat( 10,[col-start] auto [col-end] );
   grid-template-rows: repeat( 5,[col-start] auto [col-end] );
 }
 
