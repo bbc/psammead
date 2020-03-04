@@ -228,7 +228,7 @@ export const Link = styled.a`
 `;
 
 export const LiveLabel = styled.span.attrs(
-  props => props.ariaHidden && { 'aria-hidden': 'true' },
+  ({ ariaHidden }) => ariaHidden && { 'aria-hidden': 'true' },
 )`
   ${({ service }) => getSansBold(service)}
   color: ${C_POSTBOX};
