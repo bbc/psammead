@@ -125,13 +125,11 @@ const StyledSpan = styled.span`
 
 const serviceNumerals = service => {
   const servicesNonWesternNumerals = {
-    arabic: EasternArabic,
     bengali: Bengali,
     burmese: Burmese,
     nepali: Nepali,
     pashto: EasternArabic,
     persian: EasternArabic,
-    urdu: EasternArabic,
   };
   return servicesNonWesternNumerals[service]
     ? servicesNonWesternNumerals[service]
