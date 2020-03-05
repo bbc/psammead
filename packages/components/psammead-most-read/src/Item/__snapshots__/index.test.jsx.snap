@@ -812,13 +812,13 @@ exports[`MostReadItemWrapper should render rtl correctly with 10 items 1`] = `
 
 @media (min-width:15rem) and (max-width:24.9375rem) {
   .c3 {
-    min-width: 2.5rem;
+    min-width: 2rem;
   }
 }
 
 @media (min-width:25rem) and (max-width:37.4375rem) {
   .c3 {
-    min-width: 2.5rem;
+    min-width: 2rem;
   }
 }
 
@@ -842,13 +842,13 @@ exports[`MostReadItemWrapper should render rtl correctly with 10 items 1`] = `
 
 @media (min-width:15rem) and (max-width:24.9375rem) {
   .c7 {
-    min-width: 2.5rem;
+    min-width: 2rem;
   }
 }
 
 @media (min-width:25rem) and (max-width:37.4375rem) {
   .c7 {
-    min-width: 2.5rem;
+    min-width: 2rem;
   }
 }
 
@@ -872,13 +872,13 @@ exports[`MostReadItemWrapper should render rtl correctly with 10 items 1`] = `
 
 @media (min-width:15rem) and (max-width:24.9375rem) {
   .c8 {
-    min-width: 2.5rem;
+    min-width: 2rem;
   }
 }
 
 @media (min-width:25rem) and (max-width:37.4375rem) {
   .c8 {
-    min-width: 2.5rem;
+    min-width: 2rem;
   }
 }
 
@@ -902,13 +902,13 @@ exports[`MostReadItemWrapper should render rtl correctly with 10 items 1`] = `
 
 @media (min-width:15rem) and (max-width:24.9375rem) {
   .c9 {
-    min-width: 2.5rem;
+    min-width: 2rem;
   }
 }
 
 @media (min-width:25rem) and (max-width:37.4375rem) {
   .c9 {
-    min-width: 2.5rem;
+    min-width: 2rem;
   }
 }
 
@@ -932,13 +932,13 @@ exports[`MostReadItemWrapper should render rtl correctly with 10 items 1`] = `
 
 @media (min-width:15rem) and (max-width:24.9375rem) {
   .c10 {
-    min-width: 2.5rem;
+    min-width: 2rem;
   }
 }
 
 @media (min-width:25rem) and (max-width:37.4375rem) {
   .c10 {
-    min-width: 2.5rem;
+    min-width: 2rem;
   }
 }
 
@@ -962,13 +962,13 @@ exports[`MostReadItemWrapper should render rtl correctly with 10 items 1`] = `
 
 @media (min-width:15rem) and (max-width:24.9375rem) {
   .c11 {
-    min-width: 2.5rem;
+    min-width: 2rem;
   }
 }
 
 @media (min-width:25rem) and (max-width:37.4375rem) {
   .c11 {
-    min-width: 2.5rem;
+    min-width: 2rem;
   }
 }
 

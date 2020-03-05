@@ -184,13 +184,13 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
 
 @media (min-width:15rem) and (max-width:24.9375rem) {
   .c5 {
-    min-width: 2.5rem;
+    min-width: 2rem;
   }
 }
 
 @media (min-width:25rem) and (max-width:37.4375rem) {
   .c5 {
-    min-width: 2.5rem;
+    min-width: 2rem;
   }
 }
 
@@ -214,13 +214,13 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
 
 @media (min-width:15rem) and (max-width:24.9375rem) {
   .c9 {
-    min-width: 2.5rem;
+    min-width: 2rem;
   }
 }
 
 @media (min-width:25rem) and (max-width:37.4375rem) {
   .c9 {
-    min-width: 2.5rem;
+    min-width: 2rem;
   }
 }
 
@@ -244,13 +244,13 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
 
 @media (min-width:15rem) and (max-width:24.9375rem) {
   .c10 {
-    min-width: 2.5rem;
+    min-width: 2rem;
   }
 }
 
 @media (min-width:25rem) and (max-width:37.4375rem) {
   .c10 {
-    min-width: 2.5rem;
+    min-width: 2rem;
   }
 }
 
@@ -274,13 +274,13 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
 
 @media (min-width:15rem) and (max-width:24.9375rem) {
   .c11 {
-    min-width: 2.5rem;
+    min-width: 2rem;
   }
 }
 
 @media (min-width:25rem) and (max-width:37.4375rem) {
   .c11 {
-    min-width: 2.5rem;
+    min-width: 2rem;
   }
 }
 
@@ -304,13 +304,13 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
 
 @media (min-width:15rem) and (max-width:24.9375rem) {
   .c12 {
-    min-width: 2.5rem;
+    min-width: 2rem;
   }
 }
 
 @media (min-width:25rem) and (max-width:37.4375rem) {
   .c12 {
-    min-width: 2.5rem;
+    min-width: 2rem;
   }
 }
 
@@ -334,13 +334,13 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
 
 @media (min-width:15rem) and (max-width:24.9375rem) {
   .c13 {
-    min-width: 2.5rem;
+    min-width: 2rem;
   }
 }
 
 @media (min-width:25rem) and (max-width:37.4375rem) {
   .c13 {
-    min-width: 2.5rem;
+    min-width: 2rem;
   }
 }
 
@@ -2936,13 +2936,13 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
 
 @media (min-width:15rem) and (max-width:24.9375rem) {
   .c5 {
-    min-width: 2.5rem;
+    min-width: 2rem;
   }
 }
 
 @media (min-width:25rem) and (max-width:37.4375rem) {
   .c5 {
-    min-width: 2.5rem;
+    min-width: 2rem;
   }
 }
 
@@ -2966,13 +2966,13 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
 
 @media (min-width:15rem) and (max-width:24.9375rem) {
   .c9 {
-    min-width: 2.5rem;
+    min-width: 2rem;
   }
 }
 
 @media (min-width:25rem) and (max-width:37.4375rem) {
   .c9 {
-    min-width: 2.5rem;
+    min-width: 2rem;
   }
 }
 
@@ -2996,13 +2996,13 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
 
 @media (min-width:15rem) and (max-width:24.9375rem) {
   .c10 {
-    min-width: 2.5rem;
+    min-width: 2rem;
   }
 }
 
 @media (min-width:25rem) and (max-width:37.4375rem) {
   .c10 {
-    min-width: 2.5rem;
+    min-width: 2rem;
   }
 }
 
@@ -3026,13 +3026,13 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
 
 @media (min-width:15rem) and (max-width:24.9375rem) {
   .c11 {
-    min-width: 2.5rem;
+    min-width: 2rem;
   }
 }
 
 @media (min-width:25rem) and (max-width:37.4375rem) {
   .c11 {
-    min-width: 2.5rem;
+    min-width: 2rem;
   }
 }
 
@@ -3056,13 +3056,13 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
 
 @media (min-width:15rem) and (max-width:24.9375rem) {
   .c12 {
-    min-width: 2.5rem;
+    min-width: 2rem;
   }
 }
 
 @media (min-width:25rem) and (max-width:37.4375rem) {
   .c12 {
-    min-width: 2.5rem;
+    min-width: 2rem;
   }
 }
 
@@ -3086,13 +3086,13 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
 
 @media (min-width:15rem) and (max-width:24.9375rem) {
   .c13 {
-    min-width: 2.5rem;
+    min-width: 2rem;
   }
 }
 
 @media (min-width:25rem) and (max-width:37.4375rem) {
   .c13 {
-    min-width: 2.5rem;
+    min-width: 2rem;
   }
 }
 
