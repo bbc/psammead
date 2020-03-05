@@ -2,7 +2,7 @@
 
 ## Description
 
-The `Include` component does...
+The `Include` component is desgined to be used whenever we want to add includes onto a page, it dangerously sets the html.
 
 ## Installation
 
@@ -14,11 +14,9 @@ npm install @bbc/psammead-include --save
 
 | Argument  | Type | Required | Default | Example |
 | --------- | ---- | -------- | ------- | ------- |
-| No props. |      |          |         |         |
+| html      | string | No     | `null`  |         |
 
 ## Usage
-
-<!-- Description of the component usage -->
 
 ```
 import Include from "@bbc/psammead-include"
@@ -26,19 +24,11 @@ import Include from "@bbc/psammead-include"
 
 ### When to use this component
 
-<!-- Description of the where the component can be used -->
-
-### When not to use this component
-
-<!-- Description of the where the component shouldn't can be used -->
+This component can be used when adding includes to a page.
 
 ### Accessibility notes
 
 <!-- Information about accessibility for this component -->
-
-### Roadmap
-
-<!-- Known future changes of the component -->
 
 ## Contributing
 
