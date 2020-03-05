@@ -188,6 +188,7 @@ exports[`StoryPromo list should render correctly 1`] = `
     >
       <div
         class="c3"
+        dir="ltr"
       >
         <div
           class="c4"
@@ -200,6 +201,7 @@ exports[`StoryPromo list should render correctly 1`] = `
       </div>
       <div
         class="c5"
+        dir="ltr"
       >
         <h3
           class="c6"
