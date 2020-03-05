@@ -48,11 +48,12 @@ const serviceNumerals = service => {
 const isOnSecondColumn = ({ listIndex, numberOfItems }, supportsGrid) =>
   supportsGrid ? listIndex > Math.ceil(numberOfItems / 2) : listIndex % 2 === 0;
 
-const listHasDoubleDigits = ({ numberOfItems }) => numberOfItems >= 9;
+const listHasDoubleDigits = numberOfItems => numberOfItems > 9;
 
 // This checks whether the 2nd column contains a double digit value
 const columnIncludesDoubleDigits = (props, supportsGrid) =>
-  isOnSecondColumn(props, supportsGrid) && listHasDoubleDigits(props);
+  isOnSecondColumn(props, supportsGrid) &&
+  listHasDoubleDigits(props.numberOfItems);
 
 // Returns a min width for the rank wrapper depending on if the list contains 10 items
 // and if the numeral is considered thin.
@@ -67,7 +68,7 @@ const getRankMinWidth = ({ service, numberOfItems }) => {
     thin: doubleDigitThin,
   };
 
-  const rankMinWidth = listHasDoubleDigits({ numberOfItems })
+  const rankMinWidth = listHasDoubleDigits(numberOfItems)
     ? doubleDigitMinWidth
     : singleDigitMinWidth;
 
@@ -87,19 +88,19 @@ const TwoColumnWrapper = styled.div`
   /* 1 column of items at viewport 0px and above */
   @media (max-width: ${GEL_GROUP_0_SCREEN_WIDTH_MAX}) {
     min-width: ${props =>
-      listHasDoubleDigits(props)
+      listHasDoubleDigits(props.numberOfItems)
         ? getRankMinWidth(props).group0WithOneColumn
         : getRankMinWidth(props).group0};
   }
   @media (min-width: ${GEL_GROUP_1_SCREEN_WIDTH_MIN}) and (max-width: ${GEL_GROUP_1_SCREEN_WIDTH_MAX}) {
     min-width: ${props =>
-      listHasDoubleDigits(props)
+      listHasDoubleDigits(props.numberOfItems)
         ? getRankMinWidth(props).group1WithOneColumn
         : getRankMinWidth(props).group1};
   }
   @media (min-width: ${GEL_GROUP_2_SCREEN_WIDTH_MIN}) and (max-width: ${GEL_GROUP_2_SCREEN_WIDTH_MAX}) {
     min-width: ${props =>
-      listHasDoubleDigits(props)
+      listHasDoubleDigits(props.numberOfItems)
         ? getRankMinWidth(props).group2WithOneColumn
         : getRankMinWidth(props).group2};
   }
@@ -125,7 +126,7 @@ const MultiColumnWrapper = styled(TwoColumnWrapper)`
   /* 5 columns of items at viewport 1280px and above */
   @media (min-width: ${GEL_GROUP_5_SCREEN_WIDTH_MIN}) {
     min-width: ${props =>
-      listHasDoubleDigits(props)
+      listHasDoubleDigits(props.numberOfItems)
         ? isFiveOrTen(props)
         : getRankMinWidth(props).group5};
   }
