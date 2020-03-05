@@ -79,7 +79,7 @@ const getRankMinWidth = ({ service, numberOfItems }) => {
 // Ensures the 5th and 10th rank aligns with each other
 const isFiveOrTen = ({ listIndex, service, numberOfItems }) => {
   return listIndex === 5 || listIndex === 10
-    ? getRankMinWidth({ service, numberOfItems }).group5_5_column
+    ? getRankMinWidth({ service, numberOfItems }).group5WithFiveColumns
     : getRankMinWidth({ service, numberOfItems }).group5;
 };
 
@@ -88,19 +88,19 @@ const TwoColumnWrapper = styled.div`
   @media (max-width: ${GEL_GROUP_0_SCREEN_WIDTH_MAX}) {
     min-width: ${props =>
       listHasDoubleDigits(props)
-        ? getRankMinWidth(props).group0_1_column
+        ? getRankMinWidth(props).group0WithOneColumn
         : getRankMinWidth(props).group0};
   }
   @media (min-width: ${GEL_GROUP_1_SCREEN_WIDTH_MIN}) and (max-width: ${GEL_GROUP_1_SCREEN_WIDTH_MAX}) {
     min-width: ${props =>
       listHasDoubleDigits(props)
-        ? getRankMinWidth(props).group1_1_column
+        ? getRankMinWidth(props).group1WithOneColumn
         : getRankMinWidth(props).group1};
   }
   @media (min-width: ${GEL_GROUP_2_SCREEN_WIDTH_MIN}) and (max-width: ${GEL_GROUP_2_SCREEN_WIDTH_MAX}) {
     min-width: ${props =>
       listHasDoubleDigits(props)
-        ? getRankMinWidth(props).group2_1_column
+        ? getRankMinWidth(props).group2WithOneColumn
         : getRankMinWidth(props).group2};
   }
 
@@ -108,14 +108,14 @@ const TwoColumnWrapper = styled.div`
   @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
     min-width: ${props =>
       columnIncludesDoubleDigits(props, false)
-        ? getRankMinWidth(props).group3_2_column
+        ? getRankMinWidth(props).group3WithTwoColumns
         : getRankMinWidth(props).group3};
   }
   @supports (${grid}) {
     @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
       min-width: ${props =>
         columnIncludesDoubleDigits(props, true)
-          ? getRankMinWidth(props).group3_2_column
+          ? getRankMinWidth(props).group3WithTwoColumns
           : getRankMinWidth(props).group3};
     }
   }

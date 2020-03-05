@@ -32,11 +32,11 @@ export const doubleDigitDefault = {
   group3: GEL_SPACING_QUAD,
   group5: GEL_SPACING_QUAD,
   // These values are used to align the rank when a double digit exists in the column
-  group0_1_column: GEL_SPACING_QUIN,
-  group1_1_column: GEL_SPACING_QUIN,
-  group2_1_column: GEL_SPACING_SEXT,
-  group3_2_column: '4rem',
-  group5_5_column: '4rem',
+  group0WithOneColumns: GEL_SPACING_QUIN,
+  group1WithOneColumns: GEL_SPACING_QUIN,
+  group2WithOneColumns: GEL_SPACING_SEXT,
+  group3WithTwoColumns: '4rem',
+  group5WithFiveColumns: '4rem',
 };
 
 export const singleDigitThin = {
@@ -51,9 +51,9 @@ export const doubleDigitThin = {
   group3: GEL_SPACING_TRPL,
   group5: GEL_SPACING_TRPL,
   // These values are used to align the rank when a double digit exists in the column
-  group0_1_column: GEL_SPACING_QUAD,
-  group1_1_column: GEL_SPACING_QUAD,
-  group2_1_column: GEL_SPACING_QUAD,
-  group3_2_column: GEL_SPACING_SEXT,
-  group5_5_column: GEL_SPACING_SEXT,
+  group0WithOneColumn: GEL_SPACING_QUAD,
+  group1WithOneColumn: GEL_SPACING_QUAD,
+  group2WithOneColumn: GEL_SPACING_QUAD,
+  group3WithTwoColumns: GEL_SPACING_SEXT,
+  group5WithFiveColumns: GEL_SPACING_SEXT,
 };
