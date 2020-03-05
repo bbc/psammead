@@ -5,35 +5,17 @@ exports[`Idt1Include should render with require js in head 1`] = `
   <head>
     <script
       async="true"
+      onload="function handleOnLoad() {
+    /* istanbul ignore next */
+    cov_2ibc2ghh9b.f[1]++;
+    cov_2ibc2ghh9b.s[3]++;
+    setIsRequireLoaded(true);
+  }"
       src="https://news.files.bbci.co.uk/include/vjassets/js/vendor/require-2.1.20b.min.js"
     />
   </head>
   <body>
-    <div>
-      <div>
-        <div
-          id="placeholder"
-        >
-          Uninitialised include
-        </div>
-        
-
-        <script>
-          
-  define('initialiser', function() {
-    var element = document.getElementById('placeholder');
-    element.innerHTML = 'Initialised include';
-  });
-
-  require(['initialiser'], function(initialiser) {
-    initialiser();
-  });
-
-        </script>
-        
-
-      </div>
-    </div>
+    <div />
   </body>
 </html>
 `;
