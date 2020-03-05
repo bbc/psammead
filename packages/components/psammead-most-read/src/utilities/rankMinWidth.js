@@ -32,9 +32,9 @@ export const doubleDigitDefault = {
   group3: GEL_SPACING_QUAD,
   group5: GEL_SPACING_QUAD,
   // These values are used to align the rank when a double digit exists in the column
-  group0WithOneColumns: GEL_SPACING_QUIN,
-  group1WithOneColumns: GEL_SPACING_QUIN,
-  group2WithOneColumns: GEL_SPACING_SEXT,
+  group0WithOneColumn: GEL_SPACING_QUIN,
+  group1WithOneColumn: GEL_SPACING_QUIN,
+  group2WithOneColumn: GEL_SPACING_SEXT,
   group3WithTwoColumns: '4rem',
   group5WithFiveColumns: '4rem',
 };
