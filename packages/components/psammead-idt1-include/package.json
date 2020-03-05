@@ -1,0 +1,25 @@
+{
+  "name": "@bbc/psammead-idt1-include",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "module": "esm/index.js",
+  "sideEffects": false,
+  "description": "A component that inserts the html for an IDT1 (indepthtoolkit) include to the page, ensuring requirejs is loaded before scripts that depend on it execute.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/BBC-News/psammead/tree/latest/packages/components/psammead-idt1-include"
+  },
+  "author": {
+    "name": "Psammead Maintainers",
+    "email": "PsammeadMaintainers@bbc.co.uk"
+  },
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/bbc/psammead/issues"
+  },
+  "homepage": "https://github.com/BBC-News/psammead/blob/latest/packages/components/psammead-idt1-include/README.md",
+  "dependencies": {},
+  "peerDependencies": {
+    "react": "^16.12.0"
+  }
+}

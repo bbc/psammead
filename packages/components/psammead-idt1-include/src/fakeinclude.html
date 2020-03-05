@@ -1,0 +1,11 @@
+<div id="placeholder">Uninitialised include</div>
+<script>
+  define('initialiser', function() {
+    var element = document.getElementById('placeholder');
+    element.innerHTML = 'Initialised include';
+  });
+
+  require(['initialiser'], function(initialiser) {
+    initialiser();
+  });
+</script>

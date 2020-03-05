@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Idt1Include should render with require js in head 1`] = `
+<html>
+  <head>
+    <script
+      async="true"
+      src="https://news.files.bbci.co.uk/include/vjassets/js/vendor/require-2.1.20b.min.js"
+    />
+  </head>
+  <body>
+    <div>
+      <div>
+        <div
+          id="placeholder"
+        >
+          Uninitialised include
+        </div>
+        
+
+        <script>
+          
+  define('initialiser', function() {
+    var element = document.getElementById('placeholder');
+    element.innerHTML = 'Initialised include';
+  });
+
+  require(['initialiser'], function(initialiser) {
+    initialiser();
+  });
+
+        </script>
+        
+
+      </div>
+    </div>
+  </body>
+</html>
+`;
