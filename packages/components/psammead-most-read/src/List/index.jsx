@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { oneOf, number, node } from 'prop-types';
 import {
-  GEL_GROUP_2_SCREEN_WIDTH_MAX,
+  GEL_GROUP_3_SCREEN_WIDTH_MIN,
   GEL_GROUP_5_SCREEN_WIDTH_MIN,
 } from '@bbc/gel-foundations/breakpoints';
 import Grid from '@bbc/psammead-grid';
@@ -21,20 +21,10 @@ const OneColumnGrid = styled(Grid).attrs({
   );
 `;
 
-const TwoColumnGrid = styled(Grid).attrs({
-  role: 'list',
-})`
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  grid-auto-flow: column;
-  grid-template-rows: repeat(
-    ${props => Math.ceil(props.numberOfItems / 2)},
-    [col-start] auto [col-end]
-  );
-  @media (max-width: ${GEL_GROUP_2_SCREEN_WIDTH_MAX}) {
+const TwoColumnGrid = styled(OneColumnGrid)`
+  @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
     grid-template-rows: repeat(
-      ${props => props.numberOfItems},
+      ${props => Math.ceil(props.numberOfItems / 2)},
       [col-start] auto [col-end]
     );
   }
@@ -43,10 +33,6 @@ const TwoColumnGrid = styled(Grid).attrs({
 const MultiColumnGrid = styled(TwoColumnGrid)`
   @media (min-width: ${GEL_GROUP_5_SCREEN_WIDTH_MIN}) {
     grid-auto-flow: row;
-    grid-template-rows: repeat(
-      ${props => Math.floor(props.numberOfItems / 2)},
-      [col-start] auto [col-end]
-    );
   }
 `;
 
