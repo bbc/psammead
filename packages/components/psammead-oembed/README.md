@@ -29,7 +29,7 @@ npm install @bbc/psammead-oembed --save
 ## Usage
 
 ```jsx
-import Oembed from "@bbc/psammead-oembed"
+import OEmbed from "@bbc/psammead-oembed"
 
 const oEmbedResponse = {
   "url": "https://twitter.com/SonyPictures/status/1164036827667238912",
