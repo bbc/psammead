@@ -7,7 +7,7 @@
   "main": "dist/index.js",
   "module": "esm/index.js",
   "sideEffects": false,
-  "description": "A component that safely renders HTML from an oEmbed response.",
+  "description": "A component that sanitizes and renders the HTML from an oEmbed response.",
   "repository": {
     "type": "git",
     "url": "https://github.com/BBC-News/psammead/tree/latest/packages/components/psammead-oembed"
