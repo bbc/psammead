@@ -6,7 +6,7 @@ This component is currently tagged as alpha and is not suitable for production u
 
 ## Description
 
-The `OEmbed` component sanitizes and renders the HTML from an oEmbed response.
+The `OEmbed` component [sanitizes](#Sanitization) and renders the HTML from an oEmbed response.
 
 ## Installation
 
@@ -63,6 +63,10 @@ See above.
 ### Roadmap
 
 There are no known future changes to this component.
+
+### Sanitization
+
+Sanitization is performed using DOMPurify, a modern HTML sanitization library. Version `2.0.8` weighs `6.5kB` (minified and gzipped). See its [Security Goals & Threat Model](https://github.com/cure53/DOMPurify/wiki/Security-Goals-&-Threat-Model).
 
 ## Contributing
 
