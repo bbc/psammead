@@ -30,6 +30,10 @@ This component can be used when adding includes to a page.
 
 <!-- Information about accessibility for this component -->
 
+### Roadmap
+
+There are no known future changes to this component.
+
 ## Contributing
 
 Psammead is completely open source. We are grateful for any contributions, whether they be new components, bug fixes or general improvements. Please see our primary contributing guide which can be found at [the root of the Psammead repository](https://github.com/bbc/psammead/blob/latest/CONTRIBUTING.md).
