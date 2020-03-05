@@ -15,17 +15,14 @@ const OneColumnGrid = styled(Grid).attrs({
   margin: 0;
   padding: 0;
   grid-auto-flow: column;
-  grid-template-rows: repeat(
-    ${props => props.numberOfItems},
-    [col-start] auto [col-end]
-  );
+  grid-template-rows: repeat(${props => props.numberOfItems}, auto);
 `;
 
 const TwoColumnGrid = styled(OneColumnGrid)`
   @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
     grid-template-rows: repeat(
       ${props => Math.ceil(props.numberOfItems / 2)},
-      [col-start] auto [col-end]
+      auto
     );
   }
 `;
