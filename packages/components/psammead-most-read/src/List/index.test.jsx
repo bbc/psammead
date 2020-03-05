@@ -51,8 +51,30 @@ describe('MostReadList', () => {
   );
 
   shouldMatchSnapshot(
-    'should render with ltr news items with max two columns',
+    'should render with ltr news items with a max of one column',
+    <MostReadList numberOfItems={10} columnLayout="oneColumn">
+      {getItemWrapperArray({
+        numberOfItems: 10,
+        service: 'news',
+        script: latin,
+      }).map(item => item)}
+    </MostReadList>,
+  );
+
+  shouldMatchSnapshot(
+    'should render with ltr news items with a max of two columns',
     <MostReadList numberOfItems={10} columnLayout="twoColumn">
+      {getItemWrapperArray({
+        numberOfItems: 10,
+        service: 'news',
+        script: latin,
+      }).map(item => item)}
+    </MostReadList>,
+  );
+
+  shouldMatchSnapshot(
+    'should render with ltr news items with a multi column layout',
+    <MostReadList numberOfItems={10} columnLayout="multiColumn">
       {getItemWrapperArray({
         numberOfItems: 10,
         service: 'news',
