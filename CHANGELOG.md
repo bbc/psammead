@@ -3,6 +3,8 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 2.0.92 | [PR#3209](https://github.com/bbc/psammead/pull/3209) Adding all Psammead packages to base package.json |
+| 2.0.91 | [PR#3208](https://github.com/bbc/psammead/pull/3208) Update version of story promo in root dev dependencies |
 | 2.0.90 | [PR#3176](https://github.com/bbc/psammead/pull/3176) Bumping dependencies |
 | 2.0.89 | [PR#3164](https://github.com/bbc/psammead/pull/3164) Talos - Bump Dependencies - @bbc/psammead-timestamp-container |
 | 2.0.88 | [PR#3161](https://github.com/bbc/psammead/pull/3161) Bumping yargs-parser to 17.0.0 |
