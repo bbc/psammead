@@ -1298,6 +1298,7 @@ storiesOf(STORY_KIND, module)
             image={Img}
             info={Info}
             promoType={promoType}
+            dir={dir}
             mediaIndicator={
               mediaType &&
               MediaIndicatorComponent({ script, service, mediaType })
