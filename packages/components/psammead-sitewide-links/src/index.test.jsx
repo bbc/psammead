@@ -13,6 +13,14 @@ describe(`SitewideLinks`, () => {
     text: `${linkItem.text}${index}`,
   }));
 
+  // Add CCPA link to links array
+  links.push({
+    href:
+      'https://www.bbc.com/usingthebbc/cookies/how-can-i-change-my-bbc-cookie-settings/',
+    text: 'AdChoices / Do Not Sell My Info',
+    lang: 'en-GB',
+  });
+
   shouldMatchSnapshot(
     'should render correctly',
     <SitewideLinks
