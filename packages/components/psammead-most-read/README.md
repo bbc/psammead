@@ -20,7 +20,7 @@ The `MostRead` component is designed to display the most read articles given a d
 | numberOfItems | number | yes | N/A | `10` |
 | children | node | yes | N/A | `<MostReadItemWrapper dir="ltr"><MostReadRank service="news" script={latin} listIndex={1} numberOfItems={10} dir="ltr" /> <MostReadLink dir="ltr" href="/bbc.co.uk/news/articles/27051997" service="news" script={latin} title="This is a news article headline" /></MostReadItemWrapper>,` |
 | dir | string | yes | 'ltr' | `'ltr'`|
-| maxTwoColumns | bool | no | `false` | `true`|
+| columnLayout | string | no | 'multiColumn' | `twoColumn`
 
 ### Usage
 
@@ -41,16 +41,16 @@ import { latin } from '@bbc/gel-foundations/scripts';
   service="news"
   script={latin}
   dir="ltr"
-  maxTwoColumns
+  columnLayout="twoColumn"
 >
-  <MostReadItemWrapper dir="ltr" maxTwoColumns>
+  <MostReadItemWrapper dir="ltr" children columnLayout="twoColumn">
     <MostReadRank
       service="news"
       script={latin}
       listIndex={1}
       numberOfItems={10}
       dir="ltr"
-      maxTwoColumns
+      columnLayout="twoColumn"
     />
     <MostReadLink
       dir="ltr"
@@ -72,7 +72,7 @@ import { latin } from '@bbc/gel-foundations/scripts';
 | -------- | ---- | -------- | ------- | ------- |
 | dir | string | yes | 'ltr' | `'ltr'`|
 | children | node | yes | N/A | `<MostReadRank service="news" script={latin} listIndex={1} numberOfItems={10} dir="ltr" /> <MostReadLink dir="ltr" href="/bbc.co.uk/news/articles/27051997" service="news" script={latin} title="This is a news article headline" />` |
-| maxTwoColumns | bool | no | `false` | `true`|
+| columnLayout | string | no | 'multiColumn' | `twoColumn`
 
 ### Usage
 
@@ -86,14 +86,14 @@ import {
   MostReadRank,
   MostReadItemWrapper,
 } from '@bbc/psammead-most-read';
-<MostReadItemWrapper dir="ltr" maxTwoColumns>
+<MostReadItemWrapper dir="ltr" children columnLayout="twoColumn">
   <MostReadRank
     service="news"
     script={latin}
     listIndex={1}
     numberOfItems={10}
     dir="ltr"
-    maxTwoColumns
+    columnLayout="twoColumn"
   />
   <MostReadLink
     dir="ltr"
@@ -117,7 +117,7 @@ import {
 | listIndex | number | yes | N/A | `1` |
 | numberOfItems | number | yes | N/A | `10` |
 | dir | string | no | `"ltr"` | `"ltr"` |
-| maxTwoColumns | bool | no | `false` | `true`|
+| columnLayout | string | no | 'multiColumn' | `twoColumn`
 
 ### Usage
 
@@ -132,7 +132,7 @@ import { MostReadRank } from '@bbc/psammead-most-read';
   listIndex={1}
   numberOfItems={5}
   dir="ltr"
-  maxTwoColumns
+  columnLayout="twoColumn"
 />;
 ```
 
