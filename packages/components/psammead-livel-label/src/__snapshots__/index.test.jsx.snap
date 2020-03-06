@@ -1,0 +1,57 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LiveLabel should render a RTL label correctly 1`] = `
+.c0 {
+  font-family: ReithSans,Helvetica,Arial,sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: #B80000;
+  display: inline-block;
+  margin-left: 0.5rem;
+}
+
+<span
+  aria-hidden="true"
+  class="c0"
+  dir="rtl"
+>
+  LIVE
+</span>
+`;
+
+exports[`LiveLabel should render correctly with aria-hidden 1`] = `
+.c0 {
+  font-family: ReithSans,Helvetica,Arial,sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: #B80000;
+  display: inline-block;
+  margin-right: 0.5rem;
+}
+
+<span
+  aria-hidden="true"
+  class="c0"
+  dir="ltr"
+>
+  LIVE
+</span>
+`;
+
+exports[`LiveLabel should render correctly without aria-hidden 1`] = `
+.c0 {
+  font-family: ReithSans,Helvetica,Arial,sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: #B80000;
+  display: inline-block;
+  margin-right: 0.5rem;
+}
+
+<span
+  class="c0"
+  dir="ltr"
+>
+  LIVE
+</span>
+`;
