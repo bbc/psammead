@@ -256,6 +256,22 @@ exports[`SitewideLinks should render correctly 1`] = `
           </span>
         </a>
       </li>
+      <li
+        class="c3"
+        role="listitem"
+      >
+        <a
+          class="c4 c5"
+          href="https://www.bbc.com/usingthebbc/cookies/how-can-i-change-my-bbc-cookie-settings/"
+          lang="en-GB"
+        >
+          <span
+            class="c6"
+          >
+            AdChoices / Do Not Sell My Info
+          </span>
+        </a>
+      </li>
     </ul>
     <p
       class="c7"
@@ -558,6 +574,22 @@ exports[`SitewideLinks should render correctly with trust project link 1`] = `
             class="c6"
           >
             Link6
+          </span>
+        </a>
+      </li>
+      <li
+        class="c3"
+        role="listitem"
+      >
+        <a
+          class="c4 c5"
+          href="https://www.bbc.com/usingthebbc/cookies/how-can-i-change-my-bbc-cookie-settings/"
+          lang="en-GB"
+        >
+          <span
+            class="c6"
+          >
+            AdChoices / Do Not Sell My Info
           </span>
         </a>
       </li>
