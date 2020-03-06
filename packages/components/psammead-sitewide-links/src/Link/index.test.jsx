@@ -14,4 +14,8 @@ describe('Link', () => {
     'should render an inline link after passing an inline prop',
     <Link text={text} href={href} inline />,
   );
+  shouldMatchSnapshot(
+    'should render an inline link with a lang attribute',
+    <Link text={text} href={href} inline lang="en-GB" />,
+  );
 });
