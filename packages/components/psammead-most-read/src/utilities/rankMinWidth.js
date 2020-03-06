@@ -35,6 +35,7 @@ export const doubleDigitDefault = {
   group0WithOneColumn: GEL_SPACING_QUIN,
   group1WithOneColumn: GEL_SPACING_QUIN,
   group2WithOneColumn: GEL_SPACING_SEXT,
+  group3WithOneColumn: '4rem',
   group3WithTwoColumns: '4rem',
   group5WithFiveColumns: '4rem',
 };
@@ -54,6 +55,7 @@ export const doubleDigitThin = {
   group0WithOneColumn: GEL_SPACING_QUAD,
   group1WithOneColumn: GEL_SPACING_QUAD,
   group2WithOneColumn: GEL_SPACING_QUAD,
+  group3WithOneColumn: GEL_SPACING_SEXT,
   group3WithTwoColumns: GEL_SPACING_SEXT,
   group5WithFiveColumns: GEL_SPACING_SEXT,
 };

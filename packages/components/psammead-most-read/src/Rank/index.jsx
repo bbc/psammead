@@ -1,5 +1,5 @@
 import React from 'react';
-import { shape, string, oneOf, number, bool } from 'prop-types';
+import { shape, string, oneOf, number } from 'prop-types';
 import styled from 'styled-components';
 import { getFoolscap } from '@bbc/gel-foundations/typography';
 import {
@@ -31,24 +31,14 @@ import {
   thinFontServices,
 } from '../utilities/rankMinWidth';
 
-const serviceNumerals = service => {
-  const servicesNonWesternNumerals = {
-    bengali: Bengali,
-    burmese: Burmese,
-    nepali: Nepali,
-    pashto: EasternArabic,
-    persian: EasternArabic,
-  };
-  return servicesNonWesternNumerals[service]
-    ? servicesNonWesternNumerals[service]
-    : WesternArabic;
-};
-
 // For additional spacing for numerals in the right column because of '10' being double digits
 const isOnSecondColumn = ({ listIndex, numberOfItems }, supportsGrid) =>
   supportsGrid ? listIndex > Math.ceil(numberOfItems / 2) : listIndex % 2 === 0;
 
-const listHasDoubleDigits = numberOfItems => numberOfItems > 9;
+const listHasDoubleDigits = numberOfItems => {
+  console.log(numberOfItems);
+  return numberOfItems > 9;
+};
 
 // This checks whether the 2nd column contains a double digit value
 const columnIncludesDoubleDigits = (props, supportsGrid) =>
@@ -84,8 +74,7 @@ const isFiveOrTen = ({ listIndex, service, numberOfItems }) => {
     : getRankMinWidth({ service, numberOfItems }).group5;
 };
 
-const TwoColumnWrapper = styled.div`
-  /* 1 column of items at viewport 0px and above */
+const OneColumnWrapper = styled.div`
   @media (max-width: ${GEL_GROUP_0_SCREEN_WIDTH_MAX}) {
     min-width: ${props =>
       listHasDoubleDigits(props.numberOfItems)
@@ -105,6 +94,25 @@ const TwoColumnWrapper = styled.div`
         : getRankMinWidth(props).group2};
   }
 
+  @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
+    min-width: ${props =>
+      listHasDoubleDigits(props.numberOfItems)
+        ? getRankMinWidth(props).group3WithOneColumn
+        : 'auto'};
+  }
+
+  /* different number order for when css grid is supported  */
+  @supports (${grid}) {
+    @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
+      min-width: ${props =>
+        listHasDoubleDigits(props.numberOfItems)
+          ? getRankMinWidth(props).group3WithOneColumn
+          : 'auto'};
+    }
+  }
+`;
+
+const TwoColumnWrapper = styled(OneColumnWrapper)`
   /* 2 columns of items at viewport 1007px and above */
   @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
     min-width: ${props =>
@@ -112,6 +120,7 @@ const TwoColumnWrapper = styled.div`
         ? getRankMinWidth(props).group3WithTwoColumns
         : getRankMinWidth(props).group3};
   }
+  /* different number order for when css grid is supported  */
   @supports (${grid}) {
     @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
       min-width: ${props =>
@@ -144,17 +153,37 @@ const StyledSpan = styled.span`
     service === 'japanese' && `-${GEL_SPACING_HLF}`};
 `;
 
+const serviceNumerals = service => {
+  const servicesNonWesternNumerals = {
+    bengali: Bengali,
+    burmese: Burmese,
+    nepali: Nepali,
+    pashto: EasternArabic,
+    persian: EasternArabic,
+  };
+  return servicesNonWesternNumerals[service]
+    ? servicesNonWesternNumerals[service]
+    : WesternArabic;
+};
+
+const getColumnWrapper = columnWrapper =>
+  ({
+    oneColumn: OneColumnWrapper,
+    twoColumn: TwoColumnWrapper,
+    multiColumn: MultiColumnWrapper,
+  }[columnWrapper]);
+
 const MostReadRank = ({
   service,
   script,
   listIndex,
   numberOfItems,
   dir,
-  maxTwoColumns,
+  columnLayout,
 }) => {
   const numerals = serviceNumerals(service);
   const rank = numerals[listIndex];
-  const RankWrapper = maxTwoColumns ? TwoColumnWrapper : MultiColumnWrapper;
+  const RankWrapper = getColumnWrapper(columnLayout);
 
   return (
     <RankWrapper
@@ -176,12 +205,12 @@ MostReadRank.propTypes = {
   listIndex: number.isRequired,
   numberOfItems: number.isRequired,
   dir: oneOf(['rtl', 'ltr']),
-  maxTwoColumns: bool,
+  columnLayout: oneOf(['oneColumn', 'twoColumn', 'multiColumn']),
 };
 
 MostReadRank.defaultProps = {
   dir: 'ltr',
-  maxTwoColumns: false,
+  columnLayout: 'multiColumn',
 };
 
 export default MostReadRank;
