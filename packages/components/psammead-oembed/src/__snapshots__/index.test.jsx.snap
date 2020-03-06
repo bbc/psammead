@@ -167,7 +167,7 @@ exports[`OEmbed should render oEmbed HTML from Instagram 1`] = `
       </p>
     </div>
   </blockquote>
-   "
+   
 </div>
 `;
 
