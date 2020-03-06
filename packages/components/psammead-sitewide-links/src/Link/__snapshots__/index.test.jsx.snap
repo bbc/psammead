@@ -55,3 +55,32 @@ exports[`Link should render an inline link after passing an inline prop 1`] = `
   </span>
 </a>
 `;
+
+exports[`Link should render an inline link with a lang attribute 1`] = `
+.c1 {
+  padding: 0.5rem 0 0.5rem;
+  color: #FFFFFF;
+  font-weight: 700;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  display: inline;
+}
+
+.c0:hover .c2,
+.c0:focus .c2 {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+<a
+  class="c0 c1"
+  href="https://www.bbc.com/"
+  lang="en-GB"
+>
+  <span
+    class="c2"
+  >
+    Some link text
+  </span>
+</a>
+`;

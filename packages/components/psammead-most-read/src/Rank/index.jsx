@@ -1,5 +1,5 @@
 import React from 'react';
-import { shape, string, oneOf, number, bool } from 'prop-types';
+import { shape, string, oneOf, number } from 'prop-types';
 import styled from 'styled-components';
 import { getFoolscap } from '@bbc/gel-foundations/typography';
 import {
@@ -44,7 +44,7 @@ const doubleDigitWidth = ({ service }) => {
     : doubleDigitDefault;
 };
 
-const TwoColumnWrapper = styled.div`
+const OneColumnWrapper = styled.div`
   @media (max-width: ${GEL_GROUP_0_SCREEN_WIDTH_MAX}) {
     min-width: ${props =>
       listHasDoubleDigits(props) ? doubleDigitWidth(props).group0 : 'auto'};
@@ -62,11 +62,25 @@ const TwoColumnWrapper = styled.div`
 
   @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
     min-width: ${props =>
+      listHasDoubleDigits(props) ? doubleDigitWidth(props).group3 : 'auto'};
+  }
+
+  /* different number order for when css grid is supported  */
+  @supports (${grid}) {
+    @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
+      min-width: ${props =>
+        listHasDoubleDigits(props) ? doubleDigitWidth(props).group3 : 'auto'};
+    }
+  }
+`;
+
+const TwoColumnWrapper = styled(OneColumnWrapper)`
+  @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
+    min-width: ${props =>
       columnIncludesDoubleDigits(props, false)
         ? doubleDigitWidth(props).group3
         : 'auto'};
   }
-
   /* different number order for when css grid is supported  */
   @supports (${grid}) {
     @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
@@ -109,17 +123,24 @@ const serviceNumerals = service => {
     : WesternArabic;
 };
 
+const getColumnWrapper = columnWrapper =>
+  ({
+    oneColumn: OneColumnWrapper,
+    twoColumn: TwoColumnWrapper,
+    multiColumn: MultiColumnWrapper,
+  }[columnWrapper]);
+
 const MostReadRank = ({
   service,
   script,
   listIndex,
   numberOfItems,
   dir,
-  maxTwoColumns,
+  columnLayout,
 }) => {
   const numerals = serviceNumerals(service);
   const rank = numerals[listIndex];
-  const RankWrapper = maxTwoColumns ? TwoColumnWrapper : MultiColumnWrapper;
+  const RankWrapper = getColumnWrapper(columnLayout);
 
   return (
     <RankWrapper
@@ -141,12 +162,12 @@ MostReadRank.propTypes = {
   listIndex: number.isRequired,
   numberOfItems: number.isRequired,
   dir: oneOf(['rtl', 'ltr']),
-  maxTwoColumns: bool,
+  columnLayout: oneOf(['oneColumn', 'twoColumn', 'multiColumn']),
 };
 
 MostReadRank.defaultProps = {
   dir: 'ltr',
-  maxTwoColumns: false,
+  columnLayout: 'multiColumn',
 };
 
 export default MostReadRank;
