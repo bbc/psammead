@@ -7,7 +7,7 @@
   "main": "dist/index.js",
   "module": "esm/index.js",
   "sideEffects": false,
-  "description": "A component that renders rich Social Embeds from a list of supported providers or a fallback.",
+  "description": "A component that render a rich Social Embed from a list of supported providers, or a fallback.",
   "repository": {
     "type": "git",
     "url": "https://github.com/BBC-News/psammead/tree/latest/packages/components/psammead-social-embed"
