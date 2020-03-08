@@ -1,0 +1,11 @@
+{
+  "instagram": {
+    "scripts": ["https://"]
+  },
+  "twitter": {
+    "scripts": ["https://"]
+  },
+  "youtube": {
+    "scripts": ["https://"]
+  }
+}
