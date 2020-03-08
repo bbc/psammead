@@ -1,7 +1,39 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`SocialEmbed should render correctly 1`] = `
-<h1>
-  Hello World
-</h1>
+exports[`AmpSocialEmbed should render correctly 1`] = `
+<div>
+  <a
+    href="#skip-%p-post-by-%u"
+  >
+    Skip %p post by %u
+  </a>
+  <div>
+    01234
+  </div>
+  <p
+    id="skip-%p-post-by-%u"
+  >
+    End of %p post by %u
+  </p>
+</div>
+`;
+
+exports[`CanonicalSocialEmbed should render correctly 1`] = `
+<div>
+  <a
+    href="#skip-%p-post-by-%u"
+  >
+    Skip %p post by %u
+  </a>
+  <div>
+    <h1>
+      Content.
+    </h1>
+  </div>
+  <p
+    id="skip-%p-post-by-%u"
+  >
+    End of %p post by %u
+  </p>
+</div>
 `;
