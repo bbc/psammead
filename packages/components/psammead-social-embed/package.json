@@ -21,7 +21,9 @@
     "url": "https://github.com/bbc/psammead/issues"
   },
   "homepage": "https://github.com/BBC-News/psammead/blob/latest/packages/components/psammead-social-embed/README.md",
-  "dependencies": {},
+  "dependencies": {
+    "@bbc/psammead-oembed": "0.1.0-alpha.1"
+  },
   "peerDependencies": {
     "react": "^16.12.0"
   }
