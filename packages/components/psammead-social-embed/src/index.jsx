@@ -1,5 +1,5 @@
 import withFallback from './withFallback';
-import withSkiplink from './withSkiplink';
+import withSkipLink from './withSkipLink';
 
 import Amp from './Amp';
 import ampProviders from './Amp/providers.json';
@@ -8,7 +8,7 @@ import Canonical from './Canonical';
 import canonicalProviders from './Canonical/providers.json';
 
 export const CanonicalSocialEmbed = withFallback(
-  withSkiplink(Canonical),
+  withSkipLink(Canonical),
   canonicalProviders,
 );
-export const AmpSocialEmbed = withFallback(withSkiplink(Amp), ampProviders);
+export const AmpSocialEmbed = withFallback(withSkipLink(Amp), ampProviders);

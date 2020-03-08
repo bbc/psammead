@@ -1,16 +1,15 @@
 import React from 'react';
-import { string } from 'prop-types';
+import { shape, string } from 'prop-types';
 import OEmbed from '@bbc/psammead-oembed';
 
-const Canonical = ({ id }) => {
-  const oEmbed = {
-    html: `<p>${id}</p>`,
-  };
+const Canonical = ({ oEmbed }) => {
   return <OEmbed oEmbed={oEmbed} />;
 };
 
 Canonical.propTypes = {
-  id: string.isRequired,
+  oEmbed: shape({
+    html: string.isRequired,
+  }).isRequired,
 };
 
 export default Canonical;

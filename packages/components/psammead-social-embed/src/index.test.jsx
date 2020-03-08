@@ -1,13 +1,11 @@
 import React from 'react';
 import { shouldMatchSnapshot } from '@bbc/psammead-test-helpers';
-import { render } from '@testing-library/react';
-import SocialEmbed from './index';
+import { CanonicalSocialEmbed, AmpSocialEmbed } from './index';
 
-describe('SocialEmbed', () => {
-  shouldMatchSnapshot('should render correctly', <SocialEmbed />);
+describe('CanonicalSocialEmbed', () => {
+  shouldMatchSnapshot('should render correctly', <CanonicalSocialEmbed />);
+});
 
-  it('should test example template', () => {
-    const { container } = render(<SocialEmbed />);
-    expect(container.querySelector('h1').textContent).toEqual('Hello World');
-  });
+describe('AmpSocialEmbed', () => {
+  shouldMatchSnapshot('should render correctly', <AmpSocialEmbed />);
 });

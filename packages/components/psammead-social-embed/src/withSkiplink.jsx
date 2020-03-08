@@ -1,5 +1,5 @@
 import React from 'react';
-import { string } from 'prop-types';
+import { string, shape } from 'prop-types';
 
 /**
  * withSkipLink is a higher-order component. It wraps a social embed
@@ -7,19 +7,30 @@ import { string } from 'prop-types';
  * @param {function} SocialEmbed A social embed component.
  */
 
-const withSkiplink = SocialEmbed => {
-  const SkippableSocialEmbed = props => (
-    <div>
-      <a href="/">Skip</a>
-      <SocialEmbed {...props} />
-    </div>
-  );
+const withSkipLink = SocialEmbed => {
+  const SkippableSocialEmbed = ({ skipLink, ...props }) => {
+    const { text, endText } = skipLink;
+    const id = text
+      .trim()
+      .toLowerCase()
+      .replace(/ /g, '-');
+    return (
+      <div>
+        <a href={`#${id}`}>{text}</a>
+        <SocialEmbed {...props} />
+        <p id={id}>{endText}</p>
+      </div>
+    );
+  };
 
   SkippableSocialEmbed.propTypes = {
-    provider: string.isRequired,
+    skipLink: shape({
+      text: string.isRequired,
+      endText: string.isRequired,
+    }).isRequired,
   };
 
   return SkippableSocialEmbed;
 };
 
-export default withSkiplink;
+export default withSkipLink;

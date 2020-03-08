@@ -1,5 +1,5 @@
 import React from 'react';
-import { string } from 'prop-types';
+import { string, shape } from 'prop-types';
 
 import Notice from './Notice';
 
@@ -11,17 +11,25 @@ import Notice from './Notice';
  */
 
 const withFallback = (SocialEmbed, providers) => {
-  const Embed = ({ provider, ...props }) => {
+  const Embed = ({ provider, fallback, ...props }) => {
     const isSupportedProvider = Object.keys(providers).includes(provider);
     return isSupportedProvider ? (
       <SocialEmbed {...props} />
     ) : (
-      <Notice {...props} />
+      <Notice {...fallback} {...props} />
     );
   };
 
+  Embed.defaultProps = {};
+
   Embed.propTypes = {
     provider: string.isRequired,
+    fallback: shape({
+      text: string.isRequired,
+      linkText: string.isRequired,
+      linkHref: string.isRequired,
+      warningText: string,
+    }).isRequired,
   };
 
   return Embed;
