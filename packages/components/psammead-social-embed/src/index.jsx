@@ -1,5 +1,14 @@
-import React from 'react';
+import withFallback from './withFallback';
+import withSkiplink from './withSkiplink';
 
-const SocialEmbed = () => <h1>Hello World</h1>;
+import Amp from './Amp';
+import ampProviders from './Amp/providers.json';
 
-export default SocialEmbed;
+import Canonical from './Canonical';
+import canonicalProviders from './Canonical/providers.json';
+
+export const CanonicalSocialEmbed = withFallback(
+  withSkiplink(Canonical),
+  canonicalProviders,
+);
+export const AmpSocialEmbed = withFallback(withSkiplink(Amp), ampProviders);
