@@ -15,16 +15,16 @@ The `LiveLabel` component implements a span for use on live content.
 ## Props
 
 <!-- prettier-ignore -->
-| Argument          | Type    | Required | Default   | Example            |
-| ----------------- | ------- | -------- | --------- | ------------------ |
-| service           | string  | yes      | N/A       | `'news'`           |
-| dir               | string  | no       | `'ltr'`   | `'rtl'`            |
-| ariaHidden        | bool    | no       | `false`   | `true`             |
-| liveText          | string  | no       | `'LIVE'`  | `'Localised Live'` |
-| withOffScreenText | boolean | no       | `false`   | `true`             |
-| offScreenText     | string  | no       | `Live`    | `'Watch Live'`     |
-| lang              | string  | no       | `'en-GB'` | `'en-GB'`          |
-| children          | node    | no       | `null`       | `<span>Headline</span>` |
+| Argument          | Type    | Required | Default   | Example                 |
+| ----------------- | ------- | -------- | --------- | ----------------------- |
+| service           | string  | yes      | N/A       | `'news'`                |
+| dir               | string  | no       | `'ltr'`   | `'rtl'`                 |
+| ariaHidden        | bool    | no       | `false`   | `true`                  |
+| liveText          | string  | no       | `'LIVE'`  | `'Localised Live'`      |
+| withOffScreenText | boolean | no       | `false`   | `true`                  |
+| offScreenText     | string  | no       | `Live`    | `'Watch Live'`          |
+| lang              | string  | no       | `'en-GB'` | `'en-GB'`               |
+| children          | node    | no       | `null`    | `<span>Headline</span>` |
 
 ## Usage
 
