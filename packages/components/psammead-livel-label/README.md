@@ -35,7 +35,7 @@ import LiveLabel from '@bbc/psammead-live-label';
 import { Headline, Link } from '@bbc/psammead-story-promo';
 import { latin } from '@bbc/gel-foundations/scripts';
 
-<Headline script={latin} service="news" promoType="top">
+<Headline script={latin} service="news">
   <Link href="https://www.bbc.co.uk/news">
     <LiveLabel service={service} dir={dir} ariaHidden withOffScreenText>
       The headline of the live promo
