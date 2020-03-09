@@ -15,12 +15,12 @@ storiesOf('Components|SocialEmbed', module)
         provider="instagram"
         oEmbed={{ html: '<h1>Content.</h1>' }}
         skipLink={{
-          text: 'Skip %p post by %u',
-          endText: 'End of %p post by %u',
+          text: 'Skip %p content by %u',
+          endText: 'End of %p content by %u',
         }}
         fallback={{
-          text: "Sorry but we're having trouble displaying this post",
-          linkText: 'View original post',
+          text: "Sorry but we're having trouble displaying this content",
+          linkText: 'View content on %p',
           linkHref: 'embed-url',
           warningText:
             'Warning: BBC is not responsible for third party content',
@@ -38,12 +38,12 @@ storiesOf('Components|SocialEmbed', module)
         provider="instagram"
         id="01234"
         skipLink={{
-          text: 'Skip %p post by %u',
-          endText: 'End of %p post by %u',
+          text: 'Skip %p content by %u',
+          endText: 'End of %p content by %u',
         }}
         fallback={{
-          text: "Sorry but we're having trouble displaying this post",
-          linkText: 'View original post',
+          text: "Sorry but we're having trouble displaying this content",
+          linkText: 'View content on %p',
           linkHref: 'embed-url',
           warningText:
             'Warning: BBC is not responsible for third party content',
