@@ -15,11 +15,16 @@ The `LiveLabel` component implements a span for use on live content.
 ## Props
 
 <!-- prettier-ignore -->
-| Argument | Type   | Required | Default | Example  |
-| -------- | ------ | -------- | ------- | -------- |
-| service  | string | yes      | N/A     | `'news'` |
-| dir      | string | no       | `'ltr'` | `'rtl'`  |
-| ariaHidden | bool | no       | `false` | `true`   |
+| Argument          | Type    | Required | Default   | Example            |
+| ----------------- | ------- | -------- | --------- | ------------------ |
+| service           | string  | yes      | N/A       | `'news'`           |
+| dir               | string  | no       | `'ltr'`   | `'rtl'`            |
+| ariaHidden        | bool    | no       | `false`   | `true`             |
+| liveText          | string  | no       | `'LIVE'`  | `'Localised Live'` |
+| withOffScreenText | boolean | no       | `false`   | `true`             |
+| offScreenText     | string  | yes      | `Live`    | `'Watch Live'`     |
+| lang              | string  | no       | `'en-GB'` | `'en-GB'`          |
+| children          | node    | yes      | N/A       | `<span>Headline</span>` |
 
 ## Usage
 
@@ -28,22 +33,13 @@ The `LiveLabel` component implements a span for use on live content.
 ```jsx
 import LiveLabel from '@bbc/psammead-live-label';
 import { Headline, Link } from '@bbc/psammead-story-promo';
-import VisuallyHiddenText from '@bbc/psammead-visually-hidden-text';
 import { latin } from '@bbc/gel-foundations/scripts';
-
-const LiveComponent = ({ headline, service, dir }) => (
-  <span role="text">
-    <LiveLabel service={service} dir={dir} ariaHidden>
-      LIVE
-    </LiveLabel>
-    <VisuallyHiddenText lang="en-GB">Live, </VisuallyHiddenText>
-    {headline}
-  </span>
-);
 
 <Headline script={latin} service="news" promoType="top">
   <Link href="https://www.bbc.co.uk/news">
-    <LiveComponent service="news" headline="The headline of the live promo" />
+    <LiveLabel service={service} dir={dir} ariaHidden withOffScreenText>
+      The headline of the live promo
+    </LiveLabel>
   </Link>
 </Headline>;
 ```
@@ -54,7 +50,7 @@ The `LiveLabel` component can be used inside a `Link` in index pages to show a p
 
 ### Accessibility notes
 
-The `LiveLabel` example above shows this component being hidden to screen readers, and has visually hidden text rendered alongside it. This is to ensure the screen reader announces the word 'Live' correctly. This does not need to be accounted for in other languages.
+The `LiveLabel` example above shows this component being hidden to screen readers with visually hidden text rendered alongside it. This is to ensure the screen reader announces the word 'Live' correctly. This does not need to be accounted for in other languages.
 
 The `ariaHidden` prop is needed as styled components strips out aria tags on a server render.
 
