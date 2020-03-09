@@ -1,9 +1,9 @@
 {
   "instagram": {
-    "scripts": ["https://"]
+    "scripts": ["https://www.instagram.com/embed.js"]
   },
   "twitter": {
-    "scripts": ["https://"]
+    "scripts": ["https://platform.twitter.com/widgets.js"]
   },
   "youtube": {
     "scripts": []
