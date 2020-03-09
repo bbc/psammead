@@ -24,7 +24,7 @@ The `LiveLabel` component implements a span for use on live content.
 | withOffScreenText | boolean | no       | `false`   | `true`             |
 | offScreenText     | string  | yes      | `Live`    | `'Watch Live'`     |
 | lang              | string  | no       | `'en-GB'` | `'en-GB'`          |
-| children          | node    | yes      | N/A       | `<span>Headline</span>` |
+| children          | node    | no       | `null`       | `<span>Headline</span>` |
 
 ## Usage
 
