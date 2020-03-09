@@ -37,21 +37,16 @@ storiesOf('Components/LiveLabel', module)
     },
   )
   .add(
-    'with translated live text',
+    'with localised live text',
     ({ service, dir }) => (
-      <LiveLabel
-        service={service}
-        dir={dir}
-        ariaHidden={false}
-        liveText="AS E DE HAPPEN"
-      />
+      <LiveLabel service={service} dir={dir} liveText="AS E DE HAPPEN" />
     ),
     {
       notes,
     },
   )
   .add(
-    'with extra offscreen text',
+    'with custom offscreen text',
     ({ service, dir }) => (
       <LiveLabel
         service={service}

@@ -1,25 +1,56 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`LiveLabel should render a RTL label correctly 1`] = `
+exports[`LiveLabel should correctly render for RTL service 1`] = `
+.c1 {
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  -webkit-clip: rect(1px,1px,1px,1px);
+  clip: rect(1px,1px,1px,1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  width: 1px;
+  margin: 0;
+}
+
 .c0 {
-  font-family: ReithSans,Helvetica,Arial,sans-serif;
-  font-weight: 700;
-  font-style: normal;
   color: #B80000;
   display: inline-block;
-  margin-left: 0.5rem;
+  margin-right: 0.5rem;
 }
 
 <span
-  aria-hidden="true"
-  class="c0"
-  dir="rtl"
+  role="text"
 >
-  LIVE
+  <span
+    aria-hidden="true"
+    class="c0"
+    dir="ltr"
+  >
+    LIVE 
+  </span>
+  <span
+    class="c1"
+    lang="en-GB"
+  >
+    Live, 
+  </span>
 </span>
 `;
 
-exports[`LiveLabel should render correctly with aria-hidden 1`] = `
+exports[`LiveLabel should render correctly with custom offscreen text 1`] = `
+.c1 {
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  -webkit-clip: rect(1px,1px,1px,1px);
+  clip: rect(1px,1px,1px,1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  width: 1px;
+  margin: 0;
+}
+
 .c0 {
   font-family: ReithSans,Helvetica,Arial,sans-serif;
   font-weight: 700;
@@ -30,15 +61,37 @@ exports[`LiveLabel should render correctly with aria-hidden 1`] = `
 }
 
 <span
-  aria-hidden="true"
-  class="c0"
-  dir="ltr"
+  role="text"
 >
-  LIVE
+  <span
+    aria-hidden="true"
+    class="c0"
+    dir="ltr"
+  >
+    LIVE 
+  </span>
+  <span
+    class="c1"
+    lang="en-GB"
+  >
+    Watch Live, 
+  </span>
 </span>
 `;
 
-exports[`LiveLabel should render correctly without aria-hidden 1`] = `
+exports[`LiveLabel should render correctly with english live text 1`] = `
+.c1 {
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  -webkit-clip: rect(1px,1px,1px,1px);
+  clip: rect(1px,1px,1px,1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  width: 1px;
+  margin: 0;
+}
+
 .c0 {
   font-family: ReithSans,Helvetica,Arial,sans-serif;
   font-weight: 700;
@@ -49,9 +102,42 @@ exports[`LiveLabel should render correctly without aria-hidden 1`] = `
 }
 
 <span
-  class="c0"
-  dir="ltr"
+  role="text"
 >
-  LIVE
+  <span
+    aria-hidden="true"
+    class="c0"
+    dir="ltr"
+  >
+    LIVE 
+  </span>
+  <span
+    class="c1"
+    lang="en-GB"
+  >
+    Live, 
+  </span>
+</span>
+`;
+
+exports[`LiveLabel should render correctly with localised live text 1`] = `
+.c0 {
+  font-family: ReithSans,Helvetica,Arial,sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: #B80000;
+  display: inline-block;
+  margin-right: 0.5rem;
+}
+
+<span
+  role="text"
+>
+  <span
+    class="c0"
+    dir="ltr"
+  >
+    AS E DE HAPPEN 
+  </span>
 </span>
 `;
