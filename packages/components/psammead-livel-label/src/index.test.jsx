@@ -26,6 +26,6 @@ describe('LiveLabel', () => {
 
   shouldMatchSnapshot(
     'should correctly render for RTL service',
-    <LiveLabel service={arabic} ariaHidden withOffScreenText />,
+    <LiveLabel service={arabic} dir="rtl" ariaHidden withOffScreenText />,
   );
 });
