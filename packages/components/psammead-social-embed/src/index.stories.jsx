@@ -21,7 +21,7 @@ storiesOf('Components|SocialEmbed', module)
         fallback={{
           text: "Sorry but we're having trouble displaying this content",
           linkText: 'View content on %p',
-          linkHref: 'embed-url',
+          linkHref: 'https://www.bbc.co.uk',
           warningText:
             'Warning: BBC is not responsible for third party content',
         }}
@@ -44,7 +44,52 @@ storiesOf('Components|SocialEmbed', module)
         fallback={{
           text: "Sorry but we're having trouble displaying this content",
           linkText: 'View content on %p',
-          linkHref: 'embed-url',
+          linkHref: 'https://www.bbc.co.uk',
+          warningText:
+            'Warning: BBC is not responsible for third party content',
+        }}
+      />
+    ),
+    {
+      notes,
+    },
+  )
+  .add(
+    'Unsupported Provider',
+    () => (
+      <CanonicalSocialEmbed
+        provider="unsupported"
+        oEmbed={{ html: '<h1>Content.</h1>' }}
+        skipLink={{
+          text: 'Skip %p content by %u',
+          endText: 'End of %p content by %u',
+        }}
+        fallback={{
+          text: "Sorry but we're having trouble displaying this content",
+          linkText: 'View content on %p',
+          linkHref: 'https://www.bbc.co.uk',
+          warningText:
+            'Warning: BBC is not responsible for third party content',
+        }}
+      />
+    ),
+    {
+      notes,
+    },
+  )
+  .add(
+    'No oEmbed response',
+    () => (
+      <CanonicalSocialEmbed
+        provider="twitter"
+        skipLink={{
+          text: 'Skip %p content by %u',
+          endText: 'End of %p content by %u',
+        }}
+        fallback={{
+          text: "Sorry but we're having trouble displaying this content",
+          linkText: 'View content on %p',
+          linkHref: 'https://www.bbc.co.uk',
           warningText:
             'Warning: BBC is not responsible for third party content',
         }}
