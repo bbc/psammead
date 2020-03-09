@@ -1,19 +1,28 @@
-import React, { useState } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import { Helmet } from 'react-helmet';
 
+// vendored in this library for demonstration purposes: https://www.npmjs.com/package/dangerously-set-html-content
+function DangerouslySetHtmlContent(props) {
+  const { html } = props;
+  const divRef = useRef(null);
+
+  useEffect(() => {
+    const slotHtml = document.createRange().createContextualFragment(html); // Create a 'tiny' document and parse the html string
+    divRef.current.innerHTML = ''; // Clear the container
+    divRef.current.appendChild(slotHtml); // Append the new content
+  }, [html]);
+
+  return <div ref={divRef}></div>;
+}
+
 const Idt1Include = ({ html, requireJsSrc }) => {
-  const [isRequireLoaded, setIsRequireLoaded] = useState(false);
-
-  const handleOnLoad = () => {
-    setIsRequireLoaded(true);
-  };
-
   return (
     <>
       <Helmet>
-        <script async onLoad={handleOnLoad} src={requireJsSrc} />
+        <script src={requireJsSrc} />
       </Helmet>
-      {isRequireLoaded && <div dangerouslySetInnerHTML={{ __html: html }} />}
+
+      {<DangerouslySetHtmlContent html={html} />}
     </>
   );
 };
