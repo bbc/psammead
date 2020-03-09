@@ -22,7 +22,7 @@ The `LiveLabel` component implements a span for use on live content.
 | ariaHidden        | bool    | no       | `false`   | `true`             |
 | liveText          | string  | no       | `'LIVE'`  | `'Localised Live'` |
 | withOffScreenText | boolean | no       | `false`   | `true`             |
-| offScreenText     | string  | yes      | `Live`    | `'Watch Live'`     |
+| offScreenText     | string  | no       | `Live`    | `'Watch Live'`     |
 | lang              | string  | no       | `'en-GB'` | `'en-GB'`          |
 | children          | node    | no       | `null`       | `<span>Headline</span>` |
 
