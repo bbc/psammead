@@ -4,7 +4,6 @@ import { storiesOf } from '@storybook/react';
 import { withKnobs } from '@storybook/addon-knobs';
 import { withServicesKnob } from '@bbc/psammead-storybook-helpers';
 import { Headline, Link } from '@bbc/psammead-story-promo';
-import VisuallyHiddenText from '@bbc/psammead-visually-hidden-text';
 import LiveLabel from './index';
 import notes from '../README.md';
 
@@ -12,24 +11,14 @@ const Wrapper = styled.div`
   position: relative;
 `;
 
-/* eslint-disable-next-line react/prop-types */
-const LiveComponent = ({ service, dir, headline }) => (
-  /* eslint-disable-next-line jsx-a11y/aria-role */
-  <span role="text">
-    <LiveLabel service={service} dir={dir} ariaHidden>
-      LIVE
-    </LiveLabel>
-    <VisuallyHiddenText lang="en-GB">{` Live, `}</VisuallyHiddenText>
-    {headline}
-  </span>
-);
-
 // eslint-disable-next-line react/prop-types
 const HeadlineComponent = ({ script, service, dir, headline }) => {
   return (
     <Headline script={script} service={service}>
       <Link href="https://www.bbc.co.uk/news">
-        <LiveComponent service={service} dir={dir} headline={headline} />
+        <LiveLabel service={service} dir={dir} ariaHidden withOffScreenText>
+          {headline}
+        </LiveLabel>
       </Link>
     </Headline>
   );
@@ -39,27 +28,39 @@ storiesOf('Components/LiveLabel', module)
   .addDecorator(withKnobs)
   .addDecorator(withServicesKnob())
   .add(
-    'with aria-hidden',
-    ({ service, dir }) => {
-      return (
-        <LiveLabel service={service} dir={dir} ariaHidden>
-          LIVE
-        </LiveLabel>
-      );
-    },
+    'with english live text',
+    ({ service, dir }) => (
+      <LiveLabel service={service} dir={dir} ariaHidden withOffScreenText />
+    ),
     {
       notes,
     },
   )
   .add(
-    'without aria-hidden',
-    ({ service, dir }) => {
-      return (
-        <LiveLabel service={service} dir={dir}>
-          LIVE
-        </LiveLabel>
-      );
+    'with translated live text',
+    ({ service, dir }) => (
+      <LiveLabel
+        service={service}
+        dir={dir}
+        ariaHidden={false}
+        liveText="AS E DE HAPPEN"
+      />
+    ),
+    {
+      notes,
     },
+  )
+  .add(
+    'with extra offscreen text',
+    ({ service, dir }) => (
+      <LiveLabel
+        service={service}
+        dir={dir}
+        ariaHidden
+        withOffScreenText
+        offScreenText="Watch Live"
+      />
+    ),
     {
       notes,
     },
