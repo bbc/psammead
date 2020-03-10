@@ -11,19 +11,6 @@ const Wrapper = styled.div`
   position: relative;
 `;
 
-// eslint-disable-next-line react/prop-types
-const HeadlineComponent = ({ script, service, dir, headline }) => {
-  return (
-    <Headline script={script} service={service}>
-      <Link href="https://www.bbc.co.uk/news">
-        <LiveLabel service={service} dir={dir} ariaHidden withOffScreenText>
-          {headline}
-        </LiveLabel>
-      </Link>
-    </Headline>
-  );
-};
-
 storiesOf('Components/LiveLabel', module)
   .addDecorator(withKnobs)
   .addDecorator(withServicesKnob())
@@ -61,15 +48,16 @@ storiesOf('Components/LiveLabel', module)
     },
   )
   .add(
-    'with headline',
-    ({ text: textSnippet, script, service, dir }) => (
+    'with children',
+    ({ text: headline, script, service, dir }) => (
       <Wrapper>
-        <HeadlineComponent
-          script={script}
-          service={service}
-          dir={dir}
-          headline={textSnippet}
-        />
+        <Headline script={script} service={service}>
+          <Link href="https://www.bbc.co.uk/news">
+            <LiveLabel service={service} dir={dir} ariaHidden withOffScreenText>
+              {headline}
+            </LiveLabel>
+          </Link>
+        </Headline>
       </Wrapper>
     ),
     {
