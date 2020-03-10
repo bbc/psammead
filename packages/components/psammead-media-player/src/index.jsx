@@ -31,58 +31,56 @@ const StyledAudioContainer = styled.div`
   }
 `;
 
-export const CanonicalMediaPlayer = memo(
-  ({
-    showPlaceholder,
-    placeholderSrc,
-    placeholderSrcset,
-    portrait,
-    src,
-    title,
-    skin,
-    service,
-    mediaInfo,
-    noJsClassName,
-    noJsMessage,
-  }) => {
-    const [placeholderActive, setPlaceholderActive] = useState(showPlaceholder);
-    const handlePlaceholderClick = () => setPlaceholderActive(false);
+const CanonicalMediaPlayerComponent = ({
+  showPlaceholder,
+  placeholderSrc,
+  placeholderSrcset,
+  portrait,
+  src,
+  title,
+  skin,
+  service,
+  mediaInfo,
+  noJsClassName,
+  noJsMessage,
+}) => {
+  const [placeholderActive, setPlaceholderActive] = useState(showPlaceholder);
+  const handlePlaceholderClick = () => setPlaceholderActive(false);
 
-    const StyledContainer =
-      skin === 'audio' ? StyledAudioContainer : StyledVideoContainer;
+  const StyledContainer =
+    skin === 'audio' ? StyledAudioContainer : StyledVideoContainer;
 
-    return (
-      <StyledContainer portrait={portrait}>
-        {placeholderActive ? (
-          <Placeholder
-            onClick={handlePlaceholderClick}
-            src={placeholderSrc}
-            srcset={placeholderSrcset}
-            service={service}
-            mediaInfo={mediaInfo}
-            noJsClassName={noJsClassName}
-            noJsMessage={noJsMessage}
-          />
-        ) : (
-          <Canonical
-            src={src}
-            placeholderSrcset={placeholderSrcset}
-            showPlaceholder={showPlaceholder}
-            title={title}
-            placeholderSrc={placeholderSrc}
-            service={service}
-            noJsMessage={noJsMessage}
-          />
-        )}
-      </StyledContainer>
-    );
-  },
+  return (
+    <StyledContainer portrait={portrait}>
+      {placeholderActive ? (
+        <Placeholder
+          onClick={handlePlaceholderClick}
+          src={placeholderSrc}
+          srcset={placeholderSrcset}
+          service={service}
+          mediaInfo={mediaInfo}
+          noJsClassName={noJsClassName}
+          noJsMessage={noJsMessage}
+        />
+      ) : (
+        <Canonical
+          src={src}
+          placeholderSrcset={placeholderSrcset}
+          showPlaceholder={showPlaceholder}
+          title={title}
+          placeholderSrc={placeholderSrc}
+          service={service}
+          noJsMessage={noJsMessage}
+        />
+      )}
+    </StyledContainer>
+  );
+};
 
-  // Component receives a "mediaInfo" object prop - this can cause unnecessary
-  // re-renders when the object reference changes, but the content is the same.
-  // We only rerender if the prevProps and nextProps fail deep equality check
-  (props, nextProps) => !equals(props, nextProps),
-);
+// Component receives a "mediaInfo" object prop - this can cause unnecessary
+// re-renders when the object reference changes, but the content is the same.
+// We only rerender if the prevProps and nextProps fail deep equality check
+export const CanonicalMediaPlayer = memo(CanonicalMediaPlayerComponent, equals);
 
 export const AmpMediaPlayer = ({
   placeholderSrcset,
@@ -115,7 +113,7 @@ export const AmpMediaPlayer = ({
 
 export const MediaMessage = Message;
 
-CanonicalMediaPlayer.propTypes = {
+CanonicalMediaPlayerComponent.propTypes = {
   placeholderSrc: string,
   placeholderSrcset: string,
   portrait: bool,
@@ -136,7 +134,7 @@ CanonicalMediaPlayer.propTypes = {
   }),
 };
 
-CanonicalMediaPlayer.defaultProps = {
+CanonicalMediaPlayerComponent.defaultProps = {
   portrait: false,
   showPlaceholder: true,
   skin: 'classic',
