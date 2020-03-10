@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 2.0.98 | [PR#3239](https://github.com/bbc/psammead/pull/3239) Talos - Bump Dependencies - @bbc/psammead-most-read |
 | 2.0.97 | [PR#3232](https://github.com/bbc/psammead/pull/3232) Fix security vulnerability |
 | 2.0.96 | [PR#3226](https://github.com/bbc/psammead/pull/3226) Talos - Bump Dependencies - @bbc/psammead-most-read, @bbc/psammead-sitewide-links |
 | 2.0.95 | [PR#3225](https://github.com/bbc/psammead/pull/3225) Talos - Bump Dependencies - @bbc/psammead-most-read |
