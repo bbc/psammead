@@ -1,24 +1,41 @@
 import React, { useState, useLayoutEffect } from 'react';
 import ReactDOM from 'react-dom';
+import HTMLReactParser from 'html-react-parser';
+import Helmet from 'react-helmet';
 
-const Include = ({ html }) => {
-  const [initialised, setInitialised] = useState(false);
-  const [ref, setRef] = useState(React.createRef());
-  const [shadowRoot, setShadowRoot] = useState();
+const Include = ({ html, requireJsSrc }) => {
+  let scripts = [];
 
-  useLayoutEffect(() => {
-    setShadowRoot(ref.current.parentNode.attachShadow({ mode: 'open' }));
-    setInitialised(true);
-  }, [ref, setInitialised]);
+  const toRender = HTMLReactParser(html, {
+    replace: function({ type, attribs: attributes, children }) {
+      if (type === 'script') {
+        scripts.push({
+          attributes,
+          data: children[0].data,
+        });
 
-  if (!initialised) {
-    return <div ref={ref}></div>;
-  } else {
-    return ReactDOM.createPortal(
-      <div dangerouslySetInnerHTML={{ __html: html }}></div>,
-      shadowRoot,
+        return <></>;
+      }
+    },
+  });
+
+  const scriptTags = scripts.map(({ attributes, data }) => {
+    return (
+      <Helmet>
+        <script {...attributes}>{data}</script>;
+      </Helmet>
     );
-  }
+  });
+
+  return (
+    <>
+      <Helmet>
+        <script src={requireJsSrc}></script>
+      </Helmet>
+      {toRender}
+      {scriptTags}
+    </>
+  );
 };
 
 export default Include;
