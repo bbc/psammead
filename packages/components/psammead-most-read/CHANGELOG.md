@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 4.0.0 | [PR#3201](https://github.com/bbc/psammead/pull/3201) Refactor RankWrapper in MostRead |
 | 3.0.0 | [PR#3200](https://github.com/bbc/psammead/pull/3200) Show OneColumn in MostRead for all breakpoints for STY Pages |
 | 2.0.3 | [PR#3219](https://github.com/bbc/psammead/pull/3219) Talos - Bump Dependencies - @bbc/psammead-grid |
 | 2.0.2 | [PR#3199](https://github.com/bbc/psammead/pull/3199) Use Latin numerals for Arabic and Urdu rank |
