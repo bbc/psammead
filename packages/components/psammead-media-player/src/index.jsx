@@ -1,6 +1,7 @@
-import React, { useState } from 'react';
+import React, { useState, memo } from 'react';
 import styled from 'styled-components';
 import { string, bool, oneOf, shape } from 'prop-types';
+import equals from 'ramda/src/equals';
 import {
   GEL_SPACING_DBL,
   GEL_SPACING_QUAD,
@@ -30,51 +31,58 @@ const StyledAudioContainer = styled.div`
   }
 `;
 
-export const CanonicalMediaPlayer = ({
-  showPlaceholder,
-  placeholderSrc,
-  placeholderSrcset,
-  portrait,
-  src,
-  title,
-  skin,
-  service,
-  mediaInfo,
-  noJsClassName,
-  noJsMessage,
-}) => {
-  const [placeholderActive, setPlaceholderActive] = useState(showPlaceholder);
-  const handlePlaceholderClick = () => setPlaceholderActive(false);
+export const CanonicalMediaPlayer = memo(
+  ({
+    showPlaceholder,
+    placeholderSrc,
+    placeholderSrcset,
+    portrait,
+    src,
+    title,
+    skin,
+    service,
+    mediaInfo,
+    noJsClassName,
+    noJsMessage,
+  }) => {
+    const [placeholderActive, setPlaceholderActive] = useState(showPlaceholder);
+    const handlePlaceholderClick = () => setPlaceholderActive(false);
 
-  const StyledContainer =
-    skin === 'audio' ? StyledAudioContainer : StyledVideoContainer;
+    const StyledContainer =
+      skin === 'audio' ? StyledAudioContainer : StyledVideoContainer;
 
-  return (
-    <StyledContainer portrait={portrait}>
-      {placeholderActive ? (
-        <Placeholder
-          onClick={handlePlaceholderClick}
-          src={placeholderSrc}
-          srcset={placeholderSrcset}
-          service={service}
-          mediaInfo={mediaInfo}
-          noJsClassName={noJsClassName}
-          noJsMessage={noJsMessage}
-        />
-      ) : (
-        <Canonical
-          src={src}
-          placeholderSrcset={placeholderSrcset}
-          showPlaceholder={showPlaceholder}
-          title={title}
-          placeholderSrc={placeholderSrc}
-          service={service}
-          noJsMessage={noJsMessage}
-        />
-      )}
-    </StyledContainer>
-  );
-};
+    return (
+      <StyledContainer portrait={portrait}>
+        {placeholderActive ? (
+          <Placeholder
+            onClick={handlePlaceholderClick}
+            src={placeholderSrc}
+            srcset={placeholderSrcset}
+            service={service}
+            mediaInfo={mediaInfo}
+            noJsClassName={noJsClassName}
+            noJsMessage={noJsMessage}
+          />
+        ) : (
+          <Canonical
+            src={src}
+            placeholderSrcset={placeholderSrcset}
+            showPlaceholder={showPlaceholder}
+            title={title}
+            placeholderSrc={placeholderSrc}
+            service={service}
+            noJsMessage={noJsMessage}
+          />
+        )}
+      </StyledContainer>
+    );
+  },
+
+  // Component receives a "mediaInfo" object prop - this can cause unnecessary
+  // re-renders when the object reference changes, but the content is the same.
+  // We only rerender if the prevProps and nextProps fail deep equality check
+  (props, nextProps) => !equals(props, nextProps),
+);
 
 export const AmpMediaPlayer = ({
   placeholderSrcset,
