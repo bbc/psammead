@@ -24,6 +24,13 @@ const paddingStart = ({ dir }) => `padding-${dir === 'ltr' ? 'left' : 'right'}`;
 // This is to make where the link ends consistent for both columns
 const paddingEnd = ({ dir }) => `padding-${dir === 'ltr' ? 'right' : 'left'}`;
 
+const getParentColumns = columnLayout => {
+  if (columnLayout !== 'oneColumn') {
+    return mostReadListGridProps(columnLayout).columns;
+  }
+  return null;
+};
+
 const StyledLink = styled.a`
   ${({ script }) => script && getPica(script)};
   ${({ service }) => getSerifMedium(service)};
@@ -118,7 +125,7 @@ const StyledGrid = styled(Grid).attrs({
 export const MostReadItemWrapper = ({ dir, children, columnLayout }) => (
   <StyledGrid
     {...mostReadItemGridProps(columnLayout)}
-    parentColumns={mostReadListGridProps(columnLayout).columns} // parentColumns is required here because on IE, this component would be rendered before it's parent therefore not receiving the parent's grid columns values so we have to explicitly pass it as a prop here so it works on IE
+    parentColumns={getParentColumns(columnLayout)} // parentColumns is required here because on IE, this component would be rendered before it's parent therefore not receiving the parent's grid columns values so we have to explicitly pass it as a prop here so it works on IE
     dir={dir}
     forwardedAs="li"
   >
