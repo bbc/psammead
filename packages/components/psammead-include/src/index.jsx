@@ -4,19 +4,29 @@ import HTMLReactParser from 'html-react-parser';
 import Helmet from 'react-helmet';
 
 const Include = ({ html, requireJsSrc }) => {
-  return (
-    <RequireJSWrapper requireJsSrc={requireJsSrc}>
-      <IncludeRaw html={html}></IncludeRaw>
-    </RequireJSWrapper>
-  );
+  if (requireJsSrc) {
+    return (
+      <RequireJSWrapper requireJsSrc={requireJsSrc}>
+        <IncludeRaw html={html}></IncludeRaw>
+      </RequireJSWrapper>
+    );
+  } else {
+    return <IncludeRaw html={html}></IncludeRaw>;
+  }
 };
 
 const RequireJSWrapper = ({ requireJsSrc, children }) => {
-  const [divRef] = useState(React.createRef());
-  // const [initialised, setInitialised] = useState(false);
   const [requireJsLoaded, setRequireJsLoaded] = useState(false);
 
-  useEffect(() => {
+  const requireJsInHead = () => {
+    const headChildren = document.getElementsByTagName('head')[0].children;
+    const headAsArray = [...headChildren];
+    return headAsArray.some(({ src }) => {
+      return src ? src === requireJsSrc : false;
+    });
+  };
+
+  const addRequireJsToHead = () => {
     const script = document.createElement('script');
     script.src = requireJsSrc;
     script.async = true;
@@ -24,13 +34,24 @@ const RequireJSWrapper = ({ requireJsSrc, children }) => {
       setRequireJsLoaded(true);
     };
 
-    divRef.current.appendChild(script);
-  }, [divRef]);
+    const head = document.getElementsByTagName('head')[0];
+    head.appendChild(script);
+  };
+
+  useEffect(() => {
+    if (!requireJsLoaded) {
+      if (!requireJsInHead()) {
+        addRequireJsToHead();
+      } else {
+        setRequireJsLoaded(true);
+      }
+    }
+  }, [requireJsLoaded]);
 
   if (requireJsLoaded) {
     return children;
   } else {
-    return <div ref={divRef}></div>;
+    return null;
   }
 };
 
@@ -83,14 +104,7 @@ const IncludeRaw = ({ html }) => {
     }
   }, [scripts]);
 
-  return (
-    <>
-      {/* <Helmet>
-        <script src={requireJsSrc}></script>
-      </Helmet> */}
-      {toRender}
-    </>
-  );
+  return toRender;
 };
 
 export default Include;
