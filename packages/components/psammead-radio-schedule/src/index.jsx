@@ -9,7 +9,7 @@ import ProgramCard from './ProgramCard';
 import StartTime from './StartTime';
 
 const StartTimeWrapper = styled.div`
-  padding: ${GEL_SPACING_DBL} 0 ${GEL_SPACING};
+  padding-bottom: ${GEL_SPACING};
 `;
 
 // Reset default of <ul> style
@@ -30,6 +30,7 @@ const StyledFlexGrid = styled(Grid).attrs(({ state }) => ({
     flex-direction: column;
   }
   position: relative;
+  padding-bottom: ${GEL_SPACING_DBL};
 `;
 
 const renderSchedule = ({
