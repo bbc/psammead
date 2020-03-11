@@ -7,41 +7,34 @@ const Include = ({ html, requireJsSrc }) => {
   const [scripts, setScripts] = useState();
   const [toRender, setToRender] = useState();
 
+  if (!scripts) {
+    let tempScripts = [];
+
+    setToRender(
+      HTMLReactParser(html, {
+        replace: function({ type, attribs: attributes, children }) {
+          if (type === 'script') {
+            const ref = React.createRef();
+
+            tempScripts = [
+              ...tempScripts,
+              {
+                attributes,
+                data: children.length > 0 ? children[0].data : null,
+                ref,
+              },
+            ];
+
+            return <span ref={ref}></span>;
+          }
+        },
+      }),
+    );
+
+    setScripts(tempScripts);
+  }
+
   useEffect(() => {
-    if (!scripts) {
-      const tempScripts = [];
-      // const requireJsRef = React.createRef();
-      // tempScripts.push({
-      //   attributes: { src: requireJsSrc },
-      //   ref: requireJsRef,
-      // });
-      // const requireJs = <div ref={requireJsRef}></div>;
-
-      setToRender(
-        <>
-          {HTMLReactParser(html, {
-            replace: function({ type, attribs: attributes, children }) {
-              if (type === 'script') {
-                const ref = React.createRef();
-
-                tempScripts.push({
-                  attributes,
-                  data: children[0].data,
-                  ref,
-                });
-
-                return <div ref={ref}></div>;
-              }
-            },
-          })}
-        </>,
-      );
-
-      setScripts(tempScripts);
-    }
-  }, [toRender, scripts]);
-
-  useLayoutEffect(() => {
     if (scripts) {
       console.log(scripts);
       scripts.forEach(({ attributes, data, ref }) => {
@@ -61,7 +54,9 @@ const Include = ({ html, requireJsSrc }) => {
 
   return (
     <>
-      <script src={requireJsSrc}></script>
+      {/* <Helmet>
+        <script src={requireJsSrc}></script>
+      </Helmet> */}
       {toRender}
     </>
   );
