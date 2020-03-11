@@ -1,7 +1,5 @@
-import React, { useState, useLayoutEffect, useEffect, Component } from 'react';
-import ReactDOM from 'react-dom';
+import React, { useState, useEffect } from 'react';
 import HTMLReactParser from 'html-react-parser';
-import Helmet from 'react-helmet';
 
 const Include = ({ html, requireJsSrc }) => {
   if (requireJsSrc) {
@@ -56,55 +54,71 @@ const RequireJSWrapper = ({ requireJsSrc, children }) => {
 };
 
 const IncludeRaw = ({ html }) => {
-  const [scripts, setScripts] = useState();
-  const [toRender, setToRender] = useState();
+  const [scriptMetadata, setScriptMetadata] = useState();
+  const [scriptPlaceholder, setScriptPlaceholders] = useState();
 
-  if (!scripts) {
-    let tempScripts = [];
+  const extractScriptToRender = () => {
+    let scriptMetadata = [];
+    const scriptPlaceholders = HTMLReactParser(html, {
+      replace: function({ type, attribs: attributes, children }) {
+        if (type === 'script') {
+          const ref = React.createRef();
 
-    setToRender(
-      HTMLReactParser(html, {
-        replace: function({ type, attribs: attributes, children }) {
-          if (type === 'script') {
-            const ref = React.createRef();
+          scriptMetadata = [
+            ...scriptMetadata,
+            {
+              attributes,
+              data: children.length > 0 ? children[0].data : null,
+              ref,
+            },
+          ];
 
-            tempScripts = [
-              ...tempScripts,
-              {
-                attributes,
-                data: children.length > 0 ? children[0].data : null,
-                ref,
-              },
-            ];
+          return <span ref={ref}></span>;
+        } else {
+          return <></>;
+        }
+      },
+    });
+    return {
+      scriptMetadata,
+      scriptPlaceholders,
+    };
+  };
 
-            return <span ref={ref}></span>;
-          }
-        },
-      }),
-    );
+  const attachScriptsToPlaceholders = () => {
+    scriptMetadata.forEach(({ attributes, data, ref }) => {
+      const script = document.createElement('script');
+      Object.entries(attributes).forEach(([key, value]) => {
+        script[key] = value;
+      });
+      if (data) {
+        const text = document.createTextNode(data);
+        script.appendChild(text);
+      }
 
-    setScripts(tempScripts);
+      ref.current.appendChild(script);
+    });
+  };
+
+  if (!scriptMetadata) {
+    const { scriptMetadata, scriptPlaceholders } = extractScriptToRender();
+
+    setScriptPlaceholders(scriptPlaceholders);
+    setScriptMetadata(scriptMetadata);
   }
 
   useEffect(() => {
-    if (scripts) {
-      console.log(scripts);
-      scripts.forEach(({ attributes, data, ref }) => {
-        const script = document.createElement('script');
-        Object.entries(attributes).forEach(([key, value]) => {
-          script[key] = value;
-        });
-        if (data) {
-          const text = document.createTextNode(data);
-          script.appendChild(text);
-        }
-
-        ref.current.appendChild(script);
-      });
+    if (scriptMetadata) {
+      attachScriptsToPlaceholders();
     }
-  }, [scripts]);
+  }, [scriptMetadata]);
 
-  return toRender;
+  return (
+    <>
+      <div dangerouslySetInnerHTML={{ __html: html }}></div>
+      {scriptPlaceholder}
+    </>
+  );
 };
 
 export default Include;
