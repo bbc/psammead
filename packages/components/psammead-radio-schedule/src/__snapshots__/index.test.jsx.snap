@@ -280,7 +280,7 @@ exports[`RadioSchedule should render ltr radio schedules correctly 1`] = `
 }
 
 .c4 {
-  padding: 1rem 0 0.5rem;
+  padding-bottom: 0.5rem;
 }
 
 .c1 {
@@ -290,6 +290,7 @@ exports[`RadioSchedule should render ltr radio schedules correctly 1`] = `
 
 .c3 {
   position: relative;
+  padding-bottom: 1rem;
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
@@ -1381,7 +1382,7 @@ exports[`RadioSchedule should render rtl radio schedules correctly 1`] = `
 }
 
 .c4 {
-  padding: 1rem 0 0.5rem;
+  padding-bottom: 0.5rem;
 }
 
 .c1 {
@@ -1391,6 +1392,7 @@ exports[`RadioSchedule should render rtl radio schedules correctly 1`] = `
 
 .c3 {
   position: relative;
+  padding-bottom: 1rem;
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
