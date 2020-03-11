@@ -4,6 +4,37 @@ import HTMLReactParser from 'html-react-parser';
 import Helmet from 'react-helmet';
 
 const Include = ({ html, requireJsSrc }) => {
+  return (
+    <RequireJSWrapper requireJsSrc={requireJsSrc}>
+      <IncludeRaw html={html}></IncludeRaw>
+    </RequireJSWrapper>
+  );
+};
+
+const RequireJSWrapper = ({ requireJsSrc, children }) => {
+  const [divRef] = useState(React.createRef());
+  // const [initialised, setInitialised] = useState(false);
+  const [requireJsLoaded, setRequireJsLoaded] = useState(false);
+
+  useEffect(() => {
+    const script = document.createElement('script');
+    script.src = requireJsSrc;
+    script.async = true;
+    script.onload = () => {
+      setRequireJsLoaded(true);
+    };
+
+    divRef.current.appendChild(script);
+  }, [divRef]);
+
+  if (requireJsLoaded) {
+    return children;
+  } else {
+    return <div ref={divRef}></div>;
+  }
+};
+
+const IncludeRaw = ({ html }) => {
   const [scripts, setScripts] = useState();
   const [toRender, setToRender] = useState();
 
