@@ -7,9 +7,9 @@ exports[`AmpSocialEmbed should render correctly 1`] = `
   >
     Skip %p post by %u
   </a>
-  <div>
+  <h1>
     01234
-  </div>
+  </h1>
   <p
     id="skip-%p-post-by-%u"
   >

@@ -1,28 +1,11 @@
 import React from 'react';
-import { string, shape } from 'prop-types';
-import Notice from '../Notice';
-import providers from './providers.json';
+import { string } from 'prop-types';
 import withSkipLink from '../withSkipLink';
 
-const AmpSocialEmbed = withSkipLink(({ id }) => <h1>{id}</h1>);
+const AmpSocial = ({ id }) => <h1>{id}</h1>;
 
-const AmpEmbed = ({ provider, fallback, ...props }) => {
-  const isSupportedProvider = Object.keys(providers).includes(provider);
-  return isSupportedProvider ? (
-    <AmpSocialEmbed provider={provider} {...props} />
-  ) : (
-    <Notice {...fallback} />
-  );
+AmpSocial.propTypes = {
+  id: string.isRequired,
 };
 
-AmpEmbed.propTypes = {
-  provider: string.isRequired,
-  fallback: shape({
-    text: string.isRequired,
-    linkText: string.isRequired,
-    linkHref: string.isRequired,
-    warningText: string,
-  }).isRequired,
-};
-
-export default AmpEmbed;
+export default withSkipLink(AmpSocial);
