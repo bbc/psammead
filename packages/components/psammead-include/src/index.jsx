@@ -1,16 +1,25 @@
+/* eslint-disable react/no-danger */
 import React, { useState, useEffect } from 'react';
-import HTMLReactParser from 'html-react-parser';
+import { string } from 'prop-types';
 
 const Include = ({ html, requireJsSrc }) => {
   if (requireJsSrc) {
     return (
       <RequireJSWrapper requireJsSrc={requireJsSrc}>
-        <IncludeRaw html={html}></IncludeRaw>
+        <IncludeRaw html={html} />
       </RequireJSWrapper>
     );
-  } else {
-    return <IncludeRaw html={html}></IncludeRaw>;
   }
+  return <IncludeRaw html={html} />;
+};
+
+Include.propTypes = {
+  html: string.isRequired,
+  requireJsSrc: string,
+};
+
+Include.defaultProps = {
+  requireJsSrc: null,
 };
 
 const RequireJSWrapper = ({ requireJsSrc, children }) => {
@@ -48,63 +57,55 @@ const RequireJSWrapper = ({ requireJsSrc, children }) => {
 
   if (requireJsLoaded) {
     return children;
-  } else {
-    return null;
   }
+  return null;
 };
 
 const IncludeRaw = ({ html }) => {
   const [scriptMetadata, setScriptMetadata] = useState();
   const [scriptPlaceholder, setScriptPlaceholders] = useState();
 
-  const extractScriptToRender = () => {
-    let scriptMetadata = [];
-    const scriptPlaceholders = HTMLReactParser(html, {
-      replace: function({ type, attribs: attributes, children }) {
-        if (type === 'script') {
-          const ref = React.createRef();
+  const initialiseScriptPlaceholders = () => {
+    let metadata = [];
 
-          scriptMetadata = [
-            ...scriptMetadata,
-            {
-              attributes,
-              data: children.length > 0 ? children[0].data : null,
-              ref,
-            },
-          ];
+    const parser = new DOMParser();
+    const doc = parser.parseFromString(html, 'text/html');
+    const scripts = [...doc.getElementsByTagName('script')];
+    const scriptPlaceholders = scripts.map(script => {
+      const ref = React.createRef();
 
-          return <span ref={ref}></span>;
-        } else {
-          return <></>;
-        }
-      },
+      metadata = [
+        ...metadata,
+        {
+          ref,
+          script,
+        },
+      ];
+
+      return <span ref={ref} />;
     });
-    return {
-      scriptMetadata,
-      scriptPlaceholders,
-    };
+
+    setScriptMetadata(metadata);
+    setScriptPlaceholders(scriptPlaceholders);
   };
 
   const attachScriptsToPlaceholders = () => {
-    scriptMetadata.forEach(({ attributes, data, ref }) => {
-      const script = document.createElement('script');
-      Object.entries(attributes).forEach(([key, value]) => {
-        script[key] = value;
+    scriptMetadata.forEach(({ script, ref }) => {
+      const scriptToAdd = document.createElement('script');
+      Object.entries(script).forEach(([key, value]) => {
+        scriptToAdd[key] = value;
       });
-      if (data) {
-        const text = document.createTextNode(data);
-        script.appendChild(text);
+      if (script.text) {
+        const text = document.createTextNode(script.text);
+        scriptToAdd.appendChild(text);
       }
 
-      ref.current.appendChild(script);
+      ref.current.appendChild(scriptToAdd);
     });
   };
 
   if (!scriptMetadata) {
-    const { scriptMetadata, scriptPlaceholders } = extractScriptToRender();
-
-    setScriptPlaceholders(scriptPlaceholders);
-    setScriptMetadata(scriptMetadata);
+    initialiseScriptPlaceholders();
   }
 
   useEffect(() => {
@@ -115,10 +116,14 @@ const IncludeRaw = ({ html }) => {
 
   return (
     <>
-      <div dangerouslySetInnerHTML={{ __html: html }}></div>
+      <div dangerouslySetInnerHTML={{ __html: html }} />
       {scriptPlaceholder}
     </>
   );
+};
+
+IncludeRaw.propTypes = {
+  html: string.isRequired,
 };
 
 export default Include;
