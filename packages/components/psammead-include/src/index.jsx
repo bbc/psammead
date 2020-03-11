@@ -1,39 +1,68 @@
-import React, { useState, useLayoutEffect } from 'react';
+import React, { useState, useLayoutEffect, useEffect, Component } from 'react';
 import ReactDOM from 'react-dom';
 import HTMLReactParser from 'html-react-parser';
 import Helmet from 'react-helmet';
 
 const Include = ({ html, requireJsSrc }) => {
-  let scripts = [];
+  const [scripts, setScripts] = useState();
+  const [toRender, setToRender] = useState();
 
-  const toRender = HTMLReactParser(html, {
-    replace: function({ type, attribs: attributes, children }) {
-      if (type === 'script') {
-        scripts.push({
-          attributes,
-          data: children[0].data,
+  useEffect(() => {
+    if (!scripts) {
+      const tempScripts = [];
+      // const requireJsRef = React.createRef();
+      // tempScripts.push({
+      //   attributes: { src: requireJsSrc },
+      //   ref: requireJsRef,
+      // });
+      // const requireJs = <div ref={requireJsRef}></div>;
+
+      setToRender(
+        <>
+          {HTMLReactParser(html, {
+            replace: function({ type, attribs: attributes, children }) {
+              if (type === 'script') {
+                const ref = React.createRef();
+
+                tempScripts.push({
+                  attributes,
+                  data: children[0].data,
+                  ref,
+                });
+
+                return <div ref={ref}></div>;
+              }
+            },
+          })}
+        </>,
+      );
+
+      setScripts(tempScripts);
+    }
+  }, [toRender, scripts]);
+
+  useLayoutEffect(() => {
+    if (scripts) {
+      console.log(scripts);
+      scripts.forEach(({ attributes, data, ref }) => {
+        const script = document.createElement('script');
+        Object.entries(attributes).forEach(([key, value]) => {
+          script[key] = value;
         });
+        if (data) {
+          const text = document.createTextNode(data);
+          script.appendChild(text);
+        }
 
-        return <></>;
-      }
-    },
-  });
-
-  const scriptTags = scripts.map(({ attributes, data }) => {
-    return (
-      <Helmet>
-        <script {...attributes}>{data}</script>;
-      </Helmet>
-    );
-  });
+        ref.current.appendChild(script);
+      });
+    }
+  }, [scripts]);
 
   return (
     <>
-      <Helmet>
-        <script src={requireJsSrc}></script>
-      </Helmet>
+      <script src={requireJsSrc}></script>
       {toRender}
-      {scriptTags}
     </>
   );
 };
