@@ -37,7 +37,6 @@
   },
   "homepage": "https://github.com/bbc/psammead#readme",
   "dependencies": {
-    "html-react-parser": "^0.10.1",
     "styled-components": "^4.4.1",
     "styled-normalize": "^8.0.7"
   },
