@@ -7,9 +7,13 @@ exports[`AmpSocialEmbed should render correctly 1`] = `
   >
     Skip %provider% post by %author%
   </a>
-  <h1>
-    01234
-  </h1>
+  <amp-instagram
+    data-captioned="true"
+    data-shortcode="01234"
+    height="400"
+    layout="responsive"
+    width="400"
+  />
   <p
     id="skip-%provider%-post-by-%author%"
   >
@@ -19,21 +23,33 @@ exports[`AmpSocialEmbed should render correctly 1`] = `
 `;
 
 exports[`CanonicalSocialEmbed should render correctly 1`] = `
-<div>
-  <a
-    href="#skip-%provider%-post-by-%author%"
-  >
-    Skip %provider% post by %author%
-  </a>
-  <div>
-    <h1>
-      Content.
-    </h1>
-  </div>
-  <p
-    id="skip-%provider%-post-by-%author%"
-  >
-    End of %provider% post by %author%
-  </p>
-</div>
+<html>
+  <head>
+    <script
+      async="true"
+      src="https://www.instagram.com/embed.js"
+    />
+  </head>
+  <body>
+    <div>
+      <div>
+        <a
+          href="#skip-%provider%-post-by-%author%"
+        >
+          Skip %provider% post by %author%
+        </a>
+        <div>
+          <h1>
+            Content.
+          </h1>
+        </div>
+        <p
+          id="skip-%provider%-post-by-%author%"
+        >
+          End of %provider% post by %author%
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
 `;

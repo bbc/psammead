@@ -10,6 +10,7 @@ describe('CanonicalSocialEmbed', () => {
       oEmbed={{ html: '<h1>Content.</h1>' }}
       skipLink={{
         text: 'Skip %provider% post by %author%',
+        skipToId: 'skip-%provider%-post-by-%author%',
         endText: 'End of %provider% post by %author%',
       }}
       fallback={{
@@ -30,6 +31,7 @@ describe('AmpSocialEmbed', () => {
       id="01234"
       skipLink={{
         text: 'Skip %provider% post by %author%',
+        skipToId: 'skip-%provider%-post-by-%author%',
         endText: 'End of %provider% post by %author%',
       }}
       fallback={{
@@ -38,6 +40,8 @@ describe('AmpSocialEmbed', () => {
         linkHref: 'embed-url',
         warningText: 'Warning: BBC is not responsible for third party content',
       }}
+      width="400"
+      height="400"
     />,
   );
 });

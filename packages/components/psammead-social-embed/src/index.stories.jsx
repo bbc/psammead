@@ -16,6 +16,7 @@ storiesOf('Components|SocialEmbed', module)
         oEmbed={{ html: '<h1>Content.</h1>' }}
         skipLink={{
           text: 'Skip %provider% content by %author%',
+          skipToId: 'skip-%provider%-content',
           endText: 'End of %provider% content by %author%',
         }}
         fallback={{
@@ -39,6 +40,7 @@ storiesOf('Components|SocialEmbed', module)
         id="01234"
         skipLink={{
           text: 'Skip %provider% content by %author%',
+          skipToId: 'skip-%provider%-content',
           endText: 'End of %provider% content by %author%',
         }}
         fallback={{
@@ -48,6 +50,8 @@ storiesOf('Components|SocialEmbed', module)
           warningText:
             'Warning: BBC is not responsible for third party content',
         }}
+        width="400"
+        height="400"
       />
     ),
     {
@@ -62,6 +66,7 @@ storiesOf('Components|SocialEmbed', module)
         oEmbed={{ html: '<h1>Content.</h1>' }}
         skipLink={{
           text: 'Skip %provider% content by %author%',
+          skipToId: 'skip-%provider%-content',
           endText: 'End of %provider% content by %author%',
         }}
         fallback={{
@@ -84,6 +89,7 @@ storiesOf('Components|SocialEmbed', module)
         provider="twitter"
         skipLink={{
           text: 'Skip %provider% content by %author%',
+          skipToId: 'skip-%provider%-content',
           endText: 'End of %provider% content by %author%',
         }}
         fallback={{
