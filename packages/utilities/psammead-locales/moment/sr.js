@@ -10,8 +10,10 @@ moment.updateLocale('sr', {
   relativeTime: {
     past: 'Pre %s',
     m: '1 minuta',
-    mm: 'minuta: %d',
+    mm: '%d minuta',
     h: '1 sata',
-    hh: 'sati: %d',
+    hh: function(number) {
+      return number + number < 5 ? ' sata' : ' sati';
+    },
   },
 });
