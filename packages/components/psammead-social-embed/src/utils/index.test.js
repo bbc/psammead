@@ -10,4 +10,8 @@ describe('isSupportedProvider', () => {
   it('returns false when passed an unsupported provider', () => {
     expect(isSupportedProvider('twitter', providers)).toBe(false);
   });
+
+  it("throws an error when 'providers' is not an Object", () => {
+    expect(() => isSupportedProvider('twitter', null)).toThrow();
+  });
 });
