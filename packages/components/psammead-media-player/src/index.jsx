@@ -80,10 +80,7 @@ const CanonicalMediaPlayerComponent = ({
 // Component receives a "mediaInfo" object prop - this can cause unnecessary
 // re-renders when the object reference changes, but the content is the same.
 // We only rerender if the prevProps and nextProps fail deep equality check
-export const CanonicalMediaPlayer = memo(
-  CanonicalMediaPlayerComponent,
-  (prevProps, nextProps) => equals(prevProps, nextProps),
-);
+export const CanonicalMediaPlayer = memo(CanonicalMediaPlayerComponent, equals);
 
 export const AmpMediaPlayer = ({
   placeholderSrcset,
