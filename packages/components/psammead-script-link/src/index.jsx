@@ -1,10 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import {
-  GEL_SPACING,
-  GEL_SPACING_DBL,
-  GEL_SPACING_QUIN,
-} from '@bbc/gel-foundations/spacings';
+import { GEL_SPACING, GEL_SPACING_QUIN } from '@bbc/gel-foundations/spacings';
 import {
   GEL_GROUP_2_SCREEN_WIDTH_MIN,
   GEL_GROUP_2_SCREEN_WIDTH_MAX,
@@ -29,7 +25,7 @@ const StyledLink = styled.a`
     margin: 0.1875rem;
     display: inline-block;
     height: calc(100%);
-    padding: 0 ${GEL_SPACING_DBL};
+    padding: 0 ${GEL_SPACING};
   }
 
   &:hover > span,
@@ -46,7 +42,7 @@ const StyledLink = styled.a`
     height: ${GEL_SPACING_QUIN};
 
     > span {
-      padding: 0 0.75rem;
+      padding: 0 ${GEL_SPACING};
       line-height: calc(${GEL_SPACING_QUIN} - ${GEL_SPACING});
     }
   }
