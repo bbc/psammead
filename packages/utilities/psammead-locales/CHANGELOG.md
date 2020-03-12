@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 | ------- | ----------- |
+| 4.1.3 | [PR#3247](https://github.com/bbc/psammead/pull/3247) Update Serbian grammar around minutes and hours |
 | 4.1.2 | [PR#3064](https://github.com/bbc/psammead/pull/3064) Update Russian month translations |
 | 4.1.1 | [PR#2892](https://github.com/bbc/psammead/pull/2892) Update January translation in Bengali. |
 | 4.1.0 | [PR#2855](https://github.com/bbc/psammead/pull/2855) Export Nepali numerals. |
