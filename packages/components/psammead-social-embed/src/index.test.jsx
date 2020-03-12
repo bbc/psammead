@@ -9,8 +9,8 @@ describe('CanonicalSocialEmbed', () => {
       provider="instagram"
       oEmbed={{ html: '<h1>Content.</h1>' }}
       skipLink={{
-        text: 'Skip %p post by %u',
-        endText: 'End of %p post by %u',
+        text: 'Skip %provider% post by %author%',
+        endText: 'End of %provider% post by %author%',
       }}
       fallback={{
         text: "Sorry but we're having trouble displaying this post",
@@ -29,8 +29,8 @@ describe('AmpSocialEmbed', () => {
       provider="instagram"
       id="01234"
       skipLink={{
-        text: 'Skip %p post by %u',
-        endText: 'End of %p post by %u',
+        text: 'Skip %provider% post by %author%',
+        endText: 'End of %provider% post by %author%',
       }}
       fallback={{
         text: "Sorry but we're having trouble displaying this post",

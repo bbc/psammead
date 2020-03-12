@@ -3,17 +3,17 @@
 exports[`AmpSocialEmbed should render correctly 1`] = `
 <div>
   <a
-    href="#skip-%p-post-by-%u"
+    href="#skip-%provider%-post-by-%author%"
   >
-    Skip %p post by %u
+    Skip %provider% post by %author%
   </a>
   <h1>
     01234
   </h1>
   <p
-    id="skip-%p-post-by-%u"
+    id="skip-%provider%-post-by-%author%"
   >
-    End of %p post by %u
+    End of %provider% post by %author%
   </p>
 </div>
 `;
@@ -21,9 +21,9 @@ exports[`AmpSocialEmbed should render correctly 1`] = `
 exports[`CanonicalSocialEmbed should render correctly 1`] = `
 <div>
   <a
-    href="#skip-%p-post-by-%u"
+    href="#skip-%provider%-post-by-%author%"
   >
-    Skip %p post by %u
+    Skip %provider% post by %author%
   </a>
   <div>
     <h1>
@@ -31,9 +31,9 @@ exports[`CanonicalSocialEmbed should render correctly 1`] = `
     </h1>
   </div>
   <p
-    id="skip-%p-post-by-%u"
+    id="skip-%provider%-post-by-%author%"
   >
-    End of %p post by %u
+    End of %provider% post by %author%
   </p>
 </div>
 `;

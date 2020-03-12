@@ -15,12 +15,12 @@ storiesOf('Components|SocialEmbed', module)
         provider="instagram"
         oEmbed={{ html: '<h1>Content.</h1>' }}
         skipLink={{
-          text: 'Skip %p content by %u',
-          endText: 'End of %p content by %u',
+          text: 'Skip %provider% content by %author%',
+          endText: 'End of %provider% content by %author%',
         }}
         fallback={{
           text: "Sorry but we're having trouble displaying this content",
-          linkText: 'View content on %p',
+          linkText: 'View content on %provider%',
           linkHref: 'https://www.bbc.co.uk',
           warningText:
             'Warning: BBC is not responsible for third party content',
@@ -38,12 +38,12 @@ storiesOf('Components|SocialEmbed', module)
         provider="instagram"
         id="01234"
         skipLink={{
-          text: 'Skip %p content by %u',
-          endText: 'End of %p content by %u',
+          text: 'Skip %provider% content by %author%',
+          endText: 'End of %provider% content by %author%',
         }}
         fallback={{
           text: "Sorry but we're having trouble displaying this content",
-          linkText: 'View content on %p',
+          linkText: 'View content on %provider%',
           linkHref: 'https://www.bbc.co.uk',
           warningText:
             'Warning: BBC is not responsible for third party content',
@@ -61,12 +61,12 @@ storiesOf('Components|SocialEmbed', module)
         provider="unsupported"
         oEmbed={{ html: '<h1>Content.</h1>' }}
         skipLink={{
-          text: 'Skip %p content by %u',
-          endText: 'End of %p content by %u',
+          text: 'Skip %provider% content by %author%',
+          endText: 'End of %provider% content by %author%',
         }}
         fallback={{
           text: "Sorry but we're having trouble displaying this content",
-          linkText: 'View content on %p',
+          linkText: 'View content on %provider%',
           linkHref: 'https://www.bbc.co.uk',
           warningText:
             'Warning: BBC is not responsible for third party content',
@@ -83,12 +83,12 @@ storiesOf('Components|SocialEmbed', module)
       <CanonicalSocialEmbed
         provider="twitter"
         skipLink={{
-          text: 'Skip %p content by %u',
-          endText: 'End of %p content by %u',
+          text: 'Skip %provider% content by %author%',
+          endText: 'End of %provider% content by %author%',
         }}
         fallback={{
           text: "Sorry but we're having trouble displaying this content",
-          linkText: 'View content on %p',
+          linkText: 'View content on %provider%',
           linkHref: 'https://www.bbc.co.uk',
           warningText:
             'Warning: BBC is not responsible for third party content',
