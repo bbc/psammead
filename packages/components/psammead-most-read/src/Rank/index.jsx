@@ -36,7 +36,6 @@ const isOnSecondColumn = ({ listIndex, numberOfItems }, supportsGrid) =>
   supportsGrid ? listIndex > Math.ceil(numberOfItems / 2) : listIndex % 2 === 0;
 
 const listHasDoubleDigits = numberOfItems => {
-  console.log(numberOfItems);
   return numberOfItems > 9;
 };
 

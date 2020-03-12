@@ -1,7 +1,7 @@
 import React from 'react';
 import { shouldMatchSnapshot } from '@bbc/psammead-test-helpers';
 import { latin, arabic } from '@bbc/gel-foundations/scripts';
-import { MostReadLink } from '.';
+import { MostReadLink, getParentColumns } from '.';
 import { getItem, getItemWrapperArray } from '../utilities';
 
 describe('MostReadLink', () => {
@@ -61,4 +61,10 @@ describe('MostReadItemWrapper', () => {
       dir: 'rtl',
     }).map(item => item),
   );
+
+  describe('getParentColumns helper method', () => {
+    it('should return null when columLayout is oneColumn', () => {
+      expect(getParentColumns('oneColumn')).toEqual(null);
+    });
+  });
 });

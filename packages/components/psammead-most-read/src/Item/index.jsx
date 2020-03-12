@@ -24,7 +24,7 @@ const paddingStart = ({ dir }) => `padding-${dir === 'ltr' ? 'left' : 'right'}`;
 // This is to make where the link ends consistent for both columns
 const paddingEnd = ({ dir }) => `padding-${dir === 'ltr' ? 'right' : 'left'}`;
 
-const getParentColumns = columnLayout => {
+export const getParentColumns = columnLayout => {
   if (columnLayout !== 'oneColumn') {
     return mostReadListGridProps(columnLayout).columns;
   }
