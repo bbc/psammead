@@ -150,12 +150,12 @@ test('from', function() {
   );
   assert.equal(
     start.from(moment([2007, 1, 28]).add({ s: 90 }), true),
-    'минута: 2',
+    '2 минута',
     '90 seconds = 2 minutes'
   );
   assert.equal(
     start.from(moment([2007, 1, 28]).add({ m: 44 }), true),
-    'минута: 44',
+    '44 минута',
     '44 minutes = 44 minutes'
   );
   assert.equal(
@@ -170,17 +170,17 @@ test('from', function() {
   );
   assert.equal(
     start.from(moment([2007, 1, 28]).add({ m: 90 }), true),
-    'сати: 2',
+    '2 сата',
     '90 minutes = 2 hours'
   );
   assert.equal(
     start.from(moment([2007, 1, 28]).add({ h: 5 }), true),
-    'сати: 5',
+    '5 сати',
     '5 hours = 5 hours'
   );
   assert.equal(
     start.from(moment([2007, 1, 28]).add({ h: 21 }), true),
-    'сати: 21',
+    '21 сати',
     '21 hours = 21 hours'
   );
   assert.equal(
