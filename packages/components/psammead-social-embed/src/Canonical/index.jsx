@@ -15,7 +15,7 @@ const providers = {
 const CanonicalEmbed = ({ provider, skipLink, oEmbed, fallback }) => {
   const isSupportedProvider = Object.keys(providers).includes(provider);
   return isSupportedProvider && oEmbed ? (
-    <SkipLinkWrapper {...skipLink}>
+    <SkipLinkWrapper provider={provider} {...skipLink}>
       {providers[provider].script && (
         <Helmet>
           <script async src={providers[provider].script} />

@@ -3,13 +3,13 @@
 exports[`AmpSocialEmbed should render a notice when the provider is unsupported 1`] = `
 <div>
   <p>
-    Sorry but we're having trouble displaying this post
+    Sorry but we're having trouble displaying this content
   </p>
   <a
     href="embed-url"
     id="link"
   >
-    View original post
+    View content on %Provider%
   </a>
   <small
     aria-describedby="link"
@@ -32,9 +32,9 @@ exports[`AmpSocialEmbed should render correctly for Instagram 1`] = `
     <div>
       <div>
         <a
-          href="#skip-%provider%-post"
+          href="#skip-instagram-content"
         >
-          Skip %provider% post
+          Skip Instagram content
         </a>
         <amp-instagram
           data-captioned="true"
@@ -44,9 +44,9 @@ exports[`AmpSocialEmbed should render correctly for Instagram 1`] = `
           width="400"
         />
         <p
-          id="skip-%provider%-post"
+          id="skip-%provider%-content"
         >
-          End of %provider% post
+          End of Instagram content
         </p>
       </div>
     </div>
@@ -67,9 +67,9 @@ exports[`AmpSocialEmbed should render correctly for Twitter 1`] = `
     <div>
       <div>
         <a
-          href="#skip-%provider%-post"
+          href="#skip-twitter-content"
         >
-          Skip %provider% post
+          Skip Twitter content
         </a>
         <amp-twitter
           data-tweetid="1237210910835392512"
@@ -78,9 +78,9 @@ exports[`AmpSocialEmbed should render correctly for Twitter 1`] = `
           width="400"
         />
         <p
-          id="skip-%provider%-post"
+          id="skip-%provider%-content"
         >
-          End of %provider% post
+          End of Twitter content
         </p>
       </div>
     </div>
@@ -101,9 +101,9 @@ exports[`AmpSocialEmbed should render correctly for YouTube 1`] = `
     <div>
       <div>
         <a
-          href="#skip-%provider%-post"
+          href="#skip-youtube-content"
         >
-          Skip %provider% post
+          Skip YouTube content
         </a>
         <amp-youtube
           data-videoid="chiWVxreqhU"
@@ -112,9 +112,9 @@ exports[`AmpSocialEmbed should render correctly for YouTube 1`] = `
           width="400"
         />
         <p
-          id="skip-%provider%-post"
+          id="skip-%provider%-content"
         >
-          End of %provider% post
+          End of YouTube content
         </p>
       </div>
     </div>
@@ -125,13 +125,13 @@ exports[`AmpSocialEmbed should render correctly for YouTube 1`] = `
 exports[`CanonicalSocialEmbed should render a notice when the provider is unsupported 1`] = `
 <div>
   <p>
-    Sorry but we're having trouble displaying this post
+    Sorry but we're having trouble displaying this content
   </p>
   <a
     href="embed-url"
     id="link"
   >
-    View original post
+    View content on %Provider%
   </a>
   <small
     aria-describedby="link"
@@ -144,13 +144,13 @@ exports[`CanonicalSocialEmbed should render a notice when the provider is unsupp
 exports[`CanonicalSocialEmbed should render a notice when there is no oEmbed response 1`] = `
 <div>
   <p>
-    Sorry but we're having trouble displaying this post
+    Sorry but we're having trouble displaying this content
   </p>
   <a
     href="embed-url"
     id="link"
   >
-    View original post
+    View content on %Provider%
   </a>
   <small
     aria-describedby="link"
@@ -172,9 +172,9 @@ exports[`CanonicalSocialEmbed should render correctly for Instagram 1`] = `
     <div>
       <div>
         <a
-          href="#skip-%provider%-post"
+          href="#skip-instagram-content"
         >
-          Skip %provider% post
+          Skip Instagram content
         </a>
         <div>
           <blockquote
@@ -344,9 +344,9 @@ exports[`CanonicalSocialEmbed should render correctly for Instagram 1`] = `
           </blockquote>
         </div>
         <p
-          id="skip-%provider%-post"
+          id="skip-%provider%-content"
         >
-          End of %provider% post
+          End of Instagram content
         </p>
       </div>
     </div>
@@ -366,9 +366,9 @@ exports[`CanonicalSocialEmbed should render correctly for Twitter 1`] = `
     <div>
       <div>
         <a
-          href="#skip-%provider%-post"
+          href="#skip-twitter-content"
         >
-          Skip %provider% post
+          Skip Twitter content
         </a>
         <div>
           <blockquote
@@ -391,9 +391,9 @@ exports[`CanonicalSocialEmbed should render correctly for Twitter 1`] = `
 
         </div>
         <p
-          id="skip-%provider%-post"
+          id="skip-%provider%-content"
         >
-          End of %provider% post
+          End of Twitter content
         </p>
       </div>
     </div>
@@ -404,9 +404,9 @@ exports[`CanonicalSocialEmbed should render correctly for Twitter 1`] = `
 exports[`CanonicalSocialEmbed should render correctly for YouTube 1`] = `
 <div>
   <a
-    href="#skip-%provider%-post"
+    href="#skip-youtube-content"
   >
-    Skip %provider% post
+    Skip YouTube content
   </a>
   <div>
     <iframe
@@ -416,9 +416,9 @@ exports[`CanonicalSocialEmbed should render correctly for YouTube 1`] = `
     />
   </div>
   <p
-    id="skip-%provider%-post"
+    id="skip-%provider%-content"
   >
-    End of %provider% post
+    End of YouTube content
   </p>
 </div>
 `;

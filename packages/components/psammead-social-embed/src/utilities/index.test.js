@@ -1,15 +1,27 @@
-import { toTitleCase, detokenise } from './index';
+import { toProviderName, detokenise } from './index';
 
-describe('toTitleCase', () => {
-  it('transforms the given text to title case', () => {
-    expect(toTitleCase('twitter')).toEqual('Twitter');
+describe('toProviderName', () => {
+  it('transforms the given provider correctly', () => {
+    expect(toProviderName('unknown')).toEqual('Unknown');
+    expect(toProviderName('youtube')).toEqual('YouTube');
+    expect(toProviderName('foo bar')).toEqual('Foo Bar');
+    expect(toProviderName('')).toEqual('');
+  });
+
+  it('throws given invalid arguments', () => {
+    expect(() => toProviderName()).toThrow();
+    expect(() => toProviderName(9001)).toThrow();
   });
 });
 
 describe('detokenise', () => {
-  it('detokenises a string using a dictionary', () => {
-    expect(
-      detokenise('View content on %provider%', { '%provider%': 'Twitter' }),
-    ).toEqual('View content on Twitter');
+  it('detokenises the given text correctly', () => {
+    expect(detokenise('Foo %bar%', { '%bar%': 'Bar' })).toEqual('Foo Bar');
+    expect(detokenise('Foo %bar%', {})).toEqual('Foo %bar%');
+  });
+
+  it('throws given invalid arguments', () => {
+    expect(() => detokenise()).toThrow();
+    expect(() => detokenise('Foo')).toThrow();
   });
 });

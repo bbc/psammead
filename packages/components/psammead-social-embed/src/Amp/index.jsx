@@ -10,7 +10,7 @@ const AmpEmbed = ({ provider, skipLink, id, width, height, fallback }) => {
   const script = scripts[provider];
   const Element = Elements[provider];
   return script && Element ? (
-    <SkipLinkWrapper {...skipLink}>
+    <SkipLinkWrapper provider={provider} {...skipLink}>
       <Helmet>
         <script async custom-element={script.customElement} src={script.src} />
       </Helmet>
