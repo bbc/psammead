@@ -12,7 +12,7 @@ const providers = {
   youtube: {},
 };
 
-const CanonicalEmbed = ({ provider, skipLink, oEmbed, fallback }) => {
+const CanonicalEmbed = ({ provider, skipLink, oEmbed, service, fallback }) => {
   const isSupportedProvider = Object.keys(providers).includes(provider);
   return isSupportedProvider && oEmbed ? (
     <SkipLinkWrapper provider={provider} {...skipLink}>
@@ -24,7 +24,7 @@ const CanonicalEmbed = ({ provider, skipLink, oEmbed, fallback }) => {
       <OEmbed oEmbed={oEmbed} />
     </SkipLinkWrapper>
   ) : (
-    <Notice provider={provider} {...fallback} />
+    <Notice service={service} provider={provider} {...fallback} />
   );
 };
 
@@ -48,6 +48,7 @@ CanonicalEmbed.propTypes = {
     linkHref: string.isRequired,
     warningText: string,
   }).isRequired,
+  service: string.isRequired,
 };
 
 export default CanonicalEmbed;

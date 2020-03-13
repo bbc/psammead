@@ -6,7 +6,15 @@ import { scripts, Elements } from './Framework';
 import SkipLinkWrapper from '../SkipLinkWrapper';
 import Notice from '../Notice';
 
-const AmpEmbed = ({ provider, skipLink, id, width, height, fallback }) => {
+const AmpEmbed = ({
+  provider,
+  skipLink,
+  id,
+  width,
+  height,
+  service,
+  fallback,
+}) => {
   const script = scripts[provider];
   const Element = Elements[provider];
   return script && Element ? (
@@ -17,7 +25,7 @@ const AmpEmbed = ({ provider, skipLink, id, width, height, fallback }) => {
       <Element id={id} width={width} height={height} />
     </SkipLinkWrapper>
   ) : (
-    <Notice provider={provider} {...fallback} />
+    <Notice service={service} provider={provider} {...fallback} />
   );
 };
 
@@ -37,6 +45,7 @@ AmpEmbed.propTypes = {
     linkHref: string.isRequired,
     warningText: string,
   }).isRequired,
+  service: string.isRequired,
 };
 
 export default AmpEmbed;

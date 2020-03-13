@@ -1,7 +1,52 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`AmpSocialEmbed should render a notice when the provider is unsupported 1`] = `
-<div>
+.c0 {
+  border: 0.0625rem solid #AEAEB5;
+  border-radius: 0.5rem;
+  color: #222222;
+  padding: 1rem;
+  font-family: ReithSans,Helvetica,Arial,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 0.9375rem;
+  line-height: 1.25rem;
+}
+
+.c0 p {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+.c0 a,
+.c0 small {
+  display: block;
+}
+
+.c0 a {
+  font-family: ReithSans,Helvetica,Arial,sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c0 small {
+  margin-top: 0.5rem;
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+
+@media (min-width:20rem) {
+  .c0 {
+    font-size: 1rem;
+    line-height: 1.375rem;
+  }
+}
+
+<div
+  class="c0"
+>
   <p>
     Sorry but we're having trouble displaying this content
   </p>
@@ -29,9 +74,24 @@ exports[`AmpSocialEmbed should render correctly for Instagram 1`] = `
     />
   </head>
   <body>
-    <div>
-      <div>
+    .c0 {
+  position: relative;
+}
+
+.c1 {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+
+<div>
+      <div
+        class="c0"
+      >
         <a
+          class="c1"
           href="#skip-instagram-content"
         >
           Skip Instagram content
@@ -44,7 +104,9 @@ exports[`AmpSocialEmbed should render correctly for Instagram 1`] = `
           width="400"
         />
         <p
+          class=""
           id="skip-%provider%-content"
+          tabindex="-1"
         >
           End of Instagram content
         </p>
@@ -64,9 +126,24 @@ exports[`AmpSocialEmbed should render correctly for Twitter 1`] = `
     />
   </head>
   <body>
-    <div>
-      <div>
+    .c0 {
+  position: relative;
+}
+
+.c1 {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+
+<div>
+      <div
+        class="c0"
+      >
         <a
+          class="c1"
           href="#skip-twitter-content"
         >
           Skip Twitter content
@@ -78,7 +155,9 @@ exports[`AmpSocialEmbed should render correctly for Twitter 1`] = `
           width="400"
         />
         <p
+          class=""
           id="skip-%provider%-content"
+          tabindex="-1"
         >
           End of Twitter content
         </p>
@@ -98,9 +177,24 @@ exports[`AmpSocialEmbed should render correctly for YouTube 1`] = `
     />
   </head>
   <body>
-    <div>
-      <div>
+    .c0 {
+  position: relative;
+}
+
+.c1 {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+
+<div>
+      <div
+        class="c0"
+      >
         <a
+          class="c1"
           href="#skip-youtube-content"
         >
           Skip YouTube content
@@ -112,7 +206,9 @@ exports[`AmpSocialEmbed should render correctly for YouTube 1`] = `
           width="400"
         />
         <p
+          class=""
           id="skip-%provider%-content"
+          tabindex="-1"
         >
           End of YouTube content
         </p>
@@ -123,7 +219,52 @@ exports[`AmpSocialEmbed should render correctly for YouTube 1`] = `
 `;
 
 exports[`CanonicalSocialEmbed should render a notice when the provider is unsupported 1`] = `
-<div>
+.c0 {
+  border: 0.0625rem solid #AEAEB5;
+  border-radius: 0.5rem;
+  color: #222222;
+  padding: 1rem;
+  font-family: ReithSans,Helvetica,Arial,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 0.9375rem;
+  line-height: 1.25rem;
+}
+
+.c0 p {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+.c0 a,
+.c0 small {
+  display: block;
+}
+
+.c0 a {
+  font-family: ReithSans,Helvetica,Arial,sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c0 small {
+  margin-top: 0.5rem;
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+
+@media (min-width:20rem) {
+  .c0 {
+    font-size: 1rem;
+    line-height: 1.375rem;
+  }
+}
+
+<div
+  class="c0"
+>
   <p>
     Sorry but we're having trouble displaying this content
   </p>
@@ -142,7 +283,52 @@ exports[`CanonicalSocialEmbed should render a notice when the provider is unsupp
 `;
 
 exports[`CanonicalSocialEmbed should render a notice when there is no oEmbed response 1`] = `
-<div>
+.c0 {
+  border: 0.0625rem solid #AEAEB5;
+  border-radius: 0.5rem;
+  color: #222222;
+  padding: 1rem;
+  font-family: ReithSans,Helvetica,Arial,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 0.9375rem;
+  line-height: 1.25rem;
+}
+
+.c0 p {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+.c0 a,
+.c0 small {
+  display: block;
+}
+
+.c0 a {
+  font-family: ReithSans,Helvetica,Arial,sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c0 small {
+  margin-top: 0.5rem;
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+
+@media (min-width:20rem) {
+  .c0 {
+    font-size: 1rem;
+    line-height: 1.375rem;
+  }
+}
+
+<div
+  class="c0"
+>
   <p>
     Sorry but we're having trouble displaying this content
   </p>
@@ -161,6 +347,18 @@ exports[`CanonicalSocialEmbed should render a notice when there is no oEmbed res
 `;
 
 exports[`CanonicalSocialEmbed should render correctly for Instagram 1`] = `
+.c0 {
+  position: relative;
+}
+
+.c1 {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+
 <html>
   <head>
     <script
@@ -170,8 +368,11 @@ exports[`CanonicalSocialEmbed should render correctly for Instagram 1`] = `
   </head>
   <body>
     <div>
-      <div>
+      <div
+        class="c0"
+      >
         <a
+          class="c1"
           href="#skip-instagram-content"
         >
           Skip Instagram content
@@ -344,7 +545,9 @@ exports[`CanonicalSocialEmbed should render correctly for Instagram 1`] = `
           </blockquote>
         </div>
         <p
+          class=""
           id="skip-%provider%-content"
+          tabindex="-1"
         >
           End of Instagram content
         </p>
@@ -363,9 +566,24 @@ exports[`CanonicalSocialEmbed should render correctly for Twitter 1`] = `
     />
   </head>
   <body>
-    <div>
-      <div>
+    .c0 {
+  position: relative;
+}
+
+.c1 {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+
+<div>
+      <div
+        class="c0"
+      >
         <a
+          class="c1"
           href="#skip-twitter-content"
         >
           Skip Twitter content
@@ -391,7 +609,9 @@ exports[`CanonicalSocialEmbed should render correctly for Twitter 1`] = `
 
         </div>
         <p
+          class=""
           id="skip-%provider%-content"
+          tabindex="-1"
         >
           End of Twitter content
         </p>
@@ -402,8 +622,23 @@ exports[`CanonicalSocialEmbed should render correctly for Twitter 1`] = `
 `;
 
 exports[`CanonicalSocialEmbed should render correctly for YouTube 1`] = `
-<div>
+.c0 {
+  position: relative;
+}
+
+.c1 {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+
+<div
+  class="c0"
+>
   <a
+    class="c1"
     href="#skip-youtube-content"
   >
     Skip YouTube content
@@ -416,7 +651,9 @@ exports[`CanonicalSocialEmbed should render correctly for YouTube 1`] = `
     />
   </div>
   <p
+    class=""
     id="skip-%provider%-content"
+    tabindex="-1"
   >
     End of YouTube content
   </p>

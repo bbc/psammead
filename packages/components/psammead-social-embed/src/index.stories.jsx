@@ -12,7 +12,7 @@ storiesOf('Components|SocialEmbed/Canonical', module)
   .addDecorator(withServicesKnob())
   .add(
     'Default',
-    () => {
+    ({ service }) => {
       const fixture = select('Fixture', fixtures, fixtures.twitter);
       return (
         <CanonicalSocialEmbed
@@ -30,6 +30,7 @@ storiesOf('Components|SocialEmbed/Canonical', module)
             warningText:
               'Warning: BBC is not responsible for third party content',
           }}
+          service={service}
         />
       );
     },
@@ -39,7 +40,7 @@ storiesOf('Components|SocialEmbed/Canonical', module)
   )
   .add(
     'Unsupported Provider',
-    () => {
+    ({ service }) => {
       const fixture = select('Fixture', fixtures, fixtures.twitter);
       return (
         <CanonicalSocialEmbed
@@ -57,6 +58,7 @@ storiesOf('Components|SocialEmbed/Canonical', module)
             warningText:
               'Warning: BBC is not responsible for third party content',
           }}
+          service={service}
         />
       );
     },
@@ -66,7 +68,7 @@ storiesOf('Components|SocialEmbed/Canonical', module)
   )
   .add(
     'Empty Embed Response',
-    () => {
+    ({ service }) => {
       const fixture = select('Fixture', fixtures, fixtures.twitter);
       return (
         <CanonicalSocialEmbed
@@ -83,6 +85,7 @@ storiesOf('Components|SocialEmbed/Canonical', module)
             warningText:
               'Warning: BBC is not responsible for third party content',
           }}
+          service={service}
         />
       );
     },
@@ -110,7 +113,7 @@ storiesOf('Components|SocialEmbed/AMP', module)
   ))
   .add(
     'Default',
-    () => {
+    ({ service }) => {
       const fixture = select('Fixture', fixtures, fixtures.twitter);
       return (
         <AmpSocialEmbed
@@ -130,6 +133,7 @@ storiesOf('Components|SocialEmbed/AMP', module)
           }}
           width="400"
           height="400"
+          service={service}
         />
       );
     },
@@ -139,7 +143,7 @@ storiesOf('Components|SocialEmbed/AMP', module)
   )
   .add(
     'Unsupported Provider',
-    () => {
+    ({ service }) => {
       const fixture = select('Fixture', fixtures, fixtures.twitter);
       return (
         <AmpSocialEmbed
@@ -159,6 +163,7 @@ storiesOf('Components|SocialEmbed/AMP', module)
           }}
           width="400"
           height="400"
+          service={service}
         />
       );
     },

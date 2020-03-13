@@ -23,6 +23,7 @@ describe('CanonicalSocialEmbed', () => {
           warningText:
             'Warning: BBC is not responsible for third party content',
         }}
+        service="news"
       />,
     );
   });
@@ -43,6 +44,7 @@ describe('CanonicalSocialEmbed', () => {
         linkHref: 'embed-url',
         warningText: 'Warning: BBC is not responsible for third party content',
       }}
+      service="news"
     />,
   );
 
@@ -61,6 +63,7 @@ describe('CanonicalSocialEmbed', () => {
         linkHref: 'embed-url',
         warningText: 'Warning: BBC is not responsible for third party content',
       }}
+      service="news"
     />,
   );
 });
@@ -87,6 +90,7 @@ describe('AmpSocialEmbed', () => {
         }}
         width="400"
         height="400"
+        service="news"
       />,
     );
   });
@@ -109,6 +113,7 @@ describe('AmpSocialEmbed', () => {
       }}
       width="400"
       height="400"
+      service="news"
     />,
   );
 });
