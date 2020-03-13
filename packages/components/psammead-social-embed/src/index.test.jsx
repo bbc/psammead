@@ -12,9 +12,9 @@ describe('CanonicalSocialEmbed', () => {
         provider={provider}
         oEmbed={embed.oembed}
         skipLink={{
-          text: 'Skip %provider% post by %author%',
-          skipToId: 'skip-%provider%-post-by-%author%',
-          endText: 'End of %provider% post by %author%',
+          text: 'Skip %provider% post',
+          skipToId: 'skip-%provider%-post',
+          endText: 'End of %provider% post',
         }}
         fallback={{
           text: "Sorry but we're having trouble displaying this post",
@@ -33,9 +33,9 @@ describe('CanonicalSocialEmbed', () => {
       provider="unknown"
       oEmbed={fixtures.twitter.embed.oembed}
       skipLink={{
-        text: 'Skip %provider% post by %author%',
-        skipToId: 'skip-%provider%-post-by-%author%',
-        endText: 'End of %provider% post by %author%',
+        text: 'Skip %provider% post',
+        skipToId: 'skip-%provider%-post',
+        endText: 'End of %provider% post',
       }}
       fallback={{
         text: "Sorry but we're having trouble displaying this post",
@@ -51,9 +51,9 @@ describe('CanonicalSocialEmbed', () => {
     <CanonicalSocialEmbed
       provider={fixtures.twitter.source}
       skipLink={{
-        text: 'Skip %provider% post by %author%',
-        skipToId: 'skip-%provider%-post-by-%author%',
-        endText: 'End of %provider% post by %author%',
+        text: 'Skip %provider% post',
+        skipToId: 'skip-%provider%-post',
+        endText: 'End of %provider% post',
       }}
       fallback={{
         text: "Sorry but we're having trouble displaying this post",
@@ -74,9 +74,9 @@ describe('AmpSocialEmbed', () => {
         provider={provider}
         id={id}
         skipLink={{
-          text: 'Skip %provider% post by %author%',
-          skipToId: 'skip-%provider%-post-by-%author%',
-          endText: 'End of %provider% post by %author%',
+          text: 'Skip %provider% post',
+          skipToId: 'skip-%provider%-post',
+          endText: 'End of %provider% post',
         }}
         fallback={{
           text: "Sorry but we're having trouble displaying this post",
@@ -97,9 +97,9 @@ describe('AmpSocialEmbed', () => {
       provider="unknown"
       id={fixtures.twitter.id}
       skipLink={{
-        text: 'Skip %provider% post by %author%',
-        skipToId: 'skip-%provider%-post-by-%author%',
-        endText: 'End of %provider% post by %author%',
+        text: 'Skip %provider% post',
+        skipToId: 'skip-%provider%-post',
+        endText: 'End of %provider% post',
       }}
       fallback={{
         text: "Sorry but we're having trouble displaying this post",

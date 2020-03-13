@@ -19,9 +19,9 @@ storiesOf('Components|SocialEmbed/Canonical', module)
           provider={fixture.source}
           oEmbed={fixture.embed.oembed}
           skipLink={{
-            text: 'Skip %provider% content by %author%',
+            text: 'Skip %provider% content',
             skipToId: 'skip-%provider%-content',
-            endText: 'End of %provider% content by %author%',
+            endText: 'End of %provider% content',
           }}
           fallback={{
             text: "Sorry but we're having trouble displaying this content",
@@ -46,9 +46,9 @@ storiesOf('Components|SocialEmbed/Canonical', module)
           provider="unsupported"
           oEmbed={fixture.embed.oembed}
           skipLink={{
-            text: 'Skip %provider% content by %author%',
+            text: 'Skip %provider% content',
             skipToId: 'skip-%provider%-content',
-            endText: 'End of %provider% content by %author%',
+            endText: 'End of %provider% content',
           }}
           fallback={{
             text: "Sorry but we're having trouble displaying this content",
@@ -72,9 +72,9 @@ storiesOf('Components|SocialEmbed/Canonical', module)
         <CanonicalSocialEmbed
           provider={fixture.source}
           skipLink={{
-            text: 'Skip %provider% content by %author%',
+            text: 'Skip %provider% content',
             skipToId: 'skip-%provider%-content',
-            endText: 'End of %provider% content by %author%',
+            endText: 'End of %provider% content',
           }}
           fallback={{
             text: "Sorry but we're having trouble displaying this content",
@@ -117,9 +117,9 @@ storiesOf('Components|SocialEmbed/AMP', module)
           provider={fixture.source}
           id={fixture.id}
           skipLink={{
-            text: 'Skip %provider% content by %author%',
+            text: 'Skip %provider% content',
             skipToId: 'skip-%provider%-content',
-            endText: 'End of %provider% content by %author%',
+            endText: 'End of %provider% content',
           }}
           fallback={{
             text: "Sorry but we're having trouble displaying this content",
@@ -146,9 +146,9 @@ storiesOf('Components|SocialEmbed/AMP', module)
           provider="unsupported"
           id={fixture.id}
           skipLink={{
-            text: 'Skip %provider% content by %author%',
+            text: 'Skip %provider% content',
             skipToId: 'skip-%provider%-content',
-            endText: 'End of %provider% content by %author%',
+            endText: 'End of %provider% content',
           }}
           fallback={{
             text: "Sorry but we're having trouble displaying this content",
