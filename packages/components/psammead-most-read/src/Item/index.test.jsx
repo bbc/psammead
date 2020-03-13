@@ -63,7 +63,7 @@ describe('MostReadItemWrapper', () => {
   );
 
   describe('getParentColumns helper method', () => {
-    it('should return null when columLayout is oneColumn', () => {
+    it('should return null when columnLayout is oneColumn', () => {
       expect(getParentColumns('oneColumn')).toEqual(null);
     });
   });
