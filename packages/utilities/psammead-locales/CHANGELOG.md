@@ -3,7 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 | ------- | ----------- |
-| 4.1.3 | [PR#xxxx](https://github.com/bbc/psammead/pull/xxxx) Update Marathi translations |
+| 4.1.3 | [PR#3250](https://github.com/bbc/psammead/pull/3250) Update Marathi translations |
 | 4.1.2 | [PR#3064](https://github.com/bbc/psammead/pull/3064) Update Russian month translations |
 | 4.1.1 | [PR#2892](https://github.com/bbc/psammead/pull/2892) Update January translation in Bengali. |
 | 4.1.0 | [PR#2855](https://github.com/bbc/psammead/pull/2855) Export Nepali numerals. |
