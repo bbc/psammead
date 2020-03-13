@@ -15,7 +15,9 @@ const StyledScrollableNav = styled.div`
   @media (max-width: ${GEL_GROUP_2_SCREEN_WIDTH_MAX}) {
     white-space: nowrap;
     overflow-x: scroll;
-    scroll-behavior: smooth;
+
+    /* Avoid using smooth scrolling as it causes accessbility issues */
+    scroll-behavior: auto;
     -webkit-overflow-scrolling: touch;
 
     /* Hide scrollbar */
