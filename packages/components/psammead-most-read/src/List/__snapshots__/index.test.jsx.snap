@@ -114,7 +114,7 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
   }
 }
 
-@media (min-width:63rem) and (max-width:80rem) {
+@media (min-width:63rem) and (max-width:79.9375rem) {
   .c2 {
     width: calc(50%);
     display: inline-block;
@@ -837,7 +837,7 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
   }
 }
 
-@media (min-width:63rem) and (max-width:80rem) {
+@media (min-width:63rem) and (max-width:79.9375rem) {
   .c2 {
     width: calc(50%);
     display: inline-block;
@@ -1553,7 +1553,7 @@ exports[`MostReadList should render with ltr news items with a max of one column
   }
 }
 
-@media (min-width:63rem) and (max-width:80rem) {
+@media (min-width:63rem) and (max-width:79.9375rem) {
   .c2 {
     width: calc(50%);
     display: inline-block;
@@ -2264,7 +2264,7 @@ exports[`MostReadList should render with ltr news items with a max of two column
   }
 }
 
-@media (min-width:63rem) and (max-width:80rem) {
+@media (min-width:63rem) and (max-width:79.9375rem) {
   .c2 {
     width: calc(50%);
     display: inline-block;
@@ -2988,7 +2988,7 @@ exports[`MostReadList should render with ltr news items with a multi column layo
   }
 }
 
-@media (min-width:63rem) and (max-width:80rem) {
+@media (min-width:63rem) and (max-width:79.9375rem) {
   .c2 {
     width: calc(50%);
     display: inline-block;
@@ -3711,7 +3711,7 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
   }
 }
 
-@media (min-width:63rem) and (max-width:80rem) {
+@media (min-width:63rem) and (max-width:79.9375rem) {
   .c2 {
     width: calc(50%);
     display: inline-block;
@@ -4434,7 +4434,7 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
   }
 }
 
-@media (min-width:63rem) and (max-width:80rem) {
+@media (min-width:63rem) and (max-width:79.9375rem) {
   .c2 {
     width: calc(50%);
     display: inline-block;

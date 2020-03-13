@@ -99,7 +99,7 @@ exports[`MostReadItemWrapper should render ltr correctly with 10 items 1`] = `
   }
 }
 
-@media (min-width:63rem) and (max-width:80rem) {
+@media (min-width:63rem) and (max-width:79.9375rem) {
   .c0 {
     width: calc(50%);
     display: inline-block;
@@ -791,7 +791,7 @@ exports[`MostReadItemWrapper should render rtl correctly with 10 items 1`] = `
   }
 }
 
-@media (min-width:63rem) and (max-width:80rem) {
+@media (min-width:63rem) and (max-width:79.9375rem) {
   .c0 {
     width: calc(50%);
     display: inline-block;
