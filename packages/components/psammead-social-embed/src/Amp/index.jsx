@@ -2,19 +2,19 @@ import React from 'react';
 import { string, shape } from 'prop-types';
 import Helmet from 'react-helmet';
 
-import { AmpScripts, AmpComponents } from './Elements';
+import { scripts, Elements } from './Framework';
 import SkipLinkWrapper from '../SkipLinkWrapper';
 import Notice from '../Notice';
 
 const AmpEmbed = ({ provider, skipLink, id, width, height, fallback }) => {
-  const AmpScript = AmpScripts[provider];
-  const AmpComponent = AmpComponents[provider];
-  return AmpScript && AmpComponent ? (
+  const script = scripts[provider];
+  const Element = Elements[provider];
+  return script && Element ? (
     <SkipLinkWrapper {...skipLink}>
       <Helmet>
-        <AmpScript />
+        <script async custom-element={script.customElement} src={script.src} />
       </Helmet>
-      <AmpComponent id={id} width={width} height={height} />
+      <Element id={id} width={width} height={height} />
     </SkipLinkWrapper>
   ) : (
     <Notice {...fallback} />

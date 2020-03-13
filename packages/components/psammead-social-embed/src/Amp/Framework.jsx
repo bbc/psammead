@@ -1,31 +1,22 @@
 import React from 'react';
 import { string } from 'prop-types';
 
-export const AmpScripts = {
-  instagram: () => (
-    <script
-      async
-      custom-element="amp-instagram"
-      src="https://cdn.ampproject.org/v0/amp-instagram-0.1.js"
-    />
-  ),
-  twitter: () => (
-    <script
-      async
-      custom-element="amp-twitter"
-      src="https://cdn.ampproject.org/v0/amp-twitter-0.1.js"
-    />
-  ),
-  youtube: () => (
-    <script
-      async
-      custom-element="amp-youtube"
-      src="https://cdn.ampproject.org/v0/amp-youtube-0.1.js"
-    />
-  ),
+export const scripts = {
+  instagram: {
+    customElement: 'amp-instagram',
+    src: 'https://cdn.ampproject.org/v0/amp-instagram-0.1.js',
+  },
+  twitter: {
+    customElement: 'amp-twitter',
+    src: 'https://cdn.ampproject.org/v0/amp-twitter-0.1.js',
+  },
+  youtube: {
+    customElement: 'amp-youtube',
+    src: 'https://cdn.ampproject.org/v0/amp-youtube-0.1.js',
+  },
 };
 
-export const AmpComponents = {
+export const Elements = {
   instagram: ({ height, id, width }) => (
     <amp-instagram
       data-captioned
@@ -59,6 +50,6 @@ const sharedPropTypes = {
   width: string.isRequired,
 };
 
-AmpComponents.instagram.propTypes = sharedPropTypes;
-AmpComponents.twitter.propTypes = sharedPropTypes;
-AmpComponents.youtube.propTypes = sharedPropTypes;
+Elements.instagram.propTypes = sharedPropTypes;
+Elements.twitter.propTypes = sharedPropTypes;
+Elements.youtube.propTypes = sharedPropTypes;
