@@ -17,7 +17,7 @@ const AmpEmbed = ({ provider, skipLink, id, width, height, fallback }) => {
       <Element id={id} width={width} height={height} />
     </SkipLinkWrapper>
   ) : (
-    <Notice {...fallback} />
+    <Notice provider={provider} {...fallback} />
   );
 };
 

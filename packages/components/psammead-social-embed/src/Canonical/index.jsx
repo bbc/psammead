@@ -24,7 +24,7 @@ const CanonicalEmbed = ({ provider, skipLink, oEmbed, fallback }) => {
       <OEmbed oEmbed={oEmbed} />
     </SkipLinkWrapper>
   ) : (
-    <Notice {...fallback} />
+    <Notice provider={provider} {...fallback} />
   );
 };
 

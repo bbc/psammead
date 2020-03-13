@@ -9,7 +9,7 @@ exports[`AmpSocialEmbed should render a notice when the provider is unsupported 
     href="embed-url"
     id="link"
   >
-    View content on %Provider%
+    View content on Unknown
   </a>
   <small
     aria-describedby="link"
@@ -131,7 +131,7 @@ exports[`CanonicalSocialEmbed should render a notice when the provider is unsupp
     href="embed-url"
     id="link"
   >
-    View content on %Provider%
+    View content on Unknown
   </a>
   <small
     aria-describedby="link"
@@ -150,7 +150,7 @@ exports[`CanonicalSocialEmbed should render a notice when there is no oEmbed res
     href="embed-url"
     id="link"
   >
-    View content on %Provider%
+    View content on Twitter
   </a>
   <small
     aria-describedby="link"
