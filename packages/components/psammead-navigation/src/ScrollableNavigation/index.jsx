@@ -16,7 +16,7 @@ const StyledScrollableNav = styled.div`
     white-space: nowrap;
     overflow-x: scroll;
 
-    /* Avoid using smooth scrolling as it causes accessbility issues */
+    /* Avoid using smooth scrolling as it causes accessibility issues */
     scroll-behavior: auto;
     -webkit-overflow-scrolling: touch;
 
