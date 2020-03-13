@@ -1,6 +1,7 @@
-import React, { useState } from 'react';
+import React, { useState, memo } from 'react';
 import styled from 'styled-components';
 import { string, bool, oneOf, shape } from 'prop-types';
+import equals from 'ramda/src/equals';
 import {
   GEL_SPACING_DBL,
   GEL_SPACING_QUAD,
@@ -30,7 +31,7 @@ const StyledAudioContainer = styled.div`
   }
 `;
 
-export const CanonicalMediaPlayer = ({
+const CanonicalMediaPlayerComponent = ({
   showPlaceholder,
   placeholderSrc,
   placeholderSrcset,
@@ -76,6 +77,11 @@ export const CanonicalMediaPlayer = ({
   );
 };
 
+// Component receives a "mediaInfo" object prop - this can cause unnecessary
+// re-renders when the object reference changes, but the content is the same.
+// We only rerender if the prevProps and nextProps fail deep equality check
+export const CanonicalMediaPlayer = memo(CanonicalMediaPlayerComponent, equals);
+
 export const AmpMediaPlayer = ({
   placeholderSrcset,
   placeholderSrc,
@@ -107,7 +113,7 @@ export const AmpMediaPlayer = ({
 
 export const MediaMessage = Message;
 
-CanonicalMediaPlayer.propTypes = {
+CanonicalMediaPlayerComponent.propTypes = {
   placeholderSrc: string,
   placeholderSrcset: string,
   portrait: bool,
@@ -128,7 +134,7 @@ CanonicalMediaPlayer.propTypes = {
   }),
 };
 
-CanonicalMediaPlayer.defaultProps = {
+CanonicalMediaPlayerComponent.defaultProps = {
   portrait: false,
   showPlaceholder: true,
   skin: 'classic',
