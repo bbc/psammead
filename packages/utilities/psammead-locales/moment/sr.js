@@ -13,9 +13,7 @@ moment.updateLocale('sr', {
     mm: '%d minuta',
     h: '1 sata',
     hh: function(number) {
-      return number < 5
-        ? String(number).concat(' ', 'sata')
-        : String(number).concat(' ', 'sati');
+      return number < 5 ? number + ' sata' : number + ' sati';
     },
   },
 });
