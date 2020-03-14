@@ -8,17 +8,17 @@ import Notice from '../Notice';
 
 const AmpEmbed = ({
   provider,
+  service,
   skipLink,
   id,
   width,
   height,
-  service,
   fallback,
 }) => {
   const script = scripts[provider];
   const Element = Elements[provider];
   return script && Element ? (
-    <SkipLinkWrapper provider={provider} {...skipLink}>
+    <SkipLinkWrapper service={service} provider={provider} {...skipLink}>
       <Helmet>
         <script async custom-element={script.customElement} src={script.src} />
       </Helmet>
@@ -31,6 +31,7 @@ const AmpEmbed = ({
 
 AmpEmbed.propTypes = {
   provider: string.isRequired,
+  service: string.isRequired,
   skipLink: shape({
     text: string.isRequired,
     skipToId: string.isRequired,
@@ -45,7 +46,6 @@ AmpEmbed.propTypes = {
     linkHref: string.isRequired,
     warningText: string,
   }).isRequired,
-  service: string.isRequired,
 };
 
 export default AmpEmbed;

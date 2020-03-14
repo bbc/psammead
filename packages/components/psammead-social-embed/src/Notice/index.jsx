@@ -11,12 +11,12 @@ import { detokenise, toProviderName } from '../utilities';
 const BORDER_WEIGHT = '0.0625rem';
 
 const Wrapper = styled.div`
+  ${({ service }) => getSansRegular(service)}
+  ${GEL_BODY_COPY}
   border: ${BORDER_WEIGHT} solid ${C_PEBBLE};
   border-radius: ${GEL_SPACING};
   color: ${C_EBON};
   padding: ${GEL_SPACING_DBL};
-  ${({ service }) => getSansRegular(service)}
-  ${GEL_BODY_COPY}
 
   p {
     margin-top: 0;

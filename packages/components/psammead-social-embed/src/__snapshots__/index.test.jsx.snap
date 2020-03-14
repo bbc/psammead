@@ -2,15 +2,15 @@
 
 exports[`AmpSocialEmbed should render a notice when the provider is unsupported 1`] = `
 .c0 {
-  border: 0.0625rem solid #AEAEB5;
-  border-radius: 0.5rem;
-  color: #222222;
-  padding: 1rem;
   font-family: ReithSans,Helvetica,Arial,sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: 0.9375rem;
   line-height: 1.25rem;
+  border: 0.0625rem solid #AEAEB5;
+  border-radius: 0.5rem;
+  color: #222222;
+  padding: 1rem;
 }
 
 .c0 p {
@@ -79,11 +79,59 @@ exports[`AmpSocialEmbed should render correctly for Instagram 1`] = `
 }
 
 .c1 {
+  font-family: ReithSans,Helvetica,Arial,sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 0.875rem;
+  line-height: 1rem;
+  background-color: #FFFFFF;
+  border: 0.125rem solid #222222;
+  color: #222222;
   display: block;
-  position: absolute;
-  top: 0;
   left: 0;
+  line-height: 1;
+  padding: 0.75rem;
+  position: absolute;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  top: 0;
   z-index: 10;
+}
+
+.c1:not(:focus):not(:active) {
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  -webkit-clip: rect(1px 1px 1px 1px);
+  clip: rect(1px 1px 1px 1px);
+  -webkit-clip: rect(1px,1px,1px,1px);
+  clip: rect(1px,1px,1px,1px);
+  white-space: nowrap;
+}
+
+.c2 {
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  -webkit-clip: rect(1px 1px 1px 1px);
+  clip: rect(1px 1px 1px 1px);
+  -webkit-clip: rect(1px,1px,1px,1px);
+  clip: rect(1px,1px,1px,1px);
+  white-space: nowrap;
+}
+
+@media (min-width:20rem) and (max-width:37.4375rem) {
+  .c1 {
+    line-height: 1.125rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .c1 {
+    font-size: 0.8125rem;
+  }
 }
 
 <div>
@@ -104,7 +152,7 @@ exports[`AmpSocialEmbed should render correctly for Instagram 1`] = `
           width="400"
         />
         <p
-          class=""
+          class="c2"
           id="skip-%provider%-content"
           tabindex="-1"
         >
@@ -131,11 +179,59 @@ exports[`AmpSocialEmbed should render correctly for Twitter 1`] = `
 }
 
 .c1 {
+  font-family: ReithSans,Helvetica,Arial,sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 0.875rem;
+  line-height: 1rem;
+  background-color: #FFFFFF;
+  border: 0.125rem solid #222222;
+  color: #222222;
   display: block;
-  position: absolute;
-  top: 0;
   left: 0;
+  line-height: 1;
+  padding: 0.75rem;
+  position: absolute;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  top: 0;
   z-index: 10;
+}
+
+.c1:not(:focus):not(:active) {
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  -webkit-clip: rect(1px 1px 1px 1px);
+  clip: rect(1px 1px 1px 1px);
+  -webkit-clip: rect(1px,1px,1px,1px);
+  clip: rect(1px,1px,1px,1px);
+  white-space: nowrap;
+}
+
+.c2 {
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  -webkit-clip: rect(1px 1px 1px 1px);
+  clip: rect(1px 1px 1px 1px);
+  -webkit-clip: rect(1px,1px,1px,1px);
+  clip: rect(1px,1px,1px,1px);
+  white-space: nowrap;
+}
+
+@media (min-width:20rem) and (max-width:37.4375rem) {
+  .c1 {
+    line-height: 1.125rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .c1 {
+    font-size: 0.8125rem;
+  }
 }
 
 <div>
@@ -155,7 +251,7 @@ exports[`AmpSocialEmbed should render correctly for Twitter 1`] = `
           width="400"
         />
         <p
-          class=""
+          class="c2"
           id="skip-%provider%-content"
           tabindex="-1"
         >
@@ -182,11 +278,59 @@ exports[`AmpSocialEmbed should render correctly for YouTube 1`] = `
 }
 
 .c1 {
+  font-family: ReithSans,Helvetica,Arial,sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 0.875rem;
+  line-height: 1rem;
+  background-color: #FFFFFF;
+  border: 0.125rem solid #222222;
+  color: #222222;
   display: block;
-  position: absolute;
-  top: 0;
   left: 0;
+  line-height: 1;
+  padding: 0.75rem;
+  position: absolute;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  top: 0;
   z-index: 10;
+}
+
+.c1:not(:focus):not(:active) {
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  -webkit-clip: rect(1px 1px 1px 1px);
+  clip: rect(1px 1px 1px 1px);
+  -webkit-clip: rect(1px,1px,1px,1px);
+  clip: rect(1px,1px,1px,1px);
+  white-space: nowrap;
+}
+
+.c2 {
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  -webkit-clip: rect(1px 1px 1px 1px);
+  clip: rect(1px 1px 1px 1px);
+  -webkit-clip: rect(1px,1px,1px,1px);
+  clip: rect(1px,1px,1px,1px);
+  white-space: nowrap;
+}
+
+@media (min-width:20rem) and (max-width:37.4375rem) {
+  .c1 {
+    line-height: 1.125rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .c1 {
+    font-size: 0.8125rem;
+  }
 }
 
 <div>
@@ -206,7 +350,7 @@ exports[`AmpSocialEmbed should render correctly for YouTube 1`] = `
           width="400"
         />
         <p
-          class=""
+          class="c2"
           id="skip-%provider%-content"
           tabindex="-1"
         >
@@ -220,15 +364,15 @@ exports[`AmpSocialEmbed should render correctly for YouTube 1`] = `
 
 exports[`CanonicalSocialEmbed should render a notice when the provider is unsupported 1`] = `
 .c0 {
-  border: 0.0625rem solid #AEAEB5;
-  border-radius: 0.5rem;
-  color: #222222;
-  padding: 1rem;
   font-family: ReithSans,Helvetica,Arial,sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: 0.9375rem;
   line-height: 1.25rem;
+  border: 0.0625rem solid #AEAEB5;
+  border-radius: 0.5rem;
+  color: #222222;
+  padding: 1rem;
 }
 
 .c0 p {
@@ -284,15 +428,15 @@ exports[`CanonicalSocialEmbed should render a notice when the provider is unsupp
 
 exports[`CanonicalSocialEmbed should render a notice when there is no oEmbed response 1`] = `
 .c0 {
-  border: 0.0625rem solid #AEAEB5;
-  border-radius: 0.5rem;
-  color: #222222;
-  padding: 1rem;
   font-family: ReithSans,Helvetica,Arial,sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: 0.9375rem;
   line-height: 1.25rem;
+  border: 0.0625rem solid #AEAEB5;
+  border-radius: 0.5rem;
+  color: #222222;
+  padding: 1rem;
 }
 
 .c0 p {
@@ -352,11 +496,59 @@ exports[`CanonicalSocialEmbed should render correctly for Instagram 1`] = `
 }
 
 .c1 {
+  font-family: ReithSans,Helvetica,Arial,sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 0.875rem;
+  line-height: 1rem;
+  background-color: #FFFFFF;
+  border: 0.125rem solid #222222;
+  color: #222222;
   display: block;
-  position: absolute;
-  top: 0;
   left: 0;
+  line-height: 1;
+  padding: 0.75rem;
+  position: absolute;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  top: 0;
   z-index: 10;
+}
+
+.c1:not(:focus):not(:active) {
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  -webkit-clip: rect(1px 1px 1px 1px);
+  clip: rect(1px 1px 1px 1px);
+  -webkit-clip: rect(1px,1px,1px,1px);
+  clip: rect(1px,1px,1px,1px);
+  white-space: nowrap;
+}
+
+.c2 {
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  -webkit-clip: rect(1px 1px 1px 1px);
+  clip: rect(1px 1px 1px 1px);
+  -webkit-clip: rect(1px,1px,1px,1px);
+  clip: rect(1px,1px,1px,1px);
+  white-space: nowrap;
+}
+
+@media (min-width:20rem) and (max-width:37.4375rem) {
+  .c1 {
+    line-height: 1.125rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .c1 {
+    font-size: 0.8125rem;
+  }
 }
 
 <html>
@@ -545,7 +737,7 @@ exports[`CanonicalSocialEmbed should render correctly for Instagram 1`] = `
           </blockquote>
         </div>
         <p
-          class=""
+          class="c2"
           id="skip-%provider%-content"
           tabindex="-1"
         >
@@ -571,11 +763,59 @@ exports[`CanonicalSocialEmbed should render correctly for Twitter 1`] = `
 }
 
 .c1 {
+  font-family: ReithSans,Helvetica,Arial,sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 0.875rem;
+  line-height: 1rem;
+  background-color: #FFFFFF;
+  border: 0.125rem solid #222222;
+  color: #222222;
   display: block;
-  position: absolute;
-  top: 0;
   left: 0;
+  line-height: 1;
+  padding: 0.75rem;
+  position: absolute;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  top: 0;
   z-index: 10;
+}
+
+.c1:not(:focus):not(:active) {
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  -webkit-clip: rect(1px 1px 1px 1px);
+  clip: rect(1px 1px 1px 1px);
+  -webkit-clip: rect(1px,1px,1px,1px);
+  clip: rect(1px,1px,1px,1px);
+  white-space: nowrap;
+}
+
+.c2 {
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  -webkit-clip: rect(1px 1px 1px 1px);
+  clip: rect(1px 1px 1px 1px);
+  -webkit-clip: rect(1px,1px,1px,1px);
+  clip: rect(1px,1px,1px,1px);
+  white-space: nowrap;
+}
+
+@media (min-width:20rem) and (max-width:37.4375rem) {
+  .c1 {
+    line-height: 1.125rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .c1 {
+    font-size: 0.8125rem;
+  }
 }
 
 <div>
@@ -609,7 +849,7 @@ exports[`CanonicalSocialEmbed should render correctly for Twitter 1`] = `
 
         </div>
         <p
-          class=""
+          class="c2"
           id="skip-%provider%-content"
           tabindex="-1"
         >
@@ -627,11 +867,59 @@ exports[`CanonicalSocialEmbed should render correctly for YouTube 1`] = `
 }
 
 .c1 {
+  font-family: ReithSans,Helvetica,Arial,sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 0.875rem;
+  line-height: 1rem;
+  background-color: #FFFFFF;
+  border: 0.125rem solid #222222;
+  color: #222222;
   display: block;
-  position: absolute;
-  top: 0;
   left: 0;
+  line-height: 1;
+  padding: 0.75rem;
+  position: absolute;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  top: 0;
   z-index: 10;
+}
+
+.c1:not(:focus):not(:active) {
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  -webkit-clip: rect(1px 1px 1px 1px);
+  clip: rect(1px 1px 1px 1px);
+  -webkit-clip: rect(1px,1px,1px,1px);
+  clip: rect(1px,1px,1px,1px);
+  white-space: nowrap;
+}
+
+.c2 {
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  -webkit-clip: rect(1px 1px 1px 1px);
+  clip: rect(1px 1px 1px 1px);
+  -webkit-clip: rect(1px,1px,1px,1px);
+  clip: rect(1px,1px,1px,1px);
+  white-space: nowrap;
+}
+
+@media (min-width:20rem) and (max-width:37.4375rem) {
+  .c1 {
+    line-height: 1.125rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .c1 {
+    font-size: 0.8125rem;
+  }
 }
 
 <div
@@ -651,7 +939,7 @@ exports[`CanonicalSocialEmbed should render correctly for YouTube 1`] = `
     />
   </div>
   <p
-    class=""
+    class="c2"
     id="skip-%provider%-content"
     tabindex="-1"
   >
