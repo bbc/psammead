@@ -1,6 +1,9 @@
-const toTitleCase = text => {
-  if (typeof text !== 'string') throw Error("Expected 'text' to be a string.");
-  return text.length > 1
+/**
+ * Returns a string whose word or words have been transformed to Title Case.
+ * @param {String} text A word or words.
+ */
+const toTitleCase = text =>
+  text.length > 1
     ? text
         .toLowerCase()
         .split(' ')
@@ -9,7 +12,6 @@ const toTitleCase = text => {
         })
         .join(' ')
     : text;
-};
 
 /**
  * Returns a string with a correctly transformed provider name.
@@ -23,7 +25,7 @@ export const toProviderName = provider => {
 
 /**
  * Returns a string that has had its tokens replaced.
- * @param {String} text A word or string of words containing tokens.
+ * @param {String} text A word or words containing tokens.
  * @param {Object} dictionary An object which maps keys as tokens to values.
  */
 export const detokenise = (text, dictionary) => {
