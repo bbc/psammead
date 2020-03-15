@@ -5,7 +5,7 @@ import { C_EBON, C_WHITE } from '@bbc/psammead-styles/colours';
 import { getSansBold } from '@bbc/psammead-styles/font-styles';
 import { GEL_BREVIER } from '@bbc/gel-foundations/typography';
 
-import { detokenise, toProviderName } from '../utilities';
+import { detokenise, dictionaryFactory } from '../utilities';
 
 const BORDER_WEIGHT = '0.125rem';
 const GEL_SPACING_THREE_QRTS = `0.75rem`;
@@ -58,10 +58,7 @@ const SkipLinkWrapper = ({
   children,
   endText,
 }) => {
-  const dictionary = {
-    '%Provider%': toProviderName(provider),
-    '%provider%': provider,
-  };
+  const dictionary = dictionaryFactory({ provider });
   return (
     <Wrapper>
       <SkipLink service={service} href={`#${detokenise(skipToId, dictionary)}`}>

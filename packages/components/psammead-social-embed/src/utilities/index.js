@@ -36,3 +36,12 @@ export const detokenise = (text, dictionary) => {
     return dictionary[match] || match;
   });
 };
+
+/**
+ * Returns an object that can be used to map tokens to values.
+ * @param {Object} definitions An object containing definitions.
+ */
+export const dictionaryFactory = ({ provider }) => ({
+  '%Provider%': toProviderName(provider),
+  '%provider%': provider,
+});

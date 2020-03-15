@@ -1,4 +1,4 @@
-import { toProviderName, detokenise } from './index';
+import { toProviderName, detokenise, dictionaryFactory } from './index';
 
 describe('toProviderName', () => {
   it('transforms the given provider correctly', () => {
@@ -23,5 +23,14 @@ describe('detokenise', () => {
   it('throws given invalid arguments', () => {
     expect(() => detokenise()).toThrow();
     expect(() => detokenise('Foo')).toThrow();
+  });
+});
+
+describe('dictionaryFactory', () => {
+  it('creates a valid dictionary', () => {
+    expect(dictionaryFactory({ provider: 'foo' })).toEqual({
+      '%Provider%': 'Foo',
+      '%provider%': 'foo',
+    });
   });
 });

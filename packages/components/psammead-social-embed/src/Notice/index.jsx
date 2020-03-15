@@ -6,7 +6,7 @@ import { getSansRegular, getSansBold } from '@bbc/psammead-styles/font-styles';
 import { GEL_SPACING_DBL, GEL_SPACING } from '@bbc/gel-foundations/spacings';
 import { GEL_BODY_COPY, GEL_MINION } from '@bbc/gel-foundations/typography';
 
-import { detokenise, toProviderName } from '../utilities';
+import { detokenise, dictionaryFactory } from '../utilities';
 
 const BORDER_WEIGHT = '0.0625rem';
 
@@ -47,10 +47,7 @@ const Notice = ({
   linkHref,
   warningText,
 }) => {
-  const dictionary = {
-    '%Provider%': toProviderName(provider),
-    '%provider%': provider,
-  };
+  const dictionary = dictionaryFactory({ provider });
   return (
     <Wrapper service={service}>
       <p>{detokenise(text, dictionary)}</p>
