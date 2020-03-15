@@ -3,11 +3,19 @@ import Helmet from 'react-helmet';
 import { shape, string } from 'prop-types';
 import loadable from '@loadable/component';
 
-import providers from './providers.json';
-
 const OEmbed = loadable(() => import('@bbc/psammead-oembed'), {
   fallback: <p>Loading&hellip;</p>,
 });
+
+export const providers = {
+  instagram: {
+    script: 'https://www.instagram.com/embed.js',
+  },
+  twitter: {
+    script: 'https://platform.twitter.com/widgets.js',
+  },
+  youtube: {},
+};
 
 const CanonicalEmbed = ({ provider, oEmbed }) => (
   <>

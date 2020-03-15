@@ -4,8 +4,7 @@ import { shape, string } from 'prop-types';
 import SkipLinkWrapper from './SkipLinkWrapper';
 import Notice from './Notice';
 
-import CanonicalEmbed from './Canonical';
-import providers from './Canonical/providers.json';
+import CanonicalEmbed, { providers } from './Canonical';
 
 import AmpEmbed from './Amp';
 import { scripts, Elements } from './Amp/Framework';
