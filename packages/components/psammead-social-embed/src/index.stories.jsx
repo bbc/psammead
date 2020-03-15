@@ -41,11 +41,10 @@ storiesOf('Components|SocialEmbed/Canonical', module)
   .add(
     'Unsupported Provider',
     ({ service }) => {
-      const fixture = select('Fixture', fixtures, fixtures.twitter);
       return (
         <CanonicalSocialEmbed
           provider="unsupported"
-          oEmbed={fixture.embed.oembed}
+          oEmbed={{ html: "<p>This won't be seen.</p>" }}
           skipLink={{
             text: 'Skip %Provider% content',
             skipToId: 'skip-%provider%-content',
@@ -144,11 +143,10 @@ storiesOf('Components|SocialEmbed/AMP', module)
   .add(
     'Unsupported Provider',
     ({ service }) => {
-      const fixture = select('Fixture', fixtures, fixtures.twitter);
       return (
         <AmpSocialEmbed
           provider="unsupported"
-          id={fixture.id}
+          id="thiswontbeused"
           skipLink={{
             text: 'Skip %Provider% content',
             skipToId: 'skip-%provider%-content',
