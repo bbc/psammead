@@ -17,7 +17,7 @@ export const scripts = {
 };
 
 export const Elements = {
-  instagram: ({ height, id, width }) => (
+  instagram: ({ id, height, width }) => (
     <amp-instagram
       data-captioned
       data-shortcode={id}
@@ -26,7 +26,7 @@ export const Elements = {
       width={width}
     />
   ),
-  twitter: ({ height, id, width }) => (
+  twitter: ({ id, height, width }) => (
     <amp-twitter
       data-tweetid={id}
       height={height}
@@ -34,7 +34,7 @@ export const Elements = {
       width={width}
     />
   ),
-  youtube: ({ height, id, width }) => (
+  youtube: ({ id, height, width }) => (
     <amp-youtube
       data-videoid={id}
       height={height}
