@@ -1,9 +1,13 @@
 import React from 'react';
 import Helmet from 'react-helmet';
 import { shape, string } from 'prop-types';
-import OEmbed from '@bbc/psammead-oembed';
+import loadable from '@loadable/component';
 
 import providers from './providers.json';
+
+const OEmbed = loadable(() => import('@bbc/psammead-oembed'), {
+  fallback: <p>Loading&hellip;</p>,
+});
 
 const CanonicalEmbed = ({ provider, oEmbed }) => (
   <>
