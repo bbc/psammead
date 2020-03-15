@@ -10,8 +10,8 @@ import { detokenise, toProviderName } from '../utilities';
 const BORDER_WEIGHT = '0.125rem';
 const GEL_SPACING_THREE_QRTS = `0.75rem`;
 
-// Note: We require control over _when and what_ these styles are applied
-// to, and therefore cannot make use of @bbc/psammead-visually-hidden-text.
+// Note: We require control over _when_ these styles are applied
+// and therefore cannot use @bbc/psammead-visually-hidden-text.
 const visuallyHiddenStyle = `
   position: absolute !important;
   height: 1px;
