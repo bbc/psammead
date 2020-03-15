@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { memo } from 'react';
 import Helmet from 'react-helmet';
 import { shape, string } from 'prop-types';
 import loadable from '@loadable/component';
@@ -27,4 +27,8 @@ CanonicalEmbed.propTypes = {
   }).isRequired,
 };
 
-export default CanonicalEmbed;
+// 'CanonicalEmbed' renders the same result given the same props, so
+// we can wrap it in a call to React.memo for a performance boost in
+// some cases by memoizing the result. This means that React will
+// skip rendering the component, and reuse the last rendered result.
+export default memo(CanonicalEmbed);
