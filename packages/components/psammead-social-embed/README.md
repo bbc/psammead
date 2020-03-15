@@ -24,7 +24,7 @@ npm install @bbc/psammead-social-embed --save
 
 | Argument   | Type   | Required | Default | Example                                                                                                             |
 | ---------- | ------ | -------- | ------- | ------------------------------------------------------------------------------------------------------------------- |
-| `provider` | String | Yes      | n/a     | See [supported providers](#Supported%20providers).                                                                  |
+| `provider` | String | Yes      | n/a     | See [supported providers](#supported-providers).                                                                  |
 | `service`  | String | Yes      | n/a     | `'news'`                                                                                                            |
 | `oEmbed`   | Object | Yes      | n/a     | See [@bbc/psammead-oembed](https://github.com/bbc/psammead/tree/latest/packages/components/psammead-oembed#oembed). |
 | `fallback` | Object | Yes      | n/a     | See [fallback](#fallback).                                                                                          |
@@ -46,7 +46,7 @@ npm install @bbc/psammead-social-embed --save
 
 | Argument      | Type   | Required | Default | Example                                                       |
 | ------------- | ------ | -------- | ------- | ------------------------------------------------------------- |
-| `text`        | String | Yes      | n/a     | `'Sorry but we're having trouble displaying this content'`    |
+| `text`        | String | Yes      | n/a     | `"Sorry but we're having trouble displaying this content"`    |
 | `linkText`    | String | Yes      | n/a     | `'View content on %Provider%'`                                |
 | `linkHref`    | String | Yes      | n/a     | `'https://twitter.com/MileyCyrus/status/1237210910835392512'` |
 | `warningText` | String | No       | `null`  | `Warning: BBC is not responsible for third party content`     |
