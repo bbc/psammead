@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { memo } from 'react';
 import { string } from 'prop-types';
 import styled from 'styled-components';
 import { C_EBON, C_PEBBLE } from '@bbc/psammead-styles/colours';
@@ -72,4 +72,4 @@ Notice.propTypes = {
   warningText: string,
 };
 
-export default Notice;
+export default memo(Notice);

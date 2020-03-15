@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { memo } from 'react';
 import { node, string } from 'prop-types';
 import styled from 'styled-components';
 import { C_EBON, C_WHITE } from '@bbc/psammead-styles/colours';
@@ -81,4 +81,4 @@ SkipLinkWrapper.propTypes = {
   endText: string.isRequired,
 };
 
-export default SkipLinkWrapper;
+export default memo(SkipLinkWrapper);

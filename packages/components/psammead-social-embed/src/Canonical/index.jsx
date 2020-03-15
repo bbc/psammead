@@ -35,8 +35,4 @@ CanonicalEmbed.propTypes = {
   }).isRequired,
 };
 
-// 'CanonicalEmbed' renders the same result given the same props, so
-// we can wrap it in a call to React.memo for a performance boost in
-// some cases by memoizing the result. This means that React will
-// skip rendering the component, and reuse the last rendered result.
 export default memo(CanonicalEmbed);
