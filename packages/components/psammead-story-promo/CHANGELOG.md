@@ -3,7 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 | ------- | ----------- |
-| 6.0.0 | [PR#XXX](https://github.com/bbc/psammead/pull/XXX) Use `LiveLabel` component |
+| 6.0.0 | [PR#3264](https://github.com/bbc/psammead/pull/3264) Use `LiveLabel` component |
 | 5.1.0 | [PR#3206](https://github.com/bbc/psammead/pull/3206) Add prop to toggle if live label is hidden, as styled components strips aria tag |
 | 5.0.0 | [PR#3202](https://github.com/bbc/psammead/pull/3202) Live Label is no longer aria hidden |
 | 4.0.0 | [PR#3154](https://github.com/bbc/psammead/pull/3154) Remove alpha tag |
