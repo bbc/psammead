@@ -52,13 +52,10 @@ exports[`AmpSocialEmbed should render a notice when the provider is unsupported 
   </p>
   <a
     href="embed-url"
-    id="link"
   >
     View content on Unknown
   </a>
-  <small
-    aria-describedby="link"
-  >
+  <small>
     Warning: BBC is not responsible for third party content
   </small>
 </div>
@@ -414,13 +411,10 @@ exports[`CanonicalSocialEmbed should render a notice when the provider is unsupp
   </p>
   <a
     href="embed-url"
-    id="link"
   >
     View content on Unknown
   </a>
-  <small
-    aria-describedby="link"
-  >
+  <small>
     Warning: BBC is not responsible for third party content
   </small>
 </div>
@@ -478,13 +472,10 @@ exports[`CanonicalSocialEmbed should render a notice when there is no oEmbed res
   </p>
   <a
     href="embed-url"
-    id="link"
   >
     View content on Twitter
   </a>
-  <small
-    aria-describedby="link"
-  >
+  <small>
     Warning: BBC is not responsible for third party content
   </small>
 </div>

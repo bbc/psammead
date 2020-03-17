@@ -51,10 +51,8 @@ const Notice = ({
   return (
     <Wrapper service={service}>
       <p>{detokenise(text, dictionary)}</p>
-      <a id="link" href={linkHref}>
-        {detokenise(linkText, dictionary)}
-      </a>
-      <small aria-describedby="link">{warningText}</small>
+      <a href={linkHref}>{detokenise(linkText, dictionary)}</a>
+      {warningText && <small>{warningText}</small>}
     </Wrapper>
   );
 };
