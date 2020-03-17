@@ -10,7 +10,7 @@ import {
   GEL_SPACING_TRPL,
   GEL_SPACING_QUAD,
 } from '@bbc/gel-foundations/spacings';
-import { C_PEBBLE } from '@bbc/psammead-styles/colours';
+import { C_PEBBLE, C_GHOST } from '@bbc/psammead-styles/colours';
 import { PlainTitle, LinkTitle } from './titles';
 
 const Bar = styled.div`
@@ -118,7 +118,7 @@ SectionLabel.defaultProps = {
   href: null,
   linkText: null,
   visuallyHidden: false,
-  backgroundColor: null,
+  backgroundColor: C_GHOST,
 };
 
 SectionLabel.propTypes = {

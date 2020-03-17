@@ -71,13 +71,11 @@ const titleMargins = `
   }
 `;
 
-const Title = styled.span(props => ({
-  'background-color': props.backgroundColor,
-}))`
+const Title = styled.span`
   ${({ script }) => script && getDoublePica(script)};
   ${({ service }) => getSansRegular(service)}
   color: ${C_EBON};
-
+  background-color: ${props => props.backgroundColor};
   ${titleMargins};
 
   ${paddingDir}: ${GEL_SPACING};
@@ -161,7 +159,7 @@ PlainTitle.propTypes = {
 };
 
 PlainTitle.defaultProps = {
-  backgroundColor: null,
+  backgroundColor: C_GHOST,
 };
 
 export const LinkTitle = ({
@@ -206,5 +204,5 @@ LinkTitle.propTypes = {
 };
 
 LinkTitle.defaultProps = {
-  backgroundColor: null,
+  backgroundColor: C_GHOST,
 };
