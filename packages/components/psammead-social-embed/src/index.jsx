@@ -56,7 +56,7 @@ const sharedPropTypes = {
   service: string.isRequired,
   skipLink: shape({
     text: string.isRequired,
-    skipToId: string.isRequired,
+    endTextId: string.isRequired,
     endText: string.isRequired,
   }).isRequired,
   fallback: shape({

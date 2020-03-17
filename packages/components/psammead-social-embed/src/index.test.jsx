@@ -13,7 +13,7 @@ describe('CanonicalSocialEmbed', () => {
         oEmbed={embed.oembed}
         skipLink={{
           text: 'Skip %Provider% content',
-          skipToId: 'skip-%provider%-content',
+          endTextId: 'skip-%provider%-content',
           endText: 'End of %Provider% content',
         }}
         fallback={{
@@ -35,7 +35,7 @@ describe('CanonicalSocialEmbed', () => {
       oEmbed={fixtures.twitter.embed.oembed}
       skipLink={{
         text: 'Skip %Provider% content',
-        skipToId: 'skip-%provider%-content',
+        endTextId: 'skip-%provider%-content',
         endText: 'End of %Provider% content',
       }}
       fallback={{
@@ -54,7 +54,7 @@ describe('CanonicalSocialEmbed', () => {
       provider={fixtures.twitter.source}
       skipLink={{
         text: 'Skip %Provider% content',
-        skipToId: 'skip-%provider%-content',
+        endTextId: 'skip-%provider%-content',
         endText: 'End of %Provider% content',
       }}
       fallback={{
@@ -78,7 +78,7 @@ describe('AmpSocialEmbed', () => {
         id={id}
         skipLink={{
           text: 'Skip %Provider% content',
-          skipToId: 'skip-%provider%-content',
+          endTextId: 'skip-%provider%-content',
           endText: 'End of %Provider% content',
         }}
         fallback={{
@@ -102,7 +102,7 @@ describe('AmpSocialEmbed', () => {
       id={fixtures.twitter.id}
       skipLink={{
         text: 'Skip %Provider% content',
-        skipToId: 'skip-%provider%-content',
+        endTextId: 'skip-%provider%-content',
         endText: 'End of %Provider% content',
       }}
       fallback={{

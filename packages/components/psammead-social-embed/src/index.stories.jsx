@@ -20,7 +20,7 @@ storiesOf('Components|SocialEmbed/Canonical', module)
           oEmbed={fixture.embed.oembed}
           skipLink={{
             text: 'Skip %Provider% content',
-            skipToId: 'skip-%provider%-content',
+            endTextId: 'skip-%provider%-content',
             endText: 'End of %Provider% content',
           }}
           fallback={{
@@ -47,7 +47,7 @@ storiesOf('Components|SocialEmbed/Canonical', module)
           oEmbed={{ html: "<p>This won't be seen.</p>" }}
           skipLink={{
             text: 'Skip %Provider% content',
-            skipToId: 'skip-%provider%-content',
+            endTextId: 'skip-%provider%-content',
             endText: 'End of %Provider% content',
           }}
           fallback={{
@@ -74,7 +74,7 @@ storiesOf('Components|SocialEmbed/Canonical', module)
           provider={fixture.source}
           skipLink={{
             text: 'Skip %Provider% content',
-            skipToId: 'skip-%provider%-content',
+            endTextId: 'skip-%provider%-content',
             endText: 'End of %Provider% content',
           }}
           fallback={{
@@ -120,7 +120,7 @@ storiesOf('Components|SocialEmbed/AMP', module)
           id={fixture.id}
           skipLink={{
             text: 'Skip %Provider% content',
-            skipToId: 'skip-%provider%-content',
+            endTextId: 'skip-%provider%-content',
             endText: 'End of %Provider% content',
           }}
           fallback={{
@@ -149,7 +149,7 @@ storiesOf('Components|SocialEmbed/AMP', module)
           id="thiswontbeused"
           skipLink={{
             text: 'Skip %Provider% content',
-            skipToId: 'skip-%provider%-content',
+            endTextId: 'skip-%provider%-content',
             endText: 'End of %Provider% content',
           }}
           fallback={{
