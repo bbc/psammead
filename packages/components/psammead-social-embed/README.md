@@ -2,7 +2,7 @@
 
 ## Description
 
-The `SocialEmbed` component renders a rich social media embed for a number of supported providers or a fallback with a link to the source content.
+The `SocialEmbed` component renders a rich social media embed for a number of supported providers or a fallback containing a link to the source content.
 
 ### Supported providers
 
@@ -37,8 +37,8 @@ npm install @bbc/psammead-social-embed --save
 | `provider` | String | Yes      | n/a     | See [supported providers](#Supported%20providers). |
 | `service`  | String | Yes      | n/a     | `'news'`                                           |
 | `id`       | String | Yes      | n/a     | `'1237210910835392512'`                            |
-| `width`    | String | Yes      | n/a     | `'465'`                                            |
-| `height`   | String | Yes      | n/a     | `'279'`                                            |
+| `width`    | String | Yes      | n/a     | `'16'`                                            |
+| `height`   | String | Yes      | n/a     | `'9'`                                            |
 | `fallback` | Object | Yes      | n/a     | See [fallback](#fallback).                         |
 | `skipLink` | Object | Yes      | n/a     | See [skipLink](#skipLink).                         |
 
@@ -58,7 +58,7 @@ Note: For your convenience, all instances of `%provider%` and `%Provider%` in th
 | Argument   | Type   | Required | Default | Example                       |
 | ---------- | ------ | -------- | ------- | ----------------------------- |
 | `text`     | String | Yes      | n/a     | `'Skip %Provider% content'`   |
-| `skipToId` | String | Yes      | n/a     | `'skip-%provider%-content'`   |
+| `endTextId` | String | Yes      | n/a     | `'skip-%provider%-content'`   |
 | `endText`  | String | Yes      | n/a     | `'End of %Provider% content'` |
 
 Note: For your convenience, all instances of `%provider%` and `%Provider%` in the above strings will be replaced with the current provider. E.G. `instagram` and `Instagram` respectively.
@@ -67,9 +67,9 @@ Note: For your convenience, all instances of `%provider%` and `%Provider%` in th
 
 ### Canonical
 
-To do:
-- Unsupported providers
-- fallback in the following scenarios
+Pass a [supported provider](#supported-providers) and valid oEmbed response. If neither of these cases can be met, a fallback will be rendered containing a link to the source content.
+
+#### Example
 
 ```jsx
 import { CanonicalSocialEmbed } from '@bbc/psammead-social-embed';
@@ -80,7 +80,7 @@ import { CanonicalSocialEmbed } from '@bbc/psammead-social-embed';
   oEmbed={{ html: '...' }}
   skipLink={{
     text: 'Skip %Provider% content',
-    skipToId: 'skip-%provider%-content',
+    endTextId: 'skip-%provider%-content',
     endText: 'End of %Provider% content',
   }}
   fallback={{
@@ -94,11 +94,11 @@ import { CanonicalSocialEmbed } from '@bbc/psammead-social-embed';
 
 ### AMP
 
-To do:
-- Unsupported providers
-- Width/Height
-- fallback in the following scenarios
-- `id` refers to the unique segment of the URL identifying the content. E.G. `1237210910835392512` in `https://twitter.com/MileyCyrus/status/1237210910835392512`.
+Pass a [supported provider](#supported-providers). If this case cannot be met, a fallback will be rendered containing a link to the source content.
+
+Pass a valid `id`. This refers to the unique segment of the URL, which identifies the source content. E.G. `1237210910835392512` in `https://twitter.com/MileyCyrus/status/1237210910835392512`.
+
+The component will fill its parent container and resize its height automatically to the given _aspect ratio_ supplied by `width` and `height`. E.G. `width="16"` by `height="9"`.
 
 ```jsx
 import { AmpSocialEmbed } from '@bbc/psammead-social-embed';
@@ -109,7 +109,7 @@ import { AmpSocialEmbed } from '@bbc/psammead-social-embed';
   id="B8FPf4ZphHi"
   skipLink={{
     text: 'Skip %Provider% content',
-    skipToId: 'skip-%provider%-content',
+    endTextId: 'skip-%provider%-content',
     endText: 'End of %Provider% content',
   }}
   fallback={{
@@ -118,22 +118,22 @@ import { AmpSocialEmbed } from '@bbc/psammead-social-embed';
     linkHref: 'https://www.instagram.com/p/B8FPf4ZphHi/',
     warningText: 'Warning: BBC is not responsible for third party content',
   }}
-  width="400"
-  height="400"
+  width="1"
+  height="1"
 />;
 ```
 
 ### When to use this component
 
-To do.
+This component is designed to embed rich social media content from a number of [supported providers](#supported-providers) in primary content, such as an article.
 
 ### When not to use this component
 
-To do.
+This component will not provide a rich social media embed for providers outside of the [supported providers](#supported-providers) – these will use fallback content instead.
 
 ### Accessibility notes
 
-This component provides a skip-link for non-fallback content, which allows users to identify and skip over social media content in your pages.
+This component provides a [Skip Link](https://webaim.org/techniques/skipnav/), which allows users to identify and skip over social media content in your pages. `skipLink.endTextId` should be set to a value that uniquely identifies `skipLink.endText` – this is especially important when there is more than one social media embed from the same provider on the page.
 
 ## Contributing
 
