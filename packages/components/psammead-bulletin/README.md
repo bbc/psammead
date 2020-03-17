@@ -19,6 +19,7 @@ npm install @bbc/psammead-bulletin --save
 | --------- | ---- | -------- | ------- | ------- |
 | `script` | object | yes | N/A | `{ canon: { groupA: { fontSize: '28', lineHeight: '32',}, groupB: { fontSize: '32', lineHeight: '36', }, groupD: { fontSize: '44', lineHeight: '48', }, }, trafalgar: { groupA: { fontSize: '20', lineHeight: '24', }, groupB: { fontSize: '24', lineHeight: '28', }, groupD: { fontSize: '32', lineHeight: '36', }, }, }` |
 | `service` | string | yes | N/A | `'pidgin'` |
+| `dir` | string | no | `'ltr'` | `One of ['rtl', 'ltr']` |
 | `image` | node | no | `null` | `<Image src={src} alt={alt} />` |
 | `type` | string | yes | N/A | `One of ['audio', 'video']` |
 | `ctaText` | string | yes | N/A | `Watch` |
@@ -27,9 +28,8 @@ npm install @bbc/psammead-bulletin --save
 | `headlineText` | string | yes | N/A  | `'Bulletin headline'` |
 | `isLive` | boolean | no | `false` | `true` |
 | `liveText` | string | no | `'Live'` | `'Localised Live'` |
-| `dir` | string | no | `'ltr'` | `One of ['rtl', 'ltr']` |
-| `lang` | string | no | `'en-GB'` | `'en-GB'` |
 | `offScreenText` | string | yes | N/A | `'Watch Live'` |
+| `lang` | string | no | `'en-GB'` | `'en-GB'` |
 
 ## Usage
 
@@ -43,9 +43,9 @@ const WrappingComponent = () => {
 
   return (
     <Bulletin
-      image={image}
-      service="news"
       script={latin}
+      service="news"
+      image={image}
       type="video"
       ctaLink="/cta"
       ctaText="Watch"

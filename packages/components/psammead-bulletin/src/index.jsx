@@ -24,8 +24,9 @@ import {
   getLongPrimer,
 } from '@bbc/gel-foundations/typography';
 import { mediaIcons } from '@bbc/psammead-assets/svgs';
+import LiveLabel from '@bbc/psammead-live-label';
 import VisuallyHiddenText from '@bbc/psammead-visually-hidden-text';
-import { Link, LiveLabel } from '@bbc/psammead-story-promo';
+import { Link } from '@bbc/psammead-story-promo';
 import ImageGridItem from './ImageStyles';
 import TextGridItem from './TextStyles';
 
@@ -169,17 +170,17 @@ const PlayCTA = styled.div.attrs({ 'aria-hidden': true })`
 const Bulletin = ({
   script,
   service,
-  isLive,
-  headlineText,
-  summaryText,
+  dir,
   image,
   mediaType,
-  ctaText,
+  headlineText,
+  summaryText,
   ctaLink,
+  ctaText,
+  isLive,
   liveText,
-  dir,
-  lang,
   offScreenText,
+  lang,
 }) => {
   const isAudio = mediaType === 'audio';
   const bulletinType = isAudio ? 'radio' : 'tv';
@@ -198,20 +199,28 @@ const Bulletin = ({
           dir={dir}
         >
           <Link href={ctaLink}>
-            {/* eslint-disable jsx-a11y/aria-role */}
-            <span role="text">
-              {offScreenText && (
-                <VisuallyHiddenText lang={lang}>
-                  {`${offScreenText}, `}
-                </VisuallyHiddenText>
-              )}
-              {isLive && (
-                <LiveLabel service={service} dir={dir} ariaHidden>
-                  {`${liveText} `}
-                </LiveLabel>
-              )}
-              <span>{headlineText}</span>
-            </span>
+            {isLive ? (
+              <LiveLabel
+                service={service}
+                dir={dir}
+                liveText={liveText}
+                ariaHidden
+                withOffScreenText
+                offScreenText={offScreenText}
+              >
+                {headlineText}
+              </LiveLabel>
+            ) : (
+              // eslint-disable-next-line jsx-a11y/aria-role
+              <span role="text">
+                {offScreenText && (
+                  <VisuallyHiddenText lang={lang}>
+                    {`${offScreenText}, `}
+                  </VisuallyHiddenText>
+                )}
+                <span>{headlineText}</span>
+              </span>
+            )}
           </Link>
         </BulletinHeading>
         <BulletinSummary
@@ -239,25 +248,25 @@ const Bulletin = ({
 
 Bulletin.propTypes = {
   mediaType: oneOf(['video', 'audio']).isRequired,
-  isLive: bool,
   service: string.isRequired,
   script: shape(scriptPropType).isRequired,
+  dir: oneOf(['ltr', 'rtl']),
   ctaText: string.isRequired,
   ctaLink: string.isRequired,
   image: node,
   summaryText: string.isRequired,
   headlineText: string.isRequired,
+  isLive: bool,
   liveText: string,
-  dir: oneOf(['ltr', 'rtl']),
-  lang: string,
   offScreenText: string.isRequired,
+  lang: string,
 };
 
 Bulletin.defaultProps = {
-  isLive: false,
-  image: null,
-  liveText: 'LIVE',
   dir: 'ltr',
+  image: null,
+  isLive: false,
+  liveText: 'LIVE',
   lang: 'en-GB',
 };
 

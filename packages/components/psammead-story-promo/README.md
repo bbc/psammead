@@ -44,19 +44,6 @@ The `StoryPromo` component is designed to be used on 'index' pages, which are pa
 | promoHasImage | bool | no | true | `false` |
 | promoType | string | no | `regular` | `top` |
 
-## LiveLabel
-
-The `LiveLabel` component is to be used inside a `Link` in index pages to show a promo for a Live page. The ariaHidden prop is needed as styled components strips out aria tags on a server render.
-
-### Props
-
-<!-- prettier-ignore -->
-| Argument | Type   | Required | Default | Example  |
-| -------- | ------ | -------- | ------- | -------- |
-| service  | string | yes      | N/A     | `'news'` |
-| dir      | string | no       | `'ltr'` | `'rtl'`  |
-| ariaHidden | bool | no       | `false` | `true`  |
-
 ## IndexAlsos
 
 The Index Alsos are links to stories that are related to the top story.
@@ -130,7 +117,6 @@ import StoryPromo, {
   Headline,
   Summary,
   Link,
-  LiveLabel,
   IndexAlsos,
   IndexAlso,
   IndexAlsosUl,
@@ -138,19 +124,10 @@ import StoryPromo, {
 } from '@bbc/psammead-story-promo';
 import MediaIndicator from '@bbc/psammead-media-indicator';
 import { latin } from '@bbc/gel-foundations/scripts';
+import LiveLabel from '@bbc/psammead-live-label';
 import VisuallyHiddenText from '@bbc/psammead-visually-hidden-text';
 
 const Image = <img src="https://foobar.com/image.jpg" />;
-
-const LiveComponent = ({ headline, service, dir }) => (
-  <span role="text">
-    <LiveLabel service={service} dir={dir} ariaHidden>
-      LIVE
-    </LiveLabel>
-    <VisuallyHiddenText lang="en-GB">Live, </VisuallyHiddenText>
-    {headline}
-  </span>
-);
 
 const IndexAlsosComponent = ({ alsoItems, script, service }) => (
   //This example doesn't show how the alsoItems are destructured to get the respective data
@@ -186,10 +163,9 @@ const Info = ({ isLive, alsoItems }) => (
     <Headline script={latin} service="news" promoType="top">
       <Link href="https://www.bbc.co.uk/news">
         {isLive ? (
-          <LiveComponent
-            service="news"
-            headline="The headline of the live promo"
-          />
+          <LiveLabel service="news" dir={dir} ariaHidden withOffScreenText>
+            The headline of the live promo
+          </LiveLabel>
         ) : (
           'The headline of the promo'
         )}

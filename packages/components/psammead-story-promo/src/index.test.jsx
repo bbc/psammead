@@ -4,26 +4,14 @@ import { shouldMatchSnapshot } from '@bbc/psammead-test-helpers';
 import { latin } from '@bbc/gel-foundations/scripts';
 import MediaIndicator from '@bbc/psammead-media-indicator';
 import { render } from '@testing-library/react';
-import VisuallyHiddenText from '@bbc/psammead-visually-hidden-text';
+import LiveLabel from '@bbc/psammead-live-label';
 import styled from 'styled-components';
 import { GEL_SPACING_HLF } from '@bbc/gel-foundations/spacings';
-import StoryPromo, { Headline, Summary, Link, LiveLabel } from './index';
+import StoryPromo, { Headline, Summary, Link } from './index';
 import relatedItems from '../testHelpers/relatedItems';
 import IndexAlsosContainer from '../testHelpers/IndexAlsosContainer';
 
 const Image = <img src="https://foobar.com/image.png" alt="Alt text" />;
-
-/* eslint-disable-next-line react/prop-types */
-const LiveComponent = ({ headline, dir, service }) => (
-  /* eslint-disable-next-line jsx-a11y/aria-role */
-  <span role="text">
-    <LiveLabel dir={dir} service={service} ariaHidden>
-      LIVE
-    </LiveLabel>
-    <VisuallyHiddenText lang="en-GB">Live, </VisuallyHiddenText>
-    {headline}
-  </span>
-);
 
 const Info = ({ promoType, isLive, dir, alsoItems, promoHasImage }) => (
   <>
@@ -35,11 +23,9 @@ const Info = ({ promoType, isLive, dir, alsoItems, promoHasImage }) => (
     >
       <Link href="https://www.bbc.co.uk/news">
         {isLive ? (
-          <LiveComponent
-            service="news"
-            dir={dir}
-            headline="The live promo headline"
-          />
+          <LiveLabel service="news" dir={dir} ariaHidden withOffScreenText>
+            The live promo headline
+          </LiveLabel>
         ) : (
           'The headline of the promo'
         )}

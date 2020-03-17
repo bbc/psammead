@@ -3,12 +3,13 @@ import { storiesOf } from '@storybook/react';
 import { withKnobs, text, boolean, select } from '@storybook/addon-knobs';
 import Image from '@bbc/psammead-image';
 import MediaIndicator from '@bbc/psammead-media-indicator';
+import LiveLabel from '@bbc/psammead-live-label';
 import VisuallyHiddenText from '@bbc/psammead-visually-hidden-text';
 import { withServicesKnob } from '@bbc/psammead-storybook-helpers';
 import Grid from '@bbc/psammead-grid';
 import styled from 'styled-components';
 import { GEL_SPACING_HLF } from '@bbc/gel-foundations/spacings';
-import StoryPromo, { Headline, Summary, Link, LiveLabel } from './index';
+import StoryPromo, { Headline, Summary, Link } from './index';
 import relatedItems from '../testHelpers/relatedItems';
 import IndexAlsosContainer from '../testHelpers/IndexAlsosContainer';
 import notes from '../README.md';
@@ -53,18 +54,6 @@ const MediaIndicatorComponent = ({
 /* eslint-enable react/prop-types */
 
 /* eslint-disable-next-line react/prop-types */
-const LiveComponent = ({ headline, service, dir }) => (
-  /* eslint-disable-next-line jsx-a11y/aria-role */
-  <span role="text">
-    <LiveLabel service={service} dir={dir} ariaHidden>
-      LIVE
-    </LiveLabel>
-    <VisuallyHiddenText lang="en-GB">{` Live, `}</VisuallyHiddenText>
-    {headline}
-  </span>
-);
-
-/* eslint-disable-next-line react/prop-types */
 const HiddenText = ({ type, headline }) => (
   /* eslint-disable-next-line jsx-a11y/aria-role */
   <span role="text">
@@ -98,7 +87,9 @@ const InfoComponent = ({
     >
       <Link href="https://www.bbc.co.uk/news">
         {isLive ? (
-          <LiveComponent service={service} dir={dir} headline={headlineText} />
+          <LiveLabel service={service} dir={dir} ariaHidden withOffScreenText>
+            {headlineText}
+          </LiveLabel>
         ) : (
           <HiddenText headline={headlineText} type={type} />
         )}
