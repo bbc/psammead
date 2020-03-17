@@ -5,7 +5,7 @@ import SkipLinkWrapper from './SkipLinkWrapper';
 import Notice from './Notice';
 
 import CanonicalEmbed, { providers } from './Canonical';
-import Elements from './Amp';
+import AmpElements from './Amp';
 
 /**
  * Returns a Social Embed component for use on Canonical pages.
@@ -41,10 +41,10 @@ export const AmpSocialEmbed = ({
   height,
   fallback,
 }) => {
-  const Element = Elements[provider];
-  return Element ? (
+  const AmpElement = AmpElements[provider];
+  return AmpElement ? (
     <SkipLinkWrapper service={service} provider={provider} {...skipLink}>
-      <Element id={id} height={height} width={width} />
+      <AmpElement id={id} height={height} width={width} />
     </SkipLinkWrapper>
   ) : (
     <Notice service={service} provider={provider} {...fallback} />
