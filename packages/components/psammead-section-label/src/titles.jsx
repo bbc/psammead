@@ -71,11 +71,12 @@ const titleMargins = `
   }
 `;
 
-const Title = styled.span`
+const Title = styled.span(props => ({
+  'background-color': props.backgroundColor,
+}))`
   ${({ script }) => script && getDoublePica(script)};
   ${({ service }) => getSansRegular(service)}
   color: ${C_EBON};
-  background-color: ${C_GHOST};
 
   ${titleMargins};
 
@@ -95,6 +96,11 @@ Title.propTypes = {
   id: string.isRequired,
   script: shape(scriptPropType).isRequired,
   service: string.isRequired,
+  backgroundColor: string,
+};
+
+Title.defaultProps = {
+  backgroundColor: C_GHOST,
 };
 
 const IndexLinkCta = styled.span.attrs({
@@ -128,10 +134,17 @@ export const PlainTitle = ({
   labelId,
   script,
   service,
+  backgroundColor,
 }) => (
   <FlexColumn>
     <FlexRow>
-      <Title script={script} dir={dir} id={labelId} service={service}>
+      <Title
+        script={script}
+        dir={dir}
+        id={labelId}
+        service={service}
+        backgroundColor={backgroundColor}
+      >
         {title}
       </Title>
     </FlexRow>
@@ -144,6 +157,11 @@ PlainTitle.propTypes = {
   labelId: string.isRequired,
   script: shape(scriptPropType).isRequired,
   service: string.isRequired,
+  backgroundColor: string,
+};
+
+PlainTitle.defaultProps = {
+  backgroundColor: null,
 };
 
 export const LinkTitle = ({
@@ -154,11 +172,18 @@ export const LinkTitle = ({
   linkText,
   script,
   service,
+  backgroundColor,
 }) => (
   <SectionLabelLink href={href} labelId={labelId}>
     <FlexColumn>
       <FlexTextRow>
-        <Title id={labelId} dir={dir} script={script} service={service}>
+        <Title
+          id={labelId}
+          dir={dir}
+          script={script}
+          service={service}
+          backgroundColor={backgroundColor}
+        >
           {title}
         </Title>
         <IndexLinkCta dir={dir} script={script} service={service}>
@@ -177,4 +202,9 @@ LinkTitle.propTypes = {
   linkText: string.isRequired,
   script: shape(scriptPropType).isRequired,
   service: string.isRequired,
+  backgroundColor: string,
+};
+
+LinkTitle.defaultProps = {
+  backgroundColor: null,
 };
