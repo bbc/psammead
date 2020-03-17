@@ -7,6 +7,10 @@ const OEmbed = loadable(() => import('@bbc/psammead-oembed'), {
   fallback: <p>Loading&hellip;</p>,
 });
 
+/**
+ * The following object declares a list of supported Canonical providers and
+ * their attributes. They don't all require an external script to be loaded.
+ */
 export const providers = {
   instagram: {
     script: 'https://www.instagram.com/embed.js',
