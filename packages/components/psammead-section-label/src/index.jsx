@@ -10,7 +10,7 @@ import {
   GEL_SPACING_TRPL,
   GEL_SPACING_QUAD,
 } from '@bbc/gel-foundations/spacings';
-import { C_PEBBLE } from '@bbc/psammead-styles/colours';
+import { C_PEBBLE, C_GHOST } from '@bbc/psammead-styles/colours';
 import { PlainTitle, LinkTitle } from './titles';
 
 const Bar = styled.div`
@@ -79,6 +79,7 @@ const SectionLabel = ({
   script,
   service,
   visuallyHidden,
+  backgroundColor,
   ...props
 }) => (
   <SectionLabelWrapper visuallyHidden={visuallyHidden} {...props}>
@@ -92,6 +93,7 @@ const SectionLabel = ({
           linkText={linkText}
           script={script}
           service={service}
+          backgroundColor={backgroundColor}
         >
           {title}
         </LinkTitle>
@@ -101,6 +103,7 @@ const SectionLabel = ({
           labelId={labelId}
           script={script}
           service={service}
+          backgroundColor={backgroundColor}
         >
           {title}
         </PlainTitle>
@@ -115,6 +118,7 @@ SectionLabel.defaultProps = {
   href: null,
   linkText: null,
   visuallyHidden: false,
+  backgroundColor: C_GHOST,
 };
 
 SectionLabel.propTypes = {
@@ -127,6 +131,7 @@ SectionLabel.propTypes = {
   script: shape(scriptPropType).isRequired,
   service: string.isRequired,
   visuallyHidden: bool,
+  backgroundColor: string,
 };
 
 export default SectionLabel;
