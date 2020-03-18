@@ -76,7 +76,7 @@ const locales = [
   { name: 'Thai', locale: 'th' },
   { name: 'Tigrinya', locale: 'ti' },
   { name: 'Ukrainian', locale: 'uk' },
-  { name: 'Urdu', locale: 'ur' , dir: 'rtl' },
+  { name: 'Urdu', locale: 'ur', dir: 'rtl' },
   { name: 'Uzbek', locale: 'uz' },
   { name: 'Yoruba', locale: 'yo' },
 ];
@@ -90,6 +90,16 @@ const funcs = [
     moment(fixedTimestamp)
       .locale(locale)
       .format('MMMM Do YYYY, h:mm:ss a'),
+  locale =>
+    moment()
+      .locale(locale)
+      .subtract({ m: 1 })
+      .fromNow(),
+  locale =>
+    moment()
+      .locale(locale)
+      .subtract({ m: 15 })
+      .fromNow(),
   locale =>
     moment(fixedTimestamp)
       .locale(locale)
