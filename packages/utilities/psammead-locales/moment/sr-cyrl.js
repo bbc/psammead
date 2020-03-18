@@ -10,8 +10,10 @@ moment.updateLocale('sr-cyrl', {
   relativeTime: {
     past: 'Пре %s',
     m: '1 минута',
-    mm: 'минута: %d',
+    mm: '%d минута',
     h: '1 сата',
-    hh: 'сати: %d',
+    hh: function(number) {
+      return number < 5 ? number + ' сата' : number + ' сати';
+    },
   },
 });
