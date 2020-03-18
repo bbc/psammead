@@ -37,14 +37,12 @@ export const AmpSocialEmbed = ({
   service,
   skipLink,
   id,
-  width,
-  height,
   fallback,
 }) => {
   const AmpElement = AmpElements[provider];
   return AmpElement ? (
     <SkipLinkWrapper service={service} provider={provider} {...skipLink}>
-      <AmpElement id={id} height={height} width={width} />
+      <AmpElement id={id} />
     </SkipLinkWrapper>
   ) : (
     <Notice service={service} provider={provider} {...fallback} />
@@ -81,6 +79,4 @@ CanonicalSocialEmbed.propTypes = {
 AmpSocialEmbed.propTypes = {
   ...sharedPropTypes,
   id: string.isRequired,
-  width: string.isRequired,
-  height: string.isRequired,
 };

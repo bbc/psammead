@@ -2,7 +2,7 @@ import React, { memo } from 'react';
 import { string } from 'prop-types';
 import Helmet from 'react-helmet';
 
-const Instagram = ({ id, height, width }) => (
+const Instagram = ({ id }) => (
   <>
     <Helmet>
       <script
@@ -14,14 +14,14 @@ const Instagram = ({ id, height, width }) => (
     <amp-instagram
       data-captioned
       data-shortcode={id}
-      height={height}
+      height="1"
       layout="responsive"
-      width={width}
+      width="1"
     />
   </>
 );
 
-const Twitter = ({ id, height, width }) => (
+const Twitter = ({ id }) => (
   <>
     <Helmet>
       <script
@@ -30,16 +30,11 @@ const Twitter = ({ id, height, width }) => (
         src="https://cdn.ampproject.org/v0/amp-twitter-0.1.js"
       />
     </Helmet>
-    <amp-twitter
-      data-tweetid={id}
-      height={height}
-      layout="responsive"
-      width={width}
-    />
+    <amp-twitter data-tweetid={id} height="9" layout="responsive" width="16" />
   </>
 );
 
-const YouTube = ({ id, height, width }) => (
+const YouTube = ({ id }) => (
   <>
     <Helmet>
       <script
@@ -48,19 +43,12 @@ const YouTube = ({ id, height, width }) => (
         src="https://cdn.ampproject.org/v0/amp-youtube-0.1.js"
       />
     </Helmet>
-    <amp-youtube
-      data-videoid={id}
-      height={height}
-      layout="responsive"
-      width={width}
-    />
+    <amp-youtube data-videoid={id} height="9" layout="responsive" width="16" />
   </>
 );
 
 const sharedPropTypes = {
-  height: string.isRequired,
   id: string.isRequired,
-  width: string.isRequired,
 };
 
 Instagram.propTypes = sharedPropTypes;

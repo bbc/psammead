@@ -88,8 +88,6 @@ describe('AmpSocialEmbed', () => {
           warningText:
             'Warning: BBC is not responsible for third party content',
         }}
-        width="400"
-        height="400"
         service="news"
       />,
     );
@@ -111,8 +109,6 @@ describe('AmpSocialEmbed', () => {
         linkHref: 'embed-url',
         warningText: 'Warning: BBC is not responsible for third party content',
       }}
-      width="400"
-      height="400"
       service="news"
     />,
   );

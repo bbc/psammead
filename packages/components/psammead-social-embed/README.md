@@ -38,22 +38,20 @@ npm install @bbc/psammead-social-embed --save
 
 ### AMP
 
-| Argument   | Type   | Required | Default | Example                                            |
-| ---------- | ------ | -------- | ------- | -------------------------------------------------- |
+| Argument   | Type   | Required | Default | Example                                          |
+| ---------- | ------ | -------- | ------- | ------------------------------------------------ |
 | `provider` | String | Yes      | n/a     | See [supported providers](#supported-providers). |
-| `service`  | String | Yes      | n/a     | `'news'`                                           |
-| `id`       | String | Yes      | n/a     | `'1237210910835392512'`                            |
-| `width`    | String | Yes      | n/a     | `'16'`                                             |
-| `height`   | String | Yes      | n/a     | `'9'`                                              |
-| `fallback` | Object | Yes      | n/a     | See [fallback](#fallback).                         |
-| `skipLink` | Object | Yes      | n/a     | See [skipLink](#skipLink).                         |
+| `service`  | String | Yes      | n/a     | `'news'`                                         |
+| `id`       | String | Yes      | n/a     | `'1237210910835392512'`                          |
+| `fallback` | Object | Yes      | n/a     | See [fallback](#fallback).                       |
+| `skipLink` | Object | Yes      | n/a     | See [skipLink](#skipLink).                       |
 
 ### `fallback`
 
 | Argument      | Type   | Required | Default | Example                                                       |
 | ------------- | ------ | -------- | ------- | ------------------------------------------------------------- |
 | `text`        | String | Yes      | n/a     | `"Sorry but we're having trouble displaying this content"`    |
-| `linkText`    | String | Yes      | n/a     | `'View content on %provider_name%'`                                |
+| `linkText`    | String | Yes      | n/a     | `'View content on %provider_name%'`                           |
 | `linkHref`    | String | Yes      | n/a     | `'https://twitter.com/MileyCyrus/status/1237210910835392512'` |
 | `warningText` | String | No       | `null`  | `Warning: BBC is not responsible for third party content`     |
 
@@ -61,10 +59,10 @@ Note: For your convenience, instances of `%provider%` and `%provider_name%` in t
 
 ### `skipLink`
 
-| Argument    | Type   | Required | Default | Example                       |
-| ----------- | ------ | -------- | ------- | ----------------------------- |
+| Argument    | Type   | Required | Default | Example                            |
+| ----------- | ------ | -------- | ------- | ---------------------------------- |
 | `text`      | String | Yes      | n/a     | `'Skip %provider_name% content'`   |
-| `endTextId` | String | Yes      | n/a     | `'skip-%provider%-content'`   |
+| `endTextId` | String | Yes      | n/a     | `'skip-%provider%-content'`        |
 | `endText`   | String | Yes      | n/a     | `'End of %provider_name% content'` |
 
 See [accessibility notes](#accessibility-notes) for more information.
@@ -106,8 +104,6 @@ Pass a [supported provider](#supported-providers). If this case cannot be met, a
 
 Pass a valid `id`. This refers to the unique segment of the URL, which identifies the source content. E.G. `1237210910835392512` in `https://twitter.com/MileyCyrus/status/1237210910835392512`.
 
-The component will fill its parent container and resize its height automatically to the given _aspect ratio_ supplied by `width` and `height`. E.G. `width="16"` by `height="9"`.
-
 ```jsx
 import { AmpSocialEmbed } from '@bbc/psammead-social-embed';
 
@@ -126,8 +122,6 @@ import { AmpSocialEmbed } from '@bbc/psammead-social-embed';
     linkHref: 'https://www.instagram.com/p/B8FPf4ZphHi/',
     warningText: 'Warning: BBC is not responsible for third party content',
   }}
-  width="1"
-  height="1"
 />;
 ```
 

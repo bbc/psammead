@@ -130,8 +130,6 @@ storiesOf('Components|SocialEmbed/AMP', module)
             warningText:
               'Warning: BBC is not responsible for third party content',
           }}
-          width="400"
-          height="400"
           service={service}
         />
       );
@@ -159,8 +157,6 @@ storiesOf('Components|SocialEmbed/AMP', module)
             warningText:
               'Warning: BBC is not responsible for third party content',
           }}
-          width="400"
-          height="400"
           service={service}
         />
       );
