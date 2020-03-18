@@ -3,7 +3,9 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
-| 2.0.102 | [PR#3264](https://github.com/bbc/psammead/pull/3264) Add @bbc/psammead-live-label to dependencies |
+| 2.0.104 | [PR#3264](https://github.com/bbc/psammead/pull/3264) Add @bbc/psammead-live-label to dependencies |
+| 2.0.103 | [PR#3269](https://github.com/bbc/psammead/pull/3269) Talos - Bump Dependencies - @bbc/moment-timezone-include |
+| 2.0.102 | [PR#3261](https://github.com/bbc/psammead/pull/3261) Bumping dependencies |
 | 2.0.101 | [PR#3251](https://github.com/bbc/psammead/pull/3251) Talos - Bump Dependencies - @bbc/psammead-most-read |
 | 2.0.100 | [PR#3249](https://github.com/bbc/psammead/pull/3249) Talos - Bump Dependencies - @bbc/psammead-brand |
 | 2.0.99 | [PR#3248](https://github.com/bbc/psammead/pull/3248) Talos - Bump Dependencies - @bbc/psammead-script-link |
