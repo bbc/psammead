@@ -26,11 +26,14 @@ const Wrapper = styled.div`
 export const providers = {
   instagram: {
     script: 'https://www.instagram.com/embed.js',
+    styles: null,
   },
   twitter: {
     script: 'https://platform.twitter.com/widgets.js',
+    styles: null,
   },
   youtube: {
+    script: null,
     styles: css`
       padding-top: ${LANDSCAPE_RATIO};
       position: relative;
