@@ -1,26 +1,16 @@
 /**
- * Returns a string whose word or words have been transformed to Title Case.
- * @param {String} text A word or words.
- */
-const toTitleCase = text =>
-  text.length > 1
-    ? text
-        .toLowerCase()
-        .split(' ')
-        .map(word => {
-          return word.replace(word[0], word[0].toUpperCase());
-        })
-        .join(' ')
-    : text;
-
-/**
- * Returns a string with a correctly transformed provider name.
+ * Returns a string of a known provider name.
  * @param {String} provider A given provider.
  */
-export const toProviderName = provider => {
+export const getProviderName = provider => {
   if (typeof provider !== 'string')
     throw Error("Expected 'provider' to be a string.");
-  return provider === 'youtube' ? 'YouTube' : toTitleCase(provider);
+  return {
+    instagram: 'Instagram',
+    twitter: 'Twitter',
+    youtube: 'YouTube',
+    facebook: 'Facebook',
+  }[provider];
 };
 
 /**
@@ -42,6 +32,6 @@ export const detokenise = (text, dictionary) => {
  * @param {Object} definitions An object containing definitions.
  */
 export const dictionaryFactory = ({ provider }) => ({
-  '%Provider%': toProviderName(provider),
+  '%provider_name%': getProviderName(provider) || provider,
   '%provider%': provider,
 });

@@ -53,7 +53,7 @@ exports[`AmpSocialEmbed should render a notice when the provider is unsupported 
   <a
     href="embed-url"
   >
-    View content on Unknown
+    View content on unknown
   </a>
   <small>
     Warning: BBC is not responsible for third party content
@@ -412,7 +412,7 @@ exports[`CanonicalSocialEmbed should render a notice when the provider is unsupp
   <a
     href="embed-url"
   >
-    View content on Unknown
+    View content on unknown
   </a>
   <small>
     Warning: BBC is not responsible for third party content

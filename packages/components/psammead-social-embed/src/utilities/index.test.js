@@ -1,23 +1,22 @@
-import { toProviderName, detokenise, dictionaryFactory } from './index';
+import { getProviderName, detokenise, dictionaryFactory } from './index';
 
-describe('toProviderName', () => {
+describe('getProviderName', () => {
   it('transforms the given provider correctly', () => {
-    expect(toProviderName('unknown')).toEqual('Unknown');
-    expect(toProviderName('youtube')).toEqual('YouTube');
-    expect(toProviderName('foo bar')).toEqual('Foo Bar');
-    expect(toProviderName('')).toEqual('');
+    expect(getProviderName('unknown')).toEqual(undefined);
+    expect(getProviderName('youtube')).toEqual('YouTube');
+    expect(getProviderName('')).toEqual(undefined);
   });
 
   it('throws given invalid arguments', () => {
-    expect(() => toProviderName()).toThrow();
-    expect(() => toProviderName(9001)).toThrow();
+    expect(() => getProviderName()).toThrow();
+    expect(() => getProviderName(9001)).toThrow();
   });
 });
 
 describe('detokenise', () => {
   it('detokenises the given text correctly', () => {
-    expect(detokenise('Foo %bar%', { '%bar%': 'Bar' })).toEqual('Foo Bar');
-    expect(detokenise('Foo %bar%', {})).toEqual('Foo %bar%');
+    expect(detokenise('Foo %token%', { '%token%': 'Bar' })).toEqual('Foo Bar');
+    expect(detokenise('Foo %token%', {})).toEqual('Foo %token%');
   });
 
   it('throws given invalid arguments', () => {
@@ -28,9 +27,14 @@ describe('detokenise', () => {
 
 describe('dictionaryFactory', () => {
   it('creates a valid dictionary', () => {
-    expect(dictionaryFactory({ provider: 'foo' })).toEqual({
-      '%Provider%': 'Foo',
-      '%provider%': 'foo',
+    expect(dictionaryFactory({ provider: 'youtube' })).toEqual({
+      '%provider_name%': 'YouTube',
+      '%provider%': 'youtube',
+    });
+
+    expect(dictionaryFactory({ provider: 'unknown' })).toEqual({
+      '%provider_name%': 'unknown',
+      '%provider%': 'unknown',
     });
   });
 });

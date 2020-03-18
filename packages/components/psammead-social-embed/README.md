@@ -40,7 +40,7 @@ npm install @bbc/psammead-social-embed --save
 
 | Argument   | Type   | Required | Default | Example                                            |
 | ---------- | ------ | -------- | ------- | -------------------------------------------------- |
-| `provider` | String | Yes      | n/a     | See [supported providers](#Supported%20providers). |
+| `provider` | String | Yes      | n/a     | See [supported providers](#supported-providers). |
 | `service`  | String | Yes      | n/a     | `'news'`                                           |
 | `id`       | String | Yes      | n/a     | `'1237210910835392512'`                            |
 | `width`    | String | Yes      | n/a     | `'16'`                                             |
@@ -53,23 +53,23 @@ npm install @bbc/psammead-social-embed --save
 | Argument      | Type   | Required | Default | Example                                                       |
 | ------------- | ------ | -------- | ------- | ------------------------------------------------------------- |
 | `text`        | String | Yes      | n/a     | `"Sorry but we're having trouble displaying this content"`    |
-| `linkText`    | String | Yes      | n/a     | `'View content on %Provider%'`                                |
+| `linkText`    | String | Yes      | n/a     | `'View content on %provider_name%'`                                |
 | `linkHref`    | String | Yes      | n/a     | `'https://twitter.com/MileyCyrus/status/1237210910835392512'` |
 | `warningText` | String | No       | `null`  | `Warning: BBC is not responsible for third party content`     |
 
-Note: For your convenience, all instances of `%provider%` and `%Provider%` in the above strings will be replaced with the current provider. E.G. `twitter` and `Twitter` respectively.
+Note: For your convenience, instances of `%provider%` and `%provider_name%` in the above strings will be replaced with the current provider and, where the provider is known, the name of the provider. E.G. `twitter` and `Twitter` respectively.
 
 ### `skipLink`
 
 | Argument    | Type   | Required | Default | Example                       |
 | ----------- | ------ | -------- | ------- | ----------------------------- |
-| `text`      | String | Yes      | n/a     | `'Skip %Provider% content'`   |
+| `text`      | String | Yes      | n/a     | `'Skip %provider_name% content'`   |
 | `endTextId` | String | Yes      | n/a     | `'skip-%provider%-content'`   |
-| `endText`   | String | Yes      | n/a     | `'End of %Provider% content'` |
+| `endText`   | String | Yes      | n/a     | `'End of %provider_name% content'` |
 
 See [accessibility notes](#accessibility-notes) for more information.
 
-Note: For your convenience, all instances of `%provider%` and `%Provider%` in the above strings will be replaced with the current provider. E.G. `instagram` and `Instagram` respectively.
+Note: For your convenience, instances of `%provider%` and `%provider_name%` in the above strings will be replaced with the current provider and, where the provider is known, the name of the provider. E.G. `instagram` and `Instagram` respectively.
 
 ## Usage
 
@@ -87,13 +87,13 @@ import { CanonicalSocialEmbed } from '@bbc/psammead-social-embed';
   service="news"
   oEmbed={{ html: '...' }}
   skipLink={{
-    text: 'Skip %Provider% content',
+    text: 'Skip %provider_name% content',
     endTextId: 'skip-%provider%-content',
-    endText: 'End of %Provider% content',
+    endText: 'End of %provider_name% content',
   }}
   fallback={{
     text: "Sorry but we're having trouble displaying this content",
-    linkText: 'View content on %Provider%',
+    linkText: 'View content on %provider_name%',
     linkHref: 'https://www.instagram.com/p/B8FPf4ZphHi/',
     warningText: 'Warning: BBC is not responsible for third party content',
   }}
@@ -116,13 +116,13 @@ import { AmpSocialEmbed } from '@bbc/psammead-social-embed';
   service="news"
   id="B8FPf4ZphHi"
   skipLink={{
-    text: 'Skip %Provider% content',
+    text: 'Skip %provider_name% content',
     endTextId: 'skip-%provider%-content',
-    endText: 'End of %Provider% content',
+    endText: 'End of %provider_name% content',
   }}
   fallback={{
     text: "Sorry but we're having trouble displaying this content",
-    linkText: 'View content on %Provider%',
+    linkText: 'View content on %provider_name%',
     linkHref: 'https://www.instagram.com/p/B8FPf4ZphHi/',
     warningText: 'Warning: BBC is not responsible for third party content',
   }}

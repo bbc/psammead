@@ -19,13 +19,13 @@ storiesOf('Components|SocialEmbed/Canonical', module)
           provider={fixture.source}
           oEmbed={fixture.embed.oembed}
           skipLink={{
-            text: 'Skip %Provider% content',
+            text: 'Skip %provider_name% content',
             endTextId: 'skip-%provider%-content',
-            endText: 'End of %Provider% content',
+            endText: 'End of %provider_name% content',
           }}
           fallback={{
             text: "Sorry but we're having trouble displaying this content",
-            linkText: 'View content on %Provider%',
+            linkText: 'View content on %provider_name%',
             linkHref: 'https://www.bbc.co.uk',
             warningText:
               'Warning: BBC is not responsible for third party content',
@@ -46,13 +46,13 @@ storiesOf('Components|SocialEmbed/Canonical', module)
           provider="unsupported"
           oEmbed={{ html: "<p>This won't be seen.</p>" }}
           skipLink={{
-            text: 'Skip %Provider% content',
+            text: 'Skip %provider_name% content',
             endTextId: 'skip-%provider%-content',
-            endText: 'End of %Provider% content',
+            endText: 'End of %provider_name% content',
           }}
           fallback={{
             text: "Sorry but we're having trouble displaying this content",
-            linkText: 'View content on %Provider%',
+            linkText: 'View content on %provider_name%',
             linkHref: 'https://www.bbc.co.uk',
             warningText:
               'Warning: BBC is not responsible for third party content',
@@ -73,13 +73,13 @@ storiesOf('Components|SocialEmbed/Canonical', module)
         <CanonicalSocialEmbed
           provider={fixture.source}
           skipLink={{
-            text: 'Skip %Provider% content',
+            text: 'Skip %provider_name% content',
             endTextId: 'skip-%provider%-content',
-            endText: 'End of %Provider% content',
+            endText: 'End of %provider_name% content',
           }}
           fallback={{
             text: "Sorry but we're having trouble displaying this content",
-            linkText: 'View content on %Provider%',
+            linkText: 'View content on %provider_name%',
             linkHref: 'https://www.bbc.co.uk',
             warningText:
               'Warning: BBC is not responsible for third party content',
@@ -119,13 +119,13 @@ storiesOf('Components|SocialEmbed/AMP', module)
           provider={fixture.source}
           id={fixture.id}
           skipLink={{
-            text: 'Skip %Provider% content',
+            text: 'Skip %provider_name% content',
             endTextId: 'skip-%provider%-content',
-            endText: 'End of %Provider% content',
+            endText: 'End of %provider_name% content',
           }}
           fallback={{
             text: "Sorry but we're having trouble displaying this content",
-            linkText: 'View content on %Provider%',
+            linkText: 'View content on %provider_name%',
             linkHref: 'https://www.bbc.co.uk',
             warningText:
               'Warning: BBC is not responsible for third party content',
@@ -148,13 +148,13 @@ storiesOf('Components|SocialEmbed/AMP', module)
           provider="unsupported"
           id="thiswontbeused"
           skipLink={{
-            text: 'Skip %Provider% content',
+            text: 'Skip %provider_name% content',
             endTextId: 'skip-%provider%-content',
-            endText: 'End of %Provider% content',
+            endText: 'End of %provider_name% content',
           }}
           fallback={{
             text: "Sorry but we're having trouble displaying this content",
-            linkText: 'View content on %Provider%',
+            linkText: 'View content on %provider_name%',
             linkHref: 'https://www.bbc.co.uk',
             warningText:
               'Warning: BBC is not responsible for third party content',

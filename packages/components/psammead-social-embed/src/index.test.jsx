@@ -12,13 +12,13 @@ describe('CanonicalSocialEmbed', () => {
         provider={provider}
         oEmbed={embed.oembed}
         skipLink={{
-          text: 'Skip %Provider% content',
+          text: 'Skip %provider_name% content',
           endTextId: 'skip-%provider%-content',
-          endText: 'End of %Provider% content',
+          endText: 'End of %provider_name% content',
         }}
         fallback={{
           text: "Sorry but we're having trouble displaying this content",
-          linkText: 'View content on %Provider%',
+          linkText: 'View content on %provider_name%',
           linkHref: 'embed-url',
           warningText:
             'Warning: BBC is not responsible for third party content',
@@ -34,13 +34,13 @@ describe('CanonicalSocialEmbed', () => {
       provider="unknown"
       oEmbed={fixtures.twitter.embed.oembed}
       skipLink={{
-        text: 'Skip %Provider% content',
+        text: 'Skip %provider_name% content',
         endTextId: 'skip-%provider%-content',
-        endText: 'End of %Provider% content',
+        endText: 'End of %provider_name% content',
       }}
       fallback={{
         text: "Sorry but we're having trouble displaying this content",
-        linkText: 'View content on %Provider%',
+        linkText: 'View content on %provider_name%',
         linkHref: 'embed-url',
         warningText: 'Warning: BBC is not responsible for third party content',
       }}
@@ -53,13 +53,13 @@ describe('CanonicalSocialEmbed', () => {
     <CanonicalSocialEmbed
       provider={fixtures.twitter.source}
       skipLink={{
-        text: 'Skip %Provider% content',
+        text: 'Skip %provider_name% content',
         endTextId: 'skip-%provider%-content',
-        endText: 'End of %Provider% content',
+        endText: 'End of %provider_name% content',
       }}
       fallback={{
         text: "Sorry but we're having trouble displaying this content",
-        linkText: 'View content on %Provider%',
+        linkText: 'View content on %provider_name%',
         linkHref: 'embed-url',
         warningText: 'Warning: BBC is not responsible for third party content',
       }}
@@ -77,13 +77,13 @@ describe('AmpSocialEmbed', () => {
         provider={provider}
         id={id}
         skipLink={{
-          text: 'Skip %Provider% content',
+          text: 'Skip %provider_name% content',
           endTextId: 'skip-%provider%-content',
-          endText: 'End of %Provider% content',
+          endText: 'End of %provider_name% content',
         }}
         fallback={{
           text: "Sorry but we're having trouble displaying this content",
-          linkText: 'View content on %Provider%',
+          linkText: 'View content on %provider_name%',
           linkHref: 'embed-url',
           warningText:
             'Warning: BBC is not responsible for third party content',
@@ -101,13 +101,13 @@ describe('AmpSocialEmbed', () => {
       provider="unknown"
       id={fixtures.twitter.id}
       skipLink={{
-        text: 'Skip %Provider% content',
+        text: 'Skip %provider_name% content',
         endTextId: 'skip-%provider%-content',
-        endText: 'End of %Provider% content',
+        endText: 'End of %provider_name% content',
       }}
       fallback={{
         text: "Sorry but we're having trouble displaying this content",
-        linkText: 'View content on %Provider%',
+        linkText: 'View content on %provider_name%',
         linkHref: 'embed-url',
         warningText: 'Warning: BBC is not responsible for third party content',
       }}
