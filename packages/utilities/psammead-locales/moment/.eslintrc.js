@@ -13,5 +13,6 @@ module.exports = {
     'no-block-scoping': 0,
     'no-template-literals': 0,
     'no-nested-ternary':0,
+    'prefer-template': 0,
   },
 };
