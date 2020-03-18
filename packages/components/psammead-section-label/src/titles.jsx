@@ -75,8 +75,7 @@ const Title = styled.span`
   ${({ script }) => script && getDoublePica(script)};
   ${({ service }) => getSansRegular(service)}
   color: ${C_EBON};
-  background-color: ${C_GHOST};
-
+  background-color: ${props => props.backgroundColor};
   ${titleMargins};
 
   ${paddingDir}: ${GEL_SPACING};
@@ -95,6 +94,11 @@ Title.propTypes = {
   id: string.isRequired,
   script: shape(scriptPropType).isRequired,
   service: string.isRequired,
+  backgroundColor: string,
+};
+
+Title.defaultProps = {
+  backgroundColor: C_GHOST,
 };
 
 const IndexLinkCta = styled.span.attrs({
@@ -128,10 +132,17 @@ export const PlainTitle = ({
   labelId,
   script,
   service,
+  backgroundColor,
 }) => (
   <FlexColumn>
     <FlexRow>
-      <Title script={script} dir={dir} id={labelId} service={service}>
+      <Title
+        script={script}
+        dir={dir}
+        id={labelId}
+        service={service}
+        backgroundColor={backgroundColor}
+      >
         {title}
       </Title>
     </FlexRow>
@@ -144,6 +155,11 @@ PlainTitle.propTypes = {
   labelId: string.isRequired,
   script: shape(scriptPropType).isRequired,
   service: string.isRequired,
+  backgroundColor: string,
+};
+
+PlainTitle.defaultProps = {
+  backgroundColor: C_GHOST,
 };
 
 export const LinkTitle = ({
@@ -154,11 +170,18 @@ export const LinkTitle = ({
   linkText,
   script,
   service,
+  backgroundColor,
 }) => (
   <SectionLabelLink href={href} labelId={labelId}>
     <FlexColumn>
       <FlexTextRow>
-        <Title id={labelId} dir={dir} script={script} service={service}>
+        <Title
+          id={labelId}
+          dir={dir}
+          script={script}
+          service={service}
+          backgroundColor={backgroundColor}
+        >
           {title}
         </Title>
         <IndexLinkCta dir={dir} script={script} service={service}>
@@ -177,4 +200,9 @@ LinkTitle.propTypes = {
   linkText: string.isRequired,
   script: shape(scriptPropType).isRequired,
   service: string.isRequired,
+  backgroundColor: string,
+};
+
+LinkTitle.defaultProps = {
+  backgroundColor: C_GHOST,
 };
