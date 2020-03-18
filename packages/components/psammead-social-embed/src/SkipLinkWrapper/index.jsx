@@ -68,7 +68,7 @@ const SkipLinkWrapper = ({
         {detokenise(text, dictionary)}
       </SkipLink>
       {children}
-      <EndText tabIndex="-1" id={endTextId}>
+      <EndText tabIndex="-1" id={detokenise(endTextId, dictionary)}>
         {detokenise(endText, dictionary)}
       </EndText>
     </Wrapper>
