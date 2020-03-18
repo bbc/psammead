@@ -8,7 +8,7 @@ This component is currently tagged as alpha and is not suitable for production u
 
 The `SocialEmbed` component renders a rich social media embed for a number of supported providers or a fallback containing a link to the source content.
 
-Note: This component delcares `@loadable/component` as a peer dependency. It is used to dynamically import `@bbc/psammead-oembed` if and when it's needed.
+Note: This component declares `@loadable/component` as a peer dependency. It is used to dynamically import `@bbc/psammead-oembed` if and when it's needed.
 
 ### Supported providers
 
