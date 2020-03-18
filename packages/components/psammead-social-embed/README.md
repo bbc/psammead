@@ -148,7 +148,8 @@ This component provides a [Skip Link](https://webaim.org/techniques/skipnav/), w
 OEmbed is a dynamic import found within CanonicalSocialEmbed. While it is being loaded, `<p>Loading&hellip;</p>` is rendered. This could be updated to inherit the width and height of the oEmbed content and thus prevent reflows when it is replaced.
 
 ## Miscellaneous
-`SocialEmbed` renders the same result given the same props and is memoized using [React.memo](https://reactjs.org/docs/react-api.html#reactmemo), which helps prevent unnecessary re-renders.
+
+Some components within `SocialEmbed` render the same result given the same props and are memoized using [React.memo](https://reactjs.org/docs/react-api.html#reactmemo) to prevent unnecessary renders.
 
 ## Contributing
 
