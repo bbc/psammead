@@ -319,7 +319,7 @@ exports[`AmpSocialEmbed should render correctly for YouTube 1`] = `
 }
 
 .c2 {
-  background-color: #222222;
+  background-color: #000000;
   margin: 0;
 }
 
@@ -330,6 +330,19 @@ exports[`AmpSocialEmbed should render correctly for YouTube 1`] = `
   font-size: 0.875rem;
   line-height: 1rem;
   color: #FFFFFF;
+  padding: 0.5rem;
+}
+
+.c3 > span {
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  -webkit-clip: rect(1px 1px 1px 1px);
+  clip: rect(1px 1px 1px 1px);
+  -webkit-clip: rect(1px,1px,1px,1px);
+  clip: rect(1px,1px,1px,1px);
+  white-space: nowrap;
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
@@ -945,7 +958,7 @@ exports[`CanonicalSocialEmbed should render correctly for YouTube 1`] = `
 }
 
 .c2 {
-  background-color: #222222;
+  background-color: #000000;
   margin: 0;
 }
 
@@ -956,6 +969,19 @@ exports[`CanonicalSocialEmbed should render correctly for YouTube 1`] = `
   font-size: 0.875rem;
   line-height: 1rem;
   color: #FFFFFF;
+  padding: 0.5rem;
+}
+
+.c4 > span {
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  -webkit-clip: rect(1px 1px 1px 1px);
+  clip: rect(1px 1px 1px 1px);
+  -webkit-clip: rect(1px,1px,1px,1px);
+  clip: rect(1px,1px,1px,1px);
+  white-space: nowrap;
 }
 
 .c3 > div {
