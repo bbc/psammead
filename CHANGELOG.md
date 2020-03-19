@@ -3,7 +3,8 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
-| 2.0.105 | [PR#3270](https://github.com/bbc/psammead/pull/3270) Security patch for `minimist` |
+| 2.0.106 | [PR#3270](https://github.com/bbc/psammead/pull/3270) Security patch for `minimist` |
+| 2.0.105 | [PR#3272](https://github.com/bbc/psammead/pull/3272) Talos - Bump Dependencies - @bbc/psammead-calendars, @bbc/psammead-timestamp-container |
 | 2.0.104 | [PR#3271](https://github.com/bbc/psammead/pull/3271) Talos - Bump Dependencies - @bbc/psammead-locales |
 | 2.0.103 | [PR#3269](https://github.com/bbc/psammead/pull/3269) Talos - Bump Dependencies - @bbc/moment-timezone-include |
 | 2.0.102 | [PR#3261](https://github.com/bbc/psammead/pull/3261) Bumping dependencies |
