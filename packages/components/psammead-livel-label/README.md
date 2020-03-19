@@ -21,8 +21,7 @@ The `LiveLabel` component implements a span for use on live content.
 | dir               | string  | no       | `'ltr'`   | `'rtl'`                 |
 | ariaHidden        | bool    | no       | `false`   | `true`                  |
 | liveText          | string  | no       | `'LIVE'`  | `'Localised Live'`      |
-| withOffScreenText | boolean | no       | `false`   | `true`                  |
-| offScreenText     | string  | no       | `Live`    | `'Watch Live'`          |
+| offScreenText     | string  | no       | `null`    | `'Live'`          |
 | lang              | string  | no       | `'en-GB'` | `'en-GB'`               |
 | children          | node    | no       | `null`    | `<span>Headline</span>` |
 
@@ -37,7 +36,7 @@ import { latin } from '@bbc/gel-foundations/scripts';
 
 <Headline script={latin} service="news">
   <Link href="https://www.bbc.co.uk/news">
-    <LiveLabel service={service} dir={dir} ariaHidden withOffScreenText>
+    <LiveLabel service={service} dir={dir} ariaHidden offScreenText="Live">
       The headline of the live promo
     </LiveLabel>
   </Link>
