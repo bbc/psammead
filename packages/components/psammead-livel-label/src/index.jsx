@@ -23,7 +23,6 @@ const LiveLabel = ({
   dir,
   ariaHidden,
   liveText,
-  withOffScreenText,
   offScreenText,
   lang,
   children,
@@ -33,7 +32,7 @@ const LiveLabel = ({
     <StyledSpan service={service} dir={dir} ariaHidden={ariaHidden}>
       {`${liveText} `}
     </StyledSpan>
-    {withOffScreenText && (
+    {offScreenText && (
       <VisuallyHiddenText lang={lang}>
         {`${offScreenText}, `}
       </VisuallyHiddenText>
@@ -47,7 +46,6 @@ LiveLabel.propTypes = {
   dir: oneOf(['rtl', 'ltr']),
   ariaHidden: bool,
   liveText: string,
-  withOffScreenText: bool,
   offScreenText: string,
   lang: string,
   children: node,
@@ -57,8 +55,7 @@ LiveLabel.defaultProps = {
   dir: 'ltr',
   ariaHidden: false,
   liveText: 'LIVE',
-  withOffScreenText: false,
-  offScreenText: 'Live',
+  offScreenText: null,
   lang: 'en-GB',
   children: null,
 };
