@@ -3,6 +3,8 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 0.1.0-alpha.22 | [PR#3274](https://github.com/bbc/psammead/pull/3274) Talos - Bump Dependencies - @bbc/psammead-timestamp-container |
+| 0.1.0-alpha.21 | [PR#3272](https://github.com/bbc/psammead/pull/3272) Talos - Bump Dependencies - @bbc/psammead-timestamp-container |
 | 0.1.0-alpha.20 | [PR#3242](https://github.com/bbc/psammead/pull/3242) Add padding bottom to program cards  |
 | 0.1.0-alpha.19 | [PR#3197](https://github.com/bbc/psammead/pull/3197) Add data-e2e attribute to program card element to contain the state of the program |
 | 0.1.0-alpha.18 | [PR#3184](https://github.com/bbc/psammead/pull/3184) Change display of program cards in group3 & update stories to include 4 cards |

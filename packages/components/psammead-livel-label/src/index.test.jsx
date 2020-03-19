@@ -6,7 +6,7 @@ import LiveLabel from './index';
 describe('LiveLabel', () => {
   shouldMatchSnapshot(
     'should render correctly with english live text',
-    <LiveLabel service="news" ariaHidden withOffScreenText />,
+    <LiveLabel service="news" ariaHidden offScreenText="Live" />,
   );
 
   shouldMatchSnapshot(
@@ -16,16 +16,11 @@ describe('LiveLabel', () => {
 
   shouldMatchSnapshot(
     'should render correctly with custom offscreen text',
-    <LiveLabel
-      service="news"
-      ariaHidden
-      withOffScreenText
-      offScreenText="Watch Live"
-    />,
+    <LiveLabel service="news" ariaHidden offScreenText="Watch Live" />,
   );
 
   shouldMatchSnapshot(
     'should correctly render for RTL service',
-    <LiveLabel service={arabic} dir="rtl" ariaHidden withOffScreenText />,
+    <LiveLabel service={arabic} dir="rtl" ariaHidden offScreenText="Live" />,
   );
 });
