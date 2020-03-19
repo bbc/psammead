@@ -35,6 +35,7 @@ npm install @bbc/psammead-social-embed --save
 | `oEmbed`   | Object | Yes      | n/a     | See [@bbc/psammead-oembed](https://github.com/bbc/psammead/tree/latest/packages/components/psammead-oembed#oembed). |
 | `fallback` | Object | Yes      | n/a     | See [fallback](#fallback).                                                                                          |
 | `skipLink` | Object | Yes      | n/a     | See [skipLink](#skipLink).                                                                                          |
+| `caption`  | Object | Yes      | n/a     | See [caption](#caption).                                                                                            |
 
 ### AMP
 
@@ -45,6 +46,7 @@ npm install @bbc/psammead-social-embed --save
 | `id`       | String | Yes      | n/a     | `'1237210910835392512'`                          |
 | `fallback` | Object | Yes      | n/a     | See [fallback](#fallback).                       |
 | `skipLink` | Object | Yes      | n/a     | See [skipLink](#skipLink).                       |
+| `caption`  | Object | Yes      | n/a     | See [caption](#caption).                         |
 
 ### `fallback`
 
@@ -64,6 +66,15 @@ Note: For your convenience, instances of `%provider%` and `%provider_name%` in t
 | `text`      | String | Yes      | n/a     | `'Skip %provider_name% content'`   |
 | `endTextId` | String | Yes      | n/a     | `'skip-%provider%-content'`        |
 | `endText`   | String | Yes      | n/a     | `'End of %provider_name% content'` |
+
+### `caption`
+
+| Argument             | Type   | Required | Default | Example                                              |
+| -------------------- | ------ | -------- | ------- | ---------------------------------------------------- |
+| `visuallyHiddenText` | String | Yes      | n/a     | `'Video caption,'`                                   |
+| `text`               | String | Yes      | n/a     | `'Warning: Third party content may contain adverts'` |
+
+Note: `visuallyHiddenText` will come before `text` and have a trailing space added.
 
 See [accessibility notes](#accessibility-notes) for more information.
 

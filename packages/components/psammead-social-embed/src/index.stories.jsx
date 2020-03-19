@@ -14,6 +14,14 @@ storiesOf('Components|SocialEmbed/Canonical', module)
     'Default',
     ({ service }) => {
       const fixture = select('Fixture', fixtures, fixtures.twitter);
+      const caption =
+        fixture.source === 'youtube'
+          ? {
+              visuallyHiddenText: 'Video caption,',
+              text: 'Warning: Third party content may contain adverts',
+            }
+          : null;
+
       return (
         <CanonicalSocialEmbed
           provider={fixture.source}
@@ -31,6 +39,7 @@ storiesOf('Components|SocialEmbed/Canonical', module)
               'Warning: BBC is not responsible for third party content',
           }}
           service={service}
+          caption={caption}
         />
       );
     },
@@ -69,6 +78,14 @@ storiesOf('Components|SocialEmbed/Canonical', module)
     'Empty Embed Response',
     ({ service }) => {
       const fixture = select('Fixture', fixtures, fixtures.twitter);
+      const caption =
+        fixture.source === 'youtube'
+          ? {
+              visuallyHiddenText: 'Video caption,',
+              text: 'Warning: Third party content may contain adverts',
+            }
+          : null;
+
       return (
         <CanonicalSocialEmbed
           provider={fixture.source}
@@ -85,6 +102,7 @@ storiesOf('Components|SocialEmbed/Canonical', module)
               'Warning: BBC is not responsible for third party content',
           }}
           service={service}
+          caption={caption}
         />
       );
     },
@@ -114,6 +132,14 @@ storiesOf('Components|SocialEmbed/AMP', module)
     'Default',
     ({ service }) => {
       const fixture = select('Fixture', fixtures, fixtures.twitter);
+      const caption =
+        fixture.source === 'youtube'
+          ? {
+              visuallyHiddenText: 'Video caption,',
+              text: 'Warning: Third party content may contain adverts',
+            }
+          : null;
+
       return (
         <AmpSocialEmbed
           provider={fixture.source}
@@ -131,6 +157,7 @@ storiesOf('Components|SocialEmbed/AMP', module)
               'Warning: BBC is not responsible for third party content',
           }}
           service={service}
+          caption={caption}
         />
       );
     },

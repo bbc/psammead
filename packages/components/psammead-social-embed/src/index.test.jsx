@@ -6,6 +6,14 @@ import fixtures from './fixtures';
 describe('CanonicalSocialEmbed', () => {
   Object.values(fixtures).forEach(fixture => {
     const { source: provider, embed } = fixture;
+    const caption =
+      provider === 'youtube'
+        ? {
+            visuallyHiddenText: 'Video caption,',
+            text: 'Warning: Third party content may contain adverts',
+          }
+        : null;
+
     shouldMatchSnapshot(
       `should render correctly for ${embed.oembed.provider_name}`,
       <CanonicalSocialEmbed
@@ -24,6 +32,7 @@ describe('CanonicalSocialEmbed', () => {
             'Warning: BBC is not responsible for third party content',
         }}
         service="news"
+        caption={caption}
       />,
     );
   });
@@ -71,6 +80,13 @@ describe('CanonicalSocialEmbed', () => {
 describe('AmpSocialEmbed', () => {
   Object.values(fixtures).forEach(fixture => {
     const { source: provider, id, embed } = fixture;
+    const caption =
+      provider === 'youtube'
+        ? {
+            text: 'Warning: Third party content may contain adverts',
+          }
+        : null;
+
     shouldMatchSnapshot(
       `should render correctly for ${embed.oembed.provider_name}`,
       <AmpSocialEmbed
@@ -89,6 +105,7 @@ describe('AmpSocialEmbed', () => {
             'Warning: BBC is not responsible for third party content',
         }}
         service="news"
+        caption={caption}
       />,
     );
   });

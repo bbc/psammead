@@ -35,3 +35,17 @@ export const dictionaryFactory = ({ provider }) => ({
   '%provider_name%': getProviderName(provider) || provider,
   '%provider%': provider,
 });
+
+/**
+ * We require control over _when_ these styles are applied and
+ * therefore cannot use @bbc/psammead-visually-hidden-text.
+ */
+export const visuallyHiddenStyle = `
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  white-space: nowrap;
+`;

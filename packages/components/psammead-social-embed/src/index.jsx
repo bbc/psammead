@@ -2,6 +2,7 @@ import React from 'react';
 import { shape, string } from 'prop-types';
 
 import SkipLinkWrapper from './SkipLinkWrapper';
+import CaptionWrapper from './CaptionWrapper';
 import Notice from './Notice';
 
 import CanonicalEmbed, { providers } from './Canonical';
@@ -16,12 +17,19 @@ export const CanonicalSocialEmbed = ({
   service,
   skipLink,
   oEmbed,
+  caption,
   fallback,
 }) => {
   const isSupportedProvider = Object.keys(providers).includes(provider);
   return isSupportedProvider && oEmbed ? (
     <SkipLinkWrapper service={service} provider={provider} {...skipLink}>
-      <CanonicalEmbed provider={provider} oEmbed={oEmbed} />
+      {caption && caption.text ? (
+        <CaptionWrapper service={service} {...caption}>
+          <CanonicalEmbed provider={provider} oEmbed={oEmbed} />
+        </CaptionWrapper>
+      ) : (
+        <CanonicalEmbed provider={provider} oEmbed={oEmbed} />
+      )}
     </SkipLinkWrapper>
   ) : (
     <Notice service={service} provider={provider} {...fallback} />
@@ -37,12 +45,19 @@ export const AmpSocialEmbed = ({
   service,
   skipLink,
   id,
+  caption,
   fallback,
 }) => {
   const AmpElement = AmpElements[provider];
   return AmpElement ? (
     <SkipLinkWrapper service={service} provider={provider} {...skipLink}>
-      <AmpElement id={id} />
+      {caption && caption.text ? (
+        <CaptionWrapper service={service} {...caption}>
+          <AmpElement id={id} />
+        </CaptionWrapper>
+      ) : (
+        <AmpElement id={id} />
+      )}
     </SkipLinkWrapper>
   ) : (
     <Notice service={service} provider={provider} {...fallback} />
@@ -57,6 +72,10 @@ const sharedPropTypes = {
     endTextId: string.isRequired,
     endText: string.isRequired,
   }).isRequired,
+  caption: shape({
+    visuallyHiddenText: string,
+    text: string.isRequired,
+  }),
   fallback: shape({
     text: string.isRequired,
     linkText: string.isRequired,

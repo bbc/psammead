@@ -5,22 +5,14 @@ import { C_EBON, C_WHITE } from '@bbc/psammead-styles/colours';
 import { getSansBold } from '@bbc/psammead-styles/font-styles';
 import { GEL_BREVIER } from '@bbc/gel-foundations/typography';
 
-import { detokenise, dictionaryFactory } from '../utilities';
+import {
+  detokenise,
+  dictionaryFactory,
+  visuallyHiddenStyle,
+} from '../utilities';
 
 const BORDER_WEIGHT = '0.125rem';
 const GEL_SPACING_THREE_QRTS = `0.75rem`;
-
-// Note: We require control over _when_ these styles are applied
-// and therefore cannot use @bbc/psammead-visually-hidden-text.
-const visuallyHiddenStyle = `
-  position: absolute !important;
-  height: 1px;
-  width: 1px;
-  overflow: hidden;
-  clip: rect(1px 1px 1px 1px);
-  clip: rect(1px, 1px, 1px, 1px);
-  white-space: nowrap;
-`;
 
 const Wrapper = styled.div`
   position: relative;
