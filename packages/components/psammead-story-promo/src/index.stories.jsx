@@ -87,7 +87,12 @@ const InfoComponent = ({
     >
       <Link href="https://www.bbc.co.uk/news">
         {isLive ? (
-          <LiveLabel service={service} dir={dir} ariaHidden withOffScreenText>
+          <LiveLabel
+            service={service}
+            dir={dir}
+            ariaHidden
+            offScreenText="Live"
+          >
             {headlineText}
           </LiveLabel>
         ) : (

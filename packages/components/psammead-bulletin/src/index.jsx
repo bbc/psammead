@@ -205,7 +205,6 @@ const Bulletin = ({
                 dir={dir}
                 liveText={liveText}
                 ariaHidden
-                withOffScreenText
                 offScreenText={offScreenText}
               >
                 {headlineText}

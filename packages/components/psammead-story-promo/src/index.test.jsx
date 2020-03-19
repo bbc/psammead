@@ -23,7 +23,7 @@ const Info = ({ promoType, isLive, dir, alsoItems, promoHasImage }) => (
     >
       <Link href="https://www.bbc.co.uk/news">
         {isLive ? (
-          <LiveLabel service="news" dir={dir} ariaHidden withOffScreenText>
+          <LiveLabel service="news" dir={dir} ariaHidden offScreenText="Live">
             The live promo headline
           </LiveLabel>
         ) : (
