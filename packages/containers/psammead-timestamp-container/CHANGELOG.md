@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 2.7.9 | [PR#3273](https://github.com/bbc/psammead/pull/3273) Talos - Bump Dependencies - @bbc/psammead-locales |
 | 2.7.8 | [PR#3271](https://github.com/bbc/psammead/pull/3271) Talos - Bump Dependencies - @bbc/psammead-locales |
 | 2.7.7 | [PR#3137](https://github.com/bbc/psammead/pull/3137) Fix P3 a11y bug degrading iOS Voice Over UX |
 | 2.7.6 | [PR#3151](https://github.com/bbc/psammead/pull/3151) Talos - Bump Dependencies - @bbc/psammead-timestamp |
