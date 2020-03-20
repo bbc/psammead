@@ -9,7 +9,7 @@ import CanonicalEmbed, { providers } from './Canonical';
 import AmpElements from './Amp';
 
 /**
- * Returns a Social Embed component for use on Canonical pages.
+ * Returns a social embed or fallback component for use on Canonical pages.
  * @param {Object} props
  */
 export const CanonicalSocialEmbed = ({
@@ -21,23 +21,29 @@ export const CanonicalSocialEmbed = ({
   fallback,
 }) => {
   const isSupportedProvider = Object.keys(providers).includes(provider);
-  return isSupportedProvider && oEmbed ? (
-    <SkipLinkWrapper service={service} provider={provider} {...skipLink}>
-      {caption && caption.text ? (
+  const hasCaption = caption && caption.text;
+
+  if (isSupportedProvider && oEmbed && hasCaption)
+    return (
+      <SkipLinkWrapper service={service} provider={provider} {...skipLink}>
         <CaptionWrapper service={service} {...caption}>
           <CanonicalEmbed provider={provider} oEmbed={oEmbed} />
         </CaptionWrapper>
-      ) : (
+      </SkipLinkWrapper>
+    );
+
+  if (isSupportedProvider && oEmbed)
+    return (
+      <SkipLinkWrapper service={service} provider={provider} {...skipLink}>
         <CanonicalEmbed provider={provider} oEmbed={oEmbed} />
-      )}
-    </SkipLinkWrapper>
-  ) : (
-    <Notice service={service} provider={provider} {...fallback} />
-  );
+      </SkipLinkWrapper>
+    );
+
+  return <Notice service={service} provider={provider} {...fallback} />;
 };
 
 /**
- * Returns a Social Embed component for use on AMP pages.
+ * Returns a social embed or fallback component for use on AMP pages.
  * @param {Object} props
  */
 export const AmpSocialEmbed = ({
@@ -49,19 +55,25 @@ export const AmpSocialEmbed = ({
   fallback,
 }) => {
   const AmpElement = AmpElements[provider];
-  return AmpElement ? (
-    <SkipLinkWrapper service={service} provider={provider} {...skipLink}>
-      {caption && caption.text ? (
+  const hasCaption = caption && caption.text;
+
+  if (AmpElement && hasCaption)
+    return (
+      <SkipLinkWrapper service={service} provider={provider} {...skipLink}>
         <CaptionWrapper service={service} {...caption}>
           <AmpElement id={id} />
         </CaptionWrapper>
-      ) : (
+      </SkipLinkWrapper>
+    );
+
+  if (AmpElement)
+    return (
+      <SkipLinkWrapper service={service} provider={provider} {...skipLink}>
         <AmpElement id={id} />
-      )}
-    </SkipLinkWrapper>
-  ) : (
-    <Notice service={service} provider={provider} {...fallback} />
-  );
+      </SkipLinkWrapper>
+    );
+
+  return <Notice service={service} provider={provider} {...fallback} />;
 };
 
 const sharedPropTypes = {
