@@ -45,6 +45,7 @@ export default ({
     dir,
     service,
     variant: variant || 'default',
+    selectedService,
   };
 
   return (
