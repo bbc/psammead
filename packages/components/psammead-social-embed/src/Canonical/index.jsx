@@ -18,20 +18,17 @@ const StyledOEmbed = styled(OEmbed)`
 `;
 
 /**
- * The following object declares a list of supported Canonical providers and
- * their attributes. They don't all require an external script to be loaded.
+ * The following object declares a list of supported Canonical providers
+ * and their attributes. Not all providers have the same attributes.
  */
 export const providers = {
   instagram: {
     script: 'https://www.instagram.com/embed.js',
-    styles: null,
   },
   twitter: {
     script: 'https://platform.twitter.com/widgets.js',
-    styles: null,
   },
   youtube: {
-    script: null,
     styles: css`
       padding-top: ${LANDSCAPE_RATIO};
       position: relative;
