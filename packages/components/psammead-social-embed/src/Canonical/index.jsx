@@ -13,10 +13,8 @@ const LANDSCAPE_RATIO = '56.25%';
 /**
  * Apply provider-specific styles.
  */
-const Wrapper = styled.div`
-  > div {
-    ${({ styles }) => styles}
-  }
+const StyledOEmbed = styled(OEmbed)`
+  ${({ styles }) => styles}
 `;
 
 /**
@@ -52,14 +50,14 @@ export const providers = {
 };
 
 const CanonicalEmbed = ({ provider, oEmbed }) => (
-  <Wrapper styles={providers[provider].styles}>
+  <>
     {providers[provider].script && (
       <Helmet>
         <script async src={providers[provider].script} />
       </Helmet>
     )}
-    <OEmbed oEmbed={oEmbed} />
-  </Wrapper>
+    <StyledOEmbed styles={providers[provider].styles} oEmbed={oEmbed} />
+  </>
 );
 
 CanonicalEmbed.propTypes = {
