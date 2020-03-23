@@ -81,9 +81,10 @@ export const renderRadioSchedule = ({
   script = latin,
   dir = 'ltr',
   withLongSummary = false,
+  selectedService = 'news',
 }) => (
   <RadioSchedule
-    schedules={getSchedule(service, withLongSummary)}
+    schedules={getSchedule(selectedService, withLongSummary)}
     locale={locale}
     timezone={timezone}
     script={script}
