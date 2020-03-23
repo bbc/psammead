@@ -3,7 +3,7 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { select, boolean, text, withKnobs } from '@storybook/addon-knobs';
 import { withServicesKnob } from '@bbc/psammead-storybook-helpers';
-import { getItem, getItemWrapperArray, getServiceVariant } from './utilities';
+import { getItem, getItemWrapperArray } from './utilities';
 import { MostReadRank, MostReadLink, MostReadList } from './index';
 import notes from '../README.md';
 
@@ -93,11 +93,11 @@ storiesOf('Components|MostRead/Item', module)
   .addDecorator(withServicesKnob())
   .add(
     `default`,
-    ({ dir, script, service, variant }) =>
+    ({ dir, script, selectedService }) =>
       renderLink({
         dir,
         script,
-        service: getServiceVariant({ service, variant }),
+        service: selectedService,
         withTimestamp: boolean('Timestamp', false),
       }),
     {
@@ -110,12 +110,12 @@ storiesOf('Components|MostRead/List', module)
   .add(
     `default`,
     () =>
-      newsServiceDecorator(({ dir, script, service, variant }) =>
+      newsServiceDecorator(({ dir, script, selectedService }) =>
         renderList({
           numberOfItems: 10,
           columnLayout: select('Page Type (columns)', pageTypes, 'multiColumn'),
           withTimestamp: boolean('Timestamp', false),
-          service: getServiceVariant({ service, variant }),
+          service: selectedService,
           dir,
           script,
         }),
