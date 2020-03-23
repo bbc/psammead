@@ -19,6 +19,14 @@ describe('OEmbed', () => {
     );
   });
 
+  shouldMatchSnapshot(
+    `should be styleable`,
+    <OEmbed
+      className="parent-component-applied-class"
+      oEmbed={{ html: '<p>Hello, World.</p>' }}
+    />,
+  );
+
   it('should clean an XSS attack from oEmbed HTML', () => {
     const { container } = render(<OEmbed oEmbed={OEMBED_ATTACK} />);
     expect(container.firstChild.innerHTML).toEqual('<math><mi></mi></math>');

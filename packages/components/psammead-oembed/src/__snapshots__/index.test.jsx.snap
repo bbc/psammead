@@ -1,5 +1,15 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`OEmbed should be styleable 1`] = `
+<div
+  class="parent-component-applied-class"
+>
+  <p>
+    Hello, World.
+  </p>
+</div>
+`;
+
 exports[`OEmbed should render oEmbed HTML from Instagram 1`] = `
 <div>
   <blockquote
