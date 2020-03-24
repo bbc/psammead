@@ -56,7 +56,7 @@ const ScriptLink = ({ children, script, service, href, variant, onClick }) => (
     data-variant={variant}
     onClick={onClick}
   >
-    <span>{children}</span>
+    {children}
   </StyledLink>
 );
 
