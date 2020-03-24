@@ -3,7 +3,6 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
-| 2.0.110 | [PR#3291](https://github.com/bbc/psammead/pull/3291) Bump `@bbc/psammead-storybook-helpers` |
 | 2.0.109 | [PR#3292](https://github.com/bbc/psammead/pull/3292) Talos - Bump Dependencies - @bbc/psammead-navigation, @bbc/psammead-section-label |
 | 2.0.108 | [PR#3217](https://github.com/bbc/psammead/pull/3217) Add @loadable/component to devDependencies for @bbc/psammead-social-embed. |
 | 2.0.107 | [PR#3274](https://github.com/bbc/psammead/pull/3274) Talos - Bump Dependencies - @bbc/psammead-calendars, @bbc/psammead-timestamp-container |
