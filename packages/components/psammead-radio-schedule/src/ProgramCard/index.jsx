@@ -171,9 +171,9 @@ const renderHeaderContent = ({
       {isNext && (
         <>
           <NextLabel service={service} script={script} dir={dir}>
-            {`${nextLabel} `}
+            {nextLabel}
           </NextLabel>
-          <VisuallyHiddenText>,</VisuallyHiddenText>
+          <VisuallyHiddenText>{`, `}</VisuallyHiddenText>
         </>
       )}
       <span>{brandTitle}</span>
