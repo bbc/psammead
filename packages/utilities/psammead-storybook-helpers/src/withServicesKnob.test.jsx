@@ -69,6 +69,7 @@ it('should pass the correct props to the story function', () => {
     dir: 'ltr',
     locale: 'en',
     variant: 'default',
+    selectedService: 'news',
   };
 
   expect(mockStoryFn).toHaveBeenCalledWith(expected);
@@ -90,6 +91,7 @@ it('should pass the correct chosen service props to the story function', () => {
     dir: 'rtl',
     locale: 'ar',
     variant: 'default',
+    selectedService: 'arabic',
   };
 
   expect(mockStoryFn).toHaveBeenCalledWith(expected);
@@ -111,6 +113,7 @@ it('should pass the correct chosen service props to the story function', () => {
     dir: 'ltr',
     locale: 'zh-cn',
     variant: 'simp',
+    selectedService: 'ukchinaSimp',
   };
 
   expect(mockStoryFn).toHaveBeenCalledWith(expected);
