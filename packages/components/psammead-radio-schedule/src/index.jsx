@@ -40,10 +40,11 @@ const renderSchedule = ({
   timezone,
   locale,
   program,
+  nextLabel,
+  liveLabel,
 }) => {
   const {
     state,
-    stateLabel,
     startTime,
     link,
     brandTitle,
@@ -77,7 +78,8 @@ const renderSchedule = ({
         startTime={startTime}
         state={state}
         link={link}
-        stateLabel={stateLabel}
+        nextLabel={nextLabel}
+        liveLabel={liveLabel}
         timezone={timezone}
         locale={locale}
       />
@@ -139,7 +141,6 @@ const RadioSchedule = ({ schedules, dir, ...props }) => (
 
 const programPropTypes = shape({
   state: string.isRequired,
-  stateLabel: string.isRequired,
   startTime: number.isRequired,
   link: string.isRequired,
   brandTitle: string.isRequired,
@@ -154,6 +155,8 @@ const sharedProps = {
   locale: string,
   service: string.isRequired,
   script: shape(scriptPropType).isRequired,
+  nextLabel: string.isRequired,
+  liveLabel: string.isRequired,
   dir: oneOf(['rtl', 'ltr']),
 };
 
