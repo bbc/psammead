@@ -17,6 +17,7 @@ This package provides a collection of common values that are used in storybook b
 - `service`: The name of the chosen service e.g. `arabic`.
 - `variant`: The variant value of a chosen service, e.g `serbianLat` will have variant `lat`. Non variant service will default to `default`.
 - `articlePath`: A path to an article in the relevant service.
+- `selectedService`: The name of the selected service as it appears in the dropdown of available services.
 
 2. Toggles the layout directionality of the chosen service.
 
