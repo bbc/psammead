@@ -1018,12 +1018,12 @@ exports[`RadioSchedule should render ltr radio schedules correctly 1`] = `
               class="c24"
               dir="ltr"
             >
-              NEXT 
+              NEXT
             </span>
             <span
               class="c15"
             >
-              ,
+              , 
             </span>
             <span>
               Could a computer ever create better art than a human?
@@ -2104,12 +2104,12 @@ exports[`RadioSchedule should render rtl radio schedules correctly 1`] = `
               class="c24"
               dir="rtl"
             >
-              مباشر 
+              مباشر
             </span>
             <span
               class="c15"
             >
-              ,
+              , 
             </span>
             <span>
               لماذا يخجل البعض من اسم قريته في مصر؟
