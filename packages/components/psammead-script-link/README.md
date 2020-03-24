@@ -15,11 +15,11 @@ npm install @bbc/psammead-script-link --save
 <!-- prettier-ignore -->
 | Argument  | Type | Required | Default | Example |
 | --------- | ---- | -------- | ------- | ------- |
-| service | string | yes | N/A | `'serbian'` |
-| variant | string | no | `null` | `'lat'` |
-| href | string | yes | N/A | `'https://www.bbc.com/serbian/lat'` |
-| children | node | yes | N/A | `'Lat'` |
 | script | object | yes | N/A | { canon: { groupA: { fontSize: '28', lineHeight: '32',}, groupB: { fontSize: '32', lineHeight: '36', }, groupD: { fontSize: '44', lineHeight: '48', }, }, trafalgar: { groupA: { fontSize: '20', lineHeight: '24', }, groupB: { fontSize: '24', lineHeight: '28', }, groupD: { fontSize: '32', lineHeight: '36', }, }, } |
+| service | string | yes | N/A | `'serbian'` |
+| href | string | yes | N/A | `'https://www.bbc.com/serbian/lat'` |
+| variant | string | no | `null` | `'lat'` |
+| children | node | yes | N/A | `'Lat'` |
 | onClick | func | no | `() => {}` | `() => console.log('set preferred service variant cookie')` |
 
 ## Usage
@@ -27,7 +27,6 @@ npm install @bbc/psammead-script-link --save
 ```jsx
 import ScriptLink from '@bbc/psammead-script-link';
 import { latin } from '@bbc/gel-foundations/scripts';
-import VisuallyHiddenText from '@bbc/psammead-visually-hidden-text';
 
 const WrappingComponent = () => (
   <div>
@@ -36,9 +35,9 @@ const WrappingComponent = () => (
       service="serbian"
       href="https://www.bbc.com/serbian/lat"
       variant="lat"
+      onClick={onClick}
     >
-      <span aria-hidden>Lat</span>
-      <VisuallyHiddenText> Latin </VisuallyHiddenText>
+      Lat
     </ScriptLink>
   </div>
 );
@@ -50,7 +49,7 @@ The `ScriptLink` component is to be used on the `Brand` component.
 
 ### Accessibility notes
 
-When navigating to the `ScriptLink` using a screen reader, it is identified as a link and the text is announced as `Simplified, Traditional, Latin or Cyrillic`.
+When navigating to the `ScriptLink` using a screen reader, it is identified as a link.
 
 ## Contributing
 
