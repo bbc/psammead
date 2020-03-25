@@ -66,6 +66,7 @@ const renderRank = ({
   listIndex,
   numberOfItems,
   columnLayout,
+  small,
 }) => (
   <MostReadRank
     service={service}
@@ -74,6 +75,7 @@ const renderRank = ({
     numberOfItems={numberOfItems}
     dir={dir}
     columnlayout={columnLayout}
+    small={small}
   />
 );
 
@@ -88,6 +90,7 @@ storiesOf('Components|MostRead/Rank', module)
           script,
           listIndex: number('Number (1 - 10)', 5, listIndexRange),
           numberOfItems: 10,
+          small: boolean('Small Text', false),
         }),
       {
         notes,

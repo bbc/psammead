@@ -1,7 +1,7 @@
 import React from 'react';
 import { shape, string, oneOf, number, bool } from 'prop-types';
 import styled from 'styled-components';
-import { getFoolscap, getCanon } from '@bbc/gel-foundations/typography';
+import { getFoolscap, getTrafalgar } from '@bbc/gel-foundations/typography';
 import {
   Burmese,
   Bengali,
@@ -140,7 +140,9 @@ const MultiColumnWrapper = styled(TwoColumnWrapper)`
 
 const StyledSpan = styled.span`
   ${({ service }) => getSerifLight(service)}
-  ${({ script }) => script && getFoolscap(script)}
+  ${({ script, small }) =>
+    script &&
+    (small ? getTrafalgar(script) : getFoolscap(script))}
   position: relative;
   color: ${C_POSTBOX};
   margin: 0; /* Reset */
@@ -148,10 +150,6 @@ const StyledSpan = styled.span`
   /* reduce the letter spacing of Japanese numerals */
   letter-spacing: ${({ service }) =>
     service === 'japanese' && `-${GEL_SPACING_HLF}`};
-
-  @media (min-width: ${GEL_GROUP_2_SCREEN_WIDTH_MIN}) {
-    ${({ script, small }) => script && small && getCanon(script)};
-  }
 `;
 
 const serviceNumerals = service => {
