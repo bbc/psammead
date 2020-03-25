@@ -1800,6 +1800,15 @@ exports[`StoryPromo should render Live promo correctly 1`] = `
   margin: 0;
 }
 
+.c6 {
+  font-family: ReithSans,Helvetica,Arial,sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: #B80000;
+  display: inline-block;
+  margin-right: 0.5rem;
+}
+
 .c1 {
   display: inline-block;
   vertical-align: top;
@@ -1871,15 +1880,6 @@ exports[`StoryPromo should render Live promo correctly 1`] = `
 
 .c5:visited {
   color: #6E6E73;
-}
-
-.c6 {
-  font-family: ReithSans,Helvetica,Arial,sans-serif;
-  font-weight: 700;
-  font-style: normal;
-  color: #B80000;
-  display: inline-block;
-  margin-right: 0.5rem;
 }
 
 @media (min-width:63rem) {
@@ -2004,7 +2004,7 @@ exports[`StoryPromo should render Live promo correctly 1`] = `
             class="c6"
             dir="ltr"
           >
-            LIVE
+            LIVE 
           </span>
           <span
             class="c7"
@@ -2039,6 +2039,15 @@ exports[`StoryPromo should render a RTL Live promo correctly 1`] = `
   position: absolute;
   width: 1px;
   margin: 0;
+}
+
+.c6 {
+  font-family: ReithSans,Helvetica,Arial,sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: #B80000;
+  display: inline-block;
+  margin-left: 0.5rem;
 }
 
 .c1 {
@@ -2112,15 +2121,6 @@ exports[`StoryPromo should render a RTL Live promo correctly 1`] = `
 
 .c5:visited {
   color: #6E6E73;
-}
-
-.c6 {
-  font-family: ReithSans,Helvetica,Arial,sans-serif;
-  font-weight: 700;
-  font-style: normal;
-  color: #B80000;
-  display: inline-block;
-  margin-left: 0.5rem;
 }
 
 @media (min-width:63rem) {
@@ -2245,7 +2245,7 @@ exports[`StoryPromo should render a RTL Live promo correctly 1`] = `
             class="c6"
             dir="rtl"
           >
-            LIVE
+            LIVE 
           </span>
           <span
             class="c7"

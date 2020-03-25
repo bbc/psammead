@@ -30,16 +30,16 @@ const BulletinComponent = ({
 
   return (
     <Bulletin
-      image={hasImage && image}
-      mediaType={mediaType}
-      isLive={isLive}
       script={script}
       service={service}
+      dir={dir}
+      image={hasImage && image}
+      mediaType={mediaType}
       headlineText={text}
       summaryText={text}
       ctaLink={ctaLink}
       ctaText={ctaText}
-      dir={dir}
+      isLive={isLive}
       offScreenText={offScreenText}
     />
   );
@@ -54,9 +54,9 @@ storiesOf('Components|Bulletin', module)
       <BulletinComponent
         script={script}
         service={service}
+        dir={dir}
         mediaType="video"
         hasImage
-        dir={dir}
         text={textSnipet}
       />
     ),
@@ -71,9 +71,9 @@ storiesOf('Components|Bulletin', module)
         <BulletinComponent
           script={script}
           service={service}
+          dir={dir}
           mediaType="audio"
           hasImage={hasImage}
-          dir={dir}
           text={textSnipet}
         />
       );
