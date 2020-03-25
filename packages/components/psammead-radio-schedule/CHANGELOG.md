@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 0.1.0-alpha.25 | [PR#3302](https://github.com/bbc/psammead/pull/3302) Fix radio schedules duration formatting |
 | 0.1.0-alpha.24 | [PR#3291](https://github.com/bbc/psammead/pull/3291) Use withServicesKnob `selectedService` prop |
 | 0.1.0-alpha.23 | [PR#3297](https://github.com/bbc/psammead/pull/3297) Use LiveLabel, and pass in translations for next and live |
 | 0.1.0-alpha.22 | [PR#3274](https://github.com/bbc/psammead/pull/3274) Talos - Bump Dependencies - @bbc/psammead-timestamp-container |
