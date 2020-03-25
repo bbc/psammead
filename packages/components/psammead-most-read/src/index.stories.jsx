@@ -20,6 +20,7 @@ const renderList = ({
   script,
   withTimestamp,
   columnLayout,
+  small,
 }) => (
   <MostReadList
     numberOfItems={numberOfItems}
@@ -33,11 +34,12 @@ const renderList = ({
       dir,
       withTimestamp,
       columnLayout,
+      small,
     }).map(item => item)}
   </MostReadList>
 );
 
-const renderLink = ({ dir, service, script, withTimestamp }) => {
+const renderLink = ({ dir, service, script, withTimestamp, small }) => {
   const item = getItem({ service, withTimestamp });
   return (
     <MostReadLink
@@ -46,6 +48,7 @@ const renderLink = ({ dir, service, script, withTimestamp }) => {
       service={service}
       script={script}
       title={item.title}
+      small={small}
     >
       {item.timestamp}
     </MostReadLink>
@@ -99,6 +102,7 @@ storiesOf('Components|MostRead/Item', module)
         script,
         service: getServiceVariant({ service, variant }),
         withTimestamp: boolean('Timestamp', false),
+        small: boolean('Small Text', false),
       }),
     {
       notes,
@@ -116,6 +120,7 @@ storiesOf('Components|MostRead/List', module)
           columnLayout: select('Page Type (columns)', pageTypes, 'multiColumn'),
           withTimestamp: boolean('Timestamp', false),
           service: getServiceVariant({ service, variant }),
+          small: boolean('Small Text', false),
           dir,
           script,
         }),

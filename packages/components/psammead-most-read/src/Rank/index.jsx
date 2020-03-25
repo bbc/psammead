@@ -1,7 +1,7 @@
 import React from 'react';
-import { shape, string, oneOf, number } from 'prop-types';
+import { shape, string, oneOf, number, bool } from 'prop-types';
 import styled from 'styled-components';
-import { getFoolscap } from '@bbc/gel-foundations/typography';
+import { getFoolscap, getCanon } from '@bbc/gel-foundations/typography';
 import {
   Burmese,
   Bengali,
@@ -140,7 +140,9 @@ const MultiColumnWrapper = styled(TwoColumnWrapper)`
 
 const StyledSpan = styled.span`
   ${({ service }) => getSerifLight(service)}
-  ${({ script }) => script && getFoolscap(script)};
+  ${({ script, small }) =>
+    script &&
+    (small ? getCanon(script) : getFoolscap(script))}
   position: relative;
   color: ${C_POSTBOX};
   margin: 0; /* Reset */
@@ -177,6 +179,7 @@ const MostReadRank = ({
   numberOfItems,
   dir,
   columnLayout,
+  small,
 }) => {
   const numerals = serviceNumerals(service);
   const rank = numerals[listIndex];
@@ -189,7 +192,7 @@ const MostReadRank = ({
       numberOfItems={numberOfItems}
       dir={dir}
     >
-      <StyledSpan service={service} script={script}>
+      <StyledSpan service={service} script={script} small={small}>
         {rank}
       </StyledSpan>
     </RankWrapper>
@@ -203,11 +206,13 @@ MostReadRank.propTypes = {
   numberOfItems: number.isRequired,
   dir: oneOf(['rtl', 'ltr']),
   columnLayout: oneOf(['oneColumn', 'twoColumn', 'multiColumn']),
+  small: bool,
 };
 
 MostReadRank.defaultProps = {
   dir: 'ltr',
   columnLayout: 'multiColumn',
+  small: false,
 };
 
 export default MostReadRank;

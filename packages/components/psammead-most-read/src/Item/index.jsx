@@ -1,5 +1,5 @@
 import React from 'react';
-import { shape, string, oneOf, node } from 'prop-types';
+import { shape, string, oneOf, node, bool } from 'prop-types';
 import styled from 'styled-components';
 import { getPica, getGreatPrimer } from '@bbc/gel-foundations/typography';
 import { C_EBON } from '@bbc/psammead-styles/colours';
@@ -58,7 +58,7 @@ const StyledLink = styled.a`
   }
 
   @media (min-width: ${GEL_GROUP_2_SCREEN_WIDTH_MIN}) {
-    ${({ script }) => script && getGreatPrimer(script)};
+    ${({ script, small }) => script && !small && getGreatPrimer(script)};
   }
 `;
 
@@ -85,10 +85,11 @@ export const MostReadLink = ({
   script,
   title,
   href,
+  small,
   children,
 }) => (
   <StyledItem dir={dir}>
-    <StyledLink href={href} script={script} service={service}>
+    <StyledLink href={href} script={script} service={service} small={small}>
       {title}
     </StyledLink>
     {children && <TimestampWrapper>{children}</TimestampWrapper>}
@@ -101,11 +102,13 @@ MostReadLink.propTypes = {
   script: shape(scriptPropType).isRequired,
   title: string.isRequired,
   href: string.isRequired,
+  small: bool,
   children: node, // this node will be a timestamp container
 };
 
 MostReadLink.defaultProps = {
   dir: 'ltr',
+  small: false,
   children: null,
 };
 
