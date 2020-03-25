@@ -32,7 +32,7 @@ const getSchedule = (service, withLongSummary) => {
       withLongSummary && state === 'live'
         ? `${longText} ${longText}`
         : longText,
-    duration: 'PT45M',
+    duration: 'PT1H',
     durationLabel: programDurationLabel,
   }));
 };

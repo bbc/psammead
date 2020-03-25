@@ -188,6 +188,14 @@ const renderHeaderContent = ({
   return state === 'next' ? content : <Link href={link}>{content}</Link>;
 };
 
+const getDurationFormat = (duration, separator = ':') => {
+  const timeSections = ['mm', 'ss'];
+  if (duration.includes('H')) {
+    timeSections.unshift('h');
+  }
+  return timeSections.join(separator);
+};
+
 const ProgramCard = ({
   dir,
   service,
@@ -243,9 +251,12 @@ const ProgramCard = ({
       </IconWrapper>
       <DurationWrapper dir={dir} dateTime={duration}>
         <VisuallyHiddenText>
-          {` ${durationLabel} ${formatDuration(duration, 'mm,ss')} `}
+          {` ${durationLabel} `}
+          {`${formatDuration(duration, getDurationFormat(duration, ','))} `}
         </VisuallyHiddenText>
-        <DurationTextWrapper>{formatDuration(duration)}</DurationTextWrapper>
+        <DurationTextWrapper>
+          {formatDuration(duration, getDurationFormat(duration))}
+        </DurationTextWrapper>
       </DurationWrapper>
     </ButtonWrapper>
   </CardWrapper>
