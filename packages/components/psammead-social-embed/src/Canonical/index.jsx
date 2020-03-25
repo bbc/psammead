@@ -4,9 +4,12 @@ import { shape, string } from 'prop-types';
 import loadable from '@loadable/component';
 import styled, { css } from 'styled-components';
 
-const OEmbed = loadable(() => import('@bbc/psammead-oembed'), {
-  fallback: <p>Loading&hellip;</p>,
-});
+const OEmbed = loadable(
+  () => import(/* webpackChunkName: 'oembed' */ '@bbc/psammead-oembed'),
+  {
+    fallback: <p>Loading&hellip;</p>,
+  },
+);
 
 const LANDSCAPE_RATIO = '56.25%';
 
