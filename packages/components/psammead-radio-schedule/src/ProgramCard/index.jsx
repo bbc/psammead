@@ -24,6 +24,7 @@ import { Link } from '@bbc/psammead-story-promo';
 import { oneOf, shape, string, number } from 'prop-types';
 import { scriptPropType } from '@bbc/gel-foundations/prop-types';
 import VisuallyHiddenText from '@bbc/psammead-visually-hidden-text';
+import LiveLabel from '@bbc/psammead-live-label';
 import {
   formatUnixTimestamp,
   formatDuration,
@@ -52,10 +53,16 @@ const HeadingWrapper = styled.h3`
 
 const HeadingContentWrapper = styled.span.attrs({ role: 'text' })``;
 
-const LabelWrapper = styled.span`
+const NextLabel = styled.span`
   ${({ service }) => service && getSansBold(service)};
   ${({ script }) => script && getPica(script)};
-  color: ${({ headerLabelColor }) => headerLabelColor};
+  color: ${C_KINGFISHER};
+  display: inline-block;
+
+  ${({ dir }) =>
+    dir === 'rtl'
+      ? `margin-left: ${GEL_SPACING};`
+      : `margin-right: ${GEL_SPACING};`}
 `;
 
 const TitleWrapper = styled.span`
@@ -105,14 +112,12 @@ const DurationTextWrapper = styled.span.attrs({ 'aria-hidden': 'true' })``;
 const programStateConfig = {
   live: {
     backgroundColor: C_POSTBOX,
-    headerLabelColor: C_POSTBOX,
     headerTextColor: C_EBON,
     titleColor: C_SHADOW,
     durationColor: C_WHITE,
   },
   next: {
     backgroundColor: C_WHITE,
-    headerLabelColor: C_KINGFISHER,
     headerTextColor: C_METAL,
     titleColor: C_METAL,
     durationColor: C_KINGFISHER,
@@ -128,7 +133,8 @@ const programStateConfig = {
 const renderHeaderContent = ({
   state,
   link,
-  stateLabel,
+  nextLabel,
+  liveLabel,
   brandTitle,
   episodeTitle,
   service,
@@ -136,12 +142,12 @@ const renderHeaderContent = ({
   startTime,
   timezone,
   locale,
+  dir,
 }) => {
-  const isOnDemand = state === 'onDemand';
   const isLive = state === 'live';
-  const hiddenTextProps = stateLabel === 'Live' ? { lang: 'en-GB' } : {};
+  const isNext = state === 'next';
 
-  const labelWrapperProps = isLive ? { 'aria-hidden': 'true' } : {};
+  const liveLabelIsEnglish = liveLabel === 'LIVE';
 
   const formattedStartTime = formatUnixTimestamp(
     startTime,
@@ -153,26 +159,21 @@ const renderHeaderContent = ({
 
   const content = (
     <HeadingContentWrapper>
-      {!isOnDemand && (
-        <>
-          <LabelWrapper
-            service={service}
-            script={script}
-            {...labelWrapperProps}
-            {...programStateConfig[state]}
-          >
-            {`${stateLabel.toUpperCase()}`}
-          </LabelWrapper>
-          <VisuallyHiddenText {...hiddenTextProps}>
-            {stateLabel === 'Live' && ` ${stateLabel}`}
-            {`,`}
-          </VisuallyHiddenText>
-        </>
+      {isLive && (
+        <LiveLabel
+          service={service}
+          dir={dir}
+          liveText={liveLabel}
+          ariaHidden={liveLabelIsEnglish}
+          offScreenText={liveLabelIsEnglish ? 'Live' : null}
+        />
       )}
-      <span>
-        {!isOnDemand && ` `}
-        {brandTitle}
-      </span>
+      {isNext && (
+        <NextLabel service={service} script={script} dir={dir}>
+          {`${nextLabel} `}
+        </NextLabel>
+      )}
+      {brandTitle}
       <VisuallyHiddenText>, {formattedStartTime}, </VisuallyHiddenText>
       <TitleWrapper
         service={service}
@@ -198,7 +199,8 @@ const ProgramCard = ({
   durationLabel,
   startTime,
   state,
-  stateLabel,
+  nextLabel,
+  liveLabel,
   link,
   timezone,
   locale,
@@ -213,7 +215,8 @@ const ProgramCard = ({
         {renderHeaderContent({
           state,
           link,
-          stateLabel,
+          nextLabel,
+          liveLabel,
           brandTitle,
           episodeTitle,
           service,
@@ -221,6 +224,7 @@ const ProgramCard = ({
           startTime,
           timezone,
           locale,
+          dir,
         })}
       </HeadingWrapper>
       {summary && (
@@ -254,7 +258,8 @@ const programCardPropTypes = {
   episodeTitle: string.isRequired,
   link: string.isRequired,
   state: string.isRequired,
-  stateLabel: string.isRequired,
+  nextLabel: string.isRequired,
+  liveLabel: string.isRequired,
   startTime: number.isRequired,
   timezone: string,
   locale: string,

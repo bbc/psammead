@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 0.1.0-alpha.23 | [PR#3297](https://github.com/bbc/psammead/pull/3297) Use LiveLabel, and pass in translations for next and live |
 | 0.1.0-alpha.22 | [PR#3274](https://github.com/bbc/psammead/pull/3274) Talos - Bump Dependencies - @bbc/psammead-timestamp-container |
 | 0.1.0-alpha.21 | [PR#3272](https://github.com/bbc/psammead/pull/3272) Talos - Bump Dependencies - @bbc/psammead-timestamp-container |
 | 0.1.0-alpha.20 | [PR#3242](https://github.com/bbc/psammead/pull/3242) Add padding bottom to program cards  |

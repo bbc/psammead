@@ -1,6 +1,6 @@
 # ⛔️ This is an alpha component ⛔️
 
-This component is currently tagged as alpha and is not suitable for production use. Following the passing of an accessibility review this component will be marked as ready for production and the alpha tag removed.
+This component is currently tagged as alpha and is not suitable for production use. Following the passing of an accessibility review, this component will be marked as ready for production and the alpha tag removed.
 
 # psammead-radio-schedule - [![Known Vulnerabilities](https://snyk.io/test/github/bbc/psammead/badge.svg?targetFile=packages%2Fcomponents%2Fpsammead-radio-schedule%2Fpackage.json)](https://snyk.io/test/github/bbc/psammead?targetFile=packages%2Fcomponents%2Fpsammead-radio-schedule%2Fpackage.json) [![Dependency Status](https://david-dm.org/bbc/psammead.svg?path=packages/components/psammead-radio-schedule)](https://david-dm.org/bbc/psammead?path=packages/components/psammead-radio-schedule) [![peerDependencies Status](https://david-dm.org/bbc/psammead/peer-status.svg?path=packages/components/psammead-radio-schedule)](https://david-dm.org/bbc/psammead?path=packages/components/psammead-radio-schedule&type=peer) [![Storybook](https://raw.githubusercontent.com/storybooks/brand/master/badge/badge-storybook.svg?sanitize=true)](https://bbc.github.io/psammead/?path=/story/radio-schedule--containing-image) [![GitHub license](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](https://github.com/bbc/psammead/blob/latest/LICENSE) [![npm version](https://img.shields.io/npm/v/@bbc/psammead-radio-schedule.svg)](https://www.npmjs.com/package/@bbc/psammead-radio-schedule) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/bbc/psammead/blob/latest/CONTRIBUTING.md)
 
@@ -32,6 +32,8 @@ npm install @bbc/psammead-radio-schedule --save
 | script | object | yes | N/A | `{ canon: { groupA: { fontSize: '28', lineHeight: '32',}, groupB: { fontSize: '32', lineHeight: '36', }, groupD: { fontSize: '44', lineHeight: '48', }, }, trafalgar: { groupA: { fontSize: '20', lineHeight: '24', }, groupB: { fontSize: '24', lineHeight: '28', }, groupD: { fontSize: '32', lineHeight: '36', }, }, }` |
 | locale | string | no | N/A | `'en-gb'` |
 | timezone | string | no | N/A | `'Europe/London'` |
+| liveLabel | string | yes | N/A | `'LIVE'` |
+| nextLabel | string | yes | N/A | `'NEXT'` |
 | dir | string | no | `"ltr"` | `"rtl"` |
 
 ### Usage
@@ -47,7 +49,6 @@ const schedules = [
   {
     id: 1,
     state: 'live',
-    stateLabel: 'Live',
     startTime: 1566914061212,
     link: 'www.bbc.co.uk',
     brandTitle: 'This is a brand title',
@@ -65,6 +66,8 @@ const schedules = [
   script={latin}
   service="news"
   dir="ltr"
+  liveLabel="LIVE"
+  nextLabel="NEXT"
 />;
 ```
 
@@ -81,7 +84,8 @@ const schedules = [
 | duration | string | yes | N/A | `'PT30M'` |
 | durationLabel | string | yes | N/A | `'duration'` |
 | state | string | yes | N/A | `'live'` |
-| stateLabel | string | yes | N/A | `'مباشر'` |
+| liveLabel | string | yes | N/A | `'LIVE'` |
+| nextLabel | string | yes | N/A | `'NEXT'` |
 | link | string | yes | N/A | `'https://bbc.com/arabic/articles/c1er5mjnznzo'` |
 | startTime | number | yes | N/A | `1566914061212` |
 | service | string | yes | N/A | `'news'` |
@@ -110,7 +114,8 @@ import ProgramCard from '@bbc/psammead-radio-schedule/ProgramCard';
   duration="PT30M"
   durationLabel="duration"
   state="live"
-  stateLabel="Live"
+  liveLabel="LIVE"
+  nextLabel="NEXT"
   link="https://bbc.com/arabic/articles/c1er5mjnznzo"
 />;
 ```

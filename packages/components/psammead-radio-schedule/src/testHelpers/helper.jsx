@@ -24,7 +24,6 @@ const getSchedule = (service, withLongSummary) => {
   return stateTypes.map((state, index) => ({
     id: index,
     state,
-    stateLabel: service === 'arabic' ? 'مباشر' : sentenceCase(state),
     startTime: 1566914061212,
     link: articlePath,
     brandTitle: text,
@@ -40,7 +39,6 @@ const getSchedule = (service, withLongSummary) => {
 
 export const renderProgramCard = ({
   state,
-  stateLabel,
   service = 'news',
   episodeTitle = '29/01/1990',
   duration = 'PT30M',
@@ -52,7 +50,8 @@ export const renderProgramCard = ({
     service
   ];
   const programDurationLabel = dir === 'rtl' ? 'المدة الزمنية' : durationLabel;
-  const programStateLabel = dir === 'rtl' ? 'مباشر' : stateLabel;
+  const nextLabel = dir === 'rtl' ? 'مباشر' : 'NEXT';
+  const liveLabel = dir === 'rtl' ? 'مباشر' : 'LIVE';
 
   return (
     <ProgramCard
@@ -67,7 +66,8 @@ export const renderProgramCard = ({
       state={state}
       link={articlePath}
       durationLabel={programDurationLabel}
-      stateLabel={programStateLabel}
+      nextLabel={nextLabel}
+      liveLabel={liveLabel}
       timezone={timezone}
       locale={locale}
     />
@@ -81,13 +81,20 @@ export const renderRadioSchedule = ({
   script = latin,
   dir = 'ltr',
   withLongSummary = false,
-}) => (
-  <RadioSchedule
-    schedules={getSchedule(service, withLongSummary)}
-    locale={locale}
-    timezone={timezone}
-    script={script}
-    service={service}
-    dir={dir}
-  />
-);
+}) => {
+  const nextLabel = dir === 'rtl' ? 'مباشر' : 'NEXT';
+  const liveLabel = dir === 'rtl' ? 'مباشر' : 'LIVE';
+
+  return (
+    <RadioSchedule
+      schedules={getSchedule(service, withLongSummary)}
+      locale={locale}
+      timezone={timezone}
+      script={script}
+      service={service}
+      nextLabel={nextLabel}
+      liveLabel={liveLabel}
+      dir={dir}
+    />
+  );
+};

@@ -51,6 +51,15 @@ exports[`ProgramCard should render correctly for live 1`] = `
   margin: 0;
 }
 
+.c4 {
+  font-family: ReithSans,Helvetica,Arial,sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: #B80000;
+  display: inline-block;
+  margin-right: 0.5rem;
+}
+
 .c0 {
   padding-top: 0.5rem;
   background-color: #FFFFFF;
@@ -81,15 +90,6 @@ exports[`ProgramCard should render correctly for live 1`] = `
   line-height: 1.25rem;
   color: #222222;
   margin: 0;
-}
-
-.c4 {
-  font-family: ReithSans,Helvetica,Arial,sans-serif;
-  font-weight: 700;
-  font-style: normal;
-  font-size: 0.9375rem;
-  line-height: 1.25rem;
-  color: #B80000;
 }
 
 .c6 {
@@ -147,20 +147,6 @@ exports[`ProgramCard should render correctly for live 1`] = `
 
 @media (min-width:37.5rem) {
   .c2 {
-    font-size: 1rem;
-    line-height: 1.25rem;
-  }
-}
-
-@media (min-width:20rem) and (max-width:37.4375rem) {
-  .c4 {
-    font-size: 1rem;
-    line-height: 1.25rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c4 {
     font-size: 1rem;
     line-height: 1.25rem;
   }
@@ -226,22 +212,23 @@ exports[`ProgramCard should render correctly for live 1`] = `
           role="text"
         >
           <span
-            aria-hidden="true"
-            class="c4"
+            role="text"
           >
-            LIVE
+            <span
+              aria-hidden="true"
+              class="c4"
+              dir="ltr"
+            >
+              LIVE 
+            </span>
+            <span
+              class="c5"
+              lang="en-GB"
+            >
+              Live, 
+            </span>
           </span>
-          <span
-            class="c5"
-            lang="en-GB"
-          >
-             Live
-            ,
-          </span>
-          <span>
-             
-            Could a computer ever create better art than a human?
-          </span>
+          Could a computer ever create better art than a human?
           <span
             class="c5"
           >
@@ -367,6 +354,8 @@ exports[`ProgramCard should render correctly for next 1`] = `
   font-size: 0.9375rem;
   line-height: 1.25rem;
   color: #11708C;
+  display: inline-block;
+  margin-right: 0.5rem;
 }
 
 .c5 {
@@ -500,18 +489,11 @@ exports[`ProgramCard should render correctly for next 1`] = `
       >
         <span
           class="c3"
+          dir="ltr"
         >
-          NEXT
+          NEXT 
         </span>
-        <span
-          class="c4"
-        >
-          ,
-        </span>
-        <span>
-           
-          Could a computer ever create better art than a human?
-        </span>
+        Could a computer ever create better art than a human?
         <span
           class="c4"
         >
@@ -777,9 +759,7 @@ exports[`ProgramCard should render correctly for onDemand 1`] = `
           class=""
           role="text"
         >
-          <span>
-            Could a computer ever create better art than a human?
-          </span>
+          Could a computer ever create better art than a human?
           <span
             class="c4"
           >
@@ -1046,9 +1026,7 @@ exports[`ProgramCard should render correctly in RTL 1`] = `
           class=""
           role="text"
         >
-          <span>
-            لماذا يخجل البعض من اسم قريته في مصر؟
-          </span>
+          لماذا يخجل البعض من اسم قريته في مصر؟
           <span
             class="c4"
           >
@@ -1164,6 +1142,15 @@ exports[`ProgramCard should render correctly without summary 1`] = `
   margin: 0;
 }
 
+.c4 {
+  font-family: ReithSans,Helvetica,Arial,sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: #B80000;
+  display: inline-block;
+  margin-right: 0.5rem;
+}
+
 .c0 {
   padding-top: 0.5rem;
   background-color: #FFFFFF;
@@ -1194,15 +1181,6 @@ exports[`ProgramCard should render correctly without summary 1`] = `
   line-height: 1.25rem;
   color: #222222;
   margin: 0;
-}
-
-.c4 {
-  font-family: ReithSans,Helvetica,Arial,sans-serif;
-  font-weight: 700;
-  font-style: normal;
-  font-size: 0.9375rem;
-  line-height: 1.25rem;
-  color: #B80000;
 }
 
 .c6 {
@@ -1255,20 +1233,6 @@ exports[`ProgramCard should render correctly without summary 1`] = `
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
-  .c4 {
-    font-size: 1rem;
-    line-height: 1.25rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c4 {
-    font-size: 1rem;
-    line-height: 1.25rem;
-  }
-}
-
-@media (min-width:20rem) and (max-width:37.4375rem) {
   .c6 {
     font-size: 1rem;
     line-height: 1.25rem;
@@ -1314,22 +1278,23 @@ exports[`ProgramCard should render correctly without summary 1`] = `
           role="text"
         >
           <span
-            aria-hidden="true"
-            class="c4"
+            role="text"
           >
-            LIVE
+            <span
+              aria-hidden="true"
+              class="c4"
+              dir="ltr"
+            >
+              LIVE 
+            </span>
+            <span
+              class="c5"
+              lang="en-GB"
+            >
+              Live, 
+            </span>
           </span>
-          <span
-            class="c5"
-            lang="en-GB"
-          >
-             Live
-            ,
-          </span>
-          <span>
-             
-            Could a computer ever create better art than a human?
-          </span>
+          Could a computer ever create better art than a human?
           <span
             class="c5"
           >
