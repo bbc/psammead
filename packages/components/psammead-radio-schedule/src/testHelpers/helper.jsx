@@ -81,13 +81,14 @@ export const renderRadioSchedule = ({
   script = latin,
   dir = 'ltr',
   withLongSummary = false,
+  selectedService = 'news',
 }) => {
   const nextLabel = dir === 'rtl' ? 'مباشر' : 'NEXT';
   const liveLabel = dir === 'rtl' ? 'مباشر' : 'LIVE';
 
   return (
     <RadioSchedule
-      schedules={getSchedule(service, withLongSummary)}
+      schedules={getSchedule(selectedService, withLongSummary)}
       locale={locale}
       timezone={timezone}
       script={script}

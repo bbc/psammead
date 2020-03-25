@@ -336,7 +336,7 @@ exports[`Bulletin should render live audio correctly 1`] = `
   height: 0.75rem;
 }
 
-.c6 {
+.c7 {
   -webkit-clip-path: inset(100%);
   clip-path: inset(100%);
   -webkit-clip: rect(1px,1px,1px,1px);
@@ -346,6 +346,15 @@ exports[`Bulletin should render live audio correctly 1`] = `
   position: absolute;
   width: 1px;
   margin: 0;
+}
+
+.c6 {
+  font-family: ReithSans,Helvetica,Arial,sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: #B80000;
+  display: inline-block;
+  margin-right: 0.5rem;
 }
 
 .c5 {
@@ -375,15 +384,6 @@ exports[`Bulletin should render live audio correctly 1`] = `
 
 .c5:visited {
   color: #6E6E73;
-}
-
-.c7 {
-  font-family: ReithSans,Helvetica,Arial,sans-serif;
-  font-weight: 700;
-  font-style: normal;
-  color: #B80000;
-  display: inline-block;
-  margin-right: 0.5rem;
 }
 
 .c1 {
@@ -601,21 +601,19 @@ exports[`Bulletin should render live audio correctly 1`] = `
           role="text"
         >
           <span
-            class="c6"
-            lang="en-GB"
-          >
-            Listen LIVE, 
-          </span>
-          <span
             aria-hidden="true"
-            class="c7"
+            class="c6"
             dir="ltr"
           >
             LIVE 
           </span>
-          <span>
-            This is the headline
+          <span
+            class="c7"
+            lang="en-GB"
+          >
+            Listen LIVE, 
           </span>
+          This is the headline
         </span>
       </a>
     </h3>
@@ -672,7 +670,7 @@ exports[`Bulletin should render live video correctly 1`] = `
   height: 0.75rem;
 }
 
-.c6 {
+.c7 {
   -webkit-clip-path: inset(100%);
   clip-path: inset(100%);
   -webkit-clip: rect(1px,1px,1px,1px);
@@ -682,6 +680,15 @@ exports[`Bulletin should render live video correctly 1`] = `
   position: absolute;
   width: 1px;
   margin: 0;
+}
+
+.c6 {
+  font-family: ReithSans,Helvetica,Arial,sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: #B80000;
+  display: inline-block;
+  margin-right: 0.5rem;
 }
 
 .c5 {
@@ -711,15 +718,6 @@ exports[`Bulletin should render live video correctly 1`] = `
 
 .c5:visited {
   color: #6E6E73;
-}
-
-.c7 {
-  font-family: ReithSans,Helvetica,Arial,sans-serif;
-  font-weight: 700;
-  font-style: normal;
-  color: #B80000;
-  display: inline-block;
-  margin-right: 0.5rem;
 }
 
 .c1 {
@@ -940,21 +938,19 @@ exports[`Bulletin should render live video correctly 1`] = `
           role="text"
         >
           <span
-            class="c6"
-            lang="en-GB"
-          >
-            Watch LIVE, 
-          </span>
-          <span
             aria-hidden="true"
-            class="c7"
+            class="c6"
             dir="ltr"
           >
             LIVE 
           </span>
-          <span>
-            This is the headline
+          <span
+            class="c7"
+            lang="en-GB"
+          >
+            Watch LIVE, 
           </span>
+          This is the headline
         </span>
       </a>
     </h3>

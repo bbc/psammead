@@ -1,15 +1,19 @@
 /* eslint-disable react/prop-types */
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import { select, boolean, text, withKnobs } from '@storybook/addon-knobs';
+import { select, boolean, number, withKnobs } from '@storybook/addon-knobs';
 import { withServicesKnob } from '@bbc/psammead-storybook-helpers';
-import { getItem, getItemWrapperArray, getServiceVariant } from './utilities';
+import { getItem, getItemWrapperArray } from './utilities';
 import { MostReadRank, MostReadLink, MostReadList } from './index';
 import notes from '../README.md';
 
 const newsServiceDecorator = withServicesKnob({
   defaultService: 'news',
 });
+const listIndexRange = {
+  min: 1,
+  max: 10,
+};
 
 const pageTypes = ['oneColumn', 'twoColumn', 'multiColumn'];
 
@@ -82,7 +86,7 @@ storiesOf('Components|MostRead/Rank', module)
           dir,
           service,
           script,
-          listIndex: text('Number (1 - 10)', '5'),
+          listIndex: number('Number (1 - 10)', 5, listIndexRange),
           numberOfItems: 10,
         }),
       {
@@ -96,11 +100,11 @@ storiesOf('Components|MostRead/Item', module)
   .addDecorator(withServicesKnob())
   .add(
     `default`,
-    ({ dir, script, service, variant }) =>
+    ({ dir, script, selectedService }) =>
       renderLink({
         dir,
         script,
-        service: getServiceVariant({ service, variant }),
+        service: selectedService,
         withTimestamp: boolean('Timestamp', false),
         small: boolean('Small Text', false),
       }),
@@ -114,13 +118,13 @@ storiesOf('Components|MostRead/List', module)
   .add(
     `default`,
     () =>
-      newsServiceDecorator(({ dir, script, service, variant }) =>
+      newsServiceDecorator(({ dir, script, selectedService }) =>
         renderList({
           numberOfItems: 10,
           columnLayout: select('Page Type (columns)', pageTypes, 'multiColumn'),
           withTimestamp: boolean('Timestamp', false),
-          service: getServiceVariant({ service, variant }),
           small: boolean('Small Text', false),
+          service: selectedService,
           dir,
           script,
         }),

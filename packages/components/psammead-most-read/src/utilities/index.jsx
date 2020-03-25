@@ -18,16 +18,6 @@ const lastUpdated = ({ script, service }) => (
   </Timestamp>
 );
 
-export const getServiceVariant = ({ service, variant = '' }) => {
-  if (variant !== 'default') {
-    const variantOverride =
-      variant.charAt(0).toUpperCase() + variant.substring(1);
-    return service + variantOverride;
-  }
-
-  return service;
-};
-
 export const getItem = ({ service, withTimestamp = false }) => {
   const baseUrl = 'https://www.bbc.com';
   const { text, articlePath } = TEXT_VARIANTS[service];
