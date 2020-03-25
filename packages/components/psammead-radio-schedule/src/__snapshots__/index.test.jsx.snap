@@ -677,19 +677,20 @@ exports[`RadioSchedule should render ltr radio schedules correctly 1`] = `
         </span>
         <time
           class="c21"
-          datetime="PT45M"
+          datetime="PT1H"
           dir="ltr"
         >
           <span
             class="c15"
           >
-             Duration 45,00 
+             Duration 
+            1,00,00 
           </span>
           <span
             aria-hidden="true"
             class="Duration0 "
           >
-            45:00
+            1:00:00
           </span>
         </time>
       </div>
@@ -804,19 +805,20 @@ exports[`RadioSchedule should render ltr radio schedules correctly 1`] = `
         </span>
         <time
           class="c21"
-          datetime="PT45M"
+          datetime="PT1H"
           dir="ltr"
         >
           <span
             class="c15"
           >
-             Duration 45,00 
+             Duration 
+            1,00,00 
           </span>
           <span
             aria-hidden="true"
             class="Duration0 "
           >
-            45:00
+            1:00:00
           </span>
         </time>
       </div>
@@ -931,19 +933,20 @@ exports[`RadioSchedule should render ltr radio schedules correctly 1`] = `
         </span>
         <time
           class="c21"
-          datetime="PT45M"
+          datetime="PT1H"
           dir="ltr"
         >
           <span
             class="c15"
           >
-             Duration 45,00 
+             Duration 
+            1,00,00 
           </span>
           <span
             aria-hidden="true"
             class="Duration0 "
           >
-            45:00
+            1:00:00
           </span>
         </time>
       </div>
@@ -1059,19 +1062,20 @@ exports[`RadioSchedule should render ltr radio schedules correctly 1`] = `
         </span>
         <time
           class="c21"
-          datetime="PT45M"
+          datetime="PT1H"
           dir="ltr"
         >
           <span
             class="c15"
           >
-             Duration 45,00 
+             Duration 
+            1,00,00 
           </span>
           <span
             aria-hidden="true"
             class="Duration0 "
           >
-            45:00
+            1:00:00
           </span>
         </time>
       </div>
@@ -1750,19 +1754,20 @@ exports[`RadioSchedule should render rtl radio schedules correctly 1`] = `
         </span>
         <time
           class="c21"
-          datetime="PT45M"
+          datetime="PT1H"
           dir="rtl"
         >
           <span
             class="c15"
           >
-             المدة الزمنية 45,00 
+             المدة الزمنية 
+            1,00,00 
           </span>
           <span
             aria-hidden="true"
             class="Duration0 "
           >
-            45:00
+            1:00:00
           </span>
         </time>
       </div>
@@ -1877,19 +1882,20 @@ exports[`RadioSchedule should render rtl radio schedules correctly 1`] = `
         </span>
         <time
           class="c21"
-          datetime="PT45M"
+          datetime="PT1H"
           dir="rtl"
         >
           <span
             class="c15"
           >
-             المدة الزمنية 45,00 
+             المدة الزمنية 
+            1,00,00 
           </span>
           <span
             aria-hidden="true"
             class="Duration0 "
           >
-            45:00
+            1:00:00
           </span>
         </time>
       </div>
@@ -2004,19 +2010,20 @@ exports[`RadioSchedule should render rtl radio schedules correctly 1`] = `
         </span>
         <time
           class="c21"
-          datetime="PT45M"
+          datetime="PT1H"
           dir="rtl"
         >
           <span
             class="c15"
           >
-             المدة الزمنية 45,00 
+             المدة الزمنية 
+            1,00,00 
           </span>
           <span
             aria-hidden="true"
             class="Duration0 "
           >
-            45:00
+            1:00:00
           </span>
         </time>
       </div>
@@ -2132,19 +2139,20 @@ exports[`RadioSchedule should render rtl radio schedules correctly 1`] = `
         </span>
         <time
           class="c21"
-          datetime="PT45M"
+          datetime="PT1H"
           dir="rtl"
         >
           <span
             class="c15"
           >
-             المدة الزمنية 45,00 
+             المدة الزمنية 
+            1,00,00 
           </span>
           <span
             aria-hidden="true"
             class="Duration0 "
           >
-            45:00
+            1:00:00
           </span>
         </time>
       </div>
