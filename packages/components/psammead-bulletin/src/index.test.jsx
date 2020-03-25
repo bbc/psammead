@@ -21,15 +21,15 @@ const BulletinComponent = ({ script, service, isLive, mediaType, ctaText }) => {
   );
   return (
     <Bulletin
-      image={image}
-      mediaType={mediaType}
-      isLive={isLive}
       script={script}
       service={service}
+      image={image}
+      mediaType={mediaType}
       headlineText={headlineText}
       summaryText={summaryText}
       ctaLink={ctaLink}
       ctaText={playCtaText}
+      isLive={isLive}
       offScreenText={offScreenText}
     />
   );
@@ -41,8 +41,8 @@ describe('Bulletin', () => {
     <BulletinComponent
       script={latin}
       service="news"
-      ctaText="Listen"
       mediaType="audio"
+      ctaText="Listen"
     />,
   );
 
@@ -51,8 +51,8 @@ describe('Bulletin', () => {
     <BulletinComponent
       script={latin}
       service="news"
-      ctaText="Watch"
       mediaType="video"
+      ctaText="Watch"
     />,
   );
 
@@ -61,8 +61,8 @@ describe('Bulletin', () => {
     <BulletinComponent
       script={latin}
       service="news"
-      ctaText="Listen"
       mediaType="audio"
+      ctaText="Listen"
       isLive
     />,
   );
@@ -72,8 +72,8 @@ describe('Bulletin', () => {
     <BulletinComponent
       script={latin}
       service="news"
-      ctaText="Watch"
       mediaType="video"
+      ctaText="Watch"
       isLive
     />,
   );

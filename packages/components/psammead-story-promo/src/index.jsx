@@ -22,15 +22,9 @@ import {
   getPica,
   getDoublePica,
 } from '@bbc/gel-foundations/typography';
-import {
-  C_EBON,
-  C_METAL,
-  C_POSTBOX,
-  C_SHADOW,
-} from '@bbc/psammead-styles/colours';
+import { C_EBON, C_METAL, C_SHADOW } from '@bbc/psammead-styles/colours';
 import {
   getSansRegular,
-  getSansBold,
   getSerifMedium,
 } from '@bbc/psammead-styles/font-styles';
 import { scriptPropType } from '@bbc/gel-foundations/prop-types';
@@ -226,29 +220,6 @@ export const Link = styled.a`
     color: ${C_METAL};
   }
 `;
-
-export const LiveLabel = styled.span.attrs(
-  ({ ariaHidden }) => ariaHidden && { 'aria-hidden': 'true' },
-)`
-  ${({ service }) => getSansBold(service)}
-  color: ${C_POSTBOX};
-  display: inline-block;
-  ${({ dir }) =>
-    dir === 'rtl'
-      ? `margin-left: ${GEL_SPACING};`
-      : `margin-right: ${GEL_SPACING};`}
-`;
-
-LiveLabel.propTypes = {
-  service: string.isRequired,
-  dir: oneOf(['rtl', 'ltr']),
-  ariaHidden: bool,
-};
-
-LiveLabel.defaultProps = {
-  dir: 'ltr',
-  ariaHidden: false,
-};
 
 const StoryPromo = ({
   image,
