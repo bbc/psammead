@@ -140,9 +140,7 @@ const MultiColumnWrapper = styled(TwoColumnWrapper)`
 
 const StyledSpan = styled.span`
   ${({ service }) => getSerifLight(service)}
-  ${({ script, small }) =>
-    script &&
-    (small ? getCanon(script) : getFoolscap(script))}
+  ${({ script }) => script && getFoolscap(script)}
   position: relative;
   color: ${C_POSTBOX};
   margin: 0; /* Reset */
@@ -150,6 +148,10 @@ const StyledSpan = styled.span`
   /* reduce the letter spacing of Japanese numerals */
   letter-spacing: ${({ service }) =>
     service === 'japanese' && `-${GEL_SPACING_HLF}`};
+
+  @media (min-width: ${GEL_GROUP_2_SCREEN_WIDTH_MIN}) {
+    ${({ script, small }) => script && small && getCanon(script)};
+  }
 `;
 
 const serviceNumerals = service => {
