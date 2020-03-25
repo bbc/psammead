@@ -21,30 +21,32 @@ const StyledLink = styled.a`
   border: 0.0625rem solid ${C_WHITE};
   margin: ${GEL_SPACING} 0 ${GEL_SPACING} ${GEL_SPACING};
 
-  > span {
-    margin: 0.1875rem;
-    display: inline-block;
-    height: calc(100%);
-    padding: 0 ${GEL_SPACING};
-  }
-
-  &:hover > span,
-  &:focus > span {
-    margin: 0;
-    border: 0.1875rem solid ${C_WHITE};
-  }
-
   @media (min-width: ${GEL_GROUP_2_SCREEN_WIDTH_MIN}) {
     line-height: calc(2.25rem - ${GEL_SPACING});
   }
 
   @media (max-width: ${GEL_GROUP_2_SCREEN_WIDTH_MAX}) {
     height: ${GEL_SPACING_QUIN};
+  }
+`;
 
-    > span {
-      padding: 0 ${GEL_SPACING};
-      line-height: calc(${GEL_SPACING_QUIN} - ${GEL_SPACING});
-    }
+const StyledSpan = styled.span`
+  margin: 0.1875rem;
+  display: inline-block;
+  height: calc(100%);
+  padding: 0 ${GEL_SPACING};
+
+  /* stylelint-disable */
+  /* https://www.styled-components.com/docs/advanced#referring-to-other-components */
+  ${StyledLink}:hover &,
+  ${StyledLink}:focus & {
+    margin: 0;
+    border: 0.1875rem solid ${C_WHITE};
+  }
+  /* stylelint-enable */
+
+  @media (max-width: ${GEL_GROUP_2_SCREEN_WIDTH_MAX}) {  
+    line-height: calc(${GEL_SPACING_QUIN} - ${GEL_SPACING});    
   }
 `;
 
@@ -56,7 +58,7 @@ const ScriptLink = ({ children, script, service, href, variant, onClick }) => (
     data-variant={variant}
     onClick={onClick}
   >
-    {children}
+    <StyledSpan>{children}</StyledSpan>
   </StyledLink>
 );
 
