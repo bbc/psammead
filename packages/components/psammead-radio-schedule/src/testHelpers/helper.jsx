@@ -81,15 +81,20 @@ export const renderRadioSchedule = ({
   script = latin,
   dir = 'ltr',
   withLongSummary = false,
-}) => (
-  <RadioSchedule
-    schedules={getSchedule(service, withLongSummary)}
-    locale={locale}
-    timezone={timezone}
-    script={script}
-    service={service}
-    nextLabel={dir === 'rtl' ? 'مباشر' : 'NEXT'}
-    liveLabel={dir === 'rtl' ? 'مباشر' : 'LIVE'}
-    dir={dir}
-  />
-);
+}) => {
+  const nextLabel = dir === 'rtl' ? 'مباشر' : 'NEXT';
+  const liveLabel = dir === 'rtl' ? 'مباشر' : 'LIVE';
+
+  return (
+    <RadioSchedule
+      schedules={getSchedule(service, withLongSummary)}
+      locale={locale}
+      timezone={timezone}
+      script={script}
+      service={service}
+      nextLabel={nextLabel}
+      liveLabel={liveLabel}
+      dir={dir}
+    />
+  );
+};

@@ -631,9 +631,7 @@ exports[`RadioSchedule should render ltr radio schedules correctly 1`] = `
                   Live, 
                 </span>
               </span>
-              <span>
-                Could a computer ever create better art than a human?
-              </span>
+              Could a computer ever create better art than a human?
               <span
                 class="c15"
               >
@@ -760,9 +758,7 @@ exports[`RadioSchedule should render ltr radio schedules correctly 1`] = `
               class=""
               role="text"
             >
-              <span>
-                Could a computer ever create better art than a human?
-              </span>
+              Could a computer ever create better art than a human?
               <span
                 class="c15"
               >
@@ -889,9 +885,7 @@ exports[`RadioSchedule should render ltr radio schedules correctly 1`] = `
               class=""
               role="text"
             >
-              <span>
-                Could a computer ever create better art than a human?
-              </span>
+              Could a computer ever create better art than a human?
               <span
                 class="c15"
               >
@@ -1018,16 +1012,9 @@ exports[`RadioSchedule should render ltr radio schedules correctly 1`] = `
               class="c24"
               dir="ltr"
             >
-              NEXT
+              NEXT 
             </span>
-            <span
-              class="c15"
-            >
-              , 
-            </span>
-            <span>
-              Could a computer ever create better art than a human?
-            </span>
+            Could a computer ever create better art than a human?
             <span
               class="c15"
             >
@@ -1717,9 +1704,7 @@ exports[`RadioSchedule should render rtl radio schedules correctly 1`] = `
                   مباشر 
                 </span>
               </span>
-              <span>
-                لماذا يخجل البعض من اسم قريته في مصر؟
-              </span>
+              لماذا يخجل البعض من اسم قريته في مصر؟
               <span
                 class="c15"
               >
@@ -1846,9 +1831,7 @@ exports[`RadioSchedule should render rtl radio schedules correctly 1`] = `
               class=""
               role="text"
             >
-              <span>
-                لماذا يخجل البعض من اسم قريته في مصر؟
-              </span>
+              لماذا يخجل البعض من اسم قريته في مصر؟
               <span
                 class="c15"
               >
@@ -1975,9 +1958,7 @@ exports[`RadioSchedule should render rtl radio schedules correctly 1`] = `
               class=""
               role="text"
             >
-              <span>
-                لماذا يخجل البعض من اسم قريته في مصر؟
-              </span>
+              لماذا يخجل البعض من اسم قريته في مصر؟
               <span
                 class="c15"
               >
@@ -2104,16 +2085,9 @@ exports[`RadioSchedule should render rtl radio schedules correctly 1`] = `
               class="c24"
               dir="rtl"
             >
-              مباشر
+              مباشر 
             </span>
-            <span
-              class="c15"
-            >
-              , 
-            </span>
-            <span>
-              لماذا يخجل البعض من اسم قريته في مصر؟
-            </span>
+            لماذا يخجل البعض من اسم قريته في مصر؟
             <span
               class="c15"
             >

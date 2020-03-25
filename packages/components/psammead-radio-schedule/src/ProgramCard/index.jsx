@@ -169,14 +169,11 @@ const renderHeaderContent = ({
         />
       )}
       {isNext && (
-        <>
-          <NextLabel service={service} script={script} dir={dir}>
-            {nextLabel}
-          </NextLabel>
-          <VisuallyHiddenText>{`, `}</VisuallyHiddenText>
-        </>
+        <NextLabel service={service} script={script} dir={dir}>
+          {`${nextLabel} `}
+        </NextLabel>
       )}
-      <span>{brandTitle}</span>
+      {brandTitle}
       <VisuallyHiddenText>, {formattedStartTime}, </VisuallyHiddenText>
       <TitleWrapper
         service={service}
