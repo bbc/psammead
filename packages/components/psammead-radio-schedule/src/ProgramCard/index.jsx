@@ -16,7 +16,7 @@ import {
   getSerifMedium,
 } from '@bbc/psammead-styles/font-styles';
 import {
-  getLongPrimer,
+  getBrevier,
   getMinion,
   getPica,
 } from '@bbc/gel-foundations/typography';
@@ -75,7 +75,7 @@ const TitleWrapper = styled.span`
 
 const SummaryWrapper = styled.p`
   ${({ service }) => service && getSansRegular(service)};
-  ${({ script }) => script && getLongPrimer(script)};
+  ${({ script }) => script && getBrevier(script)};
   color: ${C_METAL};
   padding-bottom: ${GEL_SPACING_DBL};
   margin: 0; /* Reset */
