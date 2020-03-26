@@ -164,7 +164,6 @@ exports[`RadioSchedule should render ltr radio schedules correctly 1`] = `
   padding: 0.5rem;
   background-color: #B80000;
   color: #FFFFFF;
-  border-top: 1px solid transparent;
 }
 
 .c22 {
@@ -176,7 +175,6 @@ exports[`RadioSchedule should render ltr radio schedules correctly 1`] = `
   padding: 0.5rem;
   background-color: #222222;
   color: #FFFFFF;
-  border-top: 1px solid transparent;
 }
 
 .c26 {
@@ -188,14 +186,13 @@ exports[`RadioSchedule should render ltr radio schedules correctly 1`] = `
   padding: 0.5rem;
   background-color: #FFFFFF;
   color: #11708C;
-  border-top: 1px solid transparent;
 }
 
 .c19 > svg {
   color: #FFFFFF;
   fill: currentColor;
   width: 1.0625rem;
-  height: 1rem;
+  height: 0.75rem;
   margin: 0;
 }
 
@@ -203,7 +200,7 @@ exports[`RadioSchedule should render ltr radio schedules correctly 1`] = `
   color: #11708C;
   fill: currentColor;
   width: 1.0625rem;
-  height: 1rem;
+  height: 0.75rem;
   margin: 0;
 }
 
@@ -1248,7 +1245,6 @@ exports[`RadioSchedule should render rtl radio schedules correctly 1`] = `
   padding: 0.5rem;
   background-color: #B80000;
   color: #FFFFFF;
-  border-top: 1px solid transparent;
 }
 
 .c22 {
@@ -1260,7 +1256,6 @@ exports[`RadioSchedule should render rtl radio schedules correctly 1`] = `
   padding: 0.5rem;
   background-color: #222222;
   color: #FFFFFF;
-  border-top: 1px solid transparent;
 }
 
 .c26 {
@@ -1272,14 +1267,13 @@ exports[`RadioSchedule should render rtl radio schedules correctly 1`] = `
   padding: 0.5rem;
   background-color: #FFFFFF;
   color: #11708C;
-  border-top: 1px solid transparent;
 }
 
 .c19 > svg {
   color: #FFFFFF;
   fill: currentColor;
   width: 1.0625rem;
-  height: 1rem;
+  height: 0.75rem;
   margin: 0;
 }
 
@@ -1287,7 +1281,7 @@ exports[`RadioSchedule should render rtl radio schedules correctly 1`] = `
   color: #11708C;
   fill: currentColor;
   width: 1.0625rem;
-  height: 1rem;
+  height: 0.75rem;
   margin: 0;
 }
 

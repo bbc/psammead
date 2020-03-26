@@ -123,14 +123,13 @@ exports[`ProgramCard should render correctly for live 1`] = `
   padding: 0.5rem;
   background-color: #B80000;
   color: #FFFFFF;
-  border-top: 1px solid transparent;
 }
 
 .c9 > svg {
   color: #FFFFFF;
   fill: currentColor;
   width: 1.0625rem;
-  height: 1rem;
+  height: 0.75rem;
   margin: 0;
 }
 
@@ -390,14 +389,13 @@ exports[`ProgramCard should render correctly for next 1`] = `
   padding: 0.5rem;
   background-color: #FFFFFF;
   color: #11708C;
-  border-top: 1px solid transparent;
 }
 
 .c8 > svg {
   color: #11708C;
   fill: currentColor;
   width: 1.0625rem;
-  height: 1rem;
+  height: 0.75rem;
   margin: 0;
 }
 
@@ -673,14 +671,13 @@ exports[`ProgramCard should render correctly for onDemand 1`] = `
   padding: 0.5rem;
   background-color: #222222;
   color: #FFFFFF;
-  border-top: 1px solid transparent;
 }
 
 .c8 > svg {
   color: #FFFFFF;
   fill: currentColor;
   width: 1.0625rem;
-  height: 1rem;
+  height: 0.75rem;
   margin: 0;
 }
 
@@ -941,14 +938,13 @@ exports[`ProgramCard should render correctly in RTL 1`] = `
   padding: 0.5rem;
   background-color: #222222;
   color: #FFFFFF;
-  border-top: 1px solid transparent;
 }
 
 .c8 > svg {
   color: #FFFFFF;
   fill: currentColor;
   width: 1.0625rem;
-  height: 1rem;
+  height: 0.75rem;
   margin: 0;
 }
 
@@ -1207,14 +1203,13 @@ exports[`ProgramCard should render correctly without summary 1`] = `
   padding: 0.5rem;
   background-color: #B80000;
   color: #FFFFFF;
-  border-top: 1px solid transparent;
 }
 
 .c8 > svg {
   color: #FFFFFF;
   fill: currentColor;
   width: 1.0625rem;
-  height: 1rem;
+  height: 0.75rem;
   margin: 0;
 }
 

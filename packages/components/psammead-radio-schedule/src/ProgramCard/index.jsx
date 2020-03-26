@@ -87,7 +87,6 @@ const ButtonWrapper = styled.div`
   padding: ${GEL_SPACING};
   background-color: ${({ backgroundColor }) => backgroundColor};
   color: ${({ durationColor }) => durationColor};
-  border-top: 1px solid transparent;
 `;
 
 const IconWrapper = styled.span`
@@ -95,7 +94,7 @@ const IconWrapper = styled.span`
     color: ${({ durationColor }) => durationColor};
     fill: currentColor;
     width: 1.0625rem;
-    height: ${GEL_SPACING_DBL};
+    height: 0.75rem;
     margin: 0;
   }
 `;
