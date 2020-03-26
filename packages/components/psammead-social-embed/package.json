@@ -1,0 +1,34 @@
+{
+  "name": "@bbc/psammead-social-embed",
+  "version": "0.1.0-alpha.2",
+  "publishConfig": {
+    "tag": "alpha"
+  },
+  "main": "dist/index.js",
+  "module": "esm/index.js",
+  "sideEffects": false,
+  "description": "A component that renders a rich social media embed or a fallback.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/BBC-News/psammead/tree/latest/packages/components/psammead-social-embed"
+  },
+  "author": {
+    "name": "Psammead Maintainers",
+    "email": "PsammeadMaintainers@bbc.co.uk"
+  },
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/bbc/psammead/issues"
+  },
+  "homepage": "https://github.com/BBC-News/psammead/blob/latest/packages/components/psammead-social-embed/README.md",
+  "dependencies": {
+    "@bbc/gel-foundations": "^4.0.1",
+    "@bbc/psammead-oembed": "0.1.0-alpha.2",
+    "@bbc/psammead-styles": "^4.3.0"
+  },
+  "peerDependencies": {
+    "react": "^16.12.0",
+    "styled-components": "^4.4.1",
+    "@loadable/component": "^5.12.0"
+  }
+}

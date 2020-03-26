@@ -1,7 +1,3 @@
-# ⛔️ This is an alpha component ⛔️
-
-This component is currently tagged as alpha and is not suitable for production use. Following the passing of an accessibility review this component will be marked as ready for production and the alpha tag removed.
-
 # psammead-live-label - [![Known Vulnerabilities](https://snyk.io/test/github/bbc/psammead/badge.svg?targetFile=packages%2Fcomponents%2Fpsammead-live-label%2Fpackage.json)](https://snyk.io/test/github/bbc/psammead?targetFile=packages%2Fcomponents%2Fpsammead-live-label%2Fpackage.json) [![Dependency Status](https://david-dm.org/bbc/psammead.svg?path=packages/components/psammead-live-label)](https://david-dm.org/bbc/psammead?path=packages/components/psammead-live-label) [![peerDependencies Status](https://david-dm.org/bbc/psammead/peer-status.svg?path=packages/components/psammead-live-label)](https://david-dm.org/bbc/psammead?path=packages/components/psammead-live-label&type=peer) [![Storybook](https://raw.githubusercontent.com/storybooks/brand/master/badge/badge-storybook.svg?sanitize=true)](https://bbc.github.io/psammead/?path=/story/live-label--containing-image) [![GitHub license](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](https://github.com/bbc/psammead/blob/latest/LICENSE) [![npm version](https://img.shields.io/npm/v/@bbc/psammead-live-label.svg)](https://www.npmjs.com/package/@bbc/psammead-live-label) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/bbc/psammead/blob/latest/CONTRIBUTING.md)
 
 ## Description
@@ -21,8 +17,7 @@ The `LiveLabel` component implements a span for use on live content.
 | dir               | string  | no       | `'ltr'`   | `'rtl'`                 |
 | ariaHidden        | bool    | no       | `false`   | `true`                  |
 | liveText          | string  | no       | `'LIVE'`  | `'Localised Live'`      |
-| withOffScreenText | boolean | no       | `false`   | `true`                  |
-| offScreenText     | string  | no       | `Live`    | `'Watch Live'`          |
+| offScreenText     | string  | no       | `null`    | `'Live'`          |
 | lang              | string  | no       | `'en-GB'` | `'en-GB'`               |
 | children          | node    | no       | `null`    | `<span>Headline</span>` |
 
@@ -37,7 +32,7 @@ import { latin } from '@bbc/gel-foundations/scripts';
 
 <Headline script={latin} service="news">
   <Link href="https://www.bbc.co.uk/news">
-    <LiveLabel service={service} dir={dir} ariaHidden withOffScreenText>
+    <LiveLabel service={service} dir={dir} ariaHidden offScreenText="Live">
       The headline of the live promo
     </LiveLabel>
   </Link>

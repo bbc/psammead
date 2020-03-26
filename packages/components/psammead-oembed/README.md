@@ -16,36 +16,38 @@ npm install @bbc/psammead-oembed --save
 
 ## Props
 
-| Argument  | Type   | Required | Default | Example    |
-| --------- | ------ | -------- | ------- | ---------- |
-| `oEmbed`  | Object | Yes      | n/a     | See below. |
+| Argument    | Type   | Required | Default | Example                |
+| ----------- | ------ | -------- | ------- | ---------------------- |
+| `oEmbed`    | Object | Yes      | n/a     | See below.             |
+| `className` | String | No       | `null`  | `parent-applied-class` |
 
 ### oEmbed
 
-| Argument  | Type   | Required | Default | Example                |
-| --------- | ------ | -------- | ------- | ---------------------- |
-| `html`    | String | Yes      | n/a     | `<p>Hello, World!</p>` |
+| Argument | Type   | Required | Default | Example                |
+| -------- | ------ | -------- | ------- | ---------------------- |
+| `html`   | String | Yes      | n/a     | `<p>Hello, World!</p>` |
 
 ## Usage
 
 ```jsx
-import OEmbed from "@bbc/psammead-oembed"
+import OEmbed from '@bbc/psammead-oembed';
 
 const oEmbedResponse = {
-  "url": "https://twitter.com/SonyPictures/status/1164036827667238912",
-  "author_name": "Sony Pictures",
-  "author_url": "https://twitter.com/SonyPictures",
-  "html": "<blockquote class=\"twitter-tweet\"><p lang=\"en\" dir=\"ltr\">Much of today’s news about Spider-Man has mischaracterized recent discussions about Kevin Feige’s involvement in the franchise. We are disappointed, but respect Disney’s decision not to have him continue as a lead producer of our next live action Spider-Man film. (1/3)</p>&mdash; Sony Pictures (@SonyPictures) <a href=\"https://twitter.com/SonyPictures/status/1164036827667238912?ref_src=twsrc%5Etfw\">August 21, 2019</a></blockquote>",
-  "width": 550,
-  "height": null,
-  "type": "rich",
-  "cache_age": "3153600000",
-  "provider_name": "Twitter",
-  "provider_url": "https://twitter.com",
-  "version": "1.0"
+  url: 'https://twitter.com/SonyPictures/status/1164036827667238912',
+  author_name: 'Sony Pictures',
+  author_url: 'https://twitter.com/SonyPictures',
+  html:
+    '<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Much of today’s news about Spider-Man has mischaracterized recent discussions about Kevin Feige’s involvement in the franchise. We are disappointed, but respect Disney’s decision not to have him continue as a lead producer of our next live action Spider-Man film. (1/3)</p>&mdash; Sony Pictures (@SonyPictures) <a href="https://twitter.com/SonyPictures/status/1164036827667238912?ref_src=twsrc%5Etfw">August 21, 2019</a></blockquote>',
+  width: 550,
+  height: null,
+  type: 'rich',
+  cache_age: '3153600000',
+  provider_name: 'Twitter',
+  provider_url: 'https://twitter.com',
+  version: '1.0',
 };
 
-<OEmbed oEmbed={oEmbedResponse} />
+<OEmbed oEmbed={oEmbedResponse} />;
 ```
 
 ### When to use this component

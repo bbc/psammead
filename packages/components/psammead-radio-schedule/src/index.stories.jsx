@@ -8,7 +8,6 @@ import {
 import {
   renderProgramCard,
   renderRadioSchedule,
-  sentenceCase,
   uniqueStates,
 } from './testHelpers/helper';
 import notes from '../README.md';
@@ -44,7 +43,10 @@ uniqueStates.forEach(state => {
   programCardStories.add(
     `${state}`,
     ({ service }) =>
-      renderProgramCard({ service, state, stateLabel: sentenceCase(state) }),
+      renderProgramCard({
+        service,
+        state,
+      }),
     { notes },
   );
 });
@@ -54,7 +56,6 @@ programCardStories.add(
   ({ service }) =>
     renderProgramCard({
       state: 'live',
-      stateLabel: 'Live',
       service,
       episodeTitle: 'This is a long episode title that spans multiple lines',
     }),

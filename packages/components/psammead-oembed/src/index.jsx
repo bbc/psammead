@@ -6,18 +6,28 @@ const DOMPURIFY_CONFIG = {
   ADD_TAGS: ['iframe'],
 };
 
-const OEmbed = ({ oEmbed }) => {
+const OEmbed = ({ oEmbed, className }) => {
   const { html } = oEmbed;
   const sanitizedHtml = DOMPurify.sanitize(html, DOMPURIFY_CONFIG);
 
-  // eslint-disable-next-line react/no-danger
-  return <div dangerouslySetInnerHTML={{ __html: sanitizedHtml }} />;
+  return (
+    <div
+      className={className}
+      // eslint-disable-next-line react/no-danger
+      dangerouslySetInnerHTML={{ __html: sanitizedHtml }}
+    />
+  );
+};
+
+OEmbed.defaultProps = {
+  className: null,
 };
 
 OEmbed.propTypes = {
   oEmbed: shape({
     html: string.isRequired,
   }).isRequired,
+  className: string,
 };
 
 export default OEmbed;

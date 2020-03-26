@@ -3,7 +3,13 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
-| 2.0.106 | [PR#3270](https://github.com/bbc/psammead/pull/3270) Security patch for `minimist` |
+| 2.0.112 | [PR#3270](https://github.com/bbc/psammead/pull/3270) Security patch for `minimist` |
+| 2.0.111 | [PR#3291](https://github.com/bbc/psammead/pull/3291) Bump `@psammead-storybook-helpers` |
+| 2.0.110 | [PR#3264](https://github.com/bbc/psammead/pull/3264) Add @bbc/psammead-live-label to dependencies |
+| 2.0.109 | [PR#3292](https://github.com/bbc/psammead/pull/3292) Talos - Bump Dependencies - @bbc/psammead-navigation, @bbc/psammead-section-label |
+| 2.0.108 | [PR#3217](https://github.com/bbc/psammead/pull/3217) Add @loadable/component to devDependencies for @bbc/psammead-social-embed. |
+| 2.0.107 | [PR#3274](https://github.com/bbc/psammead/pull/3274) Talos - Bump Dependencies - @bbc/psammead-calendars, @bbc/psammead-timestamp-container |
+| 2.0.106 | [PR#3273](https://github.com/bbc/psammead/pull/3273) Talos - Bump Dependencies - @bbc/psammead-locales |
 | 2.0.105 | [PR#3272](https://github.com/bbc/psammead/pull/3272) Talos - Bump Dependencies - @bbc/psammead-calendars, @bbc/psammead-timestamp-container |
 | 2.0.104 | [PR#3271](https://github.com/bbc/psammead/pull/3271) Talos - Bump Dependencies - @bbc/psammead-locales |
 | 2.0.103 | [PR#3269](https://github.com/bbc/psammead/pull/3269) Talos - Bump Dependencies - @bbc/moment-timezone-include |

@@ -14,6 +14,7 @@ describe('RadioSchedule', () => {
       script: arabic,
       dir: 'rtl',
       locale: 'fa',
+      selectedService: 'arabic',
     }),
   );
 });

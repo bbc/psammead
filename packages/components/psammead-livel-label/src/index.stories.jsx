@@ -17,7 +17,7 @@ storiesOf('Components/LiveLabel', module)
   .add(
     'with english live text',
     ({ service, dir }) => (
-      <LiveLabel service={service} dir={dir} ariaHidden withOffScreenText />
+      <LiveLabel service={service} dir={dir} ariaHidden offScreenText="Live" />
     ),
     {
       notes,
@@ -39,7 +39,6 @@ storiesOf('Components/LiveLabel', module)
         service={service}
         dir={dir}
         ariaHidden
-        withOffScreenText
         offScreenText="Watch Live"
       />
     ),
@@ -53,7 +52,12 @@ storiesOf('Components/LiveLabel', module)
       <Wrapper>
         <Headline script={script} service={service}>
           <Link href="https://www.bbc.co.uk/news">
-            <LiveLabel service={service} dir={dir} ariaHidden withOffScreenText>
+            <LiveLabel
+              service={service}
+              dir={dir}
+              ariaHidden
+              offScreenText="Live"
+            >
               {headline}
             </LiveLabel>
           </Link>
