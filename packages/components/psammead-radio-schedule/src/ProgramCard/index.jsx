@@ -37,6 +37,7 @@ const CardWrapper = styled.div`
   flex-direction: column;
   border: 0.0625rem solid transparent;
   height: 100%;
+  outline: 1px solid transparent; /* Needed by IE11 */
 `;
 
 const TextWrapper = styled.div`
