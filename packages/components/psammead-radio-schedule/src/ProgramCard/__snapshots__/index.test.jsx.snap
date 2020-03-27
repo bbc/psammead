@@ -72,6 +72,7 @@ exports[`ProgramCard should render correctly for live 1`] = `
   flex-direction: column;
   border: 0.0625rem solid transparent;
   height: 100%;
+  outline: 1px solid transparent;
 }
 
 .c1 {
@@ -328,6 +329,7 @@ exports[`ProgramCard should render correctly for next 1`] = `
   flex-direction: column;
   border: 0.0625rem solid transparent;
   height: 100%;
+  outline: 1px solid transparent;
 }
 
 .c1 {
@@ -622,6 +624,7 @@ exports[`ProgramCard should render correctly for onDemand 1`] = `
   flex-direction: column;
   border: 0.0625rem solid transparent;
   height: 100%;
+  outline: 1px solid transparent;
 }
 
 .c1 {
@@ -890,6 +893,7 @@ exports[`ProgramCard should render correctly in RTL 1`] = `
   flex-direction: column;
   border: 0.0625rem solid transparent;
   height: 100%;
+  outline: 1px solid transparent;
 }
 
 .c1 {
@@ -1167,6 +1171,7 @@ exports[`ProgramCard should render correctly without summary 1`] = `
   flex-direction: column;
   border: 0.0625rem solid transparent;
   height: 100%;
+  outline: 1px solid transparent;
 }
 
 .c1 {
