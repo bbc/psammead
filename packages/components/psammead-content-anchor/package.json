@@ -1,6 +1,6 @@
 {
   "name": "@bbc/psammead-content-anchor",
-  "version": "1.0.0-alpha.3",
+  "version": "1.0.0-alpha.4",
   "main": "dist/index.js",
   "module": "esm/index.js",
   "sideEffects": false,

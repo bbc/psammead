@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 8.2.7 | [PR#3270](https://github.com/bbc/psammead/pull/3270) Security fixes |
 | 8.2.6 | [PR#3279](https://github.com/bbc/psammead/pull/3279) Add `selectedService` to withServicesKnob `storyProps` |
 | 8.2.5 | [PR#3135](https://github.com/bbc/psammead/pull/3135) Talos - Bump Dependencies - @bbc/gel-foundations |
 | 8.2.4 | [PR#3129](https://github.com/bbc/psammead/pull/3129) Talos - Bump Dependencies - @bbc/gel-foundations |
