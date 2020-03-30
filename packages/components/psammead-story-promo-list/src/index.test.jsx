@@ -27,4 +27,13 @@ describe('StoryPromo list', () => {
       </StoryPromoLi>
     </StoryPromoUl>,
   );
+
+  shouldMatchSnapshot(
+    'should render correctly without border',
+    <StoryPromoUl>
+      <StoryPromoLi border={false}>
+        <StoryPromo image={Image} info={Info} />
+      </StoryPromoLi>
+    </StoryPromoUl>,
+  );
 });
