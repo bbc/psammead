@@ -48,7 +48,7 @@ const SkipLinkWrapper = ({
   endTextId,
   text,
   children,
-  endText,
+  endTextVisuallyHidden,
 }) => {
   const dictionary = dictionaryFactory({ provider });
   return (
@@ -61,7 +61,7 @@ const SkipLinkWrapper = ({
       </SkipLink>
       {children}
       <EndText tabIndex="-1" id={detokenise(endTextId, dictionary)}>
-        {detokenise(endText, dictionary)}
+        {detokenise(endTextVisuallyHidden, dictionary)}
       </EndText>
     </Wrapper>
   );
@@ -73,7 +73,7 @@ SkipLinkWrapper.propTypes = {
   endTextId: string.isRequired,
   children: node.isRequired,
   text: string.isRequired,
-  endText: string.isRequired,
+  endTextVisuallyHidden: string.isRequired,
 };
 
 export default SkipLinkWrapper;
