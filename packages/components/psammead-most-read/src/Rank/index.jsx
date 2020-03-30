@@ -25,10 +25,13 @@ import { grid } from '@bbc/psammead-styles/detection';
 import { getSerifLight } from '@bbc/psammead-styles/font-styles';
 import {
   doubleDigitDefault,
-  doubleDigitThin,
+  doubleDigitMedium,
+  doubleDigitSmall,
   singleDigitDefault,
-  singleDigitThin,
-  thinFontServices,
+  singleDigitMedium,
+  singleDigitSmall,
+  mediumFontServices,
+  smallFontServices,
 } from '../utilities/rankMinWidth';
 
 // For additional spacing for numerals in the right column because of '10' being double digits
@@ -43,25 +46,31 @@ const columnIncludesDoubleDigits = (props, supportsGrid) =>
   listHasDoubleDigits(props.numberOfItems);
 
 // Returns a min width for the rank wrapper depending on if the list contains 10 items
-// and if the numeral is considered thin.
+// and if the numeral is considered medium/small.
 const getRankMinWidth = ({ service, numberOfItems }) => {
   const singleDigitMinWidth = {
     default: singleDigitDefault,
-    thin: singleDigitThin,
+    medium: singleDigitMedium,
+    small: singleDigitSmall,
   };
 
   const doubleDigitMinWidth = {
     default: doubleDigitDefault,
-    thin: doubleDigitThin,
+    medium: doubleDigitMedium,
+    small: doubleDigitSmall,
   };
 
   const rankMinWidth = listHasDoubleDigits(numberOfItems)
     ? doubleDigitMinWidth
     : singleDigitMinWidth;
 
-  return thinFontServices.includes(service)
-    ? rankMinWidth.thin
-    : rankMinWidth.default;
+  if (mediumFontServices.includes(service)) {
+    return rankMinWidth.medium;
+  }
+  if (smallFontServices.includes(service)) {
+    return rankMinWidth.small;
+  }
+  return rankMinWidth.default;
 };
 
 // Ensures the 5th and 10th rank aligns with each other
@@ -132,9 +141,7 @@ const MultiColumnWrapper = styled(TwoColumnWrapper)`
   /* 5 columns of items at viewport 1280px and above */
   @media (min-width: ${GEL_GROUP_5_SCREEN_WIDTH_MIN}) {
     min-width: ${props =>
-      listHasDoubleDigits(props.numberOfItems)
-        ? isFiveOrTen(props)
-        : getRankMinWidth(props).group5};
+      listHasDoubleDigits(props.numberOfItems) ? isFiveOrTen(props) : 'auto'};
   }
 `;
 
