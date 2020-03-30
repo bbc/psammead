@@ -70,7 +70,7 @@ export const doubleDigitSmall = {
   group5: GEL_SPACING_TRPL,
   // These values are used to align the rank when a double digit exists in the column
   group0WithOneColumn: GEL_SPACING_DBL,
-  group1WithOneColumn: GEL_SPACING_DBL,
+  group1WithOneColumn: GEL_SPACING_TRPL,
   group2WithOneColumn: GEL_SPACING_TRPL,
   group3WithOneColumn: GEL_SPACING_QUAD,
   group3WithTwoColumns: GEL_SPACING_QUAD,
