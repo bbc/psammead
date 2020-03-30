@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 2.0.113 | [PR#3270](https://github.com/bbc/psammead/pull/3270) Security patch for `minimist` |
 | 2.0.112 | [PR#3311](https://github.com/bbc/psammead/pull/3311) Install @loadable/babel-plugin to support components using Loadable. |
 | 2.0.111 | [PR#3291](https://github.com/bbc/psammead/pull/3291) Bump `@psammead-storybook-helpers` |
 | 2.0.110 | [PR#3264](https://github.com/bbc/psammead/pull/3264) Add @bbc/psammead-live-label to dependencies |
