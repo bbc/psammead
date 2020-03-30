@@ -246,7 +246,7 @@ exports[`MostReadRank should render rtl with double digits correctly 1`] = `
 
 @media (min-width:15rem) and (max-width:24.9375rem) {
   .c0 {
-    min-width: 1rem;
+    min-width: 1.5rem;
   }
 }
 

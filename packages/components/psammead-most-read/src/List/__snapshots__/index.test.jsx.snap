@@ -4503,7 +4503,7 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
 
 @media (min-width:15rem) and (max-width:24.9375rem) {
   .c5 {
-    min-width: 1rem;
+    min-width: 1.5rem;
   }
 }
 
@@ -4539,7 +4539,7 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
 
 @media (min-width:15rem) and (max-width:24.9375rem) {
   .c9 {
-    min-width: 1rem;
+    min-width: 1.5rem;
   }
 }
 
@@ -4575,7 +4575,7 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
 
 @media (min-width:15rem) and (max-width:24.9375rem) {
   .c10 {
-    min-width: 1rem;
+    min-width: 1.5rem;
   }
 }
 
@@ -4611,7 +4611,7 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
 
 @media (min-width:15rem) and (max-width:24.9375rem) {
   .c11 {
-    min-width: 1rem;
+    min-width: 1.5rem;
   }
 }
 
@@ -4647,7 +4647,7 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
 
 @media (min-width:15rem) and (max-width:24.9375rem) {
   .c12 {
-    min-width: 1rem;
+    min-width: 1.5rem;
   }
 }
 
@@ -4683,7 +4683,7 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
 
 @media (min-width:15rem) and (max-width:24.9375rem) {
   .c13 {
-    min-width: 1rem;
+    min-width: 1.5rem;
   }
 }
 

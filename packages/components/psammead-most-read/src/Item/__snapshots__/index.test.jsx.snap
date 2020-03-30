@@ -848,7 +848,7 @@ exports[`MostReadItemWrapper should render rtl correctly with 10 items 1`] = `
 
 @media (min-width:15rem) and (max-width:24.9375rem) {
   .c3 {
-    min-width: 1rem;
+    min-width: 1.5rem;
   }
 }
 
@@ -884,7 +884,7 @@ exports[`MostReadItemWrapper should render rtl correctly with 10 items 1`] = `
 
 @media (min-width:15rem) and (max-width:24.9375rem) {
   .c7 {
-    min-width: 1rem;
+    min-width: 1.5rem;
   }
 }
 
@@ -920,7 +920,7 @@ exports[`MostReadItemWrapper should render rtl correctly with 10 items 1`] = `
 
 @media (min-width:15rem) and (max-width:24.9375rem) {
   .c8 {
-    min-width: 1rem;
+    min-width: 1.5rem;
   }
 }
 
@@ -956,7 +956,7 @@ exports[`MostReadItemWrapper should render rtl correctly with 10 items 1`] = `
 
 @media (min-width:15rem) and (max-width:24.9375rem) {
   .c9 {
-    min-width: 1rem;
+    min-width: 1.5rem;
   }
 }
 
@@ -992,7 +992,7 @@ exports[`MostReadItemWrapper should render rtl correctly with 10 items 1`] = `
 
 @media (min-width:15rem) and (max-width:24.9375rem) {
   .c10 {
-    min-width: 1rem;
+    min-width: 1.5rem;
   }
 }
 
@@ -1028,7 +1028,7 @@ exports[`MostReadItemWrapper should render rtl correctly with 10 items 1`] = `
 
 @media (min-width:15rem) and (max-width:24.9375rem) {
   .c11 {
-    min-width: 1rem;
+    min-width: 1.5rem;
   }
 }
 
