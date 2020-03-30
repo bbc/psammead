@@ -72,8 +72,7 @@ exports[`StartTime should render LTR correctly 1`] = `
   font-style: normal;
 }
 
-.c3::after {
-  content: '';
+.c5 {
   border-top: 0.0625rem solid #AEAEB5;
   top: 1rem;
   margin-left: 0.625rem;
@@ -142,6 +141,10 @@ exports[`StartTime should render LTR correctly 1`] = `
     >
       14:54
     </time>
+    <span
+      class="c5"
+      dir="ltr"
+    />
   </span>
 </div>
 `;
@@ -218,8 +221,7 @@ exports[`StartTime should render RTL correctly 1`] = `
   font-style: normal;
 }
 
-.c3::after {
-  content: '';
+.c5 {
   border-top: 0.0625rem solid #AEAEB5;
   top: 1rem;
   margin-right: 0.625rem;
@@ -288,6 +290,10 @@ exports[`StartTime should render RTL correctly 1`] = `
     >
       ۱۴:۵۴
     </time>
+    <span
+      class="c5"
+      dir="rtl"
+    />
   </span>
 </div>
 `;

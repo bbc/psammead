@@ -54,7 +54,6 @@ const StyledTimestamp = styled.span`
 
 const Bar = styled.span`
   border-top: 0.0625rem solid ${C_PEBBLE};
-  z-index: -1;
   top: ${({ script }) => 0.5 + script.minion.groupA.lineHeight / 2 / 16}rem;
   ${({ dir }) =>
     dir === 'ltr' ? `margin-left: 0.625rem;` : `margin-right: 0.625rem;`}
