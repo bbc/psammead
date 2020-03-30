@@ -249,11 +249,9 @@ const ProgramCard = ({
       <IconWrapper {...programStateConfig[state]}>
         {mediaIcons.audio}
       </IconWrapper>
+
       <DurationWrapper dir={dir} dateTime={duration}>
-        <VisuallyHiddenText>
-          {` ${durationLabel} `}
-          {`${formatDuration(duration, getDurationFormat(duration, ','))} `}
-        </VisuallyHiddenText>
+        <VisuallyHiddenText>{` ${durationLabel} `}</VisuallyHiddenText>
         <DurationTextWrapper>
           {formatDuration(duration, getDurationFormat(duration))}
         </DurationTextWrapper>
