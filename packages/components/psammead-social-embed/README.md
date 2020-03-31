@@ -145,6 +145,10 @@ This component will not provide a rich social media embed for providers outside 
 
 This component provides a [Skip Link](https://webaim.org/techniques/skipnav/), which allows users to identify and skip over social media content in your pages. `skipLink.endTextId` should be set to a value that uniquely identifies `skipLink.endTextVisuallyHidden`. This is especially important when there are more than one social media embeds from the same provider on a page.
 
+`fallback.linkTextSuffixVisuallyHidden` is used to add a suffix to `fallback.text`. This will not be visible on the UI, but will be captured by assistive technology.
+
+`caption.textPrefixVisuallyHidden` is used to add a prefix to `caption.text`. This will not be visible on the UI, but will be captured by assistive technology.
+
 ## Miscellaneous
 
 Some components within `SocialEmbed` render the same result given the same props and are memoized using [React.memo](https://reactjs.org/docs/react-api.html#reactmemo) to prevent unnecessary renders.
