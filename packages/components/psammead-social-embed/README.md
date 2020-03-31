@@ -8,8 +8,6 @@ This component is currently tagged as alpha and is not suitable for production u
 
 The `SocialEmbed` component renders a rich social media embed for a number of supported providers or a fallback containing a link to the source content.
 
-Note: This component declares `@loadable/component` as a peer dependency. It is used to dynamically import `@bbc/psammead-oembed` if and when it's needed.
-
 ### Supported providers
 
 | Name      | Value       |
@@ -35,7 +33,7 @@ npm install @bbc/psammead-social-embed --save
 | `oEmbed`   | Object | Yes      | n/a     | See [@bbc/psammead-oembed](https://github.com/bbc/psammead/tree/latest/packages/components/psammead-oembed#oembed). |
 | `fallback` | Object | Yes      | n/a     | See [fallback](#fallback).                                                                                          |
 | `skipLink` | Object | Yes      | n/a     | See [skipLink](#skipLink).                                                                                          |
-| `caption`  | Object | Yes      | n/a     | See [caption](#caption).                                                                                            |
+| `caption`  | Object | No       | `null`  | See [caption](#caption).                                                                                            |
 
 ### AMP
 
@@ -46,39 +44,36 @@ npm install @bbc/psammead-social-embed --save
 | `id`       | String | Yes      | n/a     | `'1237210910835392512'`                          |
 | `fallback` | Object | Yes      | n/a     | See [fallback](#fallback).                       |
 | `skipLink` | Object | Yes      | n/a     | See [skipLink](#skipLink).                       |
-| `caption`  | Object | Yes      | n/a     | See [caption](#caption).                         |
+| `caption`  | Object | No       | `null`  | See [caption](#caption).                         |
 
 ### `fallback`
 
-| Argument      | Type   | Required | Default | Example                                                       |
-| ------------- | ------ | -------- | ------- | ------------------------------------------------------------- |
-| `text`        | String | Yes      | n/a     | `"Sorry but we're having trouble displaying this content"`    |
-| `linkText`    | String | Yes      | n/a     | `'View content on %provider_name%'`                           |
-| `linkHref`    | String | Yes      | n/a     | `'https://twitter.com/MileyCyrus/status/1237210910835392512'` |
-| `warningText` | String | No       | `null`  | `Warning: BBC is not responsible for third party content`     |
-
-Note: For your convenience, instances of `%provider%` and `%provider_name%` in the above strings will be replaced with the current provider and, where the provider is known, the name of the provider. E.G. `twitter` and `Twitter` respectively.
+| Argument                       | Type   | Required | Default | Example                                                       |
+| ------------------------------ | ------ | -------- | ------- | ------------------------------------------------------------- |
+| `text`                         | String | Yes      | n/a     | `"Sorry but we're having trouble displaying this content"`    |
+| `linkText`                     | String | Yes      | n/a     | `'View content on %provider_name%'`                           |
+| `linkTextSuffixVisuallyHidden` | String | No       | `null`  | `', external'`                                                |
+| `linkHref`                     | String | Yes      | n/a     | `'https://twitter.com/MileyCyrus/status/1237210910835392512'` |
+| `warningText`                  | String | No       | `null`  | `Warning: BBC is not responsible for third party content`     |
 
 ### `skipLink`
 
-| Argument    | Type   | Required | Default | Example                            |
-| ----------- | ------ | -------- | ------- | ---------------------------------- |
-| `text`      | String | Yes      | n/a     | `'Skip %provider_name% content'`   |
-| `endTextId` | String | Yes      | n/a     | `'skip-%provider%-content'`        |
-| `endText`   | String | Yes      | n/a     | `'End of %provider_name% content'` |
+| Argument                | Type   | Required | Default | Example                            |
+| ----------------------- | ------ | -------- | ------- | ---------------------------------- |
+| `text`                  | String | Yes      | n/a     | `'Skip %provider_name% content'`   |
+| `endTextId`             | String | Yes      | n/a     | `'skip-%provider%-content'`        |
+| `endTextVisuallyHidden` | String | Yes      | n/a     | `'End of %provider_name% content'` |
 
 ### `caption`
 
-| Argument             | Type   | Required | Default | Example                                              |
-| -------------------- | ------ | -------- | ------- | ---------------------------------------------------- |
-| `visuallyHiddenText` | String | Yes      | n/a     | `'Video caption,'`                                   |
-| `text`               | String | Yes      | n/a     | `'Warning: Third party content may contain adverts'` |
-
-Note: `visuallyHiddenText` will come before `text` and have a trailing space added.
+| Argument                   | Type   | Required | Default | Example                                              |
+| -------------------------- | ------ | -------- | ------- | ---------------------------------------------------- |
+| `textPrefixVisuallyHidden` | String | No       | `null`  | `'Video caption,'`                                   |
+| `text`                     | String | Yes      | n/a     | `'Warning: Third party content may contain adverts'` |
 
 See [accessibility notes](#accessibility-notes) for more information.
 
-Note: For your convenience, instances of `%provider%` and `%provider_name%` in the above strings will be replaced with the current provider and, where the provider is known, the name of the provider. E.G. `instagram` and `Instagram` respectively.
+Note: For your convenience, instances of `%provider%` and `%provider_name%` in `fallback`, `skipLink` and `caption` strings will be replaced with the current provider and, where the provider is known, the name of the provider. E.G. `youtube` and `YouTube` respectively.
 
 ## Usage
 
@@ -98,11 +93,12 @@ import { CanonicalSocialEmbed } from '@bbc/psammead-social-embed';
   skipLink={{
     text: 'Skip %provider_name% content',
     endTextId: 'skip-%provider%-content',
-    endText: 'End of %provider_name% content',
+    endTextVisuallyHidden: 'End of %provider_name% content',
   }}
   fallback={{
     text: "Sorry but we're having trouble displaying this content",
     linkText: 'View content on %provider_name%',
+    linkTextSuffixVisuallyHidden: ', external',
     linkHref: 'https://www.instagram.com/p/B8FPf4ZphHi/',
     warningText: 'Warning: BBC is not responsible for third party content',
   }}
@@ -125,11 +121,12 @@ import { AmpSocialEmbed } from '@bbc/psammead-social-embed';
   skipLink={{
     text: 'Skip %provider_name% content',
     endTextId: 'skip-%provider%-content',
-    endText: 'End of %provider_name% content',
+    endTextVisuallyHidden: 'End of %provider_name% content',
   }}
   fallback={{
     text: "Sorry but we're having trouble displaying this content",
     linkText: 'View content on %provider_name%',
+    linkTextSuffixVisuallyHidden: ', external',
     linkHref: 'https://www.instagram.com/p/B8FPf4ZphHi/',
     warningText: 'Warning: BBC is not responsible for third party content',
   }}
@@ -146,11 +143,11 @@ This component will not provide a rich social media embed for providers outside 
 
 ### Accessibility notes
 
-This component provides a [Skip Link](https://webaim.org/techniques/skipnav/), which allows users to identify and skip over social media content in your pages. `skipLink.endTextId` should be set to a value that uniquely identifies `skipLink.endText`. This is especially important when there is more than one social media embed from the same provider on the page.
+This component provides a [Skip Link](https://webaim.org/techniques/skipnav/), which allows users to identify and skip over social media content in your pages. `skipLink.endTextId` should be set to a value that uniquely identifies `skipLink.endTextVisuallyHidden`. This is especially important when there are more than one social media embeds from the same provider on a page.
 
-## Roadmap
+`fallback.linkTextSuffixVisuallyHidden` is used to add a suffix to `fallback.text`. This will not be visible on the UI, but will be captured by assistive technology.
 
-OEmbed is a dynamic import found within CanonicalSocialEmbed. While it is being loaded, `<p>Loading&hellip;</p>` is rendered. This could be updated to inherit the width and height of the oEmbed content and thus prevent reflows when it is replaced.
+`caption.textPrefixVisuallyHidden` is used to add a prefix to `caption.text`. This will not be visible on the UI, but will be captured by assistive technology.
 
 ## Miscellaneous
 
