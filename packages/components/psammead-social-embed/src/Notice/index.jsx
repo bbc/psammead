@@ -61,13 +61,9 @@ const Notice = ({
     <Wrapper service={service}>
       <p>{detokenise(text, dictionary)}</p>
       <a href={linkHref}>
-        {linkTextSuffixVisuallyHidden ? (
-          <>
-            {detokenise(linkText, dictionary)}{' '}
-            <span>{detokenise(linkTextSuffixVisuallyHidden, dictionary)}</span>
-          </>
-        ) : (
-          detokenise(linkText, dictionary)
+        {detokenise(linkText, dictionary)}
+        {linkTextSuffixVisuallyHidden && (
+          <span>{detokenise(linkTextSuffixVisuallyHidden, dictionary)}</span>
         )}
       </a>
       {warningText && <small>{warningText}</small>}

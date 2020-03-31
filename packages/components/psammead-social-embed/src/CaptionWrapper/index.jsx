@@ -34,13 +34,8 @@ const CaptionWrapper = ({
   <Figure>
     {children}
     <FigCaption service={service}>
-      {textPrefixVisuallyHidden ? (
-        <>
-          <span>{textPrefixVisuallyHidden}</span> {text}
-        </>
-      ) : (
-        text
-      )}
+      {textPrefixVisuallyHidden && <span>{textPrefixVisuallyHidden}</span>}
+      {text}
     </FigCaption>
   </Figure>
 );

@@ -17,7 +17,7 @@ storiesOf('Components|SocialEmbed/Canonical', module)
       const caption =
         fixture.source === 'youtube'
           ? {
-              textPrefixVisuallyHidden: 'Video caption,',
+              textPrefixVisuallyHidden: 'Video caption, ',
               text: 'Warning: Third party content may contain adverts',
             }
           : null;
@@ -83,7 +83,7 @@ storiesOf('Components|SocialEmbed/Canonical', module)
       const caption =
         fixture.source === 'youtube'
           ? {
-              textPrefixVisuallyHidden: 'Video caption,',
+              textPrefixVisuallyHidden: 'Video caption, ',
               text: 'Warning: Third party content may contain adverts',
             }
           : null;
@@ -138,7 +138,7 @@ storiesOf('Components|SocialEmbed/AMP', module)
       const caption =
         fixture.source === 'youtube'
           ? {
-              textPrefixVisuallyHidden: 'Video caption,',
+              textPrefixVisuallyHidden: 'Video caption, ',
               text: 'Warning: Third party content may contain adverts',
             }
           : null;

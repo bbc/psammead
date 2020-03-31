@@ -9,7 +9,7 @@ describe('CanonicalSocialEmbed', () => {
     const caption =
       provider === 'youtube'
         ? {
-            textPrefixVisuallyHidden: 'Video caption,',
+            textPrefixVisuallyHidden: 'Video caption, ',
             text: 'Warning: Third party content may contain adverts',
           }
         : null;

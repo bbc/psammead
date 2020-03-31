@@ -485,7 +485,6 @@ exports[`CanonicalSocialEmbed should render a notice when the provider is unsupp
     href="embed-url"
   >
     View content on unknown
-     
     <span>
       , external
     </span>
@@ -562,7 +561,6 @@ exports[`CanonicalSocialEmbed should render a notice when there is no oEmbed res
     href="embed-url"
   >
     View content on Twitter
-     
     <span>
       , external
     </span>
@@ -1094,9 +1092,8 @@ exports[`CanonicalSocialEmbed should render correctly for YouTube 1`] = `
       class="c4"
     >
       <span>
-        Video caption,
+        Video caption, 
       </span>
-       
       Warning: Third party content may contain adverts
     </figcaption>
   </figure>
