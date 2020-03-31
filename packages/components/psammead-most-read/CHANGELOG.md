@@ -3,7 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
-| 4.0.4 | [PR#3291](https://github.com/bbc/psammead/pull/3291) Update rank min-width for persian and pashto |
+| 4.0.4 | [PR#3317](https://github.com/bbc/psammead/pull/3317) Update rank min-width for persian and pashto |
 | 4.0.3 | [PR#3291](https://github.com/bbc/psammead/pull/3291) Use withServicesKnob `selectedService` prop |
 | 4.0.2 | [PR#3243](https://github.com/bbc/psammead/pull/3243) Fixes most-read IE11 `oneColumn` layout bugs |
 | 4.0.1 | [PR#3237](https://github.com/bbc/psammead/pull/3237) Fixed most-read IE layout bug |
