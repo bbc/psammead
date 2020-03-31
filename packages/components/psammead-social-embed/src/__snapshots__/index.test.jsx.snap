@@ -608,7 +608,7 @@ exports[`CanonicalSocialEmbed should render correctly for Instagram 1`] = `
   white-space: nowrap;
 }
 
-.c2 {
+.c3 {
   position: absolute !important;
   height: 1px;
   width: 1px;
@@ -618,6 +618,17 @@ exports[`CanonicalSocialEmbed should render correctly for Instagram 1`] = `
   -webkit-clip: rect(1px,1px,1px,1px);
   clip: rect(1px,1px,1px,1px);
   white-space: nowrap;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
@@ -651,7 +662,7 @@ exports[`CanonicalSocialEmbed should render correctly for Instagram 1`] = `
           Skip Instagram content
         </a>
         <div
-          class=""
+          class="c2"
         >
           <blockquote
             class="instagram-media"
@@ -823,7 +834,7 @@ exports[`CanonicalSocialEmbed should render correctly for Instagram 1`] = `
           </blockquote>
         </div>
         <p
-          class="c2"
+          class="c3"
           id="skip-instagram-content"
           tabindex="-1"
         >
@@ -880,7 +891,7 @@ exports[`CanonicalSocialEmbed should render correctly for Twitter 1`] = `
   white-space: nowrap;
 }
 
-.c2 {
+.c3 {
   position: absolute !important;
   height: 1px;
   width: 1px;
@@ -890,6 +901,17 @@ exports[`CanonicalSocialEmbed should render correctly for Twitter 1`] = `
   -webkit-clip: rect(1px,1px,1px,1px);
   clip: rect(1px,1px,1px,1px);
   white-space: nowrap;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
@@ -915,7 +937,7 @@ exports[`CanonicalSocialEmbed should render correctly for Twitter 1`] = `
           Skip Twitter content
         </a>
         <div
-          class=""
+          class="c2"
         >
           <blockquote
             class="twitter-tweet"
@@ -937,7 +959,7 @@ exports[`CanonicalSocialEmbed should render correctly for Twitter 1`] = `
 
         </div>
         <p
-          class="c2"
+          class="c3"
           id="skip-twitter-content"
           tabindex="-1"
         >
@@ -1029,6 +1051,14 @@ exports[`CanonicalSocialEmbed should render correctly for YouTube 1`] = `
   padding-top: 56.25%;
   position: relative;
   overflow: hidden;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .c3 > iframe {

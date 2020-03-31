@@ -10,6 +10,8 @@ const LANDSCAPE_RATIO = '56.25%';
  */
 const OEmbed = styled.div`
   ${({ styles }) => styles}
+  display: flex;
+  justify-content: center;
 `;
 
 /**
