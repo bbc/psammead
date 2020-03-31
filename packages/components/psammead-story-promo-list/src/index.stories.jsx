@@ -4,6 +4,7 @@ import Timestamp from '@bbc/psammead-timestamp';
 import Image from '@bbc/psammead-image';
 import { latin } from '@bbc/gel-foundations/scripts';
 import StoryPromo, { Headline, Summary, Link } from '@bbc/psammead-story-promo';
+import Grid from '@bbc/psammead-grid';
 import { StoryPromoLi, StoryPromoUl } from './index';
 import storyPromoData from '../testHelpers/fixtureData';
 import notes from '../README.md';
@@ -33,31 +34,81 @@ const InfoComponent = ({ headlineText, summaryText, datetime, dateformat }) => (
   </>
 );
 
-storiesOf('Components|StoryPromo/StoryPromoList', module).add(
-  'default',
-  () => (
-    <StoryPromoUl>
-      {storyPromoData.map(item => {
-        const ImagePromo = (
-          <ImageComponent src={item.image.src} alt={item.image.alt} />
-        );
+storiesOf('Components|StoryPromo/StoryPromoList', module)
+  .add(
+    'default',
+    () => (
+      <StoryPromoUl>
+        {storyPromoData.map(item => {
+          const ImagePromo = (
+            <ImageComponent src={item.image.src} alt={item.image.alt} />
+          );
 
-        const InfoPromo = (
-          <InfoComponent
-            headlineText={item.info.headline}
-            summaryText={item.info.summary}
-            datetime={item.info.datetime}
-            dateformat={item.info.dateformat}
-          />
-        );
+          const InfoPromo = (
+            <InfoComponent
+              headlineText={item.info.headline}
+              summaryText={item.info.summary}
+              datetime={item.info.datetime}
+              dateformat={item.info.dateformat}
+            />
+          );
 
-        return (
-          <StoryPromoLi key={item.info.headline}>
-            <StoryPromo image={ImagePromo} info={InfoPromo} />
-          </StoryPromoLi>
-        );
-      })}
-    </StoryPromoUl>
-  ),
-  { notes },
-);
+          return (
+            <StoryPromoLi key={item.info.headline}>
+              <StoryPromo image={ImagePromo} info={InfoPromo} />
+            </StoryPromoLi>
+          );
+        })}
+      </StoryPromoUl>
+    ),
+    { notes },
+  )
+  .add('Example with promos without image', ({ dir }) => {
+    const parentGridColumns = {
+      group0: 6,
+      group1: 6,
+      group2: 6,
+      group3: 6,
+      group4: 8,
+      group5: 8,
+    };
+
+    const noImageStoryColumns = {
+      group0: 6,
+      group1: 6,
+      group2: 6,
+      group3: 3,
+      group4: 2,
+      group5: 2,
+    };
+
+    const renderGridItem = border => (
+      <Grid
+        dir={dir}
+        item
+        columns={noImageStoryColumns}
+        parentColumns={parentGridColumns}
+        as={StoryPromoLi}
+        border={border}
+      >
+        <p>
+          The critic, author, poet and TV host was known for his witty
+          commentary on international television.
+        </p>
+      </Grid>
+    );
+
+    return (
+      <Grid
+        dir={dir}
+        columns={parentGridColumns}
+        enableGelGutters
+        as={StoryPromoUl}
+      >
+        {renderGridItem()}
+        {renderGridItem()}
+        {renderGridItem(false)}
+        {renderGridItem()}
+      </Grid>
+    );
+  });
