@@ -56,8 +56,6 @@ npm install @bbc/psammead-social-embed --save
 | `linkHref`                     | String | Yes      | n/a     | `'https://twitter.com/MileyCyrus/status/1237210910835392512'` |
 | `warningText`                  | String | No       | `null`  | `Warning: BBC is not responsible for third party content`     |
 
-Note: For your convenience, instances of `%provider%` and `%provider_name%` in the above strings will be replaced with the current provider and, where the provider is known, the name of the provider. E.G. `twitter` and `Twitter` respectively.
-
 ### `skipLink`
 
 | Argument                | Type   | Required | Default | Example                            |
@@ -65,8 +63,6 @@ Note: For your convenience, instances of `%provider%` and `%provider_name%` in t
 | `text`                  | String | Yes      | n/a     | `'Skip %provider_name% content'`   |
 | `endTextId`             | String | Yes      | n/a     | `'skip-%provider%-content'`        |
 | `endTextVisuallyHidden` | String | Yes      | n/a     | `'End of %provider_name% content'` |
-
-Note: For your convenience, instances of `%provider%` and `%provider_name%` in the above strings will be replaced with the current provider and, where the provider is known, the name of the provider. E.G. `instagram` and `Instagram` respectively.
 
 ### `caption`
 
@@ -77,7 +73,7 @@ Note: For your convenience, instances of `%provider%` and `%provider_name%` in t
 
 See [accessibility notes](#accessibility-notes) for more information.
 
-Note: For your convenience, instances of `%provider%` and `%provider_name%` in the above strings will be replaced with the current provider and, where the provider is known, the name of the provider. E.G. `instagram` and `Instagram` respectively.
+Note: For your convenience, instances of `%provider%` and `%provider_name%` in `fallback`, `skipLink` and `caption` strings will be replaced with the current provider and, where the provider is known, the name of the provider. E.G. `youtube` and `YouTube` respectively.
 
 ## Usage
 
