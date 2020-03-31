@@ -363,14 +363,14 @@ exports[`RadioSchedule should render ltr radio schedules correctly 1`] = `
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
-  .c17 {
+  .c18 {
     font-size: 0.875rem;
     line-height: 1.125rem;
   }
 }
 
 @media (min-width:37.5rem) {
-  .c17 {
+  .c18 {
     font-size: 0.8125rem;
     line-height: 1rem;
   }
@@ -391,7 +391,7 @@ exports[`RadioSchedule should render ltr radio schedules correctly 1`] = `
 }
 
 @media screen and (-ms-high-contrast:active) {
-  .c18 {
+  .c19 {
     background-color: transparent;
   }
 }
@@ -411,7 +411,7 @@ exports[`RadioSchedule should render ltr radio schedules correctly 1`] = `
 }
 
 @media screen and (-ms-high-contrast:active) {
-  .c22 {
+  .c23 {
     background-color: transparent;
   }
 }
@@ -431,7 +431,7 @@ exports[`RadioSchedule should render ltr radio schedules correctly 1`] = `
 }
 
 @media screen and (-ms-high-contrast:active) {
-  .c26 {
+  .c27 {
     background-color: transparent;
   }
 }
@@ -1506,7 +1506,7 @@ exports[`RadioSchedule should render rtl radio schedules correctly 1`] = `
 }
 
 @media screen and (-ms-high-contrast:active) {
-  .c18 {
+  .c19 {
     background-color: transparent;
   }
 }
@@ -1526,7 +1526,7 @@ exports[`RadioSchedule should render rtl radio schedules correctly 1`] = `
 }
 
 @media screen and (-ms-high-contrast:active) {
-  .c22 {
+  .c23 {
     background-color: transparent;
   }
 }
@@ -1546,7 +1546,7 @@ exports[`RadioSchedule should render rtl radio schedules correctly 1`] = `
 }
 
 @media screen and (-ms-high-contrast:active) {
-  .c26 {
+  .c27 {
     background-color: transparent;
   }
 }
