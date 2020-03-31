@@ -82,15 +82,16 @@ const sharedPropTypes = {
   skipLink: shape({
     text: string.isRequired,
     endTextId: string.isRequired,
-    endText: string.isRequired,
+    endTextVisuallyHidden: string.isRequired,
   }).isRequired,
   caption: shape({
-    visuallyHiddenText: string,
+    textPrefixVisuallyHidden: string,
     text: string.isRequired,
   }),
   fallback: shape({
     text: string.isRequired,
     linkText: string.isRequired,
+    linkTextSuffixVisuallyHidden: string,
     linkHref: string.isRequired,
     warningText: string,
   }).isRequired,

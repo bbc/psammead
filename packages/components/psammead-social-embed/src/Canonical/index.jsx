@@ -1,23 +1,17 @@
 import React, { memo } from 'react';
 import Helmet from 'react-helmet';
 import { shape, string } from 'prop-types';
-import loadable from '@loadable/component';
 import styled, { css } from 'styled-components';
-
-const OEmbed = loadable(
-  () => import(/* webpackChunkName: 'oembed' */ '@bbc/psammead-oembed'),
-  {
-    fallback: <p>Loading&hellip;</p>,
-  },
-);
 
 const LANDSCAPE_RATIO = '56.25%';
 
 /**
  * Apply provider-specific styles.
  */
-const StyledOEmbed = styled(OEmbed)`
+const OEmbed = styled.div`
   ${({ styles }) => styles}
+  display: flex;
+  justify-content: center;
 `;
 
 /**
@@ -56,7 +50,10 @@ const CanonicalEmbed = ({ provider, oEmbed }) => (
         <script async src={providers[provider].script} />
       </Helmet>
     )}
-    <StyledOEmbed styles={providers[provider].styles} oEmbed={oEmbed} />
+    <OEmbed
+      styles={providers[provider].styles}
+      dangerouslySetInnerHTML={{ __html: oEmbed.html }}
+    />
   </>
 );
 
