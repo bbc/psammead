@@ -87,6 +87,9 @@ const ButtonWrapper = styled.div`
   padding: ${GEL_SPACING};
   background-color: ${({ backgroundColor }) => backgroundColor};
   color: ${({ durationColor }) => durationColor};
+  @media screen and (-ms-high-contrast: active) {
+    background-color: transparent;
+  }
 `;
 
 const IconWrapper = styled.span`

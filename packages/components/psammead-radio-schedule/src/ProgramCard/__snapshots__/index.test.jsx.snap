@@ -193,6 +193,12 @@ exports[`ProgramCard should render correctly for live 1`] = `
   }
 }
 
+@media screen and (-ms-high-contrast:active) {
+  .c8 {
+    background-color: transparent;
+  }
+}
+
 <div
   class="c0"
 >
@@ -473,6 +479,12 @@ exports[`ProgramCard should render correctly for next 1`] = `
   }
 }
 
+@media screen and (-ms-high-contrast:active) {
+  .c7 {
+    background-color: transparent;
+  }
+}
+
 <div
   class="c0"
 >
@@ -738,6 +750,12 @@ exports[`ProgramCard should render correctly for onDemand 1`] = `
   .c7 {
     font-size: 0.75rem;
     line-height: 1rem;
+  }
+}
+
+@media screen and (-ms-high-contrast:active) {
+  .c7 {
+    background-color: transparent;
   }
 }
 
@@ -1008,6 +1026,12 @@ exports[`ProgramCard should render correctly in RTL 1`] = `
   }
 }
 
+@media screen and (-ms-high-contrast:active) {
+  .c7 {
+    background-color: transparent;
+  }
+}
+
 <div
   class="c0"
 >
@@ -1256,6 +1280,12 @@ exports[`ProgramCard should render correctly without summary 1`] = `
   .c7 {
     font-size: 0.75rem;
     line-height: 1rem;
+  }
+}
+
+@media screen and (-ms-high-contrast:active) {
+  .c7 {
+    background-color: transparent;
   }
 }
 
