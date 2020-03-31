@@ -46,6 +46,7 @@ exports[`StartTime should render LTR correctly 1`] = `
 .c1 > svg {
   color: #5A5A5A;
   margin: 0;
+  overflow: visible;
 }
 
 .c3 {
@@ -195,6 +196,7 @@ exports[`StartTime should render RTL correctly 1`] = `
 .c1 > svg {
   color: #5A5A5A;
   margin: 0;
+  overflow: visible;
 }
 
 .c3 {
