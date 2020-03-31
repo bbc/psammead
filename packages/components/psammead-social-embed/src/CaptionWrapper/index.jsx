@@ -25,29 +25,29 @@ const FigCaption = styled.figcaption`
   }
 `;
 
-const CaptionWrapper = ({ children, service, visuallyHiddenText, text }) => (
+const CaptionWrapper = ({
+  children,
+  service,
+  textPrefixVisuallyHidden,
+  text,
+}) => (
   <Figure>
     {children}
     <FigCaption service={service}>
-      {visuallyHiddenText ? (
-        <>
-          <span>{visuallyHiddenText}</span> {text}
-        </>
-      ) : (
-        text
-      )}
+      {textPrefixVisuallyHidden && <span>{textPrefixVisuallyHidden}</span>}
+      {text}
     </FigCaption>
   </Figure>
 );
 
 CaptionWrapper.defaultProps = {
-  visuallyHiddenText: null,
+  textPrefixVisuallyHidden: null,
 };
 
 CaptionWrapper.propTypes = {
   children: node.isRequired,
   service: string.isRequired,
-  visuallyHiddenText: string,
+  textPrefixVisuallyHidden: string,
   text: string.isRequired,
 };
 
