@@ -31,6 +31,18 @@ exports[`AmpSocialEmbed should render a notice when the provider is unsupported 
   text-decoration: none;
 }
 
+.c0 a > span {
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  -webkit-clip: rect(1px 1px 1px 1px);
+  clip: rect(1px 1px 1px 1px);
+  -webkit-clip: rect(1px,1px,1px,1px);
+  clip: rect(1px,1px,1px,1px);
+  white-space: nowrap;
+}
+
 .c0 small {
   margin-top: 0.5rem;
   font-size: 0.75rem;
@@ -438,6 +450,18 @@ exports[`CanonicalSocialEmbed should render a notice when the provider is unsupp
   text-decoration: none;
 }
 
+.c0 a > span {
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  -webkit-clip: rect(1px 1px 1px 1px);
+  clip: rect(1px 1px 1px 1px);
+  -webkit-clip: rect(1px,1px,1px,1px);
+  clip: rect(1px,1px,1px,1px);
+  white-space: nowrap;
+}
+
 .c0 small {
   margin-top: 0.5rem;
   font-size: 0.75rem;
@@ -461,6 +485,9 @@ exports[`CanonicalSocialEmbed should render a notice when the provider is unsupp
     href="embed-url"
   >
     View content on unknown
+    <span>
+      , external
+    </span>
   </a>
   <small>
     Warning: BBC is not responsible for third party content
@@ -499,6 +526,18 @@ exports[`CanonicalSocialEmbed should render a notice when there is no oEmbed res
   text-decoration: none;
 }
 
+.c0 a > span {
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  -webkit-clip: rect(1px 1px 1px 1px);
+  clip: rect(1px 1px 1px 1px);
+  -webkit-clip: rect(1px,1px,1px,1px);
+  clip: rect(1px,1px,1px,1px);
+  white-space: nowrap;
+}
+
 .c0 small {
   margin-top: 0.5rem;
   font-size: 0.75rem;
@@ -522,6 +561,9 @@ exports[`CanonicalSocialEmbed should render a notice when there is no oEmbed res
     href="embed-url"
   >
     View content on Twitter
+    <span>
+      , external
+    </span>
   </a>
   <small>
     Warning: BBC is not responsible for third party content
@@ -566,7 +608,7 @@ exports[`CanonicalSocialEmbed should render correctly for Instagram 1`] = `
   white-space: nowrap;
 }
 
-.c2 {
+.c3 {
   position: absolute !important;
   height: 1px;
   width: 1px;
@@ -576,6 +618,17 @@ exports[`CanonicalSocialEmbed should render correctly for Instagram 1`] = `
   -webkit-clip: rect(1px,1px,1px,1px);
   clip: rect(1px,1px,1px,1px);
   white-space: nowrap;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
@@ -609,14 +662,14 @@ exports[`CanonicalSocialEmbed should render correctly for Instagram 1`] = `
           Skip Instagram content
         </a>
         <div
-          class=""
+          class="c2"
         >
           <blockquote
             class="instagram-media"
             data-instgrm-captioned=""
             data-instgrm-permalink="https://www.instagram.com/p/B8FPf4ZphHi/?utm_source=ig_embed&utm_campaign=loading"
             data-instgrm-version="12"
-            style="background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:658px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"
+            style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:658px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"
           >
             <div
               style="padding:16px;"
@@ -624,11 +677,12 @@ exports[`CanonicalSocialEmbed should render correctly for Instagram 1`] = `
                
               <a
                 href="https://www.instagram.com/p/B8FPf4ZphHi/?utm_source=ig_embed&utm_campaign=loading"
-                style="background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;"
+                style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;"
+                target="_blank"
               >
                  
                 <div
-                  style="display: flex; flex-direction: row; align-items: center;"
+                  style=" display: flex; flex-direction: row; align-items: center;"
                 >
                    
                   <div
@@ -640,11 +694,11 @@ exports[`CanonicalSocialEmbed should render correctly for Instagram 1`] = `
                   >
                      
                     <div
-                      style="background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;"
+                      style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;"
                     />
                      
                     <div
-                      style="background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;"
+                      style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;"
                     />
                   </div>
                 </div>
@@ -687,7 +741,7 @@ exports[`CanonicalSocialEmbed should render correctly for Instagram 1`] = `
                 >
                    
                   <div
-                    style="color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;"
+                    style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;"
                   >
                      View this post on Instagram
                   </div>
@@ -718,11 +772,11 @@ exports[`CanonicalSocialEmbed should render correctly for Instagram 1`] = `
                   >
                      
                     <div
-                      style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;"
+                      style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;"
                     />
                      
                     <div
-                      style="width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)"
+                      style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)"
                     />
                   </div>
                   <div
@@ -730,46 +784,48 @@ exports[`CanonicalSocialEmbed should render correctly for Instagram 1`] = `
                   >
                      
                     <div
-                      style="width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);"
+                      style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);"
                     />
                      
                     <div
-                      style="background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);"
+                      style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);"
                     />
                      
                     <div
-                      style="width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);"
+                      style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);"
                     />
                   </div>
                 </div>
               </a>
                
               <p
-                style="margin:8px 0 0 0; padding:0 4px;"
+                style=" margin:8px 0 0 0; padding:0 4px;"
               >
                  
                 <a
                   href="https://www.instagram.com/p/B8FPf4ZphHi/?utm_source=ig_embed&utm_campaign=loading"
-                  style="color:#000; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none; word-wrap:break-word;"
+                  style=" color:#000; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none; word-wrap:break-word;"
+                  target="_blank"
                 >
                   1917 was the big winner at the Bafta Film Awards, winning seven prizes in total, including best film, best British film, best director and best cinematography. Joker star Joaquin Phoenix was named best actor, while Renee Zellweger was recognised for her portrayal of Judy Garland. Tap the link in our bio to read more about all of the winners at the 2020 Bafta Film Awards. #Baftas #film #awards #BBCNews
                 </a>
               </p>
                
               <p
-                style="color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"
+                style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"
               >
                 A post shared by 
                 <a
                   href="https://www.instagram.com/bbcnews/?utm_source=ig_embed&utm_campaign=loading"
-                  style="color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px;"
+                  style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px;"
+                  target="_blank"
                 >
                    BBC News
                 </a>
                  (@bbcnews) on 
                 <time
                   datetime="2020-02-02T22:51:31+00:00"
-                  style="font-family:Arial,sans-serif; font-size:14px; line-height:17px;"
+                  style=" font-family:Arial,sans-serif; font-size:14px; line-height:17px;"
                 >
                   Feb 2, 2020 at 2:51pm PST
                 </time>
@@ -778,7 +834,7 @@ exports[`CanonicalSocialEmbed should render correctly for Instagram 1`] = `
           </blockquote>
         </div>
         <p
-          class="c2"
+          class="c3"
           id="skip-instagram-content"
           tabindex="-1"
         >
@@ -835,7 +891,7 @@ exports[`CanonicalSocialEmbed should render correctly for Twitter 1`] = `
   white-space: nowrap;
 }
 
-.c2 {
+.c3 {
   position: absolute !important;
   height: 1px;
   width: 1px;
@@ -845,6 +901,17 @@ exports[`CanonicalSocialEmbed should render correctly for Twitter 1`] = `
   -webkit-clip: rect(1px,1px,1px,1px);
   clip: rect(1px,1px,1px,1px);
   white-space: nowrap;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
@@ -870,7 +937,7 @@ exports[`CanonicalSocialEmbed should render correctly for Twitter 1`] = `
           Skip Twitter content
         </a>
         <div
-          class=""
+          class="c2"
         >
           <blockquote
             class="twitter-tweet"
@@ -892,7 +959,7 @@ exports[`CanonicalSocialEmbed should render correctly for Twitter 1`] = `
 
         </div>
         <p
-          class="c2"
+          class="c3"
           id="skip-twitter-content"
           tabindex="-1"
         >
@@ -984,6 +1051,14 @@ exports[`CanonicalSocialEmbed should render correctly for YouTube 1`] = `
   padding-top: 56.25%;
   position: relative;
   overflow: hidden;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .c3 > iframe {
@@ -1035,6 +1110,9 @@ exports[`CanonicalSocialEmbed should render correctly for YouTube 1`] = `
       class="c3"
     >
       <iframe
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen=""
+        frameborder="0"
         height="270"
         src="https://www.youtube.com/embed/chiWVxreqhU?feature=oembed"
         width="480"
@@ -1044,9 +1122,8 @@ exports[`CanonicalSocialEmbed should render correctly for YouTube 1`] = `
       class="c4"
     >
       <span>
-        Video caption,
+        Video caption, 
       </span>
-       
       Warning: Third party content may contain adverts
     </figcaption>
   </figure>
