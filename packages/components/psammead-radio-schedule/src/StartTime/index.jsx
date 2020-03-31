@@ -24,6 +24,7 @@ const StyledClock = styled.span`
   > svg {
     color: ${C_RHINO};
     margin: 0;
+    overflow: visible;
   }
 `;
 
