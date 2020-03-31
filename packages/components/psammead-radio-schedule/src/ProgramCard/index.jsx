@@ -16,7 +16,7 @@ import {
   getSerifMedium,
 } from '@bbc/psammead-styles/font-styles';
 import {
-  getLongPrimer,
+  getBrevier,
   getMinion,
   getPica,
 } from '@bbc/gel-foundations/typography';
@@ -75,7 +75,7 @@ const TitleWrapper = styled.span`
 
 const SummaryWrapper = styled.p`
   ${({ service }) => service && getSansRegular(service)};
-  ${({ script }) => script && getLongPrimer(script)};
+  ${({ script }) => script && getBrevier(script)};
   color: ${C_METAL};
   padding-bottom: ${GEL_SPACING_DBL};
   margin: 0; /* Reset */
@@ -87,7 +87,9 @@ const ButtonWrapper = styled.div`
   padding: ${GEL_SPACING};
   background-color: ${({ backgroundColor }) => backgroundColor};
   color: ${({ durationColor }) => durationColor};
-  border-top: 1px solid transparent;
+  @media screen and (-ms-high-contrast: active) {
+    background-color: transparent;
+  }
 `;
 
 const IconWrapper = styled.span`
@@ -95,7 +97,7 @@ const IconWrapper = styled.span`
     color: ${({ durationColor }) => durationColor};
     fill: currentColor;
     width: 1.0625rem;
-    height: ${GEL_SPACING_DBL};
+    height: 0.75rem;
     margin: 0;
   }
 `;

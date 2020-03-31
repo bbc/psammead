@@ -1,7 +1,9 @@
 # Psammead Calendars Changelog
 
+<!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 2.0.9 | [PR#3270](https://github.com/bbc/psammead/pull/3270) Security fixes |
 | 2.0.8 | [PR#3273](https://github.com/bbc/psammead/pull/3273) Talos - Bump Dependencies - @bbc/psammead-locales |
 | 2.0.7 | [PR#3271](https://github.com/bbc/psammead/pull/3271) Talos - Bump Dependencies - @bbc/psammead-locales |
 | 2.0.6 | [PR#3082](https://github.com/bbc/psammead/pull/3082) Talos - Bump Dependencies - @bbc/psammead-locales |

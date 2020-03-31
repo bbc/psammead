@@ -17,7 +17,7 @@ storiesOf('Components|SocialEmbed/Canonical', module)
       const caption =
         fixture.source === 'youtube'
           ? {
-              visuallyHiddenText: 'Video caption,',
+              textPrefixVisuallyHidden: 'Video caption, ',
               text: 'Warning: Third party content may contain adverts',
             }
           : null;
@@ -29,11 +29,12 @@ storiesOf('Components|SocialEmbed/Canonical', module)
           skipLink={{
             text: 'Skip %provider_name% content',
             endTextId: 'skip-%provider%-content',
-            endText: 'End of %provider_name% content',
+            endTextVisuallyHidden: 'End of %provider_name% content',
           }}
           fallback={{
             text: "Sorry but we're having trouble displaying this content",
             linkText: 'View content on %provider_name%',
+            linkTextSuffixVisuallyHidden: ', external',
             linkHref: 'https://www.bbc.co.uk',
             warningText:
               'Warning: BBC is not responsible for third party content',
@@ -57,11 +58,12 @@ storiesOf('Components|SocialEmbed/Canonical', module)
           skipLink={{
             text: 'Skip %provider_name% content',
             endTextId: 'skip-%provider%-content',
-            endText: 'End of %provider_name% content',
+            endTextVisuallyHidden: 'End of %provider_name% content',
           }}
           fallback={{
             text: "Sorry but we're having trouble displaying this content",
             linkText: 'View content on %provider_name%',
+            linkTextSuffixVisuallyHidden: ', external',
             linkHref: 'https://www.bbc.co.uk',
             warningText:
               'Warning: BBC is not responsible for third party content',
@@ -81,7 +83,7 @@ storiesOf('Components|SocialEmbed/Canonical', module)
       const caption =
         fixture.source === 'youtube'
           ? {
-              visuallyHiddenText: 'Video caption,',
+              textPrefixVisuallyHidden: 'Video caption, ',
               text: 'Warning: Third party content may contain adverts',
             }
           : null;
@@ -92,11 +94,12 @@ storiesOf('Components|SocialEmbed/Canonical', module)
           skipLink={{
             text: 'Skip %provider_name% content',
             endTextId: 'skip-%provider%-content',
-            endText: 'End of %provider_name% content',
+            endTextVisuallyHidden: 'End of %provider_name% content',
           }}
           fallback={{
             text: "Sorry but we're having trouble displaying this content",
             linkText: 'View content on %provider_name%',
+            linkTextSuffixVisuallyHidden: ', external',
             linkHref: 'https://www.bbc.co.uk',
             warningText:
               'Warning: BBC is not responsible for third party content',
@@ -135,7 +138,7 @@ storiesOf('Components|SocialEmbed/AMP', module)
       const caption =
         fixture.source === 'youtube'
           ? {
-              visuallyHiddenText: 'Video caption,',
+              textPrefixVisuallyHidden: 'Video caption, ',
               text: 'Warning: Third party content may contain adverts',
             }
           : null;
@@ -147,11 +150,12 @@ storiesOf('Components|SocialEmbed/AMP', module)
           skipLink={{
             text: 'Skip %provider_name% content',
             endTextId: 'skip-%provider%-content',
-            endText: 'End of %provider_name% content',
+            endTextVisuallyHidden: 'End of %provider_name% content',
           }}
           fallback={{
             text: "Sorry but we're having trouble displaying this content",
             linkText: 'View content on %provider_name%',
+            linkTextSuffixVisuallyHidden: ', external',
             linkHref: 'https://www.bbc.co.uk',
             warningText:
               'Warning: BBC is not responsible for third party content',
@@ -175,11 +179,12 @@ storiesOf('Components|SocialEmbed/AMP', module)
           skipLink={{
             text: 'Skip %provider_name% content',
             endTextId: 'skip-%provider%-content',
-            endText: 'End of %provider_name% content',
+            endTextVisuallyHidden: 'End of %provider_name% content',
           }}
           fallback={{
             text: "Sorry but we're having trouble displaying this content",
             linkText: 'View content on %provider_name%',
+            linkTextSuffixVisuallyHidden: ', external',
             linkHref: 'https://www.bbc.co.uk',
             warningText:
               'Warning: BBC is not responsible for third party content',
