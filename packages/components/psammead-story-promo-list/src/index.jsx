@@ -17,7 +17,7 @@ export const StoryPromoLi = styled.li.attrs({
 })`
 
   @media (max-width: ${GEL_GROUP_3_SCREEN_WIDTH_MAX}) {
-      border-bottom: 0.0625rem solid ${C_LUNAR};
+    border-bottom: 0.0625rem solid ${C_LUNAR};
   }
 
   ${({ border }) =>
