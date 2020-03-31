@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 3.1.4 | [PR#3270](https://github.com/bbc/psammead/pull/3270) Security fixes |
 | 3.1.3 | [PR#3155](https://github.com/bbc/psammead/pull/3155) add matchSnapshotAsync method to README |
 | 3.1.2 | [PR#2405](https://github.com/bbc/psammead/pull/2405) remove react-test-renderer from package.json |
 | 3.1.1 | [PR#2421](https://github.com/bbc/psammead/pull/2421) Removes done from `matchSnapshotAsync` and minor refactors |
