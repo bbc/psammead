@@ -13,7 +13,8 @@ The `@bbc/psammead-story-promo-list` package is a set of two components, `StoryP
 <!-- prettier-ignore -->
 | Argument | Type | Required | Default | Example        |
 | -------- | ---- | -------- | ------- | -------------- |
-| children | node | Yes      | N/A     | `<StoryPromoLi><StoryPromo image={Image} info={Info} /></StoryPromoLi>` |
+| children | node | yes      | N/A     | `<StoryPromoLi><StoryPromo image={Image} info={Info} /></StoryPromoLi>` |
+| border   | bool | no       | `true`    | `false` |
 
 ## Usage
 
