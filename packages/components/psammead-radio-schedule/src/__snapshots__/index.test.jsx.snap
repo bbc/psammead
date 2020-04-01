@@ -262,13 +262,6 @@ exports[`RadioSchedule should render ltr radio schedules correctly 1`] = `
   width: 100%;
 }
 
-.c8::after {
-  content: '',border-top:0.0625rem solid #AEAEB5;
-  top: 1rem;
-  margin-left: 0.625rem;
-  width: 100%;
-}
-
 .c8 > time {
   color: #5A5A5A;
   font-size: 0.75rem;
@@ -276,6 +269,14 @@ exports[`RadioSchedule should render ltr radio schedules correctly 1`] = `
   font-family: ReithSans,Helvetica,Arial,sans-serif;
   font-weight: 400;
   font-style: normal;
+}
+
+.c8::after {
+  content: '';
+  border-top: 0.0625rem solid #AEAEB5;
+  top: 1rem;
+  margin-left: 0.625rem;
+  width: 100%;
 }
 
 .c4 {
@@ -1361,13 +1362,6 @@ exports[`RadioSchedule should render rtl radio schedules correctly 1`] = `
   width: 100%;
 }
 
-.c8::after {
-  content: '',border-top:0.0625rem solid #AEAEB5;
-  top: 1rem;
-  margin-right: 0.625rem;
-  width: 100%;
-}
-
 .c8 > time {
   color: #5A5A5A;
   font-size: 0.75rem;
@@ -1375,6 +1369,14 @@ exports[`RadioSchedule should render rtl radio schedules correctly 1`] = `
   font-family: "BBC Nassim Arabic",Arial,Verdana,Geneva,Helvetica,sans-serif;
   font-weight: 400;
   font-style: normal;
+}
+
+.c8::after {
+  content: '';
+  border-top: 0.0625rem solid #AEAEB5;
+  top: 1rem;
+  margin-right: 0.625rem;
+  width: 100%;
 }
 
 .c4 {

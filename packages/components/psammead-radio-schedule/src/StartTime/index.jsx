@@ -46,19 +46,19 @@ const StyledTimestamp = styled.span`
   flex-direction: row;
   width: 100%;
 
+  > time {
+    color: ${C_RHINO};
+    ${({ script }) => script && getMinion(script)}
+    ${({ service }) => service && getSansRegular(service)}
+  }
+
   &::after {
-    content: '',
+    content: '';
     border-top: 0.0625rem solid ${C_PEBBLE};
     top: ${({ script }) => 0.5 + script.minion.groupA.lineHeight / 2 / 16}rem;
     ${({ dir }) =>
       dir === 'ltr' ? `margin-left: 0.625rem;` : `margin-right: 0.625rem;`}
     width: 100%;
-  }
-
-  > time {
-    color: ${C_RHINO};
-    ${({ script }) => script && getMinion(script)}
-    ${({ service }) => service && getSansRegular(service)}
   }
 `;
 
