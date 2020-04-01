@@ -46,19 +46,20 @@ const StyledTimestamp = styled.span`
   flex-direction: row;
   width: 100%;
 
+  &::after {
+    content: '',
+    border-top: 0.0625rem solid ${C_PEBBLE};
+    top: ${({ script }) => 0.5 + script.minion.groupA.lineHeight / 2 / 16}rem;
+    ${({ dir }) =>
+      dir === 'ltr' ? `margin-left: 0.625rem;` : `margin-right: 0.625rem;`}
+    width: 100%;
+  }
+
   > time {
     color: ${C_RHINO};
     ${({ script }) => script && getMinion(script)}
     ${({ service }) => service && getSansRegular(service)}
   }
-`;
-
-const Bar = styled.span`
-  border-top: 0.0625rem solid ${C_PEBBLE};
-  top: ${({ script }) => 0.5 + script.minion.groupA.lineHeight / 2 / 16}rem;
-  ${({ dir }) =>
-    dir === 'ltr' ? `margin-left: 0.625rem;` : `margin-right: 0.625rem;`}
-  width: 100%;
 `;
 
 export const StartTimestamp = ({
@@ -87,7 +88,6 @@ export const StartTimestamp = ({
         locale={locale}
         service={service}
       />
-      <Bar script={script} dir={dir} />
     </StyledTimestamp>
   );
 };

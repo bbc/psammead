@@ -64,6 +64,13 @@ exports[`StartTime should render LTR correctly 1`] = `
   width: 100%;
 }
 
+.c3::after {
+  content: '',border-top:0.0625rem solid #AEAEB5;
+  top: 1rem;
+  margin-left: 0.625rem;
+  width: 100%;
+}
+
 .c3 > time {
   color: #5A5A5A;
   font-size: 0.75rem;
@@ -71,13 +78,6 @@ exports[`StartTime should render LTR correctly 1`] = `
   font-family: ReithSans,Helvetica,Arial,sans-serif;
   font-weight: 400;
   font-style: normal;
-}
-
-.c5 {
-  border-top: 0.0625rem solid #AEAEB5;
-  top: 1rem;
-  margin-left: 0.625rem;
-  width: 100%;
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
@@ -142,10 +142,6 @@ exports[`StartTime should render LTR correctly 1`] = `
     >
       14:54
     </time>
-    <span
-      class="c5"
-      dir="ltr"
-    />
   </span>
 </div>
 `;
@@ -214,6 +210,13 @@ exports[`StartTime should render RTL correctly 1`] = `
   width: 100%;
 }
 
+.c3::after {
+  content: '',border-top:0.0625rem solid #AEAEB5;
+  top: 1rem;
+  margin-right: 0.625rem;
+  width: 100%;
+}
+
 .c3 > time {
   color: #5A5A5A;
   font-size: 0.75rem;
@@ -221,13 +224,6 @@ exports[`StartTime should render RTL correctly 1`] = `
   font-family: "BBC Nassim Persian",Arial,Verdana,Geneva,Helvetica,sans-serif;
   font-weight: 400;
   font-style: normal;
-}
-
-.c5 {
-  border-top: 0.0625rem solid #AEAEB5;
-  top: 1rem;
-  margin-right: 0.625rem;
-  width: 100%;
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
@@ -292,10 +288,6 @@ exports[`StartTime should render RTL correctly 1`] = `
     >
       ۱۴:۵۴
     </time>
-    <span
-      class="c5"
-      dir="rtl"
-    />
   </span>
 </div>
 `;
