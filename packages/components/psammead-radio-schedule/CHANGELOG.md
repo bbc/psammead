@@ -3,7 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
-| 0.1.0-alpha.28 | [PR#xxxx](https://github.com/bbc/psammead/pull/xxxx) Fix Duration border on FireFox High Contrast Mode |
+| 0.1.0-alpha.28 | [PR#3324](https://github.com/bbc/psammead/pull/3324) Fix Duration border on FireFox High Contrast Mode |
 | 0.1.0-alpha.27 | [PR#3309](https://github.com/bbc/psammead/pull/3309) Fix Program Card styling |
 | 0.1.0-alpha.26 | [PR#3312](https://github.com/bbc/psammead/pull/3312) Fix `ProgramCard` border on Windows High Contrast Mode |
 | 0.1.0-alpha.25 | [PR#3302](https://github.com/bbc/psammead/pull/3302) Fix radio schedules duration formatting |
