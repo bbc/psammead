@@ -79,7 +79,7 @@ exports[`RadioSchedule should render ltr radio schedules correctly 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  border: 0.0625rem solid transparent;
+  outline: 0.0625rem solid transparent;
   height: 100%;
 }
 
@@ -1177,7 +1177,7 @@ exports[`RadioSchedule should render rtl radio schedules correctly 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  border: 0.0625rem solid transparent;
+  outline: 0.0625rem solid transparent;
   height: 100%;
 }
 
