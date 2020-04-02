@@ -79,7 +79,7 @@ exports[`RadioSchedule should render ltr radio schedules correctly 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  outline: 0.0625rem solid transparent;
+  border: 0.0625rem solid transparent;
   height: 100%;
 }
 
@@ -396,6 +396,8 @@ exports[`RadioSchedule should render ltr radio schedules correctly 1`] = `
 @media screen and (-ms-high-contrast:active) {
   .c18 {
     background-color: transparent;
+    outline: none;
+    border-top: 0.0625rem solid transparent;
   }
 }
 
@@ -416,6 +418,8 @@ exports[`RadioSchedule should render ltr radio schedules correctly 1`] = `
 @media screen and (-ms-high-contrast:active) {
   .c22 {
     background-color: transparent;
+    outline: none;
+    border-top: 0.0625rem solid transparent;
   }
 }
 
@@ -436,6 +440,8 @@ exports[`RadioSchedule should render ltr radio schedules correctly 1`] = `
 @media screen and (-ms-high-contrast:active) {
   .c26 {
     background-color: transparent;
+    outline: none;
+    border-top: 0.0625rem solid transparent;
   }
 }
 
@@ -1177,7 +1183,7 @@ exports[`RadioSchedule should render rtl radio schedules correctly 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  outline: 0.0625rem solid transparent;
+  border: 0.0625rem solid transparent;
   height: 100%;
 }
 
@@ -1494,6 +1500,8 @@ exports[`RadioSchedule should render rtl radio schedules correctly 1`] = `
 @media screen and (-ms-high-contrast:active) {
   .c18 {
     background-color: transparent;
+    outline: none;
+    border-top: 0.0625rem solid transparent;
   }
 }
 
@@ -1514,6 +1522,8 @@ exports[`RadioSchedule should render rtl radio schedules correctly 1`] = `
 @media screen and (-ms-high-contrast:active) {
   .c22 {
     background-color: transparent;
+    outline: none;
+    border-top: 0.0625rem solid transparent;
   }
 }
 
@@ -1534,6 +1544,8 @@ exports[`RadioSchedule should render rtl radio schedules correctly 1`] = `
 @media screen and (-ms-high-contrast:active) {
   .c26 {
     background-color: transparent;
+    outline: none;
+    border-top: 0.0625rem solid transparent;
   }
 }
 

@@ -70,7 +70,7 @@ exports[`ProgramCard should render correctly for live 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  outline: 0.0625rem solid transparent;
+  border: 0.0625rem solid transparent;
   height: 100%;
 }
 
@@ -197,6 +197,8 @@ exports[`ProgramCard should render correctly for live 1`] = `
 @media screen and (-ms-high-contrast:active) {
   .c8 {
     background-color: transparent;
+    outline: none;
+    border-top: 0.0625rem solid transparent;
   }
 }
 
@@ -331,7 +333,7 @@ exports[`ProgramCard should render correctly for next 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  outline: 0.0625rem solid transparent;
+  border: 0.0625rem solid transparent;
   height: 100%;
 }
 
@@ -483,6 +485,8 @@ exports[`ProgramCard should render correctly for next 1`] = `
 @media screen and (-ms-high-contrast:active) {
   .c7 {
     background-color: transparent;
+    outline: none;
+    border-top: 0.0625rem solid transparent;
   }
 }
 
@@ -630,7 +634,7 @@ exports[`ProgramCard should render correctly for onDemand 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  outline: 0.0625rem solid transparent;
+  border: 0.0625rem solid transparent;
   height: 100%;
 }
 
@@ -757,6 +761,8 @@ exports[`ProgramCard should render correctly for onDemand 1`] = `
 @media screen and (-ms-high-contrast:active) {
   .c7 {
     background-color: transparent;
+    outline: none;
+    border-top: 0.0625rem solid transparent;
   }
 }
 
@@ -903,7 +909,7 @@ exports[`ProgramCard should render correctly in RTL 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  outline: 0.0625rem solid transparent;
+  border: 0.0625rem solid transparent;
   height: 100%;
 }
 
@@ -1030,6 +1036,8 @@ exports[`ProgramCard should render correctly in RTL 1`] = `
 @media screen and (-ms-high-contrast:active) {
   .c7 {
     background-color: transparent;
+    outline: none;
+    border-top: 0.0625rem solid transparent;
   }
 }
 
@@ -1185,7 +1193,7 @@ exports[`ProgramCard should render correctly without summary 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  outline: 0.0625rem solid transparent;
+  border: 0.0625rem solid transparent;
   height: 100%;
 }
 
@@ -1287,6 +1295,8 @@ exports[`ProgramCard should render correctly without summary 1`] = `
 @media screen and (-ms-high-contrast:active) {
   .c7 {
     background-color: transparent;
+    outline: none;
+    border-top: 0.0625rem solid transparent;
   }
 }
 

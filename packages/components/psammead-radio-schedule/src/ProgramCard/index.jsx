@@ -35,7 +35,7 @@ const CardWrapper = styled.div`
   background-color: ${C_WHITE};
   display: flex;
   flex-direction: column;
-  outline: 0.0625rem solid transparent;
+  border: 0.0625rem solid transparent;
   height: 100%;
 `;
 
@@ -90,6 +90,8 @@ const ButtonWrapper = styled.div`
   color: ${({ durationColor }) => durationColor};
   @media screen and (-ms-high-contrast: active) {
     background-color: transparent;
+    outline: none;
+    border-top: 0.0625rem solid transparent;
   }
 `;
 
