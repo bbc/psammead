@@ -72,7 +72,11 @@ exports[`ProgramCard should render correctly for live 1`] = `
   color: #6E6E73;
 }
 
-.c3:hover .c6,
+.c3:hover .c6 {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
 .c3:focus .c6 {
   -webkit-text-decoration: underline;
   text-decoration: underline;
@@ -334,7 +338,11 @@ exports[`ProgramCard should render correctly for next 1`] = `
   line-height: 1.25rem;
 }
 
-.c12:hover .c5,
+.c12:hover .c5 {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
 .c12:focus .c5 {
   -webkit-text-decoration: underline;
   text-decoration: underline;
@@ -634,7 +642,11 @@ exports[`ProgramCard should render correctly for onDemand 1`] = `
   color: #6E6E73;
 }
 
-.c3:hover .c5,
+.c3:hover .c5 {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
 .c3:focus .c5 {
   -webkit-text-decoration: underline;
   text-decoration: underline;
@@ -908,7 +920,11 @@ exports[`ProgramCard should render correctly in RTL 1`] = `
   color: #6E6E73;
 }
 
-.c3:hover .c5,
+.c3:hover .c5 {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
 .c3:focus .c5 {
   -webkit-text-decoration: underline;
   text-decoration: underline;
@@ -1191,7 +1207,11 @@ exports[`ProgramCard should render correctly without summary 1`] = `
   color: #6E6E73;
 }
 
-.c3:hover .c6,
+.c3:hover .c6 {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
 .c3:focus .c6 {
   -webkit-text-decoration: underline;
   text-decoration: underline;

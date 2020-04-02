@@ -93,7 +93,11 @@ exports[`RadioSchedule should render ltr radio schedules correctly 1`] = `
   color: #6E6E73;
 }
 
-.c13:hover .c16,
+.c13:hover .c16 {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
 .c13:focus .c16 {
   -webkit-text-decoration: underline;
   text-decoration: underline;
@@ -1176,7 +1180,11 @@ exports[`RadioSchedule should render rtl radio schedules correctly 1`] = `
   color: #6E6E73;
 }
 
-.c13:hover .c16,
+.c13:hover .c16 {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
 .c13:focus .c16 {
   -webkit-text-decoration: underline;
   text-decoration: underline;
