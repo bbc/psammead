@@ -40,7 +40,11 @@ const TitleWrapper = styled.span`
 `;
 
 const StyledLink = styled(Link)`
-  &:hover ${TitleWrapper}, &:focus ${TitleWrapper} {
+  &:hover ${TitleWrapper} {
+    text-decoration: underline;
+  }
+
+  &:focus ${TitleWrapper} {
     text-decoration: underline;
   }
 `;
