@@ -3,7 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
-| 5.0.3 | [PR#xxxx](https://github.com/bbc/psammead/pull/xxxx) Remove a `div` nested within the `h2` element |
+| 5.0.3 | [PR#3316](https://github.com/bbc/psammead/pull/3316) Replace a `div` with a `span` tag to fix invalid HTML syntax |
 | 5.0.2 | [PR#3262](https://github.com/bbc/psammead/pull/3262) Add `backgroundColor` prop |
 | 5.0.1 | [PR#3195](https://github.com/bbc/psammead/pull/3195) Define `z-index` on section-label wrapper |
 | 5.0.0 | [PR#3133](https://github.com/bbc/psammead/pull/3133) Change background colour from white to ghost |
