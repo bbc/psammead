@@ -91,7 +91,6 @@ const ButtonWrapper = styled.div`
   @media screen and (-ms-high-contrast: active) {
     background-color: transparent;
     outline: none;
-    border-top: 0.0625rem solid transparent;
   }
 `;
 

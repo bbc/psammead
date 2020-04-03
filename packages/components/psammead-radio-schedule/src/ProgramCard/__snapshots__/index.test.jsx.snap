@@ -198,7 +198,6 @@ exports[`ProgramCard should render correctly for live 1`] = `
   .c8 {
     background-color: transparent;
     outline: none;
-    border-top: 0.0625rem solid transparent;
   }
 }
 
@@ -486,7 +485,6 @@ exports[`ProgramCard should render correctly for next 1`] = `
   .c7 {
     background-color: transparent;
     outline: none;
-    border-top: 0.0625rem solid transparent;
   }
 }
 
@@ -762,7 +760,6 @@ exports[`ProgramCard should render correctly for onDemand 1`] = `
   .c7 {
     background-color: transparent;
     outline: none;
-    border-top: 0.0625rem solid transparent;
   }
 }
 
@@ -1037,7 +1034,6 @@ exports[`ProgramCard should render correctly in RTL 1`] = `
   .c7 {
     background-color: transparent;
     outline: none;
-    border-top: 0.0625rem solid transparent;
   }
 }
 
@@ -1296,7 +1292,6 @@ exports[`ProgramCard should render correctly without summary 1`] = `
   .c7 {
     background-color: transparent;
     outline: none;
-    border-top: 0.0625rem solid transparent;
   }
 }
 
