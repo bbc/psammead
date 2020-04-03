@@ -86,7 +86,7 @@ export const DropdownUl = styled.ul.attrs({ role: 'list' })`
   border-bottom: 0.125rem solid ${C_SHADOW};
 `;
 
-const StyledDropdownLi = styled.li`
+const StyledDropdownLi = styled.li.attrs({ role: 'listitem' })`
   padding: 0.75rem 0;
   border-bottom: 0.0625rem solid ${C_SHADOW};
 
@@ -121,7 +121,7 @@ export const DropdownLi = ({
   url,
   dir,
 }) => (
-  <StyledDropdownLi role="listitem">
+  <StyledDropdownLi>
     <StyledDropdownLink script={script} service={service} href={url}>
       {active && currentPageText ? (
         <StyledCurrentLink dir={dir}>
