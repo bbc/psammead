@@ -247,6 +247,7 @@ exports[`RadioSchedule should render ltr radio schedules correctly 1`] = `
 .c6 > svg {
   color: #5A5A5A;
   margin: 0;
+  overflow: visible;
 }
 
 .c8 {
@@ -1348,6 +1349,7 @@ exports[`RadioSchedule should render rtl radio schedules correctly 1`] = `
 .c6 > svg {
   color: #5A5A5A;
   margin: 0;
+  overflow: visible;
 }
 
 .c8 {
