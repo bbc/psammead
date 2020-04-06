@@ -23,7 +23,7 @@ const paddingReverseDir = ({ dir }) =>
 // This makes it work right. I don't fully understand how, but am
 // eternally grateful to the Flexbugs project.
 // https://github.com/philipwalton/flexbugs#flexbug-3
-const FlexColumn = styled.div`
+const FlexColumn = styled.span`
   display: flex;
   flex-direction: column;
 `;
