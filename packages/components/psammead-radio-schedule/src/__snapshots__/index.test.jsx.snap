@@ -175,6 +175,7 @@ exports[`RadioSchedule should render ltr radio schedules correctly 1`] = `
   line-height: 1rem;
   padding: 0.5rem;
   background-color: #B80000;
+  outline: 0.0625rem solid transparent;
   color: #FFFFFF;
 }
 
@@ -186,6 +187,7 @@ exports[`RadioSchedule should render ltr radio schedules correctly 1`] = `
   line-height: 1rem;
   padding: 0.5rem;
   background-color: #222222;
+  outline: 0.0625rem solid transparent;
   color: #FFFFFF;
 }
 
@@ -197,6 +199,7 @@ exports[`RadioSchedule should render ltr radio schedules correctly 1`] = `
   line-height: 1rem;
   padding: 0.5rem;
   background-color: #FFFFFF;
+  outline: 0.0625rem solid transparent;
   color: #11708C;
 }
 
@@ -406,6 +409,7 @@ exports[`RadioSchedule should render ltr radio schedules correctly 1`] = `
 @media screen and (-ms-high-contrast:active) {
   .c19 {
     background-color: transparent;
+    outline: none;
   }
 }
 
@@ -426,6 +430,7 @@ exports[`RadioSchedule should render ltr radio schedules correctly 1`] = `
 @media screen and (-ms-high-contrast:active) {
   .c23 {
     background-color: transparent;
+    outline: none;
   }
 }
 
@@ -446,6 +451,7 @@ exports[`RadioSchedule should render ltr radio schedules correctly 1`] = `
 @media screen and (-ms-high-contrast:active) {
   .c27 {
     background-color: transparent;
+    outline: none;
   }
 }
 
@@ -1263,6 +1269,7 @@ exports[`RadioSchedule should render rtl radio schedules correctly 1`] = `
   line-height: 1rem;
   padding: 0.5rem;
   background-color: #B80000;
+  outline: 0.0625rem solid transparent;
   color: #FFFFFF;
 }
 
@@ -1274,6 +1281,7 @@ exports[`RadioSchedule should render rtl radio schedules correctly 1`] = `
   line-height: 1rem;
   padding: 0.5rem;
   background-color: #222222;
+  outline: 0.0625rem solid transparent;
   color: #FFFFFF;
 }
 
@@ -1285,6 +1293,7 @@ exports[`RadioSchedule should render rtl radio schedules correctly 1`] = `
   line-height: 1rem;
   padding: 0.5rem;
   background-color: #FFFFFF;
+  outline: 0.0625rem solid transparent;
   color: #11708C;
 }
 
@@ -1494,6 +1503,7 @@ exports[`RadioSchedule should render rtl radio schedules correctly 1`] = `
 @media screen and (-ms-high-contrast:active) {
   .c19 {
     background-color: transparent;
+    outline: none;
   }
 }
 
@@ -1514,6 +1524,7 @@ exports[`RadioSchedule should render rtl radio schedules correctly 1`] = `
 @media screen and (-ms-high-contrast:active) {
   .c23 {
     background-color: transparent;
+    outline: none;
   }
 }
 
@@ -1534,6 +1545,7 @@ exports[`RadioSchedule should render rtl radio schedules correctly 1`] = `
 @media screen and (-ms-high-contrast:active) {
   .c27 {
     background-color: transparent;
+    outline: none;
   }
 }
 
