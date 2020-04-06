@@ -10,13 +10,58 @@ exports[`RadioSchedule should render ltr radio schedules correctly 1`] = `
   height: 0.725rem;
 }
 
-.c20 {
+.c21 {
   vertical-align: middle;
   margin: 0 0.25rem;
   color: #222222;
   fill: currentColor;
   width: 0.8125rem;
   height: 0.75rem;
+}
+
+.c15 {
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  -webkit-clip: rect(1px,1px,1px,1px);
+  clip: rect(1px,1px,1px,1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  width: 1px;
+  margin: 0;
+}
+
+.c14 {
+  font-family: ReithSans,Helvetica,Arial,sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: #B80000;
+  display: inline-block;
+  margin-right: 0.5rem;
+}
+
+.c17 {
+  color: #3F3F42;
+  padding: 0.5rem 0;
+  display: inline-block;
+  width: 100%;
+  font-family: ReithSans,Helvetica,Arial,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 0.9375rem;
+  line-height: 1.25rem;
+}
+
+.c26 {
+  color: #6E6E73;
+  padding: 0.5rem 0;
+  display: inline-block;
+  width: 100%;
+  font-family: ReithSans,Helvetica,Arial,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 0.9375rem;
+  line-height: 1.25rem;
 }
 
 .c13 {
@@ -48,25 +93,14 @@ exports[`RadioSchedule should render ltr radio schedules correctly 1`] = `
   color: #6E6E73;
 }
 
-.c15 {
-  -webkit-clip-path: inset(100%);
-  clip-path: inset(100%);
-  -webkit-clip: rect(1px,1px,1px,1px);
-  clip: rect(1px,1px,1px,1px);
-  height: 1px;
-  overflow: hidden;
-  position: absolute;
-  width: 1px;
-  margin: 0;
+.c13:hover .c16 {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
 }
 
-.c14 {
-  font-family: ReithSans,Helvetica,Arial,sans-serif;
-  font-weight: 700;
-  font-style: normal;
-  color: #B80000;
-  display: inline-block;
-  margin-right: 0.5rem;
+.c13:focus .c16 {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
 }
 
 .c10 {
@@ -101,7 +135,7 @@ exports[`RadioSchedule should render ltr radio schedules correctly 1`] = `
   margin: 0;
 }
 
-.c23 {
+.c24 {
   font-family: ReithSerif,Helvetica,Arial,sans-serif;
   font-weight: 500;
   font-style: normal;
@@ -111,7 +145,7 @@ exports[`RadioSchedule should render ltr radio schedules correctly 1`] = `
   margin: 0;
 }
 
-.c24 {
+.c25 {
   font-family: ReithSans,Helvetica,Arial,sans-serif;
   font-weight: 700;
   font-style: normal;
@@ -122,29 +156,7 @@ exports[`RadioSchedule should render ltr radio schedules correctly 1`] = `
   margin-right: 0.5rem;
 }
 
-.c16 {
-  color: #3F3F42;
-  padding: 0.5rem 0;
-  display: block;
-  font-family: ReithSans,Helvetica,Arial,sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 0.9375rem;
-  line-height: 1.25rem;
-}
-
-.c25 {
-  color: #6E6E73;
-  padding: 0.5rem 0;
-  display: block;
-  font-family: ReithSans,Helvetica,Arial,sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 0.9375rem;
-  line-height: 1.25rem;
-}
-
-.c17 {
+.c18 {
   font-family: ReithSans,Helvetica,Arial,sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -155,7 +167,7 @@ exports[`RadioSchedule should render ltr radio schedules correctly 1`] = `
   margin: 0;
 }
 
-.c18 {
+.c19 {
   font-family: ReithSans,Helvetica,Arial,sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -163,10 +175,11 @@ exports[`RadioSchedule should render ltr radio schedules correctly 1`] = `
   line-height: 1rem;
   padding: 0.5rem;
   background-color: #B80000;
+  outline: 0.0625rem solid transparent;
   color: #FFFFFF;
 }
 
-.c22 {
+.c23 {
   font-family: ReithSans,Helvetica,Arial,sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -174,10 +187,11 @@ exports[`RadioSchedule should render ltr radio schedules correctly 1`] = `
   line-height: 1rem;
   padding: 0.5rem;
   background-color: #222222;
+  outline: 0.0625rem solid transparent;
   color: #FFFFFF;
 }
 
-.c26 {
+.c27 {
   font-family: ReithSans,Helvetica,Arial,sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -185,10 +199,11 @@ exports[`RadioSchedule should render ltr radio schedules correctly 1`] = `
   line-height: 1rem;
   padding: 0.5rem;
   background-color: #FFFFFF;
+  outline: 0.0625rem solid transparent;
   color: #11708C;
 }
 
-.c19 > svg {
+.c20 > svg {
   color: #FFFFFF;
   fill: currentColor;
   width: 1.0625rem;
@@ -196,7 +211,7 @@ exports[`RadioSchedule should render ltr radio schedules correctly 1`] = `
   margin: 0;
 }
 
-.c27 > svg {
+.c28 > svg {
   color: #11708C;
   fill: currentColor;
   width: 1.0625rem;
@@ -204,7 +219,7 @@ exports[`RadioSchedule should render ltr radio schedules correctly 1`] = `
   margin: 0;
 }
 
-.c21 {
+.c22 {
   padding-left: 0.5rem;
 }
 
@@ -244,6 +259,7 @@ exports[`RadioSchedule should render ltr radio schedules correctly 1`] = `
 .c6 > svg {
   color: #5A5A5A;
   margin: 0;
+  overflow: visible;
 }
 
 .c8 {
@@ -293,146 +309,149 @@ exports[`RadioSchedule should render ltr radio schedules correctly 1`] = `
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
-  .c12 {
-    font-size: 1rem;
-    line-height: 1.25rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c12 {
-    font-size: 1rem;
-    line-height: 1.25rem;
-  }
-}
-
-@media (min-width:20rem) and (max-width:37.4375rem) {
-  .c23 {
-    font-size: 1rem;
-    line-height: 1.25rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c23 {
-    font-size: 1rem;
-    line-height: 1.25rem;
-  }
-}
-
-@media (min-width:20rem) and (max-width:37.4375rem) {
-  .c24 {
-    font-size: 1rem;
-    line-height: 1.25rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c24 {
-    font-size: 1rem;
-    line-height: 1.25rem;
-  }
-}
-
-@media (min-width:20rem) and (max-width:37.4375rem) {
-  .c16 {
-    font-size: 1rem;
-    line-height: 1.25rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c16 {
-    font-size: 1rem;
-    line-height: 1.25rem;
-  }
-}
-
-@media (min-width:20rem) and (max-width:37.4375rem) {
-  .c25 {
-    font-size: 1rem;
-    line-height: 1.25rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c25 {
-    font-size: 1rem;
-    line-height: 1.25rem;
-  }
-}
-
-@media (min-width:20rem) and (max-width:37.4375rem) {
   .c17 {
+    font-size: 1rem;
+    line-height: 1.25rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .c17 {
+    font-size: 1rem;
+    line-height: 1.25rem;
+  }
+}
+
+@media (min-width:20rem) and (max-width:37.4375rem) {
+  .c26 {
+    font-size: 1rem;
+    line-height: 1.25rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .c26 {
+    font-size: 1rem;
+    line-height: 1.25rem;
+  }
+}
+
+@media (min-width:20rem) and (max-width:37.4375rem) {
+  .c12 {
+    font-size: 1rem;
+    line-height: 1.25rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .c12 {
+    font-size: 1rem;
+    line-height: 1.25rem;
+  }
+}
+
+@media (min-width:20rem) and (max-width:37.4375rem) {
+  .c24 {
+    font-size: 1rem;
+    line-height: 1.25rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .c24 {
+    font-size: 1rem;
+    line-height: 1.25rem;
+  }
+}
+
+@media (min-width:20rem) and (max-width:37.4375rem) {
+  .c25 {
+    font-size: 1rem;
+    line-height: 1.25rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .c25 {
+    font-size: 1rem;
+    line-height: 1.25rem;
+  }
+}
+
+@media (min-width:20rem) and (max-width:37.4375rem) {
+  .c18 {
     font-size: 0.875rem;
     line-height: 1.125rem;
   }
 }
 
 @media (min-width:37.5rem) {
-  .c17 {
+  .c18 {
     font-size: 0.8125rem;
     line-height: 1rem;
   }
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
-  .c18 {
+  .c19 {
     font-size: 0.75rem;
     line-height: 1rem;
   }
 }
 
 @media (min-width:37.5rem) {
-  .c18 {
+  .c19 {
     font-size: 0.75rem;
     line-height: 1rem;
   }
 }
 
 @media screen and (-ms-high-contrast:active) {
-  .c18 {
+  .c19 {
     background-color: transparent;
+    outline: none;
   }
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
-  .c22 {
+  .c23 {
     font-size: 0.75rem;
     line-height: 1rem;
   }
 }
 
 @media (min-width:37.5rem) {
-  .c22 {
+  .c23 {
     font-size: 0.75rem;
     line-height: 1rem;
   }
 }
 
 @media screen and (-ms-high-contrast:active) {
-  .c22 {
+  .c23 {
     background-color: transparent;
+    outline: none;
   }
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
-  .c26 {
+  .c27 {
     font-size: 0.75rem;
     line-height: 1rem;
   }
 }
 
 @media (min-width:37.5rem) {
-  .c26 {
+  .c27 {
     font-size: 0.75rem;
     line-height: 1rem;
   }
 }
 
 @media screen and (-ms-high-contrast:active) {
-  .c26 {
+  .c27 {
     background-color: transparent;
+    outline: none;
   }
 }
 
@@ -626,57 +645,52 @@ exports[`RadioSchedule should render ltr radio schedules correctly 1`] = `
             href="/news/articles/cn7k01xp8kxo"
           >
             <span
-              class=""
               role="text"
             >
               <span
-                role="text"
+                aria-hidden="true"
+                class="c14"
+                dir="ltr"
               >
-                <span
-                  aria-hidden="true"
-                  class="c14"
-                  dir="ltr"
-                >
-                  LIVE 
-                </span>
-                <span
-                  class="c15"
-                  lang="en-GB"
-                >
-                  Live, 
-                </span>
+                LIVE 
               </span>
-              Could a computer ever create better art than a human?
               <span
                 class="c15"
+                lang="en-GB"
               >
-                , 
-                14:54
-                , 
+                Live, 
               </span>
-              <span
-                class="c16"
-              >
-                29/01/1990
-              </span>
+            </span>
+            Could a computer ever create better art than a human?
+            <span
+              class="c15"
+            >
+              , 
+              14:54
+              , 
+            </span>
+            <span
+              class="c16 c17"
+            >
+              29/01/1990
             </span>
           </a>
         </h3>
         <p
-          class="c17"
+          class="c18"
         >
           The critic, author, poet and TV host was known for his witty commentary on international television.
         </p>
       </div>
       <div
-        class="c18"
+        class="c19"
       >
         <span
-          class="c19"
+          class="c20"
         >
           <svg
             aria-hidden="true"
-            class="c20"
+            class="c21"
             focusable="false"
             height="12px"
             viewBox="0 0 13 12"
@@ -691,7 +705,7 @@ exports[`RadioSchedule should render ltr radio schedules correctly 1`] = `
           </svg>
         </span>
         <time
-          class="c21"
+          class="c22"
           datetime="PT1H"
           dir="ltr"
         >
@@ -702,7 +716,7 @@ exports[`RadioSchedule should render ltr radio schedules correctly 1`] = `
           </span>
           <span
             aria-hidden="true"
-            class="Duration0 "
+            class=""
           >
             1:00:00
           </span>
@@ -769,41 +783,36 @@ exports[`RadioSchedule should render ltr radio schedules correctly 1`] = `
             class="c13"
             href="/news/articles/cn7k01xp8kxo"
           >
+            Could a computer ever create better art than a human?
             <span
-              class=""
-              role="text"
+              class="c15"
             >
-              Could a computer ever create better art than a human?
-              <span
-                class="c15"
-              >
-                , 
-                14:54
-                , 
-              </span>
-              <span
-                class="c16"
-              >
-                29/01/1990
-              </span>
+              , 
+              14:54
+              , 
+            </span>
+            <span
+              class="c16 c17"
+            >
+              29/01/1990
             </span>
           </a>
         </h3>
         <p
-          class="c17"
+          class="c18"
         >
           The critic, author, poet and TV host was known for his witty commentary on international television.
         </p>
       </div>
       <div
-        class="c22"
+        class="c23"
       >
         <span
-          class="c19"
+          class="c20"
         >
           <svg
             aria-hidden="true"
-            class="c20"
+            class="c21"
             focusable="false"
             height="12px"
             viewBox="0 0 13 12"
@@ -818,7 +827,7 @@ exports[`RadioSchedule should render ltr radio schedules correctly 1`] = `
           </svg>
         </span>
         <time
-          class="c21"
+          class="c22"
           datetime="PT1H"
           dir="ltr"
         >
@@ -829,7 +838,7 @@ exports[`RadioSchedule should render ltr radio schedules correctly 1`] = `
           </span>
           <span
             aria-hidden="true"
-            class="Duration0 "
+            class=""
           >
             1:00:00
           </span>
@@ -896,41 +905,36 @@ exports[`RadioSchedule should render ltr radio schedules correctly 1`] = `
             class="c13"
             href="/news/articles/cn7k01xp8kxo"
           >
+            Could a computer ever create better art than a human?
             <span
-              class=""
-              role="text"
+              class="c15"
             >
-              Could a computer ever create better art than a human?
-              <span
-                class="c15"
-              >
-                , 
-                14:54
-                , 
-              </span>
-              <span
-                class="c16"
-              >
-                29/01/1990
-              </span>
+              , 
+              14:54
+              , 
+            </span>
+            <span
+              class="c16 c17"
+            >
+              29/01/1990
             </span>
           </a>
         </h3>
         <p
-          class="c17"
+          class="c18"
         >
           The critic, author, poet and TV host was known for his witty commentary on international television.
         </p>
       </div>
       <div
-        class="c22"
+        class="c23"
       >
         <span
-          class="c19"
+          class="c20"
         >
           <svg
             aria-hidden="true"
-            class="c20"
+            class="c21"
             focusable="false"
             height="12px"
             viewBox="0 0 13 12"
@@ -945,7 +949,7 @@ exports[`RadioSchedule should render ltr radio schedules correctly 1`] = `
           </svg>
         </span>
         <time
-          class="c21"
+          class="c22"
           datetime="PT1H"
           dir="ltr"
         >
@@ -956,7 +960,7 @@ exports[`RadioSchedule should render ltr radio schedules correctly 1`] = `
           </span>
           <span
             aria-hidden="true"
-            class="Duration0 "
+            class=""
           >
             1:00:00
           </span>
@@ -1017,48 +1021,43 @@ exports[`RadioSchedule should render ltr radio schedules correctly 1`] = `
         class="c11"
       >
         <h3
-          class="c23"
+          class="c24"
         >
           <span
-            class=""
-            role="text"
+            class="c25"
+            dir="ltr"
           >
-            <span
-              class="c24"
-              dir="ltr"
-            >
-              NEXT 
-            </span>
-            Could a computer ever create better art than a human?
-            <span
-              class="c15"
-            >
-              , 
-              14:54
-              , 
-            </span>
-            <span
-              class="c25"
-            >
-              29/01/1990
-            </span>
+            NEXT 
+          </span>
+          Could a computer ever create better art than a human?
+          <span
+            class="c15"
+          >
+            , 
+            14:54
+            , 
+          </span>
+          <span
+            class="c16 c26"
+          >
+            29/01/1990
           </span>
         </h3>
         <p
-          class="c17"
+          class="c18"
         >
           The critic, author, poet and TV host was known for his witty commentary on international television.
         </p>
       </div>
       <div
-        class="c26"
+        class="c27"
       >
         <span
-          class="c27"
+          class="c28"
         >
           <svg
             aria-hidden="true"
-            class="c20"
+            class="c21"
             focusable="false"
             height="12px"
             viewBox="0 0 13 12"
@@ -1073,7 +1072,7 @@ exports[`RadioSchedule should render ltr radio schedules correctly 1`] = `
           </svg>
         </span>
         <time
-          class="c21"
+          class="c22"
           datetime="PT1H"
           dir="ltr"
         >
@@ -1084,7 +1083,7 @@ exports[`RadioSchedule should render ltr radio schedules correctly 1`] = `
           </span>
           <span
             aria-hidden="true"
-            class="Duration0 "
+            class=""
           >
             1:00:00
           </span>
@@ -1105,13 +1104,58 @@ exports[`RadioSchedule should render rtl radio schedules correctly 1`] = `
   height: 0.725rem;
 }
 
-.c20 {
+.c21 {
   vertical-align: middle;
   margin: 0 0.25rem;
   color: #222222;
   fill: currentColor;
   width: 0.8125rem;
   height: 0.75rem;
+}
+
+.c15 {
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  -webkit-clip: rect(1px,1px,1px,1px);
+  clip: rect(1px,1px,1px,1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  width: 1px;
+  margin: 0;
+}
+
+.c14 {
+  font-family: "BBC Nassim Arabic",Arial,Verdana,Geneva,Helvetica,sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: #B80000;
+  display: inline-block;
+  margin-left: 0.5rem;
+}
+
+.c17 {
+  color: #3F3F42;
+  padding: 0.5rem 0;
+  display: inline-block;
+  width: 100%;
+  font-family: "BBC Nassim Arabic",Arial,Verdana,Geneva,Helvetica,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1rem;
+  line-height: 1.625rem;
+}
+
+.c26 {
+  color: #6E6E73;
+  padding: 0.5rem 0;
+  display: inline-block;
+  width: 100%;
+  font-family: "BBC Nassim Arabic",Arial,Verdana,Geneva,Helvetica,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1rem;
+  line-height: 1.625rem;
 }
 
 .c13 {
@@ -1143,25 +1187,14 @@ exports[`RadioSchedule should render rtl radio schedules correctly 1`] = `
   color: #6E6E73;
 }
 
-.c15 {
-  -webkit-clip-path: inset(100%);
-  clip-path: inset(100%);
-  -webkit-clip: rect(1px,1px,1px,1px);
-  clip: rect(1px,1px,1px,1px);
-  height: 1px;
-  overflow: hidden;
-  position: absolute;
-  width: 1px;
-  margin: 0;
+.c13:hover .c16 {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
 }
 
-.c14 {
-  font-family: "BBC Nassim Arabic",Arial,Verdana,Geneva,Helvetica,sans-serif;
-  font-weight: 700;
-  font-style: normal;
-  color: #B80000;
-  display: inline-block;
-  margin-left: 0.5rem;
+.c13:focus .c16 {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
 }
 
 .c10 {
@@ -1196,7 +1229,7 @@ exports[`RadioSchedule should render rtl radio schedules correctly 1`] = `
   margin: 0;
 }
 
-.c23 {
+.c24 {
   font-family: "BBC Nassim Arabic",Arial,Verdana,Geneva,Helvetica,sans-serif;
   font-weight: 700;
   font-style: normal;
@@ -1206,7 +1239,7 @@ exports[`RadioSchedule should render rtl radio schedules correctly 1`] = `
   margin: 0;
 }
 
-.c24 {
+.c25 {
   font-family: "BBC Nassim Arabic",Arial,Verdana,Geneva,Helvetica,sans-serif;
   font-weight: 700;
   font-style: normal;
@@ -1217,29 +1250,7 @@ exports[`RadioSchedule should render rtl radio schedules correctly 1`] = `
   margin-left: 0.5rem;
 }
 
-.c16 {
-  color: #3F3F42;
-  padding: 0.5rem 0;
-  display: block;
-  font-family: "BBC Nassim Arabic",Arial,Verdana,Geneva,Helvetica,sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 1rem;
-  line-height: 1.625rem;
-}
-
-.c25 {
-  color: #6E6E73;
-  padding: 0.5rem 0;
-  display: block;
-  font-family: "BBC Nassim Arabic",Arial,Verdana,Geneva,Helvetica,sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 1rem;
-  line-height: 1.625rem;
-}
-
-.c17 {
+.c18 {
   font-family: "BBC Nassim Arabic",Arial,Verdana,Geneva,Helvetica,sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -1250,7 +1261,7 @@ exports[`RadioSchedule should render rtl radio schedules correctly 1`] = `
   margin: 0;
 }
 
-.c18 {
+.c19 {
   font-family: "BBC Nassim Arabic",Arial,Verdana,Geneva,Helvetica,sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -1258,10 +1269,11 @@ exports[`RadioSchedule should render rtl radio schedules correctly 1`] = `
   line-height: 1rem;
   padding: 0.5rem;
   background-color: #B80000;
+  outline: 0.0625rem solid transparent;
   color: #FFFFFF;
 }
 
-.c22 {
+.c23 {
   font-family: "BBC Nassim Arabic",Arial,Verdana,Geneva,Helvetica,sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -1269,10 +1281,11 @@ exports[`RadioSchedule should render rtl radio schedules correctly 1`] = `
   line-height: 1rem;
   padding: 0.5rem;
   background-color: #222222;
+  outline: 0.0625rem solid transparent;
   color: #FFFFFF;
 }
 
-.c26 {
+.c27 {
   font-family: "BBC Nassim Arabic",Arial,Verdana,Geneva,Helvetica,sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -1280,10 +1293,11 @@ exports[`RadioSchedule should render rtl radio schedules correctly 1`] = `
   line-height: 1rem;
   padding: 0.5rem;
   background-color: #FFFFFF;
+  outline: 0.0625rem solid transparent;
   color: #11708C;
 }
 
-.c19 > svg {
+.c20 > svg {
   color: #FFFFFF;
   fill: currentColor;
   width: 1.0625rem;
@@ -1291,7 +1305,7 @@ exports[`RadioSchedule should render rtl radio schedules correctly 1`] = `
   margin: 0;
 }
 
-.c27 > svg {
+.c28 > svg {
   color: #11708C;
   fill: currentColor;
   width: 1.0625rem;
@@ -1299,7 +1313,7 @@ exports[`RadioSchedule should render rtl radio schedules correctly 1`] = `
   margin: 0;
 }
 
-.c21 {
+.c22 {
   padding-right: 0.5rem;
 }
 
@@ -1339,6 +1353,7 @@ exports[`RadioSchedule should render rtl radio schedules correctly 1`] = `
 .c6 > svg {
   color: #5A5A5A;
   margin: 0;
+  overflow: visible;
 }
 
 .c8 {
@@ -1388,28 +1403,42 @@ exports[`RadioSchedule should render rtl radio schedules correctly 1`] = `
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
-  .c12 {
+  .c17 {
     font-size: 1.25rem;
     line-height: 1.625rem;
   }
 }
 
 @media (min-width:37.5rem) {
-  .c12 {
+  .c17 {
     font-size: 1.25rem;
     line-height: 1.625rem;
   }
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
-  .c23 {
+  .c26 {
     font-size: 1.25rem;
     line-height: 1.625rem;
   }
 }
 
 @media (min-width:37.5rem) {
-  .c23 {
+  .c26 {
+    font-size: 1.25rem;
+    line-height: 1.625rem;
+  }
+}
+
+@media (min-width:20rem) and (max-width:37.4375rem) {
+  .c12 {
+    font-size: 1.25rem;
+    line-height: 1.625rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .c12 {
     font-size: 1.25rem;
     line-height: 1.625rem;
   }
@@ -1430,20 +1459,6 @@ exports[`RadioSchedule should render rtl radio schedules correctly 1`] = `
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
-  .c16 {
-    font-size: 1.25rem;
-    line-height: 1.625rem;
-  }
-}
-
-@media (min-width:37.5rem) {
-  .c16 {
-    font-size: 1.25rem;
-    line-height: 1.625rem;
-  }
-}
-
-@media (min-width:20rem) and (max-width:37.4375rem) {
   .c25 {
     font-size: 1.25rem;
     line-height: 1.625rem;
@@ -1458,76 +1473,79 @@ exports[`RadioSchedule should render rtl radio schedules correctly 1`] = `
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
-  .c17 {
+  .c18 {
     font-size: 1.125rem;
     line-height: 1.5rem;
   }
 }
 
 @media (min-width:37.5rem) {
-  .c17 {
+  .c18 {
     font-size: 1.125rem;
     line-height: 1.5rem;
   }
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
-  .c18 {
+  .c19 {
     font-size: 0.75rem;
     line-height: 1rem;
   }
 }
 
 @media (min-width:37.5rem) {
-  .c18 {
+  .c19 {
     font-size: 0.75rem;
     line-height: 1rem;
   }
 }
 
 @media screen and (-ms-high-contrast:active) {
-  .c18 {
+  .c19 {
     background-color: transparent;
+    outline: none;
   }
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
-  .c22 {
+  .c23 {
     font-size: 0.75rem;
     line-height: 1rem;
   }
 }
 
 @media (min-width:37.5rem) {
-  .c22 {
+  .c23 {
     font-size: 0.75rem;
     line-height: 1rem;
   }
 }
 
 @media screen and (-ms-high-contrast:active) {
-  .c22 {
+  .c23 {
     background-color: transparent;
+    outline: none;
   }
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
-  .c26 {
+  .c27 {
     font-size: 0.75rem;
     line-height: 1rem;
   }
 }
 
 @media (min-width:37.5rem) {
-  .c26 {
+  .c27 {
     font-size: 0.75rem;
     line-height: 1rem;
   }
 }
 
 @media screen and (-ms-high-contrast:active) {
-  .c26 {
+  .c27 {
     background-color: transparent;
+    outline: none;
   }
 }
 
@@ -1721,50 +1739,45 @@ exports[`RadioSchedule should render rtl radio schedules correctly 1`] = `
             href="/arabic/articles/c1er5mjnznzo"
           >
             <span
-              class=""
               role="text"
             >
               <span
-                role="text"
+                class="c14"
+                dir="rtl"
               >
-                <span
-                  class="c14"
-                  dir="rtl"
-                >
-                  مباشر 
-                </span>
+                مباشر 
               </span>
-              لماذا يخجل البعض من اسم قريته في مصر؟
-              <span
-                class="c15"
-              >
-                , 
-                ۱۴:۵۴
-                , 
-              </span>
-              <span
-                class="c16"
-              >
-                29/01/1990
-              </span>
+            </span>
+            لماذا يخجل البعض من اسم قريته في مصر؟
+            <span
+              class="c15"
+            >
+              , 
+              ۱۴:۵۴
+              , 
+            </span>
+            <span
+              class="c16 c17"
+            >
+              29/01/1990
             </span>
           </a>
         </h3>
         <p
-          class="c17"
+          class="c18"
         >
           هناك وقائع عدة تتسم بالسخرية والجدل والتنمر، ضد أهل القرية الذين أصابهم الغضب والسخط مما دفعهم إلى تقديم طلب لتغيير اسم قريتهم.
         </p>
       </div>
       <div
-        class="c18"
+        class="c19"
       >
         <span
-          class="c19"
+          class="c20"
         >
           <svg
             aria-hidden="true"
-            class="c20"
+            class="c21"
             focusable="false"
             height="12px"
             viewBox="0 0 13 12"
@@ -1779,7 +1792,7 @@ exports[`RadioSchedule should render rtl radio schedules correctly 1`] = `
           </svg>
         </span>
         <time
-          class="c21"
+          class="c22"
           datetime="PT1H"
           dir="rtl"
         >
@@ -1790,7 +1803,7 @@ exports[`RadioSchedule should render rtl radio schedules correctly 1`] = `
           </span>
           <span
             aria-hidden="true"
-            class="Duration0 "
+            class=""
           >
             1:00:00
           </span>
@@ -1857,41 +1870,36 @@ exports[`RadioSchedule should render rtl radio schedules correctly 1`] = `
             class="c13"
             href="/arabic/articles/c1er5mjnznzo"
           >
+            لماذا يخجل البعض من اسم قريته في مصر؟
             <span
-              class=""
-              role="text"
+              class="c15"
             >
-              لماذا يخجل البعض من اسم قريته في مصر؟
-              <span
-                class="c15"
-              >
-                , 
-                ۱۴:۵۴
-                , 
-              </span>
-              <span
-                class="c16"
-              >
-                29/01/1990
-              </span>
+              , 
+              ۱۴:۵۴
+              , 
+            </span>
+            <span
+              class="c16 c17"
+            >
+              29/01/1990
             </span>
           </a>
         </h3>
         <p
-          class="c17"
+          class="c18"
         >
           هناك وقائع عدة تتسم بالسخرية والجدل والتنمر، ضد أهل القرية الذين أصابهم الغضب والسخط مما دفعهم إلى تقديم طلب لتغيير اسم قريتهم.
         </p>
       </div>
       <div
-        class="c22"
+        class="c23"
       >
         <span
-          class="c19"
+          class="c20"
         >
           <svg
             aria-hidden="true"
-            class="c20"
+            class="c21"
             focusable="false"
             height="12px"
             viewBox="0 0 13 12"
@@ -1906,7 +1914,7 @@ exports[`RadioSchedule should render rtl radio schedules correctly 1`] = `
           </svg>
         </span>
         <time
-          class="c21"
+          class="c22"
           datetime="PT1H"
           dir="rtl"
         >
@@ -1917,7 +1925,7 @@ exports[`RadioSchedule should render rtl radio schedules correctly 1`] = `
           </span>
           <span
             aria-hidden="true"
-            class="Duration0 "
+            class=""
           >
             1:00:00
           </span>
@@ -1984,41 +1992,36 @@ exports[`RadioSchedule should render rtl radio schedules correctly 1`] = `
             class="c13"
             href="/arabic/articles/c1er5mjnznzo"
           >
+            لماذا يخجل البعض من اسم قريته في مصر؟
             <span
-              class=""
-              role="text"
+              class="c15"
             >
-              لماذا يخجل البعض من اسم قريته في مصر؟
-              <span
-                class="c15"
-              >
-                , 
-                ۱۴:۵۴
-                , 
-              </span>
-              <span
-                class="c16"
-              >
-                29/01/1990
-              </span>
+              , 
+              ۱۴:۵۴
+              , 
+            </span>
+            <span
+              class="c16 c17"
+            >
+              29/01/1990
             </span>
           </a>
         </h3>
         <p
-          class="c17"
+          class="c18"
         >
           هناك وقائع عدة تتسم بالسخرية والجدل والتنمر، ضد أهل القرية الذين أصابهم الغضب والسخط مما دفعهم إلى تقديم طلب لتغيير اسم قريتهم.
         </p>
       </div>
       <div
-        class="c22"
+        class="c23"
       >
         <span
-          class="c19"
+          class="c20"
         >
           <svg
             aria-hidden="true"
-            class="c20"
+            class="c21"
             focusable="false"
             height="12px"
             viewBox="0 0 13 12"
@@ -2033,7 +2036,7 @@ exports[`RadioSchedule should render rtl radio schedules correctly 1`] = `
           </svg>
         </span>
         <time
-          class="c21"
+          class="c22"
           datetime="PT1H"
           dir="rtl"
         >
@@ -2044,7 +2047,7 @@ exports[`RadioSchedule should render rtl radio schedules correctly 1`] = `
           </span>
           <span
             aria-hidden="true"
-            class="Duration0 "
+            class=""
           >
             1:00:00
           </span>
@@ -2105,48 +2108,43 @@ exports[`RadioSchedule should render rtl radio schedules correctly 1`] = `
         class="c11"
       >
         <h3
-          class="c23"
+          class="c24"
         >
           <span
-            class=""
-            role="text"
+            class="c25"
+            dir="rtl"
           >
-            <span
-              class="c24"
-              dir="rtl"
-            >
-              مباشر 
-            </span>
-            لماذا يخجل البعض من اسم قريته في مصر؟
-            <span
-              class="c15"
-            >
-              , 
-              ۱۴:۵۴
-              , 
-            </span>
-            <span
-              class="c25"
-            >
-              29/01/1990
-            </span>
+            مباشر 
+          </span>
+          لماذا يخجل البعض من اسم قريته في مصر؟
+          <span
+            class="c15"
+          >
+            , 
+            ۱۴:۵۴
+            , 
+          </span>
+          <span
+            class="c16 c26"
+          >
+            29/01/1990
           </span>
         </h3>
         <p
-          class="c17"
+          class="c18"
         >
           هناك وقائع عدة تتسم بالسخرية والجدل والتنمر، ضد أهل القرية الذين أصابهم الغضب والسخط مما دفعهم إلى تقديم طلب لتغيير اسم قريتهم.
         </p>
       </div>
       <div
-        class="c26"
+        class="c27"
       >
         <span
-          class="c27"
+          class="c28"
         >
           <svg
             aria-hidden="true"
-            class="c20"
+            class="c21"
             focusable="false"
             height="12px"
             viewBox="0 0 13 12"
@@ -2161,7 +2159,7 @@ exports[`RadioSchedule should render rtl radio schedules correctly 1`] = `
           </svg>
         </span>
         <time
-          class="c21"
+          class="c22"
           datetime="PT1H"
           dir="rtl"
         >
@@ -2172,7 +2170,7 @@ exports[`RadioSchedule should render rtl radio schedules correctly 1`] = `
           </span>
           <span
             aria-hidden="true"
-            class="Duration0 "
+            class=""
           >
             1:00:00
           </span>
