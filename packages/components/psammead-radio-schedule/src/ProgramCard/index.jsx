@@ -86,9 +86,11 @@ const ButtonWrapper = styled.div`
   ${({ script }) => script && getMinion(script)};
   padding: ${GEL_SPACING};
   background-color: ${({ backgroundColor }) => backgroundColor};
+  outline: 0.0625rem solid transparent;
   color: ${({ durationColor }) => durationColor};
   @media screen and (-ms-high-contrast: active) {
     background-color: transparent;
+    outline: none;
   }
 `;
 
