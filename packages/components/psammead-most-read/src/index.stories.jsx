@@ -11,8 +11,10 @@ const newsServiceDecorator = withServicesKnob({
   defaultService: 'news',
 });
 const listIndexRange = {
+  range: true,
   min: 1,
   max: 10,
+  step: 1,
 };
 
 const pageTypes = ['oneColumn', 'twoColumn', 'multiColumn'];
@@ -123,7 +125,7 @@ storiesOf('Components|MostRead/List', module)
     () =>
       newsServiceDecorator(({ dir, script, selectedService }) =>
         renderList({
-          numberOfItems: 10,
+          numberOfItems: number('Number (1 - 10)', 10, listIndexRange),
           columnLayout: select('Page Type (columns)', pageTypes, 'multiColumn'),
           withTimestamp: boolean('Timestamp', false),
           small: boolean('Small Text', false),

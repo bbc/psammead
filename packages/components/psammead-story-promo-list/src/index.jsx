@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { node } from 'prop-types';
+import { node, bool } from 'prop-types';
 import { C_LUNAR } from '@bbc/psammead-styles/colours';
 import {
   GEL_SPACING,
@@ -15,9 +15,19 @@ import {
 export const StoryPromoLi = styled.li.attrs({
   role: 'listitem',
 })`
+
   @media (max-width: ${GEL_GROUP_3_SCREEN_WIDTH_MAX}) {
     border-bottom: 0.0625rem solid ${C_LUNAR};
   }
+
+  ${({ border }) =>
+    !border &&
+    `
+      @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) and (max-width: ${GEL_GROUP_3_SCREEN_WIDTH_MAX}) {
+          border-bottom: none;
+      }
+    `}
+
   padding: ${GEL_SPACING} 0 ${GEL_SPACING_DBL};
 
   @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
@@ -56,4 +66,9 @@ StoryPromoUl.propTypes = {
 
 StoryPromoLi.propTypes = {
   children: node.isRequired,
+  border: bool,
+};
+
+StoryPromoLi.defaultProps = {
+  border: true,
 };

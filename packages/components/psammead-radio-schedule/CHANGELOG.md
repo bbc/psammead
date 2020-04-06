@@ -3,6 +3,13 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 0.1.0-alpha.31 | [PR#3326](https://github.com/bbc/psammead/pull/3326) Update Program Card Heading markup and CSS to fix issue with AT |
+| 0.1.0-alpha.30 | [PR#3324](https://github.com/bbc/psammead/pull/3324) Fix Duration border on FireFox High Contrast Mode |
+| 0.1.0-alpha.29 | [PR#3318](https://github.com/bbc/psammead/pull/3318) Fix `StartTime` clock icon styling in Safari |
+| 0.1.0-alpha.28 | [PR#3321](https://github.com/bbc/psammead/pull/3321) Fix radio schedules duration markup |
+| 0.1.0-alpha.27 | [PR#3309](https://github.com/bbc/psammead/pull/3309) Fix Program Card styling |
+| 0.1.0-alpha.26 | [PR#3312](https://github.com/bbc/psammead/pull/3312) Fix `ProgramCard` border on Windows High Contrast Mode |
+| 0.1.0-alpha.25 | [PR#3302](https://github.com/bbc/psammead/pull/3302) Fix radio schedules duration formatting |
 | 0.1.0-alpha.24 | [PR#3291](https://github.com/bbc/psammead/pull/3291) Use withServicesKnob `selectedService` prop |
 | 0.1.0-alpha.23 | [PR#3297](https://github.com/bbc/psammead/pull/3297) Use LiveLabel, and pass in translations for next and live |
 | 0.1.0-alpha.22 | [PR#3274](https://github.com/bbc/psammead/pull/3274) Talos - Bump Dependencies - @bbc/psammead-timestamp-container |

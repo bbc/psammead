@@ -16,7 +16,7 @@ import {
   getSerifMedium,
 } from '@bbc/psammead-styles/font-styles';
 import {
-  getLongPrimer,
+  getBrevier,
   getMinion,
   getPica,
 } from '@bbc/gel-foundations/typography';
@@ -29,6 +29,25 @@ import {
   formatUnixTimestamp,
   formatDuration,
 } from '@bbc/psammead-timestamp-container/utilities';
+
+const TitleWrapper = styled.span`
+  color: ${({ titleColor }) => titleColor};
+  padding: ${GEL_SPACING} 0;
+  display: inline-block;
+  width: 100%;
+  ${({ service }) => service && getSansRegular(service)};
+  ${({ script }) => script && getPica(script)};
+`;
+
+const StyledLink = styled(Link)`
+  &:hover ${TitleWrapper} {
+    text-decoration: underline;
+  }
+
+  &:focus ${TitleWrapper} {
+    text-decoration: underline;
+  }
+`;
 
 const CardWrapper = styled.div`
   padding-top: ${GEL_SPACING};
@@ -44,14 +63,12 @@ const TextWrapper = styled.div`
   flex-grow: 1;
 `;
 
-const HeadingWrapper = styled.h3`
+const StyledH3 = styled.h3`
   ${({ service }) => service && getSerifMedium(service)};
   ${({ script }) => script && getPica(script)};
   color: ${({ headerTextColor }) => headerTextColor};
   margin: 0; /* Reset */
 `;
-
-const HeadingContentWrapper = styled.span.attrs({ role: 'text' })``;
 
 const NextLabel = styled.span`
   ${({ service }) => service && getSansBold(service)};
@@ -65,17 +82,9 @@ const NextLabel = styled.span`
       : `margin-right: ${GEL_SPACING};`}
 `;
 
-const TitleWrapper = styled.span`
-  color: ${({ titleColor }) => titleColor};
-  padding: ${GEL_SPACING} 0;
-  display: block;
-  ${({ service }) => service && getSansRegular(service)};
-  ${({ script }) => script && getPica(script)};
-`;
-
 const SummaryWrapper = styled.p`
   ${({ service }) => service && getSansRegular(service)};
-  ${({ script }) => script && getLongPrimer(script)};
+  ${({ script }) => script && getBrevier(script)};
   color: ${C_METAL};
   padding-bottom: ${GEL_SPACING_DBL};
   margin: 0; /* Reset */
@@ -86,8 +95,12 @@ const ButtonWrapper = styled.div`
   ${({ script }) => script && getMinion(script)};
   padding: ${GEL_SPACING};
   background-color: ${({ backgroundColor }) => backgroundColor};
+  outline: 0.0625rem solid transparent;
   color: ${({ durationColor }) => durationColor};
-  border-top: 1px solid transparent;
+  @media screen and (-ms-high-contrast: active) {
+    background-color: transparent;
+    outline: none;
+  }
 `;
 
 const IconWrapper = styled.span`
@@ -95,7 +108,7 @@ const IconWrapper = styled.span`
     color: ${({ durationColor }) => durationColor};
     fill: currentColor;
     width: 1.0625rem;
-    height: ${GEL_SPACING_DBL};
+    height: 0.75rem;
     margin: 0;
   }
 `;
@@ -158,7 +171,7 @@ const renderHeaderContent = ({
   );
 
   const content = (
-    <HeadingContentWrapper>
+    <>
       {isLive && (
         <LiveLabel
           service={service}
@@ -182,10 +195,22 @@ const renderHeaderContent = ({
       >
         {episodeTitle}
       </TitleWrapper>
-    </HeadingContentWrapper>
+    </>
   );
 
-  return state === 'next' ? content : <Link href={link}>{content}</Link>;
+  return state === 'next' ? (
+    content
+  ) : (
+    <StyledLink href={link}>{content}</StyledLink>
+  );
+};
+
+const getDurationFormat = (duration, separator = ':') => {
+  const timeSections = ['mm', 'ss'];
+  if (duration.includes('H')) {
+    timeSections.unshift('h');
+  }
+  return timeSections.join(separator);
 };
 
 const ProgramCard = ({
@@ -207,7 +232,7 @@ const ProgramCard = ({
 }) => (
   <CardWrapper>
     <TextWrapper>
-      <HeadingWrapper
+      <StyledH3
         service={service}
         script={script}
         {...programStateConfig[state]}
@@ -226,7 +251,7 @@ const ProgramCard = ({
           locale,
           dir,
         })}
-      </HeadingWrapper>
+      </StyledH3>
       {summary && (
         <SummaryWrapper service={service} script={script}>
           {summary}
@@ -243,9 +268,14 @@ const ProgramCard = ({
       </IconWrapper>
       <DurationWrapper dir={dir} dateTime={duration}>
         <VisuallyHiddenText>
-          {` ${durationLabel} ${formatDuration(duration, 'mm,ss')} `}
+          {` ${durationLabel} ${formatDuration(
+            duration,
+            getDurationFormat(duration, ','),
+          )} `}
         </VisuallyHiddenText>
-        <DurationTextWrapper>{formatDuration(duration)}</DurationTextWrapper>
+        <DurationTextWrapper>
+          {formatDuration(duration, getDurationFormat(duration))}
+        </DurationTextWrapper>
       </DurationWrapper>
     </ButtonWrapper>
   </CardWrapper>
