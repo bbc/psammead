@@ -24,8 +24,8 @@ const getPromiseFromCommand = command =>
 module.exports = packages => {
   const packageList = packages.join(', ');
   const commands = [
-    `npx npm-check-updates ${packageList} --packageFile package.json -u -a`,
-    `npx lerna exec --parallel --no-bail -- npx npm-check-updates ${packageList} -u -a`,
+    `npx npm-check-updates ${packageList} --packageFile package.json -u`,
+    `npx lerna exec --parallel --no-bail -- npx npm-check-updates ${packageList} -u`,
   ];
 
   // eslint-disable-next-line no-console
