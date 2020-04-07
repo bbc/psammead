@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 2.0.116 | [PR#3343](https://github.com/bbc/psammead/pull/3343) Talos - Bump Dependencies - @bbc/moment-timezone-include, @bbc/psammead-bulletin, @bbc/psammead-calendars, @bbc/psammead-most-read, @bbc/psammead-rich-text-transforms, @bbc/psammead-script-link, @bbc/psammead-section-label, @bbc/psammead-story-promo, @bbc/psammead-story-promo-list, @bbc/psammead-storybook-helpers, @bbc/psammead-test-helpers, @bbc/psammead-timestamp-container |
 | 2.0.115 | [PR#3340](https://github.com/bbc/psammead/pull/3340) Removing -a option to fix Talos |
 | 2.0.114 | [PR#3327](https://github.com/bbc/psammead/pull/3327) Final security patch for `minimist` |
 | 2.0.113 | [PR#3270](https://github.com/bbc/psammead/pull/3270) Security patch for `minimist` |
