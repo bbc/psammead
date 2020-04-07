@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 0.1.0-alpha.32 | [PR#xxxx](https://github.com/bbc/psammead/pull/xxxx) Remove border from Program Card |
 | 0.1.0-alpha.31 | [PR#3326](https://github.com/bbc/psammead/pull/3326) Update Program Card Heading markup and CSS to fix issue with AT |
 | 0.1.0-alpha.30 | [PR#3324](https://github.com/bbc/psammead/pull/3324) Fix Duration border on FireFox High Contrast Mode |
 | 0.1.0-alpha.29 | [PR#3318](https://github.com/bbc/psammead/pull/3318) Fix `StartTime` clock icon styling in Safari |
