@@ -36,7 +36,8 @@ const Wrapper = styled.div`
       color: ${C_METAL};
     }
 
-    &:hover {
+    &:hover,
+    &:focus {
       text-decoration: underline;
     }
   }

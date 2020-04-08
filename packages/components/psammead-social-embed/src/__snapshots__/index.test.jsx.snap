@@ -83,7 +83,8 @@ exports[`AmpSocialEmbed should render a notice when the provider is unsupported 
   color: #6E6E73;
 }
 
-.c2 a:hover {
+.c2 a:hover,
+.c2 a:focus {
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
@@ -576,7 +577,8 @@ exports[`CanonicalSocialEmbed should render a notice when the provider is unsupp
   color: #6E6E73;
 }
 
-.c2 a:hover {
+.c2 a:hover,
+.c2 a:focus {
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
@@ -724,7 +726,8 @@ exports[`CanonicalSocialEmbed should render a notice when there is no oEmbed res
   color: #6E6E73;
 }
 
-.c2 a:hover {
+.c2 a:hover,
+.c2 a:focus {
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
