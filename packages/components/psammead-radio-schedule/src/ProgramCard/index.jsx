@@ -54,7 +54,7 @@ const CardWrapper = styled.div`
   background-color: ${C_WHITE};
   display: flex;
   flex-direction: column;
-  border: 0.0625rem solid transparent;
+  outline: 0.0625rem solid transparent;
   height: 100%;
 `;
 
