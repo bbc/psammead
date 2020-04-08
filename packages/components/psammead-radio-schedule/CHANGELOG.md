@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 1.0.0 | [PR#3350](https://github.com/BBC/psammead/pull/3350) Remove alpha tag |
 | 0.1.0-alpha.33 | [PR#3348](https://github.com/bbc/psammead/pull/3348) Add wrapping span with role `text` around the headline |
 | 0.1.0-alpha.32 | [PR#3345](https://github.com/bbc/psammead/pull/3345) Remove border from Program Card |
 | 0.1.0-alpha.31 | [PR#3326](https://github.com/bbc/psammead/pull/3326) Update Program Card Heading markup and CSS to fix issue with AT |
