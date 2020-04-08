@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { cloneElement } from 'react';
 import styled, { css } from 'styled-components';
 import { node, bool, string, oneOf, shape } from 'prop-types';
 import {
@@ -194,12 +194,12 @@ Summary.defaultProps = {
   promoType: 'regular',
 };
 
-export const Link = styled.a`
-  position: static;
-  color: ${C_EBON};
-  text-decoration: none;
+const LinkStyles = `
+    position: static;
+    color: ${C_EBON};
+    text-decoration: none;
 
-  &:before {
+    &:before {
     bottom: 0;
     content: '';
     left: 0;
@@ -209,16 +209,26 @@ export const Link = styled.a`
     top: 0;
     white-space: nowrap;
     z-index: 1;
-  }
+    }
 
-  &:hover,
-  &:focus {
+    &:hover,
+    &:focus {
     text-decoration: underline;
-  }
+    }
 
-  &:visited {
+    &:visited {
     color: ${C_METAL};
-  }
+    }
+`;
+
+export const Link = styled.a`
+  ${LinkStyles}
+`;
+
+export const CustomLink = styled(({ component, ...props }) =>
+  cloneElement(component, props),
+)`
+  ${LinkStyles}
 `;
 
 const StoryPromo = ({
