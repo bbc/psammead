@@ -79,6 +79,15 @@ exports[`AmpSocialEmbed should render a notice when the provider is unsupported 
   text-decoration: none;
 }
 
+.c2 a:visited {
+  color: #6E6E73;
+}
+
+.c2 a:hover {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
 .c2 small {
   margin-top: 0.5rem;
   font-size: 0.75rem;
@@ -563,6 +572,15 @@ exports[`CanonicalSocialEmbed should render a notice when the provider is unsupp
   text-decoration: none;
 }
 
+.c2 a:visited {
+  color: #6E6E73;
+}
+
+.c2 a:hover {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
 .c2 small {
   margin-top: 0.5rem;
   font-size: 0.75rem;
@@ -700,6 +718,15 @@ exports[`CanonicalSocialEmbed should render a notice when there is no oEmbed res
   font-style: normal;
   -webkit-text-decoration: none;
   text-decoration: none;
+}
+
+.c2 a:visited {
+  color: #6E6E73;
+}
+
+.c2 a:hover {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
 }
 
 .c2 small {
