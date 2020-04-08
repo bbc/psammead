@@ -23,23 +23,25 @@ export const CanonicalSocialEmbed = ({
   const isSupportedProvider = Object.keys(providers).includes(provider);
   const hasCaption = caption && caption.text;
 
-  if (isSupportedProvider && oEmbed && hasCaption)
-    return (
-      <SkipLinkWrapper service={service} provider={provider} {...skipLink}>
+  const renderCanonicalContent = () => {
+    if (isSupportedProvider && oEmbed && hasCaption)
+      return (
         <CaptionWrapper service={service} {...caption}>
           <CanonicalEmbed provider={provider} oEmbed={oEmbed} />
         </CaptionWrapper>
-      </SkipLinkWrapper>
-    );
+      );
 
-  if (isSupportedProvider && oEmbed)
-    return (
-      <SkipLinkWrapper service={service} provider={provider} {...skipLink}>
-        <CanonicalEmbed provider={provider} oEmbed={oEmbed} />
-      </SkipLinkWrapper>
-    );
+    if (isSupportedProvider && oEmbed)
+      return <CanonicalEmbed provider={provider} oEmbed={oEmbed} />;
 
-  return <Notice service={service} provider={provider} {...fallback} />;
+    return <Notice service={service} provider={provider} {...fallback} />;
+  };
+
+  return (
+    <SkipLinkWrapper service={service} provider={provider} {...skipLink}>
+      {renderCanonicalContent()}
+    </SkipLinkWrapper>
+  );
 };
 
 /**
@@ -57,23 +59,24 @@ export const AmpSocialEmbed = ({
   const AmpElement = AmpElements[provider];
   const hasCaption = caption && caption.text;
 
-  if (AmpElement && hasCaption)
-    return (
-      <SkipLinkWrapper service={service} provider={provider} {...skipLink}>
+  const renderAmpContent = () => {
+    if (AmpElement && hasCaption)
+      return (
         <CaptionWrapper service={service} {...caption}>
           <AmpElement id={id} />
         </CaptionWrapper>
-      </SkipLinkWrapper>
-    );
+      );
 
-  if (AmpElement)
-    return (
-      <SkipLinkWrapper service={service} provider={provider} {...skipLink}>
-        <AmpElement id={id} />
-      </SkipLinkWrapper>
-    );
+    if (AmpElement) return <AmpElement id={id} />;
 
-  return <Notice service={service} provider={provider} {...fallback} />;
+    return <Notice service={service} provider={provider} {...fallback} />;
+  };
+
+  return (
+    <SkipLinkWrapper service={service} provider={provider} {...skipLink}>
+      {renderAmpContent()}
+    </SkipLinkWrapper>
+  );
 };
 
 const sharedPropTypes = {

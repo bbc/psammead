@@ -2,36 +2,30 @@
 
 exports[`AmpSocialEmbed should render a notice when the provider is unsupported 1`] = `
 .c0 {
-  font-family: ReithSans,Helvetica,Arial,sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 0.9375rem;
-  line-height: 1.25rem;
-  border: 0.0625rem solid #AEAEB5;
-  border-radius: 0.5rem;
-  color: #222222;
-  padding: 1rem;
+  position: relative;
 }
 
-.c0 p {
-  margin-top: 0;
-  margin-bottom: 0.5rem;
-}
-
-.c0 a,
-.c0 small {
-  display: block;
-}
-
-.c0 a {
+.c1 {
   font-family: ReithSans,Helvetica,Arial,sans-serif;
   font-weight: 700;
   font-style: normal;
+  font-size: 0.875rem;
+  line-height: 1rem;
+  background-color: #FFFFFF;
+  border: 0.125rem solid #222222;
+  color: #222222;
+  display: block;
+  left: 0;
+  line-height: 1;
+  padding: 0.75rem;
+  position: absolute;
   -webkit-text-decoration: none;
   text-decoration: none;
+  top: 0;
+  z-index: 10;
 }
 
-.c0 a > span {
+.c1:not(:focus):not(:active) {
   position: absolute !important;
   height: 1px;
   width: 1px;
@@ -43,14 +37,80 @@ exports[`AmpSocialEmbed should render a notice when the provider is unsupported 
   white-space: nowrap;
 }
 
-.c0 small {
+.c3 {
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  -webkit-clip: rect(1px 1px 1px 1px);
+  clip: rect(1px 1px 1px 1px);
+  -webkit-clip: rect(1px,1px,1px,1px);
+  clip: rect(1px,1px,1px,1px);
+  white-space: nowrap;
+}
+
+.c2 {
+  font-family: ReithSans,Helvetica,Arial,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 0.9375rem;
+  line-height: 1.25rem;
+  border: 0.0625rem solid #AEAEB5;
+  border-radius: 0.5rem;
+  color: #222222;
+  padding: 1rem;
+}
+
+.c2 p {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+.c2 a,
+.c2 small {
+  display: block;
+}
+
+.c2 a {
+  font-family: ReithSans,Helvetica,Arial,sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c2 a > span {
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  -webkit-clip: rect(1px 1px 1px 1px);
+  clip: rect(1px 1px 1px 1px);
+  -webkit-clip: rect(1px,1px,1px,1px);
+  clip: rect(1px,1px,1px,1px);
+  white-space: nowrap;
+}
+
+.c2 small {
   margin-top: 0.5rem;
   font-size: 0.75rem;
   line-height: 1rem;
 }
 
+@media (min-width:20rem) and (max-width:37.4375rem) {
+  .c1 {
+    line-height: 1.125rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .c1 {
+    font-size: 0.8125rem;
+  }
+}
+
 @media (min-width:20rem) {
-  .c0 {
+  .c2 {
     font-size: 1rem;
     line-height: 1.375rem;
   }
@@ -59,17 +119,34 @@ exports[`AmpSocialEmbed should render a notice when the provider is unsupported 
 <div
   class="c0"
 >
-  <p>
-    Sorry but we're having trouble displaying this content
-  </p>
   <a
-    href="embed-url"
+    class="c1"
+    href="#skip-unknown-content"
   >
-    View content on unknown
+    Skip unknown content
   </a>
-  <small>
-    Warning: BBC is not responsible for third party content
-  </small>
+  <div
+    class="c2"
+  >
+    <p>
+      Sorry but we're having trouble displaying this content
+    </p>
+    <a
+      href="embed-url"
+    >
+      View content on unknown
+    </a>
+    <small>
+      Warning: BBC is not responsible for third party content
+    </small>
+  </div>
+  <p
+    class="c3"
+    id="skip-unknown-content"
+    tabindex="-1"
+  >
+    End of unknown content
+  </p>
 </div>
 `;
 
@@ -421,36 +498,30 @@ exports[`AmpSocialEmbed should render correctly for YouTube 1`] = `
 
 exports[`CanonicalSocialEmbed should render a notice when the provider is unsupported 1`] = `
 .c0 {
-  font-family: ReithSans,Helvetica,Arial,sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 0.9375rem;
-  line-height: 1.25rem;
-  border: 0.0625rem solid #AEAEB5;
-  border-radius: 0.5rem;
-  color: #222222;
-  padding: 1rem;
+  position: relative;
 }
 
-.c0 p {
-  margin-top: 0;
-  margin-bottom: 0.5rem;
-}
-
-.c0 a,
-.c0 small {
-  display: block;
-}
-
-.c0 a {
+.c1 {
   font-family: ReithSans,Helvetica,Arial,sans-serif;
   font-weight: 700;
   font-style: normal;
+  font-size: 0.875rem;
+  line-height: 1rem;
+  background-color: #FFFFFF;
+  border: 0.125rem solid #222222;
+  color: #222222;
+  display: block;
+  left: 0;
+  line-height: 1;
+  padding: 0.75rem;
+  position: absolute;
   -webkit-text-decoration: none;
   text-decoration: none;
+  top: 0;
+  z-index: 10;
 }
 
-.c0 a > span {
+.c1:not(:focus):not(:active) {
   position: absolute !important;
   height: 1px;
   width: 1px;
@@ -462,14 +533,80 @@ exports[`CanonicalSocialEmbed should render a notice when the provider is unsupp
   white-space: nowrap;
 }
 
-.c0 small {
+.c3 {
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  -webkit-clip: rect(1px 1px 1px 1px);
+  clip: rect(1px 1px 1px 1px);
+  -webkit-clip: rect(1px,1px,1px,1px);
+  clip: rect(1px,1px,1px,1px);
+  white-space: nowrap;
+}
+
+.c2 {
+  font-family: ReithSans,Helvetica,Arial,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 0.9375rem;
+  line-height: 1.25rem;
+  border: 0.0625rem solid #AEAEB5;
+  border-radius: 0.5rem;
+  color: #222222;
+  padding: 1rem;
+}
+
+.c2 p {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+.c2 a,
+.c2 small {
+  display: block;
+}
+
+.c2 a {
+  font-family: ReithSans,Helvetica,Arial,sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c2 a > span {
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  -webkit-clip: rect(1px 1px 1px 1px);
+  clip: rect(1px 1px 1px 1px);
+  -webkit-clip: rect(1px,1px,1px,1px);
+  clip: rect(1px,1px,1px,1px);
+  white-space: nowrap;
+}
+
+.c2 small {
   margin-top: 0.5rem;
   font-size: 0.75rem;
   line-height: 1rem;
 }
 
+@media (min-width:20rem) and (max-width:37.4375rem) {
+  .c1 {
+    line-height: 1.125rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .c1 {
+    font-size: 0.8125rem;
+  }
+}
+
 @media (min-width:20rem) {
-  .c0 {
+  .c2 {
     font-size: 1rem;
     line-height: 1.375rem;
   }
@@ -478,55 +615,66 @@ exports[`CanonicalSocialEmbed should render a notice when the provider is unsupp
 <div
   class="c0"
 >
-  <p>
-    Sorry but we're having trouble displaying this content
-  </p>
   <a
-    href="embed-url"
+    class="c1"
+    href="#skip-unknown-content"
   >
-    View content on unknown
-    <span>
-      , external
-    </span>
+    Skip unknown content
   </a>
-  <small>
-    Warning: BBC is not responsible for third party content
-  </small>
+  <div
+    class="c2"
+  >
+    <p>
+      Sorry but we're having trouble displaying this content
+    </p>
+    <a
+      href="embed-url"
+    >
+      View content on unknown
+      <span>
+        , external
+      </span>
+    </a>
+    <small>
+      Warning: BBC is not responsible for third party content
+    </small>
+  </div>
+  <p
+    class="c3"
+    id="skip-unknown-content"
+    tabindex="-1"
+  >
+    End of unknown content
+  </p>
 </div>
 `;
 
 exports[`CanonicalSocialEmbed should render a notice when there is no oEmbed response 1`] = `
 .c0 {
-  font-family: ReithSans,Helvetica,Arial,sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 0.9375rem;
-  line-height: 1.25rem;
-  border: 0.0625rem solid #AEAEB5;
-  border-radius: 0.5rem;
-  color: #222222;
-  padding: 1rem;
+  position: relative;
 }
 
-.c0 p {
-  margin-top: 0;
-  margin-bottom: 0.5rem;
-}
-
-.c0 a,
-.c0 small {
-  display: block;
-}
-
-.c0 a {
+.c1 {
   font-family: ReithSans,Helvetica,Arial,sans-serif;
   font-weight: 700;
   font-style: normal;
+  font-size: 0.875rem;
+  line-height: 1rem;
+  background-color: #FFFFFF;
+  border: 0.125rem solid #222222;
+  color: #222222;
+  display: block;
+  left: 0;
+  line-height: 1;
+  padding: 0.75rem;
+  position: absolute;
   -webkit-text-decoration: none;
   text-decoration: none;
+  top: 0;
+  z-index: 10;
 }
 
-.c0 a > span {
+.c1:not(:focus):not(:active) {
   position: absolute !important;
   height: 1px;
   width: 1px;
@@ -538,14 +686,80 @@ exports[`CanonicalSocialEmbed should render a notice when there is no oEmbed res
   white-space: nowrap;
 }
 
-.c0 small {
+.c3 {
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  -webkit-clip: rect(1px 1px 1px 1px);
+  clip: rect(1px 1px 1px 1px);
+  -webkit-clip: rect(1px,1px,1px,1px);
+  clip: rect(1px,1px,1px,1px);
+  white-space: nowrap;
+}
+
+.c2 {
+  font-family: ReithSans,Helvetica,Arial,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 0.9375rem;
+  line-height: 1.25rem;
+  border: 0.0625rem solid #AEAEB5;
+  border-radius: 0.5rem;
+  color: #222222;
+  padding: 1rem;
+}
+
+.c2 p {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+.c2 a,
+.c2 small {
+  display: block;
+}
+
+.c2 a {
+  font-family: ReithSans,Helvetica,Arial,sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c2 a > span {
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  -webkit-clip: rect(1px 1px 1px 1px);
+  clip: rect(1px 1px 1px 1px);
+  -webkit-clip: rect(1px,1px,1px,1px);
+  clip: rect(1px,1px,1px,1px);
+  white-space: nowrap;
+}
+
+.c2 small {
   margin-top: 0.5rem;
   font-size: 0.75rem;
   line-height: 1rem;
 }
 
+@media (min-width:20rem) and (max-width:37.4375rem) {
+  .c1 {
+    line-height: 1.125rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .c1 {
+    font-size: 0.8125rem;
+  }
+}
+
 @media (min-width:20rem) {
-  .c0 {
+  .c2 {
     font-size: 1rem;
     line-height: 1.375rem;
   }
@@ -554,20 +768,37 @@ exports[`CanonicalSocialEmbed should render a notice when there is no oEmbed res
 <div
   class="c0"
 >
-  <p>
-    Sorry but we're having trouble displaying this content
-  </p>
   <a
-    href="embed-url"
+    class="c1"
+    href="#skip-twitter-content"
   >
-    View content on Twitter
-    <span>
-      , external
-    </span>
+    Skip Twitter content
   </a>
-  <small>
-    Warning: BBC is not responsible for third party content
-  </small>
+  <div
+    class="c2"
+  >
+    <p>
+      Sorry but we're having trouble displaying this content
+    </p>
+    <a
+      href="embed-url"
+    >
+      View content on Twitter
+      <span>
+        , external
+      </span>
+    </a>
+    <small>
+      Warning: BBC is not responsible for third party content
+    </small>
+  </div>
+  <p
+    class="c3"
+    id="skip-twitter-content"
+    tabindex="-1"
+  >
+    End of Twitter content
+  </p>
 </div>
 `;
 
