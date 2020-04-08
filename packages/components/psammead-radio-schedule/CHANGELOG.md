@@ -3,7 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
-| 0.1.0-alpha.33 | [PR#XXX](https://github.com/bbc/psammead/pull/XXX) Add wrapping span with role `text` around the headline |
+| 0.1.0-alpha.33 | [PR#3348](https://github.com/bbc/psammead/pull/3348) Add wrapping span with role `text` around the headline |
 | 0.1.0-alpha.32 | [PR#3345](https://github.com/bbc/psammead/pull/3345) Remove border from Program Card |
 | 0.1.0-alpha.31 | [PR#3326](https://github.com/bbc/psammead/pull/3326) Update Program Card Heading markup and CSS to fix issue with AT |
 | 0.1.0-alpha.30 | [PR#3324](https://github.com/bbc/psammead/pull/3324) Fix Duration border on FireFox High Contrast Mode |
