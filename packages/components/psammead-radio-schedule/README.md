@@ -157,9 +157,11 @@ This component is to be used initially on the `front pages`, and media pages.
 
 ### Accessibility notes
 
-Currently this component is in alpha. This is because it has not yet been tested with various assistive technologies. After it has had an accessibility swarm, this will be published under a standard version.
+<!-- Information about accessibility for this component -->
 
 ### Roadmap
+
+<!-- Known future changes of the component -->
 
 ## Contributing
 
