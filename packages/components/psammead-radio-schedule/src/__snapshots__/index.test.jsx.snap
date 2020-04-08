@@ -645,34 +645,39 @@ exports[`RadioSchedule should render ltr radio schedules correctly 1`] = `
             href="/news/articles/cn7k01xp8kxo"
           >
             <span
+              class=""
               role="text"
             >
               <span
-                aria-hidden="true"
-                class="c14"
-                dir="ltr"
+                role="text"
               >
-                LIVE 
+                <span
+                  aria-hidden="true"
+                  class="c14"
+                  dir="ltr"
+                >
+                  LIVE 
+                </span>
+                <span
+                  class="c15"
+                  lang="en-GB"
+                >
+                  Live, 
+                </span>
               </span>
+              Could a computer ever create better art than a human?
               <span
                 class="c15"
-                lang="en-GB"
               >
-                Live, 
+                , 
+                14:54
+                , 
               </span>
-            </span>
-            Could a computer ever create better art than a human?
-            <span
-              class="c15"
-            >
-              , 
-              14:54
-              , 
-            </span>
-            <span
-              class="c16 c17"
-            >
-              29/01/1990
+              <span
+                class="c16 c17"
+              >
+                29/01/1990
+              </span>
             </span>
           </a>
         </h3>
@@ -783,18 +788,23 @@ exports[`RadioSchedule should render ltr radio schedules correctly 1`] = `
             class="c13"
             href="/news/articles/cn7k01xp8kxo"
           >
-            Could a computer ever create better art than a human?
             <span
-              class="c15"
+              class=""
+              role="text"
             >
-              , 
-              14:54
-              , 
-            </span>
-            <span
-              class="c16 c17"
-            >
-              29/01/1990
+              Could a computer ever create better art than a human?
+              <span
+                class="c15"
+              >
+                , 
+                14:54
+                , 
+              </span>
+              <span
+                class="c16 c17"
+              >
+                29/01/1990
+              </span>
             </span>
           </a>
         </h3>
@@ -905,18 +915,23 @@ exports[`RadioSchedule should render ltr radio schedules correctly 1`] = `
             class="c13"
             href="/news/articles/cn7k01xp8kxo"
           >
-            Could a computer ever create better art than a human?
             <span
-              class="c15"
+              class=""
+              role="text"
             >
-              , 
-              14:54
-              , 
-            </span>
-            <span
-              class="c16 c17"
-            >
-              29/01/1990
+              Could a computer ever create better art than a human?
+              <span
+                class="c15"
+              >
+                , 
+                14:54
+                , 
+              </span>
+              <span
+                class="c16 c17"
+              >
+                29/01/1990
+              </span>
             </span>
           </a>
         </h3>
@@ -1024,23 +1039,28 @@ exports[`RadioSchedule should render ltr radio schedules correctly 1`] = `
           class="c24"
         >
           <span
-            class="c25"
-            dir="ltr"
+            class=""
+            role="text"
           >
-            NEXT 
-          </span>
-          Could a computer ever create better art than a human?
-          <span
-            class="c15"
-          >
-            , 
-            14:54
-            , 
-          </span>
-          <span
-            class="c16 c26"
-          >
-            29/01/1990
+            <span
+              class="c25"
+              dir="ltr"
+            >
+              NEXT 
+            </span>
+            Could a computer ever create better art than a human?
+            <span
+              class="c15"
+            >
+              , 
+              14:54
+              , 
+            </span>
+            <span
+              class="c16 c26"
+            >
+              29/01/1990
+            </span>
           </span>
         </h3>
         <p
@@ -1739,27 +1759,32 @@ exports[`RadioSchedule should render rtl radio schedules correctly 1`] = `
             href="/arabic/articles/c1er5mjnznzo"
           >
             <span
+              class=""
               role="text"
             >
               <span
-                class="c14"
-                dir="rtl"
+                role="text"
               >
-                مباشر 
+                <span
+                  class="c14"
+                  dir="rtl"
+                >
+                  مباشر 
+                </span>
               </span>
-            </span>
-            لماذا يخجل البعض من اسم قريته في مصر؟
-            <span
-              class="c15"
-            >
-              , 
-              ۱۴:۵۴
-              , 
-            </span>
-            <span
-              class="c16 c17"
-            >
-              29/01/1990
+              لماذا يخجل البعض من اسم قريته في مصر؟
+              <span
+                class="c15"
+              >
+                , 
+                ۱۴:۵۴
+                , 
+              </span>
+              <span
+                class="c16 c17"
+              >
+                29/01/1990
+              </span>
             </span>
           </a>
         </h3>
@@ -1870,18 +1895,23 @@ exports[`RadioSchedule should render rtl radio schedules correctly 1`] = `
             class="c13"
             href="/arabic/articles/c1er5mjnznzo"
           >
-            لماذا يخجل البعض من اسم قريته في مصر؟
             <span
-              class="c15"
+              class=""
+              role="text"
             >
-              , 
-              ۱۴:۵۴
-              , 
-            </span>
-            <span
-              class="c16 c17"
-            >
-              29/01/1990
+              لماذا يخجل البعض من اسم قريته في مصر؟
+              <span
+                class="c15"
+              >
+                , 
+                ۱۴:۵۴
+                , 
+              </span>
+              <span
+                class="c16 c17"
+              >
+                29/01/1990
+              </span>
             </span>
           </a>
         </h3>
@@ -1992,18 +2022,23 @@ exports[`RadioSchedule should render rtl radio schedules correctly 1`] = `
             class="c13"
             href="/arabic/articles/c1er5mjnznzo"
           >
-            لماذا يخجل البعض من اسم قريته في مصر؟
             <span
-              class="c15"
+              class=""
+              role="text"
             >
-              , 
-              ۱۴:۵۴
-              , 
-            </span>
-            <span
-              class="c16 c17"
-            >
-              29/01/1990
+              لماذا يخجل البعض من اسم قريته في مصر؟
+              <span
+                class="c15"
+              >
+                , 
+                ۱۴:۵۴
+                , 
+              </span>
+              <span
+                class="c16 c17"
+              >
+                29/01/1990
+              </span>
             </span>
           </a>
         </h3>
@@ -2111,23 +2146,28 @@ exports[`RadioSchedule should render rtl radio schedules correctly 1`] = `
           class="c24"
         >
           <span
-            class="c25"
-            dir="rtl"
+            class=""
+            role="text"
           >
-            مباشر 
-          </span>
-          لماذا يخجل البعض من اسم قريته في مصر؟
-          <span
-            class="c15"
-          >
-            , 
-            ۱۴:۵۴
-            , 
-          </span>
-          <span
-            class="c16 c26"
-          >
-            29/01/1990
+            <span
+              class="c25"
+              dir="rtl"
+            >
+              مباشر 
+            </span>
+            لماذا يخجل البعض من اسم قريته في مصر؟
+            <span
+              class="c15"
+            >
+              , 
+              ۱۴:۵۴
+              , 
+            </span>
+            <span
+              class="c16 c26"
+            >
+              29/01/1990
+            </span>
           </span>
         </h3>
         <p
