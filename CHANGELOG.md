@@ -3,7 +3,8 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
-| 2.0.116 | [PR#3353](https://github.com/bbc/psammead/pull/3353) Talos - Bump Dependencies - @bbc/psammead-locales |
+| 2.0.117 | [PR#3353](https://github.com/bbc/psammead/pull/3353) Talos - Bump Dependencies - @bbc/psammead-locales |
+| 2.0.116 | [PR#3339](https://github.com/bbc/psammead/pull/3339) Dependency updates |
 | 2.0.115 | [PR#3340](https://github.com/bbc/psammead/pull/3340) Removing -a option to fix Talos |
 | 2.0.114 | [PR#3327](https://github.com/bbc/psammead/pull/3327) Final security patch for `minimist` |
 | 2.0.113 | [PR#3270](https://github.com/bbc/psammead/pull/3270) Security patch for `minimist` |
