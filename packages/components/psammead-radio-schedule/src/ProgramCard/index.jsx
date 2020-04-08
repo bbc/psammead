@@ -143,6 +143,8 @@ const programStateConfig = {
   },
 };
 
+const HeadingContentWrapper = styled.span.attrs({ role: 'text' })``;
+
 const renderHeaderContent = ({
   state,
   link,
@@ -171,7 +173,7 @@ const renderHeaderContent = ({
   );
 
   const content = (
-    <>
+    <HeadingContentWrapper>
       {isLive && (
         <LiveLabel
           service={service}
@@ -195,7 +197,7 @@ const renderHeaderContent = ({
       >
         {episodeTitle}
       </TitleWrapper>
-    </>
+    </HeadingContentWrapper>
   );
 
   return state === 'next' ? (
