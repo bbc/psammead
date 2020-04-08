@@ -1,6 +1,6 @@
 {
   "name": "@bbc/psammead-radio-schedule",
-  "version": "0.1.0-alpha.33",
+  "version": "1.0.0",
   "main": "dist/index.js",
   "module": "esm/index.js",
   "sideEffects": false,
@@ -32,8 +32,5 @@
     "bbc",
     "radio",
     "schedule"
-  ],
-  "publishConfig": {
-    "tag": "alpha"
-  }
+  ]
 }
