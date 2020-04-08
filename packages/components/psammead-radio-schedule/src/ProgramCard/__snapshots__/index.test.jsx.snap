@@ -92,7 +92,7 @@ exports[`ProgramCard should render correctly for live 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  border: 0.0625rem solid transparent;
+  outline: 0.0625rem solid transparent;
   height: 100%;
 }
 
@@ -360,7 +360,7 @@ exports[`ProgramCard should render correctly for next 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  border: 0.0625rem solid transparent;
+  outline: 0.0625rem solid transparent;
   height: 100%;
 }
 
@@ -666,7 +666,7 @@ exports[`ProgramCard should render correctly for onDemand 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  border: 0.0625rem solid transparent;
+  outline: 0.0625rem solid transparent;
   height: 100%;
 }
 
@@ -946,7 +946,7 @@ exports[`ProgramCard should render correctly in RTL 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  border: 0.0625rem solid transparent;
+  outline: 0.0625rem solid transparent;
   height: 100%;
 }
 
@@ -1235,7 +1235,7 @@ exports[`ProgramCard should render correctly without summary 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  border: 0.0625rem solid transparent;
+  outline: 0.0625rem solid transparent;
   height: 100%;
 }
 
