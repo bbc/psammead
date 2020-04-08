@@ -79,18 +79,6 @@ exports[`AmpSocialEmbed should render a notice when the provider is unsupported 
   text-decoration: none;
 }
 
-.c2 a > span {
-  position: absolute !important;
-  height: 1px;
-  width: 1px;
-  overflow: hidden;
-  -webkit-clip: rect(1px 1px 1px 1px);
-  clip: rect(1px 1px 1px 1px);
-  -webkit-clip: rect(1px,1px,1px,1px);
-  clip: rect(1px,1px,1px,1px);
-  white-space: nowrap;
-}
-
 .c2 small {
   margin-top: 0.5rem;
   font-size: 0.75rem;
@@ -575,18 +563,6 @@ exports[`CanonicalSocialEmbed should render a notice when the provider is unsupp
   text-decoration: none;
 }
 
-.c2 a > span {
-  position: absolute !important;
-  height: 1px;
-  width: 1px;
-  overflow: hidden;
-  -webkit-clip: rect(1px 1px 1px 1px);
-  clip: rect(1px 1px 1px 1px);
-  -webkit-clip: rect(1px,1px,1px,1px);
-  clip: rect(1px,1px,1px,1px);
-  white-space: nowrap;
-}
-
 .c2 small {
   margin-top: 0.5rem;
   font-size: 0.75rem;
@@ -628,12 +604,10 @@ exports[`CanonicalSocialEmbed should render a notice when the provider is unsupp
       Sorry but we're having trouble displaying this content
     </p>
     <a
+      aria-label="View content on unknown, external"
       href="embed-url"
     >
       View content on unknown
-      <span>
-        , external
-      </span>
     </a>
     <small>
       Warning: BBC is not responsible for third party content
@@ -728,18 +702,6 @@ exports[`CanonicalSocialEmbed should render a notice when there is no oEmbed res
   text-decoration: none;
 }
 
-.c2 a > span {
-  position: absolute !important;
-  height: 1px;
-  width: 1px;
-  overflow: hidden;
-  -webkit-clip: rect(1px 1px 1px 1px);
-  clip: rect(1px 1px 1px 1px);
-  -webkit-clip: rect(1px,1px,1px,1px);
-  clip: rect(1px,1px,1px,1px);
-  white-space: nowrap;
-}
-
 .c2 small {
   margin-top: 0.5rem;
   font-size: 0.75rem;
@@ -781,12 +743,10 @@ exports[`CanonicalSocialEmbed should render a notice when there is no oEmbed res
       Sorry but we're having trouble displaying this content
     </p>
     <a
+      aria-label="View content on Twitter, external"
       href="embed-url"
     >
       View content on Twitter
-      <span>
-        , external
-      </span>
     </a>
     <small>
       Warning: BBC is not responsible for third party content
