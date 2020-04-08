@@ -32,8 +32,5 @@
     "bbc",
     "radio",
     "schedule"
-  ],
-  "publishConfig": {
-    "tag": "alpha"
-  }
+  ]
 }
