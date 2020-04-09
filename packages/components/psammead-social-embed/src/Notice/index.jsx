@@ -30,6 +30,7 @@ const Wrapper = styled.div`
 
   a {
     ${({ service }) => getSansBold(service)}
+    color: inherit;
     text-decoration: none;
 
     &:visited {
