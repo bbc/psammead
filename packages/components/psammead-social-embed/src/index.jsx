@@ -23,23 +23,22 @@ export const CanonicalSocialEmbed = ({
   const isSupportedProvider = Object.keys(providers).includes(provider);
   const hasCaption = caption && caption.text;
 
-  const renderCanonicalContent = () => {
-    if (isSupportedProvider && oEmbed && hasCaption)
-      return (
-        <CaptionWrapper service={service} {...caption}>
-          <CanonicalEmbed provider={provider} oEmbed={oEmbed} />
-        </CaptionWrapper>
-      );
-
-    if (isSupportedProvider && oEmbed)
-      return <CanonicalEmbed provider={provider} oEmbed={oEmbed} />;
-
-    return <Notice service={service} provider={provider} {...fallback} />;
-  };
+  if (!isSupportedProvider || !oEmbed)
+    return (
+      <SkipLinkWrapper service={service} provider={provider} {...skipLink}>
+        <Notice service={service} provider={provider} {...fallback} />
+      </SkipLinkWrapper>
+    );
 
   return (
     <SkipLinkWrapper service={service} provider={provider} {...skipLink}>
-      {renderCanonicalContent()}
+      {hasCaption ? (
+        <CaptionWrapper service={service} {...caption}>
+          <CanonicalEmbed provider={provider} oEmbed={oEmbed} />
+        </CaptionWrapper>
+      ) : (
+        <CanonicalEmbed provider={provider} oEmbed={oEmbed} />
+      )}
     </SkipLinkWrapper>
   );
 };
@@ -59,22 +58,22 @@ export const AmpSocialEmbed = ({
   const AmpElement = AmpElements[provider];
   const hasCaption = caption && caption.text;
 
-  const renderAmpContent = () => {
-    if (AmpElement && hasCaption)
-      return (
-        <CaptionWrapper service={service} {...caption}>
-          <AmpElement id={id} />
-        </CaptionWrapper>
-      );
-
-    if (AmpElement) return <AmpElement id={id} />;
-
-    return <Notice service={service} provider={provider} {...fallback} />;
-  };
+  if (!AmpElement)
+    return (
+      <SkipLinkWrapper service={service} provider={provider} {...skipLink}>
+        <Notice service={service} provider={provider} {...fallback} />
+      </SkipLinkWrapper>
+    );
 
   return (
     <SkipLinkWrapper service={service} provider={provider} {...skipLink}>
-      {renderAmpContent()}
+      {hasCaption ? (
+        <CaptionWrapper service={service} {...caption}>
+          <AmpElement id={id} />
+        </CaptionWrapper>
+      ) : (
+        <AmpElement id={id} />
+      )}
     </SkipLinkWrapper>
   );
 };
