@@ -1,16 +1,12 @@
 import React, { memo } from 'react';
 import { string } from 'prop-types';
 import styled from 'styled-components';
-import { C_EBON, C_PEBBLE } from '@bbc/psammead-styles/colours';
+import { C_EBON, C_PEBBLE, C_METAL } from '@bbc/psammead-styles/colours';
 import { getSansRegular, getSansBold } from '@bbc/psammead-styles/font-styles';
 import { GEL_SPACING_DBL, GEL_SPACING } from '@bbc/gel-foundations/spacings';
 import { GEL_BODY_COPY, GEL_MINION } from '@bbc/gel-foundations/typography';
 
-import {
-  detokenise,
-  dictionaryFactory,
-  visuallyHiddenStyle,
-} from '../utilities';
+import { detokenise, dictionaryFactory } from '../utilities';
 
 const BORDER_WEIGHT = '0.0625rem';
 
@@ -34,10 +30,16 @@ const Wrapper = styled.div`
 
   a {
     ${({ service }) => getSansBold(service)}
+    color: inherit;
     text-decoration: none;
 
-    > span {
-      ${visuallyHiddenStyle}
+    &:visited {
+      color: ${C_METAL};
+    }
+
+    &:hover,
+    &:focus {
+      text-decoration: underline;
     }
   }
 
@@ -57,14 +59,22 @@ const Notice = ({
   warningText,
 }) => {
   const dictionary = dictionaryFactory({ provider });
+  const [detokenisedLinkText, detokenisedLinkTextSuffix] = [
+    detokenise(linkText, dictionary),
+    detokenise(linkTextSuffixVisuallyHidden, dictionary),
+  ];
+
   return (
     <Wrapper service={service}>
       <p>{detokenise(text, dictionary)}</p>
-      <a href={linkHref}>
-        {detokenise(linkText, dictionary)}
-        {linkTextSuffixVisuallyHidden && (
-          <span>{detokenise(linkTextSuffixVisuallyHidden, dictionary)}</span>
-        )}
+      <a
+        href={linkHref}
+        aria-label={
+          detokenisedLinkTextSuffix &&
+          `${detokenisedLinkText}${detokenisedLinkTextSuffix}`
+        }
+      >
+        {detokenisedLinkText}
       </a>
       {warningText && <small>{warningText}</small>}
     </Wrapper>
