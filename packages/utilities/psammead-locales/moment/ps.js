@@ -14,6 +14,10 @@ moment.defineLocale('ps', {
     h: '۱ ساعت', // '1 hour'
     hh: '%d ساعتونه', // %d 'hours'
   },
+  longDateFormat: {
+    LL: 'D MMMM YYYY',
+    LLL: 'D MMMM YYYY HH:mm',
+  },
   postformat: function(string) {
     var useEasternNumerals = numerals.makeNumeralTranslator(
       numerals.EasternArabic
