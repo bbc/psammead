@@ -189,17 +189,17 @@ test('from', function() {
   );
   assert.equal(
     start.from(moment([2007, 1, 28]).add({ m: 90 }), true),
-    'قبل 2 ساع',
+    'قبل 2 ساعة',
     '90 minutes = 2 hours'
   );
   assert.equal(
     start.from(moment([2007, 1, 28]).add({ h: 5 }), true),
-    'قبل 5 ساع',
+    'قبل 5 ساعة',
     '5 hours = 5 hours'
   );
   assert.equal(
     start.from(moment([2007, 1, 28]).add({ h: 21 }), true),
-    'قبل 21 ساع',
+    'قبل 21 ساعة',
     '21 hours = 21 hours'
   );
   assert.equal(
