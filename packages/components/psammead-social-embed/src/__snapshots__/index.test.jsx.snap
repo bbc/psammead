@@ -26,27 +26,27 @@ exports[`AmpSocialEmbed should render a notice when the provider is unsupported 
 }
 
 .c1:not(:focus):not(:active) {
-  position: absolute !important;
-  height: 1px;
-  width: 1px;
-  overflow: hidden;
-  -webkit-clip: rect(1px 1px 1px 1px);
-  clip: rect(1px 1px 1px 1px);
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
   -webkit-clip: rect(1px,1px,1px,1px);
   clip: rect(1px,1px,1px,1px);
-  white-space: nowrap;
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  width: 1px;
+  margin: 0;
 }
 
 .c3 {
-  position: absolute !important;
-  height: 1px;
-  width: 1px;
-  overflow: hidden;
-  -webkit-clip: rect(1px 1px 1px 1px);
-  clip: rect(1px 1px 1px 1px);
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
   -webkit-clip: rect(1px,1px,1px,1px);
   clip: rect(1px,1px,1px,1px);
-  white-space: nowrap;
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  width: 1px;
+  margin: 0;
 }
 
 .c2 {
@@ -184,27 +184,27 @@ exports[`AmpSocialEmbed should render correctly for Instagram 1`] = `
 }
 
 .c1:not(:focus):not(:active) {
-  position: absolute !important;
-  height: 1px;
-  width: 1px;
-  overflow: hidden;
-  -webkit-clip: rect(1px 1px 1px 1px);
-  clip: rect(1px 1px 1px 1px);
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
   -webkit-clip: rect(1px,1px,1px,1px);
   clip: rect(1px,1px,1px,1px);
-  white-space: nowrap;
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  width: 1px;
+  margin: 0;
 }
 
 .c2 {
-  position: absolute !important;
-  height: 1px;
-  width: 1px;
-  overflow: hidden;
-  -webkit-clip: rect(1px 1px 1px 1px);
-  clip: rect(1px 1px 1px 1px);
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
   -webkit-clip: rect(1px,1px,1px,1px);
   clip: rect(1px,1px,1px,1px);
-  white-space: nowrap;
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  width: 1px;
+  margin: 0;
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
@@ -284,27 +284,27 @@ exports[`AmpSocialEmbed should render correctly for Twitter 1`] = `
 }
 
 .c1:not(:focus):not(:active) {
-  position: absolute !important;
-  height: 1px;
-  width: 1px;
-  overflow: hidden;
-  -webkit-clip: rect(1px 1px 1px 1px);
-  clip: rect(1px 1px 1px 1px);
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
   -webkit-clip: rect(1px,1px,1px,1px);
   clip: rect(1px,1px,1px,1px);
-  white-space: nowrap;
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  width: 1px;
+  margin: 0;
 }
 
 .c2 {
-  position: absolute !important;
-  height: 1px;
-  width: 1px;
-  overflow: hidden;
-  -webkit-clip: rect(1px 1px 1px 1px);
-  clip: rect(1px 1px 1px 1px);
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
   -webkit-clip: rect(1px,1px,1px,1px);
   clip: rect(1px,1px,1px,1px);
-  white-space: nowrap;
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  width: 1px;
+  margin: 0;
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
@@ -383,27 +383,27 @@ exports[`AmpSocialEmbed should render correctly for YouTube 1`] = `
 }
 
 .c1:not(:focus):not(:active) {
-  position: absolute !important;
-  height: 1px;
-  width: 1px;
-  overflow: hidden;
-  -webkit-clip: rect(1px 1px 1px 1px);
-  clip: rect(1px 1px 1px 1px);
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
   -webkit-clip: rect(1px,1px,1px,1px);
   clip: rect(1px,1px,1px,1px);
-  white-space: nowrap;
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  width: 1px;
+  margin: 0;
 }
 
 .c4 {
-  position: absolute !important;
-  height: 1px;
-  width: 1px;
-  overflow: hidden;
-  -webkit-clip: rect(1px 1px 1px 1px);
-  clip: rect(1px 1px 1px 1px);
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
   -webkit-clip: rect(1px,1px,1px,1px);
   clip: rect(1px,1px,1px,1px);
-  white-space: nowrap;
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  width: 1px;
+  margin: 0;
 }
 
 .c2 {
@@ -422,15 +422,15 @@ exports[`AmpSocialEmbed should render correctly for YouTube 1`] = `
 }
 
 .c3 > span {
-  position: absolute !important;
-  height: 1px;
-  width: 1px;
-  overflow: hidden;
-  -webkit-clip: rect(1px 1px 1px 1px);
-  clip: rect(1px 1px 1px 1px);
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
   -webkit-clip: rect(1px,1px,1px,1px);
   clip: rect(1px,1px,1px,1px);
-  white-space: nowrap;
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  width: 1px;
+  margin: 0;
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
@@ -521,27 +521,27 @@ exports[`CanonicalSocialEmbed should render a notice when the provider is unsupp
 }
 
 .c1:not(:focus):not(:active) {
-  position: absolute !important;
-  height: 1px;
-  width: 1px;
-  overflow: hidden;
-  -webkit-clip: rect(1px 1px 1px 1px);
-  clip: rect(1px 1px 1px 1px);
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
   -webkit-clip: rect(1px,1px,1px,1px);
   clip: rect(1px,1px,1px,1px);
-  white-space: nowrap;
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  width: 1px;
+  margin: 0;
 }
 
 .c3 {
-  position: absolute !important;
-  height: 1px;
-  width: 1px;
-  overflow: hidden;
-  -webkit-clip: rect(1px 1px 1px 1px);
-  clip: rect(1px 1px 1px 1px);
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
   -webkit-clip: rect(1px,1px,1px,1px);
   clip: rect(1px,1px,1px,1px);
-  white-space: nowrap;
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  width: 1px;
+  margin: 0;
 }
 
 .c2 {
@@ -671,27 +671,27 @@ exports[`CanonicalSocialEmbed should render a notice when there is no oEmbed res
 }
 
 .c1:not(:focus):not(:active) {
-  position: absolute !important;
-  height: 1px;
-  width: 1px;
-  overflow: hidden;
-  -webkit-clip: rect(1px 1px 1px 1px);
-  clip: rect(1px 1px 1px 1px);
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
   -webkit-clip: rect(1px,1px,1px,1px);
   clip: rect(1px,1px,1px,1px);
-  white-space: nowrap;
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  width: 1px;
+  margin: 0;
 }
 
 .c3 {
-  position: absolute !important;
-  height: 1px;
-  width: 1px;
-  overflow: hidden;
-  -webkit-clip: rect(1px 1px 1px 1px);
-  clip: rect(1px 1px 1px 1px);
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
   -webkit-clip: rect(1px,1px,1px,1px);
   clip: rect(1px,1px,1px,1px);
-  white-space: nowrap;
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  width: 1px;
+  margin: 0;
 }
 
 .c2 {
@@ -821,27 +821,27 @@ exports[`CanonicalSocialEmbed should render correctly for Instagram 1`] = `
 }
 
 .c1:not(:focus):not(:active) {
-  position: absolute !important;
-  height: 1px;
-  width: 1px;
-  overflow: hidden;
-  -webkit-clip: rect(1px 1px 1px 1px);
-  clip: rect(1px 1px 1px 1px);
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
   -webkit-clip: rect(1px,1px,1px,1px);
   clip: rect(1px,1px,1px,1px);
-  white-space: nowrap;
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  width: 1px;
+  margin: 0;
 }
 
 .c3 {
-  position: absolute !important;
-  height: 1px;
-  width: 1px;
-  overflow: hidden;
-  -webkit-clip: rect(1px 1px 1px 1px);
-  clip: rect(1px 1px 1px 1px);
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
   -webkit-clip: rect(1px,1px,1px,1px);
   clip: rect(1px,1px,1px,1px);
-  white-space: nowrap;
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  width: 1px;
+  margin: 0;
 }
 
 .c2 {
@@ -1104,27 +1104,27 @@ exports[`CanonicalSocialEmbed should render correctly for Twitter 1`] = `
 }
 
 .c1:not(:focus):not(:active) {
-  position: absolute !important;
-  height: 1px;
-  width: 1px;
-  overflow: hidden;
-  -webkit-clip: rect(1px 1px 1px 1px);
-  clip: rect(1px 1px 1px 1px);
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
   -webkit-clip: rect(1px,1px,1px,1px);
   clip: rect(1px,1px,1px,1px);
-  white-space: nowrap;
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  width: 1px;
+  margin: 0;
 }
 
 .c3 {
-  position: absolute !important;
-  height: 1px;
-  width: 1px;
-  overflow: hidden;
-  -webkit-clip: rect(1px 1px 1px 1px);
-  clip: rect(1px 1px 1px 1px);
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
   -webkit-clip: rect(1px,1px,1px,1px);
   clip: rect(1px,1px,1px,1px);
-  white-space: nowrap;
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  width: 1px;
+  margin: 0;
 }
 
 .c2 {
@@ -1221,27 +1221,27 @@ exports[`CanonicalSocialEmbed should render correctly for YouTube 1`] = `
 }
 
 .c1:not(:focus):not(:active) {
-  position: absolute !important;
-  height: 1px;
-  width: 1px;
-  overflow: hidden;
-  -webkit-clip: rect(1px 1px 1px 1px);
-  clip: rect(1px 1px 1px 1px);
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
   -webkit-clip: rect(1px,1px,1px,1px);
   clip: rect(1px,1px,1px,1px);
-  white-space: nowrap;
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  width: 1px;
+  margin: 0;
 }
 
 .c5 {
-  position: absolute !important;
-  height: 1px;
-  width: 1px;
-  overflow: hidden;
-  -webkit-clip: rect(1px 1px 1px 1px);
-  clip: rect(1px 1px 1px 1px);
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
   -webkit-clip: rect(1px,1px,1px,1px);
   clip: rect(1px,1px,1px,1px);
-  white-space: nowrap;
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  width: 1px;
+  margin: 0;
 }
 
 .c2 {
@@ -1260,15 +1260,15 @@ exports[`CanonicalSocialEmbed should render correctly for YouTube 1`] = `
 }
 
 .c4 > span {
-  position: absolute !important;
-  height: 1px;
-  width: 1px;
-  overflow: hidden;
-  -webkit-clip: rect(1px 1px 1px 1px);
-  clip: rect(1px 1px 1px 1px);
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
   -webkit-clip: rect(1px,1px,1px,1px);
   clip: rect(1px,1px,1px,1px);
-  white-space: nowrap;
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  width: 1px;
+  margin: 0;
 }
 
 .c3 {
