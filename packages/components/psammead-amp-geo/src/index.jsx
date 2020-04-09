@@ -60,11 +60,18 @@ const ampGeoData = {
 };
 
 const jsonInlinedScript = data => (
-  <script
-    type="application/json"
-    /* eslint-disable-next-line react/no-danger */
-    dangerouslySetInnerHTML={{ __html: JSON.stringify(data) }}
-  />
+  <>
+    <script
+      type="application/json"
+      /* eslint-disable-next-line react/no-danger */
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(data) }}
+    />
+    <script
+      async
+      custom-element="amp-ad"
+      src="https://cdn.ampproject.org/v0/amp-ad-0.1.js"
+    />
+  </>
 );
 
 const AmpGeo = () => (
