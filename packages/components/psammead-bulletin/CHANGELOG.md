@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 3.0.2 | [PR#3356](https://github.com/bbc/psammead/pull/3356) Talos - Bump Dependencies - @bbc/psammead-story-promo |
 | 3.0.1 | [PR#3264](https://github.com/bbc/psammead/pull/3264) Use `LiveLabel` component |
 | 3.0.0 | [PR#3208](https://github.com/bbc/psammead/pull/3208) Update live label usage, update major version of story promo |
 | 2.0.3 | [PR#3160](https://github.com/bbc/psammead/pull/3160) Refactor visually hidden state label |
