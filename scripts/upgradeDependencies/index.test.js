@@ -11,10 +11,10 @@ describe('upgradeDependencies', () => {
     upgradeDependencies(['@bbc/psammead-brand', '@bbc/psammead-image']);
     const [[firstCommand], [secondCommand]] = exec.mock.calls;
     expect(firstCommand).toEqual(
-      'npx npm-check-updates @bbc/psammead-brand, @bbc/psammead-image --packageFile package.json -u -a',
+      'npx npm-check-updates @bbc/psammead-brand, @bbc/psammead-image --packageFile package.json -u',
     );
     expect(secondCommand).toEqual(
-      'npx lerna exec --parallel --no-bail -- npx npm-check-updates @bbc/psammead-brand, @bbc/psammead-image -u -a',
+      'npx lerna exec --parallel --no-bail -- npx npm-check-updates @bbc/psammead-brand, @bbc/psammead-image -u',
     );
   });
 });

@@ -3,6 +3,13 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 2.0.120 | [PR#3359](https://github.com/bbc/psammead/pull/3359) Talos - Bump Dependencies - @bbc/psammead-brand, @bbc/psammead-bulletin |
+| 2.0.119 | [PR#3356](https://github.com/bbc/psammead/pull/3356) Talos - Bump Dependencies - @bbc/psammead-radio-schedule, @bbc/psammead-story-promo |
+| 2.0.118 | [PR#3354](https://github.com/bbc/psammead/pull/3354) Talos - Bump Dependencies - @bbc/psammead-calendars, @bbc/psammead-timestamp-container |
+| 2.0.117 | [PR#3353](https://github.com/bbc/psammead/pull/3353) Talos - Bump Dependencies - @bbc/psammead-locales |
+| 2.0.116 | [PR#3339](https://github.com/bbc/psammead/pull/3339) Dependency updates |
+| 2.0.115 | [PR#3340](https://github.com/bbc/psammead/pull/3340) Removing -a option to fix Talos |
+| 2.0.114 | [PR#3327](https://github.com/bbc/psammead/pull/3327) Final security patch for `minimist` |
 | 2.0.113 | [PR#3270](https://github.com/bbc/psammead/pull/3270) Security patch for `minimist` |
 | 2.0.112 | [PR#3311](https://github.com/bbc/psammead/pull/3311) Install @loadable/babel-plugin to support components using Loadable. |
 | 2.0.111 | [PR#3291](https://github.com/bbc/psammead/pull/3291) Bump `@psammead-storybook-helpers` |

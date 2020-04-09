@@ -19,9 +19,9 @@ describe('detokenise', () => {
     expect(detokenise('Foo %token%', {})).toEqual('Foo %token%');
   });
 
-  it('throws given invalid arguments', () => {
-    expect(() => detokenise()).toThrow();
-    expect(() => detokenise('Foo')).toThrow();
+  it('returns null given invalid arguments', () => {
+    expect(detokenise()).toBeNull();
+    expect(detokenise('Foo')).toBeNull();
   });
 });
 

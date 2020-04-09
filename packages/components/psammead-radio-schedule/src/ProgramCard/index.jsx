@@ -30,12 +30,31 @@ import {
   formatDuration,
 } from '@bbc/psammead-timestamp-container/utilities';
 
+const TitleWrapper = styled.span`
+  color: ${({ titleColor }) => titleColor};
+  padding: ${GEL_SPACING} 0;
+  display: inline-block;
+  width: 100%;
+  ${({ service }) => service && getSansRegular(service)};
+  ${({ script }) => script && getPica(script)};
+`;
+
+const StyledLink = styled(Link)`
+  &:hover ${TitleWrapper} {
+    text-decoration: underline;
+  }
+
+  &:focus ${TitleWrapper} {
+    text-decoration: underline;
+  }
+`;
+
 const CardWrapper = styled.div`
   padding-top: ${GEL_SPACING};
   background-color: ${C_WHITE};
   display: flex;
   flex-direction: column;
-  border: 0.0625rem solid transparent;
+  outline: 0.0625rem solid transparent;
   height: 100%;
 `;
 
@@ -44,14 +63,12 @@ const TextWrapper = styled.div`
   flex-grow: 1;
 `;
 
-const HeadingWrapper = styled.h3`
+const StyledH3 = styled.h3`
   ${({ service }) => service && getSerifMedium(service)};
   ${({ script }) => script && getPica(script)};
   color: ${({ headerTextColor }) => headerTextColor};
   margin: 0; /* Reset */
 `;
-
-const HeadingContentWrapper = styled.span.attrs({ role: 'text' })``;
 
 const NextLabel = styled.span`
   ${({ service }) => service && getSansBold(service)};
@@ -63,14 +80,6 @@ const NextLabel = styled.span`
     dir === 'rtl'
       ? `margin-left: ${GEL_SPACING};`
       : `margin-right: ${GEL_SPACING};`}
-`;
-
-const TitleWrapper = styled.span`
-  color: ${({ titleColor }) => titleColor};
-  padding: ${GEL_SPACING} 0;
-  display: block;
-  ${({ service }) => service && getSansRegular(service)};
-  ${({ script }) => script && getPica(script)};
 `;
 
 const SummaryWrapper = styled.p`
@@ -86,9 +95,11 @@ const ButtonWrapper = styled.div`
   ${({ script }) => script && getMinion(script)};
   padding: ${GEL_SPACING};
   background-color: ${({ backgroundColor }) => backgroundColor};
+  outline: 0.0625rem solid transparent;
   color: ${({ durationColor }) => durationColor};
   @media screen and (-ms-high-contrast: active) {
     background-color: transparent;
+    outline: none;
   }
 `;
 
@@ -131,6 +142,8 @@ const programStateConfig = {
     durationColor: C_WHITE,
   },
 };
+
+const HeadingContentWrapper = styled.span.attrs({ role: 'text' })``;
 
 const renderHeaderContent = ({
   state,
@@ -187,7 +200,11 @@ const renderHeaderContent = ({
     </HeadingContentWrapper>
   );
 
-  return state === 'next' ? content : <Link href={link}>{content}</Link>;
+  return state === 'next' ? (
+    content
+  ) : (
+    <StyledLink href={link}>{content}</StyledLink>
+  );
 };
 
 const getDurationFormat = (duration, separator = ':') => {
@@ -217,7 +234,7 @@ const ProgramCard = ({
 }) => (
   <CardWrapper>
     <TextWrapper>
-      <HeadingWrapper
+      <StyledH3
         service={service}
         script={script}
         {...programStateConfig[state]}
@@ -236,7 +253,7 @@ const ProgramCard = ({
           locale,
           dir,
         })}
-      </HeadingWrapper>
+      </StyledH3>
       {summary && (
         <SummaryWrapper service={service} script={script}>
           {summary}

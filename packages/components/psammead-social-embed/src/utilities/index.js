@@ -19,12 +19,9 @@ export const getProviderName = provider => {
  * @param {Object} dictionary An object which maps keys as tokens to values.
  */
 export const detokenise = (text, dictionary) => {
-  if (typeof text !== 'string') throw Error("Expected 'text' to be a string.");
-  if (dictionary !== Object(dictionary))
-    throw Error("Expected 'dictionary' to be an object.");
-  return text.replace(/%\w+%/g, match => {
-    return dictionary[match] || match;
-  });
+  if (typeof text !== 'string' || dictionary !== Object(dictionary))
+    return null;
+  return text.replace(/%\w+%/g, match => dictionary[match] || match);
 };
 
 /**
@@ -37,15 +34,15 @@ export const dictionaryFactory = ({ provider }) => ({
 });
 
 /**
- * We require control over _when_ these styles are applied and
- * therefore cannot use @bbc/psammead-visually-hidden-text.
+ * These styles are lifted from @bbc/psammead-visually-hidden-text, which we
+ * cannot use directly as we require control over _when_ they are applied.
  */
 export const visuallyHiddenStyle = `
-  position: absolute !important;
-  height: 1px;
-  width: 1px;
-  overflow: hidden;
-  clip: rect(1px 1px 1px 1px);
+  clip-path: inset(100%);
   clip: rect(1px, 1px, 1px, 1px);
-  white-space: nowrap;
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  width: 1px;
+  margin: 0;
 `;

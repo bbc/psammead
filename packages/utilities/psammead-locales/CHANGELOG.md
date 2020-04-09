@@ -3,6 +3,8 @@
 <!-- prettier-ignore -->
 | Version | Description |
 | ------- | ----------- |
+| 4.1.6 | [PR#3357](https://github.com/bbc/psammead/pull/3357) Update Pashto date format for LL & LLL |
+| 4.1.5 | [PR#3351](https://github.com/bbc/psammead/pull/3351) Update Arabic translation for hours |
 | 4.1.4 | [PR#3250](https://github.com/bbc/psammead/pull/3250) Update Marathi translations |
 | 4.1.3 | [PR#3247](https://github.com/bbc/psammead/pull/3247) Update Serbian grammar around minutes and hours |
 | 4.1.2 | [PR#3064](https://github.com/bbc/psammead/pull/3064) Update Russian month translations |

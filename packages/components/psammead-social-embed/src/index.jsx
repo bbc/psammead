@@ -23,23 +23,24 @@ export const CanonicalSocialEmbed = ({
   const isSupportedProvider = Object.keys(providers).includes(provider);
   const hasCaption = caption && caption.text;
 
-  if (isSupportedProvider && oEmbed && hasCaption)
+  if (!isSupportedProvider || !oEmbed)
     return (
       <SkipLinkWrapper service={service} provider={provider} {...skipLink}>
+        <Notice service={service} provider={provider} {...fallback} />
+      </SkipLinkWrapper>
+    );
+
+  return (
+    <SkipLinkWrapper service={service} provider={provider} {...skipLink}>
+      {hasCaption ? (
         <CaptionWrapper service={service} {...caption}>
           <CanonicalEmbed provider={provider} oEmbed={oEmbed} />
         </CaptionWrapper>
-      </SkipLinkWrapper>
-    );
-
-  if (isSupportedProvider && oEmbed)
-    return (
-      <SkipLinkWrapper service={service} provider={provider} {...skipLink}>
+      ) : (
         <CanonicalEmbed provider={provider} oEmbed={oEmbed} />
-      </SkipLinkWrapper>
-    );
-
-  return <Notice service={service} provider={provider} {...fallback} />;
+      )}
+    </SkipLinkWrapper>
+  );
 };
 
 /**
@@ -57,23 +58,24 @@ export const AmpSocialEmbed = ({
   const AmpElement = AmpElements[provider];
   const hasCaption = caption && caption.text;
 
-  if (AmpElement && hasCaption)
+  if (!AmpElement)
     return (
       <SkipLinkWrapper service={service} provider={provider} {...skipLink}>
+        <Notice service={service} provider={provider} {...fallback} />
+      </SkipLinkWrapper>
+    );
+
+  return (
+    <SkipLinkWrapper service={service} provider={provider} {...skipLink}>
+      {hasCaption ? (
         <CaptionWrapper service={service} {...caption}>
           <AmpElement id={id} />
         </CaptionWrapper>
-      </SkipLinkWrapper>
-    );
-
-  if (AmpElement)
-    return (
-      <SkipLinkWrapper service={service} provider={provider} {...skipLink}>
+      ) : (
         <AmpElement id={id} />
-      </SkipLinkWrapper>
-    );
-
-  return <Notice service={service} provider={provider} {...fallback} />;
+      )}
+    </SkipLinkWrapper>
+  );
 };
 
 const sharedPropTypes = {
