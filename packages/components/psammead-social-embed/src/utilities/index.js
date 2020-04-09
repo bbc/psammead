@@ -19,12 +19,9 @@ export const getProviderName = provider => {
  * @param {Object} dictionary An object which maps keys as tokens to values.
  */
 export const detokenise = (text, dictionary) => {
-  if (typeof text !== 'string') throw Error("Expected 'text' to be a string.");
-  if (dictionary !== Object(dictionary))
-    throw Error("Expected 'dictionary' to be an object.");
-  return text.replace(/%\w+%/g, match => {
-    return dictionary[match] || match;
-  });
+  if (typeof text !== 'string' || dictionary !== Object(dictionary))
+    return null;
+  return text.replace(/%\w+%/g, match => dictionary[match] || match);
 };
 
 /**

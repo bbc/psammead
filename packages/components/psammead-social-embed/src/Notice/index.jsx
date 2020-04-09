@@ -59,7 +59,10 @@ const Notice = ({
   warningText,
 }) => {
   const dictionary = dictionaryFactory({ provider });
-  const detokenisedLinkText = detokenise(linkText, dictionary);
+  const [detokenisedLinkText, detokenisedLinkTextSuffix] = [
+    detokenise(linkText, dictionary),
+    detokenise(linkTextSuffixVisuallyHidden, dictionary),
+  ];
 
   return (
     <Wrapper service={service}>
@@ -67,11 +70,8 @@ const Notice = ({
       <a
         href={linkHref}
         aria-label={
-          linkTextSuffixVisuallyHidden &&
-          `${detokenisedLinkText}${detokenise(
-            linkTextSuffixVisuallyHidden,
-            dictionary,
-          )}`
+          detokenisedLinkTextSuffix &&
+          `${detokenisedLinkText}${detokenisedLinkTextSuffix}`
         }
       >
         {detokenisedLinkText}
