@@ -66,16 +66,19 @@ const jsonInlinedScript = data => (
       /* eslint-disable-next-line react/no-danger */
       dangerouslySetInnerHTML={{ __html: JSON.stringify(data) }}
     />
-    <script
-      async
-      custom-element="amp-ad"
-      src="https://cdn.ampproject.org/v0/amp-ad-0.1.js"
-    />
   </>
 );
 
 const AmpGeo = () => (
   <amp-geo layout="nodisplay">{jsonInlinedScript(ampGeoData)}</amp-geo>
+);
+
+export const AmpAd = () => (
+  <script
+    async
+    custom-element="amp-ad"
+    src="https://cdn.ampproject.org/v0/amp-ad-0.1.js"
+  />
 );
 
 export default AmpGeo;
