@@ -1,13 +1,5 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`AmpAd it should render amp-ad 1`] = `
-<script
-  async=""
-  custom-element="amp-ad"
-  src="https://cdn.ampproject.org/v0/amp-ad-0.1.js"
-/>
-`;
-
 exports[`AmpGeo it should render amp-geo with inlined JSON data 1`] = `
 <amp-geo
   layout="nodisplay"

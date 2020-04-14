@@ -73,12 +73,4 @@ const AmpGeo = () => (
   <amp-geo layout="nodisplay">{jsonInlinedScript(ampGeoData)}</amp-geo>
 );
 
-export const AmpAd = () => (
-  <script
-    async
-    custom-element="amp-ad"
-    src="https://cdn.ampproject.org/v0/amp-ad-0.1.js"
-  />
-);
-
 export default AmpGeo;

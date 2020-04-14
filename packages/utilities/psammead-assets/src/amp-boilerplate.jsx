@@ -64,3 +64,10 @@ export const AMP_ADS_JS = (
     src="https://cdn.ampproject.org/v0/amp-ad-0.1.js"
   />
 );
+export const AMP_AD = (
+  <script
+    async
+    custom-element="amp-ad"
+    src="https://cdn.ampproject.org/v0/amp-ad-0.1.js"
+  />
+);
