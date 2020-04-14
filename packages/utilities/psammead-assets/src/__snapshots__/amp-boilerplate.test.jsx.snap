@@ -1,5 +1,13 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`AMP Boilerplate JavaScript should render AMP AD 1`] = `
+<script
+  async=""
+  custom-element="amp-ad"
+  src="https://cdn.ampproject.org/v0/amp-ad-0.1.js"
+/>
+`;
+
 exports[`AMP Boilerplate JavaScript should render AMP Access JS 1`] = `
 <script
   async=""
