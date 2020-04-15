@@ -132,7 +132,7 @@
     "ramda": "^0.27.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-helmet": "^6.0.0",
+    "react-helmet": "^5.2.1",
     "react-test-renderer": "^16.13.1",
     "request": "^2.88.2",
     "semver": "^7.3.2",
