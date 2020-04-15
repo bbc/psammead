@@ -4,6 +4,7 @@
 | Version | Description |
 |---------|-------------|
 | 2.0.123 | [PR#](https://github.com/bbc/psammead/pull/) Dependency updates |
+| 2.0.122 | [PR#3381](https://github.com/bbc/psammead/pull/3381) Talos - Bump Dependencies - @bbc/psammead-assets, @bbc/psammead-locales, @bbc/psammead-radio-schedule |
 | 2.0.121 | [PR#3379](https://github.com/bbc/psammead/pull/3379) Talos - Bump Dependencies - @bbc/psammead-storybook-helpers |
 | 2.0.120 | [PR#3359](https://github.com/bbc/psammead/pull/3359) Talos - Bump Dependencies - @bbc/psammead-brand, @bbc/psammead-bulletin |
 | 2.0.119 | [PR#3356](https://github.com/bbc/psammead/pull/3356) Talos - Bump Dependencies - @bbc/psammead-radio-schedule, @bbc/psammead-story-promo |
