@@ -51,17 +51,6 @@ uniqueStates.forEach(state => {
   );
 });
 
-programCardStories.add(
-  `Multiline episode title`,
-  ({ service }) =>
-    renderProgramCard({
-      state: 'live',
-      service,
-      episodeTitle: 'This is a long episode title that spans multiple lines',
-    }),
-  { notes },
-);
-
 buildRTLSubstories(PROGRAM_CARD_STORIES, {
   include: [...uniqueStates],
 });
@@ -71,11 +60,11 @@ storiesOf('Components|RadioSchedule/StartTime', module)
   .addDecorator(withServicesKnob())
   .add(
     'default',
-    ({ locale, script, service, dir }) => {
+    ({ locale, script, service, dir, timezone = 'GMT' }) => {
       return (
         <StartTime
           timestamp={storiesUnixTimestamp}
-          timezone="Europe/London"
+          timezone={timezone}
           locale={locale}
           script={script}
           service={service}

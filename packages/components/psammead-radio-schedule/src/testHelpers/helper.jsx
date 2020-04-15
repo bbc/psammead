@@ -17,7 +17,7 @@ export const stateTypes = ['live', 'onDemand', 'onDemand', 'next'];
 export const uniqueStates = ['live', 'onDemand', 'next'];
 
 const getSchedule = (service, withLongSummary) => {
-  const { text, articlePath, longText } = TEXT_VARIANTS[service];
+  const { text, articlePath, longText, timezone } = TEXT_VARIANTS[service];
   const programDurationLabel =
     service === 'arabic' ? 'المدة الزمنية' : 'Duration';
 
@@ -27,20 +27,19 @@ const getSchedule = (service, withLongSummary) => {
     startTime: 1566914061212,
     link: articlePath,
     brandTitle: text,
-    episodeTitle: '29/01/1990',
     summary:
       withLongSummary && state === 'live'
         ? `${longText} ${longText}`
         : longText,
     duration: 'PT1H',
     durationLabel: programDurationLabel,
+    timezone,
   }));
 };
 
 export const renderProgramCard = ({
   state,
   service = 'news',
-  episodeTitle = '29/01/1990',
   duration = 'PT30M',
   durationLabel = 'Duration',
   startTime = 1566914061212,
@@ -60,7 +59,6 @@ export const renderProgramCard = ({
       dir={dir}
       brandTitle={text}
       summary={displaySummary ? longText : null}
-      episodeTitle={episodeTitle}
       duration={duration}
       startTime={startTime}
       state={state}
