@@ -1,6 +1,6 @@
 {
   "name": "@bbc/psammead-radio-schedule",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "main": "dist/index.js",
   "module": "esm/index.js",
   "sideEffects": false,

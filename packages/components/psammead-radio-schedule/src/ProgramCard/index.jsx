@@ -151,7 +151,6 @@ const renderHeaderContent = ({
   nextLabel,
   liveLabel,
   brandTitle,
-  episodeTitle,
   service,
   script,
   startTime,
@@ -167,6 +166,14 @@ const renderHeaderContent = ({
   const formattedStartTime = formatUnixTimestamp(
     startTime,
     'HH:mm',
+    timezone,
+    locale,
+    false,
+  );
+
+  const episodeTitle = formatUnixTimestamp(
+    startTime,
+    'D MMMM YYYY HH:mm z',
     timezone,
     locale,
     false,
@@ -221,7 +228,6 @@ const ProgramCard = ({
   script,
   brandTitle,
   summary,
-  episodeTitle,
   duration,
   durationLabel,
   startTime,
@@ -245,7 +251,6 @@ const ProgramCard = ({
           nextLabel,
           liveLabel,
           brandTitle,
-          episodeTitle,
           service,
           script,
           startTime,
@@ -287,7 +292,6 @@ const programCardPropTypes = {
   service: string.isRequired,
   script: shape(scriptPropType).isRequired,
   brandTitle: string.isRequired,
-  episodeTitle: string.isRequired,
   link: string.isRequired,
   state: string.isRequired,
   nextLabel: string.isRequired,
