@@ -1,6 +1,6 @@
 {
   "name": "@bbc/psammead-radio-schedule",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "main": "dist/index.js",
   "module": "esm/index.js",
   "sideEffects": false,
@@ -21,7 +21,7 @@
   "dependencies": {
     "@bbc/gel-foundations": "^4.0.1",
     "@bbc/psammead-styles": "^4.3.0",
-    "@bbc/psammead-assets": "^2.13.0",
+    "@bbc/psammead-assets": "^2.14.0",
     "@bbc/psammead-timestamp-container": "^2.7.11",
     "@bbc/psammead-live-label": "^1.0.0"
   },
