@@ -2,6 +2,7 @@
 
 | Version       | Description                                                                       |
 |---------------|-----------------------------------------------------------------------------------|
+| 1.0.0-alpha.16 | [PR#3378](https://github.com/bbc/psammead/pull/3378) Talos - Bump Dependencies - @bbc/psammead-assets |
 | 1.0.0-alpha.15 | [PR#3135](https://github.com/bbc/psammead/pull/3135) Talos - Bump Dependencies - @bbc/gel-foundations |
 | 1.0.0-alpha.14 | [PR#3129](https://github.com/bbc/psammead/pull/3129) Talos - Bump Dependencies - @bbc/gel-foundations |
 | 1.0.0-alpha.13 | [PR#3030](https://github.com/bbc/psammead/pull/3030) Talos - Bump Dependencies - @bbc/psammead-assets, @bbc/psammead-styles |
