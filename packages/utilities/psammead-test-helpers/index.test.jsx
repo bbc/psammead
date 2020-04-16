@@ -1,5 +1,5 @@
 import React from 'react';
-import Helmet from 'react-helmet';
+import { Helmet } from 'react-helmet';
 import * as testHelpers from '.';
 import * as testHelpersFromSrc from './src/index';
 import renderWithHelmet from './src/renderWithHelmet';
