@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 8.3.1 | [PR#3388](https://github.com/bbc/psammead/pull/3388) Update react-helmet to 6.0.0 |
 | 8.3.0 | [PR#3376](https://github.com/bbc/psammead/pull/3376) Adding timezone to withServicesKnob helper |
 | 8.2.7 | [PR#3270](https://github.com/bbc/psammead/pull/3270) Security fixes |
 | 8.2.6 | [PR#3279](https://github.com/bbc/psammead/pull/3279) Add `selectedService` to withServicesKnob `storyProps` |
