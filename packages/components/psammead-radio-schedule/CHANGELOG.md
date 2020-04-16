@@ -3,6 +3,8 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 1.0.3 | [PR#3381](https://github.com/bbc/psammead/pull/3381) Talos - Bump Dependencies - @bbc/psammead-assets |
+| 1.0.2 | [PR#3379](https://github.com/bbc/psammead/pull/3379) Talos - Bump Dependencies - @bbc/psammead-storybook-helpers adding timezone |
 | 1.0.1 | [PR#3354](https://github.com/bbc/psammead/pull/3354) Talos - Bump Dependencies - @bbc/psammead-timestamp-container |
 | 1.0.0 | [PR#3350](https://github.com/BBC/psammead/pull/3350) Remove alpha tag |
 | 0.1.0-alpha.33 | [PR#3348](https://github.com/bbc/psammead/pull/3348) Add wrapping span with role `text` around the headline |

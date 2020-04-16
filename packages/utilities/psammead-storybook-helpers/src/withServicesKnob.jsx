@@ -34,6 +34,7 @@ export default ({
     script,
     locale,
     dir = 'ltr',
+    timezone = 'GMT',
   } = TEXT_VARIANTS[selectedService];
 
   const storyProps = {
@@ -46,6 +47,7 @@ export default ({
     service,
     variant: variant || 'default',
     selectedService,
+    timezone,
   };
 
   return (

@@ -31,5 +31,6 @@ describe('AMP Boilerplate', () => {
       boilerplate.AMP_MUSTACHE_JS,
     );
     shouldMatchSnapshot('should render AMP ads JS', boilerplate.AMP_ADS_JS);
+    shouldMatchSnapshot('should render AMP AD', boilerplate.AMP_AD);
   });
 });
