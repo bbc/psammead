@@ -57,10 +57,12 @@ const Banner = styled.div`
   @media (max-width: ${GEL_GROUP_0_SCREEN_WIDTH_MAX}) {
     ${({ scriptLink, svgHeight }) =>
       scriptLink &&
-      `min-height: ${(svgHeight +
-        PADDING_AROUND_SVG_BELOW_400PX +
-        SCRIPT_LINK_OFFSET_BELOW_240PX) /
-        16}rem;`}
+      `min-height: ${
+        (svgHeight +
+          PADDING_AROUND_SVG_BELOW_400PX +
+          SCRIPT_LINK_OFFSET_BELOW_240PX) /
+        16
+      }rem;`}
   }
 
   border-top: ${({ borderTop }) => borderTop && TRANSPARENT_BORDER};

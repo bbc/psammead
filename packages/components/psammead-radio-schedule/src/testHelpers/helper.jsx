@@ -7,10 +7,7 @@ import ProgramCard from '../ProgramCard';
 import RadioSchedule from '../index';
 
 export const sentenceCase = text =>
-  text
-    .toLowerCase()
-    .charAt(0)
-    .toUpperCase() + text.substring(1);
+  text.toLowerCase().charAt(0).toUpperCase() + text.substring(1);
 
 // Will remove and clean up in future PRs
 export const stateTypes = ['live', 'onDemand', 'onDemand', 'next'];

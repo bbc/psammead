@@ -182,9 +182,7 @@ describe('Moment configuration', () => {
     // default moment configuration would return 'a day ago'
     expect(twentyThree.fromNow()).toEqual('23 hours ago');
 
-    const allButADay = moment()
-      .subtract(23, 'hours')
-      .subtract(59, 'seconds');
+    const allButADay = moment().subtract(23, 'hours').subtract(59, 'seconds');
     // default moment configuration would return 'a day ago'
     expect(allButADay.fromNow()).toEqual('23 hours ago');
   });
@@ -203,9 +201,7 @@ describe('Moment configuration', () => {
     // default moment configuration would return '2 days ago' (no change)
     expect(two.fromNow()).toEqual('2 days ago');
 
-    const allButAMonth = moment()
-      .subtract(30, 'days')
-      .add(1, 'second');
+    const allButAMonth = moment().subtract(30, 'days').add(1, 'second');
     // default moment configuration would return 'a month ago'
     expect(allButAMonth.fromNow()).toEqual('29 days ago');
   });
@@ -223,9 +219,7 @@ describe('Moment configuration', () => {
     // default moment configuration would return '2 days ago' (no change)
     expect(two.fromNow()).toEqual('2 days ago');
 
-    const allButAMonth = moment()
-      .subtract(30, 'days')
-      .add(1, 'day');
+    const allButAMonth = moment().subtract(30, 'days').add(1, 'day');
     // default moment configuration would return 'a month ago'
     expect(allButAMonth.fromNow()).toEqual('29 days ago');
   });
