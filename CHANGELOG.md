@@ -3,7 +3,8 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
-| 2.0.123 | [PR#3387](https://github.com/bbc/psammead/pull/3387) Talos - Bump Dependencies - @bbc/psammead-bulletin, @bbc/psammead-calendars, @bbc/psammead-image-placeholder, @bbc/psammead-media-indicator, @bbc/psammead-navigation, @bbc/psammead-play-button, @bbc/psammead-timestamp-container |
+| 2.0.124 | [PR#3387](https://github.com/bbc/psammead/pull/3387) Talos - Bump Dependencies - @bbc/psammead-bulletin, @bbc/psammead-calendars, @bbc/psammead-image-placeholder, @bbc/psammead-media-indicator, @bbc/psammead-navigation, @bbc/psammead-play-button, @bbc/psammead-timestamp-container |
+| 2.0.123 | [PR#3362](https://github.com/bbc/psammead/pull/3362) Update to Node v12.16.2 and npm 6.14.4 |
 | 2.0.122 | [PR#3381](https://github.com/bbc/psammead/pull/3381) Talos - Bump Dependencies - @bbc/psammead-assets, @bbc/psammead-locales, @bbc/psammead-radio-schedule |
 | 2.0.121 | [PR#3379](https://github.com/bbc/psammead/pull/3379) Talos - Bump Dependencies - @bbc/psammead-storybook-helpers |
 | 2.0.120 | [PR#3359](https://github.com/bbc/psammead/pull/3359) Talos - Bump Dependencies - @bbc/psammead-brand, @bbc/psammead-bulletin |
