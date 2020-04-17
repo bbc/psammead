@@ -1,6 +1,6 @@
 import React from 'react';
 import { string, number } from 'prop-types';
-import Helmet from 'react-helmet';
+import { Helmet } from 'react-helmet';
 import { AmpImg } from '@bbc/psammead-image';
 import Message from '../Message';
 

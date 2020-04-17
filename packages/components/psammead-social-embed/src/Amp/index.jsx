@@ -1,6 +1,6 @@
 import React, { memo } from 'react';
 import { string } from 'prop-types';
-import Helmet from 'react-helmet';
+import { Helmet } from 'react-helmet';
 
 const Instagram = ({ id }) => (
   <>

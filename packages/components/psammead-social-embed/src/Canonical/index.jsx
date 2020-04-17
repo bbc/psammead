@@ -1,5 +1,5 @@
 import React, { memo } from 'react';
-import Helmet from 'react-helmet';
+import { Helmet } from 'react-helmet';
 import { shape, string } from 'prop-types';
 import styled, { css } from 'styled-components';
 
