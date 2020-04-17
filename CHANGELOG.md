@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 2.0.127 | [PR#3391](https://github.com/bbc/psammead/pull/3391) Talos - Bump Dependencies - @bbc/psammead-media-player, @bbc/psammead-navigation, @bbc/psammead-storybook-helpers, @bbc/psammead-test-helpers |
 | 2.0.126 | [PR#3388](https://github.com/bbc/psammead/pull/3388) Update react-helmet to 6.0.0 |
 | 2.0.125 | [PR#3387](https://github.com/bbc/psammead/pull/3387) Talos - Bump Dependencies - @bbc/psammead-bulletin, @bbc/psammead-calendars, @bbc/psammead-image-placeholder, @bbc/psammead-media-indicator, @bbc/psammead-navigation, @bbc/psammead-play-button, @bbc/psammead-timestamp-container |
 | 2.0.124 | [PR#3382](https://github.com/bbc/psammead/pull/3382) Dependency updates |
