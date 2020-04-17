@@ -2,7 +2,7 @@
 
 ## Description
 
-The `Detokeniser` utility does...
+The `Detokeniser` utility replaces % delimiter with spaces to be fed into a dictionary.
 
 ## Installation
 
@@ -14,7 +14,8 @@ npm install @bbc/psammead-detokeniser --save
 
 | Argument  | Type | Required | Default | Example |
 | --------- | ---- | -------- | ------- | ------- |
-| No props. |      |          |         |         |
+| text | string | yes | N/A | `'Foo %token%'` |
+| dictionary | object | yes | N/A | { `'%token%': 'Bar'` } |
 
 ## Usage
 
