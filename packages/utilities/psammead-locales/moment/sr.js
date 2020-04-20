@@ -12,7 +12,7 @@ moment.updateLocale('sr', {
     m: '1 minuta',
     mm: '%d minuta',
     h: '1 sata',
-    hh: function(number) {
+    hh: function (number) {
       return number < 5 ? number + ' sata' : number + ' sati';
     },
   },

@@ -9,10 +9,7 @@ const outputReducer = (accumulator, current) => {
   const sections = current.split(': ');
   if (sections.length) {
     const key = sections[0];
-    const value = sections
-      .splice(1)
-      .join(': ')
-      .trim();
+    const value = sections.splice(1).join(': ').trim();
     if (Object.prototype.hasOwnProperty.call(accumulator, key)) {
       accumulator[key] = [...accumulator[key], value];
     } else {
