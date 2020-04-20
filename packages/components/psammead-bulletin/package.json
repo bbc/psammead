@@ -1,6 +1,6 @@
 {
   "name": "@bbc/psammead-bulletin",
-  "version": "3.0.4",
+  "version": "3.0.5",
   "main": "dist/index.js",
   "module": "esm/index.js",
   "sideEffects": false,
@@ -23,7 +23,7 @@
     "@bbc/psammead-styles": "^4.3.1",
     "@bbc/psammead-assets": "^2.14.0",
     "@bbc/psammead-visually-hidden-text": "^1.2.3",
-    "@bbc/psammead-story-promo": "^6.0.0",
+    "@bbc/psammead-story-promo": "^6.0.1",
     "@bbc/psammead-live-label": "^1.0.0"
   },
   "peerDependencies": {

@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 4.0.6 | [PR#3398](https://github.com/bbc/psammead/pull/3398) Talos - Bump Dependencies - @bbc/psammead-grid |
 | 4.0.5 | [PR#3397](https://github.com/bbc/psammead/pull/3397) Talos - Bump Dependencies - @bbc/psammead-grid, @bbc/psammead-styles |
 | 4.0.4 | [PR#3317](https://github.com/bbc/psammead/pull/3317) Update rank min-width for persian and pashto |
 | 4.0.3 | [PR#3291](https://github.com/bbc/psammead/pull/3291) Use withServicesKnob `selectedService` prop |
