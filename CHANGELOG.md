@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 2.0.129 | [PR#3397](https://github.com/bbc/psammead/pull/3397) Talos - Bump Dependencies - @bbc/psammead-brand, @bbc/psammead-grid, @bbc/psammead-locales, @bbc/psammead-radio-schedule, @bbc/psammead-styles, @bbc/psammead-timestamp-container |
 | 2.0.128 | [PR#3390](https://github.com/bbc/psammead/pull/3390) Bump prettier major version and disable rule for brackets around a single prop |
 | 2.0.127 | [PR#3392](https://github.com/bbc/psammead/pull/3392) Talos - Bump Dependencies - @bbc/psammead-media-player, @bbc/psammead-navigation, @bbc/psammead-radio-schedule, @bbc/psammead-storybook-helpers, @bbc/psammead-test-helpers |
 | 2.0.126 | [PR#3388](https://github.com/bbc/psammead/pull/3388) Update react-helmet to 6.0.0 |
