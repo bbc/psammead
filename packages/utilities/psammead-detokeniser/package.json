@@ -4,7 +4,7 @@
   "main": "dist/index.js",
   "module": "esm/index.js",
   "sideEffects": false,
-  "description": "Replaces % delimiter with spaces to be fed into a dictionary",
+  "description": "Replaces % delimited tokens with a value from the dictionary object",
   "repository": {
     "type": "git",
     "url": "https://github.com/BBC-News/psammead/tree/latest/packages/utilities/psammead-detokeniser"

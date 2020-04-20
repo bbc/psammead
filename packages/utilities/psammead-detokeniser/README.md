@@ -2,7 +2,7 @@
 
 ## Description
 
-The `Detokeniser` utility replaces % delimiter with spaces to be fed into a dictionary.
+The `detokeniser` utility operates on strings and replaces % delimited tokens with a value from the dictionary object.
 
 ## Installation
 
@@ -17,12 +17,17 @@ npm install @bbc/psammead-detokeniser --save
 | text | string | yes | N/A | `'Foo %token%'` |
 | dictionary | object | yes | N/A | { `'%token%': 'Bar'` } |
 
-## Usage
+`dictionary` is an object which maps keys as tokens to values. For example, in `psammead-social-embeds`, all social media providers in the data are in lowercase which corresponds as the token to be interpolated into the full name. 
+E.g. `'%youtube%' -> 'YouTube'`
 
-<!-- Description of the utility usage -->
+## Usage
 
 ```
 import detokenise from "@bbc/psammead-detokeniser"
+
+// This will return 'Duration: 20 minutes'
+detokenise('Duration: %token%', { '%token%': '20 minutes' });
+
 ```
 
 ### When to use this utility
