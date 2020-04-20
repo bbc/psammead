@@ -22,7 +22,7 @@ npm install @bbc/psammead-detokeniser --save
 <!-- Description of the utility usage -->
 
 ```
-import Detokeniser from "@bbc/psammead-detokeniser"
+import detokenise from "@bbc/psammead-detokeniser"
 ```
 
 ### When to use this utility
