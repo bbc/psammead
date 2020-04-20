@@ -1,6 +1,6 @@
 {
   "name": "@bbc/psammead-brand",
-  "version": "5.1.18",
+  "version": "5.1.19",
   "main": "dist/index.js",
   "module": "esm/index.js",
   "sideEffects": false,
@@ -23,7 +23,7 @@
     "@bbc/psammead-visually-hidden-text": "^1.2.3"
   },
   "devDependencies": {
-    "@bbc/psammead-script-link": "^1.0.13",
+    "@bbc/psammead-script-link": "^1.0.14",
     "@bbc/psammead-styles": "^4.3.1"
   },
   "peerDependencies": {
