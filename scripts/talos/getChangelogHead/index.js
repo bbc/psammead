@@ -10,12 +10,7 @@ const getPackageVersions = publishedPackage =>
     .replace(getPackageName(publishedPackage), '')
     .replace('@bbc/', '')
     .split('→')
-    .map(version =>
-      version
-        .trim()
-        .replace('^', '')
-        .replace('~', ''),
-    );
+    .map(version => version.trim().replace('^', '').replace('~', ''));
 
 const getChangelogHead = publishedPackage => {
   const packageName = getPackageName(publishedPackage);

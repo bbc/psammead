@@ -175,8 +175,9 @@ const childrenFallback = (
   }
   ${
     !parentEnableGelGutters
-      ? `width: calc(${(100 * columnsGroup) /
-          parentColumnsGroup}%${negativeOffset});`
+      ? `width: calc(${
+          (100 * columnsGroup) / parentColumnsGroup
+        }%${negativeOffset});`
       : ``
   }
   
