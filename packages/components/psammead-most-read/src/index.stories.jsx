@@ -1,7 +1,13 @@
 /* eslint-disable react/prop-types */
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import { select, boolean, number, withKnobs } from '@storybook/addon-knobs';
+import {
+  select,
+  boolean,
+  number,
+  withKnobs,
+  optionsKnob as options,
+} from '@storybook/addon-knobs';
 import { withServicesKnob } from '@bbc/psammead-storybook-helpers';
 import { getItem, getItemWrapperArray } from './utilities';
 import { MostReadRank, MostReadLink, MostReadList } from './index';
@@ -18,6 +24,11 @@ const listIndexRange = {
 };
 
 const pageTypes = ['oneColumn', 'twoColumn', 'multiColumn'];
+const typeSize = { default: 'default', pica: 'pica', trafalgar: 'trafalgar' };
+
+const optionsDisplay = {
+  display: 'multi-select',
+};
 
 const renderList = ({
   numberOfItems,
@@ -26,6 +37,7 @@ const renderList = ({
   script,
   withTimestamp,
   columnLayout,
+  typography,
 }) => (
   <MostReadList
     numberOfItems={numberOfItems}
@@ -39,11 +51,12 @@ const renderList = ({
       dir,
       withTimestamp,
       columnLayout,
+      typography,
     }).map(item => item)}
   </MostReadList>
 );
 
-const renderLink = ({ dir, service, script, withTimestamp }) => {
+const renderLink = ({ dir, service, script, withTimestamp, typography }) => {
   const item = getItem({ service, withTimestamp });
   return (
     <MostReadLink
@@ -52,6 +65,7 @@ const renderLink = ({ dir, service, script, withTimestamp }) => {
       service={service}
       script={script}
       title={item.title}
+      typography={typography}
     >
       {item.timestamp}
     </MostReadLink>
@@ -65,6 +79,7 @@ const renderRank = ({
   listIndex,
   numberOfItems,
   columnLayout,
+  typography,
 }) => (
   <MostReadRank
     service={service}
@@ -73,6 +88,7 @@ const renderRank = ({
     numberOfItems={numberOfItems}
     dir={dir}
     columnlayout={columnLayout}
+    typography={typography}
   />
 );
 
@@ -87,6 +103,7 @@ storiesOf('Components|MostRead/Rank', module)
           script,
           listIndex: number('Number (1 - 10)', 5, listIndexRange),
           numberOfItems: 10,
+          typography: select('Typography', typeSize, typeSize.default),
         }),
       {
         notes,
@@ -105,6 +122,7 @@ storiesOf('Components|MostRead/Item', module)
         script,
         service: selectedService,
         withTimestamp: boolean('Timestamp', false),
+        typography: select('Typography', typeSize, typeSize.default),
       }),
     {
       notes,
@@ -124,6 +142,12 @@ storiesOf('Components|MostRead/List', module)
           service: selectedService,
           dir,
           script,
+          typography: options(
+            'Typography',
+            typeSize,
+            typeSize.default,
+            optionsDisplay,
+          ),
         }),
       ),
     {

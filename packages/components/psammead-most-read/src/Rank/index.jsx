@@ -1,7 +1,7 @@
 import React from 'react';
 import { shape, string, oneOf, number } from 'prop-types';
 import styled from 'styled-components';
-import { getFoolscap } from '@bbc/gel-foundations/typography';
+import { getFoolscap, getTrafalgar } from '@bbc/gel-foundations/typography';
 import {
   Burmese,
   Bengali,
@@ -147,7 +147,10 @@ const MultiColumnWrapper = styled(TwoColumnWrapper)`
 
 const StyledSpan = styled.span`
   ${({ service }) => getSerifLight(service)}
-  ${({ script }) => script && getFoolscap(script)};
+  ${({ script, typography }) =>
+    script && typography === 'trafalgar'
+      ? getTrafalgar(script)
+      : getFoolscap(script)};
   position: relative;
   color: ${C_POSTBOX};
   margin: 0; /* Reset */
@@ -184,6 +187,7 @@ const MostReadRank = ({
   numberOfItems,
   dir,
   columnLayout,
+  typography,
 }) => {
   const numerals = serviceNumerals(service);
   const rank = numerals[listIndex];
@@ -196,7 +200,7 @@ const MostReadRank = ({
       numberOfItems={numberOfItems}
       dir={dir}
     >
-      <StyledSpan service={service} script={script}>
+      <StyledSpan service={service} script={script} typography={typography}>
         {rank}
       </StyledSpan>
     </RankWrapper>
@@ -210,11 +214,13 @@ MostReadRank.propTypes = {
   numberOfItems: number.isRequired,
   dir: oneOf(['rtl', 'ltr']),
   columnLayout: oneOf(['oneColumn', 'twoColumn', 'multiColumn']),
+  typography: oneOf(['default', 'pica', 'trafalgar']),
 };
 
 MostReadRank.defaultProps = {
   dir: 'ltr',
   columnLayout: 'multiColumn',
+  typography: 'default',
 };
 
 export default MostReadRank;

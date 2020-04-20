@@ -58,7 +58,8 @@ const StyledLink = styled.a`
   }
 
   @media (min-width: ${GEL_GROUP_2_SCREEN_WIDTH_MIN}) {
-    ${({ script }) => script && getGreatPrimer(script)};
+    ${({ script, typography }) =>
+      script && typography !== 'pica' && getGreatPrimer(script)};
   }
 `;
 
@@ -86,9 +87,15 @@ export const MostReadLink = ({
   title,
   href,
   children,
+  typography,
 }) => (
   <StyledItem dir={dir}>
-    <StyledLink href={href} script={script} service={service}>
+    <StyledLink
+      href={href}
+      script={script}
+      service={service}
+      typography={typography}
+    >
       {title}
     </StyledLink>
     {children && <TimestampWrapper>{children}</TimestampWrapper>}
@@ -102,11 +109,13 @@ MostReadLink.propTypes = {
   title: string.isRequired,
   href: string.isRequired,
   children: node, // this node will be a timestamp container
+  typography: oneOf(['default', 'pica', 'trafalgar']),
 };
 
 MostReadLink.defaultProps = {
   dir: 'ltr',
   children: null,
+  typography: '',
 };
 
 const ItemWrapper = styled.div`
