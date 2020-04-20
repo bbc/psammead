@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 | ------- | ----------- |
+| 4.0.7 | [PR#3397](https://github.com/bbc/psammead/pull/3397) Talos - Bump Dependencies - @bbc/psammead-styles |
 | 4.0.6 | [PR#3315](https://github.com/bbc/psammead/pull/3315) Add `border` prop to be able to hide the border |
 | 4.0.5 | [PR#3208](https://github.com/bbc/psammead/pull/3208) Update snapshot test |
 | 4.0.4 | [PR#3135](https://github.com/bbc/psammead/pull/3135) Talos - Bump Dependencies - @bbc/gel-foundations |
