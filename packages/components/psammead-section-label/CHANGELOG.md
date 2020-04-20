@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 5.0.4 | [PR#3397](https://github.com/bbc/psammead/pull/3397) Talos - Bump Dependencies - @bbc/psammead-styles |
 | 5.0.3 | [PR#3328](https://github.com/bbc/psammead/pull/3328) Replace a `div` with a `span` tag to fix invalid HTML syntax |
 | 5.0.2 | [PR#3262](https://github.com/bbc/psammead/pull/3262) Add `backgroundColor` prop |
 | 5.0.1 | [PR#3195](https://github.com/bbc/psammead/pull/3195) Define `z-index` on section-label wrapper |
