@@ -257,7 +257,7 @@ exports[`ProgramCard should render correctly for live 1`] = `
           <span
             class="c6 c7"
           >
-            27 August 2019 BST
+            27 August 2019
           </span>
         </span>
       </a>
@@ -540,7 +540,7 @@ exports[`ProgramCard should render correctly for next 1`] = `
         <span
           class="c5 c6"
         >
-          27 August 2019 BST
+          27 August 2019
         </span>
       </span>
     </h3>
@@ -824,7 +824,7 @@ exports[`ProgramCard should render correctly for onDemand 1`] = `
           <span
             class="c5 c6"
           >
-            27 August 2019 BST
+            27 August 2019
           </span>
         </span>
       </a>
@@ -1109,7 +1109,7 @@ exports[`ProgramCard should render correctly in RTL 1`] = `
           <span
             class="c5 c6"
           >
-            ٢٧ أغسطس ٢٠١٩ GMT
+            ٢٧ أغسطس ٢٠١٩
           </span>
         </span>
       </a>
@@ -1395,7 +1395,7 @@ exports[`ProgramCard should render correctly without summary 1`] = `
           <span
             class="c6 c7"
           >
-            27 August 2019 BST
+            27 August 2019
           </span>
         </span>
       </a>
