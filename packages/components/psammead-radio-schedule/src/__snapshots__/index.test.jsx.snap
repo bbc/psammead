@@ -1740,7 +1740,7 @@ exports[`RadioSchedule should render rtl radio schedules correctly 1`] = `
             class="c9"
             datetime="2019-08-27"
           >
-            ۱۴:۵۴
+            ١٤:٥٤
           </time>
         </span>
       </div>
@@ -1777,13 +1777,13 @@ exports[`RadioSchedule should render rtl radio schedules correctly 1`] = `
                 class="c15"
               >
                 , 
-                ۱۴:۵۴
+                ١٤:٥٤
                 , 
               </span>
               <span
                 class="c16 c17"
               >
-                ۲۷ اوت ۲۰۱۹ ۱۴:۵۴ BST
+                ٢٧ أغسطس ٢٠١٩ ١٤:٥٤ BST
               </span>
             </span>
           </a>
@@ -1877,7 +1877,7 @@ exports[`RadioSchedule should render rtl radio schedules correctly 1`] = `
             class="c9"
             datetime="2019-08-27"
           >
-            ۱۴:۵۴
+            ١٤:٥٤
           </time>
         </span>
       </div>
@@ -1904,13 +1904,13 @@ exports[`RadioSchedule should render rtl radio schedules correctly 1`] = `
                 class="c15"
               >
                 , 
-                ۱۴:۵۴
+                ١٤:٥٤
                 , 
               </span>
               <span
                 class="c16 c17"
               >
-                ۲۷ اوت ۲۰۱۹ ۱۴:۵۴ BST
+                ٢٧ أغسطس ٢٠١٩ ١٤:٥٤ BST
               </span>
             </span>
           </a>
@@ -2004,7 +2004,7 @@ exports[`RadioSchedule should render rtl radio schedules correctly 1`] = `
             class="c9"
             datetime="2019-08-27"
           >
-            ۱۴:۵۴
+            ١٤:٥٤
           </time>
         </span>
       </div>
@@ -2031,13 +2031,13 @@ exports[`RadioSchedule should render rtl radio schedules correctly 1`] = `
                 class="c15"
               >
                 , 
-                ۱۴:۵۴
+                ١٤:٥٤
                 , 
               </span>
               <span
                 class="c16 c17"
               >
-                ۲۷ اوت ۲۰۱۹ ۱۴:۵۴ BST
+                ٢٧ أغسطس ٢٠١٩ ١٤:٥٤ BST
               </span>
             </span>
           </a>
@@ -2131,7 +2131,7 @@ exports[`RadioSchedule should render rtl radio schedules correctly 1`] = `
             class="c9"
             datetime="2019-08-27"
           >
-            ۱۴:۵۴
+            ١٤:٥٤
           </time>
         </span>
       </div>
@@ -2160,13 +2160,13 @@ exports[`RadioSchedule should render rtl radio schedules correctly 1`] = `
               class="c15"
             >
               , 
-              ۱۴:۵۴
+              ١٤:٥٤
               , 
             </span>
             <span
               class="c16 c26"
             >
-              ۲۷ اوت ۲۰۱۹ ۱۴:۵۴ BST
+              ٢٧ أغسطس ٢٠١٩ ١٤:٥٤ BST
             </span>
           </span>
         </h3>
