@@ -19,8 +19,6 @@ moment.relativeTimeThreshold('h', 24);
 moment.relativeTimeThreshold('d', 30);
 moment.relativeTimeThreshold('M', 12);
 
-const defaultFormat = 'LL, LT z';
-
 export const formatDuration = ({ durationValue, format, locale = 'en-gb' }) => {
   const defaultDurationFormat = durationValue.includes('H')
     ? 'h:mm:ss'
@@ -48,17 +46,18 @@ export const localisedTime = ({ locale, timestamp }) => {
   return moment(timestamp).locale(locale);
 };
 
-export const formatUnixTimestamp = (
-  timestamp,
+export const formatUnixTimestamp = ({
   format,
-  timezone,
-  locale,
   isRelative,
-) => {
+  locale,
+  timestamp,
+  timezone,
+}) => {
   const momentObj = localisedTime({ locale, timestamp }).tz(timezone);
 
   if (isRelative) {
     return momentObj.fromNow();
   }
+  const defaultFormat = 'LL, LT z';
   return format ? momentObj.format(format) : momentObj.format(defaultFormat);
 };
