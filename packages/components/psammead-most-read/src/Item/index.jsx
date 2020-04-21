@@ -109,13 +109,13 @@ MostReadLink.propTypes = {
   title: string.isRequired,
   href: string.isRequired,
   children: node, // this node will be a timestamp container
-  typography: oneOf(['default', 'pica', 'trafalgar']),
+  typography: oneOf(['greatprimer', 'pica']),
 };
 
 MostReadLink.defaultProps = {
   dir: 'ltr',
   children: null,
-  typography: '',
+  typography: 'greatprimer',
 };
 
 const ItemWrapper = styled.div`

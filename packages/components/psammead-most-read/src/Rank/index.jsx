@@ -214,13 +214,13 @@ MostReadRank.propTypes = {
   numberOfItems: number.isRequired,
   dir: oneOf(['rtl', 'ltr']),
   columnLayout: oneOf(['oneColumn', 'twoColumn', 'multiColumn']),
-  typography: oneOf(['default', 'pica', 'trafalgar']),
+  typography: oneOf(['foolscap', 'trafalgar']),
 };
 
 MostReadRank.defaultProps = {
   dir: 'ltr',
   columnLayout: 'multiColumn',
-  typography: 'default',
+  typography: 'foolscap',
 };
 
 export default MostReadRank;

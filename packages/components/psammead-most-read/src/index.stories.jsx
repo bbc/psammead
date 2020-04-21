@@ -18,7 +18,8 @@ const listIndexRange = {
 };
 
 const pageTypes = ['oneColumn', 'twoColumn', 'multiColumn'];
-const typeSize = { default: 'default', pica: 'pica', trafalgar: 'trafalgar' };
+const rankTypeSize = { default: 'foolscap', trafalgar: 'trafalgar' };
+const linkTypeSize = { default: 'greatprimer', pica: 'pica' };
 
 const renderList = ({
   numberOfItems,
@@ -95,7 +96,7 @@ storiesOf('Components|MostRead/Rank', module)
           script,
           listIndex: number('Number (1 - 10)', 5, listIndexRange),
           numberOfItems: 10,
-          typography: select('Typography', typeSize, typeSize.default),
+          typography: select('Typography', rankTypeSize, rankTypeSize.default),
         }),
       {
         notes,
@@ -114,7 +115,7 @@ storiesOf('Components|MostRead/Item', module)
         script,
         service: selectedService,
         withTimestamp: boolean('Timestamp', false),
-        typography: select('Typography', typeSize, typeSize.default),
+        typography: select('Typography', linkTypeSize, linkTypeSize.default),
       }),
     {
       notes,
@@ -134,8 +135,16 @@ storiesOf('Components|MostRead/List', module)
           service: selectedService,
           dir,
           script,
-          rankTypography: select('Rank Typography', typeSize, typeSize.default),
-          linkTypography: select('Link Typography', typeSize, typeSize.default),
+          rankTypography: select(
+            'Rank Typography',
+            rankTypeSize,
+            rankTypeSize.default,
+          ),
+          linkTypography: select(
+            'Link Typography',
+            linkTypeSize,
+            linkTypeSize.default,
+          ),
         }),
       ),
     {
