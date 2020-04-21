@@ -9,7 +9,7 @@ import {
 import * as fontFaces from '@bbc/psammead-styles/fonts';
 import GlobalStyles from '@bbc/psammead-styles/global-styles';
 
-import Helmet from 'react-helmet';
+import { Helmet } from 'react-helmet';
 
 const theme = create({
   base: 'light',

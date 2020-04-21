@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 | ------- | ----------- |
+| 6.0.1 | [PR#3397](https://github.com/bbc/psammead/pull/3397) Talos - Bump Dependencies - @bbc/psammead-styles |
 | 6.0.0 | [PR#3264](https://github.com/bbc/psammead/pull/3264) Use `LiveLabel` component |
 | 5.1.0 | [PR#3206](https://github.com/bbc/psammead/pull/3206) Add prop to toggle if live label is hidden, as styled components strips aria tag |
 | 5.0.0 | [PR#3202](https://github.com/bbc/psammead/pull/3202) Live Label is no longer aria hidden |

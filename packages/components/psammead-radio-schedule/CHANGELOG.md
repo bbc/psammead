@@ -3,6 +3,13 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 1.0.8 | [PR#3400](https://github.com/bbc/psammead/pull/3400) Talos - Bump Dependencies - @bbc/psammead-timestamp-container |
+| 1.0.7 | [PR#3398](https://github.com/bbc/psammead/pull/3398) Talos - Bump Dependencies - @bbc/psammead-timestamp-container |
+| 1.0.6 | [PR#3397](https://github.com/bbc/psammead/pull/3397) Talos - Bump Dependencies - @bbc/psammead-styles, @bbc/psammead-timestamp-container |
+| 1.0.5 | [PR#3390](https://github.com/bbc/psammead/pull/3390) Bump prettier major version and disable rule for brackets around a single prop |
+| 1.0.4 | [PR#3387](https://github.com/bbc/psammead/pull/3387) Talos - Bump Dependencies - @bbc/psammead-timestamp-container |
+| 1.0.3 | [PR#3381](https://github.com/bbc/psammead/pull/3381) Talos - Bump Dependencies - @bbc/psammead-assets |
+| 1.0.2 | [PR#3379](https://github.com/bbc/psammead/pull/3379) Talos - Bump Dependencies - @bbc/psammead-storybook-helpers adding timezone |
 | 1.0.1 | [PR#3354](https://github.com/bbc/psammead/pull/3354) Talos - Bump Dependencies - @bbc/psammead-timestamp-container |
 | 1.0.0 | [PR#3350](https://github.com/BBC/psammead/pull/3350) Remove alpha tag |
 | 0.1.0-alpha.33 | [PR#3348](https://github.com/bbc/psammead/pull/3348) Add wrapping span with role `text` around the headline |
