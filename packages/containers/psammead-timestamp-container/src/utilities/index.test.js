@@ -232,22 +232,20 @@ describe('Moment configuration', () => {
 
   describe('formatDuration', () => {
     it('should return duration in default format', () => {
-      const durationValue = 'PT30M'; // 30:00
-      expect(formatDuration({ durationValue })).toEqual('30:00');
+      const duration = 'PT30M'; // 30:00
+      expect(formatDuration({ duration })).toEqual('30:00');
     });
     it('should return duration with hours in default format', () => {
-      const durationValue = 'PT1H30M'; // 1:30:00
-      expect(formatDuration({ durationValue })).toEqual('1:30:00');
+      const duration = 'PT1H30M'; // 1:30:00
+      expect(formatDuration({ duration })).toEqual('1:30:00');
     });
     it('should return duration in relevant format when a format is passed in', () => {
-      const durationValue = 'PT30M'; // 30:00
-      expect(formatDuration({ durationValue, format: 'mm,ss' })).toEqual(
-        '30,00',
-      );
+      const duration = 'PT30M'; // 30:00
+      expect(formatDuration({ duration, format: 'mm,ss' })).toEqual('30,00');
     });
     it('should return duration that is localised when locale is passed in', () => {
-      const durationValue = 'PT30M'; // 30:00
-      expect(formatDuration({ durationValue, locale: 'my' })).toEqual('၃၀:၀၀');
+      const duration = 'PT30M'; // 30:00
+      expect(formatDuration({ duration, locale: 'my' })).toEqual('၃၀:၀၀');
     });
   });
 });

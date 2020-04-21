@@ -19,13 +19,9 @@ moment.relativeTimeThreshold('h', 24);
 moment.relativeTimeThreshold('d', 30);
 moment.relativeTimeThreshold('M', 12);
 
-export const formatDuration = ({ durationValue, format, locale = 'en-gb' }) => {
-  const defaultDurationFormat = durationValue.includes('H')
-    ? 'h:mm:ss'
-    : 'mm:ss';
-  const durationInMilliseconds = moment
-    .duration(durationValue)
-    .asMilliseconds();
+export const formatDuration = ({ duration, format, locale = 'en-gb' }) => {
+  const defaultDurationFormat = duration.includes('H') ? 'h:mm:ss' : 'mm:ss';
+  const durationInMilliseconds = moment.duration(duration).asMilliseconds();
   return moment
     .utc(durationInMilliseconds)
     .locale(locale)
