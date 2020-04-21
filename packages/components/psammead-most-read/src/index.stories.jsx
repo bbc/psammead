@@ -1,13 +1,7 @@
 /* eslint-disable react/prop-types */
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import {
-  select,
-  boolean,
-  number,
-  withKnobs,
-  optionsKnob as options,
-} from '@storybook/addon-knobs';
+import { select, boolean, number, withKnobs } from '@storybook/addon-knobs';
 import { withServicesKnob } from '@bbc/psammead-storybook-helpers';
 import { getItem, getItemWrapperArray } from './utilities';
 import { MostReadRank, MostReadLink, MostReadList } from './index';
@@ -26,10 +20,6 @@ const listIndexRange = {
 const pageTypes = ['oneColumn', 'twoColumn', 'multiColumn'];
 const typeSize = { default: 'default', pica: 'pica', trafalgar: 'trafalgar' };
 
-const optionsDisplay = {
-  display: 'multi-select',
-};
-
 const renderList = ({
   numberOfItems,
   dir,
@@ -37,7 +27,8 @@ const renderList = ({
   script,
   withTimestamp,
   columnLayout,
-  typography,
+  rankTypography,
+  linkTypography,
 }) => (
   <MostReadList
     numberOfItems={numberOfItems}
@@ -51,7 +42,8 @@ const renderList = ({
       dir,
       withTimestamp,
       columnLayout,
-      typography,
+      rankTypography,
+      linkTypography,
     }).map(item => item)}
   </MostReadList>
 );
@@ -142,12 +134,8 @@ storiesOf('Components|MostRead/List', module)
           service: selectedService,
           dir,
           script,
-          typography: options(
-            'Typography',
-            typeSize,
-            typeSize.default,
-            optionsDisplay,
-          ),
+          rankTypography: select('Rank Typography', typeSize, typeSize.default),
+          linkTypography: select('Link Typography', typeSize, typeSize.default),
         }),
       ),
     {
