@@ -3,7 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
-| 3.0.0 | [PR#3403](https://github.com/bbc/psammead/pull/3403) Update utility formatDuration to use locale & change format of arguments to be an object |
+| 3.0.0 | [PR#3403](https://github.com/bbc/psammead/pull/3403) Update formatDuration to use locale, rename unixTimestampToMoment to localisedMoment since it now uses locale, update formatDuration, localisedMoment, formatUnixTimestamp to use destructured props. |
 | 2.7.15 | [PR#3398](https://github.com/bbc/psammead/pull/3398) Talos - Bump Dependencies - @bbc/psammead-timestamp |
 | 2.7.14 | [PR#3397](https://github.com/bbc/psammead/pull/3397) Talos - Bump Dependencies - @bbc/psammead-locales |
 | 2.7.13 | [PR#3390](https://github.com/bbc/psammead/pull/3390) Bump prettier major version and disable rule for brackets around a single prop |
