@@ -13,7 +13,7 @@ describe('RadioSchedule', () => {
       service: 'arabic',
       script: arabic,
       dir: 'rtl',
-      locale: 'fa',
+      locale: 'ar',
       selectedService: 'arabic',
     }),
   );
