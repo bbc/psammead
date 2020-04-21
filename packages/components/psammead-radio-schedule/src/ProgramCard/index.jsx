@@ -29,6 +29,7 @@ import {
   formatUnixTimestamp,
   formatDuration,
 } from '@bbc/psammead-timestamp-container/utilities';
+import detokenise from '@bbc/psammead-detokeniser';
 
 const TitleWrapper = styled.span`
   color: ${({ titleColor }) => titleColor};
@@ -292,6 +293,7 @@ const programCardPropTypes = {
   state: string.isRequired,
   nextLabel: string.isRequired,
   liveLabel: string.isRequired,
+  durationLabel: string.isRequired,
   startTime: number.isRequired,
   timezone: string,
   locale: string,
@@ -312,7 +314,6 @@ renderHeaderContent.defaultProps = {
 
 ProgramCard.propTypes = {
   dir: oneOf(['rtl', 'ltr']),
-  durationLabel: string.isRequired,
   duration: string.isRequired,
   summary: string,
   ...programCardPropTypes,
