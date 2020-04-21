@@ -56,6 +56,68 @@ const WrappingContainer = () => (
 );
 ```
 
+
+### Utilities
+
+**formatDuration**
+
+```jsx
+import { formatDuration } from '@bbc/psammead-timestamp-container/utilities';
+
+const localisedDuration = formatDuration({ duration: 'PTM30', locale: 'my' });
+const customFormatDuration = formatDuration({ duration: 'PTM30', format: 'mm,ss' });
+```
+
+<!-- prettier-ignore -->
+| Argument  | Type        | Required | Default | Example         |
+|-----------|-------------|----------|---------|-----------------|
+| duration  | string | Yes | N/A      | `PTH1M29S30` Duration string as specified by ISO 8601 standard. |
+| format    | string | No  | `mm:ss`, or `h:mm:ss` if in hours | `mm,ss` |
+| locale    | string | No  | `en-gb`  | `fr` |
+
+
+**localisedMoment**
+
+```jsx
+import { localisedMoment } from '@bbc/psammead-timestamp-container/utilities';
+
+const localisedMoment = localisedMoment({ locale, timestamp });
+
+```
+
+<!-- prettier-ignore -->
+| Argument  | Type        | Required | Default | Example         |
+|-----------|-------------|----------|---------|-----------------|
+| timestamp  | number | Yes | N/A      | `1539969006000` Unix timestamp |
+| locale    | string | Yes  | N/A  | `fr` |
+
+
+
+**formatUnixTimestamp**
+
+```jsx
+import { localiseTimestamp } from '@bbc/psammead-timestamp-container/utilities';
+
+const formattedTime = formatUnixTimestamp({
+  format,
+  isRelative,
+  locale,
+  timestamp,
+  timezone,
+});
+
+```
+
+<!-- prettier-ignore -->
+| Argument  | Type        | Required | Default | Example         |
+|-----------|-------------|----------|---------|-----------------|
+| format    | string      | No       | 'LL, LT z' | `'D MMMM YYYY z'` a moment format string |
+| isRelative | boolean    | Yes      | N/A     | `true` When true, formats in relative time |
+| locale    | string      | Yes      | N/A     | `fr` Moment locale |
+| timestamp | number      | Yes      | N/A     | `1539969006000` Unix timestamp |
+| timezone  | string      | Yes      | N/A     | `'GMT'`, `'Asia/Seoul'` see (moment-timezone documentation)[https://momentjs.com/timezone/] |
+
+
 ## Accessibility notes
 
 The usage of the semantic `time` element within psammead-timestamp component can result in strange behaviours when using assistive technology such as VoiceOver for iOS. Specifically, it results in a "text splitting" behaviour, where any text in the prefix is read out, but the value inside the semantic `time` element require an additional swipe before being read out.
