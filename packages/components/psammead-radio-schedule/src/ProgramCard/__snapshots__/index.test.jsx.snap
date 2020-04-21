@@ -1109,7 +1109,7 @@ exports[`ProgramCard should render correctly in RTL 1`] = `
           <span
             class="c5 c6"
           >
-            ٢٧ أغسطس ٢٠١٩ ١٤:٥٤ BST
+            ٢٧ أغسطس ٢٠١٩ ١٣:٥٤ GMT
           </span>
         </span>
       </a>
