@@ -4,8 +4,8 @@ import { scriptPropType } from '@bbc/gel-foundations/prop-types';
 import Timestamp from '@bbc/psammead-timestamp';
 import {
   isValidDateTime,
-  unixTimestampToMoment,
   formatUnixTimestamp,
+  localisedMoment,
 } from './utilities';
 
 const TimestampContainer = ({
@@ -27,17 +27,17 @@ const TimestampContainer = ({
     return null;
   }
 
-  const mainDateTime = formatUnixTimestamp(
+  const mainDateTime = formatUnixTimestamp({
     timestamp,
     format,
     timezone,
     locale,
     isRelative,
-  );
+  });
 
   if (altCalendar && !isRelative) {
     altDateTime = `${altCalendar.formatDate(
-      unixTimestampToMoment(timestamp).locale(locale),
+      localisedMoment({ locale, timestamp }),
     )} -`;
   }
 
@@ -47,12 +47,12 @@ const TimestampContainer = ({
 
   return (
     <Timestamp
-      datetime={formatUnixTimestamp(
+      datetime={formatUnixTimestamp({
+        format: dateTimeFormat,
+        locale: 'en-gb',
         timestamp,
-        dateTimeFormat,
         timezone,
-        'en-gb',
-      )}
+      })}
       padding={padding}
       script={script}
       service={service}
