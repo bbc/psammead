@@ -243,9 +243,9 @@ describe('Moment configuration', () => {
     });
     it('should return duration in relevant format when a format is passed in', () => {
       const durationValue = 'PT30M'; // 30:00
-      expect(
-        formatDuration({ durationValue, timestampFormat: 'mm,ss' }),
-      ).toEqual('30,00');
+      expect(formatDuration({ durationValue, format: 'mm,ss' })).toEqual(
+        '30,00',
+      );
     });
     it('should return duration that is localised when locale is passed in', () => {
       const durationValue = 'PT30M'; // 30:00
