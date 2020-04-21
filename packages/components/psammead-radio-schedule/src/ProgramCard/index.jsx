@@ -173,7 +173,7 @@ const renderHeaderContent = ({
 
   const episodeTitle = formatUnixTimestamp({
     timestamp: startTime,
-    format: 'D MMMM YYYY HH:mm z',
+    format: 'D MMMM YYYY z',
     timezone,
     locale,
     isRelative: false,
