@@ -233,11 +233,15 @@ describe('Moment configuration', () => {
   });
 
   describe('formatDuration', () => {
-    it('should return duration in expected format', () => {
+    it('should return duration in default format', () => {
       const durationInISO8601Format = 'PT30M'; // 30:00
       expect(formatDuration(durationInISO8601Format)).toEqual('30:00');
     });
-    it('should return duration in expected format when a format is passed in', () => {
+    it('should return duration with hours in default format', () => {
+      const durationInISO8601Format = 'PT1H30M'; // 1:30:00
+      expect(formatDuration(durationInISO8601Format)).toEqual('1:30:00');
+    });
+    it('should return duration in relevant format when a format is passed in', () => {
       const durationInISO8601Format = 'PT30M'; // 30:00
       expect(formatDuration(durationInISO8601Format, 'mm,ss')).toEqual('30,00');
     });

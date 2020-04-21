@@ -21,15 +21,17 @@ moment.relativeTimeThreshold('M', 12);
 
 const defaultFormat = 'LL, LT z';
 
-export const formatDuration = (
-  durationValue,
-  format = 'mm:ss',
-  locale = 'en-gb',
-) => {
+export const formatDuration = (durationValue, format, locale = 'en-gb') => {
+  const defaultDurationFormat = durationValue.includes('H')
+    ? 'h:mm:ss'
+    : 'mm:ss';
   const durationInMilliseconds = moment
     .duration(durationValue)
     .asMilliseconds();
-  return moment.utc(durationInMilliseconds).locale(locale).format(format);
+  return moment
+    .utc(durationInMilliseconds)
+    .locale(locale)
+    .format(format || defaultDurationFormat);
 };
 
 // if the date is invalid return false - https://stackoverflow.com/questions/1353684/detecting-an-invalid-date-date-instance-in-javascript#answer-1353711
