@@ -27,13 +27,13 @@ const TimestampContainer = ({
     return null;
   }
 
-  const mainDateTime = formatUnixTimestamp(
+  const mainDateTime = formatUnixTimestamp({
     timestamp,
     format,
     timezone,
     locale,
     isRelative,
-  );
+  });
 
   if (altCalendar && !isRelative) {
     altDateTime = `${altCalendar.formatDate(
@@ -47,12 +47,12 @@ const TimestampContainer = ({
 
   return (
     <Timestamp
-      datetime={formatUnixTimestamp(
+      datetime={formatUnixTimestamp({
+        format: dateTimeFormat,
+        locale: 'en-gb',
         timestamp,
-        dateTimeFormat,
         timezone,
-        'en-gb',
-      )}
+      })}
       padding={padding}
       script={script}
       service={service}

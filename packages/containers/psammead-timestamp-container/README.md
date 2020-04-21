@@ -88,8 +88,34 @@ const localisedTime = localisedTime({ locale, timestamp });
 <!-- prettier-ignore -->
 | Argument  | Type        | Required | Default | Example         |
 |-----------|-------------|----------|---------|-----------------|
-| timestamp  | number | Yes | N/A      | `1539969006000` Duration string as specified by ISO 8601 standard. |
+| timestamp  | number | Yes | N/A      | `1539969006000` Unix timestamp |
 | locale    | string | Yes  | N/A  | `fr` |
+
+
+
+**formatUnixTimestamp**
+
+```jsx
+import { localiseTimestamp } from '@bbc/psammead-timestamp-container/utilities';
+
+const formattedTime = formatUnixTimestamp({
+  format,
+  isRelative,
+  locale,
+  timestamp,
+  timezone,
+});
+
+```
+
+<!-- prettier-ignore -->
+| Argument  | Type        | Required | Default | Example         |
+|-----------|-------------|----------|---------|-----------------|
+| format    | string      | No       | 'LL, LT z' | `'D MMMM YYYY z'` a moment format string |
+| isRelative | boolean    | Yes      | N/A     | `true` When true, formats in relative time |
+| locale    | string      | Yes      | N/A     | `fr` Moment locale |
+| timestamp | number      | Yes      | N/A     | `1539969006000` Unix timestamp |
+| timezone  | string      | Yes      | N/A     | `'GMT'`, `'Asia/Seoul'` see (moment-timezone documentation)[https://momentjs.com/timezone/] |
 
 
 ## Accessibility notes

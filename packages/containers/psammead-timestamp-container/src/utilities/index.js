@@ -53,7 +53,7 @@ export const formatUnixTimestamp = ({
   timestamp,
   timezone,
 }) => {
-  const momentObj = localisedTime({ locale, timestamp }).tz(timezone);
+  const momentObj = moment(timestamp).locale(locale).tz(timezone);
 
   if (isRelative) {
     return momentObj.fromNow();
