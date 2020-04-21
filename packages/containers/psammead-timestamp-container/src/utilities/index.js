@@ -21,7 +21,7 @@ moment.relativeTimeThreshold('M', 12);
 
 const defaultFormat = 'LL, LT z';
 
-export const formatDuration = (durationValue, format, locale = 'en-gb') => {
+export const formatDuration = ({ durationValue, format, locale = 'en-gb' }) => {
   const defaultDurationFormat = durationValue.includes('H')
     ? 'h:mm:ss'
     : 'mm:ss';

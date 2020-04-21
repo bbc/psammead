@@ -56,6 +56,24 @@ const WrappingContainer = () => (
 );
 ```
 
+
+### Utilities
+
+```jsx
+import { formatDuration } from '@bbc/psammead-timestamp-container/utilities';
+
+const localisedDuration = formatDuration({ duration: 'PTM30', locale: 'my' });
+const customFormatDuration = formatDuration({ duration: 'PTM30', format: 'mm,ss' });
+```
+
+<!-- prettier-ignore -->
+| Argument  | Type        | Required | Default | Example         |
+|-----------|-------------|----------|---------|-----------------|
+| duration  | string | Yes | N/A      | `PTH1M29S30` Duration string as specified by ISO 8601 standard. |
+| format    | string | No  | `mm:ss`, or `h:mm:ss` if in hours | `mm,ss` |
+| locale    | string | No  | `en-gb`  | `fr` |
+
+
 ## Accessibility notes
 
 The usage of the semantic `time` element within psammead-timestamp component can result in strange behaviours when using assistive technology such as VoiceOver for iOS. Specifically, it results in a "text splitting" behaviour, where any text in the prefix is read out, but the value inside the semantic `time` element require an additional swipe before being read out.
