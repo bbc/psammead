@@ -48,7 +48,6 @@ const schedules = [
     startTime: 1566914061212,
     link: 'www.bbc.co.uk',
     brandTitle: 'This is a brand title',
-    episodeTitle: 'This is an episode title',
     summary: 'This is a summary',
     duration: '45:00',
     durationLabel: 'Duration',
@@ -76,7 +75,6 @@ const schedules = [
 | -------- | ---- | -------- | ------- | ------- |
 | brandTitle | string | yes | N/A | `'This is a brand title'` |
 | summary | string | no | null | `'This is a summary'` |
-| episodeTitle | string | yes | N/A | `'29/01/1990'` |
 | duration | string | yes | N/A | `'PT30M'` |
 | durationLabel | string | yes | N/A | `'duration'` |
 | state | string | yes | N/A | `'live'` |
@@ -87,7 +85,7 @@ const schedules = [
 | service | string | yes | N/A | `'news'` |
 | script | object | yes | N/A | `{ canon: { groupA: { fontSize: '28', lineHeight: '32',}, groupB: { fontSize: '32', lineHeight: '36', }, groupD: { fontSize: '44', lineHeight: '48', }, }, trafalgar: { groupA: { fontSize: '20', lineHeight: '24', }, groupB: { fontSize: '24', lineHeight: '28', }, groupD: { fontSize: '32', lineHeight: '36', }, }, }` |
 | dir | string | no | `"ltr"` | `"rtl"` |
-| timezone | string | no | `'Europe/London'` | `'Europe/Vienna'` |
+| timezone | string | no | `'GMT'` | `'Europe/London'` |
 | locale | string | no | `'en-gb'` | `'fa'` |
 
 ### Usage
@@ -106,13 +104,13 @@ import ProgramCard from '@bbc/psammead-radio-schedule/ProgramCard';
   startTime="13:00"
   brandTitle="This is a brand title"
   summary="Could a computer ever create better art than a human?"
-  episodeTitle="29/01/1990"
   duration="PT30M"
   durationLabel="duration"
   state="live"
   liveLabel="LIVE"
   nextLabel="NEXT"
   link="https://bbc.com/arabic/articles/c1er5mjnznzo"
+  timezone="Europe/London"
 />;
 ```
 

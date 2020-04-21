@@ -151,7 +151,6 @@ const renderHeaderContent = ({
   nextLabel,
   liveLabel,
   brandTitle,
-  episodeTitle,
   service,
   script,
   startTime,
@@ -164,13 +163,21 @@ const renderHeaderContent = ({
 
   const liveLabelIsEnglish = liveLabel === 'LIVE';
 
-  const formattedStartTime = formatUnixTimestamp(
-    startTime,
-    'HH:mm',
+  const formattedStartTime = formatUnixTimestamp({
+    timestamp: startTime,
+    format: 'HH:mm',
     timezone,
     locale,
-    false,
-  );
+    isRelative: false,
+  });
+
+  const episodeTitle = formatUnixTimestamp({
+    timestamp: startTime,
+    format: 'LL',
+    timezone,
+    locale,
+    isRelative: false,
+  });
 
   const content = (
     <HeadingContentWrapper>
@@ -221,7 +228,6 @@ const ProgramCard = ({
   script,
   brandTitle,
   summary,
-  episodeTitle,
   duration,
   durationLabel,
   startTime,
@@ -245,7 +251,6 @@ const ProgramCard = ({
           nextLabel,
           liveLabel,
           brandTitle,
-          episodeTitle,
           service,
           script,
           startTime,
@@ -270,13 +275,14 @@ const ProgramCard = ({
       </IconWrapper>
       <DurationWrapper dir={dir} dateTime={duration}>
         <VisuallyHiddenText>
-          {` ${durationLabel} ${formatDuration(
+          {` ${durationLabel} ${formatDuration({
             duration,
-            getDurationFormat(duration, ','),
-          )} `}
+            format: getDurationFormat(duration, ','),
+            locale,
+          })} `}
         </VisuallyHiddenText>
         <DurationTextWrapper>
-          {formatDuration(duration, getDurationFormat(duration))}
+          {formatDuration({ duration, locale })}
         </DurationTextWrapper>
       </DurationWrapper>
     </ButtonWrapper>
@@ -287,7 +293,6 @@ const programCardPropTypes = {
   service: string.isRequired,
   script: shape(scriptPropType).isRequired,
   brandTitle: string.isRequired,
-  episodeTitle: string.isRequired,
   link: string.isRequired,
   state: string.isRequired,
   nextLabel: string.isRequired,
