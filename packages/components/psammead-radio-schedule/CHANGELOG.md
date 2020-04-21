@@ -3,7 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
-| 2.0.0 | [PR#xxx](https://github.com/bbc/psammead/pull/xxx) Remove episodeTitle prop. In ProgramCard, generate episodeTitle with moment using start timeestamp. |
+| 2.0.0 | [PR#3377](https://github.com/bbc/psammead/pull/3377) Remove episodeTitle prop. In ProgramCard, generate episodeTitle with moment using start timeestamp. |
 | 1.0.1 | [PR#3354](https://github.com/bbc/psammead/pull/3354) Talos - Bump Dependencies - @bbc/psammead-timestamp-container |
 | 1.0.0 | [PR#3350](https://github.com/BBC/psammead/pull/3350) Remove alpha tag |
 | 0.1.0-alpha.33 | [PR#3348](https://github.com/bbc/psammead/pull/3348) Add wrapping span with role `text` around the headline |
