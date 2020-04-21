@@ -4,8 +4,8 @@ import { scriptPropType } from '@bbc/gel-foundations/prop-types';
 import Timestamp from '@bbc/psammead-timestamp';
 import {
   isValidDateTime,
-  unixTimestampToMoment,
   formatUnixTimestamp,
+  localisedTime,
 } from './utilities';
 
 const TimestampContainer = ({
@@ -37,7 +37,7 @@ const TimestampContainer = ({
 
   if (altCalendar && !isRelative) {
     altDateTime = `${altCalendar.formatDate(
-      unixTimestampToMoment(timestamp).locale(locale),
+      localisedTime({ locale, timestamp }),
     )} -`;
   }
 

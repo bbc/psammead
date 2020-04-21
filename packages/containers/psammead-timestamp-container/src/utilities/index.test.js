@@ -1,9 +1,9 @@
 import moment from 'moment-timezone';
 import {
-  unixTimestampToMoment,
   formatUnixTimestamp,
   isValidDateTime,
   formatDuration,
+  localisedTime,
 } from '.';
 import timestampGenerator from '../helpers/testHelpers';
 
@@ -27,9 +27,9 @@ describe('Timestamp utility functions', () => {
     });
   });
 
-  describe('unixTimestampToMoment', () => {
-    it('should be a valid moment', () => {
-      expect(unixTimestampToMoment(timestamp)).toHaveProperty('isValid');
+  describe('localisedTime', () => {
+    it('should be a valid moment when timestamp and locale are passed in', () => {
+      expect(localisedTime({ timestamp, locale })).toHaveProperty('isValid');
     });
   });
 

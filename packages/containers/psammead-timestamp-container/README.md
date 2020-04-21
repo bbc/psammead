@@ -59,6 +59,8 @@ const WrappingContainer = () => (
 
 ### Utilities
 
+**formatDuration**
+
 ```jsx
 import { formatDuration } from '@bbc/psammead-timestamp-container/utilities';
 
@@ -72,6 +74,22 @@ const customFormatDuration = formatDuration({ duration: 'PTM30', format: 'mm,ss'
 | duration  | string | Yes | N/A      | `PTH1M29S30` Duration string as specified by ISO 8601 standard. |
 | format    | string | No  | `mm:ss`, or `h:mm:ss` if in hours | `mm,ss` |
 | locale    | string | No  | `en-gb`  | `fr` |
+
+
+**localisedTime**
+
+```jsx
+import { localiseTimestamp } from '@bbc/psammead-timestamp-container/utilities';
+
+const localisedTime = localisedTime({ locale, timestamp });
+
+```
+
+<!-- prettier-ignore -->
+| Argument  | Type        | Required | Default | Example         |
+|-----------|-------------|----------|---------|-----------------|
+| timestamp  | number | Yes | N/A      | `1539969006000` Duration string as specified by ISO 8601 standard. |
+| locale    | string | Yes  | N/A  | `fr` |
 
 
 ## Accessibility notes
