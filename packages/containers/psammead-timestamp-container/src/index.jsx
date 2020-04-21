@@ -5,7 +5,7 @@ import Timestamp from '@bbc/psammead-timestamp';
 import {
   isValidDateTime,
   formatUnixTimestamp,
-  localisedTime,
+  localisedMoment,
 } from './utilities';
 
 const TimestampContainer = ({
@@ -37,7 +37,7 @@ const TimestampContainer = ({
 
   if (altCalendar && !isRelative) {
     altDateTime = `${altCalendar.formatDate(
-      localisedTime({ locale, timestamp }),
+      localisedMoment({ locale, timestamp }),
     )} -`;
   }
 

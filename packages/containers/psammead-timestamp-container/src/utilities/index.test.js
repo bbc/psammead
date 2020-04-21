@@ -3,7 +3,7 @@ import {
   formatDuration,
   formatUnixTimestamp,
   isValidDateTime,
-  localisedTime,
+  localisedMoment,
 } from '.';
 import timestampGenerator from '../helpers/testHelpers';
 
@@ -27,9 +27,9 @@ describe('Timestamp utility functions', () => {
     });
   });
 
-  describe('localisedTime', () => {
+  describe('localisedMoment', () => {
     it('should be a valid moment when timestamp and locale are passed in', () => {
-      expect(localisedTime({ timestamp, locale })).toHaveProperty('isValid');
+      expect(localisedMoment({ timestamp, locale })).toHaveProperty('isValid');
     });
   });
 

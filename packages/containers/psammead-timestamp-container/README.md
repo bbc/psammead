@@ -76,12 +76,12 @@ const customFormatDuration = formatDuration({ duration: 'PTM30', format: 'mm,ss'
 | locale    | string | No  | `en-gb`  | `fr` |
 
 
-**localisedTime**
+**localisedMoment**
 
 ```jsx
-import { localiseTimestamp } from '@bbc/psammead-timestamp-container/utilities';
+import { localisedMoment } from '@bbc/psammead-timestamp-container/utilities';
 
-const localisedTime = localisedTime({ locale, timestamp });
+const localisedMoment = localisedMoment({ locale, timestamp });
 
 ```
 
