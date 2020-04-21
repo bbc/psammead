@@ -69,6 +69,7 @@ it('should pass the correct props to the story function', () => {
     dir: 'ltr',
     locale: 'en',
     variant: 'default',
+    timezone: 'Europe/London',
     selectedService: 'news',
   };
 
@@ -91,6 +92,7 @@ it('should pass the correct chosen service props to the story function', () => {
     dir: 'rtl',
     locale: 'ar',
     variant: 'default',
+    timezone: 'GMT',
     selectedService: 'arabic',
   };
 
@@ -113,6 +115,7 @@ it('should pass the correct chosen service props to the story function', () => {
     dir: 'ltr',
     locale: 'zh-cn',
     variant: 'simp',
+    timezone: 'GMT',
     selectedService: 'ukchinaSimp',
   };
 

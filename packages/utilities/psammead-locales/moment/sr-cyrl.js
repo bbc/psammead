@@ -12,7 +12,7 @@ moment.updateLocale('sr-cyrl', {
     m: '1 минута',
     mm: '%d минута',
     h: '1 сата',
-    hh: function(number) {
+    hh: function (number) {
       return number < 5 ? number + ' сата' : number + ' сати';
     },
   },

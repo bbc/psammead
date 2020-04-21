@@ -115,12 +115,7 @@ const timestamps = {
   },
   '8.9999... months ago': {
     timestamp: undefined,
-    update: () =>
-      val(
-        moment()
-          .subtract(9, 'months')
-          .add(2, 'second'),
-      ),
+    update: () => val(moment().subtract(9, 'months').add(2, 'second')),
   },
   '9 months ago': {
     timestamp: undefined,

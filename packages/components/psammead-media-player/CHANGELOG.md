@@ -3,6 +3,10 @@
 <!-- prettier-ignore -->
 | Version       | Description                                                                                                                  |
 | ------------- | ---------------------------------------------------------------------------------------------------------------------------- |
+| 2.7.9 | [PR#3398](https://github.com/bbc/psammead/pull/3398) Talos - Bump Dependencies - @bbc/psammead-play-button |
+| 2.7.8 | [PR#3388](https://github.com/bbc/psammead/pull/3388) Update react-helmet to 6.0.0 |
+| 2.7.7 | [PR#3387](https://github.com/bbc/psammead/pull/3387) Talos - Bump Dependencies - @bbc/psammead-play-button |
+| 2.7.6 | [PR#3381](https://github.com/bbc/psammead/pull/3381) Talos - Bump Dependencies - @bbc/psammead-assets |
 | 2.7.5 | [PR#3238](https://github.com/bbc/psammead/pull/3238) Limit unnecessary re-rendering of canonical media player |
 | 2.7.4 | [PR#3205](https://github.com/bbc/psammead/pull/3205) Removed isRequired from mediaInfo prop as not always required |
 | 2.7.3 | [PR#3151](https://github.com/bbc/psammead/pull/3151) Talos - Bump Dependencies - @bbc/psammead-play-button |

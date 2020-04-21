@@ -1,6 +1,6 @@
 #!/usr/bin/env groovy
 
-def nodeImageVersion = "12.15.0"
+def nodeImageVersion = "12.16.2"
 def nodeImage = "329802642264.dkr.ecr.eu-west-1.amazonaws.com/bbc-news/node-12-lts:${nodeImageVersion}"
 
 def slackChannel = "#si_repo-psammead"
