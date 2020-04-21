@@ -163,21 +163,21 @@ const renderHeaderContent = ({
 
   const liveLabelIsEnglish = liveLabel === 'LIVE';
 
-  const formattedStartTime = formatUnixTimestamp(
-    startTime,
-    'HH:mm',
+  const formattedStartTime = formatUnixTimestamp({
+    timestamp: startTime,
+    format: 'HH:mm',
     timezone,
     locale,
-    false,
-  );
+    isRelative: false,
+  });
 
-  const episodeTitle = formatUnixTimestamp(
-    startTime,
-    'D MMMM YYYY HH:mm z',
+  const episodeTitle = formatUnixTimestamp({
+    timestamp: startTime,
+    format: 'D MMMM YYYY HH:mm z',
     timezone,
     locale,
-    false,
-  );
+    isRelative: false,
+  });
 
   const content = (
     <HeadingContentWrapper>
@@ -275,13 +275,14 @@ const ProgramCard = ({
       </IconWrapper>
       <DurationWrapper dir={dir} dateTime={duration}>
         <VisuallyHiddenText>
-          {` ${durationLabel} ${formatDuration(
+          {` ${durationLabel} ${formatDuration({
             duration,
-            getDurationFormat(duration, ','),
-          )} `}
+            format: getDurationFormat(duration, ','),
+            locale,
+          })} `}
         </VisuallyHiddenText>
         <DurationTextWrapper>
-          {formatDuration(duration, getDurationFormat(duration))}
+          {formatDuration({ duration, locale })}
         </DurationTextWrapper>
       </DurationWrapper>
     </ButtonWrapper>

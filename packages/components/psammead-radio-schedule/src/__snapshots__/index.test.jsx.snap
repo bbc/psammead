@@ -1824,13 +1824,13 @@ exports[`RadioSchedule should render rtl radio schedules correctly 1`] = `
           <span
             class="c15"
           >
-             المدة الزمنية 1,00,00 
+             المدة الزمنية ١،٠٠،٠٠ 
           </span>
           <span
             aria-hidden="true"
             class=""
           >
-            1:00:00
+            ١:٠٠:٠٠
           </span>
         </time>
       </div>
@@ -1951,13 +1951,13 @@ exports[`RadioSchedule should render rtl radio schedules correctly 1`] = `
           <span
             class="c15"
           >
-             المدة الزمنية 1,00,00 
+             المدة الزمنية ١،٠٠،٠٠ 
           </span>
           <span
             aria-hidden="true"
             class=""
           >
-            1:00:00
+            ١:٠٠:٠٠
           </span>
         </time>
       </div>
@@ -2078,13 +2078,13 @@ exports[`RadioSchedule should render rtl radio schedules correctly 1`] = `
           <span
             class="c15"
           >
-             المدة الزمنية 1,00,00 
+             المدة الزمنية ١،٠٠،٠٠ 
           </span>
           <span
             aria-hidden="true"
             class=""
           >
-            1:00:00
+            ١:٠٠:٠٠
           </span>
         </time>
       </div>
@@ -2206,13 +2206,13 @@ exports[`RadioSchedule should render rtl radio schedules correctly 1`] = `
           <span
             class="c15"
           >
-             المدة الزمنية 1,00,00 
+             المدة الزمنية ١،٠٠،٠٠ 
           </span>
           <span
             aria-hidden="true"
             class=""
           >
-            1:00:00
+            ١:٠٠:٠٠
           </span>
         </time>
       </div>

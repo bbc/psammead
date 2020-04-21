@@ -1150,13 +1150,13 @@ exports[`ProgramCard should render correctly in RTL 1`] = `
       <span
         class="c4"
       >
-         المدة الزمنية 30,00 
+         المدة الزمنية ٣٠،٠٠ 
       </span>
       <span
         aria-hidden="true"
         class=""
       >
-        30:00
+        ٣٠:٠٠
       </span>
     </time>
   </div>
