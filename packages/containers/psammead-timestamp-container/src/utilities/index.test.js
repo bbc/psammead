@@ -12,17 +12,6 @@ const timestamp = 1539969006000; // 19 October 2018
 const locale = 'en-gb';
 
 describe('Timestamp utility functions', () => {
-  describe('formatDuration', () => {
-    it('should return duration in expected format', () => {
-      const durationInISO8601Format = 'PT30M'; // 30:00
-      expect(formatDuration(durationInISO8601Format)).toEqual('30:00');
-    });
-    it('should return duration in expected format when a format is passed in', () => {
-      const durationInISO8601Format = 'PT30M'; // 30:00
-      expect(formatDuration(durationInISO8601Format, 'mm,ss')).toEqual('30,00');
-    });
-  });
-
   describe('isValidDateTime', () => {
     it('should return true if timestamp is valid', () => {
       expect(isValidDateTime(timestamp)).toEqual(true);
@@ -241,5 +230,22 @@ describe('Moment configuration', () => {
       .add(5, 'days');
     // default moment configuration would return 'a month ago'
     expect(allButAYear.fromNow()).toEqual('11 months ago');
+  });
+
+  describe('formatDuration', () => {
+    it('should return duration in expected format', () => {
+      const durationInISO8601Format = 'PT30M'; // 30:00
+      expect(formatDuration(durationInISO8601Format)).toEqual('30:00');
+    });
+    it('should return duration in expected format when a format is passed in', () => {
+      const durationInISO8601Format = 'PT30M'; // 30:00
+      expect(formatDuration(durationInISO8601Format, 'mm,ss')).toEqual('30,00');
+    });
+    it('should return duration that is localised when locale is passed in', () => {
+      const durationInISO8601Format = 'PT30M'; // 30:00
+      expect(formatDuration(durationInISO8601Format, 'mm:ss', 'my')).toEqual(
+        '၃၀:၀၀',
+      );
+    });
   });
 });
