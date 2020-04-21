@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 2.0.134 | [PR#3404](https://github.com/bbc/psammead/pull/3404) Talos - Bump Dependencies - @bbc/psammead-timestamp-container |
 | 2.0.133 | [PR#3402](https://github.com/bbc/psammead/pull/3402) Dependency updates |
 | 2.0.132 | [PR#3401](https://github.com/bbc/psammead/pull/3401) Talos - Bump Dependencies - @bbc/psammead-radio-schedule |
 | 2.0.131 | [PR#3400](https://github.com/bbc/psammead/pull/3400) Talos - Bump Dependencies - @bbc/psammead-brand, @bbc/psammead-bulletin, @bbc/psammead-media-player, @bbc/psammead-most-read, @bbc/psammead-radio-schedule, @bbc/psammead-timestamp-container |

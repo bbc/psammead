@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 1.0.9 | [PR#3404](https://github.com/bbc/psammead/pull/3404) Talos - Bump Dependencies - @bbc/psammead-timestamp-container |
 | 1.0.8 | [PR#3400](https://github.com/bbc/psammead/pull/3400) Talos - Bump Dependencies - @bbc/psammead-timestamp-container |
 | 1.0.7 | [PR#3398](https://github.com/bbc/psammead/pull/3398) Talos - Bump Dependencies - @bbc/psammead-timestamp-container |
 | 1.0.6 | [PR#3397](https://github.com/bbc/psammead/pull/3397) Talos - Bump Dependencies - @bbc/psammead-styles, @bbc/psammead-timestamp-container |
