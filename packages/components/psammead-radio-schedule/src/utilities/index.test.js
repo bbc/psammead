@@ -23,7 +23,7 @@ describe('durationDictionary', () => {
         'Duration: %duration%',
         durationDictionary({
           duration: 'PT1H30M',
-          format: 'h,mm,ss',
+          separator: ',',
           locale: 'en-gb',
         }),
       ),
