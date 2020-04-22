@@ -270,8 +270,8 @@ const ProgramCard = ({
       <DurationWrapper dir={dir} dateTime={duration}>
         <VisuallyHiddenText>
           {`${detokenise(
-            { durationLabel },
-            durationDictionary(duration, locale),
+            ` ${durationLabel} %duration%`,
+            durationDictionary({ duration, format: 'mm,ss', locale }),
           )} `}
         </VisuallyHiddenText>
         <DurationTextWrapper>

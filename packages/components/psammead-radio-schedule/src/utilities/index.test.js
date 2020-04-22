@@ -3,16 +3,30 @@ import durationDictionary from '.';
 
 describe('durationDictionary', () => {
   it('creates a valid duration dictionary', () => {
-    expect(durationDictionary('PT1H30M', 'en-gb')).toEqual({
+    expect(
+      durationDictionary({ duration: 'PT1H30M', locale: 'en-gb' }),
+    ).toEqual({
       '%duration%': '1:30:00',
     });
   });
-  it('creates a valid duration dictionary and detokenises token', () => {
+  it('creates a valid duration dictionary and maps token to key correctly', () => {
     expect(
       detokenise(
         'Duration: %duration%',
-        durationDictionary('PT1H30M', 'en-gb'),
+        durationDictionary({ duration: 'PT1H30M', locale: 'en-gb' }),
       ),
     ).toEqual('Duration: 1:30:00');
+  });
+  it('creates a valid duration dictionary and returns with specified duration format', () => {
+    expect(
+      detokenise(
+        'Duration: %duration%',
+        durationDictionary({
+          duration: 'PT1H30M',
+          format: 'h,mm,ss',
+          locale: 'en-gb',
+        }),
+      ),
+    ).toEqual('Duration: 1,30,00');
   });
 });

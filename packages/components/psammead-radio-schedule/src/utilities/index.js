@@ -8,10 +8,10 @@ const getDurationFormat = (duration, separator = ':') => {
   return timeSections.join(separator);
 };
 
-const durationDictionary = (duration, locale) => ({
+const durationDictionary = ({ duration, format, locale }) => ({
   '%duration%': formatDuration({
     duration,
-    format: getDurationFormat(duration),
+    format: format || getDurationFormat(duration),
     locale,
   }),
 });
