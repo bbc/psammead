@@ -77,6 +77,7 @@ export const renderRadioSchedule = ({
 }) => {
   const nextLabel = dir === 'rtl' ? 'مباشر' : 'NEXT';
   const liveLabel = dir === 'rtl' ? 'مباشر' : 'LIVE';
+  const durationLabel = dir === 'rtl' ? 'المدة الزمنية' : 'Duration';
 
   return (
     <RadioSchedule
@@ -87,6 +88,7 @@ export const renderRadioSchedule = ({
       service={service}
       nextLabel={nextLabel}
       liveLabel={liveLabel}
+      durationLabel={durationLabel}
       dir={dir}
     />
   );
