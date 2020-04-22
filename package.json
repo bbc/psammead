@@ -61,6 +61,7 @@
     "@bbc/psammead-consent-banner": "^2.3.29",
     "@bbc/psammead-content-anchor": "^1.0.0-alpha.1",
     "@bbc/psammead-copyright": "^1.2.25",
+    "@bbc/psammead-detokeniser": "^1.0.0",
     "@bbc/psammead-embed-error": "^1.0.0-alpha.1",
     "@bbc/psammead-figure": "^1.2.12",
     "@bbc/psammead-grid": "^1.1.13",
