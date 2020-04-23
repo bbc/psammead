@@ -19,13 +19,13 @@ moment.relativeTimeThreshold('h', 24);
 moment.relativeTimeThreshold('d', 30);
 moment.relativeTimeThreshold('M', 12);
 
-const defaultFormat = 'LL, LT z';
-
-export const formatDuration = (durationValue, format = 'mm:ss') => {
-  const durationInMilliseconds = moment
-    .duration(durationValue)
-    .asMilliseconds();
-  return moment.utc(durationInMilliseconds).format(format);
+export const formatDuration = ({ duration, format, locale = 'en-gb' }) => {
+  const defaultDurationFormat = duration.includes('H') ? 'h:mm:ss' : 'mm:ss';
+  const durationInMilliseconds = moment.duration(duration).asMilliseconds();
+  return moment
+    .utc(durationInMilliseconds)
+    .locale(locale)
+    .format(format || defaultDurationFormat);
 };
 
 // if the date is invalid return false - https://stackoverflow.com/questions/1353684/detecting-an-invalid-date-date-instance-in-javascript#answer-1353711
@@ -38,23 +38,22 @@ export const isValidDateTime = dateTime => {
 };
 
 // when using the following 2 functions, we recommend using webpack configuration to only load in the relevant timezone, rather than all of moment-timezone
-export const unixTimestampToMoment = timestamp => {
-  return moment(timestamp);
+export const localisedMoment = ({ locale, timestamp }) => {
+  return moment(timestamp).locale(locale);
 };
 
-export const formatUnixTimestamp = (
-  timestamp,
+export const formatUnixTimestamp = ({
   format,
-  timezone,
-  locale,
   isRelative,
-) => {
-  const momentObj = unixTimestampToMoment(timestamp)
-    .locale(locale)
-    .tz(timezone);
+  locale,
+  timestamp,
+  timezone,
+}) => {
+  const momentObj = moment(timestamp).locale(locale).tz(timezone);
 
   if (isRelative) {
     return momentObj.fromNow();
   }
+  const defaultFormat = 'LL, LT z';
   return format ? momentObj.format(format) : momentObj.format(defaultFormat);
 };

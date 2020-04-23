@@ -48,7 +48,6 @@ const renderSchedule = ({
     startTime,
     link,
     brandTitle,
-    episodeTitle,
     summary,
     duration,
     durationLabel,
@@ -74,7 +73,6 @@ const renderSchedule = ({
         script={script}
         dir={dir}
         brandTitle={brandTitle}
-        episodeTitle={episodeTitle}
         startTime={startTime}
         state={state}
         link={link}
@@ -144,7 +142,6 @@ const programPropTypes = shape({
   startTime: number.isRequired,
   link: string.isRequired,
   brandTitle: string.isRequired,
-  episodeTitle: string.isRequired,
   summary: string,
   duration: string.isRequired,
   durationLabel: string.isRequired,
