@@ -198,6 +198,7 @@ export const Link = styled.a`
   position: static;
   color: ${C_EBON};
   text-decoration: none;
+  overflow-wrap: break-word;
 
   &:before {
     bottom: 0;
