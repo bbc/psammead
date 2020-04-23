@@ -28,6 +28,7 @@ npm install @bbc/psammead-radio-schedule --save
 | script | object | yes | N/A | `{ canon: { groupA: { fontSize: '28', lineHeight: '32',}, groupB: { fontSize: '32', lineHeight: '36', }, groupD: { fontSize: '44', lineHeight: '48', }, }, trafalgar: { groupA: { fontSize: '20', lineHeight: '24', }, groupB: { fontSize: '24', lineHeight: '28', }, groupD: { fontSize: '32', lineHeight: '36', }, }, }` |
 | locale | string | no | N/A | `'en-gb'` |
 | timezone | string | no | N/A | `'Europe/London'` |
+| durationLabel | string | yes | N/A | `'duration'` |
 | liveLabel | string | yes | N/A | `'LIVE'` |
 | nextLabel | string | yes | N/A | `'NEXT'` |
 | dir | string | no | `"ltr"` | `"rtl"` |
