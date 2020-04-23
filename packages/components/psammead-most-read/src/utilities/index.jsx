@@ -64,6 +64,7 @@ export const getItemWrapperArray = ({
           script={script}
           title={item.title}
           typography={linkTypography}
+          rankTypography={rankTypography}
         >
           {item.timestamp}
         </MostReadLink>

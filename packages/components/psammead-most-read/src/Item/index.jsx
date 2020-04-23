@@ -63,10 +63,11 @@ const StyledLink = styled.a`
   }
 `;
 
-const ALIGN_RANK_TO_LINK_SPACING = '0.375rem';
+const ALIGN_RANK_TO_LINK_SPACING = rankTypography =>
+  rankTypography === 'trafalgar' ? '0.1rem' : '0.375rem';
 
 const StyledItem = styled.div`
-  padding-top: ${ALIGN_RANK_TO_LINK_SPACING};
+  padding-top: ${props => ALIGN_RANK_TO_LINK_SPACING(props.rankTypography)};
   padding-bottom: ${GEL_SPACING_TRPL};
   ${paddingStart}: ${GEL_SPACING_DBL};
   ${paddingEnd}: ${GEL_SPACING_DBL};
@@ -88,8 +89,9 @@ export const MostReadLink = ({
   href,
   children,
   typography,
+  rankTypography,
 }) => (
-  <StyledItem dir={dir}>
+  <StyledItem dir={dir} rankTypography={rankTypography}>
     <StyledLink
       href={href}
       script={script}
@@ -110,12 +112,14 @@ MostReadLink.propTypes = {
   href: string.isRequired,
   children: node, // this node will be a timestamp container
   typography: oneOf(['greatprimer', 'pica']),
+  rankTypography: oneOf(['foolscap', 'trafalgar']),
 };
 
 MostReadLink.defaultProps = {
   dir: 'ltr',
   children: null,
   typography: 'greatprimer',
+  rankTypography: 'foolscap',
 };
 
 const ItemWrapper = styled.div`
