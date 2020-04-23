@@ -47,7 +47,7 @@ const columnIncludesDoubleDigits = (props, supportsGrid) =>
 
 // Returns a min width for the rank wrapper depending on if the list contains 10 items
 // and if the numeral is considered medium/small.
-const getRankMinWidth = ({ service, numberOfItems }) => {
+const getRankMinWidth = ({ service, numberOfItems, typography }) => {
   const singleDigitMinWidth = {
     default: singleDigitDefault,
     medium: singleDigitMedium,
@@ -55,8 +55,8 @@ const getRankMinWidth = ({ service, numberOfItems }) => {
   };
 
   const doubleDigitMinWidth = {
-    default: doubleDigitDefault,
-    medium: doubleDigitMedium,
+    default: doubleDigitDefault(typography),
+    medium: doubleDigitMedium(typography),
     small: doubleDigitSmall,
   };
 
@@ -199,6 +199,7 @@ const MostReadRank = ({
       service={service}
       numberOfItems={numberOfItems}
       dir={dir}
+      typography={typography}
     >
       <StyledSpan service={service} script={script} typography={typography}>
         {rank}
