@@ -60,7 +60,7 @@ const StyledLink = styled.a`
   @media (min-width: ${GEL_GROUP_2_SCREEN_WIDTH_MIN}) {
     ${({ script, typography }) =>
       script && typography !== 'pica' && getGreatPrimer(script)}
-  }ß
+  }
 `;
 
 const getRankAlignSpacing = rankTypography =>
