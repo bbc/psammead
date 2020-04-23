@@ -18,8 +18,8 @@ const listIndexRange = {
 };
 
 const pageTypes = ['oneColumn', 'twoColumn', 'multiColumn'];
-const rankTypeSize = { default: 'foolscap', trafalgar: 'trafalgar' };
-const linkTypeSize = { default: 'greatprimer', pica: 'pica' };
+const rankTypeSize = { foolscap: 'foolscap', trafalgar: 'trafalgar' };
+const linkTypeSize = { greatprimer: 'greatprimer', pica: 'pica' };
 
 const renderList = ({
   numberOfItems,
@@ -138,12 +138,12 @@ storiesOf('Components|MostRead/List', module)
           rankTypography: select(
             'Rank Typography',
             rankTypeSize,
-            rankTypeSize.default,
+            rankTypeSize.foolscap,
           ),
           linkTypography: select(
             'Link Typography',
             linkTypeSize,
-            linkTypeSize.default,
+            linkTypeSize.greatprimer,
           ),
         }),
       ),
