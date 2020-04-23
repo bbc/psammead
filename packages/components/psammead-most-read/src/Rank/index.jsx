@@ -150,7 +150,7 @@ const StyledSpan = styled.span`
   ${({ script, typography }) =>
     script && typography === 'trafalgar'
       ? getTrafalgar(script)
-      : getFoolscap(script)};
+      : getFoolscap(script)}
   position: relative;
   color: ${C_POSTBOX};
   margin: 0; /* Reset */
