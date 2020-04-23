@@ -60,14 +60,14 @@ const StyledLink = styled.a`
   @media (min-width: ${GEL_GROUP_2_SCREEN_WIDTH_MIN}) {
     ${({ script, typography }) =>
       script && typography !== 'pica' && getGreatPrimer(script)}
-  }
+  }ß
 `;
 
-const ALIGN_RANK_TO_LINK_SPACING = rankTypography =>
+const getRankAlignSpacing = rankTypography =>
   rankTypography === 'trafalgar' ? '0.1rem' : '0.375rem';
 
 const StyledItem = styled.div`
-  padding-top: ${props => ALIGN_RANK_TO_LINK_SPACING(props.rankTypography)};
+  padding-top: ${({ rankTypography }) => getRankAlignSpacing(rankTypography)};
   padding-bottom: ${GEL_SPACING_TRPL};
   ${paddingStart}: ${GEL_SPACING_DBL};
   ${paddingEnd}: ${GEL_SPACING_DBL};
