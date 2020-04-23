@@ -118,6 +118,7 @@ import {
 | numberOfItems | number | yes | N/A | `10` |
 | dir | string | no | `"ltr"` | `"ltr"` |
 | columnLayout | string | no | 'multiColumn' | `twoColumn`
+| typography | string | no | 'foolscap' | `'trafalgar'` |
 
 ### Usage
 
@@ -149,6 +150,8 @@ import { MostReadRank } from '@bbc/psammead-most-read';
 | title | string | yes | N/A | `"This is a article headline"` |
 | href | string | yes | N/A | `"/bbc.co.uk/news/00000027051997"` |
 | children | node | no | null | `<Timestamp datetime="2019-03-01T14:00+00:00" script={script} padding={false} service={service}>Last updated: 5th November 2016</Timestamp>` |
+| typography | string | no | 'greatprimer' | `'pica'` |
+| rankTypography | string | no | 'foolscap' | `'trafalgar'` |
 
 ### Usage
 
