@@ -75,7 +75,7 @@ export const doubleDigitMedium = typography => ({
     trafalgar: '1.5rem',
   }[typography],
   group3WithOneColumn: {
-    foolscap: GEL_SPACING_QUAD,
+    foolscap: GEL_SPACING_SEXT,
     trafalgar: '1.75rem',
   }[typography],
   group3WithTwoColumns: GEL_SPACING_SEXT,
