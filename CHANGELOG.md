@@ -3,7 +3,8 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
-| 2.0.135 | [PR#3408](https://github.com/bbc/psammead/pull/3408) Include @bbc/psammead-detokeniser in devDependencies |
+| 2.0.136 | [PR#3408](https://github.com/bbc/psammead/pull/3408) Include @bbc/psammead-detokeniser in devDependencies |
+| 2.0.135 | [PR#3407](https://github.com/bbc/psammead/pull/3407) Talos - Bump Dependencies - @bbc/psammead-timestamp-container |
 | 2.0.134 | [PR#3405](https://github.com/bbc/psammead/pull/3405) Talos - Bump Dependencies - @bbc/psammead-radio-schedule |
 | 2.0.133 | [PR#3402](https://github.com/bbc/psammead/pull/3402) Dependency updates |
 | 2.0.132 | [PR#3401](https://github.com/bbc/psammead/pull/3401) Talos - Bump Dependencies - @bbc/psammead-radio-schedule |
