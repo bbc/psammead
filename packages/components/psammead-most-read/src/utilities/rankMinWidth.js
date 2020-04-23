@@ -64,19 +64,19 @@ export const doubleDigitMedium = typography => ({
   // These values are used to align the rank when a double digit exists in the column
   group0WithOneColumn: {
     foolscap: GEL_SPACING_QUAD,
-    trafalgar: '1.5rem',
+    trafalgar: GEL_SPACING_TRPL,
   }[typography],
   group1WithOneColumn: {
     foolscap: GEL_SPACING_QUAD,
-    trafalgar: '1.5rem',
+    trafalgar: GEL_SPACING_TRPL,
   }[typography],
   group2WithOneColumn: {
     foolscap: GEL_SPACING_QUAD,
-    trafalgar: '1.5rem',
+    trafalgar: GEL_SPACING_TRPL,
   }[typography],
   group3WithOneColumn: {
     foolscap: GEL_SPACING_SEXT,
-    trafalgar: '1.75rem',
+    trafalgar: GEL_SPACING_TRPL,
   }[typography],
   group3WithTwoColumns: GEL_SPACING_SEXT,
   group5WithFiveColumns: GEL_SPACING_SEXT,
