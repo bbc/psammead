@@ -9,12 +9,12 @@ moment.updateLocale('sw', {
     past: '%s',
     s: function (number, withoutSuffix, key, isFuture) {
       return withoutSuffix === false && isFuture === false
-        ? 'hivi punde zilizopita'
+        ? 'sekunde chache zilizopita'
         : 'hivi punde';
     },
     ss: function (number, withoutSuffix, key, isFuture) {
       return withoutSuffix === false && isFuture === false
-        ? 'hivi punde zilizopita'
+        ? 'sekunde chache zilizopita'
         : 'hivi punde';
     },
     m: function (number, withoutSuffix, key, isFuture) {
