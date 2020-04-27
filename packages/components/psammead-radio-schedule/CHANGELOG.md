@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 2.0.1 | [PR#3414](https://github.com/bbc/psammead/pull/3414) Talos - Bump Dependencies - @bbc/psammead-timestamp-container |
 | 2.0.0 | [PR#3377](https://github.com/bbc/psammead/pull/3377) Remove episodeTitle prop. In ProgramCard, generate episodeTitle with moment using startTime. |
 | 1.0.8 | [PR#3400](https://github.com/bbc/psammead/pull/3400) Talos - Bump Dependencies - @bbc/psammead-timestamp-container |
 | 1.0.7 | [PR#3398](https://github.com/bbc/psammead/pull/3398) Talos - Bump Dependencies - @bbc/psammead-timestamp-container |
