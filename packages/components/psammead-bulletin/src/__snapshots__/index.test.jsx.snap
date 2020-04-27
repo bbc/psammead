@@ -33,7 +33,6 @@ exports[`Bulletin should render audio correctly 1`] = `
   color: #222222;
   -webkit-text-decoration: none;
   text-decoration: none;
-  overflow-wrap: break-word;
 }
 
 .c5:before {
@@ -363,7 +362,6 @@ exports[`Bulletin should render live audio correctly 1`] = `
   color: #222222;
   -webkit-text-decoration: none;
   text-decoration: none;
-  overflow-wrap: break-word;
 }
 
 .c5:before {
@@ -698,7 +696,6 @@ exports[`Bulletin should render live video correctly 1`] = `
   color: #222222;
   -webkit-text-decoration: none;
   text-decoration: none;
-  overflow-wrap: break-word;
 }
 
 .c5:before {
@@ -1024,7 +1021,6 @@ exports[`Bulletin should render video correctly 1`] = `
   color: #222222;
   -webkit-text-decoration: none;
   text-decoration: none;
-  overflow-wrap: break-word;
 }
 
 .c5:before {
