@@ -1,6 +1,6 @@
 import React from 'react';
 import styled, { css } from 'styled-components';
-import { node, bool, string, oneOf, shape } from 'prop-types';
+import { node, bool, string, oneOf, shape, element } from 'prop-types';
 import {
   GEL_SPACING_HLF,
   GEL_SPACING,
@@ -98,7 +98,7 @@ const mediaIndicatorStylesRegular = css`
 
 /*
  These styles are to ensure we have the correct positioning
- & spacing of the Media Indicator over the Image in the Story Promo 
+ & spacing of the Media Indicator over the Image in the Story Promo
  */
 const mediaIndicatorStyles = {
   top: mediaIndicatorStylesTopLeading,
@@ -122,7 +122,43 @@ const headlineTypography = script => ({
   leading: headlineLeadingStoryTypography(script),
 });
 
-export const Headline = styled.h3`
+export const Headline = ({
+  children,
+  promoHasImage,
+  promoType,
+  script,
+  service,
+  tag,
+}) => {
+  return (
+    <StyledHeadline
+      as={tag}
+      promoHasImage={promoHasImage}
+      promoType={promoType}
+      script={script}
+      service={service}
+    >
+      {children}
+    </StyledHeadline>
+  );
+};
+
+Headline.propTypes = {
+  children: element.isRequired,
+  script: shape(scriptPropType).isRequired,
+  service: string.isRequired,
+  promoHasImage: bool,
+  promoType: PROMO_TYPES,
+  tag: oneOf(['h3', 'div']),
+};
+
+Headline.defaultProps = {
+  promoHasImage: true,
+  promoType: 'regular',
+  tag: 'h3',
+};
+
+const StyledHeadline = styled.h3`
   color: ${C_EBON};
   margin: 0; /* Reset */
   padding-bottom: ${GEL_SPACING};
@@ -132,18 +168,6 @@ export const Headline = styled.h3`
     !promoHasImage &&
     `display: inline;`} /* Needed for aligning Media Indicator with Headline */
 `;
-
-Headline.propTypes = {
-  script: shape(scriptPropType).isRequired,
-  service: string.isRequired,
-  promoHasImage: bool,
-  promoType: PROMO_TYPES,
-};
-
-Headline.defaultProps = {
-  promoHasImage: true,
-  promoType: 'regular',
-};
 
 const summaryTopStoryStyles = `
   @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) and (max-width: ${GEL_GROUP_3_SCREEN_WIDTH_MAX}) {
