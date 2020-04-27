@@ -19,12 +19,24 @@ export const mediumFontServices = [
 export const smallFontServices = ['persian', 'pashto'];
 
 // If numberOfItems < 10, no extra spacing needs to be accounted for.
-export const singleDigitDefault = {
-  group0: GEL_SPACING_TRPL,
-  group1: GEL_SPACING_TRPL,
-  group2: GEL_SPACING_TRPL,
-  group3: GEL_SPACING_QUAD,
-};
+export const singleDigitDefault = typography => ({
+  group0: {
+    foolscap: GEL_SPACING_TRPL,
+    trafalgar: GEL_SPACING_DBL,
+  }[typography],
+  group1: {
+    foolscap: GEL_SPACING_TRPL,
+    trafalgar: GEL_SPACING_DBL,
+  }[typography],
+  group2: {
+    foolscap: GEL_SPACING_TRPL,
+    trafalgar: GEL_SPACING_DBL,
+  }[typography],
+  group3: {
+    foolscap: GEL_SPACING_TRPL,
+    trafalgar: GEL_SPACING_DBL,
+  }[typography],
+});
 
 // If numberOfItems >= 10, extra spacing needs to be accounted for.
 export const doubleDigitDefault = typography => ({

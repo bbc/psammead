@@ -49,7 +49,7 @@ const columnIncludesDoubleDigits = (props, supportsGrid) =>
 // and if the numeral is considered medium/small.
 const getRankMinWidth = ({ service, numberOfItems, typography }) => {
   const singleDigitMinWidth = {
-    default: singleDigitDefault,
+    default: singleDigitDefault(typography),
     medium: singleDigitMedium,
     small: singleDigitSmall,
   };
@@ -104,7 +104,7 @@ const OneColumnWrapper = styled.div`
     min-width: ${props =>
       listHasDoubleDigits(props.numberOfItems)
         ? getRankMinWidth(props).group3WithOneColumn
-        : 'auto'};
+        : '1rem'};
   }
 
   /* different number order for when css grid is supported  */
@@ -113,7 +113,7 @@ const OneColumnWrapper = styled.div`
       min-width: ${props =>
         listHasDoubleDigits(props.numberOfItems)
           ? getRankMinWidth(props).group3WithOneColumn
-          : 'auto'};
+          : '1rem'};
     }
   }
 `;
@@ -141,7 +141,7 @@ const MultiColumnWrapper = styled(TwoColumnWrapper)`
   /* 5 columns of items at viewport 1280px and above */
   @media (min-width: ${GEL_GROUP_5_SCREEN_WIDTH_MIN}) {
     min-width: ${props =>
-      listHasDoubleDigits(props.numberOfItems) ? isFiveOrTen(props) : 'auto'};
+      listHasDoubleDigits(props.numberOfItems) ? isFiveOrTen(props) : '2rem'};
   }
 `;
 
