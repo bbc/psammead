@@ -186,7 +186,7 @@ import Timestamp from '@bbc/psammead-timestamp';
 
 ### When to use these components
 
-These components are intended to be used on `article`, `front` pages.
+These components are intended to be used on `article`, `front` and `mostRead` pages.
 
 ### Accessibility notes
 
