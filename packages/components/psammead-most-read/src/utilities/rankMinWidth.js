@@ -19,46 +19,46 @@ export const mediumFontServices = [
 export const smallFontServices = ['persian', 'pashto'];
 
 // If numberOfItems < 10, no extra spacing needs to be accounted for.
-export const singleDigitDefault = typography => ({
+export const singleDigitDefault = size => ({
   group0: {
-    foolscap: GEL_SPACING_TRPL,
-    trafalgar: GEL_SPACING_DBL,
-  }[typography],
+    default: GEL_SPACING_TRPL,
+    small: GEL_SPACING_DBL,
+  }[size],
   group1: {
-    foolscap: GEL_SPACING_TRPL,
-    trafalgar: GEL_SPACING_DBL,
-  }[typography],
+    default: GEL_SPACING_TRPL,
+    small: GEL_SPACING_DBL,
+  }[size],
   group2: {
-    foolscap: GEL_SPACING_TRPL,
-    trafalgar: GEL_SPACING_DBL,
-  }[typography],
+    default: GEL_SPACING_TRPL,
+    small: GEL_SPACING_DBL,
+  }[size],
   group3: {
-    foolscap: GEL_SPACING_TRPL,
-    trafalgar: GEL_SPACING_DBL,
-  }[typography],
+    default: GEL_SPACING_TRPL,
+    small: GEL_SPACING_DBL,
+  }[size],
 });
 
 // If numberOfItems >= 10, extra spacing needs to be accounted for.
-export const doubleDigitDefault = typography => ({
+export const doubleDigitDefault = size => ({
   group3: GEL_SPACING_QUAD,
   group5: GEL_SPACING_QUAD,
   // These values are used to align the rank when a double digit exists in the column
   group0WithOneColumn: {
-    foolscap: GEL_SPACING_QUIN,
-    trafalgar: '1.75rem',
-  }[typography],
+    default: GEL_SPACING_QUIN,
+    small: '1.75rem',
+  }[size],
   group1WithOneColumn: {
-    foolscap: GEL_SPACING_QUIN,
-    trafalgar: '1.75rem',
-  }[typography],
+    default: GEL_SPACING_QUIN,
+    small: '1.75rem',
+  }[size],
   group2WithOneColumn: {
-    foolscap: GEL_SPACING_SEXT,
-    trafalgar: GEL_SPACING_QUAD,
-  }[typography],
+    default: GEL_SPACING_SEXT,
+    small: GEL_SPACING_QUAD,
+  }[size],
   group3WithOneColumn: {
-    foolscap: '4rem',
-    trafalgar: GEL_SPACING_QUIN,
-  }[typography],
+    default: '4rem',
+    small: GEL_SPACING_QUIN,
+  }[size],
   group3WithTwoColumns: '4rem',
   group5WithFiveColumns: '4rem',
 });
@@ -70,26 +70,26 @@ export const singleDigitMedium = {
   group3: GEL_SPACING_TRPL,
 };
 
-export const doubleDigitMedium = typography => ({
+export const doubleDigitMedium = size => ({
   group3: GEL_SPACING_TRPL,
   group5: GEL_SPACING_TRPL,
   // These values are used to align the rank when a double digit exists in the column
   group0WithOneColumn: {
-    foolscap: GEL_SPACING_QUAD,
-    trafalgar: GEL_SPACING_TRPL,
-  }[typography],
+    default: GEL_SPACING_QUAD,
+    small: GEL_SPACING_TRPL,
+  }[size],
   group1WithOneColumn: {
-    foolscap: GEL_SPACING_QUAD,
-    trafalgar: GEL_SPACING_TRPL,
-  }[typography],
+    default: GEL_SPACING_QUAD,
+    small: GEL_SPACING_TRPL,
+  }[size],
   group2WithOneColumn: {
-    foolscap: GEL_SPACING_QUAD,
-    trafalgar: GEL_SPACING_TRPL,
-  }[typography],
+    default: GEL_SPACING_QUAD,
+    small: GEL_SPACING_TRPL,
+  }[size],
   group3WithOneColumn: {
-    foolscap: GEL_SPACING_SEXT,
-    trafalgar: GEL_SPACING_TRPL,
-  }[typography],
+    default: GEL_SPACING_SEXT,
+    small: GEL_SPACING_TRPL,
+  }[size],
   group3WithTwoColumns: GEL_SPACING_SEXT,
   group5WithFiveColumns: GEL_SPACING_SEXT,
 });

@@ -40,8 +40,7 @@ export const getItemWrapperArray = ({
   dir,
   withTimestamp = false,
   columnLayout,
-  rankTypography,
-  linkTypography,
+  size,
 }) => {
   const itemWrapperArray = [];
   const item = getItem({ service, withTimestamp });
@@ -55,7 +54,7 @@ export const getItemWrapperArray = ({
           numberOfItems={numberOfItems}
           dir={dir}
           columnLayout={columnLayout}
-          rankTypography={rankTypography}
+          size={size}
         />
         <MostReadLink
           dir={dir}
@@ -63,8 +62,7 @@ export const getItemWrapperArray = ({
           service={service}
           script={script}
           title={item.title}
-          linkTypography={linkTypography}
-          rankTypography={rankTypography}
+          size={size}
         >
           {item.timestamp}
         </MostReadLink>

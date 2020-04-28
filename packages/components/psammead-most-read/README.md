@@ -4,7 +4,7 @@
 
 The `MostRead` component is designed to display the most read articles given a designated period of time which is dependent on service. The component comprises of a `MostReadList` containing an ordered list of `MostReadItemWrapper`. A `MostReadItemWrapper` is a list item comprised of and a `MostReadLink`, a link to the article, and a `MostReadRank` which is a numerical counter representing the article's ranking.
 
-The `MostReadLink` and `MostReadRank` components also support different typographies, which are used to customise their font size. `MostReadLink` has optional prop which only supports `greatprimer` and `pica`. `MostReadRank` and `MostReadLink` have an optional prop called `rankTypography` which currently only supports the `trafalgar` and `foolscap` typographies. `MostReadLink` needs to know the `rankTypography` to be able to align the link correctly with the rank component.
+The `MostReadLink` and `MostReadRank` components also support different a size prop. This prop currently only accepts a `default` and `small` size. Internally these values change the typography used for the components.
 
 ## Installation
 
@@ -120,7 +120,7 @@ import {
 | numberOfItems | number | yes | N/A | `10` |
 | dir | string | no | `"ltr"` | `"ltr"` |
 | columnLayout | string | no | 'multiColumn' | `twoColumn`
-| rankTypography | string | no | 'foolscap' | `'trafalgar'` |
+| size | string | no | 'default' | `'small'` |
 
 ### Usage
 
@@ -136,7 +136,7 @@ import { MostReadRank } from '@bbc/psammead-most-read';
   numberOfItems={5}
   dir="ltr"
   columnLayout="twoColumn"
-  rankTypography="trafalgar"
+  size="small"
 />;
 ```
 
@@ -153,8 +153,7 @@ import { MostReadRank } from '@bbc/psammead-most-read';
 | title | string | yes | N/A | `"This is a article headline"` |
 | href | string | yes | N/A | `"/bbc.co.uk/news/00000027051997"` |
 | children | node | no | null | `<Timestamp datetime="2019-03-01T14:00+00:00" script={script} padding={false} service={service}>Last updated: 5th November 2016</Timestamp>` |
-| linkTypography | string | no | 'greatprimer' | `'pica'` |
-| rankTypography | string | no | 'foolscap' | `'trafalgar'` |
+| size | string | no | 'default' | `'small'` |
 
 ### Usage
 
@@ -172,8 +171,7 @@ import Timestamp from '@bbc/psammead-timestamp';
   service="news"
   title="This is a article headline"
   href="/bbc.co.uk/news/00000027051997"
-  linkTypography="pica"
-  rankTypography="trafalgar"
+  size="small"
 >
   <Timestamp
     datetime="2019-03-01T14:00+00:00"
@@ -188,7 +186,7 @@ import Timestamp from '@bbc/psammead-timestamp';
 
 ### When to use these components
 
-These components are intended to be used on `article` and `front` pages.
+These components are intended to be used on `article`, `front` pages.
 
 ### Accessibility notes
 

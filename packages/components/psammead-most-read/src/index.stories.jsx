@@ -18,8 +18,7 @@ const listIndexRange = {
 };
 
 const pageTypes = ['oneColumn', 'twoColumn', 'multiColumn'];
-const rankTypeSize = ['foolscap', 'trafalgar'];
-const linkTypeSize = ['greatprimer', 'pica'];
+const sizes = ['default', 'small'];
 
 const renderList = ({
   numberOfItems,
@@ -28,8 +27,7 @@ const renderList = ({
   script,
   withTimestamp,
   columnLayout,
-  rankTypography,
-  linkTypography,
+  size,
 }) => (
   <MostReadList
     numberOfItems={numberOfItems}
@@ -43,20 +41,12 @@ const renderList = ({
       dir,
       withTimestamp,
       columnLayout,
-      rankTypography,
-      linkTypography,
+      size,
     }).map(item => item)}
   </MostReadList>
 );
 
-const renderLink = ({
-  dir,
-  service,
-  script,
-  withTimestamp,
-  linkTypography,
-  rankTypography,
-}) => {
+const renderLink = ({ dir, service, script, withTimestamp, size }) => {
   const item = getItem({ service, withTimestamp });
   return (
     <MostReadLink
@@ -65,8 +55,7 @@ const renderLink = ({
       service={service}
       script={script}
       title={item.title}
-      linkTypography={linkTypography}
-      rankTypography={rankTypography}
+      size={size}
     >
       {item.timestamp}
     </MostReadLink>
@@ -80,7 +69,7 @@ const renderRank = ({
   listIndex,
   numberOfItems,
   columnLayout,
-  rankTypography,
+  size,
 }) => (
   <MostReadRank
     service={service}
@@ -89,7 +78,7 @@ const renderRank = ({
     numberOfItems={numberOfItems}
     dir={dir}
     columnlayout={columnLayout}
-    rankTypography={rankTypography}
+    size={size}
   />
 );
 
@@ -104,7 +93,7 @@ storiesOf('Components|MostRead/Rank', module)
           script,
           listIndex: number('Number (1 - 10)', 5, listIndexRange),
           numberOfItems: 10,
-          rankTypography: select('Rank Typography', rankTypeSize, 'foolscap'),
+          size: select('Size', sizes, 'default'),
         }),
       {
         notes,
@@ -123,8 +112,7 @@ storiesOf('Components|MostRead/Item', module)
         script,
         service: selectedService,
         withTimestamp: boolean('Timestamp', false),
-        linkTypography: select('Link Typography', linkTypeSize, 'greatprimer'),
-        rankTypography: select('Rank Typography', rankTypeSize, 'foolscap'),
+        size: select('Size', sizes, 'default'),
       }),
     {
       notes,
@@ -144,12 +132,7 @@ storiesOf('Components|MostRead/List', module)
           service: selectedService,
           dir,
           script,
-          rankTypography: select('Rank Typography', rankTypeSize, 'foolscap'),
-          linkTypography: select(
-            'Link Typography',
-            linkTypeSize,
-            'greatprimer',
-          ),
+          size: select('Size', sizes, 'default'),
         }),
       ),
     {

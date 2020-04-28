@@ -47,16 +47,16 @@ const columnIncludesDoubleDigits = (props, supportsGrid) =>
 
 // Returns a min width for the rank wrapper depending on if the list contains 10 items
 // and if the numeral is considered medium/small.
-const getRankMinWidth = ({ service, numberOfItems, rankTypography }) => {
+const getRankMinWidth = ({ service, numberOfItems, size }) => {
   const singleDigitMinWidth = {
-    default: singleDigitDefault(rankTypography),
+    default: singleDigitDefault(size),
     medium: singleDigitMedium,
     small: singleDigitSmall,
   };
 
   const doubleDigitMinWidth = {
-    default: doubleDigitDefault(rankTypography),
-    medium: doubleDigitMedium(rankTypography),
+    default: doubleDigitDefault(size),
+    medium: doubleDigitMedium(size),
     small: doubleDigitSmall,
   };
 
@@ -147,8 +147,8 @@ const MultiColumnWrapper = styled(TwoColumnWrapper)`
 
 const StyledSpan = styled.span`
   ${({ service }) => getSerifLight(service)}
-  ${({ script, rankTypography }) =>
-    script && rankTypography === 'trafalgar'
+  ${({ script, size }) =>
+    script && size === 'small'
       ? getTrafalgar(script)
       : getFoolscap(script)}
   position: relative;
@@ -187,7 +187,7 @@ const MostReadRank = ({
   numberOfItems,
   dir,
   columnLayout,
-  rankTypography,
+  size,
 }) => {
   const numerals = serviceNumerals(service);
   const rank = numerals[listIndex];
@@ -199,13 +199,9 @@ const MostReadRank = ({
       service={service}
       numberOfItems={numberOfItems}
       dir={dir}
-      rankTypography={rankTypography}
+      size={size}
     >
-      <StyledSpan
-        service={service}
-        script={script}
-        rankTypography={rankTypography}
-      >
+      <StyledSpan service={service} script={script} size={size}>
         {rank}
       </StyledSpan>
     </RankWrapper>
@@ -219,13 +215,13 @@ MostReadRank.propTypes = {
   numberOfItems: number.isRequired,
   dir: oneOf(['rtl', 'ltr']),
   columnLayout: oneOf(['oneColumn', 'twoColumn', 'multiColumn']),
-  rankTypography: oneOf(['foolscap', 'trafalgar']),
+  size: oneOf(['default', 'small']),
 };
 
 MostReadRank.defaultProps = {
   dir: 'ltr',
   columnLayout: 'multiColumn',
-  rankTypography: 'foolscap',
+  size: 'default',
 };
 
 export default MostReadRank;
