@@ -428,7 +428,7 @@ exports[`Bulletin should render audio correctly with lang prop passed in 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding-right: 0.5rem;
+  padding-left: 0.5rem;
 }
 
 .c9 > svg {
@@ -485,7 +485,7 @@ exports[`Bulletin should render audio correctly with lang prop passed in 1`] = `
 @media (min-width:37.5rem) and (max-width:62.9375rem) {
   .c3 {
     width: 66.67%;
-    padding-left: 1rem;
+    padding-right: 1rem;
   }
 }
 
@@ -514,7 +514,7 @@ exports[`Bulletin should render audio correctly with lang prop passed in 1`] = `
   .c4 {
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
-    padding-left: 0;
+    padding-right: 0;
   }
 }
 
@@ -534,7 +534,7 @@ exports[`Bulletin should render audio correctly with lang prop passed in 1`] = `
 
 @media (min-width:37.5rem) and (max-width:62.9375rem) {
   .c7 {
-    padding-left: 0;
+    padding-right: 0;
   }
 }
 
@@ -577,11 +577,11 @@ exports[`Bulletin should render audio correctly with lang prop passed in 1`] = `
   </div>
   <div
     class="c3"
-    dir="ltr"
+    dir="rtl"
   >
     <h3
       class="c4"
-      dir="ltr"
+      dir="rtl"
     >
       <a
         class="c5"
@@ -604,18 +604,18 @@ exports[`Bulletin should render audio correctly with lang prop passed in 1`] = `
     </h3>
     <p
       class="c7"
-      dir="ltr"
+      dir="rtl"
     >
       This is the summary text
     </p>
     <div
       aria-hidden="true"
       class="c8"
-      dir="ltr"
+      dir="rtl"
     >
       <span
         class="c9"
-        dir="ltr"
+        dir="rtl"
       >
         <svg
           aria-hidden="true"

@@ -11,6 +11,7 @@ const BulletinComponent = ({
   isLive,
   mediaType,
   ctaText,
+  dir = 'ltr',
   lang = null,
 }) => {
   const summaryText = 'This is the summary text';
@@ -38,6 +39,7 @@ const BulletinComponent = ({
       ctaText={playCtaText}
       isLive={isLive}
       offScreenText={offScreenText}
+      dir={dir}
       lang={lang}
     />
   );
@@ -61,6 +63,7 @@ describe('Bulletin', () => {
       service="arabic"
       mediaType="audio"
       ctaText="Listen"
+      dir="rtl"
       lang="en-GB"
     />,
   );
