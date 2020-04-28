@@ -5,7 +5,14 @@ import Image from '@bbc/psammead-image';
 import Bulletin from '.';
 
 /* eslint-disable react/prop-types */
-const BulletinComponent = ({ script, service, isLive, mediaType, ctaText }) => {
+const BulletinComponent = ({
+  script,
+  service,
+  isLive,
+  mediaType,
+  ctaText,
+  withSummary = true,
+}) => {
   const summaryText = 'This is the summary text';
   const headlineText = 'This is the headline';
   const ctaLink = 'https://bbc.co.uk';
@@ -26,7 +33,7 @@ const BulletinComponent = ({ script, service, isLive, mediaType, ctaText }) => {
       image={image}
       mediaType={mediaType}
       headlineText={headlineText}
-      summaryText={summaryText}
+      summaryText={withSummary ? summaryText : null}
       ctaLink={ctaLink}
       ctaText={playCtaText}
       isLive={isLive}
@@ -75,6 +82,17 @@ describe('Bulletin', () => {
       mediaType="video"
       ctaText="Watch"
       isLive
+    />,
+  );
+
+  shouldMatchSnapshot(
+    'should render radio bulletin without summary correctly',
+    <BulletinComponent
+      script={latin}
+      service="news"
+      mediaType="radio"
+      ctaText="Listen"
+      withSummary={false}
     />,
   );
 });
