@@ -185,7 +185,6 @@ const Bulletin = ({
   const isAudio = mediaType === 'audio';
   const bulletinType = isAudio ? 'radio' : 'tv';
   const BulletinWrapper = isAudio ? RadioBulletinWrapper : TVBulletinWrapper;
-  const hiddenTextProps = lang ? { lang } : {};
 
   return (
     <BulletinWrapper>
@@ -214,7 +213,7 @@ const Bulletin = ({
               // eslint-disable-next-line jsx-a11y/aria-role
               <span role="text">
                 {offScreenText && (
-                  <VisuallyHiddenText {...hiddenTextProps}>
+                  <VisuallyHiddenText lang={lang}>
                     {`${offScreenText}, `}
                   </VisuallyHiddenText>
                 )}
