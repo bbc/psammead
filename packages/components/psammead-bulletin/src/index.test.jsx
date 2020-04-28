@@ -66,6 +66,16 @@ describe('Bulletin', () => {
   );
 
   shouldMatchSnapshot(
+    'should render video correctly',
+    <BulletinComponent
+      script={latin}
+      service="news"
+      mediaType="video"
+      ctaText="Watch"
+    />,
+  );
+
+  shouldMatchSnapshot(
     'should render live audio correctly',
     <BulletinComponent
       script={latin}
