@@ -57,10 +57,12 @@ const StyledLink = styled.a`
     z-index: 1;
   }
 
-  @media (min-width: ${GEL_GROUP_2_SCREEN_WIDTH_MIN}) {
-    ${({ script, size }) =>
-      script && size !== 'small' && getGreatPrimer(script)}
-  }
+  ${({ script, size }) =>
+    script &&
+    size !== 'small' &&
+    `@media (min-width: ${GEL_GROUP_2_SCREEN_WIDTH_MIN}) {
+      ${getGreatPrimer(script)}
+    }`}
 `;
 
 const getRankAlignSpacing = size => (size === 'small' ? '0.2rem' : '0.375rem');
