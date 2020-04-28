@@ -222,14 +222,16 @@ const Bulletin = ({
             )}
           </Link>
         </BulletinHeading>
-        <BulletinSummary
-          script={script}
-          service={service}
-          bulletinType={bulletinType}
-          dir={dir}
-        >
-          {summaryText}
-        </BulletinSummary>
+        {summaryText && (
+          <BulletinSummary
+            script={script}
+            service={service}
+            bulletinType={bulletinType}
+            dir={dir}
+          >
+            {summaryText}
+          </BulletinSummary>
+        )}
         <PlayCTA
           isLive={isLive}
           service={service}
@@ -253,7 +255,7 @@ Bulletin.propTypes = {
   ctaText: string.isRequired,
   ctaLink: string.isRequired,
   image: node,
-  summaryText: string.isRequired,
+  summaryText: string,
   headlineText: string.isRequired,
   isLive: bool,
   liveText: string,
@@ -264,6 +266,7 @@ Bulletin.propTypes = {
 Bulletin.defaultProps = {
   dir: 'ltr',
   image: null,
+  summaryText: null,
   isLive: false,
   liveText: 'LIVE',
   lang: 'en-GB',

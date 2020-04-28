@@ -24,7 +24,7 @@ npm install @bbc/psammead-bulletin --save
 | `type` | string | yes | N/A | `One of ['audio', 'video']` |
 | `ctaText` | string | yes | N/A | `Watch` |
 | `ctaLink` | string | yes | N/A | `'http://link.to.resource'` |
-| `summary` | string | yes | N/A | `'Bulletin summary'` |
+| `summary` | string | no | `null` | `'Bulletin summary'` |
 | `headlineText` | string | yes | N/A  | `'Bulletin headline'` |
 | `isLive` | boolean | no | `false` | `true` |
 | `liveText` | string | no | `'Live'` | `'Localised Live'` |
