@@ -106,16 +106,6 @@ const OneColumnWrapper = styled.div`
         ? getRankMinWidth(props).group3WithOneColumn
         : '1rem'};
   }
-
-  /* different number order for when css grid is supported  */
-  @supports (${grid}) {
-    @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
-      min-width: ${props =>
-        listHasDoubleDigits(props.numberOfItems)
-          ? getRankMinWidth(props).group3WithOneColumn
-          : '1rem'};
-    }
-  }
 `;
 
 const TwoColumnWrapper = styled(OneColumnWrapper)`
