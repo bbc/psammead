@@ -1,6 +1,6 @@
 import React from 'react';
 import { shouldMatchSnapshot } from '@bbc/psammead-test-helpers';
-import { latin } from '@bbc/gel-foundations/scripts';
+import { latin, arabic } from '@bbc/gel-foundations/scripts';
 import Image from '@bbc/psammead-image';
 import Bulletin from '.';
 
@@ -43,6 +43,16 @@ describe('Bulletin', () => {
       service="news"
       mediaType="audio"
       ctaText="Listen"
+    />,
+  );
+
+  shouldMatchSnapshot(
+    'should render audio correctly in arabic',
+    <BulletinComponent
+      script={arabic}
+      service="arabic"
+      mediaType="audio"
+      ctaText="استمع"
     />,
   );
 
