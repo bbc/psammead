@@ -4,7 +4,7 @@
 
 The `MostRead` component is designed to display the most read articles given a designated period of time which is dependent on service. The component comprises of a `MostReadList` containing an ordered list of `MostReadItemWrapper`. A `MostReadItemWrapper` is a list item comprised of and a `MostReadLink`, a link to the article, and a `MostReadRank` which is a numerical counter representing the article's ranking.
 
-The `MostReadLink` and `MostReadRank` components also support a size prop. This prop currently only accepts a `default` and `small` size. Internally these values change the typography used for the components. This will allow more sizes to be added in the future.
+The `MostReadLink` and `MostReadRank` components also support a size prop. This prop currently only accepts a `default` and `small` size. Internally these values change the CSS used for sizing parts of the components. This will allow more sizes to be added in the future.
 
 ## Installation
 
@@ -186,7 +186,7 @@ import Timestamp from '@bbc/psammead-timestamp';
 
 ### When to use these components
 
-These components are intended to be used on `article`, `front` and `mostRead` pages.
+These components are intended to be used on `article`, `front`, `story` and `mostRead` pages.
 
 ### Accessibility notes
 
