@@ -49,7 +49,14 @@ const renderList = ({
   </MostReadList>
 );
 
-const renderLink = ({ dir, service, script, withTimestamp, typography }) => {
+const renderLink = ({
+  dir,
+  service,
+  script,
+  withTimestamp,
+  linkTypography,
+  rankTypography,
+}) => {
   const item = getItem({ service, withTimestamp });
   return (
     <MostReadLink
@@ -58,7 +65,8 @@ const renderLink = ({ dir, service, script, withTimestamp, typography }) => {
       service={service}
       script={script}
       title={item.title}
-      typography={typography}
+      linkTypography={linkTypography}
+      rankTypography={rankTypography}
     >
       {item.timestamp}
     </MostReadLink>
@@ -72,7 +80,7 @@ const renderRank = ({
   listIndex,
   numberOfItems,
   columnLayout,
-  typography,
+  rankTypography,
 }) => (
   <MostReadRank
     service={service}
@@ -81,7 +89,7 @@ const renderRank = ({
     numberOfItems={numberOfItems}
     dir={dir}
     columnlayout={columnLayout}
-    typography={typography}
+    rankTypography={rankTypography}
   />
 );
 
@@ -96,7 +104,7 @@ storiesOf('Components|MostRead/Rank', module)
           script,
           listIndex: number('Number (1 - 10)', 5, listIndexRange),
           numberOfItems: 10,
-          typography: select('Typography', rankTypeSize, rankTypeSize.default),
+          rankTypography: select('Rank Typography', rankTypeSize, 'foolscap'),
         }),
       {
         notes,
@@ -115,7 +123,8 @@ storiesOf('Components|MostRead/Item', module)
         script,
         service: selectedService,
         withTimestamp: boolean('Timestamp', false),
-        typography: select('Typography', linkTypeSize, linkTypeSize.default),
+        linkTypography: select('Link Typography', linkTypeSize, 'greatprimer'),
+        rankTypography: select('Rank Typography', rankTypeSize, 'foolscap'),
       }),
     {
       notes,

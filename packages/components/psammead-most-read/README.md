@@ -4,6 +4,8 @@
 
 The `MostRead` component is designed to display the most read articles given a designated period of time which is dependent on service. The component comprises of a `MostReadList` containing an ordered list of `MostReadItemWrapper`. A `MostReadItemWrapper` is a list item comprised of and a `MostReadLink`, a link to the article, and a `MostReadRank` which is a numerical counter representing the article's ranking.
 
+The `MostReadLink` and `MostReadRank` components also support different typographies, which are used to customise their font size. `MostReadLink` has optional prop which only supports `greatprimer` and `pica`. `MostReadRank` and `MostReadLink` have an optional prop called `rankTypography` which currently only supports the `trafalgar` and `foolscap` typographies. `MostReadLink` needs to know the `rankTypography` to be able to align the link correctly with the rank component.
+
 ## Installation
 
 `npm install @bbc/psammead-most-read`
@@ -118,7 +120,7 @@ import {
 | numberOfItems | number | yes | N/A | `10` |
 | dir | string | no | `"ltr"` | `"ltr"` |
 | columnLayout | string | no | 'multiColumn' | `twoColumn`
-| typography | string | no | 'foolscap' | `'trafalgar'` |
+| rankTypography | string | no | 'foolscap' | `'trafalgar'` |
 
 ### Usage
 
@@ -134,6 +136,7 @@ import { MostReadRank } from '@bbc/psammead-most-read';
   numberOfItems={5}
   dir="ltr"
   columnLayout="twoColumn"
+  rankTypography="trafalgar"
 />;
 ```
 
@@ -150,7 +153,7 @@ import { MostReadRank } from '@bbc/psammead-most-read';
 | title | string | yes | N/A | `"This is a article headline"` |
 | href | string | yes | N/A | `"/bbc.co.uk/news/00000027051997"` |
 | children | node | no | null | `<Timestamp datetime="2019-03-01T14:00+00:00" script={script} padding={false} service={service}>Last updated: 5th November 2016</Timestamp>` |
-| typography | string | no | 'greatprimer' | `'pica'` |
+| linkTypography | string | no | 'greatprimer' | `'pica'` |
 | rankTypography | string | no | 'foolscap' | `'trafalgar'` |
 
 ### Usage
@@ -169,6 +172,8 @@ import Timestamp from '@bbc/psammead-timestamp';
   service="news"
   title="This is a article headline"
   href="/bbc.co.uk/news/00000027051997"
+  linkTypography="pica"
+  rankTypography="trafalgar"
 >
   <Timestamp
     datetime="2019-03-01T14:00+00:00"

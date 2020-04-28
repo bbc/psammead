@@ -58,13 +58,13 @@ const StyledLink = styled.a`
   }
 
   @media (min-width: ${GEL_GROUP_2_SCREEN_WIDTH_MIN}) {
-    ${({ script, typography }) =>
-      script && typography !== 'pica' && getGreatPrimer(script)}
+    ${({ script, linkTypography }) =>
+      script && linkTypography !== 'pica' && getGreatPrimer(script)}
   }
 `;
 
 const getRankAlignSpacing = rankTypography =>
-  rankTypography === 'trafalgar' ? '0.1rem' : '0.375rem';
+  rankTypography === 'trafalgar' ? '0.2rem' : '0.375rem';
 
 const StyledItem = styled.div`
   padding-top: ${({ rankTypography }) => getRankAlignSpacing(rankTypography)};
@@ -88,7 +88,7 @@ export const MostReadLink = ({
   title,
   href,
   children,
-  typography,
+  linkTypography,
   rankTypography,
 }) => (
   <StyledItem dir={dir} rankTypography={rankTypography}>
@@ -96,7 +96,7 @@ export const MostReadLink = ({
       href={href}
       script={script}
       service={service}
-      typography={typography}
+      linkTypography={linkTypography}
     >
       {title}
     </StyledLink>
@@ -111,14 +111,14 @@ MostReadLink.propTypes = {
   title: string.isRequired,
   href: string.isRequired,
   children: node, // this node will be a timestamp container
-  typography: oneOf(['greatprimer', 'pica']),
+  linkTypography: oneOf(['greatprimer', 'pica']),
   rankTypography: oneOf(['foolscap', 'trafalgar']),
 };
 
 MostReadLink.defaultProps = {
   dir: 'ltr',
   children: null,
-  typography: 'greatprimer',
+  linkTypography: 'greatprimer',
   rankTypography: 'foolscap',
 };
 

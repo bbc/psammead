@@ -55,7 +55,7 @@ export const getItemWrapperArray = ({
           numberOfItems={numberOfItems}
           dir={dir}
           columnLayout={columnLayout}
-          typography={rankTypography}
+          rankTypography={rankTypography}
         />
         <MostReadLink
           dir={dir}
@@ -63,7 +63,7 @@ export const getItemWrapperArray = ({
           service={service}
           script={script}
           title={item.title}
-          typography={linkTypography}
+          linkTypography={linkTypography}
           rankTypography={rankTypography}
         >
           {item.timestamp}

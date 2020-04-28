@@ -47,16 +47,16 @@ const columnIncludesDoubleDigits = (props, supportsGrid) =>
 
 // Returns a min width for the rank wrapper depending on if the list contains 10 items
 // and if the numeral is considered medium/small.
-const getRankMinWidth = ({ service, numberOfItems, typography }) => {
+const getRankMinWidth = ({ service, numberOfItems, rankTypography }) => {
   const singleDigitMinWidth = {
-    default: singleDigitDefault(typography),
+    default: singleDigitDefault(rankTypography),
     medium: singleDigitMedium,
     small: singleDigitSmall,
   };
 
   const doubleDigitMinWidth = {
-    default: doubleDigitDefault(typography),
-    medium: doubleDigitMedium(typography),
+    default: doubleDigitDefault(rankTypography),
+    medium: doubleDigitMedium(rankTypography),
     small: doubleDigitSmall,
   };
 
@@ -147,8 +147,8 @@ const MultiColumnWrapper = styled(TwoColumnWrapper)`
 
 const StyledSpan = styled.span`
   ${({ service }) => getSerifLight(service)}
-  ${({ script, typography }) =>
-    script && typography === 'trafalgar'
+  ${({ script, rankTypography }) =>
+    script && rankTypography === 'trafalgar'
       ? getTrafalgar(script)
       : getFoolscap(script)}
   position: relative;
@@ -187,7 +187,7 @@ const MostReadRank = ({
   numberOfItems,
   dir,
   columnLayout,
-  typography,
+  rankTypography,
 }) => {
   const numerals = serviceNumerals(service);
   const rank = numerals[listIndex];
@@ -199,9 +199,13 @@ const MostReadRank = ({
       service={service}
       numberOfItems={numberOfItems}
       dir={dir}
-      typography={typography}
+      rankTypography={rankTypography}
     >
-      <StyledSpan service={service} script={script} typography={typography}>
+      <StyledSpan
+        service={service}
+        script={script}
+        rankTypography={rankTypography}
+      >
         {rank}
       </StyledSpan>
     </RankWrapper>
@@ -215,13 +219,13 @@ MostReadRank.propTypes = {
   numberOfItems: number.isRequired,
   dir: oneOf(['rtl', 'ltr']),
   columnLayout: oneOf(['oneColumn', 'twoColumn', 'multiColumn']),
-  typography: oneOf(['foolscap', 'trafalgar']),
+  rankTypography: oneOf(['foolscap', 'trafalgar']),
 };
 
 MostReadRank.defaultProps = {
   dir: 'ltr',
   columnLayout: 'multiColumn',
-  typography: 'foolscap',
+  rankTypography: 'foolscap',
 };
 
 export default MostReadRank;
