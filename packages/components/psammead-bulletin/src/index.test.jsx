@@ -5,7 +5,14 @@ import Image from '@bbc/psammead-image';
 import Bulletin from '.';
 
 /* eslint-disable react/prop-types */
-const BulletinComponent = ({ script, service, isLive, mediaType, ctaText }) => {
+const BulletinComponent = ({
+  script,
+  service,
+  isLive,
+  mediaType,
+  ctaText,
+  lang = null,
+}) => {
   const summaryText = 'This is the summary text';
   const headlineText = 'This is the headline';
   const ctaLink = 'https://bbc.co.uk';
@@ -31,6 +38,7 @@ const BulletinComponent = ({ script, service, isLive, mediaType, ctaText }) => {
       ctaText={playCtaText}
       isLive={isLive}
       offScreenText={offScreenText}
+      lang={lang}
     />
   );
 };
@@ -47,22 +55,13 @@ describe('Bulletin', () => {
   );
 
   shouldMatchSnapshot(
-    'should render audio correctly in arabic',
+    'should render audio correctly with lang prop passed in',
     <BulletinComponent
       script={arabic}
       service="arabic"
       mediaType="audio"
-      ctaText="استمع"
-    />,
-  );
-
-  shouldMatchSnapshot(
-    'should render video correctly',
-    <BulletinComponent
-      script={latin}
-      service="news"
-      mediaType="video"
-      ctaText="Watch"
+      ctaText="Listen"
+      lang="en-GB"
     />,
   );
 

@@ -3,7 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
-| 3.1.0 | [PR#3430](https://github.com/bbc/psammead/pull/3430) Remove `lang` prop from bulletin |
+| 3.1.0 | [PR#3430](https://github.com/bbc/psammead/pull/3430) Change default `lang` prop to `null` |
 | 3.0.5 | [PR#3398](https://github.com/bbc/psammead/pull/3398) Talos - Bump Dependencies - @bbc/psammead-story-promo |
 | 3.0.4 | [PR#3397](https://github.com/bbc/psammead/pull/3397) Talos - Bump Dependencies - @bbc/psammead-styles |
 | 3.0.3 | [PR#3381](https://github.com/bbc/psammead/pull/3381) Talos - Bump Dependencies - @bbc/psammead-assets |

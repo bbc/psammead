@@ -180,12 +180,12 @@ const Bulletin = ({
   isLive,
   liveText,
   offScreenText,
+  lang,
 }) => {
   const isAudio = mediaType === 'audio';
   const bulletinType = isAudio ? 'radio' : 'tv';
   const BulletinWrapper = isAudio ? RadioBulletinWrapper : TVBulletinWrapper;
-  const ctaTextIsEnglish = ctaText === 'Watch' || ctaText === 'Listen';
-  const langProp = ctaTextIsEnglish ? { lang: 'en-GB' } : {};
+  const hiddenTextProps = lang ? { lang } : {};
 
   return (
     <BulletinWrapper>
@@ -214,7 +214,7 @@ const Bulletin = ({
               // eslint-disable-next-line jsx-a11y/aria-role
               <span role="text">
                 {offScreenText && (
-                  <VisuallyHiddenText {...langProp}>
+                  <VisuallyHiddenText {...hiddenTextProps}>
                     {`${offScreenText}, `}
                   </VisuallyHiddenText>
                 )}
@@ -259,6 +259,7 @@ Bulletin.propTypes = {
   isLive: bool,
   liveText: string,
   offScreenText: string.isRequired,
+  lang: string,
 };
 
 Bulletin.defaultProps = {
@@ -266,6 +267,7 @@ Bulletin.defaultProps = {
   image: null,
   isLive: false,
   liveText: 'LIVE',
+  lang: null,
 };
 
 export default Bulletin;
