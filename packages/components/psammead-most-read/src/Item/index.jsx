@@ -65,12 +65,14 @@ const StyledLink = styled.a`
     }`}
 `;
 
-const getRankAlignSpacing = size => (size === 'small' ? '0.2rem' : '0.375rem');
+const getRankPaddingTop = size => (size === 'small' ? '0.2rem' : '0.375rem');
+const getRankPaddingStart = size =>
+  size === 'small' ? GEL_SPACING : GEL_SPACING_DBL;
 
 const StyledItem = styled.div`
-  padding-top: ${({ size }) => getRankAlignSpacing(size)};
+  padding-top: ${({ size }) => getRankPaddingTop(size)};
   padding-bottom: ${GEL_SPACING_TRPL};
-  ${paddingStart}: ${GEL_SPACING_DBL};
+  ${paddingStart}: ${({ size }) => getRankPaddingStart(size)};
   ${paddingEnd}: ${GEL_SPACING_DBL};
 
   @supports (${grid}) {
