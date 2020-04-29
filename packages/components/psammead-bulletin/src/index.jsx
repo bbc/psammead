@@ -266,7 +266,7 @@ Bulletin.defaultProps = {
   image: null,
   isLive: false,
   liveText: 'LIVE',
-  lang: 'en-GB',
+  lang: null,
 };
 
 export default Bulletin;
