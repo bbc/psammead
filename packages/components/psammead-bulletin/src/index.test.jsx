@@ -106,7 +106,7 @@ describe('Bulletin', () => {
     <BulletinComponent
       script={latin}
       service="news"
-      mediaType="radio"
+      mediaType="audio"
       ctaText="Listen"
       withSummary={false}
     />,
