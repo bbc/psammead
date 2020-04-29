@@ -1542,7 +1542,6 @@ exports[`Bulletin should render radio bulletin without summary correctly 1`] = `
         >
           <span
             class="c6"
-            lang="en-GB"
           >
             Listen, 
           </span>
