@@ -1,6 +1,6 @@
 import React from 'react';
 import { shouldMatchSnapshot } from '@bbc/psammead-test-helpers';
-import { latin } from '@bbc/gel-foundations/scripts';
+import { latin, arabic } from '@bbc/gel-foundations/scripts';
 import Image from '@bbc/psammead-image';
 import Bulletin from '.';
 
@@ -12,6 +12,8 @@ const BulletinComponent = ({
   mediaType,
   ctaText,
   withSummary = true,
+  dir = 'ltr',
+  lang = null,
 }) => {
   const summaryText = 'This is the summary text';
   const headlineText = 'This is the headline';
@@ -38,6 +40,8 @@ const BulletinComponent = ({
       ctaText={playCtaText}
       isLive={isLive}
       offScreenText={offScreenText}
+      dir={dir}
+      lang={lang}
     />
   );
 };
@@ -50,6 +54,18 @@ describe('Bulletin', () => {
       service="news"
       mediaType="audio"
       ctaText="Listen"
+    />,
+  );
+
+  shouldMatchSnapshot(
+    'should render audio correctly with lang prop passed in',
+    <BulletinComponent
+      script={arabic}
+      service="arabic"
+      mediaType="audio"
+      ctaText="Listen"
+      dir="rtl"
+      lang="en-GB"
     />,
   );
 
