@@ -23,12 +23,12 @@ npm install @bbc/psammead-radio-schedule --save
 <!-- prettier-ignore -->
 | Argument | Type | Required | Default | Example |
 | -------- | ---- | -------- | ------- | ------- |
-| schedules | array | yes | N/A | `[{ id: '1', state: 'live', stateLabel: 'Live', startTime: '1566914061212', link: 'www.bbc.co.uk', brandTitle: 'This is a brand title', episodeTitle: 'This is an episode title', summary: 'This is a summary', duration: '45:00', durationLabel: 'Duration'}]` |
+| schedules | array | yes | N/A | `[{ id: '1', state: 'live', stateLabel: 'Live', startTime: '1566914061212', link: 'www.bbc.co.uk', brandTitle: 'This is a brand title', episodeTitle: 'This is an episode title', summary: 'This is a summary', duration: '45:00', durationLabel: 'Duration %duration%'}]` |
 | service | string | yes | N/A | `'news'` |
 | script | object | yes | N/A | `{ canon: { groupA: { fontSize: '28', lineHeight: '32',}, groupB: { fontSize: '32', lineHeight: '36', }, groupD: { fontSize: '44', lineHeight: '48', }, }, trafalgar: { groupA: { fontSize: '20', lineHeight: '24', }, groupB: { fontSize: '24', lineHeight: '28', }, groupD: { fontSize: '32', lineHeight: '36', }, }, }` |
 | locale | string | no | N/A | `'en-gb'` |
 | timezone | string | no | N/A | `'Europe/London'` |
-| durationLabel | string | yes | N/A | `'duration'` |
+| durationLabel | string | yes | N/A | `'Duration %duration%'` |
 | liveLabel | string | yes | N/A | `'LIVE'` |
 | nextLabel | string | yes | N/A | `'NEXT'` |
 | dir | string | no | `"ltr"` | `"rtl"` |
@@ -51,7 +51,7 @@ const schedules = [
     brandTitle: 'This is a brand title',
     summary: 'This is a summary',
     duration: '45:00',
-    durationLabel: 'Duration',
+    durationLabel: 'Duration %duration%',
   },
 ];
 
@@ -77,7 +77,7 @@ const schedules = [
 | brandTitle | string | yes | N/A | `'This is a brand title'` |
 | summary | string | no | null | `'This is a summary'` |
 | duration | string | yes | N/A | `'PT30M'` |
-| durationLabel | string | yes | N/A | `'duration'` |
+| durationLabel | string | yes | N/A | `'Duration %duration%'` |
 | state | string | yes | N/A | `'live'` |
 | liveLabel | string | yes | N/A | `'LIVE'` |
 | nextLabel | string | yes | N/A | `'NEXT'` |
@@ -106,7 +106,7 @@ import ProgramCard from '@bbc/psammead-radio-schedule/ProgramCard';
   brandTitle="This is a brand title"
   summary="Could a computer ever create better art than a human?"
   duration="PT30M"
-  durationLabel="duration"
+  durationLabel="Duration %duration%"
   state="live"
   liveLabel="LIVE"
   nextLabel="NEXT"
