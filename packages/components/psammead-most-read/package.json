@@ -1,6 +1,6 @@
 {
   "name": "@bbc/psammead-most-read",
-  "version": "4.0.6",
+  "version": "4.1.0",
   "description": "A component for the most read item",
   "main": "dist/index.js",
   "module": "esm/index.js",

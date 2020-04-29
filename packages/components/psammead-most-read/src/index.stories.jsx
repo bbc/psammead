@@ -18,6 +18,7 @@ const listIndexRange = {
 };
 
 const pageTypes = ['oneColumn', 'twoColumn', 'multiColumn'];
+const sizes = ['default', 'small'];
 
 const renderList = ({
   numberOfItems,
@@ -26,6 +27,7 @@ const renderList = ({
   script,
   withTimestamp,
   columnLayout,
+  size,
 }) => (
   <MostReadList
     numberOfItems={numberOfItems}
@@ -39,11 +41,12 @@ const renderList = ({
       dir,
       withTimestamp,
       columnLayout,
+      size,
     }).map(item => item)}
   </MostReadList>
 );
 
-const renderLink = ({ dir, service, script, withTimestamp }) => {
+const renderLink = ({ dir, service, script, withTimestamp, size }) => {
   const item = getItem({ service, withTimestamp });
   return (
     <MostReadLink
@@ -52,6 +55,7 @@ const renderLink = ({ dir, service, script, withTimestamp }) => {
       service={service}
       script={script}
       title={item.title}
+      size={size}
     >
       {item.timestamp}
     </MostReadLink>
@@ -65,6 +69,7 @@ const renderRank = ({
   listIndex,
   numberOfItems,
   columnLayout,
+  size,
 }) => (
   <MostReadRank
     service={service}
@@ -73,6 +78,7 @@ const renderRank = ({
     numberOfItems={numberOfItems}
     dir={dir}
     columnlayout={columnLayout}
+    size={size}
   />
 );
 
@@ -87,6 +93,7 @@ storiesOf('Components|MostRead/Rank', module)
           script,
           listIndex: number('Number (1 - 10)', 5, listIndexRange),
           numberOfItems: 10,
+          size: select('Size', sizes, 'default'),
         }),
       {
         notes,
@@ -105,6 +112,7 @@ storiesOf('Components|MostRead/Item', module)
         script,
         service: selectedService,
         withTimestamp: boolean('Timestamp', false),
+        size: select('Size', sizes, 'default'),
       }),
     {
       notes,
@@ -124,6 +132,7 @@ storiesOf('Components|MostRead/List', module)
           service: selectedService,
           dir,
           script,
+          size: select('Size', sizes, 'default'),
         }),
       ),
     {
