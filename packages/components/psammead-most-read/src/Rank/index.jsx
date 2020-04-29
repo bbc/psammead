@@ -104,7 +104,7 @@ const OneColumnWrapper = styled.div`
     min-width: ${props =>
       listHasDoubleDigits(props.numberOfItems)
         ? getRankMinWidth(props).group3WithOneColumn
-        : '1rem'};
+        : getRankMinWidth(props).group3};
   }
 `;
 
@@ -131,7 +131,9 @@ const MultiColumnWrapper = styled(TwoColumnWrapper)`
   /* 5 columns of items at viewport 1280px and above */
   @media (min-width: ${GEL_GROUP_5_SCREEN_WIDTH_MIN}) {
     min-width: ${props =>
-      listHasDoubleDigits(props.numberOfItems) ? isFiveOrTen(props) : '2rem'};
+      listHasDoubleDigits(props.numberOfItems)
+        ? isFiveOrTen(props)
+        : getRankMinWidth(props).group5};
   }
 `;
 

@@ -33,9 +33,10 @@ export const singleDigitDefault = size => ({
     small: GEL_SPACING_DBL,
   }[size],
   group3: {
-    default: GEL_SPACING_TRPL,
+    default: GEL_SPACING_QUAD,
     small: GEL_SPACING_DBL,
   }[size],
+  group5: GEL_SPACING_QUAD,
 });
 
 // If numberOfItems >= 10, extra spacing needs to be accounted for.
@@ -68,6 +69,7 @@ export const singleDigitMedium = {
   group1: GEL_SPACING_DBL,
   group2: GEL_SPACING_DBL,
   group3: GEL_SPACING_TRPL,
+  group5: GEL_SPACING_TRPL,
 };
 
 export const doubleDigitMedium = size => ({
@@ -99,6 +101,7 @@ export const singleDigitSmall = {
   group1: GEL_SPACING_DBL,
   group2: GEL_SPACING_DBL,
   group3: GEL_SPACING_TRPL,
+  group5: GEL_SPACING_TRPL,
 };
 
 export const doubleDigitSmall = {
