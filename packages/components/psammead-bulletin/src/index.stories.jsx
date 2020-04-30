@@ -18,6 +18,7 @@ const BulletinComponent = ({
   const ctaLink = 'https://bbc.co.uk';
 
   const isLive = boolean('Live', false);
+  const withSummary = boolean('With summary', true);
   const ctaText = mediaType === 'audio' ? 'Listen' : 'Watch';
   const offScreenText = isLive ? `${ctaText} Live` : ctaText;
 
@@ -36,7 +37,7 @@ const BulletinComponent = ({
       image={hasImage && image}
       mediaType={mediaType}
       headlineText={text}
-      summaryText={text}
+      summaryText={withSummary ? text : null}
       ctaLink={ctaLink}
       ctaText={ctaText}
       isLive={isLive}
