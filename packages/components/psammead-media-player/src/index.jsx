@@ -31,19 +31,24 @@ const StyledAudioContainer = styled.div`
   }
 `;
 
+const addAllowAdvertisingUrlParam = ({ src, allowAdvertising }) =>
+  `${src}&allowAdvertising=${allowAdvertising ? 1 : 0}`;
+
 const CanonicalMediaPlayerComponent = ({
   showPlaceholder,
   placeholderSrc,
   placeholderSrcset,
   portrait,
-  src,
+  src: _src,
   title,
   skin,
   service,
   mediaInfo,
   noJsClassName,
   noJsMessage,
+  allowAdvertising,
 }) => {
+  const src = addAllowAdvertisingUrlParam({ src: _src, allowAdvertising });
   const [placeholderActive, setPlaceholderActive] = useState(showPlaceholder);
   const handlePlaceholderClick = () => setPlaceholderActive(false);
 
@@ -86,12 +91,14 @@ export const AmpMediaPlayer = ({
   placeholderSrcset,
   placeholderSrc,
   portrait,
-  src,
+  src: _src,
   title,
   skin,
   noJsMessage,
   service,
+  allowAdvertising,
 }) => {
+  const src = addAllowAdvertisingUrlParam({ src: _src, allowAdvertising });
   const StyledContainer =
     skin === 'audio' ? StyledAudioContainer : StyledVideoContainer;
 
@@ -132,6 +139,7 @@ CanonicalMediaPlayerComponent.propTypes = {
     type: oneOf(['video', 'audio']),
     guidanceMessage: string,
   }),
+  allowAdvertising: bool,
 };
 
 CanonicalMediaPlayerComponent.defaultProps = {
@@ -142,6 +150,7 @@ CanonicalMediaPlayerComponent.defaultProps = {
   placeholderSrcset: null,
   noJsClassName: null,
   mediaInfo: {},
+  allowAdvertising: false,
 };
 
 MediaMessage.propTypes = {
@@ -165,10 +174,12 @@ AmpMediaPlayer.propTypes = {
   skin: oneOf(['classic', 'audio']),
   noJsMessage: string.isRequired,
   service: string.isRequired,
+  allowAdvertising: bool,
 };
 
 AmpMediaPlayer.defaultProps = {
   portrait: false,
   skin: 'classic',
   placeholderSrcset: null,
+  allowAdvertising: false,
 };
