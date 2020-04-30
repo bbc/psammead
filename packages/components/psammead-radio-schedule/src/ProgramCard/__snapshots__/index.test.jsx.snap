@@ -1103,13 +1103,13 @@ exports[`ProgramCard should render correctly in RTL 1`] = `
             class="c4"
           >
             , 
-            ١٣:٥٤
+            13:54
             , 
           </span>
           <span
             class="c5 c6"
           >
-            ٢٧ أغسطس ٢٠١٩
+            27 أغسطس/ آب 2019
           </span>
         </span>
       </a>
@@ -1150,13 +1150,13 @@ exports[`ProgramCard should render correctly in RTL 1`] = `
       <span
         class="c4"
       >
-         المدة الزمنية ٣٠،٠٠ 
+         المدة الزمنية 30،00 
       </span>
       <span
         aria-hidden="true"
         class=""
       >
-        ٣٠:٠٠
+        30:00
       </span>
     </time>
   </div>
