@@ -57,17 +57,22 @@ const StyledLink = styled.a`
     z-index: 1;
   }
 
-  @media (min-width: ${GEL_GROUP_2_SCREEN_WIDTH_MIN}) {
-    ${({ script }) => script && getGreatPrimer(script)};
-  }
+  ${({ script, size }) =>
+    script &&
+    size !== 'small' &&
+    `@media (min-width: ${GEL_GROUP_2_SCREEN_WIDTH_MIN}) {
+      ${getGreatPrimer(script)}
+    }`}
 `;
 
-const ALIGN_RANK_TO_LINK_SPACING = '0.375rem';
+const getRankPaddingTop = size => (size === 'small' ? '0.2rem' : '0.375rem');
+const getRankPaddingStart = size =>
+  size === 'small' ? GEL_SPACING : GEL_SPACING_DBL;
 
 const StyledItem = styled.div`
-  padding-top: ${ALIGN_RANK_TO_LINK_SPACING};
+  padding-top: ${({ size }) => getRankPaddingTop(size)};
   padding-bottom: ${GEL_SPACING_TRPL};
-  ${paddingStart}: ${GEL_SPACING_DBL};
+  ${paddingStart}: ${({ size }) => getRankPaddingStart(size)};
   ${paddingEnd}: ${GEL_SPACING_DBL};
 
   @supports (${grid}) {
@@ -86,9 +91,10 @@ export const MostReadLink = ({
   title,
   href,
   children,
+  size,
 }) => (
-  <StyledItem dir={dir}>
-    <StyledLink href={href} script={script} service={service}>
+  <StyledItem dir={dir} size={size}>
+    <StyledLink href={href} script={script} service={service} size={size}>
       {title}
     </StyledLink>
     {children && <TimestampWrapper>{children}</TimestampWrapper>}
@@ -102,11 +108,13 @@ MostReadLink.propTypes = {
   title: string.isRequired,
   href: string.isRequired,
   children: node, // this node will be a timestamp container
+  size: oneOf(['default', 'small']),
 };
 
 MostReadLink.defaultProps = {
   dir: 'ltr',
   children: null,
+  size: 'default',
 };
 
 const ItemWrapper = styled.div`
