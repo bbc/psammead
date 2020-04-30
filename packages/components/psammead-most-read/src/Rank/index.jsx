@@ -1,7 +1,7 @@
 import React from 'react';
 import { shape, string, oneOf, number } from 'prop-types';
 import styled from 'styled-components';
-import { getFoolscap } from '@bbc/gel-foundations/typography';
+import { getFoolscap, getTrafalgar } from '@bbc/gel-foundations/typography';
 import {
   Burmese,
   Bengali,
@@ -47,16 +47,16 @@ const columnIncludesDoubleDigits = (props, supportsGrid) =>
 
 // Returns a min width for the rank wrapper depending on if the list contains 10 items
 // and if the numeral is considered medium/small.
-const getRankMinWidth = ({ service, numberOfItems }) => {
+const getRankMinWidth = ({ service, numberOfItems, size }) => {
   const singleDigitMinWidth = {
-    default: singleDigitDefault,
+    default: singleDigitDefault(size),
     medium: singleDigitMedium,
     small: singleDigitSmall,
   };
 
   const doubleDigitMinWidth = {
-    default: doubleDigitDefault,
-    medium: doubleDigitMedium,
+    default: doubleDigitDefault(size),
+    medium: doubleDigitMedium(size),
     small: doubleDigitSmall,
   };
 
@@ -104,17 +104,7 @@ const OneColumnWrapper = styled.div`
     min-width: ${props =>
       listHasDoubleDigits(props.numberOfItems)
         ? getRankMinWidth(props).group3WithOneColumn
-        : 'auto'};
-  }
-
-  /* different number order for when css grid is supported  */
-  @supports (${grid}) {
-    @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
-      min-width: ${props =>
-        listHasDoubleDigits(props.numberOfItems)
-          ? getRankMinWidth(props).group3WithOneColumn
-          : 'auto'};
-    }
+        : getRankMinWidth(props).group3};
   }
 `;
 
@@ -141,13 +131,18 @@ const MultiColumnWrapper = styled(TwoColumnWrapper)`
   /* 5 columns of items at viewport 1280px and above */
   @media (min-width: ${GEL_GROUP_5_SCREEN_WIDTH_MIN}) {
     min-width: ${props =>
-      listHasDoubleDigits(props.numberOfItems) ? isFiveOrTen(props) : 'auto'};
+      listHasDoubleDigits(props.numberOfItems)
+        ? isFiveOrTen(props)
+        : getRankMinWidth(props).group5};
   }
 `;
 
 const StyledSpan = styled.span`
   ${({ service }) => getSerifLight(service)}
-  ${({ script }) => script && getFoolscap(script)};
+  ${({ script, size }) =>
+    script && size === 'small'
+      ? getTrafalgar(script)
+      : getFoolscap(script)}
   position: relative;
   color: ${C_POSTBOX};
   margin: 0; /* Reset */
@@ -184,6 +179,7 @@ const MostReadRank = ({
   numberOfItems,
   dir,
   columnLayout,
+  size,
 }) => {
   const numerals = serviceNumerals(service);
   const rank = numerals[listIndex];
@@ -195,8 +191,9 @@ const MostReadRank = ({
       service={service}
       numberOfItems={numberOfItems}
       dir={dir}
+      size={size}
     >
-      <StyledSpan service={service} script={script}>
+      <StyledSpan service={service} script={script} size={size}>
         {rank}
       </StyledSpan>
     </RankWrapper>
@@ -210,11 +207,13 @@ MostReadRank.propTypes = {
   numberOfItems: number.isRequired,
   dir: oneOf(['rtl', 'ltr']),
   columnLayout: oneOf(['oneColumn', 'twoColumn', 'multiColumn']),
+  size: oneOf(['default', 'small']),
 };
 
 MostReadRank.defaultProps = {
   dir: 'ltr',
   columnLayout: 'multiColumn',
+  size: 'default',
 };
 
 export default MostReadRank;

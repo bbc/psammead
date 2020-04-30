@@ -4,6 +4,8 @@
 
 The `MostRead` component is designed to display the most read articles given a designated period of time which is dependent on service. The component comprises of a `MostReadList` containing an ordered list of `MostReadItemWrapper`. A `MostReadItemWrapper` is a list item comprised of and a `MostReadLink`, a link to the article, and a `MostReadRank` which is a numerical counter representing the article's ranking.
 
+The `MostReadLink` and `MostReadRank` components also support a size prop. This prop currently only accepts a `default` and `small` size. Internally these values change the CSS used for sizing parts of the components. This will allow more sizes to be added in the future.
+
 ## Installation
 
 `npm install @bbc/psammead-most-read`
@@ -118,6 +120,7 @@ import {
 | numberOfItems | number | yes | N/A | `10` |
 | dir | string | no | `"ltr"` | `"ltr"` |
 | columnLayout | string | no | 'multiColumn' | `twoColumn`
+| size | string | no | 'default' | `'small'` |
 
 ### Usage
 
@@ -133,6 +136,7 @@ import { MostReadRank } from '@bbc/psammead-most-read';
   numberOfItems={5}
   dir="ltr"
   columnLayout="twoColumn"
+  size="small"
 />;
 ```
 
@@ -149,6 +153,7 @@ import { MostReadRank } from '@bbc/psammead-most-read';
 | title | string | yes | N/A | `"This is a article headline"` |
 | href | string | yes | N/A | `"/bbc.co.uk/news/00000027051997"` |
 | children | node | no | null | `<Timestamp datetime="2019-03-01T14:00+00:00" script={script} padding={false} service={service}>Last updated: 5th November 2016</Timestamp>` |
+| size | string | no | 'default' | `'small'` |
 
 ### Usage
 
@@ -166,6 +171,7 @@ import Timestamp from '@bbc/psammead-timestamp';
   service="news"
   title="This is a article headline"
   href="/bbc.co.uk/news/00000027051997"
+  size="small"
 >
   <Timestamp
     datetime="2019-03-01T14:00+00:00"
@@ -180,7 +186,7 @@ import Timestamp from '@bbc/psammead-timestamp';
 
 ### When to use these components
 
-These components are intended to be used on `article` and `front` pages.
+These components are intended to be used on `article`, `front`, `story` and `mostRead` pages.
 
 ### Accessibility notes
 
