@@ -11,6 +11,7 @@ const BulletinComponent = ({
   isLive,
   mediaType,
   ctaText,
+  withSummary = true,
   dir = 'ltr',
   lang = null,
 }) => {
@@ -34,7 +35,7 @@ const BulletinComponent = ({
       image={image}
       mediaType={mediaType}
       headlineText={headlineText}
-      summaryText={summaryText}
+      summaryText={withSummary ? summaryText : null}
       ctaLink={ctaLink}
       ctaText={playCtaText}
       isLive={isLive}
@@ -97,6 +98,17 @@ describe('Bulletin', () => {
       mediaType="video"
       ctaText="Watch"
       isLive
+    />,
+  );
+
+  shouldMatchSnapshot(
+    'should render radio bulletin without summary correctly',
+    <BulletinComponent
+      script={latin}
+      service="news"
+      mediaType="audio"
+      ctaText="Listen"
+      withSummary={false}
     />,
   );
 });
