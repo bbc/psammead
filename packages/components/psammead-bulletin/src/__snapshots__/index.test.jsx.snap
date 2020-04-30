@@ -33,6 +33,7 @@ exports[`Bulletin should render audio correctly 1`] = `
   color: #222222;
   -webkit-text-decoration: none;
   text-decoration: none;
+  overflow-wrap: break-word;
 }
 
 .c5:before {
@@ -352,6 +353,7 @@ exports[`Bulletin should render audio correctly with lang prop passed in 1`] = `
   color: #222222;
   -webkit-text-decoration: none;
   text-decoration: none;
+  overflow-wrap: break-word;
 }
 
 .c5:before {
@@ -681,6 +683,7 @@ exports[`Bulletin should render live audio correctly 1`] = `
   color: #222222;
   -webkit-text-decoration: none;
   text-decoration: none;
+  overflow-wrap: break-word;
 }
 
 .c5:before {
@@ -1015,6 +1018,7 @@ exports[`Bulletin should render live video correctly 1`] = `
   color: #222222;
   -webkit-text-decoration: none;
   text-decoration: none;
+  overflow-wrap: break-word;
 }
 
 .c5:before {
@@ -1340,6 +1344,7 @@ exports[`Bulletin should render radio bulletin without summary correctly 1`] = `
   color: #222222;
   -webkit-text-decoration: none;
   text-decoration: none;
+  overflow-wrap: break-word;
 }
 
 .c5:before {
@@ -1622,6 +1627,7 @@ exports[`Bulletin should render video correctly 1`] = `
   color: #222222;
   -webkit-text-decoration: none;
   text-decoration: none;
+  overflow-wrap: break-word;
 }
 
 .c5:before {
