@@ -1,6 +1,6 @@
-import styled, { css } from 'styled-components';
+import styled from 'styled-components';
 
-export const VisuallyHiddenTextStyle = css`
+export const visuallyHiddenTextStyle = `
   clip-path: inset(100%);
   clip: rect(1px, 1px, 1px, 1px);
   height: 1px;
@@ -11,7 +11,7 @@ export const VisuallyHiddenTextStyle = css`
 `;
 
 const VisuallyHiddenText = styled.span`
-  ${VisuallyHiddenTextStyle};
+  ${visuallyHiddenTextStyle};
 `;
 
 export default VisuallyHiddenText;
