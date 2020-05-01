@@ -1,6 +1,6 @@
 import { formatDuration } from '@bbc/psammead-timestamp-container/utilities';
 
-const getDurationFormat = (duration, separator = ':') => {
+const getDurationFormat = (duration = '', separator = ':') => {
   const timeSections = ['mm', 'ss'];
   if (duration.includes('H')) {
     timeSections.unshift('h');
@@ -8,7 +8,7 @@ const getDurationFormat = (duration, separator = ':') => {
   return timeSections.join(separator);
 };
 
-const durationDictionary = ({ duration, separator = ',', locale }) => ({
+const durationDictionary = ({ duration = '', separator = ',', locale }) => ({
   '%duration%': formatDuration({
     duration,
     format: getDurationFormat(duration, separator),

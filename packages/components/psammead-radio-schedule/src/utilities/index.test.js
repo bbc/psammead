@@ -37,14 +37,12 @@ describe('durationDictionary', () => {
       ),
     ).toEqual('Duration 00,00');
   });
-  it('does not create a valid dictionary if duration is not passed in at all', () => {
-    expect(() => {
+  it('creates a valid duration dictionary but uses empty string as duration fallback', () => {
+    expect(
       detokenise(
         'Duration %duration%',
-        durationDictionary({
-          locale: 'en-gb',
-        }),
-      );
-    }).toThrow("Cannot read property 'includes' of undefined");
+        durationDictionary({ locale: 'en-gb' }),
+      ),
+    ).toEqual('Duration 00,00');
   });
 });
