@@ -69,6 +69,7 @@ exports[`RadioSchedule should render ltr radio schedules correctly 1`] = `
   color: #222222;
   -webkit-text-decoration: none;
   text-decoration: none;
+  overflow-wrap: break-word;
 }
 
 .c13:before {
@@ -1183,6 +1184,7 @@ exports[`RadioSchedule should render rtl radio schedules correctly 1`] = `
   color: #222222;
   -webkit-text-decoration: none;
   text-decoration: none;
+  overflow-wrap: break-word;
 }
 
 .c13:before {
