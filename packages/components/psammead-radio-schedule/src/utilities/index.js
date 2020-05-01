@@ -1,6 +1,6 @@
 import { formatDuration } from '@bbc/psammead-timestamp-container/utilities';
 
-const getDurationFormat = (duration = '', separator = ':') => {
+const getDurationFormat = (duration, separator) => {
   const timeSections = ['mm', 'ss'];
   if (duration.includes('H')) {
     timeSections.unshift('h');
