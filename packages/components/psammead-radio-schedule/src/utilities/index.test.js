@@ -29,4 +29,22 @@ describe('durationDictionary', () => {
       ),
     ).toEqual('Duration 1:30:00');
   });
+  it('creates a valid duration dictionary but has an invalid string passed in for duration', () => {
+    expect(
+      detokenise(
+        'Duration %duration%',
+        durationDictionary({ duration: 'asf98fd0gji3', locale: 'en-gb' }),
+      ),
+    ).toEqual('Duration 00,00');
+  });
+  it('does not create a valid dictionary if duration is not passed in at all', () => {
+    expect(() => {
+      detokenise(
+        'Duration %duration%',
+        durationDictionary({
+          locale: 'en-gb',
+        }),
+      );
+    }).toThrow("Cannot read property 'includes' of undefined");
+  });
 });
