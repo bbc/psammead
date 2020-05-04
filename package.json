@@ -137,7 +137,7 @@
     "request": "^2.88.2",
     "semver": "^7.3.2",
     "shelljs": "^0.8.4",
-    "storybook-chromatic": "^3.5.5",
+    "storybook-chromatic": "^4.0.2",
     "storybook-readme": "^5.0.8",
     "strip-ansi": "^6.0.0",
     "stylelint": "^13.3.3",
