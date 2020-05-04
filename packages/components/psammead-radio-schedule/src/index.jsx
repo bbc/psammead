@@ -42,16 +42,9 @@ const renderSchedule = ({
   program,
   nextLabel,
   liveLabel,
+  durationLabel,
 }) => {
-  const {
-    state,
-    startTime,
-    link,
-    brandTitle,
-    summary,
-    duration,
-    durationLabel,
-  } = program;
+  const { state, startTime, link, brandTitle, summary, duration } = program;
 
   return (
     <>
