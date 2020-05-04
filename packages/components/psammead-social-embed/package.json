@@ -1,6 +1,6 @@
 {
   "name": "@bbc/psammead-social-embed",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "main": "dist/index.js",
   "module": "esm/index.js",
   "sideEffects": false,
