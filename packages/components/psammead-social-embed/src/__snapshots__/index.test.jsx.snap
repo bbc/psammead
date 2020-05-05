@@ -855,6 +855,12 @@ exports[`CanonicalSocialEmbed should render correctly for Instagram 1`] = `
   justify-content: center;
 }
 
+.c2 .instagram-media {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+  min-width: auto !important;
+}
+
 @media (min-width:20rem) and (max-width:37.4375rem) {
   .c1 {
     line-height: 1.125rem;
@@ -1136,6 +1142,11 @@ exports[`CanonicalSocialEmbed should render correctly for Twitter 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
+}
+
+.c2 .twitter-tweet {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
