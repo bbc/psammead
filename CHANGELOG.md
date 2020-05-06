@@ -3,6 +3,11 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 2.0.144 | [PR#3455](https://github.com/bbc/psammead/pull/3455) Dependency updates |
+| 2.0.143 | [PR#3456](https://github.com/bbc/psammead/pull/3456) Talos - Bump Dependencies - @bbc/psammead-radio-schedule |
+| 2.0.142 | [PR#3451](https://github.com/bbc/psammead/pull/3451) Talos - Bump Dependencies - @bbc/psammead-radio-schedule |
+| 2.0.141 | [PR#3408](https://github.com/bbc/psammead/pull/3408) Include @bbc/psammead-detokeniser in devDependencies |
+| 2.0.140 | [PR#3443](https://github.com/bbc/psammead/pull/3443) Talos - Bump Dependencies - @bbc/psammead-brand, @bbc/psammead-bulletin, @bbc/psammead-navigation, @bbc/psammead-radio-schedule |
 | 2.0.139 | [PR#3427](https://github.com/bbc/psammead/pull/3427) Dependency updates |
 | 2.0.138 | [PR#3442](https://github.com/bbc/psammead/pull/3442) Add links to Code Reviews guide |
 | 2.0.137 | [PR#3414](https://github.com/bbc/psammead/pull/3414) Talos - Bump Dependencies - @bbc/psammead-calendars, @bbc/psammead-timestamp-container |

@@ -3,9 +3,11 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 3.0.1 | [PR#3454](https://github.com/bbc/psammead/pull/3454) Update radio schedule props |
+| 3.0.0 | [PR#3408](https://github.com/bbc/psammead/pull/3408) Use detokenizer to construct duration label |
 | 2.0.2 | [PR#3427](https://github.com/bbc/psammead/pull/3427) Updating tests with dependency bump |
 | 2.0.1 | [PR#3414](https://github.com/bbc/psammead/pull/3414) Talos - Bump Dependencies - @bbc/psammead-timestamp-container |
-| 2.0.0 | [PR#3377](https://github.com/bbc/psammead/pull/3377) Remove episodeTitle prop. In ProgramCard, generate episodeTitle with moment using startTime. |
+| 2.0.0 | [PR#3377](https://github.com/bbc/psammead/pull/3377) Remove episodeTitle prop. In ProgramCard, generate episodeTitle with moment using startTime |
 | 1.0.8 | [PR#3400](https://github.com/bbc/psammead/pull/3400) Talos - Bump Dependencies - @bbc/psammead-timestamp-container |
 | 1.0.7 | [PR#3398](https://github.com/bbc/psammead/pull/3398) Talos - Bump Dependencies - @bbc/psammead-timestamp-container |
 | 1.0.6 | [PR#3397](https://github.com/bbc/psammead/pull/3397) Talos - Bump Dependencies - @bbc/psammead-styles, @bbc/psammead-timestamp-container |

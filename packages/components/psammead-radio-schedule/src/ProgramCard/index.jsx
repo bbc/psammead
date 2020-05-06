@@ -29,6 +29,8 @@ import {
   formatUnixTimestamp,
   formatDuration,
 } from '@bbc/psammead-timestamp-container/utilities';
+import detokenise from '@bbc/psammead-detokeniser';
+import durationDictionary from '../utilities';
 
 const TitleWrapper = styled.span`
   color: ${({ titleColor }) => titleColor};
@@ -214,14 +216,6 @@ const renderHeaderContent = ({
   );
 };
 
-const getDurationFormat = (duration, separator = ':') => {
-  const timeSections = ['mm', 'ss'];
-  if (duration.includes('H')) {
-    timeSections.unshift('h');
-  }
-  return timeSections.join(separator);
-};
-
 const ProgramCard = ({
   dir,
   service,
@@ -275,11 +269,10 @@ const ProgramCard = ({
       </IconWrapper>
       <DurationWrapper dir={dir} dateTime={duration}>
         <VisuallyHiddenText>
-          {` ${durationLabel} ${formatDuration({
-            duration,
-            format: getDurationFormat(duration, ','),
-            locale,
-          })} `}
+          {` ${detokenise(
+            durationLabel,
+            durationDictionary({ duration, locale }),
+          )} `}
         </VisuallyHiddenText>
         <DurationTextWrapper>
           {formatDuration({ duration, locale })}
@@ -317,8 +310,8 @@ renderHeaderContent.defaultProps = {
 
 ProgramCard.propTypes = {
   dir: oneOf(['rtl', 'ltr']),
-  durationLabel: string.isRequired,
   duration: string.isRequired,
+  durationLabel: string.isRequired,
   summary: string,
   ...programCardPropTypes,
 };
