@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 3.0.1 | [PR#3454](https://github.com/bbc/psammead/pull/3454) Update radio schedule props |
 | 3.0.0 | [PR#3408](https://github.com/bbc/psammead/pull/3408) Use detokenizer to construct duration label |
 | 2.0.2 | [PR#3427](https://github.com/bbc/psammead/pull/3427) Updating tests with dependency bump |
 | 2.0.1 | [PR#3414](https://github.com/bbc/psammead/pull/3414) Talos - Bump Dependencies - @bbc/psammead-timestamp-container |

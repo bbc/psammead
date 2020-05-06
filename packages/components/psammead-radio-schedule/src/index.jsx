@@ -137,7 +137,6 @@ const programPropTypes = shape({
   brandTitle: string.isRequired,
   summary: string,
   duration: string.isRequired,
-  durationLabel: string.isRequired,
 });
 
 const sharedProps = {
@@ -147,6 +146,7 @@ const sharedProps = {
   script: shape(scriptPropType).isRequired,
   nextLabel: string.isRequired,
   liveLabel: string.isRequired,
+  durationLabel: string.isRequired,
   dir: oneOf(['rtl', 'ltr']),
 };
 
