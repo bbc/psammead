@@ -97,7 +97,7 @@ storiesOf('Components|ContentAnchor', module)
         </Wrapper>
       );
     },
-    { notes },
+    { notes, chromatic: { disable: true } },
   )
   .add(
     'article with multiple dynamic resize components',
@@ -116,7 +116,7 @@ storiesOf('Components|ContentAnchor', module)
         </Wrapper>
       );
     },
-    { notes },
+    { notes, chromatic: { disable: true } },
   )
   .add(
     'article with multiple time-staggered dynamic resize components',
@@ -135,7 +135,7 @@ storiesOf('Components|ContentAnchor', module)
         </Wrapper>
       );
     },
-    { notes },
+    { notes, chromatic: { disable: true } },
   )
   .add(
     'multiple time-staggered dynamic resize components',

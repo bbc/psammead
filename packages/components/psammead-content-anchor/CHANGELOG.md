@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 1.0.0-alpha.6 | [PR#3457](https://github.com/bbc/psammead/pull/3457) Disabling chromatic tests |
 | 1.0.0-alpha.5 | [PR#3398](https://github.com/bbc/psammead/pull/3398) Talos - Bump Dependencies - @bbc/psammead-headings |
 | 1.0.0-alpha.4 | [PR#3270](https://github.com/bbc/psammead/pull/3270) Security fixes |
 | 1.0.0-alpha.3 | [PR#3151](https://github.com/bbc/psammead/pull/3151) Talos - Bump Dependencies - @bbc/psammead-headings |
