@@ -63,6 +63,7 @@ const schedules = [
   dir="ltr"
   liveLabel="LIVE"
   nextLabel="NEXT"
+  durationLabel="Duration %duration%"
 />;
 ```
 
