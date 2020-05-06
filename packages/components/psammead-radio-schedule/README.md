@@ -23,7 +23,7 @@ npm install @bbc/psammead-radio-schedule --save
 <!-- prettier-ignore -->
 | Argument | Type | Required | Default | Example |
 | -------- | ---- | -------- | ------- | ------- |
-| schedules | array | yes | N/A | `[{ id: '1', state: 'live', stateLabel: 'Live', startTime: '1566914061212', link: 'www.bbc.co.uk', brandTitle: 'This is a brand title', episodeTitle: 'This is an episode title', summary: 'This is a summary', duration: '45:00', durationLabel: 'Duration %duration%'}]` |
+| schedules | array | yes | N/A | `[{ id: '1', state: 'live', stateLabel: 'Live', startTime: '1566914061212', link: 'www.bbc.co.uk', brandTitle: 'This is a brand title', episodeTitle: 'This is an episode title', summary: 'This is a summary', duration: '45:00'}]` |
 | service | string | yes | N/A | `'news'` |
 | script | object | yes | N/A | `{ canon: { groupA: { fontSize: '28', lineHeight: '32',}, groupB: { fontSize: '32', lineHeight: '36', }, groupD: { fontSize: '44', lineHeight: '48', }, }, trafalgar: { groupA: { fontSize: '20', lineHeight: '24', }, groupB: { fontSize: '24', lineHeight: '28', }, groupD: { fontSize: '32', lineHeight: '36', }, }, }` |
 | locale | string | no | N/A | `'en-gb'` |
@@ -51,7 +51,6 @@ const schedules = [
     brandTitle: 'This is a brand title',
     summary: 'This is a summary',
     duration: '45:00',
-    durationLabel: 'Duration %duration%',
   },
 ];
 
