@@ -290,7 +290,6 @@ const programCardPropTypes = {
   state: string.isRequired,
   nextLabel: string.isRequired,
   liveLabel: string.isRequired,
-  durationLabel: string.isRequired,
   startTime: number.isRequired,
   timezone: string,
   locale: string,
@@ -312,6 +311,7 @@ renderHeaderContent.defaultProps = {
 ProgramCard.propTypes = {
   dir: oneOf(['rtl', 'ltr']),
   duration: string.isRequired,
+  durationLabel: string.isRequired,
   summary: string,
   ...programCardPropTypes,
 };
