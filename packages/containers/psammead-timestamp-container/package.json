@@ -29,6 +29,9 @@
     "@bbc/psammead-timestamp": "^2.2.27",
     "moment-timezone": "^0.5.26"
   },
+  "devDependencies": {
+    "@bbc/psammead-locales": "^4.1.8"
+  },
   "peerDependencies": {
     "react": "^16.9.0",
     "moment": "^2.24.0"
