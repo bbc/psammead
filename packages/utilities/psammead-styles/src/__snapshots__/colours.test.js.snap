@@ -48,6 +48,8 @@ exports[`Psammead Styles - Colours should match #F5F3F1 for C_OAT_LHT 1`] = `"C_
 
 exports[`Psammead Styles - Colours should match #F6A21D for C_CONSENT_ACTION 1`] = `"C_CONSENT_ACTION"`;
 
+exports[`Psammead Styles - Colours should match #F6F6F6 for C_LUNAR_LIGHT 1`] = `"C_LUNAR_LIGHT"`;
+
 exports[`Psammead Styles - Colours should match #FDFDFD for C_GHOST 1`] = `"C_GHOST"`;
 
 exports[`Psammead Styles - Colours should match #FFFFFF for C_WHITE 1`] = `"C_WHITE"`;
