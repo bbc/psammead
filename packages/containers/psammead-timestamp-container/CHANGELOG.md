@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 3.0.3 | [PR#3468](https://github.com/bbc/psammead/pull/3468) Talos - Bump Dependencies - @bbc/psammead-timestamp |
 | 3.0.2 | [PR#3453](https://github.com/bbc/psammead/pull/3453) Remove imported psammead-locales from storybook stories |
 | 3.0.1 | [PR#3413](https://github.com/bbc/psammead/pull/3413) Talos - Bump Dependencies - @bbc/psammead-locales |
 | 3.0.0 | [PR#3403](https://github.com/bbc/psammead/pull/3403) Update formatDuration to use locale, rename unixTimestampToMoment to localisedMoment since it now uses locale, update formatDuration, localisedMoment, formatUnixTimestamp to use destructured props. |
