@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 2.0.147 | [PR#3463](https://github.com/bbc/psammead/pull/3463) Dependency updates |
 | 2.0.146 | [PR#3459](https://github.com/bbc/psammead/pull/3459) Talos - Bump Dependencies - @bbc/psammead-timestamp-container |
 | 2.0.145 | [PR#3453](https://github.com/bbc/psammead/pull/3453) Import updated psammead-locales to storybook config |
 | 2.0.144 | [PR#3455](https://github.com/bbc/psammead/pull/3455) Dependency updates |
