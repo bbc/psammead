@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 3.2.2 | [PR#3467](https://github.com/bbc/psammead/pull/3467) Talos - Bump Dependencies - @bbc/psammead-styles |
 | 3.2.1 | [PR#3427](https://github.com/bbc/psammead/pull/3427) Talos - Bump Dependencies - @bbc/psammead-story-promo |
 | 3.2.0 | [PR#3431](https://github.com/bbc/psammead/pull/3431) Do not render paragraph when summary is not available |
 | 3.1.0 | [PR#3430](https://github.com/bbc/psammead/pull/3430) Change default `lang` prop to `null` |
