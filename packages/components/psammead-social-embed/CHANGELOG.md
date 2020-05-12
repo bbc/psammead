@@ -2,6 +2,7 @@
 
 | Version       | Description                                                                                           |
 | ------------- | ----------------------------------------------------------------------------------------------------- |
+| 1.1.1 | [PR#3467](https://github.com/bbc/psammead/pull/3467) Talos - Bump Dependencies - @bbc/psammead-styles |
 | 1.1.0         | [PR#3450](https://github.com/bbc/psammead/pull/3450) Update Canonical provider styles                 |
 | 1.0.2         | [PR#3397](https://github.com/bbc/psammead/pull/3397) Talos - Bump Dependencies - @bbc/psammead-styles |
 | 1.0.1         | [PR#3388](https://github.com/bbc/psammead/pull/3388) Update react-helmet to 6.0.0                     |

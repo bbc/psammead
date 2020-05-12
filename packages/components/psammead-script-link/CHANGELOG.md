@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 1.0.15 | [PR#3467](https://github.com/bbc/psammead/pull/3467) Talos - Bump Dependencies - @bbc/psammead-styles |
 | 1.0.14 | [PR#3397](https://github.com/bbc/psammead/pull/3397) Talos - Bump Dependencies - @bbc/psammead-styles |
 | 1.0.13 | [PR#3299](https://github.com/bbc/psammead/pull/3299) Wrap children in a styled `span` |
 | 1.0.12 | [PR#3294](https://github.com/bbc/psammead/pull/3294) Remove surrounding `span` from children  |
