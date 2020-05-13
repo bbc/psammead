@@ -3,6 +3,7 @@ const landscapeImageUrl = `https://ichef.bbci.co.uk/news/[WIDTH]/cpsprodpb/7098/
 const portraitImageUrl = `https://ichef.bbci.co.uk/news/[WIDTH]/cpsprodpb/439A/production/_100960371_syrians_and_asylum_v2-nc.png`;
 const squareImageUrl = `https://ichef.bbci.co.uk/news/[WIDTH]/cpsprodpb/114FE/production/_104801907_79010.jpg`;
 const customImageUrl = `https://ichef.bbci.co.uk/news/[WIDTH]/cpsprodpb/164BB/production/_104032319_03270dcc-9dda-4bd4-96a0-db89f6b915ae.jpg`;
+const transparentImageUrl = `https://ichef.bbci.co.uk/news/[WIDTH]/cpsprodpb/1205C/production/_108802837_chrismorris_tr_gr-nc.png`;
 
 export const landscape = {
   alt: 'Student sitting an exam',
@@ -51,4 +52,17 @@ export const custom = {
     .join(', '),
   width: 445,
   height: 547,
+};
+
+export const transparent = {
+  alt: 'Analysis box by Chris Morris, Reality Check correspondent',
+  attribution: 'BBC',
+  backgroundColour: '#ff0000',
+  sizes: '100vw',
+  src: transparentImageUrl.replace('[WIDTH]', sizes[0]),
+  srcset: sizes
+    .map(size => `${transparentImageUrl.replace('[WIDTH]', size)} ${size}w`)
+    .join(', '),
+  width: 853,
+  height: 170,
 };

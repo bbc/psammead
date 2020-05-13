@@ -1,8 +1,14 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import { boolean } from '@storybook/addon-knobs';
+import { boolean, color } from '@storybook/addon-knobs';
 import notes from '../../README.md';
-import { custom, landscape, portrait, square } from './fixtureData';
+import {
+  custom,
+  landscape,
+  portrait,
+  square,
+  transparent,
+} from './fixtureData';
 
 export function getProps(image, includeHeight, type) {
   const props = {
@@ -11,6 +17,7 @@ export function getProps(image, includeHeight, type) {
     src: image.src,
     srcset: image.srcset,
     width: image.width,
+    backgroundColour: color('Background Colour', '#ffffff'),
     fade: type === 'Img' ? boolean('Fade', false) : null,
   };
   props.height = includeHeight ? image.height : null;
@@ -63,6 +70,16 @@ export const stories = (
       () => (
         <Component
           {...getProps(custom, includeHeight, type)}
+          {...additionalProps}
+        />
+      ),
+      { notes },
+    )
+    .add(
+      'transparent image',
+      () => (
+        <Component
+          {...getProps(transparent, includeHeight, type)}
           {...additionalProps}
         />
       ),
