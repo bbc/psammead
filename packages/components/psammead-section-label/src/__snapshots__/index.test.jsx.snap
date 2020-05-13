@@ -204,14 +204,14 @@ exports[`SectionLabel With bar With linking title should render correctly 1`] = 
 }
 
 .c7 {
+  font-size: 0.9375rem;
+  line-height: 1.125rem;
   font-family: ReithSans,Helvetica,Arial,sans-serif;
   font-weight: 700;
   font-style: normal;
-  font-size: 0.9375rem;
-  line-height: 1.125rem;
   margin: 1rem 0;
   color: #222222;
-  background-color: #FFFFFF;
+  background-color: #FDFDFD;
   white-space: nowrap;
   padding-left: 1rem;
   display: -webkit-box;
@@ -427,14 +427,14 @@ exports[`SectionLabel With bar With linking title should render correctly with a
 }
 
 .c7 {
+  font-size: 1.0625rem;
+  line-height: 1.5rem;
   font-family: "BBC Nassim Persian",Arial,Verdana,Geneva,Helvetica,sans-serif;
   font-weight: 700;
   font-style: normal;
-  font-size: 1.0625rem;
-  line-height: 1.5rem;
   margin: 1rem 0;
   color: #222222;
-  background-color: #FFFFFF;
+  background-color: #FDFDFD;
   white-space: nowrap;
   padding-right: 1rem;
   display: -webkit-box;
@@ -650,14 +650,14 @@ exports[`SectionLabel With bar With linking title should render correctly with e
 }
 
 .c7 {
+  font-size: 0.9375rem;
+  line-height: 1.125rem;
   font-family: ReithSans,Helvetica,Arial,sans-serif;
   font-weight: 700;
   font-style: normal;
-  font-size: 0.9375rem;
-  line-height: 1.125rem;
   margin: 1rem 0;
   color: #222222;
-  background-color: #FFFFFF;
+  background-color: #FDFDFD;
   white-space: nowrap;
   padding-left: 1rem;
   display: -webkit-box;
@@ -873,14 +873,14 @@ exports[`SectionLabel With bar With linking title should render correctly with e
 }
 
 .c7 {
+  font-size: 0.9375rem;
+  line-height: 1.125rem;
   font-family: ReithSans,Helvetica,Arial,sans-serif;
   font-weight: 700;
   font-style: normal;
-  font-size: 0.9375rem;
-  line-height: 1.125rem;
   margin: 1rem 0;
   color: #222222;
-  background-color: #FFFFFF;
+  background-color: #FDFDFD;
   white-space: nowrap;
   padding-left: 1rem;
   display: -webkit-box;
@@ -1720,14 +1720,14 @@ exports[`SectionLabel Without bar With linking title should render correctly 1`]
 }
 
 .c6 {
+  font-size: 0.9375rem;
+  line-height: 1.125rem;
   font-family: ReithSans,Helvetica,Arial,sans-serif;
   font-weight: 700;
   font-style: normal;
-  font-size: 0.9375rem;
-  line-height: 1.125rem;
   margin: 1rem 0;
   color: #222222;
-  background-color: #FFFFFF;
+  background-color: #FDFDFD;
   white-space: nowrap;
   padding-left: 1rem;
   display: -webkit-box;
@@ -1920,14 +1920,14 @@ exports[`SectionLabel Without bar With linking title should render correctly wit
 }
 
 .c6 {
+  font-size: 1.0625rem;
+  line-height: 1.5rem;
   font-family: "BBC Nassim Persian",Arial,Verdana,Geneva,Helvetica,sans-serif;
   font-weight: 700;
   font-style: normal;
-  font-size: 1.0625rem;
-  line-height: 1.5rem;
   margin: 1rem 0;
   color: #222222;
-  background-color: #FFFFFF;
+  background-color: #FDFDFD;
   white-space: nowrap;
   padding-right: 1rem;
   display: -webkit-box;
@@ -2120,14 +2120,14 @@ exports[`SectionLabel Without bar With linking title should render correctly wit
 }
 
 .c6 {
+  font-size: 0.9375rem;
+  line-height: 1.125rem;
   font-family: ReithSans,Helvetica,Arial,sans-serif;
   font-weight: 700;
   font-style: normal;
-  font-size: 0.9375rem;
-  line-height: 1.125rem;
   margin: 1rem 0;
   color: #222222;
-  background-color: #FFFFFF;
+  background-color: #FDFDFD;
   white-space: nowrap;
   padding-left: 1rem;
   display: -webkit-box;

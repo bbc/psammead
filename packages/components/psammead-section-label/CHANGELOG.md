@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 5.0.6 | [PR#XXX](https://github.com/bbc/psammead/pull/XXX) Pass `backgroundColor` to `IndexLinkCta` |
 | 5.0.5 | [PR#3467](https://github.com/bbc/psammead/pull/3467) Talos - Bump Dependencies - @bbc/psammead-styles |
 | 5.0.4 | [PR#3397](https://github.com/bbc/psammead/pull/3397) Talos - Bump Dependencies - @bbc/psammead-styles |
 | 5.0.3 | [PR#3328](https://github.com/bbc/psammead/pull/3328) Replace a `div` with a `span` tag to fix invalid HTML syntax |
