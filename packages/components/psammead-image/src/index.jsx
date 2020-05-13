@@ -33,11 +33,9 @@ export const Img = props => {
     !!backgroundColour,
   );
 
-  const handleError = () => setBackgroundEnabled(false);
-
   return (
     <StyledImg
-      onError={handleError}
+      onError={() => setBackgroundEnabled(false)}
       srcSet={srcset}
       background={backgroundEnabled && backgroundColour}
       {...otherProps}
