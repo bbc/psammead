@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 1.3.0 | [PR#3469](https://github.com/bbc/psammead/pull/3469) Support passing of `backgroundColour` prop |
 | 1.2.4 | [PR#2607](https://github.com/bbc/psammead/pull/2607) Bump dependencies |
 | 1.2.3 | [PR#2460](https://github.com/bbc/psammead/pull/2460) Fix Storybook console errors |
 | 1.2.2 | [PR#1942](https://github.com/bbc/psammead/pull/1942) Talos - Bump React to 16.9.0 |

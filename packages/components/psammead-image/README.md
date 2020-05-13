@@ -66,6 +66,7 @@ const WrappingContainer = ({ alt, src, height, width, sizes }) => (
 | `srcset` | string        | No  | null  | "https://bbc.com/300/cat.jpg 300w, https://bbc.com/450/cat.jpg 450w, https://bbc.com/600/cat.jpg 600w" |
 | `width`  | number/string | No  | null  | 600 |
 | `fade`   |  boolean      | No  | false | true |
+| `backgroundColour` | string | No | null | #f0f0f0 |
 
 The `height` and `width` props are optional, in some cases to preserve the image ratio you might specify either `height` or `width` and let the browser scale the image accordingly.
 
@@ -78,6 +79,8 @@ The `srcset` prop is optional since some projects might not want to use the srcs
 The `sizes` prop is optional since some projects might not want to use the sizes attribute on images.
 
 The `fade` prop is optional and set to `false` by default. It's been used to apply a fade-in animation effect on the `Img` component.
+
+The `backgroundColour` prop is optional, and when passed a valid colour code, will place a background on the image component, to prevent transparent images seeping through.
 
 ### AmpImg
 <!-- prettier-ignore -->
