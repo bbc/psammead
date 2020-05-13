@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { number, oneOfType, string, bool } from 'prop-types';
 import styled, { keyframes, css } from 'styled-components';
 
@@ -23,17 +23,31 @@ const StyledImg = styled.img`
   display: block;
   width: 100%;
   visibility: visible;
+  ${props => props.background && { background: props.background }}
   ${props => props.fade && fadeIn};
 `;
 
 export const Img = props => {
-  const { srcset, ...otherProps } = props;
+  const { srcset, backgroundColour, ...otherProps } = props;
+  const [backgroundEnabled, setBackgroundEnabled] = useState(
+    !!backgroundColour,
+  );
 
-  return <StyledImg srcSet={srcset} {...otherProps} />;
+  const handleError = () => setBackgroundEnabled(false);
+
+  return (
+    <StyledImg
+      onError={handleError}
+      srcSet={srcset}
+      background={backgroundEnabled && backgroundColour}
+      {...otherProps}
+    />
+  );
 };
 
 Img.propTypes = {
   alt: string.isRequired,
+  backgroundColour: string,
   fade: bool,
   height: oneOfType([string, number]),
   sizes: string,
@@ -43,6 +57,7 @@ Img.propTypes = {
 };
 
 Img.defaultProps = {
+  backgroundColour: null,
   fade: false,
   height: null,
   sizes: null,
