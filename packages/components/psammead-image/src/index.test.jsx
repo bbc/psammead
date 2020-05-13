@@ -30,3 +30,12 @@ describe("Image - with Fade-in effect'", () => {
   );
   snapshotTests(Image);
 });
+
+describe('Image - with background colour', () => {
+  const props = { ...landscape, width: null, backgroundColour: '#ff0000' };
+  shouldMatchSnapshot(
+    'should render image correctly without width',
+    <Image {...props} />,
+  );
+  snapshotTests(Image);
+});
