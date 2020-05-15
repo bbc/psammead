@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 3.0.4 | [PR#3475](https://github.com/bbc/psammead/pull/3475) Talos - Bump Dependencies - @bbc/psammead-timestamp-container |
 | 3.0.3 | [PR#3467](https://github.com/bbc/psammead/pull/3467) Talos - Bump Dependencies - @bbc/psammead-styles |
 | 3.0.2 | [PR#3459](https://github.com/bbc/psammead/pull/3459) Talos - Bump Dependencies - @bbc/psammead-timestamp-container |
 | 3.0.1 | [PR#3454](https://github.com/bbc/psammead/pull/3454) Update radio schedule props |
