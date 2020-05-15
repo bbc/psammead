@@ -3,7 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
-| 4.0.0 | [PR#3468](https://github.com/bbc/psammead/pull/3472) Do not return current date in formatUnixTimestamp when timestamp is undefined |
+| 4.0.0 | [PR#3472](https://github.com/bbc/psammead/pull/3472) Do not return current date in formatUnixTimestamp when timestamp is undefined |
 | 3.0.3 | [PR#3468](https://github.com/bbc/psammead/pull/3468) Talos - Bump Dependencies - @bbc/psammead-timestamp |
 | 3.0.2 | [PR#3453](https://github.com/bbc/psammead/pull/3453) Remove imported psammead-locales from storybook stories |
 | 3.0.1 | [PR#3413](https://github.com/bbc/psammead/pull/3413) Talos - Bump Dependencies - @bbc/psammead-locales |
