@@ -1,8 +1,9 @@
 import { useEffect } from 'react';
 
 /**
- * A custom Hook that.
- * @param {String} src The appended <script />'s src attribute value.
+ * useScript is a custom hook that appends a non-blocking script element
+ * to the body if it doesn't already exist and removes it in clean-up.
+ * @param {string} src The URL of the script to be appended.
  */
 const useScript = src =>
   // eslint-disable-next-line consistent-return
