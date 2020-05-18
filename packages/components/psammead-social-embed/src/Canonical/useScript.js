@@ -2,7 +2,7 @@ import { useEffect } from 'react';
 
 /**
  * useScript is a custom hook that appends a non-blocking script element
- * to the body if it doesn't already exist and removes it in clean-up.
+ * to the head if it doesn't already exist and removes it in clean-up.
  * @param {string} src The URL of the script to be appended.
  */
 const useScript = src =>
