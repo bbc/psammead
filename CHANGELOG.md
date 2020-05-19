@@ -3,7 +3,8 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
-| 2.0.153 | [PR#3483](https://github.com/bbc/psammead/pull/3483) Dependency updates |
+| 2.0.154 | [PR#3483](https://github.com/bbc/psammead/pull/3483) Dependency updates |
+| 2.0.153 | [PR#3482](https://github.com/bbc/psammead/pull/3482) Talos - Bump Dependencies - @bbc/psammead-brand, @bbc/psammead-bulletin, @bbc/psammead-media-player, @bbc/psammead-most-read, @bbc/psammead-radio-schedule |
 | 2.0.152 | [PR#3475](https://github.com/bbc/psammead/pull/3475) Talos - Bump Dependencies - @bbc/psammead-timestamp-container |
 | 2.0.151 | [PR#3471](https://github.com/bbc/psammead/pull/3471) Talos - Bump Dependencies - @bbc/psammead-section-label |
 | 2.0.150 | [PR#3468](https://github.com/bbc/psammead/pull/3468) Talos - Bump Dependencies - @bbc/psammead-brand, @bbc/psammead-bulleted-list, @bbc/psammead-bulletin, @bbc/psammead-byline, @bbc/psammead-caption, @bbc/psammead-consent-banner, @bbc/psammead-copyright, @bbc/psammead-grid, @bbc/psammead-headings, @bbc/psammead-image-placeholder, @bbc/psammead-inline-link, @bbc/psammead-media-indicator, @bbc/psammead-most-read, @bbc/psammead-navigation, @bbc/psammead-paragraph, @bbc/psammead-play-button, @bbc/psammead-radio-schedule, @bbc/psammead-script-link, @bbc/psammead-section-label, @bbc/psammead-sitewide-links, @bbc/psammead-story-promo, @bbc/psammead-story-promo-list, @bbc/psammead-timestamp, @bbc/psammead-useful-links |
