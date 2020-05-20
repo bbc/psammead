@@ -123,6 +123,15 @@ describe('Timestamp utility functions', () => {
       const expectedOutput = '19 October 2018, 18:10 BST';
       expect(output).toEqual(expectedOutput);
     });
+
+    it('should not return a timestamp when you do not pass in a timestamp to be formatted', () => {
+      const result = formatUnixTimestamp({
+        format: 'D MMMM YYYY, HH:mm z',
+        timezone,
+        locale,
+      });
+      expect(result).toBeUndefined();
+    });
   });
 });
 
