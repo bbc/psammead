@@ -49,6 +49,8 @@ export const formatUnixTimestamp = ({
   timestamp,
   timezone,
 }) => {
+  if (!timestamp) return undefined;
+
   const momentObj = moment(timestamp).locale(locale).tz(timezone);
 
   if (isRelative) {
