@@ -1,7 +1,7 @@
 import React, { memo } from 'react';
-import { Helmet } from 'react-helmet';
 import { shape, string } from 'prop-types';
 import styled from 'styled-components';
+import useScript from './useScript';
 
 const LANDSCAPE_RATIO = '56.25%';
 
@@ -56,19 +56,16 @@ export const providers = {
   },
 };
 
-const CanonicalEmbed = ({ provider, oEmbed }) => (
-  <>
-    {providers[provider].script && (
-      <Helmet>
-        <script async src={providers[provider].script} />
-      </Helmet>
-    )}
+const CanonicalEmbed = ({ provider, oEmbed }) => {
+  useScript(providers[provider].script);
+
+  return (
     <OEmbed
       styles={providers[provider].styles}
       dangerouslySetInnerHTML={{ __html: oEmbed.html }}
     />
-  </>
-);
+  );
+};
 
 CanonicalEmbed.propTypes = {
   provider: string.isRequired,
