@@ -3,7 +3,7 @@ import { storiesOf } from '@storybook/react';
 import { text, withKnobs } from '@storybook/addon-knobs';
 import { withServicesKnob } from '@bbc/psammead-storybook-helpers';
 import notes from '../README.md';
-import { Headline, SubHeading } from './index';
+import { Headline, SubHeading, PageHeading } from './index';
 
 storiesOf('Components|Headline', module)
   .addDecorator(withKnobs)
@@ -40,5 +40,18 @@ storiesOf('Components|SubHeading', module)
         </SubHeading>
       );
     },
+    { notes, knobs: { escapeHTML: false } },
+  );
+
+storiesOf('Components|Page Heading', module)
+  .addDecorator(withKnobs)
+  .addDecorator(withServicesKnob())
+  .add(
+    'default',
+    ({ text: textSnippet, script, service }) => (
+      <PageHeading script={script} service={service}>
+        {textSnippet}
+      </PageHeading>
+    ),
     { notes, knobs: { escapeHTML: false } },
   );

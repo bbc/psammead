@@ -3,7 +3,11 @@
 
 ## Description
 
-The Headings are a set of two components, `Headline` and `SubHeading`. They use a `h1` and `h2` HTML element respectively, with the `Headline` being designed for a single use on the page, with `SubHeading` being aimed at repeated use.
+The Headings are a set of three components, `Headline`, `SubHeading` and `PageHeading`.
+
+They `Headline` and `SubHeading` use a `h1` and `h2` HTML element respectively, with the `Headline` being designed for a single use on the page, with `SubHeading` being aimed at repeated use.
+
+On the other hand, the `PageHeading` use a `h1` and is designed to be the title of a page, like for example IDX, FIX and Most Read pages.
 
 ## Installation
 
@@ -47,13 +51,15 @@ This usage will allow for the page anchor: `www.bbc.com/news/articles/articleID#
 
 ### When to use this component
 
-These components can be used at any point on the page, however the `Headline` is designed to be used once at the top of the page. The `SubHeading` takes an optional `id` value and passes it to the `h2` which can be used as an anchor when referencing content.
+These components can be used at any point on the page, however the `Headline` and `PageHeading` are designed to be used once at the top of the page. The `SubHeading` takes an optional `id` value and passes it to the `h2` which can be used as an anchor when referencing content.
 
 <!-- ### When not to use this component -->
 
 ### Accessibility notes
 
 The `SubHeading` component has a tabindex of `-1` so that it works correctly with screen readers when navigated to via a skip link.
+
+The `Heading` has an id of `content` so it can be announced by screen readers when activating the `Skip to content` link.
 
 <!-- ## Roadmap -->
 

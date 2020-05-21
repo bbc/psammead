@@ -1,7 +1,7 @@
 import React from 'react';
 import { shouldMatchSnapshot } from '@bbc/psammead-test-helpers';
 import { latin, arabic } from '@bbc/gel-foundations/scripts';
-import { Headline, SubHeading } from './index';
+import { Headline, SubHeading, PageHeading } from './index';
 
 describe('Headline component', () => {
   shouldMatchSnapshot(
@@ -39,5 +39,21 @@ describe('SubHeading component', () => {
     <SubHeading id="This-is-a-SubHeading" script={latin} service="news">
       This is a SubHeading
     </SubHeading>,
+  );
+});
+
+describe('Page Heading', () => {
+  shouldMatchSnapshot(
+    'should render correctly',
+    <PageHeading script={latin} service="news">
+      This is a page heading
+    </PageHeading>,
+  );
+
+  shouldMatchSnapshot(
+    'should render correctly with arabic script typography values',
+    <PageHeading script={arabic} service="persian">
+      هذا عنوان الصفحة
+    </PageHeading>,
   );
 });
