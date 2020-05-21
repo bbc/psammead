@@ -3,7 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
-| 3.2.0 | [PR#3467](https://github.com/bbc/psammead/pull/3467) Add `PageHeading` component |
+| 3.2.0 | [PR#3489](https://github.com/bbc/psammead/pull/3489) Add `PageHeading` component |
 | 3.1.30 | [PR#3467](https://github.com/bbc/psammead/pull/3467) Talos - Bump Dependencies - @bbc/psammead-styles |
 | 3.1.29 | [PR#3397](https://github.com/bbc/psammead/pull/3397) Talos - Bump Dependencies - @bbc/psammead-styles |
 | 3.1.28 | [PR#3135](https://github.com/bbc/psammead/pull/3135) Talos - Bump Dependencies - @bbc/gel-foundations |
