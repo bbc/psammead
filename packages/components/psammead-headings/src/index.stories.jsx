@@ -54,4 +54,16 @@ storiesOf('Components|Headings/Page Heading', module)
       </PageHeading>
     ),
     { notes, knobs: { escapeHTML: false } },
+  )
+  .add(
+    'with optional ID',
+    ({ text: textSnippet, script, service }) => {
+      const id = text('ID', 'content', 'Other');
+      return (
+        <PageHeading id={id} script={script} service={service}>
+          {textSnippet}
+        </PageHeading>
+      );
+    },
+    { notes, knobs: { escapeHTML: false } },
   );

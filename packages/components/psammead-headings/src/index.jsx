@@ -31,6 +31,11 @@ export const Headline = styled.h1`
   }
 `;
 
+Headline.propTypes = {
+  script: shape(scriptPropType).isRequired,
+  service: string.isRequired,
+};
+
 export const SubHeading = styled.h2.attrs(() => ({
   tabIndex: '-1',
 }))`
@@ -44,18 +49,12 @@ export const SubHeading = styled.h2.attrs(() => ({
   }
 `;
 
-Headline.propTypes = {
-  script: shape(scriptPropType).isRequired,
-  service: string.isRequired,
-};
-
 SubHeading.propTypes = {
   script: shape(scriptPropType).isRequired,
   service: string.isRequired,
 };
 
 export const PageHeading = styled.h1.attrs(() => ({
-  id: 'content',
   tabIndex: '-1',
 }))`
   color: ${C_METAL};
@@ -63,3 +62,8 @@ export const PageHeading = styled.h1.attrs(() => ({
   ${({ service }) => getSansRegular(service)};
   margin: 0;
 `;
+
+PageHeading.propTypes = {
+  script: shape(scriptPropType).isRequired,
+  service: string.isRequired,
+};

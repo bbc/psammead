@@ -107,7 +107,6 @@ exports[`Page Heading should render correctly 1`] = `
 
 <h1
   class="c0"
-  id="content"
   tabindex="-1"
 >
   This is a page heading
@@ -141,7 +140,6 @@ exports[`Page Heading should render correctly with arabic script typography valu
 
 <h1
   class="c0"
-  id="content"
   tabindex="-1"
 >
   هذا عنوان الصفحة

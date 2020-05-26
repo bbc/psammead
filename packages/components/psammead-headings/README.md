@@ -39,7 +39,7 @@ const Wrapper = () => (
 );
 ```
 
-`SubHeading` components can be used as page anchors when passed an `id` prop. To take the above usage as an example:
+`SubHeading` and `PageHeading` components can be used as page anchors when passed an `id` attribute. To take the above usage as an example:
 
 ```jsx
 <SubHeading id="some-subheadline" script={latin} service="news">
@@ -51,7 +51,9 @@ This usage will allow for the page anchor: `www.bbc.com/news/articles/articleID#
 
 ### When to use this component
 
-These components can be used at any point on the page, however the `Headline` and `PageHeading` are designed to be used once at the top of the page. The `SubHeading` takes an optional `id` value and passes it to the `h2` which can be used as an anchor when referencing content.
+These components can be used at any point on the page, however the `Headline` and `PageHeading` are designed to be used once at the top of the page.
+
+The `SubHeading` and `PageHeading` can take an optional `id` attribute to be passed to the `h2` which can be used as an anchor when referencing content.
 
 <!-- ### When not to use this component -->
 
