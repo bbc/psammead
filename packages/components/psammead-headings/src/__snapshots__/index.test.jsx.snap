@@ -85,7 +85,6 @@ exports[`Page Heading should render correctly 1`] = `
   font-weight: 400;
   font-style: normal;
   margin: 0;
-  padding: 1rem 0 1.5rem;
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
@@ -99,18 +98,6 @@ exports[`Page Heading should render correctly 1`] = `
   .c0 {
     font-size: 1.5rem;
     line-height: 1.75rem;
-  }
-}
-
-@media (min-width:37.5rem) and (max-width:62.9375rem) {
-  .c0 {
-    padding: 1.5rem 0 1rem;
-  }
-}
-
-@media (min-width:63rem) {
-  .c0 {
-    padding: 1.5rem 0 0.5rem;
   }
 }
 
@@ -132,7 +119,6 @@ exports[`Page Heading should render correctly with arabic script typography valu
   font-weight: 400;
   font-style: normal;
   margin: 0;
-  padding: 1rem 0 1.5rem;
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
@@ -146,18 +132,6 @@ exports[`Page Heading should render correctly with arabic script typography valu
   .c0 {
     font-size: 1.75rem;
     line-height: 2.25rem;
-  }
-}
-
-@media (min-width:37.5rem) and (max-width:62.9375rem) {
-  .c0 {
-    padding: 1.5rem 0 1rem;
-  }
-}
-
-@media (min-width:63rem) {
-  .c0 {
-    padding: 1.5rem 0 0.5rem;
   }
 }
 
@@ -179,6 +153,11 @@ exports[`SubHeading component should render correctly 1`] = `
   font-style: normal;
   color: #3F3F42;
   margin: 0;
+  padding: 1.5rem 0;
+}
+
+.c0 37.5rem {
+  padding-top: 2rem;
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
@@ -212,6 +191,11 @@ exports[`SubHeading component should render correctly with an ID 1`] = `
   font-style: normal;
   color: #3F3F42;
   margin: 0;
+  padding: 1.5rem 0;
+}
+
+.c0 37.5rem {
+  padding-top: 2rem;
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
@@ -246,6 +230,11 @@ exports[`SubHeading component should render correctly with arabic script typogra
   font-style: normal;
   color: #3F3F42;
   margin: 0;
+  padding: 1.5rem 0;
+}
+
+.c0 37.5rem {
+  padding-top: 2rem;
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {

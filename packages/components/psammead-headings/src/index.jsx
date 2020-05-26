@@ -3,8 +3,6 @@ import { shape, string } from 'prop-types';
 import { scriptPropType } from '@bbc/gel-foundations/prop-types';
 import { C_SHADOW, C_METAL } from '@bbc/psammead-styles/colours';
 import {
-  GEL_SPACING,
-  GEL_SPACING_DBL,
   GEL_SPACING_TRPL,
   GEL_SPACING_QUAD,
   GEL_SPACING_QUIN,
@@ -19,11 +17,7 @@ import {
   getSerifMedium,
   getSansRegular,
 } from '@bbc/psammead-styles/font-styles';
-import {
-  GEL_GROUP_3_SCREEN_WIDTH_MIN,
-  GEL_GROUP_3_SCREEN_WIDTH_MAX,
-  GEL_GROUP_4_SCREEN_WIDTH_MIN,
-} from '@bbc/gel-foundations/breakpoints';
+import { GEL_GROUP_3_SCREEN_WIDTH_MIN } from '@bbc/gel-foundations/breakpoints';
 
 export const Headline = styled.h1`
   ${({ script }) => script && getCanon(script)};
@@ -44,6 +38,10 @@ export const SubHeading = styled.h2.attrs(() => ({
   ${({ service }) => getSansBold(service)}
   color: ${C_SHADOW};
   margin: 0; /* Reset */
+  padding: ${GEL_SPACING_TRPL} 0;
+  ${GEL_GROUP_3_SCREEN_WIDTH_MIN} {
+    padding-top: ${GEL_SPACING_QUAD};
+  }
 `;
 
 Headline.propTypes = {
@@ -64,11 +62,4 @@ export const PageHeading = styled.h1.attrs(() => ({
   ${({ script }) => script && getDoublePica(script)};
   ${({ service }) => getSansRegular(service)};
   margin: 0;
-  padding: ${GEL_SPACING_DBL} 0 ${GEL_SPACING_TRPL};
-  @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) and (max-width: ${GEL_GROUP_3_SCREEN_WIDTH_MAX}) {
-    padding: ${GEL_SPACING_TRPL} 0 ${GEL_SPACING_DBL};
-  }
-  @media (min-width: ${GEL_GROUP_4_SCREEN_WIDTH_MIN}) {
-    padding: ${GEL_SPACING_TRPL} 0 ${GEL_SPACING};
-  }
 `;
