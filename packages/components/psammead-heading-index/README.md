@@ -7,7 +7,7 @@ This component is currently tagged as alpha and is not suitable for production u
 
 ## Description
 
-The `IndexH1` uses a `h1` HTML element and is used on index pages, such as IDX, FIX and Most Read.
+The `HeadingIndex` uses a `h1` HTML element and is used on index pages, such as IDX, FIX and Most Read.
 
 ## Installation
 
@@ -24,14 +24,14 @@ The `IndexH1` uses a `h1` HTML element and is used on index pages, such as IDX, 
 ## Usage
 
 ```jsx
-import { IndexH1 } from '@bbc/psammead-heading-index';
+import HeadingIndex from '@bbc/psammead-heading-index';
 import { latin } from '@bbc/gel-foundations/scripts';
 
 const Wrapper = () => (
   <Fragment>
-    <IndexH1 script={script} service={service}>
+    <HeadingIndex script={script} service={service}>
       Heading
-    </IndexH1>
+    </HeadingIndex>
   </Fragment>
 );
 ```
@@ -40,19 +40,19 @@ const Wrapper = () => (
 
 This component is designed to be used once at the top of the page.
 
-The `IndexH1` can take an optional `id` attribute which can be used as an anchor when referencing content.
+The `HeadingIndex` can take an optional `id` attribute which can be used as an anchor when referencing content.
 
 ```jsx
-<IndexH1 id="content" script={latin} service="news">
+<HeadingIndex id="content" script={latin} service="news">
   Heading
-</IndexH1>
+</HeadingIndex>
 ```
 
 <!-- ### When not to use this component -->
 
 ### Accessibility notes
 
-The `IndexH1` component has a tabindex of `-1`, this ensures that it is focusable by assitive technology.
+The `HeadingIndex` component has a tabindex of `-1`, this ensures that it is focusable by assitive technology.
 
 <!-- ## Roadmap -->
 
