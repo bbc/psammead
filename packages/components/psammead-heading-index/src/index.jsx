@@ -5,7 +5,7 @@ import { C_METAL } from '@bbc/psammead-styles/colours';
 import { getDoublePica } from '@bbc/gel-foundations/typography';
 import { getSansRegular } from '@bbc/psammead-styles/font-styles';
 
-const IndexH1 = styled.h1.attrs(() => ({
+const HeadingIndex = styled.h1.attrs(() => ({
   tabIndex: '-1',
 }))`
   ${({ script }) => script && getDoublePica(script)};
@@ -14,9 +14,9 @@ const IndexH1 = styled.h1.attrs(() => ({
   margin: 0;
 `;
 
-IndexH1.propTypes = {
+HeadingIndex.propTypes = {
   script: shape(scriptPropType).isRequired,
   service: string.isRequired,
 };
 
-export default IndexH1;
+export default HeadingIndex;

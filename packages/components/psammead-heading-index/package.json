@@ -4,7 +4,7 @@
   "main": "dist/index.js",
   "module": "esm/index.js",
   "sideEffects": false,
-  "description": "A H1 to be used on Index Pages",
+  "description": "A h1 to be used on index pages",
   "repository": {
     "type": "git",
     "url": "https://github.com/bbc/psammead/tree/latest/packages/components/psammead-heading-index"
