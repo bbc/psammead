@@ -7,7 +7,7 @@
   "description": "A H1 to be used on Index Pages",
   "repository": {
     "type": "git",
-    "url": "https://github.com/bbc/psammead/tree/latest/packages/components/psammead-headings"
+    "url": "https://github.com/bbc/psammead/tree/latest/packages/components/psammead-heading-index"
   },
   "author": {
     "name": "Psammead Maintainers",
@@ -17,7 +17,7 @@
   "bugs": {
     "url": "https://github.com/bbc/psammead/issues"
   },
-  "homepage": "https://github.com/bbc/psammead/blob/latest/packages/components/psammead-headings/README.md",
+  "homepage": "https://github.com/bbc/psammead/blob/latest/packages/components/psammead-heading-index/README.md",
   "dependencies": {
     "@bbc/gel-foundations": "^4.0.1",
     "@bbc/psammead-styles": "^4.4.0"
@@ -27,7 +27,7 @@
   },
   "keywords": [
     "bbc",
-    "headings",
+    "heading",
     "index"
   ],
   "publishConfig": {
