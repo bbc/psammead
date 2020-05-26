@@ -59,7 +59,7 @@ The `SubHeading` and `PageHeading` can take an optional `id` attribute which can
 
 ### Accessibility notes
 
-The `SubHeading` and `PageHeading` component have a tabindex of `-1` so that they work correctly with screen readers when navigated to via a skip link.
+The `SubHeading` and `PageHeading` components have a tabindex of `-1`, this ensures that these elements are focusable by assitive technology.
 
 <!-- ## Roadmap -->
 
