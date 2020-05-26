@@ -3,7 +3,7 @@ import { storiesOf } from '@storybook/react';
 import { text, withKnobs } from '@storybook/addon-knobs';
 import { withServicesKnob } from '@bbc/psammead-storybook-helpers';
 import notes from '../README.md';
-import { Headline, SubHeading, PageHeading } from './index';
+import { Headline, SubHeading, IndexH1 } from './index';
 
 storiesOf('Components|Headings/Headline', module)
   .addDecorator(withKnobs)
@@ -49,9 +49,9 @@ storiesOf('Components|Headings/Page Heading', module)
   .add(
     'default',
     ({ text: textSnippet, script, service }) => (
-      <PageHeading script={script} service={service}>
+      <IndexH1 script={script} service={service}>
         {textSnippet}
-      </PageHeading>
+      </IndexH1>
     ),
     { notes, knobs: { escapeHTML: false } },
   )
@@ -60,9 +60,9 @@ storiesOf('Components|Headings/Page Heading', module)
     ({ text: textSnippet, script, service }) => {
       const id = text('ID', 'content', 'Other');
       return (
-        <PageHeading id={id} script={script} service={service}>
+        <IndexH1 id={id} script={script} service={service}>
           {textSnippet}
-        </PageHeading>
+        </IndexH1>
       );
     },
     { notes, knobs: { escapeHTML: false } },

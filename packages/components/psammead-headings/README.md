@@ -3,11 +3,11 @@
 
 ## Description
 
-The Headings are a set of three components, `Headline`, `SubHeading` and `PageHeading`.
+The Headings are a set of three components, `Headline`, `SubHeading` and `IndexH1`.
 
-They `Headline` and `SubHeading` use a `h1` and `h2` HTML element respectively, with the `Headline` being designed for a single use on the page, with `SubHeading` being aimed at repeated use.
+The `Headline` and `SubHeading` use a `h1` and `h2` HTML elements respectively, these are used on Article and STY (story) pages.
 
-On the other hand, the `PageHeading` use a `h1` and is designed to be the title of a page, like for example IDX, FIX and Most Read pages.
+`IndexH1` uses a `h1` HTML element and is used on index pages, such as IDX, FIX and Most Read.
 
 ## Installation
 
@@ -39,7 +39,7 @@ const Wrapper = () => (
 );
 ```
 
-`SubHeading` and `PageHeading` components can be used as page anchors when passed an `id` attribute. To take the above usage as an example:
+`SubHeading` and `IndexH1` components can be used as page anchors when passed an `id` attribute. To take the above usage as an example:
 
 ```jsx
 <SubHeading id="some-subheadline" script={latin} service="news">
@@ -51,15 +51,15 @@ This usage will allow for the page anchor: `www.bbc.com/news/articles/articleID#
 
 ### When to use this component
 
-These components can be used at any point on the page, however the `Headline` and `PageHeading` are designed to be used once at the top of the page.
+These components can be used at any point on the page, however the `Headline` and `IndexH1` are designed to be used once at the top of the page.
 
-The `SubHeading` and `PageHeading` can take an optional `id` attribute which can be used as an anchor when referencing content.
+The `SubHeading` and `IndexH1` can take an optional `id` attribute which can be used as an anchor when referencing content.
 
 <!-- ### When not to use this component -->
 
 ### Accessibility notes
 
-The `SubHeading` and `PageHeading` components have a tabindex of `-1`, this ensures that these elements are focusable by assitive technology.
+The `SubHeading` and `IndexH1` components have a tabindex of `-1`, this ensures that these elements are focusable by assitive technology.
 
 <!-- ## Roadmap -->
 

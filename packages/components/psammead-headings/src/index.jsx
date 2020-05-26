@@ -54,7 +54,7 @@ SubHeading.propTypes = {
   service: string.isRequired,
 };
 
-export const PageHeading = styled.h1.attrs(() => ({
+export const IndexH1 = styled.h1.attrs(() => ({
   tabIndex: '-1',
 }))`
   color: ${C_METAL};
@@ -63,7 +63,7 @@ export const PageHeading = styled.h1.attrs(() => ({
   margin: 0;
 `;
 
-PageHeading.propTypes = {
+IndexH1.propTypes = {
   script: shape(scriptPropType).isRequired,
   service: string.isRequired,
 };
