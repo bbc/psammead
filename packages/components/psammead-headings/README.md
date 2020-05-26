@@ -57,9 +57,7 @@ These components can be used at any point on the page, however the `Headline` an
 
 ### Accessibility notes
 
-The `SubHeading` component has a tabindex of `-1` so that it works correctly with screen readers when navigated to via a skip link.
-
-The `Heading` has an id of `content` so it can be announced by screen readers when activating the `Skip to content` link.
+The `SubHeading` and `PageHeading` component have a tabindex of `-1` so that they work correctly with screen readers when navigated to via a skip link.
 
 <!-- ## Roadmap -->
 

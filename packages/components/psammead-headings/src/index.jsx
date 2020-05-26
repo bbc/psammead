@@ -62,6 +62,7 @@ SubHeading.propTypes = {
 
 export const PageHeading = styled.h1.attrs(() => ({
   id: 'content',
+  tabIndex: '-1',
 }))`
   color: ${C_METAL};
   ${({ script }) => script && getDoublePica(script)};
