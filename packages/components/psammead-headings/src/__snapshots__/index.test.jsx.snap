@@ -117,6 +117,7 @@ exports[`Page Heading should render correctly 1`] = `
 <h1
   class="c0"
   id="content"
+  tabindex="-1"
 >
   This is a page heading
 </h1>
@@ -163,6 +164,7 @@ exports[`Page Heading should render correctly with arabic script typography valu
 <h1
   class="c0"
   id="content"
+  tabindex="-1"
 >
   هذا عنوان الصفحة
 </h1>
@@ -177,11 +179,6 @@ exports[`SubHeading component should render correctly 1`] = `
   font-style: normal;
   color: #3F3F42;
   margin: 0;
-  padding: 1.5rem 0;
-}
-
-.c0 37.5rem {
-  padding-top: 2rem;
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
@@ -215,11 +212,6 @@ exports[`SubHeading component should render correctly with an ID 1`] = `
   font-style: normal;
   color: #3F3F42;
   margin: 0;
-  padding: 1.5rem 0;
-}
-
-.c0 37.5rem {
-  padding-top: 2rem;
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {
@@ -254,11 +246,6 @@ exports[`SubHeading component should render correctly with arabic script typogra
   font-style: normal;
   color: #3F3F42;
   margin: 0;
-  padding: 1.5rem 0;
-}
-
-.c0 37.5rem {
-  padding-top: 2rem;
 }
 
 @media (min-width:20rem) and (max-width:37.4375rem) {

@@ -44,10 +44,6 @@ export const SubHeading = styled.h2.attrs(() => ({
   ${({ service }) => getSansBold(service)}
   color: ${C_SHADOW};
   margin: 0; /* Reset */
-  padding: ${GEL_SPACING_TRPL} 0;
-  ${GEL_GROUP_3_SCREEN_WIDTH_MIN} {
-    padding-top: ${GEL_SPACING_QUAD};
-  }
 `;
 
 Headline.propTypes = {
