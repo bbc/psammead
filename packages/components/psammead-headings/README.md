@@ -53,7 +53,7 @@ This usage will allow for the page anchor: `www.bbc.com/news/articles/articleID#
 
 These components can be used at any point on the page, however the `Headline` and `PageHeading` are designed to be used once at the top of the page.
 
-The `SubHeading` and `PageHeading` can take an optional `id` attribute to be passed to the `h2` which can be used as an anchor when referencing content.
+The `SubHeading` and `PageHeading` can take an optional `id` attribute which can be used as an anchor when referencing content.
 
 <!-- ### When not to use this component -->
 
