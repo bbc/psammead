@@ -13,10 +13,6 @@ exports[`Headline component should render correctly 1`] = `
   padding: 2rem 0;
 }
 
-.c0 37.5rem {
-  padding: 2.5rem 0;
-}
-
 @media (min-width:20rem) and (max-width:37.4375rem) {
   .c0 {
     font-size: 2rem;
@@ -28,6 +24,12 @@ exports[`Headline component should render correctly 1`] = `
   .c0 {
     font-size: 2.75rem;
     line-height: 3rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .c0 {
+    padding: 2.5rem 0;
   }
 }
 
@@ -51,10 +53,6 @@ exports[`Headline component should render correctly with arabic script typograph
   padding: 2rem 0;
 }
 
-.c0 37.5rem {
-  padding: 2.5rem 0;
-}
-
 @media (min-width:20rem) and (max-width:37.4375rem) {
   .c0 {
     font-size: 2.375rem;
@@ -66,6 +64,12 @@ exports[`Headline component should render correctly with arabic script typograph
   .c0 {
     font-size: 2.75rem;
     line-height: 3.375rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .c0 {
+    padding: 2.5rem 0;
   }
 }
 
@@ -156,10 +160,6 @@ exports[`SubHeading component should render correctly 1`] = `
   padding: 1.5rem 0;
 }
 
-.c0 37.5rem {
-  padding-top: 2rem;
-}
-
 @media (min-width:20rem) and (max-width:37.4375rem) {
   .c0 {
     font-size: 1.5rem;
@@ -171,6 +171,12 @@ exports[`SubHeading component should render correctly 1`] = `
   .c0 {
     font-size: 2rem;
     line-height: 2.25rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .c0 {
+    padding-top: 2rem;
   }
 }
 
@@ -194,10 +200,6 @@ exports[`SubHeading component should render correctly with an ID 1`] = `
   padding: 1.5rem 0;
 }
 
-.c0 37.5rem {
-  padding-top: 2rem;
-}
-
 @media (min-width:20rem) and (max-width:37.4375rem) {
   .c0 {
     font-size: 1.5rem;
@@ -209,6 +211,12 @@ exports[`SubHeading component should render correctly with an ID 1`] = `
   .c0 {
     font-size: 2rem;
     line-height: 2.25rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .c0 {
+    padding-top: 2rem;
   }
 }
 
@@ -233,10 +241,6 @@ exports[`SubHeading component should render correctly with arabic script typogra
   padding: 1.5rem 0;
 }
 
-.c0 37.5rem {
-  padding-top: 2rem;
-}
-
 @media (min-width:20rem) and (max-width:37.4375rem) {
   .c0 {
     font-size: 2rem;
@@ -248,6 +252,12 @@ exports[`SubHeading component should render correctly with arabic script typogra
   .c0 {
     font-size: 2.25rem;
     line-height: 3.125rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .c0 {
+    padding-top: 2rem;
   }
 }
 

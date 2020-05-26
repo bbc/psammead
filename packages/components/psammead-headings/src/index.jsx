@@ -26,7 +26,7 @@ export const Headline = styled.h1`
   display: block; /* Explicitly set */
   margin: 0; /* Reset */
   padding: ${GEL_SPACING_QUAD} 0;
-  ${GEL_GROUP_3_SCREEN_WIDTH_MIN} {
+  @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
     padding: ${GEL_SPACING_QUIN} 0;
   }
 `;
@@ -39,7 +39,7 @@ export const SubHeading = styled.h2.attrs(() => ({
   color: ${C_SHADOW};
   margin: 0; /* Reset */
   padding: ${GEL_SPACING_TRPL} 0;
-  ${GEL_GROUP_3_SCREEN_WIDTH_MIN} {
+  @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
     padding-top: ${GEL_SPACING_QUAD};
   }
 `;
