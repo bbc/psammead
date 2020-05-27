@@ -29,7 +29,7 @@ import { latin } from '@bbc/gel-foundations/scripts';
 
 const Wrapper = () => (
   <Fragment>
-    <HeadingIndex script={script} service={service}>
+    <HeadingIndex script={latin} service="news">
       Heading
     </HeadingIndex>
   </Fragment>
