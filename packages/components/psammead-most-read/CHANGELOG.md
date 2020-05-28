@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 4.1.3 | [PR#3468](https://github.com/bbc/psammead/pull/3468) Fix padding bottom bug |
 | 4.1.2 | [PR#3468](https://github.com/bbc/psammead/pull/3468) Talos - Bump Dependencies - @bbc/psammead-grid |
 | 4.1.1 | [PR#3467](https://github.com/bbc/psammead/pull/3467) Talos - Bump Dependencies - @bbc/psammead-styles |
 | 4.1.0 | [PR#3409](https://github.com/bbc/psammead/pull/3409) Added size prop for item and rank |
