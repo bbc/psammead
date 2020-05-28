@@ -42,7 +42,6 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
 
 .c7 {
   padding-top: 0.375rem;
-  padding-bottom: 1.5rem;
   padding-left: 1rem;
   padding-right: 1rem;
 }
@@ -61,6 +60,7 @@ exports[`MostReadList should render with ltr bengali items with correct dir 1`] 
 
 .c3 {
   position: relative;
+  padding-bottom: 1.5rem;
 }
 
 .c6 {
@@ -765,7 +765,6 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
 
 .c7 {
   padding-top: 0.375rem;
-  padding-bottom: 1.5rem;
   padding-left: 1rem;
   padding-right: 1rem;
 }
@@ -784,6 +783,7 @@ exports[`MostReadList should render with ltr burmese items with correct dir 1`] 
 
 .c3 {
   position: relative;
+  padding-bottom: 1.5rem;
 }
 
 .c6 {
@@ -1488,7 +1488,6 @@ exports[`MostReadList should render with ltr news items with a max of one column
 
 .c7 {
   padding-top: 0.375rem;
-  padding-bottom: 1.5rem;
   padding-left: 1rem;
   padding-right: 1rem;
 }
@@ -1507,6 +1506,7 @@ exports[`MostReadList should render with ltr news items with a max of one column
 
 .c3 {
   position: relative;
+  padding-bottom: 1.5rem;
 }
 
 .c6 {
@@ -2199,7 +2199,6 @@ exports[`MostReadList should render with ltr news items with a max of two column
 
 .c7 {
   padding-top: 0.375rem;
-  padding-bottom: 1.5rem;
   padding-left: 1rem;
   padding-right: 1rem;
 }
@@ -2218,6 +2217,7 @@ exports[`MostReadList should render with ltr news items with a max of two column
 
 .c3 {
   position: relative;
+  padding-bottom: 1.5rem;
 }
 
 .c6 {
@@ -2916,7 +2916,6 @@ exports[`MostReadList should render with ltr news items with a multi column layo
 
 .c7 {
   padding-top: 0.375rem;
-  padding-bottom: 1.5rem;
   padding-left: 1rem;
   padding-right: 1rem;
 }
@@ -2935,6 +2934,7 @@ exports[`MostReadList should render with ltr news items with a multi column layo
 
 .c3 {
   position: relative;
+  padding-bottom: 1.5rem;
 }
 
 .c6 {
@@ -3639,7 +3639,6 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
 
 .c7 {
   padding-top: 0.375rem;
-  padding-bottom: 1.5rem;
   padding-left: 1rem;
   padding-right: 1rem;
 }
@@ -3658,6 +3657,7 @@ exports[`MostReadList should render with ltr news items with correct dir 1`] = `
 
 .c3 {
   position: relative;
+  padding-bottom: 1.5rem;
 }
 
 .c6 {
@@ -4362,7 +4362,6 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
 
 .c7 {
   padding-top: 0.375rem;
-  padding-bottom: 1.5rem;
   padding-right: 1rem;
   padding-left: 1rem;
 }
@@ -4381,6 +4380,7 @@ exports[`MostReadList should render with rtl arabic items with correct dir 1`] =
 
 .c3 {
   position: relative;
+  padding-bottom: 1.5rem;
 }
 
 .c6 {

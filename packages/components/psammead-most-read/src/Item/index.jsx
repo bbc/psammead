@@ -71,7 +71,6 @@ const getRankPaddingStart = size =>
 
 const StyledItem = styled.div`
   padding-top: ${({ size }) => getRankPaddingTop(size)};
-  padding-bottom: ${GEL_SPACING_TRPL};
   ${paddingStart}: ${({ size }) => getRankPaddingStart(size)};
   ${paddingEnd}: ${GEL_SPACING_DBL};
 
@@ -128,6 +127,7 @@ const StyledGrid = styled(Grid).attrs({
   role: 'listitem',
 })`
   position: relative;
+  padding-bottom: ${GEL_SPACING_TRPL};
 `;
 
 export const MostReadItemWrapper = ({ dir, children, columnLayout }) => (
