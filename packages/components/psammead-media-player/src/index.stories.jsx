@@ -1,7 +1,7 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { CanonicalMediaPlayer, AmpMediaPlayer } from '.';
-import { ampDecorator } from '../../../../.storybook/config';
+import ampDecorator from '../../../../.storybook/amp-decorator';
 import notes from '../README.md';
 
 const withDuration = {
