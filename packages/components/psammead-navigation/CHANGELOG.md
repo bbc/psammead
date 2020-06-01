@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 6.0.12 | [PR#3505](https://github.com/bbc/psammead/pull/3505) Update `ampDecorator` path |
 | 6.0.11 | [PR#3467](https://github.com/bbc/psammead/pull/3467) Talos - Bump Dependencies - @bbc/psammead-styles |
 | 6.0.10 | [PR#3427](https://github.com/bbc/psammead/pull/3427) Talos - Bump Dependencies - @bbc/visually-hidden-text |
 | 6.0.9 | [PR#3397](https://github.com/bbc/psammead/pull/3397) Talos - Bump Dependencies - @bbc/psammead-styles |
