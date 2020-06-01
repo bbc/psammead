@@ -3,7 +3,8 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
-| 2.0.157 | [PR#3505](https://github.com/bbc/psammead/pull/3505) Storybook config refactor |
+| 2.0.158 | [PR#3505](https://github.com/bbc/psammead/pull/3505) Storybook config refactor |
+| 2.0.157 | [PR#3507](https://github.com/bbc/psammead/pull/3507) Talos - Bump Dependencies - @bbc/psammead-bulleted-list, @bbc/psammead-radio-schedule |
 | 2.0.156 | [PR#3504](https://github.com/bbc/psammead/pull/3504) Talos - Bump Dependencies - @bbc/psammead-most-read |
 | 2.0.155 | [PR#3485](https://github.com/bbc/psammead/pull/3485) Talos - Bump Dependencies - @bbc/psammead-timestamp-container |
 | 2.0.154 | [PR#3483](https://github.com/bbc/psammead/pull/3483) Dependency updates |
