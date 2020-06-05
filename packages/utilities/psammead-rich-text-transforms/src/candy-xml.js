@@ -57,8 +57,8 @@ const handleSupportedNodes = (childNode, attributes, acc) => {
   return [...acc, ...blocks];
 };
 
-const convertToBlocks = (node, attributes = []) => {
-  return pathOr([], ['children'], node).reduce((acc, childNode) => {
+const convertToBlocks = (node, attributes = []) =>
+  pathOr([], ['children'], node).reduce((acc, childNode) => {
     if (isXmlNodeSupported(childNode, attributes)) {
       return handleSupportedNodes(childNode, attributes, acc);
     }
@@ -70,7 +70,6 @@ const convertToBlocks = (node, attributes = []) => {
 
     return acc;
   }, []);
-};
 
 const xmlNodeToBlock = (node, attributes) => {
   if (!is(Object, node)) return undefined;
