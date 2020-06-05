@@ -36,7 +36,7 @@ exports[`SectionLabel When hideSectionHeader is true should add styling to hide 
   font-family: ReithSans,Helvetica,Arial,sans-serif;
   font-weight: 400;
   font-style: normal;
-  color: #222222;
+  color: #3F3F42;
   background-color: #FDFDFD;
   margin: 1rem 0;
   padding-right: 0.5rem;
@@ -189,7 +189,7 @@ exports[`SectionLabel With bar With linking title should render correctly 1`] = 
   font-family: ReithSans,Helvetica,Arial,sans-serif;
   font-weight: 400;
   font-style: normal;
-  color: #222222;
+  color: #3F3F42;
   background-color: #FDFDFD;
   margin: 1rem 0;
   padding-right: 0.5rem;
@@ -412,7 +412,7 @@ exports[`SectionLabel With bar With linking title should render correctly with a
   font-family: "BBC Nassim Persian",Arial,Verdana,Geneva,Helvetica,sans-serif;
   font-weight: 400;
   font-style: normal;
-  color: #222222;
+  color: #3F3F42;
   background-color: #FDFDFD;
   margin: 1rem 0;
   padding-left: 0.5rem;
@@ -635,7 +635,7 @@ exports[`SectionLabel With bar With linking title should render correctly with e
   font-family: ReithSans,Helvetica,Arial,sans-serif;
   font-weight: 400;
   font-style: normal;
-  color: #222222;
+  color: #3F3F42;
   background-color: #FDFDFD;
   margin: 1rem 0;
   padding-right: 0.5rem;
@@ -858,7 +858,7 @@ exports[`SectionLabel With bar With linking title should render correctly with e
   font-family: ReithSans,Helvetica,Arial,sans-serif;
   font-weight: 400;
   font-style: normal;
-  color: #222222;
+  color: #3F3F42;
   background-color: #FDFDFD;
   margin: 1rem 0;
   padding-right: 0.5rem;
@@ -1069,7 +1069,7 @@ exports[`SectionLabel With bar With plain title should render correctly 1`] = `
   font-family: ReithSans,Helvetica,Arial,sans-serif;
   font-weight: 400;
   font-style: normal;
-  color: #222222;
+  color: #3F3F42;
   background-color: #FDFDFD;
   margin: 1rem 0;
   padding-right: 0.5rem;
@@ -1225,7 +1225,7 @@ exports[`SectionLabel With bar With plain title should render correctly with ara
   font-family: "BBC Nassim Persian",Arial,Verdana,Geneva,Helvetica,sans-serif;
   font-weight: 400;
   font-style: normal;
-  color: #222222;
+  color: #3F3F42;
   background-color: #FDFDFD;
   margin: 1rem 0;
   padding-left: 0.5rem;
@@ -1381,7 +1381,7 @@ exports[`SectionLabel With bar With plain title should render correctly with exp
   font-family: ReithSans,Helvetica,Arial,sans-serif;
   font-weight: 400;
   font-style: normal;
-  color: #222222;
+  color: #3F3F42;
   background-color: #FDFDFD;
   margin: 1rem 0;
   padding-right: 0.5rem;
@@ -1537,7 +1537,7 @@ exports[`SectionLabel With bar With plain title should render correctly with exp
   font-family: ReithSans,Helvetica,Arial,sans-serif;
   font-weight: 400;
   font-style: normal;
-  color: #222222;
+  color: #3F3F42;
   background-color: #FDFDFD;
   margin: 1rem 0;
   padding-right: 0.5rem;
@@ -1705,7 +1705,7 @@ exports[`SectionLabel Without bar With linking title should render correctly 1`]
   font-family: ReithSans,Helvetica,Arial,sans-serif;
   font-weight: 400;
   font-style: normal;
-  color: #222222;
+  color: #3F3F42;
   background-color: #FDFDFD;
   margin: 1rem 0;
   padding-right: 0.5rem;
@@ -1905,7 +1905,7 @@ exports[`SectionLabel Without bar With linking title should render correctly wit
   font-family: "BBC Nassim Persian",Arial,Verdana,Geneva,Helvetica,sans-serif;
   font-weight: 400;
   font-style: normal;
-  color: #222222;
+  color: #3F3F42;
   background-color: #FDFDFD;
   margin: 1rem 0;
   padding-left: 0.5rem;
@@ -2105,7 +2105,7 @@ exports[`SectionLabel Without bar With linking title should render correctly wit
   font-family: ReithSans,Helvetica,Arial,sans-serif;
   font-weight: 400;
   font-style: normal;
-  color: #222222;
+  color: #3F3F42;
   background-color: #FDFDFD;
   margin: 1rem 0;
   padding-right: 0.5rem;
@@ -2293,7 +2293,7 @@ exports[`SectionLabel Without bar With plain title should render correctly 1`] =
   font-family: ReithSans,Helvetica,Arial,sans-serif;
   font-weight: 400;
   font-style: normal;
-  color: #222222;
+  color: #3F3F42;
   background-color: #FDFDFD;
   margin: 1rem 0;
   padding-right: 0.5rem;
@@ -2426,7 +2426,7 @@ exports[`SectionLabel Without bar With plain title should render correctly with 
   font-family: "BBC Nassim Persian",Arial,Verdana,Geneva,Helvetica,sans-serif;
   font-weight: 400;
   font-style: normal;
-  color: #222222;
+  color: #3F3F42;
   background-color: #FDFDFD;
   margin: 1rem 0;
   padding-left: 0.5rem;
@@ -2559,7 +2559,7 @@ exports[`SectionLabel Without bar With plain title should render correctly with 
   font-family: ReithSans,Helvetica,Arial,sans-serif;
   font-weight: 400;
   font-style: normal;
-  color: #222222;
+  color: #3F3F42;
   background-color: #FDFDFD;
   margin: 1rem 0;
   padding-right: 0.5rem;
