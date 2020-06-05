@@ -3,7 +3,7 @@ import { string, shape } from 'prop-types';
 import styled, { css } from 'styled-components';
 import { getSansRegular } from '@bbc/psammead-styles/font-styles';
 import { GEL_SPACING } from '@bbc/gel-foundations/spacings';
-import { C_POSTBOX, C_METAL, C_SHADOW } from '@bbc/psammead-styles/colours';
+import { C_METAL, C_SHADOW } from '@bbc/psammead-styles/colours';
 import { GEL_LONG_PRIMER } from '@bbc/gel-foundations/typography';
 
 const AVATAR_DIAMETER = '4rem';
@@ -40,7 +40,7 @@ const Person = styled.ul`
 `;
 
 const Name = styled.li`
-  color: ${({ avatar }) => (avatar ? C_POSTBOX : C_SHADOW)};
+  color: ${C_SHADOW};
 `;
 const Title = styled.li`
   color: ${C_METAL};
