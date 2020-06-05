@@ -57,7 +57,7 @@ exports[`AmpSocialEmbed should render a notice when the provider is unsupported 
   line-height: 1.25rem;
   border: 0.0625rem solid #AEAEB5;
   border-radius: 0.5rem;
-  color: #222222;
+  color: #3F3F42;
   padding: 1rem;
 }
 
@@ -552,7 +552,7 @@ exports[`CanonicalSocialEmbed should render a notice when the provider is unsupp
   line-height: 1.25rem;
   border: 0.0625rem solid #AEAEB5;
   border-radius: 0.5rem;
-  color: #222222;
+  color: #3F3F42;
   padding: 1rem;
 }
 
@@ -702,7 +702,7 @@ exports[`CanonicalSocialEmbed should render a notice when there is no oEmbed res
   line-height: 1.25rem;
   border: 0.0625rem solid #AEAEB5;
   border-radius: 0.5rem;
-  color: #222222;
+  color: #3F3F42;
   padding: 1rem;
 }
 
