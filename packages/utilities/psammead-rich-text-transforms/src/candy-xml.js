@@ -6,7 +6,13 @@ const is = require('ramda/src/is');
 const { fragment, urlLink } = require('./models');
 
 const attributeTags = ['bold', 'italic'];
-const supportedXmlNodeNames = ['paragraph', 'link', 'url', ...attributeTags];
+const supportedXmlNodeNames = [
+  'paragraph',
+  'link',
+  'url',
+  'span',
+  ...attributeTags,
+];
 
 const isXmlNodeSupported = node => {
   if (path(['type'], node) === 'text') {
@@ -51,8 +57,8 @@ const handleSupportedNodes = (childNode, attributes, acc) => {
   return [...acc, ...blocks];
 };
 
-const convertToBlocks = (node, attributes = []) =>
-  pathOr([], ['children'], node).reduce((acc, childNode) => {
+const convertToBlocks = (node, attributes = []) => {
+  return pathOr([], ['children'], node).reduce((acc, childNode) => {
     if (isXmlNodeSupported(childNode, attributes)) {
       return handleSupportedNodes(childNode, attributes, acc);
     }
@@ -64,6 +70,7 @@ const convertToBlocks = (node, attributes = []) =>
 
     return acc;
   }, []);
+};
 
 const xmlNodeToBlock = (node, attributes) => {
   if (!is(Object, node)) return undefined;
