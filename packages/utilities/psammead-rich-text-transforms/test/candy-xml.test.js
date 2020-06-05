@@ -366,8 +366,6 @@ test('can render spans within a paragraph', () => {
     ),
   );
 
-  console.log(JSON.stringify(richText));
-
   expect(richText).toStrictEqual({
     type: 'text',
     model: {
