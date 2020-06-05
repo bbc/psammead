@@ -5,7 +5,7 @@ const pathOr = require('ramda/src/pathOr');
 const is = require('ramda/src/is');
 const { fragment, urlLink } = require('./models');
 
-const attributeTags = ['bold', 'italic'];
+const attributeTags = ['bold', 'italic', 'span'];
 const supportedXmlNodeNames = ['paragraph', 'link', 'url', ...attributeTags];
 
 const isXmlNodeSupported = node => {

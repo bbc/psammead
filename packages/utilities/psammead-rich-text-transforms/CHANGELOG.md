@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 | ------- | ----------- |
+| 2.0.2 | [PR#3510](https://github.com/bbc/psammead/pull/3510) Add support for inline span tags |
 | 2.0.1 | [PR#3270](https://github.com/bbc/psammead/pull/3270) Fix `minimist` and `acorn` vulnerability |
 | 2.0.0 | [PR#2556](https://github.com/bbc/psammead/pull/2556) Tightened conditions for a link to be considered external |
 | 1.1.2 | [PR#2466](https://github.com/bbc/psammead/pull/2466) Package-lock updates |
