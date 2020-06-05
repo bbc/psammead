@@ -366,6 +366,8 @@ test('can render spans within a paragraph', () => {
     ),
   );
 
+  console.log(JSON.stringify(richText));
+
   expect(richText).toStrictEqual({
     type: 'text',
     model: {
@@ -383,18 +385,10 @@ test('can render spans within a paragraph', () => {
                 },
               },
               {
-                type: 'span',
+                type: 'fragment',
                 model: {
                   text: "I'm in a span tag",
-                  blocks: [
-                    {
-                      type: 'fragment',
-                      model: {
-                        text: "I'm in a span tag",
-                        attributes: [],
-                      },
-                    },
-                  ],
+                  attributes: ['span'],
                 },
               },
             ],
