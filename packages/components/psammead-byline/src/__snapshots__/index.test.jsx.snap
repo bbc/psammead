@@ -36,7 +36,7 @@ exports[`Byline should render correctly 1`] = `
 }
 
 .c3 {
-  color: #B80000;
+  color: #3F3F42;
 }
 
 .c4 {
