@@ -36,11 +36,11 @@ exports[`Byline should render correctly 1`] = `
 }
 
 .c3 {
-  color: #B80000;
+  color: #3F3F42;
 }
 
 .c4 {
-  color: #5A5A5A;
+  color: #6E6E73;
 }
 
 @media (min-width:37.5rem) {
@@ -103,11 +103,11 @@ exports[`Byline should render correctly without an avatar 1`] = `
 }
 
 .c2 {
-  color: #404040;
+  color: #3F3F42;
 }
 
 .c3 {
-  color: #5A5A5A;
+  color: #6E6E73;
 }
 
 @media (min-width:37.5rem) {
