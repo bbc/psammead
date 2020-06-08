@@ -1,7 +1,12 @@
 import React, { memo } from 'react';
 import { string } from 'prop-types';
 import styled from 'styled-components';
-import { C_PEBBLE, C_METAL, C_SHADOW } from '@bbc/psammead-styles/colours';
+import {
+  C_PEBBLE,
+  C_METAL,
+  C_EBON,
+  C_SHADOW,
+} from '@bbc/psammead-styles/colours';
 import { getSansRegular, getSansBold } from '@bbc/psammead-styles/font-styles';
 import { GEL_SPACING_DBL, GEL_SPACING } from '@bbc/gel-foundations/spacings';
 import { GEL_BODY_COPY, GEL_MINION } from '@bbc/gel-foundations/typography';
@@ -30,7 +35,7 @@ const Wrapper = styled.div`
 
   a {
     ${({ service }) => getSansBold(service)}
-    color: inherit;
+    color: ${C_EBON};
     text-decoration: none;
 
     &:visited {
