@@ -74,7 +74,6 @@ const titleMargins = `
 const Title = styled.span`
   ${({ script }) => script && getDoublePica(script)};
   ${({ service }) => getSansRegular(service)}
-  color: ${({ href }) => (href ? C_EBON : C_SHADOW)};
   background-color: ${props => props.backgroundColor};
   ${titleMargins};
   ${paddingDir}: ${GEL_SPACING};
@@ -117,7 +116,7 @@ IndexLinkCta.propTypes = {
   service: string.isRequired,
 };
 
-export const PlainTitle = ({
+const PlainTitle = ({
   children: title,
   dir,
   labelId,
@@ -152,6 +151,10 @@ PlainTitle.propTypes = {
 PlainTitle.defaultProps = {
   backgroundColor: C_GHOST,
 };
+
+export const StyledPlainTitle = styled(PlainTitle)`
+  color: ${C_SHADOW};
+`;
 
 export const LinkTitle = ({
   children: title,

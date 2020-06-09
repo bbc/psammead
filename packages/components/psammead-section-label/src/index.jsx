@@ -10,8 +10,13 @@ import {
   GEL_SPACING_TRPL,
   GEL_SPACING_QUAD,
 } from '@bbc/gel-foundations/spacings';
-import { C_PEBBLE, C_GHOST } from '@bbc/psammead-styles/colours';
-import { PlainTitle, LinkTitle } from './titles';
+import {
+  C_PEBBLE,
+  C_GHOST,
+  C_EBON,
+  C_SHADOW,
+} from '@bbc/psammead-styles/colours';
+import { StyledPlainTitle, LinkTitle } from './titles';
 
 const Bar = styled.div`
   border-top: 0.0625rem solid ${C_PEBBLE};
@@ -35,6 +40,7 @@ const Bar = styled.div`
 const SectionLabelWrapper = styled.div`
   position: relative;
   z-index: 0;
+  color: ${({ SectionLinkLabel }) => (SectionLinkLabel ? C_EBON : C_SHADOW)};
 
   margin-top: ${GEL_SPACING_QUAD};
 
@@ -98,7 +104,7 @@ const SectionLabel = ({
           {title}
         </LinkTitle>
       ) : (
-        <PlainTitle
+        <StyledPlainTitle
           dir={dir}
           labelId={labelId}
           script={script}
@@ -106,7 +112,7 @@ const SectionLabel = ({
           backgroundColor={backgroundColor}
         >
           {title}
-        </PlainTitle>
+        </StyledPlainTitle>
       )}
     </Heading>
   </SectionLabelWrapper>
