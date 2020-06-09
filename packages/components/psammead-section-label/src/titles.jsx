@@ -9,7 +9,7 @@ import {
 } from '@bbc/gel-foundations/breakpoints';
 import { GEL_SPACING, GEL_SPACING_DBL } from '@bbc/gel-foundations/spacings';
 import { getLongPrimer, getDoublePica } from '@bbc/gel-foundations/typography';
-import { C_EBON, C_GHOST, C_SHADOW } from '@bbc/psammead-styles/colours';
+import { C_EBON, C_GHOST } from '@bbc/psammead-styles/colours';
 import { getSansBold, getSansRegular } from '@bbc/psammead-styles/font-styles';
 
 const minClickableHeightPx = 44;
@@ -116,7 +116,7 @@ IndexLinkCta.propTypes = {
   service: string.isRequired,
 };
 
-const PlainTitle = ({
+export const PlainTitle = ({
   children: title,
   dir,
   labelId,
@@ -151,10 +151,6 @@ PlainTitle.propTypes = {
 PlainTitle.defaultProps = {
   backgroundColor: C_GHOST,
 };
-
-export const StyledPlainTitle = styled(PlainTitle)`
-  color: ${C_SHADOW};
-`;
 
 export const LinkTitle = ({
   children: title,
