@@ -10,7 +10,7 @@ import {
   GEL_SPACING_TRPL,
   GEL_SPACING_QUAD,
 } from '@bbc/gel-foundations/spacings';
-import { C_PEBBLE, C_GHOST } from '@bbc/psammead-styles/colours';
+import { C_PEBBLE, C_GHOST, C_SHADOW } from '@bbc/psammead-styles/colours';
 import { PlainTitle, LinkTitle } from './titles';
 
 const Bar = styled.div`
@@ -35,6 +35,7 @@ const Bar = styled.div`
 const SectionLabelWrapper = styled.div`
   position: relative;
   z-index: 0;
+  color: ${C_SHADOW};
 
   margin-top: ${GEL_SPACING_QUAD};
 
