@@ -1,6 +1,6 @@
 {
   "name": "@bbc/psammead-timestamp-container",
-  "version": "4.0.0",
+  "version": "4.0.1",
   "main": "dist/index.js",
   "module": "esm/index.js",
   "sideEffects": false,
@@ -30,7 +30,7 @@
     "moment-timezone": "^0.5.26"
   },
   "devDependencies": {
-    "@bbc/psammead-locales": "^4.1.8"
+    "@bbc/psammead-locales": "^4.1.9"
   },
   "peerDependencies": {
     "react": "^16.9.0",

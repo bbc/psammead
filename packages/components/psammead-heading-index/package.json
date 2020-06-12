@@ -1,6 +1,6 @@
 {
   "name": "@bbc/psammead-heading-index",
-  "version": "1.0.0-alpha.1",
+  "version": "1.0.0",
   "main": "dist/index.js",
   "module": "esm/index.js",
   "sideEffects": false,
@@ -29,8 +29,5 @@
     "bbc",
     "heading",
     "index"
-  ],
-  "publishConfig": {
-    "tag": "alpha"
-  }
+  ]
 }

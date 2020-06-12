@@ -3,7 +3,13 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
-| 2.0.158 | [PR#3505](https://github.com/bbc/psammead/pull/3505) Storybook config refactor |
+| 2.0.164 | [PR#3505](https://github.com/bbc/psammead/pull/3505) Storybook config refactor |
+| 2.0.163 | [PR#3528](https://github.com/bbc/psammead/pull/3528) Talos - Bump Dependencies - @bbc/psammead-section-label |
+| 2.0.162 | [PR#3526](https://github.com/bbc/psammead/pull/3526) Talos - Bump Dependencies - @bbc/psammead-radio-schedule |
+| 2.0.161 | [PR#3525](https://github.com/bbc/psammead/pull/3525) Talos - Bump Dependencies - @bbc/psammead-calendars, @bbc/psammead-timestamp-container |
+| 2.0.160 | [PR#3524](https://github.com/bbc/psammead/pull/3524) Talos - Bump Dependencies - @bbc/psammead-locales |
+| 2.0.159 | [PR#3523](https://github.com/bbc/psammead/pull/3523) Dependency updates |
+| 2.0.158 | [PR#3508](https://github.com/bbc/psammead/pull/3508) Dependency updates |
 | 2.0.157 | [PR#3507](https://github.com/bbc/psammead/pull/3507) Talos - Bump Dependencies - @bbc/psammead-bulleted-list, @bbc/psammead-radio-schedule |
 | 2.0.156 | [PR#3504](https://github.com/bbc/psammead/pull/3504) Talos - Bump Dependencies - @bbc/psammead-most-read |
 | 2.0.155 | [PR#3485](https://github.com/bbc/psammead/pull/3485) Talos - Bump Dependencies - @bbc/psammead-timestamp-container |

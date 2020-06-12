@@ -359,6 +359,44 @@ test('can render bold italic text within a paragraph', () => {
   });
 });
 
+test('can render spans within a paragraph', () => {
+  const richText = candyXmlToRichText(
+    createBody(
+      "<paragraph>Text before span <span>I'm in a span tag</span></paragraph>",
+    ),
+  );
+
+  expect(richText).toStrictEqual({
+    type: 'text',
+    model: {
+      blocks: [
+        {
+          type: 'paragraph',
+          model: {
+            text: "Text before span I'm in a span tag",
+            blocks: [
+              {
+                type: 'fragment',
+                model: {
+                  text: 'Text before span ',
+                  attributes: [],
+                },
+              },
+              {
+                type: 'fragment',
+                model: {
+                  text: "I'm in a span tag",
+                  attributes: ['span'],
+                },
+              },
+            ],
+          },
+        },
+      ],
+    },
+  });
+});
+
 test('can render bold and italic text within a paragraph', () => {
   const richText = candyXmlToRichText(
     createBody(
