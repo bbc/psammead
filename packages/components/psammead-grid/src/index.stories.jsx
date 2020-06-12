@@ -1330,9 +1330,7 @@ storiesOf(STORY_KIND, module)
               group5: 8,
             }}
           >
-            {generateStory({
-              promoType: 'top',
-            })}
+            {generateStory({ promoType: 'top' })}
           </Grid>
           <Grid
             dir={dir}
