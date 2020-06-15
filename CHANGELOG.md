@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 2.0.164 | [PR#3529](https://github.com/bbc/psammead/pull/3529) Adding a security policy |
 | 2.0.163 | [PR#3528](https://github.com/bbc/psammead/pull/3528) Talos - Bump Dependencies - @bbc/psammead-section-label |
 | 2.0.162 | [PR#3526](https://github.com/bbc/psammead/pull/3526) Talos - Bump Dependencies - @bbc/psammead-radio-schedule |
 | 2.0.161 | [PR#3525](https://github.com/bbc/psammead/pull/3525) Talos - Bump Dependencies - @bbc/psammead-calendars, @bbc/psammead-timestamp-container |
