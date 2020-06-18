@@ -3,6 +3,12 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 4.1.3 | [PR#3502](https://github.com/bbc/psammead/pull/3502) Fix padding bottom bug |
+| 4.1.2 | [PR#3468](https://github.com/bbc/psammead/pull/3468) Talos - Bump Dependencies - @bbc/psammead-grid |
+| 4.1.1 | [PR#3467](https://github.com/bbc/psammead/pull/3467) Talos - Bump Dependencies - @bbc/psammead-styles |
+| 4.1.0 | [PR#3409](https://github.com/bbc/psammead/pull/3409) Added size prop for item and rank |
+| 4.0.6 | [PR#3398](https://github.com/bbc/psammead/pull/3398) Talos - Bump Dependencies - @bbc/psammead-grid |
+| 4.0.5 | [PR#3397](https://github.com/bbc/psammead/pull/3397) Talos - Bump Dependencies - @bbc/psammead-grid, @bbc/psammead-styles |
 | 4.0.4 | [PR#3317](https://github.com/bbc/psammead/pull/3317) Update rank min-width for persian and pashto |
 | 4.0.3 | [PR#3291](https://github.com/bbc/psammead/pull/3291) Use withServicesKnob `selectedService` prop |
 | 4.0.2 | [PR#3243](https://github.com/bbc/psammead/pull/3243) Fixes most-read IE11 `oneColumn` layout bugs |

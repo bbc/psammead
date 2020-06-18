@@ -3,6 +3,50 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 2.0.164 | [PR#3529](https://github.com/bbc/psammead/pull/3529) Adding a security policy |
+| 2.0.163 | [PR#3528](https://github.com/bbc/psammead/pull/3528) Talos - Bump Dependencies - @bbc/psammead-section-label |
+| 2.0.162 | [PR#3526](https://github.com/bbc/psammead/pull/3526) Talos - Bump Dependencies - @bbc/psammead-radio-schedule |
+| 2.0.161 | [PR#3525](https://github.com/bbc/psammead/pull/3525) Talos - Bump Dependencies - @bbc/psammead-calendars, @bbc/psammead-timestamp-container |
+| 2.0.160 | [PR#3524](https://github.com/bbc/psammead/pull/3524) Talos - Bump Dependencies - @bbc/psammead-locales |
+| 2.0.159 | [PR#3523](https://github.com/bbc/psammead/pull/3523) Dependency updates |
+| 2.0.158 | [PR#3508](https://github.com/bbc/psammead/pull/3508) Dependency updates |
+| 2.0.157 | [PR#3507](https://github.com/bbc/psammead/pull/3507) Talos - Bump Dependencies - @bbc/psammead-bulleted-list, @bbc/psammead-radio-schedule |
+| 2.0.156 | [PR#3504](https://github.com/bbc/psammead/pull/3504) Talos - Bump Dependencies - @bbc/psammead-most-read |
+| 2.0.155 | [PR#3485](https://github.com/bbc/psammead/pull/3485) Talos - Bump Dependencies - @bbc/psammead-timestamp-container |
+| 2.0.154 | [PR#3483](https://github.com/bbc/psammead/pull/3483) Dependency updates |
+| 2.0.153 | [PR#3482](https://github.com/bbc/psammead/pull/3482) Talos - Bump Dependencies - @bbc/psammead-brand, @bbc/psammead-bulletin, @bbc/psammead-media-player, @bbc/psammead-most-read, @bbc/psammead-radio-schedule |
+| 2.0.152 | [PR#3475](https://github.com/bbc/psammead/pull/3475) Talos - Bump Dependencies - @bbc/psammead-timestamp-container |
+| 2.0.151 | [PR#3471](https://github.com/bbc/psammead/pull/3471) Talos - Bump Dependencies - @bbc/psammead-section-label |
+| 2.0.150 | [PR#3468](https://github.com/bbc/psammead/pull/3468) Talos - Bump Dependencies - @bbc/psammead-brand, @bbc/psammead-bulleted-list, @bbc/psammead-bulletin, @bbc/psammead-byline, @bbc/psammead-caption, @bbc/psammead-consent-banner, @bbc/psammead-copyright, @bbc/psammead-grid, @bbc/psammead-headings, @bbc/psammead-image-placeholder, @bbc/psammead-inline-link, @bbc/psammead-media-indicator, @bbc/psammead-most-read, @bbc/psammead-navigation, @bbc/psammead-paragraph, @bbc/psammead-play-button, @bbc/psammead-radio-schedule, @bbc/psammead-script-link, @bbc/psammead-section-label, @bbc/psammead-sitewide-links, @bbc/psammead-story-promo, @bbc/psammead-story-promo-list, @bbc/psammead-timestamp, @bbc/psammead-useful-links |
+| 2.0.149 | [PR#3467](https://github.com/bbc/psammead/pull/3467) Talos - Bump Dependencies - @bbc/psammead-styles |
+| 2.0.148 | [PR#3465](https://github.com/bbc/psammead/pull/3465) Talos - Bump Dependencies - @bbc/psammead-radio-schedule |
+| 2.0.147 | [PR#3463](https://github.com/bbc/psammead/pull/3463) Dependency updates |
+| 2.0.146 | [PR#3459](https://github.com/bbc/psammead/pull/3459) Talos - Bump Dependencies - @bbc/psammead-timestamp-container |
+| 2.0.145 | [PR#3453](https://github.com/bbc/psammead/pull/3453) Import updated psammead-locales to storybook config |
+| 2.0.144 | [PR#3455](https://github.com/bbc/psammead/pull/3455) Dependency updates |
+| 2.0.143 | [PR#3456](https://github.com/bbc/psammead/pull/3456) Talos - Bump Dependencies - @bbc/psammead-radio-schedule |
+| 2.0.142 | [PR#3451](https://github.com/bbc/psammead/pull/3451) Talos - Bump Dependencies - @bbc/psammead-radio-schedule |
+| 2.0.141 | [PR#3408](https://github.com/bbc/psammead/pull/3408) Include @bbc/psammead-detokeniser in devDependencies |
+| 2.0.140 | [PR#3443](https://github.com/bbc/psammead/pull/3443) Talos - Bump Dependencies - @bbc/psammead-brand, @bbc/psammead-bulletin, @bbc/psammead-navigation, @bbc/psammead-radio-schedule |
+| 2.0.139 | [PR#3427](https://github.com/bbc/psammead/pull/3427) Dependency updates |
+| 2.0.138 | [PR#3442](https://github.com/bbc/psammead/pull/3442) Add links to Code Reviews guide |
+| 2.0.137 | [PR#3414](https://github.com/bbc/psammead/pull/3414) Talos - Bump Dependencies - @bbc/psammead-calendars, @bbc/psammead-timestamp-container |
+| 2.0.136 | [PR#3413](https://github.com/bbc/psammead/pull/3413) Talos - Bump Dependencies - @bbc/psammead-locales |
+| 2.0.135 | [PR#3407](https://github.com/bbc/psammead/pull/3407) Talos - Bump Dependencies - @bbc/psammead-timestamp-container |
+| 2.0.134 | [PR#3405](https://github.com/bbc/psammead/pull/3405) Talos - Bump Dependencies - @bbc/psammead-radio-schedule |
+| 2.0.133 | [PR#3402](https://github.com/bbc/psammead/pull/3402) Dependency updates |
+| 2.0.132 | [PR#3401](https://github.com/bbc/psammead/pull/3401) Talos - Bump Dependencies - @bbc/psammead-radio-schedule |
+| 2.0.131 | [PR#3400](https://github.com/bbc/psammead/pull/3400) Talos - Bump Dependencies - @bbc/psammead-brand, @bbc/psammead-bulletin, @bbc/psammead-media-player, @bbc/psammead-most-read, @bbc/psammead-radio-schedule, @bbc/psammead-timestamp-container |
+| 2.0.130 | [PR#3398](https://github.com/bbc/psammead/pull/3398) Talos - Bump Dependencies - @bbc/psammead-brand, @bbc/psammead-bulleted-list, @bbc/psammead-bulletin, @bbc/psammead-byline, @bbc/psammead-calendars, @bbc/psammead-caption, @bbc/psammead-consent-banner, @bbc/psammead-copyright, @bbc/psammead-grid, @bbc/psammead-headings, @bbc/psammead-image-placeholder, @bbc/psammead-inline-link, @bbc/psammead-media-indicator, @bbc/psammead-most-read, @bbc/psammead-navigation, @bbc/psammead-paragraph, @bbc/psammead-play-button, @bbc/psammead-radio-schedule, @bbc/psammead-script-link, @bbc/psammead-section-label, @bbc/psammead-sitewide-links, @bbc/psammead-story-promo, @bbc/psammead-story-promo-list, @bbc/psammead-timestamp, @bbc/psammead-timestamp-container, @bbc/psammead-useful-links |
+| 2.0.129 | [PR#3397](https://github.com/bbc/psammead/pull/3397) Talos - Bump Dependencies - @bbc/psammead-brand, @bbc/psammead-grid, @bbc/psammead-locales, @bbc/psammead-radio-schedule, @bbc/psammead-styles, @bbc/psammead-timestamp-container |
+| 2.0.128 | [PR#3390](https://github.com/bbc/psammead/pull/3390) Bump prettier major version and disable rule for brackets around a single prop |
+| 2.0.127 | [PR#3392](https://github.com/bbc/psammead/pull/3392) Talos - Bump Dependencies - @bbc/psammead-media-player, @bbc/psammead-navigation, @bbc/psammead-radio-schedule, @bbc/psammead-storybook-helpers, @bbc/psammead-test-helpers |
+| 2.0.126 | [PR#3388](https://github.com/bbc/psammead/pull/3388) Update react-helmet to 6.0.0 |
+| 2.0.125 | [PR#3387](https://github.com/bbc/psammead/pull/3387) Talos - Bump Dependencies - @bbc/psammead-bulletin, @bbc/psammead-calendars, @bbc/psammead-image-placeholder, @bbc/psammead-media-indicator, @bbc/psammead-navigation, @bbc/psammead-play-button, @bbc/psammead-timestamp-container |
+| 2.0.124 | [PR#3382](https://github.com/bbc/psammead/pull/3382) Dependency updates |
+| 2.0.123 | [PR#3362](https://github.com/bbc/psammead/pull/3362) Update to Node v12.16.2 and npm 6.14.4 |
+| 2.0.122 | [PR#3381](https://github.com/bbc/psammead/pull/3381) Talos - Bump Dependencies - @bbc/psammead-assets, @bbc/psammead-locales, @bbc/psammead-radio-schedule |
+| 2.0.121 | [PR#3379](https://github.com/bbc/psammead/pull/3379) Talos - Bump Dependencies - @bbc/psammead-storybook-helpers |
 | 2.0.120 | [PR#3359](https://github.com/bbc/psammead/pull/3359) Talos - Bump Dependencies - @bbc/psammead-brand, @bbc/psammead-bulletin |
 | 2.0.119 | [PR#3356](https://github.com/bbc/psammead/pull/3356) Talos - Bump Dependencies - @bbc/psammead-radio-schedule, @bbc/psammead-story-promo |
 | 2.0.118 | [PR#3354](https://github.com/bbc/psammead/pull/3354) Talos - Bump Dependencies - @bbc/psammead-calendars, @bbc/psammead-timestamp-container |

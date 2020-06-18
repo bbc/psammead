@@ -3,6 +3,14 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 3.2.3 | [PR#3468](https://github.com/bbc/psammead/pull/3468) Talos - Bump Dependencies - @bbc/psammead-story-promo |
+| 3.2.2 | [PR#3467](https://github.com/bbc/psammead/pull/3467) Talos - Bump Dependencies - @bbc/psammead-styles |
+| 3.2.1 | [PR#3427](https://github.com/bbc/psammead/pull/3427) Talos - Bump Dependencies - @bbc/psammead-story-promo |
+| 3.2.0 | [PR#3431](https://github.com/bbc/psammead/pull/3431) Do not render paragraph when summary is not available |
+| 3.1.0 | [PR#3430](https://github.com/bbc/psammead/pull/3430) Change default `lang` prop to `null` |
+| 3.0.5 | [PR#3398](https://github.com/bbc/psammead/pull/3398) Talos - Bump Dependencies - @bbc/psammead-story-promo |
+| 3.0.4 | [PR#3397](https://github.com/bbc/psammead/pull/3397) Talos - Bump Dependencies - @bbc/psammead-styles |
+| 3.0.3 | [PR#3381](https://github.com/bbc/psammead/pull/3381) Talos - Bump Dependencies - @bbc/psammead-assets |
 | 3.0.2 | [PR#3356](https://github.com/bbc/psammead/pull/3356) Talos - Bump Dependencies - @bbc/psammead-story-promo |
 | 3.0.1 | [PR#3264](https://github.com/bbc/psammead/pull/3264) Use `LiveLabel` component |
 | 3.0.0 | [PR#3208](https://github.com/bbc/psammead/pull/3208) Update live label usage, update major version of story promo |

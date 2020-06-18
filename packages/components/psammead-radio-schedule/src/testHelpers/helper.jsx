@@ -6,12 +6,6 @@ import React from 'react';
 import ProgramCard from '../ProgramCard';
 import RadioSchedule from '../index';
 
-export const sentenceCase = text =>
-  text
-    .toLowerCase()
-    .charAt(0)
-    .toUpperCase() + text.substring(1);
-
 // Will remove and clean up in future PRs
 export const stateTypes = ['live', 'onDemand', 'onDemand', 'next'];
 export const uniqueStates = ['live', 'onDemand', 'next'];
@@ -19,7 +13,7 @@ export const uniqueStates = ['live', 'onDemand', 'next'];
 const getSchedule = (service, withLongSummary) => {
   const { text, articlePath, longText, timezone } = TEXT_VARIANTS[service];
   const programDurationLabel =
-    service === 'arabic' ? 'المدة الزمنية' : 'Duration';
+    service === 'arabic' ? 'المدة الزمنية %duration%' : 'Duration %duration%';
 
   return stateTypes.map((state, index) => ({
     id: index,
@@ -41,14 +35,15 @@ export const renderProgramCard = ({
   state,
   service = 'news',
   duration = 'PT30M',
-  durationLabel = 'Duration',
+  durationLabel = 'Duration %duration%',
   startTime = 1566914061212,
   displaySummary = boolean('show summary', true),
 }) => {
   const { text, articlePath, longText, dir, locale, timezone } = TEXT_VARIANTS[
     service
   ];
-  const programDurationLabel = dir === 'rtl' ? 'المدة الزمنية' : durationLabel;
+  const programDurationLabel =
+    dir === 'rtl' ? 'المدة الزمنية %duration%' : durationLabel;
   const nextLabel = dir === 'rtl' ? 'مباشر' : 'NEXT';
   const liveLabel = dir === 'rtl' ? 'مباشر' : 'LIVE';
 
@@ -83,6 +78,8 @@ export const renderRadioSchedule = ({
 }) => {
   const nextLabel = dir === 'rtl' ? 'مباشر' : 'NEXT';
   const liveLabel = dir === 'rtl' ? 'مباشر' : 'LIVE';
+  const durationLabel =
+    dir === 'rtl' ? 'المدة الزمنية %duration%' : 'Duration %duration%';
 
   return (
     <RadioSchedule
@@ -93,6 +90,7 @@ export const renderRadioSchedule = ({
       service={service}
       nextLabel={nextLabel}
       liveLabel={liveLabel}
+      durationLabel={durationLabel}
       dir={dir}
     />
   );

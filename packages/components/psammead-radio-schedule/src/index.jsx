@@ -42,16 +42,9 @@ const renderSchedule = ({
   program,
   nextLabel,
   liveLabel,
+  durationLabel,
 }) => {
-  const {
-    state,
-    startTime,
-    link,
-    brandTitle,
-    summary,
-    duration,
-    durationLabel,
-  } = program;
+  const { state, startTime, link, brandTitle, summary, duration } = program;
 
   return (
     <>
@@ -144,7 +137,6 @@ const programPropTypes = shape({
   brandTitle: string.isRequired,
   summary: string,
   duration: string.isRequired,
-  durationLabel: string.isRequired,
 });
 
 const sharedProps = {
@@ -154,6 +146,7 @@ const sharedProps = {
   script: shape(scriptPropType).isRequired,
   nextLabel: string.isRequired,
   liveLabel: string.isRequired,
+  durationLabel: string.isRequired,
   dir: oneOf(['rtl', 'ltr']),
 };
 

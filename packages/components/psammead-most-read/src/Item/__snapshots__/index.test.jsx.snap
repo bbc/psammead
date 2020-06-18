@@ -34,7 +34,6 @@ exports[`MostReadItemWrapper should render ltr correctly with 10 items 1`] = `
 
 .c5 {
   padding-top: 0.375rem;
-  padding-bottom: 1.5rem;
   padding-left: 1rem;
   padding-right: 1rem;
 }
@@ -53,6 +52,7 @@ exports[`MostReadItemWrapper should render ltr correctly with 10 items 1`] = `
 
 .c1 {
   position: relative;
+  padding-bottom: 1.5rem;
 }
 
 .c4 {
@@ -726,7 +726,6 @@ exports[`MostReadItemWrapper should render rtl correctly with 10 items 1`] = `
 
 .c5 {
   padding-top: 0.375rem;
-  padding-bottom: 1.5rem;
   padding-right: 1rem;
   padding-left: 1rem;
 }
@@ -745,6 +744,7 @@ exports[`MostReadItemWrapper should render rtl correctly with 10 items 1`] = `
 
 .c1 {
   position: relative;
+  padding-bottom: 1.5rem;
 }
 
 .c4 {
@@ -1418,7 +1418,6 @@ exports[`MostReadLink should render ltr correctly 1`] = `
 
 .c0 {
   padding-top: 0.375rem;
-  padding-bottom: 1.5rem;
   padding-left: 1rem;
   padding-right: 1rem;
 }
@@ -1497,7 +1496,6 @@ exports[`MostReadLink should render rtl correctly 1`] = `
 
 .c0 {
   padding-top: 0.375rem;
-  padding-bottom: 1.5rem;
   padding-right: 1rem;
   padding-left: 1rem;
 }
@@ -1576,7 +1574,6 @@ exports[`MostReadLink should render with last updated date correctly 1`] = `
 
 .c0 {
   padding-top: 0.375rem;
-  padding-bottom: 1.5rem;
   padding-left: 1rem;
   padding-right: 1rem;
 }

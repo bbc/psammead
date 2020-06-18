@@ -7,8 +7,6 @@ import {
 } from '@bbc/psammead-storybook-helpers';
 import Image from '@bbc/psammead-image';
 import StoryPromo, { Headline, Summary, Link } from '@bbc/psammead-story-promo';
-import IndexAlsosContainer from '../../psammead-story-promo/testHelpers/IndexAlsosContainer';
-import relatedItems from '../../psammead-story-promo/testHelpers/relatedItems';
 import Grid from '.';
 import {
   ExampleImage,
@@ -1250,7 +1248,7 @@ storiesOf(STORY_KIND, module)
     'Example with Top story and regular promos',
     ({ service, script, dir, text }) => {
       // eslint-disable-next-line react/prop-types
-      const generateStory = ({ promoType, alsoItems = null, mediaType }) => {
+      const generateStory = ({ promoType, mediaType }) => {
         const MediaIndicatorComponent = () => (
           <ExampleMediaIndicator
             dir={dir}
@@ -1274,14 +1272,6 @@ storiesOf(STORY_KIND, module)
                 ? 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.'
                 : text}
             </Summary>
-            {promoType === 'top' && alsoItems && (
-              <IndexAlsosContainer
-                alsoItems={alsoItems}
-                script={script}
-                service={service}
-                dir={dir}
-              />
-            )}
           </>
         );
 
@@ -1340,13 +1330,7 @@ storiesOf(STORY_KIND, module)
               group5: 8,
             }}
           >
-            {generateStory({
-              promoType: 'top',
-              alsoItems: relatedItems.map(item => ({
-                ...item,
-                headlines: { headline: text },
-              })),
-            })}
+            {generateStory({ promoType: 'top' })}
           </Grid>
           <Grid
             dir={dir}

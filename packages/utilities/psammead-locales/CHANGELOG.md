@@ -3,6 +3,9 @@
 <!-- prettier-ignore -->
 | Version | Description |
 | ------- | ----------- |
+| 4.1.9 | [PR#3523](https://github.com/bbc/psammead/pull/3523) Fix ESLint issue |
+| 4.1.8 | [PR#3412](https://github.com/bbc/psammead/pull/3412) Update Swahili relative timestamps |
+| 4.1.7 | [PR#3390](https://github.com/bbc/psammead/pull/3390) Bump prettier major version and disable rule for brackets around a single prop |
 | 4.1.6 | [PR#3357](https://github.com/bbc/psammead/pull/3357) Update Pashto date format for LL & LLL |
 | 4.1.5 | [PR#3351](https://github.com/bbc/psammead/pull/3351) Update Arabic translation for hours |
 | 4.1.4 | [PR#3250](https://github.com/bbc/psammead/pull/3250) Update Marathi translations |

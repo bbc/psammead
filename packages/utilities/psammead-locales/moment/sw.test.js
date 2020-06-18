@@ -110,15 +110,15 @@ test('format week', function () {
 test('from', function () {
   var start = moment([2007, 1, 28]);
   assert.equal(start.from(moment([2007, 1, 28]).add({s: 44}), true),  'hivi punde',   '44 seconds = a few seconds');
-  assert.equal(start.from(moment([2007, 1, 28]).add({s: 45}), true),  'dakika moja',  '45 seconds = a minute');
-  assert.equal(start.from(moment([2007, 1, 28]).add({s: 89}), true),  'dakika moja',  '89 seconds = a minute');
-  assert.equal(start.from(moment([2007, 1, 28]).add({s: 90}), true),  'dakika 2',     '90 seconds = 2 minutes');
-  assert.equal(start.from(moment([2007, 1, 28]).add({m: 44}), true),  'dakika 44',    '44 minutes = 44 minutes');
-  assert.equal(start.from(moment([2007, 1, 28]).add({m: 45}), true),  'saa limoja',   '45 minutes = an hour');
-  assert.equal(start.from(moment([2007, 1, 28]).add({m: 89}), true),  'saa limoja',   '89 minutes = an hour');
-  assert.equal(start.from(moment([2007, 1, 28]).add({m: 90}), true),  'masaa 2',      '90 minutes = 2 hours');
-  assert.equal(start.from(moment([2007, 1, 28]).add({h: 5}), true),   'masaa 5',      '5 hours = 5 hours');
-  assert.equal(start.from(moment([2007, 1, 28]).add({h: 21}), true),  'masaa 21',     '21 hours = 21 hours');
+  assert.equal(start.from(moment([2007, 1, 28]).add({s: 45}), true),  'Dakika 1',  '45 seconds = a minute');
+  assert.equal(start.from(moment([2007, 1, 28]).add({s: 89}), true),  'Dakika 1',  '89 seconds = a minute');
+  assert.equal(start.from(moment([2007, 1, 28]).add({s: 90}), true),  'Dakika 2',     '90 seconds = 2 minutes');
+  assert.equal(start.from(moment([2007, 1, 28]).add({m: 44}), true),  'Dakika 44',    '44 minutes = 44 minutes');
+  assert.equal(start.from(moment([2007, 1, 28]).add({m: 45}), true),  'Saa 1',   '45 minutes = an hour');
+  assert.equal(start.from(moment([2007, 1, 28]).add({m: 89}), true),  'Saa 1',   '89 minutes = an hour');
+  assert.equal(start.from(moment([2007, 1, 28]).add({m: 90}), true),  'Saa 2',      '90 minutes = 2 hours');
+  assert.equal(start.from(moment([2007, 1, 28]).add({h: 5}), true),   'Saa 5',      '5 hours = 5 hours');
+  assert.equal(start.from(moment([2007, 1, 28]).add({h: 21}), true),  'Saa 21',     '21 hours = 21 hours');
   assert.equal(start.from(moment([2007, 1, 28]).add({h: 22}), true),  'siku moja',    '22 hours = a day');
   assert.equal(start.from(moment([2007, 1, 28]).add({h: 35}), true),  'siku moja',    '35 hours = a day');
   assert.equal(start.from(moment([2007, 1, 28]).add({h: 36}), true),  'masiku 2',     '36 hours = 2 days');
@@ -141,14 +141,18 @@ test('from', function () {
 
 test('suffix', function () {
   assert.equal(moment(30000).from(0), 'hivi punde baadaye',  'prefix');
-  assert.equal(moment(0).from(30000), 'tokea hivi punde', 'suffix');
+  assert.equal(moment(0).from(30000), 'sekunde chache zilizopita', 'suffix');
 });
 
 test('now from now', function () {
-  assert.equal(moment().fromNow(), 'tokea hivi punde',  'now from now should display as in the past');
+  assert.equal(moment().fromNow(), 'sekunde chache zilizopita',  'now from now should display as in the past');
 });
 
 test('fromNow', function () {
+  assert.equal(moment().subtract({m: 1}).fromNow(), 'Dakika 1 iliyopita', '1 minute ago');
+  assert.equal(moment().subtract({m: 5}).fromNow(), 'Dakika 5 zilizopita', '5 minutes ago');
+  assert.equal(moment().subtract({h: 1}).fromNow(), 'Saa 1 iliyopita', '1 hour ago');
+  assert.equal(moment().subtract({h: 5}).fromNow(), 'Saa 5 zilizopita', '5 hours ago');
   assert.equal(moment().add({s: 30}).fromNow(), 'hivi punde baadaye', 'in a few seconds');
   assert.equal(moment().add({d: 5}).fromNow(), 'masiku 5 baadaye', 'in 5 days');
 });

@@ -3,6 +3,12 @@
 <!-- prettier-ignore -->
 | Version | Description |
 | ------- | ----------- |
+| 5.1.22 | [PR#3468](https://github.com/bbc/psammead/pull/3468) Talos - Bump Dependencies - @bbc/psammead-script-link |
+| 5.1.21 | [PR#3467](https://github.com/bbc/psammead/pull/3467) Talos - Bump Dependencies - @bbc/psammead-styles |
+| 5.1.20 | [PR#3427](https://github.com/bbc/psammead/pull/3427) Talos - Bump Dependencies - @bbc/visually-hidden-text |
+| 5.1.19 | [PR#3398](https://github.com/bbc/psammead/pull/3398) Talos - Bump Dependencies - @bbc/psammead-script-link |
+| 5.1.18 | [PR#3397](https://github.com/bbc/psammead/pull/3397) Talos - Bump Dependencies - @bbc/psammead-styles |
+| 5.1.17 | [PR#3390](https://github.com/bbc/psammead/pull/3390) Bump prettier major version and disable rule for brackets around a single prop |
 | 5.1.16 | [PR#3356](https://github.com/bbc/psammead/pull/3356) Talos - Bump Dependencies - @bbc/psammead-script-link |
 | 5.1.15 | [PR#3248](https://github.com/bbc/psammead/pull/3248) Talos - Bump Dependencies - @bbc/psammead-script-link |
 | 5.1.14 | [PR#3151](https://github.com/bbc/psammead/pull/3151) Talos - Bump Dependencies - @bbc/psammead-script-link |

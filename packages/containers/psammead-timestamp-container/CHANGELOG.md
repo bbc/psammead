@@ -3,6 +3,16 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 4.0.1 | [PR#3524](https://github.com/bbc/psammead/pull/3524) Talos - Bump Dependencies - @bbc/psammead-locales |
+| 4.0.0 | [PR#3472](https://github.com/bbc/psammead/pull/3472) Do not return current date in formatUnixTimestamp when timestamp is undefined |
+| 3.0.3 | [PR#3468](https://github.com/bbc/psammead/pull/3468) Talos - Bump Dependencies - @bbc/psammead-timestamp |
+| 3.0.2 | [PR#3453](https://github.com/bbc/psammead/pull/3453) Remove imported psammead-locales from storybook stories |
+| 3.0.1 | [PR#3413](https://github.com/bbc/psammead/pull/3413) Talos - Bump Dependencies - @bbc/psammead-locales |
+| 3.0.0 | [PR#3403](https://github.com/bbc/psammead/pull/3403) Update formatDuration to use locale, rename unixTimestampToMoment to localisedMoment since it now uses locale, update formatDuration, localisedMoment, formatUnixTimestamp to use destructured props. |
+| 2.7.15 | [PR#3398](https://github.com/bbc/psammead/pull/3398) Talos - Bump Dependencies - @bbc/psammead-timestamp |
+| 2.7.14 | [PR#3397](https://github.com/bbc/psammead/pull/3397) Talos - Bump Dependencies - @bbc/psammead-locales |
+| 2.7.13 | [PR#3390](https://github.com/bbc/psammead/pull/3390) Bump prettier major version and disable rule for brackets around a single prop |
+| 2.7.12 | [PR#3381](https://github.com/bbc/psammead/pull/3381) Talos - Bump Dependencies - @bbc/psammead-locales |
 | 2.7.11 | [PR#3353](https://github.com/bbc/psammead/pull/3353) Talos - Bump Dependencies - @bbc/psammead-locales |
 | 2.7.10 | [PR#3270](https://github.com/bbc/psammead/pull/3270) Security fixes |
 | 2.7.9 | [PR#3273](https://github.com/bbc/psammead/pull/3273) Talos - Bump Dependencies - @bbc/psammead-locales |

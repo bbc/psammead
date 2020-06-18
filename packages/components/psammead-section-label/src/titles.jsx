@@ -9,7 +9,7 @@ import {
 } from '@bbc/gel-foundations/breakpoints';
 import { GEL_SPACING, GEL_SPACING_DBL } from '@bbc/gel-foundations/spacings';
 import { getLongPrimer, getDoublePica } from '@bbc/gel-foundations/typography';
-import { C_EBON, C_WHITE, C_GHOST } from '@bbc/psammead-styles/colours';
+import { C_EBON, C_GHOST } from '@bbc/psammead-styles/colours';
 import { getSansBold, getSansRegular } from '@bbc/psammead-styles/font-styles';
 
 const minClickableHeightPx = 44;
@@ -74,10 +74,8 @@ const titleMargins = `
 const Title = styled.span`
   ${({ script }) => script && getDoublePica(script)};
   ${({ service }) => getSansRegular(service)}
-  color: ${C_EBON};
   background-color: ${props => props.backgroundColor};
   ${titleMargins};
-
   ${paddingDir}: ${GEL_SPACING};
 
   @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) {
@@ -94,24 +92,16 @@ Title.propTypes = {
   id: string.isRequired,
   script: shape(scriptPropType).isRequired,
   service: string.isRequired,
-  backgroundColor: string,
-};
-
-Title.defaultProps = {
-  backgroundColor: C_GHOST,
 };
 
 const IndexLinkCta = styled.span.attrs({
   'aria-hidden': 'true',
 })`
-  ${({ service }) => getSansBold(service)};
   ${({ script }) => script && getLongPrimer(script)};
-
+  ${({ service }) => getSansBold(service)};
   ${titleMargins};
-
   color: ${C_EBON};
-  background-color: ${C_WHITE};
-
+  background-color: ${props => props.backgroundColor};
   white-space: nowrap;
   ${paddingReverseDir}: ${GEL_SPACING_DBL};
 
@@ -184,7 +174,12 @@ export const LinkTitle = ({
         >
           {title}
         </Title>
-        <IndexLinkCta dir={dir} script={script} service={service}>
+        <IndexLinkCta
+          dir={dir}
+          script={script}
+          service={service}
+          backgroundColor={backgroundColor}
+        >
           {linkText}
         </IndexLinkCta>
       </FlexTextRow>

@@ -65,6 +65,7 @@ const coloursExpectedExports = {
   C_CLOUD_DARK: 'string',
   C_CLOUD_LIGHT: 'string',
   C_LUNAR: 'string',
+  C_LUNAR_LIGHT: 'string',
   C_GHOST: 'string',
   C_METAL: 'string',
   C_CONSENT_BACKGROUND: 'string',

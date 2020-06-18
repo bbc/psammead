@@ -1,7 +1,7 @@
 import React, { memo } from 'react';
-import Helmet from 'react-helmet';
 import { shape, string } from 'prop-types';
-import styled, { css } from 'styled-components';
+import styled from 'styled-components';
+import useScript from './useScript';
 
 const LANDSCAPE_RATIO = '56.25%';
 
@@ -21,12 +21,25 @@ const OEmbed = styled.div`
 export const providers = {
   instagram: {
     script: 'https://www.instagram.com/embed.js',
+    styles: `
+      .instagram-media {
+        margin-top: 0 !important;
+        margin-bottom: 0 !important;
+        min-width: auto !important;
+      }
+    `,
   },
   twitter: {
     script: 'https://platform.twitter.com/widgets.js',
+    styles: `
+      .twitter-tweet {
+        margin-top: 0 !important;
+        margin-bottom: 0 !important;
+      }
+    `,
   },
   youtube: {
-    styles: css`
+    styles: `
       padding-top: ${LANDSCAPE_RATIO};
       position: relative;
       overflow: hidden;
@@ -43,19 +56,16 @@ export const providers = {
   },
 };
 
-const CanonicalEmbed = ({ provider, oEmbed }) => (
-  <>
-    {providers[provider].script && (
-      <Helmet>
-        <script async src={providers[provider].script} />
-      </Helmet>
-    )}
+const CanonicalEmbed = ({ provider, oEmbed }) => {
+  useScript(providers[provider].script);
+
+  return (
     <OEmbed
       styles={providers[provider].styles}
       dangerouslySetInnerHTML={{ __html: oEmbed.html }}
     />
-  </>
-);
+  );
+};
 
 CanonicalEmbed.propTypes = {
   provider: string.isRequired,

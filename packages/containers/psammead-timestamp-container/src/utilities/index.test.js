@@ -1,9 +1,9 @@
 import moment from 'moment-timezone';
 import {
-  unixTimestampToMoment,
+  formatDuration,
   formatUnixTimestamp,
   isValidDateTime,
-  formatDuration,
+  localisedMoment,
 } from '.';
 import timestampGenerator from '../helpers/testHelpers';
 
@@ -12,17 +12,6 @@ const timestamp = 1539969006000; // 19 October 2018
 const locale = 'en-gb';
 
 describe('Timestamp utility functions', () => {
-  describe('formatDuration', () => {
-    it('should return duration in expected format', () => {
-      const durationInISO8601Format = 'PT30M'; // 30:00
-      expect(formatDuration(durationInISO8601Format)).toEqual('30:00');
-    });
-    it('should return duration in expected format when a format is passed in', () => {
-      const durationInISO8601Format = 'PT30M'; // 30:00
-      expect(formatDuration(durationInISO8601Format, 'mm,ss')).toEqual('30,00');
-    });
-  });
-
   describe('isValidDateTime', () => {
     it('should return true if timestamp is valid', () => {
       expect(isValidDateTime(timestamp)).toEqual(true);
@@ -38,9 +27,9 @@ describe('Timestamp utility functions', () => {
     });
   });
 
-  describe('unixTimestampToMoment', () => {
-    it('should be a valid moment', () => {
-      expect(unixTimestampToMoment(timestamp)).toHaveProperty('isValid');
+  describe('localisedMoment', () => {
+    it('should be a valid moment when timestamp and locale are passed in', () => {
+      expect(localisedMoment({ timestamp, locale })).toHaveProperty('isValid');
     });
   });
 
@@ -50,91 +39,98 @@ describe('Timestamp utility functions', () => {
     const isRelative = false;
 
     it('should return BST for a BST timestamp', () => {
-      const result = formatUnixTimestamp(
-        BSTTimestamp,
-        'D MMMM YYYY, HH:mm z',
+      const result = formatUnixTimestamp({
+        timestamp: BSTTimestamp,
+        format: 'D MMMM YYYY, HH:mm z',
         timezone,
         locale,
-      );
+      });
       expect(result).toContain('BST');
     });
 
     it('should return GMT for a GMT timestamp', () => {
-      const result = formatUnixTimestamp(
-        GMTTimestamp,
-        'D MMMM YYYY, HH:mm z',
+      const result = formatUnixTimestamp({
+        timestamp: GMTTimestamp,
+        format: 'D MMMM YYYY, HH:mm z',
         timezone,
         locale,
-      );
+      });
       expect(result).toContain('GMT');
     });
 
     it('should return date and time in expected format', () => {
-      const result = formatUnixTimestamp(
-        GMTTimestamp,
-        'D MMMM YYYY, HH:mm z',
+      const result = formatUnixTimestamp({
+        timestamp: GMTTimestamp,
+        format: 'D MMMM YYYY, HH:mm z',
         timezone,
         locale,
-      );
+      });
       expect(result).toEqual('1 January 2017, 13:00 GMT');
     });
 
     it('should return short date in expected format', () => {
-      const result = formatUnixTimestamp(
-        GMTTimestamp,
-        'YYYY-MM-DD',
+      const result = formatUnixTimestamp({
+        timestamp: GMTTimestamp,
+        format: 'YYYY-MM-DD',
         timezone,
         locale,
-      );
+      });
       expect(result).toEqual('2017-01-01');
     });
 
     it('should return long date in expected format', () => {
-      const result = formatUnixTimestamp(
-        GMTTimestamp,
-        'D MMMM YYYY',
+      const result = formatUnixTimestamp({
+        timestamp: GMTTimestamp,
+        format: 'D MMMM YYYY',
         timezone,
         locale,
-      );
+      });
       expect(result).toEqual('1 January 2017');
     });
     it('should return relative timestamp if isRelative is true', () => {
       const nineHoursAgo = timestampGenerator({ hours: 9 });
-      const isRelativeIsTrue = true;
-      const output = formatUnixTimestamp(
-        nineHoursAgo,
-        'D MMMM YYYY',
+      const output = formatUnixTimestamp({
+        timestamp: nineHoursAgo,
+        format: 'D MMMM YYYY',
         timezone,
         locale,
-        isRelativeIsTrue,
-      );
+        isRelative: true,
+      });
       const expectedOutput = '9 hours ago';
       expect(output).toEqual(expectedOutput);
     });
 
     it('should return timestamp with format if format is provided', () => {
-      const output = formatUnixTimestamp(
+      const output = formatUnixTimestamp({
         timestamp,
-        'D MMMM YYYY',
+        format: 'D MMMM YYYY',
         timezone,
         locale,
         isRelative,
-      );
+      });
       const expectedOutput = '19 October 2018';
       expect(output).toEqual(expectedOutput);
     });
 
     it('should return timestamp with default format if format is not provided', () => {
-      const nullFormat = null;
-      const output = formatUnixTimestamp(
+      const output = formatUnixTimestamp({
         timestamp,
-        nullFormat,
+        format: null,
         timezone,
         locale,
         isRelative,
-      );
+      });
       const expectedOutput = '19 October 2018, 18:10 BST';
       expect(output).toEqual(expectedOutput);
+    });
+
+    it('should not return a timestamp when you do not pass in a timestamp to be formatted', () => {
+      const result = formatUnixTimestamp({
+        format: 'D MMMM YYYY, HH:mm z',
+        timezone,
+        locale,
+      });
+      expect(result).toBeUndefined();
     });
   });
 });
@@ -182,9 +178,7 @@ describe('Moment configuration', () => {
     // default moment configuration would return 'a day ago'
     expect(twentyThree.fromNow()).toEqual('23 hours ago');
 
-    const allButADay = moment()
-      .subtract(23, 'hours')
-      .subtract(59, 'seconds');
+    const allButADay = moment().subtract(23, 'hours').subtract(59, 'seconds');
     // default moment configuration would return 'a day ago'
     expect(allButADay.fromNow()).toEqual('23 hours ago');
   });
@@ -203,9 +197,7 @@ describe('Moment configuration', () => {
     // default moment configuration would return '2 days ago' (no change)
     expect(two.fromNow()).toEqual('2 days ago');
 
-    const allButAMonth = moment()
-      .subtract(30, 'days')
-      .add(1, 'second');
+    const allButAMonth = moment().subtract(30, 'days').add(1, 'second');
     // default moment configuration would return 'a month ago'
     expect(allButAMonth.fromNow()).toEqual('29 days ago');
   });
@@ -223,9 +215,7 @@ describe('Moment configuration', () => {
     // default moment configuration would return '2 days ago' (no change)
     expect(two.fromNow()).toEqual('2 days ago');
 
-    const allButAMonth = moment()
-      .subtract(30, 'days')
-      .add(1, 'day');
+    const allButAMonth = moment().subtract(30, 'days').add(1, 'day');
     // default moment configuration would return 'a month ago'
     expect(allButAMonth.fromNow()).toEqual('29 days ago');
   });
@@ -247,5 +237,24 @@ describe('Moment configuration', () => {
       .add(5, 'days');
     // default moment configuration would return 'a month ago'
     expect(allButAYear.fromNow()).toEqual('11 months ago');
+  });
+
+  describe('formatDuration', () => {
+    it('should return duration in default format', () => {
+      const duration = 'PT30M'; // 30:00
+      expect(formatDuration({ duration })).toEqual('30:00');
+    });
+    it('should return duration with hours in default format', () => {
+      const duration = 'PT1H30M'; // 1:30:00
+      expect(formatDuration({ duration })).toEqual('1:30:00');
+    });
+    it('should return duration in relevant format when a format is passed in', () => {
+      const duration = 'PT30M'; // 30:00
+      expect(formatDuration({ duration, format: 'mm,ss' })).toEqual('30,00');
+    });
+    it('should return duration that is localised when locale is passed in', () => {
+      const duration = 'PT30M'; // 30:00
+      expect(formatDuration({ duration, locale: 'my' })).toEqual('၃၀:၀၀');
+    });
   });
 });

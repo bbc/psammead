@@ -29,6 +29,8 @@ import {
   formatUnixTimestamp,
   formatDuration,
 } from '@bbc/psammead-timestamp-container/utilities';
+import detokenise from '@bbc/psammead-detokeniser';
+import durationDictionary from '../utilities';
 
 const TitleWrapper = styled.span`
   color: ${({ titleColor }) => titleColor};
@@ -163,21 +165,21 @@ const renderHeaderContent = ({
 
   const liveLabelIsEnglish = liveLabel === 'LIVE';
 
-  const formattedStartTime = formatUnixTimestamp(
-    startTime,
-    'HH:mm',
+  const formattedStartTime = formatUnixTimestamp({
+    timestamp: startTime,
+    format: 'HH:mm',
     timezone,
     locale,
-    false,
-  );
+    isRelative: false,
+  });
 
-  const episodeTitle = formatUnixTimestamp(
-    startTime,
-    'D MMMM YYYY HH:mm z',
+  const episodeTitle = formatUnixTimestamp({
+    timestamp: startTime,
+    format: 'LL',
     timezone,
     locale,
-    false,
-  );
+    isRelative: false,
+  });
 
   const content = (
     <HeadingContentWrapper>
@@ -212,14 +214,6 @@ const renderHeaderContent = ({
   ) : (
     <StyledLink href={link}>{content}</StyledLink>
   );
-};
-
-const getDurationFormat = (duration, separator = ':') => {
-  const timeSections = ['mm', 'ss'];
-  if (duration.includes('H')) {
-    timeSections.unshift('h');
-  }
-  return timeSections.join(separator);
 };
 
 const ProgramCard = ({
@@ -275,13 +269,13 @@ const ProgramCard = ({
       </IconWrapper>
       <DurationWrapper dir={dir} dateTime={duration}>
         <VisuallyHiddenText>
-          {` ${durationLabel} ${formatDuration(
-            duration,
-            getDurationFormat(duration, ','),
+          {` ${detokenise(
+            durationLabel,
+            durationDictionary({ duration, locale }),
           )} `}
         </VisuallyHiddenText>
         <DurationTextWrapper>
-          {formatDuration(duration, getDurationFormat(duration))}
+          {formatDuration({ duration, locale })}
         </DurationTextWrapper>
       </DurationWrapper>
     </ButtonWrapper>
@@ -316,8 +310,8 @@ renderHeaderContent.defaultProps = {
 
 ProgramCard.propTypes = {
   dir: oneOf(['rtl', 'ltr']),
-  durationLabel: string.isRequired,
   duration: string.isRequired,
+  durationLabel: string.isRequired,
   summary: string,
   ...programCardPropTypes,
 };

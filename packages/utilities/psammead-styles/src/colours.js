@@ -14,6 +14,7 @@ export const C_SHADOW = '#3F3F42';
 export const C_CLOUD_DARK = '#757575';
 export const C_CLOUD_LIGHT = '#BABABA';
 export const C_LUNAR = '#F2F2F2';
+export const C_LUNAR_LIGHT = '#F6F6F6';
 export const C_GHOST = '#FDFDFD';
 export const C_METAL = '#6E6E73';
 export const C_KINGFISHER = '#11708C';

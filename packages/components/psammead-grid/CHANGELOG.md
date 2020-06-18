@@ -3,6 +3,10 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 1.1.15 | [PR#3530](https://github.com/bbc/psammead/pull/3530) Remove `Index Alsos` from Grid stories |
+| 1.1.14 | [PR#3467](https://github.com/bbc/psammead/pull/3467) Talos - Bump Dependencies - @bbc/psammead-styles |
+| 1.1.13 | [PR#3397](https://github.com/bbc/psammead/pull/3397) Talos - Bump Dependencies - @bbc/psammead-styles |
+| 1.1.12 | [PR#3390](https://github.com/bbc/psammead/pull/3290) Bump prettier major version and disable rule for brackets around a single prop |
 | 1.1.11 | [PR#3208](https://github.com/bbc/psammead/pull/3208) Update direction in RTL story |
 | 1.1.10 | [PR#3135](https://github.com/bbc/psammead/pull/3135) Talos - Bump Dependencies - @bbc/gel-foundations |
 | 1.1.9 | [PR#3129](https://github.com/bbc/psammead/pull/3129) Talos - Bump Dependencies - @bbc/gel-foundations |

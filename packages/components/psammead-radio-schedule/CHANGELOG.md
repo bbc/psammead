@@ -3,7 +3,23 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
-| 2.0.0 | [PR#xxx](https://github.com/bbc/psammead/pull/xxx) Remove episodeTitle prop. In ProgramCard, generate episodeTitle with moment using start timeestamp. |
+| 3.0.6 | [PR#3525](https://github.com/bbc/psammead/pull/3525) Talos - Bump Dependencies - @bbc/psammead-timestamp-container |
+| 3.0.5 | [PR#3485](https://github.com/bbc/psammead/pull/3485) Talos - Bump Dependencies - @bbc/psammead-timestamp-container |
+| 3.0.4 | [PR#3475](https://github.com/bbc/psammead/pull/3475) Talos - Bump Dependencies - @bbc/psammead-timestamp-container |
+| 3.0.3 | [PR#3467](https://github.com/bbc/psammead/pull/3467) Talos - Bump Dependencies - @bbc/psammead-styles |
+| 3.0.2 | [PR#3459](https://github.com/bbc/psammead/pull/3459) Talos - Bump Dependencies - @bbc/psammead-timestamp-container |
+| 3.0.1 | [PR#3454](https://github.com/bbc/psammead/pull/3454) Update radio schedule props |
+| 3.0.0 | [PR#3408](https://github.com/bbc/psammead/pull/3408) Use detokenizer to construct duration label |
+| 2.0.2 | [PR#3427](https://github.com/bbc/psammead/pull/3427) Updating tests with dependency bump |
+| 2.0.1 | [PR#3414](https://github.com/bbc/psammead/pull/3414) Talos - Bump Dependencies - @bbc/psammead-timestamp-container |
+| 2.0.0 | [PR#3377](https://github.com/bbc/psammead/pull/3377) Remove episodeTitle prop. In ProgramCard, generate episodeTitle with moment using startTime |
+| 1.0.8 | [PR#3400](https://github.com/bbc/psammead/pull/3400) Talos - Bump Dependencies - @bbc/psammead-timestamp-container |
+| 1.0.7 | [PR#3398](https://github.com/bbc/psammead/pull/3398) Talos - Bump Dependencies - @bbc/psammead-timestamp-container |
+| 1.0.6 | [PR#3397](https://github.com/bbc/psammead/pull/3397) Talos - Bump Dependencies - @bbc/psammead-styles, @bbc/psammead-timestamp-container |
+| 1.0.5 | [PR#3390](https://github.com/bbc/psammead/pull/3390) Bump prettier major version and disable rule for brackets around a single prop |
+| 1.0.4 | [PR#3387](https://github.com/bbc/psammead/pull/3387) Talos - Bump Dependencies - @bbc/psammead-timestamp-container |
+| 1.0.3 | [PR#3381](https://github.com/bbc/psammead/pull/3381) Talos - Bump Dependencies - @bbc/psammead-assets |
+| 1.0.2 | [PR#3379](https://github.com/bbc/psammead/pull/3379) Talos - Bump Dependencies - @bbc/psammead-storybook-helpers adding timezone |
 | 1.0.1 | [PR#3354](https://github.com/bbc/psammead/pull/3354) Talos - Bump Dependencies - @bbc/psammead-timestamp-container |
 | 1.0.0 | [PR#3350](https://github.com/BBC/psammead/pull/3350) Remove alpha tag |
 | 0.1.0-alpha.33 | [PR#3348](https://github.com/bbc/psammead/pull/3348) Add wrapping span with role `text` around the headline |
