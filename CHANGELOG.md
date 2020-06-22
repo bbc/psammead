@@ -3,7 +3,10 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
-| 2.0.165 | [PR#](https://github.com/bbc/psammead/pull/) Dependency updates |
+| 2.0.168 | [PR#3554](https://github.com/bbc/psammead/pull/3554) Dependency updates |
+| 2.0.167 | [PR#3558](https://github.com/bbc/psammead/pull/3558) Talos - Bump Dependencies - @bbc/psammead-bulletin |
+| 2.0.166 | [PR#3557](https://github.com/bbc/psammead/pull/3557) Talos - Bump Dependencies - @bbc/psammead-most-read, @bbc/psammead-story-promo |
+| 2.0.165 | [PR#3543](https://github.com/bbc/psammead/pull/3543) Talos - Bump Dependencies - @bbc/psammead-amp-geo, @bbc/psammead-grid |
 | 2.0.164 | [PR#3529](https://github.com/bbc/psammead/pull/3529) Adding a security policy |
 | 2.0.163 | [PR#3528](https://github.com/bbc/psammead/pull/3528) Talos - Bump Dependencies - @bbc/psammead-section-label |
 | 2.0.162 | [PR#3526](https://github.com/bbc/psammead/pull/3526) Talos - Bump Dependencies - @bbc/psammead-radio-schedule |
