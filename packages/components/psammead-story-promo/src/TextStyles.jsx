@@ -39,8 +39,7 @@ grid-column: 3 / span 4;
 ${({ displayImage }) => !displayImage && `grid-column: 1 / span 6;`}
 
 @media (min-width: ${GEL_GROUP_4_SCREEN_WIDTH_MIN}) {
-  padding-top: ${GEL_SPACING};
-  ${({ displayImage }) => !displayImage && `padding-top: 0;`}
+  padding-top: ${({ displayImage }) => (displayImage ? GEL_SPACING : 0)}
 }
 `;
 
