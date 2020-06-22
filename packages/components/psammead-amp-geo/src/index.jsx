@@ -56,6 +56,7 @@ const ampGeoData = {
       'wf',
       'yt',
     ],
+    gbOrUnknown: ['gb', 'gg', 'im', 'je', 'uk', 'unknown'],
   },
 };
 
