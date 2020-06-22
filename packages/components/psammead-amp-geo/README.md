@@ -2,7 +2,7 @@
 
 ## Description
 
-The `psammead-amp-geo` component is an `<amp-geo>` element to be used for AMP pages. It has a defined set of ISO country groups that we set for our privacy and cookie banners on AMP pages. 
+The `psammead-amp-geo` component is an `<amp-geo>` element to be used for AMP pages. It has a defined set of ISO country groups that we set for our privacy and cookie banners on AMP pages ('eea'), and a defined set of ISO country groups to detect if a user should not be shown ads ('gbOrUnknown').
 
 ## Installation
 
@@ -25,7 +25,8 @@ When using `psammead-amp-geo`, you should firstly include this script in the hea
   src="https://cdn.ampproject.org/v0/amp-geo-0.1.js"
 />
 ```
-Then you can import the AmpGeo component & use it in conjunction with `<amp-consent>` 
+
+Then you can import the AmpGeo component & use it in conjunction with `<amp-consent>`
 
 ```jsx
 import AmpGeo from '@bbc/psammead-amp-geo';
@@ -53,7 +54,10 @@ const Wrapper = () => (
 
 ### When to use this component
 
-Use this component only on AMP pages when you need to have geo-location constrained to a specific list of countries in the EEA, also including Channel Islands and overseas territories.
+Use this component only on AMP pages when:
+
+- You need to have geo-location constrained to a specific list of countries in either the EEA, also including Channel Islands and overseas territories ('eea'),
+- or if you need to detect if a user should not be shown ads based on geo-location ('gbOrUnknown').
 
 <!-- ### When not to use this component -->
 
