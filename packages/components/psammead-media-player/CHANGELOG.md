@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version       | Description                                                                                                                  |
 | ------------- | ---------------------------------------------------------------------------------------------------------------------------- |
+| 2.7.11 | [PR#3559](https://github.com/bbc/psammead/pull/3559) Removed overflow for AudioPlayer |
 | 2.7.10 | [PR#3468](https://github.com/bbc/psammead/pull/3468) Talos - Bump Dependencies - @bbc/psammead-play-button |
 | 2.7.9 | [PR#3398](https://github.com/bbc/psammead/pull/3398) Talos - Bump Dependencies - @bbc/psammead-play-button |
 | 2.7.8 | [PR#3388](https://github.com/bbc/psammead/pull/3388) Update react-helmet to 6.0.0 |
