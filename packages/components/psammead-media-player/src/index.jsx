@@ -23,7 +23,6 @@ const StyledVideoContainer = styled.div`
 const StyledAudioContainer = styled.div`
   height: 165px;
   position: relative;
-  overflow: hidden;
   margin-bottom: ${GEL_SPACING_DBL};
 
   @media (min-width: ${GEL_GROUP_4_SCREEN_WIDTH_MIN}) {
