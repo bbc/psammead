@@ -105,7 +105,6 @@ exports[`Media Player: AMP Entry renders the audio skin 1`] = `
     .c0 {
   height: 165px;
   position: relative;
-  overflow: hidden;
   margin-bottom: 1rem;
 }
 
@@ -726,7 +725,6 @@ exports[`Media Player: Canonical Entry renders the audio skin 1`] = `
 .c0 {
   height: 165px;
   position: relative;
-  overflow: hidden;
   margin-bottom: 1rem;
 }
 
