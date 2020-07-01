@@ -8,11 +8,10 @@ import {
 } from '@bbc/gel-foundations/spacings';
 import { getSansRegular } from '@bbc/psammead-styles/font-styles';
 import { GEL_BODY_COPY } from '@bbc/gel-foundations/typography';
-import { BBC_BLOCKS, coreIcons } from '@bbc/psammead-assets/svgs';
+import { BBC_BLOCKS } from '@bbc/psammead-assets/svgs';
 
 const GOLDEN_RATIO_PERCENT = '38.2%';
 const GEL_SPACING_TRPL_MINUS_HLF = '1.25rem';
-const GEL_SPACING_QRT = '0.125rem';
 
 const StyledEmbedError = styled.div`
   ${({ service }) => getSansRegular(service)}
@@ -39,21 +38,9 @@ const StyledErrorMessage = styled.div`
   }
 `;
 
-const IconWrapper = styled.span`
-  position: relative;
-  top: -${GEL_SPACING_QRT};
-
-  > svg {
-    fill: currentColor;
-    height: ${GEL_SPACING_TRPL};
-    width: ${GEL_SPACING_TRPL};
-  }
-`;
-
 const EmbedError = ({ service, message, fillViewport }) => (
   <StyledEmbedError service={service} fillViewport={fillViewport}>
     <StyledErrorMessage>
-      <IconWrapper aria-hidden="true">{coreIcons.alert}</IconWrapper>
       <strong>{message}</strong>
     </StyledErrorMessage>
   </StyledEmbedError>
