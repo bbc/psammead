@@ -1,5 +1,5 @@
 import React from 'react';
-import { string, bool } from 'prop-types';
+import { string, bool, shape } from 'prop-types';
 import styled from 'styled-components';
 import { C_CHALK, C_EBON } from '@bbc/psammead-styles/colours';
 import {
@@ -38,10 +38,11 @@ const StyledErrorMessage = styled.div`
   }
 `;
 
-const EmbedError = ({ service, message, fillViewport }) => (
+const EmbedError = ({ service, message, fillViewport, link }) => (
   <StyledEmbedError service={service} fillViewport={fillViewport}>
     <StyledErrorMessage>
       <strong>{message}</strong>
+      {link && link.text && link.href && <a href={link.href}>{link.text}</a>}
     </StyledErrorMessage>
   </StyledEmbedError>
 );
@@ -49,12 +50,17 @@ const EmbedError = ({ service, message, fillViewport }) => (
 EmbedError.defaultProps = {
   service: 'news',
   fillViewport: false,
+  link: null,
 };
 
 EmbedError.propTypes = {
   service: string,
   fillViewport: bool,
   message: string.isRequired,
+  link: shape({
+    text: string.isRequired,
+    href: string.isRequired,
+  }),
 };
 
 export default EmbedError;

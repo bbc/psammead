@@ -22,8 +22,30 @@ storiesOf('Components|EmbedError', module)
           service={service}
           message={text(
             'message',
-            "Sorry, we're unable to bring you this media right now.",
+            "Sorry, we can't display this part of the story on this lightweight mobile page.",
           )}
+        />
+      </Container>
+    ),
+    { notes, knobs: { escapeHTML: false } },
+  )
+  .add(
+    'with link',
+    ({ service }) => (
+      <Container>
+        <EmbedError
+          service={service}
+          message={text(
+            'message',
+            "Sorry, we can't display this part of the story on this lightweight mobile page.",
+          )}
+          link={{
+            text: text(
+              'text',
+              'View the full version of the page to see all the content.',
+            ),
+            href: '#',
+          }}
         />
       </Container>
     ),
@@ -36,7 +58,7 @@ storiesOf('Components|EmbedError', module)
         service={service}
         message={text(
           'message',
-          "Sorry, we're unable to bring you this media right now.",
+          "Sorry, we can't display this part of the story on this lightweight mobile page.",
         )}
         fillViewport
       />
