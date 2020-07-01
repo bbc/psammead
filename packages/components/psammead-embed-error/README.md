@@ -16,37 +16,49 @@ npm install @bbc/psammead-embed-error --save
 
 ## Props
 
-| Argument       | Type    | Required | Default | Example                        |
-| -------------- | ------- | -------- | ------- | ------------------------------ |
-| `service`      | String  | No       | `news`  | `arabic`                       |
-| `fillViewport` | Boolean | No       | `false` | `true`                         |
-| `message`      | String  | Yes      | -       | `Sorry, the server's on fire.` |
+| Argument       | Type    | Required | Default | Example                                 |
+| -------------- | ------- | -------- | ------- | --------------------------------------- |
+| `service`      | String  | No       | `news`  | `arabic`                                |
+| `fillViewport` | Boolean | No       | `false` | `true`                                  |
+| `message`      | String  | Yes      | -       | `Sorry, we can't display this content.` |
+| `link`         | Object  | No       | -       | See: [link](#link).                     |
+
+### `link`
+
+| Argument | Type   | Required | Default | Example                                                  |
+| -------- | ------ | -------- | ------- | -------------------------------------------------------- |
+| `text`   | String | Yes      | n/a     | `View alternate content.`                                |
+| `href`   | String | Yes      | n/a     | `https://www.bbc.co.uk/news/av-embed/a-video-about-dogs` |
 
 ## Usage
 
-This component is particularly useful if you serve content from an iframe and want users to have a seamless error experience. Consider the following example:
+This component is particularly useful if you serve content in an iframe and want users to have a seamless error experience. Consider the following example:
 
+```js
+// An article with an iframe.
+<iframe src="https://www.bbc.co.uk/news/av-embed/a-video-about-cats"></iframe>
 ```
-// https://www.bbc.co.uk/news/av-embed/a-video-about-cats
 
-import EmbedError from "@bbc/psammead-embed-error"
+```js
+// iframe content.
+import EmbedError from '@bbc/psammead-embed-error';
 
 const Page = () => {
   if (error) {
-    return
-      <EmbedError
-        message="Sorry, the server's on fire."
-        fillViewport
-      />;
+    return;
+    <EmbedError
+      message="Sorry, we can't display this content."
+      link={{
+        text: 'View alternate content.',
+        href: 'https://www.bbc.co.uk/news/article/all-about-dogs',
+      }}
+      fillViewport
+    />;
   }
 };
 ```
 
-```
-// https://www.bbc.co.uk/news/articles/the-truth-about-cats
-
-<iframe src="https://www.bbc.co.uk/news/av-embed/a-video-about-cats"></iframe>
-```
+Note the use of `fillViewport`, which ensures the error will fill the iframe in the article.
 
 ### When to use this component
 
