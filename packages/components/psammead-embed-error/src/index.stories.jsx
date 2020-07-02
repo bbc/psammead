@@ -19,7 +19,7 @@ storiesOf('Components|EmbedError', module)
         )}
         link={{
           text: text(
-            'text',
+            'link text',
             'View the full version of the page to see all the content.',
           ),
           href: '#',
