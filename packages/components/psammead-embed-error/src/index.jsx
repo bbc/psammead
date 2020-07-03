@@ -17,7 +17,7 @@ const BBC_BLOCKS_WIDTH = '10rem';
 const FAUX_BBC_BLOCKS_SPACE = '6rem';
 
 const FILL_VIEWPORT_STYLES = `
-  background-position: center center;
+  background-position: center;
   background-size: ${GOLDEN_RATIO_PERCENT};
   height: 100vh;
 `;
