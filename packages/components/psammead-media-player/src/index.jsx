@@ -18,6 +18,11 @@ const StyledVideoContainer = styled.div`
   padding-top: ${({ portrait }) => (portrait ? portraitRatio : landscapeRatio)};
   position: relative;
   overflow: hidden;
+  margin-bottom: ${GEL_SPACING_DBL};
+
+  @media (min-width: ${GEL_GROUP_4_SCREEN_WIDTH_MIN}) {
+    margin-bottom: ${GEL_SPACING_QUAD};
+  }
 `;
 
 const StyledAudioContainer = styled.div`
