@@ -45,7 +45,7 @@ import EmbedError from '@bbc/psammead-embed-error';
 
 const Page = () => {
   if (error) {
-    return;
+    return
     <EmbedError
       message="Sorry, we can't display this content."
       link={{
