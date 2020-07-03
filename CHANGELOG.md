@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 2.0.172 | [PR#3576](https://github.com/bbc/psammead/pull/3576) Talos - Bump Dependencies - @bbc/psammead-media-player |
 | 2.0.171 | [PR#3571](https://github.com/bbc/psammead/pull/3571) Adding new packages to the base package.json |
 | 2.0.170 | [PR#3570](https://github.com/bbc/psammead/pull/3570) Dependency updates |
 | 2.0.169 | [PR#3560](https://github.com/bbc/psammead/pull/3560) Talos - Bump Dependencies - @bbc/psammead-media-player |
