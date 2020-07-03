@@ -21,7 +21,7 @@ npm install @bbc/psammead-embed-error --save
 | `service`      | String  | No       | `news`  | `arabic`                                |
 | `fillViewport` | Boolean | No       | `false` | `true`                                  |
 | `message`      | String  | Yes      | -       | `Sorry, we can't display this content.` |
-| `link`         | Object  | No       | -       | See: [link](#link).                     |
+| `link`         | Object  | No       | `null`       | See: [link](#link).                     |
 
 ### `link`
 
