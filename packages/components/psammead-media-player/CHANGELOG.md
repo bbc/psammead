@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version       | Description                                                                                                                  |
 | ------------- | ---------------------------------------------------------------------------------------------------------------------------- |
+| 2.7.13 | [PR#3575](https://github.com/bbc/psammead/pull/3575) Adjusted bottom margin by 0.5rem |
 | 2.7.12 | [PR#3575](https://github.com/bbc/psammead/pull/3575) Added bottom margin to video player |
 | 2.7.11 | [PR#3559](https://github.com/bbc/psammead/pull/3559) Removed overflow for AudioPlayer |
 | 2.7.10 | [PR#3468](https://github.com/bbc/psammead/pull/3468) Talos - Bump Dependencies - @bbc/psammead-play-button |
