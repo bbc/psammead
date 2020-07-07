@@ -291,20 +291,6 @@ describe('SectionLabel', () => {
           This is text in a SectionLabel.
         </SectionLabel>,
       );
-
-      shouldMatchSnapshot(
-        'should correctly render as a link title with',
-        <SectionLabel
-          script={latin}
-          labelId="test-section-label"
-          service="news"
-          href="/igbo/other-index"
-          linkText="See All"
-          overrideHeadingAs="strong"
-        >
-          This is text in a SectionLabel.
-        </SectionLabel>,
-      );
     });
   });
 });
