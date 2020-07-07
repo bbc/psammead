@@ -81,11 +81,12 @@ const SectionLabel = ({
   service,
   visuallyHidden,
   backgroundColor,
+  overrideHeadingAs,
   ...props
 }) => (
   <SectionLabelWrapper visuallyHidden={visuallyHidden} {...props}>
     {bar && <Bar script={script} />}
-    <Heading>
+    <Heading as={overrideHeadingAs}>
       {linkText && href ? (
         <LinkTitle
           dir={dir}
@@ -120,6 +121,7 @@ SectionLabel.defaultProps = {
   linkText: null,
   visuallyHidden: false,
   backgroundColor: C_GHOST,
+  overrideHeadingAs: null,
 };
 
 SectionLabel.propTypes = {
@@ -133,6 +135,7 @@ SectionLabel.propTypes = {
   service: string.isRequired,
   visuallyHidden: bool,
   backgroundColor: string,
+  overrideHeadingAs: string,
 };
 
 export default SectionLabel;
