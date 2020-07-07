@@ -237,60 +237,18 @@ describe('SectionLabel', () => {
     });
   });
 
-  describe('Without bar', () => {
-    describe('With plain title', () => {
-      shouldMatchSnapshot(
-        'should render correctly',
-        <SectionLabel
-          script={latin}
-          bar={false}
-          labelId="test-section-label"
-          service="news"
-        >
-          This is text in a SectionLabel.
-        </SectionLabel>,
-      );
-
-      shouldMatchSnapshot(
-        'should render correctly with explicit text direction',
-        <SectionLabel
-          script={latin}
-          dir="ltr"
-          bar={false}
-          labelId="test-section-label"
-          service="news"
-        >
-          This is text in a SectionLabel rendering in ltr mode.
-        </SectionLabel>,
-      );
-
-      shouldMatchSnapshot(
-        'should render correctly with arabic script typography values',
-        <SectionLabel
-          script={arabic}
-          dir="rtl"
-          bar={false}
-          labelId="test-section-label"
-          service="persian"
-        >
-          بعض محتوى النص
-        </SectionLabel>,
-      );
-    });
-
-    describe('With heading overriden to be a strong element', () => {
-      shouldMatchSnapshot(
-        'should render correctly as a plain title with no bar',
-        <SectionLabel
-          script={latin}
-          bar={false}
-          labelId="test-section-label"
-          service="news"
-          overrideHeadingAs="strong"
-        >
-          This is text in a SectionLabel.
-        </SectionLabel>,
-      );
-    });
+  describe('With heading overriden to be a strong element', () => {
+    shouldMatchSnapshot(
+      'should render correctly as a plain title with no bar',
+      <SectionLabel
+        script={latin}
+        bar={false}
+        labelId="test-section-label"
+        service="news"
+        overrideHeadingAs="strong"
+      >
+        This is text in a SectionLabel.
+      </SectionLabel>,
+    );
   });
 });
