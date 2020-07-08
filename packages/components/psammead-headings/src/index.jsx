@@ -1,6 +1,6 @@
 import styled from 'styled-components';
-import { shape, string } from 'prop-types';
-import { C_SHADOW } from '@bbc/psammead-styles/colours';
+import { shape, string, bool } from 'prop-types';
+import { C_SHADOW, C_WHITE } from '@bbc/psammead-styles/colours';
 import {
   GEL_SPACING_TRPL,
   GEL_SPACING_QUAD,
@@ -14,7 +14,7 @@ import { getSansBold, getSerifMedium } from '@bbc/psammead-styles/font-styles';
 export const Headline = styled.h1`
   ${({ script }) => script && getCanon(script)};
   ${({ service }) => getSerifMedium(service)}
-  color: ${C_SHADOW};
+  color: ${({ darkMode }) => (darkMode ? C_WHITE : C_SHADOW)};
   display: block; /* Explicitly set */
   margin: 0; /* Reset */
   padding: ${GEL_SPACING_QUAD} 0;
@@ -28,7 +28,7 @@ export const SubHeading = styled.h2.attrs(() => ({
 }))`
   ${({ script }) => script && getTrafalgar(script)};
   ${({ service }) => getSansBold(service)}
-  color: ${C_SHADOW};
+  color: ${({ darkMode }) => (darkMode ? C_WHITE : C_SHADOW)};
   margin: 0; /* Reset */
   padding: ${GEL_SPACING_TRPL} 0;
   ${MEDIA_QUERY_TYPOGRAPHY.LAPTOP_AND_LARGER} {
@@ -39,9 +39,19 @@ export const SubHeading = styled.h2.attrs(() => ({
 Headline.propTypes = {
   script: shape(scriptPropType).isRequired,
   service: string.isRequired,
+  darkMode: bool,
+};
+
+Headline.defaultProps = {
+  darkMode: false,
 };
 
 SubHeading.propTypes = {
   script: shape(scriptPropType).isRequired,
   service: string.isRequired,
+  darkMode: bool,
+};
+
+Headline.defaultProps = {
+  darkMode: false,
 };

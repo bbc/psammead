@@ -16,6 +16,15 @@ storiesOf('Components|Headline', module)
       </Headline>
     ),
     { notes, knobs: { escapeHTML: false } },
+  )
+  .add(
+    'dark mode',
+    ({ text: textSnippet, script, service }) => (
+      <Headline script={script} service={service} darkMode>
+        {textSnippet}
+      </Headline>
+    ),
+    { notes, knobs: { escapeHTML: false } },
   );
 
 storiesOf('Components|SubHeading', module)
@@ -25,6 +34,15 @@ storiesOf('Components|SubHeading', module)
     'default',
     ({ text: textSnippet, script, service }) => (
       <SubHeading script={script} service={service}>
+        {textSnippet}
+      </SubHeading>
+    ),
+    { notes, knobs: { escapeHTML: false } },
+  )
+  .add(
+    'darkMode',
+    ({ text: textSnippet, script, service }) => (
+      <SubHeading script={script} service={service} darkMode>
         {textSnippet}
       </SubHeading>
     ),

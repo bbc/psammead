@@ -7,7 +7,7 @@ import {
 } from '@bbc/gel-foundations/spacings';
 import { getBrevier } from '@bbc/gel-foundations/typography';
 import { scriptPropType } from '@bbc/gel-foundations/prop-types';
-import { C_METAL } from '@bbc/psammead-styles/colours';
+import { C_WHITE, C_METAL } from '@bbc/psammead-styles/colours';
 import { getSansRegular } from '@bbc/psammead-styles/font-styles';
 
 const PADDING = `
@@ -20,7 +20,7 @@ const PADDING = `
 const StyledTimestamp = styled.time`
   ${({ script, typographyFunc }) =>
     script && typographyFunc && typographyFunc(script)}
-  color: ${C_METAL};
+  color: ${({ darkMode }) => (darkMode ? C_WHITE : C_METAL)};
   display: block;
   ${({ service }) => getSansRegular(service)}
   ${props => props.padding && PADDING}
@@ -33,6 +33,7 @@ const Timestamp = ({
   script,
   padding,
   service,
+  darkMode,
 }) => (
   <StyledTimestamp
     dateTime={datetime}
@@ -40,6 +41,7 @@ const Timestamp = ({
     script={script}
     padding={padding}
     service={service}
+    darkMode={darkMode}
   >
     {children}
   </StyledTimestamp>
@@ -48,6 +50,7 @@ const Timestamp = ({
 Timestamp.defaultProps = {
   typographyFunc: getBrevier,
   padding: true,
+  darkMode: false,
 };
 
 Timestamp.propTypes = {
@@ -57,6 +60,7 @@ Timestamp.propTypes = {
   padding: bool,
   script: shape(scriptPropType).isRequired,
   service: string.isRequired,
+  darkMode: bool,
 };
 
 export default Timestamp;

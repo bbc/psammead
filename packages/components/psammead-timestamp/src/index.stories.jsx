@@ -19,48 +19,52 @@ const styles = Object.keys(typography)
   })
   .filter(style => style);
 
+// eslint-disable-next-line react/prop-types
+const ExampleTimestamp = ({ children, ...props }) => {
+  const padding = boolean('Padding', true);
+  const style = select('Typography', styles, 'Brevier');
+  const typographyFunc = typography[`get${style}`];
+
+  return (
+    <Timestamp
+      datetime="1530947227000"
+      typographyFunc={typographyFunc}
+      script={latin}
+      padding={padding}
+      {...props}
+    >
+      {children}
+    </Timestamp>
+  );
+};
+
 storiesOf('Components|Timestamp', module)
   .addDecorator(withKnobs)
   .addDecorator(withServicesKnob())
   .add(
     'default',
-    ({ service }) => {
-      const padding = boolean('Padding', true);
-      const style = select('Typography', styles, 'Brevier');
-      const typographyFunc = typography[`get${style}`];
-
-      return (
-        <Timestamp
-          datetime="1530947227000"
-          typographyFunc={typographyFunc}
-          script={latin}
-          padding={padding}
-          service={service}
-        >
-          {text('Timestamp Text', '7 July 2018')}
-        </Timestamp>
-      );
-    },
+    ({ service }) => (
+      <ExampleTimestamp service={service}>
+        {text('Timestamp Text', '7 July 2018')}
+      </ExampleTimestamp>
+    ),
+    { notes },
+  )
+  .add(
+    'dark mode',
+    ({ service }) => (
+      <ExampleTimestamp service={service} darkMode>
+        {text('Timestamp Text', '7 July 2018')}
+      </ExampleTimestamp>
+    ),
     { notes },
   )
   .add(
     'with "updated" prefix',
-    ({ service }) => {
-      const padding = boolean('Padding', true);
-      const style = select('Typography', styles, 'Brevier');
-      const typographyFunc = typography[`get${style}`];
-
-      return (
-        <Timestamp
-          datetime="1530947227000"
-          typographyFunc={typographyFunc}
-          script={latin}
-          padding={padding}
-          service={service}
-        >
-          {text('Timestamp Text', 'Updated 7 July 2018')}
-        </Timestamp>
-      );
-    },
+    ({ service }) => (
+      <ExampleTimestamp service={service}>
+        {text('Timestamp Text', 'Updated 7 July 2018')}
+      </ExampleTimestamp>
+    ),
     { notes },
   );

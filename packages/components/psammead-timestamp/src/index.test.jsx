@@ -13,6 +13,13 @@ describe('Timestamp', () => {
   );
 
   shouldMatchSnapshot(
+    'should render dark mode Timestamp correctly',
+    <Timestamp datetime="1530947227000" script={latin} service="news" darkMode>
+      7 July 2018
+    </Timestamp>,
+  );
+
+  shouldMatchSnapshot(
     'should render with the correct typography style applied',
     <Timestamp
       datetime="1530947227000"
