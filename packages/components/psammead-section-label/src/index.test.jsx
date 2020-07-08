@@ -252,7 +252,7 @@ describe('SectionLabel', () => {
       </SectionLabel>,
     );
 
-    it('should log a warning when heading override is an unsuported element', () => {
+    it('should log a warning when heading override is an unsupported element', () => {
       console.error = jest.fn();
 
       render(
