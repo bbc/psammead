@@ -9,5 +9,7 @@ const createTheme = props =>
     ...props,
   });
 
-export const light = createTheme({ base: 'light' });
-export const dark = createTheme({ base: 'dark' });
+export default {
+  light: createTheme({ base: 'light' }),
+  dark: createTheme({ base: 'dark' }),
+};
