@@ -135,7 +135,7 @@ SectionLabel.propTypes = {
   service: string.isRequired,
   visuallyHidden: bool,
   backgroundColor: string,
-  overrideHeadingAs: string,
+  overrideHeadingAs: oneOf([null, 'strong']),
 };
 
 export default SectionLabel;

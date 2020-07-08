@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 import React from 'react';
 import { shouldMatchSnapshot } from '@bbc/psammead-test-helpers';
 import { render } from '@testing-library/react';
@@ -237,9 +238,9 @@ describe('SectionLabel', () => {
     });
   });
 
-  describe('With heading overriden to be a strong element', () => {
+  describe('With heading overriden', () => {
     shouldMatchSnapshot(
-      'should render correctly as a plain title with no bar',
+      'should render a strong element instead of an h2',
       <SectionLabel
         script={latin}
         bar={false}
@@ -250,5 +251,26 @@ describe('SectionLabel', () => {
         This is text in a SectionLabel.
       </SectionLabel>,
     );
+
+    it('should log a warning when heading override is an unsuported element', () => {
+      console.error = jest.fn();
+
+      render(
+        <SectionLabel
+          script={latin}
+          bar={false}
+          labelId="test-section-label"
+          service="news"
+          overrideHeadingAs="h1"
+        >
+          This is the text in a SectionLabel
+        </SectionLabel>,
+      );
+
+      expect(console.error).toHaveBeenCalledWith(
+        `Warning: Failed prop type: Invalid prop \`overrideHeadingAs\` of value \`h1\` supplied to \`SectionLabel\`, expected one of [null,"strong"].
+    in SectionLabel`,
+      );
+    });
   });
 });
