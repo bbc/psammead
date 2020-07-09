@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 4.4.1 | [PR#?](https://github.com/bbc/psammead/pull/?) Add C_MIDNIGHT_BLACK |
 | 4.4.0 | [PR#3466](https://github.com/bbc/psammead/pull/3466) Add C_LUNAR_LIGHT |
 | 4.3.1 | [PR#3390](https://github.com/bbc/psammead/pull/3390) Bump prettier major version and disable rule for brackets around a single prop |
 | 4.3.0 | [PR#3020](https://github.com/bbc/psammead/pull/3020) Add colour C_LE_TEAL and set font families to Latin Reith for Learning English |
