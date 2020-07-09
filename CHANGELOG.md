@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 2.0.173 | [PR#3589](https://github.com/bbc/psammead/pull/3589) Talos - Bump Dependencies - @bbc/psammead-storybook-helpers |
 | 2.0.172 | [PR#3584](https://github.com/bbc/psammead/pull/3584) Talos - Bump Dependencies - @bbc/psammead-media-player |
 | 2.0.171 | [PR#3571](https://github.com/bbc/psammead/pull/3571) Adding new packages to the base package.json |
 | 2.0.170 | [PR#3570](https://github.com/bbc/psammead/pull/3570) Dependency updates |
