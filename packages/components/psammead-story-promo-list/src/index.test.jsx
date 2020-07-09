@@ -2,7 +2,7 @@ import React from 'react';
 import { shouldMatchSnapshot } from '@bbc/psammead-test-helpers';
 import { latin } from '@bbc/gel-foundations/scripts';
 import StoryPromo, { Headline, Summary } from '@bbc/psammead-story-promo';
-import { StoryPromoLi, StoryPromoUl } from './index';
+import { StoryPromoLi, StoryPromoLiThin, StoryPromoUl } from './index';
 
 const Image = <img src="https://foobar.com/image.png" alt="Alt text" />;
 
@@ -34,6 +34,26 @@ describe('StoryPromo list', () => {
       <StoryPromoLi border={false}>
         <StoryPromo image={Image} info={Info} />
       </StoryPromoLi>
+    </StoryPromoUl>,
+  );
+});
+
+describe('StoryPromo list thin', () => {
+  shouldMatchSnapshot(
+    'should render correctly',
+    <StoryPromoUl>
+      <StoryPromoLiThin>
+        <StoryPromo image={Image} info={Info} />
+      </StoryPromoLiThin>
+    </StoryPromoUl>,
+  );
+
+  shouldMatchSnapshot(
+    'should render correctly without border',
+    <StoryPromoUl>
+      <StoryPromoLiThin border={false}>
+        <StoryPromo image={Image} info={Info} />
+      </StoryPromoLiThin>
     </StoryPromoUl>,
   );
 });

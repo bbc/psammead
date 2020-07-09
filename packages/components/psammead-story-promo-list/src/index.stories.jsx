@@ -5,7 +5,7 @@ import Image from '@bbc/psammead-image';
 import { latin } from '@bbc/gel-foundations/scripts';
 import StoryPromo, { Headline, Summary, Link } from '@bbc/psammead-story-promo';
 import Grid from '@bbc/psammead-grid';
-import { StoryPromoLi, StoryPromoUl } from './index';
+import { StoryPromoLi, StoryPromoLiThin, StoryPromoUl } from './index';
 import storyPromoData from '../testHelpers/fixtureData';
 import notes from '../README.md';
 
@@ -112,3 +112,32 @@ storiesOf('Components|StoryPromo/StoryPromoList', module)
       </Grid>
     );
   });
+
+storiesOf('Components|StoryPromo/StoryPromoListThin', module).add(
+  'default',
+  () => (
+    <StoryPromoUl>
+      {storyPromoData.map(item => {
+        const ImagePromo = (
+          <ImageComponent src={item.image.src} alt={item.image.alt} />
+        );
+
+        const InfoPromo = (
+          <InfoComponent
+            headlineText={item.info.headline}
+            summaryText={item.info.summary}
+            datetime={item.info.datetime}
+            dateformat={item.info.dateformat}
+          />
+        );
+
+        return (
+          <StoryPromoLiThin key={item.info.headline}>
+            <StoryPromo image={ImagePromo} info={InfoPromo} />
+          </StoryPromoLiThin>
+        );
+      })}
+    </StoryPromoUl>
+  ),
+  { notes },
+);
