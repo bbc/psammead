@@ -2,7 +2,7 @@
 
 ## Description
 
-The `@bbc/psammead-story-promo-list` package is a set of two components, `StoryPromoUl` and `StoryPromoLi`. They use `ul` and `li` HTML elements respectively.
+The `@bbc/psammead-story-promo-list` package is a set of three components, `StoryPromoUl`, `StoryPromoLi` and `StoryPromoLi`. They use `ul` and `li` HTML elements respectively. The `StoryPromoLi` and `StoryPromoLiThin` components are both `li` elements and can be used interchangeably as they have similar props the only difference is that the `StoryPromoLiThin` ships with no padding presets thereby making it much more configurable to any set of padding/margin rules set on child elements.
 
 ## Installation
 
