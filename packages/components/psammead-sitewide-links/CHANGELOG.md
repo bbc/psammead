@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 4.0.13 | [PR#3591](https://github.com/bbc/psammead/pull/3591) Talos - Bump Dependencies - @bbc/psammead-styles |
 | 4.0.12 | [PR#3467](https://github.com/bbc/psammead/pull/3467) Talos - Bump Dependencies - @bbc/psammead-styles |
 | 4.0.11 | [PR#3397](https://github.com/bbc/psammead/pull/3397) Talos - Bump Dependencies - @bbc/psammead-styles |
 | 4.0.10 | [PR#3182](https://github.com/bbc/psammead/pull/3182) Add lang attribute for CCPA link |

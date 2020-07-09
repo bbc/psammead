@@ -2,6 +2,7 @@
 
 | Version | Description |
 |---------|-------------|
+| 1.0.11 | [PR#3591](https://github.com/bbc/psammead/pull/3591) Talos - Bump Dependencies - @bbc/psammead-styles |
 | 1.0.10 | [PR#3484](https://github.com/bbc/psammead/pull/3484) Voice Over MacOS bug fix. |
 | 1.0.9 | [PR#3467](https://github.com/bbc/psammead/pull/3467) Talos - Bump Dependencies - @bbc/psammead-styles |
 | 1.0.8 | [PR#3397](https://github.com/bbc/psammead/pull/3397) Talos - Bump Dependencies - @bbc/psammead-styles |

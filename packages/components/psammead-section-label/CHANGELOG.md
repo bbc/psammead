@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 5.0.8 | [PR#3591](https://github.com/bbc/psammead/pull/3591) Talos - Bump Dependencies - @bbc/psammead-styles |
 | 5.0.7 | [PR#3514](https://github.com/bbc/psammead/pull/3514) Update Section Label to use correct colour in secondary column |
 | 5.0.6 | [PR#3470](https://github.com/bbc/psammead/pull/3470) Pass `backgroundColor` to `IndexLinkCta` |
 | 5.0.5 | [PR#3467](https://github.com/bbc/psammead/pull/3467) Talos - Bump Dependencies - @bbc/psammead-styles |
