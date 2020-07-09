@@ -4,7 +4,7 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { withKnobs } from '@storybook/addon-knobs';
 import InlineLink from '@bbc/psammead-inline-link';
-import { withServicesKnob } from '@bbc/psammead-storybook-helpers';
+import { withServicesKnob, themes } from '@bbc/psammead-storybook-helpers';
 import notes from '../README.md';
 import Paragraph from './index';
 
@@ -19,6 +19,15 @@ storiesOf('Components|Paragraph', module)
       </Paragraph>
     ),
     { notes, knobs: { escapeHTML: false } },
+  )
+  .add(
+    'dark mode',
+    ({ text, script, service }) => (
+      <Paragraph script={script} service={service} darkMode>
+        {text}
+      </Paragraph>
+    ),
+    { notes, knobs: { escapeHTML: false }, options: { theme: themes.dark } },
   )
   .add(
     'containing an inline link',

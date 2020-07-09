@@ -7,6 +7,7 @@ import {
   AMP_NO_SCRIPT,
 } from '@bbc/psammead-assets/amp-boilerplate';
 import * as fontFaces from '@bbc/psammead-styles/fonts';
+import { themes } from '@bbc/psammead-storybook-helpers';
 import GlobalStyles from '@bbc/psammead-styles/global-styles';
 
 // New locales
@@ -46,19 +47,11 @@ import '@bbc/psammead-locales/moment/yo';
 
 import { Helmet } from 'react-helmet';
 
-const theme = create({
-  base: 'light',
-  brandTitle: 'BBC Psammead',
-  brandUrl: 'https://github.com/bbc/psammead',
-  brandImage:
-    'https://user-images.githubusercontent.com/11341355/54079666-af202780-42d8-11e9-9108-e47ea27fddc5.png',
-});
-
 addParameters({
   options: {
     panelPosition: 'right',
     sidebarAnimations: true,
-    theme,
+    theme: themes.light,
   },
   a11y: {
     options: {
