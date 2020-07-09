@@ -1,7 +1,7 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { text, withKnobs } from '@storybook/addon-knobs';
-import { withServicesKnob } from '@bbc/psammead-storybook-helpers';
+import { withServicesKnob, themes } from '@bbc/psammead-storybook-helpers';
 import notes from '../README.md';
 import { Headline, SubHeading } from './index';
 
@@ -24,7 +24,7 @@ storiesOf('Components|Headline', module)
         {textSnippet}
       </Headline>
     ),
-    { notes, knobs: { escapeHTML: false } },
+    { notes, knobs: { escapeHTML: false }, options: { theme: themes.dark } },
   );
 
 storiesOf('Components|SubHeading', module)
@@ -46,7 +46,7 @@ storiesOf('Components|SubHeading', module)
         {textSnippet}
       </SubHeading>
     ),
-    { notes, knobs: { escapeHTML: false } },
+    { notes, knobs: { escapeHTML: false }, options: { theme: themes.dark } },
   )
   .add(
     'with optional ID',

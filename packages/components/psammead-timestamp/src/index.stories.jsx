@@ -2,7 +2,7 @@ import React from 'react';
 import { storiesOf } from '@storybook/react'; // eslint-disable-line import/no-extraneous-dependencies
 import { text, select, boolean, withKnobs } from '@storybook/addon-knobs';
 import * as typography from '@bbc/gel-foundations/typography';
-import { withServicesKnob } from '@bbc/psammead-storybook-helpers';
+import { withServicesKnob, themes } from '@bbc/psammead-storybook-helpers';
 import { latin } from '@bbc/gel-foundations/scripts';
 import notes from '../README.md';
 import Timestamp from '.';
@@ -57,7 +57,7 @@ storiesOf('Components|Timestamp', module)
         {text('Timestamp Text', '7 July 2018')}
       </ExampleTimestamp>
     ),
-    { notes },
+    { notes, options: { theme: themes.dark } },
   )
   .add(
     'with "updated" prefix',

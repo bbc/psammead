@@ -7,7 +7,7 @@ import {
 } from '@bbc/gel-foundations/spacings';
 import { getBrevier } from '@bbc/gel-foundations/typography';
 import { scriptPropType } from '@bbc/gel-foundations/prop-types';
-import { C_WHITE, C_METAL } from '@bbc/psammead-styles/colours';
+import { C_LUNAR, C_METAL } from '@bbc/psammead-styles/colours';
 import { getSansRegular } from '@bbc/psammead-styles/font-styles';
 
 const PADDING = `
@@ -20,7 +20,7 @@ const PADDING = `
 const StyledTimestamp = styled.time`
   ${({ script, typographyFunc }) =>
     script && typographyFunc && typographyFunc(script)}
-  color: ${({ darkMode }) => (darkMode ? C_WHITE : C_METAL)};
+  color: ${({ darkMode }) => (darkMode ? C_LUNAR : C_METAL)};
   display: block;
   ${({ service }) => getSansRegular(service)}
   ${props => props.padding && PADDING}
