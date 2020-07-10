@@ -20,9 +20,7 @@ Paragraph.propTypes = {
   darkMode: bool,
 };
 
-Paragraph.propTypes = {
-  script: shape(scriptPropType).isRequired,
-  service: string.isRequired,
+Paragraph.defaultProps = {
   darkMode: false,
 };
 
