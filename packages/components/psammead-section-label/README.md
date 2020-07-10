@@ -27,6 +27,7 @@ The only provided child should be the title for the section, provided as a _stri
 | script | object | yes | N/A | { canon: { groupA: { fontSize: '28', lineHeight: '32',}, groupB: { fontSize: '32', lineHeight: '36' }, groupD: { fontSize: '44', lineHeight: '48' } }, trafalgar: { groupA: { fontSize: '20', lineHeight: '24' }, groupB: { fontSize: '24', lineHeight: '28' }, groupD: { fontSize: '32', lineHeight: '36' } } } |
 | service | string | yes | N/A | `'news'` |
 | backgroundColor | string | no | `C_GHOST` | `C_LUNAR` |
+| overrideHeadingAs | string | no | `null` | `strong` |
 
 ## Usage
 
@@ -106,6 +107,27 @@ const WrappingComponent = () => (
       labelId="example-section-label"
       linkText="See More"
       service="news"
+    >
+      Example section
+    </SectionLabel>
+  </div>
+);
+```
+
+You can override the header(`h2`) to any custom HTML element that fits your accesibility requirement depending on what use case or semantic meaning you want to portray in your pages with the `overrideHeadingAs` prop.
+
+```jsx
+import SectionLabel from '@bbc/psammead-section-label';
+import { latin } from '@bbc/gel-foundations/scripts';
+
+const WrappingComponent = () => (
+  <div aria-labelledby="example-section-label">
+    <SectionLabel
+      script={latin}
+      dir="ltr"
+      labelId="example-section-label"
+      service="news"
+      overrideHeadingAs="strong"
     >
       Example section
     </SectionLabel>

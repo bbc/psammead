@@ -38,6 +38,26 @@ storiesOf(STORY_KIND, module)
     { notes, knobs: { escapeHTML: false } },
   )
   .add(
+    'with heading overriden to be a strong element',
+    ({ text, script, dir, service }) => (
+      <SectionLabel
+        script={script}
+        dir={dir}
+        bar={boolean('show bar?', true)}
+        visuallyHidden={boolean(
+          'visually hide component for all breakpoints?',
+          false,
+        )}
+        labelId="example-section-label"
+        service={service}
+        overrideHeadingAs="strong"
+      >
+        {service === 'news' ? 'Most Read' : text}
+      </SectionLabel>
+    ),
+    { notes, knobs: { escapeHTML: false } },
+  )
+  .add(
     'with a link',
     ({ text, script, dir, service }) => (
       <SectionLabel
