@@ -12,6 +12,13 @@ describe('Headline component', () => {
   );
 
   shouldMatchSnapshot(
+    'should render correctly in dark mode',
+    <Headline script={latin} service="news" darkMode>
+      This is my headline.
+    </Headline>,
+  );
+
+  shouldMatchSnapshot(
     'should render correctly with arabic script typography values',
     <Headline script={arabic} service="persian">
       هذا هو العنوان الخاص بي
@@ -23,6 +30,13 @@ describe('SubHeading component', () => {
   shouldMatchSnapshot(
     'should render correctly',
     <SubHeading script={latin} service="news">
+      This is a SubHeading
+    </SubHeading>,
+  );
+
+  shouldMatchSnapshot(
+    'should render correctly in dark mode',
+    <SubHeading script={latin} service="news" darkMode>
       This is a SubHeading
     </SubHeading>,
   );
