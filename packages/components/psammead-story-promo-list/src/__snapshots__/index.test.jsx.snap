@@ -144,6 +144,12 @@ exports[`StoryPromo list base should render correctly 1`] = `
   }
 }
 
+@media (min-width:37.5rem) and (max-width:62.9375rem) {
+  .c1 {
+    border-bottom: none;
+  }
+}
+
 <ul
   class="c0"
   role="list"
@@ -332,12 +338,6 @@ exports[`StoryPromo list base should render correctly without border 1`] = `
 @media (min-width:37.5rem) and (max-width:62.9375rem) {
   .c1 {
     border-bottom: none;
-  }
-}
-
-@media (max-width:62.9375rem) {
-  .c1 {
-    border-bottom: 0.0625rem solid #F2F2F2;
   }
 }
 
@@ -542,6 +542,12 @@ exports[`StoryPromo list should render correctly 1`] = `
 @media (max-width:62.9375rem) {
   .c1 {
     border-bottom: 0.0625rem solid #F2F2F2;
+  }
+}
+
+@media (min-width:37.5rem) and (max-width:62.9375rem) {
+  .c1 {
+    border-bottom: none;
   }
 }
 
@@ -764,12 +770,6 @@ exports[`StoryPromo list should render correctly without border 1`] = `
 @media (min-width:37.5rem) and (max-width:62.9375rem) {
   .c1 {
     border-bottom: none;
-  }
-}
-
-@media (max-width:62.9375rem) {
-  .c1 {
-    border-bottom: 0.0625rem solid #F2F2F2;
   }
 }
 
