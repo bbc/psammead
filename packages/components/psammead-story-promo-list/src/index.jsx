@@ -16,15 +16,15 @@ export const StoryPromoLiBase = styled.li.attrs({
   role: 'listitem',
 })`
   ${({ border }) =>
-    !border &&
+    border &&
     `
-    @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) and (max-width: ${GEL_GROUP_3_SCREEN_WIDTH_MAX}) {
-        border-bottom: none;
+    @media (max-width: ${GEL_GROUP_3_SCREEN_WIDTH_MAX}) {
+      border-bottom: 0.0625rem solid ${C_LUNAR};
     }
   `}
 
-  @media (max-width: ${GEL_GROUP_3_SCREEN_WIDTH_MAX}) {
-    border-bottom: 0.0625rem solid ${C_LUNAR};
+  @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) and (max-width: ${GEL_GROUP_3_SCREEN_WIDTH_MAX}) {
+    border-bottom: none;
   }
 `;
 
