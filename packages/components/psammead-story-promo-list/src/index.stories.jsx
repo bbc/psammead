@@ -113,7 +113,7 @@ storiesOf('Components|StoryPromo/StoryPromoList', module)
     );
   });
 
-storiesOf('Components|StoryPromo/StoryPromoListThin', module).add(
+storiesOf('Components|StoryPromo/StoryPromoListBase', module).add(
   'default',
   () => (
     <StoryPromoUl>
