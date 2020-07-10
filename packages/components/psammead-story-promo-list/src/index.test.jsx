@@ -38,7 +38,7 @@ describe('StoryPromo list', () => {
   );
 });
 
-describe('StoryPromo list thin', () => {
+describe('StoryPromo list base', () => {
   shouldMatchSnapshot(
     'should render correctly',
     <StoryPromoUl>
