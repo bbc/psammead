@@ -3,7 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 | ------- | ----------- |
-| 4.1.0 | [PR#3588](https://github.com/bbc/psammead/pull/3588) Added `StoryPromoLiThin` to support configurable padding/margin rules |
+| 4.1.0 | [PR#3588](https://github.com/bbc/psammead/pull/3588) Added `StoryPromoLiBase` to support configurable padding/margin rules |
 | 4.0.8 | [PR#3467](https://github.com/bbc/psammead/pull/3467) Talos - Bump Dependencies - @bbc/psammead-styles |
 | 4.0.7 | [PR#3397](https://github.com/bbc/psammead/pull/3397) Talos - Bump Dependencies - @bbc/psammead-styles |
 | 4.0.6 | [PR#3315](https://github.com/bbc/psammead/pull/3315) Add `border` prop to be able to hide the border |
