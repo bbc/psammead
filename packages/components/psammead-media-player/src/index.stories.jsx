@@ -12,7 +12,7 @@ const withDuration = {
 
 storiesOf('Components|Media Player', module)
   .add(
-    'Default',
+    'Articles Default',
     () => (
       <CanonicalMediaPlayer
         src="https://www.test.bbc.co.uk/ws/av-embeds/articles/c3wmq4d1y3wo/p01k6msp/en"
@@ -20,6 +20,26 @@ storiesOf('Components|Media Player', module)
         service="news"
         mediaInfo={{ title: 'Dog chases cat.', type: 'video', ...withDuration }}
         title="Default Video player"
+      />
+    ),
+    { notes, knobs: { escapeHTML: false } },
+  )
+  .add(
+    'MAP default',
+    () => (
+      <CanonicalMediaPlayer
+        src="https://www.test.bbc.com/ws/av-embeds/cps/pidgin/23248703/p01kx42v/pcm"
+        placeholder="https://ichef.test.bbci.co.uk/images/ic/1024x576/p01kx435.jpg"
+        showPlaceholder={false}
+        service="pidgin"
+        mediaInfo={{
+          title: 'alt-text world service clip',
+          type: 'video',
+          ...withDuration,
+        }}
+        title="Media player"
+        noJsMessage="Dem no support media player for your device"
+        noJsClassName="no-js"
       />
     ),
     { notes, knobs: { escapeHTML: false } },

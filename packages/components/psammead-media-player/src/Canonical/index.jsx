@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { string, bool } from 'prop-types';
 import styled from 'styled-components';
+import ImagePlaceholder from '@bbc/psammead-image-placeholder';
 import Message from '../Message';
 
 const Canonical = ({
@@ -12,10 +13,20 @@ const Canonical = ({
   noJsMessage,
   showPlaceholder,
 }) => {
+  const [loaded, setLoaded] = useState(false);
   const backgroundStyle = `
     background-image: url(${placeholderSrc});
     background-repeat: no-repeat;
     background-size: contain;
+  `;
+
+  const LoadingImageWrapper = styled.div`
+    /* background-color: tomato; */
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
   `;
 
   const StyledIframe = styled.iframe`
@@ -32,6 +43,9 @@ const Canonical = ({
   return (
     <>
       <StyledIframe
+        onLoad={() => {
+          setLoaded(true);
+        }}
         src={src}
         title={title}
         allow="autoplay; fullscreen"
@@ -39,6 +53,12 @@ const Canonical = ({
         gesture="media"
         allowFullScreen
       />
+      {loaded ? null : (
+        <LoadingImageWrapper>
+          <ImagePlaceholder ratio={56.25} />
+        </LoadingImageWrapper>
+      )}
+
       <noscript>
         <Message
           service={service}
