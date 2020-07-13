@@ -1,5 +1,6 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
+import { boolean, withKnobs } from '@storybook/addon-knobs';
 import Timestamp from '@bbc/psammead-timestamp';
 import Image from '@bbc/psammead-image';
 import { latin } from '@bbc/gel-foundations/scripts';
@@ -35,6 +36,7 @@ const InfoComponent = ({ headlineText, summaryText, datetime, dateformat }) => (
 );
 
 storiesOf('Components|StoryPromo/StoryPromoList', module)
+  .addDecorator(withKnobs)
   .add(
     'default',
     () => (
@@ -54,7 +56,10 @@ storiesOf('Components|StoryPromo/StoryPromoList', module)
           );
 
           return (
-            <StoryPromoLi key={item.info.headline}>
+            <StoryPromoLi
+              key={item.info.headline}
+              border={boolean('show border?', true)}
+            >
               <StoryPromo image={ImagePromo} info={InfoPromo} />
             </StoryPromoLi>
           );
@@ -113,31 +118,36 @@ storiesOf('Components|StoryPromo/StoryPromoList', module)
     );
   });
 
-storiesOf('Components|StoryPromo/StoryPromoListBase', module).add(
-  'default',
-  () => (
-    <StoryPromoUl>
-      {storyPromoData.map(item => {
-        const ImagePromo = (
-          <ImageComponent src={item.image.src} alt={item.image.alt} />
-        );
+storiesOf('Components|StoryPromo/StoryPromoListBase', module)
+  .addDecorator(withKnobs)
+  .add(
+    'default',
+    () => (
+      <StoryPromoUl>
+        {storyPromoData.map(item => {
+          const ImagePromo = (
+            <ImageComponent src={item.image.src} alt={item.image.alt} />
+          );
 
-        const InfoPromo = (
-          <InfoComponent
-            headlineText={item.info.headline}
-            summaryText={item.info.summary}
-            datetime={item.info.datetime}
-            dateformat={item.info.dateformat}
-          />
-        );
+          const InfoPromo = (
+            <InfoComponent
+              headlineText={item.info.headline}
+              summaryText={item.info.summary}
+              datetime={item.info.datetime}
+              dateformat={item.info.dateformat}
+            />
+          );
 
-        return (
-          <StoryPromoLiBase key={item.info.headline}>
-            <StoryPromo image={ImagePromo} info={InfoPromo} />
-          </StoryPromoLiBase>
-        );
-      })}
-    </StoryPromoUl>
-  ),
-  { notes },
-);
+          return (
+            <StoryPromoLiBase
+              key={item.info.headline}
+              border={boolean('show border?', true)}
+            >
+              <StoryPromo image={ImagePromo} info={InfoPromo} />
+            </StoryPromoLiBase>
+          );
+        })}
+      </StoryPromoUl>
+    ),
+    { notes },
+  );

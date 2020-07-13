@@ -12,6 +12,15 @@ import {
   GEL_GROUP_4_SCREEN_WIDTH_MIN,
 } from '@bbc/gel-foundations/breakpoints';
 
+const promoListPropTypes = {
+  children: node.isRequired,
+  border: bool,
+};
+
+const promoListDefaultProps = {
+  border: true,
+};
+
 export const StoryPromoLiBase = styled.li.attrs({
   role: 'listitem',
 })`
@@ -23,10 +32,14 @@ export const StoryPromoLiBase = styled.li.attrs({
     }
   `}
 
-  @media (min-width: ${GEL_GROUP_3_SCREEN_WIDTH_MIN}) and (max-width: ${GEL_GROUP_3_SCREEN_WIDTH_MAX}) {
-    border-bottom: none;
+  &:last-child {
+    border: none;
   }
 `;
+
+StoryPromoLiBase.propTypes = promoListPropTypes;
+
+StoryPromoLiBase.defaultProps = promoListDefaultProps;
 
 export const StoryPromoLi = styled(StoryPromoLiBase)`
   padding: ${GEL_SPACING} 0 ${GEL_SPACING_DBL};
@@ -48,9 +61,12 @@ export const StoryPromoLi = styled(StoryPromoLiBase)`
 
   &:last-child {
     padding-bottom: 0;
-    border: none;
   }
 `;
+
+StoryPromoLi.propTypes = promoListPropTypes;
+
+StoryPromoLi.defaultProps = promoListDefaultProps;
 
 export const StoryPromoUl = styled.ul.attrs({
   role: 'list',
@@ -62,22 +78,4 @@ export const StoryPromoUl = styled.ul.attrs({
 
 StoryPromoUl.propTypes = {
   children: node.isRequired,
-};
-
-StoryPromoLi.propTypes = {
-  children: node.isRequired,
-  border: bool,
-};
-
-StoryPromoLi.defaultProps = {
-  border: true,
-};
-
-StoryPromoLiBase.propTypes = {
-  children: node.isRequired,
-  border: bool,
-};
-
-StoryPromoLiBase.defaultProps = {
-  border: true,
 };
