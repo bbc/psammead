@@ -3,6 +3,8 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 4.1.6 | [PR#3605](https://github.com/bbc/psammead/pull/3605) Talos - Bump Dependencies - @bbc/psammead-grid |
+| 4.1.5 | [PR#3604](https://github.com/bbc/psammead/pull/3604) Talos - Bump Dependencies - @bbc/gel-foundations |
 | 4.1.4 | [PR#3543](https://github.com/bbc/psammead/pull/3543) Talos - Bump Dependencies - @bbc/psammead-grid |
 | 4.1.3 | [PR#3502](https://github.com/bbc/psammead/pull/3502) Fix padding bottom bug |
 | 4.1.2 | [PR#3468](https://github.com/bbc/psammead/pull/3468) Talos - Bump Dependencies - @bbc/psammead-grid |
