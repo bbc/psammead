@@ -71,16 +71,16 @@ const thaiTypography = {
   },
   canon: {
     groupA: {
-      fontSize: '28',
-      lineHeight: '32',
+      fontSize: '24',
+      lineHeight: '30',
     },
     groupB: {
-      fontSize: '32',
-      lineHeight: '42',
+      fontSize: '28',
+      lineHeight: '38',
     },
     groupD: {
-      fontSize: '46',
-      lineHeight: '58',
+      fontSize: '40',
+      lineHeight: '52',
     },
   },
   trafalgar: {
