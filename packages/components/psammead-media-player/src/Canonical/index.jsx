@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { string, bool } from 'prop-types';
 import styled from 'styled-components';
 import ImagePlaceholder from '@bbc/psammead-image-placeholder';
@@ -13,7 +13,6 @@ const Canonical = ({
   noJsMessage,
   showPlaceholder,
 }) => {
-  const [loading, setLoading] = useState(true);
   const backgroundStyle = `
     background-image: url(${placeholderSrc});
     background-repeat: no-repeat;
@@ -21,26 +20,15 @@ const Canonical = ({
   `;
 
   const LoadingImageWrapper = styled.div`
-    @keyframes fade-out {
-      from {
-        opacity: 1;
-      }
-      to {
-        opacity: 0;
-      }
-    }
-
-    z-index: 1;
     position: absolute;
     left: 0;
     top: 0;
     width: 100%;
     height: 100%;
-    ${({ loading }) =>
-      loading ? '' : 'animation: fade-out 0.3s ease-out 1.6s forwards;'}
   `;
 
   const StyledIframe = styled.iframe`
+    z-index: 1;
     border: 0;
     left: 0;
     overflow: hidden;
@@ -54,10 +42,6 @@ const Canonical = ({
   return (
     <>
       <StyledIframe
-        onLoad={() => {
-          console.log('firing onLoad');
-          setLoading(false);
-        }}
         src={src}
         title={title}
         allow="autoplay; fullscreen"
@@ -65,7 +49,7 @@ const Canonical = ({
         gesture="media"
         allowFullScreen
       />
-      <LoadingImageWrapper loading={loading}>
+      <LoadingImageWrapper>
         <ImagePlaceholder ratio={56.25} />
       </LoadingImageWrapper>
       <noscript>
