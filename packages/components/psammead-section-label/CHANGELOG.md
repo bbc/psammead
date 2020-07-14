@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 5.0.9 | [PR#3604](https://github.com/bbc/psammead/pull/3604) Talos - Bump Dependencies - @bbc/gel-foundations |
 | 5.0.8 | [PR#3585](https://github.com/bbc/psammead/pull/3585) Add `overrideHeadingAs` prop |
 | 5.0.7 | [PR#3514](https://github.com/bbc/psammead/pull/3514) Update Section Label to use correct colour in secondary column |
 | 5.0.6 | [PR#3470](https://github.com/bbc/psammead/pull/3470) Pass `backgroundColor` to `IndexLinkCta` |

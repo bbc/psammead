@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 8.3.3 | [PR#3604](https://github.com/bbc/psammead/pull/3604) Talos - Bump Dependencies - @bbc/gel-foundations |
 | 8.3.2 | [PR#3586](https://github.com/bbc/psammead/pull/3586) Add Storybook themes |
 | 8.3.1 | [PR#3388](https://github.com/bbc/psammead/pull/3388) Update react-helmet to 6.0.0 |
 | 8.3.0 | [PR#3376](https://github.com/bbc/psammead/pull/3376) Adding timezone to withServicesKnob helper |
