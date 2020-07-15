@@ -4,6 +4,7 @@ import * as svgs from './svgs';
 
 const svgExceptions = [
   'BBC_BLOCKS',
+  'BBC_BLOCKS_DARK_MODE',
   'coreIcons',
   'mediaIcons',
   'navigationIcons',

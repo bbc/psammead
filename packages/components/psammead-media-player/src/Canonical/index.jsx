@@ -13,6 +13,7 @@ const Canonical = ({
   noJsMessage,
   showPlaceholder,
   showLoadingImage,
+  darkMode,
 }) => {
   const backgroundStyle = `
     background-image: url(${placeholderSrc});
@@ -52,7 +53,7 @@ const Canonical = ({
       />
       {showLoadingImage && (
         <LoadingImageWrapper>
-          <ImagePlaceholder ratio={56.25} />
+          <ImagePlaceholder ratio={56.25} darkMode={darkMode} />
         </LoadingImageWrapper>
       )}
       <noscript>
@@ -76,6 +77,7 @@ Canonical.propTypes = {
   noJsMessage: string.isRequired,
   showPlaceholder: bool.isRequired,
   showLoadingImage: bool.isRequired,
+  darkMode: bool.isRequired,
 };
 
 Canonical.defaultProps = {
