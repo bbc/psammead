@@ -29,7 +29,6 @@ storiesOf('Components|Media Player', module)
     () => (
       <CanonicalMediaPlayer
         src="https://www.test.bbc.com/ws/av-embeds/cps/pidgin/23248703/p01kx42v/pcm"
-        placeholder="https://ichef.test.bbci.co.uk/images/ic/1024x576/p01kx435.jpg"
         showPlaceholder={false}
         service="pidgin"
         mediaInfo={{
