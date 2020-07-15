@@ -37,6 +37,7 @@ storiesOf('Components|Media Player', module)
           type: 'video',
           ...withDuration,
         }}
+        showLoadingImage
         title="Media player"
         noJsMessage="Dem no support media player for your device"
         noJsClassName="no-js"

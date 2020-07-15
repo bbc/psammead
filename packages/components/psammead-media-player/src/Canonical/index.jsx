@@ -12,6 +12,7 @@ const Canonical = ({
   service,
   noJsMessage,
   showPlaceholder,
+  showLoadingImage,
 }) => {
   const backgroundStyle = `
     background-image: url(${placeholderSrc});
@@ -49,9 +50,11 @@ const Canonical = ({
         gesture="media"
         allowFullScreen
       />
-      <LoadingImageWrapper>
-        <ImagePlaceholder ratio={56.25} />
-      </LoadingImageWrapper>
+      {showLoadingImage && (
+        <LoadingImageWrapper>
+          <ImagePlaceholder ratio={56.25} />
+        </LoadingImageWrapper>
+      )}
       <noscript>
         <Message
           service={service}
@@ -72,6 +75,7 @@ Canonical.propTypes = {
   service: string.isRequired,
   noJsMessage: string.isRequired,
   showPlaceholder: bool.isRequired,
+  showLoadingImage: bool.isRequired,
 };
 
 Canonical.defaultProps = {
