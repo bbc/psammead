@@ -26,7 +26,7 @@ exports[`EmbedError renders a default embed error 1`] = `
   justify-content: flex-end;
   padding-top: 6rem;
   padding-bottom: 1.5rem;
-  border: 1px solid transparent;
+  border: 0.0625rem solid transparent;
 }
 
 .c1 {
@@ -105,7 +105,7 @@ exports[`EmbedError renders an embed error that fills the viewport 1`] = `
   justify-content: flex-end;
   padding-top: 6rem;
   padding-bottom: 1.5rem;
-  border: 1px solid transparent;
+  border: 0.0625rem solid transparent;
   background-position: center;
   background-size: 38.2%;
   height: 100vh;
@@ -187,7 +187,7 @@ exports[`EmbedError renders an embed error with a link 1`] = `
   justify-content: flex-end;
   padding-top: 6rem;
   padding-bottom: 1.5rem;
-  border: 1px solid transparent;
+  border: 0.0625rem solid transparent;
 }
 
 .c1 {

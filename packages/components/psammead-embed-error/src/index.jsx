@@ -36,7 +36,7 @@ const StyledEmbedError = styled.div`
   justify-content: flex-end;
   padding-top: ${FAUX_BBC_BLOCKS_SPACE};
   padding-bottom: ${GEL_SPACING_TRPL};
-  border: 1px solid transparent;
+  border: 0.0625rem solid transparent;
   ${({ fillViewport }) => fillViewport && FILL_VIEWPORT_STYLES}
 `;
 
