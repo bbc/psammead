@@ -2,6 +2,7 @@
 
 | Version       | Description                                                                       |
 |---------------|-----------------------------------------------------------------------------------|
+| 1.0.0 | [PR#xxxx](https://github.com/bbc/psammead/pull/xxxx) Resolve a11y issues and release of version 1.0. |
 | 1.0.0-alpha.21 | [PR#3613](https://github.com/bbc/psammead/pull/3613) Talos - Bump Dependencies - @bbc/psammead-assets |
 | 1.0.0-alpha.20 | [PR#3604](https://github.com/bbc/psammead/pull/3604) Talos - Bump Dependencies - @bbc/gel-foundations |
 | 1.0.0-alpha.19 | [PR#3573](https://github.com/bbc/psammead/pull/3573) Add option to render a link. |
