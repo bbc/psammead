@@ -19,4 +19,8 @@ describe('ImagePlaceholder', () => {
     'should render square images correctly',
     <ImagePlaceholder ratio={squareImageRatio} />,
   );
+  shouldMatchSnapshot(
+    'should render dark mode version correctly',
+    <ImagePlaceholder ratio={landscapeImageRatio} darkMode />,
+  );
 });

@@ -13,6 +13,7 @@ The `psammead-image-placeholder` component is a `div` with a base-64 encoded SVG
 | Argument | Type                                   | Required | Default | Example |
 | -------- | -------------------------------------- | -------- | ------- | ------- |
 | Ratio    | Number, ratio between height and width | Yes      | N/A     | 65.625  |
+| darkMode | Bool, true (dark) or false (normal)    | No       | false   | false   |
 
 ## Usage
 
