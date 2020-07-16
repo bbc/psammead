@@ -17,6 +17,7 @@ const ampBoilerplateExpectedExports = {
 
 const svgsExpectedExports = {
   BBC_BLOCKS: 'string',
+  BBC_BLOCKS_DARK_MODE: 'string',
   coreIcons: 'object',
   mediaIcons: 'object',
   navigationIcons: 'object',
