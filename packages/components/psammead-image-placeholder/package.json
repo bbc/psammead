@@ -1,6 +1,6 @@
 {
   "name": "@bbc/psammead-image-placeholder",
-  "version": "1.2.36",
+  "version": "1.2.37",
   "main": "dist/index.js",
   "module": "esm/index.js",
   "sideEffects": false,
