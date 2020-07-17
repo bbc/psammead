@@ -170,15 +170,15 @@ const bengaliTypography = {
   longPrimer: {
     groupA: {
       fontSize: '16',
-      lineHeight: '22',
+      lineHeight: '26',
     },
     groupB: {
       fontSize: '16',
-      lineHeight: '22',
+      lineHeight: '26',
     },
     groupD: {
       fontSize: '20',
-      lineHeight: '24',
+      lineHeight: '30',
     },
   },
   brevier: {
