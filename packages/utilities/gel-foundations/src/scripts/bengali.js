@@ -142,15 +142,15 @@ const bengaliTypography = {
   bodyCopy: {
     groupA: {
       fontSize: '17',
-      lineHeight: '23',
+      lineHeight: '28',
     },
     groupB: {
       fontSize: '20',
-      lineHeight: '26',
+      lineHeight: '32',
     },
     groupD: {
       fontSize: '22',
-      lineHeight: '28',
+      lineHeight: '34',
     },
   },
   pica: {
