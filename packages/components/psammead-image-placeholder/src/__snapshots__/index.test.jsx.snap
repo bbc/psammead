@@ -1,5 +1,24 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`ImagePlaceholder should render dark mode version correctly 1`] = `
+.c0 {
+  position: relative;
+  height: 0;
+  overflow: hidden;
+  background-color: #3F3F42;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 30%;
+  padding-bottom: 56.25%;
+  width: 100%;
+  background-image: url(data:image/svg+xml;base64,);
+}
+
+<div
+  class="c0"
+/>
+`;
+
 exports[`ImagePlaceholder should render landscape images correctly 1`] = `
 .c0 {
   position: relative;
