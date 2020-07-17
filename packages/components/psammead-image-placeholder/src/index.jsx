@@ -14,9 +14,8 @@ const ImagePlaceholder = styled.div`
   padding-bottom: ${props => props.ratio}%;
   width: 100%;
   /* placeholder BBC blocks SVG */
-  background-image: url(data:image/svg+xml;base64,
-    ${({ darkMode }) => (darkMode ? BBC_BLOCKS_DARK_MODE : BBC_BLOCKS)}
-    );
+  background-image: url(data:image/svg+xml;base64,${({ darkMode }) =>
+    darkMode ? BBC_BLOCKS_DARK_MODE : BBC_BLOCKS});
 `;
 
 ImagePlaceholder.propTypes = {
