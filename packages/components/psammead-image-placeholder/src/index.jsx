@@ -13,8 +13,8 @@ const ImagePlaceholder = styled.div`
   background-size: 30%;
   padding-bottom: ${props => props.ratio}%;
   width: 100%;
-  background-image: url(data:image/svg+xml;base64,
-  ${({ darkMode }) => (darkMode ? BBC_BLOCKS_DARK_MODE : BBC_BLOCKS)});
+  background-image: url(data:image/svg+xml;base64,${({ darkMode }) =>
+    darkMode ? BBC_BLOCKS_DARK_MODE : BBC_BLOCKS});
 `;
 
 ImagePlaceholder.propTypes = {
