@@ -11,7 +11,7 @@ exports[`ImagePlaceholder should render dark mode version correctly 1`] = `
   background-size: 30%;
   padding-bottom: 56.25%;
   width: 100%;
-  background-image: url(data:image/svg+xml;base64,);
+  background-image: url(data:image/svg+xml;base64,undefined);
 }
 
 <div
