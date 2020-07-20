@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 | ------- | ----------- |
+| 4.1.2 | [PR#3623](https://github.com/bbc/psammead/pull/3623) Talos - Bump Dependencies - @bbc/gel-foundations |
 | 4.1.1 | [PR#3604](https://github.com/bbc/psammead/pull/3604) Talos - Bump Dependencies - @bbc/gel-foundations |
 | 4.1.0 | [PR#3588](https://github.com/bbc/psammead/pull/3588) Added `StoryPromoLiBase` to support configurable padding/margin rules |
 | 4.0.8 | [PR#3467](https://github.com/bbc/psammead/pull/3467) Talos - Bump Dependencies - @bbc/psammead-styles |
