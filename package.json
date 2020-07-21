@@ -1,6 +1,6 @@
 {
   "name": "@bbc/psammead",
-  "version": "2.0.183",
+  "version": "2.0.184",
   "description": "Core Components Library Developed & Maintained By The Articles and Reach & Languages Team",
   "main": "index.js",
   "private": true,
@@ -48,7 +48,7 @@
     "@babel/plugin-transform-runtime": "^7.10.4",
     "@babel/preset-env": "^7.10.4",
     "@babel/preset-react": "^7.10.4",
-    "@bbc/gel-foundations": "^4.1.0",
+    "@bbc/gel-foundations": "^4.2.0",
     "@bbc/moment-timezone-include": "^1.1.4",
     "@bbc/psammead-amp-geo": "^1.2.0",
     "@bbc/psammead-assets": "^2.14.1",
