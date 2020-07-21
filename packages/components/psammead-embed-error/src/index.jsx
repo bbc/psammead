@@ -69,7 +69,9 @@ const StyledErrorMessage = styled.div`
 const EmbedError = ({ service, message, fillViewport, link }) => (
   <StyledEmbedError service={service} fillViewport={fillViewport}>
     <StyledErrorMessage service={service}>
-      <strong>{message}</strong>
+      <div>
+        <strong>{message}</strong>
+      </div>
       {link && link.text && link.href && <a href={link.href}>{link.text}</a>}
     </StyledErrorMessage>
   </StyledEmbedError>
