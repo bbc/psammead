@@ -44,7 +44,6 @@ const StyledErrorMessage = styled.div`
   margin: 0 ${GEL_SPACING_TRPL};
 
   strong {
-    display: block;
     font-weight: normal;
   }
 
