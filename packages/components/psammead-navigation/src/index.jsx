@@ -102,7 +102,7 @@ const StyledListItem = styled.li`
     &::after {
       content: '';
       position: absolute;
-      bottom: 0;
+      bottom: -1px;
       width: ${GEL_GROUP_5_SCREEN_WIDTH_MIN};
       border-bottom: 0.0625rem solid ${BORDER_COLOR};
       z-index: -1;
