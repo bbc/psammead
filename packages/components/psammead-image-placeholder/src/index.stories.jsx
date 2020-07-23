@@ -24,7 +24,7 @@ storiesOf('Components|Images/ImagePlaceholder', module)
     { notes },
   )
   .add(
-    '16x9 image placeholder with darkMode enabled',
+    '16x9 dark mode image placeholder',
     () => <ImagePlaceholder ratio={landscapeImageRatio} darkMode />,
     { notes },
   );
