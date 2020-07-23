@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 2.0.185 | [PR#3629](https://github.com/bbc/psammead/pull/3629) Talos - Bump Dependencies - @bbc/psammead-embed-error, @bbc/psammead-navigation |
 | 2.0.184 | [PR#3623](https://github.com/bbc/psammead/pull/3623) Talos - Bump Dependencies - @bbc/gel-foundations |
 | 2.0.183 | [PR#3613](https://github.com/bbc/psammead/pull/3613) Talos - Bump Dependencies - @bbc/psammead-assets |
 | 2.0.182 | [PR#3609](https://github.com/bbc/psammead/pull/3609) Talos - Bump Dependencies - @bbc/psammead-radio-schedule |
