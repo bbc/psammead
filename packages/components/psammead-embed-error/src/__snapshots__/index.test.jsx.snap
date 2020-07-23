@@ -34,7 +34,6 @@ exports[`EmbedError renders a default embed error 1`] = `
 }
 
 .c1 strong {
-  display: block;
   font-weight: normal;
 }
 
@@ -72,9 +71,11 @@ exports[`EmbedError renders a default embed error 1`] = `
   <div
     class="c1"
   >
-    <strong>
-      Sorry, we can't display this part of the story on this lightweight mobile page.
-    </strong>
+    <div>
+      <strong>
+        Sorry, we can't display this part of the story on this lightweight mobile page.
+      </strong>
+    </div>
   </div>
 </div>
 `;
@@ -116,7 +117,6 @@ exports[`EmbedError renders an embed error that fills the viewport 1`] = `
 }
 
 .c1 strong {
-  display: block;
   font-weight: normal;
 }
 
@@ -154,9 +154,11 @@ exports[`EmbedError renders an embed error that fills the viewport 1`] = `
   <div
     class="c1"
   >
-    <strong>
-      Sorry, we can't display this part of the story on this lightweight mobile page.
-    </strong>
+    <div>
+      <strong>
+        Sorry, we can't display this part of the story on this lightweight mobile page.
+      </strong>
+    </div>
   </div>
 </div>
 `;
@@ -195,7 +197,6 @@ exports[`EmbedError renders an embed error with a link 1`] = `
 }
 
 .c1 strong {
-  display: block;
   font-weight: normal;
 }
 
@@ -233,9 +234,11 @@ exports[`EmbedError renders an embed error with a link 1`] = `
   <div
     class="c1"
   >
-    <strong>
-      Sorry, we can't display this part of the story on this lightweight mobile page.
-    </strong>
+    <div>
+      <strong>
+        Sorry, we can't display this part of the story on this lightweight mobile page.
+      </strong>
+    </div>
     <a
       href="#"
     >
