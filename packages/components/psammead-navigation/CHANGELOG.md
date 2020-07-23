@@ -3,6 +3,9 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 6.0.15 | [PR#3628](https://github.com/bbc/psammead/pull/3628) Tweak :after styling to obscure pink bottom line |
+| 6.0.14 | [PR#3623](https://github.com/bbc/psammead/pull/3623) Talos - Bump Dependencies - @bbc/gel-foundations |
+| 6.0.13 | [PR#3613](https://github.com/bbc/psammead/pull/3613) Talos - Bump Dependencies - @bbc/psammead-assets |
 | 6.0.12 | [PR#3604](https://github.com/bbc/psammead/pull/3604) Talos - Bump Dependencies - @bbc/gel-foundations |
 | 6.0.11 | [PR#3467](https://github.com/bbc/psammead/pull/3467) Talos - Bump Dependencies - @bbc/psammead-styles |
 | 6.0.10 | [PR#3427](https://github.com/bbc/psammead/pull/3427) Talos - Bump Dependencies - @bbc/visually-hidden-text |
