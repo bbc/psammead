@@ -2,7 +2,7 @@
 
 ## Description
 
-## Testing package change
+## Testing package changes
 
 The `Brand` component provides the BBC service logo (as SVG), nested inside a styled link and div. The link is currently hardcoded to "https://www.bbc.co.uk/news".
 
