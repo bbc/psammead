@@ -1,5 +1,6 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
+import { boolean, withKnobs } from '@storybook/addon-knobs';
 import { CanonicalMediaPlayer, AmpMediaPlayer } from '.';
 import { ampDecorator } from '../../../../.storybook/config';
 import notes from '../README.md';
@@ -12,7 +13,7 @@ const withDuration = {
 
 storiesOf('Components|Media Player', module)
   .add(
-    'Default',
+    'Articles Canonical',
     () => (
       <CanonicalMediaPlayer
         src="https://www.test.bbc.co.uk/ws/av-embeds/articles/c3wmq4d1y3wo/p01k6msp/en"
@@ -20,6 +21,28 @@ storiesOf('Components|Media Player', module)
         service="news"
         mediaInfo={{ title: 'Dog chases cat.', type: 'video', ...withDuration }}
         title="Default Video player"
+      />
+    ),
+    { notes, knobs: { escapeHTML: false } },
+  )
+  .addDecorator(withKnobs)
+  .add(
+    'MAP Canonical',
+    () => (
+      <CanonicalMediaPlayer
+        src="https://www.test.bbc.com/ws/av-embeds/cps/pidgin/23248703/p01kx42v/pcm"
+        showPlaceholder={false}
+        service="pidgin"
+        mediaInfo={{
+          title: 'alt-text world service clip',
+          type: 'video',
+          ...withDuration,
+        }}
+        showLoadingImage
+        darkMode={boolean('Dark mode', false)}
+        title="Media player"
+        noJsMessage="Dem no support media player for your device"
+        noJsClassName="no-js"
       />
     ),
     { notes, knobs: { escapeHTML: false } },
