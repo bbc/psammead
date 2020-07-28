@@ -53,7 +53,7 @@ node {
       checkout scm
 
       // Does merge contain changes to packages?
-      if (hasPackageChanged()) {
+      if (!hasPackageChanged()) {
         currentBuild.result = 'SUCCESS'
 
         return
