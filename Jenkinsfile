@@ -14,6 +14,20 @@ def cleanUp() {
   sh 'chmod -R 777 .git'
 }
 
+def hasPackageChanged() {
+  for (changeLogSet in currentBuild.changeSets) {
+    for (entry in changeLogSet.getItems()) {
+      for (file in entry.getAffectedFiles()) {
+        if (file.getPath() ==~ /^packages/) {
+          return true
+        }
+      }
+    }
+  }
+
+  return false
+}
+
 node {
   properties(
     [
@@ -37,6 +51,13 @@ node {
 
       // git checkout
       checkout scm
+
+      // Does merge contain changes to packages?
+      if (hasPackageChanged()) {
+        currentBuild.result = 'SUCCESS'
+
+        return
+      }
 
       // get git commit info for notifications
       gitCommitHash = sh(returnStdout: true, script: "git log -n 1 --pretty=format:'%h'").trim()
