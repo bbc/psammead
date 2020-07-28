@@ -14,20 +14,6 @@ def cleanUp() {
   sh 'chmod -R 777 .git'
 }
 
-def hasPackageChanged() {
-  for (changeLogSet in currentBuild.changeSets) {
-    for (entry in changeLogSet.getItems()) { // Get each item from the commit
-      for (file in entry.getAffectedFiles()) {
-        if (file.getPath() =~ /^packages/) {
-          return true // return true is file package includes `packages`
-        }
-      }
-    }
-  }
-
-  return false
-}
-
 node {
   properties(
     [
@@ -51,14 +37,6 @@ node {
 
       // git checkout
       checkout scm
-
-      // Does merge contain changes to packages?
-      if (!hasPackageChanged()) {
-        echo "No Package has chnaged, skipping pipeline steps"
-        currentBuild.result = 'SUCCESS'
-
-        return
-      }
 
       // get git commit info for notifications
       gitCommitHash = sh(returnStdout: true, script: "git log -n 1 --pretty=format:'%h'").trim()
