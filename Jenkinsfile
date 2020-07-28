@@ -19,7 +19,8 @@ def hasPackageChanged() {
     for (entry in changeLogSet.getItems()) {
       for (file in entry.getAffectedFiles()) {
         echo file.getPath()
-        if (file.getPath() ==~ /^packages/) {
+        if (file.getPath() ==~ ^packages) {
+          echo "Matched: ${file.getPath()}"
           return true
         }
       }
