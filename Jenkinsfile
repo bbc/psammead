@@ -18,6 +18,7 @@ def hasPackageChanged() {
   for (changeLogSet in currentBuild.changeSets) {
     for (entry in changeLogSet.getItems()) {
       for (file in entry.getAffectedFiles()) {
+        echo file.getPath()
         if (file.getPath() ==~ /^packages/) {
           return true
         }
