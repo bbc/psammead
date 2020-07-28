@@ -13,7 +13,7 @@ const withDuration = {
 
 storiesOf('Components|Media Player', module)
   .add(
-    'Articles Default',
+    'Articles Canonical',
     () => (
       <CanonicalMediaPlayer
         src="https://www.test.bbc.co.uk/ws/av-embeds/articles/c3wmq4d1y3wo/p01k6msp/en"
@@ -27,7 +27,7 @@ storiesOf('Components|Media Player', module)
   )
   .addDecorator(withKnobs)
   .add(
-    'MAP default',
+    'MAP Canonical',
     () => (
       <CanonicalMediaPlayer
         src="https://www.test.bbc.com/ws/av-embeds/cps/pidgin/23248703/p01kx42v/pcm"
