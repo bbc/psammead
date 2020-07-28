@@ -1,5 +1,6 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
+import { boolean, withKnobs } from '@storybook/addon-knobs';
 import { CanonicalMediaPlayer, AmpMediaPlayer } from '.';
 import { ampDecorator } from '../../../../.storybook/config';
 import notes from '../README.md';
@@ -24,6 +25,7 @@ storiesOf('Components|Media Player', module)
     ),
     { notes, knobs: { escapeHTML: false } },
   )
+  .addDecorator(withKnobs)
   .add(
     'MAP default',
     () => (
@@ -37,7 +39,7 @@ storiesOf('Components|Media Player', module)
           ...withDuration,
         }}
         showLoadingImage
-        darkMode
+        darkMode={boolean('Dark mode', false)}
         title="Media player"
         noJsMessage="Dem no support media player for your device"
         noJsClassName="no-js"
