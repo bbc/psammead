@@ -54,6 +54,7 @@ node {
 
       // Does merge contain changes to packages?
       if (!hasPackageChanged()) {
+        echo "No Package has chnaged, skipping pipeline steps"
         currentBuild.result = 'SUCCESS'
 
         return
