@@ -16,12 +16,10 @@ def cleanUp() {
 
 def hasPackageChanged() {
   for (changeLogSet in currentBuild.changeSets) {
-    for (entry in changeLogSet.getItems()) {
+    for (entry in changeLogSet.getItems()) { // Get each item from the commit
       for (file in entry.getAffectedFiles()) {
-        echo file.getPath()
         if (file.getPath() =~ /^packages/) {
-          echo "Matched: ${file.getPath()}"
-          return true
+          return true // return true is file package includes `packages`
         }
       }
     }
