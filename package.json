@@ -1,6 +1,6 @@
 {
   "name": "@bbc/psammead",
-  "version": "2.0.188",
+  "version": "2.1.0",
   "description": "Core Components Library Developed & Maintained By The Articles and Reach & Languages Team",
   "main": "index.js",
   "private": true,
@@ -160,26 +160,6 @@
       "pre-commit": "lint-staged",
       "pre-push": "sh scripts/enforceVersions.sh && npm run test:unit -- --changedSince=latest"
     }
-  },
-  "jest": {
-    "collectCoverageFrom": [
-      "**/packages/**/*.{js,jsx}",
-      "scripts/**",
-      "**/.yeoman/support/**",
-      "!**/*.stories.{js,jsx}",
-      "!**/.eslintrc.js",
-      "!**/dist/**",
-      "!**/esm/**",
-      "!**/moment-timezone-include/tz/**"
-    ],
-    "transformIgnorePatterns": [
-      "/node_modules/",
-      ".yeoman/index.js"
-    ],
-    "testMatch": [
-      "**/*.test.{js,jsx}",
-      "!**/.yeoman/templates/**"
-    ]
   },
   "spec": {
     "prune": false,
