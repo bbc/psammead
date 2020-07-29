@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 2.0.189 | [PR#3635](https://github.com/bbc/psammead/pull/3635) Talos - Bump Dependencies - @bbc/psammead-media-player |
 | 2.0.188 | [PR#3600](https://github.com/bbc/psammead/pull/3600) Bump version to include using new @bbc/psammead-image-placeholder |
 | 2.0.187 | [PR#3631](https://github.com/bbc/psammead/pull/3629) Update codeowners |
 | 2.0.186 | [PR#3626](https://github.com/bbc/psammead/pull/3626) Talos - Bump Dependencies - @bbc/psammead-brand, @bbc/psammead-bulleted-list, @bbc/psammead-bulletin, @bbc/psammead-byline, @bbc/psammead-caption, @bbc/psammead-consent-banner, @bbc/psammead-copyright, @bbc/psammead-embed-error, @bbc/psammead-figure, @bbc/psammead-grid, @bbc/psammead-heading-index, @bbc/psammead-headings, @bbc/psammead-media-indicator, @bbc/psammead-most-read, @bbc/psammead-navigation, @bbc/psammead-paragraph, @bbc/psammead-play-button, @bbc/psammead-radio-schedule, @bbc/psammead-script-link, @bbc/psammead-section-label, @bbc/psammead-sitewide-links, @bbc/psammead-social-embed, @bbc/psammead-story-promo, @bbc/psammead-story-promo-list, @bbc/psammead-storybook-helpers, @bbc/psammead-timestamp, @bbc/psammead-timestamp-container, @bbc/psammead-useful-links |
