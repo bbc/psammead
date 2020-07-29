@@ -1,4 +1,5 @@
 module.exports = {
+  setupFilesAfterEnv: ['jest-styled-components'],
   collectCoverageFrom: [
     '**/packages/**/*.{js,jsx}',
     'scripts/**',
