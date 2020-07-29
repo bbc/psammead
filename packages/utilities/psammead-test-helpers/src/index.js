@@ -1,5 +1,4 @@
 import { render } from '@testing-library/react';
-import 'jest-styled-components';
 import deepClone from 'ramda/src/clone';
 import renderWithHelmet from './renderWithHelmet';
 

@@ -26,9 +26,7 @@
     "jest",
     "snapshot"
   ],
-  "dependencies": {
-    "jest-styled-components": "^6.3.3"
-  },
+  "dependencies": {},
   "devDependencies": {
     "react-helmet": "^6.0.0"
   }
