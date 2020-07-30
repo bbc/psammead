@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version       | Description                                                                                                                  |
 | ------------- | ---------------------------------------------------------------------------------------------------------------------------- |
+| 2.8.1 | [PR#3600](https://github.com/bbc/psammead/pull/3600) Make z-index styling be conditional based on whether loadingImage is used |
 | 2.8.0 | [PR#3600](https://github.com/bbc/psammead/pull/3600) Implementing dark mode compatible placeholder with media player |
 | 2.7.16 | [PR#3626](https://github.com/bbc/psammead/pull/3626) Talos - Bump Dependencies - @bbc/psammead-play-button |
 | 2.7.15 | [PR#3613](https://github.com/bbc/psammead/pull/3613) Talos - Bump Dependencies - @bbc/psammead-assets |
