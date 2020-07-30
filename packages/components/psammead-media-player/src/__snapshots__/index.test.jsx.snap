@@ -733,7 +733,6 @@ exports[`Media Player: Canonical Entry renders an iframe when showPlaceholder is
 }
 
 .c1 {
-  z-index: 1;
   border: 0;
   left: 0;
   overflow: hidden;
@@ -772,7 +771,6 @@ exports[`Media Player: Canonical Entry renders the audio skin 1`] = `
 }
 
 .c1 {
-  z-index: 1;
   border: 0;
   left: 0;
   overflow: hidden;
