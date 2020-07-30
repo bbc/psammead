@@ -30,7 +30,7 @@ const Canonical = ({
   `;
 
   const StyledIframe = styled.iframe`
-    z-index: ${props => (props.showLoadingImage ? 1 : 0)};
+    ${showLoadingImage ? `z-index: 1` : ''};
     border: 0;
     left: 0;
     overflow: hidden;
@@ -50,7 +50,6 @@ const Canonical = ({
         scrolling="no"
         gesture="media"
         allowFullScreen
-        showLoadingImage={showLoadingImage}
       />
       {showLoadingImage && (
         <LoadingImageWrapper>
