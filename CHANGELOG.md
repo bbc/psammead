@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 2.1.1 | [PR#3642](https://github.com/bbc/psammead/pull/3642) Talos - Bump Dependencies - @bbc/psammead-media-player |
 | 2.1.0 | [PR#3638](https://github.com/bbc/psammead/pull/3638) 2/2 - Decouple jest-styled-components from @bbc/psammead-test-helpers |
 | 2.0.188 | [PR#3600](https://github.com/bbc/psammead/pull/3600) Bump version to include using new @bbc/psammead-image-placeholder |
 | 2.0.187 | [PR#3631](https://github.com/bbc/psammead/pull/3629) Update codeowners |
