@@ -2,7 +2,6 @@
 
 exports[`Media Player: Canonical should render an iframe 1`] = `
 .c0 {
-  z-index: auto;
   border: 0;
   left: 0;
   overflow: hidden;
