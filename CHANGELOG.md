@@ -3,7 +3,11 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
-| 2.0.189 | [PR#3635](https://github.com/bbc/psammead/pull/3635) Talos - Bump Dependencies - @bbc/psammead-media-player |
+| 2.1.4 | [PR#3635](https://github.com/bbc/psammead/pull/3635) Talos - Bump Dependencies - @bbc/psammead-media-player |
+| 2.1.3 | [PR#3656](https://github.com/bbc/psammead/pull/3656) Update code owners |
+| 2.1.2 | [PR#3612](https://github.com/bbc/psammead/pull/3612) Bump lodash to fix security issue |
+| 2.1.1 | [PR#3655](https://github.com/bbc/psammead/pull/3655) Update elliptic to security patched 6.5.3 |
+| 2.1.0 | [PR#3638](https://github.com/bbc/psammead/pull/3638) 2/2 - Decouple jest-styled-components from @bbc/psammead-test-helpers |
 | 2.0.188 | [PR#3600](https://github.com/bbc/psammead/pull/3600) Bump version to include using new @bbc/psammead-image-placeholder |
 | 2.0.187 | [PR#3631](https://github.com/bbc/psammead/pull/3629) Update codeowners |
 | 2.0.186 | [PR#3626](https://github.com/bbc/psammead/pull/3626) Talos - Bump Dependencies - @bbc/psammead-brand, @bbc/psammead-bulleted-list, @bbc/psammead-bulletin, @bbc/psammead-byline, @bbc/psammead-caption, @bbc/psammead-consent-banner, @bbc/psammead-copyright, @bbc/psammead-embed-error, @bbc/psammead-figure, @bbc/psammead-grid, @bbc/psammead-heading-index, @bbc/psammead-headings, @bbc/psammead-media-indicator, @bbc/psammead-most-read, @bbc/psammead-navigation, @bbc/psammead-paragraph, @bbc/psammead-play-button, @bbc/psammead-radio-schedule, @bbc/psammead-script-link, @bbc/psammead-section-label, @bbc/psammead-sitewide-links, @bbc/psammead-social-embed, @bbc/psammead-story-promo, @bbc/psammead-story-promo-list, @bbc/psammead-storybook-helpers, @bbc/psammead-timestamp, @bbc/psammead-timestamp-container, @bbc/psammead-useful-links |
