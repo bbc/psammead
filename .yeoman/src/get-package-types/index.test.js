@@ -16,9 +16,9 @@ describe('getPackageTypes', () => {
 
     fs.readdirSync.mockReturnValue(componentDir);
 
-    fs.statSync.mockImplementation(path => {
+    fs.statSync.mockImplementation(() => {
       return {
-        isDirectory: () => !path.includes('.'),
+        isDirectory: () => true,
       };
     });
 
