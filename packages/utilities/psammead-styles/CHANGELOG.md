@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 4.4.2 | [PR#3660](https://github.com/bbc/psammead/pull/3660) Update C_LUNAR_LIGHT |
 | 4.4.1 | [PR#3590](https://github.com/bbc/psammead/pull/3590) Add C_MIDNIGHT_BLACK |
 | 4.4.0 | [PR#3466](https://github.com/bbc/psammead/pull/3466) Add C_LUNAR_LIGHT |
 | 4.3.1 | [PR#3390](https://github.com/bbc/psammead/pull/3390) Bump prettier major version and disable rule for brackets around a single prop |
