@@ -2,6 +2,7 @@
 
 | Version       | Description                                                                                           |
 | ------------- | ----------------------------------------------------------------------------------------------------- |
+| 1.1.6 | [PR#3662](https://github.com/bbc/psammead/pull/3662) Talos - Bump Dependencies - @bbc/psammead-styles |
 | 1.1.5 | [PR#3623](https://github.com/bbc/psammead/pull/3623) Talos - Bump Dependencies - @bbc/gel-foundations |
 | 1.1.4 | [PR#3604](https://github.com/bbc/psammead/pull/3604) Talos - Bump Dependencies - @bbc/gel-foundations |
 | 1.1.3         | [PR#3513](https://github.com/bbc/psammead/pull/3513) Update fallback text colour in Social Embed.     |

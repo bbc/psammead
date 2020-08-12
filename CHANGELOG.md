@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 2.1.4 | [PR#3662](https://github.com/bbc/psammead/pull/3662) Talos - Bump Dependencies - @bbc/psammead-styles |
 | 2.1.3 | [PR#3656](https://github.com/bbc/psammead/pull/3656) Update code owners |
 | 2.1.2 | [PR#3612](https://github.com/bbc/psammead/pull/3612) Bump lodash to fix security issue |
 | 2.1.1 | [PR#3655](https://github.com/bbc/psammead/pull/3655) Update elliptic to security patched 6.5.3 |
