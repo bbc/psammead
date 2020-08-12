@@ -48,6 +48,8 @@ const CanonicalMediaPlayerComponent = ({
   mediaInfo,
   noJsClassName,
   noJsMessage,
+  showLoadingImage,
+  darkMode,
 }) => {
   const [placeholderActive, setPlaceholderActive] = useState(showPlaceholder);
   const handlePlaceholderClick = () => setPlaceholderActive(false);
@@ -76,6 +78,8 @@ const CanonicalMediaPlayerComponent = ({
           placeholderSrc={placeholderSrc}
           service={service}
           noJsMessage={noJsMessage}
+          showLoadingImage={showLoadingImage}
+          darkMode={darkMode}
         />
       )}
     </StyledContainer>
@@ -137,6 +141,8 @@ CanonicalMediaPlayerComponent.propTypes = {
     type: oneOf(['video', 'audio']),
     guidanceMessage: string,
   }),
+  showLoadingImage: bool,
+  darkMode: bool,
 };
 
 CanonicalMediaPlayerComponent.defaultProps = {
@@ -147,6 +153,8 @@ CanonicalMediaPlayerComponent.defaultProps = {
   placeholderSrcset: null,
   noJsClassName: null,
   mediaInfo: {},
+  showLoadingImage: false,
+  darkMode: false,
 };
 
 MediaMessage.propTypes = {

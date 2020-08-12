@@ -36,6 +36,7 @@ const StyledEmbedError = styled.div`
   justify-content: flex-end;
   padding-top: ${FAUX_BBC_BLOCKS_SPACE};
   padding-bottom: ${GEL_SPACING_TRPL};
+  border: 0.0625rem solid transparent;
   ${({ fillViewport }) => fillViewport && FILL_VIEWPORT_STYLES}
 `;
 
@@ -43,7 +44,6 @@ const StyledErrorMessage = styled.div`
   margin: 0 ${GEL_SPACING_TRPL};
 
   strong {
-    display: block;
     font-weight: normal;
   }
 
@@ -68,7 +68,9 @@ const StyledErrorMessage = styled.div`
 const EmbedError = ({ service, message, fillViewport, link }) => (
   <StyledEmbedError service={service} fillViewport={fillViewport}>
     <StyledErrorMessage service={service}>
-      <strong>{message}</strong>
+      <div>
+        <strong>{message}</strong>
+      </div>
       {link && link.text && link.href && <a href={link.href}>{link.text}</a>}
     </StyledErrorMessage>
   </StyledEmbedError>

@@ -1,6 +1,6 @@
 {
   "name": "@bbc/psammead-image-placeholder",
-  "version": "1.2.36",
+  "version": "1.2.41",
   "main": "dist/index.js",
   "module": "esm/index.js",
   "sideEffects": false,
@@ -19,7 +19,7 @@
   },
   "homepage": "https://github.com/bbc/psammead/blob/latest/packages/components/psammead-image-placeholder/README.md",
   "dependencies": {
-    "@bbc/psammead-assets": "^2.14.0",
+    "@bbc/psammead-assets": "^2.14.1",
     "@bbc/psammead-styles": "^4.4.0"
   },
   "peerDependencies": {

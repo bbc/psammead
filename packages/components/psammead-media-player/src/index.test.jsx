@@ -118,6 +118,24 @@ describe('Media Player: Canonical Entry', () => {
   );
 
   shouldMatchSnapshot(
+    'shows a loading image before the player is ready when showLoadingImage is true',
+    <CanonicalMediaPlayer
+      src="http://foo.bar/iframe"
+      showPlaceholder={false}
+      service="pidgin"
+      mediaInfo={{
+        title: 'alt-text world service clip',
+        type: 'video',
+        ...mediaInfo,
+      }}
+      showLoadingImage
+      title="Media player"
+      noJsMessage="Dem no support media player for your device"
+      noJsClassName="no-js"
+    />,
+  );
+
+  shouldMatchSnapshot(
     'renders with no-js styles when noJsClassName prop is used',
     <CanonicalMediaPlayer
       placeholderSrc="http://foo.bar/placeholder.png"

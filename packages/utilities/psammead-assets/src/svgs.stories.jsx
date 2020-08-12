@@ -65,7 +65,7 @@ const stories = storiesOf('Utilities|SVGs/Brand Svgs', module).addDecorator(
   withKnobs,
 );
 Object.keys(svgs)
-  .filter(svgName => svgName !== 'BBC_BLOCKS')
+  .filter(svgName => !svgName.includes('BBC_BLOCKS'))
   .forEach(svgName => {
     stories.add(
       svgName,

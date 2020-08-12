@@ -3,6 +3,12 @@
 <!-- prettier-ignore -->
 | Version       | Description                                                                                                                  |
 | ------------- | ---------------------------------------------------------------------------------------------------------------------------- |
+| 2.8.2 | [PR#3641](https://github.com/bbc/psammead/pull/3641) Version bump & fixing PR link |
+| 2.8.1 | [PR#3640](https://github.com/bbc/psammead/pull/3640) Make z-index styling be conditional based on whether loadingImage is used |
+| 2.8.0 | [PR#3600](https://github.com/bbc/psammead/pull/3600) Implementing dark mode compatible placeholder with media player |
+| 2.7.16 | [PR#3626](https://github.com/bbc/psammead/pull/3626) Talos - Bump Dependencies - @bbc/psammead-play-button |
+| 2.7.15 | [PR#3613](https://github.com/bbc/psammead/pull/3613) Talos - Bump Dependencies - @bbc/psammead-assets |
+| 2.7.14 | [PR#3605](https://github.com/bbc/psammead/pull/3605) Talos - Bump Dependencies - @bbc/psammead-play-button |
 | 2.7.13 | [PR#3583](https://github.com/bbc/psammead/pull/3583) Adjusted bottom margin by 0.5rem |
 | 2.7.12 | [PR#3575](https://github.com/bbc/psammead/pull/3575) Added bottom margin to video player |
 | 2.7.11 | [PR#3559](https://github.com/bbc/psammead/pull/3559) Removed overflow for AudioPlayer |

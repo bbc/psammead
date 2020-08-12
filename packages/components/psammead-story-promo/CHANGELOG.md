@@ -3,6 +3,8 @@
 <!-- prettier-ignore -->
 | Version | Description |
 | ------- | ----------- |
+| 6.0.6 | [PR#3623](https://github.com/bbc/psammead/pull/3623) Talos - Bump Dependencies - @bbc/gel-foundations |
+| 6.0.5 | [PR#3604](https://github.com/bbc/psammead/pull/3604) Talos - Bump Dependencies - @bbc/gel-foundations |
 | 6.0.4 | [PR#3541](https://github.com/bbc/psammead/pull/3541) Remove `padding-top` in TextGridItem when no image displayed |
 | 6.0.3 | [PR#3467](https://github.com/bbc/psammead/pull/3467) Talos - Bump Dependencies - @bbc/psammead-styles |
 | 6.0.2 | [PR#3410](https://github.com/bbc/psammead/pull/3410) Add `overflow-wrap` property to `Link` |

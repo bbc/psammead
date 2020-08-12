@@ -3,6 +3,10 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 4.0.6 | [PR#3626](https://github.com/bbc/psammead/pull/3626) Talos - Bump Dependencies - @bbc/psammead-timestamp |
+| 4.0.5 | [PR#3623](https://github.com/bbc/psammead/pull/3623) Talos - Bump Dependencies - @bbc/gel-foundations |
+| 4.0.4 | [PR#3605](https://github.com/bbc/psammead/pull/3605) Talos - Bump Dependencies - @bbc/psammead-timestamp |
+| 4.0.3 | [PR#3604](https://github.com/bbc/psammead/pull/3604) Talos - Bump Dependencies - @bbc/gel-foundations |
 | 4.0.2 | [PR#3596](https://github.com/bbc/psammead/pull/3596) Talos - Bump Dependencies - @bbc/psammead-locales |
 | 4.0.1 | [PR#3524](https://github.com/bbc/psammead/pull/3524) Talos - Bump Dependencies - @bbc/psammead-locales |
 | 4.0.0 | [PR#3472](https://github.com/bbc/psammead/pull/3472) Do not return current date in formatUnixTimestamp when timestamp is undefined |

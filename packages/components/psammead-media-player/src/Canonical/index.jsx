@@ -1,6 +1,7 @@
 import React from 'react';
 import { string, bool } from 'prop-types';
 import styled from 'styled-components';
+import ImagePlaceholder from '@bbc/psammead-image-placeholder';
 import Message from '../Message';
 
 const Canonical = ({
@@ -11,6 +12,8 @@ const Canonical = ({
   service,
   noJsMessage,
   showPlaceholder,
+  showLoadingImage,
+  darkMode,
 }) => {
   const backgroundStyle = `
     background-image: url(${placeholderSrc});
@@ -18,7 +21,16 @@ const Canonical = ({
     background-size: contain;
   `;
 
+  const LoadingImageWrapper = styled.div`
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+  `;
+
   const StyledIframe = styled.iframe`
+    ${showLoadingImage ? `z-index: 1` : ''};
     border: 0;
     left: 0;
     overflow: hidden;
@@ -39,6 +51,11 @@ const Canonical = ({
         gesture="media"
         allowFullScreen
       />
+      {showLoadingImage && (
+        <LoadingImageWrapper>
+          <ImagePlaceholder ratio={56.25} darkMode={darkMode} />
+        </LoadingImageWrapper>
+      )}
       <noscript>
         <Message
           service={service}
@@ -59,6 +76,8 @@ Canonical.propTypes = {
   service: string.isRequired,
   noJsMessage: string.isRequired,
   showPlaceholder: bool.isRequired,
+  showLoadingImage: bool.isRequired,
+  darkMode: bool.isRequired,
 };
 
 Canonical.defaultProps = {

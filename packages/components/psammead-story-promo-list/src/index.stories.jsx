@@ -1,11 +1,12 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
+import { boolean, withKnobs } from '@storybook/addon-knobs';
 import Timestamp from '@bbc/psammead-timestamp';
 import Image from '@bbc/psammead-image';
 import { latin } from '@bbc/gel-foundations/scripts';
 import StoryPromo, { Headline, Summary, Link } from '@bbc/psammead-story-promo';
 import Grid from '@bbc/psammead-grid';
-import { StoryPromoLi, StoryPromoUl } from './index';
+import { StoryPromoLi, StoryPromoLiBase, StoryPromoUl } from './index';
 import storyPromoData from '../testHelpers/fixtureData';
 import notes from '../README.md';
 
@@ -35,6 +36,7 @@ const InfoComponent = ({ headlineText, summaryText, datetime, dateformat }) => (
 );
 
 storiesOf('Components|StoryPromo/StoryPromoList', module)
+  .addDecorator(withKnobs)
   .add(
     'default',
     () => (
@@ -54,7 +56,10 @@ storiesOf('Components|StoryPromo/StoryPromoList', module)
           );
 
           return (
-            <StoryPromoLi key={item.info.headline}>
+            <StoryPromoLi
+              key={item.info.headline}
+              border={boolean('show border?', true)}
+            >
               <StoryPromo image={ImagePromo} info={InfoPromo} />
             </StoryPromoLi>
           );
@@ -112,3 +117,37 @@ storiesOf('Components|StoryPromo/StoryPromoList', module)
       </Grid>
     );
   });
+
+storiesOf('Components|StoryPromo/StoryPromoListBase', module)
+  .addDecorator(withKnobs)
+  .add(
+    'default',
+    () => (
+      <StoryPromoUl>
+        {storyPromoData.map(item => {
+          const ImagePromo = (
+            <ImageComponent src={item.image.src} alt={item.image.alt} />
+          );
+
+          const InfoPromo = (
+            <InfoComponent
+              headlineText={item.info.headline}
+              summaryText={item.info.summary}
+              datetime={item.info.datetime}
+              dateformat={item.info.dateformat}
+            />
+          );
+
+          return (
+            <StoryPromoLiBase
+              key={item.info.headline}
+              border={boolean('show border?', true)}
+            >
+              <StoryPromo image={ImagePromo} info={InfoPromo} />
+            </StoryPromoLiBase>
+          );
+        })}
+      </StoryPromoUl>
+    ),
+    { notes },
+  );
