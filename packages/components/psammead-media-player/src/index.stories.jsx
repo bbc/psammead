@@ -1,7 +1,8 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import { boolean, withKnobs } from '@storybook/addon-knobs';
+import { boolean, text, withKnobs } from '@storybook/addon-knobs';
 import styled from 'styled-components';
+import { withServicesKnob } from '@bbc/psammead-storybook-helpers';
 import { CanonicalMediaPlayer, AmpMediaPlayer } from '.';
 import MediaMessage from './Message';
 import { ampDecorator } from '../../../../.storybook/config';
@@ -106,16 +107,18 @@ storiesOf('Components|Media Player', module)
     ),
     { notes, knobs: { escapeHTML: false } },
   )
+  .addDecorator(withKnobs)
+  .addDecorator(withServicesKnob({ defaultService: 'ukrainian' }))
   .add(
     'Media Message',
-    () => (
-      <StyledMessageContainer>
-        <MediaMessage
-          service="ukrainian"
-          message="Контент більше не доступний"
-        />
-      </StyledMessageContainer>
-    ),
+    ({ service }) => {
+      const id = text('Message', 'Контент більше не доступний');
+      return (
+        <StyledMessageContainer>
+          <MediaMessage service={service} message={id} />
+        </StyledMessageContainer>
+      );
+    },
     {
       notes,
       knobs: { escapeHTML: false },
