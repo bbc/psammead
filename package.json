@@ -110,7 +110,7 @@
     "babel-loader": "^8.1.0",
     "babel-plugin-dynamic-import-node": "^2.3.3",
     "babel-plugin-styled-components": "1.11.1",
-    "browserslist": "^4.12.2",
+    "browserslist": "^4.14.0",
     "chalk": "^4.1.0",
     "enquirer": "^2.3.5",
     "eslint": "^7.3.1",
