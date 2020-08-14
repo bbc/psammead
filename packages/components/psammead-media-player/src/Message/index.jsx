@@ -40,7 +40,6 @@ const StyledMessage = styled.strong`
   bottom: 0;
   position: absolute;
   padding: ${GEL_SPACING};
-  border-bottom: 0.0625rem solid transparent;
   @media screen and (-ms-high-contrast: active) {
     background-color: window;
   }
