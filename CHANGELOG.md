@@ -3,7 +3,8 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
-| 2.1.4 | [PR#3664](https://github.com/bbc/psammead/pull/3664) Bumping dependencies |
+| 2.1.5 | [PR#3664](https://github.com/bbc/psammead/pull/3664) Bumping dependencies |
+| 2.1.4 | [PR#3663](https://github.com/bbc/psammead/pull/3663) Bump enquirer to 2.3.6 |
 | 2.1.3 | [PR#3656](https://github.com/bbc/psammead/pull/3656) Update code owners |
 | 2.1.2 | [PR#3612](https://github.com/bbc/psammead/pull/3612) Bump lodash to fix security issue |
 | 2.1.1 | [PR#3655](https://github.com/bbc/psammead/pull/3655) Update elliptic to security patched 6.5.3 |
