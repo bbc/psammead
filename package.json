@@ -101,7 +101,7 @@
     "@storybook/addon-notes": "^5.3.19",
     "@storybook/addon-viewport": "^5.3.19",
     "@storybook/react": "^5.3.19",
-    "@storybook/theming": "^5.3.19",
+    "@storybook/theming": "^6.0.10",
     "@testing-library/jest-dom": "^5.11.0",
     "@testing-library/react": "^10.4.3",
     "@testing-library/react-hooks": "^3.3.0",
