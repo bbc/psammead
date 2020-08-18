@@ -1,7 +1,10 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import { boolean, withKnobs } from '@storybook/addon-knobs';
+import { boolean, text, withKnobs } from '@storybook/addon-knobs';
+import styled from 'styled-components';
+import { withServicesKnob } from '@bbc/psammead-storybook-helpers';
 import { CanonicalMediaPlayer, AmpMediaPlayer } from '.';
+import MediaMessage from './Message';
 import { ampDecorator } from '../../../../.storybook/config';
 import notes from '../README.md';
 
@@ -10,6 +13,12 @@ const withDuration = {
   durationSpoken: '2 minutes 30 seconds',
   datetime: 'PT2M30S',
 };
+
+const StyledMessageContainer = styled.div`
+  padding-top: 56.25%;
+  position: relative;
+  overflow: hidden;
+`;
 
 storiesOf('Components|Media Player', module)
   .add(
@@ -97,6 +106,23 @@ storiesOf('Components|Media Player', module)
       />
     ),
     { notes, knobs: { escapeHTML: false } },
+  )
+  .addDecorator(withKnobs)
+  .addDecorator(withServicesKnob({ defaultService: 'ukrainian' }))
+  .add(
+    'Media Message',
+    ({ service }) => {
+      const id = text('Message', 'Контент більше не доступний');
+      return (
+        <StyledMessageContainer>
+          <MediaMessage service={service} message={id} />
+        </StyledMessageContainer>
+      );
+    },
+    {
+      notes,
+      knobs: { escapeHTML: false },
+    },
   );
 
 storiesOf('Components|Media Player', module)
