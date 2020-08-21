@@ -1,3 +1,4 @@
+/* eslint-disable no-alert */
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { boolean, text, withKnobs } from '@storybook/addon-knobs';
@@ -103,6 +104,24 @@ storiesOf('Components|Media Player', module)
         service="news"
         mediaInfo={{ type: 'audio', title: 'Live show intro.' }}
         title="Audio player"
+      />
+    ),
+    { notes, knobs: { escapeHTML: false } },
+  )
+  .add(
+    'With Callbacks',
+    () => (
+      <CanonicalMediaPlayer
+        src="https://www.test.bbc.com/ws/av-embeds/media/bbc_korean_radio/liveradio/ko"
+        showPlaceholder={false}
+        placeholderSrc="https://news.files.bbci.co.uk/include/articles/public/images/amp_audio_placeholder.png"
+        skin="audio"
+        service="news"
+        mediaInfo={{ type: 'audio', title: 'Live show intro.' }}
+        title="Audio player"
+        onMediaInitialised={() => alert('Media Player Initialised')}
+        onMediaPlaying={() => alert('Media Player Playing')}
+        onMediaPause={() => alert('Media Player Paused')}
       />
     ),
     { notes, knobs: { escapeHTML: false } },
