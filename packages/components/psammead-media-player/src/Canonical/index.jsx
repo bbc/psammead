@@ -6,7 +6,9 @@ import Message from '../Message';
 
 // XSS protection to ensure we only react to events sent from recognised origins
 const isValidEvent = ({ origin }, acceptableEventOrigins) =>
-  RegExp(`^https?://(${acceptableEventOrigins.join('|')})`, 'i').test(origin);
+  RegExp(`^https?://(${acceptableEventOrigins.join('|')})(:|/|$)`, 'i').test(
+    origin,
+  );
 
 const Canonical = ({
   src,
@@ -115,12 +117,20 @@ Canonical.propTypes = {
   onMediaEnded: func.isRequired,
   onMediaPlaylistEnded: func.isRequired,
   onMediaError: func.isRequired,
-  acceptableEventOrigins: arrayOf(string).isRequired,
+  acceptableEventOrigins: arrayOf(string),
 };
 
 Canonical.defaultProps = {
   placeholderSrc: null,
   placeholderSrcset: '',
+  acceptableEventOrigins: [
+    'www.test.bbc.com',
+    'polling.test.bbc.com',
+    'www.bbc.com',
+    'polling.bbc.com',
+    'localhost.bbc.com',
+    'localhost',
+  ],
 };
 
 export default Canonical;
