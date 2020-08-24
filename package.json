@@ -5,7 +5,9 @@
   "main": "index.js",
   "private": true,
   "resolutions": {
-    "dot-prop": "4.2.1"
+    "dot-prop": "4.2.1",
+    "prismjs": "^1.21.0",
+    "lodash": "^4.17.20"
   },
   "scripts": {
     "build": "npm run build:cjs && npm run build:esm",
