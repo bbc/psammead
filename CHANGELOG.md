@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 2.2.1 | [PR#3689](https://github.com/bbc/psammead/pull/3689) Force dependencies dot-prop@^4.2.1, prismjs@^1.21.0, lodash@^4.17.20 |
 | 2.2.0 | [PR#3665](https://github.com/bbc/psammead/pull/3665) Bump yargs-parser |
 | 2.1.4 | [PR#3663](https://github.com/bbc/psammead/pull/3663) Bump enquirer to 2.3.6 |
 | 2.1.3 | [PR#3656](https://github.com/bbc/psammead/pull/3656) Update code owners |
