@@ -95,7 +95,7 @@
     "@bbc/psammead-visually-hidden-text": "^1.3.0",
     "@loadable/babel-plugin": "^5.13.0",
     "@loadable/component": "^5.13.0",
-    "@storybook/addon-a11y": "^5.3.19",
+    "@storybook/addon-a11y": "^6.0.16",
     "@storybook/addon-actions": "^5.3.19",
     "@storybook/addon-knobs": "^5.3.19",
     "@storybook/addon-notes": "^5.3.19",
