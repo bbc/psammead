@@ -20,19 +20,25 @@ This component to be used at any point on the page, specifically when a media pl
 
 ### CanonicalMediaPlayer
 
-| Argument                  | Type    | Required | Default     | Example                                                                                                                                     |
-| ------------------------- | ------- | -------- | ----------- | ------------------------------------------------------------------------------------------------------------------------------------------- |
-| `src`                     | string  | Yes      | -           | `'http://foobar.com/embeddable_endpoint'`                                                                                                   |
-| `skin`                    | string  | No       | `'classic'` | `'audio'`                                                                                                                                   |
-| `title`                   | string  | Yes      | -           | `'Video player'`                                                                                                                            |
-| `service`                 | string  | Yes      | -           | `'news'`                                                                                                                                    |
-| `showPlaceholder`         | boolean | No       | `true`      | `false`                                                                                                                                     |
-| `placeholderSrc`          | string  | No       | `null`      | `'http://foobar.com/placeholder.png'`                                                                                                       |
-| `placeholderSrcset`       | string  | No       | `''`        | `'https://bbc.com/300/cat.jpg 300w, https://bbc.com/450/cat.jpg 450w, https://bbc.com/600/cat.jpg 600w'`                                    |
-| `portrait`                | boolean | No       | `false`     | `true`                                                                                                                                      |
-| [`mediaInfo`](#mediaInfo) | object  | Yes      | -           | `{ title: 'A vertical video pretending to be a cat title', duration: '2:30', durationSpoken: '2 minutes 11 seconds', datetime: 'PT2M30S' }` |
-| `noJsClassName`           | string  | No       | `null`      | `'no-js'`                                                                                                                                   |
-| `noJsMessage`             | string  | Yes      | -           | `'This media cannot play in your browser. Please enable Javascript or use a different browser.'`                                            |
+| Argument                  | Type     | Required | Default     | Example                                                                                                                                     |
+| ------------------------- | -------- | -------- | ----------- | ------------------------------------------------------------------------------------------------------------------------------------------- |
+| `src`                     | string   | Yes      | -           | `'http://foobar.com/embeddable_endpoint'`                                                                                                   |
+| `skin`                    | string   | No       | `'classic'` | `'audio'`                                                                                                                                   |
+| `title`                   | string   | Yes      | -           | `'Video player'`                                                                                                                            |
+| `service`                 | string   | Yes      | -           | `'news'`                                                                                                                                    |
+| `showPlaceholder`         | boolean  | No       | `true`      | `false`                                                                                                                                     |
+| `placeholderSrc`          | string   | No       | `null`      | `'http://foobar.com/placeholder.png'`                                                                                                       |
+| `placeholderSrcset`       | string   | No       | `''`        | `'https://bbc.com/300/cat.jpg 300w, https://bbc.com/450/cat.jpg 450w, https://bbc.com/600/cat.jpg 600w'`                                    |
+| `portrait`                | boolean  | No       | `false`     | `true`                                                                                                                                      |
+| [`mediaInfo`](#mediaInfo) | object   | Yes      | -           | `{ title: 'A vertical video pretending to be a cat title', duration: '2:30', durationSpoken: '2 minutes 11 seconds', datetime: 'PT2M30S' }` |
+| `noJsClassName`           | string   | No       | `null`      | `'no-js'`                                                                                                                                   |
+| `noJsMessage`             | string   | Yes      | -           | `'This media cannot play in your browser. Please enable Javascript or use a different browser.'`                                            |
+| `onMediaInitialised`      | function | No       | `() => {}`  | `() => hideLoadingIndicator()`                                                                                                              |
+| `onMediaPlaying`          | function | No       | `() => {}`  | `() => trackMediaPlaybackStarted()`                                                                                                         |
+| `onMediaPause`            | function | No       | `() => {}`  | `() => shrinkPlayerWindow()`                                                                                                                |
+| `onMediaEnded`            | function | No       | `() => {}`  | `() => trackMediaPlaybackComplete()`                                                                                                        |
+| `onMediaPlaylistEnded`    | function | No       | `() => {}`  | `() => visitNextVideoPage()`                                                                                                                |
+| `onMediaError`            | function | No       | `() => {}`  | `() => logError()`                                                                                                                          |
 
 The `src` prop is required, as it tells the component what page it needs to embed.
 The `placeholderSrcset` prop is not required, as it allows image responsiveness and optimization depending on the size of the screen.
@@ -54,6 +60,20 @@ The `mediaInfo` prop is required, and has the following properties.
 | `durationSpoken`  | string | No       | -         | `'11 seconds'`                                                            |
 | `type`            | string | No       | `"video"` | `'audio'`                                                                 |
 | `guidanceMessage` | string | No       | -         | `'May contain strong language,sexual or violent content that may offend'` |
+
+#### Events
+The canonical media player accepts callback functions which it will invoke in response to events that are posted from the iframe.  The following events are currently supported:
+
+| Event                  | Description                                                                      |
+| -----------------------| ---------------------------------------------------------------------------------|
+| `onMediaInitialised`   | Called when the media player has loaded and is ready to begin playback           |
+| `onMediaPlaying`       | Called when the media player has started playing                                 |
+| `onMediaPause`         | Called when the user has paused playback                                         |
+| `onMediaEnded`         | Called when a playlist item (including an ad or an ident) has completed playback |
+| `onMediaPlaylistEnded` | Called when an entire playlist has completed playback                            |
+| `onMediaError`         | Called when the media player has encountered an error                            |
+
+When using the BBC's iFrame, these callbacks are invoked with a lot of additional information on the nature of the event.  Internal users should refer to the SMP documentation for more details
 
 ### AmpMediaPlayer
 
