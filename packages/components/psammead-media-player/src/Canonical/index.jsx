@@ -1,8 +1,14 @@
-import React from 'react';
-import { string, bool } from 'prop-types';
+import React, { useEffect } from 'react';
+import { string, bool, func, arrayOf } from 'prop-types';
 import styled from 'styled-components';
 import ImagePlaceholder from '@bbc/psammead-image-placeholder';
 import Message from '../Message';
+
+// XSS protection to ensure we only react to events sent from recognised origins
+const isValidEvent = ({ origin }, acceptableEventOrigins) =>
+  RegExp(`^https?://(${acceptableEventOrigins.join('|')})(:|/|$)`, 'i').test(
+    origin,
+  );
 
 const Canonical = ({
   src,
@@ -14,6 +20,13 @@ const Canonical = ({
   showPlaceholder,
   showLoadingImage,
   darkMode,
+  onMediaInitialised,
+  onMediaPlaying,
+  onMediaPause,
+  onMediaEnded,
+  onMediaPlaylistEnded,
+  onMediaError,
+  acceptableEventOrigins,
 }) => {
   const backgroundStyle = `
     background-image: url(${placeholderSrc});
@@ -40,6 +53,26 @@ const Canonical = ({
     height: 100%;
     ${showPlaceholder ? backgroundStyle : null}
   `;
+
+  useEffect(() => {
+    const handler = e => {
+      if (!isValidEvent(e, acceptableEventOrigins)) return;
+
+      const callback = {
+        mediaInitialised: onMediaInitialised,
+        mediaPlaying: onMediaPlaying,
+        mediaPause: onMediaPause,
+        mediaEnded: onMediaEnded,
+        mediaPlaylistEnded: onMediaPlaylistEnded,
+        mediaError: onMediaError,
+      }[e.data.event];
+
+      if (callback) callback(e);
+    };
+
+    window.addEventListener('message', handler);
+    return () => window.removeEventListener('message', handler);
+  }, []);
 
   return (
     <>
@@ -78,11 +111,26 @@ Canonical.propTypes = {
   showPlaceholder: bool.isRequired,
   showLoadingImage: bool.isRequired,
   darkMode: bool.isRequired,
+  onMediaInitialised: func.isRequired,
+  onMediaPlaying: func.isRequired,
+  onMediaPause: func.isRequired,
+  onMediaEnded: func.isRequired,
+  onMediaPlaylistEnded: func.isRequired,
+  onMediaError: func.isRequired,
+  acceptableEventOrigins: arrayOf(string),
 };
 
 Canonical.defaultProps = {
   placeholderSrc: null,
   placeholderSrcset: '',
+  acceptableEventOrigins: [
+    'www.test.bbc.com',
+    'polling.test.bbc.com',
+    'www.bbc.com',
+    'polling.bbc.com',
+    'localhost.bbc.com',
+    'localhost',
+  ],
 };
 
 export default Canonical;

@@ -1,6 +1,6 @@
 import React, { useState, memo } from 'react';
 import styled from 'styled-components';
-import { string, bool, oneOf, shape } from 'prop-types';
+import { string, bool, oneOf, shape, func, arrayOf } from 'prop-types';
 import equals from 'ramda/src/equals';
 import {
   GEL_SPACING_DBL,
@@ -50,6 +50,13 @@ const CanonicalMediaPlayerComponent = ({
   noJsMessage,
   showLoadingImage,
   darkMode,
+  onMediaInitialised,
+  onMediaPlaying,
+  onMediaPause,
+  onMediaEnded,
+  onMediaPlaylistEnded,
+  onMediaError,
+  acceptableEventOrigins,
 }) => {
   const [placeholderActive, setPlaceholderActive] = useState(showPlaceholder);
   const handlePlaceholderClick = () => setPlaceholderActive(false);
@@ -80,6 +87,13 @@ const CanonicalMediaPlayerComponent = ({
           noJsMessage={noJsMessage}
           showLoadingImage={showLoadingImage}
           darkMode={darkMode}
+          onMediaInitialised={onMediaInitialised}
+          onMediaPlaying={onMediaPlaying}
+          onMediaPause={onMediaPause}
+          onMediaEnded={onMediaEnded}
+          onMediaPlaylistEnded={onMediaPlaylistEnded}
+          onMediaError={onMediaError}
+          acceptableEventOrigins={acceptableEventOrigins}
         />
       )}
     </StyledContainer>
@@ -143,7 +157,16 @@ CanonicalMediaPlayerComponent.propTypes = {
   }),
   showLoadingImage: bool,
   darkMode: bool,
+  onMediaInitialised: func,
+  onMediaPlaying: func,
+  onMediaPause: func,
+  onMediaEnded: func,
+  onMediaPlaylistEnded: func,
+  onMediaError: func,
+  acceptableEventOrigins: arrayOf(string),
 };
+
+const noop = () => {};
 
 CanonicalMediaPlayerComponent.defaultProps = {
   portrait: false,
@@ -155,6 +178,20 @@ CanonicalMediaPlayerComponent.defaultProps = {
   mediaInfo: {},
   showLoadingImage: false,
   darkMode: false,
+  onMediaInitialised: noop,
+  onMediaPlaying: noop,
+  onMediaPause: noop,
+  onMediaEnded: noop,
+  onMediaPlaylistEnded: noop,
+  onMediaError: noop,
+  acceptableEventOrigins: [
+    'www.test.bbc.com',
+    'polling.test.bbc.com',
+    'www.bbc.com',
+    'polling.bbc.com',
+    'localhost.bbc.com',
+    'localhost',
+  ],
 };
 
 MediaMessage.propTypes = {
