@@ -1,9 +1,14 @@
 {
   "name": "@bbc/psammead",
-  "version": "2.2.0",
+  "version": "2.2.4",
   "description": "Core Components Library Developed & Maintained By The Articles and Reach & Languages Team",
   "main": "index.js",
   "private": true,
+  "resolutions": {
+    "dot-prop": "^4.2.1",
+    "prismjs": "^1.21.0",
+    "lodash": "^4.17.20"
+  },
   "scripts": {
     "build": "npm run build:cjs && npm run build:esm",
     "build:cjs": "lerna exec --parallel -- babel src -d dist --ignore $npm_package_config_babel_ignore --root-mode upward",
@@ -17,7 +22,7 @@
     "deploy-storybook": "gh-pages -d storybook_dist",
     "install:packages": "npm i && lerna clean --yes && lerna bootstrap --hoist",
     "postshrinkwrap": "if test -z $CI; then \n ./scripts/forcePackageLockHttps.sh \n fi",
-    "preinstall": "sh scripts/enforceVersions.sh",
+    "preinstall": "sh scripts/enforceVersions.sh && npx npm-force-resolutions",
     "postinstall": "npm run build",
     "publish": "npm run build && node scripts/publish",
     "regeneratePackageLocks": "node scripts/regeneratePackageLocks",
@@ -73,7 +78,7 @@
     "@bbc/psammead-live-label": "^1.0.0",
     "@bbc/psammead-locales": "^4.1.10",
     "@bbc/psammead-media-indicator": "^4.0.10",
-    "@bbc/psammead-media-player": "^2.7.14",
+    "@bbc/psammead-media-player": "^2.10.0",
     "@bbc/psammead-most-read": "^4.1.7",
     "@bbc/psammead-navigation": "^6.0.15",
     "@bbc/psammead-paragraph": "^2.2.32",
