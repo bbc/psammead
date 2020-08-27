@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 2.2.5 | [PR#3664](https://github.com/bbc/psammead/pull/3664) Bumping dependencies |
 | 2.2.4 | [PR#3705](https://github.com/bbc/psammead/pull/3705) Talos - Bump Dependencies - @bbc/psammead-media-player |
 | 2.2.3 | [PR#3679](https://github.com/bbc/psammead/pull/3679) Fix package-lock |
 | 2.2.2 | [PR#3678](https://github.com/bbc/psammead/pull/3678) Adding a dependabot config file |
