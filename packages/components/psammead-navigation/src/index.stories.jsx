@@ -131,43 +131,46 @@ const getBrand = () => {
   );
 };
 
-const navigationStory = (currentPageText, navData, dir, brand) => ({
+const navigationStory = (
+  currentPageText,
+  navData,
+  dir,
+  brand,
+  isAmp,
   script,
   service,
-}) => {
-  return (
-    <>
-      {brand && getBrand()}
+) => (
+  <>
+    {brand && getBrand()}
 
-      <Navigation script={script} service={service} dir={dir}>
-        <ScrollableNavigation dir={dir}>
-          <NavigationUl>
-            {navData.map((item, index) => {
-              const { title, url } = item;
-              const active = index === 0;
+    <Navigation script={script} service={service} dir={dir}>
+      <ScrollableNavigation dir={dir}>
+        <NavigationUl>
+          {navData.map((item, index) => {
+            const { title, url } = item;
+            const active = index === 0;
 
-              return (
-                <NavigationLi
-                  key={title}
-                  url={url}
-                  script={script}
-                  active={active}
-                  currentPageText={currentPageText}
-                  service={service}
-                  dir={dir}
-                >
-                  {title}
-                </NavigationLi>
-              );
-            })}
-          </NavigationUl>
-        </ScrollableNavigation>
-      </Navigation>
-    </>
-  );
-};
+            return (
+              <NavigationLi
+                key={title}
+                url={url}
+                script={script}
+                active={active}
+                currentPageText={currentPageText}
+                service={service}
+                dir={dir}
+              >
+                {title}
+              </NavigationLi>
+            );
+          })}
+        </NavigationUl>
+      </ScrollableNavigation>
+    </Navigation>
+  </>
+);
 
-const animationStory = () => ({ dir, script, service }) => {
+const animationStory = (dir, script, service) => {
   const isOpen = boolean('Open', false);
   return (
     <Navigation script={script} service={service} dir={dir}>
@@ -206,7 +209,16 @@ navStoriesData.map(item => {
 
   return canonicalStories.add(
     title,
-    navigationStory(currentPageText, data, dir, false, isAmp),
+    ({ script, service }) =>
+      navigationStory(
+        currentPageText,
+        data,
+        dir,
+        false,
+        isAmp,
+        script,
+        service,
+      ),
     {
       notes,
     },
@@ -234,9 +246,13 @@ canonicalStories.add(
   },
 );
 
-canonicalStories.add('Dropdown animation', animationStory(), {
-  notes,
-});
+canonicalStories.add(
+  'Dropdown animation',
+  ({ dir, script, service }) => animationStory(dir, script, service),
+  {
+    notes,
+  },
+);
 
 canonicalStories.add(
   'Igbo with brand',

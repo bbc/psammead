@@ -20,7 +20,7 @@ TypographyText.propTypes = {
   typographyFunc: func.isRequired,
 };
 
-const typographyStory = typographyFunc => ({ text, script }) => (
+const typographyStory = (typographyFunc, text, script) => (
   <TypographyText script={script} typographyFunc={typographyFunc}>
     {text}
   </TypographyText>
@@ -35,7 +35,8 @@ Object.keys(typographies)
   .forEach(typographyName => {
     stories.add(
       typographyName.replace(/^get/, ''),
-      typographyStory(typographies[typographyName]),
+      ({ text, script }) =>
+        typographyStory(typographies[typographyName], text, script),
       { notes, knobs: { escapeHTML: false } },
     );
   });
