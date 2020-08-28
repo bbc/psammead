@@ -256,13 +256,16 @@ canonicalStories.add(
 
 canonicalStories.add(
   'Igbo with brand',
-  navigationStory(
-    navStoriesData[0].currentPageText,
-    igboNavData,
-    navStoriesData[0].dir,
-    true,
-    false,
-  ),
+  ({ script, service }) =>
+    navigationStory(
+      navStoriesData[0].currentPageText,
+      igboNavData,
+      navStoriesData[0].dir,
+      true,
+      false,
+      script,
+      service,
+    ),
   {
     notes,
   },
@@ -280,7 +283,16 @@ navStoriesData.map(item => {
 
   return ampStories.add(
     title,
-    navigationStory(currentPageText, data, dir, false, isAmp),
+    ({ script, service }) =>
+      navigationStory(
+        currentPageText,
+        data,
+        dir,
+        false,
+        isAmp,
+        script,
+        service,
+      ),
     {
       notes,
     },
