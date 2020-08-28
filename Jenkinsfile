@@ -57,8 +57,10 @@ node {
                   sh 'make code-coverage-before-build'
                   sh 'make test'
                   sh 'make code-coverage-after-build'
-                  if (env.BRANCH_NAME != 'latest') {
-                    sh 'make change-scanner'
+                  script {
+                    if (env.BRANCH_NAME != 'latest') {
+                      sh 'make change-scanner'
+                    }
                   }
                 },
                 'ChromaticQA Tests': {
