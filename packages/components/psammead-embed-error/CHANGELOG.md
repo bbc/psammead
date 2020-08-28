@@ -2,6 +2,7 @@
 
 | Version       | Description                                                                       |
 |---------------|-----------------------------------------------------------------------------------|
+| 1.1.1 | [PR#3707](https://github.com/bbc/psammead/pull/3707) Talos - Bump Dependencies - @bbc/psammead-styles |
 | 1.1.0 | [PR#3627](https://github.com/bbc/psammead/pull/3627) Add spacing between embed error elements |
 | 1.0.1 | [PR#3623](https://github.com/bbc/psammead/pull/3623) Talos - Bump Dependencies - @bbc/gel-foundations |
 | 1.0.0 | [PR#3615](https://github.com/bbc/psammead/pull/3615) Resolve a11y issues and release of version 1.0. |

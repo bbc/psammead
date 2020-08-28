@@ -2,6 +2,7 @@
 
 | Version       | Description |
 |---------------|-------------|
+| 1.0.8 | [PR#3707](https://github.com/bbc/psammead/pull/3707) Talos - Bump Dependencies - @bbc/psammead-styles |
 | 1.0.7 | [PR#3623](https://github.com/bbc/psammead/pull/3623) Talos - Bump Dependencies - @bbc/gel-foundations |
 | 1.0.6 | [PR#3604](https://github.com/bbc/psammead/pull/3604) Talos - Bump Dependencies - @bbc/gel-foundations |
 | 1.0.5 | [PR#3512](https://github.com/bbc/psammead/pull/3512) Update Byline text colour |
