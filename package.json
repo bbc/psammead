@@ -154,7 +154,7 @@
     "stylelint-config-styled-components": "^0.1.1",
     "stylelint-csstree-validator": "^1.8.0",
     "stylelint-processor-styled-components": "^1.10.0",
-    "yargs-parser": "^19.0.1",
+    "yargs-parser": "^19.0.4",
     "yeoman-generator": "^4.11.0",
     "yo": "^3.1.1"
   },
