@@ -25,6 +25,7 @@ const BulletedList = styled.ul.attrs(() => ({
     border: 0.1875rem solid #3f3f42;
     border-radius: 50%;
     ${({ dir }) => (dir === 'rtl' ? 'right: -1rem;' : 'left: -1rem;')}
+  }
 `;
 
 export const BulletedListItem = styled.li.attrs(() => ({ role: 'listitem' }))`
