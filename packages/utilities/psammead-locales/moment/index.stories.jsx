@@ -86,138 +86,71 @@ const fixedTimestamp = 1566914061212;
 
 /* eslint-disable prettier/prettier */
 const funcs = [
-  locale =>
-    moment(fixedTimestamp)
-      .locale(locale)
-      .format('MMMM Do YYYY, h:mm:ss a'),
-  locale =>
-    moment()
-      .locale(locale)
-      .subtract({ m: 1 })
-      .fromNow(),
-  locale =>
-    moment()
-      .locale(locale)
-      .subtract({ m: 15 })
-      .fromNow(),
-  locale =>
-    moment(fixedTimestamp)
-      .locale(locale)
-      .format('dddd'),
-  locale =>
-    moment(fixedTimestamp)
-      .locale(locale)
-      .format('MMM Do YY'),
-  locale =>
-    moment(fixedTimestamp)
-      .locale(locale)
-      .format('YYYY [escaped text] YYYY'),
-  locale =>
-    moment(fixedTimestamp)
-      .locale(locale)
-      .format(),
-  locale =>
-    moment('20111031', 'YYYYMMDD')
-      .locale(locale)
-      .from(fixedTimestamp),
-  locale =>
-    moment('20120620', 'YYYYMMDD')
-      .locale(locale)
-      .from(fixedTimestamp),
-  locale =>
-    moment(fixedTimestamp)
-      .locale(locale)
-      .startOf('day')
-      .from(fixedTimestamp),
-  locale =>
-    moment(fixedTimestamp)
-      .locale(locale)
-      .endOf('day')
-      .from(fixedTimestamp),
-  locale =>
-    moment(fixedTimestamp)
-      .locale(locale)
-      .startOf('hour')
-      .from(fixedTimestamp),
-  locale =>
+  (locale) =>
+    moment(fixedTimestamp).locale(locale).format('MMMM Do YYYY, h:mm:ss a'),
+  (locale) => moment().locale(locale).subtract({ m: 1 }).fromNow(),
+  (locale) => moment().locale(locale).subtract({ m: 15 }).fromNow(),
+  (locale) => moment(fixedTimestamp).locale(locale).format('dddd'),
+  (locale) => moment(fixedTimestamp).locale(locale).format('MMM Do YY'),
+  (locale) =>
+    moment(fixedTimestamp).locale(locale).format('YYYY [escaped text] YYYY'),
+  (locale) => moment(fixedTimestamp).locale(locale).format(),
+  (locale) =>
+    moment('20111031', 'YYYYMMDD').locale(locale).from(fixedTimestamp),
+  (locale) =>
+    moment('20120620', 'YYYYMMDD').locale(locale).from(fixedTimestamp),
+  (locale) =>
+    moment(fixedTimestamp).locale(locale).startOf('day').from(fixedTimestamp),
+  (locale) =>
+    moment(fixedTimestamp).locale(locale).endOf('day').from(fixedTimestamp),
+  (locale) =>
+    moment(fixedTimestamp).locale(locale).startOf('hour').from(fixedTimestamp),
+  (locale) =>
     moment(fixedTimestamp)
       .locale(locale)
       .subtract(10, 'days')
       .calendar(fixedTimestamp),
-  locale =>
+  (locale) =>
     moment(fixedTimestamp)
       .locale(locale)
       .subtract(6, 'days')
       .calendar(fixedTimestamp),
-  locale =>
+  (locale) =>
     moment(fixedTimestamp)
       .locale(locale)
       .subtract(3, 'days')
       .calendar(fixedTimestamp),
-  locale =>
+  (locale) =>
     moment(fixedTimestamp)
       .locale(locale)
       .subtract(1, 'days')
       .calendar(fixedTimestamp),
-  locale =>
-    moment(fixedTimestamp)
-      .locale(locale)
-      .calendar(fixedTimestamp),
-  locale =>
+  (locale) => moment(fixedTimestamp).locale(locale).calendar(fixedTimestamp),
+  (locale) =>
     moment(fixedTimestamp)
       .locale(locale)
       .add(1, 'days')
       .calendar(fixedTimestamp),
-  locale =>
+  (locale) =>
     moment(fixedTimestamp)
       .locale(locale)
       .add(3, 'days')
       .calendar(fixedTimestamp),
-  locale =>
+  (locale) =>
     moment(fixedTimestamp)
       .locale(locale)
       .add(10, 'days')
       .calendar(fixedTimestamp),
-  locale =>
-    moment(fixedTimestamp)
-      .locale(locale)
-      .format('LT'),
-  locale =>
-    moment(fixedTimestamp)
-      .locale(locale)
-      .format('LTS'),
-  locale =>
-    moment(fixedTimestamp)
-      .locale(locale)
-      .format('L'),
-  locale =>
-    moment(fixedTimestamp)
-      .locale(locale)
-      .format('l'),
-  locale =>
-    moment(fixedTimestamp)
-      .locale(locale)
-      .format('LL'),
-  locale =>
-    moment(fixedTimestamp)
-      .locale(locale)
-      .format('ll'),
-  locale =>
-    moment(fixedTimestamp)
-      .locale(locale)
-      .format('LLL'),
-  locale =>
-    moment(fixedTimestamp)
-      .locale(locale)
-      .format('lll'),
-  locale =>
-    moment(fixedTimestamp)
-      .locale(locale)
-      .format('LLLL'),
-  locale =>
-    moment(fixedTimestamp)
-      .locale(locale)
-      .format('llll'),
+  (locale) => moment(fixedTimestamp).locale(locale).format('LT'),
+  (locale) => moment(fixedTimestamp).locale(locale).format('LTS'),
+  (locale) => moment(fixedTimestamp).locale(locale).format('L'),
+  (locale) => moment(fixedTimestamp).locale(locale).format('l'),
+  (locale) => moment(fixedTimestamp).locale(locale).format('LL'),
+  (locale) => moment(fixedTimestamp).locale(locale).format('ll'),
+  (locale) => moment(fixedTimestamp).locale(locale).format('LLL'),
+  (locale) => moment(fixedTimestamp).locale(locale).format('lll'),
+  (locale) => moment(fixedTimestamp).locale(locale).format('LLLL'),
+  (locale) => moment(fixedTimestamp).locale(locale).format('llll'),
 ];
 /* eslint-enable prettier/prettier */
 
@@ -238,7 +171,7 @@ const Paragraph = styled.p`
   margin: ${GEL_SPACING_DBL};
 `;
 
-const issueHref = localeName =>
+const issueHref = (localeName) =>
   `https://github.com/bbc/psammead/issues/new?labels=bug&title=Moment+translation+correction+for+${localeName}&projects=bbc/20`;
 
 locales.forEach(({ name, locale, dir }) => {

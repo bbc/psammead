@@ -8,7 +8,7 @@ moment.locale('az');
 // An example of these tests can be seen at https://github.com/moment/moment/blob/develop/src/test/locale/en-gb.js
 const assert = { equal: (val1, val2) => expect(val1).toEqual(val2) };
 
-test('parse', function() {
+test('parse', function () {
   var tests = 'Yanvar yan_Fevral fev_Mart mar_Aprel apr_May may_Iyun iyn_Iyul iyl_Avqust avq_Sentyabr sen_Oktyabr okt_Noyabr noy_Dekabr dek'.split(
       '_'
     ),
@@ -33,7 +33,7 @@ test('parse', function() {
   }
 });
 
-test('format', function() {
+test('format', function () {
   var a = [
       ['dddd, D MMMM YYYY, HH:mm:ss', 'Bazar, 14 Fevral 2010, 15:25:50'],
       ['ddd, A h', 'Baz, gündüz 3'],
@@ -60,7 +60,11 @@ test('format', function() {
       ['lll', '14 fev 2010 15:25'],
       ['llll', 'Baz, 14 fev 2010 15:25'],
     ],
-    DDDo = [[359, '360-ıncı'], [199, '200-üncü'], [149, '150-nci']],
+    DDDo = [
+      [359, '360-ıncı'],
+      [199, '200-üncü'],
+      [149, '150-nci'],
+    ],
     dt = moment(new Date(2010, 1, 14, 15, 25, 50, 125)),
     DDDoDt,
     i;
@@ -78,7 +82,7 @@ test('format', function() {
   }
 });
 
-test('format ordinal', function() {
+test('format ordinal', function () {
   assert.equal(moment([2011, 0, 1]).format('DDDo'), '1-inci', '1st');
   assert.equal(moment([2011, 0, 2]).format('DDDo'), '2-nci', '2nd');
   assert.equal(moment([2011, 0, 3]).format('DDDo'), '3-üncü', '3rd');
@@ -115,7 +119,7 @@ test('format ordinal', function() {
   assert.equal(moment([2011, 0, 31]).format('DDDo'), '31-inci', '31st');
 });
 
-test('format month', function() {
+test('format month', function () {
   var expected = 'Yanvar yan_Fevral fev_Mart mar_Aprel apr_May may_Iyun iyn_Iyul iyl_Avqust avq_Sentyabr sen_Oktyabr okt_Noyabr noy_Dekabr dek'.split(
       '_'
     ),
@@ -129,7 +133,7 @@ test('format month', function() {
   }
 });
 
-test('format week', function() {
+test('format week', function () {
   var expected = 'Bazar Baz Bz_Bazar ertəsi BzE BE_Çərşənbə axşamı ÇAx ÇA_Çərşənbə Çər Çə_Cümə axşamı CAx CA_Cümə Cüm Cü_Şənbə Şən Şə'.split(
       '_'
     ),
@@ -143,7 +147,7 @@ test('format week', function() {
   }
 });
 
-test('from', function() {
+test('from', function () {
   var start = moment([2007, 1, 28]);
   assert.equal(
     start.from(moment([2007, 1, 28]).add({ s: 44 }), true),
@@ -282,12 +286,12 @@ test('from', function() {
   );
 });
 
-test('suffix', function() {
+test('suffix', function () {
   assert.equal(moment(30000).from(0), 'birneçə saniyə sonra', 'prefix');
   assert.equal(moment(0).from(30000), 'birneçə saniyə əvvəl', 'suffix');
 });
 
-test('now from now', function() {
+test('now from now', function () {
   assert.equal(
     moment().fromNow(),
     'birneçə saniyə əvvəl',
@@ -295,28 +299,17 @@ test('now from now', function() {
   );
 });
 
-test('fromNow', function() {
+test('fromNow', function () {
   assert.equal(
-    moment()
-      .add({ s: 30 })
-      .fromNow(),
+    moment().add({ s: 30 }).fromNow(),
     'birneçə saniyə sonra',
     'in a few seconds'
   );
-  assert.equal(
-    moment()
-      .add({ d: 5 })
-      .fromNow(),
-    '5 gün sonra',
-    'in 5 days'
-  );
+  assert.equal(moment().add({ d: 5 }).fromNow(), '5 gün sonra', 'in 5 days');
 });
 
-test('calendar day', function() {
-  var a = moment()
-    .hours(12)
-    .minutes(0)
-    .seconds(0);
+test('calendar day', function () {
+  var a = moment().hours(12).minutes(0).seconds(0);
 
   assert.equal(
     moment(a).calendar(),
@@ -324,43 +317,33 @@ test('calendar day', function() {
     'today at the same time'
   );
   assert.equal(
-    moment(a)
-      .add({ m: 25 })
-      .calendar(),
+    moment(a).add({ m: 25 }).calendar(),
     'bugün saat 12:25',
     'Now plus 25 min'
   );
   assert.equal(
-    moment(a)
-      .add({ h: 1 })
-      .calendar(),
+    moment(a).add({ h: 1 }).calendar(),
     'bugün saat 13:00',
     'Now plus 1 hour'
   );
   assert.equal(
-    moment(a)
-      .add({ d: 1 })
-      .calendar(),
+    moment(a).add({ d: 1 }).calendar(),
     'sabah saat 12:00',
     'tomorrow at the same time'
   );
   assert.equal(
-    moment(a)
-      .subtract({ h: 1 })
-      .calendar(),
+    moment(a).subtract({ h: 1 }).calendar(),
     'bugün saat 11:00',
     'Now minus 1 hour'
   );
   assert.equal(
-    moment(a)
-      .subtract({ d: 1 })
-      .calendar(),
+    moment(a).subtract({ d: 1 }).calendar(),
     'dünən 12:00',
     'yesterday at the same time'
   );
 });
 
-test('calendar next week', function() {
+test('calendar next week', function () {
   var i, m;
   for (i = 2; i < 7; i++) {
     m = moment().add({ d: i });
@@ -369,19 +352,13 @@ test('calendar next week', function() {
       m.format('[gələn həftə] dddd [saat] LT'),
       'Today + ' + i + ' days current time'
     );
-    m.hours(0)
-      .minutes(0)
-      .seconds(0)
-      .milliseconds(0);
+    m.hours(0).minutes(0).seconds(0).milliseconds(0);
     assert.equal(
       m.calendar(),
       m.format('[gələn həftə] dddd [saat] LT'),
       'Today + ' + i + ' days beginning of day'
     );
-    m.hours(23)
-      .minutes(59)
-      .seconds(59)
-      .milliseconds(999);
+    m.hours(23).minutes(59).seconds(59).milliseconds(999);
     assert.equal(
       m.calendar(),
       m.format('[gələn həftə] dddd [saat] LT'),
@@ -390,7 +367,7 @@ test('calendar next week', function() {
   }
 });
 
-test('calendar last week', function() {
+test('calendar last week', function () {
   var i, m;
   for (i = 2; i < 7; i++) {
     m = moment().subtract({ d: i });
@@ -399,19 +376,13 @@ test('calendar last week', function() {
       m.format('[keçən həftə] dddd [saat] LT'),
       'Today - ' + i + ' days current time'
     );
-    m.hours(0)
-      .minutes(0)
-      .seconds(0)
-      .milliseconds(0);
+    m.hours(0).minutes(0).seconds(0).milliseconds(0);
     assert.equal(
       m.calendar(),
       m.format('[keçən həftə] dddd [saat] LT'),
       'Today - ' + i + ' days beginning of day'
     );
-    m.hours(23)
-      .minutes(59)
-      .seconds(59)
-      .milliseconds(999);
+    m.hours(23).minutes(59).seconds(59).milliseconds(999);
     assert.equal(
       m.calendar(),
       m.format('[keçən həftə] dddd [saat] LT'),
@@ -420,7 +391,7 @@ test('calendar last week', function() {
   }
 });
 
-test('calendar all else', function() {
+test('calendar all else', function () {
   var weeksAgo = moment().subtract({ w: 1 }),
     weeksFromNow = moment().add({ w: 1 });
 
@@ -434,7 +405,7 @@ test('calendar all else', function() {
   assert.equal(weeksFromNow.calendar(), weeksFromNow.format('L'), 'in 2 weeks');
 });
 
-test('weeks year starting sunday formatted', function() {
+test('weeks year starting sunday formatted', function () {
   assert.equal(
     moment([2011, 11, 26]).format('w ww wo'),
     '1 01 1-inci',

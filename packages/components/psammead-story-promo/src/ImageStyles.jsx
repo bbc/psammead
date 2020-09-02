@@ -101,15 +101,15 @@ const imageGridFallbackStyles = {
 };
 
 const ImageGridItem = styled.div`
-    display: inline-block;
-    vertical-align: top;
-    position: relative;
-    ${({ promoType }) => imageGridFallbackStyles[promoType]}
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+  ${({ promoType }) => imageGridFallbackStyles[promoType]}
 
-    @supports (${grid}) {
-        width: initial;
-        ${({ promoType }) => imageGridStyles[promoType]}
-    }
+  @supports (${grid}) {
+    width: initial;
+    ${({ promoType }) => imageGridStyles[promoType]}
+  }
 `;
 
 export default ImageGridItem;
