@@ -104,7 +104,7 @@
     "@storybook/addon-actions": "^6.0.21",
     "@storybook/addon-knobs": "^6.0.21",
     "@storybook/addon-notes": "^5.3.21",
-    "@storybook/addon-viewport": "^5.3.19",
+    "@storybook/addon-viewport": "^6.0.21",
     "@storybook/react": "^5.3.19",
     "@storybook/theming": "^5.3.19",
     "@testing-library/jest-dom": "^5.11.4",
