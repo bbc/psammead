@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 | ------- | ----------- |
+| 4.1.11 | [PR#3709](https://github.com/bbc/psammead/pull/3709) Bump prettier from 2.0.5 to 2.1.1 |
 | 4.1.10 | [PR#3594](https://github.com/bbc/psammead/pull/3594) Update Pashto translation for July |
 | 4.1.9 | [PR#3523](https://github.com/bbc/psammead/pull/3523) Fix ESLint issue |
 | 4.1.8 | [PR#3412](https://github.com/bbc/psammead/pull/3412) Update Swahili relative timestamps |

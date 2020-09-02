@@ -8,7 +8,7 @@ moment.locale('pt-br');
 // An example of these tests can be seen at https://github.com/moment/moment/blob/develop/src/test/locale/en-gb.js
 const assert = { equal: (val1, val2) => expect(val1).toEqual(val2) };
 
-test('parse', function() {
+test('parse', function () {
   var tests = 'Janeiro Jan_Fevereiro Fev_Março Mar_Abril Abr_Maio Mai_Junho Jun_Julho Jul_Agosto Ago_Setembro Set_Outubro Out_Novembro Nov_Dezembro Dez'.split(
       '_'
     ),
@@ -35,7 +35,7 @@ test('parse', function() {
   }
 });
 
-test('format', function() {
+test('format', function () {
   var a = [
       [
         'dddd, MMMM Do YYYY, h:mm:ss a',
@@ -71,7 +71,7 @@ test('format', function() {
   }
 });
 
-test('format ordinal', function() {
+test('format ordinal', function () {
   assert.equal(moment([2011, 0, 1]).format('DDDo'), '1º', '1º');
   assert.equal(moment([2011, 0, 2]).format('DDDo'), '2º', '2º');
   assert.equal(moment([2011, 0, 3]).format('DDDo'), '3º', '3º');
@@ -108,7 +108,7 @@ test('format ordinal', function() {
   assert.equal(moment([2011, 0, 31]).format('DDDo'), '31º', '31º');
 });
 
-test('format month', function() {
+test('format month', function () {
   var expected = 'janeiro Jan_fevereiro Fev_março Mar_abril Abr_maio Mai_junho Jun_julho Jul_agosto Ago_setembro Set_outubro Out_novembro Nov_dezembro Dez'.split(
       '_'
     ),
@@ -122,7 +122,7 @@ test('format month', function() {
   }
 });
 
-test('format week', function() {
+test('format week', function () {
   var expected = 'Domingo Dom Do_Segunda-feira Seg 2ª_Terça-feira Ter 3ª_Quarta-feira Qua 4ª_Quinta-feira Qui 5ª_Sexta-feira Sex 6ª_Sábado Sáb Sá'.split(
       '_'
     ),
@@ -136,7 +136,7 @@ test('format week', function() {
   }
 });
 
-test('from', function() {
+test('from', function () {
   var start = moment([2007, 1, 28]);
   assert.equal(
     start.from(moment([2007, 1, 28]).add({ s: 44 }), true),
@@ -280,73 +280,52 @@ test('from', function() {
   );
 });
 
-test('suffix', function() {
+test('suffix', function () {
   assert.equal(moment(30000).from(0), 'em poucos segundos', 'prefix');
   assert.equal(moment(0).from(30000), 'Há poucos segundos', 'prefix');
 });
 
-test('fromNow', function() {
+test('fromNow', function () {
   assert.equal(
-    moment()
-      .add({ s: 30 })
-      .fromNow(),
+    moment().add({ s: 30 }).fromNow(),
     'em poucos segundos',
     'in seconds'
   );
-  assert.equal(
-    moment()
-      .add({ d: 5 })
-      .fromNow(),
-    'em 5 dias',
-    'in 5 days'
-  );
+  assert.equal(moment().add({ d: 5 }).fromNow(), 'em 5 dias', 'in 5 days');
 });
 
-test('calendar day', function() {
-  var a = moment()
-    .hours(12)
-    .minutes(0)
-    .seconds(0);
+test('calendar day', function () {
+  var a = moment().hours(12).minutes(0).seconds(0);
 
   assert.equal(moment(a).calendar(), 'Hoje às 12:00', 'today at the same time');
   assert.equal(
-    moment(a)
-      .add({ m: 25 })
-      .calendar(),
+    moment(a).add({ m: 25 }).calendar(),
     'Hoje às 12:25',
     'Now plus 25 min'
   );
   assert.equal(
-    moment(a)
-      .add({ h: 1 })
-      .calendar(),
+    moment(a).add({ h: 1 }).calendar(),
     'Hoje às 13:00',
     'Now plus 1 hour'
   );
   assert.equal(
-    moment(a)
-      .add({ d: 1 })
-      .calendar(),
+    moment(a).add({ d: 1 }).calendar(),
     'Amanhã às 12:00',
     'tomorrow at the same time'
   );
   assert.equal(
-    moment(a)
-      .subtract({ h: 1 })
-      .calendar(),
+    moment(a).subtract({ h: 1 }).calendar(),
     'Hoje às 11:00',
     'Now minus 1 hour'
   );
   assert.equal(
-    moment(a)
-      .subtract({ d: 1 })
-      .calendar(),
+    moment(a).subtract({ d: 1 }).calendar(),
     'Ontem às 12:00',
     'yesterday at the same time'
   );
 });
 
-test('calendar next week', function() {
+test('calendar next week', function () {
   var i, m;
   for (i = 2; i < 7; i++) {
     m = moment().add({ d: i });
@@ -355,19 +334,13 @@ test('calendar next week', function() {
       m.format('dddd [às] LT'),
       'Today + ' + i + ' days current time'
     );
-    m.hours(0)
-      .minutes(0)
-      .seconds(0)
-      .milliseconds(0);
+    m.hours(0).minutes(0).seconds(0).milliseconds(0);
     assert.equal(
       m.calendar(),
       m.format('dddd [às] LT'),
       'Today + ' + i + ' days beginning of day'
     );
-    m.hours(23)
-      .minutes(59)
-      .seconds(59)
-      .milliseconds(999);
+    m.hours(23).minutes(59).seconds(59).milliseconds(999);
     assert.equal(
       m.calendar(),
       m.format('dddd [às] LT'),
@@ -376,7 +349,7 @@ test('calendar next week', function() {
   }
 });
 
-test('calendar last week', function() {
+test('calendar last week', function () {
   var i, m;
   for (i = 2; i < 7; i++) {
     m = moment().subtract({ d: i });
@@ -389,10 +362,7 @@ test('calendar last week', function() {
       ),
       'Today - ' + i + ' days current time'
     );
-    m.hours(0)
-      .minutes(0)
-      .seconds(0)
-      .milliseconds(0);
+    m.hours(0).minutes(0).seconds(0).milliseconds(0);
     assert.equal(
       m.calendar(),
       m.format(
@@ -402,10 +372,7 @@ test('calendar last week', function() {
       ),
       'Today - ' + i + ' days beginning of day'
     );
-    m.hours(23)
-      .minutes(59)
-      .seconds(59)
-      .milliseconds(999);
+    m.hours(23).minutes(59).seconds(59).milliseconds(999);
     assert.equal(
       m.calendar(),
       m.format(
@@ -418,7 +385,7 @@ test('calendar last week', function() {
   }
 });
 
-test('calendar all else', function() {
+test('calendar all else', function () {
   var weeksAgo = moment().subtract({ w: 1 }),
     weeksFromNow = moment().add({ w: 1 });
 
@@ -432,7 +399,7 @@ test('calendar all else', function() {
   assert.equal(weeksFromNow.calendar(), weeksFromNow.format('L'), 'in 2 weeks');
 });
 
-test('weeks year starting sunday format', function() {
+test('weeks year starting sunday format', function () {
   assert.equal(
     moment([2012, 0, 1]).format('w ww wo'),
     '1 01 1º',
@@ -460,7 +427,7 @@ test('weeks year starting sunday format', function() {
   );
 });
 
-test('relative time threshold', function() {
+test('relative time threshold', function () {
   var rts = moment(),
     rtsDefault = moment.relativeTimeThreshold('ss');
 
