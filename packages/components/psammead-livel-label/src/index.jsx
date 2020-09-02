@@ -9,14 +9,14 @@ import VisuallyHiddenText from '@bbc/psammead-visually-hidden-text';
 const StyledSpan = styled.span.attrs(
   ({ ariaHidden }) => ariaHidden && { 'aria-hidden': 'true' },
 )`
-    ${({ service }) => getSansBold(service)}
-    color: ${C_POSTBOX};
-    display: inline-block;
-    ${({ dir }) =>
-      dir === 'rtl'
-        ? `margin-left: ${GEL_SPACING};`
-        : `margin-right: ${GEL_SPACING};`}
-  `;
+  ${({ service }) => getSansBold(service)}
+  color: ${C_POSTBOX};
+  display: inline-block;
+  ${({ dir }) =>
+    dir === 'rtl'
+      ? `margin-left: ${GEL_SPACING};`
+      : `margin-right: ${GEL_SPACING};`}
+`;
 
 const LiveLabel = ({
   service,

@@ -8,7 +8,7 @@ moment.locale('sr');
 // An example of these tests can be seen at https://github.com/moment/moment/blob/develop/src/test/locale/en-gb.js
 const assert = { equal: (val1, val2) => expect(val1).toEqual(val2) };
 
-test('parse', function() {
+test('parse', function () {
   var tests = 'januar jan._februar feb._mart mar._april apr._maj maj_jun jun_jul jul_avgust avg._septembar sep._oktobar okt._novembar nov._decembar dec.'.split(
       '_'
     ),
@@ -33,7 +33,7 @@ test('parse', function() {
   }
 });
 
-test('format', function() {
+test('format', function () {
   var a = [
       [
         'dddd, Do MMMM YYYY, h:mm:ss a',
@@ -69,7 +69,7 @@ test('format', function() {
   }
 });
 
-test('format ordinal', function() {
+test('format ordinal', function () {
   assert.equal(moment([2011, 0, 1]).format('DDDo'), '1.', '1.');
   assert.equal(moment([2011, 0, 2]).format('DDDo'), '2.', '2.');
   assert.equal(moment([2011, 0, 3]).format('DDDo'), '3.', '3.');
@@ -106,7 +106,7 @@ test('format ordinal', function() {
   assert.equal(moment([2011, 0, 31]).format('DDDo'), '31.', '31.');
 });
 
-test('format month', function() {
+test('format month', function () {
   var expected = 'januar jan._februar feb._mart mar._april apr._maj maj_jun jun_jul jul_avgust avg._septembar sep._oktobar okt._novembar nov._decembar dec.'.split(
       '_'
     ),
@@ -120,7 +120,7 @@ test('format month', function() {
   }
 });
 
-test('format week', function() {
+test('format week', function () {
   var expected = 'nedelja ned. ne_ponedeljak pon. po_utorak uto. ut_sreda sre. sr_četvrtak čet. če_petak pet. pe_subota sub. su'.split(
       '_'
     ),
@@ -134,7 +134,7 @@ test('format week', function() {
   }
 });
 
-test('from', function() {
+test('from', function () {
   var start = moment([2007, 1, 28]);
   assert.equal(
     start.from(moment([2007, 1, 28]).add({ s: 44 }), true),
@@ -278,12 +278,12 @@ test('from', function() {
   );
 });
 
-test('suffix', function() {
+test('suffix', function () {
   assert.equal(moment(30000).from(0), 'za nekoliko sekundi', 'prefix');
   assert.equal(moment(0).from(30000), 'Pre nekoliko sekundi', 'prefix');
 });
 
-test('now from now', function() {
+test('now from now', function () {
   assert.equal(
     moment().fromNow(),
     'Pre nekoliko sekundi',
@@ -291,68 +291,47 @@ test('now from now', function() {
   );
 });
 
-test('fromNow', function() {
+test('fromNow', function () {
   assert.equal(
-    moment()
-      .add({ s: 30 })
-      .fromNow(),
+    moment().add({ s: 30 }).fromNow(),
     'za nekoliko sekundi',
     'in a few seconds'
   );
-  assert.equal(
-    moment()
-      .add({ d: 5 })
-      .fromNow(),
-    'za 5 dana',
-    'in 5 days'
-  );
+  assert.equal(moment().add({ d: 5 }).fromNow(), 'za 5 dana', 'in 5 days');
 });
 
-test('calendar day', function() {
-  var a = moment()
-    .hours(12)
-    .minutes(0)
-    .seconds(0);
+test('calendar day', function () {
+  var a = moment().hours(12).minutes(0).seconds(0);
 
   assert.equal(moment(a).calendar(), 'danas u 12:00', 'today at the same time');
   assert.equal(
-    moment(a)
-      .add({ m: 25 })
-      .calendar(),
+    moment(a).add({ m: 25 }).calendar(),
     'danas u 12:25',
     'Now plus 25 min'
   );
   assert.equal(
-    moment(a)
-      .add({ h: 1 })
-      .calendar(),
+    moment(a).add({ h: 1 }).calendar(),
     'danas u 13:00',
     'Now plus 1 hour'
   );
   assert.equal(
-    moment(a)
-      .add({ d: 1 })
-      .calendar(),
+    moment(a).add({ d: 1 }).calendar(),
     'sutra u 12:00',
     'tomorrow at the same time'
   );
   assert.equal(
-    moment(a)
-      .subtract({ h: 1 })
-      .calendar(),
+    moment(a).subtract({ h: 1 }).calendar(),
     'danas u 11:00',
     'Now minus 1 hour'
   );
   assert.equal(
-    moment(a)
-      .subtract({ d: 1 })
-      .calendar(),
+    moment(a).subtract({ d: 1 }).calendar(),
     'juče u 12:00',
     'yesterday at the same time'
   );
 });
 
-test('calendar next week', function() {
+test('calendar next week', function () {
   var i, m;
 
   function makeFormat(d) {
@@ -378,19 +357,13 @@ test('calendar next week', function() {
       m.format(makeFormat(m)),
       'Today + ' + i + ' days current time'
     );
-    m.hours(0)
-      .minutes(0)
-      .seconds(0)
-      .milliseconds(0);
+    m.hours(0).minutes(0).seconds(0).milliseconds(0);
     assert.equal(
       m.calendar(),
       m.format(makeFormat(m)),
       'Today + ' + i + ' days beginning of day'
     );
-    m.hours(23)
-      .minutes(59)
-      .seconds(59)
-      .milliseconds(999);
+    m.hours(23).minutes(59).seconds(59).milliseconds(999);
     assert.equal(
       m.calendar(),
       m.format(makeFormat(m)),
@@ -399,7 +372,7 @@ test('calendar next week', function() {
   }
 });
 
-test('calendar last week', function() {
+test('calendar last week', function () {
   var i, m;
 
   function makeFormat(d) {
@@ -423,19 +396,13 @@ test('calendar last week', function() {
       m.format(makeFormat(m)),
       'Today - ' + i + ' days current time'
     );
-    m.hours(0)
-      .minutes(0)
-      .seconds(0)
-      .milliseconds(0);
+    m.hours(0).minutes(0).seconds(0).milliseconds(0);
     assert.equal(
       m.calendar(),
       m.format(makeFormat(m)),
       'Today - ' + i + ' days beginning of day'
     );
-    m.hours(23)
-      .minutes(59)
-      .seconds(59)
-      .milliseconds(999);
+    m.hours(23).minutes(59).seconds(59).milliseconds(999);
     assert.equal(
       m.calendar(),
       m.format(makeFormat(m)),
@@ -444,7 +411,7 @@ test('calendar last week', function() {
   }
 });
 
-test('calendar all else', function() {
+test('calendar all else', function () {
   var weeksAgo = moment().subtract({ w: 1 }),
     weeksFromNow = moment().add({ w: 1 });
 
@@ -458,7 +425,7 @@ test('calendar all else', function() {
   assert.equal(weeksFromNow.calendar(), weeksFromNow.format('L'), 'in 2 weeks');
 });
 
-test('weeks year starting sunday formatted', function() {
+test('weeks year starting sunday formatted', function () {
   assert.equal(
     moment([2011, 11, 26]).format('w ww wo'),
     '1 01 1.',

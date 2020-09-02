@@ -50,7 +50,7 @@ const imageGridStyles = {
 
 const ImageGridItem = styled.div`
   vertical-align: top;
-  display: inline-block;  
+  display: inline-block;
   width: ${fullWidthColumnsMaxScaleable};
   padding: ${GEL_SPACING} ${GEL_SPACING} 0 ${GEL_SPACING};
   ${({ bulletinType }) => imageGridFallbackStyles[bulletinType]}
