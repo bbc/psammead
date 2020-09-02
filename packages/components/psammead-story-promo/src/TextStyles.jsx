@@ -34,13 +34,13 @@ const TextGridColumnsTopStory = css`
 `;
 
 const TextGridColumns = css`
-grid-column: 3 / span 4;
+  grid-column: 3 / span 4;
 
-${({ displayImage }) => !displayImage && `grid-column: 1 / span 6;`}
+  ${({ displayImage }) => !displayImage && `grid-column: 1 / span 6;`}
 
-@media (min-width: ${GEL_GROUP_4_SCREEN_WIDTH_MIN}) {
-  padding-top: ${({ displayImage }) => (displayImage ? GEL_SPACING : '0')}
-}
+  @media (min-width: ${GEL_GROUP_4_SCREEN_WIDTH_MIN}) {
+    padding-top: ${({ displayImage }) => (displayImage ? GEL_SPACING : '0')};
+  }
 `;
 
 const TextGridColumnsLeadingStory = css`
@@ -125,24 +125,23 @@ const leadingPromoTimestampPadding = `
 `;
 
 const TextGridItem = styled.div`
-    display: inline-block;
-    vertical-align: top;
+  display: inline-block;
+  vertical-align: top;
 
-    ${({ promoType }) => textGridFallbackStyles[promoType]}
+  ${({ promoType }) => textGridFallbackStyles[promoType]}
 
-    @supports (${grid}) {
-      display: block;
-      width: initial;
-      padding: initial;
-      ${({ promoType }) => textGridStyles[promoType]}
-    }
+  @supports (${grid}) {
+    display: block;
+    width: initial;
+    padding: initial;
+    ${({ promoType }) => textGridStyles[promoType]}
+  }
 
-    ${({ promoType }) =>
-      promoType === 'leading' && leadingPromoTimestampPadding}
+  ${({ promoType }) => promoType === 'leading' && leadingPromoTimestampPadding}
 
-    ${({ displayImage }) =>
-      !displayImage &&
-      `>div{ display:inline-block; vertical-align:initial; }
+  ${({ displayImage }) =>
+    !displayImage &&
+    `>div{ display:inline-block; vertical-align:initial; }
        & svg{ margin: 0; }`}
 `;
 

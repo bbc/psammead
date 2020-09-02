@@ -3,6 +3,8 @@
 <!-- prettier-ignore -->
 | Version       | Description                                                                                                                  |
 | ------------- | ---------------------------------------------------------------------------------------------------------------------------- |
+| 2.10.2 | [PR#3712](https://github.com/bbc/psammead/pull/3712) Talos - Bump Dependencies - @bbc/psammead-image-placeholder, @bbc/psammead-play-button |
+| 2.10.1 | [PR#3710](https://github.com/bbc/psammead/pull/3710) Talos - Bump Dependencies - @bbc/psammead-image-placeholder, @bbc/psammead-play-button |
 | 2.10.0 | [PR#3679](https://github.com/bbc/psammead/pull/3679) Add bindings for media playback events |
 | 2.9.0 | [PR#3666](https://github.com/bbc/psammead/pull/3666) Adding story for media message and removing bottom border from strong el |
 | 2.8.2 | [PR#3641](https://github.com/bbc/psammead/pull/3641) Version bump & fixing PR link |

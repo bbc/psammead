@@ -28,7 +28,7 @@ const ltrRtl = (ltrValue, rtlValue) =>
   `;
 
 const Wrapper = styled.div`
-${({ service }) => getSansRegular(service)}
+  ${({ service }) => getSansRegular(service)}
   background-color: ${C_CONSENT_BACKGROUND};
   padding: ${GEL_SPACING_DBL} ${GEL_MARGIN_BELOW_400PX};
 

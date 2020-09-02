@@ -45,8 +45,8 @@ const StyledSpan = styled.span`
   }
   /* stylelint-enable */
 
-  @media (max-width: ${GEL_GROUP_2_SCREEN_WIDTH_MAX}) {  
-    line-height: calc(${GEL_SPACING_QUIN} - ${GEL_SPACING});    
+  @media (max-width: ${GEL_GROUP_2_SCREEN_WIDTH_MAX}) {
+    line-height: calc(${GEL_SPACING_QUIN} - ${GEL_SPACING});
   }
 `;
 

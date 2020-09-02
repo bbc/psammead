@@ -3,6 +3,8 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 1.2.43 | [PR#3710](https://github.com/bbc/psammead/pull/3710) Talos - Bump Dependencies - @bbc/psammead-styles |
+| 1.2.42 | [PR#3707](https://github.com/bbc/psammead/pull/3707) Talos - Bump Dependencies - @bbc/psammead-styles |
 | 1.2.41 | [PR#3633](https://github.com/bbc/psammead/pull/3633) Removing white space in changelog to retrigger deploy |
 | 1.2.4 | [PR#3611](https://github.com/bbc/psammead/pull/3611) Make placeholder darkmode compatible |
 | 1.2.37 | [PR#3613](https://github.com/bbc/psammead/pull/3613) Talos - Bump Dependencies - @bbc/psammead-assets |
