@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 2.3.1 | [PR#3732](https://github.com/bbc/psammead/pull/3732) Bump @babel/core from 7.11.1 to 7.11.5, Bump eslint from 7.3.1 to 7.8.1 |
 | 2.3.0 | [PR#3729](https://github.com/bbc/psammead/pull/3729) Bumping dependencies |
 | 2.2.14 | [PR#3709](https://github.com/bbc/psammead/pull/3709) Bump prettier from 2.0.5 to 2.1.1 |
 | 2.2.13 | [PR#3727](https://github.com/bbc/psammead/pull/3727) Minor & patch package updates |
