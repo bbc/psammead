@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 2.2.14 | [PR#3709](https://github.com/bbc/psammead/pull/3709) Bump prettier from 2.0.5 to 2.1.1 |
 | 2.2.13 | [PR#3727](https://github.com/bbc/psammead/pull/3727) Minor & patch package updates |
 | 2.2.12 | [PR#3714](https://github.com/bbc/psammead/pull/3714) Talos - Bump Dependencies - @bbc/psammead-radio-schedule |
 | 2.2.11 | [PR#3713](https://github.com/bbc/psammead/pull/3713) Talos - Bump Dependencies - @bbc/psammead-brand, @bbc/psammead-bulletin, @bbc/psammead-media-player, @bbc/psammead-most-read, @bbc/psammead-radio-schedule, @bbc/psammead-timestamp-container |

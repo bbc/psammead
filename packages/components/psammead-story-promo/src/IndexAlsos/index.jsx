@@ -49,7 +49,9 @@ const StyledIndexAlsosLink = styled.a`
     color: ${C_METAL};
   }
 
-  & svg { margin: 0; } /* Reset Media Indicator SVG margin */ 
+  & svg {
+    margin: 0;
+  } /* Reset Media Indicator SVG margin */
 `;
 
 const IndexAlsosLink = ({
