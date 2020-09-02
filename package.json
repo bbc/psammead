@@ -46,7 +46,7 @@
     "styled-normalize": "^8.0.7"
   },
   "devDependencies": {
-    "@babel/cli": "^7.10.5",
+    "@babel/cli": "^7.11.5",
     "@babel/core": "^7.11.1",
     "@babel/plugin-proposal-export-default-from": "^7.10.4",
     "@babel/plugin-transform-modules-commonjs": "^7.10.4",
