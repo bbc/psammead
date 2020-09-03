@@ -20,7 +20,7 @@ exports[`PsammeadBulletedList should render correctly from ltr 1`] = `
   content: ' ';
   position: absolute;
   border-width: 1rem;
-  border: 0.1875rem solid #3f3f42;
+  border: 0.1875rem solid #3F3F42;
   border-radius: 50%;
   left: -1rem;
 }
@@ -89,7 +89,7 @@ exports[`PsammeadBulletedList should render correctly from rtl 1`] = `
   content: ' ';
   position: absolute;
   border-width: 1rem;
-  border: 0.1875rem solid #3f3f42;
+  border: 0.1875rem solid #3F3F42;
   border-radius: 50%;
   right: -1rem;
 }
