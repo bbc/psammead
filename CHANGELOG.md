@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 2.3.3 | [PR#3734](https://github.com/bbc/psammead/pull/3734) Bumping dev dependencies |
 | 2.3.2 | [PR#3661](https://github.com/bbc/psammead/pull/3661) Adding a Maintainers file |
 | 2.3.1 | [PR#3732](https://github.com/bbc/psammead/pull/3732) Bump @babel/core from 7.11.1 to 7.11.5, Bump eslint from 7.3.1 to 7.8.1 |
 | 2.3.0 | [PR#3729](https://github.com/bbc/psammead/pull/3729) Bumping dependencies |

@@ -1,6 +1,6 @@
 {
   "name": "@bbc/psammead",
-  "version": "2.3.2",
+  "version": "2.3.3",
   "description": "Core Components Library Developed & Maintained By The Articles and Reach & Languages Team",
   "main": "index.js",
   "private": true,
@@ -46,12 +46,12 @@
     "styled-normalize": "^8.0.7"
   },
   "devDependencies": {
-    "@babel/cli": "^7.10.5",
+    "@babel/cli": "^7.11.5",
     "@babel/core": "^7.11.1",
     "@babel/plugin-proposal-export-default-from": "^7.10.4",
     "@babel/plugin-transform-modules-commonjs": "^7.10.4",
-    "@babel/plugin-transform-runtime": "^7.11.0",
-    "@babel/preset-env": "^7.11.0",
+    "@babel/plugin-transform-runtime": "^7.11.5",
+    "@babel/preset-env": "^7.11.5",
     "@babel/preset-react": "^7.10.4",
     "@bbc/gel-foundations": "^4.2.0",
     "@bbc/moment-timezone-include": "^1.1.4",
@@ -155,7 +155,7 @@
     "stylelint-csstree-validator": "^1.8.0",
     "stylelint-processor-styled-components": "^1.10.0",
     "yargs-parser": "^19.0.4",
-    "yeoman-generator": "^4.11.0",
+    "yeoman-generator": "^4.12.0",
     "yo": "^3.1.1"
   },
   "config": {
