@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import { string, oneOf, shape } from 'prop-types';
 import { getBodyCopy } from '@bbc/gel-foundations/typography';
 import { getSansRegular } from '@bbc/psammead-styles/font-styles';
+import { C_SHADOW } from '@bbc/psammead-styles/colours';
 import { GEL_SPACING_DBL } from '@bbc/gel-foundations/spacings';
 import { scriptPropType } from '@bbc/gel-foundations/prop-types';
 
@@ -22,7 +23,7 @@ const BulletedList = styled.ul.attrs(() => ({
     content: ' ';
     position: absolute;
     border-width: 1rem;
-    border: 0.1875rem solid #3f3f42;
+    border: 0.1875rem solid ${C_SHADOW};
     border-radius: 50%;
     ${({ dir }) => (dir === 'rtl' ? 'right: -1rem;' : 'left: -1rem;')}
   }
