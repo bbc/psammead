@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 2.3.6 | [PR#3733](https://github.com/bbc/psammead/pull/3733) Minor & patch package updates |
 | 2.3.5 | [PR#3736](https://github.com/bbc/psammead/pull/3736) downgrade storybook version |
 | 2.3.4 | [PR#3725](https://github.com/bbc/psammead/pull/3725) Minor & patch package updates |
 | 2.3.3 | [PR#3734](https://github.com/bbc/psammead/pull/3734) Bumping dev dependencies |
