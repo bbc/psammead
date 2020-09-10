@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 2.3.10 | [PR#3754](https://github.com/bbc/psammead/pull/3754) Force `prismjs` version again |
 | 2.3.9 | [PR#3753](https://github.com/bbc/psammead/pull/3753) Remove `prismjs` and `lodash` from forced resolutions |
 | 2.3.8 | [PR#3752](https://github.com/bbc/psammead/pull/3752) Talos - Bump Dependencies - @bbc/psammead-media-player |
 | 2.3.7 | [PR#3736](https://github.com/bbc/psammead/pull/3733) Psammead media player UX updates |
