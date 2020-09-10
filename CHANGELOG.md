@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 2.3.8 | [PR#3752](https://github.com/bbc/psammead/pull/3752) Talos - Bump Dependencies - @bbc/psammead-media-player |
 | 2.3.7 | [PR#3736](https://github.com/bbc/psammead/pull/3733) Psammead media player UX updates |
 | 2.3.6 | [PR#3748](https://github.com/bbc/psammead/pull/3748) Bump @testing-library/react from 10.4.9 to 11.0.2 |
 | 2.3.5 | [PR#3736](https://github.com/bbc/psammead/pull/3736) downgrade storybook version |
