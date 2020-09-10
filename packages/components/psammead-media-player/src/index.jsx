@@ -5,7 +5,6 @@ import equals from 'ramda/src/equals';
 import {
   GEL_SPACING_DBL,
   GEL_SPACING_QUAD,
-  GEL_SPACING_TRPL,
 } from '@bbc/gel-foundations/spacings';
 import { GEL_GROUP_4_SCREEN_WIDTH_MIN } from '@bbc/gel-foundations/breakpoints';
 import Placeholder from './Placeholder';
@@ -19,11 +18,6 @@ const StyledVideoContainer = styled.div`
   padding-top: ${({ portrait }) => (portrait ? portraitRatio : landscapeRatio)};
   position: relative;
   overflow: hidden;
-  margin-bottom: ${GEL_SPACING_DBL};
-
-  @media (min-width: ${GEL_GROUP_4_SCREEN_WIDTH_MIN}) {
-    margin-bottom: ${GEL_SPACING_TRPL};
-  }
 `;
 
 const StyledAudioContainer = styled.div`
