@@ -13,11 +13,11 @@ const getFontStyleAndWeight = (style, weight) =>
 const latinReithFontStyles = {
   sansRegular: `
    ${reithSans}
-   ${getFontStyleAndWeight('normal', 400)} 
+   ${getFontStyleAndWeight('normal', 400)}
   `,
   sansRegularItalic: `
    ${reithSans}
-   ${getFontStyleAndWeight('italic', 400)} 
+   ${getFontStyleAndWeight('italic', 400)}
   `,
   sansBold: `
    ${reithSans}
@@ -37,7 +37,7 @@ const latinReithFontStyles = {
   `,
   serifMedium: `
    ${reithSerif}
-   ${getFontStyleAndWeight('normal', 500)} 
+   ${getFontStyleAndWeight('normal', 500)}
   `,
   serifMediumItalic: `
    ${reithSerif}
@@ -355,6 +355,17 @@ const tigrinyaStyles = {
   `,
 };
 
+/*
+ *  OPTIMO BASE
+ */
+const optimoBaseFontStyles = {
+  sansRegular: latinReithFontStyles.sansRegular,
+  sansRegularItalic: latinReithFontStyles.sansRegularItalic,
+  sansBold: latinReithFontStyles.sansBold,
+  sansBoldItalic: latinReithFontStyles.sansBoldItalic,
+  sansLight: latinReithFontStyles.sansLight,
+};
+
 export const afaanoromoo = helmetFontStyles;
 export const afrique = helmetFontStyles;
 export const amharic = amharicStyles;
@@ -379,6 +390,7 @@ export const mundo = latinReithFontStyles;
 export const naidheachdan = latinReithFontStyles;
 export const nepali = nepaliStyles;
 export const news = latinReithFontStyles;
+export const optimobase = optimoBaseFontStyles;
 export const pashto = nassimFontStyles(nassimPashtoFontFamily);
 export const persian = nassimFontStyles(nassimPersianFontFamily);
 export const pidgin = helmetFontStyles;
