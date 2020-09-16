@@ -5,13 +5,6 @@ exports[`Media Player: AMP Entry renders a landscape container with an amp-ifram
   padding-top: 56.25%;
   position: relative;
   overflow: hidden;
-  margin-bottom: 1rem;
-}
-
-@media (min-width:63rem) {
-  .c0 {
-    margin-bottom: 1.5rem;
-  }
 }
 
 <html>
@@ -67,13 +60,6 @@ exports[`Media Player: AMP Entry renders a portrait container with amp-iframe an
   padding-top: 177.78%;
   position: relative;
   overflow: hidden;
-  margin-bottom: 1rem;
-}
-
-@media (min-width:63rem) {
-  .c0 {
-    margin-bottom: 1.5rem;
-  }
 }
 
 <div>
@@ -266,18 +252,11 @@ exports[`Media Player: Canonical Entry renders a landscape container with a plac
   padding-top: 56.25%;
   position: relative;
   overflow: hidden;
-  margin-bottom: 1rem;
 }
 
 @media (min-width:37.5rem) {
   .c3 {
     font-size: 0.875rem;
-  }
-}
-
-@media (min-width:63rem) {
-  .c0 {
-    margin-bottom: 1.5rem;
   }
 }
 
@@ -452,7 +431,6 @@ exports[`Media Player: Canonical Entry renders a placeholder image with guidance
   padding-top: 56.25%;
   position: relative;
   overflow: hidden;
-  margin-bottom: 1rem;
 }
 
 @media (min-width:37.5rem) {
@@ -476,12 +454,6 @@ exports[`Media Player: Canonical Entry renders a placeholder image with guidance
 @media (min-width:25rem) {
   .c4 {
     padding: 1rem;
-  }
-}
-
-@media (min-width:63rem) {
-  .c0 {
-    margin-bottom: 1.5rem;
   }
 }
 
@@ -654,18 +626,11 @@ exports[`Media Player: Canonical Entry renders a portrait container with a place
   padding-top: 177.78%;
   position: relative;
   overflow: hidden;
-  margin-bottom: 1rem;
 }
 
 @media (min-width:37.5rem) {
   .c3 {
     font-size: 0.875rem;
-  }
-}
-
-@media (min-width:63rem) {
-  .c0 {
-    margin-bottom: 1.5rem;
   }
 }
 
@@ -729,7 +694,6 @@ exports[`Media Player: Canonical Entry renders an iframe when showPlaceholder is
   padding-top: 56.25%;
   position: relative;
   overflow: hidden;
-  margin-bottom: 1rem;
 }
 
 .c1 {
@@ -740,12 +704,6 @@ exports[`Media Player: Canonical Entry renders an iframe when showPlaceholder is
   top: 0;
   width: 100%;
   height: 100%;
-}
-
-@media (min-width:63rem) {
-  .c0 {
-    margin-bottom: 1.5rem;
-  }
 }
 
 <div
@@ -933,7 +891,6 @@ exports[`Media Player: Canonical Entry renders with no-js styles when noJsClassN
   padding-top: 56.25%;
   position: relative;
   overflow: hidden;
-  margin-bottom: 1rem;
 }
 
 @media (min-width:37.5rem) {
@@ -963,12 +920,6 @@ exports[`Media Player: Canonical Entry renders with no-js styles when noJsClassN
 @media (min-width:25rem) {
   .c4 {
     padding: 1rem;
-  }
-}
-
-@media (min-width:63rem) {
-  .c0 {
-    margin-bottom: 1.5rem;
   }
 }
 
@@ -1051,7 +1002,6 @@ exports[`Media Player: Canonical Entry shows a loading image before the player i
   padding-top: 56.25%;
   position: relative;
   overflow: hidden;
-  margin-bottom: 1rem;
 }
 
 .c2 {
@@ -1071,12 +1021,6 @@ exports[`Media Player: Canonical Entry shows a loading image before the player i
   top: 0;
   width: 100%;
   height: 100%;
-}
-
-@media (min-width:63rem) {
-  .c0 {
-    margin-bottom: 1.5rem;
-  }
 }
 
 <div

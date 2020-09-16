@@ -3,6 +3,14 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 2.4.1 | [PR#3767](https://github.com/bbc/psammead/pull/3767) Remove semver from resolutions and prevent `npm-force-resolutions` running in `npm ci` |
+| 2.4.0 | [PR#3762](https://github.com/bbc/psammead/pull/3762) Bumping dependencies |
+| 2.3.10 | [PR#3754](https://github.com/bbc/psammead/pull/3754) Force `prismjs` version again |
+| 2.3.9 | [PR#3753](https://github.com/bbc/psammead/pull/3753) Remove `prismjs` and `lodash` from forced resolutions |
+| 2.3.8 | [PR#3752](https://github.com/bbc/psammead/pull/3752) Talos - Bump Dependencies - @bbc/psammead-media-player |
+| 2.3.7 | [PR#3736](https://github.com/bbc/psammead/pull/3733) Psammead media player UX updates |
+| 2.3.6 | [PR#3748](https://github.com/bbc/psammead/pull/3748) Bump @testing-library/react from 10.4.9 to 11.0.2 |
+| 2.3.5 | [PR#3736](https://github.com/bbc/psammead/pull/3736) downgrade storybook version |
 | 2.3.4 | [PR#3725](https://github.com/bbc/psammead/pull/3725) Minor & patch package updates |
 | 2.3.3 | [PR#3734](https://github.com/bbc/psammead/pull/3734) Bumping dev dependencies |
 | 2.3.2 | [PR#3661](https://github.com/bbc/psammead/pull/3661) Adding a Maintainers file |
