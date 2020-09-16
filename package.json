@@ -5,8 +5,8 @@
   "main": "index.js",
   "private": true,
   "resolutions": {
-    "dot-prop": "^4.2.1",
-    "prismjs": "^1.21.0"
+    "dot-prop": "4.2.1",
+    "prismjs": "1.21.0"
   },
   "scripts": {
     "build": "npm run build:cjs && npm run build:esm",
@@ -21,7 +21,7 @@
     "deploy-storybook": "gh-pages -d storybook_dist",
     "install:packages": "npm i && lerna clean --yes && lerna bootstrap --hoist",
     "postshrinkwrap": "if test -z $CI; then \n ./scripts/forcePackageLockHttps.sh \n fi",
-    "preinstall": "sh scripts/enforceVersions.sh && npx npm-force-resolutions",
+    "preinstall": "sh scripts/enforceVersions.sh && [ \"$npm_config_refer\" != \"ci\" ] && npx npm-force-resolutions || exit 0",
     "postinstall": "npm run build",
     "publish": "npm run build && node scripts/publish",
     "regeneratePackageLocks": "node scripts/regeneratePackageLocks",

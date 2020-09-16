@@ -3,7 +3,8 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
-| 2.4.1 | [PR#3768](https://github.com/bbc/psammead/pull/3768) Update Node version |
+| 2.4.2 | [PR#3768](https://github.com/bbc/psammead/pull/3768) Update Node version |
+| 2.4.1 | [PR#3767](https://github.com/bbc/psammead/pull/3767) Remove semver from resolutions and prevent `npm-force-resolutions` running in `npm ci` |
 | 2.4.0 | [PR#3762](https://github.com/bbc/psammead/pull/3762) Bumping dependencies |
 | 2.3.10 | [PR#3754](https://github.com/bbc/psammead/pull/3754) Force `prismjs` version again |
 | 2.3.9 | [PR#3753](https://github.com/bbc/psammead/pull/3753) Remove `prismjs` and `lodash` from forced resolutions |
