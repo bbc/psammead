@@ -3,8 +3,6 @@
 <div align="center">
 
 [![Known Vulnerabilities](https://snyk.io/test/github/bbc/psammead/badge.svg)](https://snyk.io/test/github/bbc/psammead)
-[![dependencies Status](https://david-dm.org/bbc/psammead/status.svg)](https://david-dm.org/bbc/psammead)
-[![devDependencies Status](https://david-dm.org/bbc/psammead/dev-status.svg)](https://david-dm.org/bbc/psammead?type=dev)
 [![Maintainability](https://api.codeclimate.com/v1/badges/3f7b756f1358f3633362/maintainability)](https://codeclimate.com/github/bbc/psammead/maintainability)
 [![Test Coverage](https://api.codeclimate.com/v1/badges/3f7b756f1358f3633362/test_coverage)](https://codeclimate.com/github/bbc/psammead/test_coverage)
 [![Storybook](https://raw.githubusercontent.com/storybooks/brand/master/badge/badge-storybook.svg?sanitize=true)](https://bbc.github.io/psammead)
