@@ -3,8 +3,6 @@
 <div align="center">
 
 [![Known Vulnerabilities](https://snyk.io/test/github/bbc/psammead/badge.svg)](https://snyk.io/test/github/bbc/psammead)
-[![dependencies Status](https://david-dm.org/bbc/psammead/status.svg)](https://david-dm.org/bbc/psammead)
-[![devDependencies Status](https://david-dm.org/bbc/psammead/dev-status.svg)](https://david-dm.org/bbc/psammead?type=dev)
 [![Maintainability](https://api.codeclimate.com/v1/badges/3f7b756f1358f3633362/maintainability)](https://codeclimate.com/github/bbc/psammead/maintainability)
 [![Test Coverage](https://api.codeclimate.com/v1/badges/3f7b756f1358f3633362/test_coverage)](https://codeclimate.com/github/bbc/psammead/test_coverage)
 [![Storybook](https://raw.githubusercontent.com/storybooks/brand/master/badge/badge-storybook.svg?sanitize=true)](https://bbc.github.io/psammead)
@@ -19,6 +17,9 @@ Psammead packages are split into:
 - [Components](./packages/components) - [GEL-compliant](https://www.bbc.co.uk/gel/articles/what-is-gel) presentational React components built on [`styled-components`](https://www.styled-components.com). They are ready for use out of the box, regardless of data source.
 - [Containers](./packages/containers) - Functional components for optional use with presentational components of the same name.
 - [Utilities](./packages/utilities) - Commonly shared Psammead dependencies, fundamentals to aid building additional GEL-compliant components, and aditional packages for use in building SPAs.
+
+# 🚨
+**Psammead is moving to Emotion**. Emotion is a performant CSS-in-JS solution that will replace Styled Components in Psammead. This is a breaking change and follows a thorough investigation into server-side rendering performance by the Simorgh team. For more information, please see the following issue: https://github.com/bbc/simorgh/issues/7772. We expect this work to begin in September and complete in October. During this time, merges to `latest` may be blocked to minimise delays.
 
 ## Documentation index
 
