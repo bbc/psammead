@@ -3,7 +3,8 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
-| 2.4.2 | [PR#3768](https://github.com/bbc/psammead/pull/3768) Update Node version |
+| 2.4.3 | [PR#3768](https://github.com/bbc/psammead/pull/3768) Update Node version |
+| 2.4.2 | [PR#3769](https://github.com/bbc/psammead/pull/3769) Add Emotion migration notice to README |
 | 2.4.1 | [PR#3767](https://github.com/bbc/psammead/pull/3767) Remove semver from resolutions and prevent `npm-force-resolutions` running in `npm ci` |
 | 2.4.0 | [PR#3762](https://github.com/bbc/psammead/pull/3762) Bumping dependencies |
 | 2.3.10 | [PR#3754](https://github.com/bbc/psammead/pull/3754) Force `prismjs` version again |
