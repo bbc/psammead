@@ -40,10 +40,7 @@
     "url": "https://github.com/bbc/psammead/issues"
   },
   "homepage": "https://github.com/bbc/psammead#readme",
-  "dependencies": {
-    "styled-components": "^4.4.1",
-    "styled-normalize": "^8.0.7"
-  },
+  "dependencies": {},
   "devDependencies": {
     "@babel/cli": "^7.11.5",
     "@babel/core": "^7.11.1",
@@ -113,7 +110,6 @@
     "babel-eslint": "^10.1.0",
     "babel-loader": "^8.1.0",
     "babel-plugin-dynamic-import-node": "^2.3.3",
-    "babel-plugin-styled-components": "1.11.1",
     "browserslist": "^4.14.0",
     "chalk": "^4.1.0",
     "enquirer": "^2.3.6",
@@ -131,7 +127,6 @@
     "glob-loader": "^0.3.0",
     "husky": "^4.2.5",
     "jest": "^26.4.2",
-    "jest-styled-components": "^6.3.4",
     "json5": "^2.1.3",
     "lerna": "^3.22.1",
     "lint-staged": "^10.2.13",
@@ -150,9 +145,7 @@
     "strip-ansi": "^6.0.0",
     "stylelint": "^13.6.1",
     "stylelint-config-recommended": "^3.0.0",
-    "stylelint-config-styled-components": "^0.1.1",
     "stylelint-csstree-validator": "^1.8.0",
-    "stylelint-processor-styled-components": "^1.10.0",
     "yargs-parser": "^20.0.0",
     "yeoman-generator": "^4.12.0",
     "yo": "^3.1.1"
