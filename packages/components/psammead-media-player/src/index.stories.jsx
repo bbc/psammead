@@ -3,7 +3,7 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { boolean, text, withKnobs } from '@storybook/addon-knobs';
 import styled from 'styled-components';
-import { withServicesKnob } from '@bbc/psammead-storybook-helpers';
+// import { withServicesKnob } from '@bbc/psammead-storybook-helpers';
 import { CanonicalMediaPlayer, AmpMediaPlayer } from '.';
 import MediaMessage from './Message';
 import { ampDecorator } from '../../../../.storybook/config';
@@ -22,6 +22,7 @@ const StyledMessageContainer = styled.div`
 `;
 
 storiesOf('Components|Media Player', module)
+  .addDecorator(withKnobs)
   .add(
     'Articles Canonical',
     () => (
@@ -35,7 +36,7 @@ storiesOf('Components|Media Player', module)
     ),
     { notes, knobs: { escapeHTML: false } },
   )
-  .addDecorator(withKnobs)
+
   .add(
     'MAP Canonical',
     () => (
@@ -126,8 +127,7 @@ storiesOf('Components|Media Player', module)
     ),
     { notes, knobs: { escapeHTML: false } },
   )
-  .addDecorator(withKnobs)
-  .addDecorator(withServicesKnob({ defaultService: 'ukrainian' }))
+  // .addDecorator(withServicesKnob({ defaultService: 'ukrainian' }))
   .add(
     'Media Message',
     ({ service }) => {
