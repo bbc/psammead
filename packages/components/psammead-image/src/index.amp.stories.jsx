@@ -8,7 +8,7 @@ const additionalProps = {
 
 stories(
   AmpImg,
-  'Components|Images/Image - AmpImg',
+  'Components/Images/Image - AmpImg',
   true,
   additionalProps,
   ampDecorator,

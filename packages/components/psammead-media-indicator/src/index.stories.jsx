@@ -25,7 +25,7 @@ const StyledHeadline = styled(Headline)`
 
 const PageDecorator = storyFn => <Page>{storyFn()}</Page>;
 
-storiesOf('Components|MediaIndicator/Video', module)
+storiesOf('Components/MediaIndicator/Video', module)
   .addDecorator(PageDecorator)
   .addDecorator(withKnobs)
   .addDecorator(withServicesKnob())
@@ -71,7 +71,7 @@ storiesOf('Components|MediaIndicator/Video', module)
     { notes },
   );
 
-storiesOf('Components|MediaIndicator/Audio', module)
+storiesOf('Components/MediaIndicator/Audio', module)
   .addDecorator(PageDecorator)
   .addDecorator(withKnobs)
   .addDecorator(withServicesKnob())
@@ -117,7 +117,7 @@ storiesOf('Components|MediaIndicator/Audio', module)
     { notes },
   );
 
-storiesOf('Components|MediaIndicator/Photo', module)
+storiesOf('Components/MediaIndicator/Photo', module)
   .addDecorator(PageDecorator)
   .addDecorator(withKnobs)
   .addDecorator(withServicesKnob())

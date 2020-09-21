@@ -199,7 +199,7 @@ const animationStory = (dir, script, service) => {
   );
 };
 
-const canonicalStories = storiesOf('Components|Navigation/Canonical', module)
+const canonicalStories = storiesOf('Components/Navigation/Canonical', module)
   .addDecorator(withKnobs)
   .addDecorator(withServicesKnob());
 
@@ -271,7 +271,7 @@ canonicalStories.add(
   },
 );
 
-const ampStories = storiesOf('Components|Navigation/AMP', module)
+const ampStories = storiesOf('Components/Navigation/AMP', module)
   .addDecorator(ampDecorator)
   .addDecorator(withKnobs)
   .addDecorator(ampDecorator)

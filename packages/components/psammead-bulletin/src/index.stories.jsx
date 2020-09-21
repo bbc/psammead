@@ -46,7 +46,7 @@ const BulletinComponent = ({
   );
 };
 
-storiesOf('Components|Bulletin', module)
+storiesOf('Components/Bulletin', module)
   .addDecorator(withKnobs)
   .addDecorator(withServicesKnob())
   .add(

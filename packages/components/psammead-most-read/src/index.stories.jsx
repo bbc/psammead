@@ -82,7 +82,7 @@ const renderRank = ({
   />
 );
 
-storiesOf('Components|MostRead/Rank', module)
+storiesOf('Components/MostRead/Rank', module)
   .addDecorator(withKnobs)
   .add(`default`, () =>
     newsServiceDecorator(
@@ -101,7 +101,7 @@ storiesOf('Components|MostRead/Rank', module)
     ),
   );
 
-storiesOf('Components|MostRead/Item', module)
+storiesOf('Components/MostRead/Item', module)
   .addDecorator(withKnobs)
   .addDecorator(withServicesKnob())
   .add(
@@ -119,7 +119,7 @@ storiesOf('Components|MostRead/Item', module)
     },
   );
 
-storiesOf('Components|MostRead/List', module)
+storiesOf('Components/MostRead/List', module)
   .addDecorator(withKnobs)
   .add(
     `default`,

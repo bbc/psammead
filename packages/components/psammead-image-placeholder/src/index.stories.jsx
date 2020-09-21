@@ -7,7 +7,7 @@ const landscapeImageRatio = 56.25;
 const squareImageRatio = 100;
 const portraitImageRatio = 177.78;
 
-storiesOf('Components|Images/ImagePlaceholder', module)
+storiesOf('Components/Images/ImagePlaceholder', module)
   .add(
     '16x9 image placeholder',
     () => <ImagePlaceholder ratio={landscapeImageRatio} />,

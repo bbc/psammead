@@ -7,7 +7,7 @@ import { withServicesKnob } from '@bbc/psammead-storybook-helpers';
 import notes from '../README.md';
 import Caption from '.';
 
-storiesOf('Components|Caption', module)
+storiesOf('Components/Caption', module)
   .addDecorator(withKnobs)
   .addDecorator(withServicesKnob())
   .add(
@@ -45,7 +45,7 @@ storiesOf('Components|Caption', module)
     { notes, knobs: { escapeHTML: false } },
   );
 
-storiesOf('Components|Caption', module)
+storiesOf('Components/Caption', module)
   .addDecorator(withKnobs)
   .addDecorator(withServicesKnob())
   .add(

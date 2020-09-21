@@ -21,7 +21,7 @@ const StyledMessageContainer = styled.div`
   overflow: hidden;
 `;
 
-storiesOf('Components|Media Player', module)
+storiesOf('Components/Media Player', module)
   .addDecorator(withKnobs)
   .add(
     'Articles Canonical',
@@ -144,7 +144,7 @@ storiesOf('Components|Media Player', module)
     },
   );
 
-storiesOf('Components|Media Player', module)
+storiesOf('Components/Media Player', module)
   .addDecorator(ampDecorator)
   .add(
     'AMP',

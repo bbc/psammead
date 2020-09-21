@@ -16,7 +16,7 @@ const links = (text, service) =>
     .map((el, n) => (service === 'news' ? `link ${n}` : `${text} ${n}`))
     .map(buildLink);
 
-storiesOf('Components|SitewideLinks', module)
+storiesOf('Components/SitewideLinks', module)
   .addDecorator(withKnobs)
   .addDecorator(withServicesKnob())
   .add(
