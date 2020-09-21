@@ -40,7 +40,10 @@
     "url": "https://github.com/bbc/psammead/issues"
   },
   "homepage": "https://github.com/bbc/psammead#readme",
-  "dependencies": {},
+  "dependencies": {
+    "@emotion/core": "^10.0.35",
+    "@emotion/styled": "^10.0.27"
+  },
   "devDependencies": {
     "@babel/cli": "^7.11.5",
     "@babel/core": "^7.11.1",
@@ -110,6 +113,7 @@
     "babel-eslint": "^10.1.0",
     "babel-loader": "^8.1.0",
     "babel-plugin-dynamic-import-node": "^2.3.3",
+    "babel-plugin-emotion": "^10.0.33",
     "browserslist": "^4.14.0",
     "chalk": "^4.1.0",
     "enquirer": "^2.3.6",
