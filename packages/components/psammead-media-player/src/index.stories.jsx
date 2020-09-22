@@ -3,7 +3,7 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { boolean, text, withKnobs } from '@storybook/addon-knobs';
 import styled from 'styled-components';
-// import { withServicesKnob } from '@bbc/psammead-storybook-helpers';
+import { withServicesKnob } from '@bbc/psammead-storybook-helpers';
 import { CanonicalMediaPlayer, AmpMediaPlayer } from '.';
 import MediaMessage from './Message';
 import { ampDecorator } from '../../../../.storybook/config';
@@ -126,8 +126,10 @@ storiesOf('Components/Media Player', module)
       />
     ),
     { notes, knobs: { escapeHTML: false } },
-  )
-  // .addDecorator(withServicesKnob({ defaultService: 'ukrainian' }))
+  );
+
+storiesOf('Components/Media Player', module)
+  .addDecorator(withServicesKnob({ defaultService: 'ukrainian' }))
   .add(
     'Media Message',
     ({ service }) => {
