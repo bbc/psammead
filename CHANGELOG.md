@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 2.4.5 | [PR#3772](https://github.com/bbc/psammead/pull/3772) Bump prettier to 2.1.2 |
 | 2.4.3 | [PR#3768](https://github.com/bbc/psammead/pull/3768) Update Node version |
 | 2.4.2 | [PR#3769](https://github.com/bbc/psammead/pull/3769) Add Emotion migration notice to README |
 | 2.4.1 | [PR#3767](https://github.com/bbc/psammead/pull/3767) Remove semver from resolutions and prevent `npm-force-resolutions` running in `npm ci` |
