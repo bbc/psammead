@@ -4,7 +4,7 @@ import { node, number, shape } from 'prop-types';
 import { storiesOf } from '@storybook/react';
 import { number as numberKnob, withKnobs } from '@storybook/addon-knobs';
 import { GEL_SPACING_DBL } from '@bbc/gel-foundations/spacings';
-import notes from '../README.md';
+
 import * as allSvgs from './svgs';
 
 const { coreIcons, mediaIcons, navigationIcons, ...svgs } = allSvgs;
@@ -67,14 +67,10 @@ const stories = storiesOf('UTILITIES/SVGS/Brand Svgs', module).addDecorator(
 Object.keys(svgs)
   .filter(svgName => !svgName.includes('BBC_BLOCKS'))
   .forEach(svgName => {
-    stories.add(
-      svgName,
-      () => {
-        const height = numberKnob('Height', 24);
-        return getSVG({ ...svgs[svgName], height });
-      },
-      { notes },
-    );
+    stories.add(svgName, () => {
+      const height = numberKnob('Height', 24);
+      return getSVG({ ...svgs[svgName], height });
+    });
   });
 
 const coreIconStories = storiesOf(
@@ -93,19 +89,15 @@ const navigationIconsStories = storiesOf(
 ).addDecorator(withKnobs);
 
 Object.keys(coreIcons).forEach(iconName => {
-  coreIconStories.add(iconName, () => coreIcons[iconName], { notes });
+  coreIconStories.add(iconName, () => coreIcons[iconName]);
 });
 
 Object.keys(mediaIcons).forEach(iconName => {
-  mediaIconStories.add(iconName, () => mediaIcons[iconName], { notes });
+  mediaIconStories.add(iconName, () => mediaIcons[iconName]);
 });
 
 Object.keys(navigationIcons).forEach(iconName => {
-  navigationIconsStories.add(
-    iconName,
-    () => <Container> {navigationIcons[iconName]} </Container>,
-    {
-      notes,
-    },
-  );
+  navigationIconsStories.add(iconName, () => (
+    <Container> {navigationIcons[iconName]} </Container>
+  ));
 });

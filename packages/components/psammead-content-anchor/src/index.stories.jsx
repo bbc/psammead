@@ -7,7 +7,7 @@ import { withKnobs } from '@storybook/addon-knobs';
 import Paragraph from '@bbc/psammead-paragraph';
 import { Headline } from '@bbc/psammead-headings';
 import { withServicesKnob } from '@bbc/psammead-storybook-helpers';
-import notes from '../README.md';
+
 import ContentAnchor from './index';
 
 const Wrapper = styled.div`
@@ -97,7 +97,7 @@ storiesOf('Components/ContentAnchor', module)
         </Wrapper>
       );
     },
-    { notes, chromatic: { disable: true } },
+    { chromatic: { disable: true } },
   )
   .add(
     'article with multiple dynamic resize components',
@@ -116,7 +116,7 @@ storiesOf('Components/ContentAnchor', module)
         </Wrapper>
       );
     },
-    { notes, chromatic: { disable: true } },
+    { chromatic: { disable: true } },
   )
   .add(
     'article with multiple time-staggered dynamic resize components',
@@ -135,7 +135,7 @@ storiesOf('Components/ContentAnchor', module)
         </Wrapper>
       );
     },
-    { notes, chromatic: { disable: true } },
+    { chromatic: { disable: true } },
   )
   .add(
     'multiple time-staggered dynamic resize components',
@@ -161,5 +161,5 @@ storiesOf('Components/ContentAnchor', module)
         </Wrapper>
       );
     },
-    { notes, chromatic: { disable: true } },
+    { chromatic: { disable: true } },
   );

@@ -2,7 +2,7 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { withKnobs } from '@storybook/addon-knobs';
 import { withServicesKnob } from '@bbc/psammead-storybook-helpers';
-import notes from '../README.md';
+
 import VisuallyHiddenText from './index';
 
 storiesOf('Components/VisuallyHiddenText', module)
@@ -15,5 +15,5 @@ storiesOf('Components/VisuallyHiddenText', module)
         {service === 'news' ? 'Visually hidden text' : text}
       </VisuallyHiddenText>
     ),
-    { notes, knobs: { escapeHTML: false } },
+    { knobs: { escapeHTML: false } },
   );

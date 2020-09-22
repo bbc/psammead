@@ -7,7 +7,6 @@ import { withServicesKnob } from '@bbc/psammead-storybook-helpers';
 import { CanonicalMediaPlayer, AmpMediaPlayer } from '.';
 import MediaMessage from './Message';
 import { ampDecorator } from '../../../../.storybook/config';
-import notes from '../README.md';
 
 const withDuration = {
   duration: '2:30',
@@ -34,7 +33,7 @@ storiesOf('Components/Media Player', module)
         title="Default Video player"
       />
     ),
-    { notes, knobs: { escapeHTML: false } },
+    { knobs: { escapeHTML: false } },
   )
 
   .add(
@@ -56,7 +55,7 @@ storiesOf('Components/Media Player', module)
         noJsClassName="no-js"
       />
     ),
-    { notes, knobs: { escapeHTML: false } },
+    { knobs: { escapeHTML: false } },
   )
   .add(
     'Guidance',
@@ -75,7 +74,7 @@ storiesOf('Components/Media Player', module)
         }}
       />
     ),
-    { notes, knobs: { escapeHTML: false } },
+    { knobs: { escapeHTML: false } },
   )
   .add(
     'Audio',
@@ -92,7 +91,7 @@ storiesOf('Components/Media Player', module)
         title="Video player"
       />
     ),
-    { notes, knobs: { escapeHTML: false } },
+    { knobs: { escapeHTML: false } },
   )
   .add(
     'Audio Skin',
@@ -107,7 +106,7 @@ storiesOf('Components/Media Player', module)
         title="Audio player"
       />
     ),
-    { notes, knobs: { escapeHTML: false } },
+    { knobs: { escapeHTML: false } },
   )
   .add(
     'With Callbacks',
@@ -125,7 +124,7 @@ storiesOf('Components/Media Player', module)
         onMediaPause={() => alert('Media Player Paused')}
       />
     ),
-    { notes, knobs: { escapeHTML: false } },
+    { knobs: { escapeHTML: false } },
   );
 
 storiesOf('Components/Media Player', module)
@@ -141,7 +140,6 @@ storiesOf('Components/Media Player', module)
       );
     },
     {
-      notes,
       knobs: { escapeHTML: false },
     },
   );
@@ -164,7 +162,7 @@ storiesOf('Components/Media Player', module)
         title="Video player"
       />
     ),
-    { notes, knobs: { escapeHTML: false } },
+    { knobs: { escapeHTML: false } },
   )
   .add(
     'Audio Skin AMP',
@@ -177,5 +175,5 @@ storiesOf('Components/Media Player', module)
         title="Audio player"
       />
     ),
-    { notes, knobs: { escapeHTML: false } },
+    { knobs: { escapeHTML: false } },
   );

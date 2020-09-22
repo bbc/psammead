@@ -10,7 +10,7 @@ import {
 } from '@storybook/addon-knobs';
 import moment from 'moment';
 import { jalaali } from '@bbc/psammead-calendars';
-import notes from '../README.md';
+
 import TimestampContainer from '.';
 
 // Fixed timestamp for 27 August 2019, 14:54 BST
@@ -104,83 +104,71 @@ const getTimestampValue = storyTimestamp => {
 storiesOf('Containers/TimestampContainer', module)
   .addDecorator(withKnobs)
   .addDecorator(withServicesKnob())
-  .add(
-    'default',
-    ({ locale, script, service }) => {
-      updateAllTimestamps();
-      const storyTimestamp = select(
-        'Timestamp',
-        timestamps,
-        timestamps['Fixed (27 Aug 2019)'],
-      );
-      const getAltCalendar = () =>
-        ({
-          fa: jalaali,
-          ps: jalaali,
-        }[locale]);
-      return (
-        <TimestampContainer
-          timestamp={getTimestampValue(storyTimestamp)}
-          dateTimeFormat="YYYY-MM-DD"
-          format={text('Format', 'D MMMM YYYY, HH:mm z')}
-          isRelative={boolean('isRelative', false)}
-          script={script}
-          locale={locale}
-          service={service}
-          altCalendar={getAltCalendar()}
-        />
-      );
-    },
-    { notes },
-  )
-  .add(
-    'with prefix',
-    ({ locale, script, service }) => {
-      updateAllTimestamps();
+  .add('default', ({ locale, script, service }) => {
+    updateAllTimestamps();
+    const storyTimestamp = select(
+      'Timestamp',
+      timestamps,
+      timestamps['Fixed (27 Aug 2019)'],
+    );
+    const getAltCalendar = () =>
+      ({
+        fa: jalaali,
+        ps: jalaali,
+      }[locale]);
+    return (
+      <TimestampContainer
+        timestamp={getTimestampValue(storyTimestamp)}
+        dateTimeFormat="YYYY-MM-DD"
+        format={text('Format', 'D MMMM YYYY, HH:mm z')}
+        isRelative={boolean('isRelative', false)}
+        script={script}
+        locale={locale}
+        service={service}
+        altCalendar={getAltCalendar()}
+      />
+    );
+  })
+  .add('with prefix', ({ locale, script, service }) => {
+    updateAllTimestamps();
 
-      const storyTimestamp = select(
-        'Timestamp',
-        timestamps,
-        timestamps['Fixed (27 Aug 2019)'],
-      );
-      return (
-        <TimestampContainer
-          timestamp={getTimestampValue(storyTimestamp)}
-          dateTimeFormat="YYYY-MM-DD"
-          format={text('Format', 'D MMMM YYYY, HH:mm z')}
-          isRelative={boolean('isRelative', false)}
-          prefix={text('Prefix text', 'Updated')}
-          script={script}
-          locale={locale}
-          service={service}
-        />
-      );
-    },
-    { notes },
-  )
-  .add(
-    'with prefix and suffix',
-    ({ locale, script, service }) => {
-      updateAllTimestamps();
+    const storyTimestamp = select(
+      'Timestamp',
+      timestamps,
+      timestamps['Fixed (27 Aug 2019)'],
+    );
+    return (
+      <TimestampContainer
+        timestamp={getTimestampValue(storyTimestamp)}
+        dateTimeFormat="YYYY-MM-DD"
+        format={text('Format', 'D MMMM YYYY, HH:mm z')}
+        isRelative={boolean('isRelative', false)}
+        prefix={text('Prefix text', 'Updated')}
+        script={script}
+        locale={locale}
+        service={service}
+      />
+    );
+  })
+  .add('with prefix and suffix', ({ locale, script, service }) => {
+    updateAllTimestamps();
 
-      const storyTimestamp = select(
-        'Timestamp',
-        timestamps,
-        timestamps['Fixed (27 Aug 2019)'],
-      );
-      return (
-        <TimestampContainer
-          timestamp={getTimestampValue(storyTimestamp)}
-          dateTimeFormat="YYYY-MM-DD"
-          format={text('Format', 'D MMMM YYYY, HH:mm z')}
-          isRelative={boolean('isRelative', false)}
-          prefix={text('Prefix text', 'This')}
-          suffix={text('Suffix text', 'is date of last update')}
-          script={script}
-          locale={locale}
-          service={service}
-        />
-      );
-    },
-    { notes },
-  );
+    const storyTimestamp = select(
+      'Timestamp',
+      timestamps,
+      timestamps['Fixed (27 Aug 2019)'],
+    );
+    return (
+      <TimestampContainer
+        timestamp={getTimestampValue(storyTimestamp)}
+        dateTimeFormat="YYYY-MM-DD"
+        format={text('Format', 'D MMMM YYYY, HH:mm z')}
+        isRelative={boolean('isRelative', false)}
+        prefix={text('Prefix text', 'This')}
+        suffix={text('Suffix text', 'is date of last update')}
+        script={script}
+        locale={locale}
+        service={service}
+      />
+    );
+  });

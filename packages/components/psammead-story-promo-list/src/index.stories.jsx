@@ -8,7 +8,6 @@ import StoryPromo, { Headline, Summary, Link } from '@bbc/psammead-story-promo';
 import Grid from '@bbc/psammead-grid';
 import { StoryPromoLi, StoryPromoLiBase, StoryPromoUl } from './index';
 import storyPromoData from '../testHelpers/fixtureData';
-import notes from '../README.md';
 
 // eslint-disable-next-line react/prop-types
 const ImageComponent = ({ alt, src }) => (
@@ -37,37 +36,33 @@ const InfoComponent = ({ headlineText, summaryText, datetime, dateformat }) => (
 
 storiesOf('Components/StoryPromo/StoryPromoList', module)
   .addDecorator(withKnobs)
-  .add(
-    'default',
-    () => (
-      <StoryPromoUl>
-        {storyPromoData.map(item => {
-          const ImagePromo = (
-            <ImageComponent src={item.image.src} alt={item.image.alt} />
-          );
+  .add('default', () => (
+    <StoryPromoUl>
+      {storyPromoData.map(item => {
+        const ImagePromo = (
+          <ImageComponent src={item.image.src} alt={item.image.alt} />
+        );
 
-          const InfoPromo = (
-            <InfoComponent
-              headlineText={item.info.headline}
-              summaryText={item.info.summary}
-              datetime={item.info.datetime}
-              dateformat={item.info.dateformat}
-            />
-          );
+        const InfoPromo = (
+          <InfoComponent
+            headlineText={item.info.headline}
+            summaryText={item.info.summary}
+            datetime={item.info.datetime}
+            dateformat={item.info.dateformat}
+          />
+        );
 
-          return (
-            <StoryPromoLi
-              key={item.info.headline}
-              border={boolean('show border?', true)}
-            >
-              <StoryPromo image={ImagePromo} info={InfoPromo} />
-            </StoryPromoLi>
-          );
-        })}
-      </StoryPromoUl>
-    ),
-    { notes },
-  )
+        return (
+          <StoryPromoLi
+            key={item.info.headline}
+            border={boolean('show border?', true)}
+          >
+            <StoryPromo image={ImagePromo} info={InfoPromo} />
+          </StoryPromoLi>
+        );
+      })}
+    </StoryPromoUl>
+  ))
   .add('Example with promos without image', ({ dir }) => {
     const parentGridColumns = {
       group0: 6,
@@ -120,34 +115,30 @@ storiesOf('Components/StoryPromo/StoryPromoList', module)
 
 storiesOf('Components/StoryPromo/StoryPromoListBase', module)
   .addDecorator(withKnobs)
-  .add(
-    'default',
-    () => (
-      <StoryPromoUl>
-        {storyPromoData.map(item => {
-          const ImagePromo = (
-            <ImageComponent src={item.image.src} alt={item.image.alt} />
-          );
+  .add('default', () => (
+    <StoryPromoUl>
+      {storyPromoData.map(item => {
+        const ImagePromo = (
+          <ImageComponent src={item.image.src} alt={item.image.alt} />
+        );
 
-          const InfoPromo = (
-            <InfoComponent
-              headlineText={item.info.headline}
-              summaryText={item.info.summary}
-              datetime={item.info.datetime}
-              dateformat={item.info.dateformat}
-            />
-          );
+        const InfoPromo = (
+          <InfoComponent
+            headlineText={item.info.headline}
+            summaryText={item.info.summary}
+            datetime={item.info.datetime}
+            dateformat={item.info.dateformat}
+          />
+        );
 
-          return (
-            <StoryPromoLiBase
-              key={item.info.headline}
-              border={boolean('show border?', true)}
-            >
-              <StoryPromo image={ImagePromo} info={InfoPromo} />
-            </StoryPromoLiBase>
-          );
-        })}
-      </StoryPromoUl>
-    ),
-    { notes },
-  );
+        return (
+          <StoryPromoLiBase
+            key={item.info.headline}
+            border={boolean('show border?', true)}
+          >
+            <StoryPromo image={ImagePromo} info={InfoPromo} />
+          </StoryPromoLiBase>
+        );
+      })}
+    </StoryPromoUl>
+  ));

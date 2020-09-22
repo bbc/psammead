@@ -6,7 +6,7 @@ import { withServicesKnob } from '@bbc/psammead-storybook-helpers';
 import { C_CLOUD_LIGHT } from '@bbc/psammead-styles/colours';
 import { GEL_SPACING_HLF } from '@bbc/gel-foundations/spacings';
 import { Headline, Link } from '@bbc/psammead-story-promo';
-import notes from '../README.md';
+
 import MediaIndicator from './index';
 
 // To ensure the white box in the media indicator is visible.
@@ -29,29 +29,16 @@ storiesOf('Components/MediaIndicator/Video', module)
   .addDecorator(PageDecorator)
   .addDecorator(withKnobs)
   .addDecorator(withServicesKnob())
-  .add(
-    'video without duration',
-    ({ script, service, dir }) => (
-      <MediaIndicator
-        type="video"
-        script={script}
-        dir={dir}
-        service={service}
-      />
-    ),
-    { notes },
-  )
-  .add(
-    'video with duration',
-    ({ script, service, dir }) => (
-      <MediaIndicator type="video" script={script} service={service} dir={dir}>
-        <TimeDuration dateTime={text('datetime', 'PT2M15S')}>
-          {text('duration', '2:15')}
-        </TimeDuration>
-      </MediaIndicator>
-    ),
-    { notes },
-  )
+  .add('video without duration', ({ script, service, dir }) => (
+    <MediaIndicator type="video" script={script} dir={dir} service={service} />
+  ))
+  .add('video with duration', ({ script, service, dir }) => (
+    <MediaIndicator type="video" script={script} service={service} dir={dir}>
+      <TimeDuration dateTime={text('datetime', 'PT2M15S')}>
+        {text('duration', '2:15')}
+      </TimeDuration>
+    </MediaIndicator>
+  ))
   .add(
     'inline video media indicator with headline',
     ({ longText: textSnippet, script, service, dir }) => (
@@ -68,36 +55,22 @@ storiesOf('Components/MediaIndicator/Video', module)
         </StyledHeadline>
       </>
     ),
-    { notes },
   );
 
 storiesOf('Components/MediaIndicator/Audio', module)
   .addDecorator(PageDecorator)
   .addDecorator(withKnobs)
   .addDecorator(withServicesKnob())
-  .add(
-    'audio without duration',
-    ({ script, service, dir }) => (
-      <MediaIndicator
-        type="audio"
-        script={script}
-        service={service}
-        dir={dir}
-      />
-    ),
-    { notes },
-  )
-  .add(
-    'audio with duration',
-    ({ script, service, dir }) => (
-      <MediaIndicator type="audio" script={script} service={service} dir={dir}>
-        <time dateTime={text('datetime', 'PT2M15S')}>
-          {text('duration', '2:15')}
-        </time>
-      </MediaIndicator>
-    ),
-    { notes },
-  )
+  .add('audio without duration', ({ script, service, dir }) => (
+    <MediaIndicator type="audio" script={script} service={service} dir={dir} />
+  ))
+  .add('audio with duration', ({ script, service, dir }) => (
+    <MediaIndicator type="audio" script={script} service={service} dir={dir}>
+      <time dateTime={text('datetime', 'PT2M15S')}>
+        {text('duration', '2:15')}
+      </time>
+    </MediaIndicator>
+  ))
   .add(
     'inline audio media indicator with headline',
     ({ longText: textSnippet, script, service, dir }) => (
@@ -114,25 +87,20 @@ storiesOf('Components/MediaIndicator/Audio', module)
         </StyledHeadline>
       </>
     ),
-    { notes },
   );
 
 storiesOf('Components/MediaIndicator/Photo', module)
   .addDecorator(PageDecorator)
   .addDecorator(withKnobs)
   .addDecorator(withServicesKnob())
-  .add(
-    'photogallery',
-    ({ script, service, dir }) => (
-      <MediaIndicator
-        type="photogallery"
-        script={script}
-        service={service}
-        dir={dir}
-      />
-    ),
-    { notes },
-  )
+  .add('photogallery', ({ script, service, dir }) => (
+    <MediaIndicator
+      type="photogallery"
+      script={script}
+      service={service}
+      dir={dir}
+    />
+  ))
   .add(
     'inline photogallery with headline',
     ({ longText: textSnippet, script, service, dir }) => (
@@ -149,5 +117,4 @@ storiesOf('Components/MediaIndicator/Photo', module)
         </StyledHeadline>
       </>
     ),
-    { notes },
   );

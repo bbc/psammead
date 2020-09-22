@@ -11,7 +11,7 @@ import {
   getSansBoldItalic,
 } from '@bbc/psammead-styles/font-styles';
 import { C_POSTBOX } from '@bbc/psammead-styles/colours';
-import notes from '../README.md';
+
 import InlineLink from './index';
 
 const RegularParagraph = styled.p`
@@ -71,7 +71,7 @@ storiesOf('Components/InlineLink', module)
         https://github.com/bbc/psammead/issues/733
       </>
     ),
-    { notes, knobs: { escapeHTML: false } },
+    { knobs: { escapeHTML: false } },
   )
   .add(
     'inline-link inside a regular paragraph',
@@ -80,7 +80,7 @@ storiesOf('Components/InlineLink', module)
         {renderWrappedInlineLink({ longText, text })}
       </RegularParagraph>
     ),
-    { notes, knobs: { escapeHTML: false } },
+    { knobs: { escapeHTML: false } },
   )
   .add(
     'inline-link inside a bold paragraph',
@@ -89,7 +89,7 @@ storiesOf('Components/InlineLink', module)
         {renderWrappedInlineLink({ longText, text })}
       </BoldParagraph>
     ),
-    { notes, knobs: { escapeHTML: false } },
+    { knobs: { escapeHTML: false } },
   )
   .add(
     'inline-link inside a italic paragraph',
@@ -98,7 +98,7 @@ storiesOf('Components/InlineLink', module)
         {renderWrappedInlineLink({ longText, text })}
       </ItalicParagraph>
     ),
-    { notes, knobs: { escapeHTML: false } },
+    { knobs: { escapeHTML: false } },
   )
   .add(
     'inline-link inside a bold and italic paragraph',
@@ -107,7 +107,7 @@ storiesOf('Components/InlineLink', module)
         {renderWrappedInlineLink({ longText, text })}
       </BoldItalicParagraph>
     ),
-    { notes, knobs: { escapeHTML: false } },
+    { knobs: { escapeHTML: false } },
   )
   .add(
     'experimental styled inline link with text-decoration style',
@@ -137,5 +137,5 @@ storiesOf('Components/InlineLink', module)
         of this issue: https://github.com/bbc/psammead/issues/2706
       </>
     ),
-    { notes, knobs: { escapeHTML: false } },
+    { knobs: { escapeHTML: false } },
   );

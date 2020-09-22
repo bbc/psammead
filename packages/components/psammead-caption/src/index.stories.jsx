@@ -4,7 +4,7 @@ import { withKnobs } from '@storybook/addon-knobs';
 import InlineLink from '@bbc/psammead-inline-link';
 import VisuallyHiddenText from '@bbc/psammead-visually-hidden-text';
 import { withServicesKnob } from '@bbc/psammead-storybook-helpers';
-import notes from '../README.md';
+
 import Caption from '.';
 
 storiesOf('Components/Caption', module)
@@ -17,7 +17,7 @@ storiesOf('Components/Caption', module)
         {text}
       </Caption>
     ),
-    { notes, knobs: { escapeHTML: false } },
+    { knobs: { escapeHTML: false } },
   )
   .add(
     'with offscreen text',
@@ -29,7 +29,7 @@ storiesOf('Components/Caption', module)
         {service === 'news' ? 'caption' : text}
       </Caption>
     ),
-    { notes, knobs: { escapeHTML: false } },
+    { knobs: { escapeHTML: false } },
   )
   .add(
     'containing an inline link',
@@ -42,7 +42,7 @@ storiesOf('Components/Caption', module)
         {` ${service === 'news' ? 'caption' : text} `}
       </Caption>
     ),
-    { notes, knobs: { escapeHTML: false } },
+    { knobs: { escapeHTML: false } },
   );
 
 storiesOf('Components/Caption', module)
@@ -55,7 +55,7 @@ storiesOf('Components/Caption', module)
         Example text with <i>italics</i>
       </Caption>
     ),
-    { notes, knobs: { escapeHTML: false } },
+    { knobs: { escapeHTML: false } },
   )
   .add(
     'containing multiple paragraphs',
@@ -67,5 +67,5 @@ storiesOf('Components/Caption', module)
         </p>
       </Caption>
     ),
-    { notes, knobs: { escapeHTML: false } },
+    { knobs: { escapeHTML: false } },
   );

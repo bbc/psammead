@@ -2,7 +2,7 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { withKnobs, select, text } from '@storybook/addon-knobs';
 import VisuallyHiddenText from '@bbc/psammead-visually-hidden-text';
-import notes from '../README.md';
+
 import Copyright from './index';
 
 storiesOf('Components/Copyright', module)
@@ -17,7 +17,7 @@ storiesOf('Components/Copyright', module)
         </Copyright>
       );
     },
-    { notes, knobs: { escapeHTML: false } },
+    { knobs: { escapeHTML: false } },
   )
   .add(
     'with visually hidden text',
@@ -32,5 +32,5 @@ storiesOf('Components/Copyright', module)
         </Copyright>
       );
     },
-    { notes, knobs: { escapeHTML: false } },
+    { knobs: { escapeHTML: false } },
   );

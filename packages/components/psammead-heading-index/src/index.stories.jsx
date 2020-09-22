@@ -2,7 +2,7 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { text, withKnobs } from '@storybook/addon-knobs';
 import { withServicesKnob } from '@bbc/psammead-storybook-helpers';
-import notes from '../README.md';
+
 import HeadingIndex from './index';
 
 storiesOf('Components/Index Heading', module)
@@ -15,7 +15,7 @@ storiesOf('Components/Index Heading', module)
         {textSnippet}
       </HeadingIndex>
     ),
-    { notes, knobs: { escapeHTML: false } },
+    { knobs: { escapeHTML: false } },
   )
   .add(
     'with optional ID',
@@ -27,5 +27,5 @@ storiesOf('Components/Index Heading', module)
         </HeadingIndex>
       );
     },
-    { notes, knobs: { escapeHTML: false } },
+    { knobs: { escapeHTML: false } },
   );

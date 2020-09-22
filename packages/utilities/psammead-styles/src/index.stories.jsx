@@ -16,7 +16,7 @@ import {
   getSansRegularItalic,
   getSansBoldItalic,
 } from '@bbc/psammead-styles/font-styles';
-import notes from '../README.md';
+
 import * as colours from './colours';
 import { grid } from './detection';
 import * as fonts from './fonts';
@@ -117,7 +117,7 @@ storiesOf('Utilities/Psammead Styles', module)
         </Paragraph>
       );
     },
-    { notes, knobs: { escapeHTML: false } },
+    { knobs: { escapeHTML: false } },
   )
   .add(
     'fonts per service - Regular, RegularItalic, Bold, BoldItalic',
@@ -139,32 +139,24 @@ storiesOf('Utilities/Psammead Styles', module)
         </div>
       );
     },
-    { notes, knobs: { escapeHTML: false } },
+    { knobs: { escapeHTML: false } },
   )
-  .add(
-    'colours',
-    () => (
-      <ColourContainer>
-        {Object.keys(colours).map(colour => (
-          <ColourRow key={colours[colour]}>
-            <ColourBox colour={colours[colour]}>{colours[colour]}</ColourBox>
-            <ColourValue>{colour}</ColourValue>
-          </ColourRow>
-        ))}
-      </ColourContainer>
-    ),
-    { notes },
-  )
-  .add(
-    'CSS feature detection',
-    () => (
-      <ul>
-        {detectionExamples.map(ex => (
-          <Detects key={ex} detector={ex}>
-            <pre>@supports ({ex})</pre>
-          </Detects>
-        ))}
-      </ul>
-    ),
-    { notes },
-  );
+  .add('colours', () => (
+    <ColourContainer>
+      {Object.keys(colours).map(colour => (
+        <ColourRow key={colours[colour]}>
+          <ColourBox colour={colours[colour]}>{colours[colour]}</ColourBox>
+          <ColourValue>{colour}</ColourValue>
+        </ColourRow>
+      ))}
+    </ColourContainer>
+  ))
+  .add('CSS feature detection', () => (
+    <ul>
+      {detectionExamples.map(ex => (
+        <Detects key={ex} detector={ex}>
+          <pre>@supports ({ex})</pre>
+        </Detects>
+      ))}
+    </ul>
+  ));

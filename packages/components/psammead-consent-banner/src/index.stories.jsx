@@ -7,7 +7,6 @@ import {
 } from '@bbc/psammead-storybook-helpers';
 import { oneOf, string } from 'prop-types';
 import { ConsentBanner, ConsentBannerText } from '.';
-import notes from '../README.md';
 
 const Accept = acceptText => (
   <button onClick={() => {}} type="button">
@@ -68,7 +67,7 @@ storiesOf(STORY_KIND, module)
         />
       );
     },
-    { notes, knobs: { escapeHTML: false } },
+    { knobs: { escapeHTML: false } },
   );
 
 buildRTLSubstories(STORY_KIND, { include: ['default'] });

@@ -5,7 +5,6 @@ import { select, boolean, number, withKnobs } from '@storybook/addon-knobs';
 import { withServicesKnob } from '@bbc/psammead-storybook-helpers';
 import { getItem, getItemWrapperArray } from './utilities';
 import { MostReadRank, MostReadLink, MostReadList } from './index';
-import notes from '../README.md';
 
 const newsServiceDecorator = withServicesKnob({
   defaultService: 'news',
@@ -85,57 +84,43 @@ const renderRank = ({
 storiesOf('Components/MostRead/Rank', module)
   .addDecorator(withKnobs)
   .add(`default`, () =>
-    newsServiceDecorator(
-      ({ dir, script, service }) =>
-        renderRank({
-          dir,
-          service,
-          script,
-          listIndex: number('Number (1 - 10)', 5, listIndexRange),
-          numberOfItems: 10,
-          size: select('Size', sizes, 'default'),
-        }),
-      {
-        notes,
-      },
+    newsServiceDecorator(({ dir, script, service }) =>
+      renderRank({
+        dir,
+        service,
+        script,
+        listIndex: number('Number (1 - 10)', 5, listIndexRange),
+        numberOfItems: 10,
+        size: select('Size', sizes, 'default'),
+      }),
     ),
   );
 
 storiesOf('Components/MostRead/Item', module)
   .addDecorator(withKnobs)
   .addDecorator(withServicesKnob())
-  .add(
-    `default`,
-    ({ dir, script, selectedService }) =>
-      renderLink({
-        dir,
-        script,
-        service: selectedService,
-        withTimestamp: boolean('Timestamp', false),
-        size: select('Size', sizes, 'default'),
-      }),
-    {
-      notes,
-    },
+  .add(`default`, ({ dir, script, selectedService }) =>
+    renderLink({
+      dir,
+      script,
+      service: selectedService,
+      withTimestamp: boolean('Timestamp', false),
+      size: select('Size', sizes, 'default'),
+    }),
   );
 
 storiesOf('Components/MostRead/List', module)
   .addDecorator(withKnobs)
-  .add(
-    `default`,
-    () =>
-      newsServiceDecorator(({ dir, script, selectedService }) =>
-        renderList({
-          numberOfItems: number('Number (1 - 10)', 10, listIndexRange),
-          columnLayout: select('Page Type (columns)', pageTypes, 'multiColumn'),
-          withTimestamp: boolean('Timestamp', false),
-          service: selectedService,
-          dir,
-          script,
-          size: select('Size', sizes, 'default'),
-        }),
-      ),
-    {
-      notes,
-    },
+  .add(`default`, () =>
+    newsServiceDecorator(({ dir, script, selectedService }) =>
+      renderList({
+        numberOfItems: number('Number (1 - 10)', 10, listIndexRange),
+        columnLayout: select('Page Type (columns)', pageTypes, 'multiColumn'),
+        withTimestamp: boolean('Timestamp', false),
+        service: selectedService,
+        dir,
+        script,
+        size: select('Size', sizes, 'default'),
+      }),
+    ),
   );

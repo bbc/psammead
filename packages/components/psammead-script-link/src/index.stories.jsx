@@ -4,7 +4,7 @@ import { withKnobs, text } from '@storybook/addon-knobs';
 import styled from 'styled-components';
 import { withServicesKnob } from '@bbc/psammead-storybook-helpers';
 import { GEL_SPACING_DBL } from '@bbc/gel-foundations/spacings';
-import notes from '../README.md';
+
 import ScriptLink from './index';
 
 const Container = styled.div`
@@ -16,26 +16,20 @@ const Container = styled.div`
 storiesOf('Components/ScriptLink', module)
   .addDecorator(withKnobs)
   .addDecorator(withServicesKnob())
-  .add(
-    'default',
-    ({ script, service }) => {
-      const label = text('Link Label', 'Lat');
-      const variant = text('Variant', 'lat');
+  .add('default', ({ script, service }) => {
+    const label = text('Link Label', 'Lat');
+    const variant = text('Variant', 'lat');
 
-      return (
-        <Container>
-          <ScriptLink
-            script={script}
-            service={service}
-            href="https://www.bbc.com/serbian/lat"
-            variant={variant}
-          >
-            {label}
-          </ScriptLink>
-        </Container>
-      );
-    },
-    {
-      notes,
-    },
-  );
+    return (
+      <Container>
+        <ScriptLink
+          script={script}
+          service={service}
+          href="https://www.bbc.com/serbian/lat"
+          variant={variant}
+        >
+          {label}
+        </ScriptLink>
+      </Container>
+    );
+  });

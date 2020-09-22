@@ -6,7 +6,6 @@ import * as typographies from '@bbc/gel-foundations/typography';
 import { withServicesKnob } from '@bbc/psammead-storybook-helpers';
 import { scriptPropType } from '@bbc/gel-foundations/prop-types';
 import styled from 'styled-components';
-import notes from '../README.md';
 
 const TypographyText = styled.p`
   ${props =>
@@ -37,6 +36,6 @@ Object.keys(typographies)
       typographyName.replace(/^get/, ''),
       ({ text, script }) =>
         typographyStory(typographies[typographyName], text, script),
-      { notes, knobs: { escapeHTML: false } },
+      { knobs: { escapeHTML: false } },
     );
   });

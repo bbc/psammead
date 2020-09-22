@@ -9,7 +9,7 @@ import {
   GEL_SPACING_DBL,
 } from '@bbc/gel-foundations/spacings';
 import { GEL_FF_REITH_SANS } from '@bbc/gel-foundations/typography';
-import notes from '../README.md';
+
 import './am';
 import './ar';
 import './az';
@@ -201,7 +201,6 @@ locales.forEach(({ name, locale, dir }) => {
       </>
     ),
     {
-      notes,
       chromatic: { disable: true },
     }
   );

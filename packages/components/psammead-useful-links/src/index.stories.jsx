@@ -3,7 +3,6 @@ import { storiesOf } from '@storybook/react';
 import { withKnobs } from '@storybook/addon-knobs';
 import { withServicesKnob } from '@bbc/psammead-storybook-helpers';
 import { UsefulLink, UsefulLinksLi, UsefulLinksUl } from './index';
-import notes from '../README.md';
 
 const usefulCaptions = [
   {
@@ -43,7 +42,6 @@ storiesOf('Components/UsefulLinks', module)
       </UsefulLink>
     ),
     {
-      notes,
       knobs: { escapeHTML: false },
     },
   )
@@ -63,7 +61,6 @@ storiesOf('Components/UsefulLinks', module)
       </UsefulLinksUl>
     ),
     {
-      notes,
       knobs: { escapeHTML: false },
     },
   );

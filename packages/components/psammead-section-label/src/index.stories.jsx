@@ -5,7 +5,7 @@ import {
   withServicesKnob,
   buildRTLSubstories,
 } from '@bbc/psammead-storybook-helpers';
-import notes from '../README.md';
+
 import SectionLabel from './index';
 
 const STORY_KIND = 'Components/SectionLabel';
@@ -35,7 +35,7 @@ storiesOf(STORY_KIND, module)
         {service === 'news' ? 'Most Read' : text}
       </SectionLabel>
     ),
-    { notes, knobs: { escapeHTML: false } },
+    { knobs: { escapeHTML: false } },
   )
   .add(
     'with heading overriden to be a strong element',
@@ -55,7 +55,7 @@ storiesOf(STORY_KIND, module)
         {service === 'news' ? 'Most Read' : text}
       </SectionLabel>
     ),
-    { notes, knobs: { escapeHTML: false } },
+    { knobs: { escapeHTML: false } },
   )
   .add(
     'with a link',
@@ -76,7 +76,7 @@ storiesOf(STORY_KIND, module)
         {service === 'news' ? 'Most Read' : text}
       </SectionLabel>
     ),
-    { notes, knobs: { escapeHTML: false } },
+    { knobs: { escapeHTML: false } },
   );
 
 buildRTLSubstories(STORY_KIND, {

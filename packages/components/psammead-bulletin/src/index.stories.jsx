@@ -3,7 +3,7 @@ import { withKnobs, boolean } from '@storybook/addon-knobs';
 import { storiesOf } from '@storybook/react';
 import { withServicesKnob } from '@bbc/psammead-storybook-helpers';
 import Image from '@bbc/psammead-image';
-import notes from '../README.md';
+
 import Bulletin from '.';
 
 /* eslint-disable react/prop-types */
@@ -49,35 +49,27 @@ const BulletinComponent = ({
 storiesOf('Components/Bulletin', module)
   .addDecorator(withKnobs)
   .addDecorator(withServicesKnob())
-  .add(
-    'Tv Bulletin',
-    ({ text: textSnipet, script, service, dir }) => (
+  .add('Tv Bulletin', ({ text: textSnipet, script, service, dir }) => (
+    <BulletinComponent
+      script={script}
+      service={service}
+      dir={dir}
+      mediaType="video"
+      hasImage
+      text={textSnipet}
+    />
+  ))
+  .add('Radio Bulletin', ({ text: textSnipet, script, service, dir }) => {
+    const hasImage = boolean('With Image', true);
+
+    return (
       <BulletinComponent
         script={script}
         service={service}
         dir={dir}
-        mediaType="video"
-        hasImage
+        mediaType="audio"
+        hasImage={hasImage}
         text={textSnipet}
       />
-    ),
-    { notes },
-  )
-  .add(
-    'Radio Bulletin',
-    ({ text: textSnipet, script, service, dir }) => {
-      const hasImage = boolean('With Image', true);
-
-      return (
-        <BulletinComponent
-          script={script}
-          service={service}
-          dir={dir}
-          mediaType="audio"
-          hasImage={hasImage}
-          text={textSnipet}
-        />
-      );
-    },
-    { notes },
-  );
+    );
+  });

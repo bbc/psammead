@@ -2,7 +2,7 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { withKnobs, text, boolean } from '@storybook/addon-knobs';
 import { withServicesKnob } from '@bbc/psammead-storybook-helpers';
-import notes from '../README.md';
+
 import EmbedError from './index';
 
 storiesOf('Components/EmbedError', module)
@@ -24,7 +24,7 @@ storiesOf('Components/EmbedError', module)
         fillViewport={boolean('fillViewport', false)}
       />
     ),
-    { notes, knobs: { escapeHTML: false } },
+    { knobs: { escapeHTML: false } },
   )
   .add(
     'with link',
@@ -45,5 +45,5 @@ storiesOf('Components/EmbedError', module)
         fillViewport={boolean('fillViewport', false)}
       />
     ),
-    { notes, knobs: { escapeHTML: false } },
+    { knobs: { escapeHTML: false } },
   );

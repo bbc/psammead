@@ -12,7 +12,6 @@ import { GEL_SPACING_HLF } from '@bbc/gel-foundations/spacings';
 import StoryPromo, { Headline, Summary, Link } from './index';
 import relatedItems from '../testHelpers/relatedItems';
 import IndexAlsosContainer from '../testHelpers/IndexAlsosContainer';
-import notes from '../README.md';
 
 const buildImg = () => (
   <Image
@@ -232,26 +231,22 @@ storiesOf('Components/StoryPromo/StoryPromo', module)
   .addDecorator(withKnobs)
   .addDecorator(withServicesKnob())
   .add('Regular promo', generateStory({ promoType: 'regular' }), {
-    notes,
     knobs: { escapeHTML: false },
   })
   .add(
     'Regular promo - No image',
     generateStory({ promoType: 'regular', displayImage: false }),
     {
-      notes,
       knobs: { escapeHTML: false },
     },
   )
   .add('Top story promo', generateStory({ promoType: 'top' }), {
-    notes,
     knobs: { escapeHTML: false },
   })
   .add(
     'Top story promo - Index Alsos - multiple',
     generateStory({ promoType: 'top', alsoItems: relatedItems }),
     {
-      notes,
       knobs: { escapeHTML: false },
     },
   )
@@ -259,15 +254,12 @@ storiesOf('Components/StoryPromo/StoryPromo', module)
     'Top story promo - Index Alsos - one',
     generateStory({ promoType: 'top', alsoItems: [relatedItems[0]] }),
     {
-      notes,
       knobs: { escapeHTML: false },
     },
   )
   .add('Leading promo', generateStory({ promoType: 'leading' }), {
-    notes,
     knobs: { escapeHTML: false },
   })
   .add('Leading promo and regular promo', generate2FeatureStory(), {
-    notes,
     knobs: { escapeHTML: false },
   });

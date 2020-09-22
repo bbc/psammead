@@ -2,7 +2,7 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { withKnobs } from '@storybook/addon-knobs';
 import { withServicesKnob } from '@bbc/psammead-storybook-helpers';
-import notes from '../README.md';
+
 import SitewideLinks from './index';
 
 const buildLink = text => ({
@@ -29,7 +29,7 @@ storiesOf('Components/SitewideLinks', module)
         service={service}
       />
     ),
-    { notes, knobs: { escapeHTML: false } },
+    { knobs: { escapeHTML: false } },
   )
   .add(
     'with Trust Project Link',
@@ -45,5 +45,5 @@ storiesOf('Components/SitewideLinks', module)
         service={service}
       />
     ),
-    { notes, knobs: { escapeHTML: false } },
+    { knobs: { escapeHTML: false } },
   );

@@ -10,7 +10,7 @@ import {
   renderRadioSchedule,
   uniqueStates,
 } from './testHelpers/helper';
-import notes from '../README.md';
+
 import StartTime from './StartTime';
 
 const storiesUnixTimestamp = 1566914061212;
@@ -20,14 +20,10 @@ const radioScheduleStories = storiesOf(RADIO_SCHEDULE_STORIES, module)
   .addDecorator(withKnobs)
   .addDecorator(withServicesKnob());
 
-radioScheduleStories.add('default', props => renderRadioSchedule(props), {
-  notes,
-});
+radioScheduleStories.add('default', props => renderRadioSchedule(props), {});
 
-radioScheduleStories.add(
-  'Schedule with different heights',
-  props => renderRadioSchedule({ ...props, withLongSummary: true }),
-  { notes },
+radioScheduleStories.add('Schedule with different heights', props =>
+  renderRadioSchedule({ ...props, withLongSummary: true }),
 );
 
 buildRTLSubstories(RADIO_SCHEDULE_STORIES, {
@@ -40,14 +36,11 @@ const programCardStories = storiesOf(PROGRAM_CARD_STORIES, module).addDecorator(
 );
 
 uniqueStates.forEach(state => {
-  programCardStories.add(
-    `${state}`,
-    ({ service }) =>
-      renderProgramCard({
-        service,
-        state,
-      }),
-    { notes },
+  programCardStories.add(`${state}`, ({ service }) =>
+    renderProgramCard({
+      service,
+      state,
+    }),
   );
 });
 
@@ -58,19 +51,15 @@ buildRTLSubstories(PROGRAM_CARD_STORIES, {
 storiesOf('Components/RadioSchedule/StartTime', module)
   .addDecorator(withKnobs)
   .addDecorator(withServicesKnob())
-  .add(
-    'default',
-    ({ locale, script, service, dir, timezone = 'GMT' }) => {
-      return (
-        <StartTime
-          timestamp={storiesUnixTimestamp}
-          timezone={timezone}
-          locale={locale}
-          script={script}
-          service={service}
-          dir={dir}
-        />
-      );
-    },
-    { notes },
-  );
+  .add('default', ({ locale, script, service, dir, timezone = 'GMT' }) => {
+    return (
+      <StartTime
+        timestamp={storiesUnixTimestamp}
+        timezone={timezone}
+        locale={locale}
+        script={script}
+        service={service}
+        dir={dir}
+      />
+    );
+  });

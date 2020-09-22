@@ -28,8 +28,6 @@ import pidginNavData from '../testHelpers/pidgin';
 import yorubaNavData from '../testHelpers/yoruba';
 import arabicNavData from '../testHelpers/arabic';
 
-import notes from '../README.md';
-
 const navStoriesData = [
   {
     title: 'igbo',
@@ -207,21 +205,8 @@ navStoriesData.map(item => {
   const { title, currentPageText, data, dir } = item;
   const isAmp = false;
 
-  return canonicalStories.add(
-    title,
-    ({ script, service }) =>
-      navigationStory(
-        currentPageText,
-        data,
-        dir,
-        false,
-        isAmp,
-        script,
-        service,
-      ),
-    {
-      notes,
-    },
+  return canonicalStories.add(title, ({ script, service }) =>
+    navigationStory(currentPageText, data, dir, false, isAmp, script, service),
   );
 });
 
@@ -241,17 +226,13 @@ canonicalStories.add(
       </BackgroundContainer>
     );
   },
-  {
-    notes,
-  },
+  {},
 );
 
 canonicalStories.add(
   'Dropdown animation',
   ({ dir, script, service }) => animationStory(dir, script, service),
-  {
-    notes,
-  },
+  {},
 );
 
 canonicalStories.add(
@@ -266,9 +247,7 @@ canonicalStories.add(
       script,
       service,
     ),
-  {
-    notes,
-  },
+  {},
 );
 
 const ampStories = storiesOf('Components/Navigation/AMP', module)
@@ -281,21 +260,8 @@ navStoriesData.map(item => {
   const { title, currentPageText, data, dir } = item;
   const isAmp = true;
 
-  return ampStories.add(
-    title,
-    ({ script, service }) =>
-      navigationStory(
-        currentPageText,
-        data,
-        dir,
-        false,
-        isAmp,
-        script,
-        service,
-      ),
-    {
-      notes,
-    },
+  return ampStories.add(title, ({ script, service }) =>
+    navigationStory(currentPageText, data, dir, false, isAmp, script, service),
   );
 });
 
@@ -314,7 +280,5 @@ ampStories.add(
       </ToggledContainer>
     </BackgroundContainer>
   ),
-  {
-    notes,
-  },
+  {},
 );

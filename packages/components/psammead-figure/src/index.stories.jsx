@@ -8,7 +8,7 @@ import ImagePlaceholder from '@bbc/psammead-image-placeholder';
 import Paragraph from '@bbc/psammead-paragraph';
 import VisuallyHiddenText from '@bbc/psammead-visually-hidden-text';
 import { withServicesKnob } from '@bbc/psammead-storybook-helpers';
-import notes from '../README.md';
+
 import Figure from '.';
 
 const imageAlt =
@@ -21,15 +21,11 @@ const imageRatio = 125;
 storiesOf('Components/Figure', module)
   .addDecorator(withKnobs)
   .addDecorator(withServicesKnob())
-  .add(
-    'containing Image',
-    () => (
-      <Figure>
-        <Image alt={imageAlt} src={imageSrc} width={imageWidth} />
-      </Figure>
-    ),
-    { notes },
-  )
+  .add('containing Image', () => (
+    <Figure>
+      <Image alt={imageAlt} src={imageSrc} width={imageWidth} />
+    </Figure>
+  ))
   .add(
     'containing Image, ImagePlaceholder, Copyright and Caption',
     ({ text: textSnippet, script, service }) => (
@@ -67,5 +63,5 @@ storiesOf('Components/Figure', module)
         </Caption>
       </Figure>
     ),
-    { notes, knobs: { escapeHTML: false } },
+    { knobs: { escapeHTML: false } },
   );
