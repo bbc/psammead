@@ -48,6 +48,7 @@ import '@bbc/psammead-locales/moment/yo';
 import { Helmet } from 'react-helmet';
 
 addParameters({
+  passArgsFirst: false,
   options: {
     panelPosition: 'right',
     sidebarAnimations: true,
