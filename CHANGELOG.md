@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 2.4.4 | [PR#3780](https://github.com/bbc/psammead/pull/3780) Bump Dependencies - lint-staged, browserslist, @loadable/babel-plugin, @loadable/component, @testing-library/react |
 | 2.4.3 | [PR#3768](https://github.com/bbc/psammead/pull/3768) Update Node version |
 | 2.4.2 | [PR#3769](https://github.com/bbc/psammead/pull/3769) Add Emotion migration notice to README |
 | 2.4.1 | [PR#3767](https://github.com/bbc/psammead/pull/3767) Remove semver from resolutions and prevent `npm-force-resolutions` running in `npm ci` |
