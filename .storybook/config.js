@@ -2,6 +2,7 @@ import React, { Fragment } from 'react';
 import { configure, addDecorator, addParameters } from '@storybook/react';
 import { create } from '@storybook/theming';
 import { withA11y } from '@storybook/addon-a11y';
+import { DocsPage, DocsContainer } from '@storybook/addon-docs/blocks';
 import {
   AMP_SCRIPT,
   AMP_NO_SCRIPT,
@@ -61,6 +62,16 @@ addParameters({
         values: ['wcag2a', 'wcag2aa', 'wcag21aa'],
       },
       iframes: true,
+    },
+  },
+  docs: {
+    container: DocsContainer,
+    page: DocsPage,
+    extractComponentDescription: (component, { notes }) => {
+      if (notes) {
+        return typeof notes === 'string' ? notes : notes.markdown || notes.text;
+      }
+      return null;
     },
   },
 });
