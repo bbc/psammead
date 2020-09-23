@@ -61,7 +61,7 @@ getSVG.propTypes = {
   height: number,
 };
 
-const stories = storiesOf('UTILITIES/SVGS/Brand Svgs', module).addDecorator(
+const stories = storiesOf('Utilities/SVGS/Brand Svgs', module).addDecorator(
   withKnobs,
 );
 Object.keys(svgs)
@@ -78,17 +78,17 @@ Object.keys(svgs)
   });
 
 const coreIconStories = storiesOf(
-  'UTILITIES/SVGS/CoreIcons Svgs',
+  'Utilities/SVGS/CoreIcons Svgs',
   module,
 ).addDecorator(withKnobs);
 
 const mediaIconStories = storiesOf(
-  'UTILITIES/SVGS/MediaIcons Svgs',
+  'Utilities/SVGS/MediaIcons Svgs',
   module,
 ).addDecorator(withKnobs);
 
 const navigationIconsStories = storiesOf(
-  'UTILITIES/SVGS/NavigationIcons Svgs',
+  'Utilities/SVGS/NavigationIcons Svgs',
   module,
 ).addDecorator(withKnobs);
 
