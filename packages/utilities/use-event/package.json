@@ -1,13 +1,13 @@
 {
-  "name": "@bbc/web-vitals",
+  "name": "@bbc/use-event",
   "version": "1.0.0",
   "main": "dist/index.js",
   "module": "esm/index.js",
   "sideEffects": false,
-  "description": "Generic hook for reporting web vitals metrics to an endpoint",
+  "description": "Hook for creating single-time event listeners",
   "repository": {
     "type": "git",
-    "url": "https://github.com/BBC-News/psammead/tree/latest/packages/utilities/web-vitals"
+    "url": "https://github.com/BBC-News/psammead/tree/latest/packages/utilities/use-event"
   },
   "author": {
     "name": "Psammead Maintainers",
@@ -17,11 +17,8 @@
   "bugs": {
     "url": "https://github.com/bbc/psammead/issues"
   },
-  "homepage": "https://github.com/BBC-News/psammead/blob/latest/packages/utilities/web-vitals/README.md",
-  "dependencies": {
-    "@bbc/use-event": "^1.0.0",
-    "web-vitals": "^0.2.4"
-  },
+  "homepage": "https://github.com/BBC-News/psammead/blob/latest/packages/utilities/use-event/README.md",
+  "dependencies": {},
   "peerDependencies": {
     "react": "^16.13.1"
   }

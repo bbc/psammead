@@ -1,17 +1,6 @@
-import { useRef, useEffect } from 'react';
+import { useEffect } from 'react';
+import useEvent from '@bbc/use-event';
 import { getCLS, getFID, getLCP, getFCP, getTTFB } from 'web-vitals';
-
-const useEvent = (event, callbackFunction) => {
-  const cb = useRef(callbackFunction);
-
-  useEffect(() => {
-    const callback = cb.current;
-
-    window.addEventListener(event, callback);
-
-    return () => window.removeEventListener(event, callback);
-  }, [cb]);
-};
 
 const webVitalsBase = {
   age: 0,
