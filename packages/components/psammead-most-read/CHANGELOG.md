@@ -1,9 +1,9 @@
-
 # Psammead Most Read Changelog
 
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 4.1.13 | [PR#3728](https://github.com/bbc/psammead/pull/3728) Tweaks following Storybook v5.3.19 to v6.0.21 update |
 | 4.1.12 | [PR#3772](https://github.com/bbc/psammead/pull/3772) Bump prettier to 2.1.2 |
 | 4.1.11 | [PR#3712](https://github.com/bbc/psammead/pull/3712) Talos - Bump Dependencies - @bbc/psammead-grid |
 | 4.1.10 | [PR#3710](https://github.com/bbc/psammead/pull/3710) Talos - Bump Dependencies - @bbc/psammead-grid, @bbc/psammead-styles |
