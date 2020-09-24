@@ -24,6 +24,7 @@ const BulletedList = styled.ul.attrs(() => ({
     position: absolute;
     border-width: 1rem;
     border: 0.1875rem solid ${C_SHADOW};
+    background-color: ${C_SHADOW};
     border-radius: 50%;
     ${({ dir }) => (dir === 'rtl' ? 'right: -1rem;' : 'left: -1rem;')}
   }
