@@ -51,7 +51,7 @@ const useWebVitals = ({ enabled, reportingEndpoint, loggerCallback }) => {
   };
 
   if (enabled) {
-    useEvent('beforeunload', sendVitals);
+    useEvent('pagehide', sendVitals);
 
     useEffect(() => {
       pageLoadTime = new Date();
