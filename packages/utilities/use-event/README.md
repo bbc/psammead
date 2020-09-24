@@ -2,26 +2,37 @@
 
 ## Description
 
-The `UseEvent` utility does...
+The `useEvent` hook does adds a window-level event listener with a callback, and removes the listener when the component the hook is used in is unmounted.
 
 ## Installation
 
-```jsx
+```bash
 npm install @bbc/use-event --save
 ```
 
 ## Props
 
-| Argument  | Type | Required | Default | Example |
-| --------- | ---- | -------- | ------- | ------- |
-| No props. |      |          |         |         |
+| Argument         | Type     | Required | Default | Example   |
+| ---------------- | -------- | -------- | ------- | --------- |
+| event            | string   | Yes      | N/A     | 'keydown' |
+| callbackFunction | function | Yes      | N/A     | `(event) => { console.log(event.code, 'keydown detected') }` |
 
 ## Usage
 
 <!-- Description of the utility usage -->
 
-```
-import UseEvent from "@bbc/use-event"
+```jsx
+import useEvent from '@bbc/use-event';
+
+const MyComponent = () => {
+  const callback = (event) => {
+    event.preventDefault();
+    /* do something */
+  }
+  useEvent('pagehide', callback);
+  
+  /* component code */
+}
 ```
 
 ### When to use this utility
