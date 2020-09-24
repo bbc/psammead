@@ -1,6 +1,6 @@
 {
   "name": "@bbc/psammead-consent-banner",
-  "version": "2.3.35",
+  "version": "2.3.36",
   "main": "dist/index.js",
   "module": "esm/index.js",
   "sideEffects": false,

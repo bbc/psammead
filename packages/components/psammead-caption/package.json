@@ -1,6 +1,6 @@
 {
   "name": "@bbc/psammead-caption",
-  "version": "2.2.32",
+  "version": "2.2.33",
   "main": "dist/index.js",
   "module": "esm/index.js",
   "sideEffects": false,
