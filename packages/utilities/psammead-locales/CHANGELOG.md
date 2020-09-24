@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 | ------- | ----------- |
+| 4.1.12 | [PR#3728](https://github.com/bbc/psammead/pull/3728) Tweaks following Storybook v5.3.19 to v6.0.21 update |
 | 4.1.11 | [PR#3709](https://github.com/bbc/psammead/pull/3709) Bump prettier from 2.0.5 to 2.1.1 |
 | 4.1.10 | [PR#3594](https://github.com/bbc/psammead/pull/3594) Update Pashto translation for July |
 | 4.1.9 | [PR#3523](https://github.com/bbc/psammead/pull/3523) Fix ESLint issue |
