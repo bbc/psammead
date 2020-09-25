@@ -17,7 +17,6 @@ webVitals.getFCP.mockImplementation(mockVitalsGet('FCP', 4));
 webVitals.getTTFB.mockImplementation(mockVitalsGet('TTFB', 5));
 
 let eventListeners = {};
-const noOpFunctionString = 'function noOp() {}';
 
 const mockEventListener = mockedEvent => {
   const originalAddEventListener = window.addEventListener;
@@ -38,8 +37,8 @@ const mockEventListener = mockedEvent => {
   });
 };
 
-const mockSendBeacon = (mockFunction = () => {}) => {
-  navigator.sendBeacon = jest.fn(mockFunction);
+const mockSendBeacon = () => {
+  navigator.sendBeacon = jest.fn();
 };
 
 describe('useWebVitals', () => {
@@ -57,19 +56,6 @@ describe('useWebVitals', () => {
 
   describe('when enabled is set to false', () => {
     const enabled = false;
-    it('registers a no-op function on the pagehide event listener', () => {
-      mockSendBeacon();
-      renderHook(() => useWebVitals({ enabled }));
-
-      expect(eventListeners.pagehide).toBeInstanceOf(Function);
-      expect(eventListeners.pagehide.toString()).toEqual(noOpFunctionString);
-
-      eventListeners.pagehide();
-
-      expect(navigator.sendBeacon).not.toHaveBeenCalled();
-      expect(fetch).not.toHaveBeenCalled();
-    });
-
     it('collects web vitals data, but does not send it', () => {
       mockSendBeacon();
       renderHook(() => useWebVitals({ enabled }));
@@ -89,27 +75,35 @@ describe('useWebVitals', () => {
 
   describe('when enabled is set to true', () => {
     const enabled = true;
-    it('sends a beacon via navigator.sendBeacon when enabled', () => {
+    const reportingEndpoint = 'https://endpoint.to.report.to';
+    it('sends a beacon via navigator.sendBeacon when enabled', async () => {
       mockSendBeacon();
-      renderHook(() => useWebVitals({ enabled }));
+      renderHook(() => useWebVitals({ enabled, reportingEndpoint }));
 
-      eventListeners.pagehide();
+      await eventListeners.pagehide();
 
-      expect(navigator.sendBeacon).toHaveBeenCalled();
+      expect(navigator.sendBeacon).toHaveBeenCalledWith(
+        reportingEndpoint,
+        expect.any(String),
+      );
     });
 
-    it('falls back to use fetch when sendBeacon is unavailable', () => {
-      renderHook(() => useWebVitals({ enabled }));
+    it('falls back to use fetch when sendBeacon is unavailable', async () => {
+      renderHook(() => useWebVitals({ enabled, reportingEndpoint }));
 
-      eventListeners.pagehide();
+      await eventListeners.pagehide();
 
       expect(navigator.sendBeacon).toBeUndefined();
-      expect(fetch).toHaveBeenCalled();
+      expect(fetch).toHaveBeenCalledWith(reportingEndpoint, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/reports+json' },
+        body: expect.any(String),
+      });
     });
 
-    it('collects and sends web vitals data', () => {
+    it('collects and sends web vitals data', async () => {
       mockSendBeacon();
-      renderHook(() => useWebVitals({ enabled }));
+      renderHook(() => useWebVitals({ enabled, reportingEndpoint }));
 
       expect(webVitals.getCLS).toHaveBeenCalled();
       expect(webVitals.getFID).toHaveBeenCalled();
@@ -117,10 +111,11 @@ describe('useWebVitals', () => {
       expect(webVitals.getFCP).toHaveBeenCalled();
       expect(webVitals.getTTFB).toHaveBeenCalled();
 
-      eventListeners.pagehide();
+      await eventListeners.pagehide();
 
       const expectedBeacon = [
         expect.objectContaining({
+          type: 'web-vitals',
           body: expect.objectContaining({
             cls: 1,
             fid: 2,
@@ -136,13 +131,13 @@ describe('useWebVitals', () => {
       expect(JSON.parse(sentBeacon)).toEqual(expectedBeacon);
     });
 
-    it('records the view age of the page at the time the beacon is sent', () => {
+    it('records the view age of the page at the time the beacon is sent', async () => {
       mockSendBeacon();
-      renderHook(() => useWebVitals({ enabled }));
+      renderHook(() => useWebVitals({ enabled, reportingEndpoint }));
 
       Date.now.mockImplementation(() => 10500);
 
-      eventListeners.pagehide();
+      await eventListeners.pagehide();
 
       const expectedBeacon = [
         expect.objectContaining({
@@ -153,6 +148,40 @@ describe('useWebVitals', () => {
       const sentBeacon = navigator.sendBeacon.mock.calls[0][1];
 
       expect(JSON.parse(sentBeacon)).toEqual(expectedBeacon);
+    });
+
+    it('records the current URL of the page', async () => {
+      mockSendBeacon();
+      delete window.location;
+      window.location = { href: 'https://www.example.com/foo/bar' };
+
+      renderHook(() => useWebVitals({ enabled, reportingEndpoint }));
+
+      await eventListeners.pagehide();
+
+      const expectedBeacon = [
+        expect.objectContaining({
+          url: 'https://www.example.com/foo/bar',
+        }),
+      ];
+
+      const sentBeacon = navigator.sendBeacon.mock.calls[0][1];
+
+      expect(JSON.parse(sentBeacon)).toEqual(expectedBeacon);
+    });
+
+    it('calls the loggerCallback with an error if sendBeacon fails', async () => {
+      mockSendBeacon();
+      const error = new Error('Test error');
+      navigator.sendBeacon.mockRejectedValue(error);
+
+      const loggerCallback = jest.fn();
+
+      renderHook(() => useWebVitals({ enabled, loggerCallback }));
+
+      await eventListeners.pagehide();
+
+      expect(loggerCallback).toHaveBeenCalledWith(error);
     });
   });
 });

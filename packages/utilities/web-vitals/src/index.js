@@ -19,22 +19,19 @@ const updateWebVitals = ({ name, value }) => {
 };
 
 const setCurrentUrl = () => {
-  if (typeof window !== 'undefined') {
-    webVitalsBase.url = window.location.href;
-  }
+  webVitalsBase.url = window.location.href;
 };
 
-const sendBeacon = async (rawBeacon, reportingEndpoint) => {
+const sendBeacon = (rawBeacon, reportingEndpoint) => {
   const beacon = JSON.stringify(rawBeacon);
   if (navigator.sendBeacon) {
-    await navigator.sendBeacon(reportingEndpoint, beacon);
-  } else {
-    await fetch(reportingEndpoint, {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/reports+json' },
-      body: beacon,
-    });
+    return navigator.sendBeacon(reportingEndpoint, beacon);
   }
+  return fetch(reportingEndpoint, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/reports+json' },
+    body: beacon,
+  });
 };
 
 const useWebVitals = ({
