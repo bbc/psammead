@@ -1,6 +1,6 @@
 {
   "name": "@bbc/psammead-section-label",
-  "version": "5.0.12",
+  "version": "5.0.13",
   "description": "React styled component for a section label",
   "main": "dist/index.js",
   "module": "esm/index.js",
@@ -24,7 +24,7 @@
   },
   "homepage": "https://github.com/bbc/psammead/blob/latest/packages/components/psammead-section-label/README.md",
   "dependencies": {
-    "@bbc/gel-foundations": "^4.2.0",
+    "@bbc/gel-foundations": "^4.3.0",
     "@bbc/psammead-styles": "^4.4.3"
   },
   "peerDependencies": {
