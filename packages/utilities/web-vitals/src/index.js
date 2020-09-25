@@ -19,7 +19,9 @@ const updateWebVitals = ({ name, value }) => {
 };
 
 const setCurrentUrl = () => {
-  webVitalsBase.url = window.location.href;
+  if (typeof window !== 'undefined') {
+    webVitalsBase.url = window.location.href;
+  }
 };
 
 const sendBeacon = async (rawBeacon, reportingEndpoint) => {
@@ -42,7 +44,7 @@ const useWebVitals = ({
 }) => {
   let pageLoadTime;
   const sendVitals = async () => {
-    const pageExitTime = new Date();
+    const pageExitTime = Date.now();
     const pageAge = pageExitTime - pageLoadTime;
 
     const beacon = [{ ...webVitalsBase, age: pageAge, body: { ...vitals } }];
@@ -57,7 +59,7 @@ const useWebVitals = ({
   useEvent('pagehide', enabled ? sendVitals : noOp);
 
   useEffect(() => {
-    pageLoadTime = new Date();
+    pageLoadTime = Date.now();
     setCurrentUrl();
     getCLS(updateWebVitals);
     getFID(updateWebVitals);
