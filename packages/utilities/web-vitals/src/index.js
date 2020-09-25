@@ -1,6 +1,9 @@
+import fetch from 'cross-fetch';
 import { useEffect } from 'react';
 import useEvent from '@bbc/use-event';
 import { getCLS, getFID, getLCP, getFCP, getTTFB } from 'web-vitals';
+
+const noOp = () => {};
 
 const webVitalsBase = {
   age: 0,
@@ -32,10 +35,13 @@ const sendBeacon = async (rawBeacon, reportingEndpoint) => {
   }
 };
 
-const useWebVitals = ({ enabled, reportingEndpoint, loggerCallback }) => {
+const useWebVitals = ({
+  enabled,
+  reportingEndpoint,
+  loggerCallback = noOp,
+}) => {
   let pageLoadTime;
-  const sendVitals = async event => {
-    event.preventDefault();
+  const sendVitals = async () => {
     const pageExitTime = new Date();
     const pageAge = pageExitTime - pageLoadTime;
 
@@ -44,25 +50,21 @@ const useWebVitals = ({ enabled, reportingEndpoint, loggerCallback }) => {
     try {
       await sendBeacon(beacon, reportingEndpoint);
     } catch (error) {
-      loggerCallback('web_vitals_send_error', {
-        ...error,
-      });
+      loggerCallback(error);
     }
   };
 
-  if (enabled) {
-    useEvent('pagehide', sendVitals);
+  useEvent('pagehide', enabled ? sendVitals : noOp);
 
-    useEffect(() => {
-      pageLoadTime = new Date();
-      setCurrentUrl();
-      getCLS(updateWebVitals);
-      getFID(updateWebVitals);
-      getLCP(updateWebVitals);
-      getFCP(updateWebVitals);
-      getTTFB(updateWebVitals);
-    }, []);
-  }
+  useEffect(() => {
+    pageLoadTime = new Date();
+    setCurrentUrl();
+    getCLS(updateWebVitals);
+    getFID(updateWebVitals);
+    getLCP(updateWebVitals);
+    getFCP(updateWebVitals);
+    getTTFB(updateWebVitals);
+  }, []);
 
   return null;
 };

@@ -20,6 +20,7 @@
   "homepage": "https://github.com/BBC-News/psammead/blob/latest/packages/utilities/web-vitals/README.md",
   "dependencies": {
     "@bbc/use-event": "^1.0.0",
+    "cross-fetch": "^3.0.6",
     "web-vitals": "^0.2.4"
   },
   "peerDependencies": {
