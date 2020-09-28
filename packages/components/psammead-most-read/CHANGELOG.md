@@ -1,9 +1,9 @@
-
 # Psammead Most Read Changelog
 
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 4.1.14 | [PR#3798](https://github.com/bbc/psammead/pull/3798) Talos - Bump Dependencies
 | 4.1.13 | [PR#3785](https://github.com/bbc/psammead/pull/3785) Talos - Bump Dependencies - @bbc/gel-foundations |
 | 4.1.12 | [PR#3772](https://github.com/bbc/psammead/pull/3772) Bump prettier to 2.1.2 |
 | 4.1.11 | [PR#3712](https://github.com/bbc/psammead/pull/3712) Talos - Bump Dependencies - @bbc/psammead-grid |
