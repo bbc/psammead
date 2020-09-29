@@ -1,6 +1,4 @@
-export arabic from './scripts/arabic';
-
-export arabicPashto from './scripts/arabic-pashto';
+export rightToLeft from './scripts/right-to-left';
 
 export bengali from './scripts/bengali';
 
