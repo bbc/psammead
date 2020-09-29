@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 5.0.0 | [PR#xxxx](https://github.com/bbc/psammead/pull/xxxx) BBC Reith Qalam v1.100 |
 | 4.2.0 | [PR#3616](https://github.com/bbc/psammead/pull/3616) Update Bengali inline link styling |
 | 4.1.0 | [PR#3602](https://github.com/bbc/psammead/pull/3602) Update Thai Canon typography values |
 | 4.0.1 | [PR#3127](https://github.com/bbc/psammead/pull/3127) Restructured breakpoints.js to pair the consts which use one another. |
