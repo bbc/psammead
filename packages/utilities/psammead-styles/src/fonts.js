@@ -29,6 +29,9 @@ const baseUrlPadauk =
 const baseUrlShonarBangla =
   'https://ws-downloads.files.bbci.co.uk/fonts/ShonarBangla/v5.91/';
 
+const baseUrlBBCReithQalam =
+  'https://ws-downloads.files.bbci.co.uk/fonts/Qalam/v1.100/';
+
 // Reith Serif
 export const F_REITH_SERIF_REGULAR = baseUrlOverride => `
   @font-face {
@@ -617,6 +620,39 @@ export const F_SHONAR_BANGLA_BOLD = baseUrlOverride => `
   baseUrlOverride || baseUrlShonarBangla
 }bold.eot') format('eot'), url('${
   baseUrlOverride || baseUrlShonarBangla
+}bold.ttf') format('ttf');
+    font-display: optional;
+  }
+`;
+
+// BBC Reith Qalam
+export const F_QALAM_REGULAR = baseUrlOverride => `
+  @font-face {
+    font-family: "BBC Reith Qalam";
+    font-weight: 400;
+    font-style: normal;
+    src: url('${
+      baseUrlOverride || baseUrlBBCReithQalam
+    }normal.woff') format('woff'), url('${
+  baseUrlOverride || baseUrlBBCReithQalam
+}normal.eot') format('eot'), url('${
+  baseUrlOverride || baseUrlBBCReithQalam
+}normal.ttf') format('ttf');
+    font-display: optional;
+  }
+`;
+
+export const F_QALAM_BOLD = baseUrlOverride => `
+  @font-face {
+    font-family: "BBC Reith Qalam";
+    font-weight: 700;
+    font-style: normal;
+    src: url('${
+      baseUrlOverride || baseUrlBBCReithQalam
+    }bold.woff') format('woff'), url('${
+  baseUrlOverride || baseUrlBBCReithQalam
+}bold.eot') format('eot'), url('${
+  baseUrlOverride || baseUrlBBCReithQalam
 }bold.ttf') format('ttf');
     font-display: optional;
   }
