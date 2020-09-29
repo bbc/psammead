@@ -3,7 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
-| 5.0.0 | [PR#xxxx](https://github.com/bbc/psammead/pull/xxxx) BBC Reith Qalam v1.100 |
+| 5.0.0 | [PR#3804](https://github.com/bbc/psammead/pull/3804) BBC Reith Qalam v1.100 |
 | 4.5.1 | [PR#3728](https://github.com/bbc/psammead/pull/3728) Tweaks following Storybook v5.3.19 to v6.0.22 update |
 | 4.5.0 | [PR#3771](https://github.com/bbc/psammead/pull/3771) Create Optimo Base service |
 | 4.4.3 | [PR#3707](https://github.com/bbc/psammead/pull/3707) fix propType errors |
