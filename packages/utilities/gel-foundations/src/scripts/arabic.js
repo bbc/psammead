@@ -1,4 +1,4 @@
-const rightToLeftTypography = {
+const arabicTypography = {
   atlas: {
     groupA: {
       fontSize: '78',
@@ -211,4 +211,4 @@ const rightToLeftTypography = {
   },
 };
 
-export default rightToLeftTypography;
+export default arabicTypography;

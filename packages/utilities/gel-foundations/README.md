@@ -45,25 +45,25 @@ Our typography uses `rem` for font-size and line-height. The `rem` unit represen
 
 ### Script support
 
-The utility typography function (e.g. `getLongPrimer('thai')`) receives a script argument which is an object with the different script GEL Types Sizes and returns the `font-sizes` and `line-heights` for the specific GEL Type (e.g. `Long Premier`).
+The utility typography function (e.g. `getLongPrimer('arabic')`) receives a script argument which is an object with the different script GEL Types Sizes and returns the `font-sizes` and `line-heights` for the specific GEL Type (e.g. `Long Premier`).
 
-You can import the script doing `import { thai } from '@bbc/gel-foundations/scripts`. By default you should import the `latin` script as found on the [GEL typography guidelines](https://www.bbc.co.uk/gel/guidelines/typography#type-sizes).
+You can import the script doing `import { arabic } from '@bbc/gel-foundations/scripts`. By default you should import the `latin` script as found on the [GEL typography guidelines](https://www.bbc.co.uk/gel/guidelines/typography#type-sizes).
 
 In addition to Latin script defaults, Psammead supports typography for a number of other scripts. We have grouped the scripts that share similiar features as follows:
 
 <!-- prettier-ignore -->
 | Group Name                  | Services |             Rationale       |
 | --------------------------- | -------- | --------------------------- | 
-| latin-and-cyrillic          | News, Hausa, Gahuza, Somali, Swahili, Igbo, Pidgin, Afaan Oromo, Yoruba, Azeri, Indonesia, Uzbek, Serbian, Russian, Ukrainian, Kyrgyz, Uzbek | The typography values for Latin and Cyrillic characters are identical |
-| latin-with-diacritics | Vietnamese, Mundo, Afrique, Brasil, Turkish | The diacritics make these values differ from Latin | 
-| right-to-left                      | Urdu, Arabic, Persian | Group as they use the Arabic alphabet | 
-| no-ascenders-or-descenders  | Korean, Japanese, Zhongwen, Ukchina, Tigrinya, Amharic | Group all alphabets without ascenders or descenders. This could be implemented as chinese, korean, ethiopic | Hindi, Nepali, Gujarati, Punjabi, Marathi, Telugu | The typography values for Devanagari and Gurmukhi characters are identical |
-| devanagari-and-gurmukhi     |  Hindi, Nepali, Gujarati, Punjabi, Marathi, Telugu | The typography values for Devanagari and Gurmukhi characters are identical |   
-| thai                        | Thai     | Bespoke to the Thai characters       | 
-| bengali                     | Bengali  | Bespoke to the Bengal characters     | 
-| burmese                     | Burmese  | Bespoke to the Burmese characters    | 
-| sinhalese                   | Sinhala  | Bespoke to the Sinhalese characters  | 
-| tamil                       | Tamil    | Bespoke to the Tamil characters      |
+| `latin-and-cyrillic`          | News, Hausa, Gahuza, Somali, Swahili, Igbo, Pidgin, Afaan Oromo, Yoruba, Azeri, Indonesia, Uzbek, Serbian, Russian, Ukrainian, Kyrgyz, Uzbek | The typography values for Latin and Cyrillic characters are identical |
+| `latin-with-diacritics`       | Vietnamese, Mundo, Afrique, Brasil, Turkish | The diacritics make these values differ from Latin | 
+| `arabic`                      | Arabic, Pashto, Persian, Urdu  | Group as they use the Arabic alphabet | 
+| `no-ascenders-or-descenders`  | Korean, Japanese, Zhongwen, Ukchina, Tigrinya, Amharic | Group all alphabets without ascenders or descenders. This could be implemented as `chinese`, `korean`, `ethiopic` | Hindi, Nepali, Gujarati, Punjabi, Marathi, Telugu | The typography values for Devanagari and Gurmukhi characters are identical |
+| `devanagari-and-gurmukhi`     |  Hindi, Nepali, Gujarati, Punjabi, Marathi, Telugu | The typography values for Devanagari and Gurmukhi characters are identical |   
+| `thai`                        | Thai     | Bespoke to the Thai characters       | 
+| `bengali`                     | Bengali  | Bespoke to the Bengal characters     | 
+| `burmese`                     | Burmese  | Bespoke to the Burmese characters    | 
+| `sinhalese`                   | Sinhala  | Bespoke to the Sinhalese characters  | 
+| `tamil`                      | Tamil    | Bespoke to the Tamil characters      |
 
 ## Contributing
 

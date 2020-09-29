@@ -1,4 +1,4 @@
-export rightToLeft from './scripts/right-to-left';
+export arabic from './scripts/arabic';
 
 export bengali from './scripts/bengali';
 
