@@ -1,7 +1,7 @@
 import fetch from 'cross-fetch';
 import { useEffect } from 'react';
-import useEvent from '@bbc/use-event';
 import { getCLS, getFID, getLCP, getFCP, getTTFB } from 'web-vitals';
+import useEvent from './use-event';
 
 const noOp = () => {};
 

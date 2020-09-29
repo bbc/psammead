@@ -1,5 +1,5 @@
 import { renderHook } from '@testing-library/react-hooks';
-import useEvent from './index';
+import useEvent from './use-event';
 
 let eventMap = {};
 
