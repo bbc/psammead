@@ -6,7 +6,7 @@ import styled from 'styled-components';
 import { withServicesKnob } from '@bbc/psammead-storybook-helpers';
 import { CanonicalMediaPlayer, AmpMediaPlayer } from '.';
 import MediaMessage from './Message';
-import { ampDecorator } from '../../../../.storybook/config';
+import { ampDecorator } from '../../../../.storybook/preview';
 import notes from '../README.md';
 
 const withDuration = {

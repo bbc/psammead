@@ -1,6 +1,6 @@
 import AmpImg from './index.amp';
 import { stories } from './testHelpers/stories';
-import { ampDecorator } from '../../../../.storybook/config';
+import { ampDecorator } from '../../../../.storybook/preview';
 
 const additionalProps = {
   layout: 'responsive',

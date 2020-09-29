@@ -119,9 +119,8 @@ export const ampDecorator = story => (
   </Fragment>
 );
 
-function loadAllStories() {
-  require('glob-loader!./stories.pattern');
-  addDecorator(withA11y);
-}
+// function loadAllStories() {
+//   addDecorator(withA11y);
+// }
 
-configure(loadAllStories, module);
+// configure(loadAllStories, module);
