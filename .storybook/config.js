@@ -10,6 +10,7 @@ import {
 import * as fontFaces from '@bbc/psammead-styles/fonts';
 import { themes } from '@bbc/psammead-storybook-helpers';
 import GlobalStyles from '@bbc/psammead-styles/global-styles';
+import './storybook.css';
 
 // New locales
 import '@bbc/psammead-locales/moment/am';
