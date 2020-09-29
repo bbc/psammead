@@ -127,8 +127,7 @@ export const Headline = styled.h3`
   margin: 0; /* Reset */
   padding-bottom: ${GEL_SPACING};
   ${({ service }) => getSerifMedium(service)}
-  ${({ script, promoType }) =>
-    script && headlineTypography(script)[promoType]}
+  ${({ script, promoType }) => script && headlineTypography(script)[promoType]}
   ${({ promoHasImage }) =>
     !promoHasImage &&
     `display: inline;`} /* Needed for aligning Media Indicator with Headline */

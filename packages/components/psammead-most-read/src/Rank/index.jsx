@@ -140,9 +140,7 @@ const MultiColumnWrapper = styled(TwoColumnWrapper)`
 const StyledSpan = styled.span`
   ${({ service }) => getSerifLight(service)}
   ${({ script, size }) =>
-    script && size === 'small'
-      ? getTrafalgar(script)
-      : getFoolscap(script)}
+    script && size === 'small' ? getTrafalgar(script) : getFoolscap(script)}
   position: relative;
   color: ${C_POSTBOX};
   margin: 0; /* Reset */

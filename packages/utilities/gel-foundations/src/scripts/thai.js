@@ -93,7 +93,7 @@ const thaiTypography = {
       lineHeight: '30',
     },
     groupD: {
-      fontSize: '32',
+      fontSize: '30',
       lineHeight: '42',
     },
   },
