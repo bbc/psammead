@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 3.0.0 | [PR#3810](https://github.com/bbc/psammead/pull/3810) Yarn Workspaces |
 | 2.4.9 | [PR#3803](https://github.com/bbc/psammead/pull/3803) Talos - Bump Dependencies - @bbc/psammead-radio-schedule |
 | 2.4.8 | [PR#3799](https://github.com/bbc/psammead/pull/3799) Talos - Bump Dependencies - @bbc/psammead-brand, @bbc/psammead-bulletin, @bbc/psammead-media-player, @bbc/psammead-most-read, @bbc/psammead-radio-schedule, @bbc/psammead-timestamp-container |
 | 2.4.7 | [PR#3798](https://github.com/bbc/psammead/pull/3798) Talos - Bump Dependencies
