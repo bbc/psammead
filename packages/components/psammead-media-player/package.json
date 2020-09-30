@@ -29,12 +29,12 @@
     "styled-components": "^4.3.2"
   },
   "dependencies": {
-    "@bbc/psammead-image-placeholder": "^1.2.43",
     "@bbc/psammead-assets": "^2.14.1",
     "@bbc/psammead-image": "^1.2.4",
+    "@bbc/psammead-image-placeholder": "^1.2.43",
     "@bbc/psammead-play-button": "^1.1.22"
   },
   "scripts": {
-    "install:packages": "yarn install --no-lockfile"
+    "install:packages": "yarn install"
   }
 }

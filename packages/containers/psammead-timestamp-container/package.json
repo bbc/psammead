@@ -33,10 +33,10 @@
     "@bbc/psammead-locales": "^4.1.11"
   },
   "peerDependencies": {
-    "react": "^16.9.0",
-    "moment": "^2.24.0"
+    "moment": "^2.24.0",
+    "react": "^16.9.0"
   },
   "scripts": {
-    "install:packages": "yarn install --no-lockfile"
+    "install:packages": "yarn install"
   }
 }

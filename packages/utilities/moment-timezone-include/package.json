@@ -10,7 +10,7 @@
   "scripts": {
     "postinstall": "node ./dist/postInstall",
     "prepublishOnly": "rm -rf ./tz",
-    "install:packages": "yarn install --no-lockfile"
+    "install:packages": "yarn install"
   },
   "author": {
     "name": "BBC Psammead Maintainers",
@@ -33,7 +33,7 @@
   "dependencies": {
     "find-cache-dir": "^3.0.0",
     "mkdirp": "^0.5.3",
-    "object-hash": "^1.3.1",
-    "moment-timezone": "^0.5.26"
+    "moment-timezone": "^0.5.26",
+    "object-hash": "^1.3.1"
   }
 }

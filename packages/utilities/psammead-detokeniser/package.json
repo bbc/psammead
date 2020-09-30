@@ -18,7 +18,6 @@
     "url": "https://github.com/bbc/psammead/issues"
   },
   "homepage": "https://github.com/BBC-News/psammead/blob/latest/packages/utilities/psammead-detokeniser/README.md",
-  "dependencies": {},
   "peerDependencies": {
     "react": "^16.13.1"
   },
@@ -28,6 +27,6 @@
     "detokeniser"
   ],
   "scripts": {
-    "install:packages": "yarn install --no-lockfile"
+    "install:packages": "yarn install"
   }
 }

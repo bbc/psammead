@@ -25,15 +25,15 @@
     "@bbc/psammead-visually-hidden-text": "^1.3.0"
   },
   "peerDependencies": {
+    "prop-types": "^15.7.2",
     "react": "^16.9.0",
-    "styled-components": "^4.3.2",
-    "prop-types": "^15.7.2"
+    "styled-components": "^4.3.2"
   },
   "keywords": [
     "bbc",
     "navigation"
   ],
   "scripts": {
-    "install:packages": "yarn install --no-lockfile"
+    "install:packages": "yarn install"
   }
 }

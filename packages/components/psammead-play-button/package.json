@@ -19,8 +19,8 @@
   "homepage": "https://github.com/bbc/psammead/blob/latest/packages/components/psammead-play-button/README.md",
   "dependencies": {
     "@bbc/gel-foundations": "^4.3.0",
-    "@bbc/psammead-styles": "^4.4.3",
-    "@bbc/psammead-assets": "^2.14.1"
+    "@bbc/psammead-assets": "^2.14.1",
+    "@bbc/psammead-styles": "^4.4.3"
   },
   "peerDependencies": {
     "react": "^16.9.0",
@@ -35,6 +35,6 @@
     "duration"
   ],
   "scripts": {
-    "install:packages": "yarn install --no-lockfile"
+    "install:packages": "yarn install"
   }
 }
