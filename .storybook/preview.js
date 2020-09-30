@@ -118,9 +118,3 @@ export const ampDecorator = story => (
     {story()}
   </Fragment>
 );
-
-// function loadAllStories() {
-//   addDecorator(withA11y);
-// }
-
-// configure(loadAllStories, module);
