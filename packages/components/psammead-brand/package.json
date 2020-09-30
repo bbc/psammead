@@ -34,5 +34,9 @@
     "bbc",
     "brand",
     "logo"
-  ]
+  ],
+  "scripts": {
+    "install:packages": "yarn install --no-lockfile",
+    "ci:packages": "yarn install --frozen-lockfile"
+  }
 }

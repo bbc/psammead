@@ -31,5 +31,8 @@
     "bbc",
     "story",
     "promo"
-  ]
+  ],
+  "scripts": {
+    "install:packages": "yarn install --no-lockfile"
+  }
 }

@@ -31,5 +31,8 @@
     "attribution",
     "image",
     "figure"
-  ]
+  ],
+  "scripts": {
+    "install:packages": "yarn install --no-lockfile"
+  }
 }

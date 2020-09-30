@@ -24,5 +24,8 @@
     "grid",
     "spacing",
     "typography"
-  ]
+  ],
+  "scripts": {
+    "install:packages": "yarn install --no-lockfile"
+  }
 }

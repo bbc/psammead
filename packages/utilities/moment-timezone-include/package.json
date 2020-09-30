@@ -9,7 +9,8 @@
   },
   "scripts": {
     "postinstall": "node ./dist/postInstall",
-    "prepublishOnly": "rm -rf ./tz"
+    "prepublishOnly": "rm -rf ./tz",
+    "install:packages": "yarn install --no-lockfile"
   },
   "author": {
     "name": "BBC Psammead Maintainers",

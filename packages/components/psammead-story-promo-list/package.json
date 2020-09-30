@@ -32,5 +32,8 @@
     "story",
     "promo",
     "list"
-  ]
+  ],
+  "scripts": {
+    "install:packages": "yarn install --no-lockfile"
+  }
 }

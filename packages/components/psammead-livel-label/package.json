@@ -26,5 +26,8 @@
   "keywords": [
     "bbc",
     "live"
-  ]
+  ],
+  "scripts": {
+    "install:packages": "yarn install --no-lockfile"
+  }
 }

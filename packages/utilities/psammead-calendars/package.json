@@ -27,5 +27,8 @@
   },
   "devDependencies": {
     "react": "^16.9.0"
+  },
+  "scripts": {
+    "install:packages": "yarn install --no-lockfile"
   }
 }

@@ -28,5 +28,8 @@
   "dependencies": {
     "jalaali-js": "1.1.0",
     "moment": "^2.24.0"
+  },
+  "scripts": {
+    "install:packages": "yarn install --no-lockfile"
   }
 }

@@ -27,5 +27,8 @@
     "a11y",
     "screen readers",
     "off-screen"
-  ]
+  ],
+  "scripts": {
+    "install:packages": "yarn install --no-lockfile"
+  }
 }

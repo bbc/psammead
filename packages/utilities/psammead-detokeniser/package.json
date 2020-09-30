@@ -26,5 +26,8 @@
     "bbc",
     "utilities",
     "detokeniser"
-  ]
+  ],
+  "scripts": {
+    "install:packages": "yarn install --no-lockfile"
+  }
 }

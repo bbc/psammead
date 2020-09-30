@@ -29,5 +29,8 @@
     "bbc",
     "heading",
     "index"
-  ]
+  ],
+  "scripts": {
+    "install:packages": "yarn install --no-lockfile"
+  }
 }
