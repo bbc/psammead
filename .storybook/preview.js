@@ -49,7 +49,7 @@ import '@bbc/psammead-locales/moment/yo';
 
 import { Helmet } from 'react-helmet';
 
-addParameters({
+export const parameters = {
   passArgsFirst: false,
   options: {
     panelPosition: 'right',
@@ -75,7 +75,7 @@ addParameters({
       return null;
     },
   },
-});
+};
 
 const fontPathMap = [
   { prefix: 'F_REITH', path: 'fonts/Reith/' },
