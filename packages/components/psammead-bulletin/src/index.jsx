@@ -115,9 +115,7 @@ const BulletinSummary = styled.p`
   padding: 0 ${GEL_SPACING} ${GEL_SPACING_DBL};
   ${({ script }) => script && getLongPrimer(script)}
   ${({ service }) => service && getSansRegular(service)} 
-  ${({
-    bulletinType,
-  }) => bulletinSummaryStyles[bulletinType]}
+  ${({ bulletinType }) => bulletinSummaryStyles[bulletinType]}
 `;
 
 const IconWrapper = styled.span`

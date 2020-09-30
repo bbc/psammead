@@ -3,6 +3,12 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 2.4.9 | [PR#3803](https://github.com/bbc/psammead/pull/3803) Talos - Bump Dependencies - @bbc/psammead-radio-schedule |
+| 2.4.8 | [PR#3799](https://github.com/bbc/psammead/pull/3799) Talos - Bump Dependencies - @bbc/psammead-brand, @bbc/psammead-bulletin, @bbc/psammead-media-player, @bbc/psammead-most-read, @bbc/psammead-radio-schedule, @bbc/psammead-timestamp-container |
+| 2.4.7 | [PR#3798](https://github.com/bbc/psammead/pull/3798) Talos - Bump Dependencies
+| 2.4.6 | [PR#3785](https://github.com/bbc/psammead/pull/3785) Talos - Bump Dependencies - @bbc/gel-foundations, @bbc/psammead-bulleted-list, @bbc/psammead-bulletin, @bbc/psammead-consent-banner, @bbc/psammead-locales, @bbc/psammead-most-read, @bbc/psammead-navigation, @bbc/psammead-script-link, @bbc/psammead-story-promo |
+| 2.4.5 | [PR#3772](https://github.com/bbc/psammead/pull/3772) Bump prettier to 2.1.2 |
+| 2.4.4 | [PR#3780](https://github.com/bbc/psammead/pull/3780) Bump Dependencies - lint-staged, browserslist, @loadable/babel-plugin, @loadable/component, @testing-library/react |
 | 2.4.3 | [PR#3768](https://github.com/bbc/psammead/pull/3768) Update Node version |
 | 2.4.2 | [PR#3769](https://github.com/bbc/psammead/pull/3769) Add Emotion migration notice to README |
 | 2.4.1 | [PR#3767](https://github.com/bbc/psammead/pull/3767) Remove semver from resolutions and prevent `npm-force-resolutions` running in `npm ci` |
