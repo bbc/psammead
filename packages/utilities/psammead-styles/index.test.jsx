@@ -42,6 +42,8 @@ const fontsExpectedExports = {
   F_PADAUK_BOLD: 'function',
   F_SHONAR_BANGLA_REGULAR: 'function',
   F_SHONAR_BANGLA_BOLD: 'function',
+  F_QALAM_REGULAR: 'function',
+  F_QALAM_BOLD: 'function',
 };
 
 const detectionExpectedExports = {
