@@ -1,6 +1,13 @@
 {
+  "command": {
+    "bootstrap": {
+      "npmClientArgs": ["--frozen-lockfile"]
+    }
+  },
   "packages": [
-    "packages/*/*"
+    "packages/components/*",
+    "packages/containers/*",
+    "packages/utilities/*"
   ],
   "version": "independent",
   "npmClient": "yarn",
