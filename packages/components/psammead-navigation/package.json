@@ -32,5 +32,8 @@
   "keywords": [
     "bbc",
     "navigation"
-  ]
+  ],
+  "scripts": {
+    "install:packages": "yarn install --no-lockfile"
+  }
 }

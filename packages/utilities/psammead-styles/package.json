@@ -22,5 +22,8 @@
     "colours",
     "colors",
     "fonts"
-  ]
+  ],
+  "scripts": {
+    "install:packages": "yarn install --no-lockfile"
+  }
 }

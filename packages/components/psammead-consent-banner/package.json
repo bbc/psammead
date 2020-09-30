@@ -34,5 +34,8 @@
     "cookies,",
     "privacy",
     "policy"
-  ]
+  ],
+  "scripts": {
+    "install:packages": "yarn install --no-lockfile"
+  }
 }

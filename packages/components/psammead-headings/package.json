@@ -30,5 +30,8 @@
     "headings",
     "headline",
     "subheading"
-  ]
+  ],
+  "scripts": {
+    "install:packages": "yarn install --no-lockfile"
+  }
 }

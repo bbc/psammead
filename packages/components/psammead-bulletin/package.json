@@ -30,5 +30,8 @@
     "prop-types": "^15.7.2",
     "react": "^16.13.0",
     "styled-components": "^4.4.1"
+  },
+  "scripts": {
+    "install:packages": "yarn install"
   }
 }

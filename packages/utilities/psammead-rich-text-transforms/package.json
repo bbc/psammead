@@ -4,6 +4,9 @@
   "description": "A utility library to transform to structured rich text.",
   "main": "dist/index.js",
   "module": "esm/index.js",
+  "scripts": {
+    "install:packages": "yarn install"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/bbc/psammead/tree/latest/packages/utilities/psammead-rich-text-transforms"
