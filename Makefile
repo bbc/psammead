@@ -10,18 +10,18 @@ code-coverage-after-build:
 	./cc-test-reporter after-build -t lcov;
 
 install:
-	npm run ci:packages;
-	npm run build:storybook
+	yarn run ci:packages;
+	yarn run build:storybook
 
 test:
-	npm run build;
-	npm test;
+	yarn run build;
+	yarn test;
 
 test-chromatic:
 	npx chromatic test run  --storybook-build-dir=storybook_dist || true
 
 deploy-storybook:
-	npm run deploy-storybook
+	yarn run deploy-storybook
 
 setup-git:
 	git remote set-url origin "https://${GITHUB_TOKEN}@github.com/bbc/psammead.git"
@@ -31,10 +31,10 @@ setup-git:
 
 publish:
 	echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" > .npmrc
-	npm run publish
+	yarn run publish
 
 change-scanner:
-	npm run changeScanner;
+	yarn run changeScanner;
 
 talos:
 	node scripts/talos/cli ${ARGS};
