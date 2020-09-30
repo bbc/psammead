@@ -53,8 +53,6 @@
     "ci:packages": "yarn install --frozen-lockfile",
     "create:package": "yo .yeoman",
     "deploy-storybook": "gh-pages -d storybook_dist",
-    "install:packages": "yarn install",
-    "postshrinkwrap": "if test -z $CI; then \n ./scripts/forcePackageLockHttps.sh \n fi",
     "postinstall": "yarn run build",
     "publish": "yarn run build && node scripts/publish",
     "regeneratePackageLocks": "node scripts/regeneratePackageLocks",
