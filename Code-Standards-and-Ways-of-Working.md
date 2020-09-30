@@ -66,7 +66,7 @@ Storybook publishes components in an iframe within the Storybook UI, this will b
 ### Local code in Storybook
 If you have a PR that is not yet merged and you need to preview this on another device, you can do so in Storybook via tunnelling:
 
-* Install packages `yarn run install:packages`
+* Install packages `yarn install`
 * Run storybook `yarn run storybook`
 * Run your tunnelling tool on the Storybook port
 * In Storybook [open the component in another tab](#open-the-component-in-a-tab)
