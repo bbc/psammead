@@ -25,5 +25,13 @@
   },
   "peerDependencies": {
     "react": "^16.13.1"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.11.5",
+    "@testing-library/react-hooks": "^3.4.2",
+    "jest": "^26.4.2"
+  },
+  "scripts": {
+    "test": "jest"
   }
 }

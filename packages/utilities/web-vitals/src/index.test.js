@@ -131,6 +131,28 @@ describe('useWebVitals', () => {
       expect(JSON.parse(sentBeacon)).toEqual(expectedBeacon);
     });
 
+    it('collects and sends device capability data', async () => {
+      mockSendBeacon();
+      renderHook(() => useWebVitals({ enabled, reportingEndpoint }));
+
+      await eventListeners.pagehide();
+
+      const expectedBeacon = [
+        expect.objectContaining({
+          type: 'web-vitals',
+          body: expect.objectContaining({
+            device_effective_connection: '4g',
+            device_cpu: 4,
+            device_mem: 3,
+          }),
+        }),
+      ];
+
+      const sentBeacon = navigator.sendBeacon.mock.calls[0][1];
+
+      expect(JSON.parse(sentBeacon)).toEqual(expectedBeacon);
+    });
+
     it('records the view age of the page at the time the beacon is sent', async () => {
       mockSendBeacon();
       renderHook(() => useWebVitals({ enabled, reportingEndpoint }));
