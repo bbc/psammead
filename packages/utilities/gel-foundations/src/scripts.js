@@ -1,26 +1,47 @@
-export arabic from './scripts/arabic';
+/* eslint-disable import/no-duplicates */
+import arabic from './scripts/arabic';
 
-export bengali from './scripts/bengali';
+import bengali from './scripts/bengali';
 
-export burmese from './scripts/burmese';
+import burmese from './scripts/burmese';
 
-export devanagariAndGurmukhi from './scripts/devanagari-and-gurmukhi';
-export hindi from './scripts/devanagari-and-gurmukhi';
-export nepali from './scripts/devanagari-and-gurmukhi';
+import devanagariAndGurmukhi from './scripts/devanagari-and-gurmukhi';
+import hindi from './scripts/devanagari-and-gurmukhi';
+import nepali from './scripts/devanagari-and-gurmukhi';
 
-export cyrillic from './scripts/latin-and-cyrillic';
-export cyrillicAndLatin from './scripts/latin-and-cyrillic';
-export latin from './scripts/latin-and-cyrillic';
+import cyrillic from './scripts/latin-and-cyrillic';
+import cyrillicAndLatin from './scripts/latin-and-cyrillic';
+import latin from './scripts/latin-and-cyrillic';
 
-export latinDiacritics from './scripts/latin-with-diacritics';
+import latinDiacritics from './scripts/latin-with-diacritics';
 
-export chinese from './scripts/no-ascenders-or-descenders';
-export ethiopic from './scripts/no-ascenders-or-descenders';
-export korean from './scripts/no-ascenders-or-descenders';
-export noAscendersOrDescenders from './scripts/no-ascenders-or-descenders';
+import chinese from './scripts/no-ascenders-or-descenders';
+import ethiopic from './scripts/no-ascenders-or-descenders';
+import korean from './scripts/no-ascenders-or-descenders';
+import noAscendersOrDescenders from './scripts/no-ascenders-or-descenders';
 
-export sinhalese from './scripts/sinhalese';
+import sinhalese from './scripts/sinhalese';
 
-export tamil from './scripts/tamil';
+import tamil from './scripts/tamil';
 
-export thai from './scripts/thai';
+import thai from './scripts/thai';
+
+export {
+  arabic,
+  bengali,
+  burmese,
+  devanagariAndGurmukhi,
+  hindi,
+  nepali,
+  cyrillic,
+  cyrillicAndLatin,
+  latin,
+  latinDiacritics,
+  chinese,
+  ethiopic,
+  korean,
+  noAscendersOrDescenders,
+  sinhalese,
+  tamil,
+  thai,
+};
