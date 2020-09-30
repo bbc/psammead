@@ -2,12 +2,12 @@ const getChangedPackages = require('./getChangedPackages');
 const upgradeDependencies = require('../upgradeDependencies');
 const bumpPackages = require('../bumpPackages/index.js');
 const getPackagePath = require('../utilities/getPackagePath');
-const runNpmInstall = require('../regeneratePackageLocks/runNpmInstall');
 const bumpChangelogs = require('../bumpChangelogs/index.js');
 const checkoutBranch = require('./checkoutBranch');
 const commitChanges = require('./commitChanges');
 const createPullRequest = require('./createPullRequest');
 const getBranchName = require('./getBranchName');
+const runYarnInstall = require('../runYarnInstall');
 
 const talos = () => {
   const packages = getChangedPackages();
@@ -39,7 +39,7 @@ const talos = () => {
         .then(() =>
           Promise.all(
             bumpedPackagesNoBBCPrefix.map(dep =>
-              runNpmInstall(getPackagePath(dep)),
+              runYarnInstall(getPackagePath(dep)),
             ),
           ),
         )

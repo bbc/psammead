@@ -4,7 +4,7 @@ const path = require('path');
 module.exports = packageDir =>
   new Promise((resolve, reject) => {
     exec(
-      'rm -rf package-lock.json',
+      'yarn install --focus',
       {
         cwd: path.resolve(__dirname, '../../', packageDir),
       },
