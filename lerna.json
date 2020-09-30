@@ -5,9 +5,7 @@
     }
   },
   "packages": [
-    "packages/components/*",
-    "packages/containers/*",
-    "packages/utilities/*"
+    "packages/*/*"
   ],
   "version": "independent",
   "npmClient": "yarn",
