@@ -2,7 +2,7 @@
 
 ## Description
 
-The `WebVitals` utility does...
+The `WebVitals` utility provides a configurable hook which will collect device capability metrics (effective network type, device CPU count, and device memory) and Web Vitals metrics (Cumulative Layout Shift, Time To First Byte, etc) for each page view, and then send those metrics to a reporting endpoint when the user leaves the page.
 
 ## Installation
 
@@ -12,33 +12,55 @@ npm install @bbc/web-vitals --save
 
 ## Props
 
-| Argument  | Type | Required | Default | Example |
-| --------- | ---- | -------- | ------- | ------- |
-| No props. |      |          |         |         |
+| Argument          | Type     | Required | Default    | Example             |
+| ----------------- | -------- | -------- | ---------- | ------------------- |
+| enabled           | Boolean  | No       | false      | `{ enabled: true }` |
+| reportingEndpoint | String   | Yes      | N/A        | `{ reportingEndpoint: 'https://url.to.report.to/analytics' }` |
+| loggerCallback    | Function | No       | `() => {}` | `{ loggerCallback: (error) => console.error(error) }` |
+| sampleRate        | Integer  | No       | 100        | `{ sampleRate: 5 }` |
+| reportParams      | Array of Objects | No | `[]`     | `{ reportParams: [{ name: 'page_type', value: 'STY' }] }` |
 
 ## Usage
 
-<!-- Description of the utility usage -->
+The hook can be configured in a number of ways:
 
-```
-import WebVitals from "@bbc/web-vitals"
+* `enabled` - setting this to `true` will enable sending these metrics to the reporting endpoint. This is so that the reporting functionality can be turned on only when users have agreed to the appropriate privacy and tracking settings where appropriate.
+* `reportingEndpoint` - the endpoint you wish to send your metrics to
+* `loggerCallback` - a function that will be called whenever an attempt to send the metrics fails.
+* `sampleRate` - providing a number between 1-100 will set the percentage of sampling, to prevent overloading the backend reporting server. e.g. a `sampleRate` of `5` will lead to a 5% change that a given page view's metrics will be sent to the reporting server.
+* `reportParams` - an array of objects (consisting of `name` and `value`) that will define query string parameters appended to the reporting endpoint. As an example, providing `[{ name: 'page_type', value: 'STY' }]` will cause `?page_type=STY` to be appended to the reporting endpoint.
+
+```jsx
+import useWebVitals from "@bbc/web-vitals";
+import logger from "./logger";
+
+const Page = props => {
+  const enabled = isOnClient() && hasUserAcceptedTracking();
+  useWebVitals({
+    enabled,
+    reportingEndpoint: 'https://url.to.report.to/analytics',
+    loggerCallback = logger.error,
+    sampleRate: 50,
+    reportParams: [{ name: 'page_type', value: 'STY' }],
+  });
+
+  return (
+    <PageComponents />
+  );
+};
 ```
 
 ### When to use this utility
 
-<!-- Description of the where the utility can be used -->
+This utility should ideally be used as close to the top-level of your app as is practical. You should follow due diligence in regards to checking if your site visitor needs to accept any personalisation or tracking permissions under relevant local laws, and use this in determining the value of the `enabled` prop.
+
+`useEffect` hooks are only run client-side, but when using this hook in combination with Server Side Rendering, you may wish to also include a check of whether the code is running client-side in order to ensure that you do not get inconsistencies between your server's capabilities and the user's.
 
 ### When not to use this utility
 
-<!-- Description of the where the utility shouldn't can be used -->
+In non-page-level components, especially where these components may be added multiple times to a page.
 
-### Accessibility notes
-
-<!-- Information about accessibility for this utility -->
-
-### Roadmap
-
-<!-- Known future changes of the utility -->
+In situations where users have not provided permission for the relevant personalisation or tracking permissions that may be required under relevant local laws.
 
 ## Contributing
 
