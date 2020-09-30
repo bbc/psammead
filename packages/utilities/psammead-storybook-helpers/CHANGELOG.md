@@ -3,7 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
-| 9.0.0 | [PR#xxxx](https://github.com/bbc/psammead/pull/xxxx) Support for BBC Reith Qalam |
+| 9.0.0 | [PR#3806](https://github.com/bbc/psammead/pull/3806) Support for BBC Reith Qalam |
 | 8.3.5 | [PR#3785](https://github.com/bbc/psammead/pull/3785) Talos - Bump Dependencies - @bbc/gel-foundations |
 | 8.3.4 | [PR#3623](https://github.com/bbc/psammead/pull/3623) Talos - Bump Dependencies - @bbc/gel-foundations |
 | 8.3.3 | [PR#3604](https://github.com/bbc/psammead/pull/3604) Talos - Bump Dependencies - @bbc/gel-foundations |
