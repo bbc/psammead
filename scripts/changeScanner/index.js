@@ -4,7 +4,7 @@ const getChanges = require('./getChanges');
 const errors = [];
 
 // Files required to have been changed with every psammead package change.
-const requiredChanges = ['CHANGELOG.md', 'package-lock.json', 'package.json'];
+const requiredChanges = ['CHANGELOG.md', 'package.json'];
 
 const changes = getChanges();
 

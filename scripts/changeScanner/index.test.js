@@ -59,12 +59,9 @@ describe(`changeScanner - index`, () => {
 
     const expectedMessages = [
       'Branch must update CHANGELOG.md in barfoo',
-      'Branch must update package-lock.json in barfoo',
       'Branch must update CHANGELOG.md in foobar',
-      'Branch must update package-lock.json in foobar',
       'Branch must update package.json in foobar',
       'Branch must update CHANGELOG.md in apples',
-      'Branch must update package-lock.json in apples',
       'Branch must update package.json in apples',
       '', // empty line for spacing
     ];
