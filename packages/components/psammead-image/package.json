@@ -26,8 +26,5 @@
   "keywords": [
     "bbc",
     "image"
-  ],
-  "scripts": {
-    "install:packages": "yarn install"
-  }
+  ]
 }

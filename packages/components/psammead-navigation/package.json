@@ -32,8 +32,5 @@
   "keywords": [
     "bbc",
     "navigation"
-  ],
-  "scripts": {
-    "install:packages": "yarn install"
-  }
+  ]
 }
