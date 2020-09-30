@@ -161,7 +161,7 @@
   "husky": {
     "hooks": {
       "pre-commit": "lint-staged",
-      "pre-push": "sh scripts/enforceVersions.sh && yarn run test:unit -- --changedSince=latest"
+      "pre-push": "yarn run test:unit -- --changedSince=latest"
     }
   },
   "spec": {
