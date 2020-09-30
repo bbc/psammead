@@ -205,5 +205,46 @@ describe('useWebVitals', () => {
 
       expect(loggerCallback).toHaveBeenCalledWith(error);
     });
+
+    describe('when a sampleRate is provided', () => {
+      it('should send web vitals data when the random number generated is equal to the provided rate', async () => {
+        jest.spyOn(Math, 'random').mockReturnValue(0.05);
+        mockSendBeacon();
+
+        renderHook(() =>
+          useWebVitals({ enabled, reportingEndpoint, sampleRate: 5 }),
+        );
+
+        await eventListeners.pagehide();
+
+        expect(navigator.sendBeacon).toHaveBeenCalled();
+      });
+
+      it('should send web vitals data when the random number generated is less than the provided rate', async () => {
+        jest.spyOn(Math, 'random').mockReturnValue(0.05);
+        mockSendBeacon();
+
+        renderHook(() =>
+          useWebVitals({ enabled, reportingEndpoint, sampleRate: 15 }),
+        );
+
+        await eventListeners.pagehide();
+
+        expect(navigator.sendBeacon).toHaveBeenCalled();
+      });
+
+      it('should not send web vitals data when the random number generated is more than the provided rate', async () => {
+        jest.spyOn(Math, 'random').mockReturnValue(0.35);
+        mockSendBeacon();
+
+        renderHook(() =>
+          useWebVitals({ enabled, reportingEndpoint, sampleRate: 20 }),
+        );
+
+        await eventListeners.pagehide();
+
+        expect(navigator.sendBeacon).not.toHaveBeenCalled();
+      });
+    });
   });
 });

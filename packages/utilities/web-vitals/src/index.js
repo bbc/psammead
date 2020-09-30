@@ -54,15 +54,22 @@ const sendBeacon = (rawBeacon, reportingEndpoint) => {
   });
 };
 
+const shouldSample = (sampleRate = 100) => {
+  const randomNumber = Math.floor(Math.random() * 100);
+  return randomNumber <= sampleRate;
+};
+
 const useWebVitals = ({
   enabled,
   reportingEndpoint,
   loggerCallback = noOp,
+  sampleRate,
 }) => {
   let pageLoadTime;
   const { effectiveConnectionType } = useNetworkStatus();
   const { numberOfLogicalProcessors } = useHardwareConcurrency();
   const { deviceMemory } = useMemoryStatus();
+
   const sendVitals = async () => {
     const pageExitTime = Date.now();
     const pageAge = pageExitTime - pageLoadTime;
@@ -72,7 +79,9 @@ const useWebVitals = ({
     ];
 
     try {
-      await sendBeacon(beacon, reportingEndpoint);
+      if (shouldSample(sampleRate)) {
+        await sendBeacon(beacon, reportingEndpoint);
+      }
     } catch (error) {
       loggerCallback(error);
     }
