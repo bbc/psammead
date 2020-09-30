@@ -42,19 +42,34 @@ const setCurrentUrl = () => {
   webVitalsBase.url = window.location.href;
 };
 
-const sendBeacon = (rawBeacon, reportingEndpoint) => {
+const appendReportParams = (reportingEndpoint, reportParams) => {
+  const url = new URL(reportingEndpoint);
+  const paramsString = reportParams
+    .map(param => `${param.name}=${param.value}`)
+    .join('&');
+
+  return url.search
+    ? `${reportingEndpoint}&${paramsString}`
+    : `${reportingEndpoint}?${paramsString}`;
+};
+
+const sendBeacon = (rawBeacon, reportingEndpoint, reportParams) => {
   const beacon = JSON.stringify(rawBeacon);
+  const beaconTarget = reportParams.length
+    ? appendReportParams(reportingEndpoint, reportParams)
+    : reportingEndpoint;
+
   if (navigator.sendBeacon) {
-    return navigator.sendBeacon(reportingEndpoint, beacon);
+    return navigator.sendBeacon(beaconTarget, beacon);
   }
-  return fetch(reportingEndpoint, {
+  return fetch(beaconTarget, {
     method: 'POST',
     headers: { 'Content-Type': 'application/reports+json' },
     body: beacon,
   });
 };
 
-const shouldSample = (sampleRate = 100) => {
+const shouldSample = sampleRate => {
   const randomNumber = Math.floor(Math.random() * 100);
   return randomNumber <= sampleRate;
 };
@@ -63,7 +78,8 @@ const useWebVitals = ({
   enabled,
   reportingEndpoint,
   loggerCallback = noOp,
-  sampleRate,
+  sampleRate = 100,
+  reportParams = [],
 }) => {
   let pageLoadTime;
   const { effectiveConnectionType } = useNetworkStatus();
@@ -80,7 +96,7 @@ const useWebVitals = ({
 
     try {
       if (shouldSample(sampleRate)) {
-        await sendBeacon(beacon, reportingEndpoint);
+        await sendBeacon(beacon, reportingEndpoint, reportParams);
       }
     } catch (error) {
       loggerCallback(error);
