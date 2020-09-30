@@ -5,7 +5,7 @@ const getPackages = require('../utilities/getPackages');
 const isAlpha = packageDir =>
   new Promise((resolve, reject) => {
     exec(
-      'npm version',
+      'yarn version',
       {
         cwd: packageDir,
       },
@@ -26,7 +26,7 @@ const runExec = async (version, packageDir) => {
 
   return new Promise((resolve, reject) => {
     exec(
-      `npm --no-git-tag-version version ${versionTag}`,
+      `yarn version --no-git-tag-version ${versionTag}`,
       {
         cwd: packageDir,
       },
