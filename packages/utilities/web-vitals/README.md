@@ -12,13 +12,13 @@ npm install @bbc/web-vitals --save
 
 ## Props
 
-| Argument          | Type     | Required | Default    | Example             |
-| ----------------- | -------- | -------- | ---------- | ------------------- |
-| enabled           | Boolean  | No       | false      | `{ enabled: true }` |
-| reportingEndpoint | String   | Yes      | N/A        | `{ reportingEndpoint: 'https://url.to.report.to/analytics' }` |
-| loggerCallback    | Function | No       | `() => {}` | `{ loggerCallback: (error) => console.error(error) }` |
-| sampleRate        | Integer  | No       | 100        | `{ sampleRate: 5 }` |
-| reportParams      | Array of Objects | No | `[]`     | `{ reportParams: [{ name: 'page_type', value: 'STY' }] }` |
+| Argument          | Type     | Required | Default     | Example             |
+| ----------------- | -------- | -------- | ----------- | ------------------- |
+| enabled           | Boolean  | No       | false       | `{ enabled: true }` |
+| reportingEndpoint | String   | Yes      | N/A         | `{ reportingEndpoint: 'https://url.to.report.to/analytics' }` |
+| loggerCallback    | Function | No       | `() => {}`  | `{ loggerCallback: (error) => console.error(error) }` |
+| sampleRate        | Integer  | No       | 100         | `{ sampleRate: 5 }` |
+| reportParams      | Object   | No       | `undefined` | `{ reportParams: { pageType: 'STY' }` |
 
 ## Usage
 
@@ -28,7 +28,7 @@ The hook can be configured in a number of ways:
 * `reportingEndpoint` - the endpoint you wish to send your metrics to
 * `loggerCallback` - a function that will be called whenever an attempt to send the metrics fails.
 * `sampleRate` - providing a number between 1-100 will set the percentage of sampling, to prevent overloading the backend reporting server. e.g. a `sampleRate` of `5` will lead to a 5% change that a given page view's metrics will be sent to the reporting server.
-* `reportParams` - an array of objects (consisting of `name` and `value`) that will define query string parameters appended to the reporting endpoint. As an example, providing `[{ name: 'page_type', value: 'STY' }]` will cause `?page_type=STY` to be appended to the reporting endpoint.
+* `reportParams` - an object that will define query string parameters appended to the reporting endpoint. As an example, providing `{ pageType: 'STY' }` will cause `?pageType=STY` to be appended to the reporting endpoint.
 
 ```jsx
 import useWebVitals from "@bbc/web-vitals";
@@ -41,7 +41,7 @@ const Page = props => {
     reportingEndpoint: 'https://url.to.report.to/analytics',
     loggerCallback = logger.error,
     sampleRate: 50,
-    reportParams: [{ name: 'page_type', value: 'STY' }],
+    reportParams: { pageType: 'STY' },
   });
 
   return (

@@ -103,10 +103,10 @@ describe('useWebVitals', () => {
 
     it('appends the report params as query string parameters to the reporting endpoint if one is provided', async () => {
       mockSendBeacon();
-      const reportParams = [
-        { name: 'page_type', value: 'STY' },
-        { name: 'technology_stack', value: 'simorgh' },
-      ];
+      const reportParams = {
+        pageType: 'STY',
+        technologyStack: 'simorgh',
+      };
       renderHook(() =>
         useWebVitals({ enabled, reportingEndpoint, reportParams }),
       );
@@ -114,7 +114,7 @@ describe('useWebVitals', () => {
       await eventListeners.pagehide();
 
       expect(navigator.sendBeacon).toHaveBeenCalledWith(
-        `${reportingEndpoint}?page_type=STY&technology_stack=simorgh`,
+        `${reportingEndpoint}?pageType=STY&technologyStack=simorgh`,
         expect.any(String),
       );
     });
@@ -122,10 +122,10 @@ describe('useWebVitals', () => {
     it('does not override any existing query parameters on the reporting endpoint', async () => {
       mockSendBeacon();
       const reportingEndpointWithQuery = `${reportingEndpoint}?analytics=web-vitals`;
-      const reportParams = [
-        { name: 'page_type', value: 'STY' },
-        { name: 'technology_stack', value: 'simorgh' },
-      ];
+      const reportParams = {
+        pageType: 'STY',
+        technologyStack: 'simorgh',
+      };
       renderHook(() =>
         useWebVitals({
           enabled,
@@ -137,7 +137,7 @@ describe('useWebVitals', () => {
       await eventListeners.pagehide();
 
       expect(navigator.sendBeacon).toHaveBeenCalledWith(
-        `${reportingEndpoint}?analytics=web-vitals&page_type=STY&technology_stack=simorgh`,
+        `${reportingEndpoint}?analytics=web-vitals&pageType=STY&technologyStack=simorgh`,
         expect.any(String),
       );
     });

@@ -44,8 +44,9 @@ const setCurrentUrl = () => {
 
 const appendReportParams = (reportingEndpoint, reportParams) => {
   const url = new URL(reportingEndpoint);
-  const paramsString = reportParams
-    .map(param => `${param.name}=${param.value}`)
+  const reportParamKeys = Object.keys(reportParams);
+  const paramsString = reportParamKeys
+    .map(param => `${param}=${reportParams[param]}`)
     .join('&');
 
   return url.search
@@ -55,7 +56,7 @@ const appendReportParams = (reportingEndpoint, reportParams) => {
 
 const sendBeacon = (rawBeacon, reportingEndpoint, reportParams) => {
   const beacon = JSON.stringify(rawBeacon);
-  const beaconTarget = reportParams.length
+  const beaconTarget = reportParams
     ? appendReportParams(reportingEndpoint, reportParams)
     : reportingEndpoint;
 
@@ -79,7 +80,7 @@ const useWebVitals = ({
   reportingEndpoint,
   loggerCallback = noOp,
   sampleRate = 100,
-  reportParams = [],
+  reportParams,
 }) => {
   let pageLoadTime;
   const { effectiveConnectionType } = useNetworkStatus();
