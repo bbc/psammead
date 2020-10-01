@@ -5,7 +5,7 @@
   "main": "dist/index.js",
   "module": "esm/index.js",
   "scripts": {
-    "install:packages": "yarn install"
+    "install:packages": "yarn install --focus"
   },
   "repository": {
     "type": "git",

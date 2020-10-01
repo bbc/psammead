@@ -33,6 +33,6 @@
     "promo"
   ],
   "scripts": {
-    "install:packages": "yarn install"
+    "install:packages": "yarn install --focus"
   }
 }

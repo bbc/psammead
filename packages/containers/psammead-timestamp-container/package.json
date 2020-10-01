@@ -37,6 +37,6 @@
     "moment": "^2.24.0"
   },
   "scripts": {
-    "install:packages": "yarn install"
+    "install:packages": "yarn install --focus"
   }
 }
