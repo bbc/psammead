@@ -19,8 +19,9 @@ packages/**/esm
 
 published.txt
 
-.pnp.js 
-
-**/.yarn/cache
-**/.yarn/build-state.yml
-**/.yarn/install-state.gz
+.yarn/*
+!.yarn/releases
+!.yarn/plugins
+!.yarn/sdks
+!.yarn/versions
+.pnp.*
