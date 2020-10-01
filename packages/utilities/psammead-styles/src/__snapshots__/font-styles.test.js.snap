@@ -1212,7 +1212,7 @@ exports[`should render SansRegular correctly for archive 1`] = `
 "
    font-family: ReithSans, Helvetica, Arial, sans-serif;
    font-weight: 400;
-   font-style: normal; 
+   font-style: normal;
   "
 `;
 
@@ -1244,7 +1244,7 @@ exports[`should render SansRegular correctly for cymrufyw 1`] = `
 "
    font-family: ReithSans, Helvetica, Arial, sans-serif;
    font-weight: 400;
-   font-style: normal; 
+   font-style: normal;
   "
 `;
 
@@ -1324,7 +1324,7 @@ exports[`should render SansRegular correctly for learningenglish 1`] = `
 "
    font-family: ReithSans, Helvetica, Arial, sans-serif;
    font-weight: 400;
-   font-style: normal; 
+   font-style: normal;
   "
 `;
 
@@ -1340,7 +1340,7 @@ exports[`should render SansRegular correctly for mundo 1`] = `
 "
    font-family: ReithSans, Helvetica, Arial, sans-serif;
    font-weight: 400;
-   font-style: normal; 
+   font-style: normal;
   "
 `;
 
@@ -1348,7 +1348,7 @@ exports[`should render SansRegular correctly for naidheachdan 1`] = `
 "
    font-family: ReithSans, Helvetica, Arial, sans-serif;
    font-weight: 400;
-   font-style: normal; 
+   font-style: normal;
   "
 `;
 
@@ -1364,7 +1364,7 @@ exports[`should render SansRegular correctly for news 1`] = `
 "
    font-family: ReithSans, Helvetica, Arial, sans-serif;
    font-weight: 400;
-   font-style: normal; 
+   font-style: normal;
   "
 `;
 
@@ -1404,7 +1404,7 @@ exports[`should render SansRegular correctly for portuguese 1`] = `
 "
    font-family: ReithSans, Helvetica, Arial, sans-serif;
    font-weight: 400;
-   font-style: normal; 
+   font-style: normal;
   "
 `;
 
@@ -1420,7 +1420,7 @@ exports[`should render SansRegular correctly for russian 1`] = `
 "
    font-family: ReithSans, Helvetica, Arial, sans-serif;
    font-weight: 400;
-   font-style: normal; 
+   font-style: normal;
   "
 `;
 
@@ -1428,7 +1428,7 @@ exports[`should render SansRegular correctly for scotland 1`] = `
 "
    font-family: ReithSans, Helvetica, Arial, sans-serif;
    font-weight: 400;
-   font-style: normal; 
+   font-style: normal;
   "
 `;
 
@@ -1500,7 +1500,7 @@ exports[`should render SansRegular correctly for turkce 1`] = `
 "
    font-family: ReithSans, Helvetica, Arial, sans-serif;
    font-weight: 400;
-   font-style: normal; 
+   font-style: normal;
   "
 `;
 
@@ -1548,7 +1548,7 @@ exports[`should render SansRegular correctly for weather 1`] = `
 "
    font-family: ReithSans, Helvetica, Arial, sans-serif;
    font-weight: 400;
-   font-style: normal; 
+   font-style: normal;
   "
 `;
 
@@ -1604,7 +1604,7 @@ exports[`should render SansRegularItalic correctly for archive 1`] = `
 "
    font-family: ReithSans, Helvetica, Arial, sans-serif;
    font-weight: 400;
-   font-style: italic; 
+   font-style: italic;
   "
 `;
 
@@ -1636,7 +1636,7 @@ exports[`should render SansRegularItalic correctly for cymrufyw 1`] = `
 "
    font-family: ReithSans, Helvetica, Arial, sans-serif;
    font-weight: 400;
-   font-style: italic; 
+   font-style: italic;
   "
 `;
 
@@ -1716,7 +1716,7 @@ exports[`should render SansRegularItalic correctly for learningenglish 1`] = `
 "
    font-family: ReithSans, Helvetica, Arial, sans-serif;
    font-weight: 400;
-   font-style: italic; 
+   font-style: italic;
   "
 `;
 
@@ -1732,7 +1732,7 @@ exports[`should render SansRegularItalic correctly for mundo 1`] = `
 "
    font-family: ReithSans, Helvetica, Arial, sans-serif;
    font-weight: 400;
-   font-style: italic; 
+   font-style: italic;
   "
 `;
 
@@ -1740,7 +1740,7 @@ exports[`should render SansRegularItalic correctly for naidheachdan 1`] = `
 "
    font-family: ReithSans, Helvetica, Arial, sans-serif;
    font-weight: 400;
-   font-style: italic; 
+   font-style: italic;
   "
 `;
 
@@ -1756,7 +1756,7 @@ exports[`should render SansRegularItalic correctly for news 1`] = `
 "
    font-family: ReithSans, Helvetica, Arial, sans-serif;
    font-weight: 400;
-   font-style: italic; 
+   font-style: italic;
   "
 `;
 
@@ -1796,7 +1796,7 @@ exports[`should render SansRegularItalic correctly for portuguese 1`] = `
 "
    font-family: ReithSans, Helvetica, Arial, sans-serif;
    font-weight: 400;
-   font-style: italic; 
+   font-style: italic;
   "
 `;
 
@@ -1812,7 +1812,7 @@ exports[`should render SansRegularItalic correctly for russian 1`] = `
 "
    font-family: ReithSans, Helvetica, Arial, sans-serif;
    font-weight: 400;
-   font-style: italic; 
+   font-style: italic;
   "
 `;
 
@@ -1820,7 +1820,7 @@ exports[`should render SansRegularItalic correctly for scotland 1`] = `
 "
    font-family: ReithSans, Helvetica, Arial, sans-serif;
    font-weight: 400;
-   font-style: italic; 
+   font-style: italic;
   "
 `;
 
@@ -1892,7 +1892,7 @@ exports[`should render SansRegularItalic correctly for turkce 1`] = `
 "
    font-family: ReithSans, Helvetica, Arial, sans-serif;
    font-weight: 400;
-   font-style: italic; 
+   font-style: italic;
   "
 `;
 
@@ -1940,7 +1940,7 @@ exports[`should render SansRegularItalic correctly for weather 1`] = `
 "
    font-family: ReithSans, Helvetica, Arial, sans-serif;
    font-weight: 400;
-   font-style: italic; 
+   font-style: italic;
   "
 `;
 
@@ -2780,7 +2780,7 @@ exports[`should render SerifMedium correctly for archive 1`] = `
 "
    font-family: ReithSerif, Helvetica, Arial, sans-serif;
    font-weight: 500;
-   font-style: normal; 
+   font-style: normal;
   "
 `;
 
@@ -2812,7 +2812,7 @@ exports[`should render SerifMedium correctly for cymrufyw 1`] = `
 "
    font-family: ReithSerif, Helvetica, Arial, sans-serif;
    font-weight: 500;
-   font-style: normal; 
+   font-style: normal;
   "
 `;
 
@@ -2892,7 +2892,7 @@ exports[`should render SerifMedium correctly for learningenglish 1`] = `
 "
    font-family: ReithSerif, Helvetica, Arial, sans-serif;
    font-weight: 500;
-   font-style: normal; 
+   font-style: normal;
   "
 `;
 
@@ -2908,7 +2908,7 @@ exports[`should render SerifMedium correctly for mundo 1`] = `
 "
    font-family: ReithSerif, Helvetica, Arial, sans-serif;
    font-weight: 500;
-   font-style: normal; 
+   font-style: normal;
   "
 `;
 
@@ -2916,7 +2916,7 @@ exports[`should render SerifMedium correctly for naidheachdan 1`] = `
 "
    font-family: ReithSerif, Helvetica, Arial, sans-serif;
    font-weight: 500;
-   font-style: normal; 
+   font-style: normal;
   "
 `;
 
@@ -2932,7 +2932,7 @@ exports[`should render SerifMedium correctly for news 1`] = `
 "
    font-family: ReithSerif, Helvetica, Arial, sans-serif;
    font-weight: 500;
-   font-style: normal; 
+   font-style: normal;
   "
 `;
 
@@ -2972,7 +2972,7 @@ exports[`should render SerifMedium correctly for portuguese 1`] = `
 "
    font-family: ReithSerif, Helvetica, Arial, sans-serif;
    font-weight: 500;
-   font-style: normal; 
+   font-style: normal;
   "
 `;
 
@@ -2988,7 +2988,7 @@ exports[`should render SerifMedium correctly for russian 1`] = `
 "
    font-family: ReithSerif, Helvetica, Arial, sans-serif;
    font-weight: 500;
-   font-style: normal; 
+   font-style: normal;
   "
 `;
 
@@ -2996,7 +2996,7 @@ exports[`should render SerifMedium correctly for scotland 1`] = `
 "
    font-family: ReithSerif, Helvetica, Arial, sans-serif;
    font-weight: 500;
-   font-style: normal; 
+   font-style: normal;
   "
 `;
 
@@ -3068,7 +3068,7 @@ exports[`should render SerifMedium correctly for turkce 1`] = `
 "
    font-family: ReithSerif, Helvetica, Arial, sans-serif;
    font-weight: 500;
-   font-style: normal; 
+   font-style: normal;
   "
 `;
 
@@ -3116,7 +3116,7 @@ exports[`should render SerifMedium correctly for weather 1`] = `
 "
    font-family: ReithSerif, Helvetica, Arial, sans-serif;
    font-weight: 500;
-   font-style: normal; 
+   font-style: normal;
   "
 `;
 
