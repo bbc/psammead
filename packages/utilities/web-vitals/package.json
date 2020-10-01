@@ -7,7 +7,7 @@
   "description": "Generic hook for reporting web vitals metrics to an endpoint",
   "repository": {
     "type": "git",
-    "url": "https://github.com/BBC-News/psammead/tree/latest/packages/utilities/web-vitals"
+    "url": "https://github.com/bbc/psammead/tree/latest/packages/utilities/web-vitals"
   },
   "author": {
     "name": "Psammead Maintainers",
