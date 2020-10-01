@@ -1,6 +1,6 @@
 {
   "name": "@bbc/psammead-timestamp",
-  "version": "2.2.34",
+  "version": "2.2.35",
   "main": "dist/index.js",
   "module": "esm/index.js",
   "sideEffects": false,
@@ -20,7 +20,7 @@
   "homepage": "https://github.com/bbc/psammead/blob/latest/packages/components/psammead-timestamp/README.md",
   "dependencies": {
     "@bbc/gel-foundations": "^4.3.0",
-    "@bbc/psammead-styles": "^4.4.3"
+    "@bbc/psammead-styles": "^4.5.0"
   },
   "peerDependencies": {
     "styled-components": "^4.3.2"
