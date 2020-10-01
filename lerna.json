@@ -1,7 +1,7 @@
 {
   "command": {
     "bootstrap": {
-      "npmClientArgs": ["--no-lockfile"]
+      "npmClientArgs": [""]
     }
   },
   "packages": [
