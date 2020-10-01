@@ -2,7 +2,23 @@
 
 ## Description
 
-The `WebVitals` utility provides a configurable hook which will collect device capability metrics (effective network type, device CPU count, and device memory) and Web Vitals metrics (Cumulative Layout Shift, Time To First Byte, etc) for each page view, and then send those metrics to a reporting endpoint when the user leaves the page.
+The `WebVitals` utility provides a configurable hook which will collect device capability metrics and [Web Vitals](https://web.dev/vitals/?gclid=CjwKCAjw-5v7BRAmEiwAJ3DpuGq4yydZBEHoLscEvvrOE5Ef01huTLJebM6jdIWsGKS5L3QeMT5GfhoCNpkQAvD_BwE) metrics for each page view, and then send those metrics to a reporting endpoint when the user leaves the page.
+
+### Metrics we report on
+
+#### Core Web-Vitals
+
+- [CLS](https://web.dev/cls/) (Cumulative Layout Shift)
+- [LCP](https://web.dev/lcp/) (Largest Contentful Paint)
+- [FID](https://web.dev/fid/) (First Input Delay)
+- [FCP](https://web.dev/fcp/) (First Contentful Paint)
+
+### Other data (useful for categorising the web-vitals data received)
+
+- [TTFB](https://web.dev/time-to-first-byte/) (Time To First Byte)
+- Device Memory
+- Device CPU
+- Effective Connection Type
 
 ## Installation
 
@@ -24,11 +40,11 @@ npm install @bbc/web-vitals --save
 
 The hook can be configured in a number of ways:
 
-* `enabled` - setting this to `true` will enable sending these metrics to the reporting endpoint. This is so that the reporting functionality can be turned on only when users have agreed to the appropriate privacy and tracking settings where appropriate.
-* `reportingEndpoint` - the endpoint you wish to send your metrics to
-* `loggerCallback` - a function that will be called whenever an attempt to send the metrics fails.
-* `sampleRate` - providing a number between 1-100 will set the percentage of sampling, to prevent overloading the backend reporting server. e.g. a `sampleRate` of `5` will lead to a 5% change that a given page view's metrics will be sent to the reporting server.
-* `reportParams` - an object that will define query string parameters appended to the reporting endpoint. As an example, providing `{ pageType: 'STY' }` will cause `?pageType=STY` to be appended to the reporting endpoint.
+- `enabled` - setting this to `true` will enable sending these metrics to the reporting endpoint. This is so that the reporting functionality can be turned on only when users have agreed to the appropriate privacy and tracking settings where appropriate.
+- `reportingEndpoint` - the endpoint you wish to send your metrics to
+- `loggerCallback` - a function that will be called whenever an attempt to send the metrics fails.
+- `sampleRate` - providing a number between 1-100 will set the percentage of sampling, to prevent overloading the backend reporting server. e.g. a `sampleRate` of `5` will mean that metrics for 5% of requests will be sent to the reporting server.
+- `reportParams` - an object that will define query string parameters appended to the reporting endpoint. As an example, providing `{ pageType: 'STY' }` will cause `?pageType=STY` to be appended to the reporting endpoint.
 
 ```jsx
 import useWebVitals from "@bbc/web-vitals";
