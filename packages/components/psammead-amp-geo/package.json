@@ -29,7 +29,6 @@
     "geo"
   ],
   "scripts": {
-    "install:packages": "yarn install --no-lockfile",
-    "ci:packages": "yarn install --frozen-lockfile"
+    "install:packages": "yarn install"
   }
 }

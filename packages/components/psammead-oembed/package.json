@@ -28,6 +28,6 @@
     "react": "^16.12.0"
   },
   "scripts": {
-    "install:packages": "yarn install --no-lockfile"
+    "install:packages": "yarn install"
   }
 }
