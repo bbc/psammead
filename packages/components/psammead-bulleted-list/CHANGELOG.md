@@ -2,6 +2,7 @@
 
 | Version | Description |
 |---------|-------------|
+| 1.0.18 | [PR#3811](https://github.com/bbc/psammead/pull/3811) Talos - Bump Dependencies - @bbc/psammead-styles |
 | 1.0.17 | [PR#3785](https://github.com/bbc/psammead/pull/3785) Talos - Bump Dependencies - @bbc/gel-foundations |
 | 1.0.16 | [PR#3783](https://github.com/bbc/psammead/pull/3783) Fix circle in bullet |
 | 1.0.15 | [PR#3725](https://github.com/bbc/psammead/pull/3725) Create a bullet out of CSS rather than using a background image. |
