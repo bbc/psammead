@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 3.2.18 | [PR#3813](https://github.com/bbc/psammead/pull/3813) Talos - Bump Dependencies - @bbc/psammead-story-promo |
 | 3.2.17 | [PR#3811](https://github.com/bbc/psammead/pull/3811) Talos - Bump Dependencies - @bbc/psammead-styles |
 | 3.2.16 | [PR#3798](https://github.com/bbc/psammead/pull/3798) Talos - Bump Dependencies
 | 3.2.15 | [PR#3785](https://github.com/bbc/psammead/pull/3785) Talos - Bump Dependencies - @bbc/gel-foundations, @bbc/psammead-story-promo |

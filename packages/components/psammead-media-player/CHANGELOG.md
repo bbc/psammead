@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version       | Description                                                                                                                  |
 | ------------- | ---------------------------------------------------------------------------------------------------------------------------- |
+| 3.0.2 | [PR#3813](https://github.com/bbc/psammead/pull/3813) Talos - Bump Dependencies - @bbc/psammead-image-placeholder, @bbc/psammead-play-button |
 | 3.0.1 | [PR#3798](https://github.com/bbc/psammead/pull/3798) Talos - Bump Dependencies
 | 3.0.0  | [PR#3733](https://github.com/bbc/psammead/pull/3733) Removed margin bottom for the media player - video only |
 | 2.10.2 | [PR#3712](https://github.com/bbc/psammead/pull/3712) Talos - Bump Dependencies - @bbc/psammead-image-placeholder, @bbc/psammead-play-button |
