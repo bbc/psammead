@@ -2,4 +2,4 @@
 
 | Version | Description |
 |---------|-------------|
-| 1.0.0   | [PR#XX](https://github.com/BBC-News/psammead/pull/XX) Initial creation of package. |
+| 1.0.0   | [PR#3784](https://github.com/bbc/psammead/pull/3784) Initial creation of package. |
