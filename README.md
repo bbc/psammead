@@ -48,7 +48,7 @@ git clone git@github.com:bbc/psammead.git
 ### :hammer: Setup Local Environment
 
 ```
-cd psammead && yarn install
+cd psammead && yarn install:packages
 ```
 
 ### :runner: Run tests
