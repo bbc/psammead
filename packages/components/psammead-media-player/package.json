@@ -35,6 +35,6 @@
     "@bbc/psammead-play-button": "^1.1.22"
   },
   "scripts": {
-    "install:packages": "yarn install --focus"
+    "install:packages": "yarn install"
   }
 }

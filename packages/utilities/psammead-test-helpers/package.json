@@ -30,6 +30,6 @@
     "react-helmet": "^6.0.0"
   },
   "scripts": {
-    "install:packages": "yarn install --focus"
+    "install:packages": "yarn install"
   }
 }

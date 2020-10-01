@@ -27,6 +27,6 @@
     "styled-components": "^4.4.1"
   },
   "scripts": {
-    "install:packages": "yarn install --focus"
+    "install:packages": "yarn install"
   }
 }
