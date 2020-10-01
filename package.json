@@ -5,9 +5,7 @@
   "main": "index.js",
   "private": true,
   "workspaces": [
-    "packages/components/*",
-    "packages/containers/*",
-    "packages/utilities/*"
+    "packages/*/*"
   ],
   "scripts": {
     "build": "yarn run build:cjs && yarn run build:esm",
@@ -17,7 +15,8 @@
     "bumpChangelogs": "node scripts/bumpChangelogs/cli",
     "bumpPackages": "node scripts/bumpPackages/cli",
     "changeScanner": "node scripts/changeScanner",
-    "install:packages": "yarn cache clean && yarn install",
+    "ci:packages": "yarn install --frozen-lockfile",
+    "install:packages": "yarn install && lerna exec --parallel -- yarn install",
     "create:package": "yo .yeoman",
     "deploy-storybook": "gh-pages -d storybook_dist",
     "postinstall": "yarn run build",
