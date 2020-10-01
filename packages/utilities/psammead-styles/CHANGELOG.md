@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 4.5.0 | [PR#3771](https://github.com/bbc/psammead/pull/3771) Create Optimo Base service |
 | 4.4.3 | [PR#3707](https://github.com/bbc/psammead/pull/3707) fix propType errors |
 | 4.4.2 | [PR#3660](https://github.com/bbc/psammead/pull/3660) Update C_LUNAR_LIGHT |
 | 4.4.1 | [PR#3590](https://github.com/bbc/psammead/pull/3590) Add C_MIDNIGHT_BLACK |
