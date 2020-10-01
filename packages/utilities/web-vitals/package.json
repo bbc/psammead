@@ -17,7 +17,7 @@
   "bugs": {
     "url": "https://github.com/bbc/psammead/issues"
   },
-  "homepage": "https://github.com/BBC-News/psammead/blob/latest/packages/utilities/web-vitals/README.md",
+  "homepage": "https://github.com/bbc/psammead/blob/latest/packages/utilities/web-vitals/README.md",
   "dependencies": {
     "cross-fetch": "^3.0.6",
     "react-adaptive-hooks": "0.0.8",
