@@ -12,7 +12,7 @@ Object.values(oEmbeds).forEach(oEmbed => {
   fixtures[oEmbed.provider_name] = oEmbed;
 });
 
-storiesOf('Components|OEmbed', module)
+storiesOf('Components/OEmbed', module)
   .addDecorator(withKnobs({ escapeHTML: false }))
   .addDecorator(withServicesKnob())
   .add(

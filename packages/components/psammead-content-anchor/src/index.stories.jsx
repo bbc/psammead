@@ -82,7 +82,7 @@ const renderParagraphs = ({ text, script, service }) =>
     </Paragraph>,
   );
 
-storiesOf('Components|ContentAnchor', module)
+storiesOf('Components/ContentAnchor', module)
   .addDecorator(withKnobs)
   .addDecorator(withServicesKnob({ defaultService: 'swahili' }))
   .add(

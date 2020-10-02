@@ -26,7 +26,7 @@ const Text = ({ dir, script, service, shortText, text }) => (
   </ConsentBannerText>
 );
 
-const STORY_KIND = 'Components|ConsentBanner';
+const STORY_KIND = 'Components/ConsentBanner';
 const BANNER_TEXT = 'Changes to our Privacy and Cookie Policy ';
 
 Text.propTypes = {
