@@ -41,6 +41,18 @@ const mockSendBeacon = () => {
   navigator.sendBeacon = jest.fn();
 };
 
+const readBlob = blob =>
+  new Promise((resolve, reject) => {
+    const reader = new FileReader();
+    reader.onloadend = ({ target: { result } }) => {
+      resolve(result);
+    };
+    reader.onerror = e => {
+      reject(e);
+    };
+    reader.readAsText(blob);
+  });
+
 describe('useWebVitals', () => {
   beforeEach(() => {
     mockEventListener('pagehide');
@@ -84,7 +96,7 @@ describe('useWebVitals', () => {
 
       expect(navigator.sendBeacon).toHaveBeenCalledWith(
         reportingEndpoint,
-        expect.any(String),
+        expect.any(Blob),
       );
     });
 
@@ -115,7 +127,7 @@ describe('useWebVitals', () => {
 
       expect(navigator.sendBeacon).toHaveBeenCalledWith(
         `${reportingEndpoint}?pageType=STY&technologyStack=simorgh`,
-        expect.any(String),
+        expect.any(Blob),
       );
     });
 
@@ -138,7 +150,7 @@ describe('useWebVitals', () => {
 
       expect(navigator.sendBeacon).toHaveBeenCalledWith(
         `${reportingEndpoint}?analytics=web-vitals&pageType=STY&technologyStack=simorgh`,
-        expect.any(String),
+        expect.any(Blob),
       );
     });
 
@@ -167,7 +179,8 @@ describe('useWebVitals', () => {
         }),
       ];
 
-      const sentBeacon = navigator.sendBeacon.mock.calls[0][1];
+      const blob = navigator.sendBeacon.mock.calls[0][1];
+      const sentBeacon = await readBlob(blob);
 
       expect(JSON.parse(sentBeacon)).toEqual(expectedBeacon);
     });
@@ -189,7 +202,8 @@ describe('useWebVitals', () => {
         }),
       ];
 
-      const sentBeacon = navigator.sendBeacon.mock.calls[0][1];
+      const blob = navigator.sendBeacon.mock.calls[0][1];
+      const sentBeacon = await readBlob(blob);
 
       expect(JSON.parse(sentBeacon)).toEqual(expectedBeacon);
     });
@@ -208,7 +222,8 @@ describe('useWebVitals', () => {
         }),
       ];
 
-      const sentBeacon = navigator.sendBeacon.mock.calls[0][1];
+      const blob = navigator.sendBeacon.mock.calls[0][1];
+      const sentBeacon = await readBlob(blob);
 
       expect(JSON.parse(sentBeacon)).toEqual(expectedBeacon);
     });
@@ -228,7 +243,8 @@ describe('useWebVitals', () => {
         }),
       ];
 
-      const sentBeacon = navigator.sendBeacon.mock.calls[0][1];
+      const blob = navigator.sendBeacon.mock.calls[0][1];
+      const sentBeacon = await readBlob(blob);
 
       expect(JSON.parse(sentBeacon)).toEqual(expectedBeacon);
     });
