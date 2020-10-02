@@ -4,7 +4,14 @@
 | Version | Description |
 |---------|-------------|
 
-| 2.5.5 | [PR#3728](https://github.com/bbc/psammead/pull/3728) Update Storybook from v5.3.19 to v6.0.22 & fix breaking changes |
+| 2.5.0 | [PR#3728](https://github.com/bbc/psammead/pull/3728) Update Storybook from v5.3.19 to v6.0.22, introducing docs & fix breaking changes |
+| 2.4.12 | [PR#3812](https://github.com/bbc/psammead/pull/3812) Removing slack notifications for publishing of packages |
+| 2.4.11 | [PR#3809](https://github.com/bbc/psammead/pull/3809) Bumping dependencies - eslint, stylelint, eslint-config-prettier, yargs-parser, browserslist |
+| 2.4.10 | [PR#3811](https://github.com/bbc/psammead/pull/3811) Talos - Bump Dependencies - @bbc/psammead-storybook-helpers, @bbc/psammead-styles |
+| 2.4.9 | [PR#3803](https://github.com/bbc/psammead/pull/3803) Talos - Bump Dependencies - @bbc/psammead-radio-schedule |
+| 2.4.8 | [PR#3799](https://github.com/bbc/psammead/pull/3799) Talos - Bump Dependencies - @bbc/psammead-brand, @bbc/psammead-bulletin, @bbc/psammead-media-player, @bbc/psammead-most-read, @bbc/psammead-radio-schedule, @bbc/psammead-timestamp-container |
+| 2.4.7 | [PR#3798](https://github.com/bbc/psammead/pull/3798) Talos - Bump Dependencies |
+| 2.4.6 | [PR#3785](https://github.com/bbc/psammead/pull/3785) Talos - Bump Dependencies - @bbc/gel-foundations, @bbc/psammead-bulleted-list, @bbc/psammead-bulletin, @bbc/psammead-consent-banner, @bbc/psammead-locales, @bbc/psammead-most-read, @bbc/psammead-navigation, @bbc/psammead-script-link, @bbc/psammead-story-promo |
 | 2.4.5 | [PR#3772](https://github.com/bbc/psammead/pull/3772) Bump prettier to 2.1.2 |
 | 2.4.4 | [PR#3780](https://github.com/bbc/psammead/pull/3780) Bump Dependencies - lint-staged, browserslist, @loadable/babel-plugin, @loadable/component, @testing-library/react |
 | 2.4.3 | [PR#3768](https://github.com/bbc/psammead/pull/3768) Update Node version |

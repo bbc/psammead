@@ -3,7 +3,10 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
-| 4.1.13 | [PR#3728](https://github.com/bbc/psammead/pull/3728) Tweaks following Storybook v5.3.19 to v6.0.22 update |
+| 4.1.16 | [PR#3728](https://github.com/bbc/psammead/pull/3728) Tweaks following Storybook v5.3.19 to v6.0.22 update |
+| 4.1.15 | [PR#3811](https://github.com/bbc/psammead/pull/3811) Talos - Bump Dependencies - @bbc/psammead-styles |
+| 4.1.14 | [PR#3798](https://github.com/bbc/psammead/pull/3798) Talos - Bump Dependencies
+| 4.1.13 | [PR#3785](https://github.com/bbc/psammead/pull/3785) Talos - Bump Dependencies - @bbc/gel-foundations |
 | 4.1.12 | [PR#3772](https://github.com/bbc/psammead/pull/3772) Bump prettier to 2.1.2 |
 | 4.1.11 | [PR#3712](https://github.com/bbc/psammead/pull/3712) Talos - Bump Dependencies - @bbc/psammead-grid |
 | 4.1.10 | [PR#3710](https://github.com/bbc/psammead/pull/3710) Talos - Bump Dependencies - @bbc/psammead-grid, @bbc/psammead-styles |
