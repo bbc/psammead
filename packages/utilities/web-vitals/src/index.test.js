@@ -110,6 +110,7 @@ describe('useWebVitals', () => {
         method: 'POST',
         headers: { 'Content-Type': 'application/reports+json' },
         body: expect.any(String),
+        mode: 'no-cors',
       });
     });
 

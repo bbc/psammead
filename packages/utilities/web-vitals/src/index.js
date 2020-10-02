@@ -69,6 +69,7 @@ const sendBeacon = (rawBeacon, reportingEndpoint, reportParams) => {
     method: 'POST',
     headers: { 'Content-Type': 'application/reports+json' },
     body: beacon,
+    mode: 'no-cors',
   });
 };
 
