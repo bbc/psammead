@@ -61,7 +61,9 @@ const sendBeacon = (rawBeacon, reportingEndpoint, reportParams) => {
     : reportingEndpoint;
 
   if (navigator.sendBeacon) {
-    return navigator.sendBeacon(beaconTarget, beacon);
+    const headers = { type: 'application/reports+json' };
+    const blob = new Blob([beacon], headers);
+    return navigator.sendBeacon(beaconTarget, blob);
   }
   return fetch(beaconTarget, {
     method: 'POST',
