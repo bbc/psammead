@@ -1435,7 +1435,6 @@ __metadata:
     find-cache-dir: ^3.0.0
     mkdirp: ^0.5.3
     moment-timezone: ^0.5.26
-    node: ^14.13.0
     object-hash: ^1.3.1
   peerDependencies:
     webpack: ^4.38.0
@@ -1445,6 +1444,8 @@ __metadata:
 "@bbc/psammead-amp-geo@^1.2.0, @bbc/psammead-amp-geo@workspace:packages/components/psammead-amp-geo":
   version: 0.0.0-use.local
   resolution: "@bbc/psammead-amp-geo@workspace:packages/components/psammead-amp-geo"
+  dependencies:
+    "@bbc/psammead-test-helpers": ^4.0.0
   peerDependencies:
     prop-types: ^15.7.2
     react: ^16.9.0
@@ -16115,13 +16116,6 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
-"node-bin-setup@npm:^1.0.0":
-  version: 1.0.6
-  resolution: "node-bin-setup@npm:1.0.6"
-  checksum: df58fd4b9d216ea5f6d257e51ccdfb071e3bfd3c7a48fb28be9c62873e2f56d6acfb1d8be0273157b412dad5e3f7e594b28b033774599dac941532a0b75c0504
-  languageName: node
-  linkType: hard
-
 "node-dir@npm:^0.1.10":
   version: 0.1.17
   resolution: "node-dir@npm:0.1.17"
@@ -16286,17 +16280,6 @@ fsevents@^1.2.7:
   version: 1.1.61
   resolution: "node-releases@npm:1.1.61"
   checksum: 3aab2b13f55e7a5fdabc9d3d7f211b3d4b614e50b50467d01a2554f609cabe3f655e37a04b52da05aeec2d2001e92bf10821f70b821145ffc2e11a3abd7b457e
-  languageName: node
-  linkType: hard
-
-"node@npm:^14.13.0":
-  version: 14.13.0
-  resolution: "node@npm:14.13.0"
-  dependencies:
-    node-bin-setup: ^1.0.0
-  bin:
-    node: bin/node
-  checksum: c1fe1f5e041a6c24f8118a1b44092acff82d19b656af87c58ce516fea8911936f958716b98d10646a7b99f12f62aae70baa9e502ca18e8a4a72dfb6cf8a204f0
   languageName: node
   linkType: hard
 
