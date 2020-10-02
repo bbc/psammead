@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 2.5.1 | [PR#3815](https://github.com/bbc/psammead/pull/3815) Talos - Bump Dependencies - @bbc/psammead-assets, @bbc/psammead-calendars, @bbc/psammead-locales, @bbc/psammead-storybook-helpers, @bbc/psammead-styles, @bbc/psammead-timestamp-container, @bbc/psammead-visually-hidden-text |
 
 | 2.5.0 | [PR#3728](https://github.com/bbc/psammead/pull/3728) Update Storybook from v5.3.19 to v6.0.22, introducing docs & fix breaking changes |
 | 2.4.12 | [PR#3812](https://github.com/bbc/psammead/pull/3812) Removing slack notifications for publishing of packages |
