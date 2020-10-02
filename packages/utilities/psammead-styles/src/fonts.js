@@ -18,7 +18,7 @@ const baseUrlShonarBangla =
   'https://ws-downloads.files.bbci.co.uk/fonts/ShonarBangla/v5.91/';
 
 const baseUrlBBCReithQalam =
-  'https://ws-downloads.files.bbci.co.uk/fonts/Qalam/v1.100/';
+  'https://ws-downloads.files.bbci.co.uk/fonts/ReithQalam/v1.100/';
 
 // Reith Serif
 export const F_REITH_SERIF_REGULAR = baseUrlOverride => `
