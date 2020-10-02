@@ -4,7 +4,7 @@
 | Version | Description |
 |---------|-------------|
 
-| 2.5.5 | [PR#3728](https://github.com/bbc/psammead/pull/3728) Update Storybook from v5.3.19 to v6.0.21 & fix breaking changes |
+| 2.5.5 | [PR#3728](https://github.com/bbc/psammead/pull/3728) Update Storybook from v5.3.19 to v6.0.22 & fix breaking changes |
 | 2.4.5 | [PR#3772](https://github.com/bbc/psammead/pull/3772) Bump prettier to 2.1.2 |
 | 2.4.4 | [PR#3780](https://github.com/bbc/psammead/pull/3780) Bump Dependencies - lint-staged, browserslist, @loadable/babel-plugin, @loadable/component, @testing-library/react |
 | 2.4.3 | [PR#3768](https://github.com/bbc/psammead/pull/3768) Update Node version |
