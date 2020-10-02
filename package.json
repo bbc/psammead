@@ -84,16 +84,6 @@
     "@bbc/psammead-play-button": "^1.1.22",
     "@bbc/psammead-radio-schedule": "3.0.20",
     "@bbc/psammead-rich-text-transforms": "^2.0.2",
-<<<<<<< HEAD
-    "@bbc/psammead-script-link": "^1.0.19",
-    "@bbc/psammead-section-label": "^5.0.12",
-    "@bbc/psammead-sitewide-links": "^4.0.16",
-    "@bbc/psammead-social-embed": "^1.1.7",
-    "@bbc/psammead-story-promo": "^6.0.8",
-    "@bbc/psammead-story-promo-list": "^4.1.4",
-    "@bbc/psammead-storybook-helpers": "^8.3.5",
-    "@bbc/psammead-styles": "^4.4.3",
-=======
     "@bbc/psammead-script-link": "^1.0.21",
     "@bbc/psammead-section-label": "^5.0.13",
     "@bbc/psammead-sitewide-links": "^4.0.17",
@@ -102,7 +92,6 @@
     "@bbc/psammead-story-promo-list": "^4.1.5",
     "@bbc/psammead-storybook-helpers": "^8.4.0",
     "@bbc/psammead-styles": "^4.5.0",
->>>>>>> acc19872f80af255f2f5c9ddcd442851c6055644
     "@bbc/psammead-test-helpers": "^4.0.0",
     "@bbc/psammead-timestamp": "^2.2.34",
     "@bbc/psammead-timestamp-container": "^4.0.10",
