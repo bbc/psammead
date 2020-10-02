@@ -72,7 +72,7 @@ const fontPathMap = [
   { prefix: 'F_NOTO_SANS_ETHIOPIC', path: 'fonts/NotoSansEthiopic/' },
   { prefix: 'F_PADAUK', path: 'fonts/Padauk/' },
   { prefix: 'F_SHONAR_BANGLA', path: 'fonts/ShonarBangla/' },
-  { prefix: 'F_QALAM', path: 'fonts/Qalam/' },
+  { prefix: 'F_QALAM', path: 'fonts/ReithQalam/' },
 ];
 
 addDecorator(story => (
