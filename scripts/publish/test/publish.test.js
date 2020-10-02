@@ -26,11 +26,6 @@ const getFsMock = () => {
   return require('fs');
 };
 
-const getSlackNotificationMock = () => {
-  jest.mock('../src/slackNotification');
-  return require('../src/slackNotification');
-};
-
 const packageJson = { name: '@foo/psammead-foobar', version: '0.1.2' };
 
 let attempted = {};
@@ -46,7 +41,6 @@ describe(`Publish Script - publish`, () => {
   it('runs correct publish command and publish is successful ', () => {
     const shelljs = getSuccessfulShellJsMock();
     const fs = getFsMock();
-    const slackNotification = getSlackNotificationMock();
     const publish = require('../src/publish');
 
     publish('/foo/bar', packageJson, attempted);
@@ -72,11 +66,6 @@ describe(`Publish Script - publish`, () => {
     expect(attempted.success.length).toEqual(1);
     expect(attempted.success[0]).toEqual('@foo/psammead-foobar@0.1.2');
 
-    expect(slackNotification).toHaveBeenCalledWith(
-      '@foo/psammead-foobar@0.1.2',
-      true,
-    );
-
     expect(fs.appendFileSync).toHaveBeenCalledTimes(1);
     expect(fs.appendFileSync).toHaveBeenCalledWith(
       'published.txt',
@@ -87,7 +76,6 @@ describe(`Publish Script - publish`, () => {
   it('runs correct publish command and publish is unsuccessful ', () => {
     const shelljs = getFailingShellJsMock();
     const fs = getFsMock();
-    const slackNotification = getSlackNotificationMock();
     const publish = require('../src/publish');
 
     publish('/foo/bar', packageJson, attempted);
@@ -112,11 +100,6 @@ describe(`Publish Script - publish`, () => {
 
     expect(attempted.failure.length).toEqual(1);
     expect(attempted.failure[0]).toEqual('@foo/psammead-foobar@0.1.2');
-
-    expect(slackNotification).toHaveBeenCalledWith(
-      '@foo/psammead-foobar@0.1.2',
-      false,
-    );
 
     expect(fs.appendFileSync).not.toHaveBeenCalled();
   });
