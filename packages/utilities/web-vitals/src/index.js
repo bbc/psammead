@@ -86,6 +86,8 @@ const useWebVitals = ({
   reportParams,
 }) => {
   let pageLoadTime;
+  const shouldSendVitals = enabled && shouldSample(sampleRate);
+
   const { effectiveConnectionType } = useNetworkStatus();
   const { numberOfLogicalProcessors } = useHardwareConcurrency();
   const { deviceMemory } = useMemoryStatus();
@@ -99,15 +101,13 @@ const useWebVitals = ({
     ];
 
     try {
-      if (shouldSample(sampleRate)) {
-        await sendBeacon(beacon, reportingEndpoint, reportParams);
-      }
+      await sendBeacon(beacon, reportingEndpoint, reportParams);
     } catch (error) {
       loggerCallback(error);
     }
   };
 
-  useEvent('pagehide', enabled ? sendVitals : noOp);
+  useEvent('pagehide', shouldSendVitals ? sendVitals : noOp);
 
   useEffect(() => {
     pageLoadTime = Date.now();
