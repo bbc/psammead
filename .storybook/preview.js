@@ -2,6 +2,7 @@ import React, { Fragment } from 'react';
 import { configure, addDecorator, addParameters } from '@storybook/react';
 import { create } from '@storybook/theming';
 import { withA11y } from '@storybook/addon-a11y';
+import { DocsPage, DocsContainer } from '@storybook/addon-docs/blocks';
 import {
   AMP_SCRIPT,
   AMP_NO_SCRIPT,
@@ -9,6 +10,7 @@ import {
 import * as fontFaces from '@bbc/psammead-styles/fonts';
 import { themes } from '@bbc/psammead-storybook-helpers';
 import GlobalStyles from '@bbc/psammead-styles/global-styles';
+import './storybook.css';
 
 // New locales
 import '@bbc/psammead-locales/moment/am';
@@ -47,7 +49,8 @@ import '@bbc/psammead-locales/moment/yo';
 
 import { Helmet } from 'react-helmet';
 
-addParameters({
+export const parameters = {
+  passArgsFirst: false,
   options: {
     panelPosition: 'right',
     sidebarAnimations: true,
@@ -62,7 +65,17 @@ addParameters({
       iframes: true,
     },
   },
-});
+  docs: {
+    container: DocsContainer,
+    page: DocsPage,
+    extractComponentDescription: (component, { notes }) => {
+      if (notes) {
+        return typeof notes === 'string' ? notes : notes.markdown || notes.text;
+      }
+      return null;
+    },
+  },
+};
 
 const fontPathMap = [
   { prefix: 'F_REITH', path: 'fonts/Reith/' },
@@ -102,10 +115,3 @@ export const ampDecorator = story => (
     {story()}
   </Fragment>
 );
-
-function loadAllStories() {
-  require('glob-loader!./stories.pattern');
-  addDecorator(withA11y);
-}
-
-configure(loadAllStories, module);

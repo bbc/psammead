@@ -28,7 +28,7 @@ const usefulCaptions = [
   },
 ];
 
-storiesOf('Components|UsefulLinks', module)
+storiesOf('Components/UsefulLinks', module)
   .addDecorator(withKnobs)
   .addDecorator(withServicesKnob())
   .add(

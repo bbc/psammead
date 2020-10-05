@@ -38,7 +38,7 @@ const ExampleTimestamp = ({ children, ...props }) => {
   );
 };
 
-storiesOf('Components|Timestamp', module)
+storiesOf('Components/Timestamp', module)
   .addDecorator(withKnobs)
   .addDecorator(withServicesKnob())
   .add(

@@ -15,7 +15,7 @@ import StartTime from './StartTime';
 
 const storiesUnixTimestamp = 1566914061212;
 
-const RADIO_SCHEDULE_STORIES = 'Components|RadioSchedule';
+const RADIO_SCHEDULE_STORIES = 'Components/RadioSchedule';
 const radioScheduleStories = storiesOf(RADIO_SCHEDULE_STORIES, module)
   .addDecorator(withKnobs)
   .addDecorator(withServicesKnob());
@@ -34,7 +34,7 @@ buildRTLSubstories(RADIO_SCHEDULE_STORIES, {
   include: ['default'],
 });
 
-const PROGRAM_CARD_STORIES = 'Components|RadioSchedule/ProgramCard';
+const PROGRAM_CARD_STORIES = 'Components/RadioSchedule/ProgramCard';
 const programCardStories = storiesOf(PROGRAM_CARD_STORIES, module).addDecorator(
   withKnobs,
 );
@@ -55,7 +55,7 @@ buildRTLSubstories(PROGRAM_CARD_STORIES, {
   include: [...uniqueStates],
 });
 
-storiesOf('Components|RadioSchedule/StartTime', module)
+storiesOf('Components/RadioSchedule/StartTime', module)
   .addDecorator(withKnobs)
   .addDecorator(withServicesKnob())
   .add(

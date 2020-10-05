@@ -5,7 +5,7 @@ import { withServicesKnob, themes } from '@bbc/psammead-storybook-helpers';
 import notes from '../README.md';
 import { Headline, SubHeading } from './index';
 
-storiesOf('Components|Headline', module)
+storiesOf('Components/Headline', module)
   .addDecorator(withKnobs)
   .addDecorator(withServicesKnob())
   .add(
@@ -27,7 +27,7 @@ storiesOf('Components|Headline', module)
     { notes, knobs: { escapeHTML: false }, options: { theme: themes.dark } },
   );
 
-storiesOf('Components|SubHeading', module)
+storiesOf('Components/SubHeading', module)
   .addDecorator(withKnobs)
   .addDecorator(withServicesKnob())
   .add(

@@ -13,7 +13,7 @@ const Container = styled.div`
   height: 100vh;
 `;
 
-storiesOf('Components|ScriptLink', module)
+storiesOf('Components/ScriptLink', module)
   .addDecorator(withKnobs)
   .addDecorator(withServicesKnob())
   .add(
