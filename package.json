@@ -15,7 +15,7 @@
     "bumpChangelogs": "node scripts/bumpChangelogs/cli",
     "bumpPackages": "node scripts/bumpPackages/cli",
     "changeScanner": "node scripts/changeScanner",
-    "ci:packages": "yarn install --frozen-lockfile && yarn workspaces run install:packages --frozen-lockfile",
+    "ci:packages": "yarn run build && yarn install --frozen-lockfile && yarn workspaces run install:packages --frozen-lockfile",
     "install:packages": "yarn install && yarn workspaces run install:packages",
     "create:package": "yo .yeoman",
     "deploy-storybook": "gh-pages -d storybook_dist",
