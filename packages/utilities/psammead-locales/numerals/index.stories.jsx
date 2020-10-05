@@ -7,7 +7,7 @@ import * as numerals from '../src/numerals';
 const numeralSystems = Object.keys(numerals).filter(key =>
   Array.isArray(numerals[key]),
 );
-const stories = storiesOf('Utilities|Psammead Locales', module);
+const stories = storiesOf('Utilities/Psammead Locales', module);
 
 const Container = styled.div`
   padding: ${GEL_SPACING};

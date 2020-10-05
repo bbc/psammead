@@ -7,7 +7,7 @@ import notes from '../README.md';
 import { CanonicalSocialEmbed, AmpSocialEmbed } from './index';
 import fixtures from './fixtures';
 
-storiesOf('Components|SocialEmbed/Canonical', module)
+storiesOf('Components/SocialEmbed/Canonical', module)
   .addDecorator(withKnobs({ escapeHTML: false }))
   .addDecorator(withServicesKnob())
   .add(
@@ -114,7 +114,7 @@ storiesOf('Components|SocialEmbed/Canonical', module)
     },
   );
 
-storiesOf('Components|SocialEmbed/AMP', module)
+storiesOf('Components/SocialEmbed/AMP', module)
   .addDecorator(withKnobs({ escapeHTML: false }))
   .addDecorator(withServicesKnob())
   .addDecorator(story => (

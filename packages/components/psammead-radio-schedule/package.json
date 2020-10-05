@@ -1,6 +1,6 @@
 {
   "name": "@bbc/psammead-radio-schedule",
-  "version": "3.0.18",
+  "version": "3.0.22",
   "main": "dist/index.js",
   "module": "esm/index.js",
   "sideEffects": false,
@@ -21,9 +21,9 @@
   "dependencies": {
     "@bbc/gel-foundations": "^4.3.0",
     "@bbc/psammead-assets": "^2.14.1",
-    "@bbc/psammead-live-label": "^1.0.0",
-    "@bbc/psammead-styles": "^4.4.3",
-    "@bbc/psammead-timestamp-container": "^4.0.8",
+    "@bbc/psammead-live-label": "^1.0.1",
+    "@bbc/psammead-styles": "^4.5.0",
+    "@bbc/psammead-timestamp-container": "^4.0.10",
     "@bbc/psammead-detokeniser": "^1.0.0"
   },
   "peerDependencies": {

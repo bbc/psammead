@@ -6,7 +6,7 @@ import styled from 'styled-components';
 import { withServicesKnob } from '@bbc/psammead-storybook-helpers';
 import { CanonicalMediaPlayer, AmpMediaPlayer } from '.';
 import MediaMessage from './Message';
-import { ampDecorator } from '../../../../.storybook/config';
+import { ampDecorator } from '../../../../.storybook/preview';
 import notes from '../README.md';
 
 const withDuration = {
@@ -21,7 +21,8 @@ const StyledMessageContainer = styled.div`
   overflow: hidden;
 `;
 
-storiesOf('Components|Media Player', module)
+storiesOf('Components/Media Player', module)
+  .addDecorator(withKnobs)
   .add(
     'Articles Canonical',
     () => (
@@ -35,7 +36,7 @@ storiesOf('Components|Media Player', module)
     ),
     { notes, knobs: { escapeHTML: false } },
   )
-  .addDecorator(withKnobs)
+
   .add(
     'MAP Canonical',
     () => (
@@ -125,8 +126,9 @@ storiesOf('Components|Media Player', module)
       />
     ),
     { notes, knobs: { escapeHTML: false } },
-  )
-  .addDecorator(withKnobs)
+  );
+
+storiesOf('Components/Media Player', module)
   .addDecorator(withServicesKnob({ defaultService: 'ukrainian' }))
   .add(
     'Media Message',
@@ -144,7 +146,7 @@ storiesOf('Components|Media Player', module)
     },
   );
 
-storiesOf('Components|Media Player', module)
+storiesOf('Components/Media Player', module)
   .addDecorator(ampDecorator)
   .add(
     'AMP',

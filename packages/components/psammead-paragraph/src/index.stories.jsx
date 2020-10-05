@@ -8,7 +8,7 @@ import { withServicesKnob, themes } from '@bbc/psammead-storybook-helpers';
 import notes from '../README.md';
 import Paragraph from './index';
 
-storiesOf('Components|Paragraph', module)
+storiesOf('Components/Paragraph', module)
   .addDecorator(withKnobs)
   .addDecorator(withServicesKnob())
   .add(

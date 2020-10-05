@@ -16,7 +16,7 @@ import {
 } from './testHelpers';
 import notes from '../README.md';
 
-const STORY_KIND = 'Components|Grid';
+const STORY_KIND = 'Components/Grid';
 
 storiesOf(STORY_KIND, module)
   .addDecorator(withKnobs)
@@ -1635,7 +1635,7 @@ storiesOf(STORY_KIND, module)
     </Grid>
   ));
 
-storiesOf('Components|Grid/startOffset', module)
+storiesOf('Components/Grid/startOffset', module)
   .addDecorator(withKnobs)
   .addDecorator(withServicesKnob())
   .add(
