@@ -29,6 +29,6 @@
     "off-screen"
   ],
   "scripts": {
-    "install:packages": "yarn install --focus"
+    "install:packages": "pwd && yarn"
   }
 }

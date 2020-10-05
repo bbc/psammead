@@ -10,7 +10,7 @@
   "scripts": {
     "postinstall": "node ./dist/postInstall",
     "prepublishOnly": "rm -rf ./tz",
-    "install:packages": "yarn install --focus"
+    "install:packages": "pwd && yarn"
   },
   "author": {
     "name": "BBC Psammead Maintainers",
