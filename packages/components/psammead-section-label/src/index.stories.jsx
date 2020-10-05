@@ -8,7 +8,7 @@ import {
 import notes from '../README.md';
 import SectionLabel from './index';
 
-const STORY_KIND = 'Components|SectionLabel';
+const STORY_KIND = 'Components/SectionLabel';
 const selectFirst2Words = text =>
   text
     .split(' ')

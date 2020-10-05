@@ -5,7 +5,7 @@ import { withServicesKnob } from '@bbc/psammead-storybook-helpers';
 import notes from '../README.md';
 import <%= packageName %> from './index';
 
-storiesOf('Components|<%= packageName %>', module)
+storiesOf('Components/<%= packageName %>', module)
   .addDecorator(withKnobs)
   .addDecorator(withServicesKnob())
   .add('default', () => <<%= packageName %> />, { notes });

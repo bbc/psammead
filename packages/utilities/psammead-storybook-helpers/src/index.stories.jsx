@@ -4,7 +4,7 @@ import { withKnobs } from '@storybook/addon-knobs';
 import notes from '../README.md';
 import { withServicesKnob } from '.';
 
-storiesOf('Utilities|withServicesKnob', module)
+storiesOf('Utilities/withServicesKnob', module)
   .addDecorator(withKnobs)
   .add(
     'default',

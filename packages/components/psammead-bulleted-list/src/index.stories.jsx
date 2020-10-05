@@ -5,7 +5,7 @@ import { withServicesKnob } from '@bbc/psammead-storybook-helpers';
 import notes from '../README.md';
 import BulletedList, { BulletedListItem } from './index';
 
-storiesOf('Components|BulletedList', module)
+storiesOf('Components/BulletedList', module)
   .addDecorator(withKnobs)
   .addDecorator(withServicesKnob())
   .add(

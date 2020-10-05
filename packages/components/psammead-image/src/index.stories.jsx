@@ -9,7 +9,7 @@ const type = 'Img';
 
 stories(
   Img,
-  'Components|Images/Image - Img',
+  'Components/Images/Image - Img',
   false,
   {},
   withKnobs,

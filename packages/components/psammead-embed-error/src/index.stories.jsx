@@ -5,7 +5,7 @@ import { withServicesKnob } from '@bbc/psammead-storybook-helpers';
 import notes from '../README.md';
 import EmbedError from './index';
 
-storiesOf('Components|EmbedError', module)
+storiesOf('Components/EmbedError', module)
   .addDecorator(withKnobs)
   .addDecorator(withServicesKnob())
   .add(
