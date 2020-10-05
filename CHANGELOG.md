@@ -4,6 +4,7 @@
 | Version | Description |
 |---------|-------------|
 
+| 2.5.1 | [PR#3816](https://github.com/bbc/psammead/pull/3816) Talos - Bump Dependencies |
 | 2.5.0 | [PR#3728](https://github.com/bbc/psammead/pull/3728) Update Storybook from v5.3.19 to v6.0.22, introducing docs & fix breaking changes |
 | 2.4.12 | [PR#3812](https://github.com/bbc/psammead/pull/3812) Removing slack notifications for publishing of packages |
 | 2.4.11 | [PR#3809](https://github.com/bbc/psammead/pull/3809) Bumping dependencies - eslint, stylelint, eslint-config-prettier, yargs-parser, browserslist |
