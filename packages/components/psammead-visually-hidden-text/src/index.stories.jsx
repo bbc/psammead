@@ -5,7 +5,7 @@ import { withServicesKnob } from '@bbc/psammead-storybook-helpers';
 import notes from '../README.md';
 import VisuallyHiddenText from './index';
 
-storiesOf('Components|VisuallyHiddenText', module)
+storiesOf('Components/VisuallyHiddenText', module)
   .addDecorator(withKnobs)
   .addDecorator(withServicesKnob())
   .add(

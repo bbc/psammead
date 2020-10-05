@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 2.14.2 | [PR#3728](https://github.com/bbc/psammead/pull/3728) Tweaks following Storybook v5.3.19 to v6.0.22 update |
 | 2.14.1 | [PR#3610](https://github.com/bbc/psammead/pull/3610) Add BBC_BLOCKS_DARK_MODE base64 |
 | 2.14.0 | [PR#3374](https://github.com/bbc/psammead/pull/3374) Add AMP_AD script |
 | 2.13.0 | [PR#3020](https://github.com/bbc/psammead/pull/3020) Add SVG for Learning English brand logo |

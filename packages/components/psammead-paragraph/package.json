@@ -1,6 +1,6 @@
 {
   "name": "@bbc/psammead-paragraph",
-  "version": "2.2.36",
+  "version": "2.2.37",
   "description": "React styled component for a Paragraph",
   "main": "dist/index.js",
   "module": "esm/index.js",

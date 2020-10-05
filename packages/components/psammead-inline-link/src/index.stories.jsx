@@ -53,7 +53,7 @@ const renderWrappedInlineLink = ({ longText, text, style }) => (
   </>
 );
 
-storiesOf('Components|InlineLink', module)
+storiesOf('Components/InlineLink', module)
   .addDecorator(withKnobs)
   .addDecorator(withServicesKnob())
   .add(

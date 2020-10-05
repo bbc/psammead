@@ -228,7 +228,7 @@ const generate2FeatureStory = () => args => (
   </Grid>
 );
 
-storiesOf('Components|StoryPromo/StoryPromo', module)
+storiesOf('Components/StoryPromo/StoryPromo', module)
   .addDecorator(withKnobs)
   .addDecorator(withServicesKnob())
   .add('Regular promo', generateStory({ promoType: 'regular' }), {

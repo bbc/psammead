@@ -32,7 +32,7 @@ The `withServicesKnob` function accepts an options argument with 2 properties:
 
 The `buildRTLSubstories` function accepts 2 arguments.
 
-- `storyKind`(String) - This is the story kind that you want you want to create RTL substories from. This will normally be the first argument you pass into `storiesOf` e.g. `storiesOf('Components|Paragraph', module)`. This parameter is required.
+- `storyKind`(String) - This is the story kind that you want you want to create RTL substories from. This will normally be the first argument you pass into `storiesOf` e.g. `storiesOf('Components/Paragraph', module)`. This parameter is required.
 - `options`(Object) - Available options:
   - `include`(Array) - A list of specific story names to create RTL substories of. If this is not provided then all stories will have RTL substories.
 
@@ -63,7 +63,7 @@ const groupIdentifier = 'CAPTION VARIANTS';
 ### withServicesKnob
 
 ```js
-storiesOf('Components|Paragraph', module)
+storiesOf('Components/Paragraph', module)
   .addDecorator(withKnobs)
   .addDecorator(withServicesKnob()) // default selected service is `news`
   .add('A paragraph with English text', ({ text, script, service }) => (
@@ -76,7 +76,7 @@ storiesOf('Components|Paragraph', module)
 To set a default service:
 
 ```js
-storiesOf('Components|Paragraph', module)
+storiesOf('Components/Paragraph', module)
   .addDecorator(withKnobs)
   .addDecorator(
     withServicesKnob({
@@ -102,7 +102,7 @@ const pashtoServiceDecorator = withServicesKnob({
   defaultService: 'pashto',
 });
 
-storiesOf('Components|Paragraph', module)
+storiesOf('Components/Paragraph', module)
   .addDecorator(withKnobs)
   .add('A paragraph with Arabic text', () =>
     arabicServiceDecorator(({ text, script, service }) => (
@@ -125,7 +125,7 @@ You can include links to articles in the relevant services and variants
 ```js
 const BASE_URL = 'https://www.bbc.com';
 
-storiesOf('Components|Paragraph/Link', module)
+storiesOf('Components/Paragraph/Link', module)
   .addDecorator(withKnobs)
   .addDecorator(withServicesKnob()) // default selected service is `news`
   .add(
@@ -146,14 +146,14 @@ The above example dismisses the use of the `addDecorator` method and decorates t
 import { buildRTLSubstories } from '@bbc/psammead-storybook-helpers';
 
 // create RTL variants of all stories of a kind
-buildRTLSubstories('Components|Paragraph');
+buildRTLSubstories('Components/Paragraph');
 ```
 
 ```jsx
 import { buildRTLSubstories } from '@bbc/psammead-storybook-helpers';
 
 // create RTL variants of specific stories of a kind
-buildRTLSubstories('Components|Paragraph', {
+buildRTLSubstories('Components/Paragraph', {
   include: ['containing an inline link'],
 });
 ```
