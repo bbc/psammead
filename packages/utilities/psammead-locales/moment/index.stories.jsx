@@ -43,7 +43,7 @@ import './ur';
 import './uz';
 import './yo';
 
-const stories = storiesOf('Utilities|Psammead Locales', module);
+const stories = storiesOf('Utilities/Psammead Locales', module);
 
 const locales = [
   { name: 'Afaan Oromoo', locale: 'om' },
