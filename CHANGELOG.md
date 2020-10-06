@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 3.0.1 | [PR#3832](https://github.com/bbc/psammead/pull/3832) Add BBC Reith Qalam font to Storybook static assets |
 | 3.0.0 | [PR#3806](https://github.com/bbc/psammead/pull/3806) Add BBC Reith Qalam & remove BBC Nassim Fonts from Storybook config |
 | 2.5.4 | [PR#3831](https://github.com/bbc/psammead/pull/3831) Talos - Bump Dependencies - @bbc/psammead-bulletin, @bbc/psammead-radio-schedule, @bbc/psammead-timestamp-container |
 | 2.5.3 | [PR#3830](https://github.com/bbc/psammead/pull/3830) Minor and patch version dependencies |
