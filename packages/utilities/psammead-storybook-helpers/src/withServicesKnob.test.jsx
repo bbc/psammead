@@ -1,6 +1,6 @@
 import { render, waitForDomChange } from '@testing-library/react';
 import * as knobs from '@storybook/addon-knobs';
-import * as scripts from '@bbc/gel-foundations/scripts';
+import { latin, arabic, chinese } from '@bbc/gel-foundations/scripts';
 import withServicesKnob from './withServicesKnob';
 import TEXT_VARIANTS from './text-variants';
 
@@ -60,7 +60,7 @@ it('should pass the correct props to the story function', () => {
   withServicesKnob()(mockStoryFn);
 
   const expected = {
-    script: scripts.latin,
+    script: latin,
     service: 'news',
     articlePath: '/news/articles/cn7k01xp8kxo',
     text: 'Could a computer ever create better art than a human?',
@@ -83,7 +83,7 @@ it('should pass the correct chosen service props to the story function', () => {
   withServicesKnob()(mockStoryFn);
 
   const expected = {
-    script: scripts.arabic,
+    script: arabic,
     service: 'arabic',
     articlePath: '/arabic/articles/c1er5mjnznzo',
     text: 'لماذا يخجل البعض من اسم قريته في مصر؟',
@@ -106,7 +106,7 @@ it('should pass the correct chosen service props to the story function', () => {
   withServicesKnob()(mockStoryFn);
 
   const expected = {
-    script: scripts.chinese,
+    script: chinese,
     service: 'ukchina',
     articlePath: '/ukchina/articles/c0e8weny66ko/simp',
     text: '该计划的批评者说，这个政策不能解决住房短缺的问题',
