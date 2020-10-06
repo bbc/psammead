@@ -3,7 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
-| 9.0.1 | [PR#xxxx](https://github.com/bbc/psammead/pull/xxxx) Bump @bbc/gel-foundations |
+| 9.0.1 | [PR#3832](https://github.com/bbc/psammead/pull/3832) Bump @bbc/gel-foundations to 5.0.0 for BBC Reith Qalam |
 | 9.0.0 | [PR#3806](https://github.com/bbc/psammead/pull/3806) Support for BBC Reith Qalam |
 | 8.4.1 | [PR#3728](https://github.com/bbc/psammead/pull/3728) Tweaks following Storybook v5.3.19 to v6.0.22 update |
 | 8.4.0 | [PR#3771](https://github.com/bbc/psammead/pull/3771) Create Optimo Base service |
