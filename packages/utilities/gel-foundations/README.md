@@ -52,19 +52,18 @@ You can import the script doing `import { arabic } from '@bbc/gel-foundations/sc
 In addition to Latin script defaults, Psammead supports typography for a number of other scripts. We have grouped the scripts that share similiar features as follows:
 
 <!-- prettier-ignore -->
-| Group Name                  | Services |             Rationale       |
-| --------------------------- | -------- | --------------------------- | 
-| latin-and-cyrillic          | News, Hausa, Gahuza, Somali, Swahili, Igbo, Pidgin, Afaan Oromo, Yoruba, Azeri, Indonesia, Uzbek, Serbian, Russian, Ukrainian, Kyrgyz, Uzbek | The typography values for Latin and Cyrillic characters are identical |
-| latin-with-diacritics | Vietnamese, Mundo, Afrique, Brasil, Turkish | The diacritics make these values differ from Latin | 
-| arabic                      | Urdu, Arabic, Persian | Group as they use the Arabic alphabet | 
-| arabic-pashto               | Pashto | Contains a subset of glyphs that mean it differs from Arabic | 
-| no-ascenders-or-descenders  | Korean, Japanese, Zhongwen, Ukchina, Tigrinya, Amharic | Group all alphabets without ascenders or descenders. This could be implemented as chinese, korean, ethiopic | Hindi, Nepali, Gujarati, Punjabi, Marathi, Telugu | The typography values for Devanagari and Gurmukhi characters are identical |
-| devanagari-and-gurmukhi     |  Hindi, Nepali, Gujarati, Punjabi, Marathi, Telugu | The typography values for Devanagari and Gurmukhi characters are identical |   
-| thai                        | Thai     | Bespoke to the Thai characters       | 
-| bengali                     | Bengali  | Bespoke to the Bengal characters     | 
-| burmese                     | Burmese  | Bespoke to the Burmese characters    | 
-| sinhalese                   | Sinhala  | Bespoke to the Sinhalese characters  | 
-| tamil                       | Tamil    | Bespoke to the Tamil characters      |
+| Group Name                   | Services |             Rationale       |
+| ---------------------------  | -------- | --------------------------- | 
+| `latin-and-cyrillic`         | News, Hausa, Gahuza, Somali, Swahili, Igbo, Pidgin, Afaan Oromo, Yoruba, Azeri, Indonesia, Uzbek, Serbian, Russian, Ukrainian, Kyrgyz, Uzbek | The typography values for Latin and Cyrillic characters are identical |
+| `latin-with-diacritics`      | Vietnamese, Mundo, Afrique, Brasil, Turkish | The diacritics make these values differ from Latin | 
+| `arabic`                     | Arabic, Pashto, Persian, Urdu  | Group as they use the Arabic alphabet | 
+| `no-ascenders-or-descenders` | Korean, Japanese, Zhongwen, Ukchina, Tigrinya, Amharic | Group all alphabets without ascenders or descenders. This could be implemented as `chinese`, `korean`, `ethiopic` | Hindi, Nepali, Gujarati, Punjabi, Marathi, Telugu | The typography values for Devanagari and Gurmukhi characters are identical |
+| `devanagari-and-gurmukhi`    |  Hindi, Nepali, Gujarati, Punjabi, Marathi, Telugu | The typography values for Devanagari and Gurmukhi characters are identical |   
+| `thai`                       | Thai     | Bespoke to the Thai characters       | 
+| `bengali`                    | Bengali  | Bespoke to the Bengal characters     | 
+| `burmese`                    | Burmese  | Bespoke to the Burmese characters    | 
+| `sinhalese`                  | Sinhala  | Bespoke to the Sinhalese characters  | 
+| `tamil`                      | Tamil    | Bespoke to the Tamil characters      |
 
 ## Contributing
 
