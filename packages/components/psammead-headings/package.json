@@ -1,6 +1,6 @@
 {
   "name": "@bbc/psammead-headings",
-  "version": "3.1.37",
+  "version": "3.1.39",
   "main": "dist/index.js",
   "module": "esm/index.js",
   "sideEffects": false,
@@ -20,7 +20,7 @@
   "homepage": "https://github.com/bbc/psammead/blob/latest/packages/components/psammead-headings/README.md",
   "dependencies": {
     "@bbc/gel-foundations": "^4.3.0",
-    "@bbc/psammead-styles": "^4.5.0"
+    "@bbc/psammead-styles": "^4.5.1"
   },
   "peerDependencies": {
     "styled-components": "^4.3.2"

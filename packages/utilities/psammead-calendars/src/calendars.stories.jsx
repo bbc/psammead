@@ -3,7 +3,7 @@ import { storiesOf } from '@storybook/react';
 import moment from 'moment';
 import { jalaali } from './index';
 
-const stories = storiesOf('Utilities|Psammead Moment Calendars', module);
+const stories = storiesOf('Utilities/Psammead Moment Calendars', module);
 
 const testMoment = moment('2019-01-01');
 stories.add('Jalaali Persian', () => {

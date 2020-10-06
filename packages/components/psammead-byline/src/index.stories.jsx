@@ -5,7 +5,7 @@ import { withServicesKnob } from '@bbc/psammead-storybook-helpers';
 import notes from '../README.md';
 import Byline from './index';
 
-storiesOf('Components|Byline', module)
+storiesOf('Components/Byline', module)
   .addDecorator(withKnobs)
   .addDecorator(withServicesKnob())
   .add(

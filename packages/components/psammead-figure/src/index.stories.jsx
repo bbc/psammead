@@ -18,7 +18,7 @@ const imageSrc =
 const imageWidth = 853;
 const imageRatio = 125;
 
-storiesOf('Components|Figure', module)
+storiesOf('Components/Figure', module)
   .addDecorator(withKnobs)
   .addDecorator(withServicesKnob())
   .add(

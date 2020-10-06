@@ -100,7 +100,7 @@ const BoldItalicParagraph = styled.p`
   ${({ service }) => getSansBoldItalic(service)}
 `;
 
-storiesOf('Utilities|Psammead Styles', module)
+storiesOf('Utilities/Psammead Styles', module)
   .addDecorator(withKnobs)
   .addDecorator(withServicesKnob())
   .add(

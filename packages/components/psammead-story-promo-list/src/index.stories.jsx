@@ -35,7 +35,7 @@ const InfoComponent = ({ headlineText, summaryText, datetime, dateformat }) => (
   </>
 );
 
-storiesOf('Components|StoryPromo/StoryPromoList', module)
+storiesOf('Components/StoryPromo/StoryPromoList', module)
   .addDecorator(withKnobs)
   .add(
     'default',
@@ -118,7 +118,7 @@ storiesOf('Components|StoryPromo/StoryPromoList', module)
     );
   });
 
-storiesOf('Components|StoryPromo/StoryPromoListBase', module)
+storiesOf('Components/StoryPromo/StoryPromoListBase', module)
   .addDecorator(withKnobs)
   .add(
     'default',

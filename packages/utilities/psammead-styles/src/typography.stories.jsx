@@ -26,7 +26,7 @@ const typographyStory = (typographyFunc, text, script) => (
   </TypographyText>
 );
 
-const stories = storiesOf('Typography', module)
+const stories = storiesOf('Others/Typography', module)
   .addDecorator(withKnobs)
   .addDecorator(withServicesKnob());
 

@@ -5,7 +5,7 @@ import { withServicesKnob } from '@bbc/psammead-storybook-helpers';
 import notes from '../README.md';
 import PlayButton from './index';
 
-storiesOf('Components|PlayButton/Video', module)
+storiesOf('Components/PlayButton/Video', module)
   .addDecorator(withKnobs)
   .addDecorator(withServicesKnob())
   .add(
@@ -52,7 +52,7 @@ storiesOf('Components|PlayButton/Video', module)
     { notes },
   );
 
-storiesOf('Components|PlayButton/Audio', module)
+storiesOf('Components/PlayButton/Audio', module)
   .addDecorator(withKnobs)
   .addDecorator(withServicesKnob())
   .add(

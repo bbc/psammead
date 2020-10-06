@@ -1,6 +1,6 @@
 {
   "name": "@bbc/psammead-embed-error",
-  "version": "1.1.4",
+  "version": "1.1.6",
   "main": "dist/index.js",
   "module": "esm/index.js",
   "sideEffects": false,
@@ -26,8 +26,8 @@
   ],
   "dependencies": {
     "@bbc/gel-foundations": "^4.3.0",
-    "@bbc/psammead-assets": "^2.14.1",
-    "@bbc/psammead-styles": "^4.5.0"
+    "@bbc/psammead-assets": "^2.14.2",
+    "@bbc/psammead-styles": "^4.5.1"
   },
   "peerDependencies": {
     "react": "^16.9.0",
