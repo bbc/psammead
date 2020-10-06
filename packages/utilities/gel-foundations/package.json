@@ -24,8 +24,5 @@
     "grid",
     "spacing",
     "typography"
-  ],
-  "scripts": {
-    "install:packages": "pwd && yarn"
-  }
+  ]
 }

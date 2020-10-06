@@ -27,8 +27,5 @@
     "amp",
     "amp-geo",
     "geo"
-  ],
-  "scripts": {
-    "install:packages": "pwd && yarn"
-  }
+  ]
 }

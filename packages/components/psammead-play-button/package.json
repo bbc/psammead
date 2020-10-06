@@ -33,8 +33,5 @@
     "button",
     "media",
     "duration"
-  ],
-  "scripts": {
-    "install:packages": "pwd && yarn"
-  }
+  ]
 }

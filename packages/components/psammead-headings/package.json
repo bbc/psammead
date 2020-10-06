@@ -30,8 +30,5 @@
     "headings",
     "headline",
     "subheading"
-  ],
-  "scripts": {
-    "install:packages": "pwd && yarn"
-  }
+  ]
 }

@@ -28,8 +28,5 @@
   ],
   "devDependencies": {
     "react-helmet": "^6.0.0"
-  },
-  "scripts": {
-    "install:packages": "pwd && yarn"
   }
 }

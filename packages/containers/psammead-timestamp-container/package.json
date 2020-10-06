@@ -35,8 +35,5 @@
   "peerDependencies": {
     "react": "^16.9.0",
     "moment": "^2.24.0"
-  },
-  "scripts": {
-    "install:packages": "pwd && yarn"
   }
 }

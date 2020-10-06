@@ -28,8 +28,5 @@
   "dependencies": {
     "@bbc/gel-foundations": "^4.3.0",
     "react-helmet": "^6.0.0"
-  },
-  "scripts": {
-    "install:packages": "pwd && yarn"
   }
 }

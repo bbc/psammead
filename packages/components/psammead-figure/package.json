@@ -27,8 +27,5 @@
   "keywords": [
     "bbc",
     "figure"
-  ],
-  "scripts": {
-    "install:packages": "pwd && yarn"
-  }
+  ]
 }

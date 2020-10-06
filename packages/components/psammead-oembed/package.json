@@ -26,8 +26,5 @@
   },
   "peerDependencies": {
     "react": "^16.12.0"
-  },
-  "scripts": {
-    "install:packages": "pwd && yarn"
   }
 }

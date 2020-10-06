@@ -29,8 +29,5 @@
   },
   "peerDependencies": {
     "styled-components": "^4.3.2"
-  },
-  "scripts": {
-    "install:packages": "pwd && yarn"
   }
 }

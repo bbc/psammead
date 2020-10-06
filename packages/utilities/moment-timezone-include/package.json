@@ -10,8 +10,7 @@
   "scripts": {
     "preinstall": "babel src -d dist --root-mode upward",
     "postinstall": "node ./dist/postInstall",
-    "prepublishOnly": "rm -rf ./tz",
-    "install:packages": "pwd && yarn"
+    "prepublishOnly": "rm -rf ./tz"
   },
   "author": {
     "name": "BBC Psammead Maintainers",

@@ -34,8 +34,5 @@
     "cookies,",
     "privacy",
     "policy"
-  ],
-  "scripts": {
-    "install:packages": "pwd && yarn"
-  }
+  ]
 }

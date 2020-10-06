@@ -30,8 +30,5 @@
     "bbc",
     "brand",
     "logo"
-  ],
-  "scripts": {
-    "install:packages": "pwd && yarn"
-  }
+  ]
 }

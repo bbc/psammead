@@ -31,8 +31,5 @@
     "attribution",
     "image",
     "figure"
-  ],
-  "scripts": {
-    "install:packages": "pwd && yarn"
-  }
+  ]
 }

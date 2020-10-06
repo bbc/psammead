@@ -33,8 +33,5 @@
     "bbc",
     "radio",
     "schedule"
-  ],
-  "scripts": {
-    "install:packages": "pwd && yarn"
-  }
+  ]
 }
