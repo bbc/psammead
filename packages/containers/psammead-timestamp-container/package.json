@@ -33,7 +33,7 @@
     "@bbc/psammead-locales": "^4.1.12"
   },
   "peerDependencies": {
-    "react": "^16.9.0",
-    "moment": "^2.24.0"
+    "moment": "^2.24.0",
+    "react": "^16.9.0"
   }
 }
