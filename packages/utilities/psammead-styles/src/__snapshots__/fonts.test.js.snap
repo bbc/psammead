@@ -210,7 +210,7 @@ exports[`Psammead Styles - Fonts should match PADAUK REGULAR with overridden url
   }"
 `;
 
-exports[`Psammead Styles - Fonts should match QALAM BOLD base font url 1`] = `
+exports[`Psammead Styles - Fonts should match REITH QALAM BOLD base font url 1`] = `
 "
   @font-face {
     font-family: \\"BBC Reith Qalam\\";
@@ -222,7 +222,7 @@ exports[`Psammead Styles - Fonts should match QALAM BOLD base font url 1`] = `
 "
 `;
 
-exports[`Psammead Styles - Fonts should match QALAM BOLD with overridden url 1`] = `
+exports[`Psammead Styles - Fonts should match REITH QALAM BOLD with overridden url 1`] = `
 "
   @font-face {
     font-family: \\"BBC Reith Qalam\\";
@@ -234,7 +234,7 @@ exports[`Psammead Styles - Fonts should match QALAM BOLD with overridden url 1`]
 "
 `;
 
-exports[`Psammead Styles - Fonts should match QALAM REGULAR base font url 1`] = `
+exports[`Psammead Styles - Fonts should match REITH QALAM REGULAR base font url 1`] = `
 "
   @font-face {
     font-family: \\"BBC Reith Qalam\\";
@@ -246,7 +246,7 @@ exports[`Psammead Styles - Fonts should match QALAM REGULAR base font url 1`] = 
 "
 `;
 
-exports[`Psammead Styles - Fonts should match QALAM REGULAR with overridden url 1`] = `
+exports[`Psammead Styles - Fonts should match REITH QALAM REGULAR with overridden url 1`] = `
 "
   @font-face {
     font-family: \\"BBC Reith Qalam\\";

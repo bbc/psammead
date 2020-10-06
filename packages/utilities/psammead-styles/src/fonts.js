@@ -478,7 +478,7 @@ export const F_SHONAR_BANGLA_BOLD = baseUrlOverride => `
 `;
 
 // BBC Reith Qalam
-export const F_QALAM_REGULAR = baseUrlOverride => `
+export const F_REITH_QALAM_REGULAR = baseUrlOverride => `
   @font-face {
     font-family: "BBC Reith Qalam";
     font-weight: 400;
@@ -492,7 +492,7 @@ export const F_QALAM_REGULAR = baseUrlOverride => `
   }
 `;
 
-export const F_QALAM_BOLD = baseUrlOverride => `
+export const F_REITH_QALAM_BOLD = baseUrlOverride => `
   @font-face {
     font-family: "BBC Reith Qalam";
     font-weight: 700;
