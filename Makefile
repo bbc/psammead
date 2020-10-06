@@ -10,7 +10,7 @@ code-coverage-after-build:
 	./cc-test-reporter after-build -t lcov;
 
 install:
-	yarn run ci:packages;
+	yarn run ci;
 	yarn run build:storybook
 
 test:
