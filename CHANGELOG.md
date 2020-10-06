@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 2.5.3 | [PR#3830](https://github.com/bbc/psammead/pull/3830) Minor and patch version dependencies |
 | 2.5.2 | [PR#3829](https://github.com/bbc/psammead/pull/3829) Talos - Bump Dependencies - @bbc/psammead-calendars, @bbc/psammead-social-embed, @bbc/psammead-story-promo, @bbc/psammead-story-promo-list, @bbc/psammead-timestamp, @bbc/psammead-timestamp-container, @bbc/psammead-useful-links |
 
 | 2.5.1 | [PR#3816](https://github.com/bbc/psammead/pull/3816) Talos - Bump Dependencies |
