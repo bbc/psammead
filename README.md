@@ -48,7 +48,7 @@ git clone git@github.com:bbc/psammead.git
 ### :hammer: Setup Local Environment
 
 ```
-cd psammead && yarn install:packages
+cd psammead && yarn install
 ```
 
 ### :runner: Run tests
@@ -56,10 +56,10 @@ cd psammead && yarn install:packages
 Install dependencies locked to `yarn.lock`:
 
 ```
-yarn run ci:packages
+yarn run ci
 ```
 
-(NB: You can't reliably run the jest tests when the packages are linked locally, as they may have been linked across breaking changes. Running `yarn run ci:packages` resets all links. To update snapshots within unit tests, run `yarn run test:unit -- -u`.)
+(NB: You can't reliably run the jest tests when the packages are linked locally, as they may have been linked across breaking changes. Running `yarn run ci` resets all links. To update snapshots within unit tests, run `yarn run test:unit -- -u`.)
 
 Run the component tests:
 

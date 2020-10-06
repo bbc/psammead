@@ -32,8 +32,5 @@
     "media",
     "indicator",
     "play"
-  ],
-  "scripts": {
-    "install:packages": "yarn install"
-  }
+  ]
 }

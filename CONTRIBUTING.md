@@ -71,7 +71,7 @@ When making changes to a package locally if you want to pull those changes into 
 Run the following command to link all psammead packages up regardless of dependency version:
 
 ```
-yarn install:packages
+yarn install
 ```
 
 ## The package publish, deprecation, and alpha publication process

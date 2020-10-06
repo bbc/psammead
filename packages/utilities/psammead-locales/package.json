@@ -27,9 +27,6 @@
   ],
   "dependencies": {
     "jalaali-js": "1.1.0",
-    "moment": "^2.24.0"
-  },
-  "scripts": {
-    "install:packages": "yarn install"
+    "moment": "2.26.0"
   }
 }

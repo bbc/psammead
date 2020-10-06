@@ -29,8 +29,5 @@
     "bbc",
     "caption",
     "figcaption"
-  ],
-  "scripts": {
-    "install:packages": "yarn install"
-  }
+  ]
 }

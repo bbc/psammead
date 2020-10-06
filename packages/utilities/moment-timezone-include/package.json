@@ -8,9 +8,9 @@
     "url": "https://github.com/bbc/psammead/tree/latest/packages/utilities/moment-timezone-include"
   },
   "scripts": {
+    "preinstall": "babel src -d dist --root-mode upward",
     "postinstall": "node ./dist/postInstall",
-    "prepublishOnly": "rm -rf ./tz",
-    "install:packages": "yarn install"
+    "prepublishOnly": "rm -rf ./tz"
   },
   "author": {
     "name": "BBC Psammead Maintainers",

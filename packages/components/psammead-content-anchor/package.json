@@ -30,8 +30,5 @@
   },
   "publishConfig": {
     "tag": "alpha"
-  },
-  "scripts": {
-    "install:packages": "yarn install"
   }
 }

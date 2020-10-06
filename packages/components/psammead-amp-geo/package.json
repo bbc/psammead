@@ -27,11 +27,5 @@
     "amp",
     "amp-geo",
     "geo"
-  ],
-  "scripts": {
-    "install:packages": "yarn install"
-  },
-  "dependencies": {
-    "@bbc/psammead-test-helpers": "^4.0.0"
-  }
+  ]
 }

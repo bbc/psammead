@@ -31,8 +31,5 @@
     "bbc",
     "story",
     "promo"
-  ],
-  "scripts": {
-    "install:packages": "yarn install"
-  }
+  ]
 }
