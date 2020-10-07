@@ -1,0 +1,37 @@
+{
+  "name": "@bbc/psammead-recent-episodes",
+  "version": "",
+  "main": "dist/index.js",
+  "module": "esm/index.js",
+  "sideEffects": false,
+  "description": "Component package for recent episodes components",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/BBC-News/psammead/tree/latest/packages/components/psammead-recent-episodes"
+  },
+  "author": {
+    "name": "Psammead Maintainers",
+    "email": "PsammeadMaintainers@bbc.co.uk"
+  },
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/bbc/psammead/issues"
+  },
+  "homepage": "https://github.com/BBC-News/psammead/blob/latest/packages/components/psammead-recent-episodes/README.md",
+  "dependencies": {
+    // "@bbc/gel-foundations": "^4.3.0",
+    // "@bbc/psammead-assets": "^2.14.2",
+    // "@bbc/psammead-live-label": "^1.0.2",
+    // "@bbc/psammead-styles": "^4.5.1",
+    // "@bbc/psammead-timestamp-container": "^4.0.13",
+    // "@bbc/psammead-detokeniser": "^1.0.0"
+  },
+  "peerDependencies": {
+    "react": "^16.12.0"
+  },
+  "keywords": [
+    "bbc",
+    "recent",
+    "episodes"
+  ]
+}
