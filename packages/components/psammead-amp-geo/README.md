@@ -10,7 +10,7 @@ The `psammead-amp-geo` component is an `<amp-geo>` element to be used for AMP pa
 `yarn add @bbc/psammead-amp-geo`
 
 ### npm
-`npm install @bbc/psammead-amp-geo --save`
+`npm install @bbc/psammead-amp-geo`
 
 ## Props
 
