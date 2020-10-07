@@ -1,9 +1,15 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
+import { withKnobs } from '@storybook/addon-knobs';
+import InlineLink from '@bbc/psammead-inline-link';
+import { withServicesKnob } from '@bbc/psammead-storybook-helpers';
 
 import RecentEpisodes from '.';
 
-storiesOf('Components/RecentEpisodes', module).add('default', () => {
+storiesOf('Components/RecentEpisodes', module)
+  .addDecorator(withKnobs)
+  .addDecorator(withServicesKnob())
+  .add('default', ({ script, service }) => {
   const episodes = [
     {
       id: '1',
@@ -26,6 +32,8 @@ storiesOf('Components/RecentEpisodes', module).add('default', () => {
         <a href={episode.url} key={episode.id}>
           <RecentEpisodes.Episode
             Link={({ children }) => <a href={episode.url}>{children}</a>}
+            script={script}
+            service={service}
           >
             <RecentEpisodes.BrandTitle>
               {episode.brandTitle}
