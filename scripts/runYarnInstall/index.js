@@ -4,7 +4,7 @@ const path = require('path');
 module.exports = packageDir =>
   new Promise((resolve, reject) => {
     exec(
-      'yarn install --focus',
+      'yarn install',
       {
         cwd: path.resolve(__dirname, '../../', packageDir),
       },
