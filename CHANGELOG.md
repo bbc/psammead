@@ -9,7 +9,6 @@
 | 2.5.4 | [PR#3831](https://github.com/bbc/psammead/pull/3831) Talos - Bump Dependencies - @bbc/psammead-bulletin, @bbc/psammead-radio-schedule, @bbc/psammead-timestamp-container |
 | 2.5.3 | [PR#3830](https://github.com/bbc/psammead/pull/3830) Minor and patch version dependencies |
 | 2.5.2 | [PR#3829](https://github.com/bbc/psammead/pull/3829) Talos - Bump Dependencies - @bbc/psammead-calendars, @bbc/psammead-social-embed, @bbc/psammead-story-promo, @bbc/psammead-story-promo-list, @bbc/psammead-timestamp, @bbc/psammead-timestamp-container, @bbc/psammead-useful-links |
-
 | 2.5.1 | [PR#3816](https://github.com/bbc/psammead/pull/3816) Talos - Bump Dependencies |
 | 2.5.0 | [PR#3728](https://github.com/bbc/psammead/pull/3728) Update Storybook from v5.3.19 to v6.0.22, introducing docs & fix breaking changes |
 | 2.4.12 | [PR#3812](https://github.com/bbc/psammead/pull/3812) Removing slack notifications for publishing of packages |
