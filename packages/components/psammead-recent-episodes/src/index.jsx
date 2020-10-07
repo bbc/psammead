@@ -5,15 +5,42 @@ import { grid } from '@bbc/psammead-styles/detection';
 import Grid from '@bbc/psammead-grid';
 import { string } from 'prop-types';
 
-const RecentEpisodes = ({ }) => (
-  <StyledGrid forwardedAs="ul" dir={dir}>
-  </StyledGrid>
-);
+// Wrapping Grid + adds the dividers
+const RecentEpisodes = styled.ul`
+  li {
+    border-bottom: 1px black solid;
+  }
+`;
 
-RecentEpisodes.propTypes = {
+// Get SVG
+// Align to top
+const PlayIcon = styled.div`
+  display: inline-block;
+`;
+
+const Wrapper = styled.h3`
+  display: inline-block;
+`;
+
+// Most stuff goes
+RecentEpisodes.Episode = ({ children, Link }) => {
+  return (
+    <li>
+      <Link>
+        <PlayIcon>Play!</PlayIcon>
+        <Wrapper>{children}</Wrapper>
+      </Link>
+    </li>
+  );
 };
 
-RecentEpisodes.defaultProps = {
-};
+RecentEpisodes.BrandTitle = styled.h2``;
+RecentEpisodes.EpisodeTitle = styled.p``;
+RecentEpisodes.Date = styled.p``;
+RecentEpisodes.Duration = styled.p``;
+
+RecentEpisodes.propTypes = {};
+
+RecentEpisodes.defaultProps = {};
 
 export default RecentEpisodes;
