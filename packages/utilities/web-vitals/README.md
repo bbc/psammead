@@ -22,9 +22,11 @@ The `WebVitals` utility provides a configurable hook which will collect device c
 
 ## Installation
 
-```jsx
-npm install @bbc/web-vitals --save
-```
+### yarn
+`yarn add @bbc/web-vitals`
+
+### npm
+`npm install @bbc/web-vitals`
 
 ## Props
 

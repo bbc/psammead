@@ -6,15 +6,11 @@ The `<%= packageName %>` container does...
 
 ## Installation
 
-### npm
-```jsx
-npm install @bbc/psammead-<%= name %> --save
-```
-
 ### yarn
-```jsx
-yarn add @bbc/psammead-<%= name %>
-```
+`yarn add @bbc/psammead-<%= name %>`
+
+### npm
+`npm install @bbc/psammead-<%= name %>`
 
 ## Props
 

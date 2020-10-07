@@ -4,9 +4,11 @@ This package allows you to exclude all moment timezones from being included, whi
 
 ## Installation
 
-```jsx
-npm install @bbc/moment-timezone-include --save
-```
+### yarn
+`yarn add @bbc/moment-timezone-include`
+
+### npm
+`npm install @bbc/moment-timezone-include`
 
 ## Usage - Exclude default timezones
 

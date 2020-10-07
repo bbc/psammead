@@ -6,9 +6,11 @@ The `psammead-sitewide-links` component is intended to be used at the bottom of 
 
 ## Installation
 
-```
-npm install @bbc/psammead-sitewide-links --save
-```
+### yarn
+`yarn add @bbc/psammead-sitewide-links`
+
+### npm
+`npm install @bbc/psammead-sitewide-links`
 
 ## Props
 

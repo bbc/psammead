@@ -61,9 +61,11 @@ For an example see Usage, below.
 
 ## Installation
 
-```jsx
-npm install @bbc/psammead-locales --save
-```
+### yarn
+`yarn add @bbc/psammead-locales`
+
+### npm
+`npm install @bbc/psammead-locales`
 
 ## Usage
 

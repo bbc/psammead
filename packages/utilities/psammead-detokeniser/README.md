@@ -6,9 +6,11 @@ The `detokeniser` utility operates on strings and replaces % delimited tokens wi
 
 ## Installation
 
-```jsx
-npm install @bbc/psammead-detokeniser --save
-```
+### yarn
+`yarn add @bbc/psammead-calendars`
+
+### npm
+`npm install @bbc/psammead-detokeniser`
 
 ## Props
 

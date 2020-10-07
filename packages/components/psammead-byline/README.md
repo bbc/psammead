@@ -6,9 +6,11 @@ The `Byline` component is designed to display an author's full name, title, and 
 
 ## Installation
 
-```
-npm install @bbc/psammead-byline --save
-```
+### yarn
+`yarn add @bbc/psammead-byline`
+
+### npm
+`npm install @bbc/psammead-byline`
 
 ## Props
 

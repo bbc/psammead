@@ -75,6 +75,6 @@ If you have a PR that is not yet merged and you need to preview this on another 
 
 After merging a pull request into `latest` the Jenkins pipeline publishes the new package versions to npm and the Psammead Storybook to github pages at https://bbc.github.io/psammead. Once the pipeline runs successfully:
 
-- Confirm the version update with `npm show {pkg} version`.
+- Confirm the version update with `yarn info {pkg} version`.
 - Confirm storybook updates at https://bbc.github.io/psammead.
 - There will be an auto-generated PR by [Talos (package bumping bot)](https://github.com/bbc/psammead/blob/latest/scripts/talos/README.md) you are responsible for completing the chain of updates, so then our Psammead dependency tree is always up to date.

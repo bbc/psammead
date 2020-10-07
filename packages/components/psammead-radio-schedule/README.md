@@ -10,9 +10,11 @@ The `RadioSchedule` component is designed to display radio schedule programs in 
 
 ## Installation
 
-```jsx
-npm install @bbc/psammead-radio-schedule --save
-```
+### yarn
+`yarn add @bbc/psammead-radio-schedule`
+
+### npm
+`npm install @bbc/psammead-radio-schedule`
 
 ## Components (WIP)
 

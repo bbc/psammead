@@ -9,9 +9,12 @@ This package provides a collection of common assets that are likely to be requir
 
 ## Installation
 
-```jsx
-npm install @bbc/psammead-assets --save
-```
+### yarn
+`yarn add @bbc/psammead-assets`
+
+### npm
+`npm install @bbc/psammead-assets`
+
 ## Usage
 
 ```jsx

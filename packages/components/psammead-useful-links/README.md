@@ -6,9 +6,11 @@ The `UsefulLinks` component implements a Link Promo type that accesses links wit
 
 ## Installation
 
-```jsx
-npm install @bbc/psammead-useful-links
-```
+### yarn
+`yarn add @bbc/psammead-useful-links`
+
+### npm
+`npm install @bbc/psammead-useful-links`
 
 ## UsefulLink Props
 

@@ -17,9 +17,11 @@ This package provides a collection of helper methods for implementing Jest snaps
 
 ## Installation
 
-```jsx
-npm install react react-dom @bbc/psammead-test-helpers --save-dev
-```
+### yarn
+`yarn add @bbc/psammead-test-helpers --dev`
+
+### npm
+`npm install react react-dom @bbc/psammead-test-helpers --save-dev`
 
 ## Usage
 

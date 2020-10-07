@@ -10,9 +10,11 @@ The `OEmbed` component [sanitizes](#Sanitization) and renders the HTML from an o
 
 ## Installation
 
-```jsx
-npm install @bbc/psammead-oembed --save
-```
+### yarn
+`yarn add @bbc/psammead-oembed`
+
+### npm
+`npm install @bbc/psammead-oembed`
 
 ## Props
 

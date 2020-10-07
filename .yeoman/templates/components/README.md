@@ -6,9 +6,11 @@ The `<%= packageName %>` component does...
 
 ## Installation
 
-```jsx
-npm install @bbc/psammead-<%= name %> --save
-```
+### yarn
+`yarn add @bbc/psammead-<%= name %>`
+
+### npm
+`npm install @bbc/psammead-<%= name %> --save`
 
 ## Props
 

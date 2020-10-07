@@ -6,9 +6,11 @@ The `ScriptLink` component is designed to be used where a service has multiple v
 
 ## Installation
 
-```jsx
-npm install @bbc/psammead-script-link --save
-```
+### yarn
+`yarn add @bbc/psammead-script-link`
+
+### npm
+`npm install @bbc/psammead-script-link`
 
 ## Props
 

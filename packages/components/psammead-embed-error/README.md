@@ -6,9 +6,11 @@
 
 ## Installation
 
-```jsx
-npm install @bbc/psammead-embed-error --save
-```
+### yarn
+`yarn add @bbc/psammead-embed-error`
+
+### npm
+`npm install @bbc/psammead-embed-error`
 
 ## Props
 

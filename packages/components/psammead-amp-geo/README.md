@@ -6,7 +6,11 @@ The `psammead-amp-geo` component is an `<amp-geo>` element to be used for AMP pa
 
 ## Installation
 
-`npm install @bbc/psammead-amp-geo`
+### yarn
+`yarn add @bbc/psammead-amp-geo`
+
+### npm
+`npm install @bbc/psammead-amp-geo --save`
 
 ## Props
 

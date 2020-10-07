@@ -21,9 +21,11 @@ Currently, this library only supports the following block types:
 
 ## Installation
 
-```jsx
-npm install @bbc/psammead-locales --save
-```
+### yarn
+`yarn add @bbc/psammead-rich-text-transforms`
+
+### npm
+`npm install @bbc/psammead-rich-text-transforms`
 
 ## Usage
 

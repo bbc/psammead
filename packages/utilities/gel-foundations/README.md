@@ -10,9 +10,11 @@ This package provides a range of string constants for use in CSS, intended to he
 
 ## Installation
 
-```jsx
-npm install @bbc/gel-foundations --save
-```
+### yarn
+`yarn add @bbc/gel-foundations`
+
+### npm
+`npm install @bbc/gel-foundations`
 
 ## Usage
 

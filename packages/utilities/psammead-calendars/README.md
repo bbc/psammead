@@ -4,9 +4,11 @@ This package provides a utility to format calendar dates provided in a `Moment` 
 
 ## Installation
 
-```jsx
-npm install @bbc/psammead-calendars --save
-```
+### yarn
+`yarn add @bbc/psammead-calendars`
+
+### npm
+`npm install @bbc/psammead-calendars`
 
 ## Calendars
 

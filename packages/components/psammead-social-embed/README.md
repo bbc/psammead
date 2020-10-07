@@ -14,9 +14,11 @@ The `SocialEmbed` component renders a rich social media embed for a number of su
 
 ## Installation
 
-```
-npm install @bbc/psammead-social-embed --save
-```
+### yarn
+`yarn add @bbc/psammead-social-embed`
+
+### npm
+`npm install @bbc/psammead-social-embed`
 
 ## Props
 

@@ -38,9 +38,11 @@ The `buildRTLSubstories` function accepts 2 arguments.
 
 ## Installation
 
-```sh
-npm install @bbc/psammead-storybook-helpers --save-dev
-```
+### yarn
+`yarn add @bbc/psammead-storybook-helpers --dev`
+
+### npm
+`npm install @bbc/psammead-storybook-helpers --save-dev`
 
 ## Usage
 

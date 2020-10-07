@@ -14,9 +14,11 @@ This package provides a collection of string constants for use in CSS, containin
 
 ## Installation
 
-```jsx
-npm install @bbc/psammead-styles --save
-```
+### yarn
+`yarn add @bbc/psammead-styles`
+
+### npm
+`npm install @bbc/psammead-styles`
 
 ## Usage
 

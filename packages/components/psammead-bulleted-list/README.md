@@ -6,9 +6,11 @@ The `BulletedList` component is a styled bulleted (unordered) list that works fo
 
 ## Installation
 
-```jsx
-npm install @bbc/psammead-bulleted-list --save
-```
+### yarn
+`yarn add @bbc/psammead-bulleted-list`
+
+### npm
+`npm install @bbc/psammead-bulleted-list`
 
 ## Props
 

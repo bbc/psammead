@@ -6,9 +6,11 @@ The `Bulletin` component can be used to render `Radio` or `TVBulletin` by passin
 
 ## Installation
 
-```jsx
-npm install @bbc/psammead-bulletin --save
-```
+### yarn
+`yarn add @bbc/psammead-bulletin`
+
+### npm
+`npm install @bbc/psammead-bulletin`
 
 ## Props
 
