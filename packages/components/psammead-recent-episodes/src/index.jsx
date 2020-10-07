@@ -19,7 +19,7 @@ const RecentEpisodes = styled.ul`
   li {
     padding: 16px 0;
   }
-  a:not(:last-child) li {
+  li:not(:last-child) {
     border-bottom: 1px ${C_CLOUD_LIGHT} solid;
   }
 `;

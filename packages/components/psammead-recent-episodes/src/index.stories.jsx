@@ -29,27 +29,25 @@ storiesOf('Components/RecentEpisodes', module)
   return (
     <RecentEpisodes>
       {episodes.map(episode => (
-        <a href={episode.url} key={episode.id}>
-          <RecentEpisodes.Episode
-            Link={({ children }) => <a href={episode.url}>{children}</a>}
-            script={script}
-            service={service}
-          >
-            <RecentEpisodes.BrandTitle>
-              {episode.brandTitle}
-            </RecentEpisodes.BrandTitle>
-            {episode.episodeTitle ? (
-              <RecentEpisodes.EpisodeTitle>
-                {episode.episodeTitle}
-              </RecentEpisodes.EpisodeTitle>
-            ) : (
-              <RecentEpisodes.Date>{episode.date}</RecentEpisodes.Date>
-            )}
-            <RecentEpisodes.Duration>
-              {episode.duration}
-            </RecentEpisodes.Duration>
-          </RecentEpisodes.Episode>
-        </a>
+        <RecentEpisodes.Episode
+          Link={({ children }) => <a href={episode.url}>{children}</a>}
+          script={script}
+          service={service}
+        >
+          <RecentEpisodes.BrandTitle>
+            {episode.brandTitle}
+          </RecentEpisodes.BrandTitle>
+          {episode.episodeTitle ? (
+            <RecentEpisodes.EpisodeTitle>
+              {episode.episodeTitle}
+            </RecentEpisodes.EpisodeTitle>
+          ) : (
+            <RecentEpisodes.Date>{episode.date}</RecentEpisodes.Date>
+          )}
+          <RecentEpisodes.Duration>
+            {episode.duration}
+          </RecentEpisodes.Duration>
+        </RecentEpisodes.Episode>
       ))}
     </RecentEpisodes>
   );
