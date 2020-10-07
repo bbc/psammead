@@ -10,7 +10,7 @@ The `<%= packageName %>` component does...
 `yarn add @bbc/psammead-<%= name %>`
 
 ### npm
-`npm install @bbc/psammead-<%= name %> --save`
+`npm install @bbc/psammead-<%= name %>`
 
 ## Props
 
