@@ -59,7 +59,7 @@ describe(`changeScanner - index`, () => {
 
     const expectedMessages = [
       'Branch must update CHANGELOG.md in barfoo',
-      'package-lock.json file found in pears - please delete as it not required for yarn projects',
+      // 'package-lock.json file found in pears - please delete as it not required for yarn projects',
       'Branch must update CHANGELOG.md in foobar',
       'Branch must update package.json in foobar',
       'Branch must update CHANGELOG.md in apples',

@@ -17,12 +17,12 @@ Object.keys(changes).forEach(packageName => {
     }
   });
 
-  const packageLock = 'package-lock.json';
-  if (packageChanges.includes(packageLock)) {
-    errors.push(
-      `${packageLock} file found in ${packageName} - please delete as it not required for yarn projects`,
-    );
-  }
+  // const packageLock = 'package-lock.json';
+  // if (packageChanges.includes(packageLock)) {
+  //   errors.push(
+  //     `${packageLock} file found in ${packageName} - please delete as it not required for yarn projects`,
+  //   );
+  // }
 });
 
 /* eslint-disable no-console */
