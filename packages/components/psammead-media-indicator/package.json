@@ -1,6 +1,6 @@
 {
   "name": "@bbc/psammead-media-indicator",
-  "version": "5.0.0",
+  "version": "4.0.17",
   "main": "dist/index.js",
   "module": "esm/index.js",
   "sideEffects": false,
