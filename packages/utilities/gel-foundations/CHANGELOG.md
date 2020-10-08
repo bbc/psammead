@@ -3,7 +3,6 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
-| 6.0.0 | [PR#3810](https://github.com/bbc/psammead/pull/3810) Migration to Yarn |
 | 5.0.0 | [PR#3805](https://github.com/bbc/psammead/pull/3805) BBC Reith Qalam v1.100. Removal of `arabicPashto` script in favour of `arabic` |
 | 4.3.0 | [PR#3782](https://github.com/bbc/psammead/pull/3782) Reduce Thai font size |
 | 4.2.0 | [PR#3616](https://github.com/bbc/psammead/pull/3616) Update Bengali inline link styling |
