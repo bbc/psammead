@@ -1,3 +1,4 @@
+// This provides fixture data and helper functions that are useful to both storybook and unit tests
 import React from 'react';
 import VisuallyHiddenText from '@bbc/psammead-visually-hidden-text';
 
@@ -65,21 +66,17 @@ export const renderEpisodes = (episodes, script, service, dir) => (
         script={script}
         service={service}
         dir={dir}
-        LinkElement={({ children, className }) => (
-          <a href={episode.url} className={className}>
-            {children}
-          </a>
-        )}
+        LinkElement={({ children }) => <a href={episode.url}>{children}</a>}
       >
         <VisuallyHiddenText>Audio</VisuallyHiddenText>
-        <EpisodeList.BrandTitle>{episode.brandTitle}</EpisodeList.BrandTitle>
-        <EpisodeList.EpisodeTitle>
+        <EpisodeList.Title>{episode.brandTitle}</EpisodeList.Title>
+        <EpisodeList.Description>
           {episode.episodeTitle || `${episode.date}, ${episode.time}`}
-        </EpisodeList.EpisodeTitle>
-        <EpisodeList.MetaData>
+        </EpisodeList.Description>
+        <EpisodeList.Metadata>
           {episode.duration}
           {episode.episodeTitle && <span aria-hidden> | {episode.date}</span>}
-        </EpisodeList.MetaData>
+        </EpisodeList.Metadata>
       </EpisodeList.Episode>
     ))}
   </EpisodeList>

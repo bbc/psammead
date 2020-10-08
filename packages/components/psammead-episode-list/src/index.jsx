@@ -15,6 +15,9 @@ const StyledEpisodeList = styled.ul`
   list-style: none;
   padding: 0;
   margin: 0;
+  li {
+    padding: 16px 0;
+  }
   li:first-child {
     padding-top: 0;
   }
@@ -41,15 +44,24 @@ const EpisodeList = ({ children }) => {
   return <>{enhancedChildren}</>;
 };
 
+EpisodeList.propTypes = {
+  children: arrayOf(element),
+};
+
+EpisodeList.defaultProps = {
+  children: [],
+};
+
+// This module also has a range of supplemental components to provide consumers with some compositational control
 EpisodeList.Episode = Episode;
 
-const base = styled.span`
+const TypographyBase = styled.span`
   ${({ service }) => getSansRegular(service)}
   color: ${C_EBON};
   display: block;
 `;
 
-EpisodeList.BrandTitle = styled(base)`
+EpisodeList.Title = styled(TypographyBase)`
   font-weight: 700;
   font-size: 15px;
   line-height: 20px;
@@ -58,7 +70,7 @@ EpisodeList.BrandTitle = styled(base)`
   }
 `;
 
-EpisodeList.EpisodeTitle = styled(base)`
+EpisodeList.Description = styled(TypographyBase)`
   font-size: 15px;
   line-height: 18px;
   @media (min-width: ${GEL_GROUP_4_SCREEN_WIDTH_MIN}) {
@@ -67,7 +79,7 @@ EpisodeList.EpisodeTitle = styled(base)`
   margin: 4px 0;
 `;
 
-EpisodeList.MetaData = styled(base)`
+EpisodeList.Metadata = styled(TypographyBase)`
   font-size: 14px;
   line-height: 18px;
   color: ${C_METAL};
@@ -76,13 +88,5 @@ EpisodeList.MetaData = styled(base)`
     text-decoration: none !important;
   }
 `;
-
-EpisodeList.propTypes = {
-  children: arrayOf(element),
-};
-
-EpisodeList.defaultProps = {
-  children: [],
-};
 
 export default EpisodeList;

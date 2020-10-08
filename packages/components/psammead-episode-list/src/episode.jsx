@@ -8,8 +8,8 @@ import { scriptPropType } from '@bbc/gel-foundations/prop-types';
 import PlayButton from './playButton';
 
 const getEpisodeWrapper = ElementType => styled(ElementType)`
-  padding: 16px 0;
   a {
+    display: block;
     &:hover,
     &:focus {
       span {
@@ -31,20 +31,15 @@ const getEpisodeWrapper = ElementType => styled(ElementType)`
   }
 `;
 
-const getLinkElement = ElementType => styled(ElementType)`
-  display: block;
-`;
-
 const Wrapper = styled.div`
   display: inline-block;
 `;
 
 const Episode = ({ children, as, LinkElement, script, service }) => {
   const EpisodeWrapper = getEpisodeWrapper(as);
-  const StyledLinkElement = getLinkElement(LinkElement);
   return (
     <EpisodeWrapper>
-      <StyledLinkElement>
+      <LinkElement>
         <PlayButton />
         <Wrapper>
           {children.map(child =>
@@ -55,7 +50,7 @@ const Episode = ({ children, as, LinkElement, script, service }) => {
             }),
           )}
         </Wrapper>
-      </StyledLinkElement>
+      </LinkElement>
     </EpisodeWrapper>
   );
 };
