@@ -67,7 +67,7 @@ Run the component tests:
 yarn test
 ```
 
-This runs Jest across any packages matching this glob pattern: `packages/components/**/*.test.jsx`. It also runs each package's `yarn test` command if it is defined
+This runs Jest across any packages matching this glob pattern: `packages/components/**/*.test.jsx`
 
 ### :runner: Run Storybook
 
