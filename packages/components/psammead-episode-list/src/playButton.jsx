@@ -33,12 +33,10 @@ const PlayIcon = styled.div`
 
 export default () => {
   return (
-    <div>
-      <PlayerButtonWrapper>
-        <PlayerButton>
-          <PlayIcon />
-        </PlayerButton>
-      </PlayerButtonWrapper>
-    </div>
+    <PlayerButtonWrapper className="play-button-wrapper">
+      <PlayerButton>
+        <PlayIcon className="play-icon" />
+      </PlayerButton>
+    </PlayerButtonWrapper>
   );
 };

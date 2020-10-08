@@ -1,54 +1,45 @@
 import React from 'react';
 import styled from 'styled-components';
-import { C_METAL, C_EBON, C_CLOUD_LIGHT } from '@bbc/psammead-styles/colours';
+import { C_METAL, C_EBON, C_CLOUD_LIGHT, C_POSTBOX } from '@bbc/psammead-styles/colours';
 import { getSansRegular } from '@bbc/psammead-styles/font-styles';
 import {
   GEL_GROUP_2_SCREEN_WIDTH_MIN,
   GEL_GROUP_4_SCREEN_WIDTH_MIN,
 } from '@bbc/gel-foundations/breakpoints';
-import PlayButton from './playButtonJoro';
 
-const EpisodeList = styled.ul`
+import PlayButton from './playButton';
+import Episode from './episode';
+
+const StyledEpisodeList = styled.ul`
   list-style: none;
-  li {
-    padding: 16px 0;
+  padding: 0;
+  margin: 0;
+  li:first-child {
+    padding-top: 0;
+  }
+  li:last-child {
+    padding-bottom: 0;
   }
   li:not(:last-child) {
     border-bottom: 1px ${C_CLOUD_LIGHT} solid;
   }
 `;
 
-const PlayIcon = styled.div`
-  padding-top: 2px;
-  padding-right: 16px;
-  display: inline-block;
-  vertical-align: top;
-  @media (min-width: ${GEL_GROUP_2_SCREEN_WIDTH_MIN}) {
-    font-size: 8px;
-  }
-`;
+const EpisodeList = ({ children, script, service, dir }) => {
+  if (!children.length) return null;
 
-const Wrapper = styled.div`
-  display: inline-block;
-`;
-
-// Most stuff goes
-EpisodeList.Episode = ({ children, Link, script, service }) => {
-  return (
-    <li>
-      <Link>
-        <PlayIcon>
-          <PlayButton />
-        </PlayIcon>
-        <Wrapper>
-          {children.map(child =>
-            React.cloneElement(child, { script, service }),
-          )}
-        </Wrapper>
-      </Link>
-    </li>
+  const hasMultipleChildren = children.length > 1;
+  const enhancedChildren = children.map(child =>
+    React.cloneElement(child, { script, service, dir, as: hasMultipleChildren ? 'li' : 'div' }),
   );
-};
+
+  if (hasMultipleChildren) return <StyledEpisodeList>{enhancedChildren}</StyledEpisodeList>;
+  return <>{enhancedChildren}</>;
+}
+
+EpisodeList.Episode = Episode;
+
+
 
 const base = styled.span`
   ${({ service }) => getSansRegular(service)}
@@ -78,6 +69,7 @@ EpisodeList.MetaData = styled(base)`
   font-size: 14px;
   line-height: 18px;
   color: ${C_METAL};
+  text-decoration: none !important;
 `;
 
 EpisodeList.propTypes = {};
