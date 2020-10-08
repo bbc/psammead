@@ -74,15 +74,10 @@ EpisodeList.EpisodeTitle = styled(base)`
   margin: 4px 0;
 `;
 
-EpisodeList.Duration = styled(base)`
+EpisodeList.MetaData = styled(base)`
   font-size: 14px;
   line-height: 18px;
   color: ${C_METAL};
-`;
-
-EpisodeList.Date = styled(base)`
-  font-size: 14px;
-  line-height: 18px;
 `;
 
 EpisodeList.propTypes = {};
