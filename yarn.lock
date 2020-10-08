@@ -1190,6 +1190,11 @@
   resolved "https://registry.yarnpkg.com/@bbc/psammead-styles/-/psammead-styles-4.5.1.tgz#1bd480e66d37fb3055272ded6608f2c887e8329a"
   integrity sha512-b4vSC0HMBR/13ZF4wGNZZmuLfKpF2Uuclebamwgn5pw0T+6zKceODaz5cMsLH9Kf82fQ+VijTUeuWkMlwhe6vQ==
 
+"@bbc/psammead-styles@^5.0.0":
+  version "5.0.0"
+  resolved "https://registry.yarnpkg.com/@bbc/psammead-styles/-/psammead-styles-5.0.0.tgz#c01e8f73c78524386879742a9f8922b4e4745418"
+  integrity sha512-zXYOcMgn4jiblmi9nr5YNS3WuPptY6KrpIdHdlUOrqGIguQT2JXB12RsqxVbJcjy3FDn7K4EKJk+NmUdDcru9g==
+
 "@bcoe/v8-coverage@^0.2.3":
   version "0.2.3"
   resolved "https://registry.yarnpkg.com/@bcoe/v8-coverage/-/v8-coverage-0.2.3.tgz#75a2e8b51cb758a7553d6804a5932d7aace75c39"
