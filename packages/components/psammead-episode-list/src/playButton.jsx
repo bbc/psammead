@@ -1,5 +1,22 @@
-import React, { useContext } from 'react';
+import React from 'react';
 import styled from 'styled-components';
+
+import { GEL_GROUP_2_SCREEN_WIDTH_MIN } from '@bbc/gel-foundations/breakpoints';
+
+const OuterWrapper = styled.div`
+  padding-top: 2px;
+  display: inline-block;
+  vertical-align: top;
+  &:dir(ltr) {
+    padding-right: 16px;
+  }
+  &:dir(rtl) {
+    padding-left: 16px;
+  }
+  @media (min-width: ${GEL_GROUP_2_SCREEN_WIDTH_MIN}) {
+    font-size: 8px;
+  }
+`;
 
 const PlayerButtonWrapper = styled.div`
   position: relative;
@@ -31,12 +48,12 @@ const PlayIcon = styled.div`
   left: 2px;
 `;
 
-export default () => {
-  return (
+export default () => (
+  <OuterWrapper>
     <PlayerButtonWrapper className="play-button-wrapper">
       <PlayerButton>
         <PlayIcon className="play-icon" />
       </PlayerButton>
     </PlayerButtonWrapper>
-  );
-};
+  </OuterWrapper>
+);

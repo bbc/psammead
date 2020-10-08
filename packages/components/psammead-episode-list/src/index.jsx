@@ -1,13 +1,16 @@
 import React from 'react';
 import styled from 'styled-components';
-import { C_METAL, C_EBON, C_CLOUD_LIGHT, C_POSTBOX } from '@bbc/psammead-styles/colours';
+import { C_METAL, C_EBON, C_CLOUD_LIGHT } from '@bbc/psammead-styles/colours';
 import { getSansRegular } from '@bbc/psammead-styles/font-styles';
 import {
   GEL_GROUP_2_SCREEN_WIDTH_MIN,
   GEL_GROUP_4_SCREEN_WIDTH_MIN,
 } from '@bbc/gel-foundations/breakpoints';
 
-import PlayButton from './playButton';
+import { string, shape, oneOf, arrayOf, element } from 'prop-types';
+
+import { scriptPropType } from '@bbc/gel-foundations/prop-types';
+
 import Episode from './episode';
 
 const StyledEpisodeList = styled.ul`
@@ -30,16 +33,20 @@ const EpisodeList = ({ children, script, service, dir }) => {
 
   const hasMultipleChildren = children.length > 1;
   const enhancedChildren = children.map(child =>
-    React.cloneElement(child, { script, service, dir, as: hasMultipleChildren ? 'li' : 'div' }),
+    React.cloneElement(child, {
+      script,
+      service,
+      dir,
+      as: hasMultipleChildren ? 'li' : 'div',
+    }),
   );
 
-  if (hasMultipleChildren) return <StyledEpisodeList>{enhancedChildren}</StyledEpisodeList>;
+  if (hasMultipleChildren)
+    return <StyledEpisodeList>{enhancedChildren}</StyledEpisodeList>;
   return <>{enhancedChildren}</>;
-}
+};
 
 EpisodeList.Episode = Episode;
-
-
 
 const base = styled.span`
   ${({ service }) => getSansRegular(service)}
@@ -72,8 +79,16 @@ EpisodeList.MetaData = styled(base)`
   text-decoration: none !important;
 `;
 
-EpisodeList.propTypes = {};
+EpisodeList.propTypes = {
+  children: arrayOf(element),
+  script: shape(scriptPropType).isRequired,
+  service: string.isRequired,
+  dir: oneOf(['ltr', 'rtl']),
+};
 
-EpisodeList.defaultProps = {};
+EpisodeList.defaultProps = {
+  children: [],
+  dir: 'ltr',
+};
 
 export default EpisodeList;

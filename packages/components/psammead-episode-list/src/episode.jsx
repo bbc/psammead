@@ -1,17 +1,17 @@
 import React from 'react';
 import styled from 'styled-components';
-import { C_METAL, C_EBON, C_CLOUD_LIGHT, C_POSTBOX } from '@bbc/psammead-styles/colours';
-import {
-  GEL_GROUP_2_SCREEN_WIDTH_MIN,
-  GEL_GROUP_4_SCREEN_WIDTH_MIN,
-} from '@bbc/gel-foundations/breakpoints';
+import { C_METAL, C_POSTBOX } from '@bbc/psammead-styles/colours';
+
+import { string, shape, func, arrayOf, element } from 'prop-types';
+import { scriptPropType } from '@bbc/gel-foundations/prop-types';
 
 import PlayButton from './playButton';
 
 const getEpisodeWrapper = ElementType => styled(ElementType)`
   padding: 16px 0;
   a {
-    &:hover, &:focus {
+    &:hover,
+    &:focus {
       span {
         text-decoration: underline;
       }
@@ -25,7 +25,7 @@ const getEpisodeWrapper = ElementType => styled(ElementType)`
     }
     &:visited {
       span {
-        color: ${C_METAL}
+        color: ${C_METAL};
       }
     }
   }
@@ -35,38 +35,33 @@ const Wrapper = styled.div`
   display: inline-block;
 `;
 
-// TODO: move to play button file
-const PlayIcon = styled.div`
-  padding-top: 2px;
-  display: inline-block;
-  vertical-align: top;
-  &:dir(ltr) {
-    padding-right: 16px;
-  }
-  &:dir(rtl) {
-    padding-left: 16px;
-  }
-  @media (min-width: ${GEL_GROUP_2_SCREEN_WIDTH_MIN}) {
-    font-size: 8px;
-  }
-`;
+const Episode = ({ children, as, LinkElement, script, service }) => {
+  const EpisodeWrapper = getEpisodeWrapper(as);
+  return (
+    <EpisodeWrapper>
+      <LinkElement>
+        <PlayButton />
+        <Wrapper>
+          {children.map(child =>
+            React.cloneElement(child, { script, service }),
+          )}
+        </Wrapper>
+      </LinkElement>
+    </EpisodeWrapper>
+  );
+};
 
-const Episode = ({ children, as, Link, script, service }) => {
-    const EpisodeWrapper = getEpisodeWrapper(as || 'div');
-    return (
-      <EpisodeWrapper>
-        <Link>
-          <PlayIcon>
-            <PlayButton />
-          </PlayIcon>
-          <Wrapper>
-            {children.map(child =>
-              React.cloneElement(child, { script, service }),
-            )}
-          </Wrapper>
-        </Link>
-      </EpisodeWrapper>
-    );
-  };
+Episode.propTypes = {
+  children: arrayOf(element),
+  as: string,
+  LinkElement: func.isRequired,
+  script: shape(scriptPropType).isRequired,
+  service: string.isRequired,
+};
 
-  export default Episode;
+Episode.defaultProps = {
+  children: [],
+  as: 'div',
+};
+
+export default Episode;
