@@ -8,7 +8,7 @@ import {
 } from '@bbc/gel-foundations/breakpoints';
 import PlayButton from './playButtonJoro';
 
-const RecentEpisodes = styled.ul`
+const EpisodeList = styled.ul`
   list-style: none;
   li {
     padding: 16px 0;
@@ -33,7 +33,7 @@ const Wrapper = styled.div`
 `;
 
 // Most stuff goes
-RecentEpisodes.Episode = ({ children, Link, script, service }) => {
+EpisodeList.Episode = ({ children, Link, script, service }) => {
   return (
     <li>
       <Link>
@@ -56,7 +56,7 @@ const base = styled.span`
   display: block;
 `;
 
-RecentEpisodes.BrandTitle = styled(base)`
+EpisodeList.BrandTitle = styled(base)`
   font-weight: 700;
   font-size: 15px;
   line-height: 20px;
@@ -65,7 +65,7 @@ RecentEpisodes.BrandTitle = styled(base)`
   }
 `;
 
-RecentEpisodes.EpisodeTitle = styled(base)`
+EpisodeList.EpisodeTitle = styled(base)`
   font-size: 15px;
   line-height: 18px;
   @media (min-width: ${GEL_GROUP_4_SCREEN_WIDTH_MIN}) {
@@ -74,19 +74,19 @@ RecentEpisodes.EpisodeTitle = styled(base)`
   margin: 4px 0;
 `;
 
-RecentEpisodes.Duration = styled(base)`
+EpisodeList.Duration = styled(base)`
   font-size: 14px;
   line-height: 18px;
   color: ${C_METAL};
 `;
 
-RecentEpisodes.Date = styled(base)`
+EpisodeList.Date = styled(base)`
   font-size: 14px;
   line-height: 18px;
 `;
 
-RecentEpisodes.propTypes = {};
+EpisodeList.propTypes = {};
 
-RecentEpisodes.defaultProps = {};
+EpisodeList.defaultProps = {};
 
-export default RecentEpisodes;
+export default EpisodeList;

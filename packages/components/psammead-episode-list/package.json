@@ -1,5 +1,5 @@
 {
-  "name": "@bbc/psammead-recent-episodes",
+  "name": "@bbc/psammead-episode-list",
   "version": "",
   "main": "dist/index.js",
   "module": "esm/index.js",
@@ -7,7 +7,7 @@
   "description": "Component package for recent episodes components",
   "repository": {
     "type": "git",
-    "url": "https://github.com/BBC-News/psammead/tree/latest/packages/components/psammead-recent-episodes"
+    "url": "https://github.com/BBC-News/psammead/tree/latest/packages/components/psammead-episode-list"
   },
   "author": {
     "name": "Psammead Maintainers",
@@ -17,7 +17,7 @@
   "bugs": {
     "url": "https://github.com/bbc/psammead/issues"
   },
-  "homepage": "https://github.com/BBC-News/psammead/blob/latest/packages/components/psammead-recent-episodes/README.md",
+  "homepage": "https://github.com/BBC-News/psammead/blob/latest/packages/components/psammead-episode-list/README.md",
   "dependencies": {
     "@bbc/gel-foundations": "^4.3.0",
     "@bbc/psammead-assets": "^2.14.2",
@@ -31,7 +31,7 @@
   },
   "keywords": [
     "bbc",
-    "recent",
-    "episodes"
+    "episode",
+    "list"
   ]
 }

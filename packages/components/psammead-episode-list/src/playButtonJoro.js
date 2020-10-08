@@ -34,8 +34,7 @@ const PlayIcon = styled.div`
 export default () => {
   return (
     <div>
-      <PlayerButtonWrapper
-      >
+      <PlayerButtonWrapper>
         <PlayerButton>
           <PlayIcon />
         </PlayerButton>

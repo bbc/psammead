@@ -1,4 +1,4 @@
-# psammead-recent-episodes 
+# psammead-episode-list
 
 ## Description
 

@@ -1,12 +1,11 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { withKnobs } from '@storybook/addon-knobs';
-import InlineLink from '@bbc/psammead-inline-link';
 import { withServicesKnob } from '@bbc/psammead-storybook-helpers';
 
-import RecentEpisodes from '.';
+import EpisodeList from '.';
 
-storiesOf('Components/RecentEpisodes', module)
+storiesOf('Components/EpisodeList', module)
   .addDecorator(withKnobs)
   .addDecorator(withServicesKnob())
   .add('default', ({ script, service }) => {
@@ -27,28 +26,26 @@ storiesOf('Components/RecentEpisodes', module)
       },
     ];
     return (
-      <RecentEpisodes>
+      <EpisodeList>
         {episodes.map(episode => (
-          <RecentEpisodes.Episode
+          <EpisodeList.Episode
             Link={({ children }) => <a href={episode.url}>{children}</a>}
             script={script}
             service={service}
           >
-            <RecentEpisodes.BrandTitle>
+            <EpisodeList.BrandTitle>
               {episode.brandTitle}
-            </RecentEpisodes.BrandTitle>
+            </EpisodeList.BrandTitle>
             {episode.episodeTitle ? (
-              <RecentEpisodes.EpisodeTitle>
+              <EpisodeList.EpisodeTitle>
                 {episode.episodeTitle}
-              </RecentEpisodes.EpisodeTitle>
+              </EpisodeList.EpisodeTitle>
             ) : (
-              <RecentEpisodes.Date>{episode.date}</RecentEpisodes.Date>
+              <EpisodeList.Date>{episode.date}</EpisodeList.Date>
             )}
-            <RecentEpisodes.Duration>
-              {episode.duration}
-            </RecentEpisodes.Duration>
-          </RecentEpisodes.Episode>
+            <EpisodeList.Duration>{episode.duration}</EpisodeList.Duration>
+          </EpisodeList.Episode>
         ))}
-      </RecentEpisodes>
+      </EpisodeList>
     );
   });
