@@ -13,7 +13,7 @@ describe('Psammead Styles - Fonts', () => {
       expect(font()).toMatchSnapshot();
     });
 
-    it(`should match the overridden url: ${newUrl}`, () => {
+    it(`should match ${fontName} with overridden url`, () => {
       expect(font(newUrl)).toMatchSnapshot();
     });
   });
