@@ -6,7 +6,7 @@ import { renderEpisodes, exampleEpisodes, rtlEpisodes } from './fixtures';
 
 storiesOf('Components/EpisodeList', module)
   .addDecorator(withKnobs)
-  .addDecorator(withServicesKnob({ defaultService: 'news' }))
+  .addDecorator(withServicesKnob())
   .add('default', ({ script, service, dir }) =>
     renderEpisodes(
       dir === 'rtl' ? rtlEpisodes : exampleEpisodes,

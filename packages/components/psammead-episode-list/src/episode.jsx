@@ -48,7 +48,11 @@ const Episode = ({ children, as, LinkElement, script, service }) => {
         <PlayButton />
         <Wrapper>
           {children.map(child =>
-            React.cloneElement(child, { script, service }),
+            React.cloneElement(child, {
+              key: child.props.children,
+              script,
+              service,
+            }),
           )}
         </Wrapper>
       </StyledLinkElement>
