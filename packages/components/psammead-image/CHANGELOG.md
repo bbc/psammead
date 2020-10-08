@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 | Version | Description |
 |---------|-------------|
+| 2.0.0 | [PR#3810](https://github.com/bbc/psammead/pull/3810) Migration to Yarn |
 | 1.2.5 | [PR#3728](https://github.com/bbc/psammead/pull/3728) Tweaks following Storybook v5.3.19 to v6.0.22 update |
 | 1.2.4 | [PR#2607](https://github.com/bbc/psammead/pull/2607) Bump dependencies |
 | 1.2.3 | [PR#2460](https://github.com/bbc/psammead/pull/2460) Fix Storybook console errors |
