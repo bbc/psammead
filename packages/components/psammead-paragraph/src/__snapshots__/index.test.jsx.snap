@@ -70,7 +70,7 @@ exports[`Paragraph should render correctly with arabic script typography values 
 .c0 {
   font-size: 1.125rem;
   line-height: 1.75rem;
-  font-family: "BBC Nassim Persian",Arial,Verdana,Geneva,Helvetica,sans-serif;
+  font-family: "BBC Reith Qalam",Arial,Verdana,Geneva,Helvetica,sans-serif;
   font-weight: 400;
   font-style: normal;
   color: #3F3F42;

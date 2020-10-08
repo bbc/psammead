@@ -4,6 +4,7 @@
 | Version | Description |
 |---------|-------------|
 | 4.0.0 | [PR#3810](https://github.com/bbc/psammead/pull/3810) Yarn Workspaces |
+| 3.0.3 | [PR#3836](https://github.com/bbc/psammead/pull/3836) Talos - Bump Dependencies - @bbc/psammead-styles |
 | 3.0.2 | [PR#3832](https://github.com/bbc/psammead/pull/3832) Add BBC Reith Qalam font to Storybook static assets |
 | 3.0.1 | [PR#3834](https://github.com/bbc/psammead/pull/3834) Talos - Bump Dependencies - @bbc/psammead-storybook-helpers |
 | 3.0.0 | [PR#3806](https://github.com/bbc/psammead/pull/3806) Add BBC Reith Qalam & remove BBC Nassim Fonts from Storybook config |

@@ -4,6 +4,7 @@
 | Version | Description |
 |---------|-------------|
 | 3.0.0  | [PR#3810](https://github.com/bbc/psammead/pull/3810) Migration to Yarn |
+| 2.2.37 | [PR#3836](https://github.com/bbc/psammead/pull/3836) Talos - Bump Dependencies - @bbc/psammead-styles |
 | 2.2.36 | [PR#3816](https://github.com/bbc/psammead/pull/3816) Talos - Bump Dependencies |
 | 2.2.35 | [PR#3728](https://github.com/bbc/psammead/pull/3728) Tweaks following Storybook v5.3.19 to v6.0.22 update |
 | 2.2.34 | [PR#3811](https://github.com/bbc/psammead/pull/3811) Talos - Bump Dependencies - @bbc/psammead-styles |
