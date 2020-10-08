@@ -57,7 +57,6 @@ export const rtlEpisodes = [
   },
 ];
 
-// eslint-disable-next-line import/prefer-default-export
 export const renderEpisodes = (episodes, script, service, dir) => (
   <EpisodeList script={script} service={service} dir={dir}>
     {episodes.map(episode => (
