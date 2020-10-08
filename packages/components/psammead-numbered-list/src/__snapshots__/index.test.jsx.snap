@@ -1,0 +1,101 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PsammeadNumberedList should render correctly from ltr 1`] = `
+.c0 {
+  font-size: 0.9375rem;
+  line-height: 1.25rem;
+  font-family: ReithSans,Helvetica,Arial,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  margin-top: 0;
+}
+
+.c1 {
+  margin-bottom: 1rem;
+}
+
+@media (min-width:20rem) and (max-width:37.4375rem) {
+  .c0 {
+    font-size: 1rem;
+    line-height: 1.375rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .c0 {
+    font-size: 1rem;
+    line-height: 1.375rem;
+  }
+}
+
+<ol
+  class="c0"
+  dir="ltr"
+>
+  <li
+    class="c1"
+  >
+    First item on the list
+  </li>
+  <li
+    class="c1"
+  >
+    Second item on the list
+  </li>
+  <li
+    class="c1"
+  >
+    Final list item
+  </li>
+</ol>
+`;
+
+exports[`PsammeadNumberedList should render correctly from rtl 1`] = `
+.c0 {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  font-family: "BBC Nassim Arabic",Arial,Verdana,Geneva,Helvetica,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  margin-top: 0;
+}
+
+.c1 {
+  margin-bottom: 1rem;
+}
+
+@media (min-width:20rem) and (max-width:37.4375rem) {
+  .c0 {
+    font-size: 1.375rem;
+    line-height: 2rem;
+  }
+}
+
+@media (min-width:37.5rem) {
+  .c0 {
+    font-size: 1.375rem;
+    line-height: 2rem;
+  }
+}
+
+<ol
+  class="c0"
+  dir="rtl"
+>
+  <li
+    class="c1"
+  >
+    العنصر الأول في القائمة
+  </li>
+  <li
+    class="c1"
+  >
+    البند الثاني في القائمة
+  </li>
+  <li
+    class="c1"
+  >
+    عنصر القائمة النهائية
+  </li>
+</ol>
+`;

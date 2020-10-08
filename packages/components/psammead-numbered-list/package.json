@@ -1,0 +1,25 @@
+{
+  "name": "@bbc/psammead-numbered-list",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "module": "esm/index.js",
+  "sideEffects": false,
+  "description": "React styled component for ordered lists",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/BBC-News/psammead/tree/latest/packages/components/psammead-numbered-list"
+  },
+  "author": {
+    "name": "Psammead Maintainers",
+    "email": "PsammeadMaintainers@bbc.co.uk"
+  },
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/bbc/psammead/issues"
+  },
+  "homepage": "https://github.com/BBC-News/psammead/blob/latest/packages/components/psammead-numbered-list/README.md",
+  "dependencies": {},
+  "peerDependencies": {
+    "react": "^16.13.1"
+  }
+}
