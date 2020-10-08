@@ -7,9 +7,7 @@ import {
   GEL_GROUP_4_SCREEN_WIDTH_MIN,
 } from '@bbc/gel-foundations/breakpoints';
 
-import { string, shape, oneOf, arrayOf, element } from 'prop-types';
-
-import { scriptPropType } from '@bbc/gel-foundations/prop-types';
+import { arrayOf, element } from 'prop-types';
 
 import Episode from './episode';
 
@@ -28,15 +26,12 @@ const StyledEpisodeList = styled.ul`
   }
 `;
 
-const EpisodeList = ({ children, script, service, dir }) => {
+const EpisodeList = ({ children }) => {
   if (!children.length) return null;
 
   const hasMultipleChildren = children.length > 1;
   const enhancedChildren = children.map(child =>
     React.cloneElement(child, {
-      script,
-      service,
-      dir,
       as: hasMultipleChildren ? 'li' : 'div',
     }),
   );
@@ -84,14 +79,10 @@ EpisodeList.MetaData = styled(base)`
 
 EpisodeList.propTypes = {
   children: arrayOf(element),
-  script: shape(scriptPropType).isRequired,
-  service: string.isRequired,
-  dir: oneOf(['ltr', 'rtl']),
 };
 
 EpisodeList.defaultProps = {
   children: [],
-  dir: 'ltr',
 };
 
 export default EpisodeList;

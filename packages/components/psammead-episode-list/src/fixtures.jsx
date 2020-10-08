@@ -58,28 +58,30 @@ export const rtlEpisodes = [
 ];
 
 // eslint-disable-next-line import/prefer-default-export
-export const renderEpisodes = (episodes, script, service, dir) =>
-  console.log('ss', script, service) || (
-    <EpisodeList script={script} service={service} dir={dir}>
-      {episodes.map(episode => (
-        <EpisodeList.Episode
-          key={episode.id}
-          LinkElement={({ children, className }) => (
-            <a href={episode.url} className={className}>
-              {children}
-            </a>
-          )}
-        >
-          <VisuallyHiddenText>Audio</VisuallyHiddenText>
-          <EpisodeList.BrandTitle>{episode.brandTitle}</EpisodeList.BrandTitle>
-          <EpisodeList.EpisodeTitle>
-            {episode.episodeTitle || `${episode.date}, ${episode.time}`}
-          </EpisodeList.EpisodeTitle>
-          <EpisodeList.MetaData>
-            {episode.duration}
-            {episode.episodeTitle && <span aria-hidden> | {episode.date}</span>}
-          </EpisodeList.MetaData>
-        </EpisodeList.Episode>
-      ))}
-    </EpisodeList>
-  );
+export const renderEpisodes = (episodes, script, service, dir) => (
+  <EpisodeList script={script} service={service} dir={dir}>
+    {episodes.map(episode => (
+      <EpisodeList.Episode
+        key={episode.id}
+        script={script}
+        service={service}
+        dir={dir}
+        LinkElement={({ children, className }) => (
+          <a href={episode.url} className={className}>
+            {children}
+          </a>
+        )}
+      >
+        <VisuallyHiddenText>Audio</VisuallyHiddenText>
+        <EpisodeList.BrandTitle>{episode.brandTitle}</EpisodeList.BrandTitle>
+        <EpisodeList.EpisodeTitle>
+          {episode.episodeTitle || `${episode.date}, ${episode.time}`}
+        </EpisodeList.EpisodeTitle>
+        <EpisodeList.MetaData>
+          {episode.duration}
+          {episode.episodeTitle && <span aria-hidden> | {episode.date}</span>}
+        </EpisodeList.MetaData>
+      </EpisodeList.Episode>
+    ))}
+  </EpisodeList>
+);
