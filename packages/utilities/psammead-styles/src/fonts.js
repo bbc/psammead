@@ -1,4 +1,4 @@
-const baseFontUrl = 'https://gel.files.bbci.co.uk/r2.511/';
+const baseFontUrl = 'https://gel.files.bbci.co.uk/r2.511/subsets';
 
 const baseUrlIskoolaPotaBBC =
   'https://ws-downloads.files.bbci.co.uk/fonts/IskoolaPota/v5.91/';
@@ -26,9 +26,9 @@ export const F_REITH_SERIF_REGULAR = baseUrlOverride => `
     font-family: "ReithSerif";
     src: url("${
       baseUrlOverride || baseFontUrl
-    }BBCReithSerif_W_Rg.woff2") format("woff2"), url("${
+    }BBCReithSerif_WLatn_Rg.woff2") format("woff2"), url("${
   baseUrlOverride || baseFontUrl
-}BBCReithSerif_W_Rg.woff") format("woff");
+}BBCReithSerif_WLatn_Rg.woff") format("woff");
     font-display: optional;
   }`;
 
@@ -37,9 +37,9 @@ export const F_REITH_SERIF_ITALIC = baseUrlOverride => `
     font-family: "ReithSerif";
     src: url("${
       baseUrlOverride || baseFontUrl
-    }BBCReithSerif_W_It.woff2") format("woff2"), url("${
+    }BBCReithSerif_WLatn_It.woff2") format("woff2"), url("${
   baseUrlOverride || baseFontUrl
-}BBCReithSerif_W_It.woff") format("woff");
+}BBCReithSerif_WLatn_It.woff") format("woff");
     font-style: italic;
     font-display: optional;
   }`;
@@ -49,9 +49,9 @@ export const F_REITH_SERIF_BOLD = baseUrlOverride => `
     font-family: "ReithSerif";
     src: url("${
       baseUrlOverride || baseFontUrl
-    }BBCReithSerif_W_Bd.woff2") format("woff2"), url("${
+    }BBCReithSerif_WLatn_Bd.woff2") format("woff2"), url("${
   baseUrlOverride || baseFontUrl
-}BBCReithSerif_W_Bd.woff") format("woff");
+}BBCReithSerif_WLatn_Bd.woff") format("woff");
     font-weight: 700;
     font-display: optional;
   }`;
@@ -61,9 +61,9 @@ export const F_REITH_SERIF_BOLD_ITALIC = baseUrlOverride => `
     font-family: "ReithSerif";
     src: url("${
       baseUrlOverride || baseFontUrl
-    }BBCReithSerif_W_BdIt.woff2") format("woff2"), url("${
+    }BBCReithSerif_WLatn_BdIt.woff2") format("woff2"), url("${
   baseUrlOverride || baseFontUrl
-}BBCReithSerif_W_BdIt.woff") format("woff");
+}BBCReithSerif_WLatn_BdIt.woff") format("woff");
     font-weight: 700;
     font-style: italic;
     font-display: optional;
@@ -74,9 +74,9 @@ export const F_REITH_SERIF_LIGHT = baseUrlOverride => `
     font-family: "ReithSerif";
     src: url("${
       baseUrlOverride || baseFontUrl
-    }BBCReithSerif_W_Lt.woff2") format("woff2"), url("${
+    }BBCReithSerif_WLatn_Lt.woff2") format("woff2"), url("${
   baseUrlOverride || baseFontUrl
-}BBCReithSerif_W_Lt.woff") format("woff");
+}BBCReithSerif_WLatn_Lt.woff") format("woff");
     font-weight: 300;
     font-display: optional;
   }`;
@@ -86,9 +86,9 @@ export const F_REITH_SERIF_LIGHT_ITALIC = baseUrlOverride => `
     font-family: "ReithSerif";
     src: url("${
       baseUrlOverride || baseFontUrl
-    }BBCReithSerif_W_LtIt.woff2") format("woff2"), url("${
+    }BBCReithSerif_WLatn_LtIt.woff2") format("woff2"), url("${
   baseUrlOverride || baseFontUrl
-}BBCReithSerif_W_LtIt.woff") format("woff");
+}BBCReithSerif_WLatn_LtIt.woff") format("woff");
     font-weight: 300;
     font-style: italic;
     font-display: optional;
@@ -99,9 +99,9 @@ export const F_REITH_SERIF_MEDIUM = baseUrlOverride => `
     font-family: "ReithSerif";
     src: url("${
       baseUrlOverride || baseFontUrl
-    }BBCReithSerif_W_Md.woff2") format("woff2"), url("${
+    }BBCReithSerif_WLatn_Md.woff2") format("woff2"), url("${
   baseUrlOverride || baseFontUrl
-}BBCReithSerif_W_Md.woff") format("woff");
+}BBCReithSerif_WLatn_Md.woff") format("woff");
     font-weight: 500;
     font-display: optional;
   }`;
@@ -111,9 +111,9 @@ export const F_REITH_SERIF_MEDIUM_ITALIC = baseUrlOverride => `
     font-family: "ReithSerif";
     src: url("${
       baseUrlOverride || baseFontUrl
-    }BBCReithSerif_W_MdIt.woff2") format("woff2"), url("${
+    }BBCReithSerif_WLatn_MdIt.woff2") format("woff2"), url("${
   baseUrlOverride || baseFontUrl
-}BBCReithSerif_W_MdIt.woff") format("woff");
+}BBCReithSerif_WLatn_MdIt.woff") format("woff");
     font-weight: 500;
     font-style: italic;
     font-display: optional;
@@ -124,9 +124,9 @@ export const F_REITH_SERIF_EXTRA_BOLD = baseUrlOverride => `
     font-family: "ReithSerif";
     src: url("${
       baseUrlOverride || baseFontUrl
-    }BBCReithSerif_W_ExBd.woff2") format("woff2"), url("${
+    }BBCReithSerif_WLatn_ExBd.woff2") format("woff2"), url("${
   baseUrlOverride || baseFontUrl
-}BBCReithSerif_W_ExBd.woff") format("woff");
+}BBCReithSerif_WLatn_ExBd.woff") format("woff");
     font-weight: 800;
     font-display: optional;
   }`;
@@ -136,9 +136,9 @@ export const F_REITH_SERIF_EXTRA_BOLD_ITALIC = baseUrlOverride => `
     font-family: "ReithSerif";
     src: url("${
       baseUrlOverride || baseFontUrl
-    }BBCReithSerif_W_ExBdIt.woff2") format("woff2"), url("${
+    }BBCReithSerif_WLatn_ExBdIt.woff2") format("woff2"), url("${
   baseUrlOverride || baseFontUrl
-}BBCReithSerif_W_ExBdIt.woff") format("woff");
+}BBCReithSerif_WLatn_ExBdIt.woff") format("woff");
     font-weight: 800;
     font-style: italic;
     font-display: optional;
@@ -151,9 +151,9 @@ export const F_REITH_SANS_REGULAR = baseUrlOverride => `
     font-family: "ReithSans";
     src: url("${
       baseUrlOverride || baseFontUrl
-    }BBCReithSans_W_Rg.woff2") format("woff2"), url("${
+    }BBCReithSans_WLatn_Rg.woff2") format("woff2"), url("${
   baseUrlOverride || baseFontUrl
-}BBCReithSans_W_Rg.woff") format("woff");
+}BBCReithSans_WLatn_Rg.woff") format("woff");
     font-display: optional;
   }`;
 
@@ -162,9 +162,9 @@ export const F_REITH_SANS_ITALIC = baseUrlOverride => `
     font-family: "ReithSans";
     src: url("${
       baseUrlOverride || baseFontUrl
-    }BBCReithSans_W_It.woff2") format("woff2"), url("${
+    }BBCReithSans_WLatn_It.woff2") format("woff2"), url("${
   baseUrlOverride || baseFontUrl
-}BBCReithSans_W_It.woff") format("woff");
+}BBCReithSans_WLatn_It.woff") format("woff");
     font-style: italic;
     font-display: optional;
   }`;
@@ -174,9 +174,9 @@ export const F_REITH_SANS_BOLD = baseUrlOverride => `
     font-family: "ReithSans";
     src: url("${
       baseUrlOverride || baseFontUrl
-    }BBCReithSans_W_Bd.woff2") format("woff2"), url("${
+    }BBCReithSans_WLatn_Bd.woff2") format("woff2"), url("${
   baseUrlOverride || baseFontUrl
-}BBCReithSans_W_Bd.woff") format("woff");
+}BBCReithSans_WLatn_Bd.woff") format("woff");
     font-weight: 700;
     font-display: optional;
   }`;
@@ -186,9 +186,9 @@ export const F_REITH_SANS_BOLD_ITALIC = baseUrlOverride => `
     font-family: "ReithSans";
     src: url("${
       baseUrlOverride || baseFontUrl
-    }BBCReithSans_W_BdIt.woff2") format("woff2"), url("${
+    }BBCReithSans_WLatn_BdIt.woff2") format("woff2"), url("${
   baseUrlOverride || baseFontUrl
-}BBCReithSans_W_BdIt.woff") format("woff");
+}BBCReithSans_WLatn_BdIt.woff") format("woff");
     font-weight: 700;
     font-style: italic;
     font-display: optional;
@@ -199,9 +199,9 @@ export const F_REITH_SANS_LIGHT = baseUrlOverride => `
     font-family: "ReithSans";
     src: url("${
       baseUrlOverride || baseFontUrl
-    }BBCReithSans_W_Lt.woff2") format("woff2"), url("${
+    }BBCReithSans_WLatn_Lt.woff2") format("woff2"), url("${
   baseUrlOverride || baseFontUrl
-}BBCReithSans_W_Lt.woff") format("woff");
+}BBCReithSans_WLatn_Lt.woff") format("woff");
     font-weight: 300;
     font-display: optional;
   }`;
@@ -211,9 +211,9 @@ export const F_REITH_SANS_LIGHT_ITALIC = baseUrlOverride => `
     font-family: "ReithSans";
     src: url("${
       baseUrlOverride || baseFontUrl
-    }BBCReithSans_W_LtIt.woff2") format("woff2"), url("${
+    }BBCReithSans_WLatn_LtIt.woff2") format("woff2"), url("${
   baseUrlOverride || baseFontUrl
-}BBCReithSans_W_LtIt.woff") format("woff");
+}BBCReithSans_WLatn_LtIt.woff") format("woff");
     font-weight: 300;
     font-style: italic;
     font-display: optional;
@@ -224,9 +224,9 @@ export const F_REITH_SANS_MEDIUM = baseUrlOverride => `
     font-family: "ReithSans";
     src: url("${
       baseUrlOverride || baseFontUrl
-    }BBCReithSans_W_Md.woff2") format("woff2"), url("${
+    }BBCReithSans_WLatn_Md.woff2") format("woff2"), url("${
   baseUrlOverride || baseFontUrl
-}BBCReithSans_W_Md.woff") format("woff");
+}BBCReithSans_WLatn_Md.woff") format("woff");
     font-weight: 500;
     font-display: optional;
   }`;
@@ -236,9 +236,9 @@ export const F_REITH_SANS_MEDIUM_ITALIC = baseUrlOverride => `
     font-family: "ReithSans";
     src: url("${
       baseUrlOverride || baseFontUrl
-    }BBCReithSans_W_MdIt.woff2") format("woff2"), url("${
+    }BBCReithSans_WLatn_MdIt.woff2") format("woff2"), url("${
   baseUrlOverride || baseFontUrl
-}BBCReithSans_W_MdIt.woff") format("woff");
+}BBCReithSans_WLatn_MdIt.woff") format("woff");
     font-weight: 500;
     font-style: italic;
     font-display: optional;
@@ -249,9 +249,9 @@ export const F_REITH_SANS_EXTRA_BOLD = baseUrlOverride => `
     font-family: "ReithSans";
     src: url("${
       baseUrlOverride || baseFontUrl
-    }BBCReithSans_W_ExBd.woff2") format("woff2"), url("${
+    }BBCReithSans_WLatn_ExBd.woff2") format("woff2"), url("${
   baseUrlOverride || baseFontUrl
-}BBCReithSans_W_ExBd.woff") format("woff");
+}BBCReithSans_WLatn_ExBd.woff") format("woff");
     font-weight: 800;
     font-display: optional;
   }`;
@@ -261,9 +261,9 @@ export const F_REITH_SANS_EXTRA_BOLD_ITALIC = baseUrlOverride => `
     font-family: "ReithSans";
     src: url("${
       baseUrlOverride || baseFontUrl
-    }BBCReithSans_W_ExBdIt.woff2") format("woff2"), url("${
+    }BBCReithSans_WLatn_ExBdIt.woff2") format("woff2"), url("${
   baseUrlOverride || baseFontUrl
-}BBCReithSans_W_ExBdIt.woff") format("woff");
+}BBCReithSans_WLatn_ExBdIt.woff") format("woff");
     font-weight: 800;
     font-style: italic;
     font-display: optional;
@@ -275,9 +275,9 @@ export const F_REITH_SANS_CONDENSED_REGULAR = baseUrlOverride => `
       font-family: "ReithSansCondensed";
       src: url("${
         baseUrlOverride || baseFontUrl
-      }BBCReithSansCd_W_Rg.woff2") format("woff2"), url("${
+      }BBCReithSansCd_WLatn_Rg.woff2") format("woff2"), url("${
   baseUrlOverride || baseFontUrl
-}BBCReithSansCd_W_Rg.woff") format("woff");
+}BBCReithSansCd_WLatn_Rg.woff") format("woff");
       font-display: optional;
   }`;
 
@@ -287,9 +287,9 @@ export const F_REITH_SANS_CONDENSED_BOLD = baseUrlOverride => `
       font-weight: 700;
       src: url("${
         baseUrlOverride || baseFontUrl
-      }BBCReithSansCd_W_Bd.woff2") format("woff2"), url("${
+      }BBCReithSansCd_WLatn_Bd.woff2") format("woff2"), url("${
   baseUrlOverride || baseFontUrl
-}BBCReithSansCd_W_Bd.woff") format("woff");
+}BBCReithSansCd_WLatn_Bd.woff") format("woff");
       font-display: optional;
   }`;
 
@@ -425,7 +425,7 @@ export const F_PADAUK_REGULAR = baseUrlOverride => `
 }normal.eot') format('eot'), url('${
   baseUrlOverride || baseUrlPadauk
 }normal.ttf') format('ttf');
-    font-display: swap; 
+    font-display: swap;
   }`;
 
 export const F_PADAUK_BOLD = baseUrlOverride => `
